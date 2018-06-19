@@ -1,11 +1,11 @@
 ---
-title: "ライブまたはアーカイブ済みのデータ ソースを選択する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ライブまたはアーカイブ済みのデータ ソースを選択する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Management database, archived data
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - real-time data, Management database
 - archived data, HAT
 ms.assetid: e2325823-22e1-4a1a-865b-15757b215b29
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255290"
 ---
 # <a name="how-to-select-a-live-or-archived-data-source"></a>ライブ データまたはアーカイブ済みのデータのデータ ソースを選択する方法
 BizTalktracking では、アーカイブ済みのデータとライブ データの両方にアクセスできます。 メインからライブまたはアーカイブ済みのデータ ソースを選択する**BizTalk Server 管理コンソール**BizTalk Server 管理コンソールのノードです。  既定のソースは、BizTalk 管理サーバーから取得されるライブ データです。 アーカイブ済みのデータを使用する場合は、使用する適切なサーバーとデータベースを選択する必要があります。  
@@ -53,7 +54,7 @@ BizTalktracking では、アーカイブ済みのデータとライブ データ
   
 5.  **データベース名**ドロップダウン リスト ボックスで、 **BizTalkMgmtDb**です。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 ### <a name="to-select-archived-data"></a>アーカイブ済みのデータを選択するには  
   
@@ -67,4 +68,4 @@ BizTalktracking では、アーカイブ済みのデータとライブ データ
   
 5.  **データベース名**ドロップダウン リスト ボックスで、 **BizTalkMgmtDb**です。  
   
-6.  **[OK]**をクリックします。
+6.  **[OK]** をクリックします。

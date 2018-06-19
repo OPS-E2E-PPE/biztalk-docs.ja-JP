@@ -1,11 +1,11 @@
 ---
-title: "送信ポートのフィルターを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートのフィルターを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - filters, configuring
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - send ports, filters
 - managing [send ports], filters
 ms.assetid: ad13ca8e-bb1d-4449-8163-49dd9d5d92f8
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249466"
 ---
 # <a name="how-to-configure-filters-for-a-send-port"></a>送信ポートのフィルターを構成する方法
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して、送信ポートのフィルターを構成する方法について説明します。 フィルターを使用することにより、シンプルなメッセージング アプリケーションや、コンテンツ ベースのルーティング (CBR) アプリケーションを作成できます。 フィルターとは、どのメッセージをどの送信ポートにルーティングするかを定義した、メッセージのプロパティやフィールドに対する条件設定です。 オーケストレーションによって送信ポートにルーティングされるメッセージについては、フィルターでは制御できません。  

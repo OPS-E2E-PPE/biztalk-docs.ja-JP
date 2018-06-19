@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240626"
 ---
 # <a name="error---required-target-has-choice-node-source"></a>エラー - 必須ターゲットに選択ノードのソース
 **エラー コード**  

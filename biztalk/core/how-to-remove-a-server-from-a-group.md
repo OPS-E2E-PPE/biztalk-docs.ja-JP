@@ -1,11 +1,11 @@
 ---
-title: "グループからサーバーを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: グループからサーバーを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - groups, servers
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - servers, groups
 - deleting, servers
 ms.assetid: 85596e18-fa17-4f44-bc20-2e4cb578e109
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255386"
 ---
 # <a name="how-to-remove-a-server-from-a-group"></a>サーバーをグループから削除する方法
 サーバーは、1 つの BizTalk グループに関連付けられたのみできます。 サーバーが別のグループに既に属している場合、まず現在のグループからサーバーを削除し、その後でサーバーを新しいグループに追加する必要があります。  
@@ -45,13 +46,13 @@ ms.lasthandoff: 09/20/2017
     > [!CAUTION]
     >  グループの構成を解除すると、そのコンピューターで既に構成されているすべての依存機能の構成が解除されます。  
   
-4.  **[はい]**をクリックします。  
+4.  **[はい]** をクリックします。  
   
 5.  Microsoft BizTalk Server 構成ウィザードでクリックして**次**です。  
   
      グループ、および、そのグループに依存する機能の構成が解除されます。  
   
-6.  **[完了]**をクリックします。  
+6.  **[完了]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [グループを管理します。](../core/managing-groups.md)   

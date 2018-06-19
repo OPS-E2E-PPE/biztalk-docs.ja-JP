@@ -1,11 +1,11 @@
 ---
-title: "送信ポート グループのフィルターを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポート グループのフィルターを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - filters, configuring
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - managing [send port groups], filters
 - managing [send port groups], configuring
 ms.assetid: 4c4bb408-5146-4740-a1d4-0ee72ec123fb
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248594"
 ---
 # <a name="how-to-configure-filters-for-a-send-port-group"></a>送信ポート グループ用のフィルターを構成する方法
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して、送信ポート グループ用のフィルターを構成する方法について説明します。 フィルターを使用することにより、シンプルなメッセージング アプリケーションや、コンテンツ ベースのルーティング (CBR) アプリケーションを作成できます。 フィルターとは、メッセージのプロパティやフィールドに対する条件を設定することにより、どのメッセージを、どの送信ポート グループにルーティングするかを定義するものです。 オーケストレーションによって送信ポート グループにルーティングされるメッセージについては、フィルターは適用されません。  

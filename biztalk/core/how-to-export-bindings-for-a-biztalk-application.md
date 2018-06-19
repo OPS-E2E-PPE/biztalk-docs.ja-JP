@@ -1,18 +1,18 @@
 ---
-title: "BizTalk アプリケーションのバインドをエクスポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーションのバインドをエクスポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings, exportings
 - applications, exporting
 - applications, bindings
 ms.assetid: 700d2781-480b-42ed-a313-1a67a7406369
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255082"
 ---
 # <a name="how-to-export-bindings-for-a-biztalk-application"></a>BizTalk アプリケーションのバインドをエクスポートする方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、.xml ファイルに BizTalk アプリケーションのバインドをエクスポートする方法について説明します。 その後、バインド ファイルを別のアプリケーションにインポートすることで、アプリケーションの現在のバインドが、インポートした同じ名前のバインドで上書きされます。 詳細については、次を参照してください。 [BizTalk アプリケーションにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-application.md)です。 バインド ファイルの使用の詳細については、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)です。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
      例: **C:\Bindings\Application1Bindings_Staging1.xml**  
   
-5.  いることを確認**、現在のアプリケーションからのすべてのバインドをエクスポート**を選択して、をクリックして**OK**です。  
+5.  いることを確認 **、現在のアプリケーションからのすべてのバインドをエクスポート**を選択して、をクリックして**OK**です。  
   
 6.  グループのすべてのパーティ情報をエクスポートするには、選択、**グローバル パーティ情報をエクスポート**チェック ボックスをオンします。  
   

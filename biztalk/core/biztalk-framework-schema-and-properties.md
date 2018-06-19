@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8986e4a7-0c0a-415f-8a74-4fca71d3f1b5
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22232722"
 ---
 # <a name="biztalk-framework-schema-and-properties"></a>BizTalk Framework スキーマおよびプロパティ
 **http://schemas.microsoft.com/BizTalk/2003/btf2-properties**名前空間には、BizTalk Framework 逆アセンブラー パイプライン コンポーネントのメッセージおよび部分コンテキストのプロパティを設定するために使用できるプロパティが含まれています。 BizTalk Framework 逆アセンブラー パイプライン コンポーネントは、これらのプロパティを使用して、作成されるメッセージの適切なヘッダーを生成します。 次の表は、BizTalk Framework のプロパティを示しています。  

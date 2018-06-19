@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004515"
 ---
 # <a name="creating-the-contoso-solution"></a>Contoso ソリューションの作成
 ここでは、Contoso 組織側で従う必要のある手順の詳細について説明します。 使用して 2 つの組織の連絡先情報および取引先契約を追加するには、まず、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールです。 次に、基幹業務 (LOB) スキーマを作成し、これらのスキーマとそれぞれの RosettaNet ベースの PIP (Partner Interface Process) スキーマとの間のマッピングを作成します。 次に、ERP システムとの通信には SQL アダプターを、Fabrikam への情報の送信には HTTP アダプターを使用するポート情報を構成します。 最後の手順では、BizTalk Server でビジネス ルール エンジン (BRE) を使用するプライベート プロセス オーケストレーションをカスタマイズします。  

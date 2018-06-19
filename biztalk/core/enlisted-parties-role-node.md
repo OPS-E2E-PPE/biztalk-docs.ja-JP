@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239690"
 ---
 # <a name="enlisted-parties-role-node"></a>Enlisted Parties (Role ノード)
 バインド ファイルの [参加しているパーティ] ノードは、バインド ファイルと共にエクスポートされるロールに関連付けられた参加しているパーティに関する特定の情報を含むすべての [参加しているパーティ] ノードの親ノードです。  

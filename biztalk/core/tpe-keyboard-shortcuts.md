@@ -1,17 +1,17 @@
 ---
-title: "TPE のショートカット |Microsoft ドキュメント"
-ms.custom: 
+title: TPE のショートカット |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - keyboard shortcuts, Tracking Profile Editor
 - Tracking Profile Editor, keyboard shortcuts
 ms.assetid: b10288b8-c63d-4564-905c-5817fd92a592
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279218"
 ---
 # <a name="tpe-keyboard-shortcuts"></a>TPE のショートカット キー
 追跡プロファイル エディター (TPE) では、マウスの他に、ショートカット キーを使用してナビゲーションや編集を行うことができます。 TPE のすべての機能は、ショートカット キーで実行できます。 ここでは、TPE のショートカット キーについて説明し、キーボードを使用して TPE 内を移動する際のヒントをいくつか紹介します。  

@@ -1,14 +1,14 @@
 ---
-title: "暗号化されたメッセージを送信するための BizTalk Server を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 暗号化されたメッセージを送信するための BizTalk Server を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb751d7c-49cd-46f0-9630-254cf06c497e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248874"
 ---
 # <a name="how-to-configure-biztalk-server-for-sending-encrypted-messages"></a>暗号化されたメッセージを送信するための BizTalk Server を構成する方法
 暗号化されたメッセージを送信するように [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成する手順を次に示します。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  **名前**フィールドに、パイプラインの名前を入力します。  
   
-    4.  **[追加]**をクリックします。  
+    4.  **[追加]** をクリックします。  
   
          新しいパイプラインがソリューション エクスプローラーに表示されます。  
   

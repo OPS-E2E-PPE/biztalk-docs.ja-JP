@@ -1,14 +1,14 @@
 ---
-title: "BizTalk エディターを拡張 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk エディターを拡張 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 77c93ab2-0a9b-4c9d-81e5-3871fc8e6e13
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246242"
 ---
 # <a name="extending-biztalk-editor"></a>BizTalk エディターの拡張
 BizTalk エディターの機能を拡張して、他のインスタンス メッセージ形式をサポートすることができます。 実際には、XML 形式は、BizTalk エディターに組み込まれている唯一の形式です。 ただし、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に含まれるフラット ファイル形式のサポートも、BizTalk エディターの拡張機能として実装されます。これは、拡張機能によって追加できる機能の代表的な例です。  

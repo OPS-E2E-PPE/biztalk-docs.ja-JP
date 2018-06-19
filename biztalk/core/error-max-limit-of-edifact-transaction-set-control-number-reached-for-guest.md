@@ -1,14 +1,14 @@
 ---
-title: "許容される Edifact トランザクション セット制御番号に達した Guest の設定の上限 |Microsoft ドキュメント"
-ms.custom: 
+title: 許容される Edifact トランザクション セット制御番号に達した Guest の設定の上限 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3924a18c-87bc-4727-b7cd-598d3e5ade2a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241154"
 ---
 # <a name="max-limit-of-acceptable-edifact-transaction-set-control-number-has-reached-for-guest-settings"></a>Guest の設定の EDIFACT トランザクション セット制御番号が、許容される上限に到達しました
 ## <a name="details"></a>詳細  

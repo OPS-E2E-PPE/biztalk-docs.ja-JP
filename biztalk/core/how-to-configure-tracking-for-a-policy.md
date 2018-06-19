@@ -1,11 +1,11 @@
 ---
-title: "ポリシーの追跡を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ポリシーの追跡を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, tracking
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - configuring [HAT tracking], policies
 - tracking, configuring
 ms.assetid: f126e541-c183-4544-8b9d-ca07d2af303e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249642"
 ---
 # <a name="how-to-configure-tracking-for-a-policy"></a>ポリシーの追跡を構成する方法
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して、ポリシーの追跡を構成する方法について説明します。 管理コンソールの [グループ ハブ] ページのクエリ ビューでインスタンス データ、条件の結果、アクション、および議題の更新を表示するオプションを選択できます。  

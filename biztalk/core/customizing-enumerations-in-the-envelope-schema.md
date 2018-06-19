@@ -1,14 +1,14 @@
 ---
-title: "エンベロープ スキーマで列挙をカスタマイズする |Microsoft ドキュメント"
-ms.custom: 
+title: エンベロープ スキーマで列挙をカスタマイズする |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2b053d82-753f-4a05-9922-fa5dbd073ba9
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241858"
 ---
 # <a name="customizing-enumerations-in-the-envelope-schema"></a>エンベロープ スキーマでの列挙のカスタマイズ
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、サービス (エンベロープ) スキーマで ID フィールドの列挙をカスタマイズできます。 これにより、エンベロープの送信者 ID フィールドまたは受信者 ID フィールドに標準以外の値 (X12 標準の本文に定義された値以外の値セット) を使用しているインターチェンジの送受信を行うことができます。 また、アグリーメント プロパティを定義する際に、ヘッダー値のドロップダウン リストで使用できる修飾子を変更することもできます。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  BizTalk エディターで、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI にある X12_ServiceSchemaExtension.xsd スキーマ (X12 または HIPAA の列挙を変更する場合) または EDIFACT_ServiceSchemaExtension.xsd スキーマを BizTalk プロジェクトに追加します。 スキーマを開きます。  
   
-3.  列挙の値を変更するには、内の列挙型を選択、**プロパティ** ウィンドウで、を開くには、省略記号をクリックし、**列挙エディター**です。 各行に 1 つの値が存在する、必要に応じて、値の一覧に追加、**値**ウィンドウです。 **[OK]**をクリックします。  
+3.  列挙の値を変更するには、内の列挙型を選択、**プロパティ** ウィンドウで、を開くには、省略記号をクリックし、**列挙エディター**です。 各行に 1 つの値が存在する、必要に応じて、値の一覧に追加、**値**ウィンドウです。 **[OK]** をクリックします。  
   
     > [!IMPORTANT]
     >  サービス スキーマの名前空間は変更できません。 スキーマは、製品にインストールされている元の拡張スキーマと同じ名前空間とルート ノード名を持つ必要があります。  

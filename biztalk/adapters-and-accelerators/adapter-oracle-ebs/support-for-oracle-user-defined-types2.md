@@ -1,14 +1,14 @@
 ---
-title: "Oracle ユーザー定義 Types2 のサポート |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle ユーザー定義 Types2 のサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d4b9980-fa5b-4340-a62f-e4a4f98603dc
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006683"
 ---
 # <a name="support-for-oracle-user-defined-types"></a>Oracle ユーザー定義型のサポート
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] Oracle User-Defined 型 (Udt) を含む Oracle E-business Suite と基になるデータベース内の成果物に対する操作の実行をサポートします。 Udt は、次の成果物になくてもかまいません。  

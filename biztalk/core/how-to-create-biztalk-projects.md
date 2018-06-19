@@ -1,11 +1,11 @@
 ---
-title: "BizTalk プロジェクトを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk プロジェクトを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, projects
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - solutions
 - solutions, adding projects
 ms.assetid: a6900234-f989-4601-96c5-41d435c2f8b4
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249178"
 ---
 # <a name="how-to-create-biztalk-projects"></a>BizTalk プロジェクトを作成する方法
 BizTalk Server で実行するアプリケーションを作成するには、まずソリューションに 1 つ以上の BizTalk プロジェクトを追加します。 このセクションでは、BizTalk プロジェクトの操作で行われる作業について説明します。  

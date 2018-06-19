@@ -1,11 +1,11 @@
 ---
-title: "トランスポートの詳細、送信ポートのオプションを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: トランスポートの詳細、送信ポートのオプションを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, transport options [send ports]
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - managing [send ports], configuring
 - managing [send ports], transport options
 ms.assetid: b0033e09-3c18-4e53-a470-e12978e61ba1
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,12 +23,13 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250682"
 ---
 # <a name="how-to-configure-transport-advanced-options-for-a-send-port"></a>送信ポートに対してトランスポートの詳細オプションを構成する方法
 トランスポートの詳細、送信ポートのオプションを構成するのにには、BizTalk Server 管理コンソールを使用します。 これらのオプションは、メッセージ エラーが発生したときにメッセージ送信を再試行する回数や、ポートのサービス時間帯スケジュールなど、メッセージをどのように処理するかを定義するものです。  
   
 > [!NOTE]
-> **以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**アダプターの種類に応じて、動的送信ポートで順次配送を有効にすることができます。 このオプションはのみアダプターの種類の使用可能なファイル アダプターや FTP アダプターなどの静的送信ポートの順次配送を保証する場所です。
+> **以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]** アダプターの種類に応じて、動的送信ポートで順次配送を有効にすることができます。 このオプションはのみアダプターの種類の使用可能なファイル アダプターや FTP アダプターなどの静的送信ポートの順次配送を保証する場所です。
 > 
 > 6 つのメッセージを検討してください: M1、M2、M3、M4、M5、および M6 です。 ファイルの場所には、M1、M3、M5 が意図したものです。 FTP の M2、M4、および M6 を意図されています。 順次配送の動的送信ポートにより、M1、M3、および M5 は並べ替えることです。M2、M4、および M6 はそれぞれ順序付けします。 
 > 

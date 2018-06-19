@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: 単純なビジネス ポリシーの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: 単純なビジネス ポリシーの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 02d35735-dce2-4ee2-965e-dae307a125b0
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975821"
 ---
 # <a name="walkthrough-creating-a-simple-business-policy"></a>チュートリアル: 単純なビジネス ポリシーを作成します。
 このチュートリアルは、ビジネス ルール作成ツールを使用してという名前の単純なビジネス ポリシーを作成する手順を示します**ProcessPurchaseOrder**という名前のルールを含む**ApprovedRule**です。 **ApprovedRule**ルールは、ユーザーが、ファクトとして XML ドキュメントを送信するを必要としの値を設定、**ステータス**フィールドをドキュメントに**Approved**場合、の値**数量**フィールドは、以下を**500**です。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  **開始**] メニューの [開いている**メモ帳**です。  
   
-2.  **[ファイル]** メニューの **[新規作成]**をポイントし、 **[ファイル]**をクリックします。  
+2.  **[ファイル]** メニューの **[新規作成]** をポイントし、 **[ファイル]** をクリックします。  
   
 3.  次の XML テキストをエディターにコピーします。  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  **ファイル** メニューのをクリックして**TextFile1.txt に名前を付けて**です。  
   
-5.  値を変更**名前を付けて保存型**から**テキスト ドキュメント (\*.txt)**に**すべてのファイル**です。  
+5.  値を変更**名前を付けて保存型**から**テキスト ドキュメント (\*.txt)** に**すべてのファイル**です。  
   
 6.  型**PO.xsd**で、**ファイル名**テキスト ボックスで、ディレクトリに移動**C:\BRE-Walkthroughs**の値を変更**エンコード**に**Unicode**  をクリックし、**保存**です。  
   
@@ -93,7 +94,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  ポリシー エクスプ ローラー ウィンドウで右クリック**ポリシー**、クリックして**新しいポリシーの追加**です。  
   
-3.  ポリシーの名前を編集**"policy1"**を**ProcessPurchaseOrder** ENTER キーを押します。 ポリシーの名前を変更することも、**プロパティ**ウィンドウです。  
+3.  ポリシーの名前を編集 **"policy1"** を**ProcessPurchaseOrder** ENTER キーを押します。 ポリシーの名前を変更することも、**プロパティ**ウィンドウです。  
   
 4.  右クリック**バージョン 1.0**、クリックして**新しいルールの追加**です。  
   
@@ -128,7 +129,7 @@ ms.lasthandoff: 11/28/2017
   
      ![ビジネス ルール作成ツール &#45; DragStatus](../core/media/3617251a-a192-4aec-9474-81f6290c0832.gif "3617251a-a192-4aec-9474-81f6290c0832")  
   
-14. [THEN] ペインでをクリックして**\<値を入力\>**し入力**Approved**です。  
+14. [THEN] ペインでをクリックして**\<値を入力\>** し入力**Approved**です。  
   
 15. ポリシー エクスプ ローラー ウィンドウで右クリック**バージョン 1.0 (未保存)**、クリックして**保存**です。  
   

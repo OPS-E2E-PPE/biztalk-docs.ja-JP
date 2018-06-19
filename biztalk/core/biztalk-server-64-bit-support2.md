@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server の 64 ビット サポートの概要 |Microsoft ドキュメント"
-description: "アダプター、プロセス、BizTalk 管理コンソール、BAM ツール、アセンブリ、オーケストレーション、および BizTalk Server の詳細での 64 ビットのサポート"
-ms.custom: 
+title: BizTalk Server の 64 ビット サポートの概要 |Microsoft ドキュメント
+description: アダプター、プロセス、BizTalk 管理コンソール、BAM ツール、アセンブリ、オーケストレーション、および BizTalk Server の詳細での 64 ビットのサポート
+ms.custom: ''
 ms.date: 09/27/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52ae9037-a7af-48e4-b6a3-bff7600802de
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010891"
 ---
 # <a name="biztalk-server-64-bit-support"></a>BizTalk Server での 64 ビットのサポート
 このトピックでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] での 64 ビットのサポートに関して、よく寄せられる質問に回答します。  

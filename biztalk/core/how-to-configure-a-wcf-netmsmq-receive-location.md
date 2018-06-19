@@ -1,14 +1,14 @@
 ---
-title: "Wcf-netmsmq 受信場所を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Wcf-netmsmq 受信場所を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f82b323b-9870-42fb-9992-c23dca909b4d
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250674"
 ---
 # <a name="how-to-configure-a-wcf-netmsmq-receive-location"></a>WCF-NetMsmq 受信場所を構成する方法
 WCF-NetMsmq 受信場所は、プログラムから、または BizTalk 管理コンソールを使用して構成できます。  
@@ -36,7 +37,7 @@ WCF-NetMsmq 受信場所は、プログラムから、または BizTalk 管理�
 |**SendTimeout**|**System.TimeSpan**|送信操作が完了するまでの間隔を示す期間値を指定します。<br /><br /> 既定値:00:01:00|  
 |**CloseTimeout**|**System.TimeSpan**|チャネルを閉じる操作が完了するまでの間隔を示す期間値を指定します。<br /><br /> 既定値:00:01:00|  
 |**MaxReceivedMessageSize**|Integer|有線ネットワーク上で受信できる、ヘッダーを含むメッセージの最大サイズをバイト単位で指定します。 メッセージのサイズは、各メッセージに割り当てられているメモリの量に制限されます。 このプロパティを使用して、サービス拒否 (DoS) 攻撃にさらされる危険性を制限できます。<br /><br /> 既定値:65536|  
-|**EnableTransaction**|ブール値|メッセージ キューの種類 (トランザクションまたは非トランザクション) を指定します。 このプロパティが選択されている場合、各メッセージは一度だけ配信され、送信者には配信エラーが通知されます。 トランザクション送信を経由してメッセージを送信するポートを両方とも、**持続性のある**と**exactlyOnce**に設定する必要があります、クライアントの要素をバインディング**True**です。 このプロパティがオフの場合、配信が保証されずにメッセージが転送されます。 **注:**受信場所でこのトランザクション キューを使用する場合、このプロパティを選択する必要があります。 <br /><br /> 既定値: **False**|  
+|**EnableTransaction**|ブール値|メッセージ キューの種類 (トランザクションまたは非トランザクション) を指定します。 このプロパティが選択されている場合、各メッセージは一度だけ配信され、送信者には配信エラーが通知されます。 トランザクション送信を経由してメッセージを送信するポートを両方とも、**持続性のある**と**exactlyOnce**に設定する必要があります、クライアントの要素をバインディング**True**です。 このプロパティがオフの場合、配信が保証されずにメッセージが転送されます。 **注:** 受信場所でこのトランザクション キューを使用する場合、このプロパティを選択する必要があります。 <br /><br /> 既定値: **False**|  
 |**OrderedProcessing**|ブール値|メッセージを順番に処理するかどうかを指定します。 この受信場所でこのプロパティがオンの場合は、BizTalk メッセージングまたはオーケストレーション送信ポートを持つと組み合わせて使用すると、メッセージの順次配送を提供、**順次配送**オプションに設定`True`です。 この場合にのみを選択することができます、 **EnableTransaction**プロパティに設定されている**True**です。<br /><br /> 詳細については、**順次配送**オプションで、適切なトピックを参照を参照してください。<br /><br /> このプロパティに設定するときに**True**、Wcf-netmsmq 受信場所アダプターをシングル スレッド化して大きなメッセージを処理する場合は、リソースの利用状況を最適化します。<br /><br /> 既定値: **False**|  
 |**MaxConcurrentCalls**|Integer|単一のサービス インスタンスに対する同時呼び出しの数を指定します。 制限を超える呼び出しはキューに格納されます。 このプロパティの範囲は 0 ~ **Int32.MaxValue**です。<br /><br /> 既定値:200|  
 |**SecurityMode**|Enum<br /><br /> -   **[なし]**<br />-   **メッセージ**<br />-   **トランスポート**<br />-   **両方とも**<br /><br /> メンバー名の詳細については、 **SecurityMode**プロパティを参照してください、**セキュリティ モード**プロパティに、 **Wcf-netmsmq トランスポートのプロパティ ダイアログ ボックス、受信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|使用するセキュリティの種類を指定します。<br /><br /> 既定値:**トランスポート**|  
@@ -46,7 +47,7 @@ WCF-NetMsmq 受信場所は、プログラムから、または BizTalk 管理�
 |**MsmqEncryptionAlgorithm**|Enum<br /><br /> -   **RC4Stream**<br />-   **AES**|メッセージ キュー マネージャー間でメッセージを転送するときに、有線ネットワーク上でメッセージを暗号化するために使用するアルゴリズムを指定します。 このプロパティは使用可能な場合にのみ、 **MsmqProtectionLevel**プロパティに設定されている**EncryptAndSign**です。<br /><br /> 既定値: **RC4Stream**|  
 |**MessageClientCredentialType**|Enum<br /><br /> -   **[なし]**<br />-   **Windows**<br />-   **ユーザー名**<br />-   **証明書**<br /><br /> メンバー名の詳細については、 **MessageClientCredentialType**プロパティを参照してください、**クライアント資格情報の種類のメッセージ**プロパティに、 **Wcf-netmsmq トランスポートのプロパティダイアログ ボックスで、受信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|メッセージ ベースのセキュリティを使用してクライアント認証を実行するときに使用する、資格情報の種類を指定します。<br /><br /> 既定値: **Windows**|  
 |**AlgorithmSuite**|Enum<br /><br /> メンバー名の詳細については、 **AlgorithmSuite**プロパティを参照してください、**アルゴリズム スイート**プロパティに、 **Wcf-netmsmq トランスポートのプロパティ ダイアログ ボックス、受信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|メッセージの暗号化とキー ラップのアルゴリズムを指定します。 これらのアルゴリズムは、セキュリティ ポリシー言語 (WS-SecurityPolicy) 仕様で指定されたアルゴリズムにマップされます。<br /><br /> 既定値: **Basic256**|  
-|**ServiceCertificate**|文字列|クライアントがサービスの認証に使用する、この受信場所に対する X.509 証明書の拇印を指定します。 このプロパティに使用する証明書をインストールする必要があります、 **My**に格納、**現在のユーザー**場所。 **注:**にサービス証明書をインストールする必要があります、**現在のユーザー**この受信場所をホストする受信ハンドラーのユーザー アカウントの場所。 <br /><br /> 既定値は空の文字列です。|  
+|**ServiceCertificate**|文字列|クライアントがサービスの認証に使用する、この受信場所に対する X.509 証明書の拇印を指定します。 このプロパティに使用する証明書をインストールする必要があります、 **My**に格納、**現在のユーザー**場所。 **注:** にサービス証明書をインストールする必要があります、**現在のユーザー**この受信場所をホストする受信ハンドラーのユーザー アカウントの場所。 <br /><br /> 既定値は空の文字列です。|  
 |**InboundBodyLocation**|Enum<br /><br /> -   **UseBodyElement** -SOAP のコンテンツを使用して**本文**を BizTalk メッセージのボディ部を作成する受信メッセージの要素。 **Body** 要素に複数の子要素がある場合は、最初の要素のみが BizTalk メッセージのボディ部になります。<br />-   **UseEnvelope** -全体の SOAP から BizTalk メッセージのボディ部を作成する**エンベロープ**受信メッセージのです。<br />-   **UseBodyPath** -ボディ パス式を使用して、 **InboundBodyPathExpression**プロパティを BizTalk メッセージのボディ部を作成します。 ボディ パス式は、受信メッセージの SOAP **Body** 要素のすぐ下の子要素に対して評価されます。 このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br /><br /> 使用する方法についての詳細、 **InboundBodyLocation**プロパティを参照してください[WCF アダプタのメッセージの本文を指定する](../core/specifying-the-message-body-for-the-wcf-adapters.md)です。|SOAP のデータ選択を指定**本文**受信 WCF メッセージの要素。<br /><br /> 既定値: **UseBodyElement**|  
 |**InboundBodyPathExpression**|文字列<br /><br /> 使用する方法についての詳細、 **InboundBodyPathExpression**プロパティを参照してください[WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md)です。|BizTalk メッセージのボディ部を作成するために使用する受信メッセージの特定の部分を示すボディ パス式を指定します。 このボディ パス式が、SOAP の直接の子要素に対して評価されます**本文**受信メッセージのノードです。 このボディ パス式で複数のノードが返される場合は、最初のノードのみが BizTalk メッセージのボディ部に対して選択されます。 このプロパティは必要な場合、 **InboundBodyLocation**プロパティに設定されている**UseBodyPath**です。<br /><br /> 既定値は空の文字列です。|  
 |**InboundNodeEncoding**|Enum<br /><br /> -   **Base64** -Base64 エンコードします。<br />-   **16 進**: 16 進エンコードします。<br />-   **文字列**: テキスト エンコード - utf-8。<br />-   **XML** -WCF アダプターは、ボディ パス式で選択されたノードの外部の XML で、BizTalk メッセージ本文を作成する**InboundBodyPathExpression**です。|Wcf-netmsmq 受信アダプターで指定されたボディ パス式で識別されるノードのデコードに使用するエンコードの種類の指定**InboundBodyPathExpression**です。 このプロパティは必要な場合、 **InboundBodyLocation**プロパティに設定されている**UseBodyPath**です。<br /><br /> 既定値: **XML**|  
@@ -74,7 +75,7 @@ WCF-NetMsmq 受信場所は、プログラムから、または BizTalk 管理�
   
 4.  **受信場所のプロパティ**] ダイアログ ボックスで、**トランスポート**横**型**[ **Wcf-netmsmq**から、クリックしてドロップダウン リスト、**構成**です。  
   
-5.  **Wcf-netmsmq トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブで、エンドポイント アドレスを構成し、サービス id を Wcf-netmsmq 受信場所。 詳細については、**全般** タブで、 **Wcf-netmsmq トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-netmsmq トランスポートのプロパティ ダイアログ ボックス、受信、[全般]**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
+5.  **Wcf-netmsmq トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブで、エンドポイント アドレスを構成し、サービス id を Wcf-netmsmq 受信場所。 詳細については、**全般** タブで、 **Wcf-netmsmq トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-netmsmq トランスポートのプロパティ ダイアログ ボックス、受信、[全般]** タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
   
 6.  **Wcf-netmsmq トランスポートのプロパティ** ダイアログ ボックスで、**バインド** タブで、タイムアウトおよびトランザクションのプロパティを構成します。 詳細については、**バインド** タブで、 **Wcf-netmsmq トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-netmsmq トランスポートのプロパティ ダイアログ ボックス、受信、バインディング**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
   

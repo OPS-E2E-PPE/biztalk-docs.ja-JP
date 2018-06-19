@@ -1,14 +1,14 @@
 ---
-title: "テーブル ループを追加し、テーブル抽出 Functoid をマップする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: テーブル ループを追加し、テーブル抽出 Functoid をマップする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3c837ab8-55db-471a-af26-9fbd0497d7d4
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249794"
 ---
 # <a name="how-to-add-table-looping-and-table-extractor-functoids-to-a-map"></a>マップにテーブル ループ Functoid およびテーブル抽出 Functoid を追加する方法
 **テーブル ループ**と**テーブル抽出**functoid は一緒に使用されます。 **テーブル ループ**functoid が構成する内部テーブルです。 各入力レコードまたはフィールドの**テーブル ループ**functoid は一度に 1 つずつ、テーブルの行を出力します。 **テーブル抽出**functoid が行から目的の項目を抽出し、出力インスタンス メッセージに渡します。  
@@ -97,7 +98,7 @@ ms.lasthandoff: 09/20/2017
   
      **テーブル抽出 Functoid の構成** ダイアログ ボックスが表示されます。  
   
-15. クリックして、 ![functoid への定数入力パラメーターの追加](../core/media/add-input-parameters.gif "Add_input_parameters")クリックすると、2 番目の入力パラメーターを作成します。 テーブル グリッドで、対応する列の番号を入力**テーブル ループ**functoid のデータを抽出します。 **[OK]**をクリックします。  
+15. クリックして、 ![functoid への定数入力パラメーターの追加](../core/media/add-input-parameters.gif "Add_input_parameters")クリックすると、2 番目の入力パラメーターを作成します。 テーブル グリッドで、対応する列の番号を入力**テーブル ループ**functoid のデータを抽出します。 **[OK]** をクリックします。  
   
      **テーブル抽出 Functoid の構成** ダイアログ ボックスを閉じます。  
   

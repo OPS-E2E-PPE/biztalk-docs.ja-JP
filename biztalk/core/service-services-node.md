@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270250"
 ---
 # <a name="service-services-node"></a>Service (Services ノード)
 バインド ファイルの Service ノードには、そのバインド ファイルに基づいてエクスポートされるサービスに関する情報が含まれます。 この Service ノードには、サービスに関連付けられているポートおよびロールを説明するノード、およびサービスに関連付けられているホストを説明するノードも含まれます。  

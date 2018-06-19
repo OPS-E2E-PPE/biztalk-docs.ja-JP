@@ -1,11 +1,11 @@
 ---
-title: "送信ポートのインスタンスごとにパイプライン プロパティを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートのインスタンスごとにパイプライン プロパティを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, properties
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - send ports, pipelines
 - pipelines, configuring
 ms.assetid: c58faa9e-0dfb-458b-8f1b-d3c91bce0436
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249266"
 ---
 # <a name="how-to-configure-per-instance-pipeline-properties-for-a-send-port"></a>送信ポートのインスタンスごとにパイプライン プロパティを構成する方法
 ここでは、BizTalk グループにパイプラインを展開した後、BizTalk Server 管理コンソールを使用して送信ポートのパイプライン プロパティを構成する方法について説明します。 送信ポートのパイプライン プロパティを変更した場合、その送信ポートについてのみ、既定のパイプライン プロパティが上書きされます。したがって、BizTalk グループに含まれる各送信ポートについて、それぞれ異なるパイプライン プロパティを構成することも可能です。  

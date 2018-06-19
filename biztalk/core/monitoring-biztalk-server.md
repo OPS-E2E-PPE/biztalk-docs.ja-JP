@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 96e244dc-b826-4a9f-a4e1-6dabc41eb144
-caps.latest.revision: ''
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22265362"
 ---
 # <a name="monitoring-biztalk-server"></a>BizTalk Server の監視
 BizTalk Server のアプリケーションとインフラストラクチャを定期的に監視して、見つかった問題を解決し、ユーザーが常に BizTalk Server アプリケーションにアクセスできるようにします。 監視の目的は、例外が検出されないままになる (したがって解決されないままになる) 時間を最小限に抑えることです。 また監視は、例外の原因となる状況を見つけるのにも役立ちます。  

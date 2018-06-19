@@ -1,18 +1,18 @@
 ---
-title: "パイプライン コンポーネントの開発、プローブ |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン コンポーネントの開発、プローブ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components [custom], probing
 - IProbeMessage interface
 - pipeline interfaces, IProbeMessage
 ms.assetid: c3da467d-5270-4c7f-9c38-ce9989bf1b63
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240682"
 ---
 # <a name="developing-a-probing-pipeline-component"></a>プローブ パイプライン コンポーネントの開発
 任意のパイプライン コンポーネント (全般、アセンブル、または逆アセンブル) を実装できる、`IProbeMessage`インターフェイスの場合はメッセージ プローブ機能をサポートする必要があります。 プローブ コンポーネントはされているパイプライン ステージで使用**FirstMatch**実行モードです。 このモードのステージでは、BizTalk Server メッセージング エンジンからプローブ コンポーネントにメッセージの先頭部分が渡され、コンポーネントで認識できる形式のメッセージかどうかが確認されます。 コンポーネントで認識できる形式の場合は、メッセージ全体が対応するコンポーネントに渡され、処理されます。  

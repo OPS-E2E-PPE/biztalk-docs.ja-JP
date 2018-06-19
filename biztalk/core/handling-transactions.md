@@ -1,14 +1,14 @@
 ---
-title: "トランザクションの処理 |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクションの処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d360742-e969-4651-b364-9edc6a93b8d4
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248154"
 ---
 # <a name="handling-transactions"></a>トランザクションの処理
 ## <a name="transacted-receivers"></a>トランザクション受信元  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="transacted-transmitters"></a>トランザクション送信元  
  トランザクション アダプターは、トランザクション以外のアダプターとほぼ同様です。 主な違いは、トランザクション アダプターの場合、メッセージ内のデータを、MSDTC トランザクションに参加しているリソースに送信する点です。  
   
- **実装のヒン ト:**トランザクション アダプターで使用する同じ MSDTC トランザクションを削除すること、先にデータを書き込むため、 **IBTTransportBatch.DeleteMessage**メソッドの呼び出しです。 トランザクションが行われる必要があるのは、この 2 つの操作だけです。 他の操作など**IBTTransportBatch.Resubmit**、 **IBTTransportBatch.MoveToNextTransport**、および**IBTTransportBatch.MoveToSuspendQ**にする必要はありませんトランザクション。 これは、エンジンが暗黙的にトランザクションを使用し、これらの操作が送信先に対してアトミックである必要がないためです。  
+ **実装のヒン ト:** トランザクション アダプターで使用する同じ MSDTC トランザクションを削除すること、先にデータを書き込むため、 **IBTTransportBatch.DeleteMessage**メソッドの呼び出しです。 トランザクションが行われる必要があるのは、この 2 つの操作だけです。 他の操作など**IBTTransportBatch.Resubmit**、 **IBTTransportBatch.MoveToNextTransport**、および**IBTTransportBatch.MoveToSuspendQ**にする必要はありませんトランザクション。 これは、エンジンが暗黙的にトランザクションを使用し、これらの操作が送信先に対してアトミックである必要がないためです。  
   
  次のオブジェクト間の対話処理図に、アダプターとエンジンが対話するようすを示します。 イベントのシーケンスは、次のとおりです。  
   

@@ -1,11 +1,11 @@
 ---
-title: "マスター シークレット サーバー |Microsoft ドキュメント"
-ms.custom: 
+title: マスター シークレット サーバー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Master Secret server, about Master Secret server
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Master Secret server, encryption key
 - SSO, Master Secret server
 ms.assetid: 93685a19-6c27-45db-bfc1-957574362687
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262514"
 ---
 # <a name="master-secret-server"></a>マスタ シークレット サーバー
 マスタ シークレット サーバーは、マスタ シークレット (暗号化キー) を格納する、エンタープライズ シングル サインオン (SSO) サーバーです。 マスタ シークレット サーバーでは、SSO 管理者からの要求に応じてマスタ シークレットを生成します。 また、暗号化されたマスタ シークレットをレジストリに格納します。 マスタ シークレットにアクセスできるのは、シングル サインオン管理者だけです。  

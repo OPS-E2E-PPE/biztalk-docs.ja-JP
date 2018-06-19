@@ -1,18 +1,18 @@
 ---
-title: "MSMQ 送信ポートを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: MSMQ 送信ポートを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, send ports
 - send ports, MSMQ adapters
 - configuring [MSMQ adapters], send ports
 ms.assetid: 37313d45-8148-4aaf-a3f2-ea05b3b8b448
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249778"
 ---
 # <a name="how-to-configure-an-msmq-send-port"></a>MSMQ 送信ポートを構成する方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、MSMQ 送信ポートのアダプターの変数を設定できます。 プロパティが送信ポートに設定されていない場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで設定されている既定の送信ハンドラーの値が使用されます。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
     |**管理キュー**|受信確認メッセージを受信するキューの名前を指定します。|文字列|空白|  
     |**本文の種類**|MSMQ のメッセージ本文の種類を指定します。 有効な値は、.net メンバー **VarEnum**列挙します。|int|8209|  
     |**証明書の拇印**|メッセージ認証に使用する証明書の拇印を指定します。 組み合わせてこのプロパティを使用して、**認証を使用する**プロパティをメッセージを確認します。 使用して、**ユーザー名**と**パスワード**プロパティはキューにアクセスするためにします。|文字列|空白|  
-    |**送信先キュー**|送信先キューを指定します。 キューの詳細については、次を参照してください。[メッセージ キューのキュー](../core/message-queuing-queues.md)です。 **注:**の URI を送信ポートまたは受信場所は、256 文字を超えることはできません。|文字列|空白|  
+    |**送信先キュー**|送信先キューを指定します。 キューの詳細については、次を参照してください。[メッセージ キューのキュー](../core/message-queuing-queues.md)です。 **注:** の URI を送信ポートまたは受信場所は、256 文字を超えることはできません。|文字列|空白|  
     |**暗号化アルゴリズム**|選択**RC2**、 **RC4**、または**None**暗号化アルゴリズムです。|Enum|なし|  
     |**最大メッセージ サイズ (キロバイト単位)**|指定したキューに送信するメッセージの最大サイズを指定します。|UnsignedInt|1024|  
     |**メッセージの優先順位**|メッセージの優先度を設定します。|Enum|標準|  
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
     |**配信不能キューを使用します。**|この値を設定**True**障害が発生した場合、配信不能キューにメッセージを送信します。|ブール値|True|  
     |**ジャーナル キューを使用します。**|この値を設定**True**メッセージが処理されるたびに、メッセージのコピーを保存します。|ブール値|False|  
   
-4.  をクリックして**[ok]**と**OK**もう一度設定を保存します。  
+4.  をクリックして **[ok]** と**OK**もう一度設定を保存します。  
   
 ## <a name="see-also"></a>参照  
  [MSMQ 受信場所を構成する方法](../core/how-to-configure-an-msmq-receive-location.md)   

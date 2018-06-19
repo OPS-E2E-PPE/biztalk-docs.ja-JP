@@ -16,7 +16,7 @@ helpviewer_keywords:
 - BizTalk Web Services Publishing Wizard, about BizTalk Web Services Publishing Wizard
 - orchestrations, publishing
 ms.assetid: d990f8e4-88ce-4718-8a94-63796b8d92dc
-caps.latest.revision: ''
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25975344"
 ---
 # <a name="how-to-use-the-biztalk-web-services-publishing-wizard-to-publish-an-orchestration-as-a-web-service"></a>BizTalk Web サービス公開ウィザードを使用してオーケストレーションを Web サービスとして公開する方法
 BizTalk Web サービス公開ウィザードを使用して、オーケストレーションを Web サービスとして公開することができます。  
@@ -106,7 +107,7 @@ BizTalk Web サービス公開ウィザードを使用して、オーケスト�
     -   **BizTalk を作成する受信場所。** このオプションでは、生成された各 .asmx ファイルに対応する SOAP アダプターの受信ポートと受信場所が自動的に作成されます。 受信場所が既に存在する場合、既存の受信場所は置き換えられません。 SOAP アダプターを解決する形式を使用して、受信場所/\<*仮想ディレクトリ名*\>/\<*オーケストレーション namespace_typename_portname* \>.asmx です。 このオプションの選択後、受信ポートと場所を生成するアプリケーションを選択します。  
   
         > [!NOTE]
-        >  プロジェクトの場所には、別のサーバーを指定することもできます。 別のサーバーに Web サービスを発行するとしてプロジェクト名を入力**http://&lt です*servername*>/<*project_name*>**です。  
+        >  プロジェクトの場所には、別のサーバーを指定することもできます。 別のサーバーに Web サービスを発行するとしてプロジェクト名を入力**http://&lt です*servername*>/<*project_name*>** です。  
   
         > [!NOTE]
         >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに公開する場合は、URL に Web サイトのポート番号を含めます。 たとえば、 http://localhost:8080/< *project_name*>。  
@@ -127,7 +128,7 @@ BizTalk Web サービス公開ウィザードを使用して、オーケスト�
 12. をクリックして **完了** BizTalk Web サービス公開ウィザードを完了します。  
   
 > [!NOTE]
->  オーケストレーションを Windows Vista で Web サービスとして公開している場合、サービスをホストする仮想ディレクトリを更新する必要があります。 コマンド プロンプトから次のコマンドを発行するには、置換\<vdir\>仮想ディレクトリの名前に置き換えます: **%systemroot%\system32\inetsrv\appcmd です。EXE 構成の移行"Default Web Site/\<vdir 名前\>"**です。  
+>  オーケストレーションを Windows Vista で Web サービスとして公開している場合、サービスをホストする仮想ディレクトリを更新する必要があります。 コマンド プロンプトから次のコマンドを発行するには、置換\<vdir\>仮想ディレクトリの名前に置き換えます: **%systemroot%\system32\inetsrv\appcmd です。EXE 構成の移行"Default Web Site/\<vdir 名前\>"** です。  
   
 ## <a name="see-also"></a>参照  
  [Web サービスとしてのオーケストレーションの公開](../core/publishing-an-orchestration-as-a-web-service.md)   

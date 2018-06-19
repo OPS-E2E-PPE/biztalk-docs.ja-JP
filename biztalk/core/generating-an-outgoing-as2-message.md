@@ -1,14 +1,14 @@
 ---
-title: "送信 AS2 メッセージを生成する |Microsoft ドキュメント"
-ms.custom: 
+title: 送信 AS2 メッセージを生成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 288c8101-9a96-4f98-ae18-df43c7cdb3a0
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246546"
 ---
 # <a name="generating-an-outgoing-as2-message"></a>送信 AS2 メッセージの生成
 AS2EDISend および AS2Send の各送信パイプラインは、次に示すように送信メッセージを生成します。 各パイプラインの一方向アグリーメント タブでプロパティを使用して、**アグリーメントのプロパティ** ダイアログ ボックスを送信 AS2 メッセージを生成します。  

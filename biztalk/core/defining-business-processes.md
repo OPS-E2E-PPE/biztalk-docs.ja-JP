@@ -1,14 +1,14 @@
 ---
-title: "ビジネス プロセスの定義 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス プロセスの定義 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e5e0fdfe-e298-4f32-a7c5-d081b926a206
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22243274"
 ---
 # <a name="defining-business-processes"></a>ビジネス プロセスの定義
 異なるシステム間でのメッセージの交換は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で問題を解決するために必要な条件です。 ただし、実際の目標は、アプリケーションに基づいてビジネス プロセスを定義および実行することになります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] エンジンで、こうしたビジネス プロセスのロジックを定義するには、オーケストレーションを使用します。 また、ビジネス ルールのグループを作成および評価するには、ビジネス ルール エンジンを使用します。 ここでは、オーケストレーションとビジネス ルール エンジンの両方について説明します。  

@@ -1,14 +1,14 @@
 ---
-title: "Oracle データベースの Oracle ユーザー定義型のサポート |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベースの Oracle ユーザー定義型のサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 68edf0f2-a798-4096-86ca-85d2cfa9088a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006923"
 ---
 # <a name="support-for-oracle-user-defined-types-in-oracle-database"></a>Oracle データベースの Oracle ユーザー定義型のサポート
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle User-Defined 型 (Udt) を含む Oracle データベースでの成果物に対する操作の実行をサポートします。 Udt は、次の成果物になくてもかまいません。  

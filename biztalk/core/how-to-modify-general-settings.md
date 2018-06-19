@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255986"
 ---
 # <a name="how-to-modify-general-settings"></a>全般的な設定を変更する方法
 [設定] ダッシュボードを使用して、BizTalk グループ全体の特定のホストの全般的な構成設定を変更することができます。 このトピックでは、この操作を実行する手順について説明します。  

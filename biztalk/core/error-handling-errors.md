@@ -1,14 +1,14 @@
 ---
-title: "エラーの処理エラー |Microsoft ドキュメント"
-ms.custom: 
+title: エラーの処理エラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 602be8a5-1f28-457d-8e12-ba06cff65491
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240826"
 ---
 # <a name="error-handling-errors"></a>エラー処理エラー
 診断および WCF エラー処理のエラーを解決するための情報です。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  ポート**型**一覧で、適切なポートを選択します。  
   
-7.  **[構成]**を選択します。  
+7.  **[構成]** を選択します。  
   
 8.  **WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、**メッセージ**タブです。  
   

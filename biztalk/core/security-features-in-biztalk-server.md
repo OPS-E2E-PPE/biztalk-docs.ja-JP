@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server のセキュリティ機能 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server のセキュリティ機能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Server, security
@@ -25,7 +25,7 @@ helpviewer_keywords:
 - data, security
 - messages, security
 ms.assetid: 5ab15023-fa71-439e-b3aa-420fe28806fa
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -34,6 +34,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269906"
 ---
 # <a name="security-features-in-biztalk-server"></a>BizTalk Server のセキュリティ機能
 Microsoft® BizTalk® Server には、イントラネット内およびインターネット経由の両方で、ドキュメントを送受信するための標準のゲートウェイが用意されています。 BizTalk Server で送受信されるメッセージには、ビジネス上重要な内容が含まれることがあります。そのため、メッセージの転送時と BizTalk Server での処理および保存時の両方で、メッセージとそれに含まれる情報をセキュリティで保護する方法を検討することが重要です。 このセクションでは、BizTalk Server のセキュリティ機能、および使用方法についてすることができますに保護するに、データと環境情報を提供します。  

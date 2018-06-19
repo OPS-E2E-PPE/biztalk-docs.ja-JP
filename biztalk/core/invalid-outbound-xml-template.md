@@ -1,14 +1,14 @@
 ---
-title: "送信 XML テンプレートが無効な |Microsoft ドキュメント"
-ms.custom: 
+title: 送信 XML テンプレートが無効な |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0f29bb60-8c04-4921-84bf-c629540a1c83
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258458"
 ---
 # <a name="invalid-outbound-xml-template"></a>送信 XML テンプレートが無効です
 ## <a name="details"></a>詳細  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  トランスポート名を右クリックします。  
   
-5.  **[プロパティ]**をクリックします。  
+5.  **[プロパティ]** をクリックします。  
   
 6.  ポート**型**一覧で、適切なポートを選択します。  
   

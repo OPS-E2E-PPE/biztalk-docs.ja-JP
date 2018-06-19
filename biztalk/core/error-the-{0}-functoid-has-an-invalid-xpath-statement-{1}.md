@@ -1,14 +1,14 @@
 ---
-title: "エラー -、 &quot;{0}&quot; functoid が、無効な xpath ステートメント: {1} です。 | Microsoft Docs"
-ms.custom: 
+title: 'エラー -、 &quot;{0}&quot; functoid が、無効な xpath ステートメント: {1} です。 | Microsoft Docs'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0e2a294b-1510-4ee8-ad40-e122c09067a4
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241570"
 ---
 # <a name="error---the-quot0quot-functoid-has-an-invalid-xpath-statement-1"></a>エラー -、 &quot;{0}&quot; functoid が、無効な xpath ステートメント: {1} です。
 **エラー コード**  

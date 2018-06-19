@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268858"
 ---
 # <a name="secure-and-protect-your-biztalk-messages"></a>セキュリティで保護し、BizTalk メッセージを保護します。
 Microsoft® BizTalk® Server には、イントラネット内およびインターネット経由の両方で、ドキュメントを送受信するための標準のゲートウェイが用意されています。 可能な基幹業務の特性により、BizTalk Server との間に送信されたメッセージがこれらのメッセージおよび送信中に、BizTalk Server プロセスとストアの中にはその両方を含まれる情報を保護するための対策を検討してください。します。 ここでは、BizTalk Server のセキュリティ機能と、これらの機能を使用してデータと環境をセキュリティで保護する方法について説明します。  

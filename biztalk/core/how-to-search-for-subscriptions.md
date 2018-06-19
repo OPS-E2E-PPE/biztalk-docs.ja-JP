@@ -13,7 +13,7 @@ helpviewer_keywords:
 - subscriptions, viewing
 - subscriptions, searching
 ms.assetid: 95f8fd20-2750-412b-a67b-18976e7706e2
-caps.latest.revision: ''
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22255522"
 ---
 # <a name="how-to-search-for-subscriptions"></a>サブスクリプションを検索する方法
 使用することができます、 **クエリ** サブスクリプションを検索するには、BizTalk Server 管理コンソールでタブをクリックします。 これは、システム内に定義されているすべてのサブスクリプションを確認する場合に便利です。 ルーティング エラーのトラブルシューティングを行う際、構成が正しくないためにエラーの原因となっているサブスクリプションがあるかどうかを確認できます。  

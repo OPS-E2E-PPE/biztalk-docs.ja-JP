@@ -1,18 +1,18 @@
 ---
-title: "SMTP 送信ハンドラを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SMTP 送信ハンドラを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 2015-10-22
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send handlers, SMTP adapters
 - SMTP adapters, send handlers
 - configuring [SMTP adapters], send handlers
 ms.assetid: b68a36ce-f0a5-4302-a405-bb154c935f47
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22248498"
 ---
 # <a name="how-to-configure-an-smtp-send-handler"></a>SMTP 送信ハンドラを構成する方法
 SMTP 送信ハンドラのプロパティは、BizTalk 管理コンソールで設定できます。 個別の SMTP 送信ポートでプロパティが設定されていない場合は、これらの送信ハンドラのプロパティが送信ポートの構成値として使用されます。  
@@ -43,7 +44,7 @@ SMTP 送信ハンドラのプロパティは、BizTalk 管理コンソールで�
     |**ユーザー名**|SMTP サーバーで認証を使用するユーザー名を入力します。<br /><br /> 場合、このプロパティが値を必要と **認証の種類** は **基本認証**します。<br /><br /> 最小長: 0<br /><br /> 最大長: 256|  
     |**パスワード**|SMTP サーバーで認証を使用するパスワードを入力します。<br /><br /> 場合、このプロパティが値を必要と **認証の種類** は **基本認証**します。<br /><br /> 最小長: 0<br /><br /> 最大長: 256|  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [SMTP アダプターの構成](../core/configuring-the-smtp-adapter.md)

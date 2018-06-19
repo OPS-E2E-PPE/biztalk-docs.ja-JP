@@ -1,11 +1,11 @@
 ---
-title: "エンタープライズ シングル サインオンの高可用性 |Microsoft ドキュメント"
-ms.custom: 
+title: エンタープライズ シングル サインオンの高可用性 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 2016-02-29
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Master Secret server, availability
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Master Secret server, high availability
 - SSO, high availability
 ms.assetid: 6c631b5c-7147-4cc0-b58a-6749e83df9d3
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247530"
 ---
 # <a name="high-availability-for-enterprise-single-sign-on"></a>エンタープライズ シングル サインオンの高可用性
 資格情報のマッピングやシングル サインオンにエンタープライズ シングル サインオン (SSO) 機能を使用していない場合でも、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の全体的なインフラストラクチャの中で SSO はきわめて重要な役割を果たしています。これは BizTalk Server で、受信場所に対する情報のセキュリティを確保するために、SSO が使用されているためです。  

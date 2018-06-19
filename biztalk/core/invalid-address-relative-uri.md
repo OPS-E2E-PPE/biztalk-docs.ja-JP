@@ -1,14 +1,14 @@
 ---
-title: "アドレスが無効です (相対 uri) |Microsoft ドキュメント"
-ms.custom: 
+title: アドレスが無効です (相対 uri) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a953f3e-3768-4e61-8f25-ea958a5a701a
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257506"
 ---
 # <a name="invalid-address-relative-uri"></a>アドレスが無効です (相対 URI)
 ## <a name="details"></a>詳細  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  トランスポート名を右クリックします。  
   
-5.  **[プロパティ]**をクリックします。  
+5.  **[プロパティ]** をクリックします。  
   
 6.  ポート**型**一覧で、適切なポートを選択します。  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  **WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。  
   
-9. **アドレス (URI)**テキスト ボックスで、スラッシュ (「/」) で開始するように、アドレスを変更します。  
+9. **アドレス (URI)** テキスト ボックスで、スラッシュ (「/」) で開始するように、アドレスを変更します。  
   
  受信場所の詳細については、次の情報を参照してください。  
   

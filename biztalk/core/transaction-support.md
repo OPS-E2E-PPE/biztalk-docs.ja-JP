@@ -1,18 +1,18 @@
 ---
-title: "トランザクションのサポート |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクションのサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - DataConnection object
 - Business Rules Framework, code samples
 - Business Rules Framework, programming
 ms.assetid: 84faac2f-6229-4692-9d1a-bf62d87d69bb
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279426"
 ---
 # <a name="transaction-support"></a>トランザクションのサポート
 通常、ルール エンジンではトランザクションがサポートされません。 ただし、データベースを更新できますをトランザクション方式を使用して、 **DataConnection**オブジェクトの次の手順で示すようにします。  

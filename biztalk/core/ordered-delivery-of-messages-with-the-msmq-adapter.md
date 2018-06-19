@@ -1,17 +1,17 @@
 ---
-title: "MSMQ アダプターでメッセージの配信を順序付け |Microsoft ドキュメント"
-ms.custom: 
+title: MSMQ アダプターでメッセージの配信を順序付け |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, ordered delivery
 - MSMQ adapters, ordered delivery
 ms.assetid: e8dafc76-e894-4120-9cea-d014d635850e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263586"
 ---
 # <a name="ordered-delivery-of-messages-with-the-msmq-adapter"></a>MSMQ アダプターでメッセージの配信を順序付け
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]提供、**順次配送**オプション静的送信ポート。 設定、**順次配送**オプションで、送信ポートを**True** BizTalk Server がメッセージ ボックス データベースにパブリッシュされる順序と同じ順序で送信ポートにメッセージを配信することを確認します。 エンド ツー エンドの順次配送を実現するには、次の条件を満たす必要があります。  

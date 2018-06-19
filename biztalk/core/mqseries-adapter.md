@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263178"
 ---
 # <a name="mqseries-adapter"></a>MQSeries アダプタ
 MQSeries アダプタは、Microsoft BizTalk Server と IBM MQSeries サーバーの間の仲介役として機能します。これにより、ビジネス プロセスの作成時にすべてのオプションを使用できます。  

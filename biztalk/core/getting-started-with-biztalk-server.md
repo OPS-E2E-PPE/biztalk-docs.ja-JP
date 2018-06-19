@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247170"
 ---
 # <a name="getting-started-with-biztalk-server"></a>BizTalk Server の概要
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)][パブリッシュ/サブスクライブ アーキテクチャ](../core/publish-and-subscribe-architecture.md)を[アダプターを使用して](../core/using-adapters.md)を受け取り、メッセージの送信を実装する[オーケストレーションでビジネス プロセス](../core/defining-business-processes.md)が含まれています[管理および追跡](../core/management-and-tracking-architecture.md)これらのさまざまな部分です。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]含まれています[取引先管理](../core/trading-partner-management-using-biztalk-server.md)の企業間メッセージング、[高可用性](../core/planning-for-high-availability3.md)を開発プラットフォームのアップタイムを最大化する[独自のコンポーネントを作成します。](../core/developing-custom-components.md)、管理コンソールを[、アーティファクトの管理](../core/operational-and-administrative-tasks-in-your-biztalk-environment.md)、およびビジネス アクティビティ監視を管理する[集計、警告、およびプロファイル](../core/using-business-activity-monitoring.md)です。

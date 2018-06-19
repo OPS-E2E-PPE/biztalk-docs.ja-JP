@@ -1,11 +1,11 @@
 ---
-title: "送信ポートに証明書を割り当てる方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートに証明書を割り当てる方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - certificates, assigning
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - assigning certificates
 - certificates, send ports
 ms.assetid: ba9e9c8b-f5b6-4fee-9e89-31b0f1df6ed4
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247482"
 ---
 # <a name="how-to-assign-a-certificate-to-a-send-port"></a>送信ポートに証明書を割り当てる方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートにセキュリティ証明書を割り当てる方法について説明します。 証明書は、BizTalk Server が実行されているコンピューターの "その他のユーザー" 証明書ストアに格納しておく必要があります。それ以外の場合、この送信ポートに関連付けられているメッセージは処理されずにエラーが記録されます。  

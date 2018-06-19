@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246914"
 ---
 # <a name="how-to-add-a-reference-to-another-application"></a>他のアプリケーションへの参照を追加する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、1 つのアプリケーションから別のアプリケーションへの参照を追加する方法について説明します。 」の説明に従って、インポート ウィザードを使用して、アプリケーションをインポートするときに、他のアプリケーションへの参照を追加することも[を BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)です。  

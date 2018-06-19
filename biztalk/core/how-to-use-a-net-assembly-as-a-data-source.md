@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256634"
 ---
 # <a name="how-to-use-a-net-assembly-as-a-data-source"></a>.NET アセンブリをデータ ソースとして使用する方法
 .NET アセンブリをデータ ソースとして指定できます。 アセンブリからクラスまたはクラス メンバーを続けて選択して、ボキャブラリの定義やルール上にドラッグできます。  

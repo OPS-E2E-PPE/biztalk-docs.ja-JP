@@ -1,14 +1,14 @@
 ---
-title: "リンクを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: リンクを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 670b831f-be03-4612-93d5-a894f7bb3c11
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250194"
 ---
 # <a name="how-to-create-links"></a>リンクを作成する方法
 リンクを作成する、**レコード**または**フィールド**ソース スキーマのノードに、**レコード**または**フィールド**送信先スキーマのノードは最も基本的なマップを作成するアクティビティ。 このトピックでは、いくつかのバリエーション (Functoid からのリンクや Functoid へのリンクなど) について、この操作の手順を説明します。 Functoid の使用に関する詳細については、次を参照してください。 [Functoid 作成複雑なマッピングを使用した](../core/using-functoids-to-create-more-complex-mappings.md)です。  

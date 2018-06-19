@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269650"
 ---
 # <a name="reassert"></a>再アサート
 *Reassert*を呼び出す意味、 **Assert**エンジンに既にあるオブジェクトに対して関数の作業メモリです。 reassert コマンドは、オブジェクトに対して retract コマンドを発行し、続けて assert コマンドを発行することと同じです。  

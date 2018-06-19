@@ -1,14 +1,14 @@
 ---
-title: "区切られたレコード内の最小フィールド長 |Microsoft ドキュメント"
-ms.custom: 
+title: 区切られたレコード内の最小フィールド長 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 24272d0d-34c8-487a-9334-683c65c159b8
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263642"
 ---
 # <a name="minimum-field-lengths-within-delimited-records"></a>区切られたレコード内の最小フィールド長
 位置指定レコードの定義では、すべてのフィールドは、特定の厳密な長さに定義されます。 区切られたレコードでは、レコードのフィールドに対して最小のフィールド長を定義できます。 この特性がによって定義された、 **[埋め込み文字を含めた最小の長さ**プロパティの**フィールド要素**と**フィールド属性**ノード。  
@@ -29,4 +30,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
 -  [フィールドに関する考慮事項](../core/field-considerations.md)   
--  **位置揃え (フラット ファイル スキーマのノード プロパティ)**と**埋め込み文字 (フラット ファイル スキーマのノード プロパティ) を含めた最小長**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+-  **位置揃え (フラット ファイル スキーマのノード プロパティ)** と**埋め込み文字 (フラット ファイル スキーマのノード プロパティ) を含めた最小長**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

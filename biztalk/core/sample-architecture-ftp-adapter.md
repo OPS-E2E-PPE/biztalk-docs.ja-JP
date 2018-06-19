@@ -1,11 +1,11 @@
 ---
-title: "サンプル アーキテクチャ: FTP アダプター |Microsoft ドキュメント"
-ms.custom: 
+title: 'サンプル アーキテクチャ: FTP アダプター |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, security
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - FTP adapters, security
 - FTP adapters, architecture examples
 ms.assetid: 13fc1086-6acc-483c-be83-4ff6a60cd2bc
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269850"
 ---
 # <a name="sample-architecture-ftp-adapter"></a>FTP アダプターのサンプル アーキテクチャ:
 このトピックでは、FTP アダプターを使用してメッセージを送受信する場合のサンプル アーキテクチャについて説明します。  

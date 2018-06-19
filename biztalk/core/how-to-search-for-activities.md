@@ -1,17 +1,17 @@
 ---
-title: "アクティビティを検索する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アクティビティを検索する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - databases [BAM], searching
 - BAM portal, searching databases
 ms.assetid: c29c86e1-ef22-4d71-b646-bc2a6f496553
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255210"
 ---
 # <a name="how-to-search-for-activities"></a>アクティビティを検索する方法
 BAM Web ポータルでビジネス アクティビティの検索機能を使用すると、BAM データベースに保存された追跡データ (インスタンス) を検索できます。  

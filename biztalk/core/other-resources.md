@@ -1,11 +1,11 @@
 ---
-title: "その他のリソース |Microsoft ドキュメント"
-ms.custom: 
+title: その他のリソース |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, System.BizTalk:Rules
@@ -36,7 +36,7 @@ helpviewer_keywords:
 - certificates, System.BizTalk:Certificate
 - scripts, System.BizTalk:PreProcessingScript
 ms.assetid: 0be6834b-a562-4d1c-b8d5-43e30eba309e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -45,6 +45,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264066"
 ---
 # <a name="other-resources"></a>その他のリソース
 次のリソースは、BizTalk アプリケーションで使用できる外部アイテムの種類です。 リソースには、次のものがあります。  

@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アプリケーションをエクスポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーションをエクスポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, exporting
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - applications, warnings
 - exporting, security
 ms.assetid: a1d6ffca-3d29-44c7-a811-6cf8b42e23f6
-caps.latest.revision: "50"
+caps.latest.revision: 50
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255954"
 ---
 # <a name="how-to-export-a-biztalk-application"></a>BizTalk アプリケーションをエクスポートする方法
 ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールまたはコマンド ラインを使用して、アプリケーションをエクスポートする方法について説明します。 BizTalk アプリケーションをエクスポートすると、Windows Installer (.msi) ファイルが生成されます。このファイルには、アプリケーションと、エクスポートするよう選択したアプリケーションのアイテムが含まれます。 既定のオプションではアプリケーションのすべてのアイテムが選択されていますが、アイテムのサブセットを選択することもできます。 生成された .msi ファイルは別の BizTalk グループにインポートできます。これによって、新しいグループの既存のアプリケーションにアイテムを追加したり、既存のアプリケーションのアイテムを更新したり、グループ内にインポート対象のアイテムを含んだ新しいアプリケーションを作成することができます。 詳細については、次を参照してください。[を BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)です。 」の説明に従って、それを実行するコンピューターでアプリケーションをインストールする .msi ファイルを使用するも[を BizTalk アプリケーションをインストールする方法](../core/how-to-install-a-biztalk-application.md)です。 アプリケーションにファイルベースのアイテムが含まれる場合、アプリケーションを使用するにはそのアイテムもインストールする必要があります。  

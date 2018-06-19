@@ -1,14 +1,14 @@
 ---
-title: "Functoid を削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Functoid を削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5e52f43f-33ca-452b-a69f-94bd4bb5debd
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248978"
 ---
 # <a name="how-to-delete-functoids"></a>Functoid を削除する方法
 マップを作成する際、既存の Functoid を削除しなければならない場合があります。 Functoid を削除すると、そこに関連付けられていた入力/出力リンクのほか、入力パラメーター、スクリプト仕様、テーブル グリッド構成も削除されます。  

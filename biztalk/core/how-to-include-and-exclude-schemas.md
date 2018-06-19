@@ -1,14 +1,14 @@
 ---
-title: "スキーマを含めたり除外したりする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマを含めたり除外したりする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9206458-e5d6-48d7-87a6-9471ba60dca7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254346"
 ---
 # <a name="how-to-include-and-exclude-schemas"></a>スキーマを含めたり除外したりする方法
 BizTalk プロジェクト フォルダーに存在するスキーマ ファイルが、実際にはそのプロジェクトに追加されていない場合があります。 このようなスキーマを、プロジェクトから除外されたスキーマといいます。 除外されたスキーマは、BizTalk プロジェクトのビルド時にコンパイルされません。 このトピックでは、特定のスキーマを BizTalk プロジェクトから除外したり、除外したスキーマを BizTalk プロジェクトに追加したりするための手順について説明します。  
@@ -31,7 +32,7 @@ BizTalk プロジェクト フォルダーに存在するスキーマ ファイ�
   
      ソリューション エクスプローラーで、それまで除外されていたスキーマのアイコンが、通常のスキーマ アイコンに変化します。  
   
-4.  必要に応じて、**プロジェクト**] メニューのをクリックして**[すべてのファイル**は含まれていないプロジェクトで、プロジェクト フォルダー内のすべてのファイルを非表示にします。  
+4.  必要に応じて、**プロジェクト**] メニューのをクリックして **[すべてのファイル**は含まれていないプロジェクトで、プロジェクト フォルダー内のすべてのファイルを非表示にします。  
   
 ### <a name="to-exclude-a-schema-from-a-biztalk-project"></a>スキーマを BizTalk プロジェクトから除外するには  
   

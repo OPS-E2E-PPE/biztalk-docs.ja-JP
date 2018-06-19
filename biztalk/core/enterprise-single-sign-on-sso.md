@@ -1,17 +1,17 @@
 ---
-title: "エンタープライズ シングル サインオン (SSO) |Microsoft ドキュメント"
-ms.custom: 
+title: エンタープライズ シングル サインオン (SSO) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, about SSO
 - SSO
 ms.assetid: beab96f7-f026-4ae1-8462-a165ad76bbec
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240154"
 ---
 # <a name="enterprise-single-sign-on-sso"></a>エンタープライズ シングル サインオン (SSO)
 エンタープライズ シングル サインオン (SSO) には、ローカルおよびネットワークの境界 (ドメインの境界を含む) の間で暗号化されたユーザー資格情報を格納および転送するサービスが用意されています。 SSO では SSO データベースに資格情報を格納します。 SSO には汎用のシングル サインオン ソリューションが用意されているので、ミドルウェア アプリケーションとカスタム アダプターが SSO を活用して環境間でのユーザー資格情報の格納および転送を安全に行うことができます。 エンド ユーザーは、アプリケーションごとに個別の資格情報を覚えておく必要がありません。  

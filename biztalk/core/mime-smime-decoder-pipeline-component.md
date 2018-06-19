@@ -1,17 +1,17 @@
 ---
-title: "MIME/SMIME デコーダー パイプライン コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: MIME/SMIME デコーダー パイプライン コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, MIME/SMIME Decoder
 - MIME/SMIME Decoder [pipeline component]
 ms.assetid: ff6c963c-1b5c-4be4-9eef-3ec9a018e7fd
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263226"
 ---
 # <a name="mime-smime-decoder-pipeline-component"></a>MIME/SMIME デコーダー パイプライン コンポーネント
 MIME/SMIME デコーダー コンポーネントは、メッセージに MIME デコード機能を提供します。 このパイプライン コンポーネントは、受信パイプラインのデコード ステージに配置できます。サポートされているエンコードは、7bit、8bit、binary、quoted-printable、UUencode、および base64 です。 データのローカライズによって文字セットが変わっても、デコードは変更されません。  

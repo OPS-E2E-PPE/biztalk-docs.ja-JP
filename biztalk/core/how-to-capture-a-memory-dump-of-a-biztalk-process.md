@@ -1,14 +1,14 @@
 ---
-title: "BizTalk プロセスのメモリ ダンプをキャプチャする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk プロセスのメモリ ダンプをキャプチャする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8053fcf3-b331-4245-b3c3-21290463e0c0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247578"
 ---
 # <a name="how-to-capture-a-memory-dump-of-a-biztalk-process"></a>BizTalk プロセスのメモリ ダンプを取得する方法
 状況によっては、BizTalk Server で実行中のプロセスのメモリ ダンプを取得し、そのプロセスの詳細な分析を実行する必要が生じる場合があります。 メモリ ダンプの分析が必要な状況として、以下のような場合が挙げられます。  

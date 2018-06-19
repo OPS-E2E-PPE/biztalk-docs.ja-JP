@@ -1,14 +1,14 @@
 ---
-title: "フラット ファイル メッセージの本文 |Microsoft ドキュメント"
-ms.custom: 
+title: フラット ファイル メッセージの本文 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 097e49a1-75d2-44a4-9372-d78de7b7597c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246786"
 ---
 # <a name="flat-file-message-bodies"></a>フラット ファイル メッセージの本文
 フラット ファイル インスタンス メッセージの本文で必要となる部分は、フラット ファイル逆アセンブラーによって 1 つ以上の XML インスタンス メッセージに変換されます。 受信フラット ファイル インスタンス メッセージの本文に含まれるデータを把握するには、本文に対応するフラット ファイル スキーマにフラット ファイル逆アセンブラーを構成する必要があります。 使用して、スキーマを指定することができます、**ドキュメント スキーマ**フラット ファイル逆アセンブラーのデザイン時プロパティまたは**XMLNORM です。DocumentSpecName**メッセージ コンテキスト プロパティです。 フラット ファイル インスタンス メッセージには本文部分が必要であるため、これらの 2 つの方法のいずれかを使用して、適切なスキーマを構成してください。  

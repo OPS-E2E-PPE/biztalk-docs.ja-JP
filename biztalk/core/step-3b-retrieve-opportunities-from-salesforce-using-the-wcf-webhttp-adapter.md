@@ -1,14 +1,14 @@
 ---
-title: "手順 3 b: Wcf-webhttp アダプターを使用して Salesforce から営業案件の詳細を取得 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3 b: Wcf-webhttp アダプターを使用して Salesforce から営業案件の詳細を取得 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 115c908f-777b-4c51-85ea-71d639b01775
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279554"
 ---
 # <a name="step-3b-retrieve-opportunity-details-from-salesforce-using-the-wcf-webhttp-adapter"></a>手順 3 b: Wcf-webhttp アダプターを使用して Salesforce から営業案件の詳細を取得
 このセクションでは、受信する営業案件通知を処理するオーケストレーションを強化し、通知から営業案件名を抽出し、それを使用して Salesforce に送信する要求クエリを作成します。 こうすることで、営業案件に関連付けられている製品固有の詳細情報を取得します。 Salesforce からのクエリ応答は [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信されます。 これを達成するには、次の手順を実行します。  
@@ -65,7 +66,7 @@ SELECT Amount, Id, Name,(SELECT Quantity, ListPrice, PricebookEntry.UnitPrice, P
     |-|-|  
     |Input[0]|SELECT Amount, Id, Name,(SELECT Quantity, ListPrice, PricebookEntry.UnitPrice, PricebookEntry.Name FROM OpportunityLineItems) FROM Opportunity Where Name = '|  
     |Input [1]|Name 要素を 2 番目の入力として使用するために、送信元スキーマの Name 要素を Functoid に接続します。|  
-    |[2] の入力|'**注:**最後の入力値に対してのみ単一引用符 (') を指定します。|  
+    |[2] の入力|'**注:** 最後の入力値に対してのみ単一引用符 (') を指定します。|  
   
      次のスクリーン ショットの構成を示しています、**文字列連結**functoid です。  
   

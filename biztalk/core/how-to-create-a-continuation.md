@@ -1,11 +1,11 @@
 ---
-title: "Continuation を作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Continuation を作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities, relating events
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - tracking profiles, continuations
 - tracking profiles, connecting activities
 ms.assetid: 31d6fc24-676e-418c-8e78-1a46b045905d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248850"
 ---
 # <a name="how-to-create-a-continuation"></a>Continuation を作成する方法
 Continuation は、接続されたアクティビティを構築することによって、1 つ以上のオーケストレーション内のどのビジネス イベントが関連付けられているのかを示すために作成します。  
@@ -45,7 +46,7 @@ Continuation は、接続されたアクティビティを構築することに�
   
 1.  既存の追跡プロファイルを開くか、追跡プロファイルを作成します。 追跡プロファイルを作成する方法の詳細については、次を参照してください。[追跡プロファイルを作成する方法](../core/how-to-create-a-tracking-profile.md)です。  
   
-2.  識別、*継続トークン、*は両方のアクティビティに使用される固有の情報の一部であります。 たとえば場合、 **CreditHistory**アクティビティがから送信されたメッセージによってアクティブ化、 **LoanProcess**内のアクティビティ、 **EquityLoan**オーケストレーションの SSN フィールド、メッセージは、両方のアクティビティに一般的になっているために、継続トークンとして使用できます。  
+2.  識別、*継続トークン、* は両方のアクティビティに使用される固有の情報の一部であります。 たとえば場合、 **CreditHistory**アクティビティがから送信されたメッセージによってアクティブ化、 **LoanProcess**内のアクティビティ、 **EquityLoan**オーケストレーションの SSN フィールド、メッセージは、両方のアクティビティに一般的になっているために、継続トークンとして使用できます。  
   
 3.  アクティビティを右クリックし **新しい Continuation** continuation (CreditHistory) を作成します。 作成した Continuation のノードに名前を付けます。  
   

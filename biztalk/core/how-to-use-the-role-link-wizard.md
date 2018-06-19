@@ -1,11 +1,11 @@
 ---
-title: "ロール リンク ウィザードを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ロール リンク ウィザードを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - links [roles]
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - role links, Role Link Wizard [Orchestration Designer]
 - links [roles], about links
 ms.assetid: ddc33d87-c08d-4193-9483-4644ef302853
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255858"
 ---
 # <a name="how-to-use-the-role-link-wizard"></a>ロール リンク ウィザードを使用する方法
 ロール リンク ウィザードを使用すると、新しいロール リンクの作成や既存のロール リンクの変更を行うことができます。 ロール リンク ウィザードでは、ロール リンクの種類を構成する使用ロールと実装ロール、およびロール リンクについて、名前、種類、アクセス制限の設定や表示を行うことができます。 ロール リンクの機能を理解するのを参照してください。[オーケストレーションでロール リンクを使用して](../core/using-role-links-in-orchestrations.md)です。  

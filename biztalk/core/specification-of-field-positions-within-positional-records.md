@@ -1,14 +1,14 @@
 ---
-title: "位置指定レコードにおけるフィールド位置の仕様 |Microsoft ドキュメント"
-ms.custom: 
+title: 位置指定レコードにおけるフィールド位置の仕様 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 33c2eee3-ec30-46c5-a143-a3d2e2f265a6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279346"
 ---
 # <a name="specification-of-field-positions-within-positional-records"></a>位置指定レコードにおけるフィールド位置の仕様
 位置指定レコードを定義するには、そのレコードに含まれるフィールドの位置情報と長さ情報を指定する必要があります。 レコードにサブレコードが含まれている場合、サブレコードに含まれるフィールドの位置と長さが集計されて、上位レコードの情報が生成されます。  
@@ -24,7 +25,7 @@ ms.lasthandoff: 09/20/2017
  指定した値の合計、**位置指定オフセット**と**位置指定値**、特定のプロパティ**フィールド要素**または**フィールド属性**ノードが、対応するフィールドに割り当てられる文字数を決定します。 レコードおよびそのサブレコードに含まれるすべてのフィールドについて、このような一連の合計値を取得することによって各フィールドの境界が決定されます。  
   
 > [!NOTE]
->  ときに、**カウント位置 (バイト単位)**のプロパティ、**スキーマ**に設定されているノード**はい**、**位置指定値**と**位置のオフセット**プロパティは、文字ではなくバイト数を指定します。  
+>  ときに、**カウント位置 (バイト単位)** のプロパティ、**スキーマ**に設定されているノード**はい**、**位置指定値**と**位置のオフセット**プロパティは、文字ではなくバイト数を指定します。  
 
 これらのプロパティの詳細を参照してください[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
   

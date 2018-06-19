@@ -1,14 +1,14 @@
 ---
-title: "ノード名における文字エン コードのどの |Microsoft ドキュメント"
-ms.custom: 
+title: ノード名における文字エン コードのどの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6462856b-7a52-40c9-9aff-c0579130eec9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247002"
 ---
 # <a name="how-node-name-characters-get-encoded"></a>ノード名の文字エンコードの方法
 ノード名で許可されていない文字を使用する場合は、BizTalk エディターが表示されたら、使用できない文字またはエンコード文字を続行するかどうかたずねる (**OK**または**キャンセル**)。 続行した場合 ([OK] をクリック)、禁止文字がそれぞれ次のようにエンコードされます。  

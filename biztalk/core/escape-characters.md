@@ -1,14 +1,14 @@
 ---
-title: "エスケープ文字 |Microsoft ドキュメント"
-ms.custom: 
+title: エスケープ文字 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3af800b9-d31b-487a-9a06-6eda47d1574e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246130"
 ---
 # <a name="escape-characters"></a>エスケープ文字
 
@@ -59,7 +60,7 @@ RECORD1,testfield1\,testfield1,testfield2
   
  フラット ファイル アセンブラーが逆の操作を実行 (つまり、XML 形式のレコードを対応するフラット ファイル レコードに変換) した後の Field1 には、コンマの前に、そのデータがフィールド区切り記号ではないことを示すエスケープ文字が挿入されます。  
   
- BizTalk エディターを使用してフラット ファイル スキーマを作成するときにを使用して、スキーマ全体に対する既定のエスケープ文字を定義することができます、**既定のエスケープ文字**と**既定のエスケープ文字の種類**プロパティ**スキーマ**ノード。 次に、この既定のエスケープ文字またはカスタムのレコードに固有のエスケープ文字を使用して、使用するスキーマで個々 のレコードを構成できる、**エスケープ文字]**と**エスケープ文字の種類**のプロパティ、**レコード**ノード。  
+ BizTalk エディターを使用してフラット ファイル スキーマを作成するときにを使用して、スキーマ全体に対する既定のエスケープ文字を定義することができます、**既定のエスケープ文字**と**既定のエスケープ文字の種類**プロパティ**スキーマ**ノード。 次に、この既定のエスケープ文字またはカスタムのレコードに固有のエスケープ文字を使用して、使用するスキーマで個々 のレコードを構成できる、**エスケープ文字]** と**エスケープ文字の種類**のプロパティ、**レコード**ノード。  
   
 ## <a name="see-also"></a>参照  
 - [フィールドの値の一部として特殊文字を解釈する方法](../core/ways-to-interpret-special-characters-as-part-of-a-field-value.md)  

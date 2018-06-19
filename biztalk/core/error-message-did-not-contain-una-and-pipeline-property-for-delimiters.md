@@ -1,14 +1,14 @@
 ---
-title: "メッセージに UNA が含まれていないと、区切り記号のパイプライン プロパティが正しくない形式 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージに UNA が含まれていないと、区切り記号のパイプライン プロパティが正しくない形式 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b761d820-e09d-4949-bb41-da9e66054c60
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241842"
 ---
 # <a name="message-did-not-contain-una-and-pipeline-property-for-delimiters-was-incorrect-format"></a>メッセージに UNA が含まれていなかったため、区切り記号のパイプライン プロパティが正しくない形式になっています
 ## <a name="details"></a>詳細  

@@ -1,14 +1,14 @@
 ---
-title: "すべての要素または属性の任意のノードを挿入する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: すべての要素または属性の任意のノードを挿入する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4cbfdc04-6c83-4639-82de-169b6f009a2e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253962"
 ---
 # <a name="how-to-insert-an-any-element-or-any-attribute-node"></a>すべての要素または属性の任意のノードを挿入する方法
 BizTalk エディターには、すべてのノードの 2 種類がサポートしています: **Any 要素**と**すべての属性**です。 これらのノードを使用すると、インスタンス メッセージ内の特定の位置にどのような要素または属性が出現するかわからないときに、それらの要素や属性のための場所をスキーマ内で確保できます。 これらのノードがインスタンス メッセージの処理時にどのように解釈されるかについては、Web 上で XSD (XML Schema Definition) 言語に関する情報を参照してください。 この情報へのリンクを参照してください。 [Web 上の XSD リソース](../core/xsd-resources-on-the-web.md)です。  

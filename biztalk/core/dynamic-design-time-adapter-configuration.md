@@ -1,14 +1,14 @@
 ---
-title: "動的デザイン時アダプター構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 動的デザイン時アダプター構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 36127d62-0348-42bb-981f-19fcad26efce
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241290"
 ---
 # <a name="dynamic-design-time-adapter-configuration"></a>動的デザイン時アダプター構成
 静的デザイン時アダプター構成とアダプター メタデータの追加ウィザードの標準の既定 UI では、インポートする BizTalk プロジェクトのアダプターのサービスを表示するための柔軟性が足りない場合があります。 代わりに、動的デザイン時構成を使用できます。この構成では、カスタマイズした UI をウィザードに提供し、アダプターのサービスを表示および選択できます。 BizTalk アダプター フレームワークには、アダプターに必要なスキーマのインポートやカスタム UI の表示に使用できる一連の API が用意されています。  

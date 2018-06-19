@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261914"
 ---
 # <a name="lesson-3-deploy-the-solution"></a>レッスン 3: ソリューションの展開
 EAISolution を展開するには、まず BizTalk 管理データベースおよびグローバル アセンブリ キャッシュにアセンブリを追加します。  

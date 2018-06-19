@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250394"
 ---
 # <a name="how-to-customize-colors-and-font-in-biztalk-mapper"></a>BizTalk マッパーの色とフォントをカスタマイズする方法
 各種のリンクに関連付けられた色やグリッド ビューで選択されたオブジェクトの色は、必要に応じて変更できます。 また、スキーマのツリー ノードを表示するときに使用されるフォントを変更することもできます。 このトピックでは、こうした変更を行うための手順について説明します。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-change-the-colors-and-font-used-in-biztalk-mapper"></a>BizTalk マッパーで使用される色やフォントを変更するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]で、 **[ツール]** メニューの **[オプション]**をクリックします。  
+1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]で、 **[ツール]** メニューの **[オプション]** をクリックします。  
   
 2.  **オプション** ダイアログ ボックスで、展開、 **BizTalk マッパー**ノードをクリックして**色とフォント**です。  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  **フォント**メイン編集ウィンドウのビューで使用するフォントをダイアログ ボックスで、変更します。  
   
-6.  **[OK]**をクリックします。 設定が選択済みとして適用されます。  
+6.  **[OK]** をクリックします。 設定が選択済みとして適用されます。  
   
     > [!IMPORTANT]
     >  カスタマイズした設定を使用しない場合は、クリックして**既定値に戻す**で、**オプション** ダイアログ ボックス。  

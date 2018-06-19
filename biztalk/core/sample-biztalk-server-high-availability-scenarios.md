@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server の高可用性のシナリオのサンプル |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server の高可用性のシナリオのサンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, small distributions
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - scaling
 - architecture, large distributions
 ms.assetid: ad9e3f57-1a23-41c2-82c9-dc8e1b29ed4d
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271666"
 ---
 # <a name="sample-biztalk-server-high-availability-scenarios"></a>BizTalk Server の高可用性を実現するサンプル シナリオ
 このトピックは、ホストをスケールアウトすることによって Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の高可用性を実現するシナリオについて説明します。 管理者は、それぞれの機能領域を [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の異なるホストおよび層に分離することにより、各ホストの冗長性を確保し、他のホストから独立して個別に拡張することができます。 各機能領域の高可用性を実現するには、主要な機能 (受信、処理、送信、および追跡) ごとに別々のホストを作成し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースとエンタープライズ シングル サインオンのマスター シークレット サーバーをクラスター化します。  

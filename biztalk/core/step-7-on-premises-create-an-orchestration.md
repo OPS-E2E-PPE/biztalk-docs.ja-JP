@@ -1,14 +1,14 @@
 ---
-title: "手順 (オンプレミス) 7: オーケストレーションを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 (オンプレミス) 7: オーケストレーションを作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c0b6d0e-cf00-4eee-9b89-28210bad46f4
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280226"
 ---
 # <a name="step-7-on-premises-create-an-orchestration"></a>オーケストレーションを作成する手順 7 (オンプレミス)。
 後に、ビジネス シナリオに従って[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]販売注文メッセージを受信、Service Bus キューからメッセージ内の注文数量が 100 より大きいかどうかを確認する必要があります。 メッセージが挿入された数量が 100 より大きい場合、 **SalesOrder**テーブル。 そうでない場合は、共有ファイルの場所にメッセージが送信されます。 Northwind はオーケストレーションを作成することによってこのビジネス ロジックを実現します。 このトピックでは、オーケストレーションの作成方法を、手順を追って説明します。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 |------------------|---------------------------|  
 |Message1_SO_Inbound|このメッセージは、のインスタンス、 **ECommerceSalesOrder.xsd**スキーマです。|  
 |Message2_SO_Inbound|このメッセージのコピーである、 **Message1_SO_Inbound**です。 ベスト プラクティスとして、メッセージのコピーを作成し、元のメッセージを残したまま、新しいメッセージを修正してください。 詳細については、次を参照してください。 [BizTalk Server メッセージ](http://msdn.microsoft.com/library/aa560436)です。|  
-|Message1_SO_Outbound|このメッセージは、のインスタンス、 **TableOperations.dbo.SalesOrder (Insert)**スキーマです。|  
+|Message1_SO_Outbound|このメッセージは、のインスタンス、 **TableOperations.dbo.SalesOrder (Insert)** スキーマです。|  
   
 #### <a name="to-create-the-messages"></a>メッセージを作成するには  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 09/20/2017
         Message2_SO_Inbound(*) = Message1_SO_Inbound(*); //copy the context properties on the message  
         ```  
   
-         **[OK]**をクリックします。  
+         **[OK]** をクリックします。  
   
 3.  ビジネス シナリオに従って、注文項目の数量に応じて別の宛先にメッセージを送信しなければならない場合があります。 このため、受信する販売注文メッセージから、数量の値を抽出する必要があります。  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 09/20/2017
         quantityOrdered = Message2_SO_Inbound.Quantity;  
         ```  
   
-         **[OK]**をクリックします。  
+         **[OK]** をクリックします。  
   
 4.  注文数量を抽出したら、次に、メッセージ フローがたどる 2 つの異なるパスを配置するための判断ブロックを作成する必要があります。 追加することによって、オーケストレーションに判断ブロックを作成する、**判断**図形です。  
   
@@ -111,12 +112,12 @@ ms.lasthandoff: 09/20/2017
   
         |プロパティ名|値|  
         |-------------------|-----------|  
-        |[Identifier]|入力`Yes`です。 **注:**という名前の既定では、他のルート**Else**です。|  
+        |[Identifier]|入力`Yes`です。 **注:** という名前の既定では、他のルート**Else**です。|  
         |式|入力`quantityOrdered > 100`です。|  
   
          これで、2 つのルートが利用可能になりました。 場合の値、 **quantityOrdered**変数が 100 より大きい場合、メッセージは、**はい**ルート。 ない場合は、 **Else**ルート。 ここで、各ルート内で実行するアクションを定義する必要があります。  
   
-5.  ビジネス シナリオに従って、注文数量が 100 を超える場合、メッセージを SalesOrder テーブルに挿入する必要があります。 したがって、 **[はい]**ルート、ECommerceSalesOrder.xsd スキーマを TableOperations.SalesOrder.Insert スキーマを変換する必要があります。 トピックの挿入スキーマを作成した[手順 5 (オンプレミス): にメッセージを SalesOrder テーブルを挿入するためのスキーマ生成](../core/step-5-generate-the-schema-for-inserting-a-message-into-salesorder-table.md)です。 スキーマを変換した後、メッセージを、SQL Server データベース テーブルに送信する必要があります。  
+5.  ビジネス シナリオに従って、注文数量が 100 を超える場合、メッセージを SalesOrder テーブルに挿入する必要があります。 したがって、 **[はい]** ルート、ECommerceSalesOrder.xsd スキーマを TableOperations.SalesOrder.Insert スキーマを変換する必要があります。 トピックの挿入スキーマを作成した[手順 5 (オンプレミス): にメッセージを SalesOrder テーブルを挿入するためのスキーマ生成](../core/step-5-generate-the-schema-for-inserting-a-message-into-salesorder-table.md)です。 スキーマを変換した後、メッセージを、SQL Server データベース テーブルに送信する必要があります。  
   
     1.  内で、**はい**ルーティング、ドラッグ アンド ドロップ、**メッセージの構築**図形です。 設定、**構築メッセージ**する図形のプロパティが**Message1_SO_Outbound**です。  
   
@@ -150,7 +151,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  **ポートの種類を選択** ページで選択**新しいポートの種類を作成する**オプションを選択、**一方向**通信パターンでのアクセス制限については、既定値をそのまま使用し、をクリックして**次**です。  
   
-4.  **ポートのバインド**] ページで、ポートの方向] を選択、**常にこのポートでメッセージを受信**、ポートのバインドを既定値のままにし、[クリックして**[次へ**.  
+4.  **ポートのバインド**] ページで、ポートの方向] を選択、**常にこのポートでメッセージを受信**、ポートのバインドを既定値のままにし、[クリックして **[次へ**.  
   
 5.  最後のページでをクリックして**完了**です。  
   

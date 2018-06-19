@@ -1,14 +1,14 @@
 ---
-title: "テストおよびアダプターをデバッグする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: テストおよびアダプターをデバッグする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cf6563ea-b4ea-4617-b3da-d31250d002ab
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256866"
 ---
 # <a name="how-to-test-and-debug-an-adapter"></a>アダプターをテストおよびデバッグする方法
 実行時の問題のデバッグでは、多くの場合、多角的なアプローチが必要になります。 問題やソフトウェアのバグの原因を突き止めるには、ソフトウェア トレース、パフォーマンス カウンター、イベント ログのエントリ、Windows Management Instrumentation (WMI) イベント、ソース コードのデバッグなど、さまざまなソースからデータを収集する必要があります。  

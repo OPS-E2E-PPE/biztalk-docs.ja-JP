@@ -14,7 +14,7 @@ helpviewer_keywords:
 - service instances, searching
 - instances, services
 ms.assetid: 48cb885c-aaf1-44e8-9810-2e70cf63db81
-caps.latest.revision: ''
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22255122"
 ---
 # <a name="how-to-search-for-all-service-instances"></a>すべてのサービス インスタンスを検索する方法
 使用することができます、 **クエリ**  タブで、BizTalk Server 管理コンソールのすべてのサービス インスタンスを検索します。 実行中のインスタンスまたは中断されたインスタンスがある場合、特定のサービスの種類の参加を解除することはできません。 特定のサービスの種類の参加を解除する前に、すべてのサービス インスタンスを検索して、実行中または中断されたインスタンスがないことを確認してください。  

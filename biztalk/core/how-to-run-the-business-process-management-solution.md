@@ -1,11 +1,11 @@
 ---
-title: "ビジネス プロセス管理ソリューションを実行する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス プロセス管理ソリューションを実行する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, validating
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - process management solution tutorial, stopping orders
 - process management solution tutorial, updating orders
 ms.assetid: cb77651e-e16c-49dc-9f8a-88584cd68a8b
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257626"
 ---
 # <a name="how-to-run-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションの実行方法
 次の手順では、単一のコンピュータでビジネス プロセス管理ソリューションを実行および検証する方法について説明します。  

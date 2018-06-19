@@ -1,14 +1,14 @@
 ---
-title: "シリアル化中にエラーが発生しました。 トランザクション機能グループに含まれているセットは、次のエラーで中断されていますが、X12 |Microsoft ドキュメント"
-ms.custom: 
+title: シリアル化中にエラーが発生しました。 トランザクション機能グループに含まれているセットは、次のエラーで中断されていますが、X12 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 49b13038-2637-4435-91e9-d6fe2b80ca7a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241426"
 ---
 # <a name="error-encountered-during-serialization-the-x12-transaction-set-contained-in-functional-group-is-being-suspended-with-following-errors"></a>シリアル化中にエラーが発生しました。 機能グループに含まれる X12 トランザクション セットが次のエラーで中断されています
 ## <a name="details"></a>詳細  

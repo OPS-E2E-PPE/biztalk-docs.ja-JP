@@ -1,11 +1,11 @@
 ---
-title: "ホスト側開始 SSO |Microsoft ドキュメント"
-ms.custom: 
+title: ホスト側開始 SSO |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - host initiated SSO
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - SSO, host initiated
 - managing [SSO], host intitiated
 ms.assetid: 492f730d-08ec-47d6-a88b-0d373bd8912b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246362"
 ---
 # <a name="host-initiated-sso"></a>ホスト側開始 SSO
 ホスト側開始のシングル サインオンを使用すると、ホスト システムからの要求で Windows システム上のリソースにアクセスできます。 このホスト システム (たとえば、RACF アカウント) は、Windows 以外の環境の、Windows 以外のユーザーのコンテキストに存在します。 このようなアクセスを可能にするために、シングル サインオンの資格情報ストアによってホスト アカウントが Windows アカウントにマップされます。  

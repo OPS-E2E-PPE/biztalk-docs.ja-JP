@@ -1,14 +1,14 @@
 ---
-title: "BAM インターセプタ動作を Machine.config ファイルに追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM インターセプタ動作を Machine.config ファイルに追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2ea09925-264f-4976-8e34-f63bad70f886
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248826"
 ---
 # <a name="how-to-add-the-bam-interceptor-behavior-to-the-machineconfig-file"></a>BAM インターセプタ動作を Machine.config ファイルに追加する方法
 BAM でデータを受信するには、BAM インターセプタ動作を Microsoft .NET machine.config ファイルに追加する必要があります。 これは次の 2 つの方法で実行できます。  
@@ -47,7 +48,7 @@ BAM でデータを受信するには、BAM インターセプタ動作を Micro
   
 1.  サービス構成エディターを開きます。 サービス構成エディターの使用方法の詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=83557](http://go.microsoft.com/fwlink/?LinkId=83557)です。  
   
-2.  ツリー ビュー ウィンドウ (ラベルの付いた**構成**)、ノード ツリーを展開します。 をクリックして、 **[詳細設定]**フォルダー、をクリックして、**拡張機能**フォルダーをクリックし、**動作要素拡張**要素。  
+2.  ツリー ビュー ウィンドウ (ラベルの付いた**構成**)、ノード ツリーを展開します。 をクリックして、 **[詳細設定]** フォルダー、をクリックして、**拡張機能**フォルダーをクリックし、**動作要素拡張**要素。  
   
 3.  新しい動作要素の拡張機能を作成します。 クリックして、**新規**Extension 構成要素エディタ ダイアログ ボックスを開きます。 **構成名**動作、BAMEndPointBehaviorExtension などの一意の名前を入力します。  
   

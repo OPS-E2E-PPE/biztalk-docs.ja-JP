@@ -1,14 +1,14 @@
 ---
-title: "XML メッセージ エンベロープを入れ子になった |Microsoft ドキュメント"
-ms.custom: 
+title: XML メッセージ エンベロープを入れ子になった |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e880cef1-4e73-4bce-a06e-8c4d23bc5a8c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263842"
 ---
 # <a name="nested-xml-message-envelopes"></a>入れ子になった XML メッセージ エンベロープ
 XML エンベロープを入れ子にすることによって、複雑なドキュメント構造を作成できます。 入れ子になった XML エンベロープには、柔軟型と正規型の 2 つの形態があります。 次の例は、柔軟型のエンベロープ ドキュメントを示しています。ドキュメントおよびエンベロープ (太字部分) が上位のエンベロープ内の同じレベルに出現しています。  

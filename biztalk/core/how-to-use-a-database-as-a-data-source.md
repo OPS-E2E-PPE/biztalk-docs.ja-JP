@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255714"
 ---
 # <a name="how-to-use-a-database-as-a-data-source"></a>データベースをデータ ソースとして使用する方法
 データベースをデータ ソースとして指定できます。 データベースからテーブルまたはテーブルの列を続けて選択し、ファクトとして使用するボキャブラリ定義またはルール上にドラッグできます。  

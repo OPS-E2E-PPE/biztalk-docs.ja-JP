@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server データベースの移動 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server データベースの移動 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migrating, databases
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - maintaining, BizTalk Server
 - databases, migrating
 ms.assetid: 445161b2-245a-4f75-8d54-59e1e81c0398
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263170"
 ---
 # <a name="moving-biztalk-server-databases"></a>BizTalk Server データベースの移動
 さまざまなニーズに積極的に対応するデータ センターにおいて、データベースを別のハードウェアに移動することは決して珍しいことではありません。 データベースの移動が必要となるケースとしては、データベースがハードウェアの容量を超えてしまったり、ハードウェアを新しいハードウェアにアップグレードしたりする場合などが考えられます。 ここでは、いくつかの BizTalk Server データベースを対象に、その移動方法を紹介します。  

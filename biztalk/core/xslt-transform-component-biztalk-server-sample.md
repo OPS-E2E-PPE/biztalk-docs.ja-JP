@@ -1,11 +1,11 @@
 ---
-title: "XSLT 変換コンポーネント (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: XSLT 変換コンポーネント (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components [custom], examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - XSLT, examples
 - examples, XSLT
 ms.assetid: 9152e897-4db9-4924-b37e-fd9e908dbef1
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974928"
 ---
 # <a name="xslt-transform-component-biztalk-server-sample"></a>XSLT 変換コンポーネント (BizTalk Server サンプル)
 XSLT 変換コンポーネント サンプルは、カスタム パイプライン コンポーネントを作成し、XSLT を使用して XML メッセージを変換する方法を示します。  
@@ -34,7 +35,7 @@ XSLT 変換コンポーネント サンプルは、カスタム パイプライ�
 2.  パイプラインは Transform.xsl を使用して、XML ドキュメントを電子メール メッセージの HTML 本文に変換します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\Pipelines\XslTransformComponent\  
+ *\<パスのサンプル\>* \Pipelines\XslTransformComponent\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -58,9 +59,9 @@ XSLT 変換コンポーネント サンプルは、カスタム パイプライ�
   
 #### <a name="to-build-and-initialize-this-sample"></a>このサンプルを作成および初期化するには  
   
-1.  コマンド ウィンドウでディレクトリ変更 (**cd)**次のフォルダーに。  
+1.  コマンド ウィンドウでディレクトリ変更 (**cd)** 次のフォルダーに。  
   
-     *\<パスのサンプル\>*\Pipelines\XslTransformComponent  
+     *\<パスのサンプル\>* \Pipelines\XslTransformComponent  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   

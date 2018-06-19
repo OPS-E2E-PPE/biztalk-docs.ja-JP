@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249330"
 ---
 # <a name="how-to-customize-general-settings-in-biztalk-mapper"></a>BizTalk マッパーの全般的な設定をカスタマイズする方法
 マップの特定の表示オプションの既定の設定を変更できます。 これらの設定は、Visual Studio を開くたびに使用できます。 ここでは、このようなオプションについて説明します。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-customize-the-general-settings"></a>全般的な設定をカスタマイズするには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]で、 **[ツール]** メニューの **[オプション]**をクリックします。  
+1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]で、 **[ツール]** メニューの **[オプション]** をクリックします。  
   
      または、キーボードの Alt キーを押しながら TO を押してもかまいません。 マッパーのキーボード ショートカットの一覧は、次を参照してください。 [BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)です。  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 09/20/2017
   
     -   送信元スキーマ、送信先スキーマ、および Functoid の名前、ラベル、コメント、入力、スクリプトの検索の既定値  
   
-4.  **[OK]**をクリックします。 設定が既定値として保存されます。  
+4.  **[OK]** をクリックします。 設定が既定値として保存されます。  
   
     > [!IMPORTANT]
     >  カスタマイズした設定を使用しない場合は、クリックして**既定値に戻す**で、**オプション** ダイアログ ボックス。  

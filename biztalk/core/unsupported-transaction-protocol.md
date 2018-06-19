@@ -1,14 +1,14 @@
 ---
-title: "トランザクション プロトコルをサポートされていません |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクション プロトコルをサポートされていません |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 11fb2497-9971-4e85-b21a-161734f071e0
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286890"
 ---
 # <a name="unsupported-transaction-protocol"></a>トランザクション プロトコルがサポートされていません
 ## <a name="details"></a>詳細  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  トランスポート名を右クリックします。  
   
-5.  **[プロパティ]**をクリックします。  
+5.  **[プロパティ]** をクリックします。  
   
 6.  ポート**型**一覧で、適切なポートを選択します。  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 9. **トランザクション**セクションで、選択、**トランザクションを有効にする**オプション。  
   
-10. **トランザクション プロトコル**ドロップダウン リストで、いずれかを選択**OleTransactions**または**[wsatomictransactions]**です。  
+10. **トランザクション プロトコル**ドロップダウン リストで、いずれかを選択**OleTransactions**または **[wsatomictransactions]** です。  
   
  これらの手順が適用されるのは、次のトランスポートの種類のみです。  
   

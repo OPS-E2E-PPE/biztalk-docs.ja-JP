@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Server メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, properties
 - messages, about messages
 ms.assetid: 6048c191-b495-4fdc-b547-e3e322340a49
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279898"
 ---
 # <a name="the-biztalk-server-message"></a>BizTalk Server メッセージ
 基本的に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、メッセージ処理エンジンです。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の詳細を理解するには、メッセージと BizTalk Server によるメッセージの表示、保存、および処理の方法を理解することが重要です。 メッセージの概要を理解すると、BizTalk Server でのメッセージ処理の詳細が理解しやすくなります。  

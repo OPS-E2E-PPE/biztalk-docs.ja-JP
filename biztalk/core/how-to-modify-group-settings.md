@@ -1,15 +1,15 @@
 ---
-title: "更新プログラム グループの設定 |Microsoft ドキュメント"
-description: "BizTalk Server 管理コンソールを使用して、グループのパフォーマンス設定を変更します。"
-ms.custom: 
+title: 更新プログラム グループの設定 |Microsoft ドキュメント
+description: BizTalk Server 管理コンソールを使用して、グループのパフォーマンス設定を変更します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fe0cbeb8-23d6-45cf-8535-c989914f5124
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254810"
 ---
 # <a name="how-to-update-the-biztalk-group-settings"></a>BizTalk グループの設定を更新する方法
 ダッシュボードの設定を使用すると、特定の BizTalk グループに属するすべてのコンピューターで使用する構成情報を変更できます。 ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でグループレベルのパフォーマンス設定を変更する手順について説明します。 これらの設定は特定のグループのすべてのコンピューターに適用できます。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
     |**大きなメッセージ サイズ**|バッチでのストリーミングまたは変換中のストリーミングをトリガーする個別メッセージのサイズのしきい値を設定します。|1 - 10000000|1000000|既存の最大**大きなメッセージ サイズ**と**LargeMessageFragmentSize**値。|  
     |**追跡とレポート**||-|-|-|  
     |**メッセージ ボックス パフォーマンス カウンターのサンプリング間隔**|パフォーマンス カウンターを更新する間隔を設定します。<br /><br /> 間隔により、データベースに対する負荷とカウンターの値の新しさがトレードオフされます。 値を大きくするとデータがあまり更新されなくなり、データベースに対する負荷が小さくなります。|1 – 整数型の最大値|-|BizTalk グループがあれば、そのコンピューターで最も大きな値。 そうでない場合は、既定値。|  
-    |**グループ レベルの追跡を有効にします。**|このオプションを選択すると、BizTalk Server のグループ レベルの追跡が有効になります。<br /><br /> グローバル追跡を無効にすると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] グループ全体の追跡インターセプターが無効になります。 つまり、BizTalk は追跡テーブル内のイベントを追跡しません。 **注:**この設定では、BAM の追跡は影響しません。|On、Off します。|基準|-|  
+    |**グループ レベルの追跡を有効にします。**|このオプションを選択すると、BizTalk Server のグループ レベルの追跡が有効になります。<br /><br /> グローバル追跡を無効にすると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] グループ全体の追跡インターセプターが無効になります。 つまり、BizTalk は追跡テーブル内のイベントを追跡しません。 **注:** この設定では、BAM の追跡は影響しません。|On、Off します。|基準|-|  
   
 3.  をクリックして**適用**を変更を適用し、別のタブに進みます。をクリックしてまたは**OK**を変更を適用し、設定ダッシュ ボードを終了します。  
   

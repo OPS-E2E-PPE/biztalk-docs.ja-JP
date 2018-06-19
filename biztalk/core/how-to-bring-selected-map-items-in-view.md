@@ -1,14 +1,14 @@
 ---
-title: "ビュー内のアイテムを選択したマップを表示する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ビュー内のアイテムを選択したマップを表示する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3e287b22-5738-428a-aa35-cced877e51ea
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005547"
 ---
 # <a name="how-to-bring-selected-map-items-in-view"></a>選択したマップ項目をビューに表示する方法
 以前のバージョンの BizTalk マッパーでは、マップが大きいスキーマで構成される場合は、送信元スキーマ ウィンドウ、グリッド ページ、およびターゲット スキーマ ウィンドウを手動でスクロールして、関連するすべてのマップ項目を 1 つのビューに収める必要がありました。 BizTalk Server と BizTalk マッパーでは、1 つのビューに、グリッド ページを自動的にスクロールして選択した functoid/リンクのすべての関連するマップ項目を表示することができます。 このトピックでは、この操作を実行する方法について説明します。  

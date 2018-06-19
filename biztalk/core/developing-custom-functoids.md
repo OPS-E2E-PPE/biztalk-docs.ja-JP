@@ -1,14 +1,14 @@
 ---
-title: "カスタム Functoid の開発 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム Functoid の開発 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 77419e1f-9f01-44ac-bf5b-a393f1d17f61
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242050"
 ---
 # <a name="developing-custom-functoids"></a>カスタム Functoid の開発
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、さまざまな種類の操作をサポートする多くの Functoid が用意されていますが、あらかじめ用意されている Functoid ではなく、別のアプローチが必要になる場合もあります。 カスタム Functoid を使用すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のマッピング環境内で、さらに多くの種類の操作を実行できるようになります。 派生したクラスを使用して .NET アセンブリとして、各カスタム functoid が展開された**Microsoft.BizTalk.BaseFunctoids**です。 1 つのアセンブリには複数のカスタム Functoid を含めることができます。  

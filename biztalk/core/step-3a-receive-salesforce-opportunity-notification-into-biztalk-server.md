@@ -1,14 +1,14 @@
 ---
-title: "手順 3: BizTalk Server に Salesforce の営業案件通知を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: BizTalk Server に Salesforce の営業案件通知を受け取る |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: be9de6e3-6bd9-4275-b2fb-0a756c51aabf
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279410"
 ---
 # <a name="step-3a-receive-salesforce-opportunity-notification-into-biztalk-server"></a>手順 3: BizTalk Server に Salesforce の営業案件通知を受信
 このステップでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の作成を開始します。 メッセージを処理するオーケストレーションの作成を開始する前に、まず、Salesforce から受信する営業案件通知メッセージのメッセージ スキーマを含める必要があります。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  **生成した項目の追加**ダイアログ ボックスで、をクリックして**Consume WCF サービス**、クリックして**追加**を起動する、 **BizTalk WCF サービス使用**ウィザード。 [ようこそ] ページで、をクリックして**次**です。  
   
-9. **メタデータ ソース**] ページで、[、**メタデータ ファイル (WSDL と XSD)**オプションをクリックして**次**です。  
+9. **メタデータ ソース**] ページで、[、**メタデータ ファイル (WSDL と XSD)** オプションをクリックして**次**です。  
   
 10. **メタデータ ファイル**] ページで [**追加**、Salesforce ポータルからダウンロードした WSDL ファイルを保存した場所に移動します。 WSDL ファイルを選択し、クリックして**次**です。  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  ソースとして設定**NotificationMessage**と変換先として**NotificationAck**です。  
   
-    4.  チェック ボックスを確認してください**[ok] をクリックしたら BizTalk マッパーを起動**が選択されています。  
+    4.  チェック ボックスを確認してください **[ok] をクリックしたら BizTalk マッパーを起動**が選択されています。  
   
     5.  **MapNotificationResponse.btm**Salesforce に送信する通知応答を作成します。 Salesforce が通知を送信するたびに、確認が返信されることが期待されます。 通知応答メッセージのスキーマことを示しています、 **Ack**応答内の要素は Boolean 型です。 そのため、マップでは、削除する必要あります、**値のマッピング**functoid とセット、2 つの入力値 (状態と結果) に`true`です。 をクリックして**OK** functoid を保存します。  
   

@@ -1,14 +1,14 @@
 ---
-title: "レコード、フィールド要素、またはフィールド属性 ノードを挿入する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: レコード、フィールド要素、またはフィールド属性 ノードを挿入する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c26f2281-f1b8-4788-8593-8d6ad29a53f0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255098"
 ---
 # <a name="how-to-insert-a-record-field-element-or-field-attribute-node"></a>レコード、フィールド要素、またはフィールド属性 ノードを挿入する方法
 **レコード**ノード (など、**ルート**ノード)、**フィールド属性**ノード、および**フィールド要素**ノードは、一意な名前を変更できるように、名前は、対応するインスタンス メッセージに、カスタム名前付きの実際の要素の名前を表します。 たとえば、名前を付ける場合、**レコード**ノードに FullName という XML 要素が必要と、インスタンス メッセージ内の対応する位置に、FullName。 場合は、その**レコード**FullName という名前のノードが子**フィールド属性**RequireFullMiddleName という名前のノード (とその**Min Occurs**と**Max Occurs**プロパティに設定**1**) では、 **FullName**対応するインスタンス メッセージ内の要素をという名前の属性である必要があります**RequireFullMiddleName**関連付けられています。  

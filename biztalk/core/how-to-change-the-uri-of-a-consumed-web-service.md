@@ -1,11 +1,11 @@
 ---
-title: "使用する Web サービスの URI を変更する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 使用する Web サービスの URI を変更する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, modifying
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - consuming [Web services]
 - modifying, Web services
 ms.assetid: 907de565-8c99-4d34-939f-fd3dba37dd11
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247402"
 ---
 # <a name="how-to-change-the-uri-of-a-consumed-web-service"></a>使用する Web サービスの URI の変更方法
 オーケストレーションを展開すると、オーケストレーションが参照する各 Web サービスの送信ポートが BizTalk Server によって構成されます。 既定では、実行時の Web サービスの URL が、インポートされた Web サービスの URL にも使用されます。 この URL は、BizTalk Server 管理コンソールを使用して変更できます。  

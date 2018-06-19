@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241274"
 ---
 # <a name="error---output-link-for-xslt-scripting-functoid-not-valid"></a>エラー - XSLT スクリプト Functoid が無効の出力リンク
 **エラー コード**  

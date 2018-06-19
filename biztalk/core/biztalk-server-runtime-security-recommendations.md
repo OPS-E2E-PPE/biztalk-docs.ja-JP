@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server ランタイムのセキュリティに関する推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server ランタイムのセキュリティに関する推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, runtime
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - DACLs
 - .NET Framework Code Access Security Mechanism
 ms.assetid: 1933789d-b79a-47ad-8f70-6f1e99bc2be0
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232234"
 ---
 # <a name="biztalk-server-runtime-security-recommendations"></a>BizTalk Server ランタイムのセキュリティに関する推奨事項
 メッセージの受信、送信、処理、および追跡を行うすべてのコンピューターに BizTalk Server ランタイム (エンジン) をインストールする必要があります。 つまり、BizTalk ホスト インスタンス (処理サーバー) を作成するコンピューターにランタイム コンポーネントをインストールする必要があります。 BizTalk Server ランタイムをセキュリティで保護して環境に展開するには、次のガイドラインに従うことをお勧めします。  

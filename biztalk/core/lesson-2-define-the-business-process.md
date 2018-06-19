@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262050"
 ---
 # <a name="lesson-2-define-the-business-process"></a>レッスン 2: ビジネス プロセスの定義
 このレッスンでは、エンタープライズ アプリケーション Integration(EAI) ソリューション内の 2 つ目のプロジェクトを作成します。 このプロジェクトには、オーケストレーションが含まれています。  

@@ -1,17 +1,17 @@
 ---
-title: "BAM 動的インフラストラクチャの管理 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 動的インフラストラクチャの管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - infrastructure, managing [BAM]
 - managing [BAM], infrastructure
 ms.assetid: af8a76b5-407a-484d-aff4-0d911f88313e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007515"
 ---
 # <a name="managing-the-bam-dynamic-infrastructure"></a>BAM 動的インフラストラクチャの管理
 ビジネス アクティビティの監視 (BAM) 機能では、SQL とオンライン分析処理 (OLAP) のインフラストラクチャに動的に生成されるインフラストラクチャを使用します。 管理者は、BAM 管理ユーティリティを使用して、ビジネス アナリストが作成する BAM 定義ブックまたは XML ファイルを展開します。  

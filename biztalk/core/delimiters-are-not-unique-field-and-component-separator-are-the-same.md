@@ -1,14 +1,14 @@
 ---
-title: "区切り記号が一意で、フィールドではないと、コンポーネントの区切り記号が同じ |Microsoft ドキュメント"
-ms.custom: 
+title: 区切り記号が一意で、フィールドではないと、コンポーネントの区切り記号が同じ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cba15b30-b07d-4caa-8c43-6b4d8c4ca81c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238554"
 ---
 # <a name="delimiters-are-not-unique-field-and-component-separator-are-the-same"></a>区切り記号が一意ではなく、フィールドとコンポーネントの区切り記号が同じです
 ## <a name="details"></a>詳細  

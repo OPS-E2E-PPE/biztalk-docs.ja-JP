@@ -1,11 +1,11 @@
 ---
-title: "マップ |Microsoft ドキュメント"
-ms.custom: 
+title: マップ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps, schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, maps
 - maps
 ms.assetid: 37a983f8-680c-4b32-926d-0bb26e167fd3
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262426"
 ---
 # <a name="maps"></a>マップ
 マップは基になる複数のコンポーネントから構成され、作成済みのスキーマに依存します。 さらにこれらのスキーマは、XSD (XML Schema Definition) 言語に依存しています。 このセクションでは、BizTalk マップについて概要を説明します。  

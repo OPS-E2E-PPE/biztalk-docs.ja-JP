@@ -1,11 +1,11 @@
 ---
-title: "Wcf-nettcp 送信ハンドラーを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Wcf-nettcp 送信ハンドラーを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send handlers, WCF-NetTcp adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF-NetTcp adapters, global variables
 - configuring [WCF-NetTcp adapters], global variables
 ms.assetid: c60fe03d-7e11-4e08-9a24-8ff443eee9c1
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247914"
 ---
 # <a name="how-to-configure-a-wcf-nettcp-send-handler"></a>WCF-NetTcp 送信ハンドラーを構成する方法
 WCF-NetTcp 送信ハンドラーを構成するには、次の手順を使用します。  
@@ -40,7 +41,7 @@ WCF-NetTcp 送信ハンドラーを構成するには、次の手順を使用し
     |--------------|----------------|  
     |**接続の最大数**|接続プール内にキャッシュされている各エンドポイントの最大送信接続数を指定します。 これによって、一意のリモート エンドポイントのそれぞれに対してキャッシュされる接続数が制限されます。 この値は、一意のリモート エンドポイントに対してキャッシュされることを想定している最大接続数よりも大きい値に設定する必要があります。 アクティブな送信接続数がこの最大値を超えると、サービスが、この送信ハンドラーで実行されている WCF-NetTcp 送信ポートに応答していないように見える場合があります。<br /><br /> 既定値は、10 です。|  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [WCF サービスの使用](../core/consuming-wcf-services.md)   

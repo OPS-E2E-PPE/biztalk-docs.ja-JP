@@ -1,11 +1,11 @@
 ---
-title: "SSO 関連アプリケーション |Microsoft ドキュメント"
-ms.custom: 
+title: SSO 関連アプリケーション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, designing applications
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - SSO, applications
 - applications [SSO], designing
 ms.assetid: 002ecf7e-4d52-425a-9498-0e7bd6545047
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975738"
 ---
 # <a name="sso-affiliate-applications"></a>SSO 関連アプリケーション
 エンタープライズ シングル サインオン (SSO) 関連アプリケーションは、SSO を使用して接続するホスト、バックエンド システム、または基幹業務アプリケーションなどのシステムやサブシステムを表す論理エンティティです。 メインフレームや UNIX コンピュータなどのバックエンド システムを表すこともあります。 また、SAP などのアプリケーションや、システムの一部分に当たる "手当"、"給与明細" などのサブシステムを表すこともあります。  

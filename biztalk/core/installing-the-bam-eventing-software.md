@@ -1,14 +1,14 @@
 ---
-title: "BAM イベント ソフトウェアをインストールする |Microsoft ドキュメント"
-ms.custom: 
+title: BAM イベント ソフトウェアをインストールする |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a3638d34-f5a8-4ffd-99eb-d38aed4c0732
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257450"
 ---
 # <a name="installing-the-bam-eventing-software"></a>BAM イベント ソフトウェアのインストール
 BAM イベント API を使用する BAM ソリューションを実装するか、または Windows Workflow Foundation 用に BAM インターセプターを使用するように Windows Workflow Foundation または Windows Communication Foundation アプリケーションを構成するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] セットアップ プログラムを使って BAM イベント ソフトウェアをインストールする必要があります。 このソフトウェアは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイムの一部としてインストールするか、または [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] セットアップ アプリケーションで [追加ソフトウェア] の [BAM イベント サポート] を選択して単独でインストールできます。  
@@ -31,9 +32,9 @@ BAM イベント API を使用する BAM ソリューションを実装するか
   
 4.  展開**追加のソフトウェア**、クリックして、 **BAM イベント**チェック ボックスをオンします。  
   
-5.  **[次へ]**をクリックします。  
+5.  **[次へ]** をクリックします。  
   
-6.  **[インストール]**をクリックします。  
+6.  **[インストール]** をクリックします。  
   
 7.  インストール手順が完了したらをクリックして**OK**です。  
   

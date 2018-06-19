@@ -1,14 +1,14 @@
 ---
-title: "キューの管理のサポート |Microsoft ドキュメント"
-ms.custom: 
+title: キューの管理のサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d60d06ba-8cf3-46d6-af59-626f12fc572a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278698"
 ---
 # <a name="support-for-queue-management"></a>キュー管理のサポート
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] MQSeries アダプタを使用して、MQSeries キュー マネージャ上のキューをリモートから作成および削除できます。 この機能がサポートされるのは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で、MQSeries キュー マネージャと直接通信するリモートの MQSAgent COM+ オブジェクトが使用されるためです。 通常この MQSAgent は、リモートの MQSeries Server キューにメッセージを読み書きする実行時に使用されます。 このリモート サービスには、複数の BizTalk サーバーをクライアントとすることができます。 MQSAgent ではキューの作成および削除機能も提供され、これはオーケストレーションまたはアダプタ内から直接呼び出すことができます。 このことによって、高度に動的なシナリオを実現できます。このシナリオでは、オーケストレーションまたはアダプタは一時キューを作成でき、そのキューでメッセージを送信し、別のキューで返信を受け取り、最後に一時キューを削除できます。  

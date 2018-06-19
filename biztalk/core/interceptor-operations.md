@@ -1,14 +1,14 @@
 ---
-title: "インターセプタの操作 |Microsoft ドキュメント"
-ms.custom: 
+title: インターセプタの操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 37d00104-daf6-42b0-a022-25d572170fe6
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257154"
 ---
 # <a name="interceptor-operations"></a>インターセプタの操作
 このセクションでは、インターセプタ構成ファイルの一般的な操作について説明します。 これらの操作は、Windows Workflow Foundation (WF) および Windows Communication Foundation (WCF) のインターセプタと、Common Interceptor Framework を基に構築されたその他のすべてのインターセプタで使用できます。 WF インターセプタおよび WCF インターセプタでは、インターセプタ データを取得して操作するための追加のドメイン固有の操作を定義することにより、これらの操作によって提供される共通の機能を拡張できます。  

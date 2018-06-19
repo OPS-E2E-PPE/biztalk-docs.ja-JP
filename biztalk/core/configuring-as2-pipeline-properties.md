@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233322"
 ---
 # <a name="configuring-as2-pipeline-properties"></a>AS2 パイプラインのプロパティの構成
 パイプラインのプロパティは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が送信または受信されたインターチェンジに解決されるアグリーメントを特定できなかった場合に、受信または送信 AS2 メッセージの処理で使用されます。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-set-a-pipeline-property"></a>パイプライン プロパティの設定  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、プロパティを設定するパイプラインを使用している受信場所または送信ポートを右クリックします。 **[プロパティ]**をクリックします。  
+1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、プロパティを設定するパイプラインを使用している受信場所または送信ポートを右クリックします。 **[プロパティ]** をクリックします。  
   
 2.  プロパティを設定する対象のパイプラインの横にある省略記号ボタン ([…]) をクリックします。  
   

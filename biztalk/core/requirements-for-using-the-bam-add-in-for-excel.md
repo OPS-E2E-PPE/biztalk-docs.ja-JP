@@ -1,11 +1,11 @@
 ---
-title: "Excel 用 BAM アドインを使用するための要件 |Microsoft ドキュメント"
-ms.custom: 
+title: Excel 用 BAM アドインを使用するための要件 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - data analysis [BAM], Excel add-in
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - managing [BAM], data analysis
 - data analysis [BAM], real-time data
 ms.assetid: 628a7ec5-4cfb-4abd-bdff-4e1f75cb5375
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268442"
 ---
 # <a name="requirements-for-using-the-bam-add-in-for-excel"></a>Excel 用の BAM アドインを使用するための要件
 ビジネス アナリストは、Excel 用の BAM アドインを使用して、追跡するイベントやデータを定義できます。また、ユーザーがアクセスできる追跡データの論理グループと集計のビューを定義できます。  

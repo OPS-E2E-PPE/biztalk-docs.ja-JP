@@ -1,18 +1,18 @@
 ---
-title: "メッセージ ボックス データベースを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ ボックス データベースを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, MessageBox database
 - managing [MessageBox database], deleting
 - MessageBox database, deleting
 ms.assetid: 51f91fcb-8b97-4b00-9056-6d216c8ccb58
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250066"
 ---
 # <a name="how-to-delete-a-messagebox-database"></a>メッセージ ボックス データベースを削除する方法
 BizTalk グループからメッセージ ボックス データベースを削除するには、BizTalk 管理コンソールまたは Windows Management Instrumentation (WMI) を使用します。 メッセージ ボックス データベースは BizTalk グループから削除するか、または BizTalk Server の展開から完全に削除することができます。  

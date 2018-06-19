@@ -1,11 +1,11 @@
 ---
-title: "アシスタンスを要求する |Microsoft ドキュメント"
-ms.custom: 
+title: アシスタンスを要求する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Query Builder [BAM portal], technical assistance
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Query Builder [BAM portal], viewing details
 - queries [BAM], viewing details
 ms.assetid: d41de170-f497-47dc-896d-e79c04f0649b
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268594"
 ---
 # <a name="request-assistance"></a>アシスタンスを要求します。
 システム管理者またはその他のサポート担当者にアシスタンスを要求するとき、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実装では、使用できます、**アシスタンス**の下部にあるボタン、**結果**詳細アシスタンスを要求するページです。  

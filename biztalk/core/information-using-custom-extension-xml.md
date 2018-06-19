@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256490"
 ---
 # <a name="information---using-custom-extension-xml"></a>情報 - カスタム拡張 XML の使用
 **エラー コード**  

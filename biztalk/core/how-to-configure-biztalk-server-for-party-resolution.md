@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server パーティの解決を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server パーティの解決を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8ac330b9-3498-4c98-a6e8-d2c02cd641dd
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250090"
 ---
 # <a name="how-to-configure-biztalk-server-for-party-resolution"></a>パーティの解決用に BizTalk Server を構成する方法
 次の手順では、パーティの解決用に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成するときの手順について説明します。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  **名前**フィールドに、パイプラインの名前を入力します。  
   
-    4.  **[追加]**をクリックします。  
+    4.  **[追加]** をクリックします。  
   
          新しいパイプラインがソリューション エクスプローラーに表示されます。  
   

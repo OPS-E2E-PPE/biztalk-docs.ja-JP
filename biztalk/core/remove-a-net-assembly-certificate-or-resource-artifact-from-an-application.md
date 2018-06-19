@@ -1,11 +1,11 @@
 ---
-title: "アプリケーションから .NET アセンブリ、証明書、またはその他のリソース アイテムを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションから .NET アセンブリ、証明書、またはその他のリソース アイテムを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - virtual directories, deleting
@@ -27,7 +27,7 @@ helpviewer_keywords:
 - deleting, artifacts
 - deleting, certificates
 ms.assetid: b84eebac-261d-495f-80cd-ddda5bb08bef
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -36,6 +36,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008315"
 ---
 # <a name="how-to-remove-a-net-assembly-certificate-or-other-resource-artifact-from-an-application"></a>.NET アセンブリ、証明書またはその他のリソース アイテムをアプリケーションから削除する方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンドラインを使用して BizTalk アプリケーションから、次のリソース アイテムを削除する方法について説明します。 このトピックの手順を実行すると、BizTalk 管理データベースからアイテムが削除されます。 ただし、ファイル システム、証明書ストア、インターネット インフォメーション サービス (IIS)、または Windows レジストリからは削除されません。 また、バインド ファイルを削除した場合、バインド ファイルが削除されるのみで、バインドそのものは変更されません。  

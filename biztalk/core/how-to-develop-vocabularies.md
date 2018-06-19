@@ -1,11 +1,11 @@
 ---
-title: "ボキャブラリを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ボキャブラリを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, vocabularies
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business rules, vocabularies
 - vocabularies, creating
 ms.assetid: 5c16eb98-2257-44f2-8a29-899e02f7e556
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249058"
 ---
 # <a name="how-to-develop-vocabularies"></a>ボキャブラリを作成する方法
 ルールの条件とアクションには、送信元に基づくバインド情報が使用されるため、このバインド情報が何を指しているのか、ユーザーにわかるよう明確に定義されていることが大切です。 ビジネス ルール フレームワークでは、ボキャブラリを作成することによって、ユーザーがルールの条件とアクションを明確に理解できるような直観的かつドメイン固有の用語を定義し、ルールの開発プロセスを効率化できます。  

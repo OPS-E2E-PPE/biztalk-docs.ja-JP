@@ -1,14 +1,14 @@
 ---
-title: "Wcf-nettcp 受信場所を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Wcf-nettcp 受信場所を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 937862ca-14cb-4eda-8176-38c15423679e
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250770"
 ---
 # <a name="how-to-configure-a-wcf-nettcp-receive-location"></a>WCF-NetTcp 受信場所を構成する方法
 WCF-NetTcp 受信場所は、プログラムから、または BizTalk 管理コンソールを使用して構成できます。  
@@ -45,7 +46,7 @@ WCF-NetTcp 受信場所は、プログラムから、または BizTalk 管理コ
 |**TransportProtectionLevel**|Enum<br /><br /> -   **None**: 保護されません。<br />-   **サインオン**: メッセージは署名されます。<br />-   **EncryptAndSign**: メッセージの暗号化および署名されます。|TCP トランスポートのレベルでセキュリティを定義します。 メッセージに署名を付けることで、メッセージの転送中に第三者によって改ざんされるリスクが軽減されます。 暗号化によって、トランスポート中にデータ レベルのプライバシーが提供されます。<br /><br /> 既定値: **EncryptAndSign**|  
 |**MessageClientCredentialType**|Enum<br /><br /> -   **[なし]**<br />-   **Windows**<br />-   **ユーザー名**<br />-   **証明書**<br /><br /> メンバー名の詳細については、 **MessageClientCredentialType**プロパティを参照してください、**クライアント資格情報の種類のメッセージ**プロパティに、 **Wcf-nettcp トランスポートのプロパティダイアログ ボックスで、受信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|メッセージ ベースのセキュリティを使用してクライアント認証を実行するときに使用する、資格情報の種類を指定します。<br /><br /> 既定値: **Windows**|  
 |**AlgorithmSuite**|Enum<br /><br /> メンバー名の詳細については、 **AlgorithmSuite**プロパティを参照してください、**アルゴリズム スイート**プロパティに、 **Wcf-nettcp トランスポートのプロパティ ダイアログ ボックス、受信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|メッセージの暗号化とキー ラップのアルゴリズムを指定します。 これらのアルゴリズムは、セキュリティ ポリシー言語 (WS-SecurityPolicy) 仕様で指定されたアルゴリズムにマップされます。<br /><br /> 既定値: **Basic256**|  
-|**ServiceCertificate**|文字列|クライアントがサービスの認証に使用する、この受信場所に対する X.509 証明書の拇印を指定します。 このプロパティに使用する証明書をインストールする必要があります、 **My**に格納、**現在のユーザー**場所。 **注:**にサービス証明書をインストールする必要があります、**現在のユーザー**この受信場所をホストする受信ハンドラーのユーザー アカウントの場所。 <br /><br /> 既定値は空の文字列です。|  
+|**ServiceCertificate**|文字列|クライアントがサービスの認証に使用する、この受信場所に対する X.509 証明書の拇印を指定します。 このプロパティに使用する証明書をインストールする必要があります、 **My**に格納、**現在のユーザー**場所。 **注:** にサービス証明書をインストールする必要があります、**現在のユーザー**この受信場所をホストする受信ハンドラーのユーザー アカウントの場所。 <br /><br /> 既定値は空の文字列です。|  
 |**UseSSO**|ブール値|エンタープライズ シングル サインオン (SSO) を使用して SSO チケットを発行するためにクライアントの資格情報を取得するかどうかを指定します。 セキュリティ構成の詳細については、SSO のサポートを参照して、」アダプタ エンタープライズ シングル サインオン サポートの「WCF-NetTcp 受信「、 **Wcf-nettcp トランスポートのプロパティ ダイアログ ボックス、受信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|  
 |**InboundBodyLocation**|Enum<br /><br /> -   **UseBodyElement** -SOAP のコンテンツを使用して**本文**を BizTalk メッセージのボディ部を作成する受信メッセージの要素。 **Body** 要素に複数の子要素がある場合は、最初の要素のみが BizTalk メッセージのボディ部になります。<br />-   **UseEnvelope** -全体の SOAP から BizTalk メッセージのボディ部を作成する**エンベロープ**受信メッセージのです。<br />-   **UseBodyPath** -ボディ パス式を使用して、 **InboundBodyPathExpression**プロパティを BizTalk メッセージのボディ部を作成します。 ボディ パス式は、受信メッセージの SOAP **Body** 要素のすぐ下の子要素に対して評価されます。 このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br /><br /> 使用する方法についての詳細、 **InboundBodyLocation**プロパティを参照してください[WCF アダプタのメッセージの本文を指定する](../core/specifying-the-message-body-for-the-wcf-adapters.md)です。|SOAP のデータ選択を指定**本文**受信 WCF メッセージの要素。<br /><br /> 既定値: **UseBodyElement**|  
 |**InboundBodyPathExpression**|文字列<br /><br /> 使用する方法についての詳細、 **InboundBodyPathExpression**プロパティを参照してください[WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md)です。|BizTalk メッセージのボディ部を作成するために使用する受信メッセージの特定の部分を示すボディ パス式を指定します。 このボディ パス式が、SOAP の直接の子要素に対して評価されます**本文**受信メッセージのノードです。 このボディ パス式で複数のノードが返される場合は、最初のノードのみが BizTalk メッセージのボディ部に対して選択されます。 このプロパティは必要な場合、 **InboundBodyLocation**プロパティに設定されている**UseBodyPath**です。<br /><br /> 既定値は空の文字列です。|  

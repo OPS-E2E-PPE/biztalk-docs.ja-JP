@@ -1,11 +1,11 @@
 ---
-title: "データベースの構造とジョブ |Microsoft ドキュメント"
-ms.custom: 
+title: データベースの構造とジョブ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - PurgeSubscriptionsJob_BizTalkMsgBoxDb job
@@ -32,7 +32,7 @@ helpviewer_keywords:
 - jobs [SQL Server Agent], Tracking database
 - MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb job
 ms.assetid: f5f6b17d-0f5e-4821-a7eb-c345234ffc65
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -41,6 +41,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240562"
 ---
 # <a name="database-structure-and-jobs"></a>データベース構造とジョブ
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のデータベース構造とデータベース ジョブについて説明します。  
@@ -68,7 +69,7 @@ ms.lasthandoff: 09/20/2017
 |DTA Purge and Archive (BizTalkDTADb)|このジョブは、BizTalk 追跡 (BizTalkDTADb) データベースのデータを自動的にアーカイブして古いデータを削除します。 構成して、このジョブの実行に関する詳細については、次を参照してください。[アーカイブ化および BizTalk 追跡データベースを削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)です。|  
 |MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb|このジョブは、BizTalk Server ホスト インスタンス (NT サービス) の停止を検出し、そのホスト インスタンスで行われていたすべての作業を解放して、別のホスト インスタンスが作業できるようにします。|  
 |MessageBox_Message_Cleanup_BizTalkMsgBoxDb|このジョブは、BizTalk メッセージ ボックス (BizTalkMsgBoxDb) データベース テーブルで、サブスクライバーによって参照されなくなったすべてのメッセージを削除します。 **注意:** MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb ジョブによって開始された、スケジュールされていないジョブです。 このジョブを手動で開始しないでください。|  
-|MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb|このジョブは、メッセージの参照カウント ログを管理し、サブスクライバーによってジョブが参照されなくなったかどうかを判断します。 **注:**でもこのジョブによって呼び出されるストアド プロシージャがストアド プロシージャを継続的に実行することを確認するためのロジックを含む、1 分ごと 1 回実行するこの SQL Server エージェント ジョブがスケジュールされていると思っています。 この動作は仕様によるものなので、変更しないでください。|  
+|MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb|このジョブは、メッセージの参照カウント ログを管理し、サブスクライバーによってジョブが参照されなくなったかどうかを判断します。 **注:** でもこのジョブによって呼び出されるストアド プロシージャがストアド プロシージャを継続的に実行することを確認するためのロジックを含む、1 分ごと 1 回実行するこの SQL Server エージェント ジョブがスケジュールされていると思っています。 この動作は仕様によるものなので、変更しないでください。|  
 |MessageBox_Parts_Cleanup_BizTalkMsgBoxDb|このジョブは、BizTalk メッセージ ボックス (BizTalkMsgBoxDb) データベース テーブルで、メッセージによって参照されなくなったすべてのメッセージ部分を削除します。 すべてのメッセージは、実際のメッセージ データを含んでいる 1 つまたは複数のメッセージ部分で構成されています。|  
 |MessageBox_UpdateStats_BizTalkMsgBoxDb|このジョブは、BizTalk メッセージ ボックス (BizTalkMsgBoxDb) データベースの統計を手動で更新します。|  
 |BizTalk Server の監視|このジョブは、孤立したインスタンスなど、既知の問題について BizTalkMgmtDb、BizTalkMsgBoxDb および BizTalkDTADb データベースをスキャンします。|  

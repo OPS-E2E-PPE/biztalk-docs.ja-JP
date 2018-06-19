@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239338"
 ---
 # <a name="distributionlist-distributionlistcollection-node"></a>DistributionList (DistributionListCollection ノード)
 バインド ファイルの DistributionList ノードには、バインド ファイルと共にエクスポートされる同報リストに関する特定の情報が含まれます。 同報リストは、BizTalk Server 管理者では送信ポート グループと呼ばれます。  

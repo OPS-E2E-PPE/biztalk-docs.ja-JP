@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246098"
 ---
 # <a name="halt"></a>停止
 使用することができます、**停止**ルール エンジンの現在の実行を停止するように機能します。 **停止**関数型のパラメーターを 1 つ取ります`Boolean`です。 パラメーターの値を `true` に指定すると、ルール エンジンは保留候補ルールを含む議題もクリアします。  

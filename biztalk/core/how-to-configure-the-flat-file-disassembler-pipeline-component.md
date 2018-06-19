@@ -1,18 +1,18 @@
 ---
-title: "フラット ファイル逆アセンブラー パイプライン コンポーネントを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: フラット ファイル逆アセンブラー パイプライン コンポーネントを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Flat File Disassembler [pipeline component], configuring
 - pipeline components, Flat File Disassembler
 - messages, flat files
 ms.assetid: c09996f6-6035-42a3-a75f-4def4ac39a95
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249050"
 ---
 # <a name="how-to-configure-the-flat-file-disassembler-pipeline-component"></a>フラット ファイル逆アセンブラー パイプライン コンポーネントを構成する方法
 フラット ファイル逆アセンブラー パイプライン コンポーネントは、フラット ファイル形式のドキュメントを逆アセンブルして XML 形式に変換するために使用されます。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**ドキュメント スキーマ**|フラット ファイル形式から XML 形式へメッセージを解析する際に使用するフラット ファイルのドキュメント スキーマを選択します。 解析用のフラット ファイル ドキュメント スキーマは、BizTalk エディターで作成できます。<br /><br /> 既定値: なし**注:**コンパイル時エラーが発生またはこのプロパティのスキーマを指定する必要があります。|  
+    |**ドキュメント スキーマ**|フラット ファイル形式から XML 形式へメッセージを解析する際に使用するフラット ファイルのドキュメント スキーマを選択します。 解析用のフラット ファイル ドキュメント スキーマは、BizTalk エディターで作成できます。<br /><br /> 既定値: なし**注:** コンパイル時エラーが発生またはこのプロパティのスキーマを指定する必要があります。|  
     |**ヘッダー スキーマ**|フラット ファイル メッセージのヘッダー部のスキーマを選択します。 フラット ファイル メッセージのヘッダー部のスキーマは、BizTalk エディターで作成できます。<br /><br /> 既定値: なし|  
     |**ヘッダーを保存します。**|このプロパティを設定**True**メッセージ コンテキストで、フラット ファイル メッセージのヘッダーを格納する必要がある場合。 フラット ファイル メッセージのヘッダーを保存すると、ヘッダー構造およびコンテンツは BizTalk Server でメッセージと共に移動されます。 ヘッダーは、フラット ファイル アセンブラー パイプライン コンポーネントで、メッセージをフラット ファイル形式にシリアル化する際に使用されます。<br /><br /> ヘッダー スキーマ名は実行時に動的に取得されることがあります。そのため、保存したヘッダーがフラット ファイル アセンブラーでシリアル化されるとき、ヘッダー ドキュメントのデザイン時プロパティにヘッダー スキーマ名が含まれていない場合があります。 この場合、保存したヘッダーのメッセージの種類が使用されます。<br /><br /> 既定値: **False**|  
     |**トレーラー スキーマ**|フラット ファイル メッセージのトレーラー部のスキーマを選択します。 フラット ファイル メッセージのトレーラー部のスキーマは、BizTalk エディターで作成できます。<br /><br /> 既定値: なし|  

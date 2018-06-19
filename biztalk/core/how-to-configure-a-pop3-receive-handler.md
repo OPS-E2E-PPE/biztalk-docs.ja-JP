@@ -1,18 +1,18 @@
 ---
-title: "POP3 受信ハンドラーを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: POP3 受信ハンドラーを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive handlers, POP3 adapters
 - POP3 adapters, receive handlers
 - configuring [POP3 adapters], receive handlers
 ms.assetid: 2191c201-545e-4d5a-a1ca-3c38c7b8258d
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247786"
 ---
 # <a name="how-to-configure-a-pop3-receive-handler"></a>POP3 受信ハンドラーを構成する方法
 次の手順を実行して、POP3 受信ハンドラーに関連付けられているホストを変更します。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  **アダプター ハンドラーのプロパティ** ダイアログ ボックスで、**全般** タブの 、**ホスト名**一覧で、受信ハンドラーが関連付けられる、ホストを選択します。  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [クラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)

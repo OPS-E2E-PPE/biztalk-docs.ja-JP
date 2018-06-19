@@ -1,14 +1,14 @@
 ---
-title: "インターネット インフォメーション サービスのトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: インターネット インフォメーション サービスのトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f77084f1-5797-42ab-bbf6-fe815144232e
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280106"
 ---
 # <a name="troubleshooting-internet-information-services"></a>インターネット インフォメーション サービスのトラブルシューティング
 Microsoft インターネット インフォメーション サービス (IIS) は、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] において、HTTP アダプター、SOAP アダプター、Windows SharePoint Services アダプターなど、さまざまな機能に幅広く使用されます。 このトピックでは、IIS で発生する可能性がある既知の問題とその解決策について説明します。  
@@ -141,7 +142,7 @@ Microsoft インターネット インフォメーション サービス (IIS) �
   
      既定では、[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] の HTTPERR ログ ファイルは、次のディレクトリにあります。  
   
-     *%Windir%*system32LogFilesHTTPERR  
+     *%Windir%* system32LogFilesHTTPERR  
   
     > [!NOTE]
     >  HTTPERR ログ ファイルを使用できるのは、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] または Windows Vista のコンピューターだけです。  

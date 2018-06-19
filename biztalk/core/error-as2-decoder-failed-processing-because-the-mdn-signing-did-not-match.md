@@ -1,14 +1,14 @@
 ---
-title: "AS2 デコーダーは MDN の署名しなかったと一致しないため、要求を処理できませんでした |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 デコーダーは MDN の署名しなかったと一致しないため、要求を処理できませんでした |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a42d344-fc28-4bc4-9328-46158f15a008
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239978"
 ---
 # <a name="the-as2-decoder-failed-processing-because-the-mdn-signing-did-not-match-our-request"></a>MDN の署名が要求と一致しなかったため、AS2 デコーダーの処理は失敗しました
 ## <a name="details"></a>詳細  

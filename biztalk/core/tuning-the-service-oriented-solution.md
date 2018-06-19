@@ -1,11 +1,11 @@
 ---
-title: "チューニング サービス指向ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: チューニング サービス指向ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tuning
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - performance, service solutions
 - service solution tutorial, tuning
 ms.assetid: 55ca4e9f-9f8b-4ef9-9757-0d0edf252504
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286482"
 ---
 # <a name="tuning-the-service-oriented-solution"></a>チューニング サービス指向ソリューション
 オーケストレーションは、ビジネス アクティビティ監視 (BAM) API を介して、アプリケーションの多くの部分に関するパフォーマンス情報を収集します。 アプリケーションのチューニングに便利なデータを検索できます。 また、組み込みのパフォーマンス カウンタも使用できます。  

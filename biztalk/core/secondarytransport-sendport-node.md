@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271306"
 ---
 # <a name="secondarytransport-sendport-node"></a>SecondaryTransport (SendPort ノード)
 バインド ファイルの SendPort ノードの SecondaryTransport ノードは、バインド ファイルと共にエクスポートされる送信ポートにバインドされたセカンダリ トランスポートに関する特定の情報を指定します。 セカンダリ トランスポートが指定されている場合、プライマリ トランスポートでのすべての試行回数が完了した後にセカンダリ ポートが使用されます。  

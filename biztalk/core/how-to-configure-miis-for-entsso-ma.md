@@ -1,14 +1,14 @@
 ---
-title: "ENTSSO MA 用に MIIS を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ENTSSO MA 用に MIIS を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7820384-ff64-4628-9e35-02b13803928f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248138"
 ---
 # <a name="how-to-configure-miis-for-entsso-ma"></a>ENTSSO MA 用に MIIS を構成する方法
 Microsoft Identity Integration Server (MIIS) を実行しているコンピュータにエンタープライズ シングル サインオン (SSO) の管理機能 (完全なバージョンまたは管理機能のみのバージョン) をインストールすると、ENTSSO 管理エージェントが自動的にインストールされます。 これにより、MIIS を起動するときには、ほとんどすべての構成が既に実行されていることになります。 構成が行われていないのは、接続情報だけです。  
@@ -37,7 +38,7 @@ Microsoft Identity Integration Server (MIIS) を実行しているコンピュ�
   
      起動、**管理エージェント作成ウィザード**です。  
   
-4.  **接続情報の構成**] ページの [、**接続先:**フィールドに、SSO サーバーの名前を入力します。  
+4.  **接続情報の構成**] ページの [、**接続先:** フィールドに、SSO サーバーの名前を入力します。  
   
 5.  ENTSSO 管理エージェントの名前を入力します。 この名前は、ENTSSO.xml ファイルで指定されている名前と一致する必要があります。  
   
@@ -47,7 +48,7 @@ Microsoft Identity Integration Server (MIIS) を実行しているコンピュ�
   
 7.  **パスワード**フィールドに、そのユーザーのパスワードを入力します。  
   
-8.  をクリックして**[次へ]**、既定値のままに到達するまで、**拡張機能の構成**ページ。  
+8.  をクリックして **[次へ]**、既定値のままに到達するまで、**拡張機能の構成**ページ。  
   
 9. 近く**接続情報**パスワード拡張機能をクリックして**設定**です。  
   
@@ -57,7 +58,7 @@ Microsoft Identity Integration Server (MIIS) を実行しているコンピュ�
   
 11. **ユーザー**と**パスワード**フィールドに、アカウントのユーザー名とパスワードを入力します。  
   
-12. **[OK]**をクリックします。  
+12. **[OK]** をクリックします。  
   
 13. **MIISCreate 管理エージェント**をクリックして**完了**です。  
   

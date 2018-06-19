@@ -1,18 +1,18 @@
 ---
-title: "XSD スキーマとして表されるメッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: XSD スキーマとして表されるメッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Message Assignment shape [Orchestration Designer], maps
 - maps, transforms
 - Expression Editor, assigning maps
 ms.assetid: 646e84d4-1dcc-4f92-9205-84cb6c7df297
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262970"
 ---
 # <a name="messages-represented-as-xsd-schemas"></a>XSD スキーマとして表されるメッセージ
 XSD メッセージの種類のテンプレート XML インスタンスは、デザイン時に定義されてディスクに格納されます。 実行時には、XML は .NET コンポーネントによってディスクから取得され、XmlDocument として返されます。 オーケストレーション コードでは、オーケストレーションで宣言されているメッセージ インスタンスに、この XmlDocument 結果を割り当てることができます。  

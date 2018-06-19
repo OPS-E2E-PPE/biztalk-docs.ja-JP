@@ -1,14 +1,14 @@
 ---
-title: "EDI および AS2 状態レポートの有効化 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI および AS2 状態レポートの有効化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa40fbad-51ad-40e0-9fe3-68e54beb11a5
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242914"
 ---
 # <a name="enabling-edi-and-as2-status-reports"></a>EDI および AS2 状態レポートの有効化
 このトピックでの EDI および AS2 状態レポートを構成する方法を説明する、**グループの概要**のページ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  バッチ処理オーケストレーションのインスタンスがアクティブなときにトランザクション セットのストレージを有効にした場合は、作成中のバッチについてのトランザクション セットが格納されません。 ただし、バッチ処理オーケストレーションのインスタンスがアクティブなときにトランザクション セットのストレージを無効にした場合は、ストレージがバッチ処理の途中で無効になります。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 7.  [コンピューターの管理] ダイアログ ボックスで BizTalk サービスを再起動します。 AS2EdiReceive パイプラインまたは AS2EdiSend パイプラインは、ソリューションで使用されているが場合、IIS Admin サービスを再起動 (を使用して、 *iisreset*コマンド)、およびです。  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  **EDIFACT でエンコードされたメッセージ**: EDI グローバル プロパティ ダイアログ ボックスの UNB セグメントの定義 ページで unb3.2 フィールド (コード修飾子) の値を選択する場合、このプロパティを選択するもする必要があります。 既定では、このプロパティが設定されていないと場合、インターチェンジは中断されます**レポート用にトランザクション セット/ペイロードを格納**が選択されているが、UNB3.2 の値が選択されていません。  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 ### <a name="to-enable-as2-status-reports"></a>AS2 状態レポート機能を有効にするには  
   
@@ -91,7 +92,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  これにより、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールの状態レポートの UI にメッセージ エントリが入力されるようになります。  
   
-5.  一方向アグリーメント タブで、**アグリーメントのプロパティ** ダイアログ ボックスをクリックして、**受信者メッセージの追跡 (NRR)**ページ。  
+5.  一方向アグリーメント タブで、**アグリーメントのプロパティ** ダイアログ ボックスをクリックして、**受信者メッセージの追跡 (NRR)** ページ。  
   
 6.  **受信者メッセージの追跡 (NRR)**  ページで、をクリックして**受信のエンコードされた AS2 メッセージの有効な NRR**受信メッセージのワイヤ形式の表示を有効にします。  
   
@@ -105,7 +106,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  **受信者メッセージの追跡 (NRR)** ] ページで [**送信 MDN の NRR の有効化**受信メッセージへの MDN 応答を表示できるようにします。  
   
-9. 一方向アグリーメント タブで、**アグリーメントのプロパティ** ダイアログ ボックスをクリックして、**送信者メッセージ追跡 (NRR)**ページ。  
+9. 一方向アグリーメント タブで、**アグリーメントのプロパティ** ダイアログ ボックスをクリックして、**送信者メッセージ追跡 (NRR)** ページ。  
   
 10. **送信者メッセージ追跡 (NRR)**  ページで、をクリックして**エンコードされた送信の AS2 メッセージに対して有効な NRR**送信メッセージのワイヤ形式の表示を有効にします。  
   
@@ -113,7 +114,7 @@ ms.lasthandoff: 09/20/2017
   
 12. **送信者メッセージ追跡 (NRR)** ] ページで [**受信 MDN の NRR の有効化**送信メッセージへの MDN 応答を表示できるようにします。  
   
-13. **[OK]**をクリックします。  
+13. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [EDI および AS2 ソリューションの監視](../core/monitoring-edi-and-as2-solutions.md)   

@@ -1,14 +1,14 @@
 ---
-title: "構造体の要素を EDI グループ |Microsoft ドキュメント"
-ms.custom: 
+title: 構造体の要素を EDI グループ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 100a7118-9c02-474e-8685-9e4bb6f52e81
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242522"
 ---
 # <a name="edi-group-structural-element"></a>EDI のグループ構造体要素
 グループには、1 つ以上のトランザクション セットが含まれます。 1 つ EDIFACT のグループには、同じ種類のトランザクション セットが含まれる必要があります。 X12 グループには、類似した種類のトランザクション セット (トランザクション セットとグループ (GS01-ST01) のマッピングに基づく) または同じ種類のトランザクション セットが含まれる場合があります。 1 つのグループ (GS01) 内で同時にできるリスト類似した X12 トランザクション セット (ST01)、次の表。  

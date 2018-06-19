@@ -1,17 +1,17 @@
 ---
-title: "アプリケーションを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, creating
 - creating, applications
 ms.assetid: 6a8682a7-3bef-4978-996f-5a9c5154ce62
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250138"
 ---
 # <a name="how-to-create-an-application"></a>アプリケーションを作成する方法
 新しい BizTalk アプリケーションを作成するには、次の 3 つの方法があります。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  一覧からアプリケーションを削除する場合は、アプリケーションを選択し、をクリックして**削除**です。  
   
-9. 完了したら、 **[OK]**をクリックします。  
+9. 完了したら、 **[OK]** をクリックします。  
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用  
   

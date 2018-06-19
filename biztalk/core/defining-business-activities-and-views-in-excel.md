@@ -1,17 +1,17 @@
 ---
-title: "Excel でビジネス アクティビティとビューの定義 |Microsoft ドキュメント"
-ms.custom: 
+title: Excel でビジネス アクティビティとビューの定義 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Excel add-in [BAM], creating business activities
 - monitoring business activities [BAM], creating business activities
 ms.assetid: 000532f0-cb9a-40ac-a6c5-a8bd4e49f8d0
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239682"
 ---
 # <a name="defining-business-activities-and-views-in-excel"></a>Excel でのビジネス アクティビティとビジネス ビューの定義
 BAM ソリューションを作成する場合は、まず関連データの種類とそのデータを解釈する方法を指定します。 これには、Excel 用の BAM アドインを使用します。 このアドインを使用すると、ビジネス アクティビティを定義して、関連データの希望リストを定義できます。 また、データを解釈する方法と、さまざまなカテゴリのビジネス ユーザーにデータを公開する方法を定義できます。  

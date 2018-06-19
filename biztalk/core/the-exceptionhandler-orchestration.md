@@ -1,11 +1,11 @@
 ---
-title: "ExceptionHandler オーケストレーション |Microsoft ドキュメント"
-ms.custom: 
+title: ExceptionHandler オーケストレーション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors, systems
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, errors [process management solutions]
 - process management solution tutorial, errors
 ms.assetid: ac154e76-9dfe-433a-948b-e098df705fe5
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280026"
 ---
 # <a name="the-exceptionhandler-orchestration"></a>ExceptionHandler オーケストレーション
 ビジネス プロセス管理ソリューションで 2 つの種類の例外を使用します。 システム例外とアプリケーションの例外。 システム例外を含めるようなリソース エラー: ネットワーク接続の失敗、例を示します。 このような問題は、時間が経つと自然に解決する可能性があるので、ソリューションはシステム例外の原因となったすべての操作を再試行します。 アプリケーション例外は、論理エラーや不整合など、自然に解決する可能性の少ない事象を原因として生じます。 ソリューションを使用して、 **ExceptionHandlerOrch**システムとアプリケーションの両方のエラーを処理するオーケストレーションです。  

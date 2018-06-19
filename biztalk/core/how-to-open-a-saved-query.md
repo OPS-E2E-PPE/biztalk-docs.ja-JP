@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254594"
 ---
 # <a name="how-to-open-a-saved-query"></a>保存したクエリを開く方法
 保存したクエリは、クエリの保存先フォルダーから直接開くか、BizTalk Server 管理コンソール内から開くことができます。 フォルダーから直接クエリを開くと、管理コンソールの適切な BizTalk Server グループが開きます。 管理コンソール内からクエリを開くと、一覧に表示された任意のグループにクエリを実行するオプションが表示されます。  

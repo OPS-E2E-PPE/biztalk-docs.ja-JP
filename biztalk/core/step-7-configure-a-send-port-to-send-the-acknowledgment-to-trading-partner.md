@@ -1,14 +1,14 @@
 ---
-title: "手順 7: 取引先に、受信確認を送信する送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 7: 取引先に、受信確認を送信する送信ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3a082870-894c-4f64-a575-3681d8a5c4ea
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279066"
 ---
 # <a name="step-7-configure-a-send-port-to-send-the-acknowledgment-to-your-trading-partner"></a>手順 7: 取引先に、受信確認を送信する送信ポートを構成します。
 ![手順 9 の 7](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-7of9.gif "Step_7of9")  
@@ -61,13 +62,13 @@ ms.lasthandoff: 09/20/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**プロパティ**|選択**BTS です。MessageType**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|入力**http://schemas.microsoft.com/Edi/X12#X12_997_Root**です。|  
   
     > [!NOTE]
     >  このフィルターにより、送信ポートは種類が 997 のメッセージを抽出します。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 7.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、をクリックして**送信ポート**です。 右クリック**toTHEM_997**、クリックして**開始**を参加させて、ポートを開始します。  
   

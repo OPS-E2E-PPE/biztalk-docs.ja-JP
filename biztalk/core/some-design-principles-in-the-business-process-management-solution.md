@@ -1,11 +1,11 @@
 ---
-title: "一部のデザインの原則には、ビジネス プロセス管理ソリューションで |Microsoft ドキュメント"
-ms.custom: 
+title: 一部のデザインの原則には、ビジネス プロセス管理ソリューションで |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business processes, design principals
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - process management solution tutorial, dividing business processes
 - patterns [process management solutions], design principals
 ms.assetid: 688b970f-8e64-4a47-bcc5-bdb9c5195902
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279362"
 ---
 # <a name="some-design-principles-in-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションにおけるいくつかの設計方針
 ここでは、まず、ビジネス プロセスをステージに分割する一般的なガイドラインを説明します。 次に、これらのガイドラインとビジネス要件に関連するソリューションのオーケストレーション、アセンブリ、およびアプリケーションのいくつかについて、その構造を検討します。 ビジネス要件に関する詳細については、「ビジネス要件」を参照してください[ビジネス プロセス管理ソリューションを理解する](../core/understanding-the-business-process-management-solution.md)です。  

@@ -1,11 +1,11 @@
 ---
-title: "スコープ図形を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: スコープ図形を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Scope shape [Orchestration Designer], about Scope shape
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - configuring [Orchestration Designer], Scope shape
 - Scope shape [Orchestration Designer], transactions
 ms.assetid: 3c518db0-d68c-4f72-9d5c-48540811e289
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249450"
 ---
 # <a name="how-to-configure-the-scope-shape"></a>スコープ図形を構成する方法
 **スコープ**図形は、そのコンテンツの状況に応じたフレームワークを提供します。 最初のブロック、**スコープ**図形はコンテキスト ブロック、つまりボディ部をスコープの基本的なアクションが行わ以外の場合は、try/catch ステートメントの try ブロックと似ています。 次の本文、**スコープ**図形には、1 つまたは複数の例外ハンドラー ブロックや補正ブロックもを含めることがあります。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
     |Batch|このトランザクションと他のトランザクションをオーケストレーションの複数のインスタンスにまたがってバッチ処理できるかどうかを決定するブール値。 BizTalk Server では、オーケストレーションの複数のインスタンスにまたがるアトミック トランザクションのバッチ処理がサポートされません。したがって、BizTalk Server では、このプロパティは使用できません。 このプロパティは、将来のリリースで廃止される予定です。|  
     |[分離レベル]|同時実行トランザクション間でアクセスできるデータのレベルを指定します。<br /><br /> -Read Committed-選択したトランザクションがコミットされるまでの同時実行トランザクションで変更されたデータへのアクセスを防ぐためにします。 このオプションは Microsoft SQL Server の既定の設定です。<br />-Repeatable Read-選択したトランザクションが完了するまで、読み取りロックを要求するようにします。<br />化シリアルなど、同時実行トランザクションから選択したトランザクションが完了するまでデータを変更します。 このオプションは最も制限された分離レベルになります。|  
     |[再試行]|エラーが発生したときに、このトランザクションを再試行するかどうかを決定するブール値。 既定値は **True**です。 **注:** Microsoft.XLANG.BaseTypes.RetryTransactionException をスローする場合、またはオーケストレーション エンジンがその状態を保管するため、トランザクションをコミットできない場合、アトミック トランザクションは再試行されます。|  
-    |Timeout|トランザクションが非アクティブな場合にエラーを発生させるまでの時間を秒単位で指定します。 タイムアウトを使用したくない場合は、このプロパティの値を 0 に設定します。 **注:**この DTC タイムアウトでは、オーケストレーション エンジンでは適用されません。 アトミック トランザクションの場合のみ、エンジンはトランザクションを中断しません。 エンジンは、DTC トランザクション内のいずれかのオブジェクトを介して DTC トランザクションに参加している場合のみ、コミットまで通常どおり処理し、コミット時にエラーを発生させます。|  
+    |Timeout|トランザクションが非アクティブな場合にエラーを発生させるまでの時間を秒単位で指定します。 タイムアウトを使用したくない場合は、このプロパティの値を 0 に設定します。 **注:** この DTC タイムアウトでは、オーケストレーション エンジンでは適用されません。 アトミック トランザクションの場合のみ、エンジンはトランザクションを中断しません。 エンジンは、DTC トランザクション内のいずれかのオブジェクトを介して DTC トランザクションに参加している場合のみ、コミットまで通常どおり処理し、コミット時にエラーを発生させます。|  
   
 3.  場合、**トランザクションの種類**に設定されている**長時間**、[プロパティ] ウィンドウで、次のプロパティを指定します。  
   

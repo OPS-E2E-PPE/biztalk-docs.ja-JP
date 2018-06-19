@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションの呼び出し図形を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションの呼び出し図形を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Call Orchestration shape [Orchestration Designer], parameters
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - Call Orchestration shape [Orchestration Designer], referencing orchestrations
 - orchestrations, parameters
 ms.assetid: 718ce2a0-ac08-4662-8b4e-1be279dbc749
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249706"
 ---
 # <a name="how-to-configure-the-call-orchestration-shape"></a>オーケストレーションの呼び出し図形を構成する方法
 **オーケストレーションの呼び出し**図形を同期的に呼び出す別のプロジェクトで参照されているオーケストレーションを使用することができます。 これにより、一般的なオーケストレーション ワークフロー パターンを BizTalk プロジェクト間で再利用できるようになります。 同期的に入れ子になった別のオーケストレーションを呼び出した場合、**オーケストレーションの呼び出し**図形、外側のオーケストレーションが、入れ子になったオーケストレーションで続行する前に完了を待機します。  

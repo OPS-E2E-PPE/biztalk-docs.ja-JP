@@ -1,14 +1,14 @@
 ---
-title: "フォールバック受信確認プロパティ (X12) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: フォールバック受信確認プロパティ (X12) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce33f5dd-fbd5-448c-8ea3-05dd1467131a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232834"
 ---
 # <a name="configuring-fallback-acknowledgement-properties-x12"></a>フォールバック受信確認プロパティの構成 (X12)
 フォールバック アグリーメントでは、パーティから受信した X12 エンコード インターチェンジへの応答としての受信確認を [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で生成する方法、およびパーティに返す受信確認の種類を指定できます。 ここでは、この指定を行う手順について説明します。  

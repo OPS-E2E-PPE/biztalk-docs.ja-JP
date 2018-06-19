@@ -1,14 +1,14 @@
 ---
-title: "SQL Server のアクセス許可の問題を解決するためのガイドライン |Microsoft ドキュメント"
-ms.custom: 
+title: SQL Server のアクセス許可の問題を解決するためのガイドライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 60c24512-5f65-4363-b806-8dd52b22f179
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246906"
 ---
 # <a name="guidelines-for-resolving-sql-server-permissions-problems"></a>SQL Server 権限の問題を解決するためのガイドライン
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、Microsoft [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] データベースをランタイム操作のため広範に使用するので、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 権限が正しく設定されていることが重要です。 このトピックでは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 権限の問題を最小限に抑えるための一般的なガイドラインと、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] に影響を与える [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 権限の問題をトラブルシューティングするための手順を提供します。  

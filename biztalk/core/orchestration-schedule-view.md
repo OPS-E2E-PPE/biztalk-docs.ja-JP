@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーション スケジュール ビュー |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーション スケジュール ビュー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Orchestration view [Tracking Profile Editor]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, Orchestration view
 - Tracking Profile Editor, orchestrations
 ms.assetid: b3e0014b-000e-4f58-9f70-d331d78e487e
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263538"
 ---
 # <a name="orchestration-schedule-view"></a>オーケストレーション スケジュール ビュー
 オーケストレーション ビューには、選択したオーケストレーションに含まれているビジネス プロセスを BAM でトランザクション処理する手順が表示されます。 このビューは、追跡プロファイル エディター (TPE) のユーザー インターフェイスの右ペインにあります。  

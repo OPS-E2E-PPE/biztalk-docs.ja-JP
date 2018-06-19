@@ -1,15 +1,15 @@
 ---
-title: "新しいホストを作成 |Microsoft ドキュメント"
+title: 新しいホストを作成 |Microsoft ドキュメント
 descriptions: Use BizTalk Administration to create a new host in BizTalk Server
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 811e6e57-5c37-471a-aff4-5b2b68c367b1
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250202"
 ---
 # <a name="create-a-new-host"></a>新しいホストを作成します。
 BizTalk ホストとは、アダプター ハンドラー、受信場所 (パイプラインを含む)、オーケストレーションなどのアイテムの論理的なコンテナーです。 セキュリティ対策のため、およびホストの管理を容易にするために、メッセージの処理、受信、および送信用の各ホストを分離し、信頼済みのアイテムとそうでないアイテムのホストを使い分けることをお勧めします。 BizTalk サーバーごとにインストールできるホストのインスタンスは 1 つだけです。 ホストの詳細については、次を参照してください。[ホスト](../core/hosts.md)です。  

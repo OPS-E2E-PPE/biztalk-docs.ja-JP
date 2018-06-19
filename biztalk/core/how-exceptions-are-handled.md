@@ -1,11 +1,11 @@
 ---
-title: "例外を処理する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 例外を処理する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors, handlers
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - errors, scopes
 - handlers [adapters], errors
 ms.assetid: 30b88d8a-8737-4700-b856-1b49fdf6b6d0
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246666"
 ---
 # <a name="how-exceptions-are-handled"></a>例外の処理方法
 スコープ内で例外が発生すると、スコープ内の実行の各論理スレッドは停止します。 ランタイム エンジンでは、該当する例外の例外ハンドラーが検索されます。  

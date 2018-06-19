@@ -1,14 +1,14 @@
 ---
-title: "BAM ソリューションを実装する |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ソリューションを実装する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 18a5bc04-1b0a-4242-b599-760e696f5c06
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257170"
 ---
 # <a name="implementing-bam-solutions"></a>BAM ソリューションの実装
 このセクションでは、必要なデータをキャプチャする方法、BAM にデータを送信する方法、ビジネス要件の変化に合わせて BAM に送信するデータを変更する方法など、BAM ソリューションを実装する方法について説明します。  

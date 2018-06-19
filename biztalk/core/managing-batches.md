@@ -1,14 +1,14 @@
 ---
-title: "バッチの管理 |Microsoft ドキュメント"
-ms.custom: 
+title: バッチの管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 82755840-4e00-4fed-80e0-1a22b248c0bf
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263490"
 ---
 # <a name="managing-batches"></a>バッチの管理
 リリースを手動で制御する方法の上部にあるコントロールを使用して、インターチェンジをバッチ処理、**バッチ構成**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス (で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール) X12 と EDIFACT エンコードの両方にします。 この作業には、次の制御が含まれます。  

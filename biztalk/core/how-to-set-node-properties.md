@@ -1,14 +1,14 @@
 ---
-title: "ノードのプロパティを設定する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ノードのプロパティを設定する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c0c79eac-d9ba-45e2-a6e9-770b2bcb2067
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255450"
 ---
 # <a name="how-to-set-node-properties"></a>ノードのプロパティを設定する方法
 BizTalk スキーマにノードを挿入した後で、そのノードのプロパティを既定値から変更することが必要になる場合があります。 ノードの種類ごとに、固有の一連のプロパティがあります。また、これらのプロパティでは、あるプロパティの設定が他のプロパティの使用に影響を与える場合もあります。 たとえば、設定する前に、**既定の囲み文字**のプロパティ、**スキーマ** ノードを設定する必要がある、**既定の囲み文字の種類**プロパティかを**文字**または**16 進**、それによって、前者のプロパティを表す形式を確立します。 さらに、これらのプロパティが使用可能なも全体は、**解析**プロパティのカテゴリが属する、しない限り、**フラット ファイル拡張子**を使用して有効になっているが、**スキーマ エディター拡張機能**プロパティです。  

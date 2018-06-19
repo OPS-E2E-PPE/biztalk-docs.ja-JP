@@ -1,11 +1,11 @@
 ---
-title: "暗号化と証明書の署名 |Microsoft ドキュメント"
-ms.custom: 
+title: 暗号化と証明書の署名 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - certificates, security
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - messages, certificates
 - security, encryption
 ms.assetid: 3c3f9de5-4156-4133-8d5e-c30b142b6d61
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241690"
 ---
 # <a name="encryption-and-signing-certificates"></a>暗号化と証明書の署名
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のセキュリティ保護は、証明書に大きく依存します。 BizTalk Server では、暗号化証明書や署名証明書を使用することで、信頼できるデータを送受信でき、処理するデータの安全性を確保できます。 暗号化とデジタル署名には、どちらも公開キー証明書と秘密キー証明書を使用します。 暗号化を使用する場合、メッセージの送信者は受信者の公開キー証明書を使用してメッセージを暗号化し、メッセージの受信者 (BizTalk Server) は秘密キーを使用してメッセージを解読します。 デジタル署名を使用する場合、メッセージの送信者は公開キー証明書を使用してメッセージに署名し、メッセージの受信者 (BizTalk Server) は送信者の公開キー証明書を使用して署名を確認します。  

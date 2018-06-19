@@ -1,14 +1,14 @@
 ---
-title: "Web サービスを使用する際の考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスを使用する際の考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea7038dc-4740-4c0a-b6a1-08bc22f42bc2
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242002"
 ---
 # <a name="considerations-when-consuming-web-services"></a>Web サービスを使用する際の考慮事項
 ここでは、Web サービスを使用する際に考慮すべき情報について説明します。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 09/20/2017
  プログラムを使って、構成プロパティをメッセージ コンテキストに設定できます。 これらのプロパティは、送信ポートが静的であるか動的であるかにかかわらず、オーケストレーションまたはカスタム パイプライン コンポーネントに設定できます。  
   
 > [!NOTE]
->  構成するのには**MethodName**プロパティの静的 SOAP 送信ポートがプログラムで、設定する必要があります**メソッド名**に**[後で指定]**で、 **Webサービス**のタブ、 **SOAP トランスポートのプロパティ**ダイアログ ボックスで、BizTalk Server 管理コンソールです。  
+>  構成するのには**MethodName**プロパティの静的 SOAP 送信ポートがプログラムで、設定する必要があります**メソッド名**に **[後で指定]** で、 **Webサービス**のタブ、 **SOAP トランスポートのプロパティ**ダイアログ ボックスで、BizTalk Server 管理コンソールです。  
 >   
 >  詳細については、 **MethodName**プロパティを参照してください[を消費する Web サービスの URI を動的に設定する方法](../core/how-to-dynamically-set-the-uri-of-a-consumed-web-service.md)です。  
 >   
@@ -112,7 +113,7 @@ ms.lasthandoff: 09/20/2017
   
 -   Web メソッドが必要**SoapDocumentMethodAttribute**の代わりに**ください**です。  
   
--   Web サービスおよびメソッドを使用する必要があります、**リテラル**の代わりにバインド**Encoded**など**[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**です。  
+-   Web サービスおよびメソッドを使用する必要があります、**リテラル**の代わりにバインド**Encoded**など **[SoapDocumentMethod(Use=SoapBindingUse.Literal)]** です。  
   
 -   Web メソッドのパラメータと戻り値の型**XmlRootAttribute** 、有効な**Namespace**プロパティ ネイティブ XSD 型、および XmlNode 型でない限り、します。  
   

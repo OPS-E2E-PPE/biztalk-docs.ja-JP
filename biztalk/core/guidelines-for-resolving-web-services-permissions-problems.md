@@ -1,14 +1,14 @@
 ---
-title: "Web サービスのアクセス許可の問題を解決するためのガイドライン |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスのアクセス許可の問題を解決するためのガイドライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e29543e9-9b87-437b-ac91-8f1cce01fab4
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246778"
 ---
 # <a name="guidelines-for-resolving-web-services-permissions-problems"></a>Web サービスの権限の問題を解決するためのガイドライン
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には Web サービスが広く採用され、SOAP アダプターで使用したり、オーケストレーションを Web サービスとして公開したりできるようになっています。 このトピックでは、Web サービスのアクセス許可の問題を最小限に抑えるための一般的なガイドラインを提供し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に影響を与える Web サービスのアクセス許可の問題をトラブルシューティングするための手順について説明します。  

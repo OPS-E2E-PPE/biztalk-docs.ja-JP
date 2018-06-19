@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256642"
 ---
 # <a name="identifying-performance-bottlenecks"></a>パフォーマンスのボトルネックの特定
 理想的な状況では、システムがほぼすべての機能を利用して実行されている (使用できるリソースを効率的に使用している) 場合、維持可能なスループットが実現し、総保有コスト (TCO) を削減できます。  

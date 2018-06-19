@@ -1,17 +1,17 @@
 ---
-title: "例外 |Microsoft ドキュメント"
-ms.custom: 
+title: 例外 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, errors
 - errors, orchestrations
 ms.assetid: febf8511-b3b6-46bf-aef0-2d326f1b959e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245978"
 ---
 # <a name="exceptions"></a>例外
 オーケストレーションでエラーが発生すると、例外が生成されます。 BizTalk Server では、例外を処理 (およびスロー) するためのさまざまなメカニズムを提供しています。  

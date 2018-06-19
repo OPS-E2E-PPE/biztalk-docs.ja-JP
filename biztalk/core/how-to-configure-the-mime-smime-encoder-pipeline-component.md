@@ -1,11 +1,11 @@
 ---
-title: "MIME/SMIME エンコーダー パイプライン コンポーネントを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: MIME/SMIME エンコーダー パイプライン コンポーネントを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, encrypting digital signatures
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - messages, encoding
 - messages, multi-parts
 ms.assetid: dcbb08e8-d300-4e7f-9c1c-907fb602e721
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249658"
 ---
 # <a name="how-to-configure-the-mime-smime-encoder-pipeline-component"></a>MIME/SMIME エンコーダー パイプライン コンポーネントを構成する方法
 MIME/SMIME エンコーダー パイプライン コンポーネントを使用して、送信メッセージのエンコードおよび暗号化を行い、送信メッセージに署名します。 BizTalk Server と外部の取引先との安全なドキュメント インターチェンジが必要な場合に、このコンポーネントが役立ちます。 また、このコンポーネントを使用して、BizTalk Server マルチパート メッセージを送信できます。  
@@ -44,8 +45,8 @@ MIME/SMIME エンコーダー パイプライン コンポーネントを使用�
     |**コンテンツ転送エンコード**|エンコード形式を示します。<br /><br /> オプション : Base64、QuotedPrintable、SevenBit、EightBit、Binary、および UUEncode。<br /><br /> 既定値: **Base64**|  
     |**暗号化を有効にします。**|設定**True**送信メッセージを暗号化する場合。 ユーザーが設定して使用する暗号化アルゴリズムを選択できる場合は、このオプションが有効になっている、**暗号化アルゴリズム**プロパティです。 MIME/SMIME エンコーダー パイプライン コンポーネントでは、メッセージの暗号化に BizTalk エクスプローラーの送信ポートと関連付けられている公開キー証明書が使用されます。<br /><br /> 既定値: **False**|  
     |**暗号化アルゴリズム**|暗号化アルゴリズムを定義します。<br /><br /> このプロパティは、場合にのみ設定できます**暗号化を有効にする**に設定されている**True**です。<br /><br />**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]以降のバージョン**、AES 暗号化が自動的に含まれます。 オプションがあります: DES3、DES、RC2、AES128 (既定)、AES192、AES256 です。<br /><br />以前[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]バージョンでは、オプションがあります: DES3 (既定)、DES、RC2。|  
-    |**添付ファイルとしてボディ部を送信します。**|設定**True**を BizTalk メッセージのボディ部を MIME 添付ファイルとして送信する場合。<br /><br /> 既定値: **False** **重要:**にこのプロパティを設定する必要がありますいない**True** BizTalk サーバー間でメッセージを送信するときにします。 設定した場合、受信側でメッセージが 2 つの部分メッセージとして解釈されるため、メッセージのデコード処理で、カスタム コードが必要になります。|  
-    |**署名の種類**|送信メッセージに署名する場合は、このプロパティで署名の形式を選択します。 このプロパティには、次の 3 つの値があります。<br /><br /> -   **NoSign**です。 メッセージは署名されません。<br />-   **ClearSign**です。 署名は、メッセージに追加されます。 **ClearSign**場合に使用することはできません**暗号化を有効にする**に設定されている**True**です。<br />-   **[Blobsign]**です。 メッセージに署名が付けられ、メッセージはエンコードされます。<br /><br /> MIME/SMIME エンコーダー コンポーネントでは、メッセージの署名に、BizTalk 管理コンソールの BizTalk グループに関連付けられている秘密キーのクライアント証明書が使用されます。<br /><br /> 既定値: **NoSign**|  
+    |**添付ファイルとしてボディ部を送信します。**|設定**True**を BizTalk メッセージのボディ部を MIME 添付ファイルとして送信する場合。<br /><br /> 既定値: **False** **重要:** にこのプロパティを設定する必要がありますいない**True** BizTalk サーバー間でメッセージを送信するときにします。 設定した場合、受信側でメッセージが 2 つの部分メッセージとして解釈されるため、メッセージのデコード処理で、カスタム コードが必要になります。|  
+    |**署名の種類**|送信メッセージに署名する場合は、このプロパティで署名の形式を選択します。 このプロパティには、次の 3 つの値があります。<br /><br /> -   **NoSign**です。 メッセージは署名されません。<br />-   **ClearSign**です。 署名は、メッセージに追加されます。 **ClearSign**場合に使用することはできません**暗号化を有効にする**に設定されている**True**です。<br />-   **[Blobsign]** です。 メッセージに署名が付けられ、メッセージはエンコードされます。<br /><br /> MIME/SMIME エンコーダー コンポーネントでは、メッセージの署名に、BizTalk 管理コンソールの BizTalk グループに関連付けられている秘密キーのクライアント証明書が使用されます。<br /><br /> 既定値: **NoSign**|  
   
  MIME 添付ファイルのファイル名を設定するには、使用、 **FileName**プロパティに、**システム**メッセージ部分の名前空間。  
   

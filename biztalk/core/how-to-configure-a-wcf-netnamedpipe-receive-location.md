@@ -1,14 +1,14 @@
 ---
-title: "Wcf-netnamedpipe 受信場所を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Wcf-netnamedpipe 受信場所を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e2e8242a-64c7-43de-af5e-25c22e182c72
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250570"
 ---
 # <a name="how-to-configure-a-wcf-netnamedpipe-receive-location"></a>WCF-NetNamedPipe 受信場所を構成する方法
 WCF-NetNamedPipe 受信場所は、プログラムから、または BizTalk 管理コンソールを使用して構成できます。  
@@ -67,7 +68,7 @@ WCF-NetNamedPipe 受信場所は、プログラムから、または BizTalk 管
   
 4.  **受信場所のプロパティ**] ダイアログ ボックスで、**トランスポート**横**型**[ **Wcf-netnamedpipe**から、クリックしてドロップダウン リスト、**構成**です。  
   
-5.  **Wcf-netnamedpipe トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブで、エンドポイント アドレスを構成し、サービス id を Wcf-netnamedpipe 受信場所。 詳細については、**全般** タブで、 **Wcf-netnamedpipe トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-netnamedpipe トランスポートのプロパティ ダイアログ ボックス、受信の [全般]**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
+5.  **Wcf-netnamedpipe トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブで、エンドポイント アドレスを構成し、サービス id を Wcf-netnamedpipe 受信場所。 詳細については、**全般** タブで、 **Wcf-netnamedpipe トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-netnamedpipe トランスポートのプロパティ ダイアログ ボックス、受信の [全般]** タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
   
 6.  **Wcf-netnamedpipe トランスポートのプロパティ** ダイアログ ボックスで、**バインド** タブで、タイムアウトおよびトランザクションのプロパティを構成します。 詳細については、**バインド** タブで、 **Wcf-netnamedpipe トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-netnamedpipe トランスポートのプロパティ ダイアログ ボックス、受信、バインディング**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
   

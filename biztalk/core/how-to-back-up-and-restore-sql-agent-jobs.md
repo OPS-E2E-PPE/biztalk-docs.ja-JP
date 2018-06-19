@@ -1,14 +1,14 @@
 ---
-title: "バックアップおよび SQL エージェント ジョブを復元する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: バックアップおよび SQL エージェント ジョブを復元する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f82fc5a5-5ea5-476c-bed1-c5d41a50e673
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247202"
 ---
 # <a name="how-to-back-up-and-restore-sql-agent-jobs"></a>SQL エージェント ジョブのバックアップ方法と復元方法
 このトピックでは、SQL Server エージェント ジョブをバックアップおよび復元する方法について説明します。 SQL ジョブを構成してからバックアップすることをお勧めします。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  スクリプトを作成する各ジョブについて、手順 3. から繰り返します。 BizTalk Server 関連ジョブの一覧を参照して、どのジョブのスクリプトを作成するかを判断してください。  
   
-     バックアップするには、少なくとも、 **Backup BizTalk Server (BizTalkMgmtDb)**ジョブを構成後します。  
+     バックアップするには、少なくとも、 **Backup BizTalk Server (BizTalkMgmtDb)** ジョブを構成後します。  
   
 ## <a name="restore-a-job-from-a-script"></a>スクリプトからジョブを復元します。  
   

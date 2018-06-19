@@ -1,18 +1,18 @@
 ---
-title: "HTTP アダプタのセキュリティに関する推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: HTTP アダプタのセキュリティに関する推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, HTTP adapters
 - configuring [HTTP adapters], security
 - HTTP adapters, security
 ms.assetid: ef6043c2-c62a-40e5-b2e1-53e60f87a761
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256762"
 ---
 # <a name="http-adapter-security-recommendations"></a>HTTP アダプタのセキュリティに関する推奨事項
 HTTP アダプターは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] とアプリケーション間で HTTP (Hypertext Transfer Protocol) を介して情報を交換するために使用します。 アプリケーションは、指定された HTTP URL に HTTP POST 要求または HTTP GET 要求を送信することで、サーバーにメッセージを送信できます。 HTTP アダプターに関する詳細については、次を参照してください。 [HTTP アダプター](../core/http-adapter.md)です。 HTTP アダプターをセキュリティで保護して環境に展開するには、次のガイドラインに従うことをお勧めします。  

@@ -1,14 +1,14 @@
 ---
-title: "出力設定の XSLT を指定する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 出力設定の XSLT を指定する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c541432-fd4e-41cc-8bcc-f570ce5df439
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255338"
 ---
 # <a name="set-map-compilation-and-output-settings"></a>マップのコンパイルを設定し、出力設定
 BizTalk マッパーでマップのプロパティを設定します。 
@@ -27,7 +28,7 @@ BizTalk マッパーでマップのプロパティを設定します。
 
 ## <a name="set-the-map-level-compilation"></a>マップ レベルのコンパイルを設定します。
 
-**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**を選択する、`XslTransform`または`XslCompiledTransform`マップをコンパイルするクラス。 
+**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]** を選択する、`XslTransform`または`XslCompiledTransform`マップをコンパイルするクラス。 
 
 1. グリッド ビューでは、マップを開きます。
 2. マッパー グリッドの任意の場所を右クリックし、選択**プロパティ**です。  

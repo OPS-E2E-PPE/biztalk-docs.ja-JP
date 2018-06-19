@@ -15,7 +15,7 @@ helpviewer_keywords:
 - service instances, searching
 - service instances, running
 ms.assetid: fc65bf33-c013-4e6a-b9fd-b4536811e7b4
-caps.latest.revision: ''
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22255202"
 ---
 # <a name="how-to-search-for-running-service-instances"></a>実行中のサービス インスタンスを検索する方法
 使用することができます、 **クエリ**  タブで、特定の検索するには、BizTalk Server 管理コンソールの退避、アクティブ、ブレークポイントの場合、スケジュール、およびサービス インスタンスを再試行します。  
