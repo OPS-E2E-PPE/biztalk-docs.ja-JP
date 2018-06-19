@@ -1,11 +1,11 @@
 ---
-title: "パターンを使用したデザイン: サービス指向ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: 'パターンを使用したデザイン: サービス指向ソリューション |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - patterns [service solutions], examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - patterns [service solutions], designing
 - designing, programming patterns
 ms.assetid: c196cd9d-2b2d-4548-bc7d-26196f7c2878
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240194"
 ---
 # <a name="designing-with-patterns-the-service-oriented-solution"></a>パターンを使用したデザイン: サービス指向ソリューション
 サービス指向ソリューションは、BizTalk アプリケーションを、他のアプリケーションが使用するサービスとして提供する方法を示します。 アプリケーションをサービスとして提供すると、他のアプリケーションは情報を簡単に取り込み、自ら提供するサービスで利用できるようになります。 インターフェイスはサービスの詳細についてで「Service Interface」を参照して[http://go.microsoft.com/fwlink/?LinkId=46185](http://go.microsoft.com/fwlink/?LinkId=46185)です。 サービス指向の統合の詳細についてはの「Service-Oriented Integration」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=46186](http://go.microsoft.com/fwlink/?LinkId=46186)です。  

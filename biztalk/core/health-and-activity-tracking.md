@@ -1,14 +1,14 @@
 ---
-title: "状態と動作状況の追跡 |Microsoft ドキュメント"
-ms.custom: 
+title: 状態と動作状況の追跡 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0c5d7415-38da-47b5-8dbc-0a2ea74548d9
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,9 +17,10 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246602"
 ---
 # <a name="health-and-activity-tracking"></a>状態と動作状況の追跡
-**状態と動作状況の追跡 (HAT)**でツールが削除されて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]2009 です。  追跡および live に関連する情報を表示する、HAT ツールの役割、履歴メッセージ データが BizTalk 追跡データベースに格納されています。  オーケストレーションのフローをデバッグすることや、メッセージを連続表示してフローを確認することができました。  クエリ ビルダーでは、追跡データの標準クエリおよびカスタム クエリを実行できました。  
+**状態と動作状況の追跡 (HAT)** でツールが削除されて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]2009 です。  追跡および live に関連する情報を表示する、HAT ツールの役割、履歴メッセージ データが BizTalk 追跡データベースに格納されています。  オーケストレーションのフローをデバッグすることや、メッセージを連続表示してフローを確認することができました。  クエリ ビルダーでは、追跡データの標準クエリおよびカスタム クエリを実行できました。  
   
  状態と動作状況の追跡ツールは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メニューから直接起動はされないようになりましたが、その追跡機能は引き続き間接的に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境内に存在しています。  状態と動作状況の情報は、BizTalk Server 管理コンソールの [グループ ハブ] ページ内で、強化された統合と追加の追跡クエリを通じて利用できます。  
   

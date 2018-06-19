@@ -1,14 +1,14 @@
 ---
-title: "Edifact インターチェンジに UNA または UNB の最初のセグメントとして含まれていた必要があります |Microsoft ドキュメント"
-ms.custom: 
+title: Edifact インターチェンジに UNA または UNB の最初のセグメントとして含まれていた必要があります |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc43fd17-31d0-48df-93cd-524b40034764
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240034"
 ---
 # <a name="edifact-interchange-should-have-contained-una-or-unb-as-the-first-segment"></a>EDIFACT インターチェンジには、最初のセグメントとして UNA または UNB が含まれている必要があります
 ## <a name="details"></a>詳細  

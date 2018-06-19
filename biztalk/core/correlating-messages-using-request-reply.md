@@ -1,18 +1,18 @@
 ---
-title: "要求/応答を使用してメッセージを相互に関連付ける |Microsoft ドキュメント"
-ms.custom: 
+title: 要求/応答を使用してメッセージを相互に関連付ける |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, MQSeries adapters
 - messages, correlating
 - MQSeries adapters, correlating messages
 ms.assetid: 4615b586-663b-41d8-949c-fefb6143c590
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237994"
 ---
 # <a name="correlating-messages-using-request-reply"></a>要求 - 応答を使用したメッセージの関連付け
 Windows プラットフォームのサーバー コンポーネントの要求 - 応答シナリオである、IBM WebSphere MQ の BizTalk オーケストレーションでメッセージを関連付ける方法は 2 とおりあります。 両方のメッセージ Id を設定して、相関 id を指定する (**MQMD_MSGID**) および CorrelationID (**MQMD_CorrelId**)、同じ値にします。 2 つ目は、使用する、 **BizTalk_CorrelationId**コンテキスト プロパティです。  

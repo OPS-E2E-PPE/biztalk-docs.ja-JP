@@ -1,11 +1,11 @@
 ---
-title: "開発、サービス指向ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: 開発、サービス指向ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tutorials, developing
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - developing, tutorials
 - developing, service solution tutorial
 ms.assetid: 7979a05c-7fd3-4476-a623-55de8abdc493
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239330"
 ---
 # <a name="developing-a-service-oriented-solution"></a>指向ソリューションのサービスの開発
 サービス指向ソリューションでは、Woodgrove Bank のクレジット口座残高システムを示します。 アカウントに関する情報は次の 3 つのレガシ システムから取得します。 与信限度額を提供する SAP システム、メインフレームで実行されている pending transactions システムおよび MQSeries を使用して、payment tracking システム。 残高照会の要求は、Web サービスまたは音声自動応答装置 (IVR) から取得します。 シナリオの詳細については、次を参照してください。[サービス指向ソリューションを理解する](../core/understanding-the-service-oriented-solution.md)です。  

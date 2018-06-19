@@ -1,14 +1,14 @@
 ---
-title: "ビジネス アクティビティの監視 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス アクティビティの監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 83b3c92f-3062-413e-8d89-797f1c7ea7ab
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232730"
 ---
 # <a name="business-activity-monitoring"></a>ビジネス アクティビティの監視
 インフォメーション ワーカーがビジネス プロセスを確認し評価する際には、柔軟性が必要です。 たとえば、購買部長は 1 日に承認および拒否される注文書の数を確認する必要があり、販売部長は受注製品を 1 時間ごとに更新するとします。 これらの異なるニーズを満たすには、特定のビジネス プロセスで起こっている事象を追跡するための全般的なフレームワークが必要です。 これはまさに、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のビジネス アクティビティ監視 (BAM) コンポーネントによって提供されるものです。  

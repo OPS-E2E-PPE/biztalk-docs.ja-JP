@@ -1,14 +1,14 @@
 ---
-title: "構成の EDI および AS2 状態レポート |Microsoft ドキュメント"
-ms.custom: 
+title: 構成の EDI および AS2 状態レポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0c7fa76d-0d03-4b74-9a3a-60f4bd0534ff
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233618"
 ---
 # <a name="configuration-of-edi-and-as2-status-reporting"></a>EDI および AS2 状態レポートの構成
 ここでは、EDI および AS2 状態レポートの有効化、EDI、バッチ処理、および AS2 の各状態レポートに対する状態レポート フィルターと表示列の構成について説明します。  

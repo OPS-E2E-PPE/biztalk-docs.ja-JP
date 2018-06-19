@@ -1,11 +1,11 @@
 ---
-title: "アーカイブのパフォーマンスの向上と処理をパージ |Microsoft ドキュメント"
-ms.custom: 
+title: アーカイブのパフォーマンスの向上と処理をパージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - archiving [Tracking database], system performance
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - performance, purging
 - purging, system performance
 ms.assetid: d65da58d-65e0-4f6c-8b15-5d4448049b42
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257842"
 ---
 # <a name="improving-the-performance-of-the-archiving-and-purging-process"></a>アーカイブおよび削除のプロセスのパフォーマンスの向上
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースに格納されているデータの量は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] シナリオの設計、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] シナリオで処理されるメッセージの数とサイズ、および追跡に関する構成内容によって、非常に短期間で増加することがあります。 データベース サイズを正常なレベルに保つことにより、処理の効率を向上させ、システム内のデータの量をどの時点でも正常な値に維持することができます。 また、効率的で一貫性のあるパフォーマンスを達成できます。 このプロセスを自動化すると、データベースを手動で保守するための労力を軽減することができます。  

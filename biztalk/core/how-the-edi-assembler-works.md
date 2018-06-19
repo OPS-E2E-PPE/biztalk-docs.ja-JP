@@ -1,14 +1,14 @@
 ---
-title: "EDI アセンブラーの動作 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI アセンブラーの動作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c3785870-08ab-4fc2-8f7e-7c5a37639a7a
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22250490"
 ---
 # <a name="how-the-edi-assembler-works"></a>EDI アセンブラの動作
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、送信される EDI エンコード インターチェンジの処理の大部分を、EDI 送信パイプライン (`Microsoft.BizTalk.DefaultPipelines.EDISendPipeline`) で実行します。 このパイプラインには、EDI アセンブラ パイプライン コンポーネントが含まれ、このコンポーネントにより、次の処理が実行されます。  
@@ -98,7 +99,7 @@ ms.lasthandoff: 01/17/2018
 |グループ制御番号|GS6|UNG5|  
 |トランザクション セット制御番号 (X12)<br /><br /> トランザクション セット参照番号 (EDIFACT)|ST2|UNH1|  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)][次へ] で入力した値の範囲に基づいて、送信インターチェンジのインターチェンジ制御番号を設定、**インターチェンジ制御番号 (ISA13)**プロパティを**ローカル ホスト設定**(ページ[**インターチェンジの設定**) 一方向アグリーメント タブで、**アグリーメントのプロパティ**] ダイアログ ボックス。 この番号は、以降のインターチェンジごとに増分されます (最大値に達するまで)。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)][次へ] で入力した値の範囲に基づいて、送信インターチェンジのインターチェンジ制御番号を設定、**インターチェンジ制御番号 (ISA13)** プロパティを**ローカル ホスト設定**(ページ[**インターチェンジの設定**) 一方向アグリーメント タブで、**アグリーメントのプロパティ**] ダイアログ ボックス。 この番号は、以降のインターチェンジごとに増分されます (最大値に達するまで)。  
   
  インターチェンジ制御番号が EdiOverride コンテキスト プロパティを使用して指定されている場合は、その値がこのインターチェンジで使用されるので、アグリーメントで指定されたインターチェンジ制御番号の影響は受けません。  
   

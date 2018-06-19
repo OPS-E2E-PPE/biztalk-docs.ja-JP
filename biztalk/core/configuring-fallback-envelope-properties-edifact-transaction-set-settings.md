@@ -1,14 +1,14 @@
 ---
-title: "フォールバック エンベロープ プロパティの構成 (EDIFACT トランザクション セットの設定) |Microsoft ドキュメント"
-ms.custom: 
+title: フォールバック エンベロープ プロパティの構成 (EDIFACT トランザクション セットの設定) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b56a5a93-35ac-4293-b00e-28dcd89dfa2a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233722"
 ---
 # <a name="configuring-fallback-envelope-properties-edifact-transaction-set-settings"></a>フォールバック エンベロープ プロパティの構成 (EDIFACT トランザクション セットの設定)
 **エンベロープ**のページ、**トランザクション セットの設定** セクションで、BizTalk Server が、パーティに送信する EDIFACT エンコード インターチェンジの UNG セグメントを生成する方法を定義します。  
@@ -34,13 +35,13 @@ ms.lasthandoff: 09/20/2017
   
 3.  **機能グループ ID (UNG1)**、1 つの文字の最小値、最大 6 文字の英数字を入力します。 このフィールドは必須です。  
   
-4.  識別する値を入力**アプリケーション送信者 (UNG2)**です。  
+4.  識別する値を入力**アプリケーション送信者 (UNG2)** です。  
   
     -   **Id (UNG2.1)**、1 つの文字の最小値、最大 35 文字の英数字を入力します。 このフィールドは必須です。  
   
     -   **コードの修飾子 (UNG2.2)**、1 つの文字の最小値、最大 4 文字の英数字を入力します。 このフィールドの入力は省略可能です。  
   
-5.  識別する値を入力**アプリケーション受信者 (UNG3)**です。  
+5.  識別する値を入力**アプリケーション受信者 (UNG3)** です。  
   
     -   **の Id (UNG3.1)**、1 つの文字の最小値、最大 35 文字の英数字を入力します。 このフィールドは必須です。  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  **制御機関 (UNG6)**、1 つの文字の最小値、最大 2 つの文字の英数字を入力します。 このフィールドは必須です。  
   
-7.  識別する値を入力**メッセージ バージョン (UNG7)**です。  
+7.  識別する値を入力**メッセージ バージョン (UNG7)** です。  
   
     -   **バージョン (UNG7.1)**、1 つの文字の最小値、最大 3 つの文字の英数字を入力します。 このフィールドは必須です。  
   

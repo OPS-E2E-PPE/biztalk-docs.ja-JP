@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239074"
 ---
 # <a name="deploying-biztalk-applications"></a>BizTalk アプリケーションの展開
 このセクションでは、BizTalk アプリケーションの展開に関する次の情報について説明します。  

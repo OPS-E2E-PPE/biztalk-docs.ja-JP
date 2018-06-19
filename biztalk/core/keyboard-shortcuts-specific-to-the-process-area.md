@@ -1,17 +1,17 @@
 ---
-title: "処理領域に固有のショートカットをキーボード |Microsoft ドキュメント"
-ms.custom: 
+title: 処理領域に固有のショートカットをキーボード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - keyboard shortcuts, Orchestration Designer
 - Orchestration Designer, keyboard shortcuts
 ms.assetid: d993d341-99f2-4788-b1f3-6a8b911e5278
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262066"
 ---
 # <a name="keyboard-shortcuts-specific-to-the-process-area"></a>処理領域に固有のキーボード ショートカット
 処理領域で使用できるキーボード操作を次の表に示します。処理領域はデザイン画面の中央の領域で、オーケストレーションのプロセス フローの定義に使用します。  

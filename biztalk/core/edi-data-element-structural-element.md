@@ -1,14 +1,14 @@
 ---
-title: "EDI データ要素の構造体要素 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI データ要素の構造体要素 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 775e8b87-b952-46d2-a506-5174d216a9aa
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239474"
 ---
 # <a name="edi-data-element-structural-element"></a>EDI データ要素の構造体要素
 データ要素は、メッセージのデータの基本単位です。 データ要素は、データ要素区切り記号によって区切られます。データ要素区切り記号は、X12 の場合は既定でアスタリスク、EDIFACT の場合は既定でプラス記号です。 データ要素の選択肢は、必須、オプション、または条件付きとして定義されます。  

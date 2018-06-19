@@ -1,11 +1,11 @@
 ---
-title: "Web サービスの有効化 |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスの有効化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, publishing
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Web services, planning
 - Web services, enabling
 ms.assetid: 2a4681f6-9ded-423d-baa5-5831e6a85c61
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242458"
 ---
 # <a name="enabling-web-services"></a>Web サービスの有効化
 Web サービスを公開するには、インターネット インフォメーション サービス (IIS)、BizTalk 分離ホスト、および Windows のユーザー アカウントとグループ アカウントを構成する必要があります。 このセクションでは、IIS の Web サービスを有効にする方法について説明します。 Web サービスの有効化の詳細については、IIS のドキュメントを参照してください。  

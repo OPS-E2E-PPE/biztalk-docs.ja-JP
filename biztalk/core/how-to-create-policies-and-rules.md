@@ -1,11 +1,11 @@
 ---
-title: "ポリシーとルールを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ポリシーとルールを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, business rules
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - policies, arguments
 - policies, creating
 ms.assetid: 59f06a67-edde-443b-9fbb-55ec4429837a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250330"
 ---
 # <a name="how-to-create-policies-and-rules"></a>ポリシーおよびルールを作成する方法
 論理演算子の論理グループの条件で規則を作成することができます (**AND**、 **OR**、および**いない**) 述語 (組み込みまたはユーザー定義の関数に適用or 演算子) を受け取る引数 (組み込みまたはユーザー定義のファクトの参照)。 右クリックすることができますも**条件**演算子または論理演算子、コンテキスト メニューから論理演算子および組み込み述語を選択します。  
@@ -42,9 +43,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  ポリシー エクスプローラ ペインで右クリック**ポリシー**、クリックして**新しいポリシーの追加**です。  
   
-     新しいフォルダーを**"policy1"**の下に作成**ポリシー**です。 既定では、新しいポリシーのバージョン 1 が作成されます。  
+     新しいフォルダーを **"policy1"** の下に作成**ポリシー**です。 既定では、新しいポリシーのバージョン 1 が作成されます。  
   
-2.  をクリックして**"policy1"**です。  
+2.  をクリックして **"policy1"** です。  
   
 3.  "名前" プロパティ ペインに、名前を入力します。  
   

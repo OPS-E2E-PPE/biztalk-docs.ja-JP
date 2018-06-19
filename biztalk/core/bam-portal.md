@@ -1,11 +1,11 @@
 ---
-title: "BAM ポータル |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal, alerts
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - BAM, portals
 - BAM portal, aggregations
 ms.assetid: 593c9637-6b97-4ad8-8af7-2b49325acf10
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232082"
 ---
 # <a name="bam-portal"></a>BAM ポータル
 ビジネス エンド ユーザーは、BAM ポータルを使用すると、ビジネス目標に対する進捗状況を測定する主要業績評価指標 (KPI) や、ビジネス プロセスに関するその他の情報を監視できます。 また、ビジネス アナリストは、BAM ポータルを使用して監視モデルの作成を監視します。監視モデルとは、ビジネス プロセス内の表示要件の概要定義といえます。 管理者は、ビジネス プロセス管理システムの状態の監視など、さまざまな監視作業で BAM ポータルを使用します。  

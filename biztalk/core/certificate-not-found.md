@@ -1,14 +1,14 @@
 ---
-title: "証明書が見つかりません |。Microsoft ドキュメント"
-ms.custom: 
+title: 証明書が見つかりません |。Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 629b199f-1884-4e88-beaa-a2e5c5e792e9
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232610"
 ---
 # <a name="certificate-not-found"></a>証明書が見つかりません
 ## <a name="details"></a>詳細  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  トランスポート名を右クリックします。  
   
-5.  **[プロパティ]**をクリックします。  
+5.  **[プロパティ]** をクリックします。  
   
 6.  ポート**型**一覧で、適切なポートを選択します。  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  **WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。  
   
-9. **[編集]**をクリックします。  
+9. **[編集]** をクリックします。  
   
 10. **Id エディター**  ダイアログ ボックスで、ことを確認して内の検索条件、**証明書参照**セクションが有効な証明書を示すために正しく構成されてです。  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  トランスポート名を右クリックします。  
   
-5.  **[プロパティ]**をクリックします。  
+5.  **[プロパティ]** をクリックします。  
   
 6.  ポート**型**一覧で、適切なポートを選択します。  
   

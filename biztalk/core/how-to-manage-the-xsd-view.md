@@ -1,14 +1,14 @@
 ---
-title: "XSD ビューを管理する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: XSD ビューを管理する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3245ebf0-6128-47b4-8e88-ea06ececbc15
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254434"
 ---
 # <a name="how-to-manage-the-xsd-view"></a>XSD ビューの管理方法
 XSD ビューの管理タスクは、3 つのカテゴリに分類できます。 そのサイズを変更する、その背景色とフォントの変更、および更新特性の変更。  
@@ -45,7 +46,7 @@ XSD ビューの管理タスクは、3 つのカテゴリに分類できます�
   
 ### <a name="to-change-the-background-color-andor-font-used-by-the-xsd-view"></a>XSD ビューで使用される背景色/フォントを変更するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]で、 **[ツール]** メニューの **[オプション]**をクリックします。  
+1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]で、 **[ツール]** メニューの **[オプション]** をクリックします。  
   
 2.  **オプション**ダイアログ ボックスでは、BizTalk エディター フォルダー をクリックし、必要に応じて、展開、**スキーマの表示**プラス記号をクリックしてカテゴリ (+) アイコン。  
   
@@ -55,7 +56,7 @@ XSD ビューの管理タスクは、3 つのカテゴリに分類できます�
   
 ### <a name="to-turn-automatic-refresh-of-the-xsd-view-on-and-off"></a>XSD ビューの自動更新をオン/オフにするには  
   
--   BizTalk エディターでは、下、 **XSD** ] タブで、をクリックして**自動更新をオフにする**または**[自動更新を有効**です。  
+-   BizTalk エディターでは、下、 **XSD** ] タブで、をクリックして**自動更新をオフにする**または **[自動更新を有効**です。  
   
      自動更新がオフの場合、XSD ビューには何も表示されません。  
   

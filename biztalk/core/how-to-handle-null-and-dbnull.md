@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255042"
 ---
 # <a name="how-to-handle-null-and-dbnull"></a>Null および DBNull を処理する方法
 このトピックでは、さまざまな型に関連する Null 値が処理されるときの予期される動作、および特定のフィールドまたはメンバーについて Null または存在の有無をチェックするためのオプションについて説明します。  

@@ -1,18 +1,18 @@
 ---
-title: "パイプライン デザイナーを使用してパイプラインを作成する |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン デザイナーを使用してパイプラインを作成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, processing messages
 - pipelines, Pipeline Designer
 - Pipeline Designer, about Pipeline Designer
 ms.assetid: 858302d8-a912-4199-95e5-4322db789b4e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238050"
 ---
 # <a name="creating-pipelines-using-pipeline-designer"></a>パイプライン デザイナーを使用してパイプラインを作成します。
 Microsoft BizTalk Server は、主に XML ドキュメント形式を処理します。 BizTalk Server の機能を最大限に活用してメッセージを処理するには、多くの場合、ネイティブ形式から XML 表現へ変換する必要があります。 BizTalk Server パイプラインでは、受信メッセージおよび送信メッセージに対して、データの暗号化や復号化、プロパティの昇格などのデータ自身に対する操作だけでなく、ネイティブ形式から XML 表現への変換といったメッセージ変換も行います。 このセクションでは、パイプラインおよびパイプライン デザイナーに関する概要とタスク固有の情報について説明します。  

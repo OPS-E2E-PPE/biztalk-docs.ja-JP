@@ -1,14 +1,14 @@
 ---
-title: "フォールバック エンベロープ プロパティ (X12 トランザクション セットの設定) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: フォールバック エンベロープ プロパティ (X12 トランザクション セットの設定) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2a951f70-07d5-4a58-b1ea-e7117a45c545
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233170"
 ---
 # <a name="configuring-fallback-envelope-properties-x12-transaction-set-settings"></a>フォールバック エンベロープ プロパティの構成 (X12 トランザクション セットの設定)
 **エンベロープ**のページ、**トランザクション セットの設定** セクションで、BizTalk Server が、パーティに送信する X12 エンコード インターチェンジの GS セグメントを生成する方法を定義します。 GS セグメントは、X12 エンコード インターチェンジの機能グループを識別および指定します。  
@@ -35,13 +36,13 @@ ms.lasthandoff: 09/20/2017
   
 3.  **機能コード (GS01)**、ドロップダウン リストから値を選択します。  
   
-4.  **アプリケーション送信者 (GS02)**2 の最小値、15 文字の英数字を入力します。 このフィールドは必須です。  
+4.  **アプリケーション送信者 (GS02)** 2 の最小値、15 文字の英数字を入力します。 このフィールドは必須です。  
   
-5.  **アプリケーション受信者 (GS03)**2 の最小値、15 文字の英数字を入力します。 このフィールドは必須です。  
+5.  **アプリケーション受信者 (GS03)** 2 の最小値、15 文字の英数字を入力します。 このフィールドは必須です。  
   
 6.  **日付形式 (GS04)**、CCYYMMDD または YYMMDD をドロップダウン リストから選択します。 このフィールドは必須です。  
   
-7.  **時刻の形式 (GS05)**HHMM、HHMMSS、または HHMMSSdd をドロップダウン リストから選択します。 このフィールドは必須です。  
+7.  **時刻の形式 (GS05)** HHMM、HHMMSS、または HHMMSSdd をドロップダウン リストから選択します。 このフィールドは必須です。  
   
 8.  **担当機関 (GS07)**、ドロップダウン リストから値を選択します。  
   

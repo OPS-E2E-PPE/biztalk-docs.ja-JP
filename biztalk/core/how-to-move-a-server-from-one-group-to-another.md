@@ -1,11 +1,11 @@
 ---
-title: "1 つのグループからサーバーを移動する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 1 つのグループからサーバーを移動する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - groups, servers
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - managing [servers], moving
 - servers, groups
 ms.assetid: 3f789a62-f597-426b-9cea-74c1fe22b694
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254570"
 ---
 # <a name="how-to-move-a-server-from-one-group-to-another"></a>サーバーをあるグループから別のグループに移動する方法
 1 つの BizTalk Server グループに関連付けることができるサーバーは 1 つだけです。 サーバーをあるグループから別のグループに移動するには、まず元のグループの構成を解除してそのグループからサーバーを削除したうえで、新しいグループに追加する必要があります。  
@@ -42,13 +43,13 @@ ms.lasthandoff: 09/20/2017
     > [!CAUTION]
     >  グループの構成を解除すると、そのコンピューターで既に構成されているすべての依存機能の構成が解除されます。  
   
-4.  **[はい]**をクリックします。  
+4.  **[はい]** をクリックします。  
   
 5.  **Microsoft BizTalk Server 構成**ウィンドウで、をクリックして**次**です。  
   
      エンタープライズ SSO、グループ、および、それらに依存する機能の構成が解除されます。  
   
-6.  **[完了]**をクリックします。  
+6.  **[完了]** をクリックします。  
   
 7.  **Microsoft BizTalk Server 構成**ウィンドウで、**カスタム構成**です。  
   

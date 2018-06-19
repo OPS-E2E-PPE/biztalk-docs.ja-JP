@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239858"
 ---
 # <a name="engine-control-functions"></a>エンジン制御関数
 このセクションでは、アプリケーションまたはポリシーがルール エンジンの作業メモリ内のファクトを制御できるようにするビジネス ルール エンジンの制御関数に関連する動作について説明します。 作業メモリ内に存在するファクトによって、評価される条件と実行されるアクションが決まります。  

@@ -1,14 +1,14 @@
 ---
-title: "ExportSettings コマンド |Microsoft ドキュメント"
-ms.custom: 
+title: ExportSettings コマンド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fa34dab1-c854-473e-a693-43ba45624e16
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245946"
 ---
 # <a name="exportsettings-command"></a>ExportSettings コマンド
 ExportSettings コマンドでは、BizTalk Server 設定を BizTalk Server 構成データベースから XML ファイルにエクスポートできます。 別の環境でこれらの設定をインポートすることができますし、[インポート BizTalk の設定を使用して設定ダッシュ ボード方法](../core/how-to-import-biztalk-settings-using-settings-dashboard.md)または[BTSTask を使用して BizTalk の設定をインポートする方法](../core/how-to-import-biztalk-settings-using-btstask.md)です。  

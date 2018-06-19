@@ -1,11 +1,11 @@
 ---
-title: "XML アセンブラー パイプライン コンポーネントでの文字エン コード |Microsoft ドキュメント"
-ms.custom: 
+title: XML アセンブラー パイプライン コンポーネントでの文字エン コード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IBaseMessagePart.Charset property
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Target Charset property
 - XML Assembler [pipeline component], character encoding
 ms.assetid: c031fbbf-f00f-41ba-8ac9-cec7d625cef6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232106"
 ---
 # <a name="character-encoding-in-the-xml-assembler-pipeline-component"></a>XML アセンブラー パイプライン コンポーネントでの文字エン コード
 XML アセンブラー パイプライン コンポーネントでは、ユーザー指定の文字エンコード方法に基づいてメッセージを生成します。指定できるエンコード方法は、次の表に示す 2 つの方法があります。  
@@ -31,7 +32,7 @@ XML アセンブラー パイプライン コンポーネントでは、ユー�
 |エンコード レベル|エンコード方法|  
 |--------------------|---------------------|  
 |コンポーネント|設定、**表せない**パイプライン デザイナーでコンポーネントのプロパティです。|  
-|メッセージ|設定、 **XMLNorm.TargetCharset**メッセージ コンテキストのプロパティです。 **注:**メッセージ コンテキスト プロパティは常にパイプライン デザイナーで設定されたコンテキスト プロパティをオーバーライドします。|  
+|メッセージ|設定、 **XMLNorm.TargetCharset**メッセージ コンテキストのプロパティです。 **注:** メッセージ コンテキスト プロパティは常にパイプライン デザイナーで設定されたコンテキスト プロパティをオーバーライドします。|  
   
  XML アセンブラーでは、次のアルゴリズムに基づいて、出力メッセージのエンコードを決定します。  
   

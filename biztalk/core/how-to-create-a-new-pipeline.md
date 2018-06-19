@@ -1,11 +1,11 @@
 ---
-title: "新しいパイプラインを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 新しいパイプラインを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, pipelines
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Pipeline Designer, warnings
 - pipelines, creating
 ms.assetid: bd95325e-1a72-4705-80f6-37ac092d11a3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248762"
 ---
 # <a name="how-to-create-a-new-pipeline"></a>新しいパイプラインを作成する方法
 プロジェクトにパイプライン テンプレートを追加して、新しいパイプラインを作成できます。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  ソリューション エクスプローラーで、パイプラインを作成するプロジェクトを選択します。  
   
-2.  **[プロジェクト]** メニューの **[新しい項目の追加]**をクリックします。  
+2.  **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。  
   
 3.  **新しい項目の追加**ダイアログ ボックスで、**受信パイプライン**または**送信パイプライン**テンプレートを 1 回クリックするとします。  
   
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  **名前**フィールドに、パイプラインの名前を入力します。  
   
-5.  **[開く]**をクリックします。  
+5.  **[開く]** をクリックします。  
   
      新しいパイプラインがソリューション エクスプローラーに表示されます。 デザイン画面に、パイプラインのステージおよび既定のコンポーネントが表示されます。  
   

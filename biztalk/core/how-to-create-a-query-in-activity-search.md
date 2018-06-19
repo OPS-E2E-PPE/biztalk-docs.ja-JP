@@ -1,11 +1,11 @@
 ---
-title: "アクティビティの検索でクエリを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アクティビティの検索でクエリを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Query Builder [BAM portal], creating queries
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - Query Builder [BAM portal], saving queries
 - queries [BAM], opening
 ms.assetid: 7940e47d-10e4-4eb1-b4e6-a8b98461e3a8
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250250"
 ---
 # <a name="how-to-create-a-query-in-activity-search"></a>アクティビティの検索でクエリを作成する方法
 業務に関するイベントや状態の通知を受け取る必要があるビジネス エンド ユーザーおよびその他のユーザーは、クエリを使用して、警告の基礎となるアクティビティの検索を作成します。  

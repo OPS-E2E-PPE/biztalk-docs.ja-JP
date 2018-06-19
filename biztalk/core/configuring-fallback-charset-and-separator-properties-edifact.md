@@ -1,14 +1,14 @@
 ---
-title: "フォールバック文字セットと区切り記号 (EDIFACT) のプロパティの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: フォールバック文字セットと区切り記号 (EDIFACT) のプロパティの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9eadc9c1-ebec-42f5-a9ca-06cb28bebcdf
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233898"
 ---
 # <a name="configuring-fallback-charset-and-separator-properties-edifact"></a>フォールバック文字セットと区切り記号のプロパティの構成 (EDIFACT)
 フォールバック アグリーメントでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が、送信 EDIFACT メッセージのエンベロープを作成するときにパーティのプロパティを検証するために使用する文字セット (UNA) を指定できます。 インターチェンジのセグメントに使用する区切り記号と終端記号 (UNB) も指定できます。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  **EDIFACT フォールバックの設定**] ダイアログ ボックスで、 **EDIFACT アグリーメント ページ**] タブの [、**インターチェンジの設定**セクションで、[**文字セットと区切り記号**です。  
   
-3.  **構文 (UNB1)**セクションで、次の操作します。  
+3.  **構文 (UNB1)** セクションで、次の操作します。  
   
     1.  **識別子 (UNB1.1)**、送信インターチェンジに適用される設定の EDIFACT 文字を入力します。 このフィールドは必須です。  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  **リリース インジケータ (UNA4)**、直後の文字が構文区切り文字、終端記号、またはリリース文字ではなく、元のデータの一部であることを示すリリース インジケーターの値を入力します。 選択**Char**の文字データ要素または**16 進**の 16 進数のデータ要素です。 文字の書式を変更すると、入力した文字が自動的に変更されます。  
   
-    5.  **繰り返し区切り記号 (UNA5)**を区切るために使用される繰り返し区切り記号は、トランザクション セット内で繰り返すをセグメントの値を入力します。 選択**Char**の文字データ要素または**16 進**の 16 進数のデータ要素です。 文字の書式を変更すると、入力した文字が自動的に変更されます。  
+    5.  **繰り返し区切り記号 (UNA5)** を区切るために使用される繰り返し区切り記号は、トランザクション セット内で繰り返すをセグメントの値を入力します。 選択**Char**の文字データ要素または**16 進**の 16 進数のデータ要素です。 文字の書式を変更すると、入力した文字が自動的に変更されます。  
   
     6.  **セグメント終端記号 (UNA6)**、EDI セグメントの末尾を示すセグメント終端記号の値を入力します。  
   

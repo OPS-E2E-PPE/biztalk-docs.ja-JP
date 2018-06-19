@@ -1,14 +1,14 @@
 ---
-title: "アダプターの構成のカスタム型コンバーター |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターの構成のカスタム型コンバーター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 60e94dde-d29d-43ff-84b0-b2ba86851151
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238714"
 ---
 # <a name="custom-type-converter-for-adapter-configuration"></a>アダプターの構成のカスタム型コンバーター
 カスタムのエディターなど、カスタム型コンバーターよりも優先、 **System.ComponentModel.TypeConverter**の 1 つの子のクラスです。 このとき、コンバーターでは値が保持されるように書式が追加されますが、プロパティ ページには表示されません。 **ConvertFrom**メソッドは文字列値を囲む角かっこを追加し、 **ConvertTo**メソッドでは、それらを削除します。  

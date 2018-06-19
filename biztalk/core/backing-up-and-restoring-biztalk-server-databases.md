@@ -1,11 +1,11 @@
 ---
-title: "バックアップと BizTalk Server データベースを復元 |Microsoft ドキュメント"
-ms.custom: 
+title: バックアップと BizTalk Server データベースを復元 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up [BAM]
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - restoring [BAM]
 - BAM, backing up
 ms.assetid: 82fc1af2-1389-4c79-80dc-f2df5656d201
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232930"
 ---
 # <a name="backing-up-and-restoring-biztalk-server-databases"></a>バックアップおよび BizTalk Server データベースを復元します。
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブを使用すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 送信元システムのすべてのデータベース (ただし、ビジネス アクティビティ監視 (BAM) により使用されているデータベースは除く) をバックアップできます。 送信元システムは、ライブ データが格納されたサーバーまたはサーバーのグループです。 BAM データベースはバックアップおよび復元の要件が異なるので、これらのデータベースについては別の方法を使用してバックアップおよび復元を行います。  

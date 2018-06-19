@@ -1,14 +1,14 @@
 ---
-title: "エンベロープの構成 (EDIFACT トランザクション セットの設定) |Microsoft ドキュメント"
-ms.custom: 
+title: エンベロープの構成 (EDIFACT トランザクション セットの設定) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec140def-6155-4b8a-8489-6e0a530bd697
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234634"
 ---
 # <a name="configuring-envelopes-edifact-transaction-set-settings"></a>エンベロープの構成 (EDIFACT トランザクション セットの設定)
 **エンベロープ**のページ、**トランザクション セットの設定** セクションで、BizTalk Server が、パーティに送信する EDIFACT エンコード インターチェンジの UNG および UNH セグメントを生成する方法を定義します。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
  BizTalk エンジンは、BizTalk XML メッセージは、UNH 要素およびターゲットの名前空間に設定される値であると判断した場合、エンジンはへの追加メッセージに UNG 要素の値が提供される、グリッド内でそれらの設定、**グループの作成セグメント**チェック ボックスをオンします。  
   
 > [!NOTE]
->  **機能グループ ヘッダー (UNG)**セクションで、グリッドで、いずれかのフィールドの設定を入力してその設定を削除、行全体を削除する必要が、またはページは検証に失敗します。  
+>  **機能グループ ヘッダー (UNG)** セクションで、グリッドで、いずれかのフィールドの設定を入力してその設定を削除、行全体を削除する必要が、またはページは検証に失敗します。  
   
 > [!IMPORTANT]
 >  すべてのプロパティが無効になっている**パーティ A にパーティ B->** をオフにした場合は、一方向アグリーメント タブ、**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理する**チェックパーティ A のボックス同じ ページで、ただし、すべてのプロパティが有効に、**パーティ B には、パーティ A が->**  A の作成中にチェック ボックスをオンの場合 タブ  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server がサイズの大きいメッセージを処理する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server がサイズの大きいメッセージを処理する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62c070be-dff5-4349-9e36-dd3a7caf1752
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249634"
 ---
 # <a name="how-biztalk-server-processes-large-messages"></a>BizTalk Server がサイズの大きなメッセージを処理する方法
 ## <a name="what-is-a-large-message"></a>サイズの大きなメッセージとは何ですか?  
@@ -61,7 +62,7 @@ ms.lasthandoff: 09/20/2017
      この値を作成した後、バイト数を 10 進数で入力して、新しいしきい値を設定します。 たとえば、10 進数値 2097152 を入力して、メッセージ サイズのしきい値を既定値の 1 MB から 2 MB に増やします。 スループットを向上させるため、使用できるメモリ容量が大きいシステムではこの値を大きくしてください。 ドキュメントをディスクにバッファリングすると、全体のスループットに対してメモリが節約されます。  
   
     > [!NOTE]
-    >  既定では、マッピング中に、ファイル システムにバッファリングされるドキュメントは書き込むことが、 *%temp%* BizTalk Server コンピューターのディレクトリ。 設定を変更、 *%temp%*環境変数マッピング中に、ファイル システムにサイズの大きいメッセージをバッファリングするときにパフォーマンスを向上させるために非システムのディスクにします。  
+    >  既定では、マッピング中に、ファイル システムにバッファリングされるドキュメントは書き込むことが、 *%temp%* BizTalk Server コンピューターのディレクトリ。 設定を変更、 *%temp%* 環境変数マッピング中に、ファイル システムにサイズの大きいメッセージをバッファリングするときにパフォーマンスを向上させるために非システムのディスクにします。  
   
 2.  オーケストレーションでのマップの使用を最小限に抑えます。  
   

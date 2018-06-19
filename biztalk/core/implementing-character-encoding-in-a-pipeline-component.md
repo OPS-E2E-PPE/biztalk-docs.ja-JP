@@ -1,18 +1,18 @@
 ---
-title: "パイプライン コンポーネントの文字エンコーディングを実装する |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン コンポーネントの文字エンコーディングを実装する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components [custom], examples
 - pipeline components [custom], code samples
 - pipeline components [custom], encoding
 ms.assetid: 862b56da-ec14-41f9-b63c-42d81124e167
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257050"
 ---
 # <a name="implementing-character-encoding-in-a-pipeline-component"></a>パイプライン コンポーネントの文字エンコーディングを実装します。
 カスタム文字エン コードをサポートする Microsoft .NET Framework から派生することによってカスタムのエンコード クラスを実装する必要があります**エンコード**クラス、し、カスタムのフラット ファイル パイプライン コンポーネントを作成するには、標準のフラットを継承ファイルの逆アセンブラーやフラット ファイル アセンブラー コンポーネントです。 プロテクト仮想メソッドをオーバーライドすることで、解析エンジンに新しいエンコード インスタンスを指定することができます**FFDasmComp.GetDataReader**次の例で示すようにします。  

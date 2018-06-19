@@ -1,14 +1,14 @@
 ---
-title: "アダプタの変数 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプタの変数 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aeda96bc-5141-4c42-8a29-b0a28bc47aa4
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233882"
 ---
 # <a name="adapter-variables"></a>アダプター変数
 すべてのカスタム アダプターで処理する必要のある変数がいくつか存在します。 これらの変数に代入される値は、アダプターに実装されるカスタム ロジックに影響します。 トランスポート固有またはアプリケーション固有の構成プロパティも、ソリューションのサポートに役立ちます。 このような共通の変数を次の表に示します。 それぞれの変数をカスタム アダプターでサポートするかどうかは個々に決定する必要があります。  

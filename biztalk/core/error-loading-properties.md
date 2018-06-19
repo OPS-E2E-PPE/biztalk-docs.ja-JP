@@ -1,14 +1,14 @@
 ---
-title: "プロパティの読み込みエラー |Microsoft ドキュメント"
-ms.custom: 
+title: プロパティの読み込みエラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 34abc84c-319b-4c0a-ae1f-7ba9a1bf701b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240914"
 ---
 # <a name="error-loading-properties"></a>プロパティの読み込み中にエラーが発生しました
 ## <a name="details"></a>詳細  

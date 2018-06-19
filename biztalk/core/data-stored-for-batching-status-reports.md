@@ -1,14 +1,14 @@
 ---
-title: "データが格納されているバッチの状態レポートの |Microsoft ドキュメント"
-ms.custom: 
+title: データが格納されているバッチの状態レポートの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d55aa0e1-095f-434e-8530-f1a946ad4430
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238594"
 ---
 # <a name="data-stored-for-batching-status-reports"></a>バッチの状態レポート用に格納されるデータ
 ときに、**レポートをオンに**、アグリーメントのプロパティが選択されている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は各バッチ処理のインスタンスの状態を格納します。 このプロパティで使用できる、**全般プロパティ**のページ、**全般** タブで、**アグリーメントのプロパティ** ダイアログ ボックス。 状態は、次のいずれかの値になります。  

@@ -1,11 +1,11 @@
 ---
-title: "展開して、BizTalk アプリケーションの管理 |Microsoft ドキュメント"
-ms.custom: 
+title: 展開して、BizTalk アプリケーションの管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, managing
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - bts06.deployment.application
 - managing, applications
 ms.assetid: d933ad2b-702b-48df-8ef6-a5702d0521e2
-caps.latest.revision: "49"
+caps.latest.revision: 49
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239202"
 ---
 # <a name="deploying-and-managing-biztalk-applications"></a>BizTalk アプリケーションの展開と管理
 ここでは、展開、変更、更新、および展開解除の方法など、BizTalk アプリケーションの管理について説明します。 BizTalk アプリケーションは、BizTalk ビジネス ソリューションを構成する "アイテム" を表示して管理する機能を提供します。 アイテムの例としては、BizTalk アセンブリ、.NET アセンブリ、スキーマ、マップ、バインド、証明書などが挙げられます。  

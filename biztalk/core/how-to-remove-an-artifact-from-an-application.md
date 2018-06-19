@@ -1,11 +1,11 @@
 ---
-title: "アプリケーションからアイテムを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションからアイテムを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - artifacts, deleting
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - modifying, applications
 - deleting, artifacts
 ms.assetid: c528be0b-0b1a-4c5f-acd2-7355da91a253
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254922"
 ---
 # <a name="how-to-remove-an-artifact-from-an-application"></a>アプリケーションからアイテムを削除する方法
 アイテムを削除すると、BizTalk Server データベースから削除され、管理コンソールまたは BTSTask ListApp コマンドで生成されるアプリケーションのアイテムの一覧には表示されなくなります。 アイテムが、Windows レジストリ、グローバル アセンブリ キャッシュ (GAC)、仮想ディレクトリ、またはファイル システムに存在する場合、これらの場所からは削除されません。 BizTalk 管理データベース内にのみ存在する送信ポート、送信ポート グループ、受信ポート、および受信場所の場合、アイテムはすべて削除されます。 背景情報について、次を参照してください[新機能の動作との成果物が追加および削除済み。](../core/what-happens-when-artifacts-are-added-and-removed.md)  

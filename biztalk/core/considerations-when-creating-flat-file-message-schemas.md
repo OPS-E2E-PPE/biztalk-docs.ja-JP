@@ -1,14 +1,14 @@
 ---
-title: "ファイル メッセージ スキーマをフラットを作成する際の考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: ファイル メッセージ スキーマをフラットを作成する際の考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52271b17-4f0b-4286-a462-cd5951ae49aa
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237898"
 ---
 # <a name="considerations-when-creating-flat-file-message-schemas"></a>ファイル メッセージ スキーマをフラットを作成する際の考慮事項
 フラット ファイル メッセージのスキーマの扱いには、さまざまな注意点があります。 フラット ファイルのスキーマ全般に当てはまる注意点のほか、位置指定ベースまたは区切り文字ベースのレコード/フィールドに固有の注意点などが含まれます。 また、特殊文字を通常のデータとして解釈させる方法も考慮する必要があります。 このセクションでは、これらの注意事項に関する情報について説明します。  

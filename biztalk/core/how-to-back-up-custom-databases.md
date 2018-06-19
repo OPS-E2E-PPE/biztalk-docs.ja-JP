@@ -1,18 +1,18 @@
 ---
-title: "カスタム データベースをバックアップする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム データベースをバックアップする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - custom databases
 - customizing, custom databases
 - backing up, custom databases
 ms.assetid: 86bebf3c-968e-4fad-9dab-ced1b04aaac7
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247338"
 ---
 # <a name="how-to-back-up-custom-databases"></a>カスタム データベースのバックアップ方法
 カスタム データベースは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と一緒にインストールされないので、BizTalk Server のバックアップ ジョブによるバックアップ対象のデータベースの既定リストにも含まれていません。 BizTalk Server のバックアップ ジョブでカスタム データベースをバックアップする場合は、そのデータベースを BizTalk Server のバックアップ ジョブに手動で追加する必要があります。  

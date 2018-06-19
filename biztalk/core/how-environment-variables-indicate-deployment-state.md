@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246498"
 ---
 # <a name="how-environment-variables-indicate-deployment-state"></a>環境変数と展開状態の対応関係
 処理前または処理後のスクリプトを呼び出すと、これらのスクリプトでは環境変数 BTAD_ChangeRequestAction、BTAD_InstallMode、および BTAD_HostClass を確認することにより、実行中の展開の状態 (インストール、インポート、削除、アンインストール、インポート ロールバック、インストール ロールバック) が判断されます。  

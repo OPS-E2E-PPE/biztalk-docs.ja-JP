@@ -1,14 +1,14 @@
 ---
-title: "インスタンス メッセージを検証する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: インスタンス メッセージを検証する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f6302c6-b56b-4572-aa76-0f4c4599672a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256794"
 ---
 # <a name="how-to-validate-instance-messages"></a>インスタンス メッセージを検証する方法
 作成したスキーマが正しく構築されているかどうかは、そのスキーマに対して適切な表記になっていることが確認されている、既存のインスタンス メッセージを検証することによってチェックできます。  

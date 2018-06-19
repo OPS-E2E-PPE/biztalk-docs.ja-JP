@@ -1,11 +1,11 @@
 ---
-title: "アクティビティの検索の結果を表示する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アクティビティの検索の結果を表示する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - queries [BAM], activity searches
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - queries [BAM], viewing details
 - Query Builder [BAM portal], viewing results
 ms.assetid: d45cd777-d798-4f3b-ad9a-5121168d7b99
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257730"
 ---
 # <a name="how-to-view-the-results-of-an-activity-search"></a>アクティビティの検索の結果を表示する方法
 ユーザーをクリックして、クエリの結果を表示できます、**クエリの実行**BAM ポータルのコンテンツ フレームの上部のセクションでボタンをクリックします。 クエリの結果に表示されます、**結果**フレームの下部のセクションです。  

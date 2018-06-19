@@ -1,14 +1,14 @@
 ---
-title: "無効なプロジェクトの場所 |Microsoft ドキュメント"
-ms.custom: 
+title: 無効なプロジェクトの場所 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5e5ce915-7a17-4e6f-a683-b7dda4b5b065
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257178"
 ---
 # <a name="invalid-project-location"></a>プロジェクトの場所が無効です
 ## <a name="details"></a>詳細  

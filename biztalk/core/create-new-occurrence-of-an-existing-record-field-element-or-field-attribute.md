@@ -1,14 +1,14 @@
 ---
-title: "既存のレコード、フィールド要素、またはフィールド属性 ノードの新しいインスタンスを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 既存のレコード、フィールド要素、またはフィールド属性 ノードの新しいインスタンスを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 02380f68-056c-47c4-a0d6-61d599a4685d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238178"
 ---
 # <a name="how-to-create-a-new-occurrence-of-an-existing-record-field-element-or-field-attribute-node"></a>既存のレコード、フィールド要素、またはフィールド属性 ノードの新しいインスタンスを作成する方法
 既存の新しいインスタンスを作成する**レコード**、**フィールド要素**、または**フィールド属性**ノードすべてに任意のインスタンスに対して行った変更が反映されるようインスタンス。  

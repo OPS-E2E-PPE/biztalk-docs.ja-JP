@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262906"
 ---
 # <a name="moduleref-modulerefcollection-node"></a>ModuleRef (ModuleRefCollection ノード)
 バインド ファイルの ModuleRef ノードには、バインド ファイルと共にエクスポートされた .NET アセンブリに関する特定の情報が含まれます。 ModuleRef ノードには、カスタム コード、スキーマ、およびオーケストレーションを含むアセンブリの説明などを含めることができます。  

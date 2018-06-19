@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254626"
 ---
 # <a name="how-to-modify-orchestration-throttling-settings"></a>オーケストレーション制限の設定を変更する方法
 BizTalk 設定ダッシュボードを使用して、BizTalk グループ全体で、特定のホストについてオーケストレーションの制限の構成設定を変更できます。 これらの設定は、特定のホストに割り当てられているすべてのホスト インスタンスに適用されます。 このトピックでは、これらの設定を変更する手順を説明します。  

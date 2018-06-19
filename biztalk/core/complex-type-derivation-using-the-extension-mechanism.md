@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22232474"
 ---
 # <a name="complex-type-derivation-using-the-extension-mechanism"></a>拡張メカニズムを使用した複合型の派生
 拡張機能によって派生する複合型は、基本データ型の機能的なスーパーセットです。 名前が示すように、基本データ型に基づいて、拡張する型を定義します。 このトピックでは、2 つの要素 **ShippingAddress** と **BillingAddress** 複合グローバル型に基づきます **GlobalAddrType**します。 **ShippingAddress** だけで定義されている型の **GlobalAddrType**, であるのに対し **BillingAddress** 型を拡張する定義 **GlobalAddrType**します。 別の要素を追加の例では、最後に **BillingAddress**, 、名前付き **部門**, 文字列型および Accounts Payable の既定値を指定しています。  

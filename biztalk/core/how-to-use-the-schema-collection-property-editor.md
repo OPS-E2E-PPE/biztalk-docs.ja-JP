@@ -1,18 +1,18 @@
 ---
-title: "スキーマ コレクション プロパティ エディターを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマ コレクション プロパティ エディターを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, Schema Collection Property Editor
 - Schema Collection Property Editor
 - pipelines, Schema Collection Property Editor
 ms.assetid: 1f0c0710-8a7c-4076-ab87-e6b8b9a928a8
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256298"
 ---
 # <a name="how-to-use-the-schema-collection-property-editor"></a>スキーマ コレクション プロパティ エディターを使用する方法
 スキーマ コレクション プロパティ エディターを使用して、パイプライン コンポーネントのスキーマを選択します。  
@@ -29,11 +30,11 @@ ms.lasthandoff: 09/20/2017
   
 1.  スキーマ コレクション プロパティ エディターで、、**利用可能なスキーマ**ボックスで、パイプライン コンポーネントの利用できるようにスキーマを選択します。 複数のスキーマを選択するには、Ctrl キーを押しながらクリックします。  
   
-2.  **[追加]**をクリックします。  
+2.  **[追加]** をクリックします。  
   
      表示され、選択したスキーマ、**追加したスキーマ**ボックス。  
   
-3.  **[OK]**をクリックします。  
+3.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [ネイティブ パイプライン コンポーネントの構成](../core/configuring-native-pipeline-components.md)   

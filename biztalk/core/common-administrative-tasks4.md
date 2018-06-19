@@ -1,18 +1,18 @@
 ---
-title: "一般的な管理 Tasks4 |Microsoft ドキュメント"
-ms.custom: 
+title: 一般的な管理 Tasks4 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - administering, common tasks
 - BizTalk Server, administering
 - tasks, common admistration tasks
 ms.assetid: 7861f2c2-c178-4539-a976-d7a532c19d85
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232298"
 ---
 # <a name="common-administrative-tasks"></a>一般的な管理タスク
 次の表に、BizTalk Server システムの展開および保守に役立つトピックへのリンクを示します。  

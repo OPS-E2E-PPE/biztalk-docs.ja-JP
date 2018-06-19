@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240402"
 ---
 # <a name="error---inputs-to-cumulative-functoid-from-different-parent-records"></a>エラー - 異なる親レコードから累積 Functoid への入力
 **エラー コード**  

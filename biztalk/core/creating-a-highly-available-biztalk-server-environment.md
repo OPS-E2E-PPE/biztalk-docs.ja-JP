@@ -1,11 +1,11 @@
 ---
-title: "高可用性の BizTalk Server 環境を作成する |Microsoft ドキュメント"
-ms.custom: 
+title: 高可用性の BizTalk Server 環境を作成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, high availability
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - clustering, databases
 - installation, availability
 ms.assetid: 758eb3bd-a25b-4863-a4ca-d7a1635f7542
-caps.latest.revision: "54"
+caps.latest.revision: 54
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239402"
 ---
 # <a name="creating-a-highly-available-biztalk-server-environment"></a>高可用性 BizTalk Server 環境の構築
 このセクションのデータと Microsoft での通信に高可用性を実現する方法について説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]多種多様なシステムおよびアプリケーションを統合するときにします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可用性データベースをスケーリングして発行およびホストを別々 に解決できるように、データを処理するホストからデータを分離します。  

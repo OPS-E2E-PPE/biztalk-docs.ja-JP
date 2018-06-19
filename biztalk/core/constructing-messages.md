@@ -1,11 +1,11 @@
 ---
-title: "メッセージの構築 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの構築 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, messages
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - modifying, messages
 - messages, creating
 ms.assetid: c9fc1e97-ff53-42e2-848c-6c8fae7c9122
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237818"
 ---
 # <a name="constructing-messages"></a>メッセージの構築
 オーケストレーションにメッセージを導入する場合は常に、メッセージを受信するか、メッセージ変数に値を割り当てることによって、メッセージを構築します。 使用するオブジェクトの詳細な説明がランタイム エンジンによって認識されるように、構築するメッセージにはメッセージの種類を指定する必要があります。 マルチパート メッセージの種類には、ユーザー定義、.NET クラス、またはスキーマを指定できます。 さまざまな方法でメッセージを構築することができます。 メッセージを作成、間、1 つのメッセージを割り当てる、またはメッセージ内の特定の値を別のメッセージ内の値にマップする変換を使用する .NET クラスを呼び出すことができます。 また、メッセージは、受信アクションによって構築されたり、オーケストレーションがパラメーターとしてメッセージを受け取るときに構築されたりします。  

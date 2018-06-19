@@ -1,14 +1,14 @@
 ---
-title: "受信者メッセージの追跡 (NRR) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信者メッセージの追跡 (NRR) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce30737a-341b-45be-81a0-a7336219185e
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233362"
 ---
 # <a name="configuring-receiver-message-tracking-nrr"></a>受信者メッセージの追跡 (NRR) の構成
 このページの設定では、受信メッセージとその確認 (MDN) を否認不可データベースに格納するかどうかを指定できます。 詳細については、次を参照してください。 [BizTalk Server での AS2 処理](../core/as2-processing-in-biztalk-server.md)です。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  AS2 アグリーメントを作成する」の説明に従って[全般設定の構成 (AS2)](../core/configuring-general-settings-as2.md)です。 既存の AS2 アグリーメントを更新するでアグリーメントを右クリックし、**パーティとビジネス プロファイル** ページで、をクリックして**プロパティ**です。  
   
-2.  一方向アグリーメント タブの下にある**ローカル ホストの設定**セクションで、**受信者メッセージの追跡 (NRR)**です。  
+2.  一方向アグリーメント タブの下にある**ローカル ホストの設定**セクションで、**受信者メッセージの追跡 (NRR)** です。  
   
     > [!NOTE]
     >  受信の否認不可を確実に行うには、メッセージの認証と整合性を保証する必要があります。 メッセージのデジタル署名を使用して認証と整合性を確立することをお勧めします。 結果として、否認不可データベースにメッセージを格納するプロパティのいずれかを選択した場合はメッセージに署名する を選択して、**メッセージに署名する必要があります**プロパティを**検証**ページ。  

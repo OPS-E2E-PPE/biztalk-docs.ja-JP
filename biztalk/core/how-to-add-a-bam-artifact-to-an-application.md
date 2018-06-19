@@ -1,11 +1,11 @@
 ---
-title: "アプリケーションに BAM アイテムを追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションに BAM アイテムを追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, definition files [BAM]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [applications], definition files [BAM]
 - definition files [BAM], managing
 ms.assetid: 86f19030-e510-4527-ba74-10498c361c00
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247426"
 ---
 # <a name="how-to-add-a-bam-artifact-to-an-application"></a>BAM アイテムをアプリケーションに追加する方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、BizTalk アプリケーションに BAM アイテムを追加する方法について説明します。 BAM 定義ファイルを追加しても、その BAM 定義が展開されるわけではありません。 BAM 定義は、アプリケーションの .msi ファイルがインポートされたときに展開されます。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
      例: **C:\My Applications\MyBAMfile.xml**  
   
-7.  完了したら、 **[OK]**をクリックします。  
+7.  完了したら、 **[OK]** をクリックします。  
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用  
   

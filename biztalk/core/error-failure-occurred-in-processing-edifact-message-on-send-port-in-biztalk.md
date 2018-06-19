@@ -1,14 +1,14 @@
 ---
-title: "送信ポートで Edifact メッセージの処理中にエラーが発生しました: 受信者および送信者 id 修飾子の組み合わせのアグリーメントがありません |。Microsoft ドキュメント"
-ms.custom: 
+title: '送信ポートで Edifact メッセージの処理中にエラーが発生しました: 受信者および送信者 id 修飾子の組み合わせのアグリーメントがありません |。Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cffc4705-164f-4779-8f04-c6a2a7f1bbda
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241682"
 ---
 # <a name="a-failure-occurred-in-processing-edifact-message-on-send-port-no-agreement-for-receiver-and-sender-identifier-qualifier-pairs"></a>送信ポートで Edifact メッセージの処理中にエラーが発生しました: 受信者および送信者 id 修飾子の組み合わせのアグリーメントがありません。
 ## <a name="details"></a>詳細  

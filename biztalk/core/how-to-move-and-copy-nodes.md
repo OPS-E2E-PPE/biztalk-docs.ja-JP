@@ -1,14 +1,14 @@
 ---
-title: "移動してノードをコピーする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 移動してノードをコピーする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e4f1ec14-c607-4da3-9139-73a61963b819
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254770"
 ---
 # <a name="how-to-move-and-copy-nodes"></a>移動してノードをコピーする方法
 既存のノードは、スキーマ ツリー内の別の場所に移動できます。 また、既存のノードをコピーして、スキーマ ツリー内の別の場所に貼り付けることによって作業を効率化することもできます。 このトピックでは、ノードの移動やコピーの操作手順について説明します。  

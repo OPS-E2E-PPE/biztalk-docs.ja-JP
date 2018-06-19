@@ -1,11 +1,11 @@
 ---
-title: "ポートの種類を操作する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ポートの種類を操作する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, port types
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - ports, port types
 - port types, one-way
 ms.assetid: 78ac731e-c330-4888-a9ee-10523fef8ed0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257130"
 ---
 # <a name="how-to-work-with-port-types"></a>ポートの種類を操作する方法
 ポートの種類は、通信方式、一連の操作 (要求または応答)、およびこれらの操作の対象となるメッセージの種類で構成されます。 通信方式は、一方向または要求 - 応答 (双方向) を指定できます。また、ポートの種類に定義されるすべての操作で、同じ通信方式を使用する必要があります。 ポートの種類は、方向に依存しないことに注意してください: 個々 のポートの方向を指定します。  

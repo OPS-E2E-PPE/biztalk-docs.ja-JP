@@ -1,14 +1,14 @@
 ---
-title: "パートナーと TPA のインターチェンジの制御番号シーケンスが終了 |Microsoft ドキュメント"
-ms.custom: 
+title: パートナーと TPA のインターチェンジの制御番号シーケンスが終了 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e77c0574-bc51-4690-a7f6-5702f6486f05
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257042"
 ---
 # <a name="interchange-control-number-sequence-exhausted-for-partner-and-tpa"></a>パートナーと TPA のインターチェンジ制御番号のシーケンスが終了しました
 ## <a name="details"></a>詳細  

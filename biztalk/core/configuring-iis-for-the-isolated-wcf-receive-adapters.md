@@ -1,18 +1,18 @@
 ---
-title: "構成の IIS 分離 wcf 受信アダプター |Microsoft ドキュメント"
-ms.custom: 
+title: 構成の IIS 分離 wcf 受信アダプター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive adapters, WCF services
 - WCF services, receive adapters
 - IIS, configuring [WCF receive adapters]
 ms.assetid: 1c6f1561-a7ba-4eb0-8878-bf213ebcd6a6
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233370"
 ---
 # <a name="configuring-iis-for-the-isolated-wcf-receive-adapters"></a>分離 WCF 受信アダプターのための IIS の構成
 BizTalk WCF サービス公開ウィザードを使用して WCF サービスを公開するには、インターネット インフォメーション サービス (IIS)、BizTalk 分離ホスト、および Windows のユーザー グループ アカウントを構成する必要があります。 ここでは、WCF-BasicHttp 受信アダプター、WCF-WSHttp 受信アダプター、WCF-CustomIsolated アダプターなどの分離 WCF 受信アダプターを使用して WCF サービスを公開するための IIS の構成に関連する問題について説明します。 詳細については、IIS で WCF サービスをホストしているを参照してください「IIS でホストしている」 [http://go.microsoft.com/fwlink/?LinkId=75700](http://go.microsoft.com/fwlink/?LinkId=75700)です。  

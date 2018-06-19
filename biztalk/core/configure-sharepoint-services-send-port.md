@@ -1,14 +1,14 @@
 ---
-title: "SharePoint Services 送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SharePoint Services 送信ポートの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 36aadbc2-316f-4e1c-a5a8-b162470acf9e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22235034"
 ---
 # <a name="configure-sharepoint-services-send-port"></a>SharePoint Services 送信ポートの構成
 このトピックでは、静的送信ポートと動的送信ポートを比較し、[!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] 送信ポートを作成する手順も示します。 具体的な内容は次のとおりです。  
@@ -58,12 +59,12 @@ ms.lasthandoff: 01/17/2018
     |アダプター Web サービス ポート|**必要な**です。 [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] アダプター Web サービスをホストしている IIS Web サイト上で構成されるポート。<br /><br /> 既定ではポート **80**, 、これは、標準の HTTP ポート。 80 以外のポートを使用するときは、この値を更新します。|  
     |Timeout|**必要な**です。 この値により、アダプターが Web サービスから応答を受信する時間がミリ秒単位で決定されます。<br /><br /> 既定値は **100000 ミリ** (100 秒)。<br /><br /> メッセージ サイズまたはバッチ サイズが予想よりも大きい場合は、この値を増やします。<br /><br /> Windows SharePoint Services アダプターの Web サービスに対するアダプターのランタイム Web サービス呼び出しに適用されるミリ秒単位のタイムアウト値。 アダプターによって推定される平均値よりもメッセージまたはバッチ サイズが大きい場合、この値を大きくする必要があります。|  
     |クライアント OM を使用|**必要な**です。 SharePoint クライアント側オブジェクト モデル (CSOM) またはサービス側オブジェクト モデル (SSOM) のどちらを使用するかを決定します。<br /><br /> 既定値は **はい**します。 設定**はい**で SharePoint CSOM を使用する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] コンピューターでは要件はありません。<br /><br /> 設定**いいえ**にインストールされている web サービスを含む SharePoint SSOM を使用する、[!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)]コンピューター。<br /><br /> [付録 b: Microsoft SharePoint アダプターをインストールして](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md)によって使用される SSOM と CSOM のコンポーネントに固有の情報を提供、[!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)]アダプター。|  
-    |ターゲット フォルダーの URL|**必要な**です。 ドキュメントを格納する [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] フォルダーの URL。 SharePoint サイトへの相対パスを入力します。 たとえば、 **Shared Documents** または **Shared Documents/purchase Orders/**します。 この一覧は送信先としても使用できます たとえば、 **Lists/tasks**します。 一覧を指定すると、メッセージ本文は一覧のアイテムと共に保存されません。 メッセージから抽出される値は、SharePoint 列に昇格されます。 **注:**  SharePoint ドキュメント ライブラリまたはフォルダーの URL を名前と異なることができます。 正しい URL については、Web ブラウザーでアドレスを確認してください。|  
+    |ターゲット フォルダーの URL|**必要な**です。 ドキュメントを格納する [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] フォルダーの URL。 SharePoint サイトへの相対パスを入力します。 たとえば、 **Shared Documents** または **Shared Documents/purchase Orders/** します。 この一覧は送信先としても使用できます たとえば、 **Lists/tasks**します。 一覧を指定すると、メッセージ本文は一覧のアイテムと共に保存されません。 メッセージから抽出される値は、SharePoint 列に昇格されます。 **注:**  SharePoint ドキュメント ライブラリまたはフォルダーの URL を名前と異なることができます。 正しい URL については、Web ブラウザーでアドレスを確認してください。|  
     |Filename|**省略可能な**です。 [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] のファイル名を入力します。<br /><br /> このようなファイル名を入力 **PurchaseOrder0001.xml** または式。 式には、リテラル値、マクロ、および XPATH クエリが混在します。 たとえば、入力 **PurchOrd-%XPATH=//po:PurchaseOrderId%-%MessageID%.xml**します。 ファイル名を指定しないと、元のファイルの名前、オーケストレーションで指定された値、または Msg-%MessageID%.xml が使用されます。 参照してください[Windows SharePoint Services アダプター式](../core/windows-sharepoint-services-adapter-expressions.md)詳細についてはします。 **注:**  リストにメッセージを送信するときにこの Filename の値は無視され、SharePoint 列には保存されません。 代わりに、利用できる 16 列のいずれかを使用して、[タイトル] 列を更新します。 SharePoint の一覧には、[ファイル名] 列はありません。|  
-    |名前空間エイリアス|**省略可能な**です。 名前空間のエイリアスの定義をコンマまたはセミコロンで区切った一覧。<br /><br /> このフィールドは、[ファイル名] フィールドまたは [列値] フィールドに挿入された XPATH クエリで使用される名前空間エイリアスを定義するために使用します。 たとえば、入力 **po 'http://OrderProcess/POrder'、conf = = 'http://OrderProcess/Confirmation' xmlns =""; ipsol = '{d8217cf1-4ef7-4bb5-a30d-765ecb09e0d9}'**します。 **注:**  このプロパティは、WSS を上書きしません。ConfigNamespacesAliases メッセージ コンテキスト プロパティが、オーケストレーションによって定義されます。 その代わり、2 つの値が結合されます。|  
+    |名前空間エイリアス|**省略可能な**です。 名前空間のエイリアスの定義をコンマまたはセミコロンで区切った一覧。<br /><br /> このフィールドは、[ファイル名] フィールドまたは [列値] フィールドに挿入された XPATH クエリで使用される名前空間エイリアスを定義するために使用します。 たとえば、入力 **po 'http://OrderProcess/POrder'、conf = = 'http://OrderProcess/Confirmation' xmlns =""; ipsol = '{d8217cf1-4ef7-4bb5-a30d-765ecb09e0d9}'** します。 **注:**  このプロパティは、WSS を上書きしません。ConfigNamespacesAliases メッセージ コンテキスト プロパティが、オーケストレーションによって定義されます。 その代わり、2 つの値が結合されます。|  
     |Overwrite|**必要な**です。 ファイルが存在する場合、そのファイルを上書きするかどうかを決定します。<br /><br /> 既定値は **いいえ**します。 次のオプションがあります。<br /><br /> -   **いいえ**: エラーが発生し、同じ名前のファイルが存在する場合は、メッセージを中断します。<br />-   **オーケストレーション**: 同じ名前のファイルが存在する場合は、オーケストレーションで定義されている値を使用します。<br />-   **名前を変更**: 同じ名前のファイルが存在する場合は、新しいファイルの名前を変更します。<br />-   **[はい]**: 同じ名前を持つ場合は、既存のファイルを上書きします。<br />     設定すると **はい**, 、多数の同じ名前を持つメッセージを送信するイベント ビューアーの SharePoint エラーが発生します。 このエラーによるアダプターへの影響はなく、送信できなかったメッセージは再試行されます。|  
     |SharePoint サイトの URL|**必要な**です。 [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] Web サイトの完全な URL。 たとえば、http://*SharePointServer*/sites/testsite します。 **注:**  送信ポートまたは受信場所の URI は 256 文字を超えることはできません。|  
-    |Microsoft Office 統合|**必要な**です。 バイナリ メッセージを使用する必要があります **いいえ** または **オプション**します。<br /><br /> 既定値は **オプション**します。 次のオプションがあります。<br /><br /> <ul><li>**いいえ**: ドキュメントを保存 **としてでは、**です。 バイナリ メッセージの場合、このオプションを使用できます。</li><li>**省略可能な**: InfoPath などの Office アプリケーションで自動的に開きますドキュメントを変更します。 処理命令がない場合は、ドキュメントが処理 **としてでは、**です。 バイナリ メッセージの場合、このオプションを使用できます。</li><li>**オーケストレーション**: は、オーケストレーションで定義されている値を使用します。</li><li>**[はい]**: InfoPath などの Office アプリケーションで自動的に開きますドキュメントを変更します。 処理の指示がない場合、メッセージは保留されます。<br /><br />     設定すると **はい**, 、次のプロパティのペアの少なくとも 1 つが必要。<br /><br /> <ul><li>*テンプレート ドキュメント ライブラリ* と *テンプレート名前空間列*</li><li>*テンプレート フォールバック ドキュメント ライブラリ* と *テンプレート フォールバック名前空間列*</li></ul></li><li>**はい (InfoPath フォーム ライブラリ)**: InfoPath などの Office アプリケーションで自動的に開きますフォーム ライブラリに InfoPath ソリューションが存在する場合、ドキュメントが変更されます。 フォーム ライブラリにソリューションがない場合、メッセージは保留されます。</li></ul>|  
+    |Microsoft Office 統合|**必要な**です。 バイナリ メッセージを使用する必要があります **いいえ** または **オプション**します。<br /><br /> 既定値は **オプション**します。 次のオプションがあります。<br /><br /> <ul><li>**いいえ**: ドキュメントを保存 **としてでは、** です。 バイナリ メッセージの場合、このオプションを使用できます。</li><li>**省略可能な**: InfoPath などの Office アプリケーションで自動的に開きますドキュメントを変更します。 処理命令がない場合は、ドキュメントが処理 **としてでは、** です。 バイナリ メッセージの場合、このオプションを使用できます。</li><li>**オーケストレーション**: は、オーケストレーションで定義されている値を使用します。</li><li>**[はい]**: InfoPath などの Office アプリケーションで自動的に開きますドキュメントを変更します。 処理の指示がない場合、メッセージは保留されます。<br /><br />     設定すると **はい**, 、次のプロパティのペアの少なくとも 1 つが必要。<br /><br /> <ul><li>*テンプレート ドキュメント ライブラリ* と *テンプレート名前空間列*</li><li>*テンプレート フォールバック ドキュメント ライブラリ* と *テンプレート フォールバック名前空間列*</li></ul></li><li>**はい (InfoPath フォーム ライブラリ)**: InfoPath などの Office アプリケーションで自動的に開きますフォーム ライブラリに InfoPath ソリューションが存在する場合、ドキュメントが変更されます。 フォーム ライブラリにソリューションがない場合、メッセージは保留されます。</li></ul>|  
     |テンプレート ドキュメント ライブラリ|**必要な*のみ*とき*テンプレート Namespace 列*が設定されます**です。 InfoPath ソリューションを格納する SharePoint ドキュメント ライブラリ。 たとえば、**マイ ソリューション**です。 アダプターが検索、*テンプレート ドキュメント ライブラリ*一致する InfoPath ソリューションです。 ソリューションが見つからない場合に、アダプター検索、 *テンプレート フォールバック ドキュメント ライブラリ*します。 **注:**  、 *テンプレート ドキュメント ライブラリ* 次が含まれる少なくとも 1 つの"1 行のテキスト"の SharePoint 列が必要です。 <ul><li>InfoPath ソリューションで開かれる XML ドキュメントの名前空間およびルート ノード</li><li>または、XML ドキュメントのルート ノード</li></ul> 詳細については、次を参照してください。[チュートリアル: モジュール 2 - Windows SharePoint Services アダプターと Office の統合](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md)です。|  
     |テンプレート フォールバック ドキュメント ライブラリ|**必要な*のみ*とき*テンプレート フォールバック Namespace 列*が設定されます**です。 InfoPath ソリューションを格納する SharePoint ドキュメント ライブラリ。 たとえば、**テンプレート**です。<br /><br /> ソリューションが見つからない場合、*テンプレート ドキュメント ライブラリ*、アダプターはでは見えます*テンプレート フォールバック ドキュメント ライブラリ*一致する InfoPath ソリューションです。 *テンプレート フォールバック ドキュメント ライブラリ* と *テンプレート ドキュメント ライブラリ* フィールドは、2 つのセットの InfoPath ソリューションで使用できます。 すべての一般的な目的に対応する汎用の InfoPath ソリューションと、特定のパートナーで使用する特殊な InfoPath ソリューションがあります。 *テンプレート フォールバック ドキュメント ライブラリ* フィールドは、汎用的なソリューションを指す必要があり、 *テンプレート ドキュメント ライブラリ* その特定のパートナーの特殊な解決策 をポイントする必要があります。 **注:**  *テンプレート フォールバック ドキュメント ライブラリ* 次が含まれる少なくとも 1 つの"1 行のテキスト"の SharePoint 列が必要です。 <ul><li>InfoPath ソリューションで開かれる XML ドキュメントの名前空間およびルート ノード</li><li>または、XML ドキュメントのルート ノード</li></ul> 詳細については、次を参照してください。[チュートリアル: モジュール 2 - Windows SharePoint Services アダプターと Office の統合](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md)です。|  
     |テンプレート フォールバック名前空間列|**必要な*のみ*とき*テンプレート フォールバック ドキュメント ライブラリ*が設定されます**です。 InfoPath ソリューションの名前空間を格納する SharePoint ドキュメント ライブラリ。 たとえば、 **myNamespace**します。 **注:**  このフィールドは大文字小文字を区別します。|  
@@ -71,7 +72,7 @@ ms.lasthandoff: 01/17/2018
     |SharePoint オンライン パスワード|**省略可能な**です。 SharePoint オンライン アカウントのパスワード。|  
     |SharePoint オンライン ユーザー名|**省略可能な**です。 SharePoint オンライン アカウントのユーザー名。|  
     |[列 `n`]|**省略可能な**です。 存在する SharePoint 列、 *先のドキュメント ライブラリ*します。 指定されたまたはメッセージから抽出された値を持つこの列を更新、 *列の値* フィールドです。 **注:**  最大で 16 個の列を指定することができます。 このフィールドでは、大文字と小文字が区別されます。|  
-    |[列 `n` の値]|**省略可能な**です。 このメッセージに設定する列の値を入力します。 "Purchase Order" のようなリテラル値または式を入力できます。 式には、リテラル値、マクロ、および XPATH クエリを混在させることができます。 たとえば、入力 **"%xpath=//po:poamount%"、"%sendingorchestrationid%"**します。 **注:**  最大で 16 個の列を指定することができます。|  
+    |[列 `n` の値]|**省略可能な**です。 このメッセージに設定する列の値を入力します。 "Purchase Order" のようなリテラル値または式を入力できます。 式には、リテラル値、マクロ、および XPATH クエリを混在させることができます。 たとえば、入力 **"%xpath=//po:poamount%"、"%sendingorchestrationid%"** します。 **注:**  最大で 16 個の列を指定することができます。|  
   
 5.  クリックして **OK** 設定を保存します。  
   

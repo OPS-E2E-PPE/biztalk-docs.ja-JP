@@ -1,11 +1,11 @@
 ---
-title: "ボキャブラリの定義を変更する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ボキャブラリの定義を変更する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - vocabularies, facts
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - vocabularies, definitions
 - vocabularies, modifying
 ms.assetid: 866bb9b9-34e1-4a05-a84e-540c7f7fae3b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254170"
 ---
 # <a name="how-to-modify-vocabulary-definitions"></a>ボキャブラリの定義を変更する方法
 ボキャブラリの定義ウィザードを使用して、未公開バージョンのボキャブラリに関する、ボキャブラリの定義を変更できます。ボキャブラリの定義ウィザードで、表示名または表示名に関連するバインドを変更します。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  [ファクト エクスプ ローラー] ウィンドウ、**ボキャブラリ**タブをクリックし、更新する未公開のボキャブラリのバージョンを選択します。  
   
-2.  をクリックして**データベース**、 **XML スキーマ**、または**.NET クラス**です。  
+2.  をクリックして**データベース**、 **XML スキーマ**、または **.NET クラス**です。  
   
 3.  データ ソース階層を移動して、該当するファクトを参照します。  
   

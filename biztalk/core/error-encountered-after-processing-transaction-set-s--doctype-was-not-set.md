@@ -1,14 +1,14 @@
 ---
-title: "DocType が設定されていないために、トランザクション セットの処理後に発生したエラー |Microsoft ドキュメント"
-ms.custom: 
+title: DocType が設定されていないために、トランザクション セットの処理後に発生したエラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a323658c-77d8-4059-aa15-d88c08e5450d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240266"
 ---
 # <a name="error-encountered-after-processing-transaction-sets-because-doctype-was-not-set"></a>DocType が設定されていないため、トランザクション セットの処理後にエラーが発生しました
 ## <a name="details"></a>詳細  

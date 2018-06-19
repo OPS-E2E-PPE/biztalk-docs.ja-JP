@@ -1,14 +1,14 @@
 ---
-title: "送信バッチ設定で受信トランザクションを相互に関連付ける |Microsoft ドキュメント"
-ms.custom: 
+title: 送信バッチ設定で受信トランザクションを相互に関連付ける |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2fbe40f8-7379-42be-b8a7-070ce8a7ce26
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239410"
 ---
 # <a name="correlating-an-incoming-transaction-set-with-an-outgoing-batch"></a>受信トランザクション セットと送信パッチの関連付け
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、バッチ処理オーケストレーションに送信された EDI トランザクション セットを、送信バッチに関連付けることができます。 これを行うには、バッチ処理オーケストレーションに送信されたトランザクション セットの状態レポートのエントリ (BTSInterchangeID) を、オーケストレーションの状態レポートのエントリ (ActivityID) に関連付けます。 この関連付けは、BusinessMessageJournal BAM アクティビティのエントリを使用して行います。 これらのエントリは、バッチ処理オーケストレーションが、バッチ要素の受信時に作成します。  

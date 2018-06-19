@@ -1,18 +1,18 @@
 ---
-title: "Excel 用 BAM アドインを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Excel 用 BAM アドインを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM views, creating [Excel add-in]
 - Excel add-in [BAM], using templates
 - Excel add-in [BAM], creating BAM views
 ms.assetid: 8242f3c0-b14d-411b-b401-c1d18258ee7a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256186"
 ---
 # <a name="how-to-use-the-bam-add-in-for-excel"></a>Excel 用 BAM アドインを使用する方法
 Excel 用 BAM アドインのテンプレートを使用して BAM ビューを定義するには、次の手順に従います。  

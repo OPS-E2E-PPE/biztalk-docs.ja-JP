@@ -1,17 +1,17 @@
 ---
-title: "リアルタイム集計の定義 |Microsoft ドキュメント"
-ms.custom: 
+title: リアルタイム集計の定義 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - real-time data, aggregating
 - aggregations [BAM], real-time data
 ms.assetid: cb3d7124-1663-4af2-9540-4171cc51568a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238682"
 ---
 # <a name="defining-real-time-aggregations"></a>リアルタイム集計の定義
 場合によっては、多次元集計の特定のスライスはので時間を区別することをリアルタイムで使用することです。 たとえば、生鮮食料品を販売する業者では、配送の各段階での製品数量の集計をリアルタイムで利用できるようにする必要があります。 同時に、代表的な顧客の年齢などの他の集計を、ビジネス インテリジェンス分析のために月末にのみ実行する必要がある場合もあります。  

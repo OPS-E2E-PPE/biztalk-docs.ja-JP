@@ -1,11 +1,11 @@
 ---
-title: "送信ポートまたは送信ポート グループを停止する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートまたは送信ポート グループを停止する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [send ports], stopping
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - stopping, send port groups
 - send ports, stopping
 ms.assetid: a7a5eab3-34fe-4417-900a-c37ec16ec009
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255322"
 ---
 # <a name="how-to-stop-a-send-port-or-send-port-group"></a>送信ポートまたは送信ポート グループを停止する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートまたは送信ポート グループを停止する方法について説明します。 送信ポートまたは送信ポート グループを停止すると、それ以降、メッセージは処理されなくなります。 BizTalk Server は、停止された送信ポートまたは送信ポート グループに対する、すべてのアクティベーション メッセージを中断します。 ただし、送信ポート グループを停止しても、そこに含まれる個々の送信ポートの状態は変わりません。  

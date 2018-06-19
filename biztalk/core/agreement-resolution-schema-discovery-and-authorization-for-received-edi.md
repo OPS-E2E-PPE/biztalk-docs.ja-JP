@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22234234"
 ---
 # <a name="agreement-resolution-schema-discovery-and-authorization-for-received-edi-messages"></a>受信した EDI メッセージのアグリーメントの解決、スキーマ探索、および認証
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が EDI メッセージを受信すると、そのメッセージの処理方法を決定するために、EDI 受信パイプラインによって取引先アグリーメント解決、スキーマ探索、および認証のプロセスが実行されます。  

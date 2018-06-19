@@ -1,17 +1,17 @@
 ---
-title: "ビジネス プロセス管理ソリューションの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス プロセス管理ソリューションの展開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, process management solution tutorial
 - process management solution tutorial, deploying
 ms.assetid: e033e0cd-0333-4f16-a4a0-eaae9ce98fcc
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239442"
 ---
 # <a name="deploying-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションの展開
 ビジネス プロセス管理 (BPM) ソリューションは、BizTalk アプリケーションのプロセス マネージャを構築する方法の 1 つです。 このソリューションでは、1 つのコンポーネントを使用して、注文処理に含まれる一連のステージを選択および制御します。 ソリューションが注文を取得: 新しいサービス、アップグレード、またはサービスの終了の可能性もあります-ログの記録、および処理するため渡す前に、順序を確認します。 注文処理は、注文を扱う 1 つ以上のステージで構成されます。 処理が終わったら、元の注文要求に応答を返します。  

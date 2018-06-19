@@ -1,14 +1,14 @@
 ---
-title: "ローカル ホスト設定の構成 (EDIFACT トランザクション セットの設定) |Microsoft ドキュメント"
-ms.custom: 
+title: ローカル ホスト設定の構成 (EDIFACT トランザクション セットの設定) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f7c9cb9-7b4b-41de-a3f3-c0519b18673c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234202"
 ---
 # <a name="configuring-local-host-settings-edifact-transaction-set-settings"></a>ローカル ホストの設定の構成 (EDIFACT トランザクション セットの設定)
 受信したインターチェンジを処理するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はインターチェンジの処理および検証に使用するスキーマを決定する必要があります。 この場合、スキーマに関連付けられたターゲット名前空間および使用するスキーマを決定します。 パーティ アグリーメントに関するこのページで、ターゲット名前空間の決定に使用するプロパティを入力します。 BizTalk Server が、スキーマを決定する方法が説明されている[アグリーメントの解決、スキーマ探索、および受信した EDI メッセージの承認](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md)です。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  トランザクションの一部が設定した場合、検証の設定をセットとして**末尾の区切り記号のポリシー**に**オプション**または**必須**を選択できます**空を作成末尾の区切り記号のタグで XML**して、インターチェンジの送信者が末尾の区切り記号に空の XML タグが含まれます。  
   
-4.  選択**小数点区切り文字として使用してドット (.)**できるようにする BizTalk Server では、10 進数を含むインターチェンジから作成された XML メッセージにドット (.) を含めます。  
+4.  選択**小数点区切り文字として使用してドット (.)** できるようにする BizTalk Server では、10 進数を含むインターチェンジから作成された XML メッセージにドット (.) を含めます。  
   
 5.  **カスタマイズ Target Namespace**セクションで、次の操作します。  
   

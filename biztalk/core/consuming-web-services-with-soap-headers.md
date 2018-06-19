@@ -1,11 +1,11 @@
 ---
-title: "SOAP ヘッダーで Web サービスの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP ヘッダーで Web サービスの使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP headers, consuming
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Web services, SOAP headers
 - SOAP headers, Web services
 ms.assetid: c2dfe7d8-e2f0-4bc6-b79c-354d06a7ffd6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237810"
 ---
 # <a name="consuming-web-services-with-soap-headers"></a>SOAP ヘッダーで Web サービスの使用
 定義済み SOAP ヘッダーで Web サービスを使用した後、これらのヘッダーは、コンテキスト プロパティとしてオーケストレーションおよびパイプライン コンポーネントで使用できるようになります。 これらのコンテキスト プロパティには、SOAP ヘッダーの文字列表現が含まれています。 Web サービスの定義済み SOAP ヘッダーごとに、SOAP ヘッダーのルート要素に対応する名前を使用してコンテキスト プロパティを作成できます。 定義済みのすべての SOAP ヘッダー コンテキスト プロパティが、 **http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**名前空間。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247362"
 ---
 # <a name="how-to-add-parameters-to-orchestrations"></a>オーケストレーションにパラメーターを追加する方法
 [オーケストレーションの種類] ウィンドウでは、オーケストレーションが受け取るパラメーターを指定できます。 オーケストレーションは、次の項目をパラメーターとして受け取ることができます。  

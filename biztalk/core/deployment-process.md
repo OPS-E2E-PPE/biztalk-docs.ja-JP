@@ -1,11 +1,11 @@
 ---
-title: "展開プロセス |Microsoft ドキュメント"
-ms.custom: 
+title: 展開プロセス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, deploying
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - SSO, LogonExternalUser test
 - SSO, security
 ms.assetid: 7dd4c022-c70b-467a-bf94-dc4ac6029f81
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240666"
 ---
 # <a name="deployment-process"></a>展開プロセス
 次の手順は、エンタープライズ シングル サインオンの、セキュリティで保護された展開の概要です。 SQL Server で実行する操作の詳細な手順については、SQL Server のドキュメントを参照してください。  
@@ -32,33 +33,33 @@ ms.lasthandoff: 09/20/2017
   
     -   **[名前]:** ORCH.com  
   
-    -   **方向:**双方向  
+    -   **方向:** 双方向  
   
-    -   **辺:**このドメインのみ  
+    -   **辺:** このドメインのみ  
   
-    -   **出力方向の信頼認証レベル--ローカル ドメイン:**認証の選択  
+    -   **出力方向の信頼認証レベル--ローカル ドメイン:** 認証の選択  
   
-    -   **パスワード:**のパスワードを選択  
+    -   **パスワード:** のパスワードを選択  
   
     -   **出力方向の信頼の確認:** [はい]  
   
-    -   **入力方向の信頼の確認:**なし  
+    -   **入力方向の信頼の確認:** なし  
   
 2.  ORCH.com ドメイン コントローラで新しい信頼ウィザードを実行し、次のプロパティを指定した信頼関係を作成します。  
   
     -   **[名前]:** SQL.com  
   
-    -   **方向:**双方向  
+    -   **方向:** 双方向  
   
-    -   **辺:**このドメインのみ  
+    -   **辺:** このドメインのみ  
   
-    -   **出力方向の信頼認証レベル--ローカル ドメイン:**認証の選択  
+    -   **出力方向の信頼認証レベル--ローカル ドメイン:** 認証の選択  
   
     -   **パスワード:** ORCH.com のパスワードと同じである必要があります  
   
     -   **出力方向の信頼の確認:** [はい]  
   
-    -   **入力方向の信頼の確認:**なし  
+    -   **入力方向の信頼の確認:** なし  
   
 3.  ORCH.com ドメイン コントローラで、SQL.com からの着信に対してドメイン レベルの信頼関係を設定します。  
   

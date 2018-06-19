@@ -1,14 +1,14 @@
 ---
-title: "単一のメッセージにインターチェンジの複数の受信を有効化 |Microsoft ドキュメント"
-ms.custom: 
+title: 単一のメッセージにインターチェンジの複数の受信を有効化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c98bcd2e-495a-49d8-a471-6e23b1e161f9
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240834"
 ---
 # <a name="enabling-the-receiving-of-multiple-interchanges-in-a-single-message"></a>単一メッセージ内の複数インターチェンジの受信を可能にする
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、複数のインターチェンジを含むメッセージを処理できます。 X12 メッセージには、複数の ISA ヘッダーと IEA トレーラーが含まれています。 EDIFACT メッセージには、複数の UNA/UNB ヘッダーと UNZ トレーラーが含まれています。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  **パイプラインの構成**ダイアログ ボックスで、設定、 **DetectMID**パイプライン プロパティを**True**です。  
   
-4.  をクリックして**[ok]**、をクリックして**OK**もう一度です。  
+4.  をクリックして **[ok]**、をクリックして**OK**もう一度です。  
   
 ## <a name="see-also"></a>参照  
  [EDI ソリューションのポートを構成します。](../core/configuring-ports-for-an-edi-solution.md)

@@ -1,11 +1,11 @@
 ---
-title: "Web サービスの配列を使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスの配列を使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP adapters, Web services
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - orchestrations, Web services
 - orchestrations, Web ports
 ms.assetid: 29ecaaed-aa8a-4cf9-a7c8-4b0d6dd412ac
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249898"
 ---
 # <a name="how-to-consume-web-service-arrays"></a>方法: Web サービスの配列を使用する
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、BizTalk オーケストレーションから Web サービスで公開される配列を使用できます。  
@@ -51,9 +52,9 @@ ms.lasthandoff: 09/20/2017
   
     -   ドラッグ、**ポート**を起動するオーケストレーション デザイナーで、ツールボックスから図形をポートのいずれかを表示、**ポート構成ウィザード**です。 をクリックして、**次**ボタンをクリックして、**ポート構成ウィザード**を表示する、**ポートのプロパティ**ダイアログ。  
   
-    -   値を入力して、**名前**テキスト ボックスに、ポートを特定し、をクリックして、 **[次へ]**を表示するボタン、**ポートの種類を選択**ダイアログ。  
+    -   値を入力して、**名前**テキスト ボックスに、ポートを特定し、をクリックして、 **[次へ]** を表示するボタン、**ポートの種類を選択**ダイアログ。  
   
-    -   オプションを選択して**既存のポートの種類を使用して**、Web に対応する型が参照を追加して、をクリックして、Web ポートを選択して、 **[次へ]**を表示するボタン、**ポートのバインド**ダイアログ。  
+    -   オプションを選択して**既存のポートの種類を使用して**、Web に対応する型が参照を追加して、をクリックして、Web ポートを選択して、 **[次へ]** を表示するボタン、**ポートのバインド**ダイアログ。  
   
     -   **ポートのバインド**ダイアログを適切な選択**ポートのバインド**オプションし、をクリックして、**次** ボタン、をクリックして、**完了**ボタンをクリックします。 これで、オーケストレーション デザイナーに、Web サービスでサポートされる操作を含む Web ポートが表示されます。  
   

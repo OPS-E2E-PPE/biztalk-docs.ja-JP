@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255058"
 ---
 # <a name="how-to-save-a-pipeline"></a>パイプラインを保存する方法
 パイプラインを保存すると、パイプライン構成に関する情報が .btp ファイルに保存されます。パイプライン構成に関しては、次のような情報があります。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-save-a-pipeline"></a>パイプラインを保存するには  
   
-1.  **[ファイル]** メニューの **[保存]**をクリックします。  
+1.  **[ファイル]** メニューの **[保存]** をクリックします。  
   
      - または -  
   
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  **ファイルに名前を付けて** ダイアログ ボックスで、**ファイル**名フィールドに、パイプラインの名前を入力します。 入力しない場合は、既定の名前が使用されます。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [新しいパイプラインを作成する方法](../core/how-to-create-a-new-pipeline.md)   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248474"
 ---
 # <a name="how-to-add-scripting-functoids-to-a-map"></a>マップにスクリプト Functoid を追加する方法
 **スクリプト**functoid では、実行時に使用できない機能を実行するカスタム スクリプトまたはコードを使用することができます。 使用しての実行時に COM オブジェクトを呼び出すなど、**スクリプト**functoid し、独自のカスタム スクリプトを記述します。  
@@ -84,7 +85,7 @@ ms.lasthandoff: 09/20/2017
     > [!IMPORTANT]
     >  複数の関数を含むスクリプトを作成すると、最初の関数がメイン関数または主要な関数として扱われます。他の関数は、主要な関数の実行時にのみ呼び出されます。  
   
-     **[OK]**をクリックします。  
+     **[OK]** をクリックします。  
   
 7.  スクリプトまたは外部アセンブリの関連付けられているメソッドに入力パラメーターが必要な場合は、基本的な Functoid の処理と同様に、適切な数および種類の入力リンクを作成します。  
   

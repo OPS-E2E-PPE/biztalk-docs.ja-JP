@@ -1,14 +1,14 @@
 ---
-title: "シーケンス グループ、グループの選択、またはすべてのグループ ノードを挿入する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: シーケンス グループ、グループの選択、またはすべてのグループ ノードを挿入する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 19aee400-1369-4310-b1b4-1bfeb2643236
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254842"
 ---
 # <a name="how-to-insert-a-sequence-group-choice-group-or-all-group-node"></a>シーケンス グループ、グループの選択、またはすべてのグループ ノードを挿入する方法
 BizTalk エディターは、要素の次の 3 つの種類のグループ ノードをサポートしています:**シーケンス グループ**、**選択肢グループ**、および**すべてのグループ**です。 これらの異なるグループ ノードを使用して、対応するインスタンス メッセージのグループの子ノードにさまざまな制約を適用できます。 これらの各グループにおける制約の詳細については、Web 上で XSD (XML Schema Definition) に関する情報を参照してください。 この情報へのリンクを参照してください。 [Web 上の XSD リソース](../core/xsd-resources-on-the-web.md)です。  

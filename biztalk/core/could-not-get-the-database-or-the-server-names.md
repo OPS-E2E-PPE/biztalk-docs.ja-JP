@@ -1,14 +1,14 @@
 ---
-title: "データベースまたはサーバー名を取得できませんでした |Microsoft ドキュメント"
-ms.custom: 
+title: データベースまたはサーバー名を取得できませんでした |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0590f43b-0aec-491f-bca5-c50ab12552a5
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237850"
 ---
 # <a name="could-not-get-the-database-or-the-server-names"></a>データベース名またはサーバー名を取得できませんでした
 ## <a name="details"></a>詳細  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  右クリック**BizTalk グループ**です。  
   
-4.  **[プロパティ]**をクリックします。  
+4.  **[プロパティ]** をクリックします。  
   
 5.  左側のウィンドウでをクリックして**全般**です。  
   

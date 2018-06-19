@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253914"
 ---
 # <a name="how-to-enrich-bam-data-using-lookups"></a>照合を使用して BAM データを強化する方法
 操作時に使用できるデータに、レポート処理で必要となるデータがすべて含まれているとは限らない場合があります。 たとえば、実行時に、ProductID があっても ProductName がない場合があります。 BAM アクティビティは実際のデータ収集方法に依存しない抽象概念を表すので、レポートに最終的に表示するデータとして "ProductName" という名前の項目を含める必要があります。 この項目は、他の項目と同様に、マイルストーン グループ、期間、ディメンション、メジャーなどの解釈型の構成要素で使用できます。 ProductName が実行時に使用できないので、ProductID など、照合の実行に必要な追加データを取得しなければなりません。  

@@ -1,11 +1,11 @@
 ---
-title: "スキーマのスキーマ定義 (XSD) を表示する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマのスキーマ定義 (XSD) を表示する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, viewing
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - schemas, schema definition (XSD)
 - managing [schemas], schema definition (XSD)
 ms.assetid: 21b6d9e6-5737-4334-9fe6-15ae01f90c0d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256442"
 ---
 # <a name="how-to-view-the-schema-definition-xsd-of-a-schema"></a>スキーマのスキーマ定義 (XSD) を表示する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、スキーマのスキーマ定義 (XSD) を表示する方法について説明します。 これは、スキーマ検証エラーのトラブルシューティングを行ったり、正しいスキーマが展開されていることを確認したりするために必要です。  

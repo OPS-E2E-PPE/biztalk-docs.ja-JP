@@ -1,17 +1,17 @@
 ---
-title: "カスタム コードを使用してオーケストレーションのデバッグ |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム コードを使用してオーケストレーションのデバッグ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, debugging
 - building, debugging
 ms.assetid: 94e569fa-8dea-4027-abb5-37b4a8015621
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239890"
 ---
 # <a name="debugging-orchestrations-by-using-custom-code"></a>カスタム コードを使用したオーケストレーションのデバッグ
 出力を書き込むことができる場合、オーケストレーションは、テスト環境で動作にプロトタイプを作成し、メッセージ フィールドとオーケストレーション変数の値を変更する、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で次のコードを使用して、コンソール**式**図形。  
@@ -45,9 +46,9 @@ System.Diagnostics.Debug.WriteLine(iResult);
   
 3.  クリックして、**デバッグ**メニュー**プロセスにアタッチしています.** 表示する、**プロセスにアタッチする**ダイアログ。  
   
-4.  クリックして、**を選択しています.** ボタンの横に、**にアタッチ:**を表示するテキスト ボックス、**コードの種類の選択**ダイアログ。  
+4.  クリックして、**を選択しています.** ボタンの横に、**にアタッチ:** を表示するテキスト ボックス、**コードの種類の選択**ダイアログ。  
   
-5.  オプションを選択する をクリックします**コードの種類:**を選択し、**マネージ**をクリックし、 **ok**ボタンをクリックします。  
+5.  オプションを選択する をクリックします**コードの種類:** を選択し、**マネージ**をクリックし、 **ok**ボタンをクリックします。  
   
 6.  クリックして選択、 **BTSNTSvc.exe**からプロセス**選択可能なプロセス**をクリックし、**アタッチ**ボタンをクリックします。  
   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240362"
 ---
 # <a name="error---output-instance-file-not-valid"></a>エラー - 出力インスタンス ファイルが有効ではありません。
 **説明**  

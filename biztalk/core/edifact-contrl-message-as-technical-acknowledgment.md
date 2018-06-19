@@ -1,14 +1,14 @@
 ---
-title: "技術確認としての EDIFACT CONTRL メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: 技術確認としての EDIFACT CONTRL メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6f2a7564-dbd3-48d0-b0a6-a77a0560459f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242514"
 ---
 # <a name="edifact-contrl-message-as-technical-acknowledgment"></a>技術確認としての EDIFACT CONTRL メッセージ
 ビジネス プロファイル設定または取引先アグリーメント (2 つのビジネス プロファイル間でアグリーメントが定義されていない場合はフォールバック アグリーメント) で技術確認を生成するように選択した場合、またはメッセージの UNB9 フィールドが "2" に設定されている場合、技術確認として CONTRL メッセージが生成されます。 この確認では、インターチェンジの受信結果が報告されます。  

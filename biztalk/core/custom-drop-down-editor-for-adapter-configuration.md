@@ -1,14 +1,14 @@
 ---
-title: "アダプター構成のカスタム ドロップダウン エディター |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター構成のカスタム ドロップダウン エディター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a1b0961-652f-42b8-a18a-17abe9542cdd
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238498"
 ---
 # <a name="custom-drop-down-editor-for-adapter-configuration"></a>アダプター構成のカスタム ドロップダウン エディター
 カスタム エディターのコードから派生したエディターを示しています、 **System.Drawing.Design.UITypeEditor**パスワードを入力するためのドロップダウン テキスト ボックスを表示するクラス。 **GetEditStyle**オーバーライド**UIEditorEditStyle.DropDown**ドロップダウン サブコントロールを示すです。 サービス メソッド**DropDownControl**と**CloseDropDown**で作成されたコントロールを管理**CreatePassword**です。  

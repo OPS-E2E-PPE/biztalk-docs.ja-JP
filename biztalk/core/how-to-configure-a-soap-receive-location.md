@@ -1,11 +1,11 @@
 ---
-title: "SOAP 受信場所を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP 受信場所を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [SOAP adapters], virtual directories
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - SOAP adapters, virtual directories
 - receive locations, SOAP adapters
 ms.assetid: 7e348409-9181-47e4-b3c0-c73eb2acffa3
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250162"
 ---
 # <a name="how-to-configure-a-soap-receive-location"></a>SOAP の受信場所を構成する方法
 SOAP の受信場所は、プログラムから、または [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して構成できます。  
@@ -109,11 +110,11 @@ explorer.SaveChanges();
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**仮想ディレクトリと Web サービス .asmx ファイル**|Microsoft BizTalk Web サービス公開ウィザードで作成された .asmx ファイルを示します。<br /><br /> このメッセージの形式は次のようになります。<br /><br /> /PurchaseOrder/POOrchestration.asmx<br /><br /> この場合、.asmx ファイルの完全な場所は http://localhost/PurchaseOrder/POOrchestration.asmx になります。 **注:**の URI を送信ポートまたは受信場所は、256 文字を超えることはできません。|  
+    |**仮想ディレクトリと Web サービス .asmx ファイル**|Microsoft BizTalk Web サービス公開ウィザードで作成された .asmx ファイルを示します。<br /><br /> このメッセージの形式は次のようになります。<br /><br /> /PurchaseOrder/POOrchestration.asmx<br /><br /> この場合、.asmx ファイルの完全な場所は http://localhost/PurchaseOrder/POOrchestration.asmx になります。 **注:** の URI を送信ポートまたは受信場所は、256 文字を超えることはできません。|  
     |**パブリック アドレス**|この受信場所の完全修飾 URI を指定します。 このプロパティの値は、サーバー名と仮想ディレクトリの組み合わせです。 指定した URI は、取引先が [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にメッセージを送信するときに接続するパブリック Web サイトの URL を示す必要があります。<br /><br /> この情報は省略可能であり、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では使用されません。 このパラメーターを使用すると、管理者は、受信場所が関連付けられているパブリック URL を記述できます。|  
     |**シングル サインオンを使用します。**|SOAP アダプターがエンタープライズ シングル サインオンを使用することを示します。 **注:** BizTalk Web サービス公開ウィザードでは、SharePoint Portal Server シングル サインオンを使用することができます。 このプロパティは、エンタープライズ シングル サインオンだけ有効です。|  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 7.  **受信場所のプロパティ** ダイアログ ボックスで、受信場所の構成を完了し、をクリックするには、適切な値を入力して**OK**設定を保存します。 については、**受信場所のプロパティ**ダイアログ ボックスを参照してください[受信場所を作成する方法](../core/how-to-create-a-receive-location.md)です。  
   
@@ -140,7 +141,7 @@ explorer.SaveChanges();
   
 7.  規定の Web サイトを展開し、Web サイトの下にある仮想ディレクトリを表示します。  
   
-8.  ASP.NET 4.0 を使用して、をクリックを更新する仮想ディレクトリを右クリックして**アプリケーションの管理**、クリックして**詳細設定**です。 **アプリケーション プール**フィールドには、選択した仮想ディレクトリの設定、アプリケーション プールが表示されます。 **[OK]**をクリックします。  
+8.  ASP.NET 4.0 を使用して、をクリックを更新する仮想ディレクトリを右クリックして**アプリケーションの管理**、クリックして**詳細設定**です。 **アプリケーション プール**フィールドには、選択した仮想ディレクトリの設定、アプリケーション プールが表示されます。 **[OK]** をクリックします。  
   
 9. インターネット インフォメーション サービス (IIS) マネージャー] ウィンドウで、[**アプリケーション プール**です。 詳細ペインに、サーバーのアプリケーション プールの一覧が表示されます。  
   

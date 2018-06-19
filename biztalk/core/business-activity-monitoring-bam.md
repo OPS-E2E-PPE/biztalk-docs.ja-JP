@@ -1,11 +1,11 @@
 ---
-title: "ビジネス アクティビティ監視 (BAM) |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス アクティビティ監視 (BAM) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, tools
@@ -25,7 +25,7 @@ helpviewer_keywords:
 - BAM, BAM Management utility
 - BAM, processing
 ms.assetid: a8ad48b1-6891-4bbb-b125-27d224e49293
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -34,6 +34,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234786"
 ---
 # <a name="business-activity-monitoring-bam"></a>ビジネス アクティビティ監視 (BAM)
 次の図に、ビジネス アクティビティ監視 (BAM) 機能のアーキテクチャを示します。  

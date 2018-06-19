@@ -1,14 +1,14 @@
 ---
-title: "使用する Web サービスの URI を動的に設定する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 使用する Web サービスの URI を動的に設定する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 95829a28-7898-4757-87cc-40fc99bf707e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254938"
 ---
 # <a name="how-to-dynamically-set-the-uri-of-a-consumed-web-service"></a>使用する Web サービスの URI の動的な設定方法
 使用する Web サービスの Web ポートを作成するときは、ポートの動的バインドを選択できます。 ポートの動的バインドを選択するときは、使用する Web サービスの URI を実行時に設定する必要があります。 選択した URI は、Web ポートの種類の作成時に使用した Web サービスと同じ Web プロキシを持つ Web サービスを呼び出す必要があります。  
@@ -67,15 +68,15 @@ ms.lasthandoff: 09/20/2017
 |**ClientCertificate**|文字列|Secure Sockets Layer (SSL) 証明書の拇印です。<br /><br /> 既定値: 空白|  
 |**UseSSO**|ブール値|この Web ポートがシングル サインオン (SSO) を使用するかどうかを示します。<br /><br /> 既定値: False|  
 |**AffiliateApplicationName**|文字列|この Web ポートが、クライアントの資格情報と引き換えるために使用する SSO アプリケーションの名前です。<br /><br /> 既定値: 空白|  
-|**UseHandlerSetting**|ブール値|この Web ポートが、SOAP 送信ハンドラの HTTP プロキシ設定を使用するかどうかを示します。 **注:**場合、 **UseProxy**コンテキスト プロパティを設定し、 **UseHandlerSetting**コンテキスト プロパティは無視されます。 <br /><br /> 既定値: False|  
-|**UseProxy**|ブール値|この Web ポートで、対象の Web サービスへのアクセスにプロキシ サーバーを使用するかどうかを示します。 **注:**場合、 **UseProxy**コンテキスト プロパティを設定し、 **UseHandlerSetting**コンテキスト プロパティは無視されます。 <br /><br /> 既定値: False|  
+|**UseHandlerSetting**|ブール値|この Web ポートが、SOAP 送信ハンドラの HTTP プロキシ設定を使用するかどうかを示します。 **注:** 場合、 **UseProxy**コンテキスト プロパティを設定し、 **UseHandlerSetting**コンテキスト プロパティは無視されます。 <br /><br /> 既定値: False|  
+|**UseProxy**|ブール値|この Web ポートで、対象の Web サービスへのアクセスにプロキシ サーバーを使用するかどうかを示します。 **注:** 場合、 **UseProxy**コンテキスト プロパティを設定し、 **UseHandlerSetting**コンテキスト プロパティは無視されます。 <br /><br /> 既定値: False|  
 |**ProxyAddress**|文字列|Web サービスの呼び出しに使用する HTTP プロキシのアドレスです。<br /><br /> 既定値: SOAP 送信ハンドラのプロパティから取得します。|  
 |**ProxyPort**|Integer|Web サービスの呼び出しに使用する HTTP プロキシのポートです。<br /><br /> 既定値: SOAP 送信ハンドラのプロパティから取得します。|  
 |**ProxyUsername**|文字列|HTTP プロキシに使用するユーザー名です。<br /><br /> 既定値: SOAP 送信ハンドラのプロパティから取得します。|  
 |**ProxyPassword**|文字列|HTTP プロキシに使用するパスワードです。<br /><br /> 既定値: SOAP 送信ハンドラのプロパティから取得します。|  
 |**ClientConnectionTimeout**|Int32|HTTP クライアント接続のタイムアウト値です。<br /><br /> 既定値: ASP.NET の HTTP 接続タイムアウトの既定値と同じです。|  
 |**型名**|文字列|呼び出す Web メソッドを含むクラスの名前を指定します。<br /><br /> 既定値: 空白|  
-|**MethodName**|文字列|呼び出すクラスのメソッドを指定します。 **注:**を構成する**MethodName**プロパティの静的 SOAP 送信ポートがプログラムで、設定する必要があります**メソッド名**としてに**[後で指定]**で**Web サービス**のタブ、 **SOAP トランスポートのプロパティ**BizTalk Server 管理コンソールのダイアログ ボックス。 詳細については**SOAP トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **SOAP トランスポートのプロパティ ダイアログ ボックス、Web サービス**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。 <br /><br /> 既定値: 空白|  
+|**MethodName**|文字列|呼び出すクラスのメソッドを指定します。 **注:** を構成する**MethodName**プロパティの静的 SOAP 送信ポートがプログラムで、設定する必要があります**メソッド名**としてに **[後で指定]** で**Web サービス**のタブ、 **SOAP トランスポートのプロパティ**BizTalk Server 管理コンソールのダイアログ ボックス。 詳細については**SOAP トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **SOAP トランスポートのプロパティ ダイアログ ボックス、Web サービス**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。 <br /><br /> 既定値: 空白|  
 |**AssemblyName**|文字列|読み込んで実行する .NET 型およびアセンブリを識別します。<br /><br /> 既定値: 空白|  
 |**UnknownHeaders**|文字列|不明な SOAP ヘッダーのシリアル化された一覧を指定します。<br /><br /> 既定値: 空白|  
 |**UserDefined**|文字列|ユーザー定義クラスを定義します。<br /><br /> 既定値: 空白|  

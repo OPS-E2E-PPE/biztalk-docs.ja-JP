@@ -1,14 +1,14 @@
 ---
-title: "AS2 状態レポートに格納されているデータ |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 状態レポートに格納されているデータ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c6aa4077-3768-436b-99b9-d203a86a7e69
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238514"
 ---
 # <a name="data-stored-for-as2-status-reports"></a>AS2 状態レポート用に格納されるデータ
 2 つのレベルのレポートを AS2 状態レポートで使用できます: 最初の場合、**レポートをオンに**、アグリーメントのプロパティが選択されている (から、**全般プロパティ**のページ、**全般**  タブで、**アグリーメントのプロパティ** ダイアログ ボックス)、アグリーメントに対して否認不可データベース ストレージ プロパティが選択されている場合、2 番目です。  

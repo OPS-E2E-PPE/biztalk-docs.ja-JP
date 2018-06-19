@@ -1,11 +1,11 @@
 ---
-title: "アダプターをセキュリティで保護するためのベスト プラクティス |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターをセキュリティで保護するためのベスト プラクティス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, security
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - best practices, security
 - adapters, best practices
 ms.assetid: 004e1a01-b316-4eee-967f-5a806431de2b
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233298"
 ---
 # <a name="best-practices-for-securing-adapters"></a>アダプターをセキュリティで保護するためのベスト プラクティス
 このトピックでは、アダプターのセキュリティに関するベスト プラクティスについて説明します。  
@@ -93,7 +94,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  テキスト ボックスの横にある省略記号 (...) ボタンをクリックして**ログイン名**を表示する、 **[ログインの**] ダイアログ ボックス。  
   
-    5.  [参照] ボタンをクリックすると、入力、 **EDI Subsystem Users**グループ化、およびクリックして**[ok] です。** メッセージが表示されたら、**見つかった複数のオブジェクト**ダイアログ ボックスで、 **EDI Subsystem Users**ログインとクリック**[ok]**です。  
+    5.  [参照] ボタンをクリックすると、入力、 **EDI Subsystem Users**グループ化、およびクリックして **[ok] です。** メッセージが表示されたら、**見つかった複数のオブジェクト**ダイアログ ボックスで、 **EDI Subsystem Users**ログインとクリック **[ok]** です。  
   
     6.  **データベース ユーザー - 新規** ダイアログ ボックスに「 **EDI Subsystem Users**の**ユーザー名** テキスト ボックス をクリック**ok**です。  
   
@@ -118,7 +119,7 @@ ms.lasthandoff: 09/20/2017
   
     6.  クリックして、**追加**をこのグループに BizTalk サービスのユーザー アカウントを追加するボタンをクリックします。  
   
-    7.  **[OK]**をクリックします。  
+    7.  **[OK]** をクリックします。  
   
 -   **BizTalk Server を構成するにはローカル グループを使用する: 場合**  
   
@@ -132,4 +133,4 @@ ms.lasthandoff: 09/20/2017
   
     5.  クリックして、**追加**をこのグループに BizTalk サービスのユーザー アカウントを追加するボタンをクリックします。  
   
-    6.  **[OK]**をクリックします。
+    6.  **[OK]** をクリックします。

@@ -1,11 +1,11 @@
 ---
-title: "XML 逆アセンブラー パイプライン コンポーネントで検証を文書化 |Microsoft ドキュメント"
-ms.custom: 
+title: XML 逆アセンブラー パイプライン コンポーネントで検証を文書化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Validate Document Structure property
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - XML Disassembler [pipeline component], document validation
 - XML Disassembler [pipeline component], warnings
 ms.assetid: feb25033-46d3-48ed-8e1f-0cd123e94149
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239386"
 ---
 # <a name="document-validation-in-the-xml-disassembler-pipeline-component"></a>XML 逆アセンブラー パイプライン コンポーネントにおけるドキュメントの検証
 既定で、XML 逆アセンブラーは、スキーマに対する XML ドキュメントを検証しません。 ただし、設定して XML ドキュメントを検証する XML 逆アセンブラーを構成することができます、**ドキュメント構造の検証**プロパティです。  

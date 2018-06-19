@@ -1,14 +1,14 @@
 ---
-title: "メッセージを動的に変換する式を使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージを動的に変換する式を使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 48387d97-9312-4df5-b614-727ea9035bf8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256938"
 ---
 # <a name="how-to-use-expressions-to-dynamic-transform-messages"></a>メッセージを動的に変換する式の使用方法
 式を使用して、オーケストレーション内のメッセージを動的に変換できます。 XLANG 内から呼び出すことができる変換メソッドを公開する、**メッセージの割り当て**図形の内側、**メッセージの構築**図形です。 これは、同じときに呼び出される、**変換**図形は使用しますが、プログラムによって、オーケストレーション内で指定したマップを使用してメッセージを変換することができます。 これは、種類に関係なくメッセージ処理を行う場合に便利です。 たとえば、あるビジネス プロセスで、受け取った受信メッセージで指定されているパラメーターに基づいて一連のマップの中から受信メッセージの変換用のマップを選択する必要がある場合、式図形内で変換メソッドを使用すると、ビジネス プロセス全体を維持したままこれを実現することができます。  

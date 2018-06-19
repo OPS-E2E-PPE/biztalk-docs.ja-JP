@@ -1,17 +1,17 @@
 ---
-title: "BAM スター スキーマ データベース 1 に移動する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM スター スキーマ データベース 1 に移動する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Star Schema database [BAM], migrating
 - migrating, Star Schema database [BAM]
 ms.assetid: b4a5f8fc-0dc4-4987-b96f-ecd49bd4dba3
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254242"
 ---
 # <a name="how-to-move-the-bam-star-schema-database"></a>BAM スター スキーマ データベースを移動する方法
 ここでは、BAM スター スキーマ データベースを他のサーバーに移動する手順について説明します。  

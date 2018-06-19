@@ -1,14 +1,14 @@
 ---
-title: "動的アダプターの DisplayUI メソッド |Microsoft ドキュメント"
-ms.custom: 
+title: 動的アダプターの DisplayUI メソッド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9183d2ee-4265-4fee-9d1d-7e2462d8ff37
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238674"
 ---
 # <a name="dynamic-adapter-displayui-method"></a>動的アダプターの DisplayUI メソッド
 このメソッドを**IDynamicAdapterConfig**インターフェイスには、カスタム アダプターのカスタム ユーザー インターフェイスが表示されます。 これにより、ユーザーは、選択したサービスに基づいて関連のサポート ファイルを表示、選択し、BizTalk プロジェクトにインポートできます。  

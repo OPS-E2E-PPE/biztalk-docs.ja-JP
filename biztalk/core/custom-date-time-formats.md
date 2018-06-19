@@ -1,14 +1,14 @@
 ---
-title: "カスタムの日付/時刻形式 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタムの日付/時刻形式 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5efbec4-3138-44d7-bc76-f9c21547e1d5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238474"
 ---
 # <a name="custom-date-time-formats"></a>カスタムの日付/時刻書式
 
@@ -35,4 +36,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>参照  
 -  [フィールドに関する考慮事項](../core/field-considerations.md)   
--  **データ型 (すべてのスキーマのノード プロパティ)**と**カスタム日時書式指定 (フラット ファイル スキーマのノード プロパティ)**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+-  **データ型 (すべてのスキーマのノード プロパティ)** と**カスタム日時書式指定 (フラット ファイル スキーマのノード プロパティ)**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22248674"
 ---
 # <a name="how-to-configure-node-hierarchy-matching"></a>ノード階層の照合を構成する方法
 マップにリンクを作成すると、BizTalk マッパーが自動的にコンパイラ リンクを作成して、描画されたリンクが実装されます。 **ターゲット リンク** リンクのプロパティは、BizTalk マッパーによるコンパイラ リンクの描画を制御します。 ここでは、ターゲット リンクを設定する方法を説明します。  

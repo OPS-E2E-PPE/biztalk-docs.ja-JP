@@ -1,14 +1,14 @@
 ---
-title: "送信アダプターの交換パターン |Microsoft ドキュメント"
-ms.custom: 
+title: 送信アダプターの交換パターン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5ad65fb5-640d-4bd2-aabe-946210f58a22
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248354"
 ---
 # <a name="exchange-patterns-for-send-adapters"></a>送信アダプターの交換パターン
 送信アダプターには、BizTalk メッセージング エンジンから、回線で送信されるメッセージが配信されます。 配信されたメッセージは、一方向または双方向のメッセージ交換パターンを使用して送信される場合があります。 この双方向のメッセージ交換パターンを処理するアダプターを送信請求 - 応答アダプターと呼びます。  
@@ -32,9 +33,9 @@ ms.lasthandoff: 09/20/2017
   
  ![](../core/media/io-cpu-bound-threadpools.gif "Io_cpu_bound_threadpools")  
   
- **パフォーマンス ヒント:**最適なパフォーマンスを送信アダプターする必要が非ブロッキングとバッチに注意してください。 BizTalk ファイル アダプターをブロッキング呼び出しを行うバッチ非対応から、非ブロッキング呼び出しを行うバッチ対応に変更すると、パフォーマンスが 3 倍向上します。  
+ **パフォーマンス ヒント:** 最適なパフォーマンスを送信アダプターする必要が非ブロッキングとバッチに注意してください。 BizTalk ファイル アダプターをブロッキング呼び出しを行うバッチ非対応から、非ブロッキング呼び出しを行うバッチ対応に変更すると、パフォーマンスが 3 倍向上します。  
   
- **トラブルシューティングのヒント:**ブロッキング送信ホスト インスタンス全体のパフォーマンスの低下が発生することができます。 場合、アダプターはで過度のブロッキング**TransmitMessage**エンジンのスレッドから他のアダプターにメッセージを配信できなくなります。  
+ **トラブルシューティングのヒント:** ブロッキング送信ホスト インスタンス全体のパフォーマンスの低下が発生することができます。 場合、アダプターはで過度のブロッキング**TransmitMessage**エンジンのスレッドから他のアダプターにメッセージを配信できなくなります。  
   
 ## <a name="non-batched-sends"></a>バッチ化されていない送信  
  バッチ対応アダプターを実装する必要があります**IBTTransmitter**詳しく説明したよう[非同期送信アダプター用のインターフェイス](../core/interfaces-for-an-asynchronous-send-adapter.md)です。 アダプターがメッセージング エンジンに送信する必要がある各メッセージの呼び出しに対する**IBTTransmitter.TransmitMessage**です。 次のオブジェクト間の対話処理図は、一般的なメッセージの送信方法の詳細について示しています。その方法は、次に示す手順で構成されています。  

@@ -1,14 +1,14 @@
 ---
-title: "構成する方法の場所と送受信ポートを BAM WCF インターセプション用 |Microsoft ドキュメント"
-ms.custom: 
+title: 構成する方法の場所と送受信ポートを BAM WCF インターセプション用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 501194dc-427a-4910-88c9-19cf47daeaad
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248442"
 ---
 # <a name="how-to-configure-receive-and-send-locations-and-ports-for-bam-wcf-interception"></a>BAM WCF 傍受のために受信および送信場所とポートを構成する方法
 この手順では、重要な概念をわかりやすく示すために、コンテンツ ベースのルーティング (CBR) のシナリオで受信場所と送信場所を構成します。 ここで示す概念は、[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] サービスとして公開されるオーケストレーションに適用できます。  

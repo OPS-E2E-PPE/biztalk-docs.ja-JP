@@ -1,14 +1,14 @@
 ---
-title: "トランザクション セットの構成一覧 (X12) |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクション セットの構成一覧 (X12) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1f277318-90e9-4ad3-843a-e6128837fa2b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233442"
 ---
 # <a name="configuring-transaction-set-list-x12"></a>トランザクション セットの一覧の構成 (X12)
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、EDI インターチェンジの処理中に常に含めるまたは除外する必要のあるトランザクション セットの一覧を定義できます。 ここでは、トランザクション セットの一覧を作成する方法について説明します。  

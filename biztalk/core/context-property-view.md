@@ -1,11 +1,11 @@
 ---
-title: "コンテキスト プロパティ ビュー |Microsoft ドキュメント"
-ms.custom: 
+title: コンテキスト プロパティ ビュー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking Profile Editor, message schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, Context Property view
 - message schemas, XML messages
 ms.assetid: 17a21b86-995c-4dc2-9a3c-1309837d0b9b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237882"
 ---
 # <a name="context-property-view"></a>コンテキスト プロパティ ビュー
 コンテキスト プロパティ ビューには、プロパティと関連付けられている XML メッセージのスキーマが表示されます。 このビューは、オーケストレーション スケジュール ビューにある一部の図形のショートカット メニューから使用できます。  

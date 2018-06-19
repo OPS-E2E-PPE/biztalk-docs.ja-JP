@@ -1,11 +1,11 @@
 ---
-title: "BAM ポータルでアラート |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルでアラート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal, alerts
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Alert Management page [BAM portal]
 - alerts, subscriptions
 ms.assetid: 715a4187-aafa-46be-8b00-8eaba2e569e5
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232714"
 ---
 # <a name="alerts-in-the-bam-portal"></a>BAM ポータルの警告
 警告を使用すると、主要業績評価指標 (KPI) など、ユーザーへリアルタイムに配信することができる、ビジネス プロセスに関する重要なイベントを定義できます。 ユーザーは警告にサブスクライブすることで、その警告で監視されているビジネス イベントの通知を受信します。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
 |フィールド名|目次|  
 |----------------|--------------|  
-|名前|警告の名前を指定します。 警告の名前は、電子メールとして配信される警告の件名、およびファイルとして配信される警告のファイル名に使用されます。 **注:**名は 100 文字を上限と、次の文字を含めることはできません ~! @# $% ^&amp;* ();|  
+|名前|警告の名前を指定します。 警告の名前は、電子メールとして配信される警告の件名、およびファイルとして配信される警告のファイル名に使用されます。 **注:** 名は 100 文字を上限と、次の文字を含めることはできません ~! @# $% ^&amp;* ();|  
 |メッセージ|警告と共に配信するメッセージのテキストです。|  
 |[Priority]|警告で報告される問題の重要度を示します。 優先度レベルは、High、Medium、および Low です。 電子メールで配信する警告の場合、この設定が電子メール メッセージの重要度フラグの種類に反映されます。|  
 |所有者|警告の所有者です。 所有者の既定値は、警告の作成者と同一です。 複数の所有者を入力する場合は、各所有者をセミコロンで区切ります。|  

@@ -1,11 +1,11 @@
 ---
-title: "パーティの解決パイプライン コンポーネントを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: パーティの解決パイプライン コンポーネントを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - authenticating, Partner Management
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Partner Management, authenticating
 - pipeline components, Party Resolution
 ms.assetid: 0ebd30f7-3a6b-4457-8e30-80bf81fbd28d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248218"
 ---
 # <a name="how-to-configure-the-party-resolution-pipeline-component"></a>パーティの解決パイプライン コンポーネントを構成する方法
 パーティの解決パイプライン コンポーネントは、クライアントのユーザー セキュリティ ID および証明書のサブジェクトを BizTalk Server パーティにマップするために使用されます。 マッピングを使用して、BizTalk Server にメッセージを送信したパーティの認証を行います。 パートナー管理の詳細については、次を参照してください。[アグリーメントを作成する方法](http://msdn.microsoft.com/library/f8608cf7-8ac5-4f02-805e-5a0bdf19ca8c)です。  

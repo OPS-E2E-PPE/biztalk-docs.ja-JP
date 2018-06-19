@@ -1,11 +1,11 @@
 ---
-title: "送信ポートまたは送信ポート グループを参加させる方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートまたは送信ポート グループを参加させる方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - enlisting, send port groups
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - managing [send ports], enlisting
 - managing [send port groups], enlisting
 ms.assetid: d4298b8e-7dc7-4382-af86-c4db0982b7e0
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254474"
 ---
 # <a name="how-to-enlist-a-send-port-or-send-port-group"></a>送信ポートまたは送信ポート グループを参加させる方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートまたは送信ポート グループを参加させる方法について説明します。 送信ポートまたは送信ポート グループを参加させると、送信ポートまたは送信ポート グループが BizTalk ホストに関連付けられ、送信ポートまたは送信ポート グループのサブスクリプションが作成されます。 送信ポート グループに送信ポートが含まれていない場合は、送信ポート グループを参加させてもサブスクリプションは作成されません。 また、送信ポート グループを参加させても、送信ポート グループに含まれている送信ポートの状態は変わりません。  

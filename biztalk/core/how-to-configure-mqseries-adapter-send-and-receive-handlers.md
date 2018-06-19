@@ -1,11 +1,11 @@
 ---
-title: "受信ハンドラーを MQSeries アダプターの送信を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信ハンドラーを MQSeries アダプターの送信を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive handlers, MQSeries adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - send handlers, MQSeries adapters
 - configuring [MQSeries adapters], send handlers
 ms.assetid: e1cfc415-50d2-440b-9301-ad69da28ad3e
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248234"
 ---
 # <a name="how-to-configure-mqseries-adapter-send-and-receive-handlers"></a>MQSeries アダプターを構成する方法は、送信し、受信ハンドラー
 MQSeries アダプターの送信ハンドラーと受信ハンドラーの一部のプロパティは、BizTalk Server 管理コンソールを使用して構成できます。 処理に示す[方法を構成する MQSeries アダプターの受信場所と送信ポートを](../core/how-to-configure-mqseries-adapter-receive-locations-and-send-ports.md)ほとんど送信ハンドラのプロパティの値を設定します。  
@@ -48,12 +49,12 @@ MQSeries アダプターの送信ハンドラーと受信ハンドラーの一�
     |**バッチ内の最大メッセージ数**|バッチ内に含めるメッセージの最大数を設定します。 送信ハンドラーにのみ適用されます。|  
     |**[サーバー]**|MQSeries Server for Windows が実行されているコンピューターの名前を指定します。|  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
     > [!NOTE]
     >  受信場所のプロパティと送信ポートのプロパティは、受信ハンドラーの値と送信ハンドラーの値より優先されます。 受信場所のプロパティまたは送信ポートのプロパティに値が設定されていない場合、アダプターでは、それぞれ受信ハンドラーの値と送信ハンドラーの値を使用します。  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [アダプター受信場所と送信ポートを MQSeries を構成する方法](../core/how-to-configure-mqseries-adapter-receive-locations-and-send-ports.md)   

@@ -1,14 +1,14 @@
 ---
-title: "インターチェンジに正しくない形式の ISA が含まれているか、サービス スキーマを利用できなかった |Microsoft ドキュメント"
-ms.custom: 
+title: インターチェンジに正しくない形式の ISA が含まれているか、サービス スキーマを利用できなかった |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 78d285f6-26fb-4a3b-a959-a17623321b20
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241658"
 ---
 # <a name="the-interchange-contained-a-malformed-isa-or-the-service-schema-was-not-available"></a>インターチェンジに正しくない形式の ISA が含まれていたか、サービス スキーマを使用できませんでした
 ## <a name="details"></a>詳細  

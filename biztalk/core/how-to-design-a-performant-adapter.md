@@ -1,14 +1,14 @@
 ---
-title: "パフォーマンスの高いアダプターを設計する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: パフォーマンスの高いアダプターを設計する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5a1f338-fd7c-41c8-a181-8da8b293c4cc
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250538"
 ---
 # <a name="how-to-design-a-performant-adapter"></a>パフォーマンスの高いアダプターをデザインする方法
 アダプターのパフォーマンスを確保するには、すべてのアダプターを、メッセージのバッチの送信、バッチの転送、およびバッチ単位での一般的なメッセージ操作を実行可能なバッチ対応にしておく必要があります。 また、アダプターのパフォーマンス関連の属性 (バッチのサイズやバッチ内のバイト数など) をできる限り構成可能な属性として公開し、アダプターのデザイン時ユーザー インターフェイスで構成できるようにします。  

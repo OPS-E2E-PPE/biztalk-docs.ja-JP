@@ -1,14 +1,14 @@
 ---
-title: "BTSTask のコンソールの色を編集する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BTSTask のコンソールの色を編集する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 725dcb7b-5a19-4166-9d1c-93f30ddca201
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254042"
 ---
 # <a name="how-to-edit-the-console-colors-for-btstask"></a>BTSTask のコンソールの色を編集する方法
 ここでは、BTSTask がコンソールに出力する際に使用される前景色の編集方法について説明します。 コンソールの背景色が白だと、既定の BTSTask コンソールの出力が読みづらくなってしまうため、前景色の変更が必要になります。  

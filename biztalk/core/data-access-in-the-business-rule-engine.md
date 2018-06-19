@@ -1,18 +1,18 @@
 ---
-title: "ビジネス ルール エンジンでのデータ アクセス |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ルール エンジンでのデータ アクセス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Business Rules Engine, data access
 - Business Rules Engine, helper classes
 - data, data access
 ms.assetid: 38da32af-1e0d-43fb-b946-fb49a11f1681
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238618"
 ---
 # <a name="data-access-in-the-business-rule-engine"></a>ビジネス ルール エンジンでのデータ アクセス
 ルール エンジンは、.NET オブジェクトだけをネイティブにサポートしています。 データベースのデータを扱う場合、直接 ADO.NET オブジェクトを使用できます。ただし、このエンジンにはヘルパー クラスが提供されているので、データベースのデータをルールから簡単に使用できます。 ルール エンジンは、次の 3 つのデータベースに関連する型を公開することでのサポートを拡張します。 **TypedDataRow**、 **TypedDataTable**、および**DataConnection**です。 このセクションでは、これらのヘルパー クラス、それぞれの型を使用するタイミングに関する推奨事項、およびそれぞれの型を使用する際のパフォーマンスへの影響について説明します。  

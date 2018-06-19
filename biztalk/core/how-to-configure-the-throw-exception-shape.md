@@ -1,18 +1,18 @@
 ---
-title: "例外のスロー図形を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 例外のスロー図形を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Throw Exception shape [Orchestration Designer]
 - orchestrations, errors
 - Orchestration Designer, errors
 ms.assetid: d3190f1b-db5e-4988-bff6-f7a276760ece
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248082"
 ---
 # <a name="how-to-configure-the-throw-exception-shape"></a>例外のスロー図形を構成する方法
 使用して、オーケストレーションで例外をスローすることが明示的に、**例外のスロー**図形です。 スローが実行されると、ランタイム エンジンは、スローされた例外の種類を処理できる例外ハンドラーのうち最も近くにある例外ハンドラーを探します。  

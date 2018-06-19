@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233050"
 ---
 # <a name="configuring-as2-agreement-properties"></a>AS2 アグリーメントのプロパティの構成
 このセクションでは、AS2 トランスポート アグリーメントのプロパティについて説明します。 トランスポート プロトコルの設定の一部として、メッセージに署名する必要があるかどうか、メッセージを暗号化する必要があるかどうか、なども定義できます。  

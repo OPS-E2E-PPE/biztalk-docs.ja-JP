@@ -1,11 +1,11 @@
 ---
-title: "BizTalk エディター エラー |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk エディター エラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Editor, error messages
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - troubleshooting, error messages [BizTalk Editor]
 - error messages, BizTalk Editor
 ms.assetid: d044af11-708a-4365-a105-dd19a2c610a4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232850"
 ---
 # <a name="biztalk-editor-errors"></a>BizTalk エディター エラー
 ここでは、BizTalk エディター関連のコンパイル メッセージについての補足情報を提供します。 この情報にアクセスするには、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のタスク一覧ウィンドウで、関連するメッセージの 1 つを選択して F1 キーを押します。 概念と手順については BizTalk エディターについて、次を参照してください。 [BizTalk エディターを使用してスキーマを作成する](../core/creating-schemas-using-biztalk-editor.md)です。  

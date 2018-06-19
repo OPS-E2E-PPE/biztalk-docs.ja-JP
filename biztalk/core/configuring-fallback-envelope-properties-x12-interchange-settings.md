@@ -1,14 +1,14 @@
 ---
-title: "フォールバック エンベロープ プロパティ (X12 インターチェンジの設定) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: フォールバック エンベロープ プロパティ (X12 インターチェンジの設定) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0e9b05ea-2a0f-42d6-adc2-c1f1f2b7a993
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233330"
 ---
 # <a name="configuring-fallback-envelope-properties-x12-interchange-settings"></a>フォールバック エンベロープ プロパティの構成 (X12 インターチェンジの設定)
 X12 インターチェンジのエンベロープの生成の設定は、受信側パーティに送信する X12 エンコード インターチェンジのエンベロープを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でどのように生成するかを定義します。 このフォールバック アグリーメントでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がパーティに送信する X12 エンコード インターチェンジの ISA セグメントをどのように生成するかを定義します。 ISA セグメントは、X12 エンコード インターチェンジのインターチェンジ制御ヘッダーです。  

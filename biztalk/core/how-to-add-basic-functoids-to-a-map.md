@@ -1,14 +1,14 @@
 ---
-title: "マップに基本 Functoid を追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マップに基本 Functoid を追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6a81fb73-cccf-4f74-af92-39e4af13e255
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248986"
 ---
 # <a name="how-to-add-basic-functoids-to-a-map"></a>マップに基本 Functoid を追加する方法
 簡単に使用できる Functoid が多数用意されています。 これらと呼ばれるここまでで functoid と区別するための基本 functoid、**詳細**カテゴリ。 基本 Functoid では、変換、データベース、日時、論理、関数、文字列などのカテゴリを対象としています。  

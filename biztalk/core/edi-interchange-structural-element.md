@@ -1,14 +1,14 @@
 ---
-title: "EDI インターチェンジの構造体要素 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI インターチェンジの構造体要素 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03f47ae2-fa0f-4d88-a700-85f3d515d2d0
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239530"
 ---
 # <a name="edi-interchange-structural-element"></a>EDI のインターチェンジ構造体要素
 インターチェンジは、EDI メッセージの最上位レベルの構造体要素です。 これには、2 つのパートナーによって交換される 1 つ以上のグループのコレクションが格納されます。 インターチェンジの送信先は、1 つの取引先である必要があります。 インターチェンジには、1 つ以上の種類のトランザクション セット/メッセージを格納できます。  

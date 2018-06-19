@@ -1,14 +1,14 @@
 ---
-title: "スキーマの選択のサイズを変更しを展開し、スキーマ ツリーを折りたたむ方法 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマの選択のサイズを変更しを展開し、スキーマ ツリーを折りたたむ方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 267ea17d-54fe-4031-a044-719606489f24
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254818"
 ---
 # <a name="how-to-resize-the-schema-picker-and-expand-and-collapse-the-schema-trees"></a>スキーマの選択のサイズを変更しを展開し、スキーマ ツリーを折りたたむ方法
 BizTalk マップを展開する際、さまざまなスキーマ ノードの表示または非表示を行うため、送信元スキーマ ツリーおよび送信先スキーマ ツリーの展開および折りたたみが必要な場合があります。 このトピックでは、スキーマの選択のサイズを変更しを展開して、スキーマ ツリーを折りたたむ手順を説明します。  

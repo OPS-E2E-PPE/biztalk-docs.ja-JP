@@ -1,14 +1,14 @@
 ---
-title: "データベース フェールオーバー サポート |Microsoft ドキュメント"
-ms.custom: 
+title: データベース フェールオーバー サポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 09347fdd-2929-4ed9-b0d8-698508663ecd
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238634"
 ---
 # <a name="database-failover-support"></a>データベース フェールオーバーのサポート
 インスタンスを渡すことができます、 **PolicyFetchErrorHandler**のオーバー ロードされたコンス トラクターにパラメーターとしてデリゲート、**ポリシー**クラスです。 データベースからポリシー詳細をフェッチしている間にエラーが発生した場合、デリゲート インスタンスが呼び出されます。 トラップする try-catch ブロックを使用することもできます**RuleStoreConnectionException**と**RuleStoreCompatibilityException**ルール エンジンがルール エンジンへの接続に失敗したときに発生する例外データベースです。  

@@ -1,14 +1,14 @@
 ---
-title: "グローバルまたはフォールバック アグリーメント プロパティの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: グローバルまたはフォールバック アグリーメント プロパティの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1c375d03-6f22-4a67-9eac-d8896de2f7ee
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233210"
 ---
 # <a name="configuring-global-or-fallback-agreement-properties"></a>グローバルまたはフォールバック アグリーメントのプロパティの構成
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、インターチェンジの解決に使用するためのアグリーメントが見つからない場合、フォールバック アグリーメント プロパティを使用してメッセージを処理します。 フォールバック アグリーメント プロパティは、アグリーメントがわかっているときは使用されず、すべてのアグリーメントに適用されるものではありません。  

@@ -1,14 +1,14 @@
 ---
-title: "AS2 メッセージおよび関連する MDN 状態レポート |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 メッセージおよび関連する MDN 状態レポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 48ed0ee3-c844-4cb9-a84d-32b719ab8fab
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232978"
 ---
 # <a name="as2-message-and-correlated-mdn-status-report"></a>AS2 メッセージおよび関連する MDN の状態レポート
 このレポートでは、AS2 送信パイプラインおよび受信パイプラインで処理されるすべての AS2 メッセージ、およびそれらのインターチェンジに関連する MDN が示されます。  

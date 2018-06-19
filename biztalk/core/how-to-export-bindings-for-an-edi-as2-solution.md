@@ -1,14 +1,14 @@
 ---
-title: "EDI AS2 ソリューションのバインドをエクスポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI AS2 ソリューションのバインドをエクスポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 856ab630-66c4-4496-884a-fdbe641143c5
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255650"
 ---
 # <a name="how-to-export-bindings-for-an-edi-as2-solution"></a>EDI AS2 ソリューションのバインドをエクスポートする方法
 このトピックでは、EDI または AS2 ソリューションとして設定されたコンピュータから構成をエクスポートする方法について説明します。 これにより、自動化された方法で別のコンピュータと同じ構成を設定できるようになります。 バインドのエクスポート元としては、アプリケーション、グループ、アセンブリがあります。  

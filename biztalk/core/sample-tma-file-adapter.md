@@ -1,11 +1,11 @@
 ---
-title: "サンプル TMA: ファイル アダプターの |Microsoft ドキュメント"
-ms.custom: 
+title: 'サンプル TMA: ファイル アダプターの |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, examples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - examples, File adapters
 - security examples [TMA], File adapters
 ms.assetid: bcb862c0-fe02-4335-8b59-242d28049e3f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271890"
 ---
 # <a name="sample-tma-file-adapter"></a>サンプル TMA: ファイル アダプタ
 ここでは、サンプル アーキテクチャのファイル アダプター シナリオ向けの脅威モデル分析 (TMA) について説明します。 次の図では、ファイル アダプタ シナリオのサンプル アーキテクチャを示しています。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 09/20/2017
 |未認証のユーザーが、BizTalk Server にメッセージを送信できる|BizTalk Server がメッセージを取得するファイル フォルダへの書き込みアクセス許可をユーザーが持っている場合、未認証のユーザーが BizTalk Server にメッセージを送信することがあります。|メッセージ本文|サービス拒否が起こる<br /><br /> 特権の昇格|  
   
 ## <a name="step-3-review-threats-file-adapter-scenario"></a>手順 3. 脅威の確認 (ファイル アダプタ シナリオ)  
- このセクションでは、サンプル アーキテクチャのファイル アダプタ シナリオで特定された脅威に対して実行したリスク分析の結果を示します。 主な脅威モデルについてのミーティングは後、脅威を確認し、次の影響カテゴリ各脅威のリスクを識別するために使用します**D**amage 潜在的な、 **R**eproducibility、 **E。**xploitability、 **A**影響を受けるユーザー、および**D**iscoverability です。  
+ このセクションでは、サンプル アーキテクチャのファイル アダプタ シナリオで特定された脅威に対して実行したリスク分析の結果を示します。 主な脅威モデルについてのミーティングは後、脅威を確認し、次の影響カテゴリ各脅威のリスクを識別するために使用します**D**amage 潜在的な、 **R**eproducibility、 **E。** xploitability、 **A**影響を受けるユーザー、および**D**iscoverability です。  
   
  次の表は、ファイル アダプタを使用して BizTalk Server との間でメッセージを送受信したときに特定された脅威のリスクの度合いを示しています。  
   

@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249746"
 ---
 # <a name="how-to-create-a-receive-port"></a>受信ポートを作成する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、受信ポートを作成する方法について説明します。 受信ポートとは、サービスがデータを受信する際に、外部パートナーとの対話に使用する一連の受信場所を、同様の特性に基づいて論理的にグループ化したものです。  

@@ -1,14 +1,14 @@
 ---
-title: "ビルドし、アダプター プロジェクトのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: ビルドし、アダプター プロジェクトのテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b5eb486-99ae-4661-b0d0-d2d363d97b73
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233058"
 ---
 # <a name="build-and-test-the-adapter-project"></a>アダプター プロジェクトのビルドおよびテスト
 AdapterManagement プロジェクトに対して行われたすべての変更をテストするには、プロジェクトをリビルドします。 正常にビルドした後で、アダプター メタデータの追加ウィザードを実行して、内部および外部の XSD ファイルのすべてが AdapterManagement プロジェクトに確実に追加されるようにします。 アダプター メタデータの追加ウィザードの使用方法の詳細については、次を参照してください。[アダプター メタデータを BizTalk プロジェクトに追加する方法](../core/how-to-add-adapter-metadata-to-a-biztalk-project.md)です。  
@@ -52,7 +53,7 @@ AdapterManagement プロジェクトに対して行われたすべての変更�
   
 1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
-2.  展開、 [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **管理** ノードを展開**BizTalk グループ、**展開**プラットフォームの設定**、展開**アダプター**、をクリックして**静的**、順にクリック**BizTalkServerApplication**の方向と**受信**です。  
+2.  展開、 [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **管理** ノードを展開**BizTalk グループ、** 展開**プラットフォームの設定**、展開**アダプター**、をクリックして**静的**、順にクリック**BizTalkServerApplication**の方向と**受信**です。  
   
 3.  結果ウィンドウで、受信ハンドラーを右クリックし、をクリックして**プロパティ**です。 **全般** タブで、をクリックして**プロパティ**です。 表示された画面には、ReceiveHandler.xsd ファイルで指定したフィールドが含まれている必要があります。  
   

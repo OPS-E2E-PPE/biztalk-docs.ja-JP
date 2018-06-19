@@ -14,7 +14,7 @@ helpviewer_keywords:
 - applications, .NET assemblies
 - .NET assemblies, adding to applications
 ms.assetid: 75dc3303-a622-40df-881e-3109cbc81c91
-caps.latest.revision: ''
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22249234"
 ---
 # <a name="how-to-add-a-net-assembly-to-an-application"></a>.NET アセンブリをアプリケーションに追加する方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、BizTalk アセンブリではない .NET アセンブリを BizTalk アプリケーションに追加する方法について説明します。 .NET アセンブリをアプリケーションに追加する際には、次の重要事項を念頭に置いてください。  
@@ -68,7 +69,7 @@ ms.lasthandoff: 03/23/2018
   
 9. このアセンブリが依存するアイテムがこのアプリケーションに存在しない場合は、それを追加する **アプリケーションに追加**, を成果物を参照してクリックして **開く**します。  
   
-10. 完了したら、 **[OK]**をクリックします。  
+10. 完了したら、 **[OK]** をクリックします。  
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用してください。  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 03/23/2018
   
 2.  コマンド プロンプトで次のコマンドを入力します。このとき、下の表を参考にして適切な値に置き換えます。  
   
-     **BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly** [**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**&#124;**RegasmOnInstall**&#124;**RegsvcsOnInstall**] [**/Server:***value*] [**/Database:***value*]  
+     **BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly** [**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **&#124;** RegasmOnInstall **&#124;** RegsvcsOnInstall **] [**/Server:***value*] [**/Database:*** value*]  
   
      例:  
   

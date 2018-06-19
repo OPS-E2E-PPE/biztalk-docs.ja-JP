@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションでルールをビジネスを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションでルールをビジネスを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - atomic transactions, business rules
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business rules, orchestrations
 - orchestrations, business rules
 ms.assetid: d20473c2-267f-4a44-93c3-df6ef655020c
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255570"
 ---
 # <a name="how-to-use-business-rules-in-orchestrations"></a>オーケストレーションでビジネス ルールを使用する方法 [BTS05]
 ビジネス ルール ポリシーのインスタンスを作成し、オーケストレーションで実行できます。 これを行うには、アトミック トランザクション スコープ内部にルールの呼び出し図形を追加し、追加した図形にポリシーを構成します。  

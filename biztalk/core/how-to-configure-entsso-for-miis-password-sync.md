@@ -1,14 +1,14 @@
 ---
-title: "MIIS パスワード同期用に ENTSSO を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: MIIS パスワード同期用に ENTSSO を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 89438935-37c1-4ac9-9ca2-7af8d9bfd3ae
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248946"
 ---
 # <a name="how-to-configure-entsso-for-miis-password-sync"></a>MIIS パスワード同期用に ENTSSO を構成する方法
 XML ファイルと Microsoft Identity Integration Server (MIIS) の構成が終わったら、残りの構成手順は、エンタープライズ シングル サインオン (ENTSSO) システムで行います。  
@@ -31,13 +32,13 @@ XML ファイルと Microsoft Identity Integration Server (MIIS) の構成が終
   
 4.  選択**MIIS からパスワード同期を許可する**です。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ### <a name="to-enable-password-sync-on-the-system-level"></a>パスワード同期をシステム レベルで有効にするには  
   
 1.  エンタープライズ シングル サインオンを右クリックし、**システム**ノード。  
   
-2.  **[プロパティ]**をクリックします。  
+2.  **[プロパティ]** をクリックします。  
   
      **プロパティ** ダイアログ ボックスが表示されます。  
   
@@ -75,7 +76,7 @@ XML ファイルと Microsoft Identity Integration Server (MIIS) の構成が終
   
 1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Identity Integration Server**、順にクリック**Identity Manager**です。  
   
-2.  **[ツール]** メニューの **[オプション]**をクリックします。  
+2.  **[ツール]** メニューの **[オプション]** をクリックします。  
   
 3.  選択**パスワード同期を有効にする**です。  
   
@@ -85,7 +86,7 @@ XML ファイルと Microsoft Identity Integration Server (MIIS) の構成が終
   
 6.  **プロパティ** ページで、**ディレクトリ パーティションを構成する**、し、**パスワードの同期ソースとしてこのパーティションを有効にする**です。  
   
-7.  をクリックして**ターゲット**、し、ENTSSOMA2 が MIIS からパスワード変更を受信できるようにします。 [ENTSSOMA] の選択を解除します。 をクリックして**[ok]**、順にクリック**OK**もう一度です。  
+7.  をクリックして**ターゲット**、し、ENTSSOMA2 が MIIS からパスワード変更を受信できるようにします。 [ENTSSOMA] の選択を解除します。 をクリックして **[ok]**、順にクリック**OK**もう一度です。  
   
 8.  **管理エージェント**ビューで、 **ENTSSOMA2**です。 右側のペインで選択**プロパティ**です。 **プロパティ**] ページで [**拡張機能の構成**です。  
   
@@ -102,7 +103,7 @@ XML ファイルと Microsoft Identity Integration Server (MIIS) の構成が終
         > [!NOTE]
         >  このアカウントは、INTSVR1.fabrikam.com に対して構成されている ENTSSO サービス アカウントと一致させる必要があります。  
   
-11. をクリックして**[ok]**、順にクリック**OK**もう一度です。  
+11. をクリックして **[ok]**、順にクリック**OK**もう一度です。  
   
 12. MIIS のパスワード同期を無効にすることもできます。 これを行うに**Identity Manager**をクリックして、**ツール** メニューのをクリックして**オプション**、選択を解除**パスワード同期を有効にする**です。  
   

@@ -1,14 +1,14 @@
 ---
-title: "シングル サインオン インターフェイスの動作を変更する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: シングル サインオン インターフェイスの動作を変更する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f4a4946a-e345-4c7e-835d-a3f7f72ebaca
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247858"
 ---
 # <a name="how-to-change-the-behavior-of-a-single-sign-on-interface"></a>シングル サインオン インターフェイスの動作を変更する方法
 エンタープライズ シングル サインオン (SSO) オブジェクト モデルのオブジェクトの多くは、IPropertyBag インターフェイスを公開するので、指定したオブジェクトの動作を変更することができます。 SSO オブジェクトの QueryInterface を呼び出すと、IPropertyBag インターフェイスを取得し、それを使用して現在のオブジェクトの動作を変更できます。  

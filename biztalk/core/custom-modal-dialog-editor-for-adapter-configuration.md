@@ -1,14 +1,14 @@
 ---
-title: "アダプター構成のカスタム モデル ダイアログ エディター |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター構成のカスタム モデル ダイアログ エディター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 213d5d47-80c1-4b2d-8194-1426982be137
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239234"
 ---
 # <a name="custom-modal-dialog-editor-for-adapter-configuration"></a>アダプター構成のカスタム モデル ダイアログ エディター
 カスタム エディターのコードから派生したエディターを示しています、 **System.Drawing.Design.UITypeEditor**パスワード入力用のモーダル ポップアップ ダイアログ ボックスを表示するクラス。 **GetEditStyle**メソッドのオーバーライド**UIEditorEditStyle.Modal**モーダル フォームのサブコントロールを示すです。 サービス メソッド**ShowDialog**で作成されたコントロールを管理する**CreatePassword**です。 **ShowDialog**を返します、 **DialogResult**で通常の方法 (switch ステートメントなど) で処理されている、 **DialogResult.OK**値のみが変更される場合。  

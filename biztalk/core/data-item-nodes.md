@@ -1,11 +1,11 @@
 ---
-title: "データ項目ノード |Microsoft ドキュメント"
-ms.custom: 
+title: データ項目ノード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - definition files [BAM], data items
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, node descriptions
 - Tracking Profile Editor, definition files [BAM]
 ms.assetid: 95856bfa-90e3-49d9-b55b-5f1b35a23f78
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238026"
 ---
 # <a name="data-item-nodes"></a>データ項目ノード
 データ項目ノードは、ビジネス アナリストが作成した監視モデルから開発者がインポートするアクティビティ定義ファイルに存在します。 データ項目ノードには、追跡するデータ項目を反映した名前 (たとえば、Customer Name など) が追跡プロファイル エディター (TPE) によって付けられます。 Customer Name に対応するノードには、メッセージ スキーマ ビューから 1 つ以上のデータ項目をドロップします。  

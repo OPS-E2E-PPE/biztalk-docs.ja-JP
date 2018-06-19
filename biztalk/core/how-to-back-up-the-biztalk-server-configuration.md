@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server の構成をバックアップする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server の構成をバックアップする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14f89050-c204-4d44-a875-299e690489ef
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247658"
 ---
 # <a name="how-to-back-up-the-biztalk-server-configuration"></a>BizTalk Server 構成をバックアップする方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ処理の一環として、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が実行されているコンピューターに関連付けられた構成設定をバックアップする必要があります。 元の構成ファイルのコピーを保持しておくと、コンピューターの交換が必要になるようなハードウェア障害が発生した場合の復元処理が大幅に簡略化されます。  

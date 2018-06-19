@@ -1,11 +1,11 @@
 ---
-title: "展開およびポリシーとボキャブラリを展開解除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 展開およびポリシーとボキャブラリを展開解除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, policies
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - policies, undeploying
 - vocabularies, deploying
 ms.assetid: 9a7e3310-54b7-482c-8210-b4b11fde4c49
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249570"
 ---
 # <a name="how-to-deploy-and-undeploy-policies-and-vocabularies"></a>ポリシーとボキャブラリを展開および展開解除する方法
 ポリシーの展開と展開解除には、ビジネス ルール エンジン展開ウィザードを使用できます。  

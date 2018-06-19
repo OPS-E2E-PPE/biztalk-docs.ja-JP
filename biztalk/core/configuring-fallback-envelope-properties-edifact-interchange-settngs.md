@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22233034"
 ---
 # <a name="configuring-fallback-envelope-properties-edifact-interchange-settngs"></a>フォールバック エンベロープ プロパティの構成 (EDIFACT インターチェンジの設定)
 このセクションでは、送信 EDIFACT メッセージのエンベロープを構成する方法について説明します。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/20/2018
   
 4.  **通信アグリーメント (UNB10)**, 、英数字 1 文字以上、35 文字の最大値を入力します。 このフィールドは省略可能です。  
   
-5.  選択**テスト インジケータ (UNB11)**によって、インターチェンジが生成されることを示すために[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]テスト データは、します。  
+5.  選択**テスト インジケータ (UNB11)** によって、インターチェンジが生成されることを示すために[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]テスト データは、します。  
   
 6.  選択 **適用 UNA セグメント (文字列サービス通知)** を送信するインターチェンジの UNA セグメントを生成します。 このオプションがオンの場合、 **UNA6** 空にすることはできませんと **UNA6 サフィックス** することはできません **None**します。  
   

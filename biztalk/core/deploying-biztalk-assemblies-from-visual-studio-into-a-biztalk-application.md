@@ -1,14 +1,14 @@
 ---
-title: "BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: accef4b8-acdf-4043-8fd7-2db9ea752074
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240090"
 ---
 # <a name="deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application"></a>Visual Studio から BizTalk アプリケーションへの BizTalk アセンブリの展開
 およびから BizTalk アセンブリを再展開[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]BizTalk アプリケーションにします。 この処理を使用して、開発したアセンブリの機能をテストし、ハンドオフ用にパッケージすることができます。  

@@ -1,14 +1,14 @@
 ---
-title: "メッセージの AS2 経由での動的送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの AS2 経由での動的送信ポートの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 246d64e8-70ca-48f4-8b72-d43b0964dbb4
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233890"
 ---
 # <a name="configuring-a-dynamic-send-port-for-messages-over-as2"></a>AS2 経由でのメッセージの動的送信ポートの構成
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成し、動的送信ポートを経由して AS2 メッセージを送信する方法について説明します。 この構成作業では、動的送信ポートを作成し、バックエンド アプリケーションを構成して該当するコンテキスト プロパティを設定します。 動的送信ポートを作成して AS2 メッセージを送信する場合、送信ポートが動作するように特定のプロパティを昇格する必要があります。 詳細については、次を参照してください。[送信ポートを動的な経由でメッセージを BizTalk Server AS2 の送信を構成](../core/configuring-a-dynamic-send-port-for-messages-over-as2.md#BKMK_Proc)以下です。  
@@ -27,9 +28,9 @@ ms.lasthandoff: 09/20/2017
   
 |場所|プロパティ|設定|  
 |--------------|--------------|-------------|  
-|**送信ポートのプロパティ: 全般**|ポートの種類|-動的な送信請求-応答 (場合に mdn を要求する**受信確認 (Mdn)**一方向アグリーメント タブのページが選択されている)<br /><br /> -動的な一方向の送信ポート (場合に mdn を要求する**受信確認 (Mdn)**一方向アグリーメント タブのページではオフ)|  
+|**送信ポートのプロパティ: 全般**|ポートの種類|-動的な送信請求-応答 (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブのページが選択されている)<br /><br /> -動的な一方向の送信ポート (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブのページではオフ)|  
 |**送信ポートのプロパティ: 全般**|[送信パイプライン]|-AS2EdiSend (EDI でエンコードされたメッセージ)<br /><br /> -AS2Send (非 EDI メッセージの場合)|  
-|**送信ポートのプロパティ: 全般**|受信パイプライン。<br /><br /> (場合に mdn を要求する**受信確認 (Mdn)**一方向アグリーメント タブのページが選択されている)|AS2Receive (動的な送信請求応答の送信ポートの場合)|  
+|**送信ポートのプロパティ: 全般**|受信パイプライン。<br /><br /> (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブのページが選択されている)|AS2Receive (動的な送信請求応答の送信ポートの場合)|  
 |**送信ポートのプロパティ: フィルター**|プロパティ|BTS.MessageType|  
 |**送信ポートのプロパティ: フィルター**|演算子|==|  
 |**送信ポートのプロパティ: フィルター**|値|- `http://schemas.microsoft.com/BizTalk/EDI/X12/2006#<schema name>`EDI メッセージ)<br /><br /> - `http://schemas.microsoft.com/Edi/X12#X12_<997 or TA1>_Root`(x12 受信確認)<br /><br /> - `http://schemas.microsoft.com/Edi/Efact#Efact_Contrl_Root`(EDIFACT 受信確認) を|  

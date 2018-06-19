@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Web services, schemas
 - schemas, Web services
 ms.assetid: 3ace0260-a1cb-4e59-a820-36ee7d5cceda
-caps.latest.revision: ''
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22239122"
 ---
 # <a name="considerations-when-publishing-web-services"></a>Web サービスを公開する際の考慮事項
 ここでは、Web サービスを公開する前に考慮が必要な情報について説明します。  

@@ -1,14 +1,14 @@
 ---
-title: "送信 MDN の生成 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信 MDN の生成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 12d7da1c-0d3c-42d4-9388-29f499353d13
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247954"
 ---
 # <a name="generating-an-outgoing-mdn"></a>送信 MDN の生成
 AS2 受信パイプラインは、受信メッセージに対する MDN (Message Disposition Notification) 応答を生成します。 これは、AS2EDIReceive 受信パイプラインの EDI 逆アセンブラー パイプライン コンポーネント (EDI エンコード メッセージに応答する場合) または AS2Receive 受信パイプラインの AS2 逆アセンブラー パイプライン コンポーネント (EDI でエンコードされていないメッセージに応答する場合) によって行われます。  
@@ -38,7 +39,7 @@ AS2 受信パイプラインは、受信メッセージに対する MDN (Message
   
 -   場合、MDN が送信されます、 **mdn を要求する**プロパティが選択されています。  
   
--   場合、 **mdn を要求する**プロパティが選択されていると、**非同期 MDN を要求する**プロパティが選択されている MDN は非同期に送信されます場合、。 MDN は、URL に送信すること、 **- Receipt-delivery-option (URL)**プロパティが、元のメッセージよりも別の接続をします。  
+-   場合、 **mdn を要求する**プロパティが選択されていると、**非同期 MDN を要求する**プロパティが選択されている MDN は非同期に送信されます場合、。 MDN は、URL に送信すること、 **- Receipt-delivery-option (URL)** プロパティが、元のメッセージよりも別の接続をします。  
   
 -   場合、 **mdn を要求する**プロパティが選択されているが、**非同期 MDN を要求する**プロパティが選択されていない、元のメッセージと同じ接続経由で MDN が同期的に送信されます。  
   

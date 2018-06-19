@@ -1,11 +1,11 @@
 ---
-title: "集計の定義 |Microsoft ドキュメント"
-ms.custom: 
+title: 集計の定義 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], creating
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - aggregations [BAM], Excel add-in
 - aggregations [BAM], about aggregations
 ms.assetid: d5bf22d5-f491-4b08-a604-c7158e6e282f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238450"
 ---
 # <a name="defining-aggregations"></a>集計の定義
 Excel では定義**集計**を事前に計算された要約データを用意することによってクエリの応答時間を向上させるとして、回答には、質問の前に準備ができています。 たとえば、数十万行が格納されているデータ ウェアハウスのファクト テーブルに対して、特定の 2 つの製品の出荷スケジュールを要求するクエリがあるとします。この計算でファクト テーブルをスキャンする必要があると、応答に時間がかかります。 ただし、このクエリの回答となる集計データがあらかじめ計算されていれば、即座に応答できます。  

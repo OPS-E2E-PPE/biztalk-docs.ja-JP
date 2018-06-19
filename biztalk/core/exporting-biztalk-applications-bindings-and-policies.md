@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アプリケーション、バインド、およびポリシーのエクスポート |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーション、バインド、およびポリシーのエクスポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, exporting
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - applications, exporting
 - exporting, bindings
 ms.assetid: ac101206-be49-47c9-a354-4f39e8b77acf
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245810"
 ---
 # <a name="exporting-biztalk-applications-bindings-and-policies"></a>BizTalk アプリケーション、バインド、およびポリシーのエクスポート
 ここでは、BizTalk アプリケーション、バインド、またはポリシーをエクスポートする方法について説明します。 BizTalk アプリケーションに含まれるアイテムの一部またはすべてをエクスポートすることも、バインドまたはポリシーだけをエクスポートすることもできます。 アプリケーションをエクスポートすると、Windows インストーラー (.msi) ファイルが作成されます。このファイルには、エクスポートするよう選択したアプリケーションのアイテムが含まれます。 バインドまたはポリシーをエクスポートすると、バインドまたはポリシーの .xml ファイルが作成されます。 このプロセスの基礎知識については、次を参照してください。[発生時に成果物はエクスポート内容](../core/what-happens-when-artifacts-are-exported.md)です。  

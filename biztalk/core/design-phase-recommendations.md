@@ -1,14 +1,14 @@
 ---
-title: "設計フェーズの推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: 設計フェーズの推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ee3d183e-a6f3-47d0-90ac-99b12c064607
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239746"
 ---
 # <a name="design-phase-recommendations"></a>設計フェーズの推奨事項
 設計フェーズの主な成果物は、システムの設計仕様と、システムの機能およびパフォーマンスを検証するためのテスト ケースの設計仕様です。 機能およびテストの実現可能性の調査は、通常、設計プロセスの一部として行われます。以下で説明するように、この調査には初期開発が含まれ、検証設計の場合は POC (Proof of Concept: 概念実証) 実装の早期テストも必要になります。  

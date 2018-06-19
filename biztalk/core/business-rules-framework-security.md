@@ -1,11 +1,11 @@
 ---
-title: "ビジネス ルール フレームワークのセキュリティ |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ルール フレームワークのセキュリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, code samples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - security, artifacts
 - business rules, security
 ms.assetid: 86582d3a-259e-47f2-9f72-8dbbe0051503
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232690"
 ---
 # <a name="business-rules-framework-security"></a>ビジネス ルール フレームワークのセキュリティ
 ビジネス ルール エンジンは、ホスト アプリケーションのセキュリティ コンテキストで動作します。 実行中にルール エンジン インスタンスの id は、スレッド コンテキストを呼び出す、 **Policy.Execute**メソッドです。  

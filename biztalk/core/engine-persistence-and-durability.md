@@ -1,14 +1,14 @@
 ---
-title: "エンジンの永続性と耐久性 |Microsoft ドキュメント"
-ms.custom: 
+title: エンジンの永続性と耐久性 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9bd209e9-75d2-422f-b3b2-377986f41f2f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242594"
 ---
 # <a name="engine-persistence-and-durability"></a>エンジンの永続性と耐久性
 このセクションでは、SQL Server を介してプロセスの状態をディスクに永続化することによって、疎結合されたビジネス プロセスを BizTalk Server が確実に統合する方法について説明します。 トランザクションを活用し、状態の永続化を適切なタイミングで行うことによって、ハードウェアまたはソフトウェアに障害が発生しても、プロセスの状態が失われることのないシステム環境を保証できます。 これはシステムの耐久性とも呼ばれます。  

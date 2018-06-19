@@ -1,14 +1,14 @@
 ---
-title: "EDI の受信コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: EDI の受信コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d3b82e8-1168-4c2c-bf1a-886b43ff8108
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241698"
 ---
 # <a name="edi-receive-components"></a>EDI の受信コンポーネント
 このトピックでは、EDI/AS2 メッセージ以外の EDI メッセージを処理するパイプラインおよびパイプライン コンポーネントについて説明します。 受信した edi/as2 または非 edi/as2 メッセージの処理に関する情報を次を参照してください。 [AS2 の受信コンポーネント](../core/as2-receive-components.md)です。 AS2 の受信コンポーネントは、AS2 の処理だけではなく、EDI の処理も実行します。  

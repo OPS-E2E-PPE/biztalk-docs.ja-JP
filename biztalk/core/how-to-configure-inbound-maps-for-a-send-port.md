@@ -1,11 +1,11 @@
 ---
-title: "送信ポートの受信マップを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートの受信マップを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [send ports], inbound maps
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - managing [send ports], configuring
 - send ports, configuring
 ms.assetid: 213c66ba-928f-4c00-9a87-f45eaa9f7dca
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248466"
 ---
 # <a name="how-to-configure-inbound-maps-for-a-send-port"></a>送信ポートの受信マップを構成する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートの受信マップを構成する方法について説明します。 受信マップは、動的または静的な送信請求 - 応答の送信ポートでのみ使用されます。 マップを使用すると、オーケストレーションでメッセージを処理することなく、ポートが受け取った応答メッセージに XSL 変換を適用できます。 受信マップの追加、マップの削除、既存のマップから別のマップへの変更を行うことができます。 送信ポートには複数のマップを追加できます。ただし、各マップには一意の送信元スキーマが必要となります。 マップに関する背景情報については、次を参照してください。[マップ](../core/maps.md)です。  

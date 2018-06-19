@@ -1,18 +1,18 @@
 ---
-title: "BAM データベースの管理 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM データベースの管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM], databases
 - databases [BAM], managing
 - databases, BAM
 ms.assetid: ce3c472e-2da1-4d67-816a-befe4ded20d9
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262578"
 ---
 # <a name="managing-bam-databases"></a>BAM データベースの管理
 管理者は、BAM 管理ユーティリティ (bm.exe) を使用して、BAM データベースを設定、管理、および更新できます。 このセクションでは、BAM 管理ユーティリティを使用して BAM データベースの一般的な管理者タスクを実行する方法について説明します。以下に示す表を参照してください。  

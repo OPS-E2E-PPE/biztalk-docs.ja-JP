@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22257514"
 ---
 # <a name="instance-message-processing-using-distinguished-fields"></a>識別フィールドを使用したインスタンス メッセージの処理
 使用してプロパティの昇格、 **識別フィールド** メカニズムには、プロパティ スキーマの作成は不要です。 すべてのプロパティの昇格では使用すると、 **プロパティの昇格** を使用してアクセス可能なダイアログ ボックス、 **プロパティの昇格** のプロパティ、 **スキーマ** ノード メッセージ スキーマでまたはを使用して、 **昇格と &#124; 文字です。プロモーションを表示する** コマンドを **BizTalk** またはショートカット メニュー。  

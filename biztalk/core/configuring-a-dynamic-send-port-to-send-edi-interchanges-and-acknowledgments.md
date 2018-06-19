@@ -1,14 +1,14 @@
 ---
-title: "EDI インターチェンジと確認を送信する動的送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI インターチェンジと確認を送信する動的送信ポートの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a124059c-c29c-4a7f-a8a3-13dffc09ae5c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232818"
 ---
 # <a name="configuring-a-dynamic-send-port-to-send-edi-interchanges-and-acknowledgments"></a>EDI インターチェンジと確認を送信するための動的送信ポートの構成
 EDI 確認またはインターチェンジを送信するには、静的送信ポートまたは動的送信ポートを使用できます。 動的送信ポートは、アグリーメントを解決して、DestinationPartyName コンテキスト プロパティ内の値に基づいて送信先アドレスを特定します。そのため、動的送信ポートを使用すると、複数の送信先のいずれにもインターチェンジを送信できるようになります。  

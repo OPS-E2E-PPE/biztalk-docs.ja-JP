@@ -1,11 +1,11 @@
 ---
-title: "プリミティブ .NET 型から Web メッセージ部分を構築する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: プリミティブ .NET 型から Web メッセージ部分を構築する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, Web messages
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Web messages, parts
 - Web messages, .NET types
 ms.assetid: 1fe52412-d2bc-484c-8925-c7ff3ca7704b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248026"
 ---
 # <a name="how-to-construct-a-web-message-part-from-a-primitive-net-type"></a>プリミティブ .NET 型から Web メッセージ部分を構築する方法
 使用して、プリミティブ .NET 型から Web メッセージ部分を作成する、**メッセージの割り当て**図形です。 Web メッセージ部分を設定する .NET ヘルパー クラスを使用して、プリミティブ .NET 型からその部分を作成することもできます。 .NET クラスを使用してメッセージの種類を作成する方法の詳細については、次を参照してください。[ユーザー コードでメッセージを構築する](../core/constructing-messages-in-user-code.md)です。  

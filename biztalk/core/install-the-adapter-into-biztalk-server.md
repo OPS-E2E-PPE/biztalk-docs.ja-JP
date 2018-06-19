@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server にアダプターのインストール |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server にアダプターのインストール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1164468d-75a9-4116-87a6-6055948c198b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257722"
 ---
 # <a name="install-the-adapter-into-biztalk-server"></a>BizTalk Server へのアダプターのインストール
 適切な [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] エントリがレジストリに書き込まれた後に、アダプターを BizTalk 管理データベースに追加する必要があります。 アダプターをこのデータベースに追加すると、アクティブに構成されたアダプターになり、正しく構成されている場合はメッセージを処理できます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用してアダプターをデータベースにインストールします。 データベース内のアダプターをインストールした後に、ホスト インスタンスを再起動します。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
     |[アダプター]|選択**Static DotNetFile**ドロップダウン リストからです。|  
     |Description|型**静的アダプターのサンプル**です。|  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
      これで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールの右ウィンドウにあるアダプターの一覧に静的アダプターが表示されます。  
   

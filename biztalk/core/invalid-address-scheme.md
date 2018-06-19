@@ -1,14 +1,14 @@
 ---
-title: "無効なアドレス スキーム |Microsoft ドキュメント"
-ms.custom: 
+title: 無効なアドレス スキーム |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b059289-654e-40d6-a092-2a685e6e10f7
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257794"
 ---
 # <a name="invalid-address-scheme"></a>アドレス スキームが無効です
 ## <a name="details"></a>詳細  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  トランスポート名を右クリックします。  
   
-5.  **[プロパティ]**をクリックします。  
+5.  **[プロパティ]** をクリックします。  
   
 6.  ポート**型**一覧で、適切なポートを選択します。  
   
@@ -53,6 +54,6 @@ ms.lasthandoff: 09/20/2017
   
 8.  **WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。  
   
-9. **アドレス (URI)**テキスト ボックスに、アドレスの値が使用されている WCF アダプターの種類と一致していることを確認します。  
+9. **アドレス (URI)** テキスト ボックスに、アドレスの値が使用されている WCF アダプターの種類と一致していることを確認します。  
   
  また、システム指定のバインディングの種類で、Wcf-custom アダプターを使用する場合の値を確認、**バインドの種類**ボックスの一覧、**バインディング**タブです。場合、**バインドの種類**するように構成**customBinding**、アドレスがで表示されているトランスポート バインド要素と一致する必要があります、**バインドの種類**リストで、 **バインド**タブです。

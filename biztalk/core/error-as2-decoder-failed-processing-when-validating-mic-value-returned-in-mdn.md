@@ -1,14 +1,14 @@
 ---
-title: "AS2 デコーダーは、MDN に返された MIC 値を検証するときの処理が失敗しました |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 デコーダーは、MDN に返された MIC 値を検証するときの処理が失敗しました |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3fe2d76d-b0f1-4118-8483-547c2c9fffb7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241338"
 ---
 # <a name="the-as2-decoder-failed-processing-when-validating-the-mic-value-returned-in-the-mdn"></a>AS2 デコーダーで、MDN に返された MIC 値の検証中に処理が失敗しました
 ## <a name="details"></a>詳細  

@@ -1,11 +1,11 @@
 ---
-title: "ビジネス ルール エンジン |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ルール エンジン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, Business Rules Engine
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Business Rules Engine, rules
 - Business Rules Engine, about Business Rules Engine
 ms.assetid: 87b38507-9f6d-4863-88a6-9c20f15a4e55
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232618"
 ---
 # <a name="business-rules-engine"></a>ビジネス ルール エンジン
 ビジネス ルール フレームワークは、Microsoft .NET 準拠のクラス ライブラリです。 このフレームワークは、非常に判読しやすく意味論的にも充実した宣言型のルールを、任意のビジネス オブジェクト (.NET コンポーネント)、XML ドキュメント、またはデータベース テーブルにリンクできる効率的な推論エンジンを提供します。 アプリケーション開発者は、ビジネス ロジックの小さな構成要素 (小さなルール セット) を基にしてルールを作成することによって、ビジネス ルールを構築できます。ルールは、.NET オブジェクト、データベース テーブル、および XML ドキュメントに含まれている情報 (ファクト) に対して適用されます。 このデザイン パターンによって、コードの再利用、デザインの簡潔化、およびビジネス ロジックのモジュール化が促進されます。 また、ルール エンジンを利用することで、ビジネス アプリケーションのアーキテクチャやデザインに制約が生じることはありません。 実際、ルール エンジンを直接呼び出してルール テクノロジをビジネス アプリケーションに追加することも、ビジネス オブジェクトを変更せずにこれらを呼び出す外部ロジックを使用することもできます。 つまり、このテクノロジによって、開発者は最小限の作業でアプリケーションを作成および保守できるようになります。  

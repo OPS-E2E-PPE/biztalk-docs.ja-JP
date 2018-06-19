@@ -1,11 +1,11 @@
 ---
-title: "判断図形を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 判断図形を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Decide shape [Orchestration Designer]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Decide shape [Orchestration Designer], branching
 - configuring [Orchestration Designer], Decide shapes
 ms.assetid: 70910861-3834-49e7-ab1e-d62730ea2a95
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248690"
 ---
 # <a name="how-to-configure-the-decide-shape"></a>判断図形を構成する方法
 ![](../core/media/ebiz-orch-decide.gif "ebiz_orch_decide")  

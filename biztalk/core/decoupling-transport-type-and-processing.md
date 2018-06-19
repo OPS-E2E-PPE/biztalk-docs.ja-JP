@@ -1,11 +1,11 @@
 ---
-title: "トランスポートの種類の分離と処理 |Microsoft ドキュメント"
-ms.custom: 
+title: トランスポートの種類の分離と処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - transport types, decoupling processing
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - MQSeries adapters, correlations
 - MQSeries adapters, service solutions
 ms.assetid: 0b2c733a-e2c7-42ff-a733-f712fde38f7e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238602"
 ---
 # <a name="decoupling-transport-type-and-processing"></a>トランスポートの種類の分離と処理
 サービス指向ソリューションでは、ビジネス プロセスとメッセージの送受信の詳細を明確に区別することがよくあります。 これによって、ビジネス プロセスまたはソリューションのメッセージ処理部分を個別に変更できます。  

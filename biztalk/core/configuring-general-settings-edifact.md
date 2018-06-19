@@ -1,14 +1,14 @@
 ---
-title: "全般設定 (EDIFACT) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 全般設定 (EDIFACT) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e18892d3-c1a4-41c8-98c2-a116ce2805ba
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234570"
 ---
 # <a name="configuring-general-settings-edifact"></a>全般設定の構成 (EDIFACT)
 全般設定で指定する項目は、アグリーメント名、使用するプロトコル (X12 または EDIFACT)、このアグリーメントを結ぶパーティとプロファイル、およびこのアグリーメントを介して処理される全メッセージに対してレポート機能を有効にするかどうかです。 また、アグリーメントの中でパーティの連絡先情報を指定することもできます。  
@@ -101,7 +102,7 @@ ms.lasthandoff: 09/20/2017
     2.  **テキスト 1**、**テキスト 2**、および**アグリーメント**テキスト ボックスでは、パーティとのアグリーメントに関する情報を入力します。  
   
         > [!IMPORTANT]
-        >  クリックすると**[ok]**または**適用**すべての値を提供することは、このページに一覧表示後に、エラーが発生します。 その理由は、アグリーメントの作成に必要な値がまだ入力されていないからです。 UNB2 と UNB3 の値は、、**識別子**各一方向アグリーメント タブのページです。  
+        >  クリックすると **[ok]** または**適用**すべての値を提供することは、このページに一覧表示後に、エラーが発生します。 その理由は、アグリーメントの作成に必要な値がまだ入力されていないからです。 UNB2 と UNB3 の値は、、**識別子**各一方向アグリーメント タブのページです。  
   
 ## <a name="next-steps"></a>次の手順  
  ここで、アグリーメントのインターチェンジまたはトランザクション セットの設定を構成する必要があります。 手順を参照してください[インターチェンジの設定 (EDIFACT) を構成する](../core/configuring-interchange-settings-edifact.md)または[構成トランザクション セットの設定 (EDIFACT)](../core/configuring-transaction-set-settings-edifact.md)です。  

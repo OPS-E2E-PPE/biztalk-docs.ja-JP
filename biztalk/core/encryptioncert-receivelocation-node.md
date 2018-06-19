@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240514"
 ---
 # <a name="encryptioncert-receivelocation-node"></a>EncryptionCert (ReceiveLocation ノード)
 バインド ファイルの ReceiveLocation ノードの EncryptionCert ノードには、そのバインド ファイルと共にエクスポートされる受信場所で使用される暗号化証明書に関する情報が格納されます。  

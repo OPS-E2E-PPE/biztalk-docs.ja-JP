@@ -1,11 +1,11 @@
 ---
-title: "HTTP アダプター |Microsoft ドキュメント"
-ms.custom: 
+title: HTTP アダプター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP adapters, receive adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - send adapters, HTTP adapters
 - HTTP adapters, about HTTP adapters
 ms.assetid: a9423052-8392-4006-ab46-79834169c796
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256050"
 ---
 # <a name="http-adapter"></a>HTTP アダプター
 HTTP アダプタは、Microsoft BizTalk Server とアプリケーション間で HTTP プロトコルを介して情報を交換するために使用します。 HTTP は、企業間のメッセージ交換にとって主要なプロトコルです。 アプリケーションは、指定された HTTP URL に HTTP POST 要求または HTTP GET 要求を送信することで、サーバーにメッセージを送信できます。 HTTP アダプタは、HTTP 要求を受信し、その要求を処理するために BizTalk Server に送信します。 同様に、BizTalk Server は、指定された HTTP URL に HTTP POST 要求を送信することで、リモート アプリケーションにメッセージを送信できます。  

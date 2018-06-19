@@ -1,14 +1,14 @@
 ---
-title: "EDI インターチェンジと確認を送信する静的な送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI インターチェンジと確認を送信する静的な送信ポートの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5b432c5e-ea0c-4174-bb4a-958b061c1827
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234458"
 ---
 # <a name="configuring-a-static-send-port-to-send-edi-interchanges-and-acknowledgments"></a>EDI インターチェンジと受信確認を送信するための静的送信ポートの構成
 EDI 受信確認またはインターチェンジを送信するには、静的な一方向の送信ポートまたは静的な送信請求 - 応答 (双方向) の送信ポートを使用できます。  

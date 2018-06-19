@@ -1,14 +1,14 @@
 ---
-title: "SMTP アダプターに関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: SMTP アダプターに関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b530e39e-c4e7-4b98-be0b-4d02eb2e8dc7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261850"
 ---
 # <a name="known-issues-with-the-smtp-adapter"></a>SMTP アダプターに関する既知の問題
 ここでは、エラー回避に役立つ情報を記載します。  

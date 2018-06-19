@@ -1,14 +1,14 @@
 ---
-title: "新しいマップを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 新しいマップを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43b36cd8-f28e-4349-87d5-c94b7d8761bf
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249874"
 ---
 # <a name="how-to-create-new-maps"></a>新しいマップを作成する方法
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 09/20/2017
 5.  **BizTalk 型の選択**] ダイアログ ボックスで、展開、**スキーマ**ノードは、適切な送信元スキーマを選択し、[ **OK**です。  
 
     > [!TIP] 
-    > **以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**スキーマの完全な名前を表示する型の選択 ウィンドウのサイズを変更することができます。
+    > **以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]** スキーマの完全な名前を表示する型の選択 ウィンドウのサイズを変更することができます。
   
      送信元スキーマの単一のルートが存在するかを使用して、スキーマのルート ノードが設定された場合のみ、**ルート参照**のプロパティ、**スキーマ**ノード、送信元スキーマが左側のウィンドウで開きます手順 7. に進むことができます。  
   

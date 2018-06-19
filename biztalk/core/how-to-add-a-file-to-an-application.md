@@ -1,18 +1,18 @@
 ---
-title: "アプリケーションにファイルを追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションにファイルを追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [applications], adding files
 - files, adding to applications
 - managing [resources], adding files
 ms.assetid: 6665b946-113a-4026-a0a3-6b67ede4b689
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247738"
 ---
 # <a name="how-to-add-a-file-to-an-application"></a>アプリケーションにファイルを追加する方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、BizTalk アプリケーションにファイルを追加する方法について説明します。 アプリケーションをインストールすると、アプリケーションに追加するファイルはインストール フォルダーにコピーされます。 ファイルをアプリケーションの .msi ファイルにエクスポートして、アプリケーションと共にさまざまな環境に移動することもできます。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  **先**ファイルをファイル名を含む、.msi ファイルから、アプリケーションがインストールされているときにコピーする場所の完全なパスを入力します。 既定値は、アプリケーションのインストール フォルダー、%BTAD_InstallDir% です。 このパスを指定しないと、インストールでローカル ファイル システムにファイルがコピーされません。  
   
-8.  完了したら、 **[OK]**をクリックします。  
+8.  完了したら、 **[OK]** をクリックします。  
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用  
   

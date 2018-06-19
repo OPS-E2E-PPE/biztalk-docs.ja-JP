@@ -1,14 +1,14 @@
 ---
-title: "AS2 経由で Mdn が非同期の動的送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 経由で Mdn が非同期の動的送信ポートの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 72646c90-89db-4884-824b-6921bb824f8d
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233450"
 ---
 # <a name="configuring-a-dynamic-send-port-for-asynchronous-mdns-over-as2"></a>AS2 経由の非同期 MDN の動的送信ポートの構成
 EDIINT/AS2 でエンコードされた非同期 MDN メッセージを HTTP/HTTPS 経由で送信するには、次のように構成された動的な HTTP 送信ポートを作成します。  
@@ -43,7 +44,7 @@ EDIINT/AS2 でエンコードされた非同期 MDN メッセージを HTTP/HTTP
 -   アドレスに MDN をルーティングする、 **- Receipt-delivery-option**メッセージのヘッダー行にします。  
   
     > [!NOTE]
-    >  場合、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**プロパティ設定されて**検証**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックスで、送信ポートから送信 MDN メッセージに入力された URL に、 **- Receipt-delivery-option**アグリーメントのプロパティに記載されているアドレスがない**-Receipt-delivery-option**受信した AS2 メッセージのヘッダー。  
+    >  場合、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**プロパティ設定されて**検証**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックスで、送信ポートから送信 MDN メッセージに入力された URL に、 **- Receipt-delivery-option**アグリーメントのプロパティに記載されているアドレスがない **-Receipt-delivery-option**受信した AS2 メッセージのヘッダー。  
   
 ## <a name="see-also"></a>参照  
  [AS2 ソリューションのポートを構成します。](../core/configuring-ports-for-an-as2-solution.md)

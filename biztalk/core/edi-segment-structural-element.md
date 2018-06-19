@@ -1,14 +1,14 @@
 ---
-title: "EDI セグメントの構造体要素 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI セグメントの構造体要素 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1f474a3d-004a-4981-b155-b0a5775918ba
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242218"
 ---
 # <a name="edi-segment-structural-element"></a>EDI セグメントの構造要素
 セグメントは、メッセージの情報の中間単位であり、1 つ以上のデータ要素を含んでいます。 各セグメントは、3 文字のデータ セグメント識別子で始まり、セグメント終端記号 (既定ではアポストロフィ (')) で終わります。 セグメント内のデータ要素は、データ要素区切り記号で区切られます。 既定のデータ要素区切り記号は正符号 (+) です。 セグメントは、必須セグメントまたは省略可能なセグメントに分類されます。 送信インターチェンジの区切り記号は、2 つの取引先間のアグリーメントで設定するか、フォールバック取引先アグリーメントの一部として設定することができます。  

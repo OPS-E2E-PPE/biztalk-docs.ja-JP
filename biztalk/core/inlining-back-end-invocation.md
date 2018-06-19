@@ -1,11 +1,11 @@
 ---
-title: "バック エンド呼び出しのインライン展開 |Microsoft ドキュメント"
-ms.custom: 
+title: バック エンド呼び出しのインライン展開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MessageBox database, performance
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Inline Invocation of Back-End Processes [service solutions], performance
 - performance, MessageBox database
 ms.assetid: 991d080f-a4cc-4f14-bab3-3b8b74636daf
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257186"
 ---
 # <a name="inlining-back-end-invocation"></a>バック エンド呼び出しのインライン展開
 完全ソリューションのインライン呼び出しバージョンでは、処理時間の短縮が可能になります。 インライン バージョンでは、メッセージ ボックス データベースにおいてバックエンド システムに対する要求および応答メッセージを維持するオーバーヘッドがありません。 アダプタ バージョンでは、メッセージは送信オーケストレーションからメッセージ ボックスに送信されます。 アダプタを実行するホストがメッセージを受け取ってバックエンド プロセスに送信しますが、このとき、メッセージがメッセージ ボックスに再度送信されます。  

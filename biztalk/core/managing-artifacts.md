@@ -1,11 +1,11 @@
 ---
-title: "成果物の管理 |Microsoft ドキュメント"
-ms.custom: 
+title: 成果物の管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [applications], artifacts
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - artifacts, managing
 - managing [artifacts], about managing artificats
 ms.assetid: aa7c5e60-7c16-4bcf-b913-b1bdfc5c7543
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262258"
 ---
 # <a name="managing-artifacts"></a>アイテムの管理
 このセクションでは、アイテムの管理方法について説明します。BizTalk アプリケーションにアイテムを追加したり、BizTalk アプリケーションからアイテムを削除したりする方法のほか、アイテムのプロパティを構成する方法などを紹介します。  

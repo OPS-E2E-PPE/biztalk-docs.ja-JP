@@ -1,11 +1,11 @@
 ---
-title: "Readme ファイルにリンクする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Readme ファイルにリンクする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - linking, readme files
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - linking, applications
 - applications, linking
 ms.assetid: 7ddbfe77-c8b5-4f90-80ee-8fd5ba57170b
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254890"
 ---
 # <a name="how-to-link-to-a-readme-file"></a>Readme ファイルにリンクする方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、コントロール パネルの [プログラムの追加と削除] でユーザーがリンクをクリックしたときに表示される Readme.htm ファイルを追加する方法について説明します。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  **先**アプリケーションのインストール フォルダーの完全なパスが既定では、次のように指定された: %BTAD_InstallDir%\Readme.htm です。 このパスを変更する必要がありません。 アプリケーションのインストール フォルダーへの正しいパスが指定されていない場合、インストール中にファイルがこのパスにコピーされず、リンクが機能しません。  
   
-7.  完了したら、 **[OK]**をクリックします。  
+7.  完了したら、 **[OK]** をクリックします。  
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用  
   

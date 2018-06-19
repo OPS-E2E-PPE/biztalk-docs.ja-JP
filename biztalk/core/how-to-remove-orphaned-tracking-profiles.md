@@ -1,11 +1,11 @@
 ---
-title: "孤立した追跡プロファイルを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 孤立した追跡プロファイルを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, tracking profiles
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - tracking profiles, deleting
 - activities, tracking profiles
 ms.assetid: e8923dab-5d02-41a3-840b-104b20624e6c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255402"
 ---
 # <a name="how-to-remove-orphaned-tracking-profiles"></a>孤立した追跡プロファイルを削除する方法
 追跡プロファイルはアクティビティに関連付けられています。 アクティビティが展開解除された場合、これに関連する追跡プロファイルは孤立します。つまり、アクティビティとの関連付けが失われます。 次の手順に従うと、追跡プロファイルを削除できます。  

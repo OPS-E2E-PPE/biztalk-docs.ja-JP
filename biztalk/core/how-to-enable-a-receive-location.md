@@ -1,18 +1,18 @@
 ---
-title: "有効にする方法、受信場所 |Microsoft ドキュメント"
-ms.custom: 
+title: 有効にする方法、受信場所 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - enabling, receive locations
 - managing [receive locations], enabling
 - receive locations, enabling
 ms.assetid: ea1647cd-7bcb-4603-a64e-23b3fb0622a5
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253842"
 ---
 # <a name="how-to-enable-a-receive-location"></a>受信場所を有効にする方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、受信場所を有効にする方法について説明します。 受信場所を有効にしないと、メッセージは受信できません。  

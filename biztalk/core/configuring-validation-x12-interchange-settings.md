@@ -1,14 +1,14 @@
 ---
-title: "検証 (X12 インターチェンジの設定) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 検証 (X12 インターチェンジの設定) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fdad7016-1d66-4d11-b620-c28368f00133
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233274"
 ---
 # <a name="configuring-validation-x12-interchange-settings"></a>検証の構成 (X12 インターチェンジの設定)
 X12 インターチェンジの検証生成設定では、受信したインターチェンジの重複する制御番号を [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で確認する方法を定義します。  
