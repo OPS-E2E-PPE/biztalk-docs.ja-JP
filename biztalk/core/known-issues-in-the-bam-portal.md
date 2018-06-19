@@ -1,14 +1,14 @@
 ---
-title: "BAM ポータルに既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルに既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e681e910-c664-479c-86f3-a6ae0ec97775
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710757"
 ---
 # <a name="known-issues-in-the-bam-portal"></a><span data-ttu-id="bdfcb-102">BAM ポータルでの既知の問題</span><span class="sxs-lookup"><span data-stu-id="bdfcb-102">Known Issues in the BAM Portal</span></span>
 <span data-ttu-id="bdfcb-103">このトピックでは、BAM ポータルの使用中に発生する可能性がある問題の特定と解決に役立つ情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="bdfcb-103">This topic contains information to help you identify and resolve issues that can occur while you are using the BAM portal.</span></span>  
@@ -60,7 +61,7 @@ ms.lasthandoff: 02/28/2018
   
 5.  <span data-ttu-id="bdfcb-128">必要に応じて、復元、 **サーバーの確認 (https:) このゾーン内のすべてのサイトの** を元の状態のチェック ボックスです。</span><span class="sxs-lookup"><span data-stu-id="bdfcb-128">If necessary, restore the **Require server verification (https:) for all sites in this zone** check box to its original state.</span></span>  
   
-6.  <span data-ttu-id="bdfcb-129">クリックして、 **閉じる** ボタンをクリックし、をクリックし、 **[ok]**します。</span><span class="sxs-lookup"><span data-stu-id="bdfcb-129">Click the **Close** button, and then click **OK**.</span></span>  
+6.  <span data-ttu-id="bdfcb-129">クリックして、 **閉じる** ボタンをクリックし、をクリックし、 **[ok]** します。</span><span class="sxs-lookup"><span data-stu-id="bdfcb-129">Click the **Close** button, and then click **OK**.</span></span>  
   
 ## <a name="bam-portal-aggregations-do-not-populate-existing-data-when-using-an-ip-address-as-a-url-in-internet-explorer"></a><span data-ttu-id="bdfcb-130">ユーザーは、IP アドレスを Internet Explorer での URL として使用する場合は、Bam ポータルの集計には既存のデータは設定されません。</span><span class="sxs-lookup"><span data-stu-id="bdfcb-130">Bam Portal Aggregations Do Not Populate Existing Data When Using an IP Address as a URL in Internet Explorer</span></span>
  <span data-ttu-id="bdfcb-131">**問題**</span><span class="sxs-lookup"><span data-stu-id="bdfcb-131">**Problem**</span></span>  
@@ -85,7 +86,7 @@ ms.lasthandoff: 02/28/2018
   
 4.  <span data-ttu-id="bdfcb-142">**この web サイトをゾーンに追加**, を BAM ポータルの IP アドレスを入力して、クリックして **追加**します。</span><span class="sxs-lookup"><span data-stu-id="bdfcb-142">In **Add this website to the zone**, type the IP address of the BAM portal, and then click **Add**.</span></span>  
   
-5.  <span data-ttu-id="bdfcb-143">**[閉じる]**をクリックし、 **[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bdfcb-143">Click **Close**, and then click **OK**.</span></span>  
+5.  <span data-ttu-id="bdfcb-143">**[閉じる]** をクリックし、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bdfcb-143">Click **Close**, and then click **OK**.</span></span>  
   
 #### <a name="enable-access-to-data-sources-across-domains"></a><span data-ttu-id="bdfcb-144">ドメイン間でデータ ソースへのアクセスを有効にします。</span><span class="sxs-lookup"><span data-stu-id="bdfcb-144">Enable access to data sources across domains</span></span>  
   

@@ -1,11 +1,11 @@
 ---
-title: "BAM ポータルでの集計 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルでの集計 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal, pivot tables
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - charts, BAM portal
 - BAM portal, aggregations
 ms.assetid: 1c689563-714b-4573-9c18-a5b0efe97fb8
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230546"
 ---
 # <a name="aggregations-in-the-bam-portal"></a><span data-ttu-id="3acfe-102">BAM ポータルでの集計</span><span class="sxs-lookup"><span data-stu-id="3acfe-102">Aggregations in the BAM Portal</span></span>
 <span data-ttu-id="3acfe-103">集計とは、OLAP キューブで分析処理を行う際に使用できる事前計算されたデータのテーブルです。</span><span class="sxs-lookup"><span data-stu-id="3acfe-103">Aggregations are tables of precalculated data you can use for analytical processing with an OLAP cube.</span></span> <span data-ttu-id="3acfe-104">集計を使用すると、多次元データベースを効率的にクエリできるようになります。</span><span class="sxs-lookup"><span data-stu-id="3acfe-104">Aggregations facilitate the efficient querying of multidimensional databases.</span></span> <span data-ttu-id="3acfe-105">Excel 用の BAM アドインを使用して監視モデル (ビジネス データの概要定義) を作成および展開すると、集計が作成されます。この集計を使用すると、主要業績評価指数 (KPI) と関連のあるデータのコレクションを迅速に評価することができます。</span><span class="sxs-lookup"><span data-stu-id="3acfe-105">When you create and deploy your observation model (the high-level definition of your business data) using the BAM Add-In for Excel, you create aggregations that you can use to quickly evaluate collections of data relating your Key Performance Indicators (KPIs).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "XLANG の式 |Microsoft ドキュメント"
-ms.custom: 
+title: XLANG の式 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a477ee2c-7fd7-43bd-a194-0d68d79613fc
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289362"
 ---
 # <a name="xlang-s-expressions"></a><span data-ttu-id="9eba2-102">XLANG の式</span><span class="sxs-lookup"><span data-stu-id="9eba2-102">XLANG-s Expressions</span></span>
 <span data-ttu-id="9eba2-103">式は一連の演算子とオペランドで構成されます。</span><span class="sxs-lookup"><span data-stu-id="9eba2-103">An expression is a sequence of operators and operands.</span></span> <span data-ttu-id="9eba2-104">このトピックでは、XLANG/s が各種の式に対してサポートしている構文を示します。</span><span class="sxs-lookup"><span data-stu-id="9eba2-104">This topic illustrates the syntax that XLANG/s supports for various expressions.</span></span>  

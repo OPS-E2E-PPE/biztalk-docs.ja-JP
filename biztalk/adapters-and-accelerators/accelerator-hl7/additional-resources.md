@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004203"
 ---
 # <a name="additional-resources"></a><span data-ttu-id="b7817-102">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="b7817-102">Additional Resources</span></span>
 <span data-ttu-id="b7817-103">加え[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]と[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]このプラットフォームでのプログラミングについて説明するその他のリソースは、BizTalk Server のヘルプがあります。</span><span class="sxs-lookup"><span data-stu-id="b7817-103">In addition to [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] and [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server Help, there are additional resources that discuss programming on this platform.</span></span> <span data-ttu-id="b7817-104">これらのリソースに関する詳細については、次の Web サイトを参照してください。</span><span class="sxs-lookup"><span data-stu-id="b7817-104">For more information about these resources, go to the following Web sites:</span></span>  

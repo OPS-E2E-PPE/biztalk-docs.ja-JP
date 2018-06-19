@@ -1,14 +1,14 @@
 ---
-title: "WCF クライアントまたは SAP ソリューションの成果物のための WCF サービス コントラクトを生成 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF クライアントまたは SAP ソリューションの成果物のための WCF サービス コントラクトを生成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ff01e2b0-6480-427a-bc6d-6169e7d6e256
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217498"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts"></a><span data-ttu-id="9f003-102">WCF クライアントまたは SAP ソリューションの成果物のための WCF サービス コントラクトを生成します。</span><span class="sxs-lookup"><span data-stu-id="9f003-102">Generate a WCF client or a WCF service contract for SAP solution artifacts</span></span>
 <span data-ttu-id="9f003-103">使用することができます、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] WCF クライアント クラスまたは SAP アイテムの選択した操作を対象とした WCF サービス コントラクト (インターフェイス) を生成します。</span><span class="sxs-lookup"><span data-stu-id="9f003-103">You can use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] to generate a WCF client class or a WCF service contract (interface) targeted at selected operations on SAP artifacts.</span></span> <span data-ttu-id="9f003-104">ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を WCF クライアント クラスを生成または WCF サービス コントラクト以外にも使用できます。ただし、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]標準の Microsoft Windows インターフェイスを通じて ServiceModel メタデータ ユーティリティ ツールの機能を公開します。</span><span class="sxs-lookup"><span data-stu-id="9f003-104">You can also use the ServiceModel Metadata Utility Tool (svcutil.exe) to generate the WCF client class or WCF service contract; however, the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] exposes the functionality of the ServiceModel Metadata Utility Tool through a standard Microsoft Windows interface.</span></span> <span data-ttu-id="9f003-105">また、svcutil.exe ツールではない参照および検索の機能を提供し、SAP システムに接続するときに選択したバインドのプロパティに基づく構成ファイルを生成します。</span><span class="sxs-lookup"><span data-stu-id="9f003-105">It also provides browse and search capabilities that are not available with the svcutil.exe tool, and generates a configuration file based on the binding properties that you select when you connect to the SAP system.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="9f003-109">[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーでは、プロジェクトを右クリックし、をクリックして**アダプター サービス参照の追加**です。</span><span class="sxs-lookup"><span data-stu-id="9f003-109">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Solution Explorer, right-click your project, and then click **Add Adapter Service Reference**.</span></span>  
   
-2.  <span data-ttu-id="9f003-110">後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での SAP 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)SAP システムと参照操作を検索してに接続します。</span><span class="sxs-lookup"><span data-stu-id="9f003-110">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Get Metadata for SAP Operations in Visual Studio](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md) to connect to the SAP system and browse and search for operations.</span></span> <span data-ttu-id="9f003-111">選択した操作のための WCF クライアント クラスを作成することを確認**クライアント (送信操作)**からが選択されている、**選択コントラクト型**(これは、既定値) ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="9f003-111">To create a WCF client class for the operations that you select, be sure that **Client (Outbound operations)** is selected from the **Select contract type** drop-down list (this is the default).</span></span>  
+2.  <span data-ttu-id="9f003-110">後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での SAP 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)SAP システムと参照操作を検索してに接続します。</span><span class="sxs-lookup"><span data-stu-id="9f003-110">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Get Metadata for SAP Operations in Visual Studio](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md) to connect to the SAP system and browse and search for operations.</span></span> <span data-ttu-id="9f003-111">選択した操作のための WCF クライアント クラスを作成することを確認**クライアント (送信操作)** からが選択されている、**選択コントラクト型**(これは、既定値) ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="9f003-111">To create a WCF client class for the operations that you select, be sure that **Client (Outbound operations)** is selected from the **Select contract type** drop-down list (this is the default).</span></span>  
   
 3.  <span data-ttu-id="9f003-112">すべての対象をクリックする操作を選択した後**OK** WCF クライアント クラスを生成します。</span><span class="sxs-lookup"><span data-stu-id="9f003-112">After you select all of the operations that you want to target, click **OK** to generate the WCF client class.</span></span>  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="9f003-130">[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーでは、プロジェクトを右クリックし、をクリックして**アダプター サービス参照の追加**です。</span><span class="sxs-lookup"><span data-stu-id="9f003-130">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Solution Explorer, right-click your project, and then click **Add Adapter Service Reference**.</span></span>  
   
-2.  <span data-ttu-id="9f003-131">後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での SAP 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)SAP システムと参照操作を検索してに接続します。</span><span class="sxs-lookup"><span data-stu-id="9f003-131">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Get Metadata for SAP Operations in Visual Studio](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md) to connect to the SAP system and browse and search for operations.</span></span> <span data-ttu-id="9f003-132">選択した操作のための WCF サービス コントラクトを作成することを確認**サービス (入力方向の操作)**からが選択されている、**選択コントラクト型**ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="9f003-132">To create a WCF service contract for the operations that you select, be sure that **Service (Inbound operations)** is selected from the **Select contract type** drop-down list.</span></span>  
+2.  <span data-ttu-id="9f003-131">後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での SAP 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)SAP システムと参照操作を検索してに接続します。</span><span class="sxs-lookup"><span data-stu-id="9f003-131">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Get Metadata for SAP Operations in Visual Studio](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md) to connect to the SAP system and browse and search for operations.</span></span> <span data-ttu-id="9f003-132">選択した操作のための WCF サービス コントラクトを作成することを確認**サービス (入力方向の操作)** からが選択されている、**選択コントラクト型**ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="9f003-132">To create a WCF service contract for the operations that you select, be sure that **Service (Inbound operations)** is selected from the **Select contract type** drop-down list.</span></span>  
   
 3.  <span data-ttu-id="9f003-133">すべての対象をクリックする操作を選択した後**OK**を WCF サービス コントラクトを生成します。</span><span class="sxs-lookup"><span data-stu-id="9f003-133">After you select all of the operations that you want to target, click **OK** to generate the WCF service contract.</span></span>  
   

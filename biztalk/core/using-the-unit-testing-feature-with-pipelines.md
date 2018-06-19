@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d58bfa4-322b-455f-a062-5bd44d368f57
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26009155"
 ---
 # <a name="using-the-unit-testing-feature-with-pipelines"></a><span data-ttu-id="d28f4-102">パイプラインを含む単体テスト機能の使用</span><span class="sxs-lookup"><span data-stu-id="d28f4-102">Using the Unit Testing Feature with Pipelines</span></span>
 <span data-ttu-id="d28f4-103">このトピックでは、単体テスト機能を使用して、FlatFileReceive パイプラインの例に、パイプラインの単体テストを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d28f4-103">This topic demonstrates how to use the unit testing feature to add a unit test for the pipeline in the FlatFileReceive pipeline example.</span></span> <span data-ttu-id="d28f4-104">パイプラインの単体テストは」で説明されている Pipeline.exe ツールに似ています。[パイプライン ツール](../core/pipeline-tools.md)です。</span><span class="sxs-lookup"><span data-stu-id="d28f4-104">Pipeline unit testing is similar to the Pipeline.exe tool that is documented here: [Pipeline Tools](../core/pipeline-tools.md).</span></span> <span data-ttu-id="d28f4-105">単体テストを実行を有効にすると、 **展開** から、プロジェクトのプロパティ タブ、プロジェクト内のパイプライン クラスを派生 **Microsoft.BizTalk.TestTools.Pipeline.TestableReceivePipeline**します。</span><span class="sxs-lookup"><span data-stu-id="d28f4-105">When you enable unit testing on the **Deployment** tab of the project properties, the pipeline class in your project is derived from **Microsoft.BizTalk.TestTools.Pipeline.TestableReceivePipeline**.</span></span>  <span data-ttu-id="d28f4-106">このクラスは、Pipeline.exe ツールが公開する機能と同じ機能の一部をモデル化します。</span><span class="sxs-lookup"><span data-stu-id="d28f4-106">This class models some of the same functionality exposed by the Pipeline.exe tool.</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 03/28/2018
   
 8.  <span data-ttu-id="d28f4-120">**新しいテスト プロジェクト**  ダイアログ ボックスで、プロジェクト名としてそのまま使用 **TestProject1**  をクリック **作成**します。</span><span class="sxs-lookup"><span data-stu-id="d28f4-120">In the **New Test Project** dialog box, leave the project name as **TestProject1** and click **Create**.</span></span>  
   
-9. <span data-ttu-id="d28f4-121">**単体テストの作成**  ダイアログ ボックスで展開の種類を選択、 **FFReceivePipeline()** の下のコンス トラクター、 **ffreceivepipeline()** ノードです。</span><span class="sxs-lookup"><span data-stu-id="d28f4-121">In the **Create Unit Tests** dialog box, expand the types and select the **FFReceivePipeline()** constructor under the **Microsoft.Samples.BizTalk.FlatFileReceive.FFReceivePipeline** node.</span></span> <span data-ttu-id="d28f4-122">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d28f4-122">Click **OK**.</span></span>  
+9. <span data-ttu-id="d28f4-121">**単体テストの作成**  ダイアログ ボックスで展開の種類を選択、 **FFReceivePipeline()** の下のコンス トラクター、 **ffreceivepipeline()** ノードです。</span><span class="sxs-lookup"><span data-stu-id="d28f4-121">In the **Create Unit Tests** dialog box, expand the types and select the **FFReceivePipeline()** constructor under the **Microsoft.Samples.BizTalk.FlatFileReceive.FFReceivePipeline** node.</span></span> <span data-ttu-id="d28f4-122">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d28f4-122">Click **OK**.</span></span>  
   
 ## <a name="adding-test-code-to-test-the-pipeline"></a><span data-ttu-id="d28f4-123">パイプラインをテストするテスト コードの追加</span><span class="sxs-lookup"><span data-stu-id="d28f4-123">Adding Test Code to Test the Pipeline</span></span>  
   

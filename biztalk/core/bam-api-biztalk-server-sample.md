@@ -1,14 +1,14 @@
 ---
-title: "BAM API サンプル |Microsoft ドキュメント"
-ms.custom: 
+title: BAM API サンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 32a925f2-c7f4-4111-9c59-8865f15c6a89
-caps.latest.revision: 
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710453"
 ---
 # <a name="bam-api-biztalk-server-sample"></a><span data-ttu-id="645d1-102">BAM API (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="645d1-102">BAM API (BizTalk Server Sample)</span></span>
 <span data-ttu-id="645d1-103">BAM API サンプルは、BAM API への呼び出しを監視できる重要な情報を保存するアプリケーションに統合する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="645d1-103">The BAM API sample illustrates how to incorporate calls to the BAM API into an application to save key information that you can monitor.</span></span>  
@@ -92,7 +93,7 @@ ms.lasthandoff: 02/28/2018
  <span data-ttu-id="645d1-146">サンプルには、Visual Studio ソリューションだけでなく、アクティビティを定義する Microsoft Excel ファイルも含まれます。</span><span class="sxs-lookup"><span data-stu-id="645d1-146">In addition to the Visual Studio solution, the sample also contains a Microsoft Excel file that defines the activities.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="645d1-147">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="645d1-147">Where to Find This Sample</span></span>  
- <span data-ttu-id="645d1-148">このサンプルを見つけることができます*\<サンプル パス\>*\BAM\BamApiSample です。</span><span class="sxs-lookup"><span data-stu-id="645d1-148">You can find this sample at *\<Samples Path\>*\BAM\BamApiSample.</span></span>  
+ <span data-ttu-id="645d1-148">このサンプルを見つけることができます*\<サンプル パス\>* \BAM\BamApiSample です。</span><span class="sxs-lookup"><span data-stu-id="645d1-148">You can find this sample at *\<Samples Path\>* \BAM\BamApiSample.</span></span>  
   
  <span data-ttu-id="645d1-149">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="645d1-149">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -116,16 +117,16 @@ ms.lasthandoff: 02/28/2018
   
 ## <a name="run-the-bam-api-sample"></a><span data-ttu-id="645d1-182">BAM API サンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="645d1-182">Run the BAM API sample</span></span>  
   
-1.  <span data-ttu-id="645d1-183">管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\ BamApiSample\setup.bat です。</span><span class="sxs-lookup"><span data-stu-id="645d1-183">Open a command prompt as Administrator, and run *\<Samples Path\>*\BAM\ BamApiSample\setup.bat.</span></span>  
+1.  <span data-ttu-id="645d1-183">管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>* \BAM\ BamApiSample\setup.bat です。</span><span class="sxs-lookup"><span data-stu-id="645d1-183">Open a command prompt as Administrator, and run *\<Samples Path\>* \BAM\ BamApiSample\setup.bat.</span></span>  
   
-2.  <span data-ttu-id="645d1-184">管理者は、Visual Studio を起動し、開く、 *\<サンプル パス\>*\BAM\ BamApiSample\BamApiSample.sln ソリューションです。</span><span class="sxs-lookup"><span data-stu-id="645d1-184">Start Visual Studio as Administrator, and open the *\<Samples Path\>*\BAM\ BamApiSample\BamApiSample.sln solution.</span></span> 
+2.  <span data-ttu-id="645d1-184">管理者は、Visual Studio を起動し、開く、 *\<サンプル パス\>* \BAM\ BamApiSample\BamApiSample.sln ソリューションです。</span><span class="sxs-lookup"><span data-stu-id="645d1-184">Start Visual Studio as Administrator, and open the *\<Samples Path\>* \BAM\ BamApiSample\BamApiSample.sln solution.</span></span> 
   
     > [!IMPORTANT]
     >  <span data-ttu-id="645d1-185">BamApiSample.cs ファイルの `//#define Interceptor` の行をコメント化します。この行から "//" を削除しないでください。</span><span class="sxs-lookup"><span data-stu-id="645d1-185">The line `//#define Interceptor` in the BamApiSample.cs file must be commented out. Do not remove the “//” from this line.</span></span> <span data-ttu-id="645d1-186">BAM API サンプルでは、`#if Interceptor` プリプロセッサ ディレクティブ内にないコードのみを使用します。</span><span class="sxs-lookup"><span data-stu-id="645d1-186">The BAM API sample uses only the code that is not inside an `#if Interceptor` preprocessor directive.</span></span>  
   
 3.  <span data-ttu-id="645d1-187">ソリューションをビルドします。</span><span class="sxs-lookup"><span data-stu-id="645d1-187">Build the solution.</span></span>  
   
-4.  <span data-ttu-id="645d1-188">実行*\<パスのサンプル\>*\BAM\BamApiSample\bin\debug\BamApiSample.exe です。</span><span class="sxs-lookup"><span data-stu-id="645d1-188">Run *\<Samples Path\>*\BAM\BamApiSample\bin\debug\BamApiSample.exe.</span></span>  
+4.  <span data-ttu-id="645d1-188">実行*\<パスのサンプル\>* \BAM\BamApiSample\bin\debug\BamApiSample.exe です。</span><span class="sxs-lookup"><span data-stu-id="645d1-188">Run *\<Samples Path\>* \BAM\BamApiSample\bin\debug\BamApiSample.exe.</span></span>  
   
      <span data-ttu-id="645d1-189">出力は、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="645d1-189">The output will resemble the following:</span></span>  
   

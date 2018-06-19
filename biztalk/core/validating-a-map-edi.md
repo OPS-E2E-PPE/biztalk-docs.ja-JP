@@ -1,14 +1,14 @@
 ---
-title: "マップ (EDI) の検証 |Microsoft ドキュメント"
-ms.custom: 
+title: マップ (EDI) の検証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: caf58ecf-ed10-4c13-8d7d-e007b9158b0e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288426"
 ---
 # <a name="validating-a-map-edi"></a><span data-ttu-id="b837e-102">マップの検証 (EDI)</span><span class="sxs-lookup"><span data-stu-id="b837e-102">Validating a Map (EDI)</span></span>
 <span data-ttu-id="b837e-103">マップは、デザイン時に検証できます。</span><span class="sxs-lookup"><span data-stu-id="b837e-103">You can validate a map at design time.</span></span> <span data-ttu-id="b837e-104">XML ツール拡張機能を使用するためには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]環境。</span><span class="sxs-lookup"><span data-stu-id="b837e-104">To do so, you use the XML Tool extensions to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span> <span data-ttu-id="b837e-105">検証を行うと、マップの基になる XSLT を含むファイルと、拡張オブジェクトを含むファイルが生成されます。</span><span class="sxs-lookup"><span data-stu-id="b837e-105">This operation generates a file containing the underlying XSLT of the map and a file containing extension objects.</span></span>  

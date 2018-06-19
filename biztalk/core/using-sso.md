@@ -1,17 +1,17 @@
 ---
-title: "SSO を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: SSO を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO]
 - SSO, managing
 ms.assetid: e7245632-9c71-4b1f-836d-a4ea1dd6e5ee
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287818"
 ---
 # <a name="using-sso"></a><span data-ttu-id="36db2-102">SSO の使用</span><span class="sxs-lookup"><span data-stu-id="36db2-102">Using SSO</span></span>
 <span data-ttu-id="36db2-103">SSO システムは、MMC スナップインまたはコマンド ライン管理ユーティリティ (ssomanage) を使用して管理できます。</span><span class="sxs-lookup"><span data-stu-id="36db2-103">You can use either the MMC Snap-in or the command line management utility (ssomanage) to manage the SSO system.</span></span> <span data-ttu-id="36db2-104">管理作業には、データベースの更新、アプリケーションの追加、削除、管理、およびユーザー マッピングの管理などのアクティビティがあります。</span><span class="sxs-lookup"><span data-stu-id="36db2-104">This includes activities such as updating the SSO database, adding, deleting, and managing applications, and administering user mappings.</span></span>  

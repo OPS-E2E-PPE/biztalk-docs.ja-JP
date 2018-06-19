@@ -1,11 +1,11 @@
 ---
-title: "孤立したメッセージまたは重複メッセージを処理する送信ポートの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 孤立したメッセージまたは重複メッセージを処理する送信ポートの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, duplicate messages
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - send ports, orphaned messages
 - messages, send ports
 ms.assetid: 61d51206-13e3-4d32-a184-866248db9b45
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006955"
 ---
 # <a name="creating-a-send-port-to-handle-orphan-or-duplicate-messages"></a><span data-ttu-id="2a548-102">孤立したメッセージまたは重複メッセージを処理する送信ポートの作成</span><span class="sxs-lookup"><span data-stu-id="2a548-102">Creating a Send Port to Handle Orphan or Duplicate Messages</span></span>
 <span data-ttu-id="2a548-103">ここでは、孤立したメッセージや重複メッセージの削除に使用できる送信ポートの設定方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="2a548-103">This topic describes how to set up a send port that you can use to delete orphan or duplicate messages.</span></span>  
@@ -56,7 +57,7 @@ ms.lasthandoff: 12/01/2017
   
 10. <span data-ttu-id="2a548-133">右側のペインで 2 番目の行の**プロパティ** **Microsoft.Solutions.BTARN.GlobalSchemas.IsOrphanMessage**ドロップダウン リストからのままにして、**演算子**として **==** 、し、入力**True**の**値**です。</span><span class="sxs-lookup"><span data-stu-id="2a548-133">On the second line in the right pane, for **Property**, select **Microsoft.Solutions.BTARN.GlobalSchemas.IsOrphanMessage** from the drop-down list, leave the **Operator** as **==**, and then enter **True** for **Value**.</span></span>  
   
-11. <span data-ttu-id="2a548-134">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2a548-134">Click **OK**.</span></span>  
+11. <span data-ttu-id="2a548-134">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2a548-134">Click **OK**.</span></span>  
   
 12. <span data-ttu-id="2a548-135">BizTalk エクスプ ローラーで、送信ポートの名前を右クリックし、をクリックして**Enlist**です。</span><span class="sxs-lookup"><span data-stu-id="2a548-135">In BizTalk Explorer, right-click the name of the send port, click **Enlist**.</span></span> <span data-ttu-id="2a548-136">送信ポートが参加して後、送信ポートを右クリックし、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="2a548-136">After the send port has been enlisted, right-click the send port, and then click **Start**.</span></span>  
   

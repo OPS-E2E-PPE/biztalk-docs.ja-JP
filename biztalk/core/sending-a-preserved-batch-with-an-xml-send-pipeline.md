@@ -1,14 +1,14 @@
 ---
-title: "XML に保存されたバッチを送信する送信パイプライン |Microsoft ドキュメント"
-ms.custom: 
+title: XML に保存されたバッチを送信する送信パイプライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6765576a-134f-4856-911c-2f603b6479bd
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269826"
 ---
 # <a name="sending-a-preserved-batch-with-an-xml-send-pipeline"></a><span data-ttu-id="b54a2-102">XML 送信パイプラインによる保存されたバッチの送信</span><span class="sxs-lookup"><span data-stu-id="b54a2-102">Sending a Preserved Batch with an XML Send Pipeline</span></span>
 <span data-ttu-id="b54a2-103">通常、保存されたバッチは、EDI 送信パイプラインを使用して送信します。</span><span class="sxs-lookup"><span data-stu-id="b54a2-103">Normally, a preserved batch is sent using an EDI send pipeline.</span></span> <span data-ttu-id="b54a2-104">ただし、XML 送信パイプラインを使用して、保存されたバッチを送信することもできます。</span><span class="sxs-lookup"><span data-stu-id="b54a2-104">However, you can also use an XML send pipeline to send a preserved batch.</span></span> <span data-ttu-id="b54a2-105">EDI 受信パイプラインによって生成され、メッセージ ボックスにドロップされる場合の保存されたバッチは XML 形式であるため、XML 送信パイプラインでは、このバッチを XML 形式で渡します。</span><span class="sxs-lookup"><span data-stu-id="b54a2-105">Since the preserved batch that is generated and dropped in the MessageBox by the EDI receive pipeline is in the XML format, the XML send pipeline would pass along the batch in XML format.</span></span>  

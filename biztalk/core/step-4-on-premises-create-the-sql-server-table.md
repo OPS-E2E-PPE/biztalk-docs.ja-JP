@@ -1,14 +1,14 @@
 ---
-title: "手順 4 (オンプレミス): SQL Server テーブルの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4 (オンプレミス): SQL Server テーブルの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e7e253ac-8707-484f-8461-f098cc7ec7d8
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277266"
 ---
 # <a name="step-4-on-premises-create-the-sql-server-table"></a><span data-ttu-id="8b9a6-102">手順 4 (オンプレミス): SQL Server テーブルを作成します。</span><span class="sxs-lookup"><span data-stu-id="8b9a6-102">Step 4 (On Premises): Create the SQL Server Table</span></span>
 <span data-ttu-id="8b9a6-103">ビジネス シナリオの一環として、販売注文メッセージが Contoso により Northwind に送信されるメッセージ X12 最後に挿入する必要がで、 **SalesOrder**テーブル、注文数量が 100 より大きい場合。</span><span class="sxs-lookup"><span data-stu-id="8b9a6-103">As part of the business scenario, the message X12 sales order message sent by Contoso to Northwind must finally be inserted in a **SalesOrder** table, if the quantity ordered is greater than 100.</span></span> <span data-ttu-id="8b9a6-104">このトピックでは、作成する方法の説明、 **SalesOrder**収納内部設置型である SQL Server データベース インスタンス内のテーブルです。</span><span class="sxs-lookup"><span data-stu-id="8b9a6-104">This topic provides instructions on how to create the **SalesOrder** table within a SQL Server database instance that is housed on-premises.</span></span>  

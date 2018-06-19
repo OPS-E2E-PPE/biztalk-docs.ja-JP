@@ -1,14 +1,14 @@
 ---
-title: "手順 8: 当事者間の取引先アグリーメントの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 8: 当事者間の取引先アグリーメントの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f532f85-3f09-4b60-b7bb-817ee3c79899
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280018"
 ---
 # <a name="step-8-configure-the-trading-partner-agreement-between-the-parties"></a><span data-ttu-id="16da3-102">手順 8: 当事者間の取引先アグリーメントを構成します。</span><span class="sxs-lookup"><span data-stu-id="16da3-102">Step 8: Configure the Trading Partner Agreement between the Parties</span></span>
 <span data-ttu-id="16da3-103">![手順 9 の 8](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-8of9.gif "Step_8of9")</span><span class="sxs-lookup"><span data-stu-id="16da3-103">![Step 8 of 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-8of9.gif "Step_8of9")</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="16da3-115">**全般** タブで、**全般プロパティ** ページの 、**共通のホスト設定**セクションで、**レポートをオンに**、し、選択**reporting 用メッセージ ペイロードを格納**です。</span><span class="sxs-lookup"><span data-stu-id="16da3-115">In the **General** tab, on the **General Properties** page, in the **Common Host Settings** section, select **Turn ON reporting**, and then select **Store message payload for reporting**.</span></span>  
   
-8.  <span data-ttu-id="16da3-116">次のタスクを実行、 **Fabrikam OrderSystem]-> [**タブです。</span><span class="sxs-lookup"><span data-stu-id="16da3-116">Perform the following tasks on the **Fabrikam->OrderSystem** tab.</span></span>  
+8.  <span data-ttu-id="16da3-116">次のタスクを実行、 **Fabrikam OrderSystem]-> [** タブです。</span><span class="sxs-lookup"><span data-stu-id="16da3-116">Perform the following tasks on the **Fabrikam->OrderSystem** tab.</span></span>  
   
     1.  <span data-ttu-id="16da3-117">**識別子**ページで、**インターチェンジの設定**セクションで、修飾子と識別子のフィールドの値を入力 (**ISA5**、 **ISA6**、 **ISA7**、および**ISA8**) テスト メッセージのヘッダー フィールドの値に対応します。</span><span class="sxs-lookup"><span data-stu-id="16da3-117">On the **Identifiers** page under the **Interchange Settings** section, enter values for the qualifier and identifier fields (**ISA5**, **ISA6**, **ISA7**, and **ISA8**) that correspond to the values for those header fields in your test message.</span></span>  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="16da3-132">**受信確認** ページの 、**インターチェンジの設定**セクションで、 **997 が必要**です。</span><span class="sxs-lookup"><span data-stu-id="16da3-132">On the **Acknowledgements** page, under the **Interchange Settings** section, click **997 Expected**.</span></span> <span data-ttu-id="16da3-133">このチェック ボックスをオンにすることで、850 インターチェンジを受信したときに 997 受信確認を生成するという指示が受信パイプラインに対して出されます。</span><span class="sxs-lookup"><span data-stu-id="16da3-133">Selecting this check box prompts the receive pipeline to generate a 997 acknowledgment when it receives the 850 interchange..</span></span>  
   
-    3.  <span data-ttu-id="16da3-134">**検証**ページで、、**インターチェンジの設定**セクションで、確認してください**インターチェンジ制御番号 (ISA13 の重複のチェック)**オプションがオフになっています。</span><span class="sxs-lookup"><span data-stu-id="16da3-134">On the **Validation** page under the **Interchange Settings** section, make sure **Interchange Control Number (Check for duplicate ISA13)** option is unchecked.</span></span>  
+    3.  <span data-ttu-id="16da3-134">**検証**ページで、、**インターチェンジの設定**セクションで、確認してください**インターチェンジ制御番号 (ISA13 の重複のチェック)** オプションがオフになっています。</span><span class="sxs-lookup"><span data-stu-id="16da3-134">On the **Validation** page under the **Interchange Settings** section, make sure **Interchange Control Number (Check for duplicate ISA13)** option is unchecked.</span></span>  
   
         > [!NOTE]
         >  <span data-ttu-id="16da3-135">オフにすると、**重複している isa13 を確認して**プロパティでは、同じメッセージの複数のインスタンスを受信することができます。</span><span class="sxs-lookup"><span data-stu-id="16da3-135">Clearing the **Check for duplicate ISA13** property enables you to receive multiple instances of the same message.</span></span>  
@@ -82,7 +83,7 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  <span data-ttu-id="16da3-149">プロパティを設定すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、受信 850 インターチェンジの処理に使用するスキーマを決定できるようになります。</span><span class="sxs-lookup"><span data-stu-id="16da3-149">Setting the properties enables [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to determine the schema to be used in processing the incoming 850 interchange.</span></span> <span data-ttu-id="16da3-150">グリッド内の行に入力された [GS02] と [ST01] の値がインターチェンジに設定されている場合は、同じ行にあるターゲットの名前空間により、使用するスキーマが決定されます。</span><span class="sxs-lookup"><span data-stu-id="16da3-150">If an interchange has the values of GS02 and ST01 that are entered on a line of the grid, then the target namespace for the same line will be used to determine the schema to be used.</span></span>  
   
-9. <span data-ttu-id="16da3-151">次のタスクを実行、 **OrderSystem Fabrikam]-> [**タブです。</span><span class="sxs-lookup"><span data-stu-id="16da3-151">Perform the following tasks on the **OrderSystem->Fabrikam** tab.</span></span>  
+9. <span data-ttu-id="16da3-151">次のタスクを実行、 **OrderSystem Fabrikam]-> [** タブです。</span><span class="sxs-lookup"><span data-stu-id="16da3-151">Perform the following tasks on the **OrderSystem->Fabrikam** tab.</span></span>  
   
     1.  <span data-ttu-id="16da3-152">**識別子**ページで、**インターチェンジの設定**セクションで、修飾子と識別子のフィールドの値を入力 (**ISA5**、 **ISA6**、 **ISA7**、および**ISA8**) テスト メッセージのヘッダー フィールドの値に対応します。</span><span class="sxs-lookup"><span data-stu-id="16da3-152">On the **Identifiers** page under the **Interchange Settings** section, enter values for the qualifier and identifier fields (**ISA5**, **ISA6**, **ISA7**, and **ISA8**) that correspond to the values for those header fields in your test message.</span></span>  
   
@@ -105,10 +106,10 @@ ms.lasthandoff: 09/20/2017
         |<span data-ttu-id="16da3-172">**トランザクションの種類**</span><span class="sxs-lookup"><span data-stu-id="16da3-172">**Transaction Type**</span></span>|<span data-ttu-id="16da3-173">テスト メッセージのメッセージの種類を選択して**850 - 注文**です。</span><span class="sxs-lookup"><span data-stu-id="16da3-173">Select the message type of your test message, **850 - Purchase Order**.</span></span>|  
         |<span data-ttu-id="16da3-174">**バージョン/リリース**</span><span class="sxs-lookup"><span data-stu-id="16da3-174">**Version/Release**</span></span>|<span data-ttu-id="16da3-175">EDI のバージョンを入力**00401**です。</span><span class="sxs-lookup"><span data-stu-id="16da3-175">Enter the EDI version, **00401**.</span></span>|  
         |<span data-ttu-id="16da3-176">**ターゲットの名前空間**</span><span class="sxs-lookup"><span data-stu-id="16da3-176">**Target namespace**</span></span>|<span data-ttu-id="16da3-177">選択**http://schemas.microsoft.com/Edi/X12**です。</span><span class="sxs-lookup"><span data-stu-id="16da3-177">Select **http://schemas.microsoft.com/Edi/X12**.</span></span>|  
-        |<span data-ttu-id="16da3-178">**GS1**</span><span class="sxs-lookup"><span data-stu-id="16da3-178">**GS1**</span></span>|<span data-ttu-id="16da3-179">いることを確認**PO - 注文書 (850)**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="16da3-179">Verify that **PO - Purchase Order (850)** is selected.</span></span>|  
+        |<span data-ttu-id="16da3-178">**GS1**</span><span class="sxs-lookup"><span data-stu-id="16da3-178">**GS1**</span></span>|<span data-ttu-id="16da3-179">いることを確認**PO - 注文書 (850)** が選択されています。</span><span class="sxs-lookup"><span data-stu-id="16da3-179">Verify that **PO - Purchase Order (850)** is selected.</span></span>|  
         |<span data-ttu-id="16da3-180">**[GS2]**</span><span class="sxs-lookup"><span data-stu-id="16da3-180">**GS2**</span></span>|<span data-ttu-id="16da3-181">入力**1234567**です。</span><span class="sxs-lookup"><span data-stu-id="16da3-181">Enter **1234567**.</span></span><br /><br /> <span data-ttu-id="16da3-182">**送信者アプリケーション id。**</span><span class="sxs-lookup"><span data-stu-id="16da3-182">**Sender Application ID.**</span></span>|  
         |<span data-ttu-id="16da3-183">**[GS3]**</span><span class="sxs-lookup"><span data-stu-id="16da3-183">**GS3**</span></span>|<span data-ttu-id="16da3-184">入力**0000000**です。</span><span class="sxs-lookup"><span data-stu-id="16da3-184">Enter **0000000**.</span></span><br /><br /> <span data-ttu-id="16da3-185">**受信者アプリケーション id。**</span><span class="sxs-lookup"><span data-stu-id="16da3-185">**Receiver Application ID.**</span></span>|  
-        |<span data-ttu-id="16da3-186">**GS4**</span><span class="sxs-lookup"><span data-stu-id="16da3-186">**GS4**</span></span>|<span data-ttu-id="16da3-187">選択**CCYYMMDD**です。</span><span class="sxs-lookup"><span data-stu-id="16da3-187">Select **CCYYMMDD**.</span></span> <span data-ttu-id="16da3-188">**注:**ドロップダウン リストで、値を選択し、だけでなく、既定値を表示するフィールドをクリックする必要があります。</span><span class="sxs-lookup"><span data-stu-id="16da3-188">**Note:**  You have to select the value in the drop-down list, not just click in the field to display the default.</span></span> <span data-ttu-id="16da3-189">ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。</span><span class="sxs-lookup"><span data-stu-id="16da3-189">If you click in the field without selecting the value from the drop-down list, the value will not actually be selected.</span></span>|  
+        |<span data-ttu-id="16da3-186">**GS4**</span><span class="sxs-lookup"><span data-stu-id="16da3-186">**GS4**</span></span>|<span data-ttu-id="16da3-187">選択**CCYYMMDD**です。</span><span class="sxs-lookup"><span data-stu-id="16da3-187">Select **CCYYMMDD**.</span></span> <span data-ttu-id="16da3-188">**注:** ドロップダウン リストで、値を選択し、だけでなく、既定値を表示するフィールドをクリックする必要があります。</span><span class="sxs-lookup"><span data-stu-id="16da3-188">**Note:**  You have to select the value in the drop-down list, not just click in the field to display the default.</span></span> <span data-ttu-id="16da3-189">ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。</span><span class="sxs-lookup"><span data-stu-id="16da3-189">If you click in the field without selecting the value from the drop-down list, the value will not actually be selected.</span></span>|  
         |<span data-ttu-id="16da3-190">**GS5**</span><span class="sxs-lookup"><span data-stu-id="16da3-190">**GS5**</span></span>|<span data-ttu-id="16da3-191">選択**HHMM**です。</span><span class="sxs-lookup"><span data-stu-id="16da3-191">Select **HHMM**.</span></span>|  
         |<span data-ttu-id="16da3-192">**GS7**</span><span class="sxs-lookup"><span data-stu-id="16da3-192">**GS7**</span></span>|<span data-ttu-id="16da3-193">選択**X の間に認可 Standards Committee X12**です。</span><span class="sxs-lookup"><span data-stu-id="16da3-193">Select **X - Accredited Standards Committee X12**.</span></span>|  
         |<span data-ttu-id="16da3-194">**GS8**</span><span class="sxs-lookup"><span data-stu-id="16da3-194">**GS8**</span></span>|<span data-ttu-id="16da3-195">いることを確認**00401**が入力されました。</span><span class="sxs-lookup"><span data-stu-id="16da3-195">Verify that **00401** has been entered.</span></span>|  
@@ -116,9 +117,9 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="16da3-196">GS01、GS02、GS03、GS04、GS05、GS07、および入力した値に基づいて、送信する受信確認の GS08 の値が設定されます**トランザクション タイプ**、**バージョン/リリース**、および**ターゲット名前空間**です。</span><span class="sxs-lookup"><span data-stu-id="16da3-196"> will set the values for GS01, GS02, GS03, GS04, GS05, GS07, and GS08 of the outbound acknowledgments based on the values entered for **Transaction Type**, **Version/Release**, and **Target namespace**.</span></span> <span data-ttu-id="16da3-197">送信パイプラインは、トランザクション セットの種類、X12 バージョン、およびターゲットの名前空間と、メッセージ ヘッダー内の対応する値との照合を試みます。</span><span class="sxs-lookup"><span data-stu-id="16da3-197">The send pipeline attempts to match the transaction set type, the X12 version, and the target namespace with the corresponding values in the header of the message.</span></span> <span data-ttu-id="16da3-198">成功すると、その値が使用 GS に関連付けられている、**トランザクション タイプ**、**バージョン/リリース**、および**ターゲットの名前空間**値。</span><span class="sxs-lookup"><span data-stu-id="16da3-198">If successful, it uses the GS values associated with the **Transaction Type**, **Version/Release**, and **Target namespace** values.</span></span>  
   
-10. <span data-ttu-id="16da3-199">**[適用]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="16da3-199">Click **Apply**.</span></span>  
+10. <span data-ttu-id="16da3-199">**[適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="16da3-199">Click **Apply**.</span></span>  
   
-11. <span data-ttu-id="16da3-200">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="16da3-200">Click **OK**.</span></span> <span data-ttu-id="16da3-201">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="16da3-201">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="16da3-202">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="16da3-202">The newly added agreement is enabled by default.</span></span>  
+11. <span data-ttu-id="16da3-200">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="16da3-200">Click **OK**.</span></span> <span data-ttu-id="16da3-201">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="16da3-201">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="16da3-202">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="16da3-202">The newly added agreement is enabled by default.</span></span>  
   
 12. <span data-ttu-id="16da3-203">BizTalk サービスを再開します。</span><span class="sxs-lookup"><span data-stu-id="16da3-203">Restart the BizTalk Service.</span></span> <span data-ttu-id="16da3-204">BizTalk Server 管理コンソールで **プラットフォームの設定**をクリックして**ホスト インスタンス**を右クリックして**BizTalkServerApplication**をクリックして**再起動**です。</span><span class="sxs-lookup"><span data-stu-id="16da3-204">In the BizTalk Server Administration Console, under **Platform Settings**, click **Host Instances**, right-click **BizTalkServerApplication**, and then click **Restart**.</span></span>  
   

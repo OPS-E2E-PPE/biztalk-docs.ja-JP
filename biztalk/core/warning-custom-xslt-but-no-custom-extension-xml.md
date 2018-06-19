@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288362"
 ---
 # <a name="warning---custom-xslt-but-no-custom-extension-xml"></a><span data-ttu-id="bc36f-102">警告 - カスタム xslt は上書きがないカスタム拡張 XML</span><span class="sxs-lookup"><span data-stu-id="bc36f-102">Warning - Custom XSLT but No Custom Extension XML</span></span>
 <span data-ttu-id="bc36f-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="bc36f-103">**Error Code**</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278802"
 ---
 # <a name="the-messaging-engine"></a><span data-ttu-id="9d9fc-102">メッセージング エンジン</span><span class="sxs-lookup"><span data-stu-id="9d9fc-102">The Messaging Engine</span></span>
 <span data-ttu-id="9d9fc-103">このセクションでは、コンポーネントと、Microsoft BizTalk Server メッセージング エンジンを構成するアーキテクチャについて説明します。</span><span class="sxs-lookup"><span data-stu-id="9d9fc-103">This section discusses the components and architecture that comprise the Microsoft BizTalk Server Messaging engine.</span></span>  

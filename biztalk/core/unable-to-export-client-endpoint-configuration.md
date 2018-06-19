@@ -1,14 +1,14 @@
 ---
-title: "クライアント エンドポイント構成をエクスポートできません |。Microsoft ドキュメント"
-ms.custom: 
+title: クライアント エンドポイント構成をエクスポートできません |。Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d93fe5e-fdb2-49c5-86de-d428b1ecda7f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286954"
 ---
 # <a name="unable-to-export-client-endpoint-configuration"></a><span data-ttu-id="87b2a-102">クライアント エンドポイント構成をエクスポートできません</span><span class="sxs-lookup"><span data-stu-id="87b2a-102">Unable to export client endpoint configuration</span></span>
 ## <a name="details"></a><span data-ttu-id="87b2a-103">詳細</span><span class="sxs-lookup"><span data-stu-id="87b2a-103">Details</span></span>  
@@ -38,10 +39,10 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="87b2a-119">\- または -</span><span class="sxs-lookup"><span data-stu-id="87b2a-119">\- OR -</span></span>  
   
--   <span data-ttu-id="87b2a-120">一部の必須プロパティが正しく指定されていませんなど**アドレス (URI)**と**バインディングの種類**です。</span><span class="sxs-lookup"><span data-stu-id="87b2a-120">Some of the required properties were not correctly specified, such as **Address (URI)** and **Binding Type**.</span></span>  
+-   <span data-ttu-id="87b2a-120">一部の必須プロパティが正しく指定されていませんなど**アドレス (URI)** と**バインディングの種類**です。</span><span class="sxs-lookup"><span data-stu-id="87b2a-120">Some of the required properties were not correctly specified, such as **Address (URI)** and **Binding Type**.</span></span>  
   
 ## <a name="user-action"></a><span data-ttu-id="87b2a-121">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="87b2a-121">User Action</span></span>  
- <span data-ttu-id="87b2a-122">次の手順を使用して、ユーザーのアクセス許可を確認し、確認を**アドレス (URI)**と**バインディングの種類**設定が有効です。</span><span class="sxs-lookup"><span data-stu-id="87b2a-122">Use the following procedure to verify user permissions and confirm **Address (URI)** and **Binding Type** settings are valid.</span></span>  
+ <span data-ttu-id="87b2a-122">次の手順を使用して、ユーザーのアクセス許可を確認し、確認を**アドレス (URI)** と**バインディングの種類**設定が有効です。</span><span class="sxs-lookup"><span data-stu-id="87b2a-122">Use the following procedure to verify user permissions and confirm **Address (URI)** and **Binding Type** settings are valid.</span></span>  
   
 #### <a name="to-verify-user-permissions-and-confirm-settings"></a><span data-ttu-id="87b2a-123">ユーザーのアクセス許可と設定を確認するには</span><span class="sxs-lookup"><span data-stu-id="87b2a-123">To verify user permissions and confirm settings</span></span>  
   
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="87b2a-127">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="87b2a-127">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="87b2a-128">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="87b2a-128">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="87b2a-128">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="87b2a-128">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="87b2a-129">ポート**型**一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="87b2a-129">In the port **Type** list, select the correct port.</span></span>  
   

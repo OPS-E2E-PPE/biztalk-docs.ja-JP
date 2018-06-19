@@ -1,11 +1,11 @@
 ---
-title: "SSO を理解する |Microsoft ドキュメント"
-ms.custom: 
+title: SSO を理解する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, about SSO
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Extranet Single Sign-On (Web SSO)
 - Server-Based Intranet Single Sign-On
 ms.assetid: 03f78a7b-4880-408f-9733-d07e19775d21
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286986"
 ---
 # <a name="understanding-sso"></a><span data-ttu-id="7ec78-102">SSO について</span><span class="sxs-lookup"><span data-stu-id="7ec78-102">Understanding SSO</span></span>
 <span data-ttu-id="7ec78-103">エンタープライズ シングル サインオンを理解するには、現在使用可能な 3 種類のシングル サインオン サービス (Windows 統合、エクストラネット、およびイントラネット) を知っておくと役に立ちます。</span><span class="sxs-lookup"><span data-stu-id="7ec78-103">To understand Enterprise Single Sign-On, it is useful to look at the three types of Single Sign-On services available today: Windows integrated, extranet, and intranet.</span></span> <span data-ttu-id="7ec78-104">これら 3 種類のサービスについて以下で説明します。説明では、エンタープライズ シングル サインオンを 3 つのカテゴリに分けています。</span><span class="sxs-lookup"><span data-stu-id="7ec78-104">These are described below, with Enterprise Single Sign-On falling into the third category.</span></span>  

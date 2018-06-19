@@ -1,11 +1,11 @@
 ---
-title: "指向ソリューションのサービスを実行する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 指向ソリューションのサービスを実行する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service solution tutorial, client applications
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - service solution tutorial, sending requests
 - service solution tutorial, SOAP transports
 ms.assetid: 764a5ddc-e571-41d8-9e2f-6d0fb3361b2f
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973816"
 ---
 # <a name="how-to-run-the-service-oriented-solution"></a><span data-ttu-id="b086d-102">サービス指向ソリューションの実行方法</span><span class="sxs-lookup"><span data-stu-id="b086d-102">How to Run the Service Oriented Solution</span></span>
 <span data-ttu-id="b086d-103">次の手順では、単一のコンピュータでサービス指向ソリューションを実行および検証する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b086d-103">The following steps describe how to run and validate the service oriented solution on a single computer.</span></span> <span data-ttu-id="b086d-104">Payment Tracker シミュレーターを開始してから、SOAP トランスポートまたは MQSeries トランスポートを使用して、要求を送信できます (アダプター バージョンおよびインライン バージョンのサービス指向ソリューションには個別の手順を使用します)。</span><span class="sxs-lookup"><span data-stu-id="b086d-104">After starting the Payment Tracker simulator, you can send requests using either the SOAP or MQSeries transport (with separate procedures for the adapter and inline versions of the service oriented solution).</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="b086d-112">任意の 16 桁の数値を入力、**アカウント番号**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="b086d-112">Type any 16-digit number in the **Account Number** text box.</span></span>  
   
-4.  <span data-ttu-id="b086d-113">選択**SOAP (WS Call)**と**スタブ**で、 **Select Transport and Parameters**グループ ボックス。</span><span class="sxs-lookup"><span data-stu-id="b086d-113">Select **SOAP (WS Call)** and **Stub** in the **Select Transport and Parameters** group box.</span></span>  
+4.  <span data-ttu-id="b086d-113">選択**SOAP (WS Call)** と**スタブ**で、 **Select Transport and Parameters**グループ ボックス。</span><span class="sxs-lookup"><span data-stu-id="b086d-113">Select **SOAP (WS Call)** and **Stub** in the **Select Transport and Parameters** group box.</span></span>  
   
 5.  <span data-ttu-id="b086d-114">次の URL を入力、 **URL**などのテキスト ボックスします。</span><span class="sxs-lookup"><span data-stu-id="b086d-114">Type the following URL in the **URL** text box, for example:</span></span>  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  <span data-ttu-id="b086d-129">任意の 16 桁の数値を入力、**アカウント番号**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="b086d-129">Type any 16-digit number in the **Account Number** text box.</span></span>  
   
-    3.  <span data-ttu-id="b086d-130">選択**SOAP (WS Call)**と**アダプター**で、 **Select Transport and Parameters**グループ ボックス。</span><span class="sxs-lookup"><span data-stu-id="b086d-130">Select **SOAP (WS Call)** and **Adapter** in the **Select Transport and Parameters** group box.</span></span>  
+    3.  <span data-ttu-id="b086d-130">選択**SOAP (WS Call)** と**アダプター**で、 **Select Transport and Parameters**グループ ボックス。</span><span class="sxs-lookup"><span data-stu-id="b086d-130">Select **SOAP (WS Call)** and **Adapter** in the **Select Transport and Parameters** group box.</span></span>  
   
     4.  <span data-ttu-id="b086d-131">次の URL を入力、 **URL**などのテキスト ボックスします。</span><span class="sxs-lookup"><span data-stu-id="b086d-131">Type the following URL in the **URL** text box, for example:</span></span>  
   
@@ -137,7 +138,7 @@ ms.lasthandoff: 11/28/2017
   
     -   <span data-ttu-id="b086d-158">Payment Tracker シミュレータを起動したままにします。</span><span class="sxs-lookup"><span data-stu-id="b086d-158">Leave the Payment Tracker simulator running.</span></span>  
   
-2.  <span data-ttu-id="b086d-159">**BizTalk Server 管理コンソール**、展開**[btsscn.so.customerservice]**をクリックして**受信場所**を右クリックして**[Paymenttrackingsystemoutputqueue]**をクリックして右側のウィンドウ**を無効にする**です。</span><span class="sxs-lookup"><span data-stu-id="b086d-159">In the **BizTalk Server Administration Console**, expand **BTSScn.SO.CustomerService**, click **Receive Locations**, right-click **PaymentTrackingSystemOutputQueue** in the right pane, and then click **Disable**.</span></span>  
+2.  <span data-ttu-id="b086d-159">**BizTalk Server 管理コンソール**、展開 **[btsscn.so.customerservice]** をクリックして**受信場所**を右クリックして **[Paymenttrackingsystemoutputqueue]** をクリックして右側のウィンドウ**を無効にする**です。</span><span class="sxs-lookup"><span data-stu-id="b086d-159">In the **BizTalk Server Administration Console**, expand **BTSScn.SO.CustomerService**, click **Receive Locations**, right-click **PaymentTrackingSystemOutputQueue** in the right pane, and then click **Disable**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="b086d-160">アダプタ バージョンとインライン バージョンでは、同じ MQSeries キュー (LastPaymentsOutputQueue) が使用されます。</span><span class="sxs-lookup"><span data-stu-id="b086d-160">The adapter version and inline version uses the same MQSeries queue, LastPaymentsOutputQueue.</span></span> <span data-ttu-id="b086d-161">2 つのバージョンの競合状態を避けるには、MQSeries キューで受信を待機しているアダプタのバージョンの受信場所を無効にします。</span><span class="sxs-lookup"><span data-stu-id="b086d-161">To avoid the race condition between two versions, disable the adapter version's receive location listening on the MQSeries queue.</span></span>  
@@ -150,7 +151,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  <span data-ttu-id="b086d-165">任意の 16 桁の数値を入力、**アカウント番号**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="b086d-165">Type any 16-digit number in the **Account Number** text box.</span></span>  
   
-    3.  <span data-ttu-id="b086d-166">選択**SOAP (WS Call)**と**インライン**で、 **Select Transport and Parameters**グループ ボックス。</span><span class="sxs-lookup"><span data-stu-id="b086d-166">Select **SOAP (WS Call)** and **Inline** in the **Select Transport and Parameters** group box.</span></span>  
+    3.  <span data-ttu-id="b086d-166">選択**SOAP (WS Call)** と**インライン**で、 **Select Transport and Parameters**グループ ボックス。</span><span class="sxs-lookup"><span data-stu-id="b086d-166">Select **SOAP (WS Call)** and **Inline** in the **Select Transport and Parameters** group box.</span></span>  
   
     4.  <span data-ttu-id="b086d-167">次の URL を入力、 **URL**などのテキスト ボックスします。</span><span class="sxs-lookup"><span data-stu-id="b086d-167">Type the following URL in the **URL** text box, for example:</span></span>  
   

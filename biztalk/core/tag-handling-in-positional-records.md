@@ -1,14 +1,14 @@
 ---
-title: "位置指定レコードの処理をタグ |Microsoft ドキュメント"
-ms.custom: 
+title: 位置指定レコードの処理をタグ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c85d695-6dc9-4200-a453-dc576832adca
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278570"
 ---
 # <a name="tag-handling-in-positional-records"></a><span data-ttu-id="03917-102">位置指定レコードのタグ処理</span><span class="sxs-lookup"><span data-stu-id="03917-102">Tag Handling in Positional Records</span></span>
 

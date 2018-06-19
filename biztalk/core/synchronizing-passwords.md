@@ -1,14 +1,14 @@
 ---
-title: "パスワードの同期 |Microsoft ドキュメント"
-ms.custom: 
+title: パスワードの同期 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 398d149a-5d72-445e-a79f-927b3b923c46
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278186"
 ---
 # <a name="synchronizing-passwords"></a><span data-ttu-id="047d6-102">パスワードの同期</span><span class="sxs-lookup"><span data-stu-id="047d6-102">Synchronizing Passwords</span></span>
 <span data-ttu-id="047d6-103">パスワードの同期は、パスワード同期アダプターを使用して行います。</span><span class="sxs-lookup"><span data-stu-id="047d6-103">You synchronize a password by using a password sync adapter.</span></span> <span data-ttu-id="047d6-104">このアダプターには、特定の Windows 以外のリモート システムと通信するための機能や、そのシステムにパスワード情報の更新を指示するための機能が必要です。</span><span class="sxs-lookup"><span data-stu-id="047d6-104">This adapter should be able to communicate with a specific, remote, non-Windows system, and should also be able to instruct that system to update password information.</span></span>  

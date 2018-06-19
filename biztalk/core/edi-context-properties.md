@@ -1,14 +1,14 @@
 ---
-title: "EDI コンテキスト プロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: EDI コンテキスト プロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6a408af-daf5-4e9e-afb3-9fd1795e8c16
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010619"
 ---
 # <a name="edi-context-properties"></a><span data-ttu-id="65616-102">EDI のコンテキスト プロパティ</span><span class="sxs-lookup"><span data-stu-id="65616-102">EDI Context Properties</span></span>
 <span data-ttu-id="65616-103">EDI グローバル プロパティ スキーマのメッセージ コンテキスト プロパティは公開されるため、メッセージ ルーティングなどの操作で使用できます。</span><span class="sxs-lookup"><span data-stu-id="65616-103">The message context properties in the EDI global property schema are publicly exposed so you can use them in operations such as message routing.</span></span> <span data-ttu-id="65616-104">これらのコンテキスト プロパティは、Microsoft.BizTalk.Edi.BaseArtifacts アセンブリの PropertySchema.xsd で定義されています。</span><span class="sxs-lookup"><span data-stu-id="65616-104">These context properties are defined in PropertySchema.xsd in the Microsoft.BizTalk.Edi.BaseArtifacts assembly.</span></span> <span data-ttu-id="65616-105">これらのプロパティの名前空間は `http://schemas.microsoft.com/ Edi/PropertySchema` です。</span><span class="sxs-lookup"><span data-stu-id="65616-105">The namespace for the properties is `http://schemas.microsoft.com/ Edi/PropertySchema`.</span></span> <span data-ttu-id="65616-106">昇格されたメッセージ コンテキスト プロパティは Edi として使用できます。\<*プロパティ名*\>で、**フィルター**のページ、**送信ポートのプロパティ ダイアログ ボックス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。</span><span class="sxs-lookup"><span data-stu-id="65616-106">If they are promoted, these message context properties are available as Edi.\<*Property Name*\> in the **Filters** page of the **Send Port Properties Dialog Box** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>

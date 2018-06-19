@@ -1,18 +1,18 @@
 ---
-title: "WCF アダプタのパフォーマンス カウンタ |Microsoft ドキュメント"
-ms.custom: 
+title: WCF アダプタのパフォーマンス カウンタ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, WCF adapters
 - performance, performance counters
 - WCF adapters, performance
 ms.assetid: 9feb052f-5674-419f-84ab-9b5d312a04a5
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289474"
 ---
 # <a name="wcf-adapters-performance-counters"></a><span data-ttu-id="a2be0-102">WCF アダプタのパフォーマンス カウンタ</span><span class="sxs-lookup"><span data-stu-id="a2be0-102">WCF Adapters Performance Counters</span></span>
 <span data-ttu-id="a2be0-103">パフォーマンス カウンタを使用すると、サービスによってサイトまたはシステムで実行されている作業の具体的な側面を監視できます。</span><span class="sxs-lookup"><span data-stu-id="a2be0-103">Performance counters enable you to monitor specific aspects of work performed on the site or system by a service.</span></span> <span data-ttu-id="a2be0-104">パフォーマンス カウンターは、サーバー パフォーマンスに関する問題を特定してトラブルシューティングする際に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="a2be0-104">Performance counters can help you identify and troubleshoot server performance issues.</span></span> <span data-ttu-id="a2be0-105">WCF アダプタ自体のパフォーマンス カウンタはありません。</span><span class="sxs-lookup"><span data-stu-id="a2be0-105">The WCF adapters do not provide their own performance counters.</span></span> <span data-ttu-id="a2be0-106">しかし、Windows Communication Foundation (WCF) のパフォーマンス カウンタを監視して、WCF 受信場所のパフォーマンスを測定できます。</span><span class="sxs-lookup"><span data-stu-id="a2be0-106">However, you can monitor the performance counters of Windows Communication Foundation (WCF) to gauge the performance of the WCF receive locations.</span></span> <span data-ttu-id="a2be0-107">WCF 受信場所に対して WCF パフォーマンス カウンタを使用するには、受信場所を実行するホスト インスタンスのパフォーマンス カウンタを有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a2be0-107">To use the WCF performance counters for the WCF receive locations, you have to enable the performance counters for the host instances running the receive locations.</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="a2be0-120">**ServiceOnly**: のみ**ServiceModelService**カテゴリ カウンターを有効にします。</span><span class="sxs-lookup"><span data-stu-id="a2be0-120">**ServiceOnly**: Only **ServiceModelService** category counters are enabled.</span></span>  
   
--   <span data-ttu-id="a2be0-121">**オフ**: ServiceModel * パフォーマンス カウンターが無効です。</span><span class="sxs-lookup"><span data-stu-id="a2be0-121">**Off**: ServiceModel* performance counters are disabled.</span></span> <span data-ttu-id="a2be0-122">これが既定値です。</span><span class="sxs-lookup"><span data-stu-id="a2be0-122">This is the default value.</span></span>  
+-   <span data-ttu-id="a2be0-121">**オフ**: ServiceModel \* パフォーマンス カウンターが無効です。</span><span class="sxs-lookup"><span data-stu-id="a2be0-121">**Off**: ServiceModel\* performance counters are disabled.</span></span> <span data-ttu-id="a2be0-122">これが既定値です。</span><span class="sxs-lookup"><span data-stu-id="a2be0-122">This is the default value.</span></span>  
   
  <span data-ttu-id="a2be0-123">BTSNTSvc.exe.config ファイルを変更した後、インプロセス WCF 受信場所を実行するホスト インスタンスを再起動する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a2be0-123">After modifying the BTSNTSvc.exe.config file, you must restart the host instances running the in-process WCF receive locations.</span></span>  
   

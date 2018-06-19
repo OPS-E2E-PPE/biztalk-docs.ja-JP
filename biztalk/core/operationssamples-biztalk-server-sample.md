@@ -1,14 +1,14 @@
 ---
-title: "OperationsSamples (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: OperationsSamples (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3c9e3f3e-a570-4edd-aa2e-3f8e2e37c8a0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010251"
 ---
 # <a name="operationssamples-biztalk-server-sample"></a><span data-ttu-id="14e3f-102">OperationsSamples (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="14e3f-102">OperationsSamples (BizTalk Server Sample)</span></span>
 <span data-ttu-id="14e3f-103">OperationsSamples サンプルは、Operations オブジェクト モデルを使用して、さまざまな操作を実行する方法を具体的に示します。</span><span class="sxs-lookup"><span data-stu-id="14e3f-103">The OperationsSamples sample demonstrates how to perform operational activities using the Operations object model.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "手順 6: 組織にデータを送信する送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 6: 組織にデータを送信する送信ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 796570ca-8178-4679-9213-d67a2a189bf9
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277010"
 ---
 # <a name="step-6-configure-a-send-port-to-send-data-to-your-organization"></a><span data-ttu-id="70f1d-102">手順 6: 組織にデータを送信する送信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="70f1d-102">Step 6: Configure a Send Port to Send Data to Your Organization</span></span>
 <span data-ttu-id="70f1d-103">![手順 9 の 6](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-6of9.gif "Step_6of9")</span><span class="sxs-lookup"><span data-stu-id="70f1d-103">![Step 6 of 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-6of9.gif "Step_6of9")</span></span>  
@@ -66,22 +67,22 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="70f1d-134">プロパティ</span><span class="sxs-lookup"><span data-stu-id="70f1d-134">Use this</span></span>|<span data-ttu-id="70f1d-135">目的</span><span class="sxs-lookup"><span data-stu-id="70f1d-135">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="70f1d-136">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="70f1d-136">**Property**</span></span>|<span data-ttu-id="70f1d-137">選択**BTS です。ReceivePortName**です。</span><span class="sxs-lookup"><span data-stu-id="70f1d-137">Select **BTS.ReceivePortName**.</span></span>|  
-    |<span data-ttu-id="70f1d-138">**演算子**</span><span class="sxs-lookup"><span data-stu-id="70f1d-138">**Operator**</span></span>|<span data-ttu-id="70f1d-139">選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="70f1d-139">Select **==**.</span></span>|  
+    |<span data-ttu-id="70f1d-138">**演算子**</span><span class="sxs-lookup"><span data-stu-id="70f1d-138">**Operator**</span></span>|<span data-ttu-id="70f1d-139">選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="70f1d-139">Select **==**.</span></span>|  
     |<span data-ttu-id="70f1d-140">**値**</span><span class="sxs-lookup"><span data-stu-id="70f1d-140">**Value**</span></span>|<span data-ttu-id="70f1d-141">入力`ReceiveEDI_fromTHEM_A`です。</span><span class="sxs-lookup"><span data-stu-id="70f1d-141">Enter `ReceiveEDI_fromTHEM_A`.</span></span>|  
     |<span data-ttu-id="70f1d-142">**グループ化**</span><span class="sxs-lookup"><span data-stu-id="70f1d-142">**Group by**</span></span>|<span data-ttu-id="70f1d-143">選択**と**です。</span><span class="sxs-lookup"><span data-stu-id="70f1d-143">Select **And**.</span></span>|  
     |<span data-ttu-id="70f1d-144">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="70f1d-144">**Property**</span></span>|<span data-ttu-id="70f1d-145">次の行では、次のように選択します。 **BTS です。MessageType**です。</span><span class="sxs-lookup"><span data-stu-id="70f1d-145">On the next line, select **BTS.MessageType**.</span></span>|  
-    |<span data-ttu-id="70f1d-146">**演算子**</span><span class="sxs-lookup"><span data-stu-id="70f1d-146">**Operator**</span></span>|<span data-ttu-id="70f1d-147">選択**! =**です。</span><span class="sxs-lookup"><span data-stu-id="70f1d-147">Select **!=**.</span></span>|  
+    |<span data-ttu-id="70f1d-146">**演算子**</span><span class="sxs-lookup"><span data-stu-id="70f1d-146">**Operator**</span></span>|<span data-ttu-id="70f1d-147">選択 **! =** です。</span><span class="sxs-lookup"><span data-stu-id="70f1d-147">Select **!=**.</span></span>|  
     |<span data-ttu-id="70f1d-148">**値**</span><span class="sxs-lookup"><span data-stu-id="70f1d-148">**Value**</span></span>|<span data-ttu-id="70f1d-149">入力`http://schemas.microsoft.com/Edi/X12#X12_997_Root`です。</span><span class="sxs-lookup"><span data-stu-id="70f1d-149">Enter `http://schemas.microsoft.com/Edi/X12#X12_997_Root`.</span></span>|  
   
     > [!NOTE]
     >  <span data-ttu-id="70f1d-150">フィルターにより、送信ポートは Receive_EDI_fromTHEM_A 受信場所で受信されたメッセージを取得し、997 受信確認ではなく 850 メッセージのみを取得します。</span><span class="sxs-lookup"><span data-stu-id="70f1d-150">The filter ensures that the send port will pick up messages that were received by the Receive_EDI_fromTHEM_A receive location, and that the send port will not pick up 997 acknowledgments, but will pick only 850 messages.</span></span>  
   
-7.  <span data-ttu-id="70f1d-151">コンソール ツリーでクリックして**[outboundmaps]**です。</span><span class="sxs-lookup"><span data-stu-id="70f1d-151">In the console tree, click **OutboundMaps**.</span></span> <span data-ttu-id="70f1d-152">**送信マップ** ウィンドウで、**マップ**select の最初の行で、列**Inbound4010850_to_OrderFile**です。</span><span class="sxs-lookup"><span data-stu-id="70f1d-152">In the **Outbound Maps** pane, in the **Map** column, on the first row, select **Inbound4010850_to_OrderFile**.</span></span> <span data-ttu-id="70f1d-153">(内のエントリ、**ソース ドキュメント**列は X12_00401_850 になります)。</span><span class="sxs-lookup"><span data-stu-id="70f1d-153">(The entry in the **Source Document** column will be X12_00401_850.)</span></span>  
+7.  <span data-ttu-id="70f1d-151">コンソール ツリーでクリックして **[outboundmaps]** です。</span><span class="sxs-lookup"><span data-stu-id="70f1d-151">In the console tree, click **OutboundMaps**.</span></span> <span data-ttu-id="70f1d-152">**送信マップ** ウィンドウで、**マップ**select の最初の行で、列**Inbound4010850_to_OrderFile**です。</span><span class="sxs-lookup"><span data-stu-id="70f1d-152">In the **Outbound Maps** pane, in the **Map** column, on the first row, select **Inbound4010850_to_OrderFile**.</span></span> <span data-ttu-id="70f1d-153">(内のエントリ、**ソース ドキュメント**列は X12_00401_850 になります)。</span><span class="sxs-lookup"><span data-stu-id="70f1d-153">(The entry in the **Source Document** column will be X12_00401_850.)</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="70f1d-154">この手順により、出力メッセージはに従って入力メッセージからマップされたデータののみで構成されること、 **Inbound4010850_to_OrderFile**マップします。</span><span class="sxs-lookup"><span data-stu-id="70f1d-154">This step ensures that the output message will consist only of the data mapped from the input message according to the **Inbound4010850_to_OrderFile** map.</span></span>  
   
-8.  <span data-ttu-id="70f1d-155">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="70f1d-155">Click **OK**.</span></span>  
+8.  <span data-ttu-id="70f1d-155">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="70f1d-155">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="70f1d-156">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、をクリックして**送信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="70f1d-156">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, click **Send Ports**.</span></span> <span data-ttu-id="70f1d-157">右クリック**toOrderSystem**、クリックして**開始**を参加させて、ポートを開始します。</span><span class="sxs-lookup"><span data-stu-id="70f1d-157">Right-click **toOrderSystem**, and then click **Start** to enlist and start the port.</span></span>  
   

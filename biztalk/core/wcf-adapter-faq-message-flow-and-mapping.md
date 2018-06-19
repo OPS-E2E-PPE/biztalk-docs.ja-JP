@@ -1,14 +1,14 @@
 ---
-title: "WCF アダプター FAQ: メッセージのフローとマッピング |Microsoft ドキュメント"
-ms.custom: 
+title: 'WCF アダプター FAQ: メッセージのフローとマッピング |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 907e5c6a-a095-4b3a-9362-506832b6bc8c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976032"
 ---
 # <a name="wcf-adapter-faq-message-flow-and-mapping"></a><span data-ttu-id="0a2f0-102">WCF アダプター FAQ: メッセージのフローとマッピング</span><span class="sxs-lookup"><span data-stu-id="0a2f0-102">WCF Adapter FAQ: Message Flow and Mapping</span></span>
 ## <a name="what-is-the-message-flow-within-the-wcf-and-biztalk-systems"></a><span data-ttu-id="0a2f0-103">WCF と BizTalk システム内のメッセージ フローとはどのようなものですか。</span><span class="sxs-lookup"><span data-stu-id="0a2f0-103">What is the message flow within the WCF and BizTalk systems?</span></span>  
@@ -86,7 +87,7 @@ ms.lasthandoff: 11/28/2017
   
  <span data-ttu-id="0a2f0-181">WCF アダプターで SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させるには、WCF メッセージで次のメッセージ プロパティを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0a2f0-181">A WCF adapter expects the following message properties in the WCF messages for writing or promoting SOAP header values to the BizTalk message context:</span></span>  
   
--   <span data-ttu-id="0a2f0-182">BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格するには、WCF アダプタを探しているキーのペアは、 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**および値**リスト <KeyValuePair\<XmlQualifiedName、オブジェクト\>>**です。</span><span class="sxs-lookup"><span data-stu-id="0a2f0-182">To promote the SOAP header values to the BizTalk message context, WCF adapters are looking for the pair of key **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote** and value **List<KeyValuePair\<XmlQualifiedName, object\>>**.</span></span> <span data-ttu-id="0a2f0-183">このペアを使用して、WCF アダプタを実行し、名前空間、名前からの値、 **XmlQualifiedName**オブジェクトおよびヘッダーの値を昇格させるために使用します。</span><span class="sxs-lookup"><span data-stu-id="0a2f0-183">Using this pair, WCF adapters take the namespace, name, and value from the **XmlQualifiedName** object and use them for promoting the header values.</span></span>  
+-   <span data-ttu-id="0a2f0-182">BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格するには、WCF アダプタを探しているキーのペアは、 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**および値**リスト <KeyValuePair\<XmlQualifiedName、オブジェクト\>>** です。</span><span class="sxs-lookup"><span data-stu-id="0a2f0-182">To promote the SOAP header values to the BizTalk message context, WCF adapters are looking for the pair of key **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote** and value **List<KeyValuePair\<XmlQualifiedName, object\>>**.</span></span> <span data-ttu-id="0a2f0-183">このペアを使用して、WCF アダプタを実行し、名前空間、名前からの値、 **XmlQualifiedName**オブジェクトおよびヘッダーの値を昇格させるために使用します。</span><span class="sxs-lookup"><span data-stu-id="0a2f0-183">Using this pair, WCF adapters take the namespace, name, and value from the **XmlQualifiedName** object and use them for promoting the header values.</span></span>  
   
 -   <span data-ttu-id="0a2f0-184">キーのペアを探している WCF アダプタになりますが、BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格しません**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**と値**一覧 < KeyValuePair\<XmlQualifiedName、オブジェクト\>>。**</span><span class="sxs-lookup"><span data-stu-id="0a2f0-184">To write, but not promote, the SOAP header values into the BizTalk message context, WCF adapters are looking for the pair of key **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext** and value **List<KeyValuePair\<XmlQualifiedName, object\>>.**</span></span> <span data-ttu-id="0a2f0-185">WCF アダプターは、このペアを使用して、値をメッセージ コンテキストに書き込みます。</span><span class="sxs-lookup"><span data-stu-id="0a2f0-185">Using this pair, WCF adapters write the values to the message context.</span></span>  
   

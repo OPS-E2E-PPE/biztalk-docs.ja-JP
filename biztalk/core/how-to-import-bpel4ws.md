@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31008477"
 ---
 # <a name="import-bpel4ws-in-biztalk-server"></a><span data-ttu-id="14fad-102">BizTalk Server での BPEL4WS をインポートします。</span><span class="sxs-lookup"><span data-stu-id="14fad-102">Import BPEL4WS in BizTalk Server</span></span>
 <span data-ttu-id="14fad-103">既存の BPEL4WS をインポートすることによってオーケストレーションを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="14fad-103">You can import from existing BPEL4WS to create an orchestration.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286434"
 ---
 # <a name="types-of-pipelines"></a><span data-ttu-id="5700c-102">パイプラインの種類</span><span class="sxs-lookup"><span data-stu-id="5700c-102">Types of Pipelines</span></span>
 <span data-ttu-id="5700c-103">BizTalk プロジェクトで新しいパイプラインを作成する場合、受信パイプラインと送信パイプラインの 2 つの選択肢があります。</span><span class="sxs-lookup"><span data-stu-id="5700c-103">When creating a new pipeline in a BizTalk project, you have two options, a receive pipeline and a send pipeline.</span></span> <span data-ttu-id="5700c-104">このセクションでは、パイプラインの種類の違いと、それぞれの設計時の考慮事項について説明します。</span><span class="sxs-lookup"><span data-stu-id="5700c-104">This section explains the differences between the pipeline types, and design considerations for each.</span></span>  

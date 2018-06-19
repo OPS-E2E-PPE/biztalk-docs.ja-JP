@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル: モジュール 1 - 送信および受信メッセージを Windows SharePoint Services アダプター |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: モジュール 1 - 送信および受信メッセージを Windows SharePoint Services アダプター |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Windows SharePoint Services, creating sites
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - Windows SharePoint Services
 - Windows SharePoint Services adapter tutorials, sending messages
 ms.assetid: 6494aef5-bb1d-4a41-8186-1d49625a1013
-caps.latest.revision: "41"
+caps.latest.revision: 41
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010507"
 ---
 # <a name="walkthrough-module-1---sending-and-receiving-messages-with-the-windows-sharepoint-services-adapter"></a><span data-ttu-id="f05e8-102">チュートリアル: モジュール 1 - Windows SharePoint Services アダプターでメッセージを送受信します。</span><span class="sxs-lookup"><span data-stu-id="f05e8-102">Walkthrough: Module 1 - Sending and Receiving Messages with the Windows SharePoint Services Adapter</span></span>
 <span data-ttu-id="f05e8-103">このチュートリアルでは、Windows SharePoint Services アダプターとコンテンツ ベースのルーティング (CBR) を使用してメッセージを送受信できるように Windows SharePoint Services と [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f05e8-103">This walkthrough shows you how to configure Windows SharePoint Services and [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] so you can send and receive a message using the Windows SharePoint Services Adapter and content-based routing (CBR).</span></span> <span data-ttu-id="f05e8-104">コンテンツ ベースのルーティングを使用すると、特定のポートに正確にバインドされたメッセージに対するメッセージ サブスクリプションが必要ではなくなります。</span><span class="sxs-lookup"><span data-stu-id="f05e8-104">Content-based routing eliminates the need for message subscription for messages that are deterministically bound to specific ports.</span></span> <span data-ttu-id="f05e8-105">また、エンベロープのプロパティや受信ポートの構成プロパティに基づいてメッセージをルーティングするユーザーにとって、柔軟性も向上します。</span><span class="sxs-lookup"><span data-stu-id="f05e8-105">It also provides additional flexibility for users who want to route messages based on envelope properties or simply based on receive port configuration properties.</span></span> <span data-ttu-id="f05e8-106">Windows SharePoint Services アダプターの概要については、次を参照してください。 [Windows SharePoint Services アダプターは何ですか?](../core/what-is-the-windows-sharepoint-services-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="f05e8-106">For an introduction to the Windows SharePoint Services adapter, see [What Is the Windows SharePoint Services Adapter?](../core/what-is-the-windows-sharepoint-services-adapter.md).</span></span>  
@@ -52,11 +53,11 @@ ms.lasthandoff: 12/01/2017
   
 4.  <span data-ttu-id="f05e8-121">**Web サイトのアドレス**セクションで、 **URL 名**フィールドに「`WSSAdapterWalkthrough`です。</span><span class="sxs-lookup"><span data-stu-id="f05e8-121">In the **Web Site Address** section, in the **URL name** field, type `WSSAdapterWalkthrough`.</span></span>  
   
-5.  <span data-ttu-id="f05e8-122">**サイト コレクションの所有者**セクションで、**ユーザー名 フィールド、**ユーザー名を入力します。</span><span class="sxs-lookup"><span data-stu-id="f05e8-122">In the **Site Collection Owner** section, in the **User name field,** type a user name.</span></span> <span data-ttu-id="f05e8-123">このユーザーが Web サイトの所有者になります。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の特別なアクセス許可は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="f05e8-123">This user will be the owner for the Web site and does not need special permissions in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
+5.  <span data-ttu-id="f05e8-122">**サイト コレクションの所有者**セクションで、**ユーザー名 フィールド、** ユーザー名を入力します。</span><span class="sxs-lookup"><span data-stu-id="f05e8-122">In the **Site Collection Owner** section, in the **User name field,** type a user name.</span></span> <span data-ttu-id="f05e8-123">このユーザーが Web サイトの所有者になります。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の特別なアクセス許可は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="f05e8-123">This user will be the owner for the Web site and does not need special permissions in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
 6.  <span data-ttu-id="f05e8-124">**サイト コレクションの所有者**セクションで、**電子メール**フィールドに、電子メール アドレスを入力します。</span><span class="sxs-lookup"><span data-stu-id="f05e8-124">In the **Site Collection Owner** section, in the **E-mail** field, type in an e-mail address.</span></span>  
   
-7.  <span data-ttu-id="f05e8-125">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-125">Click **OK**.</span></span>  
+7.  <span data-ttu-id="f05e8-125">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-125">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="f05e8-126">**最上位サイトが正常に作成された** ページで、先ほど作成した新しいトップレベル Web サイト をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-126">On the **Top-Level Site Successfully Created** page, click the new top-level Web site you just created.</span></span> <span data-ttu-id="f05e8-127">たとえば、 `http://<server_name>/sites/WSSAdapterWalkthrough`のようにします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-127">For example, `http://<server_name>/sites/WSSAdapterWalkthrough`.</span></span>  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  <span data-ttu-id="f05e8-135">**ドキュメント テンプレート**セクションで、**ドキュメント テンプレート**ドロップダウン リストで、`None`です。</span><span class="sxs-lookup"><span data-stu-id="f05e8-135">In the **Document Template** section, in the **Document Template** drop-down list, select `None`.</span></span>  
   
-6.  <span data-ttu-id="f05e8-136">**[作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-136">Click **Create**.</span></span> <span data-ttu-id="f05e8-137">ドキュメント ライブラリが作成され、空のライブラリにリダイレクトされます。</span><span class="sxs-lookup"><span data-stu-id="f05e8-137">The document library will be created and you will be redirected to the empty library.</span></span>  
+6.  <span data-ttu-id="f05e8-136">**[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-136">Click **Create**.</span></span> <span data-ttu-id="f05e8-137">ドキュメント ライブラリが作成され、空のライブラリにリダイレクトされます。</span><span class="sxs-lookup"><span data-stu-id="f05e8-137">The document library will be created and you will be redirected to the empty library.</span></span>  
   
 #### <a name="create-a-destination-document-library"></a><span data-ttu-id="f05e8-138">"アップロード先" のドキュメント ライブラリの作成</span><span class="sxs-lookup"><span data-stu-id="f05e8-138">Create a "Destination" document library</span></span>  
   
@@ -88,7 +89,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  <span data-ttu-id="f05e8-143">**ドキュメント テンプレート**セクションで、**ドキュメント テンプレート**ドロップダウン リストで、`None`です。</span><span class="sxs-lookup"><span data-stu-id="f05e8-143">In the **Document Template** section, in the **Document Template** drop-down list, select `None`.</span></span>  
   
-6.  <span data-ttu-id="f05e8-144">**[作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-144">Click **Create**.</span></span> <span data-ttu-id="f05e8-145">ドキュメント ライブラリが作成され、空のライブラリにリダイレクトされます。</span><span class="sxs-lookup"><span data-stu-id="f05e8-145">The document library will be created and you will be redirected to the empty library.</span></span>  
+6.  <span data-ttu-id="f05e8-144">**[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-144">Click **Create**.</span></span> <span data-ttu-id="f05e8-145">ドキュメント ライブラリが作成され、空のライブラリにリダイレクトされます。</span><span class="sxs-lookup"><span data-stu-id="f05e8-145">The document library will be created and you will be redirected to the empty library.</span></span>  
   
 #### <a name="create-an-archive-document-library"></a><span data-ttu-id="f05e8-146">"アーカイブ" ドキュメント ライブラリの作成</span><span class="sxs-lookup"><span data-stu-id="f05e8-146">Create an "Archive" document library</span></span>  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  <span data-ttu-id="f05e8-151">**ドキュメント テンプレート**セクションで、**ドキュメント テンプレート**ドロップダウン リストで、`None`です。</span><span class="sxs-lookup"><span data-stu-id="f05e8-151">In the **Document Template** section, in the **Document Template** drop-down list, select `None`.</span></span>  
   
-6.  <span data-ttu-id="f05e8-152">**[作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-152">Click **Create**.</span></span> <span data-ttu-id="f05e8-153">ドキュメント ライブラリが作成され、空のライブラリにリダイレクトされます。</span><span class="sxs-lookup"><span data-stu-id="f05e8-153">The document library will be created and you will be redirected to the empty library.</span></span>  
+6.  <span data-ttu-id="f05e8-152">**[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-152">Click **Create**.</span></span> <span data-ttu-id="f05e8-153">ドキュメント ライブラリが作成され、空のライブラリにリダイレクトされます。</span><span class="sxs-lookup"><span data-stu-id="f05e8-153">The document library will be created and you will be redirected to the empty library.</span></span>  
   
 7.  <span data-ttu-id="f05e8-154">`WSSAdapterWalkthrough` Web サイトを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f05e8-154">Close the `WSSAdapterWalkthrough` Web site.</span></span>  
   
@@ -138,13 +139,13 @@ ms.lasthandoff: 12/01/2017
   
 3.  <span data-ttu-id="f05e8-171">**管理**をクリックして**ユーザーを管理する**です。</span><span class="sxs-lookup"><span data-stu-id="f05e8-171">Under **Administration**, click **Manage users**.</span></span>  
   
-4.  <span data-ttu-id="f05e8-172">**[ユーザーの追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-172">Click **Add Users**.</span></span>  
+4.  <span data-ttu-id="f05e8-172">**[ユーザーの追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-172">Click **Add Users**.</span></span>  
   
 5.  <span data-ttu-id="f05e8-173">**手順 1: ユーザーの選択**、アカウントの名前を入力する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]でホスト インスタンスが実行されています。</span><span class="sxs-lookup"><span data-stu-id="f05e8-173">In **Step 1: Choose Users**, type the name of the account that the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Host Instance is running under.</span></span>  
   
 6.  <span data-ttu-id="f05e8-174">**手順 2: サイト グループの選択**、select、**リーダー**と**共同作成者**のチェック ボックスです。</span><span class="sxs-lookup"><span data-stu-id="f05e8-174">In **Step 2: Choose Site Groups**, select the **Reader** and **Contributor** check boxes.</span></span>  
   
-7.  <span data-ttu-id="f05e8-175">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-175">Click **Next**.</span></span>  
+7.  <span data-ttu-id="f05e8-175">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-175">Click **Next**.</span></span>  
   
 8.  <span data-ttu-id="f05e8-176">クリア、**が追加されたので、これらのユーザーを通知する次のメールを送信**チェック ボックスをクリックして**完了**です。</span><span class="sxs-lookup"><span data-stu-id="f05e8-176">Clear the **Send the following e-mail to let these users now they've been added** check box, and then click **Finish**.</span></span>  
   
@@ -161,7 +162,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  <span data-ttu-id="f05e8-184">**受信ポートのプロパティ**ダイアログ ボックスで、**全般**、型`FromSource`で、**名前**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="f05e8-184">In the **Receive Port Properties** dialog box, under **General**, type `FromSource` in the **Name** field.</span></span>  
   
-4.  <span data-ttu-id="f05e8-185">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-185">Click **OK**.</span></span>  
+4.  <span data-ttu-id="f05e8-185">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-185">Click **OK**.</span></span>  
   
 #### <a name="create-the-receive-location"></a><span data-ttu-id="f05e8-186">受信場所を作成します。</span><span class="sxs-lookup"><span data-stu-id="f05e8-186">Create the receive location</span></span>  
   
@@ -185,13 +186,13 @@ ms.lasthandoff: 12/01/2017
   
 10. <span data-ttu-id="f05e8-198">型`Source`の**ソース ドキュメント ライブラリ**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="f05e8-198">Type `Source` for the **Source Document Library** property.</span></span>  
   
-11. <span data-ttu-id="f05e8-199">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-199">Click **OK**.</span></span>  
+11. <span data-ttu-id="f05e8-199">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-199">Click **OK**.</span></span>  
   
 12. <span data-ttu-id="f05e8-200">**受信場所のプロパティ**ダイアログ ボックスで、`BizTalkServerApplication`として、**受信ハンドラー**です。</span><span class="sxs-lookup"><span data-stu-id="f05e8-200">In the **Receive Location Properties** dialog box, select `BizTalkServerApplication` as the **Receive handler**.</span></span>  
   
 13. <span data-ttu-id="f05e8-201">**受信パイプライン**ドロップダウン リストで、`PassThruReceive`です。</span><span class="sxs-lookup"><span data-stu-id="f05e8-201">In the **Receive pipeline** drop-down list, select `PassThruReceive`.</span></span>  
   
-14. <span data-ttu-id="f05e8-202">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-202">Click **OK**.</span></span>  
+14. <span data-ttu-id="f05e8-202">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-202">Click **OK**.</span></span>  
   
 #### <a name="create-the-send-port"></a><span data-ttu-id="f05e8-203">送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="f05e8-203">Create the send port</span></span>  
   
@@ -215,7 +216,7 @@ ms.lasthandoff: 12/01/2017
   
 10. <span data-ttu-id="f05e8-215">設定、 **Microsoft Office 統合**プロパティを`No`です。</span><span class="sxs-lookup"><span data-stu-id="f05e8-215">Set the **Microsoft Office Integration** property to `No`.</span></span>  
   
-11. <span data-ttu-id="f05e8-216">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-216">Click **OK**.</span></span>  
+11. <span data-ttu-id="f05e8-216">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-216">Click **OK**.</span></span>  
   
 12. <span data-ttu-id="f05e8-217">**送信ポートのプロパティ ダイアログ ボックス**で、**送信ハンドラー**ドロップダウン リストで、`BizTalkServerApplication`です。</span><span class="sxs-lookup"><span data-stu-id="f05e8-217">In the **Send Port Properties dialog box**, in the **Send handler** drop-down list, select `BizTalkServerApplication`.</span></span>  
   
@@ -229,7 +230,7 @@ ms.lasthandoff: 12/01/2017
   
 17. <span data-ttu-id="f05e8-222">型`Source`で、**値**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="f05e8-222">Type `Source` in the **Value** field.</span></span>  
   
-18. <span data-ttu-id="f05e8-223">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-223">Click **OK**.</span></span>  
+18. <span data-ttu-id="f05e8-223">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f05e8-223">Click **OK**.</span></span>  
   
 ## <a name="enable-and-start-the-receive-location-and-receive-port"></a><span data-ttu-id="f05e8-224">受信場所と受信ポートの有効化と開始</span><span class="sxs-lookup"><span data-stu-id="f05e8-224">Enable and start the receive location and receive port</span></span>  
  <span data-ttu-id="f05e8-225">ここでは、受信場所を有効にし、受信ポートを開始します。</span><span class="sxs-lookup"><span data-stu-id="f05e8-225">In these procedures you enable the receive location and start the receive port.</span></span> <span data-ttu-id="f05e8-226">Windows Sharepoint Services アダプターが指定された送信ポートおよび受信場所を使用してメッセージを送受信できるようにするには、次の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f05e8-226">This procedure must be completed to allow the Windows Sharepoint Services adapter to send and receive messages through the specified send port and receive location.</span></span>  

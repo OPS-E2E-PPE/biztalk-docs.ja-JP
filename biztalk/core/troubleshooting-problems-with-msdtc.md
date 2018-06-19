@@ -1,14 +1,14 @@
 ---
-title: "MSDTC の問題のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: MSDTC の問題のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f39cde52-da8f-4cc1-bdc5-e4b828891a79
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280506"
 ---
 # <a name="troubleshooting-problems-with-msdtc"></a><span data-ttu-id="2ff16-102">MSDTC を使用した問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="2ff16-102">Troubleshooting Problems with MSDTC</span></span>
 <span data-ttu-id="2ff16-103">多くの BizTalk Server ランタイム操作では、トランザクション上でランタイム操作の一貫性を維持するために、Microsoft 分散トランザクション コーディネーター (MSDTC) のサポートが必要です。</span><span class="sxs-lookup"><span data-stu-id="2ff16-103">Most BizTalk Server runtime operations require Microsoft Distributed Transaction Coordinator (MSDTC) support to ensure that the operations are transactionally consistent.</span></span> <span data-ttu-id="2ff16-104">MSDTC のトランザクション サポートを使用できないと、それに関連付けられた BizTalk Server ランタイム操作を続行できません。</span><span class="sxs-lookup"><span data-stu-id="2ff16-104">If MSDTC transaction support is not available, then the associated BizTalk Server runtime operations cannot proceed.</span></span> <span data-ttu-id="2ff16-105">MSDTC トランザクション サポートが正しく構成されていない場合に一般的に影響を受ける BizTalk のコンポーネントには、シングル サインオン サービス、BizTalk ホスト インスタンス、および BizTalk Server に接続されているすべての SQL Server のインスタンスが含まれますが、これに限定されません。</span><span class="sxs-lookup"><span data-stu-id="2ff16-105">The components of BizTalk that are commonly affected when MSDTC transaction support is not configured correctly include (but are not limited to) the Single Sign-On Service, BizTalk host instances, and any SQL Server instances that are connected to by BizTalk Server.</span></span> <span data-ttu-id="2ff16-106">このセクションには、MSDTC に関連するエラーと、MSDTC の問題を診断および解決するために従う手順について説明する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="2ff16-106">This section contains information that describes MSDTC related errors and steps that can be followed to diagnose and resolve problems with MSDTC.</span></span>  
@@ -195,7 +196,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="2ff16-226">をクリックして**ユーザー権利の割り当て**です。</span><span class="sxs-lookup"><span data-stu-id="2ff16-226">Click **User Rights Assignment**.</span></span>  
   
-3.  <span data-ttu-id="2ff16-227">ダブルクリックして**、ネットワーク経由でコンピューターのアクセスを拒否**コンピューター名またはこのユーザー権限から削除するグループを選択し をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2ff16-227">Double-click **Deny access this computer from the network**, and then click to select the computer name or group that you want to remove from this user right.</span></span>  
+3.  <span data-ttu-id="2ff16-227">ダブルクリックして **、ネットワーク経由でコンピューターのアクセスを拒否**コンピューター名またはこのユーザー権限から削除するグループを選択し をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2ff16-227">Double-click **Deny access this computer from the network**, and then click to select the computer name or group that you want to remove from this user right.</span></span>  
   
 4.  <span data-ttu-id="2ff16-228">をクリックして**削除** をクリックし、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="2ff16-228">Click **Remove** and then click **OK**.</span></span>  
   
@@ -234,10 +235,10 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="2ff16-259">をクリックして**プログラムの追加**を表示する、**プログラムの追加** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="2ff16-259">Click **Add Program** to display the **Add a Program** dialog box.</span></span>  
   
-5.  <span data-ttu-id="2ff16-260">をクリックして**参照**に移動して*%system32*\msdtc.exe です。</span><span class="sxs-lookup"><span data-stu-id="2ff16-260">Click **Browse** and navigate to *%system32%*\msdtc.exe.</span></span>  
+5.  <span data-ttu-id="2ff16-260">をクリックして**参照**に移動して *%system32*\msdtc.exe です。</span><span class="sxs-lookup"><span data-stu-id="2ff16-260">Click **Browse** and navigate to *%system32%* \msdtc.exe.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="2ff16-261">コマンド プロンプト ウィンドウで「を起動して**echo system32%**とキーを押します**Enter**このコンピューター上の \System32 ディレクトリの場所を決定します。</span><span class="sxs-lookup"><span data-stu-id="2ff16-261">Launch a command prompt, type **echo %system32%** and press **Enter** to determine the location of the \System32 directory on this computer.</span></span>  
+    >  <span data-ttu-id="2ff16-261">コマンド プロンプト ウィンドウで「を起動して**echo system32%** とキーを押します**Enter**このコンピューター上の \System32 ディレクトリの場所を決定します。</span><span class="sxs-lookup"><span data-stu-id="2ff16-261">Launch a command prompt, type **echo %system32%** and press **Enter** to determine the location of the \System32 directory on this computer.</span></span>  
   
 6.  <span data-ttu-id="2ff16-262">クリックして選択**msdtc.exe**  をクリック**開く**です。</span><span class="sxs-lookup"><span data-stu-id="2ff16-262">Click to select **msdtc.exe** and click **Open**.</span></span>  
   

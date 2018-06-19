@@ -1,14 +1,14 @@
 ---
-title: "SQL Server データベース ミラーリング、ボリューム シャドウ コピー サービス、および AlwaysOn |Microsoft ドキュメント"
-ms.custom: 
+title: SQL Server データベース ミラーリング、ボリューム シャドウ コピー サービス、および AlwaysOn |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b965cafc-cd34-4657-975d-0dedffd27333
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277994"
 ---
 # <a name="sql-server-database-mirroring-volume-shadow-copy-service-and-alwayson"></a><span data-ttu-id="d08c1-102">SQL Server データベース ミラーリング、ボリューム シャドウ コピー サービス、および AlwaysOn の使用</span><span class="sxs-lookup"><span data-stu-id="d08c1-102">SQL Server database mirroring, Volume Shadow Copy service and AlwaysOn</span></span>
 <span data-ttu-id="d08c1-103">Microsoft SQL Server と呼ばれるソフトウェア ソリューションを提供する*データベース ミラーリング*と Windows ボリューム シャドウ コピー サービス (VSS) の特定のシナリオの高可用性を高めるためです。</span><span class="sxs-lookup"><span data-stu-id="d08c1-103">Microsoft provides software solutions known as SQL Server *database mirroring* and the Windows Volume Shadow Copy Service (VSS) to increase high availability for particular scenarios.</span></span> <span data-ttu-id="d08c1-104">SQL Server*データベース ミラーリング*ボリューム シャドウ コピー サービス (VSS) は、障害回復のバックアップと復元の機能を提供します。 データベースが使用可能なである確率が高くなります。</span><span class="sxs-lookup"><span data-stu-id="d08c1-104">SQL Server *database mirroring* increases the probability that a database is available while the Volume Shadow Copy Service (VSS) provides backup and restore functionality for disaster recovery.</span></span> <span data-ttu-id="d08c1-105">SQL Server の使用*データベース ミラーリング*か Windows ボリューム シャドウ コピー サービスが Microsoft の高可用性を確保するためのソリューションをサポート[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。</span><span class="sxs-lookup"><span data-stu-id="d08c1-105">The use of SQL Server *database mirroring* or the Windows Volume Shadow Copy Service are not supported solutions for ensuring high availability of Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases.</span></span>  

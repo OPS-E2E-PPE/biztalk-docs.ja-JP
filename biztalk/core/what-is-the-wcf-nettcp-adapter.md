@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289410"
 ---
 # <a name="what-is-the-wcf-nettcp-adapter"></a><span data-ttu-id="65a5f-103">WCF-NetTcp アダプタについて</span><span class="sxs-lookup"><span data-stu-id="65a5f-103">What Is the WCF-NetTcp Adapter?</span></span>
 <span data-ttu-id="65a5f-104">WCF-NetTcp アダプタは、サービスとクライアントの両方が WCF ベースである環境において、コンピュータ間またはプロセス間の接続通信を実現します。</span><span class="sxs-lookup"><span data-stu-id="65a5f-104">The WCF-NetTcp adapter provides connected cross-computer or cross-process communication in an environment in which both services and clients are WCF based.</span></span> <span data-ttu-id="65a5f-105">このアダプタからは、SOAP セキュリティ、信頼性、およびトランザクションの各機能にフル アクセスできます。</span><span class="sxs-lookup"><span data-stu-id="65a5f-105">It provides full access to SOAP security, reliability, and transaction features.</span></span> <span data-ttu-id="65a5f-106">このアダプタは、TCP トランスポートを使用し、メッセージではバイナリ エンコードを使用します。</span><span class="sxs-lookup"><span data-stu-id="65a5f-106">This adapter uses the TCP transport, and messages have binary encoding.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "Microsoft.BizTalk.GlobalPropertySchemas 参照 |Microsoft ドキュメント"
-ms.custom: 
+title: Microsoft.BizTalk.GlobalPropertySchemas 参照 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2acf3083-a0a9-483f-88bf-8023d9933e1e
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710397"
 ---
 # <a name="microsoftbiztalkglobalpropertyschemas-reference"></a><span data-ttu-id="ae905-102">Microsoft.BizTalk.GlobalPropertySchemas 参照</span><span class="sxs-lookup"><span data-stu-id="ae905-102">Microsoft.BizTalk.GlobalPropertySchemas Reference</span></span>
 <span data-ttu-id="ae905-103">**Microsoft.BizTalk.GlobalPropertySchemas** 名前空間には、さまざまな BizTalk Server コンポーネントを使用するプロパティのプロパティ スキーマが含まれています。</span><span class="sxs-lookup"><span data-stu-id="ae905-103">The **Microsoft.BizTalk.GlobalPropertySchemas** namespace contains property schemas for the properties that various BizTalk Server components use.</span></span> <span data-ttu-id="ae905-104">この名前空間に含まれているプロパティは、BizTalk エンジンが使用するシステム プロパティ、各トランスポートが構成を処理するために使用するトランスポート固有のプロパティ、およびパイプライン コンポーネントを構成するプロパティです。</span><span class="sxs-lookup"><span data-stu-id="ae905-104">This namespace contains system properties that the BizTalk engine uses, transport specific properties that each transport uses for handling the configuration, and properties for configuring pipeline components.</span></span>  

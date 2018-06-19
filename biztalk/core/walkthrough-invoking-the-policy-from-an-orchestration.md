@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cb2d2974-8a36-4d36-905c-799e4236ef99
-caps.latest.revision: ''
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22291346"
 ---
 # <a name="walkthrough-invoking-the-policy-from-an-orchestration"></a><span data-ttu-id="41f27-102">チュートリアル: オーケストレーションからのポリシーの呼び出し</span><span class="sxs-lookup"><span data-stu-id="41f27-102">Walkthrough: Invoking the Policy from an Orchestration</span></span>
 <span data-ttu-id="41f27-103">ポリシーは、次のいずれかの方法でオーケストレーションから呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="41f27-103">You can invoke a policy from an orchestration in one of the following ways:</span></span>  
@@ -60,7 +61,7 @@ ms.lasthandoff: 03/28/2018
     |<span data-ttu-id="41f27-142">**ソリューション名**</span><span class="sxs-lookup"><span data-stu-id="41f27-142">**Solution Name**</span></span>|<span data-ttu-id="41f27-143">型 **RuleTestSol**します。</span><span class="sxs-lookup"><span data-stu-id="41f27-143">Type **RuleTestSol**.</span></span>|  
     |<span data-ttu-id="41f27-144">**ソリューションのディレクトリを作成します。**</span><span class="sxs-lookup"><span data-stu-id="41f27-144">**Create directory for solution**</span></span>|<span data-ttu-id="41f27-145">ソリューション ファイルのディレクトリを作成するには、このチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="41f27-145">Select this check box to create a directory for the solution files.</span></span>|  
   
-4.  <span data-ttu-id="41f27-146">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-146">Click **OK**.</span></span> <span data-ttu-id="41f27-147">**RuleTest** プロジェクトがソリューション エクスプ ローラーで表示されます。</span><span class="sxs-lookup"><span data-stu-id="41f27-147">The **RuleTest** project should appear in Solution Explorer.</span></span> <span data-ttu-id="41f27-148">ソリューション エクスプ ローラーが表示されない場合はクリックして **ソリューション エクスプ ローラー** 上、 **ビュー** メニュー。</span><span class="sxs-lookup"><span data-stu-id="41f27-148">If you do not see Solution Explorer, click **Solution Explorer** on the **View** menu.</span></span>  
+4.  <span data-ttu-id="41f27-146">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-146">Click **OK**.</span></span> <span data-ttu-id="41f27-147">**RuleTest** プロジェクトがソリューション エクスプ ローラーで表示されます。</span><span class="sxs-lookup"><span data-stu-id="41f27-147">The **RuleTest** project should appear in Solution Explorer.</span></span> <span data-ttu-id="41f27-148">ソリューション エクスプ ローラーが表示されない場合はクリックして **ソリューション エクスプ ローラー** 上、 **ビュー** メニュー。</span><span class="sxs-lookup"><span data-stu-id="41f27-148">If you do not see Solution Explorer, click **Solution Explorer** on the **View** menu.</span></span>  
   
 5.  <span data-ttu-id="41f27-149">ソリューション エクスプ ローラーで右クリック **RuleTest**, 、 をポイント **追加**, 、 をクリックし、 **既存項目の**です。</span><span class="sxs-lookup"><span data-stu-id="41f27-149">In Solution Explorer, right-click **RuleTest**, point to **Add**, and then click **Existing Item**.</span></span>  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 03/28/2018
     |<span data-ttu-id="41f27-158">**テンプレート**</span><span class="sxs-lookup"><span data-stu-id="41f27-158">**Templates**</span></span>|<span data-ttu-id="41f27-159">クリックして **BizTalk オーケストレーション**します。</span><span class="sxs-lookup"><span data-stu-id="41f27-159">Click **BizTalk Orchestration**.</span></span>|  
     |<span data-ttu-id="41f27-160">**名**</span><span class="sxs-lookup"><span data-stu-id="41f27-160">**Name**</span></span>|<span data-ttu-id="41f27-161">型 **RuleTest.odx**します。</span><span class="sxs-lookup"><span data-stu-id="41f27-161">Type **RuleTest.odx**.</span></span>|  
   
-9. <span data-ttu-id="41f27-162">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-162">Click **Add**.</span></span>  
+9. <span data-ttu-id="41f27-162">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-162">Click **Add**.</span></span>  
   
 10. <span data-ttu-id="41f27-163">右クリック **ツールボックスからここに図形をドロップ**, 、 をポイント **図形の挿入**, 、クリックして **受信**します。</span><span class="sxs-lookup"><span data-stu-id="41f27-163">Right-click **Drop a shape from the toolbox here**, point to **Insert Shape**, and then click **Receive**.</span></span>  
   
@@ -123,11 +124,11 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="41f27-191">![BRE&#45;チュートリアル&#45;ConfigureCallRules](../core/media/0e7dab04-41db-433b-bbf5-b13901033b41.gif "0e7dab04-41db-433b-bbf5-b13901033b41")</span><span class="sxs-lookup"><span data-stu-id="41f27-191">![BRE&#45;Walkthrough&#45;ConfigureCallRules](../core/media/0e7dab04-41db-433b-bbf5-b13901033b41.gif "0e7dab04-41db-433b-bbf5-b13901033b41")</span></span>  
   
-6.  <span data-ttu-id="41f27-192">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-192">Click **OK**.</span></span>  
+6.  <span data-ttu-id="41f27-192">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-192">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="41f27-193">選択、 **送信** 、オーケストレーションの図形です。</span><span class="sxs-lookup"><span data-stu-id="41f27-193">Select the **Send** shape in the orchestration.</span></span>  
   
-8.  <span data-ttu-id="41f27-194">[プロパティ] ウィンドウの値を設定、 **メッセージの種類** プロパティを **[poinst]**します。</span><span class="sxs-lookup"><span data-stu-id="41f27-194">In the Properties window, set the value of the **Message Type** property to **POInst**.</span></span>  
+8.  <span data-ttu-id="41f27-194">[プロパティ] ウィンドウの値を設定、 **メッセージの種類** プロパティを **[poinst]** します。</span><span class="sxs-lookup"><span data-stu-id="41f27-194">In the Properties window, set the value of the **Message Type** property to **POInst**.</span></span>  
   
 ### <a name="to-create-ports"></a><span data-ttu-id="41f27-195">ポートを作成するには</span><span class="sxs-lookup"><span data-stu-id="41f27-195">To create ports</span></span>  
   
@@ -135,7 +136,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="41f27-197">オーケストレーションの左のポート画面を右クリックし、をクリックし、 **新しい構成済みポート**します。</span><span class="sxs-lookup"><span data-stu-id="41f27-197">Right-click the left port surface of the orchestration, and then click **New Configured Port**.</span></span>  
   
-3.  <span data-ttu-id="41f27-198">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-198">Click **Next**.</span></span> <span data-ttu-id="41f27-199">型 **ReceivePOPrt** ポートの名前をします。</span><span class="sxs-lookup"><span data-stu-id="41f27-199">Type **ReceivePOPrt** for the port name.</span></span>  
+3.  <span data-ttu-id="41f27-198">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-198">Click **Next**.</span></span> <span data-ttu-id="41f27-199">型 **ReceivePOPrt** ポートの名前をします。</span><span class="sxs-lookup"><span data-stu-id="41f27-199">Type **ReceivePOPrt** for the port name.</span></span>  
   
 4.  <span data-ttu-id="41f27-200">クリックして **次** 2 回クリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-200">Click **Next** twice.</span></span>  
   
@@ -143,11 +144,11 @@ ms.lasthandoff: 03/28/2018
   
 6.  <span data-ttu-id="41f27-202">指定 **ファイル** の **トランスポート**, 、入力ディレクトリの名前を入力し、 **C:\BRE-Walkthroughs\RuleTestSol\Input\\\*.xml** ファイル マスクと共に (**\*.xml**) の URI。</span><span class="sxs-lookup"><span data-stu-id="41f27-202">Specify **FILE** for the **transport**, and type the name of the input directory as **C:\BRE-Walkthroughs\RuleTestSol\Input\\\*.xml** along with the file mask (**\*.xml**) for the URI.</span></span>  
   
-7.  <span data-ttu-id="41f27-203">**[次へ]**をクリックし、 **[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-203">Click **Next**, and then click **Finish**.</span></span>  
+7.  <span data-ttu-id="41f27-203">**[次へ]** をクリックし、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-203">Click **Next**, and then click **Finish**.</span></span>  
   
 8.  <span data-ttu-id="41f27-204">オーケストレーションの右ポート画面を右クリックし、クリックして **新しい構成ポート**します。</span><span class="sxs-lookup"><span data-stu-id="41f27-204">Right-click the right port surface of the orchestration, and then click **New Configuration Port**.</span></span>  
   
-9. <span data-ttu-id="41f27-205">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-205">Click **Next**.</span></span> <span data-ttu-id="41f27-206">型 **SendPOPort** ポートの名前をします。</span><span class="sxs-lookup"><span data-stu-id="41f27-206">Type **SendPOPort** for the port name.</span></span>  
+9. <span data-ttu-id="41f27-205">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-205">Click **Next**.</span></span> <span data-ttu-id="41f27-206">型 **SendPOPort** ポートの名前をします。</span><span class="sxs-lookup"><span data-stu-id="41f27-206">Type **SendPOPort** for the port name.</span></span>  
   
 10. <span data-ttu-id="41f27-207">クリックして **次** 2 回クリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-207">Click **Next** twice.</span></span>  
   
@@ -157,7 +158,7 @@ ms.lasthandoff: 03/28/2018
   
 13. <span data-ttu-id="41f27-210">指定 **ファイル** の **トランスポート**, と出力ディレクトリの名前を入力し、 **C:\BRE-Walkthroughs\RuleTestSol\Output**,、出力ファイル名「%messageid%.xml です。</span><span class="sxs-lookup"><span data-stu-id="41f27-210">Specify **FILE** for the **transport**, and type the name of the output directory as **C:\BRE-Walkthroughs\RuleTestSol\Output**,and %MessageID%.xml as the output file name.</span></span>  
   
-14. <span data-ttu-id="41f27-211">**[次へ]**をクリックし、 **[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-211">Click **Next**, and then click **Finish**.</span></span>  
+14. <span data-ttu-id="41f27-211">**[次へ]** をクリックし、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-211">Click **Next**, and then click **Finish**.</span></span>  
   
 ### <a name="to-connect-ports-with-the-shapes"></a><span data-ttu-id="41f27-212">ポートを図形に接続するには</span><span class="sxs-lookup"><span data-stu-id="41f27-212">To connect ports with the shapes</span></span>  
   
@@ -185,7 +186,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="41f27-225">![BRE&#45;チュートリアル&#45;RuleTestApp](../core/media/b153e5b0-ca46-4d27-bfa1-9ad4e58e9787.gif "b153e5b0-ca46-4d27-bfa1-9ad4e58e9787")</span><span class="sxs-lookup"><span data-stu-id="41f27-225">![BRE&#45;Walkthrough&#45;RuleTestApp](../core/media/b153e5b0-ca46-4d27-bfa1-9ad4e58e9787.gif "b153e5b0-ca46-4d27-bfa1-9ad4e58e9787")</span></span>  
   
-7.  <span data-ttu-id="41f27-226">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-226">Click **OK**.</span></span>  
+7.  <span data-ttu-id="41f27-226">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-226">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="41f27-227">右クリックし、 **RuleTest** [プロジェクト] をクリックして **ビルド**します。</span><span class="sxs-lookup"><span data-stu-id="41f27-227">Right-click the **RuleTest** project, and then click **Build**.</span></span>  
   
@@ -207,7 +208,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="41f27-237">![BRE&#45;Walkthrough&#45;AppHost](../core/media/ba348a98-661f-4e71-8b9b-b8c5fadf035a.gif "ba348a98-661f-4e71-8b9b-b8c5fadf035a")</span><span class="sxs-lookup"><span data-stu-id="41f27-237">![BRE&#45;Walkthrough&#45;AppHost](../core/media/ba348a98-661f-4e71-8b9b-b8c5fadf035a.gif "ba348a98-661f-4e71-8b9b-b8c5fadf035a")</span></span>  
   
-7.  <span data-ttu-id="41f27-238">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-238">Click **OK**.</span></span>  
+7.  <span data-ttu-id="41f27-238">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f27-238">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="41f27-239">右クリック **RuleTestApp**, 、 をクリックし、 **開始**します。</span><span class="sxs-lookup"><span data-stu-id="41f27-239">Right-click **RuleTestApp**, and then click **Start**.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "X12 の処理中にエラーが発生した送信ポートでメッセージ: いいえパーティ名 |Microsoft ドキュメント"
-ms.custom: 
+title: 'X12 の処理中にエラーが発生した送信ポートでメッセージ: いいえパーティ名 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: af059a04-3b7c-48e2-a3bf-48ad62deb139
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225354"
 ---
 # <a name="a-failure-occurred-in-processing-x12-message-on-send-port-no-party-with-name"></a><span data-ttu-id="be924-102">X12 の処理中にエラーが発生した送信ポートでメッセージ: いいえパーティ名</span><span class="sxs-lookup"><span data-stu-id="be924-102">A failure occurred in processing X12 message on send port: No Party with name</span></span>
 ## <a name="details"></a><span data-ttu-id="be924-103">詳細</span><span class="sxs-lookup"><span data-stu-id="be924-103">Details</span></span>  

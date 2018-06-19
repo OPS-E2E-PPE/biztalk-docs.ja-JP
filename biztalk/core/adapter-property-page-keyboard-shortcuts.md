@@ -1,18 +1,18 @@
 ---
-title: "アダプターのプロパティ ページのキーボード ショートカット |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターのプロパティ ページのキーボード ショートカット |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, keyboard shortcuts
 - Adapter property page
 - keyboard shortcuts, Adapter property page
 ms.assetid: cc1b0fc5-82f3-4ef6-9557-191a4a460efe
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22229778"
 ---
 # <a name="adapter-property-page-keyboard-shortcuts"></a><span data-ttu-id="a17c9-102">[アダプターのプロパティ] ページのキーボード ショートカット</span><span class="sxs-lookup"><span data-stu-id="a17c9-102">Adapter Property Page Keyboard Shortcuts</span></span>
 <span data-ttu-id="a17c9-103">他の標準的な Microsoft Windows アプリケーションと同様、[アダプターのプロパティ] ページでも、メニューのコマンドをキーボード ショートカットで実行できます。</span><span class="sxs-lookup"><span data-stu-id="a17c9-103">As in any standard Microsoft Windows application, you can use keyboard shortcuts in the adapter property pages to access commands that are otherwise available by using menus.</span></span> <span data-ttu-id="a17c9-104">使用できるキーボード ショートカットを次の表に示します。</span><span class="sxs-lookup"><span data-stu-id="a17c9-104">The following table describes the available keyboard shortcuts.</span></span>  

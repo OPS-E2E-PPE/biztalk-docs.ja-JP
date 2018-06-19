@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: データベースおよび .NET のファクトを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: データベースおよび .NET のファクトを使用して |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 676d6e46-d9f8-477e-979e-1ac051ad4451
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976048"
 ---
 # <a name="walkthrough-using-database-and-net-facts"></a><span data-ttu-id="a3245-102">チュートリアル: データベースおよび .NET のファクトの使用</span><span class="sxs-lookup"><span data-stu-id="a3245-102">Walkthrough: Using Database and .NET Facts</span></span>
 <span data-ttu-id="a3245-103">ここでは、ビジネス ルール作成ツールを使用して、データベースおよび .NET のファクトを使用するポリシーを作成する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="a3245-103">This walkthrough provides step-by-step procedures for using the Business Rule Composer to create a policy that uses database and .NET facts.</span></span>  
@@ -84,14 +85,14 @@ ms.lasthandoff: 11/28/2017
   
     |<span data-ttu-id="a3245-144">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a3245-144">Use this</span></span>|<span data-ttu-id="a3245-145">目的</span><span class="sxs-lookup"><span data-stu-id="a3245-145">To do this</span></span>|  
     |--------------|----------------|  
-    |<span data-ttu-id="a3245-146">**プロジェクトの種類**</span><span class="sxs-lookup"><span data-stu-id="a3245-146">**Project types**</span></span>|<span data-ttu-id="a3245-147">をクリックして**Visual c#**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-147">Click **Visual C#**.</span></span>|  
+    |<span data-ttu-id="a3245-146">**プロジェクトの種類**</span><span class="sxs-lookup"><span data-stu-id="a3245-146">**Project types**</span></span>|<span data-ttu-id="a3245-147">をクリックして**Visual c#** です。</span><span class="sxs-lookup"><span data-stu-id="a3245-147">Click **Visual C#**.</span></span>|  
     |<span data-ttu-id="a3245-148">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="a3245-148">**Templates**</span></span>|<span data-ttu-id="a3245-149">をクリックして**クラス ライブラリ**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-149">Click **Class Library**.</span></span>|  
     |<span data-ttu-id="a3245-150">**名前**</span><span class="sxs-lookup"><span data-stu-id="a3245-150">**Name**</span></span>|<span data-ttu-id="a3245-151">型**POUtilityLib**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-151">Type **POUtilityLib**.</span></span>|  
     |<span data-ttu-id="a3245-152">**場所**</span><span class="sxs-lookup"><span data-stu-id="a3245-152">**Location**</span></span>|<span data-ttu-id="a3245-153">指定**C:\BRE-Walkthroughs**場所として。</span><span class="sxs-lookup"><span data-stu-id="a3245-153">Specify **C:\BRE-Walkthroughs** as the location.</span></span>|  
     |<span data-ttu-id="a3245-154">**[ソリューション名]**</span><span class="sxs-lookup"><span data-stu-id="a3245-154">**Solution Name**</span></span>|<span data-ttu-id="a3245-155">型**POUtilitySol**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-155">Type **POUtilitySol**.</span></span>|  
     |<span data-ttu-id="a3245-156">**ソリューションのディレクトリを作成します。**</span><span class="sxs-lookup"><span data-stu-id="a3245-156">**Create directory for solution**</span></span>|<span data-ttu-id="a3245-157">ソリューション ファイルのディレクトリを作成するには、このチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="a3245-157">Select this check box to create a directory for the solution files.</span></span>|  
   
-4.  <span data-ttu-id="a3245-158">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a3245-158">Click **OK**.</span></span> <span data-ttu-id="a3245-159">**POUtilityLib**プロジェクトがソリューション エクスプ ローラーで表示されます。</span><span class="sxs-lookup"><span data-stu-id="a3245-159">The **POUtilityLib** project should appear in Solution Explorer.</span></span> <span data-ttu-id="a3245-160">ソリューション エクスプ ローラーが表示されない場合はクリックして**ソリューション エクスプ ローラー**上、**ビュー**メニュー。</span><span class="sxs-lookup"><span data-stu-id="a3245-160">If you do not see Solution Explorer, click **Solution Explorer** on the **View** menu.</span></span>  
+4.  <span data-ttu-id="a3245-158">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a3245-158">Click **OK**.</span></span> <span data-ttu-id="a3245-159">**POUtilityLib**プロジェクトがソリューション エクスプ ローラーで表示されます。</span><span class="sxs-lookup"><span data-stu-id="a3245-159">The **POUtilityLib** project should appear in Solution Explorer.</span></span> <span data-ttu-id="a3245-160">ソリューション エクスプ ローラーが表示されない場合はクリックして**ソリューション エクスプ ローラー**上、**ビュー**メニュー。</span><span class="sxs-lookup"><span data-stu-id="a3245-160">If you do not see Solution Explorer, click **Solution Explorer** on the **View** menu.</span></span>  
   
 5.  <span data-ttu-id="a3245-161">[プロパティ] ウィンドウで、ファイルの名前変更**Class1.cs**を**POUtility.cs**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-161">In the Properties window, change the name of the file, **Class1.cs**, to **POUtility.cs**.</span></span>  
   
@@ -147,7 +148,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="a3245-181">展開**TestDB**の順に展開および**PO**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-181">Expand **TestDB**, and then expand **PO**.</span></span>  
   
-6.  <span data-ttu-id="a3245-182">[ファクト エクスプ ローラー] ウィンドウ**.NET クラス**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-182">In the Facts Explorer window, click **.NET Classes**.</span></span>  
+6.  <span data-ttu-id="a3245-182">[ファクト エクスプ ローラー] ウィンドウ **.NET クラス**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-182">In the Facts Explorer window, click **.NET Classes**.</span></span>  
   
 7.  <span data-ttu-id="a3245-183">右クリック**です。NETAssemblies**、クリックして**参照**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-183">Right-click **.NETAssemblies**, and then click **Browse**.</span></span>  
   
@@ -157,7 +158,7 @@ ms.lasthandoff: 11/28/2017
   
 10. <span data-ttu-id="a3245-186">ポリシー エクスプ ローラー ウィンドウで右クリック**ポリシー**、クリックして**新しいポリシーの追加**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-186">In the Policy Explorer window, right-click **Policies**, and then click **Add New Policy**.</span></span>  
   
-11. <span data-ttu-id="a3245-187">ポリシーの名前を変更**"policy1"**に**ProcessPurchaseOrderDbNet**し、ENTER キーを押します。</span><span class="sxs-lookup"><span data-stu-id="a3245-187">Change the name of the policy from **Policy1** to **ProcessPurchaseOrderDbNet** and then press ENTER.</span></span> <span data-ttu-id="a3245-188">ポリシーの名前は [プロパティ] ウィンドウで変更することもできます。</span><span class="sxs-lookup"><span data-stu-id="a3245-188">You can also change the name of the policy in the Properties window.</span></span>  
+11. <span data-ttu-id="a3245-187">ポリシーの名前を変更 **"policy1"** に**ProcessPurchaseOrderDbNet**し、ENTER キーを押します。</span><span class="sxs-lookup"><span data-stu-id="a3245-187">Change the name of the policy from **Policy1** to **ProcessPurchaseOrderDbNet** and then press ENTER.</span></span> <span data-ttu-id="a3245-188">ポリシーの名前は [プロパティ] ウィンドウで変更することもできます。</span><span class="sxs-lookup"><span data-stu-id="a3245-188">You can also change the name of the policy in the Properties window.</span></span>  
   
 12. <span data-ttu-id="a3245-189">右クリック**バージョン 1.0**、クリックして**新しいルールの追加**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-189">Right-click **Version 1.0**, and then click **AddNewRule**.</span></span>  
   
@@ -169,7 +170,7 @@ ms.lasthandoff: 11/28/2017
   
 16. <span data-ttu-id="a3245-194">ドラッグ、**数量**ノードを ファクト エクスプ ローラー ウィンドウから**argument1** IF ペイン。</span><span class="sxs-lookup"><span data-stu-id="a3245-194">Drag the **Quantity** node from the Facts Explorer window to **argument1** in the IF pane.</span></span>  
   
-17. <span data-ttu-id="a3245-195">[ファクト エクスプ ローラー] ウィンドウ**.NET クラス**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-195">In the Facts Explorer window, click **.NET Classes**.</span></span>  
+17. <span data-ttu-id="a3245-195">[ファクト エクスプ ローラー] ウィンドウ **.NET クラス**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-195">In the Facts Explorer window, click **.NET Classes**.</span></span>  
   
 18. <span data-ttu-id="a3245-196">ドラッグ**GetMaxAllowed**ノードを ファクト エクスプ ローラー ウィンドウから**argument2** IF ペイン。</span><span class="sxs-lookup"><span data-stu-id="a3245-196">Drag **GetMaxAllowed** node from the Facts Explorer window to **argument2** in the IF pane.</span></span>  
   
@@ -177,7 +178,7 @@ ms.lasthandoff: 11/28/2017
   
 20. <span data-ttu-id="a3245-198">ドラッグ、**ステータス**ノード、ファクト エクスプ ローラー ウィンドウからビジネス ルール作成ツールの右下の THEN ペインにします。</span><span class="sxs-lookup"><span data-stu-id="a3245-198">Drag the **Status** node from the Facts Explorer window to the THEN pane at the bottom right of the Business Rule Composer.</span></span>  
   
-21. <span data-ttu-id="a3245-199">[THEN] ペインでをクリックして**\<値を入力\>**し入力**Approved**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-199">In the THEN pane, click **\<Enter a value\>** and then type **Approved**.</span></span>  
+21. <span data-ttu-id="a3245-199">[THEN] ペインでをクリックして**\<値を入力\>** し入力**Approved**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-199">In the THEN pane, click **\<Enter a value\>** and then type **Approved**.</span></span>  
   
 22. <span data-ttu-id="a3245-200">ファクト エクスプ ローラー ウィンドウで右クリック**バージョン 1.0**で**ProcessPurchaseOrderDbNet**、クリックして**新しいルールの追加**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-200">In the Facts Explorer window, right-click **Version 1.0** in **ProcessPurchaseOrderDbNet**, and then click **AddNewRule**.</span></span>  
   
@@ -189,7 +190,7 @@ ms.lasthandoff: 11/28/2017
   
 26. <span data-ttu-id="a3245-205">ドラッグ、**数量**ノードを ファクト エクスプ ローラー ウィンドウから**argument1** IF ペイン。</span><span class="sxs-lookup"><span data-stu-id="a3245-205">Drag the **Quantity** node from the Facts Explorer window to **argument1** in the IF pane.</span></span>  
   
-27. <span data-ttu-id="a3245-206">[ファクト エクスプ ローラー] ウィンドウ**.NET クラス**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-206">In the Facts Explorer window, click **.NET Classes**.</span></span>  
+27. <span data-ttu-id="a3245-206">[ファクト エクスプ ローラー] ウィンドウ **.NET クラス**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-206">In the Facts Explorer window, click **.NET Classes**.</span></span>  
   
 28. <span data-ttu-id="a3245-207">ドラッグ、 **GetMaxAllowed**ノードを ファクト エクスプ ローラー ウィンドウから**argument2** IF ペイン。</span><span class="sxs-lookup"><span data-stu-id="a3245-207">Drag the **GetMaxAllowed** node from the Facts Explorer window to **argument2** in the IF pane.</span></span>  
   
@@ -197,7 +198,7 @@ ms.lasthandoff: 11/28/2017
   
 30. <span data-ttu-id="a3245-209">ドラッグ、**ステータス**ノード、ファクト エクスプ ローラー ウィンドウからビジネス ルール作成ツールの右下の THEN ペインにします。</span><span class="sxs-lookup"><span data-stu-id="a3245-209">Drag the **Status** node from the Facts Explorer window to the THEN pane at the bottom right of the Business Rule Composer.</span></span>  
   
-31. <span data-ttu-id="a3245-210">[THEN] ペインでをクリックして**\<値を入力\>**し入力**Denied**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-210">In the THEN pane, click **\<Enter a value\>** and then type **Denied**.</span></span>  
+31. <span data-ttu-id="a3245-210">[THEN] ペインでをクリックして**\<値を入力\>** し入力**Denied**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-210">In the THEN pane, click **\<Enter a value\>** and then type **Denied**.</span></span>  
   
 32. <span data-ttu-id="a3245-211">ポリシー エクスプ ローラー ウィンドウで右クリック**バージョン 1.0 (未保存)**、クリックして**保存**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-211">In the Policy Explorer window, right-click **Version 1.0 (not saved)**, and then click **Save**.</span></span>  
   
@@ -238,18 +239,18 @@ ms.lasthandoff: 11/28/2017
   
     |<span data-ttu-id="a3245-230">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a3245-230">Use this</span></span>|<span data-ttu-id="a3245-231">目的</span><span class="sxs-lookup"><span data-stu-id="a3245-231">To do this</span></span>|  
     |--------------|----------------|  
-    |<span data-ttu-id="a3245-232">**プロジェクトの種類**</span><span class="sxs-lookup"><span data-stu-id="a3245-232">**Project types**</span></span>|<span data-ttu-id="a3245-233">をクリックして**Visual c#**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-233">Click **Visual C#**.</span></span>|  
+    |<span data-ttu-id="a3245-232">**プロジェクトの種類**</span><span class="sxs-lookup"><span data-stu-id="a3245-232">**Project types**</span></span>|<span data-ttu-id="a3245-233">をクリックして**Visual c#** です。</span><span class="sxs-lookup"><span data-stu-id="a3245-233">Click **Visual C#**.</span></span>|  
     |<span data-ttu-id="a3245-234">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="a3245-234">**Templates**</span></span>|<span data-ttu-id="a3245-235">をクリックして**コンソール アプリケーション**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-235">Click **Console Application**.</span></span>|  
     |<span data-ttu-id="a3245-236">**名前**</span><span class="sxs-lookup"><span data-stu-id="a3245-236">**Name**</span></span>|<span data-ttu-id="a3245-237">型**TestProcessPODbNet**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-237">Type **TestProcessPODbNet**.</span></span>|  
     |<span data-ttu-id="a3245-238">**場所**</span><span class="sxs-lookup"><span data-stu-id="a3245-238">**Location**</span></span>|<span data-ttu-id="a3245-239">指定**C:\BRE-Walkthroughs**場所として。</span><span class="sxs-lookup"><span data-stu-id="a3245-239">Specify **C:\BRE-Walkthroughs** as the location.</span></span>|  
     |<span data-ttu-id="a3245-240">**[ソリューション名]**</span><span class="sxs-lookup"><span data-stu-id="a3245-240">**Solution Name**</span></span>|<span data-ttu-id="a3245-241">型**TestProcessPODbNetSol**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-241">Type **TestProcessPODbNetSol**.</span></span>|  
     |<span data-ttu-id="a3245-242">**ソリューションのディレクトリを作成します。**</span><span class="sxs-lookup"><span data-stu-id="a3245-242">**Create directory for solution**</span></span>|<span data-ttu-id="a3245-243">ソリューション ファイルのディレクトリを作成するには、このチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="a3245-243">Select this check box to create a directory for the solution files.</span></span>|  
   
-4.  <span data-ttu-id="a3245-244">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a3245-244">Click **OK**.</span></span> <span data-ttu-id="a3245-245">**TestProcessPODbNet**プロジェクトがソリューション エクスプ ローラーで表示されます。</span><span class="sxs-lookup"><span data-stu-id="a3245-245">The **TestProcessPODbNet** project should appear in Solution Explorer.</span></span> <span data-ttu-id="a3245-246">ソリューション エクスプ ローラーが表示されない場合はクリックして**ソリューション エクスプ ローラー**上、**ビュー**メニュー。</span><span class="sxs-lookup"><span data-stu-id="a3245-246">If you do not see Solution Explorer, click **Solution Explorer** on the **View** menu.</span></span>  
+4.  <span data-ttu-id="a3245-244">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a3245-244">Click **OK**.</span></span> <span data-ttu-id="a3245-245">**TestProcessPODbNet**プロジェクトがソリューション エクスプ ローラーで表示されます。</span><span class="sxs-lookup"><span data-stu-id="a3245-245">The **TestProcessPODbNet** project should appear in Solution Explorer.</span></span> <span data-ttu-id="a3245-246">ソリューション エクスプ ローラーが表示されない場合はクリックして**ソリューション エクスプ ローラー**上、**ビュー**メニュー。</span><span class="sxs-lookup"><span data-stu-id="a3245-246">If you do not see Solution Explorer, click **Solution Explorer** on the **View** menu.</span></span>  
   
 5.  <span data-ttu-id="a3245-247">ソリューション エクスプ ローラーで右クリック**参照**、クリックして**参照の追加**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-247">In Solution Explorer, right-click **References**, and then click **Add Reference**.</span></span>  
   
-6.  <span data-ttu-id="a3245-248">をクリックして**参照**を参照**\program files \microsoft BizTalk**、順にダブルクリック**[microsoft.ruleengine.dll]**です。</span><span class="sxs-lookup"><span data-stu-id="a3245-248">Click **Browse**, browse to **\Program Files\Common Files\Microsoft BizTalk**, and then double-click **Microsoft.RuleEngine.dll**.</span></span>  
+6.  <span data-ttu-id="a3245-248">をクリックして**参照**を参照**\program files \microsoft BizTalk**、順にダブルクリック **[microsoft.ruleengine.dll]** です。</span><span class="sxs-lookup"><span data-stu-id="a3245-248">Click **Browse**, browse to **\Program Files\Common Files\Microsoft BizTalk**, and then double-click **Microsoft.RuleEngine.dll**.</span></span>  
   
 7.  <span data-ttu-id="a3245-249">先頭に次のコードを追加、 **Program.cs**後、既存のファイル`using`ステートメント。</span><span class="sxs-lookup"><span data-stu-id="a3245-249">Add the following code to the top of the **Program.cs** file after the existing `using` statements:</span></span>  
   

@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216546"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-oracle-database"></a><span data-ttu-id="a428a-102">Oracle データベースの資格情報 で、サインオンを構成します。</span><span class="sxs-lookup"><span data-stu-id="a428a-102">Configure the sign in credentials for the Oracle Database</span></span>
 <span data-ttu-id="a428a-103">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]アダプター クライアント クライアントの資格情報を提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a428a-103">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] requires the adapter clients to provide client credentials.</span></span> <span data-ttu-id="a428a-104">アダプターは、Oracle データベースでユーザーを認証し、接続を確立するために、これらの資格情報を使用します。</span><span class="sxs-lookup"><span data-stu-id="a428a-104">The adapter uses these credentials to authenticate the user with the Oracle database and to establish a connection.</span></span>  
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="a428a-124">Windows 認証を使用して接続するには、入力 **/** で、**ユーザー名**テキスト ボックスと参加解除、**パスワード**ボックスは空白です。</span><span class="sxs-lookup"><span data-stu-id="a428a-124">To connect using Windows Authentication, type **/** in the **User name** text box and leave the **Password** text box blank.</span></span>  
   
-6.  <span data-ttu-id="a428a-125">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a428a-125">Click **OK**.</span></span>  
+6.  <span data-ttu-id="a428a-125">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a428a-125">Click **OK**.</span></span>  
   
 #### <a name="to-specify-credentials-using-add-adapter-metadata-wizard"></a><span data-ttu-id="a428a-126">アダプター メタデータの追加ウィザードを使用して資格情報を指定するには</span><span class="sxs-lookup"><span data-stu-id="a428a-126">To specify credentials using Add Adapter Metadata Wizard</span></span>  
   
@@ -65,14 +66,14 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="a428a-131">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="a428a-131">**Categories**</span></span>|<span data-ttu-id="a428a-132">をクリックして**アダプターを追加**です。</span><span class="sxs-lookup"><span data-stu-id="a428a-132">Click **Add Adapter**.</span></span>|  
     |<span data-ttu-id="a428a-133">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="a428a-133">**Templates**</span></span>|<span data-ttu-id="a428a-134">をクリックして**アダプター メタデータの追加**です。</span><span class="sxs-lookup"><span data-stu-id="a428a-134">Click **Add Adapter Metadata**.</span></span>|  
   
-3.  <span data-ttu-id="a428a-135">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a428a-135">Click **Add**.</span></span> <span data-ttu-id="a428a-136">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="a428a-136">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
+3.  <span data-ttu-id="a428a-135">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a428a-135">Click **Add**.</span></span> <span data-ttu-id="a428a-136">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="a428a-136">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
   
 4.  <span data-ttu-id="a428a-137">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] **Wcf-oracledb**です。</span><span class="sxs-lookup"><span data-stu-id="a428a-137">In the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)], select **WCF-OracleDB**.</span></span> <span data-ttu-id="a428a-138">コンピューターを選択して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]がインストールされていると、BizTalk データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="a428a-138">Select the computer on which [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] is installed and the name of the BizTalk database.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="a428a-139">BizTalk で構成された Wcf-oracledb ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="a428a-139">If you already have a WCF-OracleDB port configured in BizTalk, select the port from the **Port** list.</span></span>  
   
-5.  <span data-ttu-id="a428a-140">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a428a-140">Click **Next**.</span></span>  
+5.  <span data-ttu-id="a428a-140">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a428a-140">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="a428a-141">**アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**一覧で、選択**oracleDBBinding**、クリックして**構成**.</span><span class="sxs-lookup"><span data-stu-id="a428a-141">In the **Consume Adapter Service** dialog box, from the **Select a binding** list, select **oracleDBBinding**, and then click **Configure**.</span></span>  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="a428a-144">Windows 認証を使用して接続するには、入力 **/** で、**ユーザー名**テキスト ボックスと参加解除、**パスワード**ボックスは空白です。</span><span class="sxs-lookup"><span data-stu-id="a428a-144">To connect using Windows Authentication, type **/** in the **User name** text box and leave the **Password** text box blank.</span></span>  
   
-8.  <span data-ttu-id="a428a-145">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a428a-145">Click **OK**.</span></span>  
+8.  <span data-ttu-id="a428a-145">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a428a-145">Click **OK**.</span></span>  
   
 ## <a name="specifying-client-credentials-from-the-biztalk-server-administration-console"></a><span data-ttu-id="a428a-146">BizTalk Server 管理コンソールからクライアントの資格情報の指定</span><span class="sxs-lookup"><span data-stu-id="a428a-146">Specifying Client Credentials from the BizTalk Server Administration Console</span></span>  
  <span data-ttu-id="a428a-147">[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、Wcf-custom または Wcf-oracledb ポートの構成の一部として、資格情報を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a428a-147">From the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you must specify the credentials as part of the WCF-Custom or WCF-OracleDB port configuration.</span></span>  
@@ -115,7 +116,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="a428a-162">選択**から資格情報を取得関連アプリケーション**オプション、および関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="a428a-162">Select **Get credentials from affiliate application** option, and specify an affiliate application.</span></span>  
   
-6.  <span data-ttu-id="a428a-163">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a428a-163">Click **OK**.</span></span>  
+6.  <span data-ttu-id="a428a-163">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a428a-163">Click **OK**.</span></span>  
   
 #### <a name="to-specify-credentials-for-the-wcf-oracledb-port"></a><span data-ttu-id="a428a-164">Wcf-oracledb ポート用の資格情報を指定するには</span><span class="sxs-lookup"><span data-stu-id="a428a-164">To specify credentials for the WCF-OracleDB port</span></span>  
   
@@ -152,7 +153,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="a428a-182">選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="a428a-182">Select **Get credentials from affiliate application** option, and specify an affiliate SSO application.</span></span>  
   
-8.  <span data-ttu-id="a428a-183">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a428a-183">Click **OK**.</span></span>  
+8.  <span data-ttu-id="a428a-183">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a428a-183">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="a428a-184">参照</span><span class="sxs-lookup"><span data-stu-id="a428a-184">See Also</span></span>  
 <span data-ttu-id="a428a-185">[Oracle データベースと BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md) </span><span class="sxs-lookup"><span data-stu-id="a428a-185">[Building Blocks to develop BizTalk Applications with Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md) </span></span>  

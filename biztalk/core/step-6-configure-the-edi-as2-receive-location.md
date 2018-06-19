@@ -1,14 +1,14 @@
 ---
-title: "手順 6: EDI、AS2 を構成する受信場所 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 6: EDI、AS2 を構成する受信場所 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 167f8ba2-d38b-4088-863b-2bd90c2a12a2
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276258"
 ---
 # <a name="step-6-configure-the-edi-as2-receive-location"></a><span data-ttu-id="cd4a3-102">手順 6: EDI、AS2 を構成する受信場所</span><span class="sxs-lookup"><span data-stu-id="cd4a3-102">Step 6: Configure the EDI-AS2 Receive Location</span></span>
 <span data-ttu-id="cd4a3-103">![手順 11 の 6](../core/media/tut-step6-of-11.gif "Tut_Step6_of_11")</span><span class="sxs-lookup"><span data-stu-id="cd4a3-103">![Step 6 of 11](../core/media/tut-step6-of-11.gif "Tut_Step6_of_11")</span></span>  
@@ -38,9 +39,9 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="cd4a3-118">**受信場所のプロパティ**ダイアログ ボックスで、名前、受信場所**Receive_AS2** **HTTP**の**型**、し、をクリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="cd4a3-118">In the **Receive Location Properties** dialog box, name your receive location **Receive_AS2**, select **HTTP** for **Type**, and then click **Configure**.</span></span>  
   
-5.  <span data-ttu-id="cd4a3-119">**HTTP トランスポートのプロパティ** ダイアログ ボックスで、入力**/Contoso/BTSHTTPReceive.dll**の**仮想ディレクトリと ISAPI 拡張**です。</span><span class="sxs-lookup"><span data-stu-id="cd4a3-119">In the **HTTP Transport Properties** dialog box, enter **/Contoso/BTSHTTPReceive.dll** for **Virtual directory plus ISAPI extension**.</span></span> <span data-ttu-id="cd4a3-120">クリア**成功した場合の戻り値の関連付けハンドル**選択**失敗した要求を中断**です。</span><span class="sxs-lookup"><span data-stu-id="cd4a3-120">Clear **Return correlation handle on success** and select **Suspend failed requests**.</span></span> <span data-ttu-id="cd4a3-121">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd4a3-121">Click **OK**.</span></span>  
+5.  <span data-ttu-id="cd4a3-119">**HTTP トランスポートのプロパティ** ダイアログ ボックスで、入力 **/Contoso/BTSHTTPReceive.dll**の**仮想ディレクトリと ISAPI 拡張**です。</span><span class="sxs-lookup"><span data-stu-id="cd4a3-119">In the **HTTP Transport Properties** dialog box, enter **/Contoso/BTSHTTPReceive.dll** for **Virtual directory plus ISAPI extension**.</span></span> <span data-ttu-id="cd4a3-120">クリア**成功した場合の戻り値の関連付けハンドル**選択**失敗した要求を中断**です。</span><span class="sxs-lookup"><span data-stu-id="cd4a3-120">Clear **Return correlation handle on success** and select **Suspend failed requests**.</span></span> <span data-ttu-id="cd4a3-121">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd4a3-121">Click **OK**.</span></span>  
   
-6.  <span data-ttu-id="cd4a3-122">選択**AS2EdiReceive**の**受信パイプライン**です。</span><span class="sxs-lookup"><span data-stu-id="cd4a3-122">Select **AS2EdiReceive** for the **Receive Pipeline**.</span></span> <span data-ttu-id="cd4a3-123">をクリックして**[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="cd4a3-123">Click **OK**, and then click **OK** again.</span></span>  
+6.  <span data-ttu-id="cd4a3-122">選択**AS2EdiReceive**の**受信パイプライン**です。</span><span class="sxs-lookup"><span data-stu-id="cd4a3-122">Select **AS2EdiReceive** for the **Receive Pipeline**.</span></span> <span data-ttu-id="cd4a3-123">をクリックして **[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="cd4a3-123">Click **OK**, and then click **OK** again.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="cd4a3-124">AS2EdiReceive 受信パイプラインは、AS2 のデコードと EDI の逆アセンブルを実行します。</span><span class="sxs-lookup"><span data-stu-id="cd4a3-124">The AS2EdiReceive receive pipeline performs AS2 decoding and EDI disassembly.</span></span>  

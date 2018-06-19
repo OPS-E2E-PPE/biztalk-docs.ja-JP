@@ -1,11 +1,11 @@
 ---
-title: "アクティビティ ビューについて | Microsoft Docs"
-ms.custom: 
+title: アクティビティ ビューについて | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], Activity view [Tracking Profile Editor]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, Activity view
 - Activity view [Tracking Profile Editor]
 ms.assetid: ae6bcdc8-e426-4148-b83d-08a1a5e99ca3
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290386"
 ---
 # <a name="what-is-an-activity-view"></a><span data-ttu-id="8ebf4-103">アクティビティ ビューについて</span><span class="sxs-lookup"><span data-stu-id="8ebf4-103">What Is an Activity View?</span></span>
 <span data-ttu-id="8ebf4-104">アクティビティ ビューには、インポートした BAM アクティビティ定義が含まれています。このアクティビティ定義は、Excel 用の BAM アドインで作成します。</span><span class="sxs-lookup"><span data-stu-id="8ebf4-104">An activity view contains the imported BAM activity definition that you create with the BAM Add-In for Excel.</span></span> <span data-ttu-id="8ebf4-105">BAM アクティビティ定義は、ビジネス プロセスの追跡要件の抽象概念です。</span><span class="sxs-lookup"><span data-stu-id="8ebf4-105">The BAM activity definition is an abstract of your trace requirements for your business process.</span></span> <span data-ttu-id="8ebf4-106">アクティビティは、複数のオーケストレーションおよびポートにまたがることがあります。</span><span class="sxs-lookup"><span data-stu-id="8ebf4-106">An activity can span multiple orchestrations and ports.</span></span> <span data-ttu-id="8ebf4-107">アクティビティ定義をインポートすると、その定義の一部を遂行する各オーケストレーション アイテムまたは各メッセージング アイテムにマップされます。</span><span class="sxs-lookup"><span data-stu-id="8ebf4-107">You import the activity definition once and map it to each orchestration or messaging artifact that fulfills some part of the definition.</span></span>  

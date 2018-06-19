@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005763"
 ---
 # <a name="step-2-creating-the-contoso-lob-application-schemas-for-the-price-and-availability-project-using-biztalk-editor"></a><span data-ttu-id="d943d-102">手順 2: Price and Availability プロジェクトの BizTalk エディターを使用して用の Contoso LOB アプリケーション スキーマの作成</span><span class="sxs-lookup"><span data-stu-id="d943d-102">Step 2: Creating the Contoso LOB Application Schemas for the Price and Availability Project Using BizTalk Editor</span></span>
 <span data-ttu-id="d943d-103">ここでは、特定の製品の価格やその製品が入手可能かどうかを Contoso ERP システムに照会する際に使用するスキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="d943d-103">In this step, you generate the schema to use to query the Contoso ERP system for the price and availability of a particular product.</span></span> <span data-ttu-id="d943d-104">使用してこのスキーマを生成する、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server の SQL アダプターです。</span><span class="sxs-lookup"><span data-stu-id="d943d-104">You generate this schema by using the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® SQL Adapter for BizTalk Server.</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  <span data-ttu-id="d943d-118">**データベース情報**] ページで [**設定**です。</span><span class="sxs-lookup"><span data-stu-id="d943d-118">On the **Database Information** page, click **Set**.</span></span>  
   
-6.  <span data-ttu-id="d943d-119">[データ リンク プロパティ] ダイアログ ボックスで、**を選択するか、サーバー名を入力**ボックスに、入力**localhost**です。</span><span class="sxs-lookup"><span data-stu-id="d943d-119">In the Data Link Properties dialog box, in the **Select or enter a server name** box, type **localhost**.</span></span> <span data-ttu-id="d943d-120">選択**Windows NT 統合セキュリティ**です。</span><span class="sxs-lookup"><span data-stu-id="d943d-120">Select **Use Windows NT Integrated security**.</span></span> <span data-ttu-id="d943d-121">**サーバー上のデータベースを選択して**を選択、 **Contoso**データベースの一覧からデータベース。</span><span class="sxs-lookup"><span data-stu-id="d943d-121">For **Select the database on the server**, select the **Contoso** database from the database list.</span></span> <span data-ttu-id="d943d-122">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d943d-122">Click **OK**.</span></span>  
+6.  <span data-ttu-id="d943d-119">[データ リンク プロパティ] ダイアログ ボックスで、**を選択するか、サーバー名を入力**ボックスに、入力**localhost**です。</span><span class="sxs-lookup"><span data-stu-id="d943d-119">In the Data Link Properties dialog box, in the **Select or enter a server name** box, type **localhost**.</span></span> <span data-ttu-id="d943d-120">選択**Windows NT 統合セキュリティ**です。</span><span class="sxs-lookup"><span data-stu-id="d943d-120">Select **Use Windows NT Integrated security**.</span></span> <span data-ttu-id="d943d-121">**サーバー上のデータベースを選択して**を選択、 **Contoso**データベースの一覧からデータベース。</span><span class="sxs-lookup"><span data-stu-id="d943d-121">For **Select the database on the server**, select the **Contoso** database from the database list.</span></span> <span data-ttu-id="d943d-122">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d943d-122">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="d943d-123">**データベース情報** ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="d943d-123">On the **Database Information** page, click **Next**.</span></span>  
   
@@ -67,11 +68,11 @@ ms.lasthandoff: 12/01/2017
     |<span data-ttu-id="d943d-131">**要求ドキュメントのルート要素名**</span><span class="sxs-lookup"><span data-stu-id="d943d-131">**Request document root element name**</span></span>|<span data-ttu-id="d943d-132">型**rootPriceRequest**です。</span><span class="sxs-lookup"><span data-stu-id="d943d-132">Type **rootPriceRequest**.</span></span>|  
     |<span data-ttu-id="d943d-133">**応答ドキュメントのルート要素名**</span><span class="sxs-lookup"><span data-stu-id="d943d-133">**Response document root element name**</span></span>|<span data-ttu-id="d943d-134">型**rootPriceResponse**です。</span><span class="sxs-lookup"><span data-stu-id="d943d-134">Type **rootPriceResponse**.</span></span>|  
   
-9. <span data-ttu-id="d943d-135">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d943d-135">Click **Next**.</span></span>  
+9. <span data-ttu-id="d943d-135">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d943d-135">Click **Next**.</span></span>  
   
 10. <span data-ttu-id="d943d-136">**ステートメントの種類の情報**] ページで、[**ストアド プロシージャの**、順にクリック**次**です。</span><span class="sxs-lookup"><span data-stu-id="d943d-136">On the **Statement type information** page, select **Stored Procedure**, and then click **Next**.</span></span>  
   
-11. <span data-ttu-id="d943d-137">**ステートメント情報**] ページの**\<ストアド プロシージャを選択\>**[ **SP_GetInventoryForProductID**から、ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="d943d-137">On the **Statement Information** page, for **\<Select a stored procedure\>**, select **SP_GetInventoryForProductID** from the drop-down list.</span></span> <span data-ttu-id="d943d-138">をクリックして**生成**、クリックして**[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="d943d-138">Click **Generate**, and then click **Next**.</span></span>  
+11. <span data-ttu-id="d943d-137">**ステートメント情報**] ページの**\<ストアド プロシージャを選択\>**[ **SP_GetInventoryForProductID**から、ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="d943d-137">On the **Statement Information** page, for **\<Select a stored procedure\>**, select **SP_GetInventoryForProductID** from the drop-down list.</span></span> <span data-ttu-id="d943d-138">をクリックして**生成**、クリックして **[次へ]** です。</span><span class="sxs-lookup"><span data-stu-id="d943d-138">Click **Generate**, and then click **Next**.</span></span>  
   
 12. <span data-ttu-id="d943d-139">**SQL トランスポート スキーマ生成ウィザードを完了する** ページで、をクリックして**完了**ContosoPriceAndAvailability BizTalk プロジェクトにスキーマをインポートします。</span><span class="sxs-lookup"><span data-stu-id="d943d-139">On the **Completing the SQL Transport Schema Generation Wizard** page, click **Finish** to import the schema into the ContosoPriceAndAvailability BizTalk project.</span></span>  
   

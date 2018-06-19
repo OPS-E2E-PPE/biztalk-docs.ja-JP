@@ -1,14 +1,14 @@
 ---
-title: "基本的なと複雑なマッピング操作 |Microsoft ドキュメント"
-ms.custom: 
+title: 基本的なと複雑なマッピング操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: da864b48-6255-4847-9a6f-13e489e8658d
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710313"
 ---
 # <a name="basic-and-complex-mapping-operations"></a><span data-ttu-id="5c6d8-102">基本のマッピング操作と複雑なマッピング操作</span><span class="sxs-lookup"><span data-stu-id="5c6d8-102">Basic and Complex Mapping Operations</span></span>
 <span data-ttu-id="5c6d8-103">BizTalk マッパーは、単純な親子ツリー型の操作から、ループ レコードや階層を含む詳細で複雑な操作まで、さまざまなマッピング シナリオに対するソリューションを提供します。</span><span class="sxs-lookup"><span data-stu-id="5c6d8-103">BizTalk Mapper provides solutions for a variety of mapping scenarios ranging from simple parent-child tree-type operations to detailed, complex operations involving looping records and hierarchies.</span></span> <span data-ttu-id="5c6d8-104">マッピング シナリオの複雑さは、基本設定とビジネス ニーズによって異なります。: XML Schema definition (XSD) 言語では、柔軟性が構造化された形式を定義する際にします。</span><span class="sxs-lookup"><span data-stu-id="5c6d8-104">The complexity of a mapping scenario depends on your preferences and business needs—XML Schema definition (XSD) language gives you considerable flexibility in defining structured formats.</span></span> <span data-ttu-id="5c6d8-105">ほぼすべてのマッピング シナリオは、2 つのカテゴリ (基本的なマッピングと複雑なマッピング) のいずれかに分類されます。</span><span class="sxs-lookup"><span data-stu-id="5c6d8-105">Almost all mapping scenarios fall into one of two categories: basic mapping and complex mapping.</span></span>  

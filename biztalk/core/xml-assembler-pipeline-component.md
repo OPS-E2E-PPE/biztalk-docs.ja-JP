@@ -1,17 +1,17 @@
 ---
-title: "XML アセンブラー パイプライン コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: XML アセンブラー パイプライン コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XML Assembler [pipeline component]
 - pipeline components, XML Assembler
 ms.assetid: 3adfd603-0577-49c2-ae9d-445d62fed385
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289490"
 ---
 # <a name="xml-assembler-pipeline-component"></a><span data-ttu-id="a7bdb-102">XML アセンブラー パイプライン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="a7bdb-102">XML Assembler Pipeline Component</span></span>
 <span data-ttu-id="a7bdb-103">XML アセンブラー パイプライン コンポーネントは、XML のシリアル化とアセンブルを 1 つのコンポーネントで実行します。</span><span class="sxs-lookup"><span data-stu-id="a7bdb-103">The XML Assembler pipeline component combines XML serializing and assembling in one component.</span></span> <span data-ttu-id="a7bdb-104">XML アセンブラー パイプライン コンポーネントの主要な機能は、メッセージ コンテキストからエンベロープおよびドキュメントにプロパティを転送することです。</span><span class="sxs-lookup"><span data-stu-id="a7bdb-104">Its primary function is to transfer properties from the message context back into envelopes and documents.</span></span>  

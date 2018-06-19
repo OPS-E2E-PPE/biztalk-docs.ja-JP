@@ -1,14 +1,14 @@
 ---
-title: "SQL Server エージェント ジョブの監視 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL Server エージェント ジョブの監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 60d0a377-c86d-429b-9e48-c37bd5b0f912
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298962"
 ---
 # <a name="monitoring-sql-server-agent-jobs"></a><span data-ttu-id="c4cf8-102">SQL Server エージェント ジョブの監視</span><span class="sxs-lookup"><span data-stu-id="c4cf8-102">Monitoring SQL Server Agent Jobs</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="c4cf8-103"> には、サーバーの動作状況と状態を維持するための重要な機能を実行する複数の SQL Server エージェント ジョブが含まれます。</span><span class="sxs-lookup"><span data-stu-id="c4cf8-103"> includes multiple SQL Server Agent jobs that perform important functions to keep your servers operational and healthy.</span></span> <span data-ttu-id="c4cf8-104">これらのジョブの状態を監視し、エラーが発生せずに動作していることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c4cf8-104">You should monitor the health of these jobs and ensure that they are running without errors.</span></span>  

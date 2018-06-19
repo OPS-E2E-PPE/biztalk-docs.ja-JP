@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-peoplesoft-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 2b0a1aa81971e3e086881e23bcfd6d7ba5d5799d
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24012881"
 ---
 # <a name="optimize-configuration"></a><span data-ttu-id="6ebe9-101">構成を最適化します。</span><span class="sxs-lookup"><span data-stu-id="6ebe9-101">Optimize configuration</span></span>
 <span data-ttu-id="6ebe9-102">このセクションでは、BizTalk Adapter for PeopleSoft Enterprise の構成を最適化する方法について説明します。アダプターをセットアップするためのパラメーターについても説明します。</span><span class="sxs-lookup"><span data-stu-id="6ebe9-102">This section contains information about how to optimize your configuration of BizTalk Adapter for PeopleSoft Enterprise and includes parameter descriptions for setting up the adapter.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "手順 3: 一方向 FILE 送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: 一方向 FILE 送信ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c52c6b6b-6f9c-48f2-8732-450fe3a15eae
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277330"
 ---
 # <a name="step-3-configure-a-one-way-file-send-port"></a><span data-ttu-id="4f03e-102">手順 3: 一方向 FILE 送信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="4f03e-102">Step 3: Configure a One-way FILE Send Port</span></span>
 <span data-ttu-id="4f03e-103">このステップでは、REST インターフェイスから受信した応答メッセージを使用し、そのメッセージをファイルの場所にコピーする一方向の FILE 送信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="4f03e-103">In this step you configure a one-way FILE send port that consumes the response message received from the REST interface and copies it to a file location.</span></span>  
@@ -51,7 +52,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="4f03e-128">**演算子**</span><span class="sxs-lookup"><span data-stu-id="4f03e-128">**Operator**</span></span>|<span data-ttu-id="4f03e-129">を設定します。**==**</span><span class="sxs-lookup"><span data-stu-id="4f03e-129">Set to **==**</span></span>|  
     |<span data-ttu-id="4f03e-130">**値**</span><span class="sxs-lookup"><span data-stu-id="4f03e-130">**Value**</span></span>|<span data-ttu-id="4f03e-131">を設定します。`SendPortRESTAzureMarketPlace`</span><span class="sxs-lookup"><span data-stu-id="4f03e-131">Set to `SendPortRESTAzureMarketPlace`</span></span>|  
   
-5.  <span data-ttu-id="4f03e-132">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f03e-132">Click **OK**.</span></span>  
+5.  <span data-ttu-id="4f03e-132">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f03e-132">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="4f03e-133">参照</span><span class="sxs-lookup"><span data-stu-id="4f03e-133">See Also</span></span>  
  [<span data-ttu-id="4f03e-134">チュートリアル 5: BizTalk Server を使用して REST インターフェイスの呼び出し</span><span class="sxs-lookup"><span data-stu-id="4f03e-134">Tutorial 5: Invoking a REST Interface Using BizTalk Server</span></span>](../core/tutorial-5-invoking-a-rest-interface-using-biztalk-server.md)

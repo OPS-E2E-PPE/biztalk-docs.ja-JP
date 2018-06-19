@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67a353e7-1ba3-427a-8e99-c9b8d83061cb
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25976072"
 ---
 # <a name="wcf-webhttp-adapter"></a><span data-ttu-id="9c5cd-102">WCF-WebHttp アダプター</span><span class="sxs-lookup"><span data-stu-id="9c5cd-102">WCF-WebHttp Adapter</span></span>
 [!INCLUDE[btsCoName](../includes/btsconame-md.md)]<span data-ttu-id="9c5cd-103"> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用して、 **Wcf-webhttp** RESTful サービスにメッセージを送信するアダプター。</span><span class="sxs-lookup"><span data-stu-id="9c5cd-103"> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the **WCF-WebHttp** adapter to send messages to RESTful services.</span></span> <span data-ttu-id="9c5cd-104">**Wcf-webhttp** 送信アダプターは、BizTalk メッセージからサービスに HTTP メッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="9c5cd-104">The **WCF-WebHttp** send adapter sends HTTP messages to a service from a BizTalk message.</span></span> <span data-ttu-id="9c5cd-105">受信場所は RESTful サービスからのメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="9c5cd-105">The receive location receives messages from a RESTful service.</span></span> <span data-ttu-id="9c5cd-106">GET および DELETE 要求の場合、アダプターはペイロードを使用しません。</span><span class="sxs-lookup"><span data-stu-id="9c5cd-106">For GET and DELETE request, the adapter does not use any payload.</span></span> <span data-ttu-id="9c5cd-107">POST および PUT 要求の場合は、アダプターは HTTP コンテンツ/ペイロードに BizTalk メッセージのボディ部を使用します。</span><span class="sxs-lookup"><span data-stu-id="9c5cd-107">For POST and PUT request, the adapter uses the BizTalk message body part to the HTTP content/payload.</span></span>  
@@ -81,7 +82,7 @@ ms.lasthandoff: 03/23/2018
     |<span data-ttu-id="9c5cd-253">**失敗時に要求メッセージを中断します。**</span><span class="sxs-lookup"><span data-stu-id="9c5cd-253">**Suspend request message on failure**</span></span>|<span data-ttu-id="9c5cd-254">受信パイプラインまたはルーティングの障害によって受信処理に失敗した要求メッセージを保留するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="9c5cd-254">Specify whether to suspend the request message that fails inbound processing due to a receive pipeline failure or a routing failure.</span></span><br /><br /> <span data-ttu-id="9c5cd-255">既定値はオフです。</span><span class="sxs-lookup"><span data-stu-id="9c5cd-255">The default value is cleared.</span></span>|  
     |<span data-ttu-id="9c5cd-256">**エラーに例外の詳細を含める**</span><span class="sxs-lookup"><span data-stu-id="9c5cd-256">**Include exception detail in faults**</span></span>|<span data-ttu-id="9c5cd-257">エラーが発生した場合に、デバッグのために SOAP エラーを返すかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="9c5cd-257">Specify whether to return SOAP faults when an error occurs to easy debugging.</span></span><br /><br /> <span data-ttu-id="9c5cd-258">既定値はオフです。</span><span class="sxs-lookup"><span data-stu-id="9c5cd-258">The default value is cleared.</span></span>|  
   
-9. <span data-ttu-id="9c5cd-259">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9c5cd-259">Click **OK**.</span></span>  
+9. <span data-ttu-id="9c5cd-259">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9c5cd-259">Click **OK**.</span></span>  
   
 10. <span data-ttu-id="9c5cd-260">**[受信場所のプロパティ]** ダイアログ ボックスで、受信場所を構成するための適切な値を入力し、**[OK]** をクリックして設定を保存します。</span><span class="sxs-lookup"><span data-stu-id="9c5cd-260">Enter the appropriate values in the **Receive Location Properties** dialog box to complete the configuration of the receive location and click **OK** to save settings.</span></span> <span data-ttu-id="9c5cd-261">については、 **受信場所のプロパティ** ダイアログ ボックスを参照してください [受信場所を作成する方法](../core/how-to-create-a-receive-location.md)します。</span><span class="sxs-lookup"><span data-stu-id="9c5cd-261">For information about the **Receive Locations Properties** dialog box, see [How to Create a Receive Location](../core/how-to-create-a-receive-location.md).</span></span>  
 

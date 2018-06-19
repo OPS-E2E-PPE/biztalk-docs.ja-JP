@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server1 における EDI のサポート |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server1 における EDI のサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7cddab7a-99ef-4dbb-bb74-9e3d03df3996
-caps.latest.revision: "37"
+caps.latest.revision: 37
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006971"
 ---
 # <a name="edi-support-in-biztalk-server"></a><span data-ttu-id="d0cff-102">BizTalk Server における EDI のサポート</span><span class="sxs-lookup"><span data-stu-id="d0cff-102">EDI Support in BizTalk Server</span></span>
 <span data-ttu-id="d0cff-103">このトピックでは、EDI および BizTalk Server が EDI をサポートする方法の簡単な概要を説明します。</span><span class="sxs-lookup"><span data-stu-id="d0cff-103">This topic provides a brief general overview of EDI and how BizTalk Server supports EDI.</span></span>  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22288178"
 ---
 # <a name="warning--the-scripting-functoid-that-connects-to-target-node-39039-has-a-warning-in-its-39xslt-call-template39-definition-39139"></a><span data-ttu-id="df408-102">警告-スクリプト functoid、ターゲット ノードに接続する&#39;{0}&#39;、警告が、その&#39;Xslt 呼び出しテンプレート&#39;定義: &#39;{1}&#39;</span><span class="sxs-lookup"><span data-stu-id="df408-102">Warning- The Scripting functoid, that connects to target node &#39;{0}&#39;, has a warning in its &#39;Xslt Call-Template&#39; definition: &#39;{1}&#39;</span></span>
 <span data-ttu-id="df408-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="df408-103">**Error Code**</span></span>  

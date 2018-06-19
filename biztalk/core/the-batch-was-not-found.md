@@ -1,14 +1,14 @@
 ---
-title: "バッチが見つかりませんでした |。Microsoft ドキュメント"
-ms.custom: 
+title: バッチが見つかりませんでした |。Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e967e1a-b87f-4c87-a157-a6f63ba96d78
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279482"
 ---
 # <a name="the-batch-was-not-found"></a><span data-ttu-id="7d6d4-102">バッチが見つかりませんでした</span><span class="sxs-lookup"><span data-stu-id="7d6d4-102">The batch was not found</span></span>
 ## <a name="details"></a><span data-ttu-id="7d6d4-103">詳細</span><span class="sxs-lookup"><span data-stu-id="7d6d4-103">Details</span></span>  

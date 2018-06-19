@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: Wcf-nettcp アダプターとメッセージ セキュリティ モードを使用する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: Wcf-nettcp アダプターとメッセージ セキュリティ モードを使用する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7f6e892-34ce-4132-8867-54cc3bbfe507
-caps.latest.revision: "47"
+caps.latest.revision: 47
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010611"
 ---
 # <a name="walkthrough-using-the-message-security-mode-with-the-wcf-nettcp-adapter"></a><span data-ttu-id="8c8d1-102">チュートリアル: Wcf-nettcp アダプターとメッセージ セキュリティ モードを使用します。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-102">Walkthrough: Using the Message Security Mode with the WCF-NetTcp Adapter</span></span>
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 12/01/2017
   
     2.  <span data-ttu-id="8c8d1-139">下にある、**サーバー マネージャー**ノード、をクリックして**追加**、順にクリック**ロール**です。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-139">Under the **Server Manager** node, click **Add**, and then click **Roles**.</span></span>  
   
-    3.  <span data-ttu-id="8c8d1-140">これにより、**開始する前に**のダイアログ ボックス、**役割の追加ウィザード**です。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-140">This brings up the **Before you begin** dialog for the **Add Roles Wizard**.</span></span> <span data-ttu-id="8c8d1-141">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-141">Click **Next**.</span></span>  
+    3.  <span data-ttu-id="8c8d1-140">これにより、**開始する前に**のダイアログ ボックス、**役割の追加ウィザード**です。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-140">This brings up the **Before you begin** dialog for the **Add Roles Wizard**.</span></span> <span data-ttu-id="8c8d1-141">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-141">Click **Next**.</span></span>  
   
     4.  <span data-ttu-id="8c8d1-142">**サーバーの役割の選択** ページで選択**Active Directory Certificate Services**、 をクリックして**次へ**、しに従って、画面に表示されるを完了する指示、インストール。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-142">On the **Select Server Roles** page, select **Active Directory Certificate Services**, click **Next**, and then follow the on-screen instructions to complete the installation.</span></span>  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 12/01/2017
     1.  <span data-ttu-id="8c8d1-144">Internet Explorer で、Web サイトを参照してください。`http://localhost/certsrv`です。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-144">In Internet Explorer, visit the Web site `http://localhost/certsrv`.</span></span> <span data-ttu-id="8c8d1-145">**へようこそ**  ページで、をクリックして**証明書を要求**、クリックして**高度な証明書の要求**上、**証明書を要求**ページです。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-145">On the **Welcome** page, click **Request a Certificate**, and then click **Advanced certificate request** on the **Request a Certificate** page.</span></span>  
   
         > [!NOTE]
-        >  <span data-ttu-id="8c8d1-146">使用する場合[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]証明機関から証明書の要求を要求すると、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]コンピューター、エラーが発生する可能性があります**"証明書の登録を完了するために CA の Web サイト構成必要がある HTTPS を使用するには認証"**です。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-146">When using [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] as the certificate authority and requesting a certificate request from a [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] computer, you may get the error **“In order to complete certificate enrollment, the Web site for the CA must be configured to use HTTPS authentication”**.</span></span> <span data-ttu-id="8c8d1-147">このエラーが発生した場合、登録 web サイトは Web 証明書 (SSL) で構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-147">If this error occurs, the enrollment website needs to be configured with a Web Certificate (SSL).</span></span> <span data-ttu-id="8c8d1-148">この作業の詳細については、次のリンクを参照してください。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-148">Refer to these links for details in accomplishing this task:</span></span>  
+        >  <span data-ttu-id="8c8d1-146">使用する場合[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]証明機関から証明書の要求を要求すると、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]コンピューター、エラーが発生する可能性があります **"証明書の登録を完了するために CA の Web サイト構成必要がある HTTPS を使用するには認証"** です。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-146">When using [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] as the certificate authority and requesting a certificate request from a [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] computer, you may get the error **“In order to complete certificate enrollment, the Web site for the CA must be configured to use HTTPS authentication”**.</span></span> <span data-ttu-id="8c8d1-147">このエラーが発生した場合、登録 web サイトは Web 証明書 (SSL) で構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-147">If this error occurs, the enrollment website needs to be configured with a Web Certificate (SSL).</span></span> <span data-ttu-id="8c8d1-148">この作業の詳細については、次のリンクを参照してください。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-148">Refer to these links for details in accomplishing this task:</span></span>  
         >   
         >  [<span data-ttu-id="8c8d1-149">AD Cs:web 登録</span><span class="sxs-lookup"><span data-stu-id="8c8d1-149">AD CS: Web Enrollment</span></span>](http://technet.microsoft.com/library/cc732517.aspx)  
         >   
@@ -130,7 +131,7 @@ ms.lasthandoff: 12/01/2017
   
     2.  <span data-ttu-id="8c8d1-178">MMC で、上、**ファイル** メニューのをクリックして**スナップインの追加と削除**です。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-178">In the MMC, on the **File** menu, click **Add/Remove Snap-in**.</span></span>  
   
-    3.  <span data-ttu-id="8c8d1-179">**[スナップインの追加と削除]** ダイアログ ボックスで **[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-179">In the **Add/Remove Snap-in** dialog box, click **Add**.</span></span>  
+    3.  <span data-ttu-id="8c8d1-179">**[スナップインの追加と削除]** ダイアログ ボックスで **[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-179">In the **Add/Remove Snap-in** dialog box, click **Add**.</span></span>  
   
     4.  <span data-ttu-id="8c8d1-180">**スタンドアロン スナップインの追加**ダイアログ ボックスで、**証明書**から、**利用できるスタンドアロン スナップイン**一覧をクリックして**追加**.</span><span class="sxs-lookup"><span data-stu-id="8c8d1-180">In the **Add Standalone Snap-in** dialog box, select **Certificates** from the **Available standalone snap-in** list, and then click **Add**.</span></span>  
   
@@ -160,7 +161,7 @@ ms.lasthandoff: 12/01/2017
   
     5.  <span data-ttu-id="8c8d1-197">**受信場所のプロパティ**] ダイアログ ボックスで、**トランスポート**横**型**[ **Wcf-nettcp**ドロップダウン リストから一覧で、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-197">In the **Receive Location Properties** dialog box, in the **Transport** section next to **Type**, select **WCF-NetTcp** from the drop-down list, and then click **Configure**.</span></span>  
   
-    6.  <span data-ttu-id="8c8d1-198">**Wcf-nettcp トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブの 、**アドレス (URI)**テキスト ボックスで、「`net.tcp://localhost/WcfMessageSecurity`です。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-198">In the **WCF-NetTcp Transport Properties** dialog box, on the **General** tab, in the **Address (URI)** text box, type `net.tcp://localhost/WcfMessageSecurity`.</span></span>  
+    6.  <span data-ttu-id="8c8d1-198">**Wcf-nettcp トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブの 、**アドレス (URI)** テキスト ボックスで、「`net.tcp://localhost/WcfMessageSecurity`です。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-198">In the **WCF-NetTcp Transport Properties** dialog box, on the **General** tab, in the **Address (URI)** text box, type `net.tcp://localhost/WcfMessageSecurity`.</span></span>  
   
     7.  <span data-ttu-id="8c8d1-199">**Wcf-nettcp トランスポートのプロパティ** ダイアログ ボックスで、**セキュリティ** タブで **メッセージ**から、**セキュリティ モード**ドロップダウン一覧で、クリックして**証明書**から、**クライアント資格情報の種類のメッセージ**ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-199">In the **WCF-NetTcp Transport Properties** dialog box, on the **Security** tab, select **Message** from the **Security mode** drop-down list, and then select **Certificate** from the **Message client credential type** drop-down list.</span></span> <span data-ttu-id="8c8d1-200">これにより、メッセージ セキュリティ モードを使用するように WCF-NetTcp アダプターが構成されます。</span><span class="sxs-lookup"><span data-stu-id="8c8d1-200">This configures the WCF-NetTcp adapter to use the Message security mode.</span></span>  
   

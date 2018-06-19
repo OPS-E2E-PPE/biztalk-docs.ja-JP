@@ -1,14 +1,14 @@
 ---
-title: "再利用と派生型 |Microsoft ドキュメント"
-ms.custom: 
+title: 再利用と派生型 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 240145ea-be41-40ce-8edd-3d4d00e2baec
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286618"
 ---
 # <a name="type-reuse-and-derivations"></a><span data-ttu-id="f65bc-102">型の再利用と派生</span><span class="sxs-lookup"><span data-stu-id="f65bc-102">Type Reuse and Derivations</span></span>
 <span data-ttu-id="f65bc-103">XSD (XML Schema Definition) 言語では、複雑なグローバル型を使用することにより、スキーマ内のさまざまな場所で、再利用や再定義が可能な構造化されたデータ型を定義することができます。</span><span class="sxs-lookup"><span data-stu-id="f65bc-103">Within XML Schema definition (XSD) language, complex global types provide a mechanism for defining a structured data type that can be reused, and potentially redefined, at various locations within your schema.</span></span> <span data-ttu-id="f65bc-104">最も典型的な例として、名前、番地、市区町村、都道府県などを含む住所の構造があります。</span><span class="sxs-lookup"><span data-stu-id="f65bc-104">Perhaps the most classic example is an address structure that includes a name, street, city, state, and so on.</span></span> <span data-ttu-id="f65bc-105">また、名前は、姓、ミドル ネーム、および名の文字列を含む構造になります。</span><span class="sxs-lookup"><span data-stu-id="f65bc-105">Further, the name itself might be a structure that includes first, middle, and last name strings.</span></span> <span data-ttu-id="f65bc-106">この複雑な構造がグローバルに定義されると、スキーマ内の複数の場所 (出荷先住所や請求先住所など) でこの構造を使用できます。</span><span class="sxs-lookup"><span data-stu-id="f65bc-106">If this complex structure is defined globally, you can use it in multiple locations within your schema, such as for both a shipping address and a billing address.</span></span>  

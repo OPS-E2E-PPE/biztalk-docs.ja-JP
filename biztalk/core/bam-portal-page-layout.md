@@ -1,17 +1,17 @@
 ---
-title: "BAM ポータル ページのレイアウト |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータル ページのレイアウト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal
 - Portal page [BAM portal]
 ms.assetid: 0d8833b7-dd2f-475c-a890-e925ee47d219
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231530"
 ---
 # <a name="bam-portal-page-layout"></a><span data-ttu-id="34e19-102">BAM ポータル ページのレイアウト</span><span class="sxs-lookup"><span data-stu-id="34e19-102">BAM Portal Page Layout</span></span>
 <span data-ttu-id="34e19-103">BAM ポータル ページは、次の 3 つのフレームにレイアウトされます。</span><span class="sxs-lookup"><span data-stu-id="34e19-103">The BAM portal page is laid out in the following three frames:</span></span>  

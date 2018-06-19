@@ -1,11 +1,11 @@
 ---
-title: "SSO ユーザー グループ |Microsoft ドキュメント"
-ms.custom: 
+title: SSO ユーザー グループ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - administrator accounts, SSO
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - SSO, service accounts
 - SSO, administrator accounts
 ms.assetid: e279001e-c724-4a2d-8939-0ba9dd08a19c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277626"
 ---
 # <a name="sso-user-groups"></a><span data-ttu-id="2ebdd-102">SSO ユーザー グループ</span><span class="sxs-lookup"><span data-stu-id="2ebdd-102">SSO User Groups</span></span>
 <span data-ttu-id="2ebdd-103">エンタープライズ シングル サインオン (SSO) システムを構成および管理するには、ロールごとに特定の Windows グループとアカウントを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2ebdd-103">To configure and manage the Enterprise Single Sign-On (SSO) system, you must create certain Windows groups and accounts for each of these roles.</span></span> <span data-ttu-id="2ebdd-104">エンタープライズ SSO でアクセス アカウントを構成する際には、各ロールに複数のアカウントを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="2ebdd-104">When configuring the access accounts in Enterprise SSO, you can specify more than one account for each of these roles.</span></span> <span data-ttu-id="2ebdd-105">このセクションでは、各ロールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="2ebdd-105">This section describes these roles.</span></span>  

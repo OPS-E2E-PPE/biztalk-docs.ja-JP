@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288162"
 ---
 # <a name="warning---distinguished-field-xpath-not-found"></a><span data-ttu-id="3f3d7-102">警告 - 識別フィールドの XPath が見つかりません。</span><span class="sxs-lookup"><span data-stu-id="3f3d7-102">Warning - Distinguished Field XPath Not Found</span></span>
 <span data-ttu-id="3f3d7-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="3f3d7-103">**Error Code**</span></span>  

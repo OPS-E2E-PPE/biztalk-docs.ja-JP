@@ -1,11 +1,11 @@
 ---
-title: "アダプター |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, receive adapters
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - receive adapters
 - adapters, send adapters
 ms.assetid: 7803a806-3396-4662-877f-eae11cb5e3e4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230098"
 ---
 # <a name="adapters"></a><span data-ttu-id="53f5e-102">アダプタ</span><span class="sxs-lookup"><span data-stu-id="53f5e-102">Adapters</span></span>
 <span data-ttu-id="53f5e-103">Microsoft BizTalk Server では、外部のシステム、アプリケーション、およびエンティティとメッセージを交換するために、アダプターの概念を使用します。</span><span class="sxs-lookup"><span data-stu-id="53f5e-103">To exchange messages with external systems, applications, and entities Microsoft BizTalk Server uses the concept of an adapter.</span></span> <span data-ttu-id="53f5e-104">*アダプター* com またはします。NET ベースのコンポーネントとビジネス エンドポイント (ファイル システム、データベース、カスタム ビジネス アプリケーションなど) からメッセージを転送するさまざまな通信プロトコルを使用します。</span><span class="sxs-lookup"><span data-stu-id="53f5e-104">*Adapters* are COM or .NET-based components that transfer messages to and from business endpoints (such as file systems, databases, and custom business applications) using various communication protocols.</span></span>  

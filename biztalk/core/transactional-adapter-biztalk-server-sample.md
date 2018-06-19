@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 31a13377-cc89-4763-ad1b-508a16fc9708
-caps.latest.revision: ''
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26009891"
 ---
 # <a name="transactional-adapter-biztalk-server-sample"></a><span data-ttu-id="54e6b-102">Transactional Adapter (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="54e6b-102">Transactional Adapter (BizTalk Server Sample)</span></span>
 <span data-ttu-id="54e6b-103">Transactional Adapter サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージの処理中にデータベースに対して明示的な Microsoft 分散トランザクション コーディネーター (MSDTC) トランザクションを作成および使用する方法を示すものです。</span><span class="sxs-lookup"><span data-stu-id="54e6b-103">The Transactional Adapter sample demonstrates how to create and use an explicit Microsoft Distributed Transaction Coordinator (MSDTC) transaction against a database during processing of a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] message.</span></span>  
@@ -103,7 +104,7 @@ ms.lasthandoff: 03/28/2018
     > [!IMPORTANT]
     >  <span data-ttu-id="54e6b-169">BizTalk を 64 ビット コンピューターにインストールすると、hkey_classes_root \clsid\ レジストリ エントリのすべてのインスタンスを hkey_classes_root \wow6432node\clsid\ に変更、 **TransactionalAdmin.reg** レジストリ ファイルです。</span><span class="sxs-lookup"><span data-stu-id="54e6b-169">If you install BizTalk on a 64 bit machine, change all instances of the HKEY_CLASSES_ROOT\CLSID\ registry entry to HKEY_CLASSES_ROOT\Wow6432Node\CLSID\ in the **TransactionalAdmin.reg** registry file.</span></span>  
   
-3.  <span data-ttu-id="54e6b-170">**レジストリ エディター** ダイアログ ボックスで、をクリックして **[はい]** サンプル アダプターをレジストリに追加する **[ok]**します。</span><span class="sxs-lookup"><span data-stu-id="54e6b-170">In the **Registry Editor** dialog box, click **Yes** to add the sample adapter to the registry, and then click **OK**.</span></span>  
+3.  <span data-ttu-id="54e6b-170">**レジストリ エディター** ダイアログ ボックスで、をクリックして **[はい]** サンプル アダプターをレジストリに追加する **[ok]** します。</span><span class="sxs-lookup"><span data-stu-id="54e6b-170">In the **Registry Editor** dialog box, click **Yes** to add the sample adapter to the registry, and then click **OK**.</span></span>  
   
 4.  <span data-ttu-id="54e6b-171">Windows エクスプ ローラーを閉じるにはクリックして **ファイル**, 、 をクリックし、 **閉じる**します。</span><span class="sxs-lookup"><span data-stu-id="54e6b-171">To close Windows Explorer, click **File**, and then click **Close**.</span></span>  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 03/28/2018
   
 #### <a name="create-a-receive-port-and-location-that-uses-the-adapter"></a><span data-ttu-id="54e6b-188">アダプターを使用する受信ポートと受信場所の作成</span><span class="sxs-lookup"><span data-stu-id="54e6b-188">Create a Receive Port and Location that uses the Adapter</span></span>  
   
-1.  <span data-ttu-id="54e6b-189">展開、 **BizTalk グループ [サーバー名]**内のノード[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**アプリケーション** ノードを展開**BizTalk アプリケーション 1**ノード。</span><span class="sxs-lookup"><span data-stu-id="54e6b-189">Expand the **BizTalk Group[server name]** node in [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand **Applications** node, expand **BizTalk Application 1** node.</span></span>  
+1.  <span data-ttu-id="54e6b-189">展開、 **BizTalk グループ [サーバー名]** 内のノード[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**アプリケーション** ノードを展開**BizTalk アプリケーション 1**ノード。</span><span class="sxs-lookup"><span data-stu-id="54e6b-189">Expand the **BizTalk Group[server name]** node in [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand **Applications** node, expand **BizTalk Application 1** node.</span></span>  
   
 2.  <span data-ttu-id="54e6b-190">右クリック **受信ポート**, 、] をクリックし、 **新規**, [ **一方向の受信ポートです。**</span><span class="sxs-lookup"><span data-stu-id="54e6b-190">Right-click **Receive Ports**, and then click **New**, select **One-Way Receive Port.**</span></span>  
   
@@ -153,7 +154,7 @@ ms.lasthandoff: 03/28/2018
     |<span data-ttu-id="54e6b-211">[ポーリング間隔の単位]</span><span class="sxs-lookup"><span data-stu-id="54e6b-211">Polling Interval Unit</span></span>|<span data-ttu-id="54e6b-212">データのポーリング時間の測定単位。</span><span class="sxs-lookup"><span data-stu-id="54e6b-212">The number of units of time measure for the polling of the data.</span></span> <span data-ttu-id="54e6b-213">"秒" に設定します。</span><span class="sxs-lookup"><span data-stu-id="54e6b-213">Set this to seconds.</span></span>|  
     |<span data-ttu-id="54e6b-214">ポーリング間隔</span><span class="sxs-lookup"><span data-stu-id="54e6b-214">Polling Interval</span></span>|<span data-ttu-id="54e6b-215">データのポーリング時間を示す数値。</span><span class="sxs-lookup"><span data-stu-id="54e6b-215">The unit of time measure for the polling of the data.</span></span> <span data-ttu-id="54e6b-216">15 秒に設定します。</span><span class="sxs-lookup"><span data-stu-id="54e6b-216">Set this to 15 seconds.</span></span>|  
   
-10. <span data-ttu-id="54e6b-217">をクリックして**[ok]**を構成 ダイアログ ボックスを閉じ**OK**を閉じます、**受信場所のプロパティ** ダイアログ ボックスに戻るには、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="54e6b-217">Click **OK** to close the Configure dialog box, then **OK** again to close the **Receive Location Properties** dialog box to return to the [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)].</span></span>  
+10. <span data-ttu-id="54e6b-217">をクリックして **[ok]** を構成 ダイアログ ボックスを閉じ**OK**を閉じます、**受信場所のプロパティ** ダイアログ ボックスに戻るには、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="54e6b-217">Click **OK** to close the Configure dialog box, then **OK** again to close the **Receive Location Properties** dialog box to return to the [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)].</span></span>  
   
 #### <a name="create-a-send-port-and-send-handler-that-use-the-adapter"></a><span data-ttu-id="54e6b-218">アダプターを使用する送信ポートと送信ハンドラーの作成</span><span class="sxs-lookup"><span data-stu-id="54e6b-218">Create a Send Port and Send Handler that use the Adapter</span></span>  
   

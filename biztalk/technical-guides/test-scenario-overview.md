@@ -1,14 +1,14 @@
 ---
-title: "テスト シナリオの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: テスト シナリオの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cde553ad-2540-40d9-a74b-928fee873c31
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010691"
 ---
 # <a name="test-scenario-overview"></a><span data-ttu-id="a3ffc-102">テスト シナリオの概要</span><span class="sxs-lookup"><span data-stu-id="a3ffc-102">Test Scenario Overview</span></span>
 <span data-ttu-id="a3ffc-103">このトピックでは、テスト アプリケーションの概要テスト手法の使用、およびリストの説明、主要業績評価指標 (Kpi) は、ロード テスト中にキャプチャされます。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-103">This topic provides an overview of the test application; a description of the testing methodology used, and lists the key performance indicators (KPIs) captured during load testing.</span></span>  
@@ -105,17 +106,17 @@ ms.lasthandoff: 12/01/2017
   
 -   <span data-ttu-id="a3ffc-170">**環境 –** 、物理ハードウェア上の BizTalk Server または HYPER-V での BizTalk Server のいずれかに対して、テストの実行されている環境を記録します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-170">**Environment –** To record which environment the test was being run against, either BizTalk Server on physical hardware or BizTalk Server on Hyper-V.</span></span>  
   
--   <span data-ttu-id="a3ffc-171">**テスト実行の数:**各テストの実行を一意に識別するには</span><span class="sxs-lookup"><span data-stu-id="a3ffc-171">**Test Run Number –** To uniquely identify each test run</span></span>  
+-   <span data-ttu-id="a3ffc-171">**テスト実行の数:** 各テストの実行を一意に識別するには</span><span class="sxs-lookup"><span data-stu-id="a3ffc-171">**Test Run Number –** To uniquely identify each test run</span></span>  
   
--   <span data-ttu-id="a3ffc-172">**テスト ケース –**テスト中に使用される BizTalk Server ソリューションのアーキテクチャを記録します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-172">**Test Case –** To record the architecture of the BizTalk Server solution used during testing.</span></span> <span data-ttu-id="a3ffc-173">(たとえばインラインを使用するオーケストレーションと論理ポートをオーケストレーションに送信する)</span><span class="sxs-lookup"><span data-stu-id="a3ffc-173">(For example Orchestration with Logical Ports versus Orchestration using inline Sends)</span></span>  
+-   <span data-ttu-id="a3ffc-172">**テスト ケース –** テスト中に使用される BizTalk Server ソリューションのアーキテクチャを記録します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-172">**Test Case –** To record the architecture of the BizTalk Server solution used during testing.</span></span> <span data-ttu-id="a3ffc-173">(たとえばインラインを使用するオーケストレーションと論理ポートをオーケストレーションに送信する)</span><span class="sxs-lookup"><span data-stu-id="a3ffc-173">(For example Orchestration with Logical Ports versus Orchestration using inline Sends)</span></span>  
   
--   <span data-ttu-id="a3ffc-174">**日付-**記録された日付と時刻のテストを実行</span><span class="sxs-lookup"><span data-stu-id="a3ffc-174">**Date –** To record the date and time the test was run</span></span>  
+-   <span data-ttu-id="a3ffc-174">**日付-** 記録された日付と時刻のテストを実行</span><span class="sxs-lookup"><span data-stu-id="a3ffc-174">**Date –** To record the date and time the test was run</span></span>  
   
 -   <span data-ttu-id="a3ffc-175">**時刻 – 開始**開始される最初の VSTS ロード テスト エージェントによって報告されました。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-175">**Time Started –** As reported by the first VSTS load test agent initiated</span></span>  
   
--   <span data-ttu-id="a3ffc-176">**時刻の停止 –**を完了する最後の VSTS ロード テスト エージェントによって報告されました。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-176">**Time Stopped –** As reported by the last VSTS load test agent to complete</span></span>  
+-   <span data-ttu-id="a3ffc-176">**時刻の停止 –** を完了する最後の VSTS ロード テスト エージェントによって報告されました。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-176">**Time Stopped –** As reported by the last VSTS load test agent to complete</span></span>  
   
--   <span data-ttu-id="a3ffc-177">**テスト期間 (分) –**テストの期間を記録します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-177">**Test Duration in Minutes –** To record the duration of the test.</span></span>  
+-   <span data-ttu-id="a3ffc-177">**テスト期間 (分) –** テストの期間を記録します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-177">**Test Duration in Minutes –** To record the duration of the test.</span></span>  
   
 -   <span data-ttu-id="a3ffc-178">**合計-で送信されたメッセージ**テスト中に、BizTalk Server コンピューターにロード エージェント コンピューターから送信されたメッセージの合計数を記録します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-178">**Messages Sent in Total –** To record the total number of messages sent from the Load Agent computers to the BizTalk Server computers during the test.</span></span>  
   
@@ -123,14 +124,14 @@ ms.lasthandoff: 12/01/2017
   
 -   <span data-ttu-id="a3ffc-180">**クライアントの待機時間: 平均**ロード エージェントのテスト クライアントに要求を開始したし、ロード テスト中に、BizTalk Server コンピューターからの応答を受け取りました間の時間の平均値を記録します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-180">**Average Client Latency –** To record the average amount of time between when Test Load Agent clients initiated a request to and received a response from the BizTalk Server computers during the load test.</span></span>  
   
--   <span data-ttu-id="a3ffc-181">**要求-応答の期間平均 (ms) –**によって報告された、 **BizTalk: メッセージング Latency\Request-応答の待機時間 (秒)** BizTalkServerIsolatedHost のパフォーマンス モニター カウンター</span><span class="sxs-lookup"><span data-stu-id="a3ffc-181">**Request-Response Duration Average (ms) –** As reported by the **BizTalk:Messaging Latency\Request-Response Latency (sec)** Performance Monitor counter for the BizTalkServerIsolatedHost</span></span>  
+-   <span data-ttu-id="a3ffc-181">**要求-応答の期間平均 (ms) –** によって報告された、 **BizTalk: メッセージング Latency\Request-応答の待機時間 (秒)** BizTalkServerIsolatedHost のパフォーマンス モニター カウンター</span><span class="sxs-lookup"><span data-stu-id="a3ffc-181">**Request-Response Duration Average (ms) –** As reported by the **BizTalk:Messaging Latency\Request-Response Latency (sec)** Performance Monitor counter for the BizTalkServerIsolatedHost</span></span>  
   
     > [!NOTE]  
     >  <span data-ttu-id="a3ffc-182">複数の仮想化された BizTalk ホストが実行されているこれらのカウンターの平均として計算されるログからが使用されました。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-182">Where multiple virtualized BizTalk hosts were running an average of these counters as calculated from the logs was used.</span></span>  
   
 -   <span data-ttu-id="a3ffc-183">**1 秒間 – オーケストレーション完了**によって報告された、 **xlang/s Orchestrations (BizTalkServerApplication) \Orchestrations が 1 秒あたりに完了した**パフォーマンス モニター カウンターです。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-183">**Orchestrations Completed per Second –** As reported by the **XLANG/s Orchestrations(BizTalkServerApplication)\Orchestrations completed/sec** Performance Monitor counter.</span></span> <span data-ttu-id="a3ffc-184">このカウンターは、のスループットのよい尺度、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションです。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-184">This counter provides a good measure of the throughput of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution.</span></span>  
   
--   <span data-ttu-id="a3ffc-185">**< 3 秒 – メッセージ処理の %**テスト中に 3 秒以内に処理されるメッセージの合計数を記録します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-185">**% of Messages Processed < 3 seconds –** To record the total number of messages processed within 3 seconds during the test.</span></span>  
+-   <span data-ttu-id="a3ffc-185">**< 3 秒 – メッセージ処理の %** テスト中に 3 秒以内に処理されるメッセージの合計数を記録します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-185">**% of Messages Processed < 3 seconds –** To record the total number of messages processed within 3 seconds during the test.</span></span>  
   
  <span data-ttu-id="a3ffc-186">VSTS 2008 ロード テストは、すべてのテスト全体で一貫した負荷の生成に使用されました。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-186">VSTS 2008 Load Test was used to generate a consistent load throughout all the tests.</span></span> <span data-ttu-id="a3ffc-187">次のテストの実行設定と、ロード パターンは、各テストのロード プロファイルを調整するテスト中に変更されました。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-187">The following test run settings and load pattern were modified during testing to adjust the load profile of each test:</span></span>  
   
@@ -138,7 +139,7 @@ ms.lasthandoff: 12/01/2017
   
      <span data-ttu-id="a3ffc-189">次のテストの実行設定は、実行されているテストによって変更されました。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-189">The following test run setting was modified depending on the test being performed:</span></span>  
   
-    -   <span data-ttu-id="a3ffc-190">**実行の継続時間:**テストの実行時間を指定します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-190">**Run Duration –** Specifies how long the test is run.</span></span>  
+    -   <span data-ttu-id="a3ffc-190">**実行の継続時間:** テストの実行時間を指定します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-190">**Run Duration –** Specifies how long the test is run.</span></span>  
   
      <span data-ttu-id="a3ffc-191">![テストの実行設定](../technical-guides/media/wcfloadtestrunsettings.gif "WCFLoadTestRunSettings")</span><span class="sxs-lookup"><span data-stu-id="a3ffc-191">![Test Run Settings](../technical-guides/media/wcfloadtestrunsettings.gif "WCFLoadTestRunSettings")</span></span>  
 <span data-ttu-id="a3ffc-192">テスト実行設定</span><span class="sxs-lookup"><span data-stu-id="a3ffc-192">Test Run Settings</span></span>  
@@ -147,23 +148,23 @@ ms.lasthandoff: 12/01/2017
   
      <span data-ttu-id="a3ffc-194">次のテスト パターン設定は、実行されているテストによって変更されました。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-194">The following test pattern settings were modified depending on the test being performed:</span></span>  
   
-    1.  <span data-ttu-id="a3ffc-195">**パターン:**ロード テスト中に、シミュレートされたユーザー ロードを調整する方法を指定します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-195">**Pattern –** Specifies how the simulated user load is adjusted during a load test.</span></span> <span data-ttu-id="a3ffc-196">ロード パターンは、いずれかの**定数**、**ステップ**、または**目標**ベースです。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-196">Load patterns are either **Constant**, **Step**, or **Goal** based.</span></span> <span data-ttu-id="a3ffc-197">すべてのロード テスト、定数または手順のいずれかが実行されます。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-197">All load testing performed was either Constant or Step.</span></span>  
+    1.  <span data-ttu-id="a3ffc-195">**パターン:** ロード テスト中に、シミュレートされたユーザー ロードを調整する方法を指定します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-195">**Pattern –** Specifies how the simulated user load is adjusted during a load test.</span></span> <span data-ttu-id="a3ffc-196">ロード パターンは、いずれかの**定数**、**ステップ**、または**目標**ベースです。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-196">Load patterns are either **Constant**, **Step**, or **Goal** based.</span></span> <span data-ttu-id="a3ffc-197">すべてのロード テスト、定数または手順のいずれかが実行されます。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-197">All load testing performed was either Constant or Step.</span></span>  
   
         > [!NOTE]  
         >  <span data-ttu-id="a3ffc-198">このガイドの目的で使用されるいずれかのすべてのテストの実行、**定数**ロード パターン、または**ステップ**ロード パターンです。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-198">All testing performed for purposes of this guide used either a **Constant** load pattern or a **Step** load pattern.</span></span> <span data-ttu-id="a3ffc-199">持続ロード パターン、およびステップ ロード パターンは、次の機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-199">Constant load patterns and Step load patterns provide the following functionality:</span></span>  
         >   
-        >  -   <span data-ttu-id="a3ffc-200">**持続ロード パターン –**ロード パターンが、同じテストの実行中には、シミュレートされたユーザーの数は、定義済みのレベルで開始しては変わりません。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-200">**Constant load pattern –** The load pattern is the same for the duration of the test, the number of simulated users starts at a predefined level and does not change.</span></span>  
-        > -   <span data-ttu-id="a3ffc-201">**ステップ ロード パターン –**ロード パターンがテストの実行中に増加しました。 シミュレートされたユーザーの数が定義済みのレベルで開始するとはずつ事前定義された事前定義された間隔で、テストの実行中です。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-201">**Step load pattern –** The load pattern is increased during the test run; the number of simulated users starts at a predefined level and is incremented by a predefined amount at predefined intervals for the duration of the test.</span></span>  
+        >  -   <span data-ttu-id="a3ffc-200">**持続ロード パターン –** ロード パターンが、同じテストの実行中には、シミュレートされたユーザーの数は、定義済みのレベルで開始しては変わりません。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-200">**Constant load pattern –** The load pattern is the same for the duration of the test, the number of simulated users starts at a predefined level and does not change.</span></span>  
+        > -   <span data-ttu-id="a3ffc-201">**ステップ ロード パターン –** ロード パターンがテストの実行中に増加しました。 シミュレートされたユーザーの数が定義済みのレベルで開始するとはずつ事前定義された事前定義された間隔で、テストの実行中です。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-201">**Step load pattern –** The load pattern is increased during the test run; the number of simulated users starts at a predefined level and is incremented by a predefined amount at predefined intervals for the duration of the test.</span></span>  
   
     2.  <span data-ttu-id="a3ffc-202">**ユーザー数の定数 (定数ロード パターン) –** Visual Studio ロード テスト プロジェクトの app.config ファイルで指定されたエンドポイントのアドレスに対する負荷を生成している仮想ユーザーの数。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-202">**Constant User Count (Constant Load Pattern) –** Number of virtual users that are generating load against the endpoint address specified in the app.config file of the Visual Studio Load Test project.</span></span> <span data-ttu-id="a3ffc-203">この値は、ロード テストに使用されるロード パターン設定で指定されます。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-203">This value is specified in the Load Pattern settings used for the load test.</span></span>  
   
-    3.  <span data-ttu-id="a3ffc-204">**初期のユーザー カウント (ステップ ロード パターン) –**テストのステップ ロード パターンの先頭に指定したエンドポイント アドレスに対する負荷を生成している仮想ユーザーの数。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-204">**Initial User Count (Step Load Pattern) –** Number of virtual users that are generating load against the specified endpoint address at the beginning of a Step Load Pattern test.</span></span> <span data-ttu-id="a3ffc-205">この値は、ロード テストに使用されるロード パターン設定で指定されます。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-205">This value is specified in the Load Pattern settings used for the load test.</span></span>  
+    3.  <span data-ttu-id="a3ffc-204">**初期のユーザー カウント (ステップ ロード パターン) –** テストのステップ ロード パターンの先頭に指定したエンドポイント アドレスに対する負荷を生成している仮想ユーザーの数。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-204">**Initial User Count (Step Load Pattern) –** Number of virtual users that are generating load against the specified endpoint address at the beginning of a Step Load Pattern test.</span></span> <span data-ttu-id="a3ffc-205">この値は、ロード テストに使用されるロード パターン設定で指定されます。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-205">This value is specified in the Load Pattern settings used for the load test.</span></span>  
   
-    4.  <span data-ttu-id="a3ffc-206">**最大ユーザー カウント (ステップ ロード パターン) –**テストのステップ ロード パターンの末尾に指定したエンドポイント アドレスに対する負荷を生成している仮想ユーザーの数。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-206">**Maximum User Count (Step Load Pattern) –** Number of virtual users that are generating load against the specified endpoint address at the end of a Step Load Pattern test.</span></span> <span data-ttu-id="a3ffc-207">この値は、ロード テストに使用されるロード パターン設定で指定されます。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-207">This value is specified in the Load Pattern settings used for the load test.</span></span>  
+    4.  <span data-ttu-id="a3ffc-206">**最大ユーザー カウント (ステップ ロード パターン) –** テストのステップ ロード パターンの末尾に指定したエンドポイント アドレスに対する負荷を生成している仮想ユーザーの数。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-206">**Maximum User Count (Step Load Pattern) –** Number of virtual users that are generating load against the specified endpoint address at the end of a Step Load Pattern test.</span></span> <span data-ttu-id="a3ffc-207">この値は、ロード テストに使用されるロード パターン設定で指定されます。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-207">This value is specified in the Load Pattern settings used for the load test.</span></span>  
   
-    5.  <span data-ttu-id="a3ffc-208">**ステップ実行間隔 (ステップ ロード パターン) –**仮想ユーザーがロード テストのステップの指定したエンドポイント アドレスに対する負荷を生成する秒数。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-208">**Step Duration (Step Load Pattern) –** Number of seconds that virtual users are generating load against the specified endpoint address for a load test step.</span></span>  
+    5.  <span data-ttu-id="a3ffc-208">**ステップ実行間隔 (ステップ ロード パターン) –** 仮想ユーザーがロード テストのステップの指定したエンドポイント アドレスに対する負荷を生成する秒数。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-208">**Step Duration (Step Load Pattern) –** Number of seconds that virtual users are generating load against the specified endpoint address for a load test step.</span></span>  
   
-    6.  <span data-ttu-id="a3ffc-209">**ユーザー カウントのステップ (ステップ ロード パターン) –**ステップ ロード パターンを使用する場合は、各ステップで増加する仮想ユーザーの数。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-209">**Step User Count (Step Load Pattern) –** Number of virtual users to increase at each step when using a step load pattern.</span></span>  
+    6.  <span data-ttu-id="a3ffc-209">**ユーザー カウントのステップ (ステップ ロード パターン) –** ステップ ロード パターンを使用する場合は、各ステップで増加する仮想ユーザーの数。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-209">**Step User Count (Step Load Pattern) –** Number of virtual users to increase at each step when using a step load pattern.</span></span>  
   
      <span data-ttu-id="a3ffc-210">![テスト パターン設定](../technical-guides/media/wcfloadtestpatternsettings.gif "WCFLoadTestPatternSettings")</span><span class="sxs-lookup"><span data-stu-id="a3ffc-210">![Test Pattern Settings](../technical-guides/media/wcfloadtestpatternsettings.gif "WCFLoadTestPatternSettings")</span></span>  
 <span data-ttu-id="a3ffc-211">テスト パターン設定</span><span class="sxs-lookup"><span data-stu-id="a3ffc-211">Test Pattern Settings</span></span>  
@@ -184,19 +185,19 @@ ms.lasthandoff: 12/01/2017
   
  <span data-ttu-id="a3ffc-219">**SQL Server KPI**</span><span class="sxs-lookup"><span data-stu-id="a3ffc-219">**SQL Server KPI**</span></span>  
   
--   <span data-ttu-id="a3ffc-220">**SQL Server のプロセッサ使用率 –**によって測定される、 **SQL\Processor(Total)\\% Processor Time**カウンターです。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-220">**SQL Server processor utilization –** As measured by the **SQL\Processor(Total)\\%Processor Time** counter.</span></span> <span data-ttu-id="a3ffc-221">このカウンターの CPU 使用率を測定する[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]に処理を[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-221">This counter measures CPU utilization of [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] processing on the [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] computer.</span></span>  
+-   <span data-ttu-id="a3ffc-220">**SQL Server のプロセッサ使用率 –** によって測定される、 **SQL\Processor(Total)\\% Processor Time**カウンターです。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-220">**SQL Server processor utilization –** As measured by the **SQL\Processor(Total)\\%Processor Time** counter.</span></span> <span data-ttu-id="a3ffc-221">このカウンターの CPU 使用率を測定する[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]に処理を[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-221">This counter measures CPU utilization of [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] processing on the [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] computer.</span></span>  
   
--   <span data-ttu-id="a3ffc-222">**Transact SQL コマンドの処理パフォーマンス –**によって測定される、 **\SQL Server:SQL Statistics\Batch 要求数/秒**カウンターです。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-222">**Transact SQL command processing performance –** As measured by the **\SQL Server:SQL Statistics\Batch Requests/sec** counter.</span></span> <span data-ttu-id="a3ffc-223">このカウンターは、1 秒あたりに受信した TRANSACT-SQL コマンド バッチの数を計測します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-223">This counter measures the number of Transact-SQL command batches received per second.</span></span> <span data-ttu-id="a3ffc-224">このカウンターを使用してのスループットを測定する、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-224">This counter is used to measure throughput on the [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] computer.</span></span>  
+-   <span data-ttu-id="a3ffc-222">**Transact SQL コマンドの処理パフォーマンス –** によって測定される、 **\SQL Server:SQL Statistics\Batch 要求数/秒**カウンターです。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-222">**Transact SQL command processing performance –** As measured by the **\SQL Server:SQL Statistics\Batch Requests/sec** counter.</span></span> <span data-ttu-id="a3ffc-223">このカウンターは、1 秒あたりに受信した TRANSACT-SQL コマンド バッチの数を計測します。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-223">This counter measures the number of Transact-SQL command batches received per second.</span></span> <span data-ttu-id="a3ffc-224">このカウンターを使用してのスループットを測定する、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-224">This counter is used to measure throughput on the [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] computer.</span></span>  
   
  <span data-ttu-id="a3ffc-225">**KPI のネットワーク**</span><span class="sxs-lookup"><span data-stu-id="a3ffc-225">**Networking KPI**</span></span>  
   
--   <span data-ttu-id="a3ffc-226">**BizTalk Server ネットワークのスループット:**によって測定される、 **\Network インターフェイス (\*) \Bytes total/sec**でパフォーマンス モニター カウンター、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-226">**BizTalk Server network throughput –** As measured by the **\Network Interface(\*)\Bytes Total/sec** performance monitor counter on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] computers.</span></span>  
+-   <span data-ttu-id="a3ffc-226">**BizTalk Server ネットワークのスループット:** によって測定される、 **\Network インターフェイス (\*) \Bytes total/sec**でパフォーマンス モニター カウンター、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-226">**BizTalk Server network throughput –** As measured by the **\Network Interface(\*)\Bytes Total/sec** performance monitor counter on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] computers.</span></span>  
   
--   <span data-ttu-id="a3ffc-227">**SQL Server ネットワークのスループット:**によって測定される、 **SQL Network interface \bytes total/sec (Avg)** VSTS 2008 ロード テスト コント ローラーによって返されます。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-227">**SQL Server network throughput –** As measured by the **SQL Network Interface\Bytes Total/sec (Avg)** returned by the VSTS 2008 Load Test Controller.</span></span>  
+-   <span data-ttu-id="a3ffc-227">**SQL Server ネットワークのスループット:** によって測定される、 **SQL Network interface \bytes total/sec (Avg)** VSTS 2008 ロード テスト コント ローラーによって返されます。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-227">**SQL Server network throughput –** As measured by the **SQL Network Interface\Bytes Total/sec (Avg)** returned by the VSTS 2008 Load Test Controller.</span></span>  
   
  <span data-ttu-id="a3ffc-228">**KPI のメモリ**</span><span class="sxs-lookup"><span data-stu-id="a3ffc-228">**Memory KPI**</span></span>  
   
--   <span data-ttu-id="a3ffc-229">**使用可能なメモリ –**によって測定される、 **\Memory\Available Mbytes**カウンター、さまざまなシナリオをします。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-229">**Available memory –** As measured by the **\Memory\Available Mbytes** counter for the various scenarios.</span></span>  
+-   <span data-ttu-id="a3ffc-229">**使用可能なメモリ –** によって測定される、 **\Memory\Available Mbytes**カウンター、さまざまなシナリオをします。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-229">**Available memory –** As measured by the **\Memory\Available Mbytes** counter for the various scenarios.</span></span>  
   
 ## <a name="physical-infrastructure-specifics"></a><span data-ttu-id="a3ffc-230">物理インフラストラクチャの詳細</span><span class="sxs-lookup"><span data-stu-id="a3ffc-230">Physical Infrastructure Specifics</span></span>  
  <span data-ttu-id="a3ffc-231">各インストールされたサーバーに対して、次の設定が調整されます。</span><span class="sxs-lookup"><span data-stu-id="a3ffc-231">For each of the servers that were installed the following settings were adjusted.</span></span>  

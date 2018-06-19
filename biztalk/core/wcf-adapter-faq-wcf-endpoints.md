@@ -1,14 +1,14 @@
 ---
-title: "WCF アダプター FAQ: WCF エンドポイント |Microsoft ドキュメント"
-ms.custom: 
+title: 'WCF アダプター FAQ: WCF エンドポイント |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccc94b7d-b8a6-4c24-907e-922fd885b874
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974296"
 ---
 # <a name="wcf-adapter-faq-wcf-endpoints"></a><span data-ttu-id="30b33-102">WCF アダプター FAQ: WCF エンドポイント</span><span class="sxs-lookup"><span data-stu-id="30b33-102">WCF Adapter FAQ: WCF Endpoints</span></span>
 ## <a name="what-are-two-endpoints-options-can-be-created-by-the-biztalk-wcf-service-publishing-wizard"></a><span data-ttu-id="30b33-103">BizTalk WCF サービス公開ウィザードで作成できる 2 つのエンドポイント オプションは何ですか。</span><span class="sxs-lookup"><span data-stu-id="30b33-103">What are two endpoints options can be created by the BizTalk WCF Service Publishing Wizard?</span></span>  

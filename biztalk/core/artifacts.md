@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230434"
 ---
 # <a name="artifacts"></a><span data-ttu-id="fa52a-102">成果物</span><span class="sxs-lookup"><span data-stu-id="fa52a-102">Artifacts</span></span>
 <span data-ttu-id="fa52a-103">ここでは各種の BizTalk Server アイテムを説明します。</span><span class="sxs-lookup"><span data-stu-id="fa52a-103">This topic discusses the various BizTalk Server artifacts.</span></span> <span data-ttu-id="fa52a-104">アイテムにはアセンブリ、セキュリティ証明書、ビジネス ルール ポリシー、BAM 構成ファイル、バインド、その他の BizTalk アプリケーションの機能に必要な要素が含まれます。</span><span class="sxs-lookup"><span data-stu-id="fa52a-104">Artifacts include the assemblies, security certificates, business rules policies, BAM configuration files, bindings, and so forth that are necessary for a BizTalk application to function.</span></span> <span data-ttu-id="fa52a-105">アプリケーションのアイテムは BizTalk 管理コンソールで表示して管理します。</span><span class="sxs-lookup"><span data-stu-id="fa52a-105">You view and manage an application's artifacts from within the BizTalk Administration Console.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288122"
 ---
 # <a name="variable-scope-in-orchestrations"></a><span data-ttu-id="4088c-102">オーケストレーションにおける変数のスコープ</span><span class="sxs-lookup"><span data-stu-id="4088c-102">Variable Scope in Orchestrations</span></span>
 <span data-ttu-id="4088c-103">オーケストレーション内のさまざまな場所で使用されている変数やパラメーターの可視性と状態については、例外ハンドラーや補正ブロックなど、理解しておくべき重要な点がいくつかあります。</span><span class="sxs-lookup"><span data-stu-id="4088c-103">There are a few important points to understand about the visibility and state of variables and orchestration parameters in various places within your orchestration, including exception handlers and compensation blocks.</span></span>  

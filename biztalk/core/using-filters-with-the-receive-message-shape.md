@@ -11,7 +11,7 @@ helpviewer_keywords:
 - filters, receive messages
 - messages, filters
 ms.assetid: 5310039b-6719-4971-933a-2da0573fb5e7
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22287882"
 ---
 # <a name="using-filters-with-the-receive-message-shape"></a><span data-ttu-id="92854-102">受信メッセージ図形にフィルターを使用します。</span><span class="sxs-lookup"><span data-stu-id="92854-102">Using Filters With the Receive Message Shape</span></span>
 <span data-ttu-id="92854-103">フィルター式は、"アクティブ化" プロパティに対して値 True を指定するオーケストレーションの受信図形に適用できる、オプションのパラメーターです。</span><span class="sxs-lookup"><span data-stu-id="92854-103">A filter expression is an optional parameter that can be applied to an orchestration receive shape that specifies a value of True for the Activate property.</span></span> <span data-ttu-id="92854-104">フィルター式が指定された場合、受信メッセージがフィルター式で指定された条件に一致する場合にのみ、オーケストレーションがアクティブ化されます。</span><span class="sxs-lookup"><span data-stu-id="92854-104">If a filter expression is specified then the orchestration will only be activated if an incoming message matches the condition(s) specified in the filter expression.</span></span> <span data-ttu-id="92854-105">フィルター式が指定されていない場合は、オーケストレーションがサブスクライブする受信メッセージによって、オーケストレーションがアクティブ化されます。</span><span class="sxs-lookup"><span data-stu-id="92854-105">If no filter expression is specified then any incoming message that the orchestration subscribes to will activate the orchestration.</span></span>  

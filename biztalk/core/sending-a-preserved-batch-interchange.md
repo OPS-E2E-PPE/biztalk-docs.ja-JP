@@ -1,14 +1,14 @@
 ---
-title: "保存されたバッチ インターチェンジを送信する |Microsoft ドキュメント"
-ms.custom: 
+title: 保存されたバッチ インターチェンジを送信する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d9bc2207-e34d-4d06-a224-bd7f8e498c27
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,9 +17,10 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974848"
 ---
 # <a name="sending-a-preserved-batch-interchange"></a><span data-ttu-id="09809-102">保存されたバッチ インターチェンジの送信</span><span class="sxs-lookup"><span data-stu-id="09809-102">Sending a Preserved Batch Interchange</span></span>
-<span data-ttu-id="09809-103">EDI 送信パイプラインが保存された送信バッチ インターチェンジを処理するとき、バッチ インターチェンジ全体を処理します。</span><span class="sxs-lookup"><span data-stu-id="09809-103">When the EDI send pipeline processes an outbound preserved batch interchange, it processes the batched interchange as a whole.</span></span> <span data-ttu-id="09809-104">EDI インターチェンジを作成する場合、通常、アグリーメントに基づいてエンベロープを適用するのではなく、既存のエンベロープ (制御) セグメントを再利用します。</span><span class="sxs-lookup"><span data-stu-id="09809-104">It normally reuses the existing envelope (control) segments in creating the EDI interchange, rather than applying an envelope based upon the agreement.</span></span> <span data-ttu-id="09809-105">これが発生したときに、**受信バッチ処理オプション**プロパティに設定されている**インターチェンジの保存 - エラーでインターチェンジを中断**または**- インターチェンジの保存時にトランザクション セットを中断エラー**です。</span><span class="sxs-lookup"><span data-stu-id="09809-105">This occurs when the **Inbound batch processing option** property is set to **Preserve Interchange - suspend Interchange on Error** or **Preserve Interchange - suspend Transaction Sets on Error**.</span></span>  
+<span data-ttu-id="09809-103">EDI 送信パイプラインが保存された送信バッチ インターチェンジを処理するとき、バッチ インターチェンジ全体を処理します。</span><span class="sxs-lookup"><span data-stu-id="09809-103">When the EDI send pipeline processes an outbound preserved batch interchange, it processes the batched interchange as a whole.</span></span> <span data-ttu-id="09809-104">EDI インターチェンジを作成する場合、通常、アグリーメントに基づいてエンベロープを適用するのではなく、既存のエンベロープ (制御) セグメントを再利用します。</span><span class="sxs-lookup"><span data-stu-id="09809-104">It normally reuses the existing envelope (control) segments in creating the EDI interchange, rather than applying an envelope based upon the agreement.</span></span> <span data-ttu-id="09809-105">これが発生したときに、**受信バッチ処理オプション**プロパティに設定されている**インターチェンジの保存 - エラーでインターチェンジを中断**または **- インターチェンジの保存時にトランザクション セットを中断エラー**です。</span><span class="sxs-lookup"><span data-stu-id="09809-105">This occurs when the **Inbound batch processing option** property is set to **Preserve Interchange - suspend Interchange on Error** or **Preserve Interchange - suspend Transaction Sets on Error**.</span></span>  
   
 ## <a name="schema-validation"></a><span data-ttu-id="09809-106">スキーマの検証</span><span class="sxs-lookup"><span data-stu-id="09809-106">Schema Validation</span></span>  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="09809-107"> は、保存されたバッチのエンベロープを、バッチ スキーマとサービス スキーマを使用して検証します。</span><span class="sxs-lookup"><span data-stu-id="09809-107"> validates the envelope of a preserved batch using the batch schemas and the service schemas.</span></span> <span data-ttu-id="09809-108">保存されたメッセージのルート ノードの検証にはバッチ スキーマが使用され、インターチェンジ、グループ、およびトランザクション セットのヘッダーとトレーラーの検証にはサービス スキーマが使用されます。</span><span class="sxs-lookup"><span data-stu-id="09809-108">The batch schema is used to validate the root node of the preserved message; the service schemas are used to validate the interchange, group, and transaction set headers and trailers.</span></span> <span data-ttu-id="09809-109">バッチ スキーマの詳細については、次を参照してください。 [EDI バッチ スキーマ](../core/edi-batch-schemas.md)です。</span><span class="sxs-lookup"><span data-stu-id="09809-109">For more information about the batch schemas, see [EDI Batch Schemas](../core/edi-batch-schemas.md).</span></span> <span data-ttu-id="09809-110">サービス スキーマの詳細については、次を参照してください。 [EDI サービスと管理スキーマ](../core/edi-service-and-control-schemas.md)です。</span><span class="sxs-lookup"><span data-stu-id="09809-110">For more information on the service schemas, see [EDI Service and Control Schemas](../core/edi-service-and-control-schemas.md).</span></span>  

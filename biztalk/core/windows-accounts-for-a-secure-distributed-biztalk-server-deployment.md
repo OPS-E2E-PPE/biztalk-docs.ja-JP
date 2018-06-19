@@ -1,11 +1,11 @@
 ---
-title: "Windows アカウントをセキュリティで保護された分散型 BizTalk Server 展開の |Microsoft ドキュメント"
-ms.custom: 
+title: Windows アカウントをセキュリティで保護された分散型 BizTalk Server 展開の |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Server, Windows groups
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - user accounts, administrators
 - architecture, large distributions
 ms.assetid: 2a0893ef-8bfb-481b-b024-7f7d6e2a6f09
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974960"
 ---
 # <a name="windows-accounts-for-a-secure-distributed-biztalk-server-deployment"></a><span data-ttu-id="d4062-102">セキュリティで保護された分散型 BizTalk Server 展開向けの Windows アカウント</span><span class="sxs-lookup"><span data-stu-id="d4062-102">Windows Accounts for a Secure Distributed BizTalk Server Deployment</span></span>
 <span data-ttu-id="d4062-103">BizTalk Server の展開のシステム アーキテクチャに関する詳細については、次を参照してください。[サンプル BizTalk Server アーキテクチャ](../core/sample-biztalk-server-architectures.md)です。</span><span class="sxs-lookup"><span data-stu-id="d4062-103">For complete information about the system architecture for BizTalk Server deployment, see [Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md).</span></span>  
@@ -75,7 +76,7 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="d4062-151">BizTalk 管理者</span><span class="sxs-lookup"><span data-stu-id="d4062-151">BizTalk administrator</span></span>|<span data-ttu-id="d4062-152">ユーザー</span><span class="sxs-lookup"><span data-stu-id="d4062-152">User</span></span>|<span data-ttu-id="d4062-153">BizTalk 管理者</span><span class="sxs-lookup"><span data-stu-id="d4062-153">BizTalk Administrators</span></span><br /><br /> <span data-ttu-id="d4062-154">SSO 関連管理者</span><span class="sxs-lookup"><span data-stu-id="d4062-154">SSO Affiliate Administrators</span></span>|  
 |<span data-ttu-id="d4062-155">BizTalk オペレーター</span><span class="sxs-lookup"><span data-stu-id="d4062-155">BizTalk operator</span></span>|<span data-ttu-id="d4062-156">ユーザー</span><span class="sxs-lookup"><span data-stu-id="d4062-156">User</span></span>|<span data-ttu-id="d4062-157">BizTalk Operators</span><span class="sxs-lookup"><span data-stu-id="d4062-157">BizTalk Operators</span></span>|  
 |<span data-ttu-id="d4062-158">BizTalk 処理 1</span><span class="sxs-lookup"><span data-stu-id="d4062-158">BizTalk Processing 1</span></span>|<span data-ttu-id="d4062-159">サービス</span><span class="sxs-lookup"><span data-stu-id="d4062-159">Service</span></span>|<span data-ttu-id="d4062-160">BizTalk 処理ホスト ユーザー 1</span><span class="sxs-lookup"><span data-stu-id="d4062-160">BizTalk Processing Host Users 1</span></span>|  
-|<span data-ttu-id="d4062-161">BizTalk 処理 2**注:**環境内で各処理ホストの複数のアカウントを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="d4062-161">BizTalk Processing 2 **Note:**  You can create multiple accounts for each processing host in your environment.</span></span>|<span data-ttu-id="d4062-162">サービス</span><span class="sxs-lookup"><span data-stu-id="d4062-162">Service</span></span>|<span data-ttu-id="d4062-163">BizTalk 処理ホスト ユーザー 1</span><span class="sxs-lookup"><span data-stu-id="d4062-163">BizTalk Processing Host Users 1</span></span>|  
+|<span data-ttu-id="d4062-161">BizTalk 処理 2**注:** 環境内で各処理ホストの複数のアカウントを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="d4062-161">BizTalk Processing 2 **Note:**  You can create multiple accounts for each processing host in your environment.</span></span>|<span data-ttu-id="d4062-162">サービス</span><span class="sxs-lookup"><span data-stu-id="d4062-162">Service</span></span>|<span data-ttu-id="d4062-163">BizTalk 処理ホスト ユーザー 1</span><span class="sxs-lookup"><span data-stu-id="d4062-163">BizTalk Processing Host Users 1</span></span>|  
 |<span data-ttu-id="d4062-164">BizTalk 追跡</span><span class="sxs-lookup"><span data-stu-id="d4062-164">BizTalk Tracking</span></span>|<span data-ttu-id="d4062-165">サービス</span><span class="sxs-lookup"><span data-stu-id="d4062-165">Service</span></span>|<span data-ttu-id="d4062-166">BizTalk 追跡ホスト ユーザー</span><span class="sxs-lookup"><span data-stu-id="d4062-166">BizTalk Tracking Host Users</span></span>|  
 |<span data-ttu-id="d4062-167">SOAP アダプター</span><span class="sxs-lookup"><span data-stu-id="d4062-167">SOAP adapter</span></span>|<span data-ttu-id="d4062-168">サービス</span><span class="sxs-lookup"><span data-stu-id="d4062-168">Service</span></span>|<span data-ttu-id="d4062-169">BizTalk SOAP ユーザー</span><span class="sxs-lookup"><span data-stu-id="d4062-169">BizTalk SOAP Users</span></span>|  
 |<span data-ttu-id="d4062-170">HTTP アダプター</span><span class="sxs-lookup"><span data-stu-id="d4062-170">HTTP adapter</span></span>|<span data-ttu-id="d4062-171">サービス</span><span class="sxs-lookup"><span data-stu-id="d4062-171">Service</span></span>|<span data-ttu-id="d4062-172">BizTalk HTTP ユーザー</span><span class="sxs-lookup"><span data-stu-id="d4062-172">BizTalk HTTP Users</span></span>|  

@@ -1,17 +1,17 @@
 ---
-title: "SendMSMQMessage |Microsoft ドキュメント"
-ms.custom: 
+title: SendMSMQMessage |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, examples
 - examples, MSMQ adapters
 ms.assetid: 398bc396-0c66-4d55-886a-0d9bdab6476f
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975512"
 ---
 # <a name="sendmsmqmessage"></a><span data-ttu-id="2a7b6-102">SendMSMQMessage</span><span class="sxs-lookup"><span data-stu-id="2a7b6-102">SendMSMQMessage</span></span>
 <span data-ttu-id="2a7b6-103">SendMSMQMessage サンプルは、.NET ベースのアプリケーションから MSMQ ポートにメッセージを送信する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-103">The SendMSMQMessage sample demonstrates how to send a message to an MSMQ port from a .NET-based application.</span></span> <span data-ttu-id="2a7b6-104">Microsoft を構成する方法についても用意されています。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] MSMQ の受信場所を使用します。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-104">It also provides instructions about how to configure Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to use an MSMQ receive location.</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="2a7b6-130">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して、ソリューション ファイル SendMSMQMessage.sln を開きます。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-130">Using [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file SendMSMQMessage.sln.</span></span>  
   
-2.  <span data-ttu-id="2a7b6-131">**[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-131">On the **Build** menu, click **Build Solution**.</span></span>  
+2.  <span data-ttu-id="2a7b6-131">**[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-131">On the **Build** menu, click **Build Solution**.</span></span>  
   
 ## <a name="configuring-biztalk-server-and-creating-the-msmq-queue"></a><span data-ttu-id="2a7b6-132">BizTalk Server の構成と MSMQ キューの作成</span><span class="sxs-lookup"><span data-stu-id="2a7b6-132">Configuring BizTalk Server and Creating the MSMQ Queue</span></span>  
  <span data-ttu-id="2a7b6-133">次の手順を使用して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成し、サンプルを実行するための MSMQ キューを作成します。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-133">Use the following procedures to configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and create the MSMQ queue for running the sample.</span></span>  
@@ -64,7 +65,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="2a7b6-141">**キュー名**、入力`test`です。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-141">Under **Queue name**, enter `test`.</span></span> <span data-ttu-id="2a7b6-142">いることを確認、**トランザクション** チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-142">Ensure that the **Transactional** check box is selected.</span></span>  
   
-6.  <span data-ttu-id="2a7b6-143">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-143">Click **OK**.</span></span>  
+6.  <span data-ttu-id="2a7b6-143">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-143">Click **OK**.</span></span>  
   
 #### <a name="to-create-the-msmq-queue-in-windows-7-or-windows-vista-sp2"></a><span data-ttu-id="2a7b6-144">Windows 7 または Windows Vista SP2 で MSMQ キューを作成するには</span><span class="sxs-lookup"><span data-stu-id="2a7b6-144">To create the MSMQ queue in Windows 7 or Windows Vista SP2</span></span>  
   
@@ -73,13 +74,13 @@ ms.lasthandoff: 11/28/2017
 2.  <span data-ttu-id="2a7b6-146">展開**サービスとアプリケーション**の順に展開し、**メッセージ キュー**ノード。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-146">Expand **Services and Applications**, and then expand the **Message Queuing** node.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="2a7b6-147">場合**メッセージ キュー**がコンピューターにインストールされていないに移動して**コントロール パネル] > プログラム > プログラムと機能**、し、[ **Windows の機能のオンまたはオフ**です。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-147">If **Message Queuing** is not installed in the computer, go to **Control Panel > Programs > Programs and Features**, and then select **Turn Windows features on or off**.</span></span> <span data-ttu-id="2a7b6-148">下のすべての機能を確認して**Microsoft メッセージ キュー (MSMQ) Server**、順にクリック**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-148">Check all the features under **Microsoft Message Queue (MSMQ) Server**, and then click **OK**.</span></span>  
+    >  <span data-ttu-id="2a7b6-147">場合**メッセージ キュー**がコンピューターにインストールされていないに移動して**コントロール パネル] > プログラム > プログラムと機能**、し、[ **Windows の機能のオンまたはオフ**です。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-147">If **Message Queuing** is not installed in the computer, go to **Control Panel > Programs > Programs and Features**, and then select **Turn Windows features on or off**.</span></span> <span data-ttu-id="2a7b6-148">下のすべての機能を確認して**Microsoft メッセージ キュー (MSMQ) Server**、順にクリック **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-148">Check all the features under **Microsoft Message Queue (MSMQ) Server**, and then click **OK**.</span></span>  
   
 3.  <span data-ttu-id="2a7b6-149">右クリックし、**専用キュー**ノード、をクリックして**新規**、順にクリック**プライベート キュー**です。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-149">Right-click the **Private Queues** node, click **New**, and then click **Private Queue**.</span></span>  
   
 4.  <span data-ttu-id="2a7b6-150">**キュー名**、入力**テスト**です。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-150">Under **Queue name**, enter **test**.</span></span> <span data-ttu-id="2a7b6-151">いることを確認、**トランザクション** チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-151">Ensure that the **Transactional** check box is selected.</span></span>  
   
-5.  <span data-ttu-id="2a7b6-152">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-152">Click **OK**.</span></span>  
+5.  <span data-ttu-id="2a7b6-152">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-152">Click **OK**.</span></span>  
   
 #### <a name="to-configure-biztalk-server"></a><span data-ttu-id="2a7b6-153">BizTalk Server を構成するには</span><span class="sxs-lookup"><span data-stu-id="2a7b6-153">To configure BizTalk Server</span></span>  
   
@@ -99,7 +100,7 @@ ms.lasthandoff: 11/28/2017
   
 8.  <span data-ttu-id="2a7b6-163">**受信場所のプロパティ**ダイアログ ボックスで、トランスポートの種類に対して、select **MSMQ**です。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-163">In the **Receive Location Properties** dialog box, for the transport type, select **MSMQ** .</span></span>  
   
-9. <span data-ttu-id="2a7b6-164">をクリックして**構成**を開くには、 **MSMQ トランスポートのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-164">Click **Configure** to open the **MSMQ Transport Properties** dialog box.</span></span> <span data-ttu-id="2a7b6-165">設定**キュー**に`localhost\private$\test`設定、**トランザクション**に`True`、順にクリック**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-165">Set **Queue** to `localhost\private$\test`, set **Transactional** to `True`, and then click **OK**.</span></span>  
+9. <span data-ttu-id="2a7b6-164">をクリックして**構成**を開くには、 **MSMQ トランスポートのプロパティ** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-164">Click **Configure** to open the **MSMQ Transport Properties** dialog box.</span></span> <span data-ttu-id="2a7b6-165">設定**キュー**に`localhost\private$\test`設定、**トランザクション**に`True`、順にクリック **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-165">Set **Queue** to `localhost\private$\test`, set **Transactional** to `True`, and then click **OK**.</span></span>  
   
 10. <span data-ttu-id="2a7b6-166">アプリケーションを展開し、選択**送信ポート**を選択**新規****静的な一方向送信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="2a7b6-166">Expand the application, select **Send Ports**, select **New**, select **Static One-way Send Port**.</span></span>  
   

@@ -1,11 +1,11 @@
 ---
-title: "BizTalk プロジェクトを作成する際の考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk プロジェクトを作成する際の考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - projects, size
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - projects, naming conventions
 - projects, planning
 ms.assetid: f6c3dc71-105f-46af-9e6e-9a4c3b982d8c
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005955"
 ---
 # <a name="considerations-when-creating-biztalk-projects"></a><span data-ttu-id="87bc6-102">BizTalk プロジェクトを作成する際の考慮事項</span><span class="sxs-lookup"><span data-stu-id="87bc6-102">Considerations When Creating BizTalk Projects</span></span>
 <span data-ttu-id="87bc6-103">ここでは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して BizTalk プロジェクトを作成する際に考慮すべき情報について説明します。</span><span class="sxs-lookup"><span data-stu-id="87bc6-103">This section provides information that you should take into consideration when creating BizTalk projects using [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  

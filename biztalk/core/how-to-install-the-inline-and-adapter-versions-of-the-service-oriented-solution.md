@@ -1,14 +1,14 @@
 ---
-title: "インラインをインストールし、アダプター バージョンのサービス指向ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: インラインをインストールし、アダプター バージョンのサービス指向ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6050cfe9-4e94-4a55-8b24-fbcc74d9e8f4
-caps.latest.revision: "97"
+caps.latest.revision: 97
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010739"
 ---
 # <a name="how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution"></a><span data-ttu-id="342d7-102">サービス指向ソリューションのインライン バージョンおよびアダプター バージョンをインストールする方法</span><span class="sxs-lookup"><span data-stu-id="342d7-102">How to Install the Inline and Adapter Versions of the Service Oriented Solution</span></span>
 <span data-ttu-id="342d7-103">次の手順では、サービス指向ソリューションのインライン バージョンおよびアダプタ バージョンをコンピュータにインストールするための準備を行う方法、およびコンピュータにソリューションをインストールする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="342d7-103">The following steps describe how to prepare the computer for installing the inline and adapter versions of the service oriented solution, and how to install the solution on this computer.</span></span>  
@@ -57,7 +58,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="342d7-122">開く、 **BizTalk Server 管理コンソール**次のように: をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリック**BizTalk Server 管理**です。</span><span class="sxs-lookup"><span data-stu-id="342d7-122">Open the **BizTalk Server Administration Console** as follows: Click **Start**, point to **All Programs**, point to [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
   
-2.  <span data-ttu-id="342d7-123">**BizTalk Server 管理コンソール**、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**を右クリックして**[btsscn.so.customerservice]**、クリックして**停止**です。</span><span class="sxs-lookup"><span data-stu-id="342d7-123">In the **BizTalk Server Administration Console**, expand **BizTalk Server Administration**, expand **BizTalk Group**, expand **Applications**, right-click **BTSScn.SO.CustomerService**, and then click **Stop**.</span></span> <span data-ttu-id="342d7-124">**アプリケーションの停止**ダイアログ ボックスで、**完全停止 - インスタンスを終了**、クリックして**停止**です。</span><span class="sxs-lookup"><span data-stu-id="342d7-124">In the **Stop Application** dialog box, select **Full Stop - Terminate Instances**, and then click **Stop**.</span></span>  
+2.  <span data-ttu-id="342d7-123">**BizTalk Server 管理コンソール**、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**を右クリックして **[btsscn.so.customerservice]**、クリックして**停止**です。</span><span class="sxs-lookup"><span data-stu-id="342d7-123">In the **BizTalk Server Administration Console**, expand **BizTalk Server Administration**, expand **BizTalk Group**, expand **Applications**, right-click **BTSScn.SO.CustomerService**, and then click **Stop**.</span></span> <span data-ttu-id="342d7-124">**アプリケーションの停止**ダイアログ ボックスで、**完全停止 - インスタンスを終了**、クリックして**停止**です。</span><span class="sxs-lookup"><span data-stu-id="342d7-124">In the **Stop Application** dialog box, select **Full Stop - Terminate Instances**, and then click **Stop**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="342d7-125">インライン バージョンおよびアダプター バージョンをインストールするために、スタブ バージョンを削除する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="342d7-125">You don't need to remove the stub version for installing the inline and adapter versions.</span></span> <span data-ttu-id="342d7-126">すべてのバージョンを一緒に配置する場合は、この手順を省略できます。</span><span class="sxs-lookup"><span data-stu-id="342d7-126">If you want to put all the versions together, you should skip this step.</span></span>  
@@ -107,7 +108,7 @@ ms.lasthandoff: 12/01/2017
   
 11. <span data-ttu-id="342d7-140">次のようにインターネット インフォメーション サービス (IIS) マネージャーを開始: をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**をクリックして**インターネット インフォメーション サービス (IIS) マネージャー**です。</span><span class="sxs-lookup"><span data-stu-id="342d7-140">Start Internet Information Services (IIS) Manager as follows: Click **Start**, point to **All Programs**, point to **Administration Tools**, and then click **Internet Information Services (IIS) Manager**.</span></span>  
   
-    -   <span data-ttu-id="342d7-141">展開、**アプリケーション プール**の以前の Web アプリケーションを作成したアプリケーション プールを右クリックしをクリックして**削除**、順にクリック**[ok]**確認ダイアログでダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="342d7-141">Expand the **Application Pools**, right-click the application pool you crated for the previous Web applications, click **Delete**, and then click **OK** in the confirmation dialog box.</span></span>  
+    -   <span data-ttu-id="342d7-141">展開、**アプリケーション プール**の以前の Web アプリケーションを作成したアプリケーション プールを右クリックしをクリックして**削除**、順にクリック **[ok]** 確認ダイアログでダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="342d7-141">Expand the **Application Pools**, right-click the application pool you crated for the previous Web applications, click **Delete**, and then click **OK** in the confirmation dialog box.</span></span>  
   
 12. <span data-ttu-id="342d7-142">をクリックして**開始**、 をポイント**コントロール パネルの** 、 をクリックして**プログラム追加と削除**、IBM WebSphere MQ Client for Windows をアンインストールします。</span><span class="sxs-lookup"><span data-stu-id="342d7-142">Click **Start**, point to **Control Panel**, click **Add or Remove Programs**, and then uninstall the IBM WebSphere MQ Client for Windows.</span></span>  
   
@@ -367,7 +368,7 @@ ms.lasthandoff: 12/01/2017
   
     1.  <span data-ttu-id="342d7-261">**ディレクトリ セキュリティ** タブで、をクリックして**編集**を変更する**認証とアクセス制御**です。</span><span class="sxs-lookup"><span data-stu-id="342d7-261">In the **Directory Security** tab, click **Edit** to modify **Authentication and access control**.</span></span> <span data-ttu-id="342d7-262">選択**基本認証 (パスワードはクリア テキストで送信)**、し、その他をオフに**認証アクセス**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="342d7-262">Select **Basic authentication (password is sent in clear text)**, and clear other **Authentication access** checkboxes.</span></span> <span data-ttu-id="342d7-263">をクリックして**OK**を閉じる、**認証方法** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="342d7-263">Click **OK** to close the **Authentication Methods** dialog box.</span></span>  
   
-    2.  <span data-ttu-id="342d7-264">**ディレクトリ セキュリティ** タブで、をクリックして**編集**下にある、**セキュリティで保護された通信**ボックスで、グループ化し、確認**セキュリティで保護されたチャネル (SSL)**で、**セキュリティ保護された通信** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="342d7-264">In the **Directory Security** tab, click **Edit** under the **Secure Communication** group box, and then check **Require secure channel (SSL)** in the **Secure Communications** dialog box.</span></span>  
+    2.  <span data-ttu-id="342d7-264">**ディレクトリ セキュリティ** タブで、をクリックして**編集**下にある、**セキュリティで保護された通信**ボックスで、グループ化し、確認**セキュリティで保護されたチャネル (SSL)** で、**セキュリティ保護された通信** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="342d7-264">In the **Directory Security** tab, click **Edit** under the **Secure Communication** group box, and then check **Require secure channel (SSL)** in the **Secure Communications** dialog box.</span></span>  
   
     3.  <span data-ttu-id="342d7-265">**仮想ディレクトリ** タブで、設定、**アプリケーション プール**Pending Transaction Web サービスの新しい IIS アプリケーション プールの作成"するには」手順で作成したアプリケーション プールにします。</span><span class="sxs-lookup"><span data-stu-id="342d7-265">In the **Virtual Directory** tab, set the **Application Pool** to the application pool that you created in the procedure "To create a new IIS application pool for the Pending Transaction Web services".</span></span>  
   
@@ -455,13 +456,13 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="342d7-317">をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Host Integration Server 2004**、順にクリック**TI マネージャー**です。</span><span class="sxs-lookup"><span data-stu-id="342d7-317">Click **Start**, point to **All Programs**, point to **Microsoft Host Integration Server 2004**, and then click **TI Manager**.</span></span>  
   
-2.  <span data-ttu-id="342d7-318">**TI マネージャー**コンソールで、をクリックして**トランザクション インテグレーター (構成)**をクリックして**Windows Initiated Processing**、順にクリック**オブジェクト**.</span><span class="sxs-lookup"><span data-stu-id="342d7-318">In the **TI Manager** console, click **Transaction Integrator (Configuration)**, click **Windows Initiated Processing**, and then click **Objects**.</span></span> <span data-ttu-id="342d7-319">右クリック**オブジェクト**をクリックして**新規**、順にクリック**オブジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="342d7-319">Right-click **Objects**, click **New**, and then click **Object**.</span></span>  
+2.  <span data-ttu-id="342d7-318">**TI マネージャー**コンソールで、をクリックして**トランザクション インテグレーター (構成)** をクリックして**Windows Initiated Processing**、順にクリック**オブジェクト**.</span><span class="sxs-lookup"><span data-stu-id="342d7-318">In the **TI Manager** console, click **Transaction Integrator (Configuration)**, click **Windows Initiated Processing**, and then click **Objects**.</span></span> <span data-ttu-id="342d7-319">右クリック**オブジェクト**をクリックして**新規**、順にクリック**オブジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="342d7-319">Right-click **Objects**, click **New**, and then click **Object**.</span></span>  
   
     1.  <span data-ttu-id="342d7-320">**ようこそ** ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="342d7-320">On the **Welcome** page, click **Next**.</span></span>  
   
     2.  <span data-ttu-id="342d7-321">**指定または検索オブジェクト** ページで **参照**、%BTSSolutionsPath%\SO\MFAccess\HISTIComponent フォルダーの SOHISTIUsingCOM.TLB を選択し、クリックして**次へ**.</span><span class="sxs-lookup"><span data-stu-id="342d7-321">On the **Specify Or Locate An Object** page, click **Browse**, choose the SOHISTIUsingCOM.TLB in the %BTSSolutionsPath%\SO\MFAccess\HISTIComponent folder, and then click **Next**.</span></span>  
   
-    3.  <span data-ttu-id="342d7-322">**COM オブジェクトの環境特性の定義**] ページで、[ **BTSScn SO TI Component**の**COM + アプリケーション**、クリックして**[次へ]**.</span><span class="sxs-lookup"><span data-stu-id="342d7-322">On the **Define Environment Characteristics for The COM Object** page, select **BTSScn SO TI Component** for the **COM+ application**, and then click **Next**.</span></span>  
+    3.  <span data-ttu-id="342d7-322">**COM オブジェクトの環境特性の定義**] ページで、[ **BTSScn SO TI Component**の**COM + アプリケーション**、クリックして **[次へ]**.</span><span class="sxs-lookup"><span data-stu-id="342d7-322">On the **Define Environment Characteristics for The COM Object** page, select **BTSScn SO TI Component** for the **COM+ application**, and then click **Next**.</span></span>  
   
     4.  <span data-ttu-id="342d7-323">**リモート環境の定義** ページで、前の手順で作成したリモート環境を選択して、**リモート環境では、し、次へ をクリックします。**</span><span class="sxs-lookup"><span data-stu-id="342d7-323">On the **Define Remote Environment** page, select the remote environment that you created in the previous procedure for the **Remote environment, and then click Next.**</span></span>  
   
@@ -500,7 +501,7 @@ ms.lasthandoff: 12/01/2017
   
      <span data-ttu-id="342d7-343">Access Permissions = Read, Run scripts</span><span class="sxs-lookup"><span data-stu-id="342d7-343">Access Permissions = Read, Run scripts</span></span>  
   
-3.  <span data-ttu-id="342d7-344">**インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、**展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Adapter をクリックして**プロパティ**、し、次のように設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="342d7-344">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Adapter, click **Properties**, and then modify the settings as follows:</span></span>  
+3.  <span data-ttu-id="342d7-344">**インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、** 展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Adapter をクリックして**プロパティ**、し、次のように設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="342d7-344">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Adapter, click **Properties**, and then modify the settings as follows:</span></span>  
   
     1.  <span data-ttu-id="342d7-345">**仮想ディレクトリ** タブで、設定、**アプリケーション プール**に\< *YourAppPool* \>前の手順で作成しました。</span><span class="sxs-lookup"><span data-stu-id="342d7-345">In the **Virtual directory** tab, set the **Application Pool** to \<*YourAppPool*\> that you created in the previous step.</span></span>  
   
@@ -730,7 +731,7 @@ ms.lasthandoff: 12/01/2017
   
     2.  <span data-ttu-id="342d7-523">**ディレクトリ セキュリティ**] タブで、をクリックして**編集**で、**認証とアクセス制御**ボックスで、グループ化し、[ **への匿名アクセスを有効にします**。</span><span class="sxs-lookup"><span data-stu-id="342d7-523">In the **Directory Security** tab, click **Edit** in the **Authentication and access control** group box, and then select **Enable anonymous access**.</span></span> <span data-ttu-id="342d7-524">をクリックして**OK**を終了します。</span><span class="sxs-lookup"><span data-stu-id="342d7-524">Click **OK** to exit.</span></span>  
   
-3.  <span data-ttu-id="342d7-525">**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**、[btsscn.so.customerservice] を展開し、**送信ポート**を右クリックして**[pendingtransactionsolicitresponseport]**、クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="342d7-525">In the **BizTalk Server Administration Console**, expand **BizTalk Group**, expand **Applications**, expand BTSScn.SO.CustomerService, expand **Send Ports**, right-click **PendingTransactionSolicitResponsePort**, and then click **Properties**.</span></span>  
+3.  <span data-ttu-id="342d7-525">**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**、[btsscn.so.customerservice] を展開し、**送信ポート**を右クリックして **[pendingtransactionsolicitresponseport]**、クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="342d7-525">In the **BizTalk Server Administration Console**, expand **BizTalk Group**, expand **Applications**, expand BTSScn.SO.CustomerService, expand **Send Ports**, right-click **PendingTransactionSolicitResponsePort**, and then click **Properties**.</span></span>  
   
     1.  <span data-ttu-id="342d7-526">**全般** ページで、をクリックして**構成**を表示する、**トランスポートのプロパティ** ダイアログ ボックスし、変更、 **Web サービス URL**にスタブ Pending Transaction Web サービスをたとえば。</span><span class="sxs-lookup"><span data-stu-id="342d7-526">In the **General** page, click **Configure** to display the **Transport Properties** dialog box, and then modify the **Web Service URL** to the stub Pending Transaction Web service, for example:</span></span>  
   

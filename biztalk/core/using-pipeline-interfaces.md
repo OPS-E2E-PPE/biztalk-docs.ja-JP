@@ -1,14 +1,14 @@
 ---
-title: "パイプライン インターフェイスを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン インターフェイスを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4bb88d0d-23ab-4fdb-bcd2-56050456cf69
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289146"
 ---
 # <a name="using-pipeline-interfaces"></a><span data-ttu-id="acd51-102">パイプライン インターフェイスを使用します。</span><span class="sxs-lookup"><span data-stu-id="acd51-102">Using Pipeline Interfaces</span></span>
 <span data-ttu-id="acd51-103">パイプライン コンポーネントは、BizTalk メッセージング エンジンとの対話用にあらかじめ定義された一連のインターフェイスを実装する .NET コンポーネントまたは COM コンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="acd51-103">A pipeline component is a .NET or COM component that implements a set of predefined interfaces for interaction with the BizTalk Messaging Engine.</span></span> <span data-ttu-id="acd51-104">実装する必要のあるインターフェイスは、コンポーネントの機能によって異なります。</span><span class="sxs-lookup"><span data-stu-id="acd51-104">Depending on the functionality of the component, different interfaces must be implemented.</span></span> <span data-ttu-id="acd51-105">このトピックでは、これらのインターフェイスとそのメソッドの一部について説明します。</span><span class="sxs-lookup"><span data-stu-id="acd51-105">This topic discusses these interfaces and some of their methods.</span></span>  

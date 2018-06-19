@@ -1,14 +1,14 @@
 ---
-title: "手順 4: 取引、Partner1 のパーティとビジネス プロファイルの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: 取引、Partner1 のパーティとビジネス プロファイルの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: db50d0f6-e838-4e92-8548-a63a2c445d55
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277418"
 ---
 # <a name="step-4-configure-a-party-and-business-profile-for-your-trading-partner"></a><span data-ttu-id="db278-102">手順 4: 取引先のパーティとビジネス プロファイルを構成します。</span><span class="sxs-lookup"><span data-stu-id="db278-102">Step 4: Configure a Party and Business Profile for Your Trading Partner</span></span>
 <span data-ttu-id="db278-103">![手順 4. 9 の](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-4of9.gif "Step_4of9")</span><span class="sxs-lookup"><span data-stu-id="db278-103">![Step 4 of 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-4of9.gif "Step_4of9")</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="db278-112">クリア、**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理する**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="db278-112">Clear the **Local BizTalk processes messages received by the party or supports sending messages from this party** check box.</span></span> <span data-ttu-id="db278-113">チェック ボックスをオフにすることを指定、パーティ (この場合、 **Fabrikam**) BizTalk Server をホストしていません。</span><span class="sxs-lookup"><span data-stu-id="db278-113">By clearing the check box you specify that the party (in this case, **Fabrikam**) does not host BizTalk Server.</span></span>  
   
-5.  <span data-ttu-id="db278-114">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db278-114">Click **OK**.</span></span>  
+5.  <span data-ttu-id="db278-114">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db278-114">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="db278-115">パーティ名を右クリックし、**新規**、クリックして**ビジネス プロファイル**です。</span><span class="sxs-lookup"><span data-stu-id="db278-115">Right-click the party name, point to **New**, and then click **Business Profile**.</span></span>  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="db278-117">パーティを作成するときに、という名前のプロファイル*PartyName*_Profile が自動的に作成します。</span><span class="sxs-lookup"><span data-stu-id="db278-117">When you create a party, a profile named *PartyName*_Profile is automatically created.</span></span> <span data-ttu-id="db278-118">新しいプロファイルを作成する代わりに、このプロファイルを使用できます。</span><span class="sxs-lookup"><span data-stu-id="db278-118">You can use this profile instead of creating a new one.</span></span> <span data-ttu-id="db278-119">プロファイルの名前を変更するプロファイルを右クリックし **プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="db278-119">To rename a profile, right-click the profile and select **Properties**.</span></span> <span data-ttu-id="db278-120">**全般** ページで、プロファイルの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="db278-120">In the **General** page, specify a name for the profile.</span></span>  
   
-8.  <span data-ttu-id="db278-121">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db278-121">Click **OK**.</span></span>  
+8.  <span data-ttu-id="db278-121">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db278-121">Click **OK**.</span></span>  
   
 ## <a name="next-steps"></a><span data-ttu-id="db278-122">次の手順</span><span class="sxs-lookup"><span data-stu-id="db278-122">Next Steps</span></span>  
  <span data-ttu-id="db278-123">受信場所を構成する (**fromTHEM_4010_850**)」の説明に従って、Fabrikam から 850 メッセージを受信する[手順 5: 受信ポートと受信場所を構成する](../core/step-5-configure-a-receive-port-and-receive-location.md)です。</span><span class="sxs-lookup"><span data-stu-id="db278-123">You configure the receive location (**fromTHEM_4010_850**) to receive the 850 message from Fabrikam, as described in [Step 5: Configure a Receive Port and Receive Location](../core/step-5-configure-a-receive-port-and-receive-location.md).</span></span>  

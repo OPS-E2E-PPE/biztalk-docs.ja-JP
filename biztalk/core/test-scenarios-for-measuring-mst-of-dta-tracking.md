@@ -1,14 +1,14 @@
 ---
-title: "DTA 追跡の MST を測定するためのシナリオをテスト |Microsoft ドキュメント"
-ms.custom: 
+title: DTA 追跡の MST を測定するためのシナリオをテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 303dc1d8-baac-4b54-92c8-95c0ce640a76
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280194"
 ---
 # <a name="test-scenarios-for-measuring-mst-of-dta-tracking"></a><span data-ttu-id="e2c97-102">DTA 追跡の MST を測定するためのテスト シナリオ</span><span class="sxs-lookup"><span data-stu-id="e2c97-102">Test Scenarios for Measuring MST of DTA Tracking</span></span>
 <span data-ttu-id="e2c97-103">これらが実際にはどのように機能するのかを示すために、および追跡における維持可能な最大スループット (MST) を測定する簡単な手法を紹介するために、ここでは、追跡の MST が測定されているテスト シナリオを提供します。</span><span class="sxs-lookup"><span data-stu-id="e2c97-103">To show how all of this works in practice and to introduce a simple technique for measuring maximum sustainable throughput (MST) for tracking, we will now present a test scenario for which the tracking MST has been measured.</span></span> <span data-ttu-id="e2c97-104">関連する手法が提供されるだけでなく、示されるデータを基に他のシステムの追跡パフォーマンスを測定することもできます。</span><span class="sxs-lookup"><span data-stu-id="e2c97-104">Not only will we provide the techniques involved, but you can use the data presented as a starting point to estimate tracking performance for other systems.</span></span>  
@@ -88,11 +89,11 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="e2c97-159">サンプル シナリオを使用して毎秒 20 メッセージが受信される負荷の下で、生成されたパフォーマンス グラフに示されているように、48 時間分の主要業績評価指標を得ました。</span><span class="sxs-lookup"><span data-stu-id="e2c97-159">Using the sample scenario, with a load of 20 messages received per second, we acquired 48 hours worth of key performance indicators as shown in the generated Perfmon graph.</span></span> <span data-ttu-id="e2c97-160">このグラフから、持続性を示す以下の傾向がわかります。</span><span class="sxs-lookup"><span data-stu-id="e2c97-160">Note from the graph, the following trends that indicate sustainability:</span></span>  
   
--   <span data-ttu-id="e2c97-161">**Biztalkdtadb データの深さ (黒い線)**です。</span><span class="sxs-lookup"><span data-stu-id="e2c97-161">**BizTalkDTADbdata depth (black lines)**.</span></span> <span data-ttu-id="e2c97-162">3 つの公開メッセージ ボックス データベースでは、24 時間の時点での最初のアーカイブの後も、trackingdata テーブルの深さは安定し、上昇傾向が続いていないことがわかります。</span><span class="sxs-lookup"><span data-stu-id="e2c97-162">With our three publishing MessageBox databases, we can see that, even after the first archive at 24 hours, the depth of the trackingdata table stabilizes and does not continue to trend up.</span></span>  
+-   <span data-ttu-id="e2c97-161">**Biztalkdtadb データの深さ (黒い線)** です。</span><span class="sxs-lookup"><span data-stu-id="e2c97-161">**BizTalkDTADbdata depth (black lines)**.</span></span> <span data-ttu-id="e2c97-162">3 つの公開メッセージ ボックス データベースでは、24 時間の時点での最初のアーカイブの後も、trackingdata テーブルの深さは安定し、上昇傾向が続いていないことがわかります。</span><span class="sxs-lookup"><span data-stu-id="e2c97-162">With our three publishing MessageBox databases, we can see that, even after the first archive at 24 hours, the depth of the trackingdata table stabilizes and does not continue to trend up.</span></span>  
   
--   <span data-ttu-id="e2c97-163">**スプールの深さ (青い線)**です。</span><span class="sxs-lookup"><span data-stu-id="e2c97-163">**Spool depth (blue lines)**.</span></span> <span data-ttu-id="e2c97-164">スプールの深さはこの実行をとおしてとても安定しており、アーカイブと削除によりリソースが使用されていても、追跡メッセージ (各メッセージのサイズは 10 KB) が BizTalkDTADb データベースに遅延することなくコピーされていることが示されています。</span><span class="sxs-lookup"><span data-stu-id="e2c97-164">The spool depth is very stable throughout the run indicating that, even with archiving and purging taking resources, the tracked messages, which are each 10 kilobytes in size, are copied to the BizTalkDTADb database without falling behind.</span></span>  
+-   <span data-ttu-id="e2c97-163">**スプールの深さ (青い線)** です。</span><span class="sxs-lookup"><span data-stu-id="e2c97-163">**Spool depth (blue lines)**.</span></span> <span data-ttu-id="e2c97-164">スプールの深さはこの実行をとおしてとても安定しており、アーカイブと削除によりリソースが使用されていても、追跡メッセージ (各メッセージのサイズは 10 KB) が BizTalkDTADb データベースに遅延することなくコピーされていることが示されています。</span><span class="sxs-lookup"><span data-stu-id="e2c97-164">The spool depth is very stable throughout the run indicating that, even with archiving and purging taking resources, the tracked messages, which are each 10 kilobytes in size, are copied to the BizTalkDTADb database without falling behind.</span></span>  
   
--   <span data-ttu-id="e2c97-165">**BizTalkDTADb データベース データ ファイルの物理のディスク アイドル時間 (赤い線)**です。</span><span class="sxs-lookup"><span data-stu-id="e2c97-165">**BizTalkDTADb database data file Physical Disk Idle Time (red line)**.</span></span> <span data-ttu-id="e2c97-166">最初の 24 時間は、アーカイブと削除が実行されることはなく、BizTalkDTADb データベースにデータが蓄積されるにつれて TDDS によるデータの挿入などディスク I/O が増加します。</span><span class="sxs-lookup"><span data-stu-id="e2c97-166">For the first 24 hours before archive and purge have any work to do, the BizTalkDTADb database is accumulating more and more data which results in more and more disk I/O as data is inserted by TDDS.</span></span> <span data-ttu-id="e2c97-167">これは、物理的なディスク アイドル時間の安定した低下としてはっきりと示されています。</span><span class="sxs-lookup"><span data-stu-id="e2c97-167">This is clearly seen as a steady decline in the physical disk idle time.</span></span>  
+-   <span data-ttu-id="e2c97-165">**BizTalkDTADb データベース データ ファイルの物理のディスク アイドル時間 (赤い線)** です。</span><span class="sxs-lookup"><span data-stu-id="e2c97-165">**BizTalkDTADb database data file Physical Disk Idle Time (red line)**.</span></span> <span data-ttu-id="e2c97-166">最初の 24 時間は、アーカイブと削除が実行されることはなく、BizTalkDTADb データベースにデータが蓄積されるにつれて TDDS によるデータの挿入などディスク I/O が増加します。</span><span class="sxs-lookup"><span data-stu-id="e2c97-166">For the first 24 hours before archive and purge have any work to do, the BizTalkDTADb database is accumulating more and more data which results in more and more disk I/O as data is inserted by TDDS.</span></span> <span data-ttu-id="e2c97-167">これは、物理的なディスク アイドル時間の安定した低下としてはっきりと示されています。</span><span class="sxs-lookup"><span data-stu-id="e2c97-167">This is clearly seen as a steady decline in the physical disk idle time.</span></span>  
   
      <span data-ttu-id="e2c97-168">実行に 24 時間に、I/O アイドル時間の明確な低下が確認されて、アーカイブと削除を行うには作業が最初の時刻と一致します。</span><span class="sxs-lookup"><span data-stu-id="e2c97-168">At 24 hours into the run, a clear drop in I/O idle time is observed, which coincides with the first time that archive and purge have work to do.</span></span> <span data-ttu-id="e2c97-169">最初のアーカイブ後パージがほぼゼロになる (ただし、まだ、システム上の負荷がある)、24 時間よりも古いデータを削除する 1 分ごとに行う作業のアイドル時間。</span><span class="sxs-lookup"><span data-stu-id="e2c97-169">After the first archive, purge has work to do every minute to purge data older than 24 hours (remember, there is still load on the system), which results in a near zero idle time.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "トランザクション セットの重複した制御番号が見つかりました |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクション セットの重複した制御番号が見つかりました |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1b2779a0-b365-4c4b-81c7-8f9284748b6e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278562"
 ---
 # <a name="transaction-set-duplicate-control-number-found"></a><span data-ttu-id="119c3-102">トランザクション セットの重複する制御番号が見つかりました</span><span class="sxs-lookup"><span data-stu-id="119c3-102">Transaction Set duplicate control number found</span></span>
 ## <a name="details"></a><span data-ttu-id="119c3-103">詳細</span><span class="sxs-lookup"><span data-stu-id="119c3-103">Details</span></span>  

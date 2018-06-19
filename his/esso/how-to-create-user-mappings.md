@@ -8,15 +8,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eb91879c-73f4-4e9e-9e5b-534f48cd5584
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: gplarsen
 ms.author: hisdocs; plarsen
 manager: anneta
 ms.openlocfilehash: 89fd7ab2ca83d23a37944447997becd2d3f008c2
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30250966"
 ---
 # <a name="how-to-create-user-mappings"></a><span data-ttu-id="86723-102">ユーザー マッピングを作成する方法</span><span class="sxs-lookup"><span data-stu-id="86723-102">How to Create User Mappings</span></span>
 <span data-ttu-id="86723-103">使用して、 **createmappings** XML ファイルで指定された、1 つまたは複数のユーザー マッピングを作成するコマンド。</span><span class="sxs-lookup"><span data-stu-id="86723-103">Use the **createmappings** command to create one or more user mappings, as specified in the XML file.</span></span> <span data-ttu-id="86723-104">XML ファイルの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="86723-104">The following is an example XML file.</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="86723-114">既定のインストール ディレクトリは\<*ドライブ*>: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="86723-114">The default installation directory is \<*drive*>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="86723-115">型`ssomanage –createmappings <mappings file name>`ここで、 *\<マッピング ファイル名 >*を作成するユーザー マッピングを格納しているファイルの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="86723-115">Type `ssomanage –createmappings <mappings file name>`, where *\<mappings file name>* is the name of the file that contains the user mappings that you want to create.</span></span>  
+3.  <span data-ttu-id="86723-115">型`ssomanage –createmappings <mappings file name>`ここで、 *\<マッピング ファイル名 >* を作成するユーザー マッピングを格納しているファイルの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="86723-115">Type `ssomanage –createmappings <mappings file name>`, where *\<mappings file name>* is the name of the file that contains the user mappings that you want to create.</span></span>  
   
 ### <a name="to-create-user-mappings-using-the-client-utility"></a><span data-ttu-id="86723-116">クライアント ユーティリティを使用してユーザー マッピングを作成するには</span><span class="sxs-lookup"><span data-stu-id="86723-116">To create user mappings using the client utility</span></span>  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="86723-119">既定のインストール ディレクトリは\<*ドライブ*>: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="86723-119">The default installation directory is \<*drive*>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="86723-120">型`ssoclient –setcredentials <application name >`ここで、 *\<アプリケーション名 >*ユーザーがマッピングを作成する関連アプリケーションの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="86723-120">Type `ssoclient –setcredentials <application name >`, where *\<application name >* is the name of the affiliate application that the user wants to create a mapping for.</span></span>  
+3.  <span data-ttu-id="86723-120">型`ssoclient –setcredentials <application name >`ここで、 *\<アプリケーション名 >* ユーザーがマッピングを作成する関連アプリケーションの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="86723-120">Type `ssoclient –setcredentials <application name >`, where *\<application name >* is the name of the affiliate application that the user wants to create a mapping for.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="86723-121">参照</span><span class="sxs-lookup"><span data-stu-id="86723-121">See Also</span></span>  
  <span data-ttu-id="86723-122">[SSO マッピング](../esso/sso-mappings.md) </span><span class="sxs-lookup"><span data-stu-id="86723-122">[SSO Mappings](../esso/sso-mappings.md) </span></span>  

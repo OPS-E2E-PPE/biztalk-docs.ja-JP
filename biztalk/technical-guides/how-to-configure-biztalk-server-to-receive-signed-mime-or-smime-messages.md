@@ -1,14 +1,14 @@
 ---
-title: "MIME または SMIME メッセージを受信する BizTalk Server を構成する方法が署名されて |Microsoft ドキュメント"
-ms.custom: 
+title: MIME または SMIME メッセージを受信する BizTalk Server を構成する方法が署名されて |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 50570257-7bb6-4ede-9026-873eefd06483
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297818"
 ---
 # <a name="how-to-configure-biztalk-server-to-receive-signed-mime-or-smime-messages"></a><span data-ttu-id="cc697-102">MIME または SMIME メッセージを受信する BizTalk Server を構成する方法が署名済み</span><span class="sxs-lookup"><span data-stu-id="cc697-102">How to Configure BizTalk Server to Receive Signed MIME or SMIME Messages</span></span>
 <span data-ttu-id="cc697-103">このトピックは、構成する方法を説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]符号付きの MIME/SMIME メッセージを受信する証明書を使用します。</span><span class="sxs-lookup"><span data-stu-id="cc697-103">This topic describes how to configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to use certificates to receive signed MIME/SMIME messages.</span></span> <span data-ttu-id="cc697-104">以下の手順は、AS2 トランスポート経由での署名付きメッセージの受信の構成にも適用されます。</span><span class="sxs-lookup"><span data-stu-id="cc697-104">The procedure below also applies to configuring the receiving of signed messages over AS2 transport.</span></span>  

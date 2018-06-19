@@ -1,18 +1,18 @@
 ---
-title: "アクティビティ ウィンドウの期間を設定する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アクティビティ ウィンドウの期間を設定する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Set-ActivityWindow command [BAM]
 - activities [BAM], time intervals
 - managing [BAM], time intervals
 ms.assetid: e39c315e-f215-4f81-9774-cf7aedf6ba33
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972040"
 ---
 # <a name="how-to-set-the-duration-on-an-activity-window"></a><span data-ttu-id="7713f-102">アクティビティ時間帯の期間を設定する方法</span><span class="sxs-lookup"><span data-stu-id="7713f-102">How to Set the Duration on an Activity Window</span></span>
 <span data-ttu-id="7713f-103">管理者を使用して、**セット activitywindow**コマンドを指定したアクティビティの期間を設定します。</span><span class="sxs-lookup"><span data-stu-id="7713f-103">Administrators use the **set-activitywindow** command to set the duration for the specified activity.</span></span>  

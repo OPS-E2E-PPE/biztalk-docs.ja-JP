@@ -1,14 +1,14 @@
 ---
-title: "手順 3: Visual Studio での BizTalk Server ソリューションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: Visual Studio での BizTalk Server ソリューションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a4da3333-e430-4caf-bc29-44a60ebac385
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278018"
 ---
 # <a name="step-3-create-the-biztalk-server-solution-in-visual-studio"></a><span data-ttu-id="09ba8-102">手順 3: Visual Studio での BizTalk Server ソリューションを作成します。</span><span class="sxs-lookup"><span data-stu-id="09ba8-102">Step 3: Create the BizTalk Server Solution in Visual Studio</span></span>
 <span data-ttu-id="09ba8-103">このセクションでは、Salesforce からの営業案件通知を受信、Salesforce への営業案件に関する追加情報を問い合わせ、またその情報を社内の SQL Server データベースへの追加を可能にする [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ソリューションの作成について見ていきます。</span><span class="sxs-lookup"><span data-stu-id="09ba8-103">In this section, we look at creating the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution for receiving opportunity notifications from Salesforce, querying Salesforce to get additional information about the opportunity, and finally inserting that information into an on-premise SQL Server database.</span></span> <span data-ttu-id="09ba8-104">このセクションは、さらにステップごとのカテゴリに分けられています。</span><span class="sxs-lookup"><span data-stu-id="09ba8-104">This section is further categorized according to each of these broader steps.</span></span>  

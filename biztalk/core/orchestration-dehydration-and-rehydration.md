@@ -1,14 +1,14 @@
 ---
-title: "オーケストレーションの退避と復元 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションの退避と復元 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 57d7c0bf-a707-4ebd-afab-e75dd80c3c34
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710617"
 ---
 # <a name="orchestration-dehydration-and-rehydration"></a><span data-ttu-id="8ca34-102">オーケストレーションの退避と復元</span><span class="sxs-lookup"><span data-stu-id="8ca34-102">Orchestration Dehydration and Rehydration</span></span>
 <span data-ttu-id="8ca34-103">長時間実行される多くのビジネス プロセスを同時に実行している場合、メモリとパフォーマンスで問題が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="8ca34-103">When many long-running business processes are running at the same time, memory and performance are potential issues.</span></span> <span data-ttu-id="8ca34-104">オーケストレーション エンジンでは、オーケストレーション インスタンスを "退避" および "復元" することで、これらの問題に対処します。</span><span class="sxs-lookup"><span data-stu-id="8ca34-104">The orchestration engine addresses these issues by "dehydrating" and "rehydrating" orchestration instances.</span></span>  

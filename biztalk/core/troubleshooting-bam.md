@@ -1,14 +1,14 @@
 ---
-title: "BAM のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: BAM のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e63299a8-5c74-4337-ba20-3213e0c6ea1f
-caps.latest.revision: 
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710257"
 ---
 # <a name="troubleshooting-bam"></a><span data-ttu-id="2d16b-102">BAM のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="2d16b-102">Troubleshooting BAM</span></span>
 <span data-ttu-id="2d16b-103">このトピックでは、ビジネス アクティビティ監視 (BAM) の使用時に生じる問題のトラブルシューティングに役立つ情報について説明します。</span><span class="sxs-lookup"><span data-stu-id="2d16b-103">This topic provides information to help you troubleshoot problems you might encounter when using Business Activity Monitoring (BAM).</span></span>  
@@ -24,7 +25,7 @@ ms.lasthandoff: 02/28/2018
 ## <a name="bam-deployment-failed"></a><span data-ttu-id="2d16b-104">BAM を展開できない</span><span class="sxs-lookup"><span data-stu-id="2d16b-104">BAM deployment failed</span></span>  
  <span data-ttu-id="2d16b-105">SQL Server Analysis Services が使用できないときにリアルタイム集計 (RTA) を含む BAM 定義を展開しようとすると、Bm.exe コマンドで次のメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="2d16b-105">If you attempt to deploy a BAM definition that includes a real-time aggregation (RTA) when SQL Server Analysis Services is not available, the Bm.exe command will display the following message:</span></span>  
   
- <span data-ttu-id="2d16b-106">エラー: BAM の展開に失敗しました。</span><span class="sxs-lookup"><span data-stu-id="2d16b-106">ERROR: BAM deployment failed.</span></span> <span data-ttu-id="2d16b-107">接続できません。</span><span class="sxs-lookup"><span data-stu-id="2d16b-107">A connection cannot be made.</span></span> <span data-ttu-id="2d16b-108">サーバーが実行中であることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="2d16b-108">Ensure that the server is running.</span></span> <span data-ttu-id="2d16b-109">対象のコンピューターによって拒否されたため接続は行われません *\<IP アドレス\>*です。</span><span class="sxs-lookup"><span data-stu-id="2d16b-109">No connection could be made because the target machine actively refused it *\<IP address\>*.</span></span>  
+ <span data-ttu-id="2d16b-106">エラー: BAM の展開に失敗しました。</span><span class="sxs-lookup"><span data-stu-id="2d16b-106">ERROR: BAM deployment failed.</span></span> <span data-ttu-id="2d16b-107">接続できません。</span><span class="sxs-lookup"><span data-stu-id="2d16b-107">A connection cannot be made.</span></span> <span data-ttu-id="2d16b-108">サーバーが実行中であることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="2d16b-108">Ensure that the server is running.</span></span> <span data-ttu-id="2d16b-109">対象のコンピューターによって拒否されたため接続は行われません *\<IP アドレス\>* です。</span><span class="sxs-lookup"><span data-stu-id="2d16b-109">No connection could be made because the target machine actively refused it *\<IP address\>*.</span></span>  
   
  <span data-ttu-id="2d16b-110">このエラーは、SQL Server Analysis Services がインストールされ構成済みであり、RTA を含む BAM 定義を展開するために実行されている必要があるために発生します。</span><span class="sxs-lookup"><span data-stu-id="2d16b-110">This occurs because SQL Server Analysis Services must have been installed and configured, and must be running in order to deploy a BAM definition that includes an RTA.</span></span>  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 02/28/2018
   
 4.  <span data-ttu-id="2d16b-118">**アドイン**  ウィンドウで、をクリックして **移動**します。</span><span class="sxs-lookup"><span data-stu-id="2d16b-118">In the **Add-Ins** pane, click **Go**.</span></span>  
   
-5.  <span data-ttu-id="2d16b-119">**アドイン** ダイアログ ボックスで、 **ビジネス アクティビティ監視** チェック ボックスをオンにし **[ok]**します。</span><span class="sxs-lookup"><span data-stu-id="2d16b-119">In the **Add-Ins** dialog box, select the **Business Activity Monitoring** check box, and then click **OK**.</span></span>  
+5.  <span data-ttu-id="2d16b-119">**アドイン** ダイアログ ボックスで、 **ビジネス アクティビティ監視** チェック ボックスをオンにし **[ok]** します。</span><span class="sxs-lookup"><span data-stu-id="2d16b-119">In the **Add-Ins** dialog box, select the **Business Activity Monitoring** check box, and then click **OK**.</span></span>  
   
      <span data-ttu-id="2d16b-120">![追加 (& a) #45; アドイン ダイアログ ボックス](../core/media/addins.gif "AddIns")</span><span class="sxs-lookup"><span data-stu-id="2d16b-120">![Add&#45;Ins dialog box](../core/media/addins.gif "AddIns")</span></span>  
   
@@ -122,7 +123,7 @@ Failed to get data.  If available, errors returned from the provider are listed 
   
 4.  <span data-ttu-id="2d16b-160">**Local Area Connection**  ページで、 **インターネット プロトコル バージョン 4 (Tcp/ipv4)**, 、 をクリック **プロパティ**します。</span><span class="sxs-lookup"><span data-stu-id="2d16b-160">On the **Local Area Connection** page, select **Internet Protocol Version 4 (TCP/IPv4)**, and click **Properties**.</span></span>  
   
-5.  <span data-ttu-id="2d16b-161">**[詳細設定]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d16b-161">Click **Advanced**.</span></span> <span data-ttu-id="2d16b-162">**TCP/IP 詳細設定** ページで、クリックして、 **DNS**  タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d16b-162">On the **Advance TCP/IP Settings** page, click the **DNS** tab.</span></span>  
+5.  <span data-ttu-id="2d16b-161">**[詳細設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d16b-161">Click **Advanced**.</span></span> <span data-ttu-id="2d16b-162">**TCP/IP 詳細設定** ページで、クリックして、 **DNS**  タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d16b-162">On the **Advance TCP/IP Settings** page, click the **DNS** tab.</span></span>  
   
 6.  <span data-ttu-id="2d16b-163">選択 **これらの DNS サフィックスを追加する** し、必要な DNS サフィックスを追加します。</span><span class="sxs-lookup"><span data-stu-id="2d16b-163">Select **Append these DNS suffixes** and then add the required DNS suffixes.</span></span>  
   

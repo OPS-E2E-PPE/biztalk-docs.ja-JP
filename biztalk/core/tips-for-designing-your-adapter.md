@@ -1,14 +1,14 @@
 ---
-title: "アダプターのデザインに関するヒント |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターのデザインに関するヒント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0bb60988-4e48-4654-9cf4-512dd7c97239
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279866"
 ---
 # <a name="tips-for-designing-your-adapter"></a><span data-ttu-id="3aa6f-102">アダプターのデザインに関するヒント</span><span class="sxs-lookup"><span data-stu-id="3aa6f-102">Tips for Designing Your Adapter</span></span>
 <span data-ttu-id="3aa6f-103">ここでは、アダプターをデザインする間にアダプターの開発者が習得したヒントについて説明します。</span><span class="sxs-lookup"><span data-stu-id="3aa6f-103">This section contains hints and tips that adapter developers have learned while designing adapters.</span></span>  
@@ -26,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="3aa6f-107">問題の原因は、ランタイムに対して提示される値がオーバーライドされるかどうかが不明であることです。</span><span class="sxs-lookup"><span data-stu-id="3aa6f-107">The problem comes with not knowing whether the value presented to the runtime is to be overridden or not.</span></span> <span data-ttu-id="3aa6f-108">通常は、値に対して NULL の概念を定義しておき、その値に対してテストを実行します。</span><span class="sxs-lookup"><span data-stu-id="3aa6f-108">The typical way of doing this is to have some notion of NULL defined for values and then run a test against that value.</span></span> <span data-ttu-id="3aa6f-109">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で XSD ベースのプロパティ シートを使用するときの問題は、NULL は文字列でのみサポートされるということです。</span><span class="sxs-lookup"><span data-stu-id="3aa6f-109">The problem when using the XSD-based property sheets in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is that NULL is only supported for strings.</span></span> <span data-ttu-id="3aa6f-110">この NULL テストを使用することによってアダプターに既定の設定値を指定し、アダプターの設定の種類を文字列型に制限しようとした場合も、ユーザー インターフェイスが不適切に表示される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="3aa6f-110">Even if you want your adapter to have default settings through the use of this NULL test and are willing to restrict the adapter to string types, it is still exposed to a very odd piece of user interface.</span></span>  
   
- <span data-ttu-id="3aa6f-111">XSD 生成プロパティ シートのみをサポートして、NULL に戻すプロパティの設定をこの時点では、プロパティを右クリックして、**交わした?**コンテキスト メニューが表示され、プロパティを NULL に設定することができます。</span><span class="sxs-lookup"><span data-stu-id="3aa6f-111">The XSD-generated property sheets only support the setting of a property back to NULL by right-clicking the property, at which point a **nullify?** context menu appears and the property can be set to NULL.</span></span> <span data-ttu-id="3aa6f-112">プロパティが NULL であるかどうかについての視覚的なフィードバックはありません。</span><span class="sxs-lookup"><span data-stu-id="3aa6f-112">There is no visual feedback as to whether a property is NULL.</span></span>  
+ <span data-ttu-id="3aa6f-111">XSD 生成プロパティ シートのみをサポートして、NULL に戻すプロパティの設定をこの時点では、プロパティを右クリックして、**交わした?** コンテキスト メニューが表示され、プロパティを NULL に設定することができます。</span><span class="sxs-lookup"><span data-stu-id="3aa6f-111">The XSD-generated property sheets only support the setting of a property back to NULL by right-clicking the property, at which point a **nullify?** context menu appears and the property can be set to NULL.</span></span> <span data-ttu-id="3aa6f-112">プロパティが NULL であるかどうかについての視覚的なフィードバックはありません。</span><span class="sxs-lookup"><span data-stu-id="3aa6f-112">There is no visual feedback as to whether a property is NULL.</span></span>  
   
 ## <a name="considerations-for-implementing-schema-generation-wizards"></a><span data-ttu-id="3aa6f-113">スキーマ生成ウィザードを実装する際の考慮事項</span><span class="sxs-lookup"><span data-stu-id="3aa6f-113">Considerations for Implementing Schema Generation Wizards</span></span>  
  <span data-ttu-id="3aa6f-114">プログラマは、厳密に型指定されたオブジェクト モデルに逆らう形でコードを作成します。</span><span class="sxs-lookup"><span data-stu-id="3aa6f-114">Programmers like to code against strongly typed object models.</span></span> <span data-ttu-id="3aa6f-115">コードで XML を操作するのは、最初のうちは作業しづらく、エラーの発生を招くことがあります。</span><span class="sxs-lookup"><span data-stu-id="3aa6f-115">Manipulating XML in code can at first seem awkward and prone to error.</span></span> <span data-ttu-id="3aa6f-116">ただし、コツや .NET Framework によって提供されているサポートを適切に使用することによって、劇的に簡単になることがあります。</span><span class="sxs-lookup"><span data-stu-id="3aa6f-116">But some tricks and smart use of the support offered by the .NET Framework can dramatically simplify matters.</span></span>  

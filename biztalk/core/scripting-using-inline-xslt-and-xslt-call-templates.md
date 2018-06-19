@@ -1,14 +1,14 @@
 ---
-title: "インライン XSLT および XSLT 呼び出しテンプレートを使用するスクリプト |Microsoft ドキュメント"
-ms.custom: 
+title: インライン XSLT および XSLT 呼び出しテンプレートを使用するスクリプト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e3168417-3653-4c9e-a09c-184ffdc0ccb2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270434"
 ---
 # <a name="scripting-using-inline-xslt-and-xslt-call-templates"></a><span data-ttu-id="d765b-102">インライン XSLT および XSLT 呼び出しテンプレートを使用するスクリプト</span><span class="sxs-lookup"><span data-stu-id="d765b-102">Scripting Using Inline XSLT and XSLT Call Templates</span></span>
 <span data-ttu-id="d765b-103">使用するための Extensible Stylesheet Language 変換 (XSLT) スタイル シートを直接書き込むことができます、**スクリプト**functoid です。</span><span class="sxs-lookup"><span data-stu-id="d765b-103">You can directly write Extensible Stylesheet Language Transformations (XSLT) stylesheets for use in the **Scripting** functoid.</span></span> <span data-ttu-id="d765b-104">これにより、変換を実行できます。ただし、リンクと組み込みの Functoid は、表現できない場合があります。</span><span class="sxs-lookup"><span data-stu-id="d765b-104">This enables you to perform transformations, that links and built-in functoids may not be able to represent.</span></span> <span data-ttu-id="d765b-105">XSLT スクリプトの 2 種類があります: インライン XSLT および XSLT 呼び出しテンプレート。</span><span class="sxs-lookup"><span data-stu-id="d765b-105">There are two kinds of XSLT scripts: inline XSLT and XSLT call templates.</span></span> <span data-ttu-id="d765b-106">いずれかを選択すると、**スクリプトの種類を選択して**ドロップダウン リストで、**スクリプト Functoid の構成**ダイアログ ボックスで、使用できる、サンプル コードが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d765b-106">When you select either in the **Select script type** dropdown in the **Configure Scripting Functoid** dialog box, sample code appears that you may use.</span></span>  

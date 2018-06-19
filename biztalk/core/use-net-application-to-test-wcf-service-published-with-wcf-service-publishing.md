@@ -1,11 +1,11 @@
 ---
-title: "BizTalk WCF サービス公開ウィザードで公開した WCF サービスをテストするための .NET アプリケーションを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk WCF サービス公開ウィザードで公開した WCF サービスをテストするための .NET アプリケーションを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF services, .NET applications
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - creating, .NET applications [WCF services]
 - WCF Service Publishing Wizard
 ms.assetid: 17e39db2-8471-4f6f-a7f1-833023cdbc39
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287234"
 ---
 # <a name="how-to-create-a-net-application-to-test-a-wcf-service-published-with-the-biztalk-wcf-service-publishing-wizard"></a><span data-ttu-id="e7b8a-102">.NET アプリケーションを作成して、BizTalk WCF サービス公開ウィザードで公開した WCF サービスをテストする方法</span><span class="sxs-lookup"><span data-stu-id="e7b8a-102">How to Create a .NET Application to Test a WCF Service Published with the BizTalk WCF Service Publishing Wizard</span></span>
 <span data-ttu-id="e7b8a-103">公開済みの WCF サービスをテストするには、公開済みの WCF サービスを使用する .NET アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="e7b8a-103">To test your published WCF service, you can create a .NET application that consumes your published WCF service.</span></span> <span data-ttu-id="e7b8a-104">このトピックでは、.NET アプリケーションを作成して、公開済みの WCF サービスをテストする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="e7b8a-104">This topic describes how to create a .NET application to test a published WCF service.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "サポートされていないセキュリティ アルゴリズム スイート |Microsoft ドキュメント"
-ms.custom: 
+title: サポートされていないセキュリティ アルゴリズム スイート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 11696fed-c3a8-4b11-8249-9f99f7abc8f2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286906"
 ---
 # <a name="unsupported-security-algorithm-suite"></a><span data-ttu-id="ab198-102">セキュリティ アルゴリズム スイートがサポートされていません</span><span class="sxs-lookup"><span data-stu-id="ab198-102">Unsupported security algorithm suite</span></span>
 ## <a name="details"></a><span data-ttu-id="ab198-103">詳細</span><span class="sxs-lookup"><span data-stu-id="ab198-103">Details</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="ab198-123">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="ab198-123">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="ab198-124">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab198-124">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="ab198-124">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab198-124">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="ab198-125">ポート**型**一覧で、 **Wcf-nettcp**です。</span><span class="sxs-lookup"><span data-stu-id="ab198-125">In the port **Type** list, select **WCF-NetTcp**.</span></span>  
   

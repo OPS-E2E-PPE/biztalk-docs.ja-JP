@@ -1,14 +1,14 @@
 ---
-title: "手順 2: BizTalk オーケストレーションのメッセージを作成する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: BizTalk オーケストレーションのメッセージを作成する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47a4fb98-6085-4aeb-ab39-2f2c3858d4e0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226114"
 ---
 # <a name="step-2-create-messages-for-biztalk-orchestrations"></a><span data-ttu-id="040d3-102">手順 2: BizTalk オーケストレーションのメッセージを作成します。</span><span class="sxs-lookup"><span data-stu-id="040d3-102">Step 2: Create Messages for BizTalk Orchestrations</span></span>
 <span data-ttu-id="040d3-103">![手順 2 の 2](../../adapters-and-accelerators/adapter-sql/media/step-2of2.gif "Step_2of2")</span><span class="sxs-lookup"><span data-stu-id="040d3-103">![Step 2 of 2](../../adapters-and-accelerators/adapter-sql/media/step-2of2.gif "Step_2of2")</span></span>  
   
  <span data-ttu-id="040d3-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="040d3-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="040d3-105">**目標:**このステップでオーケストレーションを BizTalk プロジェクトに追加およびで生成したスキーマのメッセージを作成[手順 1: 操作のスキーマの生成](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md)です。</span><span class="sxs-lookup"><span data-stu-id="040d3-105">**Objective:** In this step, you add an orchestration to the BizTalk project and create messages for the schemas you generated in [Step 1: Generate Schema for Operations](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md).</span></span>  
+ <span data-ttu-id="040d3-105">**目標:** このステップでオーケストレーションを BizTalk プロジェクトに追加およびで生成したスキーマのメッセージを作成[手順 1: 操作のスキーマの生成](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md)です。</span><span class="sxs-lookup"><span data-stu-id="040d3-105">**Objective:** In this step, you add an orchestration to the BizTalk project and create messages for the schemas you generated in [Step 1: Generate Schema for Operations](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md).</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="040d3-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="040d3-106">Prerequisites</span></span>  
  <span data-ttu-id="040d3-107">完了する必要があります[手順 1: 操作のスキーマの生成](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md)です。</span><span class="sxs-lookup"><span data-stu-id="040d3-107">You must have completed [Step 1: Generate Schema for Operations](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md).</span></span>  

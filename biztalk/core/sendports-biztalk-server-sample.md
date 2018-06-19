@@ -1,14 +1,14 @@
 ---
-title: "SendPorts (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: SendPorts (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b84f96a2-b749-4fe0-be15-e4dd13eff66f
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975368"
 ---
 # <a name="sendports-biztalk-server-sample"></a><span data-ttu-id="b1b80-102">SendPorts (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="b1b80-102">SendPorts (BizTalk Server Sample)</span></span>
 <span data-ttu-id="b1b80-103">SendPorts サンプルを列挙しを使用して送信ポートを管理する方法を示します、 **Microsoft.BizTalk.ExplorerOM**管理クラスです。</span><span class="sxs-lookup"><span data-stu-id="b1b80-103">The SendPorts sample demonstrates how to enumerate and manage send ports by using the **Microsoft.BizTalk.ExplorerOM** administration classes.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "X12 トランザクション セットの SE01 に一致しないカウントが |Microsoft ドキュメント"
-ms.custom: 
+title: X12 トランザクション セットの SE01 に一致しないカウントが |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a90079f5-5939-40b6-9756-d7943240c125
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278706"
 ---
 # <a name="the-x12-transaction-set-had-a-mismatched-count-in-se01"></a><span data-ttu-id="ccf1f-102">X12 トランザクション セットの SE01 に一致しないカウントがあります</span><span class="sxs-lookup"><span data-stu-id="ccf1f-102">The X12 Transaction set had a mismatched count in SE01</span></span>
 ## <a name="details"></a><span data-ttu-id="ccf1f-103">詳細</span><span class="sxs-lookup"><span data-stu-id="ccf1f-103">Details</span></span>  

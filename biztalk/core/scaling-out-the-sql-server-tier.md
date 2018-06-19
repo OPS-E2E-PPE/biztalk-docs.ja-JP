@@ -1,11 +1,11 @@
 ---
-title: "SQL Server 層のスケール アウト |Microsoft ドキュメント"
-ms.custom: 
+title: SQL Server 層のスケール アウト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - scaling, MessageBox database
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - MessageBox database, scaling
 - scaling, strategies
 ms.assetid: d5b2ebba-401e-4fde-8818-407fa626043a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272354"
 ---
 # <a name="scaling-out-the-sql-server-tier"></a><span data-ttu-id="63ef0-102">SQL Server 層のスケール アウト</span><span class="sxs-lookup"><span data-stu-id="63ef0-102">Scaling Out the SQL Server Tier</span></span>
 <span data-ttu-id="63ef0-103">各 BizTalk グループには、マスター メッセージ ボックス データベースを 1 つ追加します。</span><span class="sxs-lookup"><span data-stu-id="63ef0-103">For each BizTalk group, you add one Master MessageBox database.</span></span> <span data-ttu-id="63ef0-104">以降追加したメッセージ ボックス データベースはすべて、セカンダリ メッセージ ボックスと呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="63ef0-104">All the subsequent MessageBox databases that you add are called secondary MessageBoxes.</span></span> <span data-ttu-id="63ef0-105">マスター メッセージ ボックスは、すべてのサブスクリプションとメッセージ ルーティングを処理し、</span><span class="sxs-lookup"><span data-stu-id="63ef0-105">The Master MessageBox handles all subscriptions and message routing.</span></span> <span data-ttu-id="63ef0-106">メッセージの公開も行えます。</span><span class="sxs-lookup"><span data-stu-id="63ef0-106">It can also publish messages.</span></span> <span data-ttu-id="63ef0-107">セカンダリ メッセージ ボックス データベースは、特定の構成を行った場合にのみ、メッセージを公開します。</span><span class="sxs-lookup"><span data-stu-id="63ef0-107">Secondary MessageBox databases will only publish messages when specifically configured to do so.</span></span>  

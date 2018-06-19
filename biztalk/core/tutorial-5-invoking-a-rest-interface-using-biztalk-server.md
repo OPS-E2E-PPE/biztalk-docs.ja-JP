@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル 5: BizTalk Server を使用して REST インターフェイスの呼び出し |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル 5: BizTalk Server を使用して REST インターフェイスの呼び出し |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 73871ca3-abd0-45ae-b379-6df76a967a80
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287298"
 ---
 # <a name="tutorial-5-invoking-a-rest-interface-using-biztalk-server"></a><span data-ttu-id="4a431-102">チュートリアル 5: BizTalk Server を使用して REST インターフェイスの呼び出し</span><span class="sxs-lookup"><span data-stu-id="4a431-102">Tutorial 5: Invoking a REST Interface Using BizTalk Server</span></span>
 <span data-ttu-id="4a431-103">このセクションでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して REST エンドポイントを呼び出す方法の手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="4a431-103">This section provides a step-by-step walkthrough on how to invoke a REST endpoint using [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="4a431-104">このチュートリアルでは、[!INCLUDE[winazure](../includes/winazure-md.md)] Marketplace から入手できる、米国航空会社のフライトの遅延を返す REST エンドポイントを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="4a431-104">In this tutorial you invoke a REST endpoint available from the [!INCLUDE[winazure](../includes/winazure-md.md)] Marketplace that returns the delays in flights of US air carriers.</span></span> <span data-ttu-id="4a431-105">チュートリアルを使用して、新しい**Wcf-webhttp**でアダプターが導入された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を REST エンドポイントを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="4a431-105">The tutorial uses the new **WCF-WebHttp** adapter introduced in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to invoke the REST endpoint.</span></span>  

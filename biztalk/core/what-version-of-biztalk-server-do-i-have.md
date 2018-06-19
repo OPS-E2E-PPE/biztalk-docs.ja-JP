@@ -1,14 +1,14 @@
 ---
-title: "ご使用の BizTalk Server のバージョンを確認する方法 | Microsoft Docs"
-ms.custom: 
+title: ご使用の BizTalk Server のバージョンを確認する方法 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cb651202-f682-4e5f-8a79-221877af20a7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288850"
 ---
 # <a name="what-version-of-biztalk-server-do-i-have"></a><span data-ttu-id="3d985-103">ご使用の BizTalk Server のバージョンを確認する方法</span><span class="sxs-lookup"><span data-stu-id="3d985-103">What Version of BizTalk Server Do I Have?</span></span>
 <span data-ttu-id="3d985-104">別のバージョンと異なるエディションを実行して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="3d985-104">You may be running different versions and different editions of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="3d985-105">このトピックで説明する方法を決定する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストールについては、バージョン番号、エディション、およびインストール パスを含むです。</span><span class="sxs-lookup"><span data-stu-id="3d985-105">This topic shows you how to determine [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation information, including the version number, edition, and installation path.</span></span>  

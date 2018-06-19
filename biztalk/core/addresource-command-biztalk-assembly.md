@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c18607b5-d929-48c9-9fa3-f728a7a80d04
-caps.latest.revision: ''
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22231826"
 ---
 # <a name="addresource-command-biztalk-assembly"></a><span data-ttu-id="6ecc5-102">AddResource コマンド: BizTalk アセンブリ</span><span class="sxs-lookup"><span data-stu-id="6ecc5-102">AddResource Command: BizTalk Assembly</span></span>
 <span data-ttu-id="6ecc5-103">使用する BizTalk アセンブリを BizTalk アプリケーションを追加する、 **AddResource** コマンドを指定 **System.BizTalk:BizTalkAssembly** 、型パラメーターです。</span><span class="sxs-lookup"><span data-stu-id="6ecc5-103">To add a BizTalk assembly to a BizTalk application, you use the **AddResource** command and specify **System.BizTalk:BizTalkAssembly** for the Type parameter.</span></span> <span data-ttu-id="6ecc5-104">このコマンドを実行すると、該当するアセンブリが BizTalk 管理データベースに追加されます。</span><span class="sxs-lookup"><span data-stu-id="6ecc5-104">Running this command adds the assembly to the BizTalk Management database.</span></span> <span data-ttu-id="6ecc5-105">アセンブリは、BizTalk Server 管理コンソール (追加先アプリケーションのリソース フォルダー) にも表示されます。</span><span class="sxs-lookup"><span data-stu-id="6ecc5-105">The assembly is also displayed in the BizTalk Server Administration console, in the Resources folder of the application to which you added it.</span></span> <span data-ttu-id="6ecc5-106">また、アセンブリに含まれているアイテムが個々のフォルダーに表示されます。</span><span class="sxs-lookup"><span data-stu-id="6ecc5-106">The artifacts included in the assembly are also displayed in the appropriate folders.</span></span> <span data-ttu-id="6ecc5-107">使用するときにさらに、アイテムが一覧表示、 [ListApp コマンド](../core/listapp-command.md)です。</span><span class="sxs-lookup"><span data-stu-id="6ecc5-107">In addition, the artifacts are listed when you use the [ListApp Command](../core/listapp-command.md).</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 03/23/2018
  <span data-ttu-id="6ecc5-116">依存関係に関する詳細については、次を参照してください。[の依存関係とアプリケーションの配置](../core/dependencies-and-application-deployment.md)です。</span><span class="sxs-lookup"><span data-stu-id="6ecc5-116">For more information about dependencies, see [Dependencies and Application Deployment](../core/dependencies-and-application-deployment.md).</span></span>  
   
 ## <a name="usage"></a><span data-ttu-id="6ecc5-117">使用方法</span><span class="sxs-lookup"><span data-stu-id="6ecc5-117">Usage</span></span>  
- <span data-ttu-id="6ecc5-118">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:BizTalkAssembly** [**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**] [**/Server:***value*] [**/Database:***value*]</span><span class="sxs-lookup"><span data-stu-id="6ecc5-118">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:BizTalkAssembly** [**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**] [**/Server:***value*] [**/Database:***value*]</span></span>  
+ <span data-ttu-id="6ecc5-118">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:BizTalkAssembly** [**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **] [**/Server:***value*] [**/Database:*** value*]</span><span class="sxs-lookup"><span data-stu-id="6ecc5-118">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:BizTalkAssembly** [**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **] [**/Server:***value*] [**/Database:*** value*]</span></span>  
   
 ## <a name="parameters"></a><span data-ttu-id="6ecc5-119">パラメーター</span><span class="sxs-lookup"><span data-stu-id="6ecc5-119">Parameters</span></span>  
   

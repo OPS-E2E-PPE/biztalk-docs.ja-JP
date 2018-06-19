@@ -1,14 +1,14 @@
 ---
-title: "X12 997 受信確認 |Microsoft ドキュメント"
-ms.custom: 
+title: X12 997 受信確認 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62a352fb-635c-4f0e-9844-4b250159333d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290890"
 ---
 # <a name="x12-997-acknowledgment"></a><span data-ttu-id="b68ff-102">X12 997 受信確認</span><span class="sxs-lookup"><span data-stu-id="b68ff-102">X12 997 Acknowledgment</span></span>
 <span data-ttu-id="b68ff-103">X12 997 機能確認は、受信されたインターチェンジの状態を報告します。</span><span class="sxs-lookup"><span data-stu-id="b68ff-103">The X12 997 functional acknowledgment reports the status of a received interchange.</span></span> <span data-ttu-id="b68ff-104">受信したドキュメントの処理中に発生した各エラーが報告されます。</span><span class="sxs-lookup"><span data-stu-id="b68ff-104">It reports each error encountered while processing the received document.</span></span> <span data-ttu-id="b68ff-105">BizTalk EDI 受信パイプラインは、常に 4010 準拠の 997 を生成します。ただし、EDI 受信パイプラインおよび EDI 送信パイプラインは、5010 準拠の 997 も検証できます。</span><span class="sxs-lookup"><span data-stu-id="b68ff-105">BizTalk EDI Receive pipeline always generates a 4010 compliant 997; however, EDI Receive pipeline and EDI Send pipelines can also validate a 5010 compliant 997.</span></span>  

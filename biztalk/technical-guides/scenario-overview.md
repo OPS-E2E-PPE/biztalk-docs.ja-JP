@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac14328d-c373-49da-a899-4b3ca7d6dc0a
-caps.latest.revision: ''
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26010099"
 ---
 # <a name="scenario-overview"></a><span data-ttu-id="c763f-102">シナリオの概要</span><span class="sxs-lookup"><span data-stu-id="c763f-102">Scenario Overview</span></span>
 <span data-ttu-id="c763f-103">このトピックでは、最新エンタープライズ クラスのハードウェアで実行されているときに、BizTalk Server のスケーラビリティを評価する製品のグループ、BizTalk Server によって完了したのロード テストの概要を示します。</span><span class="sxs-lookup"><span data-stu-id="c763f-103">This topic provides an overview of load testing completed by the BizTalk Server product group to assess scalability of BizTalk Server when running on modern enterprise class hardware.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "メッセージの受信者の承認 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの受信者の承認 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - receive authorization
 - messages, security
 ms.assetid: c0cdb3ef-ee8e-40a1-9362-13cd26495951
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230746"
 ---
 # <a name="authorizing-the-receiver-of-a-message"></a><span data-ttu-id="f8f61-102">メッセージの受信者の承認</span><span class="sxs-lookup"><span data-stu-id="f8f61-102">Authorizing the Receiver of a Message</span></span>
 <span data-ttu-id="f8f61-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、メッセージの受信を承認する対象のプロセスとパーティを制限できます。</span><span class="sxs-lookup"><span data-stu-id="f8f61-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] enables you to limit the processes and parties that you authorize to receive messages.</span></span>  
@@ -42,9 +43,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="receive-authorization"></a><span data-ttu-id="f8f61-115">受信認証</span><span class="sxs-lookup"><span data-stu-id="f8f61-115">Receive Authorization</span></span>  
  <span data-ttu-id="f8f61-116">受信認証は、指定したメッセージを受信 (サブスクライブ) できるホストの制御に使用します。</span><span class="sxs-lookup"><span data-stu-id="f8f61-116">Receive authorization is the method you can use to control which hosts can receive (subscribe for) a given message.</span></span> <span data-ttu-id="f8f61-117">一致するように、サブスクリプションのプロパティがメッセージの述語として BizTalk Server は、証明書情報を使用して: メッセージ ボックス データベースだけをそのメッセージの暗号化解除証明書を持つホストに必要な承認とマークされたメッセージをルーティングします。</span><span class="sxs-lookup"><span data-stu-id="f8f61-117">BizTalk Server uses the certificate information as a subscription property to match predicates on the message: the MessageBox database only routes messages marked as authorization required to the hosts that have the decryption certificate for that message.</span></span> <span data-ttu-id="f8f61-118">次のシナリオを使用してプロセスを説明します。</span><span class="sxs-lookup"><span data-stu-id="f8f61-118">To illustrate the process, consider the following scenarios:</span></span>  
   
--   <span data-ttu-id="f8f61-119">**暗号化されていないメッセージのルーティング:**ときの BizTalk Server は、送信者が暗号化されていないメッセージを受け取り、BizTalk がメッセージをルーティングする方法についての復号化の制限はありません。</span><span class="sxs-lookup"><span data-stu-id="f8f61-119">**Routing an un-encrypted message:** When BizTalk Server receives a message that the sender did not encrypt, there is no decryption limitation as to how BizTalk routes the message.</span></span> <span data-ttu-id="f8f61-120">受信認証証明書が構成されているホストと受信承認証明書が構成されていないホストの両方でメッセージを受信できます。</span><span class="sxs-lookup"><span data-stu-id="f8f61-120">Both hosts with and hosts without receive authorization certificates configured can receive the message.</span></span>  
+-   <span data-ttu-id="f8f61-119">**暗号化されていないメッセージのルーティング:** ときの BizTalk Server は、送信者が暗号化されていないメッセージを受け取り、BizTalk がメッセージをルーティングする方法についての復号化の制限はありません。</span><span class="sxs-lookup"><span data-stu-id="f8f61-119">**Routing an un-encrypted message:** When BizTalk Server receives a message that the sender did not encrypt, there is no decryption limitation as to how BizTalk routes the message.</span></span> <span data-ttu-id="f8f61-120">受信認証証明書が構成されているホストと受信承認証明書が構成されていないホストの両方でメッセージを受信できます。</span><span class="sxs-lookup"><span data-stu-id="f8f61-120">Both hosts with and hosts without receive authorization certificates configured can receive the message.</span></span>  
   
--   <span data-ttu-id="f8f61-121">**暗号化されたメッセージのルーティング:**暗号化されたメッセージが到着すると、受信パイプラインは、メッセージを解読するデコード コンポーネントを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="f8f61-121">**Routing an encrypted message:** When an encrypted message arrives, the receiving pipeline must contain a decoding component that decrypts the message.</span></span> <span data-ttu-id="f8f61-122">BizTalk Server でメッセージが解読されルーティングされるときに、メッセージ ボックス データベースのサブスクリプション メカニズムでは、メッセージの解読に使用された証明書の拇印が証拠として使用されます。この証明書が構成されているホストのみがメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="f8f61-122">When BizTalk Server routes a message after it is decrypted, BizTalk uses the certificate thumbprint used to decrypt the message as evidence in the MessageBox database subscription mechanism, and only those hosts configured with that certificate receive the message.</span></span>  
+-   <span data-ttu-id="f8f61-121">**暗号化されたメッセージのルーティング:** 暗号化されたメッセージが到着すると、受信パイプラインは、メッセージを解読するデコード コンポーネントを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="f8f61-121">**Routing an encrypted message:** When an encrypted message arrives, the receiving pipeline must contain a decoding component that decrypts the message.</span></span> <span data-ttu-id="f8f61-122">BizTalk Server でメッセージが解読されルーティングされるときに、メッセージ ボックス データベースのサブスクリプション メカニズムでは、メッセージの解読に使用された証明書の拇印が証拠として使用されます。この証明書が構成されているホストのみがメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="f8f61-122">When BizTalk Server routes a message after it is decrypted, BizTalk uses the certificate thumbprint used to decrypt the message as evidence in the MessageBox database subscription mechanism, and only those hosts configured with that certificate receive the message.</span></span>  
   
  <span data-ttu-id="f8f61-123">受信認証を使用する場合は、メッセージの受信を承認するホストのプロパティに解読証明書の拇印を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f8f61-123">If you want to use receive authorization, you must provide the thumbprint of the decryption certificate in the properties of the host that you want to authorize to receive the message.</span></span> <span data-ttu-id="f8f61-124">詳細については、承認を受け取るを参照してください[ホストのプロパティを変更する方法](../core/how-to-modify-host-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="f8f61-124">For more information about receive authorization, see [How to Modify Host Properties](../core/how-to-modify-host-properties.md).</span></span>  
   

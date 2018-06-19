@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server メッセージング エンジン |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server メッセージング エンジン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c0c8d3e6-953d-4a04-adfc-b77ef7173464
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279266"
 ---
 # <a name="the-biztalk-server-messaging-engine"></a><span data-ttu-id="42160-102">BizTalk Server メッセージング エンジン</span><span class="sxs-lookup"><span data-stu-id="42160-102">The BizTalk Server Messaging Engine</span></span>
 <span data-ttu-id="42160-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージング エンジンでは、ユーザーが複数のアプリケーションにまたがるビジネス プロセスを作成できるように、次の 2 つの重要機能が提供されます。</span><span class="sxs-lookup"><span data-stu-id="42160-103">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Messaging engine enables users to create business processes that spans multiple applications by providing two primary things:</span></span>  

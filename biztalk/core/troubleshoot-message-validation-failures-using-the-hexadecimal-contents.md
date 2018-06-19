@@ -1,14 +1,14 @@
 ---
-title: "保留メッセージの 16 進数の内容を表示することによってメッセージの検証エラーのトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: 保留メッセージの 16 進数の内容を表示することによってメッセージの検証エラーのトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5cf14cd9-2d4b-43a3-9738-52bfd879e1e4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279570"
 ---
 # <a name="troubleshooting-message-validation-failures-by-viewing-the-hexadecimal-contents-of-suspended-messages"></a><span data-ttu-id="bd360-102">保留メッセージの 16 進数コンテンツの確認によるメッセージ検証エラーのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="bd360-102">Troubleshooting Message Validation Failures by Viewing the Hexadecimal Contents of Suspended Messages</span></span>
 <span data-ttu-id="bd360-103">メッセージが検証エラーにより保留された場合は、メッセージ部分を 16 進表現にして確認すると検証エラーの原因の特定に役立つことがあります。</span><span class="sxs-lookup"><span data-stu-id="bd360-103">If a message is suspended due to validation failures, it may be helpful to view the hexadecimal representation of the message parts to determine the cause of the validation failure.</span></span> <span data-ttu-id="bd360-104">このトピックでは、保留メッセージのメッセージ部分を 16 進表現で表示する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="bd360-104">This topic lists steps that can be followed to view the hexadecimal representation of the parts of a suspended message.</span></span>  

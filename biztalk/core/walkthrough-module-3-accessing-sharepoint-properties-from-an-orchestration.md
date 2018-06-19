@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, Windows SharePoint Services adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Windows SharePoint Services adapters, orchestrations
 - Windows SharePoint Services adapter tutorials, accessing SharePoint properties
 ms.assetid: 310c4002-3416-44c6-b409-1d5467063e28
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010963"
 ---
 # <a name="walkthrough-module-3---accessing-sharepoint-properties-from-an-orchestration"></a><span data-ttu-id="6d2af-102">チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス</span><span class="sxs-lookup"><span data-stu-id="6d2af-102">Walkthrough: Module 3 - Accessing SharePoint Properties from an Orchestration</span></span>
 <span data-ttu-id="6d2af-103">このチュートリアルでは、継続の[チュートリアル: モジュール 2 - Windows SharePoint Services アダプターと Office の統合](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md)し、受信メッセージでの Windows SharePoint Services コンテキスト プロパティにアクセスする方法を示します実行時間とし、動的ポート、オーケストレーションでのプロパティに基づいてメッセージの送信先を判断します。</span><span class="sxs-lookup"><span data-stu-id="6d2af-103">This walkthrough is a continuation of [Walkthrough: Module 2 - Integrating Office with the Windows SharePoint Services Adapter](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md) and shows you how to access the Windows SharePoint Services context properties of an incoming message at run time and then determine the destination of that message based on a property using dynamic ports in an orchestration.</span></span> <span data-ttu-id="6d2af-104">概要については、Windows SharePoint Services アダプターを参照してください。 [Windows SharePoint Services アダプターは何ですか。](../core/what-is-the-windows-sharepoint-services-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="6d2af-104">For an introduction to the Windows SharePoint Services adapter see [What Is the Windows SharePoint Services Adapter?](../core/what-is-the-windows-sharepoint-services-adapter.md).</span></span>  
@@ -52,7 +53,7 @@ ms.lasthandoff: 12/01/2017
   
 6.  <span data-ttu-id="6d2af-119">右クリック`Amount`をクリックして**昇格**、順にクリック**クイック昇格**です。</span><span class="sxs-lookup"><span data-stu-id="6d2af-119">Right-click `Amount`, click **Promote**, and then click **Quick Promotion**.</span></span>  
   
-7.  <span data-ttu-id="6d2af-120">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-120">Click **OK**.</span></span>  
+7.  <span data-ttu-id="6d2af-120">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-120">Click **OK**.</span></span>  
   
     > [!NOTE]
     >  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]<span data-ttu-id="6d2af-121"> で、これに対応するプロパティ スキーマが現在のプロジェクト内に作成されます。</span><span class="sxs-lookup"><span data-stu-id="6d2af-121"> creates a property schema for this in the current project.</span></span>  
@@ -99,7 +100,7 @@ ms.lasthandoff: 12/01/2017
   
 6.  <span data-ttu-id="6d2af-147">**画面のポートのバインド**で、既定値のままにし、クリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="6d2af-147">On the **Port Binding screen**, leave the default values, and then click **Next**.</span></span>  
   
-7.  <span data-ttu-id="6d2af-148">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-148">Click **Finish**.</span></span>  
+7.  <span data-ttu-id="6d2af-148">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-148">Click **Finish**.</span></span>  
   
 8.  <span data-ttu-id="6d2af-149">**オーケストレーション****ポートの種類**、展開、`PurchaseOrderPT`ポートの種類。</span><span class="sxs-lookup"><span data-stu-id="6d2af-149">In **Orchestration View**, under **Port Types**, expand the `PurchaseOrderPT` port type.</span></span>  
   
@@ -149,7 +150,7 @@ ms.lasthandoff: 12/01/2017
   
 6.  <span data-ttu-id="6d2af-176">**画面のポートのバインド****ポートの通信方向** `I'll always be sending messages on this port`、順にクリック**次へ**です。</span><span class="sxs-lookup"><span data-stu-id="6d2af-176">On the **Port Binding screen**, under **Port direction of communication**, select `I'll always be sending messages on this port`, and then click **Next**.</span></span>  
   
-7.  <span data-ttu-id="6d2af-177">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-177">Click **Finish**.</span></span>  
+7.  <span data-ttu-id="6d2af-177">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-177">Click **Finish**.</span></span>  
   
 #### <a name="add-a-send-shape-to-the-orchestration"></a><span data-ttu-id="6d2af-178">オーケストレーションへの送信図形の追加</span><span class="sxs-lookup"><span data-stu-id="6d2af-178">Add a Send shape to the orchestration</span></span>  
   
@@ -183,7 +184,7 @@ ms.lasthandoff: 12/01/2017
     Message_PO(OrderProcess.PropertySchema.Amount) > 1000  
     ```  
   
-8.  <span data-ttu-id="6d2af-195">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-195">Click **OK**.</span></span>  
+8.  <span data-ttu-id="6d2af-195">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-195">Click **OK**.</span></span>  
   
 #### <a name="add-another-send-port-to-the-orchestration"></a><span data-ttu-id="6d2af-196">オーケストレーションへの別の送信ポートの追加</span><span class="sxs-lookup"><span data-stu-id="6d2af-196">Add another send port to the orchestration</span></span>  
   
@@ -201,7 +202,7 @@ ms.lasthandoff: 12/01/2017
   
 7.  <span data-ttu-id="6d2af-204">**ポートのバインド** `Dynamic`、順にクリック**次へ**です。</span><span class="sxs-lookup"><span data-stu-id="6d2af-204">Under **Port binding**, select `Dynamic`, and then click **Next**.</span></span>  
   
-8.  <span data-ttu-id="6d2af-205">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-205">Click **Finish**.</span></span>  
+8.  <span data-ttu-id="6d2af-205">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-205">Click **Finish**.</span></span>  
   
 #### <a name="add-a-send-shape-to-the-decide-shape"></a><span data-ttu-id="6d2af-206">判断図形への送信図形の追加</span><span class="sxs-lookup"><span data-stu-id="6d2af-206">Add a Send shape to the Decide shape</span></span>  
   
@@ -234,7 +235,7 @@ ms.lasthandoff: 12/01/2017
     SendToTasksList(Microsoft.XLANGs.BaseTypes.Address) = "wss://localhost/sites/WSSAdapterWalkthrough/Lists/Tasks/";  
     ```  
   
-6.  <span data-ttu-id="6d2af-223">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-223">Click **OK**.</span></span>  
+6.  <span data-ttu-id="6d2af-223">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-223">Click **OK**.</span></span>  
   
 ## <a name="construct-a-new-message"></a><span data-ttu-id="6d2af-224">新しいメッセージの構築</span><span class="sxs-lookup"><span data-stu-id="6d2af-224">Construct a new message</span></span>  
  <span data-ttu-id="6d2af-225">ここでは、ある種類のメッセージの新しいインスタンスをオーケストレーションに構築する、メッセージ構築図形をソリューションに追加します。</span><span class="sxs-lookup"><span data-stu-id="6d2af-225">In this procedure you add a Construct shape to the solution which will construct a new instance of a message type within the orchestration.</span></span> <span data-ttu-id="6d2af-226">この手順は、受信メッセージをコピーして新しいメッセージを作成し、そのコンテキスト プロパティを変更する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="6d2af-226">This procedure illustrates how to create a new message that is a copy of the inbound message and then modify the context properties of the new message.</span></span> <span data-ttu-id="6d2af-227">BizTalk 内ではメッセージは不変である、つまり、作成した後に元のメッセージに変更を加えることはできないため、この手順が必要になります。</span><span class="sxs-lookup"><span data-stu-id="6d2af-227">This step is required because messages are immutable in BizTalk; that is, once you have constructed it, you cannot modify the original.</span></span>  
@@ -267,7 +268,7 @@ ms.lasthandoff: 12/01/2017
     > [!IMPORTANT]
     >  <span data-ttu-id="6d2af-237">上記のコンテキスト プロパティに指定する値は、大文字と小文字が区別されます。</span><span class="sxs-lookup"><span data-stu-id="6d2af-237">These values supplied for these context properties are case sensitive.</span></span> <span data-ttu-id="6d2af-238">コンテキスト プロパティと動的なポートの構成値を設定するときに正しい大文字小文字を使用するか、送信ポートを BizTalk の試行を指定したドキュメントをルーティングする場合は、エラーが発生することを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6d2af-238">When setting configuration values for a dynamic port with context properties you must ensure that you use the proper case or an error will occur when BizTalk attempts to route the document to the designated send port.</span></span>  
   
-9. <span data-ttu-id="6d2af-239">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-239">Click **OK**.</span></span>  
+9. <span data-ttu-id="6d2af-239">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-239">Click **OK**.</span></span>  
   
 10. <span data-ttu-id="6d2af-240">をクリックして**ファイル**、クリックして**すべてを保存**です。</span><span class="sxs-lookup"><span data-stu-id="6d2af-240">Click **File**, and then click **Save All**.</span></span>  
   
@@ -295,7 +296,7 @@ ms.lasthandoff: 12/01/2017
   
 4.  <span data-ttu-id="6d2af-255">**受信場所のプロパティ**ダイアログ ボックスで、**全般**`XMLReceive`の**受信パイプライン**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="6d2af-255">In the **Receive Location Properties** dialog box, under **General**, select `XMLReceive` for the **Receive pipeline** property.</span></span>  
   
-5.  <span data-ttu-id="6d2af-256">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-256">Click **OK**.</span></span>  
+5.  <span data-ttu-id="6d2af-256">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-256">Click **OK**.</span></span>  
   
 #### <a name="modify-the-send-port"></a><span data-ttu-id="6d2af-257">送信ポートの変更</span><span class="sxs-lookup"><span data-stu-id="6d2af-257">Modify the send port</span></span>  
   
@@ -335,7 +336,7 @@ ms.lasthandoff: 12/01/2017
   
 6.  <span data-ttu-id="6d2af-276">**バインド**`SendToDestination`の`SendPurchaseOrder`論理送信ポート。</span><span class="sxs-lookup"><span data-stu-id="6d2af-276">Under **Bindings**, select `SendToDestination` for the `SendPurchaseOrder` Outbound Logical Port.</span></span>  
   
-7.  <span data-ttu-id="6d2af-277">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-277">Click **OK**.</span></span>  
+7.  <span data-ttu-id="6d2af-277">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-277">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="6d2af-278">右クリックして`OrderProcess.MyCompanyOrderProcessing`オーケストレーション、およびクリック**開始**です。</span><span class="sxs-lookup"><span data-stu-id="6d2af-278">Right click `OrderProcess.MyCompanyOrderProcessing` orchestration, and then click **Start**.</span></span>  
   
@@ -358,7 +359,7 @@ ms.lasthandoff: 12/01/2017
   
 7.  <span data-ttu-id="6d2af-292">**Purchase Order Date**フィールドに「`1/3/2005`です。</span><span class="sxs-lookup"><span data-stu-id="6d2af-292">In the **Purchase Order Date** field, type `1/3/2005`.</span></span>  
   
-8.  <span data-ttu-id="6d2af-293">**[保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-293">Click **Save**.</span></span>  
+8.  <span data-ttu-id="6d2af-293">**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-293">Click **Save**.</span></span>  
   
 9. <span data-ttu-id="6d2af-294">**名前を付けて保存** ダイアログ ボックスで、「`http://<server_name>/sites/WSSAdapterWalkthrough/Source`で、**ファイル名**フィールド、および ENTER キーを押します。</span><span class="sxs-lookup"><span data-stu-id="6d2af-294">In the **Save As** dialog box, type `http://<server_name>/sites/WSSAdapterWalkthrough/Source`in the **file name** field, and then press ENTER.</span></span>  
   
@@ -372,7 +373,7 @@ ms.lasthandoff: 12/01/2017
   
 14. <span data-ttu-id="6d2af-299">移行先ドキュメント ライブラリに表示されます、メッセージのこのライブラリの一覧です。</span><span class="sxs-lookup"><span data-stu-id="6d2af-299">In the Destination document library, you will now see your message listed in this library.</span></span> <span data-ttu-id="6d2af-300">アーカイブ ドキュメント ライブラリにアーカイブされたコピーも紹介します。</span><span class="sxs-lookup"><span data-stu-id="6d2af-300">You will also find a copy archived in the Archive document library.</span></span>  
   
-15. <span data-ttu-id="6d2af-301">**[ホーム]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-301">Click **Home**.</span></span>  
+15. <span data-ttu-id="6d2af-301">**[ホーム]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d2af-301">Click **Home**.</span></span>  
   
 16. <span data-ttu-id="6d2af-302">**を一覧表示**をクリックして**タスク**です。</span><span class="sxs-lookup"><span data-stu-id="6d2af-302">Under **Lists**, click **Tasks**.</span></span>  
   

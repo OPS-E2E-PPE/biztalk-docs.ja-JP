@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22271698"
 ---
 # <a name="single-sign-on-event-10708"></a><span data-ttu-id="58523-102">シングル サインオン: イベント 10708</span><span class="sxs-lookup"><span data-stu-id="58523-102">Single Sign-On: Event 10708</span></span>
 ## <a name="details"></a><span data-ttu-id="58523-103">詳細</span><span class="sxs-lookup"><span data-stu-id="58523-103">Details</span></span>  

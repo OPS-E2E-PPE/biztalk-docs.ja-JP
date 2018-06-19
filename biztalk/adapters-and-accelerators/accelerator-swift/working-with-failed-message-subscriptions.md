@@ -1,18 +1,18 @@
 ---
-title: "メッセージのサブスクリプションの失敗の操作 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージのサブスクリプションの失敗の操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - failed messages, subscriptions
 - failed messages, developing
 - developing, failed message subscriptions
 ms.assetid: 8dee0aa8-53bf-40be-866b-f1b83960dc99
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,9 +21,10 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005611"
 ---
 # <a name="working-with-failed-message-subscriptions"></a><span data-ttu-id="29f95-102">失敗したメッセージのサブスクリプションの操作</span><span class="sxs-lookup"><span data-stu-id="29f95-102">Working with Failed Message Subscriptions</span></span>
-<span data-ttu-id="29f95-103">ときに、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]逆アセンブラー プロセス (解析し、検証) メッセージ、そのメッセージのプロパティを昇格させます。</span><span class="sxs-lookup"><span data-stu-id="29f95-103">When the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] disassembler processes (parses and validates) a message, it promotes properties for that message.</span></span> <span data-ttu-id="29f95-104">これらの昇格させたプロパティは、A4SWIFT 受信バッチの一部としてメッセージを受信した場合、正しいことと、メッセージの有効性に関する情報と、バッチに関連する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="29f95-104">These promoted properties provide information about the correctness and validity of the message, as well as batch-related information if A4SWIFT received the message as part of an inbound batch.</span></span> <span data-ttu-id="29f95-105">これらのプロパティの完全な一覧を参照してください。 [A4SWIFT_ * 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="29f95-105">For a complete list of these properties, see [A4SWIFT_* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).</span></span>  
+<span data-ttu-id="29f95-103">ときに、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]逆アセンブラー プロセス (解析し、検証) メッセージ、そのメッセージのプロパティを昇格させます。</span><span class="sxs-lookup"><span data-stu-id="29f95-103">When the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] disassembler processes (parses and validates) a message, it promotes properties for that message.</span></span> <span data-ttu-id="29f95-104">これらの昇格させたプロパティは、A4SWIFT 受信バッチの一部としてメッセージを受信した場合、正しいことと、メッセージの有効性に関する情報と、バッチに関連する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="29f95-104">These promoted properties provide information about the correctness and validity of the message, as well as batch-related information if A4SWIFT received the message as part of an inbound batch.</span></span> <span data-ttu-id="29f95-105">これらのプロパティの完全な一覧を参照してください。 [A4SWIFT_ \* 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="29f95-105">For a complete list of these properties, see [A4SWIFT_\* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).</span></span>  
   
  <span data-ttu-id="29f95-106">ネイティブの BizTalk 逆アセンブラーとは異なり、A4SWIFT 逆アセンブラーはメッセージを保留できません生成エラーや失敗を処理するときにします。</span><span class="sxs-lookup"><span data-stu-id="29f95-106">Unlike native BizTalk Disassemblers, the A4SWIFT disassembler does not suspend a message when processing produces errors or failures.</span></span> <span data-ttu-id="29f95-107">代わりに、発行、失敗したメッセージをメッセージ ボックス データベースに有効なメッセージの場合と同様です。</span><span class="sxs-lookup"><span data-stu-id="29f95-107">Instead, it publishes the failed message to the MessageBox database just as it would a valid message.</span></span> <span data-ttu-id="29f95-108">その結果、失敗したメッセージはメッセージ ボックス データベースにエラーの詳細を実行できます。</span><span class="sxs-lookup"><span data-stu-id="29f95-108">As a result, failed messages can carry error details into the MessageBox database.</span></span> <span data-ttu-id="29f95-109">メッセージ ボックス データベースからメッセージを取得、処理し、メッセージの修復し、も、メッセージ ボックス データベースにメッセージを再送信します。</span><span class="sxs-lookup"><span data-stu-id="29f95-109">You can retrieve the message from the MessageBox database, handle and repair the message, and even resubmit the message back into the MessageBox database.</span></span> <span data-ttu-id="29f95-110">メッセージが実際に場合は、これらのタスクのほとんどを実行することはできません*中断*です。</span><span class="sxs-lookup"><span data-stu-id="29f95-110">You would not be able to perform most of these tasks if the message was actually *suspended*.</span></span>  
   
@@ -37,7 +38,7 @@ ms.lasthandoff: 12/01/2017
   
 -   <span data-ttu-id="29f95-116">**A4SWIFT_Failed**は**true**任意の数、上記のプロパティが 0 より大きい場合または**false**カウントが 0 に等しい場合。</span><span class="sxs-lookup"><span data-stu-id="29f95-116">**A4SWIFT_Failed** is **true** when the count of any the above properties is greater than zero, or **false** when the count is equal to zero.</span></span>  
   
- <span data-ttu-id="29f95-117">これらのプロパティのすべての一部である、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]です。Solutions.A4SWIFT.Property 名前空間です。</span><span class="sxs-lookup"><span data-stu-id="29f95-117">These properties are all part of the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)].Solutions.A4SWIFT.Property namespace.</span></span> <span data-ttu-id="29f95-118">これらおよびその他の昇格させたプロパティの詳細については、次を参照してください。 [A4SWIFT_ * 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="29f95-118">For more information about these and other promoted properties, see [A4SWIFT_* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).</span></span>  
+ <span data-ttu-id="29f95-117">これらのプロパティのすべての一部である、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]です。Solutions.A4SWIFT.Property 名前空間です。</span><span class="sxs-lookup"><span data-stu-id="29f95-117">These properties are all part of the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)].Solutions.A4SWIFT.Property namespace.</span></span> <span data-ttu-id="29f95-118">これらおよびその他の昇格させたプロパティの詳細については、次を参照してください。 [A4SWIFT_ \* 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="29f95-118">For more information about these and other promoted properties, see [A4SWIFT_\* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).</span></span>  
   
  <span data-ttu-id="29f95-119">キャッチまたは失敗したメッセージを取得、送信ポートのフィルター式 (サブスクリプション) を作成する必要がありますまたはオーケストレーションの受信図形を含む、上記のプロパティの一部として**AND**式の句。</span><span class="sxs-lookup"><span data-stu-id="29f95-119">To catch or retrieve failed messages, you need to create filter expressions (subscriptions) for send ports or orchestration receive shapes that include some of the properties listed above, as **AND** clauses of the expression.</span></span>  
   

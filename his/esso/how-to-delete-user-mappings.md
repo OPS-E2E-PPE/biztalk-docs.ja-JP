@@ -8,15 +8,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 82c4cdff-b82d-4cfd-8e20-220a2fe78656
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: gplarsen
 ms.author: hisdocs; plarsen
 manager: anneta
 ms.openlocfilehash: a9d0a31c3dbc9d5980f59d9f30d20ec15f603a38
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30251086"
 ---
 # <a name="how-to-delete-user-mappings"></a><span data-ttu-id="fe0c3-102">ユーザー マッピングを削除する方法</span><span class="sxs-lookup"><span data-stu-id="fe0c3-102">How to Delete User Mappings</span></span>
 <span data-ttu-id="fe0c3-103">以下のコマンドを使用して、XML ファイルで指定された 1 つ以上のユーザー マッピングを削除できます。</span><span class="sxs-lookup"><span data-stu-id="fe0c3-103">Use these commands to delete one or more user mappings, as specified in the XML file.</span></span> <span data-ttu-id="fe0c3-104">XML ファイルの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="fe0c3-104">The following is an example XML file.</span></span>  
@@ -60,7 +61,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="fe0c3-116">既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="fe0c3-116">The default installation directory is *\<drive>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="fe0c3-117">型`ssomanage –deletemapping <domain>\<username> <application name>`ここで、 *\<ドメイン >*は Windows ドメイン ユーザー アカウントを*\<ユーザー名 >*は、Windows ユーザー名と\< *アプリケーション名*> は、特定のユーザー マッピングを削除するアプリケーション。</span><span class="sxs-lookup"><span data-stu-id="fe0c3-117">Type `ssomanage –deletemapping <domain>\<username> <application name>`, where *\<domain>* is the Windows domain for the user account, *\<username>* is the Windows user name, and \<*application name*> is the specific application for which you want to remove the user mapping.</span></span>  
+3.  <span data-ttu-id="fe0c3-117">型`ssomanage –deletemapping <domain>\<username> <application name>`ここで、 *\<ドメイン >* は Windows ドメイン ユーザー アカウントを*\<ユーザー名 >* は、Windows ユーザー名と\< *アプリケーション名*> は、特定のユーザー マッピングを削除するアプリケーション。</span><span class="sxs-lookup"><span data-stu-id="fe0c3-117">Type `ssomanage –deletemapping <domain>\<username> <application name>`, where *\<domain>* is the Windows domain for the user account, *\<username>* is the Windows user name, and \<*application name*> is the specific application for which you want to remove the user mapping.</span></span>  
   
 ### <a name="to-delete-a-user-mapping-using-the-client-utility"></a><span data-ttu-id="fe0c3-118">クライアント ユーティリティを使用してユーザー マッピングを削除するには</span><span class="sxs-lookup"><span data-stu-id="fe0c3-118">To delete a user mapping using the client utility</span></span>  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="fe0c3-121">既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="fe0c3-121">The default installation directory is *\<drive>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="fe0c3-122">型`ssoclient –deletemapping <application name>`ここで、 *\<アプリケーション名 >*ユーザー マッピングを削除する関連アプリケーションの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="fe0c3-122">Type `ssoclient –deletemapping <application name>`, where *\<application name>* is the name of the affiliate application for which you want to remove the user mapping.</span></span>  
+3.  <span data-ttu-id="fe0c3-122">型`ssoclient –deletemapping <application name>`ここで、 *\<アプリケーション名 >* ユーザー マッピングを削除する関連アプリケーションの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="fe0c3-122">Type `ssoclient –deletemapping <application name>`, where *\<application name>* is the name of the affiliate application for which you want to remove the user mapping.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="fe0c3-123">参照</span><span class="sxs-lookup"><span data-stu-id="fe0c3-123">See Also</span></span>  
  <span data-ttu-id="fe0c3-124">[SSO マッピング](../esso/sso-mappings.md) </span><span class="sxs-lookup"><span data-stu-id="fe0c3-124">[SSO Mappings](../esso/sso-mappings.md) </span></span>  

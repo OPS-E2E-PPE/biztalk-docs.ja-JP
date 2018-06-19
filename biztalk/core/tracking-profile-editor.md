@@ -1,11 +1,11 @@
 ---
-title: "追跡プロファイル エディター |Microsoft ドキュメント"
-ms.custom: 
+title: 追跡プロファイル エディター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking Profile Editor, prerequisites
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - BAM, Tracking Profile Editor
 - tracking profiles
 ms.assetid: 064f5795-28d4-40c5-a0d2-295d3516d7f3
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278378"
 ---
 # <a name="tracking-profile-editor"></a><span data-ttu-id="9358a-102">追跡プロファイル エディター</span><span class="sxs-lookup"><span data-stu-id="9358a-102">Tracking Profile Editor</span></span>
 <span data-ttu-id="9358a-103">このセクションでは、追跡プロファイル エディター (TPE) について説明します。</span><span class="sxs-lookup"><span data-stu-id="9358a-103">This section describes the Tracking Profile Editor (TPE).</span></span> <span data-ttu-id="9358a-104">TPE は、開発者が BAM アクティビティ内の項目とその項目の BizTalk ソリューションとの間のマップ (追跡プロファイルとも呼ばれます) を作成または変更する際に使用するツールです。</span><span class="sxs-lookup"><span data-stu-id="9358a-104">The TPE is a tool that developers use to create or modify maps, known as tracking profiles, between items in a BAM activity and the BizTalk solution sources for those items.</span></span> <span data-ttu-id="9358a-105">TPE を構成するグラフィカル ユーザー インターフェイスを使用すると、開発者は、社内ビジネス プロセスの特定のビューおよび関連データをオーケストレーションやポートにマップできます。</span><span class="sxs-lookup"><span data-stu-id="9358a-105">The TPE consists of a graphical user interface that allows developers to map a specific view of internal business processes, as well as associated data, to orchestrations and ports.</span></span>  

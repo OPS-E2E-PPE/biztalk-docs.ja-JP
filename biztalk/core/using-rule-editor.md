@@ -1,11 +1,11 @@
 ---
-title: "ルール エディターの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: ルール エディターの使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Rule Editor [Business Rule Composer], about Rule Editor
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Rule Editor [Business Rule Composer], Actions Editor
 - Rule Editor [Business Rule Composer]
 ms.assetid: 6559a8d1-6caf-4c6e-ac80-acaa4eb57938
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289010"
 ---
 # <a name="using-rule-editor"></a><span data-ttu-id="e04bc-102">ルール エディターの使用</span><span class="sxs-lookup"><span data-stu-id="e04bc-102">Using Rule Editor</span></span>
 <span data-ttu-id="e04bc-103">ルール エディターを使用すると、条件エディターでは選択したルールの条件を、アクション エディターではアクションを表示および編集できます。</span><span class="sxs-lookup"><span data-stu-id="e04bc-103">Use the Rule Editor to view and edit conditions in the Conditions Editor and actions in the Actions Editor for the selected rule.</span></span>  

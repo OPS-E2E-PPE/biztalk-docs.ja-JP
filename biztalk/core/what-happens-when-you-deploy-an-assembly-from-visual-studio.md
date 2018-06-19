@@ -1,14 +1,14 @@
 ---
-title: "Visual Studio からアセンブリを展開するときの動作 |Microsoft ドキュメント"
-ms.custom: 
+title: Visual Studio からアセンブリを展開するときの動作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 421df529-1ddb-4f49-a40a-c06f2a434ffc
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290170"
 ---
 # <a name="what-happens-when-you-deploy-an-assembly-from-visual-studio"></a><span data-ttu-id="dea33-102">Visual Studio からアセンブリを展開する場合の動作</span><span class="sxs-lookup"><span data-stu-id="dea33-102">What Happens When You Deploy an Assembly from Visual Studio</span></span>
 <span data-ttu-id="dea33-103">このトピックでは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] から [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上の BizTalk アプリケーションにアセンブリを展開する場合の動作について説明します。</span><span class="sxs-lookup"><span data-stu-id="dea33-103">This topic describes what happens when you deploy assemblies from [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] into a BizTalk application on [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  

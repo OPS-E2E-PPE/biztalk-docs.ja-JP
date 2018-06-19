@@ -1,11 +1,11 @@
 ---
-title: "サンプル TMA: HTTP アダプタと SOAP アダプタ |Microsoft ドキュメント"
-ms.custom: 
+title: 'サンプル TMA: HTTP アダプタと SOAP アダプタ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, examples
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - SOAP adapters, TMA
 - HTTP adapters, TMA
 ms.assetid: d9a40cff-92a1-4bc9-ae45-3a5857f70222
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272106"
 ---
 # <a name="sample-tma-http-and-soap-adapters"></a><span data-ttu-id="df342-102">サンプル TMA: HTTP アダプタと SOAP アダプタ</span><span class="sxs-lookup"><span data-stu-id="df342-102">Sample TMA: HTTP and SOAP Adapters</span></span>
 <span data-ttu-id="df342-103">このトピックでは、サンプル アーキテクチャの HTTP アダプターと SOAP (Web サービス) アダプター シナリオ向けの脅威モデル分析 (TMA) について説明します。</span><span class="sxs-lookup"><span data-stu-id="df342-103">This topic presents the threat model analysis (TMA) for the HTTP and SOAP (Web services) adapter scenario for the sample architecture.</span></span> <span data-ttu-id="df342-104">次の図は、HTTP アダプタと SOAP アダプタ シナリオのサンプル アーキテクチャを示しています。</span><span class="sxs-lookup"><span data-stu-id="df342-104">The following figure shows the sample architecture for the HTTP and SOAP adapters scenario.</span></span>  
@@ -79,7 +80,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="df342-148">メッセージからユーザーの資格情報が読み取られる</span><span class="sxs-lookup"><span data-stu-id="df342-148">Read user credentials from message</span></span>|<span data-ttu-id="df342-149">基本認証を使用していて、メッセージにユーザーの資格情報が含まれている場合、悪意のあるユーザーが資格情報へのアクセス権を取得し、その資格情報を使用してアプリケーションにアクセスすることがあります。</span><span class="sxs-lookup"><span data-stu-id="df342-149">If you use basic authentication, and the message contains user credentials, a malicious user can gain access to the credentials and use them to access the application.</span></span>|<span data-ttu-id="df342-150">ユーザーの資格情報</span><span class="sxs-lookup"><span data-stu-id="df342-150">User credentials</span></span>|<span data-ttu-id="df342-151">情報の漏えい</span><span class="sxs-lookup"><span data-stu-id="df342-151">Information disclosure</span></span><br /><br /> <span data-ttu-id="df342-152">権限の昇格</span><span class="sxs-lookup"><span data-stu-id="df342-152">Elevation of privilege</span></span>|  
   
 ## <a name="step-3-review-threats-http-and-soap-adapters-scenario"></a><span data-ttu-id="df342-153">手順 3.</span><span class="sxs-lookup"><span data-stu-id="df342-153">Step 3.</span></span> <span data-ttu-id="df342-154">(HTTP アダプタと SOAP アダプタ シナリオ) 脅威を確認します。</span><span class="sxs-lookup"><span data-stu-id="df342-154">Review Threats (HTTP and SOAP Adapters Scenario)</span></span>  
- <span data-ttu-id="df342-155">このセクションでは、サンプル アーキテクチャの HTTP アダプタと SOAP (Web サービス) アダプタ シナリオで特定された脅威に対して実行したリスク分析の結果を示します。</span><span class="sxs-lookup"><span data-stu-id="df342-155">This section provides the results of the risk analysis we did for threats we identified for the HTTP and SOAP (Web services) adapters scenario for the sample architecture.</span></span> <span data-ttu-id="df342-156">主な脅威モデルについてのミーティングは後、脅威を確認し、次の影響カテゴリ各脅威のリスクを識別するために使用します**D**amage 潜在的な、 **R**eproducibility、 **E。**xploitability、 **A**影響を受けるユーザー、および**D**iscoverability です。</span><span class="sxs-lookup"><span data-stu-id="df342-156">After the main threat model meeting, we reviewed the threats and used the following impact categories to identify the risk for each threat: **D**amage potential, **R**eproducibility, **E**xploitability, **A**ffected users, and **D**iscoverability.</span></span>  
+ <span data-ttu-id="df342-155">このセクションでは、サンプル アーキテクチャの HTTP アダプタと SOAP (Web サービス) アダプタ シナリオで特定された脅威に対して実行したリスク分析の結果を示します。</span><span class="sxs-lookup"><span data-stu-id="df342-155">This section provides the results of the risk analysis we did for threats we identified for the HTTP and SOAP (Web services) adapters scenario for the sample architecture.</span></span> <span data-ttu-id="df342-156">主な脅威モデルについてのミーティングは後、脅威を確認し、次の影響カテゴリ各脅威のリスクを識別するために使用します**D**amage 潜在的な、 **R**eproducibility、 **E。** xploitability、 **A**影響を受けるユーザー、および**D**iscoverability です。</span><span class="sxs-lookup"><span data-stu-id="df342-156">After the main threat model meeting, we reviewed the threats and used the following impact categories to identify the risk for each threat: **D**amage potential, **R**eproducibility, **E**xploitability, **A**ffected users, and **D**iscoverability.</span></span>  
   
  <span data-ttu-id="df342-157">次の表は、HTTP アダプタと SOAP アダプタを使用して BizTalk Server との間でメッセージを送受信したときに特定された脅威のリスクの度合いを示しています。</span><span class="sxs-lookup"><span data-stu-id="df342-157">The following table lists the risk ratings for the threats we identified when you use the HTTP and SOAP adapters to send and receive messages to and from BizTalk Server.</span></span>  
   

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31008600"
 ---
 # <a name="walkthrough-testing-the-policy"></a><span data-ttu-id="9cbb6-102">チュートリアル: ポリシーのテスト</span><span class="sxs-lookup"><span data-stu-id="9cbb6-102">Walkthrough: Testing the Policy</span></span>
 <span data-ttu-id="9cbb6-103">このチュートリアルで作成したポリシーをテストするための手順では、[チュートリアル: 単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアルです。</span><span class="sxs-lookup"><span data-stu-id="9cbb6-103">This walkthrough provides step-by-step procedures for testing the policy you created in the [Walkthrough: Creating a Simple Business Policy](../core/walkthrough-creating-a-simple-business-policy.md) walkthrough.</span></span>  

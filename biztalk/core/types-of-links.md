@@ -1,11 +1,11 @@
 ---
-title: "リンクの種類 |Microsoft ドキュメント"
-ms.custom: 
+title: リンクの種類 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - compiler directives, links
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - partial links [maps]
 - fixed links [maps]
 ms.assetid: 348fae77-2e25-4b79-93bb-d42f3d18a3f7
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286826"
 ---
 # <a name="types-of-links"></a><span data-ttu-id="1ed68-102">リンクの種類</span><span class="sxs-lookup"><span data-stu-id="1ed68-102">Types of Links</span></span>
 <span data-ttu-id="1ed68-103">次の一覧は、BizTalk マッパーで使用できるさまざまな種類のリンクを示しています。</span><span class="sxs-lookup"><span data-stu-id="1ed68-103">The following list summarizes the various types of links available in BizTalk Mapper:</span></span>  

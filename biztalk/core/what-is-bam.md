@@ -1,11 +1,11 @@
 ---
-title: "BAM とは何ですか。 | Microsoft Docs"
-ms.custom: 
+title: BAM とは何ですか。 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], monitoring
@@ -26,7 +26,7 @@ helpviewer_keywords:
 - monitoring, BAM
 - profiles, BAM
 ms.assetid: 5160026a-1ffe-457e-8b75-35ed9bb3457c
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -35,6 +35,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289762"
 ---
 # <a name="what-is-bam"></a><span data-ttu-id="88121-103">BAM とは何ですか。</span><span class="sxs-lookup"><span data-stu-id="88121-103">What Is BAM?</span></span>
 <span data-ttu-id="88121-104">ビジネス アクティビティの監視 (BAM) は、集計、警告、およびプロファイルを管理して、関連するビジネス指標 (主要業績評価指標または KPI) を監視できるツールのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="88121-104">Business Activity Monitoring (BAM) is a collection of tools that allow you to manage aggregations, alerts, and profiles to monitor relevant business metrics (called Key Performance Indicators, or KPIs).</span></span> <span data-ttu-id="88121-105">BAM によって、ビジネス プロセスを詳細に表示できるようになり、さまざまな操作、処理、およびトランザクションの状態と結果に関する正確な情報が提供されます。そのため、ビジネスで問題がある領域を見つけて、その問題を解決できます。</span><span class="sxs-lookup"><span data-stu-id="88121-105">It gives you end-to-end visibility into your business processes, providing accurate information about the status and results of various operations, processes, and transactions so you can address problem areas and resolve issues within your business.</span></span>  

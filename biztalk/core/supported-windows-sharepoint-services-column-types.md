@@ -1,17 +1,17 @@
 ---
-title: "Windows SharePoint Services 列の型はサポート |Microsoft ドキュメント"
-ms.custom: 
+title: Windows SharePoint Services 列の型はサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [Windows SharePoint Services adapters], supported column types
 - Windows SharePoint Services adapters, supported column types
 ms.assetid: 14992f52-9d18-4321-9152-83c8a37751bc
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278874"
 ---
 # <a name="supported-windows-sharepoint-services-column-types"></a><span data-ttu-id="0dac2-102">サポートされている Windows SharePoint Services 列の型</span><span class="sxs-lookup"><span data-stu-id="0dac2-102">Supported Windows SharePoint Services Column Types</span></span>
 <span data-ttu-id="0dac2-103">このトピックでは、Windows SharePoint Services アダプタでサポートされている Windows SharePoint Services 列の型について説明します。</span><span class="sxs-lookup"><span data-stu-id="0dac2-103">This topic describes the Windows SharePoint Services column types that are supported by the Windows SharePoint Services adapter.</span></span> <span data-ttu-id="0dac2-104">これらの列の型の値は、メッセージで設定できます。</span><span class="sxs-lookup"><span data-stu-id="0dac2-104">The values of these column types can be set in the message.</span></span>  

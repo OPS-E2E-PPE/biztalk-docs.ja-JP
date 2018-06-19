@@ -1,14 +1,14 @@
 ---
-title: "リスト メカニズムを使用した単純型の派生 |Microsoft ドキュメント"
-ms.custom: 
+title: リスト メカニズムを使用した単純型の派生 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14f3c7b7-7585-4297-9177-2deaef8355f0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270962"
 ---
 # <a name="simple-type-derivation-using-the-list-mechanism"></a><span data-ttu-id="db7bf-102">リスト メカニズムを使用した単純型の派生</span><span class="sxs-lookup"><span data-stu-id="db7bf-102">Simple Type Derivation Using the List Mechanism</span></span>
 <span data-ttu-id="db7bf-103">リスト メカニズムを使用して既存の単純型から新しい単純型を派生させる場合、この型の属性や要素の値を、空白で区切られた一覧として指定できます。この一覧には、指定された型の値が示されます。</span><span class="sxs-lookup"><span data-stu-id="db7bf-103">When you derive a new simple type from an existing simple type by using the list mechanism, you are specifying that the value for this attribute or element can be a space-separated list of values of the specified type.</span></span> <span data-ttu-id="db7bf-104">たとえば、属性または要素の値を、整数型の値が示される空白区切りの一覧として指定できます。</span><span class="sxs-lookup"><span data-stu-id="db7bf-104">For example, you can specify that an attribute or element value is a space-separated list of integers.</span></span>  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="db7bf-114">変更すると、**フィールド要素**ノードまたは**フィールド属性**ノード (単純型の派生のプロセスを開始し)、基本データ型を持つように入力して、を設定してデータを持つから**Derived By**プロパティを**一覧**、XSD ビューの対応するフラグメントで、次の変更を確認することができます。</span><span class="sxs-lookup"><span data-stu-id="db7bf-114">When you first change a **Field Element** node or **Field Attribute** node from having a data type to having a base data type (thereby starting the process of simple type derivation), and then set the **Derived By** property to **List**, you can observe the following change in the corresponding fragment in the XSD view:</span></span>  
   
--   <span data-ttu-id="db7bf-115">前に、新しく挿入されると**フィールド要素**という名前のノード**"zipcodelist"**です。</span><span class="sxs-lookup"><span data-stu-id="db7bf-115">Before, with a newly inserted **Field Element** node named **ZipCodeList**.</span></span>  
+-   <span data-ttu-id="db7bf-115">前に、新しく挿入されると**フィールド要素**という名前のノード **"zipcodelist"** です。</span><span class="sxs-lookup"><span data-stu-id="db7bf-115">Before, with a newly inserted **Field Element** node named **ZipCodeList**.</span></span>  
   
     ```  
     <xs:element name="ContainingRecord">  
@@ -64,7 +65,7 @@ ms.lasthandoff: 09/20/2017
     ```  
   
 > [!NOTE]
->  <span data-ttu-id="db7bf-117">実際のスキーマがあります最初を定義し、名前を 5 桁の数値を整数に制限する整数の単純型から派生する方がよいとその派生するために、 **"zipcodelist"**にリストを効果的に制限する、その型から要素5 桁の数字を持つ整数。</span><span class="sxs-lookup"><span data-stu-id="db7bf-117">In a real-life schema, it would be better to first define and name a simple type derivation of integer that restricts the integer to five digits, and then to derive the **ZipCodeList** element from that type, effectively limiting the list to integers having five digits.</span></span>  
+>  <span data-ttu-id="db7bf-117">実際のスキーマがあります最初を定義し、名前を 5 桁の数値を整数に制限する整数の単純型から派生する方がよいとその派生するために、 **"zipcodelist"** にリストを効果的に制限する、その型から要素5 桁の数字を持つ整数。</span><span class="sxs-lookup"><span data-stu-id="db7bf-117">In a real-life schema, it would be better to first define and name a simple type derivation of integer that restricts the integer to five digits, and then to derive the **ZipCodeList** element from that type, effectively limiting the list to integers having five digits.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="db7bf-118">参照</span><span class="sxs-lookup"><span data-stu-id="db7bf-118">See Also</span></span>  
  [<span data-ttu-id="db7bf-119">単純型の派生</span><span class="sxs-lookup"><span data-stu-id="db7bf-119">Simple Type Derivation</span></span>](../core/simple-type-derivation.md)

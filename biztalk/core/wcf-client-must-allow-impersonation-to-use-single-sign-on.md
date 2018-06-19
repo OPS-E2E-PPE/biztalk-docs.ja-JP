@@ -1,14 +1,14 @@
 ---
-title: "WCF クライアントでのシングル サインオンを使用するための偽装を許可する必要があります |Microsoft ドキュメント"
-ms.custom: 
+title: WCF クライアントでのシングル サインオンを使用するための偽装を許可する必要があります |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5b9f294-4d8a-4a12-91e8-8d325db7c420
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288610"
 ---
 # <a name="wcf-client-must-allow-impersonation-to-use-single-sign-on"></a><span data-ttu-id="93450-102">シングル サインオンを使用するには、WCF クライアントが権限借用を許可する必要があります</span><span class="sxs-lookup"><span data-stu-id="93450-102">WCF client must allow impersonation to use Single Sign-On</span></span>
 ## <a name="details"></a><span data-ttu-id="93450-103">詳細</span><span class="sxs-lookup"><span data-stu-id="93450-103">Details</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="93450-123">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="93450-123">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="93450-124">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="93450-124">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="93450-124">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="93450-124">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="93450-125">ポート**型**一覧で、 **Wcf-custom** (または**Wcf-customisolate**)。</span><span class="sxs-lookup"><span data-stu-id="93450-125">In the port **Type** list, select **WCF-Custom** (or **WCF-CustomIsolate**).</span></span>  
   

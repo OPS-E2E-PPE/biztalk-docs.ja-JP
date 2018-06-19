@@ -1,14 +1,14 @@
 ---
-title: "要件フェーズの推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: 要件フェーズの推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b510313-c3a7-42bc-9c9b-336c927a5d4a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271018"
 ---
 # <a name="requirements-phase-recommendations"></a><span data-ttu-id="e4788-102">要件フェーズの推奨事項</span><span class="sxs-lookup"><span data-stu-id="e4788-102">Requirements Phase Recommendations</span></span>
 <span data-ttu-id="e4788-103">要件フェーズに関連付けられている主な成果物は、要件仕様、またはパフォーマンスの目標などの要件を含む機能仕様です。</span><span class="sxs-lookup"><span data-stu-id="e4788-103">The primary deliverable associated with the requirements phase is a requirements specification, or a functional specification that includes requirements including performance goals.</span></span> <span data-ttu-id="e4788-104">パフォーマンスの正確なプロファイルが派生されるようにするには、これらの目標を決定するときに、システムのエンド ユーザーとビジネス所有者を含めることが非常に重要です。</span><span class="sxs-lookup"><span data-stu-id="e4788-104">It is very important to involve the end-users and business owners of the system when determining these goals to assure that an accurate profile for performance is derived.</span></span>  

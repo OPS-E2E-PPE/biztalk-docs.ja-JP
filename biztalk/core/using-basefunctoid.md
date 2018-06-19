@@ -1,14 +1,14 @@
 ---
-title: "BaseFunctoid の使用 |Microsoft ドキュメント"
-ms.custom: 
+title: BaseFunctoid の使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb26a54d-20bf-4302-a5cb-b38e4091002b
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288714"
 ---
 # <a name="using-basefunctoid"></a><span data-ttu-id="868c9-102">BaseFunctoid の使用</span><span class="sxs-lookup"><span data-stu-id="868c9-102">Using BaseFunctoid</span></span>
 <span data-ttu-id="868c9-103">すべてのカスタム Functoid は、 **BaseFunctoid** クラスから派生する必要があります。</span><span class="sxs-lookup"><span data-stu-id="868c9-103">All custom functoids must derive from the **BaseFunctoid** class.</span></span> <span data-ttu-id="868c9-104">これを行うには、最初にコンストラクターをオーバーライドし、カスタム Functoid に関する情報を BizTalk マッパーに通知する呼び出しのセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="868c9-104">You must first override the constructor and make a set of calls that tell BizTalk Mapper about your custom functoid.</span></span> <span data-ttu-id="868c9-105">次に、Functoid ロジックを記述します。</span><span class="sxs-lookup"><span data-stu-id="868c9-105">Then you need to write the functoid logic.</span></span>  

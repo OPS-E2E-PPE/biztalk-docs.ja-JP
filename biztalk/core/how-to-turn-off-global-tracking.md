@@ -1,14 +1,14 @@
 ---
-title: "グローバル追跡を無効にする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: グローバル追跡を無効にする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eae3059a-cbdd-47c4-84cd-edfb5480b9fa
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007099"
 ---
 # <a name="how-to-turn-off-global-tracking"></a><span data-ttu-id="66691-102">グローバル追跡を無効にする方法</span><span class="sxs-lookup"><span data-stu-id="66691-102">How to Turn Off Global Tracking</span></span>
 <span data-ttu-id="66691-103">既定では、BizTalk Server をインストールするときに、グローバル追跡が有効にします。</span><span class="sxs-lookup"><span data-stu-id="66691-103">By default, global tracking is enabled when you install BizTalk Server.</span></span> <span data-ttu-id="66691-104">システム上での [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によるデータ処理に伴って、BizTalk 追跡 (BizTalkDTADb) データベースのサイズが増加します。</span><span class="sxs-lookup"><span data-stu-id="66691-104">The BizTalk Tracking (BizTalkDTADb) database grows in size as [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes data on your system.</span></span> <span data-ttu-id="66691-105">BizTalk 追跡データベースのサイズの増加によってディスク パフォーマンスが低下する場合は、追跡データベースからデータを削除できます。</span><span class="sxs-lookup"><span data-stu-id="66691-105">If the size of the BizTalk Tracking database causes poor disk performance, you can purge the data from the Tracking database.</span></span> <span data-ttu-id="66691-106">性能上の問題があり、BizTalk 追跡データベースを削除することで一時的に対処している場合、追跡情報を収集しないように BizTalk を構成するには、グローバル追跡を無効にすることを検討してください。</span><span class="sxs-lookup"><span data-stu-id="66691-106">If you are having performance issues that are momentarily addressed by purging the BizTalk tracking database, and you want to configure BizTalk to no longer collect tracking information, you may want to consider turning off global tracking.</span></span>  

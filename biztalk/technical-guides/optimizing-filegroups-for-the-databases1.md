@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "26010883"
 ---
 # <a name="optimizing-filegroups-for-the-databases"></a><span data-ttu-id="873b9-102">データベースのファイル グループを最適化します。</span><span class="sxs-lookup"><span data-stu-id="873b9-102">Optimizing Filegroups for the Databases</span></span>
 <span data-ttu-id="873b9-103">ファイルは、入出力 (I/O) の競合が頻繁に限定要素、または実稼働環境の BizTalk Server 環境で、ボトルネックです。</span><span class="sxs-lookup"><span data-stu-id="873b9-103">File input/output (I/O) contention is frequently a limiting factor, or bottleneck, in a production BizTalk Server environment.</span></span> <span data-ttu-id="873b9-104">BizTalk Server は非常にデータベースの処理を要するアプリケーションと、さらに、大量の I/O を非常にファイルは、BizTalk Server によって使用される SQL Server データベース。</span><span class="sxs-lookup"><span data-stu-id="873b9-104">BizTalk Server is a very database intensive application and in turn, the SQL Server database used by BizTalk Server is very file I/O intensive.</span></span>  

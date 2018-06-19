@@ -1,14 +1,14 @@
 ---
-title: "静的アダプターの IStaticAdapterConfig インターフェイス |Microsoft ドキュメント"
-ms.custom: 
+title: 静的アダプターの IStaticAdapterConfig インターフェイス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52f5de01-0cfc-456a-a52b-28f8f076bdfc
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277386"
 ---
 # <a name="static-adapter-istaticadapterconfig-interface"></a><span data-ttu-id="1fe49-102">静的アダプターの IStaticAdapterConfig インターフェイス</span><span class="sxs-lookup"><span data-stu-id="1fe49-102">Static Adapter IStaticAdapterConfig Interface</span></span>
 <span data-ttu-id="1fe49-103">静的デザイン時アダプターを実装する必要があります、 **IStaticAdapterConfig**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="1fe49-103">A static design-time adapter must implement the **IStaticAdapterConfig** interface.</span></span> <span data-ttu-id="1fe49-104">このインターフェイスによって、アダプター メタデータの追加ウィザードが利用可能になり、アダプターからサービス組織や個々のサービスの説明を取得できます。</span><span class="sxs-lookup"><span data-stu-id="1fe49-104">This allows it to interact with the Add Adapter Metadata Wizard and obtain service organizations and individual service descriptions from the adapter.</span></span> <span data-ttu-id="1fe49-105">このウィザードでは、 **GetServiceOrganization**と**GetServiceDescription**アダプターと連携するメタデータ情報を取得し、BizTalk に追加する方法でプロジェクトを[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="1fe49-105">The wizard calls the **GetServiceOrganization** and **GetServiceDescription** methods to pull in metadata information with which the adapter interacts and add it to a BizTalk project in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  

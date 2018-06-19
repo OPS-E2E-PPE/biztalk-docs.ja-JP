@@ -1,11 +1,11 @@
 ---
-title: "コンパイラ ディレクティブおよびリンク |Microsoft ドキュメント"
-ms.custom: 
+title: コンパイラ ディレクティブおよびリンク |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - compilier directives
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BizTalk Mapper, compiler directives
 - links [maps], compiling
 ms.assetid: 1655e10c-af98-4100-849d-b8214f93cfe9
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231074"
 ---
 # <a name="compiler-directives-and-links"></a><span data-ttu-id="5e21e-102">コンパイラ ディレクティブおよびリンク</span><span class="sxs-lookup"><span data-stu-id="5e21e-102">Compiler Directives and Links</span></span>
 <span data-ttu-id="5e21e-103">リンクごとに、次の 2 つのコンパイラ ディレクティブを構成できます。</span><span class="sxs-lookup"><span data-stu-id="5e21e-103">You can configure the following two compiler directives on a link-by-link basis:</span></span>  

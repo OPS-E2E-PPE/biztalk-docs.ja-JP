@@ -1,17 +1,17 @@
 ---
-title: "候補リストのフィールドを使用して BizTalk Server と Siebel アダプターのビジネス コンポーネントでの操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: 候補リストのフィールドを使用して BizTalk Server と Siebel アダプターのビジネス コンポーネントでの操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, perform operations with picklist fields by using BizTalk Server
 - business components, performing operations with picklist fields by using BizTalk Server
 ms.assetid: b62d32fa-903a-442b-951b-2343ef719bd0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226834"
 ---
 # <a name="run-operations-on-business-components-with-picklist-fields-using-biztalk-server-and-the-siebel-adapter"></a><span data-ttu-id="1a815-102">候補リストのフィールドを使用して BizTalk Server と Siebel アダプターのビジネス コンポーネントに対する操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="1a815-102">Run Operations on Business Components with Picklist Fields Using BizTalk Server and the Siebel adapter</span></span>
 <span data-ttu-id="1a815-103">Siebel のピックリスト フィールドの型が使用可能な値のコレクションを構成するクライアントから Siebel システムに渡される特定の値を指定可能性があります。</span><span class="sxs-lookup"><span data-stu-id="1a815-103">A Siebel picklist field type constitutes a collection of possible values from which client may specify a certain value to be passed onto the Siebel system.</span></span> <span data-ttu-id="1a815-104">つまり、候補リストのフィールドには、フィールドの許容される値の一覧が含まれています。</span><span class="sxs-lookup"><span data-stu-id="1a815-104">In other words, a picklist field contains a list of accepted values for a field.</span></span> <span data-ttu-id="1a815-105">候補リストとその種類の詳細については、Siebel のドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="1a815-105">For more information about picklist and their types, refer to Siebel documentation.</span></span> <span data-ttu-id="1a815-106">方法の詳細については[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]候補リストのフィールドを持つビジネス コンポーネントの操作をサポートするを参照してください[で Siebel ビジネス コンポーネント操作](../../adapters-and-accelerators/adapter-siebel/operations-on-business-components-in-siebel.md)です。</span><span class="sxs-lookup"><span data-stu-id="1a815-106">For more information about how the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] supports operations on business components with picklist fields, see [Operations on Business Components in Siebel](../../adapters-and-accelerators/adapter-siebel/operations-on-business-components-in-siebel.md).</span></span>  

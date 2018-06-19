@@ -1,11 +1,11 @@
 ---
-title: "成果物の追加または削除されるときの動作 |Microsoft ドキュメント"
-ms.custom: 
+title: 成果物の追加または削除されるときの動作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, artifacts
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - artifacts, creating
 - deleting, artifacts
 ms.assetid: 811166ba-3ff4-4224-9d84-a2f4ed31bf4d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288882"
 ---
 # <a name="what-happens-when-artifacts-are-added-and-removed"></a><span data-ttu-id="aef59-102">アイテムを追加または削除した場合の動作</span><span class="sxs-lookup"><span data-stu-id="aef59-102">What Happens When Artifacts Are Added and Removed</span></span>
 <span data-ttu-id="aef59-103">このトピックでは、アプリケーションにアイテムを追加した場合の動作について説明します。</span><span class="sxs-lookup"><span data-stu-id="aef59-103">This topic describes what happens when you add artifacts to an application.</span></span> <span data-ttu-id="aef59-104">BizTalk Server 管理コンソールまたは BTSTask コマンド ライン ツールを使用して、ファイルベースのアイテムをアプリケーションに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="aef59-104">You can add file-based artifacts to an application by using the BizTalk Server Administration console or the BTSTask command-line tool.</span></span> <span data-ttu-id="aef59-105">ファイルベースのアイテムには、次の種類のものがあります。</span><span class="sxs-lookup"><span data-stu-id="aef59-105">File-based artifacts include the following types:</span></span>  

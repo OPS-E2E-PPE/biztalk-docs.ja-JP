@@ -1,11 +1,11 @@
 ---
-title: "Windows SharePoint Services アダプターについて  | Microsoft Docs"
-ms.custom: 
+title: Windows SharePoint Services アダプターについて  | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, Windows SharePoint Services adapters
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - Windows SharePoint Services adapters
 - Windows SharePoint Services adapters, about Windows SharePoint Services adapters
 ms.assetid: 1875ac85-46c2-4da5-ad16-8b078cb4cbd7
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22291138"
 ---
 # <a name="what-is-the-windows-sharepoint-services-adapter"></a><span data-ttu-id="e4b62-103">Windows SharePoint Services アダプターについて </span><span class="sxs-lookup"><span data-stu-id="e4b62-103">What Is the Windows SharePoint Services Adapter?</span></span>
 <span data-ttu-id="e4b62-104">Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプタによって、Windows SharePoint Services と Microsoft Office InfoPath の密接な統合を実現できます。</span><span class="sxs-lookup"><span data-stu-id="e4b62-104">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] adapter for Windows SharePoint Services provides a tighter integration with Windows SharePoint Services and Microsoft Office InfoPath.</span></span> <span data-ttu-id="e4b62-105">このトピックでは、Windows SharePoint Services アダプタの機能および動作の概要について説明します。</span><span class="sxs-lookup"><span data-stu-id="e4b62-105">The following topic describes the features and an overview of how the Windows SharePoint Services adapter works.</span></span>  

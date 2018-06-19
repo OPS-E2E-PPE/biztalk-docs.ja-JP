@@ -1,11 +1,11 @@
 ---
-title: "POP3 アダプターについて | Microsoft Docs"
-ms.custom: 
+title: POP3 アダプターについて | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - POP3 adapters, availability
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - POP3 adapters, algorithims
 - receive adapters, POP3 adapters
 ms.assetid: 05e9598b-cdfe-4216-b6bf-1b84f8ddfeae
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290626"
 ---
 # <a name="what-is-the-pop3-adapter"></a><span data-ttu-id="03fdb-103">POP3 アダプターについて</span><span class="sxs-lookup"><span data-stu-id="03fdb-103">What Is the POP3 Adapter?</span></span>
 <span data-ttu-id="03fdb-104">このセクションでは POP3 受信アダプターについて説明します。</span><span class="sxs-lookup"><span data-stu-id="03fdb-104">This section describes the POP3 receive adapter.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "DTA 追跡の MST の検索のヒントし、テクニック |Microsoft ドキュメント"
-ms.custom: 
+title: DTA 追跡の MST の検索のヒントし、テクニック |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d72e4ac-d952-4cff-9a65-491e20945d40
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279882"
 ---
 # <a name="tips-and-tricks-for-finding-mst-of-dta-tracking"></a><span data-ttu-id="a0cbc-102">DTA 追跡の MSTを特定するためのヒントとテクニック</span><span class="sxs-lookup"><span data-stu-id="a0cbc-102">Tips and Tricks for Finding MST of DTA Tracking</span></span>
 <span data-ttu-id="a0cbc-103">定義上、MST とは、一定の負荷を使用してシステム パフォーマンスを再現可能な形で測定するベンチマークです。</span><span class="sxs-lookup"><span data-stu-id="a0cbc-103">By definition, MST is a benchmark to reproducibly measure system performance using a constant load.</span></span> <span data-ttu-id="a0cbc-104">MST を測定することは、次のような場合に特に有用です。</span><span class="sxs-lookup"><span data-stu-id="a0cbc-104">Following are situations where knowing the MST is particularly useful.</span></span>  

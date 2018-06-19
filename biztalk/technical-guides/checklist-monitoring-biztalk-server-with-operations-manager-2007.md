@@ -1,14 +1,14 @@
 ---
-title: "チェックリスト: Operations Manager 2007 の BizTalk Server の監視 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チェックリスト: Operations Manager 2007 の BizTalk Server の監視 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2e1f7f57-1501-473f-af5f-15f3e1ddaf8e
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300058"
 ---
 # <a name="checklist-monitoring-biztalk-server-with-operations-manager-2007"></a><span data-ttu-id="32d3f-102">チェックリスト: Operations Manager 2007 の BizTalk Server の監視</span><span class="sxs-lookup"><span data-stu-id="32d3f-102">Checklist: Monitoring BizTalk Server with Operations Manager 2007</span></span>
 <span data-ttu-id="32d3f-103">このトピックは、監視を準備する場合に行うことができる手順の概要を示します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。</span><span class="sxs-lookup"><span data-stu-id="32d3f-103">This topic lists the high-level steps you can follow when preparing to monitor your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span>  

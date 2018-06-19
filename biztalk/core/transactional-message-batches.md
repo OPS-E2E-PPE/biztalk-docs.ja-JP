@@ -1,14 +1,14 @@
 ---
-title: "トランザクション メッセージ バッチ |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクション メッセージ バッチ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b1790c05-e3f7-4667-8a9e-f6f208e55e40
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279530"
 ---
 # <a name="transactional-message-batches"></a><span data-ttu-id="6210d-102">トランザクション メッセージ バッチ</span><span class="sxs-lookup"><span data-stu-id="6210d-102">Transactional Message Batches</span></span>
 <span data-ttu-id="6210d-103">一部のアダプターは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] トランザクションに合わせて外部トランザクションを調整する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6210d-103">Some adapters must coordinate an external transaction with an internal [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] transaction.</span></span> <span data-ttu-id="6210d-104">たとえば、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に付属の SQL アダプターは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] トランザクションに合わせて [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] トランザクションを調整する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6210d-104">For example, the SQL adapter supplied with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] must coordinate a [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] transaction with a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] transaction.</span></span> <span data-ttu-id="6210d-105">そのためには、アダプターが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] トランザクション オブジェクトにアクセスする必要があります。</span><span class="sxs-lookup"><span data-stu-id="6210d-105">To do this, the adapter needs access to the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] transaction object.</span></span> <span data-ttu-id="6210d-106">トランザクション オブジェクトは明示的に作成され、バッチに関連付けられます。その後、そのバッチが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信されます。</span><span class="sxs-lookup"><span data-stu-id="6210d-106">A transaction object is explicitly created and associated with the batch before the batch is submitted to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="6210d-107">トランザクション オブジェクトが関連付けられているバッチを "トランザクション バッチ" といいます。</span><span class="sxs-lookup"><span data-stu-id="6210d-107">A batch that has an associated transaction object is called a transactional batch.</span></span> <span data-ttu-id="6210d-108">独自の Microsoft 分散トランザクション コーディネーター (MSDTC) トランザクション オブジェクトを指定することによって、トランザクションから [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] へ、および  からトランザクションへ、"確実に 1 回だけ" データを配信できます。</span><span class="sxs-lookup"><span data-stu-id="6210d-108">By supplying your own Microsoft Distributed Transaction Coordinator (MSDTC) transaction object, you can achieve the "guaranteed, once and once only", delivery of data into and out of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  

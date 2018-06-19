@@ -1,14 +1,14 @@
 ---
-title: "ループにリーフ ノードが含まれています。 その他のループまたはセグメントを含めることができますのみ |Microsoft ドキュメント"
-ms.custom: 
+title: ループにリーフ ノードが含まれています。 その他のループまたはセグメントを含めることができますのみ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2a0ee5e6-519d-4c95-8681-de5a37741d56
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278834"
 ---
 # <a name="the-loop-contains-a-leaf-node-it-can-only-contain-other-loops-or-segments"></a><span data-ttu-id="d63dd-103">ループにリーフ ノードが含まれています。</span><span class="sxs-lookup"><span data-stu-id="d63dd-103">The loop contains a leaf node.</span></span> <span data-ttu-id="d63dd-104">ループに含めることができるのは、他のループまたはセグメントのみです</span><span class="sxs-lookup"><span data-stu-id="d63dd-104">It can only contain other Loops or Segments</span></span>
 ## <a name="details"></a><span data-ttu-id="d63dd-105">詳細</span><span class="sxs-lookup"><span data-stu-id="d63dd-105">Details</span></span>  

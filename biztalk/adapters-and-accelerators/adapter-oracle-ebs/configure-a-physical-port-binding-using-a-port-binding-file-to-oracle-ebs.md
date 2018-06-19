@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite へのポートのバインド ファイルを使用して物理ポートのバインドの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite へのポートのバインド ファイルを使用して物理ポートのバインドの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5c3c468e-815c-4611-879c-8da9111eeb3b
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218266"
 ---
 # <a name="configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-e-business-suite"></a><span data-ttu-id="6e329-102">Oracle E-business Suite へのポートのバインド ファイルを使用して物理ポートのバインドを構成します。</span><span class="sxs-lookup"><span data-stu-id="6e329-102">Configure a physical port binding using a port binding file to Oracle E-Business Suite</span></span>
 <span data-ttu-id="6e329-103">使用すると、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]スキーマ ファイルは、以外の Oracle E-business Suite の成果物のためのメタデータを生成する、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]もポートのバインド ファイルを生成します。</span><span class="sxs-lookup"><span data-stu-id="6e329-103">When you use the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to generate metadata for Oracle E-Business Suite artifacts, other than the schema files, the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] also generates a port binding file.</span></span> <span data-ttu-id="6e329-104">作成する物理送信ポートまたは受信ポートを BizTalk アプリケーションにこのバインド ファイルをインポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="6e329-104">You can import this binding file into your BizTalk application to create a physical send or receive port.</span></span> <span data-ttu-id="6e329-105">バインド ファイルをインポートする方法の詳細については、次を参照してください。 [Oracle E-business Suite でアダプターのバインドを再利用](../../adapters-and-accelerators/adapter-oracle-ebs/reuse-adapter-bindings-with-oracle-e-business-suite.md)です。</span><span class="sxs-lookup"><span data-stu-id="6e329-105">For instructions on importing binding files, see [Reuse Adapter Bindings with Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/reuse-adapter-bindings-with-oracle-e-business-suite.md).</span></span> <span data-ttu-id="6e329-106">このバインド ファイルをインポートする場合、手動で作成する物理送信ポートまたは受信ポートをするはありません。</span><span class="sxs-lookup"><span data-stu-id="6e329-106">If you import this binding file, you do not have to manually create a physical send or receive port.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "トランザクション セットの集計レポート |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクション セットの集計レポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a6e1417e-e0c6-4d30-aab5-d9bfe14cd4b8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279682"
 ---
 # <a name="transaction-set-aggregation-report"></a><span data-ttu-id="eebcb-102">トランザクション セットの集計レポート</span><span class="sxs-lookup"><span data-stu-id="eebcb-102">Transaction Set Aggregation Report</span></span>
 <span data-ttu-id="eebcb-103">このレポートは、同じトランザクション セット ID、EDI エンコードの種類、送信者パーティ、受信者パーティ、および方向を共有する EDI トランザクション セットの数を示すレコードを 1 つ提供します。</span><span class="sxs-lookup"><span data-stu-id="eebcb-103">This report provides a single record that shows the number of EDI transaction sets that share the same Transaction Set ID, EDI encoding type, sender party, receiver party, and direction.</span></span> <span data-ttu-id="eebcb-104">このレポートでは、個々のトランザクション セットの詳細は提供されません。</span><span class="sxs-lookup"><span data-stu-id="eebcb-104">This report does not provide details about the individual transaction sets.</span></span>  

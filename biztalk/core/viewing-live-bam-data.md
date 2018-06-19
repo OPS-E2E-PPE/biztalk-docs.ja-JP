@@ -1,17 +1,17 @@
 ---
-title: "ライブ BAM データの表示 |Microsoft ドキュメント"
-ms.custom: 
+title: ライブ BAM データの表示 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - data, real-time data [BAM]
 - BAM, real-time data
 ms.assetid: 23e6561e-b570-49f4-bc4c-f4fbfde6fc81
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288370"
 ---
 # <a name="viewing-live-bam-data"></a><span data-ttu-id="b2df2-102">ライブ BAM データの表示</span><span class="sxs-lookup"><span data-stu-id="b2df2-102">Viewing Live BAM Data</span></span>
 <span data-ttu-id="b2df2-103">ライブ BAM データは次のようなさまざまな方法で表示できます。</span><span class="sxs-lookup"><span data-stu-id="b2df2-103">Following are the different ways you can view live BAM data.</span></span>  

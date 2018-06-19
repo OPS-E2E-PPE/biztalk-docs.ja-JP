@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289338"
 ---
 # <a name="what-is-the-wcf-wshttp-adapter"></a><span data-ttu-id="ed355-103">WCF-WSHttp アダプタについて</span><span class="sxs-lookup"><span data-stu-id="ed355-103">What Is the WCF-WSHttp Adapter?</span></span>
 <span data-ttu-id="ed355-104">WCF-WSHttp アダプタを使用すると、テキストまたは Message Transmission Optimization Mechanism (MTOM) エンコードによる HTTP または HTTPS トランスポートを使用して、次世代 Web サービス標準を理解できるサービスおよびクライアントとコンピュータ間通信を実行できます。</span><span class="sxs-lookup"><span data-stu-id="ed355-104">You can use the WCF-WSHttp adapter to do cross-computer communication with services and clients that can understand the next-generation Web service standards, using either the HTTP or HTTPS transport with text or Message Transmission Optimization Mechanism (MTOM) encoding.</span></span> <span data-ttu-id="ed355-105">WCF-WSHttp アダプタにより、SOAP セキュリティ、信頼性、およびトランザクションの各機能にフル アクセスできます。</span><span class="sxs-lookup"><span data-stu-id="ed355-105">The WCF-WSHttp adapter provides full access to the SOAP security, reliability, and transaction features.</span></span>  

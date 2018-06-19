@@ -1,14 +1,14 @@
 ---
-title: "BizTalk アプリケーション デザインの国際化に関する考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーション デザインの国際化に関する考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9daaaaf7-6149-4e62-9e9b-b6356fc820d2
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974576"
 ---
 # <a name="international-considerations-for-designing-biztalk-applications"></a><span data-ttu-id="026af-102">BizTalk アプリケーション デザインの国際化に関する考慮事項</span><span class="sxs-lookup"><span data-stu-id="026af-102">International Considerations for Designing BizTalk Applications</span></span>
 <span data-ttu-id="026af-103">国際化対応の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを開発する際には、次に挙げる既知の問題を確認することを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="026af-103">It is strongly recommended that you review the following known issues when you develop your international [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] applications.</span></span>  

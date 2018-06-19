@@ -1,14 +1,14 @@
 ---
-title: "JSON メッセージを処理するカスタム パイプラインを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: JSON メッセージを処理するカスタム パイプラインを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b04faad1-b14b-4146-82c7-88a38d2a46a5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005011"
 ---
 # <a name="create-custom-pipelines-to-process-json-messages"></a><span data-ttu-id="926b1-102">JSON メッセージ処理用のカスタム パイプラインの作成</span><span class="sxs-lookup"><span data-stu-id="926b1-102">Create custom pipelines to process JSON messages</span></span>
 > [!NOTE]

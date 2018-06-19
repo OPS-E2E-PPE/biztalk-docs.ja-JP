@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル: MQSeries アダプターを使用する BizTalk アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: MQSeries アダプターを使用する BizTalk アプリケーションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IBM WebSphere MQ queues
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - MQSeries adapters, queues
 - configuring [MQSeries adapters], tutorial
 ms.assetid: e9e169e4-d41c-4e5d-b165-7bd36b481f24
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290474"
 ---
 # <a name="walkthrough-creating-a-biztalk-application-that-uses-the-mqseries-adapter"></a><span data-ttu-id="c8465-102">チュートリアル: MQSeries アダプターを使用する BizTalk アプリケーションの作成</span><span class="sxs-lookup"><span data-stu-id="c8465-102">Walkthrough: Creating a BizTalk Application That Uses the MQSeries Adapter</span></span>
 <span data-ttu-id="c8465-103">このセクションでは、MQSeries アダプターを使用する簡単な Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを作成する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="c8465-103">This section takes you through creating a simple Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application that uses the MQSeries adapter.</span></span>  
@@ -44,15 +45,15 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="c8465-116">をクリックして**開始**、 をポイント**プログラム**、 をポイント**IBM WebSphere MQ**、順にクリック**WebSphere MQ エクスプ ローラー**です。</span><span class="sxs-lookup"><span data-stu-id="c8465-116">Click **Start**, point to **Programs**, point to **IBM WebSphere MQ**, and then click **WebSphere MQ Explorer**.</span></span>  
   
-2.  <span data-ttu-id="c8465-117">ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8465-117">Double-click **Queue Managers**, and then double-click the default queue manager.</span></span> <span data-ttu-id="c8465-118">既定のキュー マネージャーの名前は通常**qm _***< machine_name >*場所*machine_name*お使いのコンピューターの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="c8465-118">The default queue manager is typically named **QM_***<machine_name>* where *machine_name* is the name of your computer.</span></span>  
+2.  <span data-ttu-id="c8465-117">ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8465-117">Double-click **Queue Managers**, and then double-click the default queue manager.</span></span> <span data-ttu-id="c8465-118">既定のキュー マネージャーの名前は通常**qm _***< machine_name >* 場所*machine_name*お使いのコンピューターの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="c8465-118">The default queue manager is typically named **QM_***<machine_name>* where *machine_name* is the name of your computer.</span></span>  
   
 3.  <span data-ttu-id="c8465-119">右クリック**キュー**、 をポイント**新規**、クリックして**ローカル キュー**です。</span><span class="sxs-lookup"><span data-stu-id="c8465-119">Right-click **Queues**, point to **New**, and then click **Local Queue**.</span></span>  
   
-4.  <span data-ttu-id="c8465-120">**ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**BTStoMQS**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="c8465-120">In **Create Local Queue** dialog box, in **Queue Name**, type **BTStoMQS**, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="c8465-120">**ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**BTStoMQS**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="c8465-120">In **Create Local Queue** dialog box, in **Queue Name**, type **BTStoMQS**, and then click **OK**.</span></span>  
   
 5.  <span data-ttu-id="c8465-121">右クリック**キュー**、 をポイント**新規**、クリックして**ローカル キュー**です。</span><span class="sxs-lookup"><span data-stu-id="c8465-121">Right-click **Queues**, point to **New**, and then click **Local Queue**.</span></span>  
   
-6.  <span data-ttu-id="c8465-122">**ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**MQStoBTS**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="c8465-122">In **Create Local Queue** dialog box, in **Queue Name**, type **MQStoBTS**, and then click **OK**.</span></span>  
+6.  <span data-ttu-id="c8465-122">**ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**MQStoBTS**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="c8465-122">In **Create Local Queue** dialog box, in **Queue Name**, type **MQStoBTS**, and then click **OK**.</span></span>  
   
  <span data-ttu-id="c8465-123">次の手順では、受信場所と送信ポートの作成、および送信ポートの開始と受信場所の有効化を行います。</span><span class="sxs-lookup"><span data-stu-id="c8465-123">The next steps create the receive location and the send port, and start the send port and enable the receive location.</span></span> <span data-ttu-id="c8465-124">IBM WebSphere MQ キューも作成します。</span><span class="sxs-lookup"><span data-stu-id="c8465-124">They also create the IBM WebSphere MQ queues.</span></span>  
   
@@ -138,7 +139,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="c8465-167">右クリック**MQStoBTS**、クリックして**テスト ・ メッセージ**です。</span><span class="sxs-lookup"><span data-stu-id="c8465-167">Right-click **MQStoBTS**, and then click **Put Test Message**.</span></span>  
   
-3.  <span data-ttu-id="c8465-168">**メッセージ データ**ボックスに、テスト メッセージを入力します。</span><span class="sxs-lookup"><span data-stu-id="c8465-168">In the **Message Data** box, type a test message.</span></span> <span data-ttu-id="c8465-169">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8465-169">Click **OK**.</span></span>  
+3.  <span data-ttu-id="c8465-168">**メッセージ データ**ボックスに、テスト メッセージを入力します。</span><span class="sxs-lookup"><span data-stu-id="c8465-168">In the **Message Data** box, type a test message.</span></span> <span data-ttu-id="c8465-169">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8465-169">Click **OK**.</span></span>  
   
  <span data-ttu-id="c8465-170">データを入力した後、**現在の深さ**の**MQStoBTS**キューは 1 です)。</span><span class="sxs-lookup"><span data-stu-id="c8465-170">After you enter the data, the **Current Depth** for the **MQStoBTS** queue is one (1).</span></span> <span data-ttu-id="c8465-171">カウントがゼロ (0) に戻る、アプリケーションでは、メッセージを処理するとき、**現在の深さ**の**BTStoMQS**が 1 (1)。</span><span class="sxs-lookup"><span data-stu-id="c8465-171">When the application processes the message, the count returns to zero (0) and the **Current Depth** for **BTStoMQS** becomes one (1).</span></span> <span data-ttu-id="c8465-172">また、メッセージの内容を表示することもできます。</span><span class="sxs-lookup"><span data-stu-id="c8465-172">You can also view the content of the message.</span></span>  
   
@@ -149,7 +150,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="c8465-176">メッセージをダブルクリックし、、**データ**シートです。</span><span class="sxs-lookup"><span data-stu-id="c8465-176">Double-click the message, and then select the **Data** sheet.</span></span> <span data-ttu-id="c8465-177">内のメッセージのテキストを表示することができます、**メッセージ データ**ボックス。</span><span class="sxs-lookup"><span data-stu-id="c8465-177">You can view the text of the message in the **Message Data** box.</span></span>  
   
-3.  <span data-ttu-id="c8465-178">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8465-178">Click **OK**.</span></span>  
+3.  <span data-ttu-id="c8465-178">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8465-178">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="c8465-179">参照</span><span class="sxs-lookup"><span data-stu-id="c8465-179">See Also</span></span>  
  <span data-ttu-id="c8465-180">[MQSeries アダプターとは何ですか。](../core/what-is-the-mqseries-adapter.md) </span><span class="sxs-lookup"><span data-stu-id="c8465-180">[What Is the MQSeries Adapter?](../core/what-is-the-mqseries-adapter.md) </span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "プライベート プロセス オーケストレーションのビジネス ルールの定義 |Microsoft ドキュメント"
-ms.custom: 
+title: プライベート プロセス オーケストレーションのビジネス ルールの定義 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, policies
@@ -37,7 +37,7 @@ helpviewer_keywords:
 - private processes, business rules
 - policies, creating
 ms.assetid: 5d2b0257-1b15-482b-a562-798b808e9a2d
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -46,6 +46,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010531"
 ---
 # <a name="defining-a-business-rule-for-a-private-process-orchestration"></a><span data-ttu-id="67cd5-102">プライベート プロセス オーケストレーションのビジネス ルールの定義</span><span class="sxs-lookup"><span data-stu-id="67cd5-102">Defining a Business Rule for a Private Process Orchestration</span></span>
 <span data-ttu-id="67cd5-103">受信確認プライベート プロセスで使用するビジネス ルールを定義できます。</span><span class="sxs-lookup"><span data-stu-id="67cd5-103">You can define a business rule for use in an acknowledgement private process.</span></span> <span data-ttu-id="67cd5-104">これにより、プライベート プロセス オーケストレーションを停止することなく、ビジネス ルールを大幅に変更できます。</span><span class="sxs-lookup"><span data-stu-id="67cd5-104">This lets you to modify the business rule dynamically without stopping the private-process orchestration.</span></span> <span data-ttu-id="67cd5-105">このプロセスでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] ビジネス ルール エンジンを使用します。</span><span class="sxs-lookup"><span data-stu-id="67cd5-105">This process uses the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Business Rule Engine.</span></span> <span data-ttu-id="67cd5-106">このプロセスには以下の手順が含まれます。</span><span class="sxs-lookup"><span data-stu-id="67cd5-106">This process involves the following steps:</span></span>  
@@ -74,7 +75,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  <span data-ttu-id="67cd5-126">作成したボキャブラリ フォルダを展開しを右クリックして**バージョン 1.0 (未保存)**、クリックして**新しい定義の追加**です。</span><span class="sxs-lookup"><span data-stu-id="67cd5-126">Expand the vocabulary folder you just created, right-click **Version 1.0 (not saved)**, and then click **Add New Definition**.</span></span>  
   
-6.  <span data-ttu-id="67cd5-127">**ボキャブラリの定義ウィザード**] ページで、[**定数値、値の範囲、または値セット**、クリックして**[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="67cd5-127">On the **Vocabulary Definition Wizard** page, select **Constant Value, Range of Values, or Set of Values**, and then click **Next**.</span></span>  
+6.  <span data-ttu-id="67cd5-127">**ボキャブラリの定義ウィザード**] ページで、[**定数値、値の範囲、または値セット**、クリックして **[次へ]** です。</span><span class="sxs-lookup"><span data-stu-id="67cd5-127">On the **Vocabulary Definition Wizard** page, select **Constant Value, Range of Values, or Set of Values**, and then click **Next**.</span></span>  
   
 7.  <span data-ttu-id="67cd5-128">**定数値、値の範囲、または値セット**] ページの [、**定義名**ボックスで、適切なボキャブラリ定数値の名前を入力します**Maximum Quantity Allowed。**、クリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="67cd5-128">On the **Constant Value, Range of Values, or Set of Values** page, in the **Definition Name** box, type the name of the appropriate vocabulary constant value, such as **Maximum Quantity Allowed**, and then click **Next**.</span></span>  
   
@@ -98,7 +99,7 @@ ms.lasthandoff: 12/01/2017
   
 8.  <span data-ttu-id="67cd5-138">**操作の種類**セクションで、 **「取得」操作の実行**です。</span><span class="sxs-lookup"><span data-stu-id="67cd5-138">In the **Operation Type** section, select **Perform “Get” operation**.</span></span>  
   
-9. <span data-ttu-id="67cd5-139">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="67cd5-139">Click **Finish**.</span></span>  
+9. <span data-ttu-id="67cd5-139">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="67cd5-139">Click **Finish**.</span></span>  
   
 10. <span data-ttu-id="67cd5-140">1 つまたは複数を定義するには、この手順を繰り返します`Set`操作で、 **「設定」操作の実行**の**操作の種類**です。</span><span class="sxs-lookup"><span data-stu-id="67cd5-140">Repeat these steps to define one or more `Set` operations, select **Perform “Set” operation** for the **Operation Type**.</span></span>  
   
@@ -112,7 +113,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="67cd5-145">ビジネス ルール作成ツールでポリシー エクスプローラ ペインで右クリック**ポリシー**、クリックして**新しいポリシーの追加**です。</span><span class="sxs-lookup"><span data-stu-id="67cd5-145">In Business Rule Composer, in the Policy Explorer pane, right-click **Policies**, and then click **Add New Policy**.</span></span>  
   
-2.  <span data-ttu-id="67cd5-146">をクリックして**"policy1"**です。</span><span class="sxs-lookup"><span data-stu-id="67cd5-146">Click **Policy1**.</span></span>  
+2.  <span data-ttu-id="67cd5-146">をクリックして **"policy1"** です。</span><span class="sxs-lookup"><span data-stu-id="67cd5-146">Click **Policy1**.</span></span>  
   
 3.  <span data-ttu-id="67cd5-147">プロパティ ペインで、設定、**名前**プロパティを適切なポリシーの名前にします。</span><span class="sxs-lookup"><span data-stu-id="67cd5-147">In the Property pane, set the **Name** property to the appropriate policy name.</span></span>  
   
@@ -172,7 +173,7 @@ ms.lasthandoff: 12/01/2017
     > [!NOTE]
     >  <span data-ttu-id="67cd5-183">使用する方法の例については、**ルールの呼び出し**オーケストレーションに図形を BTARN SDK に付属の PIP3A4PrivateResponder.odx オーケストレーションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="67cd5-183">For an example of how to use a **Call Rules** shape in an orchestration, see the PIP3A4PrivateResponder.odx orchestration included in the BTARN SDK.</span></span> <span data-ttu-id="67cd5-184">これは、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pipautomation\3a4\pr です。</span><span class="sxs-lookup"><span data-stu-id="67cd5-184">It is located at \<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\PipAutomation\3A4\PR.</span></span> <span data-ttu-id="67cd5-185">詳細については、次を参照してください。 [3A4 プライベート応答側オーケストレーションを使用して、ビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)です。</span><span class="sxs-lookup"><span data-stu-id="67cd5-185">For more information, see [3A4 Private Responder Orchestration Using a Business Rule](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md).</span></span>  
   
-12. <span data-ttu-id="67cd5-186">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="67cd5-186">Click **OK**.</span></span>  
+12. <span data-ttu-id="67cd5-186">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="67cd5-186">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="67cd5-187">参照</span><span class="sxs-lookup"><span data-stu-id="67cd5-187">See Also</span></span>  
  <span data-ttu-id="67cd5-188">[プログラミング ガイド](../../adapters-and-accelerators/accelerator-rosettanet/programming-guide2.md) </span><span class="sxs-lookup"><span data-stu-id="67cd5-188">[Programming Guide](../../adapters-and-accelerators/accelerator-rosettanet/programming-guide2.md) </span></span>  

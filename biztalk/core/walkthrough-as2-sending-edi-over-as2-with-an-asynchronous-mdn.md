@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル (AS2): 非同期 MDN による AS2 経由で EDI の送信 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル (AS2): 非同期 MDN による AS2 経由で EDI の送信 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 83644ac9-7023-4b09-966c-7c41d36f6b11
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22292410"
 ---
 # <a name="walkthrough-as2-sending-edi-over-as2-with-an-asynchronous-mdn"></a><span data-ttu-id="33a62-102">チュートリアル (AS2): 非同期 MDN による AS2 経由での EDI の送信</span><span class="sxs-lookup"><span data-stu-id="33a62-102">Walkthrough (AS2): Sending EDI over AS2 with an Asynchronous MDN</span></span>
 <span data-ttu-id="33a62-103">このチュートリアルでは、非同期 MDN による AS2 経由での EDI メッセージの送信用のソリューションを作成する一連の手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="33a62-103">This walkthrough provides a set of step-by-step procedures that creates a solution for sending EDI messages over AS2, with an asynchronous MDN.</span></span>  <span data-ttu-id="33a62-104">このチュートリアルでは、完全なソリューションを単一のコンピューター上で作成およびテストできます。</span><span class="sxs-lookup"><span data-stu-id="33a62-104">You can create and test the full solution in this walkthrough on a single computer</span></span>  
@@ -150,7 +151,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="33a62-188">**スクリプト マップの追加** ダイアログ ボックスで、入力`BtsHttpReceive.dll`で、**要求パス**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="33a62-188">In the **Add Script Map** dialog box, enter `BtsHttpReceive.dll` in the **Request path** field.</span></span>  
   
-4.  <span data-ttu-id="33a62-189">**実行可能ファイル**フィールドで、をクリックして、**省略記号 (...)**ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive です。</span><span class="sxs-lookup"><span data-stu-id="33a62-189">In the **Executable** field, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span> <span data-ttu-id="33a62-190">BtsHttpReceive.dll を選択し、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-190">Select BtsHttpReceive.dll and click **OK**.</span></span>  
+4.  <span data-ttu-id="33a62-189">**実行可能ファイル**フィールドで、をクリックして、**省略記号 (...)** ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive です。</span><span class="sxs-lookup"><span data-stu-id="33a62-189">In the **Executable** field, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span> <span data-ttu-id="33a62-190">BtsHttpReceive.dll を選択し、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-190">Select BtsHttpReceive.dll and click **OK**.</span></span>  
   
 5.  <span data-ttu-id="33a62-191">入力`BizTalk HTTP Receive`で、`Name`フィールドをクリックして**要求の制限**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-191">Enter `BizTalk HTTP Receive` in the `Name` field, and then click **Request Restrictions**.</span></span>  
   
@@ -164,7 +165,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="33a62-197">IIS マネージャーを右クリックして**アプリケーション プール**選択**アプリケーション プールの追加**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-197">In IIS Manager, right-click **Application Pools** and select **Add Application Pool**.</span></span>  
   
-2.  <span data-ttu-id="33a62-198">**アプリケーション プールの追加**] ダイアログ ボックスで、入力**BizTalkAppPool**で**名前**、し、[ **.NET Framework V4.0.30210**で、**.NET framework のバージョン**ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="33a62-198">In the **Add Application Pool** dialog box, enter **BizTalkAppPool** in **Name**, and then select **.NET Framework V4.0.30210** in the **.NET Framework version** dropdown list.</span></span> <span data-ttu-id="33a62-199">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-199">Click **OK**.</span></span>  
+2.  <span data-ttu-id="33a62-198">**アプリケーション プールの追加**] ダイアログ ボックスで、入力**BizTalkAppPool**で**名前**、し、[ **.NET Framework V4.0.30210**で、**.NET framework のバージョン**ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="33a62-198">In the **Add Application Pool** dialog box, enter **BizTalkAppPool** in **Name**, and then select **.NET Framework V4.0.30210** in the **.NET Framework version** dropdown list.</span></span> <span data-ttu-id="33a62-199">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-199">Click **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="33a62-200">コンピューターにインストール済みの [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] のバージョンによって、バージョン番号が異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="33a62-200">The version number may vary depending on the version of [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] installed on the machine.</span></span>  
@@ -185,7 +186,7 @@ ms.lasthandoff: 09/20/2017
   
 10. <span data-ttu-id="33a62-209">省略記号 (...) ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive、**物理パス**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-209">Click the ellipsis (…) button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive for the **Physical path**.</span></span>  
   
-11. <span data-ttu-id="33a62-210">をクリックして**テストの設定**に表示されるエラーがないことを確認し、**接続のテスト** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="33a62-210">Click **Test Settings** and verify that there are no errors displayed in the **Test Connection** dialog box.</span></span> <span data-ttu-id="33a62-211">**[閉じる]**をクリックし、 **[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-211">Click **Close**, and then click **OK**.</span></span>  
+11. <span data-ttu-id="33a62-210">をクリックして**テストの設定**に表示されるエラーがないことを確認し、**接続のテスト** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="33a62-210">Click **Test Settings** and verify that there are no errors displayed in the **Test Connection** dialog box.</span></span> <span data-ttu-id="33a62-211">**[閉じる]** をクリックし、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-211">Click **Close**, and then click **OK**.</span></span>  
   
 12. <span data-ttu-id="33a62-212">IIS マネージャーでは、Contoso 仮想ディレクトリを選択し、、**機能ビュー**をダブルクリックして**認証**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-212">In IIS Manager, select the Contoso virtual directory and in the **Features View**, double-click **Authentication**.</span></span>  
   
@@ -201,7 +202,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="33a62-220">省略記号 (...) ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive、**物理パス**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-220">Click the ellipsis (…) button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive for the **Physical path**.</span></span>  
   
-5.  <span data-ttu-id="33a62-221">をクリックして**テストの設定**に表示されるエラーがないことを確認し、**接続のテスト** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="33a62-221">Click **Test Settings** and verify that there are no errors displayed in the **Test Connection** dialog box.</span></span> <span data-ttu-id="33a62-222">**[閉じる]**をクリックし、 **[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-222">Click **Close**, and then click **OK**.</span></span>  
+5.  <span data-ttu-id="33a62-221">をクリックして**テストの設定**に表示されるエラーがないことを確認し、**接続のテスト** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="33a62-221">Click **Test Settings** and verify that there are no errors displayed in the **Test Connection** dialog box.</span></span> <span data-ttu-id="33a62-222">**[閉じる]** をクリックし、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-222">Click **Close**, and then click **OK**.</span></span>  
   
 6.  <span data-ttu-id="33a62-223">IIS マネージャーでは、Contoso 仮想ディレクトリを選択し、、**機能ビュー**をダブルクリックして**認証**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-223">In IIS Manager, select the Contoso virtual directory and in the **Features View**, double-click **Authentication**.</span></span>  
   
@@ -232,17 +233,17 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="33a62-239">受信ポートに名前を付けます**RecvISAFromCont**、順にクリック**受信場所**コンソール ツリーでします。</span><span class="sxs-lookup"><span data-stu-id="33a62-239">Name the receive port as **RecvISAFromCont**, and then click **Receive Locations** in the console tree.</span></span>  
   
-4.  <span data-ttu-id="33a62-240">**[新規作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-240">Click **New**.</span></span>  
+4.  <span data-ttu-id="33a62-240">**[新規作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-240">Click **New**.</span></span>  
   
 5.  <span data-ttu-id="33a62-241">名前、受信場所は、select**ファイル**の**型**、順にクリック**構成**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-241">Name the receive location, select **FILE** for **Type**, and then click **Configure**.</span></span>  
   
 6.  <span data-ttu-id="33a62-242">**受信フォルダー**、手順 1. で作成したフォルダーの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="33a62-242">For **Receive folder**, enter the name of the folder that you created in step 1.</span></span>  
   
-7.  <span data-ttu-id="33a62-243">[ファイル マスク] にファイルの拡張子を入力します。</span><span class="sxs-lookup"><span data-stu-id="33a62-243">For File mask, enter the extension of your file.</span></span> <span data-ttu-id="33a62-244">テスト メッセージとして SamplePO.txt ファイルを使用する場合は、入力 **\*.txt**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-244">If you are using the SamplePO.txt file as your test message, enter **\*.txt**.</span></span> <span data-ttu-id="33a62-245">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-245">Click **OK**.</span></span>  
+7.  <span data-ttu-id="33a62-243">[ファイル マスク] にファイルの拡張子を入力します。</span><span class="sxs-lookup"><span data-stu-id="33a62-243">For File mask, enter the extension of your file.</span></span> <span data-ttu-id="33a62-244">テスト メッセージとして SamplePO.txt ファイルを使用する場合は、入力 **\*.txt**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-244">If you are using the SamplePO.txt file as your test message, enter **\*.txt**.</span></span> <span data-ttu-id="33a62-245">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-245">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="33a62-246">**受信パイプライン**、既定の**PassThruReceive**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-246">For **Receive pipeline**, accept the default of **PassThruReceive**.</span></span>  
   
-9. <span data-ttu-id="33a62-247">をクリックして**[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="33a62-247">Click **OK**, and then click **OK** again.</span></span>  
+9. <span data-ttu-id="33a62-247">をクリックして **[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="33a62-247">Click **OK**, and then click **OK** again.</span></span>  
   
 10. <span data-ttu-id="33a62-248">をクリックして、**受信場所** ノードを右クリックし、受信場所、およびをクリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-248">Click the **Receive Locations** node, right-click your receive location, and then click **Enable**.</span></span>  
   
@@ -262,7 +263,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="33a62-256">コンソール ツリーで、次のように選択します。**フィルター**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-256">In the console tree, select **Filters**.</span></span> <span data-ttu-id="33a62-257">**プロパティ**、入力**BTS です。ReceivePortName**;**演算子**、入力 **==** ; および**値**EDI を受信する受信ポートの名前を入力インターチェンジ (`RecvISAFromCont`)。</span><span class="sxs-lookup"><span data-stu-id="33a62-257">For **Property**, enter **BTS.ReceivePortName**; for **Operator**, enter **==**; and for **Value** enter the name of the receive port that will receive the EDI interchange (`RecvISAFromCont`).</span></span>  
   
-8.  <span data-ttu-id="33a62-258">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-258">Click **OK**.</span></span>  
+8.  <span data-ttu-id="33a62-258">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-258">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="33a62-259">クリックして、**送信ポート**管理コンソールで、ノードは、送信ポートを右クリックし、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-259">Click the **Send Ports** node in the Administration Console, right-click your send port, and then click **Start**.</span></span>  
   
@@ -272,13 +273,13 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="33a62-262">受信ポートに名前を付けます**RecvAS2ForFabrikam**、順にクリック**受信場所**コンソール ツリーでします。</span><span class="sxs-lookup"><span data-stu-id="33a62-262">Name the receive port as **RecvAS2ForFabrikam**, and then click **Receive Locations** in the console tree.</span></span>  
   
-3.  <span data-ttu-id="33a62-263">**[新規作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-263">Click **New**.</span></span>  
+3.  <span data-ttu-id="33a62-263">**[新規作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-263">Click **New**.</span></span>  
   
 4.  <span data-ttu-id="33a62-264">**受信場所のプロパティ**ダイアログ ボックスで、名前、受信場所で、選択**HTTP**の**型**、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-264">In the **Receive Location Properties** dialog box, name your receive location, select **HTTP** for **Type**, and then click **Configure**.</span></span>  
   
-5.  <span data-ttu-id="33a62-265">**HTTP トランスポートのプロパティ** ダイアログ ボックスで、入力**/Fabrikam/BTSHttpReceive.dll**の**仮想ディレクトリと ISAPI 拡張**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-265">In the **HTTP Transport Properties** dialog box, enter **/Fabrikam/BTSHttpReceive.dll** for **Virtual directory plus ISAPI extension**.</span></span> <span data-ttu-id="33a62-266">クリア**成功した場合の戻り値の関連付けハンドル**選択**失敗した要求を中断**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-266">Clear **Return correlation handle on success** and select **Suspend failed requests**.</span></span> <span data-ttu-id="33a62-267">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-267">Click **OK**.</span></span>  
+5.  <span data-ttu-id="33a62-265">**HTTP トランスポートのプロパティ** ダイアログ ボックスで、入力 **/Fabrikam/BTSHttpReceive.dll**の**仮想ディレクトリと ISAPI 拡張**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-265">In the **HTTP Transport Properties** dialog box, enter **/Fabrikam/BTSHttpReceive.dll** for **Virtual directory plus ISAPI extension**.</span></span> <span data-ttu-id="33a62-266">クリア**成功した場合の戻り値の関連付けハンドル**選択**失敗した要求を中断**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-266">Clear **Return correlation handle on success** and select **Suspend failed requests**.</span></span> <span data-ttu-id="33a62-267">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-267">Click **OK**.</span></span>  
   
-6.  <span data-ttu-id="33a62-268">選択**AS2Receive**の**受信パイプライン**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-268">Select **AS2Receive** for the **Receive Pipeline**.</span></span> <span data-ttu-id="33a62-269">をクリックして**[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="33a62-269">Click **OK**, and then click **OK** again.</span></span>  
+6.  <span data-ttu-id="33a62-268">選択**AS2Receive**の**受信パイプライン**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-268">Select **AS2Receive** for the **Receive Pipeline**.</span></span> <span data-ttu-id="33a62-269">をクリックして **[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="33a62-269">Click **OK**, and then click **OK** again.</span></span>  
   
 7.  <span data-ttu-id="33a62-270">をクリックして、**受信場所** ノードを右クリックし、受信場所、およびをクリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-270">Click the **Receive Locations** node, right-click your receive location, and then click **Enable**.</span></span>  
   
@@ -292,13 +293,13 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="33a62-276">**FILE トランスポートのプロパティ** ダイアログ ボックスの**コピー先フォルダー**、EDI ペイロード用に作成したローカル フォルダーを入力します。</span><span class="sxs-lookup"><span data-stu-id="33a62-276">In the **FILE Transport Properties** dialog box, for **Destination folder**, enter the local folder that you created for the EDI payload.</span></span>  
   
-5.  <span data-ttu-id="33a62-277">**ファイル名**ファイル名を入力します。</span><span class="sxs-lookup"><span data-stu-id="33a62-277">For **File name**, enter the file name.</span></span> <span data-ttu-id="33a62-278">テスト メッセージとして SamplePO.txt ファイルを使用する場合は、入力**%MessageID%.txt**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-278">If you are using the SamplePO.txt file as your test message, enter **%MessageID%.txt**.</span></span> <span data-ttu-id="33a62-279">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-279">Click **OK**.</span></span>  
+5.  <span data-ttu-id="33a62-277">**ファイル名**ファイル名を入力します。</span><span class="sxs-lookup"><span data-stu-id="33a62-277">For **File name**, enter the file name.</span></span> <span data-ttu-id="33a62-278">テスト メッセージとして SamplePO.txt ファイルを使用する場合は、入力 **%MessageID%.txt**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-278">If you are using the SamplePO.txt file as your test message, enter **%MessageID%.txt**.</span></span> <span data-ttu-id="33a62-279">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-279">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="33a62-280">既定の**PassThruTransmit**の**送信パイプライン**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-280">Accept the default of **PassThruTransmit** for **Send Pipeline**.</span></span>  
   
 7.  <span data-ttu-id="33a62-281">をクリックして**フィルター**コンソールのツリー、および EDI ペイロードを取得するフィルターのプロパティを追加します。</span><span class="sxs-lookup"><span data-stu-id="33a62-281">Click **Filters** in the console tree, and add filter properties for picking up the EDI payload.</span></span> <span data-ttu-id="33a62-282">最初の行での**プロパティ**、入力**BTS です。ReceivePortName**; の**演算子**、入力 **==** ;**値**AS2 を受信する受信ポートの名前を入力してくださいメッセージ (`RecvAS2ForFabrikam`); および**Group by**、受け入れる**と**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-282">On the first line, for **Property**, enter **BTS.ReceivePortName**; for **Operator**, enter **==**; for **Value**, enter the name of the receive port that receives the AS2 message (`RecvAS2ForFabrikam`); and for **Group by**, accept **And**.</span></span> <span data-ttu-id="33a62-283">2 番目の行の**プロパティ**、入力**EdiIntAS.IsAS2PayloadMessage**; の**演算子**、入力 **==** ; との**値**、入力**True**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-283">On the second line, for **Property**, enter **EdiIntAS.IsAS2PayloadMessage**; for **Operator**, enter **==**; and for **Value**, enter **True**.</span></span>  
   
-8.  <span data-ttu-id="33a62-284">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-284">Click **OK**.</span></span>  
+8.  <span data-ttu-id="33a62-284">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-284">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="33a62-285">クリックして、**送信ポート**ノードは、送信ポートを右クリックし、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-285">Click the **Send Ports** node, right-click your send port, and then click **Start**.</span></span>  
   
@@ -312,7 +313,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="33a62-290">をクリックして**フィルター**コンソールのツリー、および EDI ペイロードを取得するフィルターのプロパティを追加します。</span><span class="sxs-lookup"><span data-stu-id="33a62-290">Click **Filters** in the console tree, and add filter properties for picking up the EDI payload.</span></span> <span data-ttu-id="33a62-291">最初の行での**プロパティ**、入力**BTS です。ReceivePortName**; の**演算子**、入力 **==** ;**値**AS2 を受信する受信ポートの名前を入力してくださいメッセージ (`RecvAS2ForFabrikam`); および**Group by**、受け入れる**と**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-291">On the first line, for **Property**, enter **BTS.ReceivePortName**; for **Operator**, enter **==**; for **Value**, enter the name of the receive port that receives the AS2 message (`RecvAS2ForFabrikam`); and for **Group by**, accept **And**.</span></span> <span data-ttu-id="33a62-292">2 番目の行の**プロパティ**、入力**EdiIntAS.IsAS2AsynchronousMDN**; の**演算子**、入力 **==** ; との**値**、入力**True**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-292">On the second line, for **Property**, enter **EdiIntAS.IsAS2AsynchronousMDN**; for **Operator**, enter **==**; and for **Value**, enter **True**.</span></span>  
   
-5.  <span data-ttu-id="33a62-293">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-293">Click **OK**.</span></span>  
+5.  <span data-ttu-id="33a62-293">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-293">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="33a62-294">クリックして、**送信ポート**ノードは、送信ポートを右クリックし、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-294">Click the **Send Ports** node, right-click your send port, and then click **Start**.</span></span>  
   
@@ -322,13 +323,13 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="33a62-297">受信ポートに名前を付けます**RecvMDNFromFab**、順にクリック**受信場所**コンソール ツリーでします。</span><span class="sxs-lookup"><span data-stu-id="33a62-297">Name the receive port as **RecvMDNFromFab**, and then click **Receive Locations** in the console tree.</span></span>  
   
-3.  <span data-ttu-id="33a62-298">**[新規作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-298">Click **New**.</span></span>  
+3.  <span data-ttu-id="33a62-298">**[新規作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-298">Click **New**.</span></span>  
   
 4.  <span data-ttu-id="33a62-299">**受信場所のプロパティ**ダイアログ ボックスで、名前、受信場所で、選択**HTTP**の**型**、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-299">In the **Receive Location Properties** dialog box, name your receive location, select **HTTP** for **Type**, and then click **Configure**.</span></span>  
   
-5.  <span data-ttu-id="33a62-300">**HTTP トランスポートのプロパティ** ダイアログ ボックスで、入力**/Contoso/BTSHTTPReceive.dll**の**仮想ディレクトリと ISAPI 拡張**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-300">In the **HTTP Transport Properties** dialog box, enter **/Contoso/BTSHTTPReceive.dll** for **Virtual directory plus ISAPI extension**.</span></span> <span data-ttu-id="33a62-301">クリア**成功した場合の戻り値の関連付けハンドル**選択**失敗した要求を中断**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-301">Clear **Return correlation handle on success** and select **Suspend failed requests**.</span></span> <span data-ttu-id="33a62-302">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-302">Click **OK**.</span></span>  
+5.  <span data-ttu-id="33a62-300">**HTTP トランスポートのプロパティ** ダイアログ ボックスで、入力 **/Contoso/BTSHTTPReceive.dll**の**仮想ディレクトリと ISAPI 拡張**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-300">In the **HTTP Transport Properties** dialog box, enter **/Contoso/BTSHTTPReceive.dll** for **Virtual directory plus ISAPI extension**.</span></span> <span data-ttu-id="33a62-301">クリア**成功した場合の戻り値の関連付けハンドル**選択**失敗した要求を中断**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-301">Clear **Return correlation handle on success** and select **Suspend failed requests**.</span></span> <span data-ttu-id="33a62-302">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-302">Click **OK**.</span></span>  
   
-6.  <span data-ttu-id="33a62-303">選択**AS2Receive**の**受信パイプライン**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-303">Select **AS2Receive** for the **Receive Pipeline**.</span></span> <span data-ttu-id="33a62-304">をクリックして**[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="33a62-304">Click **OK**, and then click **OK** again.</span></span>  
+6.  <span data-ttu-id="33a62-303">選択**AS2Receive**の**受信パイプライン**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-303">Select **AS2Receive** for the **Receive Pipeline**.</span></span> <span data-ttu-id="33a62-304">をクリックして **[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="33a62-304">Click **OK**, and then click **OK** again.</span></span>  
   
 7.  <span data-ttu-id="33a62-305">をクリックして、**受信場所** ノードを右クリックし、受信場所、およびをクリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-305">Click the **Receive Locations** node, right-click your receive location, and then click **Enable**.</span></span>  
   
@@ -342,13 +343,13 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="33a62-311">**FILE トランスポートのプロパティ** ダイアログ ボックスの**コピー先フォルダー**MDN を送信するために作成したローカル フォルダーを入力します。</span><span class="sxs-lookup"><span data-stu-id="33a62-311">In the **FILE Transport Properties** dialog box, for **Destination folder**, enter the local folder you created to send the MDN to.</span></span>  
   
-5.  <span data-ttu-id="33a62-312">**ファイル名**、入力**%MessageID%.msg**です。をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-312">For **File name**, enter **%MessageID%.msg**. Click **OK**.</span></span>  
+5.  <span data-ttu-id="33a62-312">**ファイル名**、入力 **%MessageID%.msg**です。をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-312">For **File name**, enter **%MessageID%.msg**. Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="33a62-313">既定の**PassThruTransmit**の**送信パイプライン**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-313">Accept the default of **PassThruTransmit** for **Send Pipeline**.</span></span>  
   
-7.  <span data-ttu-id="33a62-314">をクリックして**フィルター**コンソール ツリーでします。</span><span class="sxs-lookup"><span data-stu-id="33a62-314">Click **Filters** in the console tree.</span></span> <span data-ttu-id="33a62-315">**プロパティ**、入力**BTS です。ReceivePortName**; の**演算子**、入力 **==** ;**値**、(MDNを受信する受信ポートの名前を入力してください`RecvMDNFromFab`);および**Group by**、受け入れる**と**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-315">For **Property**, enter **BTS.ReceivePortName**; for **Operator**, enter **==**; for **Value**, enter the name of the receive port that receives the MDN (`RecvMDNFromFab`); and for **Group by**, accept **And**.</span></span> <span data-ttu-id="33a62-316">2 番目の行の**プロパティ**、入力**EdiIntAS.IsAS2MdnResponseMessage**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-316">On a second line, for **Property**, enter **EdiIntAS.IsAS2MdnResponseMessage**.</span></span> <span data-ttu-id="33a62-317">**演算子**、入力 **==**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-317">For **Operator**, enter **==**.</span></span> <span data-ttu-id="33a62-318">**値**、入力**True**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-318">For **Value**, enter **True**.</span></span>  
+7.  <span data-ttu-id="33a62-314">をクリックして**フィルター**コンソール ツリーでします。</span><span class="sxs-lookup"><span data-stu-id="33a62-314">Click **Filters** in the console tree.</span></span> <span data-ttu-id="33a62-315">**プロパティ**、入力**BTS です。ReceivePortName**; の**演算子**、入力 **==** ;**値**、(MDNを受信する受信ポートの名前を入力してください`RecvMDNFromFab`);および**Group by**、受け入れる**と**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-315">For **Property**, enter **BTS.ReceivePortName**; for **Operator**, enter **==**; for **Value**, enter the name of the receive port that receives the MDN (`RecvMDNFromFab`); and for **Group by**, accept **And**.</span></span> <span data-ttu-id="33a62-316">2 番目の行の**プロパティ**、入力**EdiIntAS.IsAS2MdnResponseMessage**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-316">On a second line, for **Property**, enter **EdiIntAS.IsAS2MdnResponseMessage**.</span></span> <span data-ttu-id="33a62-317">**演算子**、入力 **==** です。</span><span class="sxs-lookup"><span data-stu-id="33a62-317">For **Operator**, enter **==**.</span></span> <span data-ttu-id="33a62-318">**値**、入力**True**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-318">For **Value**, enter **True**.</span></span>  
   
-8.  <span data-ttu-id="33a62-319">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-319">Click **OK**.</span></span>  
+8.  <span data-ttu-id="33a62-319">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-319">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="33a62-320">クリックして、**送信ポート**ノードは、送信ポートを右クリックし、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-320">Click the **Send Ports** node, right-click your send port, and then click **Start**.</span></span>  
   
@@ -398,7 +399,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="33a62-351">2 つの新しいタブの追加を取得 の横に表示されます、**全般**タブです。各タブは、一方向の AS2 アグリーメントの構成用です。</span><span class="sxs-lookup"><span data-stu-id="33a62-351">You will notice that two new tabs get added next to the **General** tab. Each tab is for configuring a one-way AS2 agreement.</span></span>  
   
-6.  <span data-ttu-id="33a62-352">次のタスクを実行、 **Contoso が Fabrikam ->**タブです。</span><span class="sxs-lookup"><span data-stu-id="33a62-352">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
+6.  <span data-ttu-id="33a62-352">次のタスクを実行、 **Contoso が Fabrikam ->** タブです。</span><span class="sxs-lookup"><span data-stu-id="33a62-352">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
   
     1.  <span data-ttu-id="33a62-353">**識別子** ページで、値を入力**AS2-から**と**AS2-に**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-353">On the **Identifiers** page, enter values for **AS2-From** and **AS2-To**.</span></span> <span data-ttu-id="33a62-354">**AS2-から**、入力`Contoso`です。</span><span class="sxs-lookup"><span data-stu-id="33a62-354">For **AS2-From**, enter `Contoso`.</span></span> <span data-ttu-id="33a62-355">**AS2-To**、入力`Fabrikam`です。</span><span class="sxs-lookup"><span data-stu-id="33a62-355">For **AS2- To**, enter `Fabrikam`.</span></span>  
   
@@ -417,20 +418,20 @@ ms.lasthandoff: 09/20/2017
   
         5.  <span data-ttu-id="33a62-363">**- Receipt-delivery-option (URL)**、入力**http://localhost/Contoso/BTSHttpReceive.dll**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-363">In **Receipt-Delivery-Option (URL)**, enter **http://localhost/Contoso/BTSHttpReceive.dll**.</span></span>  
   
-        6.  <span data-ttu-id="33a62-364">**廃棄する**は既定値に設定に指定した**- Receipt-delivery-option (URL)**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="33a62-364">The **Disposition-Notification-To** is by default set to the value you specified for **Receipt-Delivery-Option (URL)** property.</span></span> <span data-ttu-id="33a62-365">このフィールドの値は、AS2 処理時には使用されません。</span><span class="sxs-lookup"><span data-stu-id="33a62-365">The value of this field is not used during AS2 processing.</span></span>  
+        6.  <span data-ttu-id="33a62-364">**廃棄する**は既定値に設定に指定した **- Receipt-delivery-option (URL)** プロパティです。</span><span class="sxs-lookup"><span data-stu-id="33a62-364">The **Disposition-Notification-To** is by default set to the value you specified for **Receipt-Delivery-Option (URL)** property.</span></span> <span data-ttu-id="33a62-365">このフィールドの値は、AS2 処理時には使用されません。</span><span class="sxs-lookup"><span data-stu-id="33a62-365">The value of this field is not used during AS2 processing.</span></span>  
   
     3.  <span data-ttu-id="33a62-366">**送信ポート** ページで、EDI インターチェンジを Fabrikam に送信する双方向の送信ポートを関連付けます。</span><span class="sxs-lookup"><span data-stu-id="33a62-366">On the **Send Ports** page, associate the two-way send port that will be sending the EDI interchange to Fabrikam.</span></span> <span data-ttu-id="33a62-367">**送信ポート**グリッド 、**名前**列は、空のセルをクリックし、ドロップダウン リストから送信ポートを選択**SendISAToFab**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-367">In the **Send ports** grid, under the **Name** column, click an empty cell, and from the drop-down list, select the send port **SendISAToFab**.</span></span>  
   
-7.  <span data-ttu-id="33a62-368">次のタスクを実行、 **Fabrikam が Contoso ->**タブです。</span><span class="sxs-lookup"><span data-stu-id="33a62-368">Perform the following tasks on the **Fabrikam->Contoso** tab.</span></span>  
+7.  <span data-ttu-id="33a62-368">次のタスクを実行、 **Fabrikam が Contoso ->** タブです。</span><span class="sxs-lookup"><span data-stu-id="33a62-368">Perform the following tasks on the **Fabrikam->Contoso** tab.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="33a62-369">このチュートリアルでは、必要な値をタブに指定し、アグリーメントを正常に作成できるようにします。</span><span class="sxs-lookup"><span data-stu-id="33a62-369">In this walkthrough, we specify the required value in the tab so that an agreement can be successfully created.</span></span> <span data-ttu-id="33a62-370">アグリーメントを正常に作成する両方の一方向アグリーメント タブの値に対して定義されている必要があります**[as2_from]**と**AS2-に**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-370">To successfully create an agreement, both one-way agreement tabs must have values defined for **AS2_From** and **AS2-To**.</span></span>  
+    >  <span data-ttu-id="33a62-369">このチュートリアルでは、必要な値をタブに指定し、アグリーメントを正常に作成できるようにします。</span><span class="sxs-lookup"><span data-stu-id="33a62-369">In this walkthrough, we specify the required value in the tab so that an agreement can be successfully created.</span></span> <span data-ttu-id="33a62-370">アグリーメントを正常に作成する両方の一方向アグリーメント タブの値に対して定義されている必要があります **[as2_from]** と**AS2-に**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-370">To successfully create an agreement, both one-way agreement tabs must have values defined for **AS2_From** and **AS2-To**.</span></span>  
   
     1.  <span data-ttu-id="33a62-371">**識別子** ページで、値を入力**AS2-から**と**AS2-に**です。</span><span class="sxs-lookup"><span data-stu-id="33a62-371">On the **Identifiers** page, enter values for **AS2-From** and **AS2-To**.</span></span> <span data-ttu-id="33a62-372">**AS2-から**、入力`Fabrikam`です。</span><span class="sxs-lookup"><span data-stu-id="33a62-372">For **AS2-From**, enter `Fabrikam`.</span></span> <span data-ttu-id="33a62-373">**AS2-To**、入力`Contoso`です。</span><span class="sxs-lookup"><span data-stu-id="33a62-373">For **AS2- To**, enter `Contoso`.</span></span>  
   
-8.  <span data-ttu-id="33a62-374">**[適用]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-374">Click **Apply**.</span></span>  
+8.  <span data-ttu-id="33a62-374">**[適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-374">Click **Apply**.</span></span>  
   
-9. <span data-ttu-id="33a62-375">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-375">Click **OK**.</span></span> <span data-ttu-id="33a62-376">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="33a62-376">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="33a62-377">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="33a62-377">The newly added agreement is enabled by default.</span></span>  
+9. <span data-ttu-id="33a62-375">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33a62-375">Click **OK**.</span></span> <span data-ttu-id="33a62-376">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="33a62-376">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="33a62-377">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="33a62-377">The newly added agreement is enabled by default.</span></span>  
   
 ### <a name="testing-the-walkthrough"></a><span data-ttu-id="33a62-378">チュートリアルのテスト</span><span class="sxs-lookup"><span data-stu-id="33a62-378">Testing the Walkthrough</span></span>  
  <span data-ttu-id="33a62-379">ここでは、チュートリアルをテストする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="33a62-379">This section provides information on how to test the walkthrough.</span></span>  

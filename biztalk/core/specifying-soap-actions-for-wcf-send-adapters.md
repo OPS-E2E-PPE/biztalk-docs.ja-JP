@@ -1,11 +1,11 @@
 ---
-title: "SOAP アクションの指定の WCF 送信アダプタ |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP アクションの指定の WCF 送信アダプタ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send adapters, mapping
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - mapping, send adapters
 - mapping, WCF send adapters
 ms.assetid: fa9878eb-65b5-4ccc-b727-ff7e09ba6302
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276642"
 ---
 # <a name="specifying-soap-actions-for-wcf-send-adapters"></a><span data-ttu-id="78624-102">WCF 送信アダプタ用の SOAP アクションの指定</span><span class="sxs-lookup"><span data-stu-id="78624-102">Specifying SOAP Actions for WCF Send Adapters</span></span>
 <span data-ttu-id="78624-103">設定することができます、 **WCF です。アクション**WCF 送信アダプタのトランスポートのプロパティ ダイアログ ボックスまたはオーケストレーションのコンテキスト プロパティ**式**図形です。</span><span class="sxs-lookup"><span data-stu-id="78624-103">You can set the **WCF.Action** context property in the WCF send adapter transport properties dialog box or in the orchestration **Expression** shapes.</span></span> <span data-ttu-id="78624-104">設定した場合、 **WCF です。アクション**オーケストレーションのコンテキスト プロパティのままにする必要があります、**アクション**静的送信ポートの WCF アダプター トランスポートのプロパティ ダイアログ ボックスでフィールドを空白。</span><span class="sxs-lookup"><span data-stu-id="78624-104">If you set the **WCF.Action** context property in the orchestration, you need to leave the **Action** field blank in the WCF adapter transport properties dialog box for the static send ports.</span></span> <span data-ttu-id="78624-105">また、静的送信ポートでアクションを指定する場合、 **WCF です。アクション**オーケストレーションで設定したコンテキスト プロパティは上書きされます。</span><span class="sxs-lookup"><span data-stu-id="78624-105">If you also specify an action in the static send ports, the **WCF.Action** context property you set in the orchestration will be overridden.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server データベースの監視 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server データベースの監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3f137fc5-0e95-4952-8465-008771a1a377
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298922"
 ---
 # <a name="monitor-the-biztalk-server-databases"></a><span data-ttu-id="ac70a-102">BizTalk Server データベースを監視します。</span><span class="sxs-lookup"><span data-stu-id="ac70a-102">Monitor the BizTalk Server Databases</span></span>
 <span data-ttu-id="ac70a-103">管理、メッセージ ボックスで、または DTA データベースにおける既知の問題を識別するモニターの BizTalk Server の SQL エージェント ジョブを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="ac70a-103">You can run the Monitor BizTalk Server SQL Agent job to identify any known issues in Management, Message Box, or DTA databases.</span></span> <span data-ttu-id="ac70a-104">このジョブは、BizTalk Server 管理コンソールで BizTalk グループを構成するとき、または以前のバージョンから BizTalk をアップグレードするときに作成されます。</span><span class="sxs-lookup"><span data-stu-id="ac70a-104">The job is created when you configure a BizTalk group in BizTalk Server Administration console or upgrade BizTalk from the previous version.</span></span>  

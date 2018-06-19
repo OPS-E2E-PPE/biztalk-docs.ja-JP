@@ -1,11 +1,11 @@
 ---
-title: "Recaller オブジェクト |Microsoft ドキュメント"
-ms.custom: 
+title: Recaller オブジェクト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Recaller object
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - process management solution tutorial, Recaller object
 - process management solution tutorial, errors
 ms.assetid: b30ad1ae-475f-4913-b402-4d3263fcf072
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279890"
 ---
 # <a name="the-recaller-object"></a><span data-ttu-id="7681c-102">Recaller オブジェクト</span><span class="sxs-lookup"><span data-stu-id="7681c-102">The Recaller Object</span></span>
 <span data-ttu-id="7681c-103">ビジネス プロセス管理ソリューションでは、失敗したオブジェクト メソッドの呼び出しが、汎用的な方法で再試行できます。</span><span class="sxs-lookup"><span data-stu-id="7681c-103">The business process management solution provides for retrying, in a generic way, some failed object method calls.</span></span> <span data-ttu-id="7681c-104">このソリューションは、 **Recaller**内のオブジェクト、 **ExceptionHandler**オーケストレーションです。</span><span class="sxs-lookup"><span data-stu-id="7681c-104">The solution does this through the **Recaller** object in the **ExceptionHandler** orchestration.</span></span> <span data-ttu-id="7681c-105">**ExceptionHandler**オーケストレーションでは、オブジェクトを使用して、オブジェクト メソッドの呼び出しを再試行してください。</span><span class="sxs-lookup"><span data-stu-id="7681c-105">The **ExceptionHandler** orchestration uses the object to retry object method calls.</span></span> <span data-ttu-id="7681c-106">詳細については、次を参照してください。 [ExceptionHandler Orchestration](../core/the-exceptionhandler-orchestration.md)です。</span><span class="sxs-lookup"><span data-stu-id="7681c-106">For more information, see [The ExceptionHandler Orchestration](../core/the-exceptionhandler-orchestration.md).</span></span>  

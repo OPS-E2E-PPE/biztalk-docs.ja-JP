@@ -1,14 +1,14 @@
 ---
-title: "コンピューターのインストールの準備 |Microsoft ドキュメント"
-ms.custom: 
+title: コンピューターのインストールの準備 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 03/15/2016
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53df7a2f-638b-4921-a97f-736760248526
-caps.latest.revision: 
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710461"
 ---
 # <a name="prepare-your-computer-for-installation"></a><span data-ttu-id="8e843-102">インストールのためのコンピューターの準備</span><span class="sxs-lookup"><span data-stu-id="8e843-102">Prepare Your Computer for Installation</span></span>
 <span data-ttu-id="8e843-103">ここでは、コンピューターの準備を整える手順について説明します。必要なソフトウェアをすべてインストールして構成し、アカウントを作成してアクセス許可を設定します。</span><span class="sxs-lookup"><span data-stu-id="8e843-103">This topic lists the steps to prepare your computer by installing and configuring all software prerequisites, and then creating accounts and setting permissions.</span></span>  
@@ -79,7 +80,7 @@ ms.lasthandoff: 02/28/2018
 
 <span data-ttu-id="8e843-133">次のことも考慮してください。</span><span class="sxs-lookup"><span data-stu-id="8e843-133">Also consider the following:</span></span>  
   
-- <span data-ttu-id="8e843-134">**.Net framework 3.5 機能**: .NET Framework 4.5 と .NET Framework 3.5 は、BizTalk Adapter Pack を使用する .Net アプリケーションを開発に使用できます。</span><span class="sxs-lookup"><span data-stu-id="8e843-134">**.Net Framework 3.5 Features**: .NET Framework 4.5 and .NET Framework 3.5 can be used to develop .Net applications involving the BizTalk Adapter Pack.</span></span> <span data-ttu-id="8e843-135">通常、 **.NET Framework 4.5 機能**が既にインストールされています。</span><span class="sxs-lookup"><span data-stu-id="8e843-135">Typically, **.NET Framework 4.5 Features** is already installed.</span></span> <span data-ttu-id="8e843-136">このコンピューターにアプリケーションを作成する .NET Framework 3.5 を使用する場合**.Net Framework 3.5 機能**もインストールできます。</span><span class="sxs-lookup"><span data-stu-id="8e843-136">If you will use .NET Framework 3.5 to create applications on this computer, then **.Net Framework 3.5 Features** can also be installed.</span></span>  
+- <span data-ttu-id="8e843-134">**.Net framework 3.5 機能**: .NET Framework 4.5 と .NET Framework 3.5 は、BizTalk Adapter Pack を使用する .Net アプリケーションを開発に使用できます。</span><span class="sxs-lookup"><span data-stu-id="8e843-134">**.Net Framework 3.5 Features**: .NET Framework 4.5 and .NET Framework 3.5 can be used to develop .Net applications involving the BizTalk Adapter Pack.</span></span> <span data-ttu-id="8e843-135">通常、 **.NET Framework 4.5 機能**が既にインストールされています。</span><span class="sxs-lookup"><span data-stu-id="8e843-135">Typically, **.NET Framework 4.5 Features** is already installed.</span></span> <span data-ttu-id="8e843-136">このコンピューターにアプリケーションを作成する .NET Framework 3.5 を使用する場合 **.Net Framework 3.5 機能**もインストールできます。</span><span class="sxs-lookup"><span data-stu-id="8e843-136">If you will use .NET Framework 3.5 to create applications on this computer, then **.Net Framework 3.5 Features** can also be installed.</span></span>  
   
 - <span data-ttu-id="8e843-137">**メッセージ キュー**: MSMQ アダプターを使用する場合は、**[メッセージ キュー]** をオンにしてローカルの MSMQ ストアを作成できます。</span><span class="sxs-lookup"><span data-stu-id="8e843-137">**Message Queuing**: If you are using the MSMQ adapter, you can create a local MSMQ store by checking **Message Queuing**.</span></span>  
   
@@ -337,7 +338,7 @@ ms.lasthandoff: 02/28/2018
   
      <span data-ttu-id="8e843-304">**Windows 8.1**: キーボードの Windows ボタンをクリックして「**イベント ビューアー**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="8e843-304">**Windows 8.1**: Click the Windows button on the keyboard and type **Event Viewer**.</span></span> <span data-ttu-id="8e843-305">検索 ウィンドウで、**設定** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8e843-305">In the Search window, click **Settings**.</span></span> <span data-ttu-id="8e843-306">検索結果 ウィンドウで、**イベント ログの表示** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8e843-306">In the Results window, click **View event logs**.</span></span>  
   
-     <span data-ttu-id="8e843-307">**Windows 7 SP1**: [スタート] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8e843-307">**Windows 7 SP1**: Click Start.</span></span> <span data-ttu-id="8e843-308">**[検索]** テキスト ボックスに**「イベント ビューアー」**と入力し、クリックして開きます。</span><span class="sxs-lookup"><span data-stu-id="8e843-308">In the **Search** text box, type **Event Viewer**, and click it to open.</span></span>  
+     <span data-ttu-id="8e843-307">**Windows 7 SP1**: [スタート] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8e843-307">**Windows 7 SP1**: Click Start.</span></span> <span data-ttu-id="8e843-308">**[検索]** テキスト ボックスに **「イベント ビューアー」** と入力し、クリックして開きます。</span><span class="sxs-lookup"><span data-stu-id="8e843-308">In the **Search** text box, type **Event Viewer**, and click it to open.</span></span>  
   
 2.  <span data-ttu-id="8e843-309">**[Windows ログ]** を展開し、**[アプリケーション]** を右クリックして **[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8e843-309">Expand **Windows Logs**, right-click **Application**, and then click **Properties**.</span></span> <span data-ttu-id="8e843-310">**[ログのプロパティ]**:</span><span class="sxs-lookup"><span data-stu-id="8e843-310">In **Log Properties**:</span></span>  
   

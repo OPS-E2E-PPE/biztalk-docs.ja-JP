@@ -1,11 +1,11 @@
 ---
-title: "SSO のセキュリティに関する推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: SSO のセキュリティに関する推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, deploying
@@ -31,7 +31,7 @@ helpviewer_keywords:
 - SSO, user accounts
 - Master Secret server, best practices
 ms.assetid: 7ae922b4-fd48-41f4-aaab-419a5e22c753
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -40,6 +40,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279842"
 ---
 # <a name="sso-security-recommendations"></a><span data-ttu-id="2965a-102">SSO のセキュリティに関する推奨事項</span><span class="sxs-lookup"><span data-stu-id="2965a-102">SSO Security Recommendations</span></span>
 <span data-ttu-id="2965a-103">エンタープライズ シングル サインオン (SSO) システムを使用すると、ユーザーは 1 組の資格情報だけを使用してさまざまなシステムに接続できるようになります。</span><span class="sxs-lookup"><span data-stu-id="2965a-103">With the Enterprise Single Sign-On (SSO) system, users can connect to different systems by using only one set of credentials.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="2965a-104"> では、SSO システムを機密情報の格納場所として使用しています。</span><span class="sxs-lookup"><span data-stu-id="2965a-104"> leverages the SSO system as a store for sensitive information.</span></span> <span data-ttu-id="2965a-105">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイムをインストールするたびにエンタープライズ シングル サインオンが自動的にインストールされますが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境に関係なく、エンタープライズ シングル サインオンをスタンドアロン コンポーネントとしてインストールすることもできます。</span><span class="sxs-lookup"><span data-stu-id="2965a-105">Although [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] automatically installs whenever you install the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] runtime, you can also install Enterprise Single Sign-On as a stand-alone component, independent of your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span> <span data-ttu-id="2965a-106">エンタープライズ シングル サインオンに関する詳細については、次を参照してください。[を使用して SSO](../core/using-sso.md)です。</span><span class="sxs-lookup"><span data-stu-id="2965a-106">For more information about Enterprise Single Sign-On, see [Using SSO](../core/using-sso.md).</span></span> <span data-ttu-id="2965a-107">SSO サービスとリソースをセキュリティで保護して環境に展開するには、次のガイドラインに従うことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="2965a-107">It is recommended you follow these guidelines for securing and deploying the Enterprise Single Sign-On (SSO) services and resources in your environment.</span></span>  

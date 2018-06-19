@@ -1,14 +1,14 @@
 ---
-title: "X12 TA1 受信確認エラー コード |Microsoft ドキュメント"
-ms.custom: 
+title: X12 TA1 受信確認エラー コード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47eb315f-ec99-4e1e-937b-22199255f14f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290850"
 ---
 # <a name="x12-ta1-acknowledgment-error-codes"></a><span data-ttu-id="5c67f-102">X12 TA1 受信確認エラー コード</span><span class="sxs-lookup"><span data-stu-id="5c67f-102">X12 TA1 Acknowledgment Error Codes</span></span>
 <span data-ttu-id="5c67f-103">このトピックでは、X12 TA1 受信確認のセグメント内で使用されるエラー コードの一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="5c67f-103">This topic lists the error codes used within the segments of an X12 TA1 acknowledgment.</span></span> <span data-ttu-id="5c67f-104">これらのセグメントの詳細については、次を参照してください。 [X12 TA1 受信確認](../core/x12-ta1-acknowledgment.md)です。</span><span class="sxs-lookup"><span data-stu-id="5c67f-104">For more information about these segments, see [X12 TA1 Acknowledgment](../core/x12-ta1-acknowledgment.md).</span></span>  

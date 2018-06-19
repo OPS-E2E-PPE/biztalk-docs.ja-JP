@@ -1,11 +1,11 @@
 ---
-title: "SOAP アダプターとは何ですか。 | Microsoft Docs"
-ms.custom: 
+title: SOAP アダプターとは何ですか。 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BizTalk Web Services Publishing Wizard, SOAP adapters
 - SOAP adapters, about SOAP adapters
 ms.assetid: 725e6e31-430f-49f3-b9dd-8e65b963da70
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289922"
 ---
 # <a name="what-is-the-soap-adapter"></a><span data-ttu-id="4f4d5-103">SOAP アダプターとは何ですか。</span><span class="sxs-lookup"><span data-stu-id="4f4d5-103">What Is the SOAP Adapter?</span></span>
 <span data-ttu-id="4f4d5-104">Web サービスは、WSDL (Web Services Description Language) に規定されている標準準拠のインターフェイスを備えたプログラムです。</span><span class="sxs-lookup"><span data-stu-id="4f4d5-104">Web services are programs with interfaces that adhere to the standards set forth in the Web Services Description Language (WSDL).</span></span> <span data-ttu-id="4f4d5-105">Microsoft BizTalk Server オーケストレーションを使用すると、操作しやすく直感的な方法で、関連する個々のビジネス機能を組み合わせて Web サービスを作成および使用できます。</span><span class="sxs-lookup"><span data-stu-id="4f4d5-105">You can use a Microsoft BizTalk Server orchestration to create and use Web services to combine separate but related business functions in a manageable and intuitive way.</span></span> <span data-ttu-id="4f4d5-106">Web サービス、およびオーケストレーションの詳細については、次を参照してください。 [Web サービスを使用する](../core/using-web-services.md)です。</span><span class="sxs-lookup"><span data-stu-id="4f4d5-106">For more information about Web services and orchestration, see [Using Web Services](../core/using-web-services.md).</span></span>  

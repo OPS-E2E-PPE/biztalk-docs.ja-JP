@@ -1,14 +1,14 @@
 ---
-title: "イベント ログに情報を書き込む |Microsoft ドキュメント"
-ms.custom: 
+title: イベント ログに情報を書き込む |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d7398dc-29d8-4a7a-bab4-c8f128b47dca
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289578"
 ---
 # <a name="writing-information-to-the-event-log"></a><span data-ttu-id="328f3-102">イベント ログへの情報の書き込み</span><span class="sxs-lookup"><span data-stu-id="328f3-102">Writing Information to the Event Log</span></span>
 <span data-ttu-id="328f3-103">既定のアプリケーション ログまたはカスタム イベント ログに情報を書き込むことで、BizTalk アプリケーション内の異なるビジネス プロセスの進捗を監視できます。</span><span class="sxs-lookup"><span data-stu-id="328f3-103">You may want to monitor the progress of the different business processes within your BizTalk application by writing information to the default Application log or to a custom event log.</span></span> <span data-ttu-id="328f3-104">イベント ログへの書き込みは、次のようなシナリオで役に立ちます。</span><span class="sxs-lookup"><span data-stu-id="328f3-104">Writing to the event log can be useful in the following scenarios:</span></span>  

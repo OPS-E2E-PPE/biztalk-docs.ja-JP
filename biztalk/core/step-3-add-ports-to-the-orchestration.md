@@ -1,14 +1,14 @@
 ---
-title: "手順 3: オーケストレーション ポートを追加、|Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: オーケストレーション ポートを追加、|Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 245df16e-d327-4c79-be85-004134d5ea6f
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279834"
 ---
 # <a name="step-3-add-ports-to-the-orchestration"></a><span data-ttu-id="8279a-102">ステップ 3: オーケストレーションへのポートの追加</span><span class="sxs-lookup"><span data-stu-id="8279a-102">Step 3: Add Ports to the Orchestration</span></span>
 <span data-ttu-id="8279a-103">![手順 4 の 3](../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span><span class="sxs-lookup"><span data-stu-id="8279a-103">![Step 3 of 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span></span>  
   
  <span data-ttu-id="8279a-104">**所要時間:** 10 分</span><span class="sxs-lookup"><span data-stu-id="8279a-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="8279a-105">**目標:**このステップで、EAIProcess オーケストレーションに 3 つのポートを追加してそれらを構成します。</span><span class="sxs-lookup"><span data-stu-id="8279a-105">**Objective:** In this step, you add three ports to the EAIProcess orchestration and configure them.</span></span>  
+ <span data-ttu-id="8279a-105">**目標:** このステップで、EAIProcess オーケストレーションに 3 つのポートを追加してそれらを構成します。</span><span class="sxs-lookup"><span data-stu-id="8279a-105">**Objective:** In this step, you add three ports to the EAIProcess orchestration and configure them.</span></span>  
   
- <span data-ttu-id="8279a-106">**目的:**ポート、オーケストレーションはメッセージを送信し、他のビジネス プロセスからメッセージを受信方法を指定します。</span><span class="sxs-lookup"><span data-stu-id="8279a-106">**Purpose:** Ports specify how your orchestration will send messages to and receive messages from other business processes.</span></span> <span data-ttu-id="8279a-107">各ポートは、種類、方向、バインドを保持しています。これらの組み合わせによって、通信方向、通信方式、メッセージの送信先場所と送信元場所、および通信の実行方法が決まります。</span><span class="sxs-lookup"><span data-stu-id="8279a-107">Each port has a type, a direction, and a binding, which together determine the direction of communication, the pattern of communication, the location to or from which the message is sent or received, and how the communication takes place.</span></span> <span data-ttu-id="8279a-108">このステップで作成および構成する 3 つのポートには、それぞれ次の役割があります。</span><span class="sxs-lookup"><span data-stu-id="8279a-108">The three ports you create and configure in this step fulfill the following roles:</span></span>  
+ <span data-ttu-id="8279a-106">**目的:** ポート、オーケストレーションはメッセージを送信し、他のビジネス プロセスからメッセージを受信方法を指定します。</span><span class="sxs-lookup"><span data-stu-id="8279a-106">**Purpose:** Ports specify how your orchestration will send messages to and receive messages from other business processes.</span></span> <span data-ttu-id="8279a-107">各ポートは、種類、方向、バインドを保持しています。これらの組み合わせによって、通信方向、通信方式、メッセージの送信先場所と送信元場所、および通信の実行方法が決まります。</span><span class="sxs-lookup"><span data-stu-id="8279a-107">Each port has a type, a direction, and a binding, which together determine the direction of communication, the pattern of communication, the location to or from which the message is sent or received, and how the communication takes place.</span></span> <span data-ttu-id="8279a-108">このステップで作成および構成する 3 つのポートには、それぞれ次の役割があります。</span><span class="sxs-lookup"><span data-stu-id="8279a-108">The three ports you create and configure in this step fulfill the following roles:</span></span>  
   
 -   <span data-ttu-id="8279a-109">**ReceiveRequestPort**倉庫から在庫補充要求メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="8279a-109">**ReceiveRequestPort** receives inventory replenishment request messages from the warehouse.</span></span>  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="8279a-119">オーケストレーション デザイナで、オーケストレーション ツールボックスからドラッグして、**ポート**図形を左側の**ポート画面**並列に、 **ReceiveRequest**図形です。</span><span class="sxs-lookup"><span data-stu-id="8279a-119">In Orchestration Designer, from the orchestration Toolbox, drag the **Port** shape to the left-side **Port Surface**, parallel to the **ReceiveRequest** shape.</span></span> <span data-ttu-id="8279a-120">ポート構成ウィザードが自動的に起動します。</span><span class="sxs-lookup"><span data-stu-id="8279a-120">The Port Configuration Wizard starts automatically.</span></span>  
   
-3.  <span data-ttu-id="8279a-121">**[ポート構成ウィザードへようこそ]** ページで、 **[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8279a-121">On the **Welcome to the Port Configuration Wizard** page, click **Next**.</span></span>  
+3.  <span data-ttu-id="8279a-121">**[ポート構成ウィザードへようこそ]** ページで、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8279a-121">On the **Welcome to the Port Configuration Wizard** page, click **Next**.</span></span>  
   
 4.  <span data-ttu-id="8279a-122">**ポートのプロパティ** ページで、次の操作をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="8279a-122">On the **Port Properties** page, do the following, and then click **Next**.</span></span>  
   

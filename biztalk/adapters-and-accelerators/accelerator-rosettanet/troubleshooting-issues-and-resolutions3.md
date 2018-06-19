@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010331"
 ---
 # <a name="troubleshooting-issues-and-resolutions"></a><span data-ttu-id="7505b-102">トラブルシューティング : 問題と解決策</span><span class="sxs-lookup"><span data-stu-id="7505b-102">Troubleshooting: Issues and Resolutions</span></span>
 <span data-ttu-id="7505b-103">ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] の実行に関する問題を説明します。</span><span class="sxs-lookup"><span data-stu-id="7505b-103">This topic addresses issues related to running [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)].</span></span> <span data-ttu-id="7505b-104">個々の問題について、具体的な現象、考えられる原因、および解決策について詳しく説明します。</span><span class="sxs-lookup"><span data-stu-id="7505b-104">The individual issues detail a specific symptom, a possible cause, and a solution.</span></span>  
@@ -103,7 +104,7 @@ ms.lasthandoff: 12/01/2017
   
  <span data-ttu-id="7505b-153">-または-</span><span class="sxs-lookup"><span data-stu-id="7505b-153">-or-</span></span>  
   
- <span data-ttu-id="7505b-154">Id の BAM メッセージ アクティビティを終了してエラー  *\<ID 番号\>*です。</span><span class="sxs-lookup"><span data-stu-id="7505b-154">Error in terminating BAM message activity with id *\<ID number\>*.</span></span>  
+ <span data-ttu-id="7505b-154">Id の BAM メッセージ アクティビティを終了してエラー  *\<ID 番号\>* です。</span><span class="sxs-lookup"><span data-stu-id="7505b-154">Error in terminating BAM message activity with id *\<ID number\>*.</span></span>  
   
 ### <a name="possible-cause"></a><span data-ttu-id="7505b-155">考えられる原因</span><span class="sxs-lookup"><span data-stu-id="7505b-155">Possible Cause</span></span>  
  <span data-ttu-id="7505b-156">ビジネス アクティビティ監視 (BAM) 追跡ツールがインストールされていません。</span><span class="sxs-lookup"><span data-stu-id="7505b-156">The Business Activity Monitoring (BAM) tracking tool is not installed.</span></span>  
@@ -155,7 +156,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="7505b-188">をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。</span><span class="sxs-lookup"><span data-stu-id="7505b-188">Click **Start**, point to **Administrative Tools**, and then click **Internet Information Services (IIS) Manager**.</span></span>  
   
-2.  <span data-ttu-id="7505b-189">展開**\<コンピューター名\>(ローカル コンピューター)**を右クリックして**Web サービス拡張**、クリックして**新しい Web サービス拡張を追加**.</span><span class="sxs-lookup"><span data-stu-id="7505b-189">Expand **\<computer name\> (local computer)**, right-click **Web Service Extensions**, and then click **Add a new Web service extension**.</span></span>  
+2.  <span data-ttu-id="7505b-189">展開**\<コンピューター名\>(ローカル コンピューター)** を右クリックして**Web サービス拡張**、クリックして**新しい Web サービス拡張を追加**.</span><span class="sxs-lookup"><span data-stu-id="7505b-189">Expand **\<computer name\> (local computer)**, right-click **Web Service Extensions**, and then click **Add a new Web service extension**.</span></span>  
   
 3.  <span data-ttu-id="7505b-190">**新しい Web サービス拡張** ダイアログ ボックスで、**拡張機能名**ボックスに、入力**BizTalk ISAPI 拡張**、順にクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="7505b-190">In the **New Web Service Extension** dialog box, in the **Extension Name** box, type **BizTalk ISAPI Extension**, and then click **Add**.</span></span>  
   
@@ -282,13 +283,13 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="7505b-264">をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。</span><span class="sxs-lookup"><span data-stu-id="7505b-264">Click **Start**, point to **Administrative Tools**, and then click **Internet Information Services (IIS) Manager**.</span></span>  
   
-2.  <span data-ttu-id="7505b-265">展開**\<コンピューター名\>(ローカル コンピューター)**を右クリックして**Web サイト**、クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="7505b-265">Expand **\<computer name\> (local computer)**, right-click **Web Sites**, and then click **Properties**.</span></span>  
+2.  <span data-ttu-id="7505b-265">展開**\<コンピューター名\>(ローカル コンピューター)** を右クリックして**Web サイト**、クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="7505b-265">Expand **\<computer name\> (local computer)**, right-click **Web Sites**, and then click **Properties**.</span></span>  
   
 3.  <span data-ttu-id="7505b-266">選択**ISAPI フィルター**タブです。</span><span class="sxs-lookup"><span data-stu-id="7505b-266">Select **ISAPI Filters** tab.</span></span>  
   
 4.  <span data-ttu-id="7505b-267">選択**RpcProxy フィルター**、 をクリック**削除**です。</span><span class="sxs-lookup"><span data-stu-id="7505b-267">Select **RpcProxy filter**, and click **Remove**.</span></span>  
   
-5.  <span data-ttu-id="7505b-268">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7505b-268">Click **OK**.</span></span>  
+5.  <span data-ttu-id="7505b-268">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7505b-268">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="7505b-269">をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。</span><span class="sxs-lookup"><span data-stu-id="7505b-269">Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
   

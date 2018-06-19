@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server データベースの高可用性を実現する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server データベースの高可用性を実現する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - clustering, SQL Servers
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - data, persistence
 - SQL Server Analysis Services
 ms.assetid: 47fbc402-9e46-41dd-bc12-d1cde1982576
-caps.latest.revision: "41"
+caps.latest.revision: 41
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269346"
 ---
 # <a name="providing-high-availability-for-biztalk-server-databases"></a><span data-ttu-id="1132e-102">BizTalk Server データベースの高可用性を実現する</span><span class="sxs-lookup"><span data-stu-id="1132e-102">Providing High Availability for BizTalk Server Databases</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="1132e-103"> は、データの永続性を実現するという点で、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] に強く依存しています。</span><span class="sxs-lookup"><span data-stu-id="1132e-103"> relies heavily on [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] for data persistence.</span></span> <span data-ttu-id="1132e-104">その他すべての [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンポーネントおよびホストにも、多種多様な業務アプリケーション (メッセージの受信、処理、ルーティングなど) を統合するプロセスにおいて、それぞれ固有の役割がありますが、この作業をディスクに取り込み、維持するという役割は、データベース コンピューターにあります。</span><span class="sxs-lookup"><span data-stu-id="1132e-104">All other components and hosts in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] have specific roles in the process of integrating disparate business applications (for example, receiving, processing, or routing messages), but the database computer captures this work and persists it to disk.</span></span>  

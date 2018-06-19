@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server 層のスケール アウト |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 層のスケール アウト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, scaling
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - NLB system, scaling
 - scaling, host instances
 ms.assetid: 01d1ab20-d7a9-4d0b-a61e-65e56fe5010e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271970"
 ---
 # <a name="scaling-out-the-biztalk-server-tier"></a><span data-ttu-id="d4575-102">BizTalk Server 層のスケール アウト</span><span class="sxs-lookup"><span data-stu-id="d4575-102">Scaling Out the BizTalk Server Tier</span></span>
 <span data-ttu-id="d4575-103">BizTalk Server 層をスケール アウトするには、追加のハードウェアを既存のトポロジに追加します。</span><span class="sxs-lookup"><span data-stu-id="d4575-103">To scale out the BizTalk tier, add more hardware to the existing topology.</span></span> <span data-ttu-id="d4575-104">次のシナリオでは、ハードウェアを追加することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="d4575-104">It is recommended that you add hardware in the following scenarios:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "アダプター フレームワークについて | Microsoft Docs"
-ms.custom: 
+title: アダプター フレームワークについて | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bd1e2fd7-4e77-49c4-839d-c2bf16b10ba2
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289602"
 ---
 # <a name="what-is-the-adapter-framework"></a><span data-ttu-id="c4548-103">アダプター フレームワークについて</span><span class="sxs-lookup"><span data-stu-id="c4548-103">What Is the Adapter Framework?</span></span>
 <span data-ttu-id="c4548-104">BizTalk Server アダプター フレームワークは、すべてのアダプターで実装するための、または [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージング エンジンによる作業にアクセスするための、安定したオープンなメカニズムを提供します。</span><span class="sxs-lookup"><span data-stu-id="c4548-104">The BizTalk Adapter Framework offers a stable, open mechanism for all adapters to implement or access work from the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Messaging Engine.</span></span> <span data-ttu-id="c4548-105">説明されているインターフェイス、 **Microsoft.BizTalk.Adapter.Framework**名前空間には、構成のプロパティ ページを変更する手段を提供するアダプターが有効にします。</span><span class="sxs-lookup"><span data-stu-id="c4548-105">The interfaces described in the **Microsoft.BizTalk.Adapter.Framework** namespace enable adapters to provide a means to modify configuration property pages.</span></span> <span data-ttu-id="c4548-106">これは、サービスやスキーマを BizTalk プロジェクトにインポートする手段でもあります。</span><span class="sxs-lookup"><span data-stu-id="c4548-106">It also is a means to import services and schemas into the BizTalk project.</span></span>  

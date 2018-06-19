@@ -1,15 +1,15 @@
 ---
-title: "WCF LOB Adapter SDK のアーキテクチャの概要 |Microsoft ドキュメント"
-description: "ハンドラー、チャネルの実装、接続の管理、メタデータ、および WCF LOB Adapter SDK での WSDL の使用の概要"
-ms.custom: 
+title: WCF LOB Adapter SDK のアーキテクチャの概要 |Microsoft ドキュメント
+description: ハンドラー、チャネルの実装、接続の管理、メタデータ、および WCF LOB Adapter SDK での WSDL の使用の概要
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dbd9b63c-54a4-4f63-b3a8-8600f6009a74
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226626"
 ---
 # <a name="architecture-overview-of-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="280ca-103">WCF LOB Adapter SDK のアーキテクチャの概要</span><span class="sxs-lookup"><span data-stu-id="280ca-103">Architecture overview of the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="280ca-104">[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]は、WCF チャネル モデル上に構築され、大きなおよび動的なメタデータがある基幹業務システムにアダプターを作成するアダプターの開発者向けのデザイン時および実行時の拡張機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="280ca-104">The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] is built on top of the WCF Channel Model and provides design-time and run-time extensions for adapter developers to create adapters to line-of-business systems that have large and dynamic metadata.</span></span> <span data-ttu-id="280ca-105">使用して作成されたアダプタ、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]はカスタム WCF バインドとしてコンシューマーを確認します。</span><span class="sxs-lookup"><span data-stu-id="280ca-105">An adapter created using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] is surfaced to the consumer as a custom WCF binding.</span></span> <span data-ttu-id="280ca-106">次の図は、内部のアーキテクチャと WCF LOB Adapter SDK の主要なコンポーネントを示します。</span><span class="sxs-lookup"><span data-stu-id="280ca-106">The following figure shows the internal architecture and main components of WCF LOB Adapter SDK.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "WCF 受信アダプター用にサービス メタデータを公開 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF 受信アダプター用にサービス メタデータを公開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4df09e8f-e0c9-41c5-bd71-13bb0e96cd97
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710249"
 ---
 # <a name="publishing-service-metadata-for-the-wcf-receive-adapters"></a><span data-ttu-id="d53f0-102">WCF 受信アダプタへのサービス メタデータの公開</span><span class="sxs-lookup"><span data-stu-id="d53f0-102">Publishing Service Metadata for the WCF Receive Adapters</span></span>
 <span data-ttu-id="d53f0-103">BizTalk WCF サービス公開ウィザードでは、既存の WCF 受信場所のサービス メタデータを公開するための WCF サービスを作成できます。</span><span class="sxs-lookup"><span data-stu-id="d53f0-103">You can use the BizTalk WCF Service Publishing Wizard to create WCF services for publishing service metadata for existing WCF receive locations.</span></span> <span data-ttu-id="d53f0-104">公開されたメタデータ ドキュメントからクライアント サービス モデル コードを生成するには、Windows ソフトウェア開発キット (SDK) および .NET Framework ランタイム コンポーネントに含まれている Service Model メタデータ ユーティリティ ツール (SvcUtil.exe) を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="d53f0-104">To generate client service model code from the published metadata documents you can use the Service Model Metadata Utility tool (SvcUtil.exe) included in the Windows Software Development Kit (SDK) and .NET Framework Runtime Components.</span></span>  

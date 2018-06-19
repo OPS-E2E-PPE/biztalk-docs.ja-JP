@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288898"
 ---
 # <a name="what-is-the-wcf-custom-adapter"></a><span data-ttu-id="b888a-103">WCF-Custom アダプタについて</span><span class="sxs-lookup"><span data-stu-id="b888a-103">What Is the WCF-Custom Adapter?</span></span>
 <span data-ttu-id="b888a-104">WCF-Custom アダプタを使用すると、BizTalk Server で WCF 拡張機能コンポーネントを使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="b888a-104">The WCF-Custom adapter is used to enable the use of WCF extensibility components in BizTalk Server.</span></span> <span data-ttu-id="b888a-105">このアダプタによって、WCF フレームワークの完全な柔軟性が有効になります。</span><span class="sxs-lookup"><span data-stu-id="b888a-105">The adapter enables complete flexibility of the WCF framework.</span></span> <span data-ttu-id="b888a-106">これにより、ユーザーが、受信場所や送信ポートの WCF バインドを選択して構成できるようになります。</span><span class="sxs-lookup"><span data-stu-id="b888a-106">It allows users to select and configure a WCF binding for the receive location and send port.</span></span> <span data-ttu-id="b888a-107">また、エンドポイント動作やセキュリティ設定を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="b888a-107">It also allows users to set the endpoint behaviors and security settings.</span></span>  

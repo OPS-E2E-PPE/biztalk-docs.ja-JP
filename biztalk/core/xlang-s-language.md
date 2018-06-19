@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290914"
 ---
 # <a name="xlang-s-language"></a><span data-ttu-id="5023d-102">XLANG の言語</span><span class="sxs-lookup"><span data-stu-id="5023d-102">XLANG-s Language</span></span>
 <span data-ttu-id="5023d-103">XLANG/s は、XML、XSD、Web Services Description Language (WSDL) などのインターネット標準を使用するように設計されており、.NET ベースのオブジェクトおよびメッセージの操作に対するサポートが組み込まれています。</span><span class="sxs-lookup"><span data-stu-id="5023d-103">XLANG/s was designed to use Internet standards such as XML, XSD, and Web Services Description Language (WSDL), and has embedded support for working with .NET-based objects and messages.</span></span> <span data-ttu-id="5023d-104">XLANG/s は、C# の表現機能を備えたメッセージング言語と見なすことができます。</span><span class="sxs-lookup"><span data-stu-id="5023d-104">XLANG/s can be viewed as a messaging language with some of the expression capabilities of C#.</span></span> <span data-ttu-id="5023d-105">ただし、XLANG/s と C# の間でコードを移植することはできません。</span><span class="sxs-lookup"><span data-stu-id="5023d-105">However, code is not portable between XLANG/s and C#.</span></span>  

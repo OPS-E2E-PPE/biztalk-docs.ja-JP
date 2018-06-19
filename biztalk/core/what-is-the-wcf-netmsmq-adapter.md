@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289434"
 ---
 # <a name="what-is-the-wcf-netmsmq-adapter"></a><span data-ttu-id="e3968-103">WCF-NetMsmq アダプタについて</span><span class="sxs-lookup"><span data-stu-id="e3968-103">What Is the WCF-NetMsmq Adapter?</span></span>
 <span data-ttu-id="e3968-104">WCF-NetMsmq アダプタは、サービスとクライアントの両方が WCF ベースである環境でキュー テクノロジを使用して、接続が切断されたコンピュータ間の通信を実現します。</span><span class="sxs-lookup"><span data-stu-id="e3968-104">The WCF-NetMsmq adapter provides disconnected cross-computer communication by using queuing technology in an environment where both the services and clients are WCF based.</span></span> <span data-ttu-id="e3968-105">このアダプタはメッセージ キュー (MSMQ) トランスポートを使用し、メッセージではバイナリ エンコードを使用します。</span><span class="sxs-lookup"><span data-stu-id="e3968-105">It uses the Message Queuing (MSMQ) transport, and messages have binary encoding.</span></span>  

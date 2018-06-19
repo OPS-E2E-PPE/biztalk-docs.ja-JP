@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975360"
 ---
 # <a name="message-reference-for-the-business-process-management-solution"></a><span data-ttu-id="a9587-102">ビジネス プロセス管理ソリューションのメッセージ リファレンス</span><span class="sxs-lookup"><span data-stu-id="a9587-102">Message Reference for the Business Process Management Solution</span></span>
 <span data-ttu-id="a9587-103">このセクションでは、ソリューションの各オーケストレーションで使用されるメッセージおよびメッセージの種類の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="a9587-103">This section lists the messages and message types used by each orchestration in the solution.</span></span>  

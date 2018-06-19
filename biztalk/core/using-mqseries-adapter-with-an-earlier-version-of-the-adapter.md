@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/mqseries-adapter-deployment-options
-redirect_document_id: 
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 2aa74be2d86bcb8f32661fdcf06727eb6391861d
 ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710709"
 ---
 # <a name="using-mqseries-adapter-with-an-earlier-version-of-the-adapter"></a><span data-ttu-id="262a9-101">MQSeries アダプターを使用して、アダプターの以前のバージョン</span><span class="sxs-lookup"><span data-stu-id="262a9-101">Using MQSeries Adapter with an Earlier Version of the Adapter</span></span>
 <span data-ttu-id="262a9-102">MQSeries アダプターの異なるバージョンの BizTalk Server のすべてで、作業できる、同じリモートの WebSphere MQ Server Windows です。</span><span class="sxs-lookup"><span data-stu-id="262a9-102">The different BizTalk Server versions of the MQSeries adapter can all work with the same remote WebSphere MQ Server on Windows.</span></span> <span data-ttu-id="262a9-103">このことが可能なのは、MQSeries アダプタで使用されている次のバージョンの COM+ アプリケーションを、同一の WebSphere MQSeries コンピュータ上に共存させることができるためです。</span><span class="sxs-lookup"><span data-stu-id="262a9-103">This is possible because the following versions of the COM+ applications used with the MQSeries adapter can coexist on the same WebSphere MQSeries computer:</span></span>  
@@ -58,7 +59,7 @@ ms.lasthandoff: 02/28/2018
   
     -   <span data-ttu-id="262a9-123">をクリックして **次** 上、 **にユーザー ロールを追加**  ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="262a9-123">Click **Next** on the **Add Users to Roles** dialog box.</span></span>  
   
-    -   <span data-ttu-id="262a9-124">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="262a9-124">Click **Finish**.</span></span>  
+    -   <span data-ttu-id="262a9-124">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="262a9-124">Click **Finish**.</span></span>  
   
 5.  <span data-ttu-id="262a9-125">次の手順に従い、MQSAgent.dll コンポーネントを MQSAgent2 COM+ アプリケーションに追加します。</span><span class="sxs-lookup"><span data-stu-id="262a9-125">Add the MQSAgent.dll components to the MQSAgent2 COM+ application:</span></span>  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 02/28/2018
   
     -   <span data-ttu-id="262a9-128">クリックして **新しいコンポーネントのインストール**, を MQSAgent.dll ファイルを参照してクリックして **開く**します。</span><span class="sxs-lookup"><span data-stu-id="262a9-128">Click **Install New Components**, browse to the file MQSAgent.dll and then click **Open**.</span></span>  
   
-    -   <span data-ttu-id="262a9-129">**[次へ]**をクリックし、 **[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="262a9-129">Click **Next**, and then click **Finish**.</span></span>  
+    -   <span data-ttu-id="262a9-129">**[次へ]** をクリックし、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="262a9-129">Click **Next**, and then click **Finish**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="262a9-130">参照</span><span class="sxs-lookup"><span data-stu-id="262a9-130">See Also</span></span>  
  [<span data-ttu-id="262a9-131">MQSeries アダプターの使用</span><span class="sxs-lookup"><span data-stu-id="262a9-131">Using the MQSeries Adapter</span></span>](../core/using-the-mqseries-adapter.md)

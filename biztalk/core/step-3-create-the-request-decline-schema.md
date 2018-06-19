@@ -1,14 +1,14 @@
 ---
-title: "手順 3: 要求拒否スキーマの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: 要求拒否スキーマの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e1ce166c-1be1-4ef4-9d00-3da7038d4ada
-caps.latest.revision: "39"
+caps.latest.revision: 39
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278554"
 ---
 # <a name="step-3-create-the-request-decline-schema"></a><span data-ttu-id="6f39b-102">ステップ 3: 要求拒否スキーマの作成</span><span class="sxs-lookup"><span data-stu-id="6f39b-102">Step 3: Create the Request Decline Schema</span></span>
 <span data-ttu-id="6f39b-103">![手順 5 の 3](../core/media/step-3of5.gif "Step_3of5")</span><span class="sxs-lookup"><span data-stu-id="6f39b-103">![Step 3 of 5](../core/media/step-3of5.gif "Step_3of5")</span></span>  
   
  <span data-ttu-id="6f39b-104">**所要時間:** 7 分</span><span class="sxs-lookup"><span data-stu-id="6f39b-104">**Time to complete:** 7 minutes</span></span>  
   
- <span data-ttu-id="6f39b-105">**目標:**メッセージのスキーマを作成するこの手順で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ビジネス プロセスで在庫補充要求を拒否した場合は、倉庫に返送します。</span><span class="sxs-lookup"><span data-stu-id="6f39b-105">**Objective:** In this step, you create the schema for the message [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sends back to the warehouse if the business process rejects the inventory replenishment request.</span></span>  
+ <span data-ttu-id="6f39b-105">**目標:** メッセージのスキーマを作成するこの手順で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ビジネス プロセスで在庫補充要求を拒否した場合は、倉庫に返送します。</span><span class="sxs-lookup"><span data-stu-id="6f39b-105">**Objective:** In this step, you create the schema for the message [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sends back to the warehouse if the business process rejects the inventory replenishment request.</span></span>  
   
- <span data-ttu-id="6f39b-106">**目的:**スキーマ、データと要求拒否メッセージの構造を定義します。</span><span class="sxs-lookup"><span data-stu-id="6f39b-106">**Purpose:** The schema defines the data and the structure of the request decline message.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="6f39b-107"> では、メッセージ内のデータの識別と操作にスキーマが使用されます。</span><span class="sxs-lookup"><span data-stu-id="6f39b-107"> uses the schema to identify and interact with the data in the message.</span></span>  
+ <span data-ttu-id="6f39b-106">**目的:** スキーマ、データと要求拒否メッセージの構造を定義します。</span><span class="sxs-lookup"><span data-stu-id="6f39b-106">**Purpose:** The schema defines the data and the structure of the request decline message.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="6f39b-107"> では、メッセージ内のデータの識別と操作にスキーマが使用されます。</span><span class="sxs-lookup"><span data-stu-id="6f39b-107"> uses the schema to identify and interact with the data in the message.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="6f39b-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="6f39b-108">Prerequisites</span></span>  
  <span data-ttu-id="6f39b-109">このステップを開始する前に、以下の要件を確認してください。</span><span class="sxs-lookup"><span data-stu-id="6f39b-109">Note the following requirements before you begin this step:</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="6f39b-117">**インストールされたテンプレート**</span><span class="sxs-lookup"><span data-stu-id="6f39b-117">**Installed Templates**</span></span>|<span data-ttu-id="6f39b-118">をクリックして**スキーマ ファイル**、クリックして**スキーマ**です。</span><span class="sxs-lookup"><span data-stu-id="6f39b-118">Click **Schema Files**, and then click **Schema**.</span></span>|  
     |<span data-ttu-id="6f39b-119">**名前**</span><span class="sxs-lookup"><span data-stu-id="6f39b-119">**Name**</span></span>|<span data-ttu-id="6f39b-120">「`RequestDecline.xsd`.</span><span class="sxs-lookup"><span data-stu-id="6f39b-120">Type `RequestDecline.xsd`.</span></span>|  
   
-3.  <span data-ttu-id="6f39b-121">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6f39b-121">Click **Add**.</span></span>  
+3.  <span data-ttu-id="6f39b-121">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6f39b-121">Click **Add**.</span></span>  
   
 4.  <span data-ttu-id="6f39b-122">BizTalk エディターで、スキーマ ツリーからをクリックして、**ルート**ノードをオンにします。</span><span class="sxs-lookup"><span data-stu-id="6f39b-122">In BizTalk Editor, from schema tree, click the **Root** node to select it.</span></span>  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="6f39b-126">という 2 つ目の子フィールド要素を追加`GrandTotal`です。</span><span class="sxs-lookup"><span data-stu-id="6f39b-126">Add a second child field element named `GrandTotal`.</span></span>  
   
-9. <span data-ttu-id="6f39b-127">**[ファイル]** メニューの **[すべてを保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6f39b-127">On the **File** menu, click **Save All**.</span></span>  
+9. <span data-ttu-id="6f39b-127">**[ファイル]** メニューの **[すべてを保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6f39b-127">On the **File** menu, click **Save All**.</span></span>  
   
 ## <a name="what-did-i-just-do"></a><span data-ttu-id="6f39b-128">でしただけは何ですか。</span><span class="sxs-lookup"><span data-stu-id="6f39b-128">What did I just do?</span></span>  
  <span data-ttu-id="6f39b-129">このステップでは、ビジネス プロセスで在庫要求が拒否された場合に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] から倉庫に返されるメッセージ用のスキーマを作成しました。</span><span class="sxs-lookup"><span data-stu-id="6f39b-129">In this step, you created the schema for the message that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sends back to the warehouse if the business process rejects the inventory request.</span></span>  

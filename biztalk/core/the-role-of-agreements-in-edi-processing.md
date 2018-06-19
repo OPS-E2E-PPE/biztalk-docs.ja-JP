@@ -1,14 +1,14 @@
 ---
-title: "EDI 処理におけるアグリーメントのロール |Microsoft ドキュメント"
-ms.custom: 
+title: EDI 処理におけるアグリーメントのロール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d81b0449-6656-49f7-a781-5fd60031b3d5
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279938"
 ---
 # <a name="the-role-of-agreements-in-edi-processing"></a><span data-ttu-id="8c6ca-102">EDI 処理におけるアグリーメントのロール</span><span class="sxs-lookup"><span data-stu-id="8c6ca-102">The Role of Agreements in EDI Processing</span></span>
 <span data-ttu-id="8c6ca-103">組織は [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して、1 つ以上の取引先との間で EDI メッセージを送受信します。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-103">An organization uses [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to receive EDI messages from, and send EDI messages to, one or more trading partners.</span></span> <span data-ttu-id="8c6ca-104">取引先は、組織内の Business Entities であるビジネス プロファイルを順番に定義します。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-104">The trading partners, in turn define business profiles that are business entities within an organization.</span></span> <span data-ttu-id="8c6ca-105">ビジネス プロファイルがメッセージを交換する方法は、2 つのビジネス プロファイル間の取引先アグリーメントとして定義されます。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-105">How business profiles exchange messages is defined as part of trading partner agreements between two business profiles.</span></span> <span data-ttu-id="8c6ca-106">詳細については、次を参照してください。[取引先管理ソリューションのビルド ブロック](../core/building-blocks-of-a-trading-partner-management-solution.md)です。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-106">For more information, see [Building Blocks of a Trading Partner Management Solution](../core/building-blocks-of-a-trading-partner-management-solution.md).</span></span>  
@@ -51,7 +52,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="8c6ca-127">状態レポート</span><span class="sxs-lookup"><span data-stu-id="8c6ca-127">Status reporting</span></span>  
   
- <span data-ttu-id="8c6ca-128">ビジネス id があります、特定の値など**D-U-N、S (Dun & Bradstreet)**です。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-128">For business identities, there can be specific values, such as **D-U-N-S (Dun & Bradstreet)**.</span></span> <span data-ttu-id="8c6ca-129">固有の名前は、Duns に対して "01" というように、固有の修飾子を持ちます。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-129">Specific names have specific qualifiers, such as "01" for Duns.</span></span> <span data-ttu-id="8c6ca-130">ビジネス ID 名が固有でない場合、X12 でエンコードされたメッセージでは "ZZ" を使用し、EDIFACT でエンコードされたメッセージでは "ZZZ" を使用します。これにより、互いに個別のエンティティによって定義されていることを示します。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-130">When a business identity name is not specific, "ZZ" is used for X12-encoded messages and "ZZZ" is used for EDIFACT-encoded messages, indicating a name mutually defined by separate entities.</span></span> <span data-ttu-id="8c6ca-131">この値と修飾子により、ビジネス プロファイルが識別されます。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-131">The value and qualifier then identifies the business profile.</span></span> <span data-ttu-id="8c6ca-132">ビジネス ID 名は情報提供のみを目的とし、BizTalk ランタイムでの処理に使用されることはありません。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-132">The name of the business identity is for informational purposes only; it is not used by the BizTalk runtime for processing.</span></span>  
+ <span data-ttu-id="8c6ca-128">ビジネス id があります、特定の値など**D-U-N、S (Dun & Bradstreet)** です。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-128">For business identities, there can be specific values, such as **D-U-N-S (Dun & Bradstreet)**.</span></span> <span data-ttu-id="8c6ca-129">固有の名前は、Duns に対して "01" というように、固有の修飾子を持ちます。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-129">Specific names have specific qualifiers, such as "01" for Duns.</span></span> <span data-ttu-id="8c6ca-130">ビジネス ID 名が固有でない場合、X12 でエンコードされたメッセージでは "ZZ" を使用し、EDIFACT でエンコードされたメッセージでは "ZZZ" を使用します。これにより、互いに個別のエンティティによって定義されていることを示します。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-130">When a business identity name is not specific, "ZZ" is used for X12-encoded messages and "ZZZ" is used for EDIFACT-encoded messages, indicating a name mutually defined by separate entities.</span></span> <span data-ttu-id="8c6ca-131">この値と修飾子により、ビジネス プロファイルが識別されます。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-131">The value and qualifier then identifies the business profile.</span></span> <span data-ttu-id="8c6ca-132">ビジネス ID 名は情報提供のみを目的とし、BizTalk ランタイムでの処理に使用されることはありません。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-132">The name of the business identity is for informational purposes only; it is not used by the BizTalk runtime for processing.</span></span>  
   
 ## <a name="determining-an-agreement-for-edi-processing"></a><span data-ttu-id="8c6ca-133">EDI 処理のためのアグリーメントの決定</span><span class="sxs-lookup"><span data-stu-id="8c6ca-133">Determining an Agreement for EDI Processing</span></span>  
  <span data-ttu-id="8c6ca-134">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、EDI メッセージを受信するたびに、メッセージの解決先となる取引先アグリーメントを特定しようと試みます。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-134">Any time [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receives an EDI message, it attempts to determine the trading partner agreement that the message resolves to.</span></span> <span data-ttu-id="8c6ca-135">アグリーメントの一部として定義されている送信者の修飾子、送信者の ID、受信者の修飾子、受信者の ID をメッセージと照合することで、取引先アグリーメントを解決しようとします。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-135">It attempts to resolve the trading partner agreement by making a match between the message and the sender qualifier, sender identifier, receiver qualifier, and receiver identifier defined as part of the agreement.</span></span> <span data-ttu-id="8c6ca-136">このプロセスの詳細については、次を参照してください。[アグリーメントの解決、スキーマ探索、および受信した EDI メッセージの承認](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md)です。</span><span class="sxs-lookup"><span data-stu-id="8c6ca-136">For more details on this process, see [Agreement Resolution, Schema Discovery, and Authorization for Received EDI Messages](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md).</span></span>  

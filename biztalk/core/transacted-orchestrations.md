@@ -1,18 +1,18 @@
 ---
-title: "オーケストレーションをトランザクション |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションをトランザクション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, compensations
 - orchestrations, transactional
 - Transaction Type property
 ms.assetid: c4f0b6ca-d939-4d3a-b7ef-53c6aafdea9c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278738"
 ---
 # <a name="transacted-orchestrations"></a><span data-ttu-id="97bdc-102">トランザクション オーケストレーション</span><span class="sxs-lookup"><span data-stu-id="97bdc-102">Transacted Orchestrations</span></span>
 <span data-ttu-id="97bdc-103">オーケストレーションは、スコープと同様にトランザクションになることができます。</span><span class="sxs-lookup"><span data-stu-id="97bdc-103">Orchestrations can be transactional, just like scopes.</span></span> <span data-ttu-id="97bdc-104">実際、オーケストレーションそのものをスコープと見なすことができます。</span><span class="sxs-lookup"><span data-stu-id="97bdc-104">In fact, an orchestration can itself be considered a scope.</span></span> <span data-ttu-id="97bdc-105">一般的に、トランザクションの対象であるオーケストレーションには、トランザクションの対象であるスコープと同じルールが適用されます。</span><span class="sxs-lookup"><span data-stu-id="97bdc-105">In general, the same rules apply for transacted orchestrations as for transacted scopes.</span></span>  

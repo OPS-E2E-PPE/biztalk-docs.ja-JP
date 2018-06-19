@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269842"
 ---
 # <a name="scenario-4-sizing-the-tracking-database-for-all-messages"></a><span data-ttu-id="e4811-102">シナリオ 4: すべてのメッセージの追跡データベースのサイズ変更</span><span class="sxs-lookup"><span data-stu-id="e4811-102">Scenario 4: Sizing the Tracking Database for all Messages</span></span>
 <span data-ttu-id="e4811-103">Microsoft® BizTalk Server® 2004 の実装であるすべての 3 つのメッセージ シナリオがある場合は一緒に追加する必要があります。 すべての BizTalk 追跡データベースのサイズを決定するシナリオの結果。</span><span class="sxs-lookup"><span data-stu-id="e4811-103">If you had all three message scenarios present in a Microsoft® BizTalk Server® 2004 implementation, you would need to add together all of the scenario results to determine the size of the BizTalk Tracking database.</span></span>  

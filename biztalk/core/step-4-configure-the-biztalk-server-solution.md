@@ -1,14 +1,14 @@
 ---
-title: "手順 4: BizTalk Server ソリューションの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: BizTalk Server ソリューションの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d60e6a82-51af-41e5-a755-5f337492ba2f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280186"
 ---
 # <a name="step-4-configure-the-biztalk-server-solution"></a><span data-ttu-id="bc53e-102">手順 4: BizTalk Server ソリューションを構成します。</span><span class="sxs-lookup"><span data-stu-id="bc53e-102">Step 4: Configure the BizTalk Server Solution</span></span>
 <span data-ttu-id="bc53e-103">前の手順では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを作成、展開して Salesforce の通知を [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で受信し、詳細を内部設置型の SQL Server データベースに挿入できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="bc53e-103">In the previous step, you created and deployed a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application to receive Salesforce notification into [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and insert the details into an on-premise SQL Server database.</span></span> <span data-ttu-id="bc53e-104">この手順では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールでアプリケーションを構成します。</span><span class="sxs-lookup"><span data-stu-id="bc53e-104">In this step, we’ll configure the application in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="bc53e-105">アプリケーションの構成は、主にオーケストレーションで作成した論理ポートに対応する物理ポートの作成です。</span><span class="sxs-lookup"><span data-stu-id="bc53e-105">Configuring the application primarily involves creating physical ports corresponding to the logical ports we created in the orchestration.</span></span> <span data-ttu-id="bc53e-106">また、物理ポートの論理ポートへのバインドも関係します。</span><span class="sxs-lookup"><span data-stu-id="bc53e-106">It also involves binding the physical port to the logical ports.</span></span> <span data-ttu-id="bc53e-107">以下の手順に従って [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを構成します。</span><span class="sxs-lookup"><span data-stu-id="bc53e-107">We’ll perform the following steps to configure the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application:</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="bc53e-120">名前</span><span class="sxs-lookup"><span data-stu-id="bc53e-120">Name</span></span>|<span data-ttu-id="bc53e-121">入力`ReceiveOppNotification`です。</span><span class="sxs-lookup"><span data-stu-id="bc53e-121">Enter `ReceiveOppNotification`.</span></span>|  
     |<span data-ttu-id="bc53e-122">型</span><span class="sxs-lookup"><span data-stu-id="bc53e-122">Type</span></span>|<span data-ttu-id="bc53e-123">選択**Wcf-basichttprelay**</span><span class="sxs-lookup"><span data-stu-id="bc53e-123">Select **WCF-BasicHttpRelay**</span></span>|  
     |<span data-ttu-id="bc53e-124">受信ハンドラー</span><span class="sxs-lookup"><span data-stu-id="bc53e-124">Receive Handler</span></span>|<span data-ttu-id="bc53e-125">選択**BizTalkServerApplication**</span><span class="sxs-lookup"><span data-stu-id="bc53e-125">Select **BizTalkServerApplication**</span></span>|  
-    |<span data-ttu-id="bc53e-126">[受信パイプライン]</span><span class="sxs-lookup"><span data-stu-id="bc53e-126">Receive Pipeline</span></span>|<span data-ttu-id="bc53e-127">選択**[xmlreceive]**</span><span class="sxs-lookup"><span data-stu-id="bc53e-127">Select **XMLReceive**</span></span>|  
+    |<span data-ttu-id="bc53e-126">[受信パイプライン]</span><span class="sxs-lookup"><span data-stu-id="bc53e-126">Receive Pipeline</span></span>|<span data-ttu-id="bc53e-127">選択 **[xmlreceive]**</span><span class="sxs-lookup"><span data-stu-id="bc53e-127">Select **XMLReceive**</span></span>|  
     |<span data-ttu-id="bc53e-128">送信パイプライン</span><span class="sxs-lookup"><span data-stu-id="bc53e-128">Send Pipeline</span></span>|<span data-ttu-id="bc53e-129">選択**PassThruTransmit**</span><span class="sxs-lookup"><span data-stu-id="bc53e-129">Select **PassThruTransmit**</span></span>|  
   
      <span data-ttu-id="bc53e-130">をクリックして**構成**に対して、ポートの種類。</span><span class="sxs-lookup"><span data-stu-id="bc53e-130">Click **Configure** against the port type.</span></span>  
@@ -97,13 +98,13 @@ ms.lasthandoff: 09/20/2017
             https://na15.salesforce.com/services/data/v24.0/query?q=<query_string>  
             ```  
   
-             <span data-ttu-id="bc53e-176">一部として、Salesforce REST エンドポイントが既にあること、**アドレス (URI)**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="bc53e-176">We already have the Salesforce REST endpoint as part of the **Address (URI)** field.</span></span> <span data-ttu-id="bc53e-177">したがっての一部として**HTTP メソッドと URL マッピング**GET メソッドを使用し、追加することを指定プロパティ、 **{VAR}**変数として。</span><span class="sxs-lookup"><span data-stu-id="bc53e-177">So, as part of **HTTP Method and URL Mapping** property, we specify using the GET method and appending the **{VAR}** as a variable.</span></span>  
+             <span data-ttu-id="bc53e-176">一部として、Salesforce REST エンドポイントが既にあること、**アドレス (URI)** フィールドです。</span><span class="sxs-lookup"><span data-stu-id="bc53e-176">We already have the Salesforce REST endpoint as part of the **Address (URI)** field.</span></span> <span data-ttu-id="bc53e-177">したがっての一部として**HTTP メソッドと URL マッピング**GET メソッドを使用し、追加することを指定プロパティ、 **{VAR}** 変数として。</span><span class="sxs-lookup"><span data-stu-id="bc53e-177">So, as part of **HTTP Method and URL Mapping** property, we specify using the GET method and appending the **{VAR}** as a variable.</span></span>  
   
-        -   <span data-ttu-id="bc53e-178">**変数マッピング**ボックスで、クリックして**編集**です。</span><span class="sxs-lookup"><span data-stu-id="bc53e-178">In the **Variable Mapping** box, click **Edit**.</span></span> <span data-ttu-id="bc53e-179">このボックスで指定する方法の値、 **{VAR}**実行時に変数を推測します。</span><span class="sxs-lookup"><span data-stu-id="bc53e-179">In this box you specify how the value for the **{VAR}** variable is deduced at runtime.</span></span>  
+        -   <span data-ttu-id="bc53e-178">**変数マッピング**ボックスで、クリックして**編集**です。</span><span class="sxs-lookup"><span data-stu-id="bc53e-178">In the **Variable Mapping** box, click **Edit**.</span></span> <span data-ttu-id="bc53e-179">このボックスで指定する方法の値、 **{VAR}** 実行時に変数を推測します。</span><span class="sxs-lookup"><span data-stu-id="bc53e-179">In this box you specify how the value for the **{VAR}** variable is deduced at runtime.</span></span>  
   
              <span data-ttu-id="bc53e-180">[手順 3b.: Wcf-webhttp アダプターを使用して Salesforce から営業案件の詳細を取得](../core/step-3b-retrieve-opportunities-from-salesforce-using-the-wcf-webhttp-adapter.md)、結果としてクエリのプロパティを昇格したこと、 **PropertySchema.xsd**です。</span><span class="sxs-lookup"><span data-stu-id="bc53e-180">In [Step 3b: Retrieve Opportunity Details from Salesforce using the WCF-WebHttp Adapter](../core/step-3b-retrieve-opportunities-from-salesforce-using-the-wcf-webhttp-adapter.md), we had promoted the Query property, which resulted in creating a **PropertySchema.xsd**.</span></span> <span data-ttu-id="bc53e-181">使用して、**クエリ**URL の {VAR} 変数にその要素をマップすることによって、クエリ文字列を渡すには、そのスキーマ内の要素。</span><span class="sxs-lookup"><span data-stu-id="bc53e-181">We’ll use the **Query** element in that schema to pass the query string by mapping that element to the {VAR} variable in the URL.</span></span>  
   
-             <span data-ttu-id="bc53e-182">変数のマッピング ダイアログ ボックスで、**変数**列は、前に指定した、たとえば、変数の名前を一覧表示**VAR**です。</span><span class="sxs-lookup"><span data-stu-id="bc53e-182">In the Variable Mapping dialog box, the **Variable** column lists the name of the variable you specified earlier, for example, **VAR**.</span></span> <span data-ttu-id="bc53e-183">**プロパティ名**列、変数に渡されるクエリ文字列のある、昇格させたプロパティの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="bc53e-183">In the **Property Name** column, specify the name of the promoted property that has the query string to be passed to the variable.</span></span> <span data-ttu-id="bc53e-184">このチュートリアルでは、そのプロパティの名前は**クエリ**です。</span><span class="sxs-lookup"><span data-stu-id="bc53e-184">In this tutorial, that property name is **Query**.</span></span> <span data-ttu-id="bc53e-185">最後に、**プロパティ Namespace**、名前空間を指定、 **PropertySchema.xsd**、これは`https://BtsSalesforceIntegration.PropertySchema`します。</span><span class="sxs-lookup"><span data-stu-id="bc53e-185">Finally, for **Property Namespace**, specify the namespace for the **PropertySchema.xsd**, which is `https://BtsSalesforceIntegration.PropertySchema`.</span></span> <span data-ttu-id="bc53e-186">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bc53e-186">Click **OK**.</span></span>  
+             <span data-ttu-id="bc53e-182">変数のマッピング ダイアログ ボックスで、**変数**列は、前に指定した、たとえば、変数の名前を一覧表示**VAR**です。</span><span class="sxs-lookup"><span data-stu-id="bc53e-182">In the Variable Mapping dialog box, the **Variable** column lists the name of the variable you specified earlier, for example, **VAR**.</span></span> <span data-ttu-id="bc53e-183">**プロパティ名**列、変数に渡されるクエリ文字列のある、昇格させたプロパティの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="bc53e-183">In the **Property Name** column, specify the name of the promoted property that has the query string to be passed to the variable.</span></span> <span data-ttu-id="bc53e-184">このチュートリアルでは、そのプロパティの名前は**クエリ**です。</span><span class="sxs-lookup"><span data-stu-id="bc53e-184">In this tutorial, that property name is **Query**.</span></span> <span data-ttu-id="bc53e-185">最後に、**プロパティ Namespace**、名前空間を指定、 **PropertySchema.xsd**、これは`https://BtsSalesforceIntegration.PropertySchema`します。</span><span class="sxs-lookup"><span data-stu-id="bc53e-185">Finally, for **Property Namespace**, specify the namespace for the **PropertySchema.xsd**, which is `https://BtsSalesforceIntegration.PropertySchema`.</span></span> <span data-ttu-id="bc53e-186">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bc53e-186">Click **OK**.</span></span>  
   
              <span data-ttu-id="bc53e-187">![WCF &#45; の [全般] タブWebHttp アダプター](../core/media/bts-sf-webhttp-general.jpg "BTS_SF_WebHttp_General")</span><span class="sxs-lookup"><span data-stu-id="bc53e-187">![General tab of WCF&#45;WebHttp Adapter](../core/media/bts-sf-webhttp-general.jpg "BTS_SF_WebHttp_General")</span></span>  
   
@@ -142,7 +143,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="bc53e-215">名前</span><span class="sxs-lookup"><span data-stu-id="bc53e-215">Name</span></span>|<span data-ttu-id="bc53e-216">入力`SendToSQL`です。</span><span class="sxs-lookup"><span data-stu-id="bc53e-216">Enter `SendToSQL`.</span></span>|  
     |<span data-ttu-id="bc53e-217">型</span><span class="sxs-lookup"><span data-stu-id="bc53e-217">Type</span></span>|<span data-ttu-id="bc53e-218">選択**WCF-SQL**</span><span class="sxs-lookup"><span data-stu-id="bc53e-218">Select **WCF-SQL**</span></span>|  
     |<span data-ttu-id="bc53e-219">[送信ハンドラー]</span><span class="sxs-lookup"><span data-stu-id="bc53e-219">Send Handler</span></span>|<span data-ttu-id="bc53e-220">選択**BizTalkServerApplication**</span><span class="sxs-lookup"><span data-stu-id="bc53e-220">Select **BizTalkServerApplication**</span></span>|  
-    |<span data-ttu-id="bc53e-221">送信パイプライン</span><span class="sxs-lookup"><span data-stu-id="bc53e-221">Send Pipeline</span></span>|<span data-ttu-id="bc53e-222">選択**[xmltransmit]**</span><span class="sxs-lookup"><span data-stu-id="bc53e-222">Select **XMLTransmit**</span></span>|  
+    |<span data-ttu-id="bc53e-221">送信パイプライン</span><span class="sxs-lookup"><span data-stu-id="bc53e-221">Send Pipeline</span></span>|<span data-ttu-id="bc53e-222">選択 **[xmltransmit]**</span><span class="sxs-lookup"><span data-stu-id="bc53e-222">Select **XMLTransmit**</span></span>|  
   
      <span data-ttu-id="bc53e-223">[送信ポートのプロパティ] ダイアログ ボックスで、をクリックして**構成**に対して、ポートの種類。</span><span class="sxs-lookup"><span data-stu-id="bc53e-223">On the Send Port Properties dialog box, click **Configure** against the port type.</span></span>  
   
@@ -172,7 +173,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  <span data-ttu-id="bc53e-241">論理送信ポートにマップする**SendToSQL**を物理送信ポート、 **SendToSQL**です。</span><span class="sxs-lookup"><span data-stu-id="bc53e-241">Map the logical send port **SendToSQL** to the physical send port, **SendToSQL**.</span></span>  
   
-     <span data-ttu-id="bc53e-242">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bc53e-242">Click **OK**.</span></span>  
+     <span data-ttu-id="bc53e-242">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bc53e-242">Click **OK**.</span></span>  
   
 3.  <span data-ttu-id="bc53e-243">右クリックし、 **SalesforceIntegration**アプリケーションをクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="bc53e-243">Right-click the **SalesforceIntegration** application and then click **Start**.</span></span> <span data-ttu-id="bc53e-244">起動、 **NotificationServiceClient**オーケストレーション、受信場所を有効にし、送信ポートを開始します。</span><span class="sxs-lookup"><span data-stu-id="bc53e-244">This starts the **NotificationServiceClient** orchestration, enables the receive location, and starts the send port.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: ポリシーの変更 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: ポリシーの変更 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9dd74440-2a45-4a1a-8e36-98796e1e1392
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289674"
 ---
 # <a name="walkthrough-modifying-the-policy"></a><span data-ttu-id="5e0ee-102">チュートリアル: ポリシーを変更します。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-102">Walkthrough: Modifying the Policy</span></span>
 <span data-ttu-id="5e0ee-103">このチュートリアルでの新しいバージョンを作成する手順については、 **POVocabulary**の新しいバージョンを作成、 **ProcessPurchaseOrder**ポリシー、およびの最新バージョンを使用して、**POVocabulary**の新しいバージョンで、 **ProcessPurchaseOrder**ポリシー。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-103">This walkthrough provides step-by-step instructions for creating a new version of the **POVocabulary**, creating a new version of the **ProcessPurchaseOrder** policy, and using the latest version of the **POVocabulary** in the new version of the **ProcessPurchaseOrder** policy.</span></span>  
@@ -46,15 +47,15 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="5e0ee-123">右クリック**POVocabulary**、クリックして**ボキャブラリのバージョンの貼り付け**です。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-123">Right-click **POVocabulary**, and then click **Paste Vocabulary Version**.</span></span>  
   
-5.  <span data-ttu-id="5e0ee-124">ダブルクリックして**最大数の指定できるアイテム**で**バージョン 1.1 (未保存)**ボキャブラリの定義ウィザードを開始します。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-124">Double-click **Maximum Number of Items Allowed** in **Version 1.1 (not saved)** to start the Vocabulary Definition Wizard.</span></span>  
+5.  <span data-ttu-id="5e0ee-124">ダブルクリックして**最大数の指定できるアイテム**で**バージョン 1.1 (未保存)** ボキャブラリの定義ウィザードを開始します。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-124">Double-click **Maximum Number of Items Allowed** in **Version 1.1 (not saved)** to start the Vocabulary Definition Wizard.</span></span>  
   
-6.  <span data-ttu-id="5e0ee-125">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-125">Click **Next**.</span></span>  
+6.  <span data-ttu-id="5e0ee-125">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-125">Click **Next**.</span></span>  
   
-7.  <span data-ttu-id="5e0ee-126">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-126">Click **Next**.</span></span>  
+7.  <span data-ttu-id="5e0ee-126">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-126">Click **Next**.</span></span>  
   
 8.  <span data-ttu-id="5e0ee-127">値から変更**500**に**1000**です。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-127">Change the value from **500** to **1000**.</span></span>  
   
-9. <span data-ttu-id="5e0ee-128">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-128">Click **Finish**.</span></span>  
+9. <span data-ttu-id="5e0ee-128">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-128">Click **Finish**.</span></span>  
   
 10. <span data-ttu-id="5e0ee-129">右クリック**バージョン 1.1 (未保存)**、クリックして**保存**です。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-129">Right-click **Version 1.1 (not saved)**, and then click **Save**.</span></span>  
   
@@ -66,9 +67,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="5e0ee-133">右クリック**バージョン 1.2**、クリックして**コピー**です。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-133">Right-click **Version 1.2**, and then click **Copy**.</span></span>  
   
-3.  <span data-ttu-id="5e0ee-134">右クリック**ProcessPurchaseOrder**、クリックして**[pastepolicyversion]**です。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-134">Right-click **ProcessPurchaseOrder**, and then click **PastePolicyVersion**.</span></span>  
+3.  <span data-ttu-id="5e0ee-134">右クリック**ProcessPurchaseOrder**、クリックして **[pastepolicyversion]** です。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-134">Right-click **ProcessPurchaseOrder**, and then click **PastePolicyVersion**.</span></span>  
   
-4.  <span data-ttu-id="5e0ee-135">をクリックして**ApprovalRule**で**Version 1.3 (未保存)**です。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-135">Click **ApprovalRule** in **Version 1.3 (not saved)**.</span></span>  
+4.  <span data-ttu-id="5e0ee-135">をクリックして**ApprovalRule**で**Version 1.3 (未保存)** です。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-135">Click **ApprovalRule** in **Version 1.3 (not saved)**.</span></span>  
   
 5.  <span data-ttu-id="5e0ee-136">ファクト エクスプ ローラーで、**ボキャブラリ**、展開**POVocabulary**、順に展開**バージョン 1.1 - 公開済み**です。</span><span class="sxs-lookup"><span data-stu-id="5e0ee-136">In Facts Explorer, expand **Vocabularies**, expand **POVocabulary**, and then expand **Version 1.1 - Published**.</span></span>  
   

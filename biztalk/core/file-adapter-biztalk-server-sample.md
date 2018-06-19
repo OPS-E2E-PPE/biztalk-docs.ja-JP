@@ -11,7 +11,7 @@ helpviewer_keywords:
 - examples, File adapters
 - File adapters, examples
 ms.assetid: d59cecb4-6353-44d5-b8d6-316446758536
-caps.latest.revision: ''
+caps.latest.revision: 46
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26010339"
 ---
 # <a name="file-adapter-biztalk-server-sample"></a><span data-ttu-id="4f98c-102">ファイル アダプター (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="4f98c-102">File Adapter (BizTalk Server Sample)</span></span>
 <span data-ttu-id="4f98c-103">ファイル アダプター サンプルは、Microsoft Visual c# .NET で Microsoft BizTalk Server を使用する書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="4f98c-103">The File Adapter sample is written in Microsoft Visual C# .NET to work with Microsoft BizTalk Server.</span></span> <span data-ttu-id="4f98c-104">このサンプルでは動的アダプターまたは静的アダプターのいずれかをビルドするコードが提供されますが、</span><span class="sxs-lookup"><span data-stu-id="4f98c-104">It provides code to build either a dynamic or a static adapter.</span></span>  <span data-ttu-id="4f98c-105">以下では静的アダプターの概要手順のみを説明します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-105">However, the following procedure only outlines the static adapter.</span></span> <span data-ttu-id="4f98c-106">静的アダプターとは、静的な一連のスキーマが付属した、カスタム ユーザー インターフェイスのないアダプターのことです。</span><span class="sxs-lookup"><span data-stu-id="4f98c-106">A static adapter is an adapter with a static set of schemas and no custom user interface.</span></span> <span data-ttu-id="4f98c-107">動的アダプターにはカスタム ユーザー インターフェイスが備わっており、動的な一連のスキーマが付属していることもあります。</span><span class="sxs-lookup"><span data-stu-id="4f98c-107">A dynamic adapter has a custom user interface and potentially a dynamic set of schemas.</span></span> <span data-ttu-id="4f98c-108">静的アダプターと動的アダプターでは両方とも、アダプターの追加ウィザードを使用してスキーマを BizTalk プロジェクトに追加できます。</span><span class="sxs-lookup"><span data-stu-id="4f98c-108">Both static and dynamic adapters use the Add Adapter Wizard to add their schemas to a BizTalk project.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 03/28/2018
  <span data-ttu-id="4f98c-121">\<*パスのサンプル*\>**\AdaptersDevelopment\File アダプター**</span><span class="sxs-lookup"><span data-stu-id="4f98c-121">\<*Samples Path*\>**\AdaptersDevelopment\File Adapter**</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="4f98c-122">既定の場所\<*サンプル パス*\>は*%programfiles%*\Microsoft BizTalk Server\SDK\Samples 32 ビットを実行するコンピューターに BizTalk Server がインストールされている場合Windows のバージョンです。</span><span class="sxs-lookup"><span data-stu-id="4f98c-122">The default location for \<*Samples Path*\> is *%ProgramFiles%*\Microsoft BizTalk Server\SDK\Samples when BizTalk Server is installed on a computer running a 32-bit version of Windows.</span></span> <span data-ttu-id="4f98c-123">既定の場所\<*サンプル パス*\>は*%programfiles (x86) %*\Microsoft BizTalk Server\SDK\Samples 64 を実行するコンピューターに BizTalk Server がインストールされている場合ビット版 Windows です。</span><span class="sxs-lookup"><span data-stu-id="4f98c-123">The default location for \<*Samples Path*\> is *%ProgramFiles(x86)%*\Microsoft BizTalk Server\SDK\Samples when BizTalk Server is installed on a computer running a 64-bit version of Windows.</span></span> <span data-ttu-id="4f98c-124">関連付けられている値を決定する、 *%programfiles%* または *%programfiles (x86) %* 環境変数の型 **echo %programfiles%** または **echo %programfiles (x86) %** コマンド プロンプトと ENTER キーを押します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-124">To determine the values associated with the *%ProgramFiles%* or *%ProgramFiles(x86)%* environment variables type **echo %ProgramFiles%** or **echo %ProgramFiles(x86)%** at a command prompt and press ENTER.</span></span> <span data-ttu-id="4f98c-125">64 ビット オペレーティング システムでこのサンプルを実行している場合から .reg ファイルのいずれかのすべての参照を変更する必要があります。 **%programfiles%** に **%programfiles (x86) %** .reg ファイルを実行する前にします。</span><span class="sxs-lookup"><span data-stu-id="4f98c-125">If running this sample on a 64-bit operating system, you will need to change all references in any of the .reg files from **%ProgramFiles%** to **%ProgramFiles(x86)%** before running the .reg files.</span></span>  
+>  <span data-ttu-id="4f98c-122">既定の場所\<*サンプル パス*\>は *%programfiles%* \Microsoft BizTalk Server\SDK\Samples 32 ビットを実行するコンピューターに BizTalk Server がインストールされている場合Windows のバージョンです。</span><span class="sxs-lookup"><span data-stu-id="4f98c-122">The default location for \<*Samples Path*\> is *%ProgramFiles%* \Microsoft BizTalk Server\SDK\Samples when BizTalk Server is installed on a computer running a 32-bit version of Windows.</span></span> <span data-ttu-id="4f98c-123">既定の場所\<*サンプル パス*\>は *%programfiles (x86) %* \Microsoft BizTalk Server\SDK\Samples 64 を実行するコンピューターに BizTalk Server がインストールされている場合ビット版 Windows です。</span><span class="sxs-lookup"><span data-stu-id="4f98c-123">The default location for \<*Samples Path*\> is *%ProgramFiles(x86)%* \Microsoft BizTalk Server\SDK\Samples when BizTalk Server is installed on a computer running a 64-bit version of Windows.</span></span> <span data-ttu-id="4f98c-124">関連付けられている値を決定する、 *%programfiles%* または *%programfiles (x86) %* 環境変数の型 **echo %programfiles%** または **echo %programfiles (x86) %** コマンド プロンプトと ENTER キーを押します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-124">To determine the values associated with the *%ProgramFiles%* or *%ProgramFiles(x86)%* environment variables type **echo %ProgramFiles%** or **echo %ProgramFiles(x86)%** at a command prompt and press ENTER.</span></span> <span data-ttu-id="4f98c-125">64 ビット オペレーティング システムでこのサンプルを実行している場合から .reg ファイルのいずれかのすべての参照を変更する必要があります。 **%programfiles%** に **%programfiles (x86) %** .reg ファイルを実行する前にします。</span><span class="sxs-lookup"><span data-stu-id="4f98c-125">If running this sample on a 64-bit operating system, you will need to change all references in any of the .reg files from **%ProgramFiles%** to **%ProgramFiles(x86)%** before running the .reg files.</span></span>  
   
  <span data-ttu-id="4f98c-126">このサンプルに含まれるファイルとその目的を次の表に示します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-126">The following tables show the files in this sample and describe their purpose.</span></span>  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 03/28/2018
   
 1.  <span data-ttu-id="4f98c-207">をクリックして **開始**, 、 をポイント **すべてのプログラム**, 、 をポイント **アクセサリ**, 、 をクリックし、 **Windows エクスプ ローラー**します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-207">Click **Start**, point to **All Programs**, point to **Accessories**, and then click **Windows Explorer**.</span></span>  
   
-2.  <span data-ttu-id="4f98c-208">移動し、 \<*サンプル パス*\>**"\AdaptersDevelopment\File Adapter\Runtime"**ディレクトリ、およびダブルクリック**DotNetFile.sln**.</span><span class="sxs-lookup"><span data-stu-id="4f98c-208">Navigate to the \<*Samples Path*\>**”\AdaptersDevelopment\File Adapter\Runtime”** directory, and then double-click **DotNetFile.sln**.</span></span>  
+2.  <span data-ttu-id="4f98c-208">移動し、 \<*サンプル パス*\>**"\AdaptersDevelopment\File Adapter\Runtime"** ディレクトリ、およびダブルクリック**DotNetFile.sln**.</span><span class="sxs-lookup"><span data-stu-id="4f98c-208">Navigate to the \<*Samples Path*\>**”\AdaptersDevelopment\File Adapter\Runtime”** directory, and then double-click **DotNetFile.sln**.</span></span>  
   
 3.  <span data-ttu-id="4f98c-209">アダプタのレシーバ ランタイム プロジェクトのソリューション エクスプ ローラーでを再構築を右クリックし **DotNetFile**, 、クリックして **を再構築**します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-209">To rebuild the Adapter Receiver run-time project, in Solution Explorer, right-click **DotNetFile**, and then click **Rebuild**.</span></span>  
   
@@ -114,7 +115,7 @@ ms.lasthandoff: 03/28/2018
   
 #### <a name="to-build-the-adapter-design-time-project"></a><span data-ttu-id="4f98c-211">アダプター デザイン時のプロジェクトをビルドするには</span><span class="sxs-lookup"><span data-stu-id="4f98c-211">To build the adapter design-time project</span></span>  
   
-1.  <span data-ttu-id="4f98c-212">Windows エクスプ ローラーに移動、 \<*サンプル パス*\>**"\AdaptersDevelopment\File Adapter\Design time \adapter Management"**ディレクトリ、およびをダブルクリック**AdapterManagement.sln**です。</span><span class="sxs-lookup"><span data-stu-id="4f98c-212">In Windows Explorer, navigate to the \<*Samples Path*\>**”\AdaptersDevelopment\File Adapter\Design Time\Adapter Management”** directory, and then double-click **AdapterManagement.sln**.</span></span>  
+1.  <span data-ttu-id="4f98c-212">Windows エクスプ ローラーに移動、 \<*サンプル パス*\>**"\AdaptersDevelopment\File Adapter\Design time \adapter Management"** ディレクトリ、およびをダブルクリック**AdapterManagement.sln**です。</span><span class="sxs-lookup"><span data-stu-id="4f98c-212">In Windows Explorer, navigate to the \<*Samples Path*\>**”\AdaptersDevelopment\File Adapter\Design Time\Adapter Management”** directory, and then double-click **AdapterManagement.sln**.</span></span>  
   
 2.  <span data-ttu-id="4f98c-213">ソリューション エクスプ ローラーで右クリック **AdapterManagement**, 、クリックして **を再構築**します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-213">In Solution Explorer, right-click **AdapterManagement**, and then click **Rebuild**.</span></span>  
   
@@ -122,7 +123,7 @@ ms.lasthandoff: 03/28/2018
   
 #### <a name="to-register-the-sample-static-adapter"></a><span data-ttu-id="4f98c-215">サンプルの静的アダプターを登録するには</span><span class="sxs-lookup"><span data-stu-id="4f98c-215">To register the sample static adapter</span></span>  
   
-1.  <span data-ttu-id="4f98c-216">Windows エクスプ ローラーに移動、 \<*サンプル パス*\>**"\AdaptersDevelopment\File アダプター"**ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="4f98c-216">In Windows Explorer, navigate to the \<*Samples Path*\>**”\AdaptersDevelopment\File Adapter”** directory.</span></span>  
+1.  <span data-ttu-id="4f98c-216">Windows エクスプ ローラーに移動、 \<*サンプル パス*\>**"\AdaptersDevelopment\File アダプター"** ディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="4f98c-216">In Windows Explorer, navigate to the \<*Samples Path*\>**”\AdaptersDevelopment\File Adapter”** directory.</span></span>  
   
 2.  <span data-ttu-id="4f98c-217">サンプル アダプターをレジストリに追加するにはダブルクリック **StaticAdapterManagement.reg**します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-217">To add the sample adapter to the registry, double-click **StaticAdapterManagement.reg**.</span></span>  
   
@@ -132,7 +133,7 @@ ms.lasthandoff: 03/28/2018
     > [!IMPORTANT]
     >  <span data-ttu-id="4f98c-222">BizTalk を 64 ビット コンピューターにインストールすると、hkey_classes_root \clsid\ レジストリ エントリのすべてのインスタンスを hkey_classes_root \wow6432node\clsid\ に変更、 **StaticAdapterManagement.reg** レジストリ ファイルです。</span><span class="sxs-lookup"><span data-stu-id="4f98c-222">If you install BizTalk on a 64 bit machine, change all instances of the HKEY_CLASSES_ROOT\CLSID\ registry entry to HKEY_CLASSES_ROOT\Wow6432Node\CLSID\ in the **StaticAdapterManagement.reg** registry file.</span></span>  
   
-3.  <span data-ttu-id="4f98c-223">**レジストリ エディター** ダイアログ ボックスで、をクリックして **[はい]** サンプル アダプターをレジストリに追加する **[ok]**します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-223">In the **Registry Editor** dialog box, click **Yes** to add the sample adapter to the registry, and then click **OK**.</span></span>  
+3.  <span data-ttu-id="4f98c-223">**レジストリ エディター** ダイアログ ボックスで、をクリックして **[はい]** サンプル アダプターをレジストリに追加する **[ok]** します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-223">In the **Registry Editor** dialog box, click **Yes** to add the sample adapter to the registry, and then click **OK**.</span></span>  
   
 4.  <span data-ttu-id="4f98c-224">Windows エクスプ ローラーを閉じる、 **ファイル**  メニューのをクリックして **閉じる**します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-224">To close Windows Explorer, on the **File** menu, click **Close**.</span></span>  
   
@@ -152,7 +153,7 @@ ms.lasthandoff: 03/28/2018
     |<span data-ttu-id="4f98c-234">**アダプター**</span><span class="sxs-lookup"><span data-stu-id="4f98c-234">**Adapter**</span></span>|<span data-ttu-id="4f98c-235">選択 **Static DotNetFile** ドロップ ダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="4f98c-235">Select **Static DotNetFile** from the drop-down list.</span></span>|  
     |<span data-ttu-id="4f98c-236">**コメント**</span><span class="sxs-lookup"><span data-stu-id="4f98c-236">**Comment**</span></span>|<span data-ttu-id="4f98c-237">型 **アダプターのサンプル**します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-237">Type **Sample Adapter**.</span></span>|  
   
-5.  <span data-ttu-id="4f98c-238">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f98c-238">Click **OK**.</span></span>  
+5.  <span data-ttu-id="4f98c-238">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f98c-238">Click **OK**.</span></span>  
   
      <span data-ttu-id="4f98c-239">これで、BizTalk 管理コンソールの右ウィンドウにあるアダプターの一覧に静的アダプターが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4f98c-239">The static adapter now appears in the list of adapters in the right window of the BizTalk Administration console.</span></span>  
   
@@ -194,9 +195,9 @@ ms.lasthandoff: 03/28/2018
     |<span data-ttu-id="4f98c-259">**SQL Server**</span><span class="sxs-lookup"><span data-stu-id="4f98c-259">**SQL Server**</span></span>|<span data-ttu-id="4f98c-260">型 **します。**</span><span class="sxs-lookup"><span data-stu-id="4f98c-260">Type **.**</span></span> <span data-ttu-id="4f98c-261">」 (ピリオド) を入力します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-261">(a period).</span></span>|  
     |<span data-ttu-id="4f98c-262">**データベース**</span><span class="sxs-lookup"><span data-stu-id="4f98c-262">**Database**</span></span>|<span data-ttu-id="4f98c-263">構成ウィザードで作成された BizTalk 管理データベースの名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-263">Select the name of the BizTalk Management database that was created by the Configuration Wizard.</span></span> <span data-ttu-id="4f98c-264">構成ウィザードで使用される既定のデータベース名は **BizTalkMgmtDb**します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-264">The default database name used by the Configuration Wizard is **BizTalkMgmtDb**.</span></span>|  
   
-7.  <span data-ttu-id="4f98c-265">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f98c-265">Click **OK**.</span></span>  
+7.  <span data-ttu-id="4f98c-265">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f98c-265">Click **OK**.</span></span>  
   
-8.  <span data-ttu-id="4f98c-266">展開、 **BizTalk グループ [*サーバー名*]**内のノード、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、展開、**アプリケーション** ノードを展開、 **BizTalk アプリケーション 1**ノード。</span><span class="sxs-lookup"><span data-stu-id="4f98c-266">Expand the **BizTalk Group[*server name*]** node in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand the **Applications** node, expand the  **BizTalk Application 1** node.</span></span>  
+8.  <span data-ttu-id="4f98c-266">展開、 **BizTalk グループ [*サーバー名*]** 内のノード、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、展開、**アプリケーション** ノードを展開、 **BizTalk アプリケーション 1**ノード。</span><span class="sxs-lookup"><span data-stu-id="4f98c-266">Expand the **BizTalk Group[*server name*]** node in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand the **Applications** node, expand the  **BizTalk Application 1** node.</span></span>  
   
 9. <span data-ttu-id="4f98c-267">右クリックし、 **送信ポート**  ノードをクリック **新規**,  **静的な一方向送信ポート**, 、 をクリックし、 **ok**します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-267">Right-click the **Send Ports** node, and then click **New**, select **Static One-Way Send Port**, and then click **OK**.</span></span>  
   
@@ -210,7 +211,7 @@ ms.lasthandoff: 03/28/2018
   
 11. <span data-ttu-id="4f98c-282">下にある、 **BizTalk アプリケーション 1**  ノードをクリック **受信ポート**, を選択して **新規/一方向の受信ポート**します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-282">Under the **BizTalk Application 1** node click **Receive Ports**, and select **New / One-Way Receive Port**.</span></span>  
   
-12. <span data-ttu-id="4f98c-283">**新しい受信ポートを作成する** ダイアログ ボックスで、 **受信ポートの種類を指定** ボックスで、 **一方向の受信ポート** クリックしてドロップダウン リストから **[ok]**します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-283">In the **Create New Receive Port** dialog box, in the **Specify the type of Receive Port** box, select **One-way Receive Port** from the drop-down list, and then click **OK**.</span></span>  
+12. <span data-ttu-id="4f98c-283">**新しい受信ポートを作成する** ダイアログ ボックスで、 **受信ポートの種類を指定** ボックスで、 **一方向の受信ポート** クリックしてドロップダウン リストから **[ok]** します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-283">In the **Create New Receive Port** dialog box, in the **Specify the type of Receive Port** box, select **One-way Receive Port** from the drop-down list, and then click **OK**.</span></span>  
   
 13. <span data-ttu-id="4f98c-284">**受信ポートのプロパティ** ダイアログ ボックスで、 **名前** ボックスに、入力 **AdapterReceive**, 、 をクリックし、 **ok**します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-284">In the **Receive Port Properties** dialog box, in the **Name** box, type **AdapterReceive**, and then click **OK**.</span></span>  
   
@@ -228,7 +229,7 @@ ms.lasthandoff: 03/28/2018
     |<span data-ttu-id="4f98c-301">**受信ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="4f98c-301">**Receive Handler**</span></span>|<span data-ttu-id="4f98c-302">選択 **BizTalkServerApplication** ドロップ ダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="4f98c-302">Select **BizTalkServerApplication** from the drop-down list.</span></span>|  
     |<span data-ttu-id="4f98c-303">**受信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="4f98c-303">**Receive Pipeline**</span></span>|<span data-ttu-id="4f98c-304">選択 **XMLReceive** ドロップ ダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="4f98c-304">Select **XMLReceive** from the drop-down list.</span></span>|  
   
-17. <span data-ttu-id="4f98c-305">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f98c-305">Click **OK**.</span></span>  
+17. <span data-ttu-id="4f98c-305">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f98c-305">Click **OK**.</span></span>  
   
      <span data-ttu-id="4f98c-306">」に進みます *ビルド、配置、およびサンプル アダプター バインド*します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-306">Proceed to *Building, Deploying, and Binding the Sample Adapter*.</span></span>  
   
@@ -243,7 +244,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  <span data-ttu-id="4f98c-312">コマンド プロンプトで「 **sn – k AdapterHarness.snk**, 、とし、enter キーを押します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-312">At the command prompt, type **sn –k AdapterHarness.snk**, and then pressENTER.</span></span>  
   
-4.  <span data-ttu-id="4f98c-313">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f98c-313">Click **OK**.</span></span>  
+4.  <span data-ttu-id="4f98c-313">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f98c-313">Click **OK**.</span></span>  
   
 ##### <a name="to-build-the-adapter-harness-project"></a><span data-ttu-id="4f98c-314">アダプター ハーネス プロジェクトをビルドするには</span><span class="sxs-lookup"><span data-stu-id="4f98c-314">To build the Adapter Harness project</span></span>  
   
@@ -318,7 +319,7 @@ ms.lasthandoff: 03/28/2018
   
 ##### <a name="to-test-the-sample-add-adapter-wizard-functionality-for-the-sample-static-adapter"></a><span data-ttu-id="4f98c-358">サンプルの静的アダプターで、サンプルのアダプターの追加ウィザード機能をテストするには</span><span class="sxs-lookup"><span data-stu-id="4f98c-358">To test the sample Add Adapter Wizard functionality for the sample static adapter</span></span>  
   
-1.  <span data-ttu-id="4f98c-359">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーで右クリック**[adapterharnessproject]**、をポイント**追加**、クリックして**生成した項目の追加**です。</span><span class="sxs-lookup"><span data-stu-id="4f98c-359">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], in Solution Explorer, right-click **AdapterHarnessProject**, point to **Add**, and then click **Add Generated Items**.</span></span>  
+1.  <span data-ttu-id="4f98c-359">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーで右クリック **[adapterharnessproject]**、をポイント**追加**、クリックして**生成した項目の追加**です。</span><span class="sxs-lookup"><span data-stu-id="4f98c-359">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], in Solution Explorer, right-click **AdapterHarnessProject**, point to **Add**, and then click **Add Generated Items**.</span></span>  
   
 2.  <span data-ttu-id="4f98c-360">**生成項目の追加 - [adapterharnessproject]** ダイアログ ボックスで、をクリックして **アダプター メタデータの追加**, 、順にクリック **開く**します。</span><span class="sxs-lookup"><span data-stu-id="4f98c-360">In the **Add Generated Items - AdapterHarnessProject** dialog box, click **Add Adapter Metadata**, and then click **Open**.</span></span>  
   

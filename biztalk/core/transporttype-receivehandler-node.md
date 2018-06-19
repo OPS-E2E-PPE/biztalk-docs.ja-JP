@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278994"
 ---
 # <a name="transporttype-receivehandler-node"></a><span data-ttu-id="ac479-102">TransportType (ReceiveHandler ノード)</span><span class="sxs-lookup"><span data-stu-id="ac479-102">TransportType (ReceiveHandler Node)</span></span>
 <span data-ttu-id="ac479-103">バインド ファイルの ReceiveHandler ノードの TransportType ノードには、バインド ファイルと共にエクスポートされる受信ハンドラーに関連付けられたアダプターに関する特定の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="ac479-103">The TransportType node of the ReceiveHandler node of a binding file contains specific information about the adapter associated with a receive handler that is exported with the binding file.</span></span>  

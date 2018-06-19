@@ -1,14 +1,14 @@
 ---
-title: "手順 9: EDI ソリューションのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 9: EDI ソリューションのテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7a44e0f-496c-462f-bf03-1c2f842d13b6
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278650"
 ---
 # <a name="step-9-test-the-edi-solution"></a><span data-ttu-id="18a5c-102">手順 9: EDI ソリューションをテストします。</span><span class="sxs-lookup"><span data-stu-id="18a5c-102">Step 9: Test the EDI Solution</span></span>
 <span data-ttu-id="18a5c-103">![手順 9 の 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-9of9.gif "Step_9of9")</span><span class="sxs-lookup"><span data-stu-id="18a5c-103">![Step 9 of 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-9of9.gif "Step_9of9")</span></span>  
@@ -51,11 +52,11 @@ ms.lasthandoff: 09/20/2017
   
 10. <span data-ttu-id="18a5c-124">THEM から US へのメッセージをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="18a5c-124">Double-click the message from THEM to US.</span></span> <span data-ttu-id="18a5c-125">**インターチェンジの状態と確認の詳細** ダイアログ ボックスで、右側のウィンドウで、インターチェンジの詳細が表示されることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="18a5c-125">In the **Interchange status and ACK  details** dialog box, verify that details of the interchange are displayed in the right pane.</span></span>  
   
-11. <span data-ttu-id="18a5c-126">をクリックして**[機能確認]**です。</span><span class="sxs-lookup"><span data-stu-id="18a5c-126">Click **Functional ACK(s)**.</span></span> <span data-ttu-id="18a5c-127">受信確認のレポート詳細が右ペインに表示されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="18a5c-127">Verify that the report details of the acknowledgment are displayed in the right pane.</span></span>  
+11. <span data-ttu-id="18a5c-126">をクリックして **[機能確認]** です。</span><span class="sxs-lookup"><span data-stu-id="18a5c-126">Click **Functional ACK(s)**.</span></span> <span data-ttu-id="18a5c-127">受信確認のレポート詳細が右ペインに表示されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="18a5c-127">Verify that the report details of the acknowledgment are displayed in the right pane.</span></span>  
   
 12. <span data-ttu-id="18a5c-128">[インターチェンジの状態と確認の詳細] ダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="18a5c-128">Close the Interchange status and ack details dialog box.</span></span>  
   
-13. <span data-ttu-id="18a5c-129">**インターチェンジ/確認の状態** ウィンドウで、THEM から US へのメッセージを右クリックし、クリックして**トランザクション セットの詳細**です。</span><span class="sxs-lookup"><span data-stu-id="18a5c-129">In the **Interchange/ACK Status** pane, right-click the message from THEM to US, and then click **Transaction Set Details**.</span></span> <span data-ttu-id="18a5c-130">内のエントリを右クリックし、**クエリの結果**] ウィンドウで、クリックして**[トランザクション セットのコンテンツ**です。</span><span class="sxs-lookup"><span data-stu-id="18a5c-130">Right-click the entry in the **Query results** pane, and then click **View Transaction Set Content**.</span></span> <span data-ttu-id="18a5c-131">トランザクション セット データが表示されることを確認してください、**メッセージの詳細** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="18a5c-131">Verify that the transaction set data is displayed in the **Message Details** dialog box.</span></span> <span data-ttu-id="18a5c-132">Windows エクスプローラーを使用して、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\ProcessEDI_TestLocations の SamplePO.txt ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="18a5c-132">In Windows Explorer, open the SamplePO.txt file in [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\ProcessEDI_TestLocations.</span></span> <span data-ttu-id="18a5c-133">トランザクション セットが表示されていることを確認、**メッセージの詳細** ダイアログ ボックスは、インターチェンジとグループ ヘッダーとトレーラーせず、入力メッセージと同じです。</span><span class="sxs-lookup"><span data-stu-id="18a5c-133">Verify that the transaction set displayed in the **Message Details** dialog box is the same as that in the input message, without the interchange and group headers and trailers.</span></span>  
+13. <span data-ttu-id="18a5c-129">**インターチェンジ/確認の状態** ウィンドウで、THEM から US へのメッセージを右クリックし、クリックして**トランザクション セットの詳細**です。</span><span class="sxs-lookup"><span data-stu-id="18a5c-129">In the **Interchange/ACK Status** pane, right-click the message from THEM to US, and then click **Transaction Set Details**.</span></span> <span data-ttu-id="18a5c-130">内のエントリを右クリックし、**クエリの結果**] ウィンドウで、クリックして **[トランザクション セットのコンテンツ**です。</span><span class="sxs-lookup"><span data-stu-id="18a5c-130">Right-click the entry in the **Query results** pane, and then click **View Transaction Set Content**.</span></span> <span data-ttu-id="18a5c-131">トランザクション セット データが表示されることを確認してください、**メッセージの詳細** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="18a5c-131">Verify that the transaction set data is displayed in the **Message Details** dialog box.</span></span> <span data-ttu-id="18a5c-132">Windows エクスプローラーを使用して、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\ProcessEDI_TestLocations の SamplePO.txt ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="18a5c-132">In Windows Explorer, open the SamplePO.txt file in [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\ProcessEDI_TestLocations.</span></span> <span data-ttu-id="18a5c-133">トランザクション セットが表示されていることを確認、**メッセージの詳細** ダイアログ ボックスは、インターチェンジとグループ ヘッダーとトレーラーせず、入力メッセージと同じです。</span><span class="sxs-lookup"><span data-stu-id="18a5c-133">Verify that the transaction set displayed in the **Message Details** dialog box is the same as that in the input message, without the interchange and group headers and trailers.</span></span>  
   
 ## <a name="next-steps"></a><span data-ttu-id="18a5c-134">次の手順</span><span class="sxs-lookup"><span data-stu-id="18a5c-134">Next Steps</span></span>  
  <span data-ttu-id="18a5c-135">これで、EDI インターフェイス開発チュートリアルは完了です。</span><span class="sxs-lookup"><span data-stu-id="18a5c-135">You have completed the EDI Interface Developer Tutorial.</span></span>  

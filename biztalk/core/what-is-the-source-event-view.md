@@ -1,11 +1,11 @@
 ---
-title: "イベント ソース ビューについて | Microsoft Docs"
-ms.custom: 
+title: イベント ソース ビューについて | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking Profile Editor, Source Event view
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, message schemas
 - Tracking Profile Editor, orchestrations
 ms.assetid: 72e74780-8590-484b-899d-cdc3d2a908be
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289482"
 ---
 # <a name="what-is-the-source-event-view"></a><span data-ttu-id="8e72f-103">イベント ソース ビューについて</span><span class="sxs-lookup"><span data-stu-id="8e72f-103">What Is the Source Event View?</span></span>
 <span data-ttu-id="8e72f-104">追跡プロファイル エディター (TPE) では、イベント ソース ビューを使用して、アセンブリから選択したオーケストレーションやメッセージ スキーマを表示したり、アクティビティ定義にマップするコンテキスト プロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="8e72f-104">The Event Source View is where the Tracking Profile Editor (TPE) presents the orchestrations or message schemas selected from the assemblies or the context properties which you map to the activity definition.</span></span>  

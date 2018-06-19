@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288290"
 ---
 # <a name="warning---envelope-schema-needs-root-record-node"></a><span data-ttu-id="381e7-102">警告 - エンベロープ スキーマには、ルート レコード ノードが必要です。</span><span class="sxs-lookup"><span data-stu-id="381e7-102">Warning - Envelope Schema Needs Root Record Node</span></span>
 <span data-ttu-id="381e7-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="381e7-103">**Error Code**</span></span>  

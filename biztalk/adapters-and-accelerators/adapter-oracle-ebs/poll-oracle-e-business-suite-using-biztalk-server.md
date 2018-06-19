@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用してポーリング Oracle E-business Suite |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用してポーリング Oracle E-business Suite |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a22b99a5-1715-4351-b0e0-6b8dcfacd9eb
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218010"
 ---
 # <a name="poll-oracle-e-business-suite-using-biztalk-server"></a><span data-ttu-id="a3e48-102">BizTalk Server を使用してポーリング Oracle E-business Suite</span><span class="sxs-lookup"><span data-stu-id="a3e48-102">Poll Oracle E-Business Suite using BizTalk Server</span></span>
 <span data-ttu-id="a3e48-103">構成することができます、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle データベースからのポーリングに基づいたメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="a3e48-103">You can configure the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] to receive polling-based messages from Oracle database.</span></span> <span data-ttu-id="a3e48-104">アダプターは、Oracle データベースをポーリングする 2 つの方法を提供します。</span><span class="sxs-lookup"><span data-stu-id="a3e48-104">The adapter provides two ways of polling the Oracle database:</span></span>  

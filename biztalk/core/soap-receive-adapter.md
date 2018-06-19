@@ -1,17 +1,17 @@
 ---
-title: "SOAP 受信アダプター |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP 受信アダプター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP adapters, receive adapters
 - receive adapters, SOAP adapters
 ms.assetid: bb968fa8-0515-4f3a-bb39-9effb83e960c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278394"
 ---
 # <a name="soap-receive-adapter"></a><span data-ttu-id="0d5f4-102">SOAP 受信アダプター</span><span class="sxs-lookup"><span data-stu-id="0d5f4-102">SOAP Receive Adapter</span></span>
 <span data-ttu-id="0d5f4-103">SOAP 受信アダプターは、Web サービス要求を受信するために使用します。</span><span class="sxs-lookup"><span data-stu-id="0d5f4-103">You use the SOAP receive adapter to receive Web service requests.</span></span> <span data-ttu-id="0d5f4-104">BizTalk メッセージ オブジェクトの作成、および関連するプロパティのメッセージ コンテキストへの昇格を行います。</span><span class="sxs-lookup"><span data-stu-id="0d5f4-104">The SOAP receive adapter creates a BizTalk Message object, and promotes the associated properties to the message context.</span></span>  

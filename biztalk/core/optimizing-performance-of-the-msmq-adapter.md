@@ -1,18 +1,18 @@
 ---
-title: "MSMQ アダプターのパフォーマンスを最適化する |Microsoft ドキュメント"
-ms.custom: 
+title: MSMQ アダプターのパフォーマンスを最適化する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, performance
 - performance, MSMQ adapters
 - configuring [MSMQ adapters], performance
 ms.assetid: f8537ea8-a96e-4874-bcaf-cd1442a50bd4
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007339"
 ---
 # <a name="optimizing-performance-of-the-msmq-adapter"></a><span data-ttu-id="c7236-102">MSMQ アダプターのパフォーマンスを最適化します。</span><span class="sxs-lookup"><span data-stu-id="c7236-102">Optimizing Performance of the MSMQ Adapter</span></span>
 <span data-ttu-id="c7236-103">MSMQ アダプターの最適化は、送信側と受信側で異なります。</span><span class="sxs-lookup"><span data-stu-id="c7236-103">Optimization of the MSMQ adapter differs between the send and receive sides.</span></span> <span data-ttu-id="c7236-104">受信側では、受信場所のプロパティを設定して、最適化を制御します。</span><span class="sxs-lookup"><span data-stu-id="c7236-104">You control optimization on the receive side by setting a property on the receive location.</span></span> <span data-ttu-id="c7236-105">送信側では、オーケストレーションを使用して、最適化を制御できます。</span><span class="sxs-lookup"><span data-stu-id="c7236-105">On the send side, you can control optimization by using an orchestration.</span></span>  

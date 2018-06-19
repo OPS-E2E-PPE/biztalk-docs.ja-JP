@@ -1,14 +1,14 @@
 ---
-title: "EDI、AS2 メッセージの追跡を BAM アクティビティが作成された |Microsoft ドキュメント"
-ms.custom: 
+title: EDI、AS2 メッセージの追跡を BAM アクティビティが作成された |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a10ab846-0fbb-46f5-920e-cb2b5be75814
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008899"
 ---
 # <a name="bam-activities-created-to-track-edi-as2-messages"></a><span data-ttu-id="b29d9-102">EDI、AS2 メッセージの追跡に作成された BAM アクティビティ</span><span class="sxs-lookup"><span data-stu-id="b29d9-102">BAM Activities Created to Track EDI-AS2 Messages</span></span>
 <span data-ttu-id="b29d9-103">BizTalk Server には、EDI および AS2 状態レポート用に作成された BAM アクティビティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b29d9-103">BizTalk Server includes BAM activities that have been created for EDI and AS2 status reporting.</span></span> <span data-ttu-id="b29d9-104">これらのアクティビティによって、状態レポートに表示するデータが決定されます。</span><span class="sxs-lookup"><span data-stu-id="b29d9-104">These activities determine the data that is displayed in the status reports.</span></span> <span data-ttu-id="b29d9-105">このトピックでは、BAM アクティビティとそこで定義されるフィールド、および BAM アクティビティの特定のフィールドで定義される列挙値について説明します。</span><span class="sxs-lookup"><span data-stu-id="b29d9-105">This topic describes the BAM activities and the fields that are defined in them, and describes the enumeration values that are defined for certain fields in the BAM activities.</span></span>  

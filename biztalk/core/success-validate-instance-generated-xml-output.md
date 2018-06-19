@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277738"
 ---
 # <a name="success---validate-instance-generated-xml-output"></a><span data-ttu-id="4c66c-102">成功 - 検証インスタンスには、XML 出力が生成されます。</span><span class="sxs-lookup"><span data-stu-id="4c66c-102">Success - Validate Instance Generated XML Output</span></span>
 <span data-ttu-id="4c66c-103">**説明**</span><span class="sxs-lookup"><span data-stu-id="4c66c-103">**Explanation**</span></span>  

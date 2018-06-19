@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server オーケストレーションを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server オーケストレーションを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 16c637ae-f94f-40f8-8ce7-73a7b7df9f8f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008990"
 ---
 # <a name="create-a-biztalk-server-orchestration"></a><span data-ttu-id="e079d-102">BizTalk Server のオーケストレーションの作成</span><span class="sxs-lookup"><span data-stu-id="e079d-102">Create a BizTalk Server orchestration</span></span>
 > [!NOTE]
@@ -59,7 +60,7 @@ ms.lasthandoff: 12/01/2017
   
 -   <span data-ttu-id="e079d-134">メッセージの構築図形を追加し、設定、**構築メッセージ**にメッセージの構築図形のプロパティ**InvoiceMsg**です。</span><span class="sxs-lookup"><span data-stu-id="e079d-134">Add a Construct Message shape and set the **Messages Constructed** property of the Construct Message shape to **InvoiceMsg**.</span></span>  
   
--   <span data-ttu-id="e079d-135">メッセージの構築図形に変換図形を追加します。</span><span class="sxs-lookup"><span data-stu-id="e079d-135">Add a Transform shape within the Construct Message shape.</span></span> <span data-ttu-id="e079d-136">変換図形をダブルクリックし、、**変換の構成**ダイアログ ボックスで、**既存のマップ**オプションをクリックし  **BTSJSON です。POToInvoice**マップします。</span><span class="sxs-lookup"><span data-stu-id="e079d-136">Double-click the Transform shape and in the **Transform Configuration** dialog box, select the **Existing Map** option, and then select **BTSJSON.POToInvoice** map.</span></span> <span data-ttu-id="e079d-137">このマップはサンプルに含まれています。</span><span class="sxs-lookup"><span data-stu-id="e079d-137">This map is provided as part of the sample.</span></span> <span data-ttu-id="e079d-138">ダイアログ ボックスで、次のように設定します。**ソース**に**PurchaseOrder**設定と**先**に**InvoiceMsg**です。</span><span class="sxs-lookup"><span data-stu-id="e079d-138">In the dialog box, set **Source** to **PurchaseOrder** and set **Destination** to **InvoiceMsg**.</span></span> <span data-ttu-id="e079d-139">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e079d-139">Click **OK**.</span></span>  
+-   <span data-ttu-id="e079d-135">メッセージの構築図形に変換図形を追加します。</span><span class="sxs-lookup"><span data-stu-id="e079d-135">Add a Transform shape within the Construct Message shape.</span></span> <span data-ttu-id="e079d-136">変換図形をダブルクリックし、、**変換の構成**ダイアログ ボックスで、**既存のマップ**オプションをクリックし  **BTSJSON です。POToInvoice**マップします。</span><span class="sxs-lookup"><span data-stu-id="e079d-136">Double-click the Transform shape and in the **Transform Configuration** dialog box, select the **Existing Map** option, and then select **BTSJSON.POToInvoice** map.</span></span> <span data-ttu-id="e079d-137">このマップはサンプルに含まれています。</span><span class="sxs-lookup"><span data-stu-id="e079d-137">This map is provided as part of the sample.</span></span> <span data-ttu-id="e079d-138">ダイアログ ボックスで、次のように設定します。**ソース**に**PurchaseOrder**設定と**先**に**InvoiceMsg**です。</span><span class="sxs-lookup"><span data-stu-id="e079d-138">In the dialog box, set **Source** to **PurchaseOrder** and set **Destination** to **InvoiceMsg**.</span></span> <span data-ttu-id="e079d-139">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e079d-139">Click **OK**.</span></span>  
   
 ### <a name="add-ports"></a><span data-ttu-id="e079d-140">ポートを追加します。</span><span class="sxs-lookup"><span data-stu-id="e079d-140">Add ports</span></span>  
  <span data-ttu-id="e079d-141">オーケストレーションに、メッセージの受信用と送信用の 2 つのポートを追加します。</span><span class="sxs-lookup"><span data-stu-id="e079d-141">Add two ports to the orchestration – one for receiving messages and one for sending messages.</span></span> <span data-ttu-id="e079d-142">ポートに以下のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="e079d-142">Use the following properties for the ports.</span></span>  

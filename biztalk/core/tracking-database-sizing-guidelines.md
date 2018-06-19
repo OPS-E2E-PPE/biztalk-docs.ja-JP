@@ -1,11 +1,11 @@
 ---
-title: "追跡データベースのサイズに関するガイドライン |Microsoft ドキュメント"
-ms.custom: 
+title: 追跡データベースのサイズに関するガイドライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking database, performance
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Tracking Analysis Server database [BAM]
 - performance, Tracking database
 ms.assetid: 2188bee5-c0dd-4448-bd4a-4ffb2a0c79f1
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279698"
 ---
 # <a name="tracking-database-sizing-guidelines"></a><span data-ttu-id="2d37a-102">追跡データベースのサイズに関するガイドライン</span><span class="sxs-lookup"><span data-stu-id="2d37a-102">Tracking Database Sizing Guidelines</span></span>
 <span data-ttu-id="2d37a-103">このセクションでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の BizTalk 追跡 (BizTalkDTADb) データベースのサイズに関する注意事項について説明します。</span><span class="sxs-lookup"><span data-stu-id="2d37a-103">This section describes sizing considerations for the BizTalk Tracking (BizTalkDTADb) database in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="2d37a-104">BizTalk 追跡データベースが特定の期間にどれだけ大きくなるかを判断するため、式とメッセージ変数を使用する方法を説明し、式の適用方法に関する具体的な例を示します。</span><span class="sxs-lookup"><span data-stu-id="2d37a-104">It explains how to use equations and message variables to determine how large the BizTalk Tracking database will become over a given period of time, and provides specific examples of how to apply the equations.</span></span> <span data-ttu-id="2d37a-105">また、BizTalk メッセージ、追跡設定、および追跡データベースのサイズ間の関連付けは目安です。</span><span class="sxs-lookup"><span data-stu-id="2d37a-105">This provides the rough co-relation between BizTalk messages, tracking settings and the tracking database size.</span></span> <span data-ttu-id="2d37a-106">追跡テーブルのインデックス サイズなどの他の SQL Server の係数は考慮しません。ただし、これらの係数を計算する適切な乗数を検討する場合があります。</span><span class="sxs-lookup"><span data-stu-id="2d37a-106">It does not take into account other SQL Server factors such as index size in the tracking tables; you may want to consider reasonable multipliers to account for those factors.</span></span>  

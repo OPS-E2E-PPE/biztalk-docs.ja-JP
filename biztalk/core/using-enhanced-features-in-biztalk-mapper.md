@@ -1,14 +1,14 @@
 ---
-title: "BizTalk マッパーの機能強化を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk マッパーの機能強化を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a3530281-8bb2-40a1-9632-8112cb4c7735
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287010"
 ---
 # <a name="using-enhanced-features-in-biztalk-mapper"></a><span data-ttu-id="9ef81-102">BizTalk マッパーの強化された機能の使用</span><span class="sxs-lookup"><span data-stu-id="9ef81-102">Using Enhanced Features in BizTalk Mapper</span></span>
 <span data-ttu-id="9ef81-103">BizTalk マッパーは操作性が強化され、複雑なマップを処理しやすくなっています。</span><span class="sxs-lookup"><span data-stu-id="9ef81-103">The BizTalk Mapper introduces a set of usability enhancements to help you handle complex maps.</span></span>  

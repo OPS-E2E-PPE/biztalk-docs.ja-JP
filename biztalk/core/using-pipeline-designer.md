@@ -1,17 +1,17 @@
 ---
-title: "パイプライン デザイナーの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン デザイナーの使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Pipeline Designer, how to
 - pipelines, Pipeline Designer
 ms.assetid: bdb2f5c7-f8a2-4bd6-a8d8-8b7a64f97bd0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287834"
 ---
 # <a name="using-pipeline-designer"></a><span data-ttu-id="a5852-102">パイプライン デザイナーの使用</span><span class="sxs-lookup"><span data-stu-id="a5852-102">Using Pipeline Designer</span></span>
 <span data-ttu-id="a5852-103">パイプライン デザイナーとは、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でホストされるグラフィカル エディターのことで、パイプラインの新規作成、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に付属するパイプライン テンプレートの表示、パイプライン内でのパイプライン コンポーネントの移動のほか、パイプライン、ステージ、パイプライン コンポーネントの構成などを実行できます。</span><span class="sxs-lookup"><span data-stu-id="a5852-103">Pipeline Designer is a graphical editor, hosted in Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], which enables you to create new pipelines; view the pipeline templates included with Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]; move pipeline components within a pipeline; and configure pipelines, stages, and pipeline components.</span></span>  

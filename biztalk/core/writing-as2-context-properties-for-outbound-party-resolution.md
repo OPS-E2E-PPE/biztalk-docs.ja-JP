@@ -1,14 +1,14 @@
 ---
-title: "送信パーティ解決の AS2 コンテキスト プロパティの書き込み |Microsoft ドキュメント"
-ms.custom: 
+title: 送信パーティ解決の AS2 コンテキスト プロパティの書き込み |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 808d63d9-076d-4eed-8420-aee12b130fee
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289354"
 ---
 # <a name="writing-as2-context-properties-for-outbound-party-resolution"></a><span data-ttu-id="32928-102">送信パーティ解決のための AS2 コンテキスト プロパティの記述</span><span class="sxs-lookup"><span data-stu-id="32928-102">Writing AS2 Context Properties for Outbound Party Resolution</span></span>
 <span data-ttu-id="32928-103">発信 AS2 メッセージのアグリーメント解決は、AS2To コンテキスト プロパティ、または `Http.UserHttpHeaders` コンテキスト プロパティの AS2To プロパティを使用して実行できます。</span><span class="sxs-lookup"><span data-stu-id="32928-103">Agreement resolution of outbound AS2 message can be performed using the AS2To context property or the AS2To property in the `Http.UserHttpHeaders` context property.</span></span> <span data-ttu-id="32928-104">しかし、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が AS2 メッセージを受信したとき、AS2To プロパティはコンテキストに書き込まれません。</span><span class="sxs-lookup"><span data-stu-id="32928-104">However, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] does not write the AS2To property to the context upon receiving an AS2 message.</span></span> <span data-ttu-id="32928-105">AS2To コンテキスト プロパティまたは UserHttpHeaders コンテキスト プロパティでアグリーメント解決を実行する場合は、アグリーメント解決を実行するカスタム オーケストレーションまたはカスタム パイプライン コンポーネントを記述する必要があります。</span><span class="sxs-lookup"><span data-stu-id="32928-105">If you want to perform agreement resolution on the AS2To or UserHttpHeaders context property, you have to write a custom orchestration or a custom pipeline component to do so.</span></span> <span data-ttu-id="32928-106">これは、送信ポートがアグリーメントにリンクされていない場合にのみ必要です。</span><span class="sxs-lookup"><span data-stu-id="32928-106">This is required only if the send port is not linked to the agreement.</span></span>  

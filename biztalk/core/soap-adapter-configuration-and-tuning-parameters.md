@@ -1,17 +1,17 @@
 ---
-title: "SOAP アダプターの構成およびチューニング パラメータ |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP アダプターの構成およびチューニング パラメータ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [SOAP adapters], tuning
 - SOAP adapters, tuning
 ms.assetid: 73c175aa-16b9-4620-b303-9092ae29af21
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277346"
 ---
 # <a name="soap-adapter-configuration-and-tuning-parameters"></a><span data-ttu-id="1e47a-102">SOAP アダプタの構成およびチューニング パラメータ</span><span class="sxs-lookup"><span data-stu-id="1e47a-102">SOAP Adapter Configuration and Tuning Parameters</span></span>
 <span data-ttu-id="1e47a-103">BizTalk Server をインストールしたルート ディレクトリに存在する BTSNTSvc.exe.config ファイルにエントリを作成することで、SOAP アダプタから特定の接続先サーバーへの同時接続の数を構成できます。</span><span class="sxs-lookup"><span data-stu-id="1e47a-103">You can configure the number of concurrent connections that the SOAP adapter opens for a particular destination server by making an entry in the BTSNTSvc.exe.config file that is located in the root BizTalk Server installation directory.</span></span>  

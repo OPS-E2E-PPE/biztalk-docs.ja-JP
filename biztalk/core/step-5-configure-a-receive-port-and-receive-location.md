@@ -1,14 +1,14 @@
 ---
-title: "手順 5: 構成する受信ポートと受信場所 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: 構成する受信ポートと受信場所 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43fc8d12-5fde-4ddf-a7f0-770f078ba66b
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277954"
 ---
 # <a name="step-5-configure-a-receive-port-and-receive-location"></a><span data-ttu-id="012f1-102">手順 5: 構成する受信ポートと受信場所</span><span class="sxs-lookup"><span data-stu-id="012f1-102">Step 5: Configure a Receive Port and Receive Location</span></span>
 <span data-ttu-id="012f1-103">![手順 5. の 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-5of9.gif "Step_5of9")</span><span class="sxs-lookup"><span data-stu-id="012f1-103">![Step 5 of 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-5of9.gif "Step_5of9")</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
 7.  <span data-ttu-id="012f1-117">**FILE トランスポートのプロパティ** ダイアログ ボックスで、変更、**ファイル マスク**に **\*.txt**  をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="012f1-117">In the **FILE Transport Properties** dialog box, change the **File mask** to **\*.txt** and click **OK**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="012f1-118">入力テスト メッセージがテキスト ファイル SamplePO.txt であるため、ファイル マスクは *.txt に設定します。</span><span class="sxs-lookup"><span data-stu-id="012f1-118">The file mask is set to *.txt because the input test message is a text file, SamplePO.txt.</span></span>  
+    >  <span data-ttu-id="012f1-118">入力テスト メッセージがテキスト ファイル SamplePO.txt であるため、ファイル マスクは \*.txt に設定します。</span><span class="sxs-lookup"><span data-stu-id="012f1-118">The file mask is set to \*.txt because the input test message is a text file, SamplePO.txt.</span></span>  
   
 8.  <span data-ttu-id="012f1-119">**受信場所のプロパティ**] ダイアログ ボックスで、**受信パイプライン**フィールドで、[ **EdiReceive**です。</span><span class="sxs-lookup"><span data-stu-id="012f1-119">In the **Receive Location Properties** dialog box, in the **Receive Pipeline** field, select **EdiReceive**.</span></span>  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="012f1-122">[EdiReceive] が受信パイプラインのドロップダウン リストに表示されていなければ、アプリケーションが BizTalk EDI アプリケーションを参照していない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="012f1-122">If EdiReceive is not listed in the drop-down list for receive pipeline, your application may not have a reference to the BizTalk EDI Application.</span></span> <span data-ttu-id="012f1-123">参照を追加するを参照してください。[を BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)です。</span><span class="sxs-lookup"><span data-stu-id="012f1-123">To add the reference, see [How to Add a Reference to the BizTalk Server EDI Application](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782).</span></span>  
   
-9. <span data-ttu-id="012f1-124">をクリックして**[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="012f1-124">Click **OK**, and then click **OK** again.</span></span>  
+9. <span data-ttu-id="012f1-124">をクリックして **[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="012f1-124">Click **OK**, and then click **OK** again.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="012f1-125">BizTalk サービスに対するログオン特権を持つアカウントは、fromTHEM_4010_850 受信場所に関連付けられた受信フォルダー ([!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\ProcessEDI_TestLocations\fromTHEM) に対する完全なアクセス許可も持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="012f1-125">The account that has log-on privileges for the BizTalk service should also be granted full access permissions for the receive folder associated with the fromTHEM_4010_850 receive location ([!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\ProcessEDI_TestLocations\fromTHEM).</span></span> <span data-ttu-id="012f1-126">持っていない場合は、受信場所を有効にしようとするとエラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="012f1-126">If not, you will receive an error when attempting to enable the receive location.</span></span> <span data-ttu-id="012f1-127">受信フォルダーのアクセス許可を変更するには、[セキュリティ] タブに移動、**プロパティ**Windows エクスプ ローラーでそのフォルダーのダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="012f1-127">To change the access permissions for the receive folder, go to the Security tab in the **Properties** dialog box for that folder in Windows Explorer.</span></span>  

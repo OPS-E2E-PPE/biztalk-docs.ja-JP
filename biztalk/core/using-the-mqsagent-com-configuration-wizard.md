@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010435"
 ---
 # <a name="using-the-mqsagent-com-configuration-wizard"></a><span data-ttu-id="32855-102">MQSAgent COM + 構成ウィザードの使用</span><span class="sxs-lookup"><span data-stu-id="32855-102">Using the MQSAgent COM+ Configuration Wizard</span></span>
 <span data-ttu-id="32855-103">MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケーション (MQSeries コンポーネント) 部分である MQSAgent を構成します。</span><span class="sxs-lookup"><span data-stu-id="32855-103">The MQSAgent COM+ Configuration Wizard configures the MQSAgent, the COM+ application (MQSeries component) part of the adapter.</span></span> <span data-ttu-id="32855-104">このウィザードでは、コンポーネントのアプリケーション ID、およびロール名とそのロールに含めるユーザーを設定します。</span><span class="sxs-lookup"><span data-stu-id="32855-104">The wizard sets the application identity of the component, and the role name and users included in the role.</span></span> <span data-ttu-id="32855-105">MQSAgent COM + 構成ウィザードを使用して作成される MQSAgent COM + コンポーネントの名前は**MQSAgent2**です。</span><span class="sxs-lookup"><span data-stu-id="32855-105">The name of the MQSAgent COM+ component created with the MQSAgent COM+ Configuration Wizard is **MQSAgent2**.</span></span>  
@@ -63,7 +64,7 @@ ms.lasthandoff: 12/01/2017
 ## <a name="to-set-the-msdtc-security-configuration-on-the-windows-server-2008-computer-to-no-authentication-required"></a><span data-ttu-id="32855-137">Windows Server 2008 コンピューター上の MSDTC のセキュリティ構成を [認証を必要としない] に設定するには</span><span class="sxs-lookup"><span data-stu-id="32855-137">To set the MSDTC Security configuration on the Windows Server 2008 computer to No Authentication Required</span></span>  
  <span data-ttu-id="32855-138">MQSAgent COM + アプリケーションがインストールされている場合、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]でコンピューターと、MQSeries アダプター (BizTalk Server と共にインストールされます) がインストールされている、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]コンピューター、MSDTC セキュリティ構成を[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]にコンピューターを設定する必要があります**認証を必要としない**です。</span><span class="sxs-lookup"><span data-stu-id="32855-138">If the MQSAgent COM+ application is installed on a [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] computer and the MQSeries Adapter (which is installed with BizTalk Server) is installed on a [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] or [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] computer, the MSDTC Security configuration on the [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] or [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] computer must be set to **No Authentication Required**.</span></span> <span data-ttu-id="32855-139">MSDTC のセキュリティ構成を [認証を必要としない] に設定するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="32855-139">Follow these steps to set the MSDTC security configuration to No Authentication Required:</span></span>  
   
-1.  <span data-ttu-id="32855-140">をクリックして**開始**] をクリックし、**コントロール パネルの [**です。</span><span class="sxs-lookup"><span data-stu-id="32855-140">Click **Start** and then click **Control Panel**.</span></span>  
+1.  <span data-ttu-id="32855-140">をクリックして**開始**] をクリックし、**コントロール パネルの [** です。</span><span class="sxs-lookup"><span data-stu-id="32855-140">Click **Start** and then click **Control Panel**.</span></span>  
   
 2.  <span data-ttu-id="32855-141">**［管理ツール］** をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="32855-141">Double-click **Administrative Tools**.</span></span>  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="32855-153">MQSAgent COM+ コンポーネントに変更を加えられるようにします。</span><span class="sxs-lookup"><span data-stu-id="32855-153">Enable changes for the MQSAgent COM+ component.</span></span>  
   
-    -   <span data-ttu-id="32855-154">をクリックして**開始**] をクリックし、**コントロール パネルの [**です。</span><span class="sxs-lookup"><span data-stu-id="32855-154">Click **Start** and then click **Control Panel**.</span></span>  
+    -   <span data-ttu-id="32855-154">をクリックして**開始**] をクリックし、**コントロール パネルの [** です。</span><span class="sxs-lookup"><span data-stu-id="32855-154">Click **Start** and then click **Control Panel**.</span></span>  
   
     -   <span data-ttu-id="32855-155">**［管理ツール］** をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="32855-155">Double-click **Administrative Tools**.</span></span>  
   
@@ -94,9 +95,9 @@ ms.lasthandoff: 12/01/2017
   
     -   <span data-ttu-id="32855-157">展開**コンポーネント サービス**、展開**マイ コンピューター**、展開**COM + アプリケーション**を右クリックし、 **MQSAgent2** COM + アプリケーションクリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="32855-157">Expand **Component Services**, expand **My Computer**, expand **COM+ Applications**, right-click the **MQSAgent2** COM+ application and then click **Properties**.</span></span>  
   
-    -   <span data-ttu-id="32855-158">クリックして、 **[詳細設定]**タブおよびボックスをオフに**変更を無効にする**です。</span><span class="sxs-lookup"><span data-stu-id="32855-158">Click the **Advanced** tab and uncheck **Disable changes**.</span></span>  
+    -   <span data-ttu-id="32855-158">クリックして、 **[詳細設定]** タブおよびボックスをオフに**変更を無効にする**です。</span><span class="sxs-lookup"><span data-stu-id="32855-158">Click the **Advanced** tab and uncheck **Disable changes**.</span></span>  
   
-    -   <span data-ttu-id="32855-159">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32855-159">Click **OK**.</span></span>  
+    -   <span data-ttu-id="32855-159">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32855-159">Click **OK**.</span></span>  
   
 2.  <span data-ttu-id="32855-160">MQSAgent ランタイム コンポーネント用の新しい COM+ アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="32855-160">Create a new COM+ application for the MQSAgent runtime components.</span></span>  
   
@@ -115,7 +116,7 @@ ms.lasthandoff: 12/01/2017
   
     -   <span data-ttu-id="32855-169">をクリックして**次へ**上、**ロールにユーザーの追加** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="32855-169">Click **Next** on the **Add Users to Roles** dialog box.</span></span>  
   
-    -   <span data-ttu-id="32855-170">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32855-170">Click **Finish**.</span></span>  
+    -   <span data-ttu-id="32855-170">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32855-170">Click **Finish**.</span></span>  
   
 3.  <span data-ttu-id="32855-171">ランタイム コンポーネントを、新しい COM+ アプリケーションに移動します。</span><span class="sxs-lookup"><span data-stu-id="32855-171">Move the runtime components to the new COM+ application</span></span>  
   

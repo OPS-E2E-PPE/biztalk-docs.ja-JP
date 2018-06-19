@@ -1,11 +1,11 @@
 ---
-title: "SSO 展開の概要 |Microsoft ドキュメント"
-ms.custom: 
+title: SSO 展開の概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, deploying example
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - SSO, multiple computers
 - examples, deploying
 ms.assetid: 6eccee26-c392-41fe-97fb-3afe1685540f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277258"
 ---
 # <a name="sso-deployment-overview"></a><span data-ttu-id="9cf99-102">SSO 展開の概要</span><span class="sxs-lookup"><span data-stu-id="9cf99-102">SSO Deployment Overview</span></span>
 <span data-ttu-id="9cf99-103">この例では、システムは次のコンピュータを含む 3 つのドメインに展開されています。</span><span class="sxs-lookup"><span data-stu-id="9cf99-103">The system in this example is deployed over three domains, containing the following computers:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "Web サービスのトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスのトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c32bf542-dcc6-4727-b31f-52bb19d4b89d
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287490"
 ---
 # <a name="troubleshooting-web-services"></a><span data-ttu-id="241e7-102">Web サービスのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="241e7-102">Troubleshooting Web Services</span></span>
 <span data-ttu-id="241e7-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には Web サービスが広く採用され、SOAP アダプターで使用したり、オーケストレーションを Web サービスとして公開したりできるようになっています。</span><span class="sxs-lookup"><span data-stu-id="241e7-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] makes extensive use of Web services for use with the SOAP adapter and when publishing orchestrations as Web services.</span></span> <span data-ttu-id="241e7-104">このトピックでは、Web サービスをトラブルシューティングするための手順、Web サービスの一般的な問題とその解決方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="241e7-104">This topic provides some steps that you can follow to troubleshoot Web services, as well as some common Web services problems and how to resolve those problems.</span></span>  

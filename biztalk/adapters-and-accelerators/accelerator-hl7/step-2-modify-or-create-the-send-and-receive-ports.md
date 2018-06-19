@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d96d02c-b75d-4d18-a127-37002c5ff138
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26007165"
 ---
 # <a name="step-2-modify-or-create-the-send-and-receive-ports"></a><span data-ttu-id="e5b90-102">手順 2: 変更または作成、送信および受信ポート</span><span class="sxs-lookup"><span data-stu-id="e5b90-102">Step 2: Modify or Create the Send and Receive Ports</span></span>
 <span data-ttu-id="e5b90-103">ファイルの送信ポートと受信ポートをバッチにする必要がありますでチュートリアルをバッチ処理/です。</span><span class="sxs-lookup"><span data-stu-id="e5b90-103">You need FILE send and receive ports for the Batch In/Batch Out tutorial.</span></span> <span data-ttu-id="e5b90-104">クリックした場合、 **Launch Tutorial**の Enterprise Edition のインストールの最後にあるボタン[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]これらのポートが自動的に作成: Tutorial_BTAHL7Drop をという名前の送信ポートと受信ポートを Tutorial_BTAHL7PickUp をという名前です。</span><span class="sxs-lookup"><span data-stu-id="e5b90-104">If you clicked the **Launch Tutorial** button at the end of installing the Enterprise Edition of [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] created these ports for you: a send port named Tutorial_BTAHL7Drop, and a receive port named Tutorial_BTAHL7PickUp.</span></span> <span data-ttu-id="e5b90-105">これらのポートがあれば、Tutorial_BTAHL7Drop の送信ポートを変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e5b90-105">If you have these ports, you still need to modify the send port Tutorial_BTAHL7Drop.</span></span>  
@@ -33,7 +34,7 @@ ms.lasthandoff: 03/28/2018
   
 4.  <span data-ttu-id="e5b90-111">コンソール ツリーでクリックして**フィルター**です。</span><span class="sxs-lookup"><span data-stu-id="e5b90-111">In the console tree, click **Filters**.</span></span>  
   
-5.  <span data-ttu-id="e5b90-112">**フィルター**ウィンドウの選択] の 2 番目の行で、 **BTAHL7Schemas.MessageClass**の**プロパティ**[ **==**の**演算子**、および種類**MessageClass2X**の**値**です。</span><span class="sxs-lookup"><span data-stu-id="e5b90-112">In the **Filters** pane, in the second row, select **BTAHL7Schemas.MessageClass** for **Properties**, select **==** for **Operator**, and type **MessageClass2X** for **Value**.</span></span> <span data-ttu-id="e5b90-113">**Enter**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-113">Click **Enter**.</span></span>  
+5.  <span data-ttu-id="e5b90-112">**フィルター**ウィンドウの選択] の 2 番目の行で、 **BTAHL7Schemas.MessageClass**の**プロパティ**[ **==** の**演算子**、および種類**MessageClass2X**の**値**です。</span><span class="sxs-lookup"><span data-stu-id="e5b90-112">In the **Filters** pane, in the second row, select **BTAHL7Schemas.MessageClass** for **Properties**, select **==** for **Operator**, and type **MessageClass2X** for **Value**.</span></span> <span data-ttu-id="e5b90-113">**Enter**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-113">Click **Enter**.</span></span>  
   
 6.  <span data-ttu-id="e5b90-114">設定**Group By**上、 **BTS です。ReceivePortName**の行を**または**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="e5b90-114">Set **Group By** on the **BTS.ReceivePortName** line to **Or**, and then click **OK**.</span></span>  
   
@@ -68,10 +69,10 @@ ms.lasthandoff: 03/28/2018
   
     |<span data-ttu-id="e5b90-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e5b90-130">Use this</span></span>|<span data-ttu-id="e5b90-131">目的</span><span class="sxs-lookup"><span data-stu-id="e5b90-131">To do this</span></span>|  
     |--------------|----------------|  
-    |<span data-ttu-id="e5b90-132">**受信フォルダー**</span><span class="sxs-lookup"><span data-stu-id="e5b90-132">**Receive Folder**</span></span>|<span data-ttu-id="e5b90-133">参照 **\<***ドライブ***\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7PickUp for**.</span><span class="sxs-lookup"><span data-stu-id="e5b90-133">Browse to **\<***drive***\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial\Tutorial_BTAHL7PickUp**.</span></span> <span data-ttu-id="e5b90-134">**注:**これは、パス、ファイル システムまたはパブリック共有上の場所にどこから[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]は、ファイルを取得します。</span><span class="sxs-lookup"><span data-stu-id="e5b90-134">**Note:**  This is the path to the location on the file system or public share from where [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] will pick up the file.</span></span>|  
+    |<span data-ttu-id="e5b90-132">**受信フォルダー**</span><span class="sxs-lookup"><span data-stu-id="e5b90-132">**Receive Folder**</span></span>|<span data-ttu-id="e5b90-133">参照 **\<***ドライブ***\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7PickUp for**.</span><span class="sxs-lookup"><span data-stu-id="e5b90-133">Browse to **\<***drive***\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial\Tutorial_BTAHL7PickUp**.</span></span> <span data-ttu-id="e5b90-134">**注:** これは、パス、ファイル システムまたはパブリック共有上の場所にどこから[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]は、ファイルを取得します。</span><span class="sxs-lookup"><span data-stu-id="e5b90-134">**Note:**  This is the path to the location on the file system or public share from where [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] will pick up the file.</span></span>|  
     |<span data-ttu-id="e5b90-135">**ファイル マスク**</span><span class="sxs-lookup"><span data-stu-id="e5b90-135">**File mask**</span></span>|<span data-ttu-id="e5b90-136">型 **\*.txt**です。</span><span class="sxs-lookup"><span data-stu-id="e5b90-136">Type **\*.txt**.</span></span>|  
   
-12. <span data-ttu-id="e5b90-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-137">Click **OK**.</span></span>  
+12. <span data-ttu-id="e5b90-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-137">Click **OK**.</span></span>  
   
 13. <span data-ttu-id="e5b90-138">受信場所のプロパティ ダイアログ ボックスで、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="e5b90-138">In the Receive Location Properties dialog box, do the following:</span></span>  
   
@@ -80,7 +81,7 @@ ms.lasthandoff: 03/28/2018
     |<span data-ttu-id="e5b90-141">**受信ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="e5b90-141">**Receive Handler**</span></span>|<span data-ttu-id="e5b90-142">保持**BizTalkServerApplication**として選択します。</span><span class="sxs-lookup"><span data-stu-id="e5b90-142">Keep **BizTalkServerApplication** as selected.</span></span>|  
     |<span data-ttu-id="e5b90-143">**受信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="e5b90-143">**Receive Pipeline**</span></span>|<span data-ttu-id="e5b90-144">選択**BTAHL72XPipelines.BTAHL72XReceivePipeline**です。</span><span class="sxs-lookup"><span data-stu-id="e5b90-144">Select **BTAHL72XPipelines.BTAHL72XReceivePipeline**.</span></span>|  
   
-14. <span data-ttu-id="e5b90-145">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-145">Click **OK**.</span></span>  
+14. <span data-ttu-id="e5b90-145">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-145">Click **OK**.</span></span>  
   
 15. <span data-ttu-id="e5b90-146">BizTalk エクスプ ローラーで右クリック**Tutorial_FileReceiveLoc**、クリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="e5b90-146">In BizTalk Explorer, right-click **Tutorial_FileReceiveLoc**, and then click **Enable**.</span></span>  
   
@@ -100,10 +101,10 @@ ms.lasthandoff: 03/28/2018
   
     |<span data-ttu-id="e5b90-159">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e5b90-159">Use this</span></span>|<span data-ttu-id="e5b90-160">目的</span><span class="sxs-lookup"><span data-stu-id="e5b90-160">To do this</span></span>|  
     |--------------|----------------|  
-    |<span data-ttu-id="e5b90-161">**インストール先フォルダー**</span><span class="sxs-lookup"><span data-stu-id="e5b90-161">**Destination folder**</span></span>|<span data-ttu-id="e5b90-162">参照 **\<***ドライブ***:\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7Drop for**.</span><span class="sxs-lookup"><span data-stu-id="e5b90-162">Browse to **\<***drive***:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial\Tutorial_BTAHL7Drop**.</span></span> <span data-ttu-id="e5b90-163">**注:**これは、ファイル システムまたはパブリックの共有の場所にパス[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ファイルを記述します。</span><span class="sxs-lookup"><span data-stu-id="e5b90-163">**Note:**  This is the path to the location on the file system or public share to which [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] will write the file.</span></span>|  
-    |<span data-ttu-id="e5b90-164">**[ファイル名]**</span><span class="sxs-lookup"><span data-stu-id="e5b90-164">**File name**</span></span>|<span data-ttu-id="e5b90-165">型**%MessageID%.txt** (拡張機能は、txt、xml ではないことに注意してください)。</span><span class="sxs-lookup"><span data-stu-id="e5b90-165">Type **%MessageID%.txt** (note that the extension is txt, not xml).</span></span>|  
+    |<span data-ttu-id="e5b90-161">**インストール先フォルダー**</span><span class="sxs-lookup"><span data-stu-id="e5b90-161">**Destination folder**</span></span>|<span data-ttu-id="e5b90-162">参照 **\<***ドライブ***:\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7Drop for**.</span><span class="sxs-lookup"><span data-stu-id="e5b90-162">Browse to **\<***drive***:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial\Tutorial_BTAHL7Drop**.</span></span> <span data-ttu-id="e5b90-163">**注:** これは、ファイル システムまたはパブリックの共有の場所にパス[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ファイルを記述します。</span><span class="sxs-lookup"><span data-stu-id="e5b90-163">**Note:**  This is the path to the location on the file system or public share to which [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] will write the file.</span></span>|  
+    |<span data-ttu-id="e5b90-164">**[ファイル名]**</span><span class="sxs-lookup"><span data-stu-id="e5b90-164">**File name**</span></span>|<span data-ttu-id="e5b90-165">型 **%MessageID%.txt** (拡張機能は、txt、xml ではないことに注意してください)。</span><span class="sxs-lookup"><span data-stu-id="e5b90-165">Type **%MessageID%.txt** (note that the extension is txt, not xml).</span></span>|  
   
-4.  <span data-ttu-id="e5b90-166">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-166">Click **OK**.</span></span>  
+4.  <span data-ttu-id="e5b90-166">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-166">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="e5b90-167">送信ポートのプロパティ] ダイアログ ボックスの**送信パイプライン**[ **BTAHL72XPipelines.BTAHL72XSendPipeline**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="e5b90-167">In the Send Port Properties dialog box, for **Send pipeline**, select **BTAHL72XPipelines.BTAHL72XSendPipeline** from the drop-down list.</span></span>  
   
@@ -112,16 +113,16 @@ ms.lasthandoff: 03/28/2018
     |<span data-ttu-id="e5b90-169">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e5b90-169">Use this</span></span>|<span data-ttu-id="e5b90-170">目的</span><span class="sxs-lookup"><span data-stu-id="e5b90-170">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="e5b90-171">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="e5b90-171">**Property**</span></span>|<span data-ttu-id="e5b90-172">選択**BTS です。ReceivePortName**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="e5b90-172">Select **BTS.ReceivePortName** from the drop-down list.</span></span>|  
-    |<span data-ttu-id="e5b90-173">**演算子**</span><span class="sxs-lookup"><span data-stu-id="e5b90-173">**Operator**</span></span>|<span data-ttu-id="e5b90-174">ままにして**==**演算子とします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-174">Leave **==** as the operator.</span></span>|  
+    |<span data-ttu-id="e5b90-173">**演算子**</span><span class="sxs-lookup"><span data-stu-id="e5b90-173">**Operator**</span></span>|<span data-ttu-id="e5b90-174">ままにして**==** 演算子とします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-174">Leave **==** as the operator.</span></span>|  
     |<span data-ttu-id="e5b90-175">**値**</span><span class="sxs-lookup"><span data-stu-id="e5b90-175">**Value**</span></span>|<span data-ttu-id="e5b90-176">型**Tutorial_BTAHL7PickUp**です。</span><span class="sxs-lookup"><span data-stu-id="e5b90-176">Type **Tutorial_BTAHL7PickUp**.</span></span>|  
     |<span data-ttu-id="e5b90-177">**グループ化**</span><span class="sxs-lookup"><span data-stu-id="e5b90-177">**Group By**</span></span>|<span data-ttu-id="e5b90-178">選択**または**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="e5b90-178">Select **Or** from the drop-down list.</span></span>|  
     |<span data-ttu-id="e5b90-179">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="e5b90-179">**Property**</span></span>|<span data-ttu-id="e5b90-180">選択**BTAHL7Schemas.MessageClass**です。</span><span class="sxs-lookup"><span data-stu-id="e5b90-180">Select **BTAHL7Schemas.MessageClass**.</span></span>|  
-    |<span data-ttu-id="e5b90-181">**演算子**</span><span class="sxs-lookup"><span data-stu-id="e5b90-181">**Operator**</span></span>|<span data-ttu-id="e5b90-182">ままにして**==**演算子とします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-182">Leave **==** as the operator.</span></span>|  
+    |<span data-ttu-id="e5b90-181">**演算子**</span><span class="sxs-lookup"><span data-stu-id="e5b90-181">**Operator**</span></span>|<span data-ttu-id="e5b90-182">ままにして**==** 演算子とします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-182">Leave **==** as the operator.</span></span>|  
     |<span data-ttu-id="e5b90-183">**値**</span><span class="sxs-lookup"><span data-stu-id="e5b90-183">**Value**</span></span>|<span data-ttu-id="e5b90-184">型**MessageClass2X**です。</span><span class="sxs-lookup"><span data-stu-id="e5b90-184">Type **MessageClass2X**.</span></span>|  
   
 7.  <span data-ttu-id="e5b90-185">**Enter**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-185">Click **Enter**.</span></span> <span data-ttu-id="e5b90-186">ダイアログ ボックスの下部にあるペインでフィルター式が正しいことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e5b90-186">Verify in the pane at the bottom of the dialog box that the filter expression is correct.</span></span>  
   
-8.  <span data-ttu-id="e5b90-187">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-187">Click **OK**.</span></span>  
+8.  <span data-ttu-id="e5b90-187">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5b90-187">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="e5b90-188">管理コンソールで、をクリックして**送信ポート**を右クリックして**Tutorial_BTAHL7Drop**、クリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="e5b90-188">In the Administration Console, click **Send Ports**, right-click **Tutorial_BTAHL7Drop**, and then click **Start**.</span></span>  
   

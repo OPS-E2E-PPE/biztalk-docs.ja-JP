@@ -1,14 +1,14 @@
 ---
-title: "別のアグリーメント プロパティの再利用 |Microsoft ドキュメント"
-ms.custom: 
+title: 別のアグリーメント プロパティの再利用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d8e1cc60-d581-43ca-aa70-1e0d6238497a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007428"
 ---
 # <a name="reusing-properties-from-another-agreement"></a><span data-ttu-id="bab7f-102">別のアグリーメントのプロパティの再利用</span><span class="sxs-lookup"><span data-stu-id="bab7f-102">Reusing Properties from Another Agreement</span></span>
 <span data-ttu-id="bab7f-103">プロパティはアグリーメント間で再利用できます。</span><span class="sxs-lookup"><span data-stu-id="bab7f-103">You can reuse properties between agreements.</span></span> <span data-ttu-id="bab7f-104">これにより、新しいアグリーメントのプロパティのほとんどまたはすべてが、既存のアグリーメントのプロパティと同じ場合には、時間を大幅に節約することができます。</span><span class="sxs-lookup"><span data-stu-id="bab7f-104">This can save a significant amount of time when either most or all of the properties of a new agreement are the same as those of an existing agreement.</span></span> <span data-ttu-id="bab7f-105">[!INCLUDE[firstref_TPM](../includes/firstref-tpm-md.md)] BizTalk Server でのユーザー インターフェイスでは、アグリーメントを XML テンプレート ファイルをエクスポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="bab7f-105">The [!INCLUDE[firstref_TPM](../includes/firstref-tpm-md.md)] user interface in BizTalk Server enables you to export an agreement into an XML template file.</span></span> <span data-ttu-id="bab7f-106">次に、XML テンプレートをインポートして、アグリーメントの同じプロパティを再利用できます。</span><span class="sxs-lookup"><span data-stu-id="bab7f-106">You can then import the XML template to reuse the same agreement properties.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションの開発手順 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションの開発手順 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - designing, orchestrations
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - creating, orchestrations
 - Copy Local property
 ms.assetid: 556b1e6c-63a6-4805-a0a5-e555f198fe4e
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277394"
 ---
 # <a name="steps-in-orchestration-development"></a><span data-ttu-id="78bc6-102">オーケストレーションの開発手順</span><span class="sxs-lookup"><span data-stu-id="78bc6-102">Steps in Orchestration Development</span></span>
 <span data-ttu-id="78bc6-103">オーケストレーションを開発するには、通常、次のような手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="78bc6-103">To develop an orchestration, you typically perform the following basic actions:</span></span>  

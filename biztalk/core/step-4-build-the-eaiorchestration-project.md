@@ -1,14 +1,14 @@
 ---
-title: "手順 4: EAIOrchestration プロジェクトのビルド |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: EAIOrchestration プロジェクトのビルド |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 66e4b161-c5ac-404c-9ee5-4c0322fc40f3
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276674"
 ---
 # <a name="step-4-build-the-eaiorchestration-project"></a><span data-ttu-id="c09a8-102">ステップ 4: EAIOrchestration プロジェクトのビルド</span><span class="sxs-lookup"><span data-stu-id="c09a8-102">Step 4: Build the EAIOrchestration Project</span></span>
 <span data-ttu-id="c09a8-103">![4 のステップ 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span><span class="sxs-lookup"><span data-stu-id="c09a8-103">![Step 4 of 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span></span>  

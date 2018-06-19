@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server アプリケーション内のアイテム間の依存関係の追跡 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server アプリケーション内のアイテム間の依存関係の追跡 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 503cadfc-08e5-4b34-94a2-3b0ea6ad6228
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279954"
 ---
 # <a name="tracking-dependencies-between-artifacts-in-a-biztalk-server-application"></a><span data-ttu-id="85c7e-102">BizTalk Server アプリケーションにおけるアイテム間の依存関係の追跡</span><span class="sxs-lookup"><span data-stu-id="85c7e-102">Tracking Dependencies Between Artifacts in a BizTalk Server Application</span></span>
 <span data-ttu-id="85c7e-103">典型的な [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションには、オーケストレーション、送信ポート、受信場所、パイプライン、スキーマ、マップなど、さまざまなアイテムが含まれています。</span><span class="sxs-lookup"><span data-stu-id="85c7e-103">A typical [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application involves various artifacts such as orchestrations, send ports, receive locations, pipelines, schemas, maps, and the likes.</span></span> <span data-ttu-id="85c7e-104">これらすべてのアイテムは、相互に依存しています。</span><span class="sxs-lookup"><span data-stu-id="85c7e-104">All these artifacts have dependencies on each other.</span></span> <span data-ttu-id="85c7e-105">次の表に、この依存関係を示します。</span><span class="sxs-lookup"><span data-stu-id="85c7e-105">The following table lists these dependencies.</span></span>  

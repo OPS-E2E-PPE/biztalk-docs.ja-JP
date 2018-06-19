@@ -1,11 +1,11 @@
 ---
-title: "ビジネス プロセス管理ソリューションのパターンの変換 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス プロセス管理ソリューションのパターンの変換 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - artifacts, patterns
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, patterns
 - orchestrations, boundaries
 ms.assetid: 69f37732-f235-4bbb-bc85-31b4971c95ce
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279098"
 ---
 # <a name="translating-the-patterns-of-the-business-process-management-solution"></a><span data-ttu-id="64e35-102">ビジネス プロセス管理ソリューションのパターンの変換</span><span class="sxs-lookup"><span data-stu-id="64e35-102">Translating the Patterns of the Business Process Management Solution</span></span>
 <span data-ttu-id="64e35-103">このセクションでは、このソリューションでパターン ダイアグラムがどのように BizTalk Server のアイテムに変換されるかを説明します。</span><span class="sxs-lookup"><span data-stu-id="64e35-103">This section describes how the solution translates the pattern diagram into BizTalk Server artifacts.</span></span>  

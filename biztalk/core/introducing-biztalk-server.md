@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server の紹介 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server の紹介 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 01/30/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 06a4a31a-eefe-4b1b-89ca-2cba2b6fa587
-caps.latest.revision: 
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: d0a1816a8dd8412906245d40c6479b08d7b3b20a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/01/2018
+ms.locfileid: "28910106"
 ---
 # <a name="introducing-biztalk-server"></a><span data-ttu-id="40ac1-102">BizTalk Server の紹介</span><span class="sxs-lookup"><span data-stu-id="40ac1-102">Introducing BizTalk Server</span></span>
 <span data-ttu-id="40ac1-103">システムを一緒に結び付けることが想定され、標準になりました。</span><span class="sxs-lookup"><span data-stu-id="40ac1-103">Tying systems together is expected, and has become the norm.</span></span> <span data-ttu-id="40ac1-104">組織がサービス志向に向かうにつれ、効率的なビジネス プロセスを作成して別々のシステムを一体化するという目標は、現実的になりつつあります。</span><span class="sxs-lookup"><span data-stu-id="40ac1-104">As organizations move toward a service-oriented world, the real goal—creating effective business processes that unite separate systems into a coherent whole—comes within reach.</span></span>  

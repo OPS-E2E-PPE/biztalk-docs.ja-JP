@@ -11,7 +11,7 @@ helpviewer_keywords:
 - SWIFT solutions
 - tutorial, creating SWIFT solutions
 ms.assetid: 550af497-abd2-4044-8c6f-15f9dba0ac5d
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26004851"
 ---
 # <a name="module-1-creating-a-swift-solution"></a><span data-ttu-id="bebf4-102">第 1 章: SWIFT ソリューションを作成します。</span><span class="sxs-lookup"><span data-stu-id="bebf4-102">Module 1: Creating a SWIFT Solution</span></span>
 <span data-ttu-id="bebf4-103">このモジュールでは、空の BizTalk ソリューションを作成します。</span><span class="sxs-lookup"><span data-stu-id="bebf4-103">In this module, you create a blank BizTalk solution.</span></span> <span data-ttu-id="bebf4-104">使用して新しいソリューションを作成する最初のレッスンで[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="bebf4-104">In the first lesson, you create a new solution by using [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)].</span></span> <span data-ttu-id="bebf4-105">また、スキーマ、マップ、オーケストレーション、パイプライン コンポーネントなど、BizTalk ソリューションのコンポーネントを含む個々 のプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="bebf4-105">You also create the individual projects that contain your BizTalk solution components such as schema, maps, orchestrations, and pipeline components.</span></span>  
@@ -30,7 +31,7 @@ ms.lasthandoff: 03/28/2018
   
 1.  <span data-ttu-id="bebf4-108">開始**Visual Studio**です。</span><span class="sxs-lookup"><span data-stu-id="bebf4-108">Start **Visual Studio**.</span></span>  
   
-2.  <span data-ttu-id="bebf4-109">**[ファイル]** メニューの **[新規作成]**をポイントし、 **[プロジェクト]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bebf4-109">On the **File** menu, point to **New**, and then click **Project**.</span></span>  
+2.  <span data-ttu-id="bebf4-109">**[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bebf4-109">On the **File** menu, point to **New**, and then click **Project**.</span></span>  
   
 3.  <span data-ttu-id="bebf4-110">**プロジェクトの種類**選択、新しいプロジェクト ダイアログ ボックスのウィンドウ、 **BizTalk プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="bebf4-110">In the **Project Types** pane of the New Project dialog box, select the **BizTalk Projects**.</span></span> <span data-ttu-id="bebf4-111">[テンプレート] ペインで選択**空の BizTalk Server プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="bebf4-111">In the Templates pane, select **Empty BizTalk Server Project**.</span></span>  
   

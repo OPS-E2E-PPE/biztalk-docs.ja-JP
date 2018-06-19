@@ -1,11 +1,11 @@
 ---
-title: "マップのコンパイル |Microsoft ドキュメント"
-ms.custom: 
+title: マップのコンパイル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps, compiling
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - BizTalk Mapper, compiling
 - BizTalk Mapper, validating
 ms.assetid: 967181d6-22a9-4a76-ae45-3317c0c6321b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231866"
 ---
 # <a name="compiling-maps"></a><span data-ttu-id="96c0e-102">マップのコンパイル</span><span class="sxs-lookup"><span data-stu-id="96c0e-102">Compiling Maps</span></span>
 <span data-ttu-id="96c0e-103">マップを検証すると、BizTalk マッパーのコンパイラ コンポーネントが XSLT (Extensible Stylesheet Language Transformations) スタイルシートを生成します。</span><span class="sxs-lookup"><span data-stu-id="96c0e-103">When you validate maps, the BizTalk Mapper compiler component generates an Extensible Stylesheet Language Transformations (XSLT) style sheet.</span></span> <span data-ttu-id="96c0e-104">これにより、送信元スキーマによって定義されるインスタンス メッセージを送信先スキーマによって定義されるインスタンス メッセージに変換するコンパイル済みのマップが作成されます。</span><span class="sxs-lookup"><span data-stu-id="96c0e-104">This creates a compiled map that transforms an instance message defined by the source schema to an instance message defined by the destination schema.</span></span> <span data-ttu-id="96c0e-105">マップをコンパイルすると、構造上のルールが検証され、グリッド ページで指定されている変換が実行されます。</span><span class="sxs-lookup"><span data-stu-id="96c0e-105">Compiling a map enforces the structural rules and transformations specified in the grid pages.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "Windows Server クラスターを使用して BizTalk Server Hosts2 の高可用性を実現する |Microsoft ドキュメント"
-ms.custom: 
+title: Windows Server クラスターを使用して BizTalk Server Hosts2 の高可用性を実現する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 2016-01-04
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Passive configuration [Master Secret server]
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - installation, Windows Server cluster
 - clustering
 ms.assetid: 4d7f0842-561e-49e0-ab08-504256b9294f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287106"
 ---
 # <a name="using-windows-server-cluster-to-provide-high-availability-for-biztalk-server-hosts2"></a><span data-ttu-id="a2785-102">Windows Server クラスターを使用して BizTalk Server Hosts2 の高可用性を実現するには</span><span class="sxs-lookup"><span data-stu-id="a2785-102">Using Windows Server Cluster to Provide High Availability for BizTalk Server Hosts2</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="a2785-103">BizTalk ホストを Windows Server フェールオーバー クラスター グループ内のクラスター リソースとして構成できるようにする機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="a2785-103"> provides functionality that allows you to configure a BizTalk host as a clustered resource within a  Windows Server failover cluster group.</span></span> <span data-ttu-id="a2785-104">ホストのクラスター化対応により、FTP の受信ハンドラー、(場合によっては) POP3 受信ハンドラーなど、本来であれば複数のホスト インスタンスで同時に実行することのできない、統合された BizTalk アダプターで高い可用性を実現できるようになっています。</span><span class="sxs-lookup"><span data-stu-id="a2785-104">Host cluster support is provided to support high availability for integrated BizTalk adapters that should not be run in multiple host instances simultaneously, such as the FTP receive handler or, under certain circumstances, the POP3 receive handler.</span></span> <span data-ttu-id="a2785-105">MSMQ サービスのクラスター化が必要となるような状況でも、MSMQ アダプターによって送受信されたメッセージについて、トランザクションの一貫性を確実に保つことができます。</span><span class="sxs-lookup"><span data-stu-id="a2785-105">Host cluster support is also provided to ensure transactional consistency for messages sent or received by the MSMQ adapter in scenarios that require that the MSMQ service is clustered.</span></span>  

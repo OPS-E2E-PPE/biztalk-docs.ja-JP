@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル (AS2): 同期 MDN による AS2 経由で EDI の受信 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル (AS2): 同期 MDN による AS2 経由で EDI の受信 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b63395f-03f4-45e8-a68a-9bbbd8dfa344
-caps.latest.revision: "53"
+caps.latest.revision: 53
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22291962"
 ---
 # <a name="walkthrough-as2-receiving-edi-over-as2-with-a-synchronous-mdn"></a><span data-ttu-id="db8d5-102">チュートリアル (AS2): 同期 MDN による AS2 経由での EDI の受信</span><span class="sxs-lookup"><span data-stu-id="db8d5-102">Walkthrough (AS2): Receiving EDI over AS2 with a Synchronous MDN</span></span>
 <span data-ttu-id="db8d5-103">このチュートリアルでは、AS2 トランスポート経由で EDI メッセージを受信して同期 MDN を返すソリューションを作成する、一連の手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="db8d5-103">This walkthrough provides a set of step-by-step procedures that creates a solution for receiving EDI messages over AS2 transport, returning synchronous MDNs.</span></span>  
@@ -122,7 +123,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="db8d5-169">**スクリプト マップの追加** ダイアログ ボックスで、入力`BtsHttpReceive.dll`で、**要求パス**フィールドです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-169">In the **Add Script Map** dialog box, enter `BtsHttpReceive.dll` in the **Request path** field.</span></span>  
   
-4.  <span data-ttu-id="db8d5-170">**実行可能ファイル**フィールドで、をクリックして、**省略記号 (...)**ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-170">In the **Executable** field, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span> <span data-ttu-id="db8d5-171">BtsHttpReceive.dll を選択し、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-171">Select BtsHttpReceive.dll and click **OK**.</span></span>  
+4.  <span data-ttu-id="db8d5-170">**実行可能ファイル**フィールドで、をクリックして、**省略記号 (...)** ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-170">In the **Executable** field, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span> <span data-ttu-id="db8d5-171">BtsHttpReceive.dll を選択し、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-171">Select BtsHttpReceive.dll and click **OK**.</span></span>  
   
 5.  <span data-ttu-id="db8d5-172">入力`BizTalk HTTP Receive`で、**名前**フィールドをクリックして**要求の制限**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-172">Enter `BizTalk HTTP Receive` in the **Name** field, and then click **Request Restrictions**.</span></span>  
   
@@ -136,14 +137,14 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="db8d5-178">IIS マネージャーを右クリックして**アプリケーション プール**選択**アプリケーション プールの追加**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-178">In IIS Manager, right-click **Application Pools** and select **Add Application Pool**.</span></span>  
   
-2.  <span data-ttu-id="db8d5-179">**アプリケーション プールの追加**] ダイアログ ボックスで、入力**BizTalkAppPool**で**名前**、し、[ **.NET Framework V4.0.30210**で、**.NET framework のバージョン**ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-179">In the **Add Application Pool** dialog box, enter **BizTalkAppPool** in **Name**, and then select **.NET Framework V4.0.30210** in the **.NET Framework version** dropdown list.</span></span> <span data-ttu-id="db8d5-180">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-180">Click **OK**.</span></span>  
+2.  <span data-ttu-id="db8d5-179">**アプリケーション プールの追加**] ダイアログ ボックスで、入力**BizTalkAppPool**で**名前**、し、[ **.NET Framework V4.0.30210**で、**.NET framework のバージョン**ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-179">In the **Add Application Pool** dialog box, enter **BizTalkAppPool** in **Name**, and then select **.NET Framework V4.0.30210** in the **.NET Framework version** dropdown list.</span></span> <span data-ttu-id="db8d5-180">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-180">Click **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="db8d5-181">コンピューターにインストール済みの [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] のバージョンによって、バージョン番号が異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="db8d5-181">The version number may vary depending on the version of [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] installed on the machine.</span></span>  
   
 3.  <span data-ttu-id="db8d5-182">選択**アプリケーション プール**、機能ビューの選択で**BizTalkAppPool**、順にクリック**詳細設定**で、**アクション**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-182">Select **Application Pools**, in the Features View select **BizTalkAppPool**, and then click **Advanced Settings** in the **Actions** pane.</span></span>  
   
-4.  <span data-ttu-id="db8d5-183">**詳細設定**ダイアログ ボックスで、 **Identity**をクリックし、**省略記号 (...)**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-183">In the **Advanced Settings** dialog box, select **Identity** and then click the **ellipsis (…)** button.</span></span>  
+4.  <span data-ttu-id="db8d5-183">**詳細設定**ダイアログ ボックスで、 **Identity**をクリックし、**省略記号 (...)** ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-183">In the **Advanced Settings** dialog box, select **Identity** and then click the **ellipsis (…)** button.</span></span>  
   
 5.  <span data-ttu-id="db8d5-184">**アプリケーション プール Id**ダイアログ ボックスで、**カスタム アカウント** をクリックし、**設定**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-184">In the **Application Pool Identity** dialog box, select **Custom account** and then click **Set**.</span></span>  
   
@@ -155,9 +156,9 @@ ms.lasthandoff: 09/20/2017
   
 9. <span data-ttu-id="db8d5-189">**アプリケーション プールの選択**ダイアログ ボックスで、 **BizTalkAppPool**  をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-189">In the **Select Application Pool** dialog box, select **BizTalkAppPool** and click **OK**.</span></span>  
   
-10. <span data-ttu-id="db8d5-190">**物理パス**をクリックして、**省略記号 (...)**ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-190">For the **Physical Path**, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span>  
+10. <span data-ttu-id="db8d5-190">**物理パス**をクリックして、**省略記号 (...)** ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-190">For the **Physical Path**, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span>  
   
-11. <span data-ttu-id="db8d5-191">をクリックして**テストの設定**に表示されるエラーがないことを確認し、**接続のテスト** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="db8d5-191">Click **Test Settings** and verify that there are no errors displayed in the **Test Connection** dialog box.</span></span> <span data-ttu-id="db8d5-192">**[閉じる]**をクリックし、 **[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-192">Click **Close**, and then click **OK**.</span></span>  
+11. <span data-ttu-id="db8d5-191">をクリックして**テストの設定**に表示されるエラーがないことを確認し、**接続のテスト** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="db8d5-191">Click **Test Settings** and verify that there are no errors displayed in the **Test Connection** dialog box.</span></span> <span data-ttu-id="db8d5-192">**[閉じる]** をクリックし、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-192">Click **Close**, and then click **OK**.</span></span>  
   
 12. <span data-ttu-id="db8d5-193">IIS マネージャーでは、Contoso 仮想ディレクトリを選択し、、**機能ビュー**をダブルクリックして**認証**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-193">In IIS Manager, select the Contoso virtual directory and in the **Features View**, double-click **Authentication**.</span></span>  
   
@@ -182,7 +183,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="db8d5-206">受信ポートの名前を指定し、をクリックして**受信場所**コンソール ツリーでします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-206">Name the receive port, and then click **Receive Locations** in the console tree.</span></span>  
   
-3.  <span data-ttu-id="db8d5-207">**[新規作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-207">Click **New**.</span></span>  
+3.  <span data-ttu-id="db8d5-207">**[新規作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-207">Click **New**.</span></span>  
   
 4.  <span data-ttu-id="db8d5-208">名前、受信場所は、select **HTTP**の**型**、順にクリック**構成**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-208">Name the receive location, select **HTTP** for **Type**, and then click **Configure**.</span></span>  
   
@@ -194,7 +195,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="db8d5-212">**送信パイプライン** **AS2Send**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-212">For **Send pipeline**, select **AS2Send**.</span></span>  
   
-9. <span data-ttu-id="db8d5-213">をクリックして**[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-213">Click **OK**, and then click **OK** again.</span></span>  
+9. <span data-ttu-id="db8d5-213">をクリックして **[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-213">Click **OK**, and then click **OK** again.</span></span>  
   
 10. <span data-ttu-id="db8d5-214">**受信場所**、BizTalk Server 管理コンソールのウィンドウは、受信場所を右クリックし、をクリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-214">In the **Receive Locations** pane of the BizTalk Server Administration Console, right-click the receive location, and then click **Enable**.</span></span>  
   
@@ -206,13 +207,13 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="db8d5-218">**送信ポートのプロパティ**ダイアログ ボックスで、名前、送信ポートにたとえば、 **Send_Payload**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-218">In the **Send Port Properties** dialog box, name your send port, for example, **Send_Payload**.</span></span> <span data-ttu-id="db8d5-219">選択**ファイル**の**型**、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-219">Select **FILE** for **Type**, and then click **Configure**.</span></span>  
   
-4.  <span data-ttu-id="db8d5-220">**FILE トランスポートのプロパティ** ダイアログ ボックスの**コピー先フォルダー**を参照して選択、 **EDI_to_Contoso**手順 1. で作成したフォルダーです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-220">In the **FILE Transport Properties** dialog box, for **Destination folder**, browse to and select the **EDI_to_Contoso** folder that you created in step 1.</span></span> <span data-ttu-id="db8d5-221">ままにして**ファイル名**として**%MessageID%.xml**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-221">Leave **File name** as **%MessageID%.xml**.</span></span> <span data-ttu-id="db8d5-222">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-222">Click **OK**.</span></span>  
+4.  <span data-ttu-id="db8d5-220">**FILE トランスポートのプロパティ** ダイアログ ボックスの**コピー先フォルダー**を参照して選択、 **EDI_to_Contoso**手順 1. で作成したフォルダーです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-220">In the **FILE Transport Properties** dialog box, for **Destination folder**, browse to and select the **EDI_to_Contoso** folder that you created in step 1.</span></span> <span data-ttu-id="db8d5-221">ままにして**ファイル名**として **%MessageID%.xml**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-221">Leave **File name** as **%MessageID%.xml**.</span></span> <span data-ttu-id="db8d5-222">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-222">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="db8d5-223">**送信パイプライン**ドロップダウン リストで、既定値を受け入れる**PassThruTransmit**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-223">For the **Send Pipeline** drop-down, accept the default **PassThruTransmit**.</span></span>  
   
-6.  <span data-ttu-id="db8d5-224">をクリックして**フィルター**コンソール ツリーでします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-224">Click **Filters** in the console tree.</span></span> <span data-ttu-id="db8d5-225">**プロパティ**、入力**BTS です。MessageType**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-225">For **Property**, enter **BTS.MessageType**.</span></span> <span data-ttu-id="db8d5-226">**演算子**、入力 **==**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-226">For **Operator**, enter **==**.</span></span> <span data-ttu-id="db8d5-227">**値**、メッセージのメッセージの種類を入力`http://schemas.microsoft.com/BizTalk/Edi/X12/2006#X12_00401_864`です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-227">For **Value**, enter the message type for your message, `http://schemas.microsoft.com/BizTalk/Edi/X12/2006#X12_00401_864`.</span></span>  
+6.  <span data-ttu-id="db8d5-224">をクリックして**フィルター**コンソール ツリーでします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-224">Click **Filters** in the console tree.</span></span> <span data-ttu-id="db8d5-225">**プロパティ**、入力**BTS です。MessageType**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-225">For **Property**, enter **BTS.MessageType**.</span></span> <span data-ttu-id="db8d5-226">**演算子**、入力 **==** です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-226">For **Operator**, enter **==**.</span></span> <span data-ttu-id="db8d5-227">**値**、メッセージのメッセージの種類を入力`http://schemas.microsoft.com/BizTalk/Edi/X12/2006#X12_00401_864`です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-227">For **Value**, enter the message type for your message, `http://schemas.microsoft.com/BizTalk/Edi/X12/2006#X12_00401_864`.</span></span>  
   
-7.  <span data-ttu-id="db8d5-228">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-228">Click **OK**.</span></span>  
+7.  <span data-ttu-id="db8d5-228">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-228">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="db8d5-229">**送信ポート**のペイン、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールでは、送信ポートを右クリックし、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-229">In the **Send Ports** pane of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, right-click the send port, and then click **Start**.</span></span>  
   
@@ -264,20 +265,20 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="db8d5-261">**全般** タブで、**全般プロパティ** ページの 、**共通のホスト設定**セクションで、**レポートをオンに**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-261">In the **General** tab, on the **General Properties** page, in the **Common Host Settings** section, select **Turn ON reporting**.</span></span>  
   
-7.  <span data-ttu-id="db8d5-262">次のタスクを実行、 **Fabrikam が Contoso ->**タブです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-262">Perform the following tasks on the **Fabrikam->Contoso** tab.</span></span>  
+7.  <span data-ttu-id="db8d5-262">次のタスクを実行、 **Fabrikam が Contoso ->** タブです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-262">Perform the following tasks on the **Fabrikam->Contoso** tab.</span></span>  
   
     1.  <span data-ttu-id="db8d5-263">**識別子** ページで、値を入力**AS2-から**と**AS2-に**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-263">On the **Identifiers** page, enter values for **AS2-From** and **AS2-To**.</span></span> <span data-ttu-id="db8d5-264">**AS2-から**、入力`Fabrikam`です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-264">For **AS2-From**, enter `Fabrikam`.</span></span> <span data-ttu-id="db8d5-265">**AS2-To**、入力`Contoso`です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-265">For **AS2- To**, enter `Contoso`.</span></span>  
   
-8.  <span data-ttu-id="db8d5-266">次のタスクを実行、 **Contoso が Fabrikam ->**タブです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-266">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
+8.  <span data-ttu-id="db8d5-266">次のタスクを実行、 **Contoso が Fabrikam ->** タブです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-266">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="db8d5-267">このチュートリアルでは、必要な値をタブに指定し、アグリーメントを正常に作成できるようにします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-267">In this walkthrough, we specify the required value in the tab so that an agreement can be successfully created.</span></span> <span data-ttu-id="db8d5-268">アグリーメントを正常に作成する両方の一方向アグリーメント タブの値に対して定義されている必要があります**[as2_from]**と**AS2-に**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-268">To successfully create an agreement, both one-way agreement tabs must have values defined for **AS2_From** and **AS2-To**.</span></span>  
+    >  <span data-ttu-id="db8d5-267">このチュートリアルでは、必要な値をタブに指定し、アグリーメントを正常に作成できるようにします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-267">In this walkthrough, we specify the required value in the tab so that an agreement can be successfully created.</span></span> <span data-ttu-id="db8d5-268">アグリーメントを正常に作成する両方の一方向アグリーメント タブの値に対して定義されている必要があります **[as2_from]** と**AS2-に**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-268">To successfully create an agreement, both one-way agreement tabs must have values defined for **AS2_From** and **AS2-To**.</span></span>  
   
     1.  <span data-ttu-id="db8d5-269">**識別子** ページで、値を入力**AS2-から**と**AS2-に**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-269">On the **Identifiers** page, enter values for **AS2-From** and **AS2-To**.</span></span> <span data-ttu-id="db8d5-270">**AS2-から**、入力`Contoso`です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-270">For **AS2-From**, enter `Contoso`.</span></span> <span data-ttu-id="db8d5-271">**AS2-To**、入力`Fabrikam`です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-271">For **AS2- To**, enter `Fabrikam`.</span></span>  
   
-9. <span data-ttu-id="db8d5-272">**[適用]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-272">Click **Apply**.</span></span>  
+9. <span data-ttu-id="db8d5-272">**[適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-272">Click **Apply**.</span></span>  
   
-10. <span data-ttu-id="db8d5-273">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-273">Click **OK**.</span></span> <span data-ttu-id="db8d5-274">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-274">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="db8d5-275">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="db8d5-275">The newly added agreement is enabled by default.</span></span>  
+10. <span data-ttu-id="db8d5-273">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-273">Click **OK**.</span></span> <span data-ttu-id="db8d5-274">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-274">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="db8d5-275">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="db8d5-275">The newly added agreement is enabled by default.</span></span>  
   
 ##### <a name="to-create-an-x12-agreement-between-the-two-business-profiles"></a><span data-ttu-id="db8d5-276">2 つのビジネス プロファイルの間に X12 アグリーメントを作成するには</span><span class="sxs-lookup"><span data-stu-id="db8d5-276">To create an X12 agreement between the two business profiles</span></span>  
   
@@ -295,7 +296,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="db8d5-283">**全般** タブで、**全般プロパティ** ページの 、**共通のホスト設定**セクションで、**レポートをオンに**、し、選択**reporting 用メッセージ ペイロードを格納**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-283">In the **General** tab, on the **General Properties** page, in the **Common Host Settings** section, select **Turn ON reporting**, and then select **Store message payload for reporting**.</span></span>  
   
-7.  <span data-ttu-id="db8d5-284">次のタスクを実行、 **Fabrikam が Contoso ->**タブです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-284">Perform the following tasks on the **Fabrikam->Contoso** tab.</span></span>  
+7.  <span data-ttu-id="db8d5-284">次のタスクを実行、 **Fabrikam が Contoso ->** タブです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-284">Perform the following tasks on the **Fabrikam->Contoso** tab.</span></span>  
   
     1.  <span data-ttu-id="db8d5-285">**識別子**ページで、**インターチェンジの設定**セクションで、修飾子と識別子のフィールドの値を入力 (**ISA5**、 **ISA6**、 **ISA7**、および**ISA8**) テスト メッセージのヘッダー フィールドの値に対応します。</span><span class="sxs-lookup"><span data-stu-id="db8d5-285">On the **Identifiers** page under the **Interchange Settings** section, enter values for the qualifier and identifier fields (**ISA5**, **ISA6**, **ISA7**, and **ISA8**) that correspond to the values for those header fields in your test message.</span></span>  
   
@@ -320,7 +321,7 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  <span data-ttu-id="db8d5-300">プロパティを設定すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、受信 850 インターチェンジの処理に使用するスキーマを決定できるようになります。</span><span class="sxs-lookup"><span data-stu-id="db8d5-300">Setting the properties enables [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to determine the schema to be used in processing the incoming 850 interchange.</span></span> <span data-ttu-id="db8d5-301">グリッド内の行に入力された [GS02] と [ST01] の値がインターチェンジに設定されている場合は、同じ行にあるターゲットの名前空間により、使用するスキーマが決定されます。</span><span class="sxs-lookup"><span data-stu-id="db8d5-301">If an interchange has the values of GS02 and ST01 that are entered on a line of the grid, then the target namespace for the same line will be used to determine the schema to be used.</span></span>  
   
-8.  <span data-ttu-id="db8d5-302">次のタスクを実行、 **Contoso が Fabrikam ->**タブです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-302">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
+8.  <span data-ttu-id="db8d5-302">次のタスクを実行、 **Contoso が Fabrikam ->** タブです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-302">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="db8d5-303">このチュートリアルでは、必要な値をタブに指定し、アグリーメントを正常に作成できるようにします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-303">In this walkthrough, we specify the required value in the tab so that an agreement can be successfully created.</span></span> <span data-ttu-id="db8d5-304">アグリーメントを正常に作成する両方の一方向アグリーメント タブの値に対して定義されている必要があります**ISA5**、 **ISA6**、 **ISA7**、および**ISA8**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-304">To successfully create an agreement, both one-way agreement tabs must have values defined for **ISA5**, **ISA6**, **ISA7**, and **ISA8**.</span></span>  
@@ -330,9 +331,9 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  <span data-ttu-id="db8d5-306">このチュートリアルでは、次のように設定します**ISA5**に**ZZ**、 **ISA6**に**1234567**、 **ISA7**に**ZZ。**、および**ISA8**に**7654321**です。</span><span class="sxs-lookup"><span data-stu-id="db8d5-306">For this walkthrough, set **ISA5** to **ZZ**, **ISA6** to **1234567**, **ISA7** to **ZZ**, and **ISA8** to **7654321**.</span></span>  
   
-9. <span data-ttu-id="db8d5-307">**[適用]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-307">Click **Apply**.</span></span>  
+9. <span data-ttu-id="db8d5-307">**[適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-307">Click **Apply**.</span></span>  
   
-10. <span data-ttu-id="db8d5-308">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-308">Click **OK**.</span></span> <span data-ttu-id="db8d5-309">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-309">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="db8d5-310">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="db8d5-310">The newly added agreement is enabled by default.</span></span>  
+10. <span data-ttu-id="db8d5-308">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db8d5-308">Click **OK**.</span></span> <span data-ttu-id="db8d5-309">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="db8d5-309">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="db8d5-310">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="db8d5-310">The newly added agreement is enabled by default.</span></span>  
   
 ### <a name="testing-the-walkthrough"></a><span data-ttu-id="db8d5-311">チュートリアルのテスト</span><span class="sxs-lookup"><span data-stu-id="db8d5-311">Testing the Walkthrough</span></span>  
  <span data-ttu-id="db8d5-312">ここでは、チュートリアルをテストする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="db8d5-312">This section provides information on how to test the walkthrough.</span></span>  

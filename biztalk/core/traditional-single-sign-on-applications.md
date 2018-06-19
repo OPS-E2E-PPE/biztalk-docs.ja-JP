@@ -1,14 +1,14 @@
 ---
-title: "従来シングル サインオン アプリケーション |Microsoft ドキュメント"
-ms.custom: 
+title: 従来シングル サインオン アプリケーション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a49bdae7-215a-43fb-875e-f64abb37aef0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279690"
 ---
 # <a name="traditional-single-sign-on-applications"></a><span data-ttu-id="477df-102">従来シングル サインオン アプリケーション</span><span class="sxs-lookup"><span data-stu-id="477df-102">Traditional Single Sign-On Applications</span></span>
 <span data-ttu-id="477df-103">シングル サインオン (SSO) のプログラミング アーキテクチャには、アプリケーションとユーザー間でマップするためのマッピング コンポーネント、特定の用途の資格情報を参照するための参照コンポーネント、および管理タスクを実行するための管理コンポーネントが含まれています。</span><span class="sxs-lookup"><span data-stu-id="477df-103">The Single Sign-On (SSO) programming architecture contains a mapping component to map between applications and users, a lookup component to look up credentials for a specified use, and an administration component to perform administrative tasks.</span></span> <span data-ttu-id="477df-104">さらに、SSO にはアプリケーションがチケットを発行および引き換えるためのチケット インターフェイスも含まれています。</span><span class="sxs-lookup"><span data-stu-id="477df-104">In addition, SSO also contains a ticketing interface so that your application can issue and redeem tickets.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "WCF アダプタ |Microsoft ドキュメント"
-ms.custom: 
+title: WCF アダプタ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e64cd189-8805-4209-bd06-971363f38585
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290026"
 ---
 # <a name="wcf-adapters"></a><span data-ttu-id="9084b-102">WCF アダプタ</span><span class="sxs-lookup"><span data-stu-id="9084b-102">WCF Adapters</span></span>
 
@@ -27,11 +28,11 @@ ms.lasthandoff: 09/20/2017
 
 ## <a name="available-wcf-adapters"></a><span data-ttu-id="9084b-108">使用可能な WCF アダプター</span><span class="sxs-lookup"><span data-stu-id="9084b-108">Available WCF adapters</span></span>
     
--   <span data-ttu-id="9084b-109">**Wcf-wshttp アダプタ**です。</span><span class="sxs-lookup"><span data-stu-id="9084b-109">**WCF-WSHttp adapter**.</span></span> <span data-ttu-id="9084b-110">HTTP トランスポート経由の WS-* 標準をサポートします。</span><span class="sxs-lookup"><span data-stu-id="9084b-110">Provides the WS-* standards support over the HTTP transport.</span></span> <span data-ttu-id="9084b-111">WCF-WSHttp アダプターは、外部アプリケーションと MessageBox データベース間のトランザクション上の対話に WS-Transaction、メッセージ セキュリティと認証に WS-Security という仕様を実装します。</span><span class="sxs-lookup"><span data-stu-id="9084b-111">The WCF-WSHttp adapter implements the following specifications: WS-Transaction for the transactional interactions between external applications and the MessageBox database, and WS-Security for message security and authentication.</span></span> <span data-ttu-id="9084b-112">トランスポートは HTTP または HTTPS で、メッセージのエンコードは、テキスト エンコードまたは Message Transmission Optimization Mechanism (MTOM) エンコードです。</span><span class="sxs-lookup"><span data-stu-id="9084b-112">The transport is HTTP or HTTPS, and message encoding is a Text or Message Transmission Optimization Mechanism (MTOM) encoding.</span></span>  
+-   <span data-ttu-id="9084b-109">**Wcf-wshttp アダプタ**です。</span><span class="sxs-lookup"><span data-stu-id="9084b-109">**WCF-WSHttp adapter**.</span></span> <span data-ttu-id="9084b-110">HTTP トランスポート経由の WS-\* 標準をサポートします。</span><span class="sxs-lookup"><span data-stu-id="9084b-110">Provides the WS-\* standards support over the HTTP transport.</span></span> <span data-ttu-id="9084b-111">WCF-WSHttp アダプターは、外部アプリケーションと MessageBox データベース間のトランザクション上の対話に WS-Transaction、メッセージ セキュリティと認証に WS-Security という仕様を実装します。</span><span class="sxs-lookup"><span data-stu-id="9084b-111">The WCF-WSHttp adapter implements the following specifications: WS-Transaction for the transactional interactions between external applications and the MessageBox database, and WS-Security for message security and authentication.</span></span> <span data-ttu-id="9084b-112">トランスポートは HTTP または HTTPS で、メッセージのエンコードは、テキスト エンコードまたは Message Transmission Optimization Mechanism (MTOM) エンコードです。</span><span class="sxs-lookup"><span data-stu-id="9084b-112">The transport is HTTP or HTTPS, and message encoding is a Text or Message Transmission Optimization Mechanism (MTOM) encoding.</span></span>  
   
 -   <span data-ttu-id="9084b-113">**Wcf-basichttp アダプター**です。</span><span class="sxs-lookup"><span data-stu-id="9084b-113">**WCF-BasicHttp adapter**.</span></span> <span data-ttu-id="9084b-114">ASMX ベースの Web サービスとクライアント、および WS-I Basic Profile 1.1 に準拠する他のサービスと通信します。</span><span class="sxs-lookup"><span data-stu-id="9084b-114">Communicates with ASMX-based Web services and clients and other services that conform to the WS-I Basic Profile 1.1.</span></span> <span data-ttu-id="9084b-115">トランスポートは HTTP または HTTPS で、メッセージ エンコードは Text エンコードです。</span><span class="sxs-lookup"><span data-stu-id="9084b-115">The transport is HTTP or HTTPS, and message encoding is a text encoding.</span></span>  
   
--   <span data-ttu-id="9084b-116">**Wcf-nettcp アダプター**です。</span><span class="sxs-lookup"><span data-stu-id="9084b-116">**WCF-NetTcp adapter**.</span></span> <span data-ttu-id="9084b-117">TCP トランスポート経由の WS-* 標準をサポートします。</span><span class="sxs-lookup"><span data-stu-id="9084b-117">Provides the WS-* standards support over the TCP transport.</span></span> <span data-ttu-id="9084b-118">WCF-NetTcp アダプタは、WCF-to-WCF 環境での効率的な通信を提供します。</span><span class="sxs-lookup"><span data-stu-id="9084b-118">The WCF-NetTcp adapter provides efficient communication in a WCF-to-WCF environment.</span></span> <span data-ttu-id="9084b-119">アダプターは、次の仕様を実装して: 外部アプリケーションとメッセージ ボックス データベース、および Ws-security 間は、メッセージ セキュリティと認証の間のやり取りをトランザクションの WS トランザクションです。</span><span class="sxs-lookup"><span data-stu-id="9084b-119">The adapter implements the following specifications: WS-Transaction for the transactional interactions between external applications and the MessageBox database, and WS-Security for message security and authentication.</span></span> <span data-ttu-id="9084b-120">トランスポートは TCP で、メッセージのエンコードはバイナリ エンコードです。</span><span class="sxs-lookup"><span data-stu-id="9084b-120">The transport is TCP, and message encoding is binary encoding.</span></span>  
+-   <span data-ttu-id="9084b-116">**Wcf-nettcp アダプター**です。</span><span class="sxs-lookup"><span data-stu-id="9084b-116">**WCF-NetTcp adapter**.</span></span> <span data-ttu-id="9084b-117">TCP トランスポート経由の WS-\* 標準をサポートします。</span><span class="sxs-lookup"><span data-stu-id="9084b-117">Provides the WS-\* standards support over the TCP transport.</span></span> <span data-ttu-id="9084b-118">WCF-NetTcp アダプタは、WCF-to-WCF 環境での効率的な通信を提供します。</span><span class="sxs-lookup"><span data-stu-id="9084b-118">The WCF-NetTcp adapter provides efficient communication in a WCF-to-WCF environment.</span></span> <span data-ttu-id="9084b-119">アダプターは、次の仕様を実装して: 外部アプリケーションとメッセージ ボックス データベース、および Ws-security 間は、メッセージ セキュリティと認証の間のやり取りをトランザクションの WS トランザクションです。</span><span class="sxs-lookup"><span data-stu-id="9084b-119">The adapter implements the following specifications: WS-Transaction for the transactional interactions between external applications and the MessageBox database, and WS-Security for message security and authentication.</span></span> <span data-ttu-id="9084b-120">トランスポートは TCP で、メッセージのエンコードはバイナリ エンコードです。</span><span class="sxs-lookup"><span data-stu-id="9084b-120">The transport is TCP, and message encoding is binary encoding.</span></span>  
   
 -   <span data-ttu-id="9084b-121">**Wcf-netmsmq アダプタ**です。</span><span class="sxs-lookup"><span data-stu-id="9084b-121">**WCF-NetMsmq adapter**.</span></span> <span data-ttu-id="9084b-122">[!INCLUDE[btsCoName](../includes/btsconame-md.md)] メッセージ キュー (MSMQ) をトランスポートとして利用することにより、キューをサポートします。疎結合アプリケーションのサポート、エラーの分離、負荷の平準化、および切断時の操作を可能にします。</span><span class="sxs-lookup"><span data-stu-id="9084b-122">Provides support for queuing by leveraging [!INCLUDE[btsCoName](../includes/btsconame-md.md)] Message Queuing (MSMQ) as a transport and enables support for loosely coupled applications, failure isolation, load leveling, and disconnected operations.</span></span>  
   

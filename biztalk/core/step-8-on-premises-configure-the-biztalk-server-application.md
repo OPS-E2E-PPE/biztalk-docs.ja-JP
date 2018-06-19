@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5109fb54-8453-444f-bc9c-070a65053397
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25975224"
 ---
 # <a name="step-8-on-premises-configure-the-biztalk-server-application"></a><span data-ttu-id="4edd8-102">手順 8 (オンプレミス): BizTalk Server アプリケーションを構成します。</span><span class="sxs-lookup"><span data-stu-id="4edd8-102">Step 8 (On Premises): Configure the BizTalk Server Application</span></span>
 <span data-ttu-id="4edd8-103">前のステップでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションを作成しました。</span><span class="sxs-lookup"><span data-stu-id="4edd8-103">In the previous step you created a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration.</span></span> <span data-ttu-id="4edd8-104">このステップでは、アプリケーションをビルドし、展開し、構成します。</span><span class="sxs-lookup"><span data-stu-id="4edd8-104">In this step, you’ll build, deploy, and configure the application.</span></span>  

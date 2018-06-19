@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を実行しているコンピューターのバックアップ |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を実行しているコンピューターのバックアップ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 70f53b41-8083-4b56-8698-e75a13b21a69
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230506"
 ---
 # <a name="backing-up-a-computer-running-biztalk-server"></a><span data-ttu-id="c8f03-102">BizTalk Server を実行しているコンピュータのバックアップ</span><span class="sxs-lookup"><span data-stu-id="c8f03-102">Backing Up a Computer Running BizTalk Server</span></span>
 <span data-ttu-id="c8f03-103">BizTalk Server を実行しているコンピュータで復旧不可能なハードウェア障害が発生した場合、同等のコンピュータに置き換える必要があります。</span><span class="sxs-lookup"><span data-stu-id="c8f03-103">If a computer running BizTalk Server suffers an irrecoverable hardware failure, then you must replace that computer with an identical one.</span></span> <span data-ttu-id="c8f03-104">基本プラットフォーム、必要なソフトウェア、BizTalk Server コンポーネント、および同等の構成設定が備わった代替コンピュータをセットアップします。</span><span class="sxs-lookup"><span data-stu-id="c8f03-104">You should set up the replacement computer with the base platform software, software prerequisites, BizTalk Server components, and identical configuration settings.</span></span> <span data-ttu-id="c8f03-105">これらの構成設定は、BizTalk アプリケーションを正しく機能させるために必要な、適切なレジストリ エントリ、ファイル、フォルダ、および関連する Windows サービスで構成される場合があります。</span><span class="sxs-lookup"><span data-stu-id="c8f03-105">These configuration settings may consist of the appropriate registry entries, files, folders, and related Windows services necessary for the correct operation of your BizTalk applications.</span></span>  

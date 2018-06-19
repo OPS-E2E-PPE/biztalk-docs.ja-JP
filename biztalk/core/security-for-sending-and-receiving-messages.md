@@ -1,11 +1,11 @@
 ---
-title: "メッセージを送受信するためのセキュリティ |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージを送受信するためのセキュリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, receiving
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - security, message processing
 - messages, security
 ms.assetid: 9bcd01e4-245a-4f4c-b65c-89d7cd3d1b68
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270602"
 ---
 # <a name="security-for-sending-and-receiving-messages"></a><span data-ttu-id="91d69-102">メッセージを送受信する際のセキュリティ</span><span class="sxs-lookup"><span data-stu-id="91d69-102">Security for Sending and Receiving Messages</span></span>
 <span data-ttu-id="91d69-103">次の図に、BizTalk Server でメッセージが受信および処理され、別のアプリケーションやパートナーに送信されるときの状況を示します。</span><span class="sxs-lookup"><span data-stu-id="91d69-103">The following figure shows what happens to a message as BizTalk Server receives it, processes it, and sends it to another application or partner.</span></span>  

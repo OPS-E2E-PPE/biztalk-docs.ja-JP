@@ -1,14 +1,14 @@
 ---
-title: "データベースの高可用性 |Microsoft ドキュメント"
-ms.custom: 
+title: データベースの高可用性 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 63813d87-1ce4-4645-bb2a-d55e413fcace
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009363"
 ---
 # <a name="high-availability-for-databases"></a><span data-ttu-id="24398-102">データベースの高可用性</span><span class="sxs-lookup"><span data-stu-id="24398-102">High Availability for Databases</span></span>
 <span data-ttu-id="24398-103">BizTalk Server に大きく依存して SQL Server のデータ ストアとデータの永続化します。</span><span class="sxs-lookup"><span data-stu-id="24398-103">BizTalk Server relies heavily on SQL Server for data store and data persistence.</span></span> <span data-ttu-id="24398-104">その他すべての BizTalk Server コンポーネントおよびホストにも、多種多様な業務アプリケーション (メッセージの受信、処理、ルーティングなど) を統合するプロセスにおいて、それぞれ固有の役割がありますが、この作業をディスクに取り込み、維持するという役割は、データベース コンピューターにあります。</span><span class="sxs-lookup"><span data-stu-id="24398-104">All other components and hosts in BizTalk Server have specific roles in the process of integrating disparate business applications (for example, receiving, processing, or routing messages), but the database computer captures this work and persists it to disk.</span></span> <span data-ttu-id="24398-105">たとえば、BizTalk Server が受信メッセージを受信すると受信ホストに永続化、メッセージ ボックス データベースの他のホストは、オーケストレーションの処理および送信のメッセージを取得する前にします。</span><span class="sxs-lookup"><span data-stu-id="24398-105">For example, when BizTalk Server receives an incoming message, the receive host persists it to the MessageBox database before other hosts retrieve the message for orchestration processing and sending.</span></span> <span data-ttu-id="24398-106">BizTalk ソリューションには、オーケストレーションが含まれている場合、BizTalk Server は (処理ホスト)、ビジネス プロセスを実行し、オーケストレーションの完了後に、メッセージをメッセージ ボックス データベースに保存します。 ホストにメッセージをルーティングします。</span><span class="sxs-lookup"><span data-stu-id="24398-106">If your BizTalk solution involves orchestration, BizTalk Server routes the message to the host that executes the business process (processing host), and saves the message to the MessageBox database after the orchestration finishes.</span></span> <span data-ttu-id="24398-107">その後、送信ホストが、そのメッセージをデータベースから取り出し、適切な送信アダプターを使って外部のアプリケーションに送信します。</span><span class="sxs-lookup"><span data-stu-id="24398-107">The sending host then retrieves the message from the database before sending it to the external application through the appropriate send adapter.</span></span>  

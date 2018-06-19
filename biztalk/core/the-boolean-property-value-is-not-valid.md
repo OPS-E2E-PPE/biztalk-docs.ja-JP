@@ -1,14 +1,14 @@
 ---
-title: "ブール型プロパティ値が有効ではありません |Microsoft ドキュメント"
-ms.custom: 
+title: ブール型プロパティ値が有効ではありません |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62b6c178-f8ea-451a-b2dc-9396c24c0f5b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279162"
 ---
 # <a name="the-boolean-property-value-is-not-valid"></a><span data-ttu-id="1cc36-102">ブール型プロパティの値が無効です</span><span class="sxs-lookup"><span data-stu-id="1cc36-102">The boolean property value is not valid</span></span>
 ## <a name="details"></a><span data-ttu-id="1cc36-103">詳細</span><span class="sxs-lookup"><span data-stu-id="1cc36-103">Details</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289698"
 ---
 # <a name="what-is-the-wcf-customisolated-adapter"></a><span data-ttu-id="33929-103">Wcf-customisolated アダプターとは何ですか。</span><span class="sxs-lookup"><span data-stu-id="33929-103">What Is the WCF-CustomIsolated Adapter?</span></span>
 <span data-ttu-id="33929-104">WCF-CustomIsolated アダプタは、分離ホストを使用して、BizTalk Server における WCF 拡張機能コンポーネントの使用を有効にするために使用されます。</span><span class="sxs-lookup"><span data-stu-id="33929-104">The WCF-CustomIsolated adapter is used to enable the use of WCF extensibility components in BizTalk Server with an isolated host.</span></span> <span data-ttu-id="33929-105">このアダプタによって、WCF フレームワークの完全な柔軟性が有効になります。</span><span class="sxs-lookup"><span data-stu-id="33929-105">The adapter enables complete flexibility of the WCF framework.</span></span> <span data-ttu-id="33929-106">そのためユーザーは、受信場所の WCF バインドを選択して構成したり、エンドポイント動作やセキュリティ設定を指定したりできるようになります。</span><span class="sxs-lookup"><span data-stu-id="33929-106">It allows users to select and configure a WCF binding for the receive location, and to specify the endpoint behaviors and security settings.</span></span> <span data-ttu-id="33929-107">このアダプタを使用できるのは、インターネット インフォメーション サービス (IIS) でホストされているトランスポートのみです。</span><span class="sxs-lookup"><span data-stu-id="33929-107">This adapter can only be used by transports that are hosted in Internet Information Services (IIS).</span></span>  

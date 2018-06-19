@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 11cb5672-1155-4648-b1fd-c9a3bc30e351
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26007803"
 ---
 # <a name="disassemble-inbound-batches"></a><span data-ttu-id="f1d32-103">受信バッチを逆アセンブルします。</span><span class="sxs-lookup"><span data-stu-id="f1d32-103">Disassemble Inbound Batches</span></span>
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 03/28/2018
   
  <span data-ttu-id="f1d32-120">**バッチのトレーラー**</span><span class="sxs-lookup"><span data-stu-id="f1d32-120">**Batch Trailer**</span></span>  
   
- <span data-ttu-id="f1d32-121">この構造内では、「メッセージ ブロック」を考慮することができますを**– SWIFT インターチェンジ – メッセージ ヘッダー メッセージのトレーラー**部分。</span><span class="sxs-lookup"><span data-stu-id="f1d32-121">Within this structure, you can consider a "message block" to be the **Message Header – SWIFT Interchange – Message Trailer** parts.</span></span> <span data-ttu-id="f1d32-122">一連の複数の「メッセージ ブロック」は、複数の SWIFT メッセージのバッチで構成します。</span><span class="sxs-lookup"><span data-stu-id="f1d32-122">A series of multiple "message blocks" makes up the multiple SWIFT messages in a batch.</span></span> <span data-ttu-id="f1d32-123">バッチ ヘッダー、メッセージのヘッダー、メッセージのトレーラー、およびバッチ トレーラー オプションですが、繰り返しの間で一致する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f1d32-123">The Batch Header, Message Header, Message Trailer, and Batch Trailer are optional, but must be consistent across repetitions.</span></span>  
+ <span data-ttu-id="f1d32-121">この構造内では、「メッセージ ブロック」を考慮することができますを **– SWIFT インターチェンジ – メッセージ ヘッダー メッセージのトレーラー**部分。</span><span class="sxs-lookup"><span data-stu-id="f1d32-121">Within this structure, you can consider a "message block" to be the **Message Header – SWIFT Interchange – Message Trailer** parts.</span></span> <span data-ttu-id="f1d32-122">一連の複数の「メッセージ ブロック」は、複数の SWIFT メッセージのバッチで構成します。</span><span class="sxs-lookup"><span data-stu-id="f1d32-122">A series of multiple "message blocks" makes up the multiple SWIFT messages in a batch.</span></span> <span data-ttu-id="f1d32-123">バッチ ヘッダー、メッセージのヘッダー、メッセージのトレーラー、およびバッチ トレーラー オプションですが、繰り返しの間で一致する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f1d32-123">The Batch Header, Message Header, Message Trailer, and Batch Trailer are optional, but must be consistent across repetitions.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="f1d32-124">SWIFT ヘッダーおよびトレーラのブロックとメッセージのエンベロープ (メッセージ ヘッダーとメッセージ トレーラー) を混同しないでください。</span><span class="sxs-lookup"><span data-stu-id="f1d32-124">Do not confuse the message envelope (Message Header and Message Trailer) with the SWIFT header and trailer blocks.</span></span> <span data-ttu-id="f1d32-125">バッチのコンテキストでの総合的な (アトミック) の単位として SWIFT のヘッダーおよびトレーラのブロックを含む SWIFT メッセージ (インターチェンジ) 確認してください。</span><span class="sxs-lookup"><span data-stu-id="f1d32-125">In the context of batches, you should view the SWIFT message (interchange), including the SWIFT header and trailer blocks, as a holistic (atomic) unit.</span></span> <span data-ttu-id="f1d32-126">このコンテキストで、メッセージ ヘッダーとトレーラーのメッセージは、バッチ内の各 SWIFT メッセージをラップするエンベロープを参照してください。</span><span class="sxs-lookup"><span data-stu-id="f1d32-126">In this context, the Message Header and Message Trailer refer to the envelope that wraps each SWIFT message in a batch.</span></span>  

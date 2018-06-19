@@ -1,14 +1,14 @@
 ---
-title: "マップのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: マップのテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 265afd62-3c1d-4b9a-9f51-176b9b079241
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279602"
 ---
 # <a name="testing-a-map"></a><span data-ttu-id="063a0-102">マップのテスト</span><span class="sxs-lookup"><span data-stu-id="063a0-102">Testing a Map</span></span>
 <span data-ttu-id="063a0-103">デザイン時に EDI プロジェクトのマップをテストできます。</span><span class="sxs-lookup"><span data-stu-id="063a0-103">You can test a map in an EDI project at design time.</span></span> <span data-ttu-id="063a0-104">それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。</span><span class="sxs-lookup"><span data-stu-id="063a0-104">To do so, you use the XML Tool extensions to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span> <span data-ttu-id="063a0-105">このトピックの内容を設定して使用する方法を説明します、**マップのテスト**XML ツール拡張の機能です。</span><span class="sxs-lookup"><span data-stu-id="063a0-105">This topic describes how to set up and use the **Test Map** feature of the XML Tool extension.</span></span>  
@@ -61,7 +62,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="063a0-136">表示されます、 **EDI インスタンスのプロパティ**TestMap プロセス中に 2 回 ダイアログ ボックス: 入力メッセージ インスタンスを解釈するためには、1 回、1 回は出力メッセージ インスタンスを生成するためです。</span><span class="sxs-lookup"><span data-stu-id="063a0-136"> will display the **EDI Instance Properties** dialog box twice during the TestMap process: once for interpreting the input message instance and once for generating the output message instance.</span></span> <span data-ttu-id="063a0-137">ただし、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はダイアログ ボックスを 3 回以上表示したり、EDI スキーマ以外のダイアログ ボックスを表示したりすることがあります。</span><span class="sxs-lookup"><span data-stu-id="063a0-137">However, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] may display the dialog box more than just twice and may display the dialog box for non-EDI schema.</span></span> <span data-ttu-id="063a0-138">場合は、クリックして**OK**  ダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="063a0-138">If so, click **OK** to close the dialog box.</span></span>  
   
-10. <span data-ttu-id="063a0-139">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="063a0-139">Click **OK**.</span></span>  
+10. <span data-ttu-id="063a0-139">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="063a0-139">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="063a0-140">参照</span><span class="sxs-lookup"><span data-stu-id="063a0-140">See Also</span></span>  
  [<span data-ttu-id="063a0-141">デザイン時 XML ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="063a0-141">Using Design-Time XML Tools</span></span>](../core/using-design-time-xml-tools.md)

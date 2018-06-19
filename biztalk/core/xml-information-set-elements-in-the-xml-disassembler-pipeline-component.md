@@ -1,18 +1,18 @@
 ---
-title: "XML 情報は、XML 逆アセンブラー パイプライン コンポーネントで要素を設定 |Microsoft ドキュメント"
-ms.custom: 
+title: XML 情報は、XML 逆アセンブラー パイプライン コンポーネントで要素を設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XML Disassembler [pipeline component], information set
 - XML Disassembler [pipeline component], processing instructions
 - pipeline components, XML Disassembler
 ms.assetid: cc82344c-6c4b-4154-a662-0b7ae5caad30
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289298"
 ---
 # <a name="xml-information-set-elements-in-the-xml-disassembler-pipeline-component"></a><span data-ttu-id="6b805-102">XML 情報は、XML 逆アセンブラー パイプライン コンポーネントで要素を設定</span><span class="sxs-lookup"><span data-stu-id="6b805-102">XML Information Set Elements in the XML Disassembler Pipeline Component</span></span>
 <span data-ttu-id="6b805-103">XML 逆アセンブラーでは、各種の XML 要素が次のように扱われます。</span><span class="sxs-lookup"><span data-stu-id="6b805-103">The XML Disassembler handles XML information set elements as follows.</span></span>  
