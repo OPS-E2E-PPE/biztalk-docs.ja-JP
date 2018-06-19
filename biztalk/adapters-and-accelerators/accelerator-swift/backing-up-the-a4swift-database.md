@@ -1,17 +1,17 @@
 ---
-title: "A4SWIFT データベースのバックアップ |Microsoft ドキュメント"
-ms.custom: 
+title: A4SWIFT データベースのバックアップ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up A4SWIFT database
 - A4SWIFT database, backing up
 ms.assetid: 53e46380-5be7-4d4c-b04c-d917ab40c07c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005859"
 ---
 # <a name="backing-up-the-a4swift-database"></a>A4SWIFT データベースをバックアップします。
 日常的に、致命的な障害のリスクを低減するため、BizTalk Server および A4SWIFT のシステムのデータベースをバックアップしてください。 BizTalk Server ソース システム、および A4SWIFT データベースにこれらのデータベースがあります。 に加えて、リスクを低減するには、これはすることもできます大きなサイズに拡大できる A4SWIFT 履歴ファイルを削除します。  

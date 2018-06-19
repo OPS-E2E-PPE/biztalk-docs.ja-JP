@@ -1,14 +1,14 @@
 ---
-title: "インターチェンジ構造エラーが、最初の機能グループの前に |Microsoft ドキュメント"
-ms.custom: 
+title: インターチェンジ構造エラーが、最初の機能グループの前に |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 12202148-0a32-464e-8dbd-d01b9ba530eb
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278658"
 ---
 # <a name="the-interchange-had-a-structural-error-in-before-the-first-functional-group"></a>インターチェンジ構造エラーが、最初の機能グループの前に
 ## <a name="details"></a>詳細  

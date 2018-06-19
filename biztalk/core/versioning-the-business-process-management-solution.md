@@ -1,11 +1,11 @@
 ---
-title: "ビジネス プロセス管理ソリューションのバージョン管理 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス プロセス管理ソリューションのバージョン管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - versioning, process management solutions
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - processing, stages
 - process management solution tutorial, processing stages
 ms.assetid: 501b2162-821f-44e1-87c0-8628cc5bd9c3
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288650"
 ---
 # <a name="versioning-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションのバージョン管理
 ビジネス プロセス管理ソリューションは、必要に応じてステージを置換できるように設計されています。 スキーマのバージョンを簡単に管理する機能も備えています。  

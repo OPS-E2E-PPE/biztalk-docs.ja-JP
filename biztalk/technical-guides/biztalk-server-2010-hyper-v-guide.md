@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 2010 の HYPER-V のガイド |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 2010 の HYPER-V のガイド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3c38ecdd-de72-41d9-b639-2aa6bbfee917
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26011011"
 ---
 # <a name="biztalk-server-2010-hyper-v-guide"></a>BizTalk Server 2010 の HYPER-V のガイド
 このガイドの目的は、Microsoft と Microsoft BizTalk Server を使用するための実用的なガイダンスを提供する[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]HYPER-V です。 強調[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がパフォーマンスの評価方法とパフォーマンスのテストのシナリオは一般に、仮想化サーバー アプリケーションのパフォーマンスを分析するために役立ちます。 このガイドは、IT 技術者と開発者コミュニティへの関心のあるされます。  

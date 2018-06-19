@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server データベースの高可用性を実現する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server データベースの高可用性を実現する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - clustering, SQL Servers
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - data, persistence
 - SQL Server Analysis Services
 ms.assetid: 47fbc402-9e46-41dd-bc12-d1cde1982576
-caps.latest.revision: "41"
+caps.latest.revision: 41
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269346"
 ---
 # <a name="providing-high-availability-for-biztalk-server-databases"></a>BizTalk Server データベースの高可用性を実現する
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、データの永続性を実現するという点で、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] に強く依存しています。 その他すべての [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンポーネントおよびホストにも、多種多様な業務アプリケーション (メッセージの受信、処理、ルーティングなど) を統合するプロセスにおいて、それぞれ固有の役割がありますが、この作業をディスクに取り込み、維持するという役割は、データベース コンピューターにあります。  

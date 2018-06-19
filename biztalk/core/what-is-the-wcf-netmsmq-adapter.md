@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289434"
 ---
 # <a name="what-is-the-wcf-netmsmq-adapter"></a>WCF-NetMsmq アダプタについて
 WCF-NetMsmq アダプタは、サービスとクライアントの両方が WCF ベースである環境でキュー テクノロジを使用して、接続が切断されたコンピュータ間の通信を実現します。 このアダプタはメッセージ キュー (MSMQ) トランスポートを使用し、メッセージではバイナリ エンコードを使用します。  

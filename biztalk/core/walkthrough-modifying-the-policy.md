@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: ポリシーの変更 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: ポリシーの変更 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9dd74440-2a45-4a1a-8e36-98796e1e1392
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289674"
 ---
 # <a name="walkthrough-modifying-the-policy"></a>チュートリアル: ポリシーを変更します。
 このチュートリアルでの新しいバージョンを作成する手順については、 **POVocabulary**の新しいバージョンを作成、 **ProcessPurchaseOrder**ポリシー、およびの最新バージョンを使用して、**POVocabulary**の新しいバージョンで、 **ProcessPurchaseOrder**ポリシー。  
@@ -46,15 +47,15 @@ ms.lasthandoff: 09/20/2017
   
 4.  右クリック**POVocabulary**、クリックして**ボキャブラリのバージョンの貼り付け**です。  
   
-5.  ダブルクリックして**最大数の指定できるアイテム**で**バージョン 1.1 (未保存)**ボキャブラリの定義ウィザードを開始します。  
+5.  ダブルクリックして**最大数の指定できるアイテム**で**バージョン 1.1 (未保存)** ボキャブラリの定義ウィザードを開始します。  
   
-6.  **[次へ]**をクリックします。  
+6.  **[次へ]** をクリックします。  
   
-7.  **[次へ]**をクリックします。  
+7.  **[次へ]** をクリックします。  
   
 8.  値から変更**500**に**1000**です。  
   
-9. **[完了]**をクリックします。  
+9. **[完了]** をクリックします。  
   
 10. 右クリック**バージョン 1.1 (未保存)**、クリックして**保存**です。  
   
@@ -66,9 +67,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  右クリック**バージョン 1.2**、クリックして**コピー**です。  
   
-3.  右クリック**ProcessPurchaseOrder**、クリックして**[pastepolicyversion]**です。  
+3.  右クリック**ProcessPurchaseOrder**、クリックして **[pastepolicyversion]** です。  
   
-4.  をクリックして**ApprovalRule**で**Version 1.3 (未保存)**です。  
+4.  をクリックして**ApprovalRule**で**Version 1.3 (未保存)** です。  
   
 5.  ファクト エクスプ ローラーで、**ボキャブラリ**、展開**POVocabulary**、順に展開**バージョン 1.1 - 公開済み**です。  
   

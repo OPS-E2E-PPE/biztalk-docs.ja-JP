@@ -1,14 +1,14 @@
 ---
-title: "状態レポートをバッチ処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 状態レポートをバッチ処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 04dad016-e7bb-45cd-b36a-a9c83d073501
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231802"
 ---
 # <a name="batch-status-report"></a>バッチの状態レポート
 このレポートでは、バッチ オーケストレーションのインスタンスのアクティビティを示します。 レポートの各行には、バッチ オーケストレーションの単一のインスタンスによって処理されているバッチの状態が示されます。  

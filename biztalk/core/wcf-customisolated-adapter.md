@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288498"
 ---
 # <a name="wcf-customisolated-adapter"></a>Wcf-customisolated アダプター
 Wcf-customisolated アダプターを構成できる分離アダプターの受信場所、HTTP トランスポート経由で、バインディングおよび動作設定で Windows Communication Foundation (WCF) に適用される[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 WCF-CustomIsolated アダプタは、標準の WCF アダプタがサポートされないシナリオに対して使用できます。 また、WCF-CustomIsolated アダプタを使用すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で WCF の機能拡張ポイントを使用することもできます。  

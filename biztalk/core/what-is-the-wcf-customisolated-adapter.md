@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289698"
 ---
 # <a name="what-is-the-wcf-customisolated-adapter"></a>Wcf-customisolated アダプターとは何ですか。
 WCF-CustomIsolated アダプタは、分離ホストを使用して、BizTalk Server における WCF 拡張機能コンポーネントの使用を有効にするために使用されます。 このアダプタによって、WCF フレームワークの完全な柔軟性が有効になります。 そのためユーザーは、受信場所の WCF バインドを選択して構成したり、エンドポイント動作やセキュリティ設定を指定したりできるようになります。 このアダプタを使用できるのは、インターネット インフォメーション サービス (IIS) でホストされているトランスポートのみです。  

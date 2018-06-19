@@ -1,14 +1,14 @@
 ---
-title: "WCF クライアントまたは SAP ソリューションの成果物のための WCF サービス コントラクトを生成 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF クライアントまたは SAP ソリューションの成果物のための WCF サービス コントラクトを生成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ff01e2b0-6480-427a-bc6d-6169e7d6e256
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217498"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts"></a>WCF クライアントまたは SAP ソリューションの成果物のための WCF サービス コントラクトを生成します。
 使用することができます、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] WCF クライアント クラスまたは SAP アイテムの選択した操作を対象とした WCF サービス コントラクト (インターフェイス) を生成します。 ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を WCF クライアント クラスを生成または WCF サービス コントラクト以外にも使用できます。ただし、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]標準の Microsoft Windows インターフェイスを通じて ServiceModel メタデータ ユーティリティ ツールの機能を公開します。 また、svcutil.exe ツールではない参照および検索の機能を提供し、SAP システムに接続するときに選択したバインドのプロパティに基づく構成ファイルを生成します。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーでは、プロジェクトを右クリックし、をクリックして**アダプター サービス参照の追加**です。  
   
-2.  後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での SAP 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)SAP システムと参照操作を検索してに接続します。 選択した操作のための WCF クライアント クラスを作成することを確認**クライアント (送信操作)**からが選択されている、**選択コントラクト型**(これは、既定値) ドロップダウン リスト。  
+2.  後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での SAP 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)SAP システムと参照操作を検索してに接続します。 選択した操作のための WCF クライアント クラスを作成することを確認**クライアント (送信操作)** からが選択されている、**選択コントラクト型**(これは、既定値) ドロップダウン リスト。  
   
 3.  すべての対象をクリックする操作を選択した後**OK** WCF クライアント クラスを生成します。  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーでは、プロジェクトを右クリックし、をクリックして**アダプター サービス参照の追加**です。  
   
-2.  後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での SAP 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)SAP システムと参照操作を検索してに接続します。 選択した操作のための WCF サービス コントラクトを作成することを確認**サービス (入力方向の操作)**からが選択されている、**選択コントラクト型**ドロップダウン リスト。  
+2.  後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での SAP 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)SAP システムと参照操作を検索してに接続します。 選択した操作のための WCF サービス コントラクトを作成することを確認**サービス (入力方向の操作)** からが選択されている、**選択コントラクト型**ドロップダウン リスト。  
   
 3.  すべての対象をクリックする操作を選択した後**OK**を WCF サービス コントラクトを生成します。  
   

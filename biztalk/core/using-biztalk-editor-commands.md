@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e216ae5d-5bad-48ef-87d1-8aa8ee20179b
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22289258"
 ---
 # <a name="use-biztalk-editor-commands"></a>BizTalk エディター コマンドを使用します。
 
@@ -61,7 +62,7 @@ BizTalk エディターがアクティブになると、追加と呼ばれる**B
 |**切り取り、コピー、貼り付け**|これらのコマンドを使用すると、BizTalk プロジェクト内のスキーマ全体の切り取り、コピー、および貼り付けを [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の標準処理として実行できます。|  
 |**削除**|現在選択されているスキーマを完全に削除します。確認メッセージが表示されます。|  
 |**名前の変更**|現在選択されているスキーマの名前を直接変更できます。|  
-|**プロパティ**|Visual Studio を開きます **プロパティ**  をスキーマのプロパティの一部を調べたり、設定は、現在選択されているスキーマのウィンドウです。 <br/><br/>**注:**スキーマの他のプロパティを調べたり設定、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]スキーマが選択されているときに [プロパティ] ウィンドウ。 設定されているプロパティ、 **プロパティ** ウィンドウは、そのプロパティ値が異なる可能性があります同じスキーマにとって意味のあるを使用する場合 1 つ以上の BizTalk プロジェクトにします。 <br /><br /> スキーマのプロパティの設定およびスキーマのプロパティの詳細については、次を参照してください。[設定スキーマ ファイルおよびスキーマ アイテム プロパティ](../core/how-to-set-schema-file-and-schema-item-properties.md)と**スキーマ ファイル プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|  
+|**プロパティ**|Visual Studio を開きます **プロパティ**  をスキーマのプロパティの一部を調べたり、設定は、現在選択されているスキーマのウィンドウです。 <br/><br/>**注:** スキーマの他のプロパティを調べたり設定、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]スキーマが選択されているときに [プロパティ] ウィンドウ。 設定されているプロパティ、 **プロパティ** ウィンドウは、そのプロパティ値が異なる可能性があります同じスキーマにとって意味のあるを使用する場合 1 つ以上の BizTalk プロジェクトにします。 <br /><br /> スキーマのプロパティの設定およびスキーマのプロパティの詳細については、次を参照してください。[設定スキーマ ファイルおよびスキーマ アイテム プロパティ](../core/how-to-set-schema-file-and-schema-item-properties.md)と**スキーマ ファイル プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|  
   
 ## <a name="see-also"></a>参照  
  [BizTalk エディターの使用](../core/using-biztalk-editor.md)

@@ -1,14 +1,14 @@
 ---
-title: "コンボイ シナリオの |Microsoft ドキュメント"
-ms.custom: 
+title: コンボイ シナリオの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1028ab37-7ead-41a6-a186-53e5344d1a28
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290498"
 ---
 # <a name="working-with-convoy-scenarios"></a>コンボイ シナリオの活用
 A*コンボイ*複数の単一メッセージは、必要な結果を得るに関連付ける必要があるときに存在します。 大きく分けて、コンボイには "シーケンシャル" と "パラレル" という 2 つの種類があります。  

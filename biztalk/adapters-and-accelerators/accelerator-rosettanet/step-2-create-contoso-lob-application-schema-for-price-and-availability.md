@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005763"
 ---
 # <a name="step-2-creating-the-contoso-lob-application-schemas-for-the-price-and-availability-project-using-biztalk-editor"></a>手順 2: Price and Availability プロジェクトの BizTalk エディターを使用して用の Contoso LOB アプリケーション スキーマの作成
 ここでは、特定の製品の価格やその製品が入手可能かどうかを Contoso ERP システムに照会する際に使用するスキーマを生成します。 使用してこのスキーマを生成する、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server の SQL アダプターです。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  **データベース情報**] ページで [**設定**です。  
   
-6.  [データ リンク プロパティ] ダイアログ ボックスで、**を選択するか、サーバー名を入力**ボックスに、入力**localhost**です。 選択**Windows NT 統合セキュリティ**です。 **サーバー上のデータベースを選択して**を選択、 **Contoso**データベースの一覧からデータベース。 **[OK]**をクリックします。  
+6.  [データ リンク プロパティ] ダイアログ ボックスで、**を選択するか、サーバー名を入力**ボックスに、入力**localhost**です。 選択**Windows NT 統合セキュリティ**です。 **サーバー上のデータベースを選択して**を選択、 **Contoso**データベースの一覧からデータベース。 **[OK]** をクリックします。  
   
 7.  **データベース情報** ページで、をクリックして**次**です。  
   
@@ -67,11 +68,11 @@ ms.lasthandoff: 12/01/2017
     |**要求ドキュメントのルート要素名**|型**rootPriceRequest**です。|  
     |**応答ドキュメントのルート要素名**|型**rootPriceResponse**です。|  
   
-9. **[次へ]**をクリックします。  
+9. **[次へ]** をクリックします。  
   
 10. **ステートメントの種類の情報**] ページで、[**ストアド プロシージャの**、順にクリック**次**です。  
   
-11. **ステートメント情報**] ページの**\<ストアド プロシージャを選択\>**[ **SP_GetInventoryForProductID**から、ドロップダウン リスト。 をクリックして**生成**、クリックして**[次へ]**です。  
+11. **ステートメント情報**] ページの**\<ストアド プロシージャを選択\>**[ **SP_GetInventoryForProductID**から、ドロップダウン リスト。 をクリックして**生成**、クリックして **[次へ]** です。  
   
 12. **SQL トランスポート スキーマ生成ウィザードを完了する** ページで、をクリックして**完了**ContosoPriceAndAvailability BizTalk プロジェクトにスキーマをインポートします。  
   

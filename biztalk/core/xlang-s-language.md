@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290914"
 ---
 # <a name="xlang-s-language"></a>XLANG の言語
 XLANG/s は、XML、XSD、Web Services Description Language (WSDL) などのインターネット標準を使用するように設計されており、.NET ベースのオブジェクトおよびメッセージの操作に対するサポートが組み込まれています。 XLANG/s は、C# の表現機能を備えたメッセージング言語と見なすことができます。 ただし、XLANG/s と C# の間でコードを移植することはできません。  

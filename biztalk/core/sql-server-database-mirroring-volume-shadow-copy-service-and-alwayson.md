@@ -1,14 +1,14 @@
 ---
-title: "SQL Server データベース ミラーリング、ボリューム シャドウ コピー サービス、および AlwaysOn |Microsoft ドキュメント"
-ms.custom: 
+title: SQL Server データベース ミラーリング、ボリューム シャドウ コピー サービス、および AlwaysOn |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b965cafc-cd34-4657-975d-0dedffd27333
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277994"
 ---
 # <a name="sql-server-database-mirroring-volume-shadow-copy-service-and-alwayson"></a>SQL Server データベース ミラーリング、ボリューム シャドウ コピー サービス、および AlwaysOn の使用
 Microsoft SQL Server と呼ばれるソフトウェア ソリューションを提供する*データベース ミラーリング*と Windows ボリューム シャドウ コピー サービス (VSS) の特定のシナリオの高可用性を高めるためです。 SQL Server*データベース ミラーリング*ボリューム シャドウ コピー サービス (VSS) は、障害回復のバックアップと復元の機能を提供します。 データベースが使用可能なである確率が高くなります。 SQL Server の使用*データベース ミラーリング*か Windows ボリューム シャドウ コピー サービスが Microsoft の高可用性を確保するためのソリューションをサポート[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。  

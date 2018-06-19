@@ -1,11 +1,11 @@
 ---
-title: "インストールして、メッセージング サーバー上の BizTalk Server の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: インストールして、メッセージング サーバー上の BizTalk Server の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Server, installing on BizTalk Messaging servers
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BizTalk Messaging servers, configuring BizTalk Server
 - BizTalk Messaging servers, installing BizTalk Server
 ms.assetid: 8aaa1b97-90f0-4317-9403-ac8b5b9f80e3
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004307"
 ---
 # <a name="installing-and-configuring-biztalk-server-on-the-messaging-server"></a>インストールして、メッセージング サーバー上の BizTalk Server の構成
 このセクションでは、インストールして、SWIFT ネットワークに接続するために、メッセージング サーバーとして使用する BizTalk Server を構成する方法について説明します。  

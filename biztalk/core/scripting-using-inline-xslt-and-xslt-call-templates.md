@@ -1,14 +1,14 @@
 ---
-title: "インライン XSLT および XSLT 呼び出しテンプレートを使用するスクリプト |Microsoft ドキュメント"
-ms.custom: 
+title: インライン XSLT および XSLT 呼び出しテンプレートを使用するスクリプト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e3168417-3653-4c9e-a09c-184ffdc0ccb2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270434"
 ---
 # <a name="scripting-using-inline-xslt-and-xslt-call-templates"></a>インライン XSLT および XSLT 呼び出しテンプレートを使用するスクリプト
 使用するための Extensible Stylesheet Language 変換 (XSLT) スタイル シートを直接書き込むことができます、**スクリプト**functoid です。 これにより、変換を実行できます。ただし、リンクと組み込みの Functoid は、表現できない場合があります。 XSLT スクリプトの 2 種類があります: インライン XSLT および XSLT 呼び出しテンプレート。 いずれかを選択すると、**スクリプトの種類を選択して**ドロップダウン リストで、**スクリプト Functoid の構成**ダイアログ ボックスで、使用できる、サンプル コードが表示されます。  

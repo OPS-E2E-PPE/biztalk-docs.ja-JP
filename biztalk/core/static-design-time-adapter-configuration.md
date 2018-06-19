@@ -1,14 +1,14 @@
 ---
-title: "静的デザイン時アダプター構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 静的デザイン時アダプター構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 332723a4-e39d-43f5-af4d-bf9f56496535
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278898"
 ---
 # <a name="static-design-time-adapter-configuration"></a>静的デザイン時アダプター構成
 アダプターのデザイン時部分では、使用可能なすべてのプロパティを定義し、ユーザー入力を検証します。 アダプターの静的デザイン時構成では、既定のユーザー インターフェイス (UI) を使用して、そのプロパティを表示および編集します。  

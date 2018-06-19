@@ -1,14 +1,14 @@
 ---
-title: "トランザクションのオプションが&quot;トランザクション&quot;とエラー処理オプション&quot;エラー発生時に要求メッセージを保留&quot;両方を false に設定する必要があります |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクションのオプションが&quot;トランザクション&quot;とエラー処理オプション&quot;エラー発生時に要求メッセージを保留&quot;両方を false に設定する必要があります |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc6c66cc-6713-4396-b0d4-ac6a0e72164f
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278930"
 ---
 # <a name="transactions-option-quottransactionalquot-and-the-error-handling-option-quotsuspend-request-message-on-failurequot-should-not-both-be-set-to-false"></a>トランザクションのオプションが&quot;トランザクション&quot;とエラー処理オプション&quot;エラー発生時に要求メッセージを保留&quot;両方を false に設定する必要があります
 ## <a name="details"></a>詳細  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  トランスポート名を右クリックします。  
   
-5.  **[プロパティ]**をクリックします。  
+5.  **[プロパティ]** をクリックします。  
   
 6.  ポート**型**一覧で、適切なポートを選択します。  
   

@@ -1,11 +1,11 @@
 ---
-title: "セキュリティに関するケース スタディ: 企業 B |Microsoft ドキュメント"
-ms.custom: 
+title: 'セキュリティに関するケース スタディ: 企業 B |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - architecture, security
 - security, case studies
 ms.assetid: 48bbb347-919a-435e-b7b1-34a4c0e65e59
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270482"
 ---
 # <a name="security-case-studies-company-b"></a>会社 B のセキュリティに関するケース スタディ:
 会社 B はソフトウェア会社です。 この会社のビジネス モデルは、主要な顧客および業者との電子商取引に依存しています。 会社 B は、取引に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の実装を使用しています。  

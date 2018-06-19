@@ -1,17 +1,17 @@
 ---
-title: "WCF アダプターのセキュリティに関する推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF アダプターのセキュリティに関する推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF adapters, security
 - security, WCF adapters
 ms.assetid: bbaaca56-9ad5-4122-a8e9-6e975d308230
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289690"
 ---
 # <a name="wcf-adapters-security-recommendations"></a>WCF アダプターのセキュリティに関する推奨事項
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、WCF アダプターを使用して WCF サービスを公開 (受信) および使用 (送信) します。 使用している環境内において WCF アダプターをセキュリティで保護して展開するには、次のガイドラインに従うことをお勧めします。  

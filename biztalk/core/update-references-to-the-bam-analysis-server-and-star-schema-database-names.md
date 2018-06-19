@@ -1,11 +1,11 @@
 ---
-title: "BAM Analysis Server およびスター スキーマ データベース名への参照を更新する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM Analysis Server およびスター スキーマ データベース名への参照を更新する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - restoring [BAM], Analysis database
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - BAM, restoring
 - Analysis database [BAM], updating references
 ms.assetid: cbe5e500-0a25-427e-bc76-1eae24b3e5f3
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287450"
 ---
 # <a name="how-to-update-references-to-the-bam-analysis-server-and-star-schema-database-names"></a>BAM Analysis Server およびスター スキーマ データベース名への参照を更新する方法
 BAMAnalysis および BAMStarSchema データベースがバックアップされていれば、システムまたはデータに障害が発生したときには、別のコンピューターにバックアップを復元でき、さらにその名前を変更することができます。  
@@ -80,7 +81,7 @@ BAMAnalysis および BAMStarSchema データベースがバックアップさ�
   
 18. 内をクリックし、**パッケージ名**ボックスに自動的に入力します。  
   
-19. をクリックして**[ok]**、順にクリック**はい**を上書きします。  
+19. をクリックして **[ok]**、順にクリック**はい**を上書きします。  
   
 20. BizTalk Server アプリケーション サービスを再起動します。  
   

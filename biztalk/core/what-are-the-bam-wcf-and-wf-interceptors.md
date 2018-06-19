@@ -1,14 +1,14 @@
 ---
-title: "BAM WCF インターセプターと WF インターセプターについて | Microsoft Docs"
-ms.custom: 
+title: BAM WCF インターセプターと WF インターセプターについて | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 198bfdc9-86ff-4017-b65f-19616deeb9f4
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288890"
 ---
 # <a name="what-are-the-bam-wcf-and-wf-interceptors"></a>BAM WCF インターセプターと WF インターセプターについて
 ビジネス アクティビティの監視 (BAM) は、集計、警告、およびプロファイルを管理し、イベント送信の自動プロセスをインストルメント化して関連するビジネス指標を監視するために使用できるツール、API、およびサービスのコレクションです。 これらによって、ビジネス プロセスを詳細に表示できるようになるため、ビジネス プロセスの状態と結果を常に把握できます。  

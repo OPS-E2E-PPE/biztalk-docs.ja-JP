@@ -1,17 +1,17 @@
 ---
-title: "アイテムのエクスポート時の動作 |Microsoft ドキュメント"
-ms.custom: 
+title: アイテムのエクスポート時の動作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - exporting, artifacts
 - artifacts, exporting
 ms.assetid: accc9a81-01fb-4da7-a5a5-167835d393a2
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289386"
 ---
 # <a name="what-happens-when-artifacts-are-exported"></a>アイテムのエクスポート時の動作
 このトピックでは、アイテムがエクスポートされるときの動作について説明します。 アイテムのエクスポートには次の 3 つの方法があり、ここではそれぞれについて説明します。  

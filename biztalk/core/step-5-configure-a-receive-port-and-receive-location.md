@@ -1,14 +1,14 @@
 ---
-title: "手順 5: 構成する受信ポートと受信場所 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: 構成する受信ポートと受信場所 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43fc8d12-5fde-4ddf-a7f0-770f078ba66b
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277954"
 ---
 # <a name="step-5-configure-a-receive-port-and-receive-location"></a>手順 5: 構成する受信ポートと受信場所
 ![手順 5. の 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-5of9.gif "Step_5of9")  
@@ -56,7 +57,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  [EdiReceive] が受信パイプラインのドロップダウン リストに表示されていなければ、アプリケーションが BizTalk EDI アプリケーションを参照していない可能性があります。 参照を追加するを参照してください。[を BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)です。  
   
-9. をクリックして**[ok]**、順にクリック**OK**もう一度です。  
+9. をクリックして **[ok]**、順にクリック**OK**もう一度です。  
   
     > [!NOTE]
     >  BizTalk サービスに対するログオン特権を持つアカウントは、fromTHEM_4010_850 受信場所に関連付けられた受信フォルダー ([!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\ProcessEDI_TestLocations\fromTHEM) に対する完全なアクセス許可も持っている必要があります。 持っていない場合は、受信場所を有効にしようとするとエラーが表示されます。 受信フォルダーのアクセス許可を変更するには、[セキュリティ] タブに移動、**プロパティ**Windows エクスプ ローラーでそのフォルダーのダイアログ ボックス。  

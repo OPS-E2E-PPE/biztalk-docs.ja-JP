@@ -1,14 +1,14 @@
 ---
-title: "要求のセットに対する操作 |Microsoft ドキュメント"
-ms.custom: 
+title: 要求のセットに対する操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0537354d-821e-4cf9-a4d1-f4e7d1643df9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217298"
 ---
 # <a name="operations-on-request-sets"></a>要求のセットに対する操作
 Oracle E-business Suite で設定要求は、一連のレポートとは、さまざまな段階に分類する同時実行プログラムです。 設定を一連のレポートと同時実行プログラムを実行する 1 つの要求を使用することができます。 セットは、1 つまたは複数の段階的に分けられ、各ステージには、一連レポートと同時実行プログラムにはが含まれています。 を要求します。 これらのステージが、互いにリンクされている、各ステージの実行の順序が定義されます。 要求のセットに関する Oracle 固有の詳細についてを参照してください[http://go.microsoft.com/fwlink/p/?LinkId=129539](http://go.microsoft.com/fwlink/p/?LinkId=129539)です。  

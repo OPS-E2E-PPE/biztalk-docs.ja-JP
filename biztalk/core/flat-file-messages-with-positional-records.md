@@ -1,14 +1,14 @@
 ---
-title: "位置指定レコードのあるフラット ファイル メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: 位置指定レコードのあるフラット ファイル メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 72c17c25-3847-458e-a43e-0dbdc42db749
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005595"
 ---
 # <a name="flat-file-messages-with-positional-records"></a>位置指定のレコードのあるフラット ファイル メッセージ
 フラット ファイル インスタンス メッセージ内の位置指定レコードには、事前に定義された長さの個別のフィールド (データ項目) が含まれています。 フィールドは、これらの長さに従って解析されます。 次に示す､フラット ファイル インスタンス メッセージの位置指定レコードを例として考えてみます。ここでは、出荷先住所を記載し、最初の行に各フィールドに予約される文字数が示されています。  

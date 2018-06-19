@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288122"
 ---
 # <a name="variable-scope-in-orchestrations"></a>オーケストレーションにおける変数のスコープ
 オーケストレーション内のさまざまな場所で使用されている変数やパラメーターの可視性と状態については、例外ハンドラーや補正ブロックなど、理解しておくべき重要な点がいくつかあります。  

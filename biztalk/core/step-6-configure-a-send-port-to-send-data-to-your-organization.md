@@ -1,14 +1,14 @@
 ---
-title: "手順 6: 組織にデータを送信する送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 6: 組織にデータを送信する送信ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 796570ca-8178-4679-9213-d67a2a189bf9
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277010"
 ---
 # <a name="step-6-configure-a-send-port-to-send-data-to-your-organization"></a>手順 6: 組織にデータを送信する送信ポートを構成します。
 ![手順 9 の 6](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-6of9.gif "Step_6of9")  
@@ -66,22 +67,22 @@ ms.lasthandoff: 09/20/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**プロパティ**|選択**BTS です。ReceivePortName**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|入力`ReceiveEDI_fromTHEM_A`です。|  
     |**グループ化**|選択**と**です。|  
     |**プロパティ**|次の行では、次のように選択します。 **BTS です。MessageType**です。|  
-    |**演算子**|選択**! =**です。|  
+    |**演算子**|選択 **! =** です。|  
     |**値**|入力`http://schemas.microsoft.com/Edi/X12#X12_997_Root`です。|  
   
     > [!NOTE]
     >  フィルターにより、送信ポートは Receive_EDI_fromTHEM_A 受信場所で受信されたメッセージを取得し、997 受信確認ではなく 850 メッセージのみを取得します。  
   
-7.  コンソール ツリーでクリックして**[outboundmaps]**です。 **送信マップ** ウィンドウで、**マップ**select の最初の行で、列**Inbound4010850_to_OrderFile**です。 (内のエントリ、**ソース ドキュメント**列は X12_00401_850 になります)。  
+7.  コンソール ツリーでクリックして **[outboundmaps]** です。 **送信マップ** ウィンドウで、**マップ**select の最初の行で、列**Inbound4010850_to_OrderFile**です。 (内のエントリ、**ソース ドキュメント**列は X12_00401_850 になります)。  
   
     > [!NOTE]
     >  この手順により、出力メッセージはに従って入力メッセージからマップされたデータののみで構成されること、 **Inbound4010850_to_OrderFile**マップします。  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 9. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、をクリックして**送信ポート**です。 右クリック**toOrderSystem**、クリックして**開始**を参加させて、ポートを開始します。  
   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288898"
 ---
 # <a name="what-is-the-wcf-custom-adapter"></a>WCF-Custom アダプタについて
 WCF-Custom アダプタを使用すると、BizTalk Server で WCF 拡張機能コンポーネントを使用できるようになります。 このアダプタによって、WCF フレームワークの完全な柔軟性が有効になります。 これにより、ユーザーが、受信場所や送信ポートの WCF バインドを選択して構成できるようになります。 また、エンドポイント動作やセキュリティ設定を指定することもできます。  

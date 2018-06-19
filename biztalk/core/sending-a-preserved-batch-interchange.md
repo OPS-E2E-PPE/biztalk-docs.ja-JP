@@ -1,14 +1,14 @@
 ---
-title: "保存されたバッチ インターチェンジを送信する |Microsoft ドキュメント"
-ms.custom: 
+title: 保存されたバッチ インターチェンジを送信する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d9bc2207-e34d-4d06-a224-bd7f8e498c27
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,9 +17,10 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974848"
 ---
 # <a name="sending-a-preserved-batch-interchange"></a>保存されたバッチ インターチェンジの送信
-EDI 送信パイプラインが保存された送信バッチ インターチェンジを処理するとき、バッチ インターチェンジ全体を処理します。 EDI インターチェンジを作成する場合、通常、アグリーメントに基づいてエンベロープを適用するのではなく、既存のエンベロープ (制御) セグメントを再利用します。 これが発生したときに、**受信バッチ処理オプション**プロパティに設定されている**インターチェンジの保存 - エラーでインターチェンジを中断**または**- インターチェンジの保存時にトランザクション セットを中断エラー**です。  
+EDI 送信パイプラインが保存された送信バッチ インターチェンジを処理するとき、バッチ インターチェンジ全体を処理します。 EDI インターチェンジを作成する場合、通常、アグリーメントに基づいてエンベロープを適用するのではなく、既存のエンベロープ (制御) セグメントを再利用します。 これが発生したときに、**受信バッチ処理オプション**プロパティに設定されている**インターチェンジの保存 - エラーでインターチェンジを中断**または **- インターチェンジの保存時にトランザクション セットを中断エラー**です。  
   
 ## <a name="schema-validation"></a>スキーマの検証  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、保存されたバッチのエンベロープを、バッチ スキーマとサービス スキーマを使用して検証します。 保存されたメッセージのルート ノードの検証にはバッチ スキーマが使用され、インターチェンジ、グループ、およびトランザクション セットのヘッダーとトレーラーの検証にはサービス スキーマが使用されます。 バッチ スキーマの詳細については、次を参照してください。 [EDI バッチ スキーマ](../core/edi-batch-schemas.md)です。 サービス スキーマの詳細については、次を参照してください。 [EDI サービスと管理スキーマ](../core/edi-service-and-control-schemas.md)です。  

@@ -1,14 +1,14 @@
 ---
-title: "再利用と派生型 |Microsoft ドキュメント"
-ms.custom: 
+title: 再利用と派生型 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 240145ea-be41-40ce-8edd-3d4d00e2baec
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286618"
 ---
 # <a name="type-reuse-and-derivations"></a>型の再利用と派生
 XSD (XML Schema Definition) 言語では、複雑なグローバル型を使用することにより、スキーマ内のさまざまな場所で、再利用や再定義が可能な構造化されたデータ型を定義することができます。 最も典型的な例として、名前、番地、市区町村、都道府県などを含む住所の構造があります。 また、名前は、姓、ミドル ネーム、および名の文字列を含む構造になります。 この複雑な構造がグローバルに定義されると、スキーマ内の複数の場所 (出荷先住所や請求先住所など) でこの構造を使用できます。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230634"
 ---
 # <a name="btadserver"></a>BTAD_Server
 アプリケーションのインポート時に処理前および処理後のスクリプトを実行すると、BTAD_Server 環境変数が設定されます。 この環境変数で、グループの BizTalk 管理データベースを実行している SQL Server インスタンスの名前を指定します。  

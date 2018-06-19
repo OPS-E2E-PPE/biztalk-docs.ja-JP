@@ -1,14 +1,14 @@
 ---
-title: "SOAP 送信アダプタ |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP 送信アダプタ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4d65218d-516b-4e45-a824-272ef6ef298c
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278858"
 ---
 # <a name="soap-send-adapter"></a>SOAP 送信アダプタ
 SOAP 送信アダプタは、Web サービスを呼び出すときに使用します。 SOAP 送信アダプタは、BizTalk メッセージ オブジェクトのメッセージ コンテキストを読み取ってプロキシ名を取得し、関連付けられた外部の Web サービス プロキシを呼び出します。  

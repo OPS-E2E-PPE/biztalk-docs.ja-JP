@@ -1,14 +1,14 @@
 ---
-title: "EDI 処理におけるアグリーメントのロール |Microsoft ドキュメント"
-ms.custom: 
+title: EDI 処理におけるアグリーメントのロール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d81b0449-6656-49f7-a781-5fd60031b3d5
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279938"
 ---
 # <a name="the-role-of-agreements-in-edi-processing"></a>EDI 処理におけるアグリーメントのロール
 組織は [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して、1 つ以上の取引先との間で EDI メッセージを送受信します。 取引先は、組織内の Business Entities であるビジネス プロファイルを順番に定義します。 ビジネス プロファイルがメッセージを交換する方法は、2 つのビジネス プロファイル間の取引先アグリーメントとして定義されます。 詳細については、次を参照してください。[取引先管理ソリューションのビルド ブロック](../core/building-blocks-of-a-trading-partner-management-solution.md)です。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 09/20/2017
   
 -   状態レポート  
   
- ビジネス id があります、特定の値など**D-U-N、S (Dun & Bradstreet)**です。 固有の名前は、Duns に対して "01" というように、固有の修飾子を持ちます。 ビジネス ID 名が固有でない場合、X12 でエンコードされたメッセージでは "ZZ" を使用し、EDIFACT でエンコードされたメッセージでは "ZZZ" を使用します。これにより、互いに個別のエンティティによって定義されていることを示します。 この値と修飾子により、ビジネス プロファイルが識別されます。 ビジネス ID 名は情報提供のみを目的とし、BizTalk ランタイムでの処理に使用されることはありません。  
+ ビジネス id があります、特定の値など**D-U-N、S (Dun & Bradstreet)** です。 固有の名前は、Duns に対して "01" というように、固有の修飾子を持ちます。 ビジネス ID 名が固有でない場合、X12 でエンコードされたメッセージでは "ZZ" を使用し、EDIFACT でエンコードされたメッセージでは "ZZZ" を使用します。これにより、互いに個別のエンティティによって定義されていることを示します。 この値と修飾子により、ビジネス プロファイルが識別されます。 ビジネス ID 名は情報提供のみを目的とし、BizTalk ランタイムでの処理に使用されることはありません。  
   
 ## <a name="determining-an-agreement-for-edi-processing"></a>EDI 処理のためのアグリーメントの決定  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、EDI メッセージを受信するたびに、メッセージの解決先となる取引先アグリーメントを特定しようと試みます。 アグリーメントの一部として定義されている送信者の修飾子、送信者の ID、受信者の修飾子、受信者の ID をメッセージと照合することで、取引先アグリーメントを解決しようとします。 このプロセスの詳細については、次を参照してください。[アグリーメントの解決、スキーマ探索、および受信した EDI メッセージの承認](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md)です。  

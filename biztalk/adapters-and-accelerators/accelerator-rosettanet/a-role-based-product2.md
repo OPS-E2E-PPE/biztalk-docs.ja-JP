@@ -1,11 +1,11 @@
 ---
-title: "役割に基づいた Product2 |Microsoft ドキュメント"
-ms.custom: 
+title: 役割に基づいた Product2 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTARN, tools
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BizTalk Server, tools
 - tools, BTARN
 ms.assetid: 5805fb09-aac7-4cc8-9cc1-daf0f2ec93da
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004867"
 ---
 # <a name="a-role-based-product"></a>ロール ベースの製品
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server と[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ユーザーのロールの適切な環境の機能とツールを提供します。 これらの機能やツールにより、迅速な開発、展開、処理、管理、およびビジネスの使用が実現します。  

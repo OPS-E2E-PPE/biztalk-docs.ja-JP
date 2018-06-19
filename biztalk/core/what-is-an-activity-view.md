@@ -1,11 +1,11 @@
 ---
-title: "アクティビティ ビューについて | Microsoft Docs"
-ms.custom: 
+title: アクティビティ ビューについて | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], Activity view [Tracking Profile Editor]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, Activity view
 - Activity view [Tracking Profile Editor]
 ms.assetid: ae6bcdc8-e426-4148-b83d-08a1a5e99ca3
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290386"
 ---
 # <a name="what-is-an-activity-view"></a>アクティビティ ビューについて
 アクティビティ ビューには、インポートした BAM アクティビティ定義が含まれています。このアクティビティ定義は、Excel 用の BAM アドインで作成します。 BAM アクティビティ定義は、ビジネス プロセスの追跡要件の抽象概念です。 アクティビティは、複数のオーケストレーションおよびポートにまたがることがあります。 アクティビティ定義をインポートすると、その定義の一部を遂行する各オーケストレーション アイテムまたは各メッセージング アイテムにマップされます。  

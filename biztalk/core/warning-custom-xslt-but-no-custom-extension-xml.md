@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288362"
 ---
 # <a name="warning---custom-xslt-but-no-custom-extension-xml"></a>警告 - カスタム xslt は上書きがないカスタム拡張 XML
 **エラー コード**  

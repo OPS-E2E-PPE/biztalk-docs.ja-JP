@@ -1,18 +1,18 @@
 ---
-title: "MSMQ アダプターのパフォーマンスを最適化する |Microsoft ドキュメント"
-ms.custom: 
+title: MSMQ アダプターのパフォーマンスを最適化する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, performance
 - performance, MSMQ adapters
 - configuring [MSMQ adapters], performance
 ms.assetid: f8537ea8-a96e-4874-bcaf-cd1442a50bd4
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007339"
 ---
 # <a name="optimizing-performance-of-the-msmq-adapter"></a>MSMQ アダプターのパフォーマンスを最適化します。
 MSMQ アダプターの最適化は、送信側と受信側で異なります。 受信側では、受信場所のプロパティを設定して、最適化を制御します。 送信側では、オーケストレーションを使用して、最適化を制御できます。  

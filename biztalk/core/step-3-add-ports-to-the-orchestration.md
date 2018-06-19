@@ -1,14 +1,14 @@
 ---
-title: "手順 3: オーケストレーション ポートを追加、|Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: オーケストレーション ポートを追加、|Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 245df16e-d327-4c79-be85-004134d5ea6f
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279834"
 ---
 # <a name="step-3-add-ports-to-the-orchestration"></a>ステップ 3: オーケストレーションへのポートの追加
 ![手順 4 の 3](../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
  **所要時間:** 10 分  
   
- **目標:**このステップで、EAIProcess オーケストレーションに 3 つのポートを追加してそれらを構成します。  
+ **目標:** このステップで、EAIProcess オーケストレーションに 3 つのポートを追加してそれらを構成します。  
   
- **目的:**ポート、オーケストレーションはメッセージを送信し、他のビジネス プロセスからメッセージを受信方法を指定します。 各ポートは、種類、方向、バインドを保持しています。これらの組み合わせによって、通信方向、通信方式、メッセージの送信先場所と送信元場所、および通信の実行方法が決まります。 このステップで作成および構成する 3 つのポートには、それぞれ次の役割があります。  
+ **目的:** ポート、オーケストレーションはメッセージを送信し、他のビジネス プロセスからメッセージを受信方法を指定します。 各ポートは、種類、方向、バインドを保持しています。これらの組み合わせによって、通信方向、通信方式、メッセージの送信先場所と送信元場所、および通信の実行方法が決まります。 このステップで作成および構成する 3 つのポートには、それぞれ次の役割があります。  
   
 -   **ReceiveRequestPort**倉庫から在庫補充要求メッセージを受信します。  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  オーケストレーション デザイナで、オーケストレーション ツールボックスからドラッグして、**ポート**図形を左側の**ポート画面**並列に、 **ReceiveRequest**図形です。 ポート構成ウィザードが自動的に起動します。  
   
-3.  **[ポート構成ウィザードへようこそ]** ページで、 **[次へ]**をクリックします。  
+3.  **[ポート構成ウィザードへようこそ]** ページで、 **[次へ]** をクリックします。  
   
 4.  **ポートのプロパティ** ページで、次の操作をクリックして**次**です。  
   

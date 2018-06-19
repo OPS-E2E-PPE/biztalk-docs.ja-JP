@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 2013 および 2013 R2 の新機能 |Microsoft ドキュメント"
-description: "新機能および BizTalk Server 2013 R2 と 2013 での変更の完全な一覧"
-caps.latest.revision: "67"
+title: BizTalk Server 2013 および 2013 R2 の新機能 |Microsoft ドキュメント
+description: 新機能および BizTalk Server 2013 R2 と 2013 での変更の完全な一覧
+caps.latest.revision: 67
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 2017-08-10
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bdb841f7-4aa9-45c9-a6f1-d527089fcc09
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300010"
 ---
 # <a name="whats-new-in-biztalk-server-2013-and-2013-r2"></a>BizTalk Server 2013 および 2003 R2 の新機能
 [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)] と [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013 の新機能と廃止予定機能をご覧ください。

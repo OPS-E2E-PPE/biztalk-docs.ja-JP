@@ -1,15 +1,15 @@
 ---
-title: "管理およびパフォーマンス ツール |Microsoft ドキュメント"
-description: "タスク、パフォーマンス、および BizTalk Server でのトレースを管理する一般的なツール"
-ms.custom: 
+title: 管理およびパフォーマンス ツール |Microsoft ドキュメント
+description: タスク、パフォーマンス、および BizTalk Server でのトレースを管理する一般的なツール
+ms.custom: ''
 ms.date: 11/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 932814f7-2ab3-45cb-8bbc-eaf00fcb24a0
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006579"
 ---
 # <a name="administrative-and-performance-tools"></a>管理およびパフォーマンス ツール 
 

@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アプリケーションの更新 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーションの更新 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - code samples, versioning
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - versioning, code sample
 - assemblies, versioning
 ms.assetid: 5d316594-12c9-4fa8-8dab-58c2c285eec4
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286842"
 ---
 # <a name="updating-biztalk-applications"></a>BizTalk アプリケーションの更新
 このセクションのトピックでは、BizTalk アプリケーションを実稼動環境に展開した後に更新する方法について説明します。 アプリケーションの更新に関連するタスクの一覧は、次を参照してください。[チェックリスト: BizTalk アプリケーション内のアイテムの更新](../core/checklist-update-the-artifacts-in-a-biztalk-application.md)です。  

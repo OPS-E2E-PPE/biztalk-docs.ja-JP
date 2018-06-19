@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 00691a9e-434f-4baa-9a01-b6f452758ab3
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22279394"
 ---
 # <a name="supported-adapter-xsd-element-types"></a>サポートされているアダプターの XSD 要素の型
 次の表は、アダプター フレームワークでサポートされる要素の一覧です。 構成スキーマに新しい要素を定義する際には、次の例の `string` 部分を、表に示されている任意の型に置き換えてください。  

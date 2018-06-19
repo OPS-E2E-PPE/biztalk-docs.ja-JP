@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004203"
 ---
 # <a name="additional-resources"></a>その他のリソース
 加え[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]と[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]このプラットフォームでのプログラミングについて説明するその他のリソースは、BizTalk Server のヘルプがあります。 これらのリソースに関する詳細については、次の Web サイトを参照してください。  

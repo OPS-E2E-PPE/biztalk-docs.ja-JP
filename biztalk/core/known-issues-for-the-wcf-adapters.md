@@ -1,14 +1,14 @@
 ---
-title: "WCF アダプタに関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF アダプタに関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 423c6021-5fb7-48c9-9319-11e7a18c775c
-caps.latest.revision: "54"
+caps.latest.revision: 54
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009755"
 ---
 # <a name="known-issues-for-the-wcf-adapters"></a>WCF アダプタに関する既知の問題
 このトピックでは、BizTalk Server に含まれる WCF アダプターに関する既知の問題について説明します。  
@@ -87,7 +88,7 @@ svcutil.exe /t:metadata http://service/metadataendpoint
  BizTalk WCF サービス使用ウィザードでは、一方向の操作と要求 - 応答操作の組み合わせを持つポートの種類をインポートできません。 この問題を回避するには、ServiceModel メタデータ ユーティリティ ツールを使用して、ポートの種類を生成します。  
   
 ## <a name="the-biztalk-wcf-service-consuming-wizard-does-not-allow-you-to-set-certificate-credentials-when-retrieving-the-wsdl"></a>BizTalk WCF サービス使用ウィザードで、WSDL を取得するときに証明書の資格情報を設定できない  
- BizTalk WCF サービス使用ウィザードでは、WSDL を取得するときに証明書の資格情報を設定することはできません。 この問題を回避するには、は、ServiceModel メタデータ ユーティリティ ツールを使用するには、WSDL の生成にして、証明書資格情報で使用する WCF サービスからの XSD ファイルは、svcutil.exe.config ファイルで設定し、し、BizTalk WCF サービスにインポート選択してウィザードを使用**メタデータ ファイル (WSDL と XSD)**オプション、**メタデータ ソース**ページ。  
+ BizTalk WCF サービス使用ウィザードでは、WSDL を取得するときに証明書の資格情報を設定することはできません。 この問題を回避するには、は、ServiceModel メタデータ ユーティリティ ツールを使用するには、WSDL の生成にして、証明書資格情報で使用する WCF サービスからの XSD ファイルは、svcutil.exe.config ファイルで設定し、し、BizTalk WCF サービスにインポート選択してウィザードを使用**メタデータ ファイル (WSDL と XSD)** オプション、**メタデータ ソース**ページ。  
   
 ## <a name="wcf-adapters-do-not-support-one-way-operations"></a>WCF アダプターが一方向の操作をサポートしない  
  次のようなエラー メッセージ (Wcf-netmsmq 受信アダプター) 以外の WCF アダプタによって公開された WCF サービスの使用時に表示、 **IsOneWay**プロパティに設定されている**true**クライアント側でします。 これは、ため、 **System.ServiceModel.OperationContractAttribute.IsOneWay** (Wcf-netmsmq によって公開されたサービスの受信アダプターを除く)、WCF アダプタによって公開された WCF サービスのプロパティが**false**一方向の受信場所に対してもします。  

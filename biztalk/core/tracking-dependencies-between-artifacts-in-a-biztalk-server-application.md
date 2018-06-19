@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server アプリケーション内のアイテム間の依存関係の追跡 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server アプリケーション内のアイテム間の依存関係の追跡 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 503cadfc-08e5-4b34-94a2-3b0ea6ad6228
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279954"
 ---
 # <a name="tracking-dependencies-between-artifacts-in-a-biztalk-server-application"></a>BizTalk Server アプリケーションにおけるアイテム間の依存関係の追跡
 典型的な [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションには、オーケストレーション、送信ポート、受信場所、パイプライン、スキーマ、マップなど、さまざまなアイテムが含まれています。 これらすべてのアイテムは、相互に依存しています。 次の表に、この依存関係を示します。  

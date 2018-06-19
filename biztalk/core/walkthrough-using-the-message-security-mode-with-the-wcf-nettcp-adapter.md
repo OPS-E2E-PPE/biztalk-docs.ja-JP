@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: Wcf-nettcp アダプターとメッセージ セキュリティ モードを使用する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: Wcf-nettcp アダプターとメッセージ セキュリティ モードを使用する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7f6e892-34ce-4132-8867-54cc3bbfe507
-caps.latest.revision: "47"
+caps.latest.revision: 47
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010611"
 ---
 # <a name="walkthrough-using-the-message-security-mode-with-the-wcf-nettcp-adapter"></a>チュートリアル: Wcf-nettcp アダプターとメッセージ セキュリティ モードを使用します。
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 12/01/2017
   
     2.  下にある、**サーバー マネージャー**ノード、をクリックして**追加**、順にクリック**ロール**です。  
   
-    3.  これにより、**開始する前に**のダイアログ ボックス、**役割の追加ウィザード**です。 **[次へ]**をクリックします。  
+    3.  これにより、**開始する前に**のダイアログ ボックス、**役割の追加ウィザード**です。 **[次へ]** をクリックします。  
   
     4.  **サーバーの役割の選択** ページで選択**Active Directory Certificate Services**、 をクリックして**次へ**、しに従って、画面に表示されるを完了する指示、インストール。  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 12/01/2017
     1.  Internet Explorer で、Web サイトを参照してください。`http://localhost/certsrv`です。 **へようこそ**  ページで、をクリックして**証明書を要求**、クリックして**高度な証明書の要求**上、**証明書を要求**ページです。  
   
         > [!NOTE]
-        >  使用する場合[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]証明機関から証明書の要求を要求すると、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]コンピューター、エラーが発生する可能性があります**"証明書の登録を完了するために CA の Web サイト構成必要がある HTTPS を使用するには認証"**です。 このエラーが発生した場合、登録 web サイトは Web 証明書 (SSL) で構成する必要があります。 この作業の詳細については、次のリンクを参照してください。  
+        >  使用する場合[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]証明機関から証明書の要求を要求すると、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]コンピューター、エラーが発生する可能性があります **"証明書の登録を完了するために CA の Web サイト構成必要がある HTTPS を使用するには認証"** です。 このエラーが発生した場合、登録 web サイトは Web 証明書 (SSL) で構成する必要があります。 この作業の詳細については、次のリンクを参照してください。  
         >   
         >  [AD Cs:web 登録](http://technet.microsoft.com/library/cc732517.aspx)  
         >   
@@ -130,7 +131,7 @@ ms.lasthandoff: 12/01/2017
   
     2.  MMC で、上、**ファイル** メニューのをクリックして**スナップインの追加と削除**です。  
   
-    3.  **[スナップインの追加と削除]** ダイアログ ボックスで **[追加]**をクリックします。  
+    3.  **[スナップインの追加と削除]** ダイアログ ボックスで **[追加]** をクリックします。  
   
     4.  **スタンドアロン スナップインの追加**ダイアログ ボックスで、**証明書**から、**利用できるスタンドアロン スナップイン**一覧をクリックして**追加**.  
   
@@ -160,7 +161,7 @@ ms.lasthandoff: 12/01/2017
   
     5.  **受信場所のプロパティ**] ダイアログ ボックスで、**トランスポート**横**型**[ **Wcf-nettcp**ドロップダウン リストから一覧で、クリックして**構成**です。  
   
-    6.  **Wcf-nettcp トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブの 、**アドレス (URI)**テキスト ボックスで、「`net.tcp://localhost/WcfMessageSecurity`です。  
+    6.  **Wcf-nettcp トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブの 、**アドレス (URI)** テキスト ボックスで、「`net.tcp://localhost/WcfMessageSecurity`です。  
   
     7.  **Wcf-nettcp トランスポートのプロパティ** ダイアログ ボックスで、**セキュリティ** タブで **メッセージ**から、**セキュリティ モード**ドロップダウン一覧で、クリックして**証明書**から、**クライアント資格情報の種類のメッセージ**ドロップダウン リスト。 これにより、メッセージ セキュリティ モードを使用するように WCF-NetTcp アダプターが構成されます。  
   

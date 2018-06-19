@@ -1,14 +1,14 @@
 ---
-title: "64 ビット Windows オペレーティング システムで BizTalk Server を使用するときの考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: 64 ビット Windows オペレーティング システムで BizTalk Server を使用するときの考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac630f55-7ebe-4b93-bf98-70b00788520f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008387"
 ---
 # <a name="considerations-while-using-biztalk-server-on-a-64-bit-windows-operating-system"></a>64 ビット Windows オペレーティング システムで BizTalk Server を使用するときの考慮事項
 使用する場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]64 ビット Windows オペレーティング システムでは、このトピックで説明されている問題を考慮することを確認します。 よく寄せられる質問については、Microsoft BizTalk Server の 64 ビット サポートに関連する、次を参照してください。 [BizTalk Server の 64 ビット サポート](http://go.microsoft.com/fwlink/?LinkID=155306)(http://go.microsoft.com/fwlink/?LinkID=155306)。  

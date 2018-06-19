@@ -1,14 +1,14 @@
 ---
-title: "手順 2: を構成し、アプリケーション 1 を開始 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: を構成し、アプリケーション 1 を開始 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5cb061ca-acf4-4de4-a634-b3bb98876989
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280010"
 ---
 # <a name="step-2-configure-and-start-the-application"></a>手順 2: を構成し、アプリケーションを起動
 ![手順 3 の 2](../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
  **所要時間:** 10 分  
   
- **目標:**でこの手順で構成し、EAISolution アプリケーションを起動します。  
+ **目標:** でこの手順で構成し、EAISolution アプリケーションを起動します。  
   
- **目的:**バインドに関するほとんどの場合は、構成します。  バインディングは、オーケストレーション ポートなど、ロール リンクの論理エンドポイントとの送信などの物理的なエンドポイント間のマッピングを作成し、ポートまたはパーティを受信します。 これにより、BizTalk ビジネス ソリューションの複数のコンポーネント間で通信できるようになります。 バインドを作成するには BizTalk Server 管理コンソールを使用します。  
+ **目的:** バインドに関するほとんどの場合は、構成します。  バインディングは、オーケストレーション ポートなど、ロール リンクの論理エンドポイントとの送信などの物理的なエンドポイント間のマッピングを作成し、ポートまたはパーティを受信します。 これにより、BizTalk ビジネス ソリューションの複数のコンポーネント間で通信できるようになります。 バインドを作成するには BizTalk Server 管理コンソールを使用します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このステップを開始する前に、以下の要件を確認してください。  

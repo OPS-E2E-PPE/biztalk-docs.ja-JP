@@ -1,14 +1,14 @@
 ---
-title: "手順 3 C: Sw:HandleFileRequest と Sw:HandleSnFRequest FileAct ストア アンド フォワードのシナリオについてメッセージをキャプチャする FILE 送信ポートの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3 C: Sw:HandleFileRequest と Sw:HandleSnFRequest FileAct ストア アンド フォワードのシナリオについてメッセージをキャプチャする FILE 送信ポートの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc41e352-acc5-47eb-bb87-38990f0e76a7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225946"
 ---
 # <a name="step-3c-add-a-file-send-port-to-capture-the-swhandlefilerequest-and-swhandlesnfrequest-messages-for-the-fileact-store-and-forward-scenario"></a>手順 3 C: Sw:HandleFileRequest と Sw:HandleSnFRequest FileAct ストア アンド フォワードのシナリオについてメッセージをキャプチャする FILE 送信ポートの追加
 この手順を開始する前に行う必要があります[手順 3 b: FileAct ストア アンド フォワードのシナリオの FILEACT 受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3b-add-a-fileact-receive-location-for-fileact-store-and-forward-scenario.md)です。  
@@ -47,15 +48,15 @@ ms.lasthandoff: 09/20/2017
     |**これを使用してください。**|**これを行う**|  
     |------------------|--------------------|  
     |**最初の行: プロパティ**|ドロップダウン リストから選択**BTS です。MessageType**です。|  
-    |**最初の行: 演算子**|ドロップダウン リストから選択 **==**です。|  
+    |**最初の行: 演算子**|ドロップダウン リストから選択 **==** です。|  
     |**最初の行: 値**|型**ソフトウェア HandleFileRequest**です。|  
     |**最初の行: グループ化**|ドロップダウン リストから選択**または**です。|  
     |**2 番目の行: プロパティ**|ドロップダウン リストから選択**BTS です。MessageType**です。|  
-    |**2 番目の行: 演算子**|ドロップダウン リストから選択 **==**です。|  
+    |**2 番目の行: 演算子**|ドロップダウン リストから選択 **==** です。|  
     |**2 番目の行: 値**|型**ソフトウェア HandleSnFRequest**です。|  
     |**2 番目の行: グループ化**|既定値を使用します。|  
   
-9. **[OK]**をクリックします。  
+9. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [手順 3: 送信ポートを作成し、FileAct ストア アンド フォワードのシナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-ports-and-receive-ports-for-the-fileact-store-and-forward.md)   

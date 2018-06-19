@@ -1,11 +1,11 @@
 ---
-title: "MQSeries アダプターの構成ファイルを XML |Microsoft ドキュメント"
-ms.custom: 
+title: MQSeries アダプターの構成ファイルを XML |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MQSeries adapters, mqsconfigwiz
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - configuring [MQSeries adapters], mqsconfigwiz
 - mqsconfigwiz [MQSeries adapters]
 ms.assetid: 5f19e55c-0f2c-46d7-bb5d-1eb147c296b3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289770"
 ---
 # <a name="xml-configuration-file-for-the-mqseries-adapter"></a>MQSeries アダプターの XML 構成ファイル
 XML 構成ファイルを読む**mqsconfigwiz** Windows 版のウィザードを使用する場合、ユーザーが入力したのと同じ情報が含まれています。 たとえば、アプリケーション ID、ユーザー ID とパスワード (必要な場合)、ロール名、およびそのロールに属しているユーザーの一覧などがあります。  

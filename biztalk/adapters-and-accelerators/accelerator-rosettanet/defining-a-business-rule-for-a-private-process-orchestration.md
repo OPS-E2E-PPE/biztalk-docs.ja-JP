@@ -1,11 +1,11 @@
 ---
-title: "プライベート プロセス オーケストレーションのビジネス ルールの定義 |Microsoft ドキュメント"
-ms.custom: 
+title: プライベート プロセス オーケストレーションのビジネス ルールの定義 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, policies
@@ -37,7 +37,7 @@ helpviewer_keywords:
 - private processes, business rules
 - policies, creating
 ms.assetid: 5d2b0257-1b15-482b-a562-798b808e9a2d
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -46,6 +46,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010531"
 ---
 # <a name="defining-a-business-rule-for-a-private-process-orchestration"></a>プライベート プロセス オーケストレーションのビジネス ルールの定義
 受信確認プライベート プロセスで使用するビジネス ルールを定義できます。 これにより、プライベート プロセス オーケストレーションを停止することなく、ビジネス ルールを大幅に変更できます。 このプロセスでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] ビジネス ルール エンジンを使用します。 このプロセスには以下の手順が含まれます。  
@@ -74,7 +75,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  作成したボキャブラリ フォルダを展開しを右クリックして**バージョン 1.0 (未保存)**、クリックして**新しい定義の追加**です。  
   
-6.  **ボキャブラリの定義ウィザード**] ページで、[**定数値、値の範囲、または値セット**、クリックして**[次へ]**です。  
+6.  **ボキャブラリの定義ウィザード**] ページで、[**定数値、値の範囲、または値セット**、クリックして **[次へ]** です。  
   
 7.  **定数値、値の範囲、または値セット**] ページの [、**定義名**ボックスで、適切なボキャブラリ定数値の名前を入力します**Maximum Quantity Allowed。**、クリックして**次**です。  
   
@@ -98,7 +99,7 @@ ms.lasthandoff: 12/01/2017
   
 8.  **操作の種類**セクションで、 **「取得」操作の実行**です。  
   
-9. **[完了]**をクリックします。  
+9. **[完了]** をクリックします。  
   
 10. 1 つまたは複数を定義するには、この手順を繰り返します`Set`操作で、 **「設定」操作の実行**の**操作の種類**です。  
   
@@ -112,7 +113,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  ビジネス ルール作成ツールでポリシー エクスプローラ ペインで右クリック**ポリシー**、クリックして**新しいポリシーの追加**です。  
   
-2.  をクリックして**"policy1"**です。  
+2.  をクリックして **"policy1"** です。  
   
 3.  プロパティ ペインで、設定、**名前**プロパティを適切なポリシーの名前にします。  
   
@@ -172,7 +173,7 @@ ms.lasthandoff: 12/01/2017
     > [!NOTE]
     >  使用する方法の例については、**ルールの呼び出し**オーケストレーションに図形を BTARN SDK に付属の PIP3A4PrivateResponder.odx オーケストレーションを参照してください。 これは、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pipautomation\3a4\pr です。 詳細については、次を参照してください。 [3A4 プライベート応答側オーケストレーションを使用して、ビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)です。  
   
-12. **[OK]**をクリックします。  
+12. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [プログラミング ガイド](../../adapters-and-accelerators/accelerator-rosettanet/programming-guide2.md)   

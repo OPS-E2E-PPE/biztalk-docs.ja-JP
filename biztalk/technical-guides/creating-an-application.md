@@ -1,14 +1,14 @@
 ---
-title: "アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7b6e325c-a86f-419d-9a27-864f4f035507
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298130"
 ---
 # <a name="creating-an-application"></a>アプリケーションを作成します。
 BizTalk アプリケーションを作成する 3 つの方法はあります。 名前付け、参照、およびアプリケーションにアイテムを展開するためのいくつかのオプションもあります。  

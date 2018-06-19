@@ -1,14 +1,14 @@
 ---
-title: "静的アダプターの IStaticAdapterConfig インターフェイス |Microsoft ドキュメント"
-ms.custom: 
+title: 静的アダプターの IStaticAdapterConfig インターフェイス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52f5de01-0cfc-456a-a52b-28f8f076bdfc
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277386"
 ---
 # <a name="static-adapter-istaticadapterconfig-interface"></a>静的アダプターの IStaticAdapterConfig インターフェイス
 静的デザイン時アダプターを実装する必要があります、 **IStaticAdapterConfig**インターフェイスです。 このインターフェイスによって、アダプター メタデータの追加ウィザードが利用可能になり、アダプターからサービス組織や個々のサービスの説明を取得できます。 このウィザードでは、 **GetServiceOrganization**と**GetServiceDescription**アダプターと連携するメタデータ情報を取得し、BizTalk に追加する方法でプロジェクトを[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。  

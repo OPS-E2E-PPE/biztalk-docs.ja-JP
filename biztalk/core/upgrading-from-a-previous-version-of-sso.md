@@ -1,17 +1,17 @@
 ---
-title: "SSO の以前のバージョンからのアップグレード |Microsoft ドキュメント"
-ms.custom: 
+title: SSO の以前のバージョンからのアップグレード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - upgrading, SSO
 - SSO, upgrading
 ms.assetid: 78b99d99-9a10-4453-9db5-ae1bacd7de50
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286970"
 ---
 # <a name="upgrading-from-a-previous-version-of-sso"></a>SSO の以前のバージョンからアップグレードします。
 エンタープライズ シングル サインオン機能をインストールする (たとえば、Microsoft BizTalk Server 2009) からコンピューターに展開されている以前のバージョンが既にある場合は、次の手順を完了する必要があります。  

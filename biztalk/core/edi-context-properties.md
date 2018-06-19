@@ -1,14 +1,14 @@
 ---
-title: "EDI コンテキスト プロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: EDI コンテキスト プロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6a408af-daf5-4e9e-afb3-9fd1795e8c16
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010619"
 ---
 # <a name="edi-context-properties"></a>EDI のコンテキスト プロパティ
 EDI グローバル プロパティ スキーマのメッセージ コンテキスト プロパティは公開されるため、メッセージ ルーティングなどの操作で使用できます。 これらのコンテキスト プロパティは、Microsoft.BizTalk.Edi.BaseArtifacts アセンブリの PropertySchema.xsd で定義されています。 これらのプロパティの名前空間は `http://schemas.microsoft.com/ Edi/PropertySchema` です。 昇格されたメッセージ コンテキスト プロパティは Edi として使用できます。\<*プロパティ名*\>で、**フィルター**のページ、**送信ポートのプロパティ ダイアログ ボックス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。

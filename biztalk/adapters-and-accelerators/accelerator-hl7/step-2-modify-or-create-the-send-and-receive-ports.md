@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d96d02c-b75d-4d18-a127-37002c5ff138
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26007165"
 ---
 # <a name="step-2-modify-or-create-the-send-and-receive-ports"></a>手順 2: 変更または作成、送信および受信ポート
 ファイルの送信ポートと受信ポートをバッチにする必要がありますでチュートリアルをバッチ処理/です。 クリックした場合、 **Launch Tutorial**の Enterprise Edition のインストールの最後にあるボタン[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]これらのポートが自動的に作成: Tutorial_BTAHL7Drop をという名前の送信ポートと受信ポートを Tutorial_BTAHL7PickUp をという名前です。 これらのポートがあれば、Tutorial_BTAHL7Drop の送信ポートを変更する必要があります。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 03/28/2018
   
 4.  コンソール ツリーでクリックして**フィルター**です。  
   
-5.  **フィルター**ウィンドウの選択] の 2 番目の行で、 **BTAHL7Schemas.MessageClass**の**プロパティ**[ **==**の**演算子**、および種類**MessageClass2X**の**値**です。 **Enter**をクリックします。  
+5.  **フィルター**ウィンドウの選択] の 2 番目の行で、 **BTAHL7Schemas.MessageClass**の**プロパティ**[ **==** の**演算子**、および種類**MessageClass2X**の**値**です。 **Enter**をクリックします。  
   
 6.  設定**Group By**上、 **BTS です。ReceivePortName**の行を**または**、順にクリック**OK**です。  
   
@@ -68,10 +69,10 @@ ms.lasthandoff: 03/28/2018
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**受信フォルダー**|参照 **\<***ドライブ***\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7PickUp for**. **注:**これは、パス、ファイル システムまたはパブリック共有上の場所にどこから[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]は、ファイルを取得します。|  
+    |**受信フォルダー**|参照 **\<***ドライブ***\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7PickUp for**. **注:** これは、パス、ファイル システムまたはパブリック共有上の場所にどこから[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]は、ファイルを取得します。|  
     |**ファイル マスク**|型 **\*.txt**です。|  
   
-12. **[OK]**をクリックします。  
+12. **[OK]** をクリックします。  
   
 13. 受信場所のプロパティ ダイアログ ボックスで、次の操作を行います。  
   
@@ -80,7 +81,7 @@ ms.lasthandoff: 03/28/2018
     |**受信ハンドラー**|保持**BizTalkServerApplication**として選択します。|  
     |**受信パイプライン**|選択**BTAHL72XPipelines.BTAHL72XReceivePipeline**です。|  
   
-14. **[OK]**をクリックします。  
+14. **[OK]** をクリックします。  
   
 15. BizTalk エクスプ ローラーで右クリック**Tutorial_FileReceiveLoc**、クリックして**を有効にする**です。  
   
@@ -100,10 +101,10 @@ ms.lasthandoff: 03/28/2018
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**インストール先フォルダー**|参照 **\<***ドライブ***:\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7Drop for**. **注:**これは、ファイル システムまたはパブリックの共有の場所にパス[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ファイルを記述します。|  
-    |**[ファイル名]**|型**%MessageID%.txt** (拡張機能は、txt、xml ではないことに注意してください)。|  
+    |**インストール先フォルダー**|参照 **\<***ドライブ***:\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7Drop for**. **注:** これは、ファイル システムまたはパブリックの共有の場所にパス[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ファイルを記述します。|  
+    |**[ファイル名]**|型 **%MessageID%.txt** (拡張機能は、txt、xml ではないことに注意してください)。|  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  送信ポートのプロパティ] ダイアログ ボックスの**送信パイプライン**[ **BTAHL72XPipelines.BTAHL72XSendPipeline**ドロップダウン リストからです。  
   
@@ -112,16 +113,16 @@ ms.lasthandoff: 03/28/2018
     |プロパティ|目的|  
     |--------------|----------------|  
     |**プロパティ**|選択**BTS です。ReceivePortName**ドロップダウン リストからです。|  
-    |**演算子**|ままにして**==**演算子とします。|  
+    |**演算子**|ままにして**==** 演算子とします。|  
     |**値**|型**Tutorial_BTAHL7PickUp**です。|  
     |**グループ化**|選択**または**ドロップダウン リストからです。|  
     |**プロパティ**|選択**BTAHL7Schemas.MessageClass**です。|  
-    |**演算子**|ままにして**==**演算子とします。|  
+    |**演算子**|ままにして**==** 演算子とします。|  
     |**値**|型**MessageClass2X**です。|  
   
 7.  **Enter**をクリックします。 ダイアログ ボックスの下部にあるペインでフィルター式が正しいことを確認してください。  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 9. 管理コンソールで、をクリックして**送信ポート**を右クリックして**Tutorial_BTAHL7Drop**、クリックして**開始**です。  
   

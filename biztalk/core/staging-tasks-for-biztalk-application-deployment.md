@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アプリケーション展開のステージング作業 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーション展開のステージング作業 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, staging
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - applications, deploying
 - deploying [applications], tasks
 ms.assetid: de60eddb-da13-412a-94f9-331387b5930e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278274"
 ---
 # <a name="staging-tasks-for-biztalk-application-deployment"></a>BizTalk アプリケーション展開のステージング作業
 BizTalk アプリケーションをステージング環境に展開するための手順を次に示します。  

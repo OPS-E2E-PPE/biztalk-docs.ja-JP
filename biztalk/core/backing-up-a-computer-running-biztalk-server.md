@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を実行しているコンピューターのバックアップ |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を実行しているコンピューターのバックアップ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 70f53b41-8083-4b56-8698-e75a13b21a69
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230506"
 ---
 # <a name="backing-up-a-computer-running-biztalk-server"></a>BizTalk Server を実行しているコンピュータのバックアップ
 BizTalk Server を実行しているコンピュータで復旧不可能なハードウェア障害が発生した場合、同等のコンピュータに置き換える必要があります。 基本プラットフォーム、必要なソフトウェア、BizTalk Server コンポーネント、および同等の構成設定が備わった代替コンピュータをセットアップします。 これらの構成設定は、BizTalk アプリケーションを正しく機能させるために必要な、適切なレジストリ エントリ、ファイル、フォルダ、および関連する Windows サービスで構成される場合があります。  

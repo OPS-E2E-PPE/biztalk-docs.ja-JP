@@ -11,7 +11,7 @@ helpviewer_keywords:
 - architecture of SAP adapter
 - adapters, architecture
 ms.assetid: 1b45edb0-2476-427b-b6cd-41e38ed815e0
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22218418"
 ---
 # <a name="architecture-overview-of-the-biztalk-adapter-for-mysap-business-suite"></a>BizTalk Adapter 用 mySAP Business Suite のアーキテクチャの概要
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]を実装する[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインディングは、SAP システムとの通信を有効にする単一のカスタム トランスポート バインド要素が含まれています。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]によってラップされた、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]ランタイムは経由でアプリケーションに公開されると、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]チャネル アーキテクチャ。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP Unicode RFC SDK (librfc32u.dll) の 64 ビットまたは 32 ビット バージョンのいずれかを使用して SAP システムと通信します。 

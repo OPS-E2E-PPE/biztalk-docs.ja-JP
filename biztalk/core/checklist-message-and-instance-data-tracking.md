@@ -1,15 +1,15 @@
 ---
-title: "チェックリスト: メッセージし、インスタンス データの追跡 |Microsoft ドキュメント"
-description: "メッセージ、インスタンス、および BizTalk Server 内の成果物を追跡する場合のベスト プラクティス"
-ms.custom: 
+title: 'チェックリスト: メッセージし、インスタンス データの追跡 |Microsoft ドキュメント'
+description: メッセージ、インスタンス、および BizTalk Server 内の成果物を追跡する場合のベスト プラクティス
+ms.custom: ''
 ms.date: 02/26/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d4b5b614-23e5-4895-9c66-417b55dee43c
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710405"
 ---
 # <a name="checklist-message-and-instance-data-tracking"></a>チェックリスト: メッセージとインスタンス データの追跡
 |手順|リファレンス|  

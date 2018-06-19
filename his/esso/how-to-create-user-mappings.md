@@ -8,15 +8,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eb91879c-73f4-4e9e-9e5b-534f48cd5584
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: gplarsen
 ms.author: hisdocs; plarsen
 manager: anneta
 ms.openlocfilehash: 89fd7ab2ca83d23a37944447997becd2d3f008c2
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30250966"
 ---
 # <a name="how-to-create-user-mappings"></a>ユーザー マッピングを作成する方法
 使用して、 **createmappings** XML ファイルで指定された、1 つまたは複数のユーザー マッピングを作成するコマンド。 XML ファイルの例を次に示します。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 03/28/2018
   
      既定のインストール ディレクトリは\<*ドライブ*>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型`ssomanage –createmappings <mappings file name>`ここで、 *\<マッピング ファイル名 >*を作成するユーザー マッピングを格納しているファイルの名前を指定します。  
+3.  型`ssomanage –createmappings <mappings file name>`ここで、 *\<マッピング ファイル名 >* を作成するユーザー マッピングを格納しているファイルの名前を指定します。  
   
 ### <a name="to-create-user-mappings-using-the-client-utility"></a>クライアント ユーティリティを使用してユーザー マッピングを作成するには  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 03/28/2018
   
      既定のインストール ディレクトリは\<*ドライブ*>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型`ssoclient –setcredentials <application name >`ここで、 *\<アプリケーション名 >*ユーザーがマッピングを作成する関連アプリケーションの名前を指定します。  
+3.  型`ssoclient –setcredentials <application name >`ここで、 *\<アプリケーション名 >* ユーザーがマッピングを作成する関連アプリケーションの名前を指定します。  
   
 ## <a name="see-also"></a>参照  
  [SSO マッピング](../esso/sso-mappings.md)   

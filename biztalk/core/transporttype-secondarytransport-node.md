@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279578"
 ---
 # <a name="transporttype-secondarytransport-node"></a>TransportType (SecondaryTransport ノード)
 バインド ファイルの SecondaryTransport ノードの TransportType ノードには、バインド ファイルと共にエクスポートされるトランスポートに関連付けられているアダプターに関する特定の情報が含まれます。  

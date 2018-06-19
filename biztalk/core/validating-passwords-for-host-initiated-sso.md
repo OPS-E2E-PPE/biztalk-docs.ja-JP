@@ -1,17 +1,17 @@
 ---
-title: "ホストのパスワードを検証する側開始 SSO |Microsoft ドキュメント"
-ms.custom: 
+title: ホストのパスワードを検証する側開始 SSO |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - passwords, host initiated [SSO]
 - host initiated SSO, passwords
 ms.assetid: 3cc1d68a-27ac-46ce-ba1e-21139a9df55e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287858"
 ---
 # <a name="validating-passwords-for-host-initiated-sso"></a>ホストのパスワードを検証する側開始 SSO
 ホスト側開始 SSO の関連アプリケーションを作成するときは、Windows 以外のユーザーのパスワードの検証が既定で有効になります。 このため、アプリケーションでリソースにアクセスするための Windows ユーザー トークンを取得するために SSO を呼び出すときは、アプリケーションで Windows 以外のユーザー アカウントとパスワードを指定する必要があります。 パスワードが SSO データベースに格納されている、その Windows 以外のユーザーのパスワードと一致しない場合は、アクセスが拒否されます。 関連アプリケーションのパスワードの検証機能は、必要に応じて無効にできます。 パスワードの検証機能は、ホスト側開始 SSO の関連アプリケーションの種類が単独であっても、ホスト グループであってもどちらにも適用されます。  

@@ -1,15 +1,15 @@
 ---
-title: "WCF LOB Adapter SDK のアーキテクチャの概要 |Microsoft ドキュメント"
-description: "ハンドラー、チャネルの実装、接続の管理、メタデータ、および WCF LOB Adapter SDK での WSDL の使用の概要"
-ms.custom: 
+title: WCF LOB Adapter SDK のアーキテクチャの概要 |Microsoft ドキュメント
+description: ハンドラー、チャネルの実装、接続の管理、メタデータ、および WCF LOB Adapter SDK での WSDL の使用の概要
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dbd9b63c-54a4-4f63-b3a8-8600f6009a74
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226626"
 ---
 # <a name="architecture-overview-of-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK のアーキテクチャの概要
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]は、WCF チャネル モデル上に構築され、大きなおよび動的なメタデータがある基幹業務システムにアダプターを作成するアダプターの開発者向けのデザイン時および実行時の拡張機能を提供します。 使用して作成されたアダプタ、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]はカスタム WCF バインドとしてコンシューマーを確認します。 次の図は、内部のアーキテクチャと WCF LOB Adapter SDK の主要なコンポーネントを示します。  

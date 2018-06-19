@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 31a13377-cc89-4763-ad1b-508a16fc9708
-caps.latest.revision: ''
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26009891"
 ---
 # <a name="transactional-adapter-biztalk-server-sample"></a>Transactional Adapter (BizTalk Server サンプル)
 Transactional Adapter サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージの処理中にデータベースに対して明示的な Microsoft 分散トランザクション コーディネーター (MSDTC) トランザクションを作成および使用する方法を示すものです。  
@@ -103,7 +104,7 @@ Transactional Adapter サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../
     > [!IMPORTANT]
     >  BizTalk を 64 ビット コンピューターにインストールすると、hkey_classes_root \clsid\ レジストリ エントリのすべてのインスタンスを hkey_classes_root \wow6432node\clsid\ に変更、 **TransactionalAdmin.reg** レジストリ ファイルです。  
   
-3.  **レジストリ エディター** ダイアログ ボックスで、をクリックして **[はい]** サンプル アダプターをレジストリに追加する **[ok]**します。  
+3.  **レジストリ エディター** ダイアログ ボックスで、をクリックして **[はい]** サンプル アダプターをレジストリに追加する **[ok]** します。  
   
 4.  Windows エクスプ ローラーを閉じるにはクリックして **ファイル**, 、 をクリックし、 **閉じる**します。  
   
@@ -127,7 +128,7 @@ Transactional Adapter サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../
   
 #### <a name="create-a-receive-port-and-location-that-uses-the-adapter"></a>アダプターを使用する受信ポートと受信場所の作成  
   
-1.  展開、 **BizTalk グループ [サーバー名]**内のノード[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**アプリケーション** ノードを展開**BizTalk アプリケーション 1**ノード。  
+1.  展開、 **BizTalk グループ [サーバー名]** 内のノード[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**アプリケーション** ノードを展開**BizTalk アプリケーション 1**ノード。  
   
 2.  右クリック **受信ポート**, 、] をクリックし、 **新規**, [ **一方向の受信ポートです。**  
   
@@ -153,7 +154,7 @@ Transactional Adapter サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../
     |[ポーリング間隔の単位]|データのポーリング時間の測定単位。 "秒" に設定します。|  
     |ポーリング間隔|データのポーリング時間を示す数値。 15 秒に設定します。|  
   
-10. をクリックして**[ok]**を構成 ダイアログ ボックスを閉じ**OK**を閉じます、**受信場所のプロパティ** ダイアログ ボックスに戻るには、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]です。  
+10. をクリックして **[ok]** を構成 ダイアログ ボックスを閉じ**OK**を閉じます、**受信場所のプロパティ** ダイアログ ボックスに戻るには、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]です。  
   
 #### <a name="create-a-send-port-and-send-handler-that-use-the-adapter"></a>アダプターを使用する送信ポートと送信ハンドラーの作成  
   

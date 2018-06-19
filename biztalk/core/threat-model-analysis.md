@@ -21,6 +21,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22279914"
 ---
 # <a name="threat-model-analysis"></a>脅威モデル分析
 脅威モデル分析 (TMA) は、製品、アプリケーション、ネットワーク、環境にもたらされるセキュリティのリスクを判断し、どのように攻撃が発生するかを認識するのに役立ちます。 この分析は、緩和が必要な脅威とその緩和方法を決定することを目標とします。  

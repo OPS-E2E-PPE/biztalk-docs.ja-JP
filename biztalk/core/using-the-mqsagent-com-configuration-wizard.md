@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010435"
 ---
 # <a name="using-the-mqsagent-com-configuration-wizard"></a>MQSAgent COM + 構成ウィザードの使用
 MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケーション (MQSeries コンポーネント) 部分である MQSAgent を構成します。 このウィザードでは、コンポーネントのアプリケーション ID、およびロール名とそのロールに含めるユーザーを設定します。 MQSAgent COM + 構成ウィザードを使用して作成される MQSAgent COM + コンポーネントの名前は**MQSAgent2**です。  
@@ -63,7 +64,7 @@ MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケ
 ## <a name="to-set-the-msdtc-security-configuration-on-the-windows-server-2008-computer-to-no-authentication-required"></a>Windows Server 2008 コンピューター上の MSDTC のセキュリティ構成を [認証を必要としない] に設定するには  
  MQSAgent COM + アプリケーションがインストールされている場合、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]でコンピューターと、MQSeries アダプター (BizTalk Server と共にインストールされます) がインストールされている、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]コンピューター、MSDTC セキュリティ構成を[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]にコンピューターを設定する必要があります**認証を必要としない**です。 MSDTC のセキュリティ構成を [認証を必要としない] に設定するには、次の手順を実行します。  
   
-1.  をクリックして**開始**] をクリックし、**コントロール パネルの [**です。  
+1.  をクリックして**開始**] をクリックし、**コントロール パネルの [** です。  
   
 2.  **［管理ツール］** をダブルクリックします。  
   
@@ -86,7 +87,7 @@ MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケ
   
 1.  MQSAgent COM+ コンポーネントに変更を加えられるようにします。  
   
-    -   をクリックして**開始**] をクリックし、**コントロール パネルの [**です。  
+    -   をクリックして**開始**] をクリックし、**コントロール パネルの [** です。  
   
     -   **［管理ツール］** をダブルクリックします。  
   
@@ -94,9 +95,9 @@ MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケ
   
     -   展開**コンポーネント サービス**、展開**マイ コンピューター**、展開**COM + アプリケーション**を右クリックし、 **MQSAgent2** COM + アプリケーションクリックして**プロパティ**です。  
   
-    -   クリックして、 **[詳細設定]**タブおよびボックスをオフに**変更を無効にする**です。  
+    -   クリックして、 **[詳細設定]** タブおよびボックスをオフに**変更を無効にする**です。  
   
-    -   **[OK]**をクリックします。  
+    -   **[OK]** をクリックします。  
   
 2.  MQSAgent ランタイム コンポーネント用の新しい COM+ アプリケーションを作成します。  
   
@@ -115,7 +116,7 @@ MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケ
   
     -   をクリックして**次へ**上、**ロールにユーザーの追加** ダイアログ ボックス。  
   
-    -   **[完了]**をクリックします。  
+    -   **[完了]** をクリックします。  
   
 3.  ランタイム コンポーネントを、新しい COM+ アプリケーションに移動します。  
   

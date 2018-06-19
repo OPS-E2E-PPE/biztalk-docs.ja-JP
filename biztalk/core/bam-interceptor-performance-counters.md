@@ -1,14 +1,14 @@
 ---
-title: "BAM インターセプター パフォーマンス カウンター |Microsoft ドキュメント"
-ms.custom: 
+title: BAM インターセプター パフォーマンス カウンター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b9b64ae1-4d94-4c3c-add1-fa020713be5c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230498"
 ---
 # <a name="bam-interceptor-performance-counters"></a>BAM インターセプタのパフォーマンス カウンタ
 パフォーマンス カウンタにより、BAM インターセプタによって実行される作業の特定の側面を監視できます。 パフォーマンス カウンターは、サーバー パフォーマンスに関する問題を特定してトラブルシューティングする際に役立ちます。  

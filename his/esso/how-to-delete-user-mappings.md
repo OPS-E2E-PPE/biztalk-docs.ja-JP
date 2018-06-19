@@ -8,15 +8,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 82c4cdff-b82d-4cfd-8e20-220a2fe78656
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: gplarsen
 ms.author: hisdocs; plarsen
 manager: anneta
 ms.openlocfilehash: a9d0a31c3dbc9d5980f59d9f30d20ec15f603a38
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30251086"
 ---
 # <a name="how-to-delete-user-mappings"></a>ユーザー マッピングを削除する方法
 以下のコマンドを使用して、XML ファイルで指定された 1 つ以上のユーザー マッピングを削除できます。 XML ファイルの例を次に示します。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 03/28/2018
   
      既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型`ssomanage –deletemapping <domain>\<username> <application name>`ここで、 *\<ドメイン >*は Windows ドメイン ユーザー アカウントを*\<ユーザー名 >*は、Windows ユーザー名と\< *アプリケーション名*> は、特定のユーザー マッピングを削除するアプリケーション。  
+3.  型`ssomanage –deletemapping <domain>\<username> <application name>`ここで、 *\<ドメイン >* は Windows ドメイン ユーザー アカウントを*\<ユーザー名 >* は、Windows ユーザー名と\< *アプリケーション名*> は、特定のユーザー マッピングを削除するアプリケーション。  
   
 ### <a name="to-delete-a-user-mapping-using-the-client-utility"></a>クライアント ユーティリティを使用してユーザー マッピングを削除するには  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 03/28/2018
   
      既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型`ssoclient –deletemapping <application name>`ここで、 *\<アプリケーション名 >*ユーザー マッピングを削除する関連アプリケーションの名前を指定します。  
+3.  型`ssoclient –deletemapping <application name>`ここで、 *\<アプリケーション名 >* ユーザー マッピングを削除する関連アプリケーションの名前を指定します。  
   
 ## <a name="see-also"></a>参照  
  [SSO マッピング](../esso/sso-mappings.md)   

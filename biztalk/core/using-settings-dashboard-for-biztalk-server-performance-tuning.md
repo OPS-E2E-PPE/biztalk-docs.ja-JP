@@ -1,15 +1,15 @@
 ---
-title: "BizTalk server 設定ダッシュ ボードを使用してパフォーマンス チューニング |Microsoft ドキュメント"
-description: "BizTalk Server 管理の設定ダッシュ ボードを使用して、グループ、ホスト、およびホスト インスタンスの設定を更新"
-ms.custom: 
+title: BizTalk server 設定ダッシュ ボードを使用してパフォーマンス チューニング |Microsoft ドキュメント
+description: BizTalk Server 管理の設定ダッシュ ボードを使用して、グループ、ホスト、およびホスト インスタンスの設定を更新
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3bb1ddac-1e8f-4928-9c70-8326ae64a734
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287402"
 ---
 # <a name="use-settings-dashboard-for-biztalk-server-performance-tuning"></a>BizTalk server 設定ダッシュ ボードを使用してパフォーマンス チューニング
 

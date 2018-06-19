@@ -11,7 +11,7 @@ helpviewer_keywords:
 - filters, receive messages
 - messages, filters
 ms.assetid: 5310039b-6719-4971-933a-2da0573fb5e7
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22287882"
 ---
 # <a name="using-filters-with-the-receive-message-shape"></a>受信メッセージ図形にフィルターを使用します。
 フィルター式は、"アクティブ化" プロパティに対して値 True を指定するオーケストレーションの受信図形に適用できる、オプションのパラメーターです。 フィルター式が指定された場合、受信メッセージがフィルター式で指定された条件に一致する場合にのみ、オーケストレーションがアクティブ化されます。 フィルター式が指定されていない場合は、オーケストレーションがサブスクライブする受信メッセージによって、オーケストレーションがアクティブ化されます。  

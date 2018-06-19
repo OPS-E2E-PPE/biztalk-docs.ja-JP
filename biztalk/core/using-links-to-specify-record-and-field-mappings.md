@@ -1,14 +1,14 @@
 ---
-title: "リンクを使用してレコードを指定するフィールドのマッピングと |Microsoft ドキュメント"
-ms.custom: 
+title: リンクを使用してレコードを指定するフィールドのマッピングと |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1c669d93-e088-459e-8f45-87c359874a7e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287250"
 ---
 # <a name="using-links-to-specify-record-and-field-mappings"></a>リンクを使用してレコードを指定してフィールドのマッピング
 BizTalk マッパーでは、リンクを使用して、送信元スキーマのデータ項目を送信先スキーマのデータ項目に関連付けます。 通常、完成したマップには、送信元スキーマと送信先スキーマの間に多数のリンクがあります。 すべてのリンクが一体となって、送信元インスタンス メッセージのデータを送信先インスタンス メッセージに変換する方法を指定します。送信先インスタンス メッセージは、送信元と同等の意味を持ちますが、構文的には異なります。  

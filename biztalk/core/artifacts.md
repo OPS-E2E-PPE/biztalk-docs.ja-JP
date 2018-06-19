@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230434"
 ---
 # <a name="artifacts"></a>成果物
 ここでは各種の BizTalk Server アイテムを説明します。 アイテムにはアセンブリ、セキュリティ証明書、ビジネス ルール ポリシー、BAM 構成ファイル、バインド、その他の BizTalk アプリケーションの機能に必要な要素が含まれます。 アプリケーションのアイテムは BizTalk 管理コンソールで表示して管理します。  

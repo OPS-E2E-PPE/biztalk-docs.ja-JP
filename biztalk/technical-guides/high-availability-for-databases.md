@@ -1,14 +1,14 @@
 ---
-title: "データベースの高可用性 |Microsoft ドキュメント"
-ms.custom: 
+title: データベースの高可用性 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 63813d87-1ce4-4645-bb2a-d55e413fcace
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009363"
 ---
 # <a name="high-availability-for-databases"></a>データベースの高可用性
 BizTalk Server に大きく依存して SQL Server のデータ ストアとデータの永続化します。 その他すべての BizTalk Server コンポーネントおよびホストにも、多種多様な業務アプリケーション (メッセージの受信、処理、ルーティングなど) を統合するプロセスにおいて、それぞれ固有の役割がありますが、この作業をディスクに取り込み、維持するという役割は、データベース コンピューターにあります。 たとえば、BizTalk Server が受信メッセージを受信すると受信ホストに永続化、メッセージ ボックス データベースの他のホストは、オーケストレーションの処理および送信のメッセージを取得する前にします。 BizTalk ソリューションには、オーケストレーションが含まれている場合、BizTalk Server は (処理ホスト)、ビジネス プロセスを実行し、オーケストレーションの完了後に、メッセージをメッセージ ボックス データベースに保存します。 ホストにメッセージをルーティングします。 その後、送信ホストが、そのメッセージをデータベースから取り出し、適切な送信アダプターを使って外部のアプリケーションに送信します。  

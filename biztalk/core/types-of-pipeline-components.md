@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286778"
 ---
 # <a name="types-of-pipeline-components"></a>パイプライン コンポーネントの種類
 3 種類のパイプライン コンポーネントに付属[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]: 全般、アセンブル、および逆アセンブルします。 3 種類のパイプライン コンポーネントには、いずれもプローブ機能を実装できます。 このトピックでは、各コンポーネントの概要と、一般的にどのようなステージで使用されるかについて説明します。  

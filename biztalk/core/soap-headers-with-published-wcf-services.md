@@ -1,18 +1,18 @@
 ---
-title: "公開済み WCF サービスでの SOAP ヘッダー |Microsoft ドキュメント"
-ms.custom: 
+title: 公開済み WCF サービスでの SOAP ヘッダー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - publishing, SOAP headers [WCF services]
 - SOAP headers, WCF services
 - WCF services, SOAP headers
 ms.assetid: 5564a57e-e241-4595-a959-4289c8502410
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975688"
 ---
 # <a name="soap-headers-with-published-wcf-services"></a>公開済み WCF サービスでの SOAP ヘッダー
 WCF 受信アダプター、受信メッセージにすべての SOAP ヘッダーの値をコピーすることができます、 **InboundHeaders**プロパティ、またはこれらを作成したりできます指定の値を BizTalk メッセージ コンテキストに昇格します。 WCF アダプタでは、カスタムの SOAP ヘッダーと、WCF インフラストラクチャが使用する WS-Addressing、WS-Security、WS-AtomicTransaction などの標準 SOAP ヘッダーの両方を処理できます。 **InboundHeaders**コンテキスト プロパティがターゲットの名前空間内に**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**SOAP の文字列表現が含まれています受信メッセージのヘッダー値。  
@@ -45,11 +46,11 @@ WCF 受信アダプター、受信メッセージにすべての SOAP ヘッダ�
   
  SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させるには、プロパティ名と名前空間で構成される値ペアのコレクションを WCF メッセージに挿入することにより、ヘッダー値の書き込みまたは昇格を実行する必要があることを、WCF アダプタが認識できるようにする必要があります。 WCF アダプターで SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させるには、WCF メッセージで次のメッセージ プロパティを指定する必要があります。  
   
--   BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格するには、WCF アダプタを探しているキーのペアは、 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**および値**ボックスの一覧\<KeyValuePair\<XmlQualifiedName、オブジェクト\>\>**です。  
+-   BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格するには、WCF アダプタを探しているキーのペアは、 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**および値**ボックスの一覧\<KeyValuePair\<XmlQualifiedName、オブジェクト\>\>** です。  
   
      このペアを使用して、WCF アダプタを実行し、名前空間、名前からの値、 **XmlQualifiedName**オブジェクトおよびヘッダーの値を昇格させるために使用します。  
   
--   書き込むが、BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格しません、WCF アダプタを探しているキーのペアは、 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**および値**リスト\<KeyValuePair\<XmlQualifiedName、オブジェクト\>\>**です。  
+-   書き込むが、BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格しません、WCF アダプタを探しているキーのペアは、 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**および値**リスト\<KeyValuePair\<XmlQualifiedName、オブジェクト\>\>** です。  
   
      WCF アダプターは、このペアを使用して、値をメッセージ コンテキストに書き込みます。  
   

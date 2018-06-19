@@ -1,11 +1,11 @@
 ---
-title: "発行の WCF サービスを分離 WCF 受信アダプター |Microsoft ドキュメント"
-ms.custom: 
+title: 発行の WCF サービスを分離 WCF 受信アダプター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive adapters, WCF services
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF services, receive adapters
 - WCF services, publishing
 ms.assetid: 62ebf373-075c-4c98-8130-ac2cf06e4a70
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271634"
 ---
 # <a name="publishing-wcf-services-with-the-isolated-wcf-receive-adapters"></a>分離 WCF 受信アダプタでの WCF サービスの公開
 BizTalk Windows Communication Foundation (WCF) アダプターを許可する[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の WCF ベースのアプリケーションと通信します。 BizTalk WCF アダプターには 7 つの物理アダプターが含まれています。 各アダプター (WCF-CustomIsolated アダプターを除く) は、送信アダプターと受信アダプターで構成されています。  
@@ -57,7 +58,7 @@ BizTalk Windows Communication Foundation (WCF) アダプターを許可する[!I
 |ファイル|フォルダー|Description|  
 |----------|------------|-----------------|  
 |WCF サービス (.svc ファイル)|\|分離 WCF アダプタを使用して公開される WCF 受信場所の WCF サービス。|  
-|Web.config|\|ASP.NET 構成ファイル。このファイルには、ASP.NET Web アプリケーションの動作、公開済み WCF サービスの動作、メタデータ エンドポイント、および BizTalk 固有の設定についての情報が含まれます。 BizTalk WCF 公開ウィザードによって生成される既定のメタデータ バインドはセキュリティで保護されていないため、メタデータへの匿名アクセスが可能です。 サービス メタデータには、サービスの詳細な説明が含まれており、意図的に、または意図せずに機密情報が含まれる可能性があります。 サービス メタデータを不正アクセスから保護するには、メタデータ エンドポイントでセキュリティ保護されたバインドを使用するように Web.config を変更します。 **注:**メタデータ エンドポイントのバインドとサービス エンドポイントのバインドのすべての組み合わせが無効です。 メタデータ エンドポイントのバインド構成がサービス エンドポイントのバインド構成と一致する必要がある場合もあります。 たとえば、サービス エンドポイントのセキュリティ モードで HTTPS を使用している場合は、HTTP トランスポートを必要とするセキュリティ モードでメタデータ エンドポイントを構成することはできません。|  
+|Web.config|\|ASP.NET 構成ファイル。このファイルには、ASP.NET Web アプリケーションの動作、公開済み WCF サービスの動作、メタデータ エンドポイント、および BizTalk 固有の設定についての情報が含まれます。 BizTalk WCF 公開ウィザードによって生成される既定のメタデータ バインドはセキュリティで保護されていないため、メタデータへの匿名アクセスが可能です。 サービス メタデータには、サービスの詳細な説明が含まれており、意図的に、または意図せずに機密情報が含まれる可能性があります。 サービス メタデータを不正アクセスから保護するには、メタデータ エンドポイントでセキュリティ保護されたバインドを使用するように Web.config を変更します。 **注:** メタデータ エンドポイントのバインドとサービス エンドポイントのバインドのすべての組み合わせが無効です。 メタデータ エンドポイントのバインド構成がサービス エンドポイントのバインド構成と一致する必要がある場合もあります。 たとえば、サービス エンドポイントのセキュリティ モードで HTTPS を使用している場合は、HTTP トランスポートを必要とするセキュリティ モードでメタデータ エンドポイントを構成することはできません。|  
 |ServiceDescription.xml|\|メッセージの種類を含む、公開済み WCF サービスのコントラクトが記述されている XML ファイル。|  
 |BizTalk スキーマ (.xsd ファイル)|\App_Data|分離 WCF アダプタを使用して公開される XML インスタンス メッセージの構造を定義する XML スキーマ。|  
 |SchemaIndex.xml|\App_Data|公開済み WCF サービスで使用する XML スキーマ ファイルを示す XML ファイル。|  

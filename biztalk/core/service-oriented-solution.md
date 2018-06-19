@@ -1,11 +1,11 @@
 ---
-title: "サービス指向ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: サービス指向ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service solutions
@@ -30,7 +30,7 @@ helpviewer_keywords:
 - business solutions, Web services
 - business solutions, service solutions
 ms.assetid: ce7cdf8d-ecaf-4a6a-9536-a9cf5d7f874f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -39,6 +39,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271370"
 ---
 # <a name="service-oriented-solution"></a>サービス指向ソリューション
 サービス指向ソリューションでは、Web サービスとして利用可能なサービスとして、レガシ アプリケーションにアクセスできる形式で、BizTalk アプリケーションを提供する方法を示しています。 このソリューションは、Web サービスとしてバックエンド プロセスと通信する方法だけでなく、複数のバックエンド システムからの応答を集計する方法も示します。  

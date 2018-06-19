@@ -1,14 +1,14 @@
 ---
-title: "SendPort (SendPortCollection ノード) |Microsoft ドキュメント"
-ms.custom: 
+title: SendPort (SendPortCollection ノード) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5cf7a6f9-9240-48b9-b196-8838afd4f41e
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272242"
 ---
 # <a name="sendport-sendportcollection-node"></a>SendPort (SendPortCollection ノード)
 バインド ファイルの SendPort ノードには、バインド ファイルと共にエクスポートされる送信ポートに関する特定の情報が含まれます。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
 |名前|属性|xs:string|送信ポートの名前を指定します。|任意|既定値: 空|  
 |IsStatic|属性|xs:boolean|送信ポートが静的か動的かを指定します。|必須|既定値: なし|  
-|IsTwoWay|属性|xs:boolean|送信ポートが一方向か送信請求 - 応答 (双方向) かを指定します。|必須|既定値: なし<br /><br /> 使用できる値は、 **MSBTS_SendPort.IsTwoWay プロパティ (WMI)**です。|  
+|IsTwoWay|属性|xs:boolean|送信ポートが一方向か送信請求 - 応答 (双方向) かを指定します。|必須|既定値: なし<br /><br /> 使用できる値は、 **MSBTS_SendPort.IsTwoWay プロパティ (WMI)** です。|  
 |BindingOption|属性|xs:int|オーケストレーション ポートのバインドの種類を指定します。|必須|既定値: なし<br /><br /> 使用できる値は、 **Microsoft.BizTalk.ExplorerOM.BindingType**列挙します。|  
 |Description|要素|xs:string|送信ポートの説明を指定します。|必須|既定値: 空|  
 |[TransmitPipeline (SendPort ノード)](../core/transmitpipeline-sendport-node.md)|レコード|PipelineRef (ComplexType)|送信ポートに関連付けられている送信パイプラインを指定します。|任意|既定値: なし|  

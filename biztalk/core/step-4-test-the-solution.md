@@ -1,14 +1,14 @@
 ---
-title: "手順 4: ソリューションのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: ソリューションのテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 60c39521-eee2-49f7-a9f9-2dfb9ab468e9
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277410"
 ---
 # <a name="step-4-test-the-solution"></a>手順 4: ソリューションをテストします。
 このトピックでは、FILE 受信ポートに関連付けられているフォルダーにダミー要求メッセージをドロップして、ソリューションをテストします。 呼び出す場合にのみダミー要求メッセージをドロップするで説明したよう、 **Wcf-webhttp**ポートを送信します。 次のようなダミー要求メッセージを作成できます。  

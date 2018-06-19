@@ -1,14 +1,14 @@
 ---
-title: "BAM API サンプル |Microsoft ドキュメント"
-ms.custom: 
+title: BAM API サンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 32a925f2-c7f4-4111-9c59-8865f15c6a89
-caps.latest.revision: 
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710453"
 ---
 # <a name="bam-api-biztalk-server-sample"></a>BAM API (BizTalk Server サンプル)
 BAM API サンプルは、BAM API への呼び出しを監視できる重要な情報を保存するアプリケーションに統合する方法を示しています。  
@@ -92,7 +93,7 @@ BAM API サンプルは、BAM API への呼び出しを監視できる重要な�
  サンプルには、Visual Studio ソリューションだけでなく、アクティビティを定義する Microsoft Excel ファイルも含まれます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- このサンプルを見つけることができます*\<サンプル パス\>*\BAM\BamApiSample です。  
+ このサンプルを見つけることができます*\<サンプル パス\>* \BAM\BamApiSample です。  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -116,16 +117,16 @@ BAM API サンプルは、BAM API への呼び出しを監視できる重要な�
   
 ## <a name="run-the-bam-api-sample"></a>BAM API サンプルを実行します。  
   
-1.  管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\ BamApiSample\setup.bat です。  
+1.  管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>* \BAM\ BamApiSample\setup.bat です。  
   
-2.  管理者は、Visual Studio を起動し、開く、 *\<サンプル パス\>*\BAM\ BamApiSample\BamApiSample.sln ソリューションです。 
+2.  管理者は、Visual Studio を起動し、開く、 *\<サンプル パス\>* \BAM\ BamApiSample\BamApiSample.sln ソリューションです。 
   
     > [!IMPORTANT]
     >  BamApiSample.cs ファイルの `//#define Interceptor` の行をコメント化します。この行から "//" を削除しないでください。 BAM API サンプルでは、`#if Interceptor` プリプロセッサ ディレクティブ内にないコードのみを使用します。  
   
 3.  ソリューションをビルドします。  
   
-4.  実行*\<パスのサンプル\>*\BAM\BamApiSample\bin\debug\BamApiSample.exe です。  
+4.  実行*\<パスのサンプル\>* \BAM\BamApiSample\bin\debug\BamApiSample.exe です。  
   
      出力は、次のようになります。  
   

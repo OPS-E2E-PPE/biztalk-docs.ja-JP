@@ -1,14 +1,14 @@
 ---
-title: "保留メッセージの 16 進数の内容を表示することによってメッセージの検証エラーのトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: 保留メッセージの 16 進数の内容を表示することによってメッセージの検証エラーのトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5cf14cd9-2d4b-43a3-9738-52bfd879e1e4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279570"
 ---
 # <a name="troubleshooting-message-validation-failures-by-viewing-the-hexadecimal-contents-of-suspended-messages"></a>保留メッセージの 16 進数コンテンツの確認によるメッセージ検証エラーのトラブルシューティング
 メッセージが検証エラーにより保留された場合は、メッセージ部分を 16 進表現にして確認すると検証エラーの原因の特定に役立つことがあります。 このトピックでは、保留メッセージのメッセージ部分を 16 進表現で表示する手順について説明します。  

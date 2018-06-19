@@ -1,14 +1,14 @@
 ---
-title: "メッセージ ボックスの待機時間に関する問題のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ ボックスの待機時間に関する問題のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9eb5789-80bd-40d4-8c27-7ae117fd9232
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279874"
 ---
 # <a name="troubleshooting-messagebox-latency-issues"></a>メッセージ ボックスの遅延に関する問題のトラブルシューティング
 理想の世界では、メッセージはいずれもメッセージ ボックス データベースに公開された時点で速やかに処理および配信され、メッセージ ボックス データベースのサイズが過剰に増加することはないかもしれません。 メッセージ ボックス内に参照されなくなったメッセージがあれば、メッセージ ボックス データベース テーブルを定期的にクリーンアップする SQL エージェント ジョブによってすぐに削除されます。  

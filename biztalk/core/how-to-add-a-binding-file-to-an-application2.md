@@ -18,6 +18,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "29710423"
 ---
 # <a name="add-a-binding-file-to-an-application"></a>バインド ファイルをアプリケーションに追加します。
 

@@ -1,11 +1,11 @@
 ---
-title: "メッセージ変数を使用して、追跡データベースのサイズを |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ変数を使用して、追跡データベースのサイズを |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message variables [Tracking database], CMsgs
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - message variables [Tracking database], MsgNum
 - Tracking database, messages
 ms.assetid: 2d31ae25-3d16-4002-b5a5-dca25e764ecd
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287842"
 ---
 # <a name="using-message-variables-to-size-the-tracking-database"></a>メッセージ変数を使用して追跡データベースのサイズを求める方法
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、BizTalk の追跡 (BizTalkDTADb) データベースのサイズが一定期間経過後にどのくらいのサイズになるかを、各種の変数を使って求めることができます。 これらの変数を次に示します。  

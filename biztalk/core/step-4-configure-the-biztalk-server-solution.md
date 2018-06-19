@@ -1,14 +1,14 @@
 ---
-title: "手順 4: BizTalk Server ソリューションの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: BizTalk Server ソリューションの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d60e6a82-51af-41e5-a755-5f337492ba2f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280186"
 ---
 # <a name="step-4-configure-the-biztalk-server-solution"></a>手順 4: BizTalk Server ソリューションを構成します。
 前の手順では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを作成、展開して Salesforce の通知を [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で受信し、詳細を内部設置型の SQL Server データベースに挿入できるようになりました。 この手順では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールでアプリケーションを構成します。 アプリケーションの構成は、主にオーケストレーションで作成した論理ポートに対応する物理ポートの作成です。 また、物理ポートの論理ポートへのバインドも関係します。 以下の手順に従って [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを構成します。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
     |名前|入力`ReceiveOppNotification`です。|  
     |型|選択**Wcf-basichttprelay**|  
     |受信ハンドラー|選択**BizTalkServerApplication**|  
-    |[受信パイプライン]|選択**[xmlreceive]**|  
+    |[受信パイプライン]|選択 **[xmlreceive]**|  
     |送信パイプライン|選択**PassThruTransmit**|  
   
      をクリックして**構成**に対して、ポートの種類。  
@@ -97,13 +98,13 @@ ms.lasthandoff: 09/20/2017
             https://na15.salesforce.com/services/data/v24.0/query?q=<query_string>  
             ```  
   
-             一部として、Salesforce REST エンドポイントが既にあること、**アドレス (URI)**フィールドです。 したがっての一部として**HTTP メソッドと URL マッピング**GET メソッドを使用し、追加することを指定プロパティ、 **{VAR}**変数として。  
+             一部として、Salesforce REST エンドポイントが既にあること、**アドレス (URI)** フィールドです。 したがっての一部として**HTTP メソッドと URL マッピング**GET メソッドを使用し、追加することを指定プロパティ、 **{VAR}** 変数として。  
   
-        -   **変数マッピング**ボックスで、クリックして**編集**です。 このボックスで指定する方法の値、 **{VAR}**実行時に変数を推測します。  
+        -   **変数マッピング**ボックスで、クリックして**編集**です。 このボックスで指定する方法の値、 **{VAR}** 実行時に変数を推測します。  
   
              [手順 3b.: Wcf-webhttp アダプターを使用して Salesforce から営業案件の詳細を取得](../core/step-3b-retrieve-opportunities-from-salesforce-using-the-wcf-webhttp-adapter.md)、結果としてクエリのプロパティを昇格したこと、 **PropertySchema.xsd**です。 使用して、**クエリ**URL の {VAR} 変数にその要素をマップすることによって、クエリ文字列を渡すには、そのスキーマ内の要素。  
   
-             変数のマッピング ダイアログ ボックスで、**変数**列は、前に指定した、たとえば、変数の名前を一覧表示**VAR**です。 **プロパティ名**列、変数に渡されるクエリ文字列のある、昇格させたプロパティの名前を指定します。 このチュートリアルでは、そのプロパティの名前は**クエリ**です。 最後に、**プロパティ Namespace**、名前空間を指定、 **PropertySchema.xsd**、これは`https://BtsSalesforceIntegration.PropertySchema`します。 **[OK]**をクリックします。  
+             変数のマッピング ダイアログ ボックスで、**変数**列は、前に指定した、たとえば、変数の名前を一覧表示**VAR**です。 **プロパティ名**列、変数に渡されるクエリ文字列のある、昇格させたプロパティの名前を指定します。 このチュートリアルでは、そのプロパティの名前は**クエリ**です。 最後に、**プロパティ Namespace**、名前空間を指定、 **PropertySchema.xsd**、これは`https://BtsSalesforceIntegration.PropertySchema`します。 **[OK]** をクリックします。  
   
              ![WCF &#45; の [全般] タブWebHttp アダプター](../core/media/bts-sf-webhttp-general.jpg "BTS_SF_WebHttp_General")  
   
@@ -142,7 +143,7 @@ ms.lasthandoff: 09/20/2017
     |名前|入力`SendToSQL`です。|  
     |型|選択**WCF-SQL**|  
     |[送信ハンドラー]|選択**BizTalkServerApplication**|  
-    |送信パイプライン|選択**[xmltransmit]**|  
+    |送信パイプライン|選択 **[xmltransmit]**|  
   
      [送信ポートのプロパティ] ダイアログ ボックスで、をクリックして**構成**に対して、ポートの種類。  
   
@@ -172,7 +173,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  論理送信ポートにマップする**SendToSQL**を物理送信ポート、 **SendToSQL**です。  
   
-     **[OK]**をクリックします。  
+     **[OK]** をクリックします。  
   
 3.  右クリックし、 **SalesforceIntegration**アプリケーションをクリックして**開始**です。 起動、 **NotificationServiceClient**オーケストレーション、受信場所を有効にし、送信ポートを開始します。  
   

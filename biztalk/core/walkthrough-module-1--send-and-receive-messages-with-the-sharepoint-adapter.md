@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル: モジュール 1 - 送信および受信メッセージを Windows SharePoint Services アダプター |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: モジュール 1 - 送信および受信メッセージを Windows SharePoint Services アダプター |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Windows SharePoint Services, creating sites
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - Windows SharePoint Services
 - Windows SharePoint Services adapter tutorials, sending messages
 ms.assetid: 6494aef5-bb1d-4a41-8186-1d49625a1013
-caps.latest.revision: "41"
+caps.latest.revision: 41
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010507"
 ---
 # <a name="walkthrough-module-1---sending-and-receiving-messages-with-the-windows-sharepoint-services-adapter"></a>チュートリアル: モジュール 1 - Windows SharePoint Services アダプターでメッセージを送受信します。
 このチュートリアルでは、Windows SharePoint Services アダプターとコンテンツ ベースのルーティング (CBR) を使用してメッセージを送受信できるように Windows SharePoint Services と [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成する方法について説明します。 コンテンツ ベースのルーティングを使用すると、特定のポートに正確にバインドされたメッセージに対するメッセージ サブスクリプションが必要ではなくなります。 また、エンベロープのプロパティや受信ポートの構成プロパティに基づいてメッセージをルーティングするユーザーにとって、柔軟性も向上します。 Windows SharePoint Services アダプターの概要については、次を参照してください。 [Windows SharePoint Services アダプターは何ですか?](../core/what-is-the-windows-sharepoint-services-adapter.md)です。  
@@ -52,11 +53,11 @@ ms.lasthandoff: 12/01/2017
   
 4.  **Web サイトのアドレス**セクションで、 **URL 名**フィールドに「`WSSAdapterWalkthrough`です。  
   
-5.  **サイト コレクションの所有者**セクションで、**ユーザー名 フィールド、**ユーザー名を入力します。 このユーザーが Web サイトの所有者になります。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の特別なアクセス許可は必要ありません。  
+5.  **サイト コレクションの所有者**セクションで、**ユーザー名 フィールド、** ユーザー名を入力します。 このユーザーが Web サイトの所有者になります。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の特別なアクセス許可は必要ありません。  
   
 6.  **サイト コレクションの所有者**セクションで、**電子メール**フィールドに、電子メール アドレスを入力します。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
 8.  **最上位サイトが正常に作成された** ページで、先ほど作成した新しいトップレベル Web サイト をクリックします。 たとえば、 `http://<server_name>/sites/WSSAdapterWalkthrough`のようにします。  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  **ドキュメント テンプレート**セクションで、**ドキュメント テンプレート**ドロップダウン リストで、`None`です。  
   
-6.  **[作成]**をクリックします。 ドキュメント ライブラリが作成され、空のライブラリにリダイレクトされます。  
+6.  **[作成]** をクリックします。 ドキュメント ライブラリが作成され、空のライブラリにリダイレクトされます。  
   
 #### <a name="create-a-destination-document-library"></a>"アップロード先" のドキュメント ライブラリの作成  
   
@@ -88,7 +89,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  **ドキュメント テンプレート**セクションで、**ドキュメント テンプレート**ドロップダウン リストで、`None`です。  
   
-6.  **[作成]**をクリックします。 ドキュメント ライブラリが作成され、空のライブラリにリダイレクトされます。  
+6.  **[作成]** をクリックします。 ドキュメント ライブラリが作成され、空のライブラリにリダイレクトされます。  
   
 #### <a name="create-an-archive-document-library"></a>"アーカイブ" ドキュメント ライブラリの作成  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  **ドキュメント テンプレート**セクションで、**ドキュメント テンプレート**ドロップダウン リストで、`None`です。  
   
-6.  **[作成]**をクリックします。 ドキュメント ライブラリが作成され、空のライブラリにリダイレクトされます。  
+6.  **[作成]** をクリックします。 ドキュメント ライブラリが作成され、空のライブラリにリダイレクトされます。  
   
 7.  `WSSAdapterWalkthrough` Web サイトを閉じます。  
   
@@ -138,13 +139,13 @@ ms.lasthandoff: 12/01/2017
   
 3.  **管理**をクリックして**ユーザーを管理する**です。  
   
-4.  **[ユーザーの追加]**をクリックします。  
+4.  **[ユーザーの追加]** をクリックします。  
   
 5.  **手順 1: ユーザーの選択**、アカウントの名前を入力する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]でホスト インスタンスが実行されています。  
   
 6.  **手順 2: サイト グループの選択**、select、**リーダー**と**共同作成者**のチェック ボックスです。  
   
-7.  **[次へ]**をクリックします。  
+7.  **[次へ]** をクリックします。  
   
 8.  クリア、**が追加されたので、これらのユーザーを通知する次のメールを送信**チェック ボックスをクリックして**完了**です。  
   
@@ -161,7 +162,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  **受信ポートのプロパティ**ダイアログ ボックスで、**全般**、型`FromSource`で、**名前**フィールドです。  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 #### <a name="create-the-receive-location"></a>受信場所を作成します。  
   
@@ -185,13 +186,13 @@ ms.lasthandoff: 12/01/2017
   
 10. 型`Source`の**ソース ドキュメント ライブラリ**プロパティです。  
   
-11. **[OK]**をクリックします。  
+11. **[OK]** をクリックします。  
   
 12. **受信場所のプロパティ**ダイアログ ボックスで、`BizTalkServerApplication`として、**受信ハンドラー**です。  
   
 13. **受信パイプライン**ドロップダウン リストで、`PassThruReceive`です。  
   
-14. **[OK]**をクリックします。  
+14. **[OK]** をクリックします。  
   
 #### <a name="create-the-send-port"></a>送信ポートを作成します。  
   
@@ -215,7 +216,7 @@ ms.lasthandoff: 12/01/2017
   
 10. 設定、 **Microsoft Office 統合**プロパティを`No`です。  
   
-11. **[OK]**をクリックします。  
+11. **[OK]** をクリックします。  
   
 12. **送信ポートのプロパティ ダイアログ ボックス**で、**送信ハンドラー**ドロップダウン リストで、`BizTalkServerApplication`です。  
   
@@ -229,7 +230,7 @@ ms.lasthandoff: 12/01/2017
   
 17. 型`Source`で、**値**フィールドです。  
   
-18. **[OK]**をクリックします。  
+18. **[OK]** をクリックします。  
   
 ## <a name="enable-and-start-the-receive-location-and-receive-port"></a>受信場所と受信ポートの有効化と開始  
  ここでは、受信場所を有効にし、受信ポートを開始します。 Windows Sharepoint Services アダプターが指定された送信ポートおよび受信場所を使用してメッセージを送受信できるようにするには、次の手順を完了する必要があります。  

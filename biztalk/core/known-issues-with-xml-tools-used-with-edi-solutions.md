@@ -1,14 +1,14 @@
 ---
-title: "EDI ソリューションで使用される XML ツールに関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI ソリューションで使用される XML ツールに関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03d9b361-be98-494c-b32d-03892672fef1
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008723"
 ---
 # <a name="known-issues-with-xml-tools-used-with-edi-solutions"></a>EDI ソリューションで使用される XML ツールに関する既知の問題
 このトピックでは、BizTalk Server の XML ツールに関する既知の問題について説明します。  

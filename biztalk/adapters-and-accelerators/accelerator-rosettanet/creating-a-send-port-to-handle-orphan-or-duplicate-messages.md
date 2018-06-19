@@ -1,11 +1,11 @@
 ---
-title: "孤立したメッセージまたは重複メッセージを処理する送信ポートの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 孤立したメッセージまたは重複メッセージを処理する送信ポートの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, duplicate messages
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - send ports, orphaned messages
 - messages, send ports
 ms.assetid: 61d51206-13e3-4d32-a184-866248db9b45
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006955"
 ---
 # <a name="creating-a-send-port-to-handle-orphan-or-duplicate-messages"></a>孤立したメッセージまたは重複メッセージを処理する送信ポートの作成
 ここでは、孤立したメッセージや重複メッセージの削除に使用できる送信ポートの設定方法について説明します。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 12/01/2017
   
 10. 右側のペインで 2 番目の行の**プロパティ** **Microsoft.Solutions.BTARN.GlobalSchemas.IsOrphanMessage**ドロップダウン リストからのままにして、**演算子**として **==** 、し、入力**True**の**値**です。  
   
-11. **[OK]**をクリックします。  
+11. **[OK]** をクリックします。  
   
 12. BizTalk エクスプ ローラーで、送信ポートの名前を右クリックし、をクリックして**Enlist**です。 送信ポートが参加して後、送信ポートを右クリックし、をクリックして**開始**です。  
   

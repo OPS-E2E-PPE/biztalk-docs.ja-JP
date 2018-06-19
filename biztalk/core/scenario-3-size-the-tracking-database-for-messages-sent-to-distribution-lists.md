@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271106"
 ---
 # <a name="scenario-3-sizing-the-tracking-database--for-messages-sent-out-to-distribution-lists"></a>シナリオ 3: 同報リストに送信されるメッセージの追跡データベースのサイズ変更
 次の図では、オーケストレーションによって変更されたメッセージが、同報リストを通じて複数の送信ポートに送られています。  

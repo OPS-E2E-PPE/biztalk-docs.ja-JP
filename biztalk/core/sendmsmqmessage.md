@@ -1,17 +1,17 @@
 ---
-title: "SendMSMQMessage |Microsoft ドキュメント"
-ms.custom: 
+title: SendMSMQMessage |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, examples
 - examples, MSMQ adapters
 ms.assetid: 398bc396-0c66-4d55-886a-0d9bdab6476f
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975512"
 ---
 # <a name="sendmsmqmessage"></a>SendMSMQMessage
 SendMSMQMessage サンプルは、.NET ベースのアプリケーションから MSMQ ポートにメッセージを送信する方法を示します。 Microsoft を構成する方法についても用意されています。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] MSMQ の受信場所を使用します。  
@@ -47,7 +48,7 @@ SendMSMQMessage サンプルは、.NET ベースのアプリケーションか�
   
 1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して、ソリューション ファイル SendMSMQMessage.sln を開きます。  
   
-2.  **[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。  
+2.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
 ## <a name="configuring-biztalk-server-and-creating-the-msmq-queue"></a>BizTalk Server の構成と MSMQ キューの作成  
  次の手順を使用して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成し、サンプルを実行するための MSMQ キューを作成します。  
@@ -64,7 +65,7 @@ SendMSMQMessage サンプルは、.NET ベースのアプリケーションか�
   
 5.  **キュー名**、入力`test`です。 いることを確認、**トランザクション** チェック ボックスをオンします。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 #### <a name="to-create-the-msmq-queue-in-windows-7-or-windows-vista-sp2"></a>Windows 7 または Windows Vista SP2 で MSMQ キューを作成するには  
   
@@ -73,13 +74,13 @@ SendMSMQMessage サンプルは、.NET ベースのアプリケーションか�
 2.  展開**サービスとアプリケーション**の順に展開し、**メッセージ キュー**ノード。  
   
     > [!NOTE]
-    >  場合**メッセージ キュー**がコンピューターにインストールされていないに移動して**コントロール パネル] > プログラム > プログラムと機能**、し、[ **Windows の機能のオンまたはオフ**です。 下のすべての機能を確認して**Microsoft メッセージ キュー (MSMQ) Server**、順にクリック**[ok]**です。  
+    >  場合**メッセージ キュー**がコンピューターにインストールされていないに移動して**コントロール パネル] > プログラム > プログラムと機能**、し、[ **Windows の機能のオンまたはオフ**です。 下のすべての機能を確認して**Microsoft メッセージ キュー (MSMQ) Server**、順にクリック **[ok]** です。  
   
 3.  右クリックし、**専用キュー**ノード、をクリックして**新規**、順にクリック**プライベート キュー**です。  
   
 4.  **キュー名**、入力**テスト**です。 いることを確認、**トランザクション** チェック ボックスをオンします。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 #### <a name="to-configure-biztalk-server"></a>BizTalk Server を構成するには  
   
@@ -99,7 +100,7 @@ SendMSMQMessage サンプルは、.NET ベースのアプリケーションか�
   
 8.  **受信場所のプロパティ**ダイアログ ボックスで、トランスポートの種類に対して、select **MSMQ**です。  
   
-9. をクリックして**構成**を開くには、 **MSMQ トランスポートのプロパティ** ダイアログ ボックス。 設定**キュー**に`localhost\private$\test`設定、**トランザクション**に`True`、順にクリック**[ok]**です。  
+9. をクリックして**構成**を開くには、 **MSMQ トランスポートのプロパティ** ダイアログ ボックス。 設定**キュー**に`localhost\private$\test`設定、**トランザクション**に`True`、順にクリック **[ok]** です。  
   
 10. アプリケーションを展開し、選択**送信ポート**を選択**新規****静的な一方向送信ポート**です。  
   

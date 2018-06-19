@@ -1,11 +1,11 @@
 ---
-title: "BTARN での SQL 処理 |Microsoft ドキュメント"
-ms.custom: 
+title: BTARN での SQL 処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - line-of-business applications (LOBs)
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - messages, message flow
 - BTARN, SQL processing
 ms.assetid: cfaf804f-3803-438e-a22e-50f487fe21c3
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005059"
 ---
 # <a name="sql-processing-in-btarn"></a>BTARN での SQL 処理
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]基幹業務 (LOB) アプリケーションからのメッセージをルーティングする、SQL アダプターを使用します。 LOB アプリケーションへのメッセージのルーティングには、SQL 送信ポートが使用されます。  

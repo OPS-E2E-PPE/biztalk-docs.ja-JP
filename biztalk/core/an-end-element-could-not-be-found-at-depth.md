@@ -1,14 +1,14 @@
 ---
-title: "深いレベルで、終了要素が見つかりませんでした |Microsoft ドキュメント"
-ms.custom: 
+title: 深いレベルで、終了要素が見つかりませんでした |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a1edb60a-122a-4fe9-8d73-96521fe7326b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22229914"
 ---
 # <a name="an-end-element-could-not-be-found-at-depth"></a>深さの終了要素が見つかりませんでした
 ## <a name="details"></a>詳細  

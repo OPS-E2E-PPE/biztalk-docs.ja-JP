@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/mqseries-adapter-deployment-options
-redirect_document_id: 
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 2aa74be2d86bcb8f32661fdcf06727eb6391861d
 ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710709"
 ---
 # <a name="using-mqseries-adapter-with-an-earlier-version-of-the-adapter"></a>MQSeries アダプターを使用して、アダプターの以前のバージョン
 MQSeries アダプターの異なるバージョンの BizTalk Server のすべてで、作業できる、同じリモートの WebSphere MQ Server Windows です。 このことが可能なのは、MQSeries アダプタで使用されている次のバージョンの COM+ アプリケーションを、同一の WebSphere MQSeries コンピュータ上に共存させることができるためです。  
@@ -58,7 +59,7 @@ MQSeries アダプターの異なるバージョンの BizTalk Server のすべ�
   
     -   をクリックして **次** 上、 **にユーザー ロールを追加**  ダイアログ ボックス。  
   
-    -   **[完了]**をクリックします。  
+    -   **[完了]** をクリックします。  
   
 5.  次の手順に従い、MQSAgent.dll コンポーネントを MQSAgent2 COM+ アプリケーションに追加します。  
   
@@ -68,7 +69,7 @@ MQSeries アダプターの異なるバージョンの BizTalk Server のすべ�
   
     -   クリックして **新しいコンポーネントのインストール**, を MQSAgent.dll ファイルを参照してクリックして **開く**します。  
   
-    -   **[次へ]**をクリックし、 **[完了]**をクリックします。  
+    -   **[次へ]** をクリックし、 **[完了]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [MQSeries アダプターの使用](../core/using-the-mqseries-adapter.md)

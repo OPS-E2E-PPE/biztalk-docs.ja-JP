@@ -1,14 +1,14 @@
 ---
-title: "DBNETLIB 例外の回避 |Microsoft ドキュメント"
-ms.custom: 
+title: DBNETLIB 例外の回避 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5fbee0cf-d249-4d98-8d16-168ded32f9f1
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231914"
 ---
 # <a name="avoiding-dbnetlib-exceptions"></a>DBNETLIB 例外の回避
 BizTalk Server ランタイムがメッセージ ボックス データベースまたは管理データベースのいずれかと通信できない場合、DBNetLib (データベース ネットワーク ライブラリ) エラーが発生します。 このエラーが発生すると、例外をキャッチする BizTalk Server ランタイム インスタンスがシャットダウンし、データベースが使用可能かどうかの確認が 1 分ごとに反復されます。  

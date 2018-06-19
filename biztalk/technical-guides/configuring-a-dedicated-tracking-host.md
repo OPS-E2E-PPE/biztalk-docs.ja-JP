@@ -1,14 +1,14 @@
 ---
-title: "専用の追跡ホストの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 専用の追跡ホストの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f997bcc2-08fd-4e9a-ba44-542ec8460d6d
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010843"
 ---
 # <a name="configuring-a-dedicated-tracking-host"></a>専用の追跡ホストの構成
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]最適化されているため、スループット、メインのオーケストレーションとメッセージング エンジン実際には移動しないでイベントやメッセージ、BizTalk 追跡 (DTA) またはビジネス アクティビティ監視 (BAM) データベースに直接ので、これは、プライマリからこれらのエンジンを迂回させますビジネス プロセスを実行中のジョブです。 代わりに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]イベントとメッセージがメッセージ ボックス データベースになり、BizTalk 追跡データベースまたは BAM データベースへの移行を必須としてマークを付けます。 バック グラウンド プロセス (追跡ホスト) してから、BizTalk 追跡データベースに SQL Server エージェント ジョブ コピー追跡したメッセージの中に、BizTalk の追跡と BAM データベースに移動するイベント。  

@@ -1,14 +1,14 @@
 ---
-title: "MSDTC の問題のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: MSDTC の問題のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f39cde52-da8f-4cc1-bdc5-e4b828891a79
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280506"
 ---
 # <a name="troubleshooting-problems-with-msdtc"></a>MSDTC を使用した問題のトラブルシューティング
 多くの BizTalk Server ランタイム操作では、トランザクション上でランタイム操作の一貫性を維持するために、Microsoft 分散トランザクション コーディネーター (MSDTC) のサポートが必要です。 MSDTC のトランザクション サポートを使用できないと、それに関連付けられた BizTalk Server ランタイム操作を続行できません。 MSDTC トランザクション サポートが正しく構成されていない場合に一般的に影響を受ける BizTalk のコンポーネントには、シングル サインオン サービス、BizTalk ホスト インスタンス、および BizTalk Server に接続されているすべての SQL Server のインスタンスが含まれますが、これに限定されません。 このセクションには、MSDTC に関連するエラーと、MSDTC の問題を診断および解決するために従う手順について説明する情報が含まれています。  
@@ -195,7 +196,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  をクリックして**ユーザー権利の割り当て**です。  
   
-3.  ダブルクリックして**、ネットワーク経由でコンピューターのアクセスを拒否**コンピューター名またはこのユーザー権限から削除するグループを選択し をクリックします。  
+3.  ダブルクリックして **、ネットワーク経由でコンピューターのアクセスを拒否**コンピューター名またはこのユーザー権限から削除するグループを選択し をクリックします。  
   
 4.  をクリックして**削除** をクリックし、 **OK**です。  
   
@@ -234,10 +235,10 @@ ms.lasthandoff: 09/20/2017
   
 4.  をクリックして**プログラムの追加**を表示する、**プログラムの追加** ダイアログ ボックス。  
   
-5.  をクリックして**参照**に移動して*%system32*\msdtc.exe です。  
+5.  をクリックして**参照**に移動して *%system32*\msdtc.exe です。  
   
     > [!NOTE]
-    >  コマンド プロンプト ウィンドウで「を起動して**echo system32%**とキーを押します**Enter**このコンピューター上の \System32 ディレクトリの場所を決定します。  
+    >  コマンド プロンプト ウィンドウで「を起動して**echo system32%** とキーを押します**Enter**このコンピューター上の \System32 ディレクトリの場所を決定します。  
   
 6.  クリックして選択**msdtc.exe**  をクリック**開く**です。  
   

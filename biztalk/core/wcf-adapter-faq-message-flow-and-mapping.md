@@ -1,14 +1,14 @@
 ---
-title: "WCF アダプター FAQ: メッセージのフローとマッピング |Microsoft ドキュメント"
-ms.custom: 
+title: 'WCF アダプター FAQ: メッセージのフローとマッピング |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 907e5c6a-a095-4b3a-9362-506832b6bc8c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976032"
 ---
 # <a name="wcf-adapter-faq-message-flow-and-mapping"></a>WCF アダプター FAQ: メッセージのフローとマッピング
 ## <a name="what-is-the-message-flow-within-the-wcf-and-biztalk-systems"></a>WCF と BizTalk システム内のメッセージ フローとはどのようなものですか。  
@@ -86,7 +87,7 @@ ms.lasthandoff: 11/28/2017
   
  WCF アダプターで SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させるには、WCF メッセージで次のメッセージ プロパティを指定する必要があります。  
   
--   BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格するには、WCF アダプタを探しているキーのペアは、 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**および値**リスト <KeyValuePair\<XmlQualifiedName、オブジェクト\>>**です。 このペアを使用して、WCF アダプタを実行し、名前空間、名前からの値、 **XmlQualifiedName**オブジェクトおよびヘッダーの値を昇格させるために使用します。  
+-   BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格するには、WCF アダプタを探しているキーのペアは、 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**および値**リスト <KeyValuePair\<XmlQualifiedName、オブジェクト\>>** です。 このペアを使用して、WCF アダプタを実行し、名前空間、名前からの値、 **XmlQualifiedName**オブジェクトおよびヘッダーの値を昇格させるために使用します。  
   
 -   キーのペアを探している WCF アダプタになりますが、BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格しません**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**と値**一覧 < KeyValuePair\<XmlQualifiedName、オブジェクト\>>。** WCF アダプターは、このペアを使用して、値をメッセージ コンテキストに書き込みます。  
   

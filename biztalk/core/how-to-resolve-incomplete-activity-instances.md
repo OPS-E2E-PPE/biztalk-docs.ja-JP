@@ -1,15 +1,15 @@
 ---
-title: "不完全なアクティビティ インスタンスを解決するには |Microsoft ドキュメント"
-description: "BAM アクティビティ インスタンスが BizTalk Server で BAMPrimaryImport データベースをバックアップした後アクティブなまま"
-ms.custom: 
+title: 不完全なアクティビティ インスタンスを解決するには |Microsoft ドキュメント
+description: BAM アクティビティ インスタンスが BizTalk Server で BAMPrimaryImport データベースをバックアップした後アクティブなまま
+ms.custom: ''
 ms.date: 01/17/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8adbcb66-58ad-42c5-ba16-7dc07572099e
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 20d33d8b74bf129a8d1a506ac4a1ad960184966d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/18/2018
+ms.locfileid: "27873418"
 ---
 # <a name="resolve-incomplete-bam-activity-instances---biztalk-server"></a>不完全な BAM アクティビティ インスタンスを解決するには、BizTalk Server
 BAM では、不完全なアクティビティ インスタンスのデータを格納特殊な *アクティブなインスタンス* BAMPrimaryImport データベースのテーブルです。  

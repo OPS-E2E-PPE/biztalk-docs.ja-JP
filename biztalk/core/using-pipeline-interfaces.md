@@ -1,14 +1,14 @@
 ---
-title: "パイプライン インターフェイスを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン インターフェイスを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4bb88d0d-23ab-4fdb-bcd2-56050456cf69
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289146"
 ---
 # <a name="using-pipeline-interfaces"></a>パイプライン インターフェイスを使用します。
 パイプライン コンポーネントは、BizTalk メッセージング エンジンとの対話用にあらかじめ定義された一連のインターフェイスを実装する .NET コンポーネントまたは COM コンポーネントです。 実装する必要のあるインターフェイスは、コンポーネントの機能によって異なります。 このトピックでは、これらのインターフェイスとそのメソッドの一部について説明します。  

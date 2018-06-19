@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31008477"
 ---
 # <a name="import-bpel4ws-in-biztalk-server"></a>BizTalk Server での BPEL4WS をインポートします。
 既存の BPEL4WS をインポートすることによってオーケストレーションを作成することができます。  

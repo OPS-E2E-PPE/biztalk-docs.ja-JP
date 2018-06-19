@@ -1,14 +1,14 @@
 ---
-title: "X12 997 受信確認 |Microsoft ドキュメント"
-ms.custom: 
+title: X12 997 受信確認 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62a352fb-635c-4f0e-9844-4b250159333d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290890"
 ---
 # <a name="x12-997-acknowledgment"></a>X12 997 受信確認
 X12 997 機能確認は、受信されたインターチェンジの状態を報告します。 受信したドキュメントの処理中に発生した各エラーが報告されます。 BizTalk EDI 受信パイプラインは、常に 4010 準拠の 997 を生成します。ただし、EDI 受信パイプラインおよび EDI 送信パイプラインは、5010 準拠の 997 も検証できます。  

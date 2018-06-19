@@ -1,18 +1,18 @@
 ---
-title: "メッセージのサブスクリプションの失敗の操作 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージのサブスクリプションの失敗の操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - failed messages, subscriptions
 - failed messages, developing
 - developing, failed message subscriptions
 ms.assetid: 8dee0aa8-53bf-40be-866b-f1b83960dc99
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005611"
 ---
 # <a name="working-with-failed-message-subscriptions"></a>失敗したメッセージのサブスクリプションの操作
 ときに、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]逆アセンブラー プロセス (解析し、検証) メッセージ、そのメッセージのプロパティを昇格させます。 これらの昇格させたプロパティは、A4SWIFT 受信バッチの一部としてメッセージを受信した場合、正しいことと、メッセージの有効性に関する情報と、バッチに関連する情報を提供します。 これらのプロパティの完全な一覧を参照してください。 [A4SWIFT_ * 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。  

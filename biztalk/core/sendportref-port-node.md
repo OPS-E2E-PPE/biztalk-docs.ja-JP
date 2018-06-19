@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269514"
 ---
 # <a name="sendportref-port-node"></a>SendPortRef (Port ノード)
 バインド ファイルの Port ノードの SendPortRef ノードには、サービスによって参照される送信ポートに関する情報が含まれます。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286434"
 ---
 # <a name="types-of-pipelines"></a>パイプラインの種類
 BizTalk プロジェクトで新しいパイプラインを作成する場合、受信パイプラインと送信パイプラインの 2 つの選択肢があります。 このセクションでは、パイプラインの種類の違いと、それぞれの設計時の考慮事項について説明します。  

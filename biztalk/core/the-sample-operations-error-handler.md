@@ -1,17 +1,17 @@
 ---
-title: "サンプル操作エラー ハンドラ |Microsoft ドキュメント"
-ms.custom: 
+title: サンプル操作エラー ハンドラ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Ops adapters, error handler
 - process management solution tutorial, Ops adapters
 ms.assetid: e6c55f01-c004-4340-beaa-d77764ae34c1
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279626"
 ---
 # <a name="the-sample-operations-error-handler"></a>サンプル操作エラー ハンドラ
 サンプル操作エラー ハンドラが 3 つの主要なアセンブリ: **OperationsClient**、 **OperationsHandler**、および**OperationsServer**です。  

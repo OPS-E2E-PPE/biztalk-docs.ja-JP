@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d58bfa4-322b-455f-a062-5bd44d368f57
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26009155"
 ---
 # <a name="using-the-unit-testing-feature-with-pipelines"></a>パイプラインを含む単体テスト機能の使用
 このトピックでは、単体テスト機能を使用して、FlatFileReceive パイプラインの例に、パイプラインの単体テストを追加する方法について説明します。 パイプラインの単体テストは」で説明されている Pipeline.exe ツールに似ています。[パイプライン ツール](../core/pipeline-tools.md)です。 単体テストを実行を有効にすると、 **展開** から、プロジェクトのプロパティ タブ、プロジェクト内のパイプライン クラスを派生 **Microsoft.BizTalk.TestTools.Pipeline.TestableReceivePipeline**します。  このクラスは、Pipeline.exe ツールが公開する機能と同じ機能の一部をモデル化します。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 03/28/2018
   
 8.  **新しいテスト プロジェクト**  ダイアログ ボックスで、プロジェクト名としてそのまま使用 **TestProject1**  をクリック **作成**します。  
   
-9. **単体テストの作成**  ダイアログ ボックスで展開の種類を選択、 **FFReceivePipeline()** の下のコンス トラクター、 **ffreceivepipeline()** ノードです。 **[OK]**をクリックします。  
+9. **単体テストの作成**  ダイアログ ボックスで展開の種類を選択、 **FFReceivePipeline()** の下のコンス トラクター、 **ffreceivepipeline()** ノードです。 **[OK]** をクリックします。  
   
 ## <a name="adding-test-code-to-test-the-pipeline"></a>パイプラインをテストするテスト コードの追加  
   

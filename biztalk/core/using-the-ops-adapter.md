@@ -1,11 +1,11 @@
 ---
-title: "Ops アダプタの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: Ops アダプタの使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IOpsAIC interface
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - process management solution tutorial, Ops adapters
 - Ops adapters, processing
 ms.assetid: 331f3614-e00b-4587-b82b-3c7bc394f361
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288738"
 ---
 # <a name="using-the-ops-adapter"></a>Ops アダプタの使用
 ビジネス プロセス管理ソリューションは、Ops アダプタを使用して、新しいエラー報告機能からのエラー報告を処理します。 アダプタからのメッセージを処理するサンプル ハンドラがソリューションに含まれていますが、独自のハンドラを簡単に作成して、アダプタを他のソリューションで使うことができます。 エラー報告機能については、次を参照してください。[できませんでしたメッセージのルーティングを使用して](../core/using-failed-message-routing.md)です。  

@@ -1,14 +1,14 @@
 ---
-title: "スキーマ ノードの |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマ ノードの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7ea02c2a-ee00-4f44-9086-83d7ac4a8832
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972232"
 ---
 # <a name="schema-node"></a>[スキーマ] ノード
 
@@ -31,7 +32,7 @@ BizTalk エディターで、スキーマ階層の最上位は常に、**スキ�
  BizTalk エディターで、新しい XML スキーマを作成するときに、**スキーマ**ノードおよび**ルート**ノードが自動的に作成されます。  
   
 ## <a name="xsd-representation"></a>XSD 表記  
- 例を次に、太字に対応するスキーマの XSD 表記内の行で、 **\<スキーマ\>**スキーマのツリー ビュー内のノードです。  
+ 例を次に、太字に対応するスキーマの XSD 表記内の行で、 **\<スキーマ\>** スキーマのツリー ビュー内のノードです。  
   
 ```  
 <?xml version="1.0" encoding="utf-16" ?>  

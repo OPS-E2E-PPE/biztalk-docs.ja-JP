@@ -1,14 +1,14 @@
 ---
-title: "別のアグリーメント プロパティの再利用 |Microsoft ドキュメント"
-ms.custom: 
+title: 別のアグリーメント プロパティの再利用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d8e1cc60-d581-43ca-aa70-1e0d6238497a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007428"
 ---
 # <a name="reusing-properties-from-another-agreement"></a>別のアグリーメントのプロパティの再利用
 プロパティはアグリーメント間で再利用できます。 これにより、新しいアグリーメントのプロパティのほとんどまたはすべてが、既存のアグリーメントのプロパティと同じ場合には、時間を大幅に節約することができます。 [!INCLUDE[firstref_TPM](../includes/firstref-tpm-md.md)] BizTalk Server でのユーザー インターフェイスでは、アグリーメントを XML テンプレート ファイルをエクスポートすることができます。 次に、XML テンプレートをインポートして、アグリーメントの同じプロパティを再利用できます。  

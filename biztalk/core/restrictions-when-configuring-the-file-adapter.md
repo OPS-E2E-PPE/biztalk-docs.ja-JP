@@ -1,17 +1,17 @@
 ---
-title: "ファイル アダプタ構成時の制限事項 |Microsoft ドキュメント"
-ms.custom: 
+title: ファイル アダプタ構成時の制限事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [File adapters], restrictions
 - File adapters, restrictions
 ms.assetid: 8d8137a7-5b16-4ae3-a0a7-6d114324bdf3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975134"
 ---
 # <a name="restrictions-when-configuring-the-file-adapter"></a>ファイル アダプタ構成時の制限事項
 制限と、ファイル アダプターを使用する場合の規則。
@@ -101,9 +102,9 @@ ms.lasthandoff: 11/28/2017
 |%DestinationParty%|送信先パーティの名前。 この値は、メッセージ コンテキスト プロパティ **BTS.DestinationParty**から取得されます。|  
 |%DestinationPartyQualifier%|送信先パーティの修飾子。 この値は、メッセージ コンテキスト プロパティ **BTS.DestinationPartyQualifier**から取得されます。|  
 |%MessageID%|BizTalk Server 内のメッセージのグローバル一意識別子 (GUID)。 値は、メッセージ コンテキスト プロパティから直接取得**BTS です。MessageID**です。|  
-|%SourceFileName%|ファイル アダプタが読み取るメッセージが存在するファイルの名前。 ファイル名には、拡張子は含まれますが、ファイル パスは含まれません (例、Sample.xml)。 このプロパティを置き換えるときに、ファイル アダプターに格納されている絶対ファイル パスからファイル名を抽出、**ファイル。ReceivedFileName**コンテキスト プロパティです。 コンテキスト プロパティに値がない場合-たとえば、ファイル アダプター以外のアダプタにメッセージを受信しました — マクロ置換しませんし、ファイルの名前をそのままに残ります (C:\Drop など\\%sourcefilename%)。 **注:**このマクロを正しく実装の場合、出力メッセージが受信したメッセージと同じメッセージである必要があります。|  
-|%SourceParty%|ファイル アダプタが受信したメッセージの受信元パーティの名前。 **注:**このマクロを正しく実装の場合、出力メッセージが受信したメッセージと同じメッセージである必要があります。|  
-|%SourcePartyQualifier%|ファイル アダプタが受信したメッセージの受信元パーティの修飾子。 **注:**このマクロを正しく実装の場合、出力メッセージが受信したメッセージと同じメッセージである必要があります。|  
+|%SourceFileName%|ファイル アダプタが読み取るメッセージが存在するファイルの名前。 ファイル名には、拡張子は含まれますが、ファイル パスは含まれません (例、Sample.xml)。 このプロパティを置き換えるときに、ファイル アダプターに格納されている絶対ファイル パスからファイル名を抽出、**ファイル。ReceivedFileName**コンテキスト プロパティです。 コンテキスト プロパティに値がない場合-たとえば、ファイル アダプター以外のアダプタにメッセージを受信しました — マクロ置換しませんし、ファイルの名前をそのままに残ります (C:\Drop など\\%sourcefilename%)。 **注:** このマクロを正しく実装の場合、出力メッセージが受信したメッセージと同じメッセージである必要があります。|  
+|%SourceParty%|ファイル アダプタが受信したメッセージの受信元パーティの名前。 **注:** このマクロを正しく実装の場合、出力メッセージが受信したメッセージと同じメッセージである必要があります。|  
+|%SourcePartyQualifier%|ファイル アダプタが受信したメッセージの受信元パーティの修飾子。 **注:** このマクロを正しく実装の場合、出力メッセージが受信したメッセージと同じメッセージである必要があります。|  
 |%time%|hhmmss 形式の UTC 時刻。|  
 |%time.tz%|ローカルの日付に GMT のタイム ゾーンを加えた hhmmssTZD 形式の日付 (例、124525+530)。|  
   

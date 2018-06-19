@@ -1,11 +1,11 @@
 ---
-title: "メッセージの受信者の承認 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの受信者の承認 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - receive authorization
 - messages, security
 ms.assetid: c0cdb3ef-ee8e-40a1-9362-13cd26495951
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230746"
 ---
 # <a name="authorizing-the-receiver-of-a-message"></a>メッセージの受信者の承認
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、メッセージの受信を承認する対象のプロセスとパーティを制限できます。  
@@ -42,9 +43,9 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 ## <a name="receive-authorization"></a>受信認証  
  受信認証は、指定したメッセージを受信 (サブスクライブ) できるホストの制御に使用します。 一致するように、サブスクリプションのプロパティがメッセージの述語として BizTalk Server は、証明書情報を使用して: メッセージ ボックス データベースだけをそのメッセージの暗号化解除証明書を持つホストに必要な承認とマークされたメッセージをルーティングします。 次のシナリオを使用してプロセスを説明します。  
   
--   **暗号化されていないメッセージのルーティング:**ときの BizTalk Server は、送信者が暗号化されていないメッセージを受け取り、BizTalk がメッセージをルーティングする方法についての復号化の制限はありません。 受信認証証明書が構成されているホストと受信承認証明書が構成されていないホストの両方でメッセージを受信できます。  
+-   **暗号化されていないメッセージのルーティング:** ときの BizTalk Server は、送信者が暗号化されていないメッセージを受け取り、BizTalk がメッセージをルーティングする方法についての復号化の制限はありません。 受信認証証明書が構成されているホストと受信承認証明書が構成されていないホストの両方でメッセージを受信できます。  
   
--   **暗号化されたメッセージのルーティング:**暗号化されたメッセージが到着すると、受信パイプラインは、メッセージを解読するデコード コンポーネントを含める必要があります。 BizTalk Server でメッセージが解読されルーティングされるときに、メッセージ ボックス データベースのサブスクリプション メカニズムでは、メッセージの解読に使用された証明書の拇印が証拠として使用されます。この証明書が構成されているホストのみがメッセージを受信します。  
+-   **暗号化されたメッセージのルーティング:** 暗号化されたメッセージが到着すると、受信パイプラインは、メッセージを解読するデコード コンポーネントを含める必要があります。 BizTalk Server でメッセージが解読されルーティングされるときに、メッセージ ボックス データベースのサブスクリプション メカニズムでは、メッセージの解読に使用された証明書の拇印が証拠として使用されます。この証明書が構成されているホストのみがメッセージを受信します。  
   
  受信認証を使用する場合は、メッセージの受信を承認するホストのプロパティに解読証明書の拇印を指定する必要があります。 詳細については、承認を受け取るを参照してください[ホストのプロパティを変更する方法](../core/how-to-modify-host-properties.md)です。  
   

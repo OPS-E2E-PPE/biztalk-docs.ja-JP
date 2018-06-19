@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションでポートを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションでポートを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, receiving
@@ -25,7 +25,7 @@ helpviewer_keywords:
 - ports, about ports
 - ports, configuring
 ms.assetid: 968b2d1b-e233-4eb0-8254-9ec6b7642cdf
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -34,6 +34,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287418"
 ---
 # <a name="using-ports-in-orchestrations"></a>オーケストレーションでのポートの使用
 ポートを使用して、オーケストレーションでの、他のビジネス プロセスを対象としたメッセージの送受信方法を指定します。 各ポートは、種類、方向、バインドを保持しています。これらの組み合わせによって、通信方向、通信方式、メッセージの送信先場所と送信元場所、および通信の実行方法が決まります。  

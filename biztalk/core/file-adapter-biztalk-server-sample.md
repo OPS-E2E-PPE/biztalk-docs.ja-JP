@@ -11,7 +11,7 @@ helpviewer_keywords:
 - examples, File adapters
 - File adapters, examples
 ms.assetid: d59cecb4-6353-44d5-b8d6-316446758536
-caps.latest.revision: ''
+caps.latest.revision: 46
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26010339"
 ---
 # <a name="file-adapter-biztalk-server-sample"></a>ファイル アダプター (BizTalk Server サンプル)
 ファイル アダプター サンプルは、Microsoft Visual c# .NET で Microsoft BizTalk Server を使用する書き込まれます。 このサンプルでは動的アダプターまたは静的アダプターのいずれかをビルドするコードが提供されますが、  以下では静的アダプターの概要手順のみを説明します。 静的アダプターとは、静的な一連のスキーマが付属した、カスタム ユーザー インターフェイスのないアダプターのことです。 動的アダプターにはカスタム ユーザー インターフェイスが備わっており、動的な一連のスキーマが付属していることもあります。 静的アダプターと動的アダプターでは両方とも、アダプターの追加ウィザードを使用してスキーマを BizTalk プロジェクトに追加できます。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 03/28/2018
  \<*パスのサンプル*\>**\AdaptersDevelopment\File アダプター**  
   
 > [!NOTE]
->  既定の場所\<*サンプル パス*\>は*%programfiles%*\Microsoft BizTalk Server\SDK\Samples 32 ビットを実行するコンピューターに BizTalk Server がインストールされている場合Windows のバージョンです。 既定の場所\<*サンプル パス*\>は*%programfiles (x86) %*\Microsoft BizTalk Server\SDK\Samples 64 を実行するコンピューターに BizTalk Server がインストールされている場合ビット版 Windows です。 関連付けられている値を決定する、 *%programfiles%* または *%programfiles (x86) %* 環境変数の型 **echo %programfiles%** または **echo %programfiles (x86) %** コマンド プロンプトと ENTER キーを押します。 64 ビット オペレーティング システムでこのサンプルを実行している場合から .reg ファイルのいずれかのすべての参照を変更する必要があります。 **%programfiles%** に **%programfiles (x86) %** .reg ファイルを実行する前にします。  
+>  既定の場所\<*サンプル パス*\>は *%programfiles%* \Microsoft BizTalk Server\SDK\Samples 32 ビットを実行するコンピューターに BizTalk Server がインストールされている場合Windows のバージョンです。 既定の場所\<*サンプル パス*\>は *%programfiles (x86) %* \Microsoft BizTalk Server\SDK\Samples 64 を実行するコンピューターに BizTalk Server がインストールされている場合ビット版 Windows です。 関連付けられている値を決定する、 *%programfiles%* または *%programfiles (x86) %* 環境変数の型 **echo %programfiles%** または **echo %programfiles (x86) %** コマンド プロンプトと ENTER キーを押します。 64 ビット オペレーティング システムでこのサンプルを実行している場合から .reg ファイルのいずれかのすべての参照を変更する必要があります。 **%programfiles%** に **%programfiles (x86) %** .reg ファイルを実行する前にします。  
   
  このサンプルに含まれるファイルとその目的を次の表に示します。  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 03/28/2018
   
 1.  をクリックして **開始**, 、 をポイント **すべてのプログラム**, 、 をポイント **アクセサリ**, 、 をクリックし、 **Windows エクスプ ローラー**します。  
   
-2.  移動し、 \<*サンプル パス*\>**"\AdaptersDevelopment\File Adapter\Runtime"**ディレクトリ、およびダブルクリック**DotNetFile.sln**.  
+2.  移動し、 \<*サンプル パス*\>**"\AdaptersDevelopment\File Adapter\Runtime"** ディレクトリ、およびダブルクリック**DotNetFile.sln**.  
   
 3.  アダプタのレシーバ ランタイム プロジェクトのソリューション エクスプ ローラーでを再構築を右クリックし **DotNetFile**, 、クリックして **を再構築**します。  
   
@@ -114,7 +115,7 @@ ms.lasthandoff: 03/28/2018
   
 #### <a name="to-build-the-adapter-design-time-project"></a>アダプター デザイン時のプロジェクトをビルドするには  
   
-1.  Windows エクスプ ローラーに移動、 \<*サンプル パス*\>**"\AdaptersDevelopment\File Adapter\Design time \adapter Management"**ディレクトリ、およびをダブルクリック**AdapterManagement.sln**です。  
+1.  Windows エクスプ ローラーに移動、 \<*サンプル パス*\>**"\AdaptersDevelopment\File Adapter\Design time \adapter Management"** ディレクトリ、およびをダブルクリック**AdapterManagement.sln**です。  
   
 2.  ソリューション エクスプ ローラーで右クリック **AdapterManagement**, 、クリックして **を再構築**します。  
   
@@ -122,7 +123,7 @@ ms.lasthandoff: 03/28/2018
   
 #### <a name="to-register-the-sample-static-adapter"></a>サンプルの静的アダプターを登録するには  
   
-1.  Windows エクスプ ローラーに移動、 \<*サンプル パス*\>**"\AdaptersDevelopment\File アダプター"**ディレクトリ。  
+1.  Windows エクスプ ローラーに移動、 \<*サンプル パス*\>**"\AdaptersDevelopment\File アダプター"** ディレクトリ。  
   
 2.  サンプル アダプターをレジストリに追加するにはダブルクリック **StaticAdapterManagement.reg**します。  
   
@@ -132,7 +133,7 @@ ms.lasthandoff: 03/28/2018
     > [!IMPORTANT]
     >  BizTalk を 64 ビット コンピューターにインストールすると、hkey_classes_root \clsid\ レジストリ エントリのすべてのインスタンスを hkey_classes_root \wow6432node\clsid\ に変更、 **StaticAdapterManagement.reg** レジストリ ファイルです。  
   
-3.  **レジストリ エディター** ダイアログ ボックスで、をクリックして **[はい]** サンプル アダプターをレジストリに追加する **[ok]**します。  
+3.  **レジストリ エディター** ダイアログ ボックスで、をクリックして **[はい]** サンプル アダプターをレジストリに追加する **[ok]** します。  
   
 4.  Windows エクスプ ローラーを閉じる、 **ファイル**  メニューのをクリックして **閉じる**します。  
   
@@ -152,7 +153,7 @@ ms.lasthandoff: 03/28/2018
     |**アダプター**|選択 **Static DotNetFile** ドロップ ダウン リストからです。|  
     |**コメント**|型 **アダプターのサンプル**します。|  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
      これで、BizTalk 管理コンソールの右ウィンドウにあるアダプターの一覧に静的アダプターが表示されます。  
   
@@ -194,9 +195,9 @@ ms.lasthandoff: 03/28/2018
     |**SQL Server**|型 **します。** 」 (ピリオド) を入力します。|  
     |**データベース**|構成ウィザードで作成された BizTalk 管理データベースの名前を選択します。 構成ウィザードで使用される既定のデータベース名は **BizTalkMgmtDb**します。|  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
-8.  展開、 **BizTalk グループ [*サーバー名*]**内のノード、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、展開、**アプリケーション** ノードを展開、 **BizTalk アプリケーション 1**ノード。  
+8.  展開、 **BizTalk グループ [*サーバー名*]** 内のノード、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、展開、**アプリケーション** ノードを展開、 **BizTalk アプリケーション 1**ノード。  
   
 9. 右クリックし、 **送信ポート**  ノードをクリック **新規**,  **静的な一方向送信ポート**, 、 をクリックし、 **ok**します。  
   
@@ -210,7 +211,7 @@ ms.lasthandoff: 03/28/2018
   
 11. 下にある、 **BizTalk アプリケーション 1**  ノードをクリック **受信ポート**, を選択して **新規/一方向の受信ポート**します。  
   
-12. **新しい受信ポートを作成する** ダイアログ ボックスで、 **受信ポートの種類を指定** ボックスで、 **一方向の受信ポート** クリックしてドロップダウン リストから **[ok]**します。  
+12. **新しい受信ポートを作成する** ダイアログ ボックスで、 **受信ポートの種類を指定** ボックスで、 **一方向の受信ポート** クリックしてドロップダウン リストから **[ok]** します。  
   
 13. **受信ポートのプロパティ** ダイアログ ボックスで、 **名前** ボックスに、入力 **AdapterReceive**, 、 をクリックし、 **ok**します。  
   
@@ -228,7 +229,7 @@ ms.lasthandoff: 03/28/2018
     |**受信ハンドラー**|選択 **BizTalkServerApplication** ドロップ ダウン リストからです。|  
     |**受信パイプライン**|選択 **XMLReceive** ドロップ ダウン リストからです。|  
   
-17. **[OK]**をクリックします。  
+17. **[OK]** をクリックします。  
   
      」に進みます *ビルド、配置、およびサンプル アダプター バインド*します。  
   
@@ -243,7 +244,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  コマンド プロンプトで「 **sn – k AdapterHarness.snk**, 、とし、enter キーを押します。  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 ##### <a name="to-build-the-adapter-harness-project"></a>アダプター ハーネス プロジェクトをビルドするには  
   
@@ -318,7 +319,7 @@ ms.lasthandoff: 03/28/2018
   
 ##### <a name="to-test-the-sample-add-adapter-wizard-functionality-for-the-sample-static-adapter"></a>サンプルの静的アダプターで、サンプルのアダプターの追加ウィザード機能をテストするには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーで右クリック**[adapterharnessproject]**、をポイント**追加**、クリックして**生成した項目の追加**です。  
+1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーで右クリック **[adapterharnessproject]**、をポイント**追加**、クリックして**生成した項目の追加**です。  
   
 2.  **生成項目の追加 - [adapterharnessproject]** ダイアログ ボックスで、をクリックして **アダプター メタデータの追加**, 、順にクリック **開く**します。  
   

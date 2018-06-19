@@ -1,11 +1,11 @@
 ---
-title: "メッセージ本文の追跡に追跡データベースのサイジング |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ本文の追跡に追跡データベースのサイジング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking database, database size
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - HAT, orchestrations
 - tracking, ports
 ms.assetid: ee75e530-f15d-4ceb-ba67-0b0b24d9df6b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277922"
 ---
 # <a name="sizing-the-tracking-database-to-track-message-bodies"></a>メッセージの本文を追跡するための追跡データベースのサイズ設定
 BizTalk 追跡データベースのメッセージ本文を追跡する場合は、メッセージ本文のサイズも考慮する必要があります。 次の式を使用します。  

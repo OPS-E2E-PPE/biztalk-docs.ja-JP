@@ -1,17 +1,17 @@
 ---
-title: "単一の WCF アダプタのサインオンのサポート |Microsoft ドキュメント"
-ms.custom: 
+title: 単一の WCF アダプタのサインオンのサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF adapters, Single Sign-On
 - Single Sign-On, WCF adapters
 ms.assetid: 70a33d87-50bd-41de-9084-68dd66b0dbf9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280058"
 ---
 # <a name="single-sign-on-support-for-the-wcf-adapters"></a>WCF アダプターのシングル サインオンのサポート
 BizTalk 管理コンソールを使用して、WCF 受信場所または送信ポートで使用するエンタープライズ シングル サインオン (SSO) を構成できます。 ここでは、SSO と WCF アダプターの連携について説明します。  

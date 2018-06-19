@@ -1,14 +1,14 @@
 ---
-title: "手順 3 c: SQL Server データベースに営業案件の詳細を挿入 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3 c: SQL Server データベースに営業案件の詳細を挿入 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3f6f9bbe-6f25-4393-8f92-aeeba9736acf
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280090"
 ---
 # <a name="step-3c-insert-opportunity-details-into-a-sql-server-database"></a>手順 3 c: SQL Server データベースに営業案件の詳細を挿入
 ここまでに、Salesforce にクエリ要求を送信し、応答を受信するためのオーケストレーションをビルドしました。 このセクションで Salesforce からの応答を挿入するようにオーケストレーションが更新されます、 **OrderDetails** 、内部設置型 SQL Server データベースのテーブルに**Orders**です。 これを達成するには、次のようなさまざまな手順を実行します。  
@@ -74,9 +75,9 @@ ms.lasthandoff: 09/20/2017
   
 3.  **アダプターの構成**ダイアログ ボックスで、**セキュリティ**] タブの**クライアント資格情報の種類**[ **Windows** Windows を使用するにはSQL Server データベースへの接続に認証します。  
   
-4.  **アダプターの構成**ダイアログ ボックスで、 **URI プロパティ** タブの**初期カタログ**(Orders) に接続するデータベース名を指定します。 **サーバー**に接続している SQL Server がインストールされているコンピューター名を指定します。 かどうか、SQL Server データベースと同じコンピューターには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロジェクト、ピリオドだけ配置できます (**.**)。 **[OK]**をクリックします。  
+4.  **アダプターの構成**ダイアログ ボックスで、 **URI プロパティ** タブの**初期カタログ**(Orders) に接続するデータベース名を指定します。 **サーバー**に接続している SQL Server がインストールされているコンピューター名を指定します。 かどうか、SQL Server データベースと同じコンピューターには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロジェクト、ピリオドだけ配置できます (**.**)。 **[OK]** をクリックします。  
   
-5.  [!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)]クリックして**接続**です。 接続が確立されると、選択したコントラクト型として**クライアント (送信操作)**です。 下にある、**カテゴリを選択**ボックスで、展開**テーブル**、 をクリックして**OrderDetails**テーブル、および右側のウィンドウでをクリックして**挿入** をクリックし、**追加**です。  
+5.  [!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)]クリックして**接続**です。 接続が確立されると、選択したコントラクト型として**クライアント (送信操作)** です。 下にある、**カテゴリを選択**ボックスで、展開**テーブル**、 をクリックして**OrderDetails**テーブル、および右側のウィンドウでをクリックして**挿入** をクリックし、**追加**です。  
   
 6.  指定して、**ファイル名のプレフィックス**を生成されたスキーマに id をプレフィックスする場合。 このチュートリアルでは、プレフィックスとしてを指定しましょう**InsertOrders**  をクリックし、 **OK**です。  
   
@@ -108,7 +109,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  後のメッセージの構築図形を追加、 **ReceiveQueryResult**図形です。 図形の名前を設定`ConstructOrders`設定と、**構築メッセージ**プロパティを**InsertOrders**です。  
   
-3.  内で、 **ConstructOrders**図形を追加、**変換**図形です。 変換図形をダブルクリックして、[変換の構成] ダイアログ ボックスを開きます。 ダイアログ ボックスで、選択、**既存のマップ**オプション、し、ドロップダウン リストから選択**BtsSalesforceIntegration.QueryResult_Orders**です。 設定**ソース**に**QueryResultMsg**、**先**に**InsertOrders**、順にクリック**[ok]**です。  
+3.  内で、 **ConstructOrders**図形を追加、**変換**図形です。 変換図形をダブルクリックして、[変換の構成] ダイアログ ボックスを開きます。 ダイアログ ボックスで、選択、**既存のマップ**オプション、し、ドロップダウン リストから選択**BtsSalesforceIntegration.QueryResult_Orders**です。 設定**ソース**に**QueryResultMsg**、**先**に**InsertOrders**、順にクリック **[ok]** です。  
   
 4.  後に、 **ConstructOrders**図形、送信図形を追加します。 図形の名前は`SendOrders`としてメッセージの種類を設定および**InsertOrders**です。  
   

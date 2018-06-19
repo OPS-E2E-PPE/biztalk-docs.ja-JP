@@ -1,17 +1,17 @@
 ---
-title: "バージョン管理、サービス指向ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: バージョン管理、サービス指向ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - versioning, service solutions
 - service solution tutorial, versioning
 ms.assetid: 0e09720f-53f2-4b38-aae3-a79ddfd35be5
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287642"
 ---
 # <a name="versioning-the-service-oriented-solution"></a>バージョン管理、サービス指向ソリューション
 ソリューションのフロント エンドとして機能する 2 つのオーケストレーション**CustomerServiceReceiveSend**と**CustomerServiceNativeRequestResponse**、central、動作中のオーケストレーションを呼び出して**CustomerService**です。 オーケストレーションの呼び出しは、オーケストレーションを含むアセンブリのバージョン番号に依存します。 この 3 つのオーケストレーションはすべて同じアセンブリにあるので、バージョン管理の問題はありません。  

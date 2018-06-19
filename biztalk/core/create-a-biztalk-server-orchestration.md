@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server オーケストレーションを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server オーケストレーションを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 16c637ae-f94f-40f8-8ce7-73a7b7df9f8f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008990"
 ---
 # <a name="create-a-biztalk-server-orchestration"></a>BizTalk Server のオーケストレーションの作成
 > [!NOTE]
@@ -59,7 +60,7 @@ ms.lasthandoff: 12/01/2017
   
 -   メッセージの構築図形を追加し、設定、**構築メッセージ**にメッセージの構築図形のプロパティ**InvoiceMsg**です。  
   
--   メッセージの構築図形に変換図形を追加します。 変換図形をダブルクリックし、、**変換の構成**ダイアログ ボックスで、**既存のマップ**オプションをクリックし  **BTSJSON です。POToInvoice**マップします。 このマップはサンプルに含まれています。 ダイアログ ボックスで、次のように設定します。**ソース**に**PurchaseOrder**設定と**先**に**InvoiceMsg**です。 **[OK]**をクリックします。  
+-   メッセージの構築図形に変換図形を追加します。 変換図形をダブルクリックし、、**変換の構成**ダイアログ ボックスで、**既存のマップ**オプションをクリックし  **BTSJSON です。POToInvoice**マップします。 このマップはサンプルに含まれています。 ダイアログ ボックスで、次のように設定します。**ソース**に**PurchaseOrder**設定と**先**に**InvoiceMsg**です。 **[OK]** をクリックします。  
   
 ### <a name="add-ports"></a>ポートを追加します。  
  オーケストレーションに、メッセージの受信用と送信用の 2 つのポートを追加します。 ポートに以下のプロパティを設定します。  

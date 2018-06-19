@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server の紹介 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server の紹介 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 01/30/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 06a4a31a-eefe-4b1b-89ca-2cba2b6fa587
-caps.latest.revision: 
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: d0a1816a8dd8412906245d40c6479b08d7b3b20a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/01/2018
+ms.locfileid: "28910106"
 ---
 # <a name="introducing-biztalk-server"></a>BizTalk Server の紹介
 システムを一緒に結び付けることが想定され、標準になりました。 組織がサービス志向に向かうにつれ、効率的なビジネス プロセスを作成して別々のシステムを一体化するという目標は、現実的になりつつあります。  

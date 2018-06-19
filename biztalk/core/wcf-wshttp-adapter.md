@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289042"
 ---
 # <a name="wcf-wshttp-adapter"></a>Wcf-wshttp アダプター
 [!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の受信と送信 WCF サービスを要求するときに Wcf-wshttp アダプタを使用して、 [WSHttpBinding](http://go.microsoft.com/fwlink/?LinkID=81206)です。 Wcf-wshttp アダプタを使用すると、オーケストレーションとスキーマを WCF サービスとして公開し、と共に外部 WCF サービスを使用すると、 **WSHttpBinding**です。  

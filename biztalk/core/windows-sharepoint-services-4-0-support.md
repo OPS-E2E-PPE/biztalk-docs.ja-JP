@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "26009971"
 ---
 # <a name="windows-sharepoint-services-40-support"></a>Windows SharePoint Services 4.0 のサポート
 BizTalk Server の Windows SharePoint Services アダプターでは、同等の機能を提供の Windows SharePoint Services アダプタで[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]です。 BizTalk Server の Windows SharePoint Services アダプターには、Windows SharePoint Services 4.0 で使用可能な次の機能もサポートしています。  

@@ -1,17 +1,17 @@
 ---
-title: "候補リストのフィールドを使用して BizTalk Server と Siebel アダプターのビジネス コンポーネントでの操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: 候補リストのフィールドを使用して BizTalk Server と Siebel アダプターのビジネス コンポーネントでの操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, perform operations with picklist fields by using BizTalk Server
 - business components, performing operations with picklist fields by using BizTalk Server
 ms.assetid: b62d32fa-903a-442b-951b-2343ef719bd0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226834"
 ---
 # <a name="run-operations-on-business-components-with-picklist-fields-using-biztalk-server-and-the-siebel-adapter"></a>候補リストのフィールドを使用して BizTalk Server と Siebel アダプターのビジネス コンポーネントに対する操作を実行します。
 Siebel のピックリスト フィールドの型が使用可能な値のコレクションを構成するクライアントから Siebel システムに渡される特定の値を指定可能性があります。 つまり、候補リストのフィールドには、フィールドの許容される値の一覧が含まれています。 候補リストとその種類の詳細については、Siebel のドキュメントを参照してください。 方法の詳細については[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]候補リストのフィールドを持つビジネス コンポーネントの操作をサポートするを参照してください[で Siebel ビジネス コンポーネント操作](../../adapters-and-accelerators/adapter-siebel/operations-on-business-components-in-siebel.md)です。  

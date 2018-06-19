@@ -1,14 +1,14 @@
 ---
-title: "EDI、AS2 メッセージの追跡を BAM アクティビティが作成された |Microsoft ドキュメント"
-ms.custom: 
+title: EDI、AS2 メッセージの追跡を BAM アクティビティが作成された |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a10ab846-0fbb-46f5-920e-cb2b5be75814
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008899"
 ---
 # <a name="bam-activities-created-to-track-edi-as2-messages"></a>EDI、AS2 メッセージの追跡に作成された BAM アクティビティ
 BizTalk Server には、EDI および AS2 状態レポート用に作成された BAM アクティビティが含まれています。 これらのアクティビティによって、状態レポートに表示するデータが決定されます。 このトピックでは、BAM アクティビティとそこで定義されるフィールド、および BAM アクティビティの特定のフィールドで定義される列挙値について説明します。  

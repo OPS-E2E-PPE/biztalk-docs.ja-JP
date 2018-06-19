@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 管理コンソールを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 管理コンソールを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: af00d9de-0f94-407b-b6f4-4da63a0867a0
-caps.latest.revision: 
+caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710593"
 ---
 # <a name="using-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールを使用します。
 BizTalk Server 管理コンソールは、BizTalk Server の管理と監視および BizTalk Server アプリケーションの展開と管理に使用できる Microsoft 管理コンソール (MMC) です。  

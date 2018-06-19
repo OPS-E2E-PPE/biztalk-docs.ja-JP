@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c18607b5-d929-48c9-9fa3-f728a7a80d04
-caps.latest.revision: ''
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22231826"
 ---
 # <a name="addresource-command-biztalk-assembly"></a>AddResource コマンド: BizTalk アセンブリ
 使用する BizTalk アセンブリを BizTalk アプリケーションを追加する、 **AddResource** コマンドを指定 **System.BizTalk:BizTalkAssembly** 、型パラメーターです。 このコマンドを実行すると、該当するアセンブリが BizTalk 管理データベースに追加されます。 アセンブリは、BizTalk Server 管理コンソール (追加先アプリケーションのリソース フォルダー) にも表示されます。 また、アセンブリに含まれているアイテムが個々のフォルダーに表示されます。 使用するときにさらに、アイテムが一覧表示、 [ListApp コマンド](../core/listapp-command.md)です。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 03/23/2018
  依存関係に関する詳細については、次を参照してください。[の依存関係とアプリケーションの配置](../core/dependencies-and-application-deployment.md)です。  
   
 ## <a name="usage"></a>使用方法  
- **BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:BizTalkAssembly** [**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**] [**/Server:***value*] [**/Database:***value*]  
+ **BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:BizTalkAssembly** [**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **] [**/Server:***value*] [**/Database:*** value*]  
   
 ## <a name="parameters"></a>パラメーター  
   

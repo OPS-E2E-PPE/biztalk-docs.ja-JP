@@ -1,11 +1,11 @@
 ---
-title: "前処理および後処理のスクリプト アプリケーション展開のカスタマイズを使用した |Microsoft ドキュメント"
-ms.custom: 
+title: 前処理および後処理のスクリプト アプリケーション展開のカスタマイズを使用した |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - customizing, applications
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - scripts, applications
 - scripts, customizing
 ms.assetid: 47627394-d594-491b-9098-38c5d028a378
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287170"
 ---
 # <a name="using-pre--and-post-processing-scripts-to-customize-application-deployment"></a>処理前および処理後のスクリプトを使用したアプリケーション展開のカスタマイズ
 このセクションの各トピックでは、アプリケーションのインポート、インストール、またはアンインストール時にアクションを実行する処理前または処理後のスクリプトを作成する方法について説明します。 処理前のスクリプトは、アプリケーションのインポートまたはインストールの開始前、およびアンインストールの完了後に 1 つのアクションまたはアクションのセットを実行します。 処理後のスクリプトは、アプリケーションのインポートまたはインストールの完了後、あるいはアンインストールの開始前に 1 つのアクションまたはアクションのセットを実行します。  

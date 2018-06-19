@@ -1,17 +1,17 @@
 ---
-title: "TPE を管理するためのユーザー権利 |Microsoft ドキュメント"
-ms.custom: 
+title: TPE を管理するためのユーザー権利 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, Tracking Profile Editor
 - Tracking Profile Editor, security
 ms.assetid: a0353c4d-2aaa-49ac-8e50-88885962abba
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286930"
 ---
 # <a name="user-rights-for-managing-tpe"></a>TPE を管理するためのユーザー権利
 ソリューション開発者、システム管理者、または IT 担当者や運用担当者が、追跡プロファイルを取得したり、アセンブリに関連付けられたデータベースに追跡プロファイルを展開するには、管理権限が必要です。  

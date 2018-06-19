@@ -1,14 +1,14 @@
 ---
-title: "コンピューターのインストールの準備 |Microsoft ドキュメント"
-ms.custom: 
+title: コンピューターのインストールの準備 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 03/15/2016
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53df7a2f-638b-4921-a97f-736760248526
-caps.latest.revision: 
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710461"
 ---
 # <a name="prepare-your-computer-for-installation"></a>インストールのためのコンピューターの準備
 ここでは、コンピューターの準備を整える手順について説明します。必要なソフトウェアをすべてインストールして構成し、アカウントを作成してアクセス許可を設定します。  
@@ -79,7 +80,7 @@ ms.lasthandoff: 02/28/2018
 
 次のことも考慮してください。  
   
-- **.Net framework 3.5 機能**: .NET Framework 4.5 と .NET Framework 3.5 は、BizTalk Adapter Pack を使用する .Net アプリケーションを開発に使用できます。 通常、 **.NET Framework 4.5 機能**が既にインストールされています。 このコンピューターにアプリケーションを作成する .NET Framework 3.5 を使用する場合**.Net Framework 3.5 機能**もインストールできます。  
+- **.Net framework 3.5 機能**: .NET Framework 4.5 と .NET Framework 3.5 は、BizTalk Adapter Pack を使用する .Net アプリケーションを開発に使用できます。 通常、 **.NET Framework 4.5 機能**が既にインストールされています。 このコンピューターにアプリケーションを作成する .NET Framework 3.5 を使用する場合 **.Net Framework 3.5 機能**もインストールできます。  
   
 - **メッセージ キュー**: MSMQ アダプターを使用する場合は、**[メッセージ キュー]** をオンにしてローカルの MSMQ ストアを作成できます。  
   
@@ -337,7 +338,7 @@ ms.lasthandoff: 02/28/2018
   
      **Windows 8.1**: キーボードの Windows ボタンをクリックして「**イベント ビューアー**」と入力します。 検索 ウィンドウで、**設定** をクリックします。 検索結果 ウィンドウで、**イベント ログの表示** をクリックします。  
   
-     **Windows 7 SP1**: [スタート] をクリックします。 **[検索]** テキスト ボックスに**「イベント ビューアー」**と入力し、クリックして開きます。  
+     **Windows 7 SP1**: [スタート] をクリックします。 **[検索]** テキスト ボックスに **「イベント ビューアー」** と入力し、クリックして開きます。  
   
 2.  **[Windows ログ]** を展開し、**[アプリケーション]** を右クリックして **[プロパティ]** をクリックします。 **[ログのプロパティ]**:  
   

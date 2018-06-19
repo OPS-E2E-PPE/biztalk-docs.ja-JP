@@ -1,14 +1,14 @@
 ---
-title: "手順 6: EDI、AS2 を構成する受信場所 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 6: EDI、AS2 を構成する受信場所 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 167f8ba2-d38b-4088-863b-2bd90c2a12a2
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276258"
 ---
 # <a name="step-6-configure-the-edi-as2-receive-location"></a>手順 6: EDI、AS2 を構成する受信場所
 ![手順 11 の 6](../core/media/tut-step6-of-11.gif "Tut_Step6_of_11")  
@@ -38,9 +39,9 @@ ms.lasthandoff: 09/20/2017
   
 4.  **受信場所のプロパティ**ダイアログ ボックスで、名前、受信場所**Receive_AS2** **HTTP**の**型**、し、をクリックして**構成**です。  
   
-5.  **HTTP トランスポートのプロパティ** ダイアログ ボックスで、入力**/Contoso/BTSHTTPReceive.dll**の**仮想ディレクトリと ISAPI 拡張**です。 クリア**成功した場合の戻り値の関連付けハンドル**選択**失敗した要求を中断**です。 **[OK]**をクリックします。  
+5.  **HTTP トランスポートのプロパティ** ダイアログ ボックスで、入力 **/Contoso/BTSHTTPReceive.dll**の**仮想ディレクトリと ISAPI 拡張**です。 クリア**成功した場合の戻り値の関連付けハンドル**選択**失敗した要求を中断**です。 **[OK]** をクリックします。  
   
-6.  選択**AS2EdiReceive**の**受信パイプライン**です。 をクリックして**[ok]**、順にクリック**OK**もう一度です。  
+6.  選択**AS2EdiReceive**の**受信パイプライン**です。 をクリックして **[ok]**、順にクリック**OK**もう一度です。  
   
     > [!NOTE]
     >  AS2EdiReceive 受信パイプラインは、AS2 のデコードと EDI の逆アセンブルを実行します。  

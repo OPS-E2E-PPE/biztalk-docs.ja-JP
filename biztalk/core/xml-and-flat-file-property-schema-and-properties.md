@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d917b82-62c6-489f-99a9-97e429b6f7c0
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22290418"
 ---
 # <a name="xml-and-flat-file-property-schema-and-properties"></a>XML とフラット ファイル プロパティ スキーマおよびプロパティ
 **http://schemas.microsoft.com/BizTalk/2003/xmlnorm-properties**名前空間には、フラット ファイル アセンブラとフラット ファイル逆アセンブラー パイプライン コンポーネントの構成に使用できるプロパティが含まれています。 次の表に、プロパティを示します。  

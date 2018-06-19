@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル: MQSeries アダプターを使用する BizTalk アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: MQSeries アダプターを使用する BizTalk アプリケーションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IBM WebSphere MQ queues
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - MQSeries adapters, queues
 - configuring [MQSeries adapters], tutorial
 ms.assetid: e9e169e4-d41c-4e5d-b165-7bd36b481f24
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290474"
 ---
 # <a name="walkthrough-creating-a-biztalk-application-that-uses-the-mqseries-adapter"></a>チュートリアル: MQSeries アダプターを使用する BizTalk アプリケーションの作成
 このセクションでは、MQSeries アダプターを使用する簡単な Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを作成する手順について説明します。  
@@ -44,15 +45,15 @@ ms.lasthandoff: 09/20/2017
   
 1.  をクリックして**開始**、 をポイント**プログラム**、 をポイント**IBM WebSphere MQ**、順にクリック**WebSphere MQ エクスプ ローラー**です。  
   
-2.  ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。 既定のキュー マネージャーの名前は通常**qm _***< machine_name >*場所*machine_name*お使いのコンピューターの名前を指定します。  
+2.  ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。 既定のキュー マネージャーの名前は通常**qm _***< machine_name >* 場所*machine_name*お使いのコンピューターの名前を指定します。  
   
 3.  右クリック**キュー**、 をポイント**新規**、クリックして**ローカル キュー**です。  
   
-4.  **ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**BTStoMQS**、クリックして**[ok]**です。  
+4.  **ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**BTStoMQS**、クリックして **[ok]** です。  
   
 5.  右クリック**キュー**、 をポイント**新規**、クリックして**ローカル キュー**です。  
   
-6.  **ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**MQStoBTS**、クリックして**[ok]**です。  
+6.  **ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**MQStoBTS**、クリックして **[ok]** です。  
   
  次の手順では、受信場所と送信ポートの作成、および送信ポートの開始と受信場所の有効化を行います。 IBM WebSphere MQ キューも作成します。  
   
@@ -138,7 +139,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  右クリック**MQStoBTS**、クリックして**テスト ・ メッセージ**です。  
   
-3.  **メッセージ データ**ボックスに、テスト メッセージを入力します。 **[OK]**をクリックします。  
+3.  **メッセージ データ**ボックスに、テスト メッセージを入力します。 **[OK]** をクリックします。  
   
  データを入力した後、**現在の深さ**の**MQStoBTS**キューは 1 です)。 カウントがゼロ (0) に戻る、アプリケーションでは、メッセージを処理するとき、**現在の深さ**の**BTStoMQS**が 1 (1)。 また、メッセージの内容を表示することもできます。  
   
@@ -149,7 +150,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  メッセージをダブルクリックし、、**データ**シートです。 内のメッセージのテキストを表示することができます、**メッセージ データ**ボックス。  
   
-3.  **[OK]**をクリックします。  
+3.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [MQSeries アダプターとは何ですか。](../core/what-is-the-mqseries-adapter.md)   

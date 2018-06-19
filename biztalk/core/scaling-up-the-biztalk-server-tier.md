@@ -1,18 +1,18 @@
 ---
-title: "BizTalk Server 層のスケール アップ |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 層のスケール アップ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, scaling
 - scaling, examples
 - scaling, scaling up
 ms.assetid: 9002006a-f301-4e15-94b9-6caffd7c527c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270138"
 ---
 # <a name="scaling-up-the-biztalk-server-tier"></a>BizTalk Server 層のスケール アップ
 BizTalk 層をスケール アップするには、CPU、メモリ、I/O、およびその他のリソースをアップグレードします。 次の図は、BizTalk 層を 2 台のプロセッサを搭載したコンピューターから 4 台のプロセッサを搭載したコンピューターにスケール アップする方法の例を示しています。  

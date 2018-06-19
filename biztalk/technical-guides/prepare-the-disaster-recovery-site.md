@@ -1,14 +1,14 @@
 ---
-title: "障害復旧サイトを準備する |Microsoft ドキュメント"
-ms.custom: 
+title: 障害復旧サイトを準備する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b66f3c8-afe0-4ac0-b925-8f780d14bd4b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008867"
 ---
 # <a name="prepare-the-disaster-recovery-site"></a>障害復旧サイトを準備します。
 BizTalk Server ログ配布がサポートされている 2 つのシナリオです。 1 つは、ログ配布のすべての実稼働インスタンス上のすべてのデータベースの保存場所[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]の 1 つの災害復旧のインスタンスに適用される[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]です。 その他のシナリオは、ログ配布されてのデータベースの実稼働インスタンスごとに[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]の対応するインスタンスに適用される[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]災害復旧サイトにします。 同じ番号にする完全にサポートされることに注意してください[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]実稼働環境ではより少ない物理サーバーがあるため、障害復旧サイト内のインスタンスをデータベースします。 このセクションでは、これらの準備についてを説明します。  

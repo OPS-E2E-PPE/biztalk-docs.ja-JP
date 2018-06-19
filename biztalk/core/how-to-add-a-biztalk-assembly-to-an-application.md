@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アセンブリをアプリケーションに追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アセンブリをアプリケーションに追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [applications], adding assemblies
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - applications, assemblies
 - managing [assemblies], applications
 ms.assetid: 1525a0f6-cb0f-43bf-a851-40c06ab2135e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009347"
 ---
 # <a name="how-to-add-a-biztalk-assembly-to-an-application"></a>BizTalk アセンブリをアプリケーションに追加する方法
 ここでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、BizTalk アセンブリをアプリケーションに追加する方法について説明します。  

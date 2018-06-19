@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, Windows SharePoint Services adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Windows SharePoint Services adapters, orchestrations
 - Windows SharePoint Services adapter tutorials, accessing SharePoint properties
 ms.assetid: 310c4002-3416-44c6-b409-1d5467063e28
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010963"
 ---
 # <a name="walkthrough-module-3---accessing-sharepoint-properties-from-an-orchestration"></a>チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス
 このチュートリアルでは、継続の[チュートリアル: モジュール 2 - Windows SharePoint Services アダプターと Office の統合](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md)し、受信メッセージでの Windows SharePoint Services コンテキスト プロパティにアクセスする方法を示します実行時間とし、動的ポート、オーケストレーションでのプロパティに基づいてメッセージの送信先を判断します。 概要については、Windows SharePoint Services アダプターを参照してください。 [Windows SharePoint Services アダプターは何ですか。](../core/what-is-the-windows-sharepoint-services-adapter.md)です。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 12/01/2017
   
 6.  右クリック`Amount`をクリックして**昇格**、順にクリック**クイック昇格**です。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
     > [!NOTE]
     >  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、これに対応するプロパティ スキーマが現在のプロジェクト内に作成されます。  
@@ -99,7 +100,7 @@ ms.lasthandoff: 12/01/2017
   
 6.  **画面のポートのバインド**で、既定値のままにし、クリックして**次**です。  
   
-7.  **[完了]**をクリックします。  
+7.  **[完了]** をクリックします。  
   
 8.  **オーケストレーション****ポートの種類**、展開、`PurchaseOrderPT`ポートの種類。  
   
@@ -149,7 +150,7 @@ ms.lasthandoff: 12/01/2017
   
 6.  **画面のポートのバインド****ポートの通信方向** `I'll always be sending messages on this port`、順にクリック**次へ**です。  
   
-7.  **[完了]**をクリックします。  
+7.  **[完了]** をクリックします。  
   
 #### <a name="add-a-send-shape-to-the-orchestration"></a>オーケストレーションへの送信図形の追加  
   
@@ -183,7 +184,7 @@ ms.lasthandoff: 12/01/2017
     Message_PO(OrderProcess.PropertySchema.Amount) > 1000  
     ```  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 #### <a name="add-another-send-port-to-the-orchestration"></a>オーケストレーションへの別の送信ポートの追加  
   
@@ -201,7 +202,7 @@ ms.lasthandoff: 12/01/2017
   
 7.  **ポートのバインド** `Dynamic`、順にクリック**次へ**です。  
   
-8.  **[完了]**をクリックします。  
+8.  **[完了]** をクリックします。  
   
 #### <a name="add-a-send-shape-to-the-decide-shape"></a>判断図形への送信図形の追加  
   
@@ -234,7 +235,7 @@ ms.lasthandoff: 12/01/2017
     SendToTasksList(Microsoft.XLANGs.BaseTypes.Address) = "wss://localhost/sites/WSSAdapterWalkthrough/Lists/Tasks/";  
     ```  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 ## <a name="construct-a-new-message"></a>新しいメッセージの構築  
  ここでは、ある種類のメッセージの新しいインスタンスをオーケストレーションに構築する、メッセージ構築図形をソリューションに追加します。 この手順は、受信メッセージをコピーして新しいメッセージを作成し、そのコンテキスト プロパティを変更する方法を示しています。 BizTalk 内ではメッセージは不変である、つまり、作成した後に元のメッセージに変更を加えることはできないため、この手順が必要になります。  
@@ -267,7 +268,7 @@ ms.lasthandoff: 12/01/2017
     > [!IMPORTANT]
     >  上記のコンテキスト プロパティに指定する値は、大文字と小文字が区別されます。 コンテキスト プロパティと動的なポートの構成値を設定するときに正しい大文字小文字を使用するか、送信ポートを BizTalk の試行を指定したドキュメントをルーティングする場合は、エラーが発生することを確認する必要があります。  
   
-9. **[OK]**をクリックします。  
+9. **[OK]** をクリックします。  
   
 10. をクリックして**ファイル**、クリックして**すべてを保存**です。  
   
@@ -295,7 +296,7 @@ ms.lasthandoff: 12/01/2017
   
 4.  **受信場所のプロパティ**ダイアログ ボックスで、**全般**`XMLReceive`の**受信パイプライン**プロパティです。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 #### <a name="modify-the-send-port"></a>送信ポートの変更  
   
@@ -335,7 +336,7 @@ ms.lasthandoff: 12/01/2017
   
 6.  **バインド**`SendToDestination`の`SendPurchaseOrder`論理送信ポート。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
 8.  右クリックして`OrderProcess.MyCompanyOrderProcessing`オーケストレーション、およびクリック**開始**です。  
   
@@ -358,7 +359,7 @@ ms.lasthandoff: 12/01/2017
   
 7.  **Purchase Order Date**フィールドに「`1/3/2005`です。  
   
-8.  **[保存]**をクリックします。  
+8.  **[保存]** をクリックします。  
   
 9. **名前を付けて保存** ダイアログ ボックスで、「`http://<server_name>/sites/WSSAdapterWalkthrough/Source`で、**ファイル名**フィールド、および ENTER キーを押します。  
   
@@ -372,7 +373,7 @@ ms.lasthandoff: 12/01/2017
   
 14. 移行先ドキュメント ライブラリに表示されます、メッセージのこのライブラリの一覧です。 アーカイブ ドキュメント ライブラリにアーカイブされたコピーも紹介します。  
   
-15. **[ホーム]**をクリックします。  
+15. **[ホーム]** をクリックします。  
   
 16. **を一覧表示**をクリックして**タスク**です。  
   

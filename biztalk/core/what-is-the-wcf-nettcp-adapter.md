@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289410"
 ---
 # <a name="what-is-the-wcf-nettcp-adapter"></a>WCF-NetTcp アダプタについて
 WCF-NetTcp アダプタは、サービスとクライアントの両方が WCF ベースである環境において、コンピュータ間またはプロセス間の接続通信を実現します。 このアダプタからは、SOAP セキュリティ、信頼性、およびトランザクションの各機能にフル アクセスできます。 このアダプタは、TCP トランスポートを使用し、メッセージではバイナリ エンコードを使用します。  

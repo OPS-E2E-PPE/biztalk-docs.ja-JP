@@ -8,15 +8,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0841c52a-7b15-45f8-9900-f5c9e3abd90b
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: gplarsen
 ms.author: hisdocs; plarsen
 manager: anneta
 ms.openlocfilehash: 124c077d7a15a4938f94239518ad02c8268074a4
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30250998"
 ---
 # <a name="how-to-back-up-the-master-secret"></a>マスター シークレットをバックアップする方法
 マスター シークレットは、マスター シークレット サーバーから NTFS ファイル システムまたはリムーバブル メディア (フロッピー ディスクなど) にバックアップできます。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 03/28/2018
   
      既定のインストール ディレクトリは*\<ドライブ >*: \program files \common files \enterprise シングル サインオンします。  
   
-4.  型`ssoconfig –backupsecret <backup file>`ここで、 *\<バックアップ ファイル >*マスター シークレットがバックアップ先、たとえば、ファイルの名前とパスは、`A:\ssobackup.bak`です。  
+4.  型`ssoconfig –backupsecret <backup file>`ここで、 *\<バックアップ ファイル >* マスター シークレットがバックアップ先、たとえば、ファイルの名前とパスは、`A:\ssobackup.bak`です。  
   
 5.  このファイルを保護するためにパスワードを指定します。  
   

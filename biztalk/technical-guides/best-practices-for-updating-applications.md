@@ -1,14 +1,14 @@
 ---
-title: "アプリケーションを更新するためのベスト プラクティス |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションを更新するためのベスト プラクティス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 072eaf25-a1ee-4af3-b034-525a04260ef4
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009435"
 ---
 # <a name="best-practices-for-updating-applications"></a>アプリケーションの更新のベスト プラクティス
 このトピックでは、BizTalk アプリケーションとアイテムを更新する場合の使用を検討する必要がありますしてベスト プラクティスについて説明します。  

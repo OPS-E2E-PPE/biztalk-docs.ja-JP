@@ -1,15 +1,15 @@
 ---
-title: "UI のガイダンスと開発者リファレンス |Microsoft ドキュメント"
-description: "アダプター, BizTalk マッパーでは、オーケストレーション デザイナーは、ルール エンジン展開ウィザード、Web サービス公開ウィザード、および BizTalk Server で複数のユーザー インターフェイス (UI) のヘルプ"
-ms.custom: 
+title: UI のガイダンスと開発者リファレンス |Microsoft ドキュメント
+description: アダプター, BizTalk マッパーでは、オーケストレーション デザイナーは、ルール エンジン展開ウィザード、Web サービス公開ウィザード、および BizTalk Server で複数のユーザー インターフェイス (UI) のヘルプ
+ms.custom: ''
 ms.date: 09/04/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b8539fc6-35fb-4c9c-bdc6-c7aefb5efe0a
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279754"
 ---
 # <a name="biztalk-server-ui-help--developers-reference"></a>開発者用リファレンス (&)、BizTalk Server の UI のヘルプ
 

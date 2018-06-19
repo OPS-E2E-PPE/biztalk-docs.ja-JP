@@ -1,11 +1,11 @@
 ---
-title: "Windows SharePoint Services アダプターのプロパティのリファレンス |Microsoft ドキュメント"
-ms.custom: 
+title: Windows SharePoint Services アダプターのプロパティのリファレンス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ConfigCustomTemplatesDocLib property [Windows SharePoint Services adapters]
@@ -40,7 +40,7 @@ helpviewer_keywords:
 - ConfigNamespaceAliases property [Windows SharePoint Services adapters]
 - ConfigAdapterWSPort property [Windows SharePoint Services adapters]
 ms.assetid: c64c43ac-05bb-427c-987a-71663ae8e43d
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -49,6 +49,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22291754"
 ---
 # <a name="windows-sharepoint-services-adapter-properties-reference"></a>Windows SharePoint Services アダプタのプロパティに関するリファレンス
 次の Windows SharePoint Services アダプタのプロパティは、BizTalk Server に昇格されるか、送信メッセージの送信ポート構成オプションを指定するために使用されます。 これらのプロパティを使用すると、メッセージに関する Windows SharePoint Services の情報にアクセスしたり、オーケストレーション内部から Windows SharePoint Services アダプタに情報を提供することができます。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
 |プロパティの型|Description|  
 |-------------------|-----------------|  
-|**IN**|IN プロパティは、Windows SharePoint Services から値を取得する BizTalk Server のプロパティです。 **注:**オーケストレーション内からこれらのプロパティを変更しないでください。|  
+|**IN**|IN プロパティは、Windows SharePoint Services から値を取得する BizTalk Server のプロパティです。 **注:** オーケストレーション内からこれらのプロパティを変更しないでください。|  
 |**構成**|CONFIG プロパティは、BizTalk オーケストレーションまたはカスタム パイプラインから値を取得するプロパティです。 この値は、送信メッセージの送信先を判断する際に Windows SharePoint Services アダプタで使用されます。 CONFIG プロパティを使用すると、オーケストレーションやカスタム パイプライン内の一部のプロパティの値を指定できます。このプロパティを使用しない場合は、送信ポートで定義する必要があります。 URL プロパティを除き、IN または CONFIG で始まらないプロパティは、IN および CONFIG の両方になります。|  
 |**昇格**|PROMOTED プロパティは、コンテンツ ベースのルーティング (CBR) で使用できます。 PROMOTED に設定されていないプロパティは、CBR で使用できません。 **注:** cbr、昇格されたプロパティのみを使用できますが、すべてのアダプター プロパティが CBR フィルタ エディタで表示、します。|  
 |**特殊です**|なし|  
@@ -102,18 +103,18 @@ ms.lasthandoff: 09/20/2017
 |ファイル サイズ|InFileSize|xs:int|Windows SharePoint Services ファイルのサイズ。|IN|  
 |なし|InListName|xs:string|このファイルが存在するドキュメント ライブラリの名前。|IN/PROMOTED|  
 |なし|InListUrl|xs:string|ドキュメント ライブラリの URL、つまり、このファイルが存在するドキュメント ライブラリ フォルダ。|IN|  
-|なし|InPropertiesXml|xs:string|標準およびユーザー定義の Windows SharePoint Services 列をすべて含むフラット XML ドキュメント。 このドキュメントにより、オーケストレーションから任意の Windows SharePoint Services 列の値 (ユーザー定義列の値など) にアクセスできます。 **注:** 16 列の制限はありません。 **注:**このトピックの次のセクションにある InPropertiesXml 値のサンプルを参照してください。|IN|  
+|なし|InPropertiesXml|xs:string|標準およびユーザー定義の Windows SharePoint Services 列をすべて含むフラット XML ドキュメント。 このドキュメントにより、オーケストレーションから任意の Windows SharePoint Services 列の値 (ユーザー定義列の値など) にアクセスできます。 **注:** 16 列の制限はありません。 **注:** このトピックの次のセクションにある InPropertiesXml 値のサンプルを参照してください。|IN|  
 |なし|InOfficeIntegration|xs:string|受信場所の値に基づきます。 `yes`、`no`、または `optional` のいずれかになります。|IN|  
-|なし|ConfigOverwrite|xs:string|"Yes" を指定すると、同じ名前を持つ既存のファイルが上書きされます。 "No" を指定すると、同じ名前のファイルが存在する場合にエラーが生成されます。 "Rename" を指定すると、一意なシーケンスをファイル名に追加することにより、ファイルが一意な名前に変更されます。 **注:**物理送信ポートの「上書き」フィールドに似ています。 **注:** 'Orchestration' は、このフィールドの有効な値ではありません。|CONFIG|  
+|なし|ConfigOverwrite|xs:string|"Yes" を指定すると、同じ名前を持つ既存のファイルが上書きされます。 "No" を指定すると、同じ名前のファイルが存在する場合にエラーが生成されます。 "Rename" を指定すると、一意なシーケンスをファイル名に追加することにより、ファイルが一意な名前に変更されます。 **注:** 物理送信ポートの「上書き」フィールドに似ています。 **注:** 'Orchestration' は、このフィールドの有効な値ではありません。|CONFIG|  
 |なし|ConfigNamespaceAliases|xs:string|XPATH のエイリアス定義。|CONFIG|  
-|なし|ConfigOfficeIntegration|xs:string|OfficeImporters を呼び出す必要がある場合は 'Yes' を指定します。 メッセージをそのまま処理する場合は 'No' を指定します。 'Optional' を指定すると、IP ソリューションが見つかる場合は 'Yes'、それ以外の場合は 'No' になります。 **注:**物理送信ポートの"Microsoft Office Integration"フィールドに似ています。 **注:** 'Orchestration' は、このフィールドの有効な値ではありません。|CONFIG|  
-|なし|ConfigTemplatesDocLib|xs:string|フォールバック ドキュメント ライブラリの名前。 2 番目に検索される場所です。 **注:**物理送信ポートの [テンプレート フォールバック ドキュメント ライブラリ] フィールドに似ています。|CONFIG|  
-|なし|ConfigTemplatesNamespaceCol|xs:string|フォールバック ドキュメント ライブラリの名前空間列名。 **注:**物理送信ポートの 'テンプレート フォールバック Namespace 列' フィールドに似ています。|CONFIG|  
-|なし|ConfigCustomTemplatesDocLib|xs:string|プライマリ ドキュメント ライブラリの名前。 最初に検索される場所です。 **注:**物理送信ポートの [テンプレート ドキュメント ライブラリ] フィールドに似ています。|CONFIG|  
-|なし|ConfigCustomTemplatesNamespaceCol|xs:string|プライマリ ドキュメント ライブラリの名前空間列名。 **注:**物理送信ポートの [テンプレート Namespace 列] フィールドに似ています。|CONFIG|  
-|なし|ConfigPropertiesXml|xs:string|後から Windows SharePoint Services で更新される Windows SharePoint Services 列の名前と値をすべて含むフラット XML ドキュメント。 このドキュメントにより、オーケストレーションの開発者は、SharePoint で後続のメッセージが作成されるように SharePoint 列の値を設定できます。 **注:**と列 n の値フィールドの物理送信ポートが列 n で利用できる機能に似ています。 **注:** 16 列の制限があります。 **注:**このトピックの「ConfigPropertiesXml 値サンプルを参照してください。|CONFIG|  
+|なし|ConfigOfficeIntegration|xs:string|OfficeImporters を呼び出す必要がある場合は 'Yes' を指定します。 メッセージをそのまま処理する場合は 'No' を指定します。 'Optional' を指定すると、IP ソリューションが見つかる場合は 'Yes'、それ以外の場合は 'No' になります。 **注:** 物理送信ポートの"Microsoft Office Integration"フィールドに似ています。 **注:** 'Orchestration' は、このフィールドの有効な値ではありません。|CONFIG|  
+|なし|ConfigTemplatesDocLib|xs:string|フォールバック ドキュメント ライブラリの名前。 2 番目に検索される場所です。 **注:** 物理送信ポートの [テンプレート フォールバック ドキュメント ライブラリ] フィールドに似ています。|CONFIG|  
+|なし|ConfigTemplatesNamespaceCol|xs:string|フォールバック ドキュメント ライブラリの名前空間列名。 **注:** 物理送信ポートの 'テンプレート フォールバック Namespace 列' フィールドに似ています。|CONFIG|  
+|なし|ConfigCustomTemplatesDocLib|xs:string|プライマリ ドキュメント ライブラリの名前。 最初に検索される場所です。 **注:** 物理送信ポートの [テンプレート ドキュメント ライブラリ] フィールドに似ています。|CONFIG|  
+|なし|ConfigCustomTemplatesNamespaceCol|xs:string|プライマリ ドキュメント ライブラリの名前空間列名。 **注:** 物理送信ポートの [テンプレート Namespace 列] フィールドに似ています。|CONFIG|  
+|なし|ConfigPropertiesXml|xs:string|後から Windows SharePoint Services で更新される Windows SharePoint Services 列の名前と値をすべて含むフラット XML ドキュメント。 このドキュメントにより、オーケストレーションの開発者は、SharePoint で後続のメッセージが作成されるように SharePoint 列の値を設定できます。 **注:** と列 n の値フィールドの物理送信ポートが列 n で利用できる機能に似ています。 **注:** 16 列の制限があります。 **注:** このトピックの「ConfigPropertiesXml 値サンプルを参照してください。|CONFIG|  
 |なし|ConfigTimeout|xs:int|Web サービス呼び出しのタイムアウト (ミリ秒単位)。|CONFIG|  
-|なし|ConfigAdapterWSPort|xs:int|アダプタがインストールおよび構成されているポートまたは IIS Web サイト。 **注:**オーケストレーションでの無効なポートの構成値物理送信ポートの値は、定義されているオーケストレーションの値をオーバーライドする場合でも、メッセージが中断されます。|CONFIG|  
+|なし|ConfigAdapterWSPort|xs:int|アダプタがインストールおよび構成されているポートまたは IIS Web サイト。 **注:** オーケストレーションでの無効なポートの構成値物理送信ポートの値は、定義されているオーケストレーションの値をオーバーライドする場合でも、メッセージが中断されます。|CONFIG|  
   
 ## <a name="sample-inpropertiesxml"></a>InPropertiesXml のサンプル  
  InPropertiesXml のサンプル XML を次に示します。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290642"
 ---
 # <a name="using-visual-studio"></a>Visual Studio の使用
 BizTalk プロジェクト システム内では、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の多くのツールを使用できるほか、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上で動作するアプリケーションの作成専用に設計されたツールも使用できます。 ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で動作するアプリケーションの作成に使用できる、共通の手順をいくつか説明します。  
@@ -39,7 +40,7 @@ BizTalk プロジェクト システム内では、Microsoft [!INCLUDE[btsVStudi
 |サブメニュー名|サブメニュー名 (該当する場合)|Description|  
 |------------------|------------------------------------|-----------------|  
 ||||  
-|**他のウィンドウ**|**オーケストレーションの種類**|[オーケストレーションの種類] ウィンドウは、オーケストレーション パラメーター、ポート、ポートの種類、メッセージやマルチパート メッセージの種類、関連付けセットや関連付けの種類、ロール リンクやロール リンクの種類、スコープ、およびオーケストレーションのプロパティの追加、削除、検証を行えるウィンドウです。 **注:**このウィンドウは、開いたオーケストレーションから利用できるのみです。|  
+|**他のウィンドウ**|**オーケストレーションの種類**|[オーケストレーションの種類] ウィンドウは、オーケストレーション パラメーター、ポート、ポートの種類、メッセージやマルチパート メッセージの種類、関連付けセットや関連付けの種類、ロール リンクやロール リンクの種類、スコープ、およびオーケストレーションのプロパティの追加、削除、検証を行えるウィンドウです。 **注:** このウィンドウは、開いたオーケストレーションから利用できるのみです。|  
 |**他のウィンドウ**|**式エディター**|[式エディター] ウィンドウは、複雑な式を入力できる IntelliSense を備えた標準の [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] テキスト エディターを表示するウィンドウです。|  
 |**[ツールボックス]**|**BizTalk パイプライン コンポーネント**|これは、パイプラインのデザイン画面にドラッグできるパイプライン コンポーネントの一覧です。 使用できるパイプライン コンポーネントをアクティブなパイプラインに追加することのみが可能です。|  
 |**[ツールボックス]**|**BizTalk オーケストレーション**|これは、オーケストレーションのデザイン画面にドラッグできるオーケストレーション図形の一覧です。|  
@@ -55,8 +56,8 @@ BizTalk プロジェクト システム内では、Microsoft [!INCLUDE[btsVStudi
 |**参照を追加します。**|他のプロジェクト、.NET プロジェクト、または COM プロジェクトを参照するときに使用します。|  
 |**サービス参照を追加します。**|WCF サービス参照を追加するときに使用します。 使用することも、この項目をクリックして Web 参照を追加する**詳細**上、**サービス参照の追加** ダイアログ ボックス。|  
 |**生成された項目を追加します。**|生成済みのアダプターまたはスキーマ ファイルを追加するか、WCF サービスを使用するときに使用します。|  
-|**アダプター サービス参照を追加します。**|このメニュー項目を使用して、メタデータの参照 (および検索)、および選択した操作と種類に応じた .NET CLR プロキシ クラスを生成します。 **注:**この項目で BizTalk メニューの場合にのみに少なくとも 1 つのアダプターが表示されます (に付属して[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]) がコンピューターにインストールされています。|  
-|**追加アダプター参照**|このメニュー項目を使用して、アダプターからのメタデータの参照 (および検索)、および選択した操作に応じた XML スキーマを生成します。 **注:**この項目で BizTalk メニューの場合にのみに少なくとも 1 つのアダプターが表示されます (に付属して[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]) がコンピューターにインストールされています。|  
+|**アダプター サービス参照を追加します。**|このメニュー項目を使用して、メタデータの参照 (および検索)、および選択した操作と種類に応じた .NET CLR プロキシ クラスを生成します。 **注:** この項目で BizTalk メニューの場合にのみに少なくとも 1 つのアダプターが表示されます (に付属して[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]) がコンピューターにインストールされています。|  
+|**追加アダプター参照**|このメニュー項目を使用して、アダプターからのメタデータの参照 (および検索)、および選択した操作に応じた XML スキーマを生成します。 **注:** この項目で BizTalk メニューの場合にのみに少なくとも 1 つのアダプターが表示されます (に付属して[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]) がコンピューターにインストールされています。|  
   
  BizTalk Web サービスの Web 参照を追加する方法については、次を参照してください。 [Web 参照を追加する](../core/adding-web-references.md)です。  
   
@@ -86,7 +87,7 @@ BizTalk プロジェクト システム内では、Microsoft [!INCLUDE[btsVStudi
 |**目次**|このメニュー コマンドが表示されます、**内容**タブし、インストールされているすべてのヘルプ コレクションを表示します。 これらのコンテンツを表示するには、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] および [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の製品ドキュメントがインストールされている必要があります。|  
 |**Microsoft BizTalk Server について**|このメニュー コマンドが表示されます、 **Microsoft BizTalk Server に関する** ダイアログ ボックス。 このダイアログ ボックスには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の製品情報が表示されます。|  
 |**Index**|このリリースの [キーワード] からは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のヘルプ ドキュメントにアクセスすることはできません。|  
-|**検索**|フィルターがない、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ ドキュメントを選択する場合は、このリリースに**(フィルターなし)**で、**でフィルター処理された**ドロップダウン リスト、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ ドキュメントがあります。検索します。|  
+|**検索**|フィルターがない、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ ドキュメントを選択する場合は、このリリースに **(フィルターなし)** で、**でフィルター処理された**ドロップダウン リスト、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ ドキュメントがあります。検索します。|  
   
 ## <a name="property-pages"></a>プロパティ ページ  
  プロジェクト デザイナーのプロパティ ページを使用すると、アセンブリのプロジェクト プロパティを構成したり、BizTalk プロジェクトを展開するためのプロパティを構成したりできます。  

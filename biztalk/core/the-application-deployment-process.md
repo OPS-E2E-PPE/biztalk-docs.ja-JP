@@ -1,17 +1,17 @@
 ---
-title: "アプリケーションの展開プロセス |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションの展開プロセス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, deploying
 - deploying [applications], how to
 ms.assetid: 29486c37-6aa7-46fd-a457-916fd235f448
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279738"
 ---
 # <a name="the-application-deployment-process"></a>アプリケーション展開プロセス
 次の図に、BizTalk アプリケーションの展開に関連する一般的な手順を示します。 アプリケーションの展開の開発、テスト、ステージング、および運用フェーズ中に関連するタスクの詳細については、次を参照してください。[アプリケーション展開作業](../core/application-deployment-tasks.md)です。  

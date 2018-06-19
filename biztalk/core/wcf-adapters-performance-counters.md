@@ -1,18 +1,18 @@
 ---
-title: "WCF アダプタのパフォーマンス カウンタ |Microsoft ドキュメント"
-ms.custom: 
+title: WCF アダプタのパフォーマンス カウンタ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, WCF adapters
 - performance, performance counters
 - WCF adapters, performance
 ms.assetid: 9feb052f-5674-419f-84ab-9b5d312a04a5
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289474"
 ---
 # <a name="wcf-adapters-performance-counters"></a>WCF アダプタのパフォーマンス カウンタ
 パフォーマンス カウンタを使用すると、サービスによってサイトまたはシステムで実行されている作業の具体的な側面を監視できます。 パフォーマンス カウンターは、サーバー パフォーマンスに関する問題を特定してトラブルシューティングする際に役立ちます。 WCF アダプタ自体のパフォーマンス カウンタはありません。 しかし、Windows Communication Foundation (WCF) のパフォーマンス カウンタを監視して、WCF 受信場所のパフォーマンスを測定できます。 WCF 受信場所に対して WCF パフォーマンス カウンタを使用するには、受信場所を実行するホスト インスタンスのパフォーマンス カウンタを有効にする必要があります。  

@@ -1,14 +1,14 @@
 ---
-title: "アダプターのデザインに関するヒント |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターのデザインに関するヒント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0bb60988-4e48-4654-9cf4-512dd7c97239
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279866"
 ---
 # <a name="tips-for-designing-your-adapter"></a>アダプターのデザインに関するヒント
 ここでは、アダプターをデザインする間にアダプターの開発者が習得したヒントについて説明します。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
  問題の原因は、ランタイムに対して提示される値がオーバーライドされるかどうかが不明であることです。 通常は、値に対して NULL の概念を定義しておき、その値に対してテストを実行します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で XSD ベースのプロパティ シートを使用するときの問題は、NULL は文字列でのみサポートされるということです。 この NULL テストを使用することによってアダプターに既定の設定値を指定し、アダプターの設定の種類を文字列型に制限しようとした場合も、ユーザー インターフェイスが不適切に表示される可能性があります。  
   
- XSD 生成プロパティ シートのみをサポートして、NULL に戻すプロパティの設定をこの時点では、プロパティを右クリックして、**交わした?**コンテキスト メニューが表示され、プロパティを NULL に設定することができます。 プロパティが NULL であるかどうかについての視覚的なフィードバックはありません。  
+ XSD 生成プロパティ シートのみをサポートして、NULL に戻すプロパティの設定をこの時点では、プロパティを右クリックして、**交わした?** コンテキスト メニューが表示され、プロパティを NULL に設定することができます。 プロパティが NULL であるかどうかについての視覚的なフィードバックはありません。  
   
 ## <a name="considerations-for-implementing-schema-generation-wizards"></a>スキーマ生成ウィザードを実装する際の考慮事項  
  プログラマは、厳密に型指定されたオブジェクト モデルに逆らう形でコードを作成します。 コードで XML を操作するのは、最初のうちは作業しづらく、エラーの発生を招くことがあります。 ただし、コツや .NET Framework によって提供されているサポートを適切に使用することによって、劇的に簡単になることがあります。  

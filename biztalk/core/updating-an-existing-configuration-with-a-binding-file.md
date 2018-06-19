@@ -1,11 +1,11 @@
 ---
-title: "バインド ファイルと共に、既存の構成の更新 |Microsoft ドキュメント"
-ms.custom: 
+title: バインド ファイルと共に、既存の構成の更新 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - binding files, updating
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - binding files, customizing
 - artifacts, updating
 ms.assetid: 11580e59-7147-42d0-a976-f6b5e6933d24
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22291498"
 ---
 # <a name="updating-an-existing-configuration-with-a-binding-file"></a>バインド ファイルを使用した既存の構成の更新
 バインド ファイルの情報により既存の構成情報が置き換えられます。 バインド ファイルのアイテムの名前が既存の構成のアイテムの名前と一致する場合は、バインド ファイルをインポートすると、バインド ファイルのアイテムで既存の構成のアイテムが更新されます。  

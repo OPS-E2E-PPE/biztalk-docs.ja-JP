@@ -1,14 +1,14 @@
 ---
-title: "マップのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: マップのテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 265afd62-3c1d-4b9a-9f51-176b9b079241
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279602"
 ---
 # <a name="testing-a-map"></a>マップのテスト
 デザイン時に EDI プロジェクトのマップをテストできます。 それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。 このトピックの内容を設定して使用する方法を説明します、**マップのテスト**XML ツール拡張の機能です。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]表示されます、 **EDI インスタンスのプロパティ**TestMap プロセス中に 2 回 ダイアログ ボックス: 入力メッセージ インスタンスを解釈するためには、1 回、1 回は出力メッセージ インスタンスを生成するためです。 ただし、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はダイアログ ボックスを 3 回以上表示したり、EDI スキーマ以外のダイアログ ボックスを表示したりすることがあります。 場合は、クリックして**OK**  ダイアログ ボックスを閉じます。  
   
-10. **[OK]**をクリックします。  
+10. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [デザイン時 XML ツールを使用します。](../core/using-design-time-xml-tools.md)

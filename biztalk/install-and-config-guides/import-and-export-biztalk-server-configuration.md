@@ -1,15 +1,15 @@
 ---
-title: "インポートおよびエクスポートの BizTalk Server の構成 |Microsoft ドキュメント"
-description: "手順を適用するインポート、エクスポート、または、コンポーネントの構成を解除およびデータベースと BizTalk Server でのサービス アカウントを更新"
-ms.custom: 
+title: インポートおよびエクスポートの BizTalk Server の構成 |Microsoft ドキュメント
+description: 手順を適用するインポート、エクスポート、または、コンポーネントの構成を解除およびデータベースと BizTalk Server でのサービス アカウントを更新
+ms.custom: ''
 ms.date: 08/14/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c6206ed8-d087-44cc-8ab5-da5d8a28e09a
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300130"
 ---
 # <a name="import-and-export-biztalk-server-configuration"></a>BizTalk Server 構成のインポートとエクスポート
 BizTalk Server 構成では、ローカル コンピューターにインストールした機能の構成状態に関する包括的な分析が提供されます。 このツールを使用すると、機能の構成と構成解除、セキュリティ設定の構成、および構成のインポートとエクスポートを行えます。  

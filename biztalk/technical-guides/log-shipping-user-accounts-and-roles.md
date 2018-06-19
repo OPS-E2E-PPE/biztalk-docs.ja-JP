@@ -1,14 +1,14 @@
 ---
-title: "ログ配布のユーザー アカウントとロール |Microsoft ドキュメント"
-ms.custom: 
+title: ログ配布のユーザー アカウントとロール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2056ea90-5e9f-4501-95d6-18c905db4023
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010603"
 ---
 # <a name="log-shipping-user-accounts-and-roles"></a>ログ配布のユーザー アカウントとロール
 BizTalk Server のバックアップとログを復元するプロセスを自動化する SQL Server エージェント ジョブはログ配布、実行します。 不適切なアクセス許可には、復元操作が失敗する BizTalk Server ログ配布によって実行される可能性があります。 データベースを復元するように構成するユーザー アカウントは、BizTalk 管理データベースをホストしている実稼働データベース インスタンスへのアクセスに必要です。 ほとんどの場合つまり、このサービス アカウントの災害復旧の BizTalk Server のログ配布ジョブを推進 SQL Server エージェント ジョブ[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスは、ログインや、をホストしている実稼働データベースインスタンスに対するアクセス許可が必要です[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。管理データベース。 これにより、ジョブの所有者として、SQL Server エージェント サービス アカウントが構成されていることを前提としています。  

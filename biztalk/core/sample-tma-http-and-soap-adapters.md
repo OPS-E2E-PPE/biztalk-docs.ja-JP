@@ -1,11 +1,11 @@
 ---
-title: "サンプル TMA: HTTP アダプタと SOAP アダプタ |Microsoft ドキュメント"
-ms.custom: 
+title: 'サンプル TMA: HTTP アダプタと SOAP アダプタ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, examples
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - SOAP adapters, TMA
 - HTTP adapters, TMA
 ms.assetid: d9a40cff-92a1-4bc9-ae45-3a5857f70222
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272106"
 ---
 # <a name="sample-tma-http-and-soap-adapters"></a>サンプル TMA: HTTP アダプタと SOAP アダプタ
 このトピックでは、サンプル アーキテクチャの HTTP アダプターと SOAP (Web サービス) アダプター シナリオ向けの脅威モデル分析 (TMA) について説明します。 次の図は、HTTP アダプタと SOAP アダプタ シナリオのサンプル アーキテクチャを示しています。  
@@ -79,7 +80,7 @@ ms.lasthandoff: 09/20/2017
 |メッセージからユーザーの資格情報が読み取られる|基本認証を使用していて、メッセージにユーザーの資格情報が含まれている場合、悪意のあるユーザーが資格情報へのアクセス権を取得し、その資格情報を使用してアプリケーションにアクセスすることがあります。|ユーザーの資格情報|情報の漏えい<br /><br /> 権限の昇格|  
   
 ## <a name="step-3-review-threats-http-and-soap-adapters-scenario"></a>手順 3. (HTTP アダプタと SOAP アダプタ シナリオ) 脅威を確認します。  
- このセクションでは、サンプル アーキテクチャの HTTP アダプタと SOAP (Web サービス) アダプタ シナリオで特定された脅威に対して実行したリスク分析の結果を示します。 主な脅威モデルについてのミーティングは後、脅威を確認し、次の影響カテゴリ各脅威のリスクを識別するために使用します**D**amage 潜在的な、 **R**eproducibility、 **E。**xploitability、 **A**影響を受けるユーザー、および**D**iscoverability です。  
+ このセクションでは、サンプル アーキテクチャの HTTP アダプタと SOAP (Web サービス) アダプタ シナリオで特定された脅威に対して実行したリスク分析の結果を示します。 主な脅威モデルについてのミーティングは後、脅威を確認し、次の影響カテゴリ各脅威のリスクを識別するために使用します**D**amage 潜在的な、 **R**eproducibility、 **E。** xploitability、 **A**影響を受けるユーザー、および**D**iscoverability です。  
   
  次の表は、HTTP アダプタと SOAP アダプタを使用して BizTalk Server との間でメッセージを送受信したときに特定された脅威のリスクの度合いを示しています。  
   

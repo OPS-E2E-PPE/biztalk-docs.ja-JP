@@ -1,14 +1,14 @@
 ---
-title: "クライアント エンドポイント構成をエクスポートできません |。Microsoft ドキュメント"
-ms.custom: 
+title: クライアント エンドポイント構成をエクスポートできません |。Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d93fe5e-fdb2-49c5-86de-d428b1ecda7f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286954"
 ---
 # <a name="unable-to-export-client-endpoint-configuration"></a>クライアント エンドポイント構成をエクスポートできません
 ## <a name="details"></a>詳細  
@@ -38,10 +39,10 @@ ms.lasthandoff: 09/20/2017
   
      \- または -  
   
--   一部の必須プロパティが正しく指定されていませんなど**アドレス (URI)**と**バインディングの種類**です。  
+-   一部の必須プロパティが正しく指定されていませんなど**アドレス (URI)** と**バインディングの種類**です。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 次の手順を使用して、ユーザーのアクセス許可を確認し、確認を**アドレス (URI)**と**バインディングの種類**設定が有効です。  
+ 次の手順を使用して、ユーザーのアクセス許可を確認し、確認を**アドレス (URI)** と**バインディングの種類**設定が有効です。  
   
 #### <a name="to-verify-user-permissions-and-confirm-settings"></a>ユーザーのアクセス許可と設定を確認するには  
   
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  トランスポート名を右クリックします。  
   
-5.  **[プロパティ]**をクリックします。  
+5.  **[プロパティ]** をクリックします。  
   
 6.  ポート**型**一覧で、適切なポートを選択します。  
   

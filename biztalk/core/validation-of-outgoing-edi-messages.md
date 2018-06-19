@@ -1,14 +1,14 @@
 ---
-title: "送信 EDI メッセージの検証 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信 EDI メッセージの検証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 491303c0-b585-409e-a289-a2f6f9f82469
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287994"
 ---
 # <a name="validation-of-outgoing-edi-messages"></a>送信 EDI メッセージの検証
 EDI 送信パイプラインは、送信対象のメッセージを処理するとき、エンベロープとメッセージ データに対して一連の検証を実行します。 これらの処理のうちの一部は常に実行されますが、有効にした場合にのみ実行される処理もあります。 これらの検証には、以下が含まれます。  

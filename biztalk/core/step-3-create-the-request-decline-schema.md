@@ -1,14 +1,14 @@
 ---
-title: "手順 3: 要求拒否スキーマの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: 要求拒否スキーマの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e1ce166c-1be1-4ef4-9d00-3da7038d4ada
-caps.latest.revision: "39"
+caps.latest.revision: 39
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278554"
 ---
 # <a name="step-3-create-the-request-decline-schema"></a>ステップ 3: 要求拒否スキーマの作成
 ![手順 5 の 3](../core/media/step-3of5.gif "Step_3of5")  
   
  **所要時間:** 7 分  
   
- **目標:**メッセージのスキーマを作成するこの手順で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ビジネス プロセスで在庫補充要求を拒否した場合は、倉庫に返送します。  
+ **目標:** メッセージのスキーマを作成するこの手順で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ビジネス プロセスで在庫補充要求を拒否した場合は、倉庫に返送します。  
   
- **目的:**スキーマ、データと要求拒否メッセージの構造を定義します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、メッセージ内のデータの識別と操作にスキーマが使用されます。  
+ **目的:** スキーマ、データと要求拒否メッセージの構造を定義します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、メッセージ内のデータの識別と操作にスキーマが使用されます。  
   
 ## <a name="prerequisites"></a>前提条件  
  このステップを開始する前に、以下の要件を確認してください。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
     |**インストールされたテンプレート**|をクリックして**スキーマ ファイル**、クリックして**スキーマ**です。|  
     |**名前**|「`RequestDecline.xsd`.|  
   
-3.  **[追加]**をクリックします。  
+3.  **[追加]** をクリックします。  
   
 4.  BizTalk エディターで、スキーマ ツリーからをクリックして、**ルート**ノードをオンにします。  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  という 2 つ目の子フィールド要素を追加`GrandTotal`です。  
   
-9. **[ファイル]** メニューの **[すべてを保存]**をクリックします。  
+9. **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
 ## <a name="what-did-i-just-do"></a>でしただけは何ですか。  
  このステップでは、ビジネス プロセスで在庫要求が拒否された場合に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] から倉庫に返されるメッセージ用のスキーマを作成しました。  

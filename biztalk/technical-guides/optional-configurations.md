@@ -1,14 +1,14 @@
 ---
-title: "オプションの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: オプションの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3f4b0b51-2cad-4cb5-b6cd-4db92bd199fa
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976760"
 ---
 # <a name="optional-configurations"></a>オプションの構成
 BizTalk Server 管理パックをインポートした後、[監視] ウィンドウのナビゲーション ウィンドウには、自動的に検出されるオブジェクトの種類が表示されます。 オブジェクトの種類の一覧は、次を参照してください。[管理パックで検出されるオブジェクト](../technical-guides/objects-the-management-pack-discovers.md)セクションです。 によって検出されるオブジェクトの既定の検出構成を変更することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パック。 構成設定を変更するのにには、Operations Manager 2007 R2 または 2012 の上書き機能を使用します。  

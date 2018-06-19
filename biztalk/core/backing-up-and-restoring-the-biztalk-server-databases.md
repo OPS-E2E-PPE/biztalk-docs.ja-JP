@@ -1,11 +1,11 @@
 ---
-title: "バックアップと、BizTalk Server データベースを復元 |Microsoft ドキュメント"
-ms.custom: 
+title: バックアップと、BizTalk Server データベースを復元 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, BizTalk Server
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - maintaining, backing up
 - transaction logs
 ms.assetid: 7c08ce19-614c-4728-8dde-c40d4052339e
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230370"
 ---
 # <a name="backing-up-and-restoring-the-biztalk-server-databases"></a>バックアップと、BizTalk Server データベースの復元
 ここでは、BizTalk Server データベースをバックアップおよび復元する方法について説明します。 ハードウェア障害が発生したときに整合性のある BizTalk Server 環境を復元するためには、このセクションの手順に従う必要があります。 BizTalk Server では、いくつものデータベースに関わる分散トランザクションが実行されるため、すべてのデータベースのバックアップおよび復元が不可欠です。  

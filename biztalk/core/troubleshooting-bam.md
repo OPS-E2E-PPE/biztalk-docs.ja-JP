@@ -1,14 +1,14 @@
 ---
-title: "BAM のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: BAM のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e63299a8-5c74-4337-ba20-3213e0c6ea1f
-caps.latest.revision: 
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710257"
 ---
 # <a name="troubleshooting-bam"></a>BAM のトラブルシューティング
 このトピックでは、ビジネス アクティビティ監視 (BAM) の使用時に生じる問題のトラブルシューティングに役立つ情報について説明します。  
@@ -24,7 +25,7 @@ ms.lasthandoff: 02/28/2018
 ## <a name="bam-deployment-failed"></a>BAM を展開できない  
  SQL Server Analysis Services が使用できないときにリアルタイム集計 (RTA) を含む BAM 定義を展開しようとすると、Bm.exe コマンドで次のメッセージが表示されます。  
   
- エラー: BAM の展開に失敗しました。 接続できません。 サーバーが実行中であることを確認してください。 対象のコンピューターによって拒否されたため接続は行われません *\<IP アドレス\>*です。  
+ エラー: BAM の展開に失敗しました。 接続できません。 サーバーが実行中であることを確認してください。 対象のコンピューターによって拒否されたため接続は行われません *\<IP アドレス\>* です。  
   
  このエラーは、SQL Server Analysis Services がインストールされ構成済みであり、RTA を含む BAM 定義を展開するために実行されている必要があるために発生します。  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 02/28/2018
   
 4.  **アドイン**  ウィンドウで、をクリックして **移動**します。  
   
-5.  **アドイン** ダイアログ ボックスで、 **ビジネス アクティビティ監視** チェック ボックスをオンにし **[ok]**します。  
+5.  **アドイン** ダイアログ ボックスで、 **ビジネス アクティビティ監視** チェック ボックスをオンにし **[ok]** します。  
   
      ![追加 (& a) #45; アドイン ダイアログ ボックス](../core/media/addins.gif "AddIns")  
   
@@ -122,7 +123,7 @@ Failed to get data.  If available, errors returned from the provider are listed 
   
 4.  **Local Area Connection**  ページで、 **インターネット プロトコル バージョン 4 (Tcp/ipv4)**, 、 をクリック **プロパティ**します。  
   
-5.  **[詳細設定]**をクリックします。 **TCP/IP 詳細設定** ページで、クリックして、 **DNS**  タブをクリックします。  
+5.  **[詳細設定]** をクリックします。 **TCP/IP 詳細設定** ページで、クリックして、 **DNS**  タブをクリックします。  
   
 6.  選択 **これらの DNS サフィックスを追加する** し、必要な DNS サフィックスを追加します。  
   

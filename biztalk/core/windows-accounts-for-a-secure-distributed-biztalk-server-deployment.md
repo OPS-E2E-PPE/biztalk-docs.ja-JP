@@ -1,11 +1,11 @@
 ---
-title: "Windows アカウントをセキュリティで保護された分散型 BizTalk Server 展開の |Microsoft ドキュメント"
-ms.custom: 
+title: Windows アカウントをセキュリティで保護された分散型 BizTalk Server 展開の |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Server, Windows groups
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - user accounts, administrators
 - architecture, large distributions
 ms.assetid: 2a0893ef-8bfb-481b-b024-7f7d6e2a6f09
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974960"
 ---
 # <a name="windows-accounts-for-a-secure-distributed-biztalk-server-deployment"></a>セキュリティで保護された分散型 BizTalk Server 展開向けの Windows アカウント
 BizTalk Server の展開のシステム アーキテクチャに関する詳細については、次を参照してください。[サンプル BizTalk Server アーキテクチャ](../core/sample-biztalk-server-architectures.md)です。  
@@ -75,7 +76,7 @@ BizTalk Server の展開のシステム アーキテクチャに関する詳細�
 |BizTalk 管理者|ユーザー|BizTalk 管理者<br /><br /> SSO 関連管理者|  
 |BizTalk オペレーター|ユーザー|BizTalk Operators|  
 |BizTalk 処理 1|サービス|BizTalk 処理ホスト ユーザー 1|  
-|BizTalk 処理 2**注:**環境内で各処理ホストの複数のアカウントを作成することができます。|サービス|BizTalk 処理ホスト ユーザー 1|  
+|BizTalk 処理 2**注:** 環境内で各処理ホストの複数のアカウントを作成することができます。|サービス|BizTalk 処理ホスト ユーザー 1|  
 |BizTalk 追跡|サービス|BizTalk 追跡ホスト ユーザー|  
 |SOAP アダプター|サービス|BizTalk SOAP ユーザー|  
 |HTTP アダプター|サービス|BizTalk HTTP ユーザー|  

@@ -1,14 +1,14 @@
 ---
-title: "WCF クライアントでのシングル サインオンを使用するための偽装を許可する必要があります |Microsoft ドキュメント"
-ms.custom: 
+title: WCF クライアントでのシングル サインオンを使用するための偽装を許可する必要があります |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5b9f294-4d8a-4a12-91e8-8d325db7c420
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288610"
 ---
 # <a name="wcf-client-must-allow-impersonation-to-use-single-sign-on"></a>シングル サインオンを使用するには、WCF クライアントが権限借用を許可する必要があります
 ## <a name="details"></a>詳細  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  トランスポート名を右クリックします。  
   
-5.  **[プロパティ]**をクリックします。  
+5.  **[プロパティ]** をクリックします。  
   
 6.  ポート**型**一覧で、 **Wcf-custom** (または**Wcf-customisolate**)。  
   

@@ -1,14 +1,14 @@
 ---
-title: "リスト メカニズムを使用した単純型の派生 |Microsoft ドキュメント"
-ms.custom: 
+title: リスト メカニズムを使用した単純型の派生 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14f3c7b7-7585-4297-9177-2deaef8355f0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270962"
 ---
 # <a name="simple-type-derivation-using-the-list-mechanism"></a>リスト メカニズムを使用した単純型の派生
 リスト メカニズムを使用して既存の単純型から新しい単純型を派生させる場合、この型の属性や要素の値を、空白で区切られた一覧として指定できます。この一覧には、指定された型の値が示されます。 たとえば、属性または要素の値を、整数型の値が示される空白区切りの一覧として指定できます。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
  変更すると、**フィールド要素**ノードまたは**フィールド属性**ノード (単純型の派生のプロセスを開始し)、基本データ型を持つように入力して、を設定してデータを持つから**Derived By**プロパティを**一覧**、XSD ビューの対応するフラグメントで、次の変更を確認することができます。  
   
--   前に、新しく挿入されると**フィールド要素**という名前のノード**"zipcodelist"**です。  
+-   前に、新しく挿入されると**フィールド要素**という名前のノード **"zipcodelist"** です。  
   
     ```  
     <xs:element name="ContainingRecord">  
@@ -64,7 +65,7 @@ ms.lasthandoff: 09/20/2017
     ```  
   
 > [!NOTE]
->  実際のスキーマがあります最初を定義し、名前を 5 桁の数値を整数に制限する整数の単純型から派生する方がよいとその派生するために、 **"zipcodelist"**にリストを効果的に制限する、その型から要素5 桁の数字を持つ整数。  
+>  実際のスキーマがあります最初を定義し、名前を 5 桁の数値を整数に制限する整数の単純型から派生する方がよいとその派生するために、 **"zipcodelist"** にリストを効果的に制限する、その型から要素5 桁の数字を持つ整数。  
   
 ## <a name="see-also"></a>参照  
  [単純型の派生](../core/simple-type-derivation.md)

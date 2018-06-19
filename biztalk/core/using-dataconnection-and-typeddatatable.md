@@ -1,11 +1,11 @@
 ---
-title: "DataConnection と TypedDataTable を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: DataConnection と TypedDataTable を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Retract function [Business Rules Engine], TypedData table
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - Update function [Business Rules Engine], TypedData table
 - Update function [Business Rules Engine], DataConnection
 ms.assetid: e825803e-6626-4ddd-a77e-75a3ba2b74a4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287546"
 ---
 # <a name="using-dataconnection-and-typeddatatable"></a>DataConnection と TypedDataTable の使用
 使用して、多くのシナリオで**DataConnection**パフォーマンスを向上させると、使用するよりも少ないメモリを消費する**TypedDataTable**です。 ただし、 **TypedDataTable**で必要になる場合によってを使用して上の特定の制限のため**DataConnection**です。 場合によっては他を使用して**TypedDataTable**を使用するよりも優れたパフォーマンスが生じる**DataConnection**です。 このトピックでは、正しいアプローチを選択するために考慮する必要がある条件と要因について説明します。  

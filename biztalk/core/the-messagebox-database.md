@@ -1,11 +1,11 @@
 ---
-title: "メッセージ ボックス データベース |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ ボックス データベース |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, MessageBox database
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - MessageBox database
 - suspended messages, MessageBox database
 ms.assetid: f89eb02c-1b83-4127-8a91-e78fb4a1f96e
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279314"
 ---
 # <a name="the-messagebox-database"></a>メッセージ ボックス データベース
 Microsoft BizTalk Server の公開/サブスクライブ エンジンの中心となるのは、メッセージ ボックス データベースです。 2 つのコンポーネントのメッセージ ボックス データベースから成る: 1 つまたは複数の Microsoft SQL Server データベースとメッセージング エージェントです。 メッセージ、メッセージ部分、メッセージ プロパティ、サブスクリプション、オーケストレーションの状態、追跡データ、ルーティングのためのホスト キューなど、その他多くの要素に対して、SQL Server データベースによる永続的なストアが提供されます。 BizTalk Server グループには、メッセージの公開先として 1 つまたは複数のメッセージ ボックス データベースを設定できます。メッセージのサブスクライバーは、これらのデータベースからメッセージを抽出します。  

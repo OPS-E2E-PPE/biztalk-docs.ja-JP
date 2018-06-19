@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67a353e7-1ba3-427a-8e99-c9b8d83061cb
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25976072"
 ---
 # <a name="wcf-webhttp-adapter"></a>WCF-WebHttp アダプター
 [!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用して、 **Wcf-webhttp** RESTful サービスにメッセージを送信するアダプター。 **Wcf-webhttp** 送信アダプターは、BizTalk メッセージからサービスに HTTP メッセージを送信します。 受信場所は RESTful サービスからのメッセージを受信します。 GET および DELETE 要求の場合、アダプターはペイロードを使用しません。 POST および PUT 要求の場合は、アダプターは HTTP コンテンツ/ペイロードに BizTalk メッセージのボディ部を使用します。  
@@ -81,7 +82,7 @@ ms.lasthandoff: 03/23/2018
     |**失敗時に要求メッセージを中断します。**|受信パイプラインまたはルーティングの障害によって受信処理に失敗した要求メッセージを保留するかどうかを指定します。<br /><br /> 既定値はオフです。|  
     |**エラーに例外の詳細を含める**|エラーが発生した場合に、デバッグのために SOAP エラーを返すかどうかを指定します。<br /><br /> 既定値はオフです。|  
   
-9. **[OK]**をクリックします。  
+9. **[OK]** をクリックします。  
   
 10. **[受信場所のプロパティ]** ダイアログ ボックスで、受信場所を構成するための適切な値を入力し、**[OK]** をクリックして設定を保存します。 については、 **受信場所のプロパティ** ダイアログ ボックスを参照してください [受信場所を作成する方法](../core/how-to-create-a-receive-location.md)します。  
 

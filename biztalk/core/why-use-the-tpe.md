@@ -1,14 +1,14 @@
 ---
-title: "TPE を使用する理由 | Microsoft Docs"
-ms.custom: 
+title: TPE を使用する理由 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8a198e0a-517e-4254-ac2b-177f49ef0174
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289082"
 ---
 # <a name="why-use-the-tpe"></a>TPE を使用する理由
 注文、請求、在庫管理などのビジネス プロセスは、E コマースの基本的な業務です。 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用することで、ビジネス プロセスの状態に関する特定の情報や集計されたリアルタイム情報を収集することができます。 たとえば、ある顧客の注文が処理されているにもかかわらず出荷されていない理由や、過去 48 時間以内に販売され出荷された製品の数量を確認することができます。  
