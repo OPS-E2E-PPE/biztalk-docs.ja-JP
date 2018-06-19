@@ -1,14 +1,14 @@
 ---
-title: "すべての要素ノード |Microsoft ドキュメント"
-ms.custom: 
+title: すべての要素ノード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7e30fcf-31bc-4d48-9bc7-0be90e927127
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963696"
 ---
 # <a name="any-element-nodes"></a><span data-ttu-id="71d05-102">すべての要素ノード</span><span class="sxs-lookup"><span data-stu-id="71d05-102">Any Element Nodes</span></span>
 <span data-ttu-id="71d05-103">BizTalk エディターで行うこともできます、 **Any 要素**不明な要素が表示されるインスタンス メッセージ内の場所を示すためにノードです。</span><span class="sxs-lookup"><span data-stu-id="71d05-103">In BizTalk Editor, you can use an **Any Element** node to indicate a location within an instance message where unknown elements may appear.</span></span> <span data-ttu-id="71d05-104">これにより、特定の要素がインスタンス メッセージ内の特定の場所に出現することはあらかじめわかっているが、要素の名前や複雑さの程度が不確定な状況にも対応できます。</span><span class="sxs-lookup"><span data-stu-id="71d05-104">This accommodates situations in which you know that some element might appear at a particular location within an instance message, but you do not know the name of the element, or how complicated it might be.</span></span> <span data-ttu-id="71d05-105">配置した場合、 **Any 要素**ノードのスキーマでは、BizTalk 内で適切な位置には、このようなメッセージの不明な部分を処理できます。</span><span class="sxs-lookup"><span data-stu-id="71d05-105">If you place an **Any Element** node at the appropriate location within the schema, BizTalk can process such unknown portions of a message.</span></span> <span data-ttu-id="71d05-106">唯一の要件は、対応する XML が整形式であることです。</span><span class="sxs-lookup"><span data-stu-id="71d05-106">The only requirement is that the corresponding XML is well-formed.</span></span>  

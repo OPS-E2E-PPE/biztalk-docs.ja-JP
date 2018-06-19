@@ -1,11 +1,11 @@
 ---
-title: "SAP アダプターと BizTalk Server でのセキュリティ |Microsoft ドキュメント"
-ms.custom: 
+title: SAP アダプターと BizTalk Server でのセキュリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - credentials, protecting
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - security, protecting credentials
 - SSO
 ms.assetid: 702cd0f9-d8e1-4dad-8774-b552481d5390
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217778"
 ---
 # <a name="security-with-the-sap-adapter-and-biztalk-server"></a><span data-ttu-id="35e4e-102">SAP アダプターと BizTalk Server でのセキュリティ</span><span class="sxs-lookup"><span data-stu-id="35e4e-102">Security with the SAP adapter and BizTalk Server</span></span>
 <span data-ttu-id="35e4e-103">BizTalk Server 管理コンソールを使用して、コンソールまたはを使用して、送信ポートまたは受信ポート (場所) を構成するときに、 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] BizTalk ソリューションのメッセージ スキーマを取得するには、SAP システムの資格情報を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="35e4e-103">When you configure a send port or a receive port (location) by using the BizTalk Server Administration console or use the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to retrieve message schemas for a BizTalk solution, you must provide credentials for the SAP system.</span></span> <span data-ttu-id="35e4e-104">悪意のある相手に公開されるを防ぐためにセキュリティで保護された方法でこれらの資格情報を提供する重要です。</span><span class="sxs-lookup"><span data-stu-id="35e4e-104">It is important to supply these credentials in a secure way to help prevent them from being revealed to potentially malicious actors.</span></span> <span data-ttu-id="35e4e-105">このトピックで最も安全に資格情報を指定する方法について説明します、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]の BizTalk Server ソリューションです。</span><span class="sxs-lookup"><span data-stu-id="35e4e-105">This topic discusses how to most securely supply credentials for the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] for BizTalk Server solutions.</span></span>  

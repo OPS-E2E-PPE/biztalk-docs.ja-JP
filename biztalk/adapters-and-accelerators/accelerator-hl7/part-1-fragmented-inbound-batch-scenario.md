@@ -1,18 +1,18 @@
 ---
-title: "パート 1: 断片化した受信バッチ シナリオ |Microsoft ドキュメント"
-ms.custom: 
+title: 'パート 1: 断片化した受信バッチ シナリオ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching, fragmenting messages
 - batching tutorial, fragmenting messages
 - fragmenting messages
 ms.assetid: 8adf2c17-5f66-408d-b30b-51b22d8e71fa
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206218"
 ---
 # <a name="part-1-fragmented-inbound-batch-scenario"></a><span data-ttu-id="341d8-102">パート 1: 断片化した受信バッチのシナリオ</span><span class="sxs-lookup"><span data-stu-id="341d8-102">Part 1: Fragmented Inbound Batch Scenario</span></span>
 <span data-ttu-id="341d8-103">このチュートリアルには、個別のメッセージにフラグメント、および、先に個々 のメッセージを送信、HL7 でエンコードされたバッチを受信します。</span><span class="sxs-lookup"><span data-stu-id="341d8-103">In this part of the tutorial, you receive an HL7-encoded batch, fragment it into individual messages, and send the individual messages to a destination.</span></span> <span data-ttu-id="341d8-104">次の図は、このプロセスの流れを示しています。</span><span class="sxs-lookup"><span data-stu-id="341d8-104">The following figure shows the flow of this process.</span></span>  

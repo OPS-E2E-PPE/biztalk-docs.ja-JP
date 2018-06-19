@@ -1,18 +1,18 @@
 ---
-title: "カスタム ハンドラーに送信するための FRR 送信ポートの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム ハンドラーに送信するための FRR 送信ポートの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, send ports
 - send ports, creating
 - FRR, creating send ports
 ms.assetid: 036f1f97-17a2-4e02-a85a-a52739a48528
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966544"
 ---
 # <a name="creating-the-frr-send-ports-for-sending-to-the-custom-handlers"></a><span data-ttu-id="1a330-102">カスタム ハンドラーに送信するための FRR 送信ポートの作成</span><span class="sxs-lookup"><span data-stu-id="1a330-102">Creating the FRR Send Ports for Sending to the Custom Handlers</span></span>
 <span data-ttu-id="1a330-103">FIN 対応調整を実行する必要があります (元のメッセージまたは応答) メッセージを送信するの各送信ポートの系列を作成するから[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]相関関係を持つメッセージを処理するカスタム ハンドラーにします。</span><span class="sxs-lookup"><span data-stu-id="1a330-103">To perform FIN Response Reconciliation, you need to create a series of send ports, each of which sends a message (original message or response) from [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] to the custom handlers that process the correlated messages.</span></span>  
@@ -52,12 +53,12 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="1a330-127">[FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-127">In the FILE Transport Properties dialog box, click **Browse**.</span></span>  
   
-6.  <span data-ttu-id="1a330-128">フォルダーの参照 ダイアログ ボックスからメッセージを送信するフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="1a330-128">In the Browse For Folder dialog box, move to the folder that you want to send messages from.</span></span> <span data-ttu-id="1a330-129">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1a330-129">Click **OK**.</span></span>  
+6.  <span data-ttu-id="1a330-128">フォルダーの参照 ダイアログ ボックスからメッセージを送信するフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="1a330-128">In the Browse For Folder dialog box, move to the folder that you want to send messages from.</span></span> <span data-ttu-id="1a330-129">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1a330-129">Click **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="1a330-130">このフォルダーが存在しない場合を使用してそれを作成、**新しいフォルダーの作成**コマンド。</span><span class="sxs-lookup"><span data-stu-id="1a330-130">If this folder does not exist, you can create it using the **Make New Folder** command.</span></span>  
   
-7.  <span data-ttu-id="1a330-131">**ファイル名**ボックスに、入力**%MessageID%.txt**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-131">In the **File name** box, type **%MessageID%.txt**, and then click **OK**.</span></span>  
+7.  <span data-ttu-id="1a330-131">**ファイル名**ボックスに、入力 **%MessageID%.txt**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-131">In the **File name** box, type **%MessageID%.txt**, and then click **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="1a330-132">メッセージの種類ごとに別のフォルダーを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="1a330-132">You can create a different folder for each type of message.</span></span>  
@@ -71,11 +72,11 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="1a330-136">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1a330-136">Use this</span></span>|<span data-ttu-id="1a330-137">目的</span><span class="sxs-lookup"><span data-stu-id="1a330-137">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="1a330-138">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="1a330-138">**Property**</span></span>|<span data-ttu-id="1a330-139">選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-139">Select **Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**.</span></span>|  
-    |<span data-ttu-id="1a330-140">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-140">**Operator**</span></span>|<span data-ttu-id="1a330-141">選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-141">Select **==**.</span></span>|  
+    |<span data-ttu-id="1a330-140">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-140">**Operator**</span></span>|<span data-ttu-id="1a330-141">選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="1a330-141">Select **==**.</span></span>|  
     |<span data-ttu-id="1a330-142">**値**</span><span class="sxs-lookup"><span data-stu-id="1a330-142">**Value**</span></span>|<span data-ttu-id="1a330-143">型**A4SWIFT_FrrService**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-143">Type **A4SWIFT_FrrService**.</span></span>|  
     |<span data-ttu-id="1a330-144">**[グループ]**</span><span class="sxs-lookup"><span data-stu-id="1a330-144">**Group**</span></span>|<span data-ttu-id="1a330-145">**And**</span><span class="sxs-lookup"><span data-stu-id="1a330-145">**And**</span></span>|  
     |<span data-ttu-id="1a330-146">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="1a330-146">**Property**</span></span>|<span data-ttu-id="1a330-147">選択**BTS です。操作**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-147">Select **BTS.Operation**.</span></span>|  
-    |<span data-ttu-id="1a330-148">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-148">**Operator**</span></span>|<span data-ttu-id="1a330-149">選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-149">Select **==**.</span></span>|  
+    |<span data-ttu-id="1a330-148">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-148">**Operator**</span></span>|<span data-ttu-id="1a330-149">選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="1a330-149">Select **==**.</span></span>|  
     |<span data-ttu-id="1a330-150">**値**</span><span class="sxs-lookup"><span data-stu-id="1a330-150">**Value**</span></span>|<span data-ttu-id="1a330-151">BTS のいずれかを入力します。次の表の値を操作します。</span><span class="sxs-lookup"><span data-stu-id="1a330-151">Type one of the BTS.Operation values from the table below.</span></span>|  
   
      <span data-ttu-id="1a330-152">BTS です。操作では、次の値のいずれかを入力します。</span><span class="sxs-lookup"><span data-stu-id="1a330-152">For BTS.Operation, enter one of the following values:</span></span>  
@@ -100,35 +101,35 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="1a330-175">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1a330-175">Use this</span></span>|<span data-ttu-id="1a330-176">目的</span><span class="sxs-lookup"><span data-stu-id="1a330-176">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="1a330-177">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="1a330-177">**Property**</span></span>|<span data-ttu-id="1a330-178">選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-178">Select **Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**.</span></span>|  
-    |<span data-ttu-id="1a330-179">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-179">**Operator**</span></span>|<span data-ttu-id="1a330-180">選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-180">Select **==**.</span></span>|  
+    |<span data-ttu-id="1a330-179">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-179">**Operator**</span></span>|<span data-ttu-id="1a330-180">選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="1a330-180">Select **==**.</span></span>|  
     |<span data-ttu-id="1a330-181">**値**</span><span class="sxs-lookup"><span data-stu-id="1a330-181">**Value**</span></span>|<span data-ttu-id="1a330-182">型**A4SWIFT_FrrService**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-182">Type **A4SWIFT_FrrService**.</span></span>|  
     |<span data-ttu-id="1a330-183">**[グループ]**</span><span class="sxs-lookup"><span data-stu-id="1a330-183">**Group**</span></span>|<span data-ttu-id="1a330-184">**And**</span><span class="sxs-lookup"><span data-stu-id="1a330-184">**And**</span></span>|  
     |<span data-ttu-id="1a330-185">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="1a330-185">**Property**</span></span>|<span data-ttu-id="1a330-186">選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FrrFailed**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-186">Select **Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FrrFailed**.</span></span>|  
-    |<span data-ttu-id="1a330-187">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-187">**Operator**</span></span>|<span data-ttu-id="1a330-188">選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-188">Select **==**.</span></span>|  
+    |<span data-ttu-id="1a330-187">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-187">**Operator**</span></span>|<span data-ttu-id="1a330-188">選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="1a330-188">Select **==**.</span></span>|  
     |<span data-ttu-id="1a330-189">**値**</span><span class="sxs-lookup"><span data-stu-id="1a330-189">**Value**</span></span>|<span data-ttu-id="1a330-190">型**True**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-190">Type **True**.</span></span>|  
     |<span data-ttu-id="1a330-191">**[グループ]**</span><span class="sxs-lookup"><span data-stu-id="1a330-191">**Group**</span></span>|<span data-ttu-id="1a330-192">**And**</span><span class="sxs-lookup"><span data-stu-id="1a330-192">**And**</span></span>|  
     |<span data-ttu-id="1a330-193">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="1a330-193">**Property**</span></span>|<span data-ttu-id="1a330-194">選択**BTS です。操作**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-194">Select **BTS.Operation**.</span></span>|  
-    |<span data-ttu-id="1a330-195">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-195">**Operator**</span></span>|<span data-ttu-id="1a330-196">選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-196">Select **==**.</span></span>|  
+    |<span data-ttu-id="1a330-195">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-195">**Operator**</span></span>|<span data-ttu-id="1a330-196">選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="1a330-196">Select **==**.</span></span>|  
     |<span data-ttu-id="1a330-197">**値**</span><span class="sxs-lookup"><span data-stu-id="1a330-197">**Value**</span></span>|<span data-ttu-id="1a330-198">型**A4SWIFT_FrrSendMTMsg**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-198">Type **A4SWIFT_FrrSendMTMsg**.</span></span>|  
     |<span data-ttu-id="1a330-199">**[グループ]**</span><span class="sxs-lookup"><span data-stu-id="1a330-199">**Group**</span></span>|<span data-ttu-id="1a330-200">**And**</span><span class="sxs-lookup"><span data-stu-id="1a330-200">**And**</span></span>|  
     |<span data-ttu-id="1a330-201">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="1a330-201">**Property**</span></span>|<span data-ttu-id="1a330-202">選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-202">Select **Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**.</span></span>|  
-    |<span data-ttu-id="1a330-203">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-203">**Operator**</span></span>|<span data-ttu-id="1a330-204">選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-204">Select **==**.</span></span>|  
+    |<span data-ttu-id="1a330-203">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-203">**Operator**</span></span>|<span data-ttu-id="1a330-204">選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="1a330-204">Select **==**.</span></span>|  
     |<span data-ttu-id="1a330-205">**値**</span><span class="sxs-lookup"><span data-stu-id="1a330-205">**Value**</span></span>|<span data-ttu-id="1a330-206">型 *\<NAKErrorCode\>*、"Y01"などです。</span><span class="sxs-lookup"><span data-stu-id="1a330-206">Type *\<NAKErrorCode\>*, such as "Y01".</span></span>|  
     |<span data-ttu-id="1a330-207">**[グループ]**</span><span class="sxs-lookup"><span data-stu-id="1a330-207">**Group**</span></span>|<span data-ttu-id="1a330-208">**Or**</span><span class="sxs-lookup"><span data-stu-id="1a330-208">**Or**</span></span>|  
     |<span data-ttu-id="1a330-209">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="1a330-209">**Property**</span></span>|<span data-ttu-id="1a330-210">選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-210">Select **Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**.</span></span>|  
-    |<span data-ttu-id="1a330-211">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-211">**Operator**</span></span>|<span data-ttu-id="1a330-212">選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-212">Select **==**.</span></span>|  
+    |<span data-ttu-id="1a330-211">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-211">**Operator**</span></span>|<span data-ttu-id="1a330-212">選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="1a330-212">Select **==**.</span></span>|  
     |<span data-ttu-id="1a330-213">**値**</span><span class="sxs-lookup"><span data-stu-id="1a330-213">**Value**</span></span>|<span data-ttu-id="1a330-214">型**TimedOut**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-214">Type **TimedOut**.</span></span>|  
     |<span data-ttu-id="1a330-215">**[グループ]**</span><span class="sxs-lookup"><span data-stu-id="1a330-215">**Group**</span></span>|<span data-ttu-id="1a330-216">**Or**</span><span class="sxs-lookup"><span data-stu-id="1a330-216">**Or**</span></span>|  
     |<span data-ttu-id="1a330-217">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="1a330-217">**Property**</span></span>|<span data-ttu-id="1a330-218">選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-218">Select **Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**.</span></span>|  
-    |<span data-ttu-id="1a330-219">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-219">**Operator**</span></span>|<span data-ttu-id="1a330-220">選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-220">Select **==**.</span></span>|  
+    |<span data-ttu-id="1a330-219">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-219">**Operator**</span></span>|<span data-ttu-id="1a330-220">選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="1a330-220">Select **==**.</span></span>|  
     |<span data-ttu-id="1a330-221">**値**</span><span class="sxs-lookup"><span data-stu-id="1a330-221">**Value**</span></span>|<span data-ttu-id="1a330-222">型**TransportError**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-222">Type **TransportError**.</span></span>|  
     |<span data-ttu-id="1a330-223">**[グループ]**</span><span class="sxs-lookup"><span data-stu-id="1a330-223">**Group**</span></span>|<span data-ttu-id="1a330-224">**Or**</span><span class="sxs-lookup"><span data-stu-id="1a330-224">**Or**</span></span>|  
     |<span data-ttu-id="1a330-225">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="1a330-225">**Property**</span></span>|<span data-ttu-id="1a330-226">選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-226">Select **Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**.</span></span>|  
-    |<span data-ttu-id="1a330-227">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-227">**Operator**</span></span>|<span data-ttu-id="1a330-228">選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-228">Select **==**.</span></span>|  
+    |<span data-ttu-id="1a330-227">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-227">**Operator**</span></span>|<span data-ttu-id="1a330-228">選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="1a330-228">Select **==**.</span></span>|  
     |<span data-ttu-id="1a330-229">**値**</span><span class="sxs-lookup"><span data-stu-id="1a330-229">**Value**</span></span>|<span data-ttu-id="1a330-230">型**DelayedNAK**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-230">Type **DelayedNAK**.</span></span>|  
     |<span data-ttu-id="1a330-231">**[グループ]**</span><span class="sxs-lookup"><span data-stu-id="1a330-231">**Group**</span></span>|<span data-ttu-id="1a330-232">**Or**</span><span class="sxs-lookup"><span data-stu-id="1a330-232">**Or**</span></span>|  
     |<span data-ttu-id="1a330-233">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="1a330-233">**Property**</span></span>|<span data-ttu-id="1a330-234">選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-234">Select **Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**.</span></span>|  
-    |<span data-ttu-id="1a330-235">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-235">**Operator**</span></span>|<span data-ttu-id="1a330-236">選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-236">Select **==**.</span></span>|  
+    |<span data-ttu-id="1a330-235">**演算子**</span><span class="sxs-lookup"><span data-stu-id="1a330-235">**Operator**</span></span>|<span data-ttu-id="1a330-236">選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="1a330-236">Select **==**.</span></span>|  
     |<span data-ttu-id="1a330-237">**値**</span><span class="sxs-lookup"><span data-stu-id="1a330-237">**Value**</span></span>|<span data-ttu-id="1a330-238">型**AbortMessage**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-238">Type **AbortMessage**.</span></span>|  
   
 12. <span data-ttu-id="1a330-239">をクリックして**適用**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="1a330-239">Click **Apply**, and then click **OK**.</span></span>  

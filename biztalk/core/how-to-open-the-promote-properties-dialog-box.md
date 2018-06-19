@@ -1,14 +1,14 @@
 ---
-title: "開く方法、プロパティの昇格 ダイアログ ボックス |Microsoft ドキュメント"
-ms.custom: 
+title: 開く方法、プロパティの昇格 ダイアログ ボックス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 23fce94a-d5dc-4b1a-93c7-a459785cfeb1
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970504"
 ---
 # <a name="how-to-open-the-promote-properties-dialog-box"></a><span data-ttu-id="ef161-102">[プロパティの昇格] ダイアログ ボックスを開く方法</span><span class="sxs-lookup"><span data-stu-id="ef161-102">How to Open the Promote Properties Dialog Box</span></span>
 <span data-ttu-id="ef161-103">管理しているプロパティの昇格、**プロパティの昇格** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="ef161-103">Property promotion is managed in the **Promote Properties** dialog box.</span></span> <span data-ttu-id="ef161-104">このトピックでは、昇格させたプロパティを管理するためのダイアログ ボックスを開く方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="ef161-104">This topic provides step-by-step instructions for opening this dialog box to manage your promoted properties.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-open-the-promote-properties-dialog-box-from-the-schema-node"></a><span data-ttu-id="ef161-107">[スキーマ] ノードから [プロパティの昇格] ダイアログ ボックスを開くには</span><span class="sxs-lookup"><span data-stu-id="ef161-107">To open the Promote Properties dialog box from the Schema node</span></span>  
   
-1.  <span data-ttu-id="ef161-108">スキーマ ツリーで、選択、 **\<スキーマ\>**ノード。</span><span class="sxs-lookup"><span data-stu-id="ef161-108">In the schema tree, select the **\<Schema\>** node.</span></span>  
+1.  <span data-ttu-id="ef161-108">スキーマ ツリーで、選択、 **\<スキーマ\>** ノード。</span><span class="sxs-lookup"><span data-stu-id="ef161-108">In the schema tree, select the **\<Schema\>** node.</span></span>  
   
 2.  <span data-ttu-id="ef161-109">[プロパティ] ウィンドウで、省略記号ボタンをクリックして (**.**) の値フィールドのボタン、**プロパティの昇格**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="ef161-109">In the Properties window, click the ellipsis (**...**) button in the value field of the **Promote Properties** property.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "手順 2: ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e804da96-26ae-482d-b6e1-67af24d639d9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967288"
 ---
 # <a name="step-2-configure-the-ports"></a><span data-ttu-id="b470b-102">手順 2: ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="b470b-102">Step 2: Configure the Ports</span></span>
 <span data-ttu-id="b470b-103">![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span><span class="sxs-lookup"><span data-stu-id="b470b-103">![Step 2 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span></span>  
   
  <span data-ttu-id="b470b-104">**所要時間:** 15 分</span><span class="sxs-lookup"><span data-stu-id="b470b-104">**Time to complete:** 15 minutes</span></span>  
   
- <span data-ttu-id="b470b-105">**目標:**で物理ポートを作成するこの手順で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="b470b-105">**Objective:** In this step, you create the physical ports in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="b470b-106">オーケストレーションで作成した各論理ポートに対する物理ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="b470b-106">You create a physical port for each logical port you created in the orchestration.</span></span> <span data-ttu-id="b470b-107">次のポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="b470b-107">You will create the following ports:</span></span>  
+ <span data-ttu-id="b470b-105">**目標:** で物理ポートを作成するこの手順で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="b470b-105">**Objective:** In this step, you create the physical ports in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="b470b-106">オーケストレーションで作成した各論理ポートに対する物理ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="b470b-106">You create a physical port for each logical port you created in the orchestration.</span></span> <span data-ttu-id="b470b-107">次のポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="b470b-107">You will create the following ports:</span></span>  
   
 -   <span data-ttu-id="b470b-108">一方向の WCF カスタム受信する受信ポートの変更を通知メッセージ**従業員**SQL Server データベースのテーブルにします。</span><span class="sxs-lookup"><span data-stu-id="b470b-108">A one-way WCF-Custom receive port to receive notification messages for changes to **Employee** table in a SQL Server database.</span></span>  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="b470b-124">プロパティのバインド</span><span class="sxs-lookup"><span data-stu-id="b470b-124">Binding property</span></span>|<span data-ttu-id="b470b-125">値</span><span class="sxs-lookup"><span data-stu-id="b470b-125">Value</span></span>|  
     |----------------------|-----------|  
     |<span data-ttu-id="b470b-126">**InboundOperationType**</span><span class="sxs-lookup"><span data-stu-id="b470b-126">**InboundOperationType**</span></span>|<span data-ttu-id="b470b-127">これを設定して**通知**です。</span><span class="sxs-lookup"><span data-stu-id="b470b-127">Set this to **Notification**.</span></span>|  
-    |<span data-ttu-id="b470b-128">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="b470b-128">**NotificationStatement**</span></span>|<span data-ttu-id="b470b-129">これを設定します。</span><span class="sxs-lookup"><span data-stu-id="b470b-129">Set this to:</span></span><br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> <span data-ttu-id="b470b-130">**注:**する必要があります具体的には、列名を指定、ステートメントで次の Select ステートメントで示すようにします。</span><span class="sxs-lookup"><span data-stu-id="b470b-130">**Note:** You must specifically specify the column names in the statement as shown in this Select statement.</span></span> <span data-ttu-id="b470b-131">また、必要があります常を指定すると、スキーマ名、テーブル名など、`dbo.Employee`です。</span><span class="sxs-lookup"><span data-stu-id="b470b-131">Also, you must always specify the table name along with the schema name, for example, `dbo.Employee`.</span></span>|  
+    |<span data-ttu-id="b470b-128">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="b470b-128">**NotificationStatement**</span></span>|<span data-ttu-id="b470b-129">これを設定します。</span><span class="sxs-lookup"><span data-stu-id="b470b-129">Set this to:</span></span><br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> <span data-ttu-id="b470b-130">**注:** する必要があります具体的には、列名を指定、ステートメントで次の Select ステートメントで示すようにします。</span><span class="sxs-lookup"><span data-stu-id="b470b-130">**Note:** You must specifically specify the column names in the statement as shown in this Select statement.</span></span> <span data-ttu-id="b470b-131">また、必要があります常を指定すると、スキーマ名、テーブル名など、`dbo.Employee`です。</span><span class="sxs-lookup"><span data-stu-id="b470b-131">Also, you must always specify the table name along with the schema name, for example, `dbo.Employee`.</span></span>|  
     |<span data-ttu-id="b470b-132">**NotifyOnListenerStart**</span><span class="sxs-lookup"><span data-stu-id="b470b-132">**NotifyOnListenerStart**</span></span>|<span data-ttu-id="b470b-133">これを設定して**True**です。</span><span class="sxs-lookup"><span data-stu-id="b470b-133">Set this to **True**.</span></span>|  
   
      <span data-ttu-id="b470b-134">異なるバインディングのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="b470b-134">For more information about the different binding properties, see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).</span></span>  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/28/2017
   
     3.  <span data-ttu-id="b470b-148">右側のウィンドウからの**送信マップ**ボックスで、下のセルをクリックして、**マップ**列で、ドロップダウン リストから選択し、**変換 _ 1**です。</span><span class="sxs-lookup"><span data-stu-id="b470b-148">From the right-pane, in the **Outbound Maps** box, click the cell under the **Map** column, and from the drop-down list, select **Transform_1**.</span></span> <span data-ttu-id="b470b-149">これは、BizTalk のオーケストレーションで作成したマップの名前を[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="b470b-149">This is the name of the map you created in the BizTalk orchestration in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)].</span></span>  
   
-         <span data-ttu-id="b470b-150">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b470b-150">Click **OK**.</span></span>  
+         <span data-ttu-id="b470b-150">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b470b-150">Click **OK**.</span></span>  
   
          <span data-ttu-id="b470b-151">![送信マップを構成する](../../adapters-and-accelerators/adapter-sql/media/sql-adap-tut-010-map-ports.gif "sql_adap_tut_010_map_ports")</span><span class="sxs-lookup"><span data-stu-id="b470b-151">![Configure outbound map](../../adapters-and-accelerators/adapter-sql/media/sql-adap-tut-010-map-ports.gif "sql_adap_tut_010_map_ports")</span></span>  
   

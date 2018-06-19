@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25963512"
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-siebel-ebusiness-applications"></a><span data-ttu-id="e572c-103">BizTalk adapter 用 Siebel eBusiness Applications ServiceModel メタデータ ユーティリティ ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="e572c-103">Using the ServiceModel Metadata Utility Tool with the BizTalk Adapter for Siebel eBusiness Applications</span></span>
 <span data-ttu-id="e572c-104">ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用するには操作のための WCF クライアント クラスを生成すること、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]を公開します。</span><span class="sxs-lookup"><span data-stu-id="e572c-104">You can use the ServiceModel Metadata Utility Tool (svcutil.exe) to generate a WCF client class for operations that the [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] exposes.</span></span> <span data-ttu-id="e572c-105">WCF クライアント クラスを生成する svcutil.exe を実行した後は、コードで生成されたファイルをインクルードし、Siebel システムに対して操作を実行する WCF クライアント クラスのインスタンスを作成できます。</span><span class="sxs-lookup"><span data-stu-id="e572c-105">After you run svcutil.exe to generate a WCF client class, you can include the generated file in your code and create instances of the WCF client class to perform operations on the Siebel system.</span></span>  

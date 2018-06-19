@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server を使用して SQL Server で 1 つの XML パラメーターを持つストアド プロシージャを実行 |Microsoft ドキュメント"
-description: "Biztalk WCF カスタム ポートと SQL アダプタを使用してストアド プロシージャで 1 つのパラメーターを渡す"
-ms.custom: 
+title: BizTalk Server を使用して SQL Server で 1 つの XML パラメーターを持つストアド プロシージャを実行 |Microsoft ドキュメント
+description: Biztalk WCF カスタム ポートと SQL アダプタを使用してストアド プロシージャで 1 つのパラメーターを渡す
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: deb9333a-5e28-4e8d-8e0b-07b5a97a111b
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964600"
 ---
 # <a name="execute-stored-procedures-with-a-single-xml-parameter-in-sql-server-using-biztalk-server"></a><span data-ttu-id="ea95b-103">BizTalk Server を使用して SQL Server で 1 つの XML パラメーターを持つストアド プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="ea95b-103">Execute stored procedures with a single XML parameter in SQL Server using BizTalk Server</span></span>
 <span data-ttu-id="ea95b-104">」の説明に従って、他のストアド プロシージャの実行に似ていますが、1 つのパラメーターを受け取るストアド プロシージャを実行する[BizTalk Server を使用して SQL Server でストアド プロシージャの実行](execute-stored-procedures-in-sql-server-using-biztalk-server.md)です。</span><span class="sxs-lookup"><span data-stu-id="ea95b-104">Executing a stored procedure that takes a single parameter is similar to executing any other stored procedure as described in [Execute Stored Procedures in SQL Server using BizTalk Server](execute-stored-procedures-in-sql-server-using-biztalk-server.md).</span></span> <span data-ttu-id="ea95b-105">ただし、上記のリンクで説明されているアプローチのデザイン時にストアド プロシージャのメタデータを生成し、実行時にプロシージャを呼び出すオーケストレーションを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ea95b-105">However, for the approach described in the preceding link, you need to generate metadata for the stored procedure at design time and create an orchestration to invoke the procedure at run time.</span></span>  
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/28/2017
   
 8.  <span data-ttu-id="ea95b-143">**Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="ea95b-143">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="ea95b-144">クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、SQL Server の接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="ea95b-144">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for SQL Server.</span></span> <span data-ttu-id="ea95b-145">接続 URI の詳細については、次を参照してください。 [SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="ea95b-145">For more information about the connection URI, see [Create the SQL Server Connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="ea95b-144">クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、SQL Server の接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="ea95b-144">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for SQL Server.</span></span> <span data-ttu-id="ea95b-145">接続 URI の詳細については、次を参照してください。 [SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="ea95b-145">For more information about the connection URI, see [Create the SQL Server Connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="ea95b-146">**全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。</span><span class="sxs-lookup"><span data-stu-id="ea95b-146">On the **General** tab, in the **Action** text box, type the action for the operation.</span></span> <span data-ttu-id="ea95b-147">参照してください[メッセージおよびメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)各操作のアクションの一覧についてはします。</span><span class="sxs-lookup"><span data-stu-id="ea95b-147">See [Messages and message schemas](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md) for a list of actions for each operation.</span></span> <span data-ttu-id="ea95b-148">たとえば、ADD_LAST_EMP_XML_INFO を呼び出すアクションを示します。</span><span class="sxs-lookup"><span data-stu-id="ea95b-148">For example, the action to invoke the ADD_LAST_EMP_XML_INFO is:</span></span>  
   
@@ -121,7 +122,7 @@ ms.lasthandoff: 11/28/2017
   
 10. <span data-ttu-id="ea95b-169">**送信パイプライン**一覧に対応するパイプラインを選択して**PassThruTransmit**です。</span><span class="sxs-lookup"><span data-stu-id="ea95b-169">From the **Send pipeline** list, select the pipeline that corresponds to **PassThruTransmit**.</span></span>  
   
-11. <span data-ttu-id="ea95b-170">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ea95b-170">Click **OK**.</span></span>  
+11. <span data-ttu-id="ea95b-170">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ea95b-170">Click **OK**.</span></span>  
   
 ## <a name="start-the-application"></a><span data-ttu-id="ea95b-171">アプリケーションを開始します。</span><span class="sxs-lookup"><span data-stu-id="ea95b-171">Start the Application</span></span>  
  <span data-ttu-id="ea95b-172">BizTalk アプリケーションを起動するには、両方のファイルを開始する場所を受信し、Wcf-custom 送信ポートが個別にします。</span><span class="sxs-lookup"><span data-stu-id="ea95b-172">To start the BizTalk application, you can start both the FILE receive location and the WCF-Custom send port individually.</span></span> <span data-ttu-id="ea95b-173">必要があります。 受信場所がファイルにマップされているフォルダーに XML ファイルをコピーします。</span><span class="sxs-lookup"><span data-stu-id="ea95b-173">You must now copy an XML file to the folder mapped to the FILE receive location.</span></span> <span data-ttu-id="ea95b-174">BizTalk アプリケーションが、ファイルを使用し、XML 値は、Employee テーブルの [アドレス] 列に挿入されます。</span><span class="sxs-lookup"><span data-stu-id="ea95b-174">The BizTalk application consumes the file, and the XML value is inserted in the Address column of the Employee table.</span></span> <span data-ttu-id="ea95b-175">これは、SQL Server クライアントを使用して、従業員テーブルからレコードを選択して確認できます。</span><span class="sxs-lookup"><span data-stu-id="ea95b-175">You can verify this by using a SQL Server client and selecting records from the Employee table.</span></span>  

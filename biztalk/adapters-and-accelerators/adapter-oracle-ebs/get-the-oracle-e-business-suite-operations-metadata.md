@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite 操作のメタデータを取得する |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite 操作のメタデータを取得する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 566ae086-183a-47db-8f93-12b5903c85c3
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963792"
 ---
 # <a name="get-the-oracle-e-business-suite-operations-metadata"></a><span data-ttu-id="1948f-102">Oracle E-business Suite 操作のメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="1948f-102">Get the Oracle E-Business Suite operations metadata</span></span>
 <span data-ttu-id="1948f-103">使用することができます、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] Oracle E-business Suite の選択した成果物のためのスキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="1948f-103">You can use the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] to generate schema for selected Oracle E-Business Suite artifacts.</span></span> <span data-ttu-id="1948f-104">参照して、呼び出し先のアイテムの検索し、それらの成果物のスキーマを生成し、Oracle E-business Suite へのスキーマに準拠したメッセージを送信できます。</span><span class="sxs-lookup"><span data-stu-id="1948f-104">After you have browsed and searched for the artifacts you want to invoke, you can generate schema for those artifacts and send messages, conforming to the schema, to Oracle E-Business Suite.</span></span>  
@@ -57,7 +58,7 @@ ms.lasthandoff: 11/28/2017
   
     -   <span data-ttu-id="1948f-136">複数の異なる実行で複数の操作のスキーマを生成するかどうか[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]を選択するかどうかを確認、**一意なスキーマ型を生成** チェック ボックスを生成される XSD ファイルの一意の名前空間に含まれるように、複雑なデータは、"CT1"を入力します。</span><span class="sxs-lookup"><span data-stu-id="1948f-136">If you want to generate schema for multiple operations across different runs of [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], make sure you select the **Generate unique schema types** check box, so that the generated XSD files contain unique namespaces for the complex data type “CT1”.</span></span>  
   
-6.  <span data-ttu-id="1948f-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1948f-137">Click **OK**.</span></span> <span data-ttu-id="1948f-138">スキーマ ファイルは、BizTalk プロジェクトと同じ場所にある拡張子が .xsd で保存されます。</span><span class="sxs-lookup"><span data-stu-id="1948f-138">The schema file is saved with an .xsd extension at the same location as the BizTalk project.</span></span>  
+6.  <span data-ttu-id="1948f-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1948f-137">Click **OK**.</span></span> <span data-ttu-id="1948f-138">スキーマ ファイルは、BizTalk プロジェクトと同じ場所にある拡張子が .xsd で保存されます。</span><span class="sxs-lookup"><span data-stu-id="1948f-138">The schema file is saved with an .xsd extension at the same location as the BizTalk project.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="1948f-139">Oracle の成果物に対する操作のメタデータを生成する アダプター サービスのアドインを使用している場合は、既定でファイルが作成特定の名前付け規則に: 生成された XSD ファイル名には次の 3 つの部分。</span><span class="sxs-lookup"><span data-stu-id="1948f-139">If you are using the Consume Adapter Service Add-in to generate metadata for operations on Oracle artifacts, by default the files are created with a specific naming convention: The generated XSD file name has the following three parts:</span></span>  
@@ -112,7 +113,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="1948f-178">構成できるオプション、**オプションの高度な**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用する場合は、ボックスが使用可能なオプションの一部に相当します。</span><span class="sxs-lookup"><span data-stu-id="1948f-178">The options that you can configure in the **Advanced Options** box are equivalent to some of the options available when you use the ServiceModel Metadata Utility Tool (svcutil.exe).</span></span> <span data-ttu-id="1948f-179">これらのオプションの詳細については、次を参照してください。 [ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)です。</span><span class="sxs-lookup"><span data-stu-id="1948f-179">For more information about these options, see [ServiceModel Metadata Utility Tool (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx).</span></span>
   
-4.  <span data-ttu-id="1948f-180">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1948f-180">Click **OK**.</span></span> <span data-ttu-id="1948f-181">[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアント クラス (または WCF サービスのインターフェイス) を保存し、操作と、プロジェクト ディレクトリに選択したカテゴリのヘルパー コード。</span><span class="sxs-lookup"><span data-stu-id="1948f-181">The [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] saves the WCF client class (or WCF service interface) and helper code for the operations and categories that you have selected in your project directory.</span></span> <span data-ttu-id="1948f-182">既定では、構成ファイルも保存されます。</span><span class="sxs-lookup"><span data-stu-id="1948f-182">By default, a configuration file is also saved.</span></span> <span data-ttu-id="1948f-183">受信と送信操作です。 わずかに異なるファイルが生成されます。詳細については、次を参照してください。 [WCF クライアントまたは Oracle E-business Suite ソリューションの成果物のための WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)です。</span><span class="sxs-lookup"><span data-stu-id="1948f-183">Slightly different files are generated for inbound and outbound operations; for more information, see [Generate a WCF client or a WCF service contract for Oracle E-Business Suite solution artifacts](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md).</span></span>  
+4.  <span data-ttu-id="1948f-180">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1948f-180">Click **OK**.</span></span> <span data-ttu-id="1948f-181">[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアント クラス (または WCF サービスのインターフェイス) を保存し、操作と、プロジェクト ディレクトリに選択したカテゴリのヘルパー コード。</span><span class="sxs-lookup"><span data-stu-id="1948f-181">The [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] saves the WCF client class (or WCF service interface) and helper code for the operations and categories that you have selected in your project directory.</span></span> <span data-ttu-id="1948f-182">既定では、構成ファイルも保存されます。</span><span class="sxs-lookup"><span data-stu-id="1948f-182">By default, a configuration file is also saved.</span></span> <span data-ttu-id="1948f-183">受信と送信操作です。 わずかに異なるファイルが生成されます。詳細については、次を参照してください。 [WCF クライアントまたは Oracle E-business Suite ソリューションの成果物のための WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)です。</span><span class="sxs-lookup"><span data-stu-id="1948f-183">Slightly different files are generated for inbound and outbound operations; for more information, see [Generate a WCF client or a WCF service contract for Oracle E-Business Suite solution artifacts](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md).</span></span>  
   
  <span data-ttu-id="1948f-184">記載されている任意のノードを選択することができます、**利用可能なカテゴリと操作**ボックス。</span><span class="sxs-lookup"><span data-stu-id="1948f-184">You can select any node that is listed in the **Available categories and operations** box.</span></span> <span data-ttu-id="1948f-185">カテゴリ ノードを選択する場合は、すべてのノードとそのサブ ノードで使用可能な操作が選択します。</span><span class="sxs-lookup"><span data-stu-id="1948f-185">If you select a category node then all of the operations available under that node and its sub-nodes will be selected.</span></span> <span data-ttu-id="1948f-186">たとえば、すべての操作を AR_ARCHIVE_PURGE_INTERIM テーブルの表示用の WCF クライアントを生成することができますを選択する、 **AR_ARCHIVE_PURGE_INTERIM**ノード。</span><span class="sxs-lookup"><span data-stu-id="1948f-186">For example, to generate a WCF client for all of the operations surfaced for the AR_ARCHIVE_PURGE_INTERIM table, you can select the **AR_ARCHIVE_PURGE_INTERIM** node.</span></span>  
   

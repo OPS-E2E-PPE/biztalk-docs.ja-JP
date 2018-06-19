@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc4a67d9-9582-4f2b-9bc9-18fbff823d29
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25960832"
 ---
 # <a name="step-3-add-a-trigger-event-message-schema"></a><span data-ttu-id="faec7-102">手順 3: トリガー イベント (メッセージ) のスキーマを追加します。</span><span class="sxs-lookup"><span data-stu-id="faec7-102">Step 3: Add a Trigger Event (Message) Schema</span></span>
 <span data-ttu-id="faec7-103">この手順で、空に基づく新しいプロジェクトを作成する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]プロジェクト テンプレート。</span><span class="sxs-lookup"><span data-stu-id="faec7-103">In this step, you create a new project based on the Empty [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Project template.</span></span> <span data-ttu-id="faec7-104">このプロジェクトにスキーマを追加する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]受信のバッチ内のメッセージの検証に使用されます (ADT ^ A03)。</span><span class="sxs-lookup"><span data-stu-id="faec7-104">To this project, you add the schema that [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] will use to validate the messages in the incoming batch (ADT^A03).</span></span> <span data-ttu-id="faec7-105">プロジェクトに厳密な名前を割り当てる、および、プロジェクトを配置 v2.3.1 一般的なスキーマを含むプロジェクトへの参照を追加します。</span><span class="sxs-lookup"><span data-stu-id="faec7-105">You add a reference to the project containing the v2.3.1 common schemas, assign the strong name to the project, and then deploy the project.</span></span>  
@@ -33,7 +34,7 @@ ms.lasthandoff: 03/28/2018
   
 5.  <span data-ttu-id="faec7-111">**ソリューション**ボックスで、**ソリューションに追加**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-111">In the **Solution** box, select **Add to Solution**.</span></span>  
   
-6.  <span data-ttu-id="faec7-112">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="faec7-112">Click **OK**.</span></span>  
+6.  <span data-ttu-id="faec7-112">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="faec7-112">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="faec7-113">ソリューション エクスプ ローラーで、新しいプロジェクトのノードの下を右クリックして**参照**、クリックして**参照の追加**です。</span><span class="sxs-lookup"><span data-stu-id="faec7-113">In Solution Explorer, under the node for your new project, right-click **References**, and then click **Add Reference**.</span></span>  
   

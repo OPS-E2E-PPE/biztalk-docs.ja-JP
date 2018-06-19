@@ -1,14 +1,14 @@
 ---
-title: "メッセージ インスタンスを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ インスタンスを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d75cb744-99a0-44bc-9a84-d4f8f66fd97e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960216"
 ---
 # <a name="create-the-message-instances"></a><span data-ttu-id="3b395-102">メッセージ インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="3b395-102">Create the Message Instances</span></span>
 <span data-ttu-id="3b395-103">ADT^A03.txt メッセージ ファイルを作成して、バッチ処理のチュートリアルを実行するときに使用する必要があるメッセージ インスタンスを作成するのには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="3b395-103">Use the following procedures to create the ADT^A03.txt message file, and to create the message instances that you will need to use when you run the Batching tutorial.</span></span>  

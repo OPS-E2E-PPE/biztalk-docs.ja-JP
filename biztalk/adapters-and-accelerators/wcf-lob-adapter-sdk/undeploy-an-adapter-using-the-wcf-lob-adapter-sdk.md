@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB アダプター SDK を使用してアダプターを展開解除 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB アダプター SDK を使用してアダプターを展開解除 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 98f9a124-9e63-4451-af0e-ffee752fbeac
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963568"
 ---
 # <a name="undeploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="f57e1-102">WCF LOB アダプター SDK を使用してアダプターを展開解除します。</span><span class="sxs-lookup"><span data-stu-id="f57e1-102">Undeploy an adapter using the WCF LOB adapter SDK</span></span>
 <span data-ttu-id="f57e1-103">コンピューターからアダプターを展開解除するには、ユーザーは、次の 2 つのタスクを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f57e1-103">To undeploy an adapter from a computer, the user needs to perform the following two tasks:</span></span>  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="f57e1-134">サービス構成エディタを開きます。</span><span class="sxs-lookup"><span data-stu-id="f57e1-134">Open Service Configuration Editor.</span></span> <span data-ttu-id="f57e1-135">参照してください[サービス構成エディター](https://msdn.microsoft.com/library/ms732009.aspx)詳細についてはします。</span><span class="sxs-lookup"><span data-stu-id="f57e1-135">See [Service Configuration Editor](https://msdn.microsoft.com/library/ms732009.aspx) for more information.</span></span>
   
-2.  <span data-ttu-id="f57e1-136">ツリー ビュー ウィンドウ (ラベルの付いた**構成**)、ノード ツリーを展開します。</span><span class="sxs-lookup"><span data-stu-id="f57e1-136">In the tree view pane (labeled **Configuration**), expand the node tree.</span></span> <span data-ttu-id="f57e1-137">をクリックして、 **[詳細設定]**フォルダーで、をクリックして、**拡張機能**フォルダー、およびバインド拡張要素を選択します。</span><span class="sxs-lookup"><span data-stu-id="f57e1-137">Click the **Advanced** folder, click the **Extensions** folder, and then select the binding extensions element.</span></span>  
+2.  <span data-ttu-id="f57e1-136">ツリー ビュー ウィンドウ (ラベルの付いた**構成**)、ノード ツリーを展開します。</span><span class="sxs-lookup"><span data-stu-id="f57e1-136">In the tree view pane (labeled **Configuration**), expand the node tree.</span></span> <span data-ttu-id="f57e1-137">をクリックして、 **[詳細設定]** フォルダーで、をクリックして、**拡張機能**フォルダー、およびバインド拡張要素を選択します。</span><span class="sxs-lookup"><span data-stu-id="f57e1-137">Click the **Advanced** folder, click the **Extensions** folder, and then select the binding extensions element.</span></span>  
   
 3.  <span data-ttu-id="f57e1-138">バインド拡張機能のエディターの詳細ウィンドウで [削除、およびをクリックする、バインド拡張機能] をクリックして**削除**です。</span><span class="sxs-lookup"><span data-stu-id="f57e1-138">In the details pane of the Binding Extensions Editor, click the binding extension that you want to delete, and then click **Delete**.</span></span> <span data-ttu-id="f57e1-139">次の図に MyAdapterExtension が強調表示され、削除されます。</span><span class="sxs-lookup"><span data-stu-id="f57e1-139">In the following figure, MyAdapterExtension is highlighted and will be deleted.</span></span>  
   

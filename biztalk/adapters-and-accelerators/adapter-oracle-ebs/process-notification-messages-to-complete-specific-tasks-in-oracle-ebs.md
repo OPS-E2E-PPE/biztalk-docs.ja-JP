@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite で特定のタスクを完了する通知メッセージを処理 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite で特定のタスクを完了する通知メッセージを処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4bddeb5a-3819-40cc-aae0-c49963f0beb1
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968088"
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-oracle-e-business-suite"></a><span data-ttu-id="dd42b-102">Oracle E-business Suite で特定のタスクを完了する通知メッセージの処理</span><span class="sxs-lookup"><span data-stu-id="dd42b-102">Process notification messages to complete specific tasks in Oracle E-Business Suite</span></span>
 <span data-ttu-id="dd42b-103">使用することができます、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle データベース テーブルへの変更の通知を受信します。</span><span class="sxs-lookup"><span data-stu-id="dd42b-103">You can use the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] to receive notifications for changes to the Oracle database tables.</span></span> <span data-ttu-id="dd42b-104">ただし、アダプターのみ通知を送信することレコードの一部挿入、更新されると、またはされた特定のデータベース テーブルで削除します。</span><span class="sxs-lookup"><span data-stu-id="dd42b-104">However, the adapter only sends you a notification that some records were inserted, updated, or deleted in a certain database table.</span></span> <span data-ttu-id="dd42b-105">後処理これらのレコードには、クライアント アプリケーション自体で処理される必要があります。</span><span class="sxs-lookup"><span data-stu-id="dd42b-105">Any post-processing on those records must be handled by the client applications themselves.</span></span> <span data-ttu-id="dd42b-106">このトピックでは、Oracle データベースから受信した通知の種類に基づいてテーブル内のレコードを処理する方法のシナリオ ベースの説明を示します。</span><span class="sxs-lookup"><span data-stu-id="dd42b-106">This topic presents a scenario-based description on how to process the records in the table based on the kind of notification received from the Oracle database.</span></span>  
@@ -94,7 +95,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="dd42b-179">値を指定**InboundOperationType**、 **NotificationPort**、および**NotificationStatement**スキーマの生成中にプロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="dd42b-179">Specify a value for **InboundOperationType**, **NotificationPort**, and **NotificationStatement** binding properties while generating the schema.</span></span> <span data-ttu-id="dd42b-180">このバインドのプロパティの詳細については、次を参照してください。 [BizTalk Adapter for Oracle E-business Suite バインド プロパティ読む](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="dd42b-180">For more information about this binding property, see [Read about the BizTalk Adapter for Oracle E-Business Suite Binding Properties](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md).</span></span> <span data-ttu-id="dd42b-181">バインドのプロパティを指定する方法については、次を参照してください。 [for Oracle E-business Suite のバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-binding-properties-for-oracle-e-business-suite.md)です。</span><span class="sxs-lookup"><span data-stu-id="dd42b-181">For instructions on how to specify binding properties, see [Configure the binding properties for Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-binding-properties-for-oracle-e-business-suite.md).</span></span>  
   
-2.  <span data-ttu-id="dd42b-182">コントラクトの種類を選択して**サービス (入力方向の操作)**です。</span><span class="sxs-lookup"><span data-stu-id="dd42b-182">Select the contract type as **Service (Inbound operations)**.</span></span>  
+2.  <span data-ttu-id="dd42b-182">コントラクトの種類を選択して**サービス (入力方向の操作)** です。</span><span class="sxs-lookup"><span data-stu-id="dd42b-182">Select the contract type as **Service (Inbound operations)**.</span></span>  
   
 3.  <span data-ttu-id="dd42b-183">スキーマを生成、**通知**操作します。</span><span class="sxs-lookup"><span data-stu-id="dd42b-183">Generate schema for the **Notification** operation.</span></span>  
   

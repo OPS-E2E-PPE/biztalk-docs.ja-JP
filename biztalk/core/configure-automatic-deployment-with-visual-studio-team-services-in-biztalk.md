@@ -1,15 +1,15 @@
 ---
-title: "Visual Studio Team Services での自動展開の構成 |Microsoft ドキュメント"
-description: "Vsts アプリケーション ライフ サイクル管理を使用して、別の BizTalk 環境にアプリケーションを展開する BizTalk Feature Pack をインストールします。"
-ms.custom: 
+title: Visual Studio Team Services での自動展開の構成 |Microsoft ドキュメント
+description: Vsts アプリケーション ライフ サイクル管理を使用して、別の BizTalk 環境にアプリケーションを展開する BizTalk Feature Pack をインストールします。
+ms.custom: ''
 ms.date: 11/20/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 57f769bb-5105-43e2-9096-ed54cdf82b90
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25497883"
 ---
 # <a name="configure-automatic-deployment-with-visual-studio-team-services-in-biztalk-server"></a><span data-ttu-id="03786-103">BizTalk Server での Visual Studio Team Services の自動展開を構成します。</span><span class="sxs-lookup"><span data-stu-id="03786-103">Configure automatic deployment with Visual Studio Team Services in BizTalk Server</span></span>
 

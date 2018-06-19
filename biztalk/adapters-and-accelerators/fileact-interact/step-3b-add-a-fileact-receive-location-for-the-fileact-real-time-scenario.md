@@ -1,14 +1,14 @@
 ---
-title: "手順 3 b: FILEACT の受信場所が FileAct リアルタイム シナリオの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3 b: FILEACT の受信場所が FileAct リアルタイム シナリオの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7e086c86-1525-4cef-b7e5-a66e14bd8d4f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965824"
 ---
 # <a name="step-3b-add-a-fileact-receive-location-for-the-fileact-real-time-scenario"></a><span data-ttu-id="8147d-102">手順 3 b: FILEACT の受信場所が FileAct リアルタイム シナリオの追加</span><span class="sxs-lookup"><span data-stu-id="8147d-102">Step 3B: Add a FILEACT Receive Location for the FileAct Real-Time Scenario</span></span>
 <span data-ttu-id="8147d-103">この手順を開始する前に行う必要があります[手順 3A: FileAct リアルタイム シナリオでは、ファイルの受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-real-time-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="8147d-103">Before you begin this step, you must complete [Step 3A: Add a FILE Receive Location for the FileAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-real-time-scenario.md).</span></span>  
@@ -65,7 +66,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="8147d-168">**回復モード**</span><span class="sxs-lookup"><span data-stu-id="8147d-168">**Recovery mode**</span></span>|<span data-ttu-id="8147d-169">このプロパティの既定値のままにします。</span><span class="sxs-lookup"><span data-stu-id="8147d-169">Leave the default value for this property.</span></span> <span data-ttu-id="8147d-170">このプロパティは、ストア アンド フォワードのシナリオに使用されます。</span><span class="sxs-lookup"><span data-stu-id="8147d-170">This property is used for Store-and-Forward scenarios.</span></span>|  
     |<span data-ttu-id="8147d-171">**SNL エンドポイント**</span><span class="sxs-lookup"><span data-stu-id="8147d-171">**SNL end-point**</span></span>|<span data-ttu-id="8147d-172">このプロパティの既定値のままにします。</span><span class="sxs-lookup"><span data-stu-id="8147d-172">Leave the default value for this property.</span></span> <span data-ttu-id="8147d-173">このプロパティは、ストア アンド フォワードのシナリオに使用されます。</span><span class="sxs-lookup"><span data-stu-id="8147d-173">This property is used for Store-and-Forward scenarios.</span></span>|  
   
-8.  <span data-ttu-id="8147d-174">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8147d-174">Click **OK**.</span></span>  
+8.  <span data-ttu-id="8147d-174">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8147d-174">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="8147d-175">**受信場所のプロパティ** ウィンドウで、**全般** タブで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="8147d-175">In the **Receive Location Properties** window, on the **General** tab, do the following:</span></span>  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="8147d-178">**受信ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="8147d-178">**Receive handler**</span></span>|<span data-ttu-id="8147d-179">ドロップダウン リストから選択**BizTalkServerIsolatedHost**です。</span><span class="sxs-lookup"><span data-stu-id="8147d-179">From the drop-down list, select **BizTalkServerIsolatedHost**.</span></span>|  
     |<span data-ttu-id="8147d-180">**受信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="8147d-180">**Receive pipeline**</span></span>|<span data-ttu-id="8147d-181">ドロップダウン リストから選択**XMLReceive**です。</span><span class="sxs-lookup"><span data-stu-id="8147d-181">From the drop-down list, select **XMLReceive**.</span></span>|  
   
-10. <span data-ttu-id="8147d-182">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8147d-182">Click **OK**.</span></span>  
+10. <span data-ttu-id="8147d-182">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8147d-182">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="8147d-183">参照</span><span class="sxs-lookup"><span data-stu-id="8147d-183">See Also</span></span>  
  <span data-ttu-id="8147d-184">[手順 3: 送信ポートを作成し、FileAct リアルタイムのシナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="8147d-184">[Step 3: Create the Send Ports and Receive Ports for the FileAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md) </span></span>  

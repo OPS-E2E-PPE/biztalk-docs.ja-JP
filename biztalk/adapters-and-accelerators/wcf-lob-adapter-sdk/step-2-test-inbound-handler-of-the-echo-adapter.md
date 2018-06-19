@@ -1,14 +1,14 @@
 ---
-title: "手順 2: エコー アダプターの受信ハンドラーのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: エコー アダプターの受信ハンドラーのテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 86dede9b-6b7e-4901-9c79-b75bfee9155f
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967040"
 ---
 # <a name="step-2-test-inbound-handler-of-the-echo-adapter"></a><span data-ttu-id="21e3d-102">手順 2: エコー アダプターの受信ハンドラーをテストします。</span><span class="sxs-lookup"><span data-stu-id="21e3d-102">Step 2: Test Inbound Handler of the Echo Adapter</span></span>
 <span data-ttu-id="21e3d-103">![手順 2 の 2](../../adapters-and-accelerators/adapter-sql/media/step-2of2.gif "Step_2of2")</span><span class="sxs-lookup"><span data-stu-id="21e3d-103">![Step 2 of 2](../../adapters-and-accelerators/adapter-sql/media/step-2of2.gif "Step_2of2")</span></span>  
@@ -38,13 +39,13 @@ ms.lasthandoff: 11/28/2017
   
     |<span data-ttu-id="21e3d-114">プロパティ</span><span class="sxs-lookup"><span data-stu-id="21e3d-114">Use this</span></span>|<span data-ttu-id="21e3d-115">目的</span><span class="sxs-lookup"><span data-stu-id="21e3d-115">To do this</span></span>|  
     |--------------|----------------|  
-    |<span data-ttu-id="21e3d-116">**プロジェクトの種類**</span><span class="sxs-lookup"><span data-stu-id="21e3d-116">**Project types**</span></span>|<span data-ttu-id="21e3d-117">をクリックして**Visual c#**です。</span><span class="sxs-lookup"><span data-stu-id="21e3d-117">Click **Visual C#**.</span></span>|  
+    |<span data-ttu-id="21e3d-116">**プロジェクトの種類**</span><span class="sxs-lookup"><span data-stu-id="21e3d-116">**Project types**</span></span>|<span data-ttu-id="21e3d-117">をクリックして**Visual c#** です。</span><span class="sxs-lookup"><span data-stu-id="21e3d-117">Click **Visual C#**.</span></span>|  
     |<span data-ttu-id="21e3d-118">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="21e3d-118">**Templates**</span></span>|<span data-ttu-id="21e3d-119">をクリックして**コンソール アプリケーション**です。</span><span class="sxs-lookup"><span data-stu-id="21e3d-119">Click **Console Application**.</span></span>|  
     |<span data-ttu-id="21e3d-120">**名前**</span><span class="sxs-lookup"><span data-stu-id="21e3d-120">**Name**</span></span>|<span data-ttu-id="21e3d-121">型**ConsumeEchoAdapter_Inbound**です。</span><span class="sxs-lookup"><span data-stu-id="21e3d-121">Type **ConsumeEchoAdapter_Inbound**.</span></span>|  
     |<span data-ttu-id="21e3d-122">**場所**</span><span class="sxs-lookup"><span data-stu-id="21e3d-122">**Location**</span></span>|<span data-ttu-id="21e3d-123">型**C:\Tutorials**です。</span><span class="sxs-lookup"><span data-stu-id="21e3d-123">Type **C:\Tutorials**.</span></span>|  
     |<span data-ttu-id="21e3d-124">**[ソリューション名]**</span><span class="sxs-lookup"><span data-stu-id="21e3d-124">**Solution Name**</span></span>|<span data-ttu-id="21e3d-125">型**ConsumeEchoAdapter_Inbound**です。</span><span class="sxs-lookup"><span data-stu-id="21e3d-125">Type **ConsumeEchoAdapter_Inbound**.</span></span>|  
   
-4.  <span data-ttu-id="21e3d-126">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="21e3d-126">Click **OK**.</span></span>  
+4.  <span data-ttu-id="21e3d-126">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="21e3d-126">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="21e3d-127">Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。</span><span class="sxs-lookup"><span data-stu-id="21e3d-127">In Visual Studio, on the **File** menu, click **Save All**.</span></span>  
   
@@ -58,11 +59,11 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="21e3d-134">**アダプターの構成**画面で、、**バインド プロパティ**タブでアダプターのプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="21e3d-134">In the **Configure Adapter** screen, select the **Binding Properties** tab to configure the adapter properties.</span></span> <span data-ttu-id="21e3d-135">注意してカスタムのカテゴリのエコー アダプター**受信**と**その他**が表示されます。</span><span class="sxs-lookup"><span data-stu-id="21e3d-135">Notice that the custom Echo Adapter categories **Inbound** and **Misc** are shown.</span></span> <span data-ttu-id="21e3d-136">下にある、**その他**カテゴリで、をクリックして**InboundFileSystemWatcherFolder**し監視するディレクトリを入力します。</span><span class="sxs-lookup"><span data-stu-id="21e3d-136">Under the **Misc** category, click **InboundFileSystemWatcherFolder** and then enter the directory you want to monitor.</span></span>  
   
-5.  <span data-ttu-id="21e3d-137">をクリックして**[ok]**を閉じる、**アダプターの構成**画面およびに戻り、**アダプター サービス参照の追加**画面。</span><span class="sxs-lookup"><span data-stu-id="21e3d-137">Click **OK** to close the **Configure Adapter** screen and return to the **Add Adapter Service Reference** screen.</span></span>  
+5.  <span data-ttu-id="21e3d-137">をクリックして **[ok]** を閉じる、**アダプターの構成**画面およびに戻り、**アダプター サービス参照の追加**画面。</span><span class="sxs-lookup"><span data-stu-id="21e3d-137">Click **OK** to close the **Configure Adapter** screen and return to the **Add Adapter Service Reference** screen.</span></span>  
   
 6.  <span data-ttu-id="21e3d-138">次に、をクリックして**接続**エコー アダプタ (およびの仮定の基幹業務システムをサポートしています) に接続します。</span><span class="sxs-lookup"><span data-stu-id="21e3d-138">Next, click **Connect** to connect to the Echo Adapter (and hypothetical line-of-business system it supports).</span></span> <span data-ttu-id="21e3d-139">しばらくすると、接続の状態を変更する必要があります**接続**とカテゴリ ツリー (**カテゴリを選択**) 設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="21e3d-139">After a few moments, the connection status should change to **Connected** and the Category Tree (under **Select a category**) should be populated.</span></span>  
   
-7.  <span data-ttu-id="21e3d-140">使用可能な受信操作を表示するには、変更、**サービス コントラクト型**に**サービス (入力方向の操作)**です。</span><span class="sxs-lookup"><span data-stu-id="21e3d-140">To view available inbound operations, change the **Service contract type** to **Service (Inbound operations)**.</span></span>  
+7.  <span data-ttu-id="21e3d-140">使用可能な受信操作を表示するには、変更、**サービス コントラクト型**に**サービス (入力方向の操作)** です。</span><span class="sxs-lookup"><span data-stu-id="21e3d-140">To view available inbound operations, change the **Service contract type** to **Service (Inbound operations)**.</span></span>  
   
 8.  <span data-ttu-id="21e3d-141">分類ツリーで、をクリックして**メイン カテゴリ**です。</span><span class="sxs-lookup"><span data-stu-id="21e3d-141">In the Category Tree, click **Main Category**.</span></span> <span data-ttu-id="21e3d-142">これには、利用可能なカテゴリと操作を 1 つの受信操作の一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="21e3d-142">This populates the list of available categories and operations with a single inbound operation.</span></span> <span data-ttu-id="21e3d-143">カテゴリはありません。</span><span class="sxs-lookup"><span data-stu-id="21e3d-143">There are no categories.</span></span>  
   

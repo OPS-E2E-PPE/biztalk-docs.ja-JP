@@ -1,17 +1,17 @@
 ---
-title: "メッセージを承認する |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージを承認する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, approving
 - approving messages
 ms.assetid: e6abfef3-aab2-470e-a7a7-a6d091ffba53
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25962520"
 ---
 # <a name="approving-a-message"></a><span data-ttu-id="6fffa-102">メッセージを承認します。</span><span class="sxs-lookup"><span data-stu-id="6fffa-102">Approving a Message</span></span>
 <span data-ttu-id="6fffa-103">このセクションでは、修復および検証されているメッセージを承認する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6fffa-103">This section describes how to approve a message that has been repaired and verified.</span></span>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 01/17/2018
     > [!NOTE]
     >  <span data-ttu-id="6fffa-124">メッセージの変更を却下した場合[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ワークフローの最初のステージにメッセージが返されます (作成または修復) し、修復ワークフローをリセットします。</span><span class="sxs-lookup"><span data-stu-id="6fffa-124">If you reject the message changes, [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] returns the message to the first stage of the workflow (create or repair) and resets the repair workflow.</span></span>  
   
-11. <span data-ttu-id="6fffa-125">デジタル署名ウィザードのページでフォームに署名する証明書を選択するため、フォーム (証明書承認用に作成) の署名に使用する証明書を選択します。</span><span class="sxs-lookup"><span data-stu-id="6fffa-125">On the Digital Signature Wizard page for selecting the certificate to sign the form, select the certificate that you want to use to sign the form (the certificate that you created for the approver).</span></span> <span data-ttu-id="6fffa-126">をクリックして**証明書の表示**正しいシグネチャを使用していることを確認する場合。</span><span class="sxs-lookup"><span data-stu-id="6fffa-126">Click **View Certificate** if you want to verify that you are using the correct signature.</span></span> <span data-ttu-id="6fffa-127">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6fffa-127">Click **Next**.</span></span>  
+11. <span data-ttu-id="6fffa-125">デジタル署名ウィザードのページでフォームに署名する証明書を選択するため、フォーム (証明書承認用に作成) の署名に使用する証明書を選択します。</span><span class="sxs-lookup"><span data-stu-id="6fffa-125">On the Digital Signature Wizard page for selecting the certificate to sign the form, select the certificate that you want to use to sign the form (the certificate that you created for the approver).</span></span> <span data-ttu-id="6fffa-126">をクリックして**証明書の表示**正しいシグネチャを使用していることを確認する場合。</span><span class="sxs-lookup"><span data-stu-id="6fffa-126">Click **View Certificate** if you want to verify that you are using the correct signature.</span></span> <span data-ttu-id="6fffa-127">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6fffa-127">Click **Next**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="6fffa-128">デジタル署名の有効性を確認する をクリックして**デジタル署名**上、**ツール** メニューの デジタル署名を確認し、をクリックする をクリックして**ビュー署名済みフォーム**.</span><span class="sxs-lookup"><span data-stu-id="6fffa-128">To verify the validity of a digital signature, click **Digital Signatures** on the **Tools** menu, click the digital signature that you want to verify, and then click **View Signed Form**.</span></span> <span data-ttu-id="6fffa-129">表示できます (フォームのみ署名できるワークフローごとに 1 回のユーザーによって)、フォーム以前に署名するロールをクリックして**デジタル署名**上、**ツール**メニュー。</span><span class="sxs-lookup"><span data-stu-id="6fffa-129">You can also see which roles have signed the form previously (a form can only be signed by a person once per workflow) by clicking **Digital Signatures** on the **Tools** menu.</span></span> <span data-ttu-id="6fffa-130">このロールの別の署名を追加する必要がある場合に、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="6fffa-130">If you need to add another signature for this role, do so in the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] Management Console.</span></span>  

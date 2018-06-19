@@ -1,14 +1,14 @@
 ---
-title: "スキーマに基づくビューの Oracle E-business Suite 操作を参照 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマに基づくビューの Oracle E-business Suite 操作を参照 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d004a99f-0db1-4cdb-80cd-ea71de4e1098
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963504"
 ---
 # <a name="browse-for-oracle-e-business-suite-operations-under-the-schema-based-view"></a><span data-ttu-id="2d031-102">スキーマに基づくビューの Oracle E-business Suite 操作の参照します。</span><span class="sxs-lookup"><span data-stu-id="2d031-102">Browse for Oracle E-Business Suite operations under the schema-based view</span></span>
 <span data-ttu-id="2d031-103">使用することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]Oracle E-business Suite で実行できる送受信の操作を参照するを使用して、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="2d031-103">You can use the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] or the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to browse for outbound and inbound operations that can be performed on Oracle E-Business Suite using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span> <span data-ttu-id="2d031-104">このトピックでは、スキーマに基づくビューの下の送信および受信操作を参照する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="2d031-104">This topic provides information on how to browse for outbound and inbound operations under the schema-based view.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="2d031-112">Oracle E-business Suite への接続、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="2d031-112">Connect to Oracle E-Business Suite using the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] or the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span> <span data-ttu-id="2d031-113">参照してください[Visual Studio での Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)手順についてはします。</span><span class="sxs-lookup"><span data-stu-id="2d031-113">See [Connect to the Oracle E-Business Suite in Visual Studio](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md) for instructions.</span></span>  
   
-2.  <span data-ttu-id="2d031-114">**選択コントラクト型**を一覧表示、送信操作を選択**クライアント (送信操作)**です。</span><span class="sxs-lookup"><span data-stu-id="2d031-114">From the **Select contract type** list, for outbound operations select **Client (Outbound operations)**.</span></span>  
+2.  <span data-ttu-id="2d031-114">**選択コントラクト型**を一覧表示、送信操作を選択**クライアント (送信操作)** です。</span><span class="sxs-lookup"><span data-stu-id="2d031-114">From the **Select contract type** list, for outbound operations select **Client (Outbound operations)**.</span></span>  
   
 3.  <span data-ttu-id="2d031-115">**カテゴリを選択**ボックスには、Oracle E-business Suite の成果物を分類するさまざまなビューが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="2d031-115">The **Select a category** box lists the different views under which the Oracle E-Business Suite artifacts are categorized.</span></span>  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="2d031-156">Oracle E-business Suite への接続、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="2d031-156">Connect to Oracle E-Business Suite using the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] or the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span> <span data-ttu-id="2d031-157">参照してください[Visual Studio での Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)手順についてはします。</span><span class="sxs-lookup"><span data-stu-id="2d031-157">See [Connect to the Oracle E-Business Suite in Visual Studio](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md) for instructions.</span></span>  
   
-2.  <span data-ttu-id="2d031-158">**選択コントラクト型**を一覧表示、受信操作を選択**サービス (入力方向の操作)**です。</span><span class="sxs-lookup"><span data-stu-id="2d031-158">From the **Select contract type** list, for inbound operations select **Service (Inbound operations)**.</span></span>  
+2.  <span data-ttu-id="2d031-158">**選択コントラクト型**を一覧表示、受信操作を選択**サービス (入力方向の操作)** です。</span><span class="sxs-lookup"><span data-stu-id="2d031-158">From the **Select contract type** list, for inbound operations select **Service (Inbound operations)**.</span></span>  
   
 3.  <span data-ttu-id="2d031-159">**カテゴリを選択**ボックスには、Oracle E-business Suite の成果物を分類するさまざまなビューが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="2d031-159">The **Select a category** box lists the different views under which the Oracle E-Business Suite artifacts are categorized.</span></span>  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="2d031-171">![Oracle データベースでのポーリングのパッケージの参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/ab45e4a3-1425-4b23-afc2-8aecef546802.gif "ab45e4a3-1425-4b23-afc2-8aecef546802")</span><span class="sxs-lookup"><span data-stu-id="2d031-171">![Browse packages in Oracle database for polling](../../adapters-and-accelerators/adapter-oracle-ebs/media/ab45e4a3-1425-4b23-afc2-8aecef546802.gif "ab45e4a3-1425-4b23-afc2-8aecef546802")</span></span>  
   
-6.  <span data-ttu-id="2d031-172">クリックして、**プロシージャ**でプロシージャの一覧を表示するノード**、利用可能なカテゴリと操作**ボックス。</span><span class="sxs-lookup"><span data-stu-id="2d031-172">Click the **Procedures** node to see the list of procedures in **the Available categories and operations** box.</span></span> <span data-ttu-id="2d031-173">Oracle データベースをポーリングする手順のそれぞれに使用できます。</span><span class="sxs-lookup"><span data-stu-id="2d031-173">Each of the listed procedures can be used to poll the Oracle database.</span></span>  
+6.  <span data-ttu-id="2d031-172">クリックして、**プロシージャ**でプロシージャの一覧を表示するノード **、利用可能なカテゴリと操作**ボックス。</span><span class="sxs-lookup"><span data-stu-id="2d031-172">Click the **Procedures** node to see the list of procedures in **the Available categories and operations** box.</span></span> <span data-ttu-id="2d031-173">Oracle データベースをポーリングする手順のそれぞれに使用できます。</span><span class="sxs-lookup"><span data-stu-id="2d031-173">Each of the listed procedures can be used to poll the Oracle database.</span></span>  
   
      <span data-ttu-id="2d031-174">![Oracle データベースでのポーリングのプロシージャの参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/04538693-5abf-4162-82e9-4107b4088b56.gif "04538693-5abf-4162-82e9-4107b4088b56")</span><span class="sxs-lookup"><span data-stu-id="2d031-174">![Browse procedures in Oracle database for polling](../../adapters-and-accelerators/adapter-oracle-ebs/media/04538693-5abf-4162-82e9-4107b4088b56.gif "04538693-5abf-4162-82e9-4107b4088b56")</span></span>  
   

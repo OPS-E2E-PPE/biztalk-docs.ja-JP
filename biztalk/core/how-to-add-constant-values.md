@@ -1,14 +1,14 @@
 ---
-title: "定数値を追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 定数値を追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f46bf66e-caf2-4352-930f-c3c43a5717c3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969720"
 ---
 # <a name="how-to-add-constant-values"></a><span data-ttu-id="37d1b-102">定数値を追加する方法</span><span class="sxs-lookup"><span data-stu-id="37d1b-102">How to Add Constant Values</span></span>
 <span data-ttu-id="37d1b-103">マップをテストする際、テスト中に使用する定数値を設定する場合があります。</span><span class="sxs-lookup"><span data-stu-id="37d1b-103">When testing maps, you will sometimes want to set constant values for use during the test.</span></span>  
@@ -32,7 +33,7 @@ ms.lasthandoff: 11/28/2017
   
  <span data-ttu-id="37d1b-108">設定した場合、送信元スキーマ内のノードに対して、**値**プロパティを**\<空\>**、送信元スキーマの生成されたインスタンス メッセージには、それぞれに空の値が含まれています。ノードです。</span><span class="sxs-lookup"><span data-stu-id="37d1b-108">For a node in source schema, if you set the **Value** property to **\<empty\>**, the generated instance message for the source schema contains an empty value for the respective node.</span></span>  
   
- <span data-ttu-id="37d1b-109">送信先スキーマのフィールドをすべては使用しないことがあります。つまり、送信先スキーマのフィールドには、受信リンクが指定されないものもあります。</span><span class="sxs-lookup"><span data-stu-id="37d1b-109">Sometimes, you do not use all the fields in the target schema, i.e. some of the fields in the target schema do not have any incoming links.</span></span> <span data-ttu-id="37d1b-110">このような場合、マップのテスト操作によってスローされるエラーを提供する、 **TestMap 入力の検証**または**TestMap 出力の検証**プロパティに設定されます**True**です。</span><span class="sxs-lookup"><span data-stu-id="37d1b-110">In such cases, the Test Map operation throws error, provided that the **Validate TestMap Input** or **Validate TestMap Output** properties are set to **True**.</span></span> <span data-ttu-id="37d1b-111">このような場合はマップのテスト エラーを避けるためには、次のように設定します。、**値**いずれかの定数値にノードのプロパティまたは**\<空\>**です。</span><span class="sxs-lookup"><span data-stu-id="37d1b-111">To avoid Test Map errors in such cases, set the **Value** property of the node to either a constant value or **\<empty\>**.</span></span> <span data-ttu-id="37d1b-112">使用して**\<空\>**未使用の送信先スキーマのフィールドの任意のデータを設定したくない場合。</span><span class="sxs-lookup"><span data-stu-id="37d1b-112">Use **\<empty\>** if you do not want to set arbitrary data for unused target schema fields.</span></span>  
+ <span data-ttu-id="37d1b-109">送信先スキーマのフィールドをすべては使用しないことがあります。つまり、送信先スキーマのフィールドには、受信リンクが指定されないものもあります。</span><span class="sxs-lookup"><span data-stu-id="37d1b-109">Sometimes, you do not use all the fields in the target schema, i.e. some of the fields in the target schema do not have any incoming links.</span></span> <span data-ttu-id="37d1b-110">このような場合、マップのテスト操作によってスローされるエラーを提供する、 **TestMap 入力の検証**または**TestMap 出力の検証**プロパティに設定されます**True**です。</span><span class="sxs-lookup"><span data-stu-id="37d1b-110">In such cases, the Test Map operation throws error, provided that the **Validate TestMap Input** or **Validate TestMap Output** properties are set to **True**.</span></span> <span data-ttu-id="37d1b-111">このような場合はマップのテスト エラーを避けるためには、次のように設定します。、**値**いずれかの定数値にノードのプロパティまたは**\<空\>** です。</span><span class="sxs-lookup"><span data-stu-id="37d1b-111">To avoid Test Map errors in such cases, set the **Value** property of the node to either a constant value or **\<empty\>**.</span></span> <span data-ttu-id="37d1b-112">使用して**\<空\>** 未使用の送信先スキーマのフィールドの任意のデータを設定したくない場合。</span><span class="sxs-lookup"><span data-stu-id="37d1b-112">Use **\<empty\>** if you do not want to set arbitrary data for unused target schema fields.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="37d1b-113">参照</span><span class="sxs-lookup"><span data-stu-id="37d1b-113">See Also</span></span>  
 [<span data-ttu-id="37d1b-114">マップの検証とテスト</span><span class="sxs-lookup"><span data-stu-id="37d1b-114">Validate and test your maps</span></span>](../core/how-to-configure-map-validation-and-test-parameters.md)

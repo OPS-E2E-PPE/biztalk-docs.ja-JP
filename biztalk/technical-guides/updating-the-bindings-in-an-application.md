@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22302834"
 ---
 # <a name="updating-the-bindings-in-an-application"></a><span data-ttu-id="edf2f-102">アプリケーションのバインドを更新</span><span class="sxs-lookup"><span data-stu-id="edf2f-102">Updating the Bindings in an Application</span></span>
 <span data-ttu-id="edf2f-103">アプリケーションのアセンブリを更新すると、多くの場合、そのバインドが上書きされます。また、アセンブリがまったくバインドされず、バインドの再構成を手動で行う必要が生じることもあります。</span><span class="sxs-lookup"><span data-stu-id="edf2f-103">When you update an assembly in an application, its bindings are often overwritten or else the assembly may not be bound at all, forcing you to manually reconfigure bindings.</span></span> <span data-ttu-id="edf2f-104">これを回避するのには、同じバージョンのアセンブリを更新または新しいバージョンでアセンブリを更新するバインド ファイルを使用できます。</span><span class="sxs-lookup"><span data-stu-id="edf2f-104">To avoid this, you can use a binding file to update the same version of the assembly or update an assembly with a newer version.</span></span>  

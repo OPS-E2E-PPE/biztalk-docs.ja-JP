@@ -1,14 +1,14 @@
 ---
-title: "手順 3 b: 対話の受信場所を追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3 b: 対話の受信場所を追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 59780635-e1b6-4e74-a89a-73ec26d6c670
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966304"
 ---
 # <a name="step-3b-add-an-interact-receive-location-for-the-interact-real-time-scenario"></a><span data-ttu-id="6db2b-102">手順 3 b: 対話の受信場所を追加、リアルタイムのシナリオの対話</span><span class="sxs-lookup"><span data-stu-id="6db2b-102">Step 3B: Add an INTERACT Receive Location for the InterAct Real-Time Scenario</span></span>
 <span data-ttu-id="6db2b-103">完全な[手順 3A: 対話リアルタイム シナリオではファイルの受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario.md)この手順を開始する前にします。</span><span class="sxs-lookup"><span data-stu-id="6db2b-103">Complete [Step 3A: Add a FILE Receive Location for the InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario.md) before you begin this step.</span></span>
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="6db2b-117">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="6db2b-117">**User name**</span></span>|<span data-ttu-id="6db2b-118">SAG への接続に使用するユーザー名を入力します。</span><span class="sxs-lookup"><span data-stu-id="6db2b-118">Type the user name you use to connect to SAG.</span></span>|  
     |<span data-ttu-id="6db2b-119">**アプリケーション名**</span><span class="sxs-lookup"><span data-stu-id="6db2b-119">**Application name**</span></span>|<span data-ttu-id="6db2b-120">サーバーを入力\<*アプリケーション インターフェイス名*\> SAG のボックス ルーティング セット。</span><span class="sxs-lookup"><span data-stu-id="6db2b-120">Type the Server \<*Application Interface Name*\> for the SAG box routing set.</span></span>|  
     |<span data-ttu-id="6db2b-121">**暗号化モード**</span><span class="sxs-lookup"><span data-stu-id="6db2b-121">**Crypto Mode**</span></span>|<span data-ttu-id="6db2b-122">ドロップダウン リストから選択**詳細**です。</span><span class="sxs-lookup"><span data-stu-id="6db2b-122">From the drop-down list, select **Advanced**.</span></span>|  
-    |<span data-ttu-id="6db2b-123">**LogMessageBody**</span><span class="sxs-lookup"><span data-stu-id="6db2b-123">**LogMessageBody**</span></span>|<span data-ttu-id="6db2b-124">ドロップダウン リストから選択**FALSE**です。</span><span class="sxs-lookup"><span data-stu-id="6db2b-124">From the drop-down list, select **FALSE**.</span></span> <span data-ttu-id="6db2b-125">**注:**を TRUE に設定する場合、追跡データベースにメッセージ本文が保持されます。</span><span class="sxs-lookup"><span data-stu-id="6db2b-125">**Note:**  If you set to TRUE, it preserves the message body in the tracking database.</span></span> <span data-ttu-id="6db2b-126">ただし、セキュリティ上の理由から、メッセージの本文見なすことができることはありません、BAM ポータルにします。</span><span class="sxs-lookup"><span data-stu-id="6db2b-126">However, for security reasons, the message body can never be viewed in the BAM portal.</span></span>|  
+    |<span data-ttu-id="6db2b-123">**LogMessageBody**</span><span class="sxs-lookup"><span data-stu-id="6db2b-123">**LogMessageBody**</span></span>|<span data-ttu-id="6db2b-124">ドロップダウン リストから選択**FALSE**です。</span><span class="sxs-lookup"><span data-stu-id="6db2b-124">From the drop-down list, select **FALSE**.</span></span> <span data-ttu-id="6db2b-125">**注:** を TRUE に設定する場合、追跡データベースにメッセージ本文が保持されます。</span><span class="sxs-lookup"><span data-stu-id="6db2b-125">**Note:**  If you set to TRUE, it preserves the message body in the tracking database.</span></span> <span data-ttu-id="6db2b-126">ただし、セキュリティ上の理由から、メッセージの本文見なすことができることはありません、BAM ポータルにします。</span><span class="sxs-lookup"><span data-stu-id="6db2b-126">However, for security reasons, the message body can never be viewed in the BAM portal.</span></span>|  
     |<span data-ttu-id="6db2b-127">**し**</span><span class="sxs-lookup"><span data-stu-id="6db2b-127">**LogMessages**</span></span>|<span data-ttu-id="6db2b-128">ドロップダウン リストから選択**TRUE**です。</span><span class="sxs-lookup"><span data-stu-id="6db2b-128">From the drop-down list, select **TRUE**.</span></span> <span data-ttu-id="6db2b-129">これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。</span><span class="sxs-lookup"><span data-stu-id="6db2b-129">This enables the message events to be captured and tracked in the BAM portal.</span></span>|  
     |<span data-ttu-id="6db2b-130">**メッセージの形式**</span><span class="sxs-lookup"><span data-stu-id="6db2b-130">**Message format**</span></span>|<span data-ttu-id="6db2b-131">ドロップダウン リストから選択**InterActMessage**です。</span><span class="sxs-lookup"><span data-stu-id="6db2b-131">From the drop-down list, select **InterActMessage**.</span></span>|  
     |<span data-ttu-id="6db2b-132">**MemberRef**</span><span class="sxs-lookup"><span data-stu-id="6db2b-132">**MemberRef**</span></span>|<span data-ttu-id="6db2b-133">ドロップダウン リストから選択**ResponseHeader**です。</span><span class="sxs-lookup"><span data-stu-id="6db2b-133">From the drop-down list, select **ResponseHeader**.</span></span>|  
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="6db2b-154">**回復モード**</span><span class="sxs-lookup"><span data-stu-id="6db2b-154">**Recovery mode**</span></span>|<span data-ttu-id="6db2b-155">このプロパティの既定値のままにします。</span><span class="sxs-lookup"><span data-stu-id="6db2b-155">Leave the default value for this property.</span></span> <span data-ttu-id="6db2b-156">このプロパティは、ストア アンド フォワードのシナリオに使用されます。</span><span class="sxs-lookup"><span data-stu-id="6db2b-156">This property is used for Store-and-Forward scenarios.</span></span>|  
     |<span data-ttu-id="6db2b-157">**SNL エンドポイント**</span><span class="sxs-lookup"><span data-stu-id="6db2b-157">**SNL end-point**</span></span>|<span data-ttu-id="6db2b-158">このプロパティの既定値のままにします。</span><span class="sxs-lookup"><span data-stu-id="6db2b-158">Leave the default value for this property.</span></span> <span data-ttu-id="6db2b-159">このプロパティは、ストア アンド フォワードのシナリオに使用されます。</span><span class="sxs-lookup"><span data-stu-id="6db2b-159">This property is used for Store-and-Forward scenarios.</span></span>|  
   
-8.  <span data-ttu-id="6db2b-160">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6db2b-160">Click **OK**.</span></span>  
+8.  <span data-ttu-id="6db2b-160">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6db2b-160">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="6db2b-161">**受信場所のプロパティ** ウィンドウで、**全般** タブで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="6db2b-161">In the **Receive Location Properties** window, on the **General** tab, do the following:</span></span>  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="6db2b-164">**受信ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="6db2b-164">**Receive handler**</span></span>|<span data-ttu-id="6db2b-165">ドロップダウン リストから選択**BizTalkServerIsolatedHost**です。</span><span class="sxs-lookup"><span data-stu-id="6db2b-165">From the drop-down list, select **BizTalkServerIsolatedHost**.</span></span>|  
     |<span data-ttu-id="6db2b-166">**受信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="6db2b-166">**Receive pipeline**</span></span>|<span data-ttu-id="6db2b-167">ドロップダウン リストから選択**XMLReceive**です。</span><span class="sxs-lookup"><span data-stu-id="6db2b-167">From the drop-down list, select **XMLReceive**.</span></span>|  
   
-10. <span data-ttu-id="6db2b-168">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6db2b-168">Click **OK**.</span></span>  
+10. <span data-ttu-id="6db2b-168">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6db2b-168">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="6db2b-169">参照</span><span class="sxs-lookup"><span data-stu-id="6db2b-169">See Also</span></span>  
  <span data-ttu-id="6db2b-170">[手順 3: が送信を作成し、受信のポート、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="6db2b-170">[Step 3: Create Send and Receive Ports for the InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md) </span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963032"
 ---
 # <a name="overview-of-the-sap-adapter"></a><span data-ttu-id="25361-102">SAP アダプターの概要</span><span class="sxs-lookup"><span data-stu-id="25361-102">Overview of the SAP adapter</span></span>
 <span data-ttu-id="25361-103">[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]を WCF サービスとして SAP システムを公開します。</span><span class="sxs-lookup"><span data-stu-id="25361-103">The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] exposes the SAP system as a WCF service.</span></span> <span data-ttu-id="25361-104">アダプターのクライアントは、アダプターと SOAP メッセージを交換することで、SAP システムで操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="25361-104">Adapter clients can perform operations on the SAP system by exchanging SOAP messages with the adapter.</span></span> <span data-ttu-id="25361-105">アダプターは WCF メッセージを処理して、操作を実行する SAP システムへの適切な呼び出しを行います。</span><span class="sxs-lookup"><span data-stu-id="25361-105">The adapter consumes the WCF message and makes appropriate calls to the SAP system to perform the operation.</span></span> <span data-ttu-id="25361-106">アダプターは、SOAP メッセージの形式でクライアントに SAP システムからの応答を返します。</span><span class="sxs-lookup"><span data-stu-id="25361-106">The adapter returns the response from the SAP system back to the client in the form of SOAP messages.</span></span>  

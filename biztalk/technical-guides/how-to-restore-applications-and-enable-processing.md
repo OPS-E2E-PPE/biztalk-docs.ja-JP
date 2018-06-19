@@ -1,14 +1,14 @@
 ---
-title: "アプリケーションを復元し、処理を有効にする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションを復元し、処理を有効にする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 83144965-a51a-481a-afd6-7f573b69badb
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297834"
 ---
 # <a name="how-to-restore-applications-and-enable-processing"></a><span data-ttu-id="326c1-102">アプリケーションを復元し、処理を有効にする方法</span><span class="sxs-lookup"><span data-stu-id="326c1-102">How to Restore Applications and Enable Processing</span></span>
 <span data-ttu-id="326c1-103">BizTalk グループで、アプリケーションを構成し、次のトピックで説明した手順の後にアプリケーションの処理を有効にする[ランタイム コンピューターを更新する方法](../technical-guides/how-to-update-the-runtime-computers.md)です。</span><span class="sxs-lookup"><span data-stu-id="326c1-103">Configure the applications in the BizTalk group and enable application processing after following the steps described in the topic [How to Update the Runtime Computers](../technical-guides/how-to-update-the-runtime-computers.md).</span></span>  

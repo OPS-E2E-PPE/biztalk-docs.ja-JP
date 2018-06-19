@@ -1,17 +1,17 @@
 ---
-title: "手順 1: を作成し、ヘッダーと受信確認スキーマを展開 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: を作成し、ヘッダーと受信確認スキーマを展開 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - end-to-end tutorial, header schemas
 - header schemas
 ms.assetid: 3ff013a4-6c67-4bac-be97-81b2dc5b6119
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960744"
 ---
 # <a name="step-1-create-and-deploy-header-and-acknowledgment-schemas"></a><span data-ttu-id="3cc13-102">手順 1: を作成し、ヘッダーと受信確認スキーマを展開</span><span class="sxs-lookup"><span data-stu-id="3cc13-102">Step 1: Create and Deploy Header and Acknowledgment Schemas</span></span>
 <span data-ttu-id="3cc13-103">メッセージ インスタンスのヘッダー (MSH セグメント) を検証するのにには、ヘッダー スキーマを使用します。</span><span class="sxs-lookup"><span data-stu-id="3cc13-103">You use the header schema to validate the header (MSH segment) of the message instance.</span></span> <span data-ttu-id="3cc13-104">メッセージ インスタンスの確認を生成するのにには、受信確認スキーマを使用します。</span><span class="sxs-lookup"><span data-stu-id="3cc13-104">You use the acknowledgment schema to generate the acknowledgment for the message instance.</span></span> <span data-ttu-id="3cc13-105">このプロセスは、すべてのスキーマ バージョンの間で共通[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X です。</span><span class="sxs-lookup"><span data-stu-id="3cc13-105">This process is common across all schemas versions of [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2.X.</span></span>  

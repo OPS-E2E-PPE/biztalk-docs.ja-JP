@@ -1,17 +1,17 @@
 ---
-title: "証明書のエクスポート |Microsoft ドキュメント"
-ms.custom: 
+title: 証明書のエクスポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - exporting certificates
 - certificates, exporting
 ms.assetid: edeeb300-19d6-44a8-b730-dcd15891cdf9
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964520"
 ---
 # <a name="exporting-certificates"></a><span data-ttu-id="9f4d3-102">証明書のエクスポート</span><span class="sxs-lookup"><span data-stu-id="9f4d3-102">Exporting Certificates</span></span>
 <span data-ttu-id="9f4d3-103">ここでは、証明書のエクスポート ウィザードを使用して証明書をエクスポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="9f4d3-103">This topic describes how to export a certificate by using the Certificate Export Wizard.</span></span> <span data-ttu-id="9f4d3-104">このウィザードを使用すると、パブリック証明書またはプライベート証明書のいずれかをエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="9f4d3-104">Use this wizard to export either a public certificate or a private certificate.</span></span>  

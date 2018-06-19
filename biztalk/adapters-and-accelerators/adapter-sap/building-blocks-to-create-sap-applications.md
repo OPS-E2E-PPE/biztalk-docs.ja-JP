@@ -1,18 +1,18 @@
 ---
-title: "SAP アプリケーションを作成するビルド ブロック |Microsoft ドキュメント"
-ms.custom: 
+title: SAP アプリケーションを作成するビルド ブロック |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - design-time tasks
 - run-time tasks
 - developing, fundamentals of (BizTalk applications)
 ms.assetid: 591a5597-5e7d-44b0-8bee-e1c987c5e6c3
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218170"
 ---
 # <a name="building-blocks-to-create-sap-applications"></a><span data-ttu-id="dc48d-102">SAP アプリケーションを作成する構成要素</span><span class="sxs-lookup"><span data-stu-id="dc48d-102">Building blocks to create SAP applications</span></span>
 <span data-ttu-id="dc48d-103">使用して SAP システムの操作を実行する[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アクティビティの 2 つのセットが含まれます: デザイン時および実行時のアクティビティ。</span><span class="sxs-lookup"><span data-stu-id="dc48d-103">Performing operations on an SAP system using [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] involves two set of activities: design-time activities and run-time activities.</span></span> <span data-ttu-id="dc48d-104">使用して SAP システムの操作を実行する、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を使用して、デザイン時および実行時のタスクのセットを実行する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]と[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールをそれぞれします。</span><span class="sxs-lookup"><span data-stu-id="dc48d-104">To perform operations on an SAP system by using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you must perform a set of design-time and run-time tasks using [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] and [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console respectively.</span></span> <span data-ttu-id="dc48d-105">このセクションでは、これらのタスクの概要を示します。</span><span class="sxs-lookup"><span data-stu-id="dc48d-105">This section provides an overview of these tasks.</span></span> <span data-ttu-id="dc48d-106">すべてトピックでは、ここでは、SAP システムを使用して、特定の操作を実行する方法を示す[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、これらの高度なタスクでは、モデル化します。</span><span class="sxs-lookup"><span data-stu-id="dc48d-106">All the topics in this section, which demonstrate how to perform specific operations on an SAP system using [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], are modeled on these high-level tasks.</span></span>  

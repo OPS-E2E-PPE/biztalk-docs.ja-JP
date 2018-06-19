@@ -1,17 +1,17 @@
 ---
-title: "使用量ルールの検証を削除する |Microsoft ドキュメント"
-ms.custom: 
+title: 使用量ルールの検証を削除する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, deleting rules
 - rules
 ms.assetid: b2b0dabf-8f99-4b85-95da-6bbf3e79ad41
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962120"
 ---
 # <a name="removing-usage-rule-validation"></a><span data-ttu-id="7ecb8-102">使用量ルールの検証を削除します。</span><span class="sxs-lookup"><span data-stu-id="7ecb8-102">Removing Usage Rule Validation</span></span>
 <span data-ttu-id="7ecb8-103">使用に関する規則は SWIFT 標準で定義され、によって強制[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]メッセージの種類ごとに固有のビジネス ポリシー。</span><span class="sxs-lookup"><span data-stu-id="7ecb8-103">Usage rules are defined in SWIFT standards and enforced by [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] business policies specific to each message type.</span></span> <span data-ttu-id="7ecb8-104">これらの使用に関する規則は、使用できるフィールドの追加の検証を提供するガイドラインを示します。</span><span class="sxs-lookup"><span data-stu-id="7ecb8-104">These usage rules are guidelines that you can use to provide extra validation for a field.</span></span> <span data-ttu-id="7ecb8-105">ネットワーク検証ルールは、必須とは異なり、メッセージ型の使用状況規則を必要とならないを選択できます。</span><span class="sxs-lookup"><span data-stu-id="7ecb8-105">Unlike network validation rules, which are mandatory, you can choose not to require usage rules for a message type.</span></span> <span data-ttu-id="7ecb8-106">場合がある場合は、次のいずれかの操作を行います。</span><span class="sxs-lookup"><span data-stu-id="7ecb8-106">If that is the case, you can do either of the following:</span></span>  

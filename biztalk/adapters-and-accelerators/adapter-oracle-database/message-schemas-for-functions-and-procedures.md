@@ -11,7 +11,7 @@ helpviewer_keywords:
 - functions and procedures, message structure of
 - functions and procedures, message actions of
 ms.assetid: 90b77b15-a4c6-487d-a09e-a078ceddfd1e
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25964568"
 ---
 # <a name="message-schemas-for-functions-and-procedures"></a><span data-ttu-id="51600-102">関数およびプロシージャのメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="51600-102">Message Schemas for Functions and Procedures</span></span>
 <span data-ttu-id="51600-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェス Oracle データベースの関数およびストアド プロシージャを操作として。</span><span class="sxs-lookup"><span data-stu-id="51600-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces Oracle database functions and stored procedures as operations.</span></span> <span data-ttu-id="51600-104">このセクションでは、メッセージの構造と関数およびプロシージャの呼び出しに使用する操作について説明します。</span><span class="sxs-lookup"><span data-stu-id="51600-104">This section describes the message structure and actions used to invoke functions and procedures.</span></span>  

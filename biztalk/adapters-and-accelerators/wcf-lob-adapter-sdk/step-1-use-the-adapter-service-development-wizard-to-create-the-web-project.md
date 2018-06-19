@@ -1,14 +1,14 @@
 ---
-title: "手順 1: Web プロジェクトを作成するアダプター サービス開発ウィザードを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: Web プロジェクトを作成するアダプター サービス開発ウィザードを使用して |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7ea0e33c-0d8d-4656-a6f0-3008b90f93f8
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966968"
 ---
 # <a name="step-1-use-the-adapter-service-development-wizard-to-create-the-web-project"></a><span data-ttu-id="2333e-102">手順 1: Web プロジェクトを作成するアダプター サービス開発ウィザードを使用します。</span><span class="sxs-lookup"><span data-stu-id="2333e-102">Step 1: Use the Adapter Service Development Wizard to Create the Web Project</span></span>
 <span data-ttu-id="2333e-103">![4 のステップ 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")</span><span class="sxs-lookup"><span data-stu-id="2333e-103">![Step 1 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")</span></span>  
@@ -36,11 +37,11 @@ ms.lasthandoff: 11/28/2017
   
     |<span data-ttu-id="2333e-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2333e-112">Use this</span></span>|<span data-ttu-id="2333e-113">目的</span><span class="sxs-lookup"><span data-stu-id="2333e-113">To do this</span></span>|  
     |--------------|----------------|  
-    |<span data-ttu-id="2333e-114">**言語**</span><span class="sxs-lookup"><span data-stu-id="2333e-114">**Language**</span></span>|<span data-ttu-id="2333e-115">をクリックして**Visual c#**です。</span><span class="sxs-lookup"><span data-stu-id="2333e-115">Click **Visual C#**.</span></span>|  
+    |<span data-ttu-id="2333e-114">**言語**</span><span class="sxs-lookup"><span data-stu-id="2333e-114">**Language**</span></span>|<span data-ttu-id="2333e-115">をクリックして**Visual c#** です。</span><span class="sxs-lookup"><span data-stu-id="2333e-115">Click **Visual C#**.</span></span>|  
     |<span data-ttu-id="2333e-116">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="2333e-116">**Templates**</span></span>|<span data-ttu-id="2333e-117">をクリックして**WCF アダプタ サービス**です。</span><span class="sxs-lookup"><span data-stu-id="2333e-117">Click **WCF Adapter Service**.</span></span>|  
     |<span data-ttu-id="2333e-118">**場所**</span><span class="sxs-lookup"><span data-stu-id="2333e-118">**Location**</span></span>|<span data-ttu-id="2333e-119">選択**ファイル システム**、し、入力**C:\Tutorials\EchoWeb**パスとして。</span><span class="sxs-lookup"><span data-stu-id="2333e-119">Select **File System**, and then type **C:\Tutorials\EchoWeb** as the path.</span></span>|  
   
-3.  <span data-ttu-id="2333e-120">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2333e-120">Click **OK**.</span></span>  
+3.  <span data-ttu-id="2333e-120">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2333e-120">Click **OK**.</span></span>  
   
 4.  <span data-ttu-id="2333e-121">**へようこそ ページ**、 をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="2333e-121">On the **Welcome page**, click **Next**.</span></span>  
   
@@ -88,7 +89,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="2333e-154">![コントラクトと操作の選択](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/de497b32-c820-480f-84f3-a9d0d2ded86b.gif "de497b32-c820-480f-84f3-a9d0d2ded86b")</span><span class="sxs-lookup"><span data-stu-id="2333e-154">![Select Contract and Operations](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/de497b32-c820-480f-84f3-a9d0d2ded86b.gif "de497b32-c820-480f-84f3-a9d0d2ded86b")</span></span>  
   
-4.  <span data-ttu-id="2333e-155">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2333e-155">Click **Next**.</span></span>  
+4.  <span data-ttu-id="2333e-155">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2333e-155">Click **Next**.</span></span>  
   
 ### <a name="to-configure-service-and-endpoint-behavior"></a><span data-ttu-id="2333e-156">サービスとエンドポイントの動作を構成するには</span><span class="sxs-lookup"><span data-stu-id="2333e-156">To configure service and endpoint behavior</span></span>  
   
@@ -116,13 +117,13 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="2333e-181">![エンドポイント構成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/3fd5784c-64e5-47c1-9a6f-10f12f77f726.gif "3fd5784c-64e5-47c1-9a6f-10f12f77f726")</span><span class="sxs-lookup"><span data-stu-id="2333e-181">![Endpoint Configuration](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/3fd5784c-64e5-47c1-9a6f-10f12f77f726.gif "3fd5784c-64e5-47c1-9a6f-10f12f77f726")</span></span>  
   
-3.  <span data-ttu-id="2333e-182">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2333e-182">Click **Next**</span></span>  
+3.  <span data-ttu-id="2333e-182">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2333e-182">Click **Next**</span></span>  
   
 ### <a name="to-configure-the-binding"></a><span data-ttu-id="2333e-183">バインドを設定する</span><span class="sxs-lookup"><span data-stu-id="2333e-183">To configure the binding</span></span>  
   
 1.  <span data-ttu-id="2333e-184">**サービス エンドポイントのバインディングとアドレスを構成する**] ページで、[、 **BindingConfiguration**内のエントリ**されたコントラクトのバインディングとアドレスを構成する**、および省略記号ボタンをクリックし、(**.**) ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="2333e-184">On the **Configure the service endpoint binding and address** page, select the **BindingConfiguration** entry in **Configure the address and binding for the contract**, and then click the ellipsis (**…**) button.</span></span>  
   
-2.  <span data-ttu-id="2333e-185">**のバインドのカスタマイズ**ダイアログ ボックスで、セット**モード**に**TransportWithMessageCredential**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="2333e-185">In the **Customize Binding** dialog box, set **Mode** to **TransportWithMessageCredential**, and then click **OK**.</span></span>  
+2.  <span data-ttu-id="2333e-185">**のバインドのカスタマイズ**ダイアログ ボックスで、セット**モード**に**TransportWithMessageCredential**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="2333e-185">In the **Customize Binding** dialog box, set **Mode** to **TransportWithMessageCredential**, and then click **OK**.</span></span>  
   
 3.  <span data-ttu-id="2333e-186">をクリックして**適用**、順にクリック**次**です。</span><span class="sxs-lookup"><span data-stu-id="2333e-186">Click **Apply**, and then click **Next**.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "タイム ゾーンと BizTalk Server での定期的なスケジュールの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: タイム ゾーンと BizTalk Server での定期的なスケジュールの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 11/20/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d60ae7be-747e-4034-8b99-46bd7e25fe67
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/21/2017
+ms.locfileid: "25497771"
 ---
 # <a name="configure-the-time-zone-and-recurrence-scheduling-in-biztalk-server"></a><span data-ttu-id="3ac2d-102">タイム ゾーンと BizTalk Server での定期的なスケジュールを構成します。</span><span class="sxs-lookup"><span data-stu-id="3ac2d-102">Configure the time zone and recurrence scheduling in BizTalk Server</span></span>
 <span data-ttu-id="3ac2d-103">タイム ゾーンを設定し、定期的なスケジュールを構成して受信場所で[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="3ac2d-103">Set the timezone and configure a recurrence schedule on your receive locations in [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)].</span></span> 

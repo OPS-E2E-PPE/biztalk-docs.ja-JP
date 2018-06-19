@@ -1,15 +1,15 @@
 ---
-title: "BizTalk アダプター パック 2016 のインストールの手順を投稿 |Microsoft ドキュメント"
-description: "BAP など 2016 をインストールした後に完了する手順については、BizTalk 管理コンソールで、更新 Oracle の場合、アダプターのバインドを登録するアダプターを追加します。"
-ms.custom: 
+title: BizTalk アダプター パック 2016 のインストールの手順を投稿 |Microsoft ドキュメント
+description: BAP など 2016 をインストールした後に完了する手順については、BizTalk 管理コンソールで、更新 Oracle の場合、アダプターのバインドを登録するアダプターを追加します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b8946bfe-92bb-470d-bec4-9bc3a07ce0d2
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967400"
 ---
 # <a name="post-installation-steps-for-biztalk-adapter-pack-2016"></a><span data-ttu-id="8ab77-103">BizTalk アダプター パック 2016 のインストールの手順を投稿します。</span><span class="sxs-lookup"><span data-stu-id="8ab77-103">Post installation steps for BizTalk Adapter Pack 2016</span></span>
 <span data-ttu-id="8ab77-104">インストールした後、 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]、いくつかのインストール後の手順です。</span><span class="sxs-lookup"><span data-stu-id="8ab77-104">After you install the [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)], there are some post-installation steps.</span></span> <span data-ttu-id="8ab77-105">このトピックでは、次の手順を示します。</span><span class="sxs-lookup"><span data-stu-id="8ab77-105">This topic lists these steps.</span></span>   
@@ -70,7 +71,7 @@ ms.lasthandoff: 11/28/2017
 > - <span data-ttu-id="8ab77-125">*NewVersion* Oracle.DataAccess.dll ファイルをコンピューターにインストールされているのバージョンに基づく更新する値が必要です。</span><span class="sxs-lookup"><span data-stu-id="8ab77-125">The *newVersion* value needs to be updated based on the version of the Oracle.DataAccess.dll file installed on the computer.</span></span>  <span data-ttu-id="8ab77-126">Oracle.DataAccess.dll は、Oracle からインストールする Oracle クライアントに含まれています。</span><span class="sxs-lookup"><span data-stu-id="8ab77-126">Oracle.DataAccess.dll is included with the Oracle Client you install from Oracle.</span></span>  <span data-ttu-id="8ab77-127">される Oracle クライアント バージョンをインストールする必要がありますのみ[BizTalk Adapter Pack でサポートされている](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx)です。</span><span class="sxs-lookup"><span data-stu-id="8ab77-127">You must only install an Oracle Client version that is [supported by the BizTalk Adapter Pack](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx).</span></span>  
   
 ## <a name="create-sql-server-database-objects-sap-adapter-only"></a><span data-ttu-id="8ab77-128">SQL Server データベース オブジェクト (SAP アダプターのみ) を作成します。</span><span class="sxs-lookup"><span data-stu-id="8ab77-128">Create SQL Server Database objects (SAP adapter only)</span></span>  
- <span data-ttu-id="8ab77-129">SAP システムで tRFCs を呼び出し、実行、 *SapAdapter DbScript-Install.sql* SQL スクリプト。</span><span class="sxs-lookup"><span data-stu-id="8ab77-129">To invoke tRFCs in an SAP system, run the *SapAdapter-DbScript-Install.sql* SQL script.</span></span> <span data-ttu-id="8ab77-130">このスクリプトがインストールされている、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストールし、SQL Server でデータベース オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="8ab77-130">This script is installed with the [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] installation, and creates database objects in SQL Server.</span></span> <span data-ttu-id="8ab77-131">インストールされている通常の*\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]*です。</span><span class="sxs-lookup"><span data-stu-id="8ab77-131">The script is typically installed at *\<installation drive\>:\Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]*.</span></span> <span data-ttu-id="8ab77-132">TRFCs を呼び出すため、アダプターを使用しているときにそのデータベース名を入力する限り、任意の SQL Server データベースに対してこのスクリプトを実行できます。</span><span class="sxs-lookup"><span data-stu-id="8ab77-132">You can run this script against any SQL Server database, as long as you enter that database name while using the adapter to invoke tRFCs.</span></span>
+ <span data-ttu-id="8ab77-129">SAP システムで tRFCs を呼び出し、実行、 *SapAdapter DbScript-Install.sql* SQL スクリプト。</span><span class="sxs-lookup"><span data-stu-id="8ab77-129">To invoke tRFCs in an SAP system, run the *SapAdapter-DbScript-Install.sql* SQL script.</span></span> <span data-ttu-id="8ab77-130">このスクリプトがインストールされている、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストールし、SQL Server でデータベース オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="8ab77-130">This script is installed with the [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] installation, and creates database objects in SQL Server.</span></span> <span data-ttu-id="8ab77-131">インストールされている通常の*\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]* です。</span><span class="sxs-lookup"><span data-stu-id="8ab77-131">The script is typically installed at *\<installation drive\>:\Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]*.</span></span> <span data-ttu-id="8ab77-132">TRFCs を呼び出すため、アダプターを使用しているときにそのデータベース名を入力する限り、任意の SQL Server データベースに対してこのスクリプトを実行できます。</span><span class="sxs-lookup"><span data-stu-id="8ab77-132">You can run this script against any SQL Server database, as long as you enter that database name while using the adapter to invoke tRFCs.</span></span>
   
 ## <a name="register-the-adapter-bindings"></a><span data-ttu-id="8ab77-133">アダプターのバインドを登録します。</span><span class="sxs-lookup"><span data-stu-id="8ab77-133">Register the adapter bindings</span></span>
 <span data-ttu-id="8ab77-134">中に、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストール、セットアップ ウィザードがアダプターのバインドが、または、.NET Framework Data Provider for mySAP Business Suite を登録に失敗する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="8ab77-134">During the [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] installation, the setup wizard may fail to register the adapter bindings or the .NET Framework Data Provider for mySAP Business Suite.</span></span> <span data-ttu-id="8ab77-135">アダプターのインストールが、セットアップが続行されます。</span><span class="sxs-lookup"><span data-stu-id="8ab77-135">And the setup proceeds with the adapter installation.</span></span> <span data-ttu-id="8ab77-136">これは、Windows Communication Foundation (WCF) のインストールによって起こります、[!INCLUDE[afproductnamelong](../includes/afproductnamelong-md.md)]インストール、または壊れている可能性が machine.config ファイルです。</span><span class="sxs-lookup"><span data-stu-id="8ab77-136">This may be caused by the Windows Communication Foundation (WCF) installation, the [!INCLUDE[afproductnamelong](../includes/afproductnamelong-md.md)] installation, or the machine.config file being corrupt.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969016"
 ---
 # <a name="error---first-input-to-table-extractor-functoid-not-valid"></a><span data-ttu-id="f6e0d-102">エラー - テーブル抽出 Functoid が有効でないへの最初の入力</span><span class="sxs-lookup"><span data-stu-id="f6e0d-102">Error - First Input to Table Extractor Functoid Not Valid</span></span>
 <span data-ttu-id="f6e0d-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="f6e0d-103">**Error Code**</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "PIP からの整形式メッセージ インスタンスを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: PIP からの整形式メッセージ インスタンスを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message templates
 - PIPs, message templates
 ms.assetid: fed3698c-25d9-40ca-878a-60171f425bec
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960688"
 ---
 # <a name="creating-a-well-formed-message-instance-from-a-pip"></a><span data-ttu-id="15237-102">PIP からの整形式メッセージ インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="15237-102">Creating a Well-Formed Message Instance from a PIP</span></span>
 <span data-ttu-id="15237-103">ここでは、整形式のメッセージ インスタンスを生成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="15237-103">This topic describes how to produce a well-formed message instance.</span></span> <span data-ttu-id="15237-104">PIP (Partner Interface Process) からメッセージ インスタンスのテンプレートを生成できます。</span><span class="sxs-lookup"><span data-stu-id="15237-104">You can generate a template for a message instance from the Partner Interface Process (PIP).</span></span> <span data-ttu-id="15237-105">その後、データを追加する前に、それが整形式になるように、そのテンプレートを変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="15237-105">After doing this, you have to modify that template, so that it is well formed, before adding your data.</span></span>  

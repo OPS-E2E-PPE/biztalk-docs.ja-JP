@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Server を使用して Oracle データベースで BFILE データ型を持つテーブルでの操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して Oracle データベースで BFILE データ型を持つテーブルでの操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - operations on tables with BFILE data types, performing by using BizTalk Server
 - BFILE data types
 ms.assetid: 2e4af5a9-acde-419b-a99c-3eaa0c72daa8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962552"
 ---
 # <a name="run-operations-on-tables-with-bfile-data-types-in-oracle-database-using-biztalk-server"></a><span data-ttu-id="a88ad-102">BizTalk Server を使用して Oracle データベースで BFILE データ型を持つテーブルでの操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="a88ad-102">Run operations on Tables with BFILE Data Types in Oracle Database using BizTalk Server</span></span>
 <span data-ttu-id="a88ad-103">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]テーブルやストアド プロシージャで BFILE データ型をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="a88ad-103">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports the BFILE data type in tables and stored procedures.</span></span> <span data-ttu-id="a88ad-104">このセクションでは、BFILE データ型の列があるテーブルに対する操作を実行する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a88ad-104">This section provides information on how to perform operations on tables that have a column of BFILE data type.</span></span> <span data-ttu-id="a88ad-105">方法の詳細については[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サポート BFILE を参照してください[テーブルに BFILE データ型の演算 Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/operations-on-tables-with-bfile-data-types-in-oracle-database.md)です。</span><span class="sxs-lookup"><span data-stu-id="a88ad-105">For more information about how the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports BFILE, see [Operations on Tables With BFILE Data Types in Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/operations-on-tables-with-bfile-data-types-in-oracle-database.md).</span></span>  

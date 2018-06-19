@@ -1,17 +1,17 @@
 ---
-title: "手順 2: Wcf-custom 一方向送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: Wcf-custom 一方向送信ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF-Custom one-way send port, configuring
 - migration
 ms.assetid: ae13222e-42e7-45a7-9b2a-0a6779b21736
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962792"
 ---
 # <a name="step-2-configure-a-wcf-custom-one-way-send-port"></a><span data-ttu-id="32629-102">手順 2: Wcf-custom 一方向送信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="32629-102">Step 2: Configure a WCF-Custom One-way Send Port</span></span>
 <span data-ttu-id="32629-103">![手順 3 の 2](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span><span class="sxs-lookup"><span data-stu-id="32629-103">![Step 2 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span></span>  
   
  <span data-ttu-id="32629-104">**所要時間:** 10 分</span><span class="sxs-lookup"><span data-stu-id="32629-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="32629-105">**目標:**このステップで、フラット ファイル IDOC を SAP システムに送信する WCF カスタム ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="32629-105">**Objective:** In this step, you configure a WCF-Custom port to send the flat-file IDOC to an SAP system.</span></span> <span data-ttu-id="32629-106">ポートを構成した後は、Wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成します。</span><span class="sxs-lookup"><span data-stu-id="32629-106">After configuring the port, you configure the BizTalk application to use the WCF-Custom send port.</span></span>  
+ <span data-ttu-id="32629-105">**目標:** このステップで、フラット ファイル IDOC を SAP システムに送信する WCF カスタム ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="32629-105">**Objective:** In this step, you configure a WCF-Custom port to send the flat-file IDOC to an SAP system.</span></span> <span data-ttu-id="32629-106">ポートを構成した後は、Wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成します。</span><span class="sxs-lookup"><span data-stu-id="32629-106">After configuring the port, you configure the BizTalk application to use the WCF-Custom send port.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="32629-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="32629-107">Prerequisites</span></span>  
  <span data-ttu-id="32629-108">構築し、SAP システムに Idoc を送信する vPrev BizTalk プロジェクトを展開した必要があります。</span><span class="sxs-lookup"><span data-stu-id="32629-108">You must have built and deployed your vPrev BizTalk project to send IDOCs to an SAP system.</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="32629-116">**Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="32629-116">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="32629-117">クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、接続、SAP システムにメッセージを送信する URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="32629-117">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI to send messages to the SAP system.</span></span> <span data-ttu-id="32629-118">接続 URI の詳細については、次を参照してください。 [SAP システムの接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="32629-118">For more information about the connection URI, see [Create the SAP System Connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="32629-117">クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、接続、SAP システムにメッセージを送信する URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="32629-117">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI to send messages to the SAP system.</span></span> <span data-ttu-id="32629-118">接続 URI の詳細については、次を参照してください。 [SAP システムの接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="32629-118">For more information about the connection URI, see [Create the SAP System Connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span>  
   
          <span data-ttu-id="32629-119">![送信ポートで指定された接続 URI](../../adapters-and-accelerators/adapter-sap/media/53ae71e1-89ec-49c5-8096-ff04a2c94c0a.gif "53ae71e1-89ec-49c5-8096-ff04a2c94c0a")</span><span class="sxs-lookup"><span data-stu-id="32629-119">![Connection URI specified in the send port](../../adapters-and-accelerators/adapter-sap/media/53ae71e1-89ec-49c5-8096-ff04a2c94c0a.gif "53ae71e1-89ec-49c5-8096-ff04a2c94c0a")</span></span>  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
 9. <span data-ttu-id="32629-138">**送信パイプライン**ドロップダウン リストで、 **ConvertToFlatFile**です。</span><span class="sxs-lookup"><span data-stu-id="32629-138">From the **Send pipeline** drop-down list, select **ConvertToFlatFile**.</span></span> <span data-ttu-id="32629-139">このフラット ファイル アセンブラー パイプラインは、vPrev BizTalk プロジェクトの一部では既にし、XML IDOC をフラット ファイル IDOC に変換するために使用します。</span><span class="sxs-lookup"><span data-stu-id="32629-139">This flat-file assembler pipeline is already a part of the vPrev BizTalk project and is used to convert an XML IDOC to a flat-file IDOC.</span></span>  
   
-10. <span data-ttu-id="32629-140">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32629-140">Click **OK**.</span></span>  
+10. <span data-ttu-id="32629-140">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32629-140">Click **OK**.</span></span>  
   
 ### <a name="to-configure-the-biztalk-application"></a><span data-ttu-id="32629-141">BizTalk アプリケーションを構成するには</span><span class="sxs-lookup"><span data-stu-id="32629-141">To configure the BizTalk application</span></span>  
   
@@ -97,7 +98,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  <span data-ttu-id="32629-148">このトピックの前半で作成した、Wcf-custom 送信ポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="32629-148">Select the WCF-Custom send port you created earlier in this topic.</span></span>  
   
-    3.  <span data-ttu-id="32629-149">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32629-149">Click **OK**.</span></span>  
+    3.  <span data-ttu-id="32629-149">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32629-149">Click **OK**.</span></span>  
   
      <span data-ttu-id="32629-150">アプリケーションの構成の詳細についてを参照してください「どのように構成するアプリケーションへ」 [http://go.microsoft.com/fwlink/?LinkId=102360](http://go.microsoft.com/fwlink/?LinkId=102360)です。</span><span class="sxs-lookup"><span data-stu-id="32629-150">For more information about configuring an application, see "How to Configure an Application" at [http://go.microsoft.com/fwlink/?LinkId=102360](http://go.microsoft.com/fwlink/?LinkId=102360).</span></span>  
   

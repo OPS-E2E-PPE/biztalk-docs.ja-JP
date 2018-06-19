@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL Server でストアド プロシージャを実行 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL Server でストアド プロシージャを実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4329a5c1-4df9-4bf7-8a9f-e3c19cb368fb
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966696"
 ---
 # <a name="execute-stored-procedures-in-sql-server-using-biztalk-server"></a><span data-ttu-id="73a4d-102">BizTalk Server を使用して SQL Server でストアド プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="73a4d-102">Execute stored procedures in SQL Server using BizTalk Server</span></span>
 <span data-ttu-id="73a4d-103">[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]操作としては、SQL Server データベース内のプロシージャを表示します。</span><span class="sxs-lookup"><span data-stu-id="73a4d-103">The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces the procedures in SQL Server database as operations.</span></span> <span data-ttu-id="73a4d-104">アダプターのクライアントを使用して、プロシージャを呼び出すことができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="73a4d-104">Adapter clients can invoke the procedures by using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="73a4d-105">アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。 [SQL アダプタを使用して SQL Server でストアド プロシージャの実行](../../adapters-and-accelerators/adapter-sql/execute-stored-procedures-in-sql-server-using-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="73a4d-105">For more information about how the adapter supports these operations, see [Execute Stored Procedures in SQL Server using the SQL adapter](../../adapters-and-accelerators/adapter-sql/execute-stored-procedures-in-sql-server-using-the-sql-adapter.md).</span></span> <span data-ttu-id="73a4d-106">これらの操作用の SOAP メッセージの構造については、次を参照してください。[プロシージャと関数のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md)です。</span><span class="sxs-lookup"><span data-stu-id="73a4d-106">For information about the structure of the SOAP message for these operations, see [Message Schemas for Procedures and Functions](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md).</span></span>  

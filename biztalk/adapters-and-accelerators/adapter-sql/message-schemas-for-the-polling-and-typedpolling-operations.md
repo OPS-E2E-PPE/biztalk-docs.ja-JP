@@ -1,15 +1,15 @@
 ---
-title: "メッセージのポーリングと biztalk SQL アダプターの TypedPolling 操作のスキーマ |Microsoft ドキュメント"
-description: "ポーリングと TypedPolling メッセージの BizTalk アダプター パック (BAP) で SQL アダプターによって使用される構造体"
-ms.custom: 
+title: メッセージのポーリングと biztalk SQL アダプターの TypedPolling 操作のスキーマ |Microsoft ドキュメント
+description: ポーリングと TypedPolling メッセージの BizTalk アダプター パック (BAP) で SQL アダプターによって使用される構造体
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1e900307-2c9c-493b-81c9-67af3e143eeb
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964864"
 ---
 # <a name="message-schemas-for-the-polling-and-typedpolling-operations"></a><span data-ttu-id="72646-103">ポーリングと TypedPolling 操作のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="72646-103">Message Schemas for the Polling and TypedPolling Operations</span></span>
 <span data-ttu-id="72646-104">[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]サーフェスのポーリングと TypedPolling 受信アダプターのクライアントに、ポーリング クエリの結果セットを返す操作。</span><span class="sxs-lookup"><span data-stu-id="72646-104">The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces the Polling and TypedPolling inbound operations to return the result set of the polling query to an adapter client.</span></span>  

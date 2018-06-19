@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964992"
 ---
 # <a name="step-3-creating-the-contoso-lob-application-maps-for-the-price-and-availability-project-using-biztalk-mapper"></a><span data-ttu-id="096c4-102">手順 3: Price and Availability プロジェクトの BizTalk マッパーを使用して用の Contoso LOB アプリケーション マップの作成</span><span class="sxs-lookup"><span data-stu-id="096c4-102">Step 3: Creating the Contoso LOB Application Maps for the Price and Availability Project Using BizTalk Mapper</span></span>
 <span data-ttu-id="096c4-103">ここでは、2 つのマップを作成します。このマップは 2 つの取引先間でメッセージを正常に交換するために必要な変換を定義します。</span><span class="sxs-lookup"><span data-stu-id="096c4-103">In this step, you create two maps that define the transformation required to successfully exchange messages between the two trading partners.</span></span> <span data-ttu-id="096c4-104">このシナリオでは、Contoso ERP システムは Price and Availability Request のメッセージ形式を既に標準化しています。</span><span class="sxs-lookup"><span data-stu-id="096c4-104">For this scenario, the Contoso ERP system has already standardized on a message format for a Price and Availability request.</span></span> <span data-ttu-id="096c4-105">2 つのマップは、取引先である Fabrikam からの要求メッセージと応答メッセージを、内部的に定義された Contoso のメッセージにそれぞれマップします。</span><span class="sxs-lookup"><span data-stu-id="096c4-105">The two maps will map the request and response messages from the trading partner, Fabrikam, to and from those internally defined Contoso messages, respectively.</span></span>  
@@ -59,9 +60,9 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-link-schema-fields-in-the-pip3a2requesttocontosopricerequest-map"></a><span data-ttu-id="096c4-124">PIP3A2RequestToContosoPriceRequest マップのスキーマ フィールドをリンクするには</span><span class="sxs-lookup"><span data-stu-id="096c4-124">To link schema fields in the PIP3A2RequestToContosoPriceRequest map</span></span>  
   
-1.  <span data-ttu-id="096c4-125">送信先スキーマ ペインで右クリックし、 **\<スキーマ\>**ノードをクリックして**ツリー ノードの展開**です。</span><span class="sxs-lookup"><span data-stu-id="096c4-125">In the Destination Schema pane, right-click the **\<Schema\>** node, and then click **Expand Tree Node**.</span></span>  
+1.  <span data-ttu-id="096c4-125">送信先スキーマ ペインで右クリックし、 **\<スキーマ\>** ノードをクリックして**ツリー ノードの展開**です。</span><span class="sxs-lookup"><span data-stu-id="096c4-125">In the Destination Schema pane, right-click the **\<Schema\>** node, and then click **Expand Tree Node**.</span></span>  
   
-2.  <span data-ttu-id="096c4-126">送信元スキーマ ペインで右クリックし、 **\<スキーマ\>**ノードをクリックして**ツリー ノードの展開**です。</span><span class="sxs-lookup"><span data-stu-id="096c4-126">In the Source Schema pane, right-click the **\<Schema\>** node, and then click **Expand Tree Node**.</span></span>  
+2.  <span data-ttu-id="096c4-126">送信元スキーマ ペインで右クリックし、 **\<スキーマ\>** ノードをクリックして**ツリー ノードの展開**です。</span><span class="sxs-lookup"><span data-stu-id="096c4-126">In the Source Schema pane, right-click the **\<Schema\>** node, and then click **Expand Tree Node**.</span></span>  
   
 3.  <span data-ttu-id="096c4-127">ドラッグ、 **GlobalProductIdentifier**フィールドを**ProductID**送信先スキーマ ペインでフィールドです。</span><span class="sxs-lookup"><span data-stu-id="096c4-127">Drag the **GlobalProductIdentifier** field to the **ProductID** field in the Destination Schema pane.</span></span>  
   

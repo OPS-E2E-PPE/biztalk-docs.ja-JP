@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204898"
 ---
 # <a name="global-settings-tab"></a><span data-ttu-id="732a0-102">グローバル設定 タブ</span><span class="sxs-lookup"><span data-stu-id="732a0-102">Global Settings Tab</span></span>
 <span data-ttu-id="732a0-103">使用する、**グローバル設定** タブで使用されるログ ストアを構成する[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="732a0-103">You use the **Global Settings** tab to configure the logging store used by [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)].</span></span>  

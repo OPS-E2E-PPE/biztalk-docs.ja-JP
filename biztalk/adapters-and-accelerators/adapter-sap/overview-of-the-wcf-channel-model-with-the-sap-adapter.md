@@ -1,17 +1,17 @@
 ---
-title: "SAP アダプターを使用して WCF チャネル モデルの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP アダプターを使用して WCF チャネル モデルの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF channel model, overview
 - WCF channel model, creating messages for the SAP adapter
 ms.assetid: 6192d637-efac-4580-8880-b5bae9d16f31
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967248"
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-sap-adapter"></a><span data-ttu-id="c68cf-102">SAP アダプターを使用して WCF チャネル モデルの概要</span><span class="sxs-lookup"><span data-stu-id="c68cf-102">Overview of the WCF channel model with the SAP adapter</span></span>
 <span data-ttu-id="c68cf-103">Rfc、tRFCs、または呼び出す Bapi の SAP システムで、または、IDOC を SAP システムに送信するには、コードは WCF クライアントとして機能し、送信操作をアダプターに送信します。</span><span class="sxs-lookup"><span data-stu-id="c68cf-103">To invoke RFCs, tRFCs, or BAPIs on an SAP system, or to send IDOCS to an SAP system, your code acts as a WCF client and sends outbound operations to the adapter.</span></span> <span data-ttu-id="c68cf-104">WCF チャネル モデルでは、コードは、チャネル経由で要求メッセージを送信することによって、アダプターでの操作を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="c68cf-104">In the WCF channel model, your code invokes operations on the adapter by sending a request message over a channel.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルを使用して SQL からクエリ通知を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して SQL からクエリ通知を受け取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1c9def31-3c5a-4326-b798-31bde0ff2568
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964088"
 ---
 # <a name="receive-query-notifications-from-sql-using-the-wcf-service-model"></a><span data-ttu-id="e0a59-102">WCF サービス モデルを使用して SQL のクエリ通知を受信します。</span><span class="sxs-lookup"><span data-stu-id="e0a59-102">Receive Query Notifications from SQL using the WCF Service Model</span></span>
 <span data-ttu-id="e0a59-103">このトピックの内容を構成する方法を示しています、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server データベースからクエリ通知メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="e0a59-103">This topic demonstrates how to configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive query notification messages from a SQL Server database.</span></span> <span data-ttu-id="e0a59-104">通知を示すためには、テーブル、従業員、"Status"列を含むを検討してください。</span><span class="sxs-lookup"><span data-stu-id="e0a59-104">To demonstrate notifications, consider a table, Employee, with a “Status” column.</span></span> <span data-ttu-id="e0a59-105">このテーブルに新しいレコードが挿入されると、[状態] 列の値は 0 に設定します。</span><span class="sxs-lookup"><span data-stu-id="e0a59-105">When a new record is inserted to this table, the value of the Status column is set to 0.</span></span> <span data-ttu-id="e0a59-106">[状態] 列が「0」であるすべてのレコードを取得する SQL ステートメントを使用して通知を登録することによって通知を受信するアダプターを構成します。</span><span class="sxs-lookup"><span data-stu-id="e0a59-106">You can configure the adapter to receive notifications by registering for notifications using a SQL statement that retrieves all records that have Status column as “0.”</span></span> <span data-ttu-id="e0a59-107">これを行うための SQL ステートメントを指定することによって、 **NotificationStatement**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="e0a59-107">You can do so by specifying the SQL statement for the **NotificationStatement** binding property.</span></span> <span data-ttu-id="e0a59-108">アダプターのクライアントは、通知を受信した後、SQL Server データベースで、それ以降の作業を実行するためのロジックを格納できます。</span><span class="sxs-lookup"><span data-stu-id="e0a59-108">After the adapter client receives the notification, it can contain the logic to do any subsequent tasks on the SQL Server database.</span></span> <span data-ttu-id="e0a59-109">わかりやすくするため、この例では、アダプターのクライアントが「0」として、[状態] 列を持つテーブル内のすべてのレコードを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="e0a59-109">In this example, for the sake of simplicity, the adapter client lists all the records in the table that have the Status column as “0.”</span></span>  

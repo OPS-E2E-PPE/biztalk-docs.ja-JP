@@ -11,7 +11,7 @@ helpviewer_keywords:
 - receive locations, creating
 - creating, receive locations
 ms.assetid: 712cf42f-8d71-47e9-b2bf-3da158b74fe4
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25966016"
 ---
 # <a name="creating-an-a4swift-receive-location"></a><span data-ttu-id="bb852-102">受信場所の A4SWIFT の作成</span><span class="sxs-lookup"><span data-stu-id="bb852-102">Creating an A4SWIFT Receive Location</span></span>
 <span data-ttu-id="bb852-103">作成する必要があります、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] SWIFT ネットワークからのメッセージの受信を有効にする受信場所[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]、次の図に示すようにします。</span><span class="sxs-lookup"><span data-stu-id="bb852-103">You must create an [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] receive location to enable message reception from the SWIFT network by [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)], as shown in the following figure.</span></span> <span data-ttu-id="bb852-104">受信場所は、受信ファイル フォルダーからフラット ファイル メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="bb852-104">The receive location receives flat file messages from an inbound file folder.</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 03/28/2018
 |<span data-ttu-id="bb852-110">受信ポート</span><span class="sxs-lookup"><span data-stu-id="bb852-110">Receive port</span></span>|<span data-ttu-id="bb852-111">一方向のポート</span><span class="sxs-lookup"><span data-stu-id="bb852-111">One-way port</span></span>|  
 |<span data-ttu-id="bb852-112">トランスポートの種類</span><span class="sxs-lookup"><span data-stu-id="bb852-112">Transport type</span></span>|<span data-ttu-id="bb852-113">FILE</span><span class="sxs-lookup"><span data-stu-id="bb852-113">FILE</span></span>|  
 |<span data-ttu-id="bb852-114">アドレスの URI</span><span class="sxs-lookup"><span data-stu-id="bb852-114">Address URI</span></span>|<span data-ttu-id="bb852-115">メッセージを受信するフォルダーの名前</span><span class="sxs-lookup"><span data-stu-id="bb852-115">Name of the folder that you want to receive the message</span></span>|  
-|<span data-ttu-id="bb852-116">ファイル マスク</span><span class="sxs-lookup"><span data-stu-id="bb852-116">File mask</span></span>|<span data-ttu-id="bb852-117">\*.*\<拡張子\>*ここで、 \<*拡張子*\>入力方向の拡張機能は、フラット ファイル メッセージ</span><span class="sxs-lookup"><span data-stu-id="bb852-117">\*.*\<extension\>*, where \<*extension*\> is the extension of the incoming flat file message</span></span>|  
+|<span data-ttu-id="bb852-116">ファイル マスク</span><span class="sxs-lookup"><span data-stu-id="bb852-116">File mask</span></span>|<span data-ttu-id="bb852-117">\*.*\<拡張子\>* ここで、 \<*拡張子*\>入力方向の拡張機能は、フラット ファイル メッセージ</span><span class="sxs-lookup"><span data-stu-id="bb852-117">\*.*\<extension\>*, where \<*extension*\> is the extension of the incoming flat file message</span></span>|  
 |<span data-ttu-id="bb852-118">[受信ハンドラー]</span><span class="sxs-lookup"><span data-stu-id="bb852-118">Receive handler</span></span>|<span data-ttu-id="bb852-119">BizTalkServerApplication</span><span class="sxs-lookup"><span data-stu-id="bb852-119">BizTalkServerApplication</span></span>|  
 |<span data-ttu-id="bb852-120">受信パイプライン。</span><span class="sxs-lookup"><span data-stu-id="bb852-120">Receive pipeline</span></span>|<span data-ttu-id="bb852-121">[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]受信パイプラインを作成します。</span><span class="sxs-lookup"><span data-stu-id="bb852-121">The [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] receive pipeline that you created</span></span>|  
   
@@ -64,12 +65,12 @@ ms.lasthandoff: 03/28/2018
   
 10. <span data-ttu-id="bb852-133">クリックして、**構成**型のドロップダウン リストの右側にあるボタンです。</span><span class="sxs-lookup"><span data-stu-id="bb852-133">Click the **Configure** button to the right of the Type drop-down list.</span></span>  
   
-11. <span data-ttu-id="bb852-134">[FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。</span><span class="sxs-lookup"><span data-stu-id="bb852-134">In the FILE Transport Properties dialog box, click **Browse**.</span></span> <span data-ttu-id="bb852-135">メッセージを受信するフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="bb852-135">Move to the folder that you want to receive the message.</span></span> <span data-ttu-id="bb852-136">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bb852-136">Click **OK**.</span></span>  
+11. <span data-ttu-id="bb852-134">[FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。</span><span class="sxs-lookup"><span data-stu-id="bb852-134">In the FILE Transport Properties dialog box, click **Browse**.</span></span> <span data-ttu-id="bb852-135">メッセージを受信するフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="bb852-135">Move to the folder that you want to receive the message.</span></span> <span data-ttu-id="bb852-136">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bb852-136">Click **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="bb852-137">このフォルダーが存在しない場合を使用してそれを作成、**新しいフォルダーの作成**コマンド。</span><span class="sxs-lookup"><span data-stu-id="bb852-137">If this folder does not exist, you can create it using the **Make New Folder** command.</span></span>  
   
-12. <span data-ttu-id="bb852-138">ファイル トランスポートのプロパティ ダイアログ ボックスで、**ファイル マスク**ボックスに、入力 **\*.\<*拡張子*\>**ここで、 \<*拡張子*\>入力方向の拡張機能は、などのフラットファイルメッセージ**.txt**です。</span><span class="sxs-lookup"><span data-stu-id="bb852-138">In the FILE Transport Properties dialog box, in the **File Mask** box, enter **\*.\<*extension*\>**, where \<*extension*\> is the extension of the incoming flat file message, such as **.txt**.</span></span> <span data-ttu-id="bb852-139">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bb852-139">Click **OK**.</span></span>  
+12. <span data-ttu-id="bb852-138">ファイル トランスポートのプロパティ ダイアログ ボックスで、**ファイル マスク**ボックスに、入力 **\*.\<*拡張子*\>** ここで、 \<*拡張子*\>入力方向の拡張機能は、などのフラットファイルメッセージ **.txt**です。</span><span class="sxs-lookup"><span data-stu-id="bb852-138">In the FILE Transport Properties dialog box, in the **File Mask** box, enter **\*.\<*extension*\>**, where \<*extension*\> is the extension of the incoming flat file message, such as **.txt**.</span></span> <span data-ttu-id="bb852-139">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bb852-139">Click **OK**.</span></span>  
   
 13. <span data-ttu-id="bb852-140">受信場所のプロパティ ダイアログ ボックスでいることを確認**BizTalkServerApplication**として入力された、**受信ハンドラー**ボックス。</span><span class="sxs-lookup"><span data-stu-id="bb852-140">In the Receive Location Properties dialog box, ensure that **BizTalkServerApplication** is entered for the **Receive handler** box.</span></span>  
   

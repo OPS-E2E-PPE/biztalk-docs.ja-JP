@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961464"
 ---
 # <a name="step-3-create-and-deploy-a-trigger-event-message-projecthl7main"></a><span data-ttu-id="01db4-102">手順 3: を作成し、トリガー イベント (メッセージ) Project_hl7_main の展開</span><span class="sxs-lookup"><span data-stu-id="01db4-102">Step 3: Create and Deploy a Trigger Event (Message) Project_hl7_main</span></span>
 <span data-ttu-id="01db4-103">この手順では、トリガー イベント メッセージで使用されるスキーマを作成します。</span><span class="sxs-lookup"><span data-stu-id="01db4-103">In this step, you create the schema used by a trigger event message.</span></span> <span data-ttu-id="01db4-104">たとえば、受付放電して転送システム (ADT) をメッセージを送信病院情報システム (HIS) にします。</span><span class="sxs-lookup"><span data-stu-id="01db4-104">For example, the Admissions Discharge and Transfer system (ADT) that sends a message to the Hospital Information System (HIS).</span></span> <span data-ttu-id="01db4-105">このスキーマを使用するには、メッセージの形式を定義します。</span><span class="sxs-lookup"><span data-stu-id="01db4-105">You use this schema to define the format of your message.</span></span>  

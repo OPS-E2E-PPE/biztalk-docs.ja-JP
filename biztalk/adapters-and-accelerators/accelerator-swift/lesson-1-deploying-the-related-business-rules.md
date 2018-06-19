@@ -1,17 +1,17 @@
 ---
-title: "レッスン 1: 関連するビジネス ルールの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 1: 関連するビジネス ルールの展開 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, deploying
 - deploying, business rules
 ms.assetid: f8f5b103-4b66-4836-8165-99692574961a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960768"
 ---
 # <a name="lesson-1-deploying-the-related-business-rules"></a><span data-ttu-id="d4f10-102">レッスン 1: 関連するビジネス ルールの展開</span><span class="sxs-lookup"><span data-stu-id="d4f10-102">Lesson 1: Deploying the Related Business Rules</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="d4f10-103">[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]で、A4SWIFT ソフトウェア開発キット (SDK)、ビジネス ルール エンジン (BRE) の展開ユーティリティと呼ばれるプログラムが含まれています。</span><span class="sxs-lookup"><span data-stu-id="d4f10-103"> [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] includes a program in the A4SWIFT Software Development Kit (SDK) called the Business Rule Engine (BRE) Deployment Utility.</span></span> <span data-ttu-id="d4f10-104">このレッスンでは、このユーティリティを使用して展開されたスキーマのアセンブリを調べる、必須のルールを決定および必要なボキャブラリとすべてのスキーマのポリシーを展開します。</span><span class="sxs-lookup"><span data-stu-id="d4f10-104">In this lesson, you use this utility to inspect an assembly for deployed schemas, determine the required rules, and deploy the necessary vocabularies and policies for each schema.</span></span>  
@@ -50,6 +51,6 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="d4f10-117">各展開の手順を確認するテキスト エディターを使用してログ ファイルを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="d4f10-117">You can open the log file using a text editor to confirm each of the deployment steps.</span></span>  
   
-7.  <span data-ttu-id="d4f10-118">ルール エンジン更新サービスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="d4f10-118">Restart the Rule Engine Update Service.</span></span> <span data-ttu-id="d4f10-119">クリックして**開始**をクリックすると、**実行**入力、 **services.msc**をクリックすると、 **[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="d4f10-119">Do so by clicking **Start**, clicking **Run**, entering **services.msc**, and clicking **OK**.</span></span> <span data-ttu-id="d4f10-120">**サービス (ローカル)**ウィンドウを右クリックして**ルール エンジン更新サービス**、クリックして**再起動**です。</span><span class="sxs-lookup"><span data-stu-id="d4f10-120">In the **Services (Local)** window, right-click **Rule Engine Update Service**, and then click **Restart**.</span></span>  
+7.  <span data-ttu-id="d4f10-118">ルール エンジン更新サービスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="d4f10-118">Restart the Rule Engine Update Service.</span></span> <span data-ttu-id="d4f10-119">クリックして**開始**をクリックすると、**実行**入力、 **services.msc**をクリックすると、 **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="d4f10-119">Do so by clicking **Start**, clicking **Run**, entering **services.msc**, and clicking **OK**.</span></span> <span data-ttu-id="d4f10-120">**サービス (ローカル)** ウィンドウを右クリックして**ルール エンジン更新サービス**、クリックして**再起動**です。</span><span class="sxs-lookup"><span data-stu-id="d4f10-120">In the **Services (Local)** window, right-click **Rule Engine Update Service**, and then click **Restart**.</span></span>  
   
  <span data-ttu-id="d4f10-121">進みます[レッスン 2: ビジネス ルール作成ツールを使用して、展開を確認する](../../adapters-and-accelerators/accelerator-swift/lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool.md)です。</span><span class="sxs-lookup"><span data-stu-id="d4f10-121">Proceed to [Lesson 2: Confirming the Deployment Using the Business Rule Composer Tool](../../adapters-and-accelerators/accelerator-swift/lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool.md).</span></span>

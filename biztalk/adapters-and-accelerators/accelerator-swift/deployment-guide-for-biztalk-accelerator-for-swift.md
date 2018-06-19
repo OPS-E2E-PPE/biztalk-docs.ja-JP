@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208922"
 ---
 # <a name="deployment-guide-for-biztalk-accelerator-for-swift"></a><span data-ttu-id="fe26f-102">BizTalk Accelerator for SWIFT のデプロイ ガイド</span><span class="sxs-lookup"><span data-stu-id="fe26f-102">Deployment Guide for BizTalk Accelerator for SWIFT</span></span>
 <span data-ttu-id="fe26f-103">このガイドの展開に関する情報を提供する[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="fe26f-103">This guide provides information about deploying [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)].</span></span>  

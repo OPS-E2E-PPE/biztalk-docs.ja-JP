@@ -1,17 +1,17 @@
 ---
-title: "エラー抽出サンプル クラス |Microsoft ドキュメント"
-ms.custom: 
+title: エラー抽出サンプル クラス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Error Extractor Sample class
 - errors, Error Extractor Sample class
 ms.assetid: d0d59b21-d80a-4466-a77a-1d3b7df1bc2a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965128"
 ---
 # <a name="error-extractor-sample-class"></a><span data-ttu-id="647df-102">エラー抽出サンプル クラス</span><span class="sxs-lookup"><span data-stu-id="647df-102">Error Extractor Sample Class</span></span>
 <span data-ttu-id="647df-103">[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]逆アセンブラーは、XML オブジェクトへのエラーをシリアル化し、マルチパート メッセージのエラー セクションに、XML オブジェクトをアタッチします。</span><span class="sxs-lookup"><span data-stu-id="647df-103">The [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] disassembler serializes errors to an XML object, and attaches the XML object to the error section of a multipart message.</span></span> <span data-ttu-id="647df-104">逆アセンブラーは、有効なメッセージの場合と同様後、失敗したメッセージとメッセージ ボックス データベースに公開します。</span><span class="sxs-lookup"><span data-stu-id="647df-104">The disassembler then publishes the failed message to the MessageBox database just as it would a valid message.</span></span> <span data-ttu-id="647df-105">そのため、メッセージ ボックス データベースにメッセージ carry エラーの詳細に失敗しました。</span><span class="sxs-lookup"><span data-stu-id="647df-105">Therefore, failed messages carry error details into the MessageBox database.</span></span> <span data-ttu-id="647df-106">エラー抽出サンプル クラスを使用して、失敗したメッセージからエラーの詳細を抽出し、エラーの詳細を含む 1 つのファイルと元のメッセージを持つ別のファイルを生成できます。</span><span class="sxs-lookup"><span data-stu-id="647df-106">You can use the Error Extractor Sample Class to extract the error details from a failed message, and generate one file that has the error details and another file that has the original message.</span></span>  

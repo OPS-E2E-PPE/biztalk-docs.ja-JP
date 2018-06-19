@@ -12,7 +12,7 @@ helpviewer_keywords:
 - managing [SSO applications], clearing cache
 - applications [SSO], caching
 ms.assetid: 6230b9a4-c7b8-47b4-854b-12853d9bf5b0
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25968640"
 ---
 # <a name="how-to-clear-the-application-cache"></a><span data-ttu-id="43226-102">アプリケーション キャッシュをクリアする方法</span><span class="sxs-lookup"><span data-stu-id="43226-102">How to Clear the Application Cache</span></span>
 <span data-ttu-id="43226-103">MMC スナップインまたはコマンド ラインを使用して、すべてのシングル サインオン サーバーの指定したアプリケーションの、資格情報キャッシュの内容 (関連アプリケーションに関連付けられたすべての情報) を削除できます。</span><span class="sxs-lookup"><span data-stu-id="43226-103">You can use the MMC Snap-In or the command line to remove the contents of the credential cache (all the information associated with the affiliate application) for the specified application on all of the Single Sign-On Servers.</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="43226-111">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="43226-111">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="43226-112">既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="43226-112">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="43226-113">型 **ssomanage – purgecache *\<アプリケーション名\>* * *、どこで\<*アプリケーション名*\>関連アプリケーションの名前を指定します。キャッシュを消去します。</span><span class="sxs-lookup"><span data-stu-id="43226-113">Type **ssomanage –purgecache *\<application name\>***, where \<*application name*\> is the name of the affiliate application you want to purge the cache for.</span></span>  
+3.  <span data-ttu-id="43226-113">型 **ssomanage – purgecache *\<アプリケーション名\>* * *、どこで\<* アプリケーション名*\>関連アプリケーションの名前を指定します。キャッシュを消去します。</span><span class="sxs-lookup"><span data-stu-id="43226-113">Type **ssomanage –purgecache *\<application name\>***, where \<* application name*\> is the name of the affiliate application you want to purge the cache for.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="43226-114">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="43226-114">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

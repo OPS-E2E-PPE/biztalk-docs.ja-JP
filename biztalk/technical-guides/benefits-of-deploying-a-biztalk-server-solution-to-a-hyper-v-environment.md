@@ -1,14 +1,14 @@
 ---
-title: "Hyper V を BizTalk Server ソリューションを展開するメリットを潜在的な環境を仮想化 |Microsoft ドキュメント"
-ms.custom: 
+title: Hyper V を BizTalk Server ソリューションを展開するメリットを潜在的な環境を仮想化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 588c70f0-68f0-4e58-8f3d-aa6834397bd4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295930"
 ---
 # <a name="potential-benefits-of-deploying-a-biztalk-server-solution-to-a-hyper-v-virtualized-environment"></a><span data-ttu-id="7472a-102">仮想化環境の Hyper V を BizTalk Server ソリューションを展開する潜在的なメリット</span><span class="sxs-lookup"><span data-stu-id="7472a-102">Potential Benefits of Deploying a BizTalk Server Solution to a Hyper-V Virtualized Environment</span></span>
 <span data-ttu-id="7472a-103">このトピックでは、展開する次の利点の一部について説明します、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HYPER-V 仮想環境にソリューションです。</span><span class="sxs-lookup"><span data-stu-id="7472a-103">This topic describes some of the benefits of deploying your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution to a Hyper-V virtualized environment.</span></span>  
@@ -26,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="7472a-106">**1 台の物理コンピューター - 複数の個別の論理セキュリティ境界を定義する機能**HYPER-V は個別の論理的なセキュリティの境界、または 1 つの物理ハードウェア リソース内のパーティションの作成に対応します。</span><span class="sxs-lookup"><span data-stu-id="7472a-106">**Ability to define multiple distinct logical security boundaries on a single physical computer -** Hyper-V accommodates the creation of distinct logical security boundaries or partitions within a single physical hardware resource.</span></span> <span data-ttu-id="7472a-107">パーティションは、オペレーティング システムが実行される、ハイパーバイザーによってサポートされる分離の 1 つの論理単位です。</span><span class="sxs-lookup"><span data-stu-id="7472a-107">A partition is a single logical unit of isolation, supported by the hypervisor, in which operating systems execute.</span></span> <span data-ttu-id="7472a-108">たとえばをインストールするときに、これを行うにはことはできませんが、1 台の HYPER-V ホスト コンピューターで実行する複数の BizTalk Server グループを作成できます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]単一のホスト コンピューターのホスト オペレーティング システムにします。</span><span class="sxs-lookup"><span data-stu-id="7472a-108">For example, you could create multiple BizTalk Server groups to run on a single Hyper-V host computer whereas you would not be able to do this when installing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] on the host operating system of a single host computer.</span></span>  
   
--   <span data-ttu-id="7472a-109">**使いやすさの展開と管理 –**の統合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]より少ない物理サーバーにコンピューターの展開を簡略化します。</span><span class="sxs-lookup"><span data-stu-id="7472a-109">**Ease of deployment and management –** Consolidation of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] computers into fewer physical servers simplifies deployment.</span></span> [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]<span data-ttu-id="7472a-110">.vhd ファイルを使用して、物理および仮想のコンピューターの展開の簡素化されたメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="7472a-110"> uses a simplified method for physical and virtual computer deployments by using .vhd files.</span></span> <span data-ttu-id="7472a-111">さらに、包括的な HYPER-V 管理ソリューションは、System Center Virtual Machine Manager と共に使用することができます。</span><span class="sxs-lookup"><span data-stu-id="7472a-111">Furthermore, a comprehensive Hyper-V management solution is available with System Center Virtual Machine Manager.</span></span> <span data-ttu-id="7472a-112">System Center Virtual Machine Manager に関する詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkID=111303](http://go.microsoft.com/fwlink/?LinkID=111303)です。</span><span class="sxs-lookup"><span data-stu-id="7472a-112">For more information about System Center Virtual Machine Manager, see [http://go.microsoft.com/fwlink/?LinkID=111303](http://go.microsoft.com/fwlink/?LinkID=111303).</span></span>  
+-   <span data-ttu-id="7472a-109">**使いやすさの展開と管理 –** の統合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]より少ない物理サーバーにコンピューターの展開を簡略化します。</span><span class="sxs-lookup"><span data-stu-id="7472a-109">**Ease of deployment and management –** Consolidation of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] computers into fewer physical servers simplifies deployment.</span></span> [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]<span data-ttu-id="7472a-110">.vhd ファイルを使用して、物理および仮想のコンピューターの展開の簡素化されたメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="7472a-110"> uses a simplified method for physical and virtual computer deployments by using .vhd files.</span></span> <span data-ttu-id="7472a-111">さらに、包括的な HYPER-V 管理ソリューションは、System Center Virtual Machine Manager と共に使用することができます。</span><span class="sxs-lookup"><span data-stu-id="7472a-111">Furthermore, a comprehensive Hyper-V management solution is available with System Center Virtual Machine Manager.</span></span> <span data-ttu-id="7472a-112">System Center Virtual Machine Manager に関する詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkID=111303](http://go.microsoft.com/fwlink/?LinkID=111303)です。</span><span class="sxs-lookup"><span data-stu-id="7472a-112">For more information about System Center Virtual Machine Manager, see [http://go.microsoft.com/fwlink/?LinkID=111303](http://go.microsoft.com/fwlink/?LinkID=111303).</span></span>  
   
 -   <span data-ttu-id="7472a-113">**HYPER-V クラスターの許容範囲のサポートをフォールト**のための HYPER-V クラスターの対応するアプリケーションは、Windows Server 2008 は、ネイティブ ホストのクラスタ リングを HYPER-V 仮想化環境で作成されたバーチャル マシンのサポートを提供します。</span><span class="sxs-lookup"><span data-stu-id="7472a-113">**Fault tolerance support through Hyper-V clustering -** Because Hyper-V is a cluster aware application, Windows Server 2008 provides native host clustering support for virtual machines created in a Hyper-V virtualized environment.</span></span>  
   

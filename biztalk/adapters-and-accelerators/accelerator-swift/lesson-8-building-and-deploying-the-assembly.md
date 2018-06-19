@@ -1,11 +1,11 @@
 ---
-title: "レッスン 8: のビルドと、アセンブリの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 8: のビルドと、アセンブリの展開 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - building assemblies
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - assemblies, building
 - assemblies, deploying
 ms.assetid: 74c9dfbd-8365-4600-8885-a9d9c3490dd5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960920"
 ---
 # <a name="lesson-8-building-and-deploying-the-assembly"></a><span data-ttu-id="e8b35-102">レッスン 8: のビルドと、アセンブリの展開</span><span class="sxs-lookup"><span data-stu-id="e8b35-102">Lesson 8: Building and Deploying the Assembly</span></span>
 <span data-ttu-id="e8b35-103">このレッスンでは、ビルドし、前の手順で作成したパイプラインを含むアセンブリを生成するパイプライン プロジェクトを配置します。</span><span class="sxs-lookup"><span data-stu-id="e8b35-103">In this lesson, you build and deploy the pipeline project to generate an assembly that contains the pipelines you created in the previous steps.</span></span> <span data-ttu-id="e8b35-104">このレッスンは、これまでに作成した作業ではコンパイル エラーがないようにします。</span><span class="sxs-lookup"><span data-stu-id="e8b35-104">This lesson ensures there are no compilation errors in the work you have created so far.</span></span>  
@@ -46,6 +47,6 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="e8b35-118">右クリック**BizTalk 構成データベース**、クリックして**更新**です。</span><span class="sxs-lookup"><span data-stu-id="e8b35-118">Right-click **BizTalk Configuration Databases**, and then click **Refresh**.</span></span>  
   
-6.  <span data-ttu-id="e8b35-119">展開、**アセンブリ**ノード アクセラレータが正常に展開されたことを確認および**SWIFTPipelines (1.0.0.0)**です。</span><span class="sxs-lookup"><span data-stu-id="e8b35-119">Expand the **Assemblies** node and confirm that the accelerator successfully deployed **SWIFTPipelines (1.0.0.0)**.</span></span>  
+6.  <span data-ttu-id="e8b35-119">展開、**アセンブリ**ノード アクセラレータが正常に展開されたことを確認および**SWIFTPipelines (1.0.0.0)** です。</span><span class="sxs-lookup"><span data-stu-id="e8b35-119">Expand the **Assemblies** node and confirm that the accelerator successfully deployed **SWIFTPipelines (1.0.0.0)**.</span></span>  
   
  <span data-ttu-id="e8b35-120">進みます[第 4 章: 受信 XML を作成して、フラット ファイル送信ポート](../../adapters-and-accelerators/accelerator-swift/module-4-adding-an-xml-receive-location-and-flat-file-send-port.md)です。</span><span class="sxs-lookup"><span data-stu-id="e8b35-120">Proceed to [Module 4: Creating XML Receive and Flat File Send Ports](../../adapters-and-accelerators/accelerator-swift/module-4-adding-an-xml-receive-location-and-flat-file-send-port.md).</span></span>

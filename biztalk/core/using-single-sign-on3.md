@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/security-in-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 217a6c344a45d2cd6ae1303913659ae5b81b0814
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013969"
 ---
 # <a name="using-single-sign-on"></a><span data-ttu-id="fba1f-101">シングル サインオンを使用します。</span><span class="sxs-lookup"><span data-stu-id="fba1f-101">Using Single Sign-On</span></span>
 <span data-ttu-id="fba1f-102">Microsoft BizTalk Adapter for JD Edwards OneWorld ではシングル サインオン (SSO) をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="fba1f-102">Microsoft BizTalk Adapter for JD Edwards OneWorld provides Single Sign-On (SSO) support.</span></span> <span data-ttu-id="fba1f-103">エンタープライズ シングル サインオン ツールで作成された関連アプリケーションは JD Edwards OneWorld などのサーバー システムを表します。</span><span class="sxs-lookup"><span data-stu-id="fba1f-103">An affiliate application created by Enterprise Single Sign-On tools represents a server system such as JD Edwards OneWorld.</span></span>  

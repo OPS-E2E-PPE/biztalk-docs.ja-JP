@@ -1,11 +1,11 @@
 ---
-title: "構成パラメーターを送信および受信アダプター |Microsoft ドキュメント"
-ms.custom: 
+title: 構成パラメーターを送信および受信アダプター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - configuration parameters [adapters]
 - receive adapters
 ms.assetid: f24ca8ae-feaf-4e5f-b434-76bc3c1c8ccf
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962992"
 ---
 # <a name="configuration-parameters-for-send-and-receive-adapters"></a><span data-ttu-id="296b1-102">構成パラメーターを送信および受信アダプター</span><span class="sxs-lookup"><span data-stu-id="296b1-102">Configuration Parameters for Send and Receive Adapters</span></span>
 <span data-ttu-id="296b1-103">このセクションでは、構成パラメーターを最小限に抑える下位層プロトコル (MLLP) アダプターの送受信を提供します。</span><span class="sxs-lookup"><span data-stu-id="296b1-103">This section provides configuration parameters for send and receive Minimal Lower Layer Protocol (MLLP) adapters.</span></span> <span data-ttu-id="296b1-104">これらのパラメーターは 2 つの型に分類されます。 文字をブロックし、ネットワーク接続のパラメーターです。</span><span class="sxs-lookup"><span data-stu-id="296b1-104">These parameters fall into two types: block characters and network connection parameters.</span></span>  

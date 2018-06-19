@@ -1,14 +1,14 @@
 ---
-title: "手順 3 b: 対話の受信場所が、対話ストアと転送シナリオの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3 b: 対話の受信場所が、対話ストアと転送シナリオの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: da077518-b2ee-4b5f-88d0-fe73af2baa7a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966672"
 ---
 # <a name="step-3b-add-an-interact-receive-location-for-the-interact-store-and-forward-scenario"></a><span data-ttu-id="dc879-102">手順 3 b: 追加、対話の受信場所が、対話ストアと転送シナリオ</span><span class="sxs-lookup"><span data-stu-id="dc879-102">Step 3B: Add an INTERACT Receive Location for the InterAct Store and Forward Scenario</span></span>
 <span data-ttu-id="dc879-103">完全な[手順 3A: InterAct ストア アンド フォワードのシナリオのファイルの受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-interact-store-and-forward-scenario.md)この手順を開始する前にします。</span><span class="sxs-lookup"><span data-stu-id="dc879-103">Complete [Step 3A: Add a FILE Receive Location for the InterAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-interact-store-and-forward-scenario.md) before you begin this step.</span></span>
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="dc879-117">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="dc879-117">**User name**</span></span>|<span data-ttu-id="dc879-118">SAG への接続に使用するユーザー名を入力します。</span><span class="sxs-lookup"><span data-stu-id="dc879-118">Type the user name you use to connect to SAG.</span></span>|  
     |<span data-ttu-id="dc879-119">**アプリケーション名**</span><span class="sxs-lookup"><span data-stu-id="dc879-119">**Application name**</span></span>|<span data-ttu-id="dc879-120">サーバーを入力\<アプリケーション インターフェイス名\>SAG のボックス ルーティング セット。</span><span class="sxs-lookup"><span data-stu-id="dc879-120">Type the Server \<Application Interface Name\> for the SAG box routing set.</span></span>|  
     |<span data-ttu-id="dc879-121">**暗号化モード**</span><span class="sxs-lookup"><span data-stu-id="dc879-121">**Crypto Mode**</span></span>|<span data-ttu-id="dc879-122">ドロップダウン リストから選択**詳細**です。</span><span class="sxs-lookup"><span data-stu-id="dc879-122">From the drop-down list, select **Advanced**.</span></span>|  
-    |<span data-ttu-id="dc879-123">**LogMessageBody**</span><span class="sxs-lookup"><span data-stu-id="dc879-123">**LogMessageBody**</span></span>|<span data-ttu-id="dc879-124">ドロップダウン リストから選択**FALSE**です。</span><span class="sxs-lookup"><span data-stu-id="dc879-124">From the drop-down list, select **FALSE**.</span></span> <span data-ttu-id="dc879-125">**注:**を TRUE に設定する場合、BizTalk 追跡データベースでメッセージ本文が保持されます。</span><span class="sxs-lookup"><span data-stu-id="dc879-125">**Note:**  If you set to TRUE, it preserves the message body in the BizTalk Tracking database.</span></span> <span data-ttu-id="dc879-126">ただし、セキュリティ上の理由から、メッセージの本文見なすことができることはありません、BAM ポータルにします。</span><span class="sxs-lookup"><span data-stu-id="dc879-126">However, for security reasons, the message body can never be viewed in the BAM portal.</span></span>|  
+    |<span data-ttu-id="dc879-123">**LogMessageBody**</span><span class="sxs-lookup"><span data-stu-id="dc879-123">**LogMessageBody**</span></span>|<span data-ttu-id="dc879-124">ドロップダウン リストから選択**FALSE**です。</span><span class="sxs-lookup"><span data-stu-id="dc879-124">From the drop-down list, select **FALSE**.</span></span> <span data-ttu-id="dc879-125">**注:** を TRUE に設定する場合、BizTalk 追跡データベースでメッセージ本文が保持されます。</span><span class="sxs-lookup"><span data-stu-id="dc879-125">**Note:**  If you set to TRUE, it preserves the message body in the BizTalk Tracking database.</span></span> <span data-ttu-id="dc879-126">ただし、セキュリティ上の理由から、メッセージの本文見なすことができることはありません、BAM ポータルにします。</span><span class="sxs-lookup"><span data-stu-id="dc879-126">However, for security reasons, the message body can never be viewed in the BAM portal.</span></span>|  
     |<span data-ttu-id="dc879-127">**し**</span><span class="sxs-lookup"><span data-stu-id="dc879-127">**LogMessages**</span></span>|<span data-ttu-id="dc879-128">ドロップダウン リストから選択**TRUE**です。</span><span class="sxs-lookup"><span data-stu-id="dc879-128">From the drop-down list, select **TRUE**.</span></span> <span data-ttu-id="dc879-129">これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。</span><span class="sxs-lookup"><span data-stu-id="dc879-129">This enables the message events to be captured and tracked in the BAM portal.</span></span>|  
     |<span data-ttu-id="dc879-130">**メッセージの形式**</span><span class="sxs-lookup"><span data-stu-id="dc879-130">**Message format**</span></span>|<span data-ttu-id="dc879-131">ドロップダウン リストから選択**InterActMessage**です。</span><span class="sxs-lookup"><span data-stu-id="dc879-131">From the drop-down list, select **InterActMessage**.</span></span>|  
     |<span data-ttu-id="dc879-132">**MemberRef**</span><span class="sxs-lookup"><span data-stu-id="dc879-132">**MemberRef**</span></span>|<span data-ttu-id="dc879-133">ドロップダウン リストから選択**ResponseHeader**です。</span><span class="sxs-lookup"><span data-stu-id="dc879-133">From the drop-down list, select **ResponseHeader**.</span></span>|  
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="dc879-150">**回復モード**</span><span class="sxs-lookup"><span data-stu-id="dc879-150">**Recovery mode**</span></span>|<span data-ttu-id="dc879-151">ドロップダウン リストから選択**TRUE**です。</span><span class="sxs-lookup"><span data-stu-id="dc879-151">From the drop-down list, select **TRUE**.</span></span>|  
     |<span data-ttu-id="dc879-152">**SNL エンドポイント**</span><span class="sxs-lookup"><span data-stu-id="dc879-152">**SNL end-point**</span></span>|<span data-ttu-id="dc879-153">SAG ルーティング セットの適切なエンドポイントを入力します。</span><span class="sxs-lookup"><span data-stu-id="dc879-153">Type the appropriate end-point for the SAG routing set.</span></span> <span data-ttu-id="dc879-154">この値は、SAG で構成されている SnL エンドポイントと一致する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc879-154">This value should match the SnL endpoint you configured in SAG.</span></span>|  
   
-8.  <span data-ttu-id="dc879-155">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dc879-155">Click **OK**.</span></span>  
+8.  <span data-ttu-id="dc879-155">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dc879-155">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="dc879-156">**受信場所のプロパティ** ウィンドウで、**全般** タブで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="dc879-156">In the **Receive Location Properties** window, on the **General** tab, do the following:</span></span>  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="dc879-159">**受信ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="dc879-159">**Receive handler**</span></span>|<span data-ttu-id="dc879-160">ドロップダウン リストから選択**BizTalkServerIsolatedHost**です。</span><span class="sxs-lookup"><span data-stu-id="dc879-160">From the drop-down list, select **BizTalkServerIsolatedHost**.</span></span>|  
     |<span data-ttu-id="dc879-161">**受信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="dc879-161">**Receive pipeline**</span></span>|<span data-ttu-id="dc879-162">ドロップダウン リストから選択**XMLReceive**です。</span><span class="sxs-lookup"><span data-stu-id="dc879-162">From the drop-down list, select **XMLReceive**.</span></span>|  
   
-10. <span data-ttu-id="dc879-163">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dc879-163">Click **OK**.</span></span>  
+10. <span data-ttu-id="dc879-163">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dc879-163">Click **OK**.</span></span>  
   
 ## <a name="complete-steps"></a><span data-ttu-id="dc879-164">詳細な手順</span><span class="sxs-lookup"><span data-stu-id="dc879-164">Complete steps</span></span>
  <span data-ttu-id="dc879-165">[手順 3: 送信ポートを作成し、対話ストアと転送シナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="dc879-165">[Step 3: Create Send Ports and Receive Ports for the InterAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md) </span></span>  

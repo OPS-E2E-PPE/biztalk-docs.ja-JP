@@ -1,18 +1,18 @@
 ---
-title: "スキーマのサンプル |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマのサンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SDK samples, schemas
 - examples, schemas
 - schemas, examples
 ms.assetid: 7d7e696d-935f-4582-b873-c5637673b651
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966152"
 ---
 # <a name="schema-samples"></a><span data-ttu-id="e6673-102">スキーマのサンプル</span><span class="sxs-lookup"><span data-stu-id="e6673-102">Schema Samples</span></span>
 <span data-ttu-id="e6673-103">[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK には、一連 RNIF と PIP Partner Interface Process () の処理のための XSD スキーマにはが含まれています。</span><span class="sxs-lookup"><span data-stu-id="e6673-103">The [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK includes a series of XSD schemas for RNIF and Partner Interface Process (PIP) processing.</span></span> [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]<span data-ttu-id="e6673-104">これらのスキーマを使用して、メッセージを処理します。</span><span class="sxs-lookup"><span data-stu-id="e6673-104"> uses these schemas to process messages.</span></span> <span data-ttu-id="e6673-105">これらのスキーマは目的に応じて変更したり、エラーのトラブルシューティングに使用したりできます。</span><span class="sxs-lookup"><span data-stu-id="e6673-105">You can modify these schemas for your own purposes, or use these to troubleshoot failures.</span></span>  

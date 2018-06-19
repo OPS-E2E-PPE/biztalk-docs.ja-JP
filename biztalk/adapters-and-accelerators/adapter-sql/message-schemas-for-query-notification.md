@@ -1,15 +1,15 @@
 ---
-title: "Biztalk SQL アダプターを使用してクエリ通知のメッセージ スキーマ |Microsoft ドキュメント"
-description: "SQL アダプターを使用して、BizTalk で SQL Server データベースからクエリ通知を受信するには"
-ms.custom: 
+title: Biztalk SQL アダプターを使用してクエリ通知のメッセージ スキーマ |Microsoft ドキュメント
+description: SQL アダプターを使用して、BizTalk で SQL Server データベースからクエリ通知を受信するには
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5183655-64d4-4767-a923-0a575e3708cd
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963406"
 ---
 # <a name="message-schemas-for-query-notification"></a><span data-ttu-id="c480e-103">クエリ通知のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="c480e-103">Message Schemas for Query Notification</span></span>
 <span data-ttu-id="c480e-104">[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]サーフェスの SQL Server データベースからクエリ通知を受信する通知操作します。</span><span class="sxs-lookup"><span data-stu-id="c480e-104">The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces the Notification operation to receive query notifications from the SQL Server database.</span></span>  

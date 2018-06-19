@@ -1,17 +1,17 @@
 ---
-title: "RNIF パイプライン |Microsoft ドキュメント"
-ms.custom: 
+title: RNIF パイプライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RNIF, pipelines
 - pipelines, RNIF
 ms.assetid: 6cf480fe-6b54-4b13-8318-617f3bba71d0
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963440"
 ---
 # <a name="rnif-pipelines"></a><span data-ttu-id="1d8bd-102">RNIF パイプライン</span><span class="sxs-lookup"><span data-stu-id="1d8bd-102">RNIF Pipelines</span></span>
 <span data-ttu-id="1d8bd-103">[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]受信および送信パイプラインが受信に必要な処理を実行または RosettaNet Implementation Framework (RNIF) メッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="1d8bd-103">The [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] receive and send pipelines perform the processing required for receive or send RosettaNet Implementation Framework (RNIF) messages.</span></span> <span data-ttu-id="1d8bd-104">この処理には、事前処理、デコードとエンコード、暗号化の解除と暗号化、逆アセンブルとアセンブル、およびパーティ認証が含まれます。</span><span class="sxs-lookup"><span data-stu-id="1d8bd-104">This processing includes preprocessing, decoding/encoding, decrypting/encrypting, disassembly/assembly, and party authentication.</span></span>  

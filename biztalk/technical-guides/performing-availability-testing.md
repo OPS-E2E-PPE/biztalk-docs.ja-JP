@@ -1,14 +1,14 @@
 ---
-title: "可用性テストを実行して |Microsoft ドキュメント"
-ms.custom: 
+title: 可用性テストを実行して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 10b543dd-ba85-40da-8c6f-485eddb59158
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298306"
 ---
 # <a name="performing-availability-testing"></a><span data-ttu-id="2c381-102">可用性テストを実行します。</span><span class="sxs-lookup"><span data-stu-id="2c381-102">Performing Availability Testing</span></span>
 <span data-ttu-id="2c381-103">災害復旧をさまざまなレベルのネットワーク カードのエラー) などの小規模な障害から実稼働サーバーの消失までの範囲の障害から復旧できることを確認するには、システムをテストする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2c381-103">You should test your system for disaster recovery to verify its ability to recover from various levels of failure, ranging from small-scale failures (such as a network card failure) to the loss of a production server.</span></span> <span data-ttu-id="2c381-104">災害復旧のテストと、次の手順を含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="2c381-104">Your disaster recovery testing should include the following steps:</span></span>  

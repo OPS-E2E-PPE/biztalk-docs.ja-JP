@@ -1,14 +1,14 @@
 ---
-title: "アダプター ストア アンド フォワードの対話 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター ストア アンド フォワードの対話 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d596780a-085d-48db-be44-a3ae58f591d0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963208"
 ---
 # <a name="interact-adapter-store-and-forward"></a><span data-ttu-id="84e5c-102">アダプター ストア アンド フォワードを対話します。</span><span class="sxs-lookup"><span data-stu-id="84e5c-102">InterAct Adapter Store and Forward</span></span>
 <span data-ttu-id="84e5c-103">ストアにし、順方向 (SnF) モードでは、メッセージは送信時にキューに配信され、変換先にキューから取得されます。</span><span class="sxs-lookup"><span data-stu-id="84e5c-103">In Store and Forward (SnF) mode, messages are delivered to a queue at send time, and are retrieved from the queue by the destination.</span></span> <span data-ttu-id="84e5c-104">SnF を使用する場合、応答は SWIFTNet SnF 自体から取得し、応答側からフィードバックが含まれていません。</span><span class="sxs-lookup"><span data-stu-id="84e5c-104">When using SnF, the response comes from SWIFTNet SnF itself, and does not contain any feedback from the Responder.</span></span>  

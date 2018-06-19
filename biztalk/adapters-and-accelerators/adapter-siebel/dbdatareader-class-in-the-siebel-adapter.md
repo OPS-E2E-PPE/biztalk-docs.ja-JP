@@ -1,17 +1,17 @@
 ---
-title: "Siebel アダプターの DbDataReader クラス |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターの DbDataReader クラス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Data Provider for Siebel, DbDataReader
 - DbDataReader
 ms.assetid: 7673cd10-ec1e-4cb0-93c2-f11928d00ca2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222018"
 ---
 # <a name="dbdatareader-class-in-the-siebel-adapter"></a><span data-ttu-id="a3ad2-102">Siebel アダプターの DbDataReader クラス</span><span class="sxs-lookup"><span data-stu-id="a3ad2-102">DbDataReader class in the Siebel adapter</span></span>
 <span data-ttu-id="a3ad2-103">[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]提供、 `DbDataReader` XML データ リーダーを活用することです。</span><span class="sxs-lookup"><span data-stu-id="a3ad2-103">The [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] provides a `DbDataReader` leveraging the XML Data Reader.</span></span> <span data-ttu-id="a3ad2-104">これは、Siebel データ ソースのコンシューマーの行の順方向専用ストリームを読み取る機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="a3ad2-104">This provides the consumer of the Siebel data source the ability to read a forward-only stream of rows.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="a3ad2-148">**データ型**</span><span class="sxs-lookup"><span data-stu-id="a3ad2-148">**isDbNull**</span></span>|<span data-ttu-id="a3ad2-149">列に存在しないか、不足している値が含まれるかどうかを示す値を取得します。</span><span class="sxs-lookup"><span data-stu-id="a3ad2-149">Gets a value that indicates whether the column contains nonexistent or missing values.</span></span>|  
 |<span data-ttu-id="a3ad2-150">**NextResult**</span><span class="sxs-lookup"><span data-stu-id="a3ad2-150">**NextResult**</span></span>|<span data-ttu-id="a3ad2-151">Siebel データ プロバイダーは、常に、1 つの結果セットを返しますこの呼び出しが完全に現在の結果を返す前にセットを過ぎるため**false**です。</span><span class="sxs-lookup"><span data-stu-id="a3ad2-151">The Siebel Data Provider always returns a single result set; hence this call fully exhausts the current result set before returning **false**.</span></span>|  
 |<span data-ttu-id="a3ad2-152">**読み取り**</span><span class="sxs-lookup"><span data-stu-id="a3ad2-152">**Read**</span></span>|<span data-ttu-id="a3ad2-153">リーダーを結果セットの次のレコードに進めます。</span><span class="sxs-lookup"><span data-stu-id="a3ad2-153">Advances the reader to the next record in a result set.</span></span>  <span data-ttu-id="a3ad2-154">返します**true**成功した場合と**false**場合は、リーダーは、レコードを左にします。</span><span class="sxs-lookup"><span data-stu-id="a3ad2-154">It returns **true** if it succeeds, and **false** if the reader has no more records left.</span></span>|  
-|<span data-ttu-id="a3ad2-155">**[閉じる]**</span><span class="sxs-lookup"><span data-stu-id="a3ad2-155">**Close**</span></span>|<span data-ttu-id="a3ad2-156">閉じる、`DbDataReader`オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="a3ad2-156">Closes the `DbDataReader` object.</span></span> <span data-ttu-id="a3ad2-157">**注意:**したらを使用して、`DbDataReader`オブジェクト、Siebel COM ライブラリ オブジェクトを解放するために、それを閉じる必要があります。</span><span class="sxs-lookup"><span data-stu-id="a3ad2-157">**Caution:**  When you are done using the `DbDataReader` object, you must close it, in order to free up the Siebel COM library objects.</span></span> <span data-ttu-id="a3ad2-158">それ以外の場合、クライアント アプリケーションのメモリとハンドルの使用率が上がるです。</span><span class="sxs-lookup"><span data-stu-id="a3ad2-158">Otherwise, the client application’s memory and handle usage will go up.</span></span>|  
+|<span data-ttu-id="a3ad2-155">**[閉じる]**</span><span class="sxs-lookup"><span data-stu-id="a3ad2-155">**Close**</span></span>|<span data-ttu-id="a3ad2-156">閉じる、`DbDataReader`オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="a3ad2-156">Closes the `DbDataReader` object.</span></span> <span data-ttu-id="a3ad2-157">**注意:** したらを使用して、`DbDataReader`オブジェクト、Siebel COM ライブラリ オブジェクトを解放するために、それを閉じる必要があります。</span><span class="sxs-lookup"><span data-stu-id="a3ad2-157">**Caution:**  When you are done using the `DbDataReader` object, you must close it, in order to free up the Siebel COM library objects.</span></span> <span data-ttu-id="a3ad2-158">それ以外の場合、クライアント アプリケーションのメモリとハンドルの使用率が上がるです。</span><span class="sxs-lookup"><span data-stu-id="a3ad2-158">Otherwise, the client application’s memory and handle usage will go up.</span></span>|  
   
 ## <a name="see-also"></a><span data-ttu-id="a3ad2-159">参照</span><span class="sxs-lookup"><span data-stu-id="a3ad2-159">See Also</span></span>  
  [<span data-ttu-id="a3ad2-160">Siebel アダプターと ADO.NET インターフェイスを拡張します。</span><span class="sxs-lookup"><span data-stu-id="a3ad2-160">Extend ADO.NET Interfaces with the Siebel adapter</span></span>](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)

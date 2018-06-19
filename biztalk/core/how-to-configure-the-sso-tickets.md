@@ -1,18 +1,18 @@
 ---
-title: "SSO チケットを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SSO チケットを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO], configuring tickets
 - SSO, tickets
 - tickets [SSO], configuring
 ms.assetid: 32f0384b-ac79-4cce-b3f5-f4f8a73a673a
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968648"
 ---
 # <a name="how-to-configure-the-sso-tickets"></a><span data-ttu-id="f043e-102">SSO チケットを構成する方法</span><span class="sxs-lookup"><span data-stu-id="f043e-102">How to Configure the SSO Tickets</span></span>
 <span data-ttu-id="f043e-103">MMC スナップインやコマンド ラインを使用して、チケットを許可するかどうか、システムでチケットを検証するかどうかなど、シングル サインオン システム全体のチケットの動作を制御できます。</span><span class="sxs-lookup"><span data-stu-id="f043e-103">You can use the MMC Snap-In or the command line to control ticket behavior for the entire Single Sign-On system, including whether to allow tickets, and whether the system must validate the tickets.</span></span>  
@@ -59,7 +60,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="f043e-124">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="f043e-124">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="f043e-125">既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="f043e-125">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="f043e-126">型**ssomanage – チケット\<はい/いいえの許可\> *\<はい/いいえの検証\>***ここで、 *\<はい/いいえの許可\>* チケットを許可するか、かどうかを示すと*\<検証はい/いいえ\>*チケットは、では引き換え後に検証する必要があるかどうかを示します.</span><span class="sxs-lookup"><span data-stu-id="f043e-126">Type **ssomanage –tickets \<allowed yes/no\> *\<validate yes/no\>***, where *\<allowed yes/no\>* indicates whether tickets will be allowed or not, and *\<validate yes/no\>* indicates whether tickets will need to be validated after they are redeemed.</span></span>  
+3.  <span data-ttu-id="f043e-126">型**ssomanage – チケット\<はい/いいえの許可\> *\<はい/いいえの検証\>*** ここで、 *\<はい/いいえの許可\>* チケットを許可するか、かどうかを示すと*\<検証はい/いいえ\>* チケットは、では引き換え後に検証する必要があるかどうかを示します.</span><span class="sxs-lookup"><span data-stu-id="f043e-126">Type **ssomanage –tickets \<allowed yes/no\> *\<validate yes/no\>***, where *\<allowed yes/no\>* indicates whether tickets will be allowed or not, and *\<validate yes/no\>* indicates whether tickets will need to be validated after they are redeemed.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="f043e-127">チケットを許可したり検証したりするかどうかを示すために、yes、no、on、または off を使用できます。</span><span class="sxs-lookup"><span data-stu-id="f043e-127">You can use yes, no, on, or off to indicate whether to allow and/or validate tickets.</span></span> <span data-ttu-id="f043e-128">これらの語は大文字と小文字が区別されないため、言語の設定に関係なく使用してください。</span><span class="sxs-lookup"><span data-stu-id="f043e-128">These words are case independent, and must be used regardless of your language settings.</span></span>  

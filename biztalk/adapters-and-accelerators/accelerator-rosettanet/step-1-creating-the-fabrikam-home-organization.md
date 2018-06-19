@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963632"
 ---
 # <a name="step-1-creating-the-fabrikam-home-organization"></a><span data-ttu-id="f21a6-102">手順 1: Fabrikam ホーム組織の作成</span><span class="sxs-lookup"><span data-stu-id="f21a6-102">Step 1: Creating the Fabrikam Home Organization</span></span>
 <span data-ttu-id="f21a6-103">ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールを使用して、Fabrikam のホーム組織を作成します。</span><span class="sxs-lookup"><span data-stu-id="f21a6-103">In this step, you use the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Management Console to create the Fabrikam home organization.</span></span>  
@@ -49,7 +50,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="f21a6-126">**Fax 番号**</span><span class="sxs-lookup"><span data-stu-id="f21a6-126">**Fax Number**</span></span>|<span data-ttu-id="f21a6-127">型**555-555-5555**です。</span><span class="sxs-lookup"><span data-stu-id="f21a6-127">Type **555-555-5555**.</span></span>|  
     |<span data-ttu-id="f21a6-128">**サプライ チェーン コード**</span><span class="sxs-lookup"><span data-stu-id="f21a6-128">**Supply Chain Code**</span></span>|<span data-ttu-id="f21a6-129">型**電子部品**です。</span><span class="sxs-lookup"><span data-stu-id="f21a6-129">Type **Electronic Components**.</span></span>|  
   
-4.  <span data-ttu-id="f21a6-130">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f21a6-130">Click **OK**.</span></span>  
+4.  <span data-ttu-id="f21a6-130">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f21a6-130">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="f21a6-131">参照</span><span class="sxs-lookup"><span data-stu-id="f21a6-131">See Also</span></span>  
  [<span data-ttu-id="f21a6-132">手順 2: Contoso 取引先組織の作成</span><span class="sxs-lookup"><span data-stu-id="f21a6-132">Step 2: Creating the Contoso Partner Organization</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-contoso-partner-organization.md)

@@ -1,14 +1,14 @@
 ---
-title: "その他の重要なタスクのチェックリスト |Microsoft ドキュメント"
-ms.custom: 
+title: その他の重要なタスクのチェックリスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8a88a248-fcb8-44dc-896a-62f380b7a310
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299258"
 ---
 # <a name="checklists-for-other-important-tasks"></a><span data-ttu-id="639da-102">その他の重要なタスクのチェックリスト</span><span class="sxs-lookup"><span data-stu-id="639da-102">Checklists for Other Important Tasks</span></span>
 <span data-ttu-id="639da-103">このセクションには、アドホックごとに実行する必要があるその他の重要なタスクのチェックリストが含まれています。</span><span class="sxs-lookup"><span data-stu-id="639da-103">This section contains checklists for other important tasks that you might need to perform on an ad-hoc basis.</span></span> <span data-ttu-id="639da-104">アプリケーションを配置するなどのタスクが含まれます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーションのバインドをエクスポート、およびアプリケーションを更新します。</span><span class="sxs-lookup"><span data-stu-id="639da-104">These include such tasks as deploying an application in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], exporting bindings for an application, and updating an application.</span></span>  

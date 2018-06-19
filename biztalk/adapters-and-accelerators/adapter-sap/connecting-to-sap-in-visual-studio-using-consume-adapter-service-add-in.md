@@ -1,14 +1,14 @@
 ---
-title: "アダプターを使用する Visual Studio を使用して、SAP に接続する追加のサービスの |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターを使用する Visual Studio を使用して、SAP に接続する追加のサービスの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b4f7d57a-fd88-4420-b893-49f42b449597
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965040"
 ---
 # <a name="connecting-to-sap-in-visual-studio-using-consume-adapter-service-add-in"></a><span data-ttu-id="57ed6-102">アダプターを使用する Visual Studio を使用して、SAP に接続する追加のサービス</span><span class="sxs-lookup"><span data-stu-id="57ed6-102">Connecting to SAP in Visual Studio Using Consume Adapter Service Add-in</span></span>
 <span data-ttu-id="57ed6-103">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] WCF LOB Adapter SDK をインストールするときにインストールされています。</span><span class="sxs-lookup"><span data-stu-id="57ed6-103">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] is installed when you install WCF LOB Adapter SDK.</span></span> <span data-ttu-id="57ed6-104">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]コンピューターにインストールされているすべての WCF カスタム バインドを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="57ed6-104">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] loads all the WCF-Custom bindings installed on the computer.</span></span> <span data-ttu-id="57ed6-105">WCF ベースを使用して SAP システムへの接続に[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]BizTalk プロジェクトで使用する必要があります、 **sapbinding**です。</span><span class="sxs-lookup"><span data-stu-id="57ed6-105">To connect to SAP system using the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] in a BizTalk project, you must use the **sapbinding**.</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/28/2017
         |<span data-ttu-id="57ed6-116">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="57ed6-116">**Categories**</span></span>|<span data-ttu-id="57ed6-117">をクリックして**アダプター サービスの使用**です。</span><span class="sxs-lookup"><span data-stu-id="57ed6-117">Click **Consume Adapter Service**.</span></span>|  
         |<span data-ttu-id="57ed6-118">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="57ed6-118">**Templates**</span></span>|<span data-ttu-id="57ed6-119">をクリックして**アダプター サービスの使用**です。</span><span class="sxs-lookup"><span data-stu-id="57ed6-119">Click **Consume Adapter Service**.</span></span>|  
   
-    4.  <span data-ttu-id="57ed6-120">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="57ed6-120">Click **Add**.</span></span> <span data-ttu-id="57ed6-121">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="57ed6-121">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] opens.</span></span>  
+    4.  <span data-ttu-id="57ed6-120">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="57ed6-120">Click **Add**.</span></span> <span data-ttu-id="57ed6-121">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="57ed6-121">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] opens.</span></span>  
   
 2.  <span data-ttu-id="57ed6-122">**バインディングを選択**ドロップダウン リスト、選択**sapBinding**  をクリック**構成**です。</span><span class="sxs-lookup"><span data-stu-id="57ed6-122">From the **Select a binding** drop-down list, select **sapBinding** and click **Configure**.</span></span>  
   
@@ -67,9 +68,9 @@ ms.lasthandoff: 11/28/2017
     >   
     >  <span data-ttu-id="57ed6-137">**SncPartnerName**通信パートナーの SNC 名を取得するプロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="57ed6-137">The **SncPartnerName** binding property takes the SNC name of the communication partner.</span></span>  
   
-6.  <span data-ttu-id="57ed6-138">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="57ed6-138">Click **OK**.</span></span>  
+6.  <span data-ttu-id="57ed6-138">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="57ed6-138">Click **OK**.</span></span>  
   
-7.  <span data-ttu-id="57ed6-139">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="57ed6-139">Click **Connect**.</span></span> <span data-ttu-id="57ed6-140">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="57ed6-140">After the connection is established, the connection status is shown as **Connected**.</span></span>  
+7.  <span data-ttu-id="57ed6-139">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="57ed6-139">Click **Connect**.</span></span> <span data-ttu-id="57ed6-140">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="57ed6-140">After the connection is established, the connection status is shown as **Connected**.</span></span>  
   
      <span data-ttu-id="57ed6-141">次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。</span><span class="sxs-lookup"><span data-stu-id="57ed6-141">The following figure shows the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] immediately after the connection is established.</span></span>  
   

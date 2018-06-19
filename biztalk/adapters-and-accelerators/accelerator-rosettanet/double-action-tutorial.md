@@ -1,11 +1,11 @@
 ---
-title: "ダブル アクション チュートリアル |Microsoft ドキュメント"
-ms.custom: 
+title: ダブル アクション チュートリアル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tutorials, PIPs
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - PIPs, tutorials
 - tutorials, double action tutorial
 ms.assetid: b692c043-82ef-46f4-8683-7ae1fd6e4421
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210122"
 ---
 # <a name="double-action-tutorial"></a><span data-ttu-id="90a10-102">ダブル アクション チュートリアル</span><span class="sxs-lookup"><span data-stu-id="90a10-102">Double Action Tutorial</span></span>
 <span data-ttu-id="90a10-103">このチュートリアルには、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] を使用したエンドツーエンド ソリューションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="90a10-103">This tutorial covers an end-to-end solution using [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)].</span></span> <span data-ttu-id="90a10-104">ここでは、RosettaNet 準拠のソリューションを実装するために従う必要のある手順について詳しく説明します。この手順では、Contoso 社 (サプライヤー組織) と Fabrikam 社 (購入者組織) という 2 つの架空の会社間の取引先シナリオを作成します。</span><span class="sxs-lookup"><span data-stu-id="90a10-104">The tutorial details the steps that you have to follow to implement a RosettaNet-compliant solution by creating a trading partner scenario between two fictitious companies: Contoso, the supplier organization, and Fabrikam, the buyer organization.</span></span>  

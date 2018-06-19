@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 5c5cce40f3fbeb580ec7ba854d02cb243e1742b4
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013465"
 ---
 # <a name="importing-binding-files"></a><span data-ttu-id="d0421-101">バインド ファイルのインポート</span><span class="sxs-lookup"><span data-stu-id="d0421-101">Importing Binding Files</span></span>
 
@@ -17,7 +18,7 @@ ms.lasthandoff: 11/07/2017
   
 -   <span data-ttu-id="d0421-106">新しいコンピューターに、応答用の同じフォルダーが存在する。同じでない場合は、バインド ファイルを編集します。</span><span class="sxs-lookup"><span data-stu-id="d0421-106">The folders for the responses exist and are identical on the new computer, or edit the binding file.</span></span>  
   
--   <span data-ttu-id="d0421-107">JD Edwards システム パスワードが構成に存在する場合、パスワードが ***** としてバインド ファイルに保存されている。</span><span class="sxs-lookup"><span data-stu-id="d0421-107">JD Edwards system passwords, if present in the configuration, are saved as ***** in the binding file.</span></span> 
+-   <span data-ttu-id="d0421-107">JD Edwards システム パスワードが構成に存在する場合、パスワードが \*\*\*\*\* としてバインド ファイルに保存されている。</span><span class="sxs-lookup"><span data-stu-id="d0421-107">JD Edwards system passwords, if present in the configuration, are saved as \*\*\*\*\* in the binding file.</span></span> 
   
 > [!NOTE]
 >  <span data-ttu-id="d0421-108">展開には、受信場所の構成が上書きされます。</span><span class="sxs-lookup"><span data-stu-id="d0421-108">Deployment overwrites Receive Location configuration.</span></span> <span data-ttu-id="d0421-109">バインド ファイルとアセンブリを展開先のコンピューターに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="d0421-109">When deploying a binding file (and assembly) on a target computer, the send ports and receive locations are replaced with those in the XML binding file when they are imported.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "BPEL インポート (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: BPEL インポート (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BPEL, orchestrations
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - BPEL Import Wizard, examples
 - BPEL Import Wizard, orchestrations
 ms.assetid: 3fc70608-ccd9-4249-b238-c09fc6551db1
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967744"
 ---
 # <a name="bpel-import-biztalk-server-sample"></a><span data-ttu-id="acabb-102">BPEL インポート (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="acabb-102">BPEL Import (BizTalk Server Sample)</span></span>
 <span data-ttu-id="acabb-103">BPEL インポート サンプルは、BPEL (Business Process Execution Language) 処理の記述ファイルと関連アイテムを利用してオーケストレーションを作成する方法を示すものです。</span><span class="sxs-lookup"><span data-stu-id="acabb-103">The BPEL Import sample demonstrates how to create an orchestration from a Business Process Execution Language (BPEL) process description and its related artifacts.</span></span>  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="acabb-134">この手順を完了する前に、サポートのプロセスおよびスキーマ プロジェクトを作成する ShipperProcess アプリケーションを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="acabb-134">Before completing this procedure, you must set up the ShipperProcess application to create the supporting processes and schema projects.</span></span>  
   
-2.  <span data-ttu-id="acabb-135">**新しいプロジェクト**ダイアログ ボックスで、プロジェクトの種類 ウィンドウで**BizTalk (プロジェクト)**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-135">In the **New Project** dialog box, in the Project Types pane, select **BizTalk (Projects)**.</span></span> <span data-ttu-id="acabb-136">[テンプレート] ペインで選択**BizTalk Server BPEL インポート プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-136">In the Templates pane, select **BizTalk (Server) BPEL Import Project**.</span></span>  
+2.  <span data-ttu-id="acabb-135">**新しいプロジェクト**ダイアログ ボックスで、プロジェクトの種類 ウィンドウで**BizTalk (プロジェクト)** です。</span><span class="sxs-lookup"><span data-stu-id="acabb-135">In the **New Project** dialog box, in the Project Types pane, select **BizTalk (Projects)**.</span></span> <span data-ttu-id="acabb-136">[テンプレート] ペインで選択**BizTalk Server BPEL インポート プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-136">In the Templates pane, select **BizTalk (Server) BPEL Import Project**.</span></span>  
   
 3.  <span data-ttu-id="acabb-137">**名前**ボックスに、入力**BPELShipping**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-137">In the **Name** box, enter **BPELShipping**.</span></span>  
   
@@ -118,7 +119,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="acabb-155">このビルド方法については、「ShipperProcess アプリケーションをビルドおよび初期化するには」で説明します。</span><span class="sxs-lookup"><span data-stu-id="acabb-155">The section "To build and initialize the ShipperProcess application" has instructions on how to build this.</span></span>  
   
-17. <span data-ttu-id="acabb-156">ソリューション エクスプ ローラーで、 **[ordershippingprocess.bpel.odx]**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-156">In Solution Explorer, double-click **OrderShippingProcess.bpel.odx**.</span></span>  
+17. <span data-ttu-id="acabb-156">ソリューション エクスプ ローラーで、 **[ordershippingprocess.bpel.odx]** です。</span><span class="sxs-lookup"><span data-stu-id="acabb-156">In Solution Explorer, double-click **OrderShippingProcess.bpel.odx**.</span></span>  
   
 18. <span data-ttu-id="acabb-157">**ビュー**メニューの **その他の Windows/オーケストレーション**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-157">On the **View** menu, select **Other Windows/Orchestration View**.</span></span>  
   
@@ -126,7 +127,7 @@ ms.lasthandoff: 11/28/2017
   
 20. <span data-ttu-id="acabb-159">[プロパティ] ウィンドウで、設定、**エクスポート可能なオーケストレーション**プロパティを**False**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-159">In the Properties window, set the **Orchestration Exportable** property to **False**.</span></span>  
   
-21. <span data-ttu-id="acabb-160">ソリューション エクスプ ローラーで、 **[ordershipping.wsdl.odx]**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-160">In Solution Explorer, double-click **OrderShipping.wsdl.odx**.</span></span>  
+21. <span data-ttu-id="acabb-160">ソリューション エクスプ ローラーで、 **[ordershipping.wsdl.odx]** です。</span><span class="sxs-lookup"><span data-stu-id="acabb-160">In Solution Explorer, double-click **OrderShipping.wsdl.odx**.</span></span>  
   
 22. <span data-ttu-id="acabb-161">オーケストレーションの種類 ウィンドウで、**型/マルチパート メッセージの種類**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-161">In the Orchestration View window, expand **Types/Multipart Message Types**.</span></span>  
   
@@ -166,7 +167,7 @@ ms.lasthandoff: 11/28/2017
   
 32. <span data-ttu-id="acabb-194">選択**既存のマップ**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-194">Select **Existing Map**.</span></span>  
   
-33. <span data-ttu-id="acabb-195">完全修飾マップ名を選択して**[bpelshipping.order2shiprequest]**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-195">Select the fully qualified map name as **BPELShipping.Order2ShipRequest**.</span></span>  
+33. <span data-ttu-id="acabb-195">完全修飾マップ名を選択して **[bpelshipping.order2shiprequest]** です。</span><span class="sxs-lookup"><span data-stu-id="acabb-195">Select the fully qualified map name as **BPELShipping.Order2ShipRequest**.</span></span>  
   
 34. <span data-ttu-id="acabb-196">ソースとして選択**順序。OrderMessagePart**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-196">Select the source as **order.OrderMessagePart**.</span></span>  
   
@@ -215,15 +216,15 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="acabb-242">ship_status(ShippingSchemas.ShipStatus) == "DONE"</span><span class="sxs-lookup"><span data-stu-id="acabb-242">ship_status(ShippingSchemas.ShipStatus) == "DONE"</span></span>  
   
-44. <span data-ttu-id="acabb-243">オーケストレーション ビューで、展開**型/関連付けの種類** をクリック**_OrderCorrelationSet_Type\_**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-243">In the Orchestration View, expand **Types/Correlation Types** and click **_OrderCorrelationSet_Type\_**.</span></span>  
+44. <span data-ttu-id="acabb-243">オーケストレーション ビューで、展開**型/関連付けの種類** をクリック **_OrderCorrelationSet_Type\_** です。</span><span class="sxs-lookup"><span data-stu-id="acabb-243">In the Orchestration View, expand **Types/Correlation Types** and click **_OrderCorrelationSet_Type\_**.</span></span>  
   
 45. <span data-ttu-id="acabb-244">[プロパティ] ウィンドウで、省略記号ボタンをクリックします (**.**) で**関連付けのプロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-244">In the Properties window, click the ellipsis button (**…**) on **Correlation Properties**.</span></span>  
   
-46. <span data-ttu-id="acabb-245">ウィンドウに関連付けるプロパティで、をクリックして**[bpelshipping.orderid]**、クリックして**削除**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-245">In the Properties to correlate on pane, click **BPELShipping.OrderID**, and then click **Remove**.</span></span>  
+46. <span data-ttu-id="acabb-245">ウィンドウに関連付けるプロパティで、をクリックして **[bpelshipping.orderid]**、クリックして**削除**です。</span><span class="sxs-lookup"><span data-stu-id="acabb-245">In the Properties to correlate on pane, click **BPELShipping.OrderID**, and then click **Remove**.</span></span>  
   
 47. <span data-ttu-id="acabb-246">使用可能なプロパティ ウィンドウで  **Shippingschemas****注文 ID**、順にクリック**追加**。</span><span class="sxs-lookup"><span data-stu-id="acabb-246">In the Available Properties pane, expand **Shipping Schemas**, select **Order ID**, and then click **Add**.</span></span>  
   
-48. <span data-ttu-id="acabb-247">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="acabb-247">Click **OK**.</span></span>  
+48. <span data-ttu-id="acabb-247">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="acabb-247">Click **OK**.</span></span>  
   
 49. <span data-ttu-id="acabb-248">すべてのファイルを保存し、ソリューションをビルドします。</span><span class="sxs-lookup"><span data-stu-id="acabb-248">Save all the files and build the solution.</span></span>  
   
@@ -232,7 +233,7 @@ ms.lasthandoff: 11/28/2017
 51. <span data-ttu-id="acabb-250">場所を参照\<*サンプル パス*\>\Orchestrations\BPELImport\Solution\BPELShipping およびダブルクリック**BindAndStartOnly.bat**をバインドして開始しますオーケストレーションです。</span><span class="sxs-lookup"><span data-stu-id="acabb-250">Browse to the location \<*Samples Path*\>\Orchestrations\BPELImport\Solution\BPELShipping and double-click **BindAndStartOnly.bat** to bind and start the orchestration.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="acabb-251">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="acabb-251">Where to Find This Sample</span></span>  
- <span data-ttu-id="acabb-252">*\<パスのサンプル\>*\Orchestrations\BPELImport</span><span class="sxs-lookup"><span data-stu-id="acabb-252">*\<Samples Path\>*\Orchestrations\BPELImport</span></span>  
+ <span data-ttu-id="acabb-252">*\<パスのサンプル\>* \Orchestrations\BPELImport</span><span class="sxs-lookup"><span data-stu-id="acabb-252">*\<Samples Path\>* \Orchestrations\BPELImport</span></span>  
   
  <span data-ttu-id="acabb-253">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="acabb-253">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -277,7 +278,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="acabb-318">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトでディレクトリ変更コマンド (**cd**) 次のフォルダーに。</span><span class="sxs-lookup"><span data-stu-id="acabb-318">From the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] command prompt, change directory (**cd**) to the following folder:</span></span>  
   
-     <span data-ttu-id="acabb-319">*\<パスのサンプル\>*\Orchestrations\BPELImport\Solution\ShipperProcess</span><span class="sxs-lookup"><span data-stu-id="acabb-319">*\<Samples Path\>*\Orchestrations\BPELImport\Solution\ShipperProcess</span></span>  
+     <span data-ttu-id="acabb-319">*\<パスのサンプル\>* \Orchestrations\BPELImport\Solution\ShipperProcess</span><span class="sxs-lookup"><span data-stu-id="acabb-319">*\<Samples Path\>* \Orchestrations\BPELImport\Solution\ShipperProcess</span></span>  
   
 3.  <span data-ttu-id="acabb-320">次の操作を実行する Setup.bat ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="acabb-320">Run the file Setup.bat, which performs the following actions:</span></span>  
   
@@ -312,7 +313,7 @@ The 'http://contoso.org/samples/Fragments:XXXX' element is not declared. An erro
   
      <span data-ttu-id="acabb-332">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトでディレクトリ変更コマンド (**cd**) 次のフォルダーに。</span><span class="sxs-lookup"><span data-stu-id="acabb-332">From the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] command prompt, change directory (**cd**) to the following folder:</span></span>  
   
-     <span data-ttu-id="acabb-333">*\<パスのサンプル\>*\Orchestrations\BPELImport\Solution\BPELShipping</span><span class="sxs-lookup"><span data-stu-id="acabb-333">*\<Samples Path\>*\Orchestrations\BPELImport\Solution\BPELShipping</span></span>  
+     <span data-ttu-id="acabb-333">*\<パスのサンプル\>* \Orchestrations\BPELImport\Solution\BPELShipping</span><span class="sxs-lookup"><span data-stu-id="acabb-333">*\<Samples Path\>* \Orchestrations\BPELImport\Solution\BPELShipping</span></span>  
   
 2.  <span data-ttu-id="acabb-334">次の操作を実行する Setup.bat ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="acabb-334">Run the file Setup.bat, which performs the following actions:</span></span>  
   
@@ -330,7 +331,7 @@ The 'http://contoso.org/samples/Fragments:XXXX' element is not declared. An erro
   
 #### <a name="to-run-the-bpel-import-sample"></a><span data-ttu-id="acabb-341">BPEL インポート サンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="acabb-341">To run the BPEL Import sample</span></span>  
   
-1.  <span data-ttu-id="acabb-342">コピー、 **Order.xml**ファイルから、 *\<サンプル パス\>*\Orchestrations\BPELImport\Solution フォルダーを\<*サンプル パス\>*\Orchestrations\BPELImport\Solution\Ports\ReceiveOrder フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="acabb-342">Copy the **Order.xml** file from the *\<Samples Path\>*\Orchestrations\BPELImport\Solution folder to the \<*Samples Path\>*\Orchestrations\BPELImport\Solution\Ports\ReceiveOrder folder.</span></span>  
+1.  <span data-ttu-id="acabb-342">コピー、 **Order.xml**ファイルから、 *\<サンプル パス\>* \Orchestrations\BPELImport\Solution フォルダーを\<*サンプル パス\>* \Orchestrations\BPELImport\Solution\Ports\ReceiveOrder フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="acabb-342">Copy the **Order.xml** file from the *\<Samples Path\>* \Orchestrations\BPELImport\Solution folder to the \<*Samples Path\>* \Orchestrations\BPELImport\Solution\Ports\ReceiveOrder folder.</span></span>  
   
 2.  <span data-ttu-id="acabb-343">顧客の注文処理システムから注文としてオーケストレーションがこのファイルを取得 BPELShipping が、出荷プロセス実行され、いずれかのファイルを生成では、それぞれ、 \<*サンプル パス*\>\Orchestrations\BPELImport\Solution\Ports\SendOrder フォルダーおよび\<*サンプル パス*\>\Orchestrations\BPELImport\Solution\Ports\FinalConfirmation フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="acabb-343">The BPELShipping orchestration picks up this file as an order from the customer order processing system, runs through the shipping process, and produces one file each in the \<*Samples Path*\>\Orchestrations\BPELImport\Solution\Ports\SendOrder folder and the \<*Samples Path*\>\Orchestrations\BPELImport\Solution\Ports\FinalConfirmation folder.</span></span> <span data-ttu-id="acabb-344">これらのファイルの名前の形式が\< *MessageID*\>、.xml、  *\<MessageID\>*  GUID 生成を一意に識別するには、メッセージ。</span><span class="sxs-lookup"><span data-stu-id="acabb-344">The format of the name of these files is \<*MessageID*\>.xml, where *\<MessageID\>* is the GUID generated to uniquely identify the message.</span></span>  
   

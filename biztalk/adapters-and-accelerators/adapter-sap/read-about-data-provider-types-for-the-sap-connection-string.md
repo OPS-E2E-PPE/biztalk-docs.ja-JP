@@ -1,17 +1,17 @@
 ---
-title: "SAP 接続文字列のデータ プロバイダーの種類の説明を読む |Microsoft ドキュメント"
-ms.custom: 
+title: SAP 接続文字列のデータ プロバイダーの種類の説明を読む |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Data Provider for SAP, connection string
 - ADO, connection string
 ms.assetid: 7a46eaae-604f-4bae-924b-9f6d43a6e8a0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963345"
 ---
 # <a name="read-about-data-provider-types-for-the-sap-connection-string"></a><span data-ttu-id="2c3d4-102">SAP 接続文字列のデータ プロバイダーの種類の説明を読む</span><span class="sxs-lookup"><span data-stu-id="2c3d4-102">Read about Data Provider types for the SAP Connection String</span></span>
 <span data-ttu-id="2c3d4-103">SAP システムへの接続を確立するには、ときは、接続文字列の形式で ADO.NET クライアントが SAP 接続のプロパティを指定してください。</span><span class="sxs-lookup"><span data-stu-id="2c3d4-103">To establish connectivity to an SAP system, ADO.NET clients must specify the SAP connection properties in the form of a connection string.</span></span> <span data-ttu-id="2c3d4-104">SAP ADO 接続文字列の形式は、ようになります。</span><span class="sxs-lookup"><span data-stu-id="2c3d4-104">The format for the SAP ADO connection string looks like:</span></span>  
@@ -30,11 +31,11 @@ ms.lasthandoff: 11/28/2017
   
  <span data-ttu-id="2c3d4-105">使用して SAP システムへの接続への接続文字列、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]次の種類を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="2c3d4-105">The connection string to connect to an SAP system using the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] can have the following types:</span></span>  
   
--   <span data-ttu-id="2c3d4-106">**タイプ a:**アプリケーション ホスト ベース接続を使用するアプリケーション サーバーを指定する接続 URI、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP システムに接続します。</span><span class="sxs-lookup"><span data-stu-id="2c3d4-106">**TYPE A:** An application host–based connection in which the connection URI specifies an application server through which the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] connects to the SAP system.</span></span>  
+-   <span data-ttu-id="2c3d4-106">**タイプ a:** アプリケーション ホスト ベース接続を使用するアプリケーション サーバーを指定する接続 URI、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP システムに接続します。</span><span class="sxs-lookup"><span data-stu-id="2c3d4-106">**TYPE A:** An application host–based connection in which the connection URI specifies an application server through which the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] connects to the SAP system.</span></span>  
   
--   <span data-ttu-id="2c3d4-107">**タイプ b:**負荷分散の接続を経由するメッセージ サーバーを指定する接続 URI、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP システムに接続します。</span><span class="sxs-lookup"><span data-stu-id="2c3d4-107">**TYPE B:** A load-balanced connection in which the connection URI specifies a message server through which the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] connects to the SAP system.</span></span>  
+-   <span data-ttu-id="2c3d4-107">**タイプ b:** 負荷分散の接続を経由するメッセージ サーバーを指定する接続 URI、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP システムに接続します。</span><span class="sxs-lookup"><span data-stu-id="2c3d4-107">**TYPE B:** A load-balanced connection in which the connection URI specifies a message server through which the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] connects to the SAP system.</span></span>  
   
--   <span data-ttu-id="2c3d4-108">**種類 d:**先ベースの接続を接続 URI が SAP システムの接続パラメーターを含む saprfc.ini ファイルの保存先を指定します。</span><span class="sxs-lookup"><span data-stu-id="2c3d4-108">**TYPE D:** A destination-based connection in which the connection URI specifies a destination in the saprfc.ini file that contains the connection parameters for the SAP system.</span></span>  
+-   <span data-ttu-id="2c3d4-108">**種類 d:** 先ベースの接続を接続 URI が SAP システムの接続パラメーターを含む saprfc.ini ファイルの保存先を指定します。</span><span class="sxs-lookup"><span data-stu-id="2c3d4-108">**TYPE D:** A destination-based connection in which the connection URI specifies a destination in the saprfc.ini file that contains the connection parameters for the SAP system.</span></span>  
   
  <span data-ttu-id="2c3d4-109">次の表では、接続 URI にこれらの接続を指定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="2c3d4-109">The following table describes how these connections are specified in the connection URI.</span></span>  
   

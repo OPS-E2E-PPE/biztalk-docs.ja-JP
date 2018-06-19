@@ -1,17 +1,17 @@
 ---
-title: "SAP アダプターのパフォーマンス カウンターを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: SAP アダプターのパフォーマンス カウンターを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance counters, using
 - troubleshooting, using performance counters
 ms.assetid: 2749add3-31f1-47ff-b3b4-ef46c76fa533
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962256"
 ---
 # <a name="use-performance-counters-with-the-sap-adapter"></a><span data-ttu-id="58a0e-102">SAP アダプターのパフォーマンス カウンターを使用します。</span><span class="sxs-lookup"><span data-stu-id="58a0e-102">Use Performance Counters with the SAP adapter</span></span>
 <span data-ttu-id="58a0e-103">Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]クライアントは、アダプターのパフォーマンスを測定するパフォーマンス カウンターを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="58a0e-103">Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] clients can use performance counters to gauge the performance of the adapters.</span></span> <span data-ttu-id="58a0e-104">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムは、パフォーマンス カウンターのカテゴリを作成します。"[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]"をインストールするに沿って、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="58a0e-104">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup program creates the performance counter category "[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]" along installing the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].</span></span>  

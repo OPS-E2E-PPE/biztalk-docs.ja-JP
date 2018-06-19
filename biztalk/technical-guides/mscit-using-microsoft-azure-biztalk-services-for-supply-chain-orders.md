@@ -1,14 +1,14 @@
 ---
-title: "MSCIT: サプライ チェーン発注の Microsoft Azure BizTalk サービスを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: 'MSCIT: サプライ チェーン発注の Microsoft Azure BizTalk サービスを使用して |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 22091261-cd17-45b2-8746-dc174b52dcff
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299218"
 ---
 # <a name="mscit-using-microsoft-azure-biztalk-services-for-supply-chain-orders"></a><span data-ttu-id="6a145-102">サプライ チェーン発注の Microsoft Azure BizTalk サービスを使用して MSCIT:</span><span class="sxs-lookup"><span data-stu-id="6a145-102">MSCIT: Using Microsoft Azure BizTalk Services for Supply Chain Orders</span></span>
 <span data-ttu-id="6a145-103">**Microsoft デバイス & スタジオ: サプライ チェーン発注の Microsoft Azure BizTalk サービスを使用します。**</span><span class="sxs-lookup"><span data-stu-id="6a145-103">**Microsoft Devices & Studios: Using Microsoft Azure BizTalk Services for Supply Chain Orders**</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="6a145-108">**適用対象:** Microsoft Azure BizTalk サービス (MABS) と BizTalk Server 2013</span><span class="sxs-lookup"><span data-stu-id="6a145-108">**Applies To:** Microsoft Azure BizTalk Services (MABS) and BizTalk Server 2013</span></span>  
   
- <span data-ttu-id="6a145-109">**概要:**製造、サプライ チェーンおよび情報サービス (MSCIS) グループは、Microsoft のグローバル サプライ チェーン マネジメント グループ。</span><span class="sxs-lookup"><span data-stu-id="6a145-109">**Summary:** The Manufacturing, Supply Chain, and Information Services (MSCIS) group is a Global Supply Chain Management group at Microsoft.</span></span> <span data-ttu-id="6a145-110">毎年、Microsoft では、新しい製品を起動します。</span><span class="sxs-lookup"><span data-stu-id="6a145-110">Every year, Microsoft launches new products.</span></span> <span data-ttu-id="6a145-111">MSCIS はこれらの新しい製品を市場に持参します。</span><span class="sxs-lookup"><span data-stu-id="6a145-111">MSCIS is responsible for bringing these new products to market.</span></span> <span data-ttu-id="6a145-112">これらの製品をサポートするために、新しいパートナーは、サプライ チェーン供給業者、製造元、ディストリビューター、小売業者、Service Center、通信事業者、およびなどを含むに追加されます。</span><span class="sxs-lookup"><span data-stu-id="6a145-112">To support these products, new partners are added to the Supply Chain, including Supplier, Manufacturer, Distributor, Retailer, Service Center, Carrier, and so on.</span></span>  
+ <span data-ttu-id="6a145-109">**概要:** 製造、サプライ チェーンおよび情報サービス (MSCIS) グループは、Microsoft のグローバル サプライ チェーン マネジメント グループ。</span><span class="sxs-lookup"><span data-stu-id="6a145-109">**Summary:** The Manufacturing, Supply Chain, and Information Services (MSCIS) group is a Global Supply Chain Management group at Microsoft.</span></span> <span data-ttu-id="6a145-110">毎年、Microsoft では、新しい製品を起動します。</span><span class="sxs-lookup"><span data-stu-id="6a145-110">Every year, Microsoft launches new products.</span></span> <span data-ttu-id="6a145-111">MSCIS はこれらの新しい製品を市場に持参します。</span><span class="sxs-lookup"><span data-stu-id="6a145-111">MSCIS is responsible for bringing these new products to market.</span></span> <span data-ttu-id="6a145-112">これらの製品をサポートするために、新しいパートナーは、サプライ チェーン供給業者、製造元、ディストリビューター、小売業者、Service Center、通信事業者、およびなどを含むに追加されます。</span><span class="sxs-lookup"><span data-stu-id="6a145-112">To support these products, new partners are added to the Supply Chain, including Supplier, Manufacturer, Distributor, Retailer, Service Center, Carrier, and so on.</span></span>  
   
  <span data-ttu-id="6a145-113">パートナーのトランザクションの数は毎年増加します。</span><span class="sxs-lookup"><span data-stu-id="6a145-113">The number of partner transactions increases yearly.</span></span> <span data-ttu-id="6a145-114">高の読み込み中、スループットに関連する問題があります。</span><span class="sxs-lookup"><span data-stu-id="6a145-114">During high load, there are issues related to throughput.</span></span> <span data-ttu-id="6a145-115">指定のチェーン BizTalk ハブより多くのトランザクション (増加したボリューム) を処理するときに、エンド システムまたはパートナーのシステム継続できるようにします。</span><span class="sxs-lookup"><span data-stu-id="6a145-115">While the Supply Chain BizTalk hub processes more transactions (increased volume), the end system or partner system is not able to keep up.</span></span>  
   

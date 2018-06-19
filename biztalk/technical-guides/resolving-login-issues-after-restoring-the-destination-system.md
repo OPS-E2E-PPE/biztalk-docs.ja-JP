@@ -1,15 +1,15 @@
 ---
-title: "送信先システムを復元した後ログインの問題を解決する |Microsoft ドキュメント"
-description: "BizTalk Server での孤立ユーザーを解決するのには SQL Server ログインをスクリプトにログ配布"
-ms.custom: 
+title: 送信先システムを復元した後ログインの問題を解決する |Microsoft ドキュメント
+description: BizTalk Server での孤立ユーザーを解決するのには SQL Server ログインをスクリプトにログ配布
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9232ca3-dadb-4b3c-8ec4-4e307c32d2e5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013801"
 ---
 # <a name="resolving-login-issues-after-restoring-the-destination-system"></a><span data-ttu-id="19418-103">送信先システムを復元した後ログインの問題を解決します。</span><span class="sxs-lookup"><span data-stu-id="19418-103">Resolving Login Issues After Restoring the Destination System</span></span>
 

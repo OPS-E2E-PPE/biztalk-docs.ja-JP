@@ -15,7 +15,7 @@ helpviewer_keywords:
 - examples, pipelines
 - messages, correlating to orchestrations
 ms.assetid: eb8121df-4f5b-4f36-8228-4b5ad1abfb4e
-caps.latest.revision: ''
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25965256"
 ---
 # <a name="aggregator-biztalk-server-sample"></a><span data-ttu-id="d7116-102">アグリゲーター (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="d7116-102">Aggregator (BizTalk Server Sample)</span></span>
 <span data-ttu-id="d7116-103">このサンプルの目的は、オーケストレーションとパイプラインを使用してメッセージ アグリゲーション機能を構築することです。</span><span class="sxs-lookup"><span data-stu-id="d7116-103">The purpose of this sample is to build a message aggregation functionality using orchestration and pipelines.</span></span> <span data-ttu-id="d7116-104">特に、以下のことを行うオーケストレーションを構築します。</span><span class="sxs-lookup"><span data-stu-id="d7116-104">Specifically we will build an orchestration that:</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 03/23/2018
 3.  <span data-ttu-id="d7116-108">1 分ごとか、アグリゲートするのに十分なメッセージを受信した場合はすぐに XML インターチェンジ メッセージを生成します。</span><span class="sxs-lookup"><span data-stu-id="d7116-108">Produces an XML interchange message every minute or as soon as it has enough messages to aggregate.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="d7116-109">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="d7116-109">Where to Find This Sample</span></span>  
- <span data-ttu-id="d7116-110">*\<Samples Path\>*\Pipelines\Aggregator</span><span class="sxs-lookup"><span data-stu-id="d7116-110">*\<Samples Path\>*\Pipelines\Aggregator</span></span>  
+ <span data-ttu-id="d7116-110">*\<Samples Path\>* \Pipelines\Aggregator</span><span class="sxs-lookup"><span data-stu-id="d7116-110">*\<Samples Path\>* \Pipelines\Aggregator</span></span>  
   
  <span data-ttu-id="d7116-111">次の表に、このサンプルのファイル一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="d7116-111">The following table lists the files for this sample.</span></span>  
   

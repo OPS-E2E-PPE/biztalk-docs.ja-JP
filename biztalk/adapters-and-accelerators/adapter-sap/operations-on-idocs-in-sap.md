@@ -1,11 +1,11 @@
 ---
-title: "SAP での Idoc に対する操作 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP での Idoc に対する操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IDOC, operations to receive an
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - IDOC, operations to send an
 - RFC server
 ms.assetid: 6abcc646-c7a3-48cf-a09e-01f516dcef97
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964552"
 ---
 # <a name="operations-on-idocs-in-sap"></a><span data-ttu-id="74a8b-102">SAP での Idoc に対する操作</span><span class="sxs-lookup"><span data-stu-id="74a8b-102">Operations on IDOCs in SAP</span></span>
 <span data-ttu-id="74a8b-103">Idoc は、SAP が非同期的に SAP および SAP 以外のシステムと通信するためにサポートする標準の EDI のようなドキュメントです。</span><span class="sxs-lookup"><span data-stu-id="74a8b-103">IDOCs are standardized EDI-like documents that SAP supports for asynchronously communicating with SAP and non-SAP systems.</span></span> <span data-ttu-id="74a8b-104">Idoc は、取引先の SAP システムまたは外部プログラムの間の販売注文、たとえばなどの「ビジネス」ドキュメントの送受信に使用されます。</span><span class="sxs-lookup"><span data-stu-id="74a8b-104">IDOCs are used for sending and receiving “business” documents such as sales orders, for example, to or from a trading partner’s SAP system or an external program.</span></span>  

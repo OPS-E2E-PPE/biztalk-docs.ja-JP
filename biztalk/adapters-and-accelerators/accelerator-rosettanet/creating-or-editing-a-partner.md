@@ -1,11 +1,11 @@
 ---
-title: "作成または編集パートナー |Microsoft ドキュメント"
-ms.custom: 
+title: 作成または編集パートナー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, trading partners
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - trading partners, modifying
 - trading partners, about trading partners
 ms.assetid: 63809035-65a5-472d-b2e5-359c8e9d9d8c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966664"
 ---
 # <a name="creating-or-editing-a-partner"></a><span data-ttu-id="44951-102">作成またはパートナーを編集します。</span><span class="sxs-lookup"><span data-stu-id="44951-102">Creating or Editing a Partner</span></span>
 <span data-ttu-id="44951-103">ここでは、パートナーの作成方法または編集方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="44951-103">This topic describes how to create or edit a partner.</span></span> <span data-ttu-id="44951-104">パートナー構成では、パートナーの説明と分類、発信元の否認不可期間の設定、パートナーに対する証明書の構成、および連絡先情報の提供を行います。</span><span class="sxs-lookup"><span data-stu-id="44951-104">The partner configuration describes and classifies the partner, sets the non-repudiation of origin period, configures certificates for the partner, and provides contact information.</span></span>  
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="44951-184">**新しいパートナーのプロパティ** ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブで、設定値を入力します。</span><span class="sxs-lookup"><span data-stu-id="44951-184">In the **New Partner Properties** dialog box, on the **General** and **Contact Properties** tabs, type values for the settings.</span></span> <span data-ttu-id="44951-185">これらの設定の詳細については、上の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="44951-185">For information about these settings, see the preceding table.</span></span>  
   
-5.  <span data-ttu-id="44951-186">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="44951-186">Click **OK**.</span></span>  
+5.  <span data-ttu-id="44951-186">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="44951-186">Click **OK**.</span></span>  
   
 ### <a name="to-edit-a-partner"></a><span data-ttu-id="44951-187">パートナーを編集するには</span><span class="sxs-lookup"><span data-stu-id="44951-187">To edit a partner</span></span>  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="44951-191"> **\<** *パートナー*  **\>** プロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブは必要に応じて設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="44951-191">In the **\<***partner***\>** Properties dialog box, on the **General** and **Contact Properties** tabs, change settings as needed.</span></span> <span data-ttu-id="44951-192">これらの設定の詳細については、上の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="44951-192">For information about these settings, see the preceding table.</span></span>  
   
-5.  <span data-ttu-id="44951-193">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="44951-193">Click **OK**.</span></span>  
+5.  <span data-ttu-id="44951-193">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="44951-193">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="44951-194">参照</span><span class="sxs-lookup"><span data-stu-id="44951-194">See Also</span></span>  
  <span data-ttu-id="44951-195">[構成、証明書、データベース、およびセキュリティを管理します。](manage-configuration-certificates-databases-security.md) </span><span class="sxs-lookup"><span data-stu-id="44951-195">[Manage configuration, certificates, databases, and security](manage-configuration-certificates-databases-security.md) </span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "WCF チャネル モデルを使用して Oracle データベースで挿入操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF チャネル モデルを使用して Oracle データベースで挿入操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - inserting data, using a channel
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - channel programming, performing an insert operation
 - performing an insert operation, using a channel
 ms.assetid: 85c44507-0166-42ef-a908-6098f7a683fc
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963320"
 ---
 # <a name="run-an-insert-operation-in-oracle-database-using-the-wcf-channel-model"></a><span data-ttu-id="8b16f-102">WCF チャネル モデルを使用して Oracle データベースで挿入操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="8b16f-102">Run an Insert Operation in Oracle Database using the WCF Channel Model</span></span>
 <span data-ttu-id="8b16f-103">このセクションでは、チャネルを使用して Oracle データベースにレコードを挿入する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="8b16f-103">This section shows how to insert a record into an Oracle database by using a channel.</span></span> <span data-ttu-id="8b16f-104">メッセージを送信するときに、メッセージ本文とメッセージのアクションの両方を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8b16f-104">You must specify both a message body and a message action when you send a message.</span></span>  

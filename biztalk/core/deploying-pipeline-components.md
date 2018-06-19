@@ -1,17 +1,17 @@
 ---
-title: "パイプライン コンポーネントの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン コンポーネントの展開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, pipeline components [custom]
 - pipeline components [custom], deploying
 ms.assetid: 98b47fbf-62c0-4012-a406-58c4d56b305a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969032"
 ---
 # <a name="deploying-pipeline-components"></a><span data-ttu-id="2ad7d-102">パイプライン コンポーネントの展開</span><span class="sxs-lookup"><span data-stu-id="2ad7d-102">Deploying Pipeline Components</span></span>
 <span data-ttu-id="2ad7d-103">すべての .NET パイプライン コンポーネント アセンブリ (ネイティブおよびカスタム) がである必要があります、 \<*インストール ディレクトリ*\>サーバーによって実行される \Pipeline Components フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="2ad7d-103">All the .NET pipeline component assemblies (native and custom) must be located in the \<*installation directory*\>\Pipeline Components folder to be executed by the server.</span></span> <span data-ttu-id="2ad7d-104">カスタム コンポーネントを持つパイプラインを複数のサーバーに展開するには、各サーバー上の指定のフォルダーに、コンポーネントのバイナリが存在する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2ad7d-104">If the pipeline with a custom component will be deployed across several servers, the component's binaries must be present in the specified folder on every server.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "クラスター Resource1 として BizTalk ホストを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: クラスター Resource1 として BizTalk ホストを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installation, high availability
@@ -23,7 +23,7 @@ helpviewer_keywords:
 - clustering, configuring
 - installation, clustering
 ms.assetid: bcd656d2-8dd6-49fc-9c42-ef5c884e52c4
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -32,6 +32,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970560"
 ---
 # <a name="how-to-configure-a-biztalk-host-as-a-cluster-resource"></a><span data-ttu-id="b6f84-102">BizTalk ホストをクラスター リソースとして構成する方法</span><span class="sxs-lookup"><span data-stu-id="b6f84-102">How to Configure a BizTalk Host as a Cluster Resource</span></span>
 <span data-ttu-id="b6f84-103">このトピックでは、BizTalk ホストをクラスター リソースとして構成する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="b6f84-103">This topic discusses the steps that you must follow to configure a BizTalk host as a cluster resource.</span></span> <span data-ttu-id="b6f84-104">このトピックの手順を完了するには、BizTalk グループの少なくとも 2 つの BizTalk Server を Windows Server クラスターのメンバーとしてあらかじめ構成しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="b6f84-104">To complete the steps in this topic, you must have already configured at least two BizTalk Servers in a BizTalk group as members of a Windows Server cluster.</span></span> <span data-ttu-id="b6f84-105">Windows Server クラスターの構成の詳細については、Windows Server のオンライン ヘルプを参照してください。</span><span class="sxs-lookup"><span data-stu-id="b6f84-105">For more information about configuring a Windows Server cluster, see the Windows Server online Help.</span></span>  
@@ -92,7 +93,7 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="to-configure-a-biztalk-host-as-a-cluster-resource"></a><span data-ttu-id="b6f84-179">BizTalk ホストをクラスター リソースとして構成するには</span><span class="sxs-lookup"><span data-stu-id="b6f84-179">To configure a BizTalk host as a cluster resource</span></span>  
   
-1.  <span data-ttu-id="b6f84-180">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]**をクリックして展開**プラットフォームの設定**、クリックして展開し、**ホスト**です。</span><span class="sxs-lookup"><span data-stu-id="b6f84-180">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, click to expand **BizTalk Server Administration**, click to expand **BizTalk Group [\<servername\>:\<management database\>]**, click to expand **Platform Settings**, and then click to expand **Hosts**.</span></span> <span data-ttu-id="b6f84-181">フォルダーの下にホストの一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b6f84-181">The list of hosts appears under the folder.</span></span>  
+1.  <span data-ttu-id="b6f84-180">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]** をクリックして展開**プラットフォームの設定**、クリックして展開し、**ホスト**です。</span><span class="sxs-lookup"><span data-stu-id="b6f84-180">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, click to expand **BizTalk Server Administration**, click to expand **BizTalk Group [\<servername\>:\<management database\>]**, click to expand **Platform Settings**, and then click to expand **Hosts**.</span></span> <span data-ttu-id="b6f84-181">フォルダーの下にホストの一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b6f84-181">The list of hosts appears under the folder.</span></span>  
   
 2.  <span data-ttu-id="b6f84-182">クラスター、しを選択したいホストを右クリックして**クラスター**です。</span><span class="sxs-lookup"><span data-stu-id="b6f84-182">Right-click the host that you would like to cluster, and then select **Cluster**.</span></span>  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="to-uncluster-a-clustered-biztalk-host"></a><span data-ttu-id="b6f84-186">クラスター化された BizTalk ホストをクラスター解除するには</span><span class="sxs-lookup"><span data-stu-id="b6f84-186">To uncluster a clustered BizTalk host</span></span>  
   
-1.  <span data-ttu-id="b6f84-187">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]**をクリックして展開**プラットフォームの設定**、クリックして展開し、**ホスト**です。</span><span class="sxs-lookup"><span data-stu-id="b6f84-187">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, click to expand **BizTalk Server Administration**, click to expand **BizTalk Group [\<servername\>:\<management database\>]**, click to expand **Platform Settings**, and then click to expand **Hosts**.</span></span> <span data-ttu-id="b6f84-188">フォルダーの下にホストの一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b6f84-188">The list of hosts appears under the folder.</span></span>  
+1.  <span data-ttu-id="b6f84-187">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]** をクリックして展開**プラットフォームの設定**、クリックして展開し、**ホスト**です。</span><span class="sxs-lookup"><span data-stu-id="b6f84-187">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, click to expand **BizTalk Server Administration**, click to expand **BizTalk Group [\<servername\>:\<management database\>]**, click to expand **Platform Settings**, and then click to expand **Hosts**.</span></span> <span data-ttu-id="b6f84-188">フォルダーの下にホストの一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b6f84-188">The list of hosts appears under the folder.</span></span>  
   
 2.  <span data-ttu-id="b6f84-189">クラスター化を解除し、選択したクラスター化されたホストを右クリックして**クラスター解除**です。</span><span class="sxs-lookup"><span data-stu-id="b6f84-189">Right-click the clustered host that you would like to uncluster, and then select **Uncluster**.</span></span>  
   

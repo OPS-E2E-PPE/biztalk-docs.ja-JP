@@ -1,17 +1,17 @@
 ---
-title: "BizTalk マッパーのキーボード ショートカット |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk マッパーのキーボード ショートカット |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - keyboard shortcuts, BizTalk Mapper
 - BizTalk Mapper, keyboard shortcuts
 ms.assetid: aba4958d-9104-46da-8524-45a41e07c5e2
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966384"
 ---
 # <a name="biztalk-mapper-keyboard-shortcuts"></a><span data-ttu-id="584f9-102">BizTalk マッパーのキーボード ショートカット</span><span class="sxs-lookup"><span data-stu-id="584f9-102">BizTalk Mapper Keyboard Shortcuts</span></span>
 <span data-ttu-id="584f9-103">他の標準的な Microsoft Windows アプリケーションと同様、BizTalk マッパーでも、メニューのコマンドをキーボード ショートカットで実行できます。</span><span class="sxs-lookup"><span data-stu-id="584f9-103">As in any standard Microsoft Windows application, you can use keyboard shortcuts in BizTalk Mapper to access commands otherwise available by using menus.</span></span> <span data-ttu-id="584f9-104">使用できるキーボード ショートカットを次の表に示します。</span><span class="sxs-lookup"><span data-stu-id="584f9-104">The following table describes the available keyboard shortcuts.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "既存のリンクを管理する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 既存のリンクを管理する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0db213b9-df84-4ebd-a59f-7691774d5031
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970146"
 ---
 # <a name="how-to-manage-existing-links"></a><span data-ttu-id="38b4a-102">既存のリンクを管理する方法</span><span class="sxs-lookup"><span data-stu-id="38b4a-102">How to Manage Existing Links</span></span>
 <span data-ttu-id="38b4a-103">リンクの送信元や送信先の変更、リンクの名前付けや名前の変更、およびリンクの削除などが必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="38b4a-103">Sometimes you may need to change the source or destination of a link, name or rename a link, or delete a link.</span></span> <span data-ttu-id="38b4a-104">このトピックでは、このようなリンクに関する操作を実行する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="38b4a-104">This topic provides step-by-step instructions for performing these types of link operations.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "CallOrchestration (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: CallOrchestration (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
 - orchestrations, calling
 - examples, orchestrations
 ms.assetid: 0c4194f0-c1e2-419a-8a1a-a3c96e8d2667
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966768"
 ---
 # <a name="callorchestration-biztalk-server-sample"></a><span data-ttu-id="4bbc3-102">CallOrchestration (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="4bbc3-102">CallOrchestration (BizTalk Server Sample)</span></span>
 <span data-ttu-id="4bbc3-103">CallOrchestration サンプルは、1 つの BizTalk オーケストレーションから別のオーケストレーションを呼び出す方法を示すものです。</span><span class="sxs-lookup"><span data-stu-id="4bbc3-103">The CallOrchestration sample demonstrates how to call one BizTalk orchestration from another orchestration.</span></span>  

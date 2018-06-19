@@ -1,14 +1,14 @@
 ---
-title: "インストールと構成の既知の問題を読み取る |Microsoft ドキュメント"
-ms.custom: 
+title: インストールと構成の既知の問題を読み取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c58d9dcb-7835-4181-a6cb-203c5d138e6a
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,11 +17,12 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962008"
 ---
 # <a name="read-the-installation-and-configuration-known-issues"></a><span data-ttu-id="596d4-102">インストールと構成の既知の問題を読み取る</span><span class="sxs-lookup"><span data-stu-id="596d4-102">Read the installation and configuration known issues</span></span>
   
 ## <a name="installing-over-terminal-server-creates-log-files-in-a-different-folder"></a><span data-ttu-id="596d4-103">別のフォルダーにログ ファイルを作成するターミナル サーバー経由でインストールします。</span><span class="sxs-lookup"><span data-stu-id="596d4-103">Installing over Terminal Server creates log files in a different folder</span></span>  
- <span data-ttu-id="596d4-104">A4SWIFT セットアップ プログラムによって作成、セットアップと構成ログ ファイルで、ターミナル サーバー接続を介して A4SWIFT をインストールするときに、 *\<ドライブ\>*: \Documents and 設定\\*\<ユーザー名\>*\Local Settings」フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="596d4-104">When you install A4SWIFT over a Terminal Server connection, the A4SWIFT Setup program creates the setup and configuration log files in the *\<drive\>*:\Documents and Settings\\*\<user name\>*\Local Settings folder.</span></span> <span data-ttu-id="596d4-105">通常、セットアップ プログラムがでこれらのファイルを作成、 *\<ドライブ\>*: \Documents and 設定\\*\<ユーザー名\>*\LocalSettings\temp フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="596d4-105">Normally, the Setup program creates these files in the *\<drive\>*:\Documents and Settings\\*\<user name\>*\Local Settings\temp folder.</span></span> <span data-ttu-id="596d4-106">コンピューターを設定し、適切に構成されていることを確認するこれらのログ ファイルを確認することができます。</span><span class="sxs-lookup"><span data-stu-id="596d4-106">You can review these log files to ensure that your computers are set up and configured properly.</span></span>  
+ <span data-ttu-id="596d4-104">A4SWIFT セットアップ プログラムによって作成、セットアップと構成ログ ファイルで、ターミナル サーバー接続を介して A4SWIFT をインストールするときに、 *\<ドライブ\>*: \Documents and 設定\\*\<ユーザー名\>* \Local Settings」フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="596d4-104">When you install A4SWIFT over a Terminal Server connection, the A4SWIFT Setup program creates the setup and configuration log files in the *\<drive\>*:\Documents and Settings\\*\<user name\>* \Local Settings folder.</span></span> <span data-ttu-id="596d4-105">通常、セットアップ プログラムがでこれらのファイルを作成、 *\<ドライブ\>*: \Documents and 設定\\*\<ユーザー名\>* \LocalSettings\temp フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="596d4-105">Normally, the Setup program creates these files in the *\<drive\>*:\Documents and Settings\\*\<user name\>* \Local Settings\temp folder.</span></span> <span data-ttu-id="596d4-106">コンピューターを設定し、適切に構成されていることを確認するこれらのログ ファイルを確認することができます。</span><span class="sxs-lookup"><span data-stu-id="596d4-106">You can review these log files to ensure that your computers are set up and configured properly.</span></span>  
   
 ## <a name="silent-installation-is-not-recommended"></a><span data-ttu-id="596d4-107">サイレント インストールはお勧めしません</span><span class="sxs-lookup"><span data-stu-id="596d4-107">Silent installation is not recommended</span></span>  
  <span data-ttu-id="596d4-108">サイレント インストールでは、A4SWIFT セットアップ プログラムがサポートされますが、必要な追加の構成手順の複雑であるためお勧めできません。</span><span class="sxs-lookup"><span data-stu-id="596d4-108">A silent installation is supported by the A4SWIFT Setup program, but is not recommended because of the complexity of the additional configuration steps that are required.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "期間には、RTA ウィンドウを取得する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 期間には、RTA ウィンドウを取得する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM], aggregations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [BAM], time intervals
 - Get-RTAWindow command [BAM]
 ms.assetid: 4e7ad0fd-e7ed-47f7-9435-ef01bbe17afa
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970008"
 ---
 # <a name="how-to-get-the-duration-on-an-rta-window"></a><span data-ttu-id="032ec-102">RTA 時間帯の期間を取得する方法</span><span class="sxs-lookup"><span data-stu-id="032ec-102">How to Get the Duration on an RTA Window</span></span>
 <span data-ttu-id="032ec-103">管理者を使用して、 **rtawindow プロパティの get**コマンドを指定されたリアルタイム集計 (RTA) の実行時間を取得します。</span><span class="sxs-lookup"><span data-stu-id="032ec-103">Administrators use the **get-rtawindow** command to get the duration for the specified real-time aggregation (RTA).</span></span> <span data-ttu-id="032ec-104">このコマンドにより、期間の長さと、その期間の基準となる単位が返されます。</span><span class="sxs-lookup"><span data-stu-id="032ec-104">The command returns the length of the duration and the units by which the duration is measured.</span></span>  
@@ -32,7 +33,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="032ec-107">[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking フォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="032ec-107">Navigate to the folder [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.</span></span>  
   
-3.  <span data-ttu-id="032ec-108">型**bm get rtawindow-ビュー:\<ビュー名\>-アクティビティ:\<アクティビティ名\>Rta:\<RTA 名\>**です。</span><span class="sxs-lookup"><span data-stu-id="032ec-108">Type **bm get-rtawindow -View:\<view name\> -Activity:\<activity name\> -Rta:\<RTA name\>**.</span></span>  
+3.  <span data-ttu-id="032ec-108">型**bm get rtawindow-ビュー:\<ビュー名\>-アクティビティ:\<アクティビティ名\>Rta:\<RTA 名\>** です。</span><span class="sxs-lookup"><span data-stu-id="032ec-108">Type **bm get-rtawindow -View:\<view name\> -Activity:\<activity name\> -Rta:\<RTA name\>**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="032ec-109">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="032ec-109">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

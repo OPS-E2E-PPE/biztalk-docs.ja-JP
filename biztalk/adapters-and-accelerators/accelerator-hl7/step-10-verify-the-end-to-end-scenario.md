@@ -10,7 +10,7 @@ ms.topic: article
 helpviewer_keywords:
 - end-to-end tutorial, verifying solution
 ms.assetid: 24b74ba6-e303-4ab1-8a93-25a430e4894d
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25961592"
 ---
 # <a name="step-10-verify-the-end-to-end-scenario"></a><span data-ttu-id="ebd52-102">手順 10: エンド ツー エンド シナリオを確認してください。</span><span class="sxs-lookup"><span data-stu-id="ebd52-102">Step 10: Verify the End-to-End Scenario</span></span>
 <span data-ttu-id="ebd52-103">この手順では、このチュートリアルでは、エンド ツー エンド シナリオを確認します。</span><span class="sxs-lookup"><span data-stu-id="ebd52-103">In this step, you verify the end-to-end scenario for this tutorial.</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 03/28/2018
     > [!NOTE]
     >  <span data-ttu-id="ebd52-117">次の手順では、メッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="ebd52-117">The following step sends the message.</span></span>  
   
-6.  <span data-ttu-id="ebd52-118">コマンド プロンプト ウィンドウで次のように入力します**mllpsend/SB 11/EB 28/CR 13/f"\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\ のアクセラレータ。エンド ツー エンド Tutorial\ADT ^ A03.txt"**ここで、 \<*ドライブ*\>は、インストール ドライブ文字です。</span><span class="sxs-lookup"><span data-stu-id="ebd52-118">In the Command Prompt window, type **mllpsend /SB 11 /EB 28 /CR 13 /f "\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial\ADT^A03.txt"**, where \<*drive*\> is your installation drive letter.</span></span> <span data-ttu-id="ebd52-119">**Enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="ebd52-119">Press **Enter**.</span></span>  
+6.  <span data-ttu-id="ebd52-118">コマンド プロンプト ウィンドウで次のように入力します**mllpsend/SB 11/EB 28/CR 13/f"\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\ のアクセラレータ。エンド ツー エンド Tutorial\ADT ^ A03.txt"** ここで、 \<*ドライブ*\>は、インストール ドライブ文字です。</span><span class="sxs-lookup"><span data-stu-id="ebd52-118">In the Command Prompt window, type **mllpsend /SB 11 /EB 28 /CR 13 /f "\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial\ADT^A03.txt"**, where \<*drive*\> is your installation drive letter.</span></span> <span data-ttu-id="ebd52-119">**Enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="ebd52-119">Press **Enter**.</span></span>  
   
 7.  <span data-ttu-id="ebd52-120">次の結果があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ebd52-120">Verify that you have the following results:</span></span>  
   

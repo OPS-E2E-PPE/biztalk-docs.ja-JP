@@ -1,17 +1,17 @@
 ---
-title: "昇格させたプロパティの FIN 対応調整 |Microsoft ドキュメント"
-ms.custom: 
+title: 昇格させたプロパティの FIN 対応調整 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - promoted properties, FIN Response Reconciliation
 - FIN Response Reconciliation, promoted properties
 ms.assetid: 1a638e9e-61eb-482c-8856-b1aea36c449c
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964912"
 ---
 # <a name="fin-response-reconciliation-promoted-properties"></a><span data-ttu-id="968b7-102">昇格させたプロパティの FIN 対応調整</span><span class="sxs-lookup"><span data-stu-id="968b7-102">FIN Response Reconciliation Promoted Properties</span></span>
 <span data-ttu-id="968b7-103">[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] FIN 対応調整の機能には、次の昇格させたプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="968b7-103">The [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] FIN Response Reconciliation feature includes the following promoted properties.</span></span>  
@@ -32,5 +33,5 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="968b7-128">**A4SWIFT_SendingServiceType**</span><span class="sxs-lookup"><span data-stu-id="968b7-128">**A4SWIFT_SendingServiceType**</span></span>|<span data-ttu-id="968b7-129">FRR サービス メッセージを送信することを示します。</span><span class="sxs-lookup"><span data-stu-id="968b7-129">Indicates the FRR service that sends the message.</span></span>|<span data-ttu-id="968b7-130">文字列</span><span class="sxs-lookup"><span data-stu-id="968b7-130">String</span></span>|<span data-ttu-id="968b7-131">A4SWIFT_FrrService</span><span class="sxs-lookup"><span data-stu-id="968b7-131">A4SWIFT_FrrService</span></span>|<span data-ttu-id="968b7-132">昇格させた場合**A4SWIFT_FRRFailed**が True に設定します。</span><span class="sxs-lookup"><span data-stu-id="968b7-132">Promoted when **A4SWIFT_FRRFailed** is set to True.</span></span>|  
   
 ## <a name="see-also"></a><span data-ttu-id="968b7-133">参照</span><span class="sxs-lookup"><span data-stu-id="968b7-133">See Also</span></span>  
- <span data-ttu-id="968b7-134">[A4SWIFT_ * 昇格させたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md) </span><span class="sxs-lookup"><span data-stu-id="968b7-134">[A4SWIFT_* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md) </span></span>  
+ <span data-ttu-id="968b7-134">[A4SWIFT_ \* 昇格させたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md) </span><span class="sxs-lookup"><span data-stu-id="968b7-134">[A4SWIFT_\* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md) </span></span>  
  [<span data-ttu-id="968b7-135">Message Repair and New Submission の昇格プロパティ</span><span class="sxs-lookup"><span data-stu-id="968b7-135">Message Repair and New Submission Promoted Properties</span></span>](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission-promoted-properties.md)

@@ -1,14 +1,14 @@
 ---
-title: "手順 7: エコー アダプターの同期送信ハンドラーを実装する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 7: エコー アダプターの同期送信ハンドラーを実装する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4da4d987-03c4-4817-850b-4c5ca2ba7e62
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967736"
 ---
 # <a name="step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter"></a><span data-ttu-id="84a47-102">手順 7: エコー アダプターの同期送信ハンドラーを実装します。</span><span class="sxs-lookup"><span data-stu-id="84a47-102">Step 7: Implement the Synchronous Outbound Handler for the Echo Adapter</span></span>
 <span data-ttu-id="84a47-103">![手順 9 の 7](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-7of9.gif "Step_7of9")</span><span class="sxs-lookup"><span data-stu-id="84a47-103">![Step 7 of 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-7of9.gif "Step_7of9")</span></span>  
@@ -275,7 +276,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
   
 7.  <span data-ttu-id="84a47-163">Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。</span><span class="sxs-lookup"><span data-stu-id="84a47-163">In Visual Studio, on the **File** menu, click **Save All**.</span></span>  
   
-8.  <span data-ttu-id="84a47-164">**[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84a47-164">On the **Build** menu, click **Build Solution**.</span></span> <span data-ttu-id="84a47-165">これは、エラーなしでコンパイルする必要があります。</span><span class="sxs-lookup"><span data-stu-id="84a47-165">It should compile without errors.</span></span> <span data-ttu-id="84a47-166">以外の場合は、上記のすべてのステップに従っていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="84a47-166">If not, ensure that you have followed every step above.</span></span> <span data-ttu-id="84a47-167">ここで、安全に Visual Studio を終了したりに進む[手順 8: エコー アダプターの同期受信ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="84a47-167">Now, you can safely close Visual Studio or continue on to [Step 8: Implement the Synchronous Inbound Handler for the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md).</span></span>  
+8.  <span data-ttu-id="84a47-164">**[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84a47-164">On the **Build** menu, click **Build Solution**.</span></span> <span data-ttu-id="84a47-165">これは、エラーなしでコンパイルする必要があります。</span><span class="sxs-lookup"><span data-stu-id="84a47-165">It should compile without errors.</span></span> <span data-ttu-id="84a47-166">以外の場合は、上記のすべてのステップに従っていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="84a47-166">If not, ensure that you have followed every step above.</span></span> <span data-ttu-id="84a47-167">ここで、安全に Visual Studio を終了したりに進む[手順 8: エコー アダプターの同期受信ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="84a47-167">Now, you can safely close Visual Studio or continue on to [Step 8: Implement the Synchronous Inbound Handler for the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md).</span></span>  
   
 ## <a name="what-did-i-just-do"></a><span data-ttu-id="84a47-168">でしただけは何ですか。</span><span class="sxs-lookup"><span data-stu-id="84a47-168">What Did I Just Do?</span></span>  
  <span data-ttu-id="84a47-169">このステップでは、エコー アダプターの同期送信メッセージング機能を実装する方法について学習しました。</span><span class="sxs-lookup"><span data-stu-id="84a47-169">In this step, you learned how to implement the synchronous outbound messaging functionality of the Echo adapter.</span></span> <span data-ttu-id="84a47-170">実装してこれを行う、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler.Execute%2A`のメソッド、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler`です。</span><span class="sxs-lookup"><span data-stu-id="84a47-170">To do so, you implemented the `Microsoft.ServiceModel.Channels.Common.IOutboundHandler.Execute%2A` method of the `Microsoft.ServiceModel.Channels.Common.IOutboundHandler`.</span></span> <span data-ttu-id="84a47-171">このメソッドは、着信 WCF 要求メッセージを解析し、必要な処理を実行、出力方向の WCF 応答メッセージを生成します。</span><span class="sxs-lookup"><span data-stu-id="84a47-171">This method parsed the incoming WCF request message, performed the necessary actions, and then generated the outgoing WCF response message.</span></span>  

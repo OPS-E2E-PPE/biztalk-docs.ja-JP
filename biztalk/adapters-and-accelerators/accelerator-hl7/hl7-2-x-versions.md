@@ -1,17 +1,17 @@
 ---
-title: "HL7 2.X バージョン |Microsoft ドキュメント"
-ms.custom: 
+title: HL7 2.X バージョン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTAHL7, supported 2.X versions
 - HL7, 2.X versions
 ms.assetid: 289e4e1c-5215-412f-8a2a-346316e61e4b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960376"
 ---
 # <a name="hl7-2x-versions"></a><span data-ttu-id="07112-102">HL7 2.X バージョン</span><span class="sxs-lookup"><span data-stu-id="07112-102">HL7 2.X Versions</span></span>
 <span data-ttu-id="07112-103">次の表に、正常性レベル 7 (HL7) の標準の 2.X バージョンは、承認 HL7 組織から日付をどのバージョンを一覧表示[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]) をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="07112-103">The following table lists the 2.X versions of the Health Level Seven (HL7) standard, the approval dates from the HL7 organization, and lists which versions [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]) supports.</span></span>  

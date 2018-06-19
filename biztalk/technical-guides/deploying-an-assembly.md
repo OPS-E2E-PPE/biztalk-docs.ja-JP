@@ -1,14 +1,14 @@
 ---
-title: "アセンブリを展開する |Microsoft ドキュメント"
-ms.custom: 
+title: アセンブリを展開する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65f8ee21-0e52-4a74-b114-864a3069659c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297866"
 ---
 # <a name="deploying-an-assembly"></a><span data-ttu-id="1d3b5-102">アセンブリを展開します。</span><span class="sxs-lookup"><span data-stu-id="1d3b5-102">Deploying an Assembly</span></span>
 <span data-ttu-id="1d3b5-103">アセンブリを展開するアセンブリがビルドされ、オーケストレーション、パイプライン、スキーマ、およびローカルの BizTalk 管理データベースに格納されているマップ (アイテム) と共にインポートします。</span><span class="sxs-lookup"><span data-stu-id="1d3b5-103">Deploying an assembly builds the assembly and imports it, along with the orchestrations, pipelines, schemas, and maps (artifacts) that it contains into the local BizTalk Management database.</span></span> <span data-ttu-id="1d3b5-104">最初に、これは、開発環境で行います。</span><span class="sxs-lookup"><span data-stu-id="1d3b5-104">Initially, this is done in the development environment.</span></span>  

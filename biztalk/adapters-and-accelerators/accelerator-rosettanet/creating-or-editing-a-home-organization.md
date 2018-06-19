@@ -1,11 +1,11 @@
 ---
-title: "作成または編集、ホーム組織 |Microsoft ドキュメント"
-ms.custom: 
+title: 作成または編集、ホーム組織 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - home organizations, about home organizations
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - home organizations
 - home organizations, creating
 ms.assetid: b54afb84-2f16-4516-8701-b03301476362
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964960"
 ---
 # <a name="creating-or-editing-a-home-organization"></a><span data-ttu-id="4f4a9-102">作成またはホーム組織を編集します。</span><span class="sxs-lookup"><span data-stu-id="4f4a9-102">Creating or Editing a Home Organization</span></span>
 <span data-ttu-id="4f4a9-103">ここでは、ホーム組織の作成方法または編集方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4f4a9-103">This topic describes how to create or edit a home organization.</span></span> <span data-ttu-id="4f4a9-104">ホーム組織の構成では、組織の説明と分類、発信元の否認不可期間の設定、および連絡先情報の提供を行います。</span><span class="sxs-lookup"><span data-stu-id="4f4a9-104">The home organization configuration describes and classifies the organization, sets the non-repudiation of origin period, and provides contact information.</span></span>  
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="4f4a9-159">新しいホーム組織のプロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブで、設定値を入力します。</span><span class="sxs-lookup"><span data-stu-id="4f4a9-159">In the New Home Organization Properties dialog box, on the **General** and **Contact Properties** tabs, enter values for settings.</span></span> <span data-ttu-id="4f4a9-160">これらの設定の詳細については、上の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4f4a9-160">For information about these settings, see the preceding table.</span></span>  
   
-5.  <span data-ttu-id="4f4a9-161">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f4a9-161">Click **OK**.</span></span>  
+5.  <span data-ttu-id="4f4a9-161">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f4a9-161">Click **OK**.</span></span>  
   
 ### <a name="to-edit-a-home-organization"></a><span data-ttu-id="4f4a9-162">ホーム組織を編集するには</span><span class="sxs-lookup"><span data-stu-id="4f4a9-162">To edit a home organization</span></span>  
   
@@ -68,9 +69,9 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="4f4a9-166">編集、およびをクリックするホーム組織を右クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="4f4a9-166">Right-click the home organization you want to edit, and then click **Properties**.</span></span>  
   
-5.  <span data-ttu-id="4f4a9-167">*\<ホーム組織\>*プロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブは必要に応じて設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="4f4a9-167">In the *\<home organization\>* Properties dialog box, on the **General** and **Contact Properties** tabs, change the settings as needed.</span></span> <span data-ttu-id="4f4a9-168">これらの設定の詳細については、上の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4f4a9-168">For information about these settings, see the preceding table.</span></span>  
+5.  <span data-ttu-id="4f4a9-167">*\<ホーム組織\>* プロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブは必要に応じて設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="4f4a9-167">In the *\<home organization\>* Properties dialog box, on the **General** and **Contact Properties** tabs, change the settings as needed.</span></span> <span data-ttu-id="4f4a9-168">これらの設定の詳細については、上の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4f4a9-168">For information about these settings, see the preceding table.</span></span>  
   
-6.  <span data-ttu-id="4f4a9-169">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f4a9-169">Click **OK**.</span></span>  
+6.  <span data-ttu-id="4f4a9-169">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f4a9-169">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="4f4a9-170">参照</span><span class="sxs-lookup"><span data-stu-id="4f4a9-170">See Also</span></span>  
  <span data-ttu-id="4f4a9-171">[構成、証明書、データベース、およびセキュリティを管理します。](manage-configuration-certificates-databases-security.md) </span><span class="sxs-lookup"><span data-stu-id="4f4a9-171">[Manage configuration, certificates, databases, and security](manage-configuration-certificates-databases-security.md) </span></span>  

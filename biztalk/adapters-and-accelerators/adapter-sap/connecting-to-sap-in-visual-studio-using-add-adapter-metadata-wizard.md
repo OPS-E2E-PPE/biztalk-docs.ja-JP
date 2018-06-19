@@ -1,14 +1,14 @@
 ---
-title: "アダプター メタデータのウィザードを追加する Visual Studio を使用して SAP への接続 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター メタデータのウィザードを追加する Visual Studio を使用して SAP への接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a442837b-e7d8-4edb-9c5e-5603d4c58fe5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966240"
 ---
 # <a name="connecting-to-sap-in-visual-studio-using-add-adapter-metadata-wizard"></a><span data-ttu-id="5e7e4-102">アダプター メタデータのウィザードを追加する Visual Studio を使用して SAP への接続</span><span class="sxs-lookup"><span data-stu-id="5e7e4-102">Connecting to SAP in Visual Studio Using Add Adapter Metadata Wizard</span></span>
 <span data-ttu-id="5e7e4-103">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]は BizTalk アダプターとしても公開し、そのため、使用することができます、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]アダプターを使用して SAP システム上で実行する操作のスキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-103">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] is also exposed as a BizTalk adapter and hence, you can use the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] to generate schema for the operations you want to perform on an SAP system using the adapter.</span></span>  
@@ -39,14 +40,14 @@ ms.lasthandoff: 11/28/2017
         |<span data-ttu-id="5e7e4-113">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="5e7e4-113">**Categories**</span></span>|<span data-ttu-id="5e7e4-114">をクリックして**アダプターを追加**です。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-114">Click **Add Adapter**.</span></span>|  
         |<span data-ttu-id="5e7e4-115">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="5e7e4-115">**Templates**</span></span>|<span data-ttu-id="5e7e4-116">をクリックして**アダプター メタデータの追加**です。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-116">Click **Add Adapter Metadata**.</span></span>|  
   
-    4.  <span data-ttu-id="5e7e4-117">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-117">Click **Add**.</span></span> <span data-ttu-id="5e7e4-118">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-118">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
+    4.  <span data-ttu-id="5e7e4-117">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-117">Click **Add**.</span></span> <span data-ttu-id="5e7e4-118">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-118">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
   
     5.  <span data-ttu-id="5e7e4-119">アダプターの追加ウィザードで選択**WCF SAP**です。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-119">In the Add Adapter Wizard, select **WCF-SAP**.</span></span> <span data-ttu-id="5e7e4-120">コンピューターを選択して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]がインストールされていると、BizTalk データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-120">Select the computer on which [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] is installed and the name of the BizTalk database.</span></span>  
   
         > [!IMPORTANT]
         >  <span data-ttu-id="5e7e4-121">BizTalk で構成されている WCF SAP ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-121">If you already have a WCF-SAP port configured in BizTalk, select the port from the **Port** list.</span></span>  
   
-    6.  <span data-ttu-id="5e7e4-122">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-122">Click **Next**.</span></span>  
+    6.  <span data-ttu-id="5e7e4-122">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-122">Click **Next**.</span></span>  
   
 2.  <span data-ttu-id="5e7e4-123">**バインディングを選択**ドロップダウン リスト、選択**sapBinding**  をクリック**構成**です。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-123">From the **Select a binding** drop-down list, select **sapBinding** and click **Configure**.</span></span>  
   
@@ -75,9 +76,9 @@ ms.lasthandoff: 11/28/2017
     >   
     >  <span data-ttu-id="5e7e4-143">**SncPartnerName**通信パートナーの SNC 名を取得するプロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-143">The **SncPartnerName** binding property takes the SNC name of the communication partner.</span></span>  
   
-6.  <span data-ttu-id="5e7e4-144">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-144">Click **OK**.</span></span>  
+6.  <span data-ttu-id="5e7e4-144">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-144">Click **OK**.</span></span>  
   
-7.  <span data-ttu-id="5e7e4-145">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-145">Click **Connect**.</span></span> <span data-ttu-id="5e7e4-146">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-146">After the connection is established, the connection status is shown as **Connected**.</span></span>  
+7.  <span data-ttu-id="5e7e4-145">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-145">Click **Connect**.</span></span> <span data-ttu-id="5e7e4-146">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-146">After the connection is established, the connection status is shown as **Connected**.</span></span>  
   
      <span data-ttu-id="5e7e4-147">次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-147">The following figure shows the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] immediately after the connection is established.</span></span> <span data-ttu-id="5e7e4-148">グラフィカル ユーザー インターフェイスが同じ、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="5e7e4-148">The graphical user interface is same for the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)].</span></span>  
   

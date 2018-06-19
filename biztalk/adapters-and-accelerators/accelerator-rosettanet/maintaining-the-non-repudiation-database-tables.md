@@ -1,11 +1,11 @@
 ---
-title: "否認不可データベース テーブルの保守 |Microsoft ドキュメント"
-ms.custom: 
+title: 否認不可データベース テーブルの保守 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - databases, purging
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - databases, maintaining
 - non-repudiation, database
 ms.assetid: 29222510-325b-4cd7-854b-6f548a63fd08
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210610"
 ---
 # <a name="maintaining-the-non-repudiation-database-tables"></a><span data-ttu-id="6d839-102">否認不可データベース テーブルの保守</span><span class="sxs-lookup"><span data-stu-id="6d839-102">Maintaining the Non-Repudiation Database Tables</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="6d839-103">[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]否認不可を目的として、BTARNArchive データベースの MessageStorageIn と MessageStorageOut テーブルでのメッセージを格納します。</span><span class="sxs-lookup"><span data-stu-id="6d839-103"> [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] stores messages for non-repudiation purposes in the MessageStorageIn and MessageStorageOut tables of the BTARNArchive database.</span></span> <span data-ttu-id="6d839-104">これらのテーブルに含まれるメッセージの多くは、システム パフォーマンスに影響する場合があります。</span><span class="sxs-lookup"><span data-stu-id="6d839-104">Many messages in these tables can affect system performance.</span></span> <span data-ttu-id="6d839-105">必要に応じてこれらのテーブルから定期的にメッセージを消去およびアーカイブすることにより、これらの否認不可データベース テーブルを維持することができます。</span><span class="sxs-lookup"><span data-stu-id="6d839-105">You may want to maintain these non-repudiation database tables by periodically purging and archiving messages from these tables, as appropriate.</span></span>  

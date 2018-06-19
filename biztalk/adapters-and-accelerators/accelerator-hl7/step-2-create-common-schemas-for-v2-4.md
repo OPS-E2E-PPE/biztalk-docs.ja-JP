@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960712"
 ---
 # <a name="step-2-create-common-schemas-for-v24"></a><span data-ttu-id="2184d-102">手順 2: V2.4 の一般的なスキーマを作成します。</span><span class="sxs-lookup"><span data-stu-id="2184d-102">Step 2: Create Common Schemas for V2.4</span></span>
 <span data-ttu-id="2184d-103">V2.4 スキーマは、頻繁に参照されるスキーマは、クエリと応答メッセージ インスタンスの検証に使用します。</span><span class="sxs-lookup"><span data-stu-id="2184d-103">The V2.4 schemas are commonly referenced schemas, which you use to validate the query and response message instances.</span></span>  

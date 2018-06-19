@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK を使用する場合、URI スキームとアドレス指定の形式の選択 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK を使用する場合、URI スキームとアドレス指定の形式の選択 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3bb4feee-3d39-43ca-82ac-aba38c13bc69
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965312"
 ---
 # <a name="select-a-uri-scheme-and-addressing-format-when-using-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="40162-102">WCF LOB Adapter SDK を使用する場合に、URI スキームとアドレス指定の形式を選択します。</span><span class="sxs-lookup"><span data-stu-id="40162-102">Select a URI scheme and addressing format when using the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="40162-103">Uniform Resource Identifier () は、Web サービスのようにまたはの場合、アダプターを使用して開発リソースを一意に識別、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、実行するアクションと同様に、システムに接続します。</span><span class="sxs-lookup"><span data-stu-id="40162-103">A Uniform Resource Identifier (URI) uniquely identifies resources like a Web service or, in the case of an adapter developed with the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], the system to connect to as well as the action to perform.</span></span> <span data-ttu-id="40162-104">このセクションでは、エンドポイント アドレスとアダプターのアクションを記述する URI を作成する方法の推奨事項を提供します。</span><span class="sxs-lookup"><span data-stu-id="40162-104">This section provides a recommendation on how to construct a URI to uniquely describe the endpoint address and the action for your adapter.</span></span>  

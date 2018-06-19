@@ -1,14 +1,14 @@
 ---
-title: "手順 1: UPDATE_EMPLOYEE の要求メッセージを作成するストアド プロシージャ |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: UPDATE_EMPLOYEE の要求メッセージを作成するストアド プロシージャ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4dd975d9-4b38-46e0-a926-4b325b0d7b5e
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965992"
 ---
 # <a name="step-1-create-the-request-message-for-updateemployee-stored-procedure"></a><span data-ttu-id="d55c1-102">手順 1: UPDATE_EMPLOYEE の要求メッセージを作成するストアド プロシージャ</span><span class="sxs-lookup"><span data-stu-id="d55c1-102">Step 1: Create the Request Message for UPDATE_EMPLOYEE Stored Procedure</span></span>
 <span data-ttu-id="d55c1-103">![2 の手順 1.](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")</span><span class="sxs-lookup"><span data-stu-id="d55c1-103">![Step 1 of 2](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")</span></span>  
@@ -89,7 +90,7 @@ ms.lasthandoff: 11/28/2017
   
     3.  <span data-ttu-id="d55c1-121">**署名**] タブで、[、**アセンブリに署名**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="d55c1-121">In the **Signing** tab, select the **Sign the assembly** check box.</span></span>  
   
-    4.  <span data-ttu-id="d55c1-122">**厳密な名前キー ファイルを選択して**一覧で、クリックして**\<参照\>**です。</span><span class="sxs-lookup"><span data-stu-id="d55c1-122">From the **Choose a strong-name key file** list, click **\<Browse\>**.</span></span>  
+    4.  <span data-ttu-id="d55c1-122">**厳密な名前キー ファイルを選択して**一覧で、クリックして**\<参照\>** です。</span><span class="sxs-lookup"><span data-stu-id="d55c1-122">From the **Choose a strong-name key file** list, click **\<Browse\>**.</span></span>  
   
     5.  <span data-ttu-id="d55c1-123">厳密な名前のキー ファイルを作成したフォルダーに移動し、をクリックして**開く**です。</span><span class="sxs-lookup"><span data-stu-id="d55c1-123">Navigate to the folder where you created the strong-name key file, and then click **Open**.</span></span>  
   

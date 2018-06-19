@@ -1,18 +1,18 @@
 ---
-title: "手順 5: Contoso 3 a 2 取引を作成するパートナーの契約 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: Contoso 3 a 2 取引を作成するパートナーの契約 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - agreements, creating
 - creating, agreements
 - double action tutorial, creating agreements
 ms.assetid: 5c602c9c-22bd-450f-bb14-6848b1414c03
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964712"
 ---
 # <a name="step-5-creating-the-contoso-3a2-trading-partner-agreement"></a><span data-ttu-id="9f073-102">手順 5: Contoso 3 a 2 取引先アグリーメントの作成</span><span class="sxs-lookup"><span data-stu-id="9f073-102">Step 5: Creating the Contoso 3A2 Trading Partner Agreement</span></span>
 <span data-ttu-id="9f073-103">ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールを使用して、Contoso と Fabrikam の間の取引先アグリーメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="9f073-103">In this step, you create a trading partner agreement between Contoso and Fabrikam using the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Management Console.</span></span> <span data-ttu-id="9f073-104">3A2 PIP (Partner Interface Process) のための新しい取引先アグリーメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="9f073-104">You create a new trading partner agreement for the 3A2 Partner Interface Process (PIP).</span></span>  
@@ -41,8 +42,8 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="9f073-114">**プロセスの構成**</span><span class="sxs-lookup"><span data-stu-id="9f073-114">**Process Configuration**</span></span>|<span data-ttu-id="9f073-115">選択**STD_3A2_R02.00.00A**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="9f073-115">Select **STD_3A2_R02.00.00A** from the drop-down list.</span></span>|  
     |<span data-ttu-id="9f073-116">**自分の所属組織**</span><span class="sxs-lookup"><span data-stu-id="9f073-116">**My Organization**</span></span>|<span data-ttu-id="9f073-117">選択**Contoso**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="9f073-117">Select **Contoso** from the drop-down list.</span></span>|  
     |<span data-ttu-id="9f073-118">**パートナー組織**</span><span class="sxs-lookup"><span data-stu-id="9f073-118">**Partner Organization**</span></span>|<span data-ttu-id="9f073-119">選択**Fabrikam**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="9f073-119">Select **Fabrikam** from the drop-down list.</span></span>|  
-    |<span data-ttu-id="9f073-120">**RNIF のバージョン**</span><span class="sxs-lookup"><span data-stu-id="9f073-120">**RNIF Version**</span></span>|<span data-ttu-id="9f073-121">選択**[v02.00.01]**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="9f073-121">Select **V02.00.01** from the drop-down list.</span></span>|  
-    |<span data-ttu-id="9f073-122">**ホーム ロール**</span><span class="sxs-lookup"><span data-stu-id="9f073-122">**Home Role**</span></span>|<span data-ttu-id="9f073-123">選択**Product Supplier (応答側)**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="9f073-123">Select **Product Supplier (Responder)** from the drop-down list.</span></span>|  
+    |<span data-ttu-id="9f073-120">**RNIF のバージョン**</span><span class="sxs-lookup"><span data-stu-id="9f073-120">**RNIF Version**</span></span>|<span data-ttu-id="9f073-121">選択 **[v02.00.01]** ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="9f073-121">Select **V02.00.01** from the drop-down list.</span></span>|  
+    |<span data-ttu-id="9f073-122">**ホーム ロール**</span><span class="sxs-lookup"><span data-stu-id="9f073-122">**Home Role**</span></span>|<span data-ttu-id="9f073-123">選択**Product Supplier (応答側)** ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="9f073-123">Select **Product Supplier (Responder)** from the drop-down list.</span></span>|  
     |<span data-ttu-id="9f073-124">**使用方法**</span><span class="sxs-lookup"><span data-stu-id="9f073-124">**Usage**</span></span>|<span data-ttu-id="9f073-125">選択**テスト**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="9f073-125">Select **Test** from the drop-down list.</span></span>|  
   
 3.  <span data-ttu-id="9f073-126">クリックして、**ポート**タブをクリックし、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="9f073-126">Click the **Ports** tab, and then do the following:</span></span>  
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="9f073-131">**シグナル URL**</span><span class="sxs-lookup"><span data-stu-id="9f073-131">**Signal URL**</span></span>|<span data-ttu-id="9f073-132">型**https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span><span class="sxs-lookup"><span data-stu-id="9f073-132">Type **https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span></span>|  
     |<span data-ttu-id="9f073-133">**同期 URL**</span><span class="sxs-lookup"><span data-stu-id="9f073-133">**Sync URL**</span></span>|<span data-ttu-id="9f073-134">型**https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span><span class="sxs-lookup"><span data-stu-id="9f073-134">Type **https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span></span>|  
   
-4.  <span data-ttu-id="9f073-135">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9f073-135">Click **OK**.</span></span>  
+4.  <span data-ttu-id="9f073-135">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9f073-135">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="9f073-136">右クリックし、 **Fabrikam_To_Contoso_3A2**アグリーメント、およびクリック**Activate**です。</span><span class="sxs-lookup"><span data-stu-id="9f073-136">Right-click the **Fabrikam_To_Contoso_3A2** agreement, and then click **Activate**.</span></span>  
   

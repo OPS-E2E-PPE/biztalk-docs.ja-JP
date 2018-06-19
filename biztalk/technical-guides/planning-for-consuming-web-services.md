@@ -1,14 +1,14 @@
 ---
-title: "Web サービスを使用するための計画 |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスを使用するための計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 24863069-929b-4b0b-9643-073965fb5532
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302274"
 ---
 # <a name="planning-for-consuming-web-services"></a><span data-ttu-id="c230a-102">Web サービスを使用の計画</span><span class="sxs-lookup"><span data-stu-id="c230a-102">Planning for Consuming Web Services</span></span>
 <span data-ttu-id="c230a-103">Web サービスの計画は、Web サービスを公開し、Web サービスの使用を計画の計画、2 つのカテゴリに分けることができます。</span><span class="sxs-lookup"><span data-stu-id="c230a-103">Planning for Web services can be divided into two categories, planning for publishing Web services and planning for consuming Web services.</span></span> <span data-ttu-id="c230a-104">このトピックでは、Web サービスの使用に関する考慮事項について説明します。</span><span class="sxs-lookup"><span data-stu-id="c230a-104">This topic describes the considerations for consuming Web services.</span></span> <span data-ttu-id="c230a-105">Web サービスを発行する方法については、次を参照してください。 [Planning for Publishing Web Services1](../technical-guides/planning-for-publishing-web-services1.md)です。</span><span class="sxs-lookup"><span data-stu-id="c230a-105">For information about publishing Web services, see [Planning for Publishing Web Services1](../technical-guides/planning-for-publishing-web-services1.md).</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 09/20/2017
      <span data-ttu-id="c230a-130">BizTalk Server では、BizTalk Server Web サービスではない Web サービスによって公開される 1 次元配列およびジャグ配列を使用できます。</span><span class="sxs-lookup"><span data-stu-id="c230a-130">BizTalk Server can consume one dimensional and jagged arrays exposed by Web services that are not BizTalk Server Web services.</span></span> <span data-ttu-id="c230a-131">Web サービスの配列を使用する方法の詳細については、次を参照してください。 [Web サービスの配列を使用する方法](http://go.microsoft.com/fwlink/?LinkId=155766)(http://go.microsoft.com/fwlink/?LinkId=155766)。</span><span class="sxs-lookup"><span data-stu-id="c230a-131">For more information about how to consume Web service arrays, see [How to Consume Web Service Arrays](http://go.microsoft.com/fwlink/?LinkId=155766) (http://go.microsoft.com/fwlink/?LinkId=155766).</span></span>  
   
     > [!NOTE]  
-    >  <span data-ttu-id="c230a-132">多次元配列の構文はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c230a-132">Multi dimensional array syntax is not supported.</span></span> <span data-ttu-id="c230a-133">たとえば、 *MyArray [「1, 5]*です。</span><span class="sxs-lookup"><span data-stu-id="c230a-133">For example, *MyArray[1,5]*.</span></span>  
+    >  <span data-ttu-id="c230a-132">多次元配列の構文はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c230a-132">Multi dimensional array syntax is not supported.</span></span> <span data-ttu-id="c230a-133">たとえば、 *MyArray [「1, 5]* です。</span><span class="sxs-lookup"><span data-stu-id="c230a-133">For example, *MyArray[1,5]*.</span></span>  
   
     > [!NOTE]  
     >  <span data-ttu-id="c230a-134">BizTalk Server がの配列の使用をサポートしていません**データセット**Web サービスによって公開されているオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="c230a-134">BizTalk Server does not support consuming an array of **DataSet** objects exposed by a Web service.</span></span> <span data-ttu-id="c230a-135">Xlang/s サブサービスは、.NET DataSet クラスでは、ネイティブでサポートが、.NET DataSet オブジェクトの配列を公開する Web サービスへの Web 参照を含む BizTalk プロジェクトを作成する場合、プロジェクトをコンパイルしようとするエラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c230a-135">The XLANG/s subservice does natively support the .NET DataSet class, but if you create a BizTalk project that contains a Web reference to a Web service that exposes an array of .NET DataSet objects you will get errors when you attempt to compile the project.</span></span>  
@@ -81,7 +82,7 @@ ms.lasthandoff: 09/20/2017
      <span data-ttu-id="c230a-146">プログラムを使って、構成プロパティをメッセージ コンテキストに設定できます。</span><span class="sxs-lookup"><span data-stu-id="c230a-146">It is possible to set configuration properties programmatically on the message context.</span></span> <span data-ttu-id="c230a-147">送信ポートが静的か動的かどうかは、オーケストレーションまたはカスタム パイプライン コンポーネントでこれらのプロパティを設定できます。</span><span class="sxs-lookup"><span data-stu-id="c230a-147">You can set these properties in an orchestration or a custom pipeline component whether the send port is static or dynamic.</span></span>  
   
     > [!NOTE]  
-    >  <span data-ttu-id="c230a-148">構成するのには**MethodName**プロパティの静的 SOAP 送信ポートがプログラムで、設定する必要があります**メソッド名**に**[後で指定]**で、 **Webサービス**のタブ、 **SOAP トランスポートのプロパティ**ダイアログ ボックスで、BizTalk Server 管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="c230a-148">To configure the **MethodName** property for the static SOAP send port programmatically, you need to set **Method name** to **[Specify Later]** in the **Web Service** tab of the **SOAP Transport Properties** dialog box in the BizTalk Server Administration console.</span></span>  
+    >  <span data-ttu-id="c230a-148">構成するのには**MethodName**プロパティの静的 SOAP 送信ポートがプログラムで、設定する必要があります**メソッド名**に **[後で指定]** で、 **Webサービス**のタブ、 **SOAP トランスポートのプロパティ**ダイアログ ボックスで、BizTalk Server 管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="c230a-148">To configure the **MethodName** property for the static SOAP send port programmatically, you need to set **Method name** to **[Specify Later]** in the **Web Service** tab of the **SOAP Transport Properties** dialog box in the BizTalk Server Administration console.</span></span>  
   
      <span data-ttu-id="c230a-149">詳細については、 **MethodName**プロパティを参照してください[を消費する Web サービスの URI を動的に設定する方法](http://go.microsoft.com/fwlink/?LinkID=155768)(http://go.microsoft.com/fwlink/?LinkID=155768)。</span><span class="sxs-lookup"><span data-stu-id="c230a-149">For more information about the **MethodName** property, see [How to Dynamically Set the URI of a Consumed Web Service](http://go.microsoft.com/fwlink/?LinkID=155768) (http://go.microsoft.com/fwlink/?LinkID=155768).</span></span>  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="c230a-179">Web メソッドが必要**SoapDocumentMethodAttribute**の代わりに**ください**です。</span><span class="sxs-lookup"><span data-stu-id="c230a-179">Web methods should have **SoapDocumentMethodAttribute** instead of **SoapRpcMethodAttribute**.</span></span>  
   
-    -   <span data-ttu-id="c230a-180">Web サービスおよびメソッドを使用する必要があります、**リテラル**の代わりにバインド**Encoded**など**[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**です。</span><span class="sxs-lookup"><span data-stu-id="c230a-180">Web services and methods must use the **Literal** binding instead of **Encoded** such as **[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**.</span></span>  
+    -   <span data-ttu-id="c230a-180">Web サービスおよびメソッドを使用する必要があります、**リテラル**の代わりにバインド**Encoded**など **[SoapDocumentMethod(Use=SoapBindingUse.Literal)]** です。</span><span class="sxs-lookup"><span data-stu-id="c230a-180">Web services and methods must use the **Literal** binding instead of **Encoded** such as **[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**.</span></span>  
   
     -   <span data-ttu-id="c230a-181">Web メソッドのパラメータと戻り値の型**XmlRootAttribute** 、有効な**Namespace**プロパティ ネイティブ XSD 型、および XmlNode 型でない限り、します。</span><span class="sxs-lookup"><span data-stu-id="c230a-181">Web method parameters and return types must have **XmlRootAttribute** with a valid **Namespace** property unless they are native XSD types and the XmlNode type.</span></span>  
   

@@ -1,17 +1,17 @@
 ---
-title: "手順 11: オーケストレーション変数を作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 11: オーケストレーション変数を作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, variables
 - message enrichment tutorial, orchestrations
 ms.assetid: 3d1f792d-fe74-4373-86fa-3debda55e732
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962248"
 ---
 # <a name="step-11-create-orchestration-variables"></a><span data-ttu-id="e2bf7-102">手順 11: オーケストレーション変数を作成します。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-102">Step 11: Create Orchestration Variables</span></span>
 <span data-ttu-id="e2bf7-103">このステップでは、オーケストレーションによって送受信されたメッセージ インスタンスのオーケストレーション変数を作成します。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-103">In this step, you create the orchestration variables for the message instances sent and received by the orchestration.</span></span>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="e2bf7-129">1 回作成し、メッセージ部分をという名前を変更しないこと。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-129">Once you have created and named the message parts, do not rename them.</span></span> <span data-ttu-id="e2bf7-130">必要に応じて、古いボディ部を削除し、新しい名前で新しいボディ部を作成します。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-130">If necessary, delete the old body part, and create a new body part with a new name.</span></span>  
   
-9. <span data-ttu-id="e2bf7-131">**型**ウィンドウで、**マルチパート メッセージの種類**、展開**DoorbellFinalMessageType**、順にクリック**MessagePart_1**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-131">In the **Types** window, under **Multi-part Message Types**, expand **DoorbellFinalMessageType**, and then click **MessagePart_1**.</span></span> <span data-ttu-id="e2bf7-132">**プロパティ** ウィンドウで、入力**MSHSegment**の**識別子**、キーを押します**Enter**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-132">In the **Properties** pane, enter **MSHSegment** for **Identifier**, and then press **Enter**.</span></span> <span data-ttu-id="e2bf7-133">ドロップダウン リストで**型**、展開**.NET クラス**、クリックして\<**参照されたアセンブリから選択\>**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-133">In the drop-down list for **Type**, expand **.NET Classes**, and then click \<**Select from referenced assemblies\>**.</span></span>  
+9. <span data-ttu-id="e2bf7-131">**型**ウィンドウで、**マルチパート メッセージの種類**、展開**DoorbellFinalMessageType**、順にクリック**MessagePart_1**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-131">In the **Types** window, under **Multi-part Message Types**, expand **DoorbellFinalMessageType**, and then click **MessagePart_1**.</span></span> <span data-ttu-id="e2bf7-132">**プロパティ** ウィンドウで、入力**MSHSegment**の**識別子**、キーを押します**Enter**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-132">In the **Properties** pane, enter **MSHSegment** for **Identifier**, and then press **Enter**.</span></span> <span data-ttu-id="e2bf7-133">ドロップダウン リストで**型**、展開 **.NET クラス**、クリックして\<**参照されたアセンブリから選択\>** です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-133">In the drop-down list for **Type**, expand **.NET Classes**, and then click \<**Select from referenced assemblies\>**.</span></span>  
   
 10. <span data-ttu-id="e2bf7-134">**成果物の種類の選択**ダイアログ ボックスで、左側のウィンドウでをクリックして**System.Xml**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-134">In the **Select Artifact Type** dialog box, in the left pane, click **System.Xml**.</span></span> <span data-ttu-id="e2bf7-135">右側のウィンドウでをクリックして**XmlDocument**、クリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-135">In the right pane, click **XmlDocument**, and then click **OK**.</span></span>  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 11/28/2017
   
 14. <span data-ttu-id="e2bf7-140">**オーケストレーション**ウィンドウを右クリックして**DoorbellFinalMessageType**、順にクリック**新しいメッセージ部分**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-140">In the **Orchestration View** window, right-click **DoorbellFinalMessageType**, and then click **New Message Part**.</span></span>  
   
-15. <span data-ttu-id="e2bf7-141">**プロパティ** ウィンドウで、入力**ZSegments**の**識別子**、キーを押します**Enter**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-141">In the **Properties** pane, enter **ZSegments** for **Identifier**, and then press **Enter**.</span></span> <span data-ttu-id="e2bf7-142">をクリックして**型**、展開**.NET クラス**、順にクリック**System.String**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-142">Click **Type**, expand **.NET Classes**, and then click **System.String** from the drop-down list.</span></span>  
+15. <span data-ttu-id="e2bf7-141">**プロパティ** ウィンドウで、入力**ZSegments**の**識別子**、キーを押します**Enter**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-141">In the **Properties** pane, enter **ZSegments** for **Identifier**, and then press **Enter**.</span></span> <span data-ttu-id="e2bf7-142">をクリックして**型**、展開 **.NET クラス**、順にクリック**System.String**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-142">Click **Type**, expand **.NET Classes**, and then click **System.String** from the drop-down list.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="e2bf7-143">使用する**System.String** Z が Z セグメントには、スキーマに準拠する必要のない文字列データが含まれているために、メッセージ部分をセグメントのです。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-143">You use **System.String** for the Z segments message part, because a Z segment contains string data that does not need to conform to a schema.</span></span>  
@@ -90,7 +91,7 @@ ms.lasthandoff: 11/28/2017
   
 18. <span data-ttu-id="e2bf7-147">**オーケストレーション**ウィンドウを右クリックして**変数**、順にクリック**新しい変数**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-147">In the **Orchestration View** window, right-click **Variables**, and then click **New Variable**.</span></span>  
   
-19. <span data-ttu-id="e2bf7-148">**プロパティ** ウィンドウで、入力**HeaderInfo**の**識別子**、キーを押します**Enter**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-148">In the **Properties** pane, enter **HeaderInfo** for **Identifier**, then press **Enter**.</span></span> <span data-ttu-id="e2bf7-149">ドロップダウン リストで**型**をダブルクリックして\< **.NET クラス\>**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-149">In the drop-down list for **Type**, double-click \<**.NET Class\>**.</span></span>  
+19. <span data-ttu-id="e2bf7-148">**プロパティ** ウィンドウで、入力**HeaderInfo**の**識別子**、キーを押します**Enter**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-148">In the **Properties** pane, enter **HeaderInfo** for **Identifier**, then press **Enter**.</span></span> <span data-ttu-id="e2bf7-149">ドロップダウン リストで**型**をダブルクリックして\< **.NET クラス\>** です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-149">In the drop-down list for **Type**, double-click \<**.NET Class\>**.</span></span>  
   
 20. <span data-ttu-id="e2bf7-150">**成果物の種類の選択**ウィンドウの左側のウィンドウでをクリックして**System.Xml**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-150">In the **Select Artifact Type** window, in the left pane, click **System.Xml**.</span></span> <span data-ttu-id="e2bf7-151">右側のウィンドウでをクリックして**XmlDocument**、クリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="e2bf7-151">In the right pane, click **XmlDocument**, and then click **OK**.</span></span>  
   

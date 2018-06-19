@@ -11,7 +11,7 @@ helpviewer_keywords:
 - naming conventions [schemas]
 - schemas, naming conventions
 ms.assetid: 3c1f2519-2575-4178-89c1-e97333c1e6bd
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25960824"
 ---
 # <a name="swift-schema-naming-conventions"></a><span data-ttu-id="ebf08-102">SWIFT スキーマの名前付け規則</span><span class="sxs-lookup"><span data-stu-id="ebf08-102">SWIFT Schema Naming Conventions</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="ebf08-103"> [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] BizTalk エディターを使用して作成された世界銀行間財務通信 (SWIFT) FIN メッセージの社会のスキーマが含まれています。</span><span class="sxs-lookup"><span data-stu-id="ebf08-103"> [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] includes schemas for Society for Worldwide Interbank Financial Telecommunication (SWIFT) FIN messages that were created using BizTalk Editor.</span></span> <span data-ttu-id="ebf08-104">これらのスキーマは、全体で、次の規則に従います。</span><span class="sxs-lookup"><span data-stu-id="ebf08-104">These schemas conform to the following conventions throughout:</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 03/28/2018
   
 -   <span data-ttu-id="ebf08-111">ルートの名前は、各メッセージ スキーマ内で**SWIFT_CATEGORY*z*_MT*zxx*_Interchange**ここで、 *z*は、メッセージ カテゴリ (メッセージの種類の最初の桁) および*zxx*は、メッセージ型です。</span><span class="sxs-lookup"><span data-stu-id="ebf08-111">Within each message schema, the name of the root is **SWIFT_CATEGORY*z*_MT*zxx*_Interchange**, where *z* is the message category (first digit of the message type) and *zxx* is the message type.</span></span>  
   
--   <span data-ttu-id="ebf08-112">各メッセージ スキーマのターゲット名前空間は **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/Category*z*/MT*zxx * * *、どこ*z*メッセージ カテゴリ (メッセージの種類の最初の桁) および*zxx*は、メッセージ型です。</span><span class="sxs-lookup"><span data-stu-id="ebf08-112">The target namespace for each message schema is **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/Category*z*/MT*zxx***, where *z* is the message category (first digit of the message type) and *zxx* is the message type.</span></span>  
+-   <span data-ttu-id="ebf08-112">各メッセージ スキーマのターゲット名前空間は **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/Category*z */MT*zxx * * *、どこ*z*メッセージ カテゴリ (メッセージの種類の最初の桁) および*zxx*は、メッセージ型です。</span><span class="sxs-lookup"><span data-stu-id="ebf08-112">The target namespace for each message schema is **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/Category*z */MT*zxx***, where *z* is the message category (first digit of the message type) and *zxx* is the message type.</span></span>  
   
 -   <span data-ttu-id="ebf08-113">ドキュメントの種類が **MT*zxx * * *、どこ*zxx*は、メッセージ型です。</span><span class="sxs-lookup"><span data-stu-id="ebf08-113">The document type is **MT*zxx***, where *zxx* is the message type.</span></span>  
   

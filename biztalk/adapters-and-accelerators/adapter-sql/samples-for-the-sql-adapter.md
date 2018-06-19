@@ -1,15 +1,15 @@
 ---
-title: "SQL アダプタ サンプル |Microsoft ドキュメント"
-description: "BizTalk Server、WCF サービス モデル、および WCF チャネル モデルで使用できる SQL WCF アダプタのサンプル"
-ms.custom: 
+title: SQL アダプタ サンプル |Microsoft ドキュメント
+description: BizTalk Server、WCF サービス モデル、および WCF チャネル モデルで使用できる SQL WCF アダプタのサンプル
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f2438696-bc51-46df-81ca-00c17a52736e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013945"
 ---
 # <a name="samples-for-the-sql-adapter"></a><span data-ttu-id="0bdfc-103">SQL アダプタのサンプル</span><span class="sxs-lookup"><span data-stu-id="0bdfc-103">Samples for the SQL adapter</span></span>
 

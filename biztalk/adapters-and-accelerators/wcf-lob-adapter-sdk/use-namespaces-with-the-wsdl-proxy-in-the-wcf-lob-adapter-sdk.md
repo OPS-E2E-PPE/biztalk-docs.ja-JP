@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK の WSDL プロキシを使用して名前空間を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK の WSDL プロキシを使用して名前空間を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 781d20fa-83e3-42fa-866e-5650d5eb71a7
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965048"
 ---
 # <a name="use-namespaces-with-the-wsdl-proxy-in-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="0087e-102">WCF LOB Adapter SDK の WSDL プロキシで使用する名前空間</span><span class="sxs-lookup"><span data-stu-id="0087e-102">Use namespaces with the WSDL-Proxy in the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="0087e-103">[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] WSDL とプロキシを使用して、開発者によって指定された値を使用してアダプターを生成、 [!INCLUDE[afdevwizardnamelong](../../includes/afdevwizardnamelong-md.md)] SERVICENAMESPACE プライベート変数の変更を使用してコードで指定されているか、または`Namespace`アダプターのプロパティです。</span><span class="sxs-lookup"><span data-stu-id="0087e-103">The [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] generates WSDL and proxies for an adapter using values supplied by the developer using the [!INCLUDE[afdevwizardnamelong](../../includes/afdevwizardnamelong-md.md)] or specified in code through modification of the SERVICENAMESPACE private variable and/or the `Namespace` property of the adapter.</span></span>  

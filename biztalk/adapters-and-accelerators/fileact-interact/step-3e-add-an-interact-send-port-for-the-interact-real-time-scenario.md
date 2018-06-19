@@ -1,14 +1,14 @@
 ---
-title: "ステップ 3 e: 対話する送信ポートの追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント"
-ms.custom: 
+title: 'ステップ 3 e: 対話する送信ポートの追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d9522386-e980-4ab1-b65a-939ca7936ad9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965984"
 ---
 # <a name="step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario"></a><span data-ttu-id="6cb31-102">ステップ 3 e: 対話する送信ポートの追加、リアルタイムのシナリオの対話</span><span class="sxs-lookup"><span data-stu-id="6cb31-102">Step 3E: Add an INTERACT Send Port for the InterAct Real-Time Scenario</span></span>
 <span data-ttu-id="6cb31-103">完全な[ステップ 3 D: リアルタイム シナリオでは対話 Sw:HandleResponse メッセージをキャプチャする FILE 送信ポートを追加](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)この手順を開始する前にします。</span><span class="sxs-lookup"><span data-stu-id="6cb31-103">Complete [Step 3D: Add a FILE Send Port to Capture the Sw:HandleResponse Message for the InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md) before you begin this step.</span></span>
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="6cb31-137">ペイロードは、転送するのには、専用の場合は、ポートと対話する送信ポートが受信"Payloadonly"で、対話する MessageFormat を設定します。</span><span class="sxs-lookup"><span data-stu-id="6cb31-137">If only payload is to be transferred, set the MessageFormat to “Payloadonly” in the INTERACT receive port and INTERACT send port.</span></span> <span data-ttu-id="6cb31-138">受信の設定し、送信パイプラインをパススルーします。</span><span class="sxs-lookup"><span data-stu-id="6cb31-138">Set the receive and send pipelines to PassThru.</span></span>  
   
-7.  <span data-ttu-id="6cb31-139">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6cb31-139">Click **OK**.</span></span>  
+7.  <span data-ttu-id="6cb31-139">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6cb31-139">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="6cb31-140">**送信ポートのプロパティ** ウィンドウで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="6cb31-140">In the **Send Port Properties** window, do the following:</span></span>  
   
@@ -68,11 +69,11 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="6cb31-150">**これを使用してください。**</span><span class="sxs-lookup"><span data-stu-id="6cb31-150">**Use this**</span></span>|<span data-ttu-id="6cb31-151">**これを行う**</span><span class="sxs-lookup"><span data-stu-id="6cb31-151">**To do this**</span></span>|  
     |------------------|--------------------|  
     |<span data-ttu-id="6cb31-152">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="6cb31-152">**Property**</span></span>|<span data-ttu-id="6cb31-153">ドロップダウン リストから選択**BTS です。ReceivePortName**です。</span><span class="sxs-lookup"><span data-stu-id="6cb31-153">From the drop-down list, select **BTS.ReceivePortName**.</span></span>|  
-    |<span data-ttu-id="6cb31-154">**演算子**</span><span class="sxs-lookup"><span data-stu-id="6cb31-154">**Operator**</span></span>|<span data-ttu-id="6cb31-155">ドロップダウン リストから選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="6cb31-155">From the drop-down list, select **==**.</span></span>|  
+    |<span data-ttu-id="6cb31-154">**演算子**</span><span class="sxs-lookup"><span data-stu-id="6cb31-154">**Operator**</span></span>|<span data-ttu-id="6cb31-155">ドロップダウン リストから選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="6cb31-155">From the drop-down list, select **==**.</span></span>|  
     |<span data-ttu-id="6cb31-156">**値**</span><span class="sxs-lookup"><span data-stu-id="6cb31-156">**Value**</span></span>|<span data-ttu-id="6cb31-157">型**Tutorial_IA_InputRequest_RealTime**です。</span><span class="sxs-lookup"><span data-stu-id="6cb31-157">Type **Tutorial_IA_InputRequest_RealTime**.</span></span>|  
     |<span data-ttu-id="6cb31-158">**グループ化**</span><span class="sxs-lookup"><span data-stu-id="6cb31-158">**Group by**</span></span>|<span data-ttu-id="6cb31-159">既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="6cb31-159">Leave the default value.</span></span>|  
   
-10. <span data-ttu-id="6cb31-160">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6cb31-160">Click **OK**.</span></span>  
+10. <span data-ttu-id="6cb31-160">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6cb31-160">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="6cb31-161">参照</span><span class="sxs-lookup"><span data-stu-id="6cb31-161">See Also</span></span>  
  <span data-ttu-id="6cb31-162">[手順 3: が送信を作成し、受信のポート、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="6cb31-162">[Step 3: Create Send and Receive Ports for the InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md) </span></span>  

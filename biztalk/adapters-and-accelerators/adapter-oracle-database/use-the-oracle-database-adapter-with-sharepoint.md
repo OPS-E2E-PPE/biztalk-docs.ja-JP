@@ -1,14 +1,14 @@
 ---
-title: "SharePoint での Oracle データベース アダプターの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: SharePoint での Oracle データベース アダプターの使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 254204e5-3b5d-4e70-97ab-817660d1206a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23450313"
 ---
 # <a name="use-the-oracle-database-adapter-with-sharepoint"></a><span data-ttu-id="ad4eb-102">SharePoint での Oracle データベース アダプターを使用します。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-102">Use the Oracle Database Adapter with SharePoint</span></span>
 <span data-ttu-id="ad4eb-103">WCF アダプター サービス開発ウィザード[!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]Oracle データベースと、Microsoft BizTalk Adapter for Oracle E-business Suite は、Microsoft SharePoint の外部のデータ ソースと直接使用される Microsoft BizTalk Adapter を有効にします。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-103">The WCF Adapter Service Development Wizard for [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)] enables the Microsoft BizTalk Adapter for Oracle Database and the Microsoft BizTalk Adapter for Oracle E-Business Suite to be directly consumed as an external datasource in Microsoft SharePoint.</span></span> <span data-ttu-id="ad4eb-104">この機能をサポートする追加サービス開発ウィザードが起動し、 **WCF アダプタ サービス**、新しい Visual c# の Web サイトを作成するためのテンプレート[!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-104">The Add Service Development Wizard that supports this feature is launched with the **WCF Adapter Service** template for creating a new Visual C# Web Sites in [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)].</span></span> <span data-ttu-id="ad4eb-105">テンプレートが付属して、[!INCLUDE[adapterpacknoversion_md](../../includes/adapterpacknoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-105">The template is included with the [!INCLUDE[adapterpacknoversion_md](../../includes/adapterpacknoversion-md.md)].</span></span> <span data-ttu-id="ad4eb-106">また、Microsoft Windows Communication Foundation (WCF) の基幹業務 (LOB) アダプター SDK をインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-106">You must also install the Microsoft Windows Communication Foundation (WCF) Line of Business (LOB) Adapter SDK.</span></span>  
@@ -81,7 +82,7 @@ SQL> ALTER USER scott ACCOUNT UNLOCK;
   
 2.  <span data-ttu-id="ad4eb-127">Visual Studio での**ファイル**メニューの **新規**をクリックし、**プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-127">In Visual Studio, on the **File** menu, select **New** and then click **Project**.</span></span>  
   
-3.  <span data-ttu-id="ad4eb-128">**新しいプロジェクト** ダイアログ ボックスで、展開**他の言語** をクリック**Visual c#**です。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-128">In the **New Project** dialog box, expand **Other Languages** and click **Visual C#**.</span></span> <span data-ttu-id="ad4eb-129">検索、 **WCF アダプター サービス**テンプレートの一覧表示し、をクリックして選択します。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-129">Find the **WCF Adapter Service** in the template list and click it to select it.</span></span>  
+3.  <span data-ttu-id="ad4eb-128">**新しいプロジェクト** ダイアログ ボックスで、展開**他の言語** をクリック**Visual c#** です。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-128">In the **New Project** dialog box, expand **Other Languages** and click **Visual C#**.</span></span> <span data-ttu-id="ad4eb-129">検索、 **WCF アダプター サービス**テンプレートの一覧表示し、をクリックして選択します。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-129">Find the **WCF Adapter Service** in the template list and click it to select it.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="ad4eb-130">**WCF アダプタ サービス**テンプレートが利用できない場合、[!INCLUDE[adapterpackcurrent](../../includes/adapterpackcurrent-md.md)]がインストールされていません。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-130">The **WCF Adapter Service** template is not available if the [!INCLUDE[adapterpackcurrent](../../includes/adapterpackcurrent-md.md)] is not installed.</span></span> <span data-ttu-id="ad4eb-131">X64 システムでは、インストールの x86 と x64 の両方のバージョン、[!INCLUDE[adapterpackcurrent](../../includes/adapterpackcurrent-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-131">On x64 systems, install both the x86 and x64 versions of the [!INCLUDE[adapterpackcurrent](../../includes/adapterpackcurrent-md.md)].</span></span>  
@@ -143,7 +144,7 @@ SQL> ALTER USER scott ACCOUNT UNLOCK;
   
 4.  <span data-ttu-id="ad4eb-171">横にあるテキストをクリックして**名前**新しい外部コンテンツ タイプの名前を編集します。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-171">Click the text beside **Name** to edit the name of the new external content type.</span></span> <span data-ttu-id="ad4eb-172">入力**OracleEMP**名。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-172">Enter **OracleEMP** for the name.</span></span>  
   
-5.  <span data-ttu-id="ad4eb-173">横にあるテキスト リンクをクリックして**外部システム**見なします**ここをクリックして、外部データ ソースと操作を検出する。**です。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-173">Click the text link beside **External System** which says **Click here to discover external data sources and operations.**.</span></span> <span data-ttu-id="ad4eb-174">OracleEMP 外部コンテンツ タイプの操作のデザイナーが開きます。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-174">This opens the Operation Designer for the OracleEMP external content type.</span></span>  
+5.  <span data-ttu-id="ad4eb-173">横にあるテキスト リンクをクリックして**外部システム**見なします**ここをクリックして、外部データ ソースと操作を検出する。** です。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-173">Click the text link beside **External System** which says **Click here to discover external data sources and operations.**.</span></span> <span data-ttu-id="ad4eb-174">OracleEMP 外部コンテンツ タイプの操作のデザイナーが開きます。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-174">This opens the Operation Designer for the OracleEMP external content type.</span></span>  
   
 6.  <span data-ttu-id="ad4eb-175">クリックして、**接続の追加**[探索] 画面でボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-175">Click the **Add Connection** button on the discovery screen.</span></span>  
   
@@ -169,7 +170,7 @@ SQL> ALTER USER scott ACCOUNT UNLOCK;
   
 1.  <span data-ttu-id="ad4eb-188">新しい web サイト をクリックして、**リストの作成とフォーム**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-188">In the new web site, click the **Create Lists and Forms** button.</span></span> <span data-ttu-id="ad4eb-189">リストの作成および OracleEMP ダイアログ フォームが表示されます。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-189">The Create List and Form for OracleEMP dialog appears.</span></span>  
   
-2.  <span data-ttu-id="ad4eb-190">入力**OracleEMP_List**のリストの名前とクリック、 **[ok]**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-190">Enter **OracleEMP_List** for the List Name and click the **OK** button.</span></span>  
+2.  <span data-ttu-id="ad4eb-190">入力**OracleEMP_List**のリストの名前とクリック、 **[ok]** ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-190">Enter **OracleEMP_List** for the List Name and click the **OK** button.</span></span>  
   
 3.  <span data-ttu-id="ad4eb-191">一覧を作成すると、クリックして、**の概要 ビュー**ボタン、メニューをクリックします。</span><span class="sxs-lookup"><span data-stu-id="ad4eb-191">Once the list is create, click the **Summary View** button on the menu.</span></span>  
   

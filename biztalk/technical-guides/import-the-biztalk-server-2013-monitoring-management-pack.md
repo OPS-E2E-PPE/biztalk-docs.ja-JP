@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 2013 の監視管理パックのインポート |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 2013 の監視管理パックのインポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bee2bfe9-4eb0-46d4-8eee-75182202080c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298634"
 ---
 # <a name="import-the-biztalk-server-2013-monitoring-management-pack"></a><span data-ttu-id="29f07-102">BizTalk Server 2013 の監視管理パックをインポートします。</span><span class="sxs-lookup"><span data-stu-id="29f07-102">Import the BizTalk Server 2013 Monitoring Management Pack</span></span>
 <span data-ttu-id="29f07-103">管理パックをインポートする方法については、管理パックをインポートする方法を参照してください[Operations Manager 2007 R2 または 2012](http://go.microsoft.com/fwlink/?LinkId=142351) (http://go.microsoft.com/fwlink/?LinkId=142351)。</span><span class="sxs-lookup"><span data-stu-id="29f07-103">For instructions about how to import a management pack, see How to Import a Management Pack in [Operations Manager 2007 R2/2012](http://go.microsoft.com/fwlink/?LinkId=142351) (http://go.microsoft.com/fwlink/?LinkId=142351).</span></span> <span data-ttu-id="29f07-104">後に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックのインポートは、次の手順を実行して初期構成を完了します。</span><span class="sxs-lookup"><span data-stu-id="29f07-104">After the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack is imported, follow these procedures to finish your initial configuration:</span></span>  

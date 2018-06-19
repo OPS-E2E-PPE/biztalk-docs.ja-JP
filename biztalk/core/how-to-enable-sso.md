@@ -17,7 +17,7 @@ helpviewer_keywords:
 - creating, applications [SSO]
 - managing [SSO], creating affiliate applications
 ms.assetid: dda89d15-6b70-4c40-b658-2f6cbdd545c8
-caps.latest.revision: ''
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25970410"
 ---
 # <a name="how-to-enable-sso"></a><span data-ttu-id="5f78c-102">SSO を有効にする方法</span><span class="sxs-lookup"><span data-stu-id="5f78c-102">How to Enable SSO</span></span>
 <span data-ttu-id="5f78c-103">MMC スナップインまたはコマンド ラインを使用して、エンタープライズ シングル サインオン (SSO) システムを全面的に有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="5f78c-103">You can enable the entire Enterprise Single Sign-On (SSO) system by using either the MMC Snap-In or the command line.</span></span>  

@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad4a8164-a584-436f-b20b-4c884f6e2b37
-caps.latest.revision: ''
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "23450523"
 ---
 # <a name="step-1-test-outbound-handler-of-the-echo-adapter"></a><span data-ttu-id="16c5c-102">手順 1: エコー アダプターの送信ハンドラーをテストします。</span><span class="sxs-lookup"><span data-stu-id="16c5c-102">Step 1: Test Outbound Handler of the Echo Adapter</span></span>
 <span data-ttu-id="16c5c-103">![2 の手順 1.](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")</span><span class="sxs-lookup"><span data-stu-id="16c5c-103">![Step 1 of 2](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")</span></span>  
@@ -38,13 +39,13 @@ ms.lasthandoff: 03/23/2018
   
     |<span data-ttu-id="16c5c-113">プロパティ</span><span class="sxs-lookup"><span data-stu-id="16c5c-113">Use this</span></span>|<span data-ttu-id="16c5c-114">目的</span><span class="sxs-lookup"><span data-stu-id="16c5c-114">To do this</span></span>|  
     |--------------|----------------|  
-    |<span data-ttu-id="16c5c-115">**プロジェクトの種類**</span><span class="sxs-lookup"><span data-stu-id="16c5c-115">**Project types**</span></span>|<span data-ttu-id="16c5c-116">クリックして **Visual c#**します。</span><span class="sxs-lookup"><span data-stu-id="16c5c-116">Click **Visual C#**.</span></span>|  
+    |<span data-ttu-id="16c5c-115">**プロジェクトの種類**</span><span class="sxs-lookup"><span data-stu-id="16c5c-115">**Project types**</span></span>|<span data-ttu-id="16c5c-116">クリックして **Visual c#** します。</span><span class="sxs-lookup"><span data-stu-id="16c5c-116">Click **Visual C#**.</span></span>|  
     |<span data-ttu-id="16c5c-117">**テンプレート**</span><span class="sxs-lookup"><span data-stu-id="16c5c-117">**Templates**</span></span>|<span data-ttu-id="16c5c-118">クリックして **コンソール アプリケーション**します。</span><span class="sxs-lookup"><span data-stu-id="16c5c-118">Click **Console Application**.</span></span>|  
     |<span data-ttu-id="16c5c-119">**名前**</span><span class="sxs-lookup"><span data-stu-id="16c5c-119">**Name**</span></span>|<span data-ttu-id="16c5c-120">型**ConsumeEchoAdapter_Outbound**です。</span><span class="sxs-lookup"><span data-stu-id="16c5c-120">Type **ConsumeEchoAdapter_Outbound**.</span></span>|  
     |<span data-ttu-id="16c5c-121">**場所**</span><span class="sxs-lookup"><span data-stu-id="16c5c-121">**Location**</span></span>|<span data-ttu-id="16c5c-122">型**C:\Tutorials**です。</span><span class="sxs-lookup"><span data-stu-id="16c5c-122">Type **C:\Tutorials**.</span></span>|  
     |<span data-ttu-id="16c5c-123">**[ソリューション名]**</span><span class="sxs-lookup"><span data-stu-id="16c5c-123">**Solution Name**</span></span>|<span data-ttu-id="16c5c-124">型**ConsumeEchoAdapter_Outbound**です。</span><span class="sxs-lookup"><span data-stu-id="16c5c-124">Type **ConsumeEchoAdapter_Outbound**.</span></span>|  
   
-4.  <span data-ttu-id="16c5c-125">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="16c5c-125">Click **OK**.</span></span>  
+4.  <span data-ttu-id="16c5c-125">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="16c5c-125">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="16c5c-126">Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。</span><span class="sxs-lookup"><span data-stu-id="16c5c-126">In Visual Studio, on the **File** menu, click **Save All**.</span></span>  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 03/23/2018
   
 5.  <span data-ttu-id="16c5c-136">**アダプターの構成**画面で、、**バインド プロパティ**タブでアダプターのプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="16c5c-136">In the **Configure Adapter** screen, select the **Binding Properties** tab to configure the adapter properties.</span></span> <span data-ttu-id="16c5c-137">注意してカスタムのカテゴリのエコー アダプター**受信**と**その他**が表示されます。</span><span class="sxs-lookup"><span data-stu-id="16c5c-137">Notice that the custom Echo Adapter categories **Inbound** and **Misc** are shown.</span></span> <span data-ttu-id="16c5c-138">下にある、**その他**カテゴリで、変更**カウント**に**3**です。</span><span class="sxs-lookup"><span data-stu-id="16c5c-138">Under the **Misc** category, change **Count** to **3**.</span></span>  
   
-6.  <span data-ttu-id="16c5c-139">をクリックして**[ok]**を閉じる、**アダプターの構成**画面およびに戻り、**アダプター サービス参照の追加**画面。</span><span class="sxs-lookup"><span data-stu-id="16c5c-139">Click **OK** to close the **Configure Adapter** screen and return to the **Add Adapter Service Reference** screen.</span></span>  
+6.  <span data-ttu-id="16c5c-139">をクリックして **[ok]** を閉じる、**アダプターの構成**画面およびに戻り、**アダプター サービス参照の追加**画面。</span><span class="sxs-lookup"><span data-stu-id="16c5c-139">Click **OK** to close the **Configure Adapter** screen and return to the **Add Adapter Service Reference** screen.</span></span>  
   
 7.  <span data-ttu-id="16c5c-140">次に、をクリックして**接続**エコー アダプタ (およびの仮定の基幹業務システムをサポートしています) に接続します。</span><span class="sxs-lookup"><span data-stu-id="16c5c-140">Next, click **Connect** to connect to the Echo Adapter (and hypothetical line-of-business system it supports).</span></span> <span data-ttu-id="16c5c-141">しばらくすると、接続の状態を変更する必要があります**接続**とカテゴリ ツリー (**カテゴリを選択**) 設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="16c5c-141">After a few moments, the connection status should change to **Connected** and the Category Tree (under **Select a category**) should be populated.</span></span>  
   

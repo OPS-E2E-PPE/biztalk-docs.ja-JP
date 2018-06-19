@@ -1,14 +1,14 @@
 ---
-title: "監視の調整を |Microsoft ドキュメント"
-ms.custom: 
+title: 監視の調整を |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d1d4c72-6942-4572-b27f-c58d37c94062
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299762"
 ---
 # <a name="monitoring-for-throttling"></a><span data-ttu-id="24ff1-102">監視の調整</span><span class="sxs-lookup"><span data-stu-id="24ff1-102">Monitoring for Throttling</span></span>
 <span data-ttu-id="24ff1-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックの制限の状態を示すパフォーマンス カウンターを監視する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="24ff1-103">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] management pack monitors performance counters that indicate the throttling state of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="24ff1-104">制限について理解するいくつかの重要な要因は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="24ff1-104">Some key factors to understand about throttling are listed below.</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="24ff1-106">配信の制限 (**MsgBox では、送信ポートやオーケストレーション]-> [**)、受信レートは、メッセージ ボックスからのメッセージが受信される数。</span><span class="sxs-lookup"><span data-stu-id="24ff1-106">For delivery throttling (**MsgBox -> Send Port or Orchestration**), inbound rate is the rate at which messages are received from the message box.</span></span> <span data-ttu-id="24ff1-107">送信速度は、メッセージを正常にアダプター経由で配信するレートです。</span><span class="sxs-lookup"><span data-stu-id="24ff1-107">Outbound rate is the rate at which messages are successfully delivered via the adapters.</span></span>  
   
--   <span data-ttu-id="24ff1-108">公開の制限 (**受信アダプター**または**オーケストレーション MsgBox]-> [)、**受信レートは、アダプターからメッセージが受信される速度、送信速度レート メッセージは、メッセージ ボックスに接続します。</span><span class="sxs-lookup"><span data-stu-id="24ff1-108">For publishing throttling (**Receive adapters** or **Orchestrations -> MsgBox),** inbound rate is the rate at which messages are received from the adapters and outbound rate is the rate messages are plugged into the MsgBox.</span></span>  
+-   <span data-ttu-id="24ff1-108">公開の制限 (**受信アダプター**または**オーケストレーション MsgBox]-> [)、** 受信レートは、アダプターからメッセージが受信される速度、送信速度レート メッセージは、メッセージ ボックスに接続します。</span><span class="sxs-lookup"><span data-stu-id="24ff1-108">For publishing throttling (**Receive adapters** or **Orchestrations -> MsgBox),** inbound rate is the rate at which messages are received from the adapters and outbound rate is the rate messages are plugged into the MsgBox.</span></span>  
   
 -   <span data-ttu-id="24ff1-109">データベース内の合計メッセージ以外のホスト間では、制限メカニズムは存在しません。</span><span class="sxs-lookup"><span data-stu-id="24ff1-109">No throttling mechanism exists between hosts other than total messages in the database.</span></span>  
   

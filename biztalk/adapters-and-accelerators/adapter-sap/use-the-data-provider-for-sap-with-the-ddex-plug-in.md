@@ -12,7 +12,7 @@ helpviewer_keywords:
 - DDEX plug-in, Data Provider for SAP
 - Data Provider for SAP, using with DDEX plug-in
 ms.assetid: b16c8634-172a-4630-87ed-2073a75afdec
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25963464"
 ---
 # <a name="use-the-data-provider-for-sap-with-the-ddex-plug-in"></a><span data-ttu-id="2d35d-102">DDEX プラグインと SAP 用データ プロバイダーを使用します。</span><span class="sxs-lookup"><span data-stu-id="2d35d-102">Use the Data Provider for SAP with the DDEX Plug-in</span></span>
 <span data-ttu-id="2d35d-103">インストールする場合、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]と共に、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール、セットアップ プログラムをインストール、 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] DDEX プラグインします。</span><span class="sxs-lookup"><span data-stu-id="2d35d-103">If you chose to install the [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] along with the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] installation, the setup program installs a [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] DDEX plug-in.</span></span> <span data-ttu-id="2d35d-104">使用して、SAP オブジェクトを参照するこのプラグインを使用することができます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="2d35d-104">You can use this plug-in to browse SAP objects using [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)].</span></span> <span data-ttu-id="2d35d-105">このセクションでは、DDEX プラグインの使用に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="2d35d-105">This section provides information about using the DDEX plug-in.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  <span data-ttu-id="2d35d-114">**サーバー エクスプ ローラー**を右クリックして**データ接続**を選択して**接続の追加**です。</span><span class="sxs-lookup"><span data-stu-id="2d35d-114">In the **Server Explorer**, right-click **Data Connections**, and select **Add Connection**.</span></span>  
   
-4.  <span data-ttu-id="2d35d-115">**データ ソースの変更** ダイアログ ボックスから、**データ ソース**ボックスで、 **\<他\>**です。</span><span class="sxs-lookup"><span data-stu-id="2d35d-115">In the **Change Data Source** dialog box, from the **Data source** box, select **\<other\>**.</span></span>  
+4.  <span data-ttu-id="2d35d-115">**データ ソースの変更** ダイアログ ボックスから、**データ ソース**ボックスで、 **\<他\>** です。</span><span class="sxs-lookup"><span data-stu-id="2d35d-115">In the **Change Data Source** dialog box, from the **Data source** box, select **\<other\>**.</span></span>  
   
 5.  <span data-ttu-id="2d35d-116">**データ プロバイダー**ドロップダウン リストで、 **.NET Framework Data Provider 用 mySAP Business Suite**  をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="2d35d-116">From the **Data provider** drop-down list, select **.NET Framework Data Provider for mySAP Business Suite** and click **OK**.</span></span> <span data-ttu-id="2d35d-117">**接続の追加** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="2d35d-117">The **Add Connection** dialog box opens.</span></span>  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 03/28/2018
   
     -   <span data-ttu-id="2d35d-129">RFC SDK トレースを使用するかどうか。</span><span class="sxs-lookup"><span data-stu-id="2d35d-129">Whether you want to use RFC SDK tracing.</span></span>  
   
-     <span data-ttu-id="2d35d-130">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d35d-130">Click **OK**.</span></span> <span data-ttu-id="2d35d-131">新しい接続ノードを作成、**データ接続**前の手順で指定したサーバー名を持つノード。</span><span class="sxs-lookup"><span data-stu-id="2d35d-131">A new connection node is created under the **Data Connections** node with the server name you specified in the previous step.</span></span>  
+     <span data-ttu-id="2d35d-130">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d35d-130">Click **OK**.</span></span> <span data-ttu-id="2d35d-131">新しい接続ノードを作成、**データ接続**前の手順で指定したサーバー名を持つノード。</span><span class="sxs-lookup"><span data-stu-id="2d35d-131">A new connection node is created under the **Data Connections** node with the server name you specified in the previous step.</span></span>  
   
 7.  <span data-ttu-id="2d35d-132">ノードを展開して、新しい接続を表示、**テーブル**と**関数モジュール**ノード。</span><span class="sxs-lookup"><span data-stu-id="2d35d-132">Expand the new connection node to view the **Tables** and **Function Modules** nodes.</span></span>  
   
@@ -83,7 +84,7 @@ ms.lasthandoff: 03/28/2018
   
 4.  <span data-ttu-id="2d35d-141">追加し、をクリックするテーブルに対応するチェック ボックスをオンに**追加**です。</span><span class="sxs-lookup"><span data-stu-id="2d35d-141">Select the check box corresponding to the tables you want to add and click **Add**.</span></span> <span data-ttu-id="2d35d-142">すべてのテーブルを選択するには、をクリックして**すべて選択**です。</span><span class="sxs-lookup"><span data-stu-id="2d35d-142">To select all the tables, click **Select All**.</span></span> <span data-ttu-id="2d35d-143">すべての選択をクリアする をクリックして**すべてクリア**です。</span><span class="sxs-lookup"><span data-stu-id="2d35d-143">To clear all the selections, click **Clear All**.</span></span>  
   
-5.  <span data-ttu-id="2d35d-144">ダイアログ ボックスで通知する追加されたテーブルが表示される更新したら、**テーブル**ノード。</span><span class="sxs-lookup"><span data-stu-id="2d35d-144">A dialog box informs you that the added tables would be visible after you refresh the **Tables** node.</span></span> <span data-ttu-id="2d35d-145">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d35d-145">Click **OK**.</span></span>  
+5.  <span data-ttu-id="2d35d-144">ダイアログ ボックスで通知する追加されたテーブルが表示される更新したら、**テーブル**ノード。</span><span class="sxs-lookup"><span data-stu-id="2d35d-144">A dialog box informs you that the added tables would be visible after you refresh the **Tables** node.</span></span> <span data-ttu-id="2d35d-145">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d35d-145">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="2d35d-146">右クリックし、**テーブル**ノード**更新**です。</span><span class="sxs-lookup"><span data-stu-id="2d35d-146">Right-click the **Tables** node and select **Refresh**.</span></span> <span data-ttu-id="2d35d-147">選択したテーブルが表示される、**テーブル**ノード。</span><span class="sxs-lookup"><span data-stu-id="2d35d-147">The selected tables appear under the **Tables** node.</span></span> <span data-ttu-id="2d35d-148">テーブルのプロパティを表示するテーブル名をクリックして、**プロパティ**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="2d35d-148">Click a table name to see the table properties in the **Properties** pane.</span></span>  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 03/28/2018
   
 4.  <span data-ttu-id="2d35d-157">追加し、をクリックする関数モジュールに対応するチェック ボックスをオンに**追加**です。</span><span class="sxs-lookup"><span data-stu-id="2d35d-157">Select the check box corresponding to the function modules you want to add and click **Add**.</span></span> <span data-ttu-id="2d35d-158">すべてのモジュールを選択するには、をクリックして**すべて選択**です。</span><span class="sxs-lookup"><span data-stu-id="2d35d-158">To select all the modules, click **Select All**.</span></span> <span data-ttu-id="2d35d-159">すべての選択をクリアする をクリックして**すべてクリア**です。</span><span class="sxs-lookup"><span data-stu-id="2d35d-159">To clear all the selections, click **Clear All**.</span></span>  
   
-5.  <span data-ttu-id="2d35d-160">ダイアログ ボックスで通知する関数が追加されたモジュールが表示されるを更新したら、**関数モジュール**ノード。</span><span class="sxs-lookup"><span data-stu-id="2d35d-160">A dialog box informs you that the added function modules would be visible after you refresh the **Function Modules** node.</span></span> <span data-ttu-id="2d35d-161">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d35d-161">Click **OK**.</span></span>  
+5.  <span data-ttu-id="2d35d-160">ダイアログ ボックスで通知する関数が追加されたモジュールが表示されるを更新したら、**関数モジュール**ノード。</span><span class="sxs-lookup"><span data-stu-id="2d35d-160">A dialog box informs you that the added function modules would be visible after you refresh the **Function Modules** node.</span></span> <span data-ttu-id="2d35d-161">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d35d-161">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="2d35d-162">右クリックし、**関数モジュール**ノード**更新**です。</span><span class="sxs-lookup"><span data-stu-id="2d35d-162">Right-click the **Function Modules** node and select **Refresh**.</span></span> <span data-ttu-id="2d35d-163">選択した関数モジュールが表示されます、**関数モジュール**ノード。</span><span class="sxs-lookup"><span data-stu-id="2d35d-163">The selected function modules appear under the **Function Modules** node.</span></span> <span data-ttu-id="2d35d-164">プロパティを表示する関数モジュール名をクリックして、**プロパティ**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="2d35d-164">Click a function module name to see the properties in the **Properties** pane.</span></span>  
   

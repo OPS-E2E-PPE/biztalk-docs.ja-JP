@@ -1,17 +1,17 @@
 ---
-title: "WCF チャネル モデルを使用して、SAP システムに対する操作を呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: WCF チャネル モデルを使用して、SAP システムに対する操作を呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF channel model, supporting BAPI transactions
 - WCF channel model, invoking operations on the SAP system
 ms.assetid: 80ed85ff-360d-4b7f-a119-cd2a99c21cf4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965624"
 ---
 # <a name="invoke-operations-on-the-sap-system-using-the-wcf-channel-model"></a><span data-ttu-id="9a12a-102">WCF チャネル モデルを使用して、SAP システムに対する操作を呼び出す</span><span class="sxs-lookup"><span data-stu-id="9a12a-102">Invoke Operations on the SAP System Using the WCF Channel Model</span></span>
 <span data-ttu-id="9a12a-103">に対して操作を呼び出す、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を使用して、 **IRequestChannel**または**IOutputChannel**チャネル形状をアダプターにメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="9a12a-103">You invoke operations on the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] by using an **IRequestChannel** or **IOutputChannel** channel shape to send messages to the adapter.</span></span> <span data-ttu-id="9a12a-104">基本的なパターンは、バインドを使用して、必要なチャネル形状をチャネル ファクトリを作成する (**SAPBinding**) と接続 URI から作成されたエンドポイント。</span><span class="sxs-lookup"><span data-stu-id="9a12a-104">The basic pattern is to create a channel factory for the required channel shape by using a binding (**SAPBinding**) and an endpoint created from a connection URI.</span></span> <span data-ttu-id="9a12a-105">作成し、**メッセージ**をターゲットの操作用のメッセージ スキーマに準拠する SOAP メッセージを表すインスタンス。</span><span class="sxs-lookup"><span data-stu-id="9a12a-105">You then create a **Message** instance that represents a SOAP message that conforms to the message schema for your target operation.</span></span> <span data-ttu-id="9a12a-106">これを送信することができますし、**メッセージ**を[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]チャネル ファクトリから作成されたチャネルを使用しています。</span><span class="sxs-lookup"><span data-stu-id="9a12a-106">You can then send this **Message** to the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] by using a channel created from the channel factory.</span></span> <span data-ttu-id="9a12a-107">使用している場合、 **IRequestChannel**応答を受信します。</span><span class="sxs-lookup"><span data-stu-id="9a12a-107">If you are using an **IRequestChannel**, you receive a response.</span></span> <span data-ttu-id="9a12a-108">SAP システムで操作の実行に問題がある場合、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]スロー、 **Microsoft.ServiceModel.Channels.Common.TargetSystemException**です。</span><span class="sxs-lookup"><span data-stu-id="9a12a-108">If there is a problem executing the operation on the SAP system, the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] throws a **Microsoft.ServiceModel.Channels.Common.TargetSystemException**.</span></span>  

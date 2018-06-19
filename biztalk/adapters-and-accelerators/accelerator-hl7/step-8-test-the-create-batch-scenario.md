@@ -1,14 +1,14 @@
 ---
-title: "手順 8: 作成バッチ シナリオのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 8: 作成バッチ シナリオのテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc7fac40-fd3e-413b-82cc-7ad08226094c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961136"
 ---
 # <a name="step-8-test-the-create-batch-scenario"></a><span data-ttu-id="3fc87-102">手順 8: 作成するバッチのシナリオをテストします。</span><span class="sxs-lookup"><span data-stu-id="3fc87-102">Step 8: Test the Create-Batch Scenario</span></span>
 <span data-ttu-id="3fc87-103">このステップでは、ソース Tutorial_BTAHL7Pickup フォルダーにバッチ処理するメッセージのテスト インスタンスを削除することにより、バッチの作成シナリオをテストします。</span><span class="sxs-lookup"><span data-stu-id="3fc87-103">In this step, you test the Create-Batch scenario by dropping test instances of the messages you want to batch into the source Tutorial_BTAHL7Pickup folder.</span></span> <span data-ttu-id="3fc87-104">送信ポートを設定するには、ソース フォルダーからメッセージを取得し、送信;受信ポートを受信します。受信パイプラインはそれを処理し、Tutorial_BTAHL7Drop コピー先のフォルダーにドロップします。</span><span class="sxs-lookup"><span data-stu-id="3fc87-104">The send port that you set up picks up the message from the source folder and sends it; the receive port receives it; and the receive pipeline processes it and drops it into the destination Tutorial_BTAHL7Drop folder.</span></span>  

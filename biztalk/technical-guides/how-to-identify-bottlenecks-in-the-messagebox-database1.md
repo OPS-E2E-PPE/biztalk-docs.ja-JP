@@ -1,14 +1,14 @@
 ---
-title: "メッセージ ボックス データベース Database1 のボトルネックを特定する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ ボックス データベース Database1 のボトルネックを特定する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1a039164-5ca6-4cbc-b307-c5d4ae800689
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297658"
 ---
 # <a name="how-to-identify-bottlenecks-in-the-messagebox-database"></a><span data-ttu-id="0b786-102">メッセージ ボックス データベースのボトルネックを特定する方法</span><span class="sxs-lookup"><span data-stu-id="0b786-102">How to Identify Bottlenecks in the MessageBox Database</span></span>
 <span data-ttu-id="0b786-103">メッセージ ボックス データベースのボトルネックを特定するには、まず SQL Server エージェント サービスが開始されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="0b786-103">To identify bottlenecks in the MessageBox database, first ensure that the SQL-Server-Agent Service is started.</span></span> <span data-ttu-id="0b786-104">サービスのスタートアップ状態手動からに変更自動場合は、サーバーを再起動すると、サービスが自動的に再起動できるようにします。</span><span class="sxs-lookup"><span data-stu-id="0b786-104">Change the Service startup state from Manual to Auto so that if the server is restarted, the service will automatically restart.</span></span>  

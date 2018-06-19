@@ -1,14 +1,14 @@
 ---
-title: "アダプター構成スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター構成スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc08fa71-c5f7-4365-9506-e02351b17567
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966504"
 ---
 # <a name="adapter-configuration-schemas"></a><span data-ttu-id="ffc54-102">アダプター構成スキーマ</span><span class="sxs-lookup"><span data-stu-id="ffc54-102">Adapter Configuration Schemas</span></span>
 <span data-ttu-id="ffc54-103">アダプターのデザイン時構成では、さまざまな種類のスキーマを使用します。</span><span class="sxs-lookup"><span data-stu-id="ffc54-103">Different types of schemas are used in design-time configuration of an adapter.</span></span> <span data-ttu-id="ffc54-104">プロパティ値の可視性とスコープに応じて、さまざまなスキーマを変更して使用します。</span><span class="sxs-lookup"><span data-stu-id="ffc54-104">Depending upon the visibility and scope of property values, different schemas are modified and used.</span></span>  

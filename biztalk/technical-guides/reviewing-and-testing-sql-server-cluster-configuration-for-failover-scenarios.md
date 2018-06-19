@@ -1,14 +1,14 @@
 ---
-title: "確認して、SQL Server をテスト クラスターのフェールオーバーのシナリオの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 確認して、SQL Server をテスト クラスターのフェールオーバーのシナリオの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5dbeb383-5b38-4467-acf8-2a5b244e5fa9
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302218"
 ---
 # <a name="reviewing-and-testing-sql-server-cluster-configuration-for-failover-scenarios"></a><span data-ttu-id="6f79c-102">レビューし、テスト フェールオーバーのシナリオに SQL Server クラスターの構成</span><span class="sxs-lookup"><span data-stu-id="6f79c-102">Reviewing and Testing SQL Server Cluster Configuration for Failover Scenarios</span></span>
 <span data-ttu-id="6f79c-103">Windows クラスタ リングと SQL Server を使用すると、ここで、クラスターの各ノードは 1 つまたは複数の SQL Server インスタンスを"active"され実行されているアクティブ/アクティブ モードで SQL Server を実行できます。</span><span class="sxs-lookup"><span data-stu-id="6f79c-103">Windows Clustering and SQL Server allow you to run SQL Server in Active/Active mode where each node of the cluster is “active” and running one or more SQL Server instances.</span></span> <span data-ttu-id="6f79c-104">これは、ようにすると、たとえば、1 つのノードとその他のすべてのメッセージ ボックス データベースに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]他のノード上のデータベースです。</span><span class="sxs-lookup"><span data-stu-id="6f79c-104">This would allow you, for example, to have the MessageBox database on one node and all other [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases on the other node.</span></span> <span data-ttu-id="6f79c-105">これにより、クラスターのハードウェア使用率を最大化することができます。</span><span class="sxs-lookup"><span data-stu-id="6f79c-105">This allows you to maximize cluster hardware usage.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214050"
 ---
 # <a name="updating-swift-messaging-standards"></a><span data-ttu-id="a797c-102">SWIFT メッセージ規格の更新</span><span class="sxs-lookup"><span data-stu-id="a797c-102">Updating SWIFT Messaging Standards</span></span>
 <span data-ttu-id="a797c-103">Society のワールドワイド銀行間財務通信 (SWIFT) は、金融サービス業界の提案し、標準への変更が採用されていますとして年間のメッセージングの標準を更新します。</span><span class="sxs-lookup"><span data-stu-id="a797c-103">The Society for Worldwide Interbank Financial Telecommunication (SWIFT) updates their messaging standards annually as the financial services industry proposes and adopts changes to the standards.</span></span> <span data-ttu-id="a797c-104">SWIFT が標準リリース ガイドを更新する際に[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]最新 SWIFT 仕様に準拠するようにスキーマおよび BRE ポリシーを更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a797c-104">When SWIFT updates their Standards Release Guide, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] schemas and BRE policies must be updated to conform to the latest SWIFT specifications.</span></span>  

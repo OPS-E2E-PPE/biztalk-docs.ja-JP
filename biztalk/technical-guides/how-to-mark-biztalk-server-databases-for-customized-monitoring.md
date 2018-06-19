@@ -1,14 +1,14 @@
 ---
-title: "マーク BizTalk Server データベースのカスタマイズを監視する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マーク BizTalk Server データベースのカスタマイズを監視する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cfbdc73d-a108-42ee-a5d8-401d5bfe5e7d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298242"
 ---
 # <a name="how-to-mark-biztalk-server-databases-for-customized-monitoring"></a><span data-ttu-id="7ec8e-102">カスタマイズした監視の BizTalk Server データベースをマークする方法</span><span class="sxs-lookup"><span data-stu-id="7ec8e-102">How to Mark BizTalk Server Databases for Customized Monitoring</span></span>
 <span data-ttu-id="7ec8e-103">Microsoft がインストールされている場合[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理パックは、方法をカスタマイズすることができます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]のデータベースを監視します。</span><span class="sxs-lookup"><span data-stu-id="7ec8e-103">If you have installed the Microsoft [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Management Pack, you can customize the way [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases are monitored.</span></span> <span data-ttu-id="7ec8e-104">これにより、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理パックは、次の監視[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。</span><span class="sxs-lookup"><span data-stu-id="7ec8e-104">This ensures that the [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Management Pack monitors the following [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases:</span></span>  

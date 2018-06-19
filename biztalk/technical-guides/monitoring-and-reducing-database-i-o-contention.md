@@ -1,14 +1,14 @@
 ---
-title: "I/O の競合を監視および削減できるデータベース |Microsoft ドキュメント"
-ms.custom: 
+title: I/O の競合を監視および削減できるデータベース |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bd6d3343-3fa3-469a-9772-e94f22fdf558
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298778"
 ---
 # <a name="monitoring-and-reducing-database-io-contention"></a><span data-ttu-id="3f2f0-102">監視と、データベース I/O の競合を減らす</span><span class="sxs-lookup"><span data-stu-id="3f2f0-102">Monitoring and Reducing Database I/O Contention</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="3f2f0-103">によってパフォーマンスが前提として多くの場合、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]パフォーマンスで、さらには、多くの場合を前提としてディスク I/O のパフォーマンスにします。</span><span class="sxs-lookup"><span data-stu-id="3f2f0-103"> performance is often predicated upon [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] performance, which in turn is often predicated upon disk I/O performance.</span></span> <span data-ttu-id="3f2f0-104">したがって、する必要がありますを監視し、実行するコンピューター上のディスク I/O のパフォーマンスを調整[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]そのハウス、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。</span><span class="sxs-lookup"><span data-stu-id="3f2f0-104">Therefore, you should monitor and performance-tune disk I/O on the computers running [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] that house the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases.</span></span>  

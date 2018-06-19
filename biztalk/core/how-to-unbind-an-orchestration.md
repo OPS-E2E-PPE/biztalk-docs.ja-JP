@@ -1,14 +1,14 @@
 ---
-title: "オーケストレーションをバインド解除 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションをバインド解除 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3a7c421d-e0cb-4b23-b472-e501056d6329
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970280"
 ---
 # <a name="unbind-an-orchestration"></a><span data-ttu-id="6615d-102">オーケストレーションをバインド解除します。</span><span class="sxs-lookup"><span data-stu-id="6615d-102">Unbind an Orchestration</span></span>
 
@@ -37,11 +38,11 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="6615d-114">をクリックして**オーケストレーション**、オーケストレーションを右クリックし、をクリックして**プロパティ**、順にクリック**バインド**左側のウィンドウでします。</span><span class="sxs-lookup"><span data-stu-id="6615d-114">Click **Orchestrations**, right-click the orchestration, click **Properties**, and then click **Bindings** in the left pane.</span></span>  
   
-4.  <span data-ttu-id="6615d-115">ホストのバインドを削除する、**ホスト**一覧で、  **\<None\>**です。</span><span class="sxs-lookup"><span data-stu-id="6615d-115">To remove the host bindings, from the **Hosts** list, select **\<None\>**.</span></span>  
+4.  <span data-ttu-id="6615d-115">ホストのバインドを削除する、**ホスト**一覧で、  **\<None\>** です。</span><span class="sxs-lookup"><span data-stu-id="6615d-115">To remove the host bindings, from the **Hosts** list, select **\<None\>**.</span></span>  
   
-5.  <span data-ttu-id="6615d-116">削除する下にあるドロップダウン リストからの受信ポートのバインド、**受信ポート**をクリックして **\<None\>**です。</span><span class="sxs-lookup"><span data-stu-id="6615d-116">To remove receive port bindings, from the drop-down list under **Receive Ports**, click **\<None\>**.</span></span>  
+5.  <span data-ttu-id="6615d-116">削除する下にあるドロップダウン リストからの受信ポートのバインド、**受信ポート**をクリックして **\<None\>** です。</span><span class="sxs-lookup"><span data-stu-id="6615d-116">To remove receive port bindings, from the drop-down list under **Receive Ports**, click **\<None\>**.</span></span>  
   
-6.  <span data-ttu-id="6615d-117">下にあるドロップダウン リストから送信ポートのバインドを削除する**送信ポート/送信ポート グループ**をクリックして **\<None\>**です。</span><span class="sxs-lookup"><span data-stu-id="6615d-117">To remove send port bindings, from the drop-down list under **Send Ports/Send Port Groups**, click **\<None\>**.</span></span>  
+6.  <span data-ttu-id="6615d-117">下にあるドロップダウン リストから送信ポートのバインドを削除する**送信ポート/送信ポート グループ**をクリックして **\<None\>** です。</span><span class="sxs-lookup"><span data-stu-id="6615d-117">To remove send port bindings, from the drop-down list under **Send Ports/Send Port Groups**, click **\<None\>**.</span></span>  
   
 7.  <span data-ttu-id="6615d-118">バインド バインドを削除したらをクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="6615d-118">When finished removing bindings, click **OK**.</span></span>  
   

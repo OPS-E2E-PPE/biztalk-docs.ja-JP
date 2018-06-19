@@ -1,14 +1,14 @@
 ---
-title: "SELECT ステートメントを使用してポーリング Oracle E-business Suite |Microsoft ドキュメント"
-ms.custom: 
+title: SELECT ステートメントを使用してポーリング Oracle E-business Suite |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 81d70b36-8b80-4ab9-b97c-ee861aafbbac
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966912"
 ---
 # <a name="poll-oracle-e-business-suite-using-select-statement"></a><span data-ttu-id="77100-102">SELECT ステートメントを使用してポーリング Oracle E-business Suite</span><span class="sxs-lookup"><span data-stu-id="77100-102">Poll Oracle E-Business Suite using SELECT statement</span></span>
 <span data-ttu-id="77100-103">構成することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]メッセージを受信するデータの定期的な変更を継続的にインターフェイスのテーブルをポーリングする SELECT ステートメントを使用して、ビュー、テーブルおよびビュー Oracle E-business suite のインターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="77100-103">You can configure the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] to receive periodic data-change messages by using a SELECT statement to continuously poll the interface tables, interface views, tables and views in Oracle E-Business Suite.</span></span> <span data-ttu-id="77100-104">Oracle E-business Suite をポーリングするアダプターが定期的に実行されるポーリング ステートメントと SELECT ステートメントを指定できます。</span><span class="sxs-lookup"><span data-stu-id="77100-104">You can specify a SELECT statement as a polling statement that the adapter executes periodically to poll Oracle E-Business Suite.</span></span> <span data-ttu-id="77100-105">後の投票 PL/SQL コード ブロックを指定することも、アダプターが、ポーリング ステートメントが実行された後に実行されます。</span><span class="sxs-lookup"><span data-stu-id="77100-105">You can also specify a post-poll PL/SQL code block that the adapter executes after the polling statement is executed.</span></span>  
@@ -94,7 +95,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="generating-schema"></a><span data-ttu-id="77100-178">スキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="77100-178">Generating Schema</span></span>  
  <span data-ttu-id="77100-179">スキーマを生成する必要があります、**ポーリング**MS_SAMPLE_EMPLOYEE インターフェイス テーブルの操作では、**アプリケーション オブジェクト ライブラリ**アプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="77100-179">You must generate the schema for the **Poll** operation on the MS_SAMPLE_EMPLOYEE interface table in the **Application Object Library** application.</span></span> <span data-ttu-id="77100-180">使用して、スキーマの生成中に、次のタスクを実行、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="77100-180">Perform the following tasks while generating the schema using the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)].</span></span>  
   
--   <span data-ttu-id="77100-181">コントラクトの種類を選択して**サービス (入力方向の操作)**です。</span><span class="sxs-lookup"><span data-stu-id="77100-181">Select the contract type as **Service (Inbound operation)**.</span></span>  
+-   <span data-ttu-id="77100-181">コントラクトの種類を選択して**サービス (入力方向の操作)** です。</span><span class="sxs-lookup"><span data-stu-id="77100-181">Select the contract type as **Service (Inbound operation)**.</span></span>  
   
 -   <span data-ttu-id="77100-182">スキーマを生成、**ポーリング**MS_SAMPLE_EMPLOYEE インターフェイス テーブルで操作します。</span><span class="sxs-lookup"><span data-stu-id="77100-182">Generate schema for the **Poll** operation on the MS_SAMPLE_EMPLOYEE interface table.</span></span> <span data-ttu-id="77100-183">操作と選択インターフェイス テーブルのいずれかから、**アプリケーション ベースのビュー**ノードまたは**成果物のベースのビュー**ノード。</span><span class="sxs-lookup"><span data-stu-id="77100-183">You can select the operation and the interface table either from the **Application-Based View** node or the **Artifact -Based View** node.</span></span>  
   
@@ -147,7 +148,7 @@ ms.lasthandoff: 11/28/2017
   
     -   <span data-ttu-id="77100-231">**プロパティ**一覧で、クリックして**BTS です。ReceivePortName**です。</span><span class="sxs-lookup"><span data-stu-id="77100-231">In the **Property** list, click **BTS.ReceivePortName**.</span></span>  
   
-    -   <span data-ttu-id="77100-232">**演算子**一覧で、クリックして **==**です。</span><span class="sxs-lookup"><span data-stu-id="77100-232">In the **Operator** list, click **==**.</span></span>  
+    -   <span data-ttu-id="77100-232">**演算子**一覧で、クリックして **==** です。</span><span class="sxs-lookup"><span data-stu-id="77100-232">In the **Operator** list, click **==**.</span></span>  
   
     -   <span data-ttu-id="77100-233">**値**フィールドに、受信ポート名を指定します。</span><span class="sxs-lookup"><span data-stu-id="77100-233">In the **Value** field, specify the receive port name.</span></span>  
   

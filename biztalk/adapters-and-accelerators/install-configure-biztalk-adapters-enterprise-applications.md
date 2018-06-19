@@ -16,6 +16,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "23450531"
 ---
 # <a name="install-and-configure-the-microsoft-biztalk-adapters-for-enterprise-applications"></a><span data-ttu-id="29f90-103">インストールし、エンタープライズ アプリケーション用の Microsoft BizTalk Adapters の構成</span><span class="sxs-lookup"><span data-stu-id="29f90-103">Install and configure the Microsoft BizTalk Adapters for Enterprise Applications</span></span> 
   
@@ -344,7 +345,7 @@ ms.lasthandoff: 03/28/2018
 -   <span data-ttu-id="29f90-328">D5500900K - 日付 2 のテスト</span><span class="sxs-lookup"><span data-stu-id="29f90-328">D5500900K - TEST DATE 2</span></span>  
   
 #### <a name="customize-the-jdeinteropini-file"></a><span data-ttu-id="29f90-329">Jdeinterop.ini ファイルをカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="29f90-329">Customize the jdeinterop.ini file</span></span>  
- <span data-ttu-id="29f90-330">Connector.jar および Kernel.jar で JD Edwards OneWorld XE コネクタ クラスでは、jdeinterop.ini 構成ファイルを使用することが必要です。</span><span class="sxs-lookup"><span data-stu-id="29f90-330">The JD Edwards OneWorld XE connector classes in Connector.jar and Kernel.jar require that you use the jdeinterop.ini configuration file.</span></span> <span data-ttu-id="29f90-331">このファイルは、JD Edwards OneWorld ソフトウェアで定義されており、その用語を使用します。</span><span class="sxs-lookup"><span data-stu-id="29f90-331">This file is defined by the JD Edwards OneWorld software and uses its terminology.</span></span> <span data-ttu-id="29f90-332">JD Edwards Interoperability Guide Release OneWorld には、目的と用語のこのファイルの詳細についてを説明可能性があります。</span><span class="sxs-lookup"><span data-stu-id="29f90-332">The JD Edwards Interoperability Guide Release OneWorld may provide more information about the purpose and terminology of this file.</span></span> <span data-ttu-id="29f90-333">サンプルの jdeinterop.ini ファイルがある*< Adapter_Installation > \config\jde*です。</span><span class="sxs-lookup"><span data-stu-id="29f90-333">There is a sample jdeinterop.ini file in *<Adapter_Installation>\config\jde*.</span></span>  
+ <span data-ttu-id="29f90-330">Connector.jar および Kernel.jar で JD Edwards OneWorld XE コネクタ クラスでは、jdeinterop.ini 構成ファイルを使用することが必要です。</span><span class="sxs-lookup"><span data-stu-id="29f90-330">The JD Edwards OneWorld XE connector classes in Connector.jar and Kernel.jar require that you use the jdeinterop.ini configuration file.</span></span> <span data-ttu-id="29f90-331">このファイルは、JD Edwards OneWorld ソフトウェアで定義されており、その用語を使用します。</span><span class="sxs-lookup"><span data-stu-id="29f90-331">This file is defined by the JD Edwards OneWorld software and uses its terminology.</span></span> <span data-ttu-id="29f90-332">JD Edwards Interoperability Guide Release OneWorld には、目的と用語のこのファイルの詳細についてを説明可能性があります。</span><span class="sxs-lookup"><span data-stu-id="29f90-332">The JD Edwards Interoperability Guide Release OneWorld may provide more information about the purpose and terminology of this file.</span></span> <span data-ttu-id="29f90-333">サンプルの jdeinterop.ini ファイルがある *< Adapter_Installation > \config\jde*です。</span><span class="sxs-lookup"><span data-stu-id="29f90-333">There is a sample jdeinterop.ini file in *<Adapter_Installation>\config\jde*.</span></span>  
   
 <span data-ttu-id="29f90-334">定義されているパラメーター値に一致する jdeinterop.ini の更新、**トランスポートのプロパティ**画面。</span><span class="sxs-lookup"><span data-stu-id="29f90-334">Update jdeinterop.ini to match the parameter values that you defined in the **Transport Properties** screen.</span></span> <span data-ttu-id="29f90-335">複数の JD Edwards OneWorld 論理システムで、それらのパラメーターに互換性がある場合は、同じ jdeinterop.ini ファイルを共有できます。</span><span class="sxs-lookup"><span data-stu-id="29f90-335">Multiple JD Edwards OneWorld logical systems can share the same jdeinterop.ini file if their parameters are compatible.</span></span> <span data-ttu-id="29f90-336">一般に、2 つの論理システムは、次の 2 つの異なる JD Edwards OneWorld コンピューター をポイントして、jdeinterop.ini の 2 つの異なるコピーが必要です。</span><span class="sxs-lookup"><span data-stu-id="29f90-336">Generally, if two logical systems point to two different JD Edwards OneWorld computers, they need two different copies of jdeinterop.ini.</span></span>  
   
@@ -402,7 +403,7 @@ ms.lasthandoff: 03/28/2018
 ### <a name="understand-jdeinteropini"></a><span data-ttu-id="29f90-476">Jdeinterop.ini を理解します。</span><span class="sxs-lookup"><span data-stu-id="29f90-476">Understand jdeinterop.ini</span></span>  
  <span data-ttu-id="29f90-477">Connector.jar および Kernel.jar で JD Edwards EnterpriseOne コネクタ クラスでは、jdeinterop.ini という名前の構成ファイルを使用することが必要です。</span><span class="sxs-lookup"><span data-stu-id="29f90-477">The JD Edwards EnterpriseOne connector classes in Connector.jar and Kernel.jar require that you use a configuration file named jdeinterop.ini.</span></span> <span data-ttu-id="29f90-478">このファイルは、JD Edwards EnterpriseOne ソフトウェアによって定義され、その用語を使用します。</span><span class="sxs-lookup"><span data-stu-id="29f90-478">This file is defined by the JD Edwards EnterpriseOne software and uses its terminology.</span></span> <span data-ttu-id="29f90-479">目的と用語のこのファイルの詳細については、JD Edwards の相互運用性ガイドを参照してください。</span><span class="sxs-lookup"><span data-stu-id="29f90-479">For more information about the purpose and terminology of this file, see the JD Edwards Interoperability Guide.</span></span> <span data-ttu-id="29f90-480">サンプルの jdeinterop.ini ファイルがある: Program files \ の Microsoft BizTalk Adapters for Enterprise applications \ j. d.</span><span class="sxs-lookup"><span data-stu-id="29f90-480">There is a sample jdeinterop.ini file in: Program Files\ Microsoft BizTalk Adapters for Enterprise Applications\ J.D.</span></span> <span data-ttu-id="29f90-481">Edwards EnterpriseOne(r)\config.</span><span class="sxs-lookup"><span data-stu-id="29f90-481">Edwards EnterpriseOne(r)\config.</span></span>  
   
- <span data-ttu-id="29f90-482">やり取りするために手動でこのファイルを編集することはお勧めできません、**トランスポートのプロパティ**--としてマークされたフィールドなどの送信ポートのダイアログ ボックス**< BizTalk によって構成された\>**.</span><span class="sxs-lookup"><span data-stu-id="29f90-482">It is not recommended that you edit this file manually because it interacts with the **Transport Properties** dialog box for the send port -- for example those fields marked as **<configured by BizTalk\>**.</span></span>  
+ <span data-ttu-id="29f90-482">やり取りするために手動でこのファイルを編集することはお勧めできません、**トランスポートのプロパティ**--としてマークされたフィールドなどの送信ポートのダイアログ ボックス **< BizTalk によって構成された\>**.</span><span class="sxs-lookup"><span data-stu-id="29f90-482">It is not recommended that you edit this file manually because it interacts with the **Transport Properties** dialog box for the send port -- for example those fields marked as **<configured by BizTalk\>**.</span></span>  
   
 ## <a name="peoplesoft-enterprise"></a><span data-ttu-id="29f90-483">PeopleSoft Enterprise</span><span class="sxs-lookup"><span data-stu-id="29f90-483">PeopleSoft Enterprise</span></span>  
 <span data-ttu-id="29f90-484">このセクションには、キー使用の詳細について、Microsoft BizTalk Adapter for PeopleSoft Enterprise を BizTalk Server が含まれています。</span><span class="sxs-lookup"><span data-stu-id="29f90-484">This section includes key information on using the Microsoft BizTalk Adapter for PeopleSoft Enterprise with BizTalk Server.</span></span>
@@ -501,7 +502,7 @@ and bc2.BCTYPE in (1, 2))
   
 4.  <span data-ttu-id="29f90-544">**新規** ダイアログ ボックスで、 **コンポーネント インターフェイス**, 、 をクリックし、 **OK**します。</span><span class="sxs-lookup"><span data-stu-id="29f90-544">In the **New** dialog box, select **Component Interface**, and then click **OK**.</span></span>  
   
-5.  <span data-ttu-id="29f90-545">**[選択]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="29f90-545">Click **Select**.</span></span>  
+5.  <span data-ttu-id="29f90-545">**[選択]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="29f90-545">Click **Select**.</span></span>  
   
 6.  <span data-ttu-id="29f90-546">すべてのコンポーネントの一覧で、任意の単純なコンポーネントを選択します。</span><span class="sxs-lookup"><span data-stu-id="29f90-546">From the list of all components, select any simple component.</span></span> <span data-ttu-id="29f90-547">たとえば、INSTALLATION_RS または作成した新しい PeopleSoft コンポーネントを選択します。</span><span class="sxs-lookup"><span data-stu-id="29f90-547">For example, select INSTALLATION_RS, or a new PeopleSoft component that you created.</span></span>  
   
@@ -557,7 +558,7 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
   
 1.  <span data-ttu-id="29f90-579">開始、 **PeopleSoft アプリケーション デザイナ**です。</span><span class="sxs-lookup"><span data-stu-id="29f90-579">Start the **PeopleSoft Application Designer**.</span></span>  
   
-2.  <span data-ttu-id="29f90-580">**ファイル**] メニューのをポイント**開く**、し、[**定義コンポーネント インターフェイスを =**です。</span><span class="sxs-lookup"><span data-stu-id="29f90-580">On the **File** menu, point to **Open**, and then select **Definition = Component Interface**.</span></span>  
+2.  <span data-ttu-id="29f90-580">**ファイル**] メニューのをポイント**開く**、し、[**定義コンポーネント インターフェイスを =** です。</span><span class="sxs-lookup"><span data-stu-id="29f90-580">On the **File** menu, point to **Open**, and then select **Definition = Component Interface**.</span></span>  
   
 3.  <span data-ttu-id="29f90-581">コンポーネント インターフェイスのリストから選択**GET_CI_INFO CI**です。</span><span class="sxs-lookup"><span data-stu-id="29f90-581">From the list of component interfaces, select **GET_CI_INFO CI**.</span></span>  
   
@@ -639,7 +640,7 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
   
 * <span data-ttu-id="29f90-634">アダプターに固有のファイルがインストールされている*Program Files*と*Program files \common Files*です。</span><span class="sxs-lookup"><span data-stu-id="29f90-634">Adapter-specific files are installed in *Program Files* and *Program Files\Common Files*.</span></span>  
   
-* <span data-ttu-id="29f90-635">`sdk\`がインストールされている*Enterprise applications \ j. d. の Program files \microsoft BizTalk AdaptersEdwards OneWorld(r)*です。</span><span class="sxs-lookup"><span data-stu-id="29f90-635">The `sdk\` is installed in *Program Files\Microsoft BizTalk Adapters for Enterprise Applications\ J.D. Edwards OneWorld(r)*.</span></span>
+* <span data-ttu-id="29f90-635">`sdk\`がインストールされている*Enterprise applications \ j. d. の Program files \microsoft BizTalk AdaptersEdwards OneWorld(r)* です。</span><span class="sxs-lookup"><span data-stu-id="29f90-635">The `sdk\` is installed in *Program Files\Microsoft BizTalk Adapters for Enterprise Applications\ J.D. Edwards OneWorld(r)*.</span></span>
   
 * <span data-ttu-id="29f90-636">* Program エンタープライズ Applications\JD Edwards OneWorld(r) for files \microsoft BizTalk Adapters\*次のファイルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="29f90-636">*Program Files\Microsoft BizTalk Adapters for Enterprise Applications\JD Edwards OneWorld(r)\* contains the following files:</span></span>  
   
@@ -846,20 +847,20 @@ C:\TIBCO\TIBRV\BIN > gacutil /i TIBCO.Rendezvous.dll
   
  <span data-ttu-id="29f90-800">Windows イベント トレーシングには 3 つのコンポーネントがあります。</span><span class="sxs-lookup"><span data-stu-id="29f90-800">Event Tracing for Windows has three components:</span></span>  
   
-* <span data-ttu-id="29f90-801">**コント ローラー アプリケーション:**にアクティブとプロバイダーを非アクティブ化します。</span><span class="sxs-lookup"><span data-stu-id="29f90-801">**Controller application:** Activates and deactivates a provider.</span></span> <span data-ttu-id="29f90-802">たとえば、tracelog.exe または logman.exe です。</span><span class="sxs-lookup"><span data-stu-id="29f90-802">For example, tracelog.exe or logman.exe.</span></span>  
+* <span data-ttu-id="29f90-801">**コント ローラー アプリケーション:** にアクティブとプロバイダーを非アクティブ化します。</span><span class="sxs-lookup"><span data-stu-id="29f90-801">**Controller application:** Activates and deactivates a provider.</span></span> <span data-ttu-id="29f90-802">たとえば、tracelog.exe または logman.exe です。</span><span class="sxs-lookup"><span data-stu-id="29f90-802">For example, tracelog.exe or logman.exe.</span></span>  
   
     <span data-ttu-id="29f90-803">PATH 環境変数を、tracelog.exe の場所を指すように設定します。</span><span class="sxs-lookup"><span data-stu-id="29f90-803">You set your PATH environment variable to point to the location of tracelog.exe.</span></span> <span data-ttu-id="29f90-804">これにより、その BTA < アダプター名\>Trace の呼び出しは、システムの tracelog.exe を見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="29f90-804">This makes sure that BTA<Adapter Name\>Trace calls can locate tracelog.exe in the system.</span></span> <span data-ttu-id="29f90-805">既定では、BTA < Adapter 名前\>トレースは、現在のパスを検索します。</span><span class="sxs-lookup"><span data-stu-id="29f90-805">By default, BTA<Adapter Name\>Trace searches the current path.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="29f90-806">tracelog.exe は Microsoft SDK おり、Microsoft BizTalk Adapters for Enterprise Applications コマンドと互換性があります。</span><span class="sxs-lookup"><span data-stu-id="29f90-806">tracelog.exe is available from the Microsoft SDK and is compatible with the commands provided by Microsoft BizTalk Adapters for Enterprise Applications.</span></span> <span data-ttu-id="29f90-807">logman.exe の使い方については、logman のマニュアルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="29f90-807">To use logman.exe, see the logman documentation.</span></span>  
   
-* <span data-ttu-id="29f90-808">**コンシューマー アプリケーション:**記録されたイベントの読み取り。</span><span class="sxs-lookup"><span data-stu-id="29f90-808">**Consumer application:** Reads logged events.</span></span>  
+* <span data-ttu-id="29f90-808">**コンシューマー アプリケーション:** 記録されたイベントの読み取り。</span><span class="sxs-lookup"><span data-stu-id="29f90-808">**Consumer application:** Reads logged events.</span></span>  
   
     <span data-ttu-id="29f90-809">コンシューマー アプリケーションで .etl ファイル内のイベントを読み取るには、Windows イベント トレーシングでそれらのイベントを .etl ファイルにダンプする必要があります。</span><span class="sxs-lookup"><span data-stu-id="29f90-809">For the consumer application to be able to read the event in the .etl file, Event Tracing for Windows must dump them into that file.</span></span> <span data-ttu-id="29f90-810">通常、この作業は、コントローラーがトレーシングを非アクティブ化するときに行われます。</span><span class="sxs-lookup"><span data-stu-id="29f90-810">Typically this is done when the controller deactivates the tracing.</span></span>  
   
     <span data-ttu-id="29f90-811">コンシューマー アプリケーションを使用して、トレースを非アクティブにせず、リアルタイムのオプションを使用してトレースで、コント ローラーによってアクティブ化する必要があります **< リアルタイム\> =-rt**します。</span><span class="sxs-lookup"><span data-stu-id="29f90-811">To use the consumer application without deactivating the trace, the controller must activate the trace with the real-time option, **<Real time\> = -rt**.</span></span>  
   
-* <span data-ttu-id="29f90-812">**プロバイダー:**イベントを提供するために使用します。</span><span class="sxs-lookup"><span data-stu-id="29f90-812">**Provider:** Used to provide the event.</span></span>  
+* <span data-ttu-id="29f90-812">**プロバイダー:** イベントを提供するために使用します。</span><span class="sxs-lookup"><span data-stu-id="29f90-812">**Provider:** Used to provide the event.</span></span>  
   
     <span data-ttu-id="29f90-813">各アダプターには、5 つの異なるプロバイダーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="29f90-813">Each adapter includes five different providers.</span></span> <span data-ttu-id="29f90-814">これらは Windows Management Instrumentation (WMI) に登録されます。</span><span class="sxs-lookup"><span data-stu-id="29f90-814">They are registered in Windows Management Instrumentation (WMI).</span></span> <span data-ttu-id="29f90-815">root\WMI\EventTrace パス内で登録プロバイダーを検索するには、WMI CIM Studio などのツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="29f90-815">To find the registered providers in the root\WMI\EventTrace path, you can use tools such as WMI CIM Studio.</span></span>  
   
@@ -894,15 +895,15 @@ BTA<Adapter Name>Trace <Trace element> -stop
   
  <span data-ttu-id="29f90-826">**管理**</span><span class="sxs-lookup"><span data-stu-id="29f90-826">**-management**</span></span>  
   
- <span data-ttu-id="29f90-827">**-開始、停止:**アクティブ化またはプロバイダーを非アクティブ化します。</span><span class="sxs-lookup"><span data-stu-id="29f90-827">**-start, -stop:** Activate or deactivate the provider.</span></span>  
+ <span data-ttu-id="29f90-827">**-開始、停止:** アクティブ化またはプロバイダーを非アクティブ化します。</span><span class="sxs-lookup"><span data-stu-id="29f90-827">**-start, -stop:** Activate or deactivate the provider.</span></span>  
   
- <span data-ttu-id="29f90-828">**-cir < MB\>:**サイズおよびファイルの種類。</span><span class="sxs-lookup"><span data-stu-id="29f90-828">**-cir <MB\>:** Size and kind of file.</span></span> <span data-ttu-id="29f90-829">**-cir** は循環ファイルです。</span><span class="sxs-lookup"><span data-stu-id="29f90-829">**-cir** is a circular file.</span></span> <span data-ttu-id="29f90-830">**< MB\>:**サイズ (メガバイト単位)。</span><span class="sxs-lookup"><span data-stu-id="29f90-830">**<MB\>:** Size in megabytes.</span></span>  
+ <span data-ttu-id="29f90-828">**-cir < MB\>:** サイズおよびファイルの種類。</span><span class="sxs-lookup"><span data-stu-id="29f90-828">**-cir <MB\>:** Size and kind of file.</span></span> <span data-ttu-id="29f90-829">**-cir** は循環ファイルです。</span><span class="sxs-lookup"><span data-stu-id="29f90-829">**-cir** is a circular file.</span></span> <span data-ttu-id="29f90-830">**< MB\>:** サイズ (メガバイト単位)。</span><span class="sxs-lookup"><span data-stu-id="29f90-830">**<MB\>:** Size in megabytes.</span></span>  
   
- <span data-ttu-id="29f90-831">**-seq < MB\>:**サイズおよびファイルの種類。</span><span class="sxs-lookup"><span data-stu-id="29f90-831">**-seq <MB\>:** Size and kind of file.</span></span> <span data-ttu-id="29f90-832">**-seq** シーケンシャル ファイルです。</span><span class="sxs-lookup"><span data-stu-id="29f90-832">**-seq** is a sequential file.</span></span> <span data-ttu-id="29f90-833">**< MB\>:**サイズ (メガバイト単位)。</span><span class="sxs-lookup"><span data-stu-id="29f90-833">**<MB\>:** Size in megabytes.</span></span>  
+ <span data-ttu-id="29f90-831">**-seq < MB\>:** サイズおよびファイルの種類。</span><span class="sxs-lookup"><span data-stu-id="29f90-831">**-seq <MB\>:** Size and kind of file.</span></span> <span data-ttu-id="29f90-832">**-seq** シーケンシャル ファイルです。</span><span class="sxs-lookup"><span data-stu-id="29f90-832">**-seq** is a sequential file.</span></span> <span data-ttu-id="29f90-833">**< MB\>:** サイズ (メガバイト単位)。</span><span class="sxs-lookup"><span data-stu-id="29f90-833">**<MB\>:** Size in megabytes.</span></span>  
   
- <span data-ttu-id="29f90-834">**-rt:**でリアルタイムに設定します。</span><span class="sxs-lookup"><span data-stu-id="29f90-834">**-rt:** Set the real-time mode on.</span></span>  
+ <span data-ttu-id="29f90-834">**-rt:** でリアルタイムに設定します。</span><span class="sxs-lookup"><span data-stu-id="29f90-834">**-rt:** Set the real-time mode on.</span></span>  
   
- <span data-ttu-id="29f90-835">**ログ ファイル:**ログ ファイルの名前 (既定では c:\rtlog.etl) です。</span><span class="sxs-lookup"><span data-stu-id="29f90-835">**Logfile:** Name of the log file (c:\rtlog.etl is the default).</span></span>  
+ <span data-ttu-id="29f90-835">**ログ ファイル:** ログ ファイルの名前 (既定では c:\rtlog.etl) です。</span><span class="sxs-lookup"><span data-stu-id="29f90-835">**Logfile:** Name of the log file (c:\rtlog.etl is the default).</span></span>  
   
  <span data-ttu-id="29f90-836">以下に例を示します。</span><span class="sxs-lookup"><span data-stu-id="29f90-836">For example:</span></span>  
   

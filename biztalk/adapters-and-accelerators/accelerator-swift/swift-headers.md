@@ -1,17 +1,17 @@
 ---
-title: "SWIFT ヘッダー |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT ヘッダー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SWIFT, headers
 - headers [SWIFT]
 ms.assetid: b599cca2-8ae6-42db-b3a2-712ba12c1017
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214378"
 ---
 # <a name="swift-headers"></a><span data-ttu-id="8c114-102">SWIFT ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8c114-102">SWIFT Headers</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="8c114-103">[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] SWIFT のヘッダーおよびトレーラのスキーマを提供します。</span><span class="sxs-lookup"><span data-stu-id="8c114-103"> [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] provides the SWIFT header and trailer schemas.</span></span> <span data-ttu-id="8c114-104">A4SWIFT が既に組み込まれているこれらのさまざまな金融 (FIN) メッセージのインターチェンジのスキーマにします。</span><span class="sxs-lookup"><span data-stu-id="8c114-104">A4SWIFT has already incorporated these into the interchange schemas for the various financial (FIN) messages.</span></span> <span data-ttu-id="8c114-105">カスタム SWIFT FIN 書式スタイル メッセージの種類 (たとえば、N98 メッセージ) を作成する場合は、独自の形式にヘッダーとトレーラーのスキーマを組み込むことができます。</span><span class="sxs-lookup"><span data-stu-id="8c114-105">If you want to create a custom SWIFT FIN format style message type (for example, an N98 message), you can incorporate the header and trailer schemas into your own format.</span></span>  
@@ -62,7 +63,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="8c114-172">**シーケンス番号 (ブロック 1)**</span><span class="sxs-lookup"><span data-stu-id="8c114-172">**Sequence Number (Block 1)**</span></span>|<span data-ttu-id="8c114-173">サービス識別子を持つすべての FIN メッセージ**01**または**05**転送の方向に適切な次の予期されたシーケンス番号です。</span><span class="sxs-lookup"><span data-stu-id="8c114-173">For all FIN messages with a Service Identifier of **01** or **05**, this number is the next expected sequence number appropriate to the direction of the transmission.</span></span><br /><br /> <span data-ttu-id="8c114-174">サービス識別子を持つ FIN メッセージの**21**または**25**サービスの受信確認を送ったメッセージのシーケンス番号はします。</span><span class="sxs-lookup"><span data-stu-id="8c114-174">For FIN messages with a Service Identifier of **21** or **25**, the sequence number is that of the acknowledged service message.</span></span>|  
 |<span data-ttu-id="8c114-175">**サービス識別子 (ブロック 1)**</span><span class="sxs-lookup"><span data-stu-id="8c114-175">**Service Identifier (Block 1)**</span></span>|<span data-ttu-id="8c114-176">FIN アプリケーションに適切なメッセージの種類を示す 2 桁の数字の数。</span><span class="sxs-lookup"><span data-stu-id="8c114-176">A two-digit number identifying the type of service message, appropriate to the FIN application.</span></span> <span data-ttu-id="8c114-177">FIN の 000 ~ 999 の種類のすべてのメッセージを使用して**01**です。</span><span class="sxs-lookup"><span data-stu-id="8c114-177">For all messages of types 000 to 999 for FIN, use **01**.</span></span> <span data-ttu-id="8c114-178">02 に 43 の種類のすべてのメッセージ、その 2 桁の数字サービス メッセージ型を使用します。</span><span class="sxs-lookup"><span data-stu-id="8c114-178">For all messages of types 02 to 43, use their two-digit service message type.</span></span>|  
 |<span data-ttu-id="8c114-179">**セッション識別子 (ブロック 1)**</span><span class="sxs-lookup"><span data-stu-id="8c114-179">**Session Identifier (Block 1)**</span></span>|<span data-ttu-id="8c114-180">必要に応じて、アプリケーションの現在のセッション数が、ログインに基づきます。</span><span class="sxs-lookup"><span data-stu-id="8c114-180">As appropriate, the current application session number based on the Login.</span></span>|  
-|<span data-ttu-id="8c114-181">**開始区切り記号 (すべてのブロック)**</span><span class="sxs-lookup"><span data-stu-id="8c114-181">**Start Delimiter (All Blocks)**</span></span>|<span data-ttu-id="8c114-182">左中かっこ: **{**です。</span><span class="sxs-lookup"><span data-stu-id="8c114-182">The left curly brace: **{**.</span></span>|  
+|<span data-ttu-id="8c114-181">**開始区切り記号 (すべてのブロック)**</span><span class="sxs-lookup"><span data-stu-id="8c114-181">**Start Delimiter (All Blocks)**</span></span>|<span data-ttu-id="8c114-182">左中かっこ: **{** です。</span><span class="sxs-lookup"><span data-stu-id="8c114-182">The left curly brace: **{**.</span></span>|  
   
 ## <a name="see-also"></a><span data-ttu-id="8c114-183">参照</span><span class="sxs-lookup"><span data-stu-id="8c114-183">See Also</span></span>  
  [<span data-ttu-id="8c114-184">スキーマの操作</span><span class="sxs-lookup"><span data-stu-id="8c114-184">Working with Schemas</span></span>](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)

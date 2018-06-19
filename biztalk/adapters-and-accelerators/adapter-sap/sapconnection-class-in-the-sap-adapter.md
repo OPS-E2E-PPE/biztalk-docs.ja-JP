@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964296"
 ---
 # <a name="sapconnection-class-in-the-sap-adapter"></a><span data-ttu-id="2e27c-102">SAP アダプターで SAPConnection クラス</span><span class="sxs-lookup"><span data-stu-id="2e27c-102">SAPConnection class in the SAP adapter</span></span>
 <span data-ttu-id="2e27c-103">次のセクションではメソッドとプロパティの一覧表示、 **SAPConnection**クラスです。</span><span class="sxs-lookup"><span data-stu-id="2e27c-103">The following section lists the methods and properties for the **SAPConnection** class.</span></span> <span data-ttu-id="2e27c-104">これは、SAP アプリケーション サーバーへの ADO.NET 接続を表します。</span><span class="sxs-lookup"><span data-stu-id="2e27c-104">This represents an ADO.NET connection to the SAP application server.</span></span>  

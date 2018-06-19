@@ -1,17 +1,17 @@
 ---
-title: "メッセージの修復と新しい送信のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの修復と新しい送信のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - troubleshooting, Message Repair and New Submission
 - Message Repair and New Submission, troubleshooting
 ms.assetid: bb07a286-6f02-4639-b5fa-a3647e356ac8
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25965416"
 ---
 # <a name="message-repair-and-new-submission-troubleshooting"></a><span data-ttu-id="eba36-102">Message Repair and 新しい送信のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="eba36-102">Message Repair and New Submission Troubleshooting</span></span>
 ## <a name="a-repaired-message-cannot-be-submitted-if-the-envelope-schema-is-not-deployed"></a><span data-ttu-id="eba36-103">エンベロープ スキーマが展開されていない場合は、修復されたメッセージを送信することはできません。</span><span class="sxs-lookup"><span data-stu-id="eba36-103">A repaired message cannot be submitted if the envelope schema is not deployed</span></span>  
@@ -84,7 +85,7 @@ ms.lasthandoff: 01/17/2018
   
 5.  <span data-ttu-id="eba36-151">IIS マネージャー ダイアログ ボックスの アプリケーション プール ノードの下で A4SWIFT_MRSR のアプリケーション プールを右クリックし、をクリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="eba36-151">In the IIS Manager dialog box, under the Application Pools node, right-click the application pool for A4SWIFT_MRSR, and then click **Properties**.</span></span>  
   
-6.  <span data-ttu-id="eba36-152">\<アプリケーション プール名\>プロパティ ダイアログ ボックスをクリックして、 **Identity**注意してください。</span><span class="sxs-lookup"><span data-stu-id="eba36-152">In the \<application pool name\> Properties dialog box, click the **Identity** note.</span></span> <span data-ttu-id="eba36-153">場合**定義済み**がクリックされたと**Network Service**はクリックして選択すると、**構成可能**ローカルまたはドメイン アカウントを入力し、パスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="eba36-153">If **Predefined** is clicked and **Network Service** is selected, click **Configurable**, enter your local or domain account, and then enter your password.</span></span> <span data-ttu-id="eba36-154">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eba36-154">Click **OK**.</span></span>  
+6.  <span data-ttu-id="eba36-152">\<アプリケーション プール名\>プロパティ ダイアログ ボックスをクリックして、 **Identity**注意してください。</span><span class="sxs-lookup"><span data-stu-id="eba36-152">In the \<application pool name\> Properties dialog box, click the **Identity** note.</span></span> <span data-ttu-id="eba36-153">場合**定義済み**がクリックされたと**Network Service**はクリックして選択すると、**構成可能**ローカルまたはドメイン アカウントを入力し、パスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="eba36-153">If **Predefined** is clicked and **Network Service** is selected, click **Configurable**, enter your local or domain account, and then enter your password.</span></span> <span data-ttu-id="eba36-154">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eba36-154">Click **OK**.</span></span>  
   
 ## <a name="a-message-created-in-mrsr-site-on-a-localized-computer-is-not-processed"></a><span data-ttu-id="eba36-155">ローカライズされたコンピューター上の MRSR サイトで作成されたというメッセージが処理されません。</span><span class="sxs-lookup"><span data-stu-id="eba36-155">A message created in MRSR site on a localized computer is not processed</span></span>  
   
@@ -107,7 +108,7 @@ ms.lasthandoff: 01/17/2018
   
 5.  <span data-ttu-id="eba36-168">トランスポートのプロパティ ダイアログ ボックスの値を置き換える**SharePointSite URL**ローカライズ版に相当します。</span><span class="sxs-lookup"><span data-stu-id="eba36-168">In the Transport Properties dialog box, replace the value for **SharePointSite URL** with the localized equivalent.</span></span>  
   
-6.  <span data-ttu-id="eba36-169">をクリックして**[ok]**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="eba36-169">Click **OK**, and then click **OK**.</span></span>  
+6.  <span data-ttu-id="eba36-169">をクリックして **[ok]**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="eba36-169">Click **OK**, and then click **OK**.</span></span>  
   
 ## <a name="removing-a-role-while-it-is-processing-a-message-results-in-incomplete-removal-of-documents-and-artifacts"></a><span data-ttu-id="eba36-170">不完全な削除のドキュメントとの成果物、メッセージの結果を処理している間は、役割を削除します。</span><span class="sxs-lookup"><span data-stu-id="eba36-170">Removing a role while it is processing a message results in incomplete removal of documents and artifacts</span></span>  
   

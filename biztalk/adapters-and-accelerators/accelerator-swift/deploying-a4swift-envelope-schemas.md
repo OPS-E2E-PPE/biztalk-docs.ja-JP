@@ -1,11 +1,11 @@
 ---
-title: "A4SWIFT エンベロープ スキーマを展開する |Microsoft ドキュメント"
-ms.custom: 
+title: A4SWIFT エンベロープ スキーマを展開する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, envelope schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - envelope schemas
 - schemas, envelope schemas
 ms.assetid: 6440608c-d30d-4d82-827a-8a4b2738db85
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25967048"
 ---
 # <a name="deploying-a4swift-envelope-schemas"></a><span data-ttu-id="b154b-102">A4SWIFT エンベロープ スキーマを展開します。</span><span class="sxs-lookup"><span data-stu-id="b154b-102">Deploying A4SWIFT Envelope Schemas</span></span>
 <span data-ttu-id="b154b-103">Message Repair and New Submission を設定するときに、プロジェクトのスキーマでエンベロープ スキーマを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="b154b-103">You must include envelope schemas in schema projects whenever you set up Message Repair and New Submission.</span></span> <span data-ttu-id="b154b-104">エンベロープ スキーマで、EnvelopeMT103.xsd などが MRSR サイトへの書き込みに必要です。</span><span class="sxs-lookup"><span data-stu-id="b154b-104">An envelope schema, such as EnvelopeMT103.xsd, is required to write to MRSR site.</span></span>  

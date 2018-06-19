@@ -12,7 +12,7 @@ helpviewer_keywords:
 - backing up, Master Secret server
 - Master Secret server, backing up
 ms.assetid: 22c23f66-b7df-4379-8a9f-065406ba8aa8
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25969584"
 ---
 # <a name="how-to-back-up-the-master-secret"></a><span data-ttu-id="23f45-102">マスター シークレットをバックアップする方法</span><span class="sxs-lookup"><span data-stu-id="23f45-102">How to Back Up the Master Secret</span></span>
 <span data-ttu-id="23f45-103">マスター シークレットは、マスター シークレット サーバーから NTFS ファイル システムまたはリムーバブル メディア (フロッピー ディスクなど) にバックアップできます。</span><span class="sxs-lookup"><span data-stu-id="23f45-103">You can back up the master secret from the master secret server onto an NTFS file system or removable media, such as a floppy disk.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  <span data-ttu-id="23f45-117">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="23f45-117">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="23f45-118">既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="23f45-118">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  <span data-ttu-id="23f45-119">型 * * ssoconfig – backupSecret *\<バックアップ ファイル\>* * *、どこで*\<バックアップ ファイル\>*はマスター シークレットがバックアップ先ファイルの名前とパス。</span><span class="sxs-lookup"><span data-stu-id="23f45-119">Type **ssoconfig –backupSecret *\<backup file\>***, where *\<backup file\>* is the path and name of the file where the master secret will be backed up.</span></span> <span data-ttu-id="23f45-120">たとえば、A:\ssobackup.bak と指定します。</span><span class="sxs-lookup"><span data-stu-id="23f45-120">For example, A:\ssobackup.bak</span></span>  
+4.  <span data-ttu-id="23f45-119">型 * * ssoconfig – backupSecret *\<バックアップ ファイル\>* * *、どこで*\<バックアップ ファイル\>* はマスター シークレットがバックアップ先ファイルの名前とパス。</span><span class="sxs-lookup"><span data-stu-id="23f45-119">Type **ssoconfig –backupSecret *\<backup file\>***, where *\<backup file\>* is the path and name of the file where the master secret will be backed up.</span></span> <span data-ttu-id="23f45-120">たとえば、A:\ssobackup.bak と指定します。</span><span class="sxs-lookup"><span data-stu-id="23f45-120">For example, A:\ssobackup.bak</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="23f45-121">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="23f45-121">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

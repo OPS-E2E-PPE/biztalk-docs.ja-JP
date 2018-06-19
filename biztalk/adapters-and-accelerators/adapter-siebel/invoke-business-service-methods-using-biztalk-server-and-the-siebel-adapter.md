@@ -1,17 +1,17 @@
 ---
-title: "ビジネス サービス メソッドを使用して BizTalk Server と Siebel アダプターを呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス サービス メソッドを使用して BizTalk Server と Siebel アダプターを呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, invoke business service methods
 - business service methods, invoking
 ms.assetid: cf437c4f-fa65-4f89-a197-c83869930b2c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966160"
 ---
 # <a name="invoke-business-service-methods-using-biztalk-server-and-the-siebel-adapter"></a><span data-ttu-id="b12ce-102">ビジネス サービス メソッドを使用して BizTalk Server と Siebel アダプターを呼び出し</span><span class="sxs-lookup"><span data-stu-id="b12ce-102">Invoke Business Service Methods Using BizTalk Server and the Siebel adapter</span></span>
 <span data-ttu-id="b12ce-103">Siebel ビジネス サービスは、Siebel の直接呼び出すことができるビジネス メソッドのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="b12ce-103">A Siebel business service is a collection of business methods that can be directly invoked in Siebel.</span></span> <span data-ttu-id="b12ce-104">方法の詳細については[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]Siebel システムでのビジネス サービスを呼び出すサポートを参照してください[の Siebel ビジネス サービスを運用](../../adapters-and-accelerators/adapter-siebel/operations-on-business-services-in-siebel.md)です。</span><span class="sxs-lookup"><span data-stu-id="b12ce-104">For more information about how the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] supports invoking business services in a Siebel system, see [Operations on Business Services in Siebel](../../adapters-and-accelerators/adapter-siebel/operations-on-business-services-in-siebel.md).</span></span> <span data-ttu-id="b12ce-105">SOAP の構造の詳細については、ビジネス サービス操作を実行するメッセージを参照してください[ビジネス サービス操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-service-operations.md)です。</span><span class="sxs-lookup"><span data-stu-id="b12ce-105">For more information about the structure of SOAP messages for performing business service operations, see [Message Schemas for Business Service Operations](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-service-operations.md).</span></span>  

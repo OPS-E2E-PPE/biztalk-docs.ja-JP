@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-rendezvous-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: b4fabb9146b4f559dd1a41b6e3b7da5ce9489d1f
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015273"
 ---
 # <a name="how-to-set-tibco-rendezvous-transport-properties"></a><span data-ttu-id="cf2b4-101">TIBCO Rendezvous トランスポートのプロパティを設定する方法</span><span class="sxs-lookup"><span data-stu-id="cf2b4-101">How to Set TIBCO Rendezvous Transport Properties</span></span>
 <span data-ttu-id="cf2b4-102">TIBCO Rendezvous トランスポートのプロパティは、実行時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="cf2b4-102">The TIBCO Rendezvous Transport property is used for run time.</span></span> <span data-ttu-id="cf2b4-103">**トランスポートのプロパティ** 画面で、生成されたメッセージを公開する TIBCO Rendezvous ドメインを識別する接続パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="cf2b4-103">In the **Transport Properties** screen, you set the connection parameters that identify the TIBCO Rendezvous domain where you want to publish the generated messages.</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/07/2017
     |<span data-ttu-id="cf2b4-144">**順序の保持**</span><span class="sxs-lookup"><span data-stu-id="cf2b4-144">**Preserver Order**</span></span>|<span data-ttu-id="cf2b4-145">既定値は True です。</span><span class="sxs-lookup"><span data-stu-id="cf2b4-145">Default value is True.</span></span> <span data-ttu-id="cf2b4-146">ロジックで、メッセージを BizTalk Server から受信したときと同じ順序で TIBCO Rendezvous に送信できます。</span><span class="sxs-lookup"><span data-stu-id="cf2b4-146">Enables logic to send messages to TIBCO Rendezvous in the same order they were received from BizTalk Server.</span></span> <span data-ttu-id="cf2b4-147">このパラメーターにより、同じ順序での公開が強制されますが、サブスクライバーが同じ順序で受信するということではありません。</span><span class="sxs-lookup"><span data-stu-id="cf2b4-147">This parameter forces publishing in the same order; it does not mean that subscribers receive them in the same order.</span></span>|  
     |<span data-ttu-id="cf2b4-148">**送信ポートの識別子**</span><span class="sxs-lookup"><span data-stu-id="cf2b4-148">**Send Port Identifier**</span></span>|<span data-ttu-id="cf2b4-149">この識別子は、このポートに関連付けられているログ メッセージに表示されます。</span><span class="sxs-lookup"><span data-stu-id="cf2b4-149">This identifier appears in log messages associated with this port.</span></span> <span data-ttu-id="cf2b4-150">これは、便宜上指定します。</span><span class="sxs-lookup"><span data-stu-id="cf2b4-150">It is provided as a convenience.</span></span>|  
   
-4.  <span data-ttu-id="cf2b4-151">展開**Rendezvous トランスポート**TIBCO Rendezvous サーバーへの接続情報を入力し、**適用**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="cf2b4-151">Expand **Rendezvous Transport** and enter the information for connection to the TIBCO Rendezvous server, click **Apply**, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="cf2b4-151">展開**Rendezvous トランスポート**TIBCO Rendezvous サーバーへの接続情報を入力し、**適用**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="cf2b4-151">Expand **Rendezvous Transport** and enter the information for connection to the TIBCO Rendezvous server, click **Apply**, and then click **OK**.</span></span>  
   
      <span data-ttu-id="cf2b4-152">Microsoft BizTalk Adapter for TIBCO Rendezvous が TIBCO Rendezvous にアクセスできるようにするために接続パラメーターを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf2b4-152">You must set connection parameters for Microsoft BizTalk Adapter for TIBCO Rendezvous to access TIBCO Rendezvous.</span></span>  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/07/2017
         > [!NOTE]
         >  <span data-ttu-id="cf2b4-173">関連アプリケーションを作成する方法については、次を参照してください。[関連アプリケーションの作成](../core/creating-affiliate-applications1.md)です。</span><span class="sxs-lookup"><span data-stu-id="cf2b4-173">For information about how to create an affiliate application, see [Creating Affiliate Applications](../core/creating-affiliate-applications1.md).</span></span>  
   
-6.  <span data-ttu-id="cf2b4-174">をクリックして**適用**、クリックして**[ok]**接続情報を受け入れるように必要なすべての情報を提供するとします。</span><span class="sxs-lookup"><span data-stu-id="cf2b4-174">Click **Apply**, and then click **OK** after providing all required information to accept the connection information.</span></span>  
+6.  <span data-ttu-id="cf2b4-174">をクリックして**適用**、クリックして **[ok]** 接続情報を受け入れるように必要なすべての情報を提供するとします。</span><span class="sxs-lookup"><span data-stu-id="cf2b4-174">Click **Apply**, and then click **OK** after providing all required information to accept the connection information.</span></span>  
   
      <span data-ttu-id="cf2b4-175">BizTalk Adapter for TIBCO Rendezvous にアクセスする TIBCO Rendezvous の接続パラメーターを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf2b4-175">You must set connection parameters for BizTalk Adapter for TIBCO Rendezvous to access TIBCO Rendezvous .</span></span>  
   

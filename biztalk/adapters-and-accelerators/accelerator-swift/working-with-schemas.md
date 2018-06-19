@@ -1,17 +1,17 @@
 ---
-title: "スキーマの操作 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマの操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - developing, schemas
 - schemas, developing
 ms.assetid: 123c4b43-34e4-41c7-980d-5d518b1479c1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963096"
 ---
 # <a name="working-with-schemas"></a><span data-ttu-id="e6eb3-102">スキーマの操作</span><span class="sxs-lookup"><span data-stu-id="e6eb3-102">Working with Schemas</span></span>
 <span data-ttu-id="e6eb3-103">指定されたスキーマ[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]は、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Worldwide 銀行間財務通信 (SWIFT) FIN メッセージの社会の XSD 表記します。</span><span class="sxs-lookup"><span data-stu-id="e6eb3-103">The schemas provided in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] are the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] XSD representation of the Society for Worldwide Interbank Financial Telecommunication (SWIFT) FIN messages.</span></span> <span data-ttu-id="e6eb3-104">各メッセージの種類は、SWIFT ヘッダーとトレーラーの SWIFT (インターチェンジの形式) を含む独自のスキーマがします。</span><span class="sxs-lookup"><span data-stu-id="e6eb3-104">Each message type has its own schema, including the SWIFT header and SWIFT trailer (interchange format).</span></span> <span data-ttu-id="e6eb3-105">このスキーマは、SWIFT メッセージの送受信に十分です。</span><span class="sxs-lookup"><span data-stu-id="e6eb3-105">This schema is sufficient to send or receive a SWIFT message.</span></span> <span data-ttu-id="e6eb3-106">これらのスキーマは、フラット ファイル FIN 構造体の詳細な XML 表現を提供する、区切り文字および位置指定レコードの一意の組み合わせ。</span><span class="sxs-lookup"><span data-stu-id="e6eb3-106">These schemas are a unique mixture of delimited and positional records, providing a detailed XML representation of the flat-file FIN structures.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "パイプライン コンポーネントでの WCF メッセージにおける SOAP ヘッダーへのアクセス |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン コンポーネントでの WCF メッセージにおける SOAP ヘッダーへのアクセス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, WCF services
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - WCF services, SOAP headers
 - SOAP headers, WCF messages
 ms.assetid: 5e24afa3-b2e6-472e-8890-a47b59573304
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965104"
 ---
 # <a name="accessing-soap-headers-in-wcf-messages-with-pipeline-components"></a><span data-ttu-id="b304a-102">パイプライン コンポーネントにおける WCF メッセージでの SOAP ヘッダーへのアクセス</span><span class="sxs-lookup"><span data-stu-id="b304a-102">Accessing SOAP Headers in WCF Messages with Pipeline Components</span></span>
 <span data-ttu-id="b304a-103">コンテキスト プロパティ名の組み合わせを使用するパイプライン コンポーネントにおける WCF アダプターで SOAP ヘッダーにアクセスする**InboundHeaders**、およびターゲットの名前空間**http://schemas.microsoft.com/BizTalk/2006/01、アダプター、WCF-プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="b304a-103">To access the SOAP headers with the WCF adapters in pipeline components, you use a combination of the context property name, **InboundHeaders**, and the target namespace **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**.</span></span> <span data-ttu-id="b304a-104">WCF アダプタを受信メッセージのカスタム SOAP ヘッダーと標準 SOAP ヘッダーのコピー、 **InboundHeaders**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="b304a-104">The WCF adapters copy custom SOAP headers and standard SOAP headers in the inbound messages to the **InboundHeaders** property.</span></span> <span data-ttu-id="b304a-105">WCF アダプターを使用すると、プログラムによってコンテキスト プロパティへの昇格または書き込みを行うプロパティを選択することもできます。</span><span class="sxs-lookup"><span data-stu-id="b304a-105">The WCF adapters also allow you to programmatically select the properties you would like to promote or write to the context properties programmatically.</span></span> <span data-ttu-id="b304a-106">参照してください[公開された WCF サービスでの SOAP ヘッダー](../core/soap-headers-with-published-wcf-services.md)詳細についてはします。</span><span class="sxs-lookup"><span data-stu-id="b304a-106">See [SOAP Headers with Published WCF Services](../core/soap-headers-with-published-wcf-services.md) for more details.</span></span>  

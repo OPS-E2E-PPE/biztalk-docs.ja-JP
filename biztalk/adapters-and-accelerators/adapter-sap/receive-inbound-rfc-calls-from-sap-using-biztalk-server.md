@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967752"
 ---
 # <a name="receive-inbound-rfc-calls-from-sap-using-biztalk-server"></a><span data-ttu-id="910cb-102">BizTalk Server を使用して SAP から受信 RFC 呼び出しの受信します。</span><span class="sxs-lookup"><span data-stu-id="910cb-102">Receive Inbound RFC Calls from SAP using BizTalk Server</span></span>
 <span data-ttu-id="910cb-103">RFC サーバーのシナリオでは、3 つのエンティティがあります。</span><span class="sxs-lookup"><span data-stu-id="910cb-103">In an RFC server scenario, there are three entities:</span></span>  
@@ -90,7 +91,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="910cb-145">参照してください[参照、検索、および get メタデータの SAP RFC 操作](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)手順については、特定の RFC のスキーマを生成する方法です。</span><span class="sxs-lookup"><span data-stu-id="910cb-145">See [Browse, search, and get Metadata for RFC Operations in SAP](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md) for instructions on how to generate schema for a particular RFC.</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="910cb-146">受信 RFC 呼び出しのスキーマを生成するために選択を確認してください**サービス (入力方向の操作)**から、**選択コントラクト型**ドロップダウン リストで、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="910cb-146">Because you are generating the schema for an inbound RFC call, make sure you select **Service (Inbound operation)** from the **Select contract type** drop-down list in the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)].</span></span>  
+>  <span data-ttu-id="910cb-146">受信 RFC 呼び出しのスキーマを生成するために選択を確認してください**サービス (入力方向の操作)** から、**選択コントラクト型**ドロップダウン リストで、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="910cb-146">Because you are generating the schema for an inbound RFC call, make sure you select **Service (Inbound operation)** from the **Select contract type** drop-down list in the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)].</span></span>  
   
 ## <a name="defining-messages-and-message-types"></a><span data-ttu-id="910cb-147">メッセージとメッセージの種類を定義します。</span><span class="sxs-lookup"><span data-stu-id="910cb-147">Defining Messages and Message Types</span></span>  
  <span data-ttu-id="910cb-148">以前に生成したスキーマには、オーケストレーション内のメッセージに対して必要な「種類」がについて説明します。</span><span class="sxs-lookup"><span data-stu-id="910cb-148">The schema that you generated earlier describes the "types" required for the messages in the orchestration.</span></span> <span data-ttu-id="910cb-149">メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。</span><span class="sxs-lookup"><span data-stu-id="910cb-149">A message is typically a variable, the type for which is defined by the corresponding schema.</span></span> <span data-ttu-id="910cb-150">BizTalk プロジェクトのオーケストレーションの種類からのメッセージに最初の手順で生成したスキーマをリンクする必要があります。</span><span class="sxs-lookup"><span data-stu-id="910cb-150">You must link the schema you generated in the first step to the messages from the Orchestration view of the BizTalk project.</span></span>  

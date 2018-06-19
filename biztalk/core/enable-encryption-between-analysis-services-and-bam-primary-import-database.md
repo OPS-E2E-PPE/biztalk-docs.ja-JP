@@ -1,11 +1,11 @@
 ---
-title: "Analysis Services と BAM プライマリ インポート データベース間の暗号化を有効にする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Analysis Services と BAM プライマリ インポート データベース間の暗号化を有効にする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SQL Server Analysis Services, enabling encryption
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Primary Import database [BAM], enabling encryption
 - SQL Server Analysis Services, Primary Import database [BAM]
 ms.assetid: 8107c557-e57c-4569-9ff7-abcb7a8e5243
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968904"
 ---
 # <a name="how-to-enable-encryption-between-analysis-services-and-the-bam-primary-import-database"></a><span data-ttu-id="a4b02-102">Analysis Services と BAM プライマリ インポート データベース間の暗号化を有効にする方法</span><span class="sxs-lookup"><span data-stu-id="a4b02-102">How to Enable Encryption Between Analysis Services and the BAM Primary Import Database</span></span>
 <span data-ttu-id="a4b02-103">既定では、BAM のインストールまたはアップグレード中、暗号化は無効になっています。</span><span class="sxs-lookup"><span data-stu-id="a4b02-103">Encryption is not enabled by default during an installation or upgrade of BAM.</span></span> <span data-ttu-id="a4b02-104">暗号化を有効にするには、BAM 構成 XML ファイルの UseEncryption フラグの値を 1 に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a4b02-104">To enable encryption, you must set the UseEncryption flag in the BAM configuration XML file to a value of 1.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="a4b02-109">[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] に移動します。</span><span class="sxs-lookup"><span data-stu-id="a4b02-109">Navigate to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)].</span></span>  
   
-3.  <span data-ttu-id="a4b02-110">型**bm get config ファイル名:\<出力ファイル\>**です。</span><span class="sxs-lookup"><span data-stu-id="a4b02-110">Type **bm get-config -FileName:\<output file\>**.</span></span>  
+3.  <span data-ttu-id="a4b02-110">型**bm get config ファイル名:\<出力ファイル\>** です。</span><span class="sxs-lookup"><span data-stu-id="a4b02-110">Type **bm get-config -FileName:\<output file\>**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="a4b02-111">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="a4b02-111">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/28/2017
   
     -   <span data-ttu-id="a4b02-115">新しい設定:\<プロパティ名 ="UseEncryption"\>1\</Property\></span><span class="sxs-lookup"><span data-stu-id="a4b02-115">New Setting: \<Property Name="UseEncryption"\>1\</Property\></span></span>  
   
-6.  <span data-ttu-id="a4b02-116">」と入力して、BAM 構成を更新**bm 更新 config ファイル名:\<config ファイル\>**です。</span><span class="sxs-lookup"><span data-stu-id="a4b02-116">Update the BAM configuration by typing **bm update-config -FileName:\<config file\>**.</span></span>  
+6.  <span data-ttu-id="a4b02-116">」と入力して、BAM 構成を更新**bm 更新 config ファイル名:\<config ファイル\>** です。</span><span class="sxs-lookup"><span data-stu-id="a4b02-116">Update the BAM configuration by typing **bm update-config -FileName:\<config file\>**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="a4b02-117">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="a4b02-117">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "SQL Server の BizTalk アダプターを理解する |Microsoft ドキュメント"
-ms.custom: 
+title: SQL Server の BizTalk アダプターを理解する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 302a7f20-ffa2-49f1-a4c4-dd713adc23e1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965304"
 ---
 # <a name="understand-biztalk-adapter-for-sql-server"></a><span data-ttu-id="cd65b-102">SQL Server の BizTalk アダプターを理解します。</span><span class="sxs-lookup"><span data-stu-id="cd65b-102">Understand BizTalk Adapter for SQL Server</span></span>
 <span data-ttu-id="cd65b-103">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]外部システムと対話できるようにするサービス指向のプログラムによるアクセスを有効にします。</span><span class="sxs-lookup"><span data-stu-id="cd65b-103">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] enables service-oriented programmatic access making it possible to interact with an external system.</span></span> <span data-ttu-id="cd65b-104">アダプターでは、次の利点をクライアントに使用します。</span><span class="sxs-lookup"><span data-stu-id="cd65b-104">The adapters provide the following advantages to clients:</span></span>  

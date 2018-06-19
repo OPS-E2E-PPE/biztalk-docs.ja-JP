@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22213978"
 ---
 # <a name="security-summary"></a><span data-ttu-id="c1599-102">セキュリティの概要</span><span class="sxs-lookup"><span data-stu-id="c1599-102">Security Summary</span></span>
 ## <a name="overview"></a><span data-ttu-id="c1599-103">概要</span><span class="sxs-lookup"><span data-stu-id="c1599-103">Overview</span></span>

@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターを使用して大規模なデータ型を持つテーブルとビューの操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターを使用して大規模なデータ型を持つテーブルとビューの操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cec15b01-7a57-4917-8c21-44a1cfaadc59
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967192"
 ---
 # <a name="run-operations-on-tables-and-views-with-large-data-types-using-the-sql-adapter"></a><span data-ttu-id="12134-102">SQL アダプターを使用して大規模なデータ型を持つテーブルとビューの操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="12134-102">Run operations on tables and views with large data types using the SQL adapter</span></span>
 <span data-ttu-id="12134-103">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアントの読み取りし、は、大規模なデータ型の列のデータを更新する、varchar (max)、nvarchar (max)、または varbinary (max) を有効にします。</span><span class="sxs-lookup"><span data-stu-id="12134-103">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] enables adapter clients to read and update data in columns of large data types, that is, varchar(max), nvarchar(max), or varbinary(max).</span></span> <span data-ttu-id="12134-104">このような列からデータを読み取る、アダプターのクライアントは、Select 操作を使用できます。</span><span class="sxs-lookup"><span data-stu-id="12134-104">To read data from such columns, adapter clients can use the Select operation.</span></span> <span data-ttu-id="12134-105">挿入またはこのような列にデータを更新は、アダプターは、ここでの型 varchar (max)、nvarchar (max)、または varbinary (max) 列の名前は < column_name > 設定 < column_name > 操作を公開します。</span><span class="sxs-lookup"><span data-stu-id="12134-105">To insert or update data into such columns, the adapter exposes a Set<column_name> operation, where <column_name> is the name of the column of type varchar(max), nvarchar(max), or varbinary(max).</span></span>  
@@ -201,7 +202,7 @@ ms.lasthandoff: 11/28/2017
 <SetDocumentResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/Records" />  
 ```  
   
- <span data-ttu-id="12134-293">アダプターの空の応答を送信する、**設定 < column_name >**操作します。</span><span class="sxs-lookup"><span data-stu-id="12134-293">The adapter sends an empty response for the **Set<column_name>** operation.</span></span>  
+ <span data-ttu-id="12134-293">アダプターの空の応答を送信する、**設定 < column_name >** 操作します。</span><span class="sxs-lookup"><span data-stu-id="12134-293">The adapter sends an empty response for the **Set<column_name>** operation.</span></span>  
   
 ## <a name="best-practices"></a><span data-ttu-id="12134-294">ベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="12134-294">Best Practices</span></span>  
  <span data-ttu-id="12134-295">展開して、BizTalk プロジェクトを構成することが後、は、バインド ファイルと呼ばれる XML ファイルに構成設定をエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="12134-295">After you have deployed and configured the BizTalk project, you can export configuration settings to an XML file called the binding file.</span></span> <span data-ttu-id="12134-296">バインド ファイルを生成したできるように、送信ポートなどの項目を作成し、同じオーケストレーション用のポートを受信する必要はありません、ファイルから構成設定をインポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="12134-296">Once you generate a binding file, you can import the configuration settings from the file, so that you do not need to create items such as the send ports and receive ports for the same orchestration.</span></span> <span data-ttu-id="12134-297">バインド ファイルの詳細については、次を参照してください。[アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)です。</span><span class="sxs-lookup"><span data-stu-id="12134-297">For more information about binding files, see [Reuse adapter bindings](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md).</span></span>

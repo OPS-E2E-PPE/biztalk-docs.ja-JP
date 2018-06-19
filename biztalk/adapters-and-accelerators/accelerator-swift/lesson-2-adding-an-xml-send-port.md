@@ -1,17 +1,17 @@
 ---
-title: "レッスン 2: XML 送信ポートの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 2: XML 送信ポートの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, XML ports
 - XML ports
 ms.assetid: 03b2ee43-7874-4ef9-b716-8e16e96d8382
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960704"
 ---
 # <a name="lesson-2-adding-an-xml-send-port"></a><span data-ttu-id="b348e-102">レッスン 2: XML 送信ポートの追加</span><span class="sxs-lookup"><span data-stu-id="b348e-102">Lesson 2: Adding an XML Send Port</span></span>
 <span data-ttu-id="b348e-103">送信ポートを使用して、メッセージを送信する方法を定義します。</span><span class="sxs-lookup"><span data-stu-id="b348e-103">You use a send port to define how you want the messages sent.</span></span> <span data-ttu-id="b348e-104">このレッスンでは、XML メッセージを送信する方法を定義する送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="b348e-104">In this lesson, you create a send port to define how XML messages should be sent.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  <span data-ttu-id="b348e-111">フォルダーの参照 ダイアログ ボックスに移動、 **\<ドライブ\>: \Labs\Outbound**フォルダーをクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="b348e-111">In the Browse For Folder dialog box, move to the **\<drive\>:\Labs\Outbound** folder, and then click **OK**.</span></span>  
   
-7.  <span data-ttu-id="b348e-112">FILE トランスポートのプロパティ ダイアログ ボックスでいることを確認**%MessageID%.xml**で入力した、**ファイル名**ボックスし、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="b348e-112">In the FILE Transport Properties dialog box, ensure that **%MessageID%.xml** is entered in the **File Name** box, and then click **OK**.</span></span>  
+7.  <span data-ttu-id="b348e-112">FILE トランスポートのプロパティ ダイアログ ボックスでいることを確認 **%MessageID%.xml**で入力した、**ファイル名**ボックスし、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="b348e-112">In the FILE Transport Properties dialog box, ensure that **%MessageID%.xml** is entered in the **File Name** box, and then click **OK**.</span></span>  
   
 8.  <span data-ttu-id="b348e-113">送信ポートのプロパティ ダイアログ ボックスでいることを確認**BizTalkServerApplication**が選択されて、**送信ハンドラー**ボックスで、 **PassThruTransmit**が選択されて、**送信パイプライン**ボックス。</span><span class="sxs-lookup"><span data-stu-id="b348e-113">In the Send Port Properties dialog box, ensure that **BizTalkServerApplication** is selected for the **Send handler** box, and that **PassThruTransmit** is selected for the **Send pipeline** box.</span></span>  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="b348e-115">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b348e-115">Use this</span></span>|<span data-ttu-id="b348e-116">目的</span><span class="sxs-lookup"><span data-stu-id="b348e-116">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="b348e-117">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="b348e-117">**Property**</span></span>|<span data-ttu-id="b348e-118">選択**BTS です。ReceivePortName**です。</span><span class="sxs-lookup"><span data-stu-id="b348e-118">Select **BTS.ReceivePortName**.</span></span>|  
-    |<span data-ttu-id="b348e-119">**演算子**</span><span class="sxs-lookup"><span data-stu-id="b348e-119">**Operator**</span></span>|<span data-ttu-id="b348e-120">選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="b348e-120">Select **==**.</span></span>|  
+    |<span data-ttu-id="b348e-119">**演算子**</span><span class="sxs-lookup"><span data-stu-id="b348e-119">**Operator**</span></span>|<span data-ttu-id="b348e-120">選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="b348e-120">Select **==**.</span></span>|  
     |<span data-ttu-id="b348e-121">**値**</span><span class="sxs-lookup"><span data-stu-id="b348e-121">**Value**</span></span>|<span data-ttu-id="b348e-122">型**MT103_FlatFile_ReceivePort**です。</span><span class="sxs-lookup"><span data-stu-id="b348e-122">Type **MT103_FlatFile_ReceivePort**.</span></span>|  
     |<span data-ttu-id="b348e-123">**[グループ]**</span><span class="sxs-lookup"><span data-stu-id="b348e-123">**Group**</span></span>|<span data-ttu-id="b348e-124">選択**と**です。</span><span class="sxs-lookup"><span data-stu-id="b348e-124">Select **And**.</span></span>|  
   
@@ -56,11 +57,11 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="b348e-126">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b348e-126">Use this</span></span>|<span data-ttu-id="b348e-127">目的</span><span class="sxs-lookup"><span data-stu-id="b348e-127">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="b348e-128">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="b348e-128">**Property**</span></span>|<span data-ttu-id="b348e-129">選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed**</span><span class="sxs-lookup"><span data-stu-id="b348e-129">Select **Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed**</span></span>|  
-    |<span data-ttu-id="b348e-130">**演算子**</span><span class="sxs-lookup"><span data-stu-id="b348e-130">**Operator**</span></span>|<span data-ttu-id="b348e-131">選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="b348e-131">Select **==**.</span></span>|  
+    |<span data-ttu-id="b348e-130">**演算子**</span><span class="sxs-lookup"><span data-stu-id="b348e-130">**Operator**</span></span>|<span data-ttu-id="b348e-131">選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="b348e-131">Select **==**.</span></span>|  
     |<span data-ttu-id="b348e-132">**値**</span><span class="sxs-lookup"><span data-stu-id="b348e-132">**Value**</span></span>|<span data-ttu-id="b348e-133">型**False**の有効なメッセージです。</span><span class="sxs-lookup"><span data-stu-id="b348e-133">Type **False** for valid messages.</span></span>|  
   
     > [!NOTE]
-    >  <span data-ttu-id="b348e-134">追加する、 **"Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed False = ="**フィルター式の句、送信ポートが送信するようにのみ正常に解析し、メッセージを検証します。</span><span class="sxs-lookup"><span data-stu-id="b348e-134">You add the **"Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed == False"** filter expression clause so that the send port sends only successfully parsed and validated messages.</span></span> <span data-ttu-id="b348e-135">ネイティブを使用して、受信パイプラインとは異なり[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、逆アセンブラー、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]逆アセンブラーは、失敗した (エラー) メッセージは中断されませんが、代わりに、メッセージ ボックスと昇格させたプロパティを使用して、失敗としてマークに公開します。</span><span class="sxs-lookup"><span data-stu-id="b348e-135">Unlike a receive pipeline using native [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] disassemblers, the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] disassembler will not suspend a failed (erroneous) message, but instead publishes it to the MessageBox and marks it as failed, using promoted properties.</span></span> <span data-ttu-id="b348e-136">A4SWIFT は、メッセージ ボックスに公開する前に、失敗したメッセージに収集されたエラーの XML 表現をアタッチします。</span><span class="sxs-lookup"><span data-stu-id="b348e-136">A4SWIFT attaches an XML representation of the errors that were collected to the failed message before publishing it to the MessageBox.</span></span>  
+    >  <span data-ttu-id="b348e-134">追加する、 **"Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed False = ="** フィルター式の句、送信ポートが送信するようにのみ正常に解析し、メッセージを検証します。</span><span class="sxs-lookup"><span data-stu-id="b348e-134">You add the **"Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed == False"** filter expression clause so that the send port sends only successfully parsed and validated messages.</span></span> <span data-ttu-id="b348e-135">ネイティブを使用して、受信パイプラインとは異なり[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、逆アセンブラー、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]逆アセンブラーは、失敗した (エラー) メッセージは中断されませんが、代わりに、メッセージ ボックスと昇格させたプロパティを使用して、失敗としてマークに公開します。</span><span class="sxs-lookup"><span data-stu-id="b348e-135">Unlike a receive pipeline using native [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] disassemblers, the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] disassembler will not suspend a failed (erroneous) message, but instead publishes it to the MessageBox and marks it as failed, using promoted properties.</span></span> <span data-ttu-id="b348e-136">A4SWIFT は、メッセージ ボックスに公開する前に、失敗したメッセージに収集されたエラーの XML 表現をアタッチします。</span><span class="sxs-lookup"><span data-stu-id="b348e-136">A4SWIFT attaches an XML representation of the errors that were collected to the failed message before publishing it to the MessageBox.</span></span>  
     > <span data-ttu-id="b348e-137">含めずに、"Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed = = False"フィルター式の句、送信ポートには、すべてのメッセージが送信されます。 成功または失敗します。</span><span class="sxs-lookup"><span data-stu-id="b348e-137">Without including the "Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed == False" filter expression clause, your send port will send all messages: passed or failed.</span></span> <span data-ttu-id="b348e-138">失敗したメッセージのサブスクリプションの詳細については、次を参照してください。[メッセージ サブスクリプションの失敗の操作](../../adapters-and-accelerators/accelerator-swift/working-with-failed-message-subscriptions.md)です。</span><span class="sxs-lookup"><span data-stu-id="b348e-138">For more information about failed message subscriptions, see [Working with Failed Message Subscriptions](../../adapters-and-accelerators/accelerator-swift/working-with-failed-message-subscriptions.md).</span></span>  
   
 11. <span data-ttu-id="b348e-139">をクリックして**適用**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="b348e-139">Click **Apply**, and then click **OK**.</span></span>  

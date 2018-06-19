@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server2 を維持する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server2 を維持する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5b9c10d1-101b-4b9d-8eab-767b853f17d8
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298370"
 ---
 # <a name="maintaining-biztalk-server2"></a><span data-ttu-id="1d125-102">BizTalk Server2 を維持します。</span><span class="sxs-lookup"><span data-stu-id="1d125-102">Maintaining BizTalk Server2</span></span>
 <span data-ttu-id="1d125-103">メンテナンス操作は、サービスの監視と管理 (SMC) のシステムの管理機能は Microsoft Operations Framework (MOF) で定義されている部分です。</span><span class="sxs-lookup"><span data-stu-id="1d125-103">Maintenance activities are part of the Service Monitoring and Control (SMC) system management function as defined by the Microsoft Operations Framework (MOF).</span></span> <span data-ttu-id="1d125-104">SMC の主な目的がの正常性を確認するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムです。</span><span class="sxs-lookup"><span data-stu-id="1d125-104">The primary goal of SMC is to observe the health of your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span> <span data-ttu-id="1d125-105">SMC チェックでは、潜在的なサービスの問題を回避し、発生時にサービス インシデントの影響を最小限に抑える修復アクションを開始できます。</span><span class="sxs-lookup"><span data-stu-id="1d125-105">SMC checks may initiate remedial actions to avoid potential service incidents and to minimize the impact of service incidents when they do occur.</span></span>  

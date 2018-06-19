@@ -1,17 +1,17 @@
 ---
-title: "手順 7: を作成して、ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 7: を作成して、ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private process tutorial, creating ports
 - private process tutorial, configuring ports
 ms.assetid: c00344c6-506a-4560-a948-e5fed2b9fd58
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965240"
 ---
 # <a name="step-7-creating-and-configuring-ports"></a><span data-ttu-id="01f51-102">手順 7: を作成して、ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="01f51-102">Step 7: Creating and Configuring Ports</span></span>
 <span data-ttu-id="01f51-103">ここでは、ビジネス プロセスとの通信に使用するポートを作成し、構成します。</span><span class="sxs-lookup"><span data-stu-id="01f51-103">In this step, you create and configure the ports you use to communicate with business processes.</span></span> <span data-ttu-id="01f51-104">各ポートには、種類、方向、およびバインドのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="01f51-104">Each port has a type, direction, and binding property.</span></span> <span data-ttu-id="01f51-105">これらのプロパティにより、通信の方向と通信方式、メッセージの送信先と受信元、および通信の実行方法が決定されます。</span><span class="sxs-lookup"><span data-stu-id="01f51-105">These properties establish the direction and pattern of communication, the location of where the message is sent or received, and how the communication occurs.</span></span>  
@@ -30,7 +31,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="01f51-108">**ポート構成ウィザード**] ページで [**次**です。</span><span class="sxs-lookup"><span data-stu-id="01f51-108">On the **Port Configuration Wizard** page, click **Next**.</span></span>  
   
-3.  <span data-ttu-id="01f51-109">**ポートのプロパティ**] ページの [、**名前**ボックスに、入力**ContosoSQLReqResponsePort**、クリックして**[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="01f51-109">On the **Port Properties** page, in the **Name** box, type **ContosoSQLReqResponsePort**, and then click **Next**.</span></span>  
+3.  <span data-ttu-id="01f51-109">**ポートのプロパティ**] ページの [、**名前**ボックスに、入力**ContosoSQLReqResponsePort**、クリックして **[次へ]** です。</span><span class="sxs-lookup"><span data-stu-id="01f51-109">On the **Port Properties** page, in the **Name** box, type **ContosoSQLReqResponsePort**, and then click **Next**.</span></span>  
   
 4.  <span data-ttu-id="01f51-110">**ポートの種類を選択して**] ページの [、**ポートの種類名**ボックスに、入力**ContosoSQLReqResponsePortName**です。</span><span class="sxs-lookup"><span data-stu-id="01f51-110">On the **Select a Port Type** page, in the **Port Type Name** box, type **ContosoSQLReqResponsePortName**.</span></span>  
   
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="01f51-122">**成果物の種類の選択**ダイアログ ボックスで、をクリックして**ContosoPriceAndAvailability**です。</span><span class="sxs-lookup"><span data-stu-id="01f51-122">In the **Select Artifact Type** dialog box, click **ContosoPriceAndAvailability**.</span></span>  
   
-8.  <span data-ttu-id="01f51-123">右側のペインで選択**[rootpriceresponse]**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="01f51-123">In the right pane, select **rootPriceResponse**, and then click **OK**.</span></span>  
+8.  <span data-ttu-id="01f51-123">右側のペインで選択 **[rootpriceresponse]**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="01f51-123">In the right pane, select **rootPriceResponse**, and then click **OK**.</span></span>  
   
 ### <a name="to-connect-the-ports-to-the-receive-shapes"></a><span data-ttu-id="01f51-124">受信側の図形にポートを接続するには</span><span class="sxs-lookup"><span data-stu-id="01f51-124">To connect the ports to the Receive shapes</span></span>  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="01f51-128">オーケストレーション デザイン画面で選択、 **Receive_1**図形です。</span><span class="sxs-lookup"><span data-stu-id="01f51-128">On the orchestration design surface, select the **Receive_1** shape.</span></span>  
   
-5.  <span data-ttu-id="01f51-129">[プロパティ] ウィンドウで、選択、**メッセージ**プロパティ、および選択**[contoso3a2responsemessage]**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="01f51-129">In the Properties window, select the **Message** property, and then select **Contoso3A2ResponseMessage** from the drop-down list.</span></span>  
+5.  <span data-ttu-id="01f51-129">[プロパティ] ウィンドウで、選択、**メッセージ**プロパティ、および選択 **[contoso3a2responsemessage]** ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="01f51-129">In the Properties window, select the **Message** property, and then select **Contoso3A2ResponseMessage** from the drop-down list.</span></span>  
   
 6.  <span data-ttu-id="01f51-130">接続、 **ContosoSQLReqResponsePort**を横に緑色のハンドルを選択すると、**応答**ラベル上の緑のハンドルにドラッグし、 **Receive_1**図形です。</span><span class="sxs-lookup"><span data-stu-id="01f51-130">Connect the **ContosoSQLReqResponsePort** by selecting the green handle next to the **Response** label and dragging it to the green handle on the **Receive_1** shape.</span></span>  
   

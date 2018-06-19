@@ -1,18 +1,18 @@
 ---
-title: "XSD ベース PIP のインポート |Microsoft ドキュメント"
-ms.custom: 
+title: XSD ベース PIP のインポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - PIPs, importing
 - XSD-based PIPs
 - PIPs, XSD-based PIPs
 ms.assetid: d12441d4-79bf-4c24-9360-4b78c1da0d34
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961656"
 ---
 # <a name="importing-an-xsd-based-pip"></a><span data-ttu-id="a1d05-102">XSD ベース PIP のインポート</span><span class="sxs-lookup"><span data-stu-id="a1d05-102">Importing an XSD-based PIP</span></span>
 <span data-ttu-id="a1d05-103">RosettaNet.org によって提供されるほとんどの PIP は DTD ベースですが、新しい PIP は XSD ベースです。</span><span class="sxs-lookup"><span data-stu-id="a1d05-103">While the majority of PIPS provided by RosettaNet.org are DTD-based, newer PIPS are XSD-based.</span></span> <span data-ttu-id="a1d05-104">次の手順では、XSD ベースの PIP をインポートする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="a1d05-104">The following procedure describes how to import XSD-based PIPS.</span></span>  

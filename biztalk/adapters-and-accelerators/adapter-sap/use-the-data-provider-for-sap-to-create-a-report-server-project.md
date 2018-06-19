@@ -1,14 +1,14 @@
 ---
-title: "SAP 用データ プロバイダーを使用してレポート サーバー プロジェクトを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP 用データ プロバイダーを使用してレポート サーバー プロジェクトを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5fe985b5-ba67-4179-a31c-4f41106c32be
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962760"
 ---
 # <a name="use-the-data-provider-for-sap-to-create-a-report-server-project"></a><span data-ttu-id="f9d6d-102">SAP 用データ プロバイダーを使用してレポート サーバー プロジェクトを作成</span><span class="sxs-lookup"><span data-stu-id="f9d6d-102">Use the Data Provider for SAP to Create a Report Server Project</span></span>
 <span data-ttu-id="f9d6d-103">レポート サーバーを作成する必要がありますを使用して、プロジェクト、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]、SAP システムで使用できるデータのレポートを生成します。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-103">You must create a Report Server project, using the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)], to generate reports for the data available in an SAP system.</span></span> <span data-ttu-id="f9d6d-104">このトピックでは、レポート サーバー プロジェクトを作成する方法についてを説明します。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-104">This topic provides instructions on how to create a Report Server project.</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
         |<span data-ttu-id="f9d6d-126">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f9d6d-126">Use this</span></span>|<span data-ttu-id="f9d6d-127">目的</span><span class="sxs-lookup"><span data-stu-id="f9d6d-127">To do this</span></span>|  
         |--------------|----------------|  
         |<span data-ttu-id="f9d6d-128">**[特定のユーザー名とパスワードを使用する]**</span><span class="sxs-lookup"><span data-stu-id="f9d6d-128">**Use a specific user name and password**</span></span>|<span data-ttu-id="f9d6d-129">ユーザー名と、SAP システムへの接続にパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-129">Specify a user name and password to connect to the SAP system.</span></span>|  
-        |<span data-ttu-id="f9d6d-130">**資格情報の入力を求める**</span><span class="sxs-lookup"><span data-stu-id="f9d6d-130">**Prompt for credentials**</span></span>|<span data-ttu-id="f9d6d-131">レポートの生成時に、SAP システムの資格情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-131">Enter the credentials for the SAP system while the report is generated.</span></span> <span data-ttu-id="f9d6d-132">**注:**資格情報を指定する接続文字列の一部として、指定した場合、資格情報の上書きは、このオプションにします。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-132">**Note:**  The credentials you specify for this option will override the credentials, if specified, as part of the connection string.</span></span>|  
+        |<span data-ttu-id="f9d6d-130">**資格情報の入力を求める**</span><span class="sxs-lookup"><span data-stu-id="f9d6d-130">**Prompt for credentials**</span></span>|<span data-ttu-id="f9d6d-131">レポートの生成時に、SAP システムの資格情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-131">Enter the credentials for the SAP system while the report is generated.</span></span> <span data-ttu-id="f9d6d-132">**注:** 資格情報を指定する接続文字列の一部として、指定した場合、資格情報の上書きは、このオプションにします。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-132">**Note:**  The credentials you specify for this option will override the credentials, if specified, as part of the connection string.</span></span>|  
         |<span data-ttu-id="f9d6d-133">**資格情報なし**</span><span class="sxs-lookup"><span data-stu-id="f9d6d-133">**No credentials**</span></span>|<span data-ttu-id="f9d6d-134">接続文字列の一部として、ユーザー名とパスワードを指定する場合は、このオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-134">Choose this option if you are providing the user name and password as part of the connection string.</span></span>|  
   
         > [!NOTE]
@@ -82,9 +83,9 @@ ms.lasthandoff: 11/28/2017
   
          <span data-ttu-id="f9d6d-146">このクエリは上の 2 つのレコード テーブルから取得 KNA1、NAME1 はするが、レポートの生成中に指定する名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-146">This query will retrieve the top two records from the KNA1 table where the NAME1 is the name that you will specify while generating the report.</span></span>  
   
-         <span data-ttu-id="f9d6d-147">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-147">Click **Next**.</span></span>  
+         <span data-ttu-id="f9d6d-147">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-147">Click **Next**.</span></span>  
   
-    6.  <span data-ttu-id="f9d6d-148">以降のダイアログ ボックスでは、レポートを表示する形式をデザインできます。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-148">In the subsequent dialog boxes you can design the format in which you want the report to appear.</span></span> <span data-ttu-id="f9d6d-149">既定の形式を使用する場合をクリックして**完了 >> &#124;**に直接移動する、**完了** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-149">If you want to use the default format, click **Finish >>&#124;** to directly go to the **Finish** dialog box.</span></span>  
+    6.  <span data-ttu-id="f9d6d-148">以降のダイアログ ボックスでは、レポートを表示する形式をデザインできます。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-148">In the subsequent dialog boxes you can design the format in which you want the report to appear.</span></span> <span data-ttu-id="f9d6d-149">既定の形式を使用する場合をクリックして**完了 >> &#124;** に直接移動する、**完了** ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-149">If you want to use the default format, click **Finish >>&#124;** to directly go to the **Finish** dialog box.</span></span>  
   
     7.  <span data-ttu-id="f9d6d-150">**ウィザードの完了**ダイアログ ボックスで、レポートの名前を指定の概要を確認し、**完了**です。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-150">In the **Completing the Wizard** dialog box, specify a name for the report, review the summary, and then click **Finish**.</span></span> <span data-ttu-id="f9d6d-151">このトピックのため、レポートの名前を指定`SAPReport`です。</span><span class="sxs-lookup"><span data-stu-id="f9d6d-151">For this topic, specify the name of the report as `SAPReport`.</span></span>  
   

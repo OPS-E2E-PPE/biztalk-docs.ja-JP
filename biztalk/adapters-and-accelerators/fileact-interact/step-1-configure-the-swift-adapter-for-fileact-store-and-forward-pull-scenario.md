@@ -1,14 +1,14 @@
 ---
-title: "手順 1: FileAct ストア アンド フォワード プル シナリオ用 SWIFT アダプターの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: FileAct ストア アンド フォワード プル シナリオ用 SWIFT アダプターの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc271544-6bc8-4d62-aba0-3fe3295f2a2a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965200"
 ---
 # <a name="step-1-configure-the-swift-adapter-for-fileact-store-and-forward-pull-scenario"></a><span data-ttu-id="cbeb1-102">手順 1: FileAct ストア アンド フォワード プル シナリオ用 SWIFT アダプターを構成します。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-102">Step 1: Configure the SWIFT Adapter for FileAct Store and Forward pull scenario</span></span>
 <span data-ttu-id="cbeb1-103">完全な[、チュートリアルを使用する準備](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)この手順を開始する前にします。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-103">Complete [Preparing to Use the Tutorial](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md) before you begin this step.</span></span>
@@ -33,7 +34,7 @@ ms.lasthandoff: 11/28/2017
   
     |<span data-ttu-id="cbeb1-109">**これを使用してください。**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-109">**Use this**</span></span>|<span data-ttu-id="cbeb1-110">**これを行う**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-110">**To do this**</span></span>|  
     |------------------|--------------------|  
-    |<span data-ttu-id="cbeb1-111">**引数**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-111">**Arguments**</span></span>|<span data-ttu-id="cbeb1-112">次の引数を入力: - SagMessagePartner \<SAG で Fileact クライアント メッセージのパートナーが作成される\>**注:**引数で、クライアントは SAG で構成されている MessagePartner です。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-112">Type the following argument: -SagMessagePartner \<Fileact Client Message Partner created in SAG\> **Note:**  The client in the argument is the MessagePartner you configured in SAG.</span></span>|  
+    |<span data-ttu-id="cbeb1-111">**引数**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-111">**Arguments**</span></span>|<span data-ttu-id="cbeb1-112">次の引数を入力: - SagMessagePartner \<SAG で Fileact クライアント メッセージのパートナーが作成される\>**注:** 引数で、クライアントは SAG で構成されている MessagePartner です。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-112">Type the following argument: -SagMessagePartner \<Fileact Client Message Partner created in SAG\> **Note:**  The client in the argument is the MessagePartner you configured in SAG.</span></span>|  
     |<span data-ttu-id="cbeb1-113">**暗号化モード**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-113">**Crypto Mode**</span></span>|<span data-ttu-id="cbeb1-114">ドロップダウン リストから選択**詳細**です。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-114">From the drop-down list, select **Advanced**.</span></span>|  
     |<span data-ttu-id="cbeb1-115">**FACryptoMode**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-115">**FACryptoMode**</span></span>|<span data-ttu-id="cbeb1-116">ドロップダウン リストから選択**詳細**です。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-116">From the drop-down list, select **Advanced**.</span></span>|  
     |<span data-ttu-id="cbeb1-117">**し**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-117">**LogMessages**</span></span>|<span data-ttu-id="cbeb1-118">ドロップダウン リストから選択**TRUE**です。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-118">From the drop-down list, select **TRUE**.</span></span> <span data-ttu-id="cbeb1-119">これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-119">This enables the message events to be captured and tracked in the BAM portal.</span></span>|  
@@ -58,9 +59,9 @@ ms.lasthandoff: 11/28/2017
   
     |<span data-ttu-id="cbeb1-142">**これを使用してください。**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-142">**Use this**</span></span>|<span data-ttu-id="cbeb1-143">**これを行う**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-143">**To do this**</span></span>|  
     |------------------|--------------------|  
-    |<span data-ttu-id="cbeb1-144">**引数**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-144">**Arguments**</span></span>|<span data-ttu-id="cbeb1-145">次の引数を入力: – SagMessagePartner \<SAG で Fileact クライアント メッセージのパートナーが作成される\>**注:**引数で、クライアントは SAG で構成されている MessagePartner です。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-145">Type the following argument: –SagMessagePartner \<Fileact Client Message Partner created in SAG\> **Note:**  The client in the argument is the MessagePartner you configured in SAG.</span></span>|  
+    |<span data-ttu-id="cbeb1-144">**引数**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-144">**Arguments**</span></span>|<span data-ttu-id="cbeb1-145">次の引数を入力: – SagMessagePartner \<SAG で Fileact クライアント メッセージのパートナーが作成される\>**注:** 引数で、クライアントは SAG で構成されている MessagePartner です。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-145">Type the following argument: –SagMessagePartner \<Fileact Client Message Partner created in SAG\> **Note:**  The client in the argument is the MessagePartner you configured in SAG.</span></span>|  
     |<span data-ttu-id="cbeb1-146">**暗号化モード**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-146">**Crypto Mode**</span></span>|<span data-ttu-id="cbeb1-147">ドロップダウン リストから選択**詳細**です。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-147">From the drop-down list, select **Advanced**.</span></span>|  
-    |<span data-ttu-id="cbeb1-148">**LogMessageBody**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-148">**LogMessageBody**</span></span>|<span data-ttu-id="cbeb1-149">ドロップダウン リストから選択**TRUE**です。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-149">From the drop-down list, select **TRUE**.</span></span> <span data-ttu-id="cbeb1-150">これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-150">This enables the message events to be captured and tracked in the BAM portal.</span></span> <span data-ttu-id="cbeb1-151">**注:**を TRUE に設定する場合、BizTalk 追跡データベースでメッセージ本文が保持されます。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-151">**Note:**  If you set to TRUE, it preserves the message body in the BizTalk Tracking database.</span></span> <span data-ttu-id="cbeb1-152">ただし、セキュリティ上の理由から、メッセージの本文見なすことができることはありません、BAM ポータルにします。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-152">However, for security reasons, the message body can never be viewed in the BAM portal.</span></span>|  
+    |<span data-ttu-id="cbeb1-148">**LogMessageBody**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-148">**LogMessageBody**</span></span>|<span data-ttu-id="cbeb1-149">ドロップダウン リストから選択**TRUE**です。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-149">From the drop-down list, select **TRUE**.</span></span> <span data-ttu-id="cbeb1-150">これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-150">This enables the message events to be captured and tracked in the BAM portal.</span></span> <span data-ttu-id="cbeb1-151">**注:** を TRUE に設定する場合、BizTalk 追跡データベースでメッセージ本文が保持されます。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-151">**Note:**  If you set to TRUE, it preserves the message body in the BizTalk Tracking database.</span></span> <span data-ttu-id="cbeb1-152">ただし、セキュリティ上の理由から、メッセージの本文見なすことができることはありません、BAM ポータルにします。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-152">However, for security reasons, the message body can never be viewed in the BAM portal.</span></span>|  
     |<span data-ttu-id="cbeb1-153">**し**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-153">**LogMessages**</span></span>|<span data-ttu-id="cbeb1-154">ドロップダウン リストから選択**TRUE**です。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-154">From the drop-down list, select **TRUE**.</span></span> <span data-ttu-id="cbeb1-155">これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-155">This enables the message events to be captured and tracked in the BAM portal.</span></span>|  
     |<span data-ttu-id="cbeb1-156">**[有効化]**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-156">**Enable**</span></span>|<span data-ttu-id="cbeb1-157">**True**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-157">**True**</span></span>|  
     |<span data-ttu-id="cbeb1-158">**イベントのエンドポイント**</span><span class="sxs-lookup"><span data-stu-id="cbeb1-158">**Event end-point**</span></span>|<span data-ttu-id="cbeb1-159">適切な SAG エンドポイントを入力します。</span><span class="sxs-lookup"><span data-stu-id="cbeb1-159">Type the appropriate SAG end-point.</span></span>|  

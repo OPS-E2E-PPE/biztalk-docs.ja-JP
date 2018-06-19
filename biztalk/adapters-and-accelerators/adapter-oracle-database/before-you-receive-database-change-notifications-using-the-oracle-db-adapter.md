@@ -1,14 +1,14 @@
 ---
-title: "受信データベースの変更通知を使用して、Oracle Database アダプターに関する考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信データベースの変更通知を使用して、Oracle Database アダプターに関する考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 206439b9-0408-4fbb-80e3-cfda2f5a89a5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963704"
 ---
 # <a name="considerations-for-receiving-database-change-notifications-using-the-oracle-database-adapter"></a><span data-ttu-id="0f740-102">受信データベースの変更通知を使用して、Oracle Database アダプターに関する考慮事項</span><span class="sxs-lookup"><span data-stu-id="0f740-102">Considerations for Receiving Database Change Notifications Using the Oracle Database adapter</span></span>
 <span data-ttu-id="0f740-103">このトピックでは、いくつかの考慮事項とベスト プラクティスを使用しているときに点に注意する必要がある、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースからデータベースの通知を受信します。</span><span class="sxs-lookup"><span data-stu-id="0f740-103">This topic provides some considerations and best practices that you must keep in mind while using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to receive database notifications from an Oracle database.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="0f740-108">操作の通知メッセージは、その操作によって影響を受けたレコードの数の影響を受けません。</span><span class="sxs-lookup"><span data-stu-id="0f740-108">The notification message for an operation is not affected by the number of records affected by that operation.</span></span> <span data-ttu-id="0f740-109">たとえば、アダプター クライアントに関係なく、Oracle データベース テーブルに挿入されるレコードの数、1 つだけの通知メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="0f740-109">For example, irrespective of the number of records inserted in an Oracle database table, the adapter clients receive only one notification message.</span></span>  
   
--   <span data-ttu-id="0f740-110">アダプターのクライアント アプリケーションに Oracle データベースから受信した通知の種類を解釈するためのロジックが含まれていることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="0f740-110">We recommend that the adapter client application contain the logic to interpret the kind of notification received from the Oracle database.</span></span> <span data-ttu-id="0f740-111">アダプター クライアント アプリケーションを内の情報を抽出することによって行うことができます、 **\<情報\>**通知を受信したメッセージの要素。</span><span class="sxs-lookup"><span data-stu-id="0f740-111">The adapter client applications can do so by extracting the information in the **\<Info\>** element of the received notification message.</span></span> <span data-ttu-id="0f740-112">挿入操作用に受信した通知メッセージの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0f740-112">Here’s an example of a notification message received for an Insert operation.</span></span>  
+-   <span data-ttu-id="0f740-110">アダプターのクライアント アプリケーションに Oracle データベースから受信した通知の種類を解釈するためのロジックが含まれていることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="0f740-110">We recommend that the adapter client application contain the logic to interpret the kind of notification received from the Oracle database.</span></span> <span data-ttu-id="0f740-111">アダプター クライアント アプリケーションを内の情報を抽出することによって行うことができます、 **\<情報\>** 通知を受信したメッセージの要素。</span><span class="sxs-lookup"><span data-stu-id="0f740-111">The adapter client applications can do so by extracting the information in the **\<Info\>** element of the received notification message.</span></span> <span data-ttu-id="0f740-112">挿入操作用に受信した通知メッセージの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0f740-112">Here’s an example of a notification message received for an Insert operation.</span></span>  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>   
@@ -50,7 +51,7 @@ ms.lasthandoff: 11/28/2017
   
     ```  
   
-     <span data-ttu-id="0f740-113">内の値に注意してください、 **\<情報\>**要素。</span><span class="sxs-lookup"><span data-stu-id="0f740-113">Notice the value within the **\<Info\>** element.</span></span> <span data-ttu-id="0f740-114">この値は、通知メッセージを受信した操作について説明します。</span><span class="sxs-lookup"><span data-stu-id="0f740-114">This value provides information on the operation for which the notification message was received.</span></span> <span data-ttu-id="0f740-115">アプリケーション内の値を抽出する機能を持つ必要があります、 **\<情報\>**要素し、値に基づいて、後続のタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="0f740-115">Your application should have the functionality to extract the value within the **\<Info\>** element and then based on the value, perform subsequent tasks.</span></span> <span data-ttu-id="0f740-116">トピック[を Oracle データベースで特定のタスクの完了の通知メッセージの処理](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md)内の値を抽出する方法の手順を持つ、 **\<情報\>**要素。</span><span class="sxs-lookup"><span data-stu-id="0f740-116">The topic [Processing Notification Messages to complete Specific Tasks in Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md) has instructions on how to extract the value within the **\<Info\>** element.</span></span>  
+     <span data-ttu-id="0f740-113">内の値に注意してください、 **\<情報\>** 要素。</span><span class="sxs-lookup"><span data-stu-id="0f740-113">Notice the value within the **\<Info\>** element.</span></span> <span data-ttu-id="0f740-114">この値は、通知メッセージを受信した操作について説明します。</span><span class="sxs-lookup"><span data-stu-id="0f740-114">This value provides information on the operation for which the notification message was received.</span></span> <span data-ttu-id="0f740-115">アプリケーション内の値を抽出する機能を持つ必要があります、 **\<情報\>** 要素し、値に基づいて、後続のタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="0f740-115">Your application should have the functionality to extract the value within the **\<Info\>** element and then based on the value, perform subsequent tasks.</span></span> <span data-ttu-id="0f740-116">トピック[を Oracle データベースで特定のタスクの完了の通知メッセージの処理](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md)内の値を抽出する方法の手順を持つ、 **\<情報\>** 要素。</span><span class="sxs-lookup"><span data-stu-id="0f740-116">The topic [Processing Notification Messages to complete Specific Tasks in Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md) has instructions on how to extract the value within the **\<Info\>** element.</span></span>  
   
 -   <span data-ttu-id="0f740-117">理想的には、クライアント アプリケーションは、通知を受信した後を通知を既に受信した同じレコードの後続の通知がされないように、レコードを更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f740-117">Ideally, after the client application receives a notification, it should update the record for which the notification is already received so that the subsequent notifications are not for the same record.</span></span> <span data-ttu-id="0f740-118">たとえば、 **ACCOUNTACTIVITY**を持つテーブル、**処理**列です。</span><span class="sxs-lookup"><span data-stu-id="0f740-118">For example, consider an **ACCOUNTACTIVITY** table that has a **Processed** column.</span></span> <span data-ttu-id="0f740-119">すべての新しいレコードが挿入されるため、 **ACCOUNTACTIVITY**テーブル内の値、**処理**列は常に 'n' です。</span><span class="sxs-lookup"><span data-stu-id="0f740-119">For all new records inserted into the **ACCOUNTACTIVITY** table, the value in the **Processed** column is always ‘n’.</span></span> <span data-ttu-id="0f740-120">内のレコード挿入操作の後など、 **ACCOUNTACTIVITY**テーブルは、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="0f740-120">For example, after an insert operation, the records in the **ACCOUNTACTIVITY** table will look like the following:</span></span>  
   

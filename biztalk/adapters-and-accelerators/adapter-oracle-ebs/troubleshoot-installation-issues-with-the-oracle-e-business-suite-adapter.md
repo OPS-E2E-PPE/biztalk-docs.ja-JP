@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite アダプターでのインストールに関する問題のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite アダプターでのインストールに関する問題のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 09b3af20-ab87-44e8-8ded-c19432552be7
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965632"
 ---
 # <a name="troubleshoot-installation-issues-with-the-oracle-e-business-suite-adapter"></a><span data-ttu-id="84d02-102">Oracle E-business Suite アダプターでのインストールに関する問題のトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="84d02-102">Troubleshoot Installation Issues with the Oracle E-Business Suite adapter</span></span>
 <span data-ttu-id="84d02-103">Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]コンピューターで、製品バイナリをコピーし、各アダプターのバインドを登録します。</span><span class="sxs-lookup"><span data-stu-id="84d02-103">Installation of the Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] copies the product binaries on the computer and registers the bindings for each adapter.</span></span> <span data-ttu-id="84d02-104">このセクションでは、インストール エラーを解決するのには、トラブルシューティングの手法を使用してについて説明します。</span><span class="sxs-lookup"><span data-stu-id="84d02-104">This section discusses using troubleshooting techniques to resolve installation errors.</span></span>  

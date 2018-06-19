@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Server を使用して SAP から受信 tRFC の呼び出しを受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SAP から受信 tRFC の呼び出しを受け取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tRFC calls, receiving using BizTalk Server
 - tRFCs, sample
 ms.assetid: 500eedea-3d27-478c-a64c-903a1fa2b02f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962336"
 ---
 # <a name="receive-inbound-trfc-calls-from-sap-using-biztalk-server"></a><span data-ttu-id="17067-102">BizTalk Server を使用して SAP から受信 tRFC の呼び出しを受信します。</span><span class="sxs-lookup"><span data-stu-id="17067-102">Receive Inbound tRFC Calls from SAP using BizTalk Server</span></span>
 <span data-ttu-id="17067-103">TRFC サーバーの呼び出しは、トランザクションの RFC サーバー呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="17067-103">A tRFC server call is a transactional RFC server call.</span></span> <span data-ttu-id="17067-104">トランザクションのコンテキストでの RFC の受信に必要なオーケストレーションは、SAP システムから送信されるその他の受信 RFC を受信するオーケストレーションに似ています。</span><span class="sxs-lookup"><span data-stu-id="17067-104">The orchestration required to receive an RFC in a transactional context is similar to the orchestration to receive any other inbound RFC sent from an SAP system.</span></span> <span data-ttu-id="17067-105">ただし、Rfc がトランザクションのコンテキストで受信したかどうかを確認する特定のタスクを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17067-105">However, you need to perform certain additional tasks to make sure the RFCs are received in a transactional context.</span></span> <span data-ttu-id="17067-106">SAP システムを使用して、受信の RFC の受信の詳細については、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を参照してください[BizTalk Server を使用して、SAP からの受信 RFC 呼び出しの受信](../../adapters-and-accelerators/adapter-sap/receive-inbound-rfc-calls-from-sap-using-biztalk-server.md)です。</span><span class="sxs-lookup"><span data-stu-id="17067-106">For more information about receiving an inbound RFC from the SAP system using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], see [Receive Inbound RFC Calls from SAP by using BizTalk Server](../../adapters-and-accelerators/adapter-sap/receive-inbound-rfc-calls-from-sap-using-biztalk-server.md).</span></span> <span data-ttu-id="17067-107">方法の詳細については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、SAP システムからの着信 tRFC の呼び出しの受信をサポートを参照してください[SAP で tRFCs に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)です。</span><span class="sxs-lookup"><span data-stu-id="17067-107">For more information about how the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports receiving inbound tRFC calls from an SAP system, see [Operations on tRFCs in SAP](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md).</span></span>  
@@ -37,7 +38,7 @@ ms.lasthandoff: 11/28/2017
      <span data-ttu-id="17067-113">バインディング プロパティとその設定方法の詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="17067-113">For more information about the binding property and how to set it, see [Read about BizTalk Adapter for mySAP Business Suite Binding Properties](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md).</span></span>  
   
     > [!IMPORTANT]
-    >  <span data-ttu-id="17067-114">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ ウィザードをインストールする SQL スクリプト、SapAdapter-DbScript-Install.sql、SQL Server でデータベースおよびデータベース オブジェクトを作成する SQL Server の管理者によって実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17067-114">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup wizard installs a SQL script, SapAdapter-DbScript-Install.sql, which must be run by the SQL Server administrator to create a database and the database objects in SQL Server.</span></span> <span data-ttu-id="17067-115">インストールされている通常の*\<インストール ドライブ\>: プログラム FilesMicrosoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]*です。</span><span class="sxs-lookup"><span data-stu-id="17067-115">The script is typically installed at *\<installation drive\>:Program FilesMicrosoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]*.</span></span>  
+    >  <span data-ttu-id="17067-114">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ ウィザードをインストールする SQL スクリプト、SapAdapter-DbScript-Install.sql、SQL Server でデータベースおよびデータベース オブジェクトを作成する SQL Server の管理者によって実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17067-114">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup wizard installs a SQL script, SapAdapter-DbScript-Install.sql, which must be run by the SQL Server administrator to create a database and the database objects in SQL Server.</span></span> <span data-ttu-id="17067-115">インストールされている通常の*\<インストール ドライブ\>: プログラム FilesMicrosoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]* です。</span><span class="sxs-lookup"><span data-stu-id="17067-115">The script is typically installed at *\<installation drive\>:Program FilesMicrosoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]*.</span></span>  
     >   
     >  <span data-ttu-id="17067-116">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Tid を永続化するこれらのオブジェクトを使用します。</span><span class="sxs-lookup"><span data-stu-id="17067-116">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] uses these objects to persist the TIDs.</span></span> <span data-ttu-id="17067-117">そのため、SQL Server の管理者ことを確認、ユーザー名、接続文字列の一部がストアド プロシージャを実行するための十分な特権を持つように指定します。</span><span class="sxs-lookup"><span data-stu-id="17067-117">So, the SQL Server administrator must ensure that the user name provide as part of the connection string has sufficient privileges to execute the stored procedures.</span></span> <span data-ttu-id="17067-118">Windows ユーザーがデータベースにストアド プロシージャを実行するための十分なアクセス許可を持っていれば、Windows 認証のこともできます。</span><span class="sxs-lookup"><span data-stu-id="17067-118">You can also opt for Windows authentication provided the Windows user has sufficient permissions to execute stored procedures in the database.</span></span>  
   

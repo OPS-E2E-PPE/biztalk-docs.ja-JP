@@ -1,18 +1,18 @@
 ---
-title: "再生成するフィールドの変更 |Microsoft ドキュメント"
-ms.custom: 
+title: 再生成するフィールドの変更 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - rekeyed fields
 - Message Repair and New Submission, modifying fields
 - Message Repair and New Submission, rekeyed fields
 ms.assetid: aaf353f7-0e43-403e-b72a-88e5dd07f4ac
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964496"
 ---
 # <a name="changing-fields-to-be-rekeyed"></a><span data-ttu-id="9ed9d-102">再生成するフィールドを変更します。</span><span class="sxs-lookup"><span data-stu-id="9ed9d-102">Changing Fields to Be Rekeyed</span></span>
 <span data-ttu-id="9ed9d-103">メッセージの修復ワークフローの検証手順で[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]ように、検証側は必要がありますを再入力したり鍵更新、そのデータ フィールドの数からそのデータを削除します。</span><span class="sxs-lookup"><span data-stu-id="9ed9d-103">In the verification step of a message repair workflow, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] removes the data from a number of fields so that the verifier must re-enter, or rekey, that data.</span></span> <span data-ttu-id="9ed9d-104">RekeyVerify 内のどのフィールドをカスタマイズする[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームを再生成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ed9d-104">You can customize which fields in the RekeyVerify [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] form need to be rekeyed.</span></span> <span data-ttu-id="9ed9d-105">ある MrsrXpathConfig.xml ファイルで行う、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\MRSR フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="9ed9d-105">You do so in the MrsrXpathConfig.xml file, which is located in the \<*drive*\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT\MRSR folder.</span></span>  

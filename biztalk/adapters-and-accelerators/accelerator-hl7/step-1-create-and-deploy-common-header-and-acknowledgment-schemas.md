@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960400"
 ---
 # <a name="step-1-create-and-deploy-common-header-and-acknowledgment-schemas"></a><span data-ttu-id="bcf5d-102">手順 1: を作成し、共通のヘッダーと受信確認スキーマを展開</span><span class="sxs-lookup"><span data-stu-id="bcf5d-102">Step 1: Create and Deploy Common Header and Acknowledgment Schemas</span></span>
 <span data-ttu-id="bcf5d-103">メッセージ インスタンスのヘッダー (MSH セグメント) を検証するのにには、ヘッダー スキーマを使用します。</span><span class="sxs-lookup"><span data-stu-id="bcf5d-103">You use the header schema to validate the header (MSH segment) of the message instance.</span></span> <span data-ttu-id="bcf5d-104">メッセージ インスタンスの確認を生成するのにには、受信確認スキーマを使用します。</span><span class="sxs-lookup"><span data-stu-id="bcf5d-104">You use the acknowledgment schema to generate the acknowledgment for the message instance.</span></span> <span data-ttu-id="bcf5d-105">このプロセスは、HL7 スキーマのすべてのバージョンで共通です。</span><span class="sxs-lookup"><span data-stu-id="bcf5d-105">This process is common across all HL7 schema versions.</span></span>  

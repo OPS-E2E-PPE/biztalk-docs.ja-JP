@@ -1,14 +1,14 @@
 ---
-title: "ApplicationManager (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: ApplicationManager (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 51ebe7a8-a0ca-4d2a-bf40-ec6421ba5a95
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965584"
 ---
 # <a name="applicationmanager-biztalk-server-sample"></a><span data-ttu-id="0081a-102">ApplicationManager (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="0081a-102">ApplicationManager (BizTalk Server Sample)</span></span>
 <span data-ttu-id="0081a-103">ApplicationManager サンプルでは、管理オブジェクトを使用して BizTalk アプリケーションを開始または停止する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="0081a-103">The ApplicationManager sample demonstrates how to start or stop a  BizTalk application by using the administration objects.</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="0081a-128">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル ApplicationManager.sln を開きます。</span><span class="sxs-lookup"><span data-stu-id="0081a-128">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file ApplicationManager.sln.</span></span>  
   
-2.  <span data-ttu-id="0081a-129">**[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0081a-129">On the **Build** menu, click **Build Solution**.</span></span>  
+2.  <span data-ttu-id="0081a-129">**[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0081a-129">On the **Build** menu, click **Build Solution**.</span></span>  
   
 #### <a name="to-run-this-sample"></a><span data-ttu-id="0081a-130">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="0081a-130">To run this sample</span></span>  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="0081a-133">次の 2 つのコマンドライン引数を順番どおりに指定して、ApplicationManager.exe ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="0081a-133">Run the file ApplicationManager.exe providing the following two ordered command-line arguments:</span></span>  
   
-    -   <span data-ttu-id="0081a-134">**\<開始 (&) #124 です。 停止\>**最初の引数は、展開されたアプリケーションで実行する操作。</span><span class="sxs-lookup"><span data-stu-id="0081a-134">**\<start&#124;stop\>** First argument is the operation to be performed on the deployed application.</span></span>  
+    -   <span data-ttu-id="0081a-134">**\<開始 (&) #124 です。 停止\>** 最初の引数は、展開されたアプリケーションで実行する操作。</span><span class="sxs-lookup"><span data-stu-id="0081a-134">**\<start&#124;stop\>** First argument is the operation to be performed on the deployed application.</span></span>  
   
     -   <span data-ttu-id="0081a-135">**\<ApplicationName\>**  2 番目の引数は、展開されたアプリケーションの名前。</span><span class="sxs-lookup"><span data-stu-id="0081a-135">**\<ApplicationName\>** Second argument is the name of the deployed application.</span></span>  
   

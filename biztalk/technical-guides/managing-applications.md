@@ -1,14 +1,14 @@
 ---
-title: "アプリケーションの管理 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションの管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ef1039fb-7460-444b-a45e-2783bdc7c109
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298674"
 ---
 # <a name="managing-applications"></a><span data-ttu-id="aab0c-102">アプリケーションの管理</span><span class="sxs-lookup"><span data-stu-id="aab0c-102">Managing Applications</span></span>
 <span data-ttu-id="aab0c-103">BizTalk アプリケーションは、オーケストレーション、パイプライン、スキーマ、マップ、およびポートなどのアプリケーションの成果物の論理コンテナーです。</span><span class="sxs-lookup"><span data-stu-id="aab0c-103">A BizTalk application is a logical container for application artifacts, such as orchestrations, pipelines, schemas, maps, and ports.</span></span> <span data-ttu-id="aab0c-104">BizTalk アプリケーションを使用すると、同じコンテナーに関連するコンポーネントを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="aab0c-104">BizTalk applications enable you to include related components in the same container.</span></span> <span data-ttu-id="aab0c-105">アプリケーション内のすべてのアイテムには、そのアプリケーション内で他の成果物または任意の参照先アプリケーション内のすべてのアイテムを参照してください。</span><span class="sxs-lookup"><span data-stu-id="aab0c-105">Any artifact within an application may refer to any other artifacts within that application, or to any artifact in any referenced application.</span></span> <span data-ttu-id="aab0c-106">BizTalk アプリケーションに格納できるアイテムの完全な一覧を参照してください。 [BizTalk アプリケーションは何ですか。](http://go.microsoft.com/fwlink/?LinkId=154994)</span><span class="sxs-lookup"><span data-stu-id="aab0c-106">For a complete list of artifacts that can be in a BizTalk application, see [What is a BizTalk Application?](http://go.microsoft.com/fwlink/?LinkId=154994)</span></span> <span data-ttu-id="aab0c-107">(http://go.microsoft.com/fwlink/?LinkId=154994)。</span><span class="sxs-lookup"><span data-stu-id="aab0c-107">(http://go.microsoft.com/fwlink/?LinkId=154994).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "BizUnit テスト ケースの段階 |Microsoft ドキュメント"
-ms.custom: 
+title: BizUnit テスト ケースの段階 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ed0e725f-2c52-43f7-ae30-343413a703c2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302378"
 ---
 # <a name="stages-of-a-bizunit-test-case"></a><span data-ttu-id="ce24a-102">BizUnit テスト ケースの段階</span><span class="sxs-lookup"><span data-stu-id="ce24a-102">Stages of a BizUnit Test Case</span></span>
 <span data-ttu-id="ce24a-103">各 BizUnit テスト ケースは、3 つのステージで構成されています: **TestSetup**、 **TestExecution**、および**TestCleanup**です。</span><span class="sxs-lookup"><span data-stu-id="ce24a-103">Each BizUnit test case consists of three stages: **TestSetup**, **TestExecution**, and **TestCleanup**.</span></span> <span data-ttu-id="ce24a-104">各ステージには、作業の 1 つの個別単位を実行するは、1 つまたは複数のテスト ステップが含まれています。たとえば、 **FileCreateStep**は指定されたファイル名で指定した場所にファイルの作成を担当します。</span><span class="sxs-lookup"><span data-stu-id="ce24a-104">Each stage contains one or more test steps that are responsible for performing a single discrete unit of work; for example, the **FileCreateStep** is responsible for creating a file in a location you specify with a given filename.</span></span>  <span data-ttu-id="ce24a-105">BizUnit は、70 以上のテスト ステップが含まれていて、新しいフレームワークに容易に追加するテストの手順を実行できるようにする拡張機能も提供します。</span><span class="sxs-lookup"><span data-stu-id="ce24a-105">BizUnit includes over 70 test steps and also provides extension capabilities which allow new test steps to be easily added to the framework.</span></span> <span data-ttu-id="ce24a-106">新しいステップ フレームワークを追加する機能には、幅広いシナリオで使用するための BizUnit ができます。</span><span class="sxs-lookup"><span data-stu-id="ce24a-106">The ability to add new steps to the framework allows BizUnit to be used across a broad range of scenarios.</span></span> <span data-ttu-id="ce24a-107">このトピックでは、さらに詳しく BizUnit テストの段階について説明します。</span><span class="sxs-lookup"><span data-stu-id="ce24a-107">This topic describes the BizUnit test stages in further detail.</span></span>  

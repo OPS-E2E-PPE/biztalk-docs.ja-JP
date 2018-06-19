@@ -1,18 +1,18 @@
 ---
-title: "手順 17: クライアント アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 17: クライアント アプリケーションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WSClient application
 - message enrichment tutorial, WSClient application
 - creating, WSClient application
 ms.assetid: 2849cd4c-30d0-47ab-8161-fab379d5a548
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25960872"
 ---
 # <a name="step-17-create-the-wsclient-application"></a><span data-ttu-id="b34d5-102">手順 17: クライアント アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="b34d5-102">Step 17: Create the WSClient Application</span></span>
 <span data-ttu-id="b34d5-103">WSClient.exe (Web サービス クライアント) は、コンソール アプリケーションで記述された[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]を前の手順で Web サービスとして公開するオーケストレーションにデータを送信する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="b34d5-103">WSClient.exe (Web service client) is a console application written in [!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)] that illustrates how to send data to the orchestration that you published as a Web service in the previous steps.</span></span> <span data-ttu-id="b34d5-104">クライアント アプリケーションは 4 つの順序でパラメーターの入力を受け入れます。 患者名、ミドル ネーム、最後の名、および社会保障番号、それぞれします。</span><span class="sxs-lookup"><span data-stu-id="b34d5-104">The WSClient application accepts four input parameters in order: patient first name, middle name, last name, and social security number, respectively.</span></span> <span data-ttu-id="b34d5-105">患者の情報を使用する Web サービスを送信するには、次のコマンドライン構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="b34d5-105">To send patient information to your Web service, use the following command line syntax:</span></span>  
@@ -31,9 +32,9 @@ wsclient john henry smith 123456789
   
 ### <a name="to-create-the-wsclient-application"></a><span data-ttu-id="b34d5-106">クライアント アプリケーションを作成するには</span><span class="sxs-lookup"><span data-stu-id="b34d5-106">To create the WSClient application</span></span>  
   
-1.  <span data-ttu-id="b34d5-107">ソリューション エクスプ ローラーで右クリック**ソリューション 'BTAHL7V22Common'**をクリックして**追加**、順にクリック**新しいプロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="b34d5-107">In Solution Explorer, right-click **Solution 'BTAHL7V22Common'**, click **Add**, and then click **New Project**.</span></span>  
+1.  <span data-ttu-id="b34d5-107">ソリューション エクスプ ローラーで右クリック**ソリューション 'BTAHL7V22Common'** をクリックして**追加**、順にクリック**新しいプロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="b34d5-107">In Solution Explorer, right-click **Solution 'BTAHL7V22Common'**, click **Add**, and then click **New Project**.</span></span>  
   
-2.  <span data-ttu-id="b34d5-108">**新しいプロジェクトの追加** ダイアログ ボックスで、**プロジェクトの種類** ウィンドウで、をクリックして**Visual c#**し、、**テンプレート** ウィンドウで、をクリックして**コンソール アプリケーション**です。</span><span class="sxs-lookup"><span data-stu-id="b34d5-108">In the **Add New Project** dialog box, in the **Project Types** pane, click **Visual C#** and in the **Templates** pane, click **Console Application**.</span></span>  
+2.  <span data-ttu-id="b34d5-108">**新しいプロジェクトの追加** ダイアログ ボックスで、**プロジェクトの種類** ウィンドウで、をクリックして**Visual c#** し、、**テンプレート** ウィンドウで、をクリックして**コンソール アプリケーション**です。</span><span class="sxs-lookup"><span data-stu-id="b34d5-108">In the **Add New Project** dialog box, in the **Project Types** pane, click **Visual C#** and in the **Templates** pane, click **Console Application**.</span></span>  
   
 3.  <span data-ttu-id="b34d5-109">**名前**フィールドに「**クライアント**です。</span><span class="sxs-lookup"><span data-stu-id="b34d5-109">In the **Name** field, type **WSClient**.</span></span> <span data-ttu-id="b34d5-110">**場所**フィールドを参照してください **\<*ドライブ*\>: \Tutorial**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="b34d5-110">In the **Location** field, browse to **\<*drive*\>:\Tutorial**, and then click **OK**.</span></span> <span data-ttu-id="b34d5-111">ソリューション エクスプ ローラーは、ツリーにクライアントを追加し、Program.cs ファイルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b34d5-111">Solution Explorer adds WSClient to the tree, and the Program.cs file appears.</span></span>  
   

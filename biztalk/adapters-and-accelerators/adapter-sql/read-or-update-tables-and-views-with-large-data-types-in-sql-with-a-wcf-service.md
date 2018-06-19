@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルを使用して SQL の大規模なデータ型を持つテーブルとビューの操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して SQL の大規模なデータ型を持つテーブルとビューの操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d33e17c-e09e-4a57-9acc-43095e67ed8c
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967128"
 ---
 # <a name="run-operations-on-tables-and-views-with-large-data-types-in-sql-using-the-wcf-service-model"></a><span data-ttu-id="2f8cf-102">WCF サービス モデルを使用して SQL の大規模なデータ型を持つテーブルとビューの操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="2f8cf-102">Run Operations on Tables and Views with Large Data Types in SQL using the WCF Service Model</span></span>
 <span data-ttu-id="2f8cf-103">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアントの読み取りし、は、大規模なデータ型の列のデータを更新する、varchar (max)、nvarchar (max)、または varbinary (max) を有効にします。</span><span class="sxs-lookup"><span data-stu-id="2f8cf-103">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] enables adapter clients to read and update data in columns of large data types, that is, varchar(max), nvarchar(max), or varbinary(max).</span></span> <span data-ttu-id="2f8cf-104">このような列からデータを読み取る、アダプターのクライアントは、Select 操作を使用できます。</span><span class="sxs-lookup"><span data-stu-id="2f8cf-104">To read data from such columns, adapter clients can use the Select operation.</span></span> <span data-ttu-id="2f8cf-105">アダプターの一連の公開を挿入またはこのような列にデータを更新、\<*column_name* \>操作、場所\< *column_name* \>名前を指定します型 varchar (max)、nvarchar (max)、または varbinary (max) 列。</span><span class="sxs-lookup"><span data-stu-id="2f8cf-105">To insert or update data into such columns, the adapter exposes a Set\<*column_name*\> operation, where \<*column_name*\> is the name of the column of type varchar(max), nvarchar(max), or varbinary(max).</span></span>  
@@ -148,7 +149,7 @@ public partial class TableOp_dbo_RecordsClient : System.ServiceModel.ClientBase<
 7.  <span data-ttu-id="2f8cf-192">呼び出す、 **SetDocument**での操作、**レコード**テーブル。</span><span class="sxs-lookup"><span data-stu-id="2f8cf-192">Invoke the **SetDocument** operation on the **Records** table.</span></span>  
   
     > [!CAUTION]
-    >  <span data-ttu-id="2f8cf-193">セット*< column_name >*操作は、トランザクションで常に実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f8cf-193">The Set*<column_name>* operations must always be performed in a transaction.</span></span> <span data-ttu-id="2f8cf-194">、これを実現するセット*< column_name >*トランザクション スコープ内で操作を呼び出す必要があります、 **UseAmbientTransaction** binding プロパティを設定する必要があります**true**app.config です。</span><span class="sxs-lookup"><span data-stu-id="2f8cf-194">To ensure this, the Set*<column_name>* operation must be invoked within a transaction scope and the **UseAmbientTransaction** binding property must be set to **true** in the app.config.</span></span>  
+    >  <span data-ttu-id="2f8cf-193">セット *< column_name >* 操作は、トランザクションで常に実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f8cf-193">The Set *<column_name>* operations must always be performed in a transaction.</span></span> <span data-ttu-id="2f8cf-194">、これを実現するセット *< column_name >* トランザクション スコープ内で操作を呼び出す必要があります、 **UseAmbientTransaction** binding プロパティを設定する必要があります**true**app.config です。</span><span class="sxs-lookup"><span data-stu-id="2f8cf-194">To ensure this, the Set *<column_name>* operation must be invoked within a transaction scope and the **UseAmbientTransaction** binding property must be set to **true** in the app.config.</span></span>  
   
     ```  
     using (TransactionScope tx = new TransactionScope())  

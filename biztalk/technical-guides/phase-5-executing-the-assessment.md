@@ -1,14 +1,14 @@
 ---
-title: "フェーズ 5: 評価の実行 |Microsoft ドキュメント"
-ms.custom: 
+title: 'フェーズ 5: 評価の実行 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d40fc64-b6cb-448b-8ea1-a6ad7302ab8b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302690"
 ---
 # <a name="phase-5-executing-the-assessment"></a><span data-ttu-id="b3bab-102">評価の実行フェーズ 5。</span><span class="sxs-lookup"><span data-stu-id="b3bab-102">Phase 5: Executing the Assessment</span></span>
 <span data-ttu-id="b3bab-103">実行フェーズは、自動化されたロード テストでと、パフォーマンスのボトルネックが検出され、アドレス指定されるパフォーマンス データが生成される場所です。</span><span class="sxs-lookup"><span data-stu-id="b3bab-103">The Execute phase is where the performance data is generated through automated load testing and where performance bottlenecks are discovered and addressed.</span></span> <span data-ttu-id="b3bab-104">このフェーズがパフォーマンスのボトルネックを削減または削除して、テストをそれにより、反復処理のパフォーマンスの評価、最適化、およびテストをもう一度です。</span><span class="sxs-lookup"><span data-stu-id="b3bab-104">This phase has an iterative process whereby performance bottlenecks are reduced or eliminated by testing, evaluating performance, optimizing, and testing again.</span></span>  

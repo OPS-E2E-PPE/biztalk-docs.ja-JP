@@ -1,14 +1,14 @@
 ---
-title: "構成、AS2 経由でメッセージの受信ポート |Microsoft ドキュメント"
-ms.custom: 
+title: 構成、AS2 経由でメッセージの受信ポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 01d4d897-d12b-4de4-a86b-e6d2718470c2
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968992"
 ---
 # <a name="configuring-a-receive-port-for-messages-over-as2"></a><span data-ttu-id="76f35-102">AS2 経由でのメッセージの受信ポートの構成</span><span class="sxs-lookup"><span data-stu-id="76f35-102">Configuring a Receive Port for Messages over AS2</span></span>
 <span data-ttu-id="76f35-103">EDI または非 EDI ペイロードを持つ AS2 メッセージを受信するには、メッセージを受信してパーティに応答を返すための HTTP 受信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="76f35-103">To receive an AS2 message with an EDI or non-EDI payload, create an HTTP receive port to receive the message and return a response back to the party.</span></span>  

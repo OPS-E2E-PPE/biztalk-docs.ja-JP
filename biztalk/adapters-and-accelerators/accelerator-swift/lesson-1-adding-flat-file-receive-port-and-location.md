@@ -1,11 +1,11 @@
 ---
-title: "レッスン 1: のフラット ファイルを追加する受信ポートと場所 |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 1: のフラット ファイルを追加する受信ポートと場所 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive locations, creating
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - receive ports, creating
 - creating, receive ports
 ms.assetid: 881f58d8-f541-4a85-b534-cb1ca627c002
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961120"
 ---
 # <a name="lesson-1-adding-flat-file-receive-port-and-location"></a><span data-ttu-id="e0231-102">レッスン 1: フラット ファイルの追加の受信ポートと受信場所</span><span class="sxs-lookup"><span data-stu-id="e0231-102">Lesson 1: Adding Flat File Receive Port and Location</span></span>
 <span data-ttu-id="e0231-103">受信ポートは、常に、受信ポートを追加するときに構成する必要がある、関連付けられている受信場所を持ちます。</span><span class="sxs-lookup"><span data-stu-id="e0231-103">The receive port always has an associated receive location that you must configure when you add the receive port.</span></span> <span data-ttu-id="e0231-104">受信場所では、受信メッセージとメッセージの処理に使用するパイプラインの特定のアドレスを定義します。</span><span class="sxs-lookup"><span data-stu-id="e0231-104">A receive location defines a specific address for an incoming message and the pipeline that you use to process the message.</span></span>  
@@ -48,7 +49,7 @@ ms.lasthandoff: 11/28/2017
   
 10. <span data-ttu-id="e0231-115">フォルダーの参照 ダイアログ ボックスで、移動、 **\<ドライブ\>: \Labs\Inbound**フォルダー、およびクリック**新しいフォルダーの作成**です。</span><span class="sxs-lookup"><span data-stu-id="e0231-115">In the Browse For Folder dialog box, move to the **\<drive\>:\Labs\Inbound** folder, and then click **Make New Folder**.</span></span>  
   
-11. <span data-ttu-id="e0231-116">作成、 **FlatFile**フォルダー **\<ドライブ\>: \Labs\Inbound**、順にクリック**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="e0231-116">Create a **FlatFile** folder in **\<drive\>:\Labs\Inbound**, and then click **OK**.</span></span>  
+11. <span data-ttu-id="e0231-116">作成、 **FlatFile**フォルダー **\<ドライブ\>: \Labs\Inbound**、順にクリック **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="e0231-116">Create a **FlatFile** folder in **\<drive\>:\Labs\Inbound**, and then click **OK**.</span></span>  
   
 12. <span data-ttu-id="e0231-117">**ファイル マスク**ボックスに、入力 **\*.txt**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="e0231-117">In the **File mask** box, type **\*.txt**, and then click **OK**.</span></span>  
   

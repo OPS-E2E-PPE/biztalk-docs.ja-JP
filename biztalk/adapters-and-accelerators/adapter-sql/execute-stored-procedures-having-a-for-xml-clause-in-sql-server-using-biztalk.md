@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL Server での FOR XML 句を持つストアド プロシージャを実行 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL Server での FOR XML 句を持つストアド プロシージャを実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d8fe927-90bf-48fc-a418-63b920b409ed
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967624"
 ---
 # <a name="execute-stored-procedures-having-a-for-xml-clause-in-sql-server-using-biztalk-server"></a><span data-ttu-id="23011-102">BizTalk Server を使用して SQL Server での FOR XML 句を持つストアド プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="23011-102">Execute stored procedures having a FOR XML clause in SQL Server using BizTalk Server</span></span>
 <span data-ttu-id="23011-103">SQL SELECT ステートメントでは、行セットではなく XML としてクエリ結果を返す FOR XML 句を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="23011-103">An SQL SELECT statement can have a FOR XML clause that returns the query result as XML instead of a rowset.</span></span> <span data-ttu-id="23011-104">また、ストアド プロシージャを FOR XML 句を伴う SELECT ステートメントを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="23011-104">You can also have a stored procedure that has a SELECT statement with a FOR XML clause.</span></span> <span data-ttu-id="23011-105">[FOR XML (SQL Server)](https://msdn.microsoft.com/library/ms178107.aspx)の詳細についてはします。</span><span class="sxs-lookup"><span data-stu-id="23011-105">[FOR XML (SQL Server)](https://msdn.microsoft.com/library/ms178107.aspx) has more information.</span></span>
@@ -86,7 +87,7 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
   
          <span data-ttu-id="23011-155">これを行う sqltypes.xsd スキーマは、BizTalk プロジェクトに既に追加されたためです。</span><span class="sxs-lookup"><span data-stu-id="23011-155">You do this because you have already added the sqltypes.xsd schema to your BizTalk project.</span></span>  
   
-    4.  <span data-ttu-id="23011-156">スキーマのターゲット名前空間を指定します。</span><span class="sxs-lookup"><span data-stu-id="23011-156">Provide a target namespace for the schema.</span></span> <span data-ttu-id="23011-157">クリックして、 **\<スキーマ\>**ノード、プロパティ ウィンドウで、名前空間を指定し、 **Target Namespace**プロパティ。</span><span class="sxs-lookup"><span data-stu-id="23011-157">Click the **\<Schema\>** node, and in the properties pane, specify a namespace in the **Target Namespace** property.</span></span> <span data-ttu-id="23011-158">このトピックの付与と名前空間`http://ForXmlStoredProcs/namespace`です。</span><span class="sxs-lookup"><span data-stu-id="23011-158">For this topic, give the namespace as `http://ForXmlStoredProcs/namespace`.</span></span>  
+    4.  <span data-ttu-id="23011-156">スキーマのターゲット名前空間を指定します。</span><span class="sxs-lookup"><span data-stu-id="23011-156">Provide a target namespace for the schema.</span></span> <span data-ttu-id="23011-157">クリックして、 **\<スキーマ\>** ノード、プロパティ ウィンドウで、名前空間を指定し、 **Target Namespace**プロパティ。</span><span class="sxs-lookup"><span data-stu-id="23011-157">Click the **\<Schema\>** node, and in the properties pane, specify a namespace in the **Target Namespace** property.</span></span> <span data-ttu-id="23011-158">このトピックの付与と名前空間`http://ForXmlStoredProcs/namespace`です。</span><span class="sxs-lookup"><span data-stu-id="23011-158">For this topic, give the namespace as `http://ForXmlStoredProcs/namespace`.</span></span>  
   
 ## <a name="generating-schema-for-the-request-message-to-invoke-the-stored-procedure"></a><span data-ttu-id="23011-159">ストアド プロシージャを呼び出す要求メッセージのスキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="23011-159">Generating Schema for the Request Message to Invoke the Stored Procedure</span></span>  
  <span data-ttu-id="23011-160">使用することが要求メッセージのスキーマを生成する、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]で BizTalk プロジェクトから[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="23011-160">To generate schema for the request message you can use the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] from a BizTalk project in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)].</span></span> <span data-ttu-id="23011-161">このトピックでは、GET_EMP_DETAILS_FOR_XML ストアド プロシージャのスキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="23011-161">For this topic, generate the schema for the GET_EMP_DETAILS_FOR_XML stored procedure.</span></span> <span data-ttu-id="23011-162">使用してスキーマを生成する方法の詳細についての[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]を参照してください[SQL アダプターを使用して Visual Studio での SQL Server 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="23011-162">For more information about how to generate the schema using [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], see [Retrieving Metadata for SQL Server Operations in Visual Studio using the SQL adapter](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md).</span></span>  

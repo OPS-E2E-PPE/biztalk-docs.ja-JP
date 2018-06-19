@@ -1,14 +1,14 @@
 ---
-title: "DSR.txt ファイルを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: DSR.txt ファイルを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b6947af7-c5ce-4ee6-9fe9-5c1094d0aee0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960776"
 ---
 # <a name="create-the-dsrtxt-file"></a><span data-ttu-id="a6e6f-102">DSR.txt ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="a6e6f-102">Create the DSR.txt File</span></span>
 <span data-ttu-id="a6e6f-103">応答 DSR.txt メッセージ ファイルを作成するのにには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="a6e6f-103">Use the following procedure to create the response DSR.txt message file.</span></span> <span data-ttu-id="a6e6f-104">チュートリアルのシナリオを確認するのに、このファイルを後で使用されます。</span><span class="sxs-lookup"><span data-stu-id="a6e6f-104">You will use this file later to verify the tutorial scenario.</span></span>  

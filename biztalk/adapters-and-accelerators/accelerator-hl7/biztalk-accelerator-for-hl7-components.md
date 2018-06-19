@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Accelerator for HL7 コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Accelerator for HL7 コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - components
 - BTAHL7, components
 ms.assetid: 1dc23c9a-b11d-4931-ade8-9bfcf8a53b6d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204394"
 ---
 # <a name="biztalk-accelerator-for-hl7-components"></a><span data-ttu-id="fb0f6-102">BizTalk Accelerator for HL7 コンポーネント</span><span class="sxs-lookup"><span data-stu-id="fb0f6-102">BizTalk Accelerator for HL7 Components</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="fb0f6-103">BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) コンポーネントには、HL7 および XML 逆アセンブラーでは、HL7 および XML アセンブラーでは、受信し、送信ポート、パイプライン、およびバッチ オーケストレーションです。</span><span class="sxs-lookup"><span data-stu-id="fb0f6-103"> BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) components include HL7 and XML disassemblers, HL7 and XML assemblers, receive and send ports, pipelines, and a batch orchestration.</span></span> <span data-ttu-id="fb0f6-104">これらのコンポーネントが収まる、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]シームレスな医療ソリューションを提供するシステムです。</span><span class="sxs-lookup"><span data-stu-id="fb0f6-104">These components fit into the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] system to provide a seamless health care solution.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "手順 14: Web サービスとしてのオーケストレーションの公開 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 14: Web サービスとしてのオーケストレーションの公開 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, publishing
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - publishing, Web services
 - message enrichment tutorial, Web services
 ms.assetid: 8f29a7be-a679-4ca6-a648-35338d9e9e98
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25962192"
 ---
 # <a name="step-14-publish-the-orchestration-as-a-web-service"></a><span data-ttu-id="abbce-102">手順 14: Web サービスとしてのオーケストレーションを公開します。</span><span class="sxs-lookup"><span data-stu-id="abbce-102">Step 14: Publish the Orchestration as a Web Service</span></span>
 <span data-ttu-id="abbce-103">このステップでは、BizTalk Web サービス公開ウィザードを使用して、オーケストレーションを Web サービスとして公開します。</span><span class="sxs-lookup"><span data-stu-id="abbce-103">In this step, you use the BizTalk Web Services Publishing Wizard to publish your orchestration as a Web service.</span></span>  
@@ -38,13 +39,13 @@ ms.lasthandoff: 01/17/2018
   
 ### <a name="to-run-the-biztalk-web-services-publishing-wizard"></a><span data-ttu-id="abbce-113">BizTalk Web サービス公開ウィザードを実行するには</span><span class="sxs-lookup"><span data-stu-id="abbce-113">To run the BizTalk Web Services Publishing Wizard</span></span>  
   
-1.  <span data-ttu-id="abbce-114">ソリューション エクスプ ローラーの Visual Studio で、**ソリューション 'BTAHL7V22Common'**です。</span><span class="sxs-lookup"><span data-stu-id="abbce-114">In Solution Explorer of Visual Studio, click **Solution 'BTAHL7V22Common'**.</span></span> <span data-ttu-id="abbce-115">**ツール** メニューのをクリックして**BizTalk Web サービス公開ウィザード**です。</span><span class="sxs-lookup"><span data-stu-id="abbce-115">On the **Tools** menu, click **BizTalk Web Services Publishing Wizard**.</span></span>  
+1.  <span data-ttu-id="abbce-114">ソリューション エクスプ ローラーの Visual Studio で、**ソリューション 'BTAHL7V22Common'** です。</span><span class="sxs-lookup"><span data-stu-id="abbce-114">In Solution Explorer of Visual Studio, click **Solution 'BTAHL7V22Common'**.</span></span> <span data-ttu-id="abbce-115">**ツール** メニューのをクリックして**BizTalk Web サービス公開ウィザード**です。</span><span class="sxs-lookup"><span data-stu-id="abbce-115">On the **Tools** menu, click **BizTalk Web Services Publishing Wizard**.</span></span>  
   
 2.  <span data-ttu-id="abbce-116">**BizTalk Web サービス公開ウィザード**の**へようこそ**  ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="abbce-116">In the **BizTalk Web Services Publishing Wizard**, on the **Welcome** page, click **Next**.</span></span>  
   
 3.  <span data-ttu-id="abbce-117">**Web サービスの作成**  ページで、 **BizTalk オーケストレーション web サービスとして発行**, 、 をクリックし、 **次**します。</span><span class="sxs-lookup"><span data-stu-id="abbce-117">On the **Create Web Service** page, select **Publish BizTalk orchestrations as web services**, and then click **Next**.</span></span>  
   
-4.  <span data-ttu-id="abbce-118">**BizTalk アセンブリ**] ページの [、 **BizTalk アセンブリ ファイル (\\*.dll)**フィールドを参照または入力 **\<*ドライブ*\>: \Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**、] をクリックして**BTAHL7 Project.dll**をクリックして**開く**、順にクリック**[次へ**.</span><span class="sxs-lookup"><span data-stu-id="abbce-118">On the **BizTalk Assembly** page, in the **BizTalk assembly file (\\*.dll)** field, browse to or type **\<*drive*\>:\Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**, click **BTAHL7 Project.dll**, click **Open**, and then click **Next**.</span></span>  
+4.  <span data-ttu-id="abbce-118">**BizTalk アセンブリ**] ページの [、 **BizTalk アセンブリ ファイル (\*.dll)** フィールドを参照または入力 **\<*ドライブ*\>: \Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**、] をクリックして**BTAHL7 Project.dll**をクリックして**開く**、順にクリック **[次へ**.</span><span class="sxs-lookup"><span data-stu-id="abbce-118">On the **BizTalk Assembly** page, in the **BizTalk assembly file (\*.dll)** field, browse to or type **\<*drive*\>:\Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**, click **BTAHL7 Project.dll**, click **Open**, and then click **Next**.</span></span>  
   
 5.  <span data-ttu-id="abbce-119">**オーケストレーションとポート** ページで、すべてのノードが選択されていることを確認し、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="abbce-119">On the **Orchestrations and Ports** page, ensure that all nodes are selected, and then click **Next**.</span></span>  
   

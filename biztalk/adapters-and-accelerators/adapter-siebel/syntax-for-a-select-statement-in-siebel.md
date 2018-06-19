@@ -12,7 +12,7 @@ helpviewer_keywords:
 - Data Provider for Siebel, SELECT statement
 - SELECT statement, syntax for
 ms.assetid: 8528b115-d6f3-420d-8617-0e56dc8922bf
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25964160"
 ---
 # <a name="syntax-for-a-select-statement-in-siebel"></a><span data-ttu-id="0a99d-102">Siebel の SELECT ステートメントの構文</span><span class="sxs-lookup"><span data-stu-id="0a99d-102">Syntax for a SELECT Statement in Siebel</span></span>
 <span data-ttu-id="0a99d-103">使用して、 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]、ADO.NET クライアントは Siebel 検索の有効な定義を表す WHERE 句を指定することで Siebel ビジネス コンポーネントで SELECT クエリを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="0a99d-103">Using the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)], ADO.NET clients can perform a SELECT query on Siebel business components by specifying a WHERE clause that represents a valid Siebel search specification.</span></span> <span data-ttu-id="0a99d-104">SELECT ステートメントの構文です。</span><span class="sxs-lookup"><span data-stu-id="0a99d-104">The syntax for the SELECT statement is:</span></span>  

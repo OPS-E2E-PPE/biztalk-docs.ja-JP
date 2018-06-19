@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210498"
 ---
 # <a name="setting-up-cidx-estandards-message-exchange"></a><span data-ttu-id="4cab5-102">設定を CIDX eStandards メッセージ交換</span><span class="sxs-lookup"><span data-stu-id="4cab5-102">Setting Up CIDX eStandards Message Exchange</span></span>
 <span data-ttu-id="4cab5-103">ここでは、Chemical Data Exchange (CIDX) eStandards メッセージ交換のセットアップ方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="4cab5-103">This topic describes how to set up Chemical Data Exchange (CIDX) eStandards message exchange.</span></span> <span data-ttu-id="4cab5-104">CIDX では、次の 3 つのプロパティが次のように設定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="4cab5-104">CIDX requires that you set the following three properties:</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="4cab5-115">必要に応じて、その他のプロセス構成設定を入力します。</span><span class="sxs-lookup"><span data-stu-id="4cab5-115">Enter other process configuration settings as needed.</span></span> <span data-ttu-id="4cab5-116">これらの設定については、表を参照して[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)です。</span><span class="sxs-lookup"><span data-stu-id="4cab5-116">For information about these settings, see the table in [How to Create or Edit a Process Configuration](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md).</span></span>  
   
-7.  <span data-ttu-id="4cab5-117">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4cab5-117">Click **OK**.</span></span>  
+7.  <span data-ttu-id="4cab5-117">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4cab5-117">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="4cab5-118">右クリック**契約**、 をポイント**新規**、クリックして**アグリーメント**です。</span><span class="sxs-lookup"><span data-stu-id="4cab5-118">Right-click **Agreements**, point to **New**, and then click **Agreement**.</span></span>  
   
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 10. <span data-ttu-id="4cab5-121">新しいアグリーメントのプロパティ ダイアログ ボックスで、**全般** タブの**0A1 アグリーメント**プロパティを選択**非 0A1**です。</span><span class="sxs-lookup"><span data-stu-id="4cab5-121">In the New Agreement Properties dialog box, on the **General** tab, for the **0A1 agreement** property, select **No 0A1**.</span></span>  
   
-11. <span data-ttu-id="4cab5-122">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4cab5-122">Click **OK**.</span></span>  
+11. <span data-ttu-id="4cab5-122">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4cab5-122">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="4cab5-123">参照</span><span class="sxs-lookup"><span data-stu-id="4cab5-123">See Also</span></span>  
  <span data-ttu-id="4cab5-124">[作成またはプロセス構成を編集する方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="4cab5-124">[How to Create or Edit a Process Configuration](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md) </span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "ExecuteReader、ExecuteScalar、または BizTalk Server を使用して SQL の ExecuteNonQuery 操作 |Microsoft ドキュメント"
-ms.custom: 
+title: ExecuteReader、ExecuteScalar、または BizTalk Server を使用して SQL の ExecuteNonQuery 操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d8def133-cbe1-4648-ae41-6b8ce6640cb3
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968080"
 ---
 # <a name="executereader-executescalar-or-executenonquery-operations-in-sql-using-biztalk-server"></a><span data-ttu-id="71bec-102">ExecuteReader、ExecuteScalar、または BizTalk Server を使用して SQL の ExecuteNonQuery 操作</span><span class="sxs-lookup"><span data-stu-id="71bec-102">ExecuteReader, ExecuteScalar, or ExecuteNonQuery Operations in SQL using BizTalk Server</span></span>
 <span data-ttu-id="71bec-103">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]など一般的な SQL Server 操作を公開する**ExecuteNonQuery**、 **ExecuteReader**、および**ExecuteScalar**です。</span><span class="sxs-lookup"><span data-stu-id="71bec-103">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] exposes generic SQL Server operations such as **ExecuteNonQuery**, **ExecuteReader**, and **ExecuteScalar**.</span></span> <span data-ttu-id="71bec-104">これらの操作を使用して、SQL Server データベースで任意の SQL ステートメントを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="71bec-104">You can use these operations to execute any SQL statement on a SQL Server database.</span></span> <span data-ttu-id="71bec-105">これらの操作は、応答するための SQL ステートメントの種類によって異なります。</span><span class="sxs-lookup"><span data-stu-id="71bec-105">These operations differ based on the kind of response you get for the SQL statement.</span></span> <span data-ttu-id="71bec-106">アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。 [ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)です。</span><span class="sxs-lookup"><span data-stu-id="71bec-106">For more information about how the adapter supports these operations, see [Support for ExecuteNonQuery, ExecuteReader, and ExecuteScalar Operations](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md).</span></span>  

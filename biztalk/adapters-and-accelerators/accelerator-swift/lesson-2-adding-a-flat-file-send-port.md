@@ -1,11 +1,11 @@
 ---
-title: "レッスン 2: フラット ファイル送信ポートの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 2: フラット ファイル送信ポートの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, flat files
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - creating, send ports
 - send ports, creating
 ms.assetid: 33dceb0d-85f5-4e19-820f-cd33b60cd32a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961336"
 ---
 # <a name="lesson-2-adding-a-flat-file-send-port"></a><span data-ttu-id="17d68-102">レッスン 2: フラット ファイル送信ポートの追加</span><span class="sxs-lookup"><span data-stu-id="17d68-102">Lesson 2: Adding a Flat File Send Port</span></span>
 <span data-ttu-id="17d68-103">このレッスンでは、送信ポートと送信場所を構成します。</span><span class="sxs-lookup"><span data-stu-id="17d68-103">In this lesson, you configure the send port and the send location.</span></span> <span data-ttu-id="17d68-104">メッセージを送信する方法を定義するのにには、送信ポートを使用します。</span><span class="sxs-lookup"><span data-stu-id="17d68-104">You use the send port to define how you want messages sent.</span></span> <span data-ttu-id="17d68-105">送信メッセージのファイル フォルダーの場所を作成します。</span><span class="sxs-lookup"><span data-stu-id="17d68-105">You also create a file folder location for sent messages.</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="17d68-113">作成、**送信**フォルダーに**\<ドライブ\>: \Labs**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="17d68-113">Create an **Outbound** folder in **\<drive\>:\Labs**, and then click **OK**.</span></span>  
   
-8.  <span data-ttu-id="17d68-114">**ファイル名**ボックスに、入力**%MessageID%.txt**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="17d68-114">In the **File name** box, type **%MessageID%.txt**, and then click **OK**.</span></span>  
+8.  <span data-ttu-id="17d68-114">**ファイル名**ボックスに、入力 **%MessageID%.txt**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="17d68-114">In the **File name** box, type **%MessageID%.txt**, and then click **OK**.</span></span>  
   
 9. <span data-ttu-id="17d68-115">送信ポートのプロパティ] ダイアログ ボックスのドロップダウン リストをクリックして、**送信パイプライン**ボックスし、[ **MT103SendPipeline**です。</span><span class="sxs-lookup"><span data-stu-id="17d68-115">In the Send Port Properties dialog box, click the drop-down list for the **Send pipeline** box, and then select **MT103SendPipeline**.</span></span>  
   
@@ -51,10 +52,10 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="17d68-117">プロパティ</span><span class="sxs-lookup"><span data-stu-id="17d68-117">Use this</span></span>|<span data-ttu-id="17d68-118">目的</span><span class="sxs-lookup"><span data-stu-id="17d68-118">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="17d68-119">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="17d68-119">**Property**</span></span>|<span data-ttu-id="17d68-120">選択**BTS です。ReceivePortName**です。</span><span class="sxs-lookup"><span data-stu-id="17d68-120">Select **BTS.ReceivePortName**.</span></span>|  
-    |<span data-ttu-id="17d68-121">**演算子**</span><span class="sxs-lookup"><span data-stu-id="17d68-121">**Operator**</span></span>|<span data-ttu-id="17d68-122">選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="17d68-122">Select **==**.</span></span>|  
+    |<span data-ttu-id="17d68-121">**演算子**</span><span class="sxs-lookup"><span data-stu-id="17d68-121">**Operator**</span></span>|<span data-ttu-id="17d68-122">選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="17d68-122">Select **==**.</span></span>|  
     |<span data-ttu-id="17d68-123">**値**</span><span class="sxs-lookup"><span data-stu-id="17d68-123">**Value**</span></span>|<span data-ttu-id="17d68-124">型**MT103_XML_ReceivePort**です。</span><span class="sxs-lookup"><span data-stu-id="17d68-124">Type **MT103_XML_ReceivePort**.</span></span>|  
   
-11. <span data-ttu-id="17d68-125">をクリックして**適用**、クリックして**[ok] です。**</span><span class="sxs-lookup"><span data-stu-id="17d68-125">Click **Apply**, and then click **OK.**</span></span>  
+11. <span data-ttu-id="17d68-125">をクリックして**適用**、クリックして **[ok] です。**</span><span class="sxs-lookup"><span data-stu-id="17d68-125">Click **Apply**, and then click **OK.**</span></span>  
   
 12. <span data-ttu-id="17d68-126">**送信ポート** ウィンドウを右クリックして**MT103_FlatFile_SendPort**、クリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="17d68-126">In the **Send Ports** pane, right-click **MT103_FlatFile_SendPort**, and then click **Start**.</span></span>  
   

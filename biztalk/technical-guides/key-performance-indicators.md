@@ -1,14 +1,14 @@
 ---
-title: "主要業績評価指標 |Microsoft ドキュメント"
-ms.custom: 
+title: 主要業績評価指標 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 298d639a-7adf-4f04-b097-a17f4c77ee50
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298290"
 ---
 # <a name="key-performance-indicators"></a><span data-ttu-id="29816-102">主要業績評価指標</span><span class="sxs-lookup"><span data-stu-id="29816-102">Key Performance Indicators</span></span>
 <span data-ttu-id="29816-103">このトピックでは、以下のスケール アウト方法を使用する場合、BizTalk Server 製品のグループが観察されたテスト結果を示します。</span><span class="sxs-lookup"><span data-stu-id="29816-103">This topic provides test results that the BizTalk Server product group observed when using the following scale-out methods:</span></span>  

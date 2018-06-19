@@ -1,14 +1,14 @@
 ---
-title: "追加して、Visual Studio のツールボックスからカスタム Functoid の削除 |Microsoft ドキュメント"
-ms.custom: 
+title: 追加して、Visual Studio のツールボックスからカスタム Functoid の削除 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 28f798cc-da97-4332-a842-ba87ac7b13b8
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965616"
 ---
 # <a name="adding-and-removing-custom-functoids-from-the-visual-studio-toolbox"></a><span data-ttu-id="28f3b-102">Visual Studio ツールボックスに対するカスタム Functoid の追加と削除</span><span class="sxs-lookup"><span data-stu-id="28f3b-102">Adding and Removing Custom Functoids from the Visual Studio Toolbox</span></span>
 <span data-ttu-id="28f3b-103">ここでは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックスに対し、カスタム Functoid を追加する方法と削除する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="28f3b-103">This topic describes how to add custom functoids to and remove custom functoids from the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Toolbox.</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/28/2017
   
     4.  <span data-ttu-id="28f3b-113">**ツールボックス アイテムの選択**ダイアログ ボックスで、をクリックして、 **BizTalk マッパー Functoid**タブです。</span><span class="sxs-lookup"><span data-stu-id="28f3b-113">In the **Choose Toolbox items** dialog box, click the **BizTalk Mapper Functoids** tab.</span></span>  
   
-    5.  <span data-ttu-id="28f3b-114">をクリックして**リセット**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-114">Click **Reset**, and then click **OK**.</span></span> <span data-ttu-id="28f3b-115">この処理は時間がかかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="28f3b-115">This process may take a few moments.</span></span>  
+    5.  <span data-ttu-id="28f3b-114">をクリックして**リセット**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-114">Click **Reset**, and then click **OK**.</span></span> <span data-ttu-id="28f3b-115">この処理は時間がかかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="28f3b-115">This process may take a few moments.</span></span>  
   
          <span data-ttu-id="28f3b-116">カスタム Functoid が、各カテゴリを示すタブの下にあるツールボックスに表示されます。</span><span class="sxs-lookup"><span data-stu-id="28f3b-116">Your custom functoids should now appear in the Toolbox under tabs matching their category.</span></span>  
   
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  <span data-ttu-id="28f3b-119">**ツールボックス アイテムの選択**ダイアログ ボックスで、をクリックして、 **BizTalk マッパー Functoid**タブです。</span><span class="sxs-lookup"><span data-stu-id="28f3b-119">In the **Choose Toolbox items** dialog box, click the **BizTalk Mapper Functoids** tab.</span></span>  
   
-    3.  <span data-ttu-id="28f3b-120">をクリックして**リセット**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-120">Click **Reset**, and then click **OK**.</span></span>  
+    3.  <span data-ttu-id="28f3b-120">をクリックして**リセット**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-120">Click **Reset**, and then click **OK**.</span></span>  
   
         > [!NOTE]
         >  <span data-ttu-id="28f3b-121">カスタム Functoid でインライン コードが公開されない場合は、アセンブリがグローバル アセンブリ キャッシュで使用可能になっているかどうかを確認してください。</span><span class="sxs-lookup"><span data-stu-id="28f3b-121">If your custom functoid does not expose any inline code, make sure its assembly is made available in the global assembly cache.</span></span>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  <span data-ttu-id="28f3b-130">アセンブリを含むフォルダーに切り替えます。</span><span class="sxs-lookup"><span data-stu-id="28f3b-130">Switch to the folder containing your assembly.</span></span>  
   
-    3.  <span data-ttu-id="28f3b-131">コマンド プロンプトで次のように入力します。 **gacutil/if < assembly_path >**です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-131">At the command prompt, type **gacutil /if <assembly_path >**.</span></span> <span data-ttu-id="28f3b-132">たとえば、アセンブリ名が FunctoidLibrary.dll の場合は、入力**gacutil/if FunctoidLibrary.dll**です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-132">For example, if your assembly name is FunctoidLibrary.dll, then type **gacutil /if FunctoidLibrary.dll**.</span></span>  
+    3.  <span data-ttu-id="28f3b-131">コマンド プロンプトで次のように入力します。 **gacutil/if < assembly_path >** です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-131">At the command prompt, type **gacutil /if <assembly_path >**.</span></span> <span data-ttu-id="28f3b-132">たとえば、アセンブリ名が FunctoidLibrary.dll の場合は、入力**gacutil/if FunctoidLibrary.dll**です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-132">For example, if your assembly name is FunctoidLibrary.dll, then type **gacutil /if FunctoidLibrary.dll**.</span></span>  
   
     4.  <span data-ttu-id="28f3b-133">入力が完了したら、**終了**です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-133">When you are finished, type **exit**.</span></span>  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  <span data-ttu-id="28f3b-139">**ツールボックス アイテムの選択**ダイアログ ボックスで、をクリックして、 **BizTalk マッパー Functoid**タブです。</span><span class="sxs-lookup"><span data-stu-id="28f3b-139">In the **Choose Toolbox items** dialog box, click the **BizTalk Mapper Functoids** tab.</span></span>  
   
-    3.  <span data-ttu-id="28f3b-140">Select の一覧で、カスタム functoid を検索、**削除**チェック ボックスをクリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-140">Find the custom functoid in the list, select the **Remove** check box, and then click **OK**.</span></span>  
+    3.  <span data-ttu-id="28f3b-140">Select の一覧で、カスタム functoid を検索、**削除**チェック ボックスをクリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-140">Find the custom functoid in the list, select the **Remove** check box, and then click **OK**.</span></span>  
   
      <span data-ttu-id="28f3b-141">\- または -</span><span class="sxs-lookup"><span data-stu-id="28f3b-141">\- OR -</span></span>  
   
@@ -108,7 +109,7 @@ ms.lasthandoff: 11/28/2017
   
     1.  <span data-ttu-id="28f3b-154">開始**Visual Studio コマンド プロンプト**です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-154">Start **Visual Studio Command Prompt**.</span></span>  
   
-    2.  <span data-ttu-id="28f3b-155">コマンド プロンプトで次のように入力します。 **gacutil/u < assembly_display_name >**です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-155">At the command prompt, type **gacutil /u <assembly_display_name>**.</span></span> <span data-ttu-id="28f3b-156">たとえば、アセンブリ名が FunctoidLibrary.dll の場合は、入力**gacutil/if FunctoidLibrary**です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-156">For example, if your assembly name is FunctoidLibrary.dll, then type **gacutil /if FunctoidLibrary**.</span></span>  
+    2.  <span data-ttu-id="28f3b-155">コマンド プロンプトで次のように入力します。 **gacutil/u < assembly_display_name >** です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-155">At the command prompt, type **gacutil /u <assembly_display_name>**.</span></span> <span data-ttu-id="28f3b-156">たとえば、アセンブリ名が FunctoidLibrary.dll の場合は、入力**gacutil/if FunctoidLibrary**です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-156">For example, if your assembly name is FunctoidLibrary.dll, then type **gacutil /if FunctoidLibrary**.</span></span>  
   
     3.  <span data-ttu-id="28f3b-157">入力が完了したら、**終了**です。</span><span class="sxs-lookup"><span data-stu-id="28f3b-157">When you are finished, type **exit**.</span></span>  
   

@@ -1,18 +1,18 @@
 ---
-title: "A4SWIFT データベース内の Bicplus テーブルを管理する |Microsoft ドキュメント"
-ms.custom: 
+title: A4SWIFT データベース内の Bicplus テーブルを管理する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Bank Identifier Code (BIC), Bicplus table
 - A4SWIFT database, Bicplus table
 - Bicplus table
 ms.assetid: a255cdea-5ed4-4481-97f1-8425877a76d6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962104"
 ---
 # <a name="managing-the-bicplus-table-in-the-a4swift-database"></a><span data-ttu-id="76ba2-102">A4SWIFT データベース内の Bicplus テーブルを管理します。</span><span class="sxs-lookup"><span data-stu-id="76ba2-102">Managing the Bicplus Table in the A4SWIFT Database</span></span>
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]<span data-ttu-id="76ba2-103">BIC 検証を実行するのにには、BIC エントリのテーブルを使用します。</span><span class="sxs-lookup"><span data-stu-id="76ba2-103"> uses a table of BIC entries to perform BIC validation.</span></span> <span data-ttu-id="76ba2-104">このテーブルがで Bicplus テーブルにすることができます、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]データベースまたはカスタムのデータベース内のテーブルです。</span><span class="sxs-lookup"><span data-stu-id="76ba2-104">This table can be either the Bicplus table in the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database or a table in a custom database.</span></span>  
@@ -50,13 +51,13 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="76ba2-122">SQL Server インポートおよびエクスポート ウィザードへようこそ ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="76ba2-122">On the SQL Server Import and Export Wizard welcome page, click **Next**.</span></span>  
   
-6.  <span data-ttu-id="76ba2-123">**データ ソースを選択**ページに SWIFT Bicplus から BIC データをインポートする場合、[!INCLUDE[btsExcel](../../includes/btsexcel-md.md)]スプレッドシートで、 **Microsoft Excel**で、**データソース**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="76ba2-123">On the **Choose a Data Source** page, if importing BIC data from the SWIFT Bicplus [!INCLUDE[btsExcel](../../includes/btsexcel-md.md)] spreadsheet, select **Microsoft Excel** in the **Data Source** text box.</span></span> <span data-ttu-id="76ba2-124">スプレッドシートの場所を参照して、スプレッドシート内のファイル名を選択、 **Excel ファイル パス**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="76ba2-124">Browse to the location of the spreadsheet, and select the file name of the spreadsheet in the **Excel file path** text box.</span></span> <span data-ttu-id="76ba2-125">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76ba2-125">Click **Next**.</span></span>  
+6.  <span data-ttu-id="76ba2-123">**データ ソースを選択**ページに SWIFT Bicplus から BIC データをインポートする場合、[!INCLUDE[btsExcel](../../includes/btsexcel-md.md)]スプレッドシートで、 **Microsoft Excel**で、**データソース**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="76ba2-123">On the **Choose a Data Source** page, if importing BIC data from the SWIFT Bicplus [!INCLUDE[btsExcel](../../includes/btsexcel-md.md)] spreadsheet, select **Microsoft Excel** in the **Data Source** text box.</span></span> <span data-ttu-id="76ba2-124">スプレッドシートの場所を参照して、スプレッドシート内のファイル名を選択、 **Excel ファイル パス**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="76ba2-124">Browse to the location of the spreadsheet, and select the file name of the spreadsheet in the **Excel file path** text box.</span></span> <span data-ttu-id="76ba2-125">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76ba2-125">Click **Next**.</span></span>  
   
      <span data-ttu-id="76ba2-126">Oracle データベースから BIC データをインポートする場合は、選択**Microsoft ODBC Driver for Oracle**で、**データソース**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="76ba2-126">If importing BIC data from the Oracle database, select **Microsoft ODBC Driver for Oracle** in the **Data Source** text box.</span></span> <span data-ttu-id="76ba2-127">Oracle データベースとユーザー名と、そのサーバーに接続し、をクリックし、必要なパスワードを使用してサーバーを入力**次**です。</span><span class="sxs-lookup"><span data-stu-id="76ba2-127">Enter the server with the Oracle database, and the user name and password required to connect to that server, and then click **Next**.</span></span>  
   
-7.  <span data-ttu-id="76ba2-128">**変換先を選択**ことを確認 ページで、 **Microsoft OLE DB Provider for SQL Server**で入力した、**先**テキスト ボックスで、**使用Windows 認証**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="76ba2-128">On the **Choose a Destination** page, verify that **Microsoft OLE DB Provider for SQL Server** is entered in the **Destination** text box, and that **Use Windows Authentication** is selected.</span></span> <span data-ttu-id="76ba2-129">Bicplus のテーブルを作成する場合、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]データベースであることを確認**A4SWIFT**で入力した、**データベース**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="76ba2-129">If you are populating the Bicplus table in the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database, verify that **A4SWIFT** is entered in the **Database** text box.</span></span> <span data-ttu-id="76ba2-130">カスタム データベースを使用している場合は、そのデータベースでの名前を入力、**データベース**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="76ba2-130">If you are using a custom database, enter the name of that database in the **Database** text box.</span></span> <span data-ttu-id="76ba2-131">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76ba2-131">Click **Next**.</span></span>  
+7.  <span data-ttu-id="76ba2-128">**変換先を選択**ことを確認 ページで、 **Microsoft OLE DB Provider for SQL Server**で入力した、**先**テキスト ボックスで、**使用Windows 認証**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="76ba2-128">On the **Choose a Destination** page, verify that **Microsoft OLE DB Provider for SQL Server** is entered in the **Destination** text box, and that **Use Windows Authentication** is selected.</span></span> <span data-ttu-id="76ba2-129">Bicplus のテーブルを作成する場合、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]データベースであることを確認**A4SWIFT**で入力した、**データベース**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="76ba2-129">If you are populating the Bicplus table in the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database, verify that **A4SWIFT** is entered in the **Database** text box.</span></span> <span data-ttu-id="76ba2-130">カスタム データベースを使用している場合は、そのデータベースでの名前を入力、**データベース**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="76ba2-130">If you are using a custom database, enter the name of that database in the **Database** text box.</span></span> <span data-ttu-id="76ba2-131">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76ba2-131">Click **Next**.</span></span>  
   
-8.  <span data-ttu-id="76ba2-132">**選択テーブルのコピーまたはクエリ**ことを確認 ページで、 **1 つまたは複数のテーブルまたはビューからデータをコピー**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="76ba2-132">On the **Select Table Copy or Query** page, verify that **Copy data from one or more tables or views** is selected.</span></span> <span data-ttu-id="76ba2-133">選択をデータを指定するクエリを使用する必要がある場合**を転送するデータを指定するクエリを記述**です。</span><span class="sxs-lookup"><span data-stu-id="76ba2-133">If you need to use a query to specify the data, select **Write a query to specify the data to transfer**.</span></span> <span data-ttu-id="76ba2-134">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76ba2-134">Click **Next**.</span></span>  
+8.  <span data-ttu-id="76ba2-132">**選択テーブルのコピーまたはクエリ**ことを確認 ページで、 **1 つまたは複数のテーブルまたはビューからデータをコピー**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="76ba2-132">On the **Select Table Copy or Query** page, verify that **Copy data from one or more tables or views** is selected.</span></span> <span data-ttu-id="76ba2-133">選択をデータを指定するクエリを使用する必要がある場合**を転送するデータを指定するクエリを記述**です。</span><span class="sxs-lookup"><span data-stu-id="76ba2-133">If you need to use a query to specify the data, select **Write a query to specify the data to transfer**.</span></span> <span data-ttu-id="76ba2-134">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76ba2-134">Click **Next**.</span></span>  
   
 9. <span data-ttu-id="76ba2-135">**[ソース テーブルおよびビュー** ] ページで、をクリックして**Bicplus**で、**ソース**列を選択**Bicplus**で、 **移行先**列、およびクリック**次**です。</span><span class="sxs-lookup"><span data-stu-id="76ba2-135">On the **Select Source Tables and Views** page, click **Bicplus** in the **Source** column, select **Bicplus** in the **Destination** column, and then click **Next**.</span></span>  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="76ba2-151">BICs を"BIC"以外の名前は、列に格納する場合は、検索**BIC**で、**選択**、**場所**、および**ORDER BY**句、および適切な列の名前に変更します。</span><span class="sxs-lookup"><span data-stu-id="76ba2-151">If you are storing BICs in a column that is named other than "BIC", find **BIC** in the **SELECT**, **WHERE**, and **ORDER BY** clauses, and change it to the appropriate column name.</span></span>  
   
-6.  <span data-ttu-id="76ba2-152">**[実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76ba2-152">Click **Execute**.</span></span>  
+6.  <span data-ttu-id="76ba2-152">**[実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76ba2-152">Click **Execute**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="76ba2-153">参照</span><span class="sxs-lookup"><span data-stu-id="76ba2-153">See Also</span></span>  
  [<span data-ttu-id="76ba2-154">銀行識別コードの検証の有効化</span><span class="sxs-lookup"><span data-stu-id="76ba2-154">Enabling Validation of Bank Identifier Codes</span></span>](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)

@@ -12,7 +12,7 @@ helpviewer_keywords:
 - ServiceModel Metadata Utility Tool, creating a WCF Client Class or a WCF service contract with the tool
 - ServiceModel Metadata Utility Tool, configuring the tool for the adapter
 ms.assetid: 7ac08012-bb12-4983-9402-be84fe3997d8
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25962768"
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-mysap-business-suite"></a><span data-ttu-id="d2945-103">BizTalk adapter 用 mySAP Business Suite、ServiceModel メタデータ ユーティリティ ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="d2945-103">Using the ServiceModel Metadata Utility Tool with the BizTalk Adapter for mySAP Business Suite</span></span>
 <span data-ttu-id="d2945-104">ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用するには、WCF クライアント クラスまたは操作用の WCF サービス コントラクト (インターフェイス) を生成する、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]を公開します。</span><span class="sxs-lookup"><span data-stu-id="d2945-104">You can use the ServiceModel Metadata Utility Tool (svcutil.exe) to generate a WCF client class or a WCF service contract (interface) for operations that the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] exposes.</span></span> <span data-ttu-id="d2945-105">WCF クライアント クラスまたは WCF サービス コントラクトのいずれかを生成する svcutil.exe を実行した後、コードで生成されたファイルを含めると、生成されたクラスのインスタンスを作成したり、SAP で操作を実行する、生成されたインターフェイスから WCF サービスを実装システムです。</span><span class="sxs-lookup"><span data-stu-id="d2945-105">After you run svcutil.exe to generate either a WCF client class or a WCF service contract, you can include the generated file in your code and create instances of the generated class or implement a WCF service from the generated interface to perform operations on the SAP system.</span></span>  

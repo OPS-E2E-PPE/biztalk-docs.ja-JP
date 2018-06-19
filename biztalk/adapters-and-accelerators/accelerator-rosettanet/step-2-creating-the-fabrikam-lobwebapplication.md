@@ -1,17 +1,17 @@
 ---
-title: "手順 2: Fabrikam LOBWebApplication の作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: Fabrikam LOBWebApplication の作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private process tutorial, creating LOBWebApplication
 - LOBWebApplication
 ms.assetid: 2ff8bd20-7fbc-4e16-b177-bb4afac7f7c3
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964328"
 ---
 # <a name="step-2-creating-the-fabrikam-lobwebapplication"></a><span data-ttu-id="ec0f6-102">手順 2: Fabrikam LOBWebApplication の作成</span><span class="sxs-lookup"><span data-stu-id="ec0f6-102">Step 2: Creating the Fabrikam LOBWebApplication</span></span>
 <span data-ttu-id="ec0f6-103">ここでは、Fabrikam が 3A2 PIP 要求を Contoso に送信するために使用する LOB アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="ec0f6-103">In this step, you create the LOB application that Fabrikam uses to submit a 3A2 PIP request to Contoso.</span></span> <span data-ttu-id="ec0f6-104">LOBWebApplication プロジェクトは、[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK にインストールされています。</span><span class="sxs-lookup"><span data-stu-id="ec0f6-104">The LOBWebApplication project is installed in the [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK.</span></span> <span data-ttu-id="ec0f6-105">Web アプリケーションを実行するためには、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] インターネット インフォメーション サービス (IIS) 仮想ディレクトリを作成し、LOBWebApplication プロジェクトをビルドする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ec0f6-105">To run the Web application, you have to create a [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Internet Information Services (IIS) virtual directory and build the LOBWebApplication project.</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="ec0f6-115">**仮想ディレクトリ エイリアス**] ページの [、**エイリアス**ボックスに、入力**LOBWebApplication**、順にクリック**次**です。</span><span class="sxs-lookup"><span data-stu-id="ec0f6-115">On the **Virtual Directory Alias** page, in the **Alias** box, type **LOBWebApplication**, and then click **Next**.</span></span>  
   
-6.  <span data-ttu-id="ec0f6-116">**Web サイトのコンテンツのディレクトリ**] ページで [**参照**を選択、 **\<ドライブ\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\lobwebapplication**フォルダー、およびクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="ec0f6-116">On the **Web Site Content Directory** page, click **Browse**, select the **\<drive\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\LOBWebApplication** folder, and then click **OK**.</span></span> <span data-ttu-id="ec0f6-117">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ec0f6-117">Click **Next**.</span></span>  
+6.  <span data-ttu-id="ec0f6-116">**Web サイトのコンテンツのディレクトリ**] ページで [**参照**を選択、 **\<ドライブ\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\lobwebapplication**フォルダー、およびクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="ec0f6-116">On the **Web Site Content Directory** page, click **Browse**, select the **\<drive\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\LOBWebApplication** folder, and then click **OK**.</span></span> <span data-ttu-id="ec0f6-117">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ec0f6-117">Click **Next**.</span></span>  
   
 7.  <span data-ttu-id="ec0f6-118">**仮想ディレクトリのアクセス許可**] ページで [**次**です。</span><span class="sxs-lookup"><span data-stu-id="ec0f6-118">On the **Virtual Directory Access Permissions** page, click **Next**.</span></span>  
   

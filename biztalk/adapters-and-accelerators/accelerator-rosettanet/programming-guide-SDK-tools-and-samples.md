@@ -1,15 +1,15 @@
 ---
-title: "プログラミング ガイド、SDK ツール、および BizTalk Server で RosettaNet accelerator 用のサンプル |Microsoft ドキュメント"
-description: "プライベート プロセスをカスタマイズ、PIP を操作、BTARN のツールを使用して BizTalk Server で RosettaNet accelerator 用のサンプルを展開"
-caps.latest.revision: "8"
+title: プログラミング ガイド、SDK ツール、および BizTalk Server で RosettaNet accelerator 用のサンプル |Microsoft ドキュメント
+description: プライベート プロセスをカスタマイズ、PIP を操作、BTARN のツールを使用して BizTalk Server で RosettaNet accelerator 用のサンプルを展開
+caps.latest.revision: 8
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/09/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 159cb8f2-80af-4abf-9d9e-59300a880071
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209546"
 ---
 # <a name="programming-guide-tools-and-samples-in-the-rosettanet-sdk"></a><span data-ttu-id="8b28b-103">プログラミング ガイド、ツールおよび RosettaNet SDK のサンプル</span><span class="sxs-lookup"><span data-stu-id="8b28b-103">Programming guide, tools and samples in the RosettaNet SDK</span></span>
 <span data-ttu-id="8b28b-104">この Software Development Kit (SDK) では、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] のツール、パブリック アプリケーション プログラミング インターフェイス (API)、または [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK のサンプルとユーティリティを使用してアプリケーションを開発する開発者向けの情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="8b28b-104">This Software Development Kit (SDK) provides information for developers who are creating applications using any one of the tools in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)], the public application programming interfaces (API), or the samples and utilities provided in the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK.</span></span>  

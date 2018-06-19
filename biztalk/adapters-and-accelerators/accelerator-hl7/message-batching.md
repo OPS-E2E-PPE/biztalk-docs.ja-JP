@@ -1,11 +1,11 @@
 ---
-title: "メッセージのバッチ処理 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージのバッチ処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, batching
 - batching, messages
 ms.assetid: d852cf00-3882-4f0f-a4c3-2a39483710ee
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204650"
 ---
 # <a name="message-batching"></a><span data-ttu-id="57200-102">メッセージのバッチ処理</span><span class="sxs-lookup"><span data-stu-id="57200-102">Message Batching</span></span>
 <span data-ttu-id="57200-103">プロトコルの標準、スケジューリング問題、またはメッセージのサイズ制限は、メッセージ バッチ処理する必要を決める場合があります。</span><span class="sxs-lookup"><span data-stu-id="57200-103">Protocol standards, scheduling issues, or message size limitations may motivate the need to batch messages.</span></span> <span data-ttu-id="57200-104">HL7 バッチ ヘッダーとトレーラーのバッチで囲まれたメッセージの正常性レベル 7 (HL7) のバッチで構成されます。</span><span class="sxs-lookup"><span data-stu-id="57200-104">A Health Level Seven (HL7) batch consists of messages enclosed by an HL7 batch header and batch trailer.</span></span> <span data-ttu-id="57200-105">メッセージの区切り記号は、バッチ内の個々 のメッセージを区切ります。</span><span class="sxs-lookup"><span data-stu-id="57200-105">Message separators separate the individual messages within the batch.</span></span>  

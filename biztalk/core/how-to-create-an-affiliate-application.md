@@ -12,7 +12,7 @@ helpviewer_keywords:
 - applications [SSO], creating
 - creating, applications [SSO]
 ms.assetid: d0967c4b-6201-416a-9d3a-23b5de5b83d6
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25969024"
 ---
 # <a name="how-to-create-an-affiliate-application"></a><span data-ttu-id="011f4-102">関連アプリケーションを作成する方法</span><span class="sxs-lookup"><span data-stu-id="011f4-102">How to Create an Affiliate Application</span></span>
 <span data-ttu-id="011f4-103">MMC スナップインまたはここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のアプリケーションを作成できます。</span><span class="sxs-lookup"><span data-stu-id="011f4-103">You can use the MMC Snap-In or this command to create one or more applications, as specified by the XML file.</span></span> <span data-ttu-id="011f4-104">Windows 側開始 SSO の XML ファイルの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="011f4-104">An example XML file for Windows Initiated SSO is:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "手順 2: SWIFTNet の構成を追加、Paramfile InterAct ストアと転送シナリオ |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: SWIFTNet の構成を追加、Paramfile InterAct ストアと転送シナリオ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2a18a43c-1dd9-4113-bf32-8bc7bf9338b0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963128"
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-store-and-forward-scenario"></a><span data-ttu-id="93fe2-102">手順 2: SWIFTNet の構成を追加、Paramfile InterAct ストアと転送シナリオ</span><span class="sxs-lookup"><span data-stu-id="93fe2-102">Step 2: Add SWIFTNet Configuration to the Paramfile for the InterAct Store and Forward Scenario</span></span>
 <span data-ttu-id="93fe2-103">SAG で作成されたサーバー メッセージのパートナーは、これらの値で初期化するために受信者を有効にする SWIFTNet paramfile で指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="93fe2-103">The Server message partners created in SAG must be specified in the SWIFTNet paramfile to enable Receivers to initialize with these values.</span></span>  
@@ -46,19 +47,19 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="93fe2-115">**起動"snlreceiver - SagMessagePartner \<Interact SnF 用サーバー MessagePartnerName\> AdapterMode Interact"**</span><span class="sxs-lookup"><span data-stu-id="93fe2-115">**spawn "snlreceiver -SagMessagePartner \<Server MessagePartnerName for Interact SnF\> -AdapterMode Interact"**</span></span>  
   
-     <span data-ttu-id="93fe2-116">* 終了</span><span class="sxs-lookup"><span data-stu-id="93fe2-116">*END</span></span>  
+     <span data-ttu-id="93fe2-116">\* 終了</span><span class="sxs-lookup"><span data-stu-id="93fe2-116">\*END</span></span>  
   
      <span data-ttu-id="93fe2-117">subsystem_stop:</span><span class="sxs-lookup"><span data-stu-id="93fe2-117">subsystem_stop:</span></span>  
   
-     <span data-ttu-id="93fe2-118">* KILL9:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="93fe2-118">*KILL9:snlreceiver</span></span>  
+     <span data-ttu-id="93fe2-118">\* KILL9:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="93fe2-118">\*KILL9:snlreceiver</span></span>  
   
-     <span data-ttu-id="93fe2-119">* 終了</span><span class="sxs-lookup"><span data-stu-id="93fe2-119">*END</span></span>  
+     <span data-ttu-id="93fe2-119">\* 終了</span><span class="sxs-lookup"><span data-stu-id="93fe2-119">\*END</span></span>  
   
      <span data-ttu-id="93fe2-120">subsystem_status:</span><span class="sxs-lookup"><span data-stu-id="93fe2-120">subsystem_status:</span></span>  
   
-     <span data-ttu-id="93fe2-121">* NB:1:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="93fe2-121">*NB:1:snlreceiver</span></span>  
+     <span data-ttu-id="93fe2-121">\* NB:1:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="93fe2-121">\*NB:1:snlreceiver</span></span>  
   
-     <span data-ttu-id="93fe2-122">* 終了</span><span class="sxs-lookup"><span data-stu-id="93fe2-122">*END</span></span>  
+     <span data-ttu-id="93fe2-122">\* 終了</span><span class="sxs-lookup"><span data-stu-id="93fe2-122">\*END</span></span>  
   
      <span data-ttu-id="93fe2-123">start_event:SNL001:subsystem InteractStubSnF が稼働</span><span class="sxs-lookup"><span data-stu-id="93fe2-123">start_event:SNL001:subsystem InteractStubSnF is up</span></span>  
   
@@ -74,15 +75,15 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="93fe2-129">\#subsystem_start:</span><span class="sxs-lookup"><span data-stu-id="93fe2-129">\#subsystem_start:</span></span>  
   
-     <span data-ttu-id="93fe2-130">\#* 終了</span><span class="sxs-lookup"><span data-stu-id="93fe2-130">\#*END</span></span>  
+     <span data-ttu-id="93fe2-130">\#\* 終了</span><span class="sxs-lookup"><span data-stu-id="93fe2-130">\#\*END</span></span>  
   
      <span data-ttu-id="93fe2-131">\#subsystem_stop:</span><span class="sxs-lookup"><span data-stu-id="93fe2-131">\#subsystem_stop:</span></span>  
   
-     <span data-ttu-id="93fe2-132">\#* 終了</span><span class="sxs-lookup"><span data-stu-id="93fe2-132">\#*END</span></span>  
+     <span data-ttu-id="93fe2-132">\#\* 終了</span><span class="sxs-lookup"><span data-stu-id="93fe2-132">\#\*END</span></span>  
   
      <span data-ttu-id="93fe2-133">\#subsystem_status:</span><span class="sxs-lookup"><span data-stu-id="93fe2-133">\#subsystem_status:</span></span>  
   
-     <span data-ttu-id="93fe2-134">\#* 終了</span><span class="sxs-lookup"><span data-stu-id="93fe2-134">\#*END</span></span>  
+     <span data-ttu-id="93fe2-134">\#\* 終了</span><span class="sxs-lookup"><span data-stu-id="93fe2-134">\#\*END</span></span>  
   
      #<a name="starteventsnl001subsystem-user-is-up"></a><span data-ttu-id="93fe2-135">ユーザーが稼働 start_event:SNL001:subsystem です。</span><span class="sxs-lookup"><span data-stu-id="93fe2-135">start_event:SNL001:subsystem User is up</span></span>  
   

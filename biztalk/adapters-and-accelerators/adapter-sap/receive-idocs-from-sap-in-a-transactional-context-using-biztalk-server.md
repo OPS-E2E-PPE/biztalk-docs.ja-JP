@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Server を使用して、トランザクションのコンテキストでの SAP からの Idoc を受信 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して、トランザクションのコンテキストでの SAP からの Idoc を受信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - transactional context
 - IDOCs, receiving in a transactional context using BizTalk Server
 ms.assetid: 6a01bb82-7292-4b70-8ad7-996d389a9365
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962744"
 ---
 # <a name="receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server"></a><span data-ttu-id="861cb-102">BizTalk Server を使用して、トランザクションのコンテキストでの SAP からの Idoc を受信します。</span><span class="sxs-lookup"><span data-stu-id="861cb-102">Receive IDOCs from SAP in a Transactional Context using BizTalk Server</span></span>
 <span data-ttu-id="861cb-103">IDOC を受信して、トランザクションのコンテキストでは、トランザクションのコンテキストで tRFCs の受信に似ています。</span><span class="sxs-lookup"><span data-stu-id="861cb-103">Receiving IDOC in a transactional context is similar to receiving tRFCs in a transactional context.</span></span> <span data-ttu-id="861cb-104">このような場合は、SAP システムから受信した IDOC が含まれています、TID には一部として、  *\<TransactionalRfcOperationIdentifier\>* 要素。</span><span class="sxs-lookup"><span data-stu-id="861cb-104">In such a case, the IDOC received from the SAP system contains a TID as part of the *\<TransactionalRfcOperationIdentifier\>* element.</span></span> <span data-ttu-id="861cb-105">この TID はアダプターによって、SQL データベースに永続化されます。</span><span class="sxs-lookup"><span data-stu-id="861cb-105">This TID is persisted in a SQL database by the adapter.</span></span> <span data-ttu-id="861cb-106">IDOC を送信する SAP システム内の ABAP コードに"COMMIT WORK"ステートメントがある場合、TID は、SAP システムへの応答が送信された後、SQL データベースから削除されます。</span><span class="sxs-lookup"><span data-stu-id="861cb-106">If the ABAP code in the SAP system that sends the IDOC has a "COMMIT WORK" statement, the TID is deleted from the SQL database after a response is sent back to the SAP system.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "MSMQ アダプターでの証明書を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: MSMQ アダプターでの証明書を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 922a171d-705f-4465-acda-212aa3797c57
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297914"
 ---
 # <a name="how-to-configure-certificates-with-an-msmq-adapter"></a><span data-ttu-id="7fe92-102">MSMQ アダプターでの証明書を構成する方法</span><span class="sxs-lookup"><span data-stu-id="7fe92-102">How to Configure Certificates with an MSMQ Adapter</span></span>
 <span data-ttu-id="7fe92-103">MSMQ 送信アダプターを受け付けるか、クライアント証明書を必要とするサーバーとの接続をセキュリティで保護できます。</span><span class="sxs-lookup"><span data-stu-id="7fe92-103">The MSMQ send adapter can help secure a connection with servers that accept or require client certificates.</span></span> <span data-ttu-id="7fe92-104">クライアント証明書が指定されている場合、MSMQ 送信アダプターを必要とするか、クライアント証明書をそのまま使用するサーバーと接続するときに、証明書を使用します。</span><span class="sxs-lookup"><span data-stu-id="7fe92-104">If a client certificate is specified, the MSMQ send adapter uses the certificate when connecting with servers that require or accept client certificates.</span></span> <span data-ttu-id="7fe92-105">クライアント証明書が指定されていないと、移行先サーバーには、クライアント証明書が必要です、送信者が認証されていないと、MSMQ 送信アダプターは、メッセージの送信に失敗し、標準の再試行ロジックに従っています。</span><span class="sxs-lookup"><span data-stu-id="7fe92-105">If the client certificate is not specified and the destination server requires client certificates, the sender is not authenticated and the MSMQ send adapter fails to send the message and follows the standard retry logic.</span></span>  
@@ -38,4 +39,4 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="7fe92-119">**証明書の拇印**、適切な拇印を入力します。</span><span class="sxs-lookup"><span data-stu-id="7fe92-119">For **Certificate thumbprint**, enter the appropriate thumbprint.</span></span>  
   
-5.  <span data-ttu-id="7fe92-120">をクリックして**[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="7fe92-120">Click **OK**, and then click **OK** again.</span></span>
+5.  <span data-ttu-id="7fe92-120">をクリックして **[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="7fe92-120">Click **OK**, and then click **OK** again.</span></span>

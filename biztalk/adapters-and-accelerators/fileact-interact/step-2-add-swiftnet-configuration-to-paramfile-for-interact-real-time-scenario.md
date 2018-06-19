@@ -1,14 +1,14 @@
 ---
-title: "手順 2: の Paramfile に SWIFTNet 構成を追加する、リアルタイムのシナリオを対話 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: の Paramfile に SWIFTNet 構成を追加する、リアルタイムのシナリオを対話 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6a900a6e-3e08-430a-8766-4a7192adba5e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964608"
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-real-time-scenario"></a><span data-ttu-id="4cd29-102">手順 2: の Paramfile に SWIFTNet 構成を追加する、リアルタイムのシナリオの対話</span><span class="sxs-lookup"><span data-stu-id="4cd29-102">Step 2: Add SWIFTNet Configuration to the Paramfile for the InterAct Real-Time Scenario</span></span>
 <span data-ttu-id="4cd29-103">SAG で作成されたサーバー メッセージのパートナーは、これらの値で初期化するために受信者を有効にする SWIFTNet paramfile で指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4cd29-103">The Server message partners created in SAG must be specified in the SWIFTNet paramfile to enable Receivers to initialize with these values.</span></span> <span data-ttu-id="4cd29-104">手順を完了する必要があります、プロシージャを開始する前に[手順 1: 対話リアルタイム シナリオでは、SWIFT アダプターを構成](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="4cd29-104">Before you begin the procedure, you must complete the instructions in [Step 1: Configure the SWIFT Adapter for the InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md).</span></span>  
@@ -43,19 +44,19 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="4cd29-115">**起動"snlreceiver - SagMessagePartner \<Interact RT 用サーバー MessagePartnerName \> AdapterMode Interact"**</span><span class="sxs-lookup"><span data-stu-id="4cd29-115">**spawn "snlreceiver -SagMessagePartner \<Server MessagePartnerName for Interact RT \> -AdapterMode Interact"**</span></span>  
   
-     <span data-ttu-id="4cd29-116">* 終了</span><span class="sxs-lookup"><span data-stu-id="4cd29-116">*END</span></span>  
+     <span data-ttu-id="4cd29-116">\* 終了</span><span class="sxs-lookup"><span data-stu-id="4cd29-116">\*END</span></span>  
   
      <span data-ttu-id="4cd29-117">subsystem_stop:</span><span class="sxs-lookup"><span data-stu-id="4cd29-117">subsystem_stop:</span></span>  
   
-     <span data-ttu-id="4cd29-118">* KILL9:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="4cd29-118">*KILL9:snlreceiver</span></span>  
+     <span data-ttu-id="4cd29-118">\* KILL9:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="4cd29-118">\*KILL9:snlreceiver</span></span>  
   
-     <span data-ttu-id="4cd29-119">* 終了</span><span class="sxs-lookup"><span data-stu-id="4cd29-119">*END</span></span>  
+     <span data-ttu-id="4cd29-119">\* 終了</span><span class="sxs-lookup"><span data-stu-id="4cd29-119">\*END</span></span>  
   
      <span data-ttu-id="4cd29-120">subsystem_status:</span><span class="sxs-lookup"><span data-stu-id="4cd29-120">subsystem_status:</span></span>  
   
-     <span data-ttu-id="4cd29-121">* NB:1:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="4cd29-121">*NB:1:snlreceiver</span></span>  
+     <span data-ttu-id="4cd29-121">\* NB:1:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="4cd29-121">\*NB:1:snlreceiver</span></span>  
   
-     <span data-ttu-id="4cd29-122">* 終了</span><span class="sxs-lookup"><span data-stu-id="4cd29-122">*END</span></span>  
+     <span data-ttu-id="4cd29-122">\* 終了</span><span class="sxs-lookup"><span data-stu-id="4cd29-122">\*END</span></span>  
   
      <span data-ttu-id="4cd29-123">start_event:SNL001:subsystem InteractStub が稼働</span><span class="sxs-lookup"><span data-stu-id="4cd29-123">start_event:SNL001:subsystem InteractStub is up</span></span>  
   
@@ -71,15 +72,15 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="4cd29-129">\#subsystem_start:</span><span class="sxs-lookup"><span data-stu-id="4cd29-129">\#subsystem_start:</span></span>  
   
-     <span data-ttu-id="4cd29-130">\#* 終了</span><span class="sxs-lookup"><span data-stu-id="4cd29-130">\#*END</span></span>  
+     <span data-ttu-id="4cd29-130">\#\* 終了</span><span class="sxs-lookup"><span data-stu-id="4cd29-130">\#\*END</span></span>  
   
      <span data-ttu-id="4cd29-131">\#subsystem_stop:</span><span class="sxs-lookup"><span data-stu-id="4cd29-131">\#subsystem_stop:</span></span>  
   
-     <span data-ttu-id="4cd29-132">\#* 終了</span><span class="sxs-lookup"><span data-stu-id="4cd29-132">\#*END</span></span>  
+     <span data-ttu-id="4cd29-132">\#\* 終了</span><span class="sxs-lookup"><span data-stu-id="4cd29-132">\#\*END</span></span>  
   
      <span data-ttu-id="4cd29-133">\#subsystem_status:</span><span class="sxs-lookup"><span data-stu-id="4cd29-133">\#subsystem_status:</span></span>  
   
-     #<a name="end"></a><span data-ttu-id="4cd29-134">* 終了</span><span class="sxs-lookup"><span data-stu-id="4cd29-134">*END</span></span>  
+     #<a name="end"></a><span data-ttu-id="4cd29-134">\* 終了</span><span class="sxs-lookup"><span data-stu-id="4cd29-134">\*END</span></span>  
   
      #<a name="starteventsnl001subsystem-user-is-up"></a><span data-ttu-id="4cd29-135">ユーザーが稼働 start_event:SNL001:subsystem です。</span><span class="sxs-lookup"><span data-stu-id="4cd29-135">start_event:SNL001:subsystem User is up</span></span>  
   

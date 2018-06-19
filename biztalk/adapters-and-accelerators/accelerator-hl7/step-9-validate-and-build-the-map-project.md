@@ -1,11 +1,11 @@
 ---
-title: "手順 9: 検証プロジェクトをビルド マップ |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 9: 検証プロジェクトをビルド マップ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - validating, maps
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - maps, building
 - maps, validating
 ms.assetid: 10716b0b-702c-48bb-85a9-d58d8f33b68b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206474"
 ---
 # <a name="step-9-validate-and-build-the-map-project"></a><span data-ttu-id="5caf5-102">手順 9: 検証プロジェクトをビルド マップ</span><span class="sxs-lookup"><span data-stu-id="5caf5-102">Step 9: Validate and Build the Map Project</span></span>
 <span data-ttu-id="5caf5-103">このステップで使用して、**マップの検証**コマンドをマップ、内部不整合があるかによってマッピング スキーマを効果的に使用されないようにするその他の問題があるかを確認します。</span><span class="sxs-lookup"><span data-stu-id="5caf5-103">In this step, you use the **Validate Map** command to determine if the map contains any internal inconsistencies, or has other issues that would prevent it from being used effectively for mapping schemas.</span></span> <span data-ttu-id="5caf5-104">作成したリソース (スキーマおよびマップ) が含まれているアセンブリを生成するプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="5caf5-104">You also build the project to generate an assembly that contains the resources (schemas and the map) that you created.</span></span> <span data-ttu-id="5caf5-105">またこれにより、これまでに完了した作業ではコンパイル エラーがないこと。</span><span class="sxs-lookup"><span data-stu-id="5caf5-105">This also ensures that there are no compile errors in the work that you have completed so far.</span></span>  

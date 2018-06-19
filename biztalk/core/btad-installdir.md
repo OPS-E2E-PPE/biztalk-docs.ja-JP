@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964728"
 ---
 # <a name="btadinstalldir"></a><span data-ttu-id="6b4f7-102">BTAD_InstallDir</span><span class="sxs-lookup"><span data-stu-id="6b4f7-102">BTAD_InstallDir</span></span>
 <span data-ttu-id="6b4f7-103">BTAD_InstallDir には、BizTalk アプリケーションのインストール パスが格納されます。</span><span class="sxs-lookup"><span data-stu-id="6b4f7-103">BTAD_InstallDir contains the installation path of the BizTalk application.</span></span> <span data-ttu-id="6b4f7-104">BTAD_InstallDir は、そのアクションが作成または更新、および BTAD_HostClass が BizTalkHostInstance の場合にのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="6b4f7-104">This is only available when the action is Create or Update, and BTAD_HostClass is BizTalkHostInstance.</span></span>  

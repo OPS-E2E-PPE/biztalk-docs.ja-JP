@@ -1,14 +1,14 @@
 ---
-title: "AS2 経由で Mdn が非同期の静的送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 経由で Mdn が非同期の静的送信ポートの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc43e767-d9d7-4b02-b3fc-0cfdfd6e61c4
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968376"
 ---
 # <a name="configuring-a-static-send-port-for-asynchronous-mdns-over-as2"></a><span data-ttu-id="7e3b4-102">AS2 経由の非同期 MDN の静的送信ポートの構成</span><span class="sxs-lookup"><span data-stu-id="7e3b4-102">Configuring a Static Send Port for Asynchronous MDNs over AS2</span></span>
 <span data-ttu-id="7e3b4-103">このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成して、EDIINT/AS2 でエンコードされた非同期 MDN メッセージを静的送信ポート経由で送信する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7e3b4-103">This topic describes how to configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to send an asynchronous EDIINT/AS2-encoded MDN message over a static send port.</span></span> <span data-ttu-id="7e3b4-104">構成では、静的送信ポートを作成し、必要に応じて、送信ポートで使用される暗号化証明書のセットアップを行います。</span><span class="sxs-lookup"><span data-stu-id="7e3b4-104">This configuration includes creating the static send port and if required, setting up an encryption certificate to be used by the send port.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="7e3b4-121">**送信ポートのプロパティ: 全般**</span><span class="sxs-lookup"><span data-stu-id="7e3b4-121">**Send Port Properties: General**</span></span>|<span data-ttu-id="7e3b4-122">[送信パイプライン]</span><span class="sxs-lookup"><span data-stu-id="7e3b4-122">Send pipeline</span></span>|<span data-ttu-id="7e3b4-123">AS2Send</span><span class="sxs-lookup"><span data-stu-id="7e3b4-123">AS2Send</span></span>|  
 |<span data-ttu-id="7e3b4-124">**HTTP トランスポートのプロパティ**</span><span class="sxs-lookup"><span data-stu-id="7e3b4-124">**HTTP Transport Properties**</span></span>|<span data-ttu-id="7e3b4-125">送信先 URL</span><span class="sxs-lookup"><span data-stu-id="7e3b4-125">Destination URL</span></span>|<span data-ttu-id="7e3b4-126">\<送信先 URL の文字列\></span><span class="sxs-lookup"><span data-stu-id="7e3b4-126">\<Destination URL string\></span></span>|  
 |<span data-ttu-id="7e3b4-127">**HTTP トランスポートのプロパティ**</span><span class="sxs-lookup"><span data-stu-id="7e3b4-127">**HTTP Transport Properties**</span></span>|<span data-ttu-id="7e3b4-128">[チャンク エンコードを有効にする]</span><span class="sxs-lookup"><span data-stu-id="7e3b4-128">Enable chunked encoding</span></span>|<span data-ttu-id="7e3b4-129">クリア</span><span class="sxs-lookup"><span data-stu-id="7e3b4-129">Cleared</span></span>|  
-|<span data-ttu-id="7e3b4-130">**送信ポートのプロパティ: フィルター**</span><span class="sxs-lookup"><span data-stu-id="7e3b4-130">**Send Port Properties: Filters**</span></span>|<span data-ttu-id="7e3b4-131">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7e3b4-131">Property</span></span>|<span data-ttu-id="7e3b4-132">EdiIntAS.IsAS2AsynchronousMdn**注:**で指定されたアドレス宛ての MDN メッセージだけが送信ポートであることを確認する追加のフィルター式がこのサブスクリプション フィルターによって選択されても指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7e3b4-132">EdiIntAS.IsAS2AsynchronousMdn **Note:**  You should also specify additional filter expressions to ensure that only MDN messages destined to the address specified in this send port are picked up by this subscription filter.</span></span>|  
+|<span data-ttu-id="7e3b4-130">**送信ポートのプロパティ: フィルター**</span><span class="sxs-lookup"><span data-stu-id="7e3b4-130">**Send Port Properties: Filters**</span></span>|<span data-ttu-id="7e3b4-131">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7e3b4-131">Property</span></span>|<span data-ttu-id="7e3b4-132">EdiIntAS.IsAS2AsynchronousMdn**注:** で指定されたアドレス宛ての MDN メッセージだけが送信ポートであることを確認する追加のフィルター式がこのサブスクリプション フィルターによって選択されても指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7e3b4-132">EdiIntAS.IsAS2AsynchronousMdn **Note:**  You should also specify additional filter expressions to ensure that only MDN messages destined to the address specified in this send port are picked up by this subscription filter.</span></span>|  
 |<span data-ttu-id="7e3b4-133">**送信ポートのプロパティ: フィルター**</span><span class="sxs-lookup"><span data-stu-id="7e3b4-133">**Send Port Properties: Filters**</span></span>|<span data-ttu-id="7e3b4-134">演算子</span><span class="sxs-lookup"><span data-stu-id="7e3b4-134">Operator</span></span>|==|  
 |<span data-ttu-id="7e3b4-135">**送信ポートのプロパティ: フィルター**</span><span class="sxs-lookup"><span data-stu-id="7e3b4-135">**Send Port Properties: Filters**</span></span>|<span data-ttu-id="7e3b4-136">値</span><span class="sxs-lookup"><span data-stu-id="7e3b4-136">Value</span></span>|<span data-ttu-id="7e3b4-137">True</span><span class="sxs-lookup"><span data-stu-id="7e3b4-137">True</span></span>|  
 |<span data-ttu-id="7e3b4-138">**送信ポートのプロパティ: 証明書**</span><span class="sxs-lookup"><span data-stu-id="7e3b4-138">**Send Port Properties: Certificates**</span></span>|<span data-ttu-id="7e3b4-139">"一般名" および "拇印"</span><span class="sxs-lookup"><span data-stu-id="7e3b4-139">Common Name  and thumbprint</span></span>|<span data-ttu-id="7e3b4-140">送信 MDN メッセージで暗号化証明書を使用する場合は、証明書の名前および拇印を入力します。</span><span class="sxs-lookup"><span data-stu-id="7e3b4-140">Enter the certificate name and thumbprint if using an encryption certificate for the outbound MDN message.</span></span>|  

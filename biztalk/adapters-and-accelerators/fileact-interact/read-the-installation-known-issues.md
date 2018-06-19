@@ -1,14 +1,14 @@
 ---
-title: "インストールの既知の問題を読み取る |Microsoft ドキュメント"
-ms.custom: 
+title: インストールの既知の問題を読み取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 245379f2-4048-4803-83ea-38dc23eb1a81
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964688"
 ---
 # <a name="read-the-installation-known-issues"></a><span data-ttu-id="20d3d-102">既知の問題のインストールします。</span><span class="sxs-lookup"><span data-stu-id="20d3d-102">Read the installation known issues</span></span>
 [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]<span data-ttu-id="20d3d-103">既知の問題は、次のセクションに表示されます。</span><span class="sxs-lookup"><span data-stu-id="20d3d-103"> have known issues listed in the following sections.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL からの受信通知の差分クエリ |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL からの受信通知の差分クエリ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a6972e01-80be-47be-986a-c2e4e0fb0cd1
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967928"
 ---
 # <a name="receive-query-notifications-incrementally-from-sql-using-biztalk-server"></a><span data-ttu-id="246b1-102">BizTalk Server を使用して SQL からの受信通知の差分クエリ</span><span class="sxs-lookup"><span data-stu-id="246b1-102">Receive Query Notifications Incrementally from SQL using BizTalk Server</span></span>
 > [!IMPORTANT]
@@ -109,11 +110,11 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="246b1-177">値を指定**InboundOperationType**と**NotificationStatement**スキーマの生成中にプロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="246b1-177">Specify a value for **InboundOperationType** and **NotificationStatement** binding properties while generating the schema.</span></span> <span data-ttu-id="246b1-178">このバインドのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="246b1-178">For more information about this binding property, see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).</span></span> <span data-ttu-id="246b1-179">バインドのプロパティを指定する方法については、次を参照してください。 [SQL アダプターのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-binding-properties-for-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="246b1-179">For instructions on how to specify binding properties, see [Configure the binding properties for the SQL adapter](../../adapters-and-accelerators/adapter-sql/configure-the-binding-properties-for-the-sql-adapter.md).</span></span>  
   
-2.  <span data-ttu-id="246b1-180">コントラクトの種類を選択して**サービス (入力方向の操作)**です。</span><span class="sxs-lookup"><span data-stu-id="246b1-180">Select the contract type as **Service (Inbound operations)**.</span></span>  
+2.  <span data-ttu-id="246b1-180">コントラクトの種類を選択して**サービス (入力方向の操作)** です。</span><span class="sxs-lookup"><span data-stu-id="246b1-180">Select the contract type as **Service (Inbound operations)**.</span></span>  
   
 3.  <span data-ttu-id="246b1-181">スキーマを生成、**通知**操作します。</span><span class="sxs-lookup"><span data-stu-id="246b1-181">Generate schema for the **Notification** operation.</span></span>  
   
-4.  <span data-ttu-id="246b1-182">コントラクトの種類を選択して**クライアント (送信操作)**です。</span><span class="sxs-lookup"><span data-stu-id="246b1-182">Select the contract type as **Client (Outbound operations)**.</span></span>  
+4.  <span data-ttu-id="246b1-182">コントラクトの種類を選択して**クライアント (送信操作)** です。</span><span class="sxs-lookup"><span data-stu-id="246b1-182">Select the contract type as **Client (Outbound operations)**.</span></span>  
   
 5.  <span data-ttu-id="246b1-183">スキーマを生成、**選択**操作**従業員**テーブル。</span><span class="sxs-lookup"><span data-stu-id="246b1-183">Generate schema for the **Select** operation on **Employee** table.</span></span>  
   
@@ -269,7 +270,7 @@ Select(WCF.Action) = "TableOp/Select/dbo/Employee";
         |<span data-ttu-id="246b1-326">プロパティのバインド</span><span class="sxs-lookup"><span data-stu-id="246b1-326">Binding Property</span></span>|<span data-ttu-id="246b1-327">値</span><span class="sxs-lookup"><span data-stu-id="246b1-327">Value</span></span>|  
         |----------------------|-----------|  
         |<span data-ttu-id="246b1-328">**InboundOperationType**</span><span class="sxs-lookup"><span data-stu-id="246b1-328">**InboundOperationType**</span></span>|<span data-ttu-id="246b1-329">これを設定して**通知**です。</span><span class="sxs-lookup"><span data-stu-id="246b1-329">Set this to **Notification**.</span></span>|  
-        |<span data-ttu-id="246b1-330">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="246b1-330">**NotificationStatement**</span></span>|<span data-ttu-id="246b1-331">これを設定します。</span><span class="sxs-lookup"><span data-stu-id="246b1-331">Set this to:</span></span><br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> <span data-ttu-id="246b1-332">**注:**する必要があります具体的には、列名を指定、ステートメントで次の SELECT ステートメントで示すようにします。</span><span class="sxs-lookup"><span data-stu-id="246b1-332">**Note:** You must specifically specify the column names in the statement as shown in this SELECT statement.</span></span> <span data-ttu-id="246b1-333">また、スキーマ名と共に、テーブル名を必ず指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="246b1-333">Also, you must always specify the table name along with the schema name.</span></span> <span data-ttu-id="246b1-334">たとえば、 `dbo.Employee`のようにします。</span><span class="sxs-lookup"><span data-stu-id="246b1-334">For example, `dbo.Employee`.</span></span>|  
+        |<span data-ttu-id="246b1-330">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="246b1-330">**NotificationStatement**</span></span>|<span data-ttu-id="246b1-331">これを設定します。</span><span class="sxs-lookup"><span data-stu-id="246b1-331">Set this to:</span></span><br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> <span data-ttu-id="246b1-332">**注:** する必要があります具体的には、列名を指定、ステートメントで次の SELECT ステートメントで示すようにします。</span><span class="sxs-lookup"><span data-stu-id="246b1-332">**Note:** You must specifically specify the column names in the statement as shown in this SELECT statement.</span></span> <span data-ttu-id="246b1-333">また、スキーマ名と共に、テーブル名を必ず指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="246b1-333">Also, you must always specify the table name along with the schema name.</span></span> <span data-ttu-id="246b1-334">たとえば、 `dbo.Employee`のようにします。</span><span class="sxs-lookup"><span data-stu-id="246b1-334">For example, `dbo.Employee`.</span></span>|  
         |<span data-ttu-id="246b1-335">**NotifyOnListenerStart**</span><span class="sxs-lookup"><span data-stu-id="246b1-335">**NotifyOnListenerStart**</span></span>|<span data-ttu-id="246b1-336">これを設定して**True**です。</span><span class="sxs-lookup"><span data-stu-id="246b1-336">Set this to **True**.</span></span>|  
   
          <span data-ttu-id="246b1-337">異なるバインディングのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="246b1-337">For more information about the different binding properties, see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "Feature pack の構成 |Microsoft ドキュメント"
-description: "インストールし 1, 用 feature pack を構成および機能パック 2 です。 新しい機能の一覧から、API Management、team services デプロイメント、Azure に新しいアダプター、バックアップなど、BizTalk Server 2016 での詳細を参照してください。"
-ms.custom: 
+title: Feature pack の構成 |Microsoft ドキュメント
+description: インストールし 1, 用 feature pack を構成および機能パック 2 です。 新しい機能の一覧から、API Management、team services デプロイメント、Azure に新しいアダプター、バックアップなど、BizTalk Server 2016 での詳細を参照してください。
+ms.custom: ''
 ms.date: 11/22/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1027bfa6-49b9-4f58-a2e2-3e0ae2fc3bf3
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: f4c0d7bc4b617688c643101a34062db90014851a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/23/2017
+ms.locfileid: "25550761"
 ---
 # <a name="configure-the-feature-pack"></a><span data-ttu-id="77688-104">この機能パックを構成します。</span><span class="sxs-lookup"><span data-stu-id="77688-104">Configure the feature pack</span></span>
 

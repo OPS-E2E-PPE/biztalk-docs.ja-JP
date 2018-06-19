@@ -1,14 +1,14 @@
 ---
-title: "Synonyms2 に対する操作 |Microsoft ドキュメント"
-ms.custom: 
+title: Synonyms2 に対する操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3bc9b2c4-ac22-491b-bc64-95e08a39b74d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964016"
 ---
 # <a name="operations-on-synonyms"></a><span data-ttu-id="2ffa1-102">シノニムに対する操作</span><span class="sxs-lookup"><span data-stu-id="2ffa1-102">Operations on Synonyms</span></span>
 <span data-ttu-id="2ffa1-103">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]シノニムに対して操作を実行することができます。</span><span class="sxs-lookup"><span data-stu-id="2ffa1-103">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] allows you to perform operations on synonyms.</span></span> <span data-ttu-id="2ffa1-104">シノニムは、エイリアスまたはデータベース オブジェクト (テーブル、ビュー、ストアド プロシージャ、関数、およびパッケージ) などのフレンドリ名です。</span><span class="sxs-lookup"><span data-stu-id="2ffa1-104">A synonym is an alias or friendly name for the database objects (such as tables, views, stored procedures, functions, and packages).</span></span> <span data-ttu-id="2ffa1-105">Oracle でのシノニムについての詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=138058](http://go.microsoft.com/fwlink/?LinkId=138058)です。</span><span class="sxs-lookup"><span data-stu-id="2ffa1-105">For more information about synonyms in Oracle, see [http://go.microsoft.com/fwlink/?LinkId=138058](http://go.microsoft.com/fwlink/?LinkId=138058).</span></span>  

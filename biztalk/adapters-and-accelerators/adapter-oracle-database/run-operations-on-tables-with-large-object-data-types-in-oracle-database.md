@@ -1,17 +1,17 @@
 ---
-title: "Oracle データベース内のラージ オブジェクト データ型とテーブルに対する操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース内のラージ オブジェクト データ型とテーブルに対する操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - operations, performing on tables
 - operations, performing on LOB data
 ms.assetid: 74276b85-daf1-4d0f-92f9-46d5c27a95a6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967848"
 ---
 # <a name="run-operations-on-tables-with-large-object-data-types-in-oracle-database"></a><span data-ttu-id="66272-102">Oracle データベース内のラージ オブジェクト データ型とテーブルに対する操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="66272-102">Run operations on tables with large object data types in Oracle Database</span></span>
 <span data-ttu-id="66272-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle ラージ オブジェクト (LOB) データ型のサポートを提供します。</span><span class="sxs-lookup"><span data-stu-id="66272-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] provides support for the Oracle large object (LOB) data types:</span></span>  
@@ -80,7 +81,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="66272-147">プロパティ</span><span class="sxs-lookup"><span data-stu-id="66272-147">Use this</span></span>|<span data-ttu-id="66272-148">目的</span><span class="sxs-lookup"><span data-stu-id="66272-148">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="66272-149">[Identifier]</span><span class="sxs-lookup"><span data-stu-id="66272-149">Identifier</span></span>|<span data-ttu-id="66272-150">型**要求**です。</span><span class="sxs-lookup"><span data-stu-id="66272-150">Type **Request**.</span></span>|  
-    |<span data-ttu-id="66272-151">メッセージの種類</span><span class="sxs-lookup"><span data-stu-id="66272-151">Message Type</span></span>|<span data-ttu-id="66272-152">ドロップダウン リストから、展開**スキーマ**を選択して*Operate_LOB です。OracleDBBindingSchema.ReadLOB**、*場所*Operate_LOB* BizTalk プロジェクトの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="66272-152">From the drop-down list, expand **Schemas**, and select *Operate_LOB.OracleDBBindingSchema.ReadLOB**,* where *Operate_LOB* is the name of your BizTalk project.</span></span> <span data-ttu-id="66272-153">*OracleDBBindingSchema*顧客テーブルに ReadLOB および UpdateLOB 操作に対して生成されるスキーマです。</span><span class="sxs-lookup"><span data-stu-id="66272-153">*OracleDBBindingSchema* is the schema generated for the ReadLOB and UpdateLOB operations on the CUSTOMER table.</span></span>|  
+    |<span data-ttu-id="66272-151">メッセージの種類</span><span class="sxs-lookup"><span data-stu-id="66272-151">Message Type</span></span>|<span data-ttu-id="66272-152">ドロップダウン リストから、展開**スキーマ**を選択して*Operate_LOB です。OracleDBBindingSchema.ReadLOB**、* 場所*Operate_LOB* BizTalk プロジェクトの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="66272-152">From the drop-down list, expand **Schemas**, and select *Operate_LOB.OracleDBBindingSchema.ReadLOB**,* where *Operate_LOB* is the name of your BizTalk project.</span></span> <span data-ttu-id="66272-153">*OracleDBBindingSchema*顧客テーブルに ReadLOB および UpdateLOB 操作に対して生成されるスキーマです。</span><span class="sxs-lookup"><span data-stu-id="66272-153">*OracleDBBindingSchema* is the schema generated for the ReadLOB and UpdateLOB operations on the CUSTOMER table.</span></span>|  
   
 5.  <span data-ttu-id="66272-154">次の 3 つ以上のメッセージを作成する前の手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="66272-154">Repeat the previous step to create three more messages.</span></span> <span data-ttu-id="66272-155">**プロパティ**、新しいメッセージ ウィンドウ、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="66272-155">In the **Properties** pane for the new messages, do the following:</span></span>  
   
@@ -150,7 +151,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="66272-254">**関連付けのプロパティ** ダイアログ ボックスには、手順 1. で昇格させたプロパティが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="66272-254">The **Correlation Properties** dialog box lists the properties you promoted in step 1.</span></span> <span data-ttu-id="66272-255">プロパティを選択し、をクリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="66272-255">Select a property, and then click **Add**.</span></span>  
   
-4.  <span data-ttu-id="66272-256">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="66272-256">Click **OK**.</span></span>  
+4.  <span data-ttu-id="66272-256">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="66272-256">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="66272-257">その他の昇格させたプロパティの関連付けの種類を作成するには、この手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="66272-257">To create correlation types for the other promoted property, repeat these steps.</span></span>  
   

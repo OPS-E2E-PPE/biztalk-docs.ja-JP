@@ -1,14 +1,14 @@
 ---
-title: "手順 1: Purchase_Order テーブルに対する挿入操作の要求メッセージを作成する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: Purchase_Order テーブルに対する挿入操作の要求メッセージを作成する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fde018d8-9d9a-42ea-8ee9-e3632450b9d7
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966008"
 ---
 # <a name="step-1-create-the-request-message-for-insert-operation-on-purchaseorder-table"></a><span data-ttu-id="9b2b4-102">手順 1: Purchase_Order テーブルに対する挿入操作の要求メッセージを作成します。</span><span class="sxs-lookup"><span data-stu-id="9b2b4-102">Step 1: Create the Request Message for Insert Operation on Purchase_Order Table</span></span>
 <span data-ttu-id="9b2b4-103">![4 のステップ 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")</span><span class="sxs-lookup"><span data-stu-id="9b2b4-103">![Step 1 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")</span></span>  
@@ -89,7 +90,7 @@ ms.lasthandoff: 11/28/2017
   
     3.  <span data-ttu-id="9b2b4-121">**署名**] タブで、[、**アセンブリに署名**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="9b2b4-121">In the **Signing** tab, select the **Sign the assembly** check box.</span></span>  
   
-    4.  <span data-ttu-id="9b2b4-122">**厳密な名前キー ファイルを選択して**一覧で、クリックして**\<参照\>**です。</span><span class="sxs-lookup"><span data-stu-id="9b2b4-122">From the **Choose a strong-name key file** list, click **\<Browse\>**.</span></span>  
+    4.  <span data-ttu-id="9b2b4-122">**厳密な名前キー ファイルを選択して**一覧で、クリックして**\<参照\>** です。</span><span class="sxs-lookup"><span data-stu-id="9b2b4-122">From the **Choose a strong-name key file** list, click **\<Browse\>**.</span></span>  
   
     5.  <span data-ttu-id="9b2b4-123">厳密な名前のキー ファイルを作成したフォルダーに移動し、をクリックして**開く**です。</span><span class="sxs-lookup"><span data-stu-id="9b2b4-123">Navigate to the folder where you created the strong-name key file, and then click **Open**.</span></span>  
   

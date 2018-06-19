@@ -1,17 +1,17 @@
 ---
-title: "検証の設定 |Microsoft ドキュメント"
-ms.custom: 
+title: 検証の設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - validating, configuring
 - configuring, validating
 ms.assetid: ee08acac-99f9-4403-b2ae-01b80378aa58
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961960"
 ---
 # <a name="validation-settings"></a><span data-ttu-id="50a17-102">検証の設定</span><span class="sxs-lookup"><span data-stu-id="50a17-102">Validation Settings</span></span>
 <span data-ttu-id="50a17-103">使用して[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]、HL7 標準に対して、メッセージを検証することができます。</span><span class="sxs-lookup"><span data-stu-id="50a17-103">Using [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)], you can validate your messages against the HL7 standard.</span></span> [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="50a17-104">送信または受信するメッセージが、HL7 標準に準拠しているメッセージの構造と本文セグメントを持ちます。</span><span class="sxs-lookup"><span data-stu-id="50a17-104"> ensures that the messages you send or receive have a message structure and body segment that conforms to the HL7 standard.</span></span> <span data-ttu-id="50a17-105">HL7 がサポートされているカスタム データ型を検証し、末尾の区切り記号を許可することができます。</span><span class="sxs-lookup"><span data-stu-id="50a17-105">You can also validate HL7 supported custom data types, and allow trailing delimiters.</span></span> <span data-ttu-id="50a17-106">使用する、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー**検証**検証を構成するには、タブ。</span><span class="sxs-lookup"><span data-stu-id="50a17-106">You use the [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer **Validation** tab to configure validation.</span></span>  
@@ -57,7 +58,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="50a17-128">**末尾の区切り記号 (区切り記号) を許可します。**</span><span class="sxs-lookup"><span data-stu-id="50a17-128">**Allow trailing delimiters (separators)**</span></span>|<span data-ttu-id="50a17-129">メッセージ インスタンスの末尾のフィールド区切り記号を有効にするには、このオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="50a17-129">Select this option to enable trailing field delimiters in message instances.</span></span>|  
     |<span data-ttu-id="50a17-130">**スキーマ Namespace**</span><span class="sxs-lookup"><span data-stu-id="50a17-130">**Schema Namespace**</span></span>|<span data-ttu-id="50a17-131">スキーマ名前空間の場所を入力します。</span><span class="sxs-lookup"><span data-stu-id="50a17-131">Type the schema namespace location.</span></span> <span data-ttu-id="50a17-132">既定値は、http://microsoft.com/HealthCare/HL7/2X です。</span><span class="sxs-lookup"><span data-stu-id="50a17-132">The default value is http://microsoft.com/HealthCare/HL7/2X.</span></span>|  
   
-2.  <span data-ttu-id="50a17-133">**[保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="50a17-133">Click **Save**.</span></span>  
+2.  <span data-ttu-id="50a17-133">**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="50a17-133">Click **Save**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="50a17-134">参照</span><span class="sxs-lookup"><span data-stu-id="50a17-134">See Also</span></span>  
  <span data-ttu-id="50a17-135">[ログの構成](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="50a17-135">[Logging Configuration](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md) </span></span>  

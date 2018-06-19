@@ -1,14 +1,14 @@
 ---
-title: "手順 3 b: FILEACT の受信場所が FileAct ストア アンド フォワードのシナリオの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3 b: FILEACT の受信場所が FileAct ストア アンド フォワードのシナリオの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0f30bb7d-1efb-4350-8809-be35f5634ea0
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965232"
 ---
 # <a name="step-3b-add-a-fileact-receive-location-for-the-fileact-store-and-forward-scenario"></a><span data-ttu-id="a4bb9-102">手順 3 b: FILEACT の受信場所が FileAct ストア アンド フォワードのシナリオを追加</span><span class="sxs-lookup"><span data-stu-id="a4bb9-102">Step 3B: Add a FILEACT Receive Location for the FileAct Store and Forward Scenario</span></span>
 <span data-ttu-id="a4bb9-103">この手順を開始する前に行う必要があります[手順 3A: FileAct ストア アンド フォワードのシナリオのファイルの受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="a4bb9-103">Before you begin this step, you must complete [Step 3A: Add a FILE Receive Location for the FileAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario.md).</span></span>  
@@ -65,7 +66,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="a4bb9-163">**回復モード**</span><span class="sxs-lookup"><span data-stu-id="a4bb9-163">**Recovery mode**</span></span>|<span data-ttu-id="a4bb9-164">ドロップダウン リストから選択**FALSE**です。</span><span class="sxs-lookup"><span data-stu-id="a4bb9-164">From the drop-down list, select **FALSE**.</span></span>|  
     |<span data-ttu-id="a4bb9-165">**SNL エンドポイント**</span><span class="sxs-lookup"><span data-stu-id="a4bb9-165">**SNL end-point**</span></span>|<span data-ttu-id="a4bb9-166">SAG ルーティング セットの適切なエンドポイントを入力します。</span><span class="sxs-lookup"><span data-stu-id="a4bb9-166">Type the appropriate end-point for the SAG routing set.</span></span> <span data-ttu-id="a4bb9-167">この値は、SAG で構成されている SnL エンドポイントと一致する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a4bb9-167">This value should match the SnL endpoint you configured in SAG.</span></span>|  
   
-8.  <span data-ttu-id="a4bb9-168">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a4bb9-168">Click **OK**.</span></span>  
+8.  <span data-ttu-id="a4bb9-168">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a4bb9-168">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="a4bb9-169">**受信場所のプロパティ** ウィンドウで、**全般** タブで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="a4bb9-169">In the **Receive Location Properties** window, on the **General** tab, do the following:</span></span>  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="a4bb9-172">**受信ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="a4bb9-172">**Receive handler**</span></span>|<span data-ttu-id="a4bb9-173">ドロップダウン リストから選択**BizTalkServerIsolatedHost**です。</span><span class="sxs-lookup"><span data-stu-id="a4bb9-173">From the drop-down list, select **BizTalkServerIsolatedHost**.</span></span>|  
     |<span data-ttu-id="a4bb9-174">**受信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="a4bb9-174">**Receive pipeline**</span></span>|<span data-ttu-id="a4bb9-175">ドロップダウン リストから選択**XMLReceive**です。</span><span class="sxs-lookup"><span data-stu-id="a4bb9-175">From the drop-down list, select **XMLReceive**.</span></span>|  
   
-10. <span data-ttu-id="a4bb9-176">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a4bb9-176">Click **OK**.</span></span>  
+10. <span data-ttu-id="a4bb9-176">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a4bb9-176">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="a4bb9-177">参照</span><span class="sxs-lookup"><span data-stu-id="a4bb9-177">See Also</span></span>  
  <span data-ttu-id="a4bb9-178">[手順 3: 送信ポートを作成し、FileAct ストア アンド フォワードのシナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-ports-and-receive-ports-for-the-fileact-store-and-forward.md) </span><span class="sxs-lookup"><span data-stu-id="a4bb9-178">[Step 3: Create Send Ports and Receive Ports for the FileAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-3-create-send-ports-and-receive-ports-for-the-fileact-store-and-forward.md) </span></span>  

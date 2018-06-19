@@ -1,17 +1,17 @@
 ---
-title: "検証の既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: 検証の既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - known issues, validating
 - validating, known issues
 ms.assetid: 136596f2-ee0f-4ea9-918c-3608f2ee1be3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207042"
 ---
 # <a name="validation-known-issues"></a><span data-ttu-id="443f3-102">検証に関する既知の問題</span><span class="sxs-lookup"><span data-stu-id="443f3-102">Validation Known Issues</span></span>
 <span data-ttu-id="443f3-103">このセクションには、検証エラーを回避するために役立つ有用な情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="443f3-103">This section contains useful information that may help you avoid validation errors.</span></span>  

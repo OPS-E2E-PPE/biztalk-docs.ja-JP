@@ -1,14 +1,14 @@
 ---
-title: "アダプター フレームワーク構成スキーマの装飾タグ |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター フレームワーク構成スキーマの装飾タグ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d5d7f6b-2273-45a6-ba9d-43201760cf22
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965376"
 ---
 # <a name="adapter-framework-configuration-schema-decoration-tags"></a><span data-ttu-id="4b9bf-102">アダプター フレームワーク構成スキーマの装飾タグ</span><span class="sxs-lookup"><span data-stu-id="4b9bf-102">Adapter Framework Configuration Schema Decoration Tags</span></span>
 <span data-ttu-id="4b9bf-103">このトピックで説明するタグを構成スキーマ ファイル内で使用して、アダプターのプロパティ ページでデータを表示および編成できます。</span><span class="sxs-lookup"><span data-stu-id="4b9bf-103">You can use the tags described in this topic within the configuration schema files to display and organize data on the adapter property pages.</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="readonly"></a><span data-ttu-id="4b9bf-121">\<読み取り専用\></span><span class="sxs-lookup"><span data-stu-id="4b9bf-121">\<readonly\></span></span>  
  <span data-ttu-id="4b9bf-122">\<固定 readonly =""\>装飾は、フィールドを変更することがあるかどうかを制御します。</span><span class="sxs-lookup"><span data-stu-id="4b9bf-122">The \<readonly fixed=""\> decoration controls whether a field may be edited.</span></span> <span data-ttu-id="4b9bf-123">"fixed" 属性値が `true` (既定値) の場合、フィールドは読み取り専用になります。</span><span class="sxs-lookup"><span data-stu-id="4b9bf-123">A "fixed" attribute value of `true` (the default) makes a field read-only.</span></span>  
   
- <span data-ttu-id="4b9bf-124">外部エディターを実装する場合は、外部を実装する**TypeConverter**クラスし、オーバーライド、 **GetStandardValuesExclusive(ITypeDescriptorContext)**メソッド代わりにします。</span><span class="sxs-lookup"><span data-stu-id="4b9bf-124">When implementing an external editor, implement an external **TypeConverter** class and override the **GetStandardValuesExclusive(ITypeDescriptorContext)** method instead.</span></span> <span data-ttu-id="4b9bf-125">`true` を返すと、フィールドは読み取り専用になりますが、カスタム エディターへのアクセスは保持されます。</span><span class="sxs-lookup"><span data-stu-id="4b9bf-125">Returning `true` makes a field read-only but preserves access to the custom editor.</span></span>  
+ <span data-ttu-id="4b9bf-124">外部エディターを実装する場合は、外部を実装する**TypeConverter**クラスし、オーバーライド、 **GetStandardValuesExclusive(ITypeDescriptorContext)** メソッド代わりにします。</span><span class="sxs-lookup"><span data-stu-id="4b9bf-124">When implementing an external editor, implement an external **TypeConverter** class and override the **GetStandardValuesExclusive(ITypeDescriptorContext)** method instead.</span></span> <span data-ttu-id="4b9bf-125">`true` を返すと、フィールドは読み取り専用になりますが、カスタム エディターへのアクセスは保持されます。</span><span class="sxs-lookup"><span data-stu-id="4b9bf-125">Returning `true` makes a field read-only but preserves access to the custom editor.</span></span>  
   
 ## <a name="browsable"></a><span data-ttu-id="4b9bf-126">\<ブラウズ\></span><span class="sxs-lookup"><span data-stu-id="4b9bf-126">\<browsable\></span></span>  
  <span data-ttu-id="4b9bf-127">\<ブラウズ show =""\>装飾は、プロパティ グリッドでフィールドを表示するかどうかを制御します。</span><span class="sxs-lookup"><span data-stu-id="4b9bf-127">The \<browsable show=""\> decoration controls whether a field appears in the property grid.</span></span> <span data-ttu-id="4b9bf-128">"show" 属性値が `True` (既定値) の場合、フィールドはグリッドに表示されます。</span><span class="sxs-lookup"><span data-stu-id="4b9bf-128">A "show" attribute value of `True` (the default) makes a field appear in the grid.</span></span>  

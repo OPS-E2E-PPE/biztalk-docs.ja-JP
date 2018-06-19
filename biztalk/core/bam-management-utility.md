@@ -1,14 +1,14 @@
 ---
-title: "BAM 管理ユーティリティ |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 管理ユーティリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c55aabe2-f38b-4917-863c-b408a4eef98e
-caps.latest.revision: "50"
+caps.latest.revision: 50
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965464"
 ---
 # <a name="bam-management-utility"></a><span data-ttu-id="e6986-102">BAM 管理ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="e6986-102">BAM Management Utility</span></span>
 <span data-ttu-id="e6986-103">BAM 管理ユーティリティは、BAM インフラストラクチャのあらゆる要素を管理、保守するために、ビジネス アクティビティ監視 (BAM) 定義の管理者によって使用されます。</span><span class="sxs-lookup"><span data-stu-id="e6986-103">Administrators of Business Activity Monitoring (BAM) definitions use the BAM Management utility to manage and maintain all aspects of the BAM infrastructure.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "検索して、ボトルネックを解消する |Microsoft ドキュメント"
-ms.custom: 
+title: 検索して、ボトルネックを解消する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 84fd0ea7-edc7-4e13-b7ce-dae0515227f7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297602"
 ---
 # <a name="finding-and-eliminating-bottlenecks"></a><span data-ttu-id="d23c6-102">検索して、ボトルネックを解消します。</span><span class="sxs-lookup"><span data-stu-id="d23c6-102">Finding and Eliminating Bottlenecks</span></span>
 <span data-ttu-id="d23c6-103">成功した BizTalk Server のパフォーマンス評価は大きくの存在を検出し、スループットを増やすか、それに合わせてボトルネックを解決し、問題は、または、待機時間を短縮します。</span><span class="sxs-lookup"><span data-stu-id="d23c6-103">A successful BizTalk Server performance assessment is largely a matter of discovering the existence of, and then resolving, bottlenecks to accommodate either more throughput or reduced latency.</span></span> <span data-ttu-id="d23c6-104">このセクションでは、BizTalk Server ソリューションと、ボトルネックを解決する方法に関する情報に関連するさまざまな種類のパフォーマンスのボトルネックをについて説明します。</span><span class="sxs-lookup"><span data-stu-id="d23c6-104">This section describes various types of performance bottlenecks as they relate to BizTalk Server solutions and information about how to resolve the bottlenecks.</span></span>  

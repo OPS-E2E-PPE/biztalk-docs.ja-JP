@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214250"
 ---
 # <a name="swift-assembler-configuration-properties"></a><span data-ttu-id="dd720-102">SWIFT アセンブラーの構成プロパティ</span><span class="sxs-lookup"><span data-stu-id="dd720-102">SWIFT Assembler Configuration Properties</span></span>
 <span data-ttu-id="dd720-103">次の表は、SWIFT アセンブラー (ASM) のプロパティ、説明、データ型と値の範囲を提供します。</span><span class="sxs-lookup"><span data-stu-id="dd720-103">The following table provides SWIFT assembler (ASM) properties, descriptions, data types, and value ranges.</span></span>  

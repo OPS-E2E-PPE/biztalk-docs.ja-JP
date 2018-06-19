@@ -1,14 +1,14 @@
 ---
-title: "構成キャッシュの更新間隔を調整する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 構成キャッシュの更新間隔を調整する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 63c6c998-e9c0-48f1-a36a-f1fcb916321b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297882"
 ---
 # <a name="how-to-adjust-the-configuration-cache-refresh-interval"></a><span data-ttu-id="d7811-102">構成キャッシュの更新間隔を調整する方法</span><span class="sxs-lookup"><span data-stu-id="d7811-102">How to Adjust the Configuration Cache Refresh Interval</span></span>
 <span data-ttu-id="d7811-103">構成キャッシュの更新間隔は、BizTalk Server が、エンドポイントの構成を更新するまでの時間を定義します。</span><span class="sxs-lookup"><span data-stu-id="d7811-103">The configuration cache refresh interval defines the time period in which BizTalk Server updates the configuration of the endpoints.</span></span> <span data-ttu-id="d7811-104">BizTalk Server を起動すると、メッセージ ボックス データベース、サーバーのプロパティ、アダプター、および追跡データベースへの接続などの BizTalk Server 管理のすべての項目が構成キャッシュに格納されます。</span><span class="sxs-lookup"><span data-stu-id="d7811-104">When you start BizTalk Server, all items in BizTalk Server administration, such as MessageBox databases, server properties, adapters, and connections to the Tracking database, are stored in the configuration cache.</span></span> <span data-ttu-id="d7811-105">キャッシュ内のすべてのアイテムは、構成の更新間隔で更新されます。</span><span class="sxs-lookup"><span data-stu-id="d7811-105">All items in the cache are refreshed by the configuration refresh interval.</span></span> <span data-ttu-id="d7811-106">既定では、サーバー データベース接続とサーバーのプロパティを除く、60 秒ごとです。</span><span class="sxs-lookup"><span data-stu-id="d7811-106">By default this is every 60 seconds, except for the server database connections and server properties.</span></span> <span data-ttu-id="d7811-107">これは、SMTP ホストなどの BizTalk グループの [全般] プロパティを変更する場合、変更が選択される 60 秒以内ことを意味します。</span><span class="sxs-lookup"><span data-stu-id="d7811-107">This means that if you change the general properties for a BizTalk group, such as the SMTP host, the changes are picked up within 60 seconds.</span></span> <span data-ttu-id="d7811-108">更新するまで、現在開いているインスタンス、BizTalk Server 管理コンソールの外部システムの変更は反映されません。</span><span class="sxs-lookup"><span data-stu-id="d7811-108">System changes made outside the currently open instance of the BizTalk Server Administration console are not reflected until you refresh it.</span></span>  

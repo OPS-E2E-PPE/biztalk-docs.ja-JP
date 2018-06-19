@@ -1,14 +1,14 @@
 ---
-title: "関数と BizTalk Server を使用して Oracle データベースでレコードの種類を持つプロシージャを呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: 関数と BizTalk Server を使用して Oracle データベースでレコードの種類を持つプロシージャを呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccdc150e-055a-47df-af3e-64931946455d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963040"
 ---
 # <a name="invoke-functions-and-procedures-with-record-types-in-oracle-database-using-biztalk-server"></a><span data-ttu-id="a62de-102">関数と BizTalk Server を使用して Oracle データベースでレコードの種類を持つプロシージャを呼び出す</span><span class="sxs-lookup"><span data-stu-id="a62de-102">Invoke Functions and Procedures with RECORD Types in Oracle Database using BizTalk Server</span></span>
 <span data-ttu-id="a62de-103">Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに渡されるパラメーターで階層的な情報を表すために使用されます。</span><span class="sxs-lookup"><span data-stu-id="a62de-103">Oracle RECORD types are used to represent hierarchical information in parameters passed to PL/SQL functions and procedures.</span></span> <span data-ttu-id="a62de-104">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]複雑な XML 型としてレコードの種類を表示します。</span><span class="sxs-lookup"><span data-stu-id="a62de-104">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces RECORD types as complex XML types.</span></span> <span data-ttu-id="a62de-105">方法の詳細については[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サポートのレコードの種類を参照してください[関数と Oracle データベースのレコード型での手順に従って操作します。](../../adapters-and-accelerators/adapter-oracle-database/operations-on-functions-and-procedures-with-record-types-in-oracle-database.md)です。</span><span class="sxs-lookup"><span data-stu-id="a62de-105">For more information about how the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports RECORD Types, see [Operations on Functions and Procedures with RECORD Types in Oracle Database.](../../adapters-and-accelerators/adapter-oracle-database/operations-on-functions-and-procedures-with-record-types-in-oracle-database.md).</span></span> <span data-ttu-id="a62de-106">レコードの種類の XML 構造については、次を参照してください。[レコードの種類のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-record-types.md)です。</span><span class="sxs-lookup"><span data-stu-id="a62de-106">For information about the XML structure for RECORD Types, see [Message Schemas for RECORD Types](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-record-types.md).</span></span>  
@@ -146,7 +147,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="a62de-249">**関連付けのプロパティ** ダイアログ ボックスには、手順 1. で昇格させたプロパティが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="a62de-249">The **Correlation Properties** dialog box lists the properties you promoted in step 1.</span></span> <span data-ttu-id="a62de-250">プロパティを選択し、をクリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="a62de-250">Select a property, and then click **Add**.</span></span>  
   
-4.  <span data-ttu-id="a62de-251">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a62de-251">Click **OK**.</span></span>  
+4.  <span data-ttu-id="a62de-251">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a62de-251">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="a62de-252">その他の昇格させたプロパティの関連付けの種類を作成するには、この手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="a62de-252">To create correlation types for the other promoted property, repeat these steps.</span></span>  
   

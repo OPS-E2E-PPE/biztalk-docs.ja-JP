@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL Server でのテーブル値関数を呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL Server でのテーブル値関数を呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0d360c15-699e-4859-8143-798c1de821db
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965640"
 ---
 # <a name="invoke-table-valued-functions-in-sql-server-using-biztalk-server"></a><span data-ttu-id="39aa1-102">BizTalk Server を使用して SQL Server でのテーブル値関数を呼び出す</span><span class="sxs-lookup"><span data-stu-id="39aa1-102">Invoke Table-Valued Functions in SQL Server using BizTalk Server</span></span>
 <span data-ttu-id="39aa1-103">使用することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を SQL Server でのテーブル値関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="39aa1-103">You can use the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] to invoke table-valued functions in SQL Server.</span></span> <span data-ttu-id="39aa1-104">アダプターは、SQL サーバー上で直接呼び出すことができる操作として、テーブル値関数を公開します。</span><span class="sxs-lookup"><span data-stu-id="39aa1-104">The adapter exposes the table-valued functions as operations that can be invoked directly on SQL Server.</span></span> <span data-ttu-id="39aa1-105">アダプターでテーブル値関数をサポートする方法の詳細については、次を参照してください。 [SQL アダプターを使用して SQL Server で Executing Table-Valued 関数](../../adapters-and-accelerators/adapter-sql/execute-table-valued-functions-in-sql-server-using-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="39aa1-105">For more information about how the adapter supports table-valued functions, see [Executing Table-Valued Functions in SQL Server using the SQL adapter](../../adapters-and-accelerators/adapter-sql/execute-table-valued-functions-in-sql-server-using-the-sql-adapter.md).</span></span> <span data-ttu-id="39aa1-106">テーブル値関数を呼び出すため、SOAP メッセージの構造については、次を参照してください。[プロシージャと関数のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md)です。</span><span class="sxs-lookup"><span data-stu-id="39aa1-106">For information about the structure of the SOAP message for invoking table-valued functions, see [Message Schemas for Procedures and Functions](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md).</span></span>  

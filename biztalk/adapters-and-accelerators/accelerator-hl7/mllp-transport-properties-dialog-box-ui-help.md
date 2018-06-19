@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962096"
 ---
 # <a name="mllp-transport-properties-dialog-box-ui-help"></a><span data-ttu-id="fdb61-102">MLLP トランスポートのプロパティ ダイアログ ボックスの UI ヘルプ</span><span class="sxs-lookup"><span data-stu-id="fdb61-102">MLLP Transport Properties Dialog Box UI Help</span></span>
 <span data-ttu-id="fdb61-103">使用する、 **MLLP トランスポートのプロパティ**送信用のパラメーターを構成し、最小限の下位層プロトコル (MLLP) アダプターの受信を ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="fdb61-103">You use the **MLLP Transport Properties** dialog box to configure parameters for send and receive Minimal Lower Layer Protocol (MLLP) adapters.</span></span> <span data-ttu-id="fdb61-104">パラメーターを設定、ネットワーク接続 MLLP トランスポートのプロパティのいずれかの送信ポートまたは受信場所が MLLP のトランスポートの種類を使用できます。</span><span class="sxs-lookup"><span data-stu-id="fdb61-104">You can set the network connection parameters in the MLLP Transport Properties for either a send port or receive location using the MLLP transport type.</span></span>  

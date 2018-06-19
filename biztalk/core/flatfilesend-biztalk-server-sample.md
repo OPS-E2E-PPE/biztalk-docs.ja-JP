@@ -1,14 +1,14 @@
 ---
-title: "FlatFileSend (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: FlatFileSend (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52dd0018-e272-40db-a26a-509d444d7106
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969696"
 ---
 # <a name="flatfilesend-biztalk-server-sample"></a><span data-ttu-id="65598-102">FlatFileSend (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="65598-102">FlatFileSend (BizTalk Server Sample)</span></span>
 <span data-ttu-id="65598-103">FlatFileSend サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して、XML ファイルを同等のフラット ファイルに変換する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="65598-103">The FlatFileSend sample demonstrates how you can use [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to process an XML file into the equivalent flat file.</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="65598-127">これらの要素が組み合わされて、XML 形式の注文書メッセージを受信場所から受け入れ、フラット ファイル形式の注文書を送信場所に書き込むソリューションが作成されます。</span><span class="sxs-lookup"><span data-stu-id="65598-127">These elements are combined to produce a solution that accepts purchase order messages in XML format from the receive location and writes out a flat file purchase order to the send location.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="65598-128">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="65598-128">Where to Find This Sample</span></span>  
- <span data-ttu-id="65598-129">*\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileSend</span><span class="sxs-lookup"><span data-stu-id="65598-129">*\<Samples Path\>*\Pipelines\AssemblerDisassembler\FlatFileSend</span></span>  
+ <span data-ttu-id="65598-129">*\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileSend</span><span class="sxs-lookup"><span data-stu-id="65598-129">*\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileSend</span></span>  
   
  <span data-ttu-id="65598-130">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="65598-130">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -66,13 +67,13 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="65598-153">コマンド ウィンドウで、次のフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="65598-153">In a command window, navigate to the following folder:</span></span>  
   
-     <span data-ttu-id="65598-154">*\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileSend</span><span class="sxs-lookup"><span data-stu-id="65598-154">*\<Samples Path\>*\Pipelines\AssemblerDisassembler\FlatFileSend</span></span>  
+     <span data-ttu-id="65598-154">*\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileSend</span><span class="sxs-lookup"><span data-stu-id="65598-154">*\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileSend</span></span>  
   
 2.  <span data-ttu-id="65598-155">次の操作を実行する Setup.bat ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="65598-155">Run the file Setup.bat, which performs the following actions:</span></span>  
   
     -   <span data-ttu-id="65598-156">次のフォルダに、このサンプルの入力 (FFInput) フォルダと出力 (FFOutput) フォルダを作成します。</span><span class="sxs-lookup"><span data-stu-id="65598-156">Creates the input (FFInput) and output (FFOutput) folders for this sample in the folder:</span></span>  
   
-         <span data-ttu-id="65598-157">*\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileSend</span><span class="sxs-lookup"><span data-stu-id="65598-157">*\<Samples Path\>*\Pipelines\AssemblerDisassembler\FlatFileSend</span></span>  
+         <span data-ttu-id="65598-157">*\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileSend</span><span class="sxs-lookup"><span data-stu-id="65598-157">*\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileSend</span></span>  
   
     -   <span data-ttu-id="65598-158">コンパイル、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]このサンプルのプロジェクトです。</span><span class="sxs-lookup"><span data-stu-id="65598-158">Compiles the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] project for this sample.</span></span>  
   

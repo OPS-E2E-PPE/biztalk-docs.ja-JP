@@ -1,14 +1,14 @@
 ---
-title: "RNIFReceive |Microsoft ドキュメント"
-ms.custom: 
+title: RNIFReceive |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cf1253b0-ceca-4e7a-91ed-3837bd904472
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963880"
 ---
 # <a name="rnifreceive"></a><span data-ttu-id="79c9b-102">RNIFReceive</span><span class="sxs-lookup"><span data-stu-id="79c9b-102">RNIFReceive</span></span>
 <span data-ttu-id="79c9b-103">このサンプルは、RNIF メッセージを受信し、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] パブリック プロセスによって処理するためにそれを準備する有効な [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]® [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RNIFReceive.aspx ファイルを提供します。</span><span class="sxs-lookup"><span data-stu-id="79c9b-103">This sample provides a working [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFReceive.aspx file that receives an RNIF message, and prepares it for processing by the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] public process.</span></span> <span data-ttu-id="79c9b-104">ASPX ページをカスタマイズして、次の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="79c9b-104">You can customize the ASPX page to do the following:</span></span>  

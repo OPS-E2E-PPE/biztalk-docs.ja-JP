@@ -1,14 +1,14 @@
 ---
-title: "展開して、アプリケーションのエクスポート |Microsoft ドキュメント"
-ms.custom: 
+title: 展開して、アプリケーションのエクスポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4106a0a7-878d-4052-8eca-02d546233048
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297618"
 ---
 # <a name="deploying-and-exporting-an-application"></a><span data-ttu-id="7215a-102">展開して、アプリケーションをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="7215a-102">Deploying and Exporting an Application</span></span>
 <span data-ttu-id="7215a-103">このセクションには、BizTalk アプリケーションの展開に必要な手順を実行する方法に関する詳細情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="7215a-103">This section contains detailed information about how to perform the steps involved in deploying a BizTalk application.</span></span> <span data-ttu-id="7215a-104">このセクションのトピックでは、次のチェックリストをサポートします。</span><span class="sxs-lookup"><span data-stu-id="7215a-104">The topics in this section support the following checklists:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "Siebel アダプターとカスタム Web パーツを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターとカスタム Web パーツを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ee3a6c04-6523-483c-bdf4-ce0ac47cda87
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963960"
 ---
 # <a name="use-a-custom-web-part-with-the-siebel-adapter"></a><span data-ttu-id="08c1f-102">Siebel アダプターとカスタム Web パーツを使用します。</span><span class="sxs-lookup"><span data-stu-id="08c1f-102">Use a Custom Web Part with the Siebel adapter</span></span>
 <span data-ttu-id="08c1f-103">このセクションでは、Microsoft Office SharePoint Server でカスタム Web パーツの使用に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="08c1f-103">This section provides information about using a custom Web Part with Microsoft Office SharePoint Server.</span></span> <span data-ttu-id="08c1f-104">カスタム Web パーツを使用するには、次の操作を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="08c1f-104">To use a custom Web Part, you must do the following:</span></span>  
@@ -39,7 +40,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="08c1f-116">Visual Studio を起動し、プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="08c1f-116">Start Visual Studio, and then create a project.</span></span>  
   
-2.  <span data-ttu-id="08c1f-117">**新しいプロジェクト** ダイアログ ボックスから、**プロジェクトの種類**ペインで、 **Visual c#**です。</span><span class="sxs-lookup"><span data-stu-id="08c1f-117">In the **New Project** dialog box, from the **Project types** pane, select **Visual C#**.</span></span> <span data-ttu-id="08c1f-118">**テンプレート**ペインで、**クラス ライブラリ**です。</span><span class="sxs-lookup"><span data-stu-id="08c1f-118">From the **Templates** pane, select **Class Library**.</span></span>  
+2.  <span data-ttu-id="08c1f-117">**新しいプロジェクト** ダイアログ ボックスから、**プロジェクトの種類**ペインで、 **Visual c#** です。</span><span class="sxs-lookup"><span data-stu-id="08c1f-117">In the **New Project** dialog box, from the **Project types** pane, select **Visual C#**.</span></span> <span data-ttu-id="08c1f-118">**テンプレート**ペインで、**クラス ライブラリ**です。</span><span class="sxs-lookup"><span data-stu-id="08c1f-118">From the **Templates** pane, select **Class Library**.</span></span>  
   
 3.  <span data-ttu-id="08c1f-119">ソリューションの場所と名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="08c1f-119">Specify a name and location for the solution.</span></span> <span data-ttu-id="08c1f-120">このトピックでは、指定`CustomWebPart`で、**名前**と**ソリューション名**ボックス。</span><span class="sxs-lookup"><span data-stu-id="08c1f-120">For this topic, specify `CustomWebPart` in the **Name** and **Solution Name** boxes.</span></span> <span data-ttu-id="08c1f-121">場所を指定し、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="08c1f-121">Specify a location, and then click **OK**.</span></span>  
   

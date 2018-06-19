@@ -1,15 +1,15 @@
 ---
-title: "更新または BizTalk アダプター パック 2016 のアンインストール |Microsoft ドキュメント"
-description: "セットアップ ウィザードまたは msiexec を使用して、変更または BizTalk Server に含まれている BAP 2016 のアンインストールなど、バインドを削除して、カスタムの Rfc を削除"
-ms.custom: 
+title: 更新または BizTalk アダプター パック 2016 のアンインストール |Microsoft ドキュメント
+description: セットアップ ウィザードまたは msiexec を使用して、変更または BizTalk Server に含まれている BAP 2016 のアンインストールなど、バインドを削除して、カスタムの Rfc を削除
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d3d6c001-1005-4d7b-a143-eaa37b48f898
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968000"
 ---
 # <a name="update-or-uninstall-the-biztalk-adapter-pack-2016"></a><span data-ttu-id="f66ac-103">更新または BizTalk アダプター パック 2016 のアンインストール</span><span class="sxs-lookup"><span data-stu-id="f66ac-103">Update or uninstall the BizTalk Adapter Pack 2016</span></span>
 <span data-ttu-id="f66ac-104">変更またはアンインストールする方法、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="f66ac-104">How to change or uninstall the [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)].</span></span>
@@ -97,7 +98,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="uninstall-or-remove-the-biztalk-adapter-pack"></a><span data-ttu-id="f66ac-142">アンインストールするか、BizTalk Adapter Pack を削除します。</span><span class="sxs-lookup"><span data-stu-id="f66ac-142">Uninstall or remove the BizTalk Adapter Pack</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="f66ac-143">TRFC 機能を使用する SQL Server データベースでテーブルを作成した場合、 [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]、アンインストールする前に手動で削除する必要があります、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="f66ac-143">If you created tables in the SQL Server database to work with the tRFC feature of the [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)], you must manually remove them before uninstalling the [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)].</span></span> <span data-ttu-id="f66ac-144">[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストールのコピー、`SapAdapter-DbScript-Uninstall.sql`ファイルを通常*\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]*です。</span><span class="sxs-lookup"><span data-stu-id="f66ac-144">The [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] installation copies a `SapAdapter-DbScript-Uninstall.sql` file typically at *\<installation drive\>:\Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]*.</span></span> <span data-ttu-id="f66ac-145">作成したテーブルを削除するには、このファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="f66ac-145">Run this file to remove the tables you created.</span></span>  
+>  <span data-ttu-id="f66ac-143">TRFC 機能を使用する SQL Server データベースでテーブルを作成した場合、 [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]、アンインストールする前に手動で削除する必要があります、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="f66ac-143">If you created tables in the SQL Server database to work with the tRFC feature of the [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)], you must manually remove them before uninstalling the [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)].</span></span> <span data-ttu-id="f66ac-144">[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストールのコピー、`SapAdapter-DbScript-Uninstall.sql`ファイルを通常*\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]* です。</span><span class="sxs-lookup"><span data-stu-id="f66ac-144">The [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] installation copies a `SapAdapter-DbScript-Uninstall.sql` file typically at *\<installation drive\>:\Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]*.</span></span> <span data-ttu-id="f66ac-145">作成したテーブルを削除するには、このファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="f66ac-145">Run this file to remove the tables you created.</span></span>  
   
 <span data-ttu-id="f66ac-146">次の手順を削除する、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]コンピューターからです。</span><span class="sxs-lookup"><span data-stu-id="f66ac-146">Complete the following steps to remove the [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] from your computer.</span></span> <span data-ttu-id="f66ac-147">あるかどうかを確認、[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]セットアップ ウィザードを実行する前にインストールします。</span><span class="sxs-lookup"><span data-stu-id="f66ac-147">Make sure you have the [!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)] installed before you run the setup wizard.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "Glossary8 |Microsoft ドキュメント"
-ms.custom: 
+title: Glossary8 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d271fe0-1b54-4a83-87e6-20aa1c37df97
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299466"
 ---
 # <a name="glossary"></a><span data-ttu-id="10225-102">用語集</span><span class="sxs-lookup"><span data-stu-id="10225-102">Glossary</span></span>
 <span data-ttu-id="10225-103">このトピックでは、このガイドで使用される主な用語を定義します。</span><span class="sxs-lookup"><span data-stu-id="10225-103">This topic defines key terms used throughout this guide.</span></span>  
@@ -27,7 +28,7 @@ ms.lasthandoff: 09/20/2017
 |----------|----------------|  
 |<span data-ttu-id="10225-107">**高度なプログラム可能割り込みコント ローラー (APIC)**</span><span class="sxs-lookup"><span data-stu-id="10225-107">**advanced programmable interrupt controller (APIC)**</span></span>|<span data-ttu-id="10225-108">さまざまなソースからの割り込みを受信し、処理のプロセッサのコアを送っているコント ローラーにします。</span><span class="sxs-lookup"><span data-stu-id="10225-108">A controller that receives interrupts from various sources and sends them to a processor core for handling.</span></span> <span data-ttu-id="10225-109">マルチプロセッサ システムでが VM または物理コンピューターのいずれか APIC を送信して、システム バス上の他の論理プロセッサとの間のさせるプロセス間割り込みメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="10225-109">In a multiprocessor system, which can be either a VM or a physical computer, the APIC sends and receive interprocessor interrupt messages to and from other logical processors on the system bus.</span></span> <span data-ttu-id="10225-110">高度なプログラム可能割り込みコント ローラーの詳細については、の第 8 章を参照してください、 [Intel® 64 および ia-32 アーキテクチャ ソフトウェア デベロッパーズ マニュアル ボリューム 3A: システム プログラミング ガイド、第 1 部](http://go.microsoft.com/fwlink/?LinkId=148923)(http://go.microsoft.com/fwlink/しますか?LinkId = 148923)。</span><span class="sxs-lookup"><span data-stu-id="10225-110">For more information about the advanced programmable interrupt controller see chapter 8 of the [Intel® 64 and IA-32 Architectures Software Developer’s Manual Volume 3A: System Programming Guide, Part 1](http://go.microsoft.com/fwlink/?LinkId=148923) (http://go.microsoft.com/fwlink/?LinkId=148923).</span></span>|  
 |<span data-ttu-id="10225-111">**子パーティション**</span><span class="sxs-lookup"><span data-stu-id="10225-111">**child partition**</span></span>|<span data-ttu-id="10225-112">親 (ルート) のパーティションによって作成されるパーティションです。</span><span class="sxs-lookup"><span data-stu-id="10225-112">Any partition that is created by the parent (or root) partition.</span></span>|  
-|<span data-ttu-id="10225-113">**コア**</span><span class="sxs-lookup"><span data-stu-id="10225-113">**core**</span></span>|<span data-ttu-id="10225-114">参照してください**論理プロセッサ**です。</span><span class="sxs-lookup"><span data-stu-id="10225-114">See **logical processor**.</span></span> <span data-ttu-id="10225-115">**注:**このガイドのコアが場合がありますの同義語として使用仮想プロセッサ、特にグラフィックスにします。</span><span class="sxs-lookup"><span data-stu-id="10225-115">**Note:**  In this guide, core is sometimes used interchangeably with virtual processor, especially in graphics.</span></span> <span data-ttu-id="10225-116">この使用法は、このガイドの将来のエディションで修正される予定です。</span><span class="sxs-lookup"><span data-stu-id="10225-116">This usage will be corrected in a future edition of this guide.</span></span>|  
+|<span data-ttu-id="10225-113">**コア**</span><span class="sxs-lookup"><span data-stu-id="10225-113">**core**</span></span>|<span data-ttu-id="10225-114">参照してください**論理プロセッサ**です。</span><span class="sxs-lookup"><span data-stu-id="10225-114">See **logical processor**.</span></span> <span data-ttu-id="10225-115">**注:** このガイドのコアが場合がありますの同義語として使用仮想プロセッサ、特にグラフィックスにします。</span><span class="sxs-lookup"><span data-stu-id="10225-115">**Note:**  In this guide, core is sometimes used interchangeably with virtual processor, especially in graphics.</span></span> <span data-ttu-id="10225-116">この使用法は、このガイドの将来のエディションで修正される予定です。</span><span class="sxs-lookup"><span data-stu-id="10225-116">This usage will be corrected in a future edition of this guide.</span></span>|  
 |<span data-ttu-id="10225-117">**デバイスの仮想化**</span><span class="sxs-lookup"><span data-stu-id="10225-117">**device virtualization**</span></span>|<span data-ttu-id="10225-118">ハードウェアを可能にするソフトウェア技術リソースが抽象化され、複数のコンシューマー間で共有されます。</span><span class="sxs-lookup"><span data-stu-id="10225-118">A software technology that lets a hardware resource be abstracted and shared among multiple consumers.</span></span>|  
 |<span data-ttu-id="10225-119">**エミュレートされたデバイス**</span><span class="sxs-lookup"><span data-stu-id="10225-119">**emulated device**</span></span>|<span data-ttu-id="10225-120">ゲストは、そのハードウェア デバイスの一般的なドライバーを使用できるように、実際の物理的なハードウェア デバイスを模倣する仮想化されたデバイス。</span><span class="sxs-lookup"><span data-stu-id="10225-120">A virtualized device that mimics an actual physical hardware device so that guests can use the typical drivers for that hardware device.</span></span> <span data-ttu-id="10225-121">エミュレートされたデバイスは、代理デバイスですが、エミュレートされたデバイスは、統合コンポーネントがインストールされている必要はありません"unenlightened"のオペレーティング システムのサポートを提供するより、効率が低下します。</span><span class="sxs-lookup"><span data-stu-id="10225-121">Emulated devices are less efficient than synthetic devices, but emulated devices provide support for “unenlightened” operating systems that do not have integration components installed.</span></span>|  
 |<span data-ttu-id="10225-122">**啓蒙**</span><span class="sxs-lookup"><span data-stu-id="10225-122">**enlightenment**</span></span>|<span data-ttu-id="10225-123">VM 環境を認識させるし、Vm の動作を調整するゲスト オペレーティング システムを最適化します。</span><span class="sxs-lookup"><span data-stu-id="10225-123">An optimization to a guest operating system to make it aware of VM environments and tune its behavior for VMs.</span></span> <span data-ttu-id="10225-124">エンライトメントが特定のオペレーティング システムなどの関数のメモリ管理コストを削減するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="10225-124">Enlightenments help to reduce the cost of certain operating system functions such as memory management.</span></span> <span data-ttu-id="10225-125">エンライトメントはハイパー コール インターフェイスを介してアクセスします。</span><span class="sxs-lookup"><span data-stu-id="10225-125">Enlightenments are accessed through the hypercall interface.</span></span> <span data-ttu-id="10225-126">対応の I/O には、任意のデバイスのエミュレーション層をバイパスして、直接 VMBus を利用できます。</span><span class="sxs-lookup"><span data-stu-id="10225-126">Enlightened I/O can utilize the VMBus directly, bypassing any device emulation layer.</span></span> <span data-ttu-id="10225-127">利用可能なすべてのエンライトメントするオペレーティング システムと呼ばれます「完全に対応します」</span><span class="sxs-lookup"><span data-stu-id="10225-127">An operating system that takes advantage of all possible enlightenments is said to be “fully enlightened.”</span></span>|  

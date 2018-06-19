@@ -1,14 +1,14 @@
 ---
-title: "参照、検索、および SQL Server のメタデータの取得 |Microsoft ドキュメント"
-ms.custom: 
+title: 参照、検索、および SQL Server のメタデータの取得 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 368dd5ca-456c-4cae-9e85-bcf504c4e7ed
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963944"
 ---
 # <a name="browse-search-and-get-sql-server-metadata"></a><span data-ttu-id="30008-102">参照、検索、および SQL Server のメタデータの取得</span><span class="sxs-lookup"><span data-stu-id="30008-102">Browse, search, and get SQL Server metadata</span></span>
 <span data-ttu-id="30008-103">メタデータを[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]SQL Server データベースからのサーフェスがアダプターを使用して、SQL Server データベースと通信するためのメッセージの構造について説明します。</span><span class="sxs-lookup"><span data-stu-id="30008-103">The metadata that [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces from the SQL Server database describes the message structure for communicating with the SQL Server database using the adapter.</span></span> <span data-ttu-id="30008-104">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]メタデータを取得するための 2 つのインターフェイスをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="30008-104">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] supports two interfaces for retrieving metadata.</span></span>  

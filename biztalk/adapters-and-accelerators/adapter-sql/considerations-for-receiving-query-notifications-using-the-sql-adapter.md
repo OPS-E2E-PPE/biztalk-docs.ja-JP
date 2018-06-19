@@ -1,14 +1,14 @@
 ---
-title: "受信クエリ通知を使用して、SQL アダプターに関する考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信クエリ通知を使用して、SQL アダプターに関する考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0142f385-3d55-41a7-a50e-dda94b96d0a4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963008"
 ---
 # <a name="considerations-for-receiving-query-notifications-using-the-sql-adapter"></a><span data-ttu-id="c0e32-102">受信クエリ通知を使用して、SQL アダプターに関する考慮事項</span><span class="sxs-lookup"><span data-stu-id="c0e32-102">Considerations for Receiving Query Notifications Using the SQL adapter</span></span>
 <span data-ttu-id="c0e32-103">このトピックでは、いくつかの考慮事項とベスト プラクティスを使用しているときに留意する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を SQL Server データベースからクエリ通知を受信します。</span><span class="sxs-lookup"><span data-stu-id="c0e32-103">This topic provides some considerations and best practices to keep in mind while using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive query notifications from a SQL Server database.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="c0e32-108">操作の通知メッセージは、その操作によって影響を受けたレコードの数の影響を受けません。</span><span class="sxs-lookup"><span data-stu-id="c0e32-108">The notification message for an operation is not affected by the number of records affected by that operation.</span></span> <span data-ttu-id="c0e32-109">たとえば、アダプター クライアントは、数に関係なく、挿入、更新、または SQL Server データベース テーブルで削除されたレコード、1 つだけの通知メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="c0e32-109">For example, regardless of the number of records inserted, updated, or deleted in a SQL Server database table, the adapter client receives only one notification message.</span></span>  
   
--   <span data-ttu-id="c0e32-110">アダプターのクライアント アプリケーションが、SQL Server から受信した通知の種類を解釈するためのロジックを含めることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="c0e32-110">We recommend that the adapter client application contain the logic to interpret the type of notification received from SQL Server.</span></span> <span data-ttu-id="c0e32-111">情報を抽出することで、通知の種類を決定できます、 **\<情報\>**通知を受信したメッセージの要素。</span><span class="sxs-lookup"><span data-stu-id="c0e32-111">The notification type can be determined by extracting the information from, the **\<Info\>** element of the received notification message.</span></span> <span data-ttu-id="c0e32-112">挿入操作用に受信した通知メッセージの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c0e32-112">Here’s an example of a notification message received for an Insert operation:</span></span>  
+-   <span data-ttu-id="c0e32-110">アダプターのクライアント アプリケーションが、SQL Server から受信した通知の種類を解釈するためのロジックを含めることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="c0e32-110">We recommend that the adapter client application contain the logic to interpret the type of notification received from SQL Server.</span></span> <span data-ttu-id="c0e32-111">情報を抽出することで、通知の種類を決定できます、 **\<情報\>** 通知を受信したメッセージの要素。</span><span class="sxs-lookup"><span data-stu-id="c0e32-111">The notification type can be determined by extracting the information from, the **\<Info\>** element of the received notification message.</span></span> <span data-ttu-id="c0e32-112">挿入操作用に受信した通知メッセージの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c0e32-112">Here’s an example of a notification message received for an Insert operation:</span></span>  
   
     ```  
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
     </Notification>  
     ```  
   
-     <span data-ttu-id="c0e32-113">内の値に注意してください、 **\<情報\>**要素。</span><span class="sxs-lookup"><span data-stu-id="c0e32-113">Notice the value within the **\<Info\>** element.</span></span> <span data-ttu-id="c0e32-114">この値は、通知メッセージを受信した操作について説明します。</span><span class="sxs-lookup"><span data-stu-id="c0e32-114">This value provides information on the operation for which the notification message was received.</span></span> <span data-ttu-id="c0e32-115">アプリケーション内の値を抽出する機能を持つ必要があります、 **\<情報\>**要素し、値に基づいて、後続のタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="c0e32-115">Your application should have the functionality to extract the value within the **\<Info\>** element and then based on the value, perform subsequent tasks.</span></span> <span data-ttu-id="c0e32-116">トピック[を BizTalk Server を使用して SQL の特定のタスクを完了する通知メッセージを処理](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)内の値を抽出する方法の手順を持つ、 **\<情報\>**要素.</span><span class="sxs-lookup"><span data-stu-id="c0e32-116">The topic [Process Notification Messages to complete Specific Tasks in SQL using BizTalk Server](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md) has instructions on how to extract the value within the **\<Info\>** element.</span></span> <span data-ttu-id="c0e32-117">同様のタスクを実行する詳細なチュートリアルについてはでも[チュートリアル 2: 従業員の発注プロセスには、SQL アダプターを使用して](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="c0e32-117">A detailed tutorial that performs similar tasks is also available at [Tutorial 2: Employee - Purchase Order Process using the SQL adapter](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md).</span></span>  
+     <span data-ttu-id="c0e32-113">内の値に注意してください、 **\<情報\>** 要素。</span><span class="sxs-lookup"><span data-stu-id="c0e32-113">Notice the value within the **\<Info\>** element.</span></span> <span data-ttu-id="c0e32-114">この値は、通知メッセージを受信した操作について説明します。</span><span class="sxs-lookup"><span data-stu-id="c0e32-114">This value provides information on the operation for which the notification message was received.</span></span> <span data-ttu-id="c0e32-115">アプリケーション内の値を抽出する機能を持つ必要があります、 **\<情報\>** 要素し、値に基づいて、後続のタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="c0e32-115">Your application should have the functionality to extract the value within the **\<Info\>** element and then based on the value, perform subsequent tasks.</span></span> <span data-ttu-id="c0e32-116">トピック[を BizTalk Server を使用して SQL の特定のタスクを完了する通知メッセージを処理](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)内の値を抽出する方法の手順を持つ、 **\<情報\>** 要素.</span><span class="sxs-lookup"><span data-stu-id="c0e32-116">The topic [Process Notification Messages to complete Specific Tasks in SQL using BizTalk Server](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md) has instructions on how to extract the value within the **\<Info\>** element.</span></span> <span data-ttu-id="c0e32-117">同様のタスクを実行する詳細なチュートリアルについてはでも[チュートリアル 2: 従業員の発注プロセスには、SQL アダプターを使用して](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="c0e32-117">A detailed tutorial that performs similar tasks is also available at [Tutorial 2: Employee - Purchase Order Process using the SQL adapter](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md).</span></span>  
   
 -   <span data-ttu-id="c0e32-118">理想的には、クライアント アプリケーションが特定のレコードの通知を受信した後そのレコードが更新されますできるように、追加の通知が受信されていません。</span><span class="sxs-lookup"><span data-stu-id="c0e32-118">Ideally, after the client application receives a notification for a specific record, that record should be updated so that additional notifications are not received.</span></span> <span data-ttu-id="c0e32-119">たとえば、**従業員**を持つテーブル、**ステータス**列です。</span><span class="sxs-lookup"><span data-stu-id="c0e32-119">For example, consider an **Employee** table that has a **Status** column.</span></span> <span data-ttu-id="c0e32-120">すべての新しいレコードが挿入されるため、**従業員**テーブル内の値、**ステータス**列は常になど、次のテーブルが表示されるので、「0」。</span><span class="sxs-lookup"><span data-stu-id="c0e32-120">For all new records inserted into the **Employee** table, the value in the **Status** column is always “0” so the table will look like the following:</span></span>  
   

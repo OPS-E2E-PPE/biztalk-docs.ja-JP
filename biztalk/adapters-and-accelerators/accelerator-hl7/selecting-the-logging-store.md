@@ -1,11 +1,11 @@
 ---
-title: "ログ ストアの選択 |Microsoft ドキュメント"
-ms.custom: 
+title: ログ ストアの選択 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, auditing
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - logging, configuring
 - auditing, configuring
 ms.assetid: 6ba64c59-3a15-4c10-b44f-18e0e432c6d3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960736"
 ---
 # <a name="selecting-the-logging-store"></a><span data-ttu-id="226e1-102">ログ ストアを選択します。</span><span class="sxs-lookup"><span data-stu-id="226e1-102">Selecting the Logging Store</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="226e1-103">[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]など、さまざまなログ ストアの組み合わせを選択するオプションを使用して提供する[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]Management Instrumentation (WMI)、 [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]、および[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]イベント ログです。</span><span class="sxs-lookup"><span data-stu-id="226e1-103"> [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] provides you with the option to select a combination of different logging stores, such as [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Management Instrumentation (WMI), [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)], and [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Event Log.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="226e1-122">**データベース名**</span><span class="sxs-lookup"><span data-stu-id="226e1-122">**Database name**</span></span>|<span data-ttu-id="226e1-123">型、[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]データベース名。</span><span class="sxs-lookup"><span data-stu-id="226e1-123">Type the [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] database name.</span></span> <span data-ttu-id="226e1-124">これは、選択したときに必要な**SQL**オプション。</span><span class="sxs-lookup"><span data-stu-id="226e1-124">This is required when you select the **SQL** option.</span></span> <span data-ttu-id="226e1-125">許容最大長は、128 文字です。</span><span class="sxs-lookup"><span data-stu-id="226e1-125">The maximum allowed length is 128 characters.</span></span>|  
     |<span data-ttu-id="226e1-126">**イベント ログ**</span><span class="sxs-lookup"><span data-stu-id="226e1-126">**Event  Log**</span></span>|<span data-ttu-id="226e1-127">使用する場合は、このオプションを選択、[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]ログ ストアとしてのイベント ログです。</span><span class="sxs-lookup"><span data-stu-id="226e1-127">Select this option if you want to use the [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Event Log as your  logging store.</span></span> <span data-ttu-id="226e1-128">使用する、[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]イベント メッセージを表示するイベント ビューアー。</span><span class="sxs-lookup"><span data-stu-id="226e1-128">You use the [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Event Viewer to view event messages.</span></span>|  
   
-2.  <span data-ttu-id="226e1-129">**[保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="226e1-129">Click **Save**.</span></span>  
+2.  <span data-ttu-id="226e1-129">**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="226e1-129">Click **Save**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="226e1-130">ログ記録イベント ブローカーによって記録されたイベントのロケールは、ログ記録のサービス アカウントのロケールに依存します。</span><span class="sxs-lookup"><span data-stu-id="226e1-130">The locale of the events logged by the  Logging event broker depend on the locale of the  Logging Service account.</span></span>  

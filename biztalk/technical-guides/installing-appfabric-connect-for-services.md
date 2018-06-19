@@ -1,14 +1,14 @@
 ---
-title: "AppFabric をインストールするサービスの接続 |Microsoft ドキュメント"
-ms.custom: 
+title: AppFabric をインストールするサービスの接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1de3bf49-e3cc-4d3f-9883-9a2c472f3647
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298690"
 ---
 # <a name="installing-appfabric-connect-for-services"></a><span data-ttu-id="7f6c4-102">サービスの接続 AppFabric をインストールします。</span><span class="sxs-lookup"><span data-stu-id="7f6c4-102">Installing AppFabric Connect for Services</span></span>
 <span data-ttu-id="7f6c4-103">このガイドでは、BizTalk Server 2010 Feature Pack (2010 年 10 月) をインストールする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7f6c4-103">This guide provides instructions on how to install BizTalk Server 2010 Feature Pack (October 2010).</span></span> <span data-ttu-id="7f6c4-104">Feature pack の機能強化を提供するサービスの機能用の BizTalk Server 2010 AppFabric Connect のインストール、 **BizTalk WCF サービス公開ウィザード**と**WCF アダプター サービス開発ウィザード**.</span><span class="sxs-lookup"><span data-stu-id="7f6c4-104">The feature pack installs BizTalk Server 2010 AppFabric Connect for Services feature that provides enhancements to the **BizTalk WCF Service Publishing Wizard** and the **WCF Adapter Service Development Wizard**.</span></span> <span data-ttu-id="7f6c4-105">Feature pack をインストールした後は、BizTalk Server アイテム、内部設置型の範囲を拡張または LOB アプリケーションを Windows Azure AppFabric Service Bus エンドポイントを追加することによってクラウドことができます。</span><span class="sxs-lookup"><span data-stu-id="7f6c4-105">After you have installed the feature pack, you will be able to extend the reach of your on-premises BizTalk Server artifacts or LOB applications to cloud by adding a Windows Azure AppFabric Service Bus endpoint.</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="7f6c4-119">**ようこそ** ページで、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="7f6c4-119">On the **Welcome** page, click **Next**.</span></span>  
   
-3.  <span data-ttu-id="7f6c4-120">ライセンス条項に同意し、をクリックして**次**し、次の画面でクリック**[次へ]**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="7f6c4-120">Accept the terms for licensing and then click **Next** and then in the following screen, click **Next** again.</span></span>  
+3.  <span data-ttu-id="7f6c4-120">ライセンス条項に同意し、をクリックして**次**し、次の画面でクリック **[次へ]** もう一度です。</span><span class="sxs-lookup"><span data-stu-id="7f6c4-120">Accept the terms for licensing and then click **Next** and then in the following screen, click **Next** again.</span></span>  
   
 4.  <span data-ttu-id="7f6c4-121">クリックして、ウィザードでは、機能パックのインストールが完了したら、**完了**です。</span><span class="sxs-lookup"><span data-stu-id="7f6c4-121">After the wizard completes the feature pack installation, click **Finish**.</span></span>  
   

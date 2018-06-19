@@ -1,11 +1,11 @@
 ---
-title: "参照、検索、および Oracle データベースの操作のメタデータを取得 |Microsoft ドキュメント"
-ms.custom: 
+title: 参照、検索、および Oracle データベースの操作のメタデータを取得 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF client, generating a
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - WCF service contract, generating a
 - metadata, browsing, searching, and retrieving
 ms.assetid: 65bd59e0-771d-40fe-966c-8cc8a629ce47
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967696"
 ---
 # <a name="browse-search-and-get-metadata-for-oracle-database-operations"></a><span data-ttu-id="ae541-102">参照、検索、および Oracle データベースの操作のメタデータを取得</span><span class="sxs-lookup"><span data-stu-id="ae541-102">Browse, search, and get metadata for Oracle Database operations</span></span>
 <span data-ttu-id="ae541-103">このセクションの使用方法に関する情報が[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、および[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ae541-103">This section provides information about how to use [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)], [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)], and [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)].</span></span> <span data-ttu-id="ae541-104">これらを使用して[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]コンポーネント、することができます。</span><span class="sxs-lookup"><span data-stu-id="ae541-104">By using these [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] components, you can:</span></span>  
@@ -152,7 +153,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  <span data-ttu-id="ae541-194">**カテゴリを選択**ボックスで、スキーマに対応するノードを展開し をクリックし、データベース アイテムの内で検索する文字列。</span><span class="sxs-lookup"><span data-stu-id="ae541-194">In the **Select a category** box, expand the node that corresponds to the schema, and then and click the database item that you want to search within.</span></span> <span data-ttu-id="ae541-195">**カテゴリで検索**テキスト ボックスに、特定のデータベースのアイテムを検索する検索式を入力します。</span><span class="sxs-lookup"><span data-stu-id="ae541-195">In the **Search in category** text box, enter a search expression to search for a specific database item.</span></span>  
   
-     <span data-ttu-id="ae541-196">たとえば、検索を名前に"EMP"を持つテーブルを次のように選択します**テーブル**、型**% EMP**で、**カテゴリで検索**テキスト ボックスとボタンをクリックし、。右側の下矢印アイコン。</span><span class="sxs-lookup"><span data-stu-id="ae541-196">For example, to search for tables that have "EMP" in their names, select **Table**, type **%EMP%** in the **Search in category** text box, and then click the button with the right-arrow icon.</span></span>  
+     <span data-ttu-id="ae541-196">たとえば、検索を名前に"EMP"を持つテーブルを次のように選択します**テーブル**、型 **% EMP**で、**カテゴリで検索**テキスト ボックスとボタンをクリックし、。右側の下矢印アイコン。</span><span class="sxs-lookup"><span data-stu-id="ae541-196">For example, to search for tables that have "EMP" in their names, select **Table**, type **%EMP%** in the **Search in category** text box, and then click the button with the right-arrow icon.</span></span>  
   
      <span data-ttu-id="ae541-197">次の図に示しています、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、検索結果の一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="ae541-197">The following figure shows the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], which lists the search result.</span></span>  
   
@@ -196,7 +197,7 @@ ms.lasthandoff: 11/28/2017
   
     -   <span data-ttu-id="ae541-229">複数の異なる実行で複数の操作のスキーマを生成するかどうかは[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]を選択するかどうかを確認、**一意なスキーマ型を生成**生成される XSD ファイルには、複雑な一意の名前空間が含まれるように、チェック ボックスデータは、"CT1"を入力します。</span><span class="sxs-lookup"><span data-stu-id="ae541-229">If you want to generate schema for multiple operations across different runs of [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], make sure you select the **Generate unique schema types** check box so that the generated XSD files contain unique namespaces for the complex data type “CT1”.</span></span>  
   
-7.  <span data-ttu-id="ae541-230">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae541-230">Click **OK**.</span></span> <span data-ttu-id="ae541-231">スキーマ ファイルは、BizTalk プロジェクトと同じ場所にある拡張子が .xsd で保存されます。</span><span class="sxs-lookup"><span data-stu-id="ae541-231">The schema file is saved with an .xsd extension at the same location as the BizTalk project.</span></span>  
+7.  <span data-ttu-id="ae541-230">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae541-230">Click **OK**.</span></span> <span data-ttu-id="ae541-231">スキーマ ファイルは、BizTalk プロジェクトと同じ場所にある拡張子が .xsd で保存されます。</span><span class="sxs-lookup"><span data-stu-id="ae541-231">The schema file is saved with an .xsd extension at the same location as the BizTalk project.</span></span>  
   
      <span data-ttu-id="ae541-232">既定では、ファイルを作成して、名前付け規則"OracleDBBindingSchema\<n\>.xsd"ここで、' n ' 1、2、および作成したスキーマ ファイルの数によってを指定できます。</span><span class="sxs-lookup"><span data-stu-id="ae541-232">By default, the files are created with the naming convention "OracleDBBindingSchema\<n\>.xsd", where 'n' can be 1, 2, and so on, depending on the number of schema files created.</span></span> <span data-ttu-id="ae541-233">名前を入力して、スキーマ ファイルにカスタムの名前を指定する代わりに、**ファイル名のプレフィックス**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="ae541-233">Alternatively, you can provide a custom name to the schema files by entering a name in the **Filename prefix** text box.</span></span> <span data-ttu-id="ae541-234">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] 、命名規則で今すぐスキーマ ファイルが作成されます\<ファイル名のプレフィックス\>スキーマ\<n\>.xsd です。</span><span class="sxs-lookup"><span data-stu-id="ae541-234">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] now creates schema files with the naming convention \<file name prefix\>Schema\<n\>.xsd.</span></span>  
   
@@ -206,7 +207,7 @@ ms.lasthandoff: 11/28/2017
     > [!IMPORTANT]
     >  <span data-ttu-id="ae541-238">使用して、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]バインド ファイルを生成しません。</span><span class="sxs-lookup"><span data-stu-id="ae541-238">Using the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] does not generate a binding file.</span></span>  
   
-8.  <span data-ttu-id="ae541-239">**[ファイル]** メニューの **[すべてを保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae541-239">On the **File** menu, click **Save All**.</span></span>  
+8.  <span data-ttu-id="ae541-239">**[ファイル]** メニューの **[すべてを保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae541-239">On the **File** menu, click **Save All**.</span></span>  
   
 ## <a name="generating-a-wcf-client-or-wcf-service-contract-using-the-add-adapter-service-reference-plug-in"></a><span data-ttu-id="ae541-240">WCF クライアントまたは WCF サービス コントラクトを使用して、生成する、プラグイン アダプター サービス参照の追加</span><span class="sxs-lookup"><span data-stu-id="ae541-240">Generating a WCF Client or WCF Service Contract Using the Add Adapter Service Reference Plug-in</span></span>  
  <span data-ttu-id="ae541-241">使用することができます、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]いずれかの送信操作用の WCF クライアント コードまたは受信操作のための WCF サービス コードを生成します。</span><span class="sxs-lookup"><span data-stu-id="ae541-241">You can use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to generate either WCF client code for outbound operations or WCF service code for the inbound operations.</span></span>  
@@ -249,7 +250,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="ae541-265">構成できるオプション、**オプションの高度な**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用する場合は、ボックスが使用可能なオプションの一部に相当します。</span><span class="sxs-lookup"><span data-stu-id="ae541-265">The options that you can configure in the **Advanced Options** box are equivalent to some of the options available when you use the ServiceModel Metadata Utility Tool (svcutil.exe).</span></span> <span data-ttu-id="ae541-266">これらのオプションの詳細については、次を参照してください。 [ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)です。</span><span class="sxs-lookup"><span data-stu-id="ae541-266">For more information about these options, see [ServiceModel Metadata Utility Tool (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx).</span></span>
   
-5.  <span data-ttu-id="ae541-267">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae541-267">Click **OK**.</span></span> <span data-ttu-id="ae541-268">[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアント クラス (または WCF サービスのインターフェイス) を保存し、操作と、プロジェクト ディレクトリに選択したカテゴリのヘルパー コード。</span><span class="sxs-lookup"><span data-stu-id="ae541-268">The [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] saves the WCF client class (or WCF service interface) and helper code for the operations and categories that you have selected in your project directory.</span></span> <span data-ttu-id="ae541-269">既定では、構成ファイルも保存されます。</span><span class="sxs-lookup"><span data-stu-id="ae541-269">By default, a configuration file is also saved.</span></span> <span data-ttu-id="ae541-270">受信と送信操作です。 わずかに異なるファイルが生成されます。詳細については、次を参照してください。 [WCF クライアントまたは Oracle データベース ソリューションの成果物のための WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)です。</span><span class="sxs-lookup"><span data-stu-id="ae541-270">Slightly different files are generated for inbound and outbound operations; for more information, see [Generate a WCF client or a WCF service contract for Oracle Database solution artifacts](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md).</span></span>  
+5.  <span data-ttu-id="ae541-267">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae541-267">Click **OK**.</span></span> <span data-ttu-id="ae541-268">[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアント クラス (または WCF サービスのインターフェイス) を保存し、操作と、プロジェクト ディレクトリに選択したカテゴリのヘルパー コード。</span><span class="sxs-lookup"><span data-stu-id="ae541-268">The [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] saves the WCF client class (or WCF service interface) and helper code for the operations and categories that you have selected in your project directory.</span></span> <span data-ttu-id="ae541-269">既定では、構成ファイルも保存されます。</span><span class="sxs-lookup"><span data-stu-id="ae541-269">By default, a configuration file is also saved.</span></span> <span data-ttu-id="ae541-270">受信と送信操作です。 わずかに異なるファイルが生成されます。詳細については、次を参照してください。 [WCF クライアントまたは Oracle データベース ソリューションの成果物のための WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)です。</span><span class="sxs-lookup"><span data-stu-id="ae541-270">Slightly different files are generated for inbound and outbound operations; for more information, see [Generate a WCF client or a WCF service contract for Oracle Database solution artifacts](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md).</span></span>  
   
  <span data-ttu-id="ae541-271">記載されている任意のノードを選択することができます、**利用可能なカテゴリと操作**ボックス。</span><span class="sxs-lookup"><span data-stu-id="ae541-271">You can select any node that is listed in the **Available categories and operations** box.</span></span> <span data-ttu-id="ae541-272">カテゴリ ノードを選択する場合は、すべてのノードとそのサブ ノードで使用可能な操作が選択します。</span><span class="sxs-lookup"><span data-stu-id="ae541-272">If you select a category node then all of the operations available under that node and its sub-nodes will be selected.</span></span> <span data-ttu-id="ae541-273">たとえば、すべての操作を EMP テーブルの表示用の WCF クライアントを生成することができますノードを選択する、EMP;SCOTT スキーマ内のすべてのテーブルの WCF クライアントを生成するには、テーブル ノード; を選択することができます。などなど。</span><span class="sxs-lookup"><span data-stu-id="ae541-273">For example, to generate a WCF client for all of the operations surfaced for the EMP table, you can select the EMP node; to generate WCF clients for all of the tables in the SCOTT schema, you can select the Table node; and so on.</span></span>  
   

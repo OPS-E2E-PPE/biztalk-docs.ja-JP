@@ -1,14 +1,14 @@
 ---
-title: "手順 1: FileAct リアルタイム シナリオでは、SWIFT のアダプターを構成する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: FileAct リアルタイム シナリオでは、SWIFT のアダプターを構成する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: afc52c63-9f83-4e90-9269-e90834b792bf
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966082"
 ---
 # <a name="step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario"></a><span data-ttu-id="1bb21-102">手順 1: FileAct リアルタイム シナリオでは、SWIFT のアダプターを構成します。</span><span class="sxs-lookup"><span data-stu-id="1bb21-102">Step 1: Configure the SWIFT Adapter for the FileAct Real-Time Scenario</span></span>
 <span data-ttu-id="1bb21-103">この手順を開始する前に行う必要があります[、チュートリアルを使用する準備](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)です。</span><span class="sxs-lookup"><span data-stu-id="1bb21-103">Before you begin this step, you must complete [Preparing to Use the Tutorial](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md).</span></span>  
@@ -33,7 +34,7 @@ ms.lasthandoff: 11/28/2017
   
     |<span data-ttu-id="1bb21-109">**これを使用してください。**</span><span class="sxs-lookup"><span data-stu-id="1bb21-109">**Use this**</span></span>|<span data-ttu-id="1bb21-110">**これを行う**</span><span class="sxs-lookup"><span data-stu-id="1bb21-110">**To do this**</span></span>|  
     |------------------|--------------------|  
-    |<span data-ttu-id="1bb21-111">**引数**</span><span class="sxs-lookup"><span data-stu-id="1bb21-111">**Arguments**</span></span>|<span data-ttu-id="1bb21-112">次の引数を入力: - SagMessagePartner \<SAG で Fileact クライアント メッセージのパートナーが作成される\>**注:**引数で、クライアントは SAG で構成されている MessagePartner です。</span><span class="sxs-lookup"><span data-stu-id="1bb21-112">Type the following argument: -SagMessagePartner \<Fileact Client Message Partner created in SAG\> **Note:**  The client in the argument is the MessagePartner you configured in SAG.</span></span>|  
+    |<span data-ttu-id="1bb21-111">**引数**</span><span class="sxs-lookup"><span data-stu-id="1bb21-111">**Arguments**</span></span>|<span data-ttu-id="1bb21-112">次の引数を入力: - SagMessagePartner \<SAG で Fileact クライアント メッセージのパートナーが作成される\>**注:** 引数で、クライアントは SAG で構成されている MessagePartner です。</span><span class="sxs-lookup"><span data-stu-id="1bb21-112">Type the following argument: -SagMessagePartner \<Fileact Client Message Partner created in SAG\> **Note:**  The client in the argument is the MessagePartner you configured in SAG.</span></span>|  
     |<span data-ttu-id="1bb21-113">**暗号化モード**</span><span class="sxs-lookup"><span data-stu-id="1bb21-113">**Crypto Mode**</span></span>|<span data-ttu-id="1bb21-114">ドロップダウン リストから選択**詳細**です。</span><span class="sxs-lookup"><span data-stu-id="1bb21-114">From the drop-down list, select **Advanced**.</span></span>|  
     |<span data-ttu-id="1bb21-115">**FACryptoMode**</span><span class="sxs-lookup"><span data-stu-id="1bb21-115">**FACryptoMode**</span></span>|<span data-ttu-id="1bb21-116">ドロップダウン リストから選択**詳細**です。</span><span class="sxs-lookup"><span data-stu-id="1bb21-116">From the drop-down list, select **Advanced**.</span></span>|  
     |<span data-ttu-id="1bb21-117">**し**</span><span class="sxs-lookup"><span data-stu-id="1bb21-117">**LogMessages**</span></span>|<span data-ttu-id="1bb21-118">ドロップダウン リストから選択**TRUE**です。</span><span class="sxs-lookup"><span data-stu-id="1bb21-118">From the drop-down list, select **TRUE**.</span></span> <span data-ttu-id="1bb21-119">これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。</span><span class="sxs-lookup"><span data-stu-id="1bb21-119">This enables the message events to be captured and tracked in the BAM portal.</span></span>|  

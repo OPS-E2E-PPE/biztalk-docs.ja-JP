@@ -1,11 +1,11 @@
 ---
-title: "カスタマイズ設定の宣言 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタマイズ設定の宣言 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - declared customizations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - customizing, Z objects
 - customizing, declared customizations
 ms.assetid: 484655e9-8bfa-4643-bbe6-4ef69cbd83ad
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204786"
 ---
 # <a name="declared-customizations"></a><span data-ttu-id="6d634-102">宣言のカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="6d634-102">Declared Customizations</span></span>
 <span data-ttu-id="6d634-103">宣言のカスタマイズでは、変更または HL7 メッセージへの追加の柔軟性があります。</span><span class="sxs-lookup"><span data-stu-id="6d634-103">With declared customizations, you have the flexibility of modifying or adding to HL7 messages.</span></span> <span data-ttu-id="6d634-104">新しいメッセージの種類でも定義できます。</span><span class="sxs-lookup"><span data-stu-id="6d634-104">You can even define a new type of message.</span></span> <span data-ttu-id="6d634-105">これは、次のような方法で行います。</span><span class="sxs-lookup"><span data-stu-id="6d634-105">You can do this in any of the following ways:</span></span>  

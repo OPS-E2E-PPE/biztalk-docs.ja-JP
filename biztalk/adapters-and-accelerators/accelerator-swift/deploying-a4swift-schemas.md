@@ -1,11 +1,11 @@
 ---
-title: "A4SWIFT のスキーマを展開する |Microsoft ドキュメント"
-ms.custom: 
+title: A4SWIFT のスキーマを展開する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, A4SWIFT
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - A4SWIFT, deploying schemas
 - schemas, deploying
 ms.assetid: a6aed2cd-3578-442e-ab1e-8284cc5f7b72
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25966424"
 ---
 # <a name="deploying-a4swift-schemas"></a><span data-ttu-id="91a4b-102">A4SWIFT のスキーマを展開します。</span><span class="sxs-lookup"><span data-stu-id="91a4b-102">Deploying A4SWIFT Schemas</span></span>
 <span data-ttu-id="91a4b-103">交換する SWIFT メッセージのスキーマを展開する必要があります。</span><span class="sxs-lookup"><span data-stu-id="91a4b-103">You must deploy schemas for the SWIFT messages that you want to exchange.</span></span>  

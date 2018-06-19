@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-tibco-enterprise-message-service/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 794ab5e4ed28464ed704d27da05390dad6199224
 ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968592"
 ---
 # <a name="how-to-clean-the-target-computer"></a><span data-ttu-id="e3cfd-101">対象となるコンピューターをクリーニングする方法</span><span class="sxs-lookup"><span data-stu-id="e3cfd-101">How to Clean the Target Computer</span></span>
 <span data-ttu-id="e3cfd-102">展開には、受信場所の構成が上書きされます。</span><span class="sxs-lookup"><span data-stu-id="e3cfd-102">Deployment overwrites the receive location configuration.</span></span> <span data-ttu-id="e3cfd-103">バインド ファイル (およびアセンブリ) を展開先のコンピューターに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="e3cfd-103">When you deploy a binding file (and assembly) on a target computer, the send ports and receive locations are replaced with those in the XML binding file when they are imported.</span></span>  

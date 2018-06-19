@@ -1,17 +1,17 @@
 ---
-title: "Siebel アダプターのインストールに関する問題のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターのインストールに関する問題のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - troubleshooting, installation
 - installation, troubleshooting
 ms.assetid: f9f066d9-37b6-4a18-9f60-d0931ea91a18
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964872"
 ---
 # <a name="troubleshoot-installation-issues-with-the-siebel-adapter"></a><span data-ttu-id="89e98-102">Siebel アダプターのインストールに関する問題をトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="89e98-102">Troubleshoot Installation Issues with the Siebel adapter</span></span>
 <span data-ttu-id="89e98-103">Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストールは、コンピューター上の製品バイナリをコピーし、各アダプターのバインドを登録します。</span><span class="sxs-lookup"><span data-stu-id="89e98-103">The Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] installation copies the product binaries on the computer and registers the bindings for each adapter.</span></span> <span data-ttu-id="89e98-104">このセクションでは、インストール エラーを解決するのには、トラブルシューティングの手法について説明します。</span><span class="sxs-lookup"><span data-stu-id="89e98-104">This section discusses troubleshooting techniques to resolve installation errors.</span></span>  

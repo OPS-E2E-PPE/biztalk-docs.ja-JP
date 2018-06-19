@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL Server からデータ変更のポーリングに基づいたメッセージを受信 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL Server からデータ変更のポーリングに基づいたメッセージを受信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9ecaf6f7-974b-4487-8c65-d1ab628cbfeb
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967883"
 ---
 # <a name="receive-polling-based-data-changed-messages-from-sql-server-using-biztalk-server"></a><span data-ttu-id="f43e4-102">BizTalk Server を使用して SQL Server からのデータ変更のポーリングに基づいたメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="f43e4-102">Receive Polling-based Data-changed Messages from SQL Server using BizTalk Server</span></span>
 <span data-ttu-id="f43e4-103">構成することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server のテーブルまたはビューのデータの定期的な変更メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="f43e4-103">You can configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive periodic data-change messages for SQL Server tables or views.</span></span> <span data-ttu-id="f43e4-104">データベースをポーリングするアダプターを実行するポーリング ステートメントを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="f43e4-104">You can specify a polling statement that the adapter executes to poll the database.</span></span> <span data-ttu-id="f43e4-105">ポーリング ステートメントには、SELECT ステートメントまたは結果セットを返すストアド プロシージャを使用できます。</span><span class="sxs-lookup"><span data-stu-id="f43e4-105">The polling statement can be a SELECT statement or a stored procedure that returns a result set.</span></span>  
@@ -98,7 +99,7 @@ SELECT * FROM Employee;EXEC MOVE_EMP_DATA;EXEC ADD_EMP_DETAILS John, Tester, 100
   
      <span data-ttu-id="f43e4-186">バインドのプロパティを指定する方法については、次を参照してください。 [SQL アダプターのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-binding-properties-for-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="f43e4-186">For instructions on how to specify binding properties, see [Configure the binding properties for the SQL adapter](../../adapters-and-accelerators/adapter-sql/configure-the-binding-properties-for-the-sql-adapter.md).</span></span>  
   
-2.  <span data-ttu-id="f43e4-187">コントラクトの種類を選択して**サービス (入力方向の操作)**です。</span><span class="sxs-lookup"><span data-stu-id="f43e4-187">Select the contract type as **Service (Inbound operation)**.</span></span>  
+2.  <span data-ttu-id="f43e4-187">コントラクトの種類を選択して**サービス (入力方向の操作)** です。</span><span class="sxs-lookup"><span data-stu-id="f43e4-187">Select the contract type as **Service (Inbound operation)**.</span></span>  
   
 3.  <span data-ttu-id="f43e4-188">スキーマを生成、**ポーリング**操作します。</span><span class="sxs-lookup"><span data-stu-id="f43e4-188">Generate schema for the **Polling** operation.</span></span>  
   

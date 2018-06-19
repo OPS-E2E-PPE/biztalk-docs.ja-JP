@@ -1,11 +1,11 @@
 ---
-title: "カスタム Functoid (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム Functoid (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - functoids, customizing
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - XML tools
 - examples, XML tools
 ms.assetid: 9f1eb260-ff62-46f5-a517-57f4e9172b35
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970520"
 ---
 # <a name="custom-functoid-biztalk-server-sample"></a><span data-ttu-id="a3497-102">カスタム Functoid (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="a3497-102">Custom Functoid (BizTalk Server Sample)</span></span>
 <span data-ttu-id="a3497-103">カスタム Functoid サンプルは、BizTalk マッパー用のカスタム Functoid を記述する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="a3497-103">The Custom Functoid sample demonstrates how to write a custom functoid for BizTalk Mapper.</span></span> <span data-ttu-id="a3497-104">Functoid は [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックスに追加できます。</span><span class="sxs-lookup"><span data-stu-id="a3497-104">You can add the functoid to the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Toolbox.</span></span> <span data-ttu-id="a3497-105">Functoid は、BizTalk マッパーにフォーカスがある場合にツールボックスに表示されます。</span><span class="sxs-lookup"><span data-stu-id="a3497-105">The functoid will be displayed in the Toolbox when BizTalk Mapper is in focus.</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
 >  <span data-ttu-id="a3497-119">カスタム Functoid サンプル コードを再利用して独自の Functoid を実装する場合は、GUID 属性を一意のものに変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a3497-119">If you reuse the Custom Functoid sample code to implement your own functoid(s), you must be sure to change the GUID attribute to one that is unique.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="a3497-120">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="a3497-120">Where to Find This Sample</span></span>  
- <span data-ttu-id="a3497-121">*\<パスのサンプル\>*\XmlTools\CustomFunctoid</span><span class="sxs-lookup"><span data-stu-id="a3497-121">*\<Samples Path\>*\XmlTools\CustomFunctoid</span></span>  
+ <span data-ttu-id="a3497-121">*\<パスのサンプル\>* \XmlTools\CustomFunctoid</span><span class="sxs-lookup"><span data-stu-id="a3497-121">*\<Samples Path\>* \XmlTools\CustomFunctoid</span></span>  
   
  <span data-ttu-id="a3497-122">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="a3497-122">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="a3497-163">**ツールボックス アイテムの選択**ダイアログ ボックスで、 **BizTalk マッパー Functoid**タブです。</span><span class="sxs-lookup"><span data-stu-id="a3497-163">In the **Choose Toolbox items** dialog box, select the **BizTalk Mapper Functoids** tab.</span></span>  
   
-3.  <span data-ttu-id="a3497-164">をクリックして**リセット**、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="a3497-164">Click **Reset**, and then click **OK**.</span></span>  
+3.  <span data-ttu-id="a3497-164">をクリックして**リセット**、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="a3497-164">Click **Reset**, and then click **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="a3497-165">カスタム Functoid でインライン コードが公開されない場合は、アセンブリが GAC で使用可能になっているかどうかを確認してください。</span><span class="sxs-lookup"><span data-stu-id="a3497-165">If your custom functoid does not expose any inline code, make sure its assembly is made available in the GAC.</span></span>  

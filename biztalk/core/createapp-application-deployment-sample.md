@@ -1,11 +1,11 @@
 ---
-title: "CreateApp (アプリケーションの展開サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: CreateApp (アプリケーションの展開サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, examples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - .msi files, deploying
 - examples, deploying
 ms.assetid: 825627ee-21d0-4505-9df4-1dadc51335b6
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969712"
 ---
 # <a name="createapp-application-deployment-sample"></a><span data-ttu-id="2ea96-102">CreateApp (アプリケーションの展開サンプル)</span><span class="sxs-lookup"><span data-stu-id="2ea96-102">CreateApp (Application Deployment Sample)</span></span>
 <span data-ttu-id="2ea96-103">このトピックでは、CreateApp サンプルの使用方法について説明し、BTSTask コマンド ライン ツールを使用して BizTalk アプリケーションを展開および展開解除する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="2ea96-103">This topic explains how to use the CreateApp sample, which demonstrates using the BTSTask command-line tool to deploy and undeploy a BizTalk application.</span></span> <span data-ttu-id="2ea96-104">このサンプルに含まれるスクリプトを使用して夜間のビルド プロセスを自動化し、BizTalk アプリケーションを展開および展開解除できます。</span><span class="sxs-lookup"><span data-stu-id="2ea96-104">You could use scripts such as those included in this sample to automate your nightly build process to deploy and undeploy BizTalk applications.</span></span>  
@@ -76,7 +77,7 @@ ms.lasthandoff: 11/28/2017
          <span data-ttu-id="2ea96-149">C:\ScriptLog.txt</span><span class="sxs-lookup"><span data-stu-id="2ea96-149">C:\ScriptLog.txt</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="2ea96-150">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="2ea96-150">Where to Find This Sample</span></span>  
- <span data-ttu-id="2ea96-151">次のフォルダーにサンプル ファイルを検索できる*\<サンプル パス\>*\Application 展開\\:</span><span class="sxs-lookup"><span data-stu-id="2ea96-151">You can find the sample files in the following folders under *\<Samples Path\>*\Application Deployment\\:</span></span>  
+ <span data-ttu-id="2ea96-151">次のフォルダーにサンプル ファイルを検索できる*\<サンプル パス\>* \Application 展開\\:</span><span class="sxs-lookup"><span data-stu-id="2ea96-151">You can find the sample files in the following folders under *\<Samples Path\>* \Application Deployment\\:</span></span>  
   
 -   <span data-ttu-id="2ea96-152">CreateApp (フォルダ)</span><span class="sxs-lookup"><span data-stu-id="2ea96-152">CreateApp (Folder)</span></span>  
   

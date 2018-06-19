@@ -1,17 +1,17 @@
 ---
-title: "手順 5: Contoso プライベート プロセス オーケストレーションの変更 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: Contoso プライベート プロセス オーケストレーションの変更 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private processes, orchestrations
 - private process tutorial, modifying private process orchestration
 ms.assetid: a5430db8-e5f0-48a6-abb9-e268d8ec2ec4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967760"
 ---
 # <a name="step-5-modifying-the-contoso-private-process-orchestration"></a><span data-ttu-id="0e293-102">手順 5: Contoso プライベート プロセス オーケストレーションの変更</span><span class="sxs-lookup"><span data-stu-id="0e293-102">Step 5: Modifying the Contoso Private Process Orchestration</span></span>
 <span data-ttu-id="0e293-103">ここでは、プライベート プロセス オーケストレーションを変更して、Contoso のエンタープライズ リソース計画 (ERP) システムと統合します。</span><span class="sxs-lookup"><span data-stu-id="0e293-103">In this step, you modify the private process orchestration to integrate with the Enterprise Resource Planning (ERP) system for Contoso.</span></span> <span data-ttu-id="0e293-104">Contoso の ERP システムは、製品価格と在庫に対する内部的に定義されたスキーマを使用します。</span><span class="sxs-lookup"><span data-stu-id="0e293-104">The ERP system for Contoso uses internally defined schemas for product price and availability.</span></span> <span data-ttu-id="0e293-105">3A2 - Price and Availability PIP (Partner Interface Process) のプライベート プロセスをカスタマイズすることによって、スキーマにマップされた情報を使用して、ERP システムと統合できるようになります。</span><span class="sxs-lookup"><span data-stu-id="0e293-105">By customizing the private process for the 3A2 - Price and Availability Partner Interface Process (PIP), you will be able to integrate with the ERP system by using schema-mapping information.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="0e293-107">ソリューション エクスプ ローラーに表示される Contoso ソリューションを右クリックし、 **PrivateResponder**プロジェクトをクリックして**参照の追加**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-107">With the Contoso solution displayed in Solution Explorer, right-click the **PrivateResponder** project, and then click **Add Reference**.</span></span>  
   
-2.  <span data-ttu-id="0e293-108">[参照の追加] ダイアログ ボックスで、**参照**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-108">In the Add Reference dialog box, click **Browse**.</span></span> <span data-ttu-id="0e293-109">移動*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \bin フォルダー、および、次のアセンブリを選択**:**</span><span class="sxs-lookup"><span data-stu-id="0e293-109">Move to *\<drive\>*:\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\Bin folder, and then select the following assemblies**:**</span></span>  
+2.  <span data-ttu-id="0e293-108">[参照の追加] ダイアログ ボックスで、**参照**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-108">In the Add Reference dialog box, click **Browse**.</span></span> <span data-ttu-id="0e293-109">移動*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \bin フォルダー、および、次のアセンブリを選択 **:**</span><span class="sxs-lookup"><span data-stu-id="0e293-109">Move to *\<drive\>*:\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\Bin folder, and then select the following assemblies **:**</span></span>  
   
     -   <span data-ttu-id="0e293-110">Microsoft.solutions.BTARN.CommonTypes.dll</span><span class="sxs-lookup"><span data-stu-id="0e293-110">Microsoft.Solutions.BTARN.CommonTypes.dll</span></span>  
   
@@ -44,11 +45,11 @@ ms.lasthandoff: 11/28/2017
   
     -   <span data-ttu-id="0e293-116">Microsoft.Solutions.BTARN.XSDClasses.GlobalSchemas.dll</span><span class="sxs-lookup"><span data-stu-id="0e293-116">Microsoft.Solutions.BTARN.XSDClasses.GlobalSchemas.dll</span></span>  
   
-3.  <span data-ttu-id="0e293-117">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e293-117">Click **Add**.</span></span>  
+3.  <span data-ttu-id="0e293-117">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e293-117">Click **Add**.</span></span>  
   
-4.  <span data-ttu-id="0e293-118">[参照の追加] ダイアログ ボックス、**プロジェクト**] タブで、[、 **[contosopriceandavailability]**と**HeaderHelper**プロジェクト、およびクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-118">In the Add Reference dialog box, click the **Projects** tab, select the **ContosoPriceAndAvailability** and **HeaderHelper** projects, and then click **Add**.</span></span>  
+4.  <span data-ttu-id="0e293-118">[参照の追加] ダイアログ ボックス、**プロジェクト**] タブで、[、 **[contosopriceandavailability]** と**HeaderHelper**プロジェクト、およびクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-118">In the Add Reference dialog box, click the **Projects** tab, select the **ContosoPriceAndAvailability** and **HeaderHelper** projects, and then click **Add**.</span></span>  
   
-5.  <span data-ttu-id="0e293-119">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e293-119">Click **OK**.</span></span>  
+5.  <span data-ttu-id="0e293-119">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e293-119">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="0e293-120">[Microsoft 開発環境] ダイアログ ボックスで、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-120">In the Microsoft Development Environment dialog box, click **OK**.</span></span>  
   
@@ -62,9 +63,9 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="0e293-125">[プロパティ] ウィンドウ内で、**識別子**ボックスに、入力**PIP3A2RequestMessage**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-125">In the Properties window, in the **Identifier** box, type **PIP3A2RequestMessage**.</span></span>  
   
-5.  <span data-ttu-id="0e293-126">**メッセージの種類**ボックス、ドロップダウン矢印をクリックして、展開**スキーマ**、し、 **\<参照されたアセンブリから選択\>**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-126">In the **Message Type** box, click the drop-down arrow, expand **Schemas**, and then select **\<Select from referenced assembly\>**.</span></span>  
+5.  <span data-ttu-id="0e293-126">**メッセージの種類**ボックス、ドロップダウン矢印をクリックして、展開**スキーマ**、し、 **\<参照されたアセンブリから選択\>** です。</span><span class="sxs-lookup"><span data-stu-id="0e293-126">In the **Message Type** box, click the drop-down arrow, expand **Schemas**, and then select **\<Select from referenced assembly\>**.</span></span>  
   
-6.  <span data-ttu-id="0e293-127">成果物 Typedialog の選択ボックスで、次のように選択します**Microsoft.Solutions.BTARN.Schemas.RNPIPs**左のペインで選択**_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3**右側のウィンドウで、。をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-127">In the Select Artifact Typedialog box, select **Microsoft.Solutions.BTARN.Schemas.RNPIPs** in the left pane, select **_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3** in the right pane, and then click **OK**.</span></span>  
+6.  <span data-ttu-id="0e293-127">成果物 Typedialog の選択ボックスで、次のように選択します**Microsoft.Solutions.BTARN.Schemas.RNPIPs**左のペインで選択 **_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3**右側のウィンドウで、。をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-127">In the Select Artifact Typedialog box, select **Microsoft.Solutions.BTARN.Schemas.RNPIPs** in the left pane, select **_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3** in the right pane, and then click **OK**.</span></span>  
   
 7.  <span data-ttu-id="0e293-128">ソリューションに対して以下の情報を使用して手順 3. ～ 6. を繰り返し、すべてのメッセージの種類を作成します。</span><span class="sxs-lookup"><span data-stu-id="0e293-128">Repeat steps 3 through 6 to create all the message types for the solution using the following information:</span></span>  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="0e293-146">[プロパティ] ウィンドウ内で、**識別子**ボックスに、入力**contosoResponseXML**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-146">In the Properties window, in the **Identifier** box, type **contosoResponseXML**.</span></span>  
   
-3.  <span data-ttu-id="0e293-147">**型**ボックスで、  **\<.NET クラス\>**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="0e293-147">In the **Type** box, select **\<.NET Class\>** from the drop-down list.</span></span>  
+3.  <span data-ttu-id="0e293-147">**型**ボックスで、  **\<.NET クラス\>** ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="0e293-147">In the **Type** box, select **\<.NET Class\>** from the drop-down list.</span></span>  
   
 4.  <span data-ttu-id="0e293-148">Select の成果物入力ダイアログ ボックスで、左側のウィンドウで、**現在のプロジェクト**と**参照**、ノードを選択**System.Xml**を選択**XmlDocument**をクリックして右側のペインの一覧から**OK**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-148">In the Select Artifact Type dialog box, in the left pane, under the **Current Project** and **References** nodes, select **System.Xml**, select **XmlDocument** from the list in the right pane, and then click **OK**.</span></span>  
   
@@ -90,13 +91,13 @@ ms.lasthandoff: 11/28/2017
   
 6.  <span data-ttu-id="0e293-150">[プロパティ] ウィンドウ内で、**識別子**ボックスに、入力**submitMessage**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-150">In the Properties window, in the **Identifier** box, type **submitMessage**.</span></span>  
   
-7.  <span data-ttu-id="0e293-151">**型**ボックスで、  **\<.NET クラス\>**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="0e293-151">In the **Type** box, select **\<.NET Class\>** from the drop-down list.</span></span>  
+7.  <span data-ttu-id="0e293-151">**型**ボックスで、  **\<.NET クラス\>** ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="0e293-151">In the **Type** box, select **\<.NET Class\>** from the drop-down list.</span></span>  
   
 8.  <span data-ttu-id="0e293-152">成果物の種類の選択 ダイアログ ボックスの左側のウィンドウで展開**現在のプロジェクト**と**参照**、ノードを選択**Microsoft.Solutions.BTARN.Shared**の選択**SubmitRNIF**をクリックして右側のペインの一覧から**OK**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-152">In the Select Artifact Type dialog box, in the left pane, expand **Current Project** and **References** nodes, select **Microsoft.Solutions.BTARN.Shared**, select **SubmitRNIF** from the list in the right pane, and then click **OK**.</span></span>  
   
 ### <a name="to-change-the-orchestration-filter-expression"></a><span data-ttu-id="0e293-153">オーケストレーションのフィルター式を変更するには</span><span class="sxs-lookup"><span data-stu-id="0e293-153">To change the orchestration filter expression</span></span>  
   
-1.  <span data-ttu-id="0e293-154">オーケストレーション デザイナーで、選択、 **[receivefrompublicprocessresponder]**図形です。</span><span class="sxs-lookup"><span data-stu-id="0e293-154">In Orchestration Designer, select the **ReceiveFromPublicProcessResponder** shape.</span></span>  
+1.  <span data-ttu-id="0e293-154">オーケストレーション デザイナーで、選択、 **[receivefrompublicprocessresponder]** 図形です。</span><span class="sxs-lookup"><span data-stu-id="0e293-154">In Orchestration Designer, select the **ReceiveFromPublicProcessResponder** shape.</span></span>  
   
 2.  <span data-ttu-id="0e293-155">プロパティ ウィンドウでの**フィルター式**ボックス、値 ボックスをクリックし、省略記号ボタンをクリックして (**.**) をフィルター式 ダイアログ ボックスを開きます。</span><span class="sxs-lookup"><span data-stu-id="0e293-155">In the Properties window, in the **Filter Expression** box, click the value box, and then click the ellipsis button (**...**) to open the Filter Expression dialog box.</span></span>  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="0e293-157">フィルター式 ダイアログ ボックスで、**ここをクリックして新しい行を追加する**、し、 **Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="0e293-157">In the Filter Expression dialog box, click **Click here to add a new row**, and then select **Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode** from the drop-down list.</span></span>  
   
-5.  <span data-ttu-id="0e293-158">同じ行の **値**、しに入力**「3 a 2」**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-158">In the same row, click **Value**, and then type in **"3A2"**.</span></span>  
+5.  <span data-ttu-id="0e293-158">同じ行の **値**、しに入力 **「3 a 2」** です。</span><span class="sxs-lookup"><span data-stu-id="0e293-158">In the same row, click **Value**, and then type in **"3A2"**.</span></span>  
   
 6.  <span data-ttu-id="0e293-159">同じ行の  **AND**で、 **Group By**ボックスし、**または**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="0e293-159">In the same row, click **AND** in the **Group By** box, and then select **OR** from the drop-down list.</span></span>  
   
@@ -112,13 +113,13 @@ ms.lasthandoff: 11/28/2017
   
 8.  <span data-ttu-id="0e293-161">をクリックして**ここをクリックして新しい行を追加する**、し、 **Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="0e293-161">Click **Click here to add a new row**, and then select **Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode** from the drop-down list.</span></span>  
   
-9. <span data-ttu-id="0e293-162">同じ行の **値**、しに入力**「3 a 2」**です。</span><span class="sxs-lookup"><span data-stu-id="0e293-162">In the same row, click **Value**, and then type in **"3A2"**.</span></span>  
+9. <span data-ttu-id="0e293-162">同じ行の **値**、しに入力 **「3 a 2」** です。</span><span class="sxs-lookup"><span data-stu-id="0e293-162">In the same row, click **Value**, and then type in **"3A2"**.</span></span>  
   
 10. <span data-ttu-id="0e293-163">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e293-163">Click OK.</span></span>  
   
 ### <a name="to-modify-the-business-process-workflow"></a><span data-ttu-id="0e293-164">ビジネス プロセスワークフローを変更するには</span><span class="sxs-lookup"><span data-stu-id="0e293-164">To modify the business process workflow</span></span>  
   
-1.  <span data-ttu-id="0e293-165">ドラッグ、**メッセージの割り当て**図形をツールボックスからデザイン画面に、下にドロップし、 **[receivefrompublicprocessresponder]**図形です。</span><span class="sxs-lookup"><span data-stu-id="0e293-165">Drag a **Message Assignment** shape from the Toolbox to the design surface and drop it under the **ReceiveFromPublicProcessResponder** shape.</span></span> <span data-ttu-id="0e293-166">選択、 **ConstructMessage_1**図形が作成されたし、[、**プロパティ**] ウィンドウで、**名前**ボックスに、入力**[constructpip3a2requestmessage]**.</span><span class="sxs-lookup"><span data-stu-id="0e293-166">Select the **ConstructMessage_1** shape that was created and in the **Properties** window, in the **Name** box, type **ConstructPIP3A2RequestMessage**.</span></span>  
+1.  <span data-ttu-id="0e293-165">ドラッグ、**メッセージの割り当て**図形をツールボックスからデザイン画面に、下にドロップし、 **[receivefrompublicprocessresponder]** 図形です。</span><span class="sxs-lookup"><span data-stu-id="0e293-165">Drag a **Message Assignment** shape from the Toolbox to the design surface and drop it under the **ReceiveFromPublicProcessResponder** shape.</span></span> <span data-ttu-id="0e293-166">選択、 **ConstructMessage_1**図形が作成されたし、[、**プロパティ**] ウィンドウで、**名前**ボックスに、入力 **[constructpip3a2requestmessage]**.</span><span class="sxs-lookup"><span data-stu-id="0e293-166">Select the **ConstructMessage_1** shape that was created and in the **Properties** window, in the **Name** box, type **ConstructPIP3A2RequestMessage**.</span></span>  
   
 2.  <span data-ttu-id="0e293-167">ドラッグ、**変換**図形をデザイン画面に、下にドロップし、 **ConstructPIP3A2RequestMessage**図形です。</span><span class="sxs-lookup"><span data-stu-id="0e293-167">Drag a **Transform** shape to the design surface and drop it under the **ConstructPIP3A2RequestMessage** shape.</span></span> <span data-ttu-id="0e293-168">選択、 **ConstructMessage_1**図形が作成されたし、、**プロパティ**ウィンドウで、**名**ボックスに、入力**ConstructContoso3A2RequestMessage**.</span><span class="sxs-lookup"><span data-stu-id="0e293-168">Select the **ConstructMessage_1** shape that was created and in the **Properties** window, in the **Name** box, type **ConstructContoso3A2RequestMessage**.</span></span>  
   

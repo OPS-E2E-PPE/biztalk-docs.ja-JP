@@ -1,14 +1,14 @@
 ---
-title: "WCF クライアントまたは Oracle E-business Suite ソリューションの成果物のための WCF サービス コントラクトを生成 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF クライアントまたは Oracle E-business Suite ソリューションの成果物のための WCF サービス コントラクトを生成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7ffd857-a177-423a-ae83-685d11b7aec6
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217466"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-oracle-e-business-suite-solution-artifacts"></a><span data-ttu-id="fc315-102">WCF クライアントまたは Oracle E-business Suite ソリューションの成果物のための WCF サービス コントラクトを生成します。</span><span class="sxs-lookup"><span data-stu-id="fc315-102">Generate a WCF client or a WCF service contract for Oracle E-Business Suite solution artifacts</span></span>
 <span data-ttu-id="fc315-103">使用することができます、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] WCF クライアント クラスまたは Oracle E-business Suite の成果物に選択した操作を対象とした WCF サービス コントラクト (インターフェイス) を生成します。</span><span class="sxs-lookup"><span data-stu-id="fc315-103">You can use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] to generate a WCF client class or a WCF service contract (interface) targeted at selected operations on Oracle E-Business Suite artifacts.</span></span> <span data-ttu-id="fc315-104">ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を WCF クライアント クラスを生成または WCF サービス コントラクト以外にも使用できます。ただし、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]標準の Microsoft Windows インターフェイスを通じて ServiceModel メタデータ ユーティリティ ツールの機能を公開します。</span><span class="sxs-lookup"><span data-stu-id="fc315-104">You can also use the ServiceModel Metadata Utility Tool (svcutil.exe) to generate the WCF client class or WCF service contract; however, the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] exposes the functionality of the ServiceModel Metadata Utility Tool through a standard Microsoft Windows interface.</span></span> <span data-ttu-id="fc315-105">Svcutil.exe ツールではない参照および検索の機能も用意されていて、Oracle E-business Suite に接続するときに選択したバインドのプロパティに基づく構成ファイルを生成します。</span><span class="sxs-lookup"><span data-stu-id="fc315-105">It also provides browse and search capabilities that are not available with the svcutil.exe tool, and it generates a configuration file based on the binding properties that you select when you connect to the Oracle E-Business Suite.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="fc315-109">[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーでは、プロジェクトを右クリックし、をクリックして**アダプター サービス参照の追加**です。</span><span class="sxs-lookup"><span data-stu-id="fc315-109">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Solution Explorer, right-click your project, and then click **Add Adapter Service Reference**.</span></span>  
   
-2.  <span data-ttu-id="fc315-110">後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)Oracle E-business Suite に接続し、参照し、操作を検索します。</span><span class="sxs-lookup"><span data-stu-id="fc315-110">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Retrieving Metadata for Oracle E-Business Suite Operations in Visual Studio](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md) to connect to the Oracle E-Business Suite and browse and search for operations.</span></span> <span data-ttu-id="fc315-111">選択した操作のための WCF クライアント クラスを作成することを確認**クライアント (送信操作)**からが選択されている、**選択コントラクト型**(これは、既定値) ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="fc315-111">To create a WCF client class for the operations that you select, be sure that **Client (Outbound operations)** is selected from the **Select contract type** drop-down list (this is the default).</span></span>  
+2.  <span data-ttu-id="fc315-110">後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)Oracle E-business Suite に接続し、参照し、操作を検索します。</span><span class="sxs-lookup"><span data-stu-id="fc315-110">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Retrieving Metadata for Oracle E-Business Suite Operations in Visual Studio](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md) to connect to the Oracle E-Business Suite and browse and search for operations.</span></span> <span data-ttu-id="fc315-111">選択した操作のための WCF クライアント クラスを作成することを確認**クライアント (送信操作)** からが選択されている、**選択コントラクト型**(これは、既定値) ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="fc315-111">To create a WCF client class for the operations that you select, be sure that **Client (Outbound operations)** is selected from the **Select contract type** drop-down list (this is the default).</span></span>  
   
 3.  <span data-ttu-id="fc315-112">すべての対象をクリックする操作を選択した後**OK** WCF クライアント クラスを生成します。</span><span class="sxs-lookup"><span data-stu-id="fc315-112">After you select all of the operations that you want to target, click **OK** to generate the WCF client class.</span></span>  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="fc315-127">後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)Oracle E-business Suite に接続します。</span><span class="sxs-lookup"><span data-stu-id="fc315-127">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Retrieving Metadata for Oracle E-Business Suite Operations in Visual Studio](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md) to connect to the Oracle E-Business Suite.</span></span> <span data-ttu-id="fc315-128">複数のバインドのプロパティと Oracle E-business Suite に接続するときに設定する URI プロパティがあります。</span><span class="sxs-lookup"><span data-stu-id="fc315-128">There are several binding properties and a URI property that you may want to set when you connect to the Oracle E-Business Suite.</span></span>  
   
-3.  <span data-ttu-id="fc315-129">Oracle E-business Suite に接続すると、選択**サービス (入力方向の操作)**から、**選択コントラクト型**ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="fc315-129">After you have connected to the Oracle E-Business Suite, select **Service (Inbound operations)** from the **Select contract type** drop-down list.</span></span>  
+3.  <span data-ttu-id="fc315-129">Oracle E-business Suite に接続すると、選択**サービス (入力方向の操作)** から、**選択コントラクト型**ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="fc315-129">After you have connected to the Oracle E-Business Suite, select **Service (Inbound operations)** from the **Select contract type** drop-down list.</span></span>  
   
 4.  <span data-ttu-id="fc315-130">**カテゴリを選択**ボックスで、サービス コントラクトを生成する受信操作を参照します。</span><span class="sxs-lookup"><span data-stu-id="fc315-130">In the **Select a category** box, browse to the inbound operation for which you want to generate the service contract.</span></span> <span data-ttu-id="fc315-131">たとえば、**通知**操作、ルート ノードをクリックして (**/**) を選択**通知**から、**利用可能なカテゴリとoperations**ボックスをクリックして**追加**です。</span><span class="sxs-lookup"><span data-stu-id="fc315-131">For example, for **Notification** operation, click the root node (**/**), select **Notification** from the **Available categories and operations** box, and then click **Add**.</span></span> <span data-ttu-id="fc315-132">受信操作を参照する方法については、次を参照してください。[参照、検索、および Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)です。</span><span class="sxs-lookup"><span data-stu-id="fc315-132">For instructions on how to browse for inbound operations, see [Browse, Search, and Retrieving Metadata for Oracle E-Business Suite Operations](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md).</span></span>  
   

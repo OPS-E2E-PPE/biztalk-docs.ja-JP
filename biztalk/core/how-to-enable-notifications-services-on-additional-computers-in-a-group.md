@@ -1,14 +1,14 @@
 ---
-title: "グループ内の他のコンピューター上の通知サービスを有効にする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: グループ内の他のコンピューター上の通知サービスを有効にする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 571d6b45-b0cc-47f2-bed3-7c6f3e70decc
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969256"
 ---
 # <a name="how-to-enable-notifications-services-on-additional-computers-in-a-group"></a><span data-ttu-id="94334-102">グループ内の別のコンピューターで通知サービスを有効にする方法</span><span class="sxs-lookup"><span data-stu-id="94334-102">How to Enable Notifications Services on Additional Computers In A Group</span></span>
 <span data-ttu-id="94334-103">複数コンピューター環境で BAM を実行するときに、各コンピューターを実行するアクティビティを展開する BAM 管理ユーティリティで Notification Services を有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="94334-103">When running BAM in a multi-computer environment, you must enable Notification Services on each computer on which you will run the BAM Management Utility to deploy an activity.</span></span>  
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="94334-120">コンピューターで別のグループで、をクリックして**開始**、 をポイント**すべてのプログラム**、 をクリックして**Microsoft SQL Server 2005**をクリックして**の構成ツール**、クリックして**Notification Services コマンド プロンプト**です。</span><span class="sxs-lookup"><span data-stu-id="94334-120">On the computer in the additional group, click **Start**, point to **All Programs**, click **Microsoft SQL Server 2005**, click **Configuration Tools**, and then click **Notification Services Command Prompt**.</span></span>  
   
-2.  <span data-ttu-id="94334-121">コマンド プロンプトで次のように入力します。: **nscontrol register 名前\<NS プレフィックス名の構成時に選択\>-サーバー \<ns db sql server\>**です。</span><span class="sxs-lookup"><span data-stu-id="94334-121">At the command prompt, type: **nscontrol register -name \<NS Prefix name chosen at config\> -server \<ns db sql server\>**.</span></span> <span data-ttu-id="94334-122">これにより、Notification Services が適切なデータベースに接続できるようになります。この情報は、nscontrol により、サービス コンピューターのレジストリに格納されます。</span><span class="sxs-lookup"><span data-stu-id="94334-122">This enables Notification Services to log on to the correct database (this information is maintained in the registry of the service machine by nscontrol).</span></span>  
+2.  <span data-ttu-id="94334-121">コマンド プロンプトで次のように入力します。: **nscontrol register 名前\<NS プレフィックス名の構成時に選択\>-サーバー \<ns db sql server\>** です。</span><span class="sxs-lookup"><span data-stu-id="94334-121">At the command prompt, type: **nscontrol register -name \<NS Prefix name chosen at config\> -server \<ns db sql server\>**.</span></span> <span data-ttu-id="94334-122">これにより、Notification Services が適切なデータベースに接続できるようになります。この情報は、nscontrol により、サービス コンピューターのレジストリに格納されます。</span><span class="sxs-lookup"><span data-stu-id="94334-122">This enables Notification Services to log on to the correct database (this information is maintained in the registry of the service machine by nscontrol).</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="94334-123">参照</span><span class="sxs-lookup"><span data-stu-id="94334-123">See Also</span></span>  
  <span data-ttu-id="94334-124">[BAM ランタイムの設定を変更します。](../core/changing-bam-runtime-settings.md) </span><span class="sxs-lookup"><span data-stu-id="94334-124">[Changing BAM Runtime Settings](../core/changing-bam-runtime-settings.md) </span></span>  

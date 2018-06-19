@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して Oracle データベースでの複合操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して Oracle データベースでの複合操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bf47d95e-cdf1-4c9b-a15a-7cf123d0ea6d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962664"
 ---
 # <a name="run-composite-operations-on-oracle-database-using-biztalk-server"></a><span data-ttu-id="377e3-102">BizTalk Server を使用して Oracle データベースでの複合操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="377e3-102">Run Composite Operations on Oracle Database using BizTalk Server</span></span>
 <span data-ttu-id="377e3-103">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]アダプター クライアントが Oracle データベースでの複合操作を実行できるようにします。</span><span class="sxs-lookup"><span data-stu-id="377e3-103">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] enables adapter clients to perform composite operations on Oracle database.</span></span> <span data-ttu-id="377e3-104">複合操作を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="377e3-104">A composite operation can include:</span></span>  
@@ -78,13 +79,13 @@ ms.lasthandoff: 11/28/2017
   
     1.  <span data-ttu-id="377e3-148">ルートを右クリックして**\<スキーマ\>** CompositeSchema.xsd、およびクリック ノード**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="377e3-148">Right-click the root **\<Schema\>** node in the CompositeSchema.xsd, and click **Properties**.</span></span>  
   
-    2.  <span data-ttu-id="377e3-149">**プロパティ**ボックスで、省略記号ボタンをクリックして**([...])**に対して、 **Imports**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="377e3-149">In the **Property** box, click the ellipsis button **(…)** against the **Imports** property.</span></span>  
+    2.  <span data-ttu-id="377e3-149">**プロパティ**ボックスで、省略記号ボタンをクリックして **([...])** に対して、 **Imports**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="377e3-149">In the **Property** box, click the ellipsis button **(…)** against the **Imports** property.</span></span>  
   
          <span data-ttu-id="377e3-150">![スキーマ定義をインポート](../../adapters-and-accelerators/adapter-oracle-database/media/d084d0f0-60b5-4ae8-9e80-7ed2c9e3ecca.gif "d084d0f0-60b5-4ae8-9e80-7ed2c9e3ecca")</span><span class="sxs-lookup"><span data-stu-id="377e3-150">![Import schema definitions](../../adapters-and-accelerators/adapter-oracle-database/media/d084d0f0-60b5-4ae8-9e80-7ed2c9e3ecca.gif "d084d0f0-60b5-4ae8-9e80-7ed2c9e3ecca")</span></span>  
   
     3.  <span data-ttu-id="377e3-151">**Imports** ] ダイアログ ボックスから、**として新しいスキーマのインポート**一覧で、[ **XSD のインポート**、順にクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="377e3-151">In the **Imports** dialog box, from the **Import new schema as** list, select **XSD Import**, and then click **Add**.</span></span>  
   
-    4.  <span data-ttu-id="377e3-152">**BizTalk 型の選択** ダイアログ ボックスで、BizTalk プロジェクト名 ノードを展開し、展開**スキーマ**、し、インポートするスキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="377e3-152">In the **BizTalk Type Picker** dialog box, expand the BizTalk project name node, expand **Schemas**, and then select the schema you want to import.</span></span> <span data-ttu-id="377e3-153">この例では、< BizTalk_project_name > を選択します。OracleDBBinding.xsd です。</span><span class="sxs-lookup"><span data-stu-id="377e3-153">For this example, select <BizTalk_project_name>.OracleDBBinding.xsd.</span></span> <span data-ttu-id="377e3-154">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="377e3-154">Click **OK**.</span></span>  
+    4.  <span data-ttu-id="377e3-152">**BizTalk 型の選択** ダイアログ ボックスで、BizTalk プロジェクト名 ノードを展開し、展開**スキーマ**、し、インポートするスキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="377e3-152">In the **BizTalk Type Picker** dialog box, expand the BizTalk project name node, expand **Schemas**, and then select the schema you want to import.</span></span> <span data-ttu-id="377e3-153">この例では、< BizTalk_project_name > を選択します。OracleDBBinding.xsd です。</span><span class="sxs-lookup"><span data-stu-id="377e3-153">For this example, select <BizTalk_project_name>.OracleDBBinding.xsd.</span></span> <span data-ttu-id="377e3-154">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="377e3-154">Click **OK**.</span></span>  
   
          <span data-ttu-id="377e3-155">< BizTalk_project_name > をインポートするには、この手順を繰り返します。OracleDBBinding2.xsd すぎます。</span><span class="sxs-lookup"><span data-stu-id="377e3-155">Repeat this step to import <BizTalk_project_name>.OracleDBBinding2.xsd too.</span></span>  
   
@@ -95,9 +96,9 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="377e3-164">既定では、**ルート**ノードが新しいスキーマ ファイルにも追加します。</span><span class="sxs-lookup"><span data-stu-id="377e3-164">By default, a **Root** node is also added to a new schema file.</span></span> <span data-ttu-id="377e3-165">名前を変更することができます、**ルート**ノード**要求**です。</span><span class="sxs-lookup"><span data-stu-id="377e3-165">You can rename the **Root** node to **Request**.</span></span> <span data-ttu-id="377e3-166">ノードの名前を変更するノード名を右クリックし、をクリックして**の名前を変更**です。</span><span class="sxs-lookup"><span data-stu-id="377e3-166">To rename a node, right-click the node name and click **Rename**.</span></span>  
   
-     <span data-ttu-id="377e3-167">下のノードを追加する、 **\<スキーマ\>**ノード。</span><span class="sxs-lookup"><span data-stu-id="377e3-167">To add a node under the **\<Schema\>** node:</span></span>  
+     <span data-ttu-id="377e3-167">下のノードを追加する、 **\<スキーマ\>** ノード。</span><span class="sxs-lookup"><span data-stu-id="377e3-167">To add a node under the **\<Schema\>** node:</span></span>  
   
-    1.  <span data-ttu-id="377e3-168">右クリックし、 **\<スキーマ\>**に**スキーマ ノードの挿入**、 をクリック**子レコード**です。</span><span class="sxs-lookup"><span data-stu-id="377e3-168">Right-click the **\<Schema\>** node, point to **Insert Schema Node**, and click **Child Record**.</span></span>  
+    1.  <span data-ttu-id="377e3-168">右クリックし、 **\<スキーマ\>** に**スキーマ ノードの挿入**、 をクリック**子レコード**です。</span><span class="sxs-lookup"><span data-stu-id="377e3-168">Right-click the **\<Schema\>** node, point to **Insert Schema Node**, and click **Child Record**.</span></span>  
   
     2.  <span data-ttu-id="377e3-169">新しいノードの名前を**RequestResponse**です。</span><span class="sxs-lookup"><span data-stu-id="377e3-169">Rename the new node to **RequestResponse**.</span></span>  
   
@@ -118,7 +119,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  <span data-ttu-id="377e3-179">複合操作の一部として実行する操作の要求スキーマに対応するレコードの名前を変更します。</span><span class="sxs-lookup"><span data-stu-id="377e3-179">Rename the record to correspond to a request schema for an operation that you perform as part of the composite operation.</span></span> <span data-ttu-id="377e3-180">たとえば、"Insert"するノードの名前を変更します。</span><span class="sxs-lookup"><span data-stu-id="377e3-180">For example, rename the node to “Insert”.</span></span>  
   
-    3.  <span data-ttu-id="377e3-181">マップ、**挿入**ACCOUNTACTIVITY テーブルに対する挿入操作の要求スキーマのノードです。</span><span class="sxs-lookup"><span data-stu-id="377e3-181">Map the **Insert** node to the request schema for the Insert operation on the ACCOUNTACTIVITY table.</span></span> <span data-ttu-id="377e3-182">これを行うを右クリックし、**挿入** ノードをクリック**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="377e3-182">To do so, right-click the **Insert** node, and click **Properties**.</span></span> <span data-ttu-id="377e3-183">**プロパティ**] ボックスから、 **Data Structure Type**一覧で、[**挿入 (参照)**です。</span><span class="sxs-lookup"><span data-stu-id="377e3-183">In the **Properties** box, from the **Data Structure Type** list, select **Insert (Reference)**.</span></span>  
+    3.  <span data-ttu-id="377e3-181">マップ、**挿入**ACCOUNTACTIVITY テーブルに対する挿入操作の要求スキーマのノードです。</span><span class="sxs-lookup"><span data-stu-id="377e3-181">Map the **Insert** node to the request schema for the Insert operation on the ACCOUNTACTIVITY table.</span></span> <span data-ttu-id="377e3-182">これを行うを右クリックし、**挿入** ノードをクリック**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="377e3-182">To do so, right-click the **Insert** node, and click **Properties**.</span></span> <span data-ttu-id="377e3-183">**プロパティ**] ボックスから、 **Data Structure Type**一覧で、[**挿入 (参照)** です。</span><span class="sxs-lookup"><span data-stu-id="377e3-183">In the **Properties** box, from the **Data Structure Type** list, select **Insert (Reference)**.</span></span>  
   
          <span data-ttu-id="377e3-184">![要求スキーマに子ノードをマップ](../../adapters-and-accelerators/adapter-oracle-database/media/b4ebd3c7-14e5-4c37-abd7-83f0b4db4c9e.gif "b4ebd3c7-14e5-4c37-abd7-83f0b4db4c9e")</span><span class="sxs-lookup"><span data-stu-id="377e3-184">![Map child nodes to request schema](../../adapters-and-accelerators/adapter-oracle-database/media/b4ebd3c7-14e5-4c37-abd7-83f0b4db4c9e.gif "b4ebd3c7-14e5-4c37-abd7-83f0b4db4c9e")</span></span>  
   
@@ -144,7 +145,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  <span data-ttu-id="377e3-200">複合操作の一部として実行する操作の応答スキーマに対応するレコードの名前を変更します。</span><span class="sxs-lookup"><span data-stu-id="377e3-200">Rename the record to correspond to a response schema for an operation that you perform as part of the composite operation.</span></span> <span data-ttu-id="377e3-201">たとえば、"InsertResponse"するノードの名前を変更します。</span><span class="sxs-lookup"><span data-stu-id="377e3-201">For example, rename the node to “InsertResponse”.</span></span>  
   
-    3.  <span data-ttu-id="377e3-202">マップ、 **InsertResponse** ACCOUNTACTIVITY テーブルに対する挿入操作用の応答スキーマにノードです。</span><span class="sxs-lookup"><span data-stu-id="377e3-202">Map the **InsertResponse** node to the response schema for the Insert operation on the ACCOUNTACTIVITY table.</span></span> <span data-ttu-id="377e3-203">これを行うを右クリックし、 **InsertResponse**ノード、およびクリック**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="377e3-203">To do so, right-click the **InsertResponse** node, and click **Properties**.</span></span> <span data-ttu-id="377e3-204">**プロパティ**] ボックスから、 **Data Structure Type**一覧で、[ **InsertResponse (参照)**です。</span><span class="sxs-lookup"><span data-stu-id="377e3-204">In the **Properties** box, from the **Data Structure Type** list, select **InsertResponse (Reference)**.</span></span>  
+    3.  <span data-ttu-id="377e3-202">マップ、 **InsertResponse** ACCOUNTACTIVITY テーブルに対する挿入操作用の応答スキーマにノードです。</span><span class="sxs-lookup"><span data-stu-id="377e3-202">Map the **InsertResponse** node to the response schema for the Insert operation on the ACCOUNTACTIVITY table.</span></span> <span data-ttu-id="377e3-203">これを行うを右クリックし、 **InsertResponse**ノード、およびクリック**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="377e3-203">To do so, right-click the **InsertResponse** node, and click **Properties**.</span></span> <span data-ttu-id="377e3-204">**プロパティ**] ボックスから、 **Data Structure Type**一覧で、[ **InsertResponse (参照)** です。</span><span class="sxs-lookup"><span data-stu-id="377e3-204">In the **Properties** box, from the **Data Structure Type** list, select **InsertResponse (Reference)**.</span></span>  
   
     4.  <span data-ttu-id="377e3-205">GET_ALL_ACTIVITY ストアド プロシージャおよび削除操作の応答スキーマのノードを追加する手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="377e3-205">Repeat these steps to add nodes for the response schemas for the GET_ALL_ACTIVITY stored procedure and the Delete operation.</span></span> <span data-ttu-id="377e3-206">ノード名を指定し、次の表で説明したように、対応するスキーマにマップします。</span><span class="sxs-lookup"><span data-stu-id="377e3-206">Specify the node names and map them to the corresponding schema as mentioned in the following table.</span></span>  
   

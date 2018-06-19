@@ -1,12 +1,12 @@
 ---
-title: "手順 2 - VSTS トークンを作成してエージェントのインストール |Microsoft ドキュメント"
-description: "複製を作成、VSTS セキュリティのアクセス トークン、VSTS プロジェクトを Visual Studio にし、BizTalk Server プロジェクトの展開を自動化するビルド エージェントをインストール"
-ms.custom: 
+title: 手順 2 - VSTS トークンを作成してエージェントのインストール |Microsoft ドキュメント
+description: 複製を作成、VSTS セキュリティのアクセス トークン、VSTS プロジェクトを Visual Studio にし、BizTalk Server プロジェクトの展開を自動化するビルド エージェントをインストール
+ms.custom: ''
 ms.date: 11/20/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
@@ -16,6 +16,7 @@ ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/21/2017
+ms.locfileid: "25497691"
 ---
 # <a name="step-2-create-the-token--install-the-agent"></a><span data-ttu-id="9ede1-103">手順 2: トークンを作成して (&)、エージェントのインストール</span><span class="sxs-lookup"><span data-stu-id="9ede1-103">Step 2: Create the token & install the agent</span></span>
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/21/2017
 
     ![アカウントのセキュリティを開く](../core/media/vsts-account-security.png)
 
-3. <span data-ttu-id="9ede1-125">**個人用アクセス トークン**が自動的に開きます。</span><span class="sxs-lookup"><span data-stu-id="9ede1-125">**Personal access tokens** automatically opens.</span></span> <span data-ttu-id="9ede1-126">既存のエージェントがあれば、選択し、確認**エージェント プール (読み取り、管理)**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="9ede1-126">If you have an existing agent, select it, and confirm **Agent Pools (read, manage)** is selected:</span></span>
+3. <span data-ttu-id="9ede1-125">**個人用アクセス トークン**が自動的に開きます。</span><span class="sxs-lookup"><span data-stu-id="9ede1-125">**Personal access tokens** automatically opens.</span></span> <span data-ttu-id="9ede1-126">既存のエージェントがあれば、選択し、確認**エージェント プール (読み取り、管理)** が選択されています。</span><span class="sxs-lookup"><span data-stu-id="9ede1-126">If you have an existing agent, select it, and confirm **Agent Pools (read, manage)** is selected:</span></span>
 
     ![エージェント プールの読み取りし、管理](../core/media/agent-pools-read-manage.png)
 

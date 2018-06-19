@@ -1,14 +1,14 @@
 ---
-title: "運用環境の BizTalk Server 環境のスケーリング |Microsoft ドキュメント"
-ms.custom: 
+title: 運用環境の BizTalk Server 環境のスケーリング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a972b983-5ec5-4a2a-934f-b2788ccd424e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302954"
 ---
 # <a name="scaling-a-production-biztalk-server-environment"></a><span data-ttu-id="8f35f-102">運用環境の BizTalk Server 環境のスケーリング</span><span class="sxs-lookup"><span data-stu-id="8f35f-102">Scaling a Production BizTalk Server Environment</span></span>
 <span data-ttu-id="8f35f-103">このセクションでは、BizTalk Server ソリューション、ロード テストの結果、および一般的な観測とラボの結果に基づく推奨事項の概要のロード テストの実行に使用されたラボ環境の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="8f35f-103">This section provides an overview of the lab environment that was used to perform load testing of a BizTalk Server solution, a summary of the load test results, and general observations and recommendations based upon the findings in the lab.</span></span>  

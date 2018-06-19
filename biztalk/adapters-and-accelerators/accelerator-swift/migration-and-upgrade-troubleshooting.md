@@ -1,11 +1,11 @@
 ---
-title: "移行とアップグレードのトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: 移行とアップグレードのトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - upgrading, troubleshooting
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - troubleshooting, migrating
 - migrating, troubleshooting
 ms.assetid: 6e6c0ff9-7897-4de6-9e9b-b502b3a1785b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961472"
 ---
 # <a name="migration-and-upgrade-troubleshooting"></a><span data-ttu-id="c7dd2-102">移行とアップグレードのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="c7dd2-102">Migration and Upgrade Troubleshooting</span></span>
 ## <a name="assemblies-need-to-be-undeployed-before-an-upgrade"></a><span data-ttu-id="c7dd2-103">アセンブリは、アップグレードの前に展開解除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c7dd2-103">Assemblies need to be undeployed before an upgrade</span></span>  
@@ -64,7 +65,7 @@ ms.lasthandoff: 01/17/2018
   
  <span data-ttu-id="c7dd2-129">これらのアクセス許可を設定するには、手順に従います。</span><span class="sxs-lookup"><span data-stu-id="c7dd2-129">To set these permissions, proceed as follows:</span></span>  
   
- <span data-ttu-id="c7dd2-130">[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーに移動*%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Service です。</span><span class="sxs-lookup"><span data-stu-id="c7dd2-130">In [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, move to *%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Service.</span></span>  
+ <span data-ttu-id="c7dd2-130">[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーに移動 *%programfiles%* \Microsoft BizTalk Accelerator for SWIFT\Service です。</span><span class="sxs-lookup"><span data-stu-id="c7dd2-130">In [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, move to *%programfiles%* \Microsoft BizTalk Accelerator for SWIFT\Service.</span></span>  
   
 1.  <span data-ttu-id="c7dd2-131">Service フォルダーを右クリックし、をクリックして**プロパティ**、をクリックし、**セキュリティ**タブです。</span><span class="sxs-lookup"><span data-stu-id="c7dd2-131">Right-click the Service folder, click **Properties**, and then click the **Security** tab.</span></span>  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 01/17/2018
   
 5.  <span data-ttu-id="c7dd2-137">グループまたはユーザー名ペインで選択**A4SWIFT ユーザー**です。</span><span class="sxs-lookup"><span data-stu-id="c7dd2-137">In the Group or user names pane, select **A4SWIFT Users**.</span></span> <span data-ttu-id="c7dd2-138">アクセス許可 ウィンドウで、をクリックして**許可**の**読み取りと実行**、**フォルダー内容の一覧**、および**読み取り**です。</span><span class="sxs-lookup"><span data-stu-id="c7dd2-138">In the Permissions pane, click **Allow** for **Read & Execute**, **List Folder Contents**, and **Read**.</span></span>  
   
-6.  <span data-ttu-id="c7dd2-139">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c7dd2-139">Click **OK**.</span></span>  
+6.  <span data-ttu-id="c7dd2-139">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c7dd2-139">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="c7dd2-140">参照</span><span class="sxs-lookup"><span data-stu-id="c7dd2-140">See Also</span></span>  
  [<span data-ttu-id="c7dd2-141">トラブルシューティング: 問題と解決策</span><span class="sxs-lookup"><span data-stu-id="c7dd2-141">Troubleshooting: Issues and Resolutions</span></span>](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)

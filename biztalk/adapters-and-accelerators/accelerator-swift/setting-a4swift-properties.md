@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961032"
 ---
 # <a name="setting-a4swift-properties"></a><span data-ttu-id="0cbf8-102">A4SWIFT のプロパティの設定</span><span class="sxs-lookup"><span data-stu-id="0cbf8-102">Setting A4SWIFT Properties</span></span>
 <span data-ttu-id="0cbf8-103">A4SWIFT のプロパティを設定するドキュメントを参照して、プロファイル Web クライアントにある\<ドライブ\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Samples\CustomMRSRModel です。</span><span class="sxs-lookup"><span data-stu-id="0cbf8-103">To set A4SWIFT Properties, refer to the Profile Web Client Documentation located in \<drive\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Samples\CustomMRSRModel.</span></span>

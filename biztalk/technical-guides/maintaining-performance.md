@@ -1,14 +1,14 @@
 ---
-title: "パフォーマンスを維持する |Microsoft ドキュメント"
-ms.custom: 
+title: パフォーマンスを維持する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ae7e63ed-4e28-45b1-ab00-be9f9488a2e6
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298146"
 ---
 # <a name="maintaining-performance"></a><span data-ttu-id="c3e02-102">パフォーマンスを維持します。</span><span class="sxs-lookup"><span data-stu-id="c3e02-102">Maintaining Performance</span></span>
 <span data-ttu-id="c3e02-103">このセクションでは、定期的なメンテナンスのチェック中に検出されたパフォーマンスの問題を解決できるようにするためのものでは、情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="c3e02-103">This section provides information that is intended to help you resolve performance issues discovered during your routine maintenance checks.</span></span> <span data-ttu-id="c3e02-104">ツールと重大な問題になる前に、潜在的な問題を識別する事前に、ここで説明する手法を使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="c3e02-104">You can also use the tools and techniques described here proactively, to identify potential problems before they become critical issues.</span></span>  

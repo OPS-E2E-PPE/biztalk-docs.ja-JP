@@ -1,18 +1,18 @@
 ---
-title: "SSO を無効にする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SSO を無効にする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - disabling, SSO
 - SSO, disabling
 - managing [SSO], disabling
 ms.assetid: 0fe4f87a-d7c2-4af6-afee-1065bc4a5285
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968856"
 ---
 # <a name="how-to-disable-sso"></a><span data-ttu-id="fc5a0-102">SSO を無効にする方法</span><span class="sxs-lookup"><span data-stu-id="fc5a0-102">How to Disable SSO</span></span>
 <span data-ttu-id="fc5a0-103">MMC スナップインまたはコマンド ラインを使用して、シングル サインオン システムを全面的に無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="fc5a0-103">You can disable the entire Single Sign-On system by using either the MMC Snap-In or the command line.</span></span>  

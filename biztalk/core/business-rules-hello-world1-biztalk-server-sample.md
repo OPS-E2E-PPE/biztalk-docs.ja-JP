@@ -1,17 +1,17 @@
 ---
-title: "Business Rules こんにちは World1 (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: Business Rules こんにちは World1 (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, business rules
 - business rules, examples
 ms.assetid: 0623ad20-96cc-430e-bb36-35431a5d17ee
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967672"
 ---
 # <a name="business-rules-hello-world1-biztalk-server-sample"></a><span data-ttu-id="1b4f2-102">Business Rules こんにちは World1 (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="1b4f2-102">Business Rules Hello World1 (BizTalk Server Sample)</span></span>
 <span data-ttu-id="1b4f2-103">Business Rules Hello World1 サンプルでは、BizTalk ルール セットを作成して、そのルール セットをファイル (SampleRuleSet.xml) に保存し、読み込んでから、サンプルのファクト セットに基づいて実行する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="1b4f2-103">The Business Rules Hello World1 sample demonstrates how to create a BizTalk rule set, save it to a file (SampleRuleSet.xml), load it, and run it based on a sample set of facts.</span></span> <span data-ttu-id="1b4f2-104">サンプルのルール セットには、ルール定義の条件として XML 要素を含む単一のルール、および .NET ベースのオブジェクト (プロパティとメンバ) が含まれます。</span><span class="sxs-lookup"><span data-stu-id="1b4f2-104">The sample rule set contains a simple rule that involves an XML element, and .NET-based objects (properties and members) as terms in rule definition.</span></span>  
@@ -125,7 +126,7 @@ Press any key to finish ...
  <span data-ttu-id="1b4f2-165">オブジェクトの場合、出力行は取得されません、 **MySampleBusinessObject**を持つクラス、 **MyValue**プロパティ、に関連付けられている値と一致する値(構築時)に設定します。**ID**サンプル入力ファイル SampleDocumentInstance.xml 内の要素。</span><span class="sxs-lookup"><span data-stu-id="1b4f2-165">You will not get an output line for any objects of the **MySampleBusinessObject** class that have their **MyValue** property set to a value (during construction) that matches the value associated with the **ID** element in the sample input file SampleDocumentInstance.xml.</span></span>  
   
 ## <a name="comments"></a><span data-ttu-id="1b4f2-166">コメント</span><span class="sxs-lookup"><span data-stu-id="1b4f2-166">Comments</span></span>  
- <span data-ttu-id="1b4f2-167">内にプログラムで作成したルール、 **CreateRuleset()**メソッドに示します。</span><span class="sxs-lookup"><span data-stu-id="1b4f2-167">The rule created programmatically within the **CreateRuleset()** method shows:</span></span>  
+ <span data-ttu-id="1b4f2-167">内にプログラムで作成したルール、 **CreateRuleset()** メソッドに示します。</span><span class="sxs-lookup"><span data-stu-id="1b4f2-167">The rule created programmatically within the **CreateRuleset()** method shows:</span></span>  
   
  <span data-ttu-id="1b4f2-168">**もし**</span><span class="sxs-lookup"><span data-stu-id="1b4f2-168">**IF**</span></span>  
   
@@ -133,7 +134,7 @@ Press any key to finish ...
   
  <span data-ttu-id="1b4f2-170">**そうしたら**</span><span class="sxs-lookup"><span data-stu-id="1b4f2-170">**THEN**</span></span>  
   
- <span data-ttu-id="1b4f2-171">**MySampleBusinessObject.MySampleMethod(int)**整数のパラメータをハードここでは、定数 5 (5) するようにコーディングします。</span><span class="sxs-lookup"><span data-stu-id="1b4f2-171">**MySampleBusinessObject.MySampleMethod(int)** with an integer parameter, hard coded to the constant five (5) in this case.</span></span> <span data-ttu-id="1b4f2-172">このメソッドが始まる出力行を生成する**MySampleBusinessObject Class –-**です。</span><span class="sxs-lookup"><span data-stu-id="1b4f2-172">This method produces the output lines that begin **MySampleBusinessObject Class –-**.</span></span>  
+ <span data-ttu-id="1b4f2-171">**MySampleBusinessObject.MySampleMethod(int)** 整数のパラメータをハードここでは、定数 5 (5) するようにコーディングします。</span><span class="sxs-lookup"><span data-stu-id="1b4f2-171">**MySampleBusinessObject.MySampleMethod(int)** with an integer parameter, hard coded to the constant five (5) in this case.</span></span> <span data-ttu-id="1b4f2-172">このメソッドが始まる出力行を生成する**MySampleBusinessObject Class –-** です。</span><span class="sxs-lookup"><span data-stu-id="1b4f2-172">This method produces the output lines that begin **MySampleBusinessObject Class –-**.</span></span>  
   
  <span data-ttu-id="1b4f2-173">このルールは、次の要因に依存します。</span><span class="sxs-lookup"><span data-stu-id="1b4f2-173">This rule depends on the following:</span></span>  
   

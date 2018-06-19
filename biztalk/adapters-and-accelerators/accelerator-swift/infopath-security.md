@@ -1,17 +1,17 @@
 ---
-title: "InfoPath セキュリティ |Microsoft ドキュメント"
-ms.custom: 
+title: InfoPath セキュリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, InfoPath forms
 - InfoPath forms, security
 ms.assetid: 6ed7b5cc-9801-45a5-8fdb-e5d56dd36435
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209658"
 ---
 # <a name="infopath-security"></a><span data-ttu-id="3b92b-102">InfoPath のセキュリティ</span><span class="sxs-lookup"><span data-stu-id="3b92b-102">InfoPath Security</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="3b92b-103">[!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007 では、XML 署名を使用して、デジタル証明書を使用してフォームにデジタル署名できます。</span><span class="sxs-lookup"><span data-stu-id="3b92b-103"> [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007 uses XML Signatures to let you digitally sign a form using a digital certificate.</span></span> <span data-ttu-id="3b92b-104">XML 署名では、XML ドキュメントに含まれるデータを保護するために使用する XML ベースのデジタル署名用の標準を定義します。</span><span class="sxs-lookup"><span data-stu-id="3b92b-104">XML Signatures defines a standard for XML-based digital signatures that you use to help secure the data contained in XML documents.</span></span> <span data-ttu-id="3b92b-105">XML 署名は、World Wide Web Consortium (W3C) によって管理される標準です。</span><span class="sxs-lookup"><span data-stu-id="3b92b-105">XML Signatures is a standard governed by the World Wide Web Consortium (W3C).</span></span>  

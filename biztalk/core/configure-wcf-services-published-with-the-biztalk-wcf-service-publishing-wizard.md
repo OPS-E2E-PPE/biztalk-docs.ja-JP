@@ -22,6 +22,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "25969632"
 ---
 # <a name="how-to-configure-wcf-services-published-with-the-biztalk-wcf-service-publishing-wizard"></a><span data-ttu-id="00603-102">BizTalk WCF サービス公開ウィザードで公開した WCF サービスを構成する方法</span><span class="sxs-lookup"><span data-stu-id="00603-102">How to Configure WCF Services Published with the BizTalk WCF Service Publishing Wizard</span></span>
 <span data-ttu-id="00603-103">BizTalk WCF サービス公開ウィザードを使用して WCF サービスを公開した後、これらのサービスを適切に構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="00603-103">After publishing WCF services with the BizTalk WCF Service Publishing Wizard, you must configure them properly.</span></span> <span data-ttu-id="00603-104">このトピックでは、公開した WCF サービスを構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="00603-104">This topic describes how to configure the published WCF services.</span></span>  
@@ -73,7 +74,7 @@ ms.lasthandoff: 04/18/2018
   
 12. <span data-ttu-id="00603-145">コマンド プロンプトを開き、BizTalk Server WCF サービス公開ウィザードが %SystemDrive%\InetPub で WCF サービスを作成するフォルダーに移動\\, 、メモ帳を使用して Web.config ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="00603-145">Open a command prompt, go to the folder where the BizTalk Server WCF Service Publishing Wizard created the WCF service in %SystemDrive%\InetPub\\, and then open the Web.config file using Notepad.</span></span>  
   
-13. <span data-ttu-id="00603-146">メモ帳で、内部の次の行を追加、 **\<system.web\>**要素。</span><span class="sxs-lookup"><span data-stu-id="00603-146">In Notepad, add the following line inside the **\<system.web\>** element:</span></span>  
+13. <span data-ttu-id="00603-146">メモ帳で、内部の次の行を追加、 **\<system.web\>** 要素。</span><span class="sxs-lookup"><span data-stu-id="00603-146">In Notepad, add the following line inside the **\<system.web\>** element:</span></span>  
   
     ```  
     <trust level="Full" originUrl="" />  
@@ -94,7 +95,7 @@ ms.lasthandoff: 04/18/2018
   
     1.  <span data-ttu-id="00603-161">メモ帳で、%SystemDrive%\InetPub で BizTalk Server WCF サービス公開ウィザードが WCF サービスを作成するフォルダーの Web.config を開いて\\します。</span><span class="sxs-lookup"><span data-stu-id="00603-161">In Notepad, open Web.config in the folder where the BizTalk Server WCF Service Publishing Wizard created the WCF service in %SystemDrive%\InetPub\\.</span></span>  
   
-    2.  <span data-ttu-id="00603-162">メモ帳で、次のように設定します。、、 **httpGetEnabled**属性、 **\<serviceMetadata\>**要素を次の行として false にします。</span><span class="sxs-lookup"><span data-stu-id="00603-162">In Notepad, set the  the **httpGetEnabled** attribute in the  **\<serviceMetadata\>** element to false as following line:</span></span>  
+    2.  <span data-ttu-id="00603-162">メモ帳で、次のように設定します。、、 **httpGetEnabled**属性、 **\<serviceMetadata\>** 要素を次の行として false にします。</span><span class="sxs-lookup"><span data-stu-id="00603-162">In Notepad, set the  the **httpGetEnabled** attribute in the  **\<serviceMetadata\>** element to false as following line:</span></span>  
   
         ```  
         <serviceMetadata httpGetEnabled="false" httpsGetEnabled="false" />  

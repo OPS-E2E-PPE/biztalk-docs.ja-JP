@@ -1,14 +1,14 @@
 ---
-title: "成果物をアプリケーションに追加する |Microsoft ドキュメント"
-ms.custom: 
+title: 成果物をアプリケーションに追加する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a9b5e92e-2e55-41d7-9959-f62753bbeb04
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295650"
 ---
 # <a name="adding-artifacts-to-an-application"></a><span data-ttu-id="4e87b-102">成果物をアプリケーションに追加します。</span><span class="sxs-lookup"><span data-stu-id="4e87b-102">Adding Artifacts to an Application</span></span>
 <span data-ttu-id="4e87b-103">追加し送信などのアイテムを構成して受信ポート、受信場所、オーケストレーションを管理を使用してコンソールします。</span><span class="sxs-lookup"><span data-stu-id="4e87b-103">You can add and configure artifacts, such as send and receive ports, receive locations, and orchestrations, by using the Administration console.</span></span> <span data-ttu-id="4e87b-104">バインド ファイルを生成し、アプリケーションをインポートする、さまざまな環境ごとに異なるバインドを適用する場合、アプリケーションに追加できます。</span><span class="sxs-lookup"><span data-stu-id="4e87b-104">You can also generate binding files and add them to the application if you want to apply different bindings for the different environments that you will import the application into.</span></span>  

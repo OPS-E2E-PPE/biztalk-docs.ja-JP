@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Adapter Pack での SQL アダプターのメタデータのノード Id |Microsoft ドキュメント"
-description: "メタデータ、検索、取得ノードの種類および SQL Server のアダプターの BizTalk アダプター パック (BAP) で公開されている SQL コンポーネントで使用される Id"
-ms.custom: 
+title: BizTalk Adapter Pack での SQL アダプターのメタデータのノード Id |Microsoft ドキュメント
+description: メタデータ、検索、取得ノードの種類および SQL Server のアダプターの BizTalk アダプター パック (BAP) で公開されている SQL コンポーネントで使用される Id
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8601a328-5380-4577-a121-c926e0fd3140
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967992"
 ---
 # <a name="node-types-and-ids-for-the-sql-server-adapter"></a><span data-ttu-id="4f7ee-103">ノード型と SQL Server のアダプターの Id</span><span class="sxs-lookup"><span data-stu-id="4f7ee-103">Node types and IDs for the SQL Server adapter</span></span>
 

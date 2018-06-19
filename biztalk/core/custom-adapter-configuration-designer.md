@@ -1,14 +1,14 @@
 ---
-title: "カスタム アダプター構成デザイナー |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム アダプター構成デザイナー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d9b231c3-3948-4db8-b4f0-d9c21c31b168
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970376"
 ---
 # <a name="custom-adapter-configuration-designer"></a><span data-ttu-id="fb102-102">カスタム アダプター構成デザイナー</span><span class="sxs-lookup"><span data-stu-id="fb102-102">Custom Adapter Configuration Designer</span></span>
 <span data-ttu-id="fb102-103">.NET クラス ライブラリには、カスタム デザイナーを構築する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fb102-103">You need to build the custom designers into a .NET class library.</span></span> <span data-ttu-id="fb102-104">カスタム デザイナーは、アダプターの DLL に組み込むことも、個別の DLL として構築することもできます。</span><span class="sxs-lookup"><span data-stu-id="fb102-104">You may incorporate them into the DLL for the adapter or build a separate DLL.</span></span> <span data-ttu-id="fb102-105">デザイナー アセンブリを構築した後は、説明やカテゴリと同様に、装飾を介して参照する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fb102-105">After you build a designer assembly, you must reference it through decorations, just like a description or a category.</span></span> <span data-ttu-id="fb102-106">参照は、使用するアセンブリの指定、および完全修飾されたクラス名の指定によって実行します。</span><span class="sxs-lookup"><span data-stu-id="fb102-106">The reference includes a specification of the assembly and a fully qualified class name to use.</span></span>  

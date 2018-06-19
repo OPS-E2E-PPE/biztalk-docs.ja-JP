@@ -1,17 +1,17 @@
 ---
-title: "ExpenseReportSubmission |Microsoft ドキュメント"
-ms.custom: 
+title: ExpenseReportSubmission |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
 - examples, orchestrations
 ms.assetid: d0bacab3-7092-44b8-a1c6-6f574a2db8bd
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969768"
 ---
 # <a name="expensereportsubmission"></a><span data-ttu-id="fb717-102">ExpenseReportSubmission</span><span class="sxs-lookup"><span data-stu-id="fb717-102">ExpenseReportSubmission</span></span>
 <span data-ttu-id="fb717-103">ExpenseReportSubmission サンプルは、Microsoft Excel などのリッチ クライアントのドキュメントを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションに送信する方法を示すものです。</span><span class="sxs-lookup"><span data-stu-id="fb717-103">The ExpenseReportSubmission sample demonstrates how to submit a document to a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration from a rich client such as Microsoft Excel.</span></span>  
@@ -114,7 +115,7 @@ ms.lasthandoff: 11/28/2017
   
     6.  <span data-ttu-id="fb717-171">をクリックして、 **Identity**プロパティ ダイアログ ボックスのタブ ボックスし、このアプリケーション プールのメンバーであるユーザーを実行する id を変更する、 **BizTalk Isolated Host Users**ユーザー グループ。</span><span class="sxs-lookup"><span data-stu-id="fb717-171">Click the **Identity** tab of the properties dialog box and change the identity under which this application pool runs to a user that is a member of the **BizTalk Isolated Host Users** user group.</span></span>  <span data-ttu-id="fb717-172">このユーザーは、ローカルのメンバーでもある必要があります**IIS_WPG**ユーザー グループ。</span><span class="sxs-lookup"><span data-stu-id="fb717-172">This user should also be a member of the local **IIS_WPG** user group.</span></span>  
   
-    7.  <span data-ttu-id="fb717-173">この SDK サンプルの仮想ディレクトリを、新しいアプリケーション プールで実行するよう構成します。</span><span class="sxs-lookup"><span data-stu-id="fb717-173">Configure the virtual directory for this SDK sample to run under the new application pool.</span></span> <span data-ttu-id="fb717-174">**アプリケーション プール:**設定は、**仮想ディレクトリ**仮想ディレクトリのプロパティ ダイアログ ボックスのタブです。</span><span class="sxs-lookup"><span data-stu-id="fb717-174">The **Application pool:** setting is available on the **Virtual Directory** tab of the Virtual Directory properties dialog box.</span></span> <span data-ttu-id="fb717-175">このサンプルは、用に作成された仮想ディレクトリ**ExpenseReportSubmission**です。</span><span class="sxs-lookup"><span data-stu-id="fb717-175">The virtual directory created for this sample is **ExpenseReportSubmission**.</span></span>  
+    7.  <span data-ttu-id="fb717-173">この SDK サンプルの仮想ディレクトリを、新しいアプリケーション プールで実行するよう構成します。</span><span class="sxs-lookup"><span data-stu-id="fb717-173">Configure the virtual directory for this SDK sample to run under the new application pool.</span></span> <span data-ttu-id="fb717-174">**アプリケーション プール:** 設定は、**仮想ディレクトリ**仮想ディレクトリのプロパティ ダイアログ ボックスのタブです。</span><span class="sxs-lookup"><span data-stu-id="fb717-174">The **Application pool:** setting is available on the **Virtual Directory** tab of the Virtual Directory properties dialog box.</span></span> <span data-ttu-id="fb717-175">このサンプルは、用に作成された仮想ディレクトリ**ExpenseReportSubmission**です。</span><span class="sxs-lookup"><span data-stu-id="fb717-175">The virtual directory created for this sample is **ExpenseReportSubmission**.</span></span>  
   
 4.  <span data-ttu-id="fb717-176">IIS の Web サービス拡張を HTTPReceive.dll 用に追加します。</span><span class="sxs-lookup"><span data-stu-id="fb717-176">Add a web service extension to IIS for HTTPReceive.dll</span></span>  
   
@@ -126,7 +127,7 @@ ms.lasthandoff: 11/28/2017
   
     4.  <span data-ttu-id="fb717-180">をクリックして**追加**を表示する、 **Add file**  ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="fb717-180">Click **Add** to display the **Add file** dialog box.</span></span>  
   
-    5.  <span data-ttu-id="fb717-181">をクリックして**参照**を表示する、**開く** ダイアログ ボックスに移動して *\<BizTalk Server のインストール フォルダー\>*\HttpReceive\BTSHTTPReceive.dll をクリック**開く**、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="fb717-181">Click **Browse** to display the **Open** dialog box and navigate to *\<BizTalk Server Installation folder\>*\HttpReceive\BTSHTTPReceive.dll and click **Open**, then click **OK**.</span></span>  
+    5.  <span data-ttu-id="fb717-181">をクリックして**参照**を表示する、**開く** ダイアログ ボックスに移動して *\<BizTalk Server のインストール フォルダー\>* \HttpReceive\BTSHTTPReceive.dll をクリック**開く**、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="fb717-181">Click **Browse** to display the **Open** dialog box and navigate to *\<BizTalk Server Installation folder\>* \HttpReceive\BTSHTTPReceive.dll and click **Open**, then click **OK**.</span></span>  
   
     6.  <span data-ttu-id="fb717-182">ためのオプションを有効にする**拡張機能の状態を許可 に設定** をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="fb717-182">Enable the option to **Set extension status to Allowed** and click **OK**.</span></span>  
   

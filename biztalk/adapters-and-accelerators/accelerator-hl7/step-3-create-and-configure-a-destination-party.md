@@ -1,14 +1,14 @@
 ---
-title: "手順 3: を作成し、送信先パーティの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: を作成し、送信先パーティの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8746f115-9f69-4593-9943-9ccda45cd900
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961344"
 ---
 # <a name="step-3-create-and-configure-a-destination-party"></a><span data-ttu-id="c673b-102">手順 3: を作成し、送信先パーティを構成します。</span><span class="sxs-lookup"><span data-stu-id="c673b-102">Step 3: Create and Configure a Destination Party</span></span>
 <span data-ttu-id="c673b-103">このステップでは、作成し、バッチの作成シナリオでは、送信先パーティを構成します。</span><span class="sxs-lookup"><span data-stu-id="c673b-103">In this step, you create and configure a destination party for the Create-Batch scenario.</span></span> <span data-ttu-id="c673b-104">選択することも、メッセージを[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]バッチとバッチのスケジュールは、そのパーティ用に定義されています。</span><span class="sxs-lookup"><span data-stu-id="c673b-104">You also select the messages that [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] batches and the batch schedules, as defined for that party.</span></span> <span data-ttu-id="c673b-105">フォルダーにファイルをコピーした後で 1 時間に 1 つのバッチ送信時間をスケジュールするとします。</span><span class="sxs-lookup"><span data-stu-id="c673b-105">You schedule the batch send time as one hour after copying the files into the folder.</span></span> [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="c673b-106">その後 1 時間の頻度での受信メッセージをバッチ処理します。</span><span class="sxs-lookup"><span data-stu-id="c673b-106"> batches any messages received thereafter with a frequency of one hour.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "インターフェイス テーブル、インターフェイス ビュー、テーブル、および LOB データを含むビューでの操作 |Microsoft ドキュメント"
-ms.custom: 
+title: インターフェイス テーブル、インターフェイス ビュー、テーブル、および LOB データを含むビューでの操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0f6e8db6-ba68-4e3f-84b2-1cc31ce89bcb
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964704"
 ---
 # <a name="operations-on-interface-tables-interface-views-tables-and-views-that-contain-lob-data"></a><span data-ttu-id="248ab-102">インターフェイス テーブル、インターフェイス ビュー、テーブル、および LOB データを含むビューでの操作</span><span class="sxs-lookup"><span data-stu-id="248ab-102">Operations on Interface Tables, Interface Views, Tables, and Views That Contain LOB Data</span></span>
 <span data-ttu-id="248ab-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] Oracle ラージ オブジェクト (LOB) データ型のサポートを提供します。</span><span class="sxs-lookup"><span data-stu-id="248ab-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] provides support for the Oracle large object (LOB) data types:</span></span>  

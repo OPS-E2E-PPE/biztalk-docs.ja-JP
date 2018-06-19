@@ -1,14 +1,14 @@
 ---
-title: "BizTalk メッセージ本文の要素が指定されていない |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk メッセージ本文の要素が指定されていない |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: af5d63c0-af96-4e34-828f-d29638cdf46d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964120"
 ---
 # <a name="biztalk-message-body-element-not-specified"></a><span data-ttu-id="7ed77-102">BizTalk メッセージ本文要素が指定されていません</span><span class="sxs-lookup"><span data-stu-id="7ed77-102">BizTalk message body element not specified</span></span>
 ## <a name="details"></a><span data-ttu-id="7ed77-103">詳細</span><span class="sxs-lookup"><span data-stu-id="7ed77-103">Details</span></span>  

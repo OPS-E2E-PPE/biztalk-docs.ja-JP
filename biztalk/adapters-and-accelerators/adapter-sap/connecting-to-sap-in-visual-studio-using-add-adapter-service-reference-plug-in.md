@@ -1,14 +1,14 @@
 ---
-title: "アダプター サービス参照のプラグインを追加する Visual Studio を使用して SAP への接続 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター サービス参照のプラグインを追加する Visual Studio を使用して SAP への接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 05116c2f-08a4-495b-a031-d377e7ca33e0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964168"
 ---
 # <a name="connecting-to-sap-in-visual-studio-using-add-adapter-service-reference-plug-in"></a><span data-ttu-id="5c045-102">アダプター サービス参照のプラグインを追加する Visual Studio を使用して SAP への接続</span><span class="sxs-lookup"><span data-stu-id="5c045-102">Connecting to SAP in Visual Studio Using Add Adapter Service Reference Plug-in</span></span>
 <span data-ttu-id="5c045-103">使用して SAP システムへの接続に、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] .NET プログラミング ソリューションで使用する必要があります、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="5c045-103">To connect to an SAP system using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] in a .NET programming solution, you must use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)].</span></span> <span data-ttu-id="5c045-104">このトピックでは、使用する方法の説明、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="5c045-104">This topic provides instructions on how to use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
@@ -56,9 +57,9 @@ ms.lasthandoff: 11/28/2017
     >   
     >  <span data-ttu-id="5c045-127">**SncPartnerName**通信パートナーの SNC 名を取得するプロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="5c045-127">The **SncPartnerName** binding property takes the SNC name of the communication partner.</span></span>  
   
-6.  <span data-ttu-id="5c045-128">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5c045-128">Click **OK**.</span></span>  
+6.  <span data-ttu-id="5c045-128">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5c045-128">Click **OK**.</span></span>  
   
-7.  <span data-ttu-id="5c045-129">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5c045-129">Click **Connect**.</span></span> <span data-ttu-id="5c045-130">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="5c045-130">After the connection is established, the connection status is shown as **Connected**.</span></span>  
+7.  <span data-ttu-id="5c045-129">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5c045-129">Click **Connect**.</span></span> <span data-ttu-id="5c045-130">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="5c045-130">After the connection is established, the connection status is shown as **Connected**.</span></span>  
   
      <span data-ttu-id="5c045-131">次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。</span><span class="sxs-lookup"><span data-stu-id="5c045-131">The following figure shows the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] immediately after the connection is established.</span></span> <span data-ttu-id="5c045-132">グラフィカル ユーザー インターフェイスが同じ、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="5c045-132">The graphical user interface is same for the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
   

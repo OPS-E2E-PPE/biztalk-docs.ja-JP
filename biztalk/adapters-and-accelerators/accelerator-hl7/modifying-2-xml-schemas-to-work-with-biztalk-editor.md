@@ -1,17 +1,17 @@
 ---
-title: "BizTalk エディターで作業する 2. XML スキーマを変更する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk エディターで作業する 2. XML スキーマを変更する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - 2.XML schemas, modifying
 - modifying, 2.XML schemas
 ms.assetid: 07316826-84b6-494e-81b9-f64a3d46ffb0
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206106"
 ---
 # <a name="modifying-2xml-schemas-to-work-with-biztalk-editor"></a><span data-ttu-id="70ccb-102">BizTalk エディターを使用する 2. XML スキーマを変更します。</span><span class="sxs-lookup"><span data-stu-id="70ccb-102">Modifying 2.XML Schemas to Work with BizTalk Editor</span></span>
 <span data-ttu-id="70ccb-103">HL7 2. XML スキーマで適切に機能を変更する必要[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)])。</span><span class="sxs-lookup"><span data-stu-id="70ccb-103">HL7 2.XML schemas require modification to work properly with [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]).</span></span> <span data-ttu-id="70ccb-104">次に、HL7 V2 を変更する方法について説明します。有効にして、BizTalk エディターを使用する XML スキーマです。</span><span class="sxs-lookup"><span data-stu-id="70ccb-104">The following describes how to modify HL7 V2.XML schemas to enable you to use them with BizTalk Editor.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 >  <span data-ttu-id="70ccb-105">Update2XMLSchema ツールでは、自動的にこれらの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="70ccb-105">The Update2XMLSchema tool performs these steps automatically.</span></span> <span data-ttu-id="70ccb-106">参照してください[Update2XMLSchema ツール](../../adapters-and-accelerators/accelerator-hl7/update2xmlschema-tool.md)詳細についてはします。</span><span class="sxs-lookup"><span data-stu-id="70ccb-106">See [Update2XMLSchema Tool](../../adapters-and-accelerators/accelerator-hl7/update2xmlschema-tool.md) for more information.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="70ccb-107">**Nillable**属性が要素上のスキーマで発生することができます。</span><span class="sxs-lookup"><span data-stu-id="70ccb-107">The **nillable** attribute can occur in a schema on an element.</span></span> <span data-ttu-id="70ccb-108">場合設定**true**、親要素のインスタンスを持つことができることを示します、 **xsi:nil ="true"**属性。</span><span class="sxs-lookup"><span data-stu-id="70ccb-108">If set to **true**, it indicates that the instance of the parent element can have an **xsi:nil="true"** attribute.</span></span> [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="70ccb-109">コンパイル時と解析とシリアル化中には、この属性を無視します。</span><span class="sxs-lookup"><span data-stu-id="70ccb-109"> ignores this attribute during compilation and during parsing/serialization.</span></span>  
+>  <span data-ttu-id="70ccb-107">**Nillable**属性が要素上のスキーマで発生することができます。</span><span class="sxs-lookup"><span data-stu-id="70ccb-107">The **nillable** attribute can occur in a schema on an element.</span></span> <span data-ttu-id="70ccb-108">場合設定**true**、親要素のインスタンスを持つことができることを示します、 **xsi:nil ="true"** 属性。</span><span class="sxs-lookup"><span data-stu-id="70ccb-108">If set to **true**, it indicates that the instance of the parent element can have an **xsi:nil="true"** attribute.</span></span> [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="70ccb-109">コンパイル時と解析とシリアル化中には、この属性を無視します。</span><span class="sxs-lookup"><span data-stu-id="70ccb-109"> ignores this attribute during compilation and during parsing/serialization.</span></span>  
   
 ### <a name="to-modify-2xml-schemas"></a><span data-ttu-id="70ccb-110">2. XML スキーマを変更するには</span><span class="sxs-lookup"><span data-stu-id="70ccb-110">To modify 2.XML schemas</span></span>  
   
@@ -113,7 +114,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="70ccb-128">プロパティまで下にスクロール プロパティ ウィンドウで、 **root_reference**、し、ドロップダウン リストから、同じスキーマ名のプロパティをクリックします。</span><span class="sxs-lookup"><span data-stu-id="70ccb-128">In the Properties pane, scroll down to the property **root_reference**, and from the drop-down list, click the property with the same schema name.</span></span>  
   
-3.  <span data-ttu-id="70ccb-129">**[ファイル]** メニューの **[すべてを保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="70ccb-129">On the **File** menu, click **Save All**.</span></span>  
+3.  <span data-ttu-id="70ccb-129">**[ファイル]** メニューの **[すべてを保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="70ccb-129">On the **File** menu, click **Save All**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="70ccb-130">参照</span><span class="sxs-lookup"><span data-stu-id="70ccb-130">See Also</span></span>  
  [<span data-ttu-id="70ccb-131">HL7 2. XML スキーマを使用します。</span><span class="sxs-lookup"><span data-stu-id="70ccb-131">Using HL7 2.XML Schemas</span></span>](../../adapters-and-accelerators/accelerator-hl7/using-hl7-2-xml-schemas.md)

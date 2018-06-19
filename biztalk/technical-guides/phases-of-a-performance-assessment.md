@@ -1,14 +1,14 @@
 ---
-title: "パフォーマンス評価の段階 |Microsoft ドキュメント"
-ms.custom: 
+title: パフォーマンス評価の段階 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 120706f9-9fa1-4f41-bd89-3b9eada940ad
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22301890"
 ---
 # <a name="phases-of-a-performance-assessment"></a><span data-ttu-id="e8b38-102">パフォーマンス評価の段階</span><span class="sxs-lookup"><span data-stu-id="e8b38-102">Phases of a Performance Assessment</span></span>
 <span data-ttu-id="e8b38-103">主な目標の 1 つ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]できるだけ多くの処理シナリオに対応するために最大限の柔軟性を提供することです。</span><span class="sxs-lookup"><span data-stu-id="e8b38-103">One of the primary goals of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is to provide maximum flexibility for accommodating as many processing scenarios as possible.</span></span> <span data-ttu-id="e8b38-104">この柔軟のための機能を最大限に使用で利用できるようにする方法を決定する主に、BizTalk ソリューションの開発者が直面する課題の 1 つは[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ビジネス ニーズに対応します。</span><span class="sxs-lookup"><span data-stu-id="e8b38-104">Because of this great flexibility, one of the primary challenges facing developers of a BizTalk solution is to determine how to make best use of the features available in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to meet their business needs.</span></span> <span data-ttu-id="e8b38-105">このような柔軟性は、BizTalk Server ソリューションのパフォーマンスを最適化するときにもという課題を伴います。</span><span class="sxs-lookup"><span data-stu-id="e8b38-105">This flexibility also poses a challenge when optimizing the performance of a BizTalk Server solution.</span></span>  

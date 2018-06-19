@@ -1,11 +1,11 @@
 ---
-title: "バックアップ方法、BAM 分析および Tracking Analysis Server データベース |Microsoft ドキュメント"
-ms.custom: 
+title: バックアップ方法、BAM 分析および Tracking Analysis Server データベース |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, DTS packages
@@ -25,7 +25,7 @@ helpviewer_keywords:
 - Tracking Analysis Server database [BAM], backing up
 - Star Schema database [BAM], backing up
 ms.assetid: d39e3491-ab54-44f2-990a-7b8ee86f0501
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -34,6 +34,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970272"
 ---
 # <a name="how-to-back-up-the-bam-analysis-and-tracking-analysis-server-databases"></a><span data-ttu-id="cc7b7-102">BAM 分析データベースおよび Tracking Analysis Server データベースをバックアップする方法</span><span class="sxs-lookup"><span data-stu-id="cc7b7-102">How to Back Up the BAM Analysis and Tracking Analysis Server Databases</span></span>
 <span data-ttu-id="cc7b7-103">ビジネス アクティビティ監視 (BAM) 分析データベースおよび Tracking Analysis Server データベースには、SQL Server Analysis Services キューブの内容が格納されます。</span><span class="sxs-lookup"><span data-stu-id="cc7b7-103">The Business Activity Monitoring (BAM) Analysis database and the Tracking Analysis Server database store content in SQL Server Analysis Services cubes.</span></span> <span data-ttu-id="cc7b7-104">BizTalk Server のバックアップ ジョブでは、これらのデータベースはバックアップされません。</span><span class="sxs-lookup"><span data-stu-id="cc7b7-104">The Backup BizTalk Server job does not back up these databases.</span></span> <span data-ttu-id="cc7b7-105">これらのデータベースをバックアップするには、SQL Server 分析マネージャを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cc7b7-105">Instead, to backup these databases, you must use SQL Server Analysis Manager.</span></span>  

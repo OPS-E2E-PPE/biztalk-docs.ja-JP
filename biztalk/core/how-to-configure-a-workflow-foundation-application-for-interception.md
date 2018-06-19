@@ -1,14 +1,14 @@
 ---
-title: "傍受のため、Workflow Foundation アプリケーションを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 傍受のため、Workflow Foundation アプリケーションを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9c82e83f-9dbd-4325-9f30-778eba892296
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970048"
 ---
 # <a name="how-to-configure-a-workflow-foundation-application-for-interception"></a><span data-ttu-id="f820c-102">傍受のために Workflow Foundation アプリケーションを構成する方法</span><span class="sxs-lookup"><span data-stu-id="f820c-102">How to Configure a Workflow Foundation Application for Interception</span></span>
 <span data-ttu-id="f820c-103">BAM アクティビティ データの収集を開始するには、まず、BAM インターセプター ソフトウェアをインストールし、[!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)] インターセプターを使用するようにアプリケーションを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f820c-103">You must install the BAM interceptor software and configure your application to use the [!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)] interceptor service before you can begin collecting BAM activity data.</span></span> <span data-ttu-id="f820c-104">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] およびその依存関係がインストールされ、BizTalk グループが少なくとも 1 つ作成されていることを前提とします。</span><span class="sxs-lookup"><span data-stu-id="f820c-104">It is assumed that you have successfully installed [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and its dependencies and have created at least one BizTalk group.</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="f820c-118">をクリックして**開始** をクリックし、**実行**Windows コマンド プロンプトを開きます。</span><span class="sxs-lookup"><span data-stu-id="f820c-118">Click **Start** and then click **Run** to open the Windows command prompt.</span></span>  
   
-2.  <span data-ttu-id="f820c-119">型**cmd**で、**開く**フィールドをクリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="f820c-119">Type **cmd** in the **Open** field, and then click **OK**.</span></span>  
+2.  <span data-ttu-id="f820c-119">型**cmd**で、**開く**フィールドをクリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="f820c-119">Type **cmd** in the **Open** field, and then click **OK**.</span></span>  
   
 3.  <span data-ttu-id="f820c-120">ディレクトリ変更のコマンドを使用して、展開する監視モデルが格納されているディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="f820c-120">Use the change directory command to move to the directory containing the observation model to deploy.</span></span> <span data-ttu-id="f820c-121">たとえば、 **cd c:\businessprocess\Orders**です。</span><span class="sxs-lookup"><span data-stu-id="f820c-121">For example, **cd c:\businessprocess\Orders**.</span></span>  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="f820c-131">をクリックして**開始** をクリックし、**実行**Windows コマンド プロンプトを開きます。</span><span class="sxs-lookup"><span data-stu-id="f820c-131">Click **Start** and then click **Run** to open the Windows command prompt.</span></span>  
   
-2.  <span data-ttu-id="f820c-132">型**cmd**で、**開く**フィールドをクリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="f820c-132">Type **cmd** in the **Open** field, and then click **OK**.</span></span>  
+2.  <span data-ttu-id="f820c-132">型**cmd**で、**開く**フィールドをクリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="f820c-132">Type **cmd** in the **Open** field, and then click **OK**.</span></span>  
   
 3.  <span data-ttu-id="f820c-133">ディレクトリ変更のコマンドを使用して、展開するインターセプター構成ファイルが格納されているディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="f820c-133">Use the change directory command to move to the directory containing the interceptor configuration file to deploy.</span></span> <span data-ttu-id="f820c-134">たとえば、 **cd c:\businessprocess\Orders**です。</span><span class="sxs-lookup"><span data-stu-id="f820c-134">For example, **cd c:\businessprocess\Orders**.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルを使用して SQL Server のスカラー関数を呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して SQL Server のスカラー関数を呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a331e275-3c81-41a8-9ba1-3a801ebc259a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964248"
 ---
 # <a name="invoke-scalar-functions-in-sql-server-by-using-the-wcf-service-model"></a><span data-ttu-id="c9774-102">WCF サービス モデルを使用して SQL Server のスカラー関数を呼び出す</span><span class="sxs-lookup"><span data-stu-id="c9774-102">Invoke Scalar Functions in SQL Server by Using the WCF Service Model</span></span>
 <span data-ttu-id="c9774-103">使用することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server のスカラー関数を呼び出す、WCF サービス モデルを使用して .NET アプリケーションでします。</span><span class="sxs-lookup"><span data-stu-id="c9774-103">You can use the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] in a .NET application using the WCF service model to invoke scalar functions in SQL Server.</span></span> <span data-ttu-id="c9774-104">アダプターは、SQL サーバー上で直接呼び出すことのできるメソッドとして、スカラー関数を公開します。</span><span class="sxs-lookup"><span data-stu-id="c9774-104">The adapter exposes the scalar functions as methods that can be invoked directly on SQL Server.</span></span> <span data-ttu-id="c9774-105">アダプターがスカラー関数をサポートする方法の詳細については、次を参照してください。[実行スカラー関数は、SQL アダプターを使用して SQL Server](../../adapters-and-accelerators/adapter-sql/execute-scalar-functions-in-sql-server-using-the-sql-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="c9774-105">For more information about how the adapter supports scalar functions, see [Execute Scalar Functions in SQL Server using the SQL adapter](../../adapters-and-accelerators/adapter-sql/execute-scalar-functions-in-sql-server-using-the-sql-adapter.md).</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/28/2017
   
 |<span data-ttu-id="c9774-126">操作</span><span class="sxs-lookup"><span data-stu-id="c9774-126">Operation</span></span>|<span data-ttu-id="c9774-127">メソッド シグネチャ</span><span class="sxs-lookup"><span data-stu-id="c9774-127">Method Signature</span></span>|  
 |---------------|----------------------|  
-|<span data-ttu-id="c9774-128">スカラー関数の名前</span><span class="sxs-lookup"><span data-stu-id="c9774-128">Scalar function name</span></span>|<span data-ttu-id="c9774-129">パブリック*< return_type >**< scalar_function_name >*(param1、param2、...)</span><span class="sxs-lookup"><span data-stu-id="c9774-129">public *<return_type>**<scalar_function_name>*(param1, param2, …)</span></span>|  
+|<span data-ttu-id="c9774-128">スカラー関数の名前</span><span class="sxs-lookup"><span data-stu-id="c9774-128">Scalar function name</span></span>|<span data-ttu-id="c9774-129">パブリック *< return_type >**< scalar_function_name >*(param1、param2、...)</span><span class="sxs-lookup"><span data-stu-id="c9774-129">public *<return_type>**<scalar_function_name>*(param1, param2, …)</span></span>|  
   
  <span data-ttu-id="c9774-130">\<*retrun_type* \>関数定義で定義されている戻り値の型を =</span><span class="sxs-lookup"><span data-stu-id="c9774-130">\<*retrun_type*\> = Return type defined in the function definition</span></span>  
   

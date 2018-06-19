@@ -1,11 +1,11 @@
 ---
-title: "WCF チャネル モデルを使用して Oracle データベース内の関数を呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: WCF チャネル モデルを使用して Oracle データベース内の関数を呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - channel programming, executing a function
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - how to, execute a function using a channel
 - executing a function, using a channel
 ms.assetid: 6c15c352-3086-44f6-b265-4c7a7aee47ff
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961752"
 ---
 # <a name="invoke-a-function-in-oracle-database-using-the-wcf-channel-model"></a><span data-ttu-id="d064b-102">WCF チャネル モデルを使用して Oracle データベース内の関数を呼び出す</span><span class="sxs-lookup"><span data-stu-id="d064b-102">Invoke a Function in Oracle Database using the WCF Channel Model</span></span>
 <span data-ttu-id="d064b-103">このセクションでは、関数で作成されたチャネルを使用して Oracle データベースで実行する方法を示します[Oracle データベースを使用して、チャネルの作成](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)です。</span><span class="sxs-lookup"><span data-stu-id="d064b-103">This section demonstrates how to execute a function in an Oracle database using the channel created in [Create a Channel using Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md).</span></span>  

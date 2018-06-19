@@ -1,14 +1,14 @@
 ---
-title: "データベースのパフォーマンスの最適化 |Microsoft ドキュメント"
-ms.custom: 
+title: データベースのパフォーマンスの最適化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a95caf60-f1f5-458f-8a81-0aead88f07be
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298730"
 ---
 # <a name="optimizing-database-performance"></a><span data-ttu-id="c4a21-102">データベースのパフォーマンスを最適化します。</span><span class="sxs-lookup"><span data-stu-id="c4a21-102">Optimizing Database Performance</span></span>
 <span data-ttu-id="c4a21-103">BizTalk Server は、SQL Server で最大 13 個のデータベースの作成を必要とするデータベースを非常に大量に消費するアプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="c4a21-103">BizTalk Server is an extremely database-intensive application that may require the creation of up to 13 databases in SQL Server.</span></span> <span data-ttu-id="c4a21-104">をメッセージが失われないことを確認するには BizTalk Server の主な設計目標の 1 つあるため、BizTalk Server は優れた頻度でデータをディスクが引き続き発生して、さらに、MSDTC トランザクションのコンテキスト内で処理が実行します。</span><span class="sxs-lookup"><span data-stu-id="c4a21-104">Because one of the primary design goals of BizTalk Server is to ensure that no messages are lost, BizTalk Server persists data to disk with great frequency and furthermore, does so within the context of an MSDTC transaction.</span></span> <span data-ttu-id="c4a21-105">そのため、データベースのパフォーマンスは、BizTalk Server ソリューションの全体的なパフォーマンスが非常に重要です。</span><span class="sxs-lookup"><span data-stu-id="c4a21-105">Therefore, database performance is paramount to the overall performance of any BizTalk Server solution.</span></span>  

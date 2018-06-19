@@ -1,18 +1,18 @@
 ---
-title: "アダプター ハンドラーを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター ハンドラーを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, handlers [adapters]
 - handlers [adapters], creating
 - adapters, handlers
 ms.assetid: 09569417-dce6-473d-891f-6fd12347bcf0
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969864"
 ---
 # <a name="how-to-create-an-adapter-handler"></a><span data-ttu-id="3b319-102">アダプター ハンドラーを作成する方法</span><span class="sxs-lookup"><span data-stu-id="3b319-102">How to Create an Adapter Handler</span></span>
 <span data-ttu-id="3b319-103">BizTalk Server 管理コンソールを使用して、送信または受信のアダプター ハンドラーを作成できます。</span><span class="sxs-lookup"><span data-stu-id="3b319-103">You can create a send or receive adapter handler by using the BizTalk Server Administration Console.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="3b319-109">アダプターの送信ハンドラーを作成する場合は、するオプションを選択**しやすいように、既定のハンドラー**このアダプターの既定の送信ハンドラーであるこの必要なかどうかです。</span><span class="sxs-lookup"><span data-stu-id="3b319-109">If you are creating an adapter send handler, select the option to **Make this the default handler** if you would like for this to be the default send handler for this adapter.</span></span>  
   
-5.  <span data-ttu-id="3b319-110">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3b319-110">Click **OK**.</span></span>  
+5.  <span data-ttu-id="3b319-110">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3b319-110">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="3b319-111">参照</span><span class="sxs-lookup"><span data-stu-id="3b319-111">See Also</span></span>  
  [<span data-ttu-id="3b319-112">アダプター ハンドラーの作成と削除</span><span class="sxs-lookup"><span data-stu-id="3b319-112">Creating and Deleting Adapter Handlers</span></span>](../core/creating-and-deleting-adapter-handlers.md)

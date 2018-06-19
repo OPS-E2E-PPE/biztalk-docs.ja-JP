@@ -1,14 +1,14 @@
 ---
-title: "FRR NAK ハンドラーのサンプルを実装する |Microsoft ドキュメント"
-ms.custom: 
+title: FRR NAK ハンドラーのサンプルを実装する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80fa5fb7-6864-4923-b641-e76d2b95d923
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961552"
 ---
 # <a name="implementing-the-frr-nak-handler-sample"></a><span data-ttu-id="591e3-102">FRR NAK ハンドラーのサンプルを実装します。</span><span class="sxs-lookup"><span data-stu-id="591e3-102">Implementing the FRR NAK Handler Sample</span></span>
 <span data-ttu-id="591e3-103">サンプル FRR NAK カスタム ハンドラーを実装して、サンプル プロジェクトをソリューションに追加、ビルドし、プロジェクトを配置、バインドし、オーケストレーションを開始および停止し、再開する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="591e3-103">To implement the sample FRR NAK custom handler, add the sample project to your solution, build and deploy the project, bind and start the orchestration, and then stop and restart [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].</span></span>  
@@ -39,4 +40,4 @@ ms.lasthandoff: 01/17/2018
   
 8.  <span data-ttu-id="591e3-114">**スタート**ダイアログ ボックスで、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="591e3-114">In the **Express Start** dialog box, click **OK**.</span></span>  
   
-9. <span data-ttu-id="591e3-115">**[スタート]**ボタンをクリックし、 **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="591e3-115">Click **Start**, and then click **Run**.</span></span> <span data-ttu-id="591e3-116">入力**services.msc**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="591e3-116">Enter **services.msc**, and then click **OK**.</span></span> <span data-ttu-id="591e3-117">右クリック**BizTalk サービス**、クリックして**再起動**です。</span><span class="sxs-lookup"><span data-stu-id="591e3-117">Right-click **BizTalk Service**, and then click **Restart**.</span></span>
+9. <span data-ttu-id="591e3-115">**[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="591e3-115">Click **Start**, and then click **Run**.</span></span> <span data-ttu-id="591e3-116">入力**services.msc**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="591e3-116">Enter **services.msc**, and then click **OK**.</span></span> <span data-ttu-id="591e3-117">右クリック**BizTalk サービス**、クリックして**再起動**です。</span><span class="sxs-lookup"><span data-stu-id="591e3-117">Right-click **BizTalk Service**, and then click **Restart**.</span></span>

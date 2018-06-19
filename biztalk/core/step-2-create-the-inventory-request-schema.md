@@ -1,14 +1,14 @@
 ---
-title: "手順 2: 在庫要求スキーマの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: 在庫要求スキーマの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0fa9ad9f-b815-4baf-8299-556869b8dde7
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014289"
 ---
 # <a name="step-2-create-the-inventory-request-schema"></a><span data-ttu-id="1c94c-102">ステップ 2: 在庫要求スキーマの作成</span><span class="sxs-lookup"><span data-stu-id="1c94c-102">Step 2: Create the Inventory Request Schema</span></span>
 <span data-ttu-id="1c94c-103">![手順 5 の 2](../core/media/step-2of5.gif "Step_2of5")</span><span class="sxs-lookup"><span data-stu-id="1c94c-103">![Step 2 of 5](../core/media/step-2of5.gif "Step_2of5")</span></span>  
   
  <span data-ttu-id="1c94c-104">**所要時間:** 7 分</span><span class="sxs-lookup"><span data-stu-id="1c94c-104">**Time to complete:** 7 minutes</span></span>  
   
- <span data-ttu-id="1c94c-105">**目標:**このステップでは、在庫補充メッセージのスキーマを定義します。</span><span class="sxs-lookup"><span data-stu-id="1c94c-105">**Objective:** In this step, you define the schema of the inventory replenishment message.</span></span>  <span data-ttu-id="1c94c-106">倉庫システムでは在庫の補充を要求するためにこのメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="1c94c-106">The warehouse system sends this message for requesting inventory replenishment.</span></span>  <span data-ttu-id="1c94c-107">これはこのプロジェクトに対して作成する必要のある 2 つのスキーマのうちの 1 つです。</span><span class="sxs-lookup"><span data-stu-id="1c94c-107">This is one of the two schemas you must create for this project.</span></span>  
+ <span data-ttu-id="1c94c-105">**目標:** このステップでは、在庫補充メッセージのスキーマを定義します。</span><span class="sxs-lookup"><span data-stu-id="1c94c-105">**Objective:** In this step, you define the schema of the inventory replenishment message.</span></span>  <span data-ttu-id="1c94c-106">倉庫システムでは在庫の補充を要求するためにこのメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="1c94c-106">The warehouse system sends this message for requesting inventory replenishment.</span></span>  <span data-ttu-id="1c94c-107">これはこのプロジェクトに対して作成する必要のある 2 つのスキーマのうちの 1 つです。</span><span class="sxs-lookup"><span data-stu-id="1c94c-107">This is one of the two schemas you must create for this project.</span></span>  
   
  <span data-ttu-id="1c94c-108">**目的:** XML は、構造体だけでなくおよび標準化されたマークアップ コードを使用して情報を識別しますが、スキーマを使用する機能も備えています。</span><span class="sxs-lookup"><span data-stu-id="1c94c-108">**Purpose:** XML not only structures and identifies information with standardized markup codes, but also has the ability to use schemas.</span></span> <span data-ttu-id="1c94c-109">スキーマとは、辞書のように機能し、他の XML ドキュメントによって参照として使用される XML ドキュメントです。</span><span class="sxs-lookup"><span data-stu-id="1c94c-109">A schema is an XML document that works like a dictionary and is used as a reference by other XML documents.</span></span> <span data-ttu-id="1c94c-110">スキーマ コードは、XML 要素のスペルおよびこれらの要素で囲まれるデータの種類を定義します。</span><span class="sxs-lookup"><span data-stu-id="1c94c-110">The schema code defines the spelling of XML elements and the type of data enclosed by those elements.</span></span> <span data-ttu-id="1c94c-111">スキーマを使用することにより、プログラムでは XML ドキュメントを簡単に処理することができ、情報の構造と種類が正しいことを保証できます。</span><span class="sxs-lookup"><span data-stu-id="1c94c-111">Using schemas provides an easy way for a program to process XML documents and ensures that the structure and type of information is correct.</span></span>  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/07/2017
     |<span data-ttu-id="1c94c-129">**インストールされたテンプレート**</span><span class="sxs-lookup"><span data-stu-id="1c94c-129">**Installed Templates**</span></span>|<span data-ttu-id="1c94c-130">をクリックして**スキーマ ファイル**をクリックし、**スキーマ**です。</span><span class="sxs-lookup"><span data-stu-id="1c94c-130">Click **Schema Files**, then click **Schema**.</span></span>|  
     |<span data-ttu-id="1c94c-131">**名前**</span><span class="sxs-lookup"><span data-stu-id="1c94c-131">**Name**</span></span>|<span data-ttu-id="1c94c-132">型**Request.xsd**です。</span><span class="sxs-lookup"><span data-stu-id="1c94c-132">Type **Request.xsd**.</span></span>|  
   
-3.  <span data-ttu-id="1c94c-133">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1c94c-133">Click **Add**.</span></span> <span data-ttu-id="1c94c-134">スキーマ ツリーと XSD ペインが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1c94c-134">The schema tree and XSD pane appear.</span></span> <span data-ttu-id="1c94c-135">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のこの領域を、BizTalk エディターといいます。</span><span class="sxs-lookup"><span data-stu-id="1c94c-135">This area of [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] is referred to as BizTalk Editor.</span></span> <span data-ttu-id="1c94c-136">また、ソリューション エクスプローラーでは、EAISchemas プロジェクトの下に新しいスキーマが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1c94c-136">In addition, your new schema appears in Solution Explorer below the EAISchemas project.</span></span>  
+3.  <span data-ttu-id="1c94c-133">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1c94c-133">Click **Add**.</span></span> <span data-ttu-id="1c94c-134">スキーマ ツリーと XSD ペインが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1c94c-134">The schema tree and XSD pane appear.</span></span> <span data-ttu-id="1c94c-135">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のこの領域を、BizTalk エディターといいます。</span><span class="sxs-lookup"><span data-stu-id="1c94c-135">This area of [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] is referred to as BizTalk Editor.</span></span> <span data-ttu-id="1c94c-136">また、ソリューション エクスプローラーでは、EAISchemas プロジェクトの下に新しいスキーマが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1c94c-136">In addition, your new schema appears in Solution Explorer below the EAISchemas project.</span></span>  
   
      <span data-ttu-id="1c94c-137">![BizTalk プロジェクトのさまざまな部分](../core/media/differentpartsofbiztalkserver.gif "DifferentpartsofBizTalkServer")</span><span class="sxs-lookup"><span data-stu-id="1c94c-137">![Different Parts of BizTalk Project](../core/media/differentpartsofbiztalkserver.gif "DifferentpartsofBizTalkServer")</span></span>  
   
@@ -123,7 +124,7 @@ ms.lasthandoff: 11/07/2017
   
 2.  <span data-ttu-id="1c94c-181">をクリックして**OK**プロパティ スキーマを追加することを確認します。</span><span class="sxs-lookup"><span data-stu-id="1c94c-181">Click **OK** to acknowledge adding a property schema.</span></span>  
   
-3.  <span data-ttu-id="1c94c-182">**[ファイル]** メニューの **[すべてを保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1c94c-182">On the **File** menu, click **Save All**.</span></span>  
+3.  <span data-ttu-id="1c94c-182">**[ファイル]** メニューの **[すべてを保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1c94c-182">On the **File** menu, click **Save All**.</span></span>  
   
 ## <a name="what-did-i-just-do"></a><span data-ttu-id="1c94c-183">でしただけは何ですか。</span><span class="sxs-lookup"><span data-stu-id="1c94c-183">What did I just do?</span></span>  
  <span data-ttu-id="1c94c-184">このステップでは、倉庫の在庫補充メッセージのスキーマを定義しました。</span><span class="sxs-lookup"><span data-stu-id="1c94c-184">In this step, you defined the warehouse inventory replenishment message schema.</span></span>  

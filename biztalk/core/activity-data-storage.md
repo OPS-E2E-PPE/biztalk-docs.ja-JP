@@ -1,11 +1,11 @@
 ---
-title: "アクティビティ データのストレージ |Microsoft ドキュメント"
-ms.custom: 
+title: アクティビティ データのストレージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, BAM
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - databases [BAM], partitioning
 - BAM, performance
 ms.assetid: 1f736599-3d16-496e-a459-8b0507d57fcb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967024"
 ---
 # <a name="activity-data-storage"></a><span data-ttu-id="fd4b4-102">アクティビティ データのストレージ</span><span class="sxs-lookup"><span data-stu-id="fd4b4-102">Activity Data Storage</span></span>
 <span data-ttu-id="fd4b4-103">このトピックでは、アクティビティ データのストレージ、および時間の経過と共に拡張されたアクティビティ テーブルが原因で発生するパフォーマンス関連の問題について説明します。また、実行中のアクティビティと完了したアクティビティ用のテーブルを分離することで、これらのパフォーマンスに関する問題を BAM で解決する方法についても説明します。</span><span class="sxs-lookup"><span data-stu-id="fd4b4-103">This topic describes activity data storage, the performance problems caused by the growth of activity tables over time, and how BAM solves these performance problems with separate tables for activities in progress and completed activities.</span></span> <span data-ttu-id="fd4b4-104">さらに、データのクエリ用のオンライン時間帯と、BAM のパーティション分割を使用してパフォーマンスを向上する方法についても説明します。</span><span class="sxs-lookup"><span data-stu-id="fd4b4-104">This topic also describes the online window for querying data, and how you can use partitioning in BAM for higher performance.</span></span>  
@@ -92,7 +93,7 @@ UNION ALL
   
 -   <span data-ttu-id="fd4b4-224">値を変更することにより、オンライン時間帯を設定する**OnlineWindowTimeUnit**と**OnlineWindowLength**の表に、現在のアクティビティのレコードの**bam_Metadata_Activities**プライマリ インポート データベースにします。</span><span class="sxs-lookup"><span data-stu-id="fd4b4-224">You set the online window by modifying the values for **OnlineWindowTimeUnit** and **OnlineWindowLength** in the record for the current activity in the table **bam_Metadata_Activities** in the Primary Import database.</span></span>  
   
--   <span data-ttu-id="fd4b4-225">DTS パッケージ**bam_dm _\<ActivityName\>**パーティション分割を行い、アーカイブや削除します。</span><span class="sxs-lookup"><span data-stu-id="fd4b4-225">The DTS package, **BAM_DM_\<ActivityName\>**, performs the partitioning and archiving/purging.</span></span> <span data-ttu-id="fd4b4-226">このパッケージが実行されるたびに、別のパーティションを切り捨て、オンライン時間帯の期間を過ぎたすべてのパーティションをアーカイブおよび削除します。</span><span class="sxs-lookup"><span data-stu-id="fd4b4-226">Each time this package runs, it truncates another partition and archives/drops all partitions that are outside the online window.</span></span>  
+-   <span data-ttu-id="fd4b4-225">DTS パッケージ**bam_dm _\<ActivityName\>** パーティション分割を行い、アーカイブや削除します。</span><span class="sxs-lookup"><span data-stu-id="fd4b4-225">The DTS package, **BAM_DM_\<ActivityName\>**, performs the partitioning and archiving/purging.</span></span> <span data-ttu-id="fd4b4-226">このパッケージが実行されるたびに、別のパーティションを切り捨て、オンライン時間帯の期間を過ぎたすべてのパーティションをアーカイブおよび削除します。</span><span class="sxs-lookup"><span data-stu-id="fd4b4-226">Each time this package runs, it truncates another partition and archives/drops all partitions that are outside the online window.</span></span>  
   
 -   <span data-ttu-id="fd4b4-227">アーカイブ データベースを構成していない場合、BAM は古いデータをアーカイブしないで削除します。</span><span class="sxs-lookup"><span data-stu-id="fd4b4-227">If you do not have Archiving Database configured, then BAM drops the aged activity data without archiving.</span></span>  
   

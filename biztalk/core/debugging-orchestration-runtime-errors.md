@@ -1,14 +1,14 @@
 ---
-title: "オーケストレーションの実行時エラーのデバッグ |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションの実行時エラーのデバッグ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7be9ee5a-b9fa-428b-8b92-0fa0f801c724
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969904"
 ---
 # <a name="debugging-orchestration-runtime-errors"></a><span data-ttu-id="dc8b3-102">オーケストレーションの実行時エラーのデバッグ</span><span class="sxs-lookup"><span data-stu-id="dc8b3-102">Debugging Orchestration Runtime Errors</span></span>
 <span data-ttu-id="dc8b3-103">このセクションでは、オーケストレーションに関する実行時の問題の解決に役立つ一連の質問と回答を示します。</span><span class="sxs-lookup"><span data-stu-id="dc8b3-103">This section contains a set of questions and answers designed to help you resolve runtime issues with your orchestrations.</span></span>  
@@ -96,7 +97,7 @@ MySendPort(Microsoft.XLANGs.BaseTypes.Address)=Message2(BTS.OutboundTransportLoc
 ```  
   
 ### <a name="cause"></a><span data-ttu-id="dc8b3-154">原因</span><span class="sxs-lookup"><span data-stu-id="dc8b3-154">Cause</span></span>  
- <span data-ttu-id="dc8b3-155">この問題は、オーケストレーション エンジンは実行時にテキストを削除すると、"**file://"**指定した URL からです。</span><span class="sxs-lookup"><span data-stu-id="dc8b3-155">This problem occurs because at runtime the orchestration engine removes the text "**file://"** from the specified URL.</span></span> <span data-ttu-id="dc8b3-156">したがって、先ほどの例では、"file:///c:/test/out" は \c:\test\out と評価され、"file://mymachine/test/out" は mymachine\test\out と評価されます。</span><span class="sxs-lookup"><span data-stu-id="dc8b3-156">So, using the examples above, "file:///c:/test/out" is evaluated as \c:\test\out and "file://mymachine/test/out" is evaluated as mymachine\test\out.</span></span>  
+ <span data-ttu-id="dc8b3-155">この問題は、オーケストレーション エンジンは実行時にテキストを削除すると、"**file://"** 指定した URL からです。</span><span class="sxs-lookup"><span data-stu-id="dc8b3-155">This problem occurs because at runtime the orchestration engine removes the text "**file://"** from the specified URL.</span></span> <span data-ttu-id="dc8b3-156">したがって、先ほどの例では、"file:///c:/test/out" は \c:\test\out と評価され、"file://mymachine/test/out" は mymachine\test\out と評価されます。</span><span class="sxs-lookup"><span data-stu-id="dc8b3-156">So, using the examples above, "file:///c:/test/out" is evaluated as \c:\test\out and "file://mymachine/test/out" is evaluated as mymachine\test\out.</span></span>  
   
 ### <a name="resolution"></a><span data-ttu-id="dc8b3-157">解決策</span><span class="sxs-lookup"><span data-stu-id="dc8b3-157">Resolution</span></span>  
  <span data-ttu-id="dc8b3-158">URL を指定する場合、 **BTS です。OutBoundTransportLocation**を式でプロパティを追加または削除「/」文字がします。</span><span class="sxs-lookup"><span data-stu-id="dc8b3-158">When specifying the URL for the **BTS.OutBoundTransportLocation** property in an expression, add or remove "/" characters as needed.</span></span> <span data-ttu-id="dc8b3-159">上記の例を使用して、 **BTS です。OutBoundTransportLocation**プロパティを"file://c:/test/out がまたはに評価される c:\test\out"file:///mymachine/test/out"\\mymachine\test\out として定義すべき\\\mymachine\test\out です。</span><span class="sxs-lookup"><span data-stu-id="dc8b3-159">Using the examples above the **BTS.OutBoundTransportLocation** property should be defined as "file://c:/test/out", which would evaluate to c:\test\out or "file:////mymachine/test/out", which would evaluate to \\\mymachine\test\out.</span></span>

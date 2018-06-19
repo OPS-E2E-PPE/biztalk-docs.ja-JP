@@ -1,11 +1,11 @@
 ---
-title: "SWIFT 逆アセンブラーおよびアセンブラー機能 |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT 逆アセンブラーおよびアセンブラー機能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - disassembler, about disassembler
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - assembler, functionality
 - disassembler, functionality
 ms.assetid: d4fc092e-586d-4360-921d-151af66b8bc1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214042"
 ---
 # <a name="swift-disassembler-and-assembler-functionality"></a><span data-ttu-id="11e9e-102">SWIFT 逆アセンブラーおよびアセンブラー機能</span><span class="sxs-lookup"><span data-stu-id="11e9e-102">SWIFT Disassembler and Assembler Functionality</span></span>
 <span data-ttu-id="11e9e-103">SWIFT の逆アセンブラーで呼び出されたときに、次のタスクを実行できる、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]受信パイプライン。</span><span class="sxs-lookup"><span data-stu-id="11e9e-103">The SWIFT disassembler can perform the following tasks when invoked in a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] receive pipeline:</span></span>  

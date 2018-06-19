@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1fed2344-8181-4c85-a2ef-a421fc40dce1
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25966792"
 ---
 # <a name="as2-over-file-biztalk-server-sample"></a><span data-ttu-id="cc1d9-102">AS2 Over File (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="cc1d9-102">AS2 over File (BizTalk Server Sample)</span></span>
 <span data-ttu-id="cc1d9-103">AS2 Over File サンプルでは、FILE 受信場所経由で AS2 メッセージを受信する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-103">The AS2 Over File sample demonstrates how to receive an AS2 message over a FILE receive location.</span></span> <span data-ttu-id="cc1d9-104">これにより、通常使用される HTTP アダプタではなく、FILE アダプタを使用して AS2 メッセージを受信できます。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-104">This enables you to use a FILE adapter to receive the AS2 message, rather than an HTTP adapter, which is normally used.</span></span> <span data-ttu-id="cc1d9-105">そのために、このソリューションは、AS2 デコーダーの要求に応じて、AS2 メッセージの HTTP ヘッダーを InboundHTTPHeaders コンテキスト プロパティに書き込みます。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-105">To do so, this solution writes the HTTP headers in the AS2 message to the InboundHTTPHeaders context property, as required by the AS2 Decoder.</span></span>  

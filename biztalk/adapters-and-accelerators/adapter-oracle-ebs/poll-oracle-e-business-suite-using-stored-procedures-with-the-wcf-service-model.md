@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルでストアド プロシージャを使用してポーリング Oracle E-business Suite |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルでストアド プロシージャを使用してポーリング Oracle E-business Suite |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47dcb866-9161-4b28-9481-2761794ce805
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967720"
 ---
 # <a name="poll-oracle-e-business-suite-using-stored-procedures-with-the-wcf-service-model"></a><span data-ttu-id="07004-102">WCF サービス モデルでストアド プロシージャを使用してポーリング Oracle E-business Suite</span><span class="sxs-lookup"><span data-stu-id="07004-102">Poll Oracle E-Business Suite using stored procedures with the WCF service model</span></span>
 <span data-ttu-id="07004-103">構成することができます、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle データベースを定期的にポーリングするストアド プロシージャを使用して、定期的なデータの変更メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="07004-103">You can configure the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] to receive periodic data-change messages by using stored procedures to periodically poll the Oracle database.</span></span> <span data-ttu-id="07004-104">ストアド プロシージャは、アダプターが Oracle データベースをポーリングする定期的に実行されるポーリング ステートメントとして指定できます。</span><span class="sxs-lookup"><span data-stu-id="07004-104">You can specify a stored procedure as a polling statement that the adapter executes periodically to poll the Oracle database.</span></span>  

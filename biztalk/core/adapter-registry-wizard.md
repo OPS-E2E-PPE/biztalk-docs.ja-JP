@@ -1,17 +1,17 @@
 ---
-title: "アダプター レジストリ ウィザード |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター レジストリ ウィザード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - utilities, Adapter Registration Wizard
 - Adapter Registration Wizard
 ms.assetid: bd15d0c7-01bb-41f9-9157-cdcf4bb4e39a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,12 +20,13 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965320"
 ---
 # <a name="adapter-registry-wizard"></a><span data-ttu-id="28a15-102">アダプター レジストリ ウィザード</span><span class="sxs-lookup"><span data-stu-id="28a15-102">Adapter Registry Wizard</span></span>
 <span data-ttu-id="28a15-103">アダプター レジストリ ウィザードを使用すると、カスタム アダプターの構成と登録に必要なレジストリ ファイルを作成できます。</span><span class="sxs-lookup"><span data-stu-id="28a15-103">You use the Adapter Registry Wizard to create the registry files needed to configure and register a custom adapter.</span></span>  
   
 ## <a name="location-in-sdk"></a><span data-ttu-id="28a15-104">SDK でのパス</span><span class="sxs-lookup"><span data-stu-id="28a15-104">Location in SDK</span></span>  
- <span data-ttu-id="28a15-105">*\<インストール パス\>*\SDK\Utilities\AdapterRegistryWizard\\</span><span class="sxs-lookup"><span data-stu-id="28a15-105">*\<Installation Path\>*\SDK\Utilities\AdapterRegistryWizard\\</span></span>  
+ <span data-ttu-id="28a15-105">*\<インストール パス\>* \SDK\Utilities\AdapterRegistryWizard\\</span><span class="sxs-lookup"><span data-stu-id="28a15-105">*\<Installation Path\>* \SDK\Utilities\AdapterRegistryWizard\\</span></span>  
   
 ## <a name="to-run-this-utility"></a><span data-ttu-id="28a15-106">このユーティリティを実行するには</span><span class="sxs-lookup"><span data-stu-id="28a15-106">To Run This Utility</span></span>  
  <span data-ttu-id="28a15-107">AdapterRegistryWizard.exe 実行可能ファイルを実行して、ウィザードを開始します。</span><span class="sxs-lookup"><span data-stu-id="28a15-107">Start the wizard by running the AdapterRegistryWizard.exe executable.</span></span> <span data-ttu-id="28a15-108">次のページで、アダプターとアダプターでサポートされるプロパティについての情報の入力を要求されます。</span><span class="sxs-lookup"><span data-stu-id="28a15-108">The pages that follow prompt you for information about your adapter and the properties that it supports.</span></span> <span data-ttu-id="28a15-109">個別のアダプター レジストリ ウィザードのページについては、次のセクションで説明します。</span><span class="sxs-lookup"><span data-stu-id="28a15-109">The individual Adapter Registry Wizard pages are described in the sections that follow.</span></span>  

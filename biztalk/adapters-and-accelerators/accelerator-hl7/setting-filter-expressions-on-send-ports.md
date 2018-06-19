@@ -1,11 +1,11 @@
 ---
-title: "送信ポートのフィルター式を設定 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートのフィルター式を設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, context properties
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - context properties, filtering
 - filtering, context properties
 ms.assetid: 48c7c83b-9464-4ed9-bd8d-cf5b75e16702
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206082"
 ---
 # <a name="setting-filter-expressions-on-send-ports"></a><span data-ttu-id="c2aa2-102">送信ポートのフィルター式を設定</span><span class="sxs-lookup"><span data-stu-id="c2aa2-102">Setting Filter Expressions on Send Ports</span></span>
 <span data-ttu-id="c2aa2-103">ポートの送信を制御する送信ポートにフィルター式のコンテキスト プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="c2aa2-103">You set context properties in filter expressions on the send port to control what the port sends.</span></span> <span data-ttu-id="c2aa2-104">プロパティのフィルター処理する方法の柔軟性を提供する演算子の数が、フィルター式を設定することができます (より大きいより優れたまたは同じか、少ないよりと小さい、等しいかどうか、存在よりまたは等しい)。</span><span class="sxs-lookup"><span data-stu-id="c2aa2-104">You can set the filter expressions with a number of operators that offer you flexibility in how you filter the property (equality or inequality, exists, greater than, great than or equal to, less than, and less than or equal to).</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 2013 および 2013 R2: 新機能、インストール、およびアップグレード |Microsoft ドキュメント"
-description: "新しい、およびインストールを実行すると BizTalk Server 2013 R2 と 2013 にアップグレードの概要"
-ms.custom: 
+title: 'BizTalk Server 2013 および 2013 R2: 新機能、インストール、およびアップグレード |Microsoft ドキュメント'
+description: 新しい、およびインストールを実行すると BizTalk Server 2013 R2 と 2013 にアップグレードの概要
+ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 2017-08-10
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bfe2e8ed-461f-4f6e-b5f9-d657473682f0
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295498"
 ---
 # <a name="biztalk-server-2013-and-2013-r2-whats-new-install-and-upgrade"></a><span data-ttu-id="3b56a-103">BizTalk Server 2013 と 2013 R2: 新機能、インストール、アップグレード</span><span class="sxs-lookup"><span data-stu-id="3b56a-103">BizTalk Server 2013 and 2013 R2: What's New, Install, and Upgrade</span></span>
 

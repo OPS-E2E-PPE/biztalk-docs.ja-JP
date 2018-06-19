@@ -1,17 +1,17 @@
 ---
-title: "インストールのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: インストールのテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing installation
 - installing, testing installation
 ms.assetid: db27a75c-db7f-46ff-b8ef-2624ff18dcc8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961065"
 ---
 # <a name="testing-your-installation"></a><span data-ttu-id="4f1fa-102">インストールのテスト</span><span class="sxs-lookup"><span data-stu-id="4f1fa-102">Testing Your Installation</span></span>
 <span data-ttu-id="4f1fa-103">設定することができます、[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]テスト、エンド ツー エンド チュートリアルを手動で実行して、またはエンド ツー エンド チュートリアル プログラムを実行してインストールします。</span><span class="sxs-lookup"><span data-stu-id="4f1fa-103">You can set up your [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] installation for testing either by manually running through the end-to-end tutorial or by executing the end-to-end tutorial program.</span></span> <span data-ttu-id="4f1fa-104">プログラムを実行するをクリックするか、 **Launch Tutorial**セットアップ中にボタンをクリックしてしたり、C:\Program files \microsoft BizTalk で EndToEndTutorial.exe を実行\<バージョン\>HL7\SDK\ のアクセラレータエンド ツー エンド チュートリアル フォルダー (インストールと構成を実行している)。</span><span class="sxs-lookup"><span data-stu-id="4f1fa-104">To exercise the program, either click the **Launch Tutorial** button during setup or execute EndToEndTutorial.exe in the C:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial folder (after running installation and configuration).</span></span> <span data-ttu-id="4f1fa-105">これらの自動化されたアクションのいずれかの操作はチュートリアルを実行して、手動で実行する同じセットアップ手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="4f1fa-105">Either of these automated actions will perform the same setup steps that you would manually perform by running through the tutorial.</span></span> <span data-ttu-id="4f1fa-106">エンド ツー エンド チュートリアル プログラムは次のとおり</span><span class="sxs-lookup"><span data-stu-id="4f1fa-106">The end-to-end tutorial program does the following:</span></span>  

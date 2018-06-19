@@ -1,18 +1,18 @@
 ---
-title: "Siebel アダプターを使用して統合オブジェクトでのビジネス サービス メソッドを呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターを使用して統合オブジェクトでのビジネス サービス メソッドを呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - integration objects
 - how to, invoke business service methods with integration objects
 - business service methods, invoking with integration objects
 ms.assetid: ac0fa80a-3451-436e-8a1a-b6b5e93081e7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962848"
 ---
 # <a name="invoke-business-service-methods-with-integration-objects-using-the-siebel-adapter"></a><span data-ttu-id="f6327-102">Siebel アダプターを使用して統合オブジェクトでのビジネス サービス メソッドを呼び出す</span><span class="sxs-lookup"><span data-stu-id="f6327-102">Invoke Business Service Methods with Integration Objects using the Siebel adapter</span></span>
 <span data-ttu-id="f6327-103">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アダプター クライアント統合オブジェクトを使用するビジネス サービス メソッドを呼び出すことができるようにします。</span><span class="sxs-lookup"><span data-stu-id="f6327-103">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] enables adapter clients to invoke business service methods that work with integration objects.</span></span> <span data-ttu-id="f6327-104">これらのビジネス サービス通常 IN、OUT も IN OUT パラメーター「階層」データの型を送信または統合オブジェクト データを受信します。</span><span class="sxs-lookup"><span data-stu-id="f6327-104">These business services typically have IN, OUT, or IN OUT parameters of "hierarchy" data type to send or receive integration object data.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "ストアド プロシージャ、関数、および PL-SQL Api のメッセージ スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: ストアド プロシージャ、関数、および PL-SQL Api のメッセージ スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6d707f10-470d-4390-bb5b-0301c326f375
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963152"
 ---
 # <a name="message-schemas-for-stored-procedures-functions-and-plsql-apis"></a><span data-ttu-id="52bce-102">ストアド プロシージャ、関数、および PL/SQL Api のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="52bce-102">Message Schemas for Stored Procedures, Functions, and PL/SQL APIs</span></span>
 <span data-ttu-id="52bce-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]サーフェス基になる Oracle データベースの操作としてストアド プロシージャ、関数、および PL/SQL Api (ストアド プロシージャ、およびパッケージ内の関数)。</span><span class="sxs-lookup"><span data-stu-id="52bce-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]surfaces the underlying Oracle database stored procedures, functions, and PL/SQL APIs (stored procedures and functions within a package) as operations.</span></span> <span data-ttu-id="52bce-104">このセクションでは、メッセージの構造とストアド プロシージャ、関数、および PL/SQL Api の呼び出しに使用する操作について説明します。</span><span class="sxs-lookup"><span data-stu-id="52bce-104">This section describes the message structure and actions used to invoke stored procedures, functions, and PL/SQL APIs.</span></span>  

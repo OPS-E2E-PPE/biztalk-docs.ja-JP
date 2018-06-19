@@ -1,11 +1,11 @@
 ---
-title: "Web 参照の追加 |Microsoft ドキュメント"
-ms.custom: 
+title: Web 参照の追加 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BPEL, orchestrations
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - Web services, references
 - projects, Web services
 ms.assetid: 7e40f215-f11a-4151-bcc6-e107bf36b6f6
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964768"
 ---
 # <a name="adding-web-references"></a><span data-ttu-id="56289-102">Web 参照の追加</span><span class="sxs-lookup"><span data-stu-id="56289-102">Adding Web References</span></span>
 <span data-ttu-id="56289-103">Web ポートを追加するには、BizTalk プロジェクトに Web 参照を追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="56289-103">Before you can add a Web port, you need to add a Web reference to your BizTalk project.</span></span> <span data-ttu-id="56289-104">Web 参照は、プロジェクトで使用可能な Web サービスの説明です。</span><span class="sxs-lookup"><span data-stu-id="56289-104">A Web reference is a description of a Web service that is available to your project.</span></span> <span data-ttu-id="56289-105">プロジェクトに Web 参照を追加すると、BizTalk プロジェクト作成オーケストレーション Web ポートの種類、Web メッセージの種類、Reference.map (マップ ファイル)、Reference.odx (オーケストレーション ファイル)、 \< *WebService*\>です。disco (探索ファイル)、および\< *WebService*\>.wsdl (Web サービス記述言語ファイル) をプロジェクトにします。</span><span class="sxs-lookup"><span data-stu-id="56289-105">When you add a Web reference to your project, BizTalk project creates an orchestration Web port type, Web message types, Reference.map (map file), Reference.odx (orchestration file), \<*WebService*\>.disco (discovery file), and \<*WebService*\>.wsdl (Web Service Description Language file) to your project.</span></span> <span data-ttu-id="56289-106">Web サービス記述言語 (WSDL) ファイルにスキーマ Web メッセージの種類が含まれる場合、プロジェクトに Reference.xsd が追加されます。</span><span class="sxs-lookup"><span data-stu-id="56289-106">If your Web Service Description Language (WSDL) file contains schema Web message types, BizTalk project adds Reference.xsd to your project.</span></span>  

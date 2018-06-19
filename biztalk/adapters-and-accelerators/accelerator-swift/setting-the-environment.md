@@ -1,14 +1,14 @@
 ---
-title: "環境の設定 |Microsoft ドキュメント"
-ms.custom: 
+title: 環境の設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43027efc-acec-4110-96bd-cc4a19daaeab
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961896"
 ---
 # <a name="setting-the-environment"></a><span data-ttu-id="4756e-102">環境の設定</span><span class="sxs-lookup"><span data-stu-id="4756e-102">Setting the Environment</span></span>
 <span data-ttu-id="4756e-103">**環境を設定します。**</span><span class="sxs-lookup"><span data-stu-id="4756e-103">**To set the environment:**</span></span>  

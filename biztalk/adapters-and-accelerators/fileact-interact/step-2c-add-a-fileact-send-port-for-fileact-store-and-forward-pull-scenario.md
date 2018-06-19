@@ -1,14 +1,14 @@
 ---
-title: "手順 2 C: FileAct ストア アンド フォワード (プル) シナリオの FILEACT 送信ポートの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2 C: FileAct ストア アンド フォワード (プル) シナリオの FILEACT 送信ポートの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8743a868-9625-477b-a7da-673bfa262723
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964048"
 ---
 # <a name="step-2c-add-a-fileact-send-port-for-the-fileact-store-and-forward-pull-scenario"></a><span data-ttu-id="617e7-102">手順 2 C: FileAct ストア アンド フォワード (プル) シナリオの FILEACT 送信ポートの追加</span><span class="sxs-lookup"><span data-stu-id="617e7-102">Step 2C: Add a FILEACT Send Port for the FileAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="617e7-103">この手順を開始する前に行う必要があります[Step 2B: Sw:HandleFileRequest と FileAct ストア アンド フォワード (プル) シナリオの Sw:HandleSnFRequest メッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports--get-sw-handlefilerequest-and-sw-handlesnfrequest.md)です。</span><span class="sxs-lookup"><span data-stu-id="617e7-103">Before you begin this step, you must complete [Step 2B: Add FILE Send Ports to Capture the Sw:HandleFileRequest and Sw:HandleSnFRequest Messages for the FileAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports--get-sw-handlefilerequest-and-sw-handlesnfrequest.md).</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="617e7-123">**RequestCrypto**</span><span class="sxs-lookup"><span data-stu-id="617e7-123">**RequestCrypto**</span></span>|<span data-ttu-id="617e7-124">ドロップダウン リストから選択**FALSE**です。</span><span class="sxs-lookup"><span data-stu-id="617e7-124">From the drop-down list, select **FALSE**.</span></span>|  
     |<span data-ttu-id="617e7-125">**要求元**</span><span class="sxs-lookup"><span data-stu-id="617e7-125">**Requestor**</span></span>|<span data-ttu-id="617e7-126">適切な設定\<リクエスター\> SWIFT でのプロビジョニングに基づく文字列。</span><span class="sxs-lookup"><span data-stu-id="617e7-126">Set to the appropriate \<Requestor\> string, based on your provisioning with SWIFT.</span></span>|  
     |<span data-ttu-id="617e7-127">**応答側**</span><span class="sxs-lookup"><span data-stu-id="617e7-127">**Responder**</span></span>|<span data-ttu-id="617e7-128">適切な設定\<レスポンダー\>文字列。</span><span class="sxs-lookup"><span data-stu-id="617e7-128">Set to the appropriate \<Responder\> string.</span></span>|  
-    |<span data-ttu-id="617e7-129">**サービス名**</span><span class="sxs-lookup"><span data-stu-id="617e7-129">**Service Name**</span></span>|<span data-ttu-id="617e7-130">適切な設定**\<サービス名\>**です。</span><span class="sxs-lookup"><span data-stu-id="617e7-130">Set to the appropriate **\<service name\>**.</span></span>|  
+    |<span data-ttu-id="617e7-129">**サービス名**</span><span class="sxs-lookup"><span data-stu-id="617e7-129">**Service Name**</span></span>|<span data-ttu-id="617e7-130">適切な設定**\<サービス名\>** です。</span><span class="sxs-lookup"><span data-stu-id="617e7-130">Set to the appropriate **\<service name\>**.</span></span>|  
     |<span data-ttu-id="617e7-131">**受信確認のインジケーター**</span><span class="sxs-lookup"><span data-stu-id="617e7-131">**Acknowledgement Indicator**</span></span>|<span data-ttu-id="617e7-132">ドロップダウン リストから選択**FALSE**です。</span><span class="sxs-lookup"><span data-stu-id="617e7-132">From the drop-down list, select **FALSE**.</span></span>|  
     |<span data-ttu-id="617e7-133">**イベントのエンドポイント**</span><span class="sxs-lookup"><span data-stu-id="617e7-133">**Event end-point**</span></span>|<span data-ttu-id="617e7-134">ドロップダウン リストから選択**FALSE**です。</span><span class="sxs-lookup"><span data-stu-id="617e7-134">From the drop-down list, select **FALSE**.</span></span>|  
     |<span data-ttu-id="617e7-135">**ファイルの圧縮**</span><span class="sxs-lookup"><span data-stu-id="617e7-135">**File Compression**</span></span>|<span data-ttu-id="617e7-136">ドロップダウン リストから選択**None**です。</span><span class="sxs-lookup"><span data-stu-id="617e7-136">From the drop-down list, select **None**.</span></span>|  
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="617e7-148">メッセージでのトランザクション数を転送する場合は、サービスのプロファイルでモードを設定「トランザクション数」に、FileAct 送信ポート。</span><span class="sxs-lookup"><span data-stu-id="617e7-148">If message with Transaction Count is to be transferred, set the Service Profile Mode to “Transaction Count” in the FileAct send port.</span></span>  
   
-7.  <span data-ttu-id="617e7-149">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="617e7-149">Click **OK**.</span></span>  
+7.  <span data-ttu-id="617e7-149">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="617e7-149">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="617e7-150">**送信ポートのプロパティ** ウィンドウで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="617e7-150">In the **Send Port Properties** window, do the following:</span></span>  
   
@@ -73,11 +74,11 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="617e7-160">**これを使用してください。**</span><span class="sxs-lookup"><span data-stu-id="617e7-160">**Use this**</span></span>|<span data-ttu-id="617e7-161">**これを行う**</span><span class="sxs-lookup"><span data-stu-id="617e7-161">**To do this**</span></span>|  
     |------------------|--------------------|  
     |<span data-ttu-id="617e7-162">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="617e7-162">**Property**</span></span>|<span data-ttu-id="617e7-163">ドロップダウン リストから選択**BTS です。ReceivePortName**です。</span><span class="sxs-lookup"><span data-stu-id="617e7-163">From the drop-down list, select **BTS.ReceivePortName**.</span></span>|  
-    |<span data-ttu-id="617e7-164">**演算子**</span><span class="sxs-lookup"><span data-stu-id="617e7-164">**Operator**</span></span>|<span data-ttu-id="617e7-165">ドロップダウン リストから選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="617e7-165">From the drop-down list, select **==**.</span></span>|  
+    |<span data-ttu-id="617e7-164">**演算子**</span><span class="sxs-lookup"><span data-stu-id="617e7-164">**Operator**</span></span>|<span data-ttu-id="617e7-165">ドロップダウン リストから選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="617e7-165">From the drop-down list, select **==**.</span></span>|  
     |<span data-ttu-id="617e7-166">**値**</span><span class="sxs-lookup"><span data-stu-id="617e7-166">**Value**</span></span>|<span data-ttu-id="617e7-167">型**Tutorial_IA_InputRequest_SnF**です。</span><span class="sxs-lookup"><span data-stu-id="617e7-167">Type **Tutorial_IA_InputRequest_SnF**.</span></span>|  
     |<span data-ttu-id="617e7-168">**グループ化**</span><span class="sxs-lookup"><span data-stu-id="617e7-168">**Group by**</span></span>|<span data-ttu-id="617e7-169">既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="617e7-169">Leave the default value.</span></span>|  
   
-10. <span data-ttu-id="617e7-170">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="617e7-170">Click **OK**.</span></span>  
+10. <span data-ttu-id="617e7-170">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="617e7-170">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="617e7-171">参照</span><span class="sxs-lookup"><span data-stu-id="617e7-171">See Also</span></span>  
  <span data-ttu-id="617e7-172">[手順 2 a: ファイルの受信場所 FileAct ストア アンド フォワード (プル) シナリオの追加](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="617e7-172">[Step 2A: Add FILE Receive Locations for the FileAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md) </span></span>  

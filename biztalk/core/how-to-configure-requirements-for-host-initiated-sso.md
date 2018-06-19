@@ -1,11 +1,11 @@
 ---
-title: "側開始 SSO のホストの要件を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 側開始 SSO のホストの要件を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service accounts, granting privileges [SSO]
@@ -27,7 +27,7 @@ helpviewer_keywords:
 - managing [SSO], creating SPNs
 - SSO, service accounts
 ms.assetid: 91d77c9f-bab2-4f6e-8bce-e31c59cebb20
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -36,6 +36,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968622"
 ---
 # <a name="how-to-configure-requirements-for-host-initiated-sso"></a><span data-ttu-id="d0085-102">ホスト側開始 SSO の要件を構成する方法</span><span class="sxs-lookup"><span data-stu-id="d0085-102">How to Configure Requirements for Host Initiated SSO</span></span>
 <span data-ttu-id="d0085-103">エンタープライズ SSO とホスト側開始 SSO にはある共通点がありますが、特定のプラットフォームおよび Active Directory の要件はホスト側開始 SSO に対して一意です。</span><span class="sxs-lookup"><span data-stu-id="d0085-103">Although Enterprise SSO and host initiated SSO have certain aspects in common, certain platform and Active Directory requirements are unique to host initiated SSO.</span></span> <span data-ttu-id="d0085-104">このトピックでは、これらの要件について説明し、システムで要件を確認または作成する手順を示します。</span><span class="sxs-lookup"><span data-stu-id="d0085-104">This topic discusses those requirements, and lists the steps to check or create them on your system.</span></span>  
@@ -62,7 +63,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="d0085-122">ダウンロード、 **setspn**次の場所からユーティリティ: [http://go.microsoft.com/fwlink/?LinkId=33178](http://go.microsoft.com/fwlink/?LinkId=33178)です。</span><span class="sxs-lookup"><span data-stu-id="d0085-122">Download the **setspn** utility from the following location: [http://go.microsoft.com/fwlink/?LinkId=33178](http://go.microsoft.com/fwlink/?LinkId=33178).</span></span>  
   
-2.  <span data-ttu-id="d0085-123">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d0085-123">On the **Start** menu, click **Run**.</span></span>  
+2.  <span data-ttu-id="d0085-123">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d0085-123">On the **Start** menu, click **Run**.</span></span>  
   
 3.  <span data-ttu-id="d0085-124">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="d0085-124">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   

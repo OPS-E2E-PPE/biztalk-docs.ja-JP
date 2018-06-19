@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK での展開パッケージを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK での展開パッケージを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 10022981-7944-45d6-a78a-4d680a79b010
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966560"
 ---
 # <a name="create-a-deployment-package-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="12522-102">WCF LOB Adapter SDK の配置パッケージを作成します。</span><span class="sxs-lookup"><span data-stu-id="12522-102">Create a deployment package with the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="12522-103">開発サイクル中にビルド、デバッグ、および Visual Studio 内で、アダプターを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="12522-103">During the development cycle, you can build, debug, and run your adapter within Visual Studio.</span></span> <span data-ttu-id="12522-104">アダプター ソリューションの出力は、DLL アセンブリです。</span><span class="sxs-lookup"><span data-stu-id="12522-104">The output of an adapter solution is a DLL assembly.</span></span> <span data-ttu-id="12522-105">Visual Studio IDE を使用してアダプター ソリューションをビルドまたは devenv.exe スクリプトを使用して、アダプター アセンブリを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="12522-105">You can build your adapter solution using Visual Studio IDE or use the devenv.exe scripts to create an adapter assembly.</span></span> <span data-ttu-id="12522-106">アダプターを開発し、アダプターのコンシューマーの環境内で使用可能な状態である、アダプターはテスト環境や実稼働環境にインストールする展開パッケージを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="12522-106">Once the adapter is developed and it is ready for use within the adapter consumer's environment, you must create a deployment package that allows the adapter to be installed in test and production environments.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK のインストール |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK のインストール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 41b9b34b-3fbb-480f-a335-a218eab33693
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966512"
 ---
 # <a name="install-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="8254f-102">WCF LOB アダプター SDK をインストールします。</span><span class="sxs-lookup"><span data-stu-id="8254f-102">Install the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="8254f-103">インストールし、構成、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="8254f-103">Install and configure the [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)].</span></span> 
@@ -62,7 +63,7 @@ ms.lasthandoff: 11/28/2017
   
     -   <span data-ttu-id="8254f-129">すべての機能をインストールする選択**完了**です。</span><span class="sxs-lookup"><span data-stu-id="8254f-129">To install all the features, select **Complete**.</span></span>  
   
-6.  <span data-ttu-id="8254f-130">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="8254f-130">Select **Install**.</span></span>  
+6.  <span data-ttu-id="8254f-130">**[インストール]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="8254f-130">Select **Install**.</span></span>  
   
 ## <a name="update-or-remove"></a><span data-ttu-id="8254f-131">更新または削除</span><span class="sxs-lookup"><span data-stu-id="8254f-131">Update or remove</span></span>
   

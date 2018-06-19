@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションでの WCF メッセージにおける SOAP ヘッダーへのアクセス |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションでの WCF メッセージにおける SOAP ヘッダーへのアクセス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, SOAP headers [WCF services]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF services, SOAP headers
 - SOAP headers, WCF messages
 ms.assetid: fe02fb02-18d6-4fc6-89e0-b06bdbfa5cb4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966840"
 ---
 # <a name="accessing-soap-headers-in-wcf-messages-with-orchestrations"></a><span data-ttu-id="6baf2-102">オーケストレーションにおける WCF メッセージでの SOAP ヘッダーへのアクセス</span><span class="sxs-lookup"><span data-stu-id="6baf2-102">Accessing SOAP Headers in WCF Messages with Orchestrations</span></span>
 <span data-ttu-id="6baf2-103">オーケストレーションにおける受信 WCF メッセージの SOAP ヘッダーの値にアクセスするにはコンテキスト プロパティを使用する**WCF です。InboundHeaders**です。</span><span class="sxs-lookup"><span data-stu-id="6baf2-103">To access the SOAP header values of incoming WCF messages in orchestrations, you use the context property **WCF.InboundHeaders**.</span></span> <span data-ttu-id="6baf2-104">WCF アダプタを受信メッセージのカスタム SOAP ヘッダーと標準 SOAP ヘッダーのコピー、 **WCF です。InboundHeaders**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="6baf2-104">The WCF adapters copy custom SOAP headers and standard SOAP headers in the inbound messages to the **WCF.InboundHeaders** property.</span></span> <span data-ttu-id="6baf2-105">WCF アダプタを使用すると、プログラムによってコンテキスト プロパティへの昇格または書き込みを行うプロパティを選択することもできます。</span><span class="sxs-lookup"><span data-stu-id="6baf2-105">The WCF adapters also allow you to select the properties you would like to promote or write to the context properties programmatically.</span></span> <span data-ttu-id="6baf2-106">参照してください[公開された WCF サービスでの SOAP ヘッダー](../core/soap-headers-with-published-wcf-services.md)詳細についてはします。</span><span class="sxs-lookup"><span data-stu-id="6baf2-106">See [SOAP Headers with Published WCF Services](../core/soap-headers-with-published-wcf-services.md) for more details.</span></span>  

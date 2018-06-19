@@ -1,11 +1,11 @@
 ---
-title: "レッスン 1: サンプル フラット ファイルを送信する |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 1: サンプル フラット ファイルを送信する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing, flat files
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - flat files, testing
 - flat files, submitting
 ms.assetid: 3064246d-19d5-48c5-af13-3ea075355147
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960760"
 ---
 # <a name="lesson-1-submitting-a-sample-flat-file"></a><span data-ttu-id="05e78-102">レッスン 1: サンプル フラット ファイルを送信します。</span><span class="sxs-lookup"><span data-stu-id="05e78-102">Lesson 1: Submitting a Sample Flat File</span></span>
 <span data-ttu-id="05e78-103">ソリューションをテストするサンプル フラット ファイルを送信するとします。</span><span class="sxs-lookup"><span data-stu-id="05e78-103">You submit a sample flat file to test your solution.</span></span>  

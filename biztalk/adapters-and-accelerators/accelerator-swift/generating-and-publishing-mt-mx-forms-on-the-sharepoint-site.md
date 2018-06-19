@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "25965352"
 ---
 # <a name="generating-and-publishing-mtmx-forms-on-the-sharepoint-site"></a><span data-ttu-id="7b36f-102">生成して、SharePoint サイトで MT/MX フォームの発行</span><span class="sxs-lookup"><span data-stu-id="7b36f-102">Generating and Publishing MT/MX Forms on the SharePoint Site</span></span>
 <span data-ttu-id="7b36f-103">**生成して、SharePoint サイトで MT/MX フォームを公開します。**</span><span class="sxs-lookup"><span data-stu-id="7b36f-103">**To generate and publish MT/MX forms on a SharePoint site:**</span></span>  
@@ -42,17 +43,17 @@ ms.lasthandoff: 04/18/2018
   
 8.  <span data-ttu-id="7b36f-119">Manifest.xsf に移動**ツール]、[フォームのオプション - > セキュリティおよび信頼**メニュー オプション。</span><span class="sxs-lookup"><span data-stu-id="7b36f-119">In the manifest.xsf, go to **Tools ->Form Options-> Security and Trust** menu option.</span></span> <span data-ttu-id="7b36f-120">チェック、**完全信頼**オプションは、アクセス許可を有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="7b36f-120">Check the **Full Trust** option must be enabled for the permission.</span></span>  
   
-9. <span data-ttu-id="7b36f-121">選択、**このフォーム テンプレートの署名**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="7b36f-121">Select the **Sign this form Template** checkbox.</span></span> <span data-ttu-id="7b36f-122">をクリックして**証明書を選択**です。</span><span class="sxs-lookup"><span data-stu-id="7b36f-122">Click **Select certificate**.</span></span> <span data-ttu-id="7b36f-123">これには、フォームに署名する証明書を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b36f-123">In this, select the certificate with which you want to sign the form.</span></span> <span data-ttu-id="7b36f-124">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b36f-124">Click **OK**.</span></span>  
+9. <span data-ttu-id="7b36f-121">選択、**このフォーム テンプレートの署名**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="7b36f-121">Select the **Sign this form Template** checkbox.</span></span> <span data-ttu-id="7b36f-122">をクリックして**証明書を選択**です。</span><span class="sxs-lookup"><span data-stu-id="7b36f-122">Click **Select certificate**.</span></span> <span data-ttu-id="7b36f-123">これには、フォームに署名する証明書を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b36f-123">In this, select the certificate with which you want to sign the form.</span></span> <span data-ttu-id="7b36f-124">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b36f-124">Click **OK**.</span></span>  
   
 10. <span data-ttu-id="7b36f-125">保存**manifest.xsf**です。</span><span class="sxs-lookup"><span data-stu-id="7b36f-125">Save **manifest.xsf**.</span></span>  
   
-11. <span data-ttu-id="7b36f-126">移動して**ビューのデザイン タスク]-> [**です。</span><span class="sxs-lookup"><span data-stu-id="7b36f-126">Go to **View -> Design Tasks**.</span></span> <span data-ttu-id="7b36f-127">デザイン タスク ウィンドウで、をクリックして**フォーム テンプレートの発行**オプション。</span><span class="sxs-lookup"><span data-stu-id="7b36f-127">On the Design Tasks pane, click **Publish Form Template** option.</span></span>  
+11. <span data-ttu-id="7b36f-126">移動して**ビューのデザイン タスク]-> [** です。</span><span class="sxs-lookup"><span data-stu-id="7b36f-126">Go to **View -> Design Tasks**.</span></span> <span data-ttu-id="7b36f-127">デザイン タスク ウィンドウで、をクリックして**フォーム テンプレートの発行**オプション。</span><span class="sxs-lookup"><span data-stu-id="7b36f-127">On the Design Tasks pane, click **Publish Form Template** option.</span></span>  
   
 12. <span data-ttu-id="7b36f-128">発行ウィザード ウィンドウで次のように選択します。**ネットワークの場所に** をクリック**次**です。</span><span class="sxs-lookup"><span data-stu-id="7b36f-128">In the publishing wizard window, select **To a network location** and click **Next**.</span></span>  
   
-13. <span data-ttu-id="7b36f-129">フォーム テンプレートのパスとファイル名 ボックスで、次のように入力します **http://localhost/sites/BASSite/Templates/ \<MessageType\>.xsn**および種類**\<MessageType\>**フォーム。テンプレート名 テキスト ボックスをクリック**次**です。</span><span class="sxs-lookup"><span data-stu-id="7b36f-129">In the Form template path and file name textbox, type **http://localhost/sites/BASSite/Templates/\<MessageType\>.xsn** and type **\<MessageType\>** in the Form Template name textbox and click **Next**.</span></span>  
+13. <span data-ttu-id="7b36f-129">フォーム テンプレートのパスとファイル名 ボックスで、次のように入力します **http://localhost/sites/BASSite/Templates/ \<MessageType\>.xsn**および種類**\<MessageType\>** フォーム。テンプレート名 テキスト ボックスをクリック**次**です。</span><span class="sxs-lookup"><span data-stu-id="7b36f-129">In the Form template path and file name textbox, type **http://localhost/sites/BASSite/Templates/\<MessageType\>.xsn** and type **\<MessageType\>** in the Form Template name textbox and click **Next**.</span></span>  
   
-14. <span data-ttu-id="7b36f-130">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b36f-130">Click **Next**.</span></span>  
+14. <span data-ttu-id="7b36f-130">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b36f-130">Click **Next**.</span></span>  
   
 15. <span data-ttu-id="7b36f-131">をクリックして**発行および閉じる**です。</span><span class="sxs-lookup"><span data-stu-id="7b36f-131">Click **Publish and close**.</span></span>  
   

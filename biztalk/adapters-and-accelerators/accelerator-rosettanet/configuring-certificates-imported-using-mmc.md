@@ -1,11 +1,11 @@
 ---
-title: "MMC を使用してインポートされた証明書の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: MMC を使用してインポートされた証明書の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - decryption certificates
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - signing certificates
 - certificates, importing
 ms.assetid: 64dbfbcf-6026-4c68-a93a-f483ec52deac
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961672"
 ---
 # <a name="configuring-certificates-imported-using-mmc"></a><span data-ttu-id="98922-102">MMC を使用してインポートされた証明書を構成します。</span><span class="sxs-lookup"><span data-stu-id="98922-102">Configuring Certificates Imported Using MMC</span></span>
 <span data-ttu-id="98922-103">[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] 管理コンソール (MMC) の証明書スナップインを使用して証明書をインポートしたら、それらの使用法を構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="98922-103">After you have imported certificates using the Certificates snap-in for the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Management Console (MMC), you must configure their use.</span></span> <span data-ttu-id="98922-104">そのためには、BizTalk グループ、BizTalk ホストと分離ホスト サービス アカウント、PIP (Partner Interface Processes)、取引先アグリーメント、およびパートナーを構成します。</span><span class="sxs-lookup"><span data-stu-id="98922-104">This requires configuring the BizTalk Group, the BizTalk Host and Isolated Host service accounts, Partner Interface Processes (PIPs), trading partner agreements, and partners.</span></span> <span data-ttu-id="98922-105">次の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="98922-105">You must perform the following steps:</span></span>  

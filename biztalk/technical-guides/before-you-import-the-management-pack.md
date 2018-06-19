@@ -1,14 +1,14 @@
 ---
-title: "管理パックをインポートする前に |Microsoft ドキュメント"
-ms.custom: 
+title: 管理パックをインポートする前に |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e3c13dd-613a-4885-a5d2-ad3ee492ff25
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299450"
 ---
 # <a name="before-you-import-the-management-pack"></a><span data-ttu-id="845fa-102">管理パックをインポートする前に</span><span class="sxs-lookup"><span data-stu-id="845fa-102">Before You Import the Management Pack</span></span>
 <span data-ttu-id="845fa-103">ベスト プラクティスとしてを使用しているオペレーティング システム用の Windows Server 管理パックをインポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="845fa-103">As a best practice, you should import the Windows Server Management Pack for the operating system that you are using.</span></span> <span data-ttu-id="845fa-104">インポートする前に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックは、次の操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="845fa-104">Before you import the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack, take the following actions:</span></span>  

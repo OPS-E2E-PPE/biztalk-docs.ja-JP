@@ -1,17 +1,17 @@
 ---
-title: "BRE のルールの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: BRE のルールの展開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, BRE policies
 - BRE policies, deploying
 ms.assetid: 3a66aa57-e7f9-400f-963c-eda12fb1e659
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967896"
 ---
 # <a name="deploying-bre-rules"></a><span data-ttu-id="aa172-102">BRE のルールの展開</span><span class="sxs-lookup"><span data-stu-id="aa172-102">Deploying BRE Rules</span></span>
 <span data-ttu-id="aa172-103">使用される BRE 規則を展開する必要があります[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]SWIFT メッセージを処理するオーケストレーションです。</span><span class="sxs-lookup"><span data-stu-id="aa172-103">You must deploy the BRE rules used by [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] orchestrations to process SWIFT messages.</span></span>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="aa172-142">BRE 配置ユーティリティ] ダイアログ ボックスで、[**参照**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-142">In the BRE Deployment Utility dialog box, click **Browse**.</span></span>  
   
-3.  <span data-ttu-id="aa172-143">.NET グローバル アセンブリ キャッシュ ダイアログ ボックスで、選択で配置したプロジェクト アセンブリ[A4SWIFT のスキーマを展開する](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)、クリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-143">In the .NET Global Assembly Cache dialog box, select the project assembly that you deployed in [Deploying A4SWIFT Schemas](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md), and then click **OK**.</span></span>  
+3.  <span data-ttu-id="aa172-143">.NET グローバル アセンブリ キャッシュ ダイアログ ボックスで、選択で配置したプロジェクト アセンブリ[A4SWIFT のスキーマを展開する](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)、クリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="aa172-143">In the .NET Global Assembly Cache dialog box, select the project assembly that you deployed in [Deploying A4SWIFT Schemas](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md), and then click **OK**.</span></span>  
   
 4.  <span data-ttu-id="aa172-144">BRE 配置ユーティリティ] ダイアログ ボックスで、[**展開**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-144">In the BRE Deployment Utility dialog box, click **Deploy**.</span></span>  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  <span data-ttu-id="aa172-150">開いている[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラー。</span><span class="sxs-lookup"><span data-stu-id="aa172-150">Open [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer.</span></span> <span data-ttu-id="aa172-151">参照\<*ドライブ*\>: \Documents and settings \all \all データとログ ファイル BREDeploymentLog.txt に表示されるそのドライブを確認します。</span><span class="sxs-lookup"><span data-stu-id="aa172-151">Browse to \<*drive*\>:\Documents and Settings\All Users\Application Data, and confirm that the log file BREDeploymentLog.txt appears in that drive.</span></span>  
   
-7.  <span data-ttu-id="aa172-152">ルール エンジン更新サービスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="aa172-152">Restart the Rule Engine Update Service.</span></span> <span data-ttu-id="aa172-153">クリックして**開始**をクリックすると、**実行**入力、 **services.msc**をクリックすると、 **[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-153">Do so by clicking **Start**, clicking **Run**, entering **services.msc**, and clicking **OK**.</span></span> <span data-ttu-id="aa172-154">**サービス (ローカル)**ウィンドウを右クリックして**ルール エンジン更新サービス**、クリックして**再起動**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-154">In the **Services (Local)** window, right-click **Rule Engine Update Service**, and then click **Restart**.</span></span>  
+7.  <span data-ttu-id="aa172-152">ルール エンジン更新サービスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="aa172-152">Restart the Rule Engine Update Service.</span></span> <span data-ttu-id="aa172-153">クリックして**開始**をクリックすると、**実行**入力、 **services.msc**をクリックすると、 **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="aa172-153">Do so by clicking **Start**, clicking **Run**, entering **services.msc**, and clicking **OK**.</span></span> <span data-ttu-id="aa172-154">**サービス (ローカル)** ウィンドウを右クリックして**ルール エンジン更新サービス**、クリックして**再起動**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-154">In the **Services (Local)** window, right-click **Rule Engine Update Service**, and then click **Restart**.</span></span>  
   
 ### <a name="deploying-bre-rules-one-at-a-time"></a><span data-ttu-id="aa172-155">一度に 1 つずつ BRE 規則を展開します。</span><span class="sxs-lookup"><span data-stu-id="aa172-155">Deploying BRE Rules One at a Time</span></span>  
  <span data-ttu-id="aa172-156">ルール エンジン展開ウィザードを使用して、ボキャブラリを公開し、一度に 1 つのポリシーを展開することができます。</span><span class="sxs-lookup"><span data-stu-id="aa172-156">You can use the Rules Engine Deployment Wizard to publish vocabularies and deploy policies one at a time.</span></span> <span data-ttu-id="aa172-157">ボキャブラリ、このプロセスには、インポートして、1 つのステップ内のファイルからデータベースにボキャブラリを公開が含まれます。</span><span class="sxs-lookup"><span data-stu-id="aa172-157">For a vocabulary, this process involves importing and publishing the vocabulary to the database from a file in one step.</span></span> <span data-ttu-id="aa172-158">インポートおよび 1 つの手順で、ポリシーをパブリッシュする別のステップに展開するポリシー、プロセスが含まれます。</span><span class="sxs-lookup"><span data-stu-id="aa172-158">For a policy, the process involves importing and publishing the policy in one step, and then deploying it in another step.</span></span>  
@@ -94,7 +95,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="aa172-162">展開タスク ページで、をクリックして**インポート ポリシー/ボキャブラリをファイルからデータベースに発行し、**、クリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-162">On the Deployment Task page, click **Import and publish Policy/Vocabulary to database from file**, and then click **Next**.</span></span>  
   
-4.  <span data-ttu-id="aa172-163">ポリシー ストア] ページで、 **SQL サーバー名] ボックス**のサーバーを選択し、[、**選択したサーバーの構成データベース**一覧で、[ **BizTalkRuleEngineDb**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-163">On the Policy Store page, in the **SQL Server Name list**, select your server, and in the **Configuration Database on selected server** list, select **BizTalkRuleEngineDb**.</span></span> <span data-ttu-id="aa172-164">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aa172-164">Click **Next**.</span></span>  
+4.  <span data-ttu-id="aa172-163">ポリシー ストア] ページで、 **SQL サーバー名] ボックス**のサーバーを選択し、[、**選択したサーバーの構成データベース**一覧で、[ **BizTalkRuleEngineDb**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-163">On the Policy Store page, in the **SQL Server Name list**, select your server, and in the **Configuration Database on selected server** list, select **BizTalkRuleEngineDb**.</span></span> <span data-ttu-id="aa172-164">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aa172-164">Click **Next**.</span></span>  
   
 5.  <span data-ttu-id="aa172-165">インポート ルール エンジン ポリシー/ボキャブラリ ファイル ページで、をクリックして**参照**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-165">On the Import Rules Engine Policy/Vocabulary file page, click **Browse**.</span></span>  
   
@@ -120,7 +121,7 @@ ms.lasthandoff: 11/28/2017
   
 13. <span data-ttu-id="aa172-176">展開タスク ページで、をクリックして**ポリシーの展開**、クリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-176">On the Deployment Task page, click **Deploy Policy**, and then click **Next**.</span></span>  
   
-14. <span data-ttu-id="aa172-177">ポリシー ストア] ページで、 **SQL サーバー名] ボックス**のサーバーを選択し、[、**選択したサーバーの構成データベース**一覧で、[ **BizTalkRuleEngineDb**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-177">On the Policy Store page, in the **SQL Server Name list**, select your server, and in the **Configuration Database on selected server** list, select **BizTalkRuleEngineDb**.</span></span> <span data-ttu-id="aa172-178">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aa172-178">Click **Next**.</span></span>  
+14. <span data-ttu-id="aa172-177">ポリシー ストア] ページで、 **SQL サーバー名] ボックス**のサーバーを選択し、[、**選択したサーバーの構成データベース**一覧で、[ **BizTalkRuleEngineDb**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-177">On the Policy Store page, in the **SQL Server Name list**, select your server, and in the **Configuration Database on selected server** list, select **BizTalkRuleEngineDb**.</span></span> <span data-ttu-id="aa172-178">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aa172-178">Click **Next**.</span></span>  
   
 15. <span data-ttu-id="aa172-179">ポリシーの展開 ページで、下矢印をクリックして の横に、**ルール エンジン ポリシー**テキスト ボックスは、発行すると、したポリシーを選択し、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-179">On the Deploy Policy page, click the down arrow next to the **Rules Engine Policy** text box, select the policy you just published, and then click **Next**.</span></span>  
   
@@ -128,6 +129,6 @@ ms.lasthandoff: 11/28/2017
   
 17. <span data-ttu-id="aa172-181">**ポリシー/ボキャブラリをインポートする** ページで、コマンドが成功し、をクリックすることを確認**次**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-181">On the **Importing Policy/Vocabulary** page, verify that the command succeeded, and then click **Next**.</span></span>  
   
-18. <span data-ttu-id="aa172-182">**[完了]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aa172-182">Click **Finish**.</span></span>  
+18. <span data-ttu-id="aa172-182">**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aa172-182">Click **Finish**.</span></span>  
   
-19. <span data-ttu-id="aa172-183">再起動、**ルール エンジン更新サービス**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-183">Restart the **Rule Engine Update Service**.</span></span> <span data-ttu-id="aa172-184">クリックして**開始**をクリックすると、**実行**入力、 **services.msc**をクリックすると、 **[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-184">Do so by clicking **Start**, clicking **Run**, entering **services.msc**, and clicking **OK**.</span></span> <span data-ttu-id="aa172-185">**サービス (ローカル)**ウィンドウを右クリックして**ルール エンジン更新サービス**、クリックして**再起動**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-185">In the **Services (Local)** window, right-click **Rule Engine Update Service**, and then click **Restart**.</span></span>
+19. <span data-ttu-id="aa172-183">再起動、**ルール エンジン更新サービス**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-183">Restart the **Rule Engine Update Service**.</span></span> <span data-ttu-id="aa172-184">クリックして**開始**をクリックすると、**実行**入力、 **services.msc**をクリックすると、 **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="aa172-184">Do so by clicking **Start**, clicking **Run**, entering **services.msc**, and clicking **OK**.</span></span> <span data-ttu-id="aa172-185">**サービス (ローカル)** ウィンドウを右クリックして**ルール エンジン更新サービス**、クリックして**再起動**です。</span><span class="sxs-lookup"><span data-stu-id="aa172-185">In the **Services (Local)** window, right-click **Rule Engine Update Service**, and then click **Restart**.</span></span>

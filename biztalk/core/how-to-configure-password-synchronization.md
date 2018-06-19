@@ -1,11 +1,11 @@
 ---
-title: "パスワード同期を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: パスワード同期を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Password Synchronization [SSO], replay files
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Password Synchronization [SSO], configuring
 - configuring, Password Synchronization [SSO]
 ms.assetid: 04000dfc-02b9-4d50-babe-8bc8a07a33b7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,13 +24,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968912"
 ---
 # <a name="how-to-configure-password-synchronization"></a><span data-ttu-id="a58ff-102">パスワード同期を構成する方法</span><span class="sxs-lookup"><span data-stu-id="a58ff-102">How to Configure Password Synchronization</span></span>
 <span data-ttu-id="a58ff-103">SSOCONFIG コマンド ライン ユーティリティを使用すると、パスワード同期の設定を構成できます。</span><span class="sxs-lookup"><span data-stu-id="a58ff-103">Use the SSOCONFIG command line utility to configure your password synchronization settings.</span></span>  
   
 ### <a name="to-specify-the-directory-for-replay-files"></a><span data-ttu-id="a58ff-104">再生ファイルのディレクトリを指定するには</span><span class="sxs-lookup"><span data-stu-id="a58ff-104">To specify the directory for replay files</span></span>  
   
-1.  <span data-ttu-id="a58ff-105">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a58ff-105">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="a58ff-105">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a58ff-105">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="a58ff-106">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a58ff-106">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="to-display-or-change-maximum-password-synchronization-age"></a><span data-ttu-id="a58ff-112">パスワード同期の最大有効期間を表示または変更するには</span><span class="sxs-lookup"><span data-stu-id="a58ff-112">To display or change maximum password synchronization age</span></span>  
   
-1.  <span data-ttu-id="a58ff-113">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a58ff-113">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="a58ff-113">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a58ff-113">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="a58ff-114">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="a58ff-114">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   

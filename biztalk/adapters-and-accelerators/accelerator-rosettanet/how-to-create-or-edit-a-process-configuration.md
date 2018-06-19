@@ -1,11 +1,11 @@
 ---
-title: "作成またはプロセス構成を編集する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 作成またはプロセス構成を編集する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process configuration, modifying
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - creating, process configuration
 - modifying, process configuration
 ms.assetid: ef6160f1-f2f0-42ff-a516-7818c9d79d26
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962608"
 ---
 # <a name="how-to-create-or-edit-a-process-configuration"></a><span data-ttu-id="5399f-102">作成またはプロセス構成を編集する方法</span><span class="sxs-lookup"><span data-stu-id="5399f-102">How to Create or Edit a Process Configuration</span></span>
 <span data-ttu-id="5399f-103">ここでは、プロセス構成の作成方法または編集方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="5399f-103">This topic describes how to create or edit a process configuration.</span></span>  
@@ -93,9 +94,9 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="5399f-359">プロセス構成を編集して、をクリックするを右クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="5399f-359">Right-click the process configuration that you want to edit, and then click **Properties**.</span></span>  
   
-5.  <span data-ttu-id="5399f-360">*\<プロセス構成\>*プロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブで、に応じて設定を変更します。必須。</span><span class="sxs-lookup"><span data-stu-id="5399f-360">In the *\<process configuration\>* Properties dialog box, on the **General** and **Contact Properties** tabs, change the settings as required.</span></span> <span data-ttu-id="5399f-361">これらの設定の詳細については、上の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5399f-361">For information about these settings, see the preceding table.</span></span>  
+5.  <span data-ttu-id="5399f-360">*\<プロセス構成\>* プロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブで、に応じて設定を変更します。必須。</span><span class="sxs-lookup"><span data-stu-id="5399f-360">In the *\<process configuration\>* Properties dialog box, on the **General** and **Contact Properties** tabs, change the settings as required.</span></span> <span data-ttu-id="5399f-361">これらの設定の詳細については、上の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5399f-361">For information about these settings, see the preceding table.</span></span>  
   
-6.  <span data-ttu-id="5399f-362">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5399f-362">Click **OK**.</span></span>  
+6.  <span data-ttu-id="5399f-362">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5399f-362">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="5399f-363">参照</span><span class="sxs-lookup"><span data-stu-id="5399f-363">See Also</span></span>  
  <span data-ttu-id="5399f-364">[PIP 仕様を使用して、プロセス構成を作成するには](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="5399f-364">[Using the PIP Specification to Create a Process Configuration](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md) </span></span>  

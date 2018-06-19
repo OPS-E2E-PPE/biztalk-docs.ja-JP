@@ -1,14 +1,14 @@
 ---
-title: "手順 6: 受信確認を配信する送信ポートの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 6: 受信確認を配信する送信ポートの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 739b3e60-db56-46e9-a6b1-0acbe0c08f55
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208002"
 ---
 # <a name="step-6-create-a-send-port-to-deliver-acknowledgments"></a><span data-ttu-id="f8a31-102">手順 6: 受信確認を配信する送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="f8a31-102">Step 6: Create a Send Port to Deliver Acknowledgments</span></span>
 <span data-ttu-id="f8a31-103">この手順では、バッチの発生元への受信確認を返信するポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="f8a31-103">In this step, you create a port to send acknowledgments back to the source of the batch.</span></span>  
@@ -49,7 +50,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="f8a31-133">**送信請求応答を有効になっています。**</span><span class="sxs-lookup"><span data-stu-id="f8a31-133">**Solicit Response Enabled**</span></span>|<span data-ttu-id="f8a31-134">としてフィールドを保持**いいえ**です。</span><span class="sxs-lookup"><span data-stu-id="f8a31-134">Keep the field as **No**.</span></span>|  
     |<span data-ttu-id="f8a31-135">**送信の受信確認の場所 (URI)**</span><span class="sxs-lookup"><span data-stu-id="f8a31-135">**Submit Receive Location (URI) for ACK**</span></span>|<span data-ttu-id="f8a31-136">型**127.0.0.1:65535**</span><span class="sxs-lookup"><span data-stu-id="f8a31-136">Type **127.0.0.1:65535**</span></span>|  
   
-4.  <span data-ttu-id="f8a31-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f8a31-137">Click **OK**.</span></span>  
+4.  <span data-ttu-id="f8a31-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f8a31-137">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="f8a31-138">送信ポートのプロパティ] ダイアログ ボックスの**送信パイプライン**[ **BTAHL72XPipelines.BTAHL72XSendPipeline**です。</span><span class="sxs-lookup"><span data-stu-id="f8a31-138">In the Send Port Properties dialog box, for **Send pipeline**, select **BTAHL72XPipelines.BTAHL72XSendPipeline**.</span></span>  
   

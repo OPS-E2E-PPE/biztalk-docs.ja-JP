@@ -1,18 +1,18 @@
 ---
-title: "暗号化されたメッセージを BizTalk Server で使用される証明書 |Microsoft ドキュメント"
-ms.custom: 
+title: 暗号化されたメッセージを BizTalk Server で使用される証明書 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, message flow [encrypted messages]
 - encrypted messages
 - messages, encryption
 ms.assetid: 44b06488-4ecd-436d-af3d-b95e285ecb3e
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966368"
 ---
 # <a name="certificates-that-biztalk-server-uses-for-encrypted-messages"></a><span data-ttu-id="55a6f-102">BizTalk Server で暗号化されたメッセージに使用する証明書</span><span class="sxs-lookup"><span data-stu-id="55a6f-102">Certificates that BizTalk Server Uses for Encrypted Messages</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="55a6f-103"> では、S/MIME (Secure Multipurpose Internet Mail Extensions) を使用した公開キーによる送信メッセージの暗号化と、受信メッセージの解読がサポートされます。</span><span class="sxs-lookup"><span data-stu-id="55a6f-103"> supports public key encryption of outbound messages and decryption of inbound messages based on Secure Multipurpose Internet Mail Extensions (S/MIME).</span></span> <span data-ttu-id="55a6f-104">送信メッセージの暗号化には S/MIME バージョン 3 が使用され、受信メッセージの解読には S/MIME バージョン 2 と 3 が使用されます。</span><span class="sxs-lookup"><span data-stu-id="55a6f-104">BizTalk Server uses S/MIME version 3 for encryption of outbound messages, and S/MIME versions 2 and 3 for decryption of inbound messages.</span></span>  

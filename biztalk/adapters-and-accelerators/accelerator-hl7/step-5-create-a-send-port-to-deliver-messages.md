@@ -1,14 +1,14 @@
 ---
-title: "手順 5: メッセージを配信する送信ポートの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: メッセージを配信する送信ポートの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f56ad7a7-5c77-4191-a001-691e5e0652a1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207602"
 ---
 # <a name="step-5-create-a-send-port-to-deliver-messages"></a><span data-ttu-id="ab87a-102">手順 5: メッセージを配信する送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="ab87a-102">Step 5: Create a Send Port to Deliver Messages</span></span>
 <span data-ttu-id="ab87a-103">このステップでは、作成し、受信したバッチに含まれている個々 のメッセージを送信するためのポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="ab87a-103">In this step, you create and configure a port for sending the individual messages contained in the received batch.</span></span> <span data-ttu-id="ab87a-104">チュートリアルの後半では、送信元パーティ (Tutorial_BatchSource) の断片化を有効[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー。</span><span class="sxs-lookup"><span data-stu-id="ab87a-104">Later in the tutorial, you will enable fragmentation for the originating party (Tutorial_BatchSource) in [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer.</span></span> <span data-ttu-id="ab87a-105">その結果、BizTalk 統合エンジンをフラグメント化、バッチを個別のメッセージと[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]この手順で作成した送信ポート経由でそれらのメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="ab87a-105">As a result, the BizTalk integration engine will fragment the batch into individual messages, and [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] will send those messages over the send port that you create in this step.</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="ab87a-133">**送信請求応答を有効になっています。**</span><span class="sxs-lookup"><span data-stu-id="ab87a-133">**Solicit Response Enabled**</span></span>|<span data-ttu-id="ab87a-134">フィールドの右側をクリックして**送信請求-応答の有効な**、し、**はい**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="ab87a-134">Click the field to the right of **Solicit Response Enabled**, and then select **Yes** from the drop-down list.</span></span>|  
     |<span data-ttu-id="ab87a-135">**送信の受信確認の場所 (URI)**</span><span class="sxs-lookup"><span data-stu-id="ab87a-135">**Submit Receive Location (URI) for ACK**</span></span>|<span data-ttu-id="ab87a-136">型**127.0.0.1:65535**</span><span class="sxs-lookup"><span data-stu-id="ab87a-136">Type**127.0.0.1:65535**</span></span>|  
   
-4.  <span data-ttu-id="ab87a-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab87a-137">Click **OK**.</span></span>  
+4.  <span data-ttu-id="ab87a-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab87a-137">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="ab87a-138">送信ポートのプロパティ] ダイアログ ボックスの**送信パイプライン**[ **BTAHL72XPipelines.BTAHL72XSendPipeline**です。</span><span class="sxs-lookup"><span data-stu-id="ab87a-138">In the Send Port Properties dialog box, for **Send pipeline**, select **BTAHL72XPipelines.BTAHL72XSendPipeline**.</span></span>  
   
@@ -56,15 +57,15 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="ab87a-140">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ab87a-140">Use this</span></span>|<span data-ttu-id="ab87a-141">目的</span><span class="sxs-lookup"><span data-stu-id="ab87a-141">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="ab87a-142">**プロパティ**(1 行目)</span><span class="sxs-lookup"><span data-stu-id="ab87a-142">**Property** (first line)</span></span>|<span data-ttu-id="ab87a-143">下のフィールドをクリックして**プロパティ**、し、 **BTS です。MessageType**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="ab87a-143">Click the field under **Property**, and then select **BTS.MessageType** from the drop-down list.</span></span>|  
-    |<span data-ttu-id="ab87a-144">**演算子**</span><span class="sxs-lookup"><span data-stu-id="ab87a-144">**Operator**</span></span>|<span data-ttu-id="ab87a-145">選択**! =**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="ab87a-145">Select **!=** from the drop-down list.</span></span>|  
+    |<span data-ttu-id="ab87a-144">**演算子**</span><span class="sxs-lookup"><span data-stu-id="ab87a-144">**Operator**</span></span>|<span data-ttu-id="ab87a-145">選択 **! =** ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="ab87a-145">Select **!=** from the drop-down list.</span></span>|  
     |<span data-ttu-id="ab87a-146">**値**</span><span class="sxs-lookup"><span data-stu-id="ab87a-146">**Value**</span></span>|<span data-ttu-id="ab87a-147">型**http://microsoft.com/HealthCare/HL7/2X#ACK_24_GLO_DEF**です。</span><span class="sxs-lookup"><span data-stu-id="ab87a-147">Type **http://microsoft.com/HealthCare/HL7/2X#ACK_24_GLO_DEF**.</span></span>|  
     |<span data-ttu-id="ab87a-148">**グループ化**</span><span class="sxs-lookup"><span data-stu-id="ab87a-148">**Group By**</span></span>|<span data-ttu-id="ab87a-149">選択**AND**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="ab87a-149">Select **AND** from the drop-down list.</span></span>|  
     |<span data-ttu-id="ab87a-150">**プロパティ**(2 番目の行)</span><span class="sxs-lookup"><span data-stu-id="ab87a-150">**Property** (second line)</span></span>|<span data-ttu-id="ab87a-151">下のフィールドをクリックして**プロパティ**、し、 **BTS です。MessageType**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="ab87a-151">Click the field under **Property**, and then select **BTS.MessageType** from the drop-down list.</span></span>|  
-    |<span data-ttu-id="ab87a-152">**演算子**</span><span class="sxs-lookup"><span data-stu-id="ab87a-152">**Operator**</span></span>|<span data-ttu-id="ab87a-153">選択**! =**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="ab87a-153">Select **!=** from the drop-down list.</span></span>|  
+    |<span data-ttu-id="ab87a-152">**演算子**</span><span class="sxs-lookup"><span data-stu-id="ab87a-152">**Operator**</span></span>|<span data-ttu-id="ab87a-153">選択 **! =** ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="ab87a-153">Select **!=** from the drop-down list.</span></span>|  
     |<span data-ttu-id="ab87a-154">**値**</span><span class="sxs-lookup"><span data-stu-id="ab87a-154">**Value**</span></span>|<span data-ttu-id="ab87a-155">型**http://microsoft.com/HealthCare/HL7/2X#ACK_25_GLO_DEF です。**</span><span class="sxs-lookup"><span data-stu-id="ab87a-155">Type **http://microsoft.com/HealthCare/HL7/2X#ACK_25_GLO_DEF.**</span></span>|  
     |<span data-ttu-id="ab87a-156">**グループ化**</span><span class="sxs-lookup"><span data-stu-id="ab87a-156">**Group By**</span></span>|<span data-ttu-id="ab87a-157">選択**と**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="ab87a-157">Select **And** from the drop-down list.</span></span>|  
     |<span data-ttu-id="ab87a-158">**プロパティ**(3 行目)</span><span class="sxs-lookup"><span data-stu-id="ab87a-158">**Property** (third line)</span></span>|<span data-ttu-id="ab87a-159">下にある 2 番目の行でフィールドをクリックして**プロパティ**、し、 **BTS です。MessageType**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="ab87a-159">Click the field on the second line under **Property**, and then select **BTS.MessageType** from the drop-down list.</span></span>|  
-    |<span data-ttu-id="ab87a-160">**演算子**</span><span class="sxs-lookup"><span data-stu-id="ab87a-160">**Operator**</span></span>|<span data-ttu-id="ab87a-161">選択**! =**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="ab87a-161">Select **!=** from the drop-down list.</span></span>|  
+    |<span data-ttu-id="ab87a-160">**演算子**</span><span class="sxs-lookup"><span data-stu-id="ab87a-160">**Operator**</span></span>|<span data-ttu-id="ab87a-161">選択 **! =** ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="ab87a-161">Select **!=** from the drop-down list.</span></span>|  
     |<span data-ttu-id="ab87a-162">**値**</span><span class="sxs-lookup"><span data-stu-id="ab87a-162">**Value**</span></span>|<span data-ttu-id="ab87a-163">型**StaticAck**です。</span><span class="sxs-lookup"><span data-stu-id="ab87a-163">Type **StaticAck**.</span></span>|  
   
 7.  <span data-ttu-id="ab87a-164">**Enter**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab87a-164">Click **Enter**.</span></span> <span data-ttu-id="ab87a-165">クリックしてダイアログ ボックスの下部にあるペインで、フィルター式の入力が正しいことを確認してください**OK**です。</span><span class="sxs-lookup"><span data-stu-id="ab87a-165">In the pane at the bottom of the dialog box, verify that you entered the filter expression correctly, and then click **OK**.</span></span>  

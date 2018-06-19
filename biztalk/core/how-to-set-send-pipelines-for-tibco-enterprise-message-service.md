@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: dc9746babaa80520b2a99948c5796c9b064899e0
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015585"
 ---
 # <a name="how-to-set-send-pipelines-for-tibco-enterprise-message-service"></a><span data-ttu-id="dfd2d-101">TIBCO Enterprise Message Service 用の送信パイプラインを設定する方法</span><span class="sxs-lookup"><span data-stu-id="dfd2d-101">How to Set Send Pipelines for TIBCO Enterprise Message Service</span></span>
 <span data-ttu-id="dfd2d-102">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service では、送信パイプラインに XMLTransmit、受信パイプラインに XMLReceive をそれぞれ選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dfd2d-102">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service requires that you select XMLTransmit and XMLReceive for the Send and Receive pipelines respectively.</span></span>  
@@ -25,9 +26,9 @@ ms.lasthandoff: 11/07/2017
   
     3.  <span data-ttu-id="dfd2d-109">**送信ハンドラー**ドロップダウン リストで、URI を選択します。</span><span class="sxs-lookup"><span data-stu-id="dfd2d-109">From the **Send handler** drop-down list, select the URI.</span></span>  
   
-    4.  <span data-ttu-id="dfd2d-110">送信パイプラインのドロップダウン リストから選択**[microsoft.biztalk.defaultpipelines.xmltransmit]**です。</span><span class="sxs-lookup"><span data-stu-id="dfd2d-110">From the Send Pipeline drop-down list, select **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**.</span></span>  
+    4.  <span data-ttu-id="dfd2d-110">送信パイプラインのドロップダウン リストから選択 **[microsoft.biztalk.defaultpipelines.xmltransmit]** です。</span><span class="sxs-lookup"><span data-stu-id="dfd2d-110">From the Send Pipeline drop-down list, select **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**.</span></span>  
   
-    5.  <span data-ttu-id="dfd2d-111">**受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**です。</span><span class="sxs-lookup"><span data-stu-id="dfd2d-111">From the **Receive Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
+    5.  <span data-ttu-id="dfd2d-111">**受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** です。</span><span class="sxs-lookup"><span data-stu-id="dfd2d-111">From the **Receive Pipeline** drop-down list, select **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.</span></span>  
   
-4.  <span data-ttu-id="dfd2d-112">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dfd2d-112">Click **OK**.</span></span>  
+4.  <span data-ttu-id="dfd2d-112">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dfd2d-112">Click **OK**.</span></span>  
   

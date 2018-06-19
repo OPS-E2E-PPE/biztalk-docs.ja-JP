@@ -1,18 +1,18 @@
 ---
-title: "スキーマでのカスタム データ型の作成 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマでのカスタム データ型の作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - 2.X schemas, creating Z data types [Z objects]
 - data types, creating [Z objects]
 - Z objects, creating Z data types
 ms.assetid: e545c849-d414-4d5d-bb56-d3f9d5238c70
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25960680"
 ---
 # <a name="creating-custom-data-types-in-schemas"></a><span data-ttu-id="5ad63-102">スキーマでカスタム データ型を作成します。</span><span class="sxs-lookup"><span data-stu-id="5ad63-102">Creating Custom Data Types in Schemas</span></span>
 <span data-ttu-id="5ad63-103">カスタム データ型を作成するには、datatypes_ で\<*バージョン*\>.xsd 共通のスキーマです。</span><span class="sxs-lookup"><span data-stu-id="5ad63-103">You can create a custom data type in the datatypes_\<*version*\>.xsd common schema.</span></span> <span data-ttu-id="5ad63-104">既存のデータ型、基本データ型、またはテーブルで定義された列挙体のカスタム データ型を作成できます。</span><span class="sxs-lookup"><span data-stu-id="5ad63-104">You can base a custom data type on an existing data type, a base data type, or on an enumeration defined in a table.</span></span>  

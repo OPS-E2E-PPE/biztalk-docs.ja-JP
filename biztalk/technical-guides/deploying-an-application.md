@@ -1,14 +1,14 @@
 ---
-title: "アプリケーションを展開する |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションを展開する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 04bb4496-b1e9-400b-a849-a355381849ff
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300418"
 ---
 # <a name="deploying-an-application"></a><span data-ttu-id="a2475-102">アプリケーションを展開します。</span><span class="sxs-lookup"><span data-stu-id="a2475-102">Deploying an Application</span></span>
 <span data-ttu-id="a2475-103">展開は、ロジスティック分布のすべての必要なコンポーネントを必要とするシステムに使用できるようにするアプリケーションのアイテムです。</span><span class="sxs-lookup"><span data-stu-id="a2475-103">Deployment is the logistical distribution of application artifacts to ensure all necessary components are available to the systems that require them.</span></span> <span data-ttu-id="a2475-104">これらの成果物には、BizTalk Server アセンブリ、.NET アセンブリ、スキーマ、マップ、バインド、ビジネス ルール、および証明書が含まれます。</span><span class="sxs-lookup"><span data-stu-id="a2475-104">These artifacts include BizTalk Server assemblies, .NET assemblies, schemas, maps, bindings, business rules, and certificates.</span></span> <span data-ttu-id="a2475-105">BizTalk アプリケーションを利用して他のコンピューター (別の環境にアプリケーションを転送) するときに、グループまたはステージングのために追加する成果物のロールアウトを支援します。</span><span class="sxs-lookup"><span data-stu-id="a2475-105">The BizTalk application can be leveraged to help roll out artifacts to other computers added to the group or for staging (when transporting an application to another environment).</span></span>  

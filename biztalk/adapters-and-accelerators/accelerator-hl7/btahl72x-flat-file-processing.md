@@ -1,11 +1,11 @@
 ---
-title: "フラット ファイルの処理は BTAHL72X |Microsoft ドキュメント"
-ms.custom: 
+title: フラット ファイルの処理は BTAHL72X |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ACKs
@@ -34,7 +34,7 @@ helpviewer_keywords:
 - 2.X messages, header validation
 - 2.X messages, parsing flat files
 ms.assetid: c92e2f70-0bfa-4bc8-8044-4a6e62cabee3
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -43,6 +43,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962088"
 ---
 # <a name="btahl72x-flat-file-processing"></a><span data-ttu-id="4510b-102">BTAHL72X フラット ファイル処理</span><span class="sxs-lookup"><span data-stu-id="4510b-102">BTAHL72X Flat File Processing</span></span>
 <span data-ttu-id="4510b-103">次のコンポーネントで[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) プロセス HL7 2.X (HL7 エンコード) メッセージ。</span><span class="sxs-lookup"><span data-stu-id="4510b-103">The following components in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) process HL7 2.X (HL7-encoded) messages:</span></span>  

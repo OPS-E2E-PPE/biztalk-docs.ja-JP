@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964268"
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-oracle-database-adapter"></a><span data-ttu-id="6bf5f-102">Oracle データベース アダプターで WCF チャネル モデルの概要</span><span class="sxs-lookup"><span data-stu-id="6bf5f-102">Overview of the WCF channel model with the Oracle Database adapter</span></span>
 <span data-ttu-id="6bf5f-103">操作の呼び出しに、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]コードが WCF クライアントとして機能し、アダプターに送信操作を送信します。</span><span class="sxs-lookup"><span data-stu-id="6bf5f-103">To invoke operations on the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)], your code acts as a WCF client and sends outbound operations to the adapter.</span></span> <span data-ttu-id="6bf5f-104">WCF チャネル モデルでは、コードは、チャネル経由で要求メッセージを送信することによって、アダプターでの操作を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="6bf5f-104">In the WCF channel model, your code invokes operations on the adapter by sending a request message over a channel.</span></span>  

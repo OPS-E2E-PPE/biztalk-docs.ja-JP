@@ -17,11 +17,12 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "25963120"
 ---
 # <a name="publishing-the-mx-message-instance-file-creating-new-messages"></a><span data-ttu-id="d1191-102">(新しいメッセージの作成) MX メッセージ インスタンスのファイルの発行</span><span class="sxs-lookup"><span data-stu-id="d1191-102">Publishing the MX Message Instance File (Creating New Messages)</span></span>
 <span data-ttu-id="d1191-103">**ファイルをパブリッシュ MX メッセージ インスタンス。**</span><span class="sxs-lookup"><span data-stu-id="d1191-103">**To publish the MX message instance file:**</span></span>  
   
-1.  <span data-ttu-id="d1191-104">前の手順で生成された InfoPath フォーム テンプレートの出力フォルダーに移動して**.\\< MessageType\>\TemplateDS\InfoPath フォーム テンプレート**です。</span><span class="sxs-lookup"><span data-stu-id="d1191-104">Go to output folder of the InfoPath form template generated in the previous step **..\\<MessageType\>\TemplateDS\InfoPath Form Template**.</span></span>  
+1.  <span data-ttu-id="d1191-104">前の手順で生成された InfoPath フォーム テンプレートの出力フォルダーに移動して **.\\< MessageType\>\TemplateDS\InfoPath フォーム テンプレート**です。</span><span class="sxs-lookup"><span data-stu-id="d1191-104">Go to output folder of the InfoPath form template generated in the previous step **..\\<MessageType\>\TemplateDS\InfoPath Form Template**.</span></span>  
   
 2.  <span data-ttu-id="d1191-105">Internet Explorer で、開く **http://localhost/sites/BASSite/New%20SWIFT%20MX%20Messages**です。</span><span class="sxs-lookup"><span data-stu-id="d1191-105">In Internet Explorer, open **http://localhost/sites/BASSite/New%20SWIFT%20MX%20Messages**.</span></span>  
   
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/18/2018
   
 4.  <span data-ttu-id="d1191-107">ドキュメントのアップロード] ウィンドウで、[**参照**です。</span><span class="sxs-lookup"><span data-stu-id="d1191-107">In the Upload Document window, click **Browse**.</span></span>  
   
-5.  <span data-ttu-id="d1191-108">ファイルの選択 ダイアログ ボックスで前の手順で作成した InfoPath 形式の出力フォルダーに移動**.\\< MessageType\>\TemplateDS\InfoPath フォーム テンプレート**です。</span><span class="sxs-lookup"><span data-stu-id="d1191-108">In the Choose file dialog box, move to the output folder of the InfoPath form generated in the previous step **..\\<MessageType\>\TemplateDS\InfoPath Form Template**.</span></span> <span data-ttu-id="d1191-109">選択、 \<MessageType\>.xml pacs.004.001.01.xml などのファイルおよびクリックして**開く**です。</span><span class="sxs-lookup"><span data-stu-id="d1191-109">Select the \<MessageType\>.xml file such as pacs.004.001.01.xml, and then click **Open**.</span></span>  
+5.  <span data-ttu-id="d1191-108">ファイルの選択 ダイアログ ボックスで前の手順で作成した InfoPath 形式の出力フォルダーに移動 **.\\< MessageType\>\TemplateDS\InfoPath フォーム テンプレート**です。</span><span class="sxs-lookup"><span data-stu-id="d1191-108">In the Choose file dialog box, move to the output folder of the InfoPath form generated in the previous step **..\\<MessageType\>\TemplateDS\InfoPath Form Template**.</span></span> <span data-ttu-id="d1191-109">選択、 \<MessageType\>.xml pacs.004.001.01.xml などのファイルおよびクリックして**開く**です。</span><span class="sxs-lookup"><span data-stu-id="d1191-109">Select the \<MessageType\>.xml file such as pacs.004.001.01.xml, and then click **Open**.</span></span>  
   
 6.  <span data-ttu-id="d1191-110">ドキュメントのアップロード] ウィンドウで、[ **OK**です。</span><span class="sxs-lookup"><span data-stu-id="d1191-110">In the Upload Document window, click **OK**.</span></span>  
   

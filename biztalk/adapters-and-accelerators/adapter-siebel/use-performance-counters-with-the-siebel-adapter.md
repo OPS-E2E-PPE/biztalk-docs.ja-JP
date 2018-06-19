@@ -1,18 +1,18 @@
 ---
-title: "Siebel アダプターのパフォーマンス カウンターを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターのパフォーマンス カウンターを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance counters, troubleshooting
 - troubleshooting, performance counters
 - performance counters, using
 ms.assetid: 7930e8f6-5099-4a9c-b38a-13c9902635a6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962480"
 ---
 # <a name="use-performance-counters-with-the-siebel-adapter"></a><span data-ttu-id="9099a-102">Siebel アダプターのパフォーマンス カウンターを使用します。</span><span class="sxs-lookup"><span data-stu-id="9099a-102">Use Performance Counters with the Siebel adapter</span></span>
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]<span data-ttu-id="9099a-103">クライアントは、アダプターのパフォーマンスを測定するのにパフォーマンス カウンターを使用できます。</span><span class="sxs-lookup"><span data-stu-id="9099a-103"> clients can use the performance counters to gauge the performance of the adapters.</span></span> <span data-ttu-id="9099a-104">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムによって作成のパフォーマンス カウンター カテゴリ"[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]"アダプター パックのインストールと共にします。</span><span class="sxs-lookup"><span data-stu-id="9099a-104">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup program creates the performance counter category "[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]" along with the Adapter Pack installation.</span></span>  

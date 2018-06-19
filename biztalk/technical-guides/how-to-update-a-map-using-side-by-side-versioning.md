@@ -1,14 +1,14 @@
 ---
-title: "サイド バイ サイドのバージョン管理を使用してマップを更新する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: サイド バイ サイドのバージョン管理を使用してマップを更新する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7b0e377f-92ab-483e-9f3c-222c7b5ac0b1
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22298274"
 ---
 # <a name="how-to-update-a-map-using-side-by-side-versioning"></a><span data-ttu-id="85556-102">サイド バイ サイドのバージョン管理を使用してマップを更新する方法</span><span class="sxs-lookup"><span data-stu-id="85556-102">How to Update a Map Using Side-by-Side Versioning</span></span>
 <span data-ttu-id="85556-103">その場合は、バインドに使用されるバージョンを含めるに厳密な名前の完全修飾 (FQSN) で、マップなど、いくつかの BizTalk アイテムが選択されます。</span><span class="sxs-lookup"><span data-stu-id="85556-103">Some BizTalk artifacts, such as maps, are chosen by fully-qualified strong name (FQSN), in which case the bindings include the version used.</span></span> <span data-ttu-id="85556-104">これにより、サイド バイ サイドで共存させる 2 つ以上のマップ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="85556-104">This allows two or more maps to coexist side by side in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="85556-105">その結果、受信場所のプロパティにマッピングが受信または送信マップのマップの 1 つを送信ポートのプロパティで選択できます。</span><span class="sxs-lookup"><span data-stu-id="85556-105">As a result, you can select one of the maps for inbound mapping in the receive location properties or outbound mapping in the send port properties.</span></span>  
@@ -62,7 +63,7 @@ ms.lasthandoff: 01/17/2018
   
 2.  <span data-ttu-id="85556-132">**メモ帳**の**ファイル** メニューのをクリックして**開く**です。</span><span class="sxs-lookup"><span data-stu-id="85556-132">In **Notepad**, on the **File** menu, click **Open**.</span></span> <span data-ttu-id="85556-133">**開く** ダイアログ ボックスで、マップ ファイルをクリックして、変更する **開く**します。</span><span class="sxs-lookup"><span data-stu-id="85556-133">In the **Open** dialog box, select the map file you want to modify, and then click **Open**.</span></span>  
   
-3.  <span data-ttu-id="85556-134">**[編集]** メニューの **[検索]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85556-134">On the **Edit** menu, click **Find**.</span></span> <span data-ttu-id="85556-135">**検索**  ダイアログ ボックスで、「 **アセンブリ =**,  をクリックし、 **次を検索**します。</span><span class="sxs-lookup"><span data-stu-id="85556-135">In the **Find** dialog box, enter **Assembly=**, and then click **Find Next**.</span></span>  
+3.  <span data-ttu-id="85556-134">**[編集]** メニューの **[検索]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85556-134">On the **Edit** menu, click **Find**.</span></span> <span data-ttu-id="85556-135">**検索**  ダイアログ ボックスで、「 **アセンブリ =**,  をクリックし、 **次を検索**します。</span><span class="sxs-lookup"><span data-stu-id="85556-135">In the **Find** dialog box, enter **Assembly=**, and then click **Find Next**.</span></span>  
   
 4.  <span data-ttu-id="85556-136">外部アセンブリへのスクリプト参照がある場合、メモ帳では次のような XML 要素が検索されます。</span><span class="sxs-lookup"><span data-stu-id="85556-136">If there is a script reference to an external assembly, Notepad should find an XML element like the following:</span></span>  
   

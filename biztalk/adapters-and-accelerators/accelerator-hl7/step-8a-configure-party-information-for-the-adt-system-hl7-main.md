@@ -1,14 +1,14 @@
 ---
-title: "手順 8 a.: ADT System_hl7_main のパーティ情報を構成する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 8 a.: ADT System_hl7_main のパーティ情報を構成する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 693fda8b-9a99-4a6e-89b7-294f84676350
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960640"
 ---
 # <a name="step-8a-configure-party-information-for-the-adt-systemhl7main"></a><span data-ttu-id="28deb-102">手順 8 a.: ADT System_hl7_main のパーティ情報を構成します。</span><span class="sxs-lookup"><span data-stu-id="28deb-102">Step 8A: Configure Party Information for the ADT System_hl7_main</span></span>
 <span data-ttu-id="28deb-103">この手順では、ADT システム用のパーティ情報を構成します。</span><span class="sxs-lookup"><span data-stu-id="28deb-103">In this step, you configure the party information for the ADT System.</span></span>  

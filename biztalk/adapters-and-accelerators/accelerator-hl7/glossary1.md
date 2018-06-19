@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server で HL7 アクセラレータの用語集 |Microsoft ドキュメント"
-description: "共通の用語と定義を把握し、BizTalk Accelerator 用 HL7 の使い方について"
-ms.custom: 
+title: BizTalk Server で HL7 アクセラレータの用語集 |Microsoft ドキュメント
+description: 共通の用語と定義を把握し、BizTalk Accelerator 用 HL7 の使い方について
+ms.custom: ''
 ms.date: 08/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ffb9c18a-5fe5-448f-b115-0973e9d12952
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204954"
 ---
 # <a name="glossary"></a><span data-ttu-id="1a56e-103">用語集</span><span class="sxs-lookup"><span data-stu-id="1a56e-103">Glossary</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="1a56e-104">BizTalk Accelerator 用 HL7 は、次の用語と定義を使用します。</span><span class="sxs-lookup"><span data-stu-id="1a56e-104"> BizTalk Accelerator for HL7 uses the following terms and definitions.</span></span>

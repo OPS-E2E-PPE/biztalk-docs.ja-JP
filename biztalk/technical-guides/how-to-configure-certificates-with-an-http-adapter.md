@@ -1,14 +1,14 @@
 ---
-title: "HTTP アダプターでの証明書を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: HTTP アダプターでの証明書を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dc2f454f-22b5-4113-9a23-e00a816d5e48
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297842"
 ---
 # <a name="how-to-configure-certificates-with-an-http-adapter"></a><span data-ttu-id="9ce5d-102">HTTP アダプターでの証明書を構成する方法</span><span class="sxs-lookup"><span data-stu-id="9ce5d-102">How to Configure Certificates with an HTTP Adapter</span></span>
 <span data-ttu-id="9ce5d-103">HTTP 送信アダプタを受け付けるか、クライアント証明書を必要とするサーバーとの接続をセキュリティで保護できます。</span><span class="sxs-lookup"><span data-stu-id="9ce5d-103">The HTTP send adapter can help secure a connection with servers that accept or require client certificates.</span></span> <span data-ttu-id="9ce5d-104">クライアント証明書を指定した場合、HTTP 送信アダプタではクライアント証明書を必要とするか受け付けるサーバーに接続するときに、この証明書を使用します。</span><span class="sxs-lookup"><span data-stu-id="9ce5d-104">If a client certificate is specified, the HTTP send adapter uses the certificate when connecting with servers that require or accept client certificates.</span></span> <span data-ttu-id="9ce5d-105">クライアント証明書が指定されていない場合、移行先サーバーには、クライアント証明書が必要です、送信者が認証されていないと、HTTP 送信アダプターがメッセージの送信に失敗して、標準の再試行ロジックに従います。</span><span class="sxs-lookup"><span data-stu-id="9ce5d-105">If the client certificate is not specified and the destination server requires client certificates, the sender is not authenticated and the HTTP send adapter fails to send the message and follows the standard retry logic.</span></span>  
@@ -42,4 +43,4 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="9ce5d-119">**SSL クライアント証明書の拇印**、適切な拇印を入力します。</span><span class="sxs-lookup"><span data-stu-id="9ce5d-119">In **SSL client certificate thumbprint**, enter the appropriate thumbprint.</span></span>  
   
-7.  <span data-ttu-id="9ce5d-120">をクリックして**[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="9ce5d-120">Click **OK**, and then click **OK** again.</span></span>
+7.  <span data-ttu-id="9ce5d-120">をクリックして **[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="9ce5d-120">Click **OK**, and then click **OK** again.</span></span>

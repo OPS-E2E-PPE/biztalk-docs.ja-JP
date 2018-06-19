@@ -1,17 +1,17 @@
 ---
-title: "Business Rules こんにちは World2 (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: Business Rules こんにちは World2 (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, business rules
 - business rules, examples
 ms.assetid: 2a88a2a0-8cb6-4373-8441-0ab04345a477
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967304"
 ---
 # <a name="business-rules-hello-world2-biztalk-server-sample"></a><span data-ttu-id="4c39f-102">Business Rules こんにちは World2 (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="4c39f-102">Business Rules Hello World2 (BizTalk Server Sample)</span></span>
 <span data-ttu-id="4c39f-103">Business Rules こんにちは World2 サンプルのデモで Business Rules こんにちは World1 サンプルを拡張する方法のバージョンに次のように公開、および共有 SQL ルール ストア、およびポリシーを使用して、実行する方法に設定 XML 規則を展開、**ポリシー**オブジェクトビジネス ルール フレームワークによって提供されます。</span><span class="sxs-lookup"><span data-stu-id="4c39f-103">The Business Rules Hello World2 sample extends the Business Rules Hello World1 sample by demonstrating how to version, publish, and deploy the XML rule set to the shared SQL rule store, and how to run the policy using the **Policy** object provided by the Business Rules Framework.</span></span> <span data-ttu-id="4c39f-104">また、実行中のポリシーを動的に更新する方法についても示します。</span><span class="sxs-lookup"><span data-stu-id="4c39f-104">The sample also demonstrates dynamic policy updates in action.</span></span>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 11/28/2017
 >  <span data-ttu-id="4c39f-119">この SDK のすべてのサンプルに関する重要な情報は、次を参照してください。[サンプル](../core/samples-in-the-sdk.md)です。</span><span class="sxs-lookup"><span data-stu-id="4c39f-119">For important information about all samples in this SDK, see [Samples](../core/samples-in-the-sdk.md).</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="4c39f-120">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="4c39f-120">Where to Find This Sample</span></span>  
- <span data-ttu-id="4c39f-121">*\<パスのサンプル\>*\Business Rules\Business こんにちは World2\ のルール</span><span class="sxs-lookup"><span data-stu-id="4c39f-121">*\<Samples Path\>*\Business Rules\Business Rules Hello World2\\</span></span>  
+ <span data-ttu-id="4c39f-121">*\<パスのサンプル\>* \Business Rules\Business こんにちは World2\ のルール</span><span class="sxs-lookup"><span data-stu-id="4c39f-121">*\<Samples Path\>* \Business Rules\Business Rules Hello World2\\</span></span>  
   
  <span data-ttu-id="4c39f-122">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="4c39f-122">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="4c39f-146">コマンド ウィンドウで、次のフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="4c39f-146">In a command window, navigate to the following folder:</span></span>  
   
-     <span data-ttu-id="4c39f-147">*\<パスのサンプル\>*\Business Rules\Business こんにちは World2\ のルール</span><span class="sxs-lookup"><span data-stu-id="4c39f-147">*\<Samples Path\>*\Business Rules\Business Rules Hello World2\\</span></span>  
+     <span data-ttu-id="4c39f-147">*\<パスのサンプル\>* \Business Rules\Business こんにちは World2\ のルール</span><span class="sxs-lookup"><span data-stu-id="4c39f-147">*\<Samples Path\>* \Business Rules\Business Rules Hello World2\\</span></span>  
   
 2.  <span data-ttu-id="4c39f-148">次の操作を実行する Setup.bat ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="4c39f-148">Run the file Setup.bat, which performs the following actions:</span></span>  
   
@@ -93,7 +94,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="4c39f-156">コマンド ウィンドウで、次のフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="4c39f-156">In a command window, navigate to the following folder:</span></span>  
   
-     <span data-ttu-id="4c39f-157">*\<パスのサンプル\>*\Business Rules\Business こんにちは World2\bin\Debug\ のルール</span><span class="sxs-lookup"><span data-stu-id="4c39f-157">*\<Samples Path\>*\Business Rules\Business Rules Hello World2\bin\Debug\\</span></span>  
+     <span data-ttu-id="4c39f-157">*\<パスのサンプル\>* \Business Rules\Business こんにちは World2\bin\Debug\ のルール</span><span class="sxs-lookup"><span data-stu-id="4c39f-157">*\<Samples Path\>* \Business Rules\Business Rules Hello World2\bin\Debug\\</span></span>  
   
 2.  <span data-ttu-id="4c39f-158">コマンド ウィンドウで、このサンプルのファイルの名前を入力します (**BusinessRulesHelloWorld2.exe**)、ENTER キーを押します。</span><span class="sxs-lookup"><span data-stu-id="4c39f-158">In the command window, type the name of the file for this sample (**BusinessRulesHelloWorld2.exe**), and then press ENTER.</span></span>  
   
@@ -131,9 +132,9 @@ Press the ENTER to continue after updating the policy...
   
 3.  <span data-ttu-id="4c39f-169">**ポリシー エクスプ ローラー**、下、 **SampleRuleSet**ノード、ノードを右クリックして**バージョン 1.0-展開済み**、クリックして**コピー**です。</span><span class="sxs-lookup"><span data-stu-id="4c39f-169">In **Policy Explorer**, below the **SampleRuleSet** node, right-click the node **Version 1.0 – Deployed**, and then click **Copy**.</span></span>  
   
-4.  <span data-ttu-id="4c39f-170">右クリック**SampleRuleSet**、クリックして**貼り付け (ポリシーのバージョン)**です。</span><span class="sxs-lookup"><span data-stu-id="4c39f-170">Right-click **SampleRuleSet**, and then click **Paste (Policy Version)**.</span></span>  
+4.  <span data-ttu-id="4c39f-170">右クリック**SampleRuleSet**、クリックして**貼り付け (ポリシーのバージョン)** です。</span><span class="sxs-lookup"><span data-stu-id="4c39f-170">Right-click **SampleRuleSet**, and then click **Paste (Policy Version)**.</span></span>  
   
-5.  <span data-ttu-id="4c39f-171">ルール条件とアクションは、必要に応じて変更できます。</span><span class="sxs-lookup"><span data-stu-id="4c39f-171">You can change the rule condition and action to meet your needs.</span></span> <span data-ttu-id="4c39f-172">この手順をクリックして**rule1**で**バージョン 1.1 (未保存)**です。</span><span class="sxs-lookup"><span data-stu-id="4c39f-172">For this procedure, click **rule1** in **Version 1.1 (not saved)**.</span></span> <span data-ttu-id="4c39f-173">右側のペインで右クリック**条件**、順にクリック**論理否定**です。</span><span class="sxs-lookup"><span data-stu-id="4c39f-173">In the right pane, right-click **Conditions**, and then click **Add Logical NOT**.</span></span> <span data-ttu-id="4c39f-174">追加、**論理否定**操作を**等しくない**述語を使用すると、**等しい**述語。</span><span class="sxs-lookup"><span data-stu-id="4c39f-174">Adding a **Logical NOT** operation to **Not Equal** to predicate is equivalent to using an **Equal** predicate.</span></span>  
+5.  <span data-ttu-id="4c39f-171">ルール条件とアクションは、必要に応じて変更できます。</span><span class="sxs-lookup"><span data-stu-id="4c39f-171">You can change the rule condition and action to meet your needs.</span></span> <span data-ttu-id="4c39f-172">この手順をクリックして**rule1**で**バージョン 1.1 (未保存)** です。</span><span class="sxs-lookup"><span data-stu-id="4c39f-172">For this procedure, click **rule1** in **Version 1.1 (not saved)**.</span></span> <span data-ttu-id="4c39f-173">右側のペインで右クリック**条件**、順にクリック**論理否定**です。</span><span class="sxs-lookup"><span data-stu-id="4c39f-173">In the right pane, right-click **Conditions**, and then click **Add Logical NOT**.</span></span> <span data-ttu-id="4c39f-174">追加、**論理否定**操作を**等しくない**述語を使用すると、**等しい**述語。</span><span class="sxs-lookup"><span data-stu-id="4c39f-174">Adding a **Logical NOT** operation to **Not Equal** to predicate is equivalent to using an **Equal** predicate.</span></span>  
   
 6.  <span data-ttu-id="4c39f-175">ノードを右クリックして**バージョン 1.1 (未保存)**、クリックして**保存**です。</span><span class="sxs-lookup"><span data-stu-id="4c39f-175">Right-click the node **Version 1.1(not saved)**, and then click **Save**.</span></span> <span data-ttu-id="4c39f-176">再度右クリックし、をクリックして**発行**です。</span><span class="sxs-lookup"><span data-stu-id="4c39f-176">Right-click again, and then click **Publish**.</span></span> <span data-ttu-id="4c39f-177">3 番目の時間を右クリックし、をクリックして**展開**です。</span><span class="sxs-lookup"><span data-stu-id="4c39f-177">Right-click a third time and click **Deploy**.</span></span>  
   

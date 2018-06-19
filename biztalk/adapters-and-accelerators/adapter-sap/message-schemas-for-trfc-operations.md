@@ -1,18 +1,18 @@
 ---
-title: "TRFC 操作のメッセージ スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: TRFC 操作のメッセージ スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tRFC operations, message structure for
 - tRFC operations, message schemas for
 - tRFC operations, message actions for
 ms.assetid: 0e269555-f0a1-40ae-a1b5-d8c4981e730f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964920"
 ---
 # <a name="message-schemas-for-trfc-operations"></a><span data-ttu-id="d717b-102">TRFC 操作のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="d717b-102">Message Schemas for tRFC Operations</span></span>
 <span data-ttu-id="d717b-103">Transactiostructnal リモート関数呼び出し (tRFCs) は、作業 (LUW) の論理単位での RFC 呼び出しの実行に使用されます。</span><span class="sxs-lookup"><span data-stu-id="d717b-103">Transactiostructnal Remote Function Calls (tRFCs) are used to execute RFC calls in a logical unit of work (LUW).</span></span> <span data-ttu-id="d717b-104">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]受信 tRFC の呼び出しのため LUW あたり複数 tRFCs をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="d717b-104">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports multiple tRFCs per LUW for inbound tRFC calls.</span></span> <span data-ttu-id="d717b-105">送信 (クライアント) tRFC の呼び出しのため、アダプターは、LUW; で tRFC は 1 つのみをサポートできます。そのための LUW に作成 SAP クライアント tRFC の呼び出しごとにします。</span><span class="sxs-lookup"><span data-stu-id="d717b-105">For outbound (client) tRFC calls, the adapter can support only a single tRFC in an LUW; it therefore for creates an LUW on SAP for each client tRFC call.</span></span> <span data-ttu-id="d717b-106">方法の詳細については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]tRFC 操作をサポートするを参照してください[SAP で tRFCs に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)です。</span><span class="sxs-lookup"><span data-stu-id="d717b-106">For more information about how the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports tRFC operations, see [Operations on tRFCs in SAP](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md).</span></span> <span data-ttu-id="d717b-107">このセクションでは、メッセージ スキーマと tRFC 操作のアクションについて説明します。</span><span class="sxs-lookup"><span data-stu-id="d717b-107">This section describes the message schemas and actions for tRFC operations.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "厳密な名前のアセンブリ キー ファイルを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 厳密な名前のアセンブリ キー ファイルを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5778a8ec-f5f7-4ae1-a57e-99f6503f044c
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968808"
 ---
 # <a name="how-to-configure-a-strong-name-assembly-key-file"></a><span data-ttu-id="68ff9-102">厳密な名前のアセンブリ キー ファイルを構成する方法</span><span class="sxs-lookup"><span data-stu-id="68ff9-102">How to Configure a Strong Name Assembly Key File</span></span>
 <span data-ttu-id="68ff9-103">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] では、BizTalk ソリューションを展開するプロセスで、まずアセンブリのビルドが行われます。</span><span class="sxs-lookup"><span data-stu-id="68ff9-103">In the process of deploying a BizTalk solution, [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] first builds the assemblies.</span></span> <span data-ttu-id="68ff9-104">このとき各アセンブリは、厳密に署名されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="68ff9-104">The deployment process requires that each assembly is strongly signed.</span></span> <span data-ttu-id="68ff9-105">厳密な名前のアセンブリ キー ファイルとプロジェクトを関連付けることによって、アセンブリを厳密署名できます。</span><span class="sxs-lookup"><span data-stu-id="68ff9-105">You can strongly sign your assemblies by associating the project with a strong name assembly key file.</span></span> <span data-ttu-id="68ff9-106">まだ行っていない場合は、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] からソリューションを展開する前に、次の手順に従って、厳密な名前のアセンブリ キー ファイルを生成し、ソリューション内の各プロジェクトに割り当ててください。</span><span class="sxs-lookup"><span data-stu-id="68ff9-106">If you haven't already done so, before deploying a solution from [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], use the following procedure to generate a strong name assembly key file and assign it to each project in the solution.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "エンベロープ スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: エンベロープ スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: af296c30-95dc-4fef-9aa3-bea2f2cd8caf
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970608"
 ---
 # <a name="envelope-schemas"></a><span data-ttu-id="ea749-102">エンベロープ スキーマ</span><span class="sxs-lookup"><span data-stu-id="ea749-102">Envelope Schemas</span></span>
 

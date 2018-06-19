@@ -1,14 +1,14 @@
 ---
-title: "データベース参照の更新 |Microsoft ドキュメント"
-ms.custom: 
+title: データベース参照の更新 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 72d9de25-d47d-4e6c-8883-07ac944e4727
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302490"
 ---
 # <a name="updating-database-references"></a><span data-ttu-id="7a6b8-102">データベース参照の更新</span><span class="sxs-lookup"><span data-stu-id="7a6b8-102">Updating Database References</span></span>
 <span data-ttu-id="7a6b8-103">このセクションではさまざまな参照を更新する方法を説明[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]Analysis Services データベースおよび BAM データベースのデータベースが復元された後にします。</span><span class="sxs-lookup"><span data-stu-id="7a6b8-103">This section describes how to update references to various [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Analysis Services databases and BAM databases after the databases have been restored.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "SQL Server エージェント ジョブおよびデータベースの監視 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL Server エージェント ジョブおよびデータベースの監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2eb5f318-10d3-4f43-991d-9bff2ebc20e2
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299202"
 ---
 # <a name="monitoring-sql-server-agent-jobs-and-databases"></a><span data-ttu-id="4f6d7-102">SQL Server エージェント ジョブとデータベースの監視</span><span class="sxs-lookup"><span data-stu-id="4f6d7-102">Monitoring SQL Server Agent Jobs and Databases</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="4f6d7-103">複数含まれています[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]動作状況と状態、サーバーを保つために重要な機能を実行するエージェント ジョブ。</span><span class="sxs-lookup"><span data-stu-id="4f6d7-103"> includes multiple [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Agent jobs that perform important functions to keep your servers operational and healthy.</span></span> <span data-ttu-id="4f6d7-104">これらのジョブの状態を監視し、エラーが発生せずに動作していることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4f6d7-104">You should monitor the health of these jobs and ensure that they are running without errors.</span></span> <span data-ttu-id="4f6d7-105">Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理パックには、SQL データベースなどの項目を監視するためのルールが含まれています。 および[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]エージェント ジョブ。</span><span class="sxs-lookup"><span data-stu-id="4f6d7-105">The Microsoft [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Management Pack contains rules for monitoring items such as SQL databases and [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Agent jobs.</span></span> <span data-ttu-id="4f6d7-106">構成する必要があります、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]すべての包括的な監視用管理パック[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースおよび[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]エージェント ジョブ。</span><span class="sxs-lookup"><span data-stu-id="4f6d7-106">You should configure the [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Management Pack for comprehensive monitoring of all [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases and [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Agent jobs.</span></span>  

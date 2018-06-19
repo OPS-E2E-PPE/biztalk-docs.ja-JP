@@ -1,11 +1,11 @@
 ---
-title: "Ack を受信するため、送信ポートの設定 |Microsoft ドキュメント"
-ms.custom: 
+title: Ack を受信するため、送信ポートの設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, acknowledgements
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - acknowledgements, send ports
 - send ports, creating
 ms.assetid: bb683e72-36e2-4a8f-acc2-8b37ed23746f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961608"
 ---
 # <a name="setting-up-a-send-port-for-receiving-acks"></a><span data-ttu-id="aaad8-102">Ack を受信するための送信ポートの設定</span><span class="sxs-lookup"><span data-stu-id="aaad8-102">Setting Up a Send Port for Receiving ACKs</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="aaad8-103">BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 一方向の送信ポートで受信確認 (ACK) が表示されることができます。</span><span class="sxs-lookup"><span data-stu-id="aaad8-103"> BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) can receive acknowledgments (ACK) on a one-way send port.</span></span> <span data-ttu-id="aaad8-104">同じ接続の Ack を受信するための新しい一方向の送信ポートを設定するときは、その送信を関連付ける必要があります、一方向のポートの受信ポート。</span><span class="sxs-lookup"><span data-stu-id="aaad8-104">When you set up a new one-way send port for receiving ACKs on the same connection, you must associate that send port with a one-way receive port.</span></span>  
@@ -55,12 +56,12 @@ ms.lasthandoff: 01/17/2018
 6.  <span data-ttu-id="aaad8-125">**送信請求-応答を有効に****はい**です。</span><span class="sxs-lookup"><span data-stu-id="aaad8-125">For **Solicit Response Enabled**, select **Yes**.</span></span> <span data-ttu-id="aaad8-126">ままにして**送信受信場所 (URI) を確認**空、クリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="aaad8-126">Leave **Submit Receive Location (URI) for ACK** blank, and then click **OK**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="aaad8-127">ままにした場合**受信場所の送信**空白、BTAHL7 URI の入力、デフォルト**TwoWayAckReceiveLocation**です。</span><span class="sxs-lookup"><span data-stu-id="aaad8-127">When you leave **Submit Receive Location** blank, BTAHL7 enters the URI for the default **TwoWayAckReceiveLocation**.</span></span> <span data-ttu-id="aaad8-128">その後のクリックを確認する**[ok]**の手順 6 でをクリックして**構成**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="aaad8-128">You can verify that after clicking **OK** in step 6, by clicking **Configuration** again.</span></span> <span data-ttu-id="aaad8-129">URI **TwoWayAckReceiveLocation**に入力されます (127.0.0.1:65535)**送信受信場所 (URI) を ACK**です。</span><span class="sxs-lookup"><span data-stu-id="aaad8-129">The URI for **TwoWayAckReceiveLocation** (127.0.0.1:65535) will be entered in **Submit Receive Location (URI) for ACK**.</span></span>  
+    >  <span data-ttu-id="aaad8-127">ままにした場合**受信場所の送信**空白、BTAHL7 URI の入力、デフォルト**TwoWayAckReceiveLocation**です。</span><span class="sxs-lookup"><span data-stu-id="aaad8-127">When you leave **Submit Receive Location** blank, BTAHL7 enters the URI for the default **TwoWayAckReceiveLocation**.</span></span> <span data-ttu-id="aaad8-128">その後のクリックを確認する **[ok]** の手順 6 でをクリックして**構成**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="aaad8-128">You can verify that after clicking **OK** in step 6, by clicking **Configuration** again.</span></span> <span data-ttu-id="aaad8-129">URI **TwoWayAckReceiveLocation**に入力されます (127.0.0.1:65535)**送信受信場所 (URI) を ACK**です。</span><span class="sxs-lookup"><span data-stu-id="aaad8-129">The URI for **TwoWayAckReceiveLocation** (127.0.0.1:65535) will be entered in **Submit Receive Location (URI) for ACK**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="aaad8-130">受信確認をサブスクライブする送信ポートを作成する必要がありますか、ACK は、サブスクリプションが見つからなかったため、一時停止状態で表示されます。</span><span class="sxs-lookup"><span data-stu-id="aaad8-130">You must create a send port to subscribe to the ACK received, or the ACK will be seen in a suspended state, because no subscriptions were found.</span></span> <span data-ttu-id="aaad8-131">送信ポートで受信確認をサブスクライブする場合は、たとえば、フィルターを使用して**BTS です。MessageType = = \< *MessageType* \>** と**BTS です。ReceivePortName = = \< *ReceivePort*\>**です。</span><span class="sxs-lookup"><span data-stu-id="aaad8-131">To subscribe to the ACK received by the send port, use filters, for example, **BTS.MessageType == \<*MessageType*\>** and **BTS.ReceivePortName == \<*ReceivePort*\>**.</span></span> <span data-ttu-id="aaad8-132">メッセージの種類は、静的な確認の場合、 **StaticAck**です。</span><span class="sxs-lookup"><span data-stu-id="aaad8-132">For static ACKs, the message type is **StaticAck**.</span></span>  
+    >  <span data-ttu-id="aaad8-130">受信確認をサブスクライブする送信ポートを作成する必要がありますか、ACK は、サブスクリプションが見つからなかったため、一時停止状態で表示されます。</span><span class="sxs-lookup"><span data-stu-id="aaad8-130">You must create a send port to subscribe to the ACK received, or the ACK will be seen in a suspended state, because no subscriptions were found.</span></span> <span data-ttu-id="aaad8-131">送信ポートで受信確認をサブスクライブする場合は、たとえば、フィルターを使用して**BTS です。MessageType = = \< *MessageType* \>** と**BTS です。ReceivePortName = = \< *ReceivePort*\>** です。</span><span class="sxs-lookup"><span data-stu-id="aaad8-131">To subscribe to the ACK received by the send port, use filters, for example, **BTS.MessageType == \<*MessageType*\>** and **BTS.ReceivePortName == \<*ReceivePort*\>**.</span></span> <span data-ttu-id="aaad8-132">メッセージの種類は、静的な確認の場合、 **StaticAck**です。</span><span class="sxs-lookup"><span data-stu-id="aaad8-132">For static ACKs, the message type is **StaticAck**.</span></span>  
   
-7.  <span data-ttu-id="aaad8-133">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaad8-133">Click **OK**.</span></span>  
+7.  <span data-ttu-id="aaad8-133">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaad8-133">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="aaad8-134">参照</span><span class="sxs-lookup"><span data-stu-id="aaad8-134">See Also</span></span>  
  <span data-ttu-id="aaad8-135">[作成して、受信確認の処理](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md) </span><span class="sxs-lookup"><span data-stu-id="aaad8-135">[Creating and Processing Acknowledgments](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md) </span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "エンコードのサポートを拡張 |Microsoft ドキュメント"
-ms.custom: 
+title: エンコードのサポートを拡張 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93a40fa6-d0da-416e-97fb-675ddde3f005
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204834"
 ---
 # <a name="extended-encoding-support"></a><span data-ttu-id="56999-102">エンコードのサポートを拡張</span><span class="sxs-lookup"><span data-stu-id="56999-102">Extended Encoding Support</span></span>
 <span data-ttu-id="56999-103">既定で、HL7 の受信パイプライン、BTAHL72X がのみ ASCII エンコードをサポートします。</span><span class="sxs-lookup"><span data-stu-id="56999-103">By default, the HL7 receive pipeline, BTAHL72X, only supports ASCII encoding.</span></span> <span data-ttu-id="56999-104">つまり、この値に置き換え、127 より大きいと、入力メッセージの任意の文字"?"。</span><span class="sxs-lookup"><span data-stu-id="56999-104">This means that any characters in an input message with an equivalent value greater than 127 are replaced with "?".</span></span> <span data-ttu-id="56999-105">これは、127 より大きい値を等価の値を持つ文字は、ASCII 文字セットで表されないためです。</span><span class="sxs-lookup"><span data-stu-id="56999-105">This is because characters with an equivalent value greater than 127 are not represented in the ASCII character set.</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="56999-121">HL7 には、ASCII (既定)、西ヨーロッパ言語、および UTF8 エンコードのみサポートしています。</span><span class="sxs-lookup"><span data-stu-id="56999-121">HL7 only supports ASCII (the default), Western European, and UTF8 encoding.</span></span> <span data-ttu-id="56999-122">HL7 はそれらをサポートしないため、他のエンコード オプションを選択しません。</span><span class="sxs-lookup"><span data-stu-id="56999-122">Do not select the other encoding options because HL7 does not support them.</span></span>  
   
-6.  <span data-ttu-id="56999-123">**[ファイル]** メニューの **[すべてを保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="56999-123">On the **File** menu, click **Save All**.</span></span>  
+6.  <span data-ttu-id="56999-123">**[ファイル]** メニューの **[すべてを保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="56999-123">On the **File** menu, click **Save All**.</span></span>  
   
 7.  <span data-ttu-id="56999-124">プロジェクトを配置する。</span><span class="sxs-lookup"><span data-stu-id="56999-124">Deploy the project.</span></span>  
   

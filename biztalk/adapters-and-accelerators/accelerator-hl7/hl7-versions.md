@@ -1,17 +1,17 @@
 ---
-title: "HL7 バージョン |Microsoft ドキュメント"
-ms.custom: 
+title: HL7 バージョン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HL7, standards
 - HL7, versions
 ms.assetid: 47299c6f-55c3-4434-8170-5ad73fe9a84c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204826"
 ---
 # <a name="hl7-versions"></a><span data-ttu-id="5da2b-102">HL7 のバージョン</span><span class="sxs-lookup"><span data-stu-id="5da2b-102">HL7 Versions</span></span>
 <span data-ttu-id="5da2b-103">HL7 バージョン 2 は、1 つの標準ではなく、密接に関連する標準のファミリです。</span><span class="sxs-lookup"><span data-stu-id="5da2b-103">HL7 Version 2 is a family of closely related standards rather than a single standard.</span></span> <span data-ttu-id="5da2b-104">HL7 組織には、これらの標準 HL7 間のバージョンの互換性規則のアプリケーションを介して下方互換性があること、設計しました。</span><span class="sxs-lookup"><span data-stu-id="5da2b-104">The HL7 organization has designed these standards to be upwards compatible through the application of the HL7 inter-version compatibility rules.</span></span> <span data-ttu-id="5da2b-105">これらの規則はの境界内にバージョン 2、HL7 のバージョンの規則の下で定義されたインターフェイスがまだ機能する後続のバージョンの定義内を保証します。</span><span class="sxs-lookup"><span data-stu-id="5da2b-105">These rules guarantee that, within the confines of Version 2, an interface defined under the rules of an HL7 version will still function within the definition of successor versions.</span></span> <span data-ttu-id="5da2b-106">受信側システムでは、実装と、送信を分断することがなく以降のバージョンからのメッセージを受信できるように、システムはできなければ以降のバージョンをサポートしている受信者にメッセージを送信し続けます。</span><span class="sxs-lookup"><span data-stu-id="5da2b-106">So that a receiving system will be able to accept messages from later versions without breaking its implementation and a sending system will be able to continue to send messages to receivers who support later versions.</span></span>  

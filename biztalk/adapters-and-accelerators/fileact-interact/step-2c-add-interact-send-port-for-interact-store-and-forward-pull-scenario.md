@@ -1,14 +1,14 @@
 ---
-title: "手順 2 C: InterAct ストア アンド フォワード (プル) シナリオの対話の送信ポートを追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2 C: InterAct ストア アンド フォワード (プル) シナリオの対話の送信ポートを追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 57038f77-85c3-4811-ab3d-df6e2da8fbcf
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964176"
 ---
 # <a name="step-2c-add-an-interact-send-port-for-the-interact-store-and-forward-pull-scenario"></a><span data-ttu-id="cb0b2-102">手順 2 C: InterAct ストア アンド フォワード (プル) シナリオの対話の送信ポートを追加</span><span class="sxs-lookup"><span data-stu-id="cb0b2-102">Step 2C: Add an INTERACT Send Port for the InterAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="cb0b2-103">この手順を開始する前に行う必要があります[Step 2B: InterAct ストア アンド フォワード (プル) シナリオの Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md)です。</span><span class="sxs-lookup"><span data-stu-id="cb0b2-103">Before you begin this step, you must complete [Step 2B: Add FILE Send Ports to Capture the Sw:HandleRequest Message for the InterAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md).</span></span>  
@@ -52,7 +53,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="cb0b2-135">ペイロードは、転送するのには、専用の場合は、ポートと対話する送信ポートが受信の対話で「ペイロード」に MessageFormat を設定します。</span><span class="sxs-lookup"><span data-stu-id="cb0b2-135">If only payload is to be transferred, set the MessageFormat to “Payload” in the INTERACT receive port and INTERACT send port.</span></span> <span data-ttu-id="cb0b2-136">PassThru に、受信パイプラインと送信パイプラインを設定します。</span><span class="sxs-lookup"><span data-stu-id="cb0b2-136">Set the Receive and Send pipelines to PassThru.</span></span>  
   
-7.  <span data-ttu-id="cb0b2-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb0b2-137">Click **OK**.</span></span>  
+7.  <span data-ttu-id="cb0b2-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb0b2-137">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="cb0b2-138">**送信ポートのプロパティ** ウィンドウで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="cb0b2-138">In the **Send Port Properties** window, do the following:</span></span>  
   
@@ -67,11 +68,11 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="cb0b2-148">**これを使用してください。**</span><span class="sxs-lookup"><span data-stu-id="cb0b2-148">**Use this**</span></span>|<span data-ttu-id="cb0b2-149">**これを行う**</span><span class="sxs-lookup"><span data-stu-id="cb0b2-149">**To do this**</span></span>|  
     |------------------|--------------------|  
     |<span data-ttu-id="cb0b2-150">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="cb0b2-150">**Property**</span></span>|<span data-ttu-id="cb0b2-151">ドロップダウン リストから選択**BTS です。ReceivePortName**です。</span><span class="sxs-lookup"><span data-stu-id="cb0b2-151">From the drop-down list, select **BTS.ReceivePortName**.</span></span>|  
-    |<span data-ttu-id="cb0b2-152">**演算子**</span><span class="sxs-lookup"><span data-stu-id="cb0b2-152">**Operator**</span></span>|<span data-ttu-id="cb0b2-153">ドロップダウン リストから選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="cb0b2-153">From the drop-down list, select **==**.</span></span>|  
+    |<span data-ttu-id="cb0b2-152">**演算子**</span><span class="sxs-lookup"><span data-stu-id="cb0b2-152">**Operator**</span></span>|<span data-ttu-id="cb0b2-153">ドロップダウン リストから選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="cb0b2-153">From the drop-down list, select **==**.</span></span>|  
     |<span data-ttu-id="cb0b2-154">**値**</span><span class="sxs-lookup"><span data-stu-id="cb0b2-154">**Value**</span></span>|<span data-ttu-id="cb0b2-155">型**Tutorial_IA_InputRequest_SnF**です。</span><span class="sxs-lookup"><span data-stu-id="cb0b2-155">Type **Tutorial_IA_InputRequest_SnF**.</span></span>|  
     |<span data-ttu-id="cb0b2-156">**グループ化**</span><span class="sxs-lookup"><span data-stu-id="cb0b2-156">**Group by**</span></span>|<span data-ttu-id="cb0b2-157">既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="cb0b2-157">Leave the default value.</span></span>|  
   
-10. <span data-ttu-id="cb0b2-158">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb0b2-158">Click **OK**.</span></span>  
+10. <span data-ttu-id="cb0b2-158">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb0b2-158">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="cb0b2-159">参照</span><span class="sxs-lookup"><span data-stu-id="cb0b2-159">See Also</span></span>  
  <span data-ttu-id="cb0b2-160">[手順 2 a: ファイルの受信場所 InterAct ストア アンド フォワード (プル) シナリオの追加](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-interact-store-and-forward-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="cb0b2-160">[Step 2A: Add FILE Receive Locations for the InterAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-interact-store-and-forward-scenario.md) </span></span>  

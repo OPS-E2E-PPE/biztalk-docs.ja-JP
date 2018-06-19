@@ -1,11 +1,11 @@
 ---
-title: "BAM ポータルでのアクティビティの検索 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルでのアクティビティの検索 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], searching
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - BAM portal, Query Builder
 - BAM portal, activity searches
 ms.assetid: 60ab8deb-ebe2-4959-97fd-261ff64d500c
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966600"
 ---
 # <a name="activity-searches-in-the-bam-portal"></a><span data-ttu-id="f1953-102">BAM ポータルでのアクティビティの検索</span><span class="sxs-lookup"><span data-stu-id="f1953-102">Activity Searches in the BAM Portal</span></span>
 <span data-ttu-id="f1953-103">アクティビティの検索では、BAM データが検索され、追跡する値および BAM ビューで使用可能な項目に基づいて指定した条件に一致するアクティビティを見つけることができます。また、アクティビティを編集したり、アクティビティに基づいて警告を作成できるように、アクティビティを表示することもできます。</span><span class="sxs-lookup"><span data-stu-id="f1953-103">An activity search allows you to perform searches against BAM data to find activities that match the criteria you specify based on tracked values and items available in a BAM view, and to display these activities so that you can edit them or create alerts based on them.</span></span>  
@@ -62,7 +63,7 @@ ms.lasthandoff: 11/28/2017
   
 |<span data-ttu-id="f1953-124">演算子</span><span class="sxs-lookup"><span data-stu-id="f1953-124">Operator</span></span>|<span data-ttu-id="f1953-125">Description</span><span class="sxs-lookup"><span data-stu-id="f1953-125">Description</span></span>|  
 |--------------|-----------------|  
-|<span data-ttu-id="f1953-126">**At**</span><span class="sxs-lookup"><span data-stu-id="f1953-126">**At**</span></span>|<span data-ttu-id="f1953-127">完全一致を指定します。</span><span class="sxs-lookup"><span data-stu-id="f1953-127">Specifies an exact match.</span></span> <span data-ttu-id="f1953-128">ブール値の "=" (等号) 演算子と同じです。</span><span class="sxs-lookup"><span data-stu-id="f1953-128">Equivalent to a Boolean Equals (=) operation.</span></span> <span data-ttu-id="f1953-129">**注:**を選択した場合、**で**演算子し、ポータルは、既定値として午前 0 時を使用して時刻部分と日付を指定します。</span><span class="sxs-lookup"><span data-stu-id="f1953-129">**Note:**  If you select the **At** operator and specify a date with no time part the portal uses midnight as the default value.</span></span> <span data-ttu-id="f1953-130">ユーザーの意図でない場合場合を使用して、**以前**または**以降の**オペレーターは、目的の結果を取得します。</span><span class="sxs-lookup"><span data-stu-id="f1953-130">If this is not your intent, use the **At or before** or the **At or after** operators to obtain the desired results.</span></span>|  
+|<span data-ttu-id="f1953-126">**At**</span><span class="sxs-lookup"><span data-stu-id="f1953-126">**At**</span></span>|<span data-ttu-id="f1953-127">完全一致を指定します。</span><span class="sxs-lookup"><span data-stu-id="f1953-127">Specifies an exact match.</span></span> <span data-ttu-id="f1953-128">ブール値の "=" (等号) 演算子と同じです。</span><span class="sxs-lookup"><span data-stu-id="f1953-128">Equivalent to a Boolean Equals (=) operation.</span></span> <span data-ttu-id="f1953-129">**注:** を選択した場合、**で**演算子し、ポータルは、既定値として午前 0 時を使用して時刻部分と日付を指定します。</span><span class="sxs-lookup"><span data-stu-id="f1953-129">**Note:**  If you select the **At** operator and specify a date with no time part the portal uses midnight as the default value.</span></span> <span data-ttu-id="f1953-130">ユーザーの意図でない場合場合を使用して、**以前**または**以降の**オペレーターは、目的の結果を取得します。</span><span class="sxs-lookup"><span data-stu-id="f1953-130">If this is not your intent, use the **At or before** or the **At or after** operators to obtain the desired results.</span></span>|  
 |<span data-ttu-id="f1953-131">**以前**</span><span class="sxs-lookup"><span data-stu-id="f1953-131">**On or before**</span></span>|<span data-ttu-id="f1953-132">指定した日付以前のトランザクションのみが一致するように指定します。</span><span class="sxs-lookup"><span data-stu-id="f1953-132">Specifies that only transactions on or before the specified date are matched.</span></span> <span data-ttu-id="f1953-133">ブール値の "≤" (以下) 演算子と同じです。</span><span class="sxs-lookup"><span data-stu-id="f1953-133">Equivalent to a Boolean less than or equals (≤) operation.</span></span>|  
 |<span data-ttu-id="f1953-134">**以降**</span><span class="sxs-lookup"><span data-stu-id="f1953-134">**On or after**</span></span>|<span data-ttu-id="f1953-135">指定した日付以降のトランザクションのみが一致するように指定します。</span><span class="sxs-lookup"><span data-stu-id="f1953-135">Specifies that only transactions on or after the specified date are matched.</span></span> <span data-ttu-id="f1953-136">ブール値の "≥" (以上) 演算子と同じです。</span><span class="sxs-lookup"><span data-stu-id="f1953-136">Equivalent to a Boolean greater than or equals (≥) operation.</span></span>|  
 |<span data-ttu-id="f1953-137">**[指定日付より前]**</span><span class="sxs-lookup"><span data-stu-id="f1953-137">**Before**</span></span>|<span data-ttu-id="f1953-138">指定した日付より前のトランザクションのみが一致するように指定します。</span><span class="sxs-lookup"><span data-stu-id="f1953-138">Specifies that only transactions before the specified date are matched.</span></span> <span data-ttu-id="f1953-139">ブール値の "<" (より小さい) 演算子と同じです。</span><span class="sxs-lookup"><span data-stu-id="f1953-139">Equivalent to a Boolean less than (<) operation.</span></span>|  
