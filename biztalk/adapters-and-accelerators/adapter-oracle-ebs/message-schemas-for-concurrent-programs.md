@@ -1,14 +1,14 @@
 ---
-title: "同時実行プログラムのメッセージ スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: 同時実行プログラムのメッセージ スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3c5709d5-e2b3-485b-9cdd-004985972ba1
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217234"
 ---
 # <a name="message-schemas-for-concurrent-programs"></a>同時実行プログラムのメッセージ スキーマ
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]操作として同時実行プログラムを表示します。 操作として公開されている同時実行プログラムと共に、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]も次の 3 つの標準的な操作を明らか: Get_Status、Wait_For_Request、および Submit_Request です。 同時実行プログラムに関連するこれらの操作については、次を参照してください。[同時実行プログラムで操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)です。  

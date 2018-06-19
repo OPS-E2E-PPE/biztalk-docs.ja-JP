@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB アダプター SDK を使用して、アダプターの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB アダプター SDK を使用して、アダプターの展開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 376b4dcf-2d2c-4872-a394-67edc0c3d088
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967296"
 ---
 # <a name="deploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a>WCF LOB アダプター SDK を使用して、アダプターを展開します。
 アダプターを展開するにはアダプター アセンブリをグローバル アセンブリ キャッシュ (GAC) にインストールし、machine.config ファイルにアダプターを登録します。  
@@ -129,7 +130,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  開く、**サービス構成エディター**です。 参照してください[サービス構成エディター](https://msdn.microsoft.com/library/ms732009.aspx)詳細についてはします。
   
-2.  ツリー ビュー ウィンドウ (ラベルの付いた**構成**)、ノード ツリーを展開します。 をクリックして、 **[詳細設定]**フォルダーで、をクリックして、**拡張機能**フォルダー、およびバインド拡張要素を選択します。  
+2.  ツリー ビュー ウィンドウ (ラベルの付いた**構成**)、ノード ツリーを展開します。 をクリックして、 **[詳細設定]** フォルダーで、をクリックして、**拡張機能**フォルダー、およびバインド拡張要素を選択します。  
   
      ![サービス構成エディター。] (../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/0a44a070-b788-4287-bd9e-c946fafcf11c.gif "0a44a070-b788-4287-bd9e-c946fafcf11c")  
   

@@ -1,11 +1,11 @@
 ---
-title: "SAP システムへの接続を作成 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP システムへの接続を作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SAP system, connecting to
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - URI
 - Uniform Resource Identifier
 ms.assetid: 25d1eaa7-d02a-4fd0-8adf-83505cdb1ab8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216426"
 ---
 # <a name="create-a-connection-to-the-sap-system"></a>SAP システムへの接続を作成します。
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]は、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドします。 そのため、WCF エンドポイントのアドレスを使って、SAP システムへの通信を可能になります。 WCF では、エンドポイントのアドレスは、サービスのネットワークの場所を識別し、として、Uniform Resource Identifier () は通常表現します。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]接続プロパティが含まれて、URI とは、この場所の表現を[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]SAP システムへの接続を確立するために使用します。 接続 URI を指定する必要がありますとします。  

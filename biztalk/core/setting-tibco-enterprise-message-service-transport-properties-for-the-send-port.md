@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 24e73be3b953cbd7f597a34a06f09d364ec0f4f4
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014273"
 ---
 # <a name="set-send-port-transport-properties-for-the-send-port-for-tibco-enterprise-message-service"></a>TIBCO Enterprise Message Service の送信ポート、送信ポートのトランスポートのプロパティを設定します。
 TIBCO Enterprise Message Service トランスポート プロパティは、デザイン時に構成して実行時に使用します。 **トランスポートのプロパティ**ダイアログ ボックスで、パラメーターを設定する接続と資格情報を特定サーバーのシステムおよびアクセスしようとしているオブジェクトにします。  
@@ -31,7 +32,7 @@ TIBCO Enterprise Message Service トランスポート プロパティは、デ�
   
     |パラメーター|Description|  
     |---------------|-----------------|  
-    |`Destination`|必須の設定です。 送信先の名前と種類を定義します。 例: staticqueue [Q1] です。<br /><br /> キューまたはトピックは、次の形式を定義します。 {static} {dynamic] Queue [queuename] または {static} {dynamic] Topic [topicname] です。 **注:**が存在しない送信先にメッセージを送信することができます。 このような場合は、TIBCO Enterprise Message Service を作成、変換先です。これを呼びます、*動的送信先*です。 これはプロデューサーによって作成され、メッセージが消費されてプロデューサーが切断された時点で削除されます。 A*静的送信先*は送信先ですのみ作成できますが、TIBCO Enterprise Message Service 管理者。 送信先との接続を開いている状態で動的ポートに接続することはできません。BizTalk Adapter for TIBCO Enterprise Message Service はサーバー上の名前の参照メカニズムを利用するからです。 名前の参照を使用するときは、静的ポートのみが表示されます。 動的ポートに接続するときに静的送信先を使用できます。ただし、その名前の送信先が存在しない場合は、送信先が作成されます。 Destination では、ポートを定義するときに、使用する送信先の種類を明示的に指定できます。 転送先の構文が大文字小文字を区別: staticqueue [queue_name] statictopic [topic_name] dynamicqueue [queue_name];dynamictopic [topic_name] です。|  
+    |`Destination`|必須の設定です。 送信先の名前と種類を定義します。 例: staticqueue [Q1] です。<br /><br /> キューまたはトピックは、次の形式を定義します。 {static} {dynamic] Queue [queuename] または {static} {dynamic] Topic [topicname] です。 **注:** が存在しない送信先にメッセージを送信することができます。 このような場合は、TIBCO Enterprise Message Service を作成、変換先です。これを呼びます、*動的送信先*です。 これはプロデューサーによって作成され、メッセージが消費されてプロデューサーが切断された時点で削除されます。 A*静的送信先*は送信先ですのみ作成できますが、TIBCO Enterprise Message Service 管理者。 送信先との接続を開いている状態で動的ポートに接続することはできません。BizTalk Adapter for TIBCO Enterprise Message Service はサーバー上の名前の参照メカニズムを利用するからです。 名前の参照を使用するときは、静的ポートのみが表示されます。 動的ポートに接続するときに静的送信先を使用できます。ただし、その名前の送信先が存在しない場合は、送信先が作成されます。 Destination では、ポートを定義するときに、使用する送信先の種類を明示的に指定できます。 転送先の構文が大文字小文字を区別: staticqueue [queue_name] statictopic [topic_name] dynamicqueue [queue_name];dynamictopic [topic_name] です。|  
     |`Port Number`|TIBCO EMS サーバーがリッスンするポートです。|  
     |`Server Name`|必須の設定です。 TIBCO EMS サーバーをホストしているシステムの名前です。|  
   

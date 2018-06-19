@@ -1,14 +1,14 @@
 ---
-title: "HL7 メッセージで SFT |Microsoft ドキュメント"
-ms.custom: 
+title: HL7 メッセージで SFT |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d5bf3ac5-8197-4ea3-ace8-ff59ac32313c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206170"
 ---
 # <a name="sft-in-hl7-messages"></a>HL7 メッセージで SFT
 [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]メッセージへのソフトウェアのセグメント (SFT) の追加をサポートします。 SFT セグメントは、送信元アプリケーションとして使用されるソフトウェア製品に関する追加情報を提供します。 SFT セグメントは、主な診断に使用します。 、標準 HL7 v2.5 の一部として SFT セグメントは、アプリケーションの受信確認で表示されます。  

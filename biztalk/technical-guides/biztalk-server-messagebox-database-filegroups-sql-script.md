@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server メッセージ ボックス データベースのファイル グループの SQL スクリプト |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server メッセージ ボックス データベースのファイル グループの SQL スクリプト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: af4fe437-41ca-46c1-90eb-a28ed73312b6
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300546"
 ---
 # <a name="biztalk-server-messagebox-database-filegroups-sql-script"></a>BizTalk Server メッセージ ボックス データベースのファイル グループの SQL スクリプト
 このトピックでは、複数のファイルおよびファイル グループの BizTalk メッセージ ボックス データベースを作成する BizTalk Server 環境で SQL Server インスタンスで実行できる SQL スクリプトを提供します。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
 >   
 >      -   実行している BizTalk Server の修正プログラムまたはサービス パックをインストールするかどうかは**msgboxlogic.sql**、メッセージ ボックス データベースのファイル グループの SQL スクリプトをもう一度実行する必要があります。 これは、機能は、msgboxlogic.sql を元に戻します、メッセージ ボックス データベースのファイル グループとファイルの既定の設定には、プライマリ ファイル グループを使用するため必要です。 調べるには、修正プログラムまたはサービス パックが msgboxlogic.sql を実行するかどうか、確認、**ファイル情報**の修正プログラム KB 記事のセクションです。 または、サービス パックのファイルに含まれている setup.xml ファイルを確認します。  
 >     -   BizTalk Server グループに新しいホストを追加する場合は、メッセージ ボックス データベースのファイル グループの SQL スクリプトを再度実行する必要があります。 これは、機能は、新しいホストを作成するストアド プロシージャには、テーブルの既定では、プライマリ ファイル グループを使用するホストが構成される必要があります。  
-> 2.  **マルチパート メッセージ ボックス環境での SQL のデータベース ファイル グループ スクリプトのメッセージ ボックス データベースを適用する:**マルチ メッセージ ボックス環境で各メッセージ ボックスに対して、メッセージ ボックス データベースのファイル グループの SQL スクリプトを実行できるも要件ではありません。  
+> 2.  **マルチパート メッセージ ボックス環境での SQL のデータベース ファイル グループ スクリプトのメッセージ ボックス データベースを適用する:** マルチ メッセージ ボックス環境で各メッセージ ボックスに対して、メッセージ ボックス データベースのファイル グループの SQL スクリプトを実行できるも要件ではありません。  
   
 ## <a name="biztalk-messagebox-database-filegroups-sql-script"></a>BizTalk メッセージ ボックス データベースのファイル グループの SQL スクリプト  
  次の SQL スクリプトは、トピックの説明に従って、複数のファイルおよびファイル グループを作成するために使用できます[、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)です。  

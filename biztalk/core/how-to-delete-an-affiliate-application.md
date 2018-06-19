@@ -12,7 +12,7 @@ helpviewer_keywords:
 - managing [SSO applications], deleting
 - deleting, applications [SSO]
 ms.assetid: c7ec065e-ef10-49ff-a350-105dd08dc4a9
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25968768"
 ---
 # <a name="how-to-delete-an-affiliate-application"></a>関連アプリケーションを削除する方法
 MMC スナップインまたはコマンド ラインを使用して、指定した関連アプリケーションを SSO データベースから削除することができます。  
@@ -45,7 +46,7 @@ MMC スナップインまたはコマンド ラインを使用して、指定し
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型 * * ssomanage – deleteapp *\<アプリケーション名\>* * *、どこで*\<アプリケーション名\>*を SSO データベースから削除する関連アプリケーションの名前を指定します。  
+3.  型 * * ssomanage – deleteapp *\<アプリケーション名\>* * *、どこで*\<アプリケーション名\>* を SSO データベースから削除する関連アプリケーションの名前を指定します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

@@ -1,18 +1,18 @@
 ---
-title: "Disabilities5 ユーザー補助機能 |Microsoft ドキュメント"
-ms.custom: 
+title: Disabilities5 ユーザー補助機能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - technical reference, accessibility
 - BTAHL7, accessibility
 - accessibility
 ms.assetid: 07472243-c988-4596-acd8-190a49e8ea40
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204418"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>障害がある方のためのユーザー補助機能
 マイクロソフトは、だれもが簡単にマイクロソフト製品とサービスを利用できるように努力を続けています。 ユーザー補助機能、Microsoft からサービスに関する概要については、Microsoft アクセシビリティ Web サイトを参照してください。 [http://go.microsoft.com/fwlink/p/?LinkId=56272](http://go.microsoft.com/fwlink/p/?LinkId=56272)です。  

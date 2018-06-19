@@ -1,11 +1,11 @@
 ---
-title: "メッセージの修復処理 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの修復処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - repairing messages
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - validating, messages
 - messages, validating
 ms.assetid: 87b97cec-5796-4684-bcf0-53285aca7ee2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211194"
 ---
 # <a name="message-repair-process"></a>メッセージの修復処理
 既定では、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックス データベースの保留キューに失敗したメッセージを中断します。 このプロセスは、成功したメッセージから個別に失敗したメッセージを処理します。 この既定のメカニズムを使用して、ただし、ある失敗したメッセージを取得し、それらを修復する機能が制限されます。 メッセージ修復 and New Submission 機能[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]により、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]ユーザー メッセージを修復して再送信します。 別[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]ユーザーは、修復を確認し、3 つ目は、修復を承認できます。  

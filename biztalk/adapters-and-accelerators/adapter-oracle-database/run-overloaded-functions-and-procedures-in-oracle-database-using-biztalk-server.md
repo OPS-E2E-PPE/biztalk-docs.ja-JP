@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967160"
 ---
 # <a name="invoke-overloaded-functions-and-procedures-in-oracle-database-using-biztalk-server"></a>オーバー ロードされた関数および BizTalk Server を使用して Oracle データベースでプロシージャを呼び出す
 Oracle データベースでは、ストアド プロシージャと関数をオーバー ロードすることができます。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]操作のターゲットの名前空間を変更することでオーバー ロード関数およびプロシージャのサポート。 たとえば、2 つのオーバー ロードされたプロシージャのメッセージの構造は、ようになります。  
@@ -164,7 +165,7 @@ Stored Procedure Overload 2:
   
 3.  **関連付けのプロパティ** ダイアログ ボックスには、手順 1. で昇格させたプロパティが一覧表示されます。 プロパティを選択し、をクリックして**追加**です。  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  その他の昇格させたプロパティの関連付けの種類を作成するには、この手順を繰り返します。  
   

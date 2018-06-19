@@ -1,14 +1,14 @@
 ---
-title: "フェーズ 3: 評価の準備中 |Microsoft ドキュメント"
-ms.custom: 
+title: 'フェーズ 3: 評価の準備中 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d153ed62-f2cc-4080-8912-c98ecdd329f5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22301842"
 ---
 # <a name="phase-3-preparing-for-the-assessment"></a>フェーズ 3: が評価用に準備します。
 パフォーマンス評価の段階できますと考えるのスコープのフェーズに「方法」"what"と計画フェーズの準備の「ときです」 この時点でパフォーマンス評価はすべての利害関係者必要があります、ラボを実行するため、活動、およびプランのスコープによって、合意しています。 ここで、プランを実行し、パフォーマンス ラボの実行用に準備する手順を実行のパフォーマンス評価の準備フェーズになります。  

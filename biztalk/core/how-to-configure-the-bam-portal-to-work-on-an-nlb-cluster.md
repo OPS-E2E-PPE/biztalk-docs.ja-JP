@@ -1,14 +1,14 @@
 ---
-title: "NLB クラスターで機能する BAM ポータルを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: NLB クラスターで機能する BAM ポータルを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 96c04fde-dc12-42fb-9193-aa74819fe880
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969688"
 ---
 # <a name="how-to-configure-the-bam-portal-to-work-on-an-nlb-cluster"></a>NLB クラスターで機能する BAM ポータルを構成する方法
 BAM ポータルは、ネットワーク負荷分散 (NLB) クラスターで機能するように構成できます。  
@@ -88,7 +89,7 @@ BAM ポータルは、ネットワーク負荷分散 (NLB) クラスターで機
 1.  web.config ファイルを、クラスターに追加した各コンピューターの [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal フォルダーにコピーします。  
   
     > [!NOTE]
-    >  次の手順をすべての参照を**Program Files**フォルダーになります**%program Files (x86)** 64 ビット コンピューター用です。  
+    >  次の手順をすべての参照を**Program Files**フォルダーになります **%program Files (x86)** 64 ビット コンピューター用です。  
   
     > [!IMPORTANT]
     >  仮想ディレクトリを作成するときには、その設定が 1 台目のコンピューターの BizTalk Server 構成で作成した 3 つの BAM 仮想ディレクトリの設定と正確に同じかどうかを確認してください。これにはまず、 ファイル パス、ASP.NET のバージョン、ディレクトリのアクセス許可、およびアプリケーション プールを確認します。  次に、1 台目のコンピューターの設定で使用したドメイン サービス アカウントと同じアカウントを使用して、設定するコンピューターで BAMAppPool を実行します。 BAMAppPool がすべてのコンピューターで稼働することを確認します。 コピーする必要がある web.config ファイルは 2 つです。  

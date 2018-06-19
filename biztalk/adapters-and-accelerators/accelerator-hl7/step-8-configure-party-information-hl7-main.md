@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206234"
 ---
 # <a name="step-8-configure-party-informationhl7main"></a>手順 8: パーティ Information_hl7_main を構成します。
 このステップでごと (ADT し HIS)、メッセージの受信側のパーティ情報を構成して、送信メッセージを使用するためのメッセージ ヘッダーの変換を有効にする送信ポートを割り当てる[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー。  

@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Adapter for Siebel e ビジネス アプリケーションに BizTalk の用語集 |Microsoft ドキュメント"
-description: "共通の用語と定義は、BizTalk Adapter pack (BAP) の Siebel アダプターによって使用されます。"
-ms.custom: 
+title: BizTalk Adapter for Siebel e ビジネス アプリケーションに BizTalk の用語集 |Microsoft ドキュメント
+description: 共通の用語と定義は、BizTalk Adapter pack (BAP) の Siebel アダプターによって使用されます。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75c74760-53b6-45c3-bacc-bb7ab4fb5b4b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224682"
 ---
 # <a name="terms-and-definitions-for-the-siebel-adapter"></a>用語と Siebel アダプターの定義
 次の用語と定義がで使用される[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]です。  

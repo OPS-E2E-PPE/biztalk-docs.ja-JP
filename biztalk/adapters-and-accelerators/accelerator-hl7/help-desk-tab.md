@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204858"
 ---
 # <a name="help-desk-tab"></a>ヘルプ デスク タブ
 送信先または送信元パーティに関するデータを入力するのにには、ヘルプ デスクのタブを使用します。 生成されたエラーがある場合に便利では、ヘルプ デスク タブで、パーティの情報を持つとパーティに連絡する必要があります。 メッセージにエラーがある場合、パーティの情報は、ACK メッセージになります。  

@@ -1,15 +1,15 @@
 ---
-title: "Microsoft BizTalk Accelerator 用 HL7 ドキュメント |Microsoft ドキュメント"
-description: "クイック リンクをインストールするには、開始、プログラミングおよびツール、バッチ処理、および BizTalk Server で HL7 アクセラレータのトラブルシューティングの詳細は、"
-ms.custom: 
+title: Microsoft BizTalk Accelerator 用 HL7 ドキュメント |Microsoft ドキュメント
+description: クイック リンクをインストールするには、開始、プログラミングおよびツール、バッチ処理、および BizTalk Server で HL7 アクセラレータのトラブルシューティングの詳細は、
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa333ee8-ba93-4a61-9c0a-94e64627b8cf
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206074"
 ---
 # <a name="microsoft-biztalk-accelerator-for-hl7-documentation"></a>Microsoft BizTalk Accelerator 用 HL7 ドキュメント
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]ドキュメントでは、新機能は、別の新機能について説明[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]バージョンでは、インストールする方法を示します[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]ステップ バイ ステップのチュートリアルが含まれています、HL7、開発タスク、および運用のタスクについて説明する情報を提供します。   

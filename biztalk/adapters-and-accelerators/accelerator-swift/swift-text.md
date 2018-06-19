@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214522"
 ---
 # <a name="swift-text"></a>SWIFT テキスト
 メッセージ テキスト、財務 (FIN) メッセージのペイロードとすべての送信者、受信者、およびメッセージの種類を含むフィールドを除くデータ フィールドが含まれています。 これら 3 つのフィールドは、ヘッダー部分に含まれます。 一部のメッセージには、処理情報も提供する、オプションのユーザー ヘッダーも含まれます。  

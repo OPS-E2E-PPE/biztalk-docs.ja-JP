@@ -1,14 +1,14 @@
 ---
-title: "手順 2: Oracle E-business Suite 成果物のためのアプリケーション定義ファイルの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: Oracle E-business Suite 成果物のためのアプリケーション定義ファイルの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2665afde-0337-4795-ab4c-6223d39fdf9c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219306"
 ---
 # <a name="step-2-create-an-application-definition-file-for-the-oracle-e-business-suite-artifacts"></a>手順 2: Oracle E-business Suite 成果物のためのアプリケーション定義ファイルを作成します。
 ![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
@@ -62,7 +63,7 @@ ms.lasthandoff: 09/20/2017
   
      WCF サービスが」の説明に従って、正常に発行されるかどうかをテストするときに、URL が使用可能な[手順 1: create Oracle E-business アダプターを使用し、WCF サービスを発行](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)です。  
   
-5.  **[接続]**をクリックします。  
+5.  **[接続]** をクリックします。  
   
 6.  WCF アダプター サービス開発ウィザードで選択した操作を表示するをクリックして、 **Web メソッドの追加**タブです。次のメソッドが表示されます:**選択**です。  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
      ![デザイン画面に Select メソッドの追加](../../adapters-and-accelerators/adapter-oracle-ebs/media/05-add-lob-system.gif "05 _ add_lob_system")  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 9. **LOB システムの名前を入力** ダイアログ ボックスに名前を入力、 **LOB システム名**ボックス。 この例では、呼び出すこと**MS_SAMPLE_EMPLOYEE**、順にクリック**OK**です。  
   
@@ -99,7 +100,7 @@ ms.lasthandoff: 09/20/2017
   
      ![プロパティを追加](../../adapters-and-accelerators/adapter-oracle-ebs/media/07-propertviewcollection-editor.gif "07 _ propertviewcollection_editor")  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ##  <a name="Scenario1"></a>ビジネス データ一覧 Web パーツを使用している従業員のシナリオ 1: クエリ  
  従業員がビジネス データ一覧 Web パーツを検索するために使用して従業員の名前に基づくできるアプリケーション定義ファイルを作成するには、次の一連のタスクを行う必要があります。  
@@ -148,7 +149,7 @@ ms.lasthandoff: 09/20/2017
   
      ![Finder メソッド インスタンスの作成](../../adapters-and-accelerators/adapter-oracle-ebs/media/12-create-method-instance.gif "12 _ create_method_instance")  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  プロパティ ウィンドウで、次のように入力します。 **Finder_Instance**で、**名前**ボックス。  
   
@@ -187,7 +188,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  展開して、**フィルター**パラメーター、もう 1 つをクリックして**フィルター**ノード。  
   
-    4.  プロパティ ウィンドウで、次のように選択します。 **EmployeeName [Employee]**から、**識別子** ボックスの一覧です。  
+    4.  プロパティ ウィンドウで、次のように選択します。 **EmployeeName [Employee]** から、**識別子** ボックスの一覧です。  
   
          ![フィルターのパラメーターの識別子を設定](../../adapters-and-accelerators/adapter-oracle-ebs/media/16-set-identifier.gif "16 _ set_identifier")  
   
@@ -199,7 +200,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  展開、**を返す**] ノードの [2 番目**返す**ノード、**項目**ノードをクリックして、**名前**ノード。  
   
-    4.  プロパティ ウィンドウで、次のように選択します。 **EmployeeName [Employee]**から、**識別子** ボックスの一覧です。  
+    4.  プロパティ ウィンドウで、次のように選択します。 **EmployeeName [Employee]** から、**識別子** ボックスの一覧です。  
   
 #### <a name="to-create-a-specific-finder-method-instance-for-the-select-method"></a>Select メソッドの Specific Finder メソッド インスタンスを作成するには  
   
@@ -213,7 +214,7 @@ ms.lasthandoff: 09/20/2017
   
      ![Specific Finder メソッド インスタンスの追加](../../adapters-and-accelerators/adapter-oracle-ebs/media/17-specific-finder.gif "17 _ specific_finder")  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  プロパティ ウィンドウで、次のように入力します。 **SpeciFinder_Instance**の、**名前**ボックス。  
   
@@ -229,7 +230,7 @@ ms.lasthandoff: 09/20/2017
   
      ![Id Enumerator メソッド インスタンスの作成](../../adapters-and-accelerators/adapter-oracle-ebs/media/18-id-enumerator.gif "18 _ id_enumerator")  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  プロパティ ウィンドウで、次のように入力します。 **IDEnumerator_Instance**の、**名前**ボックス。  
   
@@ -279,11 +280,11 @@ ms.lasthandoff: 09/20/2017
   
 2.  をクリックして**MS_SAMPLE_EMPLOYEE_Instance**、プロパティ ペインでに対して省略記号 (...) ボタンをクリックし、**プロパティ**ボックス。  
   
-3.  **PropertyView コレクション エディター**ダイアログ ボックスで、をクリックして**追加**、プロパティ ウィンドウで、次のように入力します**SecondarySsoApplicationId**の、**名前。**ボックス。 同様に、入力**OracleSSO**の**PropertyValue**ボックス。 選択**System.String**の**型**ボックス。  
+3.  **PropertyView コレクション エディター**ダイアログ ボックスで、をクリックして**追加**、プロパティ ウィンドウで、次のように入力します**SecondarySsoApplicationId**の、**名前。** ボックス。 同様に、入力**OracleSSO**の**PropertyValue**ボックス。 選択**System.String**の**型**ボックス。  
   
      ![SSO プロパティの追加](../../adapters-and-accelerators/adapter-oracle-ebs/media/21-sso.gif "21 _ sso")  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 ##  <a name="Export"></a>アプリケーション定義をファイルにエクスポートします。  
  Oracle E-business Suite インスタンスのメタデータを含んでいるアプリケーション定義が作成されました。 Microsoft Office SharePoint Server にインポートできる XML ファイルにこの定義をエクスポートする必要があります。  

@@ -1,17 +1,17 @@
 ---
-title: "バックエンド アプリケーションからの受信メッセージの場所を FRR |Microsoft ドキュメント"
-ms.custom: 
+title: バックエンド アプリケーションからの受信メッセージの場所を FRR |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FRR, receive locations
 - receive locations, FRR
 ms.assetid: da0ad616-800f-493f-822f-eca1224722ab
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207538"
 ---
 # <a name="frr-receive-location-for-messages-from-the-back-end-application"></a>FRR は、バックエンド アプリケーションからのメッセージの場所を受信します。
 FIN 対応調整 (FRR) を有効にするのには、FRR を設定する必要があります受信場所をバックエンド アプリケーションからメッセージを受信し、それを FRR オーケストレーションによって消費の BizTalk メッセージ ボックスにルーティングします。 受信場所には、次のパイプライン コンポーネントで作成する必要がありますカスタム FRR 受信パイプラインでメッセージがルーティングします。  

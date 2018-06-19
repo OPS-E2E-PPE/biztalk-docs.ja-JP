@@ -1,11 +1,11 @@
 ---
-title: "手順 2: パブリックおよびプライベート証明書の作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: パブリックおよびプライベート証明書の作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - double action tutorial, creating certificates
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - creating, certificates
 - private certificates
 ms.assetid: 0a925d89-03d9-41fe-907b-85a6ae42362a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967600"
 ---
 # <a name="step-2-creating-public-and-private-certificates"></a>手順 2: パブリックおよびプライベート証明書の作成
 この手順で作成した証明機関を使用する[手順 1: 証明機関 &#91; を作成します。RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md)を使用して、Contoso と Fabrikam 組織パブリックおよびプライベート証明書を生成します。  
@@ -101,7 +102,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  スタンドアロン スナップインの追加 ダイアログ ボックスで、選択、**証明書**スナップインから、**利用できるスタンドアロン スナップイン**一覧をクリックして**追加**です。  
   
-5.  証明書スナップイン] ダイアログ ボックスで選択**[ユーザー アカウント**、順にクリック**次**です。  
+5.  証明書スナップイン] ダイアログ ボックスで選択 **[ユーザー アカウント**、順にクリック**次**です。  
   
 6.  コンピューターの選択] ダイアログ ボックス [**完了**です。  
   
@@ -119,7 +120,7 @@ ms.lasthandoff: 11/28/2017
   
 13. **エクスポート ファイルの形式**ことを確認 ページで、 **Personal Information Exchange**唯一のオプションを選択するは、をクリックして**次**です。  
   
-14. **パスワード**] ページの [、**パスワード**と**パスワードの確認**ボックスに「 **mysecret**、クリックしてして**[次へ]**.  
+14. **パスワード**] ページの [、**パスワード**と**パスワードの確認**ボックスに「 **mysecret**、クリックしてして **[次へ]**.  
   
 15. **ファイルにエクスポート**] ページで [**参照**です。  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  **証明書のエクスポート ウィザードへようこそ** ページで、をクリックして**次**です。  
   
-4.  **秘密キーのエクスポート**] ページで、[**いいえ、秘密キーをエクスポートしません**、クリックして**[次へ]**です。  
+4.  **秘密キーのエクスポート**] ページで、[**いいえ、秘密キーをエクスポートしません**、クリックして **[次へ]** です。  
   
 5.  **エクスポート ファイルの形式**] ページで [**次**です。  
   

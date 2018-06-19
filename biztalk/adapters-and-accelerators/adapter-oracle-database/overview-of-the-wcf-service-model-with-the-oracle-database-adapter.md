@@ -1,18 +1,18 @@
 ---
-title: "Oracle データベース アダプターで WCF サービス モデルの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターで WCF サービス モデルの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, overview
 - invoking operations
 - WCF service, creating and implementing
 ms.assetid: 8ed765e5-b5e6-46bd-bcd6-282219caf75d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214386"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-oracle-database-adapter"></a>Oracle データベース アダプターで WCF サービス モデルの概要
 操作を使用する際にする、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェスは、コードは、機能、クライアントと、アダプターにサービスのどちらかです。 ほぼすべての操作を[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サーフェス、コードは、クライアントです。 つまり、アプリケーションが; アダプターの操作を呼び出すたとえば、Oracle テーブルにレコードを挿入します。 コードにサービスとして機能する唯一の操作、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] POLLINGSMT 操作です。 この場合、アダプターは、アプリケーションに、ポーリング クエリ操作の結果を送信します。  

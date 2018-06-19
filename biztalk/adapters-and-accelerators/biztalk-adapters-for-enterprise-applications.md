@@ -1,15 +1,15 @@
 ---
-title: "エンタープライズ アプリケーション アダプター |Microsoft ドキュメント"
-description: "Microsoft BizTalk Adapters for Enterprise Applications には、BizTalk Server で使用するには、JD Edwards EnterpriseOne、JD Edwards OneWorld では、PeopleSoft Enterprise、TIBCO Enterprise Message Service と TIBCO Rendezvous が含まれています。"
-ms.custom: 
+title: エンタープライズ アプリケーション アダプター |Microsoft ドキュメント
+description: Microsoft BizTalk Adapters for Enterprise Applications には、BizTalk Server で使用するには、JD Edwards EnterpriseOne、JD Edwards OneWorld では、PeopleSoft Enterprise、TIBCO Enterprise Message Service と TIBCO Rendezvous が含まれています。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c1960a5a-d627-42ce-8898-5df444846fea
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24016137"
 ---
 # <a name="enterprise-applications-adapters-in-biztalk-server"></a>BizTalk Server のエンタープライズ アプリケーション アダプター
 

@@ -1,14 +1,14 @@
 ---
-title: "インストール後の構成データベース Optimizations2 |Microsoft ドキュメント"
-ms.custom: 
+title: インストール後の構成データベース Optimizations2 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 609eda22-8399-4b7c-b860-21b495d2f68d
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302666"
 ---
 # <a name="post-configuration-database-optimizations"></a>インストール後の構成データベースの最適化
 推奨事項に従うだけでなく[事前構成データベース Optimizations2](../technical-guides/pre-configuration-database-optimizations2.md)、いくつかの手順は、SQL Server 上の BizTalk Server データベースのパフォーマンスを最適化するために従う必要があります*後*BizTalk Server がインストールされているし、BizTalk Server データベースが構成されています。 このトピックでは、これらの最適化の一覧を示します。  
@@ -55,9 +56,9 @@ ms.lasthandoff: 09/20/2017
   
 -   **BizTalk DTADB (BizTalk 追跡データベース ファイル):** 100 MB の増加に 2048 MB のファイル サイズと最大 1024 MB のログ ファイルに 100 MB の拡張を持つデータ ファイル。  
   
--   **BizTalkMgmtdb (BizTalk 管理データベース ファイル):**データ ファイルに 100 MB の拡張の 512 MB のファイル サイズと 512 MB のログ ファイルに 100 MB 拡張します。  
+-   **BizTalkMgmtdb (BizTalk 管理データベース ファイル):** データ ファイルに 100 MB の拡張の 512 MB のファイル サイズと 512 MB のログ ファイルに 100 MB 拡張します。  
   
--   **SSODB:**データ ファイルに 100 MB の拡張の 512 MB のファイル サイズと 512 MB のログ ファイルに 100 MB 拡張します。  
+-   **SSODB:** データ ファイルに 100 MB の拡張の 512 MB のファイル サイズと 512 MB のログ ファイルに 100 MB 拡張します。  
   
 -   **BizTalkMsgBoxDb (BizTalk メッセージ ボックス データベース):** 8 つのデータ ファイルは、それぞれは 100 MB の増加に 2 GB のファイル サイズと 20 GB のログ ファイルに 100 MB 拡張します。 BizTalk メッセージ ボックス データベースは、最もアクティブであるため、データ ファイルとトランザクション ログ ファイルをディスク I/O の競合の問題の可能性を減らすために専用のドライブ上に配置するをお勧めします。 このラボ環境で、1 つのドライブを使用する、次のそれぞれに。  
   
@@ -91,12 +92,12 @@ GO
 ## <a name="verify-that-the-biztalk-server-sql-agent-jobs-are-running"></a>BizTalk Server の SQL エージェント ジョブが実行されていることを確認してください。  
  BizTalk Server には、動作状況と状態、サーバーを保つために重要な機能を実行するいくつかの SQL Server エージェント ジョブが含まれています。 これらのジョブの状態を監視し、エラーなく実行されていることを確認する必要があります。 BizTalk Server のパフォーマンスの問題の最も一般的な原因の 1 つは、BizTalk Server の SQL エージェント ジョブは実行中は、さらになる場合、メッセージ ボックス データベースおよび追跡データベース拡張がオフにします。 BizTalk Server の SQL エージェント ジョブが問題なく実行されていることを確認する手順に従います。  
   
-1.  **SQL Server エージェント サービスが実行されていることを確認してください。**です。  
+1.  **SQL Server エージェント サービスが実行されていることを確認してください。** です。  
   
 2.  **BizTalk Server によってインストールされる SQL Server エージェント ジョブが有効になっていることを確認し、正常に実行されている**です。  
     BizTalk Server SQL Server エージェント ジョブがきわめて重要です。 時間の経過と共に実行されていない場合システムのパフォーマンスが低下します。  
   
-3.  **適切なタイミングで、BizTalk Server SQL Server エージェント ジョブが完了することを確認してください。**です。   
+3.  **適切なタイミングで、BizTalk Server SQL Server エージェント ジョブが完了することを確認してください。** です。   
     Microsoft System Center Operations Manager の最新バージョンを設定すると、ジョブを監視します。  
     特定のジョブを特定のスケジュールの注意する必要があります。  
   
@@ -104,7 +105,7 @@ GO
   
     -   MessageBox_Message_Cleanup_BizTalkMsgBoxDb ジョブは有効になっているスケジュールも 10 秒ごと、MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb ジョブによって起動されました。 そのため、このジョブ有効になっている、スケジュール、したりしないでを手動で開始します。  
   
-4.  **SQL Server エージェント サービスのスタートアップの種類が正しく構成されていることを確認してください。**です。  
+4.  **SQL Server エージェント サービスのスタートアップの種類が正しく構成されていることを確認してください。** です。  
     SQL Server エージェント サービスを構成することを確認、**スタートアップの種類**の**自動**SQL Server エージェント サービスが、Windows Server クラスターでクラスター リソースとして構成されている場合を除き、します。 SQL Server エージェント サービスがクラスター リソースとして構成されているかどうかは、構成する必要があります、**スタートアップの種類**として**手動**サービスは、クラスター サービスによって管理するためです。  
   
 ## <a name="configure-purging-and-archiving-of-tracking-data"></a>消去および追跡データのアーカイブを構成します。  

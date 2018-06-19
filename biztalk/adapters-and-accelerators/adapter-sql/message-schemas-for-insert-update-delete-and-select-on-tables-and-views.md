@@ -1,14 +1,14 @@
 ---
-title: "Insert、Update、Delete のメッセージ スキーマおよびテーブルおよびビューの操作の選択 |Microsoft ドキュメント"
-ms.custom: 
+title: Insert、Update、Delete のメッセージ スキーマおよびテーブルおよびビューの操作の選択 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4fff9cd3-26c0-4d5c-8162-3fd7966a5020
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25967216"
 ---
 # <a name="message-schemas-for-insert-update-delete-and-select-operations-on-tables-and-views"></a>メッセージ スキーマの挿入、更新、削除、およびテーブルおよびビューの操作の選択
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] Insert、Update、Delete、および Select 操作の各テーブルと、SQL Server データベースのビューを表示します。 これらの操作は、WHERE 句で修飾された適切な SQL ステートメントを実行します。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]これらの操作で厳密に型指定されたレコードとレコード セットを使用します。  

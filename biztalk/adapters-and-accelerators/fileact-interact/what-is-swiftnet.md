@@ -1,14 +1,14 @@
 ---
-title: "SWIFTNet とは何ですか。 | Microsoft Docs"
-ms.custom: 
+title: SWIFTNet とは何ですか。 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2b074385-352c-40f4-b73e-1891c627aa4e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225314"
 ---
 # <a name="what-is-swiftnet"></a>SWIFTNet とは何ですか。
 汎用の財務の業界の業界標準のソリューションとしては、SWIFTNet はグローバル財務コミュニティに参加しているすべての金融機関の接続されているすべてのアプリケーションへのアプリケーションに依存しない、1 つのウィンドウ インターフェイスを提供します。 インフラストラクチャの技術的な制限ではなく、ビジネス ポリシー決定の各サービス管理者では、実際のアクセスが制御されます。  

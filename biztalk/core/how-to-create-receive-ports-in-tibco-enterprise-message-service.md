@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-receive-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: e31246cf90f42206de6a22fcc32338fcb2936db3
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014889"
 ---
 # <a name="how-to-create-receive-ports-in-tibco-enterprise-message-service"></a>TIBCO Enterprise Message Service での受信ポートの作成方法
 受信ポートを作成するには、次の手順を実行します。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 11/07/2017
   
 4.  **受信場所** ページで、次の操作します。  
   
-    1.  **[新規作成]**をクリックします。  
+    1.  **[新規作成]** をクリックします。  
   
     2.  **受信場所**ウィンドウで、**全般** ページで、入力、**名前**受信場所のです。  
   
@@ -39,11 +40,11 @@ ms.lasthandoff: 11/07/2017
   
     6.  選択、**有効にするサービス時間帯**チェック ボックスをオンします。  
   
-    7.  **[OK]**をクリックします。  
+    7.  **[OK]** をクリックします。  
   
 5.  **受信マップ**ページで、選択したポートでドキュメントを変換するための受信マップを選択します。  
   
 6.  **追跡** ページで、必要なメッセージ本文の追跡と追跡メッセージのプロパティを選択します。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   

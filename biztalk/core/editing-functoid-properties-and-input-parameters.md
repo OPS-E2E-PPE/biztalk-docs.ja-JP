@@ -1,14 +1,14 @@
 ---
-title: "Functoid のプロパティおよび入力パラメーターを編集 |Microsoft ドキュメント"
-ms.custom: 
+title: Functoid のプロパティおよび入力パラメーターを編集 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 257f92d7-8196-4c7c-98de-819996270e43
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968621"
 ---
 # <a name="editing-functoid-properties-and-input-parameters"></a>Functoid のプロパティおよび入力パラメーターの編集
 Functoid のプロパティは、次のように分類できます。  

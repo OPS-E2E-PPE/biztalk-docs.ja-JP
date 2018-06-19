@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションを Web サービスとして公開 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションを Web サービスとして公開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, publishing
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - BizTalk Web Services Publishing Wizard, prerequisites
 - orchestrations, publishing
 ms.assetid: f209310d-c265-4c37-8424-c9b287e713ca
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269066"
 ---
 # <a name="publishing-an-orchestration-as-a-web-service"></a>Web サービスとしてのオーケストレーションの公開
 BizTalk Web サービス公開ウィザードを使用して、オーケストレーションを Web サービスとして公開することができます。 ウィザードでは、BizTalk アセンブリ内のオーケストレーションに基づいて、Web サービスが作成されます。 このウィザードを使用して、Web サービスを公開するオーケストレーションと受信ポートを選択できます。 ターゲットの名前空間、SOAP ヘッダーの要件、およびウィザードで生成される Web サービス プロジェクトの場所を定義できます。  

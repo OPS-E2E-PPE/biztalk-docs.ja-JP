@@ -1,17 +1,17 @@
 ---
-title: "検証ステージを鍵更新 |Microsoft ドキュメント"
-ms.custom: 
+title: 検証ステージを鍵更新 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - rekey verification
 - stages, rekey verification
 ms.assetid: 8a2880b6-bb25-4af5-9f51-d0b090ca38c8
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214202"
 ---
 # <a name="rekey-verification-stage"></a>検証ステージを鍵更新します。
 検証のトレイにステージが発生したワークフローでは、メッセージの修復、メッセージの修復および New Submission とメッセージの正確なコピーで、元のメッセージのコピーが保持される鍵更新の確認が送信されるときに検証を鍵更新します。 キーの再検証[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]Message Repair and New Submission 手動再登録の指定したフィールドをクリアします。  

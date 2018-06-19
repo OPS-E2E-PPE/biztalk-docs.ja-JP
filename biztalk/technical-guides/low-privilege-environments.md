@@ -1,14 +1,14 @@
 ---
-title: "低い特権の環境 |Microsoft ドキュメント"
-ms.custom: 
+title: 低い特権の環境 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: abdc45d0-b63a-4b6c-80c4-1f8e87644cd9
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298298"
 ---
 # <a name="low-privilege-environments"></a>低い特権の環境
 複数のワークフローに含まれている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックは、特定のアクションを実行する高度な権限を必要とします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックでは、低特権の環境で基本的な監視機能を実行することができます。 2 つの管理ロール: BizTalk Server 管理者と BizTalk Server Operator です。 BizTalk Server 管理者は権限レベルの高いロールで、構成データおよび追跡データにアクセスできます。 BizTalk Server 管理者は、このような参加と成果物を開始、すべてのキー管理タスクを実行できます。 BizTalk Server Operator は、監視とトラブルシューティング操作にのみアクセス権を持つ特権の低いロールです。 詳細については、次を参照してください。[最低限のセキュリティ ユーザー権限](http://technet.microsoft.com/library/aa559845\(BTS.80\).aspx)です。  

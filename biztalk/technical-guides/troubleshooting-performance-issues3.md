@@ -1,14 +1,14 @@
 ---
-title: "パフォーマンス Issues3 のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: パフォーマンス Issues3 のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7a348c4b-7df2-43e9-810c-1f538a97d7e1
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302394"
 ---
 # <a name="troubleshooting-performance-issues"></a>パフォーマンスの問題のトラブルシューティング
 このセクションには、診断するための一般的なガイドラインが含まれています。 およびに関連するパフォーマンスの問題を解決する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]とその依存関係。 これらのガイドラインをプリエンプティブ、使用を重大な問題になる前に、潜在的な問題を識別します。  

@@ -1,11 +1,11 @@
 ---
-title: "HL7 2. XML サブフォルダーとイベント |Microsoft ドキュメント"
-ms.custom: 
+title: HL7 2. XML サブフォルダーとイベント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - events, HL7 2.XML versions
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - HL7, events
 - HL7, 2.XML versions
 ms.assetid: e8ea8892-5525-41d6-9b95-94e6857e2d94
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204866"
 ---
 # <a name="hl7-2xml-subfolders-and-events"></a>HL7 2. XML サブフォルダーとイベント
 次のサブセクションでは、HL7 の各バージョンのセットアップ ウィザードによって作成されたサブフォルダーを一覧表示 2.X、および各サブフォルダー内のイベントです。  

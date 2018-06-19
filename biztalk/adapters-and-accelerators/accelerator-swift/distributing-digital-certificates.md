@@ -1,17 +1,17 @@
 ---
-title: "デジタル証明書を配布する |Microsoft ドキュメント"
-ms.custom: 
+title: デジタル証明書を配布する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - digital signatures
 - security, digital signatures
 ms.assetid: 3e93a405-3c9b-43f5-bbdf-bec25d43eb45
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209418"
 ---
 # <a name="distributing-digital-certificates"></a>デジタル証明書を配布します。
 デジタル署名に使用するデジタル証明書の発行および証明機関 (Ca) によってユーザー ワークステーションに配布されるは通常、VeriSign など内部 Ca が組織でホストされているか外部の商用エンティティです。 使用するデジタル証明書の種類 (暗号化アルゴリズムと暗号強度) は、組織で異なる場合があります。 [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]秘密キーの構成をデジタル署名や暗号化のキー使用法 属性の値を持つ任意の証明書の形式を使用してフォームをデジタル署名できます。 さらに、クライアント認証と証明書の目的を設定する必要があります。  

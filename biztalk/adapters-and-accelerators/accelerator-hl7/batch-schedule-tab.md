@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204490"
 ---
 # <a name="batch-schedule-tab"></a>[バッチ スケジュール] タブ
 使用する、**バッチ スケジュール** タブをアクティブ化、要求、または送信バッチを終了します。 送信バッチをアクティブ化する 2 つの手順で構成されています: 時間ベースの構成またはメッセージが条件とし、送信バッチ処理オーケストレーションの開始をカウントします。  

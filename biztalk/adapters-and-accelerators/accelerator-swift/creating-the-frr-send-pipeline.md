@@ -1,18 +1,18 @@
 ---
-title: "送信パイプラインの作成、FRR |Microsoft ドキュメント"
-ms.custom: 
+title: 送信パイプラインの作成、FRR |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FRR, creating send pipelines
 - creating, send pipelines
 - send pipelines, creating
 ms.assetid: c6cd2047-ea53-425f-80cc-b02a1deb5292
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209458"
 ---
 # <a name="creating-the-frr-send-pipeline"></a>FRR 送信パイプラインを作成します。
 FIN 対応調整を実行するには、SWIFT アセンブラーだけでなく、SWIFTAsmFrrMQSeriesHelper パイプライン コンポーネントを含む送信パイプラインを作成する必要があります。  
@@ -40,7 +41,7 @@ FIN 対応調整を実行するには、SWIFT アセンブラーだけでなく�
   
 2.  [新しい項目の追加] ダイアログ ボックスで選択**送信パイプライン**[テンプレート] ペインからです。  
   
-3.  **名前**ボックスで、受信パイプラインの名前を入力します。 **FRRSendPipeline.btp**です。 **[追加]**をクリックします。  
+3.  **名前**ボックスで、受信パイプラインの名前を入力します。 **FRRSendPipeline.btp**です。 **[追加]** をクリックします。  
   
 4.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]をクリックして**ビュー**し**ツールボックス**です。  
   

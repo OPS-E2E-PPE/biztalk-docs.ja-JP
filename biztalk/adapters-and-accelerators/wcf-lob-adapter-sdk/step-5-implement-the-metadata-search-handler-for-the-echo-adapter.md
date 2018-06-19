@@ -1,14 +1,14 @@
 ---
-title: "手順 5: エコー アダプターのメタデータ検索ハンドラーを実装する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: エコー アダプターのメタデータ検索ハンドラーを実装する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1a133a99-1d6c-4634-b928-0f4f23c6f6e4
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226402"
 ---
 # <a name="step-5-implement-the-metadata-search-handler-for-the-echo-adapter"></a>手順 5: エコー アダプターのメタデータの検索ハンドラーを実装します。
 ![手順 5. の 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-5of9.gif "Step_5of9")  
@@ -169,7 +170,7 @@ Echo/EchoGreetingFromFile, outbound operation
   
 7.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。  
   
-8.  **[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。 プロジェクトを正常にコンパイルする必要があります。 以外の場合は、上記のすべてのステップに従っていることを確認します。  
+8.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。 プロジェクトを正常にコンパイルする必要があります。 以外の場合は、上記のすべてのステップに従っていることを確認します。  
   
     > [!NOTE]
     >  これで作業が保存されました。 安全にこの時点で Visual Studio を終了したり、次の手順に進みます[手順 6: エコー アダプターのメタデータを解決するハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)です。  

@@ -1,11 +1,11 @@
 ---
-title: "手順 4: IIS でレイヤーをソケット セキュリティで保護の有効化 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: IIS でレイヤーをソケット セキュリティで保護の有効化 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Secure Socket Layers
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - double action tutorial, enabling SSL in IIS
 - SSL
 ms.assetid: 96109294-595a-46ac-974e-33123df79ed5
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967000"
 ---
 # <a name="step-4-enabling-secure-sockets-layer-in-iis"></a>手順 4: IIS でレイヤーをソケット セキュリティで保護を有効にします。
 SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の通信チャネルをセキュリティで保護するためのプロトコルです。 Contoso 組織と Fabrikam 組織は、Microsoft® インターネット インフォメーション サービス (IIS) 7.5 または 7.0 で SSL を有効にすることにより、すべてのデータ転送に認証と暗号化を使用して通信を行います。 ここでは、IIS 7.5 または 7.0 で SSL を有効にする手順について学びます。  
@@ -128,7 +129,7 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
   
 1.  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
-2.  インターネット インフォメーション サービスの左ペインでをクリックして**(ローカル コンピューター)**、ダブルクリックして**サーバー証明書**右側のウィンドウでします。 選択**証明書要求の完全な**[操作] ウィンドウからです。  
+2.  インターネット インフォメーション サービスの左ペインでをクリックして **(ローカル コンピューター)**、ダブルクリックして**サーバー証明書**右側のウィンドウでします。 選択**証明書要求の完全な**[操作] ウィンドウからです。  
   
 3.  証明機関の応答の指定 ダイアログ ボックスに「 **\<ドライブ\>: \Certs\SSLCert.cer**で**証明機関の応答を含むファイルの名前**テキスト ボックス。 フレンドリ名テキスト ボックスに「 **ContosoSSLCert**です。  
   
@@ -136,7 +137,7 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
   
 1.  をクリックして**開始**、 をポイント**管理ツール**、順にクリック**インターネット インフォメーション サービス (IIS) マネージャー**です。  
   
-2.  インターネット インフォメーション サービスの左ペインで、展開**(ローカル コンピューター)**、展開**サイト**を右クリックして**既定の Web サイト**、クリックして**編集バインド**です。  
+2.  インターネット インフォメーション サービスの左ペインで、展開 **(ローカル コンピューター)**、展開**サイト**を右クリックして**既定の Web サイト**、クリックして**編集バインド**です。  
   
 3.  [サイト バインド] ダイアログ ボックス**追加**です。 サイト バインドの追加 ダイアログ ボックスで選択**https**型ドロップダウンから、次のように選択します**ContosoSSLCert** SSL 証明書ドロップダウンから、 をクリック**OK**、 をクリック**閉じる**。  
   

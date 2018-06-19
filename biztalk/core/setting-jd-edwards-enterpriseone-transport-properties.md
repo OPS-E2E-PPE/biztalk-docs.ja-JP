@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-enterpriseone/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 71a1b75c9a602b196504fa9f06984f0ed9d52e05
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014305"
 ---
 # <a name="setting-jd-edwards-enterpriseone-transport-properties"></a>JD Edwards EnterpriseOne トランスポートのプロパティの設定
 JD Edwards EnterpriseOne トランスポートのプロパティは、デザイン時および実行時に使用されます。 **トランスポートのプロパティ**ダイアログ ボックスで、パラメーターを設定する接続と資格情報を特定サーバーのシステムおよびアクセスしようとしているオブジェクトにします。  
@@ -28,7 +29,7 @@ JD Edwards EnterpriseOne トランスポートのプロパティは、デザイ�
   
 4.  **全般**で、**トランスポートの種類**ボックスで、 **JDE EnterpriseOne**ドロップダウン リストでします。  
   
-5.  **アドレス (URI)**プロパティ、省略記号ボタン (**.**).  
+5.  **アドレス (URI)** プロパティ、省略記号ボタン (**.**).  
   
      **JDE EnterpriseOne トランスポートのプロパティ** ダイアログ ボックスが表示されます。  
   

@@ -1,14 +1,14 @@
 ---
-title: "Functoid 入力パラメーター |Microsoft ドキュメント"
-ms.custom: 
+title: Functoid 入力パラメーター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cca24f93-74a8-460c-b9ab-9aa2c767fe2f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968512"
 ---
 # <a name="functoid-input-parameters"></a>Functoid 入力パラメーター
 Functoid をマップで使用する場合の重要な点は、Functoid に対する入力パラメーターを適切に構成することです。 入力パラメーターの順序はすべての functoid にとって重要ではありません (など、**加算**functoid は、表示されて、同じ加算から予想される 1 つのプロパティに関連付ける)、多くの functoid の入力パラメーターを持つ必要があります正しい順序で指定します。  

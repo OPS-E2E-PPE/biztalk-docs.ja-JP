@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Adapter Pack 2016 のインストール |Microsoft ドキュメント"
-description: "BAP 2016、32 ビットと 64 ビットの標準またはカスタムのインストールはサイレント モードでインストールします。"
-ms.custom: 
+title: BizTalk Adapter Pack 2016 のインストール |Microsoft ドキュメント
+description: BAP 2016、32 ビットと 64 ビットの標準またはカスタムのインストールはサイレント モードでインストールします。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2f3e1717-8063-4460-bfdc-a933cd58a5c1
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967792"
 ---
 # <a name="install-the-biztalk-adapter-pack-2016"></a>BizTalk Adapter Pack 2016 をインストールします。
 インストール、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]次の 2 つの方法で。  
@@ -76,7 +77,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  選択**Microsoft BizTalk Adapters インストール**です。 次のウィンドウで、前提条件のすべての不足しているプログラムが一覧表示されます。 いずれかが存在しない場合、不足しているプログラムを選択し、セットアップでは、それをインストールします。 
 
-    たとえば、選択**手順 2: Microsoft BizTalk Adapter Pack のインストール**または**手順 3: インストール Microsoft BizTalk Adapter Pack (x64)**です。  
+    たとえば、選択**手順 2: Microsoft BizTalk Adapter Pack のインストール**または**手順 3: インストール Microsoft BizTalk Adapter Pack (x64)** です。  
   
     > [!NOTE]
     >  インストールする場合、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]バーチャル マシンでは、セットアップ ウィザードの使用可能なディスク領域をチェックするメッセージが表示されます。 ハングまたはただ座っていて、このメッセージが表示されるかどうかは、ことをお勧め**サイレント モードでインストール**(」を参照)。  
@@ -106,7 +107,7 @@ ms.lasthandoff: 11/28/2017
   
     4.  **[次へ]** を選択します。  
   
-7.  **[インストール]**を選択します。  
+7.  **[インストール]** を選択します。  
   
 8.  **カスタマー エクスペリエンス向上プログラム**、登録することもできます。 登録する場合は、Microsoft と、次のデータを共有できます。  
   
@@ -236,7 +237,7 @@ ms.lasthandoff: 11/28/2017
   
 **64 ビット コンピューターでセットアップを実行してはスキーマ ファイルにアクセス中にエラーをスローする可能性があります。**  
   
-[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]セットアップによって、Microsoft.Adapters へのアクセス中にエラーがスローされます*。\<AdapterName\>*_schema.xml ファイルが、アダプターのインストールを続行します。  
+[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]セットアップによって、Microsoft.Adapters へのアクセス中にエラーがスローされます *。\<AdapterName\>*_schema.xml ファイルが、アダプターのインストールを続行します。  
   
 **原因**  
   

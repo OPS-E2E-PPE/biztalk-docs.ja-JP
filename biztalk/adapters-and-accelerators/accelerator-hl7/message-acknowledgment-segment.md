@@ -1,17 +1,17 @@
 ---
-title: "メッセージの受信確認セグメントが |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの受信確認セグメントが |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - segments, acknowledgements
 - acknowledgements, segments
 ms.assetid: 6f2b9f6f-a328-4a0f-9e7d-edba32cc045a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204938"
 ---
 # <a name="message-acknowledgment-segment"></a>メッセージ受信確認セグメント
 確認 (ACK) メッセージのメッセージ受信確認 (MSA) セグメントでは、ACK の受信確認は、システムが送信を示し、どのようなメッセージの受信確認の種類を識別します。 2 つの必須セグメントで構成されます。 受信確認コードとメッセージのコントロール id。  

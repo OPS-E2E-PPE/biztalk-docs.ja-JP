@@ -1,14 +1,14 @@
 ---
-title: "シングル サインオンの計画 |Microsoft ドキュメント"
-ms.custom: 
+title: シングル サインオンの計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d1bc220-4087-4603-ac15-6bb0c62c59d4
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302410"
 ---
 # <a name="planning-for-single-sign-on"></a>シングル サインオンの計画
 エンタープライズ シングル サインオン (SSO) の重要なコンポーネントである、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ために、SSO を処理せず、実行時は機能できませんすべて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプターの構成情報を暗号化して、SSO データベースに格納されていると[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SSO サービスを経由してこの情報にアクセスします。 SSO サービスが、BizTalk server で実行されていない場合、または SSO サービスには、SSO マスター シークレット サーバーへのアクセスがない場合、このアダプターの構成情報にアクセスできません。  

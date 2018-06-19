@@ -1,17 +1,17 @@
 ---
-title: "Siebel するポートのバインド ファイルを使用する物理ポートのバインドの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel するポートのバインド ファイルを使用する物理ポートのバインドの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - port binding file
 - physical port binding, configuring by using a port binding file
 ms.assetid: 1758e89c-d56c-4e67-919b-c0bbb22878bf
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222610"
 ---
 # <a name="configure-a-physical-port-binding-using-a-port-binding-file-to-siebel"></a>Siebel するポートのバインド ファイルを使用する物理ポートのバインドを構成します。
 使用すると、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]スキーマ ファイルは、以外の Siebel 成果物を表すメタデータを生成する、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]もポートのバインド ファイルを生成します。 物理送信ポートを作成する BizTalk アプリケーションにこのバインド ファイルをインポートすることができます。 参照してください[Siebel アダプターのアダプターのバインドを再利用](../../adapters-and-accelerators/adapter-siebel/reuse-adapter-bindings-in-the-siebel-adapter.md)です。 このバインド ファイルをインポートする場合がありませんを物理送信ポートを手動で作成します。  

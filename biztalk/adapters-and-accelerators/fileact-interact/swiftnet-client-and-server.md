@@ -1,14 +1,14 @@
 ---
-title: "SWIFTNet クライアントとサーバー |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFTNet クライアントとサーバー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 89d9f54f-af16-4f14-bbe4-8306758320d8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224658"
 ---
 # <a name="swiftnet-client-and-server"></a>SWIFTNet クライアントとサーバー
 SWIFT 条項クライアントとサーバーを使用して送信および受信について説明します。 SWIFT クライアントは、SWIFTNet 経由で通信を開始する SWIFTNet リンク (SNL) を呼び出すプロセスです。 BizTalk Server で、これは、送信アダプターが呼び出されます。 SWIFT サーバーは、SWIFTNet 経由でトラフィックを受信すると、SNL によって呼び出されるプログラムです。 BizTalk Server で、受信アダプターは、呼び出されます。  
@@ -58,7 +59,7 @@ Callback(Request):
   
  サーバー アプリケーションは、コールバック関数の中に SwCall API を呼び出すことができます。 場合によっては、目的の結果または応答を生成できる SwCall 呼び出す必要があります。 ただし、サーバー アプリケーションは、ネットワーク経由で通信を開始することができますされません。 サーバー アプリケーションでは、クライアント アプリケーションをすることはできません。  
   
- 次の図に、呼び出しというラベルの付いた**初期化**SNL API 初期化プロセスは、複数の呼び出しを必要とする抽象化したものです。 ラベルの付いた呼び出し**SwCallback()**が複数回繰り返す、および呼び出しというラベルの付いた**SwCall()**は省略可能です。  
+ 次の図に、呼び出しというラベルの付いた**初期化**SNL API 初期化プロセスは、複数の呼び出しを必要とする抽象化したものです。 ラベルの付いた呼び出し**SwCallback()** が複数回繰り返す、および呼び出しというラベルの付いた**SwCall()** は省略可能です。  
   
  ![SNL サーバー機能](../../adapters-and-accelerators/fileact-interact/media/42395775-cdbc-4e36-8b36-566caefa2aaf.gif "42395775-cdbc-4e36-8b36-566caefa2aaf")  
   

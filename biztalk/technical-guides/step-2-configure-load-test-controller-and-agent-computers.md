@@ -1,14 +1,14 @@
 ---
-title: "手順 2: ロード テスト コント ローラーとエージェント コンピューターの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: ロード テスト コント ローラーとエージェント コンピューターの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9d937ac-55d8-48fa-bba2-3efe151587b8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014089"
 ---
 # <a name="step-2-configure-load-test-controller-and-agent-computers"></a>手順 2: ロード テスト コント ローラーとエージェント コンピューターを構成します。
 

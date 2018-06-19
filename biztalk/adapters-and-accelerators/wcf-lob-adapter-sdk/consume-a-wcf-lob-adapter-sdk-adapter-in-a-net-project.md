@@ -1,14 +1,14 @@
 ---
-title: ".NET プロジェクトで、WCF LOB Adapter SDK アダプターを使用する |Microsoft ドキュメント"
-ms.custom: 
+title: .NET プロジェクトで、WCF LOB Adapter SDK アダプターを使用する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6934b96d-5704-4f3c-b53f-4e36e352a338
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966832"
 ---
 # <a name="consume-a-wcf-lob-adapter-sdk-adapter-in-a-net-project"></a>.NET プロジェクトで、WCF LOB Adapter SDK アダプターを使用します。
 使用して構築されたアダプターを使用する、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]から[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクトにサービス参照を追加する必要があります。 これを行うことができます。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  URI を構成した場合にクリックして**OK**です。  
   
-6.  **[接続]**をクリックします。 接続 URI が有効であり、クライアントの資格情報 (存在する場合) が受け入れられたら場合、**カテゴリ**ペインは、アダプターによって提供される操作とカテゴリで表示されます必要があります。  
+6.  **[接続]** をクリックします。 接続 URI が有効であり、クライアントの資格情報 (存在する場合) が受け入れられたら場合、**カテゴリ**ペインは、アダプターによって提供される操作とカテゴリで表示されます必要があります。  
   
 7.  アダプターは、検索をサポートする場合は、[検索] フィールドはアクティブになります。 それ以外の場合、コントラクト型でフィルター処理、内のノードをクリックして、型、および操作を調べ、**カテゴリ**ウィンドウです。  
   
@@ -86,9 +87,9 @@ ms.lasthandoff: 11/28/2017
   
 2.  プロジェクトを開く[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。  
   
-    1.  **ソリューション エクスプ ローラー**プロジェクトを右クリックしをポイントし、**追加**、クリックして**新しい項目の**します。 **既存項目の追加** ダイアログ ボックスで、選択、.cs ファイルおよび app.config ファイルが以前に作成します。  **[追加]**をクリックします。  
+    1.  **ソリューション エクスプ ローラー**プロジェクトを右クリックしをポイントし、**追加**、クリックして**新しい項目の**します。 **既存項目の追加** ダイアログ ボックスで、選択、.cs ファイルおよび app.config ファイルが以前に作成します。  **[追加]** をクリックします。  
   
-    2.  **ソリューション エクスプ ローラー**を右クリックして**参照**、クリックして**参照の追加**です。 **.NET** ] タブで [ **System.ServiceModel**、クリックして**[ok]**です。 アプリケーションで、プロキシを使用できます。  
+    2.  **ソリューション エクスプ ローラー**を右クリックして**参照**、クリックして**参照の追加**です。 **.NET** ] タブで [ **System.ServiceModel**、クリックして **[ok]** です。 アプリケーションで、プロキシを使用できます。  
   
 ## <a name="see-also"></a>参照  
  [チュートリアル 1: エコー アダプターを開発します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)   

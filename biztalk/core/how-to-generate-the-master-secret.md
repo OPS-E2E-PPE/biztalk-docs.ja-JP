@@ -1,17 +1,17 @@
 ---
-title: "マスター シークレットを生成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マスター シークレットを生成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Master Secret server, generating
 - managing [Master Secret server], generating
 ms.assetid: 5512a8ee-bc5b-4fe4-90c7-41e3baaa723b
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25969520"
 ---
 # <a name="how-to-generate-the-master-secret"></a>マスター シークレットを生成する方法
 この作業を実行するには、マスター シークレット サーバーに対する管理者権限が必要です。 また、この作業はマスター シークレット サーバーから実行する必要があります。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 01/17/2018
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssoconfig – generateSecret \<*バックアップ ファイル*\>**ここで、 \<*バックアップ ファイル*\>の名前を指定しますマスター シークレットを含むファイルです。  
+3.  型**ssoconfig – generateSecret \<*バックアップ ファイル*\>** ここで、 \<*バックアップ ファイル*\>の名前を指定しますマスター シークレットを含むファイルです。  
   
      作成したファイルを保護するためのパスワードを入力するように求められます。  
   

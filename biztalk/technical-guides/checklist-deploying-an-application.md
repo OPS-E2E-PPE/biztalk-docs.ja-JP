@@ -1,14 +1,14 @@
 ---
-title: "チェックリスト: アプリケーションを展開する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チェックリスト: アプリケーションを展開する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5e699ac3-7998-48d6-96b7-2f8f1a3d52e5
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299858"
 ---
 # <a name="checklist-deploying-an-application"></a>チェックリスト: アプリケーションを展開します。
 このトピックでは、BizTalk アプリケーションと、運用環境でそのアイテムを展開する手順について説明します。 開発環境でアプリケーションを展開、.msi ファイルにエクスポートし、.msi ファイルから実稼働環境にインポートする方法を示します。  

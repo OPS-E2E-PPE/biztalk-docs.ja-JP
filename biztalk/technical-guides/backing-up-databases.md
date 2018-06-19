@@ -1,14 +1,14 @@
 ---
-title: "データベースのバックアップ |Microsoft ドキュメント"
-ms.custom: 
+title: データベースのバックアップ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0524a8f0-15a3-4731-a7bd-c0c935fff6c8
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300538"
 ---
 # <a name="backing-up-databases"></a>データベースのバックアップ
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]複数データベース間で分散トランザクションを使用して、BizTalk Server のバックアップ ジョブがすべての同期のバックアップを作成[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。 これは、「完全な」データベースの復旧モデルでのトランザクションのマークを使用して行われます。 これは、機能は、データベース間で一貫性をするのには、バックアップに必要です。 詳細については、次を参照してください。 ["マークされたトランザクション、完全バックアップ、およびログのバックアップ"](http://go.microsoft.com/fwlink/?LinkId=151565) (http://go.microsoft.com/fwlink/?LinkId=151565)、BizTalk Server のドキュメントにします。  

@@ -1,17 +1,17 @@
 ---
-title: "管理コンソールのキーボード ショートカット |Microsoft ドキュメント"
-ms.custom: 
+title: 管理コンソールのキーボード ショートカット |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Administration Console [BizTalk Server], keyboard shortcuts
 - keyboard shortcuts, Administration Console [BizTalk Server]
 ms.assetid: b443b9be-975c-47c7-a7b6-08aee45c29a2
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230290"
 ---
 # <a name="administration-console-keyboard-shortcuts"></a>管理コンソールのキーボード ショートカット
 以下のキーボード ショートカットを使用すると、BizTalk 管理コンソールの一般的な作業の多くをすばやく操作できます。  

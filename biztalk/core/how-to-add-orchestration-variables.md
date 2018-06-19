@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968832"
 ---
 # <a name="how-to-add-orchestration-variables"></a>オーケストレーション変数を追加する方法
 オーケストレーションの種類 ウィンドウでは、オーケストレーションのプロパティを管理することができます (とも呼ばれる**サービス**プロパティ)、パラメーター、ポート、メッセージ、およびその他の変数です。 ポートおよびメッセージに加えて、整数型の変数、ブール変数、文字列変数、または .NET クラスの変数を作成できます。  

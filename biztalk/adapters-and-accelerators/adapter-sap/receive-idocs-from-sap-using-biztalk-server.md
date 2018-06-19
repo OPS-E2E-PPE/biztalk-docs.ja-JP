@@ -1,18 +1,18 @@
 ---
-title: "BizTalk Server を使用して SAP からの Idoc を受信 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SAP からの Idoc を受信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IDOCs, sample (receiving)
 - IDOCs, business scenarios for receiving
 - IDOCs, receiving from SAP using BizTalk Server
 ms.assetid: b904bf07-1108-4ed3-8564-d83eaafff247
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968064"
 ---
 # <a name="receive-idocs-from-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP からの Idoc を受信します。
 IDOC の受信では、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP からの特別な RFC 呼び出しを受信する RFC サーバーとして機能します。 SAP アダプターは、RFC サーバーまたは tRFC サーバーとして機能する Idoc を受信できます。 TRFC サーバーとして動作して、アダプターによる IDOC の受信の詳細については、次を参照してください。[を使用して BizTalk Server でのトランザクション コンテキストでの SAP からの Idoc の受信](../../adapters-and-accelerators/adapter-sap/receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server.md)です。  
@@ -81,7 +82,7 @@ IDOC の受信では、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-sh
 -   *FlatFileSegmentIndicator* – を示す場合、IDOC スキーマ\<appinfo\>タグは、セグメントの定義名またはセグメントの型名を含める必要があります。 これは、ときに/SAP からのフラット ファイル IDOC の送信/受信するのに使用されると適用されます。 場合、 *GenerateFlatFileCompatibleIDoc*が false に設定し、 *FlatFileSegmentIndicator*バインディング プロパティは無視されます。  
   
 > [!IMPORTANT]
->  着信 IDOC のスキーマを生成するためには、選択を確認してください**サービス (入力方向の操作)**から、**選択コントラクト型**ドロップダウン リストで、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]です。  
+>  着信 IDOC のスキーマを生成するためには、選択を確認してください**サービス (入力方向の操作)** から、**選択コントラクト型**ドロップダウン リストで、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]です。  
   
 ## <a name="defining-messages-and-message-types"></a>メッセージとメッセージの種類を定義します。  
  以前に生成したスキーマには、オーケストレーション内のメッセージに対して必要な「種類」がについて説明します。 メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。 BizTalk プロジェクトのオーケストレーションの種類からのメッセージに最初の手順で生成したスキーマをリンクする必要があります。  

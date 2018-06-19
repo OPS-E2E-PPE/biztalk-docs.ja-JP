@@ -1,14 +1,14 @@
 ---
-title: "MX 送信ポートを追加する |Microsoft ドキュメント"
-ms.custom: 
+title: MX 送信ポートを追加する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c3ad5d2f-1fcb-49d4-9974-664733308f45
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208914"
 ---
 # <a name="adding-an-mx-send-port"></a>MX 送信ポートを追加します。
 **MX 送信ポートを追加します。**  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  フォルダ ダイアログ ボックスの参照、ファイルの場所を選択します。  
   
-7.  ファイル名 ボックスに入力**%MessageID%.xml**、順にクリック**OK**です。  
+7.  ファイル名 ボックスに入力 **%MessageID%.xml**、順にクリック**OK**です。  
   
 8.  送信ポートのプロパティ ダイアログ ボックスでは、送信パイプライン ボックスで、ドロップダウン リストをクリックし、パイプライン プロジェクトで展開して、送信パイプラインを選択します。  
   

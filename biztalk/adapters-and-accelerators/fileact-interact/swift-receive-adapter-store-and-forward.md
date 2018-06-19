@@ -1,14 +1,14 @@
 ---
-title: "SWIFT 受信アダプター ストア アンド フォワード |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT 受信アダプター ストア アンド フォワード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 11eeb335-366b-4b29-9078-de9396b258ca
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224474"
 ---
 # <a name="swift-receive-adapter-store-and-forward"></a>SWIFT 受信アダプター ストア アンド フォワード
 受信アダプターは、迅速なストア アンド フォワード (SnF) キューからメッセージを受信します。 キューからメッセージを受信するには、アダプターは SnF キューでセッションを開く必要があります。 キューを開く、キューとのセッションを確立するための専用クライアント処理が必要です。 デザインでは、このプロセスは、COM とアウト プロセス コンポーネントとして実装されます。  

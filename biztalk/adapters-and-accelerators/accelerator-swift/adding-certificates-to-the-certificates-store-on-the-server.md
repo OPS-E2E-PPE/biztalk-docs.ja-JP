@@ -1,17 +1,17 @@
 ---
-title: "サーバー上の証明書ストアに証明書を追加する |Microsoft ドキュメント"
-ms.custom: 
+title: サーバー上の証明書ストアに証明書を追加する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - certificates, adding to certificates store
 - certificates store
 ms.assetid: 075cfae8-dce7-46f7-9539-796f03229ea2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209570"
 ---
 # <a name="adding-certificates-to-the-certificates-store-on-the-server"></a>サーバー上の証明書ストアに証明書を追加します。
 サーバー コンピューター上の証明書 (ローカル コンピューター) ストアにその他のユーザー フォルダーに証明書を追加するのにには、次の手順を使用します。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  前の手順 (追加する証明書クライアントで証明書ストアを) 開く MMC ウィンドウをまだある場合は場合、は、この手順を使用できます。  
   
-2.  管理コンソール ウィンドウで、**証明書 (ローカル コンピューター)**フォルダーの順に展開および**ほかの人**です。  
+2.  管理コンソール ウィンドウで、**証明書 (ローカル コンピューター)** フォルダーの順に展開および**ほかの人**です。  
   
 3.  右クリック**証明書**、 をポイント**すべてのタスク**、クリックして**インポート**です。  
   

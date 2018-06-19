@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210146"
 ---
 # <a name="step-2-creating-ports-for-the-contoso-3a2-price-and-availability-queryresponse-scenario"></a>手順 2: Contoso 3 a 2 Price and Availability クエリ/応答シナリオ用のポートの作成
 この手順では、BizTalk Server によって提供される SQL アダプターを使用して送信ポートを作成します。 この SQL ポートを使用して、Contoso の ERP システムとの間で 3A2 Price and Availability 応答を送受信します。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 11. SQL トランスポートのプロパティ ダイアログ ボックスで、**ドキュメント Target Namespace**ボックスに、入力**http://Contoso.com/Price**です。  
   
-12. **応答ドキュメントのルート要素名**ボックスに、入力**[rootpriceresponse]**、順にクリック**OK**です。  
+12. **応答ドキュメントのルート要素名**ボックスに、入力 **[rootpriceresponse]**、順にクリック**OK**です。  
   
 13. 静的な送信請求-応答送信ポートのプロパティ ダイアログ ボックスの左側のウィンドウでをクリックして**送信**です。  
   

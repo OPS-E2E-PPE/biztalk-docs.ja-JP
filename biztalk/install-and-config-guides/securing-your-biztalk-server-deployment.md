@@ -1,15 +1,15 @@
 ---
-title: "配置のセキュリティの概要 |Microsoft ドキュメント"
-description: "セキュリティ、暗号化、BizTalk Server の展開でユーザー グループに関するクイック リンク"
-ms.custom: 
+title: 配置のセキュリティの概要 |Microsoft ドキュメント
+description: セキュリティ、暗号化、BizTalk Server の展開でユーザー グループに関するクイック リンク
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a1c5a000-9f6b-49db-bd87-8c694240a192
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299546"
 ---
 # <a name="securing-your-biztalk-server-deployment"></a>BizTalk Server の安全な展開
 このセクションのトピックでは、BizTalk をインストールして構成した後の、ファイアウォール ポート、インターネット プロトコル セキュリティ (IPSec)、Secure Sockets Layer (SSL) セキュリティの構成に関するリンクが示されています。  

@@ -1,18 +1,18 @@
 ---
-title: "プログラミング ガイド、および SDK ツール |Microsoft ドキュメント"
-ms.custom: 
+title: プログラミング ガイド、および SDK ツール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - documentation, tips
 - BTAHL7, developing
 - developing
 ms.assetid: 040ba1b6-d0bf-4477-a564-20e18231aee7
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206162"
 ---
 # <a name="programming-guide-and-sdk-tools"></a>プログラミング ガイドと SDK ツール
 このソフトウェア開発キット (SDK) のツールを使用してアプリケーションを開発する開発者向けの情報を提供する[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]、パブリック アプリケーション プログラミング インターフェイス (API)、または提供されたサンプルおよびユーティリティ、BTAHL7 SDK。  

@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c1ee402b-ffda-42c1-8d85-d7cbe073a307
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22224010"
 ---
 # <a name="understand-wcf-security-on-the-adapter-created-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK で作成されたアダプターで WCF のセキュリティを理解します。
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]拡張、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]アーキテクチャのチャネルし、は、メッセージング インフラストラクチャとで提供される API を使用します。  WCF LOB アダプターが、ターゲット システムに接続を確立する必要があるし、そのために認証とその他のセキュリティ情報がターゲット システムの接続を確立するために必要なアダプターを構成する必要があります。  

@@ -1,17 +1,17 @@
 ---
-title: "受信確認エラーの状態 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信確認エラーの状態 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - acknowledgements, errors
 - errors, acknowledgements
 ms.assetid: 605c7fa0-2365-4cb6-92fb-6df570905ca8
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204586"
 ---
 # <a name="acknowledgment-error-conditions"></a>受信確認エラー条件
 致命的なエラーで、次の条件が発生条件の場合に[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) は、処理の受信確認 (ACK) メッセージ。  

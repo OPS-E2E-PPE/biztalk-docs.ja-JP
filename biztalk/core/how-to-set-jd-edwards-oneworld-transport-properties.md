@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 5290f424bbeb5cf54e78c903c50a6c2d945bc8cc
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014129"
 ---
 # <a name="how-to-set-jd-edwards-oneworld-transport-properties"></a>JD Edwards OneWorld トランスポートのプロパティを設定する方法
 
@@ -62,7 +63,7 @@ JD Edwards OneWorld の "トランスポート プロパティ" システム定�
     > [!NOTE]
     >  browsingagent.exe が最新の状態に更新されるのは、ユーザーが現在の参照セッションを終了したときです。 たとえば、終了する必要があります、**項目の生成された追加**参照セッションとを browsingagent.exe を更新します。  
   
-7.  必要なすべての情報を提供すると、をクリックして**適用**、クリックして**[ok]**の接続情報を受け入れます。  
+7.  必要なすべての情報を提供すると、をクリックして**適用**、クリックして **[ok]** の接続情報を受け入れます。  
   
      JD Edwards OneWorld にアクセスするには、BizTalk Adapter for JD Edwards OneWorld の接続パラメーターを設定する必要があります。  
   

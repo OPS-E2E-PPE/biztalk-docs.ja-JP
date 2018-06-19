@@ -1,14 +1,14 @@
 ---
-title: "アダプター メタデータを BizTalk プロジェクトに追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター メタデータを BizTalk プロジェクトに追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e439e5bf-94b3-4582-bacc-b058e6eb8e17
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969064"
 ---
 # <a name="how-to-add-adapter-metadata-to-a-biztalk-project"></a>アダプター メタデータを BizTalk プロジェクトに追加する方法
 アダプター メタデータの追加ウィザードを使用すると、アダプター メタデータを BizTalk プロジェクトに追加できます。 このデータには、オーケストレーションからアダプターと通信するために必要なスキーマ、メッセージの種類、およびポートの種類が含まれます。 FTP などのアプリケーション アダプターと共にアダプター メタデータの追加ウィザードを使用することで、これらのアプリケーション アダプターに対応するスキーマをシステムに取り込むことができます。 HTTP などのトランスポート アダプターでは通常、スキーマが使用されません。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
     |データベース|選択したサーバーの BizTalk 管理データベースの一覧を表示します。|  
     |ポート|省略可。 作成されて、BizTalk 管理データベースに格納されているポートの一覧を表示します。 選択したアダプターで使用できるように構成されているポートだけが表示されます。|  
   
-     **[次へ]**をクリックします。  
+     **[次へ]** をクリックします。  
   
     > [!NOTE]
     >  文字が含まれている生成されたスキーマを追加しようとすると、 **System.XML.XMLConvert**クラスは、コンパイル エラーの結果をサポートしません。  

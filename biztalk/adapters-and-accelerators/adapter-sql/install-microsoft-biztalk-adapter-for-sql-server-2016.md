@@ -1,14 +1,14 @@
 ---
-title: "Microsoft BizTalk Adapter for SQL Server - 2016 のインストール |Microsoft ドキュメント"
-ms.custom: 
+title: Microsoft BizTalk Adapter for SQL Server - 2016 のインストール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bcc6b94e-1cac-4b90-8567-05b33caa9bf3
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967912"
 ---
 # <a name="install-microsoft-biztalk-adapter-for-sql-server---2016"></a>Microsoft BizTalk Adapter for SQL Server - 2016 のインストールします。
 インストール、[!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)]に含まれている[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]です。
@@ -141,7 +142,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  読み取り、使用許諾契約書 (EULA) に同意し、クリックして**次**です。  
   
-4.  **コピー先フォルダー**  ダイアログ ボックスで、インストールする場所を指定、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]、 をクリックして**[次へ]**、クリックして**インストール**です。  
+4.  **コピー先フォルダー**  ダイアログ ボックスで、インストールする場所を指定、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]、 をクリックして **[次へ]**、クリックして**インストール**です。  
   
 5.  **カスタマー エクスペリエンス向上プログラム** ダイアログ ボックスで、カスタマー エクスペリエンス向上プログラム (CEIP) に登録するかどうかを指定します。 CEIP 用の一部として[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]、次のデータは、Microsoft と共有されます。  
   
@@ -154,7 +155,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  常に、基本設定を変更することができます修復モードで、コントロール パネルから、セットアップを実行して、CEIP の登録に関連します。  
   
-6.  **[完了]**をクリックします。  
+6.  **[完了]** をクリックします。  
   
 <a name="BKMK_SilentInst"></a>   
 ### <a name="install-the-sql-adapter-in-silent-mode"></a>サイレント モードでの SQL アダプターをインストールします。 
@@ -275,7 +276,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  必要に応じて、ユーザーの設定を変更に関して、CEIP を無効にして、をクリックして**OK**です。  
   
-8.  **[完了]**をクリックします。  
+8.  **[完了]** をクリックします。  
   
 #### <a name="update-the-sql-adapter-installation-in-silent-mode"></a>更新プログラムのサイレント モードで SQL アダプターのインストール  
   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206066"
 ---
 # <a name="processing-hl7-messages"></a>HL7 メッセージの処理
 このセクションでは、メッセージ モード、シナリオ、メッセージの種類、およびメッセージの書式設定を含む、HL7 メッセージについての詳細を提供します。  

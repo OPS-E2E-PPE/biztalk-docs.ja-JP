@@ -1,17 +1,17 @@
 ---
-title: "BAM DTS パッケージ |Microsoft ドキュメント"
-ms.custom: 
+title: BAM DTS パッケージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - DTS packages, BAM
 - BAM, DTS packages
 ms.assetid: bba70d81-6ddf-4f1f-a1f7-d5a5bf453bae
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965064"
 ---
 # <a name="bam-dts-packages"></a>BAM DTS パッケージ
 管理者は、次の BAM DTS パッケージのパラメーターを更新できます。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 11/28/2017
   
 -   **DataMaintenance** DTS パッケージ  
   
-     **bam_dm _\<**   ***ActivityName* \>**ここで、アクティビティ名は、アクティビティの名前。  
+     **bam_dm _\<**   ***ActivityName* \>** ここで、アクティビティ名は、アクティビティの名前。  
   
  スケジュール済みの集計を集計するには、CubeUpdate DTS パッケージを実行します。 次のセクションでは、リアルタイムのデータ集計の時間帯を指定できます。  
   

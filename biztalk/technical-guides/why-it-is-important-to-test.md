@@ -1,14 +1,14 @@
 ---
-title: "テストすることが重要理由 |Microsoft ドキュメント"
-ms.custom: 
+title: テストすることが重要理由 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce91aca5-56d3-4fb8-abe2-af0039804706
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302306"
 ---
 # <a name="why-it-is-important-to-test"></a>テストの重要性が
 このトピックでは、不十分なテストにつながるマインド セットの概要については BizTalk ソリューションのテストに失敗に関連するリスクをについて説明しの自動テストのメリットがあります手動テストの落とし穴を比較を提供します。  

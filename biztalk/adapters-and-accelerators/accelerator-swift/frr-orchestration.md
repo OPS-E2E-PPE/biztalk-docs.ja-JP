@@ -1,11 +1,11 @@
 ---
-title: "FRR オーケストレーション |Microsoft ドキュメント"
-ms.custom: 
+title: FRR オーケストレーション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, promoted properties
@@ -28,7 +28,7 @@ helpviewer_keywords:
 - messages, outbound
 - MessageBox database
 ms.assetid: ea8d31c2-ac3b-44ac-8064-d008da4f7f72
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -37,6 +37,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967887"
 ---
 # <a name="frr-orchestration"></a>FRR オーケストレーション
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]FRR オーケストレーションで FRR を実装します。 オーケストレーションでは、FIN 応答の相関トークンと一致するどうか、元のメッセージのメッセージ ID を決定します。 SAA にメッセージを送信する送信ポートで実行される送信機能と SAA からメッセージを受信する受信場所で実行される受信機能は、並列でメッセージを処理します。  

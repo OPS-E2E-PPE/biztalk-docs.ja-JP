@@ -1,14 +1,14 @@
 ---
-title: "手順 5: 維持可能な最大のスループットを判断するステップ ロード パターンのテストを実行 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: 維持可能な最大のスループットを判断するステップ ロード パターンのテストを実行 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8056ced6-1f04-4be2-878a-48a427a93dad
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302642"
 ---
 # <a name="step-5-perform-step-load-pattern-tests-to-determine-maximum-sustainable-throughput"></a>手順 5: が維持可能な最大のスループットを判断するステップ ロード パターンのテストを実行します。
 Visual Studio ロード テストでの BizTalk Server ソリューションの最大持続可能なスループット (MST) を決定するため最も簡単な方法は、ステップ ロード パターンを行い、1 秒あたりに処理された合計のドキュメントを 1 秒あたりに受信したドキュメントの総数を比較するには. 1 秒あたりに処理された平均合計のドキュメントは、テストの実行中の 1 秒あたりに受信したドキュメントの平均総数以上には、限り負荷は維持可能なと見なされます。 あたりに受信したドキュメントの総数、平均が 2 つ目は、テストの実行中の 1 秒あたりに処理されたドキュメントの平均総数よりも大きい後ロードとは見なされません維持可能なおよびの値に対応する拡張によってこの確認は、Biztalk: メッセージ ボックス: 一般的な Counters\Spool サイズ カウンターです。 最終的に、制限の条件が引き起こされるのパフォーマンスが大幅に低下するメッセージ ボックス データベースに蓄積されます未処理のドキュメントでは、BizTalk Server アプリケーションが処理できるほど大量のドキュメントを受信すると、時間の経過と共に、BizTalk Server アプリケーションです。  

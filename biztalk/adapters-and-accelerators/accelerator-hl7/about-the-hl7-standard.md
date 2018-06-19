@@ -1,18 +1,18 @@
 ---
-title: "HL7 標準について |Microsoft ドキュメント"
-ms.custom: 
+title: HL7 標準について |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - standards [HL7]
 - HL7, standards
 - Health Level Seven (HL7)
 ms.assetid: 15f26ae3-d1ad-40a4-aafe-7148ef30cadb
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204842"
 ---
 # <a name="about-the-hl7-standard"></a>HL7 標準について
 正常性レベル 7 (HL7) 標準の目的は、医療環境での通信を容易にです。 主な目的を排除またはそれ以外の場合必要なカスタム インターフェイス プログラミングおよびプログラムのメンテナンスを大幅に短縮する、医療コンピューター アプリケーション間のデータの交換標準を提供します。 この主な目的は、目標値のセットとして区切ることができます。  

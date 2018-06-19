@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-rendezvous-receive-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 0cd93bcd2d1855f137600214b6a07d52b6f52e4f
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013321"
 ---
 # <a name="how-to-create-receive-ports"></a>作成する方法の受信ポート
 Visual Studio を使用して受信ポートを作成するには、次の手順を実行します。  
@@ -27,7 +28,7 @@ Visual Studio を使用して受信ポートを作成するには、次の手順
   
 4.  **受信場所** ページで、次の操作します。  
   
-    1.  **[新規作成]**をクリックします。  
+    1.  **[新規作成]** をクリックします。  
   
     2.  **受信場所**ウィンドウで、**全般** ページで、入力、**名前**受信場所のです。  
   
@@ -39,13 +40,13 @@ Visual Studio を使用して受信ポートを作成するには、次の手順
   
     6.  選択、**有効にするサービス時間帯**チェック ボックスをオンします。  
   
-    7.  **[OK]**をクリックします。  
+    7.  **[OK]** をクリックします。  
   
 5.  **受信マップ**ページで、選択したポートでドキュメントを変換するための受信マップを選択します。  
   
 6.  **追跡** ページで、必要なメッセージ本文の追跡と追跡メッセージのプロパティを選択します。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [TIBCO Rendezvous 受信ハンドラーの作成](../core/creating-tibco-rendezvous-receive-handlers.md)

@@ -1,11 +1,11 @@
 ---
-title: "BAM 警告の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 警告の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, alerts
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - alerts, configuring
 - managing [BAM definitions], configuring alerts
 ms.assetid: 29327466-c8e9-41e8-bc12-f3ac6b5d3096
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968888"
 ---
 # <a name="configuring-bam-alerts"></a>BAM 警告の構成
 管理者は、BAM 警告フレームワークの特定の要素を変更できます。 このトピックでは、管理者が使用できる構成オプションについて説明します。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
   
-2.  コマンド プロンプトで入力して、追跡フォルダーに移動**cd"C:\Program files \microsoft BizTalk Server\<バージョン\>\Tracking"**または**cd"C:\Program Files (x86) \Microsoft BizTalkサーバー\<バージョン\>\Tracking"** 64 ビット コンピューターにします。 **Enter**キーを押します。  
+2.  コマンド プロンプトで入力して、追跡フォルダーに移動**cd"C:\Program files \microsoft BizTalk Server\<バージョン\>\Tracking"** または**cd"C:\Program Files (x86) \Microsoft BizTalkサーバー\<バージョン\>\Tracking"** 64 ビット コンピューターにします。 **Enter**キーを押します。  
   
 3.  ADF ファイルを取得します。 型**cscript ProcessBamNSFiles.vbs-取得\<ConfigFilePath\> \<構成ファイルのパス\> \< PID サーバー\> \< PID データベース\>** . 構成ファイルのパス、ADF ファイルのパス、PID サーバー、および PID データベースは、インストール環境に適した値に置き換えてください。  
   

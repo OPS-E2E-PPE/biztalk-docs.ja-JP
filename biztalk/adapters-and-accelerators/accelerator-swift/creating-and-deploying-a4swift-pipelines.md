@@ -1,11 +1,11 @@
 ---
-title: "作成して、A4SWIFT パイプラインを展開する |Microsoft ドキュメント"
-ms.custom: 
+title: 作成して、A4SWIFT パイプラインを展開する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, pipelines
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - pipelines, deploying
 - pipelines, creating
 ms.assetid: 2a614510-7e15-4e88-9012-fc019d3aefee
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210954"
 ---
 # <a name="creating-and-deploying-a4swift-pipelines"></a>作成して、A4SWIFT パイプラインを展開します。
 次の図に示すように作成し、メッセージ repair and new submission の SWIFT パイプラインを展開するには、次の手順を実行します。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 09/20/2017
 7.  **プロパティ**、いることを確認、 **BRE 検証**と**XML 検証**プロパティに設定されます**True**です。  
   
     > [!NOTE]
-    >  SWIFT ヘッダー スキーマ プロパティを設定する必要があります**(なし)**です。  
+    >  SWIFT ヘッダー スキーマ プロパティを設定する必要があります **(なし)** です。  
   
 8.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]をクリックして**ファイル**、し**すべてを保存**です。  
   

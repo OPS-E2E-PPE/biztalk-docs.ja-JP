@@ -1,14 +1,14 @@
 ---
-title: "WCF チャネル モデルを使用して Oracle E-business Suite アプリケーションを開発 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF チャネル モデルを使用して Oracle E-business Suite アプリケーションを開発 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75bb6de1-e11a-4377-af13-e1cb954aaf3f
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214802"
 ---
 # <a name="develop-oracle-e-business-suite-applications-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して Oracle E-business Suite アプリケーションを開発します。
 使用することができます、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]チャネル モデルを使用する、 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] Oracle EBS バインドで作成されたチャネル インスタンス経由で直接 XML メッセージを送信することによってです。  

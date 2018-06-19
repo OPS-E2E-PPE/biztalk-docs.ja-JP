@@ -1,11 +1,11 @@
 ---
-title: "マスター シークレット サーバーを変更する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マスター シークレット サーバーを変更する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Master Secret server, promoting
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - modifying, Master Secret server
 - Master Secret server, changing
 ms.assetid: 44a786ca-4645-44a8-b33e-d0019f0aeca9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969360"
 ---
 # <a name="how-to-change-the-master-secret-server"></a>マスター シークレット サーバーを変更する方法
 マスター シークレット サーバーをセットアップして SSO データベースを構成した後、元のマスター シークレット サーバーで障害が発生して復旧できない場合は、マスター シークレット サーバーを変更できます。 マスター シークレット サーバーを変更するには、SSO サーバーを、マスター シークレット サーバーに昇格させる必要があります。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  新しいマスター シークレット サーバーを再起動します。  
   
-8.  型**ssoconfig – restoresecret と入力\<ファイルを復元\>**ここで、 **\<ファイルを復元\>**マスター シークレットがファイルの名前とパスには格納されています。  
+8.  型**ssoconfig – restoresecret と入力\<ファイルを復元\>** ここで、 **\<ファイルを復元\>** マスター シークレットがファイルの名前とパスには格納されています。  
   
      マスター シークレットがレジストリの次の場所に保存されます。  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  マスター シークレット サーバーを再起動します。  
   
-6.  型**ssoconfig – restoresecret と入力\<ファイルを復元\>**ここで、 **\<ファイルを復元\>**マスター シークレットがファイルの名前とパスには格納されています。  
+6.  型**ssoconfig – restoresecret と入力\<ファイルを復元\>** ここで、 **\<ファイルを復元\>** マスター シークレットがファイルの名前とパスには格納されています。  
   
      マスター シークレットがレジストリの次の場所に保存されます。  
   

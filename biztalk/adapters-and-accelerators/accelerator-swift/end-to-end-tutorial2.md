@@ -1,18 +1,18 @@
 ---
-title: "エンド ツー エンド Tutorial2 |Microsoft ドキュメント"
-ms.custom: 
+title: エンド ツー エンド Tutorial2 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tutorial, about the tutorial
 - tutorial
 - tutorial, workflow
 ms.assetid: 1aba93b9-6991-46ef-a3bc-3815a5ff473f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209258"
 ---
 # <a name="end-to-end-tutorial"></a>エンド ツー エンドのチュートリアル
 このチュートリアルには作成および設定する方法を説明する詳しい手順が含まれています、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]ソリューションです。 モジュールとレッスン使用[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]スキーマを作成するオーケストレーション、および A4SWIFT を使用してコンポーネントをパイプラインにマップします。  

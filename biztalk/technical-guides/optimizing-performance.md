@@ -1,14 +1,14 @@
 ---
-title: "パフォーマンスの最適化 |Microsoft ドキュメント"
-ms.custom: 
+title: パフォーマンスの最適化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bafa119b-187e-4595-a673-358dc0a109b7
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299098"
 ---
 # <a name="optimizing-performance"></a>パフォーマンスの最適化
 Windows オペレーティング システム、SQL Server の既定のインストール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、実稼働の最適なパフォーマンスを提供する、IIS を大幅に最適化できますと[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。 WCF 構成パラメーターは、パフォーマンスが大幅に向上を提供する既定の設定からチューニングできます。 このセクションでは特定のパフォーマンスの最適化、実稼働環境を展開するときに従う必要がありますを[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションです。  

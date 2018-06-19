@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22207826"
 ---
 # <a name="using-the-pip-specification-to-create-a-process-configuration"></a>PIP 仕様を使用して、プロセス構成を作成するには
 ダウンロードした後、プロセス PIP (Partner Interface)、RosettaNet 組織 (RosettaNet.org) から、ダウンロード パッケージには、PIP 仕様ドキュメントが含まれています。 このドキュメントには、[!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] 管理コンソールでプロセス構成を作成する場合に使用する設定についてのガイダンスが記載されています。  

@@ -1,17 +1,17 @@
 ---
-title: "WCF サービス モデルを使用して sap Idoc を送信 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して sap Idoc を送信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, sending IDOCs to SAP
 - IDOCs, sending to SAP by using the WCF service model
 ms.assetid: 84077234-b82b-4e88-b858-ce2cb1383fb4
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966592"
 ---
 # <a name="send-idocs-to-sap-using-the-wcf-service-model"></a>WCF サービス モデルを使用して sap Idoc を送信します。
 内部的には、 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] 2 つの次の Rfc のいずれかを呼び出すことによって、Idoc を SAP システムに送信します。  

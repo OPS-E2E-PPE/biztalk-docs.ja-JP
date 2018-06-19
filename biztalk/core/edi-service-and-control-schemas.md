@@ -1,14 +1,14 @@
 ---
-title: "EDI サービスと管理スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: EDI サービスと管理スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4866571b-b12d-446c-8d27-a72fe7e479ef
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969152"
 ---
 # <a name="edi-service-and-control-schemas"></a>EDI サービスと管理スキーマ
 メッセージ エンベロープおよび受信確認を処理するには、管理スキーマが必要です (メッセージ エンベロープの処理にはヘッダー管理スキーマが必要です)。 これらのスキーマは、セットアップ プログラムにより Microsoft.BizTalk.Edi.BaseArtifacts.dll に展開されます。 BaseArtifacts.dll に展開済みなので、これらのスキーマを BizTalk プロジェクトに追加する必要はありません。 これらのスキーマを使用するには、スキーマを組み込むプロジェクトに BaseArtifacts.dll アセンブリへの参照を追加する必要があります。  

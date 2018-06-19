@@ -1,14 +1,14 @@
 ---
-title: "制限のしきい値の調整: タイミングと理由 |Microsoft ドキュメント"
-ms.custom: 
+title: '制限のしきい値の調整: タイミングと理由 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9afb26c8-e5f4-4b78-9a45-a1263e3cb6ab
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22229930"
 ---
 # <a name="adjusting-throttling-thresholds-when-and-why"></a>制限のしきい値の調整: タイミングと理由
 制限に関しては、あらゆる状況に対応できる汎用の設定は存在しません。 最適な設定はさまざまな要因によって決まります。 BizTalk Server が提供する既定値は、バックログ過多などの問題からシステムを有効に保護することがテストを通じて実証されています。 ただし、シナリオによっては、既定値を使用すると設定が厳しくなり過ぎる場合があります。 この点について、次の各例で説明します。  

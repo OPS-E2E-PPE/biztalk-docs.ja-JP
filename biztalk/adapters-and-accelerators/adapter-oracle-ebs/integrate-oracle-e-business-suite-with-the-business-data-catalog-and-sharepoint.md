@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite とビジネス データ カタログと SharePoint 統合 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite とビジネス データ カタログと SharePoint 統合 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 311f605d-78b4-41a0-b231-1a00a879f637
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216066"
 ---
 # <a name="integrate-oracle-e-business-suite-with-the-business-data-catalog-and-sharepoint"></a>Oracle E-business Suite とビジネス データ カタログと SharePoint 統合します。
 [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]が含まれています、 [!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)]、特定の LOB アーティファクトを WCF サービスが生成されます。 この WCF サービスは、Microsoft インターネット インフォメーション サービス (IIS) などのホスト環境でホストされます。 ビジネス データ カタログ定義エディターは、WCF サービスの Web サービス記述言語 (WSDL) を取得する WCF サービスがホストされている URL を使用します。 WSDL を使用して、ビジネス データ カタログ定義エディターは、WCF サービスが使用できるメソッドを抽出します。 これらのメソッドは、エンティティとエンティティ間の関連付けを確立するために使用できます。  

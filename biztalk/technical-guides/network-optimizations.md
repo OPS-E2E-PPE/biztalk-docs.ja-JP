@@ -1,14 +1,14 @@
 ---
-title: "ネットワーク最適化 |Microsoft ドキュメント"
-ms.custom: 
+title: ネットワーク最適化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9ff0392f-37ae-4ca6-8cc6-d53065de64c5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298762"
 ---
 # <a name="network-optimizations"></a>ネットワークの最適化
 BizTalk Server コンピューターは、SQL Server コンピューターから独立、BizTalk Server 環境で BizTalk Server によって処理される各メッセージには、ネットワーク経由で通信が必要です。 この通信には、BizTalk Server コンピューターと BizTalk メッセージ ボックス データベース、BizTalk 管理データベース、BAM データベースおよびその他のデータベース間のかなりのトラフィックが含まれています。 高負荷のシナリオで、この通信は大量のネットワーク トラフィックにより、ネットワーク設定が最適化されていない、十分なネットワーク インターフェイス カードがインストールされている、または十分なネットワーク帯域幅が場合は特に、ボトルネックになることができます。使用できます。  
@@ -82,7 +83,7 @@ BizTalk Server コンピューターは、SQL Server コンピューターから
     > [!NOTE]  
     >  Windows を設定する必要があります、**サブネット マスク**に入力した値に基づいて、適切な値を持つフィールド、 **IP アドレス**フィールドです。  
   
-5.  ままにして、**デフォルト ゲートウェイ**フィールドの空白をクリックして**[ok]**、順にクリック**閉じる**です。  
+5.  ままにして、**デフォルト ゲートウェイ**フィールドの空白をクリックして **[ok]**、順にクリック**閉じる**です。  
   
 6.  一意のプライベート IP アドレスを各仮想マシンを構成した後に、HYPER-V ホスト コンピューターで実行されている他の仮想マシンの NetBIOS 名と IP アドレスと各仮想マシン上の HOSTS ファイルを更新します。 更新されたホスト ファイルは、各仮想マシンに %systemroot%\drivers\etc\ フォルダーに保存する必要があります。  
   
@@ -114,7 +115,7 @@ BizTalk Server コンピューターは、SQL Server コンピューターから
   
  プロトコルおよびサービスを現在インストールされているネットワーク クライアントを表示するには、これらの手順に従います。  
   
-1.  をクリックして**開始**、] をポイント**設定**、順にクリック**コントロール パネルの [**です。  
+1.  をクリックして**開始**、] をポイント**設定**、順にクリック**コントロール パネルの [** です。  
   
 2.  ダブルクリックして**ネットワーク接続**コンピューターのネットワーク接続を表示します。  
   
@@ -152,7 +153,7 @@ BizTalk Server コンピューターは、SQL Server コンピューターから
   
 4.  **全般** タブで、をクリックして**構成**です。  
   
-5.  クリックして、 **[詳細設定]**タブ プロパティにアクセスするネットワーク アダプターに構成することができます。  
+5.  クリックして、 **[詳細設定]** タブ プロパティにアクセスするネットワーク アダプターに構成することができます。  
   
  次のプロパティは、BizTalk Server 環境の各ネットワーク アダプターを構成してください。  
   

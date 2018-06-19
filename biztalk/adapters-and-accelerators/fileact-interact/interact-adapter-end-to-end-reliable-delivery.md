@@ -1,14 +1,14 @@
 ---
-title: "アダプターのエンド ツー エンドの信頼性の高い配信を対話 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターのエンド ツー エンドの信頼性の高い配信を対話 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac7c22f2-ee4a-4e9b-af40-da7eb58daf51
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222994"
 ---
 # <a name="interact-adapter-end-to-end-reliable-delivery"></a>アダプターのエンド ツー エンドの信頼性の高い配信を対話します。
 メッセージやファイルを受信者に送信するときに、メッセージやファイルが配信される、およびビジネスをより詳細度もいいえがこれらに含まれているトランザクションで実行が予想されることを確認することをお勧めします。  

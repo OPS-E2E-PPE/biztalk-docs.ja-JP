@@ -1,18 +1,18 @@
 ---
-title: "Web メッセージ部分の型を確認する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Web メッセージ部分の型を確認する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web messages, message types
 - Web services, Web messages
 - Web messages, parts
 ms.assetid: bdd1f604-ec35-41e3-b5a8-1e0ad0193eff
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25970545"
 ---
 # <a name="how-to-determine-a-web-message-part-type"></a>Web メッセージ部分の型を判別する方法
 特定の Web メッセージの種類の [プロパティ] ウィンドウを使用して、Web メッセージ部分の型がプリミティブ .NET 型かスキーマ型かを判別できます。  

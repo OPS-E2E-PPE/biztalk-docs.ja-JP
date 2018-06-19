@@ -1,14 +1,14 @@
 ---
-title: "ValidationAdapter |Microsoft ドキュメント"
-ms.custom: 
+title: ValidationAdapter |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5fe99350-14c0-4ddb-b257-af9a0c4258f6
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966440"
 ---
 # <a name="validationadapter"></a>ValidationAdapter
 ValidationAdapter のサンプルは、応答側パブリック プロセスでメッセージに対して特殊な検証ルールを実行する方法を示しています。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] では、送信または受信パイプライン、およびオーケストレーションで検証がネイティブに実行されます。 追加の検証を実行する場合は、検証アダプターを作成します。 追加の検証には、クロスフィールド検証ルールや、XSD を使用して実装できないビジネス固有の検証ルールを含めることができます。  

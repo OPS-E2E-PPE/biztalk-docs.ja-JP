@@ -1,14 +1,14 @@
 ---
-title: "マップの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: マップの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc9f8ad1-4aad-4866-8aa4-4877fdc5e5f9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969112"
 ---
 # <a name="creating-maps"></a>マップの作成
 BizTalk マッパーの主要なユーザー インターフェイスが内のタブに表示される、 [!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。 この表示は、3 つのペインに分割されています。 左ペインでは、送信元スキーマがツリーとして表示されます。 右ペインでは、送信先スキーマがツリーとして表示されます。 中央のペインでは、グリッドが複数のページに表示されます。 送信元スキーマのデータを送信先スキーマにどのようにマップするかを示すには、マップする対象のレコードとフィールドの間に線を引きます。 これらの行が呼び出される*リンク*データのマッピングを指定する最も簡単な方法です。 レコードおよびフィールドのリンクの詳細については、次を参照してください。[マップでリンク](../core/links-in-maps.md)です。  

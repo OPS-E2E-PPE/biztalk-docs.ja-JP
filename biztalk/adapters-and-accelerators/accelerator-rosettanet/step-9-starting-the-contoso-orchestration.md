@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209450"
 ---
 # <a name="step-9-starting-the-contoso-orchestration"></a>手順 9: Contoso オーケストレーションの開始
 ここでは、物理的な送信元と送信先の場所を定義して、ポートの構成プロセスを実行します。 作成した論理ポートを物理ポートをバインドする[手順 7: ポートの作成と構成](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)です。 オーケストレーションで実行される物理環境と、オーケストレーションで設計したビジネス プロセスを関連付けるには、サービスを参加させます。 最後に、Fabrikam とのビジネス トランザクションに参加できるように、オーケストレーションを開始します。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  開いている**BizTalk エクスプ ローラー**です。  
   
-2.  BizTalk エクスプ ローラーで、 **BizTalk 構成データベース**、展開**オーケストレーション**を右クリックして**[contosopriceandavailability.privateresponderprocess]**、クリックして**バインド**です。  
+2.  BizTalk エクスプ ローラーで、 **BizTalk 構成データベース**、展開**オーケストレーション**を右クリックして **[contosopriceandavailability.privateresponderprocess]**、クリックして**バインド**です。  
   
 3.  [ポートのバインドのプロパティ] ページで、 **LOB_To_PrivateResponder**で、 **FromLOB**プロパティです。  
   
@@ -51,9 +52,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  BizTalk 管理コンソールの左側のウィンドウで展開**アプリケーション**、展開**BizTalk アプリケーション 1**、クリックして**オーケストレーション**です。  
   
-2.  右側のペインで右クリックし、 **[contosopriceandavailability.privateresponderprocess]**オーケストレーション、およびクリック**Enlist**です。  
+2.  右側のペインで右クリックし、 **[contosopriceandavailability.privateresponderprocess]** オーケストレーション、およびクリック**Enlist**です。  
   
-3.  右クリックし、 **[contosopriceandavailability.privateresponderprocess]**オーケストレーション、およびクリック**開始**オーケストレーションを開始します。  
+3.  右クリックし、 **[contosopriceandavailability.privateresponderprocess]** オーケストレーション、およびクリック**開始**オーケストレーションを開始します。  
   
 ## <a name="see-also"></a>参照  
  [Fabrikam ソリューションの作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-fabrikam-solution.md)

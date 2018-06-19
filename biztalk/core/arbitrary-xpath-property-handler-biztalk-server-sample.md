@@ -11,7 +11,7 @@ helpviewer_keywords:
 - pipeline components [custom], examples
 - examples, pipeline components [custom]
 ms.assetid: 4eb26c38-5ece-42b0-a28e-73214df1dc41
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25966760"
 ---
 # <a name="arbitrary-xpath-property-handler-biztalk-server-sample"></a>任意の XPath プロパティ ハンドラ (BizTalk Server サンプル)
 任意の XPath プロパティ ハンドラー ([!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サンプル) では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信される XML ドキュメント上で特定のプロパティを昇格させるためのカスタム パイプライン コンポーネントを記述する方法を示します。 サンプルに含まれる機能を使用して、XPath 式を評価する通常、アセンブラ、および逆アセンブラの各カスタム コンポーネントを作成できます。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 03/28/2018
 7.  新しい PO ドキュメントは、\Output ディレクトリのファイルに書き込まれます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler  
+ *\<Samples Path\>* \Pipelines\ArbitraryXPathPropertyHandler  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -84,13 +85,13 @@ ms.lasthandoff: 03/28/2018
   
 1.  コマンド ウィンドウでディレクトリ変更 (**cd**) 次のフォルダーにします。  
   
-     *\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler  
+     *\<Samples Path\>* \Pipelines\ArbitraryXPathPropertyHandler  
   
 2.  ファイル Setup.bat では、次の操作を実行しますが、実行します。  
   
     -   任意の XPath プロパティ ハンドラ パイプライン コンポーネントをビルドします。  
   
-    -   構築されたコピーのパイプライン コンポーネントを*\<インストール パス\>*\Pipeline Components ディレクトリ。  
+    -   構築されたコピーのパイプライン コンポーネントを*\<インストール パス\>* \Pipeline Components ディレクトリ。  
   
     -   送信ポートおよび受信ポートを作成します。  
   

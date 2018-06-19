@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite アダプターを使用して BizTalk アプリケーションを開発 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite アダプターを使用して BizTalk アプリケーションを開発 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bf3374a2-2fca-4df4-a1b1-d11cdc05d393
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215034"
 ---
 # <a name="develop-biztalk-applications-using-the-oracle-e-business-suite-adapter"></a>Oracle E-business Suite アダプターを使用して BizTalk アプリケーションを開発します。
 BizTalk アプリケーションの開発で BizTalk プロジェクトを作成する[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]を使用して、  **[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]** または **[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]**  XML スキーマを生成します。 スキーマが生成されると、コンテンツ ベースのルーティング (CBR) を使用するか、生成されたスキーマに準拠するメッセージを送受信する BizTalk オーケストレーションを作成します。  

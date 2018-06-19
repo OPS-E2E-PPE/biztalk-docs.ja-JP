@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969544"
 ---
 # <a name="how-to-configure-functoid-input-parameters"></a>Functoid 入力パラメーターを構成する方法
 マップ内の Functoid に対する入力パラメーターを適切に構成する操作は、最も重要な操作の 1 つです。ただし、Functoid を使用する際にエラーが発生する可能性があるので注意して行う必要があります。 Functoid の入力パラメーターは次のように構成できます。  
@@ -138,7 +139,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  この方法を使用して、入力パラメーター (入力リンクに対応するパラメーターを含む) を削除できます。  
   
-2.  クリックして、![選択項目の削除](../core/media/delete-button.gif "Delete_button")ボタンをクリックします。 選択した既存の入力パラメーターが、パラメーター一覧から削除されます。 **[OK]**をクリックします。  
+2.  クリックして、![選択項目の削除](../core/media/delete-button.gif "Delete_button")ボタンをクリックします。 選択した既存の入力パラメーターが、パラメーター一覧から削除されます。 **[OK]** をクリックします。  
   
      または、削除する行を選択して、キーボードの Del キーを押します。  
   

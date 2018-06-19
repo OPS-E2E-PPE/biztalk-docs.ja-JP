@@ -1,11 +1,11 @@
 ---
-title: "メッセージ部分 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ部分 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, segments
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, message parts
 - segments, messages
 ms.assetid: 2bb6557e-cd4a-42b7-8bc2-f8b53a59517e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205082"
 ---
 # <a name="message-parts"></a>メッセージ部分
 HL7 メッセージには、次の部分が含まれています。 セグメント、データ フィールド、コンポーネント、および必要に応じてこれらのサブコンポーネントです。 HL7 メッセージでは、次の階層構造があります。  

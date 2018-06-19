@@ -1,11 +1,11 @@
 ---
-title: "Message Repair and New Submission の部門とロールの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: Message Repair and New Submission の部門とロールの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - departments, creating
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - certificates, messages
 - messages, certificates
 ms.assetid: 6337bd57-63c5-4d97-b558-ac27d5eb60d7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210538"
 ---
 # <a name="creating-departments-and-roles-for-message-repair-and-new-submission"></a>Message Repair and New Submission の部門とロールの作成
 Message Repair and New Submission には、次の 4 つの異なる操作が含まれます。  

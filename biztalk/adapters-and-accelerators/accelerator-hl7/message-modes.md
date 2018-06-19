@@ -1,18 +1,18 @@
 ---
-title: "モードをメッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: モードをメッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message modes, about message modes
 - messages, message modes
 - message modes, HL7 messages
 ms.assetid: 2d832b67-6f0e-45e1-95ac-cb80b74a7831
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205058"
 ---
 # <a name="message-modes"></a>メッセージ モード
 HL7 のすべてのメッセージの基になる 2 つの基本的な概念があります。 これらの概念はアドレス データを交換する独立したシステムの相互作用し、分散医療システム内で時間の経過と共に相互運用性の要件をサポートする構造を提供する、さまざまな方法です。 以下に示す概念は、HL7 デザインの背後にある、基になるテーマを定義します。  

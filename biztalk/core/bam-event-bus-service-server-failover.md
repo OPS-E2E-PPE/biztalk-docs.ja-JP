@@ -1,14 +1,14 @@
 ---
-title: "BAM イベント バス サービス サーバーのフェールオーバー |Microsoft ドキュメント"
-ms.custom: 
+title: BAM イベント バス サービス サーバーのフェールオーバー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f12378c8-09bb-45c1-ade1-d9b20131461f
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230642"
 ---
 # <a name="bam-event-bus-service-server-failover"></a>BAM イベント バス サービス サーバーのフェールオーバー
 BAM イベント バス サービスには、予期しない障害が発生した場合にデータを失わずに復旧して再起動するためのフォールト トレランス ロジックが含まれています。  

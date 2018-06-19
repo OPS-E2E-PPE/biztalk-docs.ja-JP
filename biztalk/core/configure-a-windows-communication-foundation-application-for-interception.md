@@ -1,14 +1,14 @@
 ---
-title: "傍受のための Windows Communication Foundation アプリケーションを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 傍受のための Windows Communication Foundation アプリケーションを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 37f2ccde-aa79-470a-ac31-57e4168dc54a
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969656"
 ---
 # <a name="how-to-configure-a-windows-communication-foundation-application-for-interception"></a>傍受のために Windows Communication Foundation アプリケーションを構成する方法
 BAM アクティビティ データの収集を開始するには、まず BAM インターセプター ソフトウェアをインストールし、BAM [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] インターセプターを使用するようにアプリケーションを構成する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] およびその依存関係がインストールされ、BizTalk グループが少なくとも 1 つ作成されていることを前提とします。  
@@ -44,7 +45,7 @@ BAM アクティビティ データの収集を開始するには、まず BAM �
   
 1.  をクリックして**開始** をクリックし、**実行**Windows コマンド プロンプトを開きます。  
   
-2.  型**cmd**で、**開く**フィールドをクリックして**[ok]**です。  
+2.  型**cmd**で、**開く**フィールドをクリックして **[ok]** です。  
   
 3.  ディレクトリ変更のコマンドを使用して、展開する監視モデルが格納されているディレクトリに移動します。 たとえば、 **cd c:\businessprocess\Orders**です。  
   
@@ -66,7 +67,7 @@ BAM アクティビティ データの収集を開始するには、まず BAM �
   
 1.  をクリックして**開始** をクリックし、**実行**Windows コマンド プロンプトを開きます。  
   
-2.  型**cmd**で、**開く**フィールドをクリックして**[ok]**です。  
+2.  型**cmd**で、**開く**フィールドをクリックして **[ok]** です。  
   
 3.  ディレクトリ変更のコマンドを使用して、展開するインターセプター構成ファイルが格納されているディレクトリに移動します。 たとえば、 **cd c:\businessprocess\Orders**です。  
   

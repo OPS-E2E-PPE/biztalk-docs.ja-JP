@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-peoplesoft-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: e5f68232aa0cb59835523df0afac01f3d1949489
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013881"
 ---
 # <a name="how-to-set-pipelines-for-peoplesoft-enterprise"></a>PeopleSoft Enterprise のパイプラインを設定する方法
 Microsoft BizTalk Adapter for PeopleSoft Enterprise では、適切なパイプラインを選択する必要があります。  
@@ -27,11 +28,11 @@ Microsoft BizTalk Adapter for PeopleSoft Enterprise では、適切なパイプ�
   
     3.  **送信ハンドラー**ドロップダウン リストで、URI を選択します。  
   
-    4.  送信パイプラインのドロップダウン リストから選択**[microsoft.biztalk.defaultpipelines.xmltransmit]**です。  
+    4.  送信パイプラインのドロップダウン リストから選択 **[microsoft.biztalk.defaultpipelines.xmltransmit]** です。  
   
-    5.  **受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**です。  
+    5.  **受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** です。  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [PeopleSoft 送信ハンドラーの作成](../core/creating-peoplesoft-send-handlers.md)

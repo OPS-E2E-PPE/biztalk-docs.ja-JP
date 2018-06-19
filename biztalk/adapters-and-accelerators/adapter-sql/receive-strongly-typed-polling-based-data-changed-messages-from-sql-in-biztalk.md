@@ -1,14 +1,14 @@
 ---
-title: "厳密に型指定されたポーリング ベース データが変更されてから受信 BizTalk Server を使用して SQL Server |Microsoft ドキュメント"
-ms.custom: 
+title: 厳密に型指定されたポーリング ベース データが変更されてから受信 BizTalk Server を使用して SQL Server |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e6e6ba7e-9e13-4e28-b57d-d24569277bbc
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968056"
 ---
 # <a name="receive-strongly-typed-polling-based-data-changed-messages-from-sql-server-using-biztalk-server"></a>厳密に型指定されたポーリング ベース データが変更されてから受信 BizTalk Server を使用して SQL Server
 構成することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server から厳密に型指定されたポーリング メッセージを受信します。 データベースをポーリングするアダプターを実行するポーリング ステートメントを指定することができます。 ポーリング ステートメントには、SELECT ステートメントまたは結果セットを返すストアド プロシージャを使用できます。  
@@ -83,7 +84,7 @@ SELECT * FROM Employee;EXEC MOVE_EMP_DATA;EXEC ADD_EMP_DETAILS John, Tester, 100
 |**InboundOperationType**|実行するかどうかを指定します**ポーリング**、 **TypedPolling**、または**通知**操作を受信します。 既定値は**ポーリング**です。 厳密に型指定されたポーリング メッセージを受信するには、これを設定**TypedPolling**です。|  
 |**PolledDataAvailableStatement**|すべてのデータがポーリングに使用できるかどうかを判断するアダプターを実行する SQL ステートメントを指定します。 SQL ステートメントには、結果の行と列で構成されるセットを返す必要があります。 SQL ステートメントが指定した行がある場合のみ、 **PollingStatement**プロパティのバインドが実行されます。|  
 |**PollingIntervalInSeconds**|秒単位で間隔を指定、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]の指定されたステートメントの実行、 **PolledDataAvailableStatement**プロパティをバインドします。 既定値は 30 秒です。 ポーリング間隔では、連続するポーリングの間隔を決定します。 ステートメントは、指定した期間内で実行される、アダプターは、間隔の残り時間を待機します。|  
-|**PollingStatement**|SQL Server データベース テーブルをポーリングする SQL ステートメントを指定します。 単純な SELECT ステートメントまたはストアド プロシージャのポーリング ステートメントを指定できます。 既定値は null です。 値を指定する必要があります**PollingStatement**ポーリングを有効にします。 ポーリング ステートメントの実行によって決定される、ポーリングに使用できるデータが場合にのみ、 **PolledDataAvailableStatement**プロパティをバインドします。 セミコロンで区切られた SQL ステートメントの任意の数を指定できます。<br /><br /> **重要:**の**TypedPolling**メタデータを生成する前にこのバインドのプロパティを指定する必要があります。|  
+|**PollingStatement**|SQL Server データベース テーブルをポーリングする SQL ステートメントを指定します。 単純な SELECT ステートメントまたはストアド プロシージャのポーリング ステートメントを指定できます。 既定値は null です。 値を指定する必要があります**PollingStatement**ポーリングを有効にします。 ポーリング ステートメントの実行によって決定される、ポーリングに使用できるデータが場合にのみ、 **PolledDataAvailableStatement**プロパティをバインドします。 セミコロンで区切られた SQL ステートメントの任意の数を指定できます。<br /><br /> **重要:** の**TypedPolling**メタデータを生成する前にこのバインドのプロパティを指定する必要があります。|  
 |**PollWhileDataFound**|指定するかどうか、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]ポーリング間隔を無視し、継続的に指定された SQL ステートメントを実行、 **PolledDataAvailableStatement**をポーリングするテーブルにデータがある場合、プロパティをバインドします。 テーブルのデータがない場合は、アダプターは、指定されたポーリング間隔で SQL ステートメントを実行する元に戻します。 既定値は**false**です。|  
   
  これらのプロパティの詳細については、次を参照してください。 [BizTalk Adapter for SQL Server アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。 使用する方法の詳細については、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL サーバーのポーリングを読みます。  
@@ -128,7 +129,7 @@ SELECT * FROM Employee;EXEC MOVE_EMP_DATA;EXEC ADD_EMP_DETAILS John, Tester, 100
   
      バインドのプロパティを指定する方法については、次を参照してください。 [SQL アダプターのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-binding-properties-for-the-sql-adapter.md)です。  
   
-3.  コントラクトの種類を選択して**サービス (入力方向の操作)**です。  
+3.  コントラクトの種類を選択して**サービス (入力方向の操作)** です。  
   
 4.  スキーマを生成、 **TypedPolling**操作します。  
   
@@ -206,17 +207,17 @@ SELECT * FROM Employee;EXEC MOVE_EMP_DATA;EXEC ADD_EMP_DETAILS John, Tester, 100
 
 1.  BizTalk マッパーは、BizTalk プロジェクトに追加します。 BizTalk プロジェクトを右クリックし、[**追加**、] をクリック**新しい項目の**します。  
   
-     **新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定`MapSchema.btm`です。 **[追加]**をクリックします。  
+     **新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定`MapSchema.btm`です。 **[追加]** をクリックします。  
   
 2.  送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。  
   
-3.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、ポーリング メッセージのスキーマを選択します。 このトピックでは、Typed_Polling.TypedPolling_Employee を選択します。 **[OK]**をクリックします。  
+3.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、ポーリング メッセージのスキーマを選択します。 このトピックでは、Typed_Polling.TypedPolling_Employee を選択します。 **[OK]** をクリックします。  
   
 4.  **送信元スキーマのルート ノード**ダイアログ ボックスで選択 TypedPolling とクリック**OK**です。  
   
 5.  送信先スキーマ ペインで、をクリックして**送信先スキーマを開く**です。  
   
-6.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**EmployeeDetails のスキーマを選択します。 このトピックでは、Typed_Polling.EmployeeDetails を選択します。 **[OK]**をクリックします。  
+6.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**EmployeeDetails のスキーマを選択します。 このトピックでは、Typed_Polling.EmployeeDetails を選択します。 **[OK]** をクリックします。  
   
 7.  ポーリングのメッセージの送信元スキーマ、TypedPollingResultSet0 ノードとポーリング メッセージで返される要素を参照する後続のノードを展開します。 送信先スキーマのスキーマ内の異なる要素を参照してください EmployeeDetails ノードを展開してください。 このトピックのようにスキーマを割り当てることが必要です。  
   
@@ -276,7 +277,7 @@ SELECT * FROM Employee;EXEC MOVE_EMP_DATA;EXEC ADD_EMP_DETAILS John, Tester, 100
   
         1.  FILE 送信ポートを作成します。  
   
-        2.  送信ポートのプロパティ ダイアログ ボックスの左ペインで、をクリックして**送信マップ**です。 右側のペインの下のフィールドをクリックして、**マップ**列、およびドロップダウンの選択 から**MapSchema**です。 **[OK]**をクリックします。  
+        2.  送信ポートのプロパティ ダイアログ ボックスの左ペインで、をクリックして**送信マップ**です。 右側のペインの下のフィールドをクリックして、**マップ**列、およびドロップダウンの選択 から**MapSchema**です。 **[OK]** をクリックします。  
   
              ![FILE 送信ポートの送信マップを構成する](../../adapters-and-accelerators/adapter-sql/media/831c9aee-fd97-466f-9270-3b04dbccd9fe.gif "831c9aee-fd97-466f-9270-3b04dbccd9fe")  
   

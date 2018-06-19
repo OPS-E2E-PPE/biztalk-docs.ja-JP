@@ -1,17 +1,17 @@
 ---
-title: "データの種類 |Microsoft ドキュメント"
-ms.custom: 
+title: データの種類 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - data types, messages
 - messages, data types
 ms.assetid: 7a758289-1629-48a0-843d-6f6773bd5ba6
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204946"
 ---
 # <a name="data-types"></a>データ型
 データ型の仕様では、HL7 標準の複雑さをパーティション分割に関する重要なツール、HL7 フィールドのデータの内容を理解するため重要です。 一部のデータ型は、シンプルで、1 つだけの要素を含んでいるし、一部は、多くのコンポーネントとサブコンポーネントが含まれます。 たとえば、PID.5 患者の名前には、バージョン 2.4 で XPN を入力データがあります。 このデータ型には、英語の言語名では、一般的な目盛り、たとえば、姓、名、ミドル ネーム、だけでなくサフィックス、プレフィックス、名の種類のコードおよび名の有効期間 (日) の範囲がサポートされています。  

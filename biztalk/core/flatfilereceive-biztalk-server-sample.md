@@ -1,14 +1,14 @@
 ---
-title: "FlatFileReceive (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: FlatFileReceive (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 90bd9e8d-6ed9-49c4-8437-c0c8b2a9a78d
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970168"
 ---
 # <a name="flatfilereceive-biztalk-server-sample"></a>FlatFileReceive (BizTalk Server サンプル)
 FlatFileReceive サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用してフラット ファイルを同等の .xml ファイルに変換する方法を示します。  
@@ -51,7 +52,7 @@ FlatFileReceive サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includ
 -   XmlTransmit が送信パイプラインとして使用されます。 プロパティの降格または他のメッセージ処理が送信ポートで必要ない場合は、PassThruTransmit パイプラインを使用してください。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileReceive\  
+ *\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileReceive\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -72,13 +73,13 @@ FlatFileReceive サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includ
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     *\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileReceive  
+     *\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileReceive  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
     -   次のフォルダに、このサンプルの入力 (FFInput) フォルダと出力 (FFOutput) フォルダを作成します。  
   
-         *\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileReceive  
+         *\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileReceive  
   
     -   このサンプル用に Visual Studio プロジェクトをコンパイルおよび展開します。  
   

@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: d65b87fbcbdaf89289406ae6850b70c605123451
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015575"
 ---
 # <a name="how-to-create-send-ports-for-jd-edwards-oneworld"></a>JD Edwards OneWorld 用送信ポートの作成方法
 次の手順を使用すると、送信ポートを作成できます。  
@@ -22,9 +23,9 @@ ms.lasthandoff: 11/07/2017
   
 3.  **送信ポートのプロパティ** ダイアログ ボックスで、**名前**フィールドで、送信ポートの名前を入力 (たとえば、入力**SendToJDE**)。  
   
-4.  **型**ドロップダウン リストで、 **[jdeoneworld]**です。  
+4.  **型**ドロップダウン リストで、 **[jdeoneworld]** です。  
   
 5.  **URI**ドロップダウン リストで、送信ハンドラーを選択します。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   

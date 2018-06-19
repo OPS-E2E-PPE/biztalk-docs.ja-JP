@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9bdbc2df-9d19-4ae8-b540-ec1b9a7cdbe9
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22302586"
 ---
 # <a name="test-results-networking-key-performance-indicators"></a>テスト結果: ネットワー キング主要業績評価指標
 このトピックでは、ネットワーク主要業績評価指標 (KPI)、テスト シナリオで監視された概要を示します。 これらのテスト評価のネットワークのパフォーマンスによって測定される、 **\Network インターフェイス (\*) \Bytes total/sec**パフォーマンス モニター カウンター、および測定することによって、 **SQL Network interface \bytes total/sec (Avg)** VSTS 2008 ロード テスト コント ローラーによって返されます。  

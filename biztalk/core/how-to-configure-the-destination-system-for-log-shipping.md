@@ -1,11 +1,11 @@
 ---
-title: "ログ配布用に送信先システムを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ログ配布用に送信先システムを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 2015-12-03
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, log shipping
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - system failures, backing up
 - backing up, system failures
 ms.assetid: 7b4425f5-b105-4fb2-a503-94ca1e75ad55
-caps.latest.revision: "54"
+caps.latest.revision: 54
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969496"
 ---
 # <a name="how-to-configure-the-destination-system-for-log-shipping"></a>ログ配布用に送信先システムを構成する方法
 ログ配布は、システム障害時のダウンタイムを短縮することを目的とした、スタンバイ サーバーの機能です。 ログ配布を使用すると、送信元システムのトランザクション ログを送信先システムに自動的に送信できます。 送信先システムは、トランザクション ログを復元する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースです。 ソース データベースと密接に同期を維持します。  
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
      そうしたら：  
   
-    1.  送信先システムで有効にする **[Ad Hoc Distributed Queries](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)**です。  
+    1.  送信先システムで有効にする **[Ad Hoc Distributed Queries](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)** です。  
   
     2.  クエリ ウィンドウで、置き換える *\<MyLogShippingSolution\>* わかりやすい記述には、単一引用符で囲みます。  
   
@@ -125,9 +126,9 @@ ms.lasthandoff: 11/28/2017
   
 11. 右クリック**SampleUpdateInfo.xml**を選択して**編集**です。 次の操作を行います。  
   
-    -   すべてのインスタンスを置き換える**"SourceServer"**ソース システムの名前に置き換えます。  
+    -   すべてのインスタンスを置き換える **"SourceServer"** ソース システムの名前に置き換えます。  
   
-    -   すべてのインスタンスを置き換える**"DestinationServer"**送信先システムの名前に置き換えます。  
+    -   すべてのインスタンスを置き換える **"DestinationServer"** 送信先システムの名前に置き換えます。  
   
     > [!IMPORTANT]
     >  送信元システムおよび送信先システムの名前は、引用符で囲んでください。  
@@ -142,7 +143,7 @@ ms.lasthandoff: 11/28/2017
     >   
     >  これら 2 つのデータベースの既定の名前を変更した場合は、実際のデータベース名を使用してください。  
   
-12. 1 つ以上のメッセージ ボックス データベースがある場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムが一覧に別の MessageBoxDB 行を追加し、設定**IsMaster =「0」**マスター以外のデータベースにします。  
+12. 1 つ以上のメッセージ ボックス データベースがある場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムが一覧に別の MessageBoxDB 行を追加し、設定**IsMaster =「0」** マスター以外のデータベースにします。  
   
 13. BAM またはルール エンジンを使用する場合は、必要に応じてこれらの行をコメント解除してください。  
   

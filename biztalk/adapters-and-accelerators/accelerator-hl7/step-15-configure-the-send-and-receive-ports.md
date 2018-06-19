@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206458"
 ---
 # <a name="step-15-configure-the-send-and-receive-ports"></a>手順 15 は、送信を構成し、受信ポート
 前の手順で作成論理送信および受信ポートをオーケストレーション デザイナーを使用し、「後で」ポートのバインドの設定。 このステップでは、物理的な送信元と送信先の場所を定義して、オーケストレーションで作成した論理ポートを物理ポートをバインドして、ポートの構成を確定するのに BizTalk エクスプ ローラーを使用します。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  クリックして、**構成**の右側にあるボタン、**型**フィールドです。  
   
-6.  MLLP トランスポートのプロパティ ダイアログ ボックスの**接続名**入力**MLLPConnection**です。 **ホスト**入力**localhost**です。 **[OK]**をクリックします。  
+6.  MLLP トランスポートのプロパティ ダイアログ ボックスの**接続名**入力**MLLPConnection**です。 **ホスト**入力**localhost**です。 **[OK]** をクリックします。  
   
 7.  送信ポートのプロパティ ダイアログ ボックスでの**送信パイプライン**を選択**BTAHL72XPipelines.BTAHL72XSendPipeline**、順にクリック**OK**です。  
   

@@ -1,17 +1,17 @@
 ---
-title: "サプライ チェーンのシナリオのサンプル |Microsoft ドキュメント"
-ms.custom: 
+title: サプライ チェーンのシナリオのサンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - supply chains, examples
 - examples, supply chains
 ms.assetid: 1837a2c8-b1d4-4e1f-a196-a48b13b22662
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211522"
 ---
 # <a name="sample-supply-chain-scenario"></a>サンプル サプライ チェーン シナリオ
 発注要求および応答メッセージの交換は、先端技術を駆使したサプライ チェーンの最も基本的なプロセスの 1 つです。 購入者が発注書を発行すると、業者は製品ライン レベル単位で注文を受けるかどうか、または注文が保留になっているかどうかを確認します。  

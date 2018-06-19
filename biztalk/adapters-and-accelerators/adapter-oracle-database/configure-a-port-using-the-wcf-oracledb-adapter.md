@@ -1,15 +1,15 @@
 ---
-title: "BizTalk の Wcf-oracledb アダプターを使用してポートを構成する |Microsoft ドキュメント"
-description: "Wcf-oracledb 送信を作成し、BizTalk Server で Oracle DB アダプターを使用する受信ポート"
-ms.custom: 
+title: BizTalk の Wcf-oracledb アダプターを使用してポートを構成する |Microsoft ドキュメント
+description: Wcf-oracledb 送信を作成し、BizTalk Server で Oracle DB アダプターを使用する受信ポート
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9eafefb-9b30-4801-9be9-6034ae0d3b7d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215874"
 ---
 # <a name="configure-a-port-using-the-wcf-oracledb-adapter"></a>Wcf-oracledb アダプターを使用してポートを構成します。
 Wcf-oracledb を構成する方法は、送信し、受信ポートを使用して Oracle データベースの送信および受信操作を実行する、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]です。  
@@ -78,7 +79,7 @@ Wcf-oracledb を構成する方法は、送信し、受信ポートを使用し�
   
     2.  **受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。  
   
-12. **[OK]**をクリックします。  
+12. **[OK]** をクリックします。  
   
 ## <a name="deploy-adapters-to-receive-messages-from-oracle-database"></a>Oracle データベースからメッセージを受信アダプターを展開します。  
   

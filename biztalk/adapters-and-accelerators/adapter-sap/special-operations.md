@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216610"
 ---
 # <a name="special-operations"></a>特別な操作
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]いくつかの特別な操作を表示します。 これらの操作は、SAP システムの成果物に基づいていません。 アダプターのクライアント アプリケーションの機能を提供する表示されます。 特別な操作は次のとおりです。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
      RfcConfirmTransID 操作を使用して、そのメッセージ スキーマについての説明を参照してください。 詳細について[SAP で tRFCs に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)です。  
   
--   **文字列の SapAdapterUtilities.ConvertGuidToTid(Guid)**です。 これは、SAP アダプターのアセンブリによって公開されているパブリック メソッドです。 (はアダプターによって公開される操作)SAP トランザクション ID (TID) が指定された GUID にマップを返します。  
+-   **文字列の SapAdapterUtilities.ConvertGuidToTid(Guid)** です。 これは、SAP アダプターのアセンブリによって公開されているパブリック メソッドです。 (はアダプターによって公開される操作)SAP トランザクション ID (TID) が指定された GUID にマップを返します。  
   
      内部的には、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] GUID に SAP システムに SAP トランザクション ID (TID) 作業 (LUW) の論理単位を識別するをマップします。 この GUID がクライアントに公開アダプター、tRFC (LUW) をコミットできるように、SAP システムでその TID を確認する RfcConfirmTransID 操作を呼び出すことによってです。  
   

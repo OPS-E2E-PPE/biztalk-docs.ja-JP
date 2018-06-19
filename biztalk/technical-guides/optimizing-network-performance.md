@@ -1,14 +1,14 @@
 ---
-title: "ネットワークのパフォーマンスの最適化 |Microsoft ドキュメント"
-ms.custom: 
+title: ネットワークのパフォーマンスの最適化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b6c3985a-48b3-489b-8fe3-3b7bfd0515f9
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299050"
 ---
 # <a name="optimizing-network-performance"></a>ネットワーク パフォーマンスを最適化します。
 BizTalk Server コンピューターが SQL Server コンピューターとは別の場所、BizTalk Server 環境で BizTalk Server によって処理される各メッセージには、ネットワーク経由で通信が必要です。 この通信には、BizTalk Server コンピューターと BizTalk メッセージ ボックス データベース、BizTalk 管理データベース、BAM データベースおよびその他のデータベース間のかなりのトラフィックが含まれています。 高負荷のシナリオで、この通信は大量のネットワーク トラフィックにより、ネットワーク設定が最適化されていない、十分なネットワーク インターフェイス カードがインストールされている、または十分なネットワーク帯域幅が場合は特に、ボトルネックになることができます。使用できます。  

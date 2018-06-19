@@ -1,14 +1,14 @@
 ---
-title: "SharePoint での Oracle E-business Suite アダプターの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: SharePoint での Oracle E-business Suite アダプターの使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d431f8a6-9812-4783-b9f4-34ceb73cf8ba
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215306"
 ---
 # <a name="use-the-oracle-e-business-suite-adapter-with-sharepoint"></a>SharePoint での Oracle E-business Suite アダプターを使用します。
 ほとんどの基幹業務 (LOB) アプリケーションは、必要な特定の分野専門知識と比較的少数のユーザーがアクセスできる専用のインターフェイスを持っています。 ただし、関連する情報のワーカーが必要、すべてのレベル、組織の領域の専門家であるために、インフォメーション ワーカーが、情報を使用する上で Microsoft Excel などの他の一般的なアプリケーションに必要なデータをエクスポートします。  

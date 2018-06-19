@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 6b15d9d03ef967bcf7189ef756da8fc63a0eb3f6
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013681"
 ---
 # <a name="how-to-create-send-ports-for-tibco-enterprise-message-service"></a>TIBCO Enterprise Message Service の送信ポートを作成する方法
 送信ポートを作成するには、次の手順を実行します。  
@@ -27,9 +28,9 @@ ms.lasthandoff: 11/07/2017
   
     3.  **送信ハンドラー**ドロップダウン リストで、URI を選択します。  
   
-    4.  送信パイプラインのドロップダウン リストから選択**[microsoft.biztalk.defaultpipelines.xmltransmit]**です。  
+    4.  送信パイプラインのドロップダウン リストから選択 **[microsoft.biztalk.defaultpipelines.xmltransmit]** です。  
   
-    5.  **受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**です。  
+    5.  **受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** です。  
   
     6.  をクリックして**構成**送信ポートを構成します。  
   
@@ -43,9 +44,9 @@ ms.lasthandoff: 11/07/2017
   
     3.  **SSO を使用する****はい**です。  
   
-    4.  **[OK]**をクリックします。  
+    4.  **[OK]** をクリックします。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
   [TIBCO Enterprise Message Service 送信ハンドラーの作成](../core/creating-tibco-enterprise-message-service-send-handlers.md)

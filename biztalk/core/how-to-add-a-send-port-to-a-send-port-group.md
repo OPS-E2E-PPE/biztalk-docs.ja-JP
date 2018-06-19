@@ -1,11 +1,11 @@
 ---
-title: "送信ポート、送信ポート グループを追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポート、送信ポート グループを追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [send port groups], adding send ports
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - send ports, send port groups
 - adding, send ports
 ms.assetid: a61b3b32-c05e-40b9-abf1-09b7065fb6a2
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969576"
 ---
 # <a name="how-to-add-a-send-port-to-a-send-port-group"></a>送信ポートを送信ポート グループに追加する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、1 つまたは複数の送信ポートを送信ポート グループに追加する方法について説明します。 静的な一方向の送信ポートは、送信ポート グループにのみ追加できます。  

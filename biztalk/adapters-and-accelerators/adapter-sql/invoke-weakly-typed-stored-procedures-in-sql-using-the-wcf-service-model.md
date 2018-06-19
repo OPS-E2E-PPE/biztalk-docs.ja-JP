@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルを使用して sql ストアド プロシージャの弱い型指定を呼び出して |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して sql ストアド プロシージャの弱い型指定を呼び出して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aaf74a40-4c03-4a4a-9b91-c21babe154fa
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225066"
 ---
 # <a name="invoke-weakly-typed-stored-procedures-in-sql-using-the-wcf-service-model"></a>WCF サービス モデルを使用して sql ストアド プロシージャの弱い型指定を呼び出す
 リストされたプロシージャを起動すると、**プロシージャ**内のノード、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]出力は次のデータセットの配列の形式でします。 このトピックでは、データセットの配列を返す SQL Server でストアド プロシージャを呼び出す、WCF クライアントを作成する方法について説明します。  

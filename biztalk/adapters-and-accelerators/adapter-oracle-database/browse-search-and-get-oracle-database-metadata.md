@@ -1,11 +1,11 @@
 ---
-title: "参照、検索、および Oracle データベースのメタデータの取得 |Microsoft ドキュメント"
-ms.custom: 
+title: 参照、検索、および Oracle データベースのメタデータの取得 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MetadataExchange
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - IMetadataRetrievalContract
 - SQLEXECUTE
 ms.assetid: 828d5a8e-f0a3-47b4-8298-5571cff64b52
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215354"
 ---
 # <a name="browse-search-and-get-oracle-database-metadata"></a>参照、検索、および Oracle データベースのメタデータの取得
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]アダプターを使用して Oracle データベースと通信するためのメッセージ構造を記述する Oracle データベースからのサーフェス メタデータ。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]メタデータを取得するための 2 つのインターフェイスをサポートしています。  

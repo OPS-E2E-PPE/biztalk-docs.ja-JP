@@ -1,15 +1,15 @@
 ---
-title: "HTTP の受信場所の IIS を構成する |Microsoft ドキュメント"
-description: "IIS では、BTS HTTP 受信アプリケーションを作成し、BizTalk Server でのアプリケーション プールの設定のテスト"
-ms.custom: 
+title: HTTP の受信場所の IIS を構成する |Microsoft ドキュメント
+description: IIS では、BTS HTTP 受信アプリケーションを作成し、BizTalk Server でのアプリケーション プールの設定のテスト
+ms.custom: ''
 ms.date: 10/10/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1c420f46-01f1-4c9c-9144-d8d2acc8b0c4
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 75d35f6f230f0846c29a4b146c6d5b074e60b13c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/11/2017
+ms.locfileid: "22645174"
 ---
 # <a name="configure-iis-for-an-http-receive-location"></a>HTTP の受信場所の IIS を構成します。
 HTTP は、場所が使用アプリケーション内では、インターネット インフォメーション サービス (IIS) を受信します。 このトピックに HTTP を有効にする手順は、IIS 内の場所を受信します。 

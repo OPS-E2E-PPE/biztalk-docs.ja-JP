@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217418"
 ---
 # <a name="data-type-mapping-for-custom-rfcs"></a>カスタム Rfc のデータ型マッピング
 次の表は、SAP データ型との Z_EXTRACT_DATA_OO RFC .NET データ型にマップする方法に関する情報を提供します。 このカスタム RFC を使って、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]です。  

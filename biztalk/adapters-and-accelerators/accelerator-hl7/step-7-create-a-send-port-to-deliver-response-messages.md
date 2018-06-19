@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207082"
 ---
 # <a name="step-7-create-a-send-port-to-deliver-response-messages"></a>手順 7: 応答メッセージを配信する送信ポートを作成します。
 この手順で、クエリに応答を返す、受付、放電、および転送 (ADT) を提供する送信ポートを作成するシステムです。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  最初のフィルターは、送信ポートのみ DSR に準拠したメッセージを選択することを示す ^ 手順 3 a. で作成した Q01 スキーマです。 2 番目のフィルターを指定する変換先、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジンは、これらのメッセージを送信します。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 7.  管理コンソールで、をクリックして**送信ポート**を右クリックして**ADT_Send**、クリックして**開始**です。  
   

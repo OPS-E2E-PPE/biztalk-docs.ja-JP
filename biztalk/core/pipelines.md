@@ -1,11 +1,11 @@
 ---
-title: "パイプライン |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - pipelines, send pipelines
 - receive pipelines, stages
 ms.assetid: 76947dd8-728a-4fa3-bd33-7a708ae82cac
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265274"
 ---
 # <a name="pipelines"></a>パイプライン
 パイプラインは、パイプとフィルターの統合パターンを実装する Microsoft BizTalk Server のコンポーネントです。 ビジネス上の理由で、メッセージの送受信中にメッセージを変換して、BizTalk Server への入力または BizTalk Server からの送信に使用できるように準備を行う必要が生じることがあります。  

@@ -1,11 +1,11 @@
 ---
-title: "作成して、新しいメッセージを送信する |Microsoft ドキュメント"
-ms.custom: 
+title: 作成して、新しいメッセージを送信する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, submitting
 - messages, creating
 ms.assetid: 88b7a2d3-44a4-44e4-ba8c-527c10290925
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209866"
 ---
 # <a name="creating-and-submitting-a-new-message"></a>作成して、新しいメッセージを送信します。
 このセクションでは、新しいメッセージを送信する方法について説明します。 として修復されたメッセージを表示して、新しいメッセージ必要がある確認および承認されたメッセージの作成者は、他のユーザーによってです。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 11. ウィンドウの上部にある [標準] ツールバーからをクリックして**送信**です。  
   
-12. デジタル署名ウィザードのページでフォームに署名する証明書を選択するため、フォーム (証明書の作成者は、作成した) の署名に使用する証明書を選択します。 をクリックして**証明書の表示**正しいシグネチャを使用していることを確認する場合。 **[次へ]**をクリックします。  
+12. デジタル署名ウィザードのページでフォームに署名する証明書を選択するため、フォーム (証明書の作成者は、作成した) の署名に使用する証明書を選択します。 をクリックして**証明書の表示**正しいシグネチャを使用していることを確認する場合。 **[次へ]** をクリックします。  
   
     > [!NOTE]
     >  デジタル署名の有効性を確認する をクリックして**デジタル署名**上、**ツール** メニューの デジタル署名を確認し、をクリックする をクリックして**ビュー署名済みフォーム**.  

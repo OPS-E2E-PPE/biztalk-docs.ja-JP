@@ -1,17 +1,17 @@
 ---
-title: "SAP にポートのバインド ファイルを使用して物理ポートのバインドの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP にポートのバインド ファイルを使用して物理ポートのバインドの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - port binding file
 - physical port binding, configuring using a port binding file
 ms.assetid: c637971c-3ecd-4026-8f74-bd5173774438
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217594"
 ---
 # <a name="configure-a-physical-port-binding-using-a-port-binding-file-to-sap"></a>SAP にポートのバインド ファイルを使用して物理ポートのバインドを構成します。
 使用すると、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]スキーマ ファイル以外、SAP アイテムのメタデータを生成する、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]もポートのバインド ファイルを生成します。 作成する物理送信ポートまたは受信ポートを BizTalk アプリケーションにこのバインド ファイルをインポートすることができます。 [SAP アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)バインド ファイルをインポートする手順が含まれています。 このバインド ファイルをインポートする場合、手動で作成する物理送信ポートまたは受信ポートをするはありません。  

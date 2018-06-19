@@ -1,14 +1,14 @@
 ---
-title: "監視 |Microsoft ドキュメント"
-ms.custom: 
+title: 監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7effa38f-f9f2-40b7-8d8b-fa13cf94aa4f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298906"
 ---
 # <a name="monitoring"></a>監視
 既定では、すべての BizTalk Server の監視およびタスクを使用して既定のアクション アカウントが、実行プロファイルで、BizTalk Server 監視アカウントのターゲットの特定の実行アカウントが定義されていない場合。 実行アカウントを BizTalk Server を監視するために必要なアクセス許可の最小セットを構成するのには、次のアクセス許可が必要です。  

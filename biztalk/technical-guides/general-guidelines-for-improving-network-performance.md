@@ -1,14 +1,14 @@
 ---
-title: "ネットワーク パフォーマンスを向上させるための一般的なガイドライン |Microsoft ドキュメント"
-ms.custom: 
+title: ネットワーク パフォーマンスを向上させるための一般的なガイドライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 286c10d2-9262-4e3c-adde-f7b5780c2736
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298450"
 ---
 # <a name="general-guidelines-for-improving-network-performance"></a>ネットワークのパフォーマンスを向上させるための一般的なガイドライン
 最適な値にネットワーク設定を調整することが表示を効果的にネットワークのボトルネックを解決し、BizTalk Server ソリューションの全体的なネットワーク パフォーマンスが向上します。 これは、BizTalk Server コンピューター、SQL Server コンピューター、およびその他のサーバー コンピューターを含む、ソリューションに関連するすべてのコンピューターで行う必要があります。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
  ネットワーク アダプターの設定にアクセスする次の手順に従います。  
   
-1.  をクリックして**開始**] をクリックし、**コントロール パネルの [**です。  
+1.  をクリックして**開始**] をクリックし、**コントロール パネルの [** です。  
   
 2.  コントロール パネルで、次のいずれかの操作を行います。  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  **ネットワーク** タブで、をクリックして**構成**です。  
   
-6.  クリックして、 **[詳細設定]**タブ プロパティにアクセスするネットワーク アダプターに構成することができます。  
+6.  クリックして、 **[詳細設定]** タブ プロパティにアクセスするネットワーク アダプターに構成することができます。  
   
  次のプロパティは、BizTalk Server 環境の各ネットワーク アダプターを構成してください。  
   

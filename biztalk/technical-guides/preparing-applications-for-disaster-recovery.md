@@ -1,14 +1,14 @@
 ---
-title: "アプリケーションの災害復旧の準備 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションの災害復旧の準備 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0ef93099-aa6b-424a-a4ce-87d855c6afe3
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302338"
 ---
 # <a name="preparing-applications-for-disaster-recovery"></a>アプリケーションの災害復旧の準備
 BizTalk アプリケーション (バイナリと構成アイテムなどの受信場所と送信ポート) は、障害復旧サイトで、グループを復元するときに、実稼働の BizTalk グループに展開されます。 この構成がかどうかに応じてを変更する必要がありますは構成の場所はなどの受信場所や、実稼働環境に固有のポートを送信します。  

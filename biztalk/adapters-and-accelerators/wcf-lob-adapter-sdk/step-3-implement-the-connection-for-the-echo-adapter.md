@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dc223901-3ad3-4e71-8672-fea6bb4efe65
-caps.latest.revision: ''
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22227266"
 ---
 # <a name="step-3-implement-the-connection-for-the-echo-adapter"></a>手順 3: エコー アダプターの接続を実装します。
 ![手順 9 3](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-3of9.gif "Step_3of9")  
@@ -264,13 +265,13 @@ ms.lasthandoff: 03/23/2018
   
 2.  Visual Studio エディターで、任意の場所を右クリック コンテキスト メニューで、エディター内のをポイント**アウトライン**、クリックして**アウトラインの中止**です。  
   
-3.  Visual Studio エディターで、検索、**コンス トラクター**領域。 内部、 **EchoAdapterConnectionUri()**既定コンス トラクターで、次のステートメントを追加します。  
+3.  Visual Studio エディターで、検索、**コンス トラクター**領域。 内部、 **EchoAdapterConnectionUri()** 既定コンス トラクターで、次のステートメントを追加します。  
   
     ```csharp  
     Uri = new Uri("echov2://lobhostname/lobapplication?enableauthentication=False");  
     ```  
   
-4.  Visual Studio エディターでの内部、 **EchoAdapterConnectionUri (Uri uri)**コンス トラクターをオーバー ロードされ、次のステートメントを追加します。  
+4.  Visual Studio エディターでの内部、 **EchoAdapterConnectionUri (Uri uri)** コンス トラクターをオーバー ロードされ、次のステートメントを追加します。  
   
     ```csharp  
     Uri = uri;  
@@ -321,7 +322,7 @@ ms.lasthandoff: 03/23/2018
   
 6.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。  
   
-7.  **[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。 プロジェクトを正常にコンパイルする必要があります。 以外の場合は、上記のすべてのステップに従っていることを確認します。  
+7.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。 プロジェクトを正常にコンパイルする必要があります。 以外の場合は、上記のすべてのステップに従っていることを確認します。  
   
 > [!NOTE]
 >  これで作業が保存されました。 安全にこの時点で Visual Studio を終了したり、次の手順に進みます[手順 4: エコー アダプターのメタデータ参照ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)です。  

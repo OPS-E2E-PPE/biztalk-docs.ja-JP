@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967944"
 ---
 # <a name="invoke-trfcs-in-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP で tRFCs を呼び出す
 トランザクション リモート関数呼び出し (tRFCs) は、SAP システムの RFC の 1 つだけのランタイム実行を保証します。 いずれかの側に表示される、Rfc を呼び出すことができます、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] tRFC として。 RFC の呼び出しと似ています、tRFC の呼び出し (を参照してください[呼び出しを使用して BizTalk Server での SAP Rfc](../../adapters-and-accelerators/adapter-sap/invoke-rfcs-in-sap-using-biztalk-server.md))、次の点が異なります。  

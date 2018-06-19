@@ -1,18 +1,18 @@
 ---
-title: "Server ランタイム セキュリティ |Microsoft ドキュメント"
-ms.custom: 
+title: Server ランタイム セキュリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, server runtime
 - servers, security
 - servers, runtime
 ms.assetid: 40f5ca3e-d9d3-4543-bd38-82283c343b76
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214130"
 ---
 # <a name="server-runtime-security"></a>Server ランタイムのセキュリティ
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]Message Repair and New Submission は、セキュリティで保護された、決定的な方法でビジネス ユーザー、バックエンド システム、および SWIFT ネットワーク エンドポイント間で SWIFT メッセージのフローを制御します。 ビジネス ユーザーによって送信されたメッセージを認証し、メッセージのデータおよびビジネス ルールの正確性を検証してから、バックエンド システムをまたはに SWIFT ネットワークは、最終的な配信のためにメッセージをルーティングします。 デジタル証明書の詳細についてを参照してください「の暗号化および署名証明書」、MSDN ライブラリの Web サイトにある[http://go.microsoft.com/fwlink/?linkid=50285](http://go.microsoft.com/fwlink/?linkid=50285)です。  

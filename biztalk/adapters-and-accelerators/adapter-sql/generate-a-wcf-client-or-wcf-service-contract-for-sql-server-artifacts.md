@@ -1,14 +1,14 @@
 ---
-title: "SQL Server の成果物のために、WCF クライアントまたは WCF サービス コントラクトを生成 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL Server の成果物のために、WCF クライアントまたは WCF サービス コントラクトを生成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5fa7d8c0-8ee4-41e7-9394-d22e87e09391
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225258"
 ---
 # <a name="generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts"></a>SQL Server の成果物のために、WCF クライアントまたは WCF サービス コントラクトを生成します。
 使用することができます、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] WCF クライアント クラスを生成する SQL Server のアイテムを選択した操作を対象としています。 ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用して、WCF クライアント クラスを生成します。ただし、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]標準の Microsoft Windows インターフェイスを通じて ServiceModel メタデータ ユーティリティ ツールの機能を公開します。 また、svcutil.exe ツールではない参照および検索の機能を提供し、SQL Server データベースに接続するときに選択したバインドのプロパティに基づく構成ファイルを生成します。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーでは、プロジェクトを右クリックし、をクリックして**アダプター サービス参照の追加**です。  
   
-2.  後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[SQL アダプターを使用して Visual Studio での SQL Server 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)SQL Server に接続しを参照し、操作を検索します。 選択した操作のための WCF クライアント クラスを作成することを確認**クライアント (送信操作)**からが選択されている、**選択コントラクト型**ドロップダウン リスト。 (これは、既定値です。)  
+2.  後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[SQL アダプターを使用して Visual Studio での SQL Server 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)SQL Server に接続しを参照し、操作を検索します。 選択した操作のための WCF クライアント クラスを作成することを確認**クライアント (送信操作)** からが選択されている、**選択コントラクト型**ドロップダウン リスト。 (これは、既定値です。)  
   
 3.  すべての対象をクリックする操作を選択した後**OK** WCF クライアント クラスを生成します。  
   
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
     > [!IMPORTANT]
     >  WCF サービス コントラクトを生成する場合**TypedPolling**受信操作は、する必要がありますを指定する、 **InboundID**接続 URI の一部として、 **PollingStatement**プロパティをバインドします。  
   
-3.  SQL Server データベースに接続すると、選択**サービス (入力方向の操作)**から、**選択コントラクト型**ドロップダウン リスト。  
+3.  SQL Server データベースに接続すると、選択**サービス (入力方向の操作)** から、**選択コントラクト型**ドロップダウン リスト。  
   
 4.  **カテゴリを選択**ボックスで、ルート ノードをクリックして (**/**) からの受信操作を選択して、**利用可能なカテゴリと操作**ボックスで、し、をクリックして**追加**です。  
   

@@ -1,14 +1,14 @@
 ---
-title: "パフォーマンスしきい値ルールの調整の監視 |Microsoft ドキュメント"
-ms.custom: 
+title: パフォーマンスしきい値ルールの調整の監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc2c3024-a54b-4485-8110-c2ec9ec52721
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299082"
 ---
 # <a name="monitoring-throttling-using-performance-threshold-rules"></a>パフォーマンスしきい値ルールの調整の監視
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]調整、回復不可能な状態に到達できない、システムの保護を初期化します。 調整、問題があるし、そのソースの識別に役立つことができます。 制限の状態に基づいて、ボトルネックの原因を識別した後は、問題の原因を絞り込む、他のパフォーマンス カウンターを分析します。  

@@ -1,14 +1,14 @@
 ---
-title: "同時実行プログラムに対する操作 |Microsoft ドキュメント"
-ms.custom: 
+title: 同時実行プログラムに対する操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bbc40e4c-d5a1-4763-9683-09a744e5b656
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218314"
 ---
 # <a name="operations-on-concurrent-programs"></a>同時実行プログラムでの操作
 操作として Oracle E-business Suite での同時実行プログラムが表示された[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]です。  Oracle アプリケーションに固有の同時実行プログラムと共に、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]も次の 3 つの標準的な操作を明らか: Get_Status、Wait_For_Request、および Submit_Request です。 これは、Oracle アプリケーションに 2 つの同時実行プログラムがある場合は、5 つの操作が公開することを意味します。 各の同時実行プログラム、および標準的な操作の 3 つのいずれか。  

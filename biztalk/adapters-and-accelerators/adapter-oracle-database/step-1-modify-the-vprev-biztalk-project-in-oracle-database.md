@@ -1,14 +1,14 @@
 ---
-title: "手順 1: vPrev Oracle データベースでの BizTalk プロジェクトを変更する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: vPrev Oracle データベースでの BizTalk プロジェクトを変更する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e3e22ac-126b-46ec-a6dc-3421ad721392
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216194"
 ---
 # <a name="step-1-modify-the-vprev-biztalk-project-in-oracle-database"></a>手順 1: vPrev Oracle データベースでの BizTalk プロジェクトを変更します。
 ![手順 1/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
  **所要時間:** 10 分  
   
- **目標:**このステップで、次を変更する既存の vPrev BizTalk プロジェクト。  
+ **目標:** このステップで、次を変更する既存の vPrev BizTalk プロジェクト。  
   
 -   SCOTT に対する挿入操作のメタデータを生成します。WCF ベースを使用して顧客テーブル[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。  
   
@@ -49,17 +50,17 @@ ms.lasthandoff: 09/20/2017
   
     1.  BizTalk マッパーは、BizTalk プロジェクトに追加します。 BizTalk プロジェクトを右クリックし、[**追加**、] をクリック**新しい項目の**します。  
   
-         **新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定**RequestMap.btm**です。 **[追加]**をクリックします。  
+         **新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定**RequestMap.btm**です。 **[追加]** をクリックします。  
   
     2.  送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。  
   
-    3.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Oracle データベース アダプターの要求メッセージのスキーマを選択します。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*です。 **[OK]**をクリックします。  
+    3.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Oracle データベース アダプターの要求メッセージのスキーマを選択します。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*です。 **[OK]** をクリックします。  
   
     4.  **送信元スキーマのルート ノード**ダイアログ ボックスで、*挿入* をクリック**OK**です。  
   
     5.  送信先スキーマ ペインで、をクリックして**送信先スキーマを開く**です。  
   
-    6.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの要求メッセージのスキーマを選択して[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.OracleDBBindingSchema*です。 **[OK]**をクリックします。  
+    6.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの要求メッセージのスキーマを選択して[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.OracleDBBindingSchema*です。 **[OK]** をクリックします。  
   
     7.  **ターゲット スキーマのルート ノード**ダイアログ ボックスで、*挿入* をクリック**OK**です。  
   
@@ -73,17 +74,17 @@ ms.lasthandoff: 09/20/2017
   
     1.  BizTalk マッパーは、BizTalk プロジェクトに追加します。 BizTalk プロジェクトを右クリックし、[**追加**、] をクリック**新しい項目の**します。  
   
-         **新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定**ResponseMap.btm**です。 **[追加]**をクリックします。  
+         **新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定**ResponseMap.btm**です。 **[追加]** をクリックします。  
   
     2.  送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。  
   
-    3.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの応答メッセージのスキーマを選択して[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.OracleDBBindingSchema*です。 **[OK]**をクリックします。  
+    3.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの応答メッセージのスキーマを選択して[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.OracleDBBindingSchema*です。 **[OK]** をクリックします。  
   
     4.  **送信元スキーマのルート ノード**ダイアログ ボックスで、 *InsertResponse*  をクリック**OK**です。  
   
     5.  送信先スキーマ ペインで、をクリックして**送信先スキーマを開く**です。  
   
-    6.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Oracle データベース アダプターの応答メッセージのスキーマを選択します。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*です。 **[OK]**をクリックします。  
+    6.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Oracle データベース アダプターの応答メッセージのスキーマを選択します。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*です。 **[OK]** をクリックします。  
   
     7.  **ターゲット スキーマのルート ノード**ダイアログ ボックスで、 *InsertResponse*、順にクリック**OK**です。  
   

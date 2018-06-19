@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214426"
 ---
 # <a name="network-configuration"></a>ネットワークの構成
 このセクションでは、展開でネットワークを構成するための規範的なガイダンスを提供します。 詳細については、次を参照してください。[の展開の準備](../../adapters-and-accelerators/accelerator-swift/preparing-for-deployment.md)です。  

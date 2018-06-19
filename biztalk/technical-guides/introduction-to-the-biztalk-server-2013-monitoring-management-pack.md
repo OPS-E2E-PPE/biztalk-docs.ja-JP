@@ -1,14 +1,14 @@
 ---
-title: "管理パックの監視、BizTalk Server 2013 の概要 |Microsoft ドキュメント"
-ms.custom: 
+title: 管理パックの監視、BizTalk Server 2013 の概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e70cc4bf-8033-48cc-8d0f-65254377b7c4
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298314"
 ---
 # <a name="introduction-to-the-biztalk-server-2013-monitoring-management-pack"></a>管理パックの監視、BizTalk Server 2013 の概要
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を主体的および対応の BizTalk Server の展開、アプリケーションとその構成アイテムの監視管理パックを提供します。 この管理パックによって提供される監視には、正常性の監視、可用性と構成の監視、パフォーマンス データ コレクション、および既定のしきい値が含まれています。 サービス指向の監視シナリオに BizTalk Server コンポーネントの監視を統合することができます。 この管理パックが提供される Web からダウンロードします。  

@@ -1,14 +1,14 @@
 ---
-title: "クラスの入れ子になったメンバーへのアクセス |Microsoft ドキュメント"
-ms.custom: 
+title: クラスの入れ子になったメンバーへのアクセス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 358e1edf-ae0b-4916-b8db-7277f39e36f4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224522"
 ---
 # <a name="accessing-nested-members-of-a-class"></a>クラスの入れ子メンバーへのアクセス
 ルール エンジンでは、ルール内のオブジェクトの入れ子になったプロパティまたはメソッドを使用できます。 たとえば、Aclass という名前のクラスに B という名前のプロパティがあり、そのプロパティに C という名前のフィールドが含まれているとします。ルール エンジンでは、A.B.C 構文を使用してフィールド C にアクセスするルールを構築することができます。 ただし、この構文は、ルールをプログラムで構築する場合にだけ使用できます。ビジネス ルール作成ツールでは使用できません。 別のオブジェクトのプロパティであるオブジェクトのプロパティを使用する方法を次のサンプルコードに示します。  

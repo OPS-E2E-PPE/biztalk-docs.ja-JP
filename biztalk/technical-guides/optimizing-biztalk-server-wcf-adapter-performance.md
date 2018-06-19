@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server WCF アダプターのパフォーマンスを最適化する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server WCF アダプターのパフォーマンスを最適化する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2900c845-15be-4466-8fa0-b51b2486842f
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299674"
 ---
 # <a name="optimizing-biztalk-server-wcf-adapter-performance"></a>BizTalk Server WCF アダプターのパフォーマンスを最適化します。
 このトピックでは、適切な WCF アダプターまたはバインドの種類とさまざまな WCF アダプターの構成オプションを適用するためのガイダンスを選択するための推奨事項を説明します。  
@@ -87,7 +88,7 @@ ms.lasthandoff: 09/20/2017
  **Wcf-custom または Wcf-customisolated 受信場所に ServiceThrottlingBehavior サービス動作を追加し、次の設定を使用します。**  
   
 > [!NOTE]  
->  最初に追加する必要がある ServiceThrottlingBehavior サービス動作のいずれの要素を変更することができます、前に、 **serviceThrottling**動作拡張機能を**動作**のタブ、 **WCF カスタム\*トランスポートのプロパティ** ダイアログ ボックス。 ServiceThrottling を動作のリストに追加するには、選択、**動作**のタブ、 **Wcf-custom\*トランスポートのプロパティ**] ダイアログ ボックスを右クリックして**ServiceBehavior** [**動作**、] をクリックして**拡張機能を追加**[ **serviceThrottling**、順にクリック**[ok]**です。 使用可能なプロパティを選択するには、をクリック**ServiceThrottlingElement**し、必要に応じて、プロパティの値を変更します。  
+>  最初に追加する必要がある ServiceThrottlingBehavior サービス動作のいずれの要素を変更することができます、前に、 **serviceThrottling**動作拡張機能を**動作**のタブ、 **WCF カスタム\*トランスポートのプロパティ** ダイアログ ボックス。 ServiceThrottling を動作のリストに追加するには、選択、**動作**のタブ、 **Wcf-custom\*トランスポートのプロパティ**] ダイアログ ボックスを右クリックして**ServiceBehavior** [**動作**、] をクリックして**拡張機能を追加**[ **serviceThrottling**、順にクリック **[ok]** です。 使用可能なプロパティを選択するには、をクリック**ServiceThrottlingElement**し、必要に応じて、プロパティの値を変更します。  
   
 |設定|.NET Framework 4 の既定値|.NET Framework 4 の推奨値|.NET Framework 3.5 用の既定値|推奨値を .net Framework 3.5|  
 |-------------|----------------------------------------|--------------------------------------------|------------------------------------------|----------------------------------------------|  

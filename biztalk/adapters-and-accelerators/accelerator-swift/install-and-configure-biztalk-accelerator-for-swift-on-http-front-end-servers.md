@@ -1,17 +1,17 @@
 ---
-title: "インストールと BizTalk Accelerator を HTTP フロント エンド サーバーに SWIFT の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: インストールと BizTalk Accelerator を HTTP フロント エンド サーバーに SWIFT の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP server, installing BizTalk Accelerator for SWIFT
 - BizTalk Accelerator for SWIFT, installing on HTTP server
 ms.assetid: 1deaa5f7-9da2-4d4b-8367-2d6900065839
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965672"
 ---
 # <a name="installing-and-configuring-biztalk-accelerator-for-swift-on-http-front-end-servers"></a>インストールと BizTalk Accelerator を HTTP フロント エンド サーバーに SWIFT の構成
 インストールおよび構成する方法について説明[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]HTTP フロント エンド サーバーにします。 これらのサーバーは主に SWIFT ネットワークとの通信に使用します。  

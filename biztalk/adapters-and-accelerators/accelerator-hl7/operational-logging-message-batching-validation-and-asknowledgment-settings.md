@@ -1,11 +1,11 @@
 ---
-title: "運用上のログ記録、メッセージのバッチ処理、検証、および asknowledgment 設定 |Microsoft ドキュメント"
-ms.custom: 
+title: 運用上のログ記録、メッセージのバッチ処理、検証、および asknowledgment 設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTAHL7, administering
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BTAHL7, managing
 - administering
 ms.assetid: c7376de4-4e1d-47e2-acf7-0a32e7a4b073
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206002"
 ---
 # <a name="operational-logging-message-batching-validation-and-asknowledgment-settings"></a>運用上のログ記録、メッセージのバッチ処理、検証および asknowledgment 設定
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]サーバーと一連のエンタープライズ アプリケーション統合 (EAI) のツールのビジネス プロセスを自動化して、ビジネス パートナーとの対話を容易にすることが含まれます。 上に構築された、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]プラットフォーム、BTAHL7 HL7 標準を使用して、機能の医療アプリケーション統合を昇格させます。 HL7 には、交換する、統合、および治療プラクティスおよび管理の電子情報を取得するための標準が含まれています。  

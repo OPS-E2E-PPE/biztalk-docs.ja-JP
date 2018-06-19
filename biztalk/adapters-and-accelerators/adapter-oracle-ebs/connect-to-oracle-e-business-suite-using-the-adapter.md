@@ -1,14 +1,14 @@
 ---
-title: "アダプターを使用して Oracle E-business Suite への接続 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターを使用して Oracle E-business Suite への接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80ff31d4-be4c-42d7-a321-8f01b40dd71e
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217866"
 ---
 # <a name="connect-to-oracle-e-business-suite-using-the-adapter"></a>アダプターを使用して Oracle E-business Suite への接続します。
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] ODP.NET 11.1.0.7 を使用して、Oracle E-business Suite に接続します。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプター クライアント識別子 URI (Uniform Resource)、Oracle E-business Suite に接続する接続と呼ばれる、接続文字列を指定する必要があります。 内部的には、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] URI を基になる、Oracle データベースに接続します。 接続 URI のアダプターのクライアントは、外部システムに接続するための接続パラメーターを指定できます。  

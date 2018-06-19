@@ -1,17 +1,17 @@
 ---
-title: "バッチに関連する昇格させたプロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: バッチに関連する昇格させたプロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - promoted properties, batch related properties
 - batching, promoted properties
 ms.assetid: 00df1d8f-2f3f-4e3f-9983-37dcf3514fd8
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210546"
 ---
 # <a name="batch-related-promoted-properties"></a>バッチに関連する昇格させたプロパティ
 逆アセンブラーが特殊なメッセージをマーク SWIFT の逆アセンブラーを発行すると、メッセージ ボックス データベースに受信のバッチから発信されたメッセージ、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]バッチ メッセージに固有のプロパティを昇格します。 これらのプロパティは、メッセージをどのような序数の位置から開始するバッチなど内にあったに A4SWIFT の部分が保持されると、バッチなどのコンテキスト情報を提供します。  

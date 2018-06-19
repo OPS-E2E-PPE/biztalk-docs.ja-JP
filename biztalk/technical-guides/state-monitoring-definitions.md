@@ -1,14 +1,14 @@
 ---
-title: "状態監視の定義 |Microsoft ドキュメント"
-ms.custom: 
+title: 状態監視の定義 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa2c8247-5e25-4624-9f0d-c7fe621ffba2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302514"
 ---
 # <a name="state-monitoring-definitions"></a>状態監視の定義
 状態監視は、監視対象のコンピューターが特定のアプリケーションの観点から特定の時点で正常な状態でかどうかを質問の回答に役立ちます。 System Center Operations Manager (SCOM) は、ユーザーに公開されている別のマネージ エンティティの状態を更新し、状態監視ビューの一部として状態を表示します。  

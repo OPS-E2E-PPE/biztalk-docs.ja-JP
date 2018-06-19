@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204434"
 ---
 # <a name="btahl7-pipelines"></a>BTAHL7 パイプライン
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 受信のセットを提供および HL7 エンコードし、XML でエンコードされた両方の処理のパイプラインを送信します。 これらのパイプラインは、医療ソリューションの BizTalk パイプライン処理を向上させます。  

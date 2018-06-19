@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206290"
 ---
 # <a name="step-9-restart-biztalk-serverhl7main"></a>手順 9: BizTalk Server_hl7_main を再起動します。
 このステップで再起動して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を有効にするこのチュートリアルでは、変更するためにします。  

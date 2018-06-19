@@ -1,14 +1,14 @@
 ---
-title: "手順 5: 取引先の Web ページの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: 取引先の Web ページの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 38c3054d-932a-42b6-a821-8b30604d8426
-caps.latest.revision: "38"
+caps.latest.revision: 38
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 9aaed443492b74729171fef79c634bff561af929
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2017
+ms.locfileid: "23980770"
 ---
 # <a name="step-5-configure-the-trading-partner-web-pages"></a>手順 5: 取引先の Web ページを構成します。
 ![手順 5. 11 の](../core/media/tut-step5-of-11.gif "Tut_Step5_of_11")  
@@ -46,13 +47,13 @@ ms.lasthandoff: 11/03/2017
   
 3.  **スクリプト マップの追加** ダイアログ ボックスで、入力`BtsHttpReceive.dll`で、**要求パス**フィールドです。  
   
-4.  **実行可能ファイル**フィールドで、をクリックして、**省略記号 (...)**ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\HttpReceive です。 選択**BtsHttpReceive.dll**、順にクリック**OK**です。  
+4.  **実行可能ファイル**フィールドで、をクリックして、**省略記号 (...)** ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\HttpReceive です。 選択**BtsHttpReceive.dll**、順にクリック**OK**です。  
   
 5.  入力`BizTalk HTTP Receive`で、`Name`フィールドをクリックして**要求の制限**です。  
   
 6.  **要求の制限**ダイアログ ボックスで、**動詞**タブをクリックし**次の動詞のいずれかの**します。 入力`POST`動詞として。  
   
-7.  **アクセス**] タブで [**スクリプト**、クリックして**[ok]**です。  
+7.  **アクセス**] タブで [**スクリプト**、クリックして **[ok]** です。  
   
 8.  をクリックして**OK** ISAPI 拡張を許可するメッセージが表示されたらをクリックし、**はい**です。  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 11/03/2017
   
 1.  IIS マネージャーを右クリックして**アプリケーション プール**選択**アプリケーション プールの追加**です。  
   
-2.  **アプリケーション プールの追加**] ダイアログ ボックスで、入力**BizTalkAppPool**で**名前**、し、[ **.NET Framework V4.0.30210**で、**.NET framework のバージョン**ドロップダウン リスト。 **[OK]**をクリックします。  
+2.  **アプリケーション プールの追加**] ダイアログ ボックスで、入力**BizTalkAppPool**で**名前**、し、[ **.NET Framework V4.0.30210**で、**.NET framework のバージョン**ドロップダウン リスト。 **[OK]** をクリックします。  
   
     > [!NOTE]
     >  コンピューターにインストール済みの [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] のバージョンによって、バージョン番号が異なる場合があります。  
@@ -83,7 +84,7 @@ ms.lasthandoff: 11/03/2017
     > [!NOTE]
     >  この手順は、64 ビットのコンピューター上で IIS を 32 ビット モードで実行する場合にのみ必要です。  
   
-5.  選択**Identity**をクリックし、**省略記号 (...)**ボタンをクリックします。  
+5.  選択**Identity**をクリックし、**省略記号 (...)** ボタンをクリックします。  
   
 6.  **アプリケーション プール Id**ダイアログ ボックスで、**カスタム アカウント** をクリックし、**設定**です。  
   
@@ -95,9 +96,9 @@ ms.lasthandoff: 11/03/2017
   
 10. **アプリケーション プールの選択**ダイアログ ボックスで、 **BizTalkAppPool**  をクリック**OK**です。  
   
-11. クリックして、**省略記号 (...)**ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \as2 \fabrikam に移動、**物理パス**です。  
+11. クリックして、**省略記号 (...)** ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \as2 \fabrikam に移動、**物理パス**です。  
   
-12. をクリックして**テストの設定**に表示されるエラーがないことを確認し、**接続のテスト** ダイアログ ボックス。 **[閉じる]**をクリックし、 **[OK]**をクリックします。  
+12. をクリックして**テストの設定**に表示されるエラーがないことを確認し、**接続のテスト** ダイアログ ボックス。 **[閉じる]** をクリックし、 **[OK]** をクリックします。  
   
 13. IIS マネージャーで、Fabrikam 仮想ディレクトリを選択し、**機能ビュー**をダブルクリックして**認証**です。  
   
@@ -114,9 +115,9 @@ ms.lasthandoff: 11/03/2017
     > [!NOTE]
     >  BizTalkAppPool は以前に Fabrikam Web ページを構成したときに作成されており、管理者グループのメンバーであるユーザーの ID に設定されています。  
   
-4.  クリックして、**省略記号 (...)**ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive、**物理パス**です。  
+4.  クリックして、**省略記号 (...)** ボタンをクリックしを参照[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive、**物理パス**です。  
   
-5.  をクリックして**テストの設定**に表示されるエラーがないことを確認し、**接続のテスト** ダイアログ ボックス。 **[閉じる]**をクリックし、 **[OK]**をクリックします。  
+5.  をクリックして**テストの設定**に表示されるエラーがないことを確認し、**接続のテスト** ダイアログ ボックス。 **[閉じる]** をクリックし、 **[OK]** をクリックします。  
   
 6.  IIS マネージャーでは、Contoso 仮想ディレクトリを選択し、、**機能ビュー**をダブルクリックして**認証**です。  
   

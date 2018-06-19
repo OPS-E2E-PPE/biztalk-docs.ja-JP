@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968680"
 ---
 # <a name="error---functoid-variable-input-mismatch"></a>エラー - Functoid 変数の入力が一致しません
 **エラー コード**  

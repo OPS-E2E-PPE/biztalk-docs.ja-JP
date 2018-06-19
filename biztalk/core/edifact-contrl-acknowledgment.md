@@ -1,14 +1,14 @@
 ---
-title: "EDIFACT CONTRL 確認 |Microsoft ドキュメント"
-ms.custom: 
+title: EDIFACT CONTRL 確認 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 95e1c244-d700-48d3-9416-032ead6d4d6d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968712"
 ---
 # <a name="edifact-contrl-acknowledgment"></a>EDIFACT CONTRL 確認
 CONTRL 確認 (ACK) は、EDIFACT エンコード メッセージの技術確認および機能確認として機能します。 技術確認としての CONTRL メッセージは、インターチェンジの受信を示します。 機能確認としての CONTRL メッセージは、エラーまたはサポートされていない機能の一覧を含んでおり、受信したインターチェンジ、グループ、またはメッセージの受理または拒否を示します。  

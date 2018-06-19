@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: Oracle データベース アダプターの BizTalk プロジェクトの移行 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: Oracle データベース アダプターの BizTalk プロジェクトの移行 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a393219-bae8-4e08-acc8-76986600d0de
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215346"
 ---
 # <a name="tutorial-migrate-biztalk-projects-to-the-oracle-database-adapter"></a>チュートリアル: Oracle データベース アダプターを BizTalk プロジェクトを移行します。
 Microsoft BizTalk Server に付属している Oracle データベースの BizTalk ODBC アダプターは WCF ベース異なります[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]など、多くの点で。  

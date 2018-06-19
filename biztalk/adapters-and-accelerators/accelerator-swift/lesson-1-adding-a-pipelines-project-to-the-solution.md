@@ -1,17 +1,17 @@
 ---
-title: "レッスン 1: パイプライン プロジェクトをソリューションに追加する |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 1: パイプライン プロジェクトをソリューションに追加する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - projects, adding pipelines
 - pipelines, adding to projects
 ms.assetid: ae058b52-e2ea-406c-9f9f-6cb1b72413d2
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25965704"
 ---
 # <a name="lesson-1-adding-a-pipelines-project-to-the-solution"></a>レッスン 1: パイプライン プロジェクトをソリューションに追加します。
 このレッスンでは、for SWIFT の新しい BizTalk プロジェクトをソリューションにパイプラインをカスタマイズして使用できる、送信パイプラインが表示されるようにを追加します。  

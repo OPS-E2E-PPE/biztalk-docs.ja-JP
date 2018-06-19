@@ -1,17 +1,17 @@
 ---
-title: "Pip の操作 |Microsoft ドキュメント"
-ms.custom: 
+title: Pip の操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - PIPs, developing
 - developing, PIPs
 ms.assetid: c1f62589-bcd5-459e-aab4-debf68cbb6c2
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209154"
 ---
 # <a name="working-with-pips"></a>Pip の操作
 ここでは、PIP (Partnet Interface Process) を操作する方法について説明します。 PIP は、すべての RosettaNet メッセージ交換に共通のビジネス プロセス定義を提供し、取引先間のビジネス プロセスを定義します。 PIP によって、メッセージの Service Content が指定されます。  

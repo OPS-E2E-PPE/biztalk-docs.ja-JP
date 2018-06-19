@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209122"
 ---
 # <a name="a4swift-component-configuration-guide"></a>A4SWIFT コンポーネント構成ガイド
 このガイドの構成に関する情報を提供する[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]です。 A4SWIFT をインストールし、(インストール ガイドで説明)、A4SWIFT 構成ウィザードを完了した後は、この構成ガイドの手順を実行します。 この構成のガイドには、次の手順が含まれています。  

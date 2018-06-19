@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208882"
 ---
 # <a name="approval-stage"></a>承認ステージ
 メッセージが最初に署名され承認用に送信した後の承認チェーン内の各承認者が確認し、自分のデジタル署名をスタックに追加することをメッセージに副署名します。 承認者を確認し、メッセージを副署名のみできます。 デジタル署名のスタックを分断することがなく変更できません。

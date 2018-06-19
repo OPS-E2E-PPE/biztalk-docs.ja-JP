@@ -12,7 +12,7 @@ helpviewer_keywords:
 - installing, custom RFCs for the Data Provider for SAP
 - installing custom RFCs, how to
 ms.assetid: 7a99db70-fa5a-4c04-9dc7-b71613d4364e
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25966717"
 ---
 # <a name="install-custom-rfcs-for-the-data-provider-for-sap"></a>SAP 用データ プロバイダーのカスタム Rfc をインストールします。
 MySAP Business Suite の SAP システムにアクセスする .NET Framework データ プロバイダーを使用する場合は、カスタムの Rfc をインストールします。

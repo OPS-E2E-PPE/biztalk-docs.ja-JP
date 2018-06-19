@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server での証明書に関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server での証明書に関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ab58264b-2475-4831-9f08-bfbaa293022f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297578"
 ---
 # <a name="known-issues-with-certificates-in-biztalk-server"></a>BizTalk Server での証明書に関する既知の問題
 このセクションで使用されるデジタル証明書の管理に関する既知の問題の説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。  
@@ -98,7 +99,7 @@ at Microsoft.BizTalk.EdiInt.Reporting.AS2MessageActivity.Create()"
   
 4.  をクリックして、**ログオン**] タブで [**アカウント**、し分離ホスト インスタンスで使用するログオン名を入力します。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 6.  手動でサービスを開始するログオン ユーザーのユーザー プロファイルを読み込めません。  
   

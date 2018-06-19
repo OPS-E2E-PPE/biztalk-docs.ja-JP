@@ -1,15 +1,15 @@
 ---
-title: "環境のトークンと変数を作成 |Microsoft ドキュメント\""
-description: "環境のトークンを使用するバインド ファイルを更新し、BizTalk Server アプリケーションの展開を自動化する VSTS で変数を作成"
-ms.custom: 
+title: 環境のトークンと変数を作成 |Microsoft ドキュメント"
+description: 環境のトークンを使用するバインド ファイルを更新し、BizTalk Server アプリケーションの展開を自動化する VSTS で変数を作成
+ms.custom: ''
 ms.date: 11/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.prod: biztalk-server
 ms.topic: article
 ms.assetid: 28bb2d4a-f45c-466d-ba65-0ca8cad0bffd
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: tordgladnordahl
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/09/2017
+ms.locfileid: "24054570"
 ---
 # <a name="configure-environmental-tokens-and-variables-for-automatic-deployment"></a>環境のトークンと自動展開用の変数を構成します。
 Visual Studio Team Services (VSTS) の変数を使用して、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]バインド ファイルです。

@@ -1,14 +1,14 @@
 ---
-title: "BTSTask コマンド ライン リファレンス |Microsoft ドキュメント"
-ms.custom: 
+title: BTSTask コマンド ライン リファレンス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3c350695-13e9-441a-9f1e-03cdc3e41328
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231922"
 ---
 # <a name="btstask-command-line-reference"></a>BTSTask コマンド ライン リファレンス
 このセクションの各トピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に付属する BTSTask コマンドライン ツールのリファレンス情報を紹介しています。 BTSTask を使用すると、さまざまなアプリケーション展開作業をコマンド ラインから実行できます。その例を次に示します。  

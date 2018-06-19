@@ -1,14 +1,14 @@
 ---
-title: "チェックリスト: 増やす可用性と災害復旧 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チェックリスト: 増やす可用性と災害復旧 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b315110-206a-4fa7-9bde-abab1429c83b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300202"
 ---
 # <a name="checklist-increasing-availability-with-disaster-recovery"></a>チェックリスト: 災害復旧と可用性の向上
 このトピックの運用環境の可用性を高めるために従う必要のある手順について説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]災害復旧を使用して環境。 通常、災害復旧はフォールト トレランスおよび負荷分散と高可用性を実現する後に実装されます。  

@@ -1,17 +1,17 @@
 ---
-title: "データ プロバイダーのプロパティの Siebel 接続文字列 |Microsoft ドキュメント"
-ms.custom: 
+title: データ プロバイダーのプロパティの Siebel 接続文字列 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - conncting, to the Siebel system
 - Data Provider for Siebel, connection string
 ms.assetid: 8ab0c29e-e06b-4e74-be4e-9aa862a05539
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222218"
 ---
 # <a name="data-provider-properties-for-the-siebel-connection-string"></a>Siebel の接続文字列のデータ プロバイダーのプロパティ
 [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]) を使用して、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Siebel システムにアクセスします。 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]順番 Siebel システムにアクセスする Siebel COM データ コントロール ライブラリを使用します。 Siebel COM データ コントロールは、Siebel Web クライアントに付属します。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 |SiebelEnterpriseServer|Siebel エンタープライズ サーバーの名前。 このパラメーターは必須です。|  
 |SiebelGateway|Siebel サーバーの IP とポートで構成されます。 たとえば、Siebel_Server:1234 です。|  
 |SiebelObjectManager|エンタープライズ サーバー上の Siebel オブジェクト マネージャーの名前。 このパラメーターは必須です。|  
-|SiebelRepository|Siebel リポジトリ。 複数のリポジトリがサーバー上に存在するかどうかに必要なそれ以外の場合、省略可能です。 **注:**サーバーで複数のリポジトリが存在する場合は、SiebelRepository パラメーターで、ターゲットのリポジトリを指定する必要があります。|  
+|SiebelRepository|Siebel リポジトリ。 複数のリポジトリがサーバー上に存在するかどうかに必要なそれ以外の場合、省略可能です。 **注:** サーバーで複数のリポジトリが存在する場合は、SiebelRepository パラメーターで、ターゲットのリポジトリを指定する必要があります。|  
 |SiebelServer|Siebel サーバーです。 必要なすべての Siebel 7.5 サーバー接続です。それ以外の場合、このパラメーターを設定しません。|  
 |[Transport]|トランスポートです。のみ**tcpip**はサポートされています。 このパラメーターはオプションです。 Siebel システムが既定値を提供することが指定されていない場合 (**tcpip**)。|  
   

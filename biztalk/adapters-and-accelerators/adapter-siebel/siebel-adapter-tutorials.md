@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222082"
 ---
 # <a name="siebel-adapter-tutorials"></a>Siebel アダプタ チュートリアル
 最初の[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]チュートリアルには、Microsoft SharePoint ポータル上で Siebel システムからデータを表示する方法の例についてには詳細な手順が含まれています。 2 番目[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]チュートリアルには、WCF ベースを使用する Siebel アダプターの以前のバージョンを使用して作成された BizTalk プロジェクトを移行する方法の詳細な手順が含まれています。[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。  

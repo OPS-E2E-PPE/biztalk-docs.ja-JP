@@ -1,14 +1,14 @@
 ---
-title: "Machine.config からバインド拡張を取得中にエラー |Microsoft ドキュメント"
-ms.custom: 
+title: Machine.config からバインド拡張を取得中にエラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65ab48cf-575b-4db6-984a-880f7e286959
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968800"
 ---
 # <a name="error-getting-binding-extensions-from-machineconfig"></a>machine.config からバインド拡張機能を取得中にエラーが発生しました
 ## <a name="details"></a>詳細  
@@ -39,7 +40,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  アセンブリを GAC にします。  
   
-2.  Machine.config ファイルを変更 (で見つかった**%FrameworkDir%\v4.0.30319\CONFIG**)。  
+2.  Machine.config ファイルを変更 (で見つかった **%FrameworkDir%\v4.0.30319\CONFIG**)。  
   
     1.  動作のサービス構成エディター内の DLL を読み込む (**svcConfigEditor.exe**)。  
   

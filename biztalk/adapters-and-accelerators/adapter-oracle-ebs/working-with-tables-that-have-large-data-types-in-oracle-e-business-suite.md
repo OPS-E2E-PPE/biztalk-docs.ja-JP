@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite で大量のデータ型を持つテーブルの操作 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite で大量のデータ型を持つテーブルの操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 501aa302-0f82-4221-b99f-423bc8621a6a
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968112"
 ---
 # <a name="working-with-tables-that-have-large-data-types-in-oracle-e-business-suite"></a>Oracle E-business Suite で大量のデータ型を持つテーブルの操作
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプター クライアントが BLOB、CLOB、NCLOB、BFILE などの大規模なデータ型とのインターフェイス テーブルやビューでの操作を実行できるようにします。  

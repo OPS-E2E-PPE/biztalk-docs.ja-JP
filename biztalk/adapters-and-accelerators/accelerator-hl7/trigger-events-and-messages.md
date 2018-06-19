@@ -1,11 +1,11 @@
 ---
-title: "イベントとメッセージをトリガー |Microsoft ドキュメント"
-ms.custom: 
+title: イベントとメッセージをトリガー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - health care organizations, HL7 messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, trigger events
 - messages, about messages
 ms.assetid: e93b397c-8cbe-4589-aa88-e474d7722174
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206538"
 ---
 # <a name="trigger-events-and-messages"></a>イベントを発生させるとメッセージ
 デジタルの医療システムでは、アプリケーションは、ラボにおける注文または医薬品の注文の配置などの実際のイベントのため HL7 メッセージを作成します。 HL7 組織が医療保険の実際のイベント データをこれらのアプリケーションが異種システムにまたがる場合でも、アプリケーション間でやり取りの必要性を作成することを前提として、HL7 標準を作成しています。 HL7 標準は、この実際のイベントを呼び出して、*トリガー イベント*です。 自動化されたシステムでは、トリガー イベントが認識体系的にする必要があります。  
