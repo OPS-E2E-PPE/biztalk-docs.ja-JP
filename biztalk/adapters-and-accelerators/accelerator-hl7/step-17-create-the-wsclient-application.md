@@ -1,18 +1,18 @@
 ---
-title: "手順 17: クライアント アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 17: クライアント アプリケーションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WSClient application
 - message enrichment tutorial, WSClient application
 - creating, WSClient application
 ms.assetid: 2849cd4c-30d0-47ab-8161-fab379d5a548
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25960872"
 ---
 # <a name="step-17-create-the-wsclient-application"></a>手順 17: クライアント アプリケーションを作成します。
 WSClient.exe (Web サービス クライアント) は、コンソール アプリケーションで記述された[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]を前の手順で Web サービスとして公開するオーケストレーションにデータを送信する方法を示しています。 クライアント アプリケーションは 4 つの順序でパラメーターの入力を受け入れます。 患者名、ミドル ネーム、最後の名、および社会保障番号、それぞれします。 患者の情報を使用する Web サービスを送信するには、次のコマンドライン構文を使用します。  
@@ -31,9 +32,9 @@ wsclient john henry smith 123456789
   
 ### <a name="to-create-the-wsclient-application"></a>クライアント アプリケーションを作成するには  
   
-1.  ソリューション エクスプ ローラーで右クリック**ソリューション 'BTAHL7V22Common'**をクリックして**追加**、順にクリック**新しいプロジェクト**です。  
+1.  ソリューション エクスプ ローラーで右クリック**ソリューション 'BTAHL7V22Common'** をクリックして**追加**、順にクリック**新しいプロジェクト**です。  
   
-2.  **新しいプロジェクトの追加** ダイアログ ボックスで、**プロジェクトの種類** ウィンドウで、をクリックして**Visual c#**し、、**テンプレート** ウィンドウで、をクリックして**コンソール アプリケーション**です。  
+2.  **新しいプロジェクトの追加** ダイアログ ボックスで、**プロジェクトの種類** ウィンドウで、をクリックして**Visual c#** し、、**テンプレート** ウィンドウで、をクリックして**コンソール アプリケーション**です。  
   
 3.  **名前**フィールドに「**クライアント**です。 **場所**フィールドを参照してください **\<*ドライブ*\>: \Tutorial**、順にクリック**OK**です。 ソリューション エクスプ ローラーは、ツリーにクライアントを追加し、Program.cs ファイルが表示されます。  
   

@@ -1,11 +1,11 @@
 ---
-title: "作成またはプロセス構成を編集する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 作成またはプロセス構成を編集する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process configuration, modifying
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - creating, process configuration
 - modifying, process configuration
 ms.assetid: ef6160f1-f2f0-42ff-a516-7818c9d79d26
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962608"
 ---
 # <a name="how-to-create-or-edit-a-process-configuration"></a>作成またはプロセス構成を編集する方法
 ここでは、プロセス構成の作成方法または編集方法について説明します。  
@@ -93,9 +94,9 @@ ms.lasthandoff: 11/28/2017
   
 4.  プロセス構成を編集して、をクリックするを右クリックして**プロパティ**です。  
   
-5.  *\<プロセス構成\>*プロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブで、に応じて設定を変更します。必須。 これらの設定の詳細については、上の表を参照してください。  
+5.  *\<プロセス構成\>* プロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブで、に応じて設定を変更します。必須。 これらの設定の詳細については、上の表を参照してください。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [PIP 仕様を使用して、プロセス構成を作成するには](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md)   

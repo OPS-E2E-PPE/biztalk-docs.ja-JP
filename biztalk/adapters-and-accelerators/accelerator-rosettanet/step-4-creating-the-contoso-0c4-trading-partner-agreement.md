@@ -1,18 +1,18 @@
 ---
-title: "手順 4: Contoso 0 C 4 取引先アグリーメントの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: Contoso 0 C 4 取引先アグリーメントの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - agreements, creating
 - creating, agreements
 - double action tutorial, creating agreements
 ms.assetid: de2a943f-945a-4bfc-87f3-dd327d5214ef
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965432"
 ---
 # <a name="step-4-creating-the-contoso-0c4-trading-partner-agreement"></a>手順 4: Contoso 0 C 4 取引先アグリーメントの作成
 ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールを使用して、Contoso と Fabrikam の間の取引先アグリーメントを作成します。 0C4 PIP (Partner Interface Process) のための新しい取引先アグリーメントを作成します。  
@@ -41,8 +42,8 @@ ms.lasthandoff: 11/28/2017
     |**プロセスの構成**|選択**STD_0C4_R01.02**ドロップダウン リストからです。|  
     |**自分の所属組織**|選択**Contoso**ドロップダウン リストからです。|  
     |**パートナー組織**|選択**Fabrikam**ドロップダウン リストからです。|  
-    |**RNIF のバージョン**|選択**[v02.00.01]**ドロップダウン リストからです。|  
-    |**ホーム ロール**|選択**Responder (応答側)**ドロップダウン リストからです。|  
+    |**RNIF のバージョン**|選択 **[v02.00.01]** ドロップダウン リストからです。|  
+    |**ホーム ロール**|選択**Responder (応答側)** ドロップダウン リストからです。|  
     |**使用方法**|選択**テスト**ドロップダウン リストからです。|  
   
 3.  クリックして、**ポート**タブをクリックし、次の操作します。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/28/2017
     |**シグナル URL**|型**https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**|  
     |**同期 URL**|型**https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**|  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  右クリックし、 **Fabrikam_To_Contoso_0C4**アグリーメント、およびクリック**Activate**です。  
   

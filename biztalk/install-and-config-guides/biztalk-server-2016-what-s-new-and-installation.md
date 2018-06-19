@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 2016: の新機能、およびインストール |Microsoft ドキュメント"
-description: "新しい、およびインストールを実行すると BizTalk Server 2016 にアップグレードの概要"
-ms.custom: 
+title: 'BizTalk Server 2016: の新機能、およびインストール |Microsoft ドキュメント'
+description: 新しい、およびインストールを実行すると BizTalk Server 2016 にアップグレードの概要
+ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 08/10/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 229043b3-b1a4-47e9-9c0e-1fba5ec5b417
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300106"
 ---
 # <a name="biztalk-server-2016-whats-new-and-installation"></a>BizTalk Server 2016: 新機能およびインストール
 

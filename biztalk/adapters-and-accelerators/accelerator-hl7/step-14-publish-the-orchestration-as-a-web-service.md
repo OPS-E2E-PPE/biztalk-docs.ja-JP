@@ -1,11 +1,11 @@
 ---
-title: "手順 14: Web サービスとしてのオーケストレーションの公開 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 14: Web サービスとしてのオーケストレーションの公開 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, publishing
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - publishing, Web services
 - message enrichment tutorial, Web services
 ms.assetid: 8f29a7be-a679-4ca6-a648-35338d9e9e98
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25962192"
 ---
 # <a name="step-14-publish-the-orchestration-as-a-web-service"></a>手順 14: Web サービスとしてのオーケストレーションを公開します。
 このステップでは、BizTalk Web サービス公開ウィザードを使用して、オーケストレーションを Web サービスとして公開します。  
@@ -38,13 +39,13 @@ ms.lasthandoff: 01/17/2018
   
 ### <a name="to-run-the-biztalk-web-services-publishing-wizard"></a>BizTalk Web サービス公開ウィザードを実行するには  
   
-1.  ソリューション エクスプ ローラーの Visual Studio で、**ソリューション 'BTAHL7V22Common'**です。 **ツール** メニューのをクリックして**BizTalk Web サービス公開ウィザード**です。  
+1.  ソリューション エクスプ ローラーの Visual Studio で、**ソリューション 'BTAHL7V22Common'** です。 **ツール** メニューのをクリックして**BizTalk Web サービス公開ウィザード**です。  
   
 2.  **BizTalk Web サービス公開ウィザード**の**へようこそ**  ページで、をクリックして**次**です。  
   
 3.  **Web サービスの作成**  ページで、 **BizTalk オーケストレーション web サービスとして発行**, 、 をクリックし、 **次**します。  
   
-4.  **BizTalk アセンブリ**] ページの [、 **BizTalk アセンブリ ファイル (\*.dll)**フィールドを参照または入力 **\<*ドライブ*\>: \Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**、] をクリックして**BTAHL7 Project.dll**をクリックして**開く**、順にクリック**[次へ**.  
+4.  **BizTalk アセンブリ**] ページの [、 **BizTalk アセンブリ ファイル (\*.dll)** フィールドを参照または入力 **\<*ドライブ*\>: \Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**、] をクリックして**BTAHL7 Project.dll**をクリックして**開く**、順にクリック **[次へ**.  
   
 5.  **オーケストレーションとポート** ページで、すべてのノードが選択されていることを確認し、をクリックして**次**です。  
   

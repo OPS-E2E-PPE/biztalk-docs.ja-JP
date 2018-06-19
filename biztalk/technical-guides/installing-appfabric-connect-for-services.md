@@ -1,14 +1,14 @@
 ---
-title: "AppFabric をインストールするサービスの接続 |Microsoft ドキュメント"
-ms.custom: 
+title: AppFabric をインストールするサービスの接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1de3bf49-e3cc-4d3f-9883-9a2c472f3647
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298690"
 ---
 # <a name="installing-appfabric-connect-for-services"></a>サービスの接続 AppFabric をインストールします。
 このガイドでは、BizTalk Server 2010 Feature Pack (2010 年 10 月) をインストールする方法について説明します。 Feature pack の機能強化を提供するサービスの機能用の BizTalk Server 2010 AppFabric Connect のインストール、 **BizTalk WCF サービス公開ウィザード**と**WCF アダプター サービス開発ウィザード**. Feature pack をインストールした後は、BizTalk Server アイテム、内部設置型の範囲を拡張または LOB アプリケーションを Windows Azure AppFabric Service Bus エンドポイントを追加することによってクラウドことができます。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  **ようこそ** ページで、をクリックして**次**です。  
   
-3.  ライセンス条項に同意し、をクリックして**次**し、次の画面でクリック**[次へ]**もう一度です。  
+3.  ライセンス条項に同意し、をクリックして**次**し、次の画面でクリック **[次へ]** もう一度です。  
   
 4.  クリックして、ウィザードでは、機能パックのインストールが完了したら、**完了**です。  
   

@@ -1,17 +1,17 @@
 ---
-title: "PIP からの整形式メッセージ インスタンスを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: PIP からの整形式メッセージ インスタンスを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message templates
 - PIPs, message templates
 ms.assetid: fed3698c-25d9-40ca-878a-60171f425bec
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960688"
 ---
 # <a name="creating-a-well-formed-message-instance-from-a-pip"></a>PIP からの整形式メッセージ インスタンスを作成します。
 ここでは、整形式のメッセージ インスタンスを生成する方法を説明します。 PIP (Partner Interface Process) からメッセージ インスタンスのテンプレートを生成できます。 その後、データを追加する前に、それが整形式になるように、そのテンプレートを変更する必要があります。  

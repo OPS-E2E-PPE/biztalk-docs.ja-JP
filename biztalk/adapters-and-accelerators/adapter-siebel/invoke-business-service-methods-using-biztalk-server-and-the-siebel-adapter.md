@@ -1,17 +1,17 @@
 ---
-title: "ビジネス サービス メソッドを使用して BizTalk Server と Siebel アダプターを呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス サービス メソッドを使用して BizTalk Server と Siebel アダプターを呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, invoke business service methods
 - business service methods, invoking
 ms.assetid: cf437c4f-fa65-4f89-a197-c83869930b2c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966160"
 ---
 # <a name="invoke-business-service-methods-using-biztalk-server-and-the-siebel-adapter"></a>ビジネス サービス メソッドを使用して BizTalk Server と Siebel アダプターを呼び出し
 Siebel ビジネス サービスは、Siebel の直接呼び出すことができるビジネス メソッドのコレクションです。 方法の詳細については[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]Siebel システムでのビジネス サービスを呼び出すサポートを参照してください[の Siebel ビジネス サービスを運用](../../adapters-and-accelerators/adapter-siebel/operations-on-business-services-in-siebel.md)です。 SOAP の構造の詳細については、ビジネス サービス操作を実行するメッセージを参照してください[ビジネス サービス操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-service-operations.md)です。  

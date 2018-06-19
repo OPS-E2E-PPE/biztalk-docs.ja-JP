@@ -1,14 +1,14 @@
 ---
-title: "HTTP アダプターでの証明書を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: HTTP アダプターでの証明書を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dc2f454f-22b5-4113-9a23-e00a816d5e48
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297842"
 ---
 # <a name="how-to-configure-certificates-with-an-http-adapter"></a>HTTP アダプターでの証明書を構成する方法
 HTTP 送信アダプタを受け付けるか、クライアント証明書を必要とするサーバーとの接続をセキュリティで保護できます。 クライアント証明書を指定した場合、HTTP 送信アダプタではクライアント証明書を必要とするか受け付けるサーバーに接続するときに、この証明書を使用します。 クライアント証明書が指定されていない場合、移行先サーバーには、クライアント証明書が必要です、送信者が認証されていないと、HTTP 送信アダプターがメッセージの送信に失敗して、標準の再試行ロジックに従います。  
@@ -42,4 +43,4 @@ HTTP 送信アダプタを受け付けるか、クライアント証明書を必
   
 6.  **SSL クライアント証明書の拇印**、適切な拇印を入力します。  
   
-7.  をクリックして**[ok]**、順にクリック**OK**もう一度です。
+7.  をクリックして **[ok]**、順にクリック**OK**もう一度です。

@@ -1,11 +1,11 @@
 ---
-title: "宣言されていないカスタマイズ |Microsoft ドキュメント"
-ms.custom: 
+title: 宣言されていないカスタマイズ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - undeclared customizations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - customizing, Z objects
 - customizing, undeclared customizations
 ms.assetid: f062dbb7-2c78-47ea-a927-99e1fba4854b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206490"
 ---
 # <a name="undeclared-customizations"></a>宣言されていないカスタマイズ
 形式またはデータの特性を定義することがなく、メッセージにデータを追加できます。 宣言されていない Z セグメントを使用してこれを行います。 宣言されていない Z セグメントは、メッセージの最後に予期しないインスタンスです。 パーサー/XML 検証では、セグメントは検証しません。 任意のスキーマで定義されていません。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) セグメントをバイナリ ラージ オブジェクト (BLOB) として扱われます。  

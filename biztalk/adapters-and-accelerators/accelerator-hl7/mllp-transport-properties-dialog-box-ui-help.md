@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962096"
 ---
 # <a name="mllp-transport-properties-dialog-box-ui-help"></a>MLLP トランスポートのプロパティ ダイアログ ボックスの UI ヘルプ
 使用する、 **MLLP トランスポートのプロパティ**送信用のパラメーターを構成し、最小限の下位層プロトコル (MLLP) アダプターの受信を ダイアログ ボックス。 パラメーターを設定、ネットワーク接続 MLLP トランスポートのプロパティのいずれかの送信ポートまたは受信場所が MLLP のトランスポートの種類を使用できます。  

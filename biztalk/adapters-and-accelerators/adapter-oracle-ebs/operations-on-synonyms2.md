@@ -1,14 +1,14 @@
 ---
-title: "Synonyms2 に対する操作 |Microsoft ドキュメント"
-ms.custom: 
+title: Synonyms2 に対する操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3bc9b2c4-ac22-491b-bc64-95e08a39b74d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964016"
 ---
 # <a name="operations-on-synonyms"></a>シノニムに対する操作
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]シノニムに対して操作を実行することができます。 シノニムは、エイリアスまたはデータベース オブジェクト (テーブル、ビュー、ストアド プロシージャ、関数、およびパッケージ) などのフレンドリ名です。 Oracle でのシノニムについての詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=138058](http://go.microsoft.com/fwlink/?LinkId=138058)です。  

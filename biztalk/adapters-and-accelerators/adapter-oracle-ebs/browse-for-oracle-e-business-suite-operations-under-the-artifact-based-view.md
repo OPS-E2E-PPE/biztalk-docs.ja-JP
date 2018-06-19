@@ -1,14 +1,14 @@
 ---
-title: "成果物に基づいたビュー Oracle E-business Suite 操作を参照 |Microsoft ドキュメント"
-ms.custom: 
+title: 成果物に基づいたビュー Oracle E-business Suite 操作を参照 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 962ac1cc-826c-46d6-848a-4cd371804596
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966808"
 ---
 # <a name="browse-for-oracle-e-business-suite-operations-under-the-artifact-based-view"></a>成果物に基づいたビュー Oracle E-business Suite 操作の参照します。
 使用することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]Oracle E-business Suite で実行できる送受信の操作を参照するを使用して、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。 このトピックでは、成果物に基づくビューの 送信および受信操作を参照する方法について説明します。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  Oracle E-business Suite への接続、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。 参照してください[Visual Studio での Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)手順についてはします。  
   
-2.  **選択コントラクト型**を一覧表示、送信操作を選択**クライアント (送信操作)**です。  
+2.  **選択コントラクト型**を一覧表示、送信操作を選択**クライアント (送信操作)** です。  
   
 3.  **カテゴリを選択**ボックスには、Oracle E-business Suite の成果物を分類するさまざまなビューが一覧表示されます。  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/28/2017
     > [!IMPORTANT]
     >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] (または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]) 要求セットのフレンドリ名が表示されます。 ただし、要求セットのメタデータには、要求セットの実際の名前があります。 たとえば、DBA はアプリケーションのアプリケーションには、"DownloadPatches"要求のセットが含まれています。 ただし、メタデータ要求セットと名前が付け FNDRSSUB1623、要求セットの実際の名前であります。  
   
-9. 展開して、 **PL-SQL Api** (使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 展開して、**現在のスキーマ (\<スキーマ名\>)**ノードをスキーマに定義されているすべてのパッケージを表示します。 関数とで、パッケージ内のプロシージャを参照してください。 パッケージ名をクリックして、**利用可能なカテゴリと操作**ボックス。  
+9. 展開して、 **PL-SQL Api** (使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 展開して、**現在のスキーマ (\<スキーマ名\>)** ノードをスキーマに定義されているすべてのパッケージを表示します。 関数とで、パッケージ内のプロシージャを参照してください。 パッケージ名をクリックして、**利用可能なカテゴリと操作**ボックス。  
   
      ![Oracle データベースでのパッケージの参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/7a9dc061-db0b-4a8e-bfc6-3a003ad687d8.gif "7a9dc061-db0b-4a8e-bfc6-3a003ad687d8")  
   
@@ -80,7 +81,7 @@ ms.lasthandoff: 11/28/2017
   
      ![Oracle データベースですべてのスキーマのパッケージの参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/09a4841b-b88f-490d-a49a-94e392b5493c.gif "09a4841b-b88f-490d-a49a-94e392b5493c")  
   
-10. 展開して、**プロシージャ**(使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 クリックして、**現在のスキーマ (\<スキーマ名\>)**ノードをそのスキーマで定義されているすべての手順を参照して、**利用可能なカテゴリと操作**ボックス。  
+10. 展開して、**プロシージャ**(使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 クリックして、**現在のスキーマ (\<スキーマ名\>)** ノードをそのスキーマで定義されているすべての手順を参照して、**利用可能なカテゴリと操作**ボックス。  
   
      ![Oracle データベースでスキーマのプロシージャの参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/6d78563a-53f7-45cc-8652-f40d4703bdf4.gif "6d78563a-53f7-45cc-8652-f40d4703bdf4")  
   
@@ -88,7 +89,7 @@ ms.lasthandoff: 11/28/2017
   
      ![Oracle データベースでスキーマのプロシージャの参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/a514d199-d6c1-44a0-bf6b-28ddf702081a.gif "a514d199-d6c1-44a0-bf6b-28ddf702081a")  
   
-11. 展開して、**関数**(使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 クリックして、**現在のスキーマ (\<スキーマ名\>)**でそのスキーマに対して定義されているすべての関数を表示するノード、**利用可能なカテゴリと操作**ボックス。  
+11. 展開して、**関数**(使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 クリックして、**現在のスキーマ (\<スキーマ名\>)** でそのスキーマに対して定義されているすべての関数を表示するノード、**利用可能なカテゴリと操作**ボックス。  
   
      ![Oracle データベースでスキーマの関数参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/22c1cabf-9754-4ecd-be37-dbeeb7a6a8fd.gif "22c1cabf-9754-4ecd-be37-dbeeb7a6a8fd")  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 11/28/2017
   
      ![Oracle データベースですべてのスキーマの関数参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/b4d29036-3d37-4a50-82c2-3532adbe2875.gif "b4d29036-3d37-4a50-82c2-3532adbe2875")  
   
-12. 展開して、**テーブル**(使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 展開して、**現在のスキーマ (\<スキーマ名\>)**ノードをスキーマに定義されているすべてのテーブルを参照してください。 そのテーブルでサポートされる操作を表示するテーブル名をクリックして、**利用可能なカテゴリと操作**ボックス。  
+12. 展開して、**テーブル**(使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 展開して、**現在のスキーマ (\<スキーマ名\>)** ノードをスキーマに定義されているすべてのテーブルを参照してください。 そのテーブルでサポートされる操作を表示するテーブル名をクリックして、**利用可能なカテゴリと操作**ボックス。  
   
      ![Oracle データベースでスキーマのテーブルの参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/6ba7420f-9893-4b3e-91cb-10f29d725ad3.gif "6ba7420f-9893-4b3e-91cb-10f29d725ad3")  
   
@@ -109,7 +110,7 @@ ms.lasthandoff: 11/28/2017
     >   
     >  同様に、テーブルに BLOB 型の列が含まれている場合、CLOB または NCLOB アダプターも公開データを更新するには、このような列の特定の操作します。 このような操作の名前は Update_\<LOBColName\>です。 たとえば、テーブルに列、写真、BLOB の種類の場合、アダプターを公開、 **Update_PHOTO**操作します。 テーブルに BLOB の種類の 1 つ以上の列がある場合は、CLOB、NCLOB、アダプターは Update_ 数が多く公開\<LOBColName\>操作します。 BFILE 型の列には、更新操作がサポートされていないことに注意してください。  
   
-13. 展開して、**ビュー** (使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 展開して、**現在のスキーマ (\<スキーマ名\>)**をに対して定義されているすべてのビューを表示するノードです。 そのビューでサポートされる操作を表示する表示名をクリックして、**利用可能なカテゴリと操作**ボックス。  
+13. 展開して、**ビュー** (使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 展開して、**現在のスキーマ (\<スキーマ名\>)** をに対して定義されているすべてのビューを表示するノードです。 そのビューでサポートされる操作を表示する表示名をクリックして、**利用可能なカテゴリと操作**ボックス。  
   
      ![Oracle データベースで現在のスキーマのビューの参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/2a38cfed-007d-431a-af60-c9c8be5369ab.gif "2a38cfed-007d-431a-af60-c9c8be5369ab")  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  Oracle E-business Suite への接続、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。 参照してください[Visual Studio での Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)手順についてはします。  
   
-2.  **選択コントラクト型**を一覧表示、受信操作を選択**サービス (入力方向の操作)**です。  
+2.  **選択コントラクト型**を一覧表示、受信操作を選択**サービス (入力方向の操作)** です。  
   
 3.  **カテゴリを選択**ボックスには、Oracle E-business Suite の成果物を分類するさまざまなビューが一覧表示されます。  
   
@@ -151,7 +152,7 @@ ms.lasthandoff: 11/28/2017
   
      ![インターフェイス ビューでの受信操作](../../adapters-and-accelerators/adapter-oracle-ebs/media/937f46f2-d142-413f-8744-2180c7116fd4.gif "937f46f2-d142-413f-8744-2180c7116fd4")  
   
-6.  展開して、 **PL-SQL Api** (使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 展開して、**現在のスキーマ (\<スキーマ名\>)**ノードをスキーマに定義されているすべてのパッケージを表示します。 関数とで、パッケージ内のプロシージャを参照してください。 パッケージ名をクリックして、**利用可能なカテゴリと操作**ボックス。 Oracle データベースをポーリングする上記の関数およびプロシージャのそれぞれに使用できます。  
+6.  展開して、 **PL-SQL Api** (使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 展開して、**現在のスキーマ (\<スキーマ名\>)** ノードをスキーマに定義されているすべてのパッケージを表示します。 関数とで、パッケージ内のプロシージャを参照してください。 パッケージ名をクリックして、**利用可能なカテゴリと操作**ボックス。 Oracle データベースをポーリングする上記の関数およびプロシージャのそれぞれに使用できます。  
   
      ![PL &#45; を参照します。ポーリングに使用できるデータベースの Oracle の SQL Api](../../adapters-and-accelerators/adapter-oracle-ebs/media/4b31ea85-9c5a-42b4-82b2-2cb6d3ead35a.gif "4b31ea85-9c5a-42b4-82b2-2cb6d3ead35a")  
   
@@ -159,7 +160,7 @@ ms.lasthandoff: 11/28/2017
   
      ![PL &#45; を参照します。すべてのスキーマのポーリング SQL Api](../../adapters-and-accelerators/adapter-oracle-ebs/media/e28a803e-fcfb-4021-9225-924d54a484c0.gif "e28a803e-fcfb-4021-9225-924d54a484c0")  
   
-7.  展開して、**プロシージャ**(使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 クリックして、**現在のスキーマ (\<スキーマ名\>)**ノードをそのスキーマで定義されているすべての手順を参照して、**利用可能なカテゴリと操作**ボックス。 Oracle データベースをポーリングする手順のそれぞれに使用できます。  
+7.  展開して、**プロシージャ**(使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 クリックして、**現在のスキーマ (\<スキーマ名\>)** ノードをそのスキーマで定義されているすべての手順を参照して、**利用可能なカテゴリと操作**ボックス。 Oracle データベースをポーリングする手順のそれぞれに使用できます。  
   
      ![プロシージャのポーリングに使用できるすべてのスキーマの参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/5e78da80-d99a-44d3-8eac-f636828f8ceb.gif "5e78da80-d99a-44d3-8eac-f636828f8ceb")  
   
@@ -167,7 +168,7 @@ ms.lasthandoff: 11/28/2017
   
      ![Oracle データベースでのポーリングのプロシージャの参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/22d8e866-ed19-49f4-a6eb-683343b16cf5.gif "22d8e866-ed19-49f4-a6eb-683343b16cf5")  
   
-8.  展開して、**関数**(使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 クリックして、**現在のスキーマ (\<スキーマ名\>)**でそのスキーマに対して定義されているすべての関数を表示するノード、**利用可能なカテゴリと操作**ボックス。 Oracle データベースをポーリングする上記の関数の各使用できます。  
+8.  展開して、**関数**(使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 クリックして、**現在のスキーマ (\<スキーマ名\>)** でそのスキーマに対して定義されているすべての関数を表示するノード、**利用可能なカテゴリと操作**ボックス。 Oracle データベースをポーリングする上記の関数の各使用できます。  
   
      ![Oracle データベースでのポーリング関数参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/64c0a30d-a2d6-4dee-90cb-a7e7e2bf62cf.gif "64c0a30d-a2d6-4dee-90cb-a7e7e2bf62cf")  
   
@@ -175,7 +176,7 @@ ms.lasthandoff: 11/28/2017
   
      ![Oracle データベースでのポーリング関数参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/1d22c3c8-8c24-4905-8144-bdb4840244f1.gif "1d22c3c8-8c24-4905-8144-bdb4840244f1")  
   
-9. 展開して、**テーブル**(使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 展開して、**現在のスキーマ (\<スキーマ名\>)**ノードをスキーマに定義されているすべてのテーブルを参照してください。 表示するテーブル名をクリックして、**ポーリング**受信操作では、そのテーブルでサポートされていません、**利用可能なカテゴリと操作**ボックス。  
+9. 展開して、**テーブル**(使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 展開して、**現在のスキーマ (\<スキーマ名\>)** ノードをスキーマに定義されているすべてのテーブルを参照してください。 表示するテーブル名をクリックして、**ポーリング**受信操作では、そのテーブルでサポートされていません、**利用可能なカテゴリと操作**ボックス。  
   
      ![ポーリングに使用できる Oracle データベース テーブルの参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/7c60dfbf-3836-4e72-abe8-5f32a0936807.gif "7c60dfbf-3836-4e72-abe8-5f32a0936807")  
   
@@ -183,7 +184,7 @@ ms.lasthandoff: 11/28/2017
   
      ![ポーリングに使用できる Oracle データベース テーブルの参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/c5fbaf59-2e79-4141-8a85-1e1b8eedcea7.gif "c5fbaf59-2e79-4141-8a85-1e1b8eedcea7")  
   
-10. 展開して、**ビュー** (使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 展開して、**現在のスキーマ (\<スキーマ名\>)**をに対して定義されているすべてのビューを表示するノードです。 表示する表示名をクリックして、**ポーリング**の受信操作では、そのビューではサポートされて、**利用可能なカテゴリと操作**ボックス。  
+10. 展開して、**ビュー** (使用するログイン) 現在のユーザーのスキーマと基になる Oracle データベースで定義されている他のすべてのスキーマのカテゴリ ノードを表示するノードです。 展開して、**現在のスキーマ (\<スキーマ名\>)** をに対して定義されているすべてのビューを表示するノードです。 表示する表示名をクリックして、**ポーリング**の受信操作では、そのビューではサポートされて、**利用可能なカテゴリと操作**ボックス。  
   
      ![Oracle データベースでのポーリング ビュー参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/2299de79-9f50-433d-9e71-164f6d02bd78.gif "2299de79-9f50-433d-9e71-164f6d02bd78")  
   

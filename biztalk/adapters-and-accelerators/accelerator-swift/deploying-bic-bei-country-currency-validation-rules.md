@@ -1,14 +1,14 @@
 ---
-title: "BIC BEI 国通貨検証規則を展開する |Microsoft ドキュメント"
-ms.custom: 
+title: BIC BEI 国通貨検証規則を展開する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2e96d416-d5eb-4597-a691-c7dbee33c7d6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964584"
 ---
 # <a name="deploying-bicbeicountrycurrency-validation-rules"></a>BIC、BEI、国/通貨検証規則を展開します。
 **BIC、BEI、国/通貨の検証ルールを展開します。**  

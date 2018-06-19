@@ -1,14 +1,14 @@
 ---
-title: "すべての要素ノード |Microsoft ドキュメント"
-ms.custom: 
+title: すべての要素ノード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7e30fcf-31bc-4d48-9bc7-0be90e927127
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963696"
 ---
 # <a name="any-element-nodes"></a>すべての要素ノード
 BizTalk エディターで行うこともできます、 **Any 要素**不明な要素が表示されるインスタンス メッセージ内の場所を示すためにノードです。 これにより、特定の要素がインスタンス メッセージ内の特定の場所に出現することはあらかじめわかっているが、要素の名前や複雑さの程度が不確定な状況にも対応できます。 配置した場合、 **Any 要素**ノードのスキーマでは、BizTalk 内で適切な位置には、このようなメッセージの不明な部分を処理できます。 唯一の要件は、対応する XML が整形式であることです。  

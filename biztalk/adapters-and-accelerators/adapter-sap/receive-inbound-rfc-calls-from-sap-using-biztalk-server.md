@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967752"
 ---
 # <a name="receive-inbound-rfc-calls-from-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP から受信 RFC 呼び出しの受信します。
 RFC サーバーのシナリオでは、3 つのエンティティがあります。  
@@ -90,7 +91,7 @@ RFC サーバーのシナリオでは、3 つのエンティティがありま�
  参照してください[参照、検索、および get メタデータの SAP RFC 操作](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)手順については、特定の RFC のスキーマを生成する方法です。  
   
 > [!IMPORTANT]
->  受信 RFC 呼び出しのスキーマを生成するために選択を確認してください**サービス (入力方向の操作)**から、**選択コントラクト型**ドロップダウン リストで、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]です。  
+>  受信 RFC 呼び出しのスキーマを生成するために選択を確認してください**サービス (入力方向の操作)** から、**選択コントラクト型**ドロップダウン リストで、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]です。  
   
 ## <a name="defining-messages-and-message-types"></a>メッセージとメッセージの種類を定義します。  
  以前に生成したスキーマには、オーケストレーション内のメッセージに対して必要な「種類」がについて説明します。 メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。 BizTalk プロジェクトのオーケストレーションの種類からのメッセージに最初の手順で生成したスキーマをリンクする必要があります。  

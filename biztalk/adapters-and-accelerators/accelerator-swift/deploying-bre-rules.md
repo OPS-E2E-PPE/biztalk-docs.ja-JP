@@ -1,17 +1,17 @@
 ---
-title: "BRE のルールの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: BRE のルールの展開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, BRE policies
 - BRE policies, deploying
 ms.assetid: 3a66aa57-e7f9-400f-963c-eda12fb1e659
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967896"
 ---
 # <a name="deploying-bre-rules"></a>BRE のルールの展開
 使用される BRE 規則を展開する必要があります[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]SWIFT メッセージを処理するオーケストレーションです。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  BRE 配置ユーティリティ] ダイアログ ボックスで、[**参照**です。  
   
-3.  .NET グローバル アセンブリ キャッシュ ダイアログ ボックスで、選択で配置したプロジェクト アセンブリ[A4SWIFT のスキーマを展開する](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)、クリックして**[ok]**です。  
+3.  .NET グローバル アセンブリ キャッシュ ダイアログ ボックスで、選択で配置したプロジェクト アセンブリ[A4SWIFT のスキーマを展開する](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)、クリックして **[ok]** です。  
   
 4.  BRE 配置ユーティリティ] ダイアログ ボックスで、[**展開**です。  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  開いている[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラー。 参照\<*ドライブ*\>: \Documents and settings \all \all データとログ ファイル BREDeploymentLog.txt に表示されるそのドライブを確認します。  
   
-7.  ルール エンジン更新サービスを再起動します。 クリックして**開始**をクリックすると、**実行**入力、 **services.msc**をクリックすると、 **[ok]**です。 **サービス (ローカル)**ウィンドウを右クリックして**ルール エンジン更新サービス**、クリックして**再起動**です。  
+7.  ルール エンジン更新サービスを再起動します。 クリックして**開始**をクリックすると、**実行**入力、 **services.msc**をクリックすると、 **[ok]** です。 **サービス (ローカル)** ウィンドウを右クリックして**ルール エンジン更新サービス**、クリックして**再起動**です。  
   
 ### <a name="deploying-bre-rules-one-at-a-time"></a>一度に 1 つずつ BRE 規則を展開します。  
  ルール エンジン展開ウィザードを使用して、ボキャブラリを公開し、一度に 1 つのポリシーを展開することができます。 ボキャブラリ、このプロセスには、インポートして、1 つのステップ内のファイルからデータベースにボキャブラリを公開が含まれます。 インポートおよび 1 つの手順で、ポリシーをパブリッシュする別のステップに展開するポリシー、プロセスが含まれます。  
@@ -94,7 +95,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  展開タスク ページで、をクリックして**インポート ポリシー/ボキャブラリをファイルからデータベースに発行し、**、クリックして**次**です。  
   
-4.  ポリシー ストア] ページで、 **SQL サーバー名] ボックス**のサーバーを選択し、[、**選択したサーバーの構成データベース**一覧で、[ **BizTalkRuleEngineDb**です。 **[次へ]**をクリックします。  
+4.  ポリシー ストア] ページで、 **SQL サーバー名] ボックス**のサーバーを選択し、[、**選択したサーバーの構成データベース**一覧で、[ **BizTalkRuleEngineDb**です。 **[次へ]** をクリックします。  
   
 5.  インポート ルール エンジン ポリシー/ボキャブラリ ファイル ページで、をクリックして**参照**です。  
   
@@ -120,7 +121,7 @@ ms.lasthandoff: 11/28/2017
   
 13. 展開タスク ページで、をクリックして**ポリシーの展開**、クリックして**次**です。  
   
-14. ポリシー ストア] ページで、 **SQL サーバー名] ボックス**のサーバーを選択し、[、**選択したサーバーの構成データベース**一覧で、[ **BizTalkRuleEngineDb**です。 **[次へ]**をクリックします。  
+14. ポリシー ストア] ページで、 **SQL サーバー名] ボックス**のサーバーを選択し、[、**選択したサーバーの構成データベース**一覧で、[ **BizTalkRuleEngineDb**です。 **[次へ]** をクリックします。  
   
 15. ポリシーの展開 ページで、下矢印をクリックして の横に、**ルール エンジン ポリシー**テキスト ボックスは、発行すると、したポリシーを選択し、をクリックして**次**です。  
   
@@ -128,6 +129,6 @@ ms.lasthandoff: 11/28/2017
   
 17. **ポリシー/ボキャブラリをインポートする** ページで、コマンドが成功し、をクリックすることを確認**次**です。  
   
-18. **[完了]**をクリックします。  
+18. **[完了]** をクリックします。  
   
-19. 再起動、**ルール エンジン更新サービス**です。 クリックして**開始**をクリックすると、**実行**入力、 **services.msc**をクリックすると、 **[ok]**です。 **サービス (ローカル)**ウィンドウを右クリックして**ルール エンジン更新サービス**、クリックして**再起動**です。
+19. 再起動、**ルール エンジン更新サービス**です。 クリックして**開始**をクリックすると、**実行**入力、 **services.msc**をクリックすると、 **[ok]** です。 **サービス (ローカル)** ウィンドウを右クリックして**ルール エンジン更新サービス**、クリックして**再起動**です。

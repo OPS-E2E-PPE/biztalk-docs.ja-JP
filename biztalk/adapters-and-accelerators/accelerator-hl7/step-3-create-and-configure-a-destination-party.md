@@ -1,14 +1,14 @@
 ---
-title: "手順 3: を作成し、送信先パーティの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: を作成し、送信先パーティの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8746f115-9f69-4593-9943-9ccda45cd900
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961344"
 ---
 # <a name="step-3-create-and-configure-a-destination-party"></a>手順 3: を作成し、送信先パーティを構成します。
 このステップでは、作成し、バッチの作成シナリオでは、送信先パーティを構成します。 選択することも、メッセージを[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]バッチとバッチのスケジュールは、そのパーティ用に定義されています。 フォルダーにファイルをコピーした後で 1 時間に 1 つのバッチ送信時間をスケジュールするとします。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]その後 1 時間の頻度での受信メッセージをバッチ処理します。  

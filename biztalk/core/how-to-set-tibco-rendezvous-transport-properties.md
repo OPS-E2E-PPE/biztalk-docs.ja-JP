@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-rendezvous-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: b4fabb9146b4f559dd1a41b6e3b7da5ce9489d1f
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015273"
 ---
 # <a name="how-to-set-tibco-rendezvous-transport-properties"></a>TIBCO Rendezvous トランスポートのプロパティを設定する方法
 TIBCO Rendezvous トランスポートのプロパティは、実行時に使用されます。 **トランスポートのプロパティ** 画面で、生成されたメッセージを公開する TIBCO Rendezvous ドメインを識別する接続パラメーターを設定します。  
@@ -41,7 +42,7 @@ TIBCO Rendezvous トランスポートのプロパティは、実行時に使用
     |**順序の保持**|既定値は True です。 ロジックで、メッセージを BizTalk Server から受信したときと同じ順序で TIBCO Rendezvous に送信できます。 このパラメーターにより、同じ順序での公開が強制されますが、サブスクライバーが同じ順序で受信するということではありません。|  
     |**送信ポートの識別子**|この識別子は、このポートに関連付けられているログ メッセージに表示されます。 これは、便宜上指定します。|  
   
-4.  展開**Rendezvous トランスポート**TIBCO Rendezvous サーバーへの接続情報を入力し、**適用**、クリックして**[ok]**です。  
+4.  展開**Rendezvous トランスポート**TIBCO Rendezvous サーバーへの接続情報を入力し、**適用**、クリックして **[ok]** です。  
   
      Microsoft BizTalk Adapter for TIBCO Rendezvous が TIBCO Rendezvous にアクセスできるようにするために接続パラメーターを設定する必要があります。  
   
@@ -67,7 +68,7 @@ TIBCO Rendezvous トランスポートのプロパティは、実行時に使用
         > [!NOTE]
         >  関連アプリケーションを作成する方法については、次を参照してください。[関連アプリケーションの作成](../core/creating-affiliate-applications1.md)です。  
   
-6.  をクリックして**適用**、クリックして**[ok]**接続情報を受け入れるように必要なすべての情報を提供するとします。  
+6.  をクリックして**適用**、クリックして **[ok]** 接続情報を受け入れるように必要なすべての情報を提供するとします。  
   
      BizTalk Adapter for TIBCO Rendezvous にアクセスする TIBCO Rendezvous の接続パラメーターを設定する必要があります。  
   

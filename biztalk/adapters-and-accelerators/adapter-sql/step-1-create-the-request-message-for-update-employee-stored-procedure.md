@@ -1,14 +1,14 @@
 ---
-title: "手順 1: UPDATE_EMPLOYEE の要求メッセージを作成するストアド プロシージャ |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: UPDATE_EMPLOYEE の要求メッセージを作成するストアド プロシージャ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4dd975d9-4b38-46e0-a926-4b325b0d7b5e
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965992"
 ---
 # <a name="step-1-create-the-request-message-for-updateemployee-stored-procedure"></a>手順 1: UPDATE_EMPLOYEE の要求メッセージを作成するストアド プロシージャ
 ![2 の手順 1.](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
@@ -89,7 +90,7 @@ ms.lasthandoff: 11/28/2017
   
     3.  **署名**] タブで、[、**アセンブリに署名**チェック ボックスをオンします。  
   
-    4.  **厳密な名前キー ファイルを選択して**一覧で、クリックして**\<参照\>**です。  
+    4.  **厳密な名前キー ファイルを選択して**一覧で、クリックして**\<参照\>** です。  
   
     5.  厳密な名前のキー ファイルを作成したフォルダーに移動し、をクリックして**開く**です。  
   

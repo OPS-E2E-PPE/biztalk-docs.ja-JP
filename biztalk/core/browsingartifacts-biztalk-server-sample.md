@@ -1,14 +1,14 @@
 ---
-title: "BrowsingArtifacts (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: BrowsingArtifacts (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b63c0833-3445-4361-a8eb-63837017edf8
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965784"
 ---
 # <a name="browsingartifacts-biztalk-server-sample"></a>BrowsingArtifacts (BizTalk Server サンプル)
 BrowsingArtifacts サンプルでは、BizTalk のアイテムと属性を列挙する方法を示します。  
@@ -48,7 +49,7 @@ BrowsingArtifacts サンプルでは、BizTalk のアイテムと属性を列挙
   
 1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル BrowsingArtifacts.sln を開きます。  
   
-2.  **[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。  
+2.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
 #### <a name="to-run-this-sample"></a>このサンプルを実行するには  
   

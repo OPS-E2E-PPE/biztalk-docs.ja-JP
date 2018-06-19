@@ -1,14 +1,14 @@
 ---
-title: "SAP 用データ プロバイダーを使用してレポート サーバー プロジェクトを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP 用データ プロバイダーを使用してレポート サーバー プロジェクトを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5fe985b5-ba67-4179-a31c-4f41106c32be
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962760"
 ---
 # <a name="use-the-data-provider-for-sap-to-create-a-report-server-project"></a>SAP 用データ プロバイダーを使用してレポート サーバー プロジェクトを作成
 レポート サーバーを作成する必要がありますを使用して、プロジェクト、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]、SAP システムで使用できるデータのレポートを生成します。 このトピックでは、レポート サーバー プロジェクトを作成する方法についてを説明します。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
         |プロパティ|目的|  
         |--------------|----------------|  
         |**[特定のユーザー名とパスワードを使用する]**|ユーザー名と、SAP システムへの接続にパスワードを指定します。|  
-        |**資格情報の入力を求める**|レポートの生成時に、SAP システムの資格情報を入力します。 **注:**資格情報を指定する接続文字列の一部として、指定した場合、資格情報の上書きは、このオプションにします。|  
+        |**資格情報の入力を求める**|レポートの生成時に、SAP システムの資格情報を入力します。 **注:** 資格情報を指定する接続文字列の一部として、指定した場合、資格情報の上書きは、このオプションにします。|  
         |**資格情報なし**|接続文字列の一部として、ユーザー名とパスワードを指定する場合は、このオプションを選択します。|  
   
         > [!NOTE]
@@ -82,9 +83,9 @@ ms.lasthandoff: 11/28/2017
   
          このクエリは上の 2 つのレコード テーブルから取得 KNA1、NAME1 はするが、レポートの生成中に指定する名前を指定します。  
   
-         **[次へ]**をクリックします。  
+         **[次へ]** をクリックします。  
   
-    6.  以降のダイアログ ボックスでは、レポートを表示する形式をデザインできます。 既定の形式を使用する場合をクリックして**完了 >> &#124;**に直接移動する、**完了** ダイアログ ボックス。  
+    6.  以降のダイアログ ボックスでは、レポートを表示する形式をデザインできます。 既定の形式を使用する場合をクリックして**完了 >> &#124;** に直接移動する、**完了** ダイアログ ボックス。  
   
     7.  **ウィザードの完了**ダイアログ ボックスで、レポートの名前を指定の概要を確認し、**完了**です。 このトピックのため、レポートの名前を指定`SAPReport`です。  
   

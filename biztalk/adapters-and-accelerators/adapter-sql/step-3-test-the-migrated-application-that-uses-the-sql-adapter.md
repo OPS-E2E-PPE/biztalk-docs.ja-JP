@@ -1,14 +1,14 @@
 ---
-title: "手順 3: SQL アダプターを使用する移行されたアプリケーションのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: SQL アダプターを使用する移行されたアプリケーションのテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 929ce2f3-94ed-4e12-b629-e229769f825a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964024"
 ---
 # <a name="step-3-test-the-migrated-application-that-uses-the-sql-adapter"></a>手順 3: SQL アダプターを使用する移行されたアプリケーションをテストします。
 ![手順 3 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
  **所要時間:** 5 分  
   
- **目標:**この手順では、顧客テーブルに挿入操作を実行することによって移行済みのアプリケーションをテストします。 これを行う、vPrev を使用して生成されたスキーマに準拠した要求メッセージをドロップする[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。  
+ **目標:** この手順では、顧客テーブルに挿入操作を実行することによって移行済みのアプリケーションをテストします。 これを行う、vPrev を使用して生成されたスキーマに準拠した要求メッセージをドロップする[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。  
   
 ## <a name="prerequisites"></a>前提条件  
   

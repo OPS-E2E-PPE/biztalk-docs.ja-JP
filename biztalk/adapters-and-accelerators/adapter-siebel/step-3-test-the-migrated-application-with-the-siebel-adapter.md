@@ -1,14 +1,14 @@
 ---
-title: "手順 3: Siebel アダプターを使用して移行されたアプリケーションのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: Siebel アダプターを使用して移行されたアプリケーションのテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 651ee1b2-52da-497a-84a5-67f1436cc3e6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963104"
 ---
 # <a name="step-3-test-the-migrated-application-with-the-siebel-adapter"></a>手順 3: Siebel アダプターを使用して移行されたアプリケーションをテストします。
 ![手順 3 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
  **所要時間:** 5 分  
   
- **目標:**この手順では、アカウントのビジネス コンポーネントで挿入操作を実行することによって移行済みのアプリケーションをテストします。 これを行うには、vPrev Siebel アダプターを使用して生成されたスキーマに準拠している要求メッセージをドロップします。  
+ **目標:** この手順では、アカウントのビジネス コンポーネントで挿入操作を実行することによって移行済みのアプリケーションをテストします。 これを行うには、vPrev Siebel アダプターを使用して生成されたスキーマに準拠している要求メッセージをドロップします。  
   
 ## <a name="prerequisites"></a>前提条件  
   

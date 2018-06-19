@@ -1,14 +1,14 @@
 ---
-title: "手順 2: エコー アダプターの受信ハンドラーのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: エコー アダプターの受信ハンドラーのテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 86dede9b-6b7e-4901-9c79-b75bfee9155f
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967040"
 ---
 # <a name="step-2-test-inbound-handler-of-the-echo-adapter"></a>手順 2: エコー アダプターの受信ハンドラーをテストします。
 ![手順 2 の 2](../../adapters-and-accelerators/adapter-sql/media/step-2of2.gif "Step_2of2")  
@@ -38,13 +39,13 @@ ms.lasthandoff: 11/28/2017
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**プロジェクトの種類**|をクリックして**Visual c#**です。|  
+    |**プロジェクトの種類**|をクリックして**Visual c#** です。|  
     |**[テンプレート]**|をクリックして**コンソール アプリケーション**です。|  
     |**名前**|型**ConsumeEchoAdapter_Inbound**です。|  
     |**場所**|型**C:\Tutorials**です。|  
     |**[ソリューション名]**|型**ConsumeEchoAdapter_Inbound**です。|  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。  
   
@@ -58,11 +59,11 @@ ms.lasthandoff: 11/28/2017
   
 4.  **アダプターの構成**画面で、、**バインド プロパティ**タブでアダプターのプロパティを構成します。 注意してカスタムのカテゴリのエコー アダプター**受信**と**その他**が表示されます。 下にある、**その他**カテゴリで、をクリックして**InboundFileSystemWatcherFolder**し監視するディレクトリを入力します。  
   
-5.  をクリックして**[ok]**を閉じる、**アダプターの構成**画面およびに戻り、**アダプター サービス参照の追加**画面。  
+5.  をクリックして **[ok]** を閉じる、**アダプターの構成**画面およびに戻り、**アダプター サービス参照の追加**画面。  
   
 6.  次に、をクリックして**接続**エコー アダプタ (およびの仮定の基幹業務システムをサポートしています) に接続します。 しばらくすると、接続の状態を変更する必要があります**接続**とカテゴリ ツリー (**カテゴリを選択**) 設定する必要があります。  
   
-7.  使用可能な受信操作を表示するには、変更、**サービス コントラクト型**に**サービス (入力方向の操作)**です。  
+7.  使用可能な受信操作を表示するには、変更、**サービス コントラクト型**に**サービス (入力方向の操作)** です。  
   
 8.  分類ツリーで、をクリックして**メイン カテゴリ**です。 これには、利用可能なカテゴリと操作を 1 つの受信操作の一覧が表示されます。 カテゴリはありません。  
   

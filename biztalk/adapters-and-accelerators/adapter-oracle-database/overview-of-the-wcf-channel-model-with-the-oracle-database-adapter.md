@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964268"
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-oracle-database-adapter"></a>Oracle データベース アダプターで WCF チャネル モデルの概要
 操作の呼び出しに、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]コードが WCF クライアントとして機能し、アダプターに送信操作を送信します。 WCF チャネル モデルでは、コードは、チャネル経由で要求メッセージを送信することによって、アダプターでの操作を呼び出します。  

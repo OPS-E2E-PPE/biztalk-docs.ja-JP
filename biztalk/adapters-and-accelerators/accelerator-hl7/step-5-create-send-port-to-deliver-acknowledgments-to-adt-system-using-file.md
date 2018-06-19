@@ -1,11 +1,11 @@
 ---
-title: "手順 5: ファイル アダプタを使用して、ADT システムに受信確認を配信する送信ポートの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: ファイル アダプタを使用して、ADT システムに受信確認を配信する送信ポートの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - end-to-end tutorial, send ports
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - acknowledgements, send ports
 - send ports, creating
 ms.assetid: 565a2adf-fd86-46e3-8035-7e4748aefffc
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961840"
 ---
 # <a name="step-5-create-a-send-port-to-deliver-acknowledgments-to-the-adt-system-using-the-file-adapter"></a>手順 5: ファイル アダプタを使用して、ADT システムに受信確認を配信する送信ポートを作成します。
 この手順では、ファイル アダプターを使用して受信確認を生成する送信ポートを作成します。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**コピー先フォルダー**|参照 **\<** *ドライブ***:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンドのアクセラレータTutorial\Tutorial_sendAck_ADT**です。|  
-    |**ファイル名**|型**%MessageID%.txt** (拡張子 .txt に .xml 拡張子を置き換えます)。|  
+    |**ファイル名**|型 **%MessageID%.txt** (拡張子 .txt に .xml 拡張子を置き換えます)。|  
   
 5.  送信ポートのプロパティ] ダイアログ ボックスの**送信パイプライン**[ **BTAHL72XPipelines.BTAHL72XSendPipeline**です。  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  BTAHL7 がファイルの格納場所に、受信確認を削除、送信ポート Tutorial_sendAck_ADT の\<*ドライブ*\>: プログラム FilesMicrosoft BizTalk <version> HL7SDKEnd エンドツー エンドのアクセラレータTutorialTutorial_sendAck_ADT です。  
   
-7.  をクリックして**適用**、クリックして**[ok] です。**  
+7.  をクリックして**適用**、クリックして **[ok] です。**  
   
 8.  管理コンソールで、をクリックして**送信ポート**を右クリックして**Tutorial_sendAck_ADT**、クリックして**開始**です。  
   

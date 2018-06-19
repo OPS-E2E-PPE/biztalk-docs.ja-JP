@@ -1,11 +1,11 @@
 ---
-title: "グループおよびサービス アカウントのアクセス制御 |Microsoft ドキュメント"
-ms.custom: 
+title: グループおよびサービス アカウントのアクセス制御 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - access control, service accounts
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - groups, access control
 - groups, security
 ms.assetid: 411a7bfa-6675-4d09-9e37-83e2941df3c6
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967032"
 ---
 # <a name="access-control-for-groups-and-service-accounts"></a>グループおよびサービス アカウントのアクセス制御
 BizTalk ホスト インスタンスは、ユーザーが作成したサービス アカウントで実行されます。 コンピュータにホスト インスタンスを作成するときには、サービス アカウントとパスワードを指定する必要があります。 その後、BizTalk Server では、これらのサービス アカウントがローカルまたはドメインの Windows グループに追加され、次に、そのホストに固有の SQL Server データベース ロールに追加されます。これで、ジョブの実行に必要な最小限のユーザー権限がアカウントに許可されます。  

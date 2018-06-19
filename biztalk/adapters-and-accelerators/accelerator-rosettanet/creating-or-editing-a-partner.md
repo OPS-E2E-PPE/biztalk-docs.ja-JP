@@ -1,11 +1,11 @@
 ---
-title: "作成または編集パートナー |Microsoft ドキュメント"
-ms.custom: 
+title: 作成または編集パートナー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, trading partners
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - trading partners, modifying
 - trading partners, about trading partners
 ms.assetid: 63809035-65a5-472d-b2e5-359c8e9d9d8c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966664"
 ---
 # <a name="creating-or-editing-a-partner"></a>作成またはパートナーを編集します。
 ここでは、パートナーの作成方法または編集方法について説明します。 パートナー構成では、パートナーの説明と分類、発信元の否認不可期間の設定、パートナーに対する証明書の構成、および連絡先情報の提供を行います。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  **新しいパートナーのプロパティ** ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブで、設定値を入力します。 これらの設定の詳細については、上の表を参照してください。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ### <a name="to-edit-a-partner"></a>パートナーを編集するには  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 11/28/2017
   
 4.   **\<** *パートナー*  **\>** プロパティ ダイアログ ボックスで、**全般**と**連絡先のプロパティ**タブは必要に応じて設定を変更します。 これらの設定の詳細については、上の表を参照してください。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [構成、証明書、データベース、およびセキュリティを管理します。](manage-configuration-certificates-databases-security.md)   

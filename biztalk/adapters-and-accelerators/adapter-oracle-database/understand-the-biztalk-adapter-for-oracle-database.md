@@ -1,11 +1,11 @@
 ---
-title: "Oracle データベースの BizTalk アダプターを理解する |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベースの BizTalk アダプターを理解する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF LOB Adapter SDK
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - adapter features
 - channel model
 ms.assetid: a8691957-0430-4cba-83f8-b60c21a86849
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961176"
 ---
 # <a name="understand-the-biztalk-adapter-for-oracle-database"></a>Oracle データベースの BizTalk アダプターを理解します。
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]外部システムと対話するためにサービス指向のプログラムによるアクセスを有効にします。 アダプターでは、次の利点をクライアントに使用します。  

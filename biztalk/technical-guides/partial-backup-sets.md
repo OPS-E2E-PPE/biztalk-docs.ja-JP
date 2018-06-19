@@ -1,14 +1,14 @@
 ---
-title: "バックアップ セットの一部 |Microsoft ドキュメント"
-ms.custom: 
+title: バックアップ セットの一部 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7b9f15c0-4d31-4322-ac0a-8efdeed6f71e
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298162"
 ---
 # <a name="partial-backup-sets"></a>バックアップ セットの一部
 ソース システム上のデータベースのバックアップ時にバックアップ セットの一部になる問題が発生する可能性があります。 これが発生すると、Master.dbo.bts_LogShippingHistory テーブルが含まで 0、 **SetComplete**セット内のすべてのレコードの列です。  

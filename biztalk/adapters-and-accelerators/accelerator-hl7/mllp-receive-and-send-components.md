@@ -1,11 +1,11 @@
 ---
-title: "MLLP の受信し、送信コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: MLLP の受信し、送信コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send components
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - wrappers [MLLP adapters]
 - receive components
 ms.assetid: 2f1c4099-8f52-437a-bdc1-efe707fbf347
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961086"
 ---
 # <a name="mllp-receive-and-send-components"></a>MLLP の受信し、送信コンポーネント
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) すべてサポート[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ネイティブ アダプターの種類、ファイル、HTTP、SQL では、FTP などです。 HL7 でエンコードされたメッセージの受信と送信、ただし、通常使用する MLLP アダプター。 このアダプターは、最小下位層プロトコル (MLLP) を使用する TCP/IP ソケット アダプターです。 このプロトコルは、双方向メッセージのサポートおよびエンド ツー エンドの医療アプリケーション統合を提供します。  

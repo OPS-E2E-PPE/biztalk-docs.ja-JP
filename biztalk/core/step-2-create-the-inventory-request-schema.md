@@ -1,14 +1,14 @@
 ---
-title: "手順 2: 在庫要求スキーマの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: 在庫要求スキーマの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0fa9ad9f-b815-4baf-8299-556869b8dde7
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014289"
 ---
 # <a name="step-2-create-the-inventory-request-schema"></a>ステップ 2: 在庫要求スキーマの作成
 ![手順 5 の 2](../core/media/step-2of5.gif "Step_2of5")  
   
  **所要時間:** 7 分  
   
- **目標:**このステップでは、在庫補充メッセージのスキーマを定義します。  倉庫システムでは在庫の補充を要求するためにこのメッセージを送信します。  これはこのプロジェクトに対して作成する必要のある 2 つのスキーマのうちの 1 つです。  
+ **目標:** このステップでは、在庫補充メッセージのスキーマを定義します。  倉庫システムでは在庫の補充を要求するためにこのメッセージを送信します。  これはこのプロジェクトに対して作成する必要のある 2 つのスキーマのうちの 1 つです。  
   
  **目的:** XML は、構造体だけでなくおよび標準化されたマークアップ コードを使用して情報を識別しますが、スキーマを使用する機能も備えています。 スキーマとは、辞書のように機能し、他の XML ドキュメントによって参照として使用される XML ドキュメントです。 スキーマ コードは、XML 要素のスペルおよびこれらの要素で囲まれるデータの種類を定義します。 スキーマを使用することにより、プログラムでは XML ドキュメントを簡単に処理することができ、情報の構造と種類が正しいことを保証できます。  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/07/2017
     |**インストールされたテンプレート**|をクリックして**スキーマ ファイル**をクリックし、**スキーマ**です。|  
     |**名前**|型**Request.xsd**です。|  
   
-3.  **[追加]**をクリックします。 スキーマ ツリーと XSD ペインが表示されます。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のこの領域を、BizTalk エディターといいます。 また、ソリューション エクスプローラーでは、EAISchemas プロジェクトの下に新しいスキーマが表示されます。  
+3.  **[追加]** をクリックします。 スキーマ ツリーと XSD ペインが表示されます。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のこの領域を、BizTalk エディターといいます。 また、ソリューション エクスプローラーでは、EAISchemas プロジェクトの下に新しいスキーマが表示されます。  
   
      ![BizTalk プロジェクトのさまざまな部分](../core/media/differentpartsofbiztalkserver.gif "DifferentpartsofBizTalkServer")  
   
@@ -123,7 +124,7 @@ ms.lasthandoff: 11/07/2017
   
 2.  をクリックして**OK**プロパティ スキーマを追加することを確認します。  
   
-3.  **[ファイル]** メニューの **[すべてを保存]**をクリックします。  
+3.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
 ## <a name="what-did-i-just-do"></a>でしただけは何ですか。  
  このステップでは、倉庫の在庫補充メッセージのスキーマを定義しました。  

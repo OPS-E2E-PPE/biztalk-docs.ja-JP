@@ -1,17 +1,17 @@
 ---
-title: "Oracle データベース アダプターのパフォーマンスに関するトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターのパフォーマンスに関するトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance issues, troubleshooting
 - troubleshooting, performance issues
 ms.assetid: 2035cd2e-ce87-419b-aada-61d257671623
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962352"
 ---
 # <a name="troubleshoot-performance-issues-with-the-oracle-database-adapter"></a>Oracle データベース アダプターのパフォーマンスに関するをトラブルシューティングします。
 このセクションで説明を使用する場合に発生する可能性があるパフォーマンスの問題を解決するのには、トラブルシューティングの手法を使用して[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]です。  

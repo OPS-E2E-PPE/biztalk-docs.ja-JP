@@ -10,7 +10,7 @@ ms.topic: article
 helpviewer_keywords:
 - end-to-end tutorial, verifying solution
 ms.assetid: 24b74ba6-e303-4ab1-8a93-25a430e4894d
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25961592"
 ---
 # <a name="step-10-verify-the-end-to-end-scenario"></a>手順 10: エンド ツー エンド シナリオを確認してください。
 この手順では、このチュートリアルでは、エンド ツー エンド シナリオを確認します。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 03/28/2018
     > [!NOTE]
     >  次の手順では、メッセージを送信します。  
   
-6.  コマンド プロンプト ウィンドウで次のように入力します**mllpsend/SB 11/EB 28/CR 13/f"\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\ のアクセラレータ。エンド ツー エンド Tutorial\ADT ^ A03.txt"**ここで、 \<*ドライブ*\>は、インストール ドライブ文字です。 **Enter**キーを押します。  
+6.  コマンド プロンプト ウィンドウで次のように入力します**mllpsend/SB 11/EB 28/CR 13/f"\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\ のアクセラレータ。エンド ツー エンド Tutorial\ADT ^ A03.txt"** ここで、 \<*ドライブ*\>は、インストール ドライブ文字です。 **Enter**キーを押します。  
   
 7.  次の結果があることを確認します。  
   

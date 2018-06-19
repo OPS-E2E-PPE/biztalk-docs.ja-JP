@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して Oracle データベースでの複合操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して Oracle データベースでの複合操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bf47d95e-cdf1-4c9b-a15a-7cf123d0ea6d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962664"
 ---
 # <a name="run-composite-operations-on-oracle-database-using-biztalk-server"></a>BizTalk Server を使用して Oracle データベースでの複合操作を実行します。
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]アダプター クライアントが Oracle データベースでの複合操作を実行できるようにします。 複合操作を含めることができます。  
@@ -78,13 +79,13 @@ ms.lasthandoff: 11/28/2017
   
     1.  ルートを右クリックして**\<スキーマ\>** CompositeSchema.xsd、およびクリック ノード**プロパティ**です。  
   
-    2.  **プロパティ**ボックスで、省略記号ボタンをクリックして**([...])**に対して、 **Imports**プロパティです。  
+    2.  **プロパティ**ボックスで、省略記号ボタンをクリックして **([...])** に対して、 **Imports**プロパティです。  
   
          ![スキーマ定義をインポート](../../adapters-and-accelerators/adapter-oracle-database/media/d084d0f0-60b5-4ae8-9e80-7ed2c9e3ecca.gif "d084d0f0-60b5-4ae8-9e80-7ed2c9e3ecca")  
   
     3.  **Imports** ] ダイアログ ボックスから、**として新しいスキーマのインポート**一覧で、[ **XSD のインポート**、順にクリック**追加**です。  
   
-    4.  **BizTalk 型の選択** ダイアログ ボックスで、BizTalk プロジェクト名 ノードを展開し、展開**スキーマ**、し、インポートするスキーマを選択します。 この例では、< BizTalk_project_name > を選択します。OracleDBBinding.xsd です。 **[OK]**をクリックします。  
+    4.  **BizTalk 型の選択** ダイアログ ボックスで、BizTalk プロジェクト名 ノードを展開し、展開**スキーマ**、し、インポートするスキーマを選択します。 この例では、< BizTalk_project_name > を選択します。OracleDBBinding.xsd です。 **[OK]** をクリックします。  
   
          < BizTalk_project_name > をインポートするには、この手順を繰り返します。OracleDBBinding2.xsd すぎます。  
   
@@ -95,9 +96,9 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  既定では、**ルート**ノードが新しいスキーマ ファイルにも追加します。 名前を変更することができます、**ルート**ノード**要求**です。 ノードの名前を変更するノード名を右クリックし、をクリックして**の名前を変更**です。  
   
-     下のノードを追加する、 **\<スキーマ\>**ノード。  
+     下のノードを追加する、 **\<スキーマ\>** ノード。  
   
-    1.  右クリックし、 **\<スキーマ\>**に**スキーマ ノードの挿入**、 をクリック**子レコード**です。  
+    1.  右クリックし、 **\<スキーマ\>** に**スキーマ ノードの挿入**、 をクリック**子レコード**です。  
   
     2.  新しいノードの名前を**RequestResponse**です。  
   
@@ -118,7 +119,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  複合操作の一部として実行する操作の要求スキーマに対応するレコードの名前を変更します。 たとえば、"Insert"するノードの名前を変更します。  
   
-    3.  マップ、**挿入**ACCOUNTACTIVITY テーブルに対する挿入操作の要求スキーマのノードです。 これを行うを右クリックし、**挿入** ノードをクリック**プロパティ**です。 **プロパティ**] ボックスから、 **Data Structure Type**一覧で、[**挿入 (参照)**です。  
+    3.  マップ、**挿入**ACCOUNTACTIVITY テーブルに対する挿入操作の要求スキーマのノードです。 これを行うを右クリックし、**挿入** ノードをクリック**プロパティ**です。 **プロパティ**] ボックスから、 **Data Structure Type**一覧で、[**挿入 (参照)** です。  
   
          ![要求スキーマに子ノードをマップ](../../adapters-and-accelerators/adapter-oracle-database/media/b4ebd3c7-14e5-4c37-abd7-83f0b4db4c9e.gif "b4ebd3c7-14e5-4c37-abd7-83f0b4db4c9e")  
   
@@ -144,7 +145,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  複合操作の一部として実行する操作の応答スキーマに対応するレコードの名前を変更します。 たとえば、"InsertResponse"するノードの名前を変更します。  
   
-    3.  マップ、 **InsertResponse** ACCOUNTACTIVITY テーブルに対する挿入操作用の応答スキーマにノードです。 これを行うを右クリックし、 **InsertResponse**ノード、およびクリック**プロパティ**です。 **プロパティ**] ボックスから、 **Data Structure Type**一覧で、[ **InsertResponse (参照)**です。  
+    3.  マップ、 **InsertResponse** ACCOUNTACTIVITY テーブルに対する挿入操作用の応答スキーマにノードです。 これを行うを右クリックし、 **InsertResponse**ノード、およびクリック**プロパティ**です。 **プロパティ**] ボックスから、 **Data Structure Type**一覧で、[ **InsertResponse (参照)** です。  
   
     4.  GET_ALL_ACTIVITY ストアド プロシージャおよび削除操作の応答スキーマのノードを追加する手順を繰り返します。 ノード名を指定し、次の表で説明したように、対応するスキーマにマップします。  
   

@@ -1,18 +1,18 @@
 ---
-title: "アダプター ハンドラーを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター ハンドラーを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, handlers [adapters]
 - handlers [adapters], creating
 - adapters, handlers
 ms.assetid: 09569417-dce6-473d-891f-6fd12347bcf0
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969864"
 ---
 # <a name="how-to-create-an-adapter-handler"></a>アダプター ハンドラーを作成する方法
 BizTalk Server 管理コンソールを使用して、送信または受信のアダプター ハンドラーを作成できます。  
@@ -38,7 +39,7 @@ BizTalk Server 管理コンソールを使用して、送信または受信の�
   
 4.  アダプターの送信ハンドラーを作成する場合は、するオプションを選択**しやすいように、既定のハンドラー**このアダプターの既定の送信ハンドラーであるこの必要なかどうかです。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [アダプター ハンドラーの作成と削除](../core/creating-and-deleting-adapter-handlers.md)

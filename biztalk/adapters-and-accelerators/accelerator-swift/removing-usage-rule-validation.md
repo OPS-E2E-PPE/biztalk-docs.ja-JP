@@ -1,17 +1,17 @@
 ---
-title: "使用量ルールの検証を削除する |Microsoft ドキュメント"
-ms.custom: 
+title: 使用量ルールの検証を削除する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, deleting rules
 - rules
 ms.assetid: b2b0dabf-8f99-4b85-95da-6bbf3e79ad41
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962120"
 ---
 # <a name="removing-usage-rule-validation"></a>使用量ルールの検証を削除します。
 使用に関する規則は SWIFT 標準で定義され、によって強制[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]メッセージの種類ごとに固有のビジネス ポリシー。 これらの使用に関する規則は、使用できるフィールドの追加の検証を提供するガイドラインを示します。 ネットワーク検証ルールは、必須とは異なり、メッセージ型の使用状況規則を必要とならないを選択できます。 場合がある場合は、次のいずれかの操作を行います。  

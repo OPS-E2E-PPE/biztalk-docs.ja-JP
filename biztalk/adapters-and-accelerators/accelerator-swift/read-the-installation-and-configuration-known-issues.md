@@ -1,14 +1,14 @@
 ---
-title: "インストールと構成の既知の問題を読み取る |Microsoft ドキュメント"
-ms.custom: 
+title: インストールと構成の既知の問題を読み取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c58d9dcb-7835-4181-a6cb-203c5d138e6a
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,11 +17,12 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962008"
 ---
 # <a name="read-the-installation-and-configuration-known-issues"></a>インストールと構成の既知の問題を読み取る
   
 ## <a name="installing-over-terminal-server-creates-log-files-in-a-different-folder"></a>別のフォルダーにログ ファイルを作成するターミナル サーバー経由でインストールします。  
- A4SWIFT セットアップ プログラムによって作成、セットアップと構成ログ ファイルで、ターミナル サーバー接続を介して A4SWIFT をインストールするときに、 *\<ドライブ\>*: \Documents and 設定\\*\<ユーザー名\>*\Local Settings」フォルダーです。 通常、セットアップ プログラムがでこれらのファイルを作成、 *\<ドライブ\>*: \Documents and 設定\\*\<ユーザー名\>*\LocalSettings\temp フォルダーです。 コンピューターを設定し、適切に構成されていることを確認するこれらのログ ファイルを確認することができます。  
+ A4SWIFT セットアップ プログラムによって作成、セットアップと構成ログ ファイルで、ターミナル サーバー接続を介して A4SWIFT をインストールするときに、 *\<ドライブ\>*: \Documents and 設定\\*\<ユーザー名\>* \Local Settings」フォルダーです。 通常、セットアップ プログラムがでこれらのファイルを作成、 *\<ドライブ\>*: \Documents and 設定\\*\<ユーザー名\>* \LocalSettings\temp フォルダーです。 コンピューターを設定し、適切に構成されていることを確認するこれらのログ ファイルを確認することができます。  
   
 ## <a name="silent-installation-is-not-recommended"></a>サイレント インストールはお勧めしません  
  サイレント インストールでは、A4SWIFT セットアップ プログラムがサポートされますが、必要な追加の構成手順の複雑であるためお勧めできません。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965264"
 ---
 # <a name="step-5-creating-the-fabrikam-3a2-trading-partner-agreement"></a>手順 5: Fabrikam 3 a 2 取引先アグリーメントの作成
 ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールを使用して、Contoso と Fabrikam の間の取引先アグリーメントを作成します。 3A2 PIP (Partner Interface Process) のための新しい取引先アグリーメントを作成します。  
@@ -39,8 +40,8 @@ ms.lasthandoff: 11/28/2017
     |**プロセスの構成**|選択**STD_3A2_R02.00.00A**ドロップダウン リストからです。|  
     |**自分の所属組織**|選択**Fabrikam**ドロップダウン リストからです。|  
     |**パートナー組織**|選択**Contoso**ドロップダウン リストからです。|  
-    |**RNIF のバージョン**|選択**[v02.00.01]**ドロップダウン リストからです。|  
-    |**ホーム ロール**|選択**Customer (開始側)**ドロップダウン リストからです。|  
+    |**RNIF のバージョン**|選択 **[v02.00.01]** ドロップダウン リストからです。|  
+    |**ホーム ロール**|選択**Customer (開始側)** ドロップダウン リストからです。|  
     |**使用方法**|選択**テスト**ドロップダウン リストからです。|  
   
 3.  クリックして、**ポート**タブをクリックし、次の操作します。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 11/28/2017
     |**シグナル URL**|型**https://<contoso_machine>/BTARNApp/RNIFReceive.aspx**です。|  
     |**同期 URL**|型**https://<contoso_machine>/BTARNApp/RNIFReceive.aspx**です。|  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  右クリックし、 **Fabrikam_To_Contoso_3A2**アグリーメントをクリックして**Activate**です。  
   

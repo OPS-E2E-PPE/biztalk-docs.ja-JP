@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965600"
 ---
 # <a name="a4swift-cleanup-tool"></a>A4SWIFT クリーンアップ ツール
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]クリーンアップ ツールを持つサーバーを準備することができます、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]の新規インストール用にインストールされている[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]です。 ツールは、契約、部門、およびビジネス ルール エンジン (BRE) ポリシーなど、A4SWIFT の成果物を削除し、アセンブリの展開を解除します。 ツールを実行して、A4SWIFT の多くのアイテムを手動で削除されないようにすることができます、展開解除が参照されるアセンブリを他のアセンブリからの問題が解決します。  

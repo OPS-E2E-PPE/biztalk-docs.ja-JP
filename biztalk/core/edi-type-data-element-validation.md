@@ -1,14 +1,14 @@
 ---
-title: "EDI の種類 (データ要素) の検証 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI の種類 (データ要素) の検証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cd53685f-a49c-41c8-813e-29700fc0b62b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969560"
 ---
 # <a name="edi-type-data-element-validation"></a>EDI の種類 (データ要素) の検証
 EDI 受信パイプラインと EDI 送信パイプラインは、トランザクション セット データ要素に対して EDI 検証を実行します。 この検証は上から、またはそのパーティとのアグリーメントのプロパティを通じて、特定のパーティにすべてのメッセージ用に構成された、**検証**ページ (下にある、**トランザクション セットの設定**x12 のいずれかのセクションまたは EDIFACT アグリーメント) で変更します。 場合、 **EDI 型の検証**でプロパティが選択されていない、**検証**ページで、データをこのトピックで説明した検証は実行されません。  

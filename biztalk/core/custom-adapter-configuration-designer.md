@@ -1,14 +1,14 @@
 ---
-title: "カスタム アダプター構成デザイナー |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム アダプター構成デザイナー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d9b231c3-3948-4db8-b4f0-d9c21c31b168
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970376"
 ---
 # <a name="custom-adapter-configuration-designer"></a>カスタム アダプター構成デザイナー
 .NET クラス ライブラリには、カスタム デザイナーを構築する必要があります。 カスタム デザイナーは、アダプターの DLL に組み込むことも、個別の DLL として構築することもできます。 デザイナー アセンブリを構築した後は、説明やカテゴリと同様に、装飾を介して参照する必要があります。 参照は、使用するアセンブリの指定、および完全修飾されたクラス名の指定によって実行します。  

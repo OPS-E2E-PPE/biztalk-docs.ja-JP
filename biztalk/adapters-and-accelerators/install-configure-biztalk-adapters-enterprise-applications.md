@@ -16,6 +16,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "23450531"
 ---
 # <a name="install-and-configure-the-microsoft-biztalk-adapters-for-enterprise-applications"></a>インストールし、エンタープライズ アプリケーション用の Microsoft BizTalk Adapters の構成 
   
@@ -344,7 +345,7 @@ JD Edwards OneWorld の BizTalk アダプターを使用するには、BTSREL �
 -   D5500900K - 日付 2 のテスト  
   
 #### <a name="customize-the-jdeinteropini-file"></a>Jdeinterop.ini ファイルをカスタマイズします。  
- Connector.jar および Kernel.jar で JD Edwards OneWorld XE コネクタ クラスでは、jdeinterop.ini 構成ファイルを使用することが必要です。 このファイルは、JD Edwards OneWorld ソフトウェアで定義されており、その用語を使用します。 JD Edwards Interoperability Guide Release OneWorld には、目的と用語のこのファイルの詳細についてを説明可能性があります。 サンプルの jdeinterop.ini ファイルがある*< Adapter_Installation > \config\jde*です。  
+ Connector.jar および Kernel.jar で JD Edwards OneWorld XE コネクタ クラスでは、jdeinterop.ini 構成ファイルを使用することが必要です。 このファイルは、JD Edwards OneWorld ソフトウェアで定義されており、その用語を使用します。 JD Edwards Interoperability Guide Release OneWorld には、目的と用語のこのファイルの詳細についてを説明可能性があります。 サンプルの jdeinterop.ini ファイルがある *< Adapter_Installation > \config\jde*です。  
   
 定義されているパラメーター値に一致する jdeinterop.ini の更新、**トランスポートのプロパティ**画面。 複数の JD Edwards OneWorld 論理システムで、それらのパラメーターに互換性がある場合は、同じ jdeinterop.ini ファイルを共有できます。 一般に、2 つの論理システムは、次の 2 つの異なる JD Edwards OneWorld コンピューター をポイントして、jdeinterop.ini の 2 つの異なるコピーが必要です。  
   
@@ -402,7 +403,7 @@ JD Edwards OneWorld の BizTalk アダプターを使用するには、BTSREL �
 ### <a name="understand-jdeinteropini"></a>Jdeinterop.ini を理解します。  
  Connector.jar および Kernel.jar で JD Edwards EnterpriseOne コネクタ クラスでは、jdeinterop.ini という名前の構成ファイルを使用することが必要です。 このファイルは、JD Edwards EnterpriseOne ソフトウェアによって定義され、その用語を使用します。 目的と用語のこのファイルの詳細については、JD Edwards の相互運用性ガイドを参照してください。 サンプルの jdeinterop.ini ファイルがある: Program files \ の Microsoft BizTalk Adapters for Enterprise applications \ j. d. Edwards EnterpriseOne(r)\config.  
   
- やり取りするために手動でこのファイルを編集することはお勧めできません、**トランスポートのプロパティ**--としてマークされたフィールドなどの送信ポートのダイアログ ボックス**< BizTalk によって構成された\>**.  
+ やり取りするために手動でこのファイルを編集することはお勧めできません、**トランスポートのプロパティ**--としてマークされたフィールドなどの送信ポートのダイアログ ボックス **< BizTalk によって構成された\>**.  
   
 ## <a name="peoplesoft-enterprise"></a>PeopleSoft Enterprise  
 このセクションには、キー使用の詳細について、Microsoft BizTalk Adapter for PeopleSoft Enterprise を BizTalk Server が含まれています。
@@ -501,7 +502,7 @@ and bc2.BCTYPE in (1, 2))
   
 4.  **新規** ダイアログ ボックスで、 **コンポーネント インターフェイス**, 、 をクリックし、 **OK**します。  
   
-5.  **[選択]**をクリックします。  
+5.  **[選択]** をクリックします。  
   
 6.  すべてのコンポーネントの一覧で、任意の単純なコンポーネントを選択します。 たとえば、INSTALLATION_RS または作成した新しい PeopleSoft コンポーネントを選択します。  
   
@@ -557,7 +558,7 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
   
 1.  開始、 **PeopleSoft アプリケーション デザイナ**です。  
   
-2.  **ファイル**] メニューのをポイント**開く**、し、[**定義コンポーネント インターフェイスを =**です。  
+2.  **ファイル**] メニューのをポイント**開く**、し、[**定義コンポーネント インターフェイスを =** です。  
   
 3.  コンポーネント インターフェイスのリストから選択**GET_CI_INFO CI**です。  
   
@@ -639,7 +640,7 @@ BizTalk Server にアダプターを追加するには、このトピック内�
   
 * アダプターに固有のファイルがインストールされている*Program Files*と*Program files \common Files*です。  
   
-* `sdk\`がインストールされている*Enterprise applications \ j. d. の Program files \microsoft BizTalk AdaptersEdwards OneWorld(r)*です。
+* `sdk\`がインストールされている*Enterprise applications \ j. d. の Program files \microsoft BizTalk AdaptersEdwards OneWorld(r)* です。
   
 * * Program エンタープライズ Applications\JD Edwards OneWorld(r) for files \microsoft BizTalk Adapters\*次のファイルが含まれています。  
   
@@ -846,20 +847,20 @@ C:\TIBCO\TIBRV\BIN > gacutil /i TIBCO.Rendezvous.dll
   
  Windows イベント トレーシングには 3 つのコンポーネントがあります。  
   
-* **コント ローラー アプリケーション:**にアクティブとプロバイダーを非アクティブ化します。 たとえば、tracelog.exe または logman.exe です。  
+* **コント ローラー アプリケーション:** にアクティブとプロバイダーを非アクティブ化します。 たとえば、tracelog.exe または logman.exe です。  
   
     PATH 環境変数を、tracelog.exe の場所を指すように設定します。 これにより、その BTA < アダプター名\>Trace の呼び出しは、システムの tracelog.exe を見つけることができます。 既定では、BTA < Adapter 名前\>トレースは、現在のパスを検索します。  
   
     > [!NOTE]
     >  tracelog.exe は Microsoft SDK おり、Microsoft BizTalk Adapters for Enterprise Applications コマンドと互換性があります。 logman.exe の使い方については、logman のマニュアルを参照してください。  
   
-* **コンシューマー アプリケーション:**記録されたイベントの読み取り。  
+* **コンシューマー アプリケーション:** 記録されたイベントの読み取り。  
   
     コンシューマー アプリケーションで .etl ファイル内のイベントを読み取るには、Windows イベント トレーシングでそれらのイベントを .etl ファイルにダンプする必要があります。 通常、この作業は、コントローラーがトレーシングを非アクティブ化するときに行われます。  
   
     コンシューマー アプリケーションを使用して、トレースを非アクティブにせず、リアルタイムのオプションを使用してトレースで、コント ローラーによってアクティブ化する必要があります **< リアルタイム\> =-rt**します。  
   
-* **プロバイダー:**イベントを提供するために使用します。  
+* **プロバイダー:** イベントを提供するために使用します。  
   
     各アダプターには、5 つの異なるプロバイダーが含まれています。 これらは Windows Management Instrumentation (WMI) に登録されます。 root\WMI\EventTrace パス内で登録プロバイダーを検索するには、WMI CIM Studio などのツールを使用します。  
   
@@ -894,15 +895,15 @@ BTA<Adapter Name>Trace <Trace element> -stop
   
  **管理**  
   
- **-開始、停止:**アクティブ化またはプロバイダーを非アクティブ化します。  
+ **-開始、停止:** アクティブ化またはプロバイダーを非アクティブ化します。  
   
- **-cir < MB\>:**サイズおよびファイルの種類。 **-cir** は循環ファイルです。 **< MB\>:**サイズ (メガバイト単位)。  
+ **-cir < MB\>:** サイズおよびファイルの種類。 **-cir** は循環ファイルです。 **< MB\>:** サイズ (メガバイト単位)。  
   
- **-seq < MB\>:**サイズおよびファイルの種類。 **-seq** シーケンシャル ファイルです。 **< MB\>:**サイズ (メガバイト単位)。  
+ **-seq < MB\>:** サイズおよびファイルの種類。 **-seq** シーケンシャル ファイルです。 **< MB\>:** サイズ (メガバイト単位)。  
   
- **-rt:**でリアルタイムに設定します。  
+ **-rt:** でリアルタイムに設定します。  
   
- **ログ ファイル:**ログ ファイルの名前 (既定では c:\rtlog.etl) です。  
+ **ログ ファイル:** ログ ファイルの名前 (既定では c:\rtlog.etl) です。  
   
  以下に例を示します。  
   

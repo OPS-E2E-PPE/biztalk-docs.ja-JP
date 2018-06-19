@@ -1,14 +1,14 @@
 ---
-title: "MSCIT: サプライ チェーン発注の Microsoft Azure BizTalk サービスを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: 'MSCIT: サプライ チェーン発注の Microsoft Azure BizTalk サービスを使用して |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 22091261-cd17-45b2-8746-dc174b52dcff
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299218"
 ---
 # <a name="mscit-using-microsoft-azure-biztalk-services-for-supply-chain-orders"></a>サプライ チェーン発注の Microsoft Azure BizTalk サービスを使用して MSCIT:
 **Microsoft デバイス & スタジオ: サプライ チェーン発注の Microsoft Azure BizTalk サービスを使用します。**  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
  **適用対象:** Microsoft Azure BizTalk サービス (MABS) と BizTalk Server 2013  
   
- **概要:**製造、サプライ チェーンおよび情報サービス (MSCIS) グループは、Microsoft のグローバル サプライ チェーン マネジメント グループ。 毎年、Microsoft では、新しい製品を起動します。 MSCIS はこれらの新しい製品を市場に持参します。 これらの製品をサポートするために、新しいパートナーは、サプライ チェーン供給業者、製造元、ディストリビューター、小売業者、Service Center、通信事業者、およびなどを含むに追加されます。  
+ **概要:** 製造、サプライ チェーンおよび情報サービス (MSCIS) グループは、Microsoft のグローバル サプライ チェーン マネジメント グループ。 毎年、Microsoft では、新しい製品を起動します。 MSCIS はこれらの新しい製品を市場に持参します。 これらの製品をサポートするために、新しいパートナーは、サプライ チェーン供給業者、製造元、ディストリビューター、小売業者、Service Center、通信事業者、およびなどを含むに追加されます。  
   
  パートナーのトランザクションの数は毎年増加します。 高の読み込み中、スループットに関連する問題があります。 指定のチェーン BizTalk ハブより多くのトランザクション (増加したボリューム) を処理するときに、エンド システムまたはパートナーのシステム継続できるようにします。  
   

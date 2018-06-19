@@ -1,14 +1,14 @@
 ---
-title: "アダプター ストア アンド フォワードの対話 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター ストア アンド フォワードの対話 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d596780a-085d-48db-be44-a3ae58f591d0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963208"
 ---
 # <a name="interact-adapter-store-and-forward"></a>アダプター ストア アンド フォワードを対話します。
 ストアにし、順方向 (SnF) モードでは、メッセージは送信時にキューに配信され、変換先にキューから取得されます。 SnF を使用する場合、応答は SWIFTNet SnF 自体から取得し、応答側からフィードバックが含まれていません。  

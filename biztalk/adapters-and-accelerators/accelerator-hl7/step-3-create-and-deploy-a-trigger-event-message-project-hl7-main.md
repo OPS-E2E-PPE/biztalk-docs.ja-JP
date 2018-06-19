@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961464"
 ---
 # <a name="step-3-create-and-deploy-a-trigger-event-message-projecthl7main"></a>手順 3: を作成し、トリガー イベント (メッセージ) Project_hl7_main の展開
 この手順では、トリガー イベント メッセージで使用されるスキーマを作成します。 たとえば、受付放電して転送システム (ADT) をメッセージを送信病院情報システム (HIS) にします。 このスキーマを使用するには、メッセージの形式を定義します。  

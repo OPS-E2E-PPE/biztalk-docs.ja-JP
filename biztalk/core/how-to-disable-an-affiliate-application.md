@@ -12,7 +12,7 @@ helpviewer_keywords:
 - managing [SSO applications], disabling
 - applications [SSO], disabling
 ms.assetid: febf1687-f0d0-4f87-b462-23535bbddf6d
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25969488"
 ---
 # <a name="how-to-disable-an-affiliate-application"></a>関連アプリケーションを無効にする方法
 MMC スナップインまたはコマンド ラインを使用して、指定した関連アプリケーションを無効にすることができます。  
@@ -39,7 +40,7 @@ MMC スナップインまたはコマンド ラインを使用して、指定し
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型 **ssomanage – disableapp *\<アプリケーション名\>* * *、どこで\<*アプリケーション名*\>関連アプリケーションの名前を指定します。無効にします。  
+3.  型 **ssomanage – disableapp *\<アプリケーション名\>* * *、どこで\<* アプリケーション名*\>関連アプリケーションの名前を指定します。無効にします。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

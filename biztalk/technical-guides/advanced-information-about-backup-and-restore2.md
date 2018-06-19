@@ -1,14 +1,14 @@
 ---
-title: "バックアップおよび Restore2 に関する詳細情報 |Microsoft ドキュメント"
-ms.custom: 
+title: バックアップおよび Restore2 に関する詳細情報 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa6a3527-4889-40ae-aacb-b8ea75be0329
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295546"
 ---
 # <a name="advanced-information-about-backup-and-restore"></a>バックアップおよび復元に関する詳細情報
 ここに挙げたトピックが、バックアップを記述し、さらに復元プロセスの詳細およびの確実な理解と高度なユーザーが使用するものでは[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  

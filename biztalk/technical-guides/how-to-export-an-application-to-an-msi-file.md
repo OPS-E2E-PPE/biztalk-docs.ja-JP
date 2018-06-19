@@ -1,14 +1,14 @@
 ---
-title: "アプリケーションを .msi ファイルにエクスポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションを .msi ファイルにエクスポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b7179e86-aa55-426b-a0db-19229ca5625a
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297770"
 ---
 # <a name="how-to-export-an-application-to-an-msi-file"></a>アプリケーションを .msi ファイルにエクスポートする方法
 MSI ファイルのエクスポート ウィザードまたは BTSTask を使用すると、アプリケーションのアイテムを使用する新しい BizTalk グループにアプリケーションをインポートするのに .msi ファイルにエクスポートします。 このプロセスでは、それを実行するコンピューターでアプリケーションもインストールされます。  

@@ -1,14 +1,14 @@
 ---
-title: "手順 7: エコー アダプターの同期送信ハンドラーを実装する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 7: エコー アダプターの同期送信ハンドラーを実装する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4da4d987-03c4-4817-850b-4c5ca2ba7e62
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967736"
 ---
 # <a name="step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter"></a>手順 7: エコー アダプターの同期送信ハンドラーを実装します。
 ![手順 9 の 7](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-7of9.gif "Step_7of9")  
@@ -275,7 +276,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
   
 7.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。  
   
-8.  **[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。 これは、エラーなしでコンパイルする必要があります。 以外の場合は、上記のすべてのステップに従っていることを確認します。 ここで、安全に Visual Studio を終了したりに進む[手順 8: エコー アダプターの同期受信ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)です。  
+8.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。 これは、エラーなしでコンパイルする必要があります。 以外の場合は、上記のすべてのステップに従っていることを確認します。 ここで、安全に Visual Studio を終了したりに進む[手順 8: エコー アダプターの同期受信ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)です。  
   
 ## <a name="what-did-i-just-do"></a>でしただけは何ですか。  
  このステップでは、エコー アダプターの同期送信メッセージング機能を実装する方法について学習しました。 実装してこれを行う、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler.Execute%2A`のメソッド、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler`です。 このメソッドは、着信 WCF 要求メッセージを解析し、必要な処理を実行、出力方向の WCF 応答メッセージを生成します。  

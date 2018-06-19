@@ -1,14 +1,14 @@
 ---
-title: "手順 3 b: 対話の受信場所を追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3 b: 対話の受信場所を追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 59780635-e1b6-4e74-a89a-73ec26d6c670
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966304"
 ---
 # <a name="step-3b-add-an-interact-receive-location-for-the-interact-real-time-scenario"></a>手順 3 b: 対話の受信場所を追加、リアルタイムのシナリオの対話
 完全な[手順 3A: 対話リアルタイム シナリオではファイルの受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario.md)この手順を開始する前にします。
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/28/2017
     |**ユーザー名**|SAG への接続に使用するユーザー名を入力します。|  
     |**アプリケーション名**|サーバーを入力\<*アプリケーション インターフェイス名*\> SAG のボックス ルーティング セット。|  
     |**暗号化モード**|ドロップダウン リストから選択**詳細**です。|  
-    |**LogMessageBody**|ドロップダウン リストから選択**FALSE**です。 **注:**を TRUE に設定する場合、追跡データベースにメッセージ本文が保持されます。 ただし、セキュリティ上の理由から、メッセージの本文見なすことができることはありません、BAM ポータルにします。|  
+    |**LogMessageBody**|ドロップダウン リストから選択**FALSE**です。 **注:** を TRUE に設定する場合、追跡データベースにメッセージ本文が保持されます。 ただし、セキュリティ上の理由から、メッセージの本文見なすことができることはありません、BAM ポータルにします。|  
     |**し**|ドロップダウン リストから選択**TRUE**です。 これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。|  
     |**メッセージの形式**|ドロップダウン リストから選択**InterActMessage**です。|  
     |**MemberRef**|ドロップダウン リストから選択**ResponseHeader**です。|  
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
     |**回復モード**|このプロパティの既定値のままにします。 このプロパティは、ストア アンド フォワードのシナリオに使用されます。|  
     |**SNL エンドポイント**|このプロパティの既定値のままにします。 このプロパティは、ストア アンド フォワードのシナリオに使用されます。|  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 9. **受信場所のプロパティ** ウィンドウで、**全般** タブで、次の操作します。  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/28/2017
     |**受信ハンドラー**|ドロップダウン リストから選択**BizTalkServerIsolatedHost**です。|  
     |**受信パイプライン**|ドロップダウン リストから選択**XMLReceive**です。|  
   
-10. **[OK]**をクリックします。  
+10. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [手順 3: が送信を作成し、受信のポート、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   

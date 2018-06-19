@@ -12,7 +12,7 @@ helpviewer_keywords:
 - DDEX plug-in, Data Provider for SAP
 - Data Provider for SAP, using with DDEX plug-in
 ms.assetid: b16c8634-172a-4630-87ed-2073a75afdec
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25963464"
 ---
 # <a name="use-the-data-provider-for-sap-with-the-ddex-plug-in"></a>DDEX プラグインと SAP 用データ プロバイダーを使用します。
 インストールする場合、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]と共に、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール、セットアップ プログラムをインストール、 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] DDEX プラグインします。 使用して、SAP オブジェクトを参照するこのプラグインを使用することができます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。 このセクションでは、DDEX プラグインの使用に関する情報を提供します。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  **サーバー エクスプ ローラー**を右クリックして**データ接続**を選択して**接続の追加**です。  
   
-4.  **データ ソースの変更** ダイアログ ボックスから、**データ ソース**ボックスで、 **\<他\>**です。  
+4.  **データ ソースの変更** ダイアログ ボックスから、**データ ソース**ボックスで、 **\<他\>** です。  
   
 5.  **データ プロバイダー**ドロップダウン リストで、 **.NET Framework Data Provider 用 mySAP Business Suite**  をクリック**OK**です。 **接続の追加** ダイアログ ボックスが表示されます。  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 03/28/2018
   
     -   RFC SDK トレースを使用するかどうか。  
   
-     **[OK]**をクリックします。 新しい接続ノードを作成、**データ接続**前の手順で指定したサーバー名を持つノード。  
+     **[OK]** をクリックします。 新しい接続ノードを作成、**データ接続**前の手順で指定したサーバー名を持つノード。  
   
 7.  ノードを展開して、新しい接続を表示、**テーブル**と**関数モジュール**ノード。  
   
@@ -83,7 +84,7 @@ ms.lasthandoff: 03/28/2018
   
 4.  追加し、をクリックするテーブルに対応するチェック ボックスをオンに**追加**です。 すべてのテーブルを選択するには、をクリックして**すべて選択**です。 すべての選択をクリアする をクリックして**すべてクリア**です。  
   
-5.  ダイアログ ボックスで通知する追加されたテーブルが表示される更新したら、**テーブル**ノード。 **[OK]**をクリックします。  
+5.  ダイアログ ボックスで通知する追加されたテーブルが表示される更新したら、**テーブル**ノード。 **[OK]** をクリックします。  
   
 6.  右クリックし、**テーブル**ノード**更新**です。 選択したテーブルが表示される、**テーブル**ノード。 テーブルのプロパティを表示するテーブル名をクリックして、**プロパティ**ウィンドウです。  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 03/28/2018
   
 4.  追加し、をクリックする関数モジュールに対応するチェック ボックスをオンに**追加**です。 すべてのモジュールを選択するには、をクリックして**すべて選択**です。 すべての選択をクリアする をクリックして**すべてクリア**です。  
   
-5.  ダイアログ ボックスで通知する関数が追加されたモジュールが表示されるを更新したら、**関数モジュール**ノード。 **[OK]**をクリックします。  
+5.  ダイアログ ボックスで通知する関数が追加されたモジュールが表示されるを更新したら、**関数モジュール**ノード。 **[OK]** をクリックします。  
   
 6.  右クリックし、**関数モジュール**ノード**更新**です。 選択した関数モジュールが表示されます、**関数モジュール**ノード。 プロパティを表示する関数モジュール名をクリックして、**プロパティ**ウィンドウです。  
   

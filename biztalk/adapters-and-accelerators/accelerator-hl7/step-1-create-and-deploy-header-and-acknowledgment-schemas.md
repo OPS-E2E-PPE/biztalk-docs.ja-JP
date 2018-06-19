@@ -1,17 +1,17 @@
 ---
-title: "手順 1: を作成し、ヘッダーと受信確認スキーマを展開 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: を作成し、ヘッダーと受信確認スキーマを展開 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - end-to-end tutorial, header schemas
 - header schemas
 ms.assetid: 3ff013a4-6c67-4bac-be97-81b2dc5b6119
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960744"
 ---
 # <a name="step-1-create-and-deploy-header-and-acknowledgment-schemas"></a>手順 1: を作成し、ヘッダーと受信確認スキーマを展開
 メッセージ インスタンスのヘッダー (MSH セグメント) を検証するのにには、ヘッダー スキーマを使用します。 メッセージ インスタンスの確認を生成するのにには、受信確認スキーマを使用します。 このプロセスは、すべてのスキーマ バージョンの間で共通[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X です。  

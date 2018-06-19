@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターを使用して大規模なデータ型を持つテーブルとビューの操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターを使用して大規模なデータ型を持つテーブルとビューの操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cec15b01-7a57-4917-8c21-44a1cfaadc59
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967192"
 ---
 # <a name="run-operations-on-tables-and-views-with-large-data-types-using-the-sql-adapter"></a>SQL アダプターを使用して大規模なデータ型を持つテーブルとビューの操作を実行します。
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアントの読み取りし、は、大規模なデータ型の列のデータを更新する、varchar (max)、nvarchar (max)、または varbinary (max) を有効にします。 このような列からデータを読み取る、アダプターのクライアントは、Select 操作を使用できます。 挿入またはこのような列にデータを更新は、アダプターは、ここでの型 varchar (max)、nvarchar (max)、または varbinary (max) 列の名前は < column_name > 設定 < column_name > 操作を公開します。  
@@ -201,7 +202,7 @@ ms.lasthandoff: 11/28/2017
 <SetDocumentResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/Records" />  
 ```  
   
- アダプターの空の応答を送信する、**設定 < column_name >**操作します。  
+ アダプターの空の応答を送信する、**設定 < column_name >** 操作します。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
  展開して、BizTalk プロジェクトを構成することが後、は、バインド ファイルと呼ばれる XML ファイルに構成設定をエクスポートできます。 バインド ファイルを生成したできるように、送信ポートなどの項目を作成し、同じオーケストレーション用のポートを受信する必要はありません、ファイルから構成設定をインポートすることができます。 バインド ファイルの詳細については、次を参照してください。[アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)です。

@@ -1,14 +1,14 @@
 ---
-title: "アプリケーションを展開する |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションを展開する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 04bb4496-b1e9-400b-a849-a355381849ff
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300418"
 ---
 # <a name="deploying-an-application"></a>アプリケーションを展開します。
 展開は、ロジスティック分布のすべての必要なコンポーネントを必要とするシステムに使用できるようにするアプリケーションのアイテムです。 これらの成果物には、BizTalk Server アセンブリ、.NET アセンブリ、スキーマ、マップ、バインド、ビジネス ルール、および証明書が含まれます。 BizTalk アプリケーションを利用して他のコンピューター (別の環境にアプリケーションを転送) するときに、グループまたはステージングのために追加する成果物のロールアウトを支援します。  

@@ -1,14 +1,14 @@
 ---
-title: "手順 6: 受信確認のバッチの送信ポートを作成する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 6: 受信確認のバッチの送信ポートを作成する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f2a0f1ee-e060-4fb9-923e-ebe8168777d9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25960952"
 ---
 # <a name="step-6-create-the-send-port-for-the-acknowledgment-batch"></a>手順 6: 受信確認のバッチの送信ポートを作成します。
 この手順では、送信元パーティを作成する受信確認のバッチを配信する送信ポートを作成します。 これは、ファイル アダプターの種類に静的な一方向のポートです。 ここで、ソース (\Tutorial_BatchACKDrop) のファイルのフォルダーを指定する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]受信確認のバッチ ファイルが削除されます。 ポートで送信する受信確認のバッチの種類を示すポートのフィルターを定義するとします。 フィルターは、Tutorial_BatchSource と OutboundBatch のメッセージの種類のソースを指定します。  
@@ -38,10 +39,10 @@ ms.lasthandoff: 01/17/2018
     |プロパティ|目的|  
     |--------------|----------------|  
     |**インストール先フォルダー**|参照 **\<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BatchACKDropのアクセラレータ**. これは、ファイル システムまたはパブリックの共有の場所にパス[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]受信確認のバッチを含んでいるファイルを記述します。|  
-    |**[ファイル名]**|型**%MessageID%.txt** (拡張子 .txt に .xml 拡張子を置き換えます)。|  
+    |**[ファイル名]**|型 **%MessageID%.txt** (拡張子 .txt に .xml 拡張子を置き換えます)。|  
     |**[コピー モード]**|選択**新規作成**です。|  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  送信ポートのプロパティ] ダイアログ ボックスの**送信パイプライン**[ **BTAHL72XPipelines.BTAHL72XSendPipeline**です。  
   

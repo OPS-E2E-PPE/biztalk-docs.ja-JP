@@ -1,14 +1,14 @@
 ---
-title: "手順 8B: RX システム用のパーティ情報を構成する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 8B: RX システム用のパーティ情報を構成する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b0b34ec9-220d-4a6b-9712-54c8099b663b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960672"
 ---
 # <a name="step-8b-configure-party-information-for-the-rx-system"></a>手順 8B: RX システム用のパーティ情報を構成します。
 この手順では、RX システム用のパーティ情報を構成します。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  コンソール ツリーでクリックして**送信ポート**です。  
   
-4.  送信ポート] ペインで [空白のフィールドをクリックして、**名前**列で、選択**Tutorial_sendMsg_RX**、クリックして**[ok]**です。  
+4.  送信ポート] ペインで [空白のフィールドをクリックして、**名前**列で、選択**Tutorial_sendMsg_RX**、クリックして **[ok]** です。  
   
 5.  をクリックして**開始**、 をポイント**プログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator 用 HL7**、クリックして**BTAHL7 構成エクスプ ローラー**です。  
   

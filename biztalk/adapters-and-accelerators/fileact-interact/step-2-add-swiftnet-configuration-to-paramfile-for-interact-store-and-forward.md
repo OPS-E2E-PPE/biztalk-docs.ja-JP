@@ -1,14 +1,14 @@
 ---
-title: "手順 2: SWIFTNet の構成を追加、Paramfile InterAct ストアと転送シナリオ |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: SWIFTNet の構成を追加、Paramfile InterAct ストアと転送シナリオ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2a18a43c-1dd9-4113-bf32-8bc7bf9338b0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963128"
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-store-and-forward-scenario"></a>手順 2: SWIFTNet の構成を追加、Paramfile InterAct ストアと転送シナリオ
 SAG で作成されたサーバー メッセージのパートナーは、これらの値で初期化するために受信者を有効にする SWIFTNet paramfile で指定する必要があります。  

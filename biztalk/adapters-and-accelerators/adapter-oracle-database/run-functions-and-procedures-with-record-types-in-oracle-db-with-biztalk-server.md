@@ -1,14 +1,14 @@
 ---
-title: "関数と BizTalk Server を使用して Oracle データベースでレコードの種類を持つプロシージャを呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: 関数と BizTalk Server を使用して Oracle データベースでレコードの種類を持つプロシージャを呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccdc150e-055a-47df-af3e-64931946455d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963040"
 ---
 # <a name="invoke-functions-and-procedures-with-record-types-in-oracle-database-using-biztalk-server"></a>関数と BizTalk Server を使用して Oracle データベースでレコードの種類を持つプロシージャを呼び出す
 Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに渡されるパラメーターで階層的な情報を表すために使用されます。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]複雑な XML 型としてレコードの種類を表示します。 方法の詳細については[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サポートのレコードの種類を参照してください[関数と Oracle データベースのレコード型での手順に従って操作します。](../../adapters-and-accelerators/adapter-oracle-database/operations-on-functions-and-procedures-with-record-types-in-oracle-database.md)です。 レコードの種類の XML 構造については、次を参照してください。[レコードの種類のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-record-types.md)です。  
@@ -146,7 +147,7 @@ Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに
   
 3.  **関連付けのプロパティ** ダイアログ ボックスには、手順 1. で昇格させたプロパティが一覧表示されます。 プロパティを選択し、をクリックして**追加**です。  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  その他の昇格させたプロパティの関連付けの種類を作成するには、この手順を繰り返します。  
   

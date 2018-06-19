@@ -17,11 +17,12 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "25963120"
 ---
 # <a name="publishing-the-mx-message-instance-file-creating-new-messages"></a>(新しいメッセージの作成) MX メッセージ インスタンスのファイルの発行
 **ファイルをパブリッシュ MX メッセージ インスタンス。**  
   
-1.  前の手順で生成された InfoPath フォーム テンプレートの出力フォルダーに移動して**.\\< MessageType\>\TemplateDS\InfoPath フォーム テンプレート**です。  
+1.  前の手順で生成された InfoPath フォーム テンプレートの出力フォルダーに移動して **.\\< MessageType\>\TemplateDS\InfoPath フォーム テンプレート**です。  
   
 2.  Internet Explorer で、開く **http://localhost/sites/BASSite/New%20SWIFT%20MX%20Messages**です。  
   
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/18/2018
   
 4.  ドキュメントのアップロード] ウィンドウで、[**参照**です。  
   
-5.  ファイルの選択 ダイアログ ボックスで前の手順で作成した InfoPath 形式の出力フォルダーに移動**.\\< MessageType\>\TemplateDS\InfoPath フォーム テンプレート**です。 選択、 \<MessageType\>.xml pacs.004.001.01.xml などのファイルおよびクリックして**開く**です。  
+5.  ファイルの選択 ダイアログ ボックスで前の手順で作成した InfoPath 形式の出力フォルダーに移動 **.\\< MessageType\>\TemplateDS\InfoPath フォーム テンプレート**です。 選択、 \<MessageType\>.xml pacs.004.001.01.xml などのファイルおよびクリックして**開く**です。  
   
 6.  ドキュメントのアップロード] ウィンドウで、[ **OK**です。  
   

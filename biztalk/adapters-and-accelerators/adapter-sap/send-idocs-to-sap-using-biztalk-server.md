@@ -1,18 +1,18 @@
 ---
-title: "BizTalk Server を使用して sap Idoc を送信 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して sap Idoc を送信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IDOCs, sample for sending
 - IDOCs, sending to SAP using BizTalk Server
 - IDOCs, business scenarios for sending
 ms.assetid: 92042623-ffbf-472f-9515-e9a77eb320fb
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967584"
 ---
 # <a name="send-idocs-to-sap-using-biztalk-server"></a>BizTalk Server を使用して sap Idoc を送信します。
 SAP へのすべての IDOC 呼び出しは、tRFC の呼び出し、アダプターは tRFC クライアントとして機能して、IDOC を送信する SAP の RFC を呼び出してとして内部的に扱われます。 このセクションの内容についての情報を使用して sap Idoc を送信する、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Idoc を送信する 2 つの異なる操作を表示します。  

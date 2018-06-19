@@ -1,17 +1,17 @@
 ---
-title: "Oracle データベース アダプターのインストールに関するトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターのインストールに関するトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installation issues, troubleshooting
 - troubleshooting, installation issues
 ms.assetid: 2054b725-d657-4039-b83b-119571935f62
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962320"
 ---
 # <a name="troubleshoot-installation-issues-with-the-oracle-database-adapter"></a>Oracle データベース アダプターのインストールに関するをトラブルシューティングします。
 Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]コンピューターで、製品バイナリをコピーし、各アダプターのバインドを登録します。 このセクションでは、インストール エラーを解決するのにはトラブルシューティングの手法の使用について説明しもいくつかの既知の問題を示します。  

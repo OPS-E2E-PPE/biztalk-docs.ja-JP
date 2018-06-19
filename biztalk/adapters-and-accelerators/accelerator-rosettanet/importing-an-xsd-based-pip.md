@@ -1,18 +1,18 @@
 ---
-title: "XSD ベース PIP のインポート |Microsoft ドキュメント"
-ms.custom: 
+title: XSD ベース PIP のインポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - PIPs, importing
 - XSD-based PIPs
 - PIPs, XSD-based PIPs
 ms.assetid: d12441d4-79bf-4c24-9360-4b78c1da0d34
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961656"
 ---
 # <a name="importing-an-xsd-based-pip"></a>XSD ベース PIP のインポート
 RosettaNet.org によって提供されるほとんどの PIP は DTD ベースですが、新しい PIP は XSD ベースです。 次の手順では、XSD ベースの PIP をインポートする方法を示します。  

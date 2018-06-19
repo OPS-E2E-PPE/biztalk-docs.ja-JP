@@ -1,14 +1,14 @@
 ---
-title: "手順 3 b: FILEACT の受信場所が FileAct リアルタイム シナリオの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3 b: FILEACT の受信場所が FileAct リアルタイム シナリオの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7e086c86-1525-4cef-b7e5-a66e14bd8d4f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965824"
 ---
 # <a name="step-3b-add-a-fileact-receive-location-for-the-fileact-real-time-scenario"></a>手順 3 b: FILEACT の受信場所が FileAct リアルタイム シナリオの追加
 この手順を開始する前に行う必要があります[手順 3A: FileAct リアルタイム シナリオでは、ファイルの受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-real-time-scenario.md)です。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 11/28/2017
     |**回復モード**|このプロパティの既定値のままにします。 このプロパティは、ストア アンド フォワードのシナリオに使用されます。|  
     |**SNL エンドポイント**|このプロパティの既定値のままにします。 このプロパティは、ストア アンド フォワードのシナリオに使用されます。|  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 9. **受信場所のプロパティ** ウィンドウで、**全般** タブで、次の操作します。  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 11/28/2017
     |**受信ハンドラー**|ドロップダウン リストから選択**BizTalkServerIsolatedHost**です。|  
     |**受信パイプライン**|ドロップダウン リストから選択**XMLReceive**です。|  
   
-10. **[OK]**をクリックします。  
+10. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [手順 3: 送信ポートを作成し、FileAct リアルタイムのシナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md)   

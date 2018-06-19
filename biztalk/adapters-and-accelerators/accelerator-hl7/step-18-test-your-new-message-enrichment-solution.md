@@ -10,7 +10,7 @@ ms.topic: article
 helpviewer_keywords:
 - message enrichment tutorial, testing solution
 ms.assetid: 233fbf79-0ab1-4064-b828-6bbbb56cbec2
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25960424"
 ---
 # <a name="step-18-test-your-new-message-enrichment-solution"></a>手順 18: 新しいメッセージの強化ソリューションをテストします。
 このステップでメッセージを送信するクライアント アプリケーションを使用して、ソリューションをテストする[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]MLLPReceive アプリケーションが期待どおりに HL7 形式のメッセージを受け取るかどうかが表示されるとします。  

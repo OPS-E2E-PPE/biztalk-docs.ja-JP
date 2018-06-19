@@ -1,17 +1,17 @@
 ---
-title: "手順 7: を作成して、ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 7: を作成して、ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private process tutorial, creating ports
 - private process tutorial, configuring ports
 ms.assetid: c00344c6-506a-4560-a948-e5fed2b9fd58
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965240"
 ---
 # <a name="step-7-creating-and-configuring-ports"></a>手順 7: を作成して、ポートを構成します。
 ここでは、ビジネス プロセスとの通信に使用するポートを作成し、構成します。 各ポートには、種類、方向、およびバインドのプロパティを設定します。 これらのプロパティにより、通信の方向と通信方式、メッセージの送信先と受信元、および通信の実行方法が決定されます。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  **ポート構成ウィザード**] ページで [**次**です。  
   
-3.  **ポートのプロパティ**] ページの [、**名前**ボックスに、入力**ContosoSQLReqResponsePort**、クリックして**[次へ]**です。  
+3.  **ポートのプロパティ**] ページの [、**名前**ボックスに、入力**ContosoSQLReqResponsePort**、クリックして **[次へ]** です。  
   
 4.  **ポートの種類を選択して**] ページの [、**ポートの種類名**ボックスに、入力**ContosoSQLReqResponsePortName**です。  
   
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  **成果物の種類の選択**ダイアログ ボックスで、をクリックして**ContosoPriceAndAvailability**です。  
   
-8.  右側のペインで選択**[rootpriceresponse]**、順にクリック**OK**です。  
+8.  右側のペインで選択 **[rootpriceresponse]**、順にクリック**OK**です。  
   
 ### <a name="to-connect-the-ports-to-the-receive-shapes"></a>受信側の図形にポートを接続するには  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  オーケストレーション デザイン画面で選択、 **Receive_1**図形です。  
   
-5.  [プロパティ] ウィンドウで、選択、**メッセージ**プロパティ、および選択**[contoso3a2responsemessage]**ドロップダウン リストからです。  
+5.  [プロパティ] ウィンドウで、選択、**メッセージ**プロパティ、および選択 **[contoso3a2responsemessage]** ドロップダウン リストからです。  
   
 6.  接続、 **ContosoSQLReqResponsePort**を横に緑色のハンドルを選択すると、**応答**ラベル上の緑のハンドルにドラッグし、 **Receive_1**図形です。  
   

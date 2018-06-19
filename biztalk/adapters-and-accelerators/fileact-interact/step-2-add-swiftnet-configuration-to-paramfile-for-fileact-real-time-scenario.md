@@ -1,14 +1,14 @@
 ---
-title: "手順 2: SWIFTNet の構成を追加、Paramfile FileAct リアルタイム シナリオ |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: SWIFTNet の構成を追加、Paramfile FileAct リアルタイム シナリオ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d4feec3f-4755-477e-b3d6-1dd6d075255e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963768"
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-fileact-real-time-scenario"></a>手順 2: SWIFTNet の構成を追加、Paramfile FileAct リアルタイム シナリオ
 SAG で作成されたサーバー メッセージのパートナーは、これらの値で初期化するために受信者を有効にする SWIFTNet paramfile で指定する必要があります。  

@@ -1,14 +1,14 @@
 ---
-title: "ストアド プロシージャ、関数、またはパッケージ化されたプロシージャおよび関数を使用して Oracle データベースをポーリング |Microsoft ドキュメント"
-ms.custom: 
+title: ストアド プロシージャ、関数、またはパッケージ化されたプロシージャおよび関数を使用して Oracle データベースをポーリング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6c34843a-d02b-4941-baf6-6bc80b5821ad
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968096"
 ---
 # <a name="poll-oracle-database-using-stored-procedures-functions-or-packaged-procedures-and-functions"></a>ストアド プロシージャ、関数、またはパッケージ化されたプロシージャおよび関数を使用して Oracle データベースをポーリング
 構成することができます、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースを定期的にポーリングするストアド プロシージャ、関数、またはパッケージ化されたプロシージャおよび関数を使用して、定期的なデータの変更メッセージを受信します。 ストアド プロシージャ、関数、またはパッケージ化されたプロシージャを指定し、アダプターが Oracle データベースをポーリングする定期的に実行されるポーリング ステートメントとして機能できます。  
@@ -83,7 +84,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="generating-schema"></a>スキーマを生成します。  
  GET_ACTIVITYS 操作のスキーマを生成する必要があります。 使用して、スキーマの生成中に、次のタスクを実行、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。  
   
--   コントラクトの種類を選択して**サービス (入力方向の操作)**です。  
+-   コントラクトの種類を選択して**サービス (入力方向の操作)** です。  
   
 -   スキーマを生成、 **GET_ACTIVITYS**プロシージャです。  
   
@@ -111,7 +112,7 @@ ms.lasthandoff: 11/28/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |[Identifier]|型**受信**です。|  
-    |メッセージの種類|ドロップダウン リストから、展開**スキーマ**を選択して*Polling.OracleEBSBindingSchema*ここで、*ポーリング*BizTalk プロジェクトの名前を指定します。 *OracleEBSBindingSchema* 、応答スキーマに対して生成されるは、 **GET_ACTIVITYS**ストアド プロシージャです。<br /><br /> **重要:**ポーリングは、一方向の操作、アダプターによって生成されたスキーマにノードがありません、応答、およびスキーマには 1 つだけのルート ノードがない、ためためです。 メッセージ型のようなスキーマを使用する場合は、生成されたスキーマのファイル名でスキーマを識別する必要があります。<br /><br /> たとえば、双方向の操作のスキーマを作成する場合、スキーマ内のノード ファイルの名前を持つ`OracleEBSBindingSchema`「要求」および"Response"のようになります。 確認して、リスト内のスキーマを識別するには、要求スキーマにマップされるオーケストレーションでメッセージを作成する場合は、`OracleEBSBindingSchema.Request`です。 ただし、ポーリング操作の場合、唯一のノードが「投票」であるため簡単ではありません 1 つのノードでスキーマに設定されていないためにマップするスキーマを識別する\<schemafilename\>.\<rootnodename\>です。 代わりに、このようなスキーマ ファイル名のみが表示されます。 このような場合は、スキーマ ファイル名、たとえば、OracleEBSBindingSchema では、スキーマを識別するしかありません。|  
+    |メッセージの種類|ドロップダウン リストから、展開**スキーマ**を選択して*Polling.OracleEBSBindingSchema*ここで、*ポーリング*BizTalk プロジェクトの名前を指定します。 *OracleEBSBindingSchema* 、応答スキーマに対して生成されるは、 **GET_ACTIVITYS**ストアド プロシージャです。<br /><br /> **重要:** ポーリングは、一方向の操作、アダプターによって生成されたスキーマにノードがありません、応答、およびスキーマには 1 つだけのルート ノードがない、ためためです。 メッセージ型のようなスキーマを使用する場合は、生成されたスキーマのファイル名でスキーマを識別する必要があります。<br /><br /> たとえば、双方向の操作のスキーマを作成する場合、スキーマ内のノード ファイルの名前を持つ`OracleEBSBindingSchema`「要求」および"Response"のようになります。 確認して、リスト内のスキーマを識別するには、要求スキーマにマップされるオーケストレーションでメッセージを作成する場合は、`OracleEBSBindingSchema.Request`です。 ただし、ポーリング操作の場合、唯一のノードが「投票」であるため簡単ではありません 1 つのノードでスキーマに設定されていないためにマップするスキーマを識別する\<schemafilename\>.\<rootnodename\>です。 代わりに、このようなスキーマ ファイル名のみが表示されます。 このような場合は、スキーマ ファイル名、たとえば、OracleEBSBindingSchema では、スキーマを識別するしかありません。|  
   
      [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] GET_ACTIVITYS の受信と送信の両方の操作のストアド プロシージャでは、スキーマを生成します。 受信操作のスキーマを使用する必要があります。  
   

@@ -1,14 +1,14 @@
 ---
-title: "アダプター フレームワーク構成スキーマの装飾タグ |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター フレームワーク構成スキーマの装飾タグ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d5d7f6b-2273-45a6-ba9d-43201760cf22
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965376"
 ---
 # <a name="adapter-framework-configuration-schema-decoration-tags"></a>アダプター フレームワーク構成スキーマの装飾タグ
 このトピックで説明するタグを構成スキーマ ファイル内で使用して、アダプターのプロパティ ページでデータを表示および編成できます。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="readonly"></a>\<読み取り専用\>  
  \<固定 readonly =""\>装飾は、フィールドを変更することがあるかどうかを制御します。 "fixed" 属性値が `true` (既定値) の場合、フィールドは読み取り専用になります。  
   
- 外部エディターを実装する場合は、外部を実装する**TypeConverter**クラスし、オーバーライド、 **GetStandardValuesExclusive(ITypeDescriptorContext)**メソッド代わりにします。 `true` を返すと、フィールドは読み取り専用になりますが、カスタム エディターへのアクセスは保持されます。  
+ 外部エディターを実装する場合は、外部を実装する**TypeConverter**クラスし、オーバーライド、 **GetStandardValuesExclusive(ITypeDescriptorContext)** メソッド代わりにします。 `true` を返すと、フィールドは読み取り専用になりますが、カスタム エディターへのアクセスは保持されます。  
   
 ## <a name="browsable"></a>\<ブラウズ\>  
  \<ブラウズ show =""\>装飾は、プロパティ グリッドでフィールドを表示するかどうかを制御します。 "show" 属性値が `True` (既定値) の場合、フィールドはグリッドに表示されます。  

@@ -1,17 +1,17 @@
 ---
-title: "エラー抽出サンプル クラス |Microsoft ドキュメント"
-ms.custom: 
+title: エラー抽出サンプル クラス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Error Extractor Sample class
 - errors, Error Extractor Sample class
 ms.assetid: d0d59b21-d80a-4466-a77a-1d3b7df1bc2a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965128"
 ---
 # <a name="error-extractor-sample-class"></a>エラー抽出サンプル クラス
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]逆アセンブラーは、XML オブジェクトへのエラーをシリアル化し、マルチパート メッセージのエラー セクションに、XML オブジェクトをアタッチします。 逆アセンブラーは、有効なメッセージの場合と同様後、失敗したメッセージとメッセージ ボックス データベースに公開します。 そのため、メッセージ ボックス データベースにメッセージ carry エラーの詳細に失敗しました。 エラー抽出サンプル クラスを使用して、失敗したメッセージからエラーの詳細を抽出し、エラーの詳細を含む 1 つのファイルと元のメッセージを持つ別のファイルを生成できます。  

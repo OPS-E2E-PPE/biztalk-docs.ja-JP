@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25967104"
 ---
 # <a name="basic-oracle-data-types"></a>基本的な Oracle データ型
 このトピックの内容について説明しますが、どのように[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]サーフェスの基本的な Oracle データ型。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 03/28/2018
 |バイナリ倍 * *|xsd:double 場合 prec < 15 を =<br /><br /> xsd:string 場合 prec > 15|Double<br /><br /> 文字列|-|  
 |バイナリ整数 * *|xsd:integer|Int32||  
 |ブール値|xsd:boolean|Null 許容のブール値||  
-|XMLTYPE|xsd:string|文字列|最上位レベルのプロシージャのパラメーターはサポートされています。<br /><br /> 予約されているような XML 文字 '**\<**'、'**\>**'、エンティティ表記に置き換える必要があります**(&lt;、 &gt;)**biztalk のアプリケーションを開発するとき、およびチャネル モデルの WCF を使用します。 WCF サービス モデルの場合は必須ではありません。|  
+|XMLTYPE|xsd:string|文字列|最上位レベルのプロシージャのパラメーターはサポートされています。<br /><br /> 予約されているような XML 文字 '**\<**'、'**\>**'、エンティティ表記に置き換える必要があります **(&lt;、 &gt;)** biztalk のアプリケーションを開発するとき、およびチャネル モデルの WCF を使用します。 WCF サービス モデルの場合は必須ではありません。|  
   
  \*これらの Oracle データ型が表示される方法の影響を受ける、 **EnableSafeTyping**プロパティをバインドします。  
   

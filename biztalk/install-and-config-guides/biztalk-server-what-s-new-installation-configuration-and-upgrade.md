@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 新機能、インストール、構成、およびアップグレード |Microsoft ドキュメント"
-description: "BizTalk Server 2016 と BizTalk Server 2013 R2 と 2013 の新しい、およびインストールと構成の概要"
-ms.custom: 
+title: BizTalk Server 新機能、インストール、構成、およびアップグレード |Microsoft ドキュメント
+description: BizTalk Server 2016 と BizTalk Server 2013 R2 と 2013 の新しい、およびインストールと構成の概要
+ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 08/10/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67ea76f3-017b-4fb5-b944-f86905e15c87
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014113"
 ---
 # <a name="biztalk-server-whats-new-install-configuration-and-upgrade"></a>BizTalk Server 新機能、インストール、構成、およびアップグレード
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の新機能およびそのインストールおよび構成方法を説明します。 

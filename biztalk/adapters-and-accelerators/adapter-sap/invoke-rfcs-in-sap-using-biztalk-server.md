@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965440"
 ---
 # <a name="invoke-rfcs-in-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP Rfc を呼び出す
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプター クライアントから呼び出すことができる操作として、SAP システムによって公開されている Rfc を表示します。 このセクションの内容を使用して SAP システムでの RFC を呼び出すための手順を説明する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 方法の詳細については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]SAP システムで RFC を呼び出すサポートを参照してください[SAP Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)です。 RFC を呼び出すための SOAP メッセージの構造に関する詳細については、次を参照してください。 [RFC 操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)です。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22302834"
 ---
 # <a name="updating-the-bindings-in-an-application"></a>アプリケーションのバインドを更新
 アプリケーションのアセンブリを更新すると、多くの場合、そのバインドが上書きされます。また、アセンブリがまったくバインドされず、バインドの再構成を手動で行う必要が生じることもあります。 これを回避するのには、同じバージョンのアセンブリを更新または新しいバージョンでアセンブリを更新するバインド ファイルを使用できます。  

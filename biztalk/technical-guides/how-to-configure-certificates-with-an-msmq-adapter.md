@@ -1,14 +1,14 @@
 ---
-title: "MSMQ アダプターでの証明書を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: MSMQ アダプターでの証明書を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 922a171d-705f-4465-acda-212aa3797c57
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297914"
 ---
 # <a name="how-to-configure-certificates-with-an-msmq-adapter"></a>MSMQ アダプターでの証明書を構成する方法
 MSMQ 送信アダプターを受け付けるか、クライアント証明書を必要とするサーバーとの接続をセキュリティで保護できます。 クライアント証明書が指定されている場合、MSMQ 送信アダプターを必要とするか、クライアント証明書をそのまま使用するサーバーと接続するときに、証明書を使用します。 クライアント証明書が指定されていないと、移行先サーバーには、クライアント証明書が必要です、送信者が認証されていないと、MSMQ 送信アダプターは、メッセージの送信に失敗し、標準の再試行ロジックに従っています。  
@@ -38,4 +39,4 @@ MSMQ 送信アダプターを受け付けるか、クライアント証明書を
   
 4.  **証明書の拇印**、適切な拇印を入力します。  
   
-5.  をクリックして**[ok]**、順にクリック**OK**もう一度です。
+5.  をクリックして **[ok]**、順にクリック**OK**もう一度です。

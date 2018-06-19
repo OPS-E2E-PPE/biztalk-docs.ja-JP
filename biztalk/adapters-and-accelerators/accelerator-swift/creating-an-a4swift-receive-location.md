@@ -11,7 +11,7 @@ helpviewer_keywords:
 - receive locations, creating
 - creating, receive locations
 ms.assetid: 712cf42f-8d71-47e9-b2bf-3da158b74fe4
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25966016"
 ---
 # <a name="creating-an-a4swift-receive-location"></a>受信場所の A4SWIFT の作成
 作成する必要があります、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] SWIFT ネットワークからのメッセージの受信を有効にする受信場所[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]、次の図に示すようにします。 受信場所は、受信ファイル フォルダーからフラット ファイル メッセージを受信します。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 03/28/2018
 |受信ポート|一方向のポート|  
 |トランスポートの種類|FILE|  
 |アドレスの URI|メッセージを受信するフォルダーの名前|  
-|ファイル マスク|\*.*\<拡張子\>*ここで、 \<*拡張子*\>入力方向の拡張機能は、フラット ファイル メッセージ|  
+|ファイル マスク|\*.*\<拡張子\>* ここで、 \<*拡張子*\>入力方向の拡張機能は、フラット ファイル メッセージ|  
 |[受信ハンドラー]|BizTalkServerApplication|  
 |受信パイプライン。|[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]受信パイプラインを作成します。|  
   
@@ -64,12 +65,12 @@ ms.lasthandoff: 03/28/2018
   
 10. クリックして、**構成**型のドロップダウン リストの右側にあるボタンです。  
   
-11. [FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。 メッセージを受信するフォルダーに移動します。 **[OK]**をクリックします。  
+11. [FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。 メッセージを受信するフォルダーに移動します。 **[OK]** をクリックします。  
   
     > [!NOTE]
     >  このフォルダーが存在しない場合を使用してそれを作成、**新しいフォルダーの作成**コマンド。  
   
-12. ファイル トランスポートのプロパティ ダイアログ ボックスで、**ファイル マスク**ボックスに、入力 **\*.\<*拡張子*\>**ここで、 \<*拡張子*\>入力方向の拡張機能は、などのフラットファイルメッセージ**.txt**です。 **[OK]**をクリックします。  
+12. ファイル トランスポートのプロパティ ダイアログ ボックスで、**ファイル マスク**ボックスに、入力 **\*.\<*拡張子*\>** ここで、 \<*拡張子*\>入力方向の拡張機能は、などのフラットファイルメッセージ **.txt**です。 **[OK]** をクリックします。  
   
 13. 受信場所のプロパティ ダイアログ ボックスでいることを確認**BizTalkServerApplication**として入力された、**受信ハンドラー**ボックス。  
   

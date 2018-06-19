@@ -1,14 +1,14 @@
 ---
-title: "挿入、更新、削除、またはインターフェイスのテーブルおよび Oracle E-business Suite のインターフェイス ビューの選択 |Microsoft ドキュメント"
-ms.custom: 
+title: 挿入、更新、削除、またはインターフェイスのテーブルおよび Oracle E-business Suite のインターフェイス ビューの選択 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 85f42431-80fb-49be-86d1-bb21eee5e4f5
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968016"
 ---
 # <a name="insert-update-delete-or-select-on-interface-tables-and-interface-views-with-oracle-e-business-suite"></a>挿入、更新、削除、またはインターフェイスのテーブルおよび Oracle E-business Suite のインターフェイス ビューの選択
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]サーフェス Insert などの標準的な操作のセットは、インターフェイスに対する Update、Delete、Select がテーブルし、ビューします。 このトピックでは、アダプターを使用してこれらの操作を実行する方法についてを説明します。 アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。[インターフェイス テーブルとのインターフェイス ビューで操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md)です。 これらの操作用の SOAP メッセージの構造については、次を参照してください。 [Insert、Update、Delete、および選択操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md)です。  

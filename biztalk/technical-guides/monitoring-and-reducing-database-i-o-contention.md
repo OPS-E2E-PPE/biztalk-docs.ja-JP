@@ -1,14 +1,14 @@
 ---
-title: "I/O の競合を監視および削減できるデータベース |Microsoft ドキュメント"
-ms.custom: 
+title: I/O の競合を監視および削減できるデータベース |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bd6d3343-3fa3-469a-9772-e94f22fdf558
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298778"
 ---
 # <a name="monitoring-and-reducing-database-io-contention"></a>監視と、データベース I/O の競合を減らす
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]によってパフォーマンスが前提として多くの場合、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]パフォーマンスで、さらには、多くの場合を前提としてディスク I/O のパフォーマンスにします。 したがって、する必要がありますを監視し、実行するコンピューター上のディスク I/O のパフォーマンスを調整[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]そのハウス、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL からの受信通知の差分クエリ |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL からの受信通知の差分クエリ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a6972e01-80be-47be-986a-c2e4e0fb0cd1
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967928"
 ---
 # <a name="receive-query-notifications-incrementally-from-sql-using-biztalk-server"></a>BizTalk Server を使用して SQL からの受信通知の差分クエリ
 > [!IMPORTANT]
@@ -109,11 +110,11 @@ ms.lasthandoff: 11/28/2017
   
 1.  値を指定**InboundOperationType**と**NotificationStatement**スキーマの生成中にプロパティをバインドします。 このバインドのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。 バインドのプロパティを指定する方法については、次を参照してください。 [SQL アダプターのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-binding-properties-for-the-sql-adapter.md)です。  
   
-2.  コントラクトの種類を選択して**サービス (入力方向の操作)**です。  
+2.  コントラクトの種類を選択して**サービス (入力方向の操作)** です。  
   
 3.  スキーマを生成、**通知**操作します。  
   
-4.  コントラクトの種類を選択して**クライアント (送信操作)**です。  
+4.  コントラクトの種類を選択して**クライアント (送信操作)** です。  
   
 5.  スキーマを生成、**選択**操作**従業員**テーブル。  
   
@@ -269,7 +270,7 @@ Select(WCF.Action) = "TableOp/Select/dbo/Employee";
         |プロパティのバインド|値|  
         |----------------------|-----------|  
         |**InboundOperationType**|これを設定して**通知**です。|  
-        |**NotificationStatement**|これを設定します。<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注:**する必要があります具体的には、列名を指定、ステートメントで次の SELECT ステートメントで示すようにします。 また、スキーマ名と共に、テーブル名を必ず指定する必要があります。 たとえば、 `dbo.Employee`のようにします。|  
+        |**NotificationStatement**|これを設定します。<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注:** する必要があります具体的には、列名を指定、ステートメントで次の SELECT ステートメントで示すようにします。 また、スキーマ名と共に、テーブル名を必ず指定する必要があります。 たとえば、 `dbo.Employee`のようにします。|  
         |**NotifyOnListenerStart**|これを設定して**True**です。|  
   
          異なるバインディングのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。  

@@ -1,18 +1,18 @@
 ---
-title: "SSO チケットを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SSO チケットを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO], configuring tickets
 - SSO, tickets
 - tickets [SSO], configuring
 ms.assetid: 32f0384b-ac79-4cce-b3f5-f4f8a73a673a
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968648"
 ---
 # <a name="how-to-configure-the-sso-tickets"></a>SSO チケットを構成する方法
 MMC スナップインやコマンド ラインを使用して、チケットを許可するかどうか、システムでチケットを検証するかどうかなど、シングル サインオン システム全体のチケットの動作を制御できます。  
@@ -59,7 +60,7 @@ MMC スナップインやコマンド ラインを使用して、チケットを
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – チケット\<はい/いいえの許可\> *\<はい/いいえの検証\>***ここで、 *\<はい/いいえの許可\>* チケットを許可するか、かどうかを示すと*\<検証はい/いいえ\>*チケットは、では引き換え後に検証する必要があるかどうかを示します.  
+3.  型**ssomanage – チケット\<はい/いいえの許可\> *\<はい/いいえの検証\>*** ここで、 *\<はい/いいえの許可\>* チケットを許可するか、かどうかを示すと*\<検証はい/いいえ\>* チケットは、では引き換え後に検証する必要があるかどうかを示します.  
   
     > [!NOTE]
     >  チケットを許可したり検証したりするかどうかを示すために、yes、no、on、または off を使用できます。 これらの語は大文字と小文字が区別されないため、言語の設定に関係なく使用してください。  

@@ -1,14 +1,14 @@
 ---
-title: "SharePoint での Oracle データベース アダプターの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: SharePoint での Oracle データベース アダプターの使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 254204e5-3b5d-4e70-97ab-817660d1206a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23450313"
 ---
 # <a name="use-the-oracle-database-adapter-with-sharepoint"></a>SharePoint での Oracle データベース アダプターを使用します。
 WCF アダプター サービス開発ウィザード[!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]Oracle データベースと、Microsoft BizTalk Adapter for Oracle E-business Suite は、Microsoft SharePoint の外部のデータ ソースと直接使用される Microsoft BizTalk Adapter を有効にします。 この機能をサポートする追加サービス開発ウィザードが起動し、 **WCF アダプタ サービス**、新しい Visual c# の Web サイトを作成するためのテンプレート[!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]です。 テンプレートが付属して、[!INCLUDE[adapterpacknoversion_md](../../includes/adapterpacknoversion-md.md)]です。 また、Microsoft Windows Communication Foundation (WCF) の基幹業務 (LOB) アダプター SDK をインストールする必要があります。  
@@ -81,7 +82,7 @@ SQL> ALTER USER scott ACCOUNT UNLOCK;
   
 2.  Visual Studio での**ファイル**メニューの **新規**をクリックし、**プロジェクト**です。  
   
-3.  **新しいプロジェクト** ダイアログ ボックスで、展開**他の言語** をクリック**Visual c#**です。 検索、 **WCF アダプター サービス**テンプレートの一覧表示し、をクリックして選択します。  
+3.  **新しいプロジェクト** ダイアログ ボックスで、展開**他の言語** をクリック**Visual c#** です。 検索、 **WCF アダプター サービス**テンプレートの一覧表示し、をクリックして選択します。  
   
     > [!NOTE]
     >  **WCF アダプタ サービス**テンプレートが利用できない場合、[!INCLUDE[adapterpackcurrent](../../includes/adapterpackcurrent-md.md)]がインストールされていません。 X64 システムでは、インストールの x86 と x64 の両方のバージョン、[!INCLUDE[adapterpackcurrent](../../includes/adapterpackcurrent-md.md)]です。  
@@ -143,7 +144,7 @@ SQL> ALTER USER scott ACCOUNT UNLOCK;
   
 4.  横にあるテキストをクリックして**名前**新しい外部コンテンツ タイプの名前を編集します。 入力**OracleEMP**名。  
   
-5.  横にあるテキスト リンクをクリックして**外部システム**見なします**ここをクリックして、外部データ ソースと操作を検出する。**です。 OracleEMP 外部コンテンツ タイプの操作のデザイナーが開きます。  
+5.  横にあるテキスト リンクをクリックして**外部システム**見なします**ここをクリックして、外部データ ソースと操作を検出する。** です。 OracleEMP 外部コンテンツ タイプの操作のデザイナーが開きます。  
   
 6.  クリックして、**接続の追加**[探索] 画面でボタンをクリックします。  
   
@@ -169,7 +170,7 @@ SQL> ALTER USER scott ACCOUNT UNLOCK;
   
 1.  新しい web サイト をクリックして、**リストの作成とフォーム**ボタンをクリックします。 リストの作成および OracleEMP ダイアログ フォームが表示されます。  
   
-2.  入力**OracleEMP_List**のリストの名前とクリック、 **[ok]**ボタンをクリックします。  
+2.  入力**OracleEMP_List**のリストの名前とクリック、 **[ok]** ボタンをクリックします。  
   
 3.  一覧を作成すると、クリックして、**の概要 ビュー**ボタン、メニューをクリックします。  
   

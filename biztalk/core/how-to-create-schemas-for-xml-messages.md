@@ -1,14 +1,14 @@
 ---
-title: "XML メッセージ用スキーマを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: XML メッセージ用スキーマを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a0270293-fe23-42bd-b090-e877d5e9ce0b
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25969728"
 ---
 # <a name="how-to-create-schemas-for-xml-messages"></a>XML メッセージ用スキーマの作成方法
 BizTalk メッセージのスキーマは、複数の方法で作成できます。 このトピックでは、いくつかの方法について手順を説明します。  
@@ -25,7 +26,7 @@ BizTalk メッセージのスキーマは、複数の方法で作成できます
   
 1.  **ソリューション エクスプ ローラー**, 、スキーマを追加する BizTalk プロジェクトを選択します。  
   
-2.  **[プロジェクト]** メニューの **[新しい項目の追加]**をクリックします。  
+2.  **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。  
   
 3.  **新しい項目の追加 - \< *BizTalk ProjectName* \>**  ] ダイアログ ボックスで、**テンプレート**セクションで、[**スキーマ**.  
   

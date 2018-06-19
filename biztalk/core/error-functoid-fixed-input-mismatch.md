@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968352"
 ---
 # <a name="error---functoid-fixed-input-mismatch"></a>エラー - Functoid の固定入力が一致しません
 **エラー コード**  

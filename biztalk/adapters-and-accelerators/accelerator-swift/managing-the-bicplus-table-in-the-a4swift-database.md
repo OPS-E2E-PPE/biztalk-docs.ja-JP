@@ -1,18 +1,18 @@
 ---
-title: "A4SWIFT データベース内の Bicplus テーブルを管理する |Microsoft ドキュメント"
-ms.custom: 
+title: A4SWIFT データベース内の Bicplus テーブルを管理する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Bank Identifier Code (BIC), Bicplus table
 - A4SWIFT database, Bicplus table
 - Bicplus table
 ms.assetid: a255cdea-5ed4-4481-97f1-8425877a76d6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962104"
 ---
 # <a name="managing-the-bicplus-table-in-the-a4swift-database"></a>A4SWIFT データベース内の Bicplus テーブルを管理します。
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]BIC 検証を実行するのにには、BIC エントリのテーブルを使用します。 このテーブルがで Bicplus テーブルにすることができます、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]データベースまたはカスタムのデータベース内のテーブルです。  
@@ -50,13 +51,13 @@ ms.lasthandoff: 11/28/2017
   
 5.  SQL Server インポートおよびエクスポート ウィザードへようこそ ページで、をクリックして**次**です。  
   
-6.  **データ ソースを選択**ページに SWIFT Bicplus から BIC データをインポートする場合、[!INCLUDE[btsExcel](../../includes/btsexcel-md.md)]スプレッドシートで、 **Microsoft Excel**で、**データソース**テキスト ボックス。 スプレッドシートの場所を参照して、スプレッドシート内のファイル名を選択、 **Excel ファイル パス**テキスト ボックス。 **[次へ]**をクリックします。  
+6.  **データ ソースを選択**ページに SWIFT Bicplus から BIC データをインポートする場合、[!INCLUDE[btsExcel](../../includes/btsexcel-md.md)]スプレッドシートで、 **Microsoft Excel**で、**データソース**テキスト ボックス。 スプレッドシートの場所を参照して、スプレッドシート内のファイル名を選択、 **Excel ファイル パス**テキスト ボックス。 **[次へ]** をクリックします。  
   
      Oracle データベースから BIC データをインポートする場合は、選択**Microsoft ODBC Driver for Oracle**で、**データソース**テキスト ボックス。 Oracle データベースとユーザー名と、そのサーバーに接続し、をクリックし、必要なパスワードを使用してサーバーを入力**次**です。  
   
-7.  **変換先を選択**ことを確認 ページで、 **Microsoft OLE DB Provider for SQL Server**で入力した、**先**テキスト ボックスで、**使用Windows 認証**が選択されています。 Bicplus のテーブルを作成する場合、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]データベースであることを確認**A4SWIFT**で入力した、**データベース**テキスト ボックス。 カスタム データベースを使用している場合は、そのデータベースでの名前を入力、**データベース**テキスト ボックス。 **[次へ]**をクリックします。  
+7.  **変換先を選択**ことを確認 ページで、 **Microsoft OLE DB Provider for SQL Server**で入力した、**先**テキスト ボックスで、**使用Windows 認証**が選択されています。 Bicplus のテーブルを作成する場合、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]データベースであることを確認**A4SWIFT**で入力した、**データベース**テキスト ボックス。 カスタム データベースを使用している場合は、そのデータベースでの名前を入力、**データベース**テキスト ボックス。 **[次へ]** をクリックします。  
   
-8.  **選択テーブルのコピーまたはクエリ**ことを確認 ページで、 **1 つまたは複数のテーブルまたはビューからデータをコピー**が選択されています。 選択をデータを指定するクエリを使用する必要がある場合**を転送するデータを指定するクエリを記述**です。 **[次へ]**をクリックします。  
+8.  **選択テーブルのコピーまたはクエリ**ことを確認 ページで、 **1 つまたは複数のテーブルまたはビューからデータをコピー**が選択されています。 選択をデータを指定するクエリを使用する必要がある場合**を転送するデータを指定するクエリを記述**です。 **[次へ]** をクリックします。  
   
 9. **[ソース テーブルおよびビュー** ] ページで、をクリックして**Bicplus**で、**ソース**列を選択**Bicplus**で、 **移行先**列、およびクリック**次**です。  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  BICs を"BIC"以外の名前は、列に格納する場合は、検索**BIC**で、**選択**、**場所**、および**ORDER BY**句、および適切な列の名前に変更します。  
   
-6.  **[実行]**をクリックします。  
+6.  **[実行]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [銀行識別コードの検証の有効化](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)

@@ -1,14 +1,14 @@
 ---
-title: "WCF チャネル モデルを含む SELECT ステートメントを使用してポーリング Oracle E-business Suite |Microsoft ドキュメント"
-ms.custom: 
+title: WCF チャネル モデルを含む SELECT ステートメントを使用してポーリング Oracle E-business Suite |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 495b9010-856f-4782-bd19-1522bc3eb950
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965744"
 ---
 # <a name="poll-oracle-e-business-suite-using-select-statement-with-the-wcf-channel-model"></a>WCF チャネル モデルを含む SELECT ステートメントを使用してポーリング Oracle E-business Suite
 構成することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]メッセージを受信するデータの定期的な変更を継続的にインターフェイスのテーブルをポーリングする SELECT ステートメントを使用して、ビュー、テーブルおよびビュー Oracle E-business suite のインターフェイスです。 Oracle E-business Suite をポーリングするアダプターが定期的に実行されるポーリング ステートメントと SELECT ステートメントを指定できます。 後の投票 PL/SQL コード ブロックを指定することも、アダプターが、ポーリング ステートメントが実行された後に実行されます。  

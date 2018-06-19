@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK のインストール |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK のインストール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 41b9b34b-3fbb-480f-a335-a218eab33693
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966512"
 ---
 # <a name="install-the-wcf-lob-adapter-sdk"></a>WCF LOB アダプター SDK をインストールします。
 インストールし、構成、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]です。 
@@ -62,7 +63,7 @@ ms.lasthandoff: 11/28/2017
   
     -   すべての機能をインストールする選択**完了**です。  
   
-6.  **[インストール]**を選択します。  
+6.  **[インストール]** を選択します。  
   
 ## <a name="update-or-remove"></a>更新または削除
   

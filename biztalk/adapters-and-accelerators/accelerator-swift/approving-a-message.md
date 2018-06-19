@@ -1,17 +1,17 @@
 ---
-title: "メッセージを承認する |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージを承認する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, approving
 - approving messages
 ms.assetid: e6abfef3-aab2-470e-a7a7-a6d091ffba53
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25962520"
 ---
 # <a name="approving-a-message"></a>メッセージを承認します。
 このセクションでは、修復および検証されているメッセージを承認する方法について説明します。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 01/17/2018
     > [!NOTE]
     >  メッセージの変更を却下した場合[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ワークフローの最初のステージにメッセージが返されます (作成または修復) し、修復ワークフローをリセットします。  
   
-11. デジタル署名ウィザードのページでフォームに署名する証明書を選択するため、フォーム (証明書承認用に作成) の署名に使用する証明書を選択します。 をクリックして**証明書の表示**正しいシグネチャを使用していることを確認する場合。 **[次へ]**をクリックします。  
+11. デジタル署名ウィザードのページでフォームに署名する証明書を選択するため、フォーム (証明書承認用に作成) の署名に使用する証明書を選択します。 をクリックして**証明書の表示**正しいシグネチャを使用していることを確認する場合。 **[次へ]** をクリックします。  
   
     > [!NOTE]
     >  デジタル署名の有効性を確認する をクリックして**デジタル署名**上、**ツール** メニューの デジタル署名を確認し、をクリックする をクリックして**ビュー署名済みフォーム**. 表示できます (フォームのみ署名できるワークフローごとに 1 回のユーザーによって)、フォーム以前に署名するロールをクリックして**デジタル署名**上、**ツール**メニュー。 このロールの別の署名を追加する必要がある場合に、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]管理コンソールです。  

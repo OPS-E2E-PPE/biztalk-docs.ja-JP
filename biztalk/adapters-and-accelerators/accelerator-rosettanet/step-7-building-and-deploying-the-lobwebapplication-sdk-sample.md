@@ -1,17 +1,17 @@
 ---
-title: "手順 7: ビルドと LOBWebApplication SDK サンプルの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 7: ビルドと LOBWebApplication SDK サンプルの展開 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - double action tutorial, building solutions
 - double action tutorial, deploying solutions
 ms.assetid: f61de666-ebda-4831-9669-598e9284e4c1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966320"
 ---
 # <a name="step-7-building-and-deploying-the-lobwebapplication-sdk-sample"></a>手順 7: ビルドと LOBWebApplication SDK サンプルの展開
 ここでは、Fabrikam が PIP (Partner Interface Process) 要求を Contoso に送信するために使用する基幹業務 (LOB) アプリケーションを作成します。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK フォルダーに LOBWebApplication プロジェクトがあります。 Web アプリケーションを実行するためには、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] インターネット インフォメーション サービス (IIS) 仮想ディレクトリを作成した後で、LOBWebApplication プロジェクトをビルドする必要があります。  
@@ -36,9 +37,9 @@ ms.lasthandoff: 11/28/2017
   
 5.  **仮想ディレクトリ エイリアス**] ページの [、**エイリアス**ボックスに、入力**LOBWebApplication**、順にクリック**次**です。  
   
-6.  **Web サイトのコンテンツのディレクトリ**] ページで [**参照**です。 フォルダーの参照 ダイアログ ボックスに移動 ***\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\LOBWebApplication**、クリックして**OK**です。 **[次へ]**をクリックします。  
+6.  **Web サイトのコンテンツのディレクトリ**] ページで [**参照**です。 フォルダーの参照 ダイアログ ボックスに移動 ***\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\LOBWebApplication**、クリックして**OK**です。 **[次へ]** をクリックします。  
   
-7.  **仮想ディレクトリのアクセス許可**] ページで、選択を解除**読み取り**[ **(ASP) などのスクリプトを実行**、順にクリック**[次へ]**です。  
+7.  **仮想ディレクトリのアクセス許可**] ページで、選択を解除**読み取り**[ **(ASP) などのスクリプトを実行**、順にクリック **[次へ]** です。  
   
 8.  **仮想ディレクトリの作成ウィザードを正常に完了しました** ページで、をクリックして**完了**仮想ディレクトリを作成します。  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  **仮想サーバーの管理**セクションで、**管理パスの定義**です。  
   
-6.  **新しいパスの追加**セクションで、**パス**ボックスに、入力**/LOBWebApplication**です。  
+6.  **新しいパスの追加**セクションで、**パス**ボックスに、入力 **/LOBWebApplication**です。  
   
 7.  **型**を選択**エクスクルード パス**、順にクリック**OK**です。  
   
@@ -62,7 +63,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Visual Studio 2008**、順にクリック**Microsoft Visual Studio 2008**です。  
   
-2.  **[ファイル]** メニューの **[開く]**をポイントし、 **[プロジェクト/ソリューション]**をクリックします。  
+2.  **[ファイル]** メニューの **[開く]** をポイントし、 **[プロジェクト/ソリューション]** をクリックします。  
   
 3.  プロジェクトを開く ダイアログ ボックスに移動 ***\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\lobwebapplication**を選択、 **LOBWebApplication.sln**ソリューション ファイル、およびクリック**開く**です。  
   

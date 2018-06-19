@@ -1,17 +1,17 @@
 ---
-title: "ExpenseReportSubmission |Microsoft ドキュメント"
-ms.custom: 
+title: ExpenseReportSubmission |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
 - examples, orchestrations
 ms.assetid: d0bacab3-7092-44b8-a1c6-6f574a2db8bd
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969768"
 ---
 # <a name="expensereportsubmission"></a>ExpenseReportSubmission
 ExpenseReportSubmission サンプルは、Microsoft Excel などのリッチ クライアントのドキュメントを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションに送信する方法を示すものです。  
@@ -114,7 +115,7 @@ ExpenseReportSubmission サンプルは、Microsoft Excel などのリッチ ク
   
     6.  をクリックして、 **Identity**プロパティ ダイアログ ボックスのタブ ボックスし、このアプリケーション プールのメンバーであるユーザーを実行する id を変更する、 **BizTalk Isolated Host Users**ユーザー グループ。  このユーザーは、ローカルのメンバーでもある必要があります**IIS_WPG**ユーザー グループ。  
   
-    7.  この SDK サンプルの仮想ディレクトリを、新しいアプリケーション プールで実行するよう構成します。 **アプリケーション プール:**設定は、**仮想ディレクトリ**仮想ディレクトリのプロパティ ダイアログ ボックスのタブです。 このサンプルは、用に作成された仮想ディレクトリ**ExpenseReportSubmission**です。  
+    7.  この SDK サンプルの仮想ディレクトリを、新しいアプリケーション プールで実行するよう構成します。 **アプリケーション プール:** 設定は、**仮想ディレクトリ**仮想ディレクトリのプロパティ ダイアログ ボックスのタブです。 このサンプルは、用に作成された仮想ディレクトリ**ExpenseReportSubmission**です。  
   
 4.  IIS の Web サービス拡張を HTTPReceive.dll 用に追加します。  
   
@@ -126,7 +127,7 @@ ExpenseReportSubmission サンプルは、Microsoft Excel などのリッチ ク
   
     4.  をクリックして**追加**を表示する、 **Add file**  ダイアログ ボックス。  
   
-    5.  をクリックして**参照**を表示する、**開く** ダイアログ ボックスに移動して *\<BizTalk Server のインストール フォルダー\>*\HttpReceive\BTSHTTPReceive.dll をクリック**開く**、をクリックして**OK**です。  
+    5.  をクリックして**参照**を表示する、**開く** ダイアログ ボックスに移動して *\<BizTalk Server のインストール フォルダー\>* \HttpReceive\BTSHTTPReceive.dll をクリック**開く**、をクリックして**OK**です。  
   
     6.  ためのオプションを有効にする**拡張機能の状態を許可 に設定** をクリック**OK**です。  
   

@@ -1,17 +1,17 @@
 ---
-title: "Oracle データベース内のラージ オブジェクト データ型とテーブルに対する操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース内のラージ オブジェクト データ型とテーブルに対する操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - operations, performing on tables
 - operations, performing on LOB data
 ms.assetid: 74276b85-daf1-4d0f-92f9-46d5c27a95a6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967848"
 ---
 # <a name="run-operations-on-tables-with-large-object-data-types-in-oracle-database"></a>Oracle データベース内のラージ オブジェクト データ型とテーブルに対する操作を実行します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle ラージ オブジェクト (LOB) データ型のサポートを提供します。  
@@ -80,7 +81,7 @@ ms.lasthandoff: 11/28/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |[Identifier]|型**要求**です。|  
-    |メッセージの種類|ドロップダウン リストから、展開**スキーマ**を選択して*Operate_LOB です。OracleDBBindingSchema.ReadLOB**、*場所*Operate_LOB* BizTalk プロジェクトの名前を指定します。 *OracleDBBindingSchema*顧客テーブルに ReadLOB および UpdateLOB 操作に対して生成されるスキーマです。|  
+    |メッセージの種類|ドロップダウン リストから、展開**スキーマ**を選択して*Operate_LOB です。OracleDBBindingSchema.ReadLOB**、* 場所*Operate_LOB* BizTalk プロジェクトの名前を指定します。 *OracleDBBindingSchema*顧客テーブルに ReadLOB および UpdateLOB 操作に対して生成されるスキーマです。|  
   
 5.  次の 3 つ以上のメッセージを作成する前の手順を繰り返します。 **プロパティ**、新しいメッセージ ウィンドウ、次の操作します。  
   
@@ -150,7 +151,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  **関連付けのプロパティ** ダイアログ ボックスには、手順 1. で昇格させたプロパティが一覧表示されます。 プロパティを選択し、をクリックして**追加**です。  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  その他の昇格させたプロパティの関連付けの種類を作成するには、この手順を繰り返します。  
   

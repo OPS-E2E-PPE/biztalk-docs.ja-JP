@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Server を使用して、トランザクションのコンテキストでの SAP からの Idoc を受信 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して、トランザクションのコンテキストでの SAP からの Idoc を受信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - transactional context
 - IDOCs, receiving in a transactional context using BizTalk Server
 ms.assetid: 6a01bb82-7292-4b70-8ad7-996d389a9365
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962744"
 ---
 # <a name="receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server"></a>BizTalk Server を使用して、トランザクションのコンテキストでの SAP からの Idoc を受信します。
 IDOC を受信して、トランザクションのコンテキストでは、トランザクションのコンテキストで tRFCs の受信に似ています。 このような場合は、SAP システムから受信した IDOC が含まれています、TID には一部として、  *\<TransactionalRfcOperationIdentifier\>* 要素。 この TID はアダプターによって、SQL データベースに永続化されます。 IDOC を送信する SAP システム内の ABAP コードに"COMMIT WORK"ステートメントがある場合、TID は、SAP システムへの応答が送信された後、SQL データベースから削除されます。  

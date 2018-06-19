@@ -1,14 +1,14 @@
 ---
-title: "オブジェクトの管理パックで検出 |Microsoft ドキュメント"
-ms.custom: 
+title: オブジェクトの管理パックで検出 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 291e8936-b299-4719-9f7e-edc86f76fcbd
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298866"
 ---
 # <a name="objects-the-management-pack-discovers"></a>管理パックで検出されるオブジェクト
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックは、次の表で説明されているオブジェクトの種類を検出します。 オブジェクトの検出方法の詳細については、次を参照してください。、 [Operations Manager 2007 のオブジェクト検出](http://go.microsoft.com/fwlink/?LinkId=108505)Operations Manager 2007 R2 または 2012 オンライン ライブラリ (http://go.microsoft.com/fwlink/?LinkId=108505) のトピックです。  

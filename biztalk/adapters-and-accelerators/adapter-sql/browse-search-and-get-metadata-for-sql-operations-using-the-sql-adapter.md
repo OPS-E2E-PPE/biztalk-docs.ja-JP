@@ -1,14 +1,14 @@
 ---
-title: "参照、検索、および SQL アダプターを使用して SQL 操作のメタデータを取得 |Microsoft ドキュメント"
-ms.custom: 
+title: 参照、検索、および SQL アダプターを使用して SQL 操作のメタデータを取得 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cdd5ca6f-30ff-4d32-a656-bbd54b9d072e
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967960"
 ---
 # <a name="browse-search-and-get-metadata-for-sql-operations-using-the-sql-adapter"></a>参照、検索、および SQL アダプターを使用して SQL 操作のメタデータを取得
 このセクションで説明を使用する方法については、 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、および[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。 これらを使用して[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]コンポーネント、することができます。  
@@ -74,7 +75,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  SQL Server への接続、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。 参照してください[アダプター サービスのアドインを使用して Visual Studio での SQL Server への接続](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-in-visual-studio-using-the-consume-adapter-service-add-in.md)手順についてはします。  
   
-2.  **選択コントラクト型**を一覧表示、送信操作を選択**クライアント (送信操作)**です。  
+2.  **選択コントラクト型**を一覧表示、送信操作を選択**クライアント (送信操作)** です。  
   
 3.  **カテゴリを選択**ボックスに、使用できる成果物に接続する SQL Server データベースが一覧表示されます。 そのアイテムに使用できる操作を表示するアイテムをクリックして、**利用可能なカテゴリと操作**ボックス。  
   
@@ -133,7 +134,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  SQL Server への接続、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。 参照してください[アダプター サービスのアドインを使用して Visual Studio での SQL Server への接続](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-in-visual-studio-using-the-consume-adapter-service-add-in.md)手順についてはします。  
   
-2.  **選択コントラクト型**一覧で、受信操作は、選択**サービス (入力方向の操作)**です。  
+2.  **選択コントラクト型**一覧で、受信操作は、選択**サービス (入力方向の操作)** です。  
   
 3.  サポートされているすべての受信操作、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]はルート ノードで使用可能です。 使用可能な受信操作を表示するには、ルート ノード (/) をクリックします。  
   
@@ -212,7 +213,7 @@ ms.lasthandoff: 11/28/2017
   
     -   複数の異なる実行で複数の操作のスキーマを生成するかどうか[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]を選択するかどうかを確認、**一意なスキーマ型を生成** チェック ボックスを生成される XSD ファイルの一意の名前空間に含まれるように、複雑なデータは、"CT1"を入力します。  
   
-6.  **[OK]**をクリックします。 スキーマ ファイルは、BizTalk プロジェクトと同じ場所にある拡張子が .xsd で保存されます。  
+6.  **[OK]** をクリックします。 スキーマ ファイルは、BizTalk プロジェクトと同じ場所にある拡張子が .xsd で保存されます。  
   
     > [!NOTE]
     >  使用している場合、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータを生成する SQL Server の成果物の既定では、ファイルは、特定の名前付け規則で作成します。 生成された WSDL が含まれています、 **fileNameHint** XSD ファイルに割り当てられる名前を含む注釈タグ。 たとえば、テーブル操作のスキーマ ファイルのファイル名のヒントには、規約 TableOperation が次に示します。\<スキーマ\>.\<tablename\>です。 生成された XSD ファイルの名前をカスタマイズする場合でプレフィックスを入力することができます、**ファイル名のプレフィックス**ボックス。 最後に、XSD ファイルの名前に到達する時にファイル名のプレフィックス + fileNameHint + (必要な場合、ファイル名が一意であることを確認する) の一意の整数。  
@@ -259,7 +260,7 @@ ms.lasthandoff: 11/28/2017
   
      構成できるオプション、**オプションの高度な**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用する場合は、ボックスが使用可能なオプションの一部に相当します。 これらのオプションの詳細については、次を参照してください。 [ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)です。 
   
-5.  **[OK]**をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアント クラス (または WCF サービスのインターフェイス) を保存し、操作と、プロジェクト ディレクトリに選択したカテゴリのヘルパー コード。 既定では、構成ファイルも保存されます。 受信と送信操作です。 わずかに異なるファイルが生成されます。詳細については、次を参照してください。 [SQL Server の成果物のために、WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)です。  
+5.  **[OK]** をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアント クラス (または WCF サービスのインターフェイス) を保存し、操作と、プロジェクト ディレクトリに選択したカテゴリのヘルパー コード。 既定では、構成ファイルも保存されます。 受信と送信操作です。 わずかに異なるファイルが生成されます。詳細については、次を参照してください。 [SQL Server の成果物のために、WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)です。  
   
  記載されている任意のノードを選択することができます、**利用可能なカテゴリと操作**ボックス。 カテゴリ ノードを選択する場合は、すべてのノードとそのサブ ノードで使用可能な操作が選択します。 たとえば、Employee テーブルに対して表示される操作のすべての WCF クライアントを生成するには、従業員ノードを選択できます。  
   

@@ -1,11 +1,11 @@
 ---
-title: "SAP の SAPDiscoveredObjects.xml ファイルに関する |Microsoft ドキュメント"
-ms.custom: 
+title: SAP の SAPDiscoveredObjects.xml ファイルに関する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SAPDiscoveredObjects.xml
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Data Provider for SAP
 - Visual Studio DDEX plug-in
 ms.assetid: 46ef600d-57ae-4c42-94ce-3099e42482f1
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960720"
 ---
 # <a name="about-the-sapdiscoveredobjectsxml-file-in-sap"></a>SAP の SAPDiscoveredObjects.xml ファイルについて
 インストールする場合、 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) と共に、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール、セットアップ プログラムは、通常は SAPDiscoveredObjects.xml ファイルをコピー\<インストール ドライブ\>: \program ファイル\Microsoft Shared\Adapters\SAP です。 新規インストールした後、ファイルの内容、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]次のようになります。  

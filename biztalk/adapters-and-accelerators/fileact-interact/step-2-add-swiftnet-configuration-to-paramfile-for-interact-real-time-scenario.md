@@ -1,14 +1,14 @@
 ---
-title: "手順 2: の Paramfile に SWIFTNet 構成を追加する、リアルタイムのシナリオを対話 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: の Paramfile に SWIFTNet 構成を追加する、リアルタイムのシナリオを対話 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6a900a6e-3e08-430a-8766-4a7192adba5e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964608"
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-real-time-scenario"></a>手順 2: の Paramfile に SWIFTNet 構成を追加する、リアルタイムのシナリオの対話
 SAG で作成されたサーバー メッセージのパートナーは、これらの値で初期化するために受信者を有効にする SWIFTNet paramfile で指定する必要があります。 手順を完了する必要があります、プロシージャを開始する前に[手順 1: 対話リアルタイム シナリオでは、SWIFT アダプターを構成](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md)です。  

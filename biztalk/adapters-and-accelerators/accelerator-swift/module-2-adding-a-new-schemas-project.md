@@ -1,18 +1,18 @@
 ---
-title: "第 2 章: 新しいスキーマ プロジェクトの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '第 2 章: 新しいスキーマ プロジェクトの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - projects, schemas
 - tutorial, creating new schemas
 - schemas, adding to projects
 ms.assetid: 54ecafe9-6dbf-4d06-ba47-5059432bda3d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207794"
 ---
 # <a name="module-2-adding-a-new-schemas-project"></a>第 2 章: 新しいスキーマ プロジェクトの追加
 インストールするときに[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]更新[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]に基本的な BizTalk プロジェクトを含めます。 このプロジェクト テンプレートは、スキーマ デザイナー、BizTalk マッパー、オーケストレーション デザイナー、パイプライン デザイナー、および BizTalk エクスプ ローラーなどのツールと BizTalk ソリューションを作成するために必要なその他のツールにアクセスできます。  

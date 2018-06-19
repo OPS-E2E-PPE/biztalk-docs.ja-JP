@@ -1,17 +1,17 @@
 ---
-title: "SWIFT ヘッダー |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT ヘッダー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SWIFT, headers
 - headers [SWIFT]
 ms.assetid: b599cca2-8ae6-42db-b3a2-712ba12c1017
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214378"
 ---
 # <a name="swift-headers"></a>SWIFT ヘッダー
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] SWIFT のヘッダーおよびトレーラのスキーマを提供します。 A4SWIFT が既に組み込まれているこれらのさまざまな金融 (FIN) メッセージのインターチェンジのスキーマにします。 カスタム SWIFT FIN 書式スタイル メッセージの種類 (たとえば、N98 メッセージ) を作成する場合は、独自の形式にヘッダーとトレーラーのスキーマを組み込むことができます。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 09/20/2017
 |**シーケンス番号 (ブロック 1)**|サービス識別子を持つすべての FIN メッセージ**01**または**05**転送の方向に適切な次の予期されたシーケンス番号です。<br /><br /> サービス識別子を持つ FIN メッセージの**21**または**25**サービスの受信確認を送ったメッセージのシーケンス番号はします。|  
 |**サービス識別子 (ブロック 1)**|FIN アプリケーションに適切なメッセージの種類を示す 2 桁の数字の数。 FIN の 000 ~ 999 の種類のすべてのメッセージを使用して**01**です。 02 に 43 の種類のすべてのメッセージ、その 2 桁の数字サービス メッセージ型を使用します。|  
 |**セッション識別子 (ブロック 1)**|必要に応じて、アプリケーションの現在のセッション数が、ログインに基づきます。|  
-|**開始区切り記号 (すべてのブロック)**|左中かっこ: **{**です。|  
+|**開始区切り記号 (すべてのブロック)**|左中かっこ: **{** です。|  
   
 ## <a name="see-also"></a>参照  
  [スキーマの操作](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)

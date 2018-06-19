@@ -22,6 +22,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "25969632"
 ---
 # <a name="how-to-configure-wcf-services-published-with-the-biztalk-wcf-service-publishing-wizard"></a>BizTalk WCF サービス公開ウィザードで公開した WCF サービスを構成する方法
 BizTalk WCF サービス公開ウィザードを使用して WCF サービスを公開した後、これらのサービスを適切に構成する必要があります。 このトピックでは、公開した WCF サービスを構成する方法について説明します。  
@@ -73,7 +74,7 @@ BizTalk WCF サービス公開ウィザードを使用して WCF サービスを
   
 12. コマンド プロンプトを開き、BizTalk Server WCF サービス公開ウィザードが %SystemDrive%\InetPub で WCF サービスを作成するフォルダーに移動\\, 、メモ帳を使用して Web.config ファイルを開きます。  
   
-13. メモ帳で、内部の次の行を追加、 **\<system.web\>**要素。  
+13. メモ帳で、内部の次の行を追加、 **\<system.web\>** 要素。  
   
     ```  
     <trust level="Full" originUrl="" />  
@@ -94,7 +95,7 @@ BizTalk WCF サービス公開ウィザードを使用して WCF サービスを
   
     1.  メモ帳で、%SystemDrive%\InetPub で BizTalk Server WCF サービス公開ウィザードが WCF サービスを作成するフォルダーの Web.config を開いて\\します。  
   
-    2.  メモ帳で、次のように設定します。、、 **httpGetEnabled**属性、 **\<serviceMetadata\>**要素を次の行として false にします。  
+    2.  メモ帳で、次のように設定します。、、 **httpGetEnabled**属性、 **\<serviceMetadata\>** 要素を次の行として false にします。  
   
         ```  
         <serviceMetadata httpGetEnabled="false" httpsGetEnabled="false" />  

@@ -1,17 +1,17 @@
 ---
-title: "SAP アダプターでのインストールに関する問題のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: SAP アダプターでのインストールに関する問題のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - troubleshooting, installation
 - installation, troubleshooting
 ms.assetid: fdfdaf44-c32d-43a5-998d-02032c0b9211
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964152"
 ---
 # <a name="troubleshoot-installation-issues-with-the-sap-adapter"></a>SAP アダプターでのインストールに関する問題をトラブルシューティングします。
 Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]コンピューターで、製品バイナリをコピーし、各アダプターのバインドを登録します。 このセクションでは、インストール エラーを解決するのには、トラブルシューティングの手法について説明します。  

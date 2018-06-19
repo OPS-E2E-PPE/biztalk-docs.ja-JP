@@ -1,14 +1,14 @@
 ---
-title: "追加して、Visual Studio のツールボックスからカスタム Functoid の削除 |Microsoft ドキュメント"
-ms.custom: 
+title: 追加して、Visual Studio のツールボックスからカスタム Functoid の削除 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 28f798cc-da97-4332-a842-ba87ac7b13b8
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965616"
 ---
 # <a name="adding-and-removing-custom-functoids-from-the-visual-studio-toolbox"></a>Visual Studio ツールボックスに対するカスタム Functoid の追加と削除
 ここでは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックスに対し、カスタム Functoid を追加する方法と削除する方法について説明します。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/28/2017
   
     4.  **ツールボックス アイテムの選択**ダイアログ ボックスで、をクリックして、 **BizTalk マッパー Functoid**タブです。  
   
-    5.  をクリックして**リセット**、クリックして**[ok]**です。 この処理は時間がかかる場合があります。  
+    5.  をクリックして**リセット**、クリックして **[ok]** です。 この処理は時間がかかる場合があります。  
   
          カスタム Functoid が、各カテゴリを示すタブの下にあるツールボックスに表示されます。  
   
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  **ツールボックス アイテムの選択**ダイアログ ボックスで、をクリックして、 **BizTalk マッパー Functoid**タブです。  
   
-    3.  をクリックして**リセット**、クリックして**[ok]**です。  
+    3.  をクリックして**リセット**、クリックして **[ok]** です。  
   
         > [!NOTE]
         >  カスタム Functoid でインライン コードが公開されない場合は、アセンブリがグローバル アセンブリ キャッシュで使用可能になっているかどうかを確認してください。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  アセンブリを含むフォルダーに切り替えます。  
   
-    3.  コマンド プロンプトで次のように入力します。 **gacutil/if < assembly_path >**です。 たとえば、アセンブリ名が FunctoidLibrary.dll の場合は、入力**gacutil/if FunctoidLibrary.dll**です。  
+    3.  コマンド プロンプトで次のように入力します。 **gacutil/if < assembly_path >** です。 たとえば、アセンブリ名が FunctoidLibrary.dll の場合は、入力**gacutil/if FunctoidLibrary.dll**です。  
   
     4.  入力が完了したら、**終了**です。  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  **ツールボックス アイテムの選択**ダイアログ ボックスで、をクリックして、 **BizTalk マッパー Functoid**タブです。  
   
-    3.  Select の一覧で、カスタム functoid を検索、**削除**チェック ボックスをクリックして**[ok]**です。  
+    3.  Select の一覧で、カスタム functoid を検索、**削除**チェック ボックスをクリックして **[ok]** です。  
   
      \- または -  
   
@@ -108,7 +109,7 @@ ms.lasthandoff: 11/28/2017
   
     1.  開始**Visual Studio コマンド プロンプト**です。  
   
-    2.  コマンド プロンプトで次のように入力します。 **gacutil/u < assembly_display_name >**です。 たとえば、アセンブリ名が FunctoidLibrary.dll の場合は、入力**gacutil/if FunctoidLibrary**です。  
+    2.  コマンド プロンプトで次のように入力します。 **gacutil/u < assembly_display_name >** です。 たとえば、アセンブリ名が FunctoidLibrary.dll の場合は、入力**gacutil/if FunctoidLibrary**です。  
   
     3.  入力が完了したら、**終了**です。  
   

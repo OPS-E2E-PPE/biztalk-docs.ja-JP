@@ -1,14 +1,14 @@
 ---
-title: "傍受のため、Workflow Foundation アプリケーションを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 傍受のため、Workflow Foundation アプリケーションを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9c82e83f-9dbd-4325-9f30-778eba892296
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970048"
 ---
 # <a name="how-to-configure-a-workflow-foundation-application-for-interception"></a>傍受のために Workflow Foundation アプリケーションを構成する方法
 BAM アクティビティ データの収集を開始するには、まず、BAM インターセプター ソフトウェアをインストールし、[!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)] インターセプターを使用するようにアプリケーションを構成する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] およびその依存関係がインストールされ、BizTalk グループが少なくとも 1 つ作成されていることを前提とします。  
@@ -44,7 +45,7 @@ BAM アクティビティ データの収集を開始するには、まず、BAM
   
 1.  をクリックして**開始** をクリックし、**実行**Windows コマンド プロンプトを開きます。  
   
-2.  型**cmd**で、**開く**フィールドをクリックして**[ok]**です。  
+2.  型**cmd**で、**開く**フィールドをクリックして **[ok]** です。  
   
 3.  ディレクトリ変更のコマンドを使用して、展開する監視モデルが格納されているディレクトリに移動します。 たとえば、 **cd c:\businessprocess\Orders**です。  
   
@@ -66,7 +67,7 @@ BAM アクティビティ データの収集を開始するには、まず、BAM
   
 1.  をクリックして**開始** をクリックし、**実行**Windows コマンド プロンプトを開きます。  
   
-2.  型**cmd**で、**開く**フィールドをクリックして**[ok]**です。  
+2.  型**cmd**で、**開く**フィールドをクリックして **[ok]** です。  
   
 3.  ディレクトリ変更のコマンドを使用して、展開するインターセプター構成ファイルが格納されているディレクトリに移動します。 たとえば、 **cd c:\businessprocess\Orders**です。  
   

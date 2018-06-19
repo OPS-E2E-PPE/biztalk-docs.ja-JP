@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルを使用して SQL からクエリ通知を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して SQL からクエリ通知を受け取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1c9def31-3c5a-4326-b798-31bde0ff2568
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964088"
 ---
 # <a name="receive-query-notifications-from-sql-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SQL のクエリ通知を受信します。
 このトピックの内容を構成する方法を示しています、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server データベースからクエリ通知メッセージを受信します。 通知を示すためには、テーブル、従業員、"Status"列を含むを検討してください。 このテーブルに新しいレコードが挿入されると、[状態] 列の値は 0 に設定します。 [状態] 列が「0」であるすべてのレコードを取得する SQL ステートメントを使用して通知を登録することによって通知を受信するアダプターを構成します。 これを行うための SQL ステートメントを指定することによって、 **NotificationStatement**プロパティをバインドします。 アダプターのクライアントは、通知を受信した後、SQL Server データベースで、それ以降の作業を実行するためのロジックを格納できます。 わかりやすくするため、この例では、アダプターのクライアントが「0」として、[状態] 列を持つテーブル内のすべてのレコードを一覧表示します。  

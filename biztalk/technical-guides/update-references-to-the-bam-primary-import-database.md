@@ -1,14 +1,14 @@
 ---
-title: "BAM プライマリ インポート データベースへの参照の更新 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM プライマリ インポート データベースへの参照の更新 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3da3b545-0d81-491b-bc37-0a980a7814b6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22301826"
 ---
 # <a name="update-references-to-the-bam-primary-import-database"></a>BAM プライマリ インポート データベースへの参照を更新します。
 BAM プライマリ インポート データベースがバックアップされていると、システムまたはデータに障害が発生したときには、別のコンピュータにバックアップを復元でき、さらにその名前を変更することができます。  

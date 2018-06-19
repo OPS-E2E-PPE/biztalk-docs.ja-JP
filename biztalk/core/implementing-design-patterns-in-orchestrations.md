@@ -1,15 +1,15 @@
 ---
-title: "オーケストレーションのデザイン パターンを実装する |Microsoft ドキュメント"
-description: "アグリゲーター、コンテンツ ベースのルーティング、動的ルーター、エラー処理、メッセージ ブローカー、および BizTalk Server での複数のデザイン パターン"
-ms.custom: 
+title: オーケストレーションのデザイン パターンを実装する |Microsoft ドキュメント
+description: アグリゲーター、コンテンツ ベースのルーティング、動的ルーター、エラー処理、メッセージ ブローカー、および BizTalk Server での複数のデザイン パターン
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f62ba955-018a-40e7-b303-497acc906019
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014249"
 ---
 # <a name="implement-design-patterns-in-orchestrations"></a>オーケストレーションのデザイン パターンを実装します。
 ここでは、BizTalk Server の一般的なプログラミング パターンとエンタープライズ統合パターンについて説明します。 単一のパターン、または複数のパターンの組み合わせを利用してビジネス プロセスをデザインし、そのデザインを BizTalk オーケストレーション デザイナーの図形によって実装することができます。  

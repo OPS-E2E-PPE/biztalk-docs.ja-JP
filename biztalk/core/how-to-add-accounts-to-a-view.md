@@ -1,18 +1,18 @@
 ---
-title: "ビューにアカウントを追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ビューにアカウントを追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Excel add-in [BAM], security
 - Add-Account command [BAM]
 - managing [BAM], adding accounts to views
 ms.assetid: 0875796c-82a4-4165-9bed-88e8ba466548
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968672"
 ---
 # <a name="how-to-add-accounts-to-a-view"></a>アカウントをビューに追加する方法
 管理者を使用して、**アカウントの追加**ユーザーを BAM ビューに関連付けるし、BAM Excel ワークシート ビューを不正アクセスから保護するコマンド。 ユーザーが BAM ビューを保存するときに、ビューはブック内で非表示になっている SQL 接続文字列を参照します。 ブックは保護されていますが、さらにドキュメントが確実に保護されるようにする必要があります。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  コマンド プロンプトで「[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking」と入力して、追跡フォルダーに移動し、 **Enter**キーを押します。  
   
-3.  型**bm アカウントの追加-accountname:\<アカウント名\>-ビュー:\<ビュー名\>**です。  
+3.  型**bm アカウントの追加-accountname:\<アカウント名\>-ビュー:\<ビュー名\>** です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

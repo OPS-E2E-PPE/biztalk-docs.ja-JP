@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server のパフォーマンスの最適化 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server のパフォーマンスの最適化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 809913f6-63b1-47cd-9961-0e10397108ca
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298530"
 ---
 # <a name="optimizing-biztalk-server-performance"></a>BizTalk Server のパフォーマンスを最適化します。
 このセクションでは、BizTalk Server のパフォーマンスを向上させるためのガイドラインを提供します。 一覧表示の最適化は、BizTalk Server をインストールして、構成後に適用されます。  

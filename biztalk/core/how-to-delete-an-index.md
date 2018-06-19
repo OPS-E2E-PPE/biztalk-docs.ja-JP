@@ -1,18 +1,18 @@
 ---
-title: "インデックスを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: インデックスを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - indexes [BAM], deleting
 - Get-Index command [BAM]
 - aggregations [BAM], indexes
 ms.assetid: 5f9c7989-3357-451f-8565-1d4b01c1d16a
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970472"
 ---
 # <a name="how-to-delete-an-index"></a>インデックスを削除する方法
 管理者を使用して、 **delete インデックス**特定のチェックポイントで指定したアクティビティのインデックスを削除するコマンド。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  コマンド プロンプトで「[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking」と入力して、追跡フォルダーに移動し、 **Enter**キーを押します。  
   
-3.  型**bm delete インデックス-indexname:\<インデックス名\>-アクティビティ:\<アクティビティ名\>**です。  
+3.  型**bm delete インデックス-indexname:\<インデックス名\>-アクティビティ:\<アクティビティ名\>** です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

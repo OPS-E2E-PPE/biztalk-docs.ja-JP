@@ -1,17 +1,17 @@
 ---
-title: "レッスン 1: 関連するビジネス ルールの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 1: 関連するビジネス ルールの展開 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, deploying
 - deploying, business rules
 ms.assetid: f8f5b103-4b66-4836-8165-99692574961a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960768"
 ---
 # <a name="lesson-1-deploying-the-related-business-rules"></a>レッスン 1: 関連するビジネス ルールの展開
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]で、A4SWIFT ソフトウェア開発キット (SDK)、ビジネス ルール エンジン (BRE) の展開ユーティリティと呼ばれるプログラムが含まれています。 このレッスンでは、このユーティリティを使用して展開されたスキーマのアセンブリを調べる、必須のルールを決定および必要なボキャブラリとすべてのスキーマのポリシーを展開します。  
@@ -50,6 +51,6 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  各展開の手順を確認するテキスト エディターを使用してログ ファイルを開くことができます。  
   
-7.  ルール エンジン更新サービスを再起動します。 クリックして**開始**をクリックすると、**実行**入力、 **services.msc**をクリックすると、 **[ok]**です。 **サービス (ローカル)**ウィンドウを右クリックして**ルール エンジン更新サービス**、クリックして**再起動**です。  
+7.  ルール エンジン更新サービスを再起動します。 クリックして**開始**をクリックすると、**実行**入力、 **services.msc**をクリックすると、 **[ok]** です。 **サービス (ローカル)** ウィンドウを右クリックして**ルール エンジン更新サービス**、クリックして**再起動**です。  
   
  進みます[レッスン 2: ビジネス ルール作成ツールを使用して、展開を確認する](../../adapters-and-accelerators/accelerator-swift/lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool.md)です。

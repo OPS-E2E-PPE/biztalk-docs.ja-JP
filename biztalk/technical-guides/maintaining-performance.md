@@ -1,14 +1,14 @@
 ---
-title: "パフォーマンスを維持する |Microsoft ドキュメント"
-ms.custom: 
+title: パフォーマンスを維持する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ae7e63ed-4e28-45b1-ab00-be9f9488a2e6
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298146"
 ---
 # <a name="maintaining-performance"></a>パフォーマンスを維持します。
 このセクションでは、定期的なメンテナンスのチェック中に検出されたパフォーマンスの問題を解決できるようにするためのものでは、情報を提供します。 ツールと重大な問題になる前に、潜在的な問題を識別する事前に、ここで説明する手法を使用することもできます。  

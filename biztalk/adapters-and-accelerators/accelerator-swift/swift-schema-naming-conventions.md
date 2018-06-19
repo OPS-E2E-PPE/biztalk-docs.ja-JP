@@ -11,7 +11,7 @@ helpviewer_keywords:
 - naming conventions [schemas]
 - schemas, naming conventions
 ms.assetid: 3c1f2519-2575-4178-89c1-e97333c1e6bd
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25960824"
 ---
 # <a name="swift-schema-naming-conventions"></a>SWIFT スキーマの名前付け規則
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] BizTalk エディターを使用して作成された世界銀行間財務通信 (SWIFT) FIN メッセージの社会のスキーマが含まれています。 これらのスキーマは、全体で、次の規則に従います。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 03/28/2018
   
 -   ルートの名前は、各メッセージ スキーマ内で**SWIFT_CATEGORY*z*_MT*zxx*_Interchange**ここで、 *z*は、メッセージ カテゴリ (メッセージの種類の最初の桁) および*zxx*は、メッセージ型です。  
   
--   各メッセージ スキーマのターゲット名前空間は **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/Category*z*/MT*zxx * * *、どこ*z*メッセージ カテゴリ (メッセージの種類の最初の桁) および*zxx*は、メッセージ型です。  
+-   各メッセージ スキーマのターゲット名前空間は **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/Category*z */MT*zxx * * *、どこ*z*メッセージ カテゴリ (メッセージの種類の最初の桁) および*zxx*は、メッセージ型です。  
   
 -   ドキュメントの種類が **MT*zxx * * *、どこ*zxx*は、メッセージ型です。  
   

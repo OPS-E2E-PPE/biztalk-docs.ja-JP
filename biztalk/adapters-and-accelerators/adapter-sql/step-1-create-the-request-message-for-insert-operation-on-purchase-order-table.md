@@ -1,14 +1,14 @@
 ---
-title: "手順 1: Purchase_Order テーブルに対する挿入操作の要求メッセージを作成する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: Purchase_Order テーブルに対する挿入操作の要求メッセージを作成する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fde018d8-9d9a-42ea-8ee9-e3632450b9d7
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966008"
 ---
 # <a name="step-1-create-the-request-message-for-insert-operation-on-purchaseorder-table"></a>手順 1: Purchase_Order テーブルに対する挿入操作の要求メッセージを作成します。
 ![4 のステップ 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -89,7 +90,7 @@ ms.lasthandoff: 11/28/2017
   
     3.  **署名**] タブで、[、**アセンブリに署名**チェック ボックスをオンします。  
   
-    4.  **厳密な名前キー ファイルを選択して**一覧で、クリックして**\<参照\>**です。  
+    4.  **厳密な名前キー ファイルを選択して**一覧で、クリックして**\<参照\>** です。  
   
     5.  厳密な名前のキー ファイルを作成したフォルダーに移動し、をクリックして**開く**です。  
   

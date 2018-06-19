@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して Oracle データベースで特定のタスクを完了する通知メッセージを処理 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して Oracle データベースで特定のタスクを完了する通知メッセージを処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 376055a7-98a6-4055-b6cd-2f5971349a6a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967875"
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-oracle-database-using-biztalk-server"></a>BizTalk Server を使用して Oracle データベースで特定のタスクを完了する通知メッセージの処理
 使用することができます、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベース テーブルへの変更の通知を受信します。 ただし、アダプターのみ通知を送信することレコードの一部挿入、更新されると、またはされた特定のデータベース テーブルで削除します。 後処理これらのレコードには、クライアント アプリケーション自体で処理される必要があります。 このトピックでは、Oracle データベースから受信した通知の種類に基づいてテーブル内のレコードを処理する方法のシナリオ ベースの説明を示します。  
@@ -92,7 +93,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  値を指定**InboundOperationType**、 **NotificationPort**、および**NotificationStatement**スキーマの生成中にプロパティをバインドします。 このバインドのプロパティの詳細については、次を参照してください。[バインドのプロパティの使用](https://msdn.microsoft.com/library/dd788467.aspx)です。 バインドのプロパティを指定する方法については、次を参照してください。 [Oracle データベースのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)です。  
   
-2.  コントラクトの種類を選択して**サービス (入力方向の操作)**です。  
+2.  コントラクトの種類を選択して**サービス (入力方向の操作)** です。  
   
 3.  スキーマを生成、**通知**操作します。  
   
@@ -244,8 +245,8 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
         |プロパティのバインド|値|  
         |----------------------|-----------|  
         |**InboundOperationType**|これを設定して**通知**です。|  
-        |**NotificationPort**|ODP.NET が Oracle データベースからデータベースの変更通知をリッスンするように開く必要があるポート番号を指定します。 これは、Windows ファイアウォールの例外一覧に追加する必要があります同じポート番号を設定します。 Windows ファイアウォールの例外リストにポートを追加する方法については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)です。<br /><br /> **重要:**これを既定値は-1 を設定する場合は、通知メッセージを受け取るための Windows ファイアウォールを完全に無効にする必要があります。|  
-        |**NotificationStatement**|これを設定します。<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> **注:**スキーマ名とテーブル名を指定する必要があります。 たとえば、 `SCOTT.ACCOUNTACTIVITY`のようにします。|  
+        |**NotificationPort**|ODP.NET が Oracle データベースからデータベースの変更通知をリッスンするように開く必要があるポート番号を指定します。 これは、Windows ファイアウォールの例外一覧に追加する必要があります同じポート番号を設定します。 Windows ファイアウォールの例外リストにポートを追加する方法については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)です。<br /><br /> **重要:** これを既定値は-1 を設定する場合は、通知メッセージを受け取るための Windows ファイアウォールを完全に無効にする必要があります。|  
+        |**NotificationStatement**|これを設定します。<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> **注:** スキーマ名とテーブル名を指定する必要があります。 たとえば、 `SCOTT.ACCOUNTACTIVITY`のようにします。|  
         |**NotifyOnListenerStart**|これを設定して**True**です。|  
   
          異なるバインディングのプロパティの詳細については、次を参照してください。[バインドのプロパティの使用](https://msdn.microsoft.com/library/dd788467.aspx)です。  

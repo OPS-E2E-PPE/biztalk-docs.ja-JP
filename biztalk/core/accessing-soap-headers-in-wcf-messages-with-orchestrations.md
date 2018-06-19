@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションでの WCF メッセージにおける SOAP ヘッダーへのアクセス |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションでの WCF メッセージにおける SOAP ヘッダーへのアクセス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, SOAP headers [WCF services]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF services, SOAP headers
 - SOAP headers, WCF messages
 ms.assetid: fe02fb02-18d6-4fc6-89e0-b06bdbfa5cb4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966840"
 ---
 # <a name="accessing-soap-headers-in-wcf-messages-with-orchestrations"></a>オーケストレーションにおける WCF メッセージでの SOAP ヘッダーへのアクセス
 オーケストレーションにおける受信 WCF メッセージの SOAP ヘッダーの値にアクセスするにはコンテキスト プロパティを使用する**WCF です。InboundHeaders**です。 WCF アダプタを受信メッセージのカスタム SOAP ヘッダーと標準 SOAP ヘッダーのコピー、 **WCF です。InboundHeaders**プロパティです。 WCF アダプタを使用すると、プログラムによってコンテキスト プロパティへの昇格または書き込みを行うプロパティを選択することもできます。 参照してください[公開された WCF サービスでの SOAP ヘッダー](../core/soap-headers-with-published-wcf-services.md)詳細についてはします。  

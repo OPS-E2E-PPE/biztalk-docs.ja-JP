@@ -1,14 +1,14 @@
 ---
-title: "エンコードのサポートを拡張 |Microsoft ドキュメント"
-ms.custom: 
+title: エンコードのサポートを拡張 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93a40fa6-d0da-416e-97fb-675ddde3f005
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204834"
 ---
 # <a name="extended-encoding-support"></a>エンコードのサポートを拡張
 既定で、HL7 の受信パイプライン、BTAHL72X がのみ ASCII エンコードをサポートします。 つまり、この値に置き換え、127 より大きいと、入力メッセージの任意の文字"?"。 これは、127 より大きい値を等価の値を持つ文字は、ASCII 文字セットで表されないためです。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  HL7 には、ASCII (既定)、西ヨーロッパ言語、および UTF8 エンコードのみサポートしています。 HL7 はそれらをサポートしないため、他のエンコード オプションを選択しません。  
   
-6.  **[ファイル]** メニューの **[すべてを保存]**をクリックします。  
+6.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
 7.  プロジェクトを配置する。  
   

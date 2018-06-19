@@ -1,18 +1,18 @@
 ---
-title: "スキーマでのカスタム データ型の作成 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマでのカスタム データ型の作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - 2.X schemas, creating Z data types [Z objects]
 - data types, creating [Z objects]
 - Z objects, creating Z data types
 ms.assetid: e545c849-d414-4d5d-bb56-d3f9d5238c70
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25960680"
 ---
 # <a name="creating-custom-data-types-in-schemas"></a>スキーマでカスタム データ型を作成します。
 カスタム データ型を作成するには、datatypes_ で\<*バージョン*\>.xsd 共通のスキーマです。 既存のデータ型、基本データ型、またはテーブルで定義された列挙体のカスタム データ型を作成できます。  

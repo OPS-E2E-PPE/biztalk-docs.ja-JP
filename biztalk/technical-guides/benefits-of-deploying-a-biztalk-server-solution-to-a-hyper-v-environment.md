@@ -1,14 +1,14 @@
 ---
-title: "Hyper V を BizTalk Server ソリューションを展開するメリットを潜在的な環境を仮想化 |Microsoft ドキュメント"
-ms.custom: 
+title: Hyper V を BizTalk Server ソリューションを展開するメリットを潜在的な環境を仮想化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 588c70f0-68f0-4e58-8f3d-aa6834397bd4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295930"
 ---
 # <a name="potential-benefits-of-deploying-a-biztalk-server-solution-to-a-hyper-v-virtualized-environment"></a>仮想化環境の Hyper V を BizTalk Server ソリューションを展開する潜在的なメリット
 このトピックでは、展開する次の利点の一部について説明します、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HYPER-V 仮想環境にソリューションです。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **1 台の物理コンピューター - 複数の個別の論理セキュリティ境界を定義する機能**HYPER-V は個別の論理的なセキュリティの境界、または 1 つの物理ハードウェア リソース内のパーティションの作成に対応します。 パーティションは、オペレーティング システムが実行される、ハイパーバイザーによってサポートされる分離の 1 つの論理単位です。 たとえばをインストールするときに、これを行うにはことはできませんが、1 台の HYPER-V ホスト コンピューターで実行する複数の BizTalk Server グループを作成できます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]単一のホスト コンピューターのホスト オペレーティング システムにします。  
   
--   **使いやすさの展開と管理 –**の統合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]より少ない物理サーバーにコンピューターの展開を簡略化します。 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)].vhd ファイルを使用して、物理および仮想のコンピューターの展開の簡素化されたメソッドを使用します。 さらに、包括的な HYPER-V 管理ソリューションは、System Center Virtual Machine Manager と共に使用することができます。 System Center Virtual Machine Manager に関する詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkID=111303](http://go.microsoft.com/fwlink/?LinkID=111303)です。  
+-   **使いやすさの展開と管理 –** の統合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]より少ない物理サーバーにコンピューターの展開を簡略化します。 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)].vhd ファイルを使用して、物理および仮想のコンピューターの展開の簡素化されたメソッドを使用します。 さらに、包括的な HYPER-V 管理ソリューションは、System Center Virtual Machine Manager と共に使用することができます。 System Center Virtual Machine Manager に関する詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkID=111303](http://go.microsoft.com/fwlink/?LinkID=111303)です。  
   
 -   **HYPER-V クラスターの許容範囲のサポートをフォールト**のための HYPER-V クラスターの対応するアプリケーションは、Windows Server 2008 は、ネイティブ ホストのクラスタ リングを HYPER-V 仮想化環境で作成されたバーチャル マシンのサポートを提供します。  
   

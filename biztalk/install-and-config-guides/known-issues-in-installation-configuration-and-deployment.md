@@ -1,14 +1,14 @@
 ---
-title: "既知の問題のインストール、構成、および展開 |Microsoft ドキュメント"
-ms.custom: 
+title: 既知の問題のインストール、構成、および展開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ed1c08eb-d647-4a4a-b9a3-c4d84e8d4b82
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299834"
 ---
 # <a name="known-issues-in-installation-configuration-and-deployment"></a>インストール、構成、および展開での既知の問題
 ## <a name="some-biztalk-edias2-artifacts-are-still-active-after-unconfiguring"></a>一部の BizTalk EDI/AS2 アイテムが構成解除した後もアクティブになっている  

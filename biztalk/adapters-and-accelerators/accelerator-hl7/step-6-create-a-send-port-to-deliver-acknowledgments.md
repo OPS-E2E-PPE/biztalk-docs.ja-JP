@@ -1,14 +1,14 @@
 ---
-title: "手順 6: 受信確認を配信する送信ポートの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 6: 受信確認を配信する送信ポートの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 739b3e60-db56-46e9-a6b1-0acbe0c08f55
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208002"
 ---
 # <a name="step-6-create-a-send-port-to-deliver-acknowledgments"></a>手順 6: 受信確認を配信する送信ポートを作成します。
 この手順では、バッチの発生元への受信確認を返信するポートを作成します。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 09/20/2017
     |**送信請求応答を有効になっています。**|としてフィールドを保持**いいえ**です。|  
     |**送信の受信確認の場所 (URI)**|型**127.0.0.1:65535**|  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  送信ポートのプロパティ] ダイアログ ボックスの**送信パイプライン**[ **BTAHL72XPipelines.BTAHL72XSendPipeline**です。  
   

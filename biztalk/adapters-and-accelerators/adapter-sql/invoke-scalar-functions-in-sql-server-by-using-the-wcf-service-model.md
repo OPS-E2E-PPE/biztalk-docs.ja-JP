@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルを使用して SQL Server のスカラー関数を呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して SQL Server のスカラー関数を呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a331e275-3c81-41a8-9ba1-3a801ebc259a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964248"
 ---
 # <a name="invoke-scalar-functions-in-sql-server-by-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SQL Server のスカラー関数を呼び出す
 使用することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server のスカラー関数を呼び出す、WCF サービス モデルを使用して .NET アプリケーションでします。 アダプターは、SQL サーバー上で直接呼び出すことのできるメソッドとして、スカラー関数を公開します。 アダプターがスカラー関数をサポートする方法の詳細については、次を参照してください。[実行スカラー関数は、SQL アダプターを使用して SQL Server](../../adapters-and-accelerators/adapter-sql/execute-scalar-functions-in-sql-server-using-the-sql-adapter.md)です。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/28/2017
   
 |操作|メソッド シグネチャ|  
 |---------------|----------------------|  
-|スカラー関数の名前|パブリック*< return_type >**< scalar_function_name >*(param1、param2、...)|  
+|スカラー関数の名前|パブリック *< return_type >**< scalar_function_name >*(param1、param2、...)|  
   
  \<*retrun_type* \>関数定義で定義されている戻り値の型を =  
   

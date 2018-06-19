@@ -1,14 +1,14 @@
 ---
-title: "モニタのしきい値を表示する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: モニタのしきい値を表示する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 88d88b15-0691-49d9-b116-1a2ae95bead9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297706"
 ---
 # <a name="how-to-display-monitor-thresholds"></a>モニタのしきい値を表示する方法
 モニタのしきい値を表示するには、このセクションで説明されているスクリプトを使用します。 このスクリプトは、ほとんどのモニタに対して機能します。 次の表で説明する列を含む .csv ファイルを作成し、Office Excel を使用して表示できます。  

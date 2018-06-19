@@ -1,17 +1,17 @@
 ---
-title: "手順 2: Wcf-custom 一方向送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: Wcf-custom 一方向送信ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF-Custom one-way send port, configuring
 - migration
 ms.assetid: ae13222e-42e7-45a7-9b2a-0a6779b21736
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962792"
 ---
 # <a name="step-2-configure-a-wcf-custom-one-way-send-port"></a>手順 2: Wcf-custom 一方向送信ポートを構成します。
 ![手順 3 の 2](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
  **所要時間:** 10 分  
   
- **目標:**このステップで、フラット ファイル IDOC を SAP システムに送信する WCF カスタム ポートを構成します。 ポートを構成した後は、Wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成します。  
+ **目標:** このステップで、フラット ファイル IDOC を SAP システムに送信する WCF カスタム ポートを構成します。 ポートを構成した後は、Wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成します。  
   
 ## <a name="prerequisites"></a>前提条件  
  構築し、SAP システムに Idoc を送信する vPrev BizTalk プロジェクトを展開した必要があります。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。  
   
-    1.  クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、接続、SAP システムにメッセージを送信する URI を指定します。 接続 URI の詳細については、次を参照してください。 [SAP システムの接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
+    1.  クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、接続、SAP システムにメッセージを送信する URI を指定します。 接続 URI の詳細については、次を参照してください。 [SAP システムの接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
   
          ![送信ポートで指定された接続 URI](../../adapters-and-accelerators/adapter-sap/media/53ae71e1-89ec-49c5-8096-ff04a2c94c0a.gif "53ae71e1-89ec-49c5-8096-ff04a2c94c0a")  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
 9. **送信パイプライン**ドロップダウン リストで、 **ConvertToFlatFile**です。 このフラット ファイル アセンブラー パイプラインは、vPrev BizTalk プロジェクトの一部では既にし、XML IDOC をフラット ファイル IDOC に変換するために使用します。  
   
-10. **[OK]**をクリックします。  
+10. **[OK]** をクリックします。  
   
 ### <a name="to-configure-the-biztalk-application"></a>BizTalk アプリケーションを構成するには  
   
@@ -97,7 +98,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  このトピックの前半で作成した、Wcf-custom 送信ポートを選択します。  
   
-    3.  **[OK]**をクリックします。  
+    3.  **[OK]** をクリックします。  
   
      アプリケーションの構成の詳細についてを参照してください「どのように構成するアプリケーションへ」 [http://go.microsoft.com/fwlink/?LinkId=102360](http://go.microsoft.com/fwlink/?LinkId=102360)です。  
   

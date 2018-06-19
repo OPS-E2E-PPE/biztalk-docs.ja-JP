@@ -1,11 +1,11 @@
 ---
-title: "HL7 メッセージ構造 |Microsoft ドキュメント"
-ms.custom: 
+title: HL7 メッセージ構造 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, segments
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - segments, messages
 - messages, message structure
 ms.assetid: 4dbef56d-97ae-466d-bc8a-dc96c40896f6
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205090"
 ---
 # <a name="hl7-message-structure"></a>HL7 メッセージの構造体
 HL7 メッセージは、トリガー イベントに関連付けられている階層構造です。 標準 HL7 は、「() を作成するデータをシステム間でやり取りの必要性医療保険の実際のイベント」としてトリガー イベントを定義します。 各トリガー イベントは、メッセージは、トリガ イベントをサポートするために必要なデータの種類を定義する抽象メッセージに関連付けられます。 抽象のメッセージは、セグメントのコレクションであり、繰り返しとこれらのセグメントを含めることのルールが含まれます。 次の表は、トリガー イベント A04 – 患者の登録に関連付けられている抽象メッセージの例を示します。  

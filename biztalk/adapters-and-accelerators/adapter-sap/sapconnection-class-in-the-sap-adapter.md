@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964296"
 ---
 # <a name="sapconnection-class-in-the-sap-adapter"></a>SAP アダプターで SAPConnection クラス
 次のセクションではメソッドとプロパティの一覧表示、 **SAPConnection**クラスです。 これは、SAP アプリケーション サーバーへの ADO.NET 接続を表します。  

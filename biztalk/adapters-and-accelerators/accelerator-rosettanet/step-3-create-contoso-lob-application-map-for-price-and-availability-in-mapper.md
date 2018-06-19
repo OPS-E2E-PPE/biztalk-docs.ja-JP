@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964992"
 ---
 # <a name="step-3-creating-the-contoso-lob-application-maps-for-the-price-and-availability-project-using-biztalk-mapper"></a>手順 3: Price and Availability プロジェクトの BizTalk マッパーを使用して用の Contoso LOB アプリケーション マップの作成
 ここでは、2 つのマップを作成します。このマップは 2 つの取引先間でメッセージを正常に交換するために必要な変換を定義します。 このシナリオでは、Contoso ERP システムは Price and Availability Request のメッセージ形式を既に標準化しています。 2 つのマップは、取引先である Fabrikam からの要求メッセージと応答メッセージを、内部的に定義された Contoso のメッセージにそれぞれマップします。  
@@ -59,9 +60,9 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-link-schema-fields-in-the-pip3a2requesttocontosopricerequest-map"></a>PIP3A2RequestToContosoPriceRequest マップのスキーマ フィールドをリンクするには  
   
-1.  送信先スキーマ ペインで右クリックし、 **\<スキーマ\>**ノードをクリックして**ツリー ノードの展開**です。  
+1.  送信先スキーマ ペインで右クリックし、 **\<スキーマ\>** ノードをクリックして**ツリー ノードの展開**です。  
   
-2.  送信元スキーマ ペインで右クリックし、 **\<スキーマ\>**ノードをクリックして**ツリー ノードの展開**です。  
+2.  送信元スキーマ ペインで右クリックし、 **\<スキーマ\>** ノードをクリックして**ツリー ノードの展開**です。  
   
 3.  ドラッグ、 **GlobalProductIdentifier**フィールドを**ProductID**送信先スキーマ ペインでフィールドです。  
   

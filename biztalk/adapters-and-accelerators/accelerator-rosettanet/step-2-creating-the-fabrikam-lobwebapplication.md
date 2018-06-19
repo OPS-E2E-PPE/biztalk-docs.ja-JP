@@ -1,17 +1,17 @@
 ---
-title: "手順 2: Fabrikam LOBWebApplication の作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: Fabrikam LOBWebApplication の作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private process tutorial, creating LOBWebApplication
 - LOBWebApplication
 ms.assetid: 2ff8bd20-7fbc-4e16-b177-bb4afac7f7c3
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964328"
 ---
 # <a name="step-2-creating-the-fabrikam-lobwebapplication"></a>手順 2: Fabrikam LOBWebApplication の作成
 ここでは、Fabrikam が 3A2 PIP 要求を Contoso に送信するために使用する LOB アプリケーションを作成します。 LOBWebApplication プロジェクトは、[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK にインストールされています。 Web アプリケーションを実行するためには、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] インターネット インフォメーション サービス (IIS) 仮想ディレクトリを作成し、LOBWebApplication プロジェクトをビルドする必要があります。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  **仮想ディレクトリ エイリアス**] ページの [、**エイリアス**ボックスに、入力**LOBWebApplication**、順にクリック**次**です。  
   
-6.  **Web サイトのコンテンツのディレクトリ**] ページで [**参照**を選択、 **\<ドライブ\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\lobwebapplication**フォルダー、およびクリック**OK**です。 **[次へ]**をクリックします。  
+6.  **Web サイトのコンテンツのディレクトリ**] ページで [**参照**を選択、 **\<ドライブ\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\lobwebapplication**フォルダー、およびクリック**OK**です。 **[次へ]** をクリックします。  
   
 7.  **仮想ディレクトリのアクセス許可**] ページで [**次**です。  
   

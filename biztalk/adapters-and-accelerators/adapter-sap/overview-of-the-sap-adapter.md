@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963032"
 ---
 # <a name="overview-of-the-sap-adapter"></a>SAP アダプターの概要
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]を WCF サービスとして SAP システムを公開します。 アダプターのクライアントは、アダプターと SOAP メッセージを交換することで、SAP システムで操作を実行できます。 アダプターは WCF メッセージを処理して、操作を実行する SAP システムへの適切な呼び出しを行います。 アダプターは、SOAP メッセージの形式でクライアントに SAP システムからの応答を返します。  

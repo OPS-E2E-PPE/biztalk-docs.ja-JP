@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server Databases2 の統合 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server Databases2 の統合 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d7fc4fe6-3fc2-4164-9f16-90b6f473ba8c
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296322"
 ---
 # <a name="consolidate-the-biztalk-server-databases2"></a>BizTalk Server データベース2 の統合
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] のさまざまな機能で使用するデータを格納するため、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 内に最大 13 個のデータベースを個別に作成する必要があります。 これらのデータベースを管理し保守するにはオーバーヘッドが必要になるため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、これらのデータベースのいくつかを 1 つのデータベースに統合することができます。 ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースの統合を実現する方法と、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースの統合を実現するための考慮事項について説明します。  

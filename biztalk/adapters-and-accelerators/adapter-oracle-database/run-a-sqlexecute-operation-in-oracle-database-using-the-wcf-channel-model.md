@@ -1,18 +1,18 @@
 ---
-title: "WCF チャネル モデルを使用して Oracle データベースで SQLEXECUTE 操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF チャネル モデルを使用して Oracle データベースで SQLEXECUTE 操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - running a SQLEXECUTE statement, using a channel
 - how to, run a SQLEXECUTE statement by using a channel
 - WCF channel model, running a SQLEXECUTE statement
 ms.assetid: e1af11ef-3f44-4726-99ca-d6961d79e651
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960808"
 ---
 # <a name="run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して Oracle データベースで SQLEXECUTE 操作を実行します。
 このセクションでは、チャネルを経由する Oracle データベースに SQLEXECUTE 操作を実行する方法を示します。 SOAP メッセージのメッセージとメッセージのアクションの両方を指定する必要があります。 SQLEXECUTE 操作の詳細については、次を参照してください。 [WCF サービス モデルを使用して Oracle データベースで実行 SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md)です。  

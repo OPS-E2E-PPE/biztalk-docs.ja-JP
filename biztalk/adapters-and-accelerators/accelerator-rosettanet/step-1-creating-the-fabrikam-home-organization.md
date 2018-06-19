@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963632"
 ---
 # <a name="step-1-creating-the-fabrikam-home-organization"></a>手順 1: Fabrikam ホーム組織の作成
 ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールを使用して、Fabrikam のホーム組織を作成します。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 11/28/2017
     |**Fax 番号**|型**555-555-5555**です。|  
     |**サプライ チェーン コード**|型**電子部品**です。|  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [手順 2: Contoso 取引先組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-contoso-partner-organization.md)

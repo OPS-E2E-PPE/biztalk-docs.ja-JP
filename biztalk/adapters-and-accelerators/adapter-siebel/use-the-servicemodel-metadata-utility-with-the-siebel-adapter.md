@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25963512"
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-siebel-ebusiness-applications"></a>BizTalk adapter 用 Siebel eBusiness Applications ServiceModel メタデータ ユーティリティ ツールを使用します。
 ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用するには操作のための WCF クライアント クラスを生成すること、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]を公開します。 WCF クライアント クラスを生成する svcutil.exe を実行した後は、コードで生成されたファイルをインクルードし、Siebel システムに対して操作を実行する WCF クライアント クラスのインスタンスを作成できます。  

@@ -1,14 +1,14 @@
 ---
-title: "手順 2 C: FileAct ストア アンド フォワード (プル) シナリオの FILEACT 送信ポートの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2 C: FileAct ストア アンド フォワード (プル) シナリオの FILEACT 送信ポートの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8743a868-9625-477b-a7da-673bfa262723
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964048"
 ---
 # <a name="step-2c-add-a-fileact-send-port-for-the-fileact-store-and-forward-pull-scenario"></a>手順 2 C: FileAct ストア アンド フォワード (プル) シナリオの FILEACT 送信ポートの追加
 この手順を開始する前に行う必要があります[Step 2B: Sw:HandleFileRequest と FileAct ストア アンド フォワード (プル) シナリオの Sw:HandleSnFRequest メッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports--get-sw-handlefilerequest-and-sw-handlesnfrequest.md)です。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 11/28/2017
     |**RequestCrypto**|ドロップダウン リストから選択**FALSE**です。|  
     |**要求元**|適切な設定\<リクエスター\> SWIFT でのプロビジョニングに基づく文字列。|  
     |**応答側**|適切な設定\<レスポンダー\>文字列。|  
-    |**サービス名**|適切な設定**\<サービス名\>**です。|  
+    |**サービス名**|適切な設定**\<サービス名\>** です。|  
     |**受信確認のインジケーター**|ドロップダウン リストから選択**FALSE**です。|  
     |**イベントのエンドポイント**|ドロップダウン リストから選択**FALSE**です。|  
     |**ファイルの圧縮**|ドロップダウン リストから選択**None**です。|  
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  メッセージでのトランザクション数を転送する場合は、サービスのプロファイルでモードを設定「トランザクション数」に、FileAct 送信ポート。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
 8.  **送信ポートのプロパティ** ウィンドウで、次の操作します。  
   
@@ -73,11 +74,11 @@ ms.lasthandoff: 11/28/2017
     |**これを使用してください。**|**これを行う**|  
     |------------------|--------------------|  
     |**プロパティ**|ドロップダウン リストから選択**BTS です。ReceivePortName**です。|  
-    |**演算子**|ドロップダウン リストから選択 **==**です。|  
+    |**演算子**|ドロップダウン リストから選択 **==** です。|  
     |**値**|型**Tutorial_IA_InputRequest_SnF**です。|  
     |**グループ化**|既定値を使用します。|  
   
-10. **[OK]**をクリックします。  
+10. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [手順 2 a: ファイルの受信場所 FileAct ストア アンド フォワード (プル) シナリオの追加](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md)   

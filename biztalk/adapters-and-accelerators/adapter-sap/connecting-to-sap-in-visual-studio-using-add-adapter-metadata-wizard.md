@@ -1,14 +1,14 @@
 ---
-title: "アダプター メタデータのウィザードを追加する Visual Studio を使用して SAP への接続 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター メタデータのウィザードを追加する Visual Studio を使用して SAP への接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a442837b-e7d8-4edb-9c5e-5603d4c58fe5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966240"
 ---
 # <a name="connecting-to-sap-in-visual-studio-using-add-adapter-metadata-wizard"></a>アダプター メタデータのウィザードを追加する Visual Studio を使用して SAP への接続
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]は BizTalk アダプターとしても公開し、そのため、使用することができます、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]アダプターを使用して SAP システム上で実行する操作のスキーマを生成します。  
@@ -39,14 +40,14 @@ ms.lasthandoff: 11/28/2017
         |**カテゴリ**|をクリックして**アダプターを追加**です。|  
         |**[テンプレート]**|をクリックして**アダプター メタデータの追加**です。|  
   
-    4.  **[追加]**をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
+    4.  **[追加]** をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
   
     5.  アダプターの追加ウィザードで選択**WCF SAP**です。 コンピューターを選択して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]がインストールされていると、BizTalk データベースの名前。  
   
         > [!IMPORTANT]
         >  BizTalk で構成されている WCF SAP ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。  
   
-    6.  **[次へ]**をクリックします。  
+    6.  **[次へ]** をクリックします。  
   
 2.  **バインディングを選択**ドロップダウン リスト、選択**sapBinding**  をクリック**構成**です。  
   
@@ -75,9 +76,9 @@ ms.lasthandoff: 11/28/2017
     >   
     >  **SncPartnerName**通信パートナーの SNC 名を取得するプロパティをバインドします。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
-7.  **[接続]**をクリックします。 接続が確立されると、接続状態は表示**接続**です。  
+7.  **[接続]** をクリックします。 接続が確立されると、接続状態は表示**接続**です。  
   
      次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。 グラフィカル ユーザー インターフェイスが同じ、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]です。  
   

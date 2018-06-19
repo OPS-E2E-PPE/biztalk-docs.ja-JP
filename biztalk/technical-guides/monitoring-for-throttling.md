@@ -1,14 +1,14 @@
 ---
-title: "監視の調整を |Microsoft ドキュメント"
-ms.custom: 
+title: 監視の調整を |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d1d4c72-6942-4572-b27f-c58d37c94062
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299762"
 ---
 # <a name="monitoring-for-throttling"></a>監視の調整
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックの制限の状態を示すパフォーマンス カウンターを監視する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 制限について理解するいくつかの重要な要因は次のとおりです。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 09/20/2017
   
 -   配信の制限 (**MsgBox では、送信ポートやオーケストレーション]-> [**)、受信レートは、メッセージ ボックスからのメッセージが受信される数。 送信速度は、メッセージを正常にアダプター経由で配信するレートです。  
   
--   公開の制限 (**受信アダプター**または**オーケストレーション MsgBox]-> [)、**受信レートは、アダプターからメッセージが受信される速度、送信速度レート メッセージは、メッセージ ボックスに接続します。  
+-   公開の制限 (**受信アダプター**または**オーケストレーション MsgBox]-> [)、** 受信レートは、アダプターからメッセージが受信される速度、送信速度レート メッセージは、メッセージ ボックスに接続します。  
   
 -   データベース内の合計メッセージ以外のホスト間では、制限メカニズムは存在しません。  
   

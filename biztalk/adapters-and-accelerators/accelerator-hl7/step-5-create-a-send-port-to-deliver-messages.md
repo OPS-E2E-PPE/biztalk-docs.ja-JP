@@ -1,14 +1,14 @@
 ---
-title: "手順 5: メッセージを配信する送信ポートの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 5: メッセージを配信する送信ポートの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f56ad7a7-5c77-4191-a001-691e5e0652a1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207602"
 ---
 # <a name="step-5-create-a-send-port-to-deliver-messages"></a>手順 5: メッセージを配信する送信ポートを作成します。
 このステップでは、作成し、受信したバッチに含まれている個々 のメッセージを送信するためのポートを構成します。 チュートリアルの後半では、送信元パーティ (Tutorial_BatchSource) の断片化を有効[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー。 その結果、BizTalk 統合エンジンをフラグメント化、バッチを個別のメッセージと[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]この手順で作成した送信ポート経由でそれらのメッセージを送信します。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
     |**送信請求応答を有効になっています。**|フィールドの右側をクリックして**送信請求-応答の有効な**、し、**はい**ドロップダウン リストからです。|  
     |**送信の受信確認の場所 (URI)**|型**127.0.0.1:65535**|  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  送信ポートのプロパティ] ダイアログ ボックスの**送信パイプライン**[ **BTAHL72XPipelines.BTAHL72XSendPipeline**です。  
   
@@ -56,15 +57,15 @@ ms.lasthandoff: 09/20/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**プロパティ**(1 行目)|下のフィールドをクリックして**プロパティ**、し、 **BTS です。MessageType**ドロップダウン リストからです。|  
-    |**演算子**|選択**! =**ドロップダウン リストからです。|  
+    |**演算子**|選択 **! =** ドロップダウン リストからです。|  
     |**値**|型**http://microsoft.com/HealthCare/HL7/2X#ACK_24_GLO_DEF**です。|  
     |**グループ化**|選択**AND**ドロップダウン リストからです。|  
     |**プロパティ**(2 番目の行)|下のフィールドをクリックして**プロパティ**、し、 **BTS です。MessageType**ドロップダウン リストからです。|  
-    |**演算子**|選択**! =**ドロップダウン リストからです。|  
+    |**演算子**|選択 **! =** ドロップダウン リストからです。|  
     |**値**|型**http://microsoft.com/HealthCare/HL7/2X#ACK_25_GLO_DEF です。**|  
     |**グループ化**|選択**と**ドロップダウン リストからです。|  
     |**プロパティ**(3 行目)|下にある 2 番目の行でフィールドをクリックして**プロパティ**、し、 **BTS です。MessageType**ドロップダウン リストからです。|  
-    |**演算子**|選択**! =**ドロップダウン リストからです。|  
+    |**演算子**|選択 **! =** ドロップダウン リストからです。|  
     |**値**|型**StaticAck**です。|  
   
 7.  **Enter**をクリックします。 クリックしてダイアログ ボックスの下部にあるペインで、フィルター式の入力が正しいことを確認してください**OK**です。  

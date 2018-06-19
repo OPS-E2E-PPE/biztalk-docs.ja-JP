@@ -1,14 +1,14 @@
 ---
-title: "AS2 経由でメッセージの静的送信ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 経由でメッセージの静的送信ポートの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2708d6a9-b105-42d3-abe3-7085b39da55a
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969280"
 ---
 # <a name="configuring-a-static-send-port-for-messages-over-as2"></a>AS2 経由でのメッセージの静的送信ポートの構成
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成し、静的送信ポートを経由して AS2 メッセージを送信する方法について説明します。 この構成作業では、静的送信ポートを作成し、アグリーメントを構成します。 必要に応じて、送信ポートで使用される暗号化証明書のセットアップも行います。  
@@ -28,12 +29,12 @@ ms.lasthandoff: 11/28/2017
   
 |場所|プロパティ|設定|  
 |--------------|--------------|-------------|  
-|**送信ポートのプロパティ: 全般**|ポートの種類|静的な送信請求-応答 (場合に mdn を要求する**受信確認 (Mdn)**一方向アグリーメント タブのページが選択されている)<br /><br /> -静的な一方向の送信ポート (場合に mdn を要求する**受信確認 (Mdn)**一方向アグリーメント タブのページではオフ)|  
+|**送信ポートのプロパティ: 全般**|ポートの種類|静的な送信請求-応答 (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブのページが選択されている)<br /><br /> -静的な一方向の送信ポート (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブのページではオフ)|  
 |**送信ポートのプロパティ: 全般**|トランスポートの種類|HTTP<br /><br /> 注:<br /><br /> EDIINT/AS2 でエンコードされたメッセージには、HTTP アダプタのみ使用できます。 このトランスポートは、HTTP アダプタ以外のアダプタでは使用できません。|  
 |**送信ポートのプロパティ: 全般**|送信ハンドラー|BizTalkServerApplication|  
 |**送信ポートのプロパティ: 全般**|[送信パイプライン]|-AS2EdiSend (EDI でエンコードされたメッセージ)<br /><br /> -AS2Send (非 EDI メッセージの場合)|  
-|**送信ポートのプロパティ: 全般**|[受信ハンドラー]<br /><br /> (場合に mdn を要求する**受信確認 (Mdn)**一方向アグリーメント タブのページが選択されている)|BizTalkServerApplication|  
-|**送信ポートのプロパティ: 全般**|受信パイプライン。<br /><br /> (場合に mdn を要求する**受信確認 (Mdn)**一方向アグリーメント タブのページが選択されている)|AS2Receive|  
+|**送信ポートのプロパティ: 全般**|[受信ハンドラー]<br /><br /> (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブのページが選択されている)|BizTalkServerApplication|  
+|**送信ポートのプロパティ: 全般**|受信パイプライン。<br /><br /> (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブのページが選択されている)|AS2Receive|  
 |**HTTP トランスポートのプロパティ**|送信先 URL|\<送信先 URL の文字列\>|  
 |**HTTP トランスポートのプロパティ**|[チャンク エンコードを有効にする]|クリア|  
 |**送信ポートのプロパティ: フィルター**|プロパティ|BTS.MessageType<br /><br /> 注:<br /><br /> BTS.ReceivePortName などの、さまざまなフィルタ式を使用できます。<br /><br /> 注:<br /><br /> 非 EDI メッセージの場合は、別のプロパティに対してフィルタ処理を行う必要があります。|  

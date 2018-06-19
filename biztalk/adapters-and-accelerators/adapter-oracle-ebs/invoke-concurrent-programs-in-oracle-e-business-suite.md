@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite での同時実行プログラムを起動 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite での同時実行プログラムを起動 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 85c55a35-bee4-4b50-8b00-e4198ad4c2af
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964616"
 ---
 # <a name="invoke-concurrent-programs-in-oracle-e-business-suite"></a>Oracle E-business Suite での同時実行プログラムを呼び出す
 Oracle E-business Suite では、Oracle アプリケーションで特定の操作を実行する実行可能な同時実行プログラムを公開します。 各 Oracle アプリケーションでは、一連の標準的な同時実行プログラム (同じすべての操作で) と Oracle アプリケーションに固有の特定の同時実行プログラムがあります。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプター クライアントが呼び出すことのできる操作としてすべての同時実行プログラムを公開します。 アダプターで同時実行プログラムをサポートする方法の詳細については、次を参照してください。[同時実行プログラムで操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)です。 同時実行プログラムを起動するためのメッセージを SOAP の構造に関する情報を参照してください[同時実行プログラムのメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-concurrent-programs.md)です。  
@@ -235,7 +236,7 @@ Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResp
 </RACUSTResponse>  
 ```  
   
- Oracle E-business Suite からの応答には、要求 ID が含まれています。 オーケストレーションは応答メッセージから要求 ID を抽出しを呼び出すメッセージを構築、 **Get_Status**同時実行プログラムを実行する Oracle E-business Suite に渡します、 **Get_Status。**同時実行プログラムです。 番目の応答の受信後に**Get_Status**同時実行のプログラムは、最初の応答として同じファイルの場所にコピーします。 応答、 **Get_Status**同時実行プログラム、次のようになります。  
+ Oracle E-business Suite からの応答には、要求 ID が含まれています。 オーケストレーションは応答メッセージから要求 ID を抽出しを呼び出すメッセージを構築、 **Get_Status**同時実行プログラムを実行する Oracle E-business Suite に渡します、 **Get_Status。** 同時実行プログラムです。 番目の応答の受信後に**Get_Status**同時実行のプログラムは、最初の応答として同じファイルの場所にコピーします。 応答、 **Get_Status**同時実行プログラム、次のようになります。  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>   

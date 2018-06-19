@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite で特定のタスクを完了する通知メッセージを処理 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite で特定のタスクを完了する通知メッセージを処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4bddeb5a-3819-40cc-aae0-c49963f0beb1
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968088"
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-oracle-e-business-suite"></a>Oracle E-business Suite で特定のタスクを完了する通知メッセージの処理
 使用することができます、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle データベース テーブルへの変更の通知を受信します。 ただし、アダプターのみ通知を送信することレコードの一部挿入、更新されると、またはされた特定のデータベース テーブルで削除します。 後処理これらのレコードには、クライアント アプリケーション自体で処理される必要があります。 このトピックでは、Oracle データベースから受信した通知の種類に基づいてテーブル内のレコードを処理する方法のシナリオ ベースの説明を示します。  
@@ -94,7 +95,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  値を指定**InboundOperationType**、 **NotificationPort**、および**NotificationStatement**スキーマの生成中にプロパティをバインドします。 このバインドのプロパティの詳細については、次を参照してください。 [BizTalk Adapter for Oracle E-business Suite バインド プロパティ読む](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)です。 バインドのプロパティを指定する方法については、次を参照してください。 [for Oracle E-business Suite のバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-binding-properties-for-oracle-e-business-suite.md)です。  
   
-2.  コントラクトの種類を選択して**サービス (入力方向の操作)**です。  
+2.  コントラクトの種類を選択して**サービス (入力方向の操作)** です。  
   
 3.  スキーマを生成、**通知**操作します。  
   

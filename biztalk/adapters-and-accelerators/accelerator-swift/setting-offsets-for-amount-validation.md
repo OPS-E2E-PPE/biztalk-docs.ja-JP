@@ -1,11 +1,11 @@
 ---
-title: "時間検証のためのオフセットを設定 |Microsoft ドキュメント"
-ms.custom: 
+title: 時間検証のためのオフセットを設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - amounts, validating
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - amounts, offsets
 - offsets
 ms.assetid: 39d5510c-52e6-4fd9-9632-582b508f04d7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961256"
 ---
 # <a name="setting-offsets-for-amount-validation"></a>時間検証のためのオフセットを設定します。
 メッセージ型 MT102、MT103、や MT103PLUS 金額のフィールドの使用に関する規則は、それぞれの検証ポリシーのルールによって検証されます。 金額のフィールドは、厳密に一致することができます。 または金額の範囲内であることを検証することができます。  

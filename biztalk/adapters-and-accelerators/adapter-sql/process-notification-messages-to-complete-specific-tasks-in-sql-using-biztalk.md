@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL の特定のタスクを完了する通知メッセージを処理 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL の特定のタスクを完了する通知メッセージを処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8538cb89-1cca-45ad-b6f4-041e117963ff
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967344"
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk-server"></a>BizTalk Server を使用して SQL の特定のタスクを完了する通知メッセージの処理
 使用することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server データベース テーブルへの変更の通知を受信します。 ただし、アダプターのみ通知を送信することレコードの一部挿入、更新されると、またはされた特定のデータベース テーブルで削除します。 後処理これらのレコードには、クライアント アプリケーション自体で処理される必要があります。 このトピックでは、SQL Server データベースから受信した通知の種類に基づいてテーブル内のレコードを処理する方法のシナリオ ベースの説明を示します。  
@@ -91,7 +92,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  値を指定**InboundOperationType**と**NotificationStatement**スキーマの生成中にプロパティをバインドします。 このバインドのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。 バインドのプロパティを指定する方法については、次を参照してください。 [SQL アダプターのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-binding-properties-for-the-sql-adapter.md)です。  
   
-2.  コントラクトの種類を選択して**サービス (入力方向の操作)**です。  
+2.  コントラクトの種類を選択して**サービス (入力方向の操作)** です。  
   
 3.  スキーマを生成、**通知**操作します。  
   
@@ -232,7 +233,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
         |プロパティのバインド|値|  
         |----------------------|-----------|  
         |**InboundOperationType**|これを設定して**通知**です。|  
-        |**NotificationStatement**|これを設定します。<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注:**する必要があります具体的には、列名を指定、ステートメントで次の SELECT ステートメントで示すようにします。 また、スキーマ名と共に、テーブル名を必ず指定する必要があります。 たとえば、 `dbo.Employee`のようにします。|  
+        |**NotificationStatement**|これを設定します。<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注:** する必要があります具体的には、列名を指定、ステートメントで次の SELECT ステートメントで示すようにします。 また、スキーマ名と共に、テーブル名を必ず指定する必要があります。 たとえば、 `dbo.Employee`のようにします。|  
         |**NotifyOnListenerStart**|これを設定して**True**です。|  
   
          異なるバインディングのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。  

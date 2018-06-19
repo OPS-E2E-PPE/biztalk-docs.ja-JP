@@ -1,14 +1,14 @@
 ---
-title: "Readme と WCF LOB Adapter SDK でプライバシー |Microsoft ドキュメント"
-ms.custom: 
+title: Readme と WCF LOB Adapter SDK でプライバシー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 539a88f9-ce59-46e6-8c9a-418484eabff4
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965168"
 ---
 # <a name="readme-and-privacy-in-the-wcf-lob-adapter-sdk"></a>Readme と WCF LOB Adapter SDK のプライバシー
 Windows Communication Foundation (WCF) 基幹業務 (LOB) アダプター ソフトウェア開発キット (SDK)  

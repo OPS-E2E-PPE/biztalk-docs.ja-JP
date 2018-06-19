@@ -1,18 +1,18 @@
 ---
-title: "アーカイブ データベースでパーティション ビューの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: アーカイブ データベースでパーティション ビューの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - databases, partitioning
 - partitioning
 - Archive database [BAM], partitioning
 ms.assetid: f9ef7480-2e37-4477-92c8-b5686ae9b54b
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968928"
 ---
 # <a name="creating-a-partitioned-view-in-the-archiving-database"></a>アーカイブ データベースでのパーティション ビューの作成
 BAM データ保守パッケージ (BAM_DM_`<activity name>`) を実行すると、BAM プライマリ インポート データベースの各パーティションが BAM アーカイブ データベースの個別のテーブルにコピーされます。 アーカイブ データベースを接続解除した後、クエリを実行するために再接続する場合、クエリでデータを検索するのが困難になります。  

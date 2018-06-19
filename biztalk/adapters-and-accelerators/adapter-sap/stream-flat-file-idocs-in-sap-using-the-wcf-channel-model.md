@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966040"
 ---
 # <a name="stream-flat-file-idocs-in-sap-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して SAP のフラット ファイル Idoc をストリーム
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]ノード値、SendIdoc および ReceiveIdoc 操作のストリーミングをサポートします。 これらの操作は、フラット ファイル (string) Idoc をして、アダプターからの送受信に使用されます。 1 つのノードの下の文字列にこれらの操作の両方で全体の IDOC のデータが含まれている (\<idocData\>)。 大規模の Idoc は、アダプターとコード間で IDOC データのストリーミングは、大量のメモリ リソースに保存できます。  

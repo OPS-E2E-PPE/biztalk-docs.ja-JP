@@ -1,14 +1,14 @@
 ---
-title: "サイド バイ サイドのバージョン管理を使用してマップを更新する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: サイド バイ サイドのバージョン管理を使用してマップを更新する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7b0e377f-92ab-483e-9f3c-222c7b5ac0b1
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22298274"
 ---
 # <a name="how-to-update-a-map-using-side-by-side-versioning"></a>サイド バイ サイドのバージョン管理を使用してマップを更新する方法
 その場合は、バインドに使用されるバージョンを含めるに厳密な名前の完全修飾 (FQSN) で、マップなど、いくつかの BizTalk アイテムが選択されます。 これにより、サイド バイ サイドで共存させる 2 つ以上のマップ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 その結果、受信場所のプロパティにマッピングが受信または送信マップのマップの 1 つを送信ポートのプロパティで選択できます。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 01/17/2018
   
 2.  **メモ帳**の**ファイル** メニューのをクリックして**開く**です。 **開く** ダイアログ ボックスで、マップ ファイルをクリックして、変更する **開く**します。  
   
-3.  **[編集]** メニューの **[検索]**をクリックします。 **検索**  ダイアログ ボックスで、「 **アセンブリ =**,  をクリックし、 **次を検索**します。  
+3.  **[編集]** メニューの **[検索]** をクリックします。 **検索**  ダイアログ ボックスで、「 **アセンブリ =**,  をクリックし、 **次を検索**します。  
   
 4.  外部アセンブリへのスクリプト参照がある場合、メモ帳では次のような XML 要素が検索されます。  
   

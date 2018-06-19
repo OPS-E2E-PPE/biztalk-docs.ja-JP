@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 99bd7fbb-64f2-4327-a8ae-ccb574e56150
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25963992"
 ---
 # <a name="syntax-for-an-execquery-statement-in-sap"></a>SAP の EXECQUERY ステートメントの構文
 SAP の GUI を使用すると、グラフィカルに表示するクエリ、列および並べ替え順序など、結果セットに含めるテーブルを選択してクエリを作成します。[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] ADO.NET アプリケーションからユーザーは、SAP システムで定義されているクエリの実行に使用できる EXECQUERY 操作を提供することによってこのようなクエリを実行することができます。  
@@ -93,7 +94,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
     EXECQUERY ZTEST3 @USERGROUP='SYSTQV000024',  @P1 = '0000003262',@P2 = '*&*'  
     ```  
   
-     この例では、データが見つからなかったことを示すエラーを取得可能性があります。 これは、クエリを検索するため**'\*&\*'**を文字列としてし、ワイルドカード文字としてアスタリスク (*) を考慮しません。  
+     この例では、データが見つからなかったことを示すエラーを取得可能性があります。 これは、クエリを検索するため **'\*&\*'** を文字列としてし、ワイルドカード文字としてアスタリスク (*) を考慮しません。  
   
 -   必ず、YYYYMMDD の形式で日付値を指定する必要があります。  
   

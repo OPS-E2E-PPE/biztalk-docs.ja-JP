@@ -1,17 +1,17 @@
 ---
-title: "ユーザーのトレーラー |Microsoft ドキュメント"
-ms.custom: 
+title: ユーザーのトレーラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - trailers [SWIFT]
 - SWIFT, trailers
 ms.assetid: 340d9fc8-467b-4cba-b69f-eb761767deaa
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961984"
 ---
 # <a name="user-trailers"></a>ユーザーのトレーラー
 ユーザーのトレーラー、CHK トレーラーを除くはオプションであり、存在する場合は、次の順序で発生します。  

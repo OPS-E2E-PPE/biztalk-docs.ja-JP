@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server2 を維持する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server2 を維持する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5b9c10d1-101b-4b9d-8eab-767b853f17d8
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298370"
 ---
 # <a name="maintaining-biztalk-server2"></a>BizTalk Server2 を維持します。
 メンテナンス操作は、サービスの監視と管理 (SMC) のシステムの管理機能は Microsoft Operations Framework (MOF) で定義されている部分です。 SMC の主な目的がの正常性を確認するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムです。 SMC チェックでは、潜在的なサービスの問題を回避し、発生時にサービス インシデントの影響を最小限に抑える修復アクションを開始できます。  

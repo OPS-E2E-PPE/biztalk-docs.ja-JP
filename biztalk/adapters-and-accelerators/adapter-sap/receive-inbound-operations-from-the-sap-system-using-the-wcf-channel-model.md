@@ -1,18 +1,18 @@
 ---
-title: "WCF チャネル モデルを使用して、SAP システムからの受信操作の受信 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF チャネル モデルを使用して、SAP システムからの受信操作の受信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF channel model, streaming inbound flat-file IDOCs
 - WCF channel model, receiving inbound operations from the SAP system
 - WCF channel model, raising an exception
 ms.assetid: d71d0537-fda4-44ab-85dc-6e27aad23caf
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966200"
 ---
 # <a name="receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して、SAP システムからの受信操作を受信します。
 RFC サーバーとして動作し、受信 (IDOC を送信する、RFC を呼び出すなど)、SAP システムによって呼び出される操作、経由での SAP プログラム ID からのメッセージをリッスンできるチャネル リスナーを作成する必要があります、 **System.ServiceModel.Channels.IReplyChannel**チャネル形状です。  

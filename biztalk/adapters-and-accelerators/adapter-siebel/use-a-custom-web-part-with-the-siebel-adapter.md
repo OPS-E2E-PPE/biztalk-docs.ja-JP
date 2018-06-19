@@ -1,14 +1,14 @@
 ---
-title: "Siebel アダプターとカスタム Web パーツを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターとカスタム Web パーツを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ee3a6c04-6523-483c-bdf4-ce0ac47cda87
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963960"
 ---
 # <a name="use-a-custom-web-part-with-the-siebel-adapter"></a>Siebel アダプターとカスタム Web パーツを使用します。
 このセクションでは、Microsoft Office SharePoint Server でカスタム Web パーツの使用に関する情報を提供します。 カスタム Web パーツを使用するには、次の操作を行う必要があります。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  Visual Studio を起動し、プロジェクトを作成します。  
   
-2.  **新しいプロジェクト** ダイアログ ボックスから、**プロジェクトの種類**ペインで、 **Visual c#**です。 **テンプレート**ペインで、**クラス ライブラリ**です。  
+2.  **新しいプロジェクト** ダイアログ ボックスから、**プロジェクトの種類**ペインで、 **Visual c#** です。 **テンプレート**ペインで、**クラス ライブラリ**です。  
   
 3.  ソリューションの場所と名前を指定します。 このトピックでは、指定`CustomWebPart`で、**名前**と**ソリューション名**ボックス。 場所を指定し、をクリックして**OK**です。  
   

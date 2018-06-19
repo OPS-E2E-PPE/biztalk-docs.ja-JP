@@ -1,11 +1,11 @@
 ---
-title: "メッセージ フロー、応答側 BTARN で |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ フロー、応答側 BTARN で |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Accelerator for RosettaNet, message flow
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, message flow
 - responder BTARN
 ms.assetid: 66de8694-a248-47e8-9483-9eedf2324b33
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207386"
 ---
 # <a name="message-flow-in-the-responder-btarn"></a>応答側 BTARN でのメッセージ フロー
 応答側コンピューターのメッセージ フローは、開始側コンピューターからインターネット経由でメッセージを受信することから始まります。 これには、RNIF (RosettaNet Implementation Framework) 準拠のメッセージをバックエンド アプリケーション専用形式のメッセージに変換し、基幹業務 (LOB) アプリケーションにメッセージをルーティングする処理が含まれます。  

@@ -1,14 +1,14 @@
 ---
-title: "情報の転送をサポートする FileAct アダプター |Microsoft ドキュメント"
-ms.custom: 
+title: 情報の転送をサポートする FileAct アダプター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0fc27561-9abb-4496-9db7-f221a6c90738
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222818"
 ---
 # <a name="fileact-adapter-supporting-information-transfer"></a>FileAct アダプターをサポートする情報の転送
 FileAct アダプターは、省略可能なファイルと関連情報の転送を許可します。 この情報は、アプリケーションの判断に転送されます。 アダプターでは、この情報に正しい形式であることを検証を除く元側で特別な処理は行いません。 サポート情報を構成する要素は次のとおりです。  

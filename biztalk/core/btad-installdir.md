@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964728"
 ---
 # <a name="btadinstalldir"></a>BTAD_InstallDir
 BTAD_InstallDir には、BizTalk アプリケーションのインストール パスが格納されます。 BTAD_InstallDir は、そのアクションが作成または更新、および BTAD_HostClass が BizTalkHostInstance の場合にのみ使用できます。  

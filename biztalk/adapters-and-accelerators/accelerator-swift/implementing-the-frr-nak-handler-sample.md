@@ -1,14 +1,14 @@
 ---
-title: "FRR NAK ハンドラーのサンプルを実装する |Microsoft ドキュメント"
-ms.custom: 
+title: FRR NAK ハンドラーのサンプルを実装する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80fa5fb7-6864-4923-b641-e76d2b95d923
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961552"
 ---
 # <a name="implementing-the-frr-nak-handler-sample"></a>FRR NAK ハンドラーのサンプルを実装します。
 サンプル FRR NAK カスタム ハンドラーを実装して、サンプル プロジェクトをソリューションに追加、ビルドし、プロジェクトを配置、バインドし、オーケストレーションを開始および停止し、再開する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。  
@@ -39,4 +40,4 @@ ms.lasthandoff: 01/17/2018
   
 8.  **スタート**ダイアログ ボックスで、をクリックして**OK**です。  
   
-9. **[スタート]**ボタンをクリックし、 **[ファイル名を指定して実行]**をクリックします。 入力**services.msc**、順にクリック**OK**です。 右クリック**BizTalk サービス**、クリックして**再起動**です。
+9. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。 入力**services.msc**、順にクリック**OK**です。 右クリック**BizTalk サービス**、クリックして**再起動**です。

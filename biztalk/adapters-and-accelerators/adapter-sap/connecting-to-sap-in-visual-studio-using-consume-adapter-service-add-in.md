@@ -1,14 +1,14 @@
 ---
-title: "アダプターを使用する Visual Studio を使用して、SAP に接続する追加のサービスの |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターを使用する Visual Studio を使用して、SAP に接続する追加のサービスの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b4f7d57a-fd88-4420-b893-49f42b449597
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965040"
 ---
 # <a name="connecting-to-sap-in-visual-studio-using-consume-adapter-service-add-in"></a>アダプターを使用する Visual Studio を使用して、SAP に接続する追加のサービス
 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] WCF LOB Adapter SDK をインストールするときにインストールされています。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]コンピューターにインストールされているすべての WCF カスタム バインドを読み込みます。 WCF ベースを使用して SAP システムへの接続に[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]BizTalk プロジェクトで使用する必要があります、 **sapbinding**です。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/28/2017
         |**カテゴリ**|をクリックして**アダプター サービスの使用**です。|  
         |**[テンプレート]**|をクリックして**アダプター サービスの使用**です。|  
   
-    4.  **[追加]**をクリックします。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] が表示されます。  
+    4.  **[追加]** をクリックします。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] が表示されます。  
   
 2.  **バインディングを選択**ドロップダウン リスト、選択**sapBinding**  をクリック**構成**です。  
   
@@ -67,9 +68,9 @@ ms.lasthandoff: 11/28/2017
     >   
     >  **SncPartnerName**通信パートナーの SNC 名を取得するプロパティをバインドします。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
-7.  **[接続]**をクリックします。 接続が確立されると、接続状態は表示**接続**です。  
+7.  **[接続]** をクリックします。 接続が確立されると、接続状態は表示**接続**です。  
   
      次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。  
   

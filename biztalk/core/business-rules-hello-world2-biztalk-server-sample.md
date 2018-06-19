@@ -1,17 +1,17 @@
 ---
-title: "Business Rules こんにちは World2 (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: Business Rules こんにちは World2 (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, business rules
 - business rules, examples
 ms.assetid: 2a88a2a0-8cb6-4373-8441-0ab04345a477
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967304"
 ---
 # <a name="business-rules-hello-world2-biztalk-server-sample"></a>Business Rules こんにちは World2 (BizTalk Server サンプル)
 Business Rules こんにちは World2 サンプルのデモで Business Rules こんにちは World1 サンプルを拡張する方法のバージョンに次のように公開、および共有 SQL ルール ストア、およびポリシーを使用して、実行する方法に設定 XML 規則を展開、**ポリシー**オブジェクトビジネス ルール フレームワークによって提供されます。 また、実行中のポリシーを動的に更新する方法についても示します。  
@@ -55,7 +56,7 @@ Business Rules こんにちは World2 サンプルのデモで Business Rules �
 >  この SDK のすべてのサンプルに関する重要な情報は、次を参照してください。[サンプル](../core/samples-in-the-sdk.md)です。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\Business Rules\Business こんにちは World2\ のルール  
+ *\<パスのサンプル\>* \Business Rules\Business こんにちは World2\ のルール  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -74,7 +75,7 @@ Business Rules こんにちは World2 サンプルのデモで Business Rules �
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     *\<パスのサンプル\>*\Business Rules\Business こんにちは World2\ のルール  
+     *\<パスのサンプル\>* \Business Rules\Business こんにちは World2\ のルール  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -93,7 +94,7 @@ Business Rules こんにちは World2 サンプルのデモで Business Rules �
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     *\<パスのサンプル\>*\Business Rules\Business こんにちは World2\bin\Debug\ のルール  
+     *\<パスのサンプル\>* \Business Rules\Business こんにちは World2\bin\Debug\ のルール  
   
 2.  コマンド ウィンドウで、このサンプルのファイルの名前を入力します (**BusinessRulesHelloWorld2.exe**)、ENTER キーを押します。  
   
@@ -131,9 +132,9 @@ Press the ENTER to continue after updating the policy...
   
 3.  **ポリシー エクスプ ローラー**、下、 **SampleRuleSet**ノード、ノードを右クリックして**バージョン 1.0-展開済み**、クリックして**コピー**です。  
   
-4.  右クリック**SampleRuleSet**、クリックして**貼り付け (ポリシーのバージョン)**です。  
+4.  右クリック**SampleRuleSet**、クリックして**貼り付け (ポリシーのバージョン)** です。  
   
-5.  ルール条件とアクションは、必要に応じて変更できます。 この手順をクリックして**rule1**で**バージョン 1.1 (未保存)**です。 右側のペインで右クリック**条件**、順にクリック**論理否定**です。 追加、**論理否定**操作を**等しくない**述語を使用すると、**等しい**述語。  
+5.  ルール条件とアクションは、必要に応じて変更できます。 この手順をクリックして**rule1**で**バージョン 1.1 (未保存)** です。 右側のペインで右クリック**条件**、順にクリック**論理否定**です。 追加、**論理否定**操作を**等しくない**述語を使用すると、**等しい**述語。  
   
 6.  ノードを右クリックして**バージョン 1.1 (未保存)**、クリックして**保存**です。 再度右クリックし、をクリックして**発行**です。 3 番目の時間を右クリックし、をクリックして**展開**です。  
   

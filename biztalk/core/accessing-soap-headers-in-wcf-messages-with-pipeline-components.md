@@ -1,11 +1,11 @@
 ---
-title: "パイプライン コンポーネントでの WCF メッセージにおける SOAP ヘッダーへのアクセス |Microsoft ドキュメント"
-ms.custom: 
+title: パイプライン コンポーネントでの WCF メッセージにおける SOAP ヘッダーへのアクセス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, WCF services
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - WCF services, SOAP headers
 - SOAP headers, WCF messages
 ms.assetid: 5e24afa3-b2e6-472e-8890-a47b59573304
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965104"
 ---
 # <a name="accessing-soap-headers-in-wcf-messages-with-pipeline-components"></a>パイプライン コンポーネントにおける WCF メッセージでの SOAP ヘッダーへのアクセス
 コンテキスト プロパティ名の組み合わせを使用するパイプライン コンポーネントにおける WCF アダプターで SOAP ヘッダーにアクセスする**InboundHeaders**、およびターゲットの名前空間**http://schemas.microsoft.com/BizTalk/2006/01、アダプター、WCF-プロパティ**です。 WCF アダプタを受信メッセージのカスタム SOAP ヘッダーと標準 SOAP ヘッダーのコピー、 **InboundHeaders**プロパティです。 WCF アダプターを使用すると、プログラムによってコンテキスト プロパティへの昇格または書き込みを行うプロパティを選択することもできます。 参照してください[公開された WCF サービスでの SOAP ヘッダー](../core/soap-headers-with-published-wcf-services.md)詳細についてはします。  

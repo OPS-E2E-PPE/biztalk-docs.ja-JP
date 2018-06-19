@@ -1,11 +1,11 @@
 ---
-title: "レッスン 2: フラット ファイル送信ポートの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 2: フラット ファイル送信ポートの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, flat files
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - creating, send ports
 - send ports, creating
 ms.assetid: 33dceb0d-85f5-4e19-820f-cd33b60cd32a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961336"
 ---
 # <a name="lesson-2-adding-a-flat-file-send-port"></a>レッスン 2: フラット ファイル送信ポートの追加
 このレッスンでは、送信ポートと送信場所を構成します。 メッセージを送信する方法を定義するのにには、送信ポートを使用します。 送信メッセージのファイル フォルダーの場所を作成します。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  作成、**送信**フォルダーに**\<ドライブ\>: \Labs**、順にクリック**OK**です。  
   
-8.  **ファイル名**ボックスに、入力**%MessageID%.txt**、順にクリック**OK**です。  
+8.  **ファイル名**ボックスに、入力 **%MessageID%.txt**、順にクリック**OK**です。  
   
 9. 送信ポートのプロパティ] ダイアログ ボックスのドロップダウン リストをクリックして、**送信パイプライン**ボックスし、[ **MT103SendPipeline**です。  
   
@@ -51,10 +52,10 @@ ms.lasthandoff: 11/28/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**プロパティ**|選択**BTS です。ReceivePortName**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|型**MT103_XML_ReceivePort**です。|  
   
-11. をクリックして**適用**、クリックして**[ok] です。**  
+11. をクリックして**適用**、クリックして **[ok] です。**  
   
 12. **送信ポート** ウィンドウを右クリックして**MT103_FlatFile_SendPort**、クリックして**開始**です。  
   

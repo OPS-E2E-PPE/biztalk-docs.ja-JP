@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965576"
 ---
 # <a name="step-4-submitting-a-3a4-request"></a>手順 4: 3A4 要求の送信
 ここでは、3A4 - Request Purchase Order の PIP (Partner Interface Process) を使用して、要求を作成および送信します。 この PIP を使用することにより、購入者組織が発注を業者に送信できるようになります。 通常は、3A2 - Request Price and Availability PIP を使用して注文可能な製品を照会してから、3A4 - Request Purchase Order を要求します。 3A4 PIP は、受信確認を送信する非同期の PIP です。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 11/28/2017
     |**パートナー組織**|型**Contoso**です。|  
     |**[Pip Code]**|型**3A4**です。|  
     |**[Pip Version]**|型**V02.02.00**です。|  
-    |**Pip インスタンス ID**|型**3A4_Test**です。 **重要:**重複したメッセージ ID のエラーを避けるためには、する必要があることを確認、 **Pip インスタンス ID**を送信するメッセージごとに一意です。 後で 3A4_Test を実行する場合は、このフィールドを変更する必要があります。|  
+    |**Pip インスタンス ID**|型**3A4_Test**です。 **重要:** 重複したメッセージ ID のエラーを避けるためには、する必要があることを確認、 **Pip インスタンス ID**を送信するメッセージごとに一意です。 後で 3A4_Test を実行する場合は、このフィールドを変更する必要があります。|  
     |**メッセージのカテゴリ**|型**アクション**です。|  
   
 3.  ある 3A4_Request.xml ファイルを開くメモ帳または別のテキスト エディターを使用して、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\LOBApplication\SampleInstances フォルダーをコピーして貼り付け、内容、 **Service Content** LOBWebApplication のフィールドです。  

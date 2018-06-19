@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL Server からデータ変更のポーリングに基づいたメッセージを受信 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL Server からデータ変更のポーリングに基づいたメッセージを受信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9ecaf6f7-974b-4487-8c65-d1ab628cbfeb
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967883"
 ---
 # <a name="receive-polling-based-data-changed-messages-from-sql-server-using-biztalk-server"></a>BizTalk Server を使用して SQL Server からのデータ変更のポーリングに基づいたメッセージを受信します。
 構成することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server のテーブルまたはビューのデータの定期的な変更メッセージを受信します。 データベースをポーリングするアダプターを実行するポーリング ステートメントを指定することができます。 ポーリング ステートメントには、SELECT ステートメントまたは結果セットを返すストアド プロシージャを使用できます。  
@@ -98,7 +99,7 @@ SELECT * FROM Employee;EXEC MOVE_EMP_DATA;EXEC ADD_EMP_DETAILS John, Tester, 100
   
      バインドのプロパティを指定する方法については、次を参照してください。 [SQL アダプターのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-binding-properties-for-the-sql-adapter.md)です。  
   
-2.  コントラクトの種類を選択して**サービス (入力方向の操作)**です。  
+2.  コントラクトの種類を選択して**サービス (入力方向の操作)** です。  
   
 3.  スキーマを生成、**ポーリング**操作します。  
   

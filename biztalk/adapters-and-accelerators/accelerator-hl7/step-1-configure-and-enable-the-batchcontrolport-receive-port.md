@@ -1,14 +1,14 @@
 ---
-title: "手順 1: 構成して、受信ポートの有効化、BatchControlPort |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: 構成して、受信ポートの有効化、BatchControlPort |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: be248a05-e740-497a-b112-8ba3a57b020b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206146"
 ---
 # <a name="step-1-configure-and-enable-the-batchcontrolport-receive-port"></a>手順 1: 構成して、受信ポートの有効化、BatchControlPort
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) セットアップは、受信ポートを作成、バッチ コントロール ポート、開始するには、バッチ オーケストレーションを使用するメッセージを処理するバッチの終了、および時間。 これらのメッセージには、バッチのアクティベーションには、バッチの終了、タイマー メッセージをバッチ処理が含まれます。 このステップでは、バッチ コントロール ポートの受信パイプラインを構成し、ポートを有効にします。  

@@ -1,11 +1,11 @@
 ---
-title: "SAP を使用してチャネルを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP を使用してチャネルを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - channel programming, creating a channel
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - creating a channel
 - WCF channel model, creating a channel
 ms.assetid: 24af1465-bb60-41d7-98bd-e501a981f82a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963976"
 ---
 # <a name="create-a-channel-using-sap"></a>SAP を使用して、チャネルを作成します。
 WCF チャネル モデルでの SAP システムに対する操作を呼び出すまたは SOAP メッセージを交換することで、SAP システムからメッセージを受信、 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] WCF チャネルを経由します。  

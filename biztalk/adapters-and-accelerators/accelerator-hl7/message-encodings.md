@@ -1,11 +1,11 @@
 ---
-title: "メッセージのエンコーディング |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージのエンコーディング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, encodings
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - encoding [messages]
 - code samples
 ms.assetid: 360638c0-4094-428f-a7c7-306a5f95a6bf
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204794"
 ---
 # <a name="message-encodings"></a>メッセージ エンコーディング
 役に立つに HL7 の順序でメッセージのセマンティクスを定義するのに十分ではありません。 メッセージの内容が特定されると、標準は、実際のインターフェイスでは、そのコンテンツを表現する方法を説明するがします。 つまり、ある必要があります指定された「メッセージ エンコード」です。 HL7 バージョン 2 には、メッセージ エンコーディング、カスタム区切り記号ベース エンコーディング、および XML エンコーディングの 2 つの形式がサポートしています。  

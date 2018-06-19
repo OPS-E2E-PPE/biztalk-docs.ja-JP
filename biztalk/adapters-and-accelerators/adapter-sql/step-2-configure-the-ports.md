@@ -1,14 +1,14 @@
 ---
-title: "手順 2: ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e804da96-26ae-482d-b6e1-67af24d639d9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967288"
 ---
 # <a name="step-2-configure-the-ports"></a>手順 2: ポートを構成します。
 ![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
  **所要時間:** 15 分  
   
- **目標:**で物理ポートを作成するこの手順で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 オーケストレーションで作成した各論理ポートに対する物理ポートを作成します。 次のポートを作成します。  
+ **目標:** で物理ポートを作成するこの手順で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 オーケストレーションで作成した各論理ポートに対する物理ポートを作成します。 次のポートを作成します。  
   
 -   一方向の WCF カスタム受信する受信ポートの変更を通知メッセージ**従業員**SQL Server データベースのテーブルにします。  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 11/28/2017
     |プロパティのバインド|値|  
     |----------------------|-----------|  
     |**InboundOperationType**|これを設定して**通知**です。|  
-    |**NotificationStatement**|これを設定します。<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注:**する必要があります具体的には、列名を指定、ステートメントで次の Select ステートメントで示すようにします。 また、必要があります常を指定すると、スキーマ名、テーブル名など、`dbo.Employee`です。|  
+    |**NotificationStatement**|これを設定します。<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注:** する必要があります具体的には、列名を指定、ステートメントで次の Select ステートメントで示すようにします。 また、必要があります常を指定すると、スキーマ名、テーブル名など、`dbo.Employee`です。|  
     |**NotifyOnListenerStart**|これを設定して**True**です。|  
   
      異なるバインディングのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/28/2017
   
     3.  右側のウィンドウからの**送信マップ**ボックスで、下のセルをクリックして、**マップ**列で、ドロップダウン リストから選択し、**変換 _ 1**です。 これは、BizTalk のオーケストレーションで作成したマップの名前を[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。  
   
-         **[OK]**をクリックします。  
+         **[OK]** をクリックします。  
   
          ![送信マップを構成する](../../adapters-and-accelerators/adapter-sql/media/sql-adap-tut-010-map-ports.gif "sql_adap_tut_010_map_ports")  
   

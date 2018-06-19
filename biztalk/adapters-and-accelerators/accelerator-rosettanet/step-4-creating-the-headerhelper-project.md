@@ -1,17 +1,17 @@
 ---
-title: "手順 4: HeaderHelper プロジェクトの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: HeaderHelper プロジェクトの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - projects, helper projects
 - private process tutorial, creating helper projects
 ms.assetid: 82413537-032a-4368-8d77-d024a7c83b0b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965528"
 ---
 # <a name="step-4-creating-the-headerhelper-project"></a>手順 4: HeaderHelper プロジェクトの作成
 ここでは、[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] クラス ライブラリを作成します。 プライベート プロセス オーケストレーションが受信メッセージを受信すると、HeaderHelper ライブラリは、ドキュメントの変換が必要かどうかを判断し、変換が必要な場合は変換を実行します。 これにより、オーケストレーションは別のバージョンの RNIF (RosettaNet Implementation Framework) ドキュメントでも使用できます。 また、3A2 応答メッセージを送信する際には、HeaderHelper ライブラリはメッセージを送信する前に追加のドキュメント変換を実行します。  
@@ -28,11 +29,11 @@ ms.lasthandoff: 11/28/2017
   
 1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーで、Contoso ソリューションを右クリックし、順にポイント**追加**、クリックして**新しいプロジェクト**です。  
   
-2.  新しいプロジェクトの追加 ダイアログ ボックスで、プロジェクトの種類 ペインで、次のように選択します。 **Visual c#**です。  
+2.  新しいプロジェクトの追加 ダイアログ ボックスで、プロジェクトの種類 ペインで、次のように選択します。 **Visual c#** です。  
   
 3.  [テンプレート] ペインで、選択、**クラス ライブラリ**テンプレート。  
   
-4.  **名**ボックスに、入力**HeaderHelper**、クリックして**[ok]**プロジェクトを作成します。  
+4.  **名**ボックスに、入力**HeaderHelper**、クリックして **[ok]** プロジェクトを作成します。  
   
 5.  ソリューション エクスプ ローラーで右クリックし、 **Class1.cs**ファイルで、 **HeaderHelper**プロジェクトで、をクリックして**の名前を変更**、型**HeaderHelper.cs**、キーを押します**Enter**です。  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 11/28/2017
     }  
     ```  
   
-3.  **[ファイル]** メニューの **[すべてを保存]**をクリックします。  
+3.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
 ### <a name="to-create-a-strong-named-assembly-for-the-headerhelper-project"></a>HeaderHelper プロジェクトの厳密な名前のアセンブリを作成するには  
   
@@ -112,11 +113,11 @@ ms.lasthandoff: 11/28/2017
   
 3.  右側のウィンドウでをクリックして**アセンブリに署名**です。  
   
-4.  をクリックして、**厳密な名前キー ファイルを選択して**テキスト ボックス、および選択**\<参照\>**ドロップダウン リストからです。  
+4.  をクリックして、**厳密な名前キー ファイルを選択して**テキスト ボックス、および選択**\<参照\>** ドロップダウン リストからです。  
   
 5.  ファイルの選択 ダイアログ ボックスで、Contoso アセンブリの場所に移動し、ダブルクリック**FabConPriceAvail.snk**です。  
   
-6.  **[ファイル]** メニューの **[すべてを保存]**をクリックします。  
+6.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
 7.  ソリューション エクスプ ローラーで、展開、 **HeaderHelper**プロジェクトで、展開、**プロパティ**ノードを展開し、ダブルクリック、 **AssemblyInfo.cs**ノードを開くには、AssemblyInfo.csソース ファイルです。  
   
@@ -126,7 +127,7 @@ ms.lasthandoff: 11/28/2017
     [assembly: AssemblyKeyFile("../../../FabConPriceAvail.snk")]  
     ```  
   
-9. **[ファイル]** メニューの **[すべてを保存]**をクリックします。  
+9. **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
 ### <a name="to-build-and-deploy-the-headerhelper-project"></a>HeaderHelper プロジェクトを構築および展開するには  
   

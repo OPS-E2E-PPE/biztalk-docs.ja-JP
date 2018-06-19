@@ -1,11 +1,11 @@
 ---
-title: "統合 BizTalk アダプターの構成プロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: 統合 BizTalk アダプターの構成プロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, security
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - adapters, properties
 - binding files, security
 ms.assetid: 4780a558-4322-428a-aa4a-0c32913faded
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969960"
 ---
 # <a name="configuration-properties-for-integrated-biztalk-adapters"></a>統合 BizTalk アダプターの構成プロパティ
 BizTalk エクスプ ローラー オブジェクト モデルは、公開、 **IReceiveLocation.CustomData**と**ISendPort.CustomData**名前/値の形式でアダプター構成プロパティ バッグを含んでいるプロパティ組の XML 文字列。 この名前/値ペアの XML 文字列が格納されている、 \<CustomProps\>内の要素、 \<TransportTypeData\>バインド ファイル内の要素。 内の情報のほとんどの\<CustomProps\>要素 (BizTalk 管理コンソールまたは BizTalk エクスプ ローラー) など、BizTalk Server のユーザー インターフェイスでアダプターに対して設定できる情報に対応します。 これらの値がバインド ファイルに指定されている場合、値はバインド ファイルのインポート時に、指定された受信場所と送信ポート用のアダプター構成に適用されます。 すべてのアダプターの構成情報は、シングル サインオン データベースに格納されます。  

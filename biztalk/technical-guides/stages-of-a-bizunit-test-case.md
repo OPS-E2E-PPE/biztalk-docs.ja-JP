@@ -1,14 +1,14 @@
 ---
-title: "BizUnit テスト ケースの段階 |Microsoft ドキュメント"
-ms.custom: 
+title: BizUnit テスト ケースの段階 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ed0e725f-2c52-43f7-ae30-343413a703c2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302378"
 ---
 # <a name="stages-of-a-bizunit-test-case"></a>BizUnit テスト ケースの段階
 各 BizUnit テスト ケースは、3 つのステージで構成されています: **TestSetup**、 **TestExecution**、および**TestCleanup**です。 各ステージには、作業の 1 つの個別単位を実行するは、1 つまたは複数のテスト ステップが含まれています。たとえば、 **FileCreateStep**は指定されたファイル名で指定した場所にファイルの作成を担当します。  BizUnit は、70 以上のテスト ステップが含まれていて、新しいフレームワークに容易に追加するテストの手順を実行できるようにする拡張機能も提供します。 新しいステップ フレームワークを追加する機能には、幅広いシナリオで使用するための BizUnit ができます。 このトピックでは、さらに詳しく BizUnit テストの段階について説明します。  

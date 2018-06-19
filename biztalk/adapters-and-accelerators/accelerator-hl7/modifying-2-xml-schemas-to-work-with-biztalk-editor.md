@@ -1,17 +1,17 @@
 ---
-title: "BizTalk エディターで作業する 2. XML スキーマを変更する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk エディターで作業する 2. XML スキーマを変更する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - 2.XML schemas, modifying
 - modifying, 2.XML schemas
 ms.assetid: 07316826-84b6-494e-81b9-f64a3d46ffb0
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206106"
 ---
 # <a name="modifying-2xml-schemas-to-work-with-biztalk-editor"></a>BizTalk エディターを使用する 2. XML スキーマを変更します。
 HL7 2. XML スキーマで適切に機能を変更する必要[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)])。 次に、HL7 V2 を変更する方法について説明します。有効にして、BizTalk エディターを使用する XML スキーマです。  
@@ -28,7 +29,7 @@ HL7 2. XML スキーマで適切に機能を変更する必要[!INCLUDE[btsCoNam
 >  Update2XMLSchema ツールでは、自動的にこれらの手順を実行します。 参照してください[Update2XMLSchema ツール](../../adapters-and-accelerators/accelerator-hl7/update2xmlschema-tool.md)詳細についてはします。  
   
 > [!NOTE]
->  **Nillable**属性が要素上のスキーマで発生することができます。 場合設定**true**、親要素のインスタンスを持つことができることを示します、 **xsi:nil ="true"**属性。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]コンパイル時と解析とシリアル化中には、この属性を無視します。  
+>  **Nillable**属性が要素上のスキーマで発生することができます。 場合設定**true**、親要素のインスタンスを持つことができることを示します、 **xsi:nil ="true"** 属性。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]コンパイル時と解析とシリアル化中には、この属性を無視します。  
   
 ### <a name="to-modify-2xml-schemas"></a>2. XML スキーマを変更するには  
   
@@ -113,7 +114,7 @@ HL7 2. XML スキーマで適切に機能を変更する必要[!INCLUDE[btsCoNam
   
 2.  プロパティまで下にスクロール プロパティ ウィンドウで、 **root_reference**、し、ドロップダウン リストから、同じスキーマ名のプロパティをクリックします。  
   
-3.  **[ファイル]** メニューの **[すべてを保存]**をクリックします。  
+3.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [HL7 2. XML スキーマを使用します。](../../adapters-and-accelerators/accelerator-hl7/using-hl7-2-xml-schemas.md)

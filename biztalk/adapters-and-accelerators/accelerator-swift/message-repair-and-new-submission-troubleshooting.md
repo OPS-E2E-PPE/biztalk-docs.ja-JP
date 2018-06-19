@@ -1,17 +1,17 @@
 ---
-title: "メッセージの修復と新しい送信のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの修復と新しい送信のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - troubleshooting, Message Repair and New Submission
 - Message Repair and New Submission, troubleshooting
 ms.assetid: bb07a286-6f02-4639-b5fa-a3647e356ac8
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25965416"
 ---
 # <a name="message-repair-and-new-submission-troubleshooting"></a>Message Repair and 新しい送信のトラブルシューティング
 ## <a name="a-repaired-message-cannot-be-submitted-if-the-envelope-schema-is-not-deployed"></a>エンベロープ スキーマが展開されていない場合は、修復されたメッセージを送信することはできません。  
@@ -84,7 +85,7 @@ ms.lasthandoff: 01/17/2018
   
 5.  IIS マネージャー ダイアログ ボックスの アプリケーション プール ノードの下で A4SWIFT_MRSR のアプリケーション プールを右クリックし、をクリックして**プロパティ**です。  
   
-6.  \<アプリケーション プール名\>プロパティ ダイアログ ボックスをクリックして、 **Identity**注意してください。 場合**定義済み**がクリックされたと**Network Service**はクリックして選択すると、**構成可能**ローカルまたはドメイン アカウントを入力し、パスワードを入力します。 **[OK]**をクリックします。  
+6.  \<アプリケーション プール名\>プロパティ ダイアログ ボックスをクリックして、 **Identity**注意してください。 場合**定義済み**がクリックされたと**Network Service**はクリックして選択すると、**構成可能**ローカルまたはドメイン アカウントを入力し、パスワードを入力します。 **[OK]** をクリックします。  
   
 ## <a name="a-message-created-in-mrsr-site-on-a-localized-computer-is-not-processed"></a>ローカライズされたコンピューター上の MRSR サイトで作成されたというメッセージが処理されません。  
   
@@ -107,7 +108,7 @@ ms.lasthandoff: 01/17/2018
   
 5.  トランスポートのプロパティ ダイアログ ボックスの値を置き換える**SharePointSite URL**ローカライズ版に相当します。  
   
-6.  をクリックして**[ok]**、順にクリック**OK**です。  
+6.  をクリックして **[ok]**、順にクリック**OK**です。  
   
 ## <a name="removing-a-role-while-it-is-processing-a-message-results-in-incomplete-removal-of-documents-and-artifacts"></a>不完全な削除のドキュメントとの成果物、メッセージの結果を処理している間は、役割を削除します。  
   

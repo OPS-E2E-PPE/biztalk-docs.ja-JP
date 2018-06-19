@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL Server でのテーブル値関数を呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL Server でのテーブル値関数を呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0d360c15-699e-4859-8143-798c1de821db
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965640"
 ---
 # <a name="invoke-table-valued-functions-in-sql-server-using-biztalk-server"></a>BizTalk Server を使用して SQL Server でのテーブル値関数を呼び出す
 使用することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を SQL Server でのテーブル値関数を呼び出します。 アダプターは、SQL サーバー上で直接呼び出すことができる操作として、テーブル値関数を公開します。 アダプターでテーブル値関数をサポートする方法の詳細については、次を参照してください。 [SQL アダプターを使用して SQL Server で Executing Table-Valued 関数](../../adapters-and-accelerators/adapter-sql/execute-table-valued-functions-in-sql-server-using-the-sql-adapter.md)です。 テーブル値関数を呼び出すため、SOAP メッセージの構造については、次を参照してください。[プロシージャと関数のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md)です。  

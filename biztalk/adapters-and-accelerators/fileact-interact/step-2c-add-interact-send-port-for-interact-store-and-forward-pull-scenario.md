@@ -1,14 +1,14 @@
 ---
-title: "手順 2 C: InterAct ストア アンド フォワード (プル) シナリオの対話の送信ポートを追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2 C: InterAct ストア アンド フォワード (プル) シナリオの対話の送信ポートを追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 57038f77-85c3-4811-ab3d-df6e2da8fbcf
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964176"
 ---
 # <a name="step-2c-add-an-interact-send-port-for-the-interact-store-and-forward-pull-scenario"></a>手順 2 C: InterAct ストア アンド フォワード (プル) シナリオの対話の送信ポートを追加
 この手順を開始する前に行う必要があります[Step 2B: InterAct ストア アンド フォワード (プル) シナリオの Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md)です。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  ペイロードは、転送するのには、専用の場合は、ポートと対話する送信ポートが受信の対話で「ペイロード」に MessageFormat を設定します。 PassThru に、受信パイプラインと送信パイプラインを設定します。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
 8.  **送信ポートのプロパティ** ウィンドウで、次の操作します。  
   
@@ -67,11 +68,11 @@ ms.lasthandoff: 11/28/2017
     |**これを使用してください。**|**これを行う**|  
     |------------------|--------------------|  
     |**プロパティ**|ドロップダウン リストから選択**BTS です。ReceivePortName**です。|  
-    |**演算子**|ドロップダウン リストから選択 **==**です。|  
+    |**演算子**|ドロップダウン リストから選択 **==** です。|  
     |**値**|型**Tutorial_IA_InputRequest_SnF**です。|  
     |**グループ化**|既定値を使用します。|  
   
-10. **[OK]**をクリックします。  
+10. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [手順 2 a: ファイルの受信場所 InterAct ストア アンド フォワード (プル) シナリオの追加](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-interact-store-and-forward-scenario.md)   

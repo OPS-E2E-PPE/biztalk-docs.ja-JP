@@ -15,7 +15,7 @@ helpviewer_keywords:
 - examples, pipelines
 - messages, correlating to orchestrations
 ms.assetid: eb8121df-4f5b-4f36-8228-4b5ad1abfb4e
-caps.latest.revision: ''
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25965256"
 ---
 # <a name="aggregator-biztalk-server-sample"></a>アグリゲーター (BizTalk Server サンプル)
 このサンプルの目的は、オーケストレーションとパイプラインを使用してメッセージ アグリゲーション機能を構築することです。 特に、以下のことを行うオーケストレーションを構築します。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 03/23/2018
 3.  1 分ごとか、アグリゲートするのに十分なメッセージを受信した場合はすぐに XML インターチェンジ メッセージを生成します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<Samples Path\>*\Pipelines\Aggregator  
+ *\<Samples Path\>* \Pipelines\Aggregator  
   
  次の表に、このサンプルのファイル一覧を示します。  
   

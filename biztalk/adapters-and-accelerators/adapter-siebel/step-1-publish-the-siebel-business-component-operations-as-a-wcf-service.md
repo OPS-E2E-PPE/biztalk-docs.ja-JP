@@ -1,14 +1,14 @@
 ---
-title: "手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作の公開 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作の公開 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: acfa0c36-50f1-45c1-9fc2-e5e5cedaa6a0
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966344"
 ---
 # <a name="step-1-publish-the-siebel-business-component-operations-as-a-wcf-service"></a>手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作を公開します。
 ![4 のステップ 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
  **所要時間:** 10 分  
   
- **目標:**インターネット インフォメーション サービス (IIS) または Windows プロセス アクティブ化サービス (WAS) などのホスト環境でホストできる WCF サービスを生成する、WCF アダプター サービス開発ウィザードを使用することができます。 このトピックでは、ウィザードを使用して WCF サービスのファイルを生成する方法を示します。  
+ **目標:** インターネット インフォメーション サービス (IIS) または Windows プロセス アクティブ化サービス (WAS) などのホスト環境でホストできる WCF サービスを生成する、WCF アダプター サービス開発ウィザードを使用することができます。 このトピックでは、ウィザードを使用して WCF サービスのファイルを生成する方法を示します。  
   
 ## <a name="prerequisites"></a>前提条件  
  ウィザードを実行する前に、次のようにインストールします。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  開始[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、し、プロジェクトを作成します。  
   
-2.  **新しいプロジェクト** ダイアログ ボックスから、**プロジェクトの種類**ペインで、 **Visual c#**です。 **テンプレート**ペインで、 **WCF アダプタ サービス**です。  
+2.  **新しいプロジェクト** ダイアログ ボックスから、**プロジェクトの種類**ペインで、 **Visual c#** です。 **テンプレート**ペインで、 **WCF アダプタ サービス**です。  
   
      またはから、**プロジェクトの種類**] ウィンドウで、展開**Visual c#**、し、[ **Web**です。 **テンプレート**ペインで、 **WCF アダプタ サービス**です。  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 11/28/2017
   
     6.  をクリックして**OK**、順にクリック**接続**です。 接続が確立されると、接続状態は表示**接続**です。  
   
-6.  操作の選択] ページで、[、**選択コントラクト型**一覧で、をクリックして**クライアント (送信操作)**です。  
+6.  操作の選択] ページで、[、**選択コントラクト型**一覧で、をクリックして**クライアント (送信操作)** です。  
   
 7.  **カテゴリを選択**ボックスで、展開、Siebel**ビジネス オブジェクト**Siebel リポジトリ内のビジネス オブジェクトの一覧を表示するノードです。 この例では、次の操作を行います。  
   
@@ -92,10 +93,10 @@ ms.lasthandoff: 11/28/2017
         |IncludeExceptionDetailsinFault|これを設定して**True**デバッグのためのクライアントに返される SOAP エラーの詳細にマネージ例外情報を含めます。 既定値は**False**です。|  
         |名前|サービス動作の構成の名前です。|  
         |UseServiceCertificate|WCF のメッセージ レベルのセキュリティ モードを使用するかどうかを指定します。 既定値は**True**です。<br /><br /> このチュートリアルでは、設定する必要がこれ**False**です。|  
-        |FindValue|X.509 証明書ストアで検索する値を指定する文字列。<br /><br /> **注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
-        |StoreLocation|サービスがクライアントの証明書の検証に使用できる証明書ストアの場所を指定する値。<br /><br /> **注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
-        |StoreName|開く X.509 証明書ストアの名前です。<br /><br /> **注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
-        |X509FindType|実行する X.509 検索の種類。<br /><br /> **注:**場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
+        |FindValue|X.509 証明書ストアで検索する値を指定する文字列。<br /><br /> **注:** 場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
+        |StoreLocation|サービスがクライアントの証明書の検証に使用できる証明書ストアの場所を指定する値。<br /><br /> **注:** 場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
+        |StoreName|開く X.509 証明書ストアの名前です。<br /><br /> **注:** 場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
+        |X509FindType|実行する X.509 検索の種類。<br /><br /> **注:** 場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**です。|  
   
         > [!NOTE]
         >  証明書および関連付けられたプロパティの詳細については、次を参照してください。 [X509ClientCertificateCredentialsElement プロパティ](https://msdn.microsoft.com/library/system.servicemodel.configuration.x509clientcertificatecredentialselement_properties.aspx)です。
@@ -106,8 +107,8 @@ ms.lasthandoff: 11/28/2017
         |----------------------|-----------------------|  
         |[認証の種類]|-この設定**ClientCredentialUserNamePassword**を WCF サービスを使用しているとき、ユーザー名とパスワードを指定するようにクライアントを有効にします。<br /><br /> -この設定**HTTPUserNamePassword** HTTP ヘッダーの一部としてユーザー名とパスワードを指定するクライアントを有効にします。<br /><br /> -この設定**自動**を通じて資格情報を指定するクライアントを最初に有効にする、 **ClientCredential**インターフェイスです。 これが失敗した場合、クライアントは HTTP ヘッダーの一部として資格情報を渡すことができます。<br /><br /> 既定値は**自動**です。WCF サービスを使用する Microsoft Office SharePoint Server のこの設定の値として**HTTPUserNamePassword**です。|  
         |名前|エンドポイント動作の構成の名前を指定します。|  
-        |UsernameHeader|ユーザー名ヘッダーの名前です。 この例では、指定**MyUserHeader**です。 HTTP ヘッダーの詳細についてを参照してください「のサポートをカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)です。<br /><br /> **注:**場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**です。 場合**認証の種類**に設定されている**自動**、このプロパティはオプションです。|  
-        |PasswordHeader|パスワード ヘッダーの名前です。 この例では、指定**MyPassHeader**です。 HTTP ヘッダーの詳細についてを参照してください「のサポートをカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)です。<br /><br /> **注:**場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**です。 場合**認証の種類**に設定されている**自動**、このプロパティはオプションです。|  
+        |UsernameHeader|ユーザー名ヘッダーの名前です。 この例では、指定**MyUserHeader**です。 HTTP ヘッダーの詳細についてを参照してください「のサポートをカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)です。<br /><br /> **注:** 場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**です。 場合**認証の種類**に設定されている**自動**、このプロパティはオプションです。|  
+        |PasswordHeader|パスワード ヘッダーの名前です。 この例では、指定**MyPassHeader**です。 HTTP ヘッダーの詳細についてを参照してください「のサポートをカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)です。<br /><br /> **注:** 場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**です。 場合**認証の種類**に設定されている**自動**、このプロパティはオプションです。|  
   
      次の図は、値を指定して、サービスの構成とエンドポイントの動作 ページを示します。  
   
@@ -121,12 +122,12 @@ ms.lasthandoff: 11/28/2017
   
     |プロパティの|値を指定します。|  
     |----------------------|-----------------------|  
-    |バインドの構成|ウィザードは、基本 HTTP バインドのみをサポートします。 バインド構成のフィールドが自動的に設定されます、 *System.ServiceModel.Configuration.BasicHttpBindingElement*です。<br /><br /> 省略記号ボタンをクリックして**([...])** HTTP バインディングのプロパティを変更します。 セキュリティで保護された通信チャネルを使用する必要があります、常に設定、**モード**プロパティを**トランスポート**です。 ウィザードの既定値の設定、**モード**プロパティとして**トランスポート**です。<br /><br /> 公開されるその他のバインディングの詳細については、次を参照してください。 [BasicHttpBindingElement クラス](https://msdn.microsoft.com/library/system.servicemodel.configuration.basichttpbindingelement.aspx)です。|  
+    |バインドの構成|ウィザードは、基本 HTTP バインドのみをサポートします。 バインド構成のフィールドが自動的に設定されます、 *System.ServiceModel.Configuration.BasicHttpBindingElement*です。<br /><br /> 省略記号ボタンをクリックして **([...])** HTTP バインディングのプロパティを変更します。 セキュリティで保護された通信チャネルを使用する必要があります、常に設定、**モード**プロパティを**トランスポート**です。 ウィザードの既定値の設定、**モード**プロパティとして**トランスポート**です。<br /><br /> 公開されるその他のバインディングの詳細については、次を参照してください。 [BasicHttpBindingElement クラス](https://msdn.microsoft.com/library/system.servicemodel.configuration.basichttpbindingelement.aspx)です。|  
     |[エンドポイント名]|コントラクトのエンドポイント名を指定します。|  
   
      このページの他のフィールドは、前のページで指定した値に基づいて自動的に入力します。  
   
-     **[適用]**をクリックします。 この手順はすべて、コントラクトの下に表示されます、**を構成するコントラクトを選択**ボックス。  
+     **[適用]** をクリックします。 この手順はすべて、コントラクトの下に表示されます、**を構成するコントラクトを選択**ボックス。  
   
     > [!NOTE]
     >  このページの任意の値を指定しない場合は、すべてのコントラクトの既定値が受け入れられます。  
@@ -161,7 +162,7 @@ ms.lasthandoff: 11/28/2017
   
     4.  **コピー**ボックスで、クリックして**すべてのプロジェクト ファイル**です。  
   
-    5.  **[パブリッシュ]**をクリックします。  
+    5.  **[パブリッシュ]** をクリックします。  
   
 17. WCF サービスが正常に公開されていることを確認します。  
   

@@ -1,17 +1,17 @@
 ---
-title: "レッスン 2: SWIFTSchemas プロジェクト用の厳密な名前の BizTalk アセンブリの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 2: SWIFTSchemas プロジェクト用の厳密な名前の BizTalk アセンブリの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assemblies, creating strong-names
 - strong-named assemblies
 ms.assetid: 2aacbf38-8b1d-46ea-89ae-5207327bedc1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961016"
 ---
 # <a name="lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project"></a>レッスン 2: SWIFTSchemas プロジェクト用の厳密な名前の BizTalk アセンブリを作成します。
 このレッスンでは、BizTalk アセンブリのコンパイルし、展開の基になる、厳密な名前を作成します。 厳密な名前のアセンブリには、いくつかのセキュリティの利点があります。  

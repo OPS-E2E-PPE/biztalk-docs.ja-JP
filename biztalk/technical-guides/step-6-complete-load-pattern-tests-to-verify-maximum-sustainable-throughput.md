@@ -1,14 +1,14 @@
 ---
-title: "手順 6: 最大スループットを検証するための持続ロード パターンのテストを実行します |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 6: 最大スループットを検証するための持続ロード パターンのテストを実行します |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dd790354-be9f-4278-bd15-493eac8970c9
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302098"
 ---
 # <a name="step-6-perform-constant-load-pattern-tests-to-verify-maximum-sustainable-throughput"></a>手順 6: 最大スループットを検証するための持続ロード パターンのテストを実行します。
 負荷を Visual Studio 2010 を使用して、BizTalk Server ソリューションをテストする場合、」の説明に従って、概算最大持続可能なスループット (MST) ソリューションが特定されると、持続ロード パターンのテストを実行する必要があります[手順 5: ステップ ロードの実行維持可能な最大のスループットを判断するテストのパターンを](../technical-guides/step-5-complete-step-load-tests-to-determine-maximum-sustainable-throughput.md)です。 これは、時間の経過と共に、MST が維持可能なで実際にことを確認し、前進パフォーマンス調整を行う場合、BizTalk Server アプリケーションまたは環境へ適用の効果を評価する基準ロード テストを作成するために行う必要があります。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  **プロパティ**セクションの **パラメーター**の値を変更**ユーザー数の定数**をユーザーの数よりも若干小さい値に、ステップ ロード パターンテストが容認できないほど大きくなりすぎない (つまり、値、**数/秒あたりに受信した BizTalk:Messaging\Documents**が一貫しての値を超えるを開始した**BizTalk:Messaging\Documents 処理数/秒**の値、 **BizTalk:Message ボックス: 一般的な Counters\Spool Size** unbounded やすくが開始されました)。  
   
-9. 下にある、**実行設定**フォルダーを右クリックして**Setting1 の実行 [アクティブ]**を選択し、**プロパティ**です。  
+9. 下にある、**実行設定**フォルダーを右クリックして**Setting1 の実行 [アクティブ]** を選択し、**プロパティ**です。  
   
 10. プロパティの一覧をスクロールして、**タイミング**セクションし、値を入力**実行継続時間**少なくとも 10 分間の (00: 10:00) ことを確認の値は、**サンプル レート**5 秒に設定されている (00: 00:05)。  
   

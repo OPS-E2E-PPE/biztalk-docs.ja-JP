@@ -1,11 +1,11 @@
 ---
-title: "SAP の tRFCs に対する操作 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP の tRFCs に対する操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RFCs, invoking transactional RFCs in an SAP System
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - adapters, operations on tRFCs
 - RFC, invoking an RFC
 ms.assetid: d6a5c515-d6aa-4b70-9c23-32d1dd94d473
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968072"
 ---
 # <a name="operations-on-trfcs-in-sap"></a>SAP の tRFCs に対する操作
 トランザクションの Rfc (tRFCs) は、Rfc 作業 (LUW) の論理単位の一部として呼び出されます。 SAP システムを LUW にすべてのビジネスやプログラミング タスクを完了するために必要な手順が含まれます。 TRFC が RFC; を呼び出す方法を表します一意の SAP アーティファクトではありません。  

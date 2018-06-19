@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1fed2344-8181-4c85-a2ef-a421fc40dce1
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25966792"
 ---
 # <a name="as2-over-file-biztalk-server-sample"></a>AS2 Over File (BizTalk Server サンプル)
 AS2 Over File サンプルでは、FILE 受信場所経由で AS2 メッセージを受信する方法を示します。 これにより、通常使用される HTTP アダプタではなく、FILE アダプタを使用して AS2 メッセージを受信できます。 そのために、このソリューションは、AS2 デコーダーの要求に応じて、AS2 メッセージの HTTP ヘッダーを InboundHTTPHeaders コンテキスト プロパティに書き込みます。  

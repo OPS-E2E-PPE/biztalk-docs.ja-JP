@@ -1,14 +1,14 @@
 ---
-title: "手順 1: Web プロジェクトを作成するアダプター サービス開発ウィザードを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: Web プロジェクトを作成するアダプター サービス開発ウィザードを使用して |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7ea0e33c-0d8d-4656-a6f0-3008b90f93f8
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966968"
 ---
 # <a name="step-1-use-the-adapter-service-development-wizard-to-create-the-web-project"></a>手順 1: Web プロジェクトを作成するアダプター サービス開発ウィザードを使用します。
 ![4 のステップ 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -36,11 +37,11 @@ ms.lasthandoff: 11/28/2017
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**言語**|をクリックして**Visual c#**です。|  
+    |**言語**|をクリックして**Visual c#** です。|  
     |**[テンプレート]**|をクリックして**WCF アダプタ サービス**です。|  
     |**場所**|選択**ファイル システム**、し、入力**C:\Tutorials\EchoWeb**パスとして。|  
   
-3.  **[OK]**をクリックします。  
+3.  **[OK]** をクリックします。  
   
 4.  **へようこそ ページ**、 をクリックして**次**です。  
   
@@ -88,7 +89,7 @@ ms.lasthandoff: 11/28/2017
   
      ![コントラクトと操作の選択](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/de497b32-c820-480f-84f3-a9d0d2ded86b.gif "de497b32-c820-480f-84f3-a9d0d2ded86b")  
   
-4.  **[次へ]**をクリックします。  
+4.  **[次へ]** をクリックします。  
   
 ### <a name="to-configure-service-and-endpoint-behavior"></a>サービスとエンドポイントの動作を構成するには  
   
@@ -116,13 +117,13 @@ ms.lasthandoff: 11/28/2017
   
      ![エンドポイント構成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/3fd5784c-64e5-47c1-9a6f-10f12f77f726.gif "3fd5784c-64e5-47c1-9a6f-10f12f77f726")  
   
-3.  **[次へ]**をクリックします。  
+3.  **[次へ]** をクリックします。  
   
 ### <a name="to-configure-the-binding"></a>バインドを設定する  
   
 1.  **サービス エンドポイントのバインディングとアドレスを構成する**] ページで、[、 **BindingConfiguration**内のエントリ**されたコントラクトのバインディングとアドレスを構成する**、および省略記号ボタンをクリックし、(**.**) ボタンをクリックします。  
   
-2.  **のバインドのカスタマイズ**ダイアログ ボックスで、セット**モード**に**TransportWithMessageCredential**、クリックして**[ok]**です。  
+2.  **のバインドのカスタマイズ**ダイアログ ボックスで、セット**モード**に**TransportWithMessageCredential**、クリックして **[ok]** です。  
   
 3.  をクリックして**適用**、順にクリック**次**です。  
   

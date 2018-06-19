@@ -1,14 +1,14 @@
 ---
-title: "メモリのリークが発生しているプロセスのメモリ ダンプをキャプチャする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: メモリのリークが発生しているプロセスのメモリ ダンプをキャプチャする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67404919-33a6-40ac-b1c4-09841db12fcf
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969128"
 ---
 # <a name="how-to-capture-a-memory-dump-of-a-process-that-is-leaking-memory"></a>メモリ リークが発生したプロセスのメモリ ダンプを取得する方法
 不要になったメモリを BizTalk プロセス BTSNTSvc.exe が解放できず、時間の経過と共に使用可能なメモリ量が減少している場合、このプロセスにメモリ リークが発生していると見なされます。 下の値を表示することによって、プロセスのメモリ使用量を決定できます、**メモリ使用量**の列、**プロセス** タブで使用できる**タスク マネージャー**です。 プロセスが長時間にわたってメモリを解放せずに消費し続けると、全体のシステム パフォーマンスに悪影響が生じます。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  場合、 **Select Rule Type**の規則の追加ウィザード ダイアログ ボックスが表示されない場合をクリックして、**ツール** メニューの 選択**ルール アクション**、 をクリック**ルールの追加**を規則の追加ウィザードを表示します。  
   
-3.  選択、 **Memory and Handle Leak**オプション、 **Select Rule Type**ダイアログとクリック**[次へ]**です。  
+3.  選択、 **Memory and Handle Leak**オプション、 **Select Rule Type**ダイアログとクリック **[次へ]** です。  
   
 4.  メモリおよびクリックをリークの発生が疑われる BTSNTSvc.exe プロセスを選択**次**です。  
   
@@ -44,9 +45,9 @@ ms.lasthandoff: 11/28/2017
   
     3.  チェック ボックスをオン**userdump を予期しないプロセスの終了時に取得するルールのクラッシュを自動作成**です。  
   
-    4.  **[次へ]**をクリックします。  
+    4.  **[次へ]** をクリックします。  
   
-6.  **選択 Dump Location And Rule Name**ダイアログ**[次へ]**既定値を入力します。  
+6.  **選択 Dump Location And Rule Name**ダイアログ **[次へ]** 既定値を入力します。  
   
 7.  **Rule Completed**ダイアログ**完了**の既定値を受け入れるように**ルールを今すぐアクティブ化**です。  
   

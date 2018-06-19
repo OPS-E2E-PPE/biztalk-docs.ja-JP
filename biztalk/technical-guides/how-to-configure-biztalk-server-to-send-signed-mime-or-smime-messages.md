@@ -1,14 +1,14 @@
 ---
-title: "MIME または SMIME メッセージを送信する BizTalk Server を構成する方法が署名されて |Microsoft ドキュメント"
-ms.custom: 
+title: MIME または SMIME メッセージを送信する BizTalk Server を構成する方法が署名されて |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ba42463b-2c12-4329-919e-aca427d14eee
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297874"
 ---
 # <a name="how-to-configure-biztalk-server-to-send-signed-mime-or-smime-messages"></a>MIME または SMIME メッセージを送信する BizTalk Server を構成する方法が署名済み
 このトピックは、構成する方法を説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]符号付きの MIME/SMIME メッセージを送信する証明書を使用します。 以下の手順は、署名付きメッセージの送信の AS2 トランスポート経由で構成にも適用されます。  

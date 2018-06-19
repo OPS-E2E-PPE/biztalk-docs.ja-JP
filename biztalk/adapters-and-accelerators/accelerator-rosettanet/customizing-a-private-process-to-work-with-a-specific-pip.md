@@ -1,11 +1,11 @@
 ---
-title: "特定の PIP に使用するプライベート プロセスをカスタマイズする |Microsoft ドキュメント"
-ms.custom: 
+title: 特定の PIP に使用するプライベート プロセスをカスタマイズする |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private processes, PIPs
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - PIPs, private processes
 - customizing private processes
 ms.assetid: 88494e87-25a0-4c94-9396-61a0e07964aa
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966752"
 ---
 # <a name="customizing-a-private-process-to-work-with-a-specific-pip"></a>特定の PIP で使用するプライベート プロセスのカスタマイズ
 応答側のプライベートプロセス オーケストレーションが特定の Partner Interface Process (PIP) のインスタンスを処理するかどうかを指定するフィルター式を作成できます。 これにより、特定の PIP インスタンスを受信して処理するためのカスタム プライベート プロセスを作成し、その他の PIP インスタンスには既定のプライベート プロセスを使用する柔軟性が備わります。  
@@ -49,17 +50,17 @@ ms.lasthandoff: 11/28/2017
   
 5.  **フィルター式**ダイアログ ボックスで、最初の空白行の プロパティ 列で選択**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**ドロップダウン リストから、演算子 列選択 **==** ドロップダウン リストから値 列に 3 桁の PIP コードの例については、型と入力します。 **3A4**です。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 7.  オーケストレーション デザイナーで既定の応答側プライベートプロセス オーケストレーション プロジェクト (PrivateResponder.btproj) を開きます。 プロジェクトに Microsoft.Solutions.BTARN.GlobalSchemas.dll ファイルへの実際の参照があることを確認してください。  
   
 8.  ダブルクリックして**PrivateResponder.odx**です。  
   
-9. 右クリックし、 **[receivefrompublicprocessresponder]**受信図形をクリックして**フィルタ式の編集**です。  
+9. 右クリックし、 **[receivefrompublicprocessresponder]** 受信図形をクリックして**フィルタ式の編集**です。  
   
-10. **フィルター式**ダイアログ ボックスで、最初の空白行の [プロパティ] 列で選択**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**ドロップダウン リストからです。 [演算子] 列で選択**! =**ドロップダウン リストからです。 [値] 列で、3 桁の PIP コードの例については、型を入力"**3A4"**です。  
+10. **フィルター式**ダイアログ ボックスで、最初の空白行の [プロパティ] 列で選択**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**ドロップダウン リストからです。 [演算子] 列で選択 **! =** ドロップダウン リストからです。 [値] 列で、3 桁の PIP コードの例については、型を入力"**3A4"** です。  
   
-11. **[OK]**をクリックします。  
+11. **[OK]** をクリックします。  
   
 12. ソリューション エクスプ ローラーでオーケストレーションを含むプロジェクトを右クリックし、をクリックして**ビルド**です。  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 11/28/2017
   
 15. 移動\<*ドライブ*\>: \Program Files\BizTalk\<バージョン\>Accelerator for rosettanet \sdk\privateresponder、選択**PrivateResponder.odx**、クリックして**OK**です。  
   
-16. ソリューション エクスプローラーで、プロジェクトを右クリックし、 **[ビルド]**をクリックします。  
+16. ソリューション エクスプローラーで、プロジェクトを右クリックし、 **[ビルド]** をクリックします。  
   
 17. プロジェクトが正常にビルドされたら、プロジェクトを右クリックし、をクリックして**展開**です。  
   

@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK での展開パッケージを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK での展開パッケージを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 10022981-7944-45d6-a78a-4d680a79b010
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966560"
 ---
 # <a name="create-a-deployment-package-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK の配置パッケージを作成します。
 開発サイクル中にビルド、デバッグ、および Visual Studio 内で、アダプターを実行することができます。 アダプター ソリューションの出力は、DLL アセンブリです。 Visual Studio IDE を使用してアダプター ソリューションをビルドまたは devenv.exe スクリプトを使用して、アダプター アセンブリを作成することができます。 アダプターを開発し、アダプターのコンシューマーの環境内で使用可能な状態である、アダプターはテスト環境や実稼働環境にインストールする展開パッケージを作成する必要があります。  

@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9980953a-8d38-476f-af38-4f4214ba61f2
-caps.latest.revision: ''
+caps.latest.revision: 107
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25968032"
 ---
 # <a name="install-biztalk-adapter-pack-2013-r2-and-2013"></a>BizTalk Adapter Pack 2013 R2 と 2013 をインストールします。
 このドキュメントには、Microsoft をインストールするには、ソフトウェア要件、および手順[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)](BAP) は、BizTalk Server 2013 に含まれているか、[!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)]です。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 03/28/2018
   
 |日付|変更|  
 |---|---|  
-|2016 年 3 月|**インストール後にしています.**Oracle.DataAccess.dll の新しいバージョンを使用する Oracle データベース アダプターを構成する手順を追加します。|  
+|2016 年 3 月|**インストール後にしています.** Oracle.DataAccess.dll の新しいバージョンを使用する Oracle データベース アダプターを構成する手順を追加します。|  
   
 <a name="BKMK_Prereqs"></a>   
 ## <a name="software-prerequisites"></a>ソフトウェアの前提条件  
@@ -66,10 +67,10 @@ BizTalk Server を使用して、アダプターを使用する、BizTalk Server
 |エンタープライズ アプリケーションのクライアントと関連付けられているソフトウェア。 参照してください[エンタープライズ アプリケーションのバージョンがサポートされている](#BKMK_SuppLOB)です。|エンタープライズ アプリケーションのクライアントと関連付けられているソフトウェア。 参照してください[エンタープライズ アプリケーションのバージョンがサポートされている](#BKMK_SuppLOB)です。|  
 
 ### <a name="prerequisites-when-using-ado"></a>ADO を使用する場合の前提条件  
- **[!INCLUDE[adaptersap](../includes/adaptersap-md.md)]**と**[!INCLUDE[adaptersiebel](../includes/adaptersiebel-md.md)]** ADO レイヤーが含まれます (*[!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]*と*[!INCLUDE[adoprovidersiebelshort](../includes/adoprovidersiebelshort-md.md)]*)。 この ADO レイヤーは、SAP システムまたは Siebel システムへの接続に、ADO.NET クライアントを記述する使用できます。 行えます ADO レイヤーで SQL Server Integration Services (SSIS) のインポートし、エクスポートのデータ、LOB アプリケーション、および SQL Server Reporting Services (SSRS) レポートを生成するデータ、LOB システムの表示にします。  
+ **[!INCLUDE[adaptersap](../includes/adaptersap-md.md)]** と**[!INCLUDE[adaptersiebel](../includes/adaptersiebel-md.md)]** ADO レイヤーが含まれます (*[!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]* と*[!INCLUDE[adoprovidersiebelshort](../includes/adoprovidersiebelshort-md.md)]*)。 この ADO レイヤーは、SAP システムまたは Siebel システムへの接続に、ADO.NET クライアントを記述する使用できます。 行えます ADO レイヤーで SQL Server Integration Services (SSIS) のインポートし、エクスポートのデータ、LOB アプリケーション、および SQL Server Reporting Services (SSRS) レポートを生成するデータ、LOB システムの表示にします。  
   
 > [!NOTE]
->  ADO プロバイダーを使用して、SSRS でのみサポートされて、  *[!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]*です。  
+>  ADO プロバイダーを使用して、SSRS でのみサポートされて、  *[!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]* です。  
   
 使用するコンピューターで、次のソフトウェアが必要な[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]ADO インターフェイスを使用します。 この順で、ソフトウェアをインストールします。
   
@@ -94,7 +95,7 @@ BizTalk Server を使用して、アダプターを使用する、BizTalk Server
 <a name="BKMK_SuppLOB"></a>   
 ## <a name="supported-enterprise-application-versions"></a>サポートされているエンタープライズ アプリケーションのバージョン  
 
-サポートされている特定の LOB システムのバージョンを表示する、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]を参照してください**[サポートされている行の基幹業務 (LOB) システム](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-systems.aspx)**です。 
+サポートされている特定の LOB システムのバージョンを表示する、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]を参照してください**[サポートされている行の基幹業務 (LOB) システム](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-systems.aspx)** です。 
 
 ここでは、各アダプターに必要なすべてのクライアント Dll など、各アダプターの追加情報を示します。  
   
@@ -229,7 +230,7 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
   
 1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストール メディアで、実行**Setup.exe**です。  
   
-2.  選択**Microsoft BizTalk Adapters インストール**です。 次のウィンドウで次のように選択します。 **Microsoft BizTalk Adapter Pack のインストール**または**インストール Microsoft BizTalk Adapter Pack (x64)**プラットフォームに応じて、します。  
+2.  選択**Microsoft BizTalk Adapters インストール**です。 次のウィンドウで次のように選択します。 **Microsoft BizTalk Adapter Pack のインストール**または**インストール Microsoft BizTalk Adapter Pack (x64)** プラットフォームに応じて、します。  
   
     > [!NOTE]
     >  インストールする場合、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]バーチャル マシンで、セットアップ ウィザードは使用可能なディスク容量については、セットアップがチェックされることを通知 ダイアログ ボックス続行されません可能性があります。 このような場合、サイレント インストール オプションを使用することをお勧めします。 参照してください[サイレント モードで BizTalk Adapter Pack をインストールする](#BKMK_SilentInst)(」を参照)。  
@@ -259,7 +260,7 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
   
     4.  **[次へ]** を選択します。  
   
-7.  **[インストール]**を選択します。  
+7.  **[インストール]** を選択します。  
   
 8.  **カスタマー エクスペリエンス向上プログラム**、登録することもできます。 登録する場合は、Microsoft と、次のデータを共有できます。  
   

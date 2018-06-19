@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SAP でトランザクションを BAPI を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SAP でトランザクションを BAPI を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75ff5cf7-5e98-4d74-a13f-4de65c215d41
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967952"
 ---
 # <a name="run-bapi-transactions-in-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP でトランザクションを BAPI を実行します。
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]により、トランザクションを実行する SAP システムで使用して、クライアントはアダプター[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 トランザクションのオーケストレーションを作成する前に、まずトランザクションを実行する基本的なシナリオを理解する必要があります。 通常のトランザクションのシナリオで要求メッセージ (BAPI の呼び出し) などの複数の操作は SAP システムへ送信します。 これが参照されますとして、「操作のメッセージ」 オーケストレーションは、各操作メッセージを要求メッセージから抽出し、SAP システムに個別の操作のメッセージを送信する必要があります。 オーケストレーションに送信した後、同じ接続を使用して他のいずれか。 オーケストレーションは、BizTalk マップを使用して XML 変換を使用して、「操作のメッセージ」から個々 のメッセージを抽出します。  

@@ -1,17 +1,17 @@
 ---
-title: "手順 3: を作成し、トリガー イベント (メッセージ) プロジェクトを配置 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: を作成し、トリガー イベント (メッセージ) プロジェクトを配置 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - end-to-end tutorial, trigger events
 - trigger events
 ms.assetid: 5d21a923-fc2c-4d50-b146-daca0aa26e2a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961280"
 ---
 # <a name="step-3-create-and-deploy-a-trigger-event-message-project"></a>手順 3: を作成し、トリガー イベント (メッセージ) プロジェクトの配置
 この手順では、トリガーのイベント メッセージのスキーマを作成します。 たとえば、受付放電して転送システム (ADT) 病院情報システム (HIS) にメッセージを送信する場合があります。 このスキーマに、メッセージの書式を定義する必要があります。  

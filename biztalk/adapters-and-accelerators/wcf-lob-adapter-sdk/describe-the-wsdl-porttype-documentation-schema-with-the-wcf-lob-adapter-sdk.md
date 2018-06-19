@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK では、WSDL PortType ドキュメント スキーマの説明 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK では、WSDL PortType ドキュメント スキーマの説明 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9dd96eaf-b3b3-49b4-aea9-0ae1e8999d62
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965152"
 ---
 # <a name="describe-the-wsdl-porttype-documentation-schema-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK では、WSDL PortType ドキュメント スキーマを説明します。
 WSDL を[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]生成の各 portType 追加の説明情報が含まれています。 この追加情報のスキーマはこのトピックで説明します。  

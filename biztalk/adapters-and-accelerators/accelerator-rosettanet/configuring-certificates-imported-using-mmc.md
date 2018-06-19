@@ -1,11 +1,11 @@
 ---
-title: "MMC を使用してインポートされた証明書の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: MMC を使用してインポートされた証明書の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - decryption certificates
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - signing certificates
 - certificates, importing
 ms.assetid: 64dbfbcf-6026-4c68-a93a-f483ec52deac
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961672"
 ---
 # <a name="configuring-certificates-imported-using-mmc"></a>MMC を使用してインポートされた証明書を構成します。
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] 管理コンソール (MMC) の証明書スナップインを使用して証明書をインポートしたら、それらの使用法を構成する必要があります。 そのためには、BizTalk グループ、BizTalk ホストと分離ホスト サービス アカウント、PIP (Partner Interface Processes)、取引先アグリーメント、およびパートナーを構成します。 次の手順を実行する必要があります。  

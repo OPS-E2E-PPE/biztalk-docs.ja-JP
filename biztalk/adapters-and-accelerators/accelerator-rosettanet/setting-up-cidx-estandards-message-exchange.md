@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210498"
 ---
 # <a name="setting-up-cidx-estandards-message-exchange"></a>設定を CIDX eStandards メッセージ交換
 ここでは、Chemical Data Exchange (CIDX) eStandards メッセージ交換のセットアップ方法を説明します。 CIDX では、次の 3 つのプロパティが次のように設定されている必要があります。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  必要に応じて、その他のプロセス構成設定を入力します。 これらの設定については、表を参照して[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)です。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
 8.  右クリック**契約**、 をポイント**新規**、クリックして**アグリーメント**です。  
   
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 10. 新しいアグリーメントのプロパティ ダイアログ ボックスで、**全般** タブの**0A1 アグリーメント**プロパティを選択**非 0A1**です。  
   
-11. **[OK]**をクリックします。  
+11. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [作成またはプロセス構成を編集する方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)   

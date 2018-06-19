@@ -1,14 +1,14 @@
 ---
-title: "テスト結果: SQL Server の主要業績評価指標 |Microsoft ドキュメント"
-ms.custom: 
+title: 'テスト結果: SQL Server の主要業績評価指標 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2459ee6d-7a75-4338-ba5c-f42ab673ab87
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302466"
 ---
 # <a name="test-results-sql-server-key-performance-indicators"></a>テスト結果: SQL Server の主要業績評価指標
 このトピックでは、SQL サーバー主要業績評価指標 (KPI) テスト シナリオで監視された概要を示します。 これらのテストには、次の SQL Server KPI が評価されます。  

@@ -1,14 +1,14 @@
 ---
-title: "手順 1: Oracle E-business アダプターを使用して作成して、WCF サービスを発行する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: Oracle E-business アダプターを使用して作成して、WCF サービスを発行する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7cd76f6f-600f-4eb5-8eee-8f3604d0fef4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967800"
 ---
 # <a name="step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service"></a>手順 1: Oracle E-business アダプターを使用して作成して、WCF サービスを発行するには
 ![4 のステップ 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
  **所要時間:** 15 分  
   
- **目標:**使用することができます、[!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)]をインターネット インフォメーション サービス (IIS) または Windows プロセス アクティブ化サービス (WAS) などのホスト環境でホストできる Oracle E-business Suite 成果物から WCF サービスを生成します。 このトピックでは、ウィザードを使用して WCF サービスのファイルを生成する方法を示します。  
+ **目標:** 使用することができます、[!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)]をインターネット インフォメーション サービス (IIS) または Windows プロセス アクティブ化サービス (WAS) などのホスト環境でホストできる Oracle E-business Suite 成果物から WCF サービスを生成します。 このトピックでは、ウィザードを使用して WCF サービスのファイルを生成する方法を示します。  
   
 ## <a name="prerequisites"></a>前提条件  
  ウィザードを実行する前に、次のようにインストールします。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  開始[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、し、プロジェクトを作成します。  
   
-2.  **新しいプロジェクト** ダイアログ ボックスから、**プロジェクトの種類**ペインで、 **Visual c#**です。 **テンプレート**ペインで、 **WCF アダプタ サービス**です。  
+2.  **新しいプロジェクト** ダイアログ ボックスから、**プロジェクトの種類**ペインで、 **Visual c#** です。 **テンプレート**ペインで、 **WCF アダプタ サービス**です。  
   
      またはから、**プロジェクトの種類**] ウィンドウで、展開**Visual c#**、し、[ **Web**です。 **テンプレート**ペインで、 **WCF アダプタ サービス**です。  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 11/28/2017
   
     5.  をクリックして**OK**をアダプターの構成 ダイアログ ボックスを閉じ、をクリックして**接続**です。 Visual Studio が正常に Oracle E-business Suite への接続を確立した後、接続状態が表示**接続**です。 操作の選択 ページに表示されている Oracle E-business Suite のメタデータを表示することもできます。  
   
-6.  操作の選択] ページで、[、**選択コントラクト型**一覧で、をクリックして**クライアント (送信操作)**です。  
+6.  操作の選択] ページで、[、**選択コントラクト型**一覧で、をクリックして**クライアント (送信操作)** です。  
   
 7.  **カテゴリを選択**ボックスに、アプリケーション オブジェクトのライブラリ アプリケーションで MS_SAMPLE_EMPLOYEE インターフェイス テーブルに移動します。 アダプター内の成果物を参照する方法については、次を参照してください。[参照、検索、および取得操作のメタデータの Oracle E-business](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)です。  
   
@@ -112,8 +113,8 @@ ms.lasthandoff: 11/28/2017
         |----------------------|-----------------------|  
         |[認証の種類]|WCF サービスを使用する Microsoft Office SharePoint Server のこの設定の値として**HTTPUserNamePassword**です。 これにより、クライアントが HTTP ヘッダーの一部としてユーザー名とパスワードを指定できます。|  
         |名前|エンドポイント動作の構成の名前を指定します。 このチュートリアルでは、次のように入力します。 **customEndpointBehavior**です。|  
-        |UsernameHeader|ユーザー名ヘッダーの名前です。 この例では、指定**MyUserHeader**です。 HTTP ヘッダーの詳細についてを参照してください「のサポートをカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)です。 **注:**場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**です。 場合**認証の種類**に設定されている**自動**、このプロパティはオプションです。|  
-        |PasswordHeader|パスワード ヘッダーの名前です。 この例では、指定**MyPassHeader**です。 HTTP ヘッダーの詳細についてを参照してください「のサポートをカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)です。 **注:**場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**です。 場合**認証の種類**に設定されている**自動**、このプロパティはオプションです。|  
+        |UsernameHeader|ユーザー名ヘッダーの名前です。 この例では、指定**MyUserHeader**です。 HTTP ヘッダーの詳細についてを参照してください「のサポートをカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)です。 **注:** 場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**です。 場合**認証の種類**に設定されている**自動**、このプロパティはオプションです。|  
+        |PasswordHeader|パスワード ヘッダーの名前です。 この例では、指定**MyPassHeader**です。 HTTP ヘッダーの詳細についてを参照してください「のサポートをカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)です。 **注:** 場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**です。 場合**認証の種類**に設定されている**自動**、このプロパティはオプションです。|  
   
      次の図は、値を指定して、サービスの構成とエンドポイントの動作 ページを示します。  
   
@@ -127,12 +128,12 @@ ms.lasthandoff: 11/28/2017
   
     |プロパティの|値を指定します。|  
     |----------------------|-----------------------|  
-    |バインドの構成|ウィザードは、基本 HTTP バインドのみをサポートします。 バインド構成のフィールドが自動的に設定されます、 *System.ServiceModel.Configuration.BasicHttpBindingElement*です。<br /><br /> 省略記号ボタンをクリックして**([...])** HTTP バインディングのプロパティを変更します。 セキュリティで保護された通信チャネルを使用する必要があります、常に設定、**モード**プロパティを**トランスポート**です。 ウィザードの既定値の設定、**モード**プロパティとして**トランスポート**です。<br /><br /> 公開されるその他のバインディングの詳細についてを参照してください「BasicHttpBindingElement メンバー」 [http://go.microsoft.com/fwlink/?LinkId=103773](http://go.microsoft.com/fwlink/?LinkId=103773)です。|  
+    |バインドの構成|ウィザードは、基本 HTTP バインドのみをサポートします。 バインド構成のフィールドが自動的に設定されます、 *System.ServiceModel.Configuration.BasicHttpBindingElement*です。<br /><br /> 省略記号ボタンをクリックして **([...])** HTTP バインディングのプロパティを変更します。 セキュリティで保護された通信チャネルを使用する必要があります、常に設定、**モード**プロパティを**トランスポート**です。 ウィザードの既定値の設定、**モード**プロパティとして**トランスポート**です。<br /><br /> 公開されるその他のバインディングの詳細についてを参照してください「BasicHttpBindingElement メンバー」 [http://go.microsoft.com/fwlink/?LinkId=103773](http://go.microsoft.com/fwlink/?LinkId=103773)です。|  
     |[エンドポイント名]|コントラクトのエンドポイント名を指定します。|  
   
      このページの他のフィールドは、前のページで指定した値に基づいて自動的に入力します。  
   
-     **[適用]**をクリックします。  
+     **[適用]** をクリックします。  
   
     > [!NOTE]
     >  このページの任意の値を指定しない場合は、すべてのコントラクトの既定値が受け入れられます。  
@@ -186,11 +187,11 @@ SelectResponse InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.Select(SelectRequest 
     ```  
   
     > [!NOTE]
-    >  SSL が有効な場所には、WCF サービスを公開する必要があります。 値、つまり、**ターゲットの場所**ボックスは、"https://"を始める必要があります。 ユーザーの資格情報は、HTTP ヘッダーに渡されるため、ウィザードは自動的に SSL 暗号化を意味するセキュリティ モードとして「トランスポート」を使用するアダプターのバインドの動作を構成します。 もちろん、戻っておよびの値を変更するために web.config ファイルを編集できます、 **\<セキュリティ モード\>**パラメーターは、SSL を使用して常に推奨される選択肢機密情報がクリア テキストで転送がある場合HTTP ヘッダーのテキストです。  
+    >  SSL が有効な場所には、WCF サービスを公開する必要があります。 値、つまり、**ターゲットの場所**ボックスは、"https://"を始める必要があります。 ユーザーの資格情報は、HTTP ヘッダーに渡されるため、ウィザードは自動的に SSL 暗号化を意味するセキュリティ モードとして「トランスポート」を使用するアダプターのバインドの動作を構成します。 もちろん、戻っておよびの値を変更するために web.config ファイルを編集できます、 **\<セキュリティ モード\>** パラメーターは、SSL を使用して常に推奨される選択肢機密情報がクリア テキストで転送がある場合HTTP ヘッダーのテキストです。  
   
 3.  **コピー**ボックスで、クリックして**すべてのプロジェクト ファイル**です。  
   
-4.  **[パブリッシュ]**をクリックします。  
+4.  **[パブリッシュ]** をクリックします。  
   
 5.  WCF サービスが正常に公開されていることを確認します。  
   

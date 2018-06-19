@@ -1,14 +1,14 @@
 ---
-title: "SAP アダプタでカスタム Web パーツを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: SAP アダプタでカスタム Web パーツを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b7fecd2-a385-4b2d-a01b-3bfd65ecff3a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964304"
 ---
 # <a name="use-a-custom-web-part-with-the-sap-adapter"></a>SAP アダプターでカスタム Web パーツを使用します。
 このセクションでは、Microsoft Office SharePoint Server でカスタム Web パーツの使用に関する情報を提供します。 カスタム Web パーツを使用するには、次の操作を行う必要があります。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  Visual Studio を起動し、プロジェクトを作成します。  
   
-2.  **新しいプロジェクト** ダイアログ ボックスから、**プロジェクトの種類**ペインで、 **Visual c#**です。 **テンプレート**ペインで、**クラス ライブラリ**です。  
+2.  **新しいプロジェクト** ダイアログ ボックスから、**プロジェクトの種類**ペインで、 **Visual c#** です。 **テンプレート**ペインで、**クラス ライブラリ**です。  
   
 3.  ソリューションの場所と名前を指定します。 このトピックでは、指定`CustomWebPart`で、**名前**と**ソリューション名**ボックス。 場所を指定し、をクリックして**OK**です。  
   

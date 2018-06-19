@@ -1,11 +1,11 @@
 ---
-title: "カスタム Functoid (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム Functoid (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - functoids, customizing
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - XML tools
 - examples, XML tools
 ms.assetid: 9f1eb260-ff62-46f5-a517-57f4e9172b35
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970520"
 ---
 # <a name="custom-functoid-biztalk-server-sample"></a>カスタム Functoid (BizTalk Server サンプル)
 カスタム Functoid サンプルは、BizTalk マッパー用のカスタム Functoid を記述する方法を示します。 Functoid は [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックスに追加できます。 Functoid は、BizTalk マッパーにフォーカスがある場合にツールボックスに表示されます。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
 >  カスタム Functoid サンプル コードを再利用して独自の Functoid を実装する場合は、GUID 属性を一意のものに変更する必要があります。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\XmlTools\CustomFunctoid  
+ *\<パスのサンプル\>* \XmlTools\CustomFunctoid  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  **ツールボックス アイテムの選択**ダイアログ ボックスで、 **BizTalk マッパー Functoid**タブです。  
   
-3.  をクリックして**リセット**、クリックして**[ok]**です。  
+3.  をクリックして**リセット**、クリックして **[ok]** です。  
   
     > [!NOTE]
     >  カスタム Functoid でインライン コードが公開されない場合は、アセンブリが GAC で使用可能になっているかどうかを確認してください。  

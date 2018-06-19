@@ -1,14 +1,14 @@
 ---
-title: "アプリケーションに基づくビューの Oracle E-business Suite 操作を参照 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションに基づくビューの Oracle E-business Suite 操作を参照 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb207869-1a19-4e19-ba47-c78d2a29b36d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963656"
 ---
 # <a name="browse-for-oracle-e-business-suite-operations-under-the-application-based-view"></a>アプリケーションに基づくビューの Oracle E-business Suite 操作の参照します。
 使用することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]Oracle E-business Suite で実行できる送受信の操作を参照するを使用して、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。 このトピックでは、アプリケーション ベースのビューでの送信および受信操作を参照する方法について説明します。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  Oracle E-business Suite への接続、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。 参照してください[Visual Studio での Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)手順についてはします。  
   
-2.  **選択コントラクト型**一覧で、選択**クライアント (送信操作)**です。  
+2.  **選択コントラクト型**一覧で、選択**クライアント (送信操作)** です。  
   
 3.  **カテゴリを選択**ボックスには、Oracle E-business Suite の成果物を分類するさまざまなビューが一覧表示されます。  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  Oracle E-business Suite への接続、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。 参照してください[Visual Studio での Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)手順についてはします。  
   
-2.  **選択コントラクト型**を一覧表示、受信操作を選択**サービス (入力方向の操作)**です。  
+2.  **選択コントラクト型**を一覧表示、受信操作を選択**サービス (入力方向の操作)** です。  
   
 3.  **カテゴリを選択**ボックスには、Oracle E-business Suite の成果物を分類するさまざまなビューが一覧表示されます。  
   

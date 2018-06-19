@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB アダプター SDK を使用してアダプターを展開解除 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB アダプター SDK を使用してアダプターを展開解除 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 98f9a124-9e63-4451-af0e-ffee752fbeac
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963568"
 ---
 # <a name="undeploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a>WCF LOB アダプター SDK を使用してアダプターを展開解除します。
 コンピューターからアダプターを展開解除するには、ユーザーは、次の 2 つのタスクを実行する必要があります。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  サービス構成エディタを開きます。 参照してください[サービス構成エディター](https://msdn.microsoft.com/library/ms732009.aspx)詳細についてはします。
   
-2.  ツリー ビュー ウィンドウ (ラベルの付いた**構成**)、ノード ツリーを展開します。 をクリックして、 **[詳細設定]**フォルダーで、をクリックして、**拡張機能**フォルダー、およびバインド拡張要素を選択します。  
+2.  ツリー ビュー ウィンドウ (ラベルの付いた**構成**)、ノード ツリーを展開します。 をクリックして、 **[詳細設定]** フォルダーで、をクリックして、**拡張機能**フォルダー、およびバインド拡張要素を選択します。  
   
 3.  バインド拡張機能のエディターの詳細ウィンドウで [削除、およびをクリックする、バインド拡張機能] をクリックして**削除**です。 次の図に MyAdapterExtension が強調表示され、削除されます。  
   

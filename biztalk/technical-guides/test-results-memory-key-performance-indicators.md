@@ -1,14 +1,14 @@
 ---
-title: "テスト結果: メモリ主要業績評価指標 |Microsoft ドキュメント"
-ms.custom: 
+title: 'テスト結果: メモリ主要業績評価指標 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 224c40e5-08a7-4d30-b03a-4b6add5cde1f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22301874"
 ---
 # <a name="test-results-memory-key-performance-indicators"></a>テスト結果: メモリ主要業績評価指標
 このトピックでは、メモリ主要業績評価指標 (KPI)、テスト シナリオで監視された概要を示します。 これらのテストで測定された使用可能なメモリの評価、 **\Memory\Available Mbytes**パフォーマンス モニター カウンターです。  

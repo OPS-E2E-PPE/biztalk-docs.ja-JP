@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を使用して SQL Server での FOR XML 句を持つストアド プロシージャを実行 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を使用して SQL Server での FOR XML 句を持つストアド プロシージャを実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d8fe927-90bf-48fc-a418-63b920b409ed
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967624"
 ---
 # <a name="execute-stored-procedures-having-a-for-xml-clause-in-sql-server-using-biztalk-server"></a>BizTalk Server を使用して SQL Server での FOR XML 句を持つストアド プロシージャを実行します。
 SQL SELECT ステートメントでは、行セットではなく XML としてクエリ結果を返す FOR XML 句を持つことができます。 また、ストアド プロシージャを FOR XML 句を伴う SELECT ステートメントを持つことができます。 [FOR XML (SQL Server)](https://msdn.microsoft.com/library/ms178107.aspx)の詳細についてはします。
@@ -86,7 +87,7 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
   
          これを行う sqltypes.xsd スキーマは、BizTalk プロジェクトに既に追加されたためです。  
   
-    4.  スキーマのターゲット名前空間を指定します。 クリックして、 **\<スキーマ\>**ノード、プロパティ ウィンドウで、名前空間を指定し、 **Target Namespace**プロパティ。 このトピックの付与と名前空間`http://ForXmlStoredProcs/namespace`です。  
+    4.  スキーマのターゲット名前空間を指定します。 クリックして、 **\<スキーマ\>** ノード、プロパティ ウィンドウで、名前空間を指定し、 **Target Namespace**プロパティ。 このトピックの付与と名前空間`http://ForXmlStoredProcs/namespace`です。  
   
 ## <a name="generating-schema-for-the-request-message-to-invoke-the-stored-procedure"></a>ストアド プロシージャを呼び出す要求メッセージのスキーマを生成します。  
  使用することが要求メッセージのスキーマを生成する、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]で BizTalk プロジェクトから[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。 このトピックでは、GET_EMP_DETAILS_FOR_XML ストアド プロシージャのスキーマを生成します。 使用してスキーマを生成する方法の詳細についての[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]を参照してください[SQL アダプターを使用して Visual Studio での SQL Server 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)です。  

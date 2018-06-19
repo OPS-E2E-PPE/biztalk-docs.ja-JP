@@ -1,14 +1,14 @@
 ---
-title: "高可用性と災害復旧の計画 |Microsoft ドキュメント"
-ms.custom: 
+title: 高可用性と災害復旧の計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7efba36-6d9c-4ae0-a4f5-893eb5d62a05
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302026"
 ---
 # <a name="planning-for-high-availability-and-disaster-recovery"></a>高可用性と災害復旧の計画
 開発したソリューション[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]最大限の可用性が必要なエンタープライズ レベルのアプリケーションはミッション クリティカルなことがよくあります。 これらのソリューションが、運用環境に配置しているときに、大量の 1 秒あたりのコストのダウンタイムに関連するコストを測定できます。 このため、高可用性と災害復旧機能で使用できるを最大化する特定の戦略を採用する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]依存するソフトウェアおよびサポートするために必要なハードウェア、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションです。  

@@ -16,7 +16,7 @@ helpviewer_keywords:
 - resuming, orchestrations
 - HAT, debug mode
 ms.assetid: da133183-68d9-48d1-9601-8f6d4d5b8898
-caps.latest.revision: ''
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22316894"
 ---
 # <a name="how-to-resume-suspended-orchestration-instances"></a>中断したオーケストレーション インスタンスを再開する方法
 "中断 (再開可能)" とマークされているオーケストレーション インスタンスを中断した場合は、クエリ結果ペインまたはプレビュー ペインからオーケストレーション インスタンスの再開を試行できます。 ただし、オーケストレーション インスタンスを正常に再開できるのは、中断の原因となった問題が修正済みの場合のみです。  

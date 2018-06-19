@@ -1,14 +1,14 @@
 ---
-title: "SELECT ステートメントを使用してポーリング Oracle E-business Suite |Microsoft ドキュメント"
-ms.custom: 
+title: SELECT ステートメントを使用してポーリング Oracle E-business Suite |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 81d70b36-8b80-4ab9-b97c-ee861aafbbac
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966912"
 ---
 # <a name="poll-oracle-e-business-suite-using-select-statement"></a>SELECT ステートメントを使用してポーリング Oracle E-business Suite
 構成することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]メッセージを受信するデータの定期的な変更を継続的にインターフェイスのテーブルをポーリングする SELECT ステートメントを使用して、ビュー、テーブルおよびビュー Oracle E-business suite のインターフェイスです。 Oracle E-business Suite をポーリングするアダプターが定期的に実行されるポーリング ステートメントと SELECT ステートメントを指定できます。 後の投票 PL/SQL コード ブロックを指定することも、アダプターが、ポーリング ステートメントが実行された後に実行されます。  
@@ -94,7 +95,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="generating-schema"></a>スキーマを生成します。  
  スキーマを生成する必要があります、**ポーリング**MS_SAMPLE_EMPLOYEE インターフェイス テーブルの操作では、**アプリケーション オブジェクト ライブラリ**アプリケーションです。 使用して、スキーマの生成中に、次のタスクを実行、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。  
   
--   コントラクトの種類を選択して**サービス (入力方向の操作)**です。  
+-   コントラクトの種類を選択して**サービス (入力方向の操作)** です。  
   
 -   スキーマを生成、**ポーリング**MS_SAMPLE_EMPLOYEE インターフェイス テーブルで操作します。 操作と選択インターフェイス テーブルのいずれかから、**アプリケーション ベースのビュー**ノードまたは**成果物のベースのビュー**ノード。  
   
@@ -147,7 +148,7 @@ ms.lasthandoff: 11/28/2017
   
     -   **プロパティ**一覧で、クリックして**BTS です。ReceivePortName**です。  
   
-    -   **演算子**一覧で、クリックして **==**です。  
+    -   **演算子**一覧で、クリックして **==** です。  
   
     -   **値**フィールドに、受信ポート名を指定します。  
   

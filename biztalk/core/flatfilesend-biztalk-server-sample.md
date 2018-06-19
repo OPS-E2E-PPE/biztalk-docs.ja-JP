@@ -1,14 +1,14 @@
 ---
-title: "FlatFileSend (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: FlatFileSend (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52dd0018-e272-40db-a26a-509d444d7106
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969696"
 ---
 # <a name="flatfilesend-biztalk-server-sample"></a>FlatFileSend (BizTalk Server サンプル)
 FlatFileSend サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して、XML ファイルを同等のフラット ファイルに変換する方法を示します。  
@@ -45,7 +46,7 @@ FlatFileSend サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/
  これらの要素が組み合わされて、XML 形式の注文書メッセージを受信場所から受け入れ、フラット ファイル形式の注文書を送信場所に書き込むソリューションが作成されます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileSend  
+ *\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileSend  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -66,13 +67,13 @@ FlatFileSend サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     *\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileSend  
+     *\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileSend  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
     -   次のフォルダに、このサンプルの入力 (FFInput) フォルダと出力 (FFOutput) フォルダを作成します。  
   
-         *\<パスのサンプル\>*\Pipelines\AssemblerDisassembler\FlatFileSend  
+         *\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileSend  
   
     -   コンパイル、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]このサンプルのプロジェクトです。  
   

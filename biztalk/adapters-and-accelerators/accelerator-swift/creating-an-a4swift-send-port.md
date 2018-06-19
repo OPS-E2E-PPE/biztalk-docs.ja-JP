@@ -1,17 +1,17 @@
 ---
-title: "A4SWIFT 送信ポートの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: A4SWIFT 送信ポートの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, send ports
 - send ports, creating
 ms.assetid: d1ee18f8-a6aa-4cd5-9e65-fb2e0fa2d0c2
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210250"
 ---
 # <a name="creating-an-a4swift-send-port"></a>A4SWIFT 送信ポートを作成します。
 有効にする送信ポートを作成する必要があります[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]SWIFT ネットワークは、次の図に示すようにメッセージを送信します。 この送信ポートは、送信ファイル フォルダーにフラット ファイル メッセージが送信されます。 この送信ポートは、Message Repair and New Submission の機能を使用するよう設計されています。  
@@ -50,12 +51,12 @@ ms.lasthandoff: 09/20/2017
   
 5.  [FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。  
   
-6.  フォルダーの参照 ダイアログ ボックスからメッセージを送信するフォルダーに移動します。 **[OK]**をクリックします。  
+6.  フォルダーの参照 ダイアログ ボックスからメッセージを送信するフォルダーに移動します。 **[OK]** をクリックします。  
   
     > [!NOTE]
     >  このフォルダーが存在しない場合を使用してそれを作成、**新しいフォルダーの作成**コマンド。  
   
-7.  **ファイル名**ボックスに、入力**%MessageID%.txt**、順にクリック**OK**です。  
+7.  **ファイル名**ボックスに、入力 **%MessageID%.txt**、順にクリック**OK**です。  
   
 8.  **送信ポートのプロパティ** ダイアログ ボックスで、ドロップダウン リストをクリックして、**送信パイプライン**ボックス、およびカスタムの送信パイプラインを選択します。  
   
@@ -64,17 +65,17 @@ ms.lasthandoff: 09/20/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**プロパティ**|選択**BTS です。操作**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|型**A4SWIFT_MRSRCompleted**です。|  
     |**[グループ]**|選択**またはします。**|  
     |**プロパティ**|選択**BTS です。操作**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|型**A4SWIFT_MRSRFailed**です。|  
     |**[グループ]**|選択**または**です。|  
     |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|型**True**です。|  
   
-10. をクリックして**適用**、クリックして**[ok] です。**  
+10. をクリックして**適用**、クリックして **[ok] です。**  
   
 11. **送信ポート** ウィンドウでは、送信ポートを右クリックし、をクリックして**開始**です。

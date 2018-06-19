@@ -1,17 +1,17 @@
 ---
-title: "手順 11: オーケストレーション変数を作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 11: オーケストレーション変数を作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, variables
 - message enrichment tutorial, orchestrations
 ms.assetid: 3d1f792d-fe74-4373-86fa-3debda55e732
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962248"
 ---
 # <a name="step-11-create-orchestration-variables"></a>手順 11: オーケストレーション変数を作成します。
 このステップでは、オーケストレーションによって送受信されたメッセージ インスタンスのオーケストレーション変数を作成します。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  1 回作成し、メッセージ部分をという名前を変更しないこと。 必要に応じて、古いボディ部を削除し、新しい名前で新しいボディ部を作成します。  
   
-9. **型**ウィンドウで、**マルチパート メッセージの種類**、展開**DoorbellFinalMessageType**、順にクリック**MessagePart_1**です。 **プロパティ** ウィンドウで、入力**MSHSegment**の**識別子**、キーを押します**Enter**です。 ドロップダウン リストで**型**、展開**.NET クラス**、クリックして\<**参照されたアセンブリから選択\>**です。  
+9. **型**ウィンドウで、**マルチパート メッセージの種類**、展開**DoorbellFinalMessageType**、順にクリック**MessagePart_1**です。 **プロパティ** ウィンドウで、入力**MSHSegment**の**識別子**、キーを押します**Enter**です。 ドロップダウン リストで**型**、展開 **.NET クラス**、クリックして\<**参照されたアセンブリから選択\>** です。  
   
 10. **成果物の種類の選択**ダイアログ ボックスで、左側のウィンドウでをクリックして**System.Xml**です。 右側のウィンドウでをクリックして**XmlDocument**、クリックして**OK**です。  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 11/28/2017
   
 14. **オーケストレーション**ウィンドウを右クリックして**DoorbellFinalMessageType**、順にクリック**新しいメッセージ部分**です。  
   
-15. **プロパティ** ウィンドウで、入力**ZSegments**の**識別子**、キーを押します**Enter**です。 をクリックして**型**、展開**.NET クラス**、順にクリック**System.String**ドロップダウン リストからです。  
+15. **プロパティ** ウィンドウで、入力**ZSegments**の**識別子**、キーを押します**Enter**です。 をクリックして**型**、展開 **.NET クラス**、順にクリック**System.String**ドロップダウン リストからです。  
   
     > [!NOTE]
     >  使用する**System.String** Z が Z セグメントには、スキーマに準拠する必要のない文字列データが含まれているために、メッセージ部分をセグメントのです。  
@@ -90,7 +91,7 @@ ms.lasthandoff: 11/28/2017
   
 18. **オーケストレーション**ウィンドウを右クリックして**変数**、順にクリック**新しい変数**です。  
   
-19. **プロパティ** ウィンドウで、入力**HeaderInfo**の**識別子**、キーを押します**Enter**です。 ドロップダウン リストで**型**をダブルクリックして\< **.NET クラス\>**です。  
+19. **プロパティ** ウィンドウで、入力**HeaderInfo**の**識別子**、キーを押します**Enter**です。 ドロップダウン リストで**型**をダブルクリックして\< **.NET クラス\>** です。  
   
 20. **成果物の種類の選択**ウィンドウの左側のウィンドウでをクリックして**System.Xml**です。 右側のウィンドウでをクリックして**XmlDocument**、クリックして**OK**です。  
   

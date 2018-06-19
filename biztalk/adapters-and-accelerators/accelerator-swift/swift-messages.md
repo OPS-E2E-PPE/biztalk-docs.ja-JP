@@ -1,11 +1,11 @@
 ---
-title: "SWIFT メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, SWIFT
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - SWIFT messages, copies
 - SWIFT messages
 ms.assetid: 21341f2c-8d64-4f7c-ba84-f863d0f7b878
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961832"
 ---
 # <a name="swift-messages"></a>SWIFT メッセージ
 Society のワールドワイド銀行間財務通信 (SWIFT) は、業界所有の協調 200 の国/地域で 7,000 金融機関に、セキュリティで保護されたメッセージング サービスとインターフェイスのソフトウェアを指定することです。 SWIFT は、銀行、broker 業者、および投資マネージャー、および支払い、財務、証券、および取引の市場インフラストラクチャ メッセージング サービスを提供します。 これらのサービスは、コストを削減し、自動化などを向上させ、リスクを管理、顧客を支援します。 SWIFT はも銀行間の通信のための主な標準化団体です。  

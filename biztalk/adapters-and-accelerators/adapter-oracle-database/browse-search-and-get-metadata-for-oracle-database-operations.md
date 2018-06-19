@@ -1,11 +1,11 @@
 ---
-title: "参照、検索、および Oracle データベースの操作のメタデータを取得 |Microsoft ドキュメント"
-ms.custom: 
+title: 参照、検索、および Oracle データベースの操作のメタデータを取得 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF client, generating a
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - WCF service contract, generating a
 - metadata, browsing, searching, and retrieving
 ms.assetid: 65bd59e0-771d-40fe-966c-8cc8a629ce47
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967696"
 ---
 # <a name="browse-search-and-get-metadata-for-oracle-database-operations"></a>参照、検索、および Oracle データベースの操作のメタデータを取得
 このセクションの使用方法に関する情報が[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、および[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。 これらを使用して[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]コンポーネント、することができます。  
@@ -152,7 +153,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  **カテゴリを選択**ボックスで、スキーマに対応するノードを展開し をクリックし、データベース アイテムの内で検索する文字列。 **カテゴリで検索**テキスト ボックスに、特定のデータベースのアイテムを検索する検索式を入力します。  
   
-     たとえば、検索を名前に"EMP"を持つテーブルを次のように選択します**テーブル**、型**% EMP**で、**カテゴリで検索**テキスト ボックスとボタンをクリックし、。右側の下矢印アイコン。  
+     たとえば、検索を名前に"EMP"を持つテーブルを次のように選択します**テーブル**、型 **% EMP**で、**カテゴリで検索**テキスト ボックスとボタンをクリックし、。右側の下矢印アイコン。  
   
      次の図に示しています、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、検索結果の一覧を表示します。  
   
@@ -196,7 +197,7 @@ ms.lasthandoff: 11/28/2017
   
     -   複数の異なる実行で複数の操作のスキーマを生成するかどうかは[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]を選択するかどうかを確認、**一意なスキーマ型を生成**生成される XSD ファイルには、複雑な一意の名前空間が含まれるように、チェック ボックスデータは、"CT1"を入力します。  
   
-7.  **[OK]**をクリックします。 スキーマ ファイルは、BizTalk プロジェクトと同じ場所にある拡張子が .xsd で保存されます。  
+7.  **[OK]** をクリックします。 スキーマ ファイルは、BizTalk プロジェクトと同じ場所にある拡張子が .xsd で保存されます。  
   
      既定では、ファイルを作成して、名前付け規則"OracleDBBindingSchema\<n\>.xsd"ここで、' n ' 1、2、および作成したスキーマ ファイルの数によってを指定できます。 名前を入力して、スキーマ ファイルにカスタムの名前を指定する代わりに、**ファイル名のプレフィックス**テキスト ボックス。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] 、命名規則で今すぐスキーマ ファイルが作成されます\<ファイル名のプレフィックス\>スキーマ\<n\>.xsd です。  
   
@@ -206,7 +207,7 @@ ms.lasthandoff: 11/28/2017
     > [!IMPORTANT]
     >  使用して、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]バインド ファイルを生成しません。  
   
-8.  **[ファイル]** メニューの **[すべてを保存]**をクリックします。  
+8.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
 ## <a name="generating-a-wcf-client-or-wcf-service-contract-using-the-add-adapter-service-reference-plug-in"></a>WCF クライアントまたは WCF サービス コントラクトを使用して、生成する、プラグイン アダプター サービス参照の追加  
  使用することができます、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]いずれかの送信操作用の WCF クライアント コードまたは受信操作のための WCF サービス コードを生成します。  
@@ -249,7 +250,7 @@ ms.lasthandoff: 11/28/2017
   
      構成できるオプション、**オプションの高度な**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用する場合は、ボックスが使用可能なオプションの一部に相当します。 これらのオプションの詳細については、次を参照してください。 [ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)です。
   
-5.  **[OK]**をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアント クラス (または WCF サービスのインターフェイス) を保存し、操作と、プロジェクト ディレクトリに選択したカテゴリのヘルパー コード。 既定では、構成ファイルも保存されます。 受信と送信操作です。 わずかに異なるファイルが生成されます。詳細については、次を参照してください。 [WCF クライアントまたは Oracle データベース ソリューションの成果物のための WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)です。  
+5.  **[OK]** をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアント クラス (または WCF サービスのインターフェイス) を保存し、操作と、プロジェクト ディレクトリに選択したカテゴリのヘルパー コード。 既定では、構成ファイルも保存されます。 受信と送信操作です。 わずかに異なるファイルが生成されます。詳細については、次を参照してください。 [WCF クライアントまたは Oracle データベース ソリューションの成果物のための WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)です。  
   
  記載されている任意のノードを選択することができます、**利用可能なカテゴリと操作**ボックス。 カテゴリ ノードを選択する場合は、すべてのノードとそのサブ ノードで使用可能な操作が選択します。 たとえば、すべての操作を EMP テーブルの表示用の WCF クライアントを生成することができますノードを選択する、EMP;SCOTT スキーマ内のすべてのテーブルの WCF クライアントを生成するには、テーブル ノード; を選択することができます。などなど。  
   

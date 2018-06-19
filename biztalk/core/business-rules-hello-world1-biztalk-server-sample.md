@@ -1,17 +1,17 @@
 ---
-title: "Business Rules こんにちは World1 (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: Business Rules こんにちは World1 (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, business rules
 - business rules, examples
 ms.assetid: 0623ad20-96cc-430e-bb36-35431a5d17ee
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967672"
 ---
 # <a name="business-rules-hello-world1-biztalk-server-sample"></a>Business Rules こんにちは World1 (BizTalk Server サンプル)
 Business Rules Hello World1 サンプルでは、BizTalk ルール セットを作成して、そのルール セットをファイル (SampleRuleSet.xml) に保存し、読み込んでから、サンプルのファクト セットに基づいて実行する方法を示します。 サンプルのルール セットには、ルール定義の条件として XML 要素を含む単一のルール、および .NET ベースのオブジェクト (プロパティとメンバ) が含まれます。  
@@ -125,7 +126,7 @@ Press any key to finish ...
  オブジェクトの場合、出力行は取得されません、 **MySampleBusinessObject**を持つクラス、 **MyValue**プロパティ、に関連付けられている値と一致する値(構築時)に設定します。**ID**サンプル入力ファイル SampleDocumentInstance.xml 内の要素。  
   
 ## <a name="comments"></a>コメント  
- 内にプログラムで作成したルール、 **CreateRuleset()**メソッドに示します。  
+ 内にプログラムで作成したルール、 **CreateRuleset()** メソッドに示します。  
   
  **もし**  
   
@@ -133,7 +134,7 @@ Press any key to finish ...
   
  **そうしたら**  
   
- **MySampleBusinessObject.MySampleMethod(int)**整数のパラメータをハードここでは、定数 5 (5) するようにコーディングします。 このメソッドが始まる出力行を生成する**MySampleBusinessObject Class –-**です。  
+ **MySampleBusinessObject.MySampleMethod(int)** 整数のパラメータをハードここでは、定数 5 (5) するようにコーディングします。 このメソッドが始まる出力行を生成する**MySampleBusinessObject Class –-** です。  
   
  このルールは、次の要因に依存します。  
   

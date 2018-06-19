@@ -12,7 +12,7 @@ helpviewer_keywords:
 - managing [SSO applications], clearing cache
 - applications [SSO], caching
 ms.assetid: 6230b9a4-c7b8-47b4-854b-12853d9bf5b0
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25968640"
 ---
 # <a name="how-to-clear-the-application-cache"></a>アプリケーション キャッシュをクリアする方法
 MMC スナップインまたはコマンド ラインを使用して、すべてのシングル サインオン サーバーの指定したアプリケーションの、資格情報キャッシュの内容 (関連アプリケーションに関連付けられたすべての情報) を削除できます。  
@@ -41,7 +42,7 @@ MMC スナップインまたはコマンド ラインを使用して、すべて
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型 **ssomanage – purgecache *\<アプリケーション名\>* * *、どこで\<*アプリケーション名*\>関連アプリケーションの名前を指定します。キャッシュを消去します。  
+3.  型 **ssomanage – purgecache *\<アプリケーション名\>* * *、どこで\<* アプリケーション名*\>関連アプリケーションの名前を指定します。キャッシュを消去します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

@@ -1,14 +1,14 @@
 ---
-title: "挿入、更新、削除、または BizTalk Server アダプターを使用して、SQL 操作の選択 |Microsoft ドキュメント"
-ms.custom: 
+title: 挿入、更新、削除、または BizTalk Server アダプターを使用して、SQL 操作の選択 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d411b1a-a36d-4e3e-a56a-91804a5d69b9
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968120"
 ---
 # <a name="insert-update-delete-or-select-operations-using-biztalk-server-with-the-sql-adapter"></a>挿入、更新、削除、または BizTalk Server アダプターを使用して、SQL 操作の選択
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] SQL Server データベース テーブルやビュー上の標準的な操作のセットを表示します。 これらは、データ操作言語 (DML) 操作と呼ばれます。 DML 操作を使用すると、単純な Insert、Update、Select を実行し、テーブルおよびビューの操作を削除できます。 アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。 [Insert、Update、Delete、およびテーブルおよび SQL アダプターとビューの選択操作](../../adapters-and-accelerators/adapter-sql/insert-update-delete-and-select-on-tables-and-views-with-the-sql-adapter.md)です。 これらの操作用の SOAP メッセージの構造については、次を参照してください。 [Insert、Update、Delete、およびテーブルおよびビューに対する選択操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sql/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)です。  

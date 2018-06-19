@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルを使用して SQL の大規模なデータ型を持つテーブルとビューの操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して SQL の大規模なデータ型を持つテーブルとビューの操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d33e17c-e09e-4a57-9acc-43095e67ed8c
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967128"
 ---
 # <a name="run-operations-on-tables-and-views-with-large-data-types-in-sql-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SQL の大規模なデータ型を持つテーブルとビューの操作を実行します。
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアントの読み取りし、は、大規模なデータ型の列のデータを更新する、varchar (max)、nvarchar (max)、または varbinary (max) を有効にします。 このような列からデータを読み取る、アダプターのクライアントは、Select 操作を使用できます。 アダプターの一連の公開を挿入またはこのような列にデータを更新、\<*column_name* \>操作、場所\< *column_name* \>名前を指定します型 varchar (max)、nvarchar (max)、または varbinary (max) 列。  
@@ -148,7 +149,7 @@ public partial class TableOp_dbo_RecordsClient : System.ServiceModel.ClientBase<
 7.  呼び出す、 **SetDocument**での操作、**レコード**テーブル。  
   
     > [!CAUTION]
-    >  セット*< column_name >*操作は、トランザクションで常に実行する必要があります。 、これを実現するセット*< column_name >*トランザクション スコープ内で操作を呼び出す必要があります、 **UseAmbientTransaction** binding プロパティを設定する必要があります**true**app.config です。  
+    >  セット *< column_name >* 操作は、トランザクションで常に実行する必要があります。 、これを実現するセット *< column_name >* トランザクション スコープ内で操作を呼び出す必要があります、 **UseAmbientTransaction** binding プロパティを設定する必要があります**true**app.config です。  
   
     ```  
     using (TransactionScope tx = new TransactionScope())  

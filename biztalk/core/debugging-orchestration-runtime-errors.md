@@ -1,14 +1,14 @@
 ---
-title: "オーケストレーションの実行時エラーのデバッグ |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションの実行時エラーのデバッグ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7be9ee5a-b9fa-428b-8b92-0fa0f801c724
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969904"
 ---
 # <a name="debugging-orchestration-runtime-errors"></a>オーケストレーションの実行時エラーのデバッグ
 このセクションでは、オーケストレーションに関する実行時の問題の解決に役立つ一連の質問と回答を示します。  
@@ -96,7 +97,7 @@ MySendPort(Microsoft.XLANGs.BaseTypes.Address)=Message2(BTS.OutboundTransportLoc
 ```  
   
 ### <a name="cause"></a>原因  
- この問題は、オーケストレーション エンジンは実行時にテキストを削除すると、"**file://"**指定した URL からです。 したがって、先ほどの例では、"file:///c:/test/out" は \c:\test\out と評価され、"file://mymachine/test/out" は mymachine\test\out と評価されます。  
+ この問題は、オーケストレーション エンジンは実行時にテキストを削除すると、"**file://"** 指定した URL からです。 したがって、先ほどの例では、"file:///c:/test/out" は \c:\test\out と評価され、"file://mymachine/test/out" は mymachine\test\out と評価されます。  
   
 ### <a name="resolution"></a>解決策  
  URL を指定する場合、 **BTS です。OutBoundTransportLocation**を式でプロパティを追加または削除「/」文字がします。 上記の例を使用して、 **BTS です。OutBoundTransportLocation**プロパティを"file://c:/test/out がまたはに評価される c:\test\out"file:///mymachine/test/out"\\mymachine\test\out として定義すべき\\\mymachine\test\out です。

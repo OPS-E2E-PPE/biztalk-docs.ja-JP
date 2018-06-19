@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server を使用して SQL Server で 1 つの XML パラメーターを持つストアド プロシージャを実行 |Microsoft ドキュメント"
-description: "Biztalk WCF カスタム ポートと SQL アダプタを使用してストアド プロシージャで 1 つのパラメーターを渡す"
-ms.custom: 
+title: BizTalk Server を使用して SQL Server で 1 つの XML パラメーターを持つストアド プロシージャを実行 |Microsoft ドキュメント
+description: Biztalk WCF カスタム ポートと SQL アダプタを使用してストアド プロシージャで 1 つのパラメーターを渡す
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: deb9333a-5e28-4e8d-8e0b-07b5a97a111b
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964600"
 ---
 # <a name="execute-stored-procedures-with-a-single-xml-parameter-in-sql-server-using-biztalk-server"></a>BizTalk Server を使用して SQL Server で 1 つの XML パラメーターを持つストアド プロシージャを実行します。
 」の説明に従って、他のストアド プロシージャの実行に似ていますが、1 つのパラメーターを受け取るストアド プロシージャを実行する[BizTalk Server を使用して SQL Server でストアド プロシージャの実行](execute-stored-procedures-in-sql-server-using-biztalk-server.md)です。 ただし、上記のリンクで説明されているアプローチのデザイン時にストアド プロシージャのメタデータを生成し、実行時にプロシージャを呼び出すオーケストレーションを作成する必要があります。  
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/28/2017
   
 8.  **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。  
   
-    1.  クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、SQL Server の接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
+    1.  クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、SQL Server の接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
   
     2.  **全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。 参照してください[メッセージおよびメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)各操作のアクションの一覧についてはします。 たとえば、ADD_LAST_EMP_XML_INFO を呼び出すアクションを示します。  
   
@@ -121,7 +122,7 @@ ms.lasthandoff: 11/28/2017
   
 10. **送信パイプライン**一覧に対応するパイプラインを選択して**PassThruTransmit**です。  
   
-11. **[OK]**をクリックします。  
+11. **[OK]** をクリックします。  
   
 ## <a name="start-the-application"></a>アプリケーションを開始します。  
  BizTalk アプリケーションを起動するには、両方のファイルを開始する場所を受信し、Wcf-custom 送信ポートが個別にします。 必要があります。 受信場所がファイルにマップされているフォルダーに XML ファイルをコピーします。 BizTalk アプリケーションが、ファイルを使用し、XML 値は、Employee テーブルの [アドレス] 列に挿入されます。 これは、SQL Server クライアントを使用して、従業員テーブルからレコードを選択して確認できます。  

@@ -1,18 +1,18 @@
 ---
-title: "手順 4: スキーマの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: スキーマの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message enrichment tutorial, schemas
 - creating, schemas
 - schemas, creating
 ms.assetid: 81b1f538-9743-433a-87f9-a423dcb868c8
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,13 +21,14 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961736"
 ---
 # <a name="step-4-create-the-schemas"></a>手順 4: スキーマを作成します。
 この手順で新しいプロジェクトを作成する (**BTAHL7 プロジェクト**) このプロジェクトの成果物を含む: スキーマ、マップ、およびオーケストレーションです。 スキーマを作成し、(**Doorbell.xsd**) を既存のスキーマを選択して受信の XML でエンコードされたメッセージ (**ADT_A04_22_GLO_DEF.xsd**) HL7 エンコードされたメッセージの送信。 これらのスキーマを使用して、オーケストレーション内で交換されるメッセージの構造を定義します。  
   
 ### <a name="to-create-the-schemas"></a>スキーマを作成するには  
   
-1.  **[ファイル]** メニューの **[新規作成]**をポイントし、 **[プロジェクト]**をクリックします。  
+1.  **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
   
 2.  新しいプロジェクト ダイアログ ボックスで、展開、 **BizTalk プロジェクト**フォルダーをクリックして、 **BTAHL7Projects**フォルダーです。  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 01/17/2018
   
 11. をクリックして**追加**に空のスキーマを BizTalk エディターで開きます。  
   
-12. **\<スキーマ\>**ツリーで、右クリックし、**ルート**ノードをクリックして**の名前を変更**です。  
+12. **\<スキーマ\>** ツリーで、右クリックし、**ルート**ノードをクリックして**の名前を変更**です。  
   
 13. 型**DoorbellRoot**新しい名前は、およびキーを押します**Enter**です。  
   

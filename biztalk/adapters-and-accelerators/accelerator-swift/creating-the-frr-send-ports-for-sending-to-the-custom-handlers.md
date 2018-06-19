@@ -1,18 +1,18 @@
 ---
-title: "カスタム ハンドラーに送信するための FRR 送信ポートの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: カスタム ハンドラーに送信するための FRR 送信ポートの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, send ports
 - send ports, creating
 - FRR, creating send ports
 ms.assetid: 036f1f97-17a2-4e02-a85a-a52739a48528
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966544"
 ---
 # <a name="creating-the-frr-send-ports-for-sending-to-the-custom-handlers"></a>カスタム ハンドラーに送信するための FRR 送信ポートの作成
 FIN 対応調整を実行する必要があります (元のメッセージまたは応答) メッセージを送信するの各送信ポートの系列を作成するから[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]相関関係を持つメッセージを処理するカスタム ハンドラーにします。  
@@ -52,12 +53,12 @@ FIN 対応調整を実行する必要があります (元のメッセージま�
   
 5.  [FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。  
   
-6.  フォルダーの参照 ダイアログ ボックスからメッセージを送信するフォルダーに移動します。 **[OK]**をクリックします。  
+6.  フォルダーの参照 ダイアログ ボックスからメッセージを送信するフォルダーに移動します。 **[OK]** をクリックします。  
   
     > [!NOTE]
     >  このフォルダーが存在しない場合を使用してそれを作成、**新しいフォルダーの作成**コマンド。  
   
-7.  **ファイル名**ボックスに、入力**%MessageID%.txt**、順にクリック**OK**です。  
+7.  **ファイル名**ボックスに、入力 **%MessageID%.txt**、順にクリック**OK**です。  
   
     > [!NOTE]
     >  メッセージの種類ごとに別のフォルダーを作成することができます。  
@@ -71,11 +72,11 @@ FIN 対応調整を実行する必要があります (元のメッセージま�
     |プロパティ|目的|  
     |--------------|----------------|  
     |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|型**A4SWIFT_FrrService**です。|  
     |**[グループ]**|**And**|  
     |**プロパティ**|選択**BTS です。操作**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|BTS のいずれかを入力します。次の表の値を操作します。|  
   
      BTS です。操作では、次の値のいずれかを入力します。  
@@ -100,35 +101,35 @@ FIN 対応調整を実行する必要があります (元のメッセージま�
     |プロパティ|目的|  
     |--------------|----------------|  
     |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|型**A4SWIFT_FrrService**です。|  
     |**[グループ]**|**And**|  
     |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FrrFailed**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|型**True**です。|  
     |**[グループ]**|**And**|  
     |**プロパティ**|選択**BTS です。操作**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|型**A4SWIFT_FrrSendMTMsg**です。|  
     |**[グループ]**|**And**|  
     |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|型 *\<NAKErrorCode\>*、"Y01"などです。|  
     |**[グループ]**|**Or**|  
     |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|型**TimedOut**です。|  
     |**[グループ]**|**Or**|  
     |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|型**TransportError**です。|  
     |**[グループ]**|**Or**|  
     |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|型**DelayedNAK**です。|  
     |**[グループ]**|**Or**|  
     |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。|  
-    |**演算子**|選択 **==**です。|  
+    |**演算子**|選択 **==** です。|  
     |**値**|型**AbortMessage**です。|  
   
 12. をクリックして**適用**、順にクリック**OK**です。  

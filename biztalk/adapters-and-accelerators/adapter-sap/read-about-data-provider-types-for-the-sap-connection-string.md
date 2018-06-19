@@ -1,17 +1,17 @@
 ---
-title: "SAP 接続文字列のデータ プロバイダーの種類の説明を読む |Microsoft ドキュメント"
-ms.custom: 
+title: SAP 接続文字列のデータ プロバイダーの種類の説明を読む |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Data Provider for SAP, connection string
 - ADO, connection string
 ms.assetid: 7a46eaae-604f-4bae-924b-9f6d43a6e8a0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963345"
 ---
 # <a name="read-about-data-provider-types-for-the-sap-connection-string"></a>SAP 接続文字列のデータ プロバイダーの種類の説明を読む
 SAP システムへの接続を確立するには、ときは、接続文字列の形式で ADO.NET クライアントが SAP 接続のプロパティを指定してください。 SAP ADO 接続文字列の形式は、ようになります。  
@@ -30,11 +31,11 @@ SAP システムへの接続を確立するには、ときは、接続文字列�
   
  使用して SAP システムへの接続への接続文字列、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]次の種類を持つことができます。  
   
--   **タイプ a:**アプリケーション ホスト ベース接続を使用するアプリケーション サーバーを指定する接続 URI、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP システムに接続します。  
+-   **タイプ a:** アプリケーション ホスト ベース接続を使用するアプリケーション サーバーを指定する接続 URI、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP システムに接続します。  
   
--   **タイプ b:**負荷分散の接続を経由するメッセージ サーバーを指定する接続 URI、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP システムに接続します。  
+-   **タイプ b:** 負荷分散の接続を経由するメッセージ サーバーを指定する接続 URI、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP システムに接続します。  
   
--   **種類 d:**先ベースの接続を接続 URI が SAP システムの接続パラメーターを含む saprfc.ini ファイルの保存先を指定します。  
+-   **種類 d:** 先ベースの接続を接続 URI が SAP システムの接続パラメーターを含む saprfc.ini ファイルの保存先を指定します。  
   
  次の表では、接続 URI にこれらの接続を指定する方法について説明します。  
   

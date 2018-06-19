@@ -1,17 +1,17 @@
 ---
-title: "手順 1: Contoso アセンブリへの厳密な名前の割り当て |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: Contoso アセンブリへの厳密な名前の割り当て |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private process tutorial, assigning strong-names
 - strong-named assemblies
 ms.assetid: c8ec4593-5a4d-47ab-8799-7b2cd3d15ffc
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963864"
 ---
 # <a name="step-1-assigning-a-strong-name-to-the-contoso-assembly"></a>手順 1: Contoso アセンブリへの厳密な名前の割り当てください。
 ここでは、BizTalk アセンブリの厳密な名前を作成して割り当てます。 厳密な名前により、デジタル署名と一意のキーのペアを割り当てることで、アセンブリの一意性を保証します。 また、アセンブリの内容が最後にビルドされてから変更されていないことを保証するための整合性チェックも行えます。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 11/28/2017
 2.  コマンド プロンプトで、Contoso ソリューションの場所に移動します。  
   
     > [!NOTE]
-    >  既定では、Contoso ソリューションの場所は*\<ドライブ\>*: \Documents and 設定\\*\<ユーザー名\>*\MyDocuments \visual Studio\<バージョン\>\Projects です。  
+    >  既定では、Contoso ソリューションの場所は*\<ドライブ\>*: \Documents and 設定\\*\<ユーザー名\>* \MyDocuments \visual Studio\<バージョン\>\Projects です。  
   
 3.  コマンド プロンプトで次のように入力します。 **sn-k FabConPriceAvail.snk**、キーを押します**Enter**です。  
   

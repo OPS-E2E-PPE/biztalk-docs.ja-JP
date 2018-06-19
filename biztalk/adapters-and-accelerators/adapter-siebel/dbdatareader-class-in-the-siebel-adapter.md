@@ -1,17 +1,17 @@
 ---
-title: "Siebel アダプターの DbDataReader クラス |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターの DbDataReader クラス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Data Provider for Siebel, DbDataReader
 - DbDataReader
 ms.assetid: 7673cd10-ec1e-4cb0-93c2-f11928d00ca2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222018"
 ---
 # <a name="dbdatareader-class-in-the-siebel-adapter"></a>Siebel アダプターの DbDataReader クラス
 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]提供、 `DbDataReader` XML データ リーダーを活用することです。 これは、Siebel データ ソースのコンシューマーの行の順方向専用ストリームを読み取る機能を提供します。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
 |**データ型**|列に存在しないか、不足している値が含まれるかどうかを示す値を取得します。|  
 |**NextResult**|Siebel データ プロバイダーは、常に、1 つの結果セットを返しますこの呼び出しが完全に現在の結果を返す前にセットを過ぎるため**false**です。|  
 |**読み取り**|リーダーを結果セットの次のレコードに進めます。  返します**true**成功した場合と**false**場合は、リーダーは、レコードを左にします。|  
-|**[閉じる]**|閉じる、`DbDataReader`オブジェクト。 **注意:**したらを使用して、`DbDataReader`オブジェクト、Siebel COM ライブラリ オブジェクトを解放するために、それを閉じる必要があります。 それ以外の場合、クライアント アプリケーションのメモリとハンドルの使用率が上がるです。|  
+|**[閉じる]**|閉じる、`DbDataReader`オブジェクト。 **注意:** したらを使用して、`DbDataReader`オブジェクト、Siebel COM ライブラリ オブジェクトを解放するために、それを閉じる必要があります。 それ以外の場合、クライアント アプリケーションのメモリとハンドルの使用率が上がるです。|  
   
 ## <a name="see-also"></a>参照  
  [Siebel アダプターと ADO.NET インターフェイスを拡張します。](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)

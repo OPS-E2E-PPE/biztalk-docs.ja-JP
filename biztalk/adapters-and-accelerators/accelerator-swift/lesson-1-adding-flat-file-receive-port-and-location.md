@@ -1,11 +1,11 @@
 ---
-title: "レッスン 1: のフラット ファイルを追加する受信ポートと場所 |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 1: のフラット ファイルを追加する受信ポートと場所 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive locations, creating
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - receive ports, creating
 - creating, receive ports
 ms.assetid: 881f58d8-f541-4a85-b534-cb1ca627c002
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961120"
 ---
 # <a name="lesson-1-adding-flat-file-receive-port-and-location"></a>レッスン 1: フラット ファイルの追加の受信ポートと受信場所
 受信ポートは、常に、受信ポートを追加するときに構成する必要がある、関連付けられている受信場所を持ちます。 受信場所では、受信メッセージとメッセージの処理に使用するパイプラインの特定のアドレスを定義します。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 11/28/2017
   
 10. フォルダーの参照 ダイアログ ボックスで、移動、 **\<ドライブ\>: \Labs\Inbound**フォルダー、およびクリック**新しいフォルダーの作成**です。  
   
-11. 作成、 **FlatFile**フォルダー **\<ドライブ\>: \Labs\Inbound**、順にクリック**[ok]**です。  
+11. 作成、 **FlatFile**フォルダー **\<ドライブ\>: \Labs\Inbound**、順にクリック **[ok]** です。  
   
 12. **ファイル マスク**ボックスに、入力 **\*.txt**、順にクリック**OK**です。  
   

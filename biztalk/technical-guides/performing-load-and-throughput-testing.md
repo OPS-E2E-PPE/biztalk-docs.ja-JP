@@ -1,14 +1,14 @@
 ---
-title: "ロード テストとスループットのテストを実行する |Microsoft ドキュメント"
-ms.custom: 
+title: ロード テストとスループットのテストを実行する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2ff86ebd-a77f-4e29-bfea-0306e88bbf67
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302114"
 ---
 # <a name="performing-load-and-throughput-testing"></a>ロード テストとスループットのテストを実行します。
 必要があります使用可能なパフォーマンスとストレスのテストの実稼働環境に一致する環境です。 この環境は、すべての標準的なサービスをインストールし、監視エージェントとウイルス対策ソフトウェアなど、実行に必要です。  

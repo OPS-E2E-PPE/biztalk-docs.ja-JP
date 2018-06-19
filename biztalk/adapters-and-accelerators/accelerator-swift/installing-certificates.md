@@ -1,17 +1,17 @@
 ---
-title: "証明書のインストール |Microsoft ドキュメント"
-ms.custom: 
+title: 証明書のインストール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - certificates, installing
 - installing, certificates
 ms.assetid: 7525f771-623c-420f-99ca-c834e819829d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209466"
 ---
 # <a name="installing-certificates"></a>証明書のインストール
 送信、修復、またはメッセージを送信するには、インストールされている適切な証明書が必要です。 このトピックでは、証明書を追加する方法について説明します。 運用環境では、IT 部門の証明書を参照してください。  

@@ -1,14 +1,14 @@
 ---
-title: "ステップ 3 e: 対話する送信ポートの追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント"
-ms.custom: 
+title: 'ステップ 3 e: 対話する送信ポートの追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d9522386-e980-4ab1-b65a-939ca7936ad9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965984"
 ---
 # <a name="step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario"></a>ステップ 3 e: 対話する送信ポートの追加、リアルタイムのシナリオの対話
 完全な[ステップ 3 D: リアルタイム シナリオでは対話 Sw:HandleResponse メッセージをキャプチャする FILE 送信ポートを追加](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)この手順を開始する前にします。
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  ペイロードは、転送するのには、専用の場合は、ポートと対話する送信ポートが受信"Payloadonly"で、対話する MessageFormat を設定します。 受信の設定し、送信パイプラインをパススルーします。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
 8.  **送信ポートのプロパティ** ウィンドウで、次の操作します。  
   
@@ -68,11 +69,11 @@ ms.lasthandoff: 11/28/2017
     |**これを使用してください。**|**これを行う**|  
     |------------------|--------------------|  
     |**プロパティ**|ドロップダウン リストから選択**BTS です。ReceivePortName**です。|  
-    |**演算子**|ドロップダウン リストから選択 **==**です。|  
+    |**演算子**|ドロップダウン リストから選択 **==** です。|  
     |**値**|型**Tutorial_IA_InputRequest_RealTime**です。|  
     |**グループ化**|既定値を使用します。|  
   
-10. **[OK]**をクリックします。  
+10. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [手順 3: が送信を作成し、受信のポート、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   

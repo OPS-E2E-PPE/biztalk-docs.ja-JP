@@ -1,11 +1,11 @@
 ---
-title: "Ack を受信するため、送信ポートの設定 |Microsoft ドキュメント"
-ms.custom: 
+title: Ack を受信するため、送信ポートの設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, acknowledgements
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - acknowledgements, send ports
 - send ports, creating
 ms.assetid: bb683e72-36e2-4a8f-acc2-8b37ed23746f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961608"
 ---
 # <a name="setting-up-a-send-port-for-receiving-acks"></a>Ack を受信するための送信ポートの設定
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 一方向の送信ポートで受信確認 (ACK) が表示されることができます。 同じ接続の Ack を受信するための新しい一方向の送信ポートを設定するときは、その送信を関連付ける必要があります、一方向のポートの受信ポート。  
@@ -55,12 +56,12 @@ ms.lasthandoff: 01/17/2018
 6.  **送信請求-応答を有効に****はい**です。 ままにして**送信受信場所 (URI) を確認**空、クリックして**OK**です。  
   
     > [!NOTE]
-    >  ままにした場合**受信場所の送信**空白、BTAHL7 URI の入力、デフォルト**TwoWayAckReceiveLocation**です。 その後のクリックを確認する**[ok]**の手順 6 でをクリックして**構成**もう一度です。 URI **TwoWayAckReceiveLocation**に入力されます (127.0.0.1:65535)**送信受信場所 (URI) を ACK**です。  
+    >  ままにした場合**受信場所の送信**空白、BTAHL7 URI の入力、デフォルト**TwoWayAckReceiveLocation**です。 その後のクリックを確認する **[ok]** の手順 6 でをクリックして**構成**もう一度です。 URI **TwoWayAckReceiveLocation**に入力されます (127.0.0.1:65535)**送信受信場所 (URI) を ACK**です。  
   
     > [!NOTE]
-    >  受信確認をサブスクライブする送信ポートを作成する必要がありますか、ACK は、サブスクリプションが見つからなかったため、一時停止状態で表示されます。 送信ポートで受信確認をサブスクライブする場合は、たとえば、フィルターを使用して**BTS です。MessageType = = \< *MessageType* \>** と**BTS です。ReceivePortName = = \< *ReceivePort*\>**です。 メッセージの種類は、静的な確認の場合、 **StaticAck**です。  
+    >  受信確認をサブスクライブする送信ポートを作成する必要がありますか、ACK は、サブスクリプションが見つからなかったため、一時停止状態で表示されます。 送信ポートで受信確認をサブスクライブする場合は、たとえば、フィルターを使用して**BTS です。MessageType = = \< *MessageType* \>** と**BTS です。ReceivePortName = = \< *ReceivePort*\>** です。 メッセージの種類は、静的な確認の場合、 **StaticAck**です。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [作成して、受信確認の処理](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)   

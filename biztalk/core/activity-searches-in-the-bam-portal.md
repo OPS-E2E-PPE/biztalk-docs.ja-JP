@@ -1,11 +1,11 @@
 ---
-title: "BAM ポータルでのアクティビティの検索 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルでのアクティビティの検索 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], searching
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - BAM portal, Query Builder
 - BAM portal, activity searches
 ms.assetid: 60ab8deb-ebe2-4959-97fd-261ff64d500c
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966600"
 ---
 # <a name="activity-searches-in-the-bam-portal"></a>BAM ポータルでのアクティビティの検索
 アクティビティの検索では、BAM データが検索され、追跡する値および BAM ビューで使用可能な項目に基づいて指定した条件に一致するアクティビティを見つけることができます。また、アクティビティを編集したり、アクティビティに基づいて警告を作成できるように、アクティビティを表示することもできます。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 11/28/2017
   
 |演算子|Description|  
 |--------------|-----------------|  
-|**At**|完全一致を指定します。 ブール値の "=" (等号) 演算子と同じです。 **注:**を選択した場合、**で**演算子し、ポータルは、既定値として午前 0 時を使用して時刻部分と日付を指定します。 ユーザーの意図でない場合場合を使用して、**以前**または**以降の**オペレーターは、目的の結果を取得します。|  
+|**At**|完全一致を指定します。 ブール値の "=" (等号) 演算子と同じです。 **注:** を選択した場合、**で**演算子し、ポータルは、既定値として午前 0 時を使用して時刻部分と日付を指定します。 ユーザーの意図でない場合場合を使用して、**以前**または**以降の**オペレーターは、目的の結果を取得します。|  
 |**以前**|指定した日付以前のトランザクションのみが一致するように指定します。 ブール値の "≤" (以下) 演算子と同じです。|  
 |**以降**|指定した日付以降のトランザクションのみが一致するように指定します。 ブール値の "≥" (以上) 演算子と同じです。|  
 |**[指定日付より前]**|指定した日付より前のトランザクションのみが一致するように指定します。 ブール値の "<" (より小さい) 演算子と同じです。|  

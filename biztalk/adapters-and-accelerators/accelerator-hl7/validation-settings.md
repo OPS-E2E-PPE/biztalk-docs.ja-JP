@@ -1,17 +1,17 @@
 ---
-title: "検証の設定 |Microsoft ドキュメント"
-ms.custom: 
+title: 検証の設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - validating, configuring
 - configuring, validating
 ms.assetid: ee08acac-99f9-4403-b2ae-01b80378aa58
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961960"
 ---
 # <a name="validation-settings"></a>検証の設定
 使用して[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]、HL7 標準に対して、メッセージを検証することができます。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]送信または受信するメッセージが、HL7 標準に準拠しているメッセージの構造と本文セグメントを持ちます。 HL7 がサポートされているカスタム データ型を検証し、末尾の区切り記号を許可することができます。 使用する、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー**検証**検証を構成するには、タブ。  
@@ -57,7 +58,7 @@ BTAHL7 構成エクスプ ローラーの検証 タブ
     |**末尾の区切り記号 (区切り記号) を許可します。**|メッセージ インスタンスの末尾のフィールド区切り記号を有効にするには、このオプションを選択します。|  
     |**スキーマ Namespace**|スキーマ名前空間の場所を入力します。 既定値は、http://microsoft.com/HealthCare/HL7/2X です。|  
   
-2.  **[保存]**をクリックします。  
+2.  **[保存]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [ログの構成](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md)   

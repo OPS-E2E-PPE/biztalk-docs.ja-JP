@@ -13,7 +13,7 @@ helpviewer_keywords:
 - troubleshooting, configuring
 - troubleshooting, installing
 ms.assetid: 25a2f6c5-c049-4042-8e38-4f7a2556e066
-caps.latest.revision: ''
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25968104"
 ---
 # <a name="installation-and-configuration-troubleshooting"></a>インストールと構成のトラブルシューティング
 ## <a name="setup-is-unable-to-deploy-the-runtimeschemas-assembly"></a>RuntimeSchemas アセンブリを配置できません。  
@@ -41,11 +42,11 @@ ms.lasthandoff: 03/28/2018
 ### <a name="solution"></a>解決方法  
  問題の性質に応じて、次のように、手順に従います。  
   
--   BizTalk エクスプ ローラーを開く場合は、実行時のスキーマ アセンブリは、A4SWIFT の最初のインストールを実行しようとしたときに既に展開されていた、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]、アセンブリを右クリックして[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]です。Solutions.FinancialServices.SWIFT.RuntimeSchemas をクリックして展開を解除します。 RuntimeSchemas.dll の最新バージョンを展開する BizTalk 展開ウィザードを使用して*%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Assemblies です。  
+-   BizTalk エクスプ ローラーを開く場合は、実行時のスキーマ アセンブリは、A4SWIFT の最初のインストールを実行しようとしたときに既に展開されていた、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]、アセンブリを右クリックして[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]です。Solutions.FinancialServices.SWIFT.RuntimeSchemas をクリックして展開を解除します。 RuntimeSchemas.dll の最新バージョンを展開する BizTalk 展開ウィザードを使用して *%programfiles%* \Microsoft BizTalk Accelerator for SWIFT\Assemblies です。  
   
--   場合[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]が開始されませんが、開始[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]で、[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]サービス マネージャーです。 RuntimeSchemas.dll の最新バージョンを展開する BizTalk 展開ウィザードを使用して*%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Assemblies です。  
+-   場合[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]が開始されませんが、開始[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]で、[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]サービス マネージャーです。 RuntimeSchemas.dll の最新バージョンを展開する BizTalk 展開ウィザードを使用して *%programfiles%* \Microsoft BizTalk Accelerator for SWIFT\Assemblies です。  
   
--   A4SWIFT をアップグレードしようとしています。 してによって参照されたときに、実行時のスキーマ アセンブリが既に展開されている場合、別のアセンブリは BizTalk エクスプローラで、参照元のアセンブリを展開解除し、RuntimeSchemas.dll BizTalk エクスプ ローラーでの展開を解除します。 RuntimeSchemas.dll の最新バージョンを展開する BizTalk 展開ウィザードを使用して*%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Assemblies です。  
+-   A4SWIFT をアップグレードしようとしています。 してによって参照されたときに、実行時のスキーマ アセンブリが既に展開されている場合、別のアセンブリは BizTalk エクスプローラで、参照元のアセンブリを展開解除し、RuntimeSchemas.dll BizTalk エクスプ ローラーでの展開を解除します。 RuntimeSchemas.dll の最新バージョンを展開する BizTalk 展開ウィザードを使用して *%programfiles%* \Microsoft BizTalk Accelerator for SWIFT\Assemblies です。  
   
 ## <a name="after-the-web-components-feature-is-removed-message-repair-and-reconciliation-is-incorrectly-shown-as-uninstalled"></a>Web コンポーネントの機能が削除されると、Message Repair and 調整が不適切にアンインストール  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 03/28/2018
 ## <a name="repairing-a4swift-to-add-the-service-folder-can-result-in-improper-access-permissions-for-that-folder"></a>Service フォルダーを追加する A4SWIFT を修復することができますと、そのフォルダーの不適切なアクセス許可  
   
 ### <a name="symptom"></a>現象  
- フォルダーを削除する場合*%programfiles%*サーバー フォルダーを追加する A4SWIFT セットアップの修復機能は、A4SWIFT に戻します、A4SWIFT インストール環境適切に構成してから実行してから \Microsoft BizTalk Accelerator for SWIFT\Serviceインストールの場合、サービスのフォルダーのアクセス許可は正しいされません。 適切なアクセス許可は、A4SWIFT 管理者および読み取りのフル コントロールと A4SWIFT ユーザーに対して実行します。  
+ フォルダーを削除する場合 *%programfiles%* サーバー フォルダーを追加する A4SWIFT セットアップの修復機能は、A4SWIFT に戻します、A4SWIFT インストール環境適切に構成してから実行してから \Microsoft BizTalk Accelerator for SWIFT\Serviceインストールの場合、サービスのフォルダーのアクセス許可は正しいされません。 適切なアクセス許可は、A4SWIFT 管理者および読み取りのフル コントロールと A4SWIFT ユーザーに対して実行します。  
   
  これは、サービスのフォルダーが存在する場合に、A4SWIFT セットアップの修復機能を実行する場合にも発生します。 アクセス許可、A4SWIFT 構成ウィザードによって設定で上書きされます不適切な値です。  
   
@@ -91,7 +92,7 @@ ms.lasthandoff: 03/28/2018
   
  これらのアクセス許可を設定するには、手順に従います。  
   
- [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーに移動*%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Service です。  
+ [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーに移動 *%programfiles%* \Microsoft BizTalk Accelerator for SWIFT\Service です。  
   
 1.  Service フォルダーを右クリックし、をクリックして**プロパティ**、をクリックし、**セキュリティ**タブです。  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 03/28/2018
   
 5.  グループまたはユーザー名ペインで選択**A4SWIFT ユーザー**です。 アクセス許可 ウィンドウで、をクリックして**許可**の**読み取りと実行**、**フォルダー内容の一覧**、および**読み取り**です。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 ## <a name="upgrade-results-in-a-side-by-side-installation-of-two-versions-of-a4swift"></a>A4SWIFT の 2 つのバージョンのサイド バイ サイド インストールでのアップグレード結果  
   
@@ -165,7 +166,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  IIS 管理サービスを再起動します。  
   
-3.  実行*%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Configuration.exe です。  
+3.  実行 *%programfiles%* \Microsoft BizTalk Accelerator for SWIFT\Configuration.exe です。  
   
 4.  [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]構成コンソールで、**機能の構成解除**し、 **WebService**です。  
   
@@ -191,7 +192,7 @@ ms.lasthandoff: 03/28/2018
   
 -   BizTalk Server 管理コンソールで、ホストを作成します。 今すぐ実行中のインスタンスを設定する必要はありません。  
   
--   RepairBAS ツールを実行、 *%programfiles%*\Microsoft BizTalk Accelerator for swift \sdk\tools フォルダーに、A4SWIFT インストール環境のです。  
+-   RepairBAS ツールを実行、 *%programfiles%* \Microsoft BizTalk Accelerator for swift \sdk\tools フォルダーに、A4SWIFT インストール環境のです。  
   
  これを行うには、次の手順します。  
   
@@ -211,7 +212,7 @@ ms.lasthandoff: 03/28/2018
   
     -   [オプション] の両方を選択**ホストの追跡を許可する**と**しやすいように、既定のホスト グループに**です。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 6.  をクリックして**開始**し、[実行] をクリックします。 型**cmd**  をクリックし、 **OK**です。  
   

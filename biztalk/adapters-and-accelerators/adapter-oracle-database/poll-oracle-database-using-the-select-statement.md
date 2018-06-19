@@ -1,17 +1,17 @@
 ---
-title: "SELECT ステートメントを使用してポーリング Oracle データベース |Microsoft ドキュメント"
-ms.custom: 
+title: SELECT ステートメントを使用してポーリング Oracle データベース |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - polling-based notifications, receiving from Oracle
 - polling query, configuring a
 ms.assetid: d2689eb9-6f17-498f-8a32-07f43a368833
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965096"
 ---
 # <a name="poll-oracle-database-using-the-select-statement"></a>SELECT ステートメントを使用してポーリング Oracle データベース
 構成することができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]テーブルおよび Oracle は Oracle データベースでビューを継続的にポーリングする SELECT ステートメントを使用して、定期的なデータの変更メッセージを受信します。 Oracle データベースをポーリングするアダプターが定期的に実行されるポーリング ステートメントと SELECT ステートメントを指定できます。 必要に応じて、データの変更がある場合に、アダプターが実行される後ポーリング PL/SQL コード ブロックも指定することができます。 多くの場合、このブロックを使用するは、ターゲット内のクエリ対象のレコードにフィールドを更新する照会されたレコードを別のテーブルまたはビューに移動したりできます。  
@@ -98,7 +99,7 @@ SELECT * FROM ACCOUNTACTIVITY FOR UPDATE
     SELECT * FROM ACCOUNTACTIVITY FOR UPDATE  
     ```  
   
--   コントラクトの種類を選択して**サービス (入力方向の操作)**です。  
+-   コントラクトの種類を選択して**サービス (入力方向の操作)** です。  
   
 -   スキーマを生成、 **POLLINGSTMT**操作します。  
   

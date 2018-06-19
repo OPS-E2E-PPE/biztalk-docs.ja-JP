@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 37bdf6bd-cb34-4540-819e-908d83a22d40
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22298138"
 ---
 # <a name="how-to-avoid-disk-contention"></a>ディスクの競合を防止する方法
 BizTalk Server は、永続的なシステムとして設計されています。 高スループットのシナリオで、メッセージ ボックス データベースと BizTalk 追跡データベース深刻な競合が発生することができます。 ディスクが遅い場合には事態がさらに悪化します。 場合は、ディスク速度の遅い (平均の平均値で使うより大きいDisk Sec/read または avgDisk Sec/write)、ロックが長くなります (ロック待機時間と高のロック タイムアウト数) を保持する SQL Server をしまう可能性があります。 これには、さらに、可能性があります、メッセージ ボックス テーブル (スプールとアプリケーション キュー) に増加し、データベースの肥大化の原因と調整します。 このような状況は、最終的には、全体的な持続可能なスループットの低下になります。  

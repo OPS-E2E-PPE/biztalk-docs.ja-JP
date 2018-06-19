@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210138"
 ---
 # <a name="step-1-creating-a-new-biztalk-solution-for-the-contoso-price-and-availability-request"></a>手順 1: Contoso Price and Availability Request の新しい BizTalk ソリューションの作成
 この手順で作成、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Contoso Price and Availability Request プロジェクトのソリューションです。 このプロジェクトには、3A2 Price and Availability メッセージの要求および応答のための、スキーマとマップが含まれます。  
@@ -27,11 +28,11 @@ ms.lasthandoff: 09/20/2017
   
 1.  開始**Microsoft Visual Studio 2012**です。  
   
-2.  **[ファイル]** メニューの **[新規作成]**をポイントし、 **[プロジェクト]**をクリックします。  
+2.  **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
   
 3.  新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**セクションで、展開**その他のプロジェクトの種類**select、 **Visual Studio ソリューション**、し、[、 **テンプレート**セクションで、**空のソリューション**です。  
   
-4.  **名前**ボックスに、入力**Contoso**ソリューション名、およびクリックとして**[ok]**新しいソリューションを開きます。  
+4.  **名前**ボックスに、入力**Contoso**ソリューション名、およびクリックとして **[ok]** 新しいソリューションを開きます。  
   
 ### <a name="to-create-the-price-and-availability-project"></a>Price and Availability プロジェクトを作成するには  
   

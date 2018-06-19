@@ -1,11 +1,11 @@
 ---
-title: "アクティビティ データのストレージ |Microsoft ドキュメント"
-ms.custom: 
+title: アクティビティ データのストレージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, BAM
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - databases [BAM], partitioning
 - BAM, performance
 ms.assetid: 1f736599-3d16-496e-a459-8b0507d57fcb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967024"
 ---
 # <a name="activity-data-storage"></a>アクティビティ データのストレージ
 このトピックでは、アクティビティ データのストレージ、および時間の経過と共に拡張されたアクティビティ テーブルが原因で発生するパフォーマンス関連の問題について説明します。また、実行中のアクティビティと完了したアクティビティ用のテーブルを分離することで、これらのパフォーマンスに関する問題を BAM で解決する方法についても説明します。 さらに、データのクエリ用のオンライン時間帯と、BAM のパーティション分割を使用してパフォーマンスを向上する方法についても説明します。  
@@ -92,7 +93,7 @@ UNION ALL
   
 -   値を変更することにより、オンライン時間帯を設定する**OnlineWindowTimeUnit**と**OnlineWindowLength**の表に、現在のアクティビティのレコードの**bam_Metadata_Activities**プライマリ インポート データベースにします。  
   
--   DTS パッケージ**bam_dm _\<ActivityName\>**パーティション分割を行い、アーカイブや削除します。 このパッケージが実行されるたびに、別のパーティションを切り捨て、オンライン時間帯の期間を過ぎたすべてのパーティションをアーカイブおよび削除します。  
+-   DTS パッケージ**bam_dm _\<ActivityName\>** パーティション分割を行い、アーカイブや削除します。 このパッケージが実行されるたびに、別のパーティションを切り捨て、オンライン時間帯の期間を過ぎたすべてのパーティションをアーカイブおよび削除します。  
   
 -   アーカイブ データベースを構成していない場合、BAM は古いデータをアーカイブしないで削除します。  
   

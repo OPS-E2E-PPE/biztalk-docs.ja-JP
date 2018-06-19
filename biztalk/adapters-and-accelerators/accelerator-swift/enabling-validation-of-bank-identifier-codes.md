@@ -10,7 +10,7 @@ ms.topic: article
 helpviewer_keywords:
 - Bank Identifier Code (BIC), enabling
 ms.assetid: d268a892-f304-44cb-b590-28ef359c8d99
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25967112"
 ---
 # <a name="enabling-validation-of-bank-identifier-codes"></a>銀行識別コードの検証を有効にします。
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] スキーマでは、SWIFT インターチェンジのドキュメントで指定された銀行識別コード (BICs) が SWIFT 定義 BIC データ形式に準拠していることを確認してください。 A4SWIFT は、データベース内の顧客が指定した BIC リストに対して BICs の検証もサポートします。  

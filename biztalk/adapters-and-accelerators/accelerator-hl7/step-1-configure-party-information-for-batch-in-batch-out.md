@@ -1,14 +1,14 @@
 ---
-title: "手順 1: バッチのバッチにするためのパーティ情報の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: バッチのバッチにするためのパーティ情報の構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a93d774b-1282-40d9-836f-44abeb65f78e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960512"
 ---
 # <a name="step-1-configure-party-information-for-batch-inbatch-out"></a>手順 1: 構成内のバッチの情報をパーティ/アウト バッチ
 バッチを有効にすると、パーティのバッチ処理の断片化をオフにするこの手順でのシナリオをバッチ処理/です。 再起動する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を有効にする構成の変更を有効にします。  

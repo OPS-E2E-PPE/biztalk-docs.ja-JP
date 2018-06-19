@@ -1,14 +1,14 @@
 ---
-title: "登録および BizTalk アセンブリ ビューアーを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 登録および BizTalk アセンブリ ビューアーを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6f80b906-0a9e-4bcd-984d-db4550f2e51f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970032"
 ---
 # <a name="how-to-register-and-remove-the-biztalk-assembly-viewer"></a>BizTalk アセンブリ ビューアーを登録および削除する方法
 BizTalk アセンブリ ビューアーは、BizTalk Server のセットアップ時に自動的に登録されません。 BizTalk アセンブリ ビューアーを登録または削除するには、次の手順を実行します。  

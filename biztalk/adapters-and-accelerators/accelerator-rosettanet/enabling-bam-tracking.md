@@ -1,17 +1,17 @@
 ---
-title: "BAM 追跡の有効化 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 追跡の有効化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM tracking, enabling
 - BAM tracking, disabling
 ms.assetid: 3fee3315-fba7-4eea-89f3-6a061b450bb8
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210058"
 ---
 # <a name="enabling-bam-tracking"></a>BAM 追跡を有効にします。
 [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] では、BizTalk アクティビティ監視 (BAM) を使用した拡張追跡機能をサポートしています。 BTARN 構成のグローバル プロパティの一部として追跡を有効にします。 追跡を有効にすると、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] はすべてのアグリーメントに対するメッセージを追跡します。 既定では追跡が有効になっています。  

@@ -1,14 +1,14 @@
 ---
-title: "WCF クライアントまたは Oracle E-business Suite ソリューションの成果物のための WCF サービス コントラクトを生成 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF クライアントまたは Oracle E-business Suite ソリューションの成果物のための WCF サービス コントラクトを生成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7ffd857-a177-423a-ae83-685d11b7aec6
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217466"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-oracle-e-business-suite-solution-artifacts"></a>WCF クライアントまたは Oracle E-business Suite ソリューションの成果物のための WCF サービス コントラクトを生成します。
 使用することができます、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] WCF クライアント クラスまたは Oracle E-business Suite の成果物に選択した操作を対象とした WCF サービス コントラクト (インターフェイス) を生成します。 ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を WCF クライアント クラスを生成または WCF サービス コントラクト以外にも使用できます。ただし、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]標準の Microsoft Windows インターフェイスを通じて ServiceModel メタデータ ユーティリティ ツールの機能を公開します。 Svcutil.exe ツールではない参照および検索の機能も用意されていて、Oracle E-business Suite に接続するときに選択したバインドのプロパティに基づく構成ファイルを生成します。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーでは、プロジェクトを右クリックし、をクリックして**アダプター サービス参照の追加**です。  
   
-2.  後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)Oracle E-business Suite に接続し、参照し、操作を検索します。 選択した操作のための WCF クライアント クラスを作成することを確認**クライアント (送信操作)**からが選択されている、**選択コントラクト型**(これは、既定値) ドロップダウン リスト。  
+2.  後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)Oracle E-business Suite に接続し、参照し、操作を検索します。 選択した操作のための WCF クライアント クラスを作成することを確認**クライアント (送信操作)** からが選択されている、**選択コントラクト型**(これは、既定値) ドロップダウン リスト。  
   
 3.  すべての対象をクリックする操作を選択した後**OK** WCF クライアント クラスを生成します。  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)Oracle E-business Suite に接続します。 複数のバインドのプロパティと Oracle E-business Suite に接続するときに設定する URI プロパティがあります。  
   
-3.  Oracle E-business Suite に接続すると、選択**サービス (入力方向の操作)**から、**選択コントラクト型**ドロップダウン リスト。  
+3.  Oracle E-business Suite に接続すると、選択**サービス (入力方向の操作)** から、**選択コントラクト型**ドロップダウン リスト。  
   
 4.  **カテゴリを選択**ボックスで、サービス コントラクトを生成する受信操作を参照します。 たとえば、**通知**操作、ルート ノードをクリックして (**/**) を選択**通知**から、**利用可能なカテゴリとoperations**ボックスをクリックして**追加**です。 受信操作を参照する方法については、次を参照してください。[参照、検索、および Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)です。  
   

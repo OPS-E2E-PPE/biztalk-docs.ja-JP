@@ -1,11 +1,11 @@
 ---
-title: "手順 3: パブリックおよびプライベート証明書のインポート |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: パブリックおよびプライベート証明書のインポート |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - public certificates
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - double action tutorial, importing certificates
 - certificates, importing
 ms.assetid: 955bdd69-9fbc-4100-ab8a-8f5dd4a17cbb
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966952"
 ---
 # <a name="step-3-importing-public-and-private-certificates"></a>手順 3: パブリックおよびプライベート証明書のインポート
 この手順で作成した証明書をインポートする[手順 2: を作成するパブリックおよびプライベート証明書 &#91;RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-public-and-private-certificates.md) Contoso と Fabrikam のコンピューターにします。 各コンピュータは独自のプライベート証明書と他の組織のパブリック証明書をインポートします。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-import-the-fabrikam-public-certificates-on-the-contoso-computer"></a>Contoso のコンピュータで Fabrikam のパブリック証明書をインポートするには  
   
-1.  Contoso のコンピューターでをクリックして**開始**、 をクリックして**実行、**型**cmd**、順にクリック**ok**です。  
+1.  Contoso のコンピューターでをクリックして**開始**、 をクリックして**実行、** 型**cmd**、順にクリック**ok**です。  
   
 2.  コマンド プロンプトでに移動*\<ドライブ\>***: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk**し、キーを押して**Enter**です。  
   

@@ -1,11 +1,11 @@
 ---
-title: "レッスン 4: のビルドと、アセンブリの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 4: のビルドと、アセンブリの展開 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - building assemblies
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - assemblies, building
 - assemblies, deploying
 ms.assetid: 58397c35-6048-4ac9-a8b8-a528dd1cb82a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961928"
 ---
 # <a name="lesson-4-building-and-deploying-the-assembly"></a>レッスン 4: のビルドと、アセンブリの展開
 このレッスンでは、ビルドし、前のレッスンで作成したスキーマを含むアセンブリを生成するプロジェクトを配置します。 このタスクにより、これまでに作成した作業ではコンパイル エラーがないです。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 01/17/2018
   
 1.  をクリックして**ビュー**  をクリックし、 **BizTalk エクスプ ローラー**です。  
   
-2.  展開、**アセンブリ**ノードいることを確認および**SWIFTSchemas (1.0.0.0)**一覧に表示されます。  
+2.  展開、**アセンブリ**ノードいることを確認および**SWIFTSchemas (1.0.0.0)** 一覧に表示されます。  
   
      SWIFTSchemas が一覧に表示された場合、アセンブリが正常に展開されていると参照および使用できるを他の[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]プロジェクト。  
   

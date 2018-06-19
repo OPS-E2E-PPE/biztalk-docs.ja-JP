@@ -1,17 +1,17 @@
 ---
-title: "アダプター レジストリ ウィザード |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター レジストリ ウィザード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - utilities, Adapter Registration Wizard
 - Adapter Registration Wizard
 ms.assetid: bd15d0c7-01bb-41f9-9157-cdcf4bb4e39a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,12 +20,13 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965320"
 ---
 # <a name="adapter-registry-wizard"></a>アダプター レジストリ ウィザード
 アダプター レジストリ ウィザードを使用すると、カスタム アダプターの構成と登録に必要なレジストリ ファイルを作成できます。  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
- *\<インストール パス\>*\SDK\Utilities\AdapterRegistryWizard\  
+ *\<インストール パス\>* \SDK\Utilities\AdapterRegistryWizard\  
   
 ## <a name="to-run-this-utility"></a>このユーティリティを実行するには  
  AdapterRegistryWizard.exe 実行可能ファイルを実行して、ウィザードを開始します。 次のページで、アダプターとアダプターでサポートされるプロパティについての情報の入力を要求されます。 個別のアダプター レジストリ ウィザードのページについては、次のセクションで説明します。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960400"
 ---
 # <a name="step-1-create-and-deploy-common-header-and-acknowledgment-schemas"></a>手順 1: を作成し、共通のヘッダーと受信確認スキーマを展開
 メッセージ インスタンスのヘッダー (MSH セグメント) を検証するのにには、ヘッダー スキーマを使用します。 メッセージ インスタンスの確認を生成するのにには、受信確認スキーマを使用します。 このプロセスは、HL7 スキーマのすべてのバージョンで共通です。  

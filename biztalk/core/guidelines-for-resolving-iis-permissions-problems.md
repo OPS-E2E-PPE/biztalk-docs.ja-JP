@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970576"
 ---
 # <a name="guidelines-for-resolving-iis-permissions-problems"></a>IIS のアクセス許可の問題を解決するためのガイドライン
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、Web サービス サポートや HTTP、SOAP、Windows SharePoint Services の各アダプターで、Microsoft インターネット インフォメーション サービス (IIS) を広範に使用します。  
@@ -54,17 +55,17 @@ ms.lasthandoff: 11/28/2017
   
  IIS 7.0 では、次のユーザー認証方式がサポートされます。  
   
--   **匿名アクセス:**匿名接続を確立することができます。 IIS サーバーは、指定された guest アカウントでユーザーをログオンさせます。  
+-   **匿名アクセス:** 匿名接続を確立することができます。 IIS サーバーは、指定された guest アカウントでユーザーをログオンさせます。  
   
 -   **ASP.NET の偽装**により、2 つの異なるコンテキストのいずれかで実行するアプリケーション: または IIS で認証されたユーザーとして任意のアカウントを設定することです。  
   
--   **基本認証:**パスワードをプレーン テキストで暗号化されていない形式でネットワーク経由で送信します。  
+-   **基本認証:** パスワードをプレーン テキストで暗号化されていない形式でネットワーク経由で送信します。  
   
--   **ダイジェスト認証:**はプレーン テキストのパスワードではなく、ネットワーク経由でハッシュ値を送信する、Active Directory アカウントでのみ機能します。 ダイジェスト認証は、プロキシ サーバーやその他のファイアウォールの枠を越えて機能し、WebDAV (Web Distributed Authoring and Versioning) ディレクトリで使用できます。 ダイジェスト認証を使用するには、まず匿名認証を無効にする必要があります。  
+-   **ダイジェスト認証:** はプレーン テキストのパスワードではなく、ネットワーク経由でハッシュ値を送信する、Active Directory アカウントでのみ機能します。 ダイジェスト認証は、プロキシ サーバーやその他のファイアウォールの枠を越えて機能し、WebDAV (Web Distributed Authoring and Versioning) ディレクトリで使用できます。 ダイジェスト認証を使用するには、まず匿名認証を無効にする必要があります。  
   
 -   **フォーム認証**認証トラフィック量が多いサイトやパブリック サーバー上のアプリケーションに対応します。 フォーム認証を使用すると、オペレーティング システムによって提供される認証メカニズムに依存することなく、クライアントの登録と認証をアプリケーション レベルで管理できます。  
   
--   **Windows 認証:**クライアント接続の認証に Windows ドメインで認証を使用します。  
+-   **Windows 認証:** クライアント接続の認証に Windows ドメインで認証を使用します。  
   
 #### <a name="to-set-user-access-rights-for-a-virtual-directory-in-iis-70"></a>IIS 7.0 で仮想ディレクトリのユーザー アクセス権を設定するには  
   

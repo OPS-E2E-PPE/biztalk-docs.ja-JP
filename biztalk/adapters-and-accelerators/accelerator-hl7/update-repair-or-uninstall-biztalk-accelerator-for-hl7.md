@@ -1,14 +1,14 @@
 ---
-title: "更新、修復、または BizTalk Accelerator を HL7 のアンインストール |Microsoft ドキュメント"
-ms.custom: 
+title: 更新、修復、または BizTalk Accelerator を HL7 のアンインストール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e2fc84d2-1262-4a6e-ae9c-488a00ab4099
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25962176"
 ---
 # <a name="update-repair-or-uninstall-biztalk-accelerator-for-hl7"></a>更新、修復、または BizTalk Accelerator を HL7 のアンインストール
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 01/17/2018
   
 5.  つまり、次のように選択します。**次**です。  
   
-6.  **[インストール]**を選択します。  
+6.  **[インストール]** を選択します。  
   
 7. 完了したら、**[完了]** を選択します。  
 

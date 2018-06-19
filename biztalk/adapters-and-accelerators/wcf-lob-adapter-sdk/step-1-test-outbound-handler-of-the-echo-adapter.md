@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad4a8164-a584-436f-b20b-4c884f6e2b37
-caps.latest.revision: ''
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "23450523"
 ---
 # <a name="step-1-test-outbound-handler-of-the-echo-adapter"></a>手順 1: エコー アダプターの送信ハンドラーをテストします。
 ![2 の手順 1.](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
@@ -38,13 +39,13 @@ ms.lasthandoff: 03/23/2018
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**プロジェクトの種類**|クリックして **Visual c#**します。|  
+    |**プロジェクトの種類**|クリックして **Visual c#** します。|  
     |**テンプレート**|クリックして **コンソール アプリケーション**します。|  
     |**名前**|型**ConsumeEchoAdapter_Outbound**です。|  
     |**場所**|型**C:\Tutorials**です。|  
     |**[ソリューション名]**|型**ConsumeEchoAdapter_Outbound**です。|  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 5.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 03/23/2018
   
 5.  **アダプターの構成**画面で、、**バインド プロパティ**タブでアダプターのプロパティを構成します。 注意してカスタムのカテゴリのエコー アダプター**受信**と**その他**が表示されます。 下にある、**その他**カテゴリで、変更**カウント**に**3**です。  
   
-6.  をクリックして**[ok]**を閉じる、**アダプターの構成**画面およびに戻り、**アダプター サービス参照の追加**画面。  
+6.  をクリックして **[ok]** を閉じる、**アダプターの構成**画面およびに戻り、**アダプター サービス参照の追加**画面。  
   
 7.  次に、をクリックして**接続**エコー アダプタ (およびの仮定の基幹業務システムをサポートしています) に接続します。 しばらくすると、接続の状態を変更する必要があります**接続**とカテゴリ ツリー (**カテゴリを選択**) 設定する必要があります。  
   
