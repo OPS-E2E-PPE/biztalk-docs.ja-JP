@@ -1,11 +1,11 @@
 ---
-title: "動的なメッセージの種類の探索用のカスタム ヘッダーのスキーマの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 動的なメッセージの種類の探索用のカスタム ヘッダーのスキーマの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, dynamic resolution
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, custom headers
 - header schemas
 ms.assetid: 0c936c57-b533-47ca-9258-576b021fd016
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004331"
 ---
 # <a name="creating-custom-header-schemas-for-dynamic-message-type-discovery"></a><span data-ttu-id="79e00-102">動的なメッセージの種類の探索用のカスタム ヘッダーのスキーマの作成</span><span class="sxs-lookup"><span data-stu-id="79e00-102">Creating Custom Header Schemas for Dynamic Message Type Discovery</span></span>
 <span data-ttu-id="79e00-103">ほとんどのシナリオでは、SWIFT、逆アセンブラーの SWIFT ヘッダー スキーマ構成プロパティの既定の SWIFT ヘッダー スキーマ (Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.HeaderSchema) を指定してください。</span><span class="sxs-lookup"><span data-stu-id="79e00-103">In most scenarios, you should specify the default SWIFT header schema (Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.HeaderSchema) for the SWIFT Header Schema configuration property of the SWIFT disassembler.</span></span> <span data-ttu-id="79e00-104">SWIFT の逆アセンブラーでは、既定の SWIFT ヘッダー スキーマを使用して、SWIFT の標準仕様に準拠しているメッセージ ヘッダーを解析しが、必要な昇格されたプロパティを動的スキーマの解決 (と「デュアル型」のサブ型解決を容易にします。SWIFT メッセージなど、MT574_IRSLST MT574_W8BENO)。</span><span class="sxs-lookup"><span data-stu-id="79e00-104">The SWIFT disassembler uses the default SWIFT header schema to parse message headers that conform to the SWIFT standard specification, and has the necessary promoted properties to facilitate dynamic schema resolution (and sub-type resolution for "dual type" SWIFT messages like MT574_IRSLST and MT574_W8BENO).</span></span> <span data-ttu-id="79e00-105">既定の SWIFT ヘッダー スキーマおよび SWIFT の逆アセンブラーがスキーマの解決を実行する方法を理解する詳細については、次を参照してください。[動的メッセージ型の検出とスキーマの解決](../../adapters-and-accelerators/accelerator-swift/dynamic-message-type-discovery-and-schema-resolution.md)です。</span><span class="sxs-lookup"><span data-stu-id="79e00-105">For more information about the default SWIFT header schema and to understand how the SWIFT disassembler performs schema resolution, see [Dynamic Message Type Discovery and Schema Resolution](../../adapters-and-accelerators/accelerator-swift/dynamic-message-type-discovery-and-schema-resolution.md).</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  <span data-ttu-id="79e00-115">カスタム ヘッダーのスキーマに SWIFT の逆アセンブラー (の受信パイプライン プロジェクト) の SWIFT ヘッダー スキーマ構成プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="79e00-115">Set the SWIFT Header Schema configuration property of the SWIFT disassembler (in your receive pipeline project) to the custom header schema.</span></span>  
   
- <span data-ttu-id="79e00-116">これらおよびその他の昇格させたプロパティの詳細については、次を参照してください。 [A4SWIFT_ * 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="79e00-116">For more information about these and other promoted properties, see [A4SWIFT_* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).</span></span> <span data-ttu-id="79e00-117">BizTalk エディターを使用して作成およびスキーマを編集、プロパティ スキーマを使用してプロパティを昇格させるとビルドおよびスキーマ プロジェクトを配置する方法の詳細については、BizTalk Server ヘルプを参照してください。</span><span class="sxs-lookup"><span data-stu-id="79e00-117">For more information about using BizTalk Editor to create and edit schemas, promote properties using a property schema, and build and deploy schema projects, see BizTalk Server Help.</span></span>  
+ <span data-ttu-id="79e00-116">これらおよびその他の昇格させたプロパティの詳細については、次を参照してください。 [A4SWIFT_ \* 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="79e00-116">For more information about these and other promoted properties, see [A4SWIFT_\* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).</span></span> <span data-ttu-id="79e00-117">BizTalk エディターを使用して作成およびスキーマを編集、プロパティ スキーマを使用してプロパティを昇格させるとビルドおよびスキーマ プロジェクトを配置する方法の詳細については、BizTalk Server ヘルプを参照してください。</span><span class="sxs-lookup"><span data-stu-id="79e00-117">For more information about using BizTalk Editor to create and edit schemas, promote properties using a property schema, and build and deploy schema projects, see BizTalk Server Help.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="79e00-118">参照</span><span class="sxs-lookup"><span data-stu-id="79e00-118">See Also</span></span>  
  [<span data-ttu-id="79e00-119">SWIFT 逆アセンブラーおよびアセンブラーの操作</span><span class="sxs-lookup"><span data-stu-id="79e00-119">Working with the SWIFT Disassembler and Assembler</span></span>](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)

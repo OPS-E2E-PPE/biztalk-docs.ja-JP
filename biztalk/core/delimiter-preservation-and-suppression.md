@@ -1,14 +1,14 @@
 ---
-title: "区切り記号の保存と抑制 |Microsoft ドキュメント"
-ms.custom: 
+title: 区切り記号の保存と抑制 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30985b94-625e-411a-8137-1c129bc197bf
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: d572ae5c887898adedcb3dfc5f83841beedd3434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/06/2017
+ms.locfileid: "26335502"
 ---
 # <a name="delimiter-preservation-and-suppression"></a><span data-ttu-id="e5417-102">区切り記号の保存および非表示</span><span class="sxs-lookup"><span data-stu-id="e5417-102">Delimiter Preservation and Suppression</span></span>
 
@@ -82,7 +83,7 @@ ms.lasthandoff: 12/06/2017
   
 -   <span data-ttu-id="e5417-151">ときに、**レコード**対象のノード、**空のデータの区切り記号を保持する**プロパティに設定されている**いいえ**と**抑制末尾の区切り記号**プロパティに設定されている**はい**、それぞれ、下位が含まれています**フィールド要素**ノード、**フィールド属性**ノード、または**レコード**のタグが指定されていないノードです。</span><span class="sxs-lookup"><span data-stu-id="e5417-151">When the **Record** node for which the **Preserve Delimiter For Empty Data** property is set to **No** and/or the **Suppress Trailing Delimiters** property is set to **Yes**, respectively, contains subordinate **Field Element** nodes, **Field Attribute** nodes, or **Record** nodes for which no tag is specified.</span></span>  
   
--   <span data-ttu-id="e5417-152">ときに、下位**フィールド要素**ノード、**フィールド属性**ノード、および**レコード**のタグが指定されていないノードが省略可能な場合に構成されていません (設定して、**Min Occurs**プロパティを 0 に設定)、スキーマにします。</span><span class="sxs-lookup"><span data-stu-id="e5417-152">When the subordinate **Field Element** nodes, **Field Attribute** nodes, and **Record** nodes for which no tag is specified are not configured to be optional (by setting the **Min Occurs** property set to zero) in the schema.</span></span> <span data-ttu-id="e5417-153">ときに、**末尾の区切り記号の抑制**プロパティに設定されている**[はい]**最後にのみを構成する必要がこのような下位ノードが省略可能として。</span><span class="sxs-lookup"><span data-stu-id="e5417-153">When the **Suppress Trailing Delimiters** property is set to **Yes**, only the last such subordinate nodes need to be configured as optional.</span></span> <span data-ttu-id="e5417-154">ときに、**空のデータの区切り記号を保持する**プロパティに設定されている**なし**、すべての末尾を構成する必要が下位ノードが省略可能として。</span><span class="sxs-lookup"><span data-stu-id="e5417-154">When the **Preserve Delimiter For Empty Data** property is set to **No**, all trailing subordinate nodes need to be configured as optional.</span></span>  
+-   <span data-ttu-id="e5417-152">ときに、下位**フィールド要素**ノード、**フィールド属性**ノード、および**レコード**のタグが指定されていないノードが省略可能な場合に構成されていません (設定して、**Min Occurs**プロパティを 0 に設定)、スキーマにします。</span><span class="sxs-lookup"><span data-stu-id="e5417-152">When the subordinate **Field Element** nodes, **Field Attribute** nodes, and **Record** nodes for which no tag is specified are not configured to be optional (by setting the **Min Occurs** property set to zero) in the schema.</span></span> <span data-ttu-id="e5417-153">ときに、**末尾の区切り記号の抑制**プロパティに設定されている **[はい]** 最後にのみを構成する必要がこのような下位ノードが省略可能として。</span><span class="sxs-lookup"><span data-stu-id="e5417-153">When the **Suppress Trailing Delimiters** property is set to **Yes**, only the last such subordinate nodes need to be configured as optional.</span></span> <span data-ttu-id="e5417-154">ときに、**空のデータの区切り記号を保持する**プロパティに設定されている**なし**、すべての末尾を構成する必要が下位ノードが省略可能として。</span><span class="sxs-lookup"><span data-stu-id="e5417-154">When the **Preserve Delimiter For Empty Data** property is set to **No**, all trailing subordinate nodes need to be configured as optional.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="e5417-155">XML 要素は、(おそらく省略可能) に関連付けられているときに区切り記号は常に保持**レコード**、**フィールド要素**、または**フィールド属性**ノードがまったくないです。レコードが省略可能なフィールドがありませんに依存する場合を除く、ビジネス ドキュメントの XML 表現。</span><span class="sxs-lookup"><span data-stu-id="e5417-155">Delimiters are always preserved when the XML element associated with a (presumably optional) **Record**, **Field Element**, or **Field Attribute** node are entirely missing from the XML representation of the business document except when a Record follows a missing optional Field.</span></span> <span data-ttu-id="e5417-156">つまり、データとデータを囲む XML タグが両方とも欠落している場合、対応する区切り記号は、ビジネス ドキュメントのフラット ファイル表記に必ず含まれます。</span><span class="sxs-lookup"><span data-stu-id="e5417-156">In other words, when the data and its surrounding XML tags are both missing, the corresponding delimiter is always included in the flat file representation of the business document.</span></span>  

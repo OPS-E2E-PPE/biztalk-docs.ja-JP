@@ -1,14 +1,14 @@
 ---
-title: "アセンブリ エラー |Microsoft ドキュメント"
-ms.custom: 
+title: アセンブリ エラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 26a61ba7-d7c5-475b-b040-fbf4a26f9be1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230058"
 ---
 # <a name="assembly-errors"></a><span data-ttu-id="49927-102">アセンブリ エラー</span><span class="sxs-lookup"><span data-stu-id="49927-102">Assembly Errors</span></span>
 <span data-ttu-id="49927-103">ここでは、WCF のアセンブリ エラーを診断および解決するための詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="49927-103">This section contains detailed information for diagnosing and resolving WCF Assembly errors.</span></span>  

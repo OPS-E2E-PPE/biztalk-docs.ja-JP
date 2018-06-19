@@ -1,14 +1,14 @@
 ---
-title: "オペレーティング システムの最適化 |Microsoft ドキュメント"
-ms.custom: 
+title: オペレーティング システムの最適化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: af2e77d0-d69b-4ae4-b689-96831fc4deed
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976696"
 ---
 # <a name="operating-system-optimizations"></a><span data-ttu-id="251ab-102">オペレーティング システムの最適化</span><span class="sxs-lookup"><span data-stu-id="251ab-102">Operating System Optimizations</span></span>
 <span data-ttu-id="251ab-103">このトピックのパフォーマンスを最適化するための推奨事項を提供する、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 、実稼働環境で使用されるコンピューター[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。</span><span class="sxs-lookup"><span data-stu-id="251ab-103">This topic provides recommendations for optimizing performance of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] computers used in a production [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span> <span data-ttu-id="251ab-104">これらの最適化が後に適用されます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をインストールして構成します。</span><span class="sxs-lookup"><span data-stu-id="251ab-104">These optimizations are applied after [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] has been installed and configured.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="251ab-122">**場所**編集ボックスの **ログ情報**、(たとえば、G:\Logs\DTCLog) を作成する新しいログが必要なパスを入力します。</span><span class="sxs-lookup"><span data-stu-id="251ab-122">In the **Location** edit box under **Log Information**, type the path where you want the new log to be created (for example, G:\Logs\DTCLog).</span></span>  
   
-5.  <span data-ttu-id="251ab-123">をクリックして**リセット ログ**、およびサービスの再起動を求められます。</span><span class="sxs-lookup"><span data-stu-id="251ab-123">Click **Reset log**, and you will be prompted for service restart.</span></span> <span data-ttu-id="251ab-124">をクリックして**[ok]** DTC サービスを再起動し、をクリックする**OK** MSDTC サービスが再起動されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="251ab-124">Click **OK** to restart the DTC service, and then click **OK** to confirm the MSDTC service has been restarted.</span></span>  
+5.  <span data-ttu-id="251ab-123">をクリックして**リセット ログ**、およびサービスの再起動を求められます。</span><span class="sxs-lookup"><span data-stu-id="251ab-123">Click **Reset log**, and you will be prompted for service restart.</span></span> <span data-ttu-id="251ab-124">をクリックして **[ok]** DTC サービスを再起動し、をクリックする**OK** MSDTC サービスが再起動されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="251ab-124">Click **OK** to restart the DTC service, and then click **OK** to confirm the MSDTC service has been restarted.</span></span>  
   
 ### <a name="configure-antivirus-software-to-avoid-real-time-scanning-of-biztalk-server-executables-and-file-drops"></a><span data-ttu-id="251ab-125">BizTalk Server 実行可能ファイルのリアルタイム スキャンしないようにするウイルス対策ソフトウェアを構成し、ファイルの削除</span><span class="sxs-lookup"><span data-stu-id="251ab-125">Configure antivirus software to avoid real-time scanning of BizTalk Server executables and file drops</span></span>  
  <span data-ttu-id="251ab-126">ウイルス対策ソフトウェアの BizTalk Server 実行可能ファイルおよびフォルダーやファイルのリアルタイム スキャンの受信場所を BizTalk Server によって監視される共有 BizTalk Server のパフォーマンスに悪影響を与えることができます。</span><span class="sxs-lookup"><span data-stu-id="251ab-126">Antivirus software real-time scanning of BizTalk Server executable files and any folders or file shares monitored by BizTalk Server receive locations can negatively impact BizTalk Server performance.</span></span> <span data-ttu-id="251ab-127">ウイルス対策ソフトウェアが BizTalk Server コンピューターにインストールされている場合の BizTalk Server によって参照される非実行可能ファイルの種類のリアルタイム スキャンを無効にする受信場所 (通常はします。XML、.csv、.txt などこともできます)。BizTalk Server 実行可能ファイルのスキャンを除外するウイルス対策ソフトウェアと構成</span><span class="sxs-lookup"><span data-stu-id="251ab-127">If antivirus software is installed on the BizTalk Server computer(s), disable real-time scanning of non-executable file types referenced by any BizTalk Server receive locations (usually .XML, but can also be .csv, .txt, etc.) and configure antivirus software to exclude scanning of BizTalk Server executable Files</span></span>  

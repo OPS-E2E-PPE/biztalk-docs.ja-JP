@@ -18,6 +18,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "29564410"
 ---
 # <a name="sftp-adapter"></a><span data-ttu-id="312bd-103">SFTP アダプター</span><span class="sxs-lookup"><span data-stu-id="312bd-103">SFTP Adapter</span></span>
 <span data-ttu-id="312bd-104">BizTalk Server は、 **SFTP** SSH ファイル転送プロトコルを使用してセキュリティで保護された FTP サーバーからメッセージを送受信するアダプター。</span><span class="sxs-lookup"><span data-stu-id="312bd-104">BizTalk Server includes an **SFTP** adapter to send and receive messages from a secure FTP server using the SSH file transfer protocol.</span></span> <span data-ttu-id="312bd-105">このトピックでは、構成する手順、 **SFTP** 受信場所、およびセキュリティで保護された FTP サーバーからメッセージを送受信する SFTP 送信ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="312bd-105">This topic includes the steps to configure an **SFTP** receive location, and configure an SFTP send port to receive and send messages from a secure FTP server.</span></span> <span data-ttu-id="312bd-106">一般的な質問と回答も含まれています。</span><span class="sxs-lookup"><span data-stu-id="312bd-106">It also includes common questions and answers.</span></span>

@@ -1,11 +1,11 @@
 ---
-title: "セキュリティに関する注意事項、ビジネス ルール エンジン |Microsoft ドキュメント"
-ms.custom: 
+title: セキュリティに関する注意事項、ビジネス ルール エンジン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, store administrator
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business rules, security
 - Denial of Service attacks
 ms.assetid: 8972127a-5569-4b32-bc09-e9265efe9514
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007067"
 ---
 # <a name="important-security-notes-for-the-business-rule-engine"></a><span data-ttu-id="989a4-102">ビジネス ルール エンジンの重要なセキュリティに関する注意事項</span><span class="sxs-lookup"><span data-stu-id="989a4-102">Important Security Notes for the Business Rule Engine</span></span>
 <span data-ttu-id="989a4-103">このトピックでは、Microsoft BizTalk Server とセキュリティ上のリスクを軽減するために行う手順の既知のセキュリティ問題についてまとめます。</span><span class="sxs-lookup"><span data-stu-id="989a4-103">This topic summarizes known security issues in Microsoft BizTalk Server and the steps you must take to mitigate the security risks.</span></span>  

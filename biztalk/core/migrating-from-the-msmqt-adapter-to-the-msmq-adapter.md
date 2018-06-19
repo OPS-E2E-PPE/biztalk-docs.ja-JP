@@ -1,14 +1,14 @@
 ---
-title: "MSMQT アダプターから MSMQ アダプターへの移行 |Microsoft ドキュメント"
-ms.custom: 
+title: MSMQT アダプターから MSMQ アダプターへの移行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 12/07/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 97126f70-0be5-4a2f-bcba-173fd932b6de
-caps.latest.revision: 
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710189"
 ---
 # <a name="migrate-from-the-msmqt-adapter-to-the-msmq-adapter"></a><span data-ttu-id="01f19-102">MSMQT アダプターから MSMQ アダプターへの移行します。</span><span class="sxs-lookup"><span data-stu-id="01f19-102">Migrate from the MSMQT Adapter to the MSMQ Adapter</span></span>
 <span data-ttu-id="01f19-103">このトピックでは、ソリューションを BizTalk メッセージ キュー (MSMQT) アダプターからメッセージ キュー (MSMQ) アダプターに移行する前に、エンド ツー エンドの順次配送、トランザクションの一貫性、高可用性、およびスケーラビリティに関して考慮すべき事項について説明します。</span><span class="sxs-lookup"><span data-stu-id="01f19-103">This topic discusses points to consider regarding end-to-end ordered delivery, transactional consistency, high availability, and scalability before migrating solutions from the BizTalk Message Queuing (MSMQT) adapter to the Message Queuing (MSMQ) adapter.</span></span> <span data-ttu-id="01f19-104">このトピックでは、順次配送、トランザクションの一貫性、高可用性、およびスケーラビリティを次のように定義しています。</span><span class="sxs-lookup"><span data-stu-id="01f19-104">For purposes of this topic ordered delivery, transactional consistency, high availability, and scalability are defined as follows:</span></span>  

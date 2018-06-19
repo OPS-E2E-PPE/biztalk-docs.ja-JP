@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 18ca8535-3386-4018-8b5b-d32bdb9ebf70
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22291218"
 ---
 # <a name="what-are-the-wcf-adapters"></a><span data-ttu-id="9a049-103">WCF アダプタについて</span><span class="sxs-lookup"><span data-stu-id="9a049-103">What Are the WCF Adapters?</span></span>
 <span data-ttu-id="9a049-104">Windows Communication Foundation (WCF) アダプタには、受信アダプタと送信アダプタの 2 つがあります。</span><span class="sxs-lookup"><span data-stu-id="9a049-104">There are two Windows Communication Foundation (WCF) adapters—a receive adapter and a send adapter.</span></span> <span data-ttu-id="9a049-105">WCF 受信アダプタは、WCF サービス要求を受信するために使用します。</span><span class="sxs-lookup"><span data-stu-id="9a049-105">You use the WCF receive adapter to receive WCF service requests.</span></span> <span data-ttu-id="9a049-106">WCF 受信アダプタは、要求の受信、BizTalk メッセージ オブジェクトの作成、および関連するプロパティのメッセージ コンテキストへの昇格を行います。</span><span class="sxs-lookup"><span data-stu-id="9a049-106">The WCF receive adapter receives a request, creates a BizTalk Message object, and promotes the associated properties to the message context.</span></span> <span data-ttu-id="9a049-107">WCF 送信アダプタは、WCF サービスを呼び出すときに使用します。</span><span class="sxs-lookup"><span data-stu-id="9a049-107">You use the WCF send adapter to call a WCF service.</span></span> <span data-ttu-id="9a049-108">WCF 送信アダプタは、型宣言が不要なコントラクトを使用して WCF サービスを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="9a049-108">The WCF send adapter calls the WCF services through the typeless contracts.</span></span>  

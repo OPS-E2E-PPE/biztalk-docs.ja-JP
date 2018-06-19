@@ -1,17 +1,17 @@
 ---
-title: "追跡プロファイルの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 追跡プロファイルの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tracking profiles, creating
 - creating, tracking profiles
 ms.assetid: 62598529-9763-4c73-acbe-06ce5650134a
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238274"
 ---
 # <a name="creating-tracking-profiles"></a><span data-ttu-id="c6a8b-102">追跡プロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="c6a8b-102">Creating Tracking Profiles</span></span>
 <span data-ttu-id="c6a8b-103">組織の特定のビジネス プロセスに対する管理や監視機能を向上させるには、新しい追跡プロファイルを作成するか、または既存のプロファイルを変更します。</span><span class="sxs-lookup"><span data-stu-id="c6a8b-103">You create a new tracking profile or modify an existing one to better manage and monitor a specific business process for your organization.</span></span> <span data-ttu-id="c6a8b-104">追跡プロファイル エディター (TPE) を使用すると、ビジネス アナリストの要件を満たすために収集するデータを定義できます。</span><span class="sxs-lookup"><span data-stu-id="c6a8b-104">The Tracking Profile Editor (TPE) allows you to define the data to collect to meet the business analyst's requirement.</span></span> <span data-ttu-id="c6a8b-105">作成または変更するプロファイルは、ビジネスの要件に応じて簡単にも複雑にもできます。</span><span class="sxs-lookup"><span data-stu-id="c6a8b-105">The profile you create or modify can be as simple or as complex as you like depending on your business requirements.</span></span>  

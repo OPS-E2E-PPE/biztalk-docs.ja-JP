@@ -1,11 +1,11 @@
 ---
-title: "ビジネス プロセス管理ソリューションで SSO の効率的な使用 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス プロセス管理ソリューションで SSO の効率的な使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, process management solutions
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - SSO, caching
 - process management solution tutorial, SSO
 ms.assetid: 39fbc42d-caa4-4003-a13b-5cde578eb5e1
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288522"
 ---
 # <a name="using-sso-efficiently-in-the-business-process-management-solution"></a><span data-ttu-id="14c07-102">ビジネス プロセス管理ソリューションで SSO の効率的な使用</span><span class="sxs-lookup"><span data-stu-id="14c07-102">Using SSO Efficiently in the Business Process Management Solution</span></span>
 <span data-ttu-id="14c07-103">サービス指向ソリューションと同様に、ビジネス プロセス管理ソリューションは、エンタープライズ シングル サインオン (SSO) を使用して、注文処理ステージの数などの構成値を保存します。</span><span class="sxs-lookup"><span data-stu-id="14c07-103">Like the Service Oriented solution, the Business Process Management solution uses Enterprise Single Sign-On (SSO) to store configuration values such as the number of order processing stages.</span></span> <span data-ttu-id="14c07-104">BizTalk がインストールされると存在するため、シークレット ストアを使用します。SSO は、値をすぐに使用できるように構成情報をキャッシュするので、データベース接続文字列やパスワードなどの情報を保護できます。</span><span class="sxs-lookup"><span data-stu-id="14c07-104">It uses the secret store because it is present whenever BizTalk is installed, SSO caches the configuration information so that the values are readily available, and it can protect information such as database connection strings and passwords.</span></span> <span data-ttu-id="14c07-105">これらのすべての理由により、SSO がバックエンド アプリケーションの接続管理に使用されていなくても、シークレット ストアは構成情報を保存する適切な場所です。</span><span class="sxs-lookup"><span data-stu-id="14c07-105">For all of these reasons, the secret store is a good place for the configuration information even if Single Sign-On weren't being used for managing connections to the backend applications.</span></span>  

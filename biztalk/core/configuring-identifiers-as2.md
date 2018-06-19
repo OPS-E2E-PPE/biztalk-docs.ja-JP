@@ -1,14 +1,14 @@
 ---
-title: "識別子 (AS2) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 識別子 (AS2) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 29f12696-8257-4664-8e61-292678e98b6b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007443"
 ---
 # <a name="configuring-identifiers-as2"></a><span data-ttu-id="17e57-102">識別子の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="17e57-102">Configuring Identifiers (AS2)</span></span>
 <span data-ttu-id="17e57-103">パートナー アグリーメントで、送信パーティおよび受信パーティを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17e57-103">In the partner agreement, you must specify the sender and receiver parties.</span></span> <span data-ttu-id="17e57-104">これらの値は、受信メッセージおよび送信メッセージのアグリーメントの解決にも使用されます。</span><span class="sxs-lookup"><span data-stu-id="17e57-104">These values are also used for agreement resolution for the inbound or outbound messages.</span></span>  
@@ -26,7 +27,7 @@ ms.lasthandoff: 12/01/2017
 >   
 >  -   <span data-ttu-id="17e57-106">**AS2To** **追加のアグリーメント リゾルバー**セクションです。</span><span class="sxs-lookup"><span data-stu-id="17e57-106">**AS2To** under **Additional Agreement Resolvers** section.</span></span>  
 >   
->  <span data-ttu-id="17e57-107">プロパティが無効になるのは、パーティから受信中のインターチェンジのプロパティに対応する一方向のアグリーメント タブ上のみです。</span><span class="sxs-lookup"><span data-stu-id="17e57-107">The properties are disabled only on the one-way agreement tab that corresponds to the properties for interchanges being sent from the party.</span></span> <span data-ttu-id="17e57-108">たとえば、2 つのパーティのパーティ A とパーティ B を作成して、チェック ボックスをオフにしたパーティ A、に対して、上記のプロパティの無効になりますで、**パーティ A にパーティ B]-> [**一方向アグリーメント タブです。</span><span class="sxs-lookup"><span data-stu-id="17e57-108">For example, if you create two parties Party A and Party B and for Party A, you cleared the check box, the above list of properties are disabled on the **Party A->Party B** one-way agreement tab.</span></span>  
+>  <span data-ttu-id="17e57-107">プロパティが無効になるのは、パーティから受信中のインターチェンジのプロパティに対応する一方向のアグリーメント タブ上のみです。</span><span class="sxs-lookup"><span data-stu-id="17e57-107">The properties are disabled only on the one-way agreement tab that corresponds to the properties for interchanges being sent from the party.</span></span> <span data-ttu-id="17e57-108">たとえば、2 つのパーティのパーティ A とパーティ B を作成して、チェック ボックスをオフにしたパーティ A、に対して、上記のプロパティの無効になりますで、**パーティ A にパーティ B]-> [** 一方向アグリーメント タブです。</span><span class="sxs-lookup"><span data-stu-id="17e57-108">For example, if you create two parties Party A and Party B and for Party A, you cleared the check box, the above list of properties are disabled on the **Party A->Party B** one-way agreement tab.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="17e57-109">前提条件</span><span class="sxs-lookup"><span data-stu-id="17e57-109">Prerequisites</span></span>  
  <span data-ttu-id="17e57-110">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="17e57-110">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  

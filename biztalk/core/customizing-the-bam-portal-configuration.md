@@ -1,14 +1,14 @@
 ---
-title: "BAM ポータルの構成をカスタマイズする |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルの構成をカスタマイズする |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 507bd5f0-b2a0-4d52-85f8-9d984138ca79
-caps.latest.revision: "47"
+caps.latest.revision: 47
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009747"
 ---
 # <a name="customizing-the-bam-portal-configuration"></a><span data-ttu-id="7971f-102">BAM ポータルの構成のカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="7971f-102">Customizing the BAM Portal Configuration</span></span>
 <span data-ttu-id="7971f-103">BAM ポータルには、構成可能なオプションが多数あります。</span><span class="sxs-lookup"><span data-stu-id="7971f-103">There are a number of configurable options on the BAM portal.</span></span> <span data-ttu-id="7971f-104">次の手順では、最適なユーザー エクスペリエンスを取得する BAM ポータルを変更する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="7971f-104">The following procedures show you how to modify the BAM portal to obtain the best user experience.</span></span>  
@@ -160,7 +161,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="7971f-212">コマンド プロンプトを開きます。</span><span class="sxs-lookup"><span data-stu-id="7971f-212">Open a command prompt.</span></span>  
   
-2.  <span data-ttu-id="7971f-213">実行**C:\Program files \microsoft SQL Server\90\Notification Services\9.0.242\Bin\nscontrol register bamalerts という名前のサーバー***\<サーバー名\>* を置き換えます*\<サーバー名\>*サーバーの名前に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="7971f-213">Run **C:\Program Files\Microsoft SQL Server\90\Notification Services\9.0.242\Bin\nscontrol register -name bamalerts -server***\<server name\>* Replace *\<server name\>* with the name of the server.</span></span>  
+2.  <span data-ttu-id="7971f-213">実行**C:\Program files \microsoft SQL Server\90\Notification Services\9.0.242\Bin\nscontrol register bamalerts という名前のサーバー***\<サーバー名\>* を置き換えます*\<サーバー名\>* サーバーの名前に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="7971f-213">Run **C:\Program Files\Microsoft SQL Server\90\Notification Services\9.0.242\Bin\nscontrol register -name bamalerts -server***\<server name\>* Replace *\<server name\>* with the name of the server.</span></span>  
   
 3.  <span data-ttu-id="7971f-214"><localizedText>F5</localizedText> キーを押して、ブラウザーを更新します。</span><span class="sxs-lookup"><span data-stu-id="7971f-214">Press F5 to refresh your browser.</span></span>  
   

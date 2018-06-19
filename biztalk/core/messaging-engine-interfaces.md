@@ -1,14 +1,14 @@
 ---
-title: "メッセージング エンジン インターフェイス |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージング エンジン インターフェイス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14241db3-edcf-4449-9ec8-2171a14496c0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263290"
 ---
 # <a name="messaging-engine-interfaces"></a><span data-ttu-id="2f13a-102">メッセージング エンジンのインターフェイス</span><span class="sxs-lookup"><span data-stu-id="2f13a-102">Messaging Engine Interfaces</span></span>
 <span data-ttu-id="2f13a-103">アダプターがメッセージング エンジンとの対話を許可するために使用できるパブリック インターフェイスが 3 つあります。</span><span class="sxs-lookup"><span data-stu-id="2f13a-103">There are three public interfaces that adapters can use to allow interaction with the Messaging Engine.</span></span> <span data-ttu-id="2f13a-104">これらのインターフェイスについて、以下のセクションで説明します。</span><span class="sxs-lookup"><span data-stu-id="2f13a-104">These are outlined in the following sections.</span></span>  

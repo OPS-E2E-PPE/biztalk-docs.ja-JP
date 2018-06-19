@@ -1,14 +1,14 @@
 ---
-title: "WCF アダプター プロパティ スキーマおよびプロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: WCF アダプター プロパティ スキーマおよびプロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 02/09/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2093745e-86c0-4276-a7cc-a0187391ca4a
-caps.latest.revision: 
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 50798e04fdcaf5dce5288aa18608e2a981b162fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/11/2018
+ms.locfileid: "29139298"
 ---
 # <a name="wcf-adapters-property-schema-and-properties"></a><span data-ttu-id="d563c-102">WCF アダプタ プロパティ スキーマおよびプロパティ</span><span class="sxs-lookup"><span data-stu-id="d563c-102">WCF Adapters Property Schema and Properties</span></span>
 <span data-ttu-id="d563c-103">WCF アダプタ プロパティ スキーマで昇格させたプロパティについて確認します。</span><span class="sxs-lookup"><span data-stu-id="d563c-103">Read about the promoted properties in the WCF adapter property schema.</span></span> <span data-ttu-id="d563c-104">WCF アダプタは、アプリケーションで使用できるプロパティに値を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="d563c-104">The WCF adapters assign values to the properties that you can use in your application.</span></span> <span data-ttu-id="d563c-105">また、WCF アダプタは、カスタム プロパティを BizTalk メッセージ コンテキストに書き込むが昇格させないメカニズムと、カスタム プロパティを BizTalk メッセージ コンテキストに昇格させるメカニズムを提供します。</span><span class="sxs-lookup"><span data-stu-id="d563c-105">WCF adapter also provides a mechanism to write but not promote the custom properties to the BizTalk message context, and a mechanism to promote the custom properties to the BizTalk message context.</span></span> <span data-ttu-id="d563c-106">詳細については、次を参照してください。[公開された WCF サービスでの SOAP ヘッダー](../core/soap-headers-with-published-wcf-services.md)です。</span><span class="sxs-lookup"><span data-stu-id="d563c-106">For more details, see [SOAP Headers with Published WCF Services](../core/soap-headers-with-published-wcf-services.md).</span></span>  
@@ -65,7 +66,7 @@ ms.lasthandoff: 02/11/2018
 - <span data-ttu-id="d563c-137">WCF-WSHttp アダプタ</span><span class="sxs-lookup"><span data-stu-id="d563c-137">WCF-WSHttp adapter</span></span>
 
 #### <a name="bindingconfiguration"></a><span data-ttu-id="d563c-138">BindingConfiguration</span><span class="sxs-lookup"><span data-stu-id="d563c-138">BindingConfiguration</span></span>
-<span data-ttu-id="d563c-139">XML 文字列を指定し、 **\<バインディング\>**のさまざまな種類を構成するのには定義済みの Windows Communication Foundation (WCF) によって提供されるバインディング。</span><span class="sxs-lookup"><span data-stu-id="d563c-139">Specify an XML string with the **\<binding\>** element to configure different types of predefined bindings provided by Windows Communication Foundation (WCF).</span></span> <span data-ttu-id="d563c-140">システム指定のバインディングとカスタム バインドの詳細については、該当するトピックを参照してくださいを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d563c-140">For more information about the system-provided binding and custom binding, see the appropriate topics in See Also.</span></span>
+<span data-ttu-id="d563c-139">XML 文字列を指定し、 **\<バインディング\>** のさまざまな種類を構成するのには定義済みの Windows Communication Foundation (WCF) によって提供されるバインディング。</span><span class="sxs-lookup"><span data-stu-id="d563c-139">Specify an XML string with the **\<binding\>** element to configure different types of predefined bindings provided by Windows Communication Foundation (WCF).</span></span> <span data-ttu-id="d563c-140">システム指定のバインディングとカスタム バインドの詳細については、該当するトピックを参照してくださいを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d563c-140">For more information about the system-provided binding and custom binding, see the appropriate topics in See Also.</span></span>
 
 <span data-ttu-id="d563c-141">例:</span><span class="sxs-lookup"><span data-stu-id="d563c-141">Example:</span></span>
 
@@ -147,7 +148,7 @@ ms.lasthandoff: 02/11/2018
 - <span data-ttu-id="d563c-203">Wcf-netmsmq アダプタ</span><span class="sxs-lookup"><span data-stu-id="d563c-203">WCF-NetMsmq adapter</span></span>
 
 #### <a name="endpointbehaviorconfiguration"></a><span data-ttu-id="d563c-204">EndpointBehaviorConfiguration</span><span class="sxs-lookup"><span data-stu-id="d563c-204">EndpointBehaviorConfiguration</span></span>
-<span data-ttu-id="d563c-205">XML 文字列を指定し、 **\<動作\>**の要素、  **\<endpointBehaviors\>** の動作設定を構成するのには、WCF エンドポイントです。</span><span class="sxs-lookup"><span data-stu-id="d563c-205">Specify an XML string with the **\<behavior\>** element of the **\<endpointBehaviors\>** element to configure the behavior settings of a WCF endpoint.</span></span> <span data-ttu-id="d563c-206">詳細については、  **\<endpointBehaviors\>** 要素では、「参照」の該当するトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d563c-206">For more information about the **\<endpointBehaviors\>** element, see the appropriate topic in See Also.</span></span>
+<span data-ttu-id="d563c-205">XML 文字列を指定し、 **\<動作\>** の要素、  **\<endpointBehaviors\>** の動作設定を構成するのには、WCF エンドポイントです。</span><span class="sxs-lookup"><span data-stu-id="d563c-205">Specify an XML string with the **\<behavior\>** element of the **\<endpointBehaviors\>** element to configure the behavior settings of a WCF endpoint.</span></span> <span data-ttu-id="d563c-206">詳細については、  **\<endpointBehaviors\>** 要素では、「参照」の該当するトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d563c-206">For more information about the **\<endpointBehaviors\>** element, see the appropriate topic in See Also.</span></span>
 
 <span data-ttu-id="d563c-207">例:</span><span class="sxs-lookup"><span data-stu-id="d563c-207">Example:</span></span> 
 ```
@@ -503,7 +504,7 @@ ms.lasthandoff: 02/11/2018
 <span data-ttu-id="d563c-462">適用されますすべての WCF アダプタ*を除く*Wcf-custom および Wcf-customisolated アダプター。</span><span class="sxs-lookup"><span data-stu-id="d563c-462">Applies to: All WCF adapters *except* the WCF-Custom and WCF-CustomIsolated adapters</span></span>
 
 #### <a name="servicebehaviorconfiguration"></a><span data-ttu-id="d563c-463">ServiceBehaviorConfiguration</span><span class="sxs-lookup"><span data-stu-id="d563c-463">ServiceBehaviorConfiguration</span></span>
-<span data-ttu-id="d563c-464">XML 文字列を指定し、 **\<動作\>**の要素、  **\<serviceBehaviors\>**  WCF の動作設定を構成するのにはサービス。</span><span class="sxs-lookup"><span data-stu-id="d563c-464">Specify an XML string with the **\<behavior\>** element of the **\<serviceBehaviors\>** element to configure the behavior settings of a WCF service.</span></span> <span data-ttu-id="d563c-465">詳細については、  **\<serviceBehaviors\>** 要素では、「参照」の該当するトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d563c-465">For more information about the **\<serviceBehaviors\>** element, see the appropriate topic in See Also.</span></span>
+<span data-ttu-id="d563c-464">XML 文字列を指定し、 **\<動作\>** の要素、  **\<serviceBehaviors\>**  WCF の動作設定を構成するのにはサービス。</span><span class="sxs-lookup"><span data-stu-id="d563c-464">Specify an XML string with the **\<behavior\>** element of the **\<serviceBehaviors\>** element to configure the behavior settings of a WCF service.</span></span> <span data-ttu-id="d563c-465">詳細については、  **\<serviceBehaviors\>** 要素では、「参照」の該当するトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d563c-465">For more information about the **\<serviceBehaviors\>** element, see the appropriate topic in See Also.</span></span>
 
 <span data-ttu-id="d563c-466">例:</span><span class="sxs-lookup"><span data-stu-id="d563c-466">Example:</span></span>
 
@@ -625,15 +626,15 @@ ms.lasthandoff: 02/11/2018
 <span data-ttu-id="d563c-544">適用されますすべての WCF 送信アダプタ*を除く*Wcf-netnamedpipe アダプター。</span><span class="sxs-lookup"><span data-stu-id="d563c-544">Applies to: All WCF send adapters *except* the WCF-NetNamedPipe adapter</span></span>
 
 #### <a name="referencedbindings"></a><span data-ttu-id="d563c-545">ReferencedBindings</span><span class="sxs-lookup"><span data-stu-id="d563c-545">ReferencedBindings</span></span>
-<span data-ttu-id="d563c-546">によって参照されるバインド構成を指定、 **bindingConfiguration**の属性、 **\<発行者\>**要素を**wsFederationHttpBinding**と**customBinding**、セキュリティ トークン サービス (STS) セキュリティ トークンを発行することを示します。</span><span class="sxs-lookup"><span data-stu-id="d563c-546">Specify the binding configurations referenced by the **bindingConfiguration** attribute of the **\<issuer\>** element for the **wsFederationHttpBinding** and **customBinding**, which indicates the Security Token Service (STS) that issues security tokens.</span></span> <span data-ttu-id="d563c-547">詳細については、 **\<発行者\>**要素のトピック「」を参照してください"\<発行者\>"で[http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476)です。</span><span class="sxs-lookup"><span data-stu-id="d563c-547">For more information about the **\<issuer\>** element, see the topic, "\<issuer\>" at [http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476).</span></span>
+<span data-ttu-id="d563c-546">によって参照されるバインド構成を指定、 **bindingConfiguration**の属性、 **\<発行者\>** 要素を**wsFederationHttpBinding**と**customBinding**、セキュリティ トークン サービス (STS) セキュリティ トークンを発行することを示します。</span><span class="sxs-lookup"><span data-stu-id="d563c-546">Specify the binding configurations referenced by the **bindingConfiguration** attribute of the **\<issuer\>** element for the **wsFederationHttpBinding** and **customBinding**, which indicates the Security Token Service (STS) that issues security tokens.</span></span> <span data-ttu-id="d563c-547">詳細については、 **\<発行者\>** 要素のトピック「」を参照してください"\<発行者\>"で[http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476)です。</span><span class="sxs-lookup"><span data-stu-id="d563c-547">For more information about the **\<issuer\>** element, see the topic, "\<issuer\>" at [http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476).</span></span>
 
-<span data-ttu-id="d563c-548">バインド情報を含む、 **\<発行者\>**要素を**wsFederationHttpBinding**と**customBinding**できます使用して構成、 **BindingConfiguration** Wcf-custom および Wcf-customisolated アダプターのプロパティです。</span><span class="sxs-lookup"><span data-stu-id="d563c-548">The binding information including the **\<issuer\>** element for the **wsFederationHttpBinding** and **customBinding** can be configured through the **BindingConfiguration** property of the WCF-Custom and WCF-CustomIsolated adapters.</span></span> <span data-ttu-id="d563c-549">形式でこのプロパティの参照先のバインディング構成のすべてに配置する必要があります、 [\<バインド\>](http://go.microsoft.com/fwlink/?LinkID=80878)要素。</span><span class="sxs-lookup"><span data-stu-id="d563c-549">All of the referenced binding configurations for this property must be placed in the form of the [\<bindings\>](http://go.microsoft.com/fwlink/?LinkID=80878) element.</span></span> 
+<span data-ttu-id="d563c-548">バインド情報を含む、 **\<発行者\>** 要素を**wsFederationHttpBinding**と**customBinding**できます使用して構成、 **BindingConfiguration** Wcf-custom および Wcf-customisolated アダプターのプロパティです。</span><span class="sxs-lookup"><span data-stu-id="d563c-548">The binding information including the **\<issuer\>** element for the **wsFederationHttpBinding** and **customBinding** can be configured through the **BindingConfiguration** property of the WCF-Custom and WCF-CustomIsolated adapters.</span></span> <span data-ttu-id="d563c-549">形式でこのプロパティの参照先のバインディング構成のすべてに配置する必要があります、 [\<バインド\>](http://go.microsoft.com/fwlink/?LinkID=80878)要素。</span><span class="sxs-lookup"><span data-stu-id="d563c-549">All of the referenced binding configurations for this property must be placed in the form of the [\<bindings\>](http://go.microsoft.com/fwlink/?LinkID=80878) element.</span></span> 
 
 <span data-ttu-id="d563c-550">**注**</span><span class="sxs-lookup"><span data-stu-id="d563c-550">**Note**</span></span>  
-<span data-ttu-id="d563c-551">**BindingConfiguration**の属性、 **\<発行者\>**要素は、このプロパティに有効なバインド名を指す必要があります。</span><span class="sxs-lookup"><span data-stu-id="d563c-551">The **bindingConfiguration** attribute of the **\<issuer\>** element must refer to a valid binding name in this property.</span></span> 
+<span data-ttu-id="d563c-551">**BindingConfiguration**の属性、 **\<発行者\>** 要素は、このプロパティに有効なバインド名を指す必要があります。</span><span class="sxs-lookup"><span data-stu-id="d563c-551">The **bindingConfiguration** attribute of the **\<issuer\>** element must refer to a valid binding name in this property.</span></span> 
 
 <span data-ttu-id="d563c-552">**注**</span><span class="sxs-lookup"><span data-stu-id="d563c-552">**Note**</span></span>  
-<span data-ttu-id="d563c-553">**\<発行者\>**で参照されるバインド構成要素を指すこともこのプロパティの異なるバインド構成この参照チェーンが循環する依存関係を行わない場合は。</span><span class="sxs-lookup"><span data-stu-id="d563c-553">The **\<issuer\>** element in the referenced binding configurations can also refer to a different binding configuration in this property if this reference chain does not make a circular dependency.</span></span> 
+<span data-ttu-id="d563c-553">**\<発行者\>** で参照されるバインド構成要素を指すこともこのプロパティの異なるバインド構成この参照チェーンが循環する依存関係を行わない場合は。</span><span class="sxs-lookup"><span data-stu-id="d563c-553">The **\<issuer\>** element in the referenced binding configurations can also refer to a different binding configuration in this property if this reference chain does not make a circular dependency.</span></span> 
 
 <span data-ttu-id="d563c-554">例:</span><span class="sxs-lookup"><span data-stu-id="d563c-554">Example:</span></span> 
 

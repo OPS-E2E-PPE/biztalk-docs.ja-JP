@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22225170"
 ---
 # <a name="adapter-hosting-model"></a><span data-ttu-id="a1673-102">アダプターのホスト モデル</span><span class="sxs-lookup"><span data-stu-id="a1673-102">Adapter Hosting Model</span></span>
 <span data-ttu-id="a1673-103">一般に BizTalk アダプターは、BizTalk サービス Btsntsvc.exe でホストされます。</span><span class="sxs-lookup"><span data-stu-id="a1673-103">In general BizTalk adapters are hosted in the BizTalk service, Btsntsvc.exe.</span></span> <span data-ttu-id="a1673-104">つまり、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプターの有効期間を管理します。</span><span class="sxs-lookup"><span data-stu-id="a1673-104">This means that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] manages the lifetime of the adapter.</span></span> <span data-ttu-id="a1673-105">状況によっては、次に説明するように、他のプロセスがこのアダプターを管理する場合もあります。</span><span class="sxs-lookup"><span data-stu-id="a1673-105">There are also situations, described below, where other processes manage the adapter.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "パスワード同期を管理する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: パスワード同期を管理する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Password Synchronization [SSO], applications
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - notifications [SSO]
 - Password Synchronization [SSO], SSOPS command line utility
 ms.assetid: e5568cc2-7530-452c-9902-d7ffcad66088
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971952"
 ---
 # <a name="how-to-administer-password-synchronization"></a><span data-ttu-id="62012-102">パスワード同期を管理する方法</span><span class="sxs-lookup"><span data-stu-id="62012-102">How to Administer Password Synchronization</span></span>
 <span data-ttu-id="62012-103">パスワード同期は、MMC スナップインまたはコマンド ラインを使用して管理できます。</span><span class="sxs-lookup"><span data-stu-id="62012-103">You can administer Password Synchronization through either the MMC Snap-In or the command line.</span></span>  
@@ -79,7 +80,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-list-existing-adapters"></a><span data-ttu-id="62012-151">既存のアダプタを一覧表示するには</span><span class="sxs-lookup"><span data-stu-id="62012-151">To list existing adapters</span></span>  
   
-1.  <span data-ttu-id="62012-152">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-152">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="62012-152">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-152">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="62012-153">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="62012-153">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
@@ -91,7 +92,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-display-adapter-information"></a><span data-ttu-id="62012-159">アダプタの情報を表示するには</span><span class="sxs-lookup"><span data-stu-id="62012-159">To display adapter information</span></span>  
   
-1.  <span data-ttu-id="62012-160">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-160">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="62012-160">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-160">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="62012-161">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="62012-161">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
@@ -126,7 +127,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-create-new-adapters"></a><span data-ttu-id="62012-237">新しいアダプタを作成するには</span><span class="sxs-lookup"><span data-stu-id="62012-237">To create new adapters</span></span>  
   
-1.  <span data-ttu-id="62012-238">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-238">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="62012-238">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-238">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="62012-239">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="62012-239">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
@@ -138,7 +139,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-set-properties-for-an-adapter"></a><span data-ttu-id="62012-244">アダプタのプロパティを設定するには</span><span class="sxs-lookup"><span data-stu-id="62012-244">To set properties for an adapter</span></span>  
   
-1.  <span data-ttu-id="62012-245">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-245">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="62012-245">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-245">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="62012-246">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="62012-246">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
@@ -150,7 +151,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-update-existing-adapters"></a><span data-ttu-id="62012-252">既存のアダプタを更新するには</span><span class="sxs-lookup"><span data-stu-id="62012-252">To update existing adapters</span></span>  
   
-1.  <span data-ttu-id="62012-253">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-253">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="62012-253">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-253">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="62012-254">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="62012-254">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
@@ -162,7 +163,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-delete-an-existing-adapter"></a><span data-ttu-id="62012-260">既存のアダプタを削除するには</span><span class="sxs-lookup"><span data-stu-id="62012-260">To delete an existing adapter</span></span>  
   
-1.  <span data-ttu-id="62012-261">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-261">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="62012-261">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-261">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="62012-262">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="62012-262">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
@@ -174,7 +175,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-enable-an-adapter"></a><span data-ttu-id="62012-267">アダプタを有効にするには</span><span class="sxs-lookup"><span data-stu-id="62012-267">To enable an adapter</span></span>  
   
-1.  <span data-ttu-id="62012-268">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-268">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="62012-268">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-268">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="62012-269">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="62012-269">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
@@ -186,7 +187,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-disable-an-adapter"></a><span data-ttu-id="62012-274">アダプタを無効にするには</span><span class="sxs-lookup"><span data-stu-id="62012-274">To disable an adapter</span></span>  
   
-1.  <span data-ttu-id="62012-275">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-275">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="62012-275">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-275">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="62012-276">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="62012-276">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
@@ -198,7 +199,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-add-an-application-to-an-adapter"></a><span data-ttu-id="62012-281">アダプタにアプリケーションを追加するには</span><span class="sxs-lookup"><span data-stu-id="62012-281">To add an application to an adapter</span></span>  
   
-1.  <span data-ttu-id="62012-282">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-282">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="62012-282">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-282">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="62012-283">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="62012-283">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
@@ -212,7 +213,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-delete-an-application-from-an-adapter"></a><span data-ttu-id="62012-290">アダプタからアプリケーションを削除するには</span><span class="sxs-lookup"><span data-stu-id="62012-290">To delete an application from an adapter</span></span>  
   
-1.  <span data-ttu-id="62012-291">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-291">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="62012-291">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-291">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="62012-292">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="62012-292">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
@@ -224,7 +225,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-reset-notification"></a><span data-ttu-id="62012-298">通知を再設定するには</span><span class="sxs-lookup"><span data-stu-id="62012-298">To reset notification</span></span>  
   
-1.  <span data-ttu-id="62012-299">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-299">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="62012-299">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-299">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="62012-300">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="62012-300">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
@@ -236,7 +237,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-add-an-adapter-to-an-adapter-group"></a><span data-ttu-id="62012-308">アダプタ グループにアダプタを追加するには</span><span class="sxs-lookup"><span data-stu-id="62012-308">To add an adapter to an adapter group</span></span>  
   
-1.  <span data-ttu-id="62012-309">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-309">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="62012-309">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-309">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="62012-310">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="62012-310">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
@@ -248,7 +249,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-delete-an-adapter-from-an-adapter-group"></a><span data-ttu-id="62012-316">アダプタ グループからアダプタを削除するには</span><span class="sxs-lookup"><span data-stu-id="62012-316">To delete an adapter from an adapter group</span></span>  
   
-1.  <span data-ttu-id="62012-317">**[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-317">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="62012-317">**[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62012-317">On the **Start** menu, click **Run**.</span></span>  
   
 2.  <span data-ttu-id="62012-318">**実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="62012-318">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   

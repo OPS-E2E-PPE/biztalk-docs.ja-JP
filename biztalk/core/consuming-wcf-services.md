@@ -1,17 +1,17 @@
 ---
-title: "WCF サービスの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービスの使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - consuming, WCF services
 - WCF services, consuming
 ms.assetid: ca6c0514-c1df-43ad-8f02-df117271b0b5
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237866"
 ---
 # <a name="consuming-wcf-services"></a><span data-ttu-id="5cf7a-102">WCF サービスの利用</span><span class="sxs-lookup"><span data-stu-id="5cf7a-102">Consuming WCF Services</span></span>
 <span data-ttu-id="5cf7a-103">WCF サービスを利用して、既存の WCF サービスをビジネス プロセスに追加できます。</span><span class="sxs-lookup"><span data-stu-id="5cf7a-103">Consuming WCF services enables you to add existing WCF services to your business process.</span></span> <span data-ttu-id="5cf7a-104">複数の WCF サービスを 1 つのオーケストレーションに集計できます。</span><span class="sxs-lookup"><span data-stu-id="5cf7a-104">You can aggregate several WCF services into a single orchestration.</span></span>  

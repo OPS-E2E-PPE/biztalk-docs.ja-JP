@@ -18,6 +18,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22266714"
 ---
 # <a name="logic-app-adapter"></a><span data-ttu-id="6f347-103">ロジック アプリのアダプター</span><span class="sxs-lookup"><span data-stu-id="6f347-103">Logic App Adapter</span></span>
 
@@ -133,7 +134,7 @@ ms.lasthandoff: 04/20/2018
     > - <span data-ttu-id="6f347-210">内部設置型 BizTalk Server を使用しています。</span><span class="sxs-lookup"><span data-stu-id="6f347-210">You're using an on-premises BizTalk Server</span></span>
     > - <span data-ttu-id="6f347-211">BizTalk Server の Azure 仮想マシンを使用している *と* VM は HTTP エンドポイント (URL) として公開されません。</span><span class="sxs-lookup"><span data-stu-id="6f347-211">You're using a BizTalk Server Azure virtual machine *and* the VM is NOT exposed as an HTTP endpoint (no URL)</span></span>
 
-5. <span data-ttu-id="6f347-212">**[作成]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6f347-212">Select **Create**.</span></span> 
+5. <span data-ttu-id="6f347-212">**[作成]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6f347-212">Select **Create**.</span></span> 
 6. <span data-ttu-id="6f347-213">アクションを構成します。</span><span class="sxs-lookup"><span data-stu-id="6f347-213">Configure the action.</span></span> <span data-ttu-id="6f347-214">**本文**, 、HTTP 本文の出力を選択します。</span><span class="sxs-lookup"><span data-stu-id="6f347-214">For **Body**, select the HTTP body output.</span></span> <span data-ttu-id="6f347-215">**スキーマ**, 、使用するスキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="6f347-215">For **Schema**, select the schema you want to use.</span></span> 
 
     > [!NOTE] 

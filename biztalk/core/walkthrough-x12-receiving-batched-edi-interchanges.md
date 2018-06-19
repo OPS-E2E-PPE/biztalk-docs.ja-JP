@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル (X12): バッチ EDI インターチェンジの受信 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル (X12): バッチ EDI インターチェンジの受信 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1f6e6e96-39ec-469d-a845-1bfdce6cc0bf
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975727"
 ---
 # <a name="walkthrough-x12-receiving-batched-edi-interchanges"></a><span data-ttu-id="0c9e5-102">チュートリアル (X12): バッチ EDI インターチェンジの受信</span><span class="sxs-lookup"><span data-stu-id="0c9e5-102">Walkthrough (X12): Receiving Batched EDI Interchanges</span></span>
 <span data-ttu-id="0c9e5-103">このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して EDI バッチの受信用のソリューションを作成する一連の手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-103">This walkthrough provides a set of step-by-step procedures that creates a solution for receiving EDI batches using [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="0c9e5-104">このソリューションでは、バッチ EDI インターチェンジを受信する 2 つの方法を示します。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-104">This solution demonstrates two ways to receive a batched EDI interchange:</span></span>  
@@ -151,11 +152,11 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="0c9e5-180">用のフォルダーを入力**受信フォルダー**、およびマスクを**ファイル マスク**など **\*.txt**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-180">Enter a folder for **Receive folder**, and a mask for **File Mask**, such as **\*.txt**.</span></span>  
   
-6.  <span data-ttu-id="0c9e5-181">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-181">Click **OK**.</span></span>  
+6.  <span data-ttu-id="0c9e5-181">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-181">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="0c9e5-182">**受信パイプライン** **EdiReceive**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-182">For **Receive pipeline**, select **EdiReceive**.</span></span>  
   
-8.  <span data-ttu-id="0c9e5-183">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-183">Click **OK**.</span></span>  
+8.  <span data-ttu-id="0c9e5-183">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-183">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="0c9e5-184">コンソール ツリーでクリックして**受信場所**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-184">In the console tree, click **Receive Locations**.</span></span> <span data-ttu-id="0c9e5-185">**受信場所** ウィンドウで、右クリックし、受信場所をクリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-185">In the **Receive Locations** pane, right-click your receive location, and then click **Enable**.</span></span>  
   
@@ -169,13 +170,13 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="0c9e5-190">用のフォルダーを入力**コピー先フォルダー**、およびマスクを**ファイル マスク**など **\*.txt**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-190">Enter a folder for **Destination folder**, and a mask for **File Mask**, such as **\*.txt**.</span></span>  
   
-5.  <span data-ttu-id="0c9e5-191">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-191">Click **OK**.</span></span>  
+5.  <span data-ttu-id="0c9e5-191">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-191">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="0c9e5-192">**送信パイプライン** **EdiSend**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-192">In **Send pipeline**, select **EdiSend**.</span></span>  
   
 7.  <span data-ttu-id="0c9e5-193">コンソール ツリーで、次のように選択します。**フィルター**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-193">In the console tree, select **Filters**.</span></span> <span data-ttu-id="0c9e5-194">**フィルター**  ページで、バッチ内のメッセージをサブスクライブするフィルター式を入力します。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-194">On the **Filters** page, enter a filter expression that will subscribe to the messages in the batch.</span></span> <span data-ttu-id="0c9e5-195">たとえば、選択**BTS です。ReceivePortName**の**プロパティ**、  **==** の**演算子**用に作成した受信ポートの名前と**値**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-195">For example, select **BTS.ReceivePortName** for **Property**, **==** for **Operator**, and the name of the receive port that you just created for **Value**.</span></span>  
   
-8.  <span data-ttu-id="0c9e5-196">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-196">Click **OK**.</span></span>  
+8.  <span data-ttu-id="0c9e5-196">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-196">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="0c9e5-197">コンソール ツリーでクリックして**送信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-197">In the console tree, click **Send Ports**.</span></span> <span data-ttu-id="0c9e5-198">**送信ポート** ウィンドウは、送信ポートを右クリックし、をクリックして**開始**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-198">In the **Send Ports** pane, right-click your send port, and then click **Start**.</span></span>  
   
@@ -206,7 +207,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="0c9e5-217">パーティ名を右クリックし、**新規**、クリックして**ビジネス プロファイル**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-217">Right-click the party name, point to **New**, and then click **Business Profile**.</span></span>  
   
-4.  <span data-ttu-id="0c9e5-218">**プロファイル プロパティ**ダイアログ ボックスの**全般** ページで、入力**「partyb_profile」**で、**名前**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-218">In the **Profile Properties** dialog box, on the **General** page, enter **PartyB_Profile** in the **Name** text box.</span></span>  
+4.  <span data-ttu-id="0c9e5-218">**プロファイル プロパティ**ダイアログ ボックスの**全般** ページで、入力 **「partyb_profile」** で、**名前**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-218">In the **Profile Properties** dialog box, on the **General** page, enter **PartyB_Profile** in the **Name** text box.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="0c9e5-219">パーティを作成すると、プロファイルも作成されます。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-219">When you create a party, a profile is also created.</span></span> <span data-ttu-id="0c9e5-220">新しいプロファイルを作成する代わりに、そのプロファイルの名前を変更して使用できます。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-220">You can rename and use that profile instead of creating a new one.</span></span> <span data-ttu-id="0c9e5-221">プロファイルの名前を変更するプロファイルを右クリックし **プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-221">To rename a profile, right-click the profile and select **Properties**.</span></span> <span data-ttu-id="0c9e5-222">**全般** ページで、プロファイルの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-222">In the **General** page, specify a name for the profile.</span></span>  
@@ -221,13 +222,13 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="0c9e5-227">**2 番目のパートナー**  セクションから、**名前**ドロップダウン リストで、**パーティ b**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-227">In the **Second Partner** section, from the **Name** drop-down list, select **PartyB**.</span></span>  
   
-5.  <span data-ttu-id="0c9e5-228">**2 番目のパートナー**  セクションから、**プロファイル**ドロップダウン リストで、 **「partyb_profile」**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-228">In the **Second Partner** section, from the **Profile** drop-down list, select **PartyB_Profile**.</span></span>  
+5.  <span data-ttu-id="0c9e5-228">**2 番目のパートナー**  セクションから、**プロファイル**ドロップダウン リストで、 **「partyb_profile」** です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-228">In the **Second Partner** section, from the **Profile** drop-down list, select **PartyB_Profile**.</span></span>  
   
      <span data-ttu-id="0c9e5-229">2 つの新しいタブの追加を取得 の横に表示されます、**全般**タブです。各タブに 1 つの一方向のアグリーメントを構成するようになっており、一方向の各アグリーメントが 1 つの完全なメッセージ トランザクション (メッセージの送信と受信確認の送信を含む) を表します。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-229">You will notice that two new tabs get added next to the **General** tab. Each tab is for configuring a one-way agreement and each one-way agreement represents one complete transaction of message (including message transfer and acknowledgement transfer).</span></span>  
   
 6.  <span data-ttu-id="0c9e5-230">**全般** タブで、**全般プロパティ** ページの 、**共通のホスト設定**セクションで、**レポートをオンに**、し、選択**reporting 用メッセージ ペイロードを格納**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-230">In the **General** tab, on the **General Properties** page, in the **Common Host Settings** section, select **Turn ON reporting**, and then select **Store message payload for reporting**.</span></span>  
   
-7.  <span data-ttu-id="0c9e5-231">次のタスクを実行、**パーティ パーティ b]-> [**タブです。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-231">Perform the following tasks on the **PartyA->PartyB** tab.</span></span>  
+7.  <span data-ttu-id="0c9e5-231">次のタスクを実行、**パーティ パーティ b]-> [** タブです。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-231">Perform the following tasks on the **PartyA->PartyB** tab.</span></span>  
   
     1.  <span data-ttu-id="0c9e5-232">**識別子**ページで、**インターチェンジの設定**セクションで、修飾子と識別子のフィールドの値を入力 (**ISA5**、 **ISA6**、 **ISA7**、および**ISA8**) テスト メッセージのヘッダー フィールドの値に対応します。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-232">On the **Identifiers** page under the **Interchange Settings** section, enter values for the qualifier and identifier fields (**ISA5**, **ISA6**, **ISA7**, and **ISA8**) that correspond to the values for those header fields in your test message.</span></span>  
   
@@ -259,10 +260,10 @@ ms.lasthandoff: 11/28/2017
         |<span data-ttu-id="0c9e5-252">**トランザクションの種類**</span><span class="sxs-lookup"><span data-stu-id="0c9e5-252">**Transaction Type**</span></span>|<span data-ttu-id="0c9e5-253">テスト メッセージのメッセージの種類を選択して**850 - 注文**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-253">Select the message type of your test message, **850 - Purchase Order**.</span></span>|  
         |<span data-ttu-id="0c9e5-254">**バージョン/リリース**</span><span class="sxs-lookup"><span data-stu-id="0c9e5-254">**Version/Release**</span></span>|<span data-ttu-id="0c9e5-255">EDI のバージョンを入力**00401**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-255">Enter the EDI version, **00401**.</span></span>|  
         |<span data-ttu-id="0c9e5-256">**ターゲットの名前空間**</span><span class="sxs-lookup"><span data-stu-id="0c9e5-256">**Target namespace**</span></span>|<span data-ttu-id="0c9e5-257">選択**http://schemas.microsoft.com/Edi/X12**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-257">Select **http://schemas.microsoft.com/Edi/X12**.</span></span>|  
-        |<span data-ttu-id="0c9e5-258">**GS1**</span><span class="sxs-lookup"><span data-stu-id="0c9e5-258">**GS1**</span></span>|<span data-ttu-id="0c9e5-259">テスト メッセージのメッセージの種類が選択されていることを確認**PO - 注文書 (850)**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-259">Verify that the message type of the test message is selected, **PO - Purchase Order (850)**.</span></span>|  
+        |<span data-ttu-id="0c9e5-258">**GS1**</span><span class="sxs-lookup"><span data-stu-id="0c9e5-258">**GS1**</span></span>|<span data-ttu-id="0c9e5-259">テスト メッセージのメッセージの種類が選択されていることを確認**PO - 注文書 (850)** です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-259">Verify that the message type of the test message is selected, **PO - Purchase Order (850)**.</span></span>|  
         |<span data-ttu-id="0c9e5-260">**[GS2]**</span><span class="sxs-lookup"><span data-stu-id="0c9e5-260">**GS2**</span></span>|<span data-ttu-id="0c9e5-261">たとえば、アプリケーション送信者の値を入力**Purchasing**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-261">Enter a value for the Application sender, for example, **Purchasing**.</span></span>|  
         |<span data-ttu-id="0c9e5-262">**[GS3]**</span><span class="sxs-lookup"><span data-stu-id="0c9e5-262">**GS3**</span></span>|<span data-ttu-id="0c9e5-263">たとえば、アプリケーション受信者の値を入力**OrderControl**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-263">Enter a value for the Application receiver, for example, **OrderControl**.</span></span>|  
-        |<span data-ttu-id="0c9e5-264">**GS4**</span><span class="sxs-lookup"><span data-stu-id="0c9e5-264">**GS4**</span></span>|<span data-ttu-id="0c9e5-265">日付の形式を選択します。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-265">Select the date format that you want.</span></span> <span data-ttu-id="0c9e5-266">**注:**ドロップダウン リストで、値を選択し、だけでなく、既定値を表示するフィールドをクリックする必要があります。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-266">**Note:**  You have to select the value in the drop-down list, not just click in the field to display the default.</span></span> <span data-ttu-id="0c9e5-267">ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-267">If you click in the field without selecting the value from the drop-down list, the value will not actually be selected.</span></span>|  
+        |<span data-ttu-id="0c9e5-264">**GS4**</span><span class="sxs-lookup"><span data-stu-id="0c9e5-264">**GS4**</span></span>|<span data-ttu-id="0c9e5-265">日付の形式を選択します。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-265">Select the date format that you want.</span></span> <span data-ttu-id="0c9e5-266">**注:** ドロップダウン リストで、値を選択し、だけでなく、既定値を表示するフィールドをクリックする必要があります。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-266">**Note:**  You have to select the value in the drop-down list, not just click in the field to display the default.</span></span> <span data-ttu-id="0c9e5-267">ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-267">If you click in the field without selecting the value from the drop-down list, the value will not actually be selected.</span></span>|  
         |<span data-ttu-id="0c9e5-268">**GS5**</span><span class="sxs-lookup"><span data-stu-id="0c9e5-268">**GS5**</span></span>|<span data-ttu-id="0c9e5-269">時刻の形式を選択します。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-269">Select the time format that you want.</span></span>|  
         |<span data-ttu-id="0c9e5-270">**GS7**</span><span class="sxs-lookup"><span data-stu-id="0c9e5-270">**GS7**</span></span>|<span data-ttu-id="0c9e5-271">選択**X の間に認可 Standards Committee X12**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-271">Select **X - Accredited Standards Committee X12**.</span></span>|  
         |<span data-ttu-id="0c9e5-272">**GS8**</span><span class="sxs-lookup"><span data-stu-id="0c9e5-272">**GS8**</span></span>|<span data-ttu-id="0c9e5-273">EDI のバージョンが入力されていることを確認**00401**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-273">Verify that the EDI version has been entered, **00401**.</span></span>|  
@@ -270,7 +271,7 @@ ms.lasthandoff: 11/28/2017
         > [!NOTE]
         >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="0c9e5-274">GS01、GS02、GS03、GS04、GS05、GS07、および入力した値に基づいて、送信する受信確認の GS08 の値が設定されます**トランザクション タイプ**、**バージョン/リリース**、および**ターゲット名前空間**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-274"> will set the values for GS01, GS02, GS03, GS04, GS05, GS07, and GS08 of the outbound acknowledgments based on the values entered for **Transaction Type**, **Version/Release**, and **Target namespace**.</span></span> <span data-ttu-id="0c9e5-275">送信パイプラインは、トランザクション セットの種類、X12 バージョン、およびターゲットの名前空間と、メッセージ ヘッダー内の対応する値との照合を試みます。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-275">The send pipeline attempts to match the transaction set type, the X12 version, and the target namespace with the corresponding values in the header of the message.</span></span> <span data-ttu-id="0c9e5-276">成功すると、その値が使用 GS に関連付けられている、**トランザクション タイプ**、**バージョン/リリース**、および**ターゲットの名前空間**値。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-276">If successful, it uses the GS values associated with the **Transaction Type**, **Version/Release**, and **Target namespace** values.</span></span>  
   
-8.  <span data-ttu-id="0c9e5-277">次のタスクを実行、**パーティ b には、パーティが]-> [**タブです。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-277">Perform the following tasks on the **PartyB->PartyA** tab.</span></span>  
+8.  <span data-ttu-id="0c9e5-277">次のタスクを実行、**パーティ b には、パーティが]-> [** タブです。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-277">Perform the following tasks on the **PartyB->PartyA** tab.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="0c9e5-278">このチュートリアルでは、必要な値をタブに指定し、アグリーメントを正常に作成できるようにします。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-278">In this walkthrough, we specify the required value in the tab so that an agreement can be successfully created.</span></span> <span data-ttu-id="0c9e5-279">アグリーメントを正常に作成する両方の一方向アグリーメント タブの値に対して定義されている必要があります**ISA5**、 **ISA6**、 **ISA7**、および**ISA8**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-279">To successfully create an agreement, both one-way agreement tabs must have values defined for **ISA5**, **ISA6**, **ISA7**, and **ISA8**.</span></span>  
@@ -280,9 +281,9 @@ ms.lasthandoff: 11/28/2017
         > [!NOTE]
         >  <span data-ttu-id="0c9e5-281">テスト メッセージとして「EDI インターフェイス開発チュートリアル」の SamplePO.txt ファイルを使用する場合は、設定**ISA5**に**ZZ**、 **ISA6**に**米国**、 **ISA7**に**ZZ**、および**ISA8**に**THEM**です。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-281">If you are using the SamplePO.txt file from the “EDI Interface Developer Tutorial” as your test message, set **ISA5** to **ZZ**, **ISA6** to **US**, **ISA7** to **ZZ**, and **ISA8** to **THEM**.</span></span>  
   
-9. <span data-ttu-id="0c9e5-282">**[適用]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-282">Click **Apply**.</span></span>  
+9. <span data-ttu-id="0c9e5-282">**[適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-282">Click **Apply**.</span></span>  
   
-10. <span data-ttu-id="0c9e5-283">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-283">Click **OK**.</span></span> <span data-ttu-id="0c9e5-284">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-284">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="0c9e5-285">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-285">The newly added agreement is enabled by default.</span></span>  
+10. <span data-ttu-id="0c9e5-283">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-283">Click **OK**.</span></span> <span data-ttu-id="0c9e5-284">新しく追加したアグリーメントが一覧表示、**契約**のセクションで、**パーティとビジネス プロファイル**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-284">The newly added agreement is listed in the **Agreements** section of the **Parties and Business Profiles** pane.</span></span> <span data-ttu-id="0c9e5-285">新しく追加したアグリーメントは既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-285">The newly added agreement is enabled by default.</span></span>  
   
 ### <a name="testing-the-walkthrough"></a><span data-ttu-id="0c9e5-286">チュートリアルのテスト</span><span class="sxs-lookup"><span data-stu-id="0c9e5-286">Testing the Walkthrough</span></span>  
  <span data-ttu-id="0c9e5-287">ここでは、チュートリアルをテストする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-287">This section provides information on how to test the walkthrough.</span></span>  

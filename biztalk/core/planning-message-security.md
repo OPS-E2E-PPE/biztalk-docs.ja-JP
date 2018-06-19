@@ -1,11 +1,11 @@
 ---
-title: "メッセージ セキュリティの計画 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ セキュリティの計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - planning, security
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - security, planning
 - messages, security
 ms.assetid: c0f93515-a822-425c-9155-270a179d6b61
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264290"
 ---
 # <a name="planning-message-security"></a><span data-ttu-id="6eb00-102">メッセージ セキュリティの計画</span><span class="sxs-lookup"><span data-stu-id="6eb00-102">Planning Message Security</span></span>
 <span data-ttu-id="6eb00-103">企業内のセキュリティ ポリシーに基づいて、次の表に示す項目を検討し、BizTalk Server 環境に実装する必要があるセキュリティのレベルを決定します。</span><span class="sxs-lookup"><span data-stu-id="6eb00-103">Based on the security policies in your company, you may want to consider the questions in the following table to determine the level of security that you must implement in your BizTalk Server environment.</span></span> <span data-ttu-id="6eb00-104">この項目に対する解答によって、メッセージングに必要なセキュリティ機能が決まります。</span><span class="sxs-lookup"><span data-stu-id="6eb00-104">The answers to these questions will determine the security features that you need for messaging.</span></span>  

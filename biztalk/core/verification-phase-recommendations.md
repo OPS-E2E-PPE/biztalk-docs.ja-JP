@@ -1,14 +1,14 @@
 ---
-title: "検証フェーズの推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: 検証フェーズの推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 00663354-ce5d-4391-b835-89940c92c1ce
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288138"
 ---
 # <a name="verification-phase-recommendations"></a><span data-ttu-id="c1e1b-102">検証フェーズの推奨事項</span><span class="sxs-lookup"><span data-stu-id="c1e1b-102">Verification Phase Recommendations</span></span>
 <span data-ttu-id="c1e1b-103">システムのコードが完了すると、システムは完全に安定化するための準備が整い、リリース条件を検証できるようになります。</span><span class="sxs-lookup"><span data-stu-id="c1e1b-103">After the system is code complete, it is ready to be fully stabilized and the release criteria can be verified.</span></span> <span data-ttu-id="c1e1b-104">通常、この段階を安定化フェーズといいます。</span><span class="sxs-lookup"><span data-stu-id="c1e1b-104">This phase is often referred to as the stabilization phase.</span></span> <span data-ttu-id="c1e1b-105">このフェーズの最終的な目標は、バグを特定して修正し、システムの稼動準備が整っていることを証明することです。</span><span class="sxs-lookup"><span data-stu-id="c1e1b-105">The ultimate goal of this phase is to identify and fix bugs and prove that the system is ready for production.</span></span> <span data-ttu-id="c1e1b-106">したがって、ここでは、システムのリリース候補バージョンの最終テストを行います。</span><span class="sxs-lookup"><span data-stu-id="c1e1b-106">This phase, therefore, involves a final round of testing on a release candidate of the system.</span></span>  

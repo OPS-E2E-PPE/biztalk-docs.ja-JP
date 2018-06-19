@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288858"
 ---
 # <a name="what-is-scalability"></a><span data-ttu-id="60868-103">スケーラビリティについて</span><span class="sxs-lookup"><span data-stu-id="60868-103">What Is Scalability?</span></span>
 <span data-ttu-id="60868-104">スケーラブルなシステムは必要に応じて拡張できます。</span><span class="sxs-lookup"><span data-stu-id="60868-104">Scalability is the ability of a system to expand to meet your business needs.</span></span> <span data-ttu-id="60868-105">システムを拡張するということは、アプリケーションをあまり変更せずにハードウェアの追加やアップグレードを行うことです。</span><span class="sxs-lookup"><span data-stu-id="60868-105">You scale a system by adding extra hardware or by upgrading the existing hardware without changing much of the application.</span></span> <span data-ttu-id="60868-106">BizTalk Server システムでは、スケーラビリティとは、拡張によってスループットの向上や待機時間の短縮を達成できる能力を意味します。</span><span class="sxs-lookup"><span data-stu-id="60868-106">In the context of a BizTalk Server system, scalability refers to the ability of BizTalk to scale as your throughput needs increase, and if you need to reduce latency times.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "インターセプタ構成式 |Microsoft ドキュメント"
-ms.custom: 
+title: インターセプタ構成式 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2695f509-fece-40b8-aa00-fa3c0c0f19c5
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973632"
 ---
 # <a name="interceptor-configuration-expressions"></a><span data-ttu-id="e4112-102">インターセプタ構成式</span><span class="sxs-lookup"><span data-stu-id="e4112-102">Interceptor Configuration Expressions</span></span>
 <span data-ttu-id="e4112-103">BAM インターセプタ構成ファイルは、フィルタ式を使用してアクティビティを識別し、データ式を使用してストレージのデータ要素を作成して、そのデータ要素を関連付け ID または継続トークンとして使用したり、同様の目的で使用します。</span><span class="sxs-lookup"><span data-stu-id="e4112-103">The BAM interceptor configuraton file uses filter expressions to identify an activity and uses data expressions to construct a data element for storage, use as a correlation ID or continuation token, or similar purpose.</span></span> <span data-ttu-id="e4112-104">その目的に関係なく、個々の式は `expression` 要素によってインターセプタ構成ファイル内に指定され、式には後置表記法とも呼ばれる逆ポーランド表記法 (RPN: Reverse Polish Notation) を使用した 1 つまたは複数の演算子が含まれています。</span><span class="sxs-lookup"><span data-stu-id="e4112-104">Regardless of the purpose, individual expressions are identified in the interceptor configuration file by the `expression` element and contain one or more operations using Reverse Polish Notation, also known as postfix notation.</span></span>  

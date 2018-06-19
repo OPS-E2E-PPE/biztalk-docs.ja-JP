@@ -1,14 +1,14 @@
 ---
-title: "マスター シークレット サーバーをクラスター化 |Microsoft ドキュメント"
-ms.custom: 
+title: マスター シークレット サーバーをクラスター化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14aa3622-8462-4ed9-abde-40090d4f96ff
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008699"
 ---
 # <a name="clustering-the-master-secret-server"></a><span data-ttu-id="69ade-102">マスター シークレット サーバーをクラスタ リング</span><span class="sxs-lookup"><span data-stu-id="69ade-102">Clustering the Master Secret Server</span></span>
 <span data-ttu-id="69ade-103">BizTalk Server アプリケーション サービスと共にインストールされているエンタープライズ シングル サインオン (SSO) サービスに依存してハード コーディングされたを保持する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="69ade-103">The BizTalk Server application service maintains a hard-coded dependency upon the Enterprise Single Sign-On (SSO) service that is installed with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="69ade-104">SSO サービスは、開始する場合は、マスター シークレット サーバーと通信できる必要があります。</span><span class="sxs-lookup"><span data-stu-id="69ade-104">The SSO service must be able to communicate with the master secret server to start.</span></span> <span data-ttu-id="69ade-105">マスター シークレット サーバーのフォールト トレランスを提供する、マスター シークレット サーバーで SSO サービスをクラスター化することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="69ade-105">We recommend that you cluster the SSO service on the master secret server to provide fault tolerance for the master secret server.</span></span> <span data-ttu-id="69ade-106">詳細については、次を参照してください。[高可用性 SSO インストール オプション](http://go.microsoft.com/fwlink/?LinkId=156838)(http://go.microsoft.com/fwlink/?LinkId=156838)、BizTalk Server のヘルプ。</span><span class="sxs-lookup"><span data-stu-id="69ade-106">For more information, see [High-Availability SSO Installation Options](http://go.microsoft.com/fwlink/?LinkId=156838) (http://go.microsoft.com/fwlink/?LinkId=156838) in BizTalk Server Help.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "既知の問題と、EDI および AS2 状態レポート |Microsoft ドキュメント"
-ms.custom: 
+title: 既知の問題と、EDI および AS2 状態レポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d755dca-a4b6-44be-bc45-88c0b17685a0
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008275"
 ---
 # <a name="known-issues-with-edi-and-as2-status-reporting"></a><span data-ttu-id="af9d7-102">EDI および AS2 状態レポートに関する既知の問題</span><span class="sxs-lookup"><span data-stu-id="af9d7-102">Known Issues with EDI and AS2 Status Reporting</span></span>
 <span data-ttu-id="af9d7-103">このトピックでは、EDI の状態が BizTalk Server のレポートに関する既知の問題について説明します。</span><span class="sxs-lookup"><span data-stu-id="af9d7-103">This topic describes known issues with EDI status reporting in BizTalk Server.</span></span>  

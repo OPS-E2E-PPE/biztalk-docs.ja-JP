@@ -1,15 +1,15 @@
 ---
-title: "作成し、アダプター ハンドラーの削除 |Microsoft ドキュメント"
-description: "リンクを作成し、BizTalk Server 管理コンソールでアダプター ハンドラーを削除"
-ms.custom: 
+title: 作成し、アダプター ハンドラーの削除 |Microsoft ドキュメント
+description: リンクを作成し、BizTalk Server 管理コンソールでアダプター ハンドラーを削除
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62b33349-7a3b-4e72-9097-a8c9c7900437
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238058"
 ---
 # <a name="create-and-delete-adapter-handlers"></a><span data-ttu-id="b1252-103">作成し、アダプター ハンドラーを削除</span><span class="sxs-lookup"><span data-stu-id="b1252-103">Create and Delete Adapter Handlers</span></span>
 

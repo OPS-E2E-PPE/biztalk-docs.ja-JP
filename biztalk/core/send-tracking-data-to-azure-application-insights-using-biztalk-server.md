@@ -1,15 +1,15 @@
 ---
-title: "Application Insights または Event Hubs へのデータの追跡 |Microsoft ドキュメント"
-description: "Azure の Application Insights または BizTalk Server で Azure Event Hubs での追跡データの分析を有効にする feature pack をインストールします。"
+title: Application Insights または Event Hubs へのデータの追跡 |Microsoft ドキュメント
+description: Azure の Application Insights または BizTalk Server で Azure Event Hubs での追跡データの分析を有効にする feature pack をインストールします。
 ms.custom: fp1, fp2
 ms.date: 11/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b3ff6cb9-44d0-46cd-9b4f-a346365afb7b
-caps.latest.revision: 
+caps.latest.revision: 10
 author: tordgladnordahl
 ms.author: mandia
 manager: anneta
@@ -18,10 +18,11 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710781"
 ---
 # <a name="send-biztalk-tracking-data-to-azure-application-insights-or-event-hubs"></a><span data-ttu-id="3f2cd-103">BizTalk 追跡データを Azure の Application Insights または Event Hubs の送信します。</span><span class="sxs-lookup"><span data-stu-id="3f2cd-103">Send BizTalk tracking data to Azure Application Insights or Event Hubs</span></span>
 
-<span data-ttu-id="3f2cd-104">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**を処理し、追跡データを Azure Application Insights に送信することができます。</span><span class="sxs-lookup"><span data-stu-id="3f2cd-104">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**, you can process and send your tracking data to Azure Application Insights.</span></span> 
+<span data-ttu-id="3f2cd-104">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]** を処理し、追跡データを Azure Application Insights に送信することができます。</span><span class="sxs-lookup"><span data-stu-id="3f2cd-104">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**, you can process and send your tracking data to Azure Application Insights.</span></span> 
           
 <span data-ttu-id="3f2cd-105">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]Feature Pack 2**:</span><span class="sxs-lookup"><span data-stu-id="3f2cd-105">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] Feature Pack 2**:</span></span>
 
@@ -42,7 +43,7 @@ ms.lasthandoff: 02/28/2018
 3. <span data-ttu-id="3f2cd-118">**ターゲット型** **Application Insight**または**Event Hub**一覧からです。</span><span class="sxs-lookup"><span data-stu-id="3f2cd-118">For the **Target type**, select **Application Insight** or **Event Hub** from the list.</span></span>
     <span data-ttu-id="3f2cd-119">![環境の分析を有効にします。](../core/media/environmentsettingapplicationinishgt.PNG)</span><span class="sxs-lookup"><span data-stu-id="3f2cd-119">![Enable analytics for your environment](../core/media/environmentsettingapplicationinishgt.PNG)</span></span>
 
-4. <span data-ttu-id="3f2cd-120">**接続パラメーター**、select、**しています.**ボタン、および**サインイン**Azure アカウントにします。</span><span class="sxs-lookup"><span data-stu-id="3f2cd-120">For the **Connection parameters**, select the **...** button, and **Sign-in** to your Azure account.</span></span>  
+4. <span data-ttu-id="3f2cd-120">**接続パラメーター**、select、**しています.** ボタン、および**サインイン**Azure アカウントにします。</span><span class="sxs-lookup"><span data-stu-id="3f2cd-120">For the **Connection parameters**, select the **...** button, and **Sign-in** to your Azure account.</span></span>  
 
     <span data-ttu-id="3f2cd-121">**Application Insights 用**</span><span class="sxs-lookup"><span data-stu-id="3f2cd-121">**For Application Insights**</span></span>  
     <span data-ttu-id="3f2cd-122">選択、**サブスクリプション**、**リソース グループ**と、Application Insights インスタンス。</span><span class="sxs-lookup"><span data-stu-id="3f2cd-122">Select your **Subscription**, **Resource Group**, and your Application Insights instance.</span></span>

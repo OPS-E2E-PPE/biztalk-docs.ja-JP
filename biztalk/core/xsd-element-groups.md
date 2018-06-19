@@ -1,11 +1,11 @@
 ---
-title: "XSD 要素グループ |Microsoft ドキュメント"
-ms.custom: 
+title: XSD 要素グループ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XSLT, XSLT variations
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - XSD element groups
 - XSLT, warnings
 ms.assetid: a6ea22cb-6066-480e-8a2a-75fade3e5970
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289538"
 ---
 # <a name="xsd-element-groups"></a><span data-ttu-id="b4143-102">XSD 要素グループ</span><span class="sxs-lookup"><span data-stu-id="b4143-102">XSD Element Groups</span></span>
 <span data-ttu-id="b4143-103">スキーマに特定の構造を使用すると、BizTalk マッパーで生成される XSLT (Extensible Stylesheet Language Transformations) にバリエーションが生じる場合があります。</span><span class="sxs-lookup"><span data-stu-id="b4143-103">The use of certain structures in a schema may create variations in the Extensible Stylesheet Language Transformations (XSLT) that BizTalk Mapper generates.</span></span>  

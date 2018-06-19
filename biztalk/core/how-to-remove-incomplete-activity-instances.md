@@ -1,15 +1,15 @@
 ---
-title: "不完全なアクティビティ インスタンスの削除 |Microsoft ドキュメント"
-description: "BizTalk Server で BAM プライマリ インポート データベースから不完全なインスタンスを削除するカスタム RemoveDanglingInstances SQL スクリプトを実行します。"
-ms.custom: 
+title: 不完全なアクティビティ インスタンスの削除 |Microsoft ドキュメント
+description: BizTalk Server で BAM プライマリ インポート データベースから不完全なインスタンスを削除するカスタム RemoveDanglingInstances SQL スクリプトを実行します。
+ms.custom: ''
 ms.date: 01/18/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7060578c-6267-487b-8530-efa18f9431ce
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 9e7a7dc5544d30d4523c0b3cdaa59f4890e7a4e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/19/2018
+ms.locfileid: "27914943"
 ---
 # <a name="remove-incomplete-activity-instances"></a><span data-ttu-id="e9b0d-103">不完全なアクティビティ インスタンスを削除します。</span><span class="sxs-lookup"><span data-stu-id="e9b0d-103">Remove Incomplete Activity Instances</span></span>
 <span data-ttu-id="e9b0d-104">BAM 定義ファイルを展開すると、定義ファイルで定義された各アクティビティに対し、5 個のテーブルが BAM プライマリ インポート データベースに作成されます。</span><span class="sxs-lookup"><span data-stu-id="e9b0d-104">When a BAM definition file is deployed, five tables are created in the BAM Primary Import database for each activity defined in the definition file.</span></span> <span data-ttu-id="e9b0d-105">作成されるテーブルは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="e9b0d-105">These tables are:</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 01/19/2018
   
 2.  <span data-ttu-id="e9b0d-120">サーバー名を展開し、 **データベース**, 、BAM プライマリ インポート データベースを選択します。</span><span class="sxs-lookup"><span data-stu-id="e9b0d-120">Expand the server name, expand **Databases**, and then select the BAM Primary Import database.</span></span>  
   
-3.  <span data-ttu-id="e9b0d-121">**[新しいクエリ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e9b0d-121">Click **New Query**.</span></span>  
+3.  <span data-ttu-id="e9b0d-121">**[新しいクエリ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e9b0d-121">Click **New Query**.</span></span>  
   
 4.  <span data-ttu-id="e9b0d-122">ストアド プロシージャ作成スクリプトをコピーし、クエリ ペインに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="e9b0d-122">Copy the stored procedure creation script, and paste it into the query pane.</span></span>  
   
@@ -58,7 +59,7 @@ ms.lasthandoff: 01/19/2018
   
 2.  <span data-ttu-id="e9b0d-127">サーバー名を展開し、 **データベース**, 、BAM プライマリ インポート データベースを選択します。</span><span class="sxs-lookup"><span data-stu-id="e9b0d-127">Expand the server name, expand **Databases**, and then select the BAM Primary Import database.</span></span>  
   
-3.  <span data-ttu-id="e9b0d-128">**[新しいクエリ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e9b0d-128">Click **New Query**.</span></span>  
+3.  <span data-ttu-id="e9b0d-128">**[新しいクエリ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e9b0d-128">Click **New Query**.</span></span>  
   
 4.  <span data-ttu-id="e9b0d-129">クエリ ウィンドウで、次のように入力します。`exec RemoveDanglingInstances`および実行する削除操作に適切なパラメーターです。</span><span class="sxs-lookup"><span data-stu-id="e9b0d-129">In the query pane, type `exec RemoveDanglingInstances` and the appropriate parameters for the remove operation you are performing.</span></span> <span data-ttu-id="e9b0d-130">たとえば、注文書アクティビティの不完全なインスタンスをすべて削除するには、「`exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`」と入力します。</span><span class="sxs-lookup"><span data-stu-id="e9b0d-130">For example, to remove all incomplete instances of the Purchase Order activity, type `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`.</span></span>  
   

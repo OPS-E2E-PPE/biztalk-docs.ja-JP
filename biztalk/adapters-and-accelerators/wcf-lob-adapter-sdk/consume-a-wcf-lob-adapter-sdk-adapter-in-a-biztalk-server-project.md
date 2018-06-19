@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 041f14cc-d00f-450d-b1e9-40a3e423c510
-caps.latest.revision: ''
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22225722"
 ---
 # <a name="consume-a-wcf-lob-adapter-sdk-adapter-in-a-biztalk-server-project"></a><span data-ttu-id="3dc0e-102">BizTalk Server プロジェクト内の WCF LOB Adapter SDK アダプターを使用します。</span><span class="sxs-lookup"><span data-stu-id="3dc0e-102">Consume a WCF LOB Adapter SDK adapter in a BizTalk Server project</span></span>
 <span data-ttu-id="3dc0e-103">このトピックを使用して構築されたアダプターを使用する方法について説明、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]から[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を使用して、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="3dc0e-103">This topic describes how to consume an adapter built using the [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] from [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] using the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)].</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 03/23/2018
   
 5.  <span data-ttu-id="3dc0e-111">をクリックして**OK** URI を構成した場合。</span><span class="sxs-lookup"><span data-stu-id="3dc0e-111">Click **OK** when you have configured the URI.</span></span>  
   
-6.  <span data-ttu-id="3dc0e-112">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3dc0e-112">Click **Connect**.</span></span> <span data-ttu-id="3dc0e-113">接続 URI が有効であり、クライアントの資格情報 (存在する場合) が受け入れられたら場合、**カテゴリ**ペインは、アダプターによって提供される操作とカテゴリで表示されます必要があります。</span><span class="sxs-lookup"><span data-stu-id="3dc0e-113">If the connection URI is valid and client credentials (if any) are accepted, the **Category** pane should be populated with the categories and operations provided by the adapter.</span></span>  
+6.  <span data-ttu-id="3dc0e-112">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3dc0e-112">Click **Connect**.</span></span> <span data-ttu-id="3dc0e-113">接続 URI が有効であり、クライアントの資格情報 (存在する場合) が受け入れられたら場合、**カテゴリ**ペインは、アダプターによって提供される操作とカテゴリで表示されます必要があります。</span><span class="sxs-lookup"><span data-stu-id="3dc0e-113">If the connection URI is valid and client credentials (if any) are accepted, the **Category** pane should be populated with the categories and operations provided by the adapter.</span></span>  
   
 7.  <span data-ttu-id="3dc0e-114">場合は、アダプターは、検索をサポート、検索フィールドはアクティブになります。</span><span class="sxs-lookup"><span data-stu-id="3dc0e-114">If the adapter support search, the search field will be active.</span></span> <span data-ttu-id="3dc0e-115">それ以外の場合、コントラクト型でフィルター処理および内のノードをクリックして、型および操作を探索できる、**カテゴリ**ウィンドウです。</span><span class="sxs-lookup"><span data-stu-id="3dc0e-115">Otherwise, you can filter by contract type and explore types and operations by clicking nodes in the **Category** pane.</span></span>  
   

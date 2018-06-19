@@ -1,15 +1,15 @@
 ---
-title: "構成 DTA Purge and Archive ジョブ |Microsoft ドキュメント"
-description: "BizTalk server 追跡データベースを維持するために SQL Server エージェントで、DTA Purge and Archive ジョブのパラメーターを設定します。"
-ms.custom: 
+title: 構成 DTA Purge and Archive ジョブ |Microsoft ドキュメント
+description: BizTalk server 追跡データベースを維持するために SQL Server エージェントで、DTA Purge and Archive ジョブのパラメーターを設定します。
+ms.custom: ''
 ms.date: 10/11/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 156ccf9b-284f-4b96-a395-92936e8cebcf
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 1fb633fcf919ce3124405420a5d9faa79d9d508e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/11/2017
+ms.locfileid: "22646934"
 ---
 # <a name="configure-the-dta-purge-and-archive-job"></a><span data-ttu-id="6276e-103">構成 DTA Purge and Archive ジョブ</span><span class="sxs-lookup"><span data-stu-id="6276e-103">Configure the DTA Purge and Archive Job</span></span>
 <span data-ttu-id="6276e-104">BizTalk 追跡データベース (BizTalkDTADb) からデータをアーカイブまたは削除する前に、DTA Purge and Archive (BizTalkDTADb) ジョブを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6276e-104">Before you can archive or purge data from the BizTalk Tracking (BizTalkDTADb) database, you must configure the DTA Purge and Archive (BizTalkDTADb) job.</span></span> <span data-ttu-id="6276e-105">このジョブを構成して、プロシージャを呼び出す、dtasp_BackupAndPurgeTrackingDatabase ストア、構成する必要があります、6 つのパラメーターを使用するとします。</span><span class="sxs-lookup"><span data-stu-id="6276e-105">This job is configured to call the dtasp_BackupAndPurgeTrackingDatabase store procedure, which uses six parameters you must configure.</span></span>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/11/2017
     exec dtasp_BackupAndPurgeTrackingDatabase 1, 0, 1, '\\MyBizTalkServer\backup', null, 0, 1  
     ```  
   
-8.  <span data-ttu-id="6276e-139">**ジョブのプロパティ - DTA Purge and Archive (BizTalkDTADb)**ダイアログ ボックスで、**ページの選択****全般**を選択、**有効**チェック ボックスをオンし、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="6276e-139">On the **Job Properties - DTA Purge and Archive (BizTalkDTADb)** dialog box, under **Select a page**, select **General**, select the **Enabled** check box, and then select **OK**.</span></span>  
+8.  <span data-ttu-id="6276e-139">**ジョブのプロパティ - DTA Purge and Archive (BizTalkDTADb)** ダイアログ ボックスで、**ページの選択****全般**を選択、**有効**チェック ボックスをオンし、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="6276e-139">On the **Job Properties - DTA Purge and Archive (BizTalkDTADb)** dialog box, under **Select a page**, select **General**, select the **Enabled** check box, and then select **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="6276e-140">参照</span><span class="sxs-lookup"><span data-stu-id="6276e-140">See Also</span></span>  
  [<span data-ttu-id="6276e-141">BizTalk 追跡データベースのアーカイブおよび削除</span><span class="sxs-lookup"><span data-stu-id="6276e-141">Archiving and Purging the BizTalk Tracking Database</span></span>](../core/archiving-and-purging-the-biztalk-tracking-database.md)

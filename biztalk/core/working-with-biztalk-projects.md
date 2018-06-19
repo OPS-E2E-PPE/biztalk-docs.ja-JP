@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289002"
 ---
 # <a name="working-with-biztalk-projects"></a><span data-ttu-id="9fe46-102">BizTalk プロジェクトの操作</span><span class="sxs-lookup"><span data-stu-id="9fe46-102">Working with BizTalk Projects</span></span>
 <span data-ttu-id="9fe46-103">BizTalk プロジェクト システムでアプリケーションを作成する場合の原則の多くは、Microsoft Visual Studio で利用可能な他のプロジェクト システムでアプリケーションを作成する場合と同じですが、プロジェクト ビルド構成のタイプなど、いくつか違いがあります。</span><span class="sxs-lookup"><span data-stu-id="9fe46-103">While many of the principles of creating an application with the BizTalk project system are the same as those of creating applications with other project systems available in Microsoft Visual Studio, there are a few differences, such as the types of project build configurations.</span></span> <span data-ttu-id="9fe46-104">ここでは、Microsoft BizTalk Server で動作するアプリケーションを作成するときに必要な作業のいくつかについて説明します。</span><span class="sxs-lookup"><span data-stu-id="9fe46-104">This section describes some of the tasks that you might perform when creating an application that runs on Microsoft BizTalk Server.</span></span>  

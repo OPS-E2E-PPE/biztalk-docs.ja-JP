@@ -1,11 +1,11 @@
 ---
-title: "手順 13: が作成し、ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 13: が作成し、ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ports, creating
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - configuring, ports
 - ports, configuring
 ms.assetid: cc0540d7-46fc-4d9f-bcf3-0b0e0179fd51
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006387"
 ---
 # <a name="step-13-create-and-configure-ports"></a><span data-ttu-id="186a9-102">手順 13: を作成し、ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="186a9-102">Step 13: Create and Configure Ports</span></span>
 <span data-ttu-id="186a9-103">このステップでは、ポート構成ウィザードを使用して作成し、オーケストレーション デザイナーでポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="186a9-103">In this step, you use the Port Configuration Wizard to create and configure ports in Orchestration Designer.</span></span> <span data-ttu-id="186a9-104">オーケストレーションの送信し、ビジネス プロセスからメッセージを送受信ポートを指定します。</span><span class="sxs-lookup"><span data-stu-id="186a9-104">Ports specify how your orchestration sends and receives messages to and from business processes.</span></span> <span data-ttu-id="186a9-105">各ポートには、種類、方向、およびバインドします。</span><span class="sxs-lookup"><span data-stu-id="186a9-105">Each port has a type, a direction, and a binding.</span></span> <span data-ttu-id="186a9-106">プロパティは、通信、通信のパターン、元の場所の方向を一緒に決定[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]を送信または受信メッセージとの通信が行われる方法です。</span><span class="sxs-lookup"><span data-stu-id="186a9-106">The properties together determine the direction of communication, the pattern of communication, the location to or from which [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] sends or receives the message, and how the communication takes place.</span></span> [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="186a9-107">送信ポートとして最小下位層プロトコル (MLLP) アダプターを使用します。</span><span class="sxs-lookup"><span data-stu-id="186a9-107"> uses the Minimum Lower Layer Protocol (MLLP) adapter as a send port.</span></span> <span data-ttu-id="186a9-108">MLLP アダプターは、他のラボ アプリケーションなどのアプリケーション、保険アプリケーションは、従来の基幹業務アプリケーションとのインターフェイスに TCP ソケット通信を使用します。</span><span class="sxs-lookup"><span data-stu-id="186a9-108">The MLLP adapter uses TCP sockets communication to interface with other applications, such as laboratory applications, insurance applications, and legacy line-of-business applications.</span></span> <span data-ttu-id="186a9-109">MLLP 送信アダプターを表す、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]はアダプター。</span><span class="sxs-lookup"><span data-stu-id="186a9-109">The MLLP Send Adapter represents a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] adapter that is:</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  <span data-ttu-id="186a9-133">**ポート構成ウィザード**をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="186a9-133">In the **Port Configuration Wizard**, click **Next**.</span></span>  
   
-3.  <span data-ttu-id="186a9-134">**ポートのプロパティ**] ページの [、**名前**フィールドに「 **SOAPReceivePort**、クリックしてして**[次へ]**です。</span><span class="sxs-lookup"><span data-stu-id="186a9-134">On the **Port Properties** page, in the **Name** field, type **SOAPReceivePort**, and then click **Next**.</span></span>  
+3.  <span data-ttu-id="186a9-134">**ポートのプロパティ**] ページの [、**名前**フィールドに「 **SOAPReceivePort**、クリックしてして **[次へ]** です。</span><span class="sxs-lookup"><span data-stu-id="186a9-134">On the **Port Properties** page, in the **Name** field, type **SOAPReceivePort**, and then click **Next**.</span></span>  
   
 4.  <span data-ttu-id="186a9-135">**ポートの種類を選択して** ページで、次の情報を入力してをクリックして**次へ**を続行します。</span><span class="sxs-lookup"><span data-stu-id="186a9-135">On the **Select a Port Type** page, enter the following information, and then click **Next** to continue.</span></span>  
   

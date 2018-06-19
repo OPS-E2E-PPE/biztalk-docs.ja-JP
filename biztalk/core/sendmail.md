@@ -1,18 +1,18 @@
 ---
-title: "SendMail |Microsoft ドキュメント"
-ms.custom: 
+title: SendMail |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SMTP adapters, examples
 - examples, SMTP adapters
 - SMTP adapters
 ms.assetid: a0258619-b195-4c8a-8326-77add6e6f04d
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974840"
 ---
 # <a name="sendmail"></a><span data-ttu-id="34ea0-102">SendMail</span><span class="sxs-lookup"><span data-stu-id="34ea0-102">SendMail</span></span>
 <span data-ttu-id="34ea0-103">SendMail サンプルは、簡易メール転送プロトコル (SMTP) アダプターを使用して、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションから電子メール メッセージを送信する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="34ea0-103">The SendMail sample demonstrates how you can use the Simple Mail Transfer Protocol (SMTP) adapter to send e-mail messages from within a Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration.</span></span> <span data-ttu-id="34ea0-104">電子メール メッセージの送信に使用される動的な情報は、プロパティの昇格機能を使用して XML メッセージから取得します。</span><span class="sxs-lookup"><span data-stu-id="34ea0-104">Dynamic information used to send the e-mail messages is retrieved from an XML message using property promotion functionality.</span></span>  
@@ -89,7 +90,7 @@ ms.lasthandoff: 11/28/2017
   
 9. <span data-ttu-id="34ea0-150">**SMTP - アダプター ハンドラーのプロパティ**ダイアログ ボックスで、をクリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="34ea0-150">In the **SMTP - Adapter Handler Properties** dialog box, click **Properties**.</span></span>  
   
-10. <span data-ttu-id="34ea0-151">**SMTP トランスポートのプロパティ** ダイアログ ボックスで、**プロパティ** タブで、適切な値を指定して、 **SMTP サーバー名**と**(電子メールからアドレス)**プロパティ、およびクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="34ea0-151">In the **SMTP Transport Properties** dialog box, on the **Properties** tab, provide appropriate values for the **SMTP server name** and **From (e-mail address)** properties, and then click **OK**.</span></span>  
+10. <span data-ttu-id="34ea0-151">**SMTP トランスポートのプロパティ** ダイアログ ボックスで、**プロパティ** タブで、適切な値を指定して、 **SMTP サーバー名**と **(電子メールからアドレス)** プロパティ、およびクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="34ea0-151">In the **SMTP Transport Properties** dialog box, on the **Properties** tab, provide appropriate values for the **SMTP server name** and **From (e-mail address)** properties, and then click **OK**.</span></span>  
   
      <span data-ttu-id="34ea0-152">これらの値を使用して、この SMTP アダプタから送信するすべての電子メール メッセージの差出人の電子メール アドレスを構築します。</span><span class="sxs-lookup"><span data-stu-id="34ea0-152">These values will be used to construct the From e-mail address for any e-mail messages sent through this SMTP adapter.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "チェックリスト: が毎月の保守チェックを行う |Microsoft ドキュメント"
-ms.custom: 
+title: 'チェックリスト: が毎月の保守チェックを行う |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 588b74fa-6bf5-43ad-aa15-3595adde76d1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009259"
 ---
 # <a name="checklist-complete-monthly-maintenance-checks-in-biztalk-server"></a><span data-ttu-id="8ad7c-102">チェックリスト: BizTalk Server で確認の完了の毎月の保守</span><span class="sxs-lookup"><span data-stu-id="8ad7c-102">Checklist: Complete Monthly Maintenance Checks in BizTalk Server</span></span>
 <span data-ttu-id="8ad7c-103">このトピックの内容が毎月の信頼性、管理、セキュリティ、およびパフォーマンスのメンテナンス チェックの実行に必要な手順について説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムです。</span><span class="sxs-lookup"><span data-stu-id="8ad7c-103">This topic describes the steps involved in performing monthly maintenance checks of the reliability, administration, security, and performance of a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 12/01/2017
 |<span data-ttu-id="8ad7c-142">最新の service pack と更新プログラムがインストールされていることを確認してください (管理およびセキュリティ チェック)。</span><span class="sxs-lookup"><span data-stu-id="8ad7c-142">Ensure that the latest service packs and updates are installed (administration and security check).</span></span>|[<span data-ttu-id="8ad7c-143">Microsoft Update</span><span class="sxs-lookup"><span data-stu-id="8ad7c-143">Microsoft Update</span></span>](https://support.microsoft.com/help/12373/windows-update-faq)|  
 |<span data-ttu-id="8ad7c-144">別の取引先の成果物が、同じホスト (セキュリティ チェック) にインストールされていないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="8ad7c-144">Ensure that the artifacts for different trading partners are not installed on the same host (security check).</span></span>|[<span data-ttu-id="8ad7c-145">ホストとホスト インスタンスの構成</span><span class="sxs-lookup"><span data-stu-id="8ad7c-145">Configuring Hosts and Host Instances</span></span>](../technical-guides/configuring-hosts-and-host-instances.md)|  
 |<span data-ttu-id="8ad7c-146">BizTalk Server がドメイン レベルのみのユーザーおよびグループ (セキュリティ チェック) を使用していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="8ad7c-146">Ensure that BizTalk Server is using only domain-level users and groups (security check).</span></span>|[<span data-ttu-id="8ad7c-147">ドメイン グループ</span><span class="sxs-lookup"><span data-stu-id="8ad7c-147">Domain Groups</span></span>](../core/domain-groups.md)|  
-|<span data-ttu-id="8ad7c-148">MSDTC セキュリティ構成が有効になっていることを確認してください (セキュリティ チェック)。</span><span class="sxs-lookup"><span data-stu-id="8ad7c-148">Ensure that the MSDTC Security Configuration is enabled (security check).</span></span>|<span data-ttu-id="8ad7c-149">参照してください**、適切な MSDTC セキュリティ構成オプションを設定**で[MSDTC の問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)です。</span><span class="sxs-lookup"><span data-stu-id="8ad7c-149">See **Set the appropriate MSDTC Security Configuration options** in [Troubleshooting Problems with MSDTC](../core/troubleshooting-problems-with-msdtc.md).</span></span>|  
+|<span data-ttu-id="8ad7c-148">MSDTC セキュリティ構成が有効になっていることを確認してください (セキュリティ チェック)。</span><span class="sxs-lookup"><span data-stu-id="8ad7c-148">Ensure that the MSDTC Security Configuration is enabled (security check).</span></span>|<span data-ttu-id="8ad7c-149">参照してください **、適切な MSDTC セキュリティ構成オプションを設定**で[MSDTC の問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)です。</span><span class="sxs-lookup"><span data-stu-id="8ad7c-149">See **Set the appropriate MSDTC Security Configuration options** in [Troubleshooting Problems with MSDTC](../core/troubleshooting-problems-with-msdtc.md).</span></span>|  
 |<span data-ttu-id="8ad7c-150">判断 (パフォーマンス チェック) を増加する BizTalk Server のキャッシュ更新間隔をする必要があるかどうか。</span><span class="sxs-lookup"><span data-stu-id="8ad7c-150">Determine whether the BizTalk Server cache refresh interval needs to be increased (performance check).</span></span>|[<span data-ttu-id="8ad7c-151">構成キャッシュ更新間隔を調整する方法</span><span class="sxs-lookup"><span data-stu-id="8ad7c-151">How to Adjust the Configuration Cache Refresh Interval</span></span>](../technical-guides/how-to-adjust-the-configuration-cache-refresh-interval.md)|  
 |<span data-ttu-id="8ad7c-152">判断 (パフォーマンス チェック) を調整する各ホストの調整のオプションが必要かどうか。</span><span class="sxs-lookup"><span data-stu-id="8ad7c-152">Determine whether the throttling options of each host need to be adjusted (performance check).</span></span>|<span data-ttu-id="8ad7c-153">受信および送信ホストの制限については、次を参照してください。[ホスト制限とは何ですか?](../core/what-is-host-throttling.md)です。</span><span class="sxs-lookup"><span data-stu-id="8ad7c-153">-   For information about inbound and outbound host throttling, see [What is Host Throttling?](../core/what-is-host-throttling.md).</span></span><br /><span data-ttu-id="8ad7c-154">-トリガー、アクション、および受信と送信制限の緩和方法についてを参照してください**条件の発生原因、アクション、および軽減戦略を調整**で[BizTalk Server を実装する方法ホストのスロットル](../core/how-biztalk-server-implements-host-throttling.md)です。</span><span class="sxs-lookup"><span data-stu-id="8ad7c-154">-   For information about triggers, actions, and mitigation strategies for inbound and outbound throttling, see **Throttling condition triggers, actions, and mitigation strategies** at [How BizTalk Server Implements Host Throttling](../core/how-biztalk-server-implements-host-throttling.md).</span></span>|  
 |<span data-ttu-id="8ad7c-155">オーケストレーション、形状、およびビジネス ルール エンジン (BRE) イベント (パフォーマンス チェック) を追跡など、不要な追跡が有効かどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="8ad7c-155">Determine whether unnecessary tracking is enabled, such as orchestration, shape, and Business Rule Engine (BRE) event tracking (performance check).</span></span>|<span data-ttu-id="8ad7c-156">-   [追跡を無効にする方法](../technical-guides/how-to-disable-tracking.md)</span><span class="sxs-lookup"><span data-stu-id="8ad7c-156">-   [How to Disable Tracking](../technical-guides/how-to-disable-tracking.md)</span></span><br /><span data-ttu-id="8ad7c-157">-   [追跡の計画](../technical-guides/planning-for-tracking.md)</span><span class="sxs-lookup"><span data-stu-id="8ad7c-157">-   [Planning for Tracking](../technical-guides/planning-for-tracking.md)</span></span><br /><span data-ttu-id="8ad7c-158">-   [追跡のベスト プラクティス](../technical-guides/planning-for-tracking.md#BKMK_TrackingBP)</span><span class="sxs-lookup"><span data-stu-id="8ad7c-158">-   [Best Practices for Tracking](../technical-guides/planning-for-tracking.md#BKMK_TrackingBP)</span></span>|  

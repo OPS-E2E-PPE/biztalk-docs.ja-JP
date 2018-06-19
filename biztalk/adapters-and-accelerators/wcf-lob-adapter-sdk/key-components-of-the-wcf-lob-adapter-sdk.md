@@ -1,14 +1,14 @@
 ---
-title: "主要なコンポーネントの WCF LOB Adapter SDK |Microsoft ドキュメント"
-ms.custom: 
+title: 主要なコンポーネントの WCF LOB Adapter SDK |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 59b8029b-4799-471b-8825-15d79a30bf1f
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226994"
 ---
 # <a name="key-components-of-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="7970a-102">WCF LOB Adapter SDK の主要なコンポーネント</span><span class="sxs-lookup"><span data-stu-id="7970a-102">Key Components of the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="7970a-103">使用して、アダプターの開発、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]の多くは、次の基本的なコンポーネントの使用が必要です。</span><span class="sxs-lookup"><span data-stu-id="7970a-103">Developing an adapter using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] requires the use of many of the following basic components:</span></span>  

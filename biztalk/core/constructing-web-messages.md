@@ -1,11 +1,11 @@
 ---
-title: "Web メッセージの構築 |Microsoft ドキュメント"
-ms.custom: 
+title: Web メッセージの構築 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web messages, about Web messages
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Web messages
 - messages, Web messages
 ms.assetid: ca1792be-5fba-4f5d-a88e-b854f6a8ce33
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237986"
 ---
 # <a name="constructing-web-messages"></a><span data-ttu-id="5194f-102">Web メッセージの構築</span><span class="sxs-lookup"><span data-stu-id="5194f-102">Constructing Web Messages</span></span>
 <span data-ttu-id="5194f-103">[Web メッセージの種類] から Web メッセージを構築します。</span><span class="sxs-lookup"><span data-stu-id="5194f-103">You construct a Web message from a Web message type.</span></span> <span data-ttu-id="5194f-104">Web 参照を追加すると、BizTalk では、追加された Web サービスの Web メソッドに基づいて Web メッセージの種類が自動的に作成されます。</span><span class="sxs-lookup"><span data-stu-id="5194f-104">When you add a Web reference, BizTalk automatically creates Web message types, which BizTalk creates based on the Web methods from the added Web service.</span></span> <span data-ttu-id="5194f-105">Web メッセージをオーケストレーションに追加するには、メッセージの種類を Web メッセージの種類のいずれかに設定します。</span><span class="sxs-lookup"><span data-stu-id="5194f-105">You add a Web message to your orchestration, setting the message type to one of the Web message types.</span></span> <span data-ttu-id="5194f-106">プリミティブ .NET 型またはスキーマ型に基づいて、個々のメッセージ部分を作成します。</span><span class="sxs-lookup"><span data-stu-id="5194f-106">You create individual message parts based on primitive .NET or schema types.</span></span> <span data-ttu-id="5194f-107">メッセージ部分を含まない Web メッセージも構築できます。</span><span class="sxs-lookup"><span data-stu-id="5194f-107">You can construct a Web message that contains no message parts.</span></span>  

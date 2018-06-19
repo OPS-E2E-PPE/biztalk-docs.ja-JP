@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006227"
 ---
 # <a name="before-installing-the-service-oriented-solution"></a><span data-ttu-id="9a86f-102">サービス指向ソリューションをインストールする前に</span><span class="sxs-lookup"><span data-stu-id="9a86f-102">Before Installing the Service Oriented Solution</span></span>
 <span data-ttu-id="9a86f-103">単一のコンピューターにサービス指向ソリューションのスタブ バージョンをインストールするために必要な次のコンポーネントを用意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9a86f-103">The following prerequisites must be available to install the stub version of the service-oriented solution on a single computer:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server の一般的な Optimizations2 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server の一般的な Optimizations2 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 41b452e9-d94c-4bcb-8ef6-e9cea28fc0ab
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009979"
 ---
 # <a name="general-biztalk-server-optimizations"></a><span data-ttu-id="24458-102">BizTalk Server の一般的な最適化</span><span class="sxs-lookup"><span data-stu-id="24458-102">General BizTalk Server Optimizations</span></span>
 <span data-ttu-id="24458-103">増やすには次の推奨事項を使用することができます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンス。</span><span class="sxs-lookup"><span data-stu-id="24458-103">The following recommendations can be used to increase [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] performance.</span></span> <span data-ttu-id="24458-104">このトピックで示した最適化が後に適用されます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をインストールして構成します。</span><span class="sxs-lookup"><span data-stu-id="24458-104">The optimizations listed in this topic are applied after [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] has been installed and configured.</span></span>  

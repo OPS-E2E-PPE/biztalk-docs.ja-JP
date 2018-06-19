@@ -1,14 +1,14 @@
 ---
-title: "アグリーメントのプロパティを XML ファイルにエクスポート |Microsoft ドキュメント"
-ms.custom: 
+title: アグリーメントのプロパティを XML ファイルにエクスポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 136f09b5-3e8c-4455-bd84-66cd27de6a44
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004947"
 ---
 # <a name="exporting-agreement-properties-to-an-xml-file"></a><span data-ttu-id="648eb-102">XML ファイルへのアグリーメント プロパティのエクスポート</span><span class="sxs-lookup"><span data-stu-id="648eb-102">Exporting Agreement Properties to an XML FIle</span></span>
 <span data-ttu-id="648eb-103">このセクションでは、アグリーメントのプロパティを XML テンプレート ファイルにエクスポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="648eb-103">This section provides instructions on how to export agreement properties to an XML template file.</span></span>  

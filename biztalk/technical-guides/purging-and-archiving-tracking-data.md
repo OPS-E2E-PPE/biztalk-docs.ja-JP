@@ -1,14 +1,14 @@
 ---
-title: "消去および追跡データをアーカイブ |Microsoft ドキュメント"
-ms.custom: 
+title: 消去および追跡データをアーカイブ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14094fda-3fd9-4d45-9bbb-cd9377c2cbad
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302938"
 ---
 # <a name="purging-and-archiving-tracking-data"></a><span data-ttu-id="14df3-102">消去および追跡データをアーカイブ</span><span class="sxs-lookup"><span data-stu-id="14df3-102">Purging and Archiving Tracking Data</span></span>
 <span data-ttu-id="14df3-103">構成し、DTA Purge and Archive SQL エージェント ジョブを有効にするには重要です。</span><span class="sxs-lookup"><span data-stu-id="14df3-103">It is important to configure and enable the DTA Purge and Archive SQL Agent job.</span></span> <span data-ttu-id="14df3-104">このジョブをアーカイブして、BizTalk 追跡 (DTA) データベースから古いデータを削除します。</span><span class="sxs-lookup"><span data-stu-id="14df3-104">This job archives and purges old data from the BizTalk Tracking (DTA) database.</span></span> <span data-ttu-id="14df3-105">これは、正常なために不可欠な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムです。</span><span class="sxs-lookup"><span data-stu-id="14df3-105">This is essential for a healthy [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span> <span data-ttu-id="14df3-106">追跡データベースを照会する追跡ホストおよびその他のすべてのプロセスのパフォーマンスに影響を与える大きな追跡データベースが開始されます。</span><span class="sxs-lookup"><span data-stu-id="14df3-106">A large Tracking database will begin to affect the performance of the tracking host and any other processes that query the Tracking database.</span></span> <span data-ttu-id="14df3-107">追跡データは追跡データベースから削除されませんが場合、データベースが拡大し続けます。</span><span class="sxs-lookup"><span data-stu-id="14df3-107">If the tracking data is not purged from the Tracking database, the database will continue to grow.</span></span>  

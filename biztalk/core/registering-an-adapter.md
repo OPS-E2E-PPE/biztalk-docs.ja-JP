@@ -1,14 +1,14 @@
 ---
-title: "アダプターの登録 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターの登録 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc85b96e-7b7b-4131-88ec-87b419a61bc2
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270266"
 ---
 # <a name="registering-an-adapter"></a><span data-ttu-id="a1769-102">アダプターの登録</span><span class="sxs-lookup"><span data-stu-id="a1769-102">Registering an Adapter</span></span>
 <span data-ttu-id="a1769-103">カスタム アダプターを開発している場合が変更され、ソフトウェア開発キット (SDK) にサンプル ファイル アダプターに含まれているレジストリ ファイルの 1 つを実行して BizTalk Server に登録することができます。</span><span class="sxs-lookup"><span data-stu-id="a1769-103">If you are developing a custom adapter, you can register it with BizTalk Server by modifying and running one of the registry files included with the sample file adapter in the software development kit (SDK).</span></span> <span data-ttu-id="a1769-104">また、アダプター レジストリ ウィザードを使用してレジストリ ファイルを作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="a1769-104">Or, you can use the Adapter Registry Wizard to create a registry file.</span></span> <span data-ttu-id="a1769-105">このウィザードは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Utilities\AdapterRegistryWizard フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="a1769-105">This wizard is located in the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Utilities\AdapterRegistryWizard folder.</span></span>  

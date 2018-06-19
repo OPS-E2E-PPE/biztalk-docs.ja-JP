@@ -1,18 +1,18 @@
 ---
-title: "クライアント ユーティリティを使用して関連アプリケーションの資格情報を設定する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: クライアント ユーティリティを使用して関連アプリケーションの資格情報を設定する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO applications], configuring credentials
 - SSOClient [SSO], configuring credentials
 - applications [SSO], credentials
 ms.assetid: 454b6257-3538-40be-840c-00172a2c1dce
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971568"
 ---
 # <a name="how-to-set-credentials-for-the-affiliate-application-using-the-client-utility"></a><span data-ttu-id="a9f5f-102">クライアント ユーティリティを使用して関連アプリケーションの資格情報を設定する方法</span><span class="sxs-lookup"><span data-stu-id="a9f5f-102">How to Set Credentials for the Affiliate Application Using the Client Utility</span></span>
 <span data-ttu-id="a9f5f-103">ここで示すコマンドを使用すると、ユーザーが特定のアプリケーションにアクセスできるようにユーザーの資格情報を設定できます。</span><span class="sxs-lookup"><span data-stu-id="a9f5f-103">Use this command to set the credentials for a user so that the user is able to access a specific application.</span></span> <span data-ttu-id="a9f5f-104">また、このコマンドにより、マッピングが自動的に有効になります。</span><span class="sxs-lookup"><span data-stu-id="a9f5f-104">This command also automatically enables the mapping.</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="a9f5f-110">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="a9f5f-110">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="a9f5f-111">既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="a9f5f-111">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="a9f5f-112">型**ssoclient – setcredentials\<アプリケーション名\>**ここで、 **\<アプリケーション名\>**対象となる特定のアプリケーションは、資格情報を設定します。</span><span class="sxs-lookup"><span data-stu-id="a9f5f-112">Type **ssoclient –setcredentials \<application name\>**, where **\<application name\>** is the specific application for which you want to set the credentials for.</span></span>  
+3.  <span data-ttu-id="a9f5f-112">型**ssoclient – setcredentials\<アプリケーション名\>** ここで、 **\<アプリケーション名\>** 対象となる特定のアプリケーションは、資格情報を設定します。</span><span class="sxs-lookup"><span data-stu-id="a9f5f-112">Type **ssoclient –setcredentials \<application name\>**, where **\<application name\>** is the specific application for which you want to set the credentials for.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="a9f5f-113">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="a9f5f-113">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

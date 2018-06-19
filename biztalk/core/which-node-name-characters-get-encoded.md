@@ -1,14 +1,14 @@
 ---
-title: "ノード名における文字エン コードを |Microsoft ドキュメント"
-ms.custom: 
+title: ノード名における文字エン コードを |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 48a581d2-48fa-4c36-b5c2-fe87c328a7f4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289186"
 ---
 # <a name="which-node-name-characters-get-encoded"></a><span data-ttu-id="47996-102">ノード名における文字エンコード</span><span class="sxs-lookup"><span data-stu-id="47996-102">Which Node Name Characters Get Encoded</span></span>
 <span data-ttu-id="47996-103">XML には、XML 名の先頭文字に対する特殊な制約も含め、要素名などの XML 名に使用できる文字に制限があります。</span><span class="sxs-lookup"><span data-stu-id="47996-103">XML places some restrictions on the characters that can be used in XML names, such as element names, including some special restrictions on the first character of an XML name.</span></span> <span data-ttu-id="47996-104">どのような文字を使用でき、また、どのような文字を使用すべきでないかというガイドラインを次に示します。</span><span class="sxs-lookup"><span data-stu-id="47996-104">The conceptual goals in determining which characters to allow and which characters to exclude from legal XML names are:</span></span>  
