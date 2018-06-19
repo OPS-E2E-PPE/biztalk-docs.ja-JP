@@ -1,14 +1,14 @@
 ---
-title: "レッスン 5: ソリューションの配置 |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 5: ソリューションの配置 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5af5c650-05de-4b85-b633-ad411f8b0e6b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222394"
 ---
 # <a name="lesson-5-deploy-the-solution"></a><span data-ttu-id="f7845-102">レッスン 5: ソリューションを配置します。</span><span class="sxs-lookup"><span data-stu-id="f7845-102">Lesson 5: Deploy the Solution</span></span>
 <span data-ttu-id="f7845-103">このレッスンで配置する、BizTalk ソリューションを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="f7845-103">In this lesson, you deploy the BizTalk solution using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="f7845-104">BizTalk オーケストレーション デザイナーでは、論理ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="f7845-104">In the BizTalk orchestration designer, you created logical ports.</span></span> <span data-ttu-id="f7845-105">物理ポートが作成され、論理ポートを物理ポートにマップすることによって、BizTalk アプリケーションを構成します。</span><span class="sxs-lookup"><span data-stu-id="f7845-105">You will now create the physical ports and then configure the BizTalk application by mapping the logical ports to the physical ports.</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "Oracle データベースのドキュメントを Microsoft BizTalk Adapter |Microsoft ドキュメント"
-description: "取得開始されると、アーキテクチャ、セキュリティ、アプリを開発、メッセージ スキーマ、および BizTalk Adapter Pack での Oracle データベース アダプターのトラブルシューティング"
-ms.custom: 
+title: Oracle データベースのドキュメントを Microsoft BizTalk Adapter |Microsoft ドキュメント
+description: 取得開始されると、アーキテクチャ、セキュリティ、アプリを開発、メッセージ スキーマ、および BizTalk Adapter Pack での Oracle データベース アダプターのトラブルシューティング
+ms.custom: ''
 ms.date: 08/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9308cbde-9d4d-4c1f-9532-cce0f7726327
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214258"
 ---
 # <a name="microsoft-biztalk-adapter-for-oracle-database"></a><span data-ttu-id="67193-103">Microsoft BizTalk Adapter 用 Oracle Database</span><span class="sxs-lookup"><span data-stu-id="67193-103">Microsoft BizTalk Adapter for Oracle Database</span></span>
 <span data-ttu-id="67193-104">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]ドキュメントには、さまざまな開発、管理、および使用する方法を学習するのに役立つリソースが含まれています、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="67193-104">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] documentation includes a variety of resources that can help you learn to develop, administer, and use the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span>  

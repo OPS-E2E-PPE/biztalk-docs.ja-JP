@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214162"
 ---
 # <a name="supporting-secure-sockets-layer-ssl"></a><span data-ttu-id="2e2ef-102">Secure Sockets Layer (SSL) をサポートします。</span><span class="sxs-lookup"><span data-stu-id="2e2ef-102">Supporting Secure Sockets Layer (SSL)</span></span>
 <span data-ttu-id="2e2ef-103">を、展開、クライアント コンピューターと MRSR サーバー間で Secure Sockets Layer (SSL) プロトコルを実装するのには、要求を、インターネット インフォメーション サービス (IIS) サーバーで「サーバー認証」の証明書を構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2e2ef-103">To implement the Secure Sockets Layer (SSL) protocol in your deployment between the client computers and the MRSR servers, you need to request and configure a "Server Authentication" certificate on your Internet Information Services (IIS) servers.</span></span>  

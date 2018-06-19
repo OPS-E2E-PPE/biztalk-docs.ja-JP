@@ -1,17 +1,17 @@
 ---
-title: "Contoso データベースの復元 |Microsoft ドキュメント"
-ms.custom: 
+title: Contoso データベースの復元 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private process tutorial, restoring databases
 - databases, restoring
 ms.assetid: 291178c1-826e-49e0-a1d2-cbffee749659
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210226"
 ---
 # <a name="restoring-the-contoso-database"></a><span data-ttu-id="45dbf-102">Contoso データベースの復元</span><span class="sxs-lookup"><span data-stu-id="45dbf-102">Restoring the Contoso Database</span></span>
 <span data-ttu-id="45dbf-103">ここでは、SQL Server Management Studio を使用して SQL スクリプトを実行し、Contoso データベースとそれに関連付けられたストアド プロシージャを復元します。</span><span class="sxs-lookup"><span data-stu-id="45dbf-103">In this step, you use SQL Server Management Studio to run a SQL script to restore the Contoso database and its associated stored procedures.</span></span> <span data-ttu-id="45dbf-104">また、データベース テーブルに準備データを追加します。</span><span class="sxs-lookup"><span data-stu-id="45dbf-104">You also populate the database tables with preliminary data.</span></span>  
@@ -87,11 +88,11 @@ ms.lasthandoff: 09/20/2017
     RETURN(0)  
     ```  
   
-5.  <span data-ttu-id="45dbf-111">**[実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="45dbf-111">Click **Execute**.</span></span>  
+5.  <span data-ttu-id="45dbf-111">**[実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="45dbf-111">Click **Execute**.</span></span>  
   
 ### <a name="to-set-permissions-on-the-contoso-database"></a><span data-ttu-id="45dbf-112">Contoso データベースにアクセス許可を設定するには</span><span class="sxs-lookup"><span data-stu-id="45dbf-112">To set permissions on the Contoso database</span></span>  
   
-1.  <span data-ttu-id="45dbf-113">Microsoft SQL Server Management Studio の オブジェクト エクスプ ローラーで展開**データベース**、展開、 **Contoso**データベースを展開し、展開**セキュリティ**です。</span><span class="sxs-lookup"><span data-stu-id="45dbf-113">In the Object Explorer of the Microsoft SQL Server Management Studio, expand **Databases**, expand the **Contoso** database, and then expand **Security**.</span></span> <span data-ttu-id="45dbf-114">**[ユーザー]**を右クリックし、 **[新しいユーザー]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="45dbf-114">Right-click **Users**, and then click **New User**.</span></span>  
+1.  <span data-ttu-id="45dbf-113">Microsoft SQL Server Management Studio の オブジェクト エクスプ ローラーで展開**データベース**、展開、 **Contoso**データベースを展開し、展開**セキュリティ**です。</span><span class="sxs-lookup"><span data-stu-id="45dbf-113">In the Object Explorer of the Microsoft SQL Server Management Studio, expand **Databases**, expand the **Contoso** database, and then expand **Security**.</span></span> <span data-ttu-id="45dbf-114">**[ユーザー]** を右クリックし、 **[新しいユーザー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="45dbf-114">Right-click **Users**, and then click **New User**.</span></span>  
   
 2.  <span data-ttu-id="45dbf-115">データベース ユーザー - 新規 ダイアログ ボックスの**ログイン名**、省略記号ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="45dbf-115">In the Database User - New dialog box, for **Login name**, click the ellipsis.</span></span>  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="45dbf-118">[ログインの選択] ダイアログ ボックスで、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="45dbf-118">In the Select Login dialog box, click **OK**.</span></span>  
   
-6.  <span data-ttu-id="45dbf-119">データベース ユーザー - 新規 ダイアログ ボックスで、**データベース ロールのメンバーシップ**ペインで、 **db_datareader**と**db_datawriter**です。</span><span class="sxs-lookup"><span data-stu-id="45dbf-119">In the Database User - New dialog box, in the **Database role membership** pane, select **db_datareader** and **db_datawriter**.</span></span> <span data-ttu-id="45dbf-120">**ユーザー名**、入力**BizTalk Application Users**です。</span><span class="sxs-lookup"><span data-stu-id="45dbf-120">For **User name**, enter **BizTalk Application Users**.</span></span> <span data-ttu-id="45dbf-121">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="45dbf-121">Click **OK**.</span></span>  
+6.  <span data-ttu-id="45dbf-119">データベース ユーザー - 新規 ダイアログ ボックスで、**データベース ロールのメンバーシップ**ペインで、 **db_datareader**と**db_datawriter**です。</span><span class="sxs-lookup"><span data-stu-id="45dbf-119">In the Database User - New dialog box, in the **Database role membership** pane, select **db_datareader** and **db_datawriter**.</span></span> <span data-ttu-id="45dbf-120">**ユーザー名**、入力**BizTalk Application Users**です。</span><span class="sxs-lookup"><span data-stu-id="45dbf-120">For **User name**, enter **BizTalk Application Users**.</span></span> <span data-ttu-id="45dbf-121">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="45dbf-121">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="45dbf-122">手順 1. ~ 6. を繰り返します**BizTalk Isolated Host Users**を選択すると、 **db_datareader**と**db_datawriter**の**データベース ロールのメンバーシップ**、」と入力して**BizTalk Isolated Host Users**の**ユーザー名**です。</span><span class="sxs-lookup"><span data-stu-id="45dbf-122">Repeat steps 1 through 6 for **BizTalk Isolated Host Users**, selecting **db_datareader** and **db_datawriter** for **Database role membership**, and entering **BizTalk Isolated Host Users** for **User name**.</span></span>  
   

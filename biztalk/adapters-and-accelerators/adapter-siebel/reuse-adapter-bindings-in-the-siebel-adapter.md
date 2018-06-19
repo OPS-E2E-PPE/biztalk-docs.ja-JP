@@ -1,17 +1,17 @@
 ---
-title: "Siebel アダプターのアダプターのバインドを再利用 |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターのアダプターのバインドを再利用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - binding file, definition
 - adapter bindings, reusing
 ms.assetid: 1dc17b7a-5397-43f4-b19e-9c50fb0e97ff
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222754"
 ---
 # <a name="reuse-adapter-bindings-in-the-siebel-adapter"></a><span data-ttu-id="ff5b4-102">Siebel アダプターのアダプターのバインドを再利用します。</span><span class="sxs-lookup"><span data-stu-id="ff5b4-102">Reuse adapter bindings in the Siebel adapter</span></span>
 <span data-ttu-id="ff5b4-103">バインディングは、オーケストレーション ポートなど、ロール リンクの論理エンドポイントとの送信などの物理的なエンドポイント間のマッピングを作成し、ポートまたはパーティを受信します。</span><span class="sxs-lookup"><span data-stu-id="ff5b4-103">A binding creates a mapping between a logical endpoint, such as an orchestration port or a role link, and a physical endpoint, such as a send and receive port or party.</span></span> <span data-ttu-id="ff5b4-104">これにより、BizTalk ビジネス ソリューションの複数のコンポーネント間で通信できるようになります。</span><span class="sxs-lookup"><span data-stu-id="ff5b4-104">This enables communication between different components of a BizTalk business solution.</span></span> <span data-ttu-id="ff5b4-105">バインドを作成するには BizTalk Server 管理コンソールを使用します。</span><span class="sxs-lookup"><span data-stu-id="ff5b4-105">You can create bindings by using the BizTalk Server Administration console.</span></span>  
@@ -59,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="ff5b4-134">たとえば、入力します。`C:\Bindings\Application1Bindings.Binding1.xml`</span><span class="sxs-lookup"><span data-stu-id="ff5b4-134">For example, enter `C:\Bindings\Application1Bindings.Binding1.xml`</span></span>  
   
-5.  <span data-ttu-id="ff5b4-135">いることを確認**、現在のアプリケーションからのすべてのバインドをエクスポート**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="ff5b4-135">Confirm that **Export all bindings from the current application** is selected.</span></span>  
+5.  <span data-ttu-id="ff5b4-135">いることを確認 **、現在のアプリケーションからのすべてのバインドをエクスポート**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="ff5b4-135">Confirm that **Export all bindings from the current application** is selected.</span></span>  
   
 6.  <span data-ttu-id="ff5b4-136">グループのすべてのパーティ情報をエクスポートするには、選択、**グローバル パーティ情報をエクスポート**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="ff5b4-136">To export all party information for the group, select the **Export Global Party information** check box.</span></span>  
   

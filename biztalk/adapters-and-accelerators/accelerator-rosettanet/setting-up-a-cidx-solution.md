@@ -1,11 +1,11 @@
 ---
-title: "CIDX ソリューションのセットアップ |Microsoft ドキュメント"
-ms.custom: 
+title: CIDX ソリューションのセットアップ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - CIDX, process configuration
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - CIDX, importing PIPs
 - PIPs, CIDX
 ms.assetid: 7f1f159f-3b09-4efd-907b-9a75f7f3ecd1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210914"
 ---
 # <a name="setting-up-a-cidx-solution"></a><span data-ttu-id="8208b-102">CIDX ソリューションの設定</span><span class="sxs-lookup"><span data-stu-id="8208b-102">Setting Up a CIDX Solution</span></span>
 <span data-ttu-id="8208b-103">Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] は、CIDX (Chemical Industry Data Exchange) XML メッセージ交換 (CIDX Chem eStandards バージョン 2.0 および 3.0) をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="8208b-103">Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] support for CIDX (Chemical Industry Data Exchange) XML message exchange (CIDX Chem eStandards versions 2.0 and 3.0).</span></span> <span data-ttu-id="8208b-104">ここでは、次の操作を行って CIDX ソリューションを設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="8208b-104">This topic describes how to set up a CIDX solution by doing the following:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "メッセージ スキーマを ExecuteNonQuery、ExecuteReader、および ExecuteScalar Operations1 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ スキーマを ExecuteNonQuery、ExecuteReader、および ExecuteScalar Operations1 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8aa5fdb2-1e7f-4a34-a1e5-c16d8fb477d5
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216154"
 ---
 # <a name="message-schemas-for-the-executenonquery-executereader-and-executescalar-operations"></a><span data-ttu-id="a970e-102">ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="a970e-102">Message Schemas for the ExecuteNonQuery, ExecuteReader, and ExecuteScalar Operations</span></span>
 <span data-ttu-id="a970e-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] Oracle E-business Suite で、任意の SQL ステートメントまたは PL/SQL ブロックを実行するルート レベルで ExecuteNonQuery、ExecuteReader、および ExecuteScalar 送信操作を公開します。</span><span class="sxs-lookup"><span data-stu-id="a970e-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] exposes the ExecuteNonQuery, ExecuteReader, and ExecuteScalar outbound operations at the root level to execute any arbitrary SQL statements or PL/SQL blocks in Oracle E-Business Suite.</span></span>  

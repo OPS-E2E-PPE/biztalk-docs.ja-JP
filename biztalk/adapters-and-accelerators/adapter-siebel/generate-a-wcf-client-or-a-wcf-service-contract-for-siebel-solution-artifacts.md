@@ -1,11 +1,11 @@
 ---
-title: "WCF クライアントまたは Siebel ソリューションの成果物のための WCF サービス コントラクトを生成 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF クライアントまたは Siebel ソリューションの成果物のための WCF サービス コントラクトを生成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, generate a client class by using svcutil.exe
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - how to, generate a client class by using the Add Adapter Service Reference Plug-in
 - how to, generate a client class
 ms.assetid: 52c32c86-6403-4bb4-9d43-1319d19a6b49
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222410"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts"></a><span data-ttu-id="53b68-102">WCF クライアントまたは Siebel ソリューションの成果物のための WCF サービス コントラクトを生成します。</span><span class="sxs-lookup"><span data-stu-id="53b68-102">Generate a WCF client or a WCF service contract for Siebel solution artifacts</span></span>
 <span data-ttu-id="53b68-103">使用することができます、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] Siebel の成果物に選択した操作を対象とした WCF クライアント クラスを生成します。</span><span class="sxs-lookup"><span data-stu-id="53b68-103">You can use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] to generate a WCF client class targeted at selected operations on Siebel artifacts.</span></span> <span data-ttu-id="53b68-104">ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用して、WCF クライアント クラスを生成します。ただし、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]標準の Microsoft Windows インターフェイスを通じて ServiceModel メタデータ ユーティリティ ツールの機能を公開します。</span><span class="sxs-lookup"><span data-stu-id="53b68-104">You can also use the ServiceModel Metadata Utility Tool (svcutil.exe) to generate the WCF client class; however, the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] exposes the functionality of the ServiceModel Metadata Utility Tool through a standard Microsoft Windows interface.</span></span> <span data-ttu-id="53b68-105">また、svcutil.exe ツールではない参照および検索機能を提供し、Siebel システムに接続するときに選択したバインドのプロパティに基づく構成ファイルが生成されます。</span><span class="sxs-lookup"><span data-stu-id="53b68-105">It also provides browse and search capabilities that are not available with the svcutil.exe tool, and generates a configuration file based on the binding properties that you select when you connect to the Siebel system.</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="53b68-109">[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーでは、プロジェクトを右クリックし、をクリックして**アダプター サービス参照の追加**です。</span><span class="sxs-lookup"><span data-stu-id="53b68-109">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Solution Explorer, right-click your project, and then click **Add Adapter Service Reference**.</span></span>  
   
-2.  <span data-ttu-id="53b68-110">後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Siebel 操作の Visual Studio でのメタデータを取得する](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)Siebel システムへの接続を検索および参照するには操作です。</span><span class="sxs-lookup"><span data-stu-id="53b68-110">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Retrieving Metadata for Siebel Operations in Visual Studio](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md) to connect to the Siebel system and browse and search for operations.</span></span> <span data-ttu-id="53b68-111">選択した操作のための WCF クライアント クラスを作成することを確認**クライアント (送信操作)**からが選択されている、**選択コントラクト型**(これは、既定値) ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="53b68-111">To create a WCF client class for the operations that you select, be sure that **Client (Outbound operations)** is selected from the **Select contract type** drop-down list (this is the default).</span></span>  
+2.  <span data-ttu-id="53b68-110">後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Siebel 操作の Visual Studio でのメタデータを取得する](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)Siebel システムへの接続を検索および参照するには操作です。</span><span class="sxs-lookup"><span data-stu-id="53b68-110">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Retrieving Metadata for Siebel Operations in Visual Studio](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md) to connect to the Siebel system and browse and search for operations.</span></span> <span data-ttu-id="53b68-111">選択した操作のための WCF クライアント クラスを作成することを確認**クライアント (送信操作)** からが選択されている、**選択コントラクト型**(これは、既定値) ドロップダウン リスト。</span><span class="sxs-lookup"><span data-stu-id="53b68-111">To create a WCF client class for the operations that you select, be sure that **Client (Outbound operations)** is selected from the **Select contract type** drop-down list (this is the default).</span></span>  
   
 3.  <span data-ttu-id="53b68-112">すべての対象をクリックする操作を選択した後**OK** WCF クライアント クラスを生成します。</span><span class="sxs-lookup"><span data-stu-id="53b68-112">After you select all of the operations that you want to target, click **OK** to generate the WCF client class.</span></span>  
   

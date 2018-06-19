@@ -1,17 +1,17 @@
 ---
-title: "レッスン 3: カスタム受信パイプラインを追加する |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 3: カスタム受信パイプラインを追加する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive locations, creating custom pipelines
 - custom pipelines
 ms.assetid: 1917b8e2-4f1c-4c20-abe4-ea18a406eeeb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210010"
 ---
 # <a name="lesson-3-adding-a-custom-receive-pipeline"></a><span data-ttu-id="360cc-102">レッスン 3: カスタム受信パイプラインを追加します。</span><span class="sxs-lookup"><span data-stu-id="360cc-102">Lesson 3: Adding a Custom Receive Pipeline</span></span>
 <span data-ttu-id="360cc-103">このレッスンでは、BizTalk パイプライン デザイナを使用してカスタム受信パイプラインを作成します。</span><span class="sxs-lookup"><span data-stu-id="360cc-103">In this lesson you create a custom receive pipeline using BizTalk Pipeline Designer.</span></span> <span data-ttu-id="360cc-104">カスタム受信パイプラインは、アダプターがその前に、メッセージを受信した後のメッセージが実行されるパイプライン[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]メッセージ ボックス データベースに公開します。</span><span class="sxs-lookup"><span data-stu-id="360cc-104">A custom receive pipeline is a pipeline that is run on messages after the adapter receives the messages, but before [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] publishes them to the MessageBox database.</span></span>  

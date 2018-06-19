@@ -1,14 +1,14 @@
 ---
-title: "InterAct アダプタ サーバー アプリケーション |Microsoft ドキュメント"
-ms.custom: 
+title: InterAct アダプタ サーバー アプリケーション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8c50b239-0480-449f-aa6d-50bbb892e8a1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223002"
 ---
 # <a name="interact-adapter-server-application"></a><span data-ttu-id="80deb-102">InterAct アダプタ サーバー アプリケーション</span><span class="sxs-lookup"><span data-stu-id="80deb-102">InterAct Adapter Server Application</span></span>
 <span data-ttu-id="80deb-103">このセクションでは、サーバー アプリケーションの要求メッセージの構成の一般的な説明を表示します。</span><span class="sxs-lookup"><span data-stu-id="80deb-103">This section presents a general description of the composition of server application Request messages.</span></span> <span data-ttu-id="80deb-104">これらは、サーバー アプリケーションにサーバー側 SNL から渡される XML ドキュメントです。</span><span class="sxs-lookup"><span data-stu-id="80deb-104">These are the XML documents passed from the server-side SNL to the server application.</span></span> <span data-ttu-id="80deb-105">そのため、これらのメッセージには、サーバー側で実行される SWIFTNet プリミティブの最初の部分の特性がします。</span><span class="sxs-lookup"><span data-stu-id="80deb-105">As such, these messages are characteristic of the first part of the SWIFTNet primitives exercised on the server side.</span></span>  

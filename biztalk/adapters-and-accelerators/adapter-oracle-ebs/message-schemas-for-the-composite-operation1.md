@@ -1,14 +1,14 @@
 ---
-title: "複合 Operation1 のメッセージ スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: 複合 Operation1 のメッセージ スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 768473ef-da8d-4e58-86cb-597c28ded49c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215178"
 ---
 # <a name="message-schemas-for-the-composite-operation"></a><span data-ttu-id="5aeac-102">複合操作のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="5aeac-102">Message Schemas for the Composite Operation</span></span>
 <span data-ttu-id="5aeac-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] Oracle E-business Suite で複合操作を実行することができます。</span><span class="sxs-lookup"><span data-stu-id="5aeac-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] enables you to execute composite operations in Oracle E-Business Suite.</span></span> <span data-ttu-id="5aeac-104">複合操作は、複数の操作を含めることができ、任意の順序で。</span><span class="sxs-lookup"><span data-stu-id="5aeac-104">A composite operation can contain multiple operations, and in any order.</span></span> <span data-ttu-id="5aeac-105">どの操作に指定する複合操作については、次を参照してください。[複合操作に対するサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-composite-operations2.md)です。</span><span class="sxs-lookup"><span data-stu-id="5aeac-105">For information about which operations can be included in a composite operation, see [Support for Composite Operations](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-composite-operations2.md).</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server での迅速なエラー コード |Microsoft ドキュメント"
-description: "BizTalk Server に SWIFT アクセラレータのクラスと検証の種類を表示します。"
-ms.custom: 
+title: BizTalk Server での迅速なエラー コード |Microsoft ドキュメント
+description: BizTalk Server に SWIFT アクセラレータのクラスと検証の種類を表示します。
+ms.custom: ''
 ms.date: 08/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03699986-965b-4a28-ab2e-09f110fb4db6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215026"
 ---
 # <a name="swift-error-codes"></a><span data-ttu-id="4b6f8-103">SWIFT エラー コード</span><span class="sxs-lookup"><span data-stu-id="4b6f8-103">SWIFT Error Codes</span></span>
 <span data-ttu-id="4b6f8-104">SWIFT では、財務 (FIN) メッセージのセットに対して多くのネットワークによる検証を定義します。</span><span class="sxs-lookup"><span data-stu-id="4b6f8-104">SWIFT defines many network-imposed validations against the set of financial (FIN) messages.</span></span> <span data-ttu-id="4b6f8-105">各検証は、メッセージの内容に対してチェックの種類に関連して、3 文字のエラー コードに関連付けられてです。</span><span class="sxs-lookup"><span data-stu-id="4b6f8-105">Each validation relates to a type of check against the contents of the message, and is associated with a three-character error code.</span></span> <span data-ttu-id="4b6f8-106">エラー コードの最初の文字は、クラス、検出された問題のことを意味し、文字です。</span><span class="sxs-lookup"><span data-stu-id="4b6f8-106">The first character of the error code implies the class of the problem detected, and is a letter.</span></span> <span data-ttu-id="4b6f8-107">残りの 2 つの文字は、(クラスと組み合わせて) 場合、エラーの詳細を示すためし、常に 2 桁のコードとして表示されます。</span><span class="sxs-lookup"><span data-stu-id="4b6f8-107">The remaining two characters denote the detail of the error (when combined with the class) and always appear as a two-digit code.</span></span>  

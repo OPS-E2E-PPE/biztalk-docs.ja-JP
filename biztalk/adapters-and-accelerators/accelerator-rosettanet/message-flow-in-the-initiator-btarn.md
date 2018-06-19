@@ -1,11 +1,11 @@
 ---
-title: "メッセージの開始側 BTARN での流れ |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの開始側 BTARN での流れ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Accelerator for RosettaNet, message flow
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, message flow
 - initiator BTARN
 ms.assetid: 315f3d4c-5e40-4b8e-b135-9da98dc2db1e
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210594"
 ---
 # <a name="message-flow-in-the-initiator-btarn"></a><span data-ttu-id="94ecb-102">開始側 BTARN でのメッセージ フロー</span><span class="sxs-lookup"><span data-stu-id="94ecb-102">Message Flow in the Initiator BTARN</span></span>
 <span data-ttu-id="94ecb-103">開始側コンピューターが、バックエンドの基幹業務 (LOB) アプリケーションから専用形式のメッセージを受信すると、メッセージ フローが開始されます。</span><span class="sxs-lookup"><span data-stu-id="94ecb-103">Message flow on an initiator computer starts with receiving a message from the back-end line-of-business application, in its proprietary format.</span></span> <span data-ttu-id="94ecb-104">メッセージ フローには、受信したメッセージを RNIF (RosettaNet Implementation Framework) に準拠するメッセージに変換して、インターネット経由で応答側コンピューターに送信するタスクも含まれています。</span><span class="sxs-lookup"><span data-stu-id="94ecb-104">It involves converting that message to a RosettaNet Implementation Framework (RNIF)-compliant message, and then sending the message over the Internet to the responder computer.</span></span>  

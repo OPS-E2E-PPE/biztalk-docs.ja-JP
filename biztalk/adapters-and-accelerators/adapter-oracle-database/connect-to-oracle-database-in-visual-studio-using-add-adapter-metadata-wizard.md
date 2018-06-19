@@ -1,14 +1,14 @@
 ---
-title: "アダプター メタデータの追加ウィザードを使用して Visual Studio での Oracle データベースへの接続 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプター メタデータの追加ウィザードを使用して Visual Studio での Oracle データベースへの接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 726b3f82-887c-407a-bb9f-dcb9443155b0
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214834"
 ---
 # <a name="connect-to-oracle-database-in-visual-studio-using-add-adapter-metadata-wizard"></a><span data-ttu-id="5f17d-102">アダプター メタデータの追加ウィザードを使用して Visual Studio での Oracle データベースへの接続します。</span><span class="sxs-lookup"><span data-stu-id="5f17d-102">Connect to Oracle Database in Visual Studio using Add Adapter Metadata Wizard</span></span>
 <span data-ttu-id="5f17d-103">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] BizTalk アダプターとしても公開されると、そのため、使用することができます、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]アダプターを使用して Oracle データベースに対して実行する操作のスキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="5f17d-103">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] is also exposed as a BizTalk adapter and, therefore, you can use the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] to generate schema for the operations you want to perform on the Oracle database using the adapter.</span></span>  
@@ -39,14 +40,14 @@ ms.lasthandoff: 09/20/2017
         |<span data-ttu-id="5f17d-113">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="5f17d-113">**Categories**</span></span>|<span data-ttu-id="5f17d-114">をクリックして**アダプターを追加**です。</span><span class="sxs-lookup"><span data-stu-id="5f17d-114">Click **Add Adapter**.</span></span>|  
         |<span data-ttu-id="5f17d-115">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="5f17d-115">**Templates**</span></span>|<span data-ttu-id="5f17d-116">をクリックして**アダプター メタデータの追加**です。</span><span class="sxs-lookup"><span data-stu-id="5f17d-116">Click **Add Adapter Metadata**.</span></span>|  
   
-    3.  <span data-ttu-id="5f17d-117">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5f17d-117">Click **Add**.</span></span> <span data-ttu-id="5f17d-118">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="5f17d-118">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
+    3.  <span data-ttu-id="5f17d-117">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5f17d-117">Click **Add**.</span></span> <span data-ttu-id="5f17d-118">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="5f17d-118">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
   
     4.  <span data-ttu-id="5f17d-119">アダプター メタデータの追加ウィザードで選択**Wcf-oracledb**です。</span><span class="sxs-lookup"><span data-stu-id="5f17d-119">In the Add Adapter Metadata Wizard, select **WCF-OracleDB**.</span></span> <span data-ttu-id="5f17d-120">BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="5f17d-120">Select the computer on which BizTalk Server is installed and the name of the BizTalk database.</span></span>  
   
         > [!IMPORTANT]
         >  <span data-ttu-id="5f17d-121">BizTalk で構成された Wcf-oracledb ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="5f17d-121">If you already have a WCF-OracleDB port configured in BizTalk, select the port from the **Port** list.</span></span>  
   
-    5.  <span data-ttu-id="5f17d-122">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5f17d-122">Click **Next**.</span></span>  
+    5.  <span data-ttu-id="5f17d-122">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5f17d-122">Click **Next**.</span></span>  
   
 2.  <span data-ttu-id="5f17d-123">**バインディングを選択**ドロップダウン リスト、選択**oracleDBBinding**  をクリック**構成**です。</span><span class="sxs-lookup"><span data-stu-id="5f17d-123">From the **Select a binding** drop-down list, select **oracleDBBinding** and click **Configure**.</span></span>  
   
@@ -67,9 +68,9 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="5f17d-141">アダプター メタデータの追加ウィザードを使用してメタデータを生成して、選択した場合は、既存の Wcf-oracledb 送信ポートをバインドのプロパティを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5f17d-141">If you are generating metadata using Add Adapter Metadata Wizard and you selected an existing WCF-OracleDB send port, you need not specify the binding properties.</span></span> <span data-ttu-id="5f17d-142">バインドのプロパティは、送信ポートの構成から取得されます。</span><span class="sxs-lookup"><span data-stu-id="5f17d-142">The binding properties are picked from the send port configuration.</span></span> <span data-ttu-id="5f17d-143">ただし、存在する場合、デザイン時に、必要なバインドのプロパティを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="5f17d-143">However, you may choose to specify the binding properties that are required at design-time, if any.</span></span> <span data-ttu-id="5f17d-144">このような場合、メタデータの生成中にバインドのプロパティの新しい値をデザイン時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="5f17d-144">In such case, the new values for binding properties will be used at design-time while generating the metadata.</span></span> <span data-ttu-id="5f17d-145">ただし、実行時に、バインドの送信ポートの構成のプロパティの指定値適用されます。</span><span class="sxs-lookup"><span data-stu-id="5f17d-145">However, at run-time the values specified for binding properties in the send port configuration will be applicable.</span></span>  
   
-6.  <span data-ttu-id="5f17d-146">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5f17d-146">Click **OK**.</span></span>  
+6.  <span data-ttu-id="5f17d-146">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5f17d-146">Click **OK**.</span></span>  
   
-7.  <span data-ttu-id="5f17d-147">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5f17d-147">Click **Connect**.</span></span> <span data-ttu-id="5f17d-148">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="5f17d-148">After the connection is established, the connection status is shown as **Connected**.</span></span>  
+7.  <span data-ttu-id="5f17d-147">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5f17d-147">Click **Connect**.</span></span> <span data-ttu-id="5f17d-148">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="5f17d-148">After the connection is established, the connection status is shown as **Connected**.</span></span>  
   
      <span data-ttu-id="5f17d-149">次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。</span><span class="sxs-lookup"><span data-stu-id="5f17d-149">The following figure shows the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] immediately after the connection is established.</span></span>  
   

@@ -1,17 +1,17 @@
 ---
-title: "XML 逆アセンブラーまたはアセンブラー |Microsoft ドキュメント"
-ms.custom: 
+title: XML 逆アセンブラーまたはアセンブラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - disassembler, XML
 - assembler, XML
 ms.assetid: 242a7a96-2342-4ab5-9d3f-1acbcc7ffd14
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206650"
 ---
 # <a name="xml-disassembler-and-assembler"></a><span data-ttu-id="14edd-102">XML 逆アセンブラーまたはアセンブラー</span><span class="sxs-lookup"><span data-stu-id="14edd-102">XML Disassembler and Assembler</span></span>
 <span data-ttu-id="14edd-103">XML 逆アセンブラーまたはアセンブラーいることを確認[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) だけでなく、HL7 でエンコードされたメッセージをサポートしますも XML メッセージの受信/送信をサポートします。</span><span class="sxs-lookup"><span data-stu-id="14edd-103">The XML disassembler and assembler ensure that [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) not only supports HL7-encoded messages, but also supports incoming and/or outgoing XML messages.</span></span>  

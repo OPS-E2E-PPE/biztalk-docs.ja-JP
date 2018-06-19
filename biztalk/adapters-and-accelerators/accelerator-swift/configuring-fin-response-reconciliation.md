@@ -1,17 +1,17 @@
 ---
-title: "FIN 対応調整の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: FIN 対応調整の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FIN Response Reconciliation, configuring
 - configuring, FIN Response Reconciliation
 ms.assetid: dc934530-76ff-4cdb-b182-46f9ea0343b7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209410"
 ---
 # <a name="configuring-fin-response-reconciliation"></a><span data-ttu-id="e4869-102">FIN 対応調整を構成します。</span><span class="sxs-lookup"><span data-stu-id="e4869-102">Configuring FIN Response Reconciliation</span></span>
 <span data-ttu-id="e4869-103">次のセクションを構成する手順を実行する必要があります、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] FIN 対応調整 (FRR) 機能を次の図に示すようにします。</span><span class="sxs-lookup"><span data-stu-id="e4869-103">You must perform the steps in the following sections to configure the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] FIN Response Reconciliation (FRR) feature, as shown in the following figure.</span></span>  

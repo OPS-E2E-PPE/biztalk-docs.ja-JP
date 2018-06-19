@@ -1,14 +1,14 @@
 ---
-title: "Oracle クライアント E-business Suite アダプターを構成する |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle クライアント E-business Suite アダプターを構成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 842b6ecc-5334-4cc0-af10-baa7f692ad23
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214770"
 ---
 # <a name="configure-the-oracle-client-for-the-e-business-suite-adapter"></a><span data-ttu-id="9817b-102">Oracle クライアント E-business Suite アダプターを構成します。</span><span class="sxs-lookup"><span data-stu-id="9817b-102">Configure the Oracle client for the E-Business Suite adapter</span></span>
 > [!IMPORTANT]

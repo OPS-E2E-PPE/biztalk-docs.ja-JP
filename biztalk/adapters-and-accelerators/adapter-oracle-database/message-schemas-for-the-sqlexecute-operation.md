@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961544"
 ---
 # <a name="message-schemas-for-the-sqlexecute-operation"></a><span data-ttu-id="74430-102">SQLEXECUTE 操作のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="74430-102">Message Schemas for the SQLEXECUTE Operation</span></span>
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]<span data-ttu-id="74430-103">LOB システムに存在成果物のための厳密に型指定されたメタデータを表示し、これらの成果物の標準的な操作を公開します。</span><span class="sxs-lookup"><span data-stu-id="74430-103"> surfaces strongly-typed metadata for artifacts present in the LOB system and exposes standard operations on these artifacts.</span></span> <span data-ttu-id="74430-104">ただし、アプリケーションがアプリケーションにビジネス ロジックによって駆動される任意の SQL ステートメントの実行を必要がありますのシナリオがあります。</span><span class="sxs-lookup"><span data-stu-id="74430-104">However, there are scenarios where an application might require the execution of an arbitrary SQL statement that is driven by the business logic in the application.</span></span> <span data-ttu-id="74430-105">たとえばをする可能性があります。</span><span class="sxs-lookup"><span data-stu-id="74430-105">For example, you may want to:</span></span>  

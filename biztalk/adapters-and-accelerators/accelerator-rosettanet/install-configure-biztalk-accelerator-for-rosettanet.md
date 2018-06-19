@@ -1,12 +1,12 @@
 ---
-title: "BizTalk Server では、RosettaNet (BTARN) の BizTalk アクセラレータをインストール |Microsoft ドキュメント"
-description: "ハードウェアおよびソフトウェア要件、インストールの手順、および BizTalk Server で BTARN の構成手順を参照してください。"
+title: BizTalk Server では、RosettaNet (BTARN) の BizTalk アクセラレータをインストール |Microsoft ドキュメント
+description: ハードウェアおよびソフトウェア要件、インストールの手順、および BizTalk Server で BTARN の構成手順を参照してください。
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-ms.assetid: 
+ms.assetid: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -15,6 +15,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211042"
 ---
 # <a name="install-biztalk-accelerator-for-rosettanet"></a><span data-ttu-id="e3d81-103">BizTalk Accelerator を RosettaNet をインストールします。</span><span class="sxs-lookup"><span data-stu-id="e3d81-103">Install BizTalk Accelerator for RosettaNet</span></span>
 
@@ -69,7 +70,7 @@ ms.lasthandoff: 09/20/2017
 
 1.  <span data-ttu-id="e3d81-159">BTARN の実行**setup.exe**管理者として。</span><span class="sxs-lookup"><span data-stu-id="e3d81-159">Run the BTARN **setup.exe** as Administrator.</span></span>
   
-2.  <span data-ttu-id="e3d81-160">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-160">Select **Install**.</span></span>  
+2.  <span data-ttu-id="e3d81-160">**[インストール]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-160">Select **Install**.</span></span>  
   
 3.  <span data-ttu-id="e3d81-161">**顧客情報**ページで、ユーザー名、組織、およびプロダクト キーを入力し、をクリックして**次**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-161">On the **Customer Information** page, type your user name, organization, and the product key, and then click **Next**.</span></span>  
   
@@ -92,7 +93,7 @@ ms.lasthandoff: 09/20/2017
     > [!IMPORTANT]
     >  <span data-ttu-id="e3d81-173">セットアップが完了したら、表示、BTARN の構成が失敗する BTARN HTTP フロント エンド機能のみをインストールするカスタム インストールを実行する場合、"機能のオブジェクトを作成できませんでした: WebApp"エラーです。</span><span class="sxs-lookup"><span data-stu-id="e3d81-173">If you perform a custom installation to install only the BTARN HTTP Front End feature, BTARN configuration may fail after setup is complete, displaying the "Failed to create object for feature: WebApp" error.</span></span> <span data-ttu-id="e3d81-174">このような場合は、2 つのファイルをコピー (**Microsoft.VC80.ATL.manifest**と**atl80.dll**) BizTalk Server を使用しているコンピューターからにインストールされている、BTARN HTTP フロント エンド機能をインストールしたコンピューターにします。</span><span class="sxs-lookup"><span data-stu-id="e3d81-174">If this occurs, copy two files (**Microsoft.VC80.ATL.manifest** and **atl80.dll**) from a computer with BizTalk Server installed on it, to the computer where you installed the BTARN HTTP Front End feature.</span></span>  
     >   
-    >  <span data-ttu-id="e3d81-175">2 つのファイルのソース フォルダーは、Visual Studio が BizTalk Server と同じコンピューターにインストールされている場合*< ドライブ\>*: \Program Files\Microsoft Visual Studio 11.0\VC\redist\x86\Microsoft.VC100.ATL です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-175">If Visual Studio is installed on the same computer as BizTalk Server, the source folder for the two files is *<drive\>*:\Program Files\Microsoft Visual Studio 11.0\VC\redist\x86\Microsoft.VC100.ATL.</span></span> <span data-ttu-id="e3d81-176">BizTalk server の 2 つのファイルのソース フォルダーの下のフォルダーは、Visual Studio が BizTalk server にインストールされていない場合*< ドライブ\>*: \WINDOWS\WinSxS です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-176">If Visual Studio is not installed on the BizTalk server, the source folder for the two files on the BizTalk server is a folder under *<drive\>*:\WINDOWS\WinSxS.</span></span> <span data-ttu-id="e3d81-177">ファイルのバージョンは、8.0.50727.42 です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-177">The version of the files should be 8.0.50727.42.</span></span> <span data-ttu-id="e3d81-178">HTTP フロント エンド機能がインストールされているコンピューター上の宛先フォルダーは、BTARN のインストール ディレクトリ (既定では、 *< ドライブ\>*: \Program Files\Microsoft BTARN)。</span><span class="sxs-lookup"><span data-stu-id="e3d81-178">The destination folder on the computer where you have installed the HTTP Front End feature is the BTARN installation directory (by default, *<drive\>*:\Program Files\Microsoft BTARN).</span></span>  
+    >  <span data-ttu-id="e3d81-175">2 つのファイルのソース フォルダーは、Visual Studio が BizTalk Server と同じコンピューターにインストールされている場合 *< ドライブ\>*: \Program Files\Microsoft Visual Studio 11.0\VC\redist\x86\Microsoft.VC100.ATL です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-175">If Visual Studio is installed on the same computer as BizTalk Server, the source folder for the two files is *<drive\>*:\Program Files\Microsoft Visual Studio 11.0\VC\redist\x86\Microsoft.VC100.ATL.</span></span> <span data-ttu-id="e3d81-176">BizTalk server の 2 つのファイルのソース フォルダーの下のフォルダーは、Visual Studio が BizTalk server にインストールされていない場合 *< ドライブ\>*: \WINDOWS\WinSxS です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-176">If Visual Studio is not installed on the BizTalk server, the source folder for the two files on the BizTalk server is a folder under *<drive\>*:\WINDOWS\WinSxS.</span></span> <span data-ttu-id="e3d81-177">ファイルのバージョンは、8.0.50727.42 です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-177">The version of the files should be 8.0.50727.42.</span></span> <span data-ttu-id="e3d81-178">HTTP フロント エンド機能がインストールされているコンピューター上の宛先フォルダーは、BTARN のインストール ディレクトリ (既定では、 *< ドライブ\>*: \Program Files\Microsoft BTARN)。</span><span class="sxs-lookup"><span data-stu-id="e3d81-178">The destination folder on the computer where you have installed the HTTP Front End feature is the BTARN installation directory (by default, *<drive\>*:\Program Files\Microsoft BTARN).</span></span>  
     >   
     >  <span data-ttu-id="e3d81-179">HTTP フロント エンド機能がインストールされて、コンピューターにこれらのファイルをコピーしたら、次のように再実行して**Configuration.exe**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-179">After you have copied these files to the computer with the HTTP Front End feature installed, rerun **Configuration.exe**.</span></span>  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 09/20/2017
 1.  <span data-ttu-id="e3d81-183">**Microsoft BTARN 構成ウィザード**] ページで、[**基本的な構成**を既定の設定で、サーバーを構成するのにまたは**カスタム構成**に高度な構成オプションを使用してサーバーを構成します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-183">On the **Microsoft BTARN Configuration Wizard** page, select **Basic configuration** to configure the server with default settings, or **Custom configuration** to configure the server using advanced configuration options.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="e3d81-184">ローカル管理者アカウントを使用して BTARN を構成する場合は、入力としてアカウント*< マシン名\>\\< 管理者名\>*で、**ユーザー ID**フィールド、**サービス資格情報**領域。</span><span class="sxs-lookup"><span data-stu-id="e3d81-184">If you want to configure BTARN using a local administrator account, enter the account as *<machine name\>\\<administrator name\>* in the **User ID** field of the **Service Credential** area.</span></span>  
+    >  <span data-ttu-id="e3d81-184">ローカル管理者アカウントを使用して BTARN を構成する場合は、入力としてアカウント *< マシン名\>\\< 管理者名\>* で、**ユーザー ID**フィールド、**サービス資格情報**領域。</span><span class="sxs-lookup"><span data-stu-id="e3d81-184">If you want to configure BTARN using a local administrator account, enter the account as *<machine name\>\\<administrator name\>* in the **User ID** field of the **Service Credential** area.</span></span>  
   
 2.  <span data-ttu-id="e3d81-185">**データベース サーバー名**テキスト ボックスで、表示されるサーバー名が正しいことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-185">In the **Database server name** text box, verify that the server name displayed is correct.</span></span> <span data-ttu-id="e3d81-186">**サービス資格情報**領域で、サービスを実行するアカウントのユーザー名 (ドメイン) とパスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="e3d81-186">In the **Service credential** area, enter the user name (with domain) and password for the account that the services will run under.</span></span> <span data-ttu-id="e3d81-187">をクリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="e3d81-187">Click **Configure**.</span></span>  
   

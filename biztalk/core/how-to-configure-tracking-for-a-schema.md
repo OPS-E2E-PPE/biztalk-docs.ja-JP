@@ -1,11 +1,11 @@
 ---
-title: "スキーマの追跡を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマの追跡を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, configuring
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - tracking, configuring
 - tracking, schemas
 ms.assetid: b5f69c98-8824-43b1-8f21-d84b60ac5431
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248050"
 ---
 # <a name="how-to-configure-tracking-for-a-schema"></a><span data-ttu-id="1b86f-102">スキーマの追跡を構成する方法</span><span class="sxs-lookup"><span data-stu-id="1b86f-102">How to Configure Tracking for a Schema</span></span>
 <span data-ttu-id="1b86f-103">このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して、スキーマの追跡を構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="1b86f-103">This topic describes how to use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console to configure tracking for a schema.</span></span> <span data-ttu-id="1b86f-104">追跡を構成するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールの [グループ ハブ] ページのクエリ ビューで、表示するメッセージのプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="1b86f-104">To configure tracking, you specify the properties of the messages that you want to view in the query views of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console Group Hub page.</span></span>  

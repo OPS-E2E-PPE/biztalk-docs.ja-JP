@@ -1,11 +1,11 @@
 ---
-title: "Oracle データベースとアダプター間のセキュリティ |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベースとアダプター間のセキュリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapter, security
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - authentication
 - IPsec
 ms.assetid: 09d40a05-3678-4002-9e08-2f97c2d5c686
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215706"
 ---
 # <a name="security-between-the-oracle-database-and-the-adapter"></a><span data-ttu-id="c0bb7-102">Oracle データベースとアダプター間のセキュリティ</span><span class="sxs-lookup"><span data-stu-id="c0bb7-102">Security between the Oracle Database and the adapter</span></span>
 <span data-ttu-id="c0bb7-103">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支援と Oracle データベースとの通信を保護するためのサポートはありません。</span><span class="sxs-lookup"><span data-stu-id="c0bb7-103">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] provides no support for helping to secure communication between it and the Oracle database.</span></span> <span data-ttu-id="c0bb7-104">適切なレベルの承認、認証、データのプライバシー、およびアダプターと Oracle データベースの間のデータ交換用のデータの整合性を確保するセキュリティ メカニズムを提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c0bb7-104">You must provide a security mechanism to help ensure appropriate levels of authorization, authentication, data privacy, and data integrity for data exchanges between the adapter and the Oracle database.</span></span>  

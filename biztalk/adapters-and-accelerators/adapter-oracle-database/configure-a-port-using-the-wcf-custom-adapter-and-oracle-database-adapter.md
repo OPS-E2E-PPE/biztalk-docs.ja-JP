@@ -1,15 +1,15 @@
 ---
-title: "Wcf-custom アダプターおよび Oracle データベース アダプターを使用してポートの構成 |Microsoft ドキュメント"
-description: "Wcf-custom 送信を作成し、BizTalk Server で Oracle DB アダプターを使用する受信ポート"
-ms.custom: 
+title: Wcf-custom アダプターおよび Oracle データベース アダプターを使用してポートの構成 |Microsoft ドキュメント
+description: Wcf-custom 送信を作成し、BizTalk Server で Oracle DB アダプターを使用する受信ポート
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c99ff526-ad97-4095-812f-0ce88b071e7f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215858"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-oracle-database-adapter"></a><span data-ttu-id="c91fb-103">Wcf-custom アダプターおよび Oracle データベース アダプターを使用してポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="c91fb-103">Configure a port using the WCF-custom adapter and Oracle Database adapter</span></span>
 <span data-ttu-id="c91fb-104">Wcf-custom 送信ポートと受信ポートを使用して Oracle データベースでの送信および受信操作を実行する方法、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="c91fb-104">How to configure WCF-Custom send and receive ports to perform outbound and inbound operations on the Oracle database using the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)].</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="c91fb-115">**Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="c91fb-115">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="c91fb-116">クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、Oracle データベースの接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="c91fb-116">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for the Oracle database.</span></span> <span data-ttu-id="c91fb-117">接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="c91fb-117">For more information about the connection URI, see [Create the Oracle Database connection URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="c91fb-116">クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、Oracle データベースの接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="c91fb-116">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for the Oracle database.</span></span> <span data-ttu-id="c91fb-117">接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="c91fb-117">For more information about the connection URI, see [Create the Oracle Database connection URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="c91fb-118">**全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。</span><span class="sxs-lookup"><span data-stu-id="c91fb-118">On the **General** tab, in the **Action** text box, type the action for the operation.</span></span> <span data-ttu-id="c91fb-119">参照してください[メッセージおよびメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)各操作のアクションの一覧についてはします。</span><span class="sxs-lookup"><span data-stu-id="c91fb-119">See [Messages and Message Schemas](messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md) for a list of actions for each operation.</span></span> <span data-ttu-id="c91fb-120">たとえば、Oracle データベースで HR スキーマ EMPLOYEE テーブルの挿入操作を呼び出すアクションは。</span><span class="sxs-lookup"><span data-stu-id="c91fb-120">For example, the action to invoke the Insert operation an EMPLOYEE table under the HR schema in an Oracle database is:</span></span>  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="c91fb-136">**受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。</span><span class="sxs-lookup"><span data-stu-id="c91fb-136">From the **Receive pipeline** drop-down list, select the pipeline that corresponds to XMLReceive.</span></span>  
   
-11. <span data-ttu-id="c91fb-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c91fb-137">Click **OK**.</span></span>  
+11. <span data-ttu-id="c91fb-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c91fb-137">Click **OK**.</span></span>  
   
 ## <a name="deploy-adapters-for-receiving-messages-from-an-oracle-database"></a><span data-ttu-id="c91fb-138">Oracle データベースからメッセージを受信するためのアダプターを展開します。</span><span class="sxs-lookup"><span data-stu-id="c91fb-138">Deploy adapters for receiving messages from an Oracle database</span></span>  
   
@@ -99,7 +100,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="c91fb-149">**Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="c91fb-149">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="c91fb-150">クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、Oracle データベースの接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="c91fb-150">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for the Oracle database.</span></span> <span data-ttu-id="c91fb-151">接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="c91fb-151">For more information about the connection URI, see [Create the Oracle Database connection URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="c91fb-150">クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、Oracle データベースの接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="c91fb-150">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for the Oracle database.</span></span> <span data-ttu-id="c91fb-151">接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="c91fb-151">For more information about the connection URI, see [Create the Oracle Database connection URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="c91fb-152">クリックして、**バインド** タブとの間、**バインディングの種類**ドロップダウン リストで、 **oracleDBBinding**です。</span><span class="sxs-lookup"><span data-stu-id="c91fb-152">Click the **Binding** tab, and from the **Binding Type** drop-down list, select **oracleDBBinding**.</span></span> <span data-ttu-id="c91fb-153">によって公開されている別のバインディング プロパティを指定することができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="c91fb-153">You can specify the different binding properties exposed by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="c91fb-154">バインドのプロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについてお読み](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="c91fb-154">For more information about binding properties, see [Read about the Oracle Database adapter binding properties](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md).</span></span>  
   

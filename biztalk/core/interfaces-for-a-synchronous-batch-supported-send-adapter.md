@@ -1,14 +1,14 @@
 ---
-title: "送信アダプターのバッチでサポートされている同期用のインターフェイス |Microsoft ドキュメント"
-ms.custom: 
+title: 送信アダプターのバッチでサポートされている同期用のインターフェイス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2b191c41-ca4f-4d2b-bd15-a93ad87a743d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257674"
 ---
 # <a name="interfaces-for-a-synchronous-batch-supported-send-adapter"></a><span data-ttu-id="b5cd8-102">バッチ処理に対応した同期送信アダプター用のインターフェイス</span><span class="sxs-lookup"><span data-stu-id="b5cd8-102">Interfaces for a Synchronous Batch-Supported Send Adapter</span></span>
 <span data-ttu-id="b5cd8-103">バッチ対応アダプターでは、同期的または非同期的にメッセージを送信し、トランザクション送信操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="b5cd8-103">Batch-aware adapters may send messages synchronously or asynchronously, and may perform transacted send operations.</span></span> <span data-ttu-id="b5cd8-104">メッセージのバッチを送信するには、送信アダプターに次のインターフェイスを実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b5cd8-104">To send batches of messages, a send adapter must implement the following interfaces:</span></span>  

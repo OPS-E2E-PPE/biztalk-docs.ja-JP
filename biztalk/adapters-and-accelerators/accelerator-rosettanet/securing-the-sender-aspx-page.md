@@ -1,11 +1,11 @@
 ---
-title: "送信者の ASPX ページをセキュリティで保護する |Microsoft ドキュメント"
-ms.custom: 
+title: 送信者の ASPX ページをセキュリティで保護する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ASPX pages, protocol rules
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - ASPX pages, security
 - protocol rules [ASPX pages]
 ms.assetid: 8214e3f5-a8e9-4d71-957d-ed0852035030
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207762"
 ---
 # <a name="securing-the-sender-aspx-page"></a><span data-ttu-id="61e03-102">送信者の ASPX ページをセキュリティで保護します。</span><span class="sxs-lookup"><span data-stu-id="61e03-102">Securing the Sender ASPX Page</span></span>
 <span data-ttu-id="61e03-103">ここでは、RNIFSend.aspx ページの不正使用を防止する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="61e03-103">This topic describes how to protect the RNIFSend.aspx page from unauthorized use.</span></span> <span data-ttu-id="61e03-104">次の 2 種類の手順を使用できます。</span><span class="sxs-lookup"><span data-stu-id="61e03-104">There are two procedures that you can use:</span></span>  
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="61e03-110">をクリックして**BTARNApp**、右側のペインで右クリックし、 **RNIFSend.aspx**です。</span><span class="sxs-lookup"><span data-stu-id="61e03-110">Click **BTARNApp**, and then in the right pane, right-click **RNIFSend.aspx**.</span></span>  
   
-4.  <span data-ttu-id="61e03-111">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="61e03-111">Click **Properties**.</span></span> <span data-ttu-id="61e03-112">**ファイル セキュリティ** タブの 、 **IP アドレスとドメイン名の制限**セクションで、**編集**です。</span><span class="sxs-lookup"><span data-stu-id="61e03-112">On the **File Security** tab, in the **IP address and domain name restrictions** section, click **Edit**.</span></span>  
+4.  <span data-ttu-id="61e03-111">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="61e03-111">Click **Properties**.</span></span> <span data-ttu-id="61e03-112">**ファイル セキュリティ** タブの 、 **IP アドレスとドメイン名の制限**セクションで、**編集**です。</span><span class="sxs-lookup"><span data-stu-id="61e03-112">On the **File Security** tab, in the **IP address and domain name restrictions** section, click **Edit**.</span></span>  
   
 5.  <span data-ttu-id="61e03-113">[IP アドレスとドメイン名の制限] ダイアログ ボックスで、**拒否**、順にクリック**追加**です。</span><span class="sxs-lookup"><span data-stu-id="61e03-113">In the IP Address and Domain Name Restrictions dialog box, click **Denied Access**, and then click **Add**.</span></span>  
   
@@ -52,12 +53,12 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="61e03-120">**ネットワーク ID**</span><span class="sxs-lookup"><span data-stu-id="61e03-120">**Network ID**</span></span>|<span data-ttu-id="61e03-121">使用するネットワークを入力します。</span><span class="sxs-lookup"><span data-stu-id="61e03-121">Type the network you want to use.</span></span>|  
     |<span data-ttu-id="61e03-122">**サブネット マスク**</span><span class="sxs-lookup"><span data-stu-id="61e03-122">**Subnet mask**</span></span>|<span data-ttu-id="61e03-123">使用するサブネット マスクを入力します。</span><span class="sxs-lookup"><span data-stu-id="61e03-123">Type the subnet mask you want to use.</span></span>|  
   
-8.  <span data-ttu-id="61e03-124">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="61e03-124">Click **OK**.</span></span>  
+8.  <span data-ttu-id="61e03-124">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="61e03-124">Click **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="61e03-125">すべての送信操作が個々のインスタンスで実行されているそれぞれのホストに既に分離されている場合は、このコンピューターを追加するだけです。</span><span class="sxs-lookup"><span data-stu-id="61e03-125">If you have separated all your send operations to a separate host running on a separate instance, then you only have to add this computer.</span></span> <span data-ttu-id="61e03-126">他のすべてのアクセスを拒否できます。</span><span class="sxs-lookup"><span data-stu-id="61e03-126">You can deny all others access.</span></span>  
   
-9. <span data-ttu-id="61e03-127">をクリックして**[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="61e03-127">Click **OK**, and then click **OK** again.</span></span>  
+9. <span data-ttu-id="61e03-127">をクリックして **[ok]**、順にクリック**OK**もう一度です。</span><span class="sxs-lookup"><span data-stu-id="61e03-127">Click **OK**, and then click **OK** again.</span></span>  
   
 ### <a name="to-create-a-protocol-rule-of-outgoing-http-requests"></a><span data-ttu-id="61e03-128">発信 HTTP 要求のプロトコル ルールを作成するには</span><span class="sxs-lookup"><span data-stu-id="61e03-128">To create a protocol rule of outgoing HTTP requests</span></span>  
   

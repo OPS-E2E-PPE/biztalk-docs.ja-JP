@@ -1,17 +1,17 @@
 ---
-title: "メッセージ スキーマのレコードの種類 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ スキーマのレコードの種類 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RECORD types, message schemas for
 - RECORD types, support for
 ms.assetid: 637c42f2-eed0-4941-a6cd-7e03d01088b8
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214138"
 ---
 # <a name="message-schemas-for-record-types"></a><span data-ttu-id="633b2-102">レコードの種類のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="633b2-102">Message Schemas for RECORD Types</span></span>
 <span data-ttu-id="633b2-103">Oracle レコードの種類は、いずれかで構成される構造化の PL/SQL データ型またはより単純型または構造化されたデータベースの種類です。</span><span class="sxs-lookup"><span data-stu-id="633b2-103">Oracle RECORD types are structured PL/SQL data types that consist of one or more simple or structured database types.</span></span> <span data-ttu-id="633b2-104">レコードの種類は、階層データを送受信する PL/SQL ストアド プロシージャおよび関数で、主に使用されます。</span><span class="sxs-lookup"><span data-stu-id="633b2-104">RECORD types are primarily used in PL/SQL stored procedures and functions to send and receive hierarchical data.</span></span>  

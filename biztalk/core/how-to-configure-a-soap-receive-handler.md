@@ -1,18 +1,18 @@
 ---
-title: "SOAP 受信ハンドラを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP 受信ハンドラを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [SOAP adapters], receive handlers
 - SOAP adapters, receive handlers
 - receive handlers, SOAP adapters
 ms.assetid: e1174381-f36c-4131-83b7-26bfa879802e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247314"
 ---
 # <a name="how-to-configure-a-soap-receive-handler"></a><span data-ttu-id="722c3-102">SOAP 受信ハンドラを構成する方法</span><span class="sxs-lookup"><span data-stu-id="722c3-102">How to Configure a SOAP Receive Handler</span></span>
 <span data-ttu-id="722c3-103">BizTalk Server 管理コンソールを使用して、SOAP 受信ハンドラの設定を構成できます。</span><span class="sxs-lookup"><span data-stu-id="722c3-103">You can configure the SOAP receive handler settings by using the BizTalk Server Administration Console.</span></span> <span data-ttu-id="722c3-104">BizTalk Server 管理コンソールを使用してアダプタを構成する場合、ハンドラ上書きのプロパティを BizTalk エクスプローラで設定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="722c3-104">If you configure the adapter using the BizTalk Server Administration Console, the handler override properties do not need to be set in BizTalk Explorer.</span></span>  

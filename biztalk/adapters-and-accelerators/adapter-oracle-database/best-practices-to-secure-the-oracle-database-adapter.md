@@ -1,11 +1,11 @@
 ---
-title: "ベスト プラクティス、Oracle データベース アダプターをセキュリティで保護する |Microsoft ドキュメント"
-ms.custom: 
+title: ベスト プラクティス、Oracle データベース アダプターをセキュリティで保護する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, best practices for connection between the Oracle Database adapter and the Oracle database
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - user name password credential
 - security, best practices for consuming the Oracle Database adapter with programming solutions
 ms.assetid: 689e8442-91c9-4fe0-a0a0-ce5f5a98ab38
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215730"
 ---
 # <a name="best-practices-to-secure-the-oracle-database-adapter"></a><span data-ttu-id="e8ea0-102">Oracle データベース アダプターをセキュリティで保護するベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="e8ea0-102">Best practices to secure the Oracle Database adapter</span></span>
 <span data-ttu-id="e8ea0-103">このセクションより的確に機密データの保護を使用してまたはを使用するアプリケーションを開発するときに従う必要のあるベスト プラクティスを説明、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="e8ea0-103">This section provides best practices that you should follow to more completely protect sensitive data when you use or develop applications that consume the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)].</span></span>  

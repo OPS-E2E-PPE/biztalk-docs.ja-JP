@@ -1,18 +1,18 @@
 ---
-title: "WCF サービス モデルを使用して Oracle データベースでデータ変更のポーリングに基づいたメッセージを受信 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して Oracle データベースでデータ変更のポーリングに基づいたメッセージを受信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, receiving polling-based messages
 - how to, receive polling-based message
 - polling-based messages, receiving by using the WCF service model
 ms.assetid: 0324e8bf-d9d1-46f5-b896-b9fc8e61d514
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22217226"
 ---
 # <a name="receive-polling-based-data-changed-messages-in-oracle-database-using-the-wcf-service-model"></a><span data-ttu-id="c05de-102">WCF サービス モデルを使用して Oracle データベースでデータ変更のポーリングに基づいたメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="c05de-102">Receive Polling-based Data-changed Messages in Oracle Database using the WCF Service Model</span></span>
 <span data-ttu-id="c05de-103">構成することができます、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]ポーリング ベースのデータを受信するには、Oracle のテーブルまたはビューに対してメッセージを変更します。</span><span class="sxs-lookup"><span data-stu-id="c05de-103">You can configure the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] to receive polling-based data changed messages against an Oracle table or view.</span></span> <span data-ttu-id="c05de-104">メッセージを受信するデータが変更されて、アダプターは、Oracle のテーブルまたはビューにオプションの PL/SQL コード ブロックを続けるに対して SQL クエリを定期的に実行します。</span><span class="sxs-lookup"><span data-stu-id="c05de-104">To receive data-changed messages, the adapter periodically executes a SQL query against an Oracle table or view followed by an optional PL/SQL code block.</span></span> <span data-ttu-id="c05de-105">SQL クエリの結果では返されます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]受信 POLLINGSTMT 操作で設定厳密に型指定された結果としてアプリケーションにします。</span><span class="sxs-lookup"><span data-stu-id="c05de-105">The results of the SQL query are then returned by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to your application as a strongly-typed result set in an inbound POLLINGSTMT operation.</span></span> <span data-ttu-id="c05de-106">使用してデータベースを構成し、Oracle のポーリングを実行するためのメカニズムの詳細については、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[Oracle データベース アダプターのデータ変更のポーリングに基づいたメッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="c05de-106">For more information about the mechanism used to configure and perform polling on an Oracle database using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], see [Receive polling-based data-changed messages in Oracle Database adapter](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md).</span></span> <span data-ttu-id="c05de-107">続行する前に、このトピックを読むことを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="c05de-107">We strongly recommended that you read this topic before proceeding.</span></span>  

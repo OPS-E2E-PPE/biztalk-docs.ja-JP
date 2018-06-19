@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite のバインド プロパティの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite のバインド プロパティの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cfdca8c8-4434-4a9f-8e2a-970988c2f685
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217546"
 ---
 # <a name="configure-the-binding-properties-for-oracle-e-business-suite"></a><span data-ttu-id="cd721-102">Oracle E-business Suite のバインド プロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="cd721-102">Configure the binding properties for Oracle E-Business Suite</span></span>
 <span data-ttu-id="cd721-103">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]動作特性を制御できるようにするいくつかのバインドのプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="cd721-103">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]surfaces several binding properties that enable you to control some of its behavioral characteristics.</span></span> <span data-ttu-id="cd721-104">このセクションで説明からのバインドのプロパティを設定する方法について[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]との間、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="cd721-104">This section provides information about setting the binding properties from [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] and from the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="cd721-105">[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、特定の操作のスキーマを生成するときに、バインドのプロパティを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd721-105">From [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], you must specify the binding properties while generating schema for specific operations.</span></span> <span data-ttu-id="cd721-106">[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]送信の一部としてのバインドのプロパティを指定または Oracle E-business Suite からメッセージを送受信するためのポートを受信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd721-106">From [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you must specify the binding properties as part of the send or receive port for sending or receiving messages from Oracle E-Business Suite.</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="cd721-121">**アダプターの構成**ダイアログ ボックスで、をクリックして、**バインド プロパティ**タブをクリックし、別のバインディング プロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="cd721-121">In the **Configure Adapter** dialog box, click the **Binding Properties** tab, and then specify the different binding properties.</span></span>  
   
-6.  <span data-ttu-id="cd721-122">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd721-122">Click **OK**.</span></span>  
+6.  <span data-ttu-id="cd721-122">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd721-122">Click **OK**.</span></span>  
   
 #### <a name="to-specify-binding-properties-using-add-adapter-metadata-wizard"></a><span data-ttu-id="cd721-123">アダプター メタデータの追加ウィザードを使用してバインド プロパティを指定するには</span><span class="sxs-lookup"><span data-stu-id="cd721-123">To specify binding properties using Add Adapter Metadata Wizard</span></span>  
   
@@ -56,14 +57,14 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="cd721-128">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="cd721-128">**Categories**</span></span>|<span data-ttu-id="cd721-129">をクリックして**アダプターを追加**です。</span><span class="sxs-lookup"><span data-stu-id="cd721-129">Click **Add Adapter**.</span></span>|  
     |<span data-ttu-id="cd721-130">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="cd721-130">**Templates**</span></span>|<span data-ttu-id="cd721-131">をクリックして**アダプター メタデータの追加**です。</span><span class="sxs-lookup"><span data-stu-id="cd721-131">Click **Add Adapter Metadata**.</span></span>|  
   
-3.  <span data-ttu-id="cd721-132">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd721-132">Click **Add**.</span></span> <span data-ttu-id="cd721-133">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="cd721-133">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
+3.  <span data-ttu-id="cd721-132">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd721-132">Click **Add**.</span></span> <span data-ttu-id="cd721-133">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="cd721-133">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
   
 4.  <span data-ttu-id="cd721-134">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] **Wcf-oracleebs**です。</span><span class="sxs-lookup"><span data-stu-id="cd721-134">In the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)], select **WCF-OracleEBS**.</span></span> <span data-ttu-id="cd721-135">BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="cd721-135">Select the computer on which BizTalk Server is installed and the name of the BizTalk database.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="cd721-136">BizTalk で構成された Wcf-oracleebs ポートがある場合は、ポートの一覧から、ポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="cd721-136">If you already have a WCF-OracleEBS port configured in BizTalk, select the port from the Port list.</span></span>  
   
-5.  <span data-ttu-id="cd721-137">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd721-137">Click **Next**.</span></span>  
+5.  <span data-ttu-id="cd721-137">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd721-137">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="cd721-138">**アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**一覧で、選択**oracleEBSBinding**、クリックして**構成**.</span><span class="sxs-lookup"><span data-stu-id="cd721-138">In the **Consume Adapter Service** dialog box, from the **Select a binding** list, select **oracleEBSBinding**, and then click **Configure**.</span></span>  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="cd721-141">既存の選択した場合は、Wcf-oracleebs 送信ポートをバインドのプロパティを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd721-141">If you selected an existing WCF-OracleEBS send port, you need not specify the binding properties.</span></span> <span data-ttu-id="cd721-142">バインドのプロパティは、送信ポートの構成から取得されます。</span><span class="sxs-lookup"><span data-stu-id="cd721-142">The binding properties are picked from the send port configuration.</span></span> <span data-ttu-id="cd721-143">ただし、存在する場合、デザイン時に、必要なバインドのプロパティを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="cd721-143">However, you may choose to specify the binding properties that are required at design-time, if any.</span></span> <span data-ttu-id="cd721-144">このような場合は、バインドのプロパティの新しい値は、メタデータの生成中のデザイン時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="cd721-144">In such a case, the new values for binding properties will be used at design-time while generating the metadata.</span></span> <span data-ttu-id="cd721-145">ただし、実行時に、バインドの送信ポートの構成のプロパティの指定値適用されます。</span><span class="sxs-lookup"><span data-stu-id="cd721-145">However, at run-time the values specified for binding properties in the send port configuration will be applicable.</span></span>  
   
-8.  <span data-ttu-id="cd721-146">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd721-146">Click **OK**.</span></span>  
+8.  <span data-ttu-id="cd721-146">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd721-146">Click **OK**.</span></span>  
   
 ## <a name="specifying-binding-properties-from-the-biztalk-server-administration-console"></a><span data-ttu-id="cd721-147">BizTalk Server 管理コンソールからバインドのプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="cd721-147">Specifying Binding Properties from the BizTalk Server Administration Console</span></span>  
  <span data-ttu-id="cd721-148">[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、Wcf-custom または Wcf-oracleebs ポートの構成の一部としてのバインドのプロパティを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd721-148">From the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you must specify the binding properties as part of the WCF-Custom or WCF-OracleEBS port configuration.</span></span>  

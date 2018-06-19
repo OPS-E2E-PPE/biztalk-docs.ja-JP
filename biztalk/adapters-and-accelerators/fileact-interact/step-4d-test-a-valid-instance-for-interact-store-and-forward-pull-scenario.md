@@ -1,14 +1,14 @@
 ---
-title: "手順 4 D: InterAct ストア アンド フォワード (プル) シナリオの有効なインスタンスをテスト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4 D: InterAct ストア アンド フォワード (プル) シナリオの有効なインスタンスをテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c2933d0-bbe3-4486-832e-5009b2d760ac
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223946"
 ---
 # <a name="step-4d-test-a-valid-instance-for-the-interact-store-and-forward-pull-scenario"></a><span data-ttu-id="40b16-102">手順 4 D: InterAct ストア アンド フォワード (プル) シナリオの有効なインスタンスをテストします。</span><span class="sxs-lookup"><span data-stu-id="40b16-102">Step 4D: Test a Valid Instance for the InterAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="40b16-103">この手順を開始する前に行う必要があります[手順 4 C: InterAct ストア アンド フォワード (プル) シナリオのテスト インスタンスを作成する](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-interact-store-and-forward-pull-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="40b16-103">Before you begin this step, you must complete [Step 4C: Create a Test Instance for the InterAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-interact-store-and-forward-pull-scenario.md).</span></span>  

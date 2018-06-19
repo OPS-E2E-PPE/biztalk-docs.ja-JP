@@ -1,14 +1,14 @@
 ---
-title: "For Oracle E-business Suite 接続 URI の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: For Oracle E-business Suite 接続 URI の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2bb02b4-4ad6-4b07-b48a-8f9a47967ffc
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219242"
 ---
 # <a name="configure-the-connection-uri-for-oracle-e-business-suite"></a><span data-ttu-id="2519b-102">For Oracle E-business Suite 接続 URI の構成します。</span><span class="sxs-lookup"><span data-stu-id="2519b-102">Configure the Connection URI for Oracle E-Business Suite</span></span>
 <span data-ttu-id="2519b-103">接続 URI は、Oracle E-business Suite への接続に必要なパラメーターを含む接続文字列です。</span><span class="sxs-lookup"><span data-stu-id="2519b-103">A connection URI is a connection string that contains parameters required to connect to Oracle E-Business Suite.</span></span> <span data-ttu-id="2519b-104">使用しているときに、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]で[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]メタデータを生成する Oracle E-business Suite への接続に URI を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2519b-104">While using the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] or [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], you must specify the URI to connect to Oracle E-Business Suite to generate the metadata.</span></span> <span data-ttu-id="2519b-105">使用して、オーケストレーションの構成中に、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、操作を実行する Oracle E-business Suite への接続に URI を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2519b-105">While configuring an orchestration using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you must specify the URI to connect to Oracle E-Business Suite to perform operations.</span></span>  
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="2519b-134">をクリックして、**バインド プロパティ**タブをクリックし、バインディングの値を指定、存在する場合、スキーマを生成する前に必要とします。</span><span class="sxs-lookup"><span data-stu-id="2519b-134">Click the **Binding Properties** tab, and specify the binding values, if any, which are required before generating the schema.</span></span> <span data-ttu-id="2519b-135">バインドのプロパティの詳細については、次を参照してください。 [BizTalk Adapter for Oracle E-business Suite バインド プロパティ読む](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="2519b-135">For more information about binding properties, see [Read about the BizTalk Adapter for Oracle E-Business Suite Binding Properties](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md).</span></span>  
   
-8.  <span data-ttu-id="2519b-136">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2519b-136">Click **OK**.</span></span>  
+8.  <span data-ttu-id="2519b-136">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2519b-136">Click **OK**.</span></span>  
   
 #### <a name="to-specify-the-connection-uri-using-add-adapter-metadata-wizard"></a><span data-ttu-id="2519b-137">アダプター メタデータの追加ウィザードを使用して、URI の接続を指定するには</span><span class="sxs-lookup"><span data-stu-id="2519b-137">To specify the connection URI using Add Adapter Metadata Wizard</span></span>  
   
@@ -65,14 +66,14 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="2519b-142">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="2519b-142">**Categories**</span></span>|<span data-ttu-id="2519b-143">をクリックして**アダプターを追加**です。</span><span class="sxs-lookup"><span data-stu-id="2519b-143">Click **Add Adapter**.</span></span>|  
     |<span data-ttu-id="2519b-144">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="2519b-144">**Templates**</span></span>|<span data-ttu-id="2519b-145">をクリックして**アダプター メタデータの追加**です。</span><span class="sxs-lookup"><span data-stu-id="2519b-145">Click **Add Adapter Metadata**.</span></span>|  
   
-3.  <span data-ttu-id="2519b-146">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2519b-146">Click **Add**.</span></span> <span data-ttu-id="2519b-147">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="2519b-147">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
+3.  <span data-ttu-id="2519b-146">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2519b-146">Click **Add**.</span></span> <span data-ttu-id="2519b-147">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="2519b-147">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
   
 4.  <span data-ttu-id="2519b-148">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] **Wcf-oracleebs**です。</span><span class="sxs-lookup"><span data-stu-id="2519b-148">In the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)], select **WCF-OracleEBS**.</span></span> <span data-ttu-id="2519b-149">BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="2519b-149">Select the computer on which BizTalk Server is installed and the name of the BizTalk database.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="2519b-150">BizTalk で構成された Wcf-oracleebs ポートがある場合は、ポートの一覧から、ポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="2519b-150">If you already have a WCF-OracleEBS port configured in BizTalk, select the port from the Port list.</span></span>  
   
-5.  <span data-ttu-id="2519b-151">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2519b-151">Click **Next**.</span></span>  
+5.  <span data-ttu-id="2519b-151">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2519b-151">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="2519b-152">**アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**一覧で、選択**oracleEBSBinding**、クリックして**構成**.</span><span class="sxs-lookup"><span data-stu-id="2519b-152">In the **Consume Adapter Service** dialog box, from the **Select a binding** list, select **oracleEBSBinding**, and then click **Configure**.</span></span>  
   
@@ -92,7 +93,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="2519b-170">既存の選択した場合は、Wcf-oracleebs 送信ポートをバインドのプロパティを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2519b-170">If you selected an existing WCF-OracleEBS send port, you need not specify the binding properties.</span></span> <span data-ttu-id="2519b-171">バインドのプロパティは、送信ポートの構成から取得されます。</span><span class="sxs-lookup"><span data-stu-id="2519b-171">The binding properties are picked from the send port configuration.</span></span> <span data-ttu-id="2519b-172">ただし、存在する場合、デザイン時に、必要なバインドのプロパティを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="2519b-172">However, you may choose to specify the binding properties that are required at design-time, if any.</span></span> <span data-ttu-id="2519b-173">このような場合、メタデータの生成中にバインドのプロパティの新しい値をデザイン時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="2519b-173">In such case, the new values for binding properties will be used at design-time while generating the metadata.</span></span> <span data-ttu-id="2519b-174">ただし、実行時に、バインドの送信ポートの構成のプロパティの指定値適用されます。</span><span class="sxs-lookup"><span data-stu-id="2519b-174">However, at run-time the values specified for binding properties in the send port configuration will be applicable.</span></span>  
   
-10. <span data-ttu-id="2519b-175">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2519b-175">Click **OK**.</span></span>  
+10. <span data-ttu-id="2519b-175">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2519b-175">Click **OK**.</span></span>  
   
 ## <a name="specifying-the-connection-uri-from-the-biztalk-server-administration-console"></a><span data-ttu-id="2519b-176">接続を BizTalk Server 管理コンソールから URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="2519b-176">Specifying the Connection URI from the BizTalk Server Administration Console</span></span>  
  <span data-ttu-id="2519b-177">[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、Wcf-custom または Wcf-oracleebs ポートの構成の一部として、接続 URI を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2519b-177">From the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you must specify the connection URI as part of the WCF-Custom or WCF-OracleEBS port configuration.</span></span>  
@@ -110,7 +111,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="2519b-184">**Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。</span><span class="sxs-lookup"><span data-stu-id="2519b-184">In the **WCF-Custom Transport Properties** dialog box, click the **General** tab.</span></span>  
   
-5.  <span data-ttu-id="2519b-185">**アドレス (URI)**テキスト ボックスで、接続の Oracle E-business Suite への接続に URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="2519b-185">In the **Address (URI)** text box, specify the connection URI to connect to Oracle E-Business Suite.</span></span> <span data-ttu-id="2519b-186">詳細については、接続 URI の[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]を参照してください[for Oracle E-business Suite 接続 URI を構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-connection-uri-for-oracle-e-business-suite.md)です。</span><span class="sxs-lookup"><span data-stu-id="2519b-186">For more information about the connection URI for the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], see [Configure the Connection URI for Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-connection-uri-for-oracle-e-business-suite.md).</span></span>  
+5.  <span data-ttu-id="2519b-185">**アドレス (URI)** テキスト ボックスで、接続の Oracle E-business Suite への接続に URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="2519b-185">In the **Address (URI)** text box, specify the connection URI to connect to Oracle E-Business Suite.</span></span> <span data-ttu-id="2519b-186">詳細については、接続 URI の[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]を参照してください[for Oracle E-business Suite 接続 URI を構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-connection-uri-for-oracle-e-business-suite.md)です。</span><span class="sxs-lookup"><span data-stu-id="2519b-186">For more information about the connection URI for the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], see [Configure the Connection URI for Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-connection-uri-for-oracle-e-business-suite.md).</span></span>  
   
 6.  <span data-ttu-id="2519b-187">**Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブです。**バインディングの種類**ドロップダウン リストで、 **oracleEBSBinding**です。</span><span class="sxs-lookup"><span data-stu-id="2519b-187">In the **WCF-Custom Transport Properties** dialog box, click the **Binding** tab. From the **Binding Type** drop-down list, select **oracleEBSBinding**.</span></span>  
   
@@ -140,7 +141,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="2519b-217">選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="2519b-217">Select **Get credentials from affiliate application** option, and specify an affiliate SSO application.</span></span>  
   
-9. <span data-ttu-id="2519b-218">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2519b-218">Click **OK**.</span></span>  
+9. <span data-ttu-id="2519b-218">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2519b-218">Click **OK**.</span></span>  
   
 #### <a name="to-specify-the-connection-uri-for-the-wcf-oracleebs-port"></a><span data-ttu-id="2519b-219">Wcf-oracleebs ポートの接続 URI を指定するには</span><span class="sxs-lookup"><span data-stu-id="2519b-219">To specify the connection URI for the WCF-OracleEBS port</span></span>  
   
@@ -190,7 +191,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="2519b-262">選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="2519b-262">Select **Get credentials from affiliate application** option, and specify an affiliate SSO application.</span></span>  
   
-10. <span data-ttu-id="2519b-263">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2519b-263">Click **OK**.</span></span>  
+10. <span data-ttu-id="2519b-263">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2519b-263">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="2519b-264">参照</span><span class="sxs-lookup"><span data-stu-id="2519b-264">See Also</span></span>  
  <span data-ttu-id="2519b-265">[Oracle E-business Suite アプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-oracle-ebs/building-blocks-to-create-oracle-e-business-suite-applications.md) </span><span class="sxs-lookup"><span data-stu-id="2519b-265">[Building blocks to create Oracle E-Business Suite applications](../../adapters-and-accelerators/adapter-oracle-ebs/building-blocks-to-create-oracle-e-business-suite-applications.md) </span></span>  

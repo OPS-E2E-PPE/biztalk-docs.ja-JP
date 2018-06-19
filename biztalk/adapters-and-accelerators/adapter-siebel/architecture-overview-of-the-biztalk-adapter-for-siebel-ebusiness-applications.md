@@ -1,18 +1,18 @@
 ---
-title: "BizTalk Adapter for Siebel eBusiness Applications のアーキテクチャの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Adapter for Siebel eBusiness Applications のアーキテクチャの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture of Siebel adapter
 - Siebel COM Data Control
 - adapters, architecture
 ms.assetid: b048937f-207b-4c64-8837-7bfeecedfa03
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219066"
 ---
 # <a name="architecture-overview-of-the-biztalk-adapter-for-siebel-ebusiness-applications"></a><span data-ttu-id="46839-102">BizTalk Adapter for Siebel eBusiness Applications のアーキテクチャの概要</span><span class="sxs-lookup"><span data-stu-id="46839-102">Architecture overview of the BizTalk Adapter for Siebel eBusiness Applications</span></span>
 <span data-ttu-id="46839-103">使用するエンド ツー エンド ソリューションのアーキテクチャについて説明、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]も、Siebel システムと内部のアーキテクチャで動作する、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="46839-103">Describes the architecture of end-to-end solutions that use the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] to operate on a Siebel system, and also the internal architecture of the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span>  

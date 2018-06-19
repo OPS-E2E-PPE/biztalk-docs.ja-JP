@@ -1,17 +1,17 @@
 ---
-title: "WCF サービス モデルを使用して Oracle データベース内の大規模なデータ型とテーブルに対する操作を完了 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して Oracle データベース内の大規模なデータ型とテーブルに対する操作を完了 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, performing operations on tables and views
 - how to, invoke the ReadLOB and UpdateLOB operations
 ms.assetid: 5d0e84d3-7ffa-47c7-aaf2-a1007f7a71a2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215610"
 ---
 # <a name="complete-operations-on-tables-with-large-data-types-in-oracle-database-using-the-wcf-service-model"></a><span data-ttu-id="afc47-102">WCF サービス モデルを使用して Oracle データベース内の大規模なデータ型とテーブルに対する操作を完了します。</span><span class="sxs-lookup"><span data-stu-id="afc47-102">Complete operations on tables with large data types in Oracle Database using the WCF service model</span></span>
 <span data-ttu-id="afc47-103">このセクションには、WCF サービス モデルから ReadLOB および UpdateLOB 操作を呼び出す方法に関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="afc47-103">This section contains information about how to invoke the ReadLOB and UpdateLOB operations from the WCF service model.</span></span> <span data-ttu-id="afc47-104">テーブルおよび; LOB 列を含むビューの ReadLOB および UpdateLOB 操作が表示されます。Oracle ラージ オブジェクト (LOB) データの格納に使用される列です。</span><span class="sxs-lookup"><span data-stu-id="afc47-104">The ReadLOB and UpdateLOB operations are surfaced for tables and views that contain LOB columns; that is columns that are used to store Oracle large object (LOB) data.</span></span> <span data-ttu-id="afc47-105">サポートされる Oracle LOB データ型の概要については、 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] 、ReadLOB や UpdateLOB 操作の参照と[テーブルおよびビューを含む LOB データをする Oracle データベースで操作を](../../adapters-and-accelerators/adapter-oracle-database/operations-on-tables-and-views-that-contain-lob-data-in-oracle-database.md)です。</span><span class="sxs-lookup"><span data-stu-id="afc47-105">For an overview of the Oracle LOB data types supported by the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] and of the ReadLOB and UpdateLOB operations, see [Operations on Tables and Views That Contain LOB Data in Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/operations-on-tables-and-views-that-contain-lob-data-in-oracle-database.md).</span></span>  

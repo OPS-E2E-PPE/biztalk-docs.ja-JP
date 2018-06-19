@@ -1,14 +1,14 @@
 ---
-title: "ボトルネックを回避するためのガイドライン |Microsoft ドキュメント"
-ms.custom: 
+title: ボトルネックを回避するためのガイドライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 640ab399-b22d-4f71-b41d-ea8d778e064a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246514"
 ---
 # <a name="guidelines-for-avoiding-bottlenecks"></a><span data-ttu-id="97b60-102">ボトルネックを回避するためのガイドライン</span><span class="sxs-lookup"><span data-stu-id="97b60-102">Guidelines for Avoiding Bottlenecks</span></span>
 <span data-ttu-id="97b60-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の既定の設定は、多くのハードウェアやソフトウェアの構成に最適なパフォーマンスを提供しますが、シナリオによっては、設定や展開構成を変更すると効果的な場合があります。</span><span class="sxs-lookup"><span data-stu-id="97b60-103">While the default settings in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provide optimal performance for many hardware and software configurations, in some scenarios it may be beneficial to modify the settings or deployment configuration.</span></span> <span data-ttu-id="97b60-104">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成するときは、次のパフォーマンス ガイドラインを考慮してください。</span><span class="sxs-lookup"><span data-stu-id="97b60-104">When configuring [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], consider the following performance guidelines:</span></span>  

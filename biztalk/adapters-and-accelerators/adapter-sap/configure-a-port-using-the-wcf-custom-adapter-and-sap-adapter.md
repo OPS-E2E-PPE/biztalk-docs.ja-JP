@@ -1,15 +1,15 @@
 ---
-title: "Biztalk WCF カスタム アダプターと SAP アダプターを使用してポートを構成する |Microsoft ドキュメント"
-description: "MySAP アダプターの BizTalk アダプター パック (BAP) を使用して SAP からのメッセージの送受信に WCF カスタム ポートを作成します。"
-ms.custom: 
+title: Biztalk WCF カスタム アダプターと SAP アダプターを使用してポートを構成する |Microsoft ドキュメント
+description: MySAP アダプターの BizTalk アダプター パック (BAP) を使用して SAP からのメッセージの送受信に WCF カスタム ポートを作成します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e3962456-e9ac-4575-8266-b35e892dd428
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217738"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-sap-adapter"></a><span data-ttu-id="e0919-103">Wcf-custom アダプターおよび SAP アダプターを使用してポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="e0919-103">Configure a port using the WCF-custom adapter and SAP adapter</span></span>
 <span data-ttu-id="e0919-104">このトピックでは、Wcf-custom 送信ポートと受信ポートを使用して SAP システムの送信および受信の操作を実行する方法の説明、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="e0919-104">This topic provides instructions on how to configure WCF-Custom send and receive ports to perform outbound and inbound operations on SAP system using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="e0919-116">**Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="e0919-116">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="e0919-117">クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、SAP システムの接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="e0919-117">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for the SAP system.</span></span> <span data-ttu-id="e0919-118">接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="e0919-118">For more information about the connection URI, see [Create the SAP system connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="e0919-117">クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、SAP システムの接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="e0919-117">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for the SAP system.</span></span> <span data-ttu-id="e0919-118">接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="e0919-118">For more information about the connection URI, see [Create the SAP system connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="e0919-119">**全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。</span><span class="sxs-lookup"><span data-stu-id="e0919-119">On the **General** tab, in the **Action** text box, type the action for the operation.</span></span> <span data-ttu-id="e0919-120">参照してください[メッセージおよびメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)各操作のアクションの一覧についてはします。</span><span class="sxs-lookup"><span data-stu-id="e0919-120">See [Messages and message schemas](messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md) for a list of actions for each operation.</span></span> <span data-ttu-id="e0919-121">たとえばに、RFC_CUSTOMER_GET を呼び出すアクションは次のようになります。</span><span class="sxs-lookup"><span data-stu-id="e0919-121">For example, the action to invoke the RFC_CUSTOMER_GET would be:</span></span>  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="e0919-135">**受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。</span><span class="sxs-lookup"><span data-stu-id="e0919-135">From the **Receive pipeline** drop-down list, select the pipeline corresponding to XMLReceive.</span></span>  
   
-11. <span data-ttu-id="e0919-136">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e0919-136">Click **OK**.</span></span>  
+11. <span data-ttu-id="e0919-136">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e0919-136">Click **OK**.</span></span>  
   
 ## <a name="deploy-adapters-to-receive-messages-from-sap"></a><span data-ttu-id="e0919-137">SAP からメッセージを受信アダプターを展開します。</span><span class="sxs-lookup"><span data-stu-id="e0919-137">Deploy adapters to receive messages from SAP</span></span>
 <span data-ttu-id="e0919-138">Wcf-custom を構成する次の手順を使用して SAP システムからメッセージを受信するためのポートの受信完了、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="e0919-138">Complete the following steps to configure a WCF-Custom receive port for receiving messages from SAP system using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
@@ -97,7 +98,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="e0919-149">**Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="e0919-149">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="e0919-150">クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、SAP システムの接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="e0919-150">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for the SAP system.</span></span> <span data-ttu-id="e0919-151">接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="e0919-151">For more information about the connection URI, see [Create the SAP system connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="e0919-150">クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、SAP システムの接続 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="e0919-150">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for the SAP system.</span></span> <span data-ttu-id="e0919-151">接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="e0919-151">For more information about the connection URI, see [Create the SAP system connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="e0919-152">クリックして、**バインド** タブとの間、**バインディングの種類**ドロップダウン リストで、 **sapBinding**です。</span><span class="sxs-lookup"><span data-stu-id="e0919-152">Click the **Binding** tab, and from the **Binding Type** drop-down list, select **sapBinding**.</span></span> <span data-ttu-id="e0919-153">バインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="e0919-153">For more information about binding properties, see [Read about BizTalk Adapter for mySAP Business Suite binding properties](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md).</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "関数およびストアド Procedures1 に対する操作 |Microsoft ドキュメント"
-ms.custom: 
+title: 関数およびストアド Procedures1 に対する操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1e6bdaa7-ed3c-43bc-bed5-70fe43f9c2d1
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216354"
 ---
 # <a name="operations-on-functions-and-stored-procedures"></a><span data-ttu-id="99848-102">関数およびストアド プロシージャでの操作</span><span class="sxs-lookup"><span data-stu-id="99848-102">Operations on Functions and Stored Procedures</span></span>
 <span data-ttu-id="99848-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] Oracle 関数およびプロシージャをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="99848-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] supports Oracle functions and procedures.</span></span>

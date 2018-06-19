@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214626"
 ---
 # <a name="prerequisites-to-create-oracle-database-applications"></a><span data-ttu-id="d4916-102">Oracle データベース アプリケーションを作成するための必要条件</span><span class="sxs-lookup"><span data-stu-id="d4916-102">Prerequisites to create Oracle Database applications</span></span>
 <span data-ttu-id="d4916-103">使用して BizTalk アプリケーションを開発する前に行う必要があります、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="d4916-103">What you must do before developing BizTalk applications using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="d4916-104">セクションには、BizTalk アプリケーションの開発に使用される一部の BizTalk Server ツールも表示されます。</span><span class="sxs-lookup"><span data-stu-id="d4916-104">The section also lists some BizTalk Server tools that are used to develop BizTalk applications.</span></span>  

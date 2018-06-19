@@ -1,17 +1,17 @@
 ---
-title: "どのような操作は、Oracle データベース アダプターによってサポートされて |Microsoft ドキュメント"
-ms.custom: 
+title: どのような操作は、Oracle データベース アダプターによってサポートされて |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP
 - operations, performing
 ms.assetid: d78dbeb8-9dab-4a71-982e-f7ada51472e8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215586"
 ---
 # <a name="what-operations-are-supported-by-the-oracle-database-adapter"></a><span data-ttu-id="6f442-102">どのような操作、Oracle データベース アダプターによってサポートされます。</span><span class="sxs-lookup"><span data-stu-id="6f442-102">What operations are supported by the Oracle Database adapter</span></span>
 <span data-ttu-id="6f442-103">アダプターのクライアントは、BizTalk プロジェクトを作成することで、WCF チャネル モデルを使用して、または WCF サービス モデルを使用して Oracle データベースで操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="6f442-103">Adapter clients can perform operations on the Oracle database by creating BizTalk projects, by using the WCF channel model, or by using the WCF service model.</span></span> <span data-ttu-id="6f442-104">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]アプリケーションがそれで呼び出すことができ、アプリケーションで呼び出すことができます、さらに、操作を公開します。</span><span class="sxs-lookup"><span data-stu-id="6f442-104">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] exposes operations that applications can invoke on it and that it can, in turn, invoke on applications.</span></span> <span data-ttu-id="6f442-105">これらの操作がチャネル経由で SOAP メッセージを送信することによって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="6f442-105">These operations are invoked by sending SOAP messages over a channel.</span></span> <span data-ttu-id="6f442-106">応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。</span><span class="sxs-lookup"><span data-stu-id="6f442-106">If a response is required, it is returned in a SOAP message over the same channel.</span></span> <span data-ttu-id="6f442-107">メッセージの構造および各操作に関連付けられている SOAP アクションについては、次を参照してください。[メッセージと BizTalk Adapter 用 Oracle Database のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)です。</span><span class="sxs-lookup"><span data-stu-id="6f442-107">For information about the message structure and the SOAP action associated with each operation, see [Messages and Message Schemas for BizTalk Adapter for Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md).</span></span>  

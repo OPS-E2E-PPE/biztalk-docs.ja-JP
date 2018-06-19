@@ -1,14 +1,14 @@
 ---
-title: "直接パスワード同期を使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 直接パスワード同期を使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d1334c2f-2020-46ea-a98c-f7688813e38c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255946"
 ---
 # <a name="how-to-use-direct-password-sync"></a><span data-ttu-id="1f000-102">直接パスワード同期を使用する方法</span><span class="sxs-lookup"><span data-stu-id="1f000-102">How to Use Direct Password Sync</span></span>
 <span data-ttu-id="1f000-103">このバージョンのエンタープライズ シングル サインオンには、Windows から実行できる直接パスワード同期機能が実装されています。</span><span class="sxs-lookup"><span data-stu-id="1f000-103">This version of Enterprise Single Sign-On includes the Direct Password Sync from Windows feature.</span></span> <span data-ttu-id="1f000-104">この機能により、パスワード同期アダプタをバイパスし、SSO データベースのパスワードの更新を Windows から直接実行できます。</span><span class="sxs-lookup"><span data-stu-id="1f000-104">This enables you to bypass a Password Sync Adapter and update the password in the SSO Database directly from Windows.</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="1f000-113">適切なを右クリックして**関連アプリケーション**です。</span><span class="sxs-lookup"><span data-stu-id="1f000-113">Right-click the appropriate **Affiliate Application**.</span></span>  
   
-4.  <span data-ttu-id="1f000-114">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1f000-114">Click **Properties**.</span></span>  
+4.  <span data-ttu-id="1f000-114">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1f000-114">Click **Properties**.</span></span>  
   
      <span data-ttu-id="1f000-115">**関連アプリケーションのプロパティ** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1f000-115">The **Affiliate Applications Properties** dialog box appears.</span></span>  
   
@@ -43,4 +44,4 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="1f000-117">選択、 **Windows から直接パスワード同期**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="1f000-117">Select the **Direct Password Sync from Windows** check box.</span></span>  
   
-7.  <span data-ttu-id="1f000-118">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1f000-118">Click **OK**.</span></span>
+7.  <span data-ttu-id="1f000-118">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1f000-118">Click **OK**.</span></span>

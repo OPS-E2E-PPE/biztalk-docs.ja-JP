@@ -1,11 +1,11 @@
 ---
-title: "パイプラインを展開する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: パイプラインを展開する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IReceiveLocation interface
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - Validate method
 - ISendPort interface
 ms.assetid: 7a56c753-a0d4-48ed-a61d-e454bc9cd507
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249602"
 ---
 # <a name="how-to-deploy-pipelines"></a><span data-ttu-id="6dbf1-102">パイプラインを展開する方法</span><span class="sxs-lookup"><span data-stu-id="6dbf1-102">How to Deploy Pipelines</span></span>
 <span data-ttu-id="6dbf1-103">ソリューションのビルドおよび展開プロセスの一部として、パイプラインのコンパイルと展開が行われます。</span><span class="sxs-lookup"><span data-stu-id="6dbf1-103">Pipelines are compiled and deployed as part of the solution build and deploy process.</span></span> <span data-ttu-id="6dbf1-104">コンパイラの呼び出し、**検証**各コンポーネントは、これにより、コンポーネントを返すメソッドに対してコンパイル エラーは構成済み情報。</span><span class="sxs-lookup"><span data-stu-id="6dbf1-104">The compiler calls the **Validate** method on each component, allowing the components to return compile errors on the configured information.</span></span> <span data-ttu-id="6dbf1-105">ビルドが終了すると、パイプラインはソリューションの展開時に、残りのソリューションと同じアセンブリに展開されます。</span><span class="sxs-lookup"><span data-stu-id="6dbf1-105">After building, the pipeline is deployed in the same assembly with the rest of the solution when the solution is deployed.</span></span>  

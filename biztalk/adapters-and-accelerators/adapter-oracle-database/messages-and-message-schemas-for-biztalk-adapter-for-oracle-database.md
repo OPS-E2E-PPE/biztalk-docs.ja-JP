@@ -1,15 +1,15 @@
 ---
-title: "メッセージと BizTalk Adapter 用 Oracle Database のメッセージ スキーマを |Microsoft ドキュメント"
-description: "BizTalk server、Oracle データベース アダプターで使用されるメッセージとデータの型の XML 構造"
-ms.custom: 
+title: メッセージと BizTalk Adapter 用 Oracle Database のメッセージ スキーマを |Microsoft ドキュメント
+description: BizTalk server、Oracle データベース アダプターで使用されるメッセージとデータの型の XML 構造
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fee0a531-b1e6-4b99-bb79-45368c401395
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214306"
 ---
 # <a name="messages-and-message-schemas-for-biztalk-adapter-for-oracle-database"></a><span data-ttu-id="2b1f9-103">メッセージと BizTalk Adapter 用 Oracle Database のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="2b1f9-103">Messages and Message Schemas for BizTalk Adapter for Oracle Database</span></span>
 

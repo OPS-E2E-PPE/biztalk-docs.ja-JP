@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207906"
 ---
 # <a name="step-4-create-the-receive-port-for-accepting-adt-query-messages"></a><span data-ttu-id="6945b-102">手順 4: 作成、ADT クエリ メッセージを受け入れるための受信ポート</span><span class="sxs-lookup"><span data-stu-id="6945b-102">Step 4: Create the Receive Port for Accepting ADT Query Messages</span></span>
 <span data-ttu-id="6945b-103">受付、放電、によって送信されるクエリ メッセージを受信する場所を指定する受信ポートを作成して転送 (ADT) のシステムです。</span><span class="sxs-lookup"><span data-stu-id="6945b-103">You create a receive port to specify the location for incoming query messages sent by the Admissions, Discharge, and Transfer (ADT) system.</span></span> <span data-ttu-id="6945b-104">次の手順を使用してクエリを受け入れるための受信ポートを作成 (クエリ ^ Q01 メッセージ) 最小下位層プロトコル (MLLP) アダプターを使用して、ADT システムからです。</span><span class="sxs-lookup"><span data-stu-id="6945b-104">Use the following procedure to create the receive port for accepting queries (QRY^Q01 messages) from the ADT system using the Minimal Lower Layer Protocol (MLLP) adapter.</span></span>  
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/20/2017
 
 7. <span data-ttu-id="6945b-112">**トランスポート**セクションで、**型**、し、 **MLLP**ドロップダウン リストからです。</span><span class="sxs-lookup"><span data-stu-id="6945b-112">In the **Transport** section, select **Type**, and then select **MLLP** from the drop-down list.</span></span>  
   
-8. <span data-ttu-id="6945b-113">**[構成]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6945b-113">Select **Configure**.</span></span> <span data-ttu-id="6945b-114">**MLLP トランスポートのプロパティ**、次を構成し、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="6945b-114">In **MLLP Transport Properties**, configure the following, and then select **OK**.</span></span>  
+8. <span data-ttu-id="6945b-113">**[構成]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6945b-113">Select **Configure**.</span></span> <span data-ttu-id="6945b-114">**MLLP トランスポートのプロパティ**、次を構成し、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="6945b-114">In **MLLP Transport Properties**, configure the following, and then select **OK**.</span></span>  
   
     |<span data-ttu-id="6945b-115">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6945b-115">Use this</span></span>|<span data-ttu-id="6945b-116">目的</span><span class="sxs-lookup"><span data-stu-id="6945b-116">To do this</span></span>|  
     |---|---|  

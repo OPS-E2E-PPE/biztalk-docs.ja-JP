@@ -1,11 +1,11 @@
 ---
-title: "スケール アウト データベース |Microsoft ドキュメント"
-ms.custom: 
+title: スケール アウト データベース |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, databases [BAM]
@@ -34,7 +34,7 @@ helpviewer_keywords:
 - Analysis database [BAM], clustering
 - DTS packages, scheduling
 ms.assetid: e02edc0d-1c51-4b97-be04-0feb787089ac
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -43,6 +43,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272082"
 ---
 # <a name="scaled-out-databases"></a><span data-ttu-id="1a56f-102">スケールアウト データベース</span><span class="sxs-lookup"><span data-stu-id="1a56f-102">Scaled-Out Databases</span></span>
 <span data-ttu-id="1a56f-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースの可用性を高めるには、SQL Server を Windows クラスターで実行するコンピューターを 2 台構成します。</span><span class="sxs-lookup"><span data-stu-id="1a56f-103">To provide high availability for the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases, configure two computers that are running SQL Server in a Windows cluster.</span></span> <span data-ttu-id="1a56f-104">これらのコンピューターは、アクティブ/アクティブ構成またはアクティブ/パッシブ構成で稼働することにより、冗長性を確保できます。また、共有ドライブ (RAID 1+0 SCSI ディスク アレイなど) やストレージ エリア ネットワーク (SAN) にデータを保存できます。</span><span class="sxs-lookup"><span data-stu-id="1a56f-104">These computers can run in an active/active or active/passive configuration for redundancy and store data on a shared drive (such as a RAID 1+0 SCSI disk array) or storage area network (SAN).</span></span>  

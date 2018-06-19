@@ -1,17 +1,17 @@
 ---
-title: "Oracle データベース アダプターを使用して BizTalk アプリケーションを開発 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターを使用して BizTalk アプリケーションを開発 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Content-Based Routing (CBR)
 - BizTalk orchestrations, using orchestrations to perform operations
 ms.assetid: 65689c83-4a57-4aad-b0e9-f1bad901a7b9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214298"
 ---
 # <a name="develop-biztalk-applications-using-the-oracle-database-adapter"></a><span data-ttu-id="5d4c6-102">Oracle データベース アダプターを使用して BizTalk アプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="5d4c6-102">Develop BizTalk applications using the Oracle Database adapter</span></span>
 <span data-ttu-id="5d4c6-103">BizTalk アプリケーションの開発で BizTalk プロジェクトを作成する[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]を使用して、 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] XML スキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="5d4c6-103">Developing BizTalk applications involves creating a BizTalk project in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] and using the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to generate XML schema.</span></span> <span data-ttu-id="5d4c6-104">スキーマが生成されると、コンテンツ ベースのルーティング (CBR) を使用するか、生成されたスキーマに準拠するメッセージを送受信する BizTalk オーケストレーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="5d4c6-104">Once you have generated the schema, you can either use Content-Based Routing (CBR) or create BizTalk orchestrations to send and receive messages that conform to the generated schema.</span></span>  

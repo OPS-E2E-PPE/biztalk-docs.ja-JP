@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプタのクライアントの機能 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプタのクライアントの機能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f638154b-0a09-4f89-9c52-2a62fafec7dc
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222714"
 ---
 # <a name="features-for-sql-adapter-clients"></a><span data-ttu-id="9265c-102">SQL アダプタのクライアントの機能</span><span class="sxs-lookup"><span data-stu-id="9265c-102">Features for SQL adapter clients</span></span>
 <span data-ttu-id="9265c-103">トピックで説明されている機能だけでなく[概要の BizTalk Adapter for SQL Server](../../adapters-and-accelerators/adapter-sql/overview-of-biztalk-adapter-for-sql-server.md)では、[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]アダプター クライアント用の便利な次の機能も提供します。</span><span class="sxs-lookup"><span data-stu-id="9265c-103">In addition to the features discussed throughout the topics of [Overview of BizTalk Adapter for SQL Server](../../adapters-and-accelerators/adapter-sql/overview-of-biztalk-adapter-for-sql-server.md), the [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] also provides the following features that are useful for adapter clients:</span></span>  

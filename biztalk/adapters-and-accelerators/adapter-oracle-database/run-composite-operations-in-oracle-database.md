@@ -1,14 +1,14 @@
 ---
-title: "Oracle データベースで複合操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベースで複合操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b877d8e3-2016-40e8-888f-6b768021d6b8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215122"
 ---
 # <a name="run-composite-operations-in-oracle-database"></a><span data-ttu-id="9d353-102">Oracle データベースでの複合操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="9d353-102">Run Composite Operations in Oracle Database</span></span>
 <span data-ttu-id="9d353-103">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]アダプター クライアントが、次の操作、および任意の順序で任意の数を含めることができる複合操作を実行できるようにします。</span><span class="sxs-lookup"><span data-stu-id="9d353-103">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] enables adapter clients to perform composite operations that can include any number of the following operations, and in any order:</span></span>  

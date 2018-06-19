@@ -1,17 +1,17 @@
 ---
-title: "パート 3: 作成バッチ シナリオ |Microsoft ドキュメント"
-ms.custom: 
+title: 'パート 3: 作成バッチ シナリオ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching, creating
 - creating, batching
 ms.assetid: 02247186-5b21-4738-9110-f0ca0304f0fd
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206202"
 ---
 # <a name="part-3-create-batch-scenario"></a><span data-ttu-id="dada7-102">パート 3: 作成するバッチのシナリオ</span><span class="sxs-lookup"><span data-stu-id="dada7-102">Part 3: Create-Batch Scenario</span></span>
 <span data-ttu-id="dada7-103">このシナリオでは、2 つの受信メッセージの受信、してバッチのメッセージに結合して先にバッチを送信します。</span><span class="sxs-lookup"><span data-stu-id="dada7-103">In this part of the scenario, you receive two incoming messages, combine them into a batched message, and send the batch to a destination.</span></span> <span data-ttu-id="dada7-104">BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) ターゲットからソースへのメッセージの生成された 2 つの受信確認を含む、受信確認のバッチを返します。</span><span class="sxs-lookup"><span data-stu-id="dada7-104">BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) returns an acknowledgment batch containing the two acknowledgments generated for the messages from the destination to the source.</span></span> <span data-ttu-id="dada7-105">次の図は、チュートリアルのこの部分のプロセス フローを示しています。</span><span class="sxs-lookup"><span data-stu-id="dada7-105">The following figure shows the process flow of this part of the tutorial.</span></span>  

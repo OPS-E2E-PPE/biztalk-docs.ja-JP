@@ -1,11 +1,11 @@
 ---
-title: "プロファイル管理ユーティリティの追跡を使用して追跡プロファイルを展開する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: プロファイル管理ユーティリティの追跡を使用して追跡プロファイルを展開する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tracking profiles, deploying
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - bttdeploy.exe [BAM]
 - managing [BAM], deploying tracking profiles
 ms.assetid: b3023379-cae1-45fc-a773-2660d3e4abf1
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970120"
 ---
 # <a name="how-to-deploy-tracking-profiles-with-the-tracking-profiles-management-utility"></a><span data-ttu-id="bcca0-102">追跡プロファイル管理ユーティリティを使用して追跡プロファイルを展開する方法</span><span class="sxs-lookup"><span data-stu-id="bcca0-102">How to Deploy Tracking Profiles with the Tracking Profiles Management Utility</span></span>
 <span data-ttu-id="bcca0-103">ビジネス マネージャーは、組織の特定のビジネス プロセスの管理や監視を強化するために、新しい追跡プロファイルの作成や既存のプロファイルの変更を行うようにソリューション開発者に依頼します。</span><span class="sxs-lookup"><span data-stu-id="bcca0-103">A business manager asks a solutions developer to create a new tracking profile or modify an existing one to better manage and monitor a specific business process for your organization.</span></span>  

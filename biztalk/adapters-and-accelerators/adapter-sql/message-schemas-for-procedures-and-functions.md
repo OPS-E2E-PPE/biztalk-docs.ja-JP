@@ -1,14 +1,14 @@
 ---
-title: "メッセージ スキーマのプロシージャおよび関数の |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ スキーマのプロシージャおよび関数の |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4acfb29e-8774-4eb7-ba10-2dcb93d2b41a
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223354"
 ---
 # <a name="message-schemas-for-procedures-and-functions"></a><span data-ttu-id="cf903-102">プロシージャおよび関数のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="cf903-102">Message Schemas for Procedures and Functions</span></span>
 <span data-ttu-id="cf903-103">[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]サーフェス SQL Server データベースのストアド プロシージャおよびスカラーおよびテーブル値関数として操作します。</span><span class="sxs-lookup"><span data-stu-id="cf903-103">The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces SQL Server database stored procedures and scalar and table valued functions as operations.</span></span> <span data-ttu-id="cf903-104">このセクションでは、メッセージの構造とプロシージャと関数の呼び出しに使用する操作について説明します。</span><span class="sxs-lookup"><span data-stu-id="cf903-104">This section describes the message structure and actions used to invoke procedures and functions.</span></span>  

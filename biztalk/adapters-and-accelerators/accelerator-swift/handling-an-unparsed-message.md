@@ -1,17 +1,17 @@
 ---
-title: "未解析のメッセージの処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 未解析のメッセージの処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - unparsed messages
 - messages, unparsed messages
 ms.assetid: c6a67ff3-3295-489f-9d5f-fb35b2bf8b19
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209890"
 ---
 # <a name="handling-an-unparsed-message"></a><span data-ttu-id="624ac-102">未解析のメッセージの処理</span><span class="sxs-lookup"><span data-stu-id="624ac-102">Handling an Unparsed Message</span></span>
 <span data-ttu-id="624ac-103">このセクションでは、未解析のメッセージを処理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="624ac-103">This section describes how to handle an unparsed message.</span></span> <span data-ttu-id="624ac-104">検証に失敗したメッセージとは異なり、メッセージを修復することはできませんを[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]を解析できません。</span><span class="sxs-lookup"><span data-stu-id="624ac-104">Unlike messages that fail validation, you cannot repair a message that [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] cannot parse.</span></span> <span data-ttu-id="624ac-105">Message Repair and New Submission メッセージと、解析エラーの性質が表示され、メッセージを印刷またはローカル ファイルに保存することができます。</span><span class="sxs-lookup"><span data-stu-id="624ac-105">Message Repair and New Submission displays the message and the nature of the parsing error, and enables you to print the message or save it to a local file.</span></span> <span data-ttu-id="624ac-106">解析エラーの特定の性質にメッセージを送信するエンティティ、通知を送信できます。</span><span class="sxs-lookup"><span data-stu-id="624ac-106">You can then alert the entity that sent the message to the specific nature of the parsing failure.</span></span>  

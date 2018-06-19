@@ -1,18 +1,18 @@
 ---
-title: "新しいメッセージ テンプレートの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 新しいメッセージ テンプレートの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, templates
 - templates, creating
 - creating, templates
 ms.assetid: 8c601d2b-b7a5-4ac4-9d98-fd9960038340
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209242"
 ---
 # <a name="creating-a-new-message-template"></a><span data-ttu-id="a1934-102">新しいメッセージ テンプレートの作成</span><span class="sxs-lookup"><span data-stu-id="a1934-102">Creating a New Message Template</span></span>
 <span data-ttu-id="a1934-103">既存のテンプレートから新しいメッセージ テンプレートを作成できます。</span><span class="sxs-lookup"><span data-stu-id="a1934-103">You can create a new message template from an existing template.</span></span> <span data-ttu-id="a1934-104">これにより、作成者が既に一部のデータが入力されている SWIFT の標準形式のコピーなどのカスタムのフォームで新しいメッセージ インスタンスを作成できます。</span><span class="sxs-lookup"><span data-stu-id="a1934-104">This enables a creator to create a new message instance on a custom form, such as a copy of a standard SWIFT form that already has some data entered into it.</span></span> <span data-ttu-id="a1934-105">新しいテンプレートを使用して、作成者は、する必要はありませんすべての空のフォームを使用するときに必要なデータを入力してください。</span><span class="sxs-lookup"><span data-stu-id="a1934-105">Using the new template, the creator does not have to enter all of the data required when using an empty form.</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="a1934-109">Internet Explorer で、http://localhost/sites/bassite で MRSR サイトを開きます。</span><span class="sxs-lookup"><span data-stu-id="a1934-109">In Internet Explorer, open your MRSR site at http://localhost/sites/bassite.</span></span>  
   
-2.  <span data-ttu-id="a1934-110">**[ドキュメント]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a1934-110">Click **Documents**.</span></span>  
+2.  <span data-ttu-id="a1934-110">**[ドキュメント]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a1934-110">Click **Documents**.</span></span>  
   
 3.  <span data-ttu-id="a1934-111">[ドキュメント] ページで、をクリックして、**新しい SWIFT MT メッセージ**ドキュメント ライブラリです。</span><span class="sxs-lookup"><span data-stu-id="a1934-111">On the Documents page, click the **New SWIFT MT Messages** document library.</span></span>  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="a1934-116">クリックして、ことを示すポップアップ フォームに検証エラーが含まれている、**はい**です。</span><span class="sxs-lookup"><span data-stu-id="a1934-116">In the popup indicating that the form contains validation errors, click **Yes**.</span></span>  
   
-9. <span data-ttu-id="a1934-117">名前を付けて保存] ダイアログ ボックスで、[テンプレートのフォルダーを選択、**で保存**テキスト ボックス、およびファイルの名前を入力し、**ファイル名**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="a1934-117">In the Save As dialog box, select the folder for the template in the **Save in** text box, and then enter a file name in the **File name** text box.</span></span> <span data-ttu-id="a1934-118">**[保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a1934-118">Click **Save**.</span></span>  
+9. <span data-ttu-id="a1934-117">名前を付けて保存] ダイアログ ボックスで、[テンプレートのフォルダーを選択、**で保存**テキスト ボックス、およびファイルの名前を入力し、**ファイル名**テキスト ボックス。</span><span class="sxs-lookup"><span data-stu-id="a1934-117">In the Save As dialog box, select the folder for the template in the **Save in** text box, and then enter a file name in the **File name** text box.</span></span> <span data-ttu-id="a1934-118">**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a1934-118">Click **Save**.</span></span>  
   
 10. <span data-ttu-id="a1934-119">閉じる、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]新しいテンプレートの形式です。</span><span class="sxs-lookup"><span data-stu-id="a1934-119">Close the [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] form for the new template.</span></span>  
   

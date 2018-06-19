@@ -1,15 +1,15 @@
 ---
-title: "Biztalk WCF カスタム アダプターと Siebel アダプターを使用してポートを構成する |Microsoft ドキュメント"
-description: "作成 wcf-custom 送信ポートと受信ポートを BizTalk Server で Siebel eBusiness Applications アダプターを使用するには"
-ms.custom: 
+title: Biztalk WCF カスタム アダプターと Siebel アダプターを使用してポートを構成する |Microsoft ドキュメント
+description: 作成 wcf-custom 送信ポートと受信ポートを BizTalk Server で Siebel eBusiness Applications アダプターを使用するには
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53c5ee07-36ae-474b-9241-8b53c9066ca1
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222330"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-siebel-adapter"></a><span data-ttu-id="26c8c-103">Wcf-custom アダプターと Siebel アダプターを使用してポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="26c8c-103">Configure a port using the WCF-custom adapter and Siebel adapter</span></span>
 <span data-ttu-id="26c8c-104">このトピックでは、Wcf-custom を構成する方法について送信している Siebel システムでの送信操作を実行するポートでは、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="26c8c-104">This topic provides instructions on how to configure WCF-Custom send ports to perform outbound operations on a Siebel system using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="26c8c-116">**Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="26c8c-116">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="26c8c-117">をクリックして、**一般的な** タブで、**アドレス (URI)**フィールドは、接続の Siebel システムへの接続に URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="26c8c-117">Click the **General** tab and in the **Address (URI)** field specify the connection URI to connect to a Siebel system.</span></span> <span data-ttu-id="26c8c-118">接続 URI の詳細については、次を参照してください。 [Siebel システム接続 URI を作成する](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="26c8c-118">For more information about the connection URI, see [Create the Siebel system connection URI](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="26c8c-117">をクリックして、**一般的な** タブで、**アドレス (URI)** フィールドは、接続の Siebel システムへの接続に URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="26c8c-117">Click the **General** tab and in the **Address (URI)** field specify the connection URI to connect to a Siebel system.</span></span> <span data-ttu-id="26c8c-118">接続 URI の詳細については、次を参照してください。 [Siebel システム接続 URI を作成する](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="26c8c-118">For more information about the connection URI, see [Create the Siebel system connection URI](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="26c8c-119">**全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。</span><span class="sxs-lookup"><span data-stu-id="26c8c-119">On the **General** tab, in the **Action** text box, type the action for the operation.</span></span> <span data-ttu-id="26c8c-120">参照してください[メッセージおよびメッセージ スキーマ](messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)各操作のアクションの一覧についてはします。</span><span class="sxs-lookup"><span data-stu-id="26c8c-120">See [Messages and message schemas](messages-and-message-schemas-for-siebel-adapter-in-biztalk.md) for a list of actions for each operation.</span></span> <span data-ttu-id="26c8c-121">たとえば、アカウントのビジネス コンポーネントに対する挿入操作を呼び出すアクションは。</span><span class="sxs-lookup"><span data-stu-id="26c8c-121">For example, the action to invoke the Insert operation on the Account business component is:</span></span>  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="26c8c-135">**受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。</span><span class="sxs-lookup"><span data-stu-id="26c8c-135">From the **Receive pipeline** drop-down list, select the pipeline corresponding to XMLReceive.</span></span>  
   
-11. <span data-ttu-id="26c8c-136">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26c8c-136">Click **OK**.</span></span>  
+11. <span data-ttu-id="26c8c-136">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="26c8c-136">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="26c8c-137">参照</span><span class="sxs-lookup"><span data-stu-id="26c8c-137">See Also</span></span>  
 [<span data-ttu-id="26c8c-138">Siebel アダプターを物理ポートのバインドを手動で構成します。</span><span class="sxs-lookup"><span data-stu-id="26c8c-138">Manually configure a physical port binding to the Siebel adapter</span></span>](../../adapters-and-accelerators/adapter-siebel/manually-configure-a-physical-port-binding-to-the-siebel-adapter.md)

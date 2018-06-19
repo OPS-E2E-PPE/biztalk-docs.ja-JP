@@ -1,18 +1,18 @@
 ---
-title: "チュートリアル 4: SAP を移行する BizTalk プロジェクトの IDOC を受信 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル 4: SAP を移行する BizTalk プロジェクトの IDOC を受信 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migration, SAP Receive IDOC BizTalk project
 - migrating, SAP Receive IDOC BizTalk project
 - migration
 ms.assetid: 74b667d8-2d8c-4c15-9dd2-f13521404b85
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217890"
 ---
 # <a name="tutorial-4-migrating-an-sap-receive-idoc-biztalk-project"></a><span data-ttu-id="472ef-102">チュートリアル 4: SAP を移行する BizTalk プロジェクトの IDOC を受信</span><span class="sxs-lookup"><span data-stu-id="472ef-102">Tutorial 4: Migrating an SAP Receive IDOC BizTalk Project</span></span>
 <span data-ttu-id="472ef-103">Microsoft BizTalk Server に付属している SAP アダプターの以前のバージョンが WCF ベース異なる[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]など、多くの点で。</span><span class="sxs-lookup"><span data-stu-id="472ef-103">The previous version of the SAP adapter that shipped with Microsoft BizTalk Server differs from the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] in many aspects, including:</span></span>  

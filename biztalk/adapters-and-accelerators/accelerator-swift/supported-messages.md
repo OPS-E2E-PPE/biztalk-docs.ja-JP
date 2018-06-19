@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215378"
 ---
 # <a name="supported-messages"></a><span data-ttu-id="83a61-102">サポートされるメッセージ</span><span class="sxs-lookup"><span data-stu-id="83a61-102">Supported Messages</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="83a61-103">[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]の一覧を示します[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]と SWIFT メッセージ。</span><span class="sxs-lookup"><span data-stu-id="83a61-103"> [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] provides a list of [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] and SWIFT messages.</span></span> <span data-ttu-id="83a61-104">メッセージは、以下に示すいくつかの財務カテゴリに分類されます。</span><span class="sxs-lookup"><span data-stu-id="83a61-104">The messages fall into several financial categories which are listed below.</span></span>  

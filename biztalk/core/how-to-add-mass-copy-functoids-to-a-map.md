@@ -1,14 +1,14 @@
 ---
-title: "マップに一括コピー Functoid を追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マップに一括コピー Functoid を追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1cff63fc-8f34-4bd0-8501-a8401bde6349
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247570"
 ---
 # <a name="how-to-add-mass-copy-functoids-to-a-map"></a><span data-ttu-id="6fca1-102">マップに一括コピー Functoid を追加する方法</span><span class="sxs-lookup"><span data-stu-id="6fca1-102">How to Add Mass Copy Functoids to a Map</span></span>
 <span data-ttu-id="6fca1-103">**一括コピー** functoid を含むスキーマを使用して、マップを有効に**任意**と**anyAttribute**要素。</span><span class="sxs-lookup"><span data-stu-id="6fca1-103">The **Mass Copy** functoid enables your maps to use schemas that include **any** and **anyAttribute** elements.</span></span> <span data-ttu-id="6fca1-104">これらの要素は基本的に、XML スキーマ定義言語で提供されているワイルドカードであり、不明な構造や属性のセットに一致します。</span><span class="sxs-lookup"><span data-stu-id="6fca1-104">These elements are, in essence, wildcards provided in the XML Schema definition language to match unknown structures or sets of attributes.</span></span>  

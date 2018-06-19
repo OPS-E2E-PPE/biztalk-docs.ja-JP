@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプタを使用して SQL Server でテーブル値関数を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプタを使用して SQL Server でテーブル値関数を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3fb8c81c-9384-4eba-b0a0-baed1782245b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222282"
 ---
 # <a name="execute-table-valued-functions-in-sql-server-using-the-sql-adapter"></a><span data-ttu-id="97b3f-102">SQL アダプタを使用して SQL Server でテーブル値関数を実行します。</span><span class="sxs-lookup"><span data-stu-id="97b3f-102">Execute Table-Valued Functions in SQL Server using the SQL adapter</span></span>
 <span data-ttu-id="97b3f-103">SQL Server で Transact SQL と CLR テーブル値関数での操作として表示された[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="97b3f-103">The Transact-SQL and CLR table valued functions in SQL Server are surfaced as operations in [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)].</span></span> <span data-ttu-id="97b3f-104">内の操作名、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]値関数で SQL Server テーブルの名前と同じであります。</span><span class="sxs-lookup"><span data-stu-id="97b3f-104">The operation name in the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] is the same as the name of the table valued function in SQL Server.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "受信パイプラインの作成、FRR |Microsoft ドキュメント"
-ms.custom: 
+title: 受信パイプラインの作成、FRR |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive pipelines, creating
 - FRR, creating receive pipelines
 - creating, receive pipelines
 ms.assetid: 5884176b-8522-4dd3-8f93-8695858b59ac
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210378"
 ---
 # <a name="creating-the-frr-receive-pipeline"></a><span data-ttu-id="16e6c-102">受信パイプラインの FRR の作成</span><span class="sxs-lookup"><span data-stu-id="16e6c-102">Creating the FRR Receive Pipeline</span></span>
 <span data-ttu-id="16e6c-103">FIN 対応調整を実行するには、SWIFT FRR デコーダーと SWIFT の逆アセンブラーに加え、SWIFT FRR 相互関係セット競合回避モジュールのパイプライン コンポーネントを含む受信パイプラインを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="16e6c-103">To perform FIN Response Reconciliation, you must create a receive pipeline that contains the SWIFT FRR Decoder and SWIFT FRR CorrelationSet Resolver pipeline components, in addition to the SWIFT disassembler.</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="16e6c-122">新しい項目の追加 ダイアログ ボックスで、**パイプライン ファイル**カテゴリ ウィンドウで、選択**受信パイプライン**テンプレート ペインでします。</span><span class="sxs-lookup"><span data-stu-id="16e6c-122">In the Add New Item dialog box, click **Pipeline Files** in the Categories pane, and then select **Receive Pipeline** in the Templates pane.</span></span>  
   
-3.  <span data-ttu-id="16e6c-123">**名前**ボックスで、受信パイプラインの名前を入力します。 **FRRReceivePipeline.btp**です。</span><span class="sxs-lookup"><span data-stu-id="16e6c-123">In the **Name** box, type a name for your receive pipeline, such as **FRRReceivePipeline.btp**.</span></span> <span data-ttu-id="16e6c-124">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="16e6c-124">Click **Add**.</span></span>  
+3.  <span data-ttu-id="16e6c-123">**名前**ボックスで、受信パイプラインの名前を入力します。 **FRRReceivePipeline.btp**です。</span><span class="sxs-lookup"><span data-stu-id="16e6c-123">In the **Name** box, type a name for your receive pipeline, such as **FRRReceivePipeline.btp**.</span></span> <span data-ttu-id="16e6c-124">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="16e6c-124">Click **Add**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="16e6c-125">追加する必要があります手順 4. を実行する前に、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 」の説明に従って、FRR がツールボックスにコンポーネントをパイプライン[をツールボックスに SWIFT パイプライン コンポーネントを追加する](../../adapters-and-accelerators/accelerator-swift/adding-swift-pipeline-components-to-the-toolbox.md)です。</span><span class="sxs-lookup"><span data-stu-id="16e6c-125">Before you perform step 4, you must have added the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] FRR pipeline components to the toolbox, as described in [Adding SWIFT Pipeline Components to the Toolbox](../../adapters-and-accelerators/accelerator-swift/adding-swift-pipeline-components-to-the-toolbox.md).</span></span>  
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="16e6c-127">BizTalk パイプライン コンポーネント [ツールボックス] ウィンドウからドラッグ、 **SWIFT 逆アセンブラー**を**ここにドロップ**下のボックス、**逆アセンブル**パイプライン デザイナーで図形をステージです。</span><span class="sxs-lookup"><span data-stu-id="16e6c-127">From the BizTalk Pipeline Components Toolbox pane, drag the **SWIFT Disassembler** to the **Drop Here** box below the **Disassemble** stage shape in Pipeline Designer.</span></span>  
   
-6.  <span data-ttu-id="16e6c-128">**SWIFT 逆アセンブラー コンポーネント**でパイプライン デザイナーで選択した**プロパティ**、いることを確認、 **BRE 検証**と**XML 検証**プロパティに設定されます**True**、および**SWIFT ヘッダー スキーマ**プロパティに設定されている**(なし)**です。</span><span class="sxs-lookup"><span data-stu-id="16e6c-128">With the **SWIFT Disassembler Component** selected in Pipeline Designer, in **Properties**, verify that the **BRE Validation** and **XML Validation** properties are set to **True**, and the **SWIFT Header Schema** property is set to **(None)**.</span></span>  
+6.  <span data-ttu-id="16e6c-128">**SWIFT 逆アセンブラー コンポーネント**でパイプライン デザイナーで選択した**プロパティ**、いることを確認、 **BRE 検証**と**XML 検証**プロパティに設定されます**True**、および**SWIFT ヘッダー スキーマ**プロパティに設定されている **(なし)** です。</span><span class="sxs-lookup"><span data-stu-id="16e6c-128">With the **SWIFT Disassembler Component** selected in Pipeline Designer, in **Properties**, verify that the **BRE Validation** and **XML Validation** properties are set to **True**, and the **SWIFT Header Schema** property is set to **(None)**.</span></span>  
   
 7.  <span data-ttu-id="16e6c-129">BizTalk パイプライン コンポーネント [ツールボックス] で、ドラッグ**SWIFT FRR MQSeries デコーダー**を**ここにドロップ**下のボックス、**デコーダー**パイプライン デザイナーで図形をステージです。</span><span class="sxs-lookup"><span data-stu-id="16e6c-129">In the BizTalk Pipeline Components Toolbox, drag **SWIFT FRR MQSeries Decoder** to the **Drop Here** box below the **Decoder** stage shape in Pipeline Designer.</span></span>  
   

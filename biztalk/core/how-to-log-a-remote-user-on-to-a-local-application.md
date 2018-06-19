@@ -1,14 +1,14 @@
 ---
-title: "リモート ユーザー、ローカルのアプリケーションにログオンする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: リモート ユーザー、ローカルのアプリケーションにログオンする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 886ee7cb-e6ba-476a-bea9-4bb4c22bf94e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254218"
 ---
 # <a name="how-to-log-a-remote-user-on-to-a-local-application"></a><span data-ttu-id="3ae87-102">リモート ユーザー、ローカルのアプリケーションにログオンする方法</span><span class="sxs-lookup"><span data-stu-id="3ae87-102">How to Log a Remote User on to a Local Application</span></span>
 <span data-ttu-id="3ae87-103">エンタープライズ シングル サインオン (ENTSSO) サービスの他の主要な機能は、ホスト側開始処理 (HIP) のサポートです。</span><span class="sxs-lookup"><span data-stu-id="3ae87-103">The other main feature of Enterprise Single Sign-On service (ENTSSO) is supporting a host-initiated process (HIP).</span></span> <span data-ttu-id="3ae87-104">リモート ユーザーがローカルの Windows リソースへのアクセスを試行するときに、ENTSSO は HIP と連携します。</span><span class="sxs-lookup"><span data-stu-id="3ae87-104">ENTSSO interacts with HIP when a remote user tries to access a local Windows resource.</span></span> <span data-ttu-id="3ae87-105">ENTSSO を使用して、ホスト ユーザーからの要求を受け取り、ローカル Windows アプリケーションへのアクセスを要求することができます。</span><span class="sxs-lookup"><span data-stu-id="3ae87-105">Using ENTSSO, you can receive the request from the host user and request access to the local Windows application.</span></span>  

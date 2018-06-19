@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214002"
 ---
 # <a name="setting-the-frr-delay-time-out"></a><span data-ttu-id="62c09-102">FRR 遅延タイムアウトの設定</span><span class="sxs-lookup"><span data-stu-id="62c09-102">Setting the FRR Delay Time-Out</span></span>
 <span data-ttu-id="62c09-103">これは待機しません FNN 応答を無期限にようにいくつかの期間の後にタイムアウトに FRR オーケストレーションを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="62c09-103">You must configure the FRR orchestration to time out after some duration, so it will not wait for the FNN response indefinitely.</span></span> <span data-ttu-id="62c09-104">タイムアウト期間が経過すると、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]タイムアウトのカスタム ハンドラーにタイムアウトになったメッセージを公開します。</span><span class="sxs-lookup"><span data-stu-id="62c09-104">If the time-out duration expires, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] publishes the timed-out messages to a custom time-out handler.</span></span>  
@@ -39,4 +40,4 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="62c09-112">既定値、 **FRR DelayTimeout**プロパティは 600 秒 (258 16 進数)。</span><span class="sxs-lookup"><span data-stu-id="62c09-112">The default value for the **FRR DelayTimeout** property is 600 seconds (258 Hexadecimal).</span></span>  
   
-5.  <span data-ttu-id="62c09-113">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62c09-113">Click **OK**.</span></span>
+5.  <span data-ttu-id="62c09-113">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62c09-113">Click **OK**.</span></span>

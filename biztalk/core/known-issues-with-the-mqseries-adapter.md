@@ -1,14 +1,14 @@
 ---
-title: "MQSeries アダプターに関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: MQSeries アダプターに関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c36bcabb-e1eb-455c-8384-00d4682464d3
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262202"
 ---
 # <a name="known-issues-with-the-mqseries-adapter"></a><span data-ttu-id="170ab-102">MQSeries アダプターに関する既知の問題</span><span class="sxs-lookup"><span data-stu-id="170ab-102">Known Issues with the MQSeries Adapter</span></span>
 <span data-ttu-id="170ab-103">ここでは、エラー回避に役立つ情報を記載します。</span><span class="sxs-lookup"><span data-stu-id="170ab-103">This section contains information that may help you avoid errors.</span></span>  
@@ -61,7 +62,7 @@ The adapter "MQSeries" raised an error message. Details "The adapter has encount
   
  <span data-ttu-id="170ab-119">**方法 2: MSDTC 設定を構成します。**</span><span class="sxs-lookup"><span data-stu-id="170ab-119">**Method 2: Configure MSDTC settings**</span></span>  
   
- <span data-ttu-id="170ab-120">手順に従います、**で適切な MSDTC セキュリティ構成オプションを設定[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]**のセクション[MSDTC の問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)MSDTC 設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="170ab-120">Follow the steps in the **Set the appropriate MSDTC Security Configuration options on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]** section of [Troubleshooting Problems with MSDTC](../core/troubleshooting-problems-with-msdtc.md) to configure MSDTC settings.</span></span>  
+ <span data-ttu-id="170ab-120">手順に従います、**で適切な MSDTC セキュリティ構成オプションを設定[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]** のセクション[MSDTC の問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)MSDTC 設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="170ab-120">Follow the steps in the **Set the appropriate MSDTC Security Configuration options on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]** section of [Troubleshooting Problems with MSDTC](../core/troubleshooting-problems-with-msdtc.md) to configure MSDTC settings.</span></span>  
   
  <span data-ttu-id="170ab-121">**方法 3: ホスト アカウントが MQSAgent COM + アプリケーションのロールに追加されたことを確認してください。**</span><span class="sxs-lookup"><span data-stu-id="170ab-121">**Method 3: Verify that the host account is added to the role in the MQSAgent COM+ application**</span></span>  
   

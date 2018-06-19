@@ -1,18 +1,18 @@
 ---
-title: "Siebel の資格情報 で、サインオンの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel の資格情報 で、サインオンの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, specify credentials for the Siebel system at run time
 - credentials, specifying
 - how to, specify credentials for the Siebel system at design time
 ms.assetid: a9fef2ba-c38e-44f7-84a3-b6a95d4dc210
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223194"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-siebel"></a><span data-ttu-id="0e3da-102">Siebel の資格情報 で、サインオンを構成します。</span><span class="sxs-lookup"><span data-stu-id="0e3da-102">Configure the sign in credentials for the Siebel</span></span>
 <span data-ttu-id="0e3da-103">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アダプター クライアント クライアントの資格情報を提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0e3da-103">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] requires the adapter clients to provide client credentials.</span></span> <span data-ttu-id="0e3da-104">アダプターは、Siebel システムでユーザーを認証し、接続を確立するために、これらの資格情報を使用します。</span><span class="sxs-lookup"><span data-stu-id="0e3da-104">The adapter uses these credentials to authenticate the user with the Siebel system and to establish a connection.</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="0e3da-122">**アダプターの構成** ダイアログ ボックスをクリックして、**セキュリティ** タブとの間、**クライアント資格情報の種類**ドロップダウン リスト ボックスで、 **ユーザー名**ユーザー名と Siebel システムへの接続にパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="0e3da-122">In the **Configure Adapter** dialog box, click the **Security** tab and from the **Client credential type** drop-down list box, select **Username** and specify the user name and password to connect to the Siebel system.</span></span>  
   
-6.  <span data-ttu-id="0e3da-123">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e3da-123">Click **OK**.</span></span>  
+6.  <span data-ttu-id="0e3da-123">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e3da-123">Click **OK**.</span></span>  
   
 #### <a name="enter-client-credentials-using-add-adapter-metadata-wizard"></a><span data-ttu-id="0e3da-124">アダプター メタデータの追加ウィザードを使用してクライアントの資格情報を入力してください。</span><span class="sxs-lookup"><span data-stu-id="0e3da-124">Enter client credentials using Add Adapter Metadata Wizard</span></span>  
   
@@ -60,20 +61,20 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="0e3da-129">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="0e3da-129">**Categories**</span></span>|<span data-ttu-id="0e3da-130">をクリックして**アダプターを追加**です。</span><span class="sxs-lookup"><span data-stu-id="0e3da-130">Click **Add Adapter**.</span></span>|  
     |<span data-ttu-id="0e3da-131">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="0e3da-131">**Templates**</span></span>|<span data-ttu-id="0e3da-132">をクリックして**アダプター メタデータの追加**です。</span><span class="sxs-lookup"><span data-stu-id="0e3da-132">Click **Add Adapter Metadata**.</span></span>|  
   
-3.  <span data-ttu-id="0e3da-133">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e3da-133">Click **Add**.</span></span> <span data-ttu-id="0e3da-134">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="0e3da-134">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
+3.  <span data-ttu-id="0e3da-133">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e3da-133">Click **Add**.</span></span> <span data-ttu-id="0e3da-134">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="0e3da-134">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
   
 4.  <span data-ttu-id="0e3da-135">アダプターの追加ウィザードで選択**Wcf-siebel**です。</span><span class="sxs-lookup"><span data-stu-id="0e3da-135">In the Add Adapter Wizard, select **WCF-Siebel**.</span></span> <span data-ttu-id="0e3da-136">コンピューターを選択して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]がインストールされていると、BizTalk データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="0e3da-136">Select the computer on which [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] is installed and the name of the BizTalk database.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="0e3da-137">BizTalk で構成された Wcf-siebel ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="0e3da-137">If you already have a WCF-Siebel port configured in BizTalk, select the port from the **Port** list.</span></span>  
   
-5.  <span data-ttu-id="0e3da-138">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e3da-138">Click **Next**.</span></span>  
+5.  <span data-ttu-id="0e3da-138">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e3da-138">Click **Next**.</span></span>  
   
 6.  <span data-ttu-id="0e3da-139">**アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**一覧で、選択**siebelBinding**、順にクリック**構成**です。</span><span class="sxs-lookup"><span data-stu-id="0e3da-139">In the **Consume Adapter Service** dialog box, from the **Select a binding** list, select **siebelBinding**, and then click **Configure**.</span></span>  
   
 7.  <span data-ttu-id="0e3da-140">**アダプターの構成** ダイアログ ボックスをクリックして、**セキュリティ** タブとの間、**クライアント資格情報の種類**ドロップダウン リスト ボックスで、 **ユーザー名**ユーザー名と Siebel システムへの接続にパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="0e3da-140">In the **Configure Adapter** dialog box, click the **Security** tab and from the **Client credential type** drop-down list box, select **Username** and specify the user name and password to connect to the Siebel system.</span></span>  
   
-8.  <span data-ttu-id="0e3da-141">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e3da-141">Click **OK**.</span></span>  
+8.  <span data-ttu-id="0e3da-141">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e3da-141">Click **OK**.</span></span>  
   
 ## <a name="enter-client-credentials-at-run-time"></a><span data-ttu-id="0e3da-142">実行時にクライアントの資格情報を入力してください。</span><span class="sxs-lookup"><span data-stu-id="0e3da-142">Enter client credentials at run time</span></span>  
  <span data-ttu-id="0e3da-143">、実行時の構成の一部として、Wcf-custom または Wcf-siebel ポートでクライアントの資格情報を指定する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="0e3da-143">For run time, you must specify the client credentials as part of the WCF-Custom or WCF-Siebel port configuration in the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
@@ -92,7 +93,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="0e3da-151">選択、**を使用してシングル サインオン**オプション、および、ESSO 関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="0e3da-151">Select the **Use Single Sign-On** option, and specify an affiliate ESSO application.</span></span>  
   
-5.  <span data-ttu-id="0e3da-152">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e3da-152">Click **OK**.</span></span>  
+5.  <span data-ttu-id="0e3da-152">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e3da-152">Click **OK**.</span></span>  
   
 > [!NOTE]
 >  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]<span data-ttu-id="0e3da-153">また、エンタープライズ シングル サインオン (ESSO) システムをサポートします。</span><span class="sxs-lookup"><span data-stu-id="0e3da-153"> also supports the Enterprise Single Sign-On (ESSO) system.</span></span> <span data-ttu-id="0e3da-154">ESSO は、のみシナリオでは、BizTalk、WCF アダプターは、ESSO 関連アプリケーションの認識を適用します。</span><span class="sxs-lookup"><span data-stu-id="0e3da-154">ESSO is only applicable in the BizTalk scenario, in which the WCF adapter is aware of ESSO affiliate applications.</span></span> <span data-ttu-id="0e3da-155">BizTalk Server に関するセキュリティの詳細については、次を参照してください。 [Siebel アダプターと BizTalk Server によるセキュリティ](../../adapters-and-accelerators/adapter-siebel/security-with-siebel-adapter-and-biztalk-server.md)です。</span><span class="sxs-lookup"><span data-stu-id="0e3da-155">For more information about security with respect to BizTalk Server, see [Security with Siebel adapter and BizTalk Server](../../adapters-and-accelerators/adapter-siebel/security-with-siebel-adapter-and-biztalk-server.md).</span></span>
@@ -113,7 +114,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="0e3da-165">選択、**を使用してシングル サインオン**オプション、および、ESSO 関連アプリケーションを指定します。</span><span class="sxs-lookup"><span data-stu-id="0e3da-165">Select the **Use Single Sign-On** option, and specify an affiliate ESSO application.</span></span>  
   
-6.  <span data-ttu-id="0e3da-166">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e3da-166">Click **OK**.</span></span>  
+6.  <span data-ttu-id="0e3da-166">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0e3da-166">Click **OK**.</span></span>  
   
 > [!NOTE]
 >  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]<span data-ttu-id="0e3da-167">また、エンタープライズ シングル サインオン (ESSO) システムをサポートします。</span><span class="sxs-lookup"><span data-stu-id="0e3da-167"> also supports the Enterprise Single Sign-On (ESSO) system.</span></span> <span data-ttu-id="0e3da-168">ESSO は、のみシナリオでは、BizTalk、WCF アダプターは、ESSO 関連アプリケーションの認識を適用します。</span><span class="sxs-lookup"><span data-stu-id="0e3da-168">ESSO is only applicable in the BizTalk scenario, in which the WCF adapter is aware of ESSO affiliate applications.</span></span> <span data-ttu-id="0e3da-169">BizTalk Server に関するセキュリティの詳細については、次を参照してください。 [Siebel アダプターと BizTalk Server によるセキュリティ](../../adapters-and-accelerators/adapter-siebel/security-with-siebel-adapter-and-biztalk-server.md)です。</span><span class="sxs-lookup"><span data-stu-id="0e3da-169">For more information about security with respect to BizTalk Server, see [Security with Siebel adapter and BizTalk Server](../../adapters-and-accelerators/adapter-siebel/security-with-siebel-adapter-and-biztalk-server.md).</span></span>

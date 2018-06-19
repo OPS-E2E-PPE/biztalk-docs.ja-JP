@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211626"
 ---
 # <a name="install-biztalk-accelerator-for-swift"></a><span data-ttu-id="5d101-102">BizTalk Accelerator を SWIFT をインストールします。</span><span class="sxs-lookup"><span data-stu-id="5d101-102">Install BizTalk Accelerator for SWIFT</span></span>
 <span data-ttu-id="5d101-103">インストール[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef_md](../../includes/a4swift-currentversion-firstref-md.md)]の BizTalk Server にします。</span><span class="sxs-lookup"><span data-stu-id="5d101-103">Install [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef_md](../../includes/a4swift-currentversion-firstref-md.md)] on BizTalk Server.</span></span> 
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="default-installation"></a><span data-ttu-id="5d101-139">既定のインストール</span><span class="sxs-lookup"><span data-stu-id="5d101-139">Default installation</span></span>
 
 1. <span data-ttu-id="5d101-140">実行、 [!INCLUDE[btaA4SWIFTNoVersion_md](../../includes/btaa4swiftnoversion-md.md)] **setup.exe**管理者として。</span><span class="sxs-lookup"><span data-stu-id="5d101-140">Run the [!INCLUDE[btaA4SWIFTNoVersion_md](../../includes/btaa4swiftnoversion-md.md)] **setup.exe** as Administrator.</span></span>
-2. <span data-ttu-id="5d101-141">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-141">Select **Install**.</span></span>
+2. <span data-ttu-id="5d101-141">**[インストール]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-141">Select **Install**.</span></span>
 3. <span data-ttu-id="5d101-142">**[ユーザー名]**、**[組織]**、およびプロダクト キーを入力します。</span><span class="sxs-lookup"><span data-stu-id="5d101-142">Enter your **User name**, your **Organization**, and your product key.</span></span> <span data-ttu-id="5d101-143">**[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-143">Select **Next**.</span></span>
 4. <span data-ttu-id="5d101-144">ライセンス契約を読み、クリックして**Accept**です。</span><span class="sxs-lookup"><span data-stu-id="5d101-144">Read the licensing agreement, and then select **Accept**.</span></span>
 5. <span data-ttu-id="5d101-145">選択**完了**、し、**次**です。</span><span class="sxs-lookup"><span data-stu-id="5d101-145">Select **Complete**, and then select **Next**.</span></span>
@@ -61,7 +62,7 @@ ms.lasthandoff: 09/20/2017
 
     <span data-ttu-id="5d101-148">システム再起動後に自動的にログオンするには、**[設定]** を選択して、サインイン アカウントを入力します。</span><span class="sxs-lookup"><span data-stu-id="5d101-148">To enable auto-logon after a system reboot, select **Set**, and enter the sign-in account.</span></span> <span data-ttu-id="5d101-149">これは、セットアップ中にのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="5d101-149">This is only enabled during the setup.</span></span> <span data-ttu-id="5d101-150">セットアップが完了すると、この設定は無効になります。</span><span class="sxs-lookup"><span data-stu-id="5d101-150">When setup is complete, this setting is disabled.</span></span>
 
-    <span data-ttu-id="5d101-151">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-151">Select **Install**.</span></span>
+    <span data-ttu-id="5d101-151">**[インストール]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-151">Select **Install**.</span></span>
  
 7. <span data-ttu-id="5d101-152">選択**完了**を完了するとします。</span><span class="sxs-lookup"><span data-stu-id="5d101-152">Select **Finish** when complete.</span></span> <span data-ttu-id="5d101-153">ような一時フォルダーにセットアップ ログ ファイルを生成:`C:\Users\username\AppData\Local\Setup(111016 xxxxxx).log`です。</span><span class="sxs-lookup"><span data-stu-id="5d101-153">A setup log file is generated in a temp folder, similar to: `C:\Users\username\AppData\Local\Setup(111016 xxxxxx).log`.</span></span>
 
@@ -72,7 +73,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="custom-installation"></a><span data-ttu-id="5d101-155">カスタム インストール</span><span class="sxs-lookup"><span data-stu-id="5d101-155">Custom installation</span></span>
 
 1. <span data-ttu-id="5d101-156">実行、 [!INCLUDE[btaA4SWIFTNoVersion_md](../../includes/btaa4swiftnoversion-md.md)] **setup.exe**管理者として。</span><span class="sxs-lookup"><span data-stu-id="5d101-156">Run the [!INCLUDE[btaA4SWIFTNoVersion_md](../../includes/btaa4swiftnoversion-md.md)] **setup.exe** as Administrator.</span></span>
-2. <span data-ttu-id="5d101-157">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-157">Select **Install**.</span></span>
+2. <span data-ttu-id="5d101-157">**[インストール]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-157">Select **Install**.</span></span>
 3. <span data-ttu-id="5d101-158">**[ユーザー名]**、**[組織]**、およびプロダクト キーを入力します。</span><span class="sxs-lookup"><span data-stu-id="5d101-158">Enter your **User name**, your **Organization**, and your product key.</span></span> <span data-ttu-id="5d101-159">**[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-159">Select **Next**.</span></span>
 4. <span data-ttu-id="5d101-160">ライセンス契約を読み、クリックして**Accept**です。</span><span class="sxs-lookup"><span data-stu-id="5d101-160">Read the licensing agreement, and then select **Accept**.</span></span>
 5. <span data-ttu-id="5d101-161">選択**カスタム**、し、**次**です。</span><span class="sxs-lookup"><span data-stu-id="5d101-161">Select **Custom**, and then select **Next**.</span></span>
@@ -91,7 +92,7 @@ ms.lasthandoff: 09/20/2017
     
 6. <span data-ttu-id="5d101-182">確認、**概要**ページ。</span><span class="sxs-lookup"><span data-stu-id="5d101-182">Review the **Summary** page.</span></span> <span data-ttu-id="5d101-183">変更するには、次のように選択します。**戻る**です。</span><span class="sxs-lookup"><span data-stu-id="5d101-183">To make any changes, select **Back**.</span></span>
 
-    <span data-ttu-id="5d101-184">**[インストール]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-184">Select **Install**.</span></span>
+    <span data-ttu-id="5d101-184">**[インストール]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d101-184">Select **Install**.</span></span>
  
 7. <span data-ttu-id="5d101-185">選択**完了**を完了するとします。</span><span class="sxs-lookup"><span data-stu-id="5d101-185">Select **Finish** when complete.</span></span> <span data-ttu-id="5d101-186">ような一時フォルダーにセットアップ ログ ファイルを生成:`C:\Users\username\AppData\Local\Setup(111016 xxxxxx).log`です。</span><span class="sxs-lookup"><span data-stu-id="5d101-186">A setup log file is generated in a temp folder, similar to: `C:\Users\username\AppData\Local\Setup(111016 xxxxxx).log`.</span></span>
 

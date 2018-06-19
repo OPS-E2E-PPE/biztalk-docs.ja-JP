@@ -1,14 +1,14 @@
 ---
-title: "シナリオ 1: ビジネス データ一覧 web パーツを使用してデータの表示 |Microsoft ドキュメント"
-ms.custom: 
+title: 'シナリオ 1: ビジネス データ一覧 web パーツを使用してデータの表示 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b3831814-8b70-4352-b22f-cebd08750ef5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217434"
 ---
 # <a name="scenario-1-display-data-using-business-data-list-web-part"></a><span data-ttu-id="74afc-102">シナリオ 1: ビジネス データ一覧 web パーツを使用してデータを表示します。</span><span class="sxs-lookup"><span data-stu-id="74afc-102">Scenario 1: Display data using Business Data List web part</span></span>
 <span data-ttu-id="74afc-103">使用して、**ビジネス データ一覧**用の Web パーツ、 **Finder**メソッド インスタンス。</span><span class="sxs-lookup"><span data-stu-id="74afc-103">We will use the **Business Data List** Web Part for the **Finder** method instance.</span></span> <span data-ttu-id="74afc-104">この Web パーツでは、Oracle E-business Suite から従業員の一覧を取得する検索文字列を指定することができます。</span><span class="sxs-lookup"><span data-stu-id="74afc-104">This Web Part enables you to specify a search expression to retrieve a list of employees from Oracle E-Business Suite.</span></span> <span data-ttu-id="74afc-105">このチュートリアルでは、これには、ディスプレイの従業員の Web パーツを呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="74afc-105">For this tutorial, this is called the Display Employees Web Part.</span></span> <span data-ttu-id="74afc-106">このセクションでは、この Web パーツを作成する手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="74afc-106">This section provides instructions to create this Web Part.</span></span> <span data-ttu-id="74afc-107">Web パーツの作成の詳細についてを参照してください「ビジネス データ リストのカスタマイズ、Web パーツ、およびサイト」で[http://go.microsoft.com/fwlink/?LinkId=104131](http://go.microsoft.com/fwlink/?LinkId=104131)です。</span><span class="sxs-lookup"><span data-stu-id="74afc-107">For more information about creating Web Parts, see "Customize business data lists, Web Parts, and sites" at [http://go.microsoft.com/fwlink/?LinkId=104131](http://go.microsoft.com/fwlink/?LinkId=104131).</span></span>  
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  <span data-ttu-id="74afc-124">**保存場所**セクションで、**ドキュメント ライブラリ**一覧で、クリックして**フォーム テンプレート**です。</span><span class="sxs-lookup"><span data-stu-id="74afc-124">In the **Save Location** section, in the **Document Library** list, click **Form Templates**.</span></span>  
   
-    5.  <span data-ttu-id="74afc-125">**[作成]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="74afc-125">Click **Create**.</span></span> <span data-ttu-id="74afc-126">次の図は、作成した後、Web パーツ ページを示します。</span><span class="sxs-lookup"><span data-stu-id="74afc-126">The following figure shows the Web Part page after it is created.</span></span>  
+    5.  <span data-ttu-id="74afc-125">**[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="74afc-125">Click **Create**.</span></span> <span data-ttu-id="74afc-126">次の図は、作成した後、Web パーツ ページを示します。</span><span class="sxs-lookup"><span data-stu-id="74afc-126">The following figure shows the Web Part page after it is created.</span></span>  
   
          <span data-ttu-id="74afc-127">![新しい WebPart ページ](../../adapters-and-accelerators/adapter-oracle-ebs/media/23-web-part.gif "23 _ web_part")</span><span class="sxs-lookup"><span data-stu-id="74afc-127">![The new WebPart page](../../adapters-and-accelerators/adapter-oracle-ebs/media/23-web-part.gif "23_Web_Part")</span></span>  
   

@@ -1,11 +1,11 @@
 ---
-title: "メッセージの修復し、新しいメッセージを送信する |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの修復し、新しいメッセージを送信する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - repairing messages
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - messages, submitting
 - Message Repair and New Submission. about Message Repair and New Submission
 ms.assetid: 6abcce90-f611-422a-b3c8-e25f1e75b039
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214026"
 ---
 # <a name="repairing-messages-and-submitting-new-messages"></a><span data-ttu-id="f40b1-102">メッセージの修復し、新しいメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="f40b1-102">Repairing Messages and Submitting New Messages</span></span>
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]<span data-ttu-id="f40b1-103">Message Repair and New Submission を使用すると、XML またはビジネス ルール エンジンの検証に失敗したメッセージを修復できます。</span><span class="sxs-lookup"><span data-stu-id="f40b1-103"> Message Repair and New Submission enables you to repair a message that has failed XML or Business Rules Engine validation.</span></span> <span data-ttu-id="f40b1-104">修復処理には、精度とメッセージの修復の妥当性を確保するための検証と承認の手順が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f40b1-104">The repair process includes verification and approval steps that ensure the accuracy and appropriateness of the message repair.</span></span> <span data-ttu-id="f40b1-105">使用して、このプロセスが実行される[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] MRSR サイト内のフォームです。</span><span class="sxs-lookup"><span data-stu-id="f40b1-105">This process is performed using [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)][!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] forms within MRSR site.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "式を使用してオブジェクトを作成する方法およびオブジェクトのメソッドを呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: 式を使用してオブジェクトを作成する方法およびオブジェクトのメソッドを呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, parameters
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - Use Default Constructor property
 - .NET member invocation
 ms.assetid: b6af67eb-8ba5-4c95-9b63-26ebb6617af0
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256610"
 ---
 # <a name="how-to-use-expressions-to-create-objects-and-call-object-methods"></a><span data-ttu-id="5e0f7-102">オブジェクトを作成する式とオブジェクトのメソッドを呼び出す式の使用方法</span><span class="sxs-lookup"><span data-stu-id="5e0f7-102">How to Use Expressions to Create Objects and Call Object Methods</span></span>
 <span data-ttu-id="5e0f7-103">オブジェクトの作成またはメソッドの呼び出しには、式を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5e0f7-103">You might need to use expressions to create objects or invoke methods.</span></span>  

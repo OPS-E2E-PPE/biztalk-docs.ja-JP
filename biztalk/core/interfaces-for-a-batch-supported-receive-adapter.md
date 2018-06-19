@@ -1,14 +1,14 @@
 ---
-title: "受信アダプターのバッチ サポート用のインターフェイス |Microsoft ドキュメント"
-ms.custom: 
+title: 受信アダプターのバッチ サポート用のインターフェイス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fa6ee780-189c-41e3-9ab0-6b869e791c0a
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258010"
 ---
 # <a name="interfaces-for-a-batch-supported-receive-adapter"></a><span data-ttu-id="2cfcc-102">バッチ処理に対応した受信アダプター用のインターフェイス</span><span class="sxs-lookup"><span data-stu-id="2cfcc-102">Interfaces for a Batch-Supported Receive Adapter</span></span>
 <span data-ttu-id="2cfcc-103">受信アダプターでは、常にメッセージがバッチ単位で送信されます。</span><span class="sxs-lookup"><span data-stu-id="2cfcc-103">A receive adapter always submits messages in a batch.</span></span> <span data-ttu-id="2cfcc-104">バッチとは、送信以外のアクションに使用できるデータベース操作の集まりです。</span><span class="sxs-lookup"><span data-stu-id="2cfcc-104">A batch is a unit of database operations that you can use for actions other than submission.</span></span> <span data-ttu-id="2cfcc-105">たとえば受信アダプターでは、同じバッチ内で 1 つのメッセージ セットを送信し、別のメッセージ セットを中断し、さらに別のメッセージ セットを削除するという操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="2cfcc-105">For example, a receive adapter can submit one set of messages, suspend a different set of messages, and delete another set of messages in the same batch.</span></span> <span data-ttu-id="2cfcc-106">このようにさまざまな操作を 1 つのバッチにまとめ、必要なデータベースのラウンド トリップ回数を最小限に抑えることで、パフォーマンスを最適化できます。バッチの使用を強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="2cfcc-106">Grouping these separate operations in the same batch optimizes performance by minimizing the number of database round trips required and is strongly encouraged.</span></span>  

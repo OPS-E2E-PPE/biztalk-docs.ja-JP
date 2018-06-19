@@ -1,17 +1,17 @@
 ---
-title: "BAM Analysis Database2 を移動する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM Analysis Database2 を移動する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migrating, Analysis database [BAM]
 - Analysis database [BAM], migrating
 ms.assetid: b0320273-4840-4573-bb82-bba95021535e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254946"
 ---
 # <a name="how-to-move-the-bam-analysis-database"></a><span data-ttu-id="8cd2c-102">BAM 分析データベースを移動する方法</span><span class="sxs-lookup"><span data-stu-id="8cd2c-102">How to Move the BAM Analysis Database</span></span>
 <span data-ttu-id="8cd2c-103">ここでは、BAM 分析データベースを他のサーバーに移動する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="8cd2c-103">You can use this procedure to move the BAM Analysis database to another server.</span></span>  

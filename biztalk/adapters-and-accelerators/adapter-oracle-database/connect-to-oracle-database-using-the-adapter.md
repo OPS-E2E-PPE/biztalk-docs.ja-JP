@@ -1,11 +1,11 @@
 ---
-title: "アダプターを使用して Oracle データベースへの接続 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターを使用して Oracle データベースへの接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connection string
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - URI
 - connection URI
 ms.assetid: 5d5598e5-aba0-4c73-8e97-9156475b93c4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214754"
 ---
 # <a name="connect-to-oracle-database-using-the-adapter"></a><span data-ttu-id="9ff72-102">アダプターを使用して Oracle データベースへの接続します。</span><span class="sxs-lookup"><span data-stu-id="9ff72-102">Connect to Oracle Database using the adapter</span></span>
 <span data-ttu-id="9ff72-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] ODP.NET 11.1.0.7 を使用して Oracle データベースに接続します。</span><span class="sxs-lookup"><span data-stu-id="9ff72-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] uses ODP.NET 11.1.0.7 to connect to the Oracle database.</span></span> <span data-ttu-id="9ff72-104">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]アダプター クライアント識別子 URI (Uniform Resource)、Oracle データベースに接続する接続と呼ばれる、接続文字列を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ff72-104">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] requires adapter clients to provide a connection string, called the connection Uniform Resource Identifier (URI), to connect to the Oracle database.</span></span> <span data-ttu-id="9ff72-105">内部的には、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースに接続するデータベース接続文字列に URI をマップします。</span><span class="sxs-lookup"><span data-stu-id="9ff72-105">Internally, the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] maps the URI to a database connection string to connect to the Oracle database.</span></span> <span data-ttu-id="9ff72-106">接続 URI のアダプターのクライアントは、外部システムに接続するための接続パラメーターを指定できます。</span><span class="sxs-lookup"><span data-stu-id="9ff72-106">With a connection URI, adapter clients can specify connection parameters to connect to an external system.</span></span>  

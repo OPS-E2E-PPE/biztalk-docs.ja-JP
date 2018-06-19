@@ -1,15 +1,15 @@
 ---
-title: "BizTalk で Wcf-oracleebs アダプターを使用してポートを構成する |Microsoft ドキュメント"
-description: "Wcf-oracleebs アダプターを使用して BizTalk Server で Oracle EBS からメッセージを送信または受信"
-ms.custom: 
+title: BizTalk で Wcf-oracleebs アダプターを使用してポートを構成する |Microsoft ドキュメント
+description: Wcf-oracleebs アダプターを使用して BizTalk Server で Oracle EBS からメッセージを送信または受信
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6b4c5c10-79a6-48d3-b4ee-dddf837f020b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218402"
 ---
 # <a name="configure-a-port-using-the-wcf-oracleebs-adapter"></a><span data-ttu-id="b6b76-103">Wcf-oracleebs アダプターを使用してポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="b6b76-103">Configure a port using the WCF-OracleEBS adapter</span></span>
 <span data-ttu-id="b6b76-104">Wcf-oracleebs を構成する方法 Oracle E-business Suite を使用して送信および受信操作を実行するポートの送受信、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="b6b76-104">How to configure WCF-OracleEBS send and receive ports to perform outbound and inbound operations on Oracle E-Business Suite using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>  
@@ -82,7 +83,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="b6b76-149">**受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。</span><span class="sxs-lookup"><span data-stu-id="b6b76-149">From the **Receive pipeline** drop-down list, select the pipeline that corresponds to XMLReceive.</span></span>  
   
-12. <span data-ttu-id="b6b76-150">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6b76-150">Click **OK**.</span></span>  
+12. <span data-ttu-id="b6b76-150">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6b76-150">Click **OK**.</span></span>  
   
 ## <a name="deploy-adapters-to-receive-messages-from-oracle-ebs"></a><span data-ttu-id="b6b76-151">Oracle EBS からメッセージを受信アダプターを展開します。</span><span class="sxs-lookup"><span data-stu-id="b6b76-151">Deploy adapters to receive messages from Oracle EBS</span></span>  
  <span data-ttu-id="b6b76-152">次の実行、Wcf-oracleebs を構成する手順の受信ポートから Oracle E-business Suite を使用してメッセージを受信するため、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="b6b76-152">Perform the following steps to configure a WCF-OracleEBS receive port for receiving messages from Oracle E-Business Suite using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "Siebel ビジネス コンポーネントで SELECT クエリを実行 |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel ビジネス コンポーネントで SELECT クエリを実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performing operations, selecting data using ADO.NET provider
 - how to, select data in business components using ADO.NET provider
 ms.assetid: 34a22c2e-6fc9-4760-90a1-131a38ae947b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221962"
 ---
 # <a name="run-a-select-query-on-business-components-with-siebel"></a><span data-ttu-id="38d76-102">Siebel ビジネス コンポーネントで SELECT クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="38d76-102">Run a SELECT Query on Business Components with Siebel</span></span>
 <span data-ttu-id="38d76-103">このセクションでは、Siebel ビジネス コンポーネントを使用して、データを選択する方法を示します、[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="38d76-103">This section demonstrates how to select data from a Siebel business component using the [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)].</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "手順 3: 挿入の通知にフィルターを追加する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: 挿入の通知にフィルターを追加する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53a1e9ef-a179-42a7-b4ae-b1170181053b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223266"
 ---
 # <a name="step-3-add-a-filter-for-insert-notifications"></a><span data-ttu-id="ba2f0-102">手順 3: 挿入の通知にフィルターを追加します。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-102">Step 3: Add a Filter for Insert Notifications</span></span>
 <span data-ttu-id="ba2f0-103">![手順 3 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="ba2f0-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
   
  <span data-ttu-id="ba2f0-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="ba2f0-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="ba2f0-105">**目標:**ここでは、挿入操作の通知メッセージのフィルター処理するオーケストレーションに判断図形を追加します。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-105">**Objective:** In this step, you add a Decide shape to the orchestration to filter for notification messages for Insert operation.</span></span> <span data-ttu-id="ba2f0-106">オーケストレーションでの後続の操作は、通知を受け取りましたが Insert 型の場合にのみ実行されます。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-106">Subsequent operations in the orchestration are performed only if the notification received is of Insert type.</span></span>  
+ <span data-ttu-id="ba2f0-105">**目標:** ここでは、挿入操作の通知メッセージのフィルター処理するオーケストレーションに判断図形を追加します。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-105">**Objective:** In this step, you add a Decide shape to the orchestration to filter for notification messages for Insert operation.</span></span> <span data-ttu-id="ba2f0-106">オーケストレーションでの後続の操作は、通知を受け取りましたが Insert 型の場合にのみ実行されます。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-106">Subsequent operations in the orchestration are performed only if the notification received is of Insert type.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="ba2f0-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="ba2f0-107">Prerequisites</span></span>  
  <span data-ttu-id="ba2f0-108">完了する必要があります[手順 2: 通知メッセージから通知の種類を抽出](../../adapters-and-accelerators/adapter-sql/step-2-extract-notification-type-from-notification-message.md)です。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-108">You must have completed [Step 2: Extract Notification Type from Notification Message](../../adapters-and-accelerators/adapter-sql/step-2-extract-notification-type-from-notification-message.md).</span></span>  
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="ba2f0-110">追加、**判断**、オーケストレーションに図形の後に、**式**図形です。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-110">Add a **Decide** shape to the orchestration, after the **Expression** shape.</span></span> <span data-ttu-id="ba2f0-111">ツールボックスからドラッグして、**判断**図形を区分線のすぐ下に、**式**図形です。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-111">From the Toolbox, drag the **Decide** shape onto the connecting line directly below the **Expression** shape.</span></span>  
   
-     <span data-ttu-id="ba2f0-112">**判断**用に分岐を表示する図形が展開され、**場合**ステートメント**(Rule_1)**の分岐および、 **Else**ステートメントです。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-112">The **Decide** shape expands to show a branch for the **If** statement **(Rule_1)** and a branch for the **Else** statement.</span></span>  
+     <span data-ttu-id="ba2f0-112">**判断**用に分岐を表示する図形が展開され、**場合**ステートメント **(Rule_1)** の分岐および、 **Else**ステートメントです。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-112">The **Decide** shape expands to show a branch for the **If** statement **(Rule_1)** and a branch for the **Else** statement.</span></span>  
   
 2.  <span data-ttu-id="ba2f0-113">デザイン サーフェイスを右クリックし、**判断**図形をクリックして**プロパティ ウィンドウ**します。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-113">On the design surface, right-click the **Decide** shape, and then click **Properties Window**.</span></span>  
   
@@ -40,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="ba2f0-115">デザイン サーフェイスを右クリックし、 **rule_1**図形 (内の**判断**図形)、をクリックして**プロパティ ウィンドウ**します。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-115">On the design surface, right-click the **Rule_1** shape (inside of the **Decide** shape), and then click **Properties Window**.</span></span>  
   
-5.  <span data-ttu-id="ba2f0-116">**プロパティ**ウィンドウ**[rule_1]**で、**名前**プロパティで、「**挿入**です。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-116">In the **Properties** pane for **Rule_1**, in the **Name** property, type **Insert**.</span></span>  
+5.  <span data-ttu-id="ba2f0-116">**プロパティ**ウィンドウ **[rule_1]** で、**名前**プロパティで、「**挿入**です。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-116">In the **Properties** pane for **Rule_1**, in the **Name** property, type **Insert**.</span></span>  
   
 6.  <span data-ttu-id="ba2f0-117">右クリックし、**挿入**図形をクリックして**ブール式の編集**です。</span><span class="sxs-lookup"><span data-stu-id="ba2f0-117">Right-click the **Insert** shape, and then click **Edit Boolean Expression**.</span></span>  
   

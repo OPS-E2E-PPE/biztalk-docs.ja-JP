@@ -1,18 +1,18 @@
 ---
-title: "手順 2: SAP アイテム用のアプリケーション定義ファイルの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: SAP アイテム用のアプリケーション定義ファイルの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - application definition file, creating a
 - Business Data Catalog Definition Editor
 - Business Data Catalog
 ms.assetid: d254b00e-dbeb-4167-ad57-6f0aa2e7a563
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219826"
 ---
 # <a name="step-2-create-an-application-definition-file-for-the-sap-artifacts"></a><span data-ttu-id="98b04-102">手順 2: SAP 成果物のため、アプリケーション定義ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="98b04-102">Step 2: Create an Application Definition File for the SAP Artifacts</span></span>
 <span data-ttu-id="98b04-103">![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span><span class="sxs-lookup"><span data-stu-id="98b04-103">![Step 2 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span></span>  
@@ -71,7 +72,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="98b04-134">WCF サービスが、トピックの説明に従って、正常に発行されるかどうかをテストするときに、URL が使用可能な[手順 1: WCF サービスとして SAP アイテムをパブリッシュ](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)です。</span><span class="sxs-lookup"><span data-stu-id="98b04-134">The URL is available when you test whether the WCF service is published successfully, as described in the topic [Step 1: Publish the SAP Artifacts as a WCF Service](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md).</span></span>  
   
-5.  <span data-ttu-id="98b04-135">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-135">Click **Connect**.</span></span>  
+5.  <span data-ttu-id="98b04-135">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-135">Click **Connect**.</span></span>  
   
 6.  <span data-ttu-id="98b04-136">WCF アダプター サービス開発ウィザードで選択した操作を表示するをクリックして、 **Web メソッドの追加**タブです。次の方法が表示されます。</span><span class="sxs-lookup"><span data-stu-id="98b04-136">To see the operations you selected in the WCF Adapter Service Development Wizard, click the **Add Web Method** tab. You will see the following methods:</span></span>  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="98b04-142">![Web メソッドのエンティティを作成](../../adapters-and-accelerators/adapter-sap/media/ce4e9bc3-1eae-43ae-8375-e44cf19aaffc.gif "ce4e9bc3-1eae-43ae-8375-e44cf19aaffc")</span><span class="sxs-lookup"><span data-stu-id="98b04-142">![Create entities for the web methods](../../adapters-and-accelerators/adapter-sap/media/ce4e9bc3-1eae-43ae-8375-e44cf19aaffc.gif "ce4e9bc3-1eae-43ae-8375-e44cf19aaffc")</span></span>  
   
-7.  <span data-ttu-id="98b04-143">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-143">Click **OK**.</span></span>  
+7.  <span data-ttu-id="98b04-143">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-143">Click **OK**.</span></span>  
   
 8.  <span data-ttu-id="98b04-144">**LOB システムの名前を入力** ダイアログ ボックスに名前を入力、 **LOB システム名**ボックス。</span><span class="sxs-lookup"><span data-stu-id="98b04-144">In the **Enter the name for the LOB System** dialog box, type a name in the **LOB System Name** box.</span></span> <span data-ttu-id="98b04-145">この例では、呼び出すこと**Customer_Order**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="98b04-145">For this example, call it **Customer_Order**, and then click **OK**.</span></span>  
   
@@ -120,7 +121,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  <span data-ttu-id="98b04-168">PropertyView コレクション エディター] ウィンドウで、[**追加**、プロパティ ウィンドウで、次のように入力します。 **HttpHeaderPassword**の、**名前**ボックス。</span><span class="sxs-lookup"><span data-stu-id="98b04-168">In the PropertyView Collection Editor window, click **Add**, and in the Property pane, type **HttpHeaderPassword** for the **Name** box.</span></span> <span data-ttu-id="98b04-169">同様に、入力**MyPassHeader**の**PropertyValue**ボックス。</span><span class="sxs-lookup"><span data-stu-id="98b04-169">Similarly, type **MyPassHeader** for the **PropertyValue** box.</span></span> <span data-ttu-id="98b04-170">選択**System.String**の**型**ボックス。</span><span class="sxs-lookup"><span data-stu-id="98b04-170">Select **System.String** for the **Type** box.</span></span>  
   
-    5.  <span data-ttu-id="98b04-171">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-171">Click **OK**.</span></span>  
+    5.  <span data-ttu-id="98b04-171">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-171">Click **OK**.</span></span>  
   
 2.  <span data-ttu-id="98b04-172">BAPI_SALESORDER_GETLIST メソッドのユーザー名とパスワード ヘッダーを追加します。</span><span class="sxs-lookup"><span data-stu-id="98b04-172">Add the user name and password headers for the BAPI_SALESORDER_GETLIST method.</span></span>  
   
@@ -132,7 +133,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  <span data-ttu-id="98b04-178">PropertyView コレクション エディター] ウィンドウで、[**追加**、プロパティ ウィンドウで、次のように入力します。 **HttpHeaderPassword**の、**名前**ボックス。</span><span class="sxs-lookup"><span data-stu-id="98b04-178">In the PropertyView Collection Editor window, click **Add**, and in the Property pane, type **HttpHeaderPassword** for the **Name** box.</span></span> <span data-ttu-id="98b04-179">同様に、入力**MyPassHeader**の**PropertyValue**ボックス。</span><span class="sxs-lookup"><span data-stu-id="98b04-179">Similarly, type **MyPassHeader** for the **PropertyValue** box.</span></span> <span data-ttu-id="98b04-180">選択**System.String**の**型**ボックス。</span><span class="sxs-lookup"><span data-stu-id="98b04-180">Select **System.String** for the **Type** box.</span></span>  
   
-    5.  <span data-ttu-id="98b04-181">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-181">Click **OK**.</span></span>  
+    5.  <span data-ttu-id="98b04-181">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-181">Click **OK**.</span></span>  
   
 ### <a name="set-up-single-sign-on-for-connecting-to-the-sap-system"></a><span data-ttu-id="98b04-182">SAP システムに接続するためのシングル サインオンを設定します。</span><span class="sxs-lookup"><span data-stu-id="98b04-182">Set up Single Sign-On for Connecting to the SAP System</span></span>  
  <span data-ttu-id="98b04-183">このトピックのすべてのプロシージャの実行が完了したら後、は、SharePoint アプリケーションにインポートできるアプリケーション定義ファイルが作成されます。</span><span class="sxs-lookup"><span data-stu-id="98b04-183">After you have finished performing all the procedures in this topic, you will have created an application definition file that can be imported into a SharePoint application.</span></span> <span data-ttu-id="98b04-184">アプリケーションからは、SAP システムから関連データを取得する SAP メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="98b04-184">From the application, you invoke the SAP methods to retrieve relevant data from the SAP system.</span></span> <span data-ttu-id="98b04-185">これを有効にするには、SharePoint アプリケーションで、SAP システム内のユーザーとユーザー間のマッピングを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="98b04-185">To enable this, you must create a mapping between a user in the SAP system and the user in the SharePoint application.</span></span> <span data-ttu-id="98b04-186">アプリケーション定義ファイルをインポートした後は、SharePoint サーバーの全体管理コンソールの このマッピングを作成します。</span><span class="sxs-lookup"><span data-stu-id="98b04-186">You create this mapping in SharePoint Central Administration console after you have imported the application definition file.</span></span>  
@@ -149,7 +150,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="98b04-194">![SSO プロパティの追加](../../adapters-and-accelerators/adapter-sap/media/1eb813e4-fed2-45c2-8902-9af5dd3369bf.gif "1eb813e4-fed2-45c2-8902-9af5dd3369bf")</span><span class="sxs-lookup"><span data-stu-id="98b04-194">![Add the SSO property](../../adapters-and-accelerators/adapter-sap/media/1eb813e4-fed2-45c2-8902-9af5dd3369bf.gif "1eb813e4-fed2-45c2-8902-9af5dd3369bf")</span></span>  
   
-4.  <span data-ttu-id="98b04-195">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-195">Click **OK**.</span></span>  
+4.  <span data-ttu-id="98b04-195">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-195">Click **OK**.</span></span>  
   
 ### <a name="requirement-1-search-for-customers-based-on-customer-name"></a><span data-ttu-id="98b04-196">顧客名に基づいて顧客の要件 1: 検索</span><span class="sxs-lookup"><span data-stu-id="98b04-196">Requirement 1: Search for Customers Based on Customer Name</span></span>  
  <span data-ttu-id="98b04-197">顧客名に基づいて顧客を検索するために使用するアプリケーション定義ファイルを作成するには、次の一連のタスクを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="98b04-197">To create an application definition file that can be used to search for customers based on customer name, you must perform the following set of tasks.</span></span>  
@@ -198,7 +199,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="98b04-222">![Finder メソッド インスタンスの追加](../../adapters-and-accelerators/adapter-sap/media/e9ae47f2-32f5-4586-8467-94e3713d2a06.gif "e9ae47f2-32f5-4586-8467-94e3713d2a06")</span><span class="sxs-lookup"><span data-stu-id="98b04-222">![Add a Finder method instance](../../adapters-and-accelerators/adapter-sap/media/e9ae47f2-32f5-4586-8467-94e3713d2a06.gif "e9ae47f2-32f5-4586-8467-94e3713d2a06")</span></span>  
   
-4.  <span data-ttu-id="98b04-223">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-223">Click **OK**.</span></span>  
+4.  <span data-ttu-id="98b04-223">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-223">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="98b04-224">プロパティ ウィンドウで、次のように入力します。 **GetCustomerByName_Instance**で、**名前**ボックス。</span><span class="sxs-lookup"><span data-stu-id="98b04-224">In the Properties pane, type **GetCustomerByName_Instance** in the **Name** box.</span></span>  
   
@@ -235,7 +236,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="98b04-242">展開して、 **KUNNR**パラメーター、もう 1 つをクリックして**KUNNR**ノード。</span><span class="sxs-lookup"><span data-stu-id="98b04-242">Expand the **KUNNR** parameter, and then click the second **KUNNR** node.</span></span>  
   
-    4.  <span data-ttu-id="98b04-243">プロパティ ウィンドウで、次のように選択します。 **CustomerID [Customer]**から、**識別子** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="98b04-243">In the Properties pane, select **CustomerID[Customer]** from the **Identifier** list.</span></span>  
+    4.  <span data-ttu-id="98b04-243">プロパティ ウィンドウで、次のように選択します。 **CustomerID [Customer]** から、**識別子** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="98b04-243">In the Properties pane, select **CustomerID[Customer]** from the **Identifier** list.</span></span>  
   
          <span data-ttu-id="98b04-244">![識別子をパラメーターにマップ](../../adapters-and-accelerators/adapter-sap/media/04ff6496-34a7-421b-ae9e-f9263895c153.gif "04ff6496-34a7-421b-ae9e-f9263895c153")</span><span class="sxs-lookup"><span data-stu-id="98b04-244">![Map the identifier to a parameter](../../adapters-and-accelerators/adapter-sap/media/04ff6496-34a7-421b-ae9e-f9263895c153.gif "04ff6496-34a7-421b-ae9e-f9263895c153")</span></span>  
   
@@ -247,7 +248,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="98b04-248">展開、 **CUSTOMER_T**  ノードの 2 番目**CUSTOMER_T**  ノード、**項目**ノードをクリックして、 **KUNNR**ノード。</span><span class="sxs-lookup"><span data-stu-id="98b04-248">Expand the **CUSTOMER_T** node, then the second **CUSTOMER_T** node, then the **Item** node, and then click the **KUNNR** node.</span></span>  
   
-    4.  <span data-ttu-id="98b04-249">プロパティ ウィンドウで、次のように選択します。 **CustomerID [Customer]**から、**識別子** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="98b04-249">In the Properties pane, select **CustomerID[Customer]** from the **Identifier** list.</span></span>  
+    4.  <span data-ttu-id="98b04-249">プロパティ ウィンドウで、次のように選択します。 **CustomerID [Customer]** から、**識別子** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="98b04-249">In the Properties pane, select **CustomerID[Customer]** from the **Identifier** list.</span></span>  
   
 ##### <a name="to-create-a-specific-finder-method-instance-for-the-sdrfccustomerget-method"></a><span data-ttu-id="98b04-250">SD_RFC_CUSTOMER_GET メソッドの Specific Finder メソッド インスタンスを作成するには</span><span class="sxs-lookup"><span data-stu-id="98b04-250">To create a Specific Finder method instance for the SD_RFC_CUSTOMER_GET method</span></span>  
   
@@ -261,7 +262,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="98b04-256">![Specific Finder メソッド インスタンスの追加](../../adapters-and-accelerators/adapter-sap/media/838eb512-b967-46e7-a865-0bf3651b02a1.gif "838eb512-b967-46e7-a865-0bf3651b02a1")</span><span class="sxs-lookup"><span data-stu-id="98b04-256">![Add a Specific Finder Method Instance](../../adapters-and-accelerators/adapter-sap/media/838eb512-b967-46e7-a865-0bf3651b02a1.gif "838eb512-b967-46e7-a865-0bf3651b02a1")</span></span>  
   
-4.  <span data-ttu-id="98b04-257">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-257">Click **OK**.</span></span>  
+4.  <span data-ttu-id="98b04-257">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-257">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="98b04-258">プロパティ ウィンドウで、次のように入力します。 **GetCustomerByNumber_Instance**の、**名前**ボックス。</span><span class="sxs-lookup"><span data-stu-id="98b04-258">In the Properties pane, type **GetCustomerByNumber_Instance** for the **Name** box.</span></span>  
   
@@ -282,7 +283,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="98b04-267">展開、 **CUSTOMER_NUMBER**ノード、2 つ目のクリックと**CUSTOMER_NUMBER**ノード。</span><span class="sxs-lookup"><span data-stu-id="98b04-267">Expand the **CUSTOMER_NUMBER** node, and then click the second **CUSTOMER_NUMBER** node.</span></span>  
   
-4.  <span data-ttu-id="98b04-268">プロパティ ウィンドウで、次のように選択します。 **CustomerID [Customer]**から、**識別子** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="98b04-268">In the Properties pane, select **CustomerID[Customer]** from the **Identifier** list.</span></span>  
+4.  <span data-ttu-id="98b04-268">プロパティ ウィンドウで、次のように選択します。 **CustomerID [Customer]** から、**識別子** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="98b04-268">In the Properties pane, select **CustomerID[Customer]** from the **Identifier** list.</span></span>  
   
      <span data-ttu-id="98b04-269">![2 つのエンティティ間の関連付けを作成する](../../adapters-and-accelerators/adapter-sap/media/ae7e1e7a-a12b-4905-b002-2a04c7050848.gif "ae7e1e7a-a12b-4905-b002-2a04c7050848")</span><span class="sxs-lookup"><span data-stu-id="98b04-269">![Create association between the two entities](../../adapters-and-accelerators/adapter-sap/media/ae7e1e7a-a12b-4905-b002-2a04c7050848.gif "ae7e1e7a-a12b-4905-b002-2a04c7050848")</span></span>  
   
@@ -302,7 +303,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="98b04-277">![Association メソッド インスタンスの作成](../../adapters-and-accelerators/adapter-sap/media/15975b78-8932-41ce-8c10-41891fc1fb22.gif "15975b78-8932-41ce-8c10-41891fc1fb22")</span><span class="sxs-lookup"><span data-stu-id="98b04-277">![Create an Association Method Instance](../../adapters-and-accelerators/adapter-sap/media/15975b78-8932-41ce-8c10-41891fc1fb22.gif "15975b78-8932-41ce-8c10-41891fc1fb22")</span></span>  
   
-6.  <span data-ttu-id="98b04-278">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-278">Click **OK**.</span></span>  
+6.  <span data-ttu-id="98b04-278">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-278">Click **OK**.</span></span>  
   
 7.  <span data-ttu-id="98b04-279">プロパティ ウィンドウで、次のように入力します。 **SalesOrderForCustomer_Instance**の、**名前**ボックス。</span><span class="sxs-lookup"><span data-stu-id="98b04-279">In the Properties pane, type **SalesOrderForCustomer_Instance** for the **Name** box.</span></span>  
   
@@ -340,7 +341,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="98b04-306">![メソッド インスタンスの既定値を指定して](../../adapters-and-accelerators/adapter-sap/media/86e0a42d-61c0-4d5d-ba3f-55b328f79576.gif "86e0a42d-61c0-4d5d-ba3f-55b328f79576")</span><span class="sxs-lookup"><span data-stu-id="98b04-306">![Specify a default value for the method instance](../../adapters-and-accelerators/adapter-sap/media/86e0a42d-61c0-4d5d-ba3f-55b328f79576.gif "86e0a42d-61c0-4d5d-ba3f-55b328f79576")</span></span>  
   
-5.  <span data-ttu-id="98b04-307">**[閉じる]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-307">Click **Close**.</span></span>  
+5.  <span data-ttu-id="98b04-307">**[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98b04-307">Click **Close**.</span></span>  
   
 ### <a name="export-the-application-definition-to-a-file"></a><span data-ttu-id="98b04-308">アプリケーション定義をファイルにエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="98b04-308">Export the Application Definition to a File</span></span>  
  <span data-ttu-id="98b04-309">SAP システムのインスタンスのメタデータを含んでいるアプリケーション定義が作成されました。</span><span class="sxs-lookup"><span data-stu-id="98b04-309">You have now created an application definition that contains the SAP system instance metadata.</span></span> <span data-ttu-id="98b04-310">Microsoft Office SharePoint Server にインポートできる XML ファイルにこの定義をエクスポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="98b04-310">You must export this definition to an XML file, which can be imported into Microsoft Office SharePoint Server.</span></span>  

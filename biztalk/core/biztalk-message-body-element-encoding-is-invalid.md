@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b407e5c3-4655-4b2f-8ecc-30eb080ec47c
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25964816"
 ---
 # <a name="biztalk-message-body-element-encoding-is-invalid"></a><span data-ttu-id="9a9e2-102">BizTalk メッセージ本文要素のエンコードは無効です</span><span class="sxs-lookup"><span data-stu-id="9a9e2-102">BizTalk message body element encoding is invalid</span></span>
 ## <a name="details"></a><span data-ttu-id="9a9e2-103">詳細</span><span class="sxs-lookup"><span data-stu-id="9a9e2-103">Details</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 03/23/2018
   
 4.  <span data-ttu-id="9a9e2-125">トランスポート名を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="9a9e2-125">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="9a9e2-126">**[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9a9e2-126">Click **Properties**.</span></span>  
+5.  <span data-ttu-id="9a9e2-126">**[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9a9e2-126">Click **Properties**.</span></span>  
   
 6.  <span data-ttu-id="9a9e2-127">ポートに **型** 一覧で、適切なポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="9a9e2-127">In the port **Type** list, select the correct port.</span></span>  
   

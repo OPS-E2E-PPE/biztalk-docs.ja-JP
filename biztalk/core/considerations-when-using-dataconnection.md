@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Assert function [Business Rules Engine], DataConnection
 - Update function [Business Rules Engine], DataConnection
 ms.assetid: 1b4c8aa5-053f-43d7-9f5f-050383405fed
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22238954"
 ---
 # <a name="considerations-when-using-dataconnection"></a><span data-ttu-id="99e37-102">DataConnection を使用する際の注意事項</span><span class="sxs-lookup"><span data-stu-id="99e37-102">Considerations When Using DataConnection</span></span>
 <span data-ttu-id="99e37-103">ビジネス ルール エンジンで DataConnection を使用する際の注意事項を、次に示します。</span><span class="sxs-lookup"><span data-stu-id="99e37-103">Consider the following when using DataConnection with the Business Rule Engine.</span></span>  

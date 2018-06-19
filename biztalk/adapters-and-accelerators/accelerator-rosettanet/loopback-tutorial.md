@@ -1,11 +1,11 @@
 ---
-title: "ループバック チュートリアル |Microsoft ドキュメント"
-ms.custom: 
+title: ループバック チュートリアル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - loopbacks, tutorial
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - loopback tutorial
 - tutorials, loopback tutorial
 ms.assetid: 0f69c1f1-4039-4949-8eed-127ceabbc3cc
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210034"
 ---
 # <a name="loopback-tutorial"></a><span data-ttu-id="bc6fc-102">ループバック チュートリアル</span><span class="sxs-lookup"><span data-stu-id="bc6fc-102">Loopback Tutorial</span></span>
 <span data-ttu-id="bc6fc-103">このチュートリアルでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] を使用して、ホーム組織と取引先組織間のプロセス実装を 1 台のコンピューター上でシミュレートするための手順を詳しく説明します。</span><span class="sxs-lookup"><span data-stu-id="bc6fc-103">This tutorial contains detailed steps that describe how you can use [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] to simulate a process implementation between the home and partner organization on a single computer.</span></span>  

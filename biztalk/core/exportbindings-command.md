@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6573142e-7ca7-4990-98e3-b7a54840da13
-caps.latest.revision: ''
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,12 +17,13 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22246658"
 ---
 # <a name="exportbindings-command"></a><span data-ttu-id="dac8d-102">ExportBindings コマンド</span><span class="sxs-lookup"><span data-stu-id="dac8d-102">ExportBindings Command</span></span>
 <span data-ttu-id="dac8d-103">BizTalk アセンブリ、アプリケーション、またはグループのバインドをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="dac8d-103">Exports bindings for a BizTalk assembly, application, or group.</span></span> <span data-ttu-id="dac8d-104">アセンブリ、アプリケーション、またはグループのバインドと一緒に、グローバル パーティのバインドをエクスポートすることもできます。</span><span class="sxs-lookup"><span data-stu-id="dac8d-104">You can also export global party bindings along with the assembly, application, or group bindings.</span></span> <span data-ttu-id="dac8d-105">(パーティとは、組織のパートナーなど、オーケストレーションと連携するすべてのエンティティを指します。)</span><span class="sxs-lookup"><span data-stu-id="dac8d-105">(A party is all the entities, such as partners of your organization, that interact with an orchestration.)</span></span>  
   
 ## <a name="usage"></a><span data-ttu-id="dac8d-106">使用方法</span><span class="sxs-lookup"><span data-stu-id="dac8d-106">Usage</span></span>  
- <span data-ttu-id="dac8d-107">**BTSTask ExportBindings/Destination:** *値*[**/grouplevel は**] [**/applicationname は: * **値*] [**/AssemblyName:***値*] &#124; [**/GlobalParties**] [**/Server:***値 *] [* */database:***値 *]</span><span class="sxs-lookup"><span data-stu-id="dac8d-107">**BTSTask ExportBindings /Destination:** *value* [**/GroupLevel**] [**/ApplicationName:***value*] [**/AssemblyName:***value* ] &#124; [**/GlobalParties**] [**/Server:***value*] [**/Database:***value*]</span></span>  
+ <span data-ttu-id="dac8d-107">**BTSTask ExportBindings/Destination:** *値*[**/grouplevel は**] [**/applicationname は: * **値*] [**/AssemblyName:***値*] &#124; [**/GlobalParties **] [**/Server:***値 *] [* */database:*** 値 *]</span><span class="sxs-lookup"><span data-stu-id="dac8d-107">**BTSTask ExportBindings /Destination:** *value* [**/GroupLevel**] [**/ApplicationName:***value*] [**/AssemblyName:***value* ] &#124; [**/GlobalParties **] [**/Server:***value*] [**/Database:*** value*]</span></span>  
   
 ## <a name="parameters"></a><span data-ttu-id="dac8d-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="dac8d-108">Parameters</span></span>  
   

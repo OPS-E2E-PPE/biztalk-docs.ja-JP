@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス Model1 を使用して Oracle データベースの変更通知を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス Model1 を使用して Oracle データベースの変更通知を受け取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e0f0e2bf-3e76-43cc-85dc-7483dbce1cb5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217050"
 ---
 # <a name="receive-oracle-database-change-notifications-using-the-wcf-service-model1"></a><span data-ttu-id="711df-102">WCF サービス Model1 を使用して Oracle データベースの変更通知を受信します。</span><span class="sxs-lookup"><span data-stu-id="711df-102">Receive Oracle Database Change Notifications Using the WCF Service Model1</span></span>
 <span data-ttu-id="711df-103">このトピックの内容を構成する方法を示しています、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースからクエリ通知メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="711df-103">This topic demonstrates how to configure the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to receive query notification messages from an Oracle database.</span></span> <span data-ttu-id="711df-104">通知を示すためには、ACCOUNTACTIVITY、列を含むテーブル「処理」を検討してください。</span><span class="sxs-lookup"><span data-stu-id="711df-104">To demonstrate notifications, consider a table, ACCOUNTACTIVITY, with a “Processed” column.</span></span> <span data-ttu-id="711df-105">[状態] 列の値に設定がこのテーブルに新しいレコードが挿入されると、' n ' です。</span><span class="sxs-lookup"><span data-stu-id="711df-105">When a new record is inserted to this table, the value of the Status column is set to ‘n’.</span></span> <span data-ttu-id="711df-106">通知を受信すると「処理済み」の列が含まれるすべてのレコードを取得する SQL ステートメントを使用して通知を登録することによって、アダプターを構成することができます 'n' です。</span><span class="sxs-lookup"><span data-stu-id="711df-106">You can configure the adapter to receive notifications by registering for notifications using a SQL statement that retrieves all records that have “Processed” column as ‘n’.</span></span> <span data-ttu-id="711df-107">これを行うための SQL ステートメントを指定することによって、 **NotificationStatement**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="711df-107">You can do so by specifying the SQL statement for the **NotificationStatement** binding property.</span></span> <span data-ttu-id="711df-108">アダプターのクライアントは、通知を受信した後は、Oracle データベースでの後続のタスクを実行するためのロジックを格納できます。</span><span class="sxs-lookup"><span data-stu-id="711df-108">Once the adapter client receives the notification, it can contain the logic to do any subsequent tasks on the Oracle database.</span></span> <span data-ttu-id="711df-109">わかりやすくするため、この例では、アダプターのクライアントの一覧として「処理」列が含まれるテーブル内のすべてのレコード 'n' です。</span><span class="sxs-lookup"><span data-stu-id="711df-109">In this example, for the sake of simplicity, the adapter client lists all the records in the table that have the “Processed” column as ‘n’.</span></span>  

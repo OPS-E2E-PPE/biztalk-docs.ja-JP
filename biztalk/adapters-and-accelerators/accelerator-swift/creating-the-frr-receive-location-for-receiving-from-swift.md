@@ -1,18 +1,18 @@
 ---
-title: "SWIFT から受信するための受信場所の作成、FRR |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT から受信するための受信場所の作成、FRR |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive locations, creating
 - creating, receive locations
 - FRR, creating receive locations
 ms.assetid: e10857f4-21cb-4c09-8eed-cb6e9b0a0aa9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210154"
 ---
 # <a name="creating-the-frr-receive-location-for-receiving-from-swift"></a><span data-ttu-id="6c74e-102">SWIFT から受信するための受信場所の FRR を作成します。</span><span class="sxs-lookup"><span data-stu-id="6c74e-102">Creating the FRR Receive Location for Receiving from SWIFT</span></span>
 <span data-ttu-id="6c74e-103">FIN 対応調整を実行するには、A4SWIFT に SWIFT ネットワークからメッセージを受信する受信場所を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6c74e-103">To perform FIN Response Reconciliation, you need to create a receive location that receives a message from the SWIFT Network into A4SWIFT.</span></span>  
@@ -62,9 +63,9 @@ ms.lasthandoff: 09/20/2017
   
 10. <span data-ttu-id="6c74e-132">[MQSeries トランスポートのプロパティ] ダイアログ ボックスで、**キュー定義**、クリックして、省略記号 (**.**) ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="6c74e-132">In the MQSeries Transport Properties dialog box, click **Queue Definition**, and then click the ellipsis (**…**) button.</span></span>  
   
-11. <span data-ttu-id="6c74e-133">**キュー定義**ダイアログ ボックスで、MQSeries サーバー、キュー マネージャーでは、入力をキューに登録します。</span><span class="sxs-lookup"><span data-stu-id="6c74e-133">In the **Queue Definition** dialog box, enter the MQSeries server, queue manager, and queue.</span></span> <span data-ttu-id="6c74e-134">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6c74e-134">Click **OK**.</span></span>  
+11. <span data-ttu-id="6c74e-133">**キュー定義**ダイアログ ボックスで、MQSeries サーバー、キュー マネージャーでは、入力をキューに登録します。</span><span class="sxs-lookup"><span data-stu-id="6c74e-133">In the **Queue Definition** dialog box, enter the MQSeries server, queue manager, and queue.</span></span> <span data-ttu-id="6c74e-134">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6c74e-134">Click **OK**.</span></span>  
   
-12. <span data-ttu-id="6c74e-135">**MQSeries トランスポートのプロパティ** ダイアログ ボックスで、プロパティが必要なことを確認します。</span><span class="sxs-lookup"><span data-stu-id="6c74e-135">In the **MQSeries Transport Properties** dialog box, verify that the properties are as needed.</span></span> <span data-ttu-id="6c74e-136">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6c74e-136">Click **OK**.</span></span>  
+12. <span data-ttu-id="6c74e-135">**MQSeries トランスポートのプロパティ** ダイアログ ボックスで、プロパティが必要なことを確認します。</span><span class="sxs-lookup"><span data-stu-id="6c74e-135">In the **MQSeries Transport Properties** dialog box, verify that the properties are as needed.</span></span> <span data-ttu-id="6c74e-136">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6c74e-136">Click **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="6c74e-137">MQSeries トランスポートのプロパティの詳細については、MQSeries のマニュアルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="6c74e-137">For more information about MQSeries transport properties, see the MQSeries documentation.</span></span>  

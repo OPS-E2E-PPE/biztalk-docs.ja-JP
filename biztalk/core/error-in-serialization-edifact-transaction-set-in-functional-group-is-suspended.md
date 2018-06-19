@@ -1,14 +1,14 @@
 ---
-title: "シリアル化中にエラーが発生しました。 Edifact トランザクション セットの機能グループに含まれているが次のエラーで中断されています |Microsoft ドキュメント"
-ms.custom: 
+title: シリアル化中にエラーが発生しました。 Edifact トランザクション セットの機能グループに含まれているが次のエラーで中断されています |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 24b76086-334b-45fb-85f8-82e3335daac4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241434"
 ---
 # <a name="error-encountered-during-serialization-the-edifact-transaction-set-contained-in-functional-group-is-being-suspended-with-following-errors"></a><span data-ttu-id="9a389-103">シリアル化中にエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="9a389-103">Error encountered during serialization.</span></span> <span data-ttu-id="9a389-104">機能グループに含まれる EDIFACT トランザクション セットが次のエラーで中断されています</span><span class="sxs-lookup"><span data-stu-id="9a389-104">The Edifact transaction set contained in functional group is being suspended with following errors</span></span>
 ## <a name="details"></a><span data-ttu-id="9a389-105">詳細</span><span class="sxs-lookup"><span data-stu-id="9a389-105">Details</span></span>  

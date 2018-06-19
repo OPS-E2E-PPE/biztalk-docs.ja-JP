@@ -1,14 +1,14 @@
 ---
-title: "BAM ポータルをバックアップする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルをバックアップする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8cea02e6-e387-4048-a1f3-d7c3c562f470
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247122"
 ---
 # <a name="how-to-back-up-the-bam-portal"></a><span data-ttu-id="94767-102">BAM ポータルをバックアップする方法</span><span class="sxs-lookup"><span data-stu-id="94767-102">How to Back Up the BAM Portal</span></span>
 <span data-ttu-id="94767-103">ビジネス アクティビティの監視 (BAM) を使用している場合は、BizTalk Server のバックアップ処理の一環として BAM ポータルをバックアップする必要があります。</span><span class="sxs-lookup"><span data-stu-id="94767-103">If you are using Business Activity Monitoring (BAM), you must back up the BAM portal as part of backing up your BizTalk server.</span></span> <span data-ttu-id="94767-104">BAM を使用していない場合は、この手順を省略できます。</span><span class="sxs-lookup"><span data-stu-id="94767-104">If you are not using BAM, this procedure is optional.</span></span>  
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-back-up-the-bam-portal-iis-70"></a><span data-ttu-id="94767-114">BAM ポータル (IIS 7.0) をバックアップするには</span><span class="sxs-lookup"><span data-stu-id="94767-114">To back up the BAM portal (IIS 7.0)</span></span>  
   
-1.  <span data-ttu-id="94767-115">**[スタート]**ボタンをクリックし、 **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="94767-115">Click **Start**, and then click **Run**.</span></span>  
+1.  <span data-ttu-id="94767-115">**[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="94767-115">Click **Start**, and then click **Run**.</span></span>  
   
 2.  <span data-ttu-id="94767-116">実行 ダイアログ ボックスで、名前 ボックスで、以下を入力: `runas /user:` *computername*`\`*accountname* `cmd`、クリックして**OK**またはキーを押して**Enter**です。</span><span class="sxs-lookup"><span data-stu-id="94767-116">On the Run dialog, in the Open box, type the following: `runas /user:`*computername*`\`*accountname* `cmd`, and then click **OK** or press **Enter**.</span></span>  
   

@@ -1,17 +1,17 @@
 ---
-title: "ASPX ページの接続のタイムアウトの設定 |Microsoft ドキュメント"
-ms.custom: 
+title: ASPX ページの接続のタイムアウトの設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ASPX pages, connection time-out
 - connections, time-out
 ms.assetid: 61d9c996-caf4-48bd-bda7-52f2797a941b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207194"
 ---
 # <a name="setting-the-connection-time-out-for-an-aspx-page"></a><span data-ttu-id="69e9c-102">ASPX ページの接続のタイムアウトの設定</span><span class="sxs-lookup"><span data-stu-id="69e9c-102">Setting the Connection Time-Out for an ASPX Page</span></span>
 <span data-ttu-id="69e9c-103">同期メッセージに ASPX ページを使用する場合は、着信メッセージを待機できるように、ASPX ページの接続タイムアウトを増やす必要があります。</span><span class="sxs-lookup"><span data-stu-id="69e9c-103">When you use an ASPX page for synchronous messages, you must increase the connection time-out for the ASPX page so that it can wait for the expected message.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="69e9c-112">IIS マネージャーでは、ローカル コンピューターのノードを展開し、順に展開**Websites**です。</span><span class="sxs-lookup"><span data-stu-id="69e9c-112">In IIS Manager, expand the node for the local computer, and then expand **Web Sites**.</span></span>  
   
-3.  <span data-ttu-id="69e9c-113">**[既定の Web サイト]**を右クリックし、 **[プロパティ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="69e9c-113">Right-click **Default Web Site**, and then click **Properties**.</span></span>  
+3.  <span data-ttu-id="69e9c-113">**[既定の Web サイト]** を右クリックし、 **[プロパティ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="69e9c-113">Right-click **Default Web Site**, and then click **Properties**.</span></span>  
   
 4.  <span data-ttu-id="69e9c-114">既定の Web サイトのプロパティ ダイアログ ボックスで、 **Web サイト** タブの 、**接続タイムアウト**ボックスで、適切な値を入力し、をクリックして**ok**です。</span><span class="sxs-lookup"><span data-stu-id="69e9c-114">In the Default Web Site Properties dialog box, on the **Web Site** tab, in the **Connection Timeout** box, type an appropriate value, and then click **OK**.</span></span>  
   

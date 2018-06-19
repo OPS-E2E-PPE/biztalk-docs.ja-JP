@@ -1,15 +1,15 @@
 ---
-title: "Wcf-siebel アダプターを使用してポートの構成 |Microsoft ドキュメント"
-description: "BizTalk Server で Siebel eBusiness Applications アダプターを使用する WCF Siebel 送信ポートを作成します。"
-ms.custom: 
+title: Wcf-siebel アダプターを使用してポートの構成 |Microsoft ドキュメント
+description: BizTalk Server で Siebel eBusiness Applications アダプターを使用する WCF Siebel 送信ポートを作成します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e6314104-c742-440c-b530-b5a82295353a
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222442"
 ---
 # <a name="configure-a-port-using-the-wcf-siebel-adapter"></a><span data-ttu-id="6d75f-103">Wcf-siebel アダプターを使用してポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="6d75f-103">Configure a port using the WCF-Siebel adapter</span></span>
 <span data-ttu-id="6d75f-104">Siebel システムを使用して、出力方向の操作を実行する WCF Siebel 送信ポートを構成する方法、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="6d75f-104">How to configure WCF-Siebel send ports to perform outbound operations on a Siebel system using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span>  
@@ -74,7 +75,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="6d75f-136">**受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。</span><span class="sxs-lookup"><span data-stu-id="6d75f-136">From the **Receive pipeline** drop-down list, select the pipeline corresponding to XMLReceive.</span></span>  
   
-12. <span data-ttu-id="6d75f-137">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d75f-137">Click **OK**.</span></span>  
+12. <span data-ttu-id="6d75f-137">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d75f-137">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="6d75f-138">参照</span><span class="sxs-lookup"><span data-stu-id="6d75f-138">See Also</span></span>  
 [<span data-ttu-id="6d75f-139">Siebel アダプターを物理ポートのバインドを手動で構成します。</span><span class="sxs-lookup"><span data-stu-id="6d75f-139">Manually configure a physical port binding to the Siebel adapter</span></span>](../../adapters-and-accelerators/adapter-siebel/manually-configure-a-physical-port-binding-to-the-siebel-adapter.md)

@@ -1,14 +1,14 @@
 ---
-title: "SharePoint で Siebel アダプターの使用時の考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: SharePoint で Siebel アダプターの使用時の考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea7da079-3250-4ecc-bf01-6b5495c7f380
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223922"
 ---
 # <a name="considerations-when-using-the-siebel-adapter-with-sharepoint"></a><span data-ttu-id="33546-102">SharePoint で Siebel アダプターの使用時の考慮事項</span><span class="sxs-lookup"><span data-stu-id="33546-102">Considerations when using the Siebel adapter with SharePoint</span></span>
 <span data-ttu-id="33546-103">このトピックの内容には使用しているときに発生する可能性の問題に関する情報が含まれています、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]解像度と共に、Microsoft Office SharePoint Server とします。</span><span class="sxs-lookup"><span data-stu-id="33546-103">This topic contains information about the issues you might encounter while using the [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] with Microsoft Office SharePoint Server, along with resolutions.</span></span> <span data-ttu-id="33546-104">問題は、2 つのカテゴリに分けられます。</span><span class="sxs-lookup"><span data-stu-id="33546-104">The issues are divided into two categories:</span></span>  

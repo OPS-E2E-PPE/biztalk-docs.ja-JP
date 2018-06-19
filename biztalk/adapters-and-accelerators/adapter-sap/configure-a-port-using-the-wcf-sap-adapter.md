@@ -1,15 +1,15 @@
 ---
-title: "Biztalk WCF SAP アダプターを使用してポートを構成する |Microsoft ドキュメント"
-description: "MySAP アダプターの BizTalk アダプター パック (BAP) を使用して SAP からのメッセージの送受信に WCF SAP ポートを作成します。"
-ms.custom: 
+title: Biztalk WCF SAP アダプターを使用してポートを構成する |Microsoft ドキュメント
+description: MySAP アダプターの BizTalk アダプター パック (BAP) を使用して SAP からのメッセージの送受信に WCF SAP ポートを作成します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 420683f8-2516-4c65-895d-fe535824d450
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218738"
 ---
 # <a name="configure-a-port-using-the-wcf-sap-adapter"></a><span data-ttu-id="ecbcf-103">WCF SAP アダプターを使用してポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="ecbcf-103">Configure a port using the WCF-SAP adapter</span></span>
 <span data-ttu-id="ecbcf-104">このトピックでは、WCF SAP を構成する方法については、送信および受信ポートを使用して SAP システムでの送信および受信操作を実行を[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ecbcf-104">This topic provides instructions on how to configure WCF-SAP send and receive ports to perform outbound and inbound operations on SAP system using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span>  
@@ -77,7 +78,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="ecbcf-138">**受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。</span><span class="sxs-lookup"><span data-stu-id="ecbcf-138">From the **Receive pipeline** drop-down list, select the pipeline corresponding to XMLReceive.</span></span>  
   
-12. <span data-ttu-id="ecbcf-139">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ecbcf-139">Click **OK**.</span></span>  
+12. <span data-ttu-id="ecbcf-139">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ecbcf-139">Click **OK**.</span></span>  
   
 ## <a name="deploy-adapters-to-receive-messages-from-sap"></a><span data-ttu-id="ecbcf-140">SAP からメッセージを受信アダプターを展開します。</span><span class="sxs-lookup"><span data-stu-id="ecbcf-140">Deploy adapters to receive messages from SAP</span></span>  
 <span data-ttu-id="ecbcf-141">WCF SAP を構成する次の手順を使用して SAP システムからメッセージを受信するためのポートの受信完了、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="ecbcf-141">Complete the following steps to configure a WCF-SAP receive port for receiving messages from SAP system using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "FIN 対応調整 |Microsoft ドキュメント"
-ms.custom: 
+title: FIN 対応調整 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ACKs
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - FIN Response Reconciliation, about FIN Response Reconciliation
 - FIN Response Reconciliation, acknowledgements
 ms.assetid: 987b932b-e487-4ca8-acd0-410d71df8e6d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208258"
 ---
 # <a name="fin-response-reconciliation"></a><span data-ttu-id="1a781-102">FIN 対応調整</span><span class="sxs-lookup"><span data-stu-id="1a781-102">FIN Response Reconciliation</span></span>
 <span data-ttu-id="1a781-103">機能は、FIN 対応調整 (FRR)[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]によって送信される対応する元のメッセージに FIN 応答の整合性を保ちます[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="1a781-103">The FIN Response Reconciliation (FRR) feature of [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] reconciles a FIN response with the corresponding original message sent by [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)].</span></span> <span data-ttu-id="1a781-104">これは、元のメッセージの状態を確立でき、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]その状態に基づいた手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="1a781-104">This establishes the status of the original message, and enables [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] to take steps based upon that status.</span></span> <span data-ttu-id="1a781-105">調整なしこのいない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="1a781-105">Without reconciliation, this would not be possible.</span></span> [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]<span data-ttu-id="1a781-106">かわかることと、正常終了 (または失敗)、メッセージを送信元 SAA に、送信の状態を示す SAA から受け取った応答必要がありますが、2 つの間の接続を作成することはできません。</span><span class="sxs-lookup"><span data-stu-id="1a781-106"> would know that it successfully (or unsuccessfully) sent the original message to SAA, and it would have the response that it received from SAA, indicating the status of the transmission, but it would not be able to make the connection between the two.</span></span> <span data-ttu-id="1a781-107">FRR は、その接続を確立します。</span><span class="sxs-lookup"><span data-stu-id="1a781-107">FRR establishes that connection.</span></span>  

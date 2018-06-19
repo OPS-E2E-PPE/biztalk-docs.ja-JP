@@ -1,11 +1,11 @@
 ---
-title: "サンプルのハブベース シナリオ |Microsoft ドキュメント"
-ms.custom: 
+title: サンプルのハブベース シナリオ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - supply chains, examples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - examples, supply chains
 - trading partners, supply chains
 ms.assetid: ee92c24d-a281-4950-a61e-9cb3bd08d291
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210418"
 ---
 # <a name="sample-hub-based-scenario"></a><span data-ttu-id="2fa30-102">サンプルのハブベース シナリオ</span><span class="sxs-lookup"><span data-stu-id="2fa30-102">Sample Hub-Based Scenario</span></span>
 <span data-ttu-id="2fa30-103">多くのサプライ チェーン シナリオでは、企業が、各取引先に対して RNIF (RosettaNet Implementation Framework) 接続を構築します。</span><span class="sxs-lookup"><span data-stu-id="2fa30-103">In many supply-chain scenarios, a company will work with each of their trading partners to institute a RosettaNet Implementation Framework (RNIF) connection.</span></span> <span data-ttu-id="2fa30-104">これにより、サプライ チェーン全体の通信を効率的に標準化できます。</span><span class="sxs-lookup"><span data-stu-id="2fa30-104">This is an effective way to standardize communications throughout the supply chain.</span></span> <span data-ttu-id="2fa30-105">このシナリオについては、「[サンプル サプライ チェーン シナリオ](../../adapters-and-accelerators/accelerator-rosettanet/sample-supply-chain-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="2fa30-105">This scenario is described in [Sample Supply Chain Scenario](../../adapters-and-accelerators/accelerator-rosettanet/sample-supply-chain-scenario.md).</span></span>  

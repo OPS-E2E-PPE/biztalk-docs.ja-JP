@@ -1,18 +1,18 @@
 ---
-title: "先行する量フィールドの検証時にゼロをサポートする |Microsoft ドキュメント"
-ms.custom: 
+title: 先行する量フィールドの検証時にゼロをサポートする |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - amounts, amount fields
 - amounts, leading zeros
 - validating, amount fields
 ms.assetid: 7c202422-019f-43da-9c2a-4b9fdf0b2859
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961368"
 ---
 # <a name="supporting-leading-zeros-in-amount-field-validations"></a><span data-ttu-id="bf5c8-102">先行する量フィールドの検証時にゼロをサポートします。</span><span class="sxs-lookup"><span data-stu-id="bf5c8-102">Supporting Leading Zeros in Amount Field Validations</span></span>
 <span data-ttu-id="bf5c8-103">一部のメッセージ型の検証ポリシーは、金額のフィールドの検証を実行します。</span><span class="sxs-lookup"><span data-stu-id="bf5c8-103">The validation policies of some message types perform validations on Amount fields.</span></span> <span data-ttu-id="bf5c8-104">金額フィールドには先行ゼロを有効にするには、メッセージの種類の検証ポリシーを編集する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bf5c8-104">To enable leading zeros in Amount fields, you must edit the validation policy for the message type.</span></span> <span data-ttu-id="bf5c8-105">既定の検証ポリシーの新しいバージョンを作成して、ビジネス ルール作成ツールの引数を編集またはポリシーを展開する前に、のテキスト エディターで手動で既定のポリシーを編集することができます。</span><span class="sxs-lookup"><span data-stu-id="bf5c8-105">You can create a new version of the default validation policy, and edit the argument in the Business Rule Composer, or you can edit the default policy manually in a text editor before the policy is deployed.</span></span>  

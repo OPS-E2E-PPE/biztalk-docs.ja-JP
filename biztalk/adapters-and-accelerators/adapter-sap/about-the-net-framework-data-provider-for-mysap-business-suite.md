@@ -1,11 +1,11 @@
 ---
-title: ".NET Framework Data Provider for mySAP Business Suite |Microsoft ドキュメント"
-ms.custom: 
+title: .NET Framework Data Provider for mySAP Business Suite |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSIS
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - custom RFC
 - Visual Studio DDEX plug-in
 ms.assetid: 4832f789-c1d8-4c5d-a49d-b1da6b7d4bd4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217410"
 ---
 # <a name="about-the-net-framework-data-provider-for-mysap-business-suite"></a><span data-ttu-id="55422-102">.NET Framework Data Provider for mySAP Business Suite</span><span class="sxs-lookup"><span data-stu-id="55422-102">About the .NET Framework Data Provider for mySAP Business Suite</span></span>
 <span data-ttu-id="55422-103">このセクションの内容に関する情報を提供する、 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) とその機能します。</span><span class="sxs-lookup"><span data-stu-id="55422-103">This section provides information about the [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) and its features.</span></span> <span data-ttu-id="55422-104">使用する方法については、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]を参照してください[mySAP Business Suite の .NET Framework データ プロバイダーを使用して](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)です。</span><span class="sxs-lookup"><span data-stu-id="55422-104">For instructions about how to use the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)], see [Use the .NET Framework Data Provider for mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md).</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "手順 2: 構成 Wcf-custom 一方向受信ポート |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: 構成 Wcf-custom 一方向受信ポート |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF-Custom one-way receive port, configuring
 - migration
 ms.assetid: e2a8f074-64d5-4e6c-84d0-318fb606c0ba
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218554"
 ---
 # <a name="step-2-configure-a-wcf-custom-one-way-receive-port"></a><span data-ttu-id="51b22-102">手順 2: 構成 Wcf-custom 一方向受信ポート</span><span class="sxs-lookup"><span data-stu-id="51b22-102">Step 2: Configure a WCF-Custom One-way Receive Port</span></span>
 <span data-ttu-id="51b22-103">![手順 3 の 2](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span><span class="sxs-lookup"><span data-stu-id="51b22-103">![Step 2 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span></span>  
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="51b22-120">**Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="51b22-120">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="51b22-121">クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、接続、SAP システムからメッセージを受信 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="51b22-121">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI to receive messages from the SAP system.</span></span> <span data-ttu-id="51b22-122">SAP システムからメッセージを受信する URI の接続は、次の形式である必要があります。</span><span class="sxs-lookup"><span data-stu-id="51b22-122">The connection URI to receive messages from the SAP system must be in the following format:</span></span>  
+    1.  <span data-ttu-id="51b22-121">クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、接続、SAP システムからメッセージを受信 URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="51b22-121">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI to receive messages from the SAP system.</span></span> <span data-ttu-id="51b22-122">SAP システムからメッセージを受信する URI の接続は、次の形式である必要があります。</span><span class="sxs-lookup"><span data-stu-id="51b22-122">The connection URI to receive messages from the SAP system must be in the following format:</span></span>  
   
         ```  
         sap://Client=800;lang=EN@A/YourSAPHOST/00?ListenerGwHost=YourSAPHOST&ListenerGwServ=SAPGW00&ListenerProgramId=MyProgramId  
@@ -97,7 +98,7 @@ ms.lasthandoff: 09/20/2017
   
 10. <span data-ttu-id="51b22-150">**受信パイプライン**ドロップダウン リストで、 **ConvertToXML**です。</span><span class="sxs-lookup"><span data-stu-id="51b22-150">From the **Receive pipeline** drop-down list, select **ConvertToXML**.</span></span> <span data-ttu-id="51b22-151">このフラット ファイル逆アセンブラー パイプラインはフラット ファイル IDOC を XML IDOC に変換する vPrev BizTalk プロジェクトの一部では既にです。</span><span class="sxs-lookup"><span data-stu-id="51b22-151">This flat-file disassembler pipeline is already a part of the vPrev BizTalk project to convert a flat-file IDOC to an XML IDOC.</span></span>  
   
-11. <span data-ttu-id="51b22-152">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51b22-152">Click **OK**.</span></span>  
+11. <span data-ttu-id="51b22-152">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51b22-152">Click **OK**.</span></span>  
   
 ### <a name="to-configure-the-biztalk-application"></a><span data-ttu-id="51b22-153">BizTalk アプリケーションを構成するには</span><span class="sxs-lookup"><span data-stu-id="51b22-153">To configure the BizTalk application</span></span>  
   
@@ -113,7 +114,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="51b22-160">フラット ファイル IDOC を受信するファイル ポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="51b22-160">Select a file port where you will receive the flat-file IDOC.</span></span>  
   
-    3.  <span data-ttu-id="51b22-161">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51b22-161">Click **OK**.</span></span>  
+    3.  <span data-ttu-id="51b22-161">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51b22-161">Click **OK**.</span></span>  
   
      <span data-ttu-id="51b22-162">アプリケーションの構成の詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=102360](http://go.microsoft.com/fwlink/?LinkId=102360)です。</span><span class="sxs-lookup"><span data-stu-id="51b22-162">For more information about configuring an application, see [http://go.microsoft.com/fwlink/?LinkId=102360](http://go.microsoft.com/fwlink/?LinkId=102360).</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "手順 4: アプリケーションのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: アプリケーションのテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 488b13fa-7a71-4430-bbf5-dbf47ba55562
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223034"
 ---
 # <a name="step-4-test-the-application"></a><span data-ttu-id="41c0e-102">手順 4: アプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="41c0e-102">Step 4: Test the Application</span></span>
 <span data-ttu-id="41c0e-103">![4 のステップ 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span><span class="sxs-lookup"><span data-stu-id="41c0e-103">![Step 4 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span></span>  
   
  <span data-ttu-id="41c0e-104">**所要時間:** 10 分</span><span class="sxs-lookup"><span data-stu-id="41c0e-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="41c0e-105">**目標:**内のレコードを挿入することで、アプリケーションをテストするこの手順で、**従業員**のテーブル、 **ADAPTER_SAMPLES**データベース。</span><span class="sxs-lookup"><span data-stu-id="41c0e-105">**Objective:** In this step, you test the application by inserting a record in the **Employee** table of the **ADAPTER_SAMPLES** database.</span></span> <span data-ttu-id="41c0e-106">オーケストレーションはへの変更の通知を受け取る場合は、アプリケーションが正しく機能する、**従業員**テーブル。</span><span class="sxs-lookup"><span data-stu-id="41c0e-106">If the application is working properly, the orchestration receives a notification for changes to the **Employee** table.</span></span> <span data-ttu-id="41c0e-107">オーケストレーションは、受信した通知の種類を抽出します。</span><span class="sxs-lookup"><span data-stu-id="41c0e-107">The orchestration then extracts the type of notification received.</span></span> <span data-ttu-id="41c0e-108">オーケストレーションが実行される挿入操作の通知がある場合、 **UPDATE_EMPLOYEE**ストアド プロシージャと、応答を受信します。</span><span class="sxs-lookup"><span data-stu-id="41c0e-108">If the notification is for an Insert operation, the orchestration executes the **UPDATE_EMPLOYEE** stored procedure and receives a response.</span></span> <span data-ttu-id="41c0e-109">オーケストレーションの値を抽出する**Employee_ID**と**名前**応答からし、それらに挿入、 **Purchase_Order**テーブル。</span><span class="sxs-lookup"><span data-stu-id="41c0e-109">The orchestration extracts the values of **Employee_ID** and **Name** from the response and inserts them into the **Purchase_Order** table.</span></span>  
+ <span data-ttu-id="41c0e-105">**目標:** 内のレコードを挿入することで、アプリケーションをテストするこの手順で、**従業員**のテーブル、 **ADAPTER_SAMPLES**データベース。</span><span class="sxs-lookup"><span data-stu-id="41c0e-105">**Objective:** In this step, you test the application by inserting a record in the **Employee** table of the **ADAPTER_SAMPLES** database.</span></span> <span data-ttu-id="41c0e-106">オーケストレーションはへの変更の通知を受け取る場合は、アプリケーションが正しく機能する、**従業員**テーブル。</span><span class="sxs-lookup"><span data-stu-id="41c0e-106">If the application is working properly, the orchestration receives a notification for changes to the **Employee** table.</span></span> <span data-ttu-id="41c0e-107">オーケストレーションは、受信した通知の種類を抽出します。</span><span class="sxs-lookup"><span data-stu-id="41c0e-107">The orchestration then extracts the type of notification received.</span></span> <span data-ttu-id="41c0e-108">オーケストレーションが実行される挿入操作の通知がある場合、 **UPDATE_EMPLOYEE**ストアド プロシージャと、応答を受信します。</span><span class="sxs-lookup"><span data-stu-id="41c0e-108">If the notification is for an Insert operation, the orchestration executes the **UPDATE_EMPLOYEE** stored procedure and receives a response.</span></span> <span data-ttu-id="41c0e-109">オーケストレーションの値を抽出する**Employee_ID**と**名前**応答からし、それらに挿入、 **Purchase_Order**テーブル。</span><span class="sxs-lookup"><span data-stu-id="41c0e-109">The orchestration extracts the values of **Employee_ID** and **Name** from the response and inserts them into the **Purchase_Order** table.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="41c0e-110">前提条件</span><span class="sxs-lookup"><span data-stu-id="41c0e-110">Prerequisites</span></span>  
  <span data-ttu-id="41c0e-111">この手順を始める前に、次を確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="41c0e-111">Before starting with this step, you must ensure the following:</span></span>  

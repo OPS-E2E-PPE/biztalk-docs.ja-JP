@@ -1,15 +1,15 @@
 ---
-title: "EXECQUERY ステートメントの例は、BizTalk での mySAP アダプターで |Microsoft ドキュメント"
-description: "EXECQUERY 例と、mySAP アダプターの BizTalk アダプター パック (BAP) を使用するサンプル"
-ms.custom: 
+title: EXECQUERY ステートメントの例は、BizTalk での mySAP アダプターで |Microsoft ドキュメント
+description: EXECQUERY 例と、mySAP アダプターの BizTalk アダプター パック (BAP) を使用するサンプル
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4139af16-7c38-4ea2-b3e5-5acf8fc1f3c4
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216242"
 ---
 # <a name="examples-for-execquery-statement"></a><span data-ttu-id="e2233-103">EXECQUERY ステートメントの例</span><span class="sxs-lookup"><span data-stu-id="e2233-103">Examples for EXECQUERY Statement</span></span>
 <span data-ttu-id="e2233-104">このトピックでは、EXECQUERY ステートメントの例を示します。</span><span class="sxs-lookup"><span data-stu-id="e2233-104">This topic provides sample EXECQUERY statements.</span></span>  

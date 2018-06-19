@@ -1,14 +1,14 @@
 ---
-title: "シングル サインオン: イベント 10536 |Microsoft ドキュメント"
-ms.custom: 
+title: 'シングル サインオン: イベント 10536 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d493a45b-c4ed-40fc-8803-b3ca12f9795b
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271234"
 ---
 # <a name="single-sign-on-event-10536"></a><span data-ttu-id="e5757-102">シングル サインオン: イベント 10536</span><span class="sxs-lookup"><span data-stu-id="e5757-102">Single Sign-On: Event 10536</span></span>
 ## <a name="details"></a><span data-ttu-id="e5757-103">詳細</span><span class="sxs-lookup"><span data-stu-id="e5757-103">Details</span></span>  
@@ -34,17 +35,17 @@ ms.lasthandoff: 09/20/2017
 ## <a name="explanation"></a><span data-ttu-id="e5757-123">説明</span><span class="sxs-lookup"><span data-stu-id="e5757-123">Explanation</span></span>  
  <span data-ttu-id="e5757-124">この警告監査イベントは、ユーザー定義の監査レベルを満たすイベントが発生したことを示します。</span><span class="sxs-lookup"><span data-stu-id="e5757-124">This Warning Audit event indicates that an event that meets the user defined audit level has occurred.</span></span> <span data-ttu-id="e5757-125">このイベント メッセージには次の項目が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e5757-125">This event message includes:</span></span>  
   
- <span data-ttu-id="e5757-126">**関数:**実行されている関数</span><span class="sxs-lookup"><span data-stu-id="e5757-126">**Function:** Function being performed</span></span>  
+ <span data-ttu-id="e5757-126">**関数:** 実行されている関数</span><span class="sxs-lookup"><span data-stu-id="e5757-126">**Function:** Function being performed</span></span>  
   
  <span data-ttu-id="e5757-127">**追跡 ID:** SSO API が最初に生成された一意の GUID が呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="e5757-127">**Tracking ID:** Unique GUID generated when an SSO API is first called.</span></span>  
   
- <span data-ttu-id="e5757-128">**クライアント コンピューター:**関数が開始したクライアント コンピューター。</span><span class="sxs-lookup"><span data-stu-id="e5757-128">**Client Computer:** Client computer where the function originated.</span></span>  
+ <span data-ttu-id="e5757-128">**クライアント コンピューター:** 関数が開始したクライアント コンピューター。</span><span class="sxs-lookup"><span data-stu-id="e5757-128">**Client Computer:** Client computer where the function originated.</span></span>  
   
- <span data-ttu-id="e5757-129">**クライアント ユーザー:**関数を呼び出したユーザー アカウントの名前。</span><span class="sxs-lookup"><span data-stu-id="e5757-129">**Client User:** The name of the user account that invoked the function.</span></span>  
+ <span data-ttu-id="e5757-129">**クライアント ユーザー:** 関数を呼び出したユーザー アカウントの名前。</span><span class="sxs-lookup"><span data-stu-id="e5757-129">**Client User:** The name of the user account that invoked the function.</span></span>  
   
  <span data-ttu-id="e5757-130">**アプリケーション名:** SSO の名前は、この関数に関連付けられているアプリケーションを関連します。</span><span class="sxs-lookup"><span data-stu-id="e5757-130">**Application Name:** Name of the SSO affiliate application associated with this function.</span></span>  
   
- <span data-ttu-id="e5757-131">**エラー コード:**エラーの一意の識別子。</span><span class="sxs-lookup"><span data-stu-id="e5757-131">**Error Code:** Unique error identifier.</span></span>  
+ <span data-ttu-id="e5757-131">**エラー コード:** エラーの一意の識別子。</span><span class="sxs-lookup"><span data-stu-id="e5757-131">**Error Code:** Unique error identifier.</span></span>  
   
  <span data-ttu-id="e5757-132">この種類のイベントは、開発、トラブルシューティング、またはアプリケーションの実行時に発生した問題の診断に使用されます。</span><span class="sxs-lookup"><span data-stu-id="e5757-132">This type of event is used for diagnosing problems during development, troubleshooting, or running of an application.</span></span> <span data-ttu-id="e5757-133">表示された情報を使用して、実行中の SSO API 呼び出しを判別できます。</span><span class="sxs-lookup"><span data-stu-id="e5757-133">Information provided can be used to determine the SSO API call being made.</span></span>  
   

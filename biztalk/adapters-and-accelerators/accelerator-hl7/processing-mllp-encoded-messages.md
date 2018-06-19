@@ -1,17 +1,17 @@
 ---
-title: "MLLP でエンコードされたメッセージの処理 |Microsoft ドキュメント"
-ms.custom: 
+title: MLLP でエンコードされたメッセージの処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MLLP-encoded messages, processing
 - MLLP-encoded messages
 ms.assetid: 906524fa-5870-4336-bc9a-e90c4461f053
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205970"
 ---
 # <a name="processing-mllp-encoded-messages"></a><span data-ttu-id="4ef6e-102">MLLP でエンコードされたメッセージの処理</span><span class="sxs-lookup"><span data-stu-id="4ef6e-102">Processing MLLP-encoded Messages</span></span>
 <span data-ttu-id="4ef6e-103">次のセクションでは、受信アダプターの詳細については、最小下位層プロトコル (MLLP) と、MLLP HL7 V2 を使用するアダプターの送信を提供します。メッセージの処理 x。</span><span class="sxs-lookup"><span data-stu-id="4ef6e-103">The following sections provide information about the Minimal Lower Layer Protocol (MLLP) receive adapter and the MLLP send adapter used for HL7 V2.X message processing.</span></span>  

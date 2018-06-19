@@ -1,17 +1,17 @@
 ---
-title: "オーケストレーションのインスタンスの情報を表示する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションのインスタンスの情報を表示する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, viewing
 - managing [orchestrations], viewing
 ms.assetid: 860ac2b2-c556-4e1f-8b7f-18ab8be52db4
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256530"
 ---
 # <a name="how-to-view-instance-information-for-an-orchestration"></a><span data-ttu-id="05f06-102">オーケストレーションのインスタンス情報を表示する方法</span><span class="sxs-lookup"><span data-stu-id="05f06-102">How to View Instance Information for an Orchestration</span></span>
 <span data-ttu-id="05f06-103">このトピックでは、BizTalk Server 管理コンソールを使用して、オーケストレーションのインスタンス情報を表示する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="05f06-103">This topic describes how to view instance information for an orchestration by using the BizTalk Server Administration console.</span></span> <span data-ttu-id="05f06-104">サービスのインスタンスとは、後続の処理や追跡を目的に BizTalk Server が処理しているオーケストレーションのインスタンス、または、メッセージ ボックスにシリアル化したオーケストレーションのインスタンスを指します。</span><span class="sxs-lookup"><span data-stu-id="05f06-104">A service instance is an instance of an orchestration that BizTalk Server is either processing or has serialized into the MessageBox for further processing or tracking.</span></span>  

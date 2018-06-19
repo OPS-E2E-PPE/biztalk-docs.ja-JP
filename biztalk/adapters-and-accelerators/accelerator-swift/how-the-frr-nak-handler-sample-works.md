@@ -1,14 +1,14 @@
 ---
-title: "FRR NAK ハンドラー サンプルの動作 |Microsoft ドキュメント"
-ms.custom: 
+title: FRR NAK ハンドラー サンプルの動作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f11bd20-3a0e-4d96-8e0a-32fecc7eed7e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209202"
 ---
 # <a name="how-the-frr-nak-handler-sample-works"></a><span data-ttu-id="b4890-102">FRR NAK ハンドラーのサンプルのしくみ</span><span class="sxs-lookup"><span data-stu-id="b4890-102">How the FRR NAK Handler Sample Works</span></span>
 <span data-ttu-id="b4890-103">サンプル FRR NAK カスタム ハンドラーは、FIN 対応調整 (FRR) オーケストレーションとメッセージ修復オーケストレーション間の媒介として機能します。</span><span class="sxs-lookup"><span data-stu-id="b4890-103">The sample FRR NAK custom handler serves as an intermediary between the FIN Response Reconciliation (FRR) orchestration and the message-repair orchestration.</span></span> <span data-ttu-id="b4890-104">FRR オーケストレーションでは、SWIFT ネットワークは、メッセージを受信しようとしました。 ときに発生したエラーを識別します。</span><span class="sxs-lookup"><span data-stu-id="b4890-104">The FRR orchestration identifies the error that occurred when the SWIFT network attempted to receive the message.</span></span> <span data-ttu-id="b4890-105">FRR オーケストレーションの出力は、エラー オブジェクトを 1 つの部分から成るメッセージです。</span><span class="sxs-lookup"><span data-stu-id="b4890-105">The output of the FRR orchestration is a one-part message with an error object.</span></span> <span data-ttu-id="b4890-106">FRR NAK カスタム ハンドラーは、そのメッセージをメッセージ修復オーケストレーションによって取り出されるメッセージの有効化して発生したエラーを示すエラー部分を含む、2 つの部分のメッセージに変換します。</span><span class="sxs-lookup"><span data-stu-id="b4890-106">The FRR NAK custom handler transforms that message into a two-part message, with an error part that indicates the error that occurred, enabling the message to be picked up by the message-repair orchestration.</span></span> <span data-ttu-id="b4890-107">メッセージ修復オーケストレーションでメッセージを開くと、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォーム、エラーの確認、同様に、メッセージを修復して再送信することができますができるように[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]SAA を再送信できます。</span><span class="sxs-lookup"><span data-stu-id="b4890-107">The message-repair orchestration opens the message in an [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] form that enables you to find out what the error was, repair the message accordingly, and resubmit it so that [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] can resend it to SAA.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "ACK メッセージ モード |Microsoft ドキュメント"
-ms.custom: 
+title: ACK メッセージ モード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message modes, ACK messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - acknowledgements, message modes
 - ACK message modes
 ms.assetid: ab4a9470-dab2-46d4-8d0a-54dc12f2fa90
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204402"
 ---
 # <a name="ack-message-modes"></a><span data-ttu-id="99128-102">ACK メッセージ モード</span><span class="sxs-lookup"><span data-stu-id="99128-102">ACK Message Modes</span></span>
 <span data-ttu-id="99128-103">確認 (ACK) メッセージの[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 受信確認モードおよびを生成する ACK の MSH15 および MSH16 フィールドを設定するために使用する値を決定します。</span><span class="sxs-lookup"><span data-stu-id="99128-103">For acknowledgment (ACK) messages, [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) determines the acknowledgment mode and values to use for populating MSH15 and MSH16 fields of the ACK you want to generate.</span></span> <span data-ttu-id="99128-104">これらの値は、取引先管理 (TPM) 構成内に存在します。</span><span class="sxs-lookup"><span data-stu-id="99128-104">These values are present in the Trading Partner Management (TPM) configuration.</span></span> <span data-ttu-id="99128-105">次の値は、ACK モードの可能な。</span><span class="sxs-lookup"><span data-stu-id="99128-105">The following values are possible for ACK mode:</span></span>  

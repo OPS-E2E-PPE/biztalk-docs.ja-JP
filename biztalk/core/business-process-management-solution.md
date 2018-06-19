@@ -1,11 +1,11 @@
 ---
-title: "ビジネス プロセス管理ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス プロセス管理ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business solutions, tutorials
@@ -25,7 +25,7 @@ helpviewer_keywords:
 - orchestrations, tutorials
 - applications, process management solutions
 ms.assetid: 30ebd248-7e31-4608-ae50-4fc6703ae613
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -34,6 +34,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232098"
 ---
 # <a name="business-process-management-solution"></a><span data-ttu-id="eb7c7-102">ビジネス プロセス管理ソリューション</span><span class="sxs-lookup"><span data-stu-id="eb7c7-102">Business Process Management Solution</span></span>
 <span data-ttu-id="eb7c7-103">ビジネス プロセス管理ソリューションは、サービス注文処理のようなビジネス プロセスを管理する BizTalk アプリケーションを設計する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="eb7c7-103">The Business Process Management solution shows how to design a BizTalk application to manage a business process such as service order processing.</span></span> <span data-ttu-id="eb7c7-104">プロセス マネージャを構築する方法を示し、プロセスを独立した段階に分ける方法のガイダンスを提供します。</span><span class="sxs-lookup"><span data-stu-id="eb7c7-104">The solution demonstrates how to construct a process manager and provides guidance about dividing a process into distinct stages.</span></span> <span data-ttu-id="eb7c7-105">また、割り込み可能なオーケストレーションを構築する方法、および拡張的で洗練された例外処理についても説明します。</span><span class="sxs-lookup"><span data-stu-id="eb7c7-105">The solution also describes how to construct interruptible orchestrations as well as extensive, sophisticated exception handling.</span></span>  

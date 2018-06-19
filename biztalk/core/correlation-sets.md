@@ -1,11 +1,11 @@
 ---
-title: "関連付けセット |Microsoft ドキュメント"
-ms.custom: 
+title: 関連付けセット |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - correlation sets, inspecting
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - correlation sets, following correlation sets
 - correlation sets, initializing
 ms.assetid: 528dcd6c-d364-4bb8-8deb-cd4a0791867f
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968392"
 ---
 # <a name="correlation-sets"></a><span data-ttu-id="f9840-102">関連付けセット</span><span class="sxs-lookup"><span data-stu-id="f9840-102">Correlation Sets</span></span>
 <span data-ttu-id="f9840-103">関連付けセットを定義することによって、オーケストレーション インスタンスを使用して、このようなメッセージの関連付けを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="f9840-103">You can achieve this sort of correlation of messages with orchestration instances by defining correlation sets.</span></span> <span data-ttu-id="f9840-104">関連付けセットは、一連のプロパティ*値を指定して*です。</span><span class="sxs-lookup"><span data-stu-id="f9840-104">A correlation set is a set of properties *with specific values*.</span></span> <span data-ttu-id="f9840-105">これは、単なるプロパティの一覧である関連付けの種類とは異なります。</span><span class="sxs-lookup"><span data-stu-id="f9840-105">This is different from a correlation type, which is simply a list of properties.</span></span> <span data-ttu-id="f9840-106">受信メッセージがそれぞれに一致する値を持つこれらのプロパティの一部を持っていない場合は、関連付けは失敗し、オーケストレーション インスタンスはメッセージを受信しません。</span><span class="sxs-lookup"><span data-stu-id="f9840-106">If an incoming message does not have all of these properties, with matching values for each, correlation will fail and the message will not be received by the orchestration instance.</span></span>  

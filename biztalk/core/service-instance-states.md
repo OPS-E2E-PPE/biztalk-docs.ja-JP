@@ -1,18 +1,18 @@
 ---
-title: "サービス インスタンスの状態 |Microsoft ドキュメント"
-ms.custom: 
+title: サービス インスタンスの状態 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service instances, states
 - messages, processing
 - states, service instances
 ms.assetid: 38189538-72b3-49df-810b-e134362e35ef
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272570"
 ---
 # <a name="service-instance-states"></a><span data-ttu-id="e9c17-102">サービス インスタンスの状態</span><span class="sxs-lookup"><span data-stu-id="e9c17-102">Service Instance States</span></span>
 <span data-ttu-id="e9c17-103">メッセージの処理時には、次の操作が行われます。</span><span class="sxs-lookup"><span data-stu-id="e9c17-103">As a message is processed, the following actions take place:</span></span>  
@@ -56,7 +57,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="e9c17-126">**Active**</span><span class="sxs-lookup"><span data-stu-id="e9c17-126">**Active**</span></span>|<span data-ttu-id="e9c17-127">サービス インスタンスが実行されていることを示します。</span><span class="sxs-lookup"><span data-stu-id="e9c17-127">Running service instance.</span></span>|  
 |<span data-ttu-id="e9c17-128">**退避**</span><span class="sxs-lookup"><span data-stu-id="e9c17-128">**Dehydrated**</span></span>|<span data-ttu-id="e9c17-129">インスタンスの状態がメッセージ ボックス データベースに保存されていて、そのインスタンスを実行している Windows サービスが存在しないことを示します。</span><span class="sxs-lookup"><span data-stu-id="e9c17-129">Instance state persists in the MessageBox database and no Windows service is running that instance.</span></span>|  
 |<span data-ttu-id="e9c17-130">**メッセージを破棄して完了しました**</span><span class="sxs-lookup"><span data-stu-id="e9c17-130">**Completed with discarded messages**</span></span>|<span data-ttu-id="e9c17-131">サービス インスタンスは完了しましたが、一部のメッセージはインスタンスによって使用されませんでした。</span><span class="sxs-lookup"><span data-stu-id="e9c17-131">The service instance was completed, but some messages were not consumed by the instance.</span></span>|  
-|<span data-ttu-id="e9c17-132">**中断 (再開可能)**</span><span class="sxs-lookup"><span data-stu-id="e9c17-132">**Suspended (resumable)**</span></span>|<span data-ttu-id="e9c17-133">インスタンスが中断されていて、そのインスタンスを再開できることを示します。</span><span class="sxs-lookup"><span data-stu-id="e9c17-133">Instance suspended, you can resume it.</span></span> <span data-ttu-id="e9c17-134">**重要:**メッセージング インスタンスの再開は、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="e9c17-134">**Important:**  Resuming a messaging instance will do the following:</span></span> <ul><li><span data-ttu-id="e9c17-135">メッセージング インスタンスを再開します。</span><span class="sxs-lookup"><span data-stu-id="e9c17-135">Resume the messaging instance.</span></span></li><li><span data-ttu-id="e9c17-136">メッセージを送信ポートに送信します。</span><span class="sxs-lookup"><span data-stu-id="e9c17-136">Send the message to the send port.</span></span></li><li><span data-ttu-id="e9c17-137">送信ポートは、開始状態でなくてもメッセージを送信先に配信します。</span><span class="sxs-lookup"><span data-stu-id="e9c17-137">The send port delivers the message to the destination; even if the send port is not in a Started state.</span></span></li></ul> <br /><br /> <span data-ttu-id="e9c17-138">スケジュール済みのインスタンスを中断して再開すると、インスタンスは退避済み状態になることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="e9c17-138">Note that when you suspend a scheduled instance and then resume it, the instance goes into a dehydrated state.</span></span>|  
+|<span data-ttu-id="e9c17-132">**中断 (再開可能)**</span><span class="sxs-lookup"><span data-stu-id="e9c17-132">**Suspended (resumable)**</span></span>|<span data-ttu-id="e9c17-133">インスタンスが中断されていて、そのインスタンスを再開できることを示します。</span><span class="sxs-lookup"><span data-stu-id="e9c17-133">Instance suspended, you can resume it.</span></span> <span data-ttu-id="e9c17-134">**重要:** メッセージング インスタンスの再開は、次の操作します。</span><span class="sxs-lookup"><span data-stu-id="e9c17-134">**Important:**  Resuming a messaging instance will do the following:</span></span> <ul><li><span data-ttu-id="e9c17-135">メッセージング インスタンスを再開します。</span><span class="sxs-lookup"><span data-stu-id="e9c17-135">Resume the messaging instance.</span></span></li><li><span data-ttu-id="e9c17-136">メッセージを送信ポートに送信します。</span><span class="sxs-lookup"><span data-stu-id="e9c17-136">Send the message to the send port.</span></span></li><li><span data-ttu-id="e9c17-137">送信ポートは、開始状態でなくてもメッセージを送信先に配信します。</span><span class="sxs-lookup"><span data-stu-id="e9c17-137">The send port delivers the message to the destination; even if the send port is not in a Started state.</span></span></li></ul> <br /><br /> <span data-ttu-id="e9c17-138">スケジュール済みのインスタンスを中断して再開すると、インスタンスは退避済み状態になることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="e9c17-138">Note that when you suspend a scheduled instance and then resume it, the instance goes into a dehydrated state.</span></span>|  
 |<span data-ttu-id="e9c17-139">**中断 (再開不可)**</span><span class="sxs-lookup"><span data-stu-id="e9c17-139">**Suspended (not-resumable)**</span></span>|<span data-ttu-id="e9c17-140">インスタンスが中断されているが、そのインスタンスを再開できないことを示します。</span><span class="sxs-lookup"><span data-stu-id="e9c17-140">Instance suspended, but you cannot resume it.</span></span> <span data-ttu-id="e9c17-141">インスタンスによって参照されているメッセージを保存してから、そのインスタンスを終了させることができます。</span><span class="sxs-lookup"><span data-stu-id="e9c17-141">You can save the Messages referenced by the instance, and then you can terminate the instance.</span></span><br /><br /> <span data-ttu-id="e9c17-142">スケジュール済みのインスタンスを中断して再開すると、インスタンスは退避済み状態になることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="e9c17-142">Note that when you suspend a scheduled instance and then resume it, the instance goes into a dehydrated state.</span></span>|  
 |<span data-ttu-id="e9c17-143">**中断の保留/終了の保留**</span><span class="sxs-lookup"><span data-stu-id="e9c17-143">**Pending suspend/Pending terminate**</span></span>|<span data-ttu-id="e9c17-144">独立した状態ではありません。</span><span class="sxs-lookup"><span data-stu-id="e9c17-144">A status, not an independent state.</span></span> <span data-ttu-id="e9c17-145">この状態は、他の状態と組み合わせることができます。</span><span class="sxs-lookup"><span data-stu-id="e9c17-145">You can combine it with other states.</span></span><br /><br /> <span data-ttu-id="e9c17-146">中断または終了するコントロール メッセージがサービス インスタンスに送信されたが、まだそのインスタンスによって取得されていないことを示します。</span><span class="sxs-lookup"><span data-stu-id="e9c17-146">A control message to suspend or terminate was sent to a service instance, but has not yet been picked up by the instance.</span></span> <span data-ttu-id="e9c17-147">同時に保留できる操作は 1 つのみです。</span><span class="sxs-lookup"><span data-stu-id="e9c17-147">Only one pending operation allowed at a time.</span></span> <span data-ttu-id="e9c17-148">保留中の操作が含まれたインスタンスが退避済みの状態になったら、そのインスタンスを終了させることができます。</span><span class="sxs-lookup"><span data-stu-id="e9c17-148">When an instance with a pending operation becomes dehydrated, you can terminate the instance.</span></span>|  
   

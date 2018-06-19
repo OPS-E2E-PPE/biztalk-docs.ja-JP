@@ -1,18 +1,18 @@
 ---
-title: "考慮事項と既知の問題 TPE |Microsoft ドキュメント"
-ms.custom: 
+title: 考慮事項と既知の問題 TPE |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking Profile Editor, known issues
 - planning, Tracking Profile Editor
 - Tracking Profile Editor, planning
 ms.assetid: e96d85e0-e9ae-434a-b54e-5950f4a2b9c6
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234578"
 ---
 # <a name="considerations-and-known-issues-for-tpe"></a><span data-ttu-id="9bf43-102">TPE の考慮事項と既知の問題</span><span class="sxs-lookup"><span data-stu-id="9bf43-102">Considerations and Known Issues for TPE</span></span>
 <span data-ttu-id="9bf43-103">追跡プロファイルと TPE を操作する際に留意しなければならない点は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="9bf43-103">You should consider the following issues when you work with tracking profiles and the TPE.</span></span>  
@@ -186,7 +187,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="9bf43-232">**データベース名**テキスト ボックスで使用されていたデータベース名を入力、**データベース名**のフィールド、**データ ストア**gridon、**カスタム構成Manager**グループのページです。</span><span class="sxs-lookup"><span data-stu-id="9bf43-232">In the **Database name** text box, enter the database name that was used in the **Database Name** field of the **Data Stores** gridon the **Custom Configuration Manager** group page.</span></span>  
   
-8.  <span data-ttu-id="9bf43-233">クリックして、 **[ok]**エントリを保存するボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="9bf43-233">Click the **OK** button to save the entries.</span></span>  
+8.  <span data-ttu-id="9bf43-233">クリックして、 **[ok]** エントリを保存するボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="9bf43-233">Click the **OK** button to save the entries.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="9bf43-234">参照</span><span class="sxs-lookup"><span data-stu-id="9bf43-234">See Also</span></span>  
  <span data-ttu-id="9bf43-235">[TPE の使用](../core/using-the-tpe.md) </span><span class="sxs-lookup"><span data-stu-id="9bf43-235">[Using the TPE](../core/using-the-tpe.md) </span></span>  

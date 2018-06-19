@@ -1,11 +1,11 @@
 ---
-title: "Oracle データベース アダプターのパフォーマンス カウンターを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターのパフォーマンス カウンターを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance counters, using
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - performance counters, enabling
 - performance counters, and the WCF LOB Adapter SDK
 ms.assetid: beb80896-7594-411e-a83c-169d5278e2ce
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215186"
 ---
 # <a name="use-performance-counters-with-the-oracle-database-adapter"></a><span data-ttu-id="bb498-102">Oracle データベース アダプターのパフォーマンス カウンターを使用します。</span><span class="sxs-lookup"><span data-stu-id="bb498-102">Use performance counters with the Oracle Database adapter</span></span>
 <span data-ttu-id="bb498-103">Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]クライアントは、アダプターのパフォーマンスを測定するパフォーマンス カウンターを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="bb498-103">Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] clients can use performance counters to gauge the performance of the adapters.</span></span> <span data-ttu-id="bb498-104">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムは、パフォーマンス カウンターのカテゴリを作成**BizTalk .NET Adapter for Oracle DB**をインストールすると共に、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="bb498-104">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup program creates the performance counter category **BizTalk .NET Adapter for Oracle DB** along with installing the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].</span></span>  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967472"
 ---
 # <a name="cbr-biztalk-server-sample"></a><span data-ttu-id="3e7ac-102">CBR (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="3e7ac-102">CBR (BizTalk Server Sample)</span></span>
 <span data-ttu-id="3e7ac-103">CBR サンプルの使用例、 **ExplorerOM**管理オブジェクトを追加して新しい構成が BizTalk メッセージのコンテンツ ベース ルーティング用のポートを送信します。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-103">The CBR sample demonstrates using the **ExplorerOM** administrative objects to add and configure new send ports for content-based routing of BizTalk messages.</span></span>  
@@ -64,7 +65,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="3e7ac-135">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル CBR.sln を開きます。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-135">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file CBR.sln.</span></span>  
   
-3.  <span data-ttu-id="3e7ac-136">**[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-136">On the **Build** menu, click **Build Solution**.</span></span>  
+3.  <span data-ttu-id="3e7ac-136">**[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3e7ac-136">On the **Build** menu, click **Build Solution**.</span></span>  
   
 #### <a name="to-run-this-sample"></a><span data-ttu-id="3e7ac-137">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="3e7ac-137">To run this sample</span></span>  
   

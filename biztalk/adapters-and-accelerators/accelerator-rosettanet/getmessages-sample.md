@@ -1,14 +1,14 @@
 ---
-title: "GetMessages サンプル |Microsoft ドキュメント"
-ms.custom: 
+title: GetMessages サンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 29e575fa-d68b-4975-84b8-da4f17bd2db3
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210738"
 ---
 # <a name="getmessages-sample"></a><span data-ttu-id="652bf-102">GetMessages サンプル</span><span class="sxs-lookup"><span data-stu-id="652bf-102">GetMessages Sample</span></span>
 <span data-ttu-id="652bf-103">ここでは、メッセージ否認不可テーブルまたは基幹業務 (LOB) テーブルから、ユーザーが理解できる形式でメッセージを取得するためのサンプル コードについて説明します。</span><span class="sxs-lookup"><span data-stu-id="652bf-103">This topic provides sample code that you can use to retrieve messages from one of the message non-repudiation tables or one of the line-of-business (LOB) tables in a readable form.</span></span> <span data-ttu-id="652bf-104">メッセージ否認不可テーブルには、[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]Archive データベースの MessageStorageIn および MessageStorageOut が含まれます。LOB テーブルには、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]DATA データベースの MessageFromLOB および MessageToLOB が含まれます。</span><span class="sxs-lookup"><span data-stu-id="652bf-104">The message non-repudiation tables include MessageStorageIn and MessageStorageOut in the [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]Archive database; the LOB tables include MessageFromLOB and MessageToLOB in the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]DATA database.</span></span>  

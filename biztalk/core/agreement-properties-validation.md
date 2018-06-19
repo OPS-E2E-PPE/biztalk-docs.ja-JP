@@ -1,14 +1,14 @@
 ---
-title: "アグリーメントのプロパティの検証 |Microsoft ドキュメント"
-ms.custom: 
+title: アグリーメントのプロパティの検証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9d565c26-37ef-4aee-aebb-3152880242a1
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22229874"
 ---
 # <a name="agreement-properties-validation"></a><span data-ttu-id="43cf1-102">アグリーメントのプロパティの検証</span><span class="sxs-lookup"><span data-stu-id="43cf1-102">Agreement Properties Validation</span></span>
 <span data-ttu-id="43cf1-103">アグリーメントのプロパティには、インターチェンジ、グループ、またはトランザクション セットの重複した制御番号のチェックが含まれます。</span><span class="sxs-lookup"><span data-stu-id="43cf1-103">Agreement properties include checks for duplicate control numbers for interchanges, groups, or transaction sets.</span></span> <span data-ttu-id="43cf1-104">EDI 受信パイプラインは、アグリーメントのプロパティで有効になっている場合にのみ、それらの検証を実行します。</span><span class="sxs-lookup"><span data-stu-id="43cf1-104">The EDI receive pipeline will perform these validations only if they are enabled in agreement properties.</span></span> <span data-ttu-id="43cf1-105">次のような検証が行われます。</span><span class="sxs-lookup"><span data-stu-id="43cf1-105">These validations include:</span></span>  

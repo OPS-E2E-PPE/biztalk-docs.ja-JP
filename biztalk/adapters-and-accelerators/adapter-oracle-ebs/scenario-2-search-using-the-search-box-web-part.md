@@ -1,14 +1,14 @@
 ---
-title: "シナリオ 2: 検索ボックス web パーツを使用して検索を |Microsoft ドキュメント"
-ms.custom: 
+title: 'シナリオ 2: 検索ボックス web パーツを使用して検索を |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a233772f-7577-4ac5-b55a-cb1ba2f464c7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218546"
 ---
 # <a name="scenario-2--search-using-the-search-box-web-part"></a><span data-ttu-id="05726-102">検索ボックス web パーツを使用して検索をシナリオ 2。</span><span class="sxs-lookup"><span data-stu-id="05726-102">Scenario 2:  Search using the search box web part</span></span>
 <span data-ttu-id="05726-103">Microsoft Office SharePoint server の全文検索を実行できるを使用して検索アプリケーションを構成する検索の設定を構成する Oracle E-business Suite で MS_SAMPLE_EMPLOYEE インターフェイス テーブル。</span><span class="sxs-lookup"><span data-stu-id="05726-103">We will configure the search settings in Microsoft Office SharePoint Server to configure a search application using which you can perform a full text search on the MS_SAMPLE_EMPLOYEE interface table in Oracle E-Business Suite.</span></span> <span data-ttu-id="05726-104">後から検索を行うことができますに検索ボックス Web パーツを追加します。</span><span class="sxs-lookup"><span data-stu-id="05726-104">Later, we will add a Search Box Web Part to from where you can perform the search.</span></span>  
@@ -113,7 +114,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  <span data-ttu-id="05726-161">**スコープ**領域で、選択、 **MS_SAMPLE_EMPLOYEE_Search**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="05726-161">In the **Scopes** area, select the **MS_SAMPLE_EMPLOYEE_Search** check box.</span></span>  
   
-    2.  <span data-ttu-id="05726-162">**既定のスコープ**領域で、をクリックして**MS_SAMPLE_EMPLOYEE_Search**で、**既定のスコープ**ボックスの一覧し、をクリックして**[ok]**です。</span><span class="sxs-lookup"><span data-stu-id="05726-162">In the **Default Scope** area, click **MS_SAMPLE_EMPLOYEE_Search** in the **Default Scope** list, and then click **OK**.</span></span>  
+    2.  <span data-ttu-id="05726-162">**既定のスコープ**領域で、をクリックして**MS_SAMPLE_EMPLOYEE_Search**で、**既定のスコープ**ボックスの一覧し、をクリックして **[ok]** です。</span><span class="sxs-lookup"><span data-stu-id="05726-162">In the **Default Scope** area, click **MS_SAMPLE_EMPLOYEE_Search** in the **Default Scope** list, and then click **OK**.</span></span>  
   
          <span data-ttu-id="05726-163">![スコープ表示グループの編集ページ](../../adapters-and-accelerators/adapter-oracle-ebs/media/31-edit-scope-display-group.gif "31 _ edit_scope_display_group")</span><span class="sxs-lookup"><span data-stu-id="05726-163">![Edit Scope Display Group page](../../adapters-and-accelerators/adapter-oracle-ebs/media/31-edit-scope-display-group.gif "31_Edit_Scope_Display_Group")</span></span>  
   

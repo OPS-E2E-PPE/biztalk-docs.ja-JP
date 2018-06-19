@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Adapter 用 mySAP Business Suite の概要 |Microsoft ドキュメント"
-description: "カスタム Rfc のインストール、アダプターについて、SAP、mySAP アダプターの BizTalk アダプター パック (BAP) を使用するチュートリアルのステップでタスクを RFC および IDOC 完了"
-ms.custom: 
+title: BizTalk Adapter 用 mySAP Business Suite の概要 |Microsoft ドキュメント
+description: カスタム Rfc のインストール、アダプターについて、SAP、mySAP アダプターの BizTalk アダプター パック (BAP) を使用するチュートリアルのステップでタスクを RFC および IDOC 完了
+ms.custom: ''
 ms.date: 08/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e2013253-f911-4e35-a33a-b4a9bcb136aa
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216322"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-mysap-business-suite"></a><span data-ttu-id="9d002-103">BizTalk Adapter 用 mySAP Business Suite の概要します。</span><span class="sxs-lookup"><span data-stu-id="9d002-103">Get started with the BizTalk Adapter for mySAP Business Suite</span></span>
 <span data-ttu-id="9d002-104">このセクションでは Microsoft に新しいユーザーのアダプター、前提条件、およびトピックの概要を説明する[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="9d002-104">This section provides an overview of the adapter, prerequisites, and topics for users who are new to Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].</span></span> <span data-ttu-id="9d002-105">機能についても説明[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]とアダプターを使用して SAP システムで実行できるさまざまな操作です。</span><span class="sxs-lookup"><span data-stu-id="9d002-105">It discusses the features of [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] and the different operations that can be performed on the SAP system using the adapter.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "トランザクションの EDIFACT フォールバック アグリーメント プロパティの構成の設定 |Microsoft ドキュメント"
-ms.custom: 
+title: トランザクションの EDIFACT フォールバック アグリーメント プロパティの構成の設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a42add2d-5e4b-4590-b8b2-813aa4f29b46
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232498"
 ---
 # <a name="configuring-edifact-fallback-agreement-properties-for-transaction-set-settings"></a><span data-ttu-id="965c5-102">トランザクション セット設定の EDIFACT フォールバック アグリーメント プロパティの構成</span><span class="sxs-lookup"><span data-stu-id="965c5-102">Configuring EDIFACT Fallback Agreement Properties for Transaction Set Settings</span></span>
 <span data-ttu-id="965c5-103">EDIFACT トランザクション セットの設定では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で 2 つのパーティ間で交換されるトランザクション セットを処理する方法を定義します。</span><span class="sxs-lookup"><span data-stu-id="965c5-103">EDIFACT transaction set settings define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes the transaction sets being exchanged between two parties.</span></span>  

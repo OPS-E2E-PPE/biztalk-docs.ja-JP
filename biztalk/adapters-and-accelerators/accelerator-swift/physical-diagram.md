@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22213962"
 ---
 # <a name="physical-diagram"></a><span data-ttu-id="70343-102">物理的なダイアグラム</span><span class="sxs-lookup"><span data-stu-id="70343-102">Physical Diagram</span></span>
 <span data-ttu-id="70343-103">一般的な展開には、メッセージング (送信および受信) を BizTalk Server コンピューターがクラスター化されたビジネス プロセス (オーケストレーション)、InfoPath テンプレート (MRSR サイト) にアクセスするための BizTalk Server コンピューターを実行するための BizTalk Server コンピューターとクラスター化された SQL Server コンピューター。</span><span class="sxs-lookup"><span data-stu-id="70343-103">A typical deployment has clustered BizTalk Server computers for messaging (sending and receiving), BizTalk Server computers for executing the business process (orchestration), BizTalk Server computers for accessing the InfoPath templates (MRSR site), and clustered SQL Server computers.</span></span> <span data-ttu-id="70343-104">次の展開では、イントラネットとインターネット ユーザーの両方からセキュリティで保護された環境が保証されます。</span><span class="sxs-lookup"><span data-stu-id="70343-104">The following deployment ensures a secure environment from both the intranet and Internet users.</span></span>  

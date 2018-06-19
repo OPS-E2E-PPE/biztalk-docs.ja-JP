@@ -1,18 +1,18 @@
 ---
-title: "ACK メッセージ スキーマの種類 |Microsoft ドキュメント"
-ms.custom: 
+title: ACK メッセージ スキーマの種類 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, ACK schemas
 - acknowledgements, ACK schema types
 - ACK messages
 ms.assetid: da6981a0-a70a-481e-8db4-4a6851f205f1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,11 +21,12 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960960"
 ---
 # <a name="ack-message-schema-types"></a><span data-ttu-id="bec11-102">ACK メッセージ スキーマの種類</span><span class="sxs-lookup"><span data-stu-id="bec11-102">ACK Message Schema Types</span></span>
 <span data-ttu-id="bec11-103">受信確認メッセージのスキーマは 2 つの形式があります。</span><span class="sxs-lookup"><span data-stu-id="bec11-103">Acknowledgment message schemas come in two forms:</span></span>  
   
--   <span data-ttu-id="bec11-104">**一般的な確認 (ACK)**です。</span><span class="sxs-lookup"><span data-stu-id="bec11-104">**General acknowledgment (ACK)**.</span></span> <span data-ttu-id="bec11-105">アプリケーションは、特定の基幹業務アプリケーション レベルの受信確認メッセージを定義していない、またはエラーが発生したアプリケーションの処理が除外は、一般的な確認 (ACK) を使用できます。</span><span class="sxs-lookup"><span data-stu-id="bec11-105">You can use a general acknowledgment (ACK) where the application does not define a special line-of-business application level acknowledgment message or where an error occurred that precludes application processing.</span></span> <span data-ttu-id="bec11-106">これを使用することもできますのレベルの受信確認をそのまま使用します。</span><span class="sxs-lookup"><span data-stu-id="bec11-106">You can also use it for accept level acknowledgments.</span></span> <span data-ttu-id="bec11-107">次の表は、ACK メッセージの構造を示します。</span><span class="sxs-lookup"><span data-stu-id="bec11-107">The following table lists the ACK message structure.</span></span>  
+-   <span data-ttu-id="bec11-104">**一般的な確認 (ACK)** です。</span><span class="sxs-lookup"><span data-stu-id="bec11-104">**General acknowledgment (ACK)**.</span></span> <span data-ttu-id="bec11-105">アプリケーションは、特定の基幹業務アプリケーション レベルの受信確認メッセージを定義していない、またはエラーが発生したアプリケーションの処理が除外は、一般的な確認 (ACK) を使用できます。</span><span class="sxs-lookup"><span data-stu-id="bec11-105">You can use a general acknowledgment (ACK) where the application does not define a special line-of-business application level acknowledgment message or where an error occurred that precludes application processing.</span></span> <span data-ttu-id="bec11-106">これを使用することもできますのレベルの受信確認をそのまま使用します。</span><span class="sxs-lookup"><span data-stu-id="bec11-106">You can also use it for accept level acknowledgments.</span></span> <span data-ttu-id="bec11-107">次の表は、ACK メッセージの構造を示します。</span><span class="sxs-lookup"><span data-stu-id="bec11-107">The following table lists the ACK message structure.</span></span>  
   
     |<span data-ttu-id="bec11-108">ACK ^ 異なります ^ ACK</span><span class="sxs-lookup"><span data-stu-id="bec11-108">ACK^varies^ACK</span></span>|<span data-ttu-id="bec11-109">一般的な受信確認</span><span class="sxs-lookup"><span data-stu-id="bec11-109">General acknowledgment</span></span>|<span data-ttu-id="bec11-110">章</span><span class="sxs-lookup"><span data-stu-id="bec11-110">Chapter</span></span>|  
     |--------------------|----------------------------|-------------|  
@@ -33,7 +34,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="bec11-114">MSA</span><span class="sxs-lookup"><span data-stu-id="bec11-114">MSA</span></span>|<span data-ttu-id="bec11-115">メッセージの受信確認</span><span class="sxs-lookup"><span data-stu-id="bec11-115">Message Acknowledgment</span></span>|<span data-ttu-id="bec11-116">2</span><span class="sxs-lookup"><span data-stu-id="bec11-116">2</span></span>|  
     |<span data-ttu-id="bec11-117">[エラー]</span><span class="sxs-lookup"><span data-stu-id="bec11-117">[ ERR ]</span></span>|<span data-ttu-id="bec11-118">[エラー]</span><span class="sxs-lookup"><span data-stu-id="bec11-118">Error</span></span>|<span data-ttu-id="bec11-119">2</span><span class="sxs-lookup"><span data-stu-id="bec11-119">2</span></span>|  
   
--   <span data-ttu-id="bec11-120">**遅延確認応答 (MCF)**です。</span><span class="sxs-lookup"><span data-stu-id="bec11-120">**Delayed acknowledgment (MCF)**.</span></span> <span data-ttu-id="bec11-121">このメッセージは、HL7 バージョン 2.1 で旧バージョンとの互換性のためだけ存在します。</span><span class="sxs-lookup"><span data-stu-id="bec11-121">This message exists only for backward compatibility with HL7 Version 2.1.</span></span> <span data-ttu-id="bec11-122">非同期のアプリケーション レベル受信確認、MCF メッセージの一般的なフォームを作成するプロトコルの一部として使用するとします。</span><span class="sxs-lookup"><span data-stu-id="bec11-122">You use it as part of the protocol that creates a generic form of an asynchronous application level acknowledgment, the MCF message.</span></span> <span data-ttu-id="bec11-123">次の表は、MCF メッセージの構造を示します。</span><span class="sxs-lookup"><span data-stu-id="bec11-123">The following table lists the MCF message structure.</span></span>  
+-   <span data-ttu-id="bec11-120">**遅延確認応答 (MCF)** です。</span><span class="sxs-lookup"><span data-stu-id="bec11-120">**Delayed acknowledgment (MCF)**.</span></span> <span data-ttu-id="bec11-121">このメッセージは、HL7 バージョン 2.1 で旧バージョンとの互換性のためだけ存在します。</span><span class="sxs-lookup"><span data-stu-id="bec11-121">This message exists only for backward compatibility with HL7 Version 2.1.</span></span> <span data-ttu-id="bec11-122">非同期のアプリケーション レベル受信確認、MCF メッセージの一般的なフォームを作成するプロトコルの一部として使用するとします。</span><span class="sxs-lookup"><span data-stu-id="bec11-122">You use it as part of the protocol that creates a generic form of an asynchronous application level acknowledgment, the MCF message.</span></span> <span data-ttu-id="bec11-123">次の表は、MCF メッセージの構造を示します。</span><span class="sxs-lookup"><span data-stu-id="bec11-123">The following table lists the MCF message structure.</span></span>  
   
     |<span data-ttu-id="bec11-124">MCF ^ 異なります ^ ACK</span><span class="sxs-lookup"><span data-stu-id="bec11-124">MCF^varies^ACK</span></span>|<span data-ttu-id="bec11-125">受信確認の遅延</span><span class="sxs-lookup"><span data-stu-id="bec11-125">Delayed Acknowledgment</span></span>|<span data-ttu-id="bec11-126">章</span><span class="sxs-lookup"><span data-stu-id="bec11-126">Chapter</span></span>|  
     |--------------------|----------------------------|-------------|  

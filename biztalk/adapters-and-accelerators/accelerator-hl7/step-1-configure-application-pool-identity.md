@@ -1,17 +1,17 @@
 ---
-title: "手順 1: アプリケーション プール Id の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: アプリケーション プール Id の構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message enrichment tutorial, application pools
 - application pools
 ms.assetid: 66286327-8580-4378-89ee-ddd7204b03c6
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206578"
 ---
 # <a name="step-1-configure-application-pool-identity"></a><span data-ttu-id="06491-102">手順 1: アプリケーション プール Id を構成します。</span><span class="sxs-lookup"><span data-stu-id="06491-102">Step 1: Configure Application Pool Identity</span></span>
 <span data-ttu-id="06491-103">このチュートリアルでのアプリケーション プールを使用する[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]Web サービスとして公開するオーケストレーションを処理するように、インターネット インフォメーション サービス (IIS)。</span><span class="sxs-lookup"><span data-stu-id="06491-103">In this tutorial, you use an application pool in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Internet Information Services (IIS) to process the orchestration, which you publish as a Web service.</span></span> <span data-ttu-id="06491-104">アプリケーション プールは、ワーカー プロセスで処理された 1 つまたは複数の Url のグループです。</span><span class="sxs-lookup"><span data-stu-id="06491-104">An application pool is a grouping of one or more URLs served by a worker process.</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="06491-125">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="06491-125">**User name**</span></span>|<span data-ttu-id="06491-126">ワーカー プロセスを操作するアカウントのユーザー名を入力します。</span><span class="sxs-lookup"><span data-stu-id="06491-126">Type the user name of the account under which you want the worker process to operate.</span></span>|  
     |<span data-ttu-id="06491-127">**Password**</span><span class="sxs-lookup"><span data-stu-id="06491-127">**Password**</span></span>|<span data-ttu-id="06491-128">パスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="06491-128">Type the password.</span></span>|  
   
-5.  <span data-ttu-id="06491-129">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="06491-129">Click **OK**.</span></span>  
+5.  <span data-ttu-id="06491-129">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="06491-129">Click **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="06491-130">代わりに、セキュリティ強化のため、このチュートリアルに対応したアクセス許可で作成したカスタム id を実行しているまったく新しいアプリケーション プールを作成できます。</span><span class="sxs-lookup"><span data-stu-id="06491-130">Alternatively, for increased security, you could create an entirely new application pool that runs under a custom identity that you create with permissions tailored for this tutorial.</span></span>  

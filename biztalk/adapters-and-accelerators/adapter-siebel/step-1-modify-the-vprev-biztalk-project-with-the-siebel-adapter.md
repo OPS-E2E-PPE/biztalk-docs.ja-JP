@@ -1,14 +1,14 @@
 ---
-title: "手順 1: 変更の Siebel アダプターと BizTalk プロジェクト vPrev |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: 変更の Siebel アダプターと BizTalk プロジェクト vPrev |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b7bd95e2-bd51-420f-8156-6f17cc0e91d6
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224066"
 ---
 # <a name="step-1-modify-the-vprev-biztalk-project-with-the-siebel-adapter"></a><span data-ttu-id="5af1b-102">手順 1: Siebel アダプターと vPrev BizTalk プロジェクトを変更します。</span><span class="sxs-lookup"><span data-stu-id="5af1b-102">Step 1: Modify the vPrev BizTalk Project with the Siebel adapter</span></span>
 <span data-ttu-id="5af1b-103">![手順 1/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")</span><span class="sxs-lookup"><span data-stu-id="5af1b-103">![Step 1 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")</span></span>  
   
  <span data-ttu-id="5af1b-104">**所要時間:** 10 分</span><span class="sxs-lookup"><span data-stu-id="5af1b-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="5af1b-105">**目標:**このステップで、次を変更する既存の vPrev BizTalk プロジェクト。</span><span class="sxs-lookup"><span data-stu-id="5af1b-105">**Objective:** In this step, you make the following changes to the existing vPrev BizTalk project:</span></span>  
+ <span data-ttu-id="5af1b-105">**目標:** このステップで、次を変更する既存の vPrev BizTalk プロジェクト。</span><span class="sxs-lookup"><span data-stu-id="5af1b-105">**Objective:** In this step, you make the following changes to the existing vPrev BizTalk project:</span></span>  
   
 -   <span data-ttu-id="5af1b-106">WCF ベースを使用してアカウントのビジネス コンポーネントに対する挿入操作のメタデータを生成[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-106">Generate metadata for the Insert operation on the Account business component using the WCF-based [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span>  
   
@@ -49,11 +50,11 @@ ms.lasthandoff: 09/20/2017
   
     1.  <span data-ttu-id="5af1b-126">BizTalk マッパーは、BizTalk プロジェクトに追加します。</span><span class="sxs-lookup"><span data-stu-id="5af1b-126">Add a BizTalk mapper to the BizTalk project.</span></span> <span data-ttu-id="5af1b-127">BizTalk プロジェクトを右クリックし、[**追加**、] をクリック**新しい項目の**します。</span><span class="sxs-lookup"><span data-stu-id="5af1b-127">Right-click the BizTalk project, point to **Add**, and click **New Item**.</span></span>  
   
-         <span data-ttu-id="5af1b-128">**新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-128">In the **Add New Item** dialog box, from the left pane, select **Map Files**.</span></span> <span data-ttu-id="5af1b-129">右側のウィンドウから次のように選択します。**マップ**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-129">From the right pane, select **Map**.</span></span> <span data-ttu-id="5af1b-130">など、マップの名前を指定**RequestMap.btm**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-130">Specify a name for the map, such as **RequestMap.btm**.</span></span> <span data-ttu-id="5af1b-131">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5af1b-131">Click **Add**.</span></span>  
+         <span data-ttu-id="5af1b-128">**新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-128">In the **Add New Item** dialog box, from the left pane, select **Map Files**.</span></span> <span data-ttu-id="5af1b-129">右側のウィンドウから次のように選択します。**マップ**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-129">From the right pane, select **Map**.</span></span> <span data-ttu-id="5af1b-130">など、マップの名前を指定**RequestMap.btm**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-130">Specify a name for the map, such as **RequestMap.btm**.</span></span> <span data-ttu-id="5af1b-131">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5af1b-131">Click **Add**.</span></span>  
   
     2.  <span data-ttu-id="5af1b-132">送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-132">From the Source Schema pane, click **Open Source Schema**.</span></span>  
   
-    3.  <span data-ttu-id="5af1b-133">**BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Siebel アダプターの要求メッセージのスキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="5af1b-133">In the **BizTalk Type Picker** dialog box, expand the project name, expand **Schemas**, and select the schema for the request message for the vPrev Siebel adapter.</span></span> <span data-ttu-id="5af1b-134">このチュートリアルでは、次のように選択します。 *Siebel_BussComp_Migration.AccountService_Account_x5d*です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-134">For this tutorial, select *Siebel_BussComp_Migration.AccountService_Account_x5d*.</span></span> <span data-ttu-id="5af1b-135">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5af1b-135">Click **OK**.</span></span>  
+    3.  <span data-ttu-id="5af1b-133">**BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Siebel アダプターの要求メッセージのスキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="5af1b-133">In the **BizTalk Type Picker** dialog box, expand the project name, expand **Schemas**, and select the schema for the request message for the vPrev Siebel adapter.</span></span> <span data-ttu-id="5af1b-134">このチュートリアルでは、次のように選択します。 *Siebel_BussComp_Migration.AccountService_Account_x5d*です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-134">For this tutorial, select *Siebel_BussComp_Migration.AccountService_Account_x5d*.</span></span> <span data-ttu-id="5af1b-135">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5af1b-135">Click **OK**.</span></span>  
   
     4.  <span data-ttu-id="5af1b-136">**送信元スキーマのルート ノード**ダイアログ ボックスで、*挿入*、順にクリック**OK**。</span><span class="sxs-lookup"><span data-stu-id="5af1b-136">In the **Root Node for Source Schema** dialog box, select *Insert*, and then click **OK**.</span></span>  
   
@@ -71,17 +72,17 @@ ms.lasthandoff: 09/20/2017
   
     1.  <span data-ttu-id="5af1b-144">BizTalk マッパーは、BizTalk プロジェクトに追加します。</span><span class="sxs-lookup"><span data-stu-id="5af1b-144">Add a BizTalk mapper to the BizTalk project.</span></span> <span data-ttu-id="5af1b-145">BizTalk プロジェクトを右クリックし、[**追加**、] をクリック**新しい項目の**します。</span><span class="sxs-lookup"><span data-stu-id="5af1b-145">Right-click the BizTalk project, point to **Add**, and click **New Item**.</span></span>  
   
-         <span data-ttu-id="5af1b-146">[新しい項目の追加] ダイアログ ボックスの左側のペインで選択**マップ ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-146">In the Add New Item dialog box, from the left pane, select **Map Files**.</span></span> <span data-ttu-id="5af1b-147">右側のウィンドウから次のように選択します。**マップ**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-147">From the right pane, select **Map**.</span></span> <span data-ttu-id="5af1b-148">など、マップの名前を指定**ResponseMap.btm**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-148">Specify a name for the map, such as **ResponseMap.btm**.</span></span> <span data-ttu-id="5af1b-149">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5af1b-149">Click **Add**.</span></span>  
+         <span data-ttu-id="5af1b-146">[新しい項目の追加] ダイアログ ボックスの左側のペインで選択**マップ ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-146">In the Add New Item dialog box, from the left pane, select **Map Files**.</span></span> <span data-ttu-id="5af1b-147">右側のウィンドウから次のように選択します。**マップ**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-147">From the right pane, select **Map**.</span></span> <span data-ttu-id="5af1b-148">など、マップの名前を指定**ResponseMap.btm**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-148">Specify a name for the map, such as **ResponseMap.btm**.</span></span> <span data-ttu-id="5af1b-149">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5af1b-149">Click **Add**.</span></span>  
   
     2.  <span data-ttu-id="5af1b-150">送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-150">From the Source Schema pane, click **Open Source Schema**.</span></span>  
   
-    3.  <span data-ttu-id="5af1b-151">**BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの応答メッセージのスキーマを選択して[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-151">In the **BizTalk Type Picker** dialog box, expand the project name, expand **Schemas**, and select the schema for the response message for the WCF-based [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span> <span data-ttu-id="5af1b-152">このチュートリアルでは、次のように選択します。 *Siebel_BussComp_Migration.SiebelDBBindingSchema*です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-152">For this tutorial, select *Siebel_BussComp_Migration.SiebelDBBindingSchema*.</span></span> <span data-ttu-id="5af1b-153">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5af1b-153">Click **OK**.</span></span>  
+    3.  <span data-ttu-id="5af1b-151">**BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの応答メッセージのスキーマを選択して[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-151">In the **BizTalk Type Picker** dialog box, expand the project name, expand **Schemas**, and select the schema for the response message for the WCF-based [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span> <span data-ttu-id="5af1b-152">このチュートリアルでは、次のように選択します。 *Siebel_BussComp_Migration.SiebelDBBindingSchema*です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-152">For this tutorial, select *Siebel_BussComp_Migration.SiebelDBBindingSchema*.</span></span> <span data-ttu-id="5af1b-153">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5af1b-153">Click **OK**.</span></span>  
   
     4.  <span data-ttu-id="5af1b-154">**送信元スキーマのルート ノード**ダイアログ ボックスで、 *InsertResponse*  をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-154">In the **Root Node for Source Schema** dialog box, select *InsertResponse* and click **OK**.</span></span>  
   
     5.  <span data-ttu-id="5af1b-155">送信先スキーマ ペインで、をクリックして**送信先スキーマを開く**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-155">From the Destination Schema pane, click **Open Destination Schema**.</span></span>  
   
-    6.  <span data-ttu-id="5af1b-156">**BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Siebel アダプターの応答メッセージのスキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="5af1b-156">In the **BizTalk Type Picker** dialog box, expand the project name, expand **Schemas**, and select the schema for the response message for the vPrev Siebel adapter.</span></span> <span data-ttu-id="5af1b-157">このチュートリアルでは、次のように選択します。 *Siebel_BussComp_Migration.AccountService_Account_x5d*です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-157">For this tutorial, select *Siebel_BussComp_Migration.AccountService_Account_x5d*.</span></span> <span data-ttu-id="5af1b-158">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5af1b-158">Click **OK**.</span></span>  
+    6.  <span data-ttu-id="5af1b-156">**BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Siebel アダプターの応答メッセージのスキーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="5af1b-156">In the **BizTalk Type Picker** dialog box, expand the project name, expand **Schemas**, and select the schema for the response message for the vPrev Siebel adapter.</span></span> <span data-ttu-id="5af1b-157">このチュートリアルでは、次のように選択します。 *Siebel_BussComp_Migration.AccountService_Account_x5d*です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-157">For this tutorial, select *Siebel_BussComp_Migration.AccountService_Account_x5d*.</span></span> <span data-ttu-id="5af1b-158">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5af1b-158">Click **OK**.</span></span>  
   
     7.  <span data-ttu-id="5af1b-159">**ターゲット スキーマのルート ノード**ダイアログ ボックスで、 *InsertResponse*  をクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="5af1b-159">In the **Root Node for Target Schema** dialog box, select *InsertResponse* and click **OK**.</span></span>  
   

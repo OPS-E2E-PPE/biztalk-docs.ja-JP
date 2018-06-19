@@ -1,17 +1,17 @@
 ---
-title: "クライアントの証明書ストアに証明書を追加する |Microsoft ドキュメント"
-ms.custom: 
+title: クライアントの証明書ストアに証明書を追加する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - certificates, adding to certificates store
 - certificates store
 ms.assetid: 9e2722ee-dd6f-4b14-9796-2f2157e8cad2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209498"
 ---
 # <a name="adding-certificates-to-the-certificates-store-on-the-client"></a><span data-ttu-id="9b5fb-102">クライアントの証明書ストアに証明書を追加します。</span><span class="sxs-lookup"><span data-stu-id="9b5fb-102">Adding Certificates to the Certificates Store on the Client</span></span>
 <span data-ttu-id="9b5fb-103">各クライアント コンピューターで証明書ストアの個人用フォルダーに証明書を追加するのにには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="9b5fb-103">Use the following steps to add certificates to the Personal folder in the certificates store on each client computer.</span></span> <span data-ttu-id="9b5fb-104">証明書 - 現在のユーザー ストアの個人用フォルダーには、証明書を追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9b5fb-104">The certificates must be added to the Personal folder in the Certificates - Current User store.</span></span>  
@@ -29,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-add-certificates-to-the-certificate-store"></a><span data-ttu-id="9b5fb-108">証明書ストアに証明書を追加するには</span><span class="sxs-lookup"><span data-stu-id="9b5fb-108">To add certificates to the certificate store</span></span>  
   
-1.  <span data-ttu-id="9b5fb-109">**[スタート]**ボタンをクリックし、 **[ファイル名を指定して実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9b5fb-109">Click **Start**, and then click **Run**.</span></span> <span data-ttu-id="9b5fb-110">入力**mmc**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="9b5fb-110">Enter **mmc**, and then click **OK**.</span></span>  
+1.  <span data-ttu-id="9b5fb-109">**[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9b5fb-109">Click **Start**, and then click **Run**.</span></span> <span data-ttu-id="9b5fb-110">入力**mmc**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="9b5fb-110">Enter **mmc**, and then click **OK**.</span></span>  
   
 2.  <span data-ttu-id="9b5fb-111">[Console1] ダイアログ ボックスで、**ファイル**、クリックして**スナップインの追加と削除**です。</span><span class="sxs-lookup"><span data-stu-id="9b5fb-111">In the Console1 dialog box, click **File**, and then click **Add/Remove Snap-in**.</span></span>  
   

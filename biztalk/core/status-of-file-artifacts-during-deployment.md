@@ -11,7 +11,7 @@ helpviewer_keywords:
 - artifacts, status
 - deploying [artifacts], status
 ms.assetid: 6d0f7336-c2cb-4aa4-9f1d-55fb85fe78bf
-caps.latest.revision: ''
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22276554"
 ---
 # <a name="status-of-file-artifacts-during-deployment"></a><span data-ttu-id="1ebaa-102">展開中のファイル アイテムの状態</span><span class="sxs-lookup"><span data-stu-id="1ebaa-102">Status of File Artifacts During Deployment</span></span>
 <span data-ttu-id="1ebaa-103">処理前または処理後のスクリプトの実行時に、ファイル システム上にどのようなファイルベースのアイテムが存在するかを知ることが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="1ebaa-103">You may need to know what file-based artifacts exist on the file system when a pre- or post-processing script executes.</span></span> <span data-ttu-id="1ebaa-104">たとえば、アンインストール時に処理後のスクリプトを実行して、特定のアイテム ファイルをファイル システムから削除する場合です。</span><span class="sxs-lookup"><span data-stu-id="1ebaa-104">For example, you might want a post-processing script to run during uninstallation and delete a certain artifact file from the file system.</span></span> <span data-ttu-id="1ebaa-105">ファイルベースのアイテムは、BizTalk データベース内の表現に加えて、ローカル ファイル システムにもファイルとして存在することができるアイテムです。</span><span class="sxs-lookup"><span data-stu-id="1ebaa-105">File-based artifacts are artifacts that can exist as files on the local file system, in addition to their representation in the BizTalk databases.</span></span> <span data-ttu-id="1ebaa-106">ファイルベースのアイテムの例としては、COM コンポーネント、.NET アセンブリ、BizTalk アセンブリ、BAM アイテム、アドホック ファイル、スクリプト、およびバインド ファイルが挙げられます。</span><span class="sxs-lookup"><span data-stu-id="1ebaa-106">Examples of file-based artifacts are COM components, .NET assemblies, BizTalk assemblies, BAM artifacts, ad hoc files, scripts, and binding files.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプタを使用して WCF チャネル モデルの概要 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプタを使用して WCF チャネル モデルの概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a5e5f77c-c922-4039-92c7-38d2b7638459
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966024"
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-sql-adapter"></a><span data-ttu-id="38737-102">SQL アダプタを使用して WCF チャネル モデルの概要</span><span class="sxs-lookup"><span data-stu-id="38737-102">Overview of the WCF channel model with the SQL adapter</span></span>
 <span data-ttu-id="38737-103">操作の呼び出しに、[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]コードが WCF クライアントとして機能し、アダプターに送信操作を送信します。</span><span class="sxs-lookup"><span data-stu-id="38737-103">To invoke operations on the [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)], your code acts as a WCF client and sends outbound operations to the adapter.</span></span> <span data-ttu-id="38737-104">WCF チャネル モデルでは、コードは、チャネル経由で要求メッセージを送信することによって、アダプターでの操作を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="38737-104">In the WCF channel model, your code invokes operations on the adapter by sending a request message over a channel.</span></span>  
@@ -57,7 +58,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="38737-143">メッセージのアクションは、SOAP メッセージ ヘッダーの一部である文字列です。</span><span class="sxs-lookup"><span data-stu-id="38737-143">The message action is a string that is part of the SOAP message header.</span></span> <span data-ttu-id="38737-144">メッセージのアクションでは、データベースで呼び出される操作を識別します。</span><span class="sxs-lookup"><span data-stu-id="38737-144">The message action identifies the operation that should be invoked on the database.</span></span> <span data-ttu-id="38737-145">Employee テーブルでの Select 操作の呼び出しに指定されたメッセージのアクションを次に示します:`TableOp/Select/dbo/Employee`です。</span><span class="sxs-lookup"><span data-stu-id="38737-145">The following shows the message action specified to invoke the Select operation on the Employee table: `TableOp/Select/dbo/Employee`.</span></span>  
   
--   <span data-ttu-id="38737-146">メッセージの本文には、操作のパラメーターのデータが含まれています。</span><span class="sxs-lookup"><span data-stu-id="38737-146">The message body contains the parameter data for the operation.</span></span> <span data-ttu-id="38737-147">メッセージ本文がによって予期されるメッセージ スキーマに対応する整形式 xml で構成される、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]要求された操作にします。</span><span class="sxs-lookup"><span data-stu-id="38737-147">The message body is composed of well-formed XML that corresponds to the message schema expected by the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] for the requested operation.</span></span> <span data-ttu-id="38737-148">次のメッセージ本文が Employee テーブルでの選択操作を指定します (選択 * 従業員 WHERE Employee_ID = 10001)。</span><span class="sxs-lookup"><span data-stu-id="38737-148">The following message body specifies a Select operation on the Employee table (SELECT * FROM Employee WHERE Employee_ID=10001).</span></span>  
+-   <span data-ttu-id="38737-146">メッセージの本文には、操作のパラメーターのデータが含まれています。</span><span class="sxs-lookup"><span data-stu-id="38737-146">The message body contains the parameter data for the operation.</span></span> <span data-ttu-id="38737-147">メッセージ本文がによって予期されるメッセージ スキーマに対応する整形式 xml で構成される、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]要求された操作にします。</span><span class="sxs-lookup"><span data-stu-id="38737-147">The message body is composed of well-formed XML that corresponds to the message schema expected by the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] for the requested operation.</span></span> <span data-ttu-id="38737-148">次のメッセージ本文が Employee テーブルでの選択操作を指定します (選択 \* 従業員 WHERE Employee_ID = 10001)。</span><span class="sxs-lookup"><span data-stu-id="38737-148">The following message body specifies a Select operation on the Employee table (SELECT \* FROM Employee WHERE Employee_ID=10001).</span></span>  
   
     ```  
     <Select xmlns="http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/Employee">  

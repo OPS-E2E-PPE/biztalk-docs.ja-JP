@@ -1,14 +1,14 @@
 ---
-title: "メッセージ送信 ASPX サンプル |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ送信 ASPX サンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8358f849-231f-432c-9fc2-6efdcf95580d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207202"
 ---
 # <a name="message-submission-aspx-sample"></a><span data-ttu-id="15ed8-102">メッセージ送信 ASPX サンプル</span><span class="sxs-lookup"><span data-stu-id="15ed8-102">Message Submission ASPX Sample</span></span>
 <span data-ttu-id="15ed8-103">ここでは、サービス内容をプライベート プロセスに送信するために使用するサンプル .aspx コードを提供します。</span><span class="sxs-lookup"><span data-stu-id="15ed8-103">This topic provides sample .aspx code that you can use to submit service content to a private process.</span></span> <span data-ttu-id="15ed8-104">line-of-business (LOB) アプリケーションの代わりに、この .aspx コードを使用できます。</span><span class="sxs-lookup"><span data-stu-id="15ed8-104">You can use this .aspx code instead of a line-of-business (LOB) application.</span></span>  

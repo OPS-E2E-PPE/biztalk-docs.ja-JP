@@ -1,14 +1,14 @@
 ---
-title: "発行して、シングル サインオン チケットを引き換える |Microsoft ドキュメント"
-ms.custom: 
+title: 発行して、シングル サインオン チケットを引き換える |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a0323a6-cc31-460d-b64d-b4d8142c3855
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261770"
 ---
 # <a name="issuing-and-redeeming-a-single-sign-on-ticket"></a><span data-ttu-id="d961f-102">発行して、シングル サインオン チケットを引き換える</span><span class="sxs-lookup"><span data-stu-id="d961f-102">Issuing and Redeeming a Single Sign-On Ticket</span></span>
 <span data-ttu-id="d961f-103">ユーザーと関連アプリケーションとをリンクした後で、チケットを発行して、通信を維持する間のセキュリティを確保できます。</span><span class="sxs-lookup"><span data-stu-id="d961f-103">After you link a user and an affiliate application, you can issue tickets to help ensure security while maintaining communications.</span></span> <span data-ttu-id="d961f-104">他のチケット テクノロジと同じようにシングル サインオン チケット発行の動作:、メッセージを送信する前に追加する必要がシングル サインオン チケットを文字列としてメッセージにします。</span><span class="sxs-lookup"><span data-stu-id="d961f-104">Single Sign-On ticketing works just like other ticketing technologies: before sending the message off, you append the Single Sign-On ticket to the message as a string.</span></span> <span data-ttu-id="d961f-105">サーバーはメッセージを受け取ると、チケットをデコードし、情報を適宜使用します。</span><span class="sxs-lookup"><span data-stu-id="d961f-105">The server receives your message, decodes the ticket, and uses the information as appropriate.</span></span>  

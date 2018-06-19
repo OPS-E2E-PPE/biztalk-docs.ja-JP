@@ -1,14 +1,14 @@
 ---
-title: "ポーリング Operations1 のメッセージ スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: ポーリング Operations1 のメッセージ スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c572c4ec-0a3f-42b8-bebd-40eb584438ad
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216146"
 ---
 # <a name="message-schemas-for-the-polling-operations"></a><span data-ttu-id="b7e62-102">ポーリング操作のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="b7e62-102">Message Schemas for the Polling Operations</span></span>
 <span data-ttu-id="b7e62-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]ポーリングによっては、Oracle E-business Suite でターゲット オブジェクトに関連するさまざまな受信操作を表示します。</span><span class="sxs-lookup"><span data-stu-id="b7e62-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]surfaces various inbound operations related to polling depending on the target object in Oracle E-Business Suite.</span></span> <span data-ttu-id="b7e62-104">インターフェイス テーブル、インターフェイス ビュー、テーブル、およびビュー、PL/SQL Api、関数、およびストアド プロシージャの複数のカスタム ポーリング操作を持つことができますが、1 つのポーリング操作が確認できます。</span><span class="sxs-lookup"><span data-stu-id="b7e62-104">For interface tables, interface views, tables, and views, a single Poll operation is surfaced whereas you can have multiple custom polling operations for PL/SQL APIs, functions, and stored procedures.</span></span>  

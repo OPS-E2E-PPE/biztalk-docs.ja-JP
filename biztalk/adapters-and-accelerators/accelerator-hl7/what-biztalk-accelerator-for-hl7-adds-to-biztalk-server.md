@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server に追加する BizTalk Accelerator 用 HL7 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server に追加する BizTalk Accelerator 用 HL7 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching, documents
@@ -29,7 +29,7 @@ helpviewer_keywords:
 - BTAHL7, acknowledgements
 - errors, logging
 ms.assetid: 862e9f26-588a-4e91-8ebc-f53aab6f46c2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -38,6 +38,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209266"
 ---
 # <a name="what-biztalk-accelerator-for-hl7-adds-to-biztalk-server"></a><span data-ttu-id="5abe5-102">BizTalk Server に追加する BizTalk Accelerator 用 HL7</span><span class="sxs-lookup"><span data-stu-id="5abe5-102">What BizTalk Accelerator for HL7 Adds to BizTalk Server</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="5abe5-103">BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) を構築、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]医療統合システムにシステムを統合します。</span><span class="sxs-lookup"><span data-stu-id="5abe5-103"> BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) builds a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] integration system into a health care integration system.</span></span> <span data-ttu-id="5abe5-104">医療組織を必要とする機能を追加します。</span><span class="sxs-lookup"><span data-stu-id="5abe5-104">It adds functionality that health care organizations require.</span></span>  

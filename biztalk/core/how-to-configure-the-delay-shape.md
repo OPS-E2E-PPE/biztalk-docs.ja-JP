@@ -23,6 +23,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22248338"
 ---
 # <a name="how-to-configure-the-delay-shape"></a><span data-ttu-id="0317a-102">遅延図形を構成する方法</span><span class="sxs-lookup"><span data-stu-id="0317a-102">How to Configure the Delay Shape</span></span>
 <span data-ttu-id="0317a-103">![](../core/media/ebiz-orch-delay.gif "ebiz_orch_delay")</span><span class="sxs-lookup"><span data-stu-id="0317a-103">![](../core/media/ebiz-orch-delay.gif "ebiz_orch_delay")</span></span>  

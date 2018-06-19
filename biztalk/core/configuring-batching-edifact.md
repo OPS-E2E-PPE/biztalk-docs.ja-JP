@@ -1,14 +1,14 @@
 ---
-title: "(EDIFACT) をバッチ処理の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: (EDIFACT) をバッチ処理の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f711ff4b-702b-419b-9c17-dce60ea437a0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234666"
 ---
 # <a name="configuring-batching-edifact"></a><span data-ttu-id="f6125-102">バッチ処理の構成 (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="f6125-102">Configuring Batching (EDIFACT)</span></span>
 <span data-ttu-id="f6125-103">バッチは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が EDI バッチを生成してパーティに送信する方法を定義します。</span><span class="sxs-lookup"><span data-stu-id="f6125-103">Batches define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] generates and sends an EDI batches to the party.</span></span>  
@@ -24,7 +25,7 @@ ms.lasthandoff: 09/20/2017
 > [!IMPORTANT]
 >  <span data-ttu-id="f6125-104">オフにした場合でも、このページですべてのプロパティが無効、**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理する**チェック ボックスを作成するパーティを作成するときに、アグリーメント。</span><span class="sxs-lookup"><span data-stu-id="f6125-104">All properties are disabled on this page even if you cleared the **Local BizTalk processes messages received by the party or supports sending messages from this party** check box while creating the party for which you are creating the agreement.</span></span> <span data-ttu-id="f6125-105">**新しいバッチ**ボタンがこのページで無効になります。</span><span class="sxs-lookup"><span data-stu-id="f6125-105">The **New Batch** button is disabled on this page.</span></span>  
 >   
->  <span data-ttu-id="f6125-106">プロパティが無効になるのは、パーティから受信中のインターチェンジのプロパティに対応する一方向のアグリーメント タブ上のみです。</span><span class="sxs-lookup"><span data-stu-id="f6125-106">The properties are disabled only on the one-way agreement tab that corresponds to the properties for interchanges being sent from the party.</span></span> <span data-ttu-id="f6125-107">たとえば、2 つのパーティのパーティ A とパーティ B を作成する場合、パーティ A 用に、チェック ボックスをオフ、**新しいバッチ**にボタンが無効になっている、**パーティ A にパーティ B]-> [**一方向アグリーメント タブです。</span><span class="sxs-lookup"><span data-stu-id="f6125-107">For example, if you create two parties Party A and Party B and for Party A, you cleared the check box, the **New Batch** button is disabled on the **Party A->Party B** one-way agreement tab.</span></span>  
+>  <span data-ttu-id="f6125-106">プロパティが無効になるのは、パーティから受信中のインターチェンジのプロパティに対応する一方向のアグリーメント タブ上のみです。</span><span class="sxs-lookup"><span data-stu-id="f6125-106">The properties are disabled only on the one-way agreement tab that corresponds to the properties for interchanges being sent from the party.</span></span> <span data-ttu-id="f6125-107">たとえば、2 つのパーティのパーティ A とパーティ B を作成する場合、パーティ A 用に、チェック ボックスをオフ、**新しいバッチ**にボタンが無効になっている、**パーティ A にパーティ B]-> [** 一方向アグリーメント タブです。</span><span class="sxs-lookup"><span data-stu-id="f6125-107">For example, if you create two parties Party A and Party B and for Party A, you cleared the check box, the **New Batch** button is disabled on the **Party A->Party B** one-way agreement tab.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="f6125-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="f6125-108">Prerequisites</span></span>  
  <span data-ttu-id="f6125-109">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="f6125-109">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  
@@ -110,7 +111,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  <span data-ttu-id="f6125-172">保持**終了日が**非アクティブ化、バッチ処理オーケストレーションの終了日を指定しない場合に選択しません。</span><span class="sxs-lookup"><span data-stu-id="f6125-172">Keep **No end date** selected if you do not want to specify an end date for the batching orchestration to be deactivated.</span></span>  
   
-    2.  <span data-ttu-id="f6125-173">選択**(出現数) の後に終了**バッチ数を生成した後、バッチ処理オーケストレーションを非アクティブにすることを指定します。</span><span class="sxs-lookup"><span data-stu-id="f6125-173">Select **End after (occurrences)** to specify that the batching orchestration will be deactivated after a certain number of batches have been generated.</span></span> <span data-ttu-id="f6125-174">テキスト ボックスに、目的の回数を入力します。</span><span class="sxs-lookup"><span data-stu-id="f6125-174">Enter the number desired in the text box.</span></span>  
+    2.  <span data-ttu-id="f6125-173">選択 **(出現数) の後に終了**バッチ数を生成した後、バッチ処理オーケストレーションを非アクティブにすることを指定します。</span><span class="sxs-lookup"><span data-stu-id="f6125-173">Select **End after (occurrences)** to specify that the batching orchestration will be deactivated after a certain number of batches have been generated.</span></span> <span data-ttu-id="f6125-174">テキスト ボックスに、目的の回数を入力します。</span><span class="sxs-lookup"><span data-stu-id="f6125-174">Enter the number desired in the text box.</span></span>  
   
     3.  <span data-ttu-id="f6125-175">選択**によって終了**をバッチ処理オーケストレーションが非アクティブ化する終了日を指定します。</span><span class="sxs-lookup"><span data-stu-id="f6125-175">Select **End by** to specify an end date that the batching orchestration will be deactivated.</span></span> <span data-ttu-id="f6125-176">この時間以後はバッチ処理のメッセージは収集されません。</span><span class="sxs-lookup"><span data-stu-id="f6125-176">Messages will no longer be collected for batching as of this time.</span></span> <span data-ttu-id="f6125-177">カレンダーから終了日を選択するか、テキスト ボックスの日付または時刻を直接変更します。</span><span class="sxs-lookup"><span data-stu-id="f6125-177">Select an end date from the calendar or change the date or time directly in the text box.</span></span>  
   

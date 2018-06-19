@@ -1,17 +1,17 @@
 ---
-title: "WCF サービス モデルを使用して Oracle データベースで操作を使用して REF CURSOR を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して Oracle データベースで操作を使用して REF CURSOR を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, performing operations using REF CURSORS
 - REF CURSORS, performing operations
 ms.assetid: b4cb9ede-eae1-44d7-8ba5-7e1261ccfa3b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22216434"
 ---
 # <a name="run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model"></a><span data-ttu-id="8bc7c-102">WCF サービス モデルを使用して Oracle データベースでの操作を使用して REF CURSOR の実行します。</span><span class="sxs-lookup"><span data-stu-id="8bc7c-102">Run Operations Using REF CURSORS in Oracle Database using the WCF Service Model</span></span>
 <span data-ttu-id="8bc7c-103">REF CURSOR は、Oracle データベースに結果セットへのポインターを表す Oracle PL/SQL データ型です。</span><span class="sxs-lookup"><span data-stu-id="8bc7c-103">A REF CURSOR is an Oracle PL/SQL data type that represents a pointer to a result set in the Oracle database.</span></span> <span data-ttu-id="8bc7c-104">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]プロシージャ、関数、およびパッケージ内の REF CURSOR パラメーターをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="8bc7c-104">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] supports REF CURSOR parameters in procedures, functions, and packages.</span></span> <span data-ttu-id="8bc7c-105">REF CURSOR パラメーターには、厳密に型指定または厳密に型指定されたプロシージャまたは関数の宣言方法に応じてを指定できます。</span><span class="sxs-lookup"><span data-stu-id="8bc7c-105">REF CURSOR parameters can be strongly-typed or weakly-typed depending on how they are declared in the procedure or function.</span></span> <span data-ttu-id="8bc7c-106">REF CURSOR パラメーターを表現する方法の詳細について、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[REF CURSOR のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)です。次の表では、WCF サービス モデルでの REF CURSOR パラメーターを表現する方法をまとめたものです。</span><span class="sxs-lookup"><span data-stu-id="8bc7c-106">For a detailed explanation of how REF CURSOR parameters are represented by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], see [Message Schemas for REF CURSORS](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md).The following table summarizes how REF CURSOR parameters are represented in the WCF service model.</span></span>  

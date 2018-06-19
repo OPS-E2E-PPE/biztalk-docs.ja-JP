@@ -1,17 +1,17 @@
 ---
-title: "Ws-metadata Exchange を使用して Oracle データベースでメタデータの取得 |Microsoft ドキュメント"
-ms.custom: 
+title: Ws-metadata Exchange を使用して Oracle データベースでメタデータの取得 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WS-Metadata Exchange, retrieving metadata
 - metadata, retrieving using WS-Metadata Exchange
 ms.assetid: 6ff34438-7260-489d-a5f0-6e53f8fe43be
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214858"
 ---
 # <a name="get-metadata-using-ws-metadata-exchange-in-oracle-database"></a><span data-ttu-id="af64b-102">Ws-metadata Exchange を使用して Oracle データベースでメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="af64b-102">Get Metadata Using WS-Metadata Exchange in Oracle Database</span></span>
 <span data-ttu-id="af64b-103">として、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドを[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]から特定の操作についてのメタデータの取得に使用できる Ws-metadata Exchange (MEX) エンドポイントを公開して、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="af64b-103">As a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] custom binding, the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] exposes a WS-Metadata Exchange (MEX) endpoint that you can use to retrieve metadata for specific operations from the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)].</span></span>  

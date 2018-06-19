@@ -1,17 +1,17 @@
 ---
-title: "ACK 処理モデル |Microsoft ドキュメント"
-ms.custom: 
+title: ACK 処理モデル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - acknowledgements, process flow
 - ACK process model
 ms.assetid: 3c6a5eef-57ef-41f7-9782-e1cbc4dd78e1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205922"
 ---
 # <a name="ack-process-model"></a><span data-ttu-id="db2ee-102">ACK プロセス モデル</span><span class="sxs-lookup"><span data-stu-id="db2ee-102">ACK Process Model</span></span>
 <span data-ttu-id="db2ee-103">次の一連の手順では、受信確認 (ACK) プロセス モデルについて説明します。</span><span class="sxs-lookup"><span data-stu-id="db2ee-103">The following sequence of steps describes the acknowledgment (ACK) process model:</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="db2ee-108">MSH 15、16 null 値を設定します。</span><span class="sxs-lookup"><span data-stu-id="db2ee-108">MSH 15 and 16 have null values</span></span>  
   
-4.  <span data-ttu-id="db2ee-109">[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジンがメッセージを検証し、検証が成功した場合は、ステータスの確認メッセージが生成されます**MSA01 AA =**です。</span><span class="sxs-lookup"><span data-stu-id="db2ee-109">The [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Interface Engine validates the message and if successful validation occurs, it generates the ACK message with the status **MSA01 = AA**.</span></span>  
+4.  <span data-ttu-id="db2ee-109">[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジンがメッセージを検証し、検証が成功した場合は、ステータスの確認メッセージが生成されます**MSA01 AA =** です。</span><span class="sxs-lookup"><span data-stu-id="db2ee-109">The [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Interface Engine validates the message and if successful validation occurs, it generates the ACK message with the status **MSA01 = AA**.</span></span>  
   
 5.  <span data-ttu-id="db2ee-110">[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジン変換、ADT ^ MLLP ラッパーで囲むと、ラボ情報システム (LIS) へのルーティングでメッセージを A04 です。</span><span class="sxs-lookup"><span data-stu-id="db2ee-110">The [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Interface Engine transforms the ADT^A04 message by enclosing it with MLLP wrappers and routing it to the Lab Information System (LIS).</span></span>  
   
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="db2ee-113">LIS インターフェイス レイヤーがメッセージをコミットして受け入れる ACK の状態を生成するヘッダーを検証**MSA1 = CA**です。</span><span class="sxs-lookup"><span data-stu-id="db2ee-113">The LIS Interface Layer validates the header by committing the message and generating an ACCEPT ACK with the status **MSA1 = CA**.</span></span> <span data-ttu-id="db2ee-114">インターフェイス レイヤーが MLLP のラッパーを持つメッセージをルーティング、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジンです。</span><span class="sxs-lookup"><span data-stu-id="db2ee-114">The interface layer routes the message with the MLLP wrapper to the [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Interface Engine.</span></span>  
   
-7.  <span data-ttu-id="db2ee-115">LIS インターフェイス層は、メッセージ全体を検証し、アプリケーション ACK の状態が生成されます**MSA1 AA =**です。</span><span class="sxs-lookup"><span data-stu-id="db2ee-115">The LIS Interface Layer validates the entire message and generates an APPLICATION ACK with the status **MSA1 = AA**.</span></span> <span data-ttu-id="db2ee-116">インターフェイス レイヤーが MLLP のラッパーを持つメッセージをルーティング、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジンです。</span><span class="sxs-lookup"><span data-stu-id="db2ee-116">The interface layer routes the message with the MLLP wrapper to the [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Interface Engine.</span></span>  
+7.  <span data-ttu-id="db2ee-115">LIS インターフェイス層は、メッセージ全体を検証し、アプリケーション ACK の状態が生成されます**MSA1 AA =** です。</span><span class="sxs-lookup"><span data-stu-id="db2ee-115">The LIS Interface Layer validates the entire message and generates an APPLICATION ACK with the status **MSA1 = AA**.</span></span> <span data-ttu-id="db2ee-116">インターフェイス レイヤーが MLLP のラッパーを持つメッセージをルーティング、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジンです。</span><span class="sxs-lookup"><span data-stu-id="db2ee-116">The interface layer routes the message with the MLLP wrapper to the [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Interface Engine.</span></span>  
   
     -   [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="db2ee-117">'確認が必要'、受信確認の受信確認をあらかじめ構成しておきます</span><span class="sxs-lookup"><span data-stu-id="db2ee-117"> preconfigures 'ACK Required' acknowledging the acknowledgment</span></span>  
   

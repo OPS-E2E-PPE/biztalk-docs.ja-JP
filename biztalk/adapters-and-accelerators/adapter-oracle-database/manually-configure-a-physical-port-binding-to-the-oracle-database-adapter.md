@@ -1,18 +1,18 @@
 ---
-title: "Oracle データベース アダプターを物理ポートのバインドを手動で構成 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターを物理ポートのバインドを手動で構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, sending to an Oracle database
 - messages, receiving from an Oracle database
 - physical port binding, manually configuring
 ms.assetid: 6b118236-e9eb-494e-96b2-969c7064943d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214282"
 ---
 # <a name="manually-configure-a-physical-port-binding-to-the-oracle-database-adapter"></a><span data-ttu-id="972e9-102">Oracle データベース アダプターを物理ポートのバインドを手動で構成します。</span><span class="sxs-lookup"><span data-stu-id="972e9-102">Manually configure a physical port binding to the Oracle Database Adapter</span></span>
 <span data-ttu-id="972e9-103">このセクションの構成に関する情報を提供する、 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Wcf-oracledb バインディングを使用して、WCF カスタム バインドとして、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="972e9-103">This section provides information about configuring the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] as a WCF-Custom binding or WCF-OracleDB binding by using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="972e9-104">アダプターを展開したらことができますを使用しての Oracle データベースからメッセージを送受信する、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="972e9-104">After deploying the adapter, you will be able to send and receive messages from the Oracle database by using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="972e9-105">アダプタの展開の手順が異なります。</span><span class="sxs-lookup"><span data-stu-id="972e9-105">The steps for deploying the adapter vary depending on:</span></span>  

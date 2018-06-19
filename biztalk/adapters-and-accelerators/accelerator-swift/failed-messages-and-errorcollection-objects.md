@@ -1,17 +1,17 @@
 ---
-title: "失敗したメッセージおよび元のオブジェクト |Microsoft ドキュメント"
-ms.custom: 
+title: 失敗したメッセージおよび元のオブジェクト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - failed messages, ErrorCollection objects
 - ErrorCollection objects
 ms.assetid: 8a2ff3b5-d7a0-4595-8b74-3133e9e3a821
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209234"
 ---
 # <a name="failed-messages-and-errorcollection-objects"></a><span data-ttu-id="94101-102">失敗したメッセージと元のオブジェクト</span><span class="sxs-lookup"><span data-stu-id="94101-102">Failed Messages and ErrorCollection Objects</span></span>
 <span data-ttu-id="94101-103">昇格させたプロパティは、失敗したメッセージを修飾することだけでなく[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 、失敗したメッセージをメッセージと共に、メッセージ ボックス データベースに公開*一部*という**ErrorSegment**.</span><span class="sxs-lookup"><span data-stu-id="94101-103">In addition to decorating a failed message with promoted properties, [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] publishes the failed message to the MessageBox database with an additional message *part*, called **ErrorSegment**.</span></span> <span data-ttu-id="94101-104">このエラーの部分を含む XML を表す、**元**オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="94101-104">This error part contains XML representing an **ErrorCollection** object.</span></span> <span data-ttu-id="94101-105">A4SWIFT 逆アセンブラーは追加、**元**メッセージ (解析、XML の検証、およびビジネス ルール エンジン (BRE)) を処理の各段階のオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="94101-105">The A4SWIFT disassembler populates the **ErrorCollection** object during each stage of message processing (parsing, XML validation, and Business Rule Engine (BRE) validation).</span></span>  

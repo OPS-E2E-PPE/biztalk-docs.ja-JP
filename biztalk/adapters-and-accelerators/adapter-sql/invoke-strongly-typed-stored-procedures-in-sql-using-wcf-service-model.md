@@ -1,14 +1,14 @@
 ---
-title: "WCF サービスのモデルを使用して sql ストアド プロシージャを厳密に型指定されたを呼び出して |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービスのモデルを使用して sql ストアド プロシージャを厳密に型指定されたを呼び出して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d56df5f6-b046-4fe4-a5b4-b29906093beb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223986"
 ---
 # <a name="invoke-strongly-typed-stored-procedures-in-sql-using-wcf-service-model"></a><span data-ttu-id="3cbc3-102">WCF サービスのモデルを使用して sql ストアド プロシージャを厳密に型指定されたを呼び出す</span><span class="sxs-lookup"><span data-stu-id="3cbc3-102">Invoke Strongly-typed Stored Procedures in SQL using WCF Service Model</span></span>
 <span data-ttu-id="3cbc3-103">リストされたプロシージャを起動すると、 **Strongly-Typed プロシージャ**内のノード、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、厳密に型指定された結果セットの形式では、出力します。</span><span class="sxs-lookup"><span data-stu-id="3cbc3-103">When you invoke a procedure listed under the **Strongly-Typed Procedures** node in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], the output is in the form of a strongly-typed result set.</span></span> <span data-ttu-id="3cbc3-104">このトピックでは、厳密に型指定された結果セットを返す SQL Server でストアド プロシージャを呼び出す、WCF クライアントを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="3cbc3-104">This topic provides instructions on how to create a WCF client to invoke stored procedures in SQL Server that return a strongly-typed result set.</span></span>  

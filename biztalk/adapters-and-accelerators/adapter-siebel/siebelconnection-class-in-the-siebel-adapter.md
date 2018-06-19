@@ -1,18 +1,18 @@
 ---
-title: "Siebel アダプターの SiebelConnection クラス |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターの SiebelConnection クラス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Data Provider for Siebel, SiebelConnection
 - SiebelConnection, supported properties and methods
 - SiebelConnection
 ms.assetid: 661d9876-4c14-4748-b05f-cc4fd1c4ebcf
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222338"
 ---
 # <a name="siebelconnection-class-in-the-siebel-adapter"></a><span data-ttu-id="6fe2a-102">Siebel アダプターの SiebelConnection クラス</span><span class="sxs-lookup"><span data-stu-id="6fe2a-102">SiebelConnection class in the Siebel adapter</span></span>
 <span data-ttu-id="6fe2a-103">[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] 、基になるアクセス[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] `Binding`、 `ConnectionFactory`、および`Channel`Siebel システムへの接続にします。</span><span class="sxs-lookup"><span data-stu-id="6fe2a-103">The [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] accesses the underlying [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]`Binding`, the `ConnectionFactory`, and `Channel` to connect to the Siebel system.</span></span> <span data-ttu-id="6fe2a-104">[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]を実装する、`DbConnection`上記をサポートするクラスの機能です。</span><span class="sxs-lookup"><span data-stu-id="6fe2a-104">The [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] implements the `DbConnection` class to support the preceding features.</span></span>  

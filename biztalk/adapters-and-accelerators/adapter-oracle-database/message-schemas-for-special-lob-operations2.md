@@ -1,17 +1,17 @@
 ---
-title: "特殊な LOB Operations2 のメッセージ スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: 特殊な LOB Operations2 のメッセージ スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - LOB data types, message structure of
 - LOB data types, message actions for
 ms.assetid: 031989d5-3209-41ab-8836-a40539781e74
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214594"
 ---
 # <a name="message-schemas-for-special-lob-operations"></a><span data-ttu-id="25ad8-102">特殊な LOB 操作のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="25ad8-102">Message Schemas for Special LOB Operations</span></span>
 <span data-ttu-id="25ad8-103">テーブルおよび; LOB 列を含むビューの ReadLOB および UpdateLOB 操作が表示されます。Oracle ラージ オブジェクト (LOB) データの格納に使用される列です。</span><span class="sxs-lookup"><span data-stu-id="25ad8-103">The ReadLOB and UpdateLOB operations are surfaced for tables and views that contain LOB columns; that is columns that are used to store Oracle large object (LOB) data.</span></span> <span data-ttu-id="25ad8-104">これらの操作では、base64Binary でエンコードされたデータのストリームとして、LOB データを読み書きできます。</span><span class="sxs-lookup"><span data-stu-id="25ad8-104">These operations enable you to read or write the LOB data as a stream of base64Binary-encoded data.</span></span> <span data-ttu-id="25ad8-105">1 つの行に LOB データの 1 つの列上で動作します。</span><span class="sxs-lookup"><span data-stu-id="25ad8-105">They operate on a single column of LOB data in a single row.</span></span>  

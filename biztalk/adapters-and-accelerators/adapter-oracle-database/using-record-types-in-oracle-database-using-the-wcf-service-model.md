@@ -1,17 +1,17 @@
 ---
-title: "WCF サービス モデルを使用して Oracle データベースで操作を使用してレコードの種類を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して Oracle データベースで操作を使用してレコードの種類を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RECORD types, performing operations
 - WCF service model, performing operations using RECORD types
 ms.assetid: e7118a86-7470-48bb-aca0-6200dc0bb67c
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216258"
 ---
 # <a name="run-operations-using-record-types-in-oracle-database-using-the-wcf-service-model"></a><span data-ttu-id="ff4eb-102">WCF サービス モデルを使用して Oracle データベースでの操作を使用してレコードの種類の実行します。</span><span class="sxs-lookup"><span data-stu-id="ff4eb-102">Run Operations Using RECORD Types in Oracle Database using the WCF Service Model</span></span>
 <span data-ttu-id="ff4eb-103">Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに渡されるパラメーターで階層的な情報を表すために使用されます。</span><span class="sxs-lookup"><span data-stu-id="ff4eb-103">Oracle RECORD types are used to represent hierarchical information in parameters passed to PL/SQL functions and procedures.</span></span> <span data-ttu-id="ff4eb-104">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]複雑な XML 型としてレコードの種類を表示します。</span><span class="sxs-lookup"><span data-stu-id="ff4eb-104">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces RECORD types as complex XML types.</span></span> <span data-ttu-id="ff4eb-105">WCF サービス モデルでは、レコードの種類が厳密に型指定された .NET クラスを逆シリアル化します。</span><span class="sxs-lookup"><span data-stu-id="ff4eb-105">In the WCF service model, RECORD types are deserialized to strongly-typed .NET classes.</span></span> <span data-ttu-id="ff4eb-106">レコードのフィールドは、クラスのプロパティとして表されます。</span><span class="sxs-lookup"><span data-stu-id="ff4eb-106">The record fields are represented as properties on the class.</span></span>  

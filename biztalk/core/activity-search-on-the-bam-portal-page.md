@@ -1,18 +1,18 @@
 ---
-title: "BAM ポータルにアクティビティの検索ページ |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルにアクティビティの検索ページ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], searching
 - Activity Search page [BAM portal]
 - BAM portal, activity searches
 ms.assetid: 24a5111c-026f-4f77-8a17-65955aafd24c
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225122"
 ---
 # <a name="activity-search-on-the-bam-portal-page"></a><span data-ttu-id="e403f-102">BAM ポータル ページでのアクティビティの検索</span><span class="sxs-lookup"><span data-stu-id="e403f-102">Activity Search on the BAM Portal Page</span></span>
 <span data-ttu-id="e403f-103">ビジネス エンド ユーザー、開発者、およびビジネス アナリストは、BAM データを検索して特定のプロセスの特定のケースを見つける必要があるときに、BAM ポータル ページを使用できます。</span><span class="sxs-lookup"><span data-stu-id="e403f-103">Business end users, developers, and business analysts can use the BAM portal page when they need to perform searches against BAM data to find specific cases of a particular process.</span></span> <span data-ttu-id="e403f-104">このようなプロセスが、BAM アクティビティとして定義されます。</span><span class="sxs-lookup"><span data-stu-id="e403f-104">These processes are defined as BAM activities.</span></span> <span data-ttu-id="e403f-105">BAM アクティビティは、注文書やローンの申し込みなど、ビジネスの作業単位を表します。</span><span class="sxs-lookup"><span data-stu-id="e403f-105">A BAM activity represents a unit of work in a business, such as a purchase order or loan application.</span></span>  

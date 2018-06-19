@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル 2: 従業員の発注プロセスには、SQL アダプターを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル 2: 従業員の発注プロセスには、SQL アダプターを使用して |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eeb4dd1e-209a-47eb-9c0e-a138e02f0ff2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223234"
 ---
 # <a name="tutorial-2-employee---purchase-order-process-using-the-sql-adapter"></a><span data-ttu-id="83074-102">チュートリアル 2: 従業員の発注プロセスには、SQL アダプターを使用します。</span><span class="sxs-lookup"><span data-stu-id="83074-102">Tutorial 2: Employee - Purchase Order Process using the SQL adapter</span></span>
 <span data-ttu-id="83074-103">このチュートリアルでは、新しい従業員が組織を結合するたびに、機器を配置する購買部門が順序付けプロセスを自動化するは。</span><span class="sxs-lookup"><span data-stu-id="83074-103">In this tutorial, you are automating the process where the Purchases department that places an equipment order every time a new employee joins the organization.</span></span> <span data-ttu-id="83074-104">従業員の詳細と発注書の詳細の両方で保持されます**従業員**と**Purchase_Order** SQL Server データベース内のテーブルと、それぞれします。</span><span class="sxs-lookup"><span data-stu-id="83074-104">Both employee details and purchase order details are maintained in **Employee** and **Purchase_Order** tables respectively, in a SQL Server database.</span></span> <span data-ttu-id="83074-105">購買部門は、SQL Server データベースで Purchase_Order テーブルを更新して、電子メールを送信して通知を受け取ります。</span><span class="sxs-lookup"><span data-stu-id="83074-105">The Purchases department is informed by updating the Purchase_Order table in the SQL Server database and by sending an e-mail.</span></span> <span data-ttu-id="83074-106">プロセスでは、次の操作が行われます。</span><span class="sxs-lookup"><span data-stu-id="83074-106">Within the process, the following actions occur:</span></span>  

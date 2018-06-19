@@ -1,11 +1,11 @@
 ---
-title: "レッスン 2: ビジネス ルール作成ツールを使用して、展開を確認する |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 2: ビジネス ルール作成ツールを使用して、展開を確認する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, verifying
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - business rules, Business Rule Composer tool
 - Business Rule Composer tool
 ms.assetid: 337dc469-cf9e-406b-90ae-0f580b17d7c9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210242"
 ---
 # <a name="lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool"></a><span data-ttu-id="d124c-102">レッスン 2: ビジネス ルール作成ツールを使用して、展開を確認します。</span><span class="sxs-lookup"><span data-stu-id="d124c-102">Lesson 2: Confirming the Deployment Using the Business Rule Composer Tool</span></span>
 <span data-ttu-id="d124c-103">このレッスンでは、ビジネス ルール作成ツールが、ボキャブラリを作成し、ポリシーを配置したことを確認します。</span><span class="sxs-lookup"><span data-stu-id="d124c-103">In this lesson, you confirm that the Business Rule Composer tool created your vocabularies and deployed your policies.</span></span> <span data-ttu-id="d124c-104">ボキャブラリは、ルールを作成で使用するボキャブラリ要素のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="d124c-104">A vocabulary is a collection of vocabulary elements you use in rule composition.</span></span> <span data-ttu-id="d124c-105">ポリシーとはバージョン管理されたビジネス ルールのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="d124c-105">A policy is a versioned collection of business rules.</span></span>  

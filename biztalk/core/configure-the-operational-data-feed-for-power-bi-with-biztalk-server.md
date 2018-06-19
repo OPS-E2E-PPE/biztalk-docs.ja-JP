@@ -1,15 +1,15 @@
 ---
-title: "Power BI を有効にする |Microsoft ドキュメント"
-description: "Power BI テンプレートを BizTalk Server 用 Feature Pack のインストールします。"
+title: Power BI を有効にする |Microsoft ドキュメント
+description: Power BI テンプレートを BizTalk Server 用 Feature Pack のインストールします。
 ms.custom: fp1
 ms.date: 11/07/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fe6d3a97-c7c0-4147-baa9-ee12f93248eb
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,10 +18,11 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969472"
 ---
 # <a name="configure-the-power-bi-operational-data-feed-in-biztalk-server"></a><span data-ttu-id="5d538-103">Power BI の運用データを BizTalk Server でフィードを構成します。</span><span class="sxs-lookup"><span data-stu-id="5d538-103">Configure the Power BI operational data feed in BizTalk Server</span></span>
 
-<span data-ttu-id="5d538-104">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**追跡を指定すると、Power BI テンプレートを使用して Power BI に送信します。 または、独自に作成します。</span><span class="sxs-lookup"><span data-stu-id="5d538-104">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**, send tracking to Power BI using the Power BI template provided, or create your own.</span></span> 
+<span data-ttu-id="5d538-104">**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]** 追跡を指定すると、Power BI テンプレートを使用して Power BI に送信します。 または、独自に作成します。</span><span class="sxs-lookup"><span data-stu-id="5d538-104">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**, send tracking to Power BI using the Power BI template provided, or create your own.</span></span> 
 
 ## <a name="what-is-operational-data"></a><span data-ttu-id="5d538-105">オペレーション データとは</span><span class="sxs-lookup"><span data-stu-id="5d538-105">What is operational data</span></span>
 <span data-ttu-id="5d538-106">オペレーション データは、インスタンスおよび経由でやり取りされるメッセージに関する情報、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]環境。</span><span class="sxs-lookup"><span data-stu-id="5d538-106">Operational data is information on the instances and messages flowing through your [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span> <span data-ttu-id="5d538-107">オペレーション データ フィードは、同じデータのグループ ハブを見て取得[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="5d538-107">The operational data feed is the same data you get looking at Group Hub in [!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)].</span></span> <span data-ttu-id="5d538-108">データにアクセスされ、Power BI を含む、視覚化ツールを使用してクエリします。</span><span class="sxs-lookup"><span data-stu-id="5d538-108">The data is accessed and queried using visualization tools, including Power BI.</span></span> 

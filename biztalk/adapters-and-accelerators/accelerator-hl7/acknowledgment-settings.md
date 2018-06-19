@@ -1,18 +1,18 @@
 ---
-title: "確認の設定 |Microsoft ドキュメント"
-ms.custom: 
+title: 確認の設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - acknowledgements, configuring
 - acknowledgements, acknowledgement types
 - configuring, acknowledgements
 ms.assetid: 99ab8caa-8788-4438-96db-8001a6523cc8
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204362"
 ---
 # <a name="acknowledgment-settings"></a><span data-ttu-id="58ee0-102">確認の設定</span><span class="sxs-lookup"><span data-stu-id="58ee0-102">Acknowledgment Settings</span></span>
 <span data-ttu-id="58ee0-103">使用する、**受信確認**のタブ[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー (、高レベルの下で**パーティ** タブ) 確認 (ACK) の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="58ee0-103">You use the **Acknowledgment** tab of [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer (under the high-level **Parties** tab) to configure acknowledgment (ACK) settings.</span></span>  

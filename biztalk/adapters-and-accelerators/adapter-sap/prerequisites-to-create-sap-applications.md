@@ -1,14 +1,14 @@
 ---
-title: "SAP アプリケーションを作成する前提条件 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP アプリケーションを作成する前提条件 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 51ae9569-4081-4142-9ee2-8ae0069e9d90
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216402"
 ---
 # <a name="prerequisites-to-create-sap-applications"></a><span data-ttu-id="2dc0f-102">SAP アプリケーションを作成するための必要条件</span><span class="sxs-lookup"><span data-stu-id="2dc0f-102">Prerequisites to create SAP applications</span></span>
 <span data-ttu-id="2dc0f-103">このセクションの内容を使用して BizTalk アプリケーションを開発する前に行う必要がありますタスクに関する情報を提供する、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="2dc0f-103">This section provides information about tasks that you must perform before developing BizTalk applications using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span> <span data-ttu-id="2dc0f-104">セクションには、BizTalk アプリケーションの開発に使用される一部の BizTalk Server ツールも表示されます。</span><span class="sxs-lookup"><span data-stu-id="2dc0f-104">The section also lists some BizTalk Server tools that are used to develop BizTalk applications.</span></span>  

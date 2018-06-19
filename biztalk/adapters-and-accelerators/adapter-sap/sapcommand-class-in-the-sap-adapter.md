@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216562"
 ---
 # <a name="sapcommand-class-in-the-sap-adapter"></a><span data-ttu-id="bddd5-102">SAP アダプターで SAPCommand クラス</span><span class="sxs-lookup"><span data-stu-id="bddd5-102">SAPCommand class in the SAP adapter</span></span>
 <span data-ttu-id="bddd5-103">このコマンドでは、SAP バックエンドで実行する SQL クエリを表します。</span><span class="sxs-lookup"><span data-stu-id="bddd5-103">This command represents a SQL query to be executed on the SAP backend.</span></span> <span data-ttu-id="bddd5-104">[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]現在 SELECT ステートメントと EXEC ステートメントのみをサポートします。</span><span class="sxs-lookup"><span data-stu-id="bddd5-104">The [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] currently supports SELECT and EXEC statements only.</span></span> <span data-ttu-id="bddd5-105">SELECT ステートメントには、1 つの SAP テーブルからのデータの抽出が有効にして、EXEC ステートメントは、SAP サーバーでの Rfc を実行するユーザーを有効にします。</span><span class="sxs-lookup"><span data-stu-id="bddd5-105">SELECT statements enable extraction of data from a single SAP table, and EXEC statements enable users to execute RFCs on the SAP server.</span></span>  

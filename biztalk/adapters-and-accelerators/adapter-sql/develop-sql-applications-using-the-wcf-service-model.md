@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルを使用して SQL アプリケーションを開発 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して SQL アプリケーションを開発 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d3ecfd6f-9144-4e41-a4b8-0c768a6ac254
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223210"
 ---
 # <a name="develop-sql-applications-using-the-wcf-service-model"></a><span data-ttu-id="fed5b-102">WCF サービス モデルを使用して SQL アプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="fed5b-102">Develop SQL applications using the WCF Service model</span></span>
 [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]<span data-ttu-id="fed5b-103">WCF チャネル モデルをプログラミングする代わりに、WCF サービス モデルと呼ばれるプログラミング モデルを提供します。</span><span class="sxs-lookup"><span data-stu-id="fed5b-103"> provides a programming model called the WCF service model, as an alternative to the WCF channel programming model.</span></span>  
@@ -31,9 +32,9 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="fed5b-119">WCF クライアント クラスを生成する、次のツールのいずれかを使用して、関連付けられているサービス メタデータからヘルパー コードを[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を公開します。</span><span class="sxs-lookup"><span data-stu-id="fed5b-119">You can use either of the following tools to generate a WCF client class and associated helper code from the service metadata that the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] exposes:</span></span>  
   
--   <span data-ttu-id="fed5b-120">**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)**WCF に付属しています。</span><span class="sxs-lookup"><span data-stu-id="fed5b-120">**The ServiceModel Metadata Utility Tool (svcutil.exe)**, which ships with WCF.</span></span>  
+-   <span data-ttu-id="fed5b-120">**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)** WCF に付属しています。</span><span class="sxs-lookup"><span data-stu-id="fed5b-120">**The ServiceModel Metadata Utility Tool (svcutil.exe)**, which ships with WCF.</span></span>  
   
--   <span data-ttu-id="fed5b-121">**[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]**に付属している[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]と統合し、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]エクスペリエンスをデザインします。</span><span class="sxs-lookup"><span data-stu-id="fed5b-121">**The [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]**, which ships with [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] and is integrated with the [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] design experience.</span></span> <span data-ttu-id="fed5b-122">このツールは、強力な参照および検索、アダプターが公開される操作で機能を提供する標準的な Microsoft Windows のインターフェイスを表示します。</span><span class="sxs-lookup"><span data-stu-id="fed5b-122">This tool presents a standard Microsoft Windows interface that provides powerful browsing and searching capabilities on operations that the adapter exposes.</span></span> <span data-ttu-id="fed5b-123">WCF クライアント アプリケーションを作成する方法に関する詳細については、次を参照してください。 [SQL Server の成果物のために、WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)です。</span><span class="sxs-lookup"><span data-stu-id="fed5b-123">For more information about how to generate a WCF client application, see [Generate a WCF Client or WCF Service Contract for SQL Server Artifacts](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md).</span></span>  
+-   <span data-ttu-id="fed5b-121">**[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]** に付属している[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]と統合し、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]エクスペリエンスをデザインします。</span><span class="sxs-lookup"><span data-stu-id="fed5b-121">**The [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]**, which ships with [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] and is integrated with the [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] design experience.</span></span> <span data-ttu-id="fed5b-122">このツールは、強力な参照および検索、アダプターが公開される操作で機能を提供する標準的な Microsoft Windows のインターフェイスを表示します。</span><span class="sxs-lookup"><span data-stu-id="fed5b-122">This tool presents a standard Microsoft Windows interface that provides powerful browsing and searching capabilities on operations that the adapter exposes.</span></span> <span data-ttu-id="fed5b-123">WCF クライアント アプリケーションを作成する方法に関する詳細については、次を参照してください。 [SQL Server の成果物のために、WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)です。</span><span class="sxs-lookup"><span data-stu-id="fed5b-123">For more information about how to generate a WCF client application, see [Generate a WCF Client or WCF Service Contract for SQL Server Artifacts](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md).</span></span>  
   
      <span data-ttu-id="fed5b-124">このセクションのトピックでは、情報、プロシージャ、および例を作成してモデルを使用して、WCF サービスを使用してアプリケーションを開発する際に役立ちますが含まれて、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="fed5b-124">The topics in this section contain information, procedures, and examples to help you create and use the WCF service model to develop applications by using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
   

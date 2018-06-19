@@ -1,14 +1,14 @@
 ---
-title: "AddResource コマンド |Microsoft ドキュメント"
-ms.custom: 
+title: AddResource コマンド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7b09bd8d-5e07-4443-b626-60401a158540
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964448"
 ---
 # <a name="addresource-command"></a><span data-ttu-id="8df8b-102">AddResource コマンド</span><span class="sxs-lookup"><span data-stu-id="8df8b-102">AddResource Command</span></span>
 <span data-ttu-id="8df8b-103">このセクションの各トピックでは、AddResource コマンドの各種パラメーターについてのリファレンス情報を紹介しています。</span><span class="sxs-lookup"><span data-stu-id="8df8b-103">The topics in this section provide reference information about the parameters of the AddResource command.</span></span> <span data-ttu-id="8df8b-104">このコマンドで使用されるパラメーターは、追加するアイテムの種類によって異なります。</span><span class="sxs-lookup"><span data-stu-id="8df8b-104">The parameters that you use with this command vary according to the type of artifact that you want to add.</span></span> <span data-ttu-id="8df8b-105">成果物の種類の完全な一覧を取得するを使用して、 **ListTypes**コマンドを」の説明に従って[ListTypes コマンド](../core/listtypes-command.md)です。</span><span class="sxs-lookup"><span data-stu-id="8df8b-105">To obtain complete lists of artifact types, use the **ListTypes** command, as described in [ListTypes Command](../core/listtypes-command.md).</span></span>  

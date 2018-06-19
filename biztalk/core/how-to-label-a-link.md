@@ -1,14 +1,14 @@
 ---
-title: "リンクのラベルを付ける方法 |Microsoft ドキュメント"
-ms.custom: 
+title: リンクのラベルを付ける方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5fb81763-8b50-4334-88a8-efad1c5d82d9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253794"
 ---
 # <a name="how-to-label-a-link"></a><span data-ttu-id="6205f-102">リンクにラベル付けする方法</span><span class="sxs-lookup"><span data-stu-id="6205f-102">How to Label a Link</span></span>
 <span data-ttu-id="6205f-103">ラベルは、マップの Functoid またはリンクの目的を文書化するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="6205f-103">Labels are helpful to document the purpose of a functoid or a link in a map.</span></span> <span data-ttu-id="6205f-104">使用することができます、**ラベル**プロパティをリンクの名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="6205f-104">You can use the **Label** property to name a link.</span></span> <span data-ttu-id="6205f-105">これは、マップに大きいスキーマ構造が含まれ、Functoid への入力リンクと出力リンクの識別が困難な場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="6205f-105">This is useful when your map contains big schema structures and identifying the inputs and output links to a functoid becomes difficult.</span></span>  

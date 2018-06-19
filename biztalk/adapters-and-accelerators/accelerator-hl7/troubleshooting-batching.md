@@ -1,17 +1,17 @@
 ---
-title: "バッチ処理のトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: バッチ処理のトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching, troubleshooting
 - troubleshooting, batching
 ms.assetid: f47e1a16-47fd-4bd8-8dad-fcdba31a833e
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206306"
 ---
 # <a name="troubleshooting-batching"></a><span data-ttu-id="073f2-102">バッチ処理のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="073f2-102">Troubleshooting Batching</span></span>
 <span data-ttu-id="073f2-103">関連する問題に対処[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]バッチ処理します。</span><span class="sxs-lookup"><span data-stu-id="073f2-103">Addresses issues related to [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] batching.</span></span>  

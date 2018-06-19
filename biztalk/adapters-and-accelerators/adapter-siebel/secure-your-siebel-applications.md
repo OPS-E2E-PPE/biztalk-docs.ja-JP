@@ -1,17 +1,17 @@
 ---
-title: "Siebel アプリケーションのセキュリティ保護 |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アプリケーションのセキュリティ保護 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security and protection
 - data protection
 ms.assetid: 8977cbd3-0025-48d4-8203-8e9e72ea7d26
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221970"
 ---
 # <a name="secure-your-siebel-applications"></a><span data-ttu-id="90b35-102">Siebel アプリケーションのセキュリティ保護します。</span><span class="sxs-lookup"><span data-stu-id="90b35-102">Secure your Siebel applications</span></span>
 <span data-ttu-id="90b35-103">Siebel システムには、多くの場合、お客様のアカウント詳細などの機密性の高いビジネス情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="90b35-103">The Siebel system often contains sensitive business information such as customer account details.</span></span> <span data-ttu-id="90b35-104">使用するアプリケーション、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]にアクセスして、この情報を変更するいずれかのローカルまたは分散ネットワーク経由で公開される可能性が誤ってに不正のアクターによってアクセスする作業はに対して保護して、中にデータをセキュリティで保護しない限り、転送します。</span><span class="sxs-lookup"><span data-stu-id="90b35-104">Applications that use the [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] to access and modify this information either locally or across a distributed network might inadvertently expose it to access by unauthorized actors, unless efforts are made to protect and secure the data during transmission.</span></span> <span data-ttu-id="90b35-105">データ保護およびセキュリティは、通常と考えるは次の用語で。</span><span class="sxs-lookup"><span data-stu-id="90b35-105">Data protection and security are usually thought of in the following terms:</span></span>  

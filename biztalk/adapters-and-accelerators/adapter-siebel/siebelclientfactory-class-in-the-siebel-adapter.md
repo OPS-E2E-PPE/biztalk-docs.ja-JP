@@ -1,18 +1,18 @@
 ---
-title: "Siebel アダプターの SiebelClientFactory クラス |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターの SiebelClientFactory クラス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SiebelClientFactory
 - Data Provider for Siebel, SiebelClientFactory
 - SiebelClientFactory, supported properties and methods
 ms.assetid: f3a807d3-a030-47d8-b145-e18075ec353c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222066"
 ---
 # <a name="siebelclientfactory-class-in-the-siebel-adapter"></a><span data-ttu-id="3f865-102">Siebel アダプターの SiebelClientFactory クラス</span><span class="sxs-lookup"><span data-stu-id="3f865-102">SiebelClientFactory class in the Siebel adapter</span></span>
 <span data-ttu-id="3f865-103">ADO.NET クライアントにアクセスする、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]ジェネリック ADO.NET クラスとインターフェイスを使用します。</span><span class="sxs-lookup"><span data-stu-id="3f865-103">An ADO.NET client accesses the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] using generic ADO.NET classes and interfaces.</span></span> <span data-ttu-id="3f865-104">この機能を有効にする、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]継承、 **System.Data.Common.DbProviderFactory**クラスです。</span><span class="sxs-lookup"><span data-stu-id="3f865-104">To enable this feature, the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] inherits the **System.Data.Common.DbProviderFactory** class.</span></span> <span data-ttu-id="3f865-105">クライアント プログラムは、次のようにクライアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="3f865-105">The client program consumes the client as follows:</span></span>  

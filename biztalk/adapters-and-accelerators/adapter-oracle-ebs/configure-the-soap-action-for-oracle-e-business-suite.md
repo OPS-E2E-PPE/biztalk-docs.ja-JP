@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server で Oracle E-business Suite の SOAP アクションの構成 |Microsoft ドキュメント"
-description: "Visual Studio で SOAP アクションを入力するか、Wcf-custom アダプターまたは Wcf-oracleebs アダプターの BizTalk アダプター パック (BAP) でを使用"
-ms.custom: 
+title: BizTalk Server で Oracle E-business Suite の SOAP アクションの構成 |Microsoft ドキュメント
+description: Visual Studio で SOAP アクションを入力するか、Wcf-custom アダプターまたは Wcf-oracleebs アダプターの BizTalk アダプター パック (BAP) でを使用
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ca799d96-66e4-4d4e-a632-cb5505e999b4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218282"
 ---
 # <a name="configure-the-soap-action-for-oracle-e-business-suite"></a><span data-ttu-id="923a5-103">Oracle E-business Suite の SOAP アクションを構成します。</span><span class="sxs-lookup"><span data-stu-id="923a5-103">Configure the SOAP action for Oracle E-Business Suite</span></span>
 <span data-ttu-id="923a5-104">WCF ベースを使用して Oracle E-business Suite で操作を実行する[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]、SOAP アクションを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="923a5-104">To perform any operation on Oracle E-Business Suite using the WCF-based [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], you must specify a SOAP action.</span></span> <span data-ttu-id="923a5-105">SOAP アクションは、どのようなアクションを実行する必要があります、アダプターに通信します。</span><span class="sxs-lookup"><span data-stu-id="923a5-105">The SOAP action communicates to the adapter what action should be performed.</span></span> <span data-ttu-id="923a5-106">SOAP アクションのいずれかを指定する[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]またはから、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="923a5-106">You can specify the SOAP action either from [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] or from the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="923a5-107">ただし、両方の場所からの SOAP アクションを指定する場合、アクション指定したから[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]はオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="923a5-107">However, if you specify the SOAP action from both locations, the action you specified from [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] is overridden.</span></span>  
@@ -54,13 +55,13 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="923a5-124">**アクション**テキスト ボックスで、操作の SOAP アクションを指定します。</span><span class="sxs-lookup"><span data-stu-id="923a5-124">In the **Action** text box, specify the SOAP action for the operation.</span></span> <span data-ttu-id="923a5-125">次の方法では、アクションを指定できます。</span><span class="sxs-lookup"><span data-stu-id="923a5-125">You can specify the action in the following ways:</span></span>  
   
-    -   <span data-ttu-id="923a5-126">**シングル アクション形式を使用して、**です。</span><span class="sxs-lookup"><span data-stu-id="923a5-126">**By using the single action format**.</span></span> <span data-ttu-id="923a5-127">Wcf-custom 送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="923a5-127">Use this format if the WCF-Custom port sends and receive messages for a single operation.</span></span> <span data-ttu-id="923a5-128">例:</span><span class="sxs-lookup"><span data-stu-id="923a5-128">For example:</span></span>  
+    -   <span data-ttu-id="923a5-126">**シングル アクション形式を使用して、** です。</span><span class="sxs-lookup"><span data-stu-id="923a5-126">**By using the single action format**.</span></span> <span data-ttu-id="923a5-127">Wcf-custom 送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="923a5-127">Use this format if the WCF-Custom port sends and receive messages for a single operation.</span></span> <span data-ttu-id="923a5-128">例:</span><span class="sxs-lookup"><span data-stu-id="923a5-128">For example:</span></span>  
   
         ```  
         InterfaceTables/Insert/SQLGL/GL/GL_ALLOC_HISTORY  
         ```  
   
-    -   <span data-ttu-id="923a5-129">**アクション マッピング形式を使用して、**です。</span><span class="sxs-lookup"><span data-stu-id="923a5-129">**By using the action mapping format**.</span></span> <span data-ttu-id="923a5-130">1 つの WCF カスタム ポートを送信し、1 つ以上の操作のメッセージを受け取る場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="923a5-130">Use this format if a single WCF-Custom port sends and receives messages for more than one operation.</span></span> <span data-ttu-id="923a5-131">たとえば、1 つの WCF カスタム ポートを送信および (レコードを挿入する GL_ALLOC_HISTORY テーブル) Op1、Op2 (レコードを更新する GL_ALLOC_HISTORY テーブル) のメッセージを受け取る場合、SOAP アクションは、次のように指定できます。</span><span class="sxs-lookup"><span data-stu-id="923a5-131">For example, if a single WCF-Custom port sends and receives messages for Op1 (to insert records in the GL_ALLOC_HISTORY table) and Op2 (to update records in the GL_ALLOC_HISTORY table), the SOAP action can be specified in the following manner:</span></span>  
+    -   <span data-ttu-id="923a5-129">**アクション マッピング形式を使用して、** です。</span><span class="sxs-lookup"><span data-stu-id="923a5-129">**By using the action mapping format**.</span></span> <span data-ttu-id="923a5-130">1 つの WCF カスタム ポートを送信し、1 つ以上の操作のメッセージを受け取る場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="923a5-130">Use this format if a single WCF-Custom port sends and receives messages for more than one operation.</span></span> <span data-ttu-id="923a5-131">たとえば、1 つの WCF カスタム ポートを送信および (レコードを挿入する GL_ALLOC_HISTORY テーブル) Op1、Op2 (レコードを更新する GL_ALLOC_HISTORY テーブル) のメッセージを受け取る場合、SOAP アクションは、次のように指定できます。</span><span class="sxs-lookup"><span data-stu-id="923a5-131">For example, if a single WCF-Custom port sends and receives messages for Op1 (to insert records in the GL_ALLOC_HISTORY table) and Op2 (to update records in the GL_ALLOC_HISTORY table), the SOAP action can be specified in the following manner:</span></span>  
   
         ```  
         <BtsActionMapping>  
@@ -87,13 +88,13 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="923a5-143">**アクション**テキスト ボックスで、操作の SOAP アクションを指定します。</span><span class="sxs-lookup"><span data-stu-id="923a5-143">In the **Action** text box, specify the SOAP action for the operation.</span></span> <span data-ttu-id="923a5-144">次の方法では、アクションを指定できます。</span><span class="sxs-lookup"><span data-stu-id="923a5-144">You can specify the action in the following ways:</span></span>  
   
-    -   <span data-ttu-id="923a5-145">**シングル アクション形式を使用して、**です。</span><span class="sxs-lookup"><span data-stu-id="923a5-145">**By using the single action format**.</span></span> <span data-ttu-id="923a5-146">Wcf-oracleebs、送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="923a5-146">Use this format if the WCF-OracleEBS port sends and receive messages for a single operation.</span></span> <span data-ttu-id="923a5-147">例:</span><span class="sxs-lookup"><span data-stu-id="923a5-147">For example:</span></span>  
+    -   <span data-ttu-id="923a5-145">**シングル アクション形式を使用して、** です。</span><span class="sxs-lookup"><span data-stu-id="923a5-145">**By using the single action format**.</span></span> <span data-ttu-id="923a5-146">Wcf-oracleebs、送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="923a5-146">Use this format if the WCF-OracleEBS port sends and receive messages for a single operation.</span></span> <span data-ttu-id="923a5-147">例:</span><span class="sxs-lookup"><span data-stu-id="923a5-147">For example:</span></span>  
   
         ```  
         InterfaceTables/Insert/SQLGL/GL/GL_ALLOC_HISTORY  
         ```  
   
-    -   <span data-ttu-id="923a5-148">**アクション マッピング形式を使用して、**です。</span><span class="sxs-lookup"><span data-stu-id="923a5-148">**By using the action mapping format**.</span></span> <span data-ttu-id="923a5-149">1 つの Wcf-oracleebs ポートを送信および複数の操作のメッセージを受け取る場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="923a5-149">Use this format if a single WCF-OracleEBS port sends and receives messages for more than one operation.</span></span> <span data-ttu-id="923a5-150">たとえば、1 つの Wcf-oracleebs ポートは、(レコードを挿入する GL_ALLOC_HISTORY テーブル) Op1、Op2 (レコードを更新する GL_ALLOC_HISTORY テーブル) のメッセージを送受信場合、SOAP アクションは次のように指定できます。</span><span class="sxs-lookup"><span data-stu-id="923a5-150">For example, if a single WCF-OracleEBS port sends and receives messages for Op1 (to insert records in the GL_ALLOC_HISTORY table) and Op2 (to update records in the GL_ALLOC_HISTORY table), the SOAP action can be specified in the following manner:</span></span>  
+    -   <span data-ttu-id="923a5-148">**アクション マッピング形式を使用して、** です。</span><span class="sxs-lookup"><span data-stu-id="923a5-148">**By using the action mapping format**.</span></span> <span data-ttu-id="923a5-149">1 つの Wcf-oracleebs ポートを送信および複数の操作のメッセージを受け取る場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="923a5-149">Use this format if a single WCF-OracleEBS port sends and receives messages for more than one operation.</span></span> <span data-ttu-id="923a5-150">たとえば、1 つの Wcf-oracleebs ポートは、(レコードを挿入する GL_ALLOC_HISTORY テーブル) Op1、Op2 (レコードを更新する GL_ALLOC_HISTORY テーブル) のメッセージを送受信場合、SOAP アクションは次のように指定できます。</span><span class="sxs-lookup"><span data-stu-id="923a5-150">For example, if a single WCF-OracleEBS port sends and receives messages for Op1 (to insert records in the GL_ALLOC_HISTORY table) and Op2 (to update records in the GL_ALLOC_HISTORY table), the SOAP action can be specified in the following manner:</span></span>  
   
         ```  
         <BtsActionMapping>  

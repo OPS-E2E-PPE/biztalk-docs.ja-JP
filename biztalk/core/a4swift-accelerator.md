@@ -1,14 +1,14 @@
 ---
-title: "A4SWIFT アクセラレータ |Microsoft ドキュメント"
-ms.custom: 
+title: A4SWIFT アクセラレータ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b590db23-8a1d-45d6-94c3-7de14b0987e8
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223530"
 ---
 # <a name="a4swift-accelerator"></a><span data-ttu-id="5e6f8-102">A4SWIFT Accelerator</span><span class="sxs-lookup"><span data-stu-id="5e6f8-102">A4SWIFT Accelerator</span></span>
 <span data-ttu-id="5e6f8-103">Message Repair and Submission Request (MRSR) シナリオを使用するように [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../includes/btaa4swift2-3abbrevnonumber-md.md)] アクセラレータをインストールする場合は、以下のバージョンの SharePoint を使用できます。</span><span class="sxs-lookup"><span data-stu-id="5e6f8-103">When installing the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../includes/btaa4swift2-3abbrevnonumber-md.md)] accelerator to use the Message Repair and Submission Request (MRSR) scenario, the following SharePoint versions can be used:</span></span>  

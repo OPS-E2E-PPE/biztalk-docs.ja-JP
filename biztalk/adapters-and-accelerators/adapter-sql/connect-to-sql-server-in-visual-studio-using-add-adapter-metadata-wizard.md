@@ -1,14 +1,14 @@
 ---
-title: "SQL への接続で Visual Studio を使用してサーバー メタデータの追加アダプター ウィザード |Microsoft ドキュメント"
-ms.custom: 
+title: SQL への接続で Visual Studio を使用してサーバー メタデータの追加アダプター ウィザード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2169722d-beba-4d96-a54b-54986ece9bf8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226730"
 ---
 # <a name="connect-to-sql-server-in-visual-studio-using-add-adapter-metadata-wizard"></a><span data-ttu-id="ab3b8-102">SQL への接続で Visual Studio を使用してサーバー メタデータの追加アダプター ウィザード</span><span class="sxs-lookup"><span data-stu-id="ab3b8-102">Connect to SQL Server in Visual Studio Using Add Adapter Metadata Wizard</span></span>
 <span data-ttu-id="ab3b8-103">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] BizTalk アダプターとしても公開されると、そのため、使用することができます、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]アダプターを使用して SQL Server で実行する操作のスキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-103">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] is also exposed as a BizTalk adapter and, therefore, you can use the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] to generate schema for the operations you want to perform on SQL Server using the adapter.</span></span>  
@@ -39,14 +40,14 @@ ms.lasthandoff: 09/20/2017
         |<span data-ttu-id="ab3b8-113">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="ab3b8-113">**Categories**</span></span>|<span data-ttu-id="ab3b8-114">をクリックして**アダプターを追加**です。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-114">Click **Add Adapter**.</span></span>|  
         |<span data-ttu-id="ab3b8-115">**[テンプレート]**</span><span class="sxs-lookup"><span data-stu-id="ab3b8-115">**Templates**</span></span>|<span data-ttu-id="ab3b8-116">をクリックして**アダプター メタデータの追加**です。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-116">Click **Add Adapter Metadata**.</span></span>|  
   
-    4.  <span data-ttu-id="ab3b8-117">**[追加]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-117">Click **Add**.</span></span> <span data-ttu-id="ab3b8-118">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-118">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
+    4.  <span data-ttu-id="ab3b8-117">**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-117">Click **Add**.</span></span> <span data-ttu-id="ab3b8-118">[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-118">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
   
     5.  <span data-ttu-id="ab3b8-119">アダプターの追加ウィザードで選択**WCF-SQL**です。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-119">In the Add Adapter Wizard, select **WCF-SQL**.</span></span> <span data-ttu-id="ab3b8-120">コンピューターを選択して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]がインストールされていると、BizTalk データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-120">Select the computer on which [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] is installed and the name of the BizTalk database.</span></span>  
   
         > [!IMPORTANT]
         >  <span data-ttu-id="ab3b8-121">BizTalk で構成されている WCF SQL ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-121">If you already have a WCF-SQL port configured in BizTalk, select the port from the **Port** list.</span></span>  
   
-    6.  <span data-ttu-id="ab3b8-122">**[次へ]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-122">Click **Next**.</span></span>  
+    6.  <span data-ttu-id="ab3b8-122">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-122">Click **Next**.</span></span>  
   
 2.  <span data-ttu-id="ab3b8-123">**バインディングを選択**ドロップダウン リスト、選択**sqlBinding**、クリックして**構成**です。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-123">From the **Select a binding** drop-down list, select **sqlBinding**, and then click **Configure**.</span></span>  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |<span data-ttu-id="ab3b8-128">**なし**</span><span class="sxs-lookup"><span data-stu-id="ab3b8-128">**None**</span></span>|<span data-ttu-id="ab3b8-129">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-129">Connect to SQL Server by using Windows authentication.</span></span>|  
     |<span data-ttu-id="ab3b8-130">**Windows**</span><span class="sxs-lookup"><span data-stu-id="ab3b8-130">**Windows**</span></span>|<span data-ttu-id="ab3b8-131">Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-131">Connect to SQL Server by using Windows authentication.</span></span>|  
-    |<span data-ttu-id="ab3b8-132">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="ab3b8-132">**Username**</span></span>|<span data-ttu-id="ab3b8-133">ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-133">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="ab3b8-134">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-134">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="ab3b8-135">**注:**のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-135">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
+    |<span data-ttu-id="ab3b8-132">**ユーザー名**</span><span class="sxs-lookup"><span data-stu-id="ab3b8-132">**Username**</span></span>|<span data-ttu-id="ab3b8-133">ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-133">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="ab3b8-134">ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-134">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="ab3b8-135">**注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-135">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
   
 4.  <span data-ttu-id="ab3b8-136">クリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-136">Click the **URI Properties** tab, and then specify values for the connection parameters.</span></span> <span data-ttu-id="ab3b8-137">詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI を作成する](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-137">For more information about the connection URI for the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Create the SQL Server connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
   
@@ -74,9 +75,9 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="ab3b8-144">使用してメタデータを生成する場合[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]と既存の WCF-SQL 送信ポートを選択して、バインドのプロパティを指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-144">If you are generating metadata using [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] and you selected an existing WCF-SQL send port, you need not specify the binding properties.</span></span> <span data-ttu-id="ab3b8-145">バインドのプロパティは、送信ポートの構成から取得されます。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-145">The binding properties are picked from the send port configuration.</span></span> <span data-ttu-id="ab3b8-146">ただし、存在する場合、デザイン時に、必要なバインドのプロパティを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-146">However, you may choose to specify the binding properties that are required at design-time, if any.</span></span> <span data-ttu-id="ab3b8-147">このような場合、メタデータの生成中にバインドのプロパティの新しい値をデザイン時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-147">In such case, the new values for binding properties will be used at design-time while generating the metadata.</span></span> <span data-ttu-id="ab3b8-148">ただし、実行時に、バインドの送信ポートの構成のプロパティの指定値適用されます。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-148">However, at run-time the values specified for binding properties in the send port configuration will be applicable.</span></span>  
   
-6.  <span data-ttu-id="ab3b8-149">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-149">Click **OK**.</span></span>  
+6.  <span data-ttu-id="ab3b8-149">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-149">Click **OK**.</span></span>  
   
-7.  <span data-ttu-id="ab3b8-150">**[接続]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-150">Click **Connect**.</span></span> <span data-ttu-id="ab3b8-151">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-151">After the connection is established, the connection status is shown as **Connected**.</span></span>  
+7.  <span data-ttu-id="ab3b8-150">**[接続]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-150">Click **Connect**.</span></span> <span data-ttu-id="ab3b8-151">接続が確立されると、接続状態は表示**接続**です。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-151">After the connection is established, the connection status is shown as **Connected**.</span></span>  
   
      <span data-ttu-id="ab3b8-152">次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-152">The following figure shows the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] immediately after the connection is established.</span></span> <span data-ttu-id="ab3b8-153">グラフィカル ユーザー インターフェイスが同じ、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="ab3b8-153">The graphical user interface is same for the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)].</span></span>  
   

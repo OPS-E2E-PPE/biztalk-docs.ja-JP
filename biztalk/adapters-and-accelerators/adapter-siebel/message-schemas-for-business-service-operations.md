@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222298"
 ---
 # <a name="message-schemas-for-business-service-operations"></a><span data-ttu-id="a4f96-102">ビジネス サービス操作のメッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="a4f96-102">Message Schemas for Business Service Operations</span></span>
 <span data-ttu-id="a4f96-103">Siebel ビジネス サービスは、Siebel システムに直接呼び出すことができるビジネス メソッドのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="a4f96-103">A Siebel business service is a collection of business methods that can be directly invoked on a Siebel system.</span></span> <span data-ttu-id="a4f96-104">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]操作としては、Siebel ビジネス サービスのビジネス メソッドを表示します。</span><span class="sxs-lookup"><span data-stu-id="a4f96-104">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] surfaces the business methods of a Siebel business service as operations.</span></span>  

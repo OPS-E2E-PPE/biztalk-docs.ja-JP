@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257418"
 ---
 # <a name="implementation-highlights-of-the-business-process-management-solution"></a><span data-ttu-id="67d0c-102">ビジネス プロセス管理ソリューションの実装の要点</span><span class="sxs-lookup"><span data-stu-id="67d0c-102">Implementation Highlights of the Business Process Management Solution</span></span>
 <span data-ttu-id="67d0c-103">このセクションでは、企業間取引ソリューションの実装関連の要素を詳細に説明します。</span><span class="sxs-lookup"><span data-stu-id="67d0c-103">This section describes the implementation-related elements of the solution in greater detail.</span></span> <span data-ttu-id="67d0c-104">これらの要素にビジネス ルール フレームワーク、処理ステージの数は、方法、 **OrderManager**処理ステージの使用と通信する、 **OrderHandler**オブジェクト、方法アプリケーションでは、Ops アダプタを使用します。</span><span class="sxs-lookup"><span data-stu-id="67d0c-104">These elements include the Business Rules Framework, the number of processing stages, how the **OrderManager** communicates with the processing stages, the use of the **OrderHandler** object, and how the application uses the Ops Adapter.</span></span>  

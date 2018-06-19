@@ -1,11 +1,11 @@
 ---
-title: "キャプチャおよび Message Repair ソリューションを拡張 |Microsoft ドキュメント"
-ms.custom: 
+title: キャプチャおよび Message Repair ソリューションを拡張 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - repairing messages, errors
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - repairing messages, code sample
 - ErrorCollection objects
 ms.assetid: 93f463a0-ecff-4f3e-a145-7c506f42c767
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209090"
 ---
 # <a name="extending-the-solution-for-capture-and-message-repair"></a><span data-ttu-id="21648-102">キャプチャおよび Message Repair ソリューションを拡張します。</span><span class="sxs-lookup"><span data-stu-id="21648-102">Extending the Solution for Capture and Message Repair</span></span>
 <span data-ttu-id="21648-103">このヘルプに MT103 エンド ツー エンド チュートリアルでは、失敗した SWIFT メッセージをサブスクライブする BizTalk オーケストレーションを構築する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="21648-103">The MT103 End-to-End Tutorial in this Help shows you how to construct a BizTalk orchestration that subscribes to failed SWIFT messages.</span></span>  

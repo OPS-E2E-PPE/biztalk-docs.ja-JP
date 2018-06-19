@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22213946"
 ---
 # <a name="preparing-for-deployment"></a><span data-ttu-id="5626e-102">展開の準備</span><span class="sxs-lookup"><span data-stu-id="5626e-102">Preparing for Deployment</span></span>
 <span data-ttu-id="5626e-103">このセクションでは、展開の計画と準備フェーズに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="5626e-103">This section provides information about the planning and preparation phase of the deployment.</span></span> <span data-ttu-id="5626e-104">展開を実装する前に、次の作業を行います。</span><span class="sxs-lookup"><span data-stu-id="5626e-104">Before implementing a deployment, make the following preparations:</span></span>  

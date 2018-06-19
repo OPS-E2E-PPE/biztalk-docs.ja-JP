@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254322"
 ---
 # <a name="how-to-move-between-and-within-grid-pages"></a><span data-ttu-id="ecf92-102">グリッド ページ間およびグリッド ページ内で移動する方法</span><span class="sxs-lookup"><span data-stu-id="ecf92-102">How to Move Between and Within Grid Pages</span></span>
 <span data-ttu-id="ecf92-103">マップが複雑である場合、通常は単一のグリッド ページ内にすべてのリンクと Functoid を同時に表示できません。</span><span class="sxs-lookup"><span data-stu-id="ecf92-103">If your map is complex, it is very likely that not all links and functoids are visible within a single grid page at the same time.</span></span> <span data-ttu-id="ecf92-104">このような場合は、グリッド ページをスクロールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ecf92-104">This means that you need to be able to scroll within a grid page.</span></span> <span data-ttu-id="ecf92-105">複数のグリッド ページに対応するマップを使用する場合は、グリッド ページ間の移動を可能にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ecf92-105">And, if your map warrants multiple grid pages, you will need to be able to move between grid pages.</span></span> <span data-ttu-id="ecf92-106">このトピックでは、これらの作業の手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="ecf92-106">This topic provides step-by-step instructions for these operations.</span></span>  

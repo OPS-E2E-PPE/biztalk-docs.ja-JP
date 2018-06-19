@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206018"
 ---
 # <a name="refi12-in-v2xml-231"></a><span data-ttu-id="77b8a-102">V2 REF_I12 です。XML 2.3.1</span><span class="sxs-lookup"><span data-stu-id="77b8a-102">REF_I12 in V2.XML 2.3.1</span></span>
 <span data-ttu-id="77b8a-103">V2 REF_I12 スキーマで次のコードを手動で変更する必要があります。XML 2.3.1 Update2XMLSchema ツールを実行した後:</span><span class="sxs-lookup"><span data-stu-id="77b8a-103">You must manually change the following code in the REF_I12 schema in V2.XML 2.3.1 after running the Update2XMLSchema tool:</span></span>  

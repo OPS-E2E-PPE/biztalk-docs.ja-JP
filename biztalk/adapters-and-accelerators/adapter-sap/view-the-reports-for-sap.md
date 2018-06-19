@@ -1,14 +1,14 @@
 ---
-title: "SAP 用のレポートの表示 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP 用のレポートの表示 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0932ffc5-cde0-4d14-822f-713b760c3f12
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218218"
 ---
 # <a name="view-the-reports-for-sap"></a><span data-ttu-id="5bd65-102">SAP 用のレポートを表示します。</span><span class="sxs-lookup"><span data-stu-id="5bd65-102">View the Reports for SAP</span></span>
 <span data-ttu-id="5bd65-103">レポートを作成した後、それを表示できる Visual Studio を使用するか、ネットワーク経由でインターネット インフォメーション サービス (IIS) とアクセスでレポート サーバー上でホストします。</span><span class="sxs-lookup"><span data-stu-id="5bd65-103">After you have created the report, you can view it either using Visual Studio or host it on the Report Server on Internet Information Services (IIS) and access over the network.</span></span> <span data-ttu-id="5bd65-104">このトピックでは、Visual Studio および IIS を使用して両方のレポートを表示する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="5bd65-104">This topic provides instructions on how to view reports both in Visual Studio and using IIS.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="5bd65-108">[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーでプロジェクト名を右クリックし、クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="5bd65-108">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], right-click the project name in the Solution Explorer, and then click **Properties**.</span></span>  
   
-2.  <span data-ttu-id="5bd65-109">レポート プロパティ ページ ダイアログ ボックスをクリックして**Configuration Manager**、下のチェック ボックスをオフにし、**展開**列です。</span><span class="sxs-lookup"><span data-stu-id="5bd65-109">In the report property pages dialog box, click **Configuration Manager**, and clear the check box under the **Deploy** column.</span></span> <span data-ttu-id="5bd65-110">**[閉じる]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5bd65-110">Click **Close**.</span></span>  
+2.  <span data-ttu-id="5bd65-109">レポート プロパティ ページ ダイアログ ボックスをクリックして**Configuration Manager**、下のチェック ボックスをオフにし、**展開**列です。</span><span class="sxs-lookup"><span data-stu-id="5bd65-109">In the report property pages dialog box, click **Configuration Manager**, and clear the check box under the **Deploy** column.</span></span> <span data-ttu-id="5bd65-110">**[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5bd65-110">Click **Close**.</span></span>  
   
 3.  <span data-ttu-id="5bd65-111">レポート プロパティ ページ ダイアログ ボックスの**StartItem**プロパティ、レポートの名前を選択し、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="5bd65-111">In the report property pages dialog box, for the **StartItem** property, select the name of the report, and then click **OK**.</span></span>  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="5bd65-124">[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーでプロジェクト名を右クリックし、クリックして**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="5bd65-124">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], right-click the project name in the Solution Explorer, and then click **Properties**.</span></span>  
   
-2.  <span data-ttu-id="5bd65-125">レポート プロパティ ページ ダイアログ ボックスをクリックして**Configuration Manager**、下にあるチェック ボックスをオンにし、**展開**列です。</span><span class="sxs-lookup"><span data-stu-id="5bd65-125">In the report property pages dialog box, click **Configuration Manager**, and select the check box under the **Deploy** column.</span></span> <span data-ttu-id="5bd65-126">**[閉じる]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5bd65-126">Click **Close**.</span></span>  
+2.  <span data-ttu-id="5bd65-125">レポート プロパティ ページ ダイアログ ボックスをクリックして**Configuration Manager**、下にあるチェック ボックスをオンにし、**展開**列です。</span><span class="sxs-lookup"><span data-stu-id="5bd65-125">In the report property pages dialog box, click **Configuration Manager**, and select the check box under the **Deploy** column.</span></span> <span data-ttu-id="5bd65-126">**[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5bd65-126">Click **Close**.</span></span>  
   
 3.  <span data-ttu-id="5bd65-127">レポート プロパティ ページ ダイアログ ボックスの**StartItem**プロパティ、レポートの名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="5bd65-127">In the report property pages dialog box, for the **StartItem** property, select the name of the report.</span></span>  
   

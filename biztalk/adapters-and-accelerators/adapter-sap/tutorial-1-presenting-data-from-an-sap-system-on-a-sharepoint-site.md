@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル 1: SharePoint サイト上の SAP システムからのデータの表示 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル 1: SharePoint サイト上の SAP システムからのデータの表示 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MOSS, creating an application in
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - MOSS
 - Microsoft Office SharePoint Server, creating an application in
 ms.assetid: 6e31c365-446c-4fe1-8538-fa6c869eed63
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217426"
 ---
 # <a name="tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site"></a><span data-ttu-id="1b72f-102">チュートリアル 1: SharePoint サイト上の SAP システムからのデータの表示</span><span class="sxs-lookup"><span data-stu-id="1b72f-102">Tutorial 1: Presenting Data from an SAP System on a SharePoint Site</span></span>
 <span data-ttu-id="1b72f-103">このチュートリアルを使用して詳細な手順を説明する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Microsoft Office SharePoint Server、SharePoint portal に SAP システムからビジネス データを表示するとします。</span><span class="sxs-lookup"><span data-stu-id="1b72f-103">This tutorial provides detailed instructions on using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] with Microsoft Office SharePoint Server to present business data from an SAP system on a SharePoint portal.</span></span> <span data-ttu-id="1b72f-104">使用する方法を示すために、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Office SharePoint Server と、あらゆるビジネスで 2 つの最も一般的なエンティティを考慮します: 顧客および販売注文します。</span><span class="sxs-lookup"><span data-stu-id="1b72f-104">To demonstrate how to use the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] with Office SharePoint Server, consider the two most common entities in any business: customers and sales orders.</span></span> <span data-ttu-id="1b72f-105">Office SharePoint server を使用してアプリケーションを作成するこの例では、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を次を行うには。</span><span class="sxs-lookup"><span data-stu-id="1b72f-105">In this example, an application is created in Office SharePoint Server, which uses the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] to do the following:</span></span>  

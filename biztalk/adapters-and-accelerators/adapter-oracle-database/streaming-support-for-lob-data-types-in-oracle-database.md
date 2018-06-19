@@ -1,11 +1,11 @@
 ---
-title: "Oracle データベースでの LOB データ型のサポートをストリーミング |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベースでの LOB データ型のサポートをストリーミング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - streaming, node-value
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - LOB data
 - streaming, node
 ms.assetid: a4943cdf-8336-48ac-b592-52ec514e7300
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214650"
 ---
 # <a name="streaming-support-for-lob-data-types-in-oracle-database"></a><span data-ttu-id="ffec6-102">Oracle データベースでの LOB データ型のストリーミング サポート</span><span class="sxs-lookup"><span data-stu-id="ffec6-102">Streaming Support for LOB Data Types in Oracle Database</span></span>
 <span data-ttu-id="ffec6-103">Oracle データベースでは、ラージ オブジェクト (LOB) データ型のストリーミングをサポートします。</span><span class="sxs-lookup"><span data-stu-id="ffec6-103">The Oracle database supports streaming on large object (LOB) data types.</span></span> <span data-ttu-id="ffec6-104">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]LOB データ エンド ツー エンド Oracle データベースと、アダプターのクライアントの間にストリーミングできるようになりますストリーミングをサポートするメッセージ。</span><span class="sxs-lookup"><span data-stu-id="ffec6-104">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]supports message streaming, which makes it possible to stream LOB data end-to-end between the Oracle database and an adapter client.</span></span> <span data-ttu-id="ffec6-105">ただし、ストリーミングはサポートされていません同様に、すべてのプログラミング モデル間で、アダプターを使用するとします。</span><span class="sxs-lookup"><span data-stu-id="ffec6-105">However, streaming is not supported in the same manner across all programming models when you use the adapter.</span></span>  

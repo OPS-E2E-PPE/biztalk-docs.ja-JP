@@ -1,18 +1,18 @@
 ---
-title: "一般的なスキーマのセグメント |Microsoft ドキュメント"
-ms.custom: 
+title: 一般的なスキーマのセグメント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - 2.X schemas, common schemas
 - 2.X schemas, segments
 - common schemas
 ms.assetid: 6f66bce9-ead8-46c1-a66c-830750adc73b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25960696"
 ---
 # <a name="segments-common-schemas"></a><span data-ttu-id="175d7-102">セグメントの一般的なスキーマ</span><span class="sxs-lookup"><span data-stu-id="175d7-102">Segments Common Schemas</span></span>
 <span data-ttu-id="175d7-103">**Segments_\<*バージョン*\>.xsd** datatypes_ が含まれるファイル\<*バージョン*\>.xsd が含まれています、HL7 バージョンに関連するすべてのセグメントの定義。</span><span class="sxs-lookup"><span data-stu-id="175d7-103">The **segments_\<*version*\>.xsd** file includes datatypes_\<*version*\>.xsd and contains the definition of all the segments related to the HL7 version.</span></span> <span data-ttu-id="175d7-104">各メッセージ スキーマを使用 segments_\<*バージョン*\>.xsd です。</span><span class="sxs-lookup"><span data-stu-id="175d7-104">Each message schema uses segments_\<*version*\>.xsd.</span></span> <span data-ttu-id="175d7-105">HL7 メッセージの定義は、各サブフォルダーの下にあるし、segments_ を含める\<*バージョン*\>.xsd です。</span><span class="sxs-lookup"><span data-stu-id="175d7-105">HL7 message definitions are under each subfolder and include segments_\<*version*\>.xsd.</span></span> <span data-ttu-id="175d7-106">SegmentDataElements と DataElements アクセス データベースのテーブルを生成、segments_\<*バージョン*\>.xsd ファイルは、すべてのデータ型の Fields.xsd スキーマ ファイルへのポインターが含まれています。</span><span class="sxs-lookup"><span data-stu-id="175d7-106">The SegmentDataElements and DataElements Access database tables generate the segments_\<*version*\>.xsd file, which includes a pointer to the Fields.xsd schema file for all data types.</span></span> <span data-ttu-id="175d7-107">スキーマ ファイル名の形式です。</span><span class="sxs-lookup"><span data-stu-id="175d7-107">The schema file name format is:</span></span>  

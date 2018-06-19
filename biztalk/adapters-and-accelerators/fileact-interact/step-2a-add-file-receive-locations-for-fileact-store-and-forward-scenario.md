@@ -1,15 +1,15 @@
 ---
-title: "手順 2A - 追加するファイルの受信場所 |Microsoft ドキュメント"
-description: "手順 2A-追加のファイルは、BizTalk server FileAct ストア アンド フォワード (プル) シナリオの場所を受信"
-ms.custom: 
+title: 手順 2A - 追加するファイルの受信場所 |Microsoft ドキュメント
+description: 手順 2A-追加のファイルは、BizTalk server FileAct ストア アンド フォワード (プル) シナリオの場所を受信
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 13720ebb-fbe4-4fe1-a095-9ae14c62def1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224074"
 ---
 # <a name="step-2a-add-file-receive-locations-for-the-fileact-store-and-forward-pull-scenario"></a><span data-ttu-id="04efc-103">手順 2 a: ファイルの受信場所 FileAct ストア アンド フォワード (プル) シナリオの追加</span><span class="sxs-lookup"><span data-stu-id="04efc-103">Step 2A: Add FILE Receive Locations for the FileAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="04efc-104">この手順を開始する前に行う必要があります[手順 1: SWIFT アダプター FileAct ストア アンド フォワード (プル) シナリオ用に構成](step-1-configure-the-swift-adapter-for-fileact-store-and-forward-pull-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="04efc-104">Before you begin this step, you must complete [Step 1: Configure the SWIFT Adapter for the FileAct Store and Forward (Pull) Scenario](step-1-configure-the-swift-adapter-for-fileact-store-and-forward-pull-scenario.md).</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="04efc-116">**受信ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="04efc-116">**Receive handler**</span></span>|<span data-ttu-id="04efc-117">ドロップダウン リストから選択**BizTalkServerApplication**です。</span><span class="sxs-lookup"><span data-stu-id="04efc-117">From the drop-down list, select **BizTalkServerApplication**.</span></span>|  
     |<span data-ttu-id="04efc-118">**受信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="04efc-118">**Receive pipeline**</span></span>|<span data-ttu-id="04efc-119">ドロップダウン リストから選択**XMLReceive**です。</span><span class="sxs-lookup"><span data-stu-id="04efc-119">From the drop-down list, select **XMLReceive**.</span></span>|  
   
-9. <span data-ttu-id="04efc-120">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="04efc-120">Click **OK**.</span></span>  
+9. <span data-ttu-id="04efc-120">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="04efc-120">Click **OK**.</span></span>  
   
 10. <span data-ttu-id="04efc-121">手順 1. と 2. を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="04efc-121">Repeat steps 1 and 2.</span></span>  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="04efc-130">**受信ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="04efc-130">**Receive handler**</span></span>|<span data-ttu-id="04efc-131">ドロップダウン リストから選択**BizTalkServerApplication**です。</span><span class="sxs-lookup"><span data-stu-id="04efc-131">From the drop-down list, select **BizTalkServerApplication**.</span></span>|  
     |<span data-ttu-id="04efc-132">**受信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="04efc-132">**Receive pipeline**</span></span>|<span data-ttu-id="04efc-133">ドロップダウン リストから選択**XMLReceive**です。</span><span class="sxs-lookup"><span data-stu-id="04efc-133">From the drop-down list, select **XMLReceive**.</span></span>|  
   
-17. <span data-ttu-id="04efc-134">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="04efc-134">Click **OK**.</span></span>  
+17. <span data-ttu-id="04efc-134">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="04efc-134">Click **OK**.</span></span>  
   
 ## <a name="next-steps"></a><span data-ttu-id="04efc-135">次の手順</span><span class="sxs-lookup"><span data-stu-id="04efc-135">Next steps</span></span>
 -  [<span data-ttu-id="04efc-136">手順 2 b: Sw:HandleFileRequest をキャプチャするファイルの送信ポートを追加し、FileAct ストア アンド フォワードの Sw:HandleSnFRequest メッセージ (プル) のシナリオ</span><span class="sxs-lookup"><span data-stu-id="04efc-136">Step 2B: Add FILE Send Ports to Capture the Sw:HandleFileRequest and Sw:HandleSnFRequest Messages for the FileAct Store and Forward (Pull) Scenario</span></span>](step-2b-add-file-send-ports--get-sw-handlefilerequest-and-sw-handlesnfrequest.md)   

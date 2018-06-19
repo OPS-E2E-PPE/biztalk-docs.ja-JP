@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216298"
 ---
 # <a name="secure-your-sap-applications"></a><span data-ttu-id="3124c-102">SAP アプリケーションのセキュリティ保護します。</span><span class="sxs-lookup"><span data-stu-id="3124c-102">Secure your SAP applications</span></span>
 <span data-ttu-id="3124c-103">SAP システムは、お客様のアカウント詳細などの機密性の高いビジネス情報を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="3124c-103">The SAP system can contain sensitive business information such as customer account details.</span></span> <span data-ttu-id="3124c-104">使用するアプリケーション、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]にアクセスして、この情報を変更するいずれかのローカルまたは分散ネットワーク経由で公開される可能性が誤ってに不正のアクターによってアクセスする作業はに対して保護して、中にデータをセキュリティで保護しない限り、転送します。</span><span class="sxs-lookup"><span data-stu-id="3124c-104">Applications that use the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] to access and modify this information either locally or across a distributed network might inadvertently expose it to access by unauthorized actors, unless efforts are made to protect and secure the data during transmission.</span></span> <span data-ttu-id="3124c-105">データ保護およびセキュリティは、通常と考えるは次の用語で。</span><span class="sxs-lookup"><span data-stu-id="3124c-105">Data protection and security are usually thought of in the following terms:</span></span>  

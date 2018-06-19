@@ -1,15 +1,15 @@
 ---
-title: "SAP クエリのパラメーターを BizTalk での mySAP アダプターで EXECQUERY コマンドに変換 |Microsoft ドキュメント"
-description: "EXECQUERY、例と共に SAP クエリを変換するガイダンス"
-ms.custom: 
+title: SAP クエリのパラメーターを BizTalk での mySAP アダプターで EXECQUERY コマンドに変換 |Microsoft ドキュメント
+description: EXECQUERY、例と共に SAP クエリを変換するガイダンス
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8a545e20-2607-4946-a60d-0a227b86d093
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217730"
 ---
 # <a name="translate-sap-query-parameters-into-execquery-command"></a><span data-ttu-id="66f65-103">SAP クエリのパラメーターを EXECQUERY コマンドに変換します。</span><span class="sxs-lookup"><span data-stu-id="66f65-103">Translate SAP query parameters into EXECQUERY command</span></span>
 <span data-ttu-id="66f65-104">クエリのパラメーターが EXECQUERY コマンド テキストに変換する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="66f65-104">Explains how the parameters of a query translate into an EXECQUERY command text.</span></span> <span data-ttu-id="66f65-105">このトピックでは、ZQUERY_TST_NEW カスタムの SAP クエリの例を使用します。</span><span class="sxs-lookup"><span data-stu-id="66f65-105">This topic uses the example of a custom SAP query, ZQUERY_TST_NEW.</span></span>  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="66f65-114">![SAP クエリのパラメーターのリスト](../../adapters-and-accelerators/adapter-sap/media/sap-query-param-types.gif "sap_query_param_types")</span><span class="sxs-lookup"><span data-stu-id="66f65-114">![List of parameters for an SAP query](../../adapters-and-accelerators/adapter-sap/media/sap-query-param-types.gif "sap_query_param_types")</span></span>  
   
-5.  <span data-ttu-id="66f65-115">**[実行]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="66f65-115">Click **Execute**.</span></span> <span data-ttu-id="66f65-116">次のページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="66f65-116">The following page is displayed.</span></span>  
+5.  <span data-ttu-id="66f65-115">**[実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="66f65-115">Click **Execute**.</span></span> <span data-ttu-id="66f65-116">次のページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="66f65-116">The following page is displayed.</span></span>  
   
      <span data-ttu-id="66f65-117">![SAP クエリのパラメーター値を指定](../../adapters-and-accelerators/adapter-sap/media/sap-query-all-params.gif "sap_query_all_params")</span><span class="sxs-lookup"><span data-stu-id="66f65-117">![Provide parameter values for an SAP query](../../adapters-and-accelerators/adapter-sap/media/sap-query-all-params.gif "sap_query_all_params")</span></span>  
   

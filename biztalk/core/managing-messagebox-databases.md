@@ -1,18 +1,18 @@
 ---
-title: "メッセージ ボックス データベースの管理 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ ボックス データベースの管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [MessageBox database], about managing MessageBox database
 - managing [MessageBox database]
 - MessageBox database, managing
 ms.assetid: 9675b5d5-7a69-468d-be42-34a72cd6e5c2
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262146"
 ---
 # <a name="managing-messagebox-databases"></a><span data-ttu-id="830f5-102">メッセージ ボックス データベースの管理</span><span class="sxs-lookup"><span data-stu-id="830f5-102">Managing MessageBox Databases</span></span>
 <span data-ttu-id="830f5-103">メッセージ ボックス データベースには 3 つの重要な役割があります。</span><span class="sxs-lookup"><span data-stu-id="830f5-103">The MessageBox database has three essential functions.</span></span> <span data-ttu-id="830f5-104">1 つ目は、サブスクリプションと追跡情報を格納し、サブスクリプションと一致するサービスにメッセージを配信することです。</span><span class="sxs-lookup"><span data-stu-id="830f5-104">It stores subscriptions and tracking information and it delivers the messages to the services that match the subscriptions.</span></span> <span data-ttu-id="830f5-105">2 つ目は、各 BizTalk ホストのキューと状態テーブルを格納するホスト プラットフォームとして機能することです。</span><span class="sxs-lookup"><span data-stu-id="830f5-105">The MessageBox database is a host platform that stores the queues and state tables for each BizTalk Host.</span></span> <span data-ttu-id="830f5-106">そして、3 つ目は、メッセージやメッセージ プロパティを格納することです。</span><span class="sxs-lookup"><span data-stu-id="830f5-106">The MessageBox database also stores messages and message properties.</span></span>  

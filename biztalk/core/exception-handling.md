@@ -1,14 +1,14 @@
 ---
-title: "例外処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 例外処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 00a9125c-7c7c-4d2a-ae04-c923cd89683c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245930"
 ---
 # <a name="exception-handling"></a><span data-ttu-id="29596-102">例外処理</span><span class="sxs-lookup"><span data-stu-id="29596-102">Exception Handling</span></span>
 <span data-ttu-id="29596-103">**RuleEngine**クラスには、プロパティ**CompensationHandlerInfo**をさらに 2 つのプロパティを持つ: **CompensationHandler**と**UserData**.</span><span class="sxs-lookup"><span data-stu-id="29596-103">The **RuleEngine** class has the property **CompensationHandlerInfo**, which in turn has two properties: **CompensationHandler** and **UserData**.</span></span> <span data-ttu-id="29596-104">**CompensationHandler**プロパティの型は**RuleEngineCompensationHandler**、および**UserData**プロパティの型は**オブジェクト**.</span><span class="sxs-lookup"><span data-stu-id="29596-104">The **CompensationHandler** property is of type **RuleEngineCompensationHandler**, and the **UserData** property is of type **Object**.</span></span> <span data-ttu-id="29596-105">定義、 **RuleEngineCompensationHandler**のとおりです。</span><span class="sxs-lookup"><span data-stu-id="29596-105">The definition for the **RuleEngineCompensationHandler** is as follows:</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "Microsoft BizTalk Adapter 用 Oracle E-business Suite ドキュメント |Microsoft ドキュメント"
-description: "取得開始されると、アーキテクチャ、セキュリティ、アプリを開発、メッセージ スキーマ、および Oracle EBS アダプターは、BizTalk Adapter Pack のトラブルシューティング"
-ms.custom: 
+title: Microsoft BizTalk Adapter 用 Oracle E-business Suite ドキュメント |Microsoft ドキュメント
+description: 取得開始されると、アーキテクチャ、セキュリティ、アプリを開発、メッセージ スキーマ、および Oracle EBS アダプターは、BizTalk Adapter Pack のトラブルシューティング
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b1e96fd2-e632-4a07-b18d-c93c5b57e36e
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216378"
 ---
 # <a name="microsoft-biztalk-adapter-for-oracle-e-business-suite-documentation"></a><span data-ttu-id="6f7ba-103">Microsoft BizTalk Adapter 用 Oracle E-business Suite ドキュメント</span><span class="sxs-lookup"><span data-stu-id="6f7ba-103">Microsoft BizTalk Adapter for Oracle E-Business Suite documentation</span></span>
 <span data-ttu-id="6f7ba-104">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]さまざまなしくみを理解、アダプター、アダプターを使用して、別の接続オプションについて説明するアプリケーションを作成する方法、やアプリケーションを作成する方法を学習するのに役立つリソースが含まれています。</span><span class="sxs-lookup"><span data-stu-id="6f7ba-104">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] includes a variety of resources to help you understand how the adapter works, how to create applications that use the adapter, describes the different connection options, learn to create applications, and more.</span></span>  

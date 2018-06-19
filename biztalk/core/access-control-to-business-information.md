@@ -1,11 +1,11 @@
 ---
-title: "コントロールをビジネス情報にアクセス |Microsoft ドキュメント"
-ms.custom: 
+title: コントロールをビジネス情報にアクセス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - access control, BizTalk Server Operator role
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - access control, BizTalk Server Administrator role
 - BizTalk Server Administrators [Windows group]
 ms.assetid: b63c17cc-fc1b-4d6c-a6b6-c97245858744
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223554"
 ---
 # <a name="access-control-to-business-information"></a><span data-ttu-id="aee09-102">ビジネス情報へのアクセス制御</span><span class="sxs-lookup"><span data-stu-id="aee09-102">Access Control to Business Information</span></span>
 <span data-ttu-id="aee09-103">BizTalk 追跡データベース内のメッセージ プロパティ データおよびメッセージ本文データの追跡など、追跡データにアクセスできるのは BizTalk Server 管理者のみです。</span><span class="sxs-lookup"><span data-stu-id="aee09-103">Only the BizTalk Server Administrators can access tracking data, such as tracking the message properties and message body data, in the BizTalk Tracking database.</span></span> <span data-ttu-id="aee09-104">BizTalk Server Operator は、BizTalk 追跡データベース内のメッセージ フロー データにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="aee09-104">The BizTalk Server Operators has access to message flow data in the BizTalk Tracking database.</span></span>  

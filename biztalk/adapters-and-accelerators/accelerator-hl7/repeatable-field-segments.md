@@ -1,11 +1,11 @@
 ---
-title: "セグメントを反復可能なフィールド |Microsoft ドキュメント"
-ms.custom: 
+title: セグメントを反復可能なフィールド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - segments, repeatable fields
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Segments table
 - RDT
 ms.assetid: 4c31cb56-21e5-4918-aaf6-67e8ceddd74f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206330"
 ---
 # <a name="repeatable-field-segments"></a><span data-ttu-id="23fd1-102">反復可能なフィールド セグメント</span><span class="sxs-lookup"><span data-stu-id="23fd1-102">Repeatable Field Segments</span></span>
 <span data-ttu-id="23fd1-103">HL7 Access データベース内のセグメント テーブル (ADD、RDT、および QPD) セグメントの最後のフィールドの列を格納する[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 反復可能として定義 (**Last_field_repeatable**  = **True**)。</span><span class="sxs-lookup"><span data-stu-id="23fd1-103">The Segments table in the HL7 Access database contains a column for the last field of segments (ADD, RDT, and QPD) that [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) defines as repeatable (**Last_field_repeatable** = **True**).</span></span> [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="23fd1-104">追加はサポートされません。</span><span class="sxs-lookup"><span data-stu-id="23fd1-104"> does not support ADD.</span></span> <span data-ttu-id="23fd1-105">ただし、RDT と QPD の両方がテーブルをクエリに存在し、テーブルの値で応答します。</span><span class="sxs-lookup"><span data-stu-id="23fd1-105">However, both RDT and QPD are present to query tables and respond with table values.</span></span> <span data-ttu-id="23fd1-106">次のサンプルでどのように[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]これらの列を処理します。</span><span class="sxs-lookup"><span data-stu-id="23fd1-106">The following sample demonstrates how [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] handles these columns.</span></span>  

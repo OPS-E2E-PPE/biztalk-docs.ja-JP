@@ -1,11 +1,11 @@
 ---
-title: "作成と Contoso のプライベート プロセスの変更 |Microsoft ドキュメント"
-ms.custom: 
+title: 作成と Contoso のプライベート プロセスの変更 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private processes, creating
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - creating, private processes
 - private process tutorial, configuring private processes
 ms.assetid: 0690aaef-cd9e-46aa-8bd5-22744d5aec4c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210066"
 ---
 # <a name="creating-and-modifying-the-private-process-for-contoso"></a><span data-ttu-id="55380-102">作成と Contoso のプライベート プロセスの変更</span><span class="sxs-lookup"><span data-stu-id="55380-102">Creating and Modifying the Private Process for Contoso</span></span>
 <span data-ttu-id="55380-103">[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 内でプライベート プロセスをカスタマイズしてソリューションを実装する際に、RosettaNet ベースのメッセージを使用して追加の作業を実行できます。</span><span class="sxs-lookup"><span data-stu-id="55380-103">You can perform additional tasks with RosettaNet-based messages when implementing your solution by customizing the private process within [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)].</span></span> <span data-ttu-id="55380-104">ここでは、ビジネス ルール エンジン (BRE) を使用してポリシーを作成し、BizTalk エディターを使用してプライベート プロセス オーケストレーションをカスタマイズして、プライベート プロセスをカスタマイズする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="55380-104">This section demonstrates how to customize the private process by using the Business Rule Engine (BRE) to create policies and BizTalk Editor to customize the private process orchestration.</span></span>  

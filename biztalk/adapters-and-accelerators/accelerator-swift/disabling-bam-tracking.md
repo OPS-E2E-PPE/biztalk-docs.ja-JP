@@ -1,17 +1,17 @@
 ---
-title: "BAM の追跡を無効化 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM の追跡を無効化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FIN Response Reconciliation, disabling BAM tracking
 - BAM tracking
 ms.assetid: ea5fef0e-7a96-46f5-81d8-9b1d8a5d24d2
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209050"
 ---
 # <a name="disabling-bam-tracking"></a><span data-ttu-id="509dc-102">BAM 追跡を無効にします。</span><span class="sxs-lookup"><span data-stu-id="509dc-102">Disabling BAM Tracking</span></span>
 <span data-ttu-id="509dc-103">既定では、FIN 対応調整の BAM の追跡が有効にします。</span><span class="sxs-lookup"><span data-stu-id="509dc-103">By default, BAM tracking is enabled for FIN Response Reconciliation.</span></span> <span data-ttu-id="509dc-104">無効にできますとおりです。</span><span class="sxs-lookup"><span data-stu-id="509dc-104">You can disable it as follows.</span></span>  
@@ -37,4 +38,4 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="509dc-110">**DWORD 値の編集** ダイアログ ボックスで、**値のデータ**ボックスに、入力**0** BAM の追跡を無効にします。</span><span class="sxs-lookup"><span data-stu-id="509dc-110">In the **Edit DWORD Value** dialog box, in the **Value data** box, type **0** to disable BAM tracking.</span></span>  
   
-5.  <span data-ttu-id="509dc-111">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="509dc-111">Click **OK**.</span></span>
+5.  <span data-ttu-id="509dc-111">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="509dc-111">Click **OK**.</span></span>

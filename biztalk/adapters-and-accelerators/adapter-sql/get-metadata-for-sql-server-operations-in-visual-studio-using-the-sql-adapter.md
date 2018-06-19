@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターを使用して Visual Studio での SQL Server 操作のメタデータを取得 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターを使用して Visual Studio での SQL Server 操作のメタデータを取得 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a7ac720-e573-4564-8d15-8212a815f1f7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222154"
 ---
 # <a name="get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter"></a><span data-ttu-id="63d07-102">SQL アダプターを使用して Visual Studio での SQL Server 操作のメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="63d07-102">Get metadata for SQL Server operations in Visual Studio using the SQL adapter</span></span>
 <span data-ttu-id="63d07-103">[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] 3 つの提供[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]アダプターを使用してソリューションを開発するために使用できるコンポーネント:、 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、および[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="63d07-103">The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] provides three [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] components that you can use to help you develop solutions using the adapter—the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)], the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)], and the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)].</span></span> <span data-ttu-id="63d07-104">アダプターのクライアントは、SQL Server に接続しを実行する操作のメタデータを生成するこれらのコンポーネントを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="63d07-104">Adapter clients must use these components to connect to SQL Server and then generate metadata for the operations they want to perform.</span></span>  

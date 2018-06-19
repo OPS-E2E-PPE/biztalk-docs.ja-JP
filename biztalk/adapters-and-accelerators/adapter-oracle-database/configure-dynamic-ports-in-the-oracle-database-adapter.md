@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214146"
 ---
 # <a name="configure-dynamic-ports-in-the-oracle-database-adapter"></a><span data-ttu-id="85a3a-102">Oracle データベース アダプターの動的ポートを構成します。</span><span class="sxs-lookup"><span data-stu-id="85a3a-102">Configure dynamic ports in the Oracle Database Adapter</span></span>
 <span data-ttu-id="85a3a-103">[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]の動的ポートを構成することができます、[!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="85a3a-103">In [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you can configure dynamic ports for a [!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)].</span></span> <span data-ttu-id="85a3a-104">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] WCF ベース アダプターでは、用のポートを動的に構成することができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]メッセージ コンテキスト プロパティを使用しています。</span><span class="sxs-lookup"><span data-stu-id="85a3a-104">Because the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] is a WCF-based adapter, you can dynamically configure a port for the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] by using message context properties.</span></span>  

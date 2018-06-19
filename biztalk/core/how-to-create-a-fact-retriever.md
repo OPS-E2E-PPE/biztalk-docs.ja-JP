@@ -1,11 +1,11 @@
 ---
-title: "ファクト取得コンポーネントを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ファクト取得コンポーネントを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IFactRetriever interface
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - UpdateFacts method
 - Business Rules Framework, programming
 ms.assetid: 503dc769-3ada-4099-a5fe-4dd03d995600
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250210"
 ---
 # <a name="how-to-create-a-fact-retriever"></a><span data-ttu-id="f5aee-102">ファクト取得コンポーネントを作成する方法</span><span class="sxs-lookup"><span data-stu-id="f5aee-102">How to Create a Fact Retriever</span></span>
 <span data-ttu-id="f5aee-103">ファクト取得コンポーネントは、ポリシーの実行時に、長期間のファクトのインスタンスをポリシーとしてアサートする際に使用されるコンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="f5aee-103">A fact retriever is a component that is used to assert instances of long-term facts into a policy during its execution.</span></span> <span data-ttu-id="f5aee-104">実装することができます、 **IFactRetriever**インターフェイスおよびを長期間のファクトのインスタンスで実行時にこの実装を使用するポリシーのバージョンを構成します。</span><span class="sxs-lookup"><span data-stu-id="f5aee-104">You can implement the **IFactRetriever** interface and configure a policy version to use this implementation at run time to bring in the long-term fact instances.</span></span> <span data-ttu-id="f5aee-105">ポリシーのバージョンを呼び出す、 **UpdateFacts**メソッドのすべての実行サイクルで、その特定のバージョンのファクト取得コンポーネントが構成されている場合、ファクト取得コンポーネントを実装します。</span><span class="sxs-lookup"><span data-stu-id="f5aee-105">The policy version invokes the **UpdateFacts** method of the fact retriever implementation on every execution cycle, if a fact retriever is configured for that particular version.</span></span>  

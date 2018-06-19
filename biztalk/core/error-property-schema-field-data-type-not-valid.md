@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241162"
 ---
 # <a name="error---property-schema-field-data-type-not-valid"></a><span data-ttu-id="fc18a-102">エラー - プロパティ スキーマ フィールドのデータ型が有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="fc18a-102">Error - Property Schema Field Data Type Not Valid</span></span>
 <span data-ttu-id="fc18a-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="fc18a-103">**Error Code**</span></span>  

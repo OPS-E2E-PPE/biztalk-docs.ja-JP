@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプタで Windows 認証を使用して SQL Server への接続 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプタで Windows 認証を使用して SQL Server への接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45c54b2a-e056-496f-9f10-f19b6a3ca1a6
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222314"
 ---
 # <a name="connect-to-sql-server-using-windows-authentication-with-the-sql-adapter"></a><span data-ttu-id="c4803-102">SQL アダプタで Windows 認証を使用して SQL Server への接続します。</span><span class="sxs-lookup"><span data-stu-id="c4803-102">Connect to SQL Server using Windows Authentication with the SQL adapter</span></span>
 <span data-ttu-id="c4803-103">[!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)] SQL サーバーとの接続を確立するために Windows 認証を使用するアダプターのクライアントを有効にします。</span><span class="sxs-lookup"><span data-stu-id="c4803-103">The [!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)] enables adapter clients to use Windows Authentication to establish a connection with SQL Server.</span></span> <span data-ttu-id="c4803-104">Windows 認証を使用するには、アダプターのクライアントは、空のユーザー名とパスワードを入力してください。</span><span class="sxs-lookup"><span data-stu-id="c4803-104">To use Windows Authentication, adapter clients must enter an empty user name and password.</span></span> 
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="c4803-109">SQL Server Management Studio を開きます。</span><span class="sxs-lookup"><span data-stu-id="c4803-109">Open SQL Server Management Studio.</span></span> <span data-ttu-id="c4803-110">**サーバーへの接続**を選択**データベース エンジン**、入力、SQL**サーバー名**サーバーに接続する管理者の資格情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="c4803-110">In **Connect to Server**, select **Database Engine**, enter your SQL **Server name**, and enter administrator credentials to connect to the server.</span></span>  
 
-    <span data-ttu-id="c4803-111">**[接続]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="c4803-111">Select **Connect**.</span></span>
+    <span data-ttu-id="c4803-111">**[接続]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="c4803-111">Select **Connect**.</span></span>
   
 2.  <span data-ttu-id="c4803-112">**オブジェクト エクスプ ローラー**、SQL Server を展開し、**セキュリティ**を右クリックして**ログイン**、し、**新しいログイン**です。</span><span class="sxs-lookup"><span data-stu-id="c4803-112">In **Object Explorer**, expand the SQL Server, expand **Security**, right-click **Logins**, and then select **New Login**.</span></span>  
   

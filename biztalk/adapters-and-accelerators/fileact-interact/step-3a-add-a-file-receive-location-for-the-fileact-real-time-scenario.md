@@ -1,14 +1,14 @@
 ---
-title: "手順 3: ファイルの受信場所、FileAct リアルタイムのシナリオの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: ファイルの受信場所、FileAct リアルタイムのシナリオの追加 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 73b044b4-6611-493f-969c-02b52cb56ba7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223930"
 ---
 # <a name="step-3a-add-a-file-receive-location-for-the-fileact-real-time-scenario"></a><span data-ttu-id="dafbb-102">手順 3: ファイルの受信場所、FileAct リアルタイムのシナリオの追加</span><span class="sxs-lookup"><span data-stu-id="dafbb-102">Step 3A: Add a FILE Receive Location for the FileAct Real-Time Scenario</span></span>
 <span data-ttu-id="dafbb-103">この手順を開始する前に行う必要があります[手順 2: FileAct リアルタイム シナリオ Paramfile に SWIFTNet 構成を追加](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-fileact-real-time-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="dafbb-103">Before you begin this step, you must complete [Step 2: Add SWIFTNet Configuration to the Paramfile for the FileAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-fileact-real-time-scenario.md).</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="dafbb-115">**受信ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="dafbb-115">**Receive handler**</span></span>|<span data-ttu-id="dafbb-116">ドロップダウン リストから選択**BizTalkServerApplication**です。</span><span class="sxs-lookup"><span data-stu-id="dafbb-116">From the drop-down list, select **BizTalkServerApplication**.</span></span>|  
     |<span data-ttu-id="dafbb-117">**受信パイプライン**</span><span class="sxs-lookup"><span data-stu-id="dafbb-117">**Receive pipeline**</span></span>|<span data-ttu-id="dafbb-118">ドロップダウン リストから選択**XMLReceive**です。</span><span class="sxs-lookup"><span data-stu-id="dafbb-118">From the drop-down list, select **XMLReceive**.</span></span>|  
   
-9. <span data-ttu-id="dafbb-119">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dafbb-119">Click **OK**.</span></span>  
+9. <span data-ttu-id="dafbb-119">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dafbb-119">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="dafbb-120">参照</span><span class="sxs-lookup"><span data-stu-id="dafbb-120">See Also</span></span>  
  <span data-ttu-id="dafbb-121">[手順 3: 送信ポートを作成し、FileAct リアルタイムのシナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="dafbb-121">[Step 3: Create the Send Ports and Receive Ports for the FileAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md) </span></span>  

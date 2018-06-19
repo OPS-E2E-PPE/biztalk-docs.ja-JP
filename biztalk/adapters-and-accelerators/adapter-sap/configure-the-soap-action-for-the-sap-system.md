@@ -1,15 +1,15 @@
 ---
-title: "BizTalk で、SAP システムの SOAP アクションの構成 |Microsoft ドキュメント"
-description: "式図形に SOAP アクションを入力または BizTalk アダプター パック (BAP) で、Wcf-custom アダプターまたは WCF SAP アダプターを使用します。"
-ms.custom: 
+title: BizTalk で、SAP システムの SOAP アクションの構成 |Microsoft ドキュメント
+description: 式図形に SOAP アクションを入力または BizTalk アダプター パック (BAP) で、Wcf-custom アダプターまたは WCF SAP アダプターを使用します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 76084bc5-7a10-4c4c-be22-bee83779a011
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217538"
 ---
 # <a name="configure-the-soap-action-for-the-sap-system"></a><span data-ttu-id="6fccd-103">SAP システムの SOAP アクションを構成します。</span><span class="sxs-lookup"><span data-stu-id="6fccd-103">Configure the SOAP action for the SAP system</span></span>
 <span data-ttu-id="6fccd-104">WCF ベースを使用して SAP システムで操作を実行する[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプターのユーザーは、SOAP アクションを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6fccd-104">To perform any operation on the SAP system using the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], adapter users must specify a SOAP action.</span></span> <span data-ttu-id="6fccd-105">SOAP アクションは、どのようなアクションを実行する必要があります、アダプターに通信します。</span><span class="sxs-lookup"><span data-stu-id="6fccd-105">The SOAP action communicates to the adapter what action should be performed.</span></span> <span data-ttu-id="6fccd-106">デザイン時に、または実行時に SOAP アクションを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="6fccd-106">You can specify the SOAP action either at design time or at run time.</span></span> <span data-ttu-id="6fccd-107">ただし、SOAP アクション両方デザイン時に指定し、実行時、デザイン時に指定されたアクションがオーバーライドされます。</span><span class="sxs-lookup"><span data-stu-id="6fccd-107">However, if you specify the SOAP action both at design time and run time, the action you specified at design time will be overridden.</span></span>  
@@ -55,13 +56,13 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="6fccd-124">**アクション**テキスト ボックスで、操作の SOAP アクションを指定します。</span><span class="sxs-lookup"><span data-stu-id="6fccd-124">In the **Action** text box, specify the SOAP action for the operation.</span></span> <span data-ttu-id="6fccd-125">次の方法では、アクションを指定できます。</span><span class="sxs-lookup"><span data-stu-id="6fccd-125">You can specify the action in the following ways:</span></span>  
   
-    -   <span data-ttu-id="6fccd-126">**シングル アクション形式を使用して、**です。</span><span class="sxs-lookup"><span data-stu-id="6fccd-126">**By using the single action format**.</span></span> <span data-ttu-id="6fccd-127">Wcf-custom 送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="6fccd-127">Use this format if the WCF-Custom port sends and receive messages for a single operation.</span></span> <span data-ttu-id="6fccd-128">例:</span><span class="sxs-lookup"><span data-stu-id="6fccd-128">For example:</span></span>  
+    -   <span data-ttu-id="6fccd-126">**シングル アクション形式を使用して、** です。</span><span class="sxs-lookup"><span data-stu-id="6fccd-126">**By using the single action format**.</span></span> <span data-ttu-id="6fccd-127">Wcf-custom 送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="6fccd-127">Use this format if the WCF-Custom port sends and receive messages for a single operation.</span></span> <span data-ttu-id="6fccd-128">例:</span><span class="sxs-lookup"><span data-stu-id="6fccd-128">For example:</span></span>  
   
         ```  
         http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CUSTOMER_GET  
         ```  
   
-    -   <span data-ttu-id="6fccd-129">**アクション マッピング形式を使用して、**です。</span><span class="sxs-lookup"><span data-stu-id="6fccd-129">**By using the action mapping format**.</span></span> <span data-ttu-id="6fccd-130">1 つの WCF カスタム ポートを送信し、1 つ以上の操作のメッセージを受け取る場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="6fccd-130">Use this format if a single WCF-Custom port sends and receives messages for more than one operation.</span></span> <span data-ttu-id="6fccd-131">たとえば、1 つの WCF カスタム ポートを送信および (RFC_CUSTOMER_GET RFC を呼び出し) する Op1、Op2 (BAPI_SALESORDER_CREATEFROMDAT2 BAPI を呼び出し) するためのメッセージを受信する場合、SOAP アクションは次のように指定できます。</span><span class="sxs-lookup"><span data-stu-id="6fccd-131">For example, if a single WCF-Custom port sends and receives messages for Op1 (to invoke RFC_CUSTOMER_GET RFC) and Op2 (to invoke BAPI_SALESORDER_CREATEFROMDAT2 BAPI), the SOAP action can be specified in the following manner:</span></span>  
+    -   <span data-ttu-id="6fccd-129">**アクション マッピング形式を使用して、** です。</span><span class="sxs-lookup"><span data-stu-id="6fccd-129">**By using the action mapping format**.</span></span> <span data-ttu-id="6fccd-130">1 つの WCF カスタム ポートを送信し、1 つ以上の操作のメッセージを受け取る場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="6fccd-130">Use this format if a single WCF-Custom port sends and receives messages for more than one operation.</span></span> <span data-ttu-id="6fccd-131">たとえば、1 つの WCF カスタム ポートを送信および (RFC_CUSTOMER_GET RFC を呼び出し) する Op1、Op2 (BAPI_SALESORDER_CREATEFROMDAT2 BAPI を呼び出し) するためのメッセージを受信する場合、SOAP アクションは次のように指定できます。</span><span class="sxs-lookup"><span data-stu-id="6fccd-131">For example, if a single WCF-Custom port sends and receives messages for Op1 (to invoke RFC_CUSTOMER_GET RFC) and Op2 (to invoke BAPI_SALESORDER_CREATEFROMDAT2 BAPI), the SOAP action can be specified in the following manner:</span></span>  
   
         ```  
         <BtsActionMapping>  
@@ -88,13 +89,13 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="6fccd-143">**アクション**テキスト ボックスで、操作の SOAP アクションを指定します。</span><span class="sxs-lookup"><span data-stu-id="6fccd-143">In the **Action** text box, specify the SOAP action for the operation.</span></span> <span data-ttu-id="6fccd-144">次の方法では、アクションを指定できます。</span><span class="sxs-lookup"><span data-stu-id="6fccd-144">You can specify the action in the following ways:</span></span>  
   
-    -   <span data-ttu-id="6fccd-145">**シングル アクション形式を使用して、**です。</span><span class="sxs-lookup"><span data-stu-id="6fccd-145">**By using the single action format**.</span></span> <span data-ttu-id="6fccd-146">Wcf-custom 送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="6fccd-146">Use this format if the WCF-Custom port sends and receive messages for a single operation.</span></span> <span data-ttu-id="6fccd-147">例:</span><span class="sxs-lookup"><span data-stu-id="6fccd-147">For example:</span></span>  
+    -   <span data-ttu-id="6fccd-145">**シングル アクション形式を使用して、** です。</span><span class="sxs-lookup"><span data-stu-id="6fccd-145">**By using the single action format**.</span></span> <span data-ttu-id="6fccd-146">Wcf-custom 送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="6fccd-146">Use this format if the WCF-Custom port sends and receive messages for a single operation.</span></span> <span data-ttu-id="6fccd-147">例:</span><span class="sxs-lookup"><span data-stu-id="6fccd-147">For example:</span></span>  
   
         ```  
         http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CUSTOMER_GET  
         ```  
   
-    -   <span data-ttu-id="6fccd-148">**アクション マッピング形式を使用して、**です。</span><span class="sxs-lookup"><span data-stu-id="6fccd-148">**By using the action mapping format**.</span></span> <span data-ttu-id="6fccd-149">1 つの WCF カスタム ポートを送信し、1 つ以上の操作のメッセージを受け取る場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="6fccd-149">Use this format if a single WCF-Custom port sends and receives messages for more than one operation.</span></span> <span data-ttu-id="6fccd-150">たとえば、1 つの WCF カスタム ポートを送信および (RFC_CUSTOMER_GET RFC を呼び出し) する Op1、Op2 (BAPI_SALESORDER_CREATEFROMDAT2 BAPI を呼び出し) するためのメッセージを受信する場合、SOAP アクションは次のように指定できます。</span><span class="sxs-lookup"><span data-stu-id="6fccd-150">For example, if a single WCF-Custom port sends and receives messages for Op1 (to invoke RFC_CUSTOMER_GET RFC) and Op2 (to invoke BAPI_SALESORDER_CREATEFROMDAT2 BAPI), the SOAP action can be specified in the following manner:</span></span>  
+    -   <span data-ttu-id="6fccd-148">**アクション マッピング形式を使用して、** です。</span><span class="sxs-lookup"><span data-stu-id="6fccd-148">**By using the action mapping format**.</span></span> <span data-ttu-id="6fccd-149">1 つの WCF カスタム ポートを送信し、1 つ以上の操作のメッセージを受け取る場合は、この形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="6fccd-149">Use this format if a single WCF-Custom port sends and receives messages for more than one operation.</span></span> <span data-ttu-id="6fccd-150">たとえば、1 つの WCF カスタム ポートを送信および (RFC_CUSTOMER_GET RFC を呼び出し) する Op1、Op2 (BAPI_SALESORDER_CREATEFROMDAT2 BAPI を呼び出し) するためのメッセージを受信する場合、SOAP アクションは次のように指定できます。</span><span class="sxs-lookup"><span data-stu-id="6fccd-150">For example, if a single WCF-Custom port sends and receives messages for Op1 (to invoke RFC_CUSTOMER_GET RFC) and Op2 (to invoke BAPI_SALESORDER_CREATEFROMDAT2 BAPI), the SOAP action can be specified in the following manner:</span></span>  
   
         ```  
         <BtsActionMapping>  

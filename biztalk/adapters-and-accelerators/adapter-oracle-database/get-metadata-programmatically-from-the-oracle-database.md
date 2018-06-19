@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214274"
 ---
 # <a name="get-metadata-programmatically-from-the-oracle-database"></a><span data-ttu-id="12666-102">Oracle データベースからメタデータをプログラムで取得します。</span><span class="sxs-lookup"><span data-stu-id="12666-102">Get Metadata Programmatically from the Oracle Database</span></span>
 <span data-ttu-id="12666-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]は、WCF サービスとして Oracle データベースを公開するカスタムの WCF バインディング。</span><span class="sxs-lookup"><span data-stu-id="12666-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] is a custom WCF binding that exposes an Oracle database as a WCF service.</span></span> <span data-ttu-id="12666-104">アダプターは、自己記述型のサービスとして、Oracle データベースを公開します。サポートされる操作に関するメタデータを公開できるサービスは、します。</span><span class="sxs-lookup"><span data-stu-id="12666-104">The adapter exposes the Oracle database as a self-describing service; that is, a service that is capable of publishing metadata about the operations that it supports.</span></span> <span data-ttu-id="12666-105">メタデータは、WCF サービス; を論理インターフェイスを説明します。つまり、サービス コントラクト、メッセージ、およびメッセージ スキーマ、サービスと対話するために使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="12666-105">Metadata describes the logical interface to a WCF service; that is, the service contract, messages, and message schemas that must be used to interact with the service.</span></span>  

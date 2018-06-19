@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206322"
 ---
 # <a name="validation-tab"></a><span data-ttu-id="8143a-102">[検証] タブ</span><span class="sxs-lookup"><span data-stu-id="8143a-102">Validation Tab</span></span>
 <span data-ttu-id="8143a-103">使用する、**検証**受信および生成されたメッセージのメッセージの検証オプションを選択するタブです。</span><span class="sxs-lookup"><span data-stu-id="8143a-103">You use the **Validation** tab to select the message validation options for inbound and generated messages.</span></span>  

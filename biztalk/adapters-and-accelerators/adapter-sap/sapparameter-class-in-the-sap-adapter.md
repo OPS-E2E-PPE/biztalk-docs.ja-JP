@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218002"
 ---
 # <a name="sapparameter-class-in-the-sap-adapter"></a><span data-ttu-id="a2cf6-102">SAP アダプターで SAPParameter クラス</span><span class="sxs-lookup"><span data-stu-id="a2cf6-102">SAPParameter class in the SAP adapter</span></span>
 <span data-ttu-id="a2cf6-103">次のセクションではメソッドとプロパティの一覧表示、 **SAPParameter**クラスです。</span><span class="sxs-lookup"><span data-stu-id="a2cf6-103">The following section lists the methods and properties for the **SAPParameter** class.</span></span> <span data-ttu-id="a2cf6-104">これは、派生元**System.Data.Common.DbParameter**です。</span><span class="sxs-lookup"><span data-stu-id="a2cf6-104">This is derived from **System.Data.Common.DbParameter**.</span></span>  

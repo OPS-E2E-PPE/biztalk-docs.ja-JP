@@ -1,17 +1,17 @@
 ---
-title: "BRE ポリシーの扱い |Microsoft ドキュメント"
-ms.custom: 
+title: BRE ポリシーの扱い |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BRE policies, about BRE policies
 - BRE policies
 ms.assetid: 4470f2b3-6891-46d7-9ba1-848f90d0767d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214930"
 ---
 # <a name="working-with-bre-policies"></a><span data-ttu-id="3cf37-102">BRE ポリシーの扱い</span><span class="sxs-lookup"><span data-stu-id="3cf37-102">Working with BRE Policies</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="3cf37-103">[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] SWIFT の検証」の説明に従って、ビジネス ルール エンジン (BRE) を使用してメッセージのポリシー、 *SWIFT リファレンス ガイド*です。</span><span class="sxs-lookup"><span data-stu-id="3cf37-103"> [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] validates SWIFT messages by using Business Rule Engine (BRE) polices, as described in the *SWIFT Reference Guide*.</span></span> <span data-ttu-id="3cf37-104">これらのポリシーを以下に示します。</span><span class="sxs-lookup"><span data-stu-id="3cf37-104">These policies include the following:</span></span>  

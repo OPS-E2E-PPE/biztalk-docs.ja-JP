@@ -1,17 +1,17 @@
 ---
-title: "Oracle データベース アダプターのバインドを再利用 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターのバインドを再利用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings, reusing
 - binding file
 ms.assetid: f3c7af97-6da2-47bd-bdaf-6b45386c2940
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215138"
 ---
 # <a name="reuse-oracle-database-adapter-bindings"></a><span data-ttu-id="eb5e5-102">Oracle データベース アダプターのバインドを再利用します。</span><span class="sxs-lookup"><span data-stu-id="eb5e5-102">Reuse Oracle Database Adapter bindings</span></span>
 <span data-ttu-id="eb5e5-103">バインド (オーケストレーション ポート、ロール リンクなど) の論理エンドポイントとの物理的なエンドポイント間のマッピングを作成する (など、送信と受信ポート)。</span><span class="sxs-lookup"><span data-stu-id="eb5e5-103">A binding creates a mapping between a logical endpoint (such as an orchestration port or a role link) and a physical endpoint (such as a send and receive port).</span></span> <span data-ttu-id="eb5e5-104">これにより、BizTalk ビジネス ソリューションの複数のコンポーネント間で通信できるようになります。</span><span class="sxs-lookup"><span data-stu-id="eb5e5-104">This enables communication between different components of a BizTalk business solution.</span></span> <span data-ttu-id="eb5e5-105">バインドを作成するには BizTalk Server 管理コンソールを使用します。</span><span class="sxs-lookup"><span data-stu-id="eb5e5-105">You can create bindings by using the BizTalk Server Administration console.</span></span>  
@@ -56,7 +57,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="eb5e5-131">たとえば、入力します。`C:\Bindings\Application1Bindings.Binding1.xml`</span><span class="sxs-lookup"><span data-stu-id="eb5e5-131">For example, enter `C:\Bindings\Application1Bindings.Binding1.xml`</span></span>  
   
-5.  <span data-ttu-id="eb5e5-132">いることを確認**、現在のアプリケーションからのすべてのバインドをエクスポート**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="eb5e5-132">Confirm that **Export all bindings from the current application** is selected.</span></span>  
+5.  <span data-ttu-id="eb5e5-132">いることを確認 **、現在のアプリケーションからのすべてのバインドをエクスポート**が選択されています。</span><span class="sxs-lookup"><span data-stu-id="eb5e5-132">Confirm that **Export all bindings from the current application** is selected.</span></span>  
   
 6.  <span data-ttu-id="eb5e5-133">グループのすべてのパーティ情報をエクスポートするには、選択、**グローバル パーティ情報をエクスポート**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="eb5e5-133">To export all party information for the group, select the **Export Global Party information** check box.</span></span>  
   

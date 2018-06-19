@@ -1,17 +1,17 @@
 ---
-title: "別のアプリケーションにアイテムを移動する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 別のアプリケーションにアイテムを移動する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - artifacts, moving
 - applications, artifacts
 ms.assetid: 861e7782-0566-4478-a0bd-f8ced1ea6d56
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254458"
 ---
 # <a name="how-to-move-an-artifact-to-a-different-application"></a><span data-ttu-id="b52fb-102">アイテムを別のアプリケーションに移動する方法</span><span class="sxs-lookup"><span data-stu-id="b52fb-102">How to Move an Artifact to a Different Application</span></span>
 <span data-ttu-id="b52fb-103">このトピックでは、BizTalk Server 管理コンソールの [アプリケーションに移動] コマンドを使用して、アプリケーションから BizTalk グループ内の別のアプリケーションにアイテムを移動する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b52fb-103">This topic describes how to move an artifact from one application to another within a BizTalk group by using the Move To Application command of the BizTalk Server Administration console.</span></span> <span data-ttu-id="b52fb-104">この操作は、あるアプリケーションに既に存在するアイテムを、同じ BizTalk グループの別のアプリケーションで使用する場合に実行します。</span><span class="sxs-lookup"><span data-stu-id="b52fb-104">You might want to do this if you need to use an artifact that already exists in one application in a different application in the same BizTalk group.</span></span>  
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="b52fb-129">**移動するアイテム**ボックスには、すべての依存関係アイテムも移動されると、移動するアイテムが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b52fb-129">The **Moving Artifacts** box displays the artifact to move, along with all dependent artifacts, which will be moved as well.</span></span>  
   
-5.  <span data-ttu-id="b52fb-130">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b52fb-130">Click **OK**.</span></span>  
+5.  <span data-ttu-id="b52fb-130">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b52fb-130">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="b52fb-131">参照</span><span class="sxs-lookup"><span data-stu-id="b52fb-131">See Also</span></span>  
  [<span data-ttu-id="b52fb-132">作成して、BizTalk アプリケーションの変更</span><span class="sxs-lookup"><span data-stu-id="b52fb-132">Creating and Modifying BizTalk Applications</span></span>](../core/creating-and-modifying-biztalk-applications.md)

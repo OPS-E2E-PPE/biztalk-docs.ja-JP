@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240714"
 ---
 # <a name="encryptioncert-sendport-node"></a><span data-ttu-id="9b97f-102">EncryptionCert (SendPort ノード)</span><span class="sxs-lookup"><span data-stu-id="9b97f-102">EncryptionCert (SendPort Node)</span></span>
 <span data-ttu-id="9b97f-103">バインド ファイルの SendPort ノードの EncryptionCert ノードには、バインド ファイルと共にエクスポートされる送信ポートで使用される暗号化証明書に関する情報が格納されます。</span><span class="sxs-lookup"><span data-stu-id="9b97f-103">The EncryptionCert node of the SendPort node of a binding file contains information about the encryption certificate used with a send port that is exported with the binding file.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "シングル サインオン サポートを SOAP アダプターの |Microsoft ドキュメント"
-ms.custom: 
+title: シングル サインオン サポートを SOAP アダプターの |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, SOAP adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - SOAP adapters, SSO
 - SharePoint Portal server
 ms.assetid: c7bf755c-c37d-4b19-9817-a7f42e1e9656
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277554"
 ---
 # <a name="single-sign-on-support-for-the-soap-adapter"></a><span data-ttu-id="ed348-102">SOAP アダプターのシングル サインオン サポート</span><span class="sxs-lookup"><span data-stu-id="ed348-102">Single Sign-On Support for the SOAP Adapter</span></span>
 <span data-ttu-id="ed348-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して、SOAP 受信場所または送信ポートで使用するエンタープライズ シングル サインオン (SSO) を構成できます。</span><span class="sxs-lookup"><span data-stu-id="ed348-103">You can use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console to configure Enterprise Single Sign-On (SSO) for use with the SOAP receive location or send port.</span></span> <span data-ttu-id="ed348-104">ここでは、SSO と SOAP アダプターの連携について説明します。</span><span class="sxs-lookup"><span data-stu-id="ed348-104">This topic describes how SSO works with the SOAP adapter.</span></span>  

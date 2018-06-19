@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite アプリケーションを作成する前提条件 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite アプリケーションを作成する前提条件 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b02ea286-f301-46b3-b748-d954dead23a1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216762"
 ---
 # <a name="prerequisites-to-create-oracle-e-business-suite-applications"></a><span data-ttu-id="17b4d-102">Oracle E-business Suite アプリケーションを作成するための必要条件</span><span class="sxs-lookup"><span data-stu-id="17b4d-102">Prerequisites to create Oracle E-Business Suite applications</span></span>
 <span data-ttu-id="17b4d-103">このセクションの内容を使用して BizTalk アプリケーションを開発する前に行う必要がありますに関する情報を提供する、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="17b4d-103">This section provides information about what you must do before developing BizTalk applications using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span> <span data-ttu-id="17b4d-104">このセクションのリンクもに、 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] BizTalk アプリケーションを開発するために使用するツールです。</span><span class="sxs-lookup"><span data-stu-id="17b4d-104">This section also points you to the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] tools that are used to develop BizTalk applications.</span></span>  

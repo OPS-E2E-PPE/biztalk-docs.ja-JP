@@ -1,14 +1,14 @@
 ---
-title: "手順 3 C: Sw:HandleRequest を取得する FILE 送信ポートの追加のリアルタイムのシナリオを対話 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3 C: Sw:HandleRequest を取得する FILE 送信ポートの追加のリアルタイムのシナリオを対話 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 31e9c942-ba74-4ae2-b6e1-5266d0fbcb14
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224194"
 ---
 # <a name="step-3c-add-file-send-port-to-get-swhandlerequest-interact-real-time-scenario"></a><span data-ttu-id="f9cd4-102">手順 3 C: Sw:HandleRequest を取得する FILE 送信ポートの追加のリアルタイムのシナリオの対話</span><span class="sxs-lookup"><span data-stu-id="f9cd4-102">Step 3C: Add FILE send port to get Sw:HandleRequest-InterAct real-time scenario</span></span>
 <span data-ttu-id="f9cd4-103">パートナーにメッセージを送信するときに SWIFT は、メッセージ ヘッダーを変換し、Sw:HandleRequest メッセージとしてパートナーにメッセージを転送します。</span><span class="sxs-lookup"><span data-stu-id="f9cd4-103">When you send a message to your partner, SWIFT transforms the message header and forwards the message to your partner as a Sw:HandleRequest message.</span></span> <span data-ttu-id="f9cd4-104">この手順を開始する前に行う必要があります[手順 3 b: 対話リアルタイム シナリオでは、操作の受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3b-add-an-interact-receive-location-for-the-interact-real-time-scenario.md)です。</span><span class="sxs-lookup"><span data-stu-id="f9cd4-104">Before you begin this step, you must complete [Step 3B: Add an INTERACT Receive Location for the InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3b-add-an-interact-receive-location-for-the-interact-real-time-scenario.md).</span></span>  
@@ -47,11 +48,11 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="f9cd4-120">**これを使用してください。**</span><span class="sxs-lookup"><span data-stu-id="f9cd4-120">**Use this**</span></span>|<span data-ttu-id="f9cd4-121">**これを行う**</span><span class="sxs-lookup"><span data-stu-id="f9cd4-121">**To do this**</span></span>|  
     |------------------|--------------------|  
     |<span data-ttu-id="f9cd4-122">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="f9cd4-122">**Property**</span></span>|<span data-ttu-id="f9cd4-123">ドロップダウン リストから選択**BTS です。ReceivePortName**です。</span><span class="sxs-lookup"><span data-stu-id="f9cd4-123">From the drop-down list, select **BTS.ReceivePortName**.</span></span>|  
-    |<span data-ttu-id="f9cd4-124">**演算子**</span><span class="sxs-lookup"><span data-stu-id="f9cd4-124">**Operator**</span></span>|<span data-ttu-id="f9cd4-125">ドロップダウン リストから選択 **==**です。</span><span class="sxs-lookup"><span data-stu-id="f9cd4-125">From the drop-down list, select **==**.</span></span>|  
+    |<span data-ttu-id="f9cd4-124">**演算子**</span><span class="sxs-lookup"><span data-stu-id="f9cd4-124">**Operator**</span></span>|<span data-ttu-id="f9cd4-125">ドロップダウン リストから選択 **==** です。</span><span class="sxs-lookup"><span data-stu-id="f9cd4-125">From the drop-down list, select **==**.</span></span>|  
     |<span data-ttu-id="f9cd4-126">**値**</span><span class="sxs-lookup"><span data-stu-id="f9cd4-126">**Value**</span></span>|<span data-ttu-id="f9cd4-127">型**Tutorial_IA_HandleRequestOneWay_RealTime です。**</span><span class="sxs-lookup"><span data-stu-id="f9cd4-127">Type **Tutorial_IA_HandleRequestOneWay_RealTime.**</span></span>|  
     |<span data-ttu-id="f9cd4-128">**グループ化**</span><span class="sxs-lookup"><span data-stu-id="f9cd4-128">**Group by**</span></span>|<span data-ttu-id="f9cd4-129">既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="f9cd4-129">Leave the default value.</span></span>|  
   
-9. <span data-ttu-id="f9cd4-130">**[OK]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9cd4-130">Click **OK**.</span></span>  
+9. <span data-ttu-id="f9cd4-130">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9cd4-130">Click **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="f9cd4-131">参照</span><span class="sxs-lookup"><span data-stu-id="f9cd4-131">See Also</span></span>  
  <span data-ttu-id="f9cd4-132">[手順 3: が送信を作成し、受信のポート、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md) </span><span class="sxs-lookup"><span data-stu-id="f9cd4-132">[Step 3: Create Send and Receive Ports for the InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md) </span></span>  

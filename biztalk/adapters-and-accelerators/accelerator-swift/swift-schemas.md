@@ -1,11 +1,11 @@
 ---
-title: "SWIFT スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SWIFT, SWIFT messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - SWIFT messages, SWIFT schemas
 - SWIFT, schemas
 ms.assetid: 53017a56-a718-4577-a08c-9c92d9a54e7a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214922"
 ---
 # <a name="swift-schemas"></a><span data-ttu-id="711f4-102">SWIFT スキーマ</span><span class="sxs-lookup"><span data-stu-id="711f4-102">SWIFT Schemas</span></span>
 [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]<span data-ttu-id="711f4-103">送信し、非常に高速ネットワーク経由で個々 のフラット ファイルとして SWIFT の財務 (FIN) メッセージを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="711f4-103"> sends and receives SWIFT financial (FIN) messages as individual flat files over the SWIFT network.</span></span> <span data-ttu-id="711f4-104">各メッセージは、定義済みの一連のラベルの付いたフィールドと位置指定引数または順序付けられたサブフィールド、およびトレーラーをトレーラ ブロック内の一連の構成のテキスト ブロック ヘッダー ブロックのセットで構成されます。</span><span class="sxs-lookup"><span data-stu-id="711f4-104">Each individual message consists of a set of header blocks, a text block made up of a predefined set of labeled fields and positional or ordered subfields, and a set of trailers inside a trailer block.</span></span> <span data-ttu-id="711f4-105">テキスト ブロックの内容は、メッセージの種類によって異なります。</span><span class="sxs-lookup"><span data-stu-id="711f4-105">The content of the text block varies by message type.</span></span>  

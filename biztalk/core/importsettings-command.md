@@ -1,14 +1,14 @@
 ---
-title: "ImportSettings コマンド |Microsoft ドキュメント"
-ms.custom: 
+title: ImportSettings コマンド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 587f7e1f-9cf7-4e7b-90cd-11a266f474dc
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257554"
 ---
 # <a name="importsettings-command"></a><span data-ttu-id="35500-102">ImportSettings コマンド</span><span class="sxs-lookup"><span data-stu-id="35500-102">ImportSettings Command</span></span>
 <span data-ttu-id="35500-103">BizTalk グループ、ホスト、またはホスト インスタンスの設定を、送信元 XML ファイルから構成データベースにインポートします。</span><span class="sxs-lookup"><span data-stu-id="35500-103">Imports the BizTalk group, host, or host instance settings from a source XML file to the configuration database.</span></span> <span data-ttu-id="35500-104">設定は、マッピング XML ファイル内にある場合と同じようにマップされます。</span><span class="sxs-lookup"><span data-stu-id="35500-104">The settings are mapped as they are in the mapping XML file.</span></span> <span data-ttu-id="35500-105">これらの設定はエクスポートされている」の説明に従って[インポートまたはエクスポート BizTalk の設定を使用して設定のダッシュ ボード](how-to-import-biztalk-settings-using-settings-dashboard.md)または[インポートまたはエクスポート BizTalk の設定を使用して BTSTask](how-to-import-biztalk-settings-using-btstask.md)です。</span><span class="sxs-lookup"><span data-stu-id="35500-105">These settings may have been exported as described in [Import or export BizTalk Settings Using Settings Dashboard](how-to-import-biztalk-settings-using-settings-dashboard.md) or [Import or export BizTalk Settings Using BTSTask](how-to-import-biztalk-settings-using-btstask.md).</span></span>  

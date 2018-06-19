@@ -1,11 +1,11 @@
 ---
-title: "WCF サービス モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, performing operations on business components
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business components, performing operations by using the WCF service model
 - performing operations, using the proxy
 ms.assetid: 7a5fdc95-6159-4f43-aac5-4e2f84e9138b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222226"
 ---
 # <a name="run-operations-on-business-components-with-the-siebel-adapter-using-the-wcf-service-model"></a><span data-ttu-id="a5675-102">WCF サービス モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="a5675-102">Run Operations on Business Components with the Siebel adapter using the WCF Service Model</span></span>
 <span data-ttu-id="a5675-103">Siebel ビジネス コンポーネントを対象とする WCF クライアントを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="a5675-103">You can create a WCF client that targets a Siebel business component.</span></span> <span data-ttu-id="a5675-104">Siebel システムに挿入、更新、クエリ、削除、関連付ける、関連付けを解除、およびビジネス コンポーネントに対して子レコードのクエリ操作を実行し、WCF クライアントを使用できます。</span><span class="sxs-lookup"><span data-stu-id="a5675-104">You can then use the WCF client to perform Insert, Update, Query, Delete, Associate, Dissociate, and child record query operations on the business component on the Siebel system.</span></span> <span data-ttu-id="a5675-105">[ビジネス オブジェクト] ノードに表示された Siebel ビジネス オブジェクト、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="a5675-105">Siebel business objects are surfaced under the Business Objects node in the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)].</span></span> <span data-ttu-id="a5675-106">各ビジネス オブジェクトを作成するビジネス コンポーネントは、そのオブジェクトに対応するノードの下に表示されます。</span><span class="sxs-lookup"><span data-stu-id="a5675-106">The business components that compose each business object are surfaced under the node corresponding to that object.</span></span> <span data-ttu-id="a5675-107">」の手順を行うことができる[Siebel アダプターと WCF サービス モデルの概要](../../adapters-and-accelerators/adapter-siebel/overview-of-the-wcf-service-model-with-the-siebel-adapter.md)を特定の操作を対象とするビジネス コンポーネント用の WCF クライアントを生成して、ビジネスでこれらの操作を呼び出すクライアントを使用するにはコンポーネント。</span><span class="sxs-lookup"><span data-stu-id="a5675-107">You can follow the steps in [Overview of the WCF Service Model with the Siebel Adapter](../../adapters-and-accelerators/adapter-siebel/overview-of-the-wcf-service-model-with-the-siebel-adapter.md) to generate a WCF client for a business component that targets specific operations and use the client to invoke these operations on the business component.</span></span>  

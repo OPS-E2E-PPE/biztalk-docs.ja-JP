@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208210"
 ---
 # <a name="troubleshooting-other-issues"></a><span data-ttu-id="f40b4-102">その他の問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="f40b4-102">Troubleshooting Other Issues</span></span>
 <span data-ttu-id="f40b4-103">関連するその他の問題に対処[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="f40b4-103">Addresses other issues related to [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)].</span></span>  

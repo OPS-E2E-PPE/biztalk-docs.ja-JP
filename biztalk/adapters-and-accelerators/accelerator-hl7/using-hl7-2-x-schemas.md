@@ -1,18 +1,18 @@
 ---
-title: "HL7 2.X スキーマを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: HL7 2.X スキーマを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - 2.X schemas
 - HL7, 2.X schemas
 - schemas, 2.X schemas
 ms.assetid: 7f2d7dd4-76f1-463e-b579-9839a74b9631
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206778"
 ---
 # <a name="using-hl7-2x-schemas"></a><span data-ttu-id="c9a70-102">HL7 2.X スキーマの使用</span><span class="sxs-lookup"><span data-stu-id="c9a70-102">Using HL7 2.X Schemas</span></span>
 <span data-ttu-id="c9a70-103">このセクションで説明 2.X バージョンでサポートされている正常性レベル 7 (HL7) 標準の[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="c9a70-103">This section discusses the 2.X versions of the Health Level Seven (HL7) standard supported by [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)].</span></span>  

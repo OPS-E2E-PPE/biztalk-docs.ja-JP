@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server のセキュリティ機能 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server のセキュリティ機能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - authentication
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - security, security features
 - BizTalk Server, security features
 ms.assetid: db356439-1898-4c09-86de-458a9bd21b18
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211050"
 ---
 # <a name="biztalk-server-security-features"></a><span data-ttu-id="47cdb-102">BizTalk Server のセキュリティ機能</span><span class="sxs-lookup"><span data-stu-id="47cdb-102">BizTalk Server Security Features</span></span>
 <span data-ttu-id="47cdb-103">財務アプリケーションはサービスとの統合ソリューションを使用して開発された[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]は[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ネイティブによって保護されたアプリケーションとは[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]セキュリティ機能です。</span><span class="sxs-lookup"><span data-stu-id="47cdb-103">Financial Services applications and integration solutions developed by using [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] are [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] applications and are secured by native [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] security features.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="47cdb-104">アプリケーションが通常メッセージング機能の構成 (メッセージの処理、変換、ルーティング) とワークフローの自動化 (ビジネス プロセスの自動化、ビジネス ルールおよびロジックの評価)。</span><span class="sxs-lookup"><span data-stu-id="47cdb-104"> applications are typically made up of messaging functionality (message processing, transformation, routing) and workflow automation (business process automation, business rules and logic evaluation).</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="47cdb-105">一般的なワークフローのメッセージングとオートメーションのセキュリティを提供します。</span><span class="sxs-lookup"><span data-stu-id="47cdb-105"> provides general messaging and workflow automation security.</span></span> [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]<span data-ttu-id="47cdb-106">エンドユーザー メッセージ エントリ、修復、承認、および送信のセキュリティ保護に固有の追加のセキュリティ機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="47cdb-106"> provides additional security features specific to securing end-user message entry, repair, approval, and submission.</span></span> <span data-ttu-id="47cdb-107">詳細については[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]-特定のセキュリティを参照してください[Message Repair and New Submission のセキュリティ機能によって A4SWIFT](../../adapters-and-accelerators/accelerator-swift/a4swift-security-features-for-message-repair-and-new-submission.md)です。</span><span class="sxs-lookup"><span data-stu-id="47cdb-107">For more information about [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]-specific security, see [A4SWIFT Security Features for Message Repair and New Submission](../../adapters-and-accelerators/accelerator-swift/a4swift-security-features-for-message-repair-and-new-submission.md).</span></span>  

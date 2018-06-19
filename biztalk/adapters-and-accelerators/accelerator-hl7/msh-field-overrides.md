@@ -1,11 +1,11 @@
 ---
-title: "MSH オーバーライド |Microsoft ドキュメント"
-ms.custom: 
+title: MSH オーバーライド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - headers, overriding
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - headers, MSH Map tab
 - messages, message headers
 ms.assetid: f5b2c820-57e7-4a56-9d9f-713563bd7335
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961025"
 ---
 # <a name="msh-field-overrides"></a><span data-ttu-id="ba9a5-102">MSH フィールドの上書き</span><span class="sxs-lookup"><span data-stu-id="ba9a5-102">MSH Field Overrides</span></span>
 <span data-ttu-id="ba9a5-103">各 HL7 メッセージでは、メッセージ ヘッダーがあります。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-103">Every HL7 message has a message header.</span></span> <span data-ttu-id="ba9a5-104">使用して[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]は、ビジネス ニーズに基づいて、メッセージ ヘッダーの値をオーバーライドすることができます。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-104">Using [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)], you can override any message header value based on your business need.</span></span> <span data-ttu-id="ba9a5-105">使用する、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー **MSH マップ**手動で無効化がメッセージ ヘッダー値のマッピングやオーケストレーションを使用せずにタブです。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-105">You use the [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer **MSH Map** tab to manually over ride message header values without using any mapping or orchestration.</span></span>  
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="ba9a5-134">**MSH.15**</span><span class="sxs-lookup"><span data-stu-id="ba9a5-134">**MSH.15**</span></span>|<span data-ttu-id="ba9a5-135">Accept 受信確認の種類の受信確認オーバーライドの次のオプションから選択します。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-135">Select from the following options for an acknowledgment override for the accept acknowledgment type:</span></span><br /><br /> <span data-ttu-id="ba9a5-136">-   **AL**です。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-136">-   **AL**.</span></span> <span data-ttu-id="ba9a5-137">常に送信する場合、このオプションを選択して受信確認をそのまま使用します。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-137">Select this option if you always want to send accept acknowledgments.</span></span><br /><span data-ttu-id="ba9a5-138">-   **NE**です。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-138">-   **NE**.</span></span> <span data-ttu-id="ba9a5-139">送信しない場合は、このオプションを選択受信確認をそのまま使用します。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-139">Select this option if you never want to send accept acknowledgments.</span></span><br /><span data-ttu-id="ba9a5-140">-   **SU**です。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-140">-   **SU**.</span></span> <span data-ttu-id="ba9a5-141">送信する場合は、このオプションを選択して、メッセージの転送が成功した後に受信確認をそのまま使用します。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-141">Select this option if you want to send accept acknowledgments after successful transmission of a message.</span></span><br /><span data-ttu-id="ba9a5-142">-   **ER**です。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-142">-   **ER**.</span></span> <span data-ttu-id="ba9a5-143">送信する場合は、このオプションを選択して、エラーが発生した場合のみ肯定応答をそのまま使用します。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-143">Select this option if you want to send accept acknowledgments only in the event of an error.</span></span>|  
     |<span data-ttu-id="ba9a5-144">**MSH.16**</span><span class="sxs-lookup"><span data-stu-id="ba9a5-144">**MSH.16**</span></span>|<span data-ttu-id="ba9a5-145">アプリケーションの受信確認の種類の受信確認オーバーライドの次のオプションから選択します。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-145">Select from the following options for an acknowledgment override for the application acknowledgment type:</span></span><br /><br /> <span data-ttu-id="ba9a5-146">-   **AL**です。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-146">-   **AL**.</span></span> <span data-ttu-id="ba9a5-147">常にアプリケーションの受信確認を送信する場合は、このオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-147">Select this option if you always want to send application acknowledgments.</span></span><br /><span data-ttu-id="ba9a5-148">-   **NE**です。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-148">-   **NE**.</span></span> <span data-ttu-id="ba9a5-149">アプリケーションの受信確認を送信しない場合は、このオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-149">Select this option if you never want to send application acknowledgments.</span></span><br /><span data-ttu-id="ba9a5-150">-   **SU**です。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-150">-   **SU**.</span></span> <span data-ttu-id="ba9a5-151">メッセージの転送が成功した後にアプリケーションの受信確認を送信する場合は、このオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-151">Select this option if you want to send application acknowledgments after successful transmission of a message.</span></span><br /><span data-ttu-id="ba9a5-152">-   **ER**です。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-152">-   **ER**.</span></span> <span data-ttu-id="ba9a5-153">エラーが発生した場合のみアプリケーションの受信確認を送信する場合は、このオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-153">Select this option if you want to send application acknowledgments only in the event of an error.</span></span>|  
   
-2.  <span data-ttu-id="ba9a5-154">**[保存]**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-154">Click **Save**.</span></span>  
+2.  <span data-ttu-id="ba9a5-154">**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba9a5-154">Click **Save**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="ba9a5-155">参照</span><span class="sxs-lookup"><span data-stu-id="ba9a5-155">See Also</span></span>  
  <span data-ttu-id="ba9a5-156">[ログの構成](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="ba9a5-156">[Logging Configuration](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md) </span></span>  

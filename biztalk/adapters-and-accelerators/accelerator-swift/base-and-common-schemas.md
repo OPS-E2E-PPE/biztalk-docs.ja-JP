@@ -1,11 +1,11 @@
 ---
-title: "ベースと一般的なスキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: ベースと一般的なスキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - base schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, base schemas
 - common schemas
 ms.assetid: 60eb24f6-cc4f-4c6d-ab15-9e3a6b4ed376
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209178"
 ---
 # <a name="base-and-common-schemas"></a><span data-ttu-id="a5a4f-102">ベースと一般的なスキーマ</span><span class="sxs-lookup"><span data-stu-id="a5a4f-102">Base and Common Schemas</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="a5a4f-103">[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]レコードと別のスキーマ内の個々 のメッセージ スキーマを構成する要素を実装します。</span><span class="sxs-lookup"><span data-stu-id="a5a4f-103"> [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] has implemented the records and elements that comprise individual message schemas in separate schemas.</span></span> <span data-ttu-id="a5a4f-104">この方法は、フィールドと形式の変更によってこのようなメッセージ スキーマを切り離すことの更新プログラムを提供する 1 つの場所を提供します。</span><span class="sxs-lookup"><span data-stu-id="a5a4f-104">This approach provides a single location to provide updates for fields and formats, insulating the message schema from such changes.</span></span>  

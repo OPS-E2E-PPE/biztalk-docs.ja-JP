@@ -1,11 +1,11 @@
 ---
-title: "A4SWIFT サイト グループの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: A4SWIFT サイト グループの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - site groups, creating
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - user accounts, site groups
 - site groups, user accounts
 ms.assetid: ec2f3efe-439a-4018-ad94-5ab0fb2808ee
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209010"
 ---
 # <a name="configuring-a4swift-site-groups"></a><span data-ttu-id="a9435-102">A4SWIFT サイト グループの構成</span><span class="sxs-lookup"><span data-stu-id="a9435-102">Configuring A4SWIFT Site Groups</span></span>
 <span data-ttu-id="a9435-103">Message Repair and New Submission の構成時に作成されたドキュメント ライブラリのアクセス許可をロックダウンする対応するサイト グループを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a9435-103">You need to create the corresponding site groups to lock down the permissions on the document libraries created during Message Repair and New Submission configuration.</span></span> <span data-ttu-id="a9435-104">前のセクションの例のように、A4SWIFT 管理者は MRSR サイトに移動して、次のサイト グループを設定します。</span><span class="sxs-lookup"><span data-stu-id="a9435-104">To do so with the example in the preceding section, an A4SWIFT Administrator would go to the MRSR site and set up the following site groups:</span></span>  

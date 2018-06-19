@@ -1,11 +1,11 @@
 ---
-title: "動的なメッセージの種類の探索とスキーマの解決 |Microsoft ドキュメント"
-ms.custom: 
+title: 動的なメッセージの種類の探索とスキーマの解決 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - dynamic schema resolution
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - disassembler, message types
 - code samples, disassembler
 ms.assetid: 5f71d3df-a37e-4ef2-9055-b614656203e9
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211338"
 ---
 # <a name="dynamic-message-type-discovery-and-schema-resolution"></a><span data-ttu-id="241a9-102">動的なメッセージの種類の探索とスキーマの解決</span><span class="sxs-lookup"><span data-stu-id="241a9-102">Dynamic Message Type Discovery and Schema Resolution</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="241a9-103">[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] SWIFT 逆アセンブラおよびアセンブラの両方での動的なメッセージの型の検出とスキーマの解決を有効にします。</span><span class="sxs-lookup"><span data-stu-id="241a9-103"> [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] enables dynamic message type discovery and schema resolution in both the SWIFT disassembler and assembler.</span></span>  
@@ -91,7 +92,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="241a9-138">**A4SWIFT_SecondaryMessageType** (省略可能)</span><span class="sxs-lookup"><span data-stu-id="241a9-138">**A4SWIFT_SecondaryMessageType** (optional)</span></span>  
   
- <span data-ttu-id="241a9-139">これらおよびその他の昇格させたプロパティの詳細については、次を参照してください。 [A4SWIFT_ * 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="241a9-139">For more information about these and other promoted properties, see [A4SWIFT_* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).</span></span>  
+ <span data-ttu-id="241a9-139">これらおよびその他の昇格させたプロパティの詳細については、次を参照してください。 [A4SWIFT_ \* 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。</span><span class="sxs-lookup"><span data-stu-id="241a9-139">For more information about these and other promoted properties, see [A4SWIFT_\* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="241a9-140">SWIFT ヘッダー スキーマを設定すると**なし**、完全なインターチェンジのスキーマを指定する必要があります、 **SWIFT インターチェンジ スキーマ**プロパティ。</span><span class="sxs-lookup"><span data-stu-id="241a9-140">If you set the SWIFT Header Schema to **None**, you should specify a complete interchange schema for the **SWIFT Interchange Schema** property.</span></span> <span data-ttu-id="241a9-141">ここでは、逆アセンブラーは指定されたインターチェンジのスキーマを使用して、A4SWIFT を受信するすべてのメッセージを解析します。</span><span class="sxs-lookup"><span data-stu-id="241a9-141">In this case, the disassembler uses the specified interchange schema to parse all messages that A4SWIFT receives.</span></span> <span data-ttu-id="241a9-142">つまり、動的スキーマの解決を無効にし、型が指定されたインターチェンジ スキーマに一致するメッセージのみを受信するパイプラインを構成します。</span><span class="sxs-lookup"><span data-stu-id="241a9-142">That is, you disable dynamic schema resolution and configure the pipeline to receive only messages whose type matches the specified interchange schema.</span></span>  
