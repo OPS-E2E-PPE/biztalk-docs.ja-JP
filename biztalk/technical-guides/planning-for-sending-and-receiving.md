@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d67e5f7-5127-4c1d-be20-8d8dbb538286
-caps.latest.revision: ''
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26010595"
 ---
 # <a name="planning-for-sending-and-receiving"></a>送受信の計画
 処理されるドキュメントのほぼすべて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が受信した、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信アダプター、およびから送信された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信アダプター。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプターのいずれかで目立つように図[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境では、することが重要が済んだ後どのアダプターやアクセラレータを使用してこれらのアダプターやアクセラレータを正しく構成する方法を決定します。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/28/2018
     > [!NOTE]  
     >  MSDTC の問題を発生した場合は、トピックを参照[MSDTC の問題のトラブルシューティング](http://go.microsoft.com/fwlink/?LinkID=154693)(http://go.microsoft.com/fwlink/?LinkID=154693)です。  
   
--   **双方向通信のサポート (要求/応答または送信請求-応答)**機能ドキュメントを送信して送信先からの応答メッセージを処理できる、またはドキュメントを受信し、ソースに応答メッセージを送信します。  
+-   **双方向通信のサポート (要求/応答または送信請求-応答)** 機能ドキュメントを送信して送信先からの応答メッセージを処理できる、またはドキュメントを受信し、ソースに応答メッセージを送信します。  
   
 -   **順次受信のサポート。** ドキュメントを受信したとおりの順序でメッセージ ボックス データベースに受信したドキュメントをパブリッシュする権限です。  
   
@@ -145,7 +146,7 @@ ms.lasthandoff: 03/28/2018
   
  **MQSeries アダプターのパフォーマンスに関する考慮事項**  
   
- **トランザクションのサポートを無効にして、順次配送が不要な場合に MQSeries アダプターの受信場所**MQSeries アダプターの受信場所が設定されています、**トランザクションがサポートされている**にセットのオプション**[はい]**、または**Ordered**オプションに設定**が停止すると注文**、Microsoft 分散のコンテキストで処理される各メッセージの受信場所で取得し、トランザクション コーディネーター (MSDTC) トランザクションです。 追加があるため、MSDTC トランザクションのコンテキスト内でメッセージを処理するには、これらのオプションが有効にできません順次配送場合またはトランザクションのサポートが、MQSeries に必要でない場合に発生するオーバーヘッド アダプターの受信場所。  
+ **トランザクションのサポートを無効にして、順次配送が不要な場合に MQSeries アダプターの受信場所**MQSeries アダプターの受信場所が設定されています、**トランザクションがサポートされている**にセットのオプション **[はい]**、または**Ordered**オプションに設定**が停止すると注文**、Microsoft 分散のコンテキストで処理される各メッセージの受信場所で取得し、トランザクション コーディネーター (MSDTC) トランザクションです。 追加があるため、MSDTC トランザクションのコンテキスト内でメッセージを処理するには、これらのオプションが有効にできません順次配送場合またはトランザクションのサポートが、MQSeries に必要でない場合に発生するオーバーヘッド アダプターの受信場所。  
   
 ## <a name="planning-for-ordered-message-delivery"></a>メッセージの順次配送の計画  
  メッセージの順次配送は、特定の順序でメッセージ ボックス データベースに公開されたメッセージが同じ順序で一致する各サブスクライバーに配信されたことにより、します。 メッセージの順次配送を実装する場合は、次の考慮事項が適用されます。  

@@ -1,14 +1,14 @@
 ---
-title: "追跡の計画 |Microsoft ドキュメント"
-ms.custom: 
+title: 追跡の計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8ffc8573-1b4a-47c7-96ab-0471f43facf5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302082"
 ---
 # <a name="planning-for-tracking"></a>追跡の計画
 メッセージの追跡は、格納するためのメッセージ本文、メッセージ プロパティ、メタデータなどのメッセージ インスタンスの部分は、データベースでは、通常アーカイブのためのプロセスです。 追跡されているメッセージ インスタンス部分見なすことができます、その後で [グループ ハブ] ページからクエリを実行して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 アーカイブ済みのデータにアクセスするだけでなく、便利なツールを識別して、開発中の問題の修正またはステージング環境の可能性があるライブ データを表示することもできます。  

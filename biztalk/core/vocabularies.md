@@ -1,11 +1,11 @@
 ---
-title: "ボキャブラリ |Microsoft ドキュメント"
-ms.custom: 
+title: ボキャブラリ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, vocabularies
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - vocabularies
 - Business Rules Engine, vocabularies
 ms.assetid: 591673a0-2c4d-41ca-9997-b363c086dd66
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288010"
 ---
 # <a name="vocabularies"></a>ボキャブラリ
 ルールの条件やアクションを定義するために使用される用語は、通常、分野固有または業界固有の用語体系に従って表現されます。 たとえば、電子メールを使用するユーザーが "差出人" や "特定日時以降に受信" したメッセージとしてルールを記述したり、保険のビジネス アナリストが "危険要素" および "補償範囲額" としてルールを記述したりします。  

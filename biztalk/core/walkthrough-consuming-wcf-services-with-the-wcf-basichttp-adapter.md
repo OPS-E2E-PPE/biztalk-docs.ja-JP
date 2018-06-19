@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d280198-ba55-4937-91c9-19d6d0ed3194
-caps.latest.revision: ''
+caps.latest.revision: 49
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "26010979"
 ---
 # <a name="walkthrough-consuming-wcf-services-with-the-wcf-basichttp-adapter"></a>チュートリアル: Wcf-basichttp アダプターで WCF サービスの使用
   
@@ -94,7 +95,7 @@ ms.lasthandoff: 03/23/2018
   
     4.  展開**サイト**、展開**既定の Web サイト**を右クリックして**BasicHttpWCFServiceConsuming**、クリックして**アプリケーションへの変換**この Web アプリケーションを作成する[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービス。  
   
-    5.  **アプリケーションへの変換** ダイアログ ボックスで、をクリックして **選択** を以前に作成されたアプリケーション プールを選択し、をクリックして **[ok]**します。  
+    5.  **アプリケーションへの変換** ダイアログ ボックスで、をクリックして **選択** を以前に作成されたアプリケーション プールを選択し、をクリックして **[ok]** します。  
   
     6.  [機能ビュー] をクリックして、 **認証** アイコンいることを確認し、 **匿名認証** オプションは、 **有効になっている**します。 これをサポートしている[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]を使用するサービス、 **None**セキュリティ モード。  
   

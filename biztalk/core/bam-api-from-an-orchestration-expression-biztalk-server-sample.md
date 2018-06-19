@@ -1,14 +1,14 @@
 ---
-title: "オーケストレーションの式のサンプルから BAM API を |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションの式のサンプルから BAM API を |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 341bc333-9bfc-484c-b431-9a71f9188792
-caps.latest.revision: 
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710985"
 ---
 # <a name="bam-api-from-an-orchestration-expression-biztalk-server-sample"></a>オーケストレーション式からの BAM API (BizTalk Server サンプル)
 このサンプルで示す方法。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 02/28/2018
 -   追跡プロファイルを使用して追跡される BAM データと、BAM API を使用して追跡される BAM データの間の関係を作成する。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- このサンプルを見つけることができます*\<サンプル パス\>*\BAM\BamFromExpression です。  
+ このサンプルを見つけることができます*\<サンプル パス\>* \BAM\BamFromExpression です。  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 02/28/2018
   
 ## <a name="create-the-tracking-profile"></a>追跡プロファイルを作成します。  
   
-1.  管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\BAMFromExpression\Setup.bat です。 Setup.bat はこのサンプル用に BAM インフラストラクチャを初期化し、BAM アクティビティを展開します。  
+1.  管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>* \BAM\BAMFromExpression\Setup.bat です。 Setup.bat はこのサンプル用に BAM インフラストラクチャを初期化し、BAM アクティビティを展開します。  
   
 2.  **プログラム** > **Microsoft BizTalk Server**を右クリックして**追跡プロファイル エディター**、および**を管理者として実行**.
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 02/28/2018
   
 13. ドラッグ、 **Send_1** 右側のウィンドウに図形 **送信** 左側のウィンドウでします。  
   
-14. 追跡プロファイルを保存*\<サンプル パス\>*\BAM\BamFromExpression\ BamFromExpression.btt です。  
+14. 追跡プロファイルを保存*\<サンプル パス\>* \BAM\BamFromExpression\ BamFromExpression.btt です。  
   
 15. **ツール**  メニューのをクリックして **追跡プロファイルの適用**します。  
   
@@ -92,9 +93,9 @@ BamFromExpression.btt 追跡プロファイルを展開します。 参照して
   
 ## <a name="run-this-sample"></a>このサンプルを実行します。  
   
-ファイルをコピー *\<サンプル パス\>*に \BamFromExpression\InputMessage.xml *\<サンプル パス\>*\BamFromExpression\Input です。  
+ファイルをコピー *\<サンプル パス\>* に \BamFromExpression\InputMessage.xml *\<サンプル パス\>* \BamFromExpression\Input です。  
   
-約 10 秒後に、出力メッセージが表示されます*\<サンプル パス\>*\BamFromExpression\Output です。  
+約 10 秒後に、出力メッセージが表示されます*\<サンプル パス\>* \BamFromExpression\Output です。  
   
 ## <a name="view-the-bam-data"></a>BAM データを表示します。  
   
@@ -116,9 +117,9 @@ BamFromExpression.btt 追跡プロファイルを展開します。 参照して
   
 ## <a name="re-run-the-sample"></a>このサンプルを再実行します。  
   
-1.  管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>*\BAM\BamFromExpression\Cleanup.bat 追跡プロファイルとその他の BAM インフラストラクチャを削除します。 
+1.  管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>* \BAM\BamFromExpression\Cleanup.bat 追跡プロファイルとその他の BAM インフラストラクチャを削除します。 
   
-2.  実行*\<サンプル パス\>*\BAM\BamFromExpression\Setup.bat をサンプルをコンパイルして展開します。  
+2.  実行*\<サンプル パス\>* \BAM\BamFromExpression\Setup.bat をサンプルをコンパイルして展開します。  
   
 ## <a name="see-also"></a>参照  
  [ビジネス アクティビティ監視 (BizTalk Server Samples フォルダ)](../core/business-activity-monitoring-biztalk-server-samples-folder.md)   

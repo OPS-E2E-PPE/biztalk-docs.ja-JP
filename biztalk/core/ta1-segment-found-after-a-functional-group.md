@@ -1,14 +1,14 @@
 ---
-title: "TA1 セグメントの機能グループの後に見つかった |Microsoft ドキュメント"
-ms.custom: 
+title: TA1 セグメントの機能グループの後に見つかった |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ee3d090a-0916-4a0e-82dc-2c9af9f97683
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278522"
 ---
 # <a name="ta1-segment-found-after-a-functional-group"></a>機能グループの後に TA1 セグメントが見つかりました
 ## <a name="details"></a>詳細  

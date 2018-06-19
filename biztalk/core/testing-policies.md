@@ -1,11 +1,11 @@
 ---
-title: "ポリシーのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: ポリシーのテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, tracking
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - testing, policies
 - policies, testing
 ms.assetid: 73f8286f-326d-42b3-b0b0-1586f63bd3db
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278298"
 ---
 # <a name="testing-policies"></a>ポリシーのテスト
 このセクションでは、ポリシーをテストする方法と追跡情報について説明します。  

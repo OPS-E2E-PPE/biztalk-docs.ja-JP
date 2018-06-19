@@ -1,14 +1,14 @@
 ---
-title: "BAM プライマリ インポート データベースの名前と接続文字列を更新 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM プライマリ インポート データベースの名前と接続文字列を更新 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 02/01/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e3c58db0-f14f-429a-813c-bae29f6950d3
-caps.latest.revision: 
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: c670558deccec266f90ae7ed042dba1105b15596
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28956652"
 ---
 # <a name="update-references-to-the-bam-primary-import-database-name-and-connection-string"></a>BAM プライマリ インポート データベース名および接続文字列への参照を更新します。
 BAMPrimaryImport データベースをバックアップしておくと、システムまたはデータに障害が発生したときに、別のコンピューターにバックアップを復元し、その名前を変更することができます。  
@@ -118,7 +119,7 @@ BizTalk Server 管理者グループのメンバーとしてサインインし�
   
     4.  **ファイル**  メニューのをクリックして **を閉じるし、Microsoft Excel へ戻る**します。  
   
-    5.  **[ファイル]** メニューの **[保存]**をクリックします。  
+    5.  **[ファイル]** メニューの **[保存]** をクリックします。  
   
 11. BizTalk Server アプリケーション サービスを再起動します。  
   

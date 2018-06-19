@@ -1,14 +1,14 @@
 ---
-title: "高 Availability2 の計画 |Microsoft ドキュメント"
-ms.custom: 
+title: 高 Availability2 の計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65271fd5-5294-406f-87f8-3aa394c235a2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008331"
 ---
 # <a name="planning-for-high-availability"></a>高可用性の計画
 BizTalk Server の高可用性は、BizTalk Server の展開での可用性を低下させている機能のコンポーネントの復旧について説明します。  
@@ -46,7 +47,7 @@ BizTalk Server の高可用性は、BizTalk Server の展開での可用性を�
 |コンポーネントまたは依存関係|障害の範囲|  
 |-----------------------------|----------------------|  
 |SQL Server|システム全体です。 SQL Server が失敗した場合、BizTalk Server ことはできませんドキュメントを処理します。|  
-|[マスター シークレット サーバー]|システム全体です。 マスター シークレット サーバーが失敗した場合、BizTalk Server ことはできませんドキュメントを処理します。 <br/>**注:**マスター シークレット サーバーが失敗した場合、BizTalk グループ内の各 BizTalk サーバーは BizTalk server のエンタープライズ SSO サービスが再起動されるまでは、マスター シークレットのメモリ内のキャッシュされたコピーを使用して引き続きです。 BizTalk サーバーで、エンタープライズ SSO サービスが再起動された場合は、キャッシュされたマスター シークレットのコピーがメモリから解放し、BizTalk server は、マスター シークレットの別のコピーを取得する場合は、マスター シークレット サーバーに接続できないする必要があります。 マスター シークレット サーバーは失敗し、BizTalk server のドキュメントの処理を続行する場合、グループ内 BizTalk サーバーでエンタープライズ SSO サービスを再開しないしないでください。|  
+|[マスター シークレット サーバー]|システム全体です。 マスター シークレット サーバーが失敗した場合、BizTalk Server ことはできませんドキュメントを処理します。 <br/>**注:** マスター シークレット サーバーが失敗した場合、BizTalk グループ内の各 BizTalk サーバーは BizTalk server のエンタープライズ SSO サービスが再起動されるまでは、マスター シークレットのメモリ内のキャッシュされたコピーを使用して引き続きです。 BizTalk サーバーで、エンタープライズ SSO サービスが再起動された場合は、キャッシュされたマスター シークレットのコピーがメモリから解放し、BizTalk server は、マスター シークレットの別のコピーを取得する場合は、マスター シークレット サーバーに接続できないする必要があります。 マスター シークレット サーバーは失敗し、BizTalk server のドキュメントの処理を続行する場合、グループ内 BizTalk サーバーでエンタープライズ SSO サービスを再開しないしないでください。|  
 |MSDTC|サーバー。 MSDTC が失敗した場合、トランザクションのサポートを必要とするサーバー上のコンポーネントは失敗します。 <br/>**注:** SQL サーバーとマスター シークレット サーバーはトランザクションのサポートに MSDTC に依存するため、障害の範囲になるシステム全体で SQL server またはマスター シークレット サーバー上の MSDTC が失敗した場合。 BizTalk Server では、実行時の操作中に SQL Server およびマスター シークレット サーバーと通信するときに、トランザクションのサポートが必要です。|  
 |BizTalk ホスト インスタンス|サーバー。 BizTalk ホスト インスタンスに格納されていたすべてのコンポーネントは、ホスト インスタンスが失敗した場合は、ドキュメント処理に参加することができません。|  
 |Microsoft メッセージ キュー (MSMQ)|サーバー。 MSMQ は失敗し、ドキュメントの処理など、MSMQ アダプター、MSMQ サービスに依存している場合は、サーバーに中止されます。|  

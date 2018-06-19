@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279242"
 ---
 # <a name="transforms-receiveport-node"></a>Transforms (ReceivePort ノード)
 バインド ファイルの ReceivePort ノードの Transforms ノードには、バインド ファイルと共にエクスポートされる一方向受信ポートの受信変換のコレクションが含まれます。  

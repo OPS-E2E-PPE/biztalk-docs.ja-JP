@@ -1,18 +1,18 @@
 ---
-title: "SMTP アダプタのセキュリティに関する推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: SMTP アダプタのセキュリティに関する推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [SMTP adapters], security
 - SMTP adapters, security
 - security, SMTP adapters
 ms.assetid: 45f13744-a0eb-4b4e-85cd-6b862b384ad5
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276498"
 ---
 # <a name="smtp-adapter-security-recommendations"></a>SMTP アダプタのセキュリティに関する推奨事項
 SMTP アダプタは、BizTalk Server を実行しているサーバーと他のアプリケーション間で簡易メール転送プロトコル (SMTP) を介して情報を交換するために使用します。 BizTalk Server から他のアプリケーションにメッセージを送信するには、電子メール メッセージを作成し、指定した電子メール アドレスに配信します。 SMTP アダプタは、メッセージの送信のみに使用できます。 SMTP アダプターに関する詳細については、次を参照してください。 [SMTP アダプター](../core/smtp-adapter.md)です。  

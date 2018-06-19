@@ -1,11 +1,11 @@
 ---
-title: "受信メッセージの認証 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信メッセージの認証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, authenticating
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - security, messages
 - inbound messages
 ms.assetid: 34c06283-667d-4498-8544-dea6e87f276f
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258066"
 ---
 # <a name="inbound-message-authentication"></a>受信メッセージの認証
 BizTalk Server では、証明書の情報または Windows 統合セキュリティを使用して、メッセージの送信者を認証し、その ID を検証できます。 次の図に、受信メッセージの認証に使用できる [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のセキュリティ機能を示します。  

@@ -1,17 +1,17 @@
 ---
 redirect_url: /biztalk/core/feature-pack-add-build-release-definitions/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
-title: "BizTalk Server ソリューションまたはプロジェクトを展開する Visual Studio Team Services の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server ソリューションまたはプロジェクトを展開する Visual Studio Team Services の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2555712a-dfe4-420e-9a61-1d1a6d98c322
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: tordgladnordahl
 ms.author: tonordah
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/09/2017
+ms.locfileid: "24054586"
 ---
 # <a name="configure-visual-studio-team-services-to-deploy-biztalk-server-solutions-or-projects"></a>BizTalk Server ソリューションまたはプロジェクトを展開する Visual Studio Team Services を構成します。
 自動的に展開する VSTS セットアップ[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]プロジェクト。 
@@ -78,13 +79,13 @@ ms.lasthandoff: 11/09/2017
 
     ![手順は必要ありませんの削除します。](../core/media/delete-steps-not-needed.png)
 
-10. **省略可能な**します。 継続的な統合 (CI) を有効にする場合は、選択**トリガー**メニューのおよびチェックで**継続的インテグレーション (CI)**です。
+10. **省略可能な**します。 継続的な統合 (CI) を有効にする場合は、選択**トリガー**メニューのおよびチェックで**継続的インテグレーション (CI)** です。
 
 次に、エージェントをインストール、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]です。 
 
 ## <a name="install-the-agent"></a>エージェントをインストールします。
 
-ソリューションが機能するには、ローカル コンピューター上のプライベート Windows エージェントを有効にします。 思い出してください**、エージェントは、1 つだけにインストールする必要があります[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]グループで**です。 
+ソリューションが機能するには、ローカル コンピューター上のプライベート Windows エージェントを有効にします。 思い出してください **、エージェントは、1 つだけにインストールする必要があります[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]グループで**です。 
 
 1. 定義に、選択、**全般**(上部) のタブです。
 2. **既定のエージェント キュー**プロパティを選択、**既定**一覧からエージェントです。 

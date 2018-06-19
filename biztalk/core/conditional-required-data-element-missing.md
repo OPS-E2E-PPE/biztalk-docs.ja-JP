@@ -1,14 +1,14 @@
 ---
-title: "条件付きの必須データ要素がありません |Microsoft ドキュメント"
-ms.custom: 
+title: 条件付きの必須データ要素がありません |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a5105c03-fa26-4c38-a276-c656f3076d5f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231962"
 ---
 # <a name="conditional-required-data-element-missing"></a>必須の条件付きデータ要素がありません
 ## <a name="details"></a>詳細  

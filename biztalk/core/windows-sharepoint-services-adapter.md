@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289882"
 ---
 # <a name="windows-sharepoint-services-adapter"></a>Windows SharePoint Services アダプタ
 Microsoft Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプターを使用すると、BizTalk Server を Windows SharePoint Services および Microsoft Office InfoPath と密接に統合できます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ソリューションで Windows SharePoint Services アダプターを使用した場合、次の機能が提供されます。  

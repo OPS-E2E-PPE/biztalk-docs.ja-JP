@@ -1,11 +1,11 @@
 ---
-title: "指向ソリューションのスタブ バージョンのサービスをインストールする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 指向ソリューションのスタブ バージョンのサービスをインストールする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IIS, installing virtual directories [service solutions]
@@ -24,7 +24,7 @@ helpviewer_keywords:
 - service solution tutorial, building solutions
 - service solution tutorial, installing
 ms.assetid: 45de7681-4df0-47a4-a02c-509140423a1e
-caps.latest.revision: "53"
+caps.latest.revision: 53
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010411"
 ---
 # <a name="how-to-install-the-stub-version-of-the-service-oriented-solution"></a>サービス指向ソリューションのスタブ バージョンのインストール方法
 次の手順では、サービス指向ソリューションのスタブ バージョンをインストールするための事前準備を行う方法およびコンピューターにソリューションをインストールする方法について説明します。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 12/01/2017
   
     1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、クリックして**インターネット インフォメーション サービス (IIS) マネージャー**.  
   
-    2.  **インターネット インフォメーション サービス (IIS) マネージャー**、マシン名を展開**サイト**、展開**Default Web Site**、展開**aspnet_client**、展開**[system_web]**です。  
+    2.  **インターネット インフォメーション サービス (IIS) マネージャー**、マシン名を展開**サイト**、展開**Default Web Site**、展開**aspnet_client**、展開 **[system_web]** です。  
   
     3.  サブフォルダーが 2.X であることを確認します。  
   
@@ -174,25 +175,25 @@ ms.lasthandoff: 12/01/2017
   
          Access Permissions = Read, Run scripts  
   
-9. **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、**展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub をクリックして**プロパティ**、し、次のように設定を変更します。  
+9. **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、** 展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub をクリックして**プロパティ**、し、次のように設定を変更します。  
   
     1.  **仮想ディレクトリ** タブで、設定、**アプリケーション プール**に**SSOStubAppPool**で作成しました。  
   
     2.  をクリックして**ディレクトリ セキュリティ** タブで、をクリックして**編集**で、**認証とアクセス制御**グループ ボックスで、**統合 Windows 認証のみ有効になっている**、し、その他のオフ**認証アクセス**チェック ボックスをオンします。 をクリックして**OK**を終了します。  
   
-10. **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、**展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.StubSAP をクリックして**プロパティ**、し、次のように設定を変更します。  
+10. **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、** 展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.StubSAP をクリックして**プロパティ**、し、次のように設定を変更します。  
   
     1.  **仮想ディレクトリ** タブで、設定、**アプリケーション プール**に**SSOStubAppPool**で作成しました。  
   
     2.  をクリックして**ディレクトリ セキュリティ**] タブで、をクリックして**編集**で、**認証とアクセス制御**ボックスで、グループ化し、[ **の匿名アクセスの有効化**. をクリックして**OK**を終了します。  
   
-11. **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、**展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions をクリックして**プロパティ**、し、次のように設定を変更します。  
+11. **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、** 展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions をクリックして**プロパティ**、し、次のように設定を変更します。  
   
     1.  **仮想ディレクトリ** タブで、設定、**アプリケーション プール**に**SSOStubAppPool**で作成しました。  
   
     2.  をクリックして**ディレクトリ セキュリティ**] タブで、をクリックして**編集**で、**認証とアクセス制御**ボックスで、グループ化し、[ **の匿名アクセスの有効化**. をクリックして**OK**を終了します。  
   
-12. **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、**展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker をクリックして**プロパティ**、し、次のように設定を変更します。  
+12. **インターネット インフォメーション サービス (IIS) マネージャー**、展開**Web サイト、** 展開、 **Default Web Site**を右クリックしてMicrosoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker をクリックして**プロパティ**、し、次のように設定を変更します。  
   
     1.  **仮想ディレクトリ** タブで、設定、**アプリケーション プール**に**SSOStubAppPool**で作成しました。  
   
@@ -205,7 +206,7 @@ ms.lasthandoff: 12/01/2017
 1.  開始**Visual Studio コマンド プロンプト**です。  
   
     > [!NOTE]
-    >  ファイルに**%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Inline\app_code\customerserviceport.asmx.cs**と**%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Stub\app_code\customerserviceport.asmx.cs**17f20caea2afcc8c のすべてのインスタンスを a1054514fc67bded に置き換えます。  
+    >  ファイルに **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Inline\app_code\customerserviceport.asmx.cs**と **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Stub\app_code\customerserviceport.asmx.cs**17f20caea2afcc8c のすべてのインスタンスを a1054514fc67bded に置き換えます。  
   
 2.  Visual Studio コマンド プロンプトで、ディレクトリを %BTSSolutionsPath%\SO\BTSSoln フォルダーに変更し、次のコマンドを実行して、サービス指向ソリューションのスタブ バージョンをビルドします。  
   

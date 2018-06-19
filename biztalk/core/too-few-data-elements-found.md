@@ -1,14 +1,14 @@
 ---
-title: "見つかったデータ要素数が少なすぎます |Microsoft ドキュメント"
-ms.custom: 
+title: 見つかったデータ要素数が少なすぎます |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6eca6c1-73ee-4b9a-be84-461051eda963
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278962"
 ---
 # <a name="too-few-data-elements-found"></a>見つかったデータ要素が少なすぎます
 ## <a name="details"></a>詳細  

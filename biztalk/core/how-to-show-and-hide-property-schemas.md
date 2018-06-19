@@ -1,11 +1,11 @@
 ---
-title: "プロパティ スキーマを非表示にしたりする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: プロパティ スキーマを非表示にしたりする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [schemas], showing
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [schemas], hiding
 - managing [schemas], properties
 ms.assetid: e7cc1838-cc3f-4dd3-a7d1-e66e7ee82d0c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255474"
 ---
 # <a name="how-to-show-and-hide-property-schemas"></a>プロパティ スキーマを表示または非表示にする方法
 このトピックでは、BizTalk Server 管理コンソールを使用してアプリケーションの Schemas フォルダーでプロパティ スキーマを表示または非表示にする方法について説明します。 プロパティ スキーマは、昇格させたプロパティを、インスタンス メッセージからメッセージ コンテキストへ、あるいは、メッセージ コンテキストからインスタンス メッセージへとコピーするプロセスを実行する、簡易版の BizTalk スキーマといえます。 プロパティ スキーマを非表示にすると、ドキュメント スキーマのみが表示され、スキーマ ビューが簡略化されます。  

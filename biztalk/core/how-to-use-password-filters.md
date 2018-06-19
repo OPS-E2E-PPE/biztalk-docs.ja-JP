@@ -1,14 +1,14 @@
 ---
-title: "フィルターするにはパスワードを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: フィルターするにはパスワードを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eb429f8b-c301-45a3-8a4f-bbe6f2c566a3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255938"
 ---
 # <a name="how-to-use-password-filters"></a>パスワード フィルタを使用する方法
 ENTSSO パスワード同期機能は、Microsoft Windows Active Directory と Windows 以外のシステムのパスワードを同期します。 しかし、多くの外部システムは、Active Directory とは異なるパスワード ポリシー要件を備えています (たとえば、IBM システムでは、パスワードは 8 文字以内の大文字で指定する必要があります)。このため、パスワード セキュリティに限って、ENTSSO では 2 つのシステム間の "最小限の共通要件" を使用します。  

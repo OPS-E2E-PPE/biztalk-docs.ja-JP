@@ -1,14 +1,14 @@
 ---
-title: "Visual Studio から BizTalk アセンブリを展開する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Visual Studio から BizTalk アセンブリを展開する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 69d70c52-3e71-4eb2-876e-b467c7ca24b7
-caps.latest.revision: "39"
+caps.latest.revision: 39
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007403"
 ---
 # <a name="how-to-deploy-a-biztalk-assembly-from-visual-studio"></a>Visual Studio から BizTalk アセンブリを展開する方法
 このトピックでは、使用に関する説明[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーまたは[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトから BizTalk アセンブリを展開する[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]BizTalk アプリケーションにします。 プロジェクト レベルから 1 つのアセンブリを展開する方法 (手順は、プロジェクトを右クリックして [配置] をクリックするなど) と、ソリューション レベルからすべてのアセンブリをソリューションで展開する方法 (ソリューションを右クリックして [配置] をクリックするなど) を利用できますが、ソリューション レベルからすべてのアセンブリを一度に展開する方法を強くお勧めします。  

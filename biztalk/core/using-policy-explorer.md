@@ -1,11 +1,11 @@
 ---
-title: "ポリシー エクスプ ローラーを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: ポリシー エクスプ ローラーを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Business Rule Composer, Policy Explorer
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business rules, Policy Explorer
 - Policy Explorer [Business Rule Composer]
 ms.assetid: 249b1b72-ba84-4695-ba2b-16f081710b20
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288346"
 ---
 # <a name="using-policy-explorer"></a>ポリシー エクスプ ローラーを使用します。
 ポリシー エクスプローラーを使用して、ルール ストアに保存されているポリシーおよびルールを管理できます。 ポリシーとルールについては、作成、変更、および削除を行うことができます。ポリシーについては、テスト、公開、展開、および展開解除を行うことができます。  

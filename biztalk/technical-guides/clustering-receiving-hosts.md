@@ -1,14 +1,14 @@
 ---
-title: "受信ホストをクラスタ リング |Microsoft ドキュメント"
-ms.custom: 
+title: 受信ホストをクラスタ リング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93544f39-836f-4a4f-9587-230bfa3a9d4e
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008307"
 ---
 # <a name="clustering-receiving-hosts"></a>受信ホストをクラスタ リング
 BizTalk Server を使用すると、BizTalk ホスト内のクラスター リソースとして構成する機能を提供する、[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]クラスター グループ。 ホスト クラスターのサポートをサポートする受信高可用性を統合 BizTalk アダプターを複数のホスト インスタンスで、同時が実行されない、FTP 受信ハンドラーなど、特定の状況では、POP3 受信ハンドラーに提供されます。 MSMQ サービスのクラスター化が必要となるような状況でも、MSMQ アダプターによって送受信されたメッセージについて、トランザクションの一貫性を確実に保つことができます。  

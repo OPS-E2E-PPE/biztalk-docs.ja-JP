@@ -1,14 +1,14 @@
 ---
-title: "メッセージの考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5ca466fa-426c-46f6-a400-747ff51ff8f4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010835"
 ---
 # <a name="message-considerations"></a>メッセージの考慮事項
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信、受信、変換、およびメッセージの処理の広範な機能セットを提供します。 これらの機能が含まれます。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269834"
 ---
 # <a name="scenario-2-sizing-the-tracking-database--for-messages-in-orchestrations"></a>シナリオ 2: オーケストレーションでメッセージの追跡データベースのサイズ変更
 オーケストレーションを含む例を見てみましょう。 次の図は、ビジネス プロセス全体を示しています。 このシナリオでは、メッセージが BizTalk Server に格納され、オーケストレーションを通じて送信されます。メッセージは、オーケストレーション内で変更され、送信ポートを通じて送信されます。  

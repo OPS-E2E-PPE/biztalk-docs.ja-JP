@@ -1,14 +1,14 @@
 ---
-title: "災害復旧のための構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 災害復旧のための構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: acdafe68-c8bf-4064-afca-6dfd22d15052
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010955"
 ---
 # <a name="configuring-for-disaster-recovery"></a>災害復旧のための構成
 既存のバックアップを拡張する BizTalk Server のログ配布機能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ジョブです。 BizTalk Server のログ配布バックアップ ジョブによって生成されるバックアップ セットの系列を手動で復元する必要があるし、システム障害時のダウンタイムを短縮します。 BizTalk Server のログ配布は、BizTalk の障害復旧手順の重要なコンポーネントです。  
