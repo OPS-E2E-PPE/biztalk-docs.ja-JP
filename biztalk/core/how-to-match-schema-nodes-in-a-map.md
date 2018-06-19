@@ -1,14 +1,14 @@
 ---
-title: "マップ内のスキーマのノードを照合する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マップ内のスキーマのノードを照合する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 584f85d2-6198-4ef3-90d9-a322f1457d9a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253938"
 ---
 # <a name="how-to-match-schema-nodes-in-a-map"></a>マップ内のスキーマ ノードを照合する方法
 送信元スキーマまたは送信先スキーマが複雑な場合、要素をマップするのが難しいことがあります。 BizTalk マッパー、**指示一致**機能で、最適な一致を指摘することで複雑なスキーマ要素をマップすることができます。 このトピックでは、次の操作を実行する方法について説明します。  

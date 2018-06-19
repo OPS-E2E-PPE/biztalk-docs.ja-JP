@@ -1,11 +1,11 @@
 ---
-title: "ループ アクティビティ |Microsoft ドキュメント"
-ms.custom: 
+title: ループ アクティビティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], looping activities
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - orchestrations, looping
 - orchestrations, activities
 ms.assetid: fb40fdd0-ac8f-486a-b3d0-9d2200a87cda
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262082"
 ---
 # <a name="looping-activities"></a>ループ アクティビティ
 ループ アクティビティとは、オーケストレーション内でループ処理されるアクションのことです。 オーケストレーション内でループ処理されるアクションからイベントをキャプチャできます。 この操作を行うには、アクティビティをもう 1 つ作成し、ループ内の新しいアクティビティ マイルストーンとデータのすべてをマップします。 ループ内でのデータ処理は、スケジュールされた実行ごとに 1 回以上行われるので、この操作が必要です。 次の図は、この状況の例を示しています。  

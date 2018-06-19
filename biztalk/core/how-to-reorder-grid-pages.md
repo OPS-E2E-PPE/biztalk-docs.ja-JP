@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254802"
 ---
 # <a name="how-to-reorder-grid-pages"></a>グリッド ページを並び替える方法
 マップが複雑である場合は、複数のグリッド ページを設定できます。グリッド ページの名前や順序を変更することもできます。 このトピックでは、これらの操作の手順について説明します。  

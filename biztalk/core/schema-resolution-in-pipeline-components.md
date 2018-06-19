@@ -1,18 +1,18 @@
 ---
-title: "スキーマの解決パイプライン コンポーネントで |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマの解決パイプライン コンポーネントで |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, schema resolution
 - pipeline components, schema resolution
 - schemas, pipeline components
 ms.assetid: 35a79a6f-788b-4ca1-8483-36dcba5ae580
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972962"
 ---
 # <a name="schema-resolution-in-pipeline-components"></a>スキーマの解決パイプライン コンポーネント
 パイプラインの逆アセンブラー コンポーネントおよびアセンブラー コンポーネントは、XSD スキーマを使用して、メッセージを処理します。 スキーマには、昇格させたプロパティの一覧、識別フィールド、フラット ファイル メッセージの注釈、XML エンベロープの注釈などの情報が含まれます。  

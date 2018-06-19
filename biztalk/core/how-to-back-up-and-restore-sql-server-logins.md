@@ -1,14 +1,14 @@
 ---
-title: "バックアップおよび SQL Server ログインを復元する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: バックアップおよび SQL Server ログインを復元する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 847c3a3d-0d97-415b-893e-4ba173085bae
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248554"
 ---
 # <a name="how-to-back-up-and-restore-sql-server-logins"></a>SQL Server ログインのバックアップ方法と復元方法
 バックアップを作成し、BizTalk Server に関連付けられている SQL Server ログインを復元します。  

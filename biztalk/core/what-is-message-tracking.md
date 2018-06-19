@@ -1,11 +1,11 @@
 ---
-title: "メッセージ追跡について | Microsoft Docs"
-ms.custom: 
+title: メッセージ追跡について | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HAT, metadata
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - configuring [HAT tracking], messages
 - data, security
 ms.assetid: 51cec59d-b411-4d8f-b771-7b2cf0f38945
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974640"
 ---
 # <a name="what-is-message-tracking"></a>メッセージ追跡について
 メッセージとは、通常は、実行中のビジネス プロセスやアプリケーション間で交換されるデータの電子的なインスタンスのことです。 メッセージ インスタンスは、メッセージ本文、メッセージ プロパティ、およびメタデータで構成されています。  

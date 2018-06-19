@@ -11,7 +11,7 @@ helpviewer_keywords:
 - validating, archives [Tracking database]
 - archiving [Tracking database], validating archive
 ms.assetid: 406ca54a-6b1f-4bdb-9bad-bea5ea0f6e66
-caps.latest.revision: ''
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25971800"
 ---
 # <a name="how-to-enable-automatic-archive-validation"></a>アーカイブの自動検証を有効にする方法
 アーカイブ検証を使用すると、アーカイブを作成時に検証することができます。 アーカイブの自動検証を有効にするには、セカンダリ データベース サーバー (検証サーバー) をセットアップしておく必要があります。 アーカイブ プロセスは単純なバックアップなので、ハードウェアの問題で、ディスク上に格納される実際のイメージが破損する可能性があります。  
@@ -87,7 +88,7 @@ ms.lasthandoff: 03/23/2018
   
 12. **ジョブ ステップの一覧**, をクリックして **検証**, 、順にクリック **編集**します。  
   
-13. **全般的な** ] ページで、 **コマンド** ボックスで、コマンドで、 **exec dtasp_ValidateArchive null の場合、null**, null の場合、null を続けて、引用符で囲まれた、BizTalk 追跡データベースの名前の単一引用符で囲まれた、BizTalk 追跡データベースをホストするサーバーの名前を置換し、[クリックして **[ok]**します。 以下に例を示します。  
+13. **全般的な** ] ページで、 **コマンド** ボックスで、コマンドで、 **exec dtasp_ValidateArchive null の場合、null**, null の場合、null を続けて、引用符で囲まれた、BizTalk 追跡データベースの名前の単一引用符で囲まれた、BizTalk 追跡データベースをホストするサーバーの名前を置換し、[クリックして **[ok]** します。 以下に例を示します。  
   
      **exec dtasp_ValidateArchive '** *\<TrackingServerName\>* **'、'**  *\<TrackingDatabaseName\>* **'**  
   

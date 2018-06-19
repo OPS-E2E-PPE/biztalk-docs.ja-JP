@@ -1,14 +1,14 @@
 ---
-title: "OrchestrationEventStream |Microsoft ドキュメント"
-ms.custom: 
+title: OrchestrationEventStream |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d7c63610-6344-4b71-8d65-3add7883bc79
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263322"
 ---
 # <a name="orchestrationeventstream"></a>OrchestrationEventStream
 OrchestrationEventStream (OES) API は、BizTalk Server がインストールされているコンピューターでアプリケーションを実行し、BizTalk オーケストレーション トランザクションの一部である項目を追跡する場合に使用します。  

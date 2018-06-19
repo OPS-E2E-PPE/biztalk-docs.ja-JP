@@ -1,11 +1,11 @@
 ---
-title: "関連付けの種類を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 関連付けの種類を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, correlation types
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - correlation types, deleting
 - configuring, correlation types
 ms.assetid: cfae4d2e-ec79-45c8-93b3-799dc5e0576e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248570"
 ---
 # <a name="how-to-configure-correlation-types"></a>関連付けの種類を構成する方法
 使用する、**関連付けのプロパティ** ダイアログ ボックスを追加または関連付けの種類からプロパティを削除します。 関連付けの種類は、関連付けセットのプロパティの一覧であり、実行時に送受信の動作によって使用されて、オーケストレーションの正しいインスタンスに受信メッセージが適切に関連付けられるようにします。  

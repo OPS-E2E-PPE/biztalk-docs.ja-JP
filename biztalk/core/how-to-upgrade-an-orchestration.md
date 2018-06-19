@@ -1,14 +1,14 @@
 ---
-title: "オーケストレーションをアップグレードする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションをアップグレードする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ef3f032f-28a1-4d52-9d85-d5748c9e9682
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257890"
 ---
 # <a name="how-to-upgrade-an-orchestration"></a>オーケストレーションをアップグレードする方法
 オーケストレーションの実行時間の長いトランザクションを処理またはが、送信請求-応答ポートからの応答を待機しているときに、実稼働環境で実行されているオーケストレーションを更新する方法です。
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  クリックして、**アプリケーション**タブがアクティブでない場合、クリックして**アセンブリ情報**です。  
   
-    3.  右ペインで、アセンブリ バージョン番号を増分します。 メジャー バージョン番号またはマイナー バージョン番号だけを増分してください。 メジャー バージョン番号は、シーケンスの最初の桁 (**0**.0.0.0); マイナー バージョン番号は、シーケンス内の 2 番目の数字 (0 **。0**.0.0) です。 BizTalk Server では、0.0 などのシーケンスの後のバージョン番号の変更は認識されません。**0**.0 や 0.0.0 と表示されます**。0**します。  
+    3.  右ペインで、アセンブリ バージョン番号を増分します。 メジャー バージョン番号またはマイナー バージョン番号だけを増分してください。 メジャー バージョン番号は、シーケンスの最初の桁 (**0**.0.0.0); マイナー バージョン番号は、シーケンス内の 2 番目の数字 (0 **。0**.0.0) です。 BizTalk Server では、0.0 などのシーケンスの後のバージョン番号の変更は認識されません。**0**.0 や 0.0.0 と表示されます **。0**します。  
   
     4.  をクリックして**OK**を閉じる、**アセンブリ情報** ダイアログ ボックス。  
   

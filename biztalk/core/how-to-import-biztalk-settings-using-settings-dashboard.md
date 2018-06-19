@@ -1,15 +1,15 @@
 ---
-title: "インポートまたはエクスポートする BizTalk の設定を使用して設定のダッシュ ボード |Microsoft ドキュメント"
-description: "BizTalk Server 管理コンソールを使用して、インポートまたは BizTalk Server 環境の間の設定をエクスポートするには"
-ms.custom: 
+title: インポートまたはエクスポートする BizTalk の設定を使用して設定のダッシュ ボード |Microsoft ドキュメント
+description: BizTalk Server 管理コンソールを使用して、インポートまたは BizTalk Server 環境の間の設定をエクスポートするには
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc2f0b44-d79b-4f95-811a-0843e3d6d1c8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255138"
 ---
 # <a name="use-settings-dashboard-to-import-or-export-biztalk-settings"></a>設定ダッシュ ボードを使用して、インポートまたは BizTalk の設定をエクスポートするには 
 
@@ -57,7 +58,7 @@ BizTalk 設定ダッシュボードを使用して、ある [!INCLUDE[btsBizTalk
   
 3.  クリックして、**ファイルの場所を指定** ページで、クリックして![設定ファイルの参照](../core/media/importsettings-filelocationbrowse.gif "ImportSettings_FileLocationBrowse")です。 ファイル エクスプローラーが表示されます。  
   
-4.  ソース環境設定を含む XML ファイルを選択し、クリックして**開く**です。 **ファイルの場所**XML ファイルのパスを表示し、**ソース グループ**ソース マシンのグループの情報が格納されます。 **[次へ]**をクリックします。  
+4.  ソース環境設定を含む XML ファイルを選択し、クリックして**開く**です。 **ファイルの場所**XML ファイルのパスを表示し、**ソース グループ**ソース マシンのグループの情報が格納されます。 **[次へ]** をクリックします。  
   
 5.  **ホスト マッピング** ページで、次の操作します。  
   

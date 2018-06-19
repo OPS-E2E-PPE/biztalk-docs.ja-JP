@@ -1,17 +1,17 @@
 ---
-title: "追跡 QueryTimeout 値を変更する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 追跡 QueryTimeout 値を変更する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - queries [HAT], time-out limits
 - HAT, time-out limits
 ms.assetid: abc26f37-6537-42fa-81ff-bc8b758b4e10
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247474"
 ---
 # <a name="how-to-change-the-tracking-querytimeout-value"></a>追跡 QueryTimeout 値の変更方法
 既定では、クエリの実行時間が 60 秒を超えると、メッセージとサービス インスタンスの追跡はタイムアウトになります。 レジストリでタイムアウトの値を変更することで、60 秒より長くクエリを実行できます。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
 11. **値のデータ**ボックスには、クエリのタイムアウト値を設定し、をクリックする秒単位で値を入力**OK**です。  
   
-12. **[ファイル]** メニューの **[終了]**をクリックします。  
+12. **[ファイル]** メニューの **[終了]** をクリックします。  
   
     > [!NOTE]
     >  新しいタイムアウト値を有効にするには、BizTalk Server 管理コンソールを閉じて再び開くことが必要になる場合があります。  

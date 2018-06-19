@@ -1,14 +1,14 @@
 ---
-title: "ルート ノード |Microsoft ドキュメント"
-ms.custom: 
+title: ルート ノード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2161f877-835e-434d-a8d1-2426f977d60e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268970"
 ---
 # <a name="root-nodes"></a>ルート ノード
 BizTalk エディターでの子ノード、**スキーマ**ノードと呼ばれる**ルート**ノード。 **ルート**ノードは、特殊な種類の**レコード**ノード、通常よりも、いくつかのプロパティがあると**レコード**ノード。 **ルート**ノードが、スキーマによって示されるドキュメントの種類を表し、必要に応じて変更することができます。 たとえば、名前を変更できます、**ルート**ノードが purchaseOrder、orderAcknowledgment、shipnotice など、スキーマを表すメッセージの種類を説明するようにします。  

@@ -1,18 +1,18 @@
 ---
-title: "成果物を追加または作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 成果物を追加または作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, artifacts
 - artifacts, creating
 - applications, artifacts
 ms.assetid: fea7487c-b5fa-457f-8c74-a20ea3a6df85
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249490"
 ---
 # <a name="how-to-create-or-add-an-artifact"></a>アイテムを作成または追加する方法
 BizTalk アプリケーションを作成した後は、ファイル システムからファイル ベースのアイテム (BizTalk アセンブリ、.NET アセンブリ、スクリプト、証明書など) を追加したり、ルール エンジン データベースからポリシーを追加したりできます。 また、送信ポート、送信ポート グループ、受信場所、および受信ポートをアプリケーション内に作成することもできます。 アイテムを作成または追加すると、そのアイテムは BizTalk 管理データベースに追加されます。 できますし、展開するアプリケーションとそのアイテム 1 つのエンティティとして」の説明に従って[BizTalk アプリケーションの配置](../core/deploying-biztalk-applications.md)です。  

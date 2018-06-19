@@ -1,14 +1,14 @@
 ---
-title: "オーケストレーションでマップを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションでマップを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dfd628d8-c163-431d-8ad7-d7d77007c549
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255330"
 ---
 # <a name="how-to-use-maps-in-orchestrations"></a>オーケストレーションでマップを使用する方法
 BizTalk マッパーは、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 環境内で動作するツールです。 BizTalk マッパーを使用することにより、リンクと Functoid で入力スキーマと出力スキーマの関係を定義したマップを作成および編集できます。 リンクは、レコードまたはフィールドのデータを直接コピーするような関係を定義するときに使用します。 スキーマに含まれる項目どうしを直接接続したり、Functoid との接続を定義する場合にリンクが使用されます。 Functoid は、複雑なデータ操作を実行するときに使用します。  

@@ -1,14 +1,14 @@
 ---
-title: "無効なデータ要素区切り記号 |Microsoft ドキュメント"
-ms.custom: 
+title: 無効なデータ要素区切り記号 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 76c50a8b-274f-4f4a-9826-4f6f8123e9d1
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257466"
 ---
 # <a name="invalid-data-element-separator"></a>データ要素区切り記号が無効です。
 ## <a name="details"></a>詳細  

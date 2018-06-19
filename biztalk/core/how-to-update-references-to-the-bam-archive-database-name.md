@@ -1,11 +1,11 @@
 ---
-title: "BAM アーカイブ データベース名への参照を更新する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM アーカイブ データベース名への参照を更新する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Archive database [BAM], restoring
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Archive database [BAM], updating references
 - BAM, restoring
 ms.assetid: a0b8543e-6fc1-412e-b74e-683352d9c49e
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256418"
 ---
 # <a name="how-to-update-references-to-the-bam-archive-database-name"></a>BAM アーカイブ データベース名への参照を更新する方法
 BAMArchive データベースがバックアップされていれば、システムまたはデータの障害が発生したときに、バックアップを復元し、さらに、その名前を変更することができます。  
@@ -79,7 +80,7 @@ BAMArchive データベースがバックアップされていれば、システ
   
 18. 内をクリックし、**パッケージ名**ボックスに自動的に入力します。  
   
-19. をクリックして**[ok]**、順にクリック**はい**を上書きします。  
+19. をクリックして **[ok]**、順にクリック**はい**を上書きします。  
   
 20. BizTalk Server アプリケーション サービスを再起動します。  
   

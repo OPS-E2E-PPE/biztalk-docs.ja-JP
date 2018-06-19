@@ -1,14 +1,14 @@
 ---
-title: "インターセプタ OnEvent 要素 |Microsoft ドキュメント"
-ms.custom: 
+title: インターセプタ OnEvent 要素 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d684ac8e-61bc-410b-97a2-6fd3549e0d97
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257610"
 ---
 # <a name="interceptor-onevent-element"></a>インターセプタ OnEvent 要素
 **OnEvent**要素が外側の BAM アクティビティにマップされている実際のイベントについて説明します。  

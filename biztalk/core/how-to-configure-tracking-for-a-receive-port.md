@@ -1,11 +1,11 @@
 ---
-title: "追跡を構成する方法、受信ポート |Microsoft ドキュメント"
-ms.custom: 
+title: 追跡を構成する方法、受信ポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [receive ports], configuring
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - configuring, receive ports
 - managing [receive ports], tracking
 ms.assetid: dd569e84-cb1c-4191-912a-0c2eb2781a85
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249106"
 ---
 # <a name="how-to-configure-tracking-for-a-receive-port"></a>受信ポートの追跡を構成する方法
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して受信ポートの追跡を構成する方法 (メッセージ本文や昇格させたプロパティを表示するオプションなど) について説明します。 これにより、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 実装の稼動状況を監視し、ボトルネックを識別できます。 構成する追跡の設定は、受信ポートのすべてのインスタンスに適用されます。  

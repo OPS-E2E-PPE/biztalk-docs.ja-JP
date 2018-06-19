@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22257898"
 ---
 # <a name="instance-message-processing-using-property-promotion"></a>プロパティの昇格を使用したインスタンス メッセージ処理
 使用してプロパティの昇格、 **プロパティ フィールド** メソッド、プロパティ スキーマの作成が必要です。 プロパティ スキーマの作成の詳細については、次を参照してください。[プロパティ スキーマを作成する方法](../core/how-to-create-property-schemas.md)です。 すべてのプロパティの昇格では使用すると、 **プロパティの昇格** を使用してアクセス可能なダイアログ ボックス、 **プロパティの昇格** のプロパティ、 **スキーマ** メッセージ スキーマ内のノードです。  

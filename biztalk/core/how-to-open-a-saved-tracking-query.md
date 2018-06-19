@@ -1,17 +1,17 @@
 ---
-title: "保存されている追跡クエリを開く方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 保存されている追跡クエリを開く方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - queries [HAT], opening
 - queries [HAT]
 ms.assetid: 7e63c45c-b74e-40e1-9035-b7191d0803ff
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254394"
 ---
 # <a name="how-to-open-a-saved-tracking-query"></a>保存されている追跡クエリを開く方法
 ライブ追跡データ データ (現在実行中のサービス インスタンスおよびメッセージ) に対するメッセージまたはサービス インスタンス クエリを開くことができます。 これを行うには、BizTalk Server 管理コンソール内の [グループ ハブ] ページにある [クエリ] タブを使用します。  

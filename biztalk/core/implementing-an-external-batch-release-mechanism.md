@@ -1,14 +1,14 @@
 ---
-title: "外部バッチ リリース メカニズムを実装する |Microsoft ドキュメント"
-ms.custom: 
+title: 外部バッチ リリース メカニズムを実装する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5633a448-cc29-4931-a3ad-206ae25c989b
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258138"
 ---
 # <a name="implementing-an-external-batch-release-mechanism"></a>外部バッチ リリース メカニズムの実装
 外部リリースのトリガーを使用すると、バッチのリリースをトリガーできます。 外部リリースのトリガーでは、バックエンドの基幹業務アプリケーションによって、特定のしきい値に到達したときに、リリースを自動的にトリガーできます。 このメカニズムは、自動的に、スケジュールまたはトランザクション セットや文字の数によってバッチのリリースをトリガーするかをクリックして、バッチを手動でトリガーするだけでなく、**オーバーライド**ボタンをクリックして、**バッチ構成**一方向アグリーメント タブのページです。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  [受信パイプライン] で、[`BatchControlMessageRecvPipeline`] を選択します。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ### <a name="to-create-the-external-batch-release-trigger-message"></a>外部バッチ リリース トリガー メッセージを作成するには  
   
@@ -94,7 +95,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  **バッチ構成**] ページで、外部リリースのトリガーを対象となるし [バッチのタブをクリックして、**リリース**セクションで、**外部リリースのトリガー**.  
   
-3.  **[OK]**をクリックします。  
+3.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [EDI バッチの構成](../core/configuring-edi-batches.md)   

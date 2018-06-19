@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションを参加解除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションを参加解除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, unenlisting
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [orchestrations], unenlisting
 - unenlisting, orchestrations
 ms.assetid: 038ed7bb-615c-4e4e-a5bb-79de2626de77
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255882"
 ---
 # <a name="how-to-unenlist-an-orchestration"></a>オーケストレーションを参加解除する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、オーケストレーションを参加解除する方法について説明します。 オーケストレーションを参加解除は、ホストから削除します。 このオーケストレーションによってメッセージが処理されないように、サブスクリプションも削除されます。 バインドを編集するには、事前にオーケストレーションを参加解除しておく必要があります。  

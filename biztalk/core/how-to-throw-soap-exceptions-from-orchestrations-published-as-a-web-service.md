@@ -1,18 +1,18 @@
 ---
-title: "Web サービスとして公開されたオーケストレーションから SOAP 例外をスローする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスとして公開されたオーケストレーションから SOAP 例外をスローする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors, SOAP exceptions
 - orchestrations, SOAP errors
 - Web services, orchestrations
 ms.assetid: e1c7cd74-d1c8-4b9d-a418-4601b1f040d7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255578"
 ---
 # <a name="how-to-throw-soap-exceptions-from-orchestrations-published-as-a-web-service"></a>Web サービスとして公開されたオーケストレーションから SOAP 例外をスローする方法
 Web サービスとして公開されたオーケストレーションから SOAP 例外を返すことができます。 SOAP ポートにエラー メッセージを追加し、応答の代わりにそのエラー メッセージを送信します。  

@@ -1,11 +1,11 @@
 ---
-title: "送信ポートの送信マップを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートの送信マップを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, outbound maps
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - send ports, configuring
 - managing [send ports], outbound maps
 ms.assetid: 9f5f5504-5a7f-4b21-9a65-91dce9d35890
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248090"
 ---
 # <a name="how-to-configure-outbound-maps-for-a-send-port"></a>送信ポートの送信マップを構成する方法
 ここでは、BizTalk Server 管理コンソールを使って、送信ポートの送信マップを構成する方法について説明します。 マップを使用すると、オーケストレーションでメッセージを処理することなく、送信ポートによって送信されたメッセージに XSL 変換を適用できます。 出力マップの追加、マップの削除、既存のマップから別のマップへの変更を行うことができます。 送信ポートには複数のマップを追加できます。ただし、各マップには一意の送信元スキーマが必要となります。 マップに関する背景情報については、次を参照してください。[マップ](../core/maps.md)です。  

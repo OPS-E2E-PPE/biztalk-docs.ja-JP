@@ -1,14 +1,14 @@
 ---
-title: "ヒントを表示する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ヒントを表示する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5621bd0a-7028-43fc-b6e8-74a528129285
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257282"
 ---
 # <a name="how-to-view-infotip-and-tooltip"></a>ヒントを表示する方法
 カーソルをマップ項目の上に移動しポイントすると、その項目についての役に立つ情報が画面ヒントに表示されます。  

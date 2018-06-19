@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションを Web サービスにマップする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションを Web サービスにマップする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, Web services
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, naming conventions
 - Web services, naming conventions
 ms.assetid: e6a58978-c81c-49f3-9428-9bff60f1ded7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,11 +23,12 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255730"
 ---
 # <a name="how-to-map-orchestrations-to-web-services"></a>オーケストレーションを Web サービスにマップする方法
 オーケストレーションには、複数の受信ポートを設定できます。 BizTalk Web サービス公開ウィザードを使用して、Web サービスとして公開する受信ポートを選択します。 このウィザードでは、受信ポートごとに 1 つの Web サービス (.asmx ファイル) が作成されます。 また、すべての受信ポートに対して 1 つの Web サービスが作成されます (すべて同じ種類 (一方向または要求 - 応答) の受信ポートである場合)。 操作は関数呼び出しになります。 受信ポートでの各操作は Web メソッドになり、 要求操作は入力パラメータになります。 応答操作は戻り値の型になります。  
   
- 要求と応答の操作が同じ Web メッセージの種類の場合は、入力パラメーターは次のようになります。、 **ref**戻り値の型と**void**です。 ASP.NET Web クライアントは、同じ種類の入力および出力パラメータを組み合わせて、Web メソッドの署名を変更することができます。 ASP.NET Web クライアントはから BizTalk Web メソッドを変更するなど、 **myService (文字列部分) を文字列**に**void myService (ref 文字列部分)**です。  
+ 要求と応答の操作が同じ Web メッセージの種類の場合は、入力パラメーターは次のようになります。、 **ref**戻り値の型と**void**です。 ASP.NET Web クライアントは、同じ種類の入力および出力パラメータを組み合わせて、Web メソッドの署名を変更することができます。 ASP.NET Web クライアントはから BizTalk Web メソッドを変更するなど、 **myService (文字列部分) を文字列**に**void myService (ref 文字列部分)** です。  
   
  操作メッセージの種類によって Web メソッドの署名が定義されます。 また、各メッセージの種類の部分が Web メソッドのパラメータになります。  
   

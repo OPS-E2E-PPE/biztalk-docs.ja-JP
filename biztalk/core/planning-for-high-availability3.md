@@ -1,11 +1,11 @@
 ---
-title: "高 Availability3 の計画 |Microsoft ドキュメント"
-ms.custom: 
+title: 高 Availability3 の計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, high availability
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - planning, high availability
 - high availability, architecture
 ms.assetid: 16feada0-b0b1-4e58-9477-fbd1aae2f51e
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264346"
 ---
 # <a name="planning-for-high-availability"></a>高可用性の計画
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、重要なビジネス データを処理する目的で多くの企業によって使用されています。 こうした企業にとって、ハードウェア障害に起因する長時間にわたる中断は、生産性や収益性の低下を意味します。 ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ソリューションの稼働時間を最大化するための [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境の可用性向上に関するガイダンスを提供します。  

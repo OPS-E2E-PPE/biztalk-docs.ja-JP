@@ -1,11 +1,11 @@
 ---
-title: "BizTalk WCF サービス公開ウィザードを使用して、WCF 受信場所用にサービス メタデータを公開する方法は、オーケストレーション ポートにバインドされている |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk WCF サービス公開ウィザードを使用して、WCF 受信場所用にサービス メタデータを公開する方法は、オーケストレーション ポートにバインドされている |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF Service Publishing Wizard, publishing metadata
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF services, metadata
 - orchestrations, WCF services
 ms.assetid: 04ccce9f-8d18-433a-8299-d06fa155db06
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975048"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-service-metadata-for-a-wcf-receive-location-bound-to-an-orchestration-port"></a>BizTalk WCF サービス公開ウィザードを使用してオーケストレーション ポートにバインドされた WCF 受信場所にサービス メタデータを公開する方法
 WCF サービスを作成して、オーケストレーション ポートにバインドされた既存の WCF 受信場所にサービス メタデータを公開するには、BizTalk WCF サービス公開ウィザードを使用します。  
@@ -38,17 +39,17 @@ WCF サービスを作成して、オーケストレーション ポートにバ
   
 2.  **BizTalk WCF サービス公開ウィザードへようこそ** ページで、をクリックして**次**です。  
   
-3.  **WCF サービスの種類**] ページで、[、**メタデータのみのエンドポイント (MEX)**に wcf サービス メタデータを提供する WCF サービスを発行するオプションを受信場所は、次の手順で選択します。  
+3.  **WCF サービスの種類**] ページで、[、**メタデータのみのエンドポイント (MEX)** に wcf サービス メタデータを提供する WCF サービスを発行するオプションを受信場所は、次の手順で選択します。  
   
      ![WCF サービスの種類ページ](../core/media/794a85b5-6454-4cce-8c15-382b5583b0f2.gif "794a85b5-6454-4cce-8c15-382b5583b0f2")  
   
 4.  **WCF サービスの種類** ページの 、**受信場所のメタデータを公開**ドロップダウン リストでは、wcf 受信場所で、サービス メタデータを公開し、をクリックする**次へ**.  
   
-5.  **WCF サービスの作成**] ページで、[ **BizTalk オーケストレーションの WCF サービスとして発行**、クリックして**[次へ]**です。  
+5.  **WCF サービスの作成**] ページで、[ **BizTalk オーケストレーションの WCF サービスとして発行**、クリックして **[次へ]** です。  
   
      ![WCF サービス ページを作成する](../core/media/86cb66b5-6842-4330-8942-20afa68ec5fa.gif "86cb66b5-6842-4330-8942-20afa68ec5fa")  
   
-6.  **BizTalk アセンブリ**] ページの [、 **BizTalk アセンブリ ファイル (\*.dll)**テキスト ボックスで、BizTalk アセンブリ ファイルの名前を入力またはクリックして**参照**を参照するにはクリックして、サービス メタデータを公開するオーケストレーションを含むアセンブリ**次**です。  
+6.  **BizTalk アセンブリ**] ページの [、 **BizTalk アセンブリ ファイル (\*.dll)** テキスト ボックスで、BizTalk アセンブリ ファイルの名前を入力またはクリックして**参照**を参照するにはクリックして、サービス メタデータを公開するオーケストレーションを含むアセンブリ**次**です。  
   
     > [!NOTE]
     >  BizTalk アセンブリ ファイルを選択する前にすべての依存アセンブリを BizTalk アセンブリと同じフォルダーにコピーまたはグローバル アセンブリ キャッシュ (GAC) に依存アセンブリをインストールします。  
@@ -61,7 +62,7 @@ WCF サービスを作成して、オーケストレーション ポートにバ
   
      ![BizTalk アセンブリ ページ](../core/media/d34a027e-ea82-4048-8b15-d97df795b0d4.gif "d34a027e-ea82-4048-8b15-d97df795b0d4")  
   
-7.  **オーケストレーションとポート** ページで、プラス記号 (+) をクリックして、各アセンブリおよびオーケストレーションのツリー ノードを展開します。 メタデータを公開するオーケストレーションおよびポートのツリー ノードのチェック ボックスをオンにします。 ごとに 1 つの WCF サービスではなく選択した受信ポートの受信ポートを選択、すべての 1 つの WCF サービス (.svc ファイル) を作成する場合、**選択されているすべてのポートを 1 つの WCF サービスに結合**オプションをクリックして**[次へ]**です。  
+7.  **オーケストレーションとポート** ページで、プラス記号 (+) をクリックして、各アセンブリおよびオーケストレーションのツリー ノードを展開します。 メタデータを公開するオーケストレーションおよびポートのツリー ノードのチェック ボックスをオンにします。 ごとに 1 つの WCF サービスではなく選択した受信ポートの受信ポートを選択、すべての 1 つの WCF サービス (.svc ファイル) を作成する場合、**選択されているすべてのポートを 1 つの WCF サービスに結合**オプションをクリックして **[次へ]** です。  
   
     > [!NOTE]
     >  選択したすべてのポートを 1 つの WCF サービスに統合すると、選択したすべてのポートの種類が同じになり、ポート内の操作名も同じになります。  

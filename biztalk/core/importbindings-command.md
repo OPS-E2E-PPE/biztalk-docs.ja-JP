@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22258002"
 ---
 # <a name="importbindings-command"></a>ImportBindings コマンド
 XML ベースのバインド ファイルから、BizTalk アプリケーションまたはグループにバインドをインポートします。 バインド可能性がありますがからエクスポートされたアセンブリ、アプリケーション、またはグループ、」の説明に従って[バインドのエクスポート](../core/exporting-bindings6.md)です。 バインドがどこからエクスポートされたかによって、ApplicationName パラメーターと GroupLevel パラメーターの作用が異なります。 詳細については、後の「解説」を参照してください。  

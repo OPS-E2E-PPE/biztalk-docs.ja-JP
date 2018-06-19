@@ -1,11 +1,11 @@
 ---
-title: "送信ポートまたは送信ポート グループを開始する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートまたは送信ポート グループを開始する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - starting, send port groups
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - send port groups, starting
 - send ports, starting
 ms.assetid: f17c0b7c-cad7-4c5e-a08c-3ebf838faa54
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255602"
 ---
 # <a name="how-to-start-a-send-port-or-send-port-group"></a>送信ポートまたは送信ポート グループを開始する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートまたは送信ポート グループを開始する方法について説明します。 メッセージを処理できるようにするには、送信ポートまたは送信ポート グループを開始する必要があります。 参加解除した送信ポート グループまたは送信ポートを開始した場合、BizTalk は、送信ポートまたは送信ポート グループを参加させてから開始します。 送信ポート グループを開始するには、グループ内の 1 つ以上の送信ポートが参加済みの状態になっている必要があります。 送信ポート グループを開始または停止しても、そのグループに属する各送信ポートの状態は変わりません。  

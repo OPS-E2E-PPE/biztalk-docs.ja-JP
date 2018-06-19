@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a4dde72-6555-4bf6-b90e-676aa65312ff
-caps.latest.revision: ''
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973464"
 ---
 # <a name="migrating-a-biztalk-server-project"></a>BizTalk Server プロジェクトを移行します。
 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 用に開発されたプロジェクト[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用して新しい環境に移行できる[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]変換します。 サポートされている移行のバージョンの一覧は、次を参照してください。 [サポートされるアップグレード パスと環境向けインストール ガイド](http://social.technet.microsoft.com/wiki/contents/articles/28554.biztalk-server-supported-upgrade-paths-and-installation-guides.aspx)します。  

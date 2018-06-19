@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254338"
 ---
 # <a name="how-to-open-a-pipeline"></a>パイプラインを開く方法
 パイプライン ファイルを開くと、パイプライン デザイナーが表示され、定義されたパイプラインとそのステージがデザイン領域に表示されます。 また、パイプライン デザイナー ツールボックスおよびプロパティ ウィンドウが表示されます (まだ表示されていない場合)。  

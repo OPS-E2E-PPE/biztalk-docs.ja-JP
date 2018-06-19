@@ -1,11 +1,11 @@
 ---
-title: "MQSCorrelationSetOrchestrationWithSolicitResponse (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: MQSCorrelationSetOrchestrationWithSolicitResponse (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, MQSeries adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - messages, examples
 - MQSeries adapters, examples
 ms.assetid: 5127d743-bb79-4e97-a2f3-446892e1bfa0
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975809"
 ---
 # <a name="mqscorrelationsetorchestrationwithsolicitresponse-biztalk-server-sample"></a>MQSCorrelationSetOrchestrationWithSolicitResponse (BizTalk Server サンプル)
 MQSCorrelationSetOrchestrationWithSolicitResponse サンプルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ではなく、MQSeries Server によって作成された関連付け識別子を使用する方法を示します。  
@@ -35,7 +36,7 @@ MQSCorrelationSetOrchestrationWithSolicitResponse サンプルでは、[!INCLUDE
 >  この方法を使用するオーケストレーションでは、MQSeries Server からのメッセージを関連付け識別子より前に受信すると、問題が発生する場合があります。 オーケストレーションをデザインするときは、MQSeries Server が関連付け識別子を返すことができるよう、処理時間を十分にとるようにしてください。 この例では、このような競合状態が発生する可能性については考慮していません。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestrationWithSolicitResponse  
+ *\<パスのサンプル\>* \AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestrationWithSolicitResponse  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -71,7 +72,7 @@ MQSCorrelationSetOrchestrationWithSolicitResponse サンプルでは、[!INCLUDE
   
 1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**IBM WebSphere MQ**、順にクリック**WebSphere MQ エクスプ ローラー**です。  
   
-2.  ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。 既定のキュー マネージャーの名前は通常**qm _***< machine_name >*場所*machine_name*お使いのコンピューターの名前を指定します。  
+2.  ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。 既定のキュー マネージャーの名前は通常**qm _***< machine_name >* 場所*machine_name*お使いのコンピューターの名前を指定します。  
   
 3.  右クリック**キュー**、 をポイント**新規**、クリックして**ローカル キュー**です。  
   
@@ -116,7 +117,7 @@ MQSCorrelationSetOrchestrationWithSolicitResponse サンプルでは、[!INCLUDE
   
 15. **キュー**ボックスで「replytoq」をクリック**エクスポート**です。  
   
-16. **エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック**[ok]**または**完了**すべてのダイアログ ボックスを終了します。  
+16. **エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック **[ok]** または**完了**すべてのダイアログ ボックスを終了します。  
   
 ## <a name="creating-the-send-port-and-mqseries-queue"></a>送信ポートと MQSeries キューの作成  
   
@@ -142,7 +143,7 @@ MQSCorrelationSetOrchestrationWithSolicitResponse サンプルでは、[!INCLUDE
   
 10. **キュー**ボックスで「solicitresponseq」をクリック**エクスポート**です。  
   
-11. [エクスポート] ダイアログ ボックスで、**キューの作成**をクリックし、 **[ok]**または**実行**すべてのダイアログ ボックスを終了します。  
+11. [エクスポート] ダイアログ ボックスで、**キューの作成**をクリックし、 **[ok]** または**実行**すべてのダイアログ ボックスを終了します。  
   
 ## <a name="enabling-the-receive-location-and-starting-the-send-port"></a>受信場所の有効化と送信ポートの開始  
  この手順では、オーケストレーション内でファイルを受信するために必要なフォルダーを作成し、関連付けられたメッセージと応答メッセージを出力フォルダーに送信します。  
@@ -169,7 +170,7 @@ MQSCorrelationSetOrchestrationWithSolicitResponse サンプルでは、[!INCLUDE
 ||  
 |-|  
 |アプリケーションが使用するオーケストレーションを変更するには|  
-|Microsoft で[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション ファイルをダブルクリックして**[mqscorrelationsolicitresponse.sln]**ソリューションを開きます。<br /><br /> のソリューション エクスプ ローラー ペインで、元オーケストレーションをダブルクリックします**mqscorrelationsolicitresponse.odx**オーケストレーションを表示します。<br /><br /> -メッセージの割り当て図形をダブルクリックして**MessageAssignment_1** BizTalk 式エディターを起動します。<br /><br /> -次の式の該当する MQSeries キュー マネージャー名を入力してください。<br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_ReplyToQMgr) = "QM_<machine_name>";`<br /><br /> -最初の 100 バイトだけではなく、元のメッセージの内容全体を格納する BizTalk から送信される応答メッセージの希望する場合は、BizTalk 式エディターで次の行を変更します。<br /><br /> -元の行。<br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_Report) = 768;`<br /><br /> 変更後:<br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_Report) = 1792;`<br /><br /> BizTalk 式エディターには、をクリックして**OK**を変更した式を保存します。<br /><br /> - [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]**ファイル**、し、**すべて保存**です。|  
+|Microsoft で[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション ファイルをダブルクリックして **[mqscorrelationsolicitresponse.sln]** ソリューションを開きます。<br /><br /> のソリューション エクスプ ローラー ペインで、元オーケストレーションをダブルクリックします**mqscorrelationsolicitresponse.odx**オーケストレーションを表示します。<br /><br /> -メッセージの割り当て図形をダブルクリックして**MessageAssignment_1** BizTalk 式エディターを起動します。<br /><br /> -次の式の該当する MQSeries キュー マネージャー名を入力してください。<br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_ReplyToQMgr) = "QM_<machine_name>";`<br /><br /> -最初の 100 バイトだけではなく、元のメッセージの内容全体を格納する BizTalk から送信される応答メッセージの希望する場合は、BizTalk 式エディターで次の行を変更します。<br /><br /> -元の行。<br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_Report) = 768;`<br /><br /> 変更後:<br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_Report) = 1792;`<br /><br /> BizTalk 式エディターには、をクリックして**OK**を変更した式を保存します。<br /><br /> - [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]**ファイル**、し、**すべて保存**です。|  
   
 ## <a name="building-and-deploying-the-sample"></a>ビルドと展開のサンプル  
  この手順では、このアプリケーションで使用するオーケストレーションを含むソリューションをビルドして展開します。  
@@ -198,7 +199,7 @@ MQSCorrelationSetOrchestrationWithSolicitResponse サンプルでは、[!INCLUDE
   
 1.  BizTalk Server 管理コンソールで、展開、**オーケストレーション**フォルダーです。  
   
-2.  詳細ウィンドウで右クリックし、 **[mqscorrelationsolicitresponse]**オーケストレーションとクリック**バインド**です。  
+2.  詳細ウィンドウで右クリックし、 **[mqscorrelationsolicitresponse]** オーケストレーションとクリック**バインド**です。  
   
 3.  オーケストレーション ポートを、以下の送信ポートおよび受信場所にバインドします。  
   

@@ -1,14 +1,14 @@
 ---
-title: "アダプターの障害を処理する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターの障害を処理する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bdceb364-38d6-4aab-a176-bf751da1be25
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255930"
 ---
 # <a name="how-to-handle-adapter-failures"></a>アダプターのエラーを処理する方法
 アダプターでは通常、処理できないメッセージを中断します。 たとえば、受信アダプターで送信エラーが発生した場合は通常、メッセージを中断します。ただし、この判断はアダプターの目的によって変わることがあります。 エラーを処理するときには、セキュリティの問題も考慮する必要があります。 たとえば、失敗したメッセージをすべてアダプターで自動的に中断すると、そのアダプターはサービス拒否攻撃に対して脆弱になり、BizTalk Server の保留キューがいっぱいになる可能性があります。  HTTP アダプターなど一部のアダプターでは、要求が拒否されたことを示すエラー コードをクライアントに返すことができます。 こうした種類のアダプターでは、多くの場合、メッセージを中断するよりもエラー コードを返す方が有効です。 送信アダプターでは通常、プライマリ トランスポートとセカンダリ トランスポートの両方で、再試行回数が設定値を超えた後ではじめてメッセージを中断します。  
@@ -31,9 +32,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="use-seterrorinfo-to-report-failure-to-biztalk-server"></a>SetErrorInfo を使用して BizTalk Server にエラーを報告する  
  メッセージを中断する場合は、その前のメッセージ コンテキストから BizTalk Server にエラー情報を送信する必要があります。 BizTalk Server は、エラー レポート機能を使用して、 **SetErrorInfo**両方のメソッド、 **IBaseMessage**と**ITransportProxy**インターフェイスです。 エラーを報告するには次の方法を使用できます。  
   
--   メッセージの処理中に、障害が発生したときに設定を使用して例外**SetErrorInfo (Exception e)**メッセージ (**IBaseMessage**) が中断されます。 こうすると、エンジンではメッセージと共にエラーが保持され、後の診断に使用できます。また、イベント ログにエラーが記録され、管理者はエラーを認識できます。  
+-   メッセージの処理中に、障害が発生したときに設定を使用して例外**SetErrorInfo (Exception e)** メッセージ (**IBaseMessage**) が中断されます。 こうすると、エンジンではメッセージと共にエラーが保持され、後の診断に使用できます。また、イベント ログにエラーが記録され、管理者はエラーを認識できます。  
   
--   中ではないメッセージの処理) 初期化または内部ブックキーピング中にエラーが発生した場合を呼び出す必要があります**SetErrorInfo (Exception e)**上、 **ITransportProxy**に渡されたポインター初期化中にします。 アダプターが BaseAdapter 実装を基にしている場合は、このポインターに常にアクセスできるようにしておく必要があります。 そうでない場合は、ポインターをキャッシュしておくようにします。  
+-   中ではないメッセージの処理) 初期化または内部ブックキーピング中にエラーが発生した場合を呼び出す必要があります**SetErrorInfo (Exception e)** 上、 **ITransportProxy**に渡されたポインター初期化中にします。 アダプターが BaseAdapter 実装を基にしている場合は、このポインターに常にアクセスできるようにしておく必要があります。 そうでない場合は、ポインターをキャッシュしておくようにします。  
   
  どちらの方法でも、エラーが報告されると、イベント ログにエラー メッセージが書き込まれます。 エラーとそのメッセージを関連付けることができる場合は、必ず関連付けを行ってください。  
   
@@ -50,7 +51,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc{Host Guid}\Messaging
  分離アダプターの場合はプロセスの所有者が BizTalk Server ではないため、BizTalk Server データベースの 1 つがオフラインになると受信場所は無効になります。 これらの受信場所は、データベースがオンラインに戻った後で再度有効になります。  
   
 ## <a name="write-to-the-event-log"></a>イベント ログへの書き込み  
- 使用して、アダプターがイベント ログ エントリを書き込むことができます、 **IBTTransportProxy**例外を渡すインターフェイス。 ネイティブ コードで開発されたアダプターを渡す必要があります、 **IErrorInfo**インターフェイス、 **IBTTransportProxy.SetErrorInfo (例外** `e` **)**です。  
+ 使用して、アダプターがイベント ログ エントリを書き込むことができます、 **IBTTransportProxy**例外を渡すインターフェイス。 ネイティブ コードで開発されたアダプターを渡す必要があります、 **IErrorInfo**インターフェイス、 **IBTTransportProxy.SetErrorInfo (例外** `e` **)** です。  
   
  送信エラー後にアダプターでメッセージの送信を再試行したり、アダプターのバックアップ トランスポートにメッセージを移動したり、メッセージを中断するときなどは、メッセージング エンジンがアダプターに代わってイベント ログへの書き込みを行います。 このような場合、アダプターで必要になる操作は、API の呼び出し前にメッセージに例外を設定することだけです。 このコード例の一部を次に示します。  
   

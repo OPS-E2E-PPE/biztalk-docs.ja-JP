@@ -1,17 +1,17 @@
 ---
-title: "MQSeries アダプターの展開オプション |Microsoft ドキュメント"
-ms.custom: 
+title: MQSeries アダプターの展開オプション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MQSeries adapters, deploying
 - deploying, MQSeries adapters
 ms.assetid: d9380aff-40ea-419b-88e2-1e2ec3f023cb
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263018"
 ---
 # <a name="mqseries-adapter-deployment-options"></a>MQSeries アダプターの展開オプション
 MQSeries アダプターを使用すると、ハードウェアを非常に柔軟に構成できます。 その主な使用法には、少なくとも次の 3 つのパターンがあります。  

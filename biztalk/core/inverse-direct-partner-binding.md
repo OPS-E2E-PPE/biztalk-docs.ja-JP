@@ -1,17 +1,17 @@
 ---
-title: "逆のパートナーの直接バインド |Microsoft ドキュメント"
-ms.custom: 
+title: 逆のパートナーの直接バインド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings, partners
 - process management solution tutorial, partner binding
 ms.assetid: 4cf8717a-2098-46f4-8f58-9d05fb562e2a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262394"
 ---
 # <a name="inverse-direct-partner-binding"></a>逆のパートナーの直接バインド
 ビジネス プロセス管理ソリューションは、アプリケーションを停止せずに注文処理ステージを変更できるように設計されています。 処理ステージを分離するために (**CableOrder1**、 **CableOrder2**)、プロセス マネージャから (**OrderManager**)、ソリューションのさまざまな手法を使用します。これらのオーケストレーション ポートをバインドします。  

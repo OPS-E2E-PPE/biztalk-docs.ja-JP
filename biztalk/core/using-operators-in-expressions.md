@@ -1,18 +1,18 @@
 ---
-title: "式における演算子の使用 |Microsoft ドキュメント"
-ms.custom: 
+title: 式における演算子の使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, operators
 - XLANG/s, operators
 - orchestrations, XLANG/s
 ms.assetid: f0948ce2-c508-48aa-af79-d207f577b22f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974304"
 ---
 # <a name="using-operators-in-expressions"></a>式における演算子の使用
 オーケストレーションの式では次の XLANG/s 演算子を使用できます。 C# の対応する演算子の機能にほぼ準拠しています。  

@@ -1,18 +1,18 @@
 ---
-title: "選択アイテムの種類 ダイアログ ボックスを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 選択アイテムの種類 ダイアログ ボックスを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Select Artifact Type dialog box
 - artifacts, Select Artifact Type dialog box
 - Orchestration Designer, items
 ms.assetid: f0f767f1-4130-4ff0-a898-a089343ee71f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971632"
 ---
 # <a name="how-to-use-the-select-artifact-type-dialog-box"></a>選択アイテムの種類 ダイアログ ボックスを使用する方法
 *項目*オーケストレーション デザイナーでオーケストレーションの要素を構成するために使用します。 項目の例としては、スキーマ、マップ、パイプライン、ポートの種類、マルチパート メッセージの種類などが挙げられます。 ポート図形、変換図形、メッセージなど、オーケストレーションとその構成部分を開発する場合、現在のオーケストレーションではなく、BizTalk Server アセンブリにコンパイルされた現在のプロジェクトまたは他のプロジェクトに含まれる項目を参照する必要が生じる場合があります。 使用する、**成果物の種類の選択** ダイアログ ボックスを探して、オーケストレーション内の要素を構成するときに項目を指定します。  

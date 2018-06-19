@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262010"
 ---
 # <a name="lesson-1-define-schemas-and-a-map"></a>レッスン 1: スキーマおよびマップの定義
 このレッスンでは、エンタープライズ アプリケーション統合 (EAI) ソリューションに、最初のプロジェクトを作成してビルドします。 このプロジェクトには、2 つのメッセージ スキーマと 1 つのマップが含まれます。  

@@ -11,7 +11,7 @@ helpviewer_keywords:
 - maps [SSO], creating
 - managing [SSO maps], creating user maps
 ms.assetid: c2e9f0db-920b-4d89-8e1e-5dc92805fd23
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25970944"
 ---
 # <a name="how-to-create-user-mappings"></a>ユーザー マッピングを作成する方法
 ここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のユーザー マッピングを作成できます。 XML ファイルの例を次に示します。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型 * * ssomanage – createmappings *\<マッピング ファイル名\>* * *、どこで*\<マッピング ファイル名\>*を作成するユーザー マッピングが格納されているファイルの名前を指定します。  
+3.  型 * * ssomanage – createmappings *\<マッピング ファイル名\>* * *、どこで*\<マッピング ファイル名\>* を作成するユーザー マッピングが格納されているファイルの名前を指定します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型 * * ssoclient – setcredentials *\<アプリケーション名\>* * *、どこで*\<アプリケーション名\>*ユーザーがマッピングを作成する関連アプリケーションの名前を指定します。  
+3.  型 * * ssoclient – setcredentials *\<アプリケーション名\>* * *、どこで*\<アプリケーション名\>* ユーザーがマッピングを作成する関連アプリケーションの名前を指定します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

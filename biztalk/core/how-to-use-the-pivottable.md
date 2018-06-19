@@ -1,17 +1,17 @@
 ---
-title: "ピボット テーブルを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ピボット テーブルを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM views, pivot tables
 - BAM views, previewing data
 ms.assetid: af34494b-f577-4d36-9a9e-5d6e9c5fafbe
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256658"
 ---
 # <a name="how-to-use-the-pivottable"></a>ピボットテーブルの使用方法
 ディメンションやビューを含む BAM ビューを定義した場合、そのビューに関連する 1 つ以上のピボットテーブルを更新する必要があります。  

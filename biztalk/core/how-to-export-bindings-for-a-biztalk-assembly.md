@@ -1,18 +1,18 @@
 ---
-title: "BizTalk アセンブリのバインドをエクスポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アセンブリのバインドをエクスポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assemblies, bindings
 - assemblies, exporting
 - exporting, assemblies
 ms.assetid: 7e37348d-5fa5-43cc-b3c0-2d8cb6a8f394
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254858"
 ---
 # <a name="how-to-export-bindings-for-a-biztalk-assembly"></a>BizTalk アセンブリのバインドをエクスポートする方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、.xml ファイルに BizTalk アセンブリのバインドをエクスポートする方法について説明します。 エクスポートしたバインドは、BizTalk アプリケーションにインポートできます。この際、既存のバインドにインポートするバインドと同じ名前が含まれている場合は、既存のバインドが上書きされます。 アセンブリを更新する前にバインドをエクスポートしておくと、更新後にインポートすることでバインドを再適用できます。 アプリケーションおよびアセンブリの更新に関する詳細については、次を参照してください。 [BizTalk アプリケーションの更新](../core/updating-biztalk-applications.md)です。 バインド ファイルの使用の詳細については、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)です。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
      例: **C:\Bindings\MyAssemblyBindings_Staging1.xml**  
   
-5.  バインドのエクスポート] ページで、をクリックして**、選択したアセンブリのバインドをエクスポート**、し、[**アセンブリ**アセンブリをクリックします。  
+5.  バインドのエクスポート] ページで、をクリックして **、選択したアセンブリのバインドをエクスポート**、し、[**アセンブリ**アセンブリをクリックします。  
   
 6.  すべてのグループのパーティ情報をエクスポートする場合は、選択**グローバル パーティ情報をエクスポート**です。  
   

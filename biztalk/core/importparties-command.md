@@ -1,14 +1,14 @@
 ---
-title: "ImportParties コマンド |Microsoft ドキュメント"
-ms.custom: 
+title: ImportParties コマンド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 87d43e2c-401c-4450-ad9b-2528086b99e4
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257010"
 ---
 # <a name="importparties-command"></a>ImportParties コマンド
 企業間取引パーティとアグリーメントをアプリケーションのアイテムのいずれかをインポートすることがなく、構成データベース内のソース XML バインド ファイルからインポートします。 詳細については、次を参照してください。**解説**」を参照します。  

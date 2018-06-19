@@ -1,11 +1,11 @@
 ---
-title: "結果一覧のサイズを制御する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 結果一覧のサイズを制御する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - results list [Orchestration Debugger], deleting columns
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - results list [Orchestration Designer]
 - results list [Orchestration Debugger], adding columns
 ms.assetid: 4d41003f-5ea9-4599-8ec0-737c342ffdbd
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249738"
 ---
 # <a name="how-to-control-the-size-of-the-results-list"></a>結果一覧のサイズを制御する方法
 **グループ ハブ**のページ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、クエリの結果ペインには表示するためにスクロールする必要のある情報の非常に多くの列が含まれています。 ウィンドウの列を追加または削除して、必要な情報だけを表示できます。 列を追加または削除をクリックして、クエリ結果ペインの任意の部分を右クリックして**列の追加/削除**コンテキスト メニューの します。  

@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アセンブリの依存関係を表示する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アセンブリの依存関係を表示する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - viewing, dependencies
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - viewing, assemblies
 - managing [assemblies], viewing
 ms.assetid: 872abc99-8248-4397-9fcb-24a0ba6f4757
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256434"
 ---
 # <a name="how-to-view-the-dependencies-for-a-biztalk-assembly"></a>BizTalk アセンブリの依存関係を表示する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、BizTalk アセンブリに依存関係を持つアイテムの一覧を表示する方法について説明します。 依存関係とアプリケーションの展開への影響に関する背景情報については、次を参照してください。[の依存関係とアプリケーションの配置](../core/dependencies-and-application-deployment.md)です。  

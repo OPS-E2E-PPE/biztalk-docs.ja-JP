@@ -1,14 +1,14 @@
 ---
-title: "分離アダプターをインスタンス化 |Microsoft ドキュメント"
-ms.custom: 
+title: 分離アダプターをインスタンス化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9b8359a3-b098-4bb6-87b4-d3432d2671b1
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257490"
 ---
 # <a name="instantiating-isolated-adapters"></a>分離アダプターのインスタンス化
 分離アダプターは BizTalk Server によってインスタンス化されません。 代わりに、別のプロセスでインスタンス化され、ホストされます。 トランスポート プロキシを作成するアダプターの責任**QueryInterface**の**IBTTransportProxy**、およびを呼び出す**IBTTransportProxy**.**RegisterIsolatedReceiver**メッセージング エンジンに登録します。  
@@ -56,7 +57,7 @@ private IBTTransportProxy transportProxy;
 }  
 ```  
   
- **実装のヒン ト:**アダプターが進行中の作業の数を記録することをお勧めします。 アダプターはブロック**Terminate**メッセージの数が 0 に到達するまでです。 受信側では、BizTalk Server に対して公開されていない未処理の要求がこの作業に含まれます。 後に受信アダプターに応答メッセージは配信されません**Terminate**が呼び出されています。  
+ **実装のヒン ト:** アダプターが進行中の作業の数を記録することをお勧めします。 アダプターはブロック**Terminate**メッセージの数が 0 に到達するまでです。 受信側では、BizTalk Server に対して公開されていない未処理の要求がこの作業に含まれます。 後に受信アダプターに応答メッセージは配信されません**Terminate**が呼び出されています。  
   
  送信アダプターでは、処理中のメッセージが適切に処理される必要があります。 つまり、正常に配信されたメッセージをアダプターのプライベート アプリケーション メッセージ キューから削除して、メッセージが 2 回以上送信されるのを防ぐ必要があります。  
   

@@ -1,14 +1,14 @@
 ---
-title: "インスタンス化して、送信アダプターの初期化 |Microsoft ドキュメント"
-ms.custom: 
+title: インスタンス化して、送信アダプターの初期化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f10e6507-3351-4173-95f5-48546ca5f5c4
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257666"
 ---
 # <a name="instantiating-and-initializing-a-send-adapter"></a>送信アダプターのインスタンス化と初期化
 既定では、送信アダプターは、最初のメッセージが配信されるまでインスタンス化されません。これは "レイジー作成" と呼ばれるプロセスです。 レイジー作成による既定のアプローチは、システム リソースの節約に役立ちます。 作成された送信アダプターはキャッシュされ、BizTalk Server サービスが停止されるまで有効になります。  

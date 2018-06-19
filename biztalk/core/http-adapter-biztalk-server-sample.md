@@ -1,17 +1,17 @@
 ---
-title: "HTTP アダプター (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: HTTP アダプター (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP adapters, examples
 - examples, HTTP adapters
 ms.assetid: f3bd8172-15c4-42fa-aa17-e4bed9d4aba4
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,12 +20,13 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974488"
 ---
 # <a name="http-adapter-biztalk-server-sample"></a>HTTP アダプター (BizTalk Server サンプル)
 HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で使用される要求 - 応答および送信請求 - 応答の通信パラダイムを実装する方法を示します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\AdaptersDevelopment\HttpAdapter\  
+ *\<パスのサンプル\>* \AdaptersDevelopment\HttpAdapter\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -94,7 +95,7 @@ HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](..
     > [!IMPORTANT]
     >  BizTalk を 64 ビット コンピューターにインストールする場合は、hkey_classes_root \clsid\ レジストリ エントリのすべてのインスタンスを hkey_classes_root \wow6432node\clsid\ に変更、 **HTTP.NET.reg**レジストリ ファイル。  
   
-3.  **レジストリ エディター**ダイアログ ボックスで、をクリックして**はい**サンプル アダプターをレジストリに追加し、をクリックする**[ok]**です。  
+3.  **レジストリ エディター**ダイアログ ボックスで、をクリックして**はい**サンプル アダプターをレジストリに追加し、をクリックする **[ok]** です。  
   
 4.  Windows エクスプ ローラーを閉じる、**ファイル** メニューのをクリックして**閉じる**です。  
   
@@ -116,7 +117,7 @@ HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](..
     |[アダプター]|選択**HTTP.NET**ドロップダウン リストからです。|  
     |Description|型**サンプル HTTP.NET アダプター**です。|  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 6.  これで、BizTalk 管理コンソールの右ウィンドウにあるアダプターの一覧にアダプターが表示されます。  
   
@@ -137,7 +138,7 @@ HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](..
  これで、アプリケーションで HTTP.NET アダプターを使用する準備が整いました。 アダプターは、の形式を構成するときに、**仮想ディレクトリ**の形式は、トランスポートのプロパティ:/httpreceive/httpreceive.aspx?optionalQueryString です。  
   
 ## <a name="comments"></a>コメント  
- 提供される BaseAdapter クラスを使用して HTTP.NET アダプターは*\<サンプル パス\>*\AdaptersDevelopment\BaseAdapter\v1.0.2\\です。 BaseAdapter プロジェクトで提供されるクラスは、アダプターの開発を迅速化するためのものです。 提供されるクラスの詳細については、BaseAdapter コードのコメントを参照してください。  
+ 提供される BaseAdapter クラスを使用して HTTP.NET アダプターは*\<サンプル パス\>* \AdaptersDevelopment\BaseAdapter\v1.0.2\\です。 BaseAdapter プロジェクトで提供されるクラスは、アダプターの開発を迅速化するためのものです。 提供されるクラスの詳細については、BaseAdapter コードのコメントを参照してください。  
   
 ## <a name="see-also"></a>参照  
  [アダプターの登録](../core/registering-an-adapter.md)   

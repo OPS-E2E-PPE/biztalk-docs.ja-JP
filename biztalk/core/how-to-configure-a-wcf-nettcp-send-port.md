@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a8fff07e-b08e-4f95-8ce2-27b508674a5c
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25974122"
 ---
 # <a name="how-to-configure-a-wcf-nettcp-send-port"></a>WCF-NetTcp 送信ポートを構成する方法
 WCF-NetTcp 送信ポートは、プログラムまたは BizTalk 管理コンソールを使用して構成できます。  

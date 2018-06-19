@@ -1,14 +1,14 @@
 ---
-title: "有効期限のタイムアウト時間が無効です |Microsoft ドキュメント"
-ms.custom: 
+title: 有効期限のタイムアウト時間が無効です |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2ddb6de-8c3b-4dee-a984-980e1caea95e
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262098"
 ---
 # <a name="invalid-time-to-live-timeout"></a>有効期限タイムアウトが無効です
 ## <a name="details"></a>詳細  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  トランスポート名を右クリックします。  
   
-5.  **[プロパティ]**をクリックします。  
+5.  **[プロパティ]** をクリックします。  
   
 6.  ポート**型**一覧で、 **Wcf-netmsmq**です。  
   

@@ -1,11 +1,11 @@
 ---
-title: "PartyResolution (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: PartyResolution (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, parties
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - routing, messages
 - messages, routing
 ms.assetid: 220e6bc5-6f04-4f37-b0d0-f11c2cc14422
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975424"
 ---
 # <a name="partyresolution-biztalk-server-sample"></a>PartyResolution (BizTalk Server サンプル)
 PartyResolution サンプルは、パーティの解決で BizTalk オーケストレーションを使用して、2 つのうちいずれかの受信側にメッセージをルーティングする方法を示すものです。  
@@ -125,7 +126,7 @@ PartyResolution サンプルは、パーティの解決で BizTalk オーケス�
 -   Shipper1Process.odx および Shipper2Process.odx は、SupplierProcess.odx から出荷指令と出荷通知を受信し、SupplierProcess.odx に応答を返すようビルドされています。 両方の出荷業者側のオーケストレーションで、昇格させたプロパティ PONo に基づく種類の関連付けが使用されます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\Orchestrations\PartyResolution\  
+ *\<パスのサンプル\>* \Orchestrations\PartyResolution\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -222,9 +223,9 @@ btstask ImportBindings -ApplicationName:PartyResolutionSample -Source:%SupplierB
   
     2.  をクリックして**ホスト インスタンス**既定のインプロセス ホスト インスタンスに対して表示されるログオン アカウントを見つけるとします。 既定のインストールでは、既定のインプロセス ホストの名前は BizTalkServerApplication です。  
   
-    3.  **[スタート]**ボタンをクリックし、 **[ファイル名を指定して実行]**をクリックします。 **実行**ボックスに、入力**mmc.exe**、順にクリック**OK**です。 ホスト インスタンス ログオン アカウントの正しいパスワードを入力し、そのアカウントで Microsoft 管理コンソール (MMC) を開きます。  
+    3.  **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。 **実行**ボックスに、入力**mmc.exe**、順にクリック**OK**です。 ホスト インスタンス ログオン アカウントの正しいパスワードを入力し、そのアカウントで Microsoft 管理コンソール (MMC) を開きます。  
   
-    4.  **[ファイル]** メニューの **[スナップインの追加と削除]**をクリックします。  
+    4.  **[ファイル]** メニューの **[スナップインの追加と削除]** をクリックします。  
   
     5.  **を追加または削除スナップイン**ダイアログ ボックスで、**証明書**、順にクリック**追加**です。  
   
@@ -236,19 +237,19 @@ btstask ImportBindings -ApplicationName:PartyResolutionSample -Source:%SupplierB
   
     9. **コンピューターの選択**ダイアログ ボックスで、**ローカル コンピューター**、クリックして**完了**です。  
   
-    10. **を追加または削除スナップイン**ダイアログ ボックスで、をクリックして**[ok]**です。  
+    10. **を追加または削除スナップイン**ダイアログ ボックスで、をクリックして **[ok]** です。  
   
     11. 展開、**証明書 - 現在のユーザー**ノードを展開し、**個人**です。 右クリック**証明書**をクリックして**すべてのタスク**、順にクリック**インポート**です。  
   
     12. ウィザードで秘密キーをインポートし、パスワードを指定します。  
   
-    13. 展開、**証明書 (ローカル コンピューター)**ノードを展開し、**ほかの人**です。 右クリック**証明書**をクリックして**すべてのタスク**、順にクリック**インポート**です。  
+    13. 展開、**証明書 (ローカル コンピューター)** ノードを展開し、**ほかの人**です。 右クリック**証明書**をクリックして**すべてのタスク**、順にクリック**インポート**です。  
   
     14. 公開キーをインポートします。  
   
 7.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、右クリックし、 **BizTalk グループ**ノードをクリックして**プロパティ**です。 **BizTalk グループ - グループのプロパティ**ダイアログ ボックスで、**証明書**です。  
   
-8.  **証明書**ダイアログ ボックスで、をクリックして**参照**をインポートした秘密キーを選択します。 ここで指定した証明書は、送信メッセージの署名に使用されます。 **[OK]**をクリックします。  
+8.  **証明書**ダイアログ ボックスで、をクリックして**参照**をインポートした秘密キーを選択します。 ここで指定した証明書は、送信メッセージの署名に使用されます。 **[OK]** をクリックします。  
   
 9. このサンプルの BuyerAgency パーティを更新するには、次の操作を行います。  
   
@@ -258,13 +259,13 @@ btstask ImportBindings -ApplicationName:PartyResolutionSample -Source:%SupplierB
   
     3.  下にある、**エイリアス**セクションで、ダイアログ ボックスの設定の修飾子と名前で新しいエイリアスを追加**WindowsUser**です。 値の形式でユーザー名を設定\<ドメイン \ ユーザー名 > (somedomain \someuser など)。  
   
-    4.  選択**証明書** をクリックし、**参照**をインポートした公開キーを選択します。 ここで指定した証明書は、受信メッセージの送信者 ID の検証に使用されます。 **[OK]**をクリックします。  
+    4.  選択**証明書** をクリックし、**参照**をインポートした公開キーを選択します。 ここで指定した証明書は、受信メッセージの送信者 ID の検証に使用されます。 **[OK]** をクリックします。  
   
 10. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**プラットフォームの設定**、し、**ホスト**です。  
   
 11. 右クリック**BizTalkServerApplication**  をクリックし、**プロパティ**です。 **BizTalkServerApplication - ホストのプロパティ**ダイアログ ボックスで、**証明書**です。  
   
-12. をクリックして**参照**をインポートした秘密キーを選択します。 ここで指定した証明書は、受信メッセージの解読に使用されます。 **[OK]**をクリックします。  
+12. をクリックして**参照**をインポートした秘密キーを選択します。 ここで指定した証明書は、受信メッセージの解読に使用されます。 **[OK]** をクリックします。  
   
 13. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**プラットフォームの設定**、し、**ホスト インスタンス**です。  
   
@@ -276,13 +277,13 @@ btstask ImportBindings -ApplicationName:PartyResolutionSample -Source:%SupplierB
   
 1.  次のフォルダーから FilePolling.exe を実行します。  
   
-     *\<サンプル パス >*\Orchestrations\PartyResolution\FilePolling\bin\Debug  
+     *\<サンプル パス >* \Orchestrations\PartyResolution\FilePolling\bin\Debug  
   
 2.  をクリックして**ポーリングの開始**です。  
   
 3.  用意されている PO インスタンス ファイル PurchaseOrder.xml を、次のフォルダーにコピーします。  
   
-     *\<サンプル パス >*\Orchestrations\PartyResolution\FileDrop\PurchaseOrder  
+     *\<サンプル パス >* \Orchestrations\PartyResolution\FileDrop\PurchaseOrder  
   
 4.  次の各時点でサンプルの進行状況を知らせるメッセージがメッセージ ボックスの形式で表示されるので、それを確認します。  
   

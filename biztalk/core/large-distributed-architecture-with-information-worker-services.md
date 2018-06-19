@@ -1,17 +1,17 @@
 ---
-title: "Large Distributed Architecture インフォメーション ワーカー サービスと共に |Microsoft ドキュメント"
-ms.custom: 
+title: Large Distributed Architecture インフォメーション ワーカー サービスと共に |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, examples
 - architecture, large distributions
 ms.assetid: 92f2d55c-3f51-42ca-99ef-60b23464691e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262194"
 ---
 # <a name="large-distributed-architecture-with-information-worker-services"></a>インフォメーション ワーカー サービスを使用した大規模な分散アーキテクチャ
 BizTalk Server の展開のシステム アーキテクチャの設計の詳細については、次を参照してください。[サンプル BizTalk Server アーキテクチャ](../core/sample-biztalk-server-architectures.md)です。  

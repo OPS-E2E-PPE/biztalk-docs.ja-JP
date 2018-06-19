@@ -1,11 +1,11 @@
 ---
-title: "テンプレート (アプリケーションの展開サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: テンプレート (アプリケーションの展開サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - deploying, scripts
 - examples, deploying
 ms.assetid: 7e77ff8e-b2bc-4d38-b5fd-329d6d54221f
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975016"
 ---
 # <a name="template-application-deployment-sample"></a>Template (アプリケーションの展開サンプル)
 このトピックでは、Template サンプルを使用してアプリケーションを展開する方法について説明します。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インストール フォルダーに格納されています  
   
- *\<パスのサンプル\>*\Application Deployment\Template  
+ *\<パスのサンプル\>* \Application Deployment\Template  
   
  前に説明したように、サンプルには以下の 2 つのファイルが含まれています。  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
      例:  
   
-     ログ ファイルの設定 ="*\<サンプル パス\>*\ApplicationDeployment\Templates\SampleLogOut.txt"  
+     ログ ファイルの設定 ="*\<サンプル パス\>* \ApplicationDeployment\Templates\SampleLogOut.txt"  
   
 ### <a name="to-create-a-new-application"></a>新しいアプリケーションの作成  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  BizTalk Server 管理コンソールを右クリックして**アプリケーション**、 をポイント**インポート**、クリックして**MSI ファイル**です。  
   
-2.  インポート ウィザードのページへようこそ で**インポートする MSI ファイル**、事前にエクスポートしてをクリックした .msi ファイルのパスを入力**次**です。 かどうか必要に応じてを参照できます、MSI ファイル をクリックして、 **(...)**ボタンをクリックします。  
+2.  インポート ウィザードのページへようこそ で**インポートする MSI ファイル**、事前にエクスポートしてをクリックした .msi ファイルのパスを入力**次**です。 かどうか必要に応じてを参照できます、MSI ファイル をクリックして、 **(...)** ボタンをクリックします。  
   
 3.  [アプリケーションの設定] ページで、**アプリケーション名**ドロップダウン一覧で、アプリケーションの名前を選択します。  
   

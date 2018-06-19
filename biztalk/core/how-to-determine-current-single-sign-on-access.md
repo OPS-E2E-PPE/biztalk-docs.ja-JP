@@ -1,14 +1,14 @@
 ---
-title: "現在のシングル サインオン アクセスを確認する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 現在のシングル サインオン アクセスを確認する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cab68dfc-27cd-4f7c-a0df-20c670306358
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249258"
 ---
 # <a name="how-to-determine-current-single-sign-on-access"></a>現在のシングル サインオン アクセスを確認する方法
 ユーザーのために実行する必要のある最初の作業の 1 つは、どの関連アプリケーションが現在のユーザーに対して設定済みであるかを判断することです。 この判断を行うには、ISSOMapper.GetApplications を呼び出します。  

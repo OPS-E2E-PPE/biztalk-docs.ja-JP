@@ -1,14 +1,14 @@
 ---
-title: "分離受信場所のアドレスを登録できませんでした |Microsoft ドキュメント"
-ms.custom: 
+title: 分離受信場所のアドレスを登録できませんでした |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 313b436a-d7c5-4b46-bfe3-bbad0d8efe42
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246026"
 ---
 # <a name="failed-to-register-isolated-receiver-for-address"></a>アドレスの分離受信場所を登録できませんでした
 ## <a name="details"></a>詳細  

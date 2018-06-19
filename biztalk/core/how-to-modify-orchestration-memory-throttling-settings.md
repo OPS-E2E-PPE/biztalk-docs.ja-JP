@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254674"
 ---
 # <a name="how-to-modify-orchestration-memory-throttling-settings"></a>オーケストレーション メモリの制限の設定を変更する方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のホスト インスタンス メモリ制限メカニズムは、制限の条件を継続的に監視し、制限の条件の重大度を評価し、評価された重大度に応じてホスト インスタンス メモリ制限を段階的に適用します。 このトピックでは、設定ダッシュボードを使用して、この操作を変更する手順について説明します。  

@@ -1,11 +1,11 @@
 ---
-title: "Extending Mapper (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: Extending Mapper (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Mapper, examples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - examples, BizTalk Mapper
 - examples, XML tools
 ms.assetid: 6010a13f-b715-4766-ad91-5aa9b98589e3
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970656"
 ---
 # <a name="extending-mapper-biztalk-server-sample"></a>Extending Mapper (BizTalk Server サンプル)
 Extending Mapper サンプルは、BizTalk マッパーの使用方法および拡張方法を示します。 このサンプルには、複数の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] マップ ファイル (.btm) が含まれており、それぞれが BizTalk マッパーの異なる特徴を示しています。  
@@ -31,7 +32,7 @@ Extending Mapper サンプルは、BizTalk マッパーの使用方法および�
  Extending Mapper サンプルは、コンテンツ ベースのルーティング (CBR) を使用し、オーケストレーションは使用しません。 サンプル送信ポートに対してフィルターを指定すると、サンプル送信ポートがサンプル受信ポートに直接接続されます。 送信ポートに対してマップが指定され、その送信ポートが処理済みのドキュメントに適用されます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\XmlTools\ExtendingMapper  
+ *\<パスのサンプル\>* \XmlTools\ExtendingMapper  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -63,7 +64,7 @@ Extending Mapper サンプルは、BizTalk マッパーの使用方法および�
   
 1.  コマンド ウィンドウでディレクトリ変更 (**cd**) 次のフォルダーに。  
   
-     *\<パスのサンプル\>*\XmlTools\ExtendingMapper  
+     *\<パスのサンプル\>* \XmlTools\ExtendingMapper  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   
@@ -103,9 +104,9 @@ Extending Mapper サンプルは、BizTalk マッパーの使用方法および�
   
     2.  公開キー トークン値をコピーします。  
   
-    3.  テキスト エディターで開き*\<サンプル パス\>*\XML Tools\ExtendingMapper\ExternalAssembly.xml です。  
+    3.  テキスト エディターで開き*\<サンプル パス\>* \XML Tools\ExtendingMapper\ExternalAssembly.xml です。  
   
-    4.  選択、 **AssemblyName="Microsoft.Samples.BizTalk.ExtendingMapper.MapperClassLibrary、バージョン 1.0.0.0、カルチャを = = neutral, PublicKeyToken = 68496d20c737d84b"**属性があり、置換、 **PublicKeyToken**でコピーした値に、公開キー トークンを持つ値 c をステップ インします。  
+    4.  選択、 **AssemblyName="Microsoft.Samples.BizTalk.ExtendingMapper.MapperClassLibrary、バージョン 1.0.0.0、カルチャを = = neutral, PublicKeyToken = 68496d20c737d84b"** 属性があり、置換、 **PublicKeyToken**でコピーした値に、公開キー トークンを持つ値 c をステップ インします。  
   
     5.  ExternalAssembly.xml を保存して閉じます。  
   
@@ -116,7 +117,7 @@ Extending Mapper サンプルは、BizTalk マッパーの使用方法および�
   
 1.  をクリックして**開始****すべてのプログラム**を選択**Microsoft BizTalk Server**、し、 **BizTalk Server 管理コンソール**です。  
   
-2.  BizTalk Server 管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]**をクリックして展開**アプリケーション**です。  
+2.  BizTalk Server 管理コンソールをクリックして展開**BizTalk Server 管理コンソール**をクリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]** をクリックして展開**アプリケーション**です。  
   
 3.  クリックして展開**ExtendingMapperApplication**、クリックして**送信ポート**です。  
   
@@ -141,9 +142,9 @@ Extending Mapper サンプルは、BizTalk マッパーの使用方法および�
   
 #### <a name="to-run-this-sample"></a>このサンプルを実行するには  
   
-1.  入力ファイル ExtendingMapper.xml を入力フォルダーにコピー *\<サンプル パス\>*\XmlTools\ExtendingMapper\In です。  
+1.  入力ファイル ExtendingMapper.xml を入力フォルダーにコピー *\<サンプル パス\>* \XmlTools\ExtendingMapper\In です。  
   
-2.  ファイルを変換およびにルーティングする方法に注意してください、 *\<サンプル パス\>*\XmlTools\ExtendingMapper\Out フォルダです。 実行される変換は、適用したマップに基づきます。  
+2.  ファイルを変換およびにルーティングする方法に注意してください、 *\<サンプル パス\>* \XmlTools\ExtendingMapper\Out フォルダです。 実行される変換は、適用したマップに基づきます。  
   
 ## <a name="see-also"></a>参照  
  [XML ツール (BizTalk Server Samples フォルダー)](../core/xml-tools-biztalk-server-samples-folder.md)

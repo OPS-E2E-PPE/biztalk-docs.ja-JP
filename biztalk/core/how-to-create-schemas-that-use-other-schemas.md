@@ -1,14 +1,14 @@
 ---
-title: "他のスキーマを使用するスキーマを作成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 他のスキーマを使用するスキーマを作成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ff0bcd9a-6c66-4c3b-bd41-64047a7c8392
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249418"
 ---
 # <a name="how-to-create-schemas-that-use-other-schemas"></a>他のスキーマを使用するスキーマを作成する方法
 XSD (XML Schema Definition) 言語には、あるスキーマを他のスキーマで使用するためのメカニズムが 3 つあります。 スキーマのインポート、スキーマのインクルード、および、スキーマの再定義です。 これらのメカニズムと違いの簡単な要約を参照してください。[スキーマを使用して他のスキーマを](../core/schemas-that-use-other-schemas.md)です。 詳細については、次を参照してください。 [Web 上の XSD リソース](../core/xsd-resources-on-the-web.md)XSD 入門および仕様へのリンク用です。  

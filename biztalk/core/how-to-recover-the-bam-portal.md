@@ -1,14 +1,14 @@
 ---
-title: "BAM ポータルを復旧する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルを復旧する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f2a5df99-6d03-4f1f-8540-1700d3a0b9db
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254602"
 ---
 # <a name="how-to-recover-the-bam-portal"></a>BAM ポータルを復旧する方法
 ビジネス アクティビティ監視 (BAM) を使用している場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の復旧処理の一環として、BAM ポータルを復旧する必要があります。 BAM を使用していない場合は、この手順を省略できます。  

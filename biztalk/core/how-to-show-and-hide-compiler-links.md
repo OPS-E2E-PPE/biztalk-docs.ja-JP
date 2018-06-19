@@ -1,14 +1,14 @@
 ---
-title: "コンパイラ リンクを非表示にしたりする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: コンパイラ リンクを非表示にしたりする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 66bfd9de-c4d2-46ee-854f-cf7c7cd07368
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255546"
 ---
 # <a name="how-to-show-and-hide-compiler-links"></a>コンパイラ リンクを表示する/非表示にする方法
 マップをコンパイルすると、BizTalk マッパーにより、マップで必要となるすべてのリンクを示す追加のリンク (コンパイラ リンク) が作成されます。 これらのリンクのいくつかは、作成したリンクによって暗黙的に指定されます。 マップをコンパイルまたはテストする際、追加されたコンパイラ リンクをメイン ウィンドウに表示するかどうかを、Visual Studio の出力ウィンドウの最終行で選択できます。 既定では、コンパイラ リンクは赤色の波線で表示されます。  

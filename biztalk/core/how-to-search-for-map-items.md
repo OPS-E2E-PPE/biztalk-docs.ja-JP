@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255538"
 ---
 # <a name="how-to-search-for-map-items"></a>マップ項目を検索する方法
 BizTalk マッパーを使用すると、送信元スキーマ、送信先スキーマ、およびグリッド画面の項目を検索できます。 このトピックでは、次の操作を実行する方法について説明します。  
