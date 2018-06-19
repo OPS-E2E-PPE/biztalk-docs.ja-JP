@@ -1,11 +1,11 @@
 ---
-title: "送信者の ASPX ページをセキュリティで保護する |Microsoft ドキュメント"
-ms.custom: 
+title: 送信者の ASPX ページをセキュリティで保護する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ASPX pages, protocol rules
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - ASPX pages, security
 - protocol rules [ASPX pages]
 ms.assetid: 8214e3f5-a8e9-4d71-957d-ed0852035030
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207762"
 ---
 # <a name="securing-the-sender-aspx-page"></a>送信者の ASPX ページをセキュリティで保護します。
 ここでは、RNIFSend.aspx ページの不正使用を防止する方法について説明します。 次の 2 種類の手順を使用できます。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  をクリックして**BTARNApp**、右側のペインで右クリックし、 **RNIFSend.aspx**です。  
   
-4.  **[プロパティ]**をクリックします。 **ファイル セキュリティ** タブの 、 **IP アドレスとドメイン名の制限**セクションで、**編集**です。  
+4.  **[プロパティ]** をクリックします。 **ファイル セキュリティ** タブの 、 **IP アドレスとドメイン名の制限**セクションで、**編集**です。  
   
 5.  [IP アドレスとドメイン名の制限] ダイアログ ボックスで、**拒否**、順にクリック**追加**です。  
   
@@ -52,12 +53,12 @@ ms.lasthandoff: 09/20/2017
     |**ネットワーク ID**|使用するネットワークを入力します。|  
     |**サブネット マスク**|使用するサブネット マスクを入力します。|  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
     > [!NOTE]
     >  すべての送信操作が個々のインスタンスで実行されているそれぞれのホストに既に分離されている場合は、このコンピューターを追加するだけです。 他のすべてのアクセスを拒否できます。  
   
-9. をクリックして**[ok]**、順にクリック**OK**もう一度です。  
+9. をクリックして **[ok]**、順にクリック**OK**もう一度です。  
   
 ### <a name="to-create-a-protocol-rule-of-outgoing-http-requests"></a>発信 HTTP 要求のプロトコル ルールを作成するには  
   

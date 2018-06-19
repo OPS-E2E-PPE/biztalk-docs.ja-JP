@@ -1,14 +1,14 @@
 ---
-title: "判断し、アクティビティ イベント ライター ロールを設定する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 判断し、アクティビティ イベント ライター ロールを設定する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 73bfe8ff-167a-4bf0-ab87-3926290d52d8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249866"
 ---
 # <a name="how-to-determine-and-set-event-writer-roles-for-activities"></a>アクティビティのイベント ライター ロールを確認および設定する方法
 アクティビティにイベントを書き込む場合、BAM は 2 つのセキュリティ モードを提供します。 個別のアクティビティへのイベントの書き込みアクセス許可を与えることも、展開されているすべてのアクティビティへのイベントの書き込みアクセス許可を与えることもできます。  

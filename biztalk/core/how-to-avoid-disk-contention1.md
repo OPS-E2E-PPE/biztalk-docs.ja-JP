@@ -1,14 +1,14 @@
 ---
-title: "ディスク Contention1 を回避する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ディスク Contention1 を回避する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8b4f8e10-16b0-45f9-8787-da16266da980
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248258"
 ---
 # <a name="how-to-avoid-disk-contention"></a>ディスクの競合を防止する方法
 BizTalk Server は永続的なシステムとして設計されているため、高スループットのシナリオではメッセージ ボックスで深刻な競合が発生する可能性があります。 ディスクが遅い場合には事態がさらに悪化します。 ディスクが遅い (ディスク アイドル時間の割合が低い) と、SQL がロックを保持する時間が長くなります (ロック待機時間とロック タイムアウトの値が大きくなる)。そうなると、メッセージ ボックス テーブル (スプールとアプリケーション キュー) のサイズが増加して、データベースの肥大化と制限を引き起こし、最終的には全体の維持可能なスループットが低下します。  

@@ -1,14 +1,14 @@
 ---
-title: "参照、検索、および Oracle E-business Suite のメタデータの取得 |Microsoft ドキュメント"
-ms.custom: 
+title: 参照、検索、および Oracle E-business Suite のメタデータの取得 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b516c6e9-dbb3-4977-bb27-aa039e021912
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218298"
 ---
 # <a name="browse-search-and-get-oracle-e-business-suite-metadata"></a>参照、検索、および Oracle E-business Suite のメタデータを取得
 メタデータを[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]Oracle E-business Suite と基になる Oracle データベースからのサーフェスがアダプターを使用して Oracle E-business Suite と通信するためのメッセージの構造について説明します。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]メタデータを取得するための 2 つのインターフェイスをサポートしています。  
@@ -81,8 +82,8 @@ SELECT TABLE_NAME FROM ALL_TABLES WHERE TABLE_NAME LIKE 'EMP%' AND OWNER = 'SCOT
 > [!IMPORTANT]
 >  -   検索文字列では大文字小文字を区別します。  
 > -   検索は、別のビュー (アプリケーション ベースのビュー、成果物に基づいたビュー、およびビューのスキーマに基づく) で異なる方法で動作します。 アイテムおよび操作で各ビューの下で検索する方法を参照してください「別のビューの下の検索」に[Oracle E-business Suite 操作の検索](../../adapters-and-accelerators/adapter-oracle-ebs/search-for-oracle-e-business-suite-operations.md)です。  
-> -   アプリケーションを検索するには、フレンドリ名またはアプリケーションの短い名前を指定できます。 たとえば、検索するため、**債権**アプリケーションのいずれかとして検索文字列を指定することができます**受信 %**または**AR**です。 AR は、アプリケーションの短い名前です。  
-> -   同時実行プログラムを検索するには、フレンドリ名または同時実行プログラムの実際の名前を指定できます。 例については、検索する、**顧客インターフェイス**検索文字列を指定するにはいずれかとしてプログラムを同時**% 顧客インターフェイス**または**%racust**です。 RACUST は、同時実行プログラムの実際の名前です。 また、検索結果は、その名が指定した検索文字列と一致するかどうかに関係なく、標準的な同時実行プログラムを常に含まれます。  
+> -   アプリケーションを検索するには、フレンドリ名またはアプリケーションの短い名前を指定できます。 たとえば、検索するため、**債権**アプリケーションのいずれかとして検索文字列を指定することができます**受信 %** または**AR**です。 AR は、アプリケーションの短い名前です。  
+> -   同時実行プログラムを検索するには、フレンドリ名または同時実行プログラムの実際の名前を指定できます。 例については、検索する、**顧客インターフェイス**検索文字列を指定するにはいずれかとしてプログラムを同時 **% 顧客インターフェイス**または **%racust**です。 RACUST は、同時実行プログラムの実際の名前です。 また、検索結果は、その名が指定した検索文字列と一致するかどうかに関係なく、標準的な同時実行プログラムを常に含まれます。  
   
 ## <a name="retrieving-metadata"></a>メタデータの取得  
  メタデータを取得するときに、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]すべてを含むスキーマの下でメタデータを抽出できますか、データベースのサブセットのオブジェクトそれぞれのオブジェクトと操作のパラメーターを使用します。 アダプターは、XML 内の要素名として、Oracle E-business Suite と基になる Oracle データベースからエンティティを表示します。 アンダー スコアが含まれることができるのみ許容の特殊文字であるため、要素名に他のすべての特殊文字はアンダー スコアを使用してエンコードされます。 たとえば、`emp$name`としてエンコードされた`emp_x0024_name`です。 詳細については、次を参照してください。[取得操作のメタデータの SQL Server、SQL アダプターを使用して Visual Studio で](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)です。  

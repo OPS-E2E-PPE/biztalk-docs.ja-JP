@@ -1,17 +1,17 @@
 ---
-title: "クライアントの証明書ストアに証明書を追加する |Microsoft ドキュメント"
-ms.custom: 
+title: クライアントの証明書ストアに証明書を追加する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - certificates, adding to certificates store
 - certificates store
 ms.assetid: 9e2722ee-dd6f-4b14-9796-2f2157e8cad2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209498"
 ---
 # <a name="adding-certificates-to-the-certificates-store-on-the-client"></a>クライアントの証明書ストアに証明書を追加します。
 各クライアント コンピューターで証明書ストアの個人用フォルダーに証明書を追加するのにには、次の手順を使用します。 証明書 - 現在のユーザー ストアの個人用フォルダーには、証明書を追加する必要があります。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-add-certificates-to-the-certificate-store"></a>証明書ストアに証明書を追加するには  
   
-1.  **[スタート]**ボタンをクリックし、 **[ファイル名を指定して実行]**をクリックします。 入力**mmc**、順にクリック**OK**です。  
+1.  **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。 入力**mmc**、順にクリック**OK**です。  
   
 2.  [Console1] ダイアログ ボックスで、**ファイル**、クリックして**スナップインの追加と削除**です。  
   

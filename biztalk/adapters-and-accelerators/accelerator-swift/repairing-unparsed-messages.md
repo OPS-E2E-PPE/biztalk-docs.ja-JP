@@ -1,18 +1,18 @@
 ---
-title: "未解析のメッセージの修復 |Microsoft ドキュメント"
-ms.custom: 
+title: 未解析のメッセージの修復 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - unparsed messages
 - repairing messages, unparsed messages
 - messages, unparsed messages
 ms.assetid: cc061243-3539-4407-a096-71a3feded1c5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214546"
 ---
 # <a name="repairing-unparsed-messages"></a>未解析のメッセージの修復
 場合、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]逆アセンブラーがメッセージを解析できません、そのメッセージを修復することができます。 そのために操作を行う、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]内からのフォーム、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] MRSR サイトです。 ただし、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] XML または BRE の検証に失敗した修復されたメッセージを異なるそのメッセージを処理します。  

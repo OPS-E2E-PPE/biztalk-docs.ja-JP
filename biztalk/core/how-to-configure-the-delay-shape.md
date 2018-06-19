@@ -23,6 +23,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22248338"
 ---
 # <a name="how-to-configure-the-delay-shape"></a>遅延図形を構成する方法
 ![](../core/media/ebiz-orch-delay.gif "ebiz_orch_delay")  

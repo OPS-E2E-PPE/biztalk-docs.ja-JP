@@ -1,18 +1,18 @@
 ---
-title: "スキーマにカスタムのテーブルを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマにカスタムのテーブルを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, Z tables [Z objects]
 - Z objects, creating Z tables
 - 2.X schemas, creating Z tables
 ms.assetid: d6ab8ac9-a835-4ec0-9ddd-76ff267a3cbd
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25960344"
 ---
 # <a name="creating-custom-tables-in-schemas"></a>スキーマのカスタム テーブルの作成
 カスタムのテーブルを作成するには、tablevalues_ で\<*バージョン*\>.xsd 共通のスキーマです。 既存のデータ型、基本データ型、またはテーブルで定義された列挙体のカスタムのテーブルを作成できます。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 01/17/2018
   
 4.  プロパティ ウィンドウで、必要に応じて、特定のプロパティに対して使用値を入力します。  
   
-5.  プロパティ ペインで、テーブルに列挙体を関連付けるには次のように設定します**Derived By**に**制限**、をクリックして**列挙**、の省略記号(...)ボタンをクリック。**列挙体**、列挙エディタを格納する列挙を目的の値を入力します。 **[OK]**をクリックします。  
+5.  プロパティ ペインで、テーブルに列挙体を関連付けるには次のように設定します**Derived By**に**制限**、をクリックして**列挙**、の省略記号(...)ボタンをクリック。**列挙体**、列挙エディタを格納する列挙を目的の値を入力します。 **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [Z オブジェクトと HL7 2.X スキーマを拡張します。](../../adapters-and-accelerators/accelerator-hl7/extending-hl7-2-x-schemas-with-z-objects.md)   

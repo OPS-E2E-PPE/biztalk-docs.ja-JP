@@ -11,7 +11,7 @@ helpviewer_keywords:
 - data types, supported
 - data types, unsupported
 ms.assetid: 491230b9-b946-4681-a048-5da46102c370
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25964480"
 ---
 # <a name="basic-oracle-data-types"></a>基本的な Oracle データ型
 このトピックの内容について説明しますが、どのように[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェスの基本的な Oracle データ型。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 03/28/2018
 |Float * *|xsd:float 場合 prec < 7 を =<br />xsd:double 場合 prec 7 > と < 15 を =<br />xsd:string 場合 prec > 15|Float<br />Double<br />文字列|-|  
 |IntervalYM|xsd:string<br /><br /> xsd:long if inside an UDT|文字列<br /><br /> 長い場合は、UDT の内部|値は、Oracle のネイティブ形式で表す必要があります: 年-月です。たとえば、「1-2」(1 年および 2 か月間) です。|  
 |IntervalDS|xsd:string<br /><br /> xsd:duration、UDT の内部場合|文字列<br /><br /> Timespan、UDT の内部場合|値は、Oracle のネイティブ形式で表す必要があります: 1 日 HH:MI:SSxFF です。たとえば、「5 15:30:12.99」|  
-|Long|xsd:string|文字列|すべてのテーブルの操作、ストアド プロシージャ、および関数のサポート。 **注:**リリース以降の Oracle データベース 9i、長い形式のデータ型は使用されなくなりました。 Oracle では、LOB データ型を代わりに使用することをお勧めします。 そのため、ときに、Oracle の処理の実行、データベースを使用して、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]、LOB データ型と長さのデータではなく動作する Oracle データベース アイテムを使用することをお勧めの種類。|  
+|Long|xsd:string|文字列|すべてのテーブルの操作、ストアド プロシージャ、および関数のサポート。 **注:** リリース以降の Oracle データベース 9i、長い形式のデータ型は使用されなくなりました。 Oracle では、LOB データ型を代わりに使用することをお勧めします。 そのため、ときに、Oracle の処理の実行、データベースを使用して、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]、LOB データ型と長さのデータではなく動作する Oracle データベース アイテムを使用することをお勧めの種類。|  
 |LongRaw|xsd:base64Binary|Byte[]|-|  
 |NChar|xsd:string|文字列|-|  
 |NClob|xsd:string|文字列|テーブル操作とプロシージャをサポートします。|  
@@ -59,7 +60,7 @@ ms.lasthandoff: 03/28/2018
 |バイナリ倍 * *|xsd:double 場合 prec < 15 を =<br />xsd:string 場合 prec > 15|Double<br />文字列|-|  
 |バイナリ整数 * *|xsd:integer|Int32|プロシージャ、関数、およびパッケージのサポート。|  
 |ブール値|xsd:boolean|Null 許容のブール値||  
-|XMLTYPE|xsd:string|文字列|最上位レベルのプロシージャのパラメーターはサポートされています。<br /><br /> 予約されているような XML 文字 '**\<**'、'**\>**'、エンティティ表記に置き換える必要があります**(&lt;、 &gt;)**biztalk のアプリケーションを開発するとき、およびチャネル モデルの WCF を使用します。 WCF サービス モデルの場合は必須ではありません。|  
+|XMLTYPE|xsd:string|文字列|最上位レベルのプロシージャのパラメーターはサポートされています。<br /><br /> 予約されているような XML 文字 '**\<**'、'**\>**'、エンティティ表記に置き換える必要があります **(&lt;、 &gt;)** biztalk のアプリケーションを開発するとき、およびチャネル モデルの WCF を使用します。 WCF サービス モデルの場合は必須ではありません。|  
   
  \*これらの Oracle データ型が表示される方法の影響を受ける、 **EnableSafeTyping**プロパティをバインドします。  
   

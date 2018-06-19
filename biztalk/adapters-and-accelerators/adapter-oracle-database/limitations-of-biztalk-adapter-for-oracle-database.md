@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214402"
 ---
 # <a name="limitations-of-biztalk-adapter-for-oracle-database"></a>Oracle Database の BizTalk アダプターの制限事項
 ## <a name="general"></a>全般  

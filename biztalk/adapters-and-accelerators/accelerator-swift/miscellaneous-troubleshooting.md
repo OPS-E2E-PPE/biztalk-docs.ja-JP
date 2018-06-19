@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211178"
 ---
 # <a name="miscellaneous-troubleshooting"></a>その他のトラブルシューティング
 ## <a name="leading-zeroes-validation-is-not-performed-for-fields-that-use-the-checkleadingzeroesinelement-method-to-validate-a-field-in-the-message-validation-policy"></a>先頭のゼロ CheckLeadingZeroesInElement メソッドを使用して、メッセージ検証ポリシー内のフィールドを検証するフィールドの検証が行われません。  

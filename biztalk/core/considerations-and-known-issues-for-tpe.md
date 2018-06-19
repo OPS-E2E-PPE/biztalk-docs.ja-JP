@@ -1,18 +1,18 @@
 ---
-title: "考慮事項と既知の問題 TPE |Microsoft ドキュメント"
-ms.custom: 
+title: 考慮事項と既知の問題 TPE |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking Profile Editor, known issues
 - planning, Tracking Profile Editor
 - Tracking Profile Editor, planning
 ms.assetid: e96d85e0-e9ae-434a-b54e-5950f4a2b9c6
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234578"
 ---
 # <a name="considerations-and-known-issues-for-tpe"></a>TPE の考慮事項と既知の問題
 追跡プロファイルと TPE を操作する際に留意しなければならない点は次のとおりです。  
@@ -186,7 +187,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  **データベース名**テキスト ボックスで使用されていたデータベース名を入力、**データベース名**のフィールド、**データ ストア**gridon、**カスタム構成Manager**グループのページです。  
   
-8.  クリックして、 **[ok]**エントリを保存するボタンをクリックします。  
+8.  クリックして、 **[ok]** エントリを保存するボタンをクリックします。  
   
 ## <a name="see-also"></a>参照  
  [TPE の使用](../core/using-the-tpe.md)   

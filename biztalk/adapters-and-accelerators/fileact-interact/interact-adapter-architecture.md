@@ -1,14 +1,14 @@
 ---
-title: "アダプターのアーキテクチャの対話 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターのアーキテクチャの対話 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce7e4b7e-abe4-4db6-b4e0-6f71bd7e5e6f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222834"
 ---
 # <a name="interact-adapter-architecture"></a>アダプターのアーキテクチャを対話します。
 このセクションでは、対話機能の観点からプリミティブについて説明します。 構造体の詳細な構文、および使用状況、プリミティブを完備 SWIFT の参照し、ここでは繰り返されません。  

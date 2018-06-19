@@ -1,14 +1,14 @@
 ---
-title: "インスタンス メッセージを生成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: インスタンス メッセージを生成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ff74c67a-7e73-4153-9ec4-e6e50464ee92
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254402"
 ---
 # <a name="how-to-generate-instance-messages"></a>インスタンス メッセージを生成する方法
 完成したスキーマをチェックする方法の 1 つとして、そのスキーマからサンプルのインスタンス メッセージを生成する方法があります。 スキーマ ツリーまたはスキーマの XSD (XML Schema Definition) 言語表記をチェックするよりも、インスタンス メッセージでチェックした方があらゆる点で簡単です。 これは、スキーマでは、対応するインスタンス メッセージについて、すべてのバリエーションが定義されている必要があるが、インスタンス メッセージでは、スキーマによって指定された形式でデータを伝達すれば十分であるためです。 生成されたインスタンス メッセージはあくまでサンプルであり、対応するスキーマによって定義された構造がすべて反映されているとは限りません。  

@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server のセキュリティ機能 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server のセキュリティ機能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - authentication
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - security, security features
 - BizTalk Server, security features
 ms.assetid: db356439-1898-4c09-86de-458a9bd21b18
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211050"
 ---
 # <a name="biztalk-server-security-features"></a>BizTalk Server のセキュリティ機能
 財務アプリケーションはサービスとの統合ソリューションを使用して開発された[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]は[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ネイティブによって保護されたアプリケーションとは[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]セキュリティ機能です。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーションが通常メッセージング機能の構成 (メッセージの処理、変換、ルーティング) とワークフローの自動化 (ビジネス プロセスの自動化、ビジネス ルールおよびロジックの評価)。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]一般的なワークフローのメッセージングとオートメーションのセキュリティを提供します。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]エンドユーザー メッセージ エントリ、修復、承認、および送信のセキュリティ保護に固有の追加のセキュリティ機能を提供します。 詳細については[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]-特定のセキュリティを参照してください[Message Repair and New Submission のセキュリティ機能によって A4SWIFT](../../adapters-and-accelerators/accelerator-swift/a4swift-security-features-for-message-repair-and-new-submission.md)です。  

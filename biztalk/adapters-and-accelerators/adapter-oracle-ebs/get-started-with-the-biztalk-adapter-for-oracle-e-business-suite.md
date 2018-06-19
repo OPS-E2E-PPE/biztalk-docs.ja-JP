@@ -1,14 +1,14 @@
 ---
-title: "BizTalk adapter for Oracle E-business Suite 開始 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk adapter for Oracle E-business Suite 開始 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 852d5855-c58a-4fa3-8efd-6afea9e527df
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216682"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-oracle-e-business-suite"></a>BizTalk adapter for Oracle E-business Suite 作業を開始します。
 アダプター、前提条件、およびユーザーを初めて使用する Microsoft BizTalk Adapter Pack 向けのトピックの概要です。 機能に関する情報が提供[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]とアダプターを使用して Oracle データベースで実行できるさまざまな操作です。  

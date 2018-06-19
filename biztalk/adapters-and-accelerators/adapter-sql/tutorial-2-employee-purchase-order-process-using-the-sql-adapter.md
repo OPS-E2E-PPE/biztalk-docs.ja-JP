@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル 2: 従業員の発注プロセスには、SQL アダプターを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル 2: 従業員の発注プロセスには、SQL アダプターを使用して |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eeb4dd1e-209a-47eb-9c0e-a138e02f0ff2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223234"
 ---
 # <a name="tutorial-2-employee---purchase-order-process-using-the-sql-adapter"></a>チュートリアル 2: 従業員の発注プロセスには、SQL アダプターを使用します。
 このチュートリアルでは、新しい従業員が組織を結合するたびに、機器を配置する購買部門が順序付けプロセスを自動化するは。 従業員の詳細と発注書の詳細の両方で保持されます**従業員**と**Purchase_Order** SQL Server データベース内のテーブルと、それぞれします。 購買部門は、SQL Server データベースで Purchase_Order テーブルを更新して、電子メールを送信して通知を受け取ります。 プロセスでは、次の操作が行われます。  

@@ -1,17 +1,17 @@
 ---
-title: "作成して、Contoso ソリューションの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 作成して、Contoso ソリューションの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - double action tutorial, creating solutions
 - double action tutorial, configuring solutions
 ms.assetid: 25370624-b27f-4f6c-a813-801ac4f81b8f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209738"
 ---
 # <a name="creating-and-configuring-the-contoso-solution"></a>作成して、Contoso ソリューションを構成します。
 ここでは、Contoso 社側で従う必要のある手順の詳細について説明します。 Contoso 社はメーカーであるため、受信したすべての PIP (Partner Interface Process) 要求への応答側として機能します。 このチュートリアルでは、4 つの PIP 用のパートナー アグリーメントを作成し、PIP の種類に基づいて適切な応答を送信するためのオーケストレーションを構築および展開します。  

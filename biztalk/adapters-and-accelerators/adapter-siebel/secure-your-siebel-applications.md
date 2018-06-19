@@ -1,17 +1,17 @@
 ---
-title: "Siebel アプリケーションのセキュリティ保護 |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アプリケーションのセキュリティ保護 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security and protection
 - data protection
 ms.assetid: 8977cbd3-0025-48d4-8203-8e9e72ea7d26
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221970"
 ---
 # <a name="secure-your-siebel-applications"></a>Siebel アプリケーションのセキュリティ保護します。
 Siebel システムには、多くの場合、お客様のアカウント詳細などの機密性の高いビジネス情報が含まれています。 使用するアプリケーション、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]にアクセスして、この情報を変更するいずれかのローカルまたは分散ネットワーク経由で公開される可能性が誤ってに不正のアクターによってアクセスする作業はに対して保護して、中にデータをセキュリティで保護しない限り、転送します。 データ保護およびセキュリティは、通常と考えるは次の用語で。  

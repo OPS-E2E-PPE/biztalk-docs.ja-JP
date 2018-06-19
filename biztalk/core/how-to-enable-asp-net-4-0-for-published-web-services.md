@@ -1,14 +1,14 @@
 ---
-title: "公開済み Web サービスを ASP.NET 4.0 を有効にする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 公開済み Web サービスを ASP.NET 4.0 を有効にする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 58646ff2-77a3-49dc-8593-f6e41d85d4f3
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254082"
 ---
 # <a name="how-to-enable-aspnet-40-for-published-web-services"></a>公開済み Web サービスの ASP.NET 4.0 を有効にする方法
 IIS で ASP.Net のバージョンを設定します。
@@ -27,7 +28,7 @@ BizTalk Server Web サービス公開ウィザードは、.NET Framework に含�
 
 ## <a name="prerequisites"></a>前提条件
 
-IIS に含まれて、 **Web サーバー (IIS)**オペレーティング システムの役割です。 この役割をインストールするときにも、ASP.NET の新しいバージョンを選択します。 
+IIS に含まれて、 **Web サーバー (IIS)** オペレーティング システムの役割です。 この役割をインストールするときにも、ASP.NET の新しいバージョンを選択します。 
   
 ## <a name="update-an-application-pool"></a>アプリケーション プールを更新します。
   

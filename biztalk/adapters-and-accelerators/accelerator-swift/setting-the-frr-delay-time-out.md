@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214002"
 ---
 # <a name="setting-the-frr-delay-time-out"></a>FRR 遅延タイムアウトの設定
 これは待機しません FNN 応答を無期限にようにいくつかの期間の後にタイムアウトに FRR オーケストレーションを構成する必要があります。 タイムアウト期間が経過すると、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]タイムアウトのカスタム ハンドラーにタイムアウトになったメッセージを公開します。  
@@ -39,4 +40,4 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  既定値、 **FRR DelayTimeout**プロパティは 600 秒 (258 16 進数)。  
   
-5.  **[OK]**をクリックします。
+5.  **[OK]** をクリックします。

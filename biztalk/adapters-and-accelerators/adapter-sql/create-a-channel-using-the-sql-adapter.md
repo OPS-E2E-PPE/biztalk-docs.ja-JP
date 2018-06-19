@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターを使用してチャネルを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターを使用してチャネルを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e86398f6-c835-46f8-814f-31e43b18970e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962808"
 ---
 # <a name="create-a-channel-using-the-sql-adapter"></a>SQL アダプターを使用して、チャネルを作成します。
 WCF チャネル モデルで、SQL Server データベースに対する操作を呼び出すし、SOAP メッセージを交換することで、結果を受け取る、 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] WCF チャネルを経由します。  

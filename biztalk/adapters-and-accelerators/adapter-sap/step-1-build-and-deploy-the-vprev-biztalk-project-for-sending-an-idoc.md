@@ -1,17 +1,17 @@
 ---
-title: "手順 1: 構築して、IDOC を送信するため vPrev BizTalk プロジェクトを配置 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: 構築して、IDOC を送信するため vPrev BizTalk プロジェクトを配置 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migration, building and deploying previous version of BizTalk project for sending an IDOC
 - migration
 ms.assetid: 1982b318-45d1-464e-b7e4-65d459c439e3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216890"
 ---
 # <a name="step-1-build-and-deploy-the-vprev-biztalk-project-for-sending-an-idoc"></a>手順 1: 構築して、IDOC を送信するため vPrev BizTalk プロジェクトを配置
 ![手順 1/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
  **所要時間:** 5 分  
   
- **目標:**このステップでビルドして、IDOC を SAP システムに送信する既存 vPrev BizTalk プロジェクトを展開します。  
+ **目標:** このステップでビルドして、IDOC を SAP システムに送信する既存 vPrev BizTalk プロジェクトを展開します。  
   
 > [!NOTE]
 >  VPrev BizTalk プロジェクトに変更する必要はありません。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  左側のペインでは、構成プロパティ をクリックしにあるチェック ボックスを確認してください、**ビルド**と**展開**列を選択します。  
   
-    2.  **[OK]**をクリックします。  
+    2.  **[OK]** をクリックします。  
   
 3.  ソリューション エクスプ ローラーで、BizTalk プロジェクトを右クリックし、をクリックして**プロパティ**です。 **プロパティ ページ** ダイアログ ボックスで、次の操作します。  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  右側のペインで下にある、**厳密な名前**カテゴリの**アセンブリ キー ファイル**プロパティ、先ほど作成したアセンブリ キー ファイルへのパスを提供します。  
   
-    3.  **[OK]**をクリックします。  
+    3.  **[OK]** をクリックします。  
   
 4.  ソリューション エクスプ ローラーでソリューション名を右クリックし、をクリックして**ソリューションのビルド**です。  
   

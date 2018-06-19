@@ -1,17 +1,17 @@
 ---
-title: "システム トレーラー |Microsoft ドキュメント"
-ms.custom: 
+title: システム トレーラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - trailers [SWIFT]
 - SWIFT, trailers
 ms.assetid: 2fd49be9-afe8-47c6-a613-fa469faa2126
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214082"
 ---
 # <a name="system-trailers"></a>システムのトレーラー
 システムのトレーラーは、SWIFT メッセージの詳細を追加または特別なを伝達します。 いずれかの最初の 3 つのシステム トレーラーは、次の順序で発生しました。 残りのシステム トレーラーは、任意の順序で発生します。  

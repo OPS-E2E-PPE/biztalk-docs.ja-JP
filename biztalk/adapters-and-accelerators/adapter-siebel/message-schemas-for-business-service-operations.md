@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222298"
 ---
 # <a name="message-schemas-for-business-service-operations"></a>ビジネス サービス操作のメッセージ スキーマ
 Siebel ビジネス サービスは、Siebel システムに直接呼び出すことができるビジネス メソッドのコレクションです。 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]操作としては、Siebel ビジネス サービスのビジネス メソッドを表示します。  

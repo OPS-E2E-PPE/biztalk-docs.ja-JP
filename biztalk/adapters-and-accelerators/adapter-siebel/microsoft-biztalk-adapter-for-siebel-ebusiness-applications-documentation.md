@@ -1,15 +1,15 @@
 ---
-title: "Microsoft BizTalk Adapter 用 Siebel eBusiness アプリケーションのドキュメント |Microsoft ドキュメント"
-description: "取得開始されると、アーキテクチャ、セキュリティ、アプリを開発、メッセージ スキーマ、および BizTalk Adapter Pack の Siebel アダプターのトラブルシューティング"
-ms.custom: 
+title: Microsoft BizTalk Adapter 用 Siebel eBusiness アプリケーションのドキュメント |Microsoft ドキュメント
+description: 取得開始されると、アーキテクチャ、セキュリティ、アプリを開発、メッセージ スキーマ、および BizTalk Adapter Pack の Siebel アダプターのトラブルシューティング
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 39cc8e02-d37f-4f8a-91f9-d87d312434a1
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222162"
 ---
 # <a name="microsoft-biztalk-adapter-for-siebel-ebusiness-applications-documentation"></a>Microsoft BizTalk Adapter 用 Siebel eBusiness アプリケーションのドキュメント
 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]さまざまなアダプターの動作、アダプターを使用するアプリケーションを作成する方法について理解するのに役立つリソースが含まれています、別の接続オプションなどについて説明します。

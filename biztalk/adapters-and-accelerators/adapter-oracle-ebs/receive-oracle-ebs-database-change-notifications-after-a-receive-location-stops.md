@@ -1,14 +1,14 @@
 ---
-title: "受信場所のブレーク ダウンの後に Oracle E-business Suite データベースの変更通知を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: 受信場所のブレーク ダウンの後に Oracle E-business Suite データベースの変更通知を受け取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 12c42cd0-b46e-4c45-a67e-e1fb9c0e8a6d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216138"
 ---
 # <a name="receive-oracle-e-business-suite-database-change-notifications-after-a-receive-location-breakdown"></a>受信場所のブレーク ダウンの後に Oracle E-business Suite データベースの変更通知を受信します。
 ACCOUNTACTIVITY テーブルへの変更が加えられたときに、データベース変更の通知メッセージを受信する BizTalk アプリケーションが存在するシナリオを検討してください。 一部として、受信場所が構成されている場合、BizTalk アプリケーションが分割すると、同時に ACCOUNTACTIVITY テーブルにレコードを追加、最近追加されたレコードの通知を受け取ることはできません。 わからない場合、受信場所が再び使用可能。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]バインド プロパティを公開**NotifyOnListenerStart**、されるを取得する通知が受信場所の回復を構成することができます。 次の値を指定することができます、 **NotifyOnListenerStart**プロパティをバインドします。  

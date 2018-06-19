@@ -1,18 +1,18 @@
 ---
-title: "オーケストレーションで SOAP ヘッダーへのアクセス |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションで SOAP ヘッダーへのアクセス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP headers, orchestrations
 - SOAP headers, properties
 - orchestrations, SOAP headers
 ms.assetid: 91fe053a-3f16-497c-b4bb-5fb54bec62e5
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225922"
 ---
 # <a name="accessing-soap-headers-in-orchestrations"></a>オーケストレーションで SOAP ヘッダーへのアクセス
 定義されている SOAP ヘッダーと不明な SOAP ヘッダーに関して、オーケストレーション内の SOAP ヘッダー コンテキスト プロパティにアクセスできます。 プロパティ スキーマおよびコンテキスト プロパティの詳細については、次を参照してください。[プロパティ スキーマ](../core/property-schemas.md)です。  

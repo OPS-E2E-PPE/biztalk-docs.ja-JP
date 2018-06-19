@@ -1,15 +1,15 @@
 ---
-title: "Wcf-siebel アダプターを使用してポートの構成 |Microsoft ドキュメント"
-description: "BizTalk Server で Siebel eBusiness Applications アダプターを使用する WCF Siebel 送信ポートを作成します。"
-ms.custom: 
+title: Wcf-siebel アダプターを使用してポートの構成 |Microsoft ドキュメント
+description: BizTalk Server で Siebel eBusiness Applications アダプターを使用する WCF Siebel 送信ポートを作成します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e6314104-c742-440c-b530-b5a82295353a
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222442"
 ---
 # <a name="configure-a-port-using-the-wcf-siebel-adapter"></a>Wcf-siebel アダプターを使用してポートを構成します。
 Siebel システムを使用して、出力方向の操作を実行する WCF Siebel 送信ポートを構成する方法、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。  
@@ -74,7 +75,7 @@ Siebel システムを使用して、出力方向の操作を実行する WCF Si
   
     2.  **受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。  
   
-12. **[OK]**をクリックします。  
+12. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
 [Siebel アダプターを物理ポートのバインドを手動で構成します。](../../adapters-and-accelerators/adapter-siebel/manually-configure-a-physical-port-binding-to-the-siebel-adapter.md)

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207234"
 ---
 # <a name="the-need-for-health-care-systems-integration"></a>健康保険システム統合の必要性
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]のアプリケーション統合とビジネス プロセス オートメーション ニーズを満たすソリューションと医療プロバイダーを提供します。 このトピックの説明、ビジネスの課題医療組織が直面する、およびどのように組み込んだシステム[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]これらの組織がそれらの課題に役立ちます。 サンプル ビジネス シナリオを示す一般的なシナリオを見ても[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]します。  

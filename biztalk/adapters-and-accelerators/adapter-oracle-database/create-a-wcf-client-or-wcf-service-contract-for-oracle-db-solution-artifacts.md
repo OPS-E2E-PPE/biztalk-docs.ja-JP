@@ -1,11 +1,11 @@
 ---
-title: "WCF クライアントまたは Oracle データベース ソリューションの成果物のための WCF サービス コントラクトを生成 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF クライアントまたは Oracle データベース ソリューションの成果物のための WCF サービス コントラクトを生成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model programming, creating a proxy
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - creating a proxy
 - proxy programming, creating a proxy
 ms.assetid: 3e832ae9-e253-4476-9f25-8cf0de12f469
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215890"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-oracle-database-solution-artifacts"></a>WCF クライアントまたは Oracle データベース ソリューションの成果物のための WCF サービス コントラクトを生成します。
 使用することができます、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] WCF クライアント クラスまたは Oracle データベース アイテムの選択した操作を対象とした WCF サービス コントラクト (インターフェイス) を生成します。 ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を WCF クライアント クラスを生成または WCF サービス コントラクト以外にも使用できます。ただし、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]標準の Microsoft Windows インターフェイスを通じて ServiceModel メタデータ ユーティリティ ツールの機能を公開します。 Svcutil.exe ツールではない参照および検索の機能も用意されていて、Oracle データベースに接続するときに選択したバインドのプロパティに基づく構成ファイルを生成します。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーでは、プロジェクトを右クリックし、をクリックして**アダプター サービス参照の追加**です。  
   
-2.  後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での Oracle 操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)Oracle データベースへの接続を検索および参照するには操作です。 選択した操作のための WCF クライアント クラスを作成することを確認**クライアント (送信操作)**からが選択されている、**選択コントラクト型**(これは、既定値) ドロップダウン リスト。  
+2.  後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での Oracle 操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)Oracle データベースへの接続を検索および参照するには操作です。 選択した操作のための WCF クライアント クラスを作成することを確認**クライアント (送信操作)** からが選択されている、**選択コントラクト型**(これは、既定値) ドロップダウン リスト。  
   
 3.  すべての対象をクリックする操作を選択した後**OK** WCF クライアント クラスを生成します。  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  後に、**アダプター サービス参照の追加**ダイアログ ボックスが開き、手順に従います[Visual Studio での Oracle 操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)Oracle データベースに接続します。 複数のバインドのプロパティとの受信操作の Oracle データベースに接続するときに設定する URI プロパティがあります。 たとえば、受信ポーリング操作 (**POLLINGSTMT**)、指定する必要があります、 **PollingStatement** Oracle データベースへの接続を構成するときに、プロパティをバインドします。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] POLLINGSTMT 操作によって返される結果セットを表すクラスを生成するこのプロパティで指定された SQL SELECT ステートメントを使用します。  
   
-3.  Oracle データベースに接続すると、選択**サービス (入力方向の操作)**から、**選択コントラクト型**ドロップダウン リスト。  
+3.  Oracle データベースに接続すると、選択**サービス (入力方向の操作)** から、**選択コントラクト型**ドロップダウン リスト。  
   
 4.  **カテゴリを選択**ボックスで、ルート ノードをクリックして (**/**)、サービス コントラクトを生成する操作を参照します。 たとえば、ポーリング操作は、次のように選択します。 **POLLINGSTMT**から、**利用可能なカテゴリと操作**ボックスをクリックして**追加**です。  
   

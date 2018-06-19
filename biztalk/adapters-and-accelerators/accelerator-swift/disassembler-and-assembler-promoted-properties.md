@@ -13,7 +13,7 @@ helpviewer_keywords:
 - promoted properties, disassembler
 - assembler, promoted properties
 ms.assetid: 342b0250-bdf7-45ce-8964-3aeda89989b1
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22211298"
 ---
 # <a name="disassembler-and-assembler-promoted-properties"></a>昇格させたプロパティの逆アセンブラおよびアセンブラ
 逆アセンブラーまたはアセンブラーのプロパティは 2 つのカテゴリに分類されますルーティングとフィルタ リングのためのルーティング プロパティ。内部処理用のランタイム プロパティ。  
@@ -34,11 +35,11 @@ SWIFT の逆アセンブラーは、ルーティングのプロパティを昇�
   
 |昇格の名前|Description|データ型|値の範囲|使用例|  
 |-------------------|-----------------|---------------|-----------------|-------------------|  
-|**A4SWIFT_BatchId**|SWIFT の逆アセンブラーが受信バッチの処理時に動的に生成されたグローバルに一意の識別子です。 逆アセンブラーは、同じバッチから送信されたメッセージ ボックス データベースに公開されたすべてのメッセージにこのバッチ識別子を割り当てます。<br /><br /> 設定**-1**の 1 つのメッセージ (受信のバッチからは発信されません)。|文字列|「-1」または*グローバル一意識別子 (GUID)*|同じメッセージを関連付けるため**A4SWIFT_BatchId**受信した最初を同じバッチにグループ化する値。|  
+|**A4SWIFT_BatchId**|SWIFT の逆アセンブラーが受信バッチの処理時に動的に生成されたグローバルに一意の識別子です。 逆アセンブラーは、同じバッチから送信されたメッセージ ボックス データベースに公開されたすべてのメッセージにこのバッチ識別子を割り当てます。<br /><br /> 設定 **-1**の 1 つのメッセージ (受信のバッチからは発信されません)。|文字列|「-1」または*グローバル一意識別子 (GUID)*|同じメッセージを関連付けるため**A4SWIFT_BatchId**受信した最初を同じバッチにグループ化する値。|  
 |**A4SWIFT_BreValidationErrors**|ビジネス ルール エンジン (BRE) の検証中に発生した検証エラーの数を示します。|数値|>= 0|BRE の検証は失敗しなかったメッセージのフィルター (**A4SWIFT_BREValidationErrors**が 0 に等しい)。|  
 |**A4SWIFT_Failed**|メッセージ (解析と検証) を処理中に障害が発生したかどうかを示します。 設定**True**場合**A4SWIFT_ParseErrors** + **A4SWIFT_XmlValidationErrors** + **A4SWIFT_BreValidationErrors** > 0 です。|ブール値|True、False|唯一の有効な SWIFT メッセージのフィルター (**A4SWIFT_Failed** equals **False**)。|  
 |**A4SWIFT_ParseErrors**|解析中に発生した解析エラーの数を示します。|数値|>= 0|解析は失敗しなかったメッセージのフィルター (**A4SWIFT_ParseErrors**が 0 に等しい)。|  
-|**A4SWIFT_PosInBatch**|受信バッチから発信されるメッセージの序数位置を示します。 含むバッチの*n*メッセージ、 **A4SWIFT_PosInBatch**は 1 から値を受け取って*n*バッチ内のメッセージの序数位置に対応します。<br /><br /> 設定**0**メッセージがバッチ ヘッダーである場合。<br /><br /> 設定**n+1**メッセージがバッチ トレーラーである場合。<br /><br /> 設定**1**場合は、メッセージ自体はバッチ全体 (バッチの断片化が無効になっています)。<br /><br /> 設定**-1**の 1 つのメッセージ (受信のバッチからは発信されません)。|数値|>= -1|同じ受信バッチからのメッセージを受信した元の順序に並べ替えます。|  
+|**A4SWIFT_PosInBatch**|受信バッチから発信されるメッセージの序数位置を示します。 含むバッチの*n*メッセージ、 **A4SWIFT_PosInBatch**は 1 から値を受け取って*n*バッチ内のメッセージの序数位置に対応します。<br /><br /> 設定**0**メッセージがバッチ ヘッダーである場合。<br /><br /> 設定**n+1**メッセージがバッチ トレーラーである場合。<br /><br /> 設定**1**場合は、メッセージ自体はバッチ全体 (バッチの断片化が無効になっています)。<br /><br /> 設定 **-1**の 1 つのメッセージ (受信のバッチからは発信されません)。|数値|>= -1|同じ受信バッチからのメッセージを受信した元の順序に並べ替えます。|  
 |**A4SWIFT_XmlValidationErrors**|XML の検証中に発生した検証エラーの数を示します。|数値|>= 0|XML 検証は失敗しなかったメッセージのフィルター (**A4SWIFT_XmlValidationErrors**が 0 に等しい)。|  
   
 > [!NOTE]

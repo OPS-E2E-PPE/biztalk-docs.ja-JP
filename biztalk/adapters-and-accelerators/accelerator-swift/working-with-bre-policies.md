@@ -1,17 +1,17 @@
 ---
-title: "BRE ポリシーの扱い |Microsoft ドキュメント"
-ms.custom: 
+title: BRE ポリシーの扱い |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BRE policies, about BRE policies
 - BRE policies
 ms.assetid: 4470f2b3-6891-46d7-9ba1-848f90d0767d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214930"
 ---
 # <a name="working-with-bre-policies"></a>BRE ポリシーの扱い
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] SWIFT の検証」の説明に従って、ビジネス ルール エンジン (BRE) を使用してメッセージのポリシー、 *SWIFT リファレンス ガイド*です。 これらのポリシーを以下に示します。  

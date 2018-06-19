@@ -1,11 +1,11 @@
 ---
-title: "パブリック プロセス |Microsoft ドキュメント"
-ms.custom: 
+title: パブリック プロセス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - public processes, orchestrations
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - trading partners, public processes
 - public processes, about public processes
 ms.assetid: 5ccc7449-5741-4d49-beb6-567bcd93f679
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210026"
 ---
 # <a name="public-processes"></a>パブリック プロセス
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]をパブリック プロセスとして取引先との統合を伴うビジネス プロセスを実装します。 組織内部のビジネス プロセスは、プライベート プロセスとして実装されます。 パブリック プロセスとプライベート プロセスを使用することで、RNIF (RosettaNet Implementation Framework) の処理 (パブリック プロセス内) は、Service Content 処理とバックエンドの統合 (プライベート プロセス内) から独立します。  

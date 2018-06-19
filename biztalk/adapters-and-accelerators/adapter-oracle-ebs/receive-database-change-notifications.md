@@ -1,14 +1,14 @@
 ---
-title: "データベースの変更通知を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: データベースの変更通知を受け取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: be1eacf1-7fba-4eca-b35b-9770904d9ebd
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217330"
 ---
 # <a name="receive-database-change-notifications"></a>データベースの変更通知を受信します。
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] ODP.NET データベースの変更通知機能をサポートします。 この機能を使用して、アダプター クライアントことができます、SELECT ステートメントとして登録、データベースに対する通知クエリし、アダプター クライアントとしてを使用して、SELECT ステートメントの変更の結果セットは、データベースが通知を送信します。 データベースの変更の通知は、OracleDependency クラスを使用して、アダプターで実装されます。 Oracle 固有の機能の詳細について、データベース変更のサポート ODP.NET および OracleDependency クラスを参照してください[http://go.microsoft.com/fwlink/p/?LinkId=124801](http://go.microsoft.com/fwlink/p/?LinkId=124801)です。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
 |Notification|ポーリング|  
 |------------------|-------------|  
 |通知は、Oracle データベース バージョン 10.2 に対してのみサポートされているおよびそれ以降です。|サポートされているすべての Oracle データベース バージョンのポーリングがサポートされている、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。|  
-|データの変更通知は瞬時では常にします。|一定の間隔でポーリングの使用可能なデータを確認するポーリング間隔を構成するか、または瞬時に、そのデータが使用可能です。 **ヒント:**ポーリングすれば、スループットを向上させる、データの変更が、継続的に行われていると、発生したタイミングととしてそれぞれの変更の通知を受けるたくないシナリオでします。 代わりに、前回の変更通知以降に行われたすべての変更の通知されるようにすた後ポーリング間隔を指定します。|  
+|データの変更通知は瞬時では常にします。|一定の間隔でポーリングの使用可能なデータを確認するポーリング間隔を構成するか、または瞬時に、そのデータが使用可能です。 **ヒント:** ポーリングすれば、スループットを向上させる、データの変更が、継続的に行われていると、発生したタイミングととしてそれぞれの変更の通知を受けるたくないシナリオでします。 代わりに、前回の変更通知以降に行われたすべての変更の通知されるようにすた後ポーリング間隔を指定します。|  
 |通知は、Oracle データベースで開始されます。 だけ、アダプターによって発行された通知のステートメントでは、データベース ステートメントの結果セットの変更がある場合に通知を開始するように指示します。 通知は、Oracle データベースの機能です。|ポーリングは、アダプターによって開始されます。 アダプターでは、データのポーリングを使用し、ポーリングの一部のデータがある場合は、ポーリング ステートメントを実行してポーリングを開始するかどうかを検証する SQL ステートメントを実行します。|  
 |通知のステートメントを使用すると、Oracle データベースでデータを読み取るだけです。|ポーリング ステートメントを使用して、読み取るまたは Oracle データベース内のデータを更新することができます。|  
 |Insert などのデータ変更の種類のみ通知を通知は、更新、および削除します。|ポーリングでは、実際のデータが変更されたことについて通知されます。|  

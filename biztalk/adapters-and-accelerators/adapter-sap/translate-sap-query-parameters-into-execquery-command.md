@@ -1,15 +1,15 @@
 ---
-title: "SAP クエリのパラメーターを BizTalk での mySAP アダプターで EXECQUERY コマンドに変換 |Microsoft ドキュメント"
-description: "EXECQUERY、例と共に SAP クエリを変換するガイダンス"
-ms.custom: 
+title: SAP クエリのパラメーターを BizTalk での mySAP アダプターで EXECQUERY コマンドに変換 |Microsoft ドキュメント
+description: EXECQUERY、例と共に SAP クエリを変換するガイダンス
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8a545e20-2607-4946-a60d-0a227b86d093
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217730"
 ---
 # <a name="translate-sap-query-parameters-into-execquery-command"></a>SAP クエリのパラメーターを EXECQUERY コマンドに変換します。
 クエリのパラメーターが EXECQUERY コマンド テキストに変換する方法について説明します。 このトピックでは、ZQUERY_TST_NEW カスタムの SAP クエリの例を使用します。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
      ![SAP クエリのパラメーターのリスト](../../adapters-and-accelerators/adapter-sap/media/sap-query-param-types.gif "sap_query_param_types")  
   
-5.  **[実行]**をクリックします。 次のページが表示されます。  
+5.  **[実行]** をクリックします。 次のページが表示されます。  
   
      ![SAP クエリのパラメーター値を指定](../../adapters-and-accelerators/adapter-sap/media/sap-query-all-params.gif "sap_query_all_params")  
   

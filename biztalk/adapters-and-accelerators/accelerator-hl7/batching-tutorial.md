@@ -1,11 +1,11 @@
 ---
-title: "チュートリアルをバッチ処理 |Microsoft ドキュメント"
-ms.custom: 
+title: チュートリアルをバッチ処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching tutorial
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - batching tutorial, about the tutorial
 - batching, tutorial
 ms.assetid: e9010638-74cf-47cd-8cc9-9d6fd08a1b8d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204386"
 ---
 # <a name="batching-tutorial"></a>バッチ処理のチュートリアル
 このチュートリアルを使用するための手順の説明[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]を受け取り、バッチ処理されたメッセージを送信します。 バッチ処理と、1 つの複合メッセージとして、個々 のメッセージ (または受信確認) のグループの送受信が含まれます。  

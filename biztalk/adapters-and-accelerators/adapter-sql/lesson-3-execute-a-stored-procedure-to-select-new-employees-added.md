@@ -1,14 +1,14 @@
 ---
-title: "レッスン 3: 追加された新しい従業員を選択するストアド プロシージャの実行 |Microsoft ドキュメント"
-ms.custom: 
+title: 'レッスン 3: 追加された新しい従業員を選択するストアド プロシージャの実行 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec7897e9-0c77-41b2-8cc2-61745bd3b028
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222626"
 ---
 # <a name="lesson-3-execute-a-stored-procedure-to-select-new-employees-added"></a>レッスン 3: 追加された新しい従業員を選択するストアド プロシージャを実行します。
 タスクを理解することは、このレッスンで実行される、前に、これらのタスクが必要な理由をまず理解する必要があります。 **従業員**ように、新しい従業員を追加するレコードを挿入するテーブルが定義されている、**ステータス**列は、新しい従業員が追加されるたびに、常に「0」に設定します。 これは、新しく追加した従業員を照会および通知の取得もこの列を使用できるようにします。 SQL Server で次の SQL ステートメントを実行して、このクエリは。  

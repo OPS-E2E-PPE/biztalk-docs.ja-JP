@@ -1,11 +1,11 @@
 ---
-title: "停止および開始オーケストレーション、送信ポート、および受信場所をプログラムによって |Microsoft ドキュメント"
-ms.custom: 
+title: 停止および開始オーケストレーション、送信ポート、および受信場所をプログラムによって |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - SDK samples, receive locations
 - examples, receive locations
 ms.assetid: 1c06e14d-44ec-4292-a2c2-ee2c8d07d948
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210882"
 ---
 # <a name="stopping-and-starting-orchestrations-send-ports-and-receive-locations-programmatically"></a>停止および開始オーケストレーション、送信ポート、および受信場所をプログラムで
 ここでは、プログラミングによってオーケストレーション、送信ポート、および受信場所を停止および開始するサンプル コードを紹介します。 これらのアクションは、すべてのオーケストレーション、送信ポート、および受信場所で、個々にまたは複数同時に実行することができます。 このコードをプログラムに組み込んで、これらのアクションを動的に実行できます。 デザイン時に、グラフィカル ユーザー インターフェイスでアクションを実行する[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]、または BizTalk 管理コンソールで実行時にします。  

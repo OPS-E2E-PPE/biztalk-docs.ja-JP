@@ -1,17 +1,17 @@
 ---
-title: "手順 3: テスト移行 Application6 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: テスト移行 Application6 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migration, testing the migrated application (RFC)
 - migration
 ms.assetid: 1b1ee59c-a5a3-442d-af2c-0fc4817f3063
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216802"
 ---
 # <a name="step-3-test-the-migrated-application"></a>手順 3: 移行後のアプリケーションをテストします。
 ![手順 3 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
  **所要時間:** 5 分  
   
- **目標:**この手順では、SD_RFC_CUSTOMER_GET RFC を呼び出すことによって移行済みのアプリケーションをテストします。 これを行うには、vPrev SAP アダプターを使用して生成されたスキーマに準拠している要求メッセージをドロップします。  
+ **目標:** この手順では、SD_RFC_CUSTOMER_GET RFC を呼び出すことによって移行済みのアプリケーションをテストします。 これを行うには、vPrev SAP アダプターを使用して生成されたスキーマに準拠している要求メッセージをドロップします。  
   
 ## <a name="prerequisites"></a>前提条件  
   

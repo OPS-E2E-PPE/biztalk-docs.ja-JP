@@ -1,17 +1,17 @@
 ---
-title: "ASPX ページの接続のタイムアウトの設定 |Microsoft ドキュメント"
-ms.custom: 
+title: ASPX ページの接続のタイムアウトの設定 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ASPX pages, connection time-out
 - connections, time-out
 ms.assetid: 61d9c996-caf4-48bd-bda7-52f2797a941b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207194"
 ---
 # <a name="setting-the-connection-time-out-for-an-aspx-page"></a>ASPX ページの接続のタイムアウトの設定
 同期メッセージに ASPX ページを使用する場合は、着信メッセージを待機できるように、ASPX ページの接続タイムアウトを増やす必要があります。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  IIS マネージャーでは、ローカル コンピューターのノードを展開し、順に展開**Websites**です。  
   
-3.  **[既定の Web サイト]**を右クリックし、 **[プロパティ]**をクリックします。  
+3.  **[既定の Web サイト]** を右クリックし、 **[プロパティ]** をクリックします。  
   
 4.  既定の Web サイトのプロパティ ダイアログ ボックスで、 **Web サイト** タブの 、**接続タイムアウト**ボックスで、適切な値を入力し、をクリックして**ok**です。  
   

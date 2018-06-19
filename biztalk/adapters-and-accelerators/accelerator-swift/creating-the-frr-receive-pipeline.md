@@ -1,18 +1,18 @@
 ---
-title: "受信パイプラインの作成、FRR |Microsoft ドキュメント"
-ms.custom: 
+title: 受信パイプラインの作成、FRR |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive pipelines, creating
 - FRR, creating receive pipelines
 - creating, receive pipelines
 ms.assetid: 5884176b-8522-4dd3-8f93-8695858b59ac
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210378"
 ---
 # <a name="creating-the-frr-receive-pipeline"></a>受信パイプラインの FRR の作成
 FIN 対応調整を実行するには、SWIFT FRR デコーダーと SWIFT の逆アセンブラーに加え、SWIFT FRR 相互関係セット競合回避モジュールのパイプライン コンポーネントを含む受信パイプラインを作成する必要があります。  
@@ -44,7 +45,7 @@ FIN 対応調整を実行するには、SWIFT FRR デコーダーと SWIFT の�
   
 2.  新しい項目の追加 ダイアログ ボックスで、**パイプライン ファイル**カテゴリ ウィンドウで、選択**受信パイプライン**テンプレート ペインでします。  
   
-3.  **名前**ボックスで、受信パイプラインの名前を入力します。 **FRRReceivePipeline.btp**です。 **[追加]**をクリックします。  
+3.  **名前**ボックスで、受信パイプラインの名前を入力します。 **FRRReceivePipeline.btp**です。 **[追加]** をクリックします。  
   
     > [!NOTE]
     >  追加する必要があります手順 4. を実行する前に、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 」の説明に従って、FRR がツールボックスにコンポーネントをパイプライン[をツールボックスに SWIFT パイプライン コンポーネントを追加する](../../adapters-and-accelerators/accelerator-swift/adding-swift-pipeline-components-to-the-toolbox.md)です。  
@@ -53,7 +54,7 @@ FIN 対応調整を実行するには、SWIFT FRR デコーダーと SWIFT の�
   
 5.  BizTalk パイプライン コンポーネント [ツールボックス] ウィンドウからドラッグ、 **SWIFT 逆アセンブラー**を**ここにドロップ**下のボックス、**逆アセンブル**パイプライン デザイナーで図形をステージです。  
   
-6.  **SWIFT 逆アセンブラー コンポーネント**でパイプライン デザイナーで選択した**プロパティ**、いることを確認、 **BRE 検証**と**XML 検証**プロパティに設定されます**True**、および**SWIFT ヘッダー スキーマ**プロパティに設定されている**(なし)**です。  
+6.  **SWIFT 逆アセンブラー コンポーネント**でパイプライン デザイナーで選択した**プロパティ**、いることを確認、 **BRE 検証**と**XML 検証**プロパティに設定されます**True**、および**SWIFT ヘッダー スキーマ**プロパティに設定されている **(なし)** です。  
   
 7.  BizTalk パイプライン コンポーネント [ツールボックス] で、ドラッグ**SWIFT FRR MQSeries デコーダー**を**ここにドロップ**下のボックス、**デコーダー**パイプライン デザイナーで図形をステージです。  
   

@@ -1,14 +1,14 @@
 ---
-title: "InterAct アダプターのクライアント アプリケーション |Microsoft ドキュメント"
-ms.custom: 
+title: InterAct アダプターのクライアント アプリケーション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cdab4624-0fc2-42a3-9867-8f77e144b40c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223098"
 ---
 # <a name="interact-adapter-client-application"></a>InterAct アダプターのクライアント アプリケーション
 アダプター クライアント アプリケーションの要求メッセージは、クライアント側 SWIFTNet リンク (SNL) をクライアント アプリケーションから渡された XML ドキュメントを操作します。 この種類のメッセージは、クライアント側で実行される SWIFTNet 要求/応答プリミティブの最初の部分として発生します。  

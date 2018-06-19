@@ -1,17 +1,17 @@
 ---
-title: "Siebel アダプターのアダプターのバインドを再利用 |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターのアダプターのバインドを再利用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - binding file, definition
 - adapter bindings, reusing
 ms.assetid: 1dc17b7a-5397-43f4-b19e-9c50fb0e97ff
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222754"
 ---
 # <a name="reuse-adapter-bindings-in-the-siebel-adapter"></a>Siebel アダプターのアダプターのバインドを再利用します。
 バインディングは、オーケストレーション ポートなど、ロール リンクの論理エンドポイントとの送信などの物理的なエンドポイント間のマッピングを作成し、ポートまたはパーティを受信します。 これにより、BizTalk ビジネス ソリューションの複数のコンポーネント間で通信できるようになります。 バインドを作成するには BizTalk Server 管理コンソールを使用します。  
@@ -59,7 +60,7 @@ I 番目のメンバーであるアカウントのサインイン、 [!INCLUDE[b
   
      たとえば、入力します。`C:\Bindings\Application1Bindings.Binding1.xml`  
   
-5.  いることを確認**、現在のアプリケーションからのすべてのバインドをエクスポート**が選択されています。  
+5.  いることを確認 **、現在のアプリケーションからのすべてのバインドをエクスポート**が選択されています。  
   
 6.  グループのすべてのパーティ情報をエクスポートするには、選択、**グローバル パーティ情報をエクスポート**チェック ボックスをオンします。  
   

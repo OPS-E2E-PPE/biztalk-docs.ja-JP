@@ -1,11 +1,11 @@
 ---
-title: "メッセージの検証エンジン |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの検証エンジン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message validation engine
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - validating, errors
 - validating, parsing
 ms.assetid: 4ba0b75e-665b-4771-b04f-5bc3e90d83f0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209034"
 ---
 # <a name="message-validation-engine"></a>メッセージ検証エンジン
 によって提供される最も重要な機能の 1 つ[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]SWIFT ネットワーク、または (取引先によって送信された) SWIFT ネットワークから受信したバックエンド システムから受信した SWIFT のメッセージを完全に検証する機能です。 送信 SWIFT メッセージの検証メッセージが SWIFT 標準に準拠していることと、SWIFT ネットワークは、メッセージを拒否していないことを保証します。  

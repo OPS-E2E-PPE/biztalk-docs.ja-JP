@@ -1,11 +1,11 @@
 ---
-title: "MSH オーバーライド |Microsoft ドキュメント"
-ms.custom: 
+title: MSH オーバーライド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - headers, overriding
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - headers, MSH Map tab
 - messages, message headers
 ms.assetid: f5b2c820-57e7-4a56-9d9f-713563bd7335
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961025"
 ---
 # <a name="msh-field-overrides"></a>MSH フィールドの上書き
 各 HL7 メッセージでは、メッセージ ヘッダーがあります。 使用して[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]は、ビジネス ニーズに基づいて、メッセージ ヘッダーの値をオーバーライドすることができます。 使用する、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー **MSH マップ**手動で無効化がメッセージ ヘッダー値のマッピングやオーケストレーションを使用せずにタブです。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
     |**MSH.15**|Accept 受信確認の種類の受信確認オーバーライドの次のオプションから選択します。<br /><br /> -   **AL**です。 常に送信する場合、このオプションを選択して受信確認をそのまま使用します。<br />-   **NE**です。 送信しない場合は、このオプションを選択受信確認をそのまま使用します。<br />-   **SU**です。 送信する場合は、このオプションを選択して、メッセージの転送が成功した後に受信確認をそのまま使用します。<br />-   **ER**です。 送信する場合は、このオプションを選択して、エラーが発生した場合のみ肯定応答をそのまま使用します。|  
     |**MSH.16**|アプリケーションの受信確認の種類の受信確認オーバーライドの次のオプションから選択します。<br /><br /> -   **AL**です。 常にアプリケーションの受信確認を送信する場合は、このオプションを選択します。<br />-   **NE**です。 アプリケーションの受信確認を送信しない場合は、このオプションを選択します。<br />-   **SU**です。 メッセージの転送が成功した後にアプリケーションの受信確認を送信する場合は、このオプションを選択します。<br />-   **ER**です。 エラーが発生した場合のみアプリケーションの受信確認を送信する場合は、このオプションを選択します。|  
   
-2.  **[保存]**をクリックします。  
+2.  **[保存]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [ログの構成](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md)   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22213962"
 ---
 # <a name="physical-diagram"></a>物理的なダイアグラム
 一般的な展開には、メッセージング (送信および受信) を BizTalk Server コンピューターがクラスター化されたビジネス プロセス (オーケストレーション)、InfoPath テンプレート (MRSR サイト) にアクセスするための BizTalk Server コンピューターを実行するための BizTalk Server コンピューターとクラスター化された SQL Server コンピューター。 次の展開では、イントラネットとインターネット ユーザーの両方からセキュリティで保護された環境が保証されます。  

@@ -1,14 +1,14 @@
 ---
-title: "(EDIFACT) をバッチ処理の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: (EDIFACT) をバッチ処理の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f711ff4b-702b-419b-9c17-dce60ea437a0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234666"
 ---
 # <a name="configuring-batching-edifact"></a>バッチ処理の構成 (EDIFACT)
 バッチは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が EDI バッチを生成してパーティに送信する方法を定義します。  
@@ -24,7 +25,7 @@ ms.lasthandoff: 09/20/2017
 > [!IMPORTANT]
 >  オフにした場合でも、このページですべてのプロパティが無効、**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理する**チェック ボックスを作成するパーティを作成するときに、アグリーメント。 **新しいバッチ**ボタンがこのページで無効になります。  
 >   
->  プロパティが無効になるのは、パーティから受信中のインターチェンジのプロパティに対応する一方向のアグリーメント タブ上のみです。 たとえば、2 つのパーティのパーティ A とパーティ B を作成する場合、パーティ A 用に、チェック ボックスをオフ、**新しいバッチ**にボタンが無効になっている、**パーティ A にパーティ B]-> [**一方向アグリーメント タブです。  
+>  プロパティが無効になるのは、パーティから受信中のインターチェンジのプロパティに対応する一方向のアグリーメント タブ上のみです。 たとえば、2 つのパーティのパーティ A とパーティ B を作成する場合、パーティ A 用に、チェック ボックスをオフ、**新しいバッチ**にボタンが無効になっている、**パーティ A にパーティ B]-> [** 一方向アグリーメント タブです。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
@@ -110,7 +111,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  保持**終了日が**非アクティブ化、バッチ処理オーケストレーションの終了日を指定しない場合に選択しません。  
   
-    2.  選択**(出現数) の後に終了**バッチ数を生成した後、バッチ処理オーケストレーションを非アクティブにすることを指定します。 テキスト ボックスに、目的の回数を入力します。  
+    2.  選択 **(出現数) の後に終了**バッチ数を生成した後、バッチ処理オーケストレーションを非アクティブにすることを指定します。 テキスト ボックスに、目的の回数を入力します。  
   
     3.  選択**によって終了**をバッチ処理オーケストレーションが非アクティブ化する終了日を指定します。 この時間以後はバッチ処理のメッセージは収集されません。 カレンダーから終了日を選択するか、テキスト ボックスの日付または時刻を直接変更します。  
   

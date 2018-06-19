@@ -1,18 +1,18 @@
 ---
-title: "手順 6: スキーマの検証 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 6: スキーマの検証 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message enrichment tutorial, schemas
 - schemas, validating
 - validating, schemas
 ms.assetid: 58cd8680-d135-485a-9463-e7701202eaf7
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206338"
 ---
 # <a name="step-6-validate-the-schemas"></a>手順 6: スキーマを検証します。
 このステップでは、検証スキーマ コマンドを使用する、スキーマのいずれか、内部不整合があるかからインスタンス メッセージの処理を効果的に使用されているいずれかのスキーマを妨げる可能性のあるその他の問題があるかを確認します。  

@@ -1,14 +1,14 @@
 ---
-title: "SAP を統合して、ビジネス データへの SAP アダプターを構成するカタログと SharePoint |Microsoft ドキュメント"
-ms.custom: 
+title: SAP を統合して、ビジネス データへの SAP アダプターを構成するカタログと SharePoint |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7ec105c9-0ced-4a45-bc0d-eb72c1ef5d9d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216538"
 ---
 # <a name="configure-the-sap-adapter-to-integrate-sap-with-the-business-data-catalog-and-sharepoint"></a>SAP を統合して、ビジネス データへの SAP アダプターを構成するカタログと SharePoint
 [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]が含まれています、 [!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)]、特定の LOB アーティファクトを WCF サービスが生成されます。 この WCF サービスは、Microsoft インターネット インフォメーション サービス (IIS) などのホスト環境でホストされます。 ビジネス データ カタログ定義エディターは、WCF サービスの Web サービス記述言語 (WSDL) を取得する WCF サービスがホストされている URL を使用します。 WSDL を使用して、ビジネス データ カタログ定義エディターは、WCF サービスが使用できるメソッドを抽出します。 これらのメソッドは、エンティティとエンティティ間の関連付けを確立するために使用できます。  

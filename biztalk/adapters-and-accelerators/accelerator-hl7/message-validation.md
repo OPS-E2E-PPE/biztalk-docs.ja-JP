@@ -1,17 +1,17 @@
 ---
-title: "メッセージの検証 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの検証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - validating, messages
 - messages, validating
 ms.assetid: 720ab16a-7ab4-4741-9951-9ab10a2c4c24
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205946"
 ---
 # <a name="message-validation"></a>メッセージの検証
 2.X が受信および送信パイプライン、メッセージの検証は HL7 で受信および送信の HL7 メッセージに対して発生します。 MSH (ヘッダー) セグメントのみまたはメッセージの本文全体の検証を構成することができます。 さらに、スキーマの一意のローカライズ バージョンに対して検証することができます。 ために、一意の名前空間の値を定義して (パーティ レベルでは、HL7 メッセージング構成と、メッセージを定義する実際のスキーマのターゲット名前空間プロパティの両方でこの名前空間の値を使用します。 実行時に、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) メッセージの解析と検証の適切なスキーマを選択する名前空間とスキーマのルート参照プロパティの組み合わせを使用します。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222354"
 ---
 # <a name="what-operations-are-supported-by-the-siebel-adapter"></a>どのような操作、Siebel アダプターによってサポートされます。
 アダプターのクライアントは、いずれかで Siebel システムの操作を実行できます。  

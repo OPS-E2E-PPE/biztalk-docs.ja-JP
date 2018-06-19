@@ -10,7 +10,7 @@ ms.topic: article
 helpviewer_keywords:
 - Siebel data types, supported
 ms.assetid: bf86f639-6c45-49db-9e58-79c3ad2c9978
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22218754"
 ---
 # <a name="basic-siebel-data-types"></a>Siebel の基本的なデータ型
 このセクションで Siebel データ型をサポートする方法について説明します、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]です。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 03/28/2018
 |DTYPE_NUMBER|xsd:decimal|Decimal|-|  
 |DTYPE_PHONE|xsd:string|文字列|-|  
 |DTYPE_TEXT|xsd:string|文字列|-|  
-|DTYPE_TIME|xsd:dateTime*|DateTime|値は、UTC をすることはできません。<br /><br /> -Xsd:dateTime、値が必要に、このパターンに従う: (1753-01-01)T(\d\d:\d\d:\d\d) (.\*)"です。<br />- **DateTime**オブジェクト**、DateTime.Kind**する必要があります**DateTimeKind.Unspecified**です。<br /><br /> 送信メッセージの場合は、アダプターは、指定された値が UTC (z または UTC オフセット) でないことを確認する実行時の検証を実行します。 その検証に失敗した場合、アダプターは例外をスローします。<br /><br /> ときにこの型は、(以下に示す規則に基づく) xsd:string として公開されています。<br /><br /> -形式は、基になるデータベースによって決まります。<br />-値には、実行時の検証は実行されません。|  
+|DTYPE_TIME|xsd:dateTime*|DateTime|値は、UTC をすることはできません。<br /><br /> -Xsd:dateTime、値が必要に、このパターンに従う: (1753-01-01)T(\d\d:\d\d:\d\d) (.\*)"です。<br />- **DateTime**オブジェクト **、DateTime.Kind**する必要があります**DateTimeKind.Unspecified**です。<br /><br /> 送信メッセージの場合は、アダプターは、指定された値が UTC (z または UTC オフセット) でないことを確認する実行時の検証を実行します。 その検証に失敗した場合、アダプターは例外をスローします。<br /><br /> ときにこの型は、(以下に示す規則に基づく) xsd:string として公開されています。<br /><br /> -形式は、基になるデータベースによって決まります。<br />-値には、実行時の検証は実行されません。|  
 |DTYPE_UTCDATETIME|xsd:dateTime*|DateTime|値は、日付と時刻の両方のコンポーネントを含めることができ、UTC があります。<br /><br /> -に対して xsd:dateTime、UTC ('Z' 表記または UTC オフセット) の値を表現する必要があります。<br />- **DateTime**オブジェクト**DateTime.Kind**する必要があります**DateTimeKind.Utc**です。<br /><br /> 送信メッセージにについては、アダプターは、これらの条件が満たされていることを確認する実行時検証を実行します。検証に失敗した場合、アダプターは例外をスローします。<br /><br /> ときにこの型は、(以下に示す規則に基づく) xsd:string として公開されています。<br /><br /> -形式は、基になるデータベースによって決まります。<br />-値には、実行時の検証は実行されません。|  
   
  ビジネス サービス メソッドの引数の型を次に示します。  

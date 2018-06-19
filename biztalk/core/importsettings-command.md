@@ -1,14 +1,14 @@
 ---
-title: "ImportSettings コマンド |Microsoft ドキュメント"
-ms.custom: 
+title: ImportSettings コマンド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 587f7e1f-9cf7-4e7b-90cd-11a266f474dc
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257554"
 ---
 # <a name="importsettings-command"></a>ImportSettings コマンド
 BizTalk グループ、ホスト、またはホスト インスタンスの設定を、送信元 XML ファイルから構成データベースにインポートします。 設定は、マッピング XML ファイル内にある場合と同じようにマップされます。 これらの設定はエクスポートされている」の説明に従って[インポートまたはエクスポート BizTalk の設定を使用して設定のダッシュ ボード](how-to-import-biztalk-settings-using-settings-dashboard.md)または[インポートまたはエクスポート BizTalk の設定を使用して BTSTask](how-to-import-biztalk-settings-using-btstask.md)です。  

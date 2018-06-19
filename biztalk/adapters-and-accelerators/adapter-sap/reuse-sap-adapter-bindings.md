@@ -1,17 +1,17 @@
 ---
-title: "SAP アダプターのバインドを再利用 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP アダプターのバインドを再利用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - binding file, definition
 - adapter bindings, reusing
 ms.assetid: 5748c22f-20a2-4eb9-ad45-a1bef7290802
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217698"
 ---
 # <a name="reuse-sap-adapter-bindings"></a>SAP アダプターのバインドを再利用します。
 バインド (オーケストレーション ポート、ロール リンクなど) の論理エンドポイントとの物理的なエンドポイント間のマッピングを作成する (など、送信と受信ポート)。 これにより、BizTalk ビジネス ソリューションの複数のコンポーネント間で通信できるようになります。 バインドを作成するには BizTalk Server 管理コンソールを使用します。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
      たとえば、入力します。`C:\Bindings\Application1Bindings.Binding1.xml`  
   
-5.  いることを確認**、現在のアプリケーションからのすべてのバインドをエクスポート**が選択されています。  
+5.  いることを確認 **、現在のアプリケーションからのすべてのバインドをエクスポート**が選択されています。  
   
 6.  グループのすべてのパーティ情報をエクスポートするには、選択、**グローバル パーティ情報をエクスポート**チェック ボックスをオンします。  
   

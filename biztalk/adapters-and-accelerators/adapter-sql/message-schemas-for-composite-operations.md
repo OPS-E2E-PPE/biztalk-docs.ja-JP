@@ -1,14 +1,14 @@
 ---
-title: "複合操作のメッセージ スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: 複合操作のメッセージ スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d80c023b-1912-43d4-be29-eb9e1b323593
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222514"
 ---
 # <a name="message-schemas-for-composite-operations"></a>複合操作のメッセージ スキーマ
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] SQL Server データベースでの複合操作を実行することができます。 複合操作では、Insert、Update を含む複数の操作を含むでき、テーブルとビューを操作およびストアド プロシージャでの操作を削除することができます。 複合操作は、任意の順序でこれらの操作を含めることができます。  

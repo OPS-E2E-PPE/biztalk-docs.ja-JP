@@ -1,11 +1,11 @@
 ---
-title: "Oracle データベース アダプターと BizTalk Server でのセキュリティ |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターと BizTalk Server でのセキュリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - user name password credentials
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - credentials, security considerations
 - affiliate application
 ms.assetid: c7e0be64-4ab9-4ee3-b88a-4f8f5f07b280
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216282"
 ---
 # <a name="security-with-the-oracle-database-adapter-and-biztalk-server"></a>Oracle データベース アダプターと BizTalk Server でのセキュリティ
 BizTalk Server 管理コンソールを使用して、コンソールまたはを使用して、送信ポートまたは受信ポート (場所) を構成するときに、 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] BizTalk ソリューションのメッセージ スキーマを取得するには、Oracle データベースの資格情報を指定する必要があります。 悪意のある相手に公開されるを防ぐためにセキュリティで保護された方法でこれらの資格情報を提供する重要です。 このトピックで最も安全に資格情報を指定する方法について説明します、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]の BizTalk Server ソリューションです。  

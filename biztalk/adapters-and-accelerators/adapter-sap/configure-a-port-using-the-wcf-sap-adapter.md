@@ -1,15 +1,15 @@
 ---
-title: "Biztalk WCF SAP アダプターを使用してポートを構成する |Microsoft ドキュメント"
-description: "MySAP アダプターの BizTalk アダプター パック (BAP) を使用して SAP からのメッセージの送受信に WCF SAP ポートを作成します。"
-ms.custom: 
+title: Biztalk WCF SAP アダプターを使用してポートを構成する |Microsoft ドキュメント
+description: MySAP アダプターの BizTalk アダプター パック (BAP) を使用して SAP からのメッセージの送受信に WCF SAP ポートを作成します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 420683f8-2516-4c65-895d-fe535824d450
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218738"
 ---
 # <a name="configure-a-port-using-the-wcf-sap-adapter"></a>WCF SAP アダプターを使用してポートを構成します。
 このトピックでは、WCF SAP を構成する方法については、送信および受信ポートを使用して SAP システムでの送信および受信操作を実行を[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  **受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。  
   
-12. **[OK]**をクリックします。  
+12. **[OK]** をクリックします。  
   
 ## <a name="deploy-adapters-to-receive-messages-from-sap"></a>SAP からメッセージを受信アダプターを展開します。  
 WCF SAP を構成する次の手順を使用して SAP システムからメッセージを受信するためのポートの受信完了、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  

@@ -1,17 +1,17 @@
 ---
-title: "手順 3: テスト移行 Application5 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: テスト移行 Application5 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migration, testing the migrated application (Receive IDOC)
 - migration
 ms.assetid: 3ad15069-1556-4c0a-8bfd-86704d40c586
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217250"
 ---
 # <a name="step-3-test-the-migrated-application"></a>手順 3: 移行後のアプリケーションをテストします。
 ![手順 3 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
  **所要時間:** 5 分  
   
- **目標:**この手順では、WCF ベースを使用してフラット ファイル IDOC を受信して移行したアプリケーションをテストします[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
+ **目標:** この手順では、WCF ベースを使用してフラット ファイル IDOC を受信して移行したアプリケーションをテストします[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
   
 ## <a name="prerequisites"></a>前提条件  
   

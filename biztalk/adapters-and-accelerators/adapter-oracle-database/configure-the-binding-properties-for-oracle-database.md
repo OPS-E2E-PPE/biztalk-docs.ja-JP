@@ -1,17 +1,17 @@
 ---
-title: "Oracle データベースのバインド プロパティの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベースのバインド プロパティの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - binding properties, specifying at run time
 - binding properties, specifying at design time
 ms.assetid: c59a1b5c-b52b-4161-82de-c4d89bfce5c7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215802"
 ---
 # <a name="configure-the-binding-properties-for-oracle-database"></a>Oracle データベースのバインドのプロパティを構成します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]動作特性を制御できるようにするいくつかのバインドのプロパティを表示します。 このセクションでは、Visual Studio および BizTalk Server 管理コンソールからバインドのプロパティの設定に関する情報を提供します。 Visual Studio から、特定の操作のスキーマの生成中にバインドのプロパティを指定する必要があります。 BizTalk Server からには、送信の一部としてのバインドのプロパティを指定または Oracle データベースからメッセージを送受信するためのポートを受信する必要があります。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  **アダプターの構成**ダイアログ ボックスで、をクリックして、**バインド プロパティ**タブし、さまざまなバインドのプロパティを指定します。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 #### <a name="to-specify-binding-properties-using-add-adapter-metadata-wizard"></a>アダプター メタデータの追加ウィザードを使用してバインド プロパティを指定するには  
   
@@ -59,14 +60,14 @@ ms.lasthandoff: 09/20/2017
     |**カテゴリ**|をクリックして**アダプターを追加**です。|  
     |**[テンプレート]**|をクリックして**アダプター メタデータの追加**です。|  
   
-3.  **[追加]**をクリックします。 アダプター メタデータの追加ウィザードが開きます。  
+3.  **[追加]** をクリックします。 アダプター メタデータの追加ウィザードが開きます。  
   
 4.  アダプター メタデータの追加ウィザードで選択**Wcf-oracledb**です。 コンピューターを選択して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]がインストールされていると、BizTalk データベースの名前。  
   
     > [!IMPORTANT]
     >  BizTalk で構成された Wcf-oracledb ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。  
   
-5.  **[次へ]**をクリックします。  
+5.  **[次へ]** をクリックします。  
   
 6.  **アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**ドロップダウン リストを**oracleDBBinding**、 をクリック**構成**.  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  既存の Wcf-oracledb 送信ポートを選択した場合、バインドのプロパティを指定する必要はありません。 バインドのプロパティは、送信ポートの構成から取得されます。 ただし、存在する場合、デザイン時に、必要なバインドのプロパティを指定することもできます。 このような場合は、バインドのプロパティの新しい値は、メタデータの生成中のデザイン時に使用されます。 ただし、実行時に、バインドの送信ポートの構成のプロパティの指定値適用されます。  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 ## <a name="specifying-binding-properties-from-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールからバインドのプロパティを指定します。  
  BizTalk Server 管理コンソールから Wcf-custom または Wcf-oracledb ポートの構成の一部としてのバインドのプロパティを指定する必要があります。  

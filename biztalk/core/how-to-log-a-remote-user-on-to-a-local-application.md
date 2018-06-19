@@ -1,14 +1,14 @@
 ---
-title: "リモート ユーザー、ローカルのアプリケーションにログオンする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: リモート ユーザー、ローカルのアプリケーションにログオンする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 886ee7cb-e6ba-476a-bea9-4bb4c22bf94e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254218"
 ---
 # <a name="how-to-log-a-remote-user-on-to-a-local-application"></a>リモート ユーザー、ローカルのアプリケーションにログオンする方法
 エンタープライズ シングル サインオン (ENTSSO) サービスの他の主要な機能は、ホスト側開始処理 (HIP) のサポートです。 リモート ユーザーがローカルの Windows リソースへのアクセスを試行するときに、ENTSSO は HIP と連携します。 ENTSSO を使用して、ホスト ユーザーからの要求を受け取り、ローカル Windows アプリケーションへのアクセスを要求することができます。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254322"
 ---
 # <a name="how-to-move-between-and-within-grid-pages"></a>グリッド ページ間およびグリッド ページ内で移動する方法
 マップが複雑である場合、通常は単一のグリッド ページ内にすべてのリンクと Functoid を同時に表示できません。 このような場合は、グリッド ページをスクロールする必要があります。 複数のグリッド ページに対応するマップを使用する場合は、グリッド ページ間の移動を可能にする必要があります。 このトピックでは、これらの作業の手順について説明します。  

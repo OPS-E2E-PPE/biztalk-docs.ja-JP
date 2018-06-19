@@ -1,11 +1,11 @@
 ---
-title: "SWIFT ヘッダーおよびトレーラ スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT ヘッダーおよびトレーラ スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - trailer schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, trailers
 - header schemas
 ms.assetid: 82cd33d4-6bbb-4124-9506-fd35b5dca8a4
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214578"
 ---
 # <a name="swift-header-and-trailer-schemas"></a>SWIFT ヘッダーおよびトレーラ スキーマ
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] SWIFT のヘッダーおよびトレーラのスキーマを提供します。 A4SWIFT が既に組み込まれているこれらのさまざまな FIN メッセージのインターチェンジのスキーマにします。 カスタム SWIFT FIN 書式スタイル メッセージの種類 (たとえば、N98 メッセージ) を作成する場合は、独自の形式にヘッダーとトレーラーのスキーマを組み込むことができます。  

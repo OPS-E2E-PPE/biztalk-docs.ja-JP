@@ -1,11 +1,11 @@
 ---
-title: "式を使用して、メッセージの割り当てを実行する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 式を使用して、メッセージの割り当てを実行する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, distinquished fields
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - orchestrations, messages
 - messages, components
 ms.assetid: 9989caf5-012c-4fc4-b5d8-981ca9a69f43
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256746"
 ---
 # <a name="how-to-use-expressions-to-perform-message-assignments"></a>式を使用して、メッセージの割り当てを実行する方法
 式を使用して、さまざまな方法でオーケストレーションのメッセージを操作できます。  

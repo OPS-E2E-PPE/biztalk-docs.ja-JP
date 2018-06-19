@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server で使用される証明書の署名付きメッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server で使用される証明書の署名付きメッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, signed messages
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - digital signatures, message flow
 - messages, certificates
 ms.assetid: 0b521e11-73ef-424f-9e6a-4fb42dc263ff
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233122"
 ---
 # <a name="certificates-that-biztalk-server-uses-for-signed-messages"></a>BizTalk Server で署名付きメッセージに使用する証明書
 BizTalk Server では、送信メッセージへの署名と、S/MIME (Secure Multipurpose Internet Mail Extensions) 受信メッセージに対する署名の確認がサポートされます。 送信メッセージへの署名と受信メッセージの署名の確認には、S/MIME バージョン 2 および 3 が使用されます。 同様に、BizTalk Server の構成では、パートナーへの送信メッセージが署名され暗号化されるように指定できます。  

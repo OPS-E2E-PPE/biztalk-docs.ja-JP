@@ -1,17 +1,17 @@
 ---
-title: "ACK 処理モデル |Microsoft ドキュメント"
-ms.custom: 
+title: ACK 処理モデル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - acknowledgements, process flow
 - ACK process model
 ms.assetid: 3c6a5eef-57ef-41f7-9782-e1cbc4dd78e1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205922"
 ---
 # <a name="ack-process-model"></a>ACK プロセス モデル
 次の一連の手順では、受信確認 (ACK) プロセス モデルについて説明します。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
     -   MSH 15、16 null 値を設定します。  
   
-4.  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジンがメッセージを検証し、検証が成功した場合は、ステータスの確認メッセージが生成されます**MSA01 AA =**です。  
+4.  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジンがメッセージを検証し、検証が成功した場合は、ステータスの確認メッセージが生成されます**MSA01 AA =** です。  
   
 5.  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジン変換、ADT ^ MLLP ラッパーで囲むと、ラボ情報システム (LIS) へのルーティングでメッセージを A04 です。  
   
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  LIS インターフェイス レイヤーがメッセージをコミットして受け入れる ACK の状態を生成するヘッダーを検証**MSA1 = CA**です。 インターフェイス レイヤーが MLLP のラッパーを持つメッセージをルーティング、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジンです。  
   
-7.  LIS インターフェイス層は、メッセージ全体を検証し、アプリケーション ACK の状態が生成されます**MSA1 AA =**です。 インターフェイス レイヤーが MLLP のラッパーを持つメッセージをルーティング、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジンです。  
+7.  LIS インターフェイス層は、メッセージ全体を検証し、アプリケーション ACK の状態が生成されます**MSA1 AA =** です。 インターフェイス レイヤーが MLLP のラッパーを持つメッセージをルーティング、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジンです。  
   
     -   [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]'確認が必要'、受信確認の受信確認をあらかじめ構成しておきます  
   

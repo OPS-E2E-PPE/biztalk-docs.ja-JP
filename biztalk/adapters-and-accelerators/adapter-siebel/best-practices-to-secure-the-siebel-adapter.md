@@ -1,11 +1,11 @@
 ---
-title: "ベスト プラクティス Siebel アダプターをセキュリティで保護する |Microsoft ドキュメント"
-ms.custom: 
+title: ベスト プラクティス Siebel アダプターをセキュリティで保護する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security best practices, for consuming the Siebel adapter with BizTalk Server
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - security best practices, for WCF diagnostic tracing and message logging
 - security best practices, for consuming the Siebel adapter with programming solutions
 ms.assetid: da89fcc5-2705-4198-8df6-64b2c532ef41
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218562"
 ---
 # <a name="best-practices-to-secure-the-siebel-adapter"></a>Siebel アダプターをセキュリティで保護するベスト プラクティス
 このセクションより的確に機密データの保護を使用してまたはを使用するアプリケーションを開発するときに従う必要のあるベスト プラクティスを説明、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]です。  

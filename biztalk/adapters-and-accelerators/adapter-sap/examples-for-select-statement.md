@@ -1,15 +1,15 @@
 ---
-title: "SELECT ステートメントの例は、BizTalk での mySAP アダプターで |Microsoft ドキュメント"
-description: "例と、mySAP アダプターを BizTalk アダプター パック (BAP) を使用してサンプルを選択します。"
-ms.custom: 
+title: SELECT ステートメントの例は、BizTalk での mySAP アダプターで |Microsoft ドキュメント
+description: 例と、mySAP アダプターを BizTalk アダプター パック (BAP) を使用してサンプルを選択します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 54a5a4ac-a994-4706-9735-a5a1a82b893b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216130"
 ---
 # <a name="examples-for-select-statement"></a>SELECT ステートメントの例
 このトピックでは、さまざまな SELECT ステートメントの構文例を示します。

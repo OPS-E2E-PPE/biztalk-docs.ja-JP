@@ -1,17 +1,17 @@
 ---
-title: "SQL Server Management Studio を使用して SAP データのインポート |Microsoft ドキュメント"
-ms.custom: 
+title: SQL Server Management Studio を使用して SAP データのインポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - importing SAP data, how to
 - SQL Server Management Studio, importing data
 ms.assetid: c8151c6d-4b33-40fe-9b83-9bed27df9a99
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217834"
 ---
 # <a name="import-sap-data-using-sql-server-management-studio"></a>SQL Server Management Studio を使用して SAP データのインポート
 このセクションでは、SQL Server Management Studio を使用して SAP システムから SQL Server データベースにデータをインポートする方法について説明します。 このセクションでは、データをインポートする実行可能な SSIS パッケージを作成する方法の命令を提供します。 このセクションでは、SSIS パッケージを実行する方法についても情報を提供します。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  クリックして [ようこそ] 画面の情報を読み取る**次**です。  
   
-5.  **データ ソースを選択** ダイアログ ボックスから、**データ ソース**ドロップ ダウン リスト**.NET Framework Data Provider 用 mySAP Business Suite**です。 ダイアログ ボックスは、SAP システムへの接続に別の接続パラメーターを一覧表示します。 使用して SAP システムへの接続に一般的な接続文字列、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]が必要です。  
+5.  **データ ソースを選択** ダイアログ ボックスから、**データ ソース**ドロップ ダウン リスト **.NET Framework Data Provider 用 mySAP Business Suite**です。 ダイアログ ボックスは、SAP システムへの接続に別の接続パラメーターを一覧表示します。 使用して SAP システムへの接続に一般的な接続文字列、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]が必要です。  
   
     -   接続の接続パラメーターを入力します。 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] A、B、および D の接続の種類をサポートしていますSAP システムへの接続には、いずれかの接続パラメーターを指定する必要があります*1*種類の接続をします。 たとえば、接続の種類、システム数と、アプリケーション サーバーのホストの名前を指定する必要があります。  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
     -   RFC SDK トレースを使用するかどうか。  
   
-     **[次へ]**をクリックします。  
+     **[次へ]** をクリックします。  
   
 6.  **先選択** ダイアログ ボックス。  
   
@@ -71,13 +72,13 @@ ms.lasthandoff: 09/20/2017
   
     4.  **データベース**ドロップダウン リストで、SAP テーブルをインポートするデータベースを選択します。  
   
-    5.  **[次へ]**をクリックします。  
+    5.  **[次へ]** をクリックします。  
   
 7.  **テーブルのコピーを指定またはクエリ** ダイアログ ボックスで、選択、**を転送するデータを指定するクエリを記述**オプションし、をクリックして**次**です。  
   
 8.  **ソース クエリを指定する** ダイアログ ボックスで、SQL Server にインポートするデータをフィルター選択クエリを指定します。 クエリを SELECT の文法の詳細については、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]を参照してください[選択ステートメント SAP の構文](../../adapters-and-accelerators/adapter-sap/syntax-for-a-select-statement-in-sap.md)です。  
   
-     をクリックして、**解析**クエリを検証し、をクリックするボタン**[ok]**ポップアップ ダイアログ ボックスにします。 **[次へ]**をクリックします。  
+     をクリックして、**解析**クエリを検証し、をクリックするボタン **[ok]** ポップアップ ダイアログ ボックスにします。 **[次へ]** をクリックします。  
   
 9. **[ソース テーブルおよびビュー** ] ダイアログ ボックスで、ソース テーブルと対象テーブルに対してチェック ボックスをオンにします。 ソースは、SAP からデータを取得するように指定したクエリを示します。 変換先は、SQL Server データベースに作成されるテーブルです。  
   
@@ -95,7 +96,7 @@ ms.lasthandoff: 09/20/2017
   
     -   Nullable、サイズ、有効桁数、小数点以下桁数などその他のフィールドの属性を変更します。  
   
-    -   **[OK]**をクリックします。  
+    -   **[OK]** をクリックします。  
   
 12. **ソース テーブルおよびビュー**ダイアログ ボックスで、をクリックして**次へ**です。  
   
@@ -107,7 +108,7 @@ ms.lasthandoff: 09/20/2017
   
     -   **パッケージの保護レベル**-ドロップダウン リスト、選択、保護は、パッケージ レベルし、資格情報を指定必要な場所です。  
   
-    -   **[次へ]**をクリックします。  
+    -   **[次へ]** をクリックします。  
   
      パッケージを保存することを選択する場合は、次の手順に進みます。 それ以外の場合、手順 15 に進みます。  
   
@@ -121,7 +122,7 @@ ms.lasthandoff: 09/20/2017
   
     -   ファイル システムにパッケージを保存する場合は、指定のファイルの場所と名前、**ファイル名**テキスト ボックス。  
   
-    -   **[次へ]**をクリックします。  
+    -   **[次へ]** をクリックします。  
   
 15. **ウィザードを完了** ダイアログ ボックスで、ウィザードを実行し、をクリックする操作の概要を確認**完了**です。  
   

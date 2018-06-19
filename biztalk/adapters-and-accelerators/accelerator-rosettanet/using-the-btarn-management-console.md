@@ -1,11 +1,11 @@
 ---
-title: "BTARN 管理コンソールを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: BTARN 管理コンソールを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - agreements, activating
@@ -36,7 +36,7 @@ helpviewer_keywords:
 - BTARN Management Console, about BTARN Management Console
 - home organizations
 ms.assetid: 000ee93d-eb1d-4ff8-a9cf-0547beff027d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -45,6 +45,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209722"
 ---
 # <a name="using-the-btarn-management-console"></a>BTARN 管理コンソールの使用
 ここでは、[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールを使用して、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を管理する方法について説明します。  
@@ -73,7 +74,7 @@ ms.lasthandoff: 09/20/2017
   
 -   結果ウィンドウで、プロセス構成を右クリックし、をクリックして既存のプロセス構成を削除**削除**です。  
   
--   結果ウィンドウで、新しい構成を基にする構成を右クリックし、をクリックして既存のプロセス構成に基づいた新しいプロセス構成を作成**のコピーから新しいプロセス構成**. これにより、新しい表示されます**プロセス構成のプロパティ** ダイアログ ボックスの既存の構成の設定と設定されます。 新しい入力**コードを表示**、順にクリック**[ok]**新しい構成を作成します。 詳細については、次を参照してください。 [PIP 仕様を使用して、プロセス構成を作成する](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md)です。  
+-   結果ウィンドウで、新しい構成を基にする構成を右クリックし、をクリックして既存のプロセス構成に基づいた新しいプロセス構成を作成**のコピーから新しいプロセス構成**. これにより、新しい表示されます**プロセス構成のプロパティ** ダイアログ ボックスの既存の構成の設定と設定されます。 新しい入力**コードを表示**、順にクリック **[ok]** 新しい構成を作成します。 詳細については、次を参照してください。 [PIP 仕様を使用して、プロセス構成を作成する](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md)です。  
   
 -   結果ウィンドウで、特定の構成を右クリックし、をクリックして、プロセス構成が関連付けられているすべての契約の一覧を表示する**アグリーメントの表示**です。 フォーカスを移すこれは、**契約**スコープ ペインでノードし、結果ウィンドウで、関連付けられているアグリーメントを表示します。 右クリックして、アグリーメントの完全な一覧に戻すことができます、**契約**、スコープ ペインで、してクリックし、ノード**すべて表示**です。  
   

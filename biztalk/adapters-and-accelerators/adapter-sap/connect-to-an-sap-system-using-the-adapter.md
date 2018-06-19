@@ -1,18 +1,18 @@
 ---
-title: "アダプターを使用して SAP システムへの接続 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターを使用して SAP システムへの接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connection URI
 - adapters, connecting to an SAP system
 - connection string
 ms.assetid: d506a948-5f4a-420b-a404-508824683099
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216898"
 ---
 # <a name="connect-to-an-sap-system-using-the-adapter"></a>アダプターを使用して SAP システムへの接続します。
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプター クライアント識別子 URI (Uniform Resource)、SAP システムに接続する接続と呼ばれる、接続文字列を指定する必要があります。 接続 URI のアダプターのクライアントは、外部システムに接続するための接続パラメーターを指定できます。接続 URI の詳細については、次を参照してください。 [SAP システムへの接続を作成する](../../adapters-and-accelerators/adapter-sap/create-a-connection-to-the-sap-system.md)です。  

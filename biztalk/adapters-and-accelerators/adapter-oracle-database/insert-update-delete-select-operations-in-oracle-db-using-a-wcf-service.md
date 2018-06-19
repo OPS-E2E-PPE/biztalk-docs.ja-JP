@@ -1,11 +1,11 @@
 ---
-title: "挿入、更新、削除、または WCF サービス モデルを使用して Oracle データベースで操作の選択 |Microsoft ドキュメント"
-ms.custom: 
+title: 挿入、更新、削除、または WCF サービス モデルを使用して Oracle データベースで操作の選択 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, Delete operation
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF service model, Insert operation
 - WCF service model, Update operation
 ms.assetid: d1a9f44f-ea0b-4dd6-9489-fa0d963848c4
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217490"
 ---
 # <a name="insert-update-delete-or-select-operations-in-oracle-database-using-the-wcf-service-model"></a>挿入、更新、削除、または WCF サービス モデルを使用して Oracle データベースで操作の選択
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]基本的な Insert、Update、Delete、および Oracle データベースのテーブルおよびビューに対する Select 操作のセットを表示します。 これらの操作を使用すると、単純な SQL INSERT、UPDATE、SELECT を実行し、対象のテーブルまたはビューの WHERE 句で修飾されたステートメントを削除できます。 たとえば、SQL SELECT クエリを結合演算子を使用して、複雑な操作を実行するには、SQLEXECUTE 操作を行うこともできます。 SQLEXECUTE 操作の詳細については、次を参照してください。 [WCF サービス モデルを使用して Oracle データベース SQLEXECUTE 操作を実行する](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md)です。  

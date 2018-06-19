@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967472"
 ---
 # <a name="cbr-biztalk-server-sample"></a>CBR (BizTalk Server サンプル)
 CBR サンプルの使用例、 **ExplorerOM**管理オブジェクトを追加して新しい構成が BizTalk メッセージのコンテンツ ベース ルーティング用のポートを送信します。  
@@ -64,7 +65,7 @@ CBR サンプルの使用例、 **ExplorerOM**管理オブジェクトを追加�
   
 2.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル CBR.sln を開きます。  
   
-3.  **[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。  
+3.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
 #### <a name="to-run-this-sample"></a>このサンプルを実行するには  
   

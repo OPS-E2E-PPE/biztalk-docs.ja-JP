@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206018"
 ---
 # <a name="refi12-in-v2xml-231"></a>V2 REF_I12 です。XML 2.3.1
 V2 REF_I12 スキーマで次のコードを手動で変更する必要があります。XML 2.3.1 Update2XMLSchema ツールを実行した後:  

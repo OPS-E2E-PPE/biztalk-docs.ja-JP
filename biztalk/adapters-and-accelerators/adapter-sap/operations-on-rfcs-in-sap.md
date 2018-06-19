@@ -1,11 +1,11 @@
 ---
-title: "SAP Rfc に対する操作 |Microsoft ドキュメント"
-ms.custom: 
+title: SAP Rfc に対する操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, operations on RFCs
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - adapters, operations on tRFCs
 - RFC server
 ms.assetid: ca1b7b00-a9cf-41bc-b87c-2e7ce8cff65c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217066"
 ---
 # <a name="operations-on-rfcs-in-sap"></a>SAP Rfc に対する操作
 使用することができます、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] RFC クライアントと RFC サーバーの両方です。 RFC クライアントのシナリオで、アプリケーションを呼び出す Rfc SAP システムでの RFC 操作を呼び出すことによって、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。 SAP RFC のサーバーのシナリオで、上、システムでの Rfc が呼び出される、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を呼び出す、RFC として、アプリケーションでの操作です。  

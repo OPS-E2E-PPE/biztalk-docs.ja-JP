@@ -1,17 +1,17 @@
 ---
-title: "手順 2: 構成 Wcf-custom 一方向受信ポート |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: 構成 Wcf-custom 一方向受信ポート |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF-Custom one-way receive port, configuring
 - migration
 ms.assetid: e2a8f074-64d5-4e6c-84d0-318fb606c0ba
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218554"
 ---
 # <a name="step-2-configure-a-wcf-custom-one-way-receive-port"></a>手順 2: 構成 Wcf-custom 一方向受信ポート
 ![手順 3 の 2](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。  
   
-    1.  クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、接続、SAP システムからメッセージを受信 URI を指定します。 SAP システムからメッセージを受信する URI の接続は、次の形式である必要があります。  
+    1.  クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、接続、SAP システムからメッセージを受信 URI を指定します。 SAP システムからメッセージを受信する URI の接続は、次の形式である必要があります。  
   
         ```  
         sap://Client=800;lang=EN@A/YourSAPHOST/00?ListenerGwHost=YourSAPHOST&ListenerGwServ=SAPGW00&ListenerProgramId=MyProgramId  
@@ -97,7 +98,7 @@ ms.lasthandoff: 09/20/2017
   
 10. **受信パイプライン**ドロップダウン リストで、 **ConvertToXML**です。 このフラット ファイル逆アセンブラー パイプラインはフラット ファイル IDOC を XML IDOC に変換する vPrev BizTalk プロジェクトの一部では既にです。  
   
-11. **[OK]**をクリックします。  
+11. **[OK]** をクリックします。  
   
 ### <a name="to-configure-the-biztalk-application"></a>BizTalk アプリケーションを構成するには  
   
@@ -113,7 +114,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  フラット ファイル IDOC を受信するファイル ポートを選択します。  
   
-    3.  **[OK]**をクリックします。  
+    3.  **[OK]** をクリックします。  
   
      アプリケーションの構成の詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=102360](http://go.microsoft.com/fwlink/?LinkId=102360)です。  
   

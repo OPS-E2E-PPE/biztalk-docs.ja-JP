@@ -1,11 +1,11 @@
 ---
-title: "SWIFT トレーラー |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT トレーラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SWIFT Trailer schema
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - trailers [SWIFT]
 - SWIFT, trailers
 ms.assetid: b6d64584-0514-4c87-98c0-33755efc4695
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214498"
 ---
 # <a name="swift-trailers"></a>SWIFT は、トレーラー
 各 SWIFT メッセージは、メッセージ交換とセキュリティ要件に必要な 1 つまたは複数のトレーラーがします。 システム トレーラー、該当する場合、ユーザーのトレーラーに従います。 各トレーラーをトレーラ ブロック内では、中かっこのペアをこれ以上で区切られたサブブロック内が表示されます。 各サブブロック後にコロンをトレーラ型を表す 3 文字から始まります。  

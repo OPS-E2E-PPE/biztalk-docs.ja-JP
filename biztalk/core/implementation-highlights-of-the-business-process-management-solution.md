@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257418"
 ---
 # <a name="implementation-highlights-of-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションの実装の要点
 このセクションでは、企業間取引ソリューションの実装関連の要素を詳細に説明します。 これらの要素にビジネス ルール フレームワーク、処理ステージの数は、方法、 **OrderManager**処理ステージの使用と通信する、 **OrderHandler**オブジェクト、方法アプリケーションでは、Ops アダプタを使用します。  

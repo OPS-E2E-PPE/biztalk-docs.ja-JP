@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプタを使用して SQL Server で複合操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプタを使用して SQL Server で複合操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 906c6352-44f3-4624-9e32-aea3fbb7510d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223330"
 ---
 # <a name="run-composite-operations-in-sql-server--using-the-sql-adapter"></a>SQL アダプタを使用して SQL Server での複合操作を実行します。
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]アダプター クライアントが、SQL Server データベースでの複合操作を実行できるようにします。 複合操作は、次の操作、および任意の順序で任意の数を含めることができます。  

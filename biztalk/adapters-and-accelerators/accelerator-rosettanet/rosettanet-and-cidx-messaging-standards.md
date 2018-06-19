@@ -1,18 +1,18 @@
 ---
-title: "RosettaNet および CIDX メッセージ規格 |Microsoft ドキュメント"
-ms.custom: 
+title: RosettaNet および CIDX メッセージ規格 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messaging standards
 - CIDX, messaging standards
 - RosettaNet, messaging standards
 ms.assetid: 3e9c090b-9425-41ae-ae86-d39ca2abfb63
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210042"
 ---
 # <a name="rosettanet-and-cidx-messaging-standards"></a>RosettaNet および CIDX メッセージ規格
 主な目的[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]は RosettaNet または業界 Exchange CIDX (Chemical Data) メッセージングの標準に準拠するメッセージを処理します。 ここでは、2 つの主要な RosettaNet 規格である RNIF (RosettaNet Implementation Framework) と PIP (Partner Interface Process) について説明します。 また、CIDX Chem eStandards についても説明します。  

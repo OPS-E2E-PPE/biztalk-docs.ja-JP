@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6573142e-7ca7-4990-98e3-b7a54840da13
-caps.latest.revision: ''
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,12 +17,13 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22246658"
 ---
 # <a name="exportbindings-command"></a>ExportBindings コマンド
 BizTalk アセンブリ、アプリケーション、またはグループのバインドをエクスポートします。 アセンブリ、アプリケーション、またはグループのバインドと一緒に、グローバル パーティのバインドをエクスポートすることもできます。 (パーティとは、組織のパートナーなど、オーケストレーションと連携するすべてのエンティティを指します。)  
   
 ## <a name="usage"></a>使用方法  
- **BTSTask ExportBindings/Destination:** *値*[**/grouplevel は**] [**/applicationname は: * **値*] [**/AssemblyName:***値*] &#124; [**/GlobalParties**] [**/Server:***値 *] [* */database:***値 *]  
+ **BTSTask ExportBindings/Destination:** *値*[**/grouplevel は**] [**/applicationname は: * **値*] [**/AssemblyName:***値*] &#124; [**/GlobalParties **] [**/Server:***値 *] [* */database:*** 値 *]  
   
 ## <a name="parameters"></a>パラメーター  
   

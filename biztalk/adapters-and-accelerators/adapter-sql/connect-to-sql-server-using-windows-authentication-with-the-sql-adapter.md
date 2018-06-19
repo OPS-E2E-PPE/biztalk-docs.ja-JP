@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプタで Windows 認証を使用して SQL Server への接続 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプタで Windows 認証を使用して SQL Server への接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45c54b2a-e056-496f-9f10-f19b6a3ca1a6
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222314"
 ---
 # <a name="connect-to-sql-server-using-windows-authentication-with-the-sql-adapter"></a>SQL アダプタで Windows 認証を使用して SQL Server への接続します。
 [!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)] SQL サーバーとの接続を確立するために Windows 認証を使用するアダプターのクライアントを有効にします。 Windows 認証を使用するには、アダプターのクライアントは、空のユーザー名とパスワードを入力してください。 
@@ -32,7 +33,7 @@ Visual Studio 内で Windows 認証を使用して SQL Server に接続するを
   
 1.  SQL Server Management Studio を開きます。 **サーバーへの接続**を選択**データベース エンジン**、入力、SQL**サーバー名**サーバーに接続する管理者の資格情報を入力します。  
 
-    **[接続]**を選択します。
+    **[接続]** を選択します。
   
 2.  **オブジェクト エクスプ ローラー**、SQL Server を展開し、**セキュリティ**を右クリックして**ログイン**、し、**新しいログイン**です。  
   

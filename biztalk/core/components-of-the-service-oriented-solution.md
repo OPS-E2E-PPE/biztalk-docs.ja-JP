@@ -1,11 +1,11 @@
 ---
-title: "コンポーネントのサービス指向ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: コンポーネントのサービス指向ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service solution tutorial, pipelines
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - service solution tutorial, orchestrations
 - service solution tutorial, back-end applications
 ms.assetid: 97b7b754-abfb-48f9-87bf-7fe171121166
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234258"
 ---
 # <a name="components-of-the-service-oriented-solution"></a>コンポーネントのサービス指向ソリューション
 このセクションでは、サービス指向ソリューションの主な BizTalk Server コンポーネントについて説明します。 次の図は、ソリューションの主なコンポーネントを示しています。  

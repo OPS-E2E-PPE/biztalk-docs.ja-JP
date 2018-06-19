@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite からデータ変更のポーリングに基づいたメッセージを受信 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite からデータ変更のポーリングに基づいたメッセージを受信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cbcb23d0-508d-4601-91b4-c674d76cd063
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218618"
 ---
 # <a name="receive-polling-based-data-changed-messages-from-oracle-e-business-suite"></a>Oracle E-business Suite からデータ変更のポーリングに基づいたメッセージを受信します。
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]インターフェイス テーブル、インターフェイス ビュー、テーブル、およびビューをポーリングすることによってデータ変更のポーリングに基づいたメッセージの受信をサポートします。 アダプターは、によって、アプリケーションにメッセージを提供します。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
 |プロパティのバインド|値|既定値|必須/省略可|  
 |----------------------|-----------|-------------|------------------------|  
 |**InboundOperationType**|値が 設定されていることを確認してください**ポーリング**です。|ポーリング|必須。 以外の場合に明示的に設定、既定値に適用されます。|  
-|**PolledDataAvailableStatement**|すべてのデータが特定のテーブルのポーリングに使用できるかどうかを判断するために実行する SELECT ステートメントを指定します。 指定されたステートメントは、結果の行と列で構成されるセットを返す必要があります。 結果セットの最初のセルの値では、アダプターが指定された値を実行するかどうかを示します、 **PollingInput**プロパティをバインドします。 結果の最初のセルには正の値が含まれている場合、アダプターは、ポーリング ステートメントを実行します。 たとえば、このバインディングのプロパティの有効なステートメントになります。<br /><br /> `Select * from <table_name>`<br /><br /> **注:**のストアド プロシージャをこのバインドのプロパティを指定する必要があります。 また、このステートメントでは、Oracle E-business Suite または基になる Oracle データベースのデータは変更する必要があります。|null|必須。|  
+|**PolledDataAvailableStatement**|すべてのデータが特定のテーブルのポーリングに使用できるかどうかを判断するために実行する SELECT ステートメントを指定します。 指定されたステートメントは、結果の行と列で構成されるセットを返す必要があります。 結果セットの最初のセルの値では、アダプターが指定された値を実行するかどうかを示します、 **PollingInput**プロパティをバインドします。 結果の最初のセルには正の値が含まれている場合、アダプターは、ポーリング ステートメントを実行します。 たとえば、このバインディングのプロパティの有効なステートメントになります。<br /><br /> `Select * from <table_name>`<br /><br /> **注:** のストアド プロシージャをこのバインドのプロパティを指定する必要があります。 また、このステートメントでは、Oracle E-business Suite または基になる Oracle データベースのデータは変更する必要があります。|null|必須。|  
 |**PollingAction**|ポーリング操作のアクションを指定します。 使用して、操作を生成するメタデータから特定の操作についてのポーリング動作を指定できます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。|null|テーブルとビューの SELECT ステートメントを使用してポーリング操作の省略可能です。|  
 |**PollingInput**|次のいずれかを指定します。<br /><br /> Oracle E-business Suite に対して実行される SQL SELECT ステートメント。 このステートメントは、FOR UPDATE 句を含める必要があります。 FOR UPDATE 句の詳細については、次を参照してください。[ポーリング ステートメントでの UPDATE 句を指定する](#ForUpdate)このトピックで後述します。<br /><br /> ストアド プロシージャ、関数、またはプロシージャまたは関数にポーリングするパッケージ内のメッセージを要求します。|null|必須。 設定**PollingInput** null 以外の値にポーリングを有効にします。|  
 |**PollingInterval**|Oracle E-business Suite のクエリにアダプターを使用する秒単位で、間隔に設定されます。 このプロパティは、ポーリング間隔とポーリング トランザクションのタイムアウトを指定します。値は、クライアントがクエリ データを処理し、ポーリング応答メッセージを返すにかかる時間の時間が加え (が指定されている) Oracle E-business Suite の場合、ポーリング後ステートメントは、クエリの実行に要する時間より大きくなければなりません。|30|必須。 以外の場合に明示的に設定、既定値に適用されます。|  

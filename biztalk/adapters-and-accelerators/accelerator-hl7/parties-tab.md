@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server で HL7 アクセラレータでのパーティ タブ |Microsoft ドキュメント"
-description: "BTAHL7 構成エクスプ ローラーを使用して、既存のパーティを表示し、BizTalk Server で受信確認を構成します。"
-ms.custom: 
+title: BizTalk Server で HL7 アクセラレータでのパーティ タブ |Microsoft ドキュメント
+description: BTAHL7 構成エクスプ ローラーを使用して、既存のパーティを表示し、BizTalk Server で受信確認を構成します。
+ms.custom: ''
 ms.date: 08/14/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e01052c8-25c5-4736-8403-33f16fbd3fb7
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206138"
 ---
 # <a name="parties-in-btahl7-configuration-explorer"></a>BTAHL7 構成エクスプ ローラーでパーティ
 使用する、**パーティ** タブを使用できる関係者を表示および指定[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成を選択すると、特定の人および受信確認のプロパティを構成します。 

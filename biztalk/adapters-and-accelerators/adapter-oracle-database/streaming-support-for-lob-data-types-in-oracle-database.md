@@ -1,11 +1,11 @@
 ---
-title: "Oracle データベースでの LOB データ型のサポートをストリーミング |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベースでの LOB データ型のサポートをストリーミング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - streaming, node-value
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - LOB data
 - streaming, node
 ms.assetid: a4943cdf-8336-48ac-b592-52ec514e7300
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214650"
 ---
 # <a name="streaming-support-for-lob-data-types-in-oracle-database"></a>Oracle データベースでの LOB データ型のストリーミング サポート
 Oracle データベースでは、ラージ オブジェクト (LOB) データ型のストリーミングをサポートします。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]LOB データ エンド ツー エンド Oracle データベースと、アダプターのクライアントの間にストリーミングできるようになりますストリーミングをサポートするメッセージ。 ただし、ストリーミングはサポートされていません同様に、すべてのプログラミング モデル間で、アダプターを使用するとします。  

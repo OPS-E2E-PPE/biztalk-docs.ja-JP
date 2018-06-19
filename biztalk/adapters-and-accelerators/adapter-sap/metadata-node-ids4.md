@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 46385060-f56a-4e06-9122-b75808776716
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22218506"
 ---
 # <a name="node-types-and-ids-for-the-sap-adapter"></a>ノードの種類と SAP アダプターの Id
 
@@ -112,7 +113,7 @@ ms.lasthandoff: 03/28/2018
 |RFC|RFC の名前です。<br />RFC のインポート、エクスポート、変更、およびテーブルのパラメーターです。<br />RFC パラメーターのデータ型。<br />ファセットの maxlength プロパティにマップされている RFC パラメーター フィールド長<br />ファセットの minOccurs にマップされている RFC 必須パラメーター 1 を =<br />-ファセットの minOccurs にマップされている RFC 省略可能なパラメーター 0 を =<br />RFC パラメーター ファセット isNillable にマップされている NULL 制約 = true です。 これは、アダプターが SAP システムへでこのパラメーターを渡す必要がありますいないことを意味します。<br />-RFC 自体は、操作です。|  
 |TRFC|除く RFC と同じ<br /><br /> RFC インポートのパラメーターは表示されません。 TRFC は非同期なので、出力パラメーターは発生しません。|  
 |BAPI|ビジネス オブジェクトの名前<br />ビジネス オブジェクト メソッドの名前<br />-RFC 特性と同じ|  
-|IDOC|IDOC の種類<br /><br /> CIMType<br /><br /> IDOC のリリース番号<br /><br /> IDOC のバージョン<br /><br /> IDOC EDI_DC 複合型にマップされている制御レコードのフィールド<br /><br /> IDOC データ レコードのセグメントと EDI_DD 複合型にマップされているセグメント フィールド<br /><br /> セグメントの親子関係<br /><br /> IDOC セグメントの必須パラメーターが minOccurs にマップされている 1 を =<br /><br /> IDOC セグメントの minOccurs にマップされている省略可能なパラメーター 0 を =<br /><br /> IDOC セグメントのヘッダー フィールドの名前<br /><br /> IDOC セグメント ヘッダー フィールドのデータ型<br /><br /> IDOC セグメント フィールド名<br /><br /> IDOC セグメント フィールドのデータ型<br /><br /> IDOC セグメント フィールド値の列挙<br /><br /> IDOC セグメント フィールドの最小、最大値 (範囲)**注:**ときの IDOC セグメント フィールドには最小値の一覧が含まれています、列挙体として提示されます。 IDOC セグメント フィールドには、min と max の値の両方が含まれている場合に、列挙型または範囲の構造なしの文字列として確認できます。|  
+|IDOC|IDOC の種類<br /><br /> CIMType<br /><br /> IDOC のリリース番号<br /><br /> IDOC のバージョン<br /><br /> IDOC EDI_DC 複合型にマップされている制御レコードのフィールド<br /><br /> IDOC データ レコードのセグメントと EDI_DD 複合型にマップされているセグメント フィールド<br /><br /> セグメントの親子関係<br /><br /> IDOC セグメントの必須パラメーターが minOccurs にマップされている 1 を =<br /><br /> IDOC セグメントの minOccurs にマップされている省略可能なパラメーター 0 を =<br /><br /> IDOC セグメントのヘッダー フィールドの名前<br /><br /> IDOC セグメント ヘッダー フィールドのデータ型<br /><br /> IDOC セグメント フィールド名<br /><br /> IDOC セグメント フィールドのデータ型<br /><br /> IDOC セグメント フィールド値の列挙<br /><br /> IDOC セグメント フィールドの最小、最大値 (範囲)**注:** ときの IDOC セグメント フィールドには最小値の一覧が含まれています、列挙体として提示されます。 IDOC セグメント フィールドには、min と max の値の両方が含まれている場合に、列挙型または範囲の構造なしの文字列として確認できます。|  
   
  詳細については、形式のメタデータを[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]特定のアイテムおよび操作で、SAP システムに公開を参照してください[メッセージと BizTalk Adapter 用 mySAP Business Suite のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)です。  
   

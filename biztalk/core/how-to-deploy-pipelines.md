@@ -1,11 +1,11 @@
 ---
-title: "パイプラインを展開する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: パイプラインを展開する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IReceiveLocation interface
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - Validate method
 - ISendPort interface
 ms.assetid: 7a56c753-a0d4-48ed-a61d-e454bc9cd507
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249602"
 ---
 # <a name="how-to-deploy-pipelines"></a>パイプラインを展開する方法
 ソリューションのビルドおよび展開プロセスの一部として、パイプラインのコンパイルと展開が行われます。 コンパイラの呼び出し、**検証**各コンポーネントは、これにより、コンポーネントを返すメソッドに対してコンパイル エラーは構成済み情報。 ビルドが終了すると、パイプラインはソリューションの展開時に、残りのソリューションと同じアセンブリに展開されます。  

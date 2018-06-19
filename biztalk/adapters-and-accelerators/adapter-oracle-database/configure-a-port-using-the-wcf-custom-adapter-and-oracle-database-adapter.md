@@ -1,15 +1,15 @@
 ---
-title: "Wcf-custom アダプターおよび Oracle データベース アダプターを使用してポートの構成 |Microsoft ドキュメント"
-description: "Wcf-custom 送信を作成し、BizTalk Server で Oracle DB アダプターを使用する受信ポート"
-ms.custom: 
+title: Wcf-custom アダプターおよび Oracle データベース アダプターを使用してポートの構成 |Microsoft ドキュメント
+description: Wcf-custom 送信を作成し、BizTalk Server で Oracle DB アダプターを使用する受信ポート
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c99ff526-ad97-4095-812f-0ce88b071e7f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215858"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-oracle-database-adapter"></a>Wcf-custom アダプターおよび Oracle データベース アダプターを使用してポートを構成します。
 Wcf-custom 送信ポートと受信ポートを使用して Oracle データベースでの送信および受信操作を実行する方法、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]です。  
@@ -41,7 +42,7 @@ Wcf-custom 送信ポートと受信ポートを使用して Oracle データベ�
   
 7.  **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。  
   
-    1.  クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、Oracle データベースの接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。  
+    1.  クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、Oracle データベースの接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。  
   
     2.  **全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。 参照してください[メッセージおよびメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)各操作のアクションの一覧についてはします。 たとえば、Oracle データベースで HR スキーマ EMPLOYEE テーブルの挿入操作を呼び出すアクションは。  
   
@@ -75,7 +76,7 @@ Wcf-custom 送信ポートと受信ポートを使用して Oracle データベ�
   
     2.  **受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。  
   
-11. **[OK]**をクリックします。  
+11. **[OK]** をクリックします。  
   
 ## <a name="deploy-adapters-for-receiving-messages-from-an-oracle-database"></a>Oracle データベースからメッセージを受信するためのアダプターを展開します。  
   
@@ -99,7 +100,7 @@ Wcf-custom 送信ポートと受信ポートを使用して Oracle データベ�
   
 8.  **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。  
   
-    1.  クリックして、**全般**] タブで、し、[、**アドレス (URI)**フィールドで、Oracle データベースの接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。  
+    1.  クリックして、**全般**] タブで、し、[、**アドレス (URI)** フィールドで、Oracle データベースの接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI を作成する](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。  
   
     2.  クリックして、**バインド** タブとの間、**バインディングの種類**ドロップダウン リストで、 **oracleDBBinding**です。 によって公開されている別のバインディング プロパティを指定することができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。 バインドのプロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについてお読み](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)です。  
   

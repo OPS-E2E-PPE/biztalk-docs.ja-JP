@@ -1,14 +1,14 @@
 ---
-title: "直接パスワード同期を使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 直接パスワード同期を使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d1334c2f-2020-46ea-a98c-f7688813e38c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255946"
 ---
 # <a name="how-to-use-direct-password-sync"></a>直接パスワード同期を使用する方法
 このバージョンのエンタープライズ シングル サインオンには、Windows から実行できる直接パスワード同期機能が実装されています。 この機能により、パスワード同期アダプタをバイパスし、SSO データベースのパスワードの更新を Windows から直接実行できます。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  適切なを右クリックして**関連アプリケーション**です。  
   
-4.  **[プロパティ]**をクリックします。  
+4.  **[プロパティ]** をクリックします。  
   
      **関連アプリケーションのプロパティ** ダイアログ ボックスが表示されます。  
   
@@ -43,4 +44,4 @@ ms.lasthandoff: 09/20/2017
   
 6.  選択、 **Windows から直接パスワード同期**チェック ボックスをオンします。  
   
-7.  **[OK]**をクリックします。
+7.  **[OK]** をクリックします。

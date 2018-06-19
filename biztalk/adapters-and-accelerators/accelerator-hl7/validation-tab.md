@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206322"
 ---
 # <a name="validation-tab"></a>[検証] タブ
 使用する、**検証**受信および生成されたメッセージのメッセージの検証オプションを選択するタブです。  

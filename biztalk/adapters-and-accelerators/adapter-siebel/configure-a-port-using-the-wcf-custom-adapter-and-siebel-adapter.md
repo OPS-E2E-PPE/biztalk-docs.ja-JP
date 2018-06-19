@@ -1,15 +1,15 @@
 ---
-title: "Biztalk WCF カスタム アダプターと Siebel アダプターを使用してポートを構成する |Microsoft ドキュメント"
-description: "作成 wcf-custom 送信ポートと受信ポートを BizTalk Server で Siebel eBusiness Applications アダプターを使用するには"
-ms.custom: 
+title: Biztalk WCF カスタム アダプターと Siebel アダプターを使用してポートを構成する |Microsoft ドキュメント
+description: 作成 wcf-custom 送信ポートと受信ポートを BizTalk Server で Siebel eBusiness Applications アダプターを使用するには
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53c5ee07-36ae-474b-9241-8b53c9066ca1
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222330"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-siebel-adapter"></a>Wcf-custom アダプターと Siebel アダプターを使用してポートを構成します。
 このトピックでは、Wcf-custom を構成する方法について送信している Siebel システムでの送信操作を実行するポートでは、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作します。  
   
-    1.  をクリックして、**一般的な** タブで、**アドレス (URI)**フィールドは、接続の Siebel システムへの接続に URI を指定します。 接続 URI の詳細については、次を参照してください。 [Siebel システム接続 URI を作成する](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)です。  
+    1.  をクリックして、**一般的な** タブで、**アドレス (URI)** フィールドは、接続の Siebel システムへの接続に URI を指定します。 接続 URI の詳細については、次を参照してください。 [Siebel システム接続 URI を作成する](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)です。  
   
     2.  **全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。 参照してください[メッセージおよびメッセージ スキーマ](messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)各操作のアクションの一覧についてはします。 たとえば、アカウントのビジネス コンポーネントに対する挿入操作を呼び出すアクションは。  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  **受信パイプライン**ドロップダウン リストで、[xmlreceive] に対応するパイプラインを選択します。  
   
-11. **[OK]**をクリックします。  
+11. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
 [Siebel アダプターを物理ポートのバインドを手動で構成します。](../../adapters-and-accelerators/adapter-siebel/manually-configure-a-physical-port-binding-to-the-siebel-adapter.md)

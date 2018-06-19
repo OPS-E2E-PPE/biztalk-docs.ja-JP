@@ -1,14 +1,14 @@
 ---
-title: "メッセージ送信 ASPX サンプル |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ送信 ASPX サンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8358f849-231f-432c-9fc2-6efdcf95580d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207202"
 ---
 # <a name="message-submission-aspx-sample"></a>メッセージ送信 ASPX サンプル
 ここでは、サービス内容をプライベート プロセスに送信するために使用するサンプル .aspx コードを提供します。 line-of-business (LOB) アプリケーションの代わりに、この .aspx コードを使用できます。  

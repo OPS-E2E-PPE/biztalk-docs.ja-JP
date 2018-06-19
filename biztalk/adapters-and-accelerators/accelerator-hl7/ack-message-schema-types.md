@@ -1,18 +1,18 @@
 ---
-title: "ACK メッセージ スキーマの種類 |Microsoft ドキュメント"
-ms.custom: 
+title: ACK メッセージ スキーマの種類 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, ACK schemas
 - acknowledgements, ACK schema types
 - ACK messages
 ms.assetid: da6981a0-a70a-481e-8db4-4a6851f205f1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,11 +21,12 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960960"
 ---
 # <a name="ack-message-schema-types"></a>ACK メッセージ スキーマの種類
 受信確認メッセージのスキーマは 2 つの形式があります。  
   
--   **一般的な確認 (ACK)**です。 アプリケーションは、特定の基幹業務アプリケーション レベルの受信確認メッセージを定義していない、またはエラーが発生したアプリケーションの処理が除外は、一般的な確認 (ACK) を使用できます。 これを使用することもできますのレベルの受信確認をそのまま使用します。 次の表は、ACK メッセージの構造を示します。  
+-   **一般的な確認 (ACK)** です。 アプリケーションは、特定の基幹業務アプリケーション レベルの受信確認メッセージを定義していない、またはエラーが発生したアプリケーションの処理が除外は、一般的な確認 (ACK) を使用できます。 これを使用することもできますのレベルの受信確認をそのまま使用します。 次の表は、ACK メッセージの構造を示します。  
   
     |ACK ^ 異なります ^ ACK|一般的な受信確認|章|  
     |--------------------|----------------------------|-------------|  
@@ -33,7 +34,7 @@ ms.lasthandoff: 11/28/2017
     |MSA|メッセージの受信確認|2|  
     |[エラー]|[エラー]|2|  
   
--   **遅延確認応答 (MCF)**です。 このメッセージは、HL7 バージョン 2.1 で旧バージョンとの互換性のためだけ存在します。 非同期のアプリケーション レベル受信確認、MCF メッセージの一般的なフォームを作成するプロトコルの一部として使用するとします。 次の表は、MCF メッセージの構造を示します。  
+-   **遅延確認応答 (MCF)** です。 このメッセージは、HL7 バージョン 2.1 で旧バージョンとの互換性のためだけ存在します。 非同期のアプリケーション レベル受信確認、MCF メッセージの一般的なフォームを作成するプロトコルの一部として使用するとします。 次の表は、MCF メッセージの構造を示します。  
   
     |MCF ^ 異なります ^ ACK|受信確認の遅延|章|  
     |--------------------|----------------------------|-------------|  

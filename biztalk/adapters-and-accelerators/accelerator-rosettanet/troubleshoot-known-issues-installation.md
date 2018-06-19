@@ -15,6 +15,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22210842"
 ---
 # <a name="troubleshoot-the-installation-and-see-the-known-install-issues"></a>インストールのトラブルシューティングし、既知のインストールの問題を参照してください。
 

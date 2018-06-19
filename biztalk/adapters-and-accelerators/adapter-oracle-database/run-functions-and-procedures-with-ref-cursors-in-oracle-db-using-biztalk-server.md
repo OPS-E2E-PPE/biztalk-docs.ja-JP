@@ -1,11 +1,11 @@
 ---
-title: "関数、および BizTalk Server を使用して Oracle データベースで REF カーソルでプロシージャを呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: 関数、および BizTalk Server を使用して Oracle データベースで REF カーソルでプロシージャを呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - functions and procedures with REF CURSORS, invoking by using BizTalk Server
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - REF CURSORS
 - RECORD types
 ms.assetid: 5e84b8d3-6352-4911-93f9-5d455ff579d9
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967480"
 ---
 # <a name="invoke-functions-and-procedures-with-ref-cursors-in-oracle-database-using-biztalk-server"></a>関数、および BizTalk Server を使用して Oracle データベースで REF カーソルでプロシージャを呼び出す
 REF CURSOR は、クエリを実行することによって生成されるサーバー側の結果セットへのポインターを表す PL/SQL データ型です。 REF カーソルの種類の入力と出力データのストリーミングとは大量の PL/SQL コードとの間のデータを転送するのに最適。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]でとして、PL/SQL プロシージャと関数を OUT を渡すことができる厳密に型指定され、弱い型指定の (SYS_REFCURSOR) REF カーソルまたはローカルの OUT パラメーターのサポートを提供します。 方法の詳細については[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]REF Cursor をサポートするを参照してください[関数および REF CURSOR パラメーターを持つプロシージャで操作](../../adapters-and-accelerators/adapter-oracle-database/ref-cursor-parameters-in-oracle-database-adapter.md)です。 REF CURSOR の XML 構造については、次を参照してください。 [REF CURSOR のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)です。  

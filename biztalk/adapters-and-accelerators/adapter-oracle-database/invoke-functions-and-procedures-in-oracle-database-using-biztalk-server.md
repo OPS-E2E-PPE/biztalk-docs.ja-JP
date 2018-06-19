@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217074"
 ---
 # <a name="invoke-functions-and-procedures-in-oracle-database-using-biztalk-server"></a>関数、および BizTalk Server を使用して Oracle データベースでプロシージャを呼び出す
 アダプターのクライアントを使用して関数および Oracle データベースでプロシージャを呼び出すことができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]プロシージャ、関数、およびパッケージの操作を表示します。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]アダプター クライアントを起動することもできます。  

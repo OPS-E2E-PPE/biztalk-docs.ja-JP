@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite 操作の検索 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite 操作の検索 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2970ddd4-a534-4da4-9bd5-28bb9da4deca
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217818"
 ---
 # <a name="search-for-oracle-e-business-suite-operations"></a>Oracle E-business Suite 操作の検索
 使用することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]Oracle E-business Suite での特定のアイテムを検索します。 このトピックのさまざまなビューとどのような検索をサポートする方法の情報を提供する Oracle アイテムを検索するため、ワイルドカード文字を使用できます。 このトピックの内容もについての情報を使用して検索する方法、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  

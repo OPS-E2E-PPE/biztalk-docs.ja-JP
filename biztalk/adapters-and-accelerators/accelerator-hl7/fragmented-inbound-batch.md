@@ -1,18 +1,18 @@
 ---
-title: "受信バッチを断片化 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信バッチを断片化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching, fragmenting messages
 - messages, fragmenting
 - fragmenting messages
 ms.assetid: 5844710e-f662-48a3-bf1a-bc1ba91e678a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204890"
 ---
 # <a name="fragmented-inbound-batch"></a>受信バッチの断片化
 構成することができます[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]メッセージ バッチを受信するには、バッチからメッセージを抽出し、送信先システムに個々 のメッセージをルーティングします。 受信のバッチが個別のメッセージにフラグメントの断片化を有効にした場合それ以外の場合、バッチが処理され、1 つのバッチまたはインターチェンジとしてルーティングします。 バッチ処理を有効にするのにには、BTAHL7 構成エクスプ ローラーを使用します。 バッチ処理を有効にする方法の詳細については、次を参照してください。[バッチ処理構成](../../adapters-and-accelerators/accelerator-hl7/configuring-batching.md)です。  

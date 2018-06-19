@@ -1,14 +1,14 @@
 ---
-title: "手順 2: バッチ オーケストレーションの有効化 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: バッチ オーケストレーションの有効化 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4badf807-f461-4d0a-a3b6-9f671e580d91
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206258"
 ---
 # <a name="step-2-enable-the-batch-orchestration"></a>手順 2: に、バッチ オーケストレーションが有効にします。
 バッチ オーケストレーションは、バッチの作成処理を制御します。 バッチに含まれるすべてのメッセージの参照を保持、送信バッチのトランザクションを制御、バッチ メッセージを生成、送信バッチにルーティングし、入力方向の受信確認のバッチ処理します。 作業を作成するバッチ処理のバッチ オーケストレーションを参加させる必要があります。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  [オーケストレーションのプロパティ] ダイアログ ボックスのコンソール ツリーで、**バインド**です。  
   
-3.  **バインド**] ウィンドウの**ホスト**[ **BizTalkServerApplication**です。 **[OK]**をクリックします。  
+3.  **バインド**] ウィンドウの**ホスト**[ **BizTalkServerApplication**です。 **[OK]** をクリックします。  
   
 4.  BizTalk 管理コンソールで、右クリック**BatchOrchestration.Orchestration_1**、クリックして**Enlist**です。  
   

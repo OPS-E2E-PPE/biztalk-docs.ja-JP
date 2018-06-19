@@ -1,15 +1,15 @@
 ---
-title: "特定の SAP アダプターのシナリオを SAP GUI を使用したタスクを実行する |Microsoft ドキュメント"
-description: "作成または RFC の送信、送信、Idoc、および SAP - BizTalk アダプター (BAP) 内の列ストアに大文字と小文字の確認"
-ms.custom: 
+title: 特定の SAP アダプターのシナリオを SAP GUI を使用したタスクを実行する |Microsoft ドキュメント
+description: 作成または RFC の送信、送信、Idoc、および SAP - BizTalk アダプター (BAP) 内の列ストアに大文字と小文字の確認
+ms.custom: ''
 ms.date: 08/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 738ed0d3-e68a-40a1-af0e-714bbecb38c6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217146"
 ---
 # <a name="sap-gui-tasks-for-the-sap-adapter-scenarios"></a>SAP アダプタ シナリオの SAP GUI タスク
 

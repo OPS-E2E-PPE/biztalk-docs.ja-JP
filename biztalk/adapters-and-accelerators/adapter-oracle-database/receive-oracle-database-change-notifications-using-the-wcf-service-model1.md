@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス Model1 を使用して Oracle データベースの変更通知を受け取る |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス Model1 を使用して Oracle データベースの変更通知を受け取る |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e0f0e2bf-3e76-43cc-85dc-7483dbce1cb5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217050"
 ---
 # <a name="receive-oracle-database-change-notifications-using-the-wcf-service-model1"></a>WCF サービス Model1 を使用して Oracle データベースの変更通知を受信します。
 このトピックの内容を構成する方法を示しています、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースからクエリ通知メッセージを受信します。 通知を示すためには、ACCOUNTACTIVITY、列を含むテーブル「処理」を検討してください。 [状態] 列の値に設定がこのテーブルに新しいレコードが挿入されると、' n ' です。 通知を受信すると「処理済み」の列が含まれるすべてのレコードを取得する SQL ステートメントを使用して通知を登録することによって、アダプターを構成することができます 'n' です。 これを行うための SQL ステートメントを指定することによって、 **NotificationStatement**プロパティをバインドします。 アダプターのクライアントは、通知を受信した後は、Oracle データベースでの後続のタスクを実行するためのロジックを格納できます。 わかりやすくするため、この例では、アダプターのクライアントの一覧として「処理」列が含まれるテーブル内のすべてのレコード 'n' です。  

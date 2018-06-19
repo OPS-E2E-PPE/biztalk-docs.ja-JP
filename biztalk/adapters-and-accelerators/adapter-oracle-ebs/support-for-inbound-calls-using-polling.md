@@ -1,14 +1,14 @@
 ---
-title: "ポーリングを使用して着信サポート |Microsoft ドキュメント"
-ms.custom: 
+title: ポーリングを使用して着信サポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ae02a93a-808f-4774-a2c4-efdf39a4d49a
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217402"
 ---
 # <a name="support-for-inbound-calls-using-polling"></a>ポーリングの受信呼び出しのサポート
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] Oracle E-business Suite でのデータへの変更を知らせる Oracle E-business Suite からメッセージを受信するクライアント プログラムを有効にします。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプターが指定された SQL ステートメント、ストアド プロシージャ、関数、または、パッケージ内の手順を実行する、「ポーリング ベース」のメッセージの受信をサポートは、データを取得し、一定の間隔をクライアントに結果を提供時間です。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 09/20/2017
 |ポーリング|Notification|  
 |-------------|------------------|  
 |サポートされているすべての Oracle データベース バージョンのポーリングがサポートされている、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。|通知は、バージョン 10.2 およびそれ以降の Oracle データベースに対してのみサポートされます。|  
-|一定の間隔でポーリングの使用可能なデータを確認するポーリング間隔を構成するか、または瞬時に、そのデータが使用可能です。 **ヒント:**ポーリングすれば、スループットを向上させる、データの変更が、継続的に行われていると、発生したタイミングととしてそれぞれの変更の通知を受けるたくないシナリオでします。 代わりに、前回の変更通知以降に行われたすべての変更の通知されるようにすた後ポーリング間隔を指定します。|データの変更通知は瞬時では常にします。|  
+|一定の間隔でポーリングの使用可能なデータを確認するポーリング間隔を構成するか、または瞬時に、そのデータが使用可能です。 **ヒント:** ポーリングすれば、スループットを向上させる、データの変更が、継続的に行われていると、発生したタイミングととしてそれぞれの変更の通知を受けるたくないシナリオでします。 代わりに、前回の変更通知以降に行われたすべての変更の通知されるようにすた後ポーリング間隔を指定します。|データの変更通知は瞬時では常にします。|  
 |ポーリングは、アダプターによって開始されます。 アダプターでは、データのポーリングを使用し、ポーリングの一部のデータがある場合は、ポーリング ステートメントを実行してポーリングを開始するかどうかを検証する SQL ステートメントを実行します。|通知は、Oracle データベースで開始されます。 だけ、アダプターによって発行された通知のステートメントでは、データベース ステートメントの結果セットの変更がある場合に通知を開始するように指示します。 通知は、Oracle データベースの機能です。|  
 |ポーリング ステートメントを使用して、読み取るまたは Oracle データベース内のデータを更新することができます。|通知のステートメントを使用すると、Oracle データベースでデータを読み取るだけです。|  
 |ポーリングでは、実際のデータが変更されたことについて通知されます。|Insert などのデータ変更の種類のみ通知を通知は、更新、および削除します。|  

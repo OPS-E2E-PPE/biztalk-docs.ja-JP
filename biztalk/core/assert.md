@@ -1,11 +1,11 @@
 ---
-title: "アサート |Microsoft ドキュメント"
-ms.custom: 
+title: アサート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Assert function [Business Rules Engine], .NET objects
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - Assert function [Business Rules Engine], DataConnection
 - .NET objects
 ms.assetid: e9989214-3c10-4691-9c38-f6fe64e511ed
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234050"
 ---
 # <a name="assert"></a>Filter
 *アサーション*プロセスをビジネス ルール エンジンの作業メモリにオブジェクトのインスタンスを追加することです。 エンジンは、一致、競合解決、アクションの各フェーズを使用し、その種類のインスタンスに対して記述された条件とアクションに基づいて各インスタンスを処理します。  

@@ -1,14 +1,14 @@
 ---
-title: "手順 1: 変更の Siebel アダプターと BizTalk プロジェクト vPrev |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: 変更の Siebel アダプターと BizTalk プロジェクト vPrev |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b7bd95e2-bd51-420f-8156-6f17cc0e91d6
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224066"
 ---
 # <a name="step-1-modify-the-vprev-biztalk-project-with-the-siebel-adapter"></a>手順 1: Siebel アダプターと vPrev BizTalk プロジェクトを変更します。
 ![手順 1/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
  **所要時間:** 10 分  
   
- **目標:**このステップで、次を変更する既存の vPrev BizTalk プロジェクト。  
+ **目標:** このステップで、次を変更する既存の vPrev BizTalk プロジェクト。  
   
 -   WCF ベースを使用してアカウントのビジネス コンポーネントに対する挿入操作のメタデータを生成[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。  
   
@@ -49,11 +50,11 @@ ms.lasthandoff: 09/20/2017
   
     1.  BizTalk マッパーは、BizTalk プロジェクトに追加します。 BizTalk プロジェクトを右クリックし、[**追加**、] をクリック**新しい項目の**します。  
   
-         **新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定**RequestMap.btm**です。 **[追加]**をクリックします。  
+         **新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定**RequestMap.btm**です。 **[追加]** をクリックします。  
   
     2.  送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。  
   
-    3.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Siebel アダプターの要求メッセージのスキーマを選択します。 このチュートリアルでは、次のように選択します。 *Siebel_BussComp_Migration.AccountService_Account_x5d*です。 **[OK]**をクリックします。  
+    3.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Siebel アダプターの要求メッセージのスキーマを選択します。 このチュートリアルでは、次のように選択します。 *Siebel_BussComp_Migration.AccountService_Account_x5d*です。 **[OK]** をクリックします。  
   
     4.  **送信元スキーマのルート ノード**ダイアログ ボックスで、*挿入*、順にクリック**OK**。  
   
@@ -71,17 +72,17 @@ ms.lasthandoff: 09/20/2017
   
     1.  BizTalk マッパーは、BizTalk プロジェクトに追加します。 BizTalk プロジェクトを右クリックし、[**追加**、] をクリック**新しい項目の**します。  
   
-         [新しい項目の追加] ダイアログ ボックスの左側のペインで選択**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定**ResponseMap.btm**です。 **[追加]**をクリックします。  
+         [新しい項目の追加] ダイアログ ボックスの左側のペインで選択**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定**ResponseMap.btm**です。 **[追加]** をクリックします。  
   
     2.  送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。  
   
-    3.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの応答メッセージのスキーマを選択して[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。 このチュートリアルでは、次のように選択します。 *Siebel_BussComp_Migration.SiebelDBBindingSchema*です。 **[OK]**をクリックします。  
+    3.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの応答メッセージのスキーマを選択して[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。 このチュートリアルでは、次のように選択します。 *Siebel_BussComp_Migration.SiebelDBBindingSchema*です。 **[OK]** をクリックします。  
   
     4.  **送信元スキーマのルート ノード**ダイアログ ボックスで、 *InsertResponse*  をクリック**OK**です。  
   
     5.  送信先スキーマ ペインで、をクリックして**送信先スキーマを開く**です。  
   
-    6.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Siebel アダプターの応答メッセージのスキーマを選択します。 このチュートリアルでは、次のように選択します。 *Siebel_BussComp_Migration.AccountService_Account_x5d*です。 **[OK]**をクリックします。  
+    6.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Siebel アダプターの応答メッセージのスキーマを選択します。 このチュートリアルでは、次のように選択します。 *Siebel_BussComp_Migration.AccountService_Account_x5d*です。 **[OK]** をクリックします。  
   
     7.  **ターゲット スキーマのルート ノード**ダイアログ ボックスで、 *InsertResponse*  をクリック**OK**です。  
   

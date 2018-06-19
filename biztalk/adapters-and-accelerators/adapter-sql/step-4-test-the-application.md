@@ -1,14 +1,14 @@
 ---
-title: "手順 4: アプリケーションのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: アプリケーションのテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 488b13fa-7a71-4430-bbf5-dbf47ba55562
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223034"
 ---
 # <a name="step-4-test-the-application"></a>手順 4: アプリケーションをテストします。
 ![4 のステップ 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")  
   
  **所要時間:** 10 分  
   
- **目標:**内のレコードを挿入することで、アプリケーションをテストするこの手順で、**従業員**のテーブル、 **ADAPTER_SAMPLES**データベース。 オーケストレーションはへの変更の通知を受け取る場合は、アプリケーションが正しく機能する、**従業員**テーブル。 オーケストレーションは、受信した通知の種類を抽出します。 オーケストレーションが実行される挿入操作の通知がある場合、 **UPDATE_EMPLOYEE**ストアド プロシージャと、応答を受信します。 オーケストレーションの値を抽出する**Employee_ID**と**名前**応答からし、それらに挿入、 **Purchase_Order**テーブル。  
+ **目標:** 内のレコードを挿入することで、アプリケーションをテストするこの手順で、**従業員**のテーブル、 **ADAPTER_SAMPLES**データベース。 オーケストレーションはへの変更の通知を受け取る場合は、アプリケーションが正しく機能する、**従業員**テーブル。 オーケストレーションは、受信した通知の種類を抽出します。 オーケストレーションが実行される挿入操作の通知がある場合、 **UPDATE_EMPLOYEE**ストアド プロシージャと、応答を受信します。 オーケストレーションの値を抽出する**Employee_ID**と**名前**応答からし、それらに挿入、 **Purchase_Order**テーブル。  
   
 ## <a name="prerequisites"></a>前提条件  
  この手順を始める前に、次を確認する必要があります。  

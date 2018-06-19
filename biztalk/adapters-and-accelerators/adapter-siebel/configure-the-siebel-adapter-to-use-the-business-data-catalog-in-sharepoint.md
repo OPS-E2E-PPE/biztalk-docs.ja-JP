@@ -1,14 +1,14 @@
 ---
-title: "ビジネス データと Siebel システムを統合する Siebel アダプターの構成カタログと SharePoint |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス データと Siebel システムを統合する Siebel アダプターの構成カタログと SharePoint |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 49b575e8-5f33-4e6e-a914-95d357671ab5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221938"
 ---
 # <a name="configure-the-siebel-adapter-to-integrate-the-siebel-system-with-the-business-data-catalog-and-sharepoint"></a>ビジネス データと Siebel システムを統合する Siebel アダプターの構成カタログと SharePoint
 [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]が含まれています、 [!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)]、特定の LOB アーティファクトを WCF サービスが生成されます。 この WCF サービスは、Microsoft インターネット インフォメーション サービス (IIS) などのホスト環境でホストされます。 ビジネス データ カタログ定義エディターは、WCF サービスの Web サービス記述言語 (WSDL) を取得する WCF サービスがホストされている URL を使用します。 WSDL を使用して、ビジネス データ カタログ定義エディターは、WCF サービスが使用できるメソッドを抽出します。 これらのメソッドは、エンティティとエンティティ間の関連付けを確立するために使用できます。  

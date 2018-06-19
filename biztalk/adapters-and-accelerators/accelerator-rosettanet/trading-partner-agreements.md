@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22208682"
 ---
 # <a name="trading-partner-agreements"></a>取引先アグリーメント
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 取引先アグリーメント (TPA)、パートナーとメッセージ交換を処理します。 TPA は、2 つのパートナー間のメッセージ処理と検証の詳細を定義します。 TPA は、2 つのパートナーが PIP (Partner Interface Process) を実装する方法を定義します。PIP は、特定のメッセージの種類のすべての実装に対するメッセージ コンテンツを指定します。 また、パートナーがインターネット経由でメッセージを交換する方法の詳細も定義します。  

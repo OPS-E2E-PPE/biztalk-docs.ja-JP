@@ -1,14 +1,14 @@
 ---
-title: "メッセージ通知 Operation1 のスキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ通知 Operation1 のスキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f98d76d0-6084-4de7-b6ff-124202ca92ab
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214098"
 ---
 # <a name="message-schemas-for-the-notification-operation"></a>通知操作のメッセージ スキーマ
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle データベースからデータベースの変更通知を受信する通知操作を表示します。  

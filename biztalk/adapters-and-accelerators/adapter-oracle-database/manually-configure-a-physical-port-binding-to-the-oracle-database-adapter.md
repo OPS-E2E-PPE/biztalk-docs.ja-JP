@@ -1,18 +1,18 @@
 ---
-title: "Oracle データベース アダプターを物理ポートのバインドを手動で構成 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベース アダプターを物理ポートのバインドを手動で構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, sending to an Oracle database
 - messages, receiving from an Oracle database
 - physical port binding, manually configuring
 ms.assetid: 6b118236-e9eb-494e-96b2-969c7064943d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214282"
 ---
 # <a name="manually-configure-a-physical-port-binding-to-the-oracle-database-adapter"></a>Oracle データベース アダプターを物理ポートのバインドを手動で構成します。
 このセクションの構成に関する情報を提供する、 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Wcf-oracledb バインディングを使用して、WCF カスタム バインドとして、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 アダプターを展開したらことができますを使用しての Oracle データベースからメッセージを送受信する、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 アダプタの展開の手順が異なります。  

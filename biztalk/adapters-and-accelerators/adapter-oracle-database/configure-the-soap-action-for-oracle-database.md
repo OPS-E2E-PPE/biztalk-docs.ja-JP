@@ -1,15 +1,15 @@
 ---
-title: "BizTalk で Oracle データベースの SOAP アクションの構成 |Microsoft ドキュメント"
-description: "Visual Studio で SOAP アクションを入力するか、Wcf-custom アダプターまたは Wcf-oracledb アダプターの BizTalk アダプター パック (BAP) でを使用"
-ms.custom: 
+title: BizTalk で Oracle データベースの SOAP アクションの構成 |Microsoft ドキュメント
+description: Visual Studio で SOAP アクションを入力するか、Wcf-custom アダプターまたは Wcf-oracledb アダプターの BizTalk アダプター パック (BAP) でを使用
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d0d21cca-3907-4f99-af76-c1e7286e1bcf
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215402"
 ---
 # <a name="configure-the-soap-action-for-oracle-database"></a>Oracle データベースの SOAP アクションを構成します。
 WCF ベースを使用して Oracle データベースで任意の操作を完了する[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]アダプターのユーザーは、SOAP アクションを入力する必要があります。 SOAP アクションは、どのような操作を完了する必要があるアダプターに通信します。 デザイン時に、または実行時に SOAP アクションを入力することができます。 ただし、入力 SOAP アクション両方デザイン時に時刻を実行すると、デザイン時に入力するアクションはオーバーライドされます。  
@@ -55,13 +56,13 @@ WCF ベースを使用して Oracle データベースで任意の操作を完�
   
 5.  **アクション**テキスト ボックスで、操作の SOAP アクションを指定します。 次の方法では、アクションを指定できます。  
   
-    -   **シングル アクション形式を使用して、**です。 Wcf-custom 送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。 例:  
+    -   **シングル アクション形式を使用して、** です。 Wcf-custom 送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。 例:  
   
         ```  
         http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert  
         ```  
   
-    -   **アクション マッピング形式を使用して、**です。 1 つの WCF カスタム ポートを送信し、1 つ以上の操作のメッセージを受け取る場合は、この形式を使用します。 たとえば、1 つの WCF カスタム ポートを送信および (レコードを挿入する、EMP テーブル内) Op1、Op2 (レコードを更新する、EMP テーブル内) のメッセージを受け取る場合、SOAP アクションは、次のように指定できます。  
+    -   **アクション マッピング形式を使用して、** です。 1 つの WCF カスタム ポートを送信し、1 つ以上の操作のメッセージを受け取る場合は、この形式を使用します。 たとえば、1 つの WCF カスタム ポートを送信および (レコードを挿入する、EMP テーブル内) Op1、Op2 (レコードを更新する、EMP テーブル内) のメッセージを受け取る場合、SOAP アクションは、次のように指定できます。  
   
         ```  
         <BtsActionMapping>  
@@ -88,13 +89,13 @@ WCF ベースを使用して Oracle データベースで任意の操作を完�
   
 6.  **アクション**テキスト ボックスで、操作の SOAP アクションを指定します。 次の方法では、アクションを指定できます。  
   
-    -   **シングル アクション形式を使用して、**です。 Wcf-oracledb、送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。 例:  
+    -   **シングル アクション形式を使用して、** です。 Wcf-oracledb、送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。 例:  
   
         ```  
         http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert  
         ```  
   
-    -   **アクション マッピング形式を使用して、**です。 1 つの Wcf-oracledb ポートを送信および複数の操作のメッセージを受け取る場合は、この形式を使用します。 たとえば、1 つの Wcf-oracledb ポートは、(レコードを挿入する、EMP テーブル内) Op1、Op2 (レコードを更新する、EMP テーブル内) のメッセージを送受信場合、SOAP アクションは次のように指定できます。  
+    -   **アクション マッピング形式を使用して、** です。 1 つの Wcf-oracledb ポートを送信および複数の操作のメッセージを受け取る場合は、この形式を使用します。 たとえば、1 つの Wcf-oracledb ポートは、(レコードを挿入する、EMP テーブル内) Op1、Op2 (レコードを更新する、EMP テーブル内) のメッセージを送受信場合、SOAP アクションは次のように指定できます。  
   
         ```  
         <BtsActionMapping>  

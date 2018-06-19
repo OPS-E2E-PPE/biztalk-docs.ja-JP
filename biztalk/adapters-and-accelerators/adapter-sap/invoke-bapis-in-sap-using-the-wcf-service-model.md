@@ -1,17 +1,17 @@
 ---
-title: "WCF サービス モデルを使用して SAP での Bapi を呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して SAP での Bapi を呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAPIs, invoking by using the WCF service model
 - WCF service model, invoking BAPIs
 ms.assetid: be3c48d6-2213-4ae5-97f4-634fbc423022
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218514"
 ---
 # <a name="invoke-bapis-in-sap-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SAP での Bapi を呼び出し
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]として Bapi を表示します。  

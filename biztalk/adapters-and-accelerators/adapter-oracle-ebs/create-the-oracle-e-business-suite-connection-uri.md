@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite 接続 URI を作成 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite 接続 URI を作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 91eb49fa-2a69-470b-b96d-dc3a6ffafef6
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219010"
 ---
 # <a name="create-the-oracle-e-business-suite-connection-uri"></a>Oracle E-business Suite 接続 URI を作成します。
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]接続 URI には、アダプターは、Oracle E-business Suite と基本的に基になる Oracle データベースへの接続を確立するために使用されるプロパティが含まれています。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]基になる Oracle データベースに接続する 2 つの方法をサポートしています: tnsnames.ora を使用して tnsnames.ora を使用せずします。 接続方法の種類に基づき、接続 URI の形式も異なります。 このトピックでは、Oracle 接続 URI に関する情報を提供し、その他のさまざまなプログラミング シナリオでの URI を指定する方法を説明するトピックへのリンクも示します。  
@@ -55,7 +56,7 @@ oracleebs://User=[USER_NAME];Password=[PASSWORD]@[NET_SERVICE_NAME]
   
 |接続 URI のプロパティ|カテゴリ|Description|  
 |-----------------------------|--------------|-----------------|  
-|[ユーザー名]|userauthparams|認証に使用するユーザー名。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公開、 **ClientCredentialType**クライアントが接続を確立するように指定する Oracle クライアント資格情報の種類を指定するプロパティをバインドします。 値は、使用可能な**ClientCredentialType**プロパティのバインドは、**データベース**と**EBusiness**です。 このバインディングのプロパティの値は、関連する資格情報を指定する必要があります。 詳細については、次を参照してください。 [Oracle 資格情報と接続 URI](#BKMK_OraCreds)です。 **注:**設定する必要があります、 **AcceptCredentialsInUri**にプロパティのバインド**true**接続 URI のユーザー名とパスワードを指定します。 **注:** 、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite に接続するときに、ユーザー名を入力する値の大文字と小文字は保持されません。 SQL の標準的な規則を使用して Oracle E-business Suite に渡されるユーザー名 * とします。 ただし、保持するユーザー名の大文字と小文字の場合、または特殊文字を格納しているユーザー名を入力する場合は、二重引用符で囲まれた値を指定する必要があります。|  
+|[ユーザー名]|userauthparams|認証に使用するユーザー名。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公開、 **ClientCredentialType**クライアントが接続を確立するように指定する Oracle クライアント資格情報の種類を指定するプロパティをバインドします。 値は、使用可能な**ClientCredentialType**プロパティのバインドは、**データベース**と**EBusiness**です。 このバインディングのプロパティの値は、関連する資格情報を指定する必要があります。 詳細については、次を参照してください。 [Oracle 資格情報と接続 URI](#BKMK_OraCreds)です。 **注:** 設定する必要があります、 **AcceptCredentialsInUri**にプロパティのバインド**true**接続 URI のユーザー名とパスワードを指定します。 **注:** 、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite に接続するときに、ユーザー名を入力する値の大文字と小文字は保持されません。 SQL の標準的な規則を使用して Oracle E-business Suite に渡されるユーザー名 * とします。 ただし、保持するユーザー名の大文字と小文字の場合、または特殊文字を格納しているユーザー名を入力する場合は、二重引用符で囲まれた値を指定する必要があります。|  
 |[パスワード]|userauthparams|認証に使用するパスワードです。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公開、 **ClientCredentialType**クライアントが接続を確立するように指定する Oracle クライアント資格情報の種類を指定するプロパティをバインドします。 場合、 **ClientCredentialType**プロパティに設定されている**データベース**クライアントは、Oracle データベース ユーザーのパスワードを指定する必要があります。 場合、 **ClientCredentialType**プロパティに設定されている**EBusiness**クライアントは、Oracle E-business Suite ユーザーのパスワードを指定する必要があります。 **注:** 、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite への接続時にパスワードを入力する値の大文字と小文字は保持されません。 SQL の標準的な規則を使用して Oracle E-business Suite に渡されるユーザー名 * とします。 ただし、保持するパスワードの大文字と小文字の場合、または特殊文字を含むパスワードを入力する場合は、二重引用符で囲まれた値を指定する必要があります。|  
 |[NET_SERVICE_NAME]|hostinfoparams|Net サービス名、コンピューター上の tnsnames.ora ファイルで指定されている場所、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]がインストールされています。 Net サービス名と tnsnames.ora については、次を参照してください。 [E-business Suite アダプター用の Oracle クライアントを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-oracle-client-for-the-e-business-suite-adapter.md)です。|  
   
@@ -83,7 +84,7 @@ oracleebs://User=[USER_NAME];Password=[PASSWORD]@[SERVER_NAME]:[PORT_NUMBER]/[SE
   
 |接続 URI のプロパティ|カテゴリ|Description|  
 |-----------------------------|--------------|-----------------|  
-|[ユーザー名]|userauthparams|認証に使用するユーザー名。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公開、 **ClientCredentialType**クライアントが接続を確立するように指定する Oracle クライアント資格情報の種類を指定するプロパティをバインドします。 値は、使用可能な**ClientCredentialType**プロパティのバインドは、**データベース**と**EBusiness**です。 このバインディングのプロパティの値は、関連する資格情報を指定する必要があります。 詳細については、次を参照してください。 [Oracle 資格情報と接続 URI](#BKMK_OraCreds)です。 **注:**設定する必要があります、 **AcceptCredentialsInUri**にプロパティのバインド**true**接続 URI のユーザー名とパスワードを指定します。 **注:** 、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite に接続するときに、ユーザー名を入力する値の大文字と小文字は保持されません。 SQL の標準的な規則を使用して Oracle E-business Suite に渡されるユーザー名 * とします。 ただし、保持するユーザー名の大文字と小文字の場合、または特殊文字を格納しているユーザー名を入力する場合は、二重引用符で囲まれた値を指定する必要があります。|  
+|[ユーザー名]|userauthparams|認証に使用するユーザー名。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公開、 **ClientCredentialType**クライアントが接続を確立するように指定する Oracle クライアント資格情報の種類を指定するプロパティをバインドします。 値は、使用可能な**ClientCredentialType**プロパティのバインドは、**データベース**と**EBusiness**です。 このバインディングのプロパティの値は、関連する資格情報を指定する必要があります。 詳細については、次を参照してください。 [Oracle 資格情報と接続 URI](#BKMK_OraCreds)です。 **注:** 設定する必要があります、 **AcceptCredentialsInUri**にプロパティのバインド**true**接続 URI のユーザー名とパスワードを指定します。 **注:** 、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite に接続するときに、ユーザー名を入力する値の大文字と小文字は保持されません。 SQL の標準的な規則を使用して Oracle E-business Suite に渡されるユーザー名 * とします。 ただし、保持するユーザー名の大文字と小文字の場合、または特殊文字を格納しているユーザー名を入力する場合は、二重引用符で囲まれた値を指定する必要があります。|  
 |[パスワード]|userauthparams|認証に使用するパスワードです。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公開、 **ClientCredentialType**クライアントが接続を確立するように指定する Oracle クライアント資格情報の種類を指定するプロパティをバインドします。 場合、 **ClientCredentialType**プロパティに設定されている**データベース**クライアントは、Oracle データベース ユーザーのパスワードを指定する必要があります。 場合、 **ClientCredentialType**プロパティに設定されている**EBusiness**クライアントは、Oracle E-business Suite ユーザーのパスワードを指定する必要があります。 **注:** 、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite への接続時にパスワードを入力する値の大文字と小文字は保持されません。 SQL の標準的な規則を使用して Oracle E-business Suite に渡されるユーザー名 * とします。 ただし、保持するパスワードの大文字と小文字の場合、または特殊文字を含むパスワードを入力する場合は、二重引用符で囲まれた値を指定する必要があります。|  
 |[サーバー名]|hostinfoparams|Oracle E-business Suite が実行されているサーバーの名前。 これは必須です。|  
 |[PORT_NUMBER]|hostinfoparams|Oracle Net リスナー ポートです。 1521 の既定値。|  

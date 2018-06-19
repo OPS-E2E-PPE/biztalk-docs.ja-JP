@@ -1,14 +1,14 @@
 ---
-title: "手順 3 C: Sw:HandleRequest を取得する FILE 送信ポートの追加-対話ストア アンド フォワード |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3 C: Sw:HandleRequest を取得する FILE 送信ポートの追加-対話ストア アンド フォワード |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c872b4be-ef8b-4e42-b5ef-63dfd120793f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225578"
 ---
 # <a name="step-3c-add-file-send-port-to-get-swhandlerequest-interact-store-and-forward"></a>手順 3 C: Sw:HandleRequest を取得する FILE 送信ポートの追加-対話ストア アンド フォワード
 この手順を開始する前に行う必要があります[手順 3 b: InterAct ストア アンド フォワードのシナリオの対話を受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3b-add-interact-receive-location-for-interact-store-and-forward-scenario.md)です。  
@@ -47,11 +48,11 @@ ms.lasthandoff: 09/20/2017
     |**これを使用してください。**|**これを行う**|  
     |------------------|--------------------|  
     |**プロパティ**|ドロップダウン リストから選択**BTS です。ReceivePortName**です。|  
-    |**演算子**|ドロップダウン リストから選択 **==**です。|  
+    |**演算子**|ドロップダウン リストから選択 **==** です。|  
     |**値**|型**Tutorial_IA_InputRequest_SnF**です。|  
     |**グループ化**|既定値を使用します。|  
   
-9. **[OK]**をクリックします。  
+9. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [手順 3: 送信ポートを作成し、対話ストアと転送シナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   

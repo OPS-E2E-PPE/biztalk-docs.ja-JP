@@ -1,14 +1,14 @@
 ---
-title: "ビジネスの Exchange に対するアダプターのメッセージを相互作用 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネスの Exchange に対するアダプターのメッセージを相互作用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b443b8a-4e56-47f1-8d91-5c807fd54ccc
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224602"
 ---
 # <a name="interact-adapter-messages-for-business-exchange"></a>ビジネスの Exchange に対するアダプターのメッセージを相互作用します。
 InterAct アダプターのエンド ツー エンドのサイクルには、4 つのメッセージがあります。 このメッセージは SWIFTNet プリミティブです。 最初と最後のメッセージには、クライアント側のプリミティブ、SwInt:ExchangeRequest および SwInt:ExchangeResponse が構成されています。 中央の 2 つのメッセージには、サーバー側のプリミティブ、SwInt:HandleRequest および SwInt:HandleResponse が構成されています。  

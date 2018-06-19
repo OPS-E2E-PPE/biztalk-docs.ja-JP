@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 管理コンソールへの SQL アダプタの追加 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 管理コンソールへの SQL アダプタの追加 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fd974f28-c9cb-46de-95be-83716231ebcd
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222050"
 ---
 # <a name="adding-the-sql-adapter-to-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールへの SQL アダプタの追加
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]で BizTalk WCF カスタム ポートまたは WCF SQL ポートとして使用できます。 使用する場合、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] WCF カスタム ポートを経由は WCF カスタム ポートを追加する必要はありません、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールに、WCF カスタム ポートが追加されるため、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]既定では管理コンソールです。 ただし、使用する場合、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] WCF-SQL ポートを介して、WCF-SQL アダプターを追加する必要があります最初、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  

@@ -1,14 +1,14 @@
 ---
-title: "FRR NAK ハンドラー サンプルの動作 |Microsoft ドキュメント"
-ms.custom: 
+title: FRR NAK ハンドラー サンプルの動作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f11bd20-3a0e-4d96-8e0a-32fecc7eed7e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209202"
 ---
 # <a name="how-the-frr-nak-handler-sample-works"></a>FRR NAK ハンドラーのサンプルのしくみ
 サンプル FRR NAK カスタム ハンドラーは、FIN 対応調整 (FRR) オーケストレーションとメッセージ修復オーケストレーション間の媒介として機能します。 FRR オーケストレーションでは、SWIFT ネットワークは、メッセージを受信しようとしました。 ときに発生したエラーを識別します。 FRR オーケストレーションの出力は、エラー オブジェクトを 1 つの部分から成るメッセージです。 FRR NAK カスタム ハンドラーは、そのメッセージをメッセージ修復オーケストレーションによって取り出されるメッセージの有効化して発生したエラーを示すエラー部分を含む、2 つの部分のメッセージに変換します。 メッセージ修復オーケストレーションでメッセージを開くと、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォーム、エラーの確認、同様に、メッセージを修復して再送信することができますができるように[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]SAA を再送信できます。  

@@ -1,17 +1,17 @@
 ---
-title: "Certificates1 を管理する |Microsoft ドキュメント"
-ms.custom: 
+title: Certificates1 を管理する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing certificates
 - certificates, managing
 ms.assetid: ffa60e2b-c131-4a49-ad1e-6c8a7271b05c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209290"
 ---
 # <a name="managing-certificates"></a>証明書の管理
 RosettaNet で通信をセキュリティで保護するには、証明書を使用する必要があります。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] では、証明書を使用して、送信メッセージの暗号化、送信メッセージへの署名、着信メッセージの暗号化の解除、着信メッセージに記された署名の確認を行います。  

@@ -1,11 +1,11 @@
 ---
-title: "SAP アダプターの機能のキー |Microsoft ドキュメント"
-ms.custom: 
+title: SAP アダプターの機能のキー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, deprecated features
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - features, operations-related
 - RFC server
 ms.assetid: 30e3140c-447f-42ba-a3b0-13ae66e78b0c
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218386"
 ---
 # <a name="key-features-in-the-sap-adapter"></a>SAP アダプターの主要な機能
 このセクションに一覧表示、非推奨の新機能と[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]です。  

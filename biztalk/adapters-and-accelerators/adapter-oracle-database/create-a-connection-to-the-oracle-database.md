@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214970"
 ---
 # <a name="create-a-connection-to-the-oracle-database"></a>Oracle データベースへの接続を作成します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]は、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドします。 そのため、WCF エンドポイントのアドレスを使用して、Oracle データベースへの通信を可能になります。 WCF では、エンドポイント アドレス、通常表現されますとして、Uniform Resource Identifier ()、サービスのネットワークの場所を識別します。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]接続プロパティが含まれて、URI とは、この場所の表現を[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]Oracle データベースへの接続を確立するために使用します。  

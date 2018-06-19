@@ -1,14 +1,14 @@
 ---
-title: "列が大文字か小文字の値を格納するかどうかを決定する |Microsoft ドキュメント"
-ms.custom: 
+title: 列が大文字か小文字の値を格納するかどうかを決定する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1edc8332-d8c7-4040-895b-f121fb03df44
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216986"
 ---
 # <a name="determining-whether-a-column-stores-lowercase-or-uppercase-values"></a>列ストアの小文字または大文字の値かどうかを決定します。
 このセクションでは、SAP テーブル内の列が小文字または大文字の文字を格納するかどうかを決定する SAP システム上で実行される高度なタスクを一覧表示します。 このタスクを実行する方法の詳細な手順については、SAP 管理者に問い合わせるか、SAP のマニュアルを参照してください必要があります。  

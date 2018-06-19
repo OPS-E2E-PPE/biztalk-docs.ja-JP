@@ -1,18 +1,18 @@
 ---
-title: "WCF サービス モデルを使用して Oracle データベースで SQLEXECUTE 操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して Oracle データベースで SQLEXECUTE 操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, performing a SQLEXECUTE operation
 - SQLEXECUTE operation, performing a
 - how to, invoke the SQLEXECUTE operation
 ms.assetid: d3f61e5f-4453-4a76-9bc6-40d91cb58224
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215978"
 ---
 # <a name="run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle データベースで SQLEXECUTE 操作を実行します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle のデータベース成果物の操作の標準セットを表示します。 これらの操作を使用すると、Oracle 関数またはプロシージャの呼び出しなどの操作または基本的な SQL データ操作言語 (DML) 操作でテーブルを実行できます。 ただし、シナリオが考えられます、ビジネス ロジックによって操作を実行する必要があること、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]発生しません。 たとえばをする可能性があります。  

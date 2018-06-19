@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: SharePoint サイト上の Oracle E-business Suite からのデータの表示 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: SharePoint サイト上の Oracle E-business Suite からのデータの表示 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1272b76c-29a1-4912-9c2d-8a4cf43df59d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215634"
 ---
 # <a name="tutorial-present-data-from-oracle-e-business-suite-on-a-sharepoint-site"></a>チュートリアル: SharePoint サイト上の Oracle E-business Suite からデータを表示します。
 このチュートリアルを使用して詳細な手順を説明する、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]の Microsoft Office SharePoint Server Oracle E-business Suite からデータを SharePoint ポータルを表示するとします。 構成済みの Oracle E-business Suite 成果物に SharePoint ポータルから、フルテキスト検索を実行することができます、Microsoft Office SharePoint Server で、検索アプリケーションを構成する方法も示します。  

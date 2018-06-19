@@ -1,17 +1,17 @@
 ---
-title: "どのような操作は、Oracle データベース アダプターによってサポートされて |Microsoft ドキュメント"
-ms.custom: 
+title: どのような操作は、Oracle データベース アダプターによってサポートされて |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP
 - operations, performing
 ms.assetid: d78dbeb8-9dab-4a71-982e-f7ada51472e8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215586"
 ---
 # <a name="what-operations-are-supported-by-the-oracle-database-adapter"></a>どのような操作、Oracle データベース アダプターによってサポートされます。
 アダプターのクライアントは、BizTalk プロジェクトを作成することで、WCF チャネル モデルを使用して、または WCF サービス モデルを使用して Oracle データベースで操作を実行できます。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]アプリケーションがそれで呼び出すことができ、アプリケーションで呼び出すことができます、さらに、操作を公開します。 これらの操作がチャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。 メッセージの構造および各操作に関連付けられている SOAP アクションについては、次を参照してください。[メッセージと BizTalk Adapter 用 Oracle Database のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)です。  

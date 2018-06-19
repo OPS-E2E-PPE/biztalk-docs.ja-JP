@@ -1,11 +1,11 @@
 ---
-title: "WCF チャネル モデルを使用して Oracle データベースに対する操作を呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: WCF チャネル モデルを使用して Oracle データベースに対する操作を呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - invoking operations, using the WCF channel model
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - invoking operations
 - operations, invoking
 ms.assetid: 6dd95c18-8f78-46d0-8845-b74890614c33
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962784"
 ---
 # <a name="invoke-operations-on-the-oracle-database-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して Oracle データベースに対する操作を呼び出す
 に対して操作を呼び出すことができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を使用して、 **IRequestChannel**または**IOutputChannel**図形をアダプターにメッセージを送信します。 基本的なパターンは、バインドを使用して、必要なチャネル形状をチャネル ファクトリを作成する (**OracleDBBinding**) と接続 URI から作成されたエンドポイント。 作成し、**メッセージ**をターゲットの操作用のメッセージ スキーマに準拠する SOAP メッセージを表すインスタンス。 これを送信することができますし、**メッセージ**を[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]チャネル ファクトリから作成されたチャネルを使用しています。 使用している場合、 **IRequestChannel**応答を受信します。 Oracle データベースで操作の実行に問題がある場合、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]スロー、 **Microsoft.ServiceModel.Channels.Common.TargetSystemException**です。  

@@ -1,11 +1,11 @@
 ---
-title: "SWIFT スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SWIFT, SWIFT messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - SWIFT messages, SWIFT schemas
 - SWIFT, schemas
 ms.assetid: 53017a56-a718-4577-a08c-9c92d9a54e7a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214922"
 ---
 # <a name="swift-schemas"></a>SWIFT スキーマ
 [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]送信し、非常に高速ネットワーク経由で個々 のフラット ファイルとして SWIFT の財務 (FIN) メッセージを受け取ります。 各メッセージは、定義済みの一連のラベルの付いたフィールドと位置指定引数または順序付けられたサブフィールド、およびトレーラーをトレーラ ブロック内の一連の構成のテキスト ブロック ヘッダー ブロックのセットで構成されます。 テキスト ブロックの内容は、メッセージの種類によって異なります。  

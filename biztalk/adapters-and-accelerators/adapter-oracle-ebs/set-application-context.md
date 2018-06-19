@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9697155-70c0-4173-80d2-d02d103c397b
-caps.latest.revision: ''
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22218602"
 ---
 # <a name="set-application-context"></a>アプリケーション コンテキストの設定
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]でそれらの操作を実行する前にアプリケーション コンテキストの設定が一部の Oracle E-business Suite アイテム (インターフェイス テーブル、インターフェイス ビュー、同時実行プログラム、および要求のセット) ために必須です。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーション コンテキストを設定するまで、これらの成果物の操作を実行することはできません。 ただし、基になる Oracle データベースでの成果物をユーザーの責任ですか、アプリケーションのコンテキストを設定するかどうか。  

@@ -13,7 +13,7 @@ helpviewer_keywords:
 - SegmentDataElements table
 - segments, X optionality
 ms.assetid: 8a59b407-95a2-45ba-a8d6-db4154c91d7b
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22207218"
 ---
 # <a name="39x39-and-39y39-optionality"></a>&#39;X&#39;と&#39;Y&#39; Optionality
 HL7 Access データベースに SegmentDataElements テーブルにはとして設定されているいくつかのデータ項目 (フィールド) が含まれています**要求数/Opt = X**のように、HL7 標準はこのフィールドに関連付けませんこのトリガー イベントを意味します次の表にします。  

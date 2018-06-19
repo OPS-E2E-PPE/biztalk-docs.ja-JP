@@ -1,14 +1,14 @@
 ---
-title: "EDI 上書きコンテキストのプロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: EDI 上書きコンテキストのプロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d78cd56f-1e34-4503-8ee1-93b52137097f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22243242"
 ---
 # <a name="edi-override-context-properties"></a>EDI 上書きコンテキストのプロパティ
 EdiOverride グローバル プロパティ スキーマのメッセージ コンテキスト プロパティを使用すると、EDI エンベロープの値を実行時に上書きすることができます。 これらのメッセージ コンテキスト プロパティは、Microsoft.BizTalk.Edi.BaseArtifacts アセンブリの edi-properties.xsd で定義されています。 これらのプロパティの名前空間は `http://schemas.microsoft.com/BizTalk/2006/edi-properties` です。  
@@ -51,7 +52,7 @@ EdiOverride グローバル プロパティ スキーマのメッセージ コ�
 |GS07|string|担当機関コード (X12)|  
 |GS08|string|バージョン/リリース/業界識別コード (X12)|  
 |ST02|string|トランザクション セット制御番号 (X12)<br /><br /> トランザクション セット制御番号を上書きすると、対応するトランザクション セットのトレーラー セグメント (SE) のフィールドが指定した値に合わせて設定されます。|  
-|GenerateUNA|boolean|EDI 送信パイプラインで送信 EDIFACT ドキュメントの UNA セグメントを作成するかどうかを決定します。<br /><br /> OverrideEdiHeader が true で GenerateUNA も true の場合、UNA セグメントが生成されます。 OverrideEdiHeader が true で GenerateUNA が false の場合、UNA セグメントは生成されません。<br /><br /> UNA セグメントの値は次の順序で決定されます。<br /><br /> -EdiOverride コンテキスト プロパティ、すべての UNA プロパティが存在する場合。<br />ない場合コンテキスト プロパティをすべて存在があり、生成の UNA セグメントがパーティのプロパティ、コンテキスト プロパティとパーティのプロパティの組み合わせでオンになっています。<br />ですべてのコンテキスト プロパティが存在すると、および生成の UNA セグメントがパーティのプロパティ、コンテキスト プロパティと標準 UNA 値の組み合わせでオフになってない場合**注:**このフィールドも何も起こりません OverrideEdiHeader が false の場合。|  
+|GenerateUNA|boolean|EDI 送信パイプラインで送信 EDIFACT ドキュメントの UNA セグメントを作成するかどうかを決定します。<br /><br /> OverrideEdiHeader が true で GenerateUNA も true の場合、UNA セグメントが生成されます。 OverrideEdiHeader が true で GenerateUNA が false の場合、UNA セグメントは生成されません。<br /><br /> UNA セグメントの値は次の順序で決定されます。<br /><br /> -EdiOverride コンテキスト プロパティ、すべての UNA プロパティが存在する場合。<br />ない場合コンテキスト プロパティをすべて存在があり、生成の UNA セグメントがパーティのプロパティ、コンテキスト プロパティとパーティのプロパティの組み合わせでオンになっています。<br />ですべてのコンテキスト プロパティが存在すると、および生成の UNA セグメントがパーティのプロパティ、コンテキスト プロパティと標準 UNA 値の組み合わせでオフになってない場合**注:** このフィールドも何も起こりません OverrideEdiHeader が false の場合。|  
 |UNA1|string|コンポーネント データ要素区切り記号 (EDIFACT)|  
 |UNA2|string|データ要素区切り記号 (EDIFACT)|  
 |UNA3|string|小数点記号 (EDIFACT)|  
@@ -76,7 +77,7 @@ EdiOverride グローバル プロパティ スキーマのメッセージ コ�
 |UNB7|string|アプリケーション参照 (EDIFACT)|  
 |UNB8|string|処理優先度コード (EDIFACT)|  
 |UNB9|string|受信確認要求 (EDIFACT)|  
-|GenerateUNG|boolean|EDI 送信パイプラインで送信 EDIFACT ドキュメントの UNG セグメントを作成するかどうかを決定します。<br /><br /> OverrideEdiHeader が true で GenerateUNG も true の場合、UNG セグメントが生成されます。 OverrideEdiHeader が true で GenerateUNG が false の場合、UNG セグメントは生成されません。<br /><br /> UNG セグメントの値は次の順序で決定されます。<br /><br /> -EdiOverride コンテキスト プロパティ、すべての UNG プロパティが存在する場合。<br />ない場合コンテキスト プロパティをすべて存在があり、生成の UNG セグメントがパーティのプロパティ、コンテキスト プロパティとパーティのプロパティの組み合わせでオンになっています。<br />ですべてのコンテキスト プロパティが存在すると、および生成の UNG セグメントがパーティのプロパティ、コンテキスト プロパティと標準 UNA 値の組み合わせでオフになってない場合**注:**このフィールドも何も起こりません OverrideEdiHeader が false の場合。|  
+|GenerateUNG|boolean|EDI 送信パイプラインで送信 EDIFACT ドキュメントの UNG セグメントを作成するかどうかを決定します。<br /><br /> OverrideEdiHeader が true で GenerateUNG も true の場合、UNG セグメントが生成されます。 OverrideEdiHeader が true で GenerateUNG が false の場合、UNG セグメントは生成されません。<br /><br /> UNG セグメントの値は次の順序で決定されます。<br /><br /> -EdiOverride コンテキスト プロパティ、すべての UNG プロパティが存在する場合。<br />ない場合コンテキスト プロパティをすべて存在があり、生成の UNG セグメントがパーティのプロパティ、コンテキスト プロパティとパーティのプロパティの組み合わせでオンになっています。<br />ですべてのコンテキスト プロパティが存在すると、および生成の UNG セグメントがパーティのプロパティ、コンテキスト プロパティと標準 UNA 値の組み合わせでオフになってない場合**注:** このフィールドも何も起こりません OverrideEdiHeader が false の場合。|  
 |[UNG1]|string|メッセージ グループ ID (EDIFACT)|  
 |UNG2_1|string|アプリケーション送信者 ID (EDIFACT)|  
 |UNG2_2|string|識別コードの修飾子 (EDIFACT)|  

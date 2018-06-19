@@ -1,11 +1,11 @@
 ---
-title: "例外と、Oracle データベース アダプターによるエラー処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 例外と、Oracle データベース アダプターによるエラー処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - exception, LOB
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - exceptions, error handling
 - error handling, exceptions
 ms.assetid: df9a1244-63cd-438e-8a06-99383fbeba2c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215170"
 ---
 # <a name="exceptions-and-error-handling-with-the-oracle-database-adapter"></a>例外と、Oracle データベース アダプターによるエラー処理
 このセクションでは、例外を一覧表示する、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]をスローします。 これらを含めることができます。  

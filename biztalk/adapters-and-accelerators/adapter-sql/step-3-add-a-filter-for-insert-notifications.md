@@ -1,14 +1,14 @@
 ---
-title: "手順 3: 挿入の通知にフィルターを追加する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: 挿入の通知にフィルターを追加する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53a1e9ef-a179-42a7-b4ae-b1170181053b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223266"
 ---
 # <a name="step-3-add-a-filter-for-insert-notifications"></a>手順 3: 挿入の通知にフィルターを追加します。
 ![手順 3 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
  **所要時間:** 5 分  
   
- **目標:**ここでは、挿入操作の通知メッセージのフィルター処理するオーケストレーションに判断図形を追加します。 オーケストレーションでの後続の操作は、通知を受け取りましたが Insert 型の場合にのみ実行されます。  
+ **目標:** ここでは、挿入操作の通知メッセージのフィルター処理するオーケストレーションに判断図形を追加します。 オーケストレーションでの後続の操作は、通知を受け取りましたが Insert 型の場合にのみ実行されます。  
   
 ## <a name="prerequisites"></a>前提条件  
  完了する必要があります[手順 2: 通知メッセージから通知の種類を抽出](../../adapters-and-accelerators/adapter-sql/step-2-extract-notification-type-from-notification-message.md)です。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  追加、**判断**、オーケストレーションに図形の後に、**式**図形です。 ツールボックスからドラッグして、**判断**図形を区分線のすぐ下に、**式**図形です。  
   
-     **判断**用に分岐を表示する図形が展開され、**場合**ステートメント**(Rule_1)**の分岐および、 **Else**ステートメントです。  
+     **判断**用に分岐を表示する図形が展開され、**場合**ステートメント **(Rule_1)** の分岐および、 **Else**ステートメントです。  
   
 2.  デザイン サーフェイスを右クリックし、**判断**図形をクリックして**プロパティ ウィンドウ**します。  
   
@@ -40,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  デザイン サーフェイスを右クリックし、 **rule_1**図形 (内の**判断**図形)、をクリックして**プロパティ ウィンドウ**します。  
   
-5.  **プロパティ**ウィンドウ**[rule_1]**で、**名前**プロパティで、「**挿入**です。  
+5.  **プロパティ**ウィンドウ **[rule_1]** で、**名前**プロパティで、「**挿入**です。  
   
 6.  右クリックし、**挿入**図形をクリックして**ブール式の編集**です。  
   

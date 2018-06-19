@@ -1,18 +1,18 @@
 ---
-title: "第 6 章: ビジネス ルールの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: '第 6 章: ビジネス ルールの展開 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tutorial, deploying business rules
 - deploying, business rules
 - business rules
 ms.assetid: e8fb8993-3450-4795-80fd-ff28bff8fe97
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207994"
 ---
 # <a name="module-6-deploying-the-business-rules"></a>第 6 章: ビジネス ルールの展開
 このモジュールで、インストール ログを確認、および、ビジネス ルール作成ツールを使用してデプロイを確認するビジネス ルールを展開します。  

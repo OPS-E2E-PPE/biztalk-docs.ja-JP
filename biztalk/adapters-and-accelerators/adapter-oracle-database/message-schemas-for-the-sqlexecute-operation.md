@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961544"
 ---
 # <a name="message-schemas-for-the-sqlexecute-operation"></a>SQLEXECUTE 操作のメッセージ スキーマ
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]LOB システムに存在成果物のための厳密に型指定されたメタデータを表示し、これらの成果物の標準的な操作を公開します。 ただし、アプリケーションがアプリケーションにビジネス ロジックによって駆動される任意の SQL ステートメントの実行を必要がありますのシナリオがあります。 たとえばをする可能性があります。  

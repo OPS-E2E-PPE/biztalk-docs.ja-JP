@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214274"
 ---
 # <a name="get-metadata-programmatically-from-the-oracle-database"></a>Oracle データベースからメタデータをプログラムで取得します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]は、WCF サービスとして Oracle データベースを公開するカスタムの WCF バインディング。 アダプターは、自己記述型のサービスとして、Oracle データベースを公開します。サポートされる操作に関するメタデータを公開できるサービスは、します。 メタデータは、WCF サービス; を論理インターフェイスを説明します。つまり、サービス コントラクト、メッセージ、およびメッセージ スキーマ、サービスと対話するために使用する必要があります。  

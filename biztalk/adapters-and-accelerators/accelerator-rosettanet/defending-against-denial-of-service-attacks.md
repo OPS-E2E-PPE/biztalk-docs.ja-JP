@@ -1,17 +1,17 @@
 ---
-title: "サービス拒否攻撃から保護 |Microsoft ドキュメント"
-ms.custom: 
+title: サービス拒否攻撃から保護 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, denial-of-service attacks
 - denial-of-service attacks
 ms.assetid: 63342d7a-a5df-4e11-9037-93175d8f7ea7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209706"
 ---
 # <a name="defending-against-denial-of-service-attacks"></a>サービス拒否攻撃から保護
 他のユーザーのインストールに対するサービス拒否攻撃を開始できませんでした[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]によって生じて、RNIFReceive.aspx ページが表示されます。 そのページに多数の空のメッセージを送信するときは可能性があります。 このような攻撃を放置すると、ASPX 受信ページで発行されたイベントがイベント ログに収まりきらなくなる場合があります。  

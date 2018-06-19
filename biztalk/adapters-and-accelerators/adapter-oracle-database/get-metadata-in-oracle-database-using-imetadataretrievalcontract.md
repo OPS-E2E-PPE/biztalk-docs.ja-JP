@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218202"
 ---
 # <a name="get-metadata-in-oracle-database-using-imetadataretrievalcontract"></a>IMetadataRetrievalContract を使用して Oracle データベース内のメタデータを取得します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]公開、 **IMetadataRetrievalContract**形式の Web サービス記述言語 (WSDL での操作のメタデータを取得して Oracle データベース アイテムを検索および参照を使用できるエンドポイント) ドキュメント。  

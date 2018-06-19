@@ -1,14 +1,14 @@
 ---
-title: "GetMessages サンプル |Microsoft ドキュメント"
-ms.custom: 
+title: GetMessages サンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 29e575fa-d68b-4975-84b8-da4f17bd2db3
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210738"
 ---
 # <a name="getmessages-sample"></a>GetMessages サンプル
 ここでは、メッセージ否認不可テーブルまたは基幹業務 (LOB) テーブルから、ユーザーが理解できる形式でメッセージを取得するためのサンプル コードについて説明します。 メッセージ否認不可テーブルには、[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]Archive データベースの MessageStorageIn および MessageStorageOut が含まれます。LOB テーブルには、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]DATA データベースの MessageFromLOB および MessageToLOB が含まれます。  

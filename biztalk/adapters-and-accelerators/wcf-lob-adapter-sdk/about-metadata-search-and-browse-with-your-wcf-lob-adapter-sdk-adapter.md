@@ -1,14 +1,14 @@
 ---
-title: "メタデータの検索と WCF LOB Adapter SDK、アダプターで参照に関する |Microsoft ドキュメント"
-ms.custom: 
+title: メタデータの検索と WCF LOB Adapter SDK、アダプターで参照に関する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1dc529ba-86ce-4f83-a4f8-73f5765308e2
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22224746"
 ---
 # <a name="about-metadata-search-and-browse-with-your-wcf-lob-adapter-sdk-adapter"></a>メタデータの検索と WCF LOB Adapter SDK、アダプターで参照について
 使用して構築された静的なサービスとは異なり、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]を使用してビルドされたアダプターは、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]型および基幹業務システムで使用できる操作に関する動的な情報を提供できます。 開発者は、次の操作をサポートできます。  

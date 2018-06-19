@@ -1,12 +1,12 @@
 ---
-title: "BizTalk Server では、RosettaNet (BTARN) の BizTalk アクセラレータをインストール |Microsoft ドキュメント"
-description: "ハードウェアおよびソフトウェア要件、インストールの手順、および BizTalk Server で BTARN の構成手順を参照してください。"
+title: BizTalk Server では、RosettaNet (BTARN) の BizTalk アクセラレータをインストール |Microsoft ドキュメント
+description: ハードウェアおよびソフトウェア要件、インストールの手順、および BizTalk Server で BTARN の構成手順を参照してください。
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-ms.assetid: 
+ms.assetid: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -15,6 +15,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211042"
 ---
 # <a name="install-biztalk-accelerator-for-rosettanet"></a>BizTalk Accelerator を RosettaNet をインストールします。
 
@@ -69,7 +70,7 @@ RosettaNet (BTARN) 用 Microsoft BizTalk Accelerator をインストールしま
 
 1.  BTARN の実行**setup.exe**管理者として。
   
-2.  **[インストール]**を選択します。  
+2.  **[インストール]** を選択します。  
   
 3.  **顧客情報**ページで、ユーザー名、組織、およびプロダクト キーを入力し、をクリックして**次**です。  
   
@@ -92,7 +93,7 @@ RosettaNet (BTARN) 用 Microsoft BizTalk Accelerator をインストールしま
     > [!IMPORTANT]
     >  セットアップが完了したら、表示、BTARN の構成が失敗する BTARN HTTP フロント エンド機能のみをインストールするカスタム インストールを実行する場合、"機能のオブジェクトを作成できませんでした: WebApp"エラーです。 このような場合は、2 つのファイルをコピー (**Microsoft.VC80.ATL.manifest**と**atl80.dll**) BizTalk Server を使用しているコンピューターからにインストールされている、BTARN HTTP フロント エンド機能をインストールしたコンピューターにします。  
     >   
-    >  2 つのファイルのソース フォルダーは、Visual Studio が BizTalk Server と同じコンピューターにインストールされている場合*< ドライブ\>*: \Program Files\Microsoft Visual Studio 11.0\VC\redist\x86\Microsoft.VC100.ATL です。 BizTalk server の 2 つのファイルのソース フォルダーの下のフォルダーは、Visual Studio が BizTalk server にインストールされていない場合*< ドライブ\>*: \WINDOWS\WinSxS です。 ファイルのバージョンは、8.0.50727.42 です。 HTTP フロント エンド機能がインストールされているコンピューター上の宛先フォルダーは、BTARN のインストール ディレクトリ (既定では、 *< ドライブ\>*: \Program Files\Microsoft BTARN)。  
+    >  2 つのファイルのソース フォルダーは、Visual Studio が BizTalk Server と同じコンピューターにインストールされている場合 *< ドライブ\>*: \Program Files\Microsoft Visual Studio 11.0\VC\redist\x86\Microsoft.VC100.ATL です。 BizTalk server の 2 つのファイルのソース フォルダーの下のフォルダーは、Visual Studio が BizTalk server にインストールされていない場合 *< ドライブ\>*: \WINDOWS\WinSxS です。 ファイルのバージョンは、8.0.50727.42 です。 HTTP フロント エンド機能がインストールされているコンピューター上の宛先フォルダーは、BTARN のインストール ディレクトリ (既定では、 *< ドライブ\>*: \Program Files\Microsoft BTARN)。  
     >   
     >  HTTP フロント エンド機能がインストールされて、コンピューターにこれらのファイルをコピーしたら、次のように再実行して**Configuration.exe**です。  
   
@@ -104,7 +105,7 @@ RosettaNet (BTARN) 用 Microsoft BizTalk Accelerator をインストールしま
 1.  **Microsoft BTARN 構成ウィザード**] ページで、[**基本的な構成**を既定の設定で、サーバーを構成するのにまたは**カスタム構成**に高度な構成オプションを使用してサーバーを構成します。  
   
     > [!NOTE]
-    >  ローカル管理者アカウントを使用して BTARN を構成する場合は、入力としてアカウント*< マシン名\>\\< 管理者名\>*で、**ユーザー ID**フィールド、**サービス資格情報**領域。  
+    >  ローカル管理者アカウントを使用して BTARN を構成する場合は、入力としてアカウント *< マシン名\>\\< 管理者名\>* で、**ユーザー ID**フィールド、**サービス資格情報**領域。  
   
 2.  **データベース サーバー名**テキスト ボックスで、表示されるサーバー名が正しいことを確認します。 **サービス資格情報**領域で、サービスを実行するアカウントのユーザー名 (ドメイン) とパスワードを入力します。 をクリックして**構成**です。  
   

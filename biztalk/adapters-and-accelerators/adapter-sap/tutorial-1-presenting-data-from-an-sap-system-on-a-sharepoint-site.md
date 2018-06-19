@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル 1: SharePoint サイト上の SAP システムからのデータの表示 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル 1: SharePoint サイト上の SAP システムからのデータの表示 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MOSS, creating an application in
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - MOSS
 - Microsoft Office SharePoint Server, creating an application in
 ms.assetid: 6e31c365-446c-4fe1-8538-fa6c869eed63
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217426"
 ---
 # <a name="tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site"></a>チュートリアル 1: SharePoint サイト上の SAP システムからのデータの表示
 このチュートリアルを使用して詳細な手順を説明する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Microsoft Office SharePoint Server、SharePoint portal に SAP システムからビジネス データを表示するとします。 使用する方法を示すために、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Office SharePoint Server と、あらゆるビジネスで 2 つの最も一般的なエンティティを考慮します: 顧客および販売注文します。 Office SharePoint server を使用してアプリケーションを作成するこの例では、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を次を行うには。  

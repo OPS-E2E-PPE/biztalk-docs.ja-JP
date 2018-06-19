@@ -1,11 +1,11 @@
 ---
-title: "Oracle Database 接続 URI を作成 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle Database 接続 URI を作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connection URI, basic format of
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - connection URI, connecting to the Oracle database
 - connection URI
 ms.assetid: 17d0a6d3-1b0c-43d6-a705-402c09a78ee0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217474"
 ---
 # <a name="create-the-oracle-database-connection-uri"></a>Oracle Database 接続 URI を作成します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]接続 URI には、アダプターは、Oracle データベースへの接続を確立するために使用するプロパティが含まれています。 このトピックでは、接続 tnsnames.ora を使用せずに tnsnames.ora を使用して Oracle データベースへの接続への URI を指定する方法に関する情報を提供します。 Oracle データベースに接続する接続 URI の使用に関する情報も提供します。  
@@ -98,7 +99,7 @@ oracledb://User=[USER_NAME];Password=[PASSWORD]@[SERVER_NAME]:[PORT_NUMBER]/[SER
 >  エンドポイント アドレスを指定すると、クエリ パラメーターが接続 URI の使用も、 [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] Metadata Exchange のクライアントです。  
   
 ## <a name="oracle-database-credentials-and-the-connection-uri"></a>Oracle データベースの資格情報と接続 URI  
- 既定では、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースの資格情報が接続 URI で指定した場合は例外をスローします。 これは、これらの資格情報は、接続 URI にプレーン テキストとして表されます。 セキュリティ上のリスクを伴いますこのためです。 設定することができます、 **AcceptCredentialsInUri**接続 URI は、Oracle データベースの資格情報を含めることができるかどうか、プロパティをコントロールにバインドします。 場合、 **AcceptCredentialsInUri**プロパティは**false**、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]プロパティの場合、接続 URI には、Oracle データベース資格情報が含まれている場合に例外をスロー**は true。**例外はスローされません。 いくつかの限られたシナリオは、接続 URI; での資格情報を指定する必要があります。たとえば、受信 POLLINGSTMT を受信する WCF を使用するときにサービス モデルまたは WCF チャネル モデル。 ほとんどの場合、ただし、しないで接続 URI 内の資格情報を提供します。 安全に Oracle データベースの資格情報を提供する方法の詳細については、次を参照してください。 [、Oracle データベース アプリケーションをセキュリティで保護された](../../adapters-and-accelerators/adapter-oracle-database/secure-your-oracle-database-applications.md)です。  
+ 既定では、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースの資格情報が接続 URI で指定した場合は例外をスローします。 これは、これらの資格情報は、接続 URI にプレーン テキストとして表されます。 セキュリティ上のリスクを伴いますこのためです。 設定することができます、 **AcceptCredentialsInUri**接続 URI は、Oracle データベースの資格情報を含めることができるかどうか、プロパティをコントロールにバインドします。 場合、 **AcceptCredentialsInUri**プロパティは**false**、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]プロパティの場合、接続 URI には、Oracle データベース資格情報が含まれている場合に例外をスロー**は true。** 例外はスローされません。 いくつかの限られたシナリオは、接続 URI; での資格情報を指定する必要があります。たとえば、受信 POLLINGSTMT を受信する WCF を使用するときにサービス モデルまたは WCF チャネル モデル。 ほとんどの場合、ただし、しないで接続 URI 内の資格情報を提供します。 安全に Oracle データベースの資格情報を提供する方法の詳細については、次を参照してください。 [、Oracle データベース アプリケーションをセキュリティで保護された](../../adapters-and-accelerators/adapter-oracle-database/secure-your-oracle-database-applications.md)です。  
   
 > [!IMPORTANT]
 >  プレーン テキストとしての文字列に資格情報を渡すことによってもたらされるセキュリティ リスクのため、接続 URI の Oracle データベース接続の資格情報を指定することを避ける必要があります。  

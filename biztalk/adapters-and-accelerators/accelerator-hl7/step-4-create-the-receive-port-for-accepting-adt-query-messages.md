@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207906"
 ---
 # <a name="step-4-create-the-receive-port-for-accepting-adt-query-messages"></a>手順 4: 作成、ADT クエリ メッセージを受け入れるための受信ポート
 受付、放電、によって送信されるクエリ メッセージを受信する場所を指定する受信ポートを作成して転送 (ADT) のシステムです。 次の手順を使用してクエリを受け入れるための受信ポートを作成 (クエリ ^ Q01 メッセージ) 最小下位層プロトコル (MLLP) アダプターを使用して、ADT システムからです。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/20/2017
 
 7. **トランスポート**セクションで、**型**、し、 **MLLP**ドロップダウン リストからです。  
   
-8. **[構成]**を選択します。 **MLLP トランスポートのプロパティ**、次を構成し、 **OK**です。  
+8. **[構成]** を選択します。 **MLLP トランスポートのプロパティ**、次を構成し、 **OK**です。  
   
     |プロパティ|目的|  
     |---|---|  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966136"
 ---
 # <a name="step-1-submitting-a-0c2-request"></a>手順 1: a 0 C の送信要求します。
 ここでは、0C2 - Asynchronous Test Request の PIP (Partner Interface Process) を使用して、要求を作成および送信します。 この PIP を使用することにより、非同期通信チャネルが 2 つの異なる組織間で正常に動作するようになります。 この PIP は、3A4 - Request Purchase Order PIP などの他の非同期ダブル アクション PIP と同様のパターンに従います。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 11/28/2017
     |**パートナー組織**|型**CONTOSO**です。|  
     |**[Pip Code]**|型**0c2**です。|  
     |**[Pip Version]**|型**R01.02**です。|  
-    |**Pip インスタンス ID**|型**0C2_Test**です。 **重要:**するように注意してください、 **PIP**重複したメッセージ ID のエラーを避けるために送信するメッセージごとに一意です。 後で 0C2_Test を実行する場合は、このフィールドを変更する必要があります。|  
+    |**Pip インスタンス ID**|型**0C2_Test**です。 **重要:** するように注意してください、 **PIP**重複したメッセージ ID のエラーを避けるために送信するメッセージごとに一意です。 後で 0C2_Test を実行する場合は、このフィールドを変更する必要があります。|  
     |**メッセージのカテゴリ**|型**アクション**です。|  
   
 3.  ある 0C2_Request.xml ファイルを開くメモ帳または別のテキスト エディターを使用して、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\LOBApplication\SampleInstances フォルダーをコピーして貼り付け、内容、 **Service Content** LOBWebApplication のフィールドです。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-verify-successful-communication-on-the-contoso-computer"></a>Contoso のコンピュータで通信が成功したかどうか確認するには  
   
-1.  **[スタート]**ボタンをクリックし、 **[すべてのプログラム]**、 **[Microsoft SQL Server]**の順にポイントし、 **[SQL Server Management Studio]**をクリックします。  
+1.  **[スタート]** ボタンをクリックし、 **[すべてのプログラム]**、 **[Microsoft SQL Server]** の順にポイントし、 **[SQL Server Management Studio]** をクリックします。  
   
 2.  **サーバーへの接続** ダイアログ ボックスで、 **SQL Server**ボックスに、入力**localhost** **Windows 認証**、 をクリックし、**接続**です。  
   

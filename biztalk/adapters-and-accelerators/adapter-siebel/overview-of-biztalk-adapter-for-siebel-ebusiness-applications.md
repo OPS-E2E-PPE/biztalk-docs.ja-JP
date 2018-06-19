@@ -1,18 +1,18 @@
 ---
-title: "BizTalk adapter 用 Siebel eBusiness Applications の概要 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk adapter 用 Siebel eBusiness Applications の概要 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - overview, adapter
 - adapter, overview of
 - adapter, overview
 ms.assetid: 41ab7d42-7096-45ef-9763-a5ccf88eb652
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222042"
 ---
 # <a name="overview-of-biztalk-adapter-for-siebel-ebusiness-applications"></a>BizTalk adapter 用 Siebel eBusiness Applications の概要
 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]を WCF サービスとしての Siebel システムを公開します。 アダプターのクライアントは、アダプターと SOAP メッセージを交換することで Siebel システムの操作を実行できます。 アダプターは WCF メッセージを処理して、操作を実行する Siebel システムへの適切な呼び出しを行います。 アダプターは、SOAP メッセージの形式でクライアントに返送 Siebel システムの応答を返します。  

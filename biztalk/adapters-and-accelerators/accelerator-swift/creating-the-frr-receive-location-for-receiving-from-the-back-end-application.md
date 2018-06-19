@@ -1,18 +1,18 @@
 ---
-title: "バックエンド アプリケーションから受信するための受信場所の作成、FRR |Microsoft ドキュメント"
-ms.custom: 
+title: バックエンド アプリケーションから受信するための受信場所の作成、FRR |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive locations, creating
 - creating, receive locations
 - FRR, creating receive locations
 ms.assetid: 78bd8084-ddec-4066-a474-ab5b1a0a849f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210082"
 ---
 # <a name="creating-the-frr-receive-location-for-receiving-from-the-back-end-application"></a>バックエンド アプリケーションから受信するための受信場所の FRR を作成します。
 FIN 対応調整を実行するバックエンド アプリケーションからメッセージを受信する受信場所を作成する必要があります。[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]です。  

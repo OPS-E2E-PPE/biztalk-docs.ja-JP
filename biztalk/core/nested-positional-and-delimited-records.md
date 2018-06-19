@@ -1,14 +1,14 @@
 ---
-title: "位置指定され、区切られたレコードを入れ子になった |Microsoft ドキュメント"
-ms.custom: 
+title: 位置指定され、区切られたレコードを入れ子になった |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d1688f04-d3c7-492c-82f7-a734bec0e409
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263082"
 ---
 # <a name="nested-positional-and-delimited-records"></a>入れ子になった位置指定レコードおよび区切り記号付きレコード
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でサポートされているフラット ファイル形式では、位置指定レコードと区切り記号付きレコードを組み合わせて使用できます (使用できない場合もあります)。 次の組み合わせが可能です。  

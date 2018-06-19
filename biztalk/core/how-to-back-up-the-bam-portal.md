@@ -1,14 +1,14 @@
 ---
-title: "BAM ポータルをバックアップする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルをバックアップする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8cea02e6-e387-4048-a1f3-d7c3c562f470
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247122"
 ---
 # <a name="how-to-back-up-the-bam-portal"></a>BAM ポータルをバックアップする方法
 ビジネス アクティビティの監視 (BAM) を使用している場合は、BizTalk Server のバックアップ処理の一環として BAM ポータルをバックアップする必要があります。 BAM を使用していない場合は、この手順を省略できます。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-back-up-the-bam-portal-iis-70"></a>BAM ポータル (IIS 7.0) をバックアップするには  
   
-1.  **[スタート]**ボタンをクリックし、 **[ファイル名を指定して実行]**をクリックします。  
+1.  **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。  
   
 2.  実行 ダイアログ ボックスで、名前 ボックスで、以下を入力: `runas /user:` *computername*`\`*accountname* `cmd`、クリックして**OK**またはキーを押して**Enter**です。  
   

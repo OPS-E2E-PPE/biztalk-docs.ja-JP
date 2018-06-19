@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルを使用して SQL アプリケーションを開発 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して SQL アプリケーションを開発 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d3ecfd6f-9144-4e41-a4b8-0c768a6ac254
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223210"
 ---
 # <a name="develop-sql-applications-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SQL アプリケーションを開発します。
 [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]WCF チャネル モデルをプログラミングする代わりに、WCF サービス モデルと呼ばれるプログラミング モデルを提供します。  
@@ -31,9 +32,9 @@ ms.lasthandoff: 09/20/2017
   
  WCF クライアント クラスを生成する、次のツールのいずれかを使用して、関連付けられているサービス メタデータからヘルパー コードを[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を公開します。  
   
--   **ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)**WCF に付属しています。  
+-   **ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)** WCF に付属しています。  
   
--   **[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]**に付属している[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]と統合し、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]エクスペリエンスをデザインします。 このツールは、強力な参照および検索、アダプターが公開される操作で機能を提供する標準的な Microsoft Windows のインターフェイスを表示します。 WCF クライアント アプリケーションを作成する方法に関する詳細については、次を参照してください。 [SQL Server の成果物のために、WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)です。  
+-   **[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]** に付属している[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]と統合し、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]エクスペリエンスをデザインします。 このツールは、強力な参照および検索、アダプターが公開される操作で機能を提供する標準的な Microsoft Windows のインターフェイスを表示します。 WCF クライアント アプリケーションを作成する方法に関する詳細については、次を参照してください。 [SQL Server の成果物のために、WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)です。  
   
      このセクションのトピックでは、情報、プロシージャ、および例を作成してモデルを使用して、WCF サービスを使用してアプリケーションを開発する際に役立ちますが含まれて、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。  
   

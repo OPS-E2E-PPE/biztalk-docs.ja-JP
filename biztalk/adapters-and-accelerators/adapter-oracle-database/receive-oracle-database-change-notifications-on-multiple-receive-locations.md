@@ -1,14 +1,14 @@
 ---
-title: "Oracle データベースの変更が複数の通知の受信場所 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle データベースの変更が複数の通知の受信場所 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6d273517-9527-4208-99be-97c8a92f176d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215754"
 ---
 # <a name="receive-oracle-database-change-notifications-on-multiple-receive-locations"></a>Oracle データベースの変更が複数の通知の受信場所
 同じデータベース内の複数の受信場所が同じテーブル (例: ACCOUNTACTIVITY) のクエリ通知を受信するように構成の異なる BizTalk アプリケーションの一部として作成が存在するシナリオを検討してください。 同じテーブルには、数百のレコードを挿入、すべての受信場所は、通知メッセージを受け取ります。 効果的に間で通知を受信する複数の受信場所、このような形でその受信場所のいずれかで、通知が受信した場合、BizTalk アプリケーションから、操作を呼び出すことができます、その他の受信場所、同じ通知を取得できません。 そのため、できます。 実質的に複数の場所で受信した負荷分散通知します。  
@@ -53,8 +54,8 @@ END NOTIFY_LOAD_BALANCE;
     |プロパティのバインド|値|  
     |----------------------|-----------|  
     |**InboundOperationType**|これを設定して**通知**です。|  
-    |**NotificationPort**|ODP.NET が Oracle データベースからデータベースの変更通知をリッスンするように開く必要があるポート番号を指定します。 これは、Windows ファイアウォールの例外一覧に追加する必要があります同じポート番号を設定します。 Windows ファイアウォールの例外リストにポートを追加する方法については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)です。 **重要:**これを既定値は-1 を設定する場合は、通知メッセージを受け取るための Windows ファイアウォールを完全に無効にする必要があります。|  
-    |**NotificationStatement**|これを設定します。<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`**注:**スキーマ名とテーブル名を指定する必要があります。 たとえば、 `SCOTT.ACCOUNTACTIVITY`のようにします。|  
+    |**NotificationPort**|ODP.NET が Oracle データベースからデータベースの変更通知をリッスンするように開く必要があるポート番号を指定します。 これは、Windows ファイアウォールの例外一覧に追加する必要があります同じポート番号を設定します。 Windows ファイアウォールの例外リストにポートを追加する方法については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)です。 **重要:** これを既定値は-1 を設定する場合は、通知メッセージを受け取るための Windows ファイアウォールを完全に無効にする必要があります。|  
+    |**NotificationStatement**|これを設定します。<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`**注:** スキーマ名とテーブル名を指定する必要があります。 たとえば、 `SCOTT.ACCOUNTACTIVITY`のようにします。|  
     |**NotifyOnListenerStart**|これを設定して**True**です。|  
   
 6.  BizTalk アプリケーションを起動します。  

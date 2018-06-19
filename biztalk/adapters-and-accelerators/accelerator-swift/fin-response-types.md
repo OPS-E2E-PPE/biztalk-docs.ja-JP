@@ -1,11 +1,11 @@
 ---
-title: "FIN 応答タイプ |Microsoft ドキュメント"
-ms.custom: 
+title: FIN 応答タイプ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, response types
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - messages, message types
 - response types [FIN Response Reconciliation]
 ms.assetid: a6ef2f20-08ab-40d3-a0a5-cc4048ce0987
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208066"
 ---
 # <a name="fin-response-types"></a>FIN 応答の種類
 FIN 対応調整 (FRR) は、カテゴリ、0 ~ 9 SWIFT FIN メッセージに応答を調整します。 SWIFT FIN アプリケーションは常に、少なくとも 1 つと、複数の可能性のあるいずれかの確認 (ACK) の送信、これらの FIN メッセージに応答または否定受信確認 (NAK)。 次の表に、メッセージの送信および受信の種類を (応答) FRR によって処理されるメッセージ。  

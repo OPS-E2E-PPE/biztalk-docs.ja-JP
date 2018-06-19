@@ -1,17 +1,17 @@
 ---
-title: "Contoso データベースの復元 |Microsoft ドキュメント"
-ms.custom: 
+title: Contoso データベースの復元 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private process tutorial, restoring databases
 - databases, restoring
 ms.assetid: 291178c1-826e-49e0-a1d2-cbffee749659
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210226"
 ---
 # <a name="restoring-the-contoso-database"></a>Contoso データベースの復元
 ここでは、SQL Server Management Studio を使用して SQL スクリプトを実行し、Contoso データベースとそれに関連付けられたストアド プロシージャを復元します。 また、データベース テーブルに準備データを追加します。  
@@ -87,11 +88,11 @@ ms.lasthandoff: 09/20/2017
     RETURN(0)  
     ```  
   
-5.  **[実行]**をクリックします。  
+5.  **[実行]** をクリックします。  
   
 ### <a name="to-set-permissions-on-the-contoso-database"></a>Contoso データベースにアクセス許可を設定するには  
   
-1.  Microsoft SQL Server Management Studio の オブジェクト エクスプ ローラーで展開**データベース**、展開、 **Contoso**データベースを展開し、展開**セキュリティ**です。 **[ユーザー]**を右クリックし、 **[新しいユーザー]**をクリックします。  
+1.  Microsoft SQL Server Management Studio の オブジェクト エクスプ ローラーで展開**データベース**、展開、 **Contoso**データベースを展開し、展開**セキュリティ**です。 **[ユーザー]** を右クリックし、 **[新しいユーザー]** をクリックします。  
   
 2.  データベース ユーザー - 新規 ダイアログ ボックスの**ログイン名**、省略記号ボタンをクリックします。  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  [ログインの選択] ダイアログ ボックスで、 **OK**です。  
   
-6.  データベース ユーザー - 新規 ダイアログ ボックスで、**データベース ロールのメンバーシップ**ペインで、 **db_datareader**と**db_datawriter**です。 **ユーザー名**、入力**BizTalk Application Users**です。 **[OK]**をクリックします。  
+6.  データベース ユーザー - 新規 ダイアログ ボックスで、**データベース ロールのメンバーシップ**ペインで、 **db_datareader**と**db_datawriter**です。 **ユーザー名**、入力**BizTalk Application Users**です。 **[OK]** をクリックします。  
   
 7.  手順 1. ~ 6. を繰り返します**BizTalk Isolated Host Users**を選択すると、 **db_datareader**と**db_datawriter**の**データベース ロールのメンバーシップ**、」と入力して**BizTalk Isolated Host Users**の**ユーザー名**です。  
   

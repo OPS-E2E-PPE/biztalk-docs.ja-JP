@@ -1,11 +1,11 @@
 ---
-title: "メッセージの種類とイベント |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの種類とイベント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, message events
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - message types
 - messages, message types
 ms.assetid: d53d51d0-216d-472b-97b7-8a96b8013510
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205954"
 ---
 # <a name="message-types-and-events"></a>メッセージの種類およびイベント
 HL7 標準が実際のイベントとしてまとめての特定のグループ化に関連するメッセージをグループ化*メッセージの種類*ADT です。 これらのメッセージには、患者の管理などのトリガー イベントが含まれます。 HL7 標準のバージョン 2.4 は、100 個を超えるメッセージの種類、それぞれの HL7 組織が割り当てられている 3 文字の一意のメッセージ型のコードを定義します。 HL7 標準のバージョンがきたよう HL7 組織が新しい機能を提供する新しいメッセージの種類を追加します。  

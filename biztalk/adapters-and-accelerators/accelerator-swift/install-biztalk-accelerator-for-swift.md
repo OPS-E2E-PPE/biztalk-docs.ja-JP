@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211626"
 ---
 # <a name="install-biztalk-accelerator-for-swift"></a>BizTalk Accelerator を SWIFT をインストールします。
 インストール[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef_md](../../includes/a4swift-currentversion-firstref-md.md)]の BizTalk Server にします。 
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="default-installation"></a>既定のインストール
 
 1. 実行、 [!INCLUDE[btaA4SWIFTNoVersion_md](../../includes/btaa4swiftnoversion-md.md)] **setup.exe**管理者として。
-2. **[インストール]**を選択します。
+2. **[インストール]** を選択します。
 3. **[ユーザー名]**、**[組織]**、およびプロダクト キーを入力します。 **[次へ]** を選択します。
 4. ライセンス契約を読み、クリックして**Accept**です。
 5. 選択**完了**、し、**次**です。
@@ -61,7 +62,7 @@ ms.lasthandoff: 09/20/2017
 
     システム再起動後に自動的にログオンするには、**[設定]** を選択して、サインイン アカウントを入力します。 これは、セットアップ中にのみ有効です。 セットアップが完了すると、この設定は無効になります。
 
-    **[インストール]**を選択します。
+    **[インストール]** を選択します。
  
 7. 選択**完了**を完了するとします。 ような一時フォルダーにセットアップ ログ ファイルを生成:`C:\Users\username\AppData\Local\Setup(111016 xxxxxx).log`です。
 
@@ -72,7 +73,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="custom-installation"></a>カスタム インストール
 
 1. 実行、 [!INCLUDE[btaA4SWIFTNoVersion_md](../../includes/btaa4swiftnoversion-md.md)] **setup.exe**管理者として。
-2. **[インストール]**を選択します。
+2. **[インストール]** を選択します。
 3. **[ユーザー名]**、**[組織]**、およびプロダクト キーを入力します。 **[次へ]** を選択します。
 4. ライセンス契約を読み、クリックして**Accept**です。
 5. 選択**カスタム**、し、**次**です。
@@ -91,7 +92,7 @@ ms.lasthandoff: 09/20/2017
     
 6. 確認、**概要**ページ。 変更するには、次のように選択します。**戻る**です。
 
-    **[インストール]**を選択します。
+    **[インストール]** を選択します。
  
 7. 選択**完了**を完了するとします。 ような一時フォルダーにセットアップ ログ ファイルを生成:`C:\Users\username\AppData\Local\Setup(111016 xxxxxx).log`です。
 

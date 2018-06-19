@@ -1,14 +1,14 @@
 ---
-title: "Namespace 管理 |Microsoft ドキュメント"
-ms.custom: 
+title: Namespace 管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4638c47c-3cdd-43af-aa00-da98e7293503
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263738"
 ---
 # <a name="namespace-management"></a>名前空間の管理
 BizTalk エディターは名前空間をサポートしています。 XML の名前空間は、XML メッセージにおける要素名または属性名として使用することのできる名前の集合です。 要素名や属性名を名前空間で修飾することにより、同じスキーマ内の別の部分で定義されている同じ要素名や同じ属性名の競合を防ぐことができます。  

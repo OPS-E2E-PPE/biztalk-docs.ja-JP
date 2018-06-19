@@ -1,11 +1,11 @@
 ---
-title: "メッセージの REF CURSOR のスキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの REF CURSOR のスキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - REF CURSORS, message schemas for
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - OUT REF CURSOR
 - IN OUT REF CURSOR
 ms.assetid: b62e7a9f-278c-41b3-90f0-2f621a34327b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214762"
 ---
 # <a name="message-schemas-for-ref-cursors"></a>REF CURSOR のメッセージ スキーマ
 REF CURSOR は、Oracle データベースに結果セットへのポインターを表す Oracle PL/SQL データ型です。 REF CURSOR 型は入力を有効にするデータのストリーミングを出力し、大量の PL/SQL コード ブロックとの間のデータを転送するために最適です。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]アウト PL/SQL プロシージャと関数でとして厳密に型指定され、弱い型指定の REF CURSOR パラメーターを渡すと IN OUT パラメーターのサポートを提供します。  

@@ -1,14 +1,14 @@
 ---
-title: "シナリオ 1: ビジネス データ一覧 web パーツを使用してデータの表示 |Microsoft ドキュメント"
-ms.custom: 
+title: 'シナリオ 1: ビジネス データ一覧 web パーツを使用してデータの表示 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b3831814-8b70-4352-b22f-cebd08750ef5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217434"
 ---
 # <a name="scenario-1-display-data-using-business-data-list-web-part"></a>シナリオ 1: ビジネス データ一覧 web パーツを使用してデータを表示します。
 使用して、**ビジネス データ一覧**用の Web パーツ、 **Finder**メソッド インスタンス。 この Web パーツでは、Oracle E-business Suite から従業員の一覧を取得する検索文字列を指定することができます。 このチュートリアルでは、これには、ディスプレイの従業員の Web パーツを呼び出されます。 このセクションでは、この Web パーツを作成する手順を説明します。 Web パーツの作成の詳細についてを参照してください「ビジネス データ リストのカスタマイズ、Web パーツ、およびサイト」で[http://go.microsoft.com/fwlink/?LinkId=104131](http://go.microsoft.com/fwlink/?LinkId=104131)です。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  **保存場所**セクションで、**ドキュメント ライブラリ**一覧で、クリックして**フォーム テンプレート**です。  
   
-    5.  **[作成]**をクリックします。 次の図は、作成した後、Web パーツ ページを示します。  
+    5.  **[作成]** をクリックします。 次の図は、作成した後、Web パーツ ページを示します。  
   
          ![新しい WebPart ページ](../../adapters-and-accelerators/adapter-oracle-ebs/media/23-web-part.gif "23 _ web_part")  
   

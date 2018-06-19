@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214626"
 ---
 # <a name="prerequisites-to-create-oracle-database-applications"></a>Oracle データベース アプリケーションを作成するための必要条件
 使用して BizTalk アプリケーションを開発する前に行う必要があります、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。 セクションには、BizTalk アプリケーションの開発に使用される一部の BizTalk Server ツールも表示されます。  

@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite のサインイン資格情報の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite のサインイン資格情報の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 743ced51-706b-4788-b5a8-e0ed8ffb3b48
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219074"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-oracle-e-business-suite"></a>Oracle E-business Suite のサインイン資格情報を構成します。
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプター クライアント クライアントの資格情報を提供する必要があります。 アダプターは、Oracle E-business Suite でユーザーを認証して、接続を確立するために、これらの資格情報を使用します。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
     |**ClientCredentialType が"Database"に設定されている場合は、Windows 認証を使用して接続するには**|「/」を指定して、**ユーザー名**テキスト ボックスと参加解除、**パスワード**ボックスは空白です。|  
     |**ClientCredentialType が"EBusiness"に設定されている場合は、Windows 認証を使用して接続するには**|Oracle E-business Suite の資格情報を指定**ユーザー名**と**パスワード**テキスト ボックス。 「/」を指定することも必要があります、 **OracleUserName**バインディング プロパティ、およびのままにして、 **OraclePassword**プロパティは空白をバインドします。|  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 #### <a name="to-specify-credentials-using-add-adapter-metadata-wizard"></a>アダプター メタデータの追加ウィザードを使用して資格情報を指定するには  
   
@@ -68,14 +69,14 @@ ms.lasthandoff: 09/20/2017
     |**カテゴリ**|をクリックして**アダプターを追加**です。|  
     |**[テンプレート]**|をクリックして**アダプター メタデータの追加**です。|  
   
-3.  **[追加]**をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
+3.  **[追加]** をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
   
 4.  [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] **Wcf-oracleebs**です。 BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。  
   
     > [!IMPORTANT]
     >  BizTalk で構成された Wcf-oracleebs ポートがある場合は、ポートの一覧から、ポートを選択します。  
   
-5.  **[次へ]**をクリックします。  
+5.  **[次へ]** をクリックします。  
   
 6.  **アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**一覧で、選択**oracleEBSBinding**、クリックして**構成**.  
   
@@ -88,7 +89,7 @@ ms.lasthandoff: 09/20/2017
     |**ClientCredentialType が"Database"に設定されている場合は、Windows 認証を使用して接続するには**|「/」を指定して、**ユーザー名**テキスト ボックスと参加解除、**パスワード**ボックスは空白です。|  
     |**ClientCredentialType が"EBusiness"に設定されている場合は、Windows 認証を使用して接続するには**|Oracle E-business Suite の資格情報を指定**ユーザー名**と**パスワード**テキスト ボックス。 「/」を指定することも必要があります、 **OracleUserName**バインディング プロパティ、およびのままにして、 **OraclePassword**プロパティは空白をバインドします。|  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 ## <a name="specifying-credentials-from-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールから資格情報の指定  
  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、Wcf-custom または Wcf-oracleebs ポートの構成の一部として、資格情報を指定する必要があります。  
@@ -132,7 +133,7 @@ ms.lasthandoff: 09/20/2017
   
     -   選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
 #### <a name="to-specify-credentials-for-the-wcf-oracleebs-port"></a>Wcf-oracleebs ポート用の資格情報を指定するには  
   
@@ -175,7 +176,7 @@ ms.lasthandoff: 09/20/2017
   
     -   選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [Oracle E-business Suite アプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-oracle-ebs/building-blocks-to-create-oracle-e-business-suite-applications.md)   

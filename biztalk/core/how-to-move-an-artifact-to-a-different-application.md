@@ -1,17 +1,17 @@
 ---
-title: "別のアプリケーションにアイテムを移動する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 別のアプリケーションにアイテムを移動する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - artifacts, moving
 - applications, artifacts
 ms.assetid: 861e7782-0566-4478-a0bd-f8ced1ea6d56
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254458"
 ---
 # <a name="how-to-move-an-artifact-to-a-different-application"></a>アイテムを別のアプリケーションに移動する方法
 このトピックでは、BizTalk Server 管理コンソールの [アプリケーションに移動] コマンドを使用して、アプリケーションから BizTalk グループ内の別のアプリケーションにアイテムを移動する方法について説明します。 この操作は、あるアプリケーションに既に存在するアイテムを、同じ BizTalk グループの別のアプリケーションで使用する場合に実行します。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
      **移動するアイテム**ボックスには、すべての依存関係アイテムも移動されると、移動するアイテムが表示されます。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [作成して、BizTalk アプリケーションの変更](../core/creating-and-modifying-biztalk-applications.md)

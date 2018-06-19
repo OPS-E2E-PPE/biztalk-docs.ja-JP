@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite を使用してチャネルを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: Oracle E-business Suite を使用してチャネルを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d18b7c2f-a43e-4499-ba94-4955dd5fe641
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962000"
 ---
 # <a name="create-a-channel-using-oracle-e-business-suite"></a>Oracle E-business Suite を使用して、チャネルを作成します。
 モデルでは、WCF チャネル、Oracle E-business Suite に対する操作を呼び出すし、SOAP メッセージを交換することで、結果を受け取る、 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] WCF チャネルを経由します。  

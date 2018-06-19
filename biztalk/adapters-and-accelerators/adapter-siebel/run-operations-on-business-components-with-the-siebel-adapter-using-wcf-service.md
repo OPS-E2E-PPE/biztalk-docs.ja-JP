@@ -1,11 +1,11 @@
 ---
-title: "WCF サービス モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, performing operations on business components
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business components, performing operations by using the WCF service model
 - performing operations, using the proxy
 ms.assetid: 7a5fdc95-6159-4f43-aac5-4e2f84e9138b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222226"
 ---
 # <a name="run-operations-on-business-components-with-the-siebel-adapter-using-the-wcf-service-model"></a>WCF サービス モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行します。
 Siebel ビジネス コンポーネントを対象とする WCF クライアントを作成することができます。 Siebel システムに挿入、更新、クエリ、削除、関連付ける、関連付けを解除、およびビジネス コンポーネントに対して子レコードのクエリ操作を実行し、WCF クライアントを使用できます。 [ビジネス オブジェクト] ノードに表示された Siebel ビジネス オブジェクト、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。 各ビジネス オブジェクトを作成するビジネス コンポーネントは、そのオブジェクトに対応するノードの下に表示されます。 」の手順を行うことができる[Siebel アダプターと WCF サービス モデルの概要](../../adapters-and-accelerators/adapter-siebel/overview-of-the-wcf-service-model-with-the-siebel-adapter.md)を特定の操作を対象とするビジネス コンポーネント用の WCF クライアントを生成して、ビジネスでこれらの操作を呼び出すクライアントを使用するにはコンポーネント。  

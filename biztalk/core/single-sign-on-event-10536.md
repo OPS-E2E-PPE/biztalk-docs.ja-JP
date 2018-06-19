@@ -1,14 +1,14 @@
 ---
-title: "シングル サインオン: イベント 10536 |Microsoft ドキュメント"
-ms.custom: 
+title: 'シングル サインオン: イベント 10536 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d493a45b-c4ed-40fc-8803-b3ca12f9795b
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271234"
 ---
 # <a name="single-sign-on-event-10536"></a>シングル サインオン: イベント 10536
 ## <a name="details"></a>詳細  
@@ -34,17 +35,17 @@ ms.lasthandoff: 09/20/2017
 ## <a name="explanation"></a>説明  
  この警告監査イベントは、ユーザー定義の監査レベルを満たすイベントが発生したことを示します。 このイベント メッセージには次の項目が含まれます。  
   
- **関数:**実行されている関数  
+ **関数:** 実行されている関数  
   
  **追跡 ID:** SSO API が最初に生成された一意の GUID が呼び出されます。  
   
- **クライアント コンピューター:**関数が開始したクライアント コンピューター。  
+ **クライアント コンピューター:** 関数が開始したクライアント コンピューター。  
   
- **クライアント ユーザー:**関数を呼び出したユーザー アカウントの名前。  
+ **クライアント ユーザー:** 関数を呼び出したユーザー アカウントの名前。  
   
  **アプリケーション名:** SSO の名前は、この関数に関連付けられているアプリケーションを関連します。  
   
- **エラー コード:**エラーの一意の識別子。  
+ **エラー コード:** エラーの一意の識別子。  
   
  この種類のイベントは、開発、トラブルシューティング、またはアプリケーションの実行時に発生した問題の診断に使用されます。 表示された情報を使用して、実行中の SSO API 呼び出しを判別できます。  
   

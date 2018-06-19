@@ -1,11 +1,11 @@
 ---
-title: ".NET Framework データ プロバイダーを使用して、mySAP Business Suite の |Microsoft ドキュメント"
-ms.custom: 
+title: .NET Framework データ プロバイダーを使用して、mySAP Business Suite の |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - DDEX plug-in
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - installing
 - configuration file
 ms.assetid: 3abe9c34-b81b-4c0a-9bfd-bf05f89f29b8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217194"
 ---
 # <a name="use-the-net-framework-data-provider-for-mysap-business-suite"></a>使用して、.NET Framework Data Provider 用 mySAP Business Suite
 このセクションの内容については、手順を使用して、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]です。 によって使用されるカスタム RFC について[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]プロバイダーの制限事項を参照してください、[について、.NET Framework Data Provider for mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)です。  

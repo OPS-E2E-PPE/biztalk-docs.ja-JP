@@ -1,14 +1,14 @@
 ---
-title: "手順 4: 作成、バッチ メッセージを受け入れるための受信ポート |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: 作成、バッチ メッセージを受け入れるための受信ポート |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a37eb334-c4ae-40d1-a433-bf0ab39c0765
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207610"
 ---
 # <a name="step-4-create-a-receive-port-for-accepting-the-batch-message"></a>手順 4: 作成、バッチ メッセージを受け入れるための受信ポート
 このステップでは、作成し、受信のバッチを受信するポートを構成します。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
 
 7. **トランスポート**セクションで、**型**、し、 **MLLP**ドロップダウン リストからです。  
   
-8. **[構成]**を選択します。 **MLLP トランスポートのプロパティ**、次を構成し、 **OK**です。  
+8. **[構成]** を選択します。 **MLLP トランスポートのプロパティ**、次を構成し、 **OK**です。  
 
     |プロパティ|目的|  
     |---|---|  

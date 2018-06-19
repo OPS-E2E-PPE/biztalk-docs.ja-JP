@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server で Oracle E-business Suite の SOAP アクションの構成 |Microsoft ドキュメント"
-description: "Visual Studio で SOAP アクションを入力するか、Wcf-custom アダプターまたは Wcf-oracleebs アダプターの BizTalk アダプター パック (BAP) でを使用"
-ms.custom: 
+title: BizTalk Server で Oracle E-business Suite の SOAP アクションの構成 |Microsoft ドキュメント
+description: Visual Studio で SOAP アクションを入力するか、Wcf-custom アダプターまたは Wcf-oracleebs アダプターの BizTalk アダプター パック (BAP) でを使用
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ca799d96-66e4-4d4e-a632-cb5505e999b4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218282"
 ---
 # <a name="configure-the-soap-action-for-oracle-e-business-suite"></a>Oracle E-business Suite の SOAP アクションを構成します。
 WCF ベースを使用して Oracle E-business Suite で操作を実行する[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]、SOAP アクションを指定する必要があります。 SOAP アクションは、どのようなアクションを実行する必要があります、アダプターに通信します。 SOAP アクションのいずれかを指定する[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]またはから、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 ただし、両方の場所からの SOAP アクションを指定する場合、アクション指定したから[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]はオーバーライドします。  
@@ -54,13 +55,13 @@ WCF ベースを使用して Oracle E-business Suite で操作を実行する[!I
   
 5.  **アクション**テキスト ボックスで、操作の SOAP アクションを指定します。 次の方法では、アクションを指定できます。  
   
-    -   **シングル アクション形式を使用して、**です。 Wcf-custom 送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。 例:  
+    -   **シングル アクション形式を使用して、** です。 Wcf-custom 送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。 例:  
   
         ```  
         InterfaceTables/Insert/SQLGL/GL/GL_ALLOC_HISTORY  
         ```  
   
-    -   **アクション マッピング形式を使用して、**です。 1 つの WCF カスタム ポートを送信し、1 つ以上の操作のメッセージを受け取る場合は、この形式を使用します。 たとえば、1 つの WCF カスタム ポートを送信および (レコードを挿入する GL_ALLOC_HISTORY テーブル) Op1、Op2 (レコードを更新する GL_ALLOC_HISTORY テーブル) のメッセージを受け取る場合、SOAP アクションは、次のように指定できます。  
+    -   **アクション マッピング形式を使用して、** です。 1 つの WCF カスタム ポートを送信し、1 つ以上の操作のメッセージを受け取る場合は、この形式を使用します。 たとえば、1 つの WCF カスタム ポートを送信および (レコードを挿入する GL_ALLOC_HISTORY テーブル) Op1、Op2 (レコードを更新する GL_ALLOC_HISTORY テーブル) のメッセージを受け取る場合、SOAP アクションは、次のように指定できます。  
   
         ```  
         <BtsActionMapping>  
@@ -87,13 +88,13 @@ WCF ベースを使用して Oracle E-business Suite で操作を実行する[!I
   
 6.  **アクション**テキスト ボックスで、操作の SOAP アクションを指定します。 次の方法では、アクションを指定できます。  
   
-    -   **シングル アクション形式を使用して、**です。 Wcf-oracleebs、送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。 例:  
+    -   **シングル アクション形式を使用して、** です。 Wcf-oracleebs、送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。 例:  
   
         ```  
         InterfaceTables/Insert/SQLGL/GL/GL_ALLOC_HISTORY  
         ```  
   
-    -   **アクション マッピング形式を使用して、**です。 1 つの Wcf-oracleebs ポートを送信および複数の操作のメッセージを受け取る場合は、この形式を使用します。 たとえば、1 つの Wcf-oracleebs ポートは、(レコードを挿入する GL_ALLOC_HISTORY テーブル) Op1、Op2 (レコードを更新する GL_ALLOC_HISTORY テーブル) のメッセージを送受信場合、SOAP アクションは次のように指定できます。  
+    -   **アクション マッピング形式を使用して、** です。 1 つの Wcf-oracleebs ポートを送信および複数の操作のメッセージを受け取る場合は、この形式を使用します。 たとえば、1 つの Wcf-oracleebs ポートは、(レコードを挿入する GL_ALLOC_HISTORY テーブル) Op1、Op2 (レコードを更新する GL_ALLOC_HISTORY テーブル) のメッセージを送受信場合、SOAP アクションは次のように指定できます。  
   
         ```  
         <BtsActionMapping>  
