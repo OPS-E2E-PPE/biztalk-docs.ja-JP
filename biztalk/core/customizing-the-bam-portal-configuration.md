@@ -1,14 +1,14 @@
 ---
-title: "BAM ポータルの構成をカスタマイズする |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ポータルの構成をカスタマイズする |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 507bd5f0-b2a0-4d52-85f8-9d984138ca79
-caps.latest.revision: "47"
+caps.latest.revision: 47
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009747"
 ---
 # <a name="customizing-the-bam-portal-configuration"></a>BAM ポータルの構成のカスタマイズ
 BAM ポータルには、構成可能なオプションが多数あります。 次の手順では、最適なユーザー エクスペリエンスを取得する BAM ポータルを変更する方法を示します。  
@@ -160,7 +161,7 @@ BAM ポータルには、構成可能なオプションが多数あります。 
   
 1.  コマンド プロンプトを開きます。  
   
-2.  実行**C:\Program files \microsoft SQL Server\90\Notification Services\9.0.242\Bin\nscontrol register bamalerts という名前のサーバー***\<サーバー名\>* を置き換えます*\<サーバー名\>*サーバーの名前に置き換えます。  
+2.  実行**C:\Program files \microsoft SQL Server\90\Notification Services\9.0.242\Bin\nscontrol register bamalerts という名前のサーバー***\<サーバー名\>* を置き換えます*\<サーバー名\>* サーバーの名前に置き換えます。  
   
 3.  <localizedText>F5</localizedText> キーを押して、ブラウザーを更新します。  
   

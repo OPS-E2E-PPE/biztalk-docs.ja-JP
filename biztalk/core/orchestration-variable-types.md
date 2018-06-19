@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264578"
 ---
 # <a name="orchestration-variable-types"></a>オーケストレーション変数の型
 次の定義済み型の変数を宣言できます。  

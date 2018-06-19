@@ -1,18 +1,18 @@
 ---
-title: "SubmitDirect (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: SubmitDirect (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, receive adapters
 - receive adapters, examples
 - examples, receive adapters
 ms.assetid: 3540368b-cf46-4c83-a87b-94aec9cd1b36
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975826"
 ---
 # <a name="submitdirect-biztalk-server-sample"></a>SubmitDirect (BizTalk Server サンプル)
 SubmitDirect サンプルは、.NET ベースのアプリケーションから Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に一方向のメッセージおよび要求 - 応答メッセージをプログラムで送信する方法を示します。 このサンプルでは、アダプターに [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] API を使用する例を示します。 また、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にメッセージを送信するために使用できる、Submit という名前の受信アダプターを提供します。  

@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 041f14cc-d00f-450d-b1e9-40a3e423c510
-caps.latest.revision: ''
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22225722"
 ---
 # <a name="consume-a-wcf-lob-adapter-sdk-adapter-in-a-biztalk-server-project"></a>BizTalk Server プロジェクト内の WCF LOB Adapter SDK アダプターを使用します。
 このトピックを使用して構築されたアダプターを使用する方法について説明、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]から[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を使用して、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]です。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 03/23/2018
   
 5.  をクリックして**OK** URI を構成した場合。  
   
-6.  **[接続]**をクリックします。 接続 URI が有効であり、クライアントの資格情報 (存在する場合) が受け入れられたら場合、**カテゴリ**ペインは、アダプターによって提供される操作とカテゴリで表示されます必要があります。  
+6.  **[接続]** をクリックします。 接続 URI が有効であり、クライアントの資格情報 (存在する場合) が受け入れられたら場合、**カテゴリ**ペインは、アダプターによって提供される操作とカテゴリで表示されます必要があります。  
   
 7.  場合は、アダプターは、検索をサポート、検索フィールドはアクティブになります。 それ以外の場合、コントラクト型でフィルター処理および内のノードをクリックして、型および操作を探索できる、**カテゴリ**ウィンドウです。  
   

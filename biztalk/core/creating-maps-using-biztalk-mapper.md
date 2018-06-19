@@ -1,11 +1,11 @@
 ---
-title: "BizTalk マッパーを使用してマップを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk マッパーを使用してマップを作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, maps
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - transformations [maps]
 - maps
 ms.assetid: 265e61d8-8cff-44c9-a717-8e895cb4b9bf
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238338"
 ---
 # <a name="creating-maps-using-biztalk-mapper"></a>BizTalk マッパーでのマップの作成
 BizTalk マッパーは、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 環境内で動作するツールです。 BizTalk マッパーを使用すると、XML メッセージの変換に必要なマップを作成および編集できます。 マップは、オーケストレーション (次の図を参照) に使用されるほか、受信ポートで受け取ったメッセージを処理し、変換を適用してから、送信ポートを介して送信するという目的にも使用されます。  

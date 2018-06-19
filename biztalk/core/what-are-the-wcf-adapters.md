@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 18ca8535-3386-4018-8b5b-d32bdb9ebf70
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22291218"
 ---
 # <a name="what-are-the-wcf-adapters"></a>WCF アダプタについて
 Windows Communication Foundation (WCF) アダプタには、受信アダプタと送信アダプタの 2 つがあります。 WCF 受信アダプタは、WCF サービス要求を受信するために使用します。 WCF 受信アダプタは、要求の受信、BizTalk メッセージ オブジェクトの作成、および関連するプロパティのメッセージ コンテキストへの昇格を行います。 WCF 送信アダプタは、WCF サービスを呼び出すときに使用します。 WCF 送信アダプタは、型宣言が不要なコントラクトを使用して WCF サービスを呼び出します。  

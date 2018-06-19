@@ -1,18 +1,18 @@
 ---
-title: "エスケープ文字の解析 |Microsoft ドキュメント"
-ms.custom: 
+title: エスケープ文字の解析 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components [custom], code samples
 - pipeline components [custom], escape characters
 - pipeline components [custom], parsing
 ms.assetid: 2b33f436-3c29-4ff5-8dfa-26d6591713bc
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971976"
 ---
 # <a name="parsing-escape-characters"></a>エスケープ文字の解析
 パーサーは通常の文字 (区切り文字以外またはその他の特殊文字以外の文字) の前に付加されたエスケープ文字を見つけると、そのエスケープ文字を無視します。 たとえば、文字列を指定して"abc \d"、"\\"エスケープ文字は、出力は"abcd"です。  

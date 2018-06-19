@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009651"
 ---
 # <a name="managing-parties"></a>パーティの管理
 使用して、**パーティ** ノードを設定できます (パーティ) のビジネス パートナーまたは社内の部署 (ビジネス プロファイル) を[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションが連携します。 詳細については、次を参照してください。[取引パートナー](../core/trading-partners-and-business-profiles.md)です。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 12/01/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**名前**|パーティ名を入力します。|  
-    |**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理します。**|パーティが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をホストしている同じ取引先を表すように指定する場合は、このチェック ボックスをオンにします。 **重要:**に付属する既定のパイプラインを使用するソリューション 2 パーティ TPM の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、少なくとも 1 つのパーティの場合は、このチェック ボックスを選択する必要があります。 **注:**このチェック ボックスをオフにすると、一部のプロパティは、このパーティのアグリーメントの作成中に無効になります。|  
+    |**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理します。**|パーティが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をホストしている同じ取引先を表すように指定する場合は、このチェック ボックスをオンにします。 **重要:** に付属する既定のパイプラインを使用するソリューション 2 パーティ TPM の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、少なくとも 1 つのパーティの場合は、このチェック ボックスを選択する必要があります。 **注:** このチェック ボックスをオフにすると、一部のプロパティは、このパーティのアグリーメントの作成中に無効になります。|  
     |**追加のプロパティ – 名前/値**|パーティに関する任意の情報を格納する、名前と値の組み合わせを入力します。 名前と値の組み合わせは、必要な数だけ追加できます。 **注**: どのような処理の名前と値のペアが、BizTalk Server によって使用されません。 このデータは、情報提供のみを目的のはします。|  
     |**Del**|選択すると、選択した名前と値のペアを削除します。|  
   

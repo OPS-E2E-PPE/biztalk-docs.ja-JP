@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK を使用してバインド プロパティとしてアダプターの設定を公開 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK を使用してバインド プロパティとしてアダプターの設定を公開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 59728113-917e-4bca-8e1a-609cd6558944
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224186"
 ---
 # <a name="expose-adapter-settings-as-a-binding-property-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用してバインド プロパティとしてアダプターの設定を公開します。
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]接続プール、メタデータのキャッシュ、およびその他のアダプターの動作を構成するためのさまざまなクラスで定義されたプロパティを使用します。 このトピックは、アダプターのコンシューマーが構成ファイルで設定できるように、バインディングのプロパティとしてこれらのプロパティを表面化する方法について説明します。  

@@ -1,14 +1,14 @@
 ---
-title: "チェックリスト: が毎月の保守チェックを行う |Microsoft ドキュメント"
-ms.custom: 
+title: 'チェックリスト: が毎月の保守チェックを行う |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 588b74fa-6bf5-43ad-aa15-3595adde76d1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009259"
 ---
 # <a name="checklist-complete-monthly-maintenance-checks-in-biztalk-server"></a>チェックリスト: BizTalk Server で確認の完了の毎月の保守
 このトピックの内容が毎月の信頼性、管理、セキュリティ、およびパフォーマンスのメンテナンス チェックの実行に必要な手順について説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムです。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 12/01/2017
 |最新の service pack と更新プログラムがインストールされていることを確認してください (管理およびセキュリティ チェック)。|[Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)|  
 |別の取引先の成果物が、同じホスト (セキュリティ チェック) にインストールされていないことを確認します。|[ホストとホスト インスタンスの構成](../technical-guides/configuring-hosts-and-host-instances.md)|  
 |BizTalk Server がドメイン レベルのみのユーザーおよびグループ (セキュリティ チェック) を使用していることを確認します。|[ドメイン グループ](../core/domain-groups.md)|  
-|MSDTC セキュリティ構成が有効になっていることを確認してください (セキュリティ チェック)。|参照してください**、適切な MSDTC セキュリティ構成オプションを設定**で[MSDTC の問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)です。|  
+|MSDTC セキュリティ構成が有効になっていることを確認してください (セキュリティ チェック)。|参照してください **、適切な MSDTC セキュリティ構成オプションを設定**で[MSDTC の問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)です。|  
 |判断 (パフォーマンス チェック) を増加する BizTalk Server のキャッシュ更新間隔をする必要があるかどうか。|[構成キャッシュ更新間隔を調整する方法](../technical-guides/how-to-adjust-the-configuration-cache-refresh-interval.md)|  
 |判断 (パフォーマンス チェック) を調整する各ホストの調整のオプションが必要かどうか。|受信および送信ホストの制限については、次を参照してください。[ホスト制限とは何ですか?](../core/what-is-host-throttling.md)です。<br />-トリガー、アクション、および受信と送信制限の緩和方法についてを参照してください**条件の発生原因、アクション、および軽減戦略を調整**で[BizTalk Server を実装する方法ホストのスロットル](../core/how-biztalk-server-implements-host-throttling.md)です。|  
 |オーケストレーション、形状、およびビジネス ルール エンジン (BRE) イベント (パフォーマンス チェック) を追跡など、不要な追跡が有効かどうかを決定します。|-   [追跡を無効にする方法](../technical-guides/how-to-disable-tracking.md)<br />-   [追跡の計画](../technical-guides/planning-for-tracking.md)<br />-   [追跡のベスト プラクティス](../technical-guides/planning-for-tracking.md#BKMK_TrackingBP)|  

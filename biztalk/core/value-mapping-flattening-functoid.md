@@ -19,12 +19,13 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287874"
 ---
 # <a name="value-mapping-flattening-functoid"></a>値のマッピング (フラット化) Functoid
 **値のマッピング (フラット化)** functoid では、複数のレコードを 1 つのレコードに変換することによって、入力インスタンス メッセージの一部をフラット化することができます。 これは、Microsoft Commerce Server カタログを変換する場合の一般的な操作です。  
   
 > [!NOTE]
->  **値のマッピング (フラット化)**で functoid を組み合わせることはできません、**ループ**functoid または**テーブル ループ**functoid です。 結果として送信元の下にある対象ノードに依存関係のループはありませんが想定するコンパイル済みのマップにこれらを組み合わせた場合、**ループ**または**テーブル ループ**functoid です。  
+>  **値のマッピング (フラット化)** で functoid を組み合わせることはできません、**ループ**functoid または**テーブル ループ**functoid です。 結果として送信元の下にある対象ノードに依存関係のループはありませんが想定するコンパイル済みのマップにこれらを組み合わせた場合、**ループ**または**テーブル ループ**functoid です。  
   
  次のコードは、商品カタログの一部を示しています。各レコードの特徴をバリアントで示した商品のバリアントが一覧になっています。  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
  ![Functoid を使用して基になるレコードをマップします。] (../core/media/valuemappingflattenfunctoid.gif "valuemappingflattenfunctoid")  
 値のマッピング (フラット化) のマップ  
   
- **値のマッピング (フラット化)** functoid は、最初のパラメーターが true の場合に、2 番目のパラメーターの値を返します。 このマップの最初の**等しい**functoid テストかどうかを**名前**属性が"Material"と等しい。 属性が"Material"と等しい場合、**等しい**functoid を返します**True**です。 これにより、**値のマッピング (フラット化)**の値を代入する functoid、**値**属性の出力メッセージのフィールドにします。  
+ **値のマッピング (フラット化)** functoid は、最初のパラメーターが true の場合に、2 番目のパラメーターの値を返します。 このマップの最初の**等しい**functoid テストかどうかを**名前**属性が"Material"と等しい。 属性が"Material"と等しい場合、**等しい**functoid を返します**True**です。 これにより、**値のマッピング (フラット化)** の値を代入する functoid、**値**属性の出力メッセージのフィールドにします。  
   
 ## <a name="see-also"></a>参照  
  [値のマッピング (フラット化) Functoid をマップに追加する方法](../core/how-to-add-value-mapping-flattening-functoids-to-a-map.md)   

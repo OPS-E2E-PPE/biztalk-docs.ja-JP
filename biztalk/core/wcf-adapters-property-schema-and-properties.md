@@ -1,14 +1,14 @@
 ---
-title: "WCF アダプター プロパティ スキーマおよびプロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: WCF アダプター プロパティ スキーマおよびプロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 02/09/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2093745e-86c0-4276-a7cc-a0187391ca4a
-caps.latest.revision: 
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 50798e04fdcaf5dce5288aa18608e2a981b162fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/11/2018
+ms.locfileid: "29139298"
 ---
 # <a name="wcf-adapters-property-schema-and-properties"></a>WCF アダプタ プロパティ スキーマおよびプロパティ
 WCF アダプタ プロパティ スキーマで昇格させたプロパティについて確認します。 WCF アダプタは、アプリケーションで使用できるプロパティに値を割り当てます。 また、WCF アダプタは、カスタム プロパティを BizTalk メッセージ コンテキストに書き込むが昇格させないメカニズムと、カスタム プロパティを BizTalk メッセージ コンテキストに昇格させるメカニズムを提供します。 詳細については、次を参照してください。[公開された WCF サービスでの SOAP ヘッダー](../core/soap-headers-with-published-wcf-services.md)です。  
@@ -65,7 +66,7 @@ WCF アダプタ プロパティ スキーマで昇格させたプロパティ�
 - WCF-WSHttp アダプタ
 
 #### <a name="bindingconfiguration"></a>BindingConfiguration
-XML 文字列を指定し、 **\<バインディング\>**のさまざまな種類を構成するのには定義済みの Windows Communication Foundation (WCF) によって提供されるバインディング。 システム指定のバインディングとカスタム バインドの詳細については、該当するトピックを参照してくださいを参照してください。
+XML 文字列を指定し、 **\<バインディング\>** のさまざまな種類を構成するのには定義済みの Windows Communication Foundation (WCF) によって提供されるバインディング。 システム指定のバインディングとカスタム バインドの詳細については、該当するトピックを参照してくださいを参照してください。
 
 例:
 
@@ -147,7 +148,7 @@ XML 文字列を指定し、 **\<バインディング\>**のさまざまな種�
 - Wcf-netmsmq アダプタ
 
 #### <a name="endpointbehaviorconfiguration"></a>EndpointBehaviorConfiguration
-XML 文字列を指定し、 **\<動作\>**の要素、  **\<endpointBehaviors\>** の動作設定を構成するのには、WCF エンドポイントです。 詳細については、  **\<endpointBehaviors\>** 要素では、「参照」の該当するトピックを参照してください。
+XML 文字列を指定し、 **\<動作\>** の要素、  **\<endpointBehaviors\>** の動作設定を構成するのには、WCF エンドポイントです。 詳細については、  **\<endpointBehaviors\>** 要素では、「参照」の該当するトピックを参照してください。
 
 例: 
 ```
@@ -503,7 +504,7 @@ SOAP のコンテンツを XML 形式のテンプレートを指定 **本文** �
 適用されますすべての WCF アダプタ*を除く*Wcf-custom および Wcf-customisolated アダプター。
 
 #### <a name="servicebehaviorconfiguration"></a>ServiceBehaviorConfiguration
-XML 文字列を指定し、 **\<動作\>**の要素、  **\<serviceBehaviors\>**  WCF の動作設定を構成するのにはサービス。 詳細については、  **\<serviceBehaviors\>** 要素では、「参照」の該当するトピックを参照してください。
+XML 文字列を指定し、 **\<動作\>** の要素、  **\<serviceBehaviors\>**  WCF の動作設定を構成するのにはサービス。 詳細については、  **\<serviceBehaviors\>** 要素では、「参照」の該当するトピックを参照してください。
 
 例:
 
@@ -625,15 +626,15 @@ TCP トランスポートのレベルでのセキュリティを指定します�
 適用されますすべての WCF 送信アダプタ*を除く*Wcf-netnamedpipe アダプター。
 
 #### <a name="referencedbindings"></a>ReferencedBindings
-によって参照されるバインド構成を指定、 **bindingConfiguration**の属性、 **\<発行者\>**要素を**wsFederationHttpBinding**と**customBinding**、セキュリティ トークン サービス (STS) セキュリティ トークンを発行することを示します。 詳細については、 **\<発行者\>**要素のトピック「」を参照してください"\<発行者\>"で[http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476)です。
+によって参照されるバインド構成を指定、 **bindingConfiguration**の属性、 **\<発行者\>** 要素を**wsFederationHttpBinding**と**customBinding**、セキュリティ トークン サービス (STS) セキュリティ トークンを発行することを示します。 詳細については、 **\<発行者\>** 要素のトピック「」を参照してください"\<発行者\>"で[http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476)です。
 
-バインド情報を含む、 **\<発行者\>**要素を**wsFederationHttpBinding**と**customBinding**できます使用して構成、 **BindingConfiguration** Wcf-custom および Wcf-customisolated アダプターのプロパティです。 形式でこのプロパティの参照先のバインディング構成のすべてに配置する必要があります、 [\<バインド\>](http://go.microsoft.com/fwlink/?LinkID=80878)要素。 
-
-**注**  
-**BindingConfiguration**の属性、 **\<発行者\>**要素は、このプロパティに有効なバインド名を指す必要があります。 
+バインド情報を含む、 **\<発行者\>** 要素を**wsFederationHttpBinding**と**customBinding**できます使用して構成、 **BindingConfiguration** Wcf-custom および Wcf-customisolated アダプターのプロパティです。 形式でこのプロパティの参照先のバインディング構成のすべてに配置する必要があります、 [\<バインド\>](http://go.microsoft.com/fwlink/?LinkID=80878)要素。 
 
 **注**  
-**\<発行者\>**で参照されるバインド構成要素を指すこともこのプロパティの異なるバインド構成この参照チェーンが循環する依存関係を行わない場合は。 
+**BindingConfiguration**の属性、 **\<発行者\>** 要素は、このプロパティに有効なバインド名を指す必要があります。 
+
+**注**  
+**\<発行者\>** で参照されるバインド構成要素を指すこともこのプロパティの異なるバインド構成この参照チェーンが循環する依存関係を行わない場合は。 
 
 例: 
 

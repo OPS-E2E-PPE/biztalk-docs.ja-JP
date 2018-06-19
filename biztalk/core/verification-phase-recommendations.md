@@ -1,14 +1,14 @@
 ---
-title: "検証フェーズの推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: 検証フェーズの推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 00663354-ce5d-4391-b835-89940c92c1ce
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288138"
 ---
 # <a name="verification-phase-recommendations"></a>検証フェーズの推奨事項
 システムのコードが完了すると、システムは完全に安定化するための準備が整い、リリース条件を検証できるようになります。 通常、この段階を安定化フェーズといいます。 このフェーズの最終的な目標は、バグを特定して修正し、システムの稼動準備が整っていることを証明することです。 したがって、ここでは、システムのリリース候補バージョンの最終テストを行います。  

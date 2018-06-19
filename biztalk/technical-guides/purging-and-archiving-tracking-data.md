@@ -1,14 +1,14 @@
 ---
-title: "消去および追跡データをアーカイブ |Microsoft ドキュメント"
-ms.custom: 
+title: 消去および追跡データをアーカイブ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14094fda-3fd9-4d45-9bbb-cd9377c2cbad
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302938"
 ---
 # <a name="purging-and-archiving-tracking-data"></a>消去および追跡データをアーカイブ
 構成し、DTA Purge and Archive SQL エージェント ジョブを有効にするには重要です。 このジョブをアーカイブして、BizTalk 追跡 (DTA) データベースから古いデータを削除します。 これは、正常なために不可欠な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムです。 追跡データベースを照会する追跡ホストおよびその他のすべてのプロセスのパフォーマンスに影響を与える大きな追跡データベースが開始されます。 追跡データは追跡データベースから削除されませんが場合、データベースが拡大し続けます。  

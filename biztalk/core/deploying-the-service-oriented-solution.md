@@ -1,11 +1,11 @@
 ---
-title: "指向ソリューションのサービスの展開 |Microsoft ドキュメント"
-ms.custom: 
+title: 指向ソリューションのサービスの展開 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, service solution tutorial
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - service solution tutorial, background information
 - tutorials, deploying
 ms.assetid: 88d4d28d-9031-4fb8-ab62-04ee27949673
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239194"
 ---
 # <a name="deploying-the-service-oriented-solution"></a>指向ソリューションのサービスの展開
 サービス指向のアーキテクチャ (SOA) は、分散システムを構築するためのアプローチです。 サービス指向ソリューションでは、クライアントで使用できる 1 つのサービスにさまざまなプロトコルを使用して複数のバックエンド システムを集計することができますを示しています。 このソリューションでは、配信およびパフォーマンスの特性を保証するアプローチで各種のサービスを統合しています。  

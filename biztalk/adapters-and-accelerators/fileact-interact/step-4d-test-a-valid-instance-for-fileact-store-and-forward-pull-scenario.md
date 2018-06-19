@@ -1,14 +1,14 @@
 ---
-title: "手順 4 D: FileAct ストア アンド フォワード (プル) シナリオの有効なインスタンスのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4 D: FileAct ストア アンド フォワード (プル) シナリオの有効なインスタンスのテスト |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 33c7aabe-206f-4b89-b739-ac1e63675451
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223698"
 ---
 # <a name="step-4d-test-a-valid-instance-for-the-fileact-store-and-forward-pull-scenario"></a>手順 4 D: FileAct ストア アンド フォワード (プル) シナリオの有効なインスタンスのテスト
 この手順を開始する前に行う必要があります[手順 4 C: FileAct ストア アンド フォワード (プル) シナリオのテスト インスタンスを作成する](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-fileact-store-and-forward-pull-scenario.md)です。  

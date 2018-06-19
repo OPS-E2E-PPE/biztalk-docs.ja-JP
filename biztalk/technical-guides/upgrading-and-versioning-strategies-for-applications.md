@@ -1,14 +1,14 @@
 ---
-title: "アップグレードとアプリケーションのバージョン方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アップグレードとアプリケーションのバージョン方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e881def2-c407-4205-a6b3-5c1fa5144bb4
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015353"
 ---
 # <a name="upgrading-and-versioning-strategies-for-applications"></a>アップグレードとアプリケーションのバージョン管理方法
 BizTalk ソリューション サイド バイ サイド、2 つのバージョンを実行する必要がある場合、または新しいバージョンを展開する BizTalk アプリケーションのダウンタイムを使用できない場合、BizTalk アプリケーションのバージョン管理は問題になることができます。 同時に (たとえば、あるありません長時間のオーケストレーション)、ソリューションの 2 つのバージョンを実行する必要はありません、サービスのメンテナンス期間使用できない場合、完全に再現してもかまいません。 以前のバージョンを展開解除し、新しいバージョンをデプロイし、バージョン管理戦略 (アセンブリのバージョン管理なし) として これが可能なバージョン管理の戦略では、まだファイル バージョン番号のインクリメントをお勧め (バージョンが実行しているコンピューターに展開されていることを確認できますを[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)])。  

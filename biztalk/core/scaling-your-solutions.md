@@ -1,11 +1,11 @@
 ---
-title: "ソリューションの拡張 |Microsoft ドキュメント"
-ms.custom: 
+title: ソリューションの拡張 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, scaling
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - scaling, scaling up
 - scaling
 ms.assetid: e2acbaa4-29d3-4c89-ac1f-c0641cfa0442
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269978"
 ---
 # <a name="scaling-your-solutions"></a>ソリューションの拡張
 BizTalk Server アーキテクチャは、スケーラビリティに優れたサポートを提供しています。 選択する拡張パターンは、シナリオ、ハードウェア、スループット/待機時間の要件の複雑さによって異なります。 最初は小さいトポロジから始めて、このセクションのガイドラインに従ってスケールアップまたはスケールダウンを試みてください。  

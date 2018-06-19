@@ -1,11 +1,11 @@
 ---
-title: "チェックリスト: BizTalk アプリケーション内のアイテムの更新 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チェックリスト: BizTalk アプリケーション内のアイテムの更新 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, redeploying
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - applications, checklists
 - checklists, redeploying
 ms.assetid: 07ea4a2b-4ada-4d04-9eec-604b63b77415
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233026"
 ---
 # <a name="checklist-update-the-artifacts-in-a-biztalk-application"></a>チェックリスト: BizTalk アプリケーション内のアイテムを更新します。
 既に展開されているアプリケーションで 1 つ以上のアイテムを変更または更新する場合はこのチェック リストの作業を実行し、アプリケーションを再展開します。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 09/20/2017
 |新しいアイテムまたは変更されたアイテムをテストします。新しいアイテムまたは変更されたアイテムに依存する可能性があるすべてのアイテムもテストします。 テスト中、このアプリケーションとその他のアプリケーション間に存在する依存関係を考慮します。|[BizTalk アプリケーションの展開のテスト作業](../core/testing-tasks-for-biztalk-application-deployment.md)|  
 |必要に応じて、アプリケーションでアイテムを追加、削除、または再構成します。|[成果物を追加または作成する方法](../core/how-to-create-or-add-an-artifact.md)、[アプリケーションからアイテムを削除する方法](../core/how-to-remove-an-artifact-from-an-application.md)、[成果物の管理](../core/managing-artifacts.md)|  
 |新しいアイテムや変更されたアイテムを含むアプリケーションを .msi ファイルにエクスポートします。 アプリケーション内のすべてのアイテム、または追加、更新するアイテムをエクスポートできます。 ファイル アイテムは上書きされる可能性があることに注意してください。 ファイル アイテムをエクスポートする場合は、アプリケーションで使用するバージョンであることを確認します。|[BizTalk アプリケーション、バインド、およびポリシーをエクスポートします。](../core/exporting-biztalk-applications-bindings-and-policies.md)|  
-|更新が、その更新を実行しているアプリケーションの妨げになる場合は、更新するアプリケーションを停止します。 アセンブリを新しいバージョンで更新する場合は、アプリケーションを再起動する必要はありません。 **注:**アイテムを更新したり、アプリケーションをインストールするためにアプリケーションを停止する必要はありませんをアイテムを更新するときに常にアプリケーションを停止することお勧めします。|[BizTalk アプリケーション開始および停止する方法](../core/how-to-start-and-stop-a-biztalk-application.md)|  
+|更新が、その更新を実行しているアプリケーションの妨げになる場合は、更新するアプリケーションを停止します。 アセンブリを新しいバージョンで更新する場合は、アプリケーションを再起動する必要はありません。 **注:** アイテムを更新したり、アプリケーションをインストールするためにアプリケーションを停止する必要はありませんをアイテムを更新するときに常にアプリケーションを停止することお勧めします。|[BizTalk アプリケーション開始および停止する方法](../core/how-to-start-and-stop-a-biztalk-application.md)|  
 |変更または更新したアイテムを、.msi ファイルから更新対象のアプリケーションにインポートします。 既存のアイテムを上書きするオプションを指定してください。|[BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)|  
 |更新されたアプリケーションまたはアイテムを .msi ファイルから、アプリケーションが実行されているすべてのコンピューター、およびこのアプリケーションに依存するアプリケーションを実行しているすべてのコンピューターにインストールします。 BizTalk アセンブリを更新する場合は、アセンブリの新しいバージョンが、そのアセンブリを実行している各コンピューターのグローバル アセンブリ キャッシュ (GAC) にインストールされていることを確認します。 インストールされていない場合は、各 GAC にアセンブリをインストールします。|[BizTalk アプリケーションをインストールする方法](../core/how-to-install-a-biztalk-application.md)、 [GAC でアセンブリをインストールする方法](../core/how-to-install-an-assembly-in-the-gac.md)|  
 |アプリケーションを起動します。|[BizTalk アプリケーション開始および停止する方法](../core/how-to-start-and-stop-a-biztalk-application.md)|  

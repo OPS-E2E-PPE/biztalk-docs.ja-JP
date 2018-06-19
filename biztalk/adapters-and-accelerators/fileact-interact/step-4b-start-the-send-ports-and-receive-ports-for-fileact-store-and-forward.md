@@ -1,14 +1,14 @@
 ---
-title: "手順 4 b: 送信ポートの開始し、FileAct ストア アンド フォワードのシナリオの受信ポート |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4 b: 送信ポートの開始し、FileAct ストア アンド フォワードのシナリオの受信ポート |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0f8c34b1-24a5-4ac7-bb96-27834bc3c711
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225410"
 ---
 # <a name="step-4b-start-the-send-ports-and-receive-ports-for-the-fileact-store-and-forward-scenario"></a>手順 4 b: 送信ポートの開始し、FileAct ストア アンド フォワードのシナリオの受信ポート
 この手順を開始する前に行う必要があります[手順 4A: FileAct ストア アンド フォワードのシナリオの SWIFTNet サービス起動](../../adapters-and-accelerators/fileact-interact/step-4a-start-the-swiftnet-service-for-the-fileact-store-and-forward-scenario.md)です。  

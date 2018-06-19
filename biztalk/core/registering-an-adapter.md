@@ -1,14 +1,14 @@
 ---
-title: "アダプターの登録 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターの登録 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc85b96e-7b7b-4131-88ec-87b419a61bc2
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270266"
 ---
 # <a name="registering-an-adapter"></a>アダプターの登録
 カスタム アダプターを開発している場合が変更され、ソフトウェア開発キット (SDK) にサンプル ファイル アダプターに含まれているレジストリ ファイルの 1 つを実行して BizTalk Server に登録することができます。 また、アダプター レジストリ ウィザードを使用してレジストリ ファイルを作成することもできます。 このウィザードは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Utilities\AdapterRegistryWizard フォルダーにあります。  

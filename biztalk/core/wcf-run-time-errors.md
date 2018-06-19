@@ -1,14 +1,14 @@
 ---
-title: "WCF の実行時エラー |Microsoft ドキュメント"
-ms.custom: 
+title: WCF の実行時エラー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c5591bd4-aa15-4c7a-903e-fc73b880692f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288194"
 ---
 # <a name="wcf-run-time-errors"></a>WCF 実行時エラー
 診断および解決する WCF の実行時イベントについて説明します。  

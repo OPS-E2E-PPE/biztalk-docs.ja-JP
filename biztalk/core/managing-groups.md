@@ -1,11 +1,11 @@
 ---
-title: "グループを管理する |Microsoft ドキュメント"
-ms.custom: 
+title: グループを管理する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - groups, managing
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - groups
 - groups, about groups
 ms.assetid: 6ca717c0-53c1-484a-b6cf-24f3d4ab032e
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262362"
 ---
 # <a name="managing-groups"></a>グループの管理
 このセクションでは、BizTalk グループを管理する手順について説明します。 BizTalk Server グループは、企業、部署、ハブなどの組織の単位を表すために使用します。BizTalk グループを使用する場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の実装が必要です。 BizTalk グループとそのグループに含まれるサーバーの構成情報は、BizTalk 管理 (BizTalkMgmtDb) データベースに格納されます。 BizTalk グループの詳細については、次を参照してください。 [BizTalk グループ](../core/biztalk-groups.md)です。  

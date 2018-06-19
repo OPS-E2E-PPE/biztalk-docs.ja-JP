@@ -1,18 +1,18 @@
 ---
-title: "プロパティの昇格 |Microsoft ドキュメント"
-ms.custom: 
+title: プロパティの昇格 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - properties, promoting
 - promoting properties
 - promoting properties, about promoting properties
 ms.assetid: e1825028-7dd9-4eae-a383-4db12a83a402
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266426"
 ---
 # <a name="promoting-properties"></a>プロパティの昇格
 プロパティの昇格昇格させること**フィールド要素**または**フィールド属性**するスキーマのノード**識別フィールド**または**プロパティフィールド**です。 昇格することも**レコード**ノードとして**プロパティ フィールド**単純コンテンツがある場合 (**Content-type**のプロパティ、**レコード**ノード設定**SimpleContent**)。 このセクションでは、いずれかとしてノードを昇格するための手順を説明**識別フィールド**または**プロパティ フィールド**です。  

@@ -1,18 +1,18 @@
 ---
-title: "オーケストレーション (BizTalk Server サンプル) を停止 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーション (BizTalk Server サンプル) を停止 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
 - examples, orchestrations
 - orchestrations, stopping
 ms.assetid: 83be44e9-819d-4ac5-8b75-84c23e6b5ba2
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973896"
 ---
 # <a name="stop-orchestration-biztalk-server-sample"></a>オーケストレーション (BizTalk Server サンプル) を停止します。
 オーケストレーションの停止のサンプルは、BizTalk Server オーケストレーションの停止方法および参加解除方法 (オプション) を示しています。  

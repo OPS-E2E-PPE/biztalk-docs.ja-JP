@@ -8,15 +8,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fac15775-39d0-470e-b9d2-21b2d02e1de7
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: gplarsen
 ms.author: hisdocs; plarsen
 manager: anneta
 ms.openlocfilehash: e35f1f068f63d4db9738733bcada55047e81a19a
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30250958"
 ---
 # <a name="how-to-list-the-properties-of-an-affiliate-application"></a>関連アプリケーションのプロパティを一覧表示する方法
 **Displayapp**コマンドは、関連アプリケーションに関する次の情報を示します。 関連アプリケーションのプロパティの詳細については、次を参照してください。 [SSO 関連アプリケーション](../esso/sso-affiliate-applications.md)です。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/28/2018
   
      既定のインストール ディレクトリは\<*ドライブ*>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型`ssomanage –displayapp <application name>`ここで、 *\<アプリケーション名 >*のプロパティを表示する関連アプリケーションの名前を指定します。  
+3.  型`ssomanage –displayapp <application name>`ここで、 *\<アプリケーション名 >* のプロパティを表示する関連アプリケーションの名前を指定します。  
   
 ### <a name="to-display-the-properties-of-an-affiliate-application-using-the-client-utility"></a>クライアント ユーティリティを使用して関連アプリケーションのプロパティを表示するには  
   
@@ -41,7 +42,7 @@ ms.lasthandoff: 03/28/2018
   
      既定のインストール ディレクトリは\<*ドライブの取り付け*>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型`ssoclient –displayapp <application name>`ここで、 *\<アプリケーション名 >*のプロパティを表示する関連アプリケーションの名前を指定します。  
+3.  型`ssoclient –displayapp <application name>`ここで、 *\<アプリケーション名 >* のプロパティを表示する関連アプリケーションの名前を指定します。  
   
 ## <a name="see-also"></a>参照  
  [ユーザー マッピングを管理します。](../esso/managing-user-mappings.md)   

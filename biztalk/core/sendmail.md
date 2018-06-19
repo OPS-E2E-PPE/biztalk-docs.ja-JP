@@ -1,18 +1,18 @@
 ---
-title: "SendMail |Microsoft ドキュメント"
-ms.custom: 
+title: SendMail |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SMTP adapters, examples
 - examples, SMTP adapters
 - SMTP adapters
 ms.assetid: a0258619-b195-4c8a-8326-77add6e6f04d
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974840"
 ---
 # <a name="sendmail"></a>SendMail
 SendMail サンプルは、簡易メール転送プロトコル (SMTP) アダプターを使用して、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションから電子メール メッセージを送信する方法を示します。 電子メール メッセージの送信に使用される動的な情報は、プロパティの昇格機能を使用して XML メッセージから取得します。  
@@ -89,7 +90,7 @@ SendMail サンプルは、簡易メール転送プロトコル (SMTP) アダプ
   
 9. **SMTP - アダプター ハンドラーのプロパティ**ダイアログ ボックスで、をクリックして**プロパティ**です。  
   
-10. **SMTP トランスポートのプロパティ** ダイアログ ボックスで、**プロパティ** タブで、適切な値を指定して、 **SMTP サーバー名**と**(電子メールからアドレス)**プロパティ、およびクリック**OK**です。  
+10. **SMTP トランスポートのプロパティ** ダイアログ ボックスで、**プロパティ** タブで、適切な値を指定して、 **SMTP サーバー名**と **(電子メールからアドレス)** プロパティ、およびクリック**OK**です。  
   
      これらの値を使用して、この SMTP アダプタから送信するすべての電子メール メッセージの差出人の電子メール アドレスを構築します。  
   

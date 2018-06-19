@@ -1,14 +1,14 @@
 ---
-title: "MSMQT アダプターから MSMQ アダプターへの移行 |Microsoft ドキュメント"
-ms.custom: 
+title: MSMQT アダプターから MSMQ アダプターへの移行 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 12/07/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 97126f70-0be5-4a2f-bcba-173fd932b6de
-caps.latest.revision: 
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710189"
 ---
 # <a name="migrate-from-the-msmqt-adapter-to-the-msmq-adapter"></a>MSMQT アダプターから MSMQ アダプターへの移行します。
 このトピックでは、ソリューションを BizTalk メッセージ キュー (MSMQT) アダプターからメッセージ キュー (MSMQ) アダプターに移行する前に、エンド ツー エンドの順次配送、トランザクションの一貫性、高可用性、およびスケーラビリティに関して考慮すべき事項について説明します。 このトピックでは、順次配送、トランザクションの一貫性、高可用性、およびスケーラビリティを次のように定義しています。  

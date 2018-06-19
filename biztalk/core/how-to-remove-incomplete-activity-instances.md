@@ -1,15 +1,15 @@
 ---
-title: "不完全なアクティビティ インスタンスの削除 |Microsoft ドキュメント"
-description: "BizTalk Server で BAM プライマリ インポート データベースから不完全なインスタンスを削除するカスタム RemoveDanglingInstances SQL スクリプトを実行します。"
-ms.custom: 
+title: 不完全なアクティビティ インスタンスの削除 |Microsoft ドキュメント
+description: BizTalk Server で BAM プライマリ インポート データベースから不完全なインスタンスを削除するカスタム RemoveDanglingInstances SQL スクリプトを実行します。
+ms.custom: ''
 ms.date: 01/18/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7060578c-6267-487b-8530-efa18f9431ce
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 9e7a7dc5544d30d4523c0b3cdaa59f4890e7a4e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/19/2018
+ms.locfileid: "27914943"
 ---
 # <a name="remove-incomplete-activity-instances"></a>不完全なアクティビティ インスタンスを削除します。
 BAM 定義ファイルを展開すると、定義ファイルで定義された各アクティビティに対し、5 個のテーブルが BAM プライマリ インポート データベースに作成されます。 作成されるテーブルは次のとおりです。  
@@ -46,7 +47,7 @@ BAM 定義ファイルを展開すると、定義ファイルで定義された�
   
 2.  サーバー名を展開し、 **データベース**, 、BAM プライマリ インポート データベースを選択します。  
   
-3.  **[新しいクエリ]**をクリックします。  
+3.  **[新しいクエリ]** をクリックします。  
   
 4.  ストアド プロシージャ作成スクリプトをコピーし、クエリ ペインに貼り付けます。  
   
@@ -58,7 +59,7 @@ BAM 定義ファイルを展開すると、定義ファイルで定義された�
   
 2.  サーバー名を展開し、 **データベース**, 、BAM プライマリ インポート データベースを選択します。  
   
-3.  **[新しいクエリ]**をクリックします。  
+3.  **[新しいクエリ]** をクリックします。  
   
 4.  クエリ ウィンドウで、次のように入力します。`exec RemoveDanglingInstances`および実行する削除操作に適切なパラメーターです。 たとえば、注文書アクティビティの不完全なインスタンスをすべて削除するには、「`exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`」と入力します。  
   

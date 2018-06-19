@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289002"
 ---
 # <a name="working-with-biztalk-projects"></a>BizTalk プロジェクトの操作
 BizTalk プロジェクト システムでアプリケーションを作成する場合の原則の多くは、Microsoft Visual Studio で利用可能な他のプロジェクト システムでアプリケーションを作成する場合と同じですが、プロジェクト ビルド構成のタイプなど、いくつか違いがあります。 ここでは、Microsoft BizTalk Server で動作するアプリケーションを作成するときに必要な作業のいくつかについて説明します。  

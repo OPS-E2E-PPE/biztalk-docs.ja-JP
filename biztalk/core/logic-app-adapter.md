@@ -18,6 +18,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22266714"
 ---
 # <a name="logic-app-adapter"></a>ロジック アプリのアダプター
 
@@ -133,7 +134,7 @@ IIS アプリケーションは、管理と ReceiveService サービスを使用
     > - 内部設置型 BizTalk Server を使用しています。
     > - BizTalk Server の Azure 仮想マシンを使用している *と* VM は HTTP エンドポイント (URL) として公開されません。
 
-5. **[作成]**を選択します。 
+5. **[作成]** を選択します。 
 6. アクションを構成します。 **本文**, 、HTTP 本文の出力を選択します。 **スキーマ**, 、使用するスキーマを選択します。 
 
     > [!NOTE] 

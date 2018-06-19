@@ -1,14 +1,14 @@
 ---
-title: "スキーマを作成する際の考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマを作成する際の考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cacfa8ae-6a06-4fe4-ad8f-ef5eb94d6b38
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237786"
 ---
 # <a name="considerations-when-creating-schemas"></a>スキーマを作成する際の考慮事項
 このセクションでは、スキーマ作成に関するさまざまな考慮事項について説明します。 これらの考慮事項のうち、すべての種類のスキーマに適用されるものについては、最初に説明します。 他の考慮事項は、フラット ファイル メッセージ スキーマおよびエンベロープ スキーマに固有のものです。 後者の考慮事項は、個別のサブセクションに分けられています。  

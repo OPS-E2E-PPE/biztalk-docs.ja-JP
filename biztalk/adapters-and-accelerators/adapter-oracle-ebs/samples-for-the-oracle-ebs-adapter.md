@@ -1,15 +1,15 @@
 ---
-title: "Oracle EBS アダプタ サンプル |Microsoft ドキュメント"
-description: "BizTalk Server、WCF サービス モデル、および WCF チャネル モデルで使用できる oracle Enterprise Business Suite の WCF アダプタのサンプル"
-ms.custom: 
+title: Oracle EBS アダプタ サンプル |Microsoft ドキュメント
+description: BizTalk Server、WCF サービス モデル、および WCF チャネル モデルで使用できる oracle Enterprise Business Suite の WCF アダプタのサンプル
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 12f19f13-3b01-40d6-b12c-811f99841040
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015345"
 ---
 # <a name="samples-for-the-oracle-ebs-adapter"></a>Oracle EBS アダプター用のサンプル
 サンプルを[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]に分類されます。  

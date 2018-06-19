@@ -1,11 +1,11 @@
 ---
-title: "手順 13: が作成し、ポートの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 13: が作成し、ポートの構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ports, creating
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - configuring, ports
 - ports, configuring
 ms.assetid: cc0540d7-46fc-4d9f-bcf3-0b0e0179fd51
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006387"
 ---
 # <a name="step-13-create-and-configure-ports"></a>手順 13: を作成し、ポートを構成します。
 このステップでは、ポート構成ウィザードを使用して作成し、オーケストレーション デザイナーでポートを構成します。 オーケストレーションの送信し、ビジネス プロセスからメッセージを送受信ポートを指定します。 各ポートには、種類、方向、およびバインドします。 プロパティは、通信、通信のパターン、元の場所の方向を一緒に決定[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]を送信または受信メッセージとの通信が行われる方法です。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]送信ポートとして最小下位層プロトコル (MLLP) アダプターを使用します。 MLLP アダプターは、他のラボ アプリケーションなどのアプリケーション、保険アプリケーションは、従来の基幹業務アプリケーションとのインターフェイスに TCP ソケット通信を使用します。 MLLP 送信アダプターを表す、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]はアダプター。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  **ポート構成ウィザード**をクリックして**次**です。  
   
-3.  **ポートのプロパティ**] ページの [、**名前**フィールドに「 **SOAPReceivePort**、クリックしてして**[次へ]**です。  
+3.  **ポートのプロパティ**] ページの [、**名前**フィールドに「 **SOAPReceivePort**、クリックしてして **[次へ]** です。  
   
 4.  **ポートの種類を選択して** ページで、次の情報を入力してをクリックして**次へ**を続行します。  
   

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "29564410"
 ---
 # <a name="sftp-adapter"></a>SFTP アダプター
 BizTalk Server は、 **SFTP** SSH ファイル転送プロトコルを使用してセキュリティで保護された FTP サーバーからメッセージを送受信するアダプター。 このトピックでは、構成する手順、 **SFTP** 受信場所、およびセキュリティで保護された FTP サーバーからメッセージを送受信する SFTP 送信ポートを構成します。 一般的な質問と回答も含まれています。

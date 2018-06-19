@@ -1,14 +1,14 @@
 ---
-title: "フォールバック検証プロパティ (X12) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: フォールバック検証プロパティ (X12) の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1a64431d-373a-4d63-9b83-cbb323620152
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233154"
 ---
 # <a name="configuring-fallback-validation-properties-x12"></a>フォールバック検証プロパティの構成 (X12)
 X12 インターチェンジの検証生成のフォールバック設定は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で受信したインターチェンジ内の重複した制御番号の有無を確認する方法を定義します。  

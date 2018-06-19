@@ -1,15 +1,15 @@
 ---
-title: "構成 DTA Purge and Archive ジョブ |Microsoft ドキュメント"
-description: "BizTalk server 追跡データベースを維持するために SQL Server エージェントで、DTA Purge and Archive ジョブのパラメーターを設定します。"
-ms.custom: 
+title: 構成 DTA Purge and Archive ジョブ |Microsoft ドキュメント
+description: BizTalk server 追跡データベースを維持するために SQL Server エージェントで、DTA Purge and Archive ジョブのパラメーターを設定します。
+ms.custom: ''
 ms.date: 10/11/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 156ccf9b-284f-4b96-a395-92936e8cebcf
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 1fb633fcf919ce3124405420a5d9faa79d9d508e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/11/2017
+ms.locfileid: "22646934"
 ---
 # <a name="configure-the-dta-purge-and-archive-job"></a>構成 DTA Purge and Archive ジョブ
 BizTalk 追跡データベース (BizTalkDTADb) からデータをアーカイブまたは削除する前に、DTA Purge and Archive (BizTalkDTADb) ジョブを構成する必要があります。 このジョブを構成して、プロシージャを呼び出す、dtasp_BackupAndPurgeTrackingDatabase ストア、構成する必要があります、6 つのパラメーターを使用するとします。  
@@ -67,7 +68,7 @@ BizTalk 追跡データベース (BizTalkDTADb) からデータをアーカイ�
     exec dtasp_BackupAndPurgeTrackingDatabase 1, 0, 1, '\\MyBizTalkServer\backup', null, 0, 1  
     ```  
   
-8.  **ジョブのプロパティ - DTA Purge and Archive (BizTalkDTADb)**ダイアログ ボックスで、**ページの選択****全般**を選択、**有効**チェック ボックスをオンし、 **OK**です。  
+8.  **ジョブのプロパティ - DTA Purge and Archive (BizTalkDTADb)** ダイアログ ボックスで、**ページの選択****全般**を選択、**有効**チェック ボックスをオンし、 **OK**です。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk 追跡データベースのアーカイブおよび削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)

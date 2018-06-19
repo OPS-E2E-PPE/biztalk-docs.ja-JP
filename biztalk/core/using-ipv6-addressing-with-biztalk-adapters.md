@@ -1,14 +1,14 @@
 ---
-title: "BizTalk アダプターに IPv6 のアドレス指定を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アダプターに IPv6 のアドレス指定を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93cd2ead-5e87-47ac-8f78-d56b80afd34e
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710625"
 ---
 # <a name="using-ipv6-addressing-with-biztalk-adapters"></a>BizTalk アダプターにおける IPv6 アドレス指定の使用
 BizTalk Server アダプターでは、IPv6 アドレスの使用をサポートします。 このトピックでは、UNC パスに対して IPv6 アドレスを指定するために使用される命名規則、リテラル IPv6 アドレスを指定するための命名規則、および HTTP アダプターと SOAP アダプターでの IPv6 スコープ識別子の使用について説明します。  

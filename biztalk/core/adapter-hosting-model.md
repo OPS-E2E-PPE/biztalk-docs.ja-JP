@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22225170"
 ---
 # <a name="adapter-hosting-model"></a>アダプターのホスト モデル
 一般に BizTalk アダプターは、BizTalk サービス Btsntsvc.exe でホストされます。 つまり、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプターの有効期間を管理します。 状況によっては、次に説明するように、他のプロセスがこのアダプターを管理する場合もあります。  

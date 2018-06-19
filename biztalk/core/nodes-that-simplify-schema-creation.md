@@ -1,14 +1,14 @@
 ---
-title: "スキーマの作成を簡略化するノード |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマの作成を簡略化するノード |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d8d2d9ad-e5ca-46ff-be84-1789738c8f46
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263210"
 ---
 # <a name="nodes-that-simplify-schema-creation"></a>スキーマの作成を単純化するノード
 スキーマの作成を単純化するノードには、2 つの種類があります。これらのノードでは、他のカテゴリへの分類を無視して、スキーマの作成を単純化します。 最初のようなノード、**スキーマ**、ノードに対応、**スキーマ**XML スキーマ定義 (XSD) 言語は、すべての XSD スキーマで最も外側の要素として機能する要素内の要素。  

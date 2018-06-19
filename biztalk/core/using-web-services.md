@@ -1,11 +1,11 @@
 ---
-title: "Web サービスの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: Web サービスの使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - orchestrations, Web services
 - Web services, orchestrations
 ms.assetid: a54261e3-d8ef-4770-8d9a-147685846051
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288258"
 ---
 # <a name="using-web-services"></a>Web サービスの使用
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、Web サービスの組み込みサポートが提供されています。 BizTalk Server は、既存のすべての Web サービスを再利用し、オーケストレーション内に集約できます。 また、オーケストレーションを Web サービスとして公開し、Web サービス ロジックとビジネス プロセス ロジックを区別することもできます。  

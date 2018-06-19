@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288858"
 ---
 # <a name="what-is-scalability"></a>スケーラビリティについて
 スケーラブルなシステムは必要に応じて拡張できます。 システムを拡張するということは、アプリケーションをあまり変更せずにハードウェアの追加やアップグレードを行うことです。 BizTalk Server システムでは、スケーラビリティとは、拡張によってスループットの向上や待機時間の短縮を達成できる能力を意味します。  

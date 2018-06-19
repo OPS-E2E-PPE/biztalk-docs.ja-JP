@@ -1,11 +1,11 @@
 ---
-title: "Web メッセージの構築 |Microsoft ドキュメント"
-ms.custom: 
+title: Web メッセージの構築 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web messages, about Web messages
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Web messages
 - messages, Web messages
 ms.assetid: ca1792be-5fba-4f5d-a88e-b854f6a8ce33
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237986"
 ---
 # <a name="constructing-web-messages"></a>Web メッセージの構築
 [Web メッセージの種類] から Web メッセージを構築します。 Web 参照を追加すると、BizTalk では、追加された Web サービスの Web メソッドに基づいて Web メッセージの種類が自動的に作成されます。 Web メッセージをオーケストレーションに追加するには、メッセージの種類を Web メッセージの種類のいずれかに設定します。 プリミティブ .NET 型またはスキーマ型に基づいて、個々のメッセージ部分を作成します。 メッセージ部分を含まない Web メッセージも構築できます。  

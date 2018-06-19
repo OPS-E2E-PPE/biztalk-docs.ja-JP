@@ -1,14 +1,14 @@
 ---
-title: "オペレーティング システムの最適化 |Microsoft ドキュメント"
-ms.custom: 
+title: オペレーティング システムの最適化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: af2e77d0-d69b-4ae4-b689-96831fc4deed
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976696"
 ---
 # <a name="operating-system-optimizations"></a>オペレーティング システムの最適化
 このトピックのパフォーマンスを最適化するための推奨事項を提供する、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 、実稼働環境で使用されるコンピューター[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。 これらの最適化が後に適用されます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をインストールして構成します。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  **場所**編集ボックスの **ログ情報**、(たとえば、G:\Logs\DTCLog) を作成する新しいログが必要なパスを入力します。  
   
-5.  をクリックして**リセット ログ**、およびサービスの再起動を求められます。 をクリックして**[ok]** DTC サービスを再起動し、をクリックする**OK** MSDTC サービスが再起動されていることを確認します。  
+5.  をクリックして**リセット ログ**、およびサービスの再起動を求められます。 をクリックして **[ok]** DTC サービスを再起動し、をクリックする**OK** MSDTC サービスが再起動されていることを確認します。  
   
 ### <a name="configure-antivirus-software-to-avoid-real-time-scanning-of-biztalk-server-executables-and-file-drops"></a>BizTalk Server 実行可能ファイルのリアルタイム スキャンしないようにするウイルス対策ソフトウェアを構成し、ファイルの削除  
  ウイルス対策ソフトウェアの BizTalk Server 実行可能ファイルおよびフォルダーやファイルのリアルタイム スキャンの受信場所を BizTalk Server によって監視される共有 BizTalk Server のパフォーマンスに悪影響を与えることができます。 ウイルス対策ソフトウェアが BizTalk Server コンピューターにインストールされている場合の BizTalk Server によって参照される非実行可能ファイルの種類のリアルタイム スキャンを無効にする受信場所 (通常はします。XML、.csv、.txt などこともできます)。BizTalk Server 実行可能ファイルのスキャンを除外するウイルス対策ソフトウェアと構成  

@@ -13,7 +13,7 @@ helpviewer_keywords:
 - XLANG/s, BPEL4WS
 - XLANG/s, converting
 ms.assetid: a35d4dba-9344-43c8-86e6-a373a4452579
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973744"
 ---
 # <a name="xlang-s-to-bpel4ws-type-conversions"></a>BPEL4WS の型変換に XLANG s
 次の表は、さまざまな XLANG/s 構成要素と BPEL4WS 構成要素間の変換の詳細を示しています。  

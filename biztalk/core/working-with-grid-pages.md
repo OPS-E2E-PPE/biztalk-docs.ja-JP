@@ -1,14 +1,14 @@
 ---
-title: "グリッド ページの操作 |Microsoft ドキュメント"
-ms.custom: 
+title: グリッド ページの操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14a27bbf-3761-49dd-be6f-f311857e38c2
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289818"
 ---
 # <a name="working-with-grid-pages"></a>グリッド ページの操作
 多くのビジネス ドキュメント用にマップを作成すると、非常に多くのリンクと Functoid が含まれる場合があるため、グリッドが複雑でわかりにくくなる可能性があります。 このような複雑さを解決するために、グリッド ページは複数用意されています。 マッピングをさまざまな側面で異なるページに分け、これらのページごとに表示したり、操作したりできます。  

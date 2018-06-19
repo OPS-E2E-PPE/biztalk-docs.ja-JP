@@ -1,14 +1,14 @@
 ---
-title: "ユーザー管理コマンド |Microsoft ドキュメント"
-ms.custom: 
+title: ユーザー管理コマンド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: feb12226-a4da-4fc5-93a1-aced239f60a9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974080"
 ---
 # <a name="user-management-commands"></a>ユーザー管理コマンド
 BAM 管理ユーティリティの警告ユーザー管理コマンドを使用すると、ユーザーの取得、追加、および削除を行うことができます。  

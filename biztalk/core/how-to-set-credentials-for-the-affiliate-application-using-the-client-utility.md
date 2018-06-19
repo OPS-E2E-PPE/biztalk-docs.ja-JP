@@ -1,18 +1,18 @@
 ---
-title: "クライアント ユーティリティを使用して関連アプリケーションの資格情報を設定する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: クライアント ユーティリティを使用して関連アプリケーションの資格情報を設定する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO applications], configuring credentials
 - SSOClient [SSO], configuring credentials
 - applications [SSO], credentials
 ms.assetid: 454b6257-3538-40be-840c-00172a2c1dce
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971568"
 ---
 # <a name="how-to-set-credentials-for-the-affiliate-application-using-the-client-utility"></a>クライアント ユーティリティを使用して関連アプリケーションの資格情報を設定する方法
 ここで示すコマンドを使用すると、ユーザーが特定のアプリケーションにアクセスできるようにユーザーの資格情報を設定できます。 また、このコマンドにより、マッピングが自動的に有効になります。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssoclient – setcredentials\<アプリケーション名\>**ここで、 **\<アプリケーション名\>**対象となる特定のアプリケーションは、資格情報を設定します。  
+3.  型**ssoclient – setcredentials\<アプリケーション名\>** ここで、 **\<アプリケーション名\>** 対象となる特定のアプリケーションは、資格情報を設定します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

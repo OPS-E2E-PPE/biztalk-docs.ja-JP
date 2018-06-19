@@ -1,15 +1,15 @@
 ---
-title: "Application Insights または Event Hubs へのデータの追跡 |Microsoft ドキュメント"
-description: "Azure の Application Insights または BizTalk Server で Azure Event Hubs での追跡データの分析を有効にする feature pack をインストールします。"
+title: Application Insights または Event Hubs へのデータの追跡 |Microsoft ドキュメント
+description: Azure の Application Insights または BizTalk Server で Azure Event Hubs での追跡データの分析を有効にする feature pack をインストールします。
 ms.custom: fp1, fp2
 ms.date: 11/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b3ff6cb9-44d0-46cd-9b4f-a346365afb7b
-caps.latest.revision: 
+caps.latest.revision: 10
 author: tordgladnordahl
 ms.author: mandia
 manager: anneta
@@ -18,10 +18,11 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710781"
 ---
 # <a name="send-biztalk-tracking-data-to-azure-application-insights-or-event-hubs"></a>BizTalk 追跡データを Azure の Application Insights または Event Hubs の送信します。
 
-**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**を処理し、追跡データを Azure Application Insights に送信することができます。 
+**以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]** を処理し、追跡データを Azure Application Insights に送信することができます。 
           
 **以降で[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]Feature Pack 2**:
 
@@ -42,7 +43,7 @@ ms.lasthandoff: 02/28/2018
 3. **ターゲット型** **Application Insight**または**Event Hub**一覧からです。
     ![環境の分析を有効にします。](../core/media/environmentsettingapplicationinishgt.PNG)
 
-4. **接続パラメーター**、select、**しています.**ボタン、および**サインイン**Azure アカウントにします。  
+4. **接続パラメーター**、select、**しています.** ボタン、および**サインイン**Azure アカウントにします。  
 
     **Application Insights 用**  
     選択、**サブスクリプション**、**リソース グループ**と、Application Insights インスタンス。
