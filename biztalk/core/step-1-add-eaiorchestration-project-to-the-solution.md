@@ -1,14 +1,14 @@
 ---
-title: "手順 1: EAIOrchestration プロジェクトをソリューションに追加する |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: EAIOrchestration プロジェクトをソリューションに追加する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1c9aa0d9-2075-4c7e-8baf-1ecd2721859a
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276866"
 ---
 # <a name="step-1-add-eaiorchestration-project-to-the-solution"></a>ステップ 1: EAIOrchestration プロジェクトのソリューションへの追加
 ![4 のステップ 1](../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
  **所要時間:** 5 分  
   
- **目標:**ここでは、EAI ソリューションに 2 番目のプロジェクトを追加します。 新しいプロジェクトにオーケストレーションを追加します。  
+ **目標:** ここでは、EAI ソリューションに 2 番目のプロジェクトを追加します。 新しいプロジェクトにオーケストレーションを追加します。  
   
- **目的:**オーケストレーションに別のプロジェクトを作成します。 これは、ソリューションの開発に複数のスタッフが携わっている場合に便利です。 このレッスンでは、新しいオーケストレーションを使用してビジネス プロセスを自動化します。  
+ **目的:** オーケストレーションに別のプロジェクトを作成します。 これは、ソリューションの開発に複数のスタッフが携わっている場合に便利です。 このレッスンでは、新しいオーケストレーションを使用してビジネス プロセスを自動化します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このステップを開始する前に、以下の要件を確認してください。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
     |**名前**|「`EAIOrchestration`.|  
     |**場所**|「`C:\BTSTutorials\EAISolution`.|  
   
-3.  **[OK]**をクリックします。  
+3.  **[OK]** をクリックします。  
   
 #### <a name="to-add-an-orchestration"></a>オーケストレーションを追加するには  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
     |**インストールされたテンプレート**|をクリックして**オーケストレーション ファイル**、クリックして**BizTalk オーケストレーション**です。|  
     |**名前**|型**EAIProcess.odx**です。|  
   
-3.  **[追加]**をクリックします。  
+3.  **[追加]** をクリックします。  
   
      オーケストレーション デザイナーが開きます。 オーケストレーション デザイナーに EAIProcess オーケストレーションが表示されている状態を次に示します。  
   

@@ -1,11 +1,11 @@
 ---
-title: "追跡アクティビティ定義ファイルの操作 |Microsoft ドキュメント"
-ms.custom: 
+title: 追跡アクティビティ定義ファイルの操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tracking, activity definition file
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - tracking, managing views
 - activity definition file, activity fields
 ms.assetid: 0592a844-aad7-4054-b1e7-344f1086f0b1
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009379"
 ---
 # <a name="working-with-the-tracking-activity-definition-file"></a>追跡アクティビティ定義ファイルの操作
 アクティビティ定義ファイルには、追跡に関する情報が含まれています。 プロセスとメッセージ アクティビティ[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]です。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]BizTalk ビジネス アクティビティ監視 (BAM) 追跡データを管理するのにには、このファイルを使用します。 定義ファイルは XML ファイル (Tracking.xml) を[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]でインストール、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet \BAMTracking フォルダーです。 通常は、Tracking.xml で定義されたアクティビティで十分に目的を達成できます。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="to-create-different-tracking-views"></a>別の追跡ビューを作成するには  
   
-1.  **[スタート]**ボタンをクリックし、 **[ファイル名を指定して実行]**をクリックします。 入力**cmd**クリックして実行 ダイアログ ボックスの名前 テキスト ボックスで**OK**です。 コマンド ライン ダイアログ ボックスで、tracking.xml の展開を解除し、をクリックするには、次のコードを入力してください**OK**:。  
+1.  **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。 入力**cmd**クリックして実行 ダイアログ ボックスの名前 テキスト ボックスで**OK**です。 コマンド ライン ダイアログ ボックスで、tracking.xml の展開を解除し、をクリックするには、次のコードを入力してください**OK**:。  
   
     ```  
     cd %ProgramFiles%\Microsoft BizTalk Server 2013\Tracking  

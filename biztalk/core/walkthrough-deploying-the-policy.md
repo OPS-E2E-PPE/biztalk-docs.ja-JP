@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: ポリシーを展開する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: ポリシーを展開する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 205760e2-9cd4-496f-93cd-0f93bc5d3231
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975912"
 ---
 # <a name="walkthrough-deploying-the-policy"></a>チュートリアル: ポリシーを展開します。
 このチュートリアルでを展開する手順、 **ProcessPurchaseOrder**次の 3 つの方法でポリシー。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。 これを行うには、アプリケーションを右クリックし、**管理者として実行**です。  
   
-2.  **[次へ]**をクリックします。  
+2.  **[次へ]** をクリックします。  
   
 3.  **展開タスク**] ページで、[**エクスポート ポリシー/ボキャブラリをファイルにデータベースから**、順にクリック**次**です。  
   
@@ -99,7 +100,7 @@ ms.lasthandoff: 11/28/2017
   
 12. 手順 8. ～ 9. を繰り返します。  
   
-13. **[完了]**をクリックします。  
+13. **[完了]** をクリックします。  
   
     > [!NOTE]
     >  バージョン 1.0 および 1.1 の両方をエクスポートする必要が**POVocabulary**ため**ProcessPurchaseOrder** 1.3 の両方のバージョンによって異なります**POVocabulary**です。 **許可される項目の最大数**バージョン 1.1 のボキャブラリから定義を使用します。 **要求された数量**と**要求の状態**定義はバージョン 1.0 から使用されます。  
@@ -123,7 +124,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  入力するかを指定する参照**C:\BRE-walkthroughs\ProcessPOPolicy13.xml** XML 出力ファイル名として。  
   
-8.  をクリックして**[次へ]** 4 回、順にクリック**完了**です。  
+8.  をクリックして **[次へ]** 4 回、順にクリック**完了**です。  
   
 #### <a name="to-delete-processpurchaseorder-and-povocabulary"></a>ProcessPurchaseOrder および POVocabulary を削除するには  
   
@@ -166,15 +167,15 @@ ms.lasthandoff: 11/28/2017
   
 7.  をクリックして**次**ビジネス ルール エンジン展開ウィザードでします。  
   
-8.  **[次へ]**をクリックします。  
+8.  **[次へ]** をクリックします。  
   
-9. **[次へ]**をクリックします。  
+9. **[次へ]** をクリックします。  
   
 10. 選択**このウィザードを再度実行**、順にクリック**完了**です。  
   
 11. 手順 2 ~ 9 をインポートする**POVocabulary11.xml**です。  
   
-12. **[完了]**をクリックします。  
+12. **[完了]** をクリックします。  
   
 #### <a name="to-verify-that-povocabulary-10-and-11-are-re-created"></a>POVocabulary 1.0 および 1.1 が再作成されたことを確認するには  
   
@@ -208,9 +209,9 @@ ms.lasthandoff: 11/28/2017
   
 7.  をクリックして**次**ビジネス ルール エンジン展開ウィザードでします。  
   
-8.  **[次へ]**をクリックします。  
+8.  **[次へ]** をクリックします。  
   
-9. **[次へ]**をクリックし、 **[完了]**をクリックします。  
+9. **[次へ]** をクリックし、 **[完了]** をクリックします。  
   
 #### <a name="to-verify-that-processpurchaseorder-13-is-re-created"></a>ProcessPurchaseOrder 1.3 が再作成されたことを確認するには  
   
@@ -287,7 +288,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  右側の一覧内を右クリックし、**追加**、クリックして**ポリシー**です。  
   
-5.  展開、 **ProcessPurchaseOrder**ノードで、チェック ボックスを選択**Version 1.3 (Published)**、クリックして**[ok]**です。 のインスタンスにアクセスするたびに SQL Server ログインを指定する必要はありません。  
+5.  展開、 **ProcessPurchaseOrder**ノードで、チェック ボックスを選択**Version 1.3 (Published)**、クリックして **[ok]** です。 のインスタンスにアクセスするたびに SQL Server ログインを指定する必要はありません。  
   
 6.  右クリック**ProcessPurchaseOrder**、クリックして**展開**です。 表示されない場合**ProcessPurchaseOrder**一覧で、f5 キーを押して表示を更新します。  
   
@@ -313,7 +314,7 @@ ms.lasthandoff: 11/28/2017
   
 8.  **先**として msi ファイルの名前とディレクトリを指定 ページで、 **C:\BRE-Walkthroughs\RuleTestApp.msi**です。  
   
-9. **[エクスポート]**をクリックします。  
+9. **[エクスポート]** をクリックします。  
   
 10. **概要**] ページで [**完了**です。  
   
@@ -324,7 +325,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  BizTalk Server 管理コンソールで、右クリック**RuleTestApp**、かどうか確認し、**削除**メニューを有効または無効にします。  
   
-2.  場合**削除**は無効になっているを右クリックし**[ruletestapp]**、] をクリックして**停止**[**完全停止 - インスタンスの終了**をクリックして**停止**です。  
+2.  場合**削除**は無効になっているを右クリックし **[ruletestapp]**、] をクリックして**停止**[**完全停止 - インスタンスの終了**をクリックして**停止**です。  
   
 3.  右クリック**RuleTestApp**、クリックして**削除**です。  
   
@@ -354,7 +355,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  **のインポート ウィザードへようこそ**ページで、参照の前にエクスポートした MSI ファイル (RuleTestApp.msi) を選択し、**インポートする MSI ファイル**設定します。  
   
-5.  **[次へ]**をクリックします。  
+5.  **[次へ]** をクリックします。  
   
 6.  **アプリケーション設定** ページで、をクリックして**次**です。  
   

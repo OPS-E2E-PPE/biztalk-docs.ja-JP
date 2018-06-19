@@ -1,11 +1,11 @@
 ---
-title: "MQSCorrelationSetOrchestration (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: MQSCorrelationSetOrchestration (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, MQSeries adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - messages, examples
 - MQSeries adapters, examples
 ms.assetid: fcda65d0-e3ec-4ead-978d-3904903b8762
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974984"
 ---
 # <a name="mqscorrelationsetorchestration-biztalk-server-sample"></a>MQSCorrelationSetOrchestration (BizTalk Server サンプル)
 MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレーションに MQSeries キューをルーティングして戻すために送信されるメッセージを関連付けるための MQSeries 関連付け識別子を使用する方法を示します。 オーケストレーションが、識別子の値を使用して MQSeries 関連付け識別子とメッセージを設定、 **MQMD_CorrelId**と**MQMD_MsgID**プロパティです。 MQSeries キュー マネージャーは、MessageID の値をメッセージの CorrelationID プロパティにコピーします。  
@@ -38,7 +39,7 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
  このサンプルは、オーケストレーションで処理中のドキュメントを MQSeries キューに送信可能であり (多くの場合、追加の処理を行うため)、実行中のオーケストレーションにルーティングして戻されるというシナリオを示します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration  
+ *\<パスのサンプル\>* \AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -56,7 +57,7 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
   
 1.  をクリックして**開始**、 をポイント**プログラム**、 をポイント**IBM WebSphere MQ**、順にクリック**WebSphere MQ エクスプ ローラー**です。  
   
-2.  ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。 既定のキュー マネージャーの名前は通常**qm _ < コンピューター名 >**場所*machine_name*お使いのコンピューターの名前を指定します。  
+2.  ダブルクリックして**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。 既定のキュー マネージャーの名前は通常**qm _ < コンピューター名 >** 場所*machine_name*お使いのコンピューターの名前を指定します。  
   
 3.  右クリック**キュー**、 をポイント**新規**、クリックして**ローカル キュー**です。  
   
@@ -94,7 +95,7 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
   
 15. **キュー**ボックスで「mqcorrelation」をクリック**エクスポート**です。  
   
-16. **エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック**[ok]**または**完了**すべてのダイアログ ボックスを終了します。  
+16. **エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック **[ok]** または**完了**すべてのダイアログ ボックスを終了します。  
   
 ### <a name="to-create-the-send-port-to-mqseries"></a>MQSeries に対する送信ポートを作成するには  
   

@@ -1,15 +1,15 @@
 ---
-title: "SQL サーバーの監視 |Microsoft ドキュメント"
-description: "SQL Server 管理パックを使用して、パフォーマンス、使用可能な領域、データベースの構成、ブロックされるプロセス、接続、失敗した SQL エージェント ジョブ、レプリケーション、および BizTalk Server の詳細を確認するには"
-ms.custom: 
+title: SQL サーバーの監視 |Microsoft ドキュメント
+description: SQL Server 管理パックを使用して、パフォーマンス、使用可能な領域、データベースの構成、ブロックされるプロセス、接続、失敗した SQL エージェント ジョブ、レプリケーション、および BizTalk Server の詳細を確認するには
+ms.custom: ''
 ms.date: 11/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 31871432-e13d-4ef3-b886-16c833371f6d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006963"
 ---
 # <a name="monitoring-sql-servers"></a>SQL サーバーの監視
 

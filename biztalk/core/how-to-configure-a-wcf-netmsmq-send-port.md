@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 13f55e53-12af-473b-b73f-1c98edadfc28
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25975248"
 ---
 # <a name="how-to-configure-a-wcf-netmsmq-send-port"></a>WCF-NetMsmq 送信ポートを構成する方法
 WCF-NetMsmq 送信ポートは、プログラムから、または BizTalk 管理コンソールを使用して構成できます。  
@@ -42,7 +43,7 @@ WCF-NetMsmq 送信ポートは、プログラムから、または BizTalk 管�
 |**TimeToLive**|**System.TimeSpan**|メッセージが期限切れになり、配信不能キューに格納されるまでのメッセージが有効な期間を指定します。 このプロパティは、時間が重要な要素になるメッセージがこの送信ポートによって処理されるまで古くならないようにするために設定されます。 指定された時間間隔内にこの送信ポートによって処理されないキュー内のメッセージは、期限切れのメッセージといいます。 期限切れのメッセージは、配信不能キューと呼ばれる特別なキューに送信されます。 配信不能キューの場所を設定、 **DeadLetterQueue** プロパティです。<br /><br /> 既定値: 1.00:00:00|  
 |**UseSourceJournal**|ブール値|この送信ポートによって処理されるメッセージのコピーをソース ジャーナル キューに保存するかどうかを指定します。<br /><br /> 既定値: **False**|  
 |**SecurityMode**|Enum<br /><br /> -   **[なし]**<br />-   **メッセージ**<br />-   **トランスポート**<br />-   **両方**<br /><br /> メンバー名の詳細については、 **SecurityMode**プロパティを参照してください、**セキュリティ モード**プロパティに、 **Wcf-netmsmq トランスポートのプロパティ ダイアログ ボックス、送信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|使用するセキュリティの種類を指定します。<br /><br /> 既定値: **トランスポート**|  
-|**MsmqAuthenticationMode**|Enum<br /><br /> -   **[なし]**<br />-   **WindowsDomain**<br />-   **証明書**<br /><br /> メンバー名の詳細については、 **MsmqAuthenticationMode**プロパティを参照してください、 **MSMQ 認証モード**プロパティに、 **Wcf-netmsmq トランスポートのプロパティ ダイアログ ボックスセキュリティを送信します。**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|MSMQ トランスポートによるメッセージの認証方法を指定します。<br /><br /> 既定値: **WindowsDomain**|  
+|**MsmqAuthenticationMode**|Enum<br /><br /> -   **[なし]**<br />-   **WindowsDomain**<br />-   **証明書**<br /><br /> メンバー名の詳細については、 **MsmqAuthenticationMode**プロパティを参照してください、 **MSMQ 認証モード**プロパティに、 **Wcf-netmsmq トランスポートのプロパティ ダイアログ ボックスセキュリティを送信します。** タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|MSMQ トランスポートによるメッセージの認証方法を指定します。<br /><br /> 既定値: **WindowsDomain**|  
 |**MsmqProtectionLevel**|Enum<br /><br /> -   **None**: 保護されません。<br />-   **記号**: メッセージが署名されます。<br />-   **EncryptAndSign**: メッセージの暗号化および署名されます。 この保護レベルを使用する必要がありますを有効にした **Active Directory 統合** の **MSMQ**します。|MSMQ トランスポートのレベルでメッセージをセキュリティ保護する方法を指定します。<br /><br /> 既定値: **記号**|  
 |**MsmqSecureHashAlgorithm**|Enum<br /><br /> -   **MD5**<br />-   **SHA1**<br />-   **SHA25**<br />-   **SHA512**|メッセージ ダイジェストの計算に使用するハッシュ アルゴリズムを指定します。 このプロパティは使用できない場合、 **MsmqProtectionLevel** にプロパティが設定されている **None**します。<br /><br /> 既定値: **SHA1**|  
 |**MsmqEncryptionAlgorithm**|Enum<br /><br /> -   **RC4Stream**<br />-   **AES**|メッセージ キュー マネージャー間でメッセージを転送するときに、有線ネットワーク上でメッセージを暗号化するために使用するアルゴリズムを指定します。 このプロパティは使用可能な場合にのみ、 **MsmqProtectionLevel** にプロパティが設定されている **EncryptAndSign**します。<br /><br /> 既定値: **RC4Stream**|  

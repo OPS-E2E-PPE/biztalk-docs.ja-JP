@@ -1,17 +1,17 @@
 ---
-title: "手順 6: オーケストレーション図形 (Contoso) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 6: オーケストレーション図形 (Contoso) の構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, configuring shapes
 - private process tutorial, configuring orchestration shapes
 ms.assetid: ce680693-cf72-4ca6-a062-019de5a9257b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009387"
 ---
 # <a name="step-6-configuring-orchestration-shapes-contoso"></a>手順 6: オーケストレーション図形 (Contoso) の構成
 この手順で作成した PrivateResponder オーケストレーションに追加するオーケストレーション図形を構成する[手順 5: Contoso プライベート プロセス オーケストレーションの変更](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)です。 間の通信の設定が含まれます[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server と Contoso のエンタープライズ リソース プランニング (ERP) システムです。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 12/01/2017
     PIP3A2RequestMessage = Helper.NormalizeHeader(Microsoft.Solutions.BTARN.Shared.SCContainer.ConvertFromContainer(ActionMessage));  
     ```  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ### <a name="to-configure-the-constructcontoso3a2requestmessage-transform-shape"></a>ConstructContoso3A2RequestMessage 変換図形を構成するには  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 12/01/2017
   
 4.  プロパティ ウィンドウで、選択、**マップ名**プロパティ、省略記号ボタンをクリックして (**.**) 変換の構成 ダイアログ ボックスを開きます。  
   
-5.  変換の構成 ダイアログ ボックスで、**既存のマップ**、し、**完全修飾マップ名 ボックス**  **\<参照されたアセンブリから選択\>**を開くには、成果物の種類の選択 ダイアログ ボックスのドロップダウン リストからです。  
+5.  変換の構成 ダイアログ ボックスで、**既存のマップ**、し、**完全修飾マップ名 ボックス**  **\<参照されたアセンブリから選択\>** を開くには、成果物の種類の選択 ダイアログ ボックスのドロップダウン リストからです。  
   
 6.  成果物の種類の選択 ダイアログ ボックスで、選択、 **ContosoPriceAndAvailability**左側のウィンドウでアセンブリを選択**PIP3A2RequestToContosoPriceRequest**右側のウィンドウでマップをクリック**Ok**です。  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  **ポリシー パラメーターの指定**一覧で、クリックして**ここをクリックして新しい行を追加する**、し、 **contoso3a2responsemessage**ドロップダウン リストからです。  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 ### <a name="to-configure-the-construct3a2responsemessage-transform-shape"></a>Construct3A2ResponseMessage 変換図形を構成するには  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  [プロパティ] ウィンドウで選択、**構築メッセージ**プロパティ、および選択**PIP3A2ResponseMessage**ドロップダウン リスト、キーを押しますから**Enter**です。  
   
-3.  選択、 **[transform_2]**図形内、 **Construct3A2ResponseMessage**図形です。  
+3.  選択、 **[transform_2]** 図形内、 **Construct3A2ResponseMessage**図形です。  
   
 4.  [プロパティ] ウィンドウでをクリックして**マップ名**、省略記号ボタンをクリックして (**.**).  
   
@@ -88,13 +89,13 @@ ms.lasthandoff: 12/01/2017
   
 8.  クリックして、**ここをクリックして新しい行を追加する**の下にラベルを付ける**変数名**、し、 **PIP3A2RequestMessage**ドロップダウン リストからです。  
   
-9. をクリックして、**ここをクリックして新しい行を追加する**の下にラベルを付ける**変数名**クリックし、次の行で**[contoso3a2responsemessage]**ドロップダウン リストからです。  
+9. をクリックして、**ここをクリックして新しい行を追加する**の下にラベルを付ける**変数名**クリックし、次の行で **[contoso3a2responsemessage]** ドロップダウン リストからです。  
   
 10. 選択**変換先**左のペインで選択**PIP3A2ResponseMessage**から、**変数名**クリックしてドロップダウン リスト**OK**.  
   
 11. ソリューション エクスプ ローラーで右クリックし、 **ContosoResponse3A2RequestMerge.btm**ファイルを開き、をクリックして**ファイルを開く**です。  
   
-12. **開く選択-Contosoresponse3a2requestmerge.btm**ダイアログ ボックスで、 **XML エディター**クリックして、プログラムの一覧から**OK**です。 **[はい]**をクリックします。  
+12. **開く選択-Contosoresponse3a2requestmerge.btm**ダイアログ ボックスで、 **XML エディター**クリックして、プログラムの一覧から**OK**です。 **[はい]** をクリックします。  
   
     > [!NOTE]
     >  このチュートリアルでは、このマップのために必要なリンクの数が多いため[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]2008 HTML/XML Editor マップ情報を手動でコピーして、マップを構築するためにします。  
@@ -151,7 +152,7 @@ ms.lasthandoff: 12/01/2017
     }]]></Script></ScripterCode></Functoid><Functoid FunctoidID="3" X-Cell="54" Y-Cell="239" Functoid-FID="107" Functoid-Name="String Concatenate" Label=""><Input-Parameters><Parameter Type="Constant" Value="Response" Guid="{FA85B113-6FB4-4932-A125-5CF751A536B5}"/></Input-Parameters></Functoid></Functoids></Page></Pages></mapsource>  
     ```  
   
-15. **[ファイル]** メニューの **[すべてを保存]**をクリックします。  
+15. **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
 ### <a name="to-configure-the-expression1-shape"></a>式_1 図形を構成するには  
   
@@ -174,7 +175,7 @@ ms.lasthandoff: 12/01/2017
     Helper.ReturnSCWithDocType(contosoResponseXML) );  
     ```  
   
-4.  **[OK]**をクリックします。  
+4.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [手順 7: ポートの作成と構成](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)

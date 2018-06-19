@@ -1,14 +1,14 @@
 ---
-title: "送信側の AS2 経由で送信非 EDI メッセージの処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 送信側の AS2 経由で送信非 EDI メッセージの処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3f19b7df-fe6d-4105-8a44-3d6db0bba451
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271850"
 ---
 # <a name="send-side-processing-of-an-outgoing-non-edi-message-over-as2"></a>AS2 経由での送信非 EDI メッセージの送信側の処理
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に付属の AS2 パイプラインを使用すると、AS2 トランスポート経由の EDI メッセージまたは非 EDI メッセージを処理できます。 この 2 つの種類のペイロードで使用されるパイプラインは異なります。 AS2 経由の送信 EDI メッセージの処理には、AS2EdiSend 送信パイプラインを使用し、関連する MDN (有効になっている場合) の受信には AS2Receive パイプラインを使用します。 AS2 経由の送信非 EDI メッセージの処理には、AS2Send 送信パイプラインを使用し、関連する MDN (有効になっている場合) の受信には AS2Receive パイプラインを使用します。 非 EDI メッセージは、任意のバイナリ ペイロードです。  

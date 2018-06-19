@@ -12,7 +12,7 @@ helpviewer_keywords:
 - managing [SSO applications], enabling
 - enabling, applications [SSO]
 ms.assetid: 81c94e1b-cd3d-482e-9a78-9b1476af9e5f
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25971200"
 ---
 # <a name="how-to-enable-an-affiliate-application"></a>関連アプリケーションを有効にする方法
 MMC スナップインまたはコマンド ラインを使用して、指定した関連アプリケーションを有効にすることができます。  
@@ -39,7 +40,7 @@ MMC スナップインまたはコマンド ラインを使用して、指定し
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型 **ssomanage – enableapp *\<アプリケーション名\>* * *、どこで\<*アプリケーション名*\>する関連アプリケーションの名前を指定します。有効にします。  
+3.  型 **ssomanage – enableapp *\<アプリケーション名\>* * *、どこで\<* アプリケーション名*\>する関連アプリケーションの名前を指定します。有効にします。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

@@ -1,17 +1,17 @@
 ---
-title: "サプライ チェーン ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: サプライ チェーン ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - trading partners, supply chains
 - supply chains, solutions
 ms.assetid: c53e37ec-6055-46ba-a13f-1370dbfe44fb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006451"
 ---
 # <a name="the-supply-chain-solution"></a>サプライ チェーン ソリューション
 ビジネス プロセスとデータ通信に関する問題の解決に、テクノロジが役立ちます。 先端企業は情報技術 (IT) システムを利用することで、パートナーとの通信をオフラインで互換性のないプロセスから、統合かつ標準化されたプロセスへと変革することができます。  

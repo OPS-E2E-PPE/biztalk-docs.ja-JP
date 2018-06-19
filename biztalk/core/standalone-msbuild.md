@@ -1,14 +1,14 @@
 ---
-title: "スタンドアロン MSBUILD |Microsoft ドキュメント"
-ms.custom: 
+title: スタンドアロン MSBUILD |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 21aa3693-3788-4874-b506-6f4584fb4fd5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007699"
 ---
 # <a name="standalone-msbuild"></a>スタンドアロン MSBUILD
 **プロジェクトがビルド**コンポーネント[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]なしの BizTalk Server ソリューションを構築することができます[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。 インストールする、**プロジェクトがビルド**コンポーネント、サーバーを**Project Build コンポーネント**オプション、**追加のソフトウェア カテゴリ**インストール中にします。 選択を解除する必要があります、**開発ツールおよび SDK**インストールする場合は[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]されていないコンピューターで[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 12/01/2017
   
 ## <a name="to-build-a-biztalk-project"></a>BizTalk プロジェクトをビルドするには  
   
-1.  **[スタート]**ボタンをクリックし、 **[ファイル名を指定して実行]**をクリックします。  
+1.  **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。  
   
 2.  型**cmd**、ENTER キーを押します。  
   

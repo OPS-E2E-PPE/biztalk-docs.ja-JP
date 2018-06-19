@@ -1,11 +1,11 @@
 ---
-title: "一括コピー Functoid |Microsoft ドキュメント"
-ms.custom: 
+title: 一括コピー Functoid |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - anyAttribute node
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - any node
 - Mass Copy functoids
 ms.assetid: 228ff569-2e21-4e81-b564-6936241cdf6b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262658"
 ---
 # <a name="mass-copy-functoid"></a>一括コピー Functoid
 **一括コピー** functoid を含むスキーマを使用して、マップを有効に**任意**と**anyAttribute**要素。 これらの要素は、基本的に XML スキーマ定義言語に提供されているワイルドカードで、不明な構造や属性に一致します。  

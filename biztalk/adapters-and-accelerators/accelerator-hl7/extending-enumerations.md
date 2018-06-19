@@ -1,17 +1,17 @@
 ---
-title: "列挙型を拡張 |Microsoft ドキュメント"
-ms.custom: 
+title: 列挙型を拡張 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - enumeration values
 - 2.X schemas, enumeration values
 ms.assetid: 043def35-b644-4502-a2e2-cc1a5fc0328a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006243"
 ---
 # <a name="extending-enumerations"></a>列挙型を拡張します。
 HL7 メッセージ本文、受信確認、およびメッセージ本文のスキーマで多くのフィールド、セグメント、およびデータ型を指定できる値を確立する列挙体に値を追加することができます。 一般的なテーブル値スキーマ ファイルで作業している HL7 のバージョンについては、特定のテーブル内の値のセットを変更する必要があります (、 **Tablevalues_\<***バージョン* **\>.xsd**スキーマ ファイル)。  

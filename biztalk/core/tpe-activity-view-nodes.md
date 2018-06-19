@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279466"
 ---
 # <a name="tpe-activity-view-nodes"></a>TPE アクティビティ ビューのノード
 このセクションのトピックでは、追跡プロファイル エディターで、内部ビジネス プロセスの特定のビューと関連データをオーケストレーションにマップするために使用されるツリー ノードの種類について説明します。  

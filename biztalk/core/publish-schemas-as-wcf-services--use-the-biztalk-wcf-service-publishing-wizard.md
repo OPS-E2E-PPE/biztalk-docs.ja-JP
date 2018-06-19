@@ -1,11 +1,11 @@
 ---
-title: "BizTalk WCF サービス公開ウィザードを使用してスキーマを WCF サービスとして公開する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk WCF サービス公開ウィザードを使用してスキーマを WCF サービスとして公開する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, WCF services
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - WCF services, schemas
 - WCF Service Publishing Wizard
 ms.assetid: 3b770fd5-5b7b-493f-9016-d7d58854c5ff
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975384"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-schemas-as-wcf-services"></a>BizTalk WCF サービス公開ウィザードを使用してスキーマを WCF サービスとして公開する方法
 スキーマを WCF サービスとして公開するには、BizTalk WCF サービス公開ウィザードを使用します。  
@@ -45,12 +46,12 @@ ms.lasthandoff: 11/28/2017
   
 4.  **WCF サービスの種類**ページ、オンまたはオフ、**メタデータ エンドポイントを有効にする**分離された WCF の受信場所のインターネット インフォメーション サービス (IIS) によってホストされているかどうかを示すチェック ボックスが発行します。サービス メタデータが HTTP/GET 要求を使用した取得用。  
   
-     このチェック ボックスをオンすると、ウィザードが生成されます、Web.config ファイルを**httpGetEnabled**の属性、  **\<serviceMetadata\>**  に要素が設定されている**true**です。 メタデータ インポート ツール (SvcUtil.exe など) を使用すると、開発環境でこのサービスを呼び出すために必要なクライアント コードを生成できます。 メタデータが公開されるアドレスは、エンドポイント アドレスと**? wsdl**クエリ文字列。  
+     このチェック ボックスをオンすると、ウィザードが生成されます、Web.config ファイルを**httpGetEnabled**の属性、  **\<serviceMetadata\>**  に要素が設定されている**true**です。 メタデータ インポート ツール (SvcUtil.exe など) を使用すると、開発環境でこのサービスを呼び出すために必要なクライアント コードを生成できます。 メタデータが公開されるアドレスは、エンドポイント アドレスと **? wsdl**クエリ文字列。  
   
     > [!NOTE]
     >  機密性の高いサービス メタデータが誤って漏洩を防ぐためには、実稼働環境でこの動作を無効にすることをお勧めします。 これは、httpgetenabled を false に設定、または、MEX 仮想ディレクトリを削除して実行できます。  
   
-5.  **WCF サービスの種類**] ページの [、**アダプター名 (トランスポートの種類)**ドロップダウン リストで、WCF サービスの公開に使用する分離 WCF アダプターを選択します。 以下のいずれかのアダプターを選択できます。  
+5.  **WCF サービスの種類**] ページの [、**アダプター名 (トランスポートの種類)** ドロップダウン リストで、WCF サービスの公開に使用する分離 WCF アダプターを選択します。 以下のいずれかのアダプターを選択できます。  
   
     -   **Wcf-basichttp です。** : WCF-BasicHttp 受信アダプターは、ASMX ベースのサービスなど WS-I 基本プロファイル 1.1 準拠の Web サービスと通信できます。  
   

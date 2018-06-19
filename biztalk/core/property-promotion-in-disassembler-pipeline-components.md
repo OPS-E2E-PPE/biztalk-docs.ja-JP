@@ -1,11 +1,11 @@
 ---
-title: "逆アセンブラー パイプライン コンポーネントのプロパティの昇格 |Microsoft ドキュメント"
-ms.custom: 
+title: 逆アセンブラー パイプライン コンポーネントのプロパティの昇格 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, promoting properties
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - BizTalk Framework Assembler [pipeline component], properties
 - Flat File Disassembler [pipeline component], properties
 ms.assetid: aa37b308-8aa2-45f4-9383-aca4f2c925ce
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971840"
 ---
 # <a name="property-promotion-in-disassembler-pipeline-components"></a>逆アセンブラー パイプライン コンポーネントのプロパティの昇格
 プロパティの昇格とは、XML ドキュメントから XPath 式を使ってプロパティ値を抽出し、メッセージ コンテキストに設定することによって、プロパティ値に基づくメッセージのルーティングを可能にするプロセスです。  

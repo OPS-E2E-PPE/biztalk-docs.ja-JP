@@ -1,17 +1,17 @@
 ---
-title: "SOAP アダプタのセキュリティに関する推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP アダプタのセキュリティに関する推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP adapters, security
 - security, SOAP adapters
 ms.assetid: f869bd82-df93-45e1-b747-b538820253fb
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279594"
 ---
 # <a name="soap-adapter-security-recommendations"></a>SOAP アダプタのセキュリティに関する推奨事項
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、SOAP アダプターを使用して Web サービスを公開 (受信) および使用 (送信) できます。 SOAP アダプターに関する詳細については、次を参照してください。 [SOAP アダプター](../core/soap-adapter.md)です。 Web サービスの詳細については、次を参照してください。 [Web サービスを使用する](../core/using-web-services.md)です。 SOAP アダプターをセキュリティで保護して環境に展開するには、次のガイドラインに従うことをお勧めします。  

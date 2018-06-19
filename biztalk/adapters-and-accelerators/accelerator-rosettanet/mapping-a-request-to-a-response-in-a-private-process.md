@@ -1,11 +1,11 @@
 ---
-title: "プライベート プロセスで応答する要求をマッピング |Microsoft ドキュメント"
-ms.custom: 
+title: プライベート プロセスで応答する要求をマッピング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, maps
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - requests, mapping
 - requests, private processes
 ms.assetid: 5452c0a2-3a9b-43e7-bfa7-713eef0eab3b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008371"
 ---
 # <a name="mapping-a-request-to-a-response-in-a-private-process"></a>プライベート プロセスで応答する要求のマッピング
 このトピックにプライベート応答側のプロセスで受信した要求メッセージをマップする方法について説明: から、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]を応答メッセージを送信できる、応答側パブリック プロセス、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]応答側パブリック プロセス。  
@@ -98,7 +99,7 @@ ms.lasthandoff: 12/01/2017
   
 7.  **変換**をクリックして**先**です。 変数の下の空のボックスをクリックし、ドロップダウン リストから応答メッセージの名前を選択します。  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [プログラミング ガイド](../../adapters-and-accelerators/accelerator-rosettanet/programming-guide2.md)

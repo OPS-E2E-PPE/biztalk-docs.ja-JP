@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286922"
 ---
 # <a name="using-host-initiated-sso-functionality"></a>使用してホスト側開始 SSO 機能
 ホスト側開始シングル サインオンには、Windows Server 2008 のプロトコル遷移機能を使用して、Windows 以外のユーザーのシングル サインオンを実行します。 この機能は、ため Server 2008 を必要としがドメインにある必要があります、**ドメインの機能レベル**'éý' **Windows Server 2008**です。  

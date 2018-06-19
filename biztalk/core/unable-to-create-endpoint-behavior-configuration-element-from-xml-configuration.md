@@ -1,14 +1,14 @@
 ---
-title: "XML 構成からエンドポイント動作の構成要素を作成できません |。Microsoft ドキュメント"
-ms.custom: 
+title: XML 構成からエンドポイント動作の構成要素を作成できません |。Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 89d906a4-ea85-42d8-8e9e-0a3a7774bcd8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286834"
 ---
 # <a name="unable-to-create-endpoint-behavior-configuration-element-from-xml-configuration"></a>XML 構成からエンドポイント動作の構成要素を作成できません
 ## <a name="details"></a>詳細  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  トランスポート名を右クリックします。  
   
-5.  **[プロパティ]**をクリックします。  
+5.  **[プロパティ]** をクリックします。  
   
 6.  ポート**型**一覧で、適切なポートを選択します。  
   

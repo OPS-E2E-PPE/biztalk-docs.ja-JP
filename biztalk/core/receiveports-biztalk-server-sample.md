@@ -1,14 +1,14 @@
 ---
-title: "ReceivePorts (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: ReceivePorts (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c403005d-5e0e-4015-b138-6318e03192af
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971728"
 ---
 # <a name="receiveports-biztalk-server-sample"></a>ReceivePorts (BizTalk Server サンプル)
 ReceivePorts サンプルを新規作成する方法を使用して受信ポート、 **ExplorerOM**管理クラスです。  
@@ -56,7 +57,7 @@ ReceivePorts サンプルを新規作成する方法を使用して受信ポー�
   
 1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル ReceivePorts.sln を開きます。  
   
-2.  **[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。  
+2.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
 #### <a name="to-run-this-sample"></a>このサンプルを実行するには  
   

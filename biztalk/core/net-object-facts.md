@@ -1,18 +1,18 @@
 ---
-title: ".NET オブジェクト ファクト |Microsoft ドキュメント"
-ms.custom: 
+title: .NET オブジェクト ファクト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - facts, .NET objects
 - Business Rule Composer, .NET object facts
 - .NET objects
 ms.assetid: 68323022-8359-44ce-a60c-191850785822
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262954"
 ---
 # <a name="net-object-facts"></a>.NET オブジェクトのファクト
 ビジネス ルール作成ツールで、データ ソースとして .NET アセンブリを指定できます。 アセンブリからクラスまたはクラス メンバーを続けて選択して、ボキャブラリの定義やルール上にドラッグできます。  

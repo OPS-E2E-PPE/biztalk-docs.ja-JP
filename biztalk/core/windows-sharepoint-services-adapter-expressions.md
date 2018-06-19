@@ -1,11 +1,11 @@
 ---
-title: "Windows SharePoint Services アダプターの式 |Microsoft ドキュメント"
-ms.custom: 
+title: Windows SharePoint Services アダプターの式 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - macros, Windows SharePoint Services adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - configuring [Windows SharePoint Services adapters], expressions
 - Windows SharePoint Services adapters, expressions
 ms.assetid: 15e3afb2-0ef8-41b4-b3ec-de84af738c12
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973888"
 ---
 # <a name="windows-sharepoint-services-adapter-expressions"></a>Windows SharePoint Services アダプターの式
 このトピックは、形式との値として指定できる文字列の意味について説明します、**ファイル NameProperty ソース**Windows SharePoint Services アダプターのプロパティです。 関連するコンテキスト プロパティについても説明**WSS です。Filename**と**WSS です。ConfigPropertiesXml**です。 これらの式を使用すると、メッセージや BizTalk システムから抽出された値だけでなく、ファイル名の値、つまり、カスタム Windows SharePoint Service 列値を、リテラルに基づいて簡単に定義できます。  

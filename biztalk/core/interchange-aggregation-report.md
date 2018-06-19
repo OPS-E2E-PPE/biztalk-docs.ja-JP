@@ -1,14 +1,14 @@
 ---
-title: "インターチェンジの集計レポート |Microsoft ドキュメント"
-ms.custom: 
+title: インターチェンジの集計レポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4619e8d0-9e9e-4d19-a67a-ac1058a0579b
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257882"
 ---
 # <a name="interchange-aggregation-report"></a>インターチェンジの集計レポート
 このレポートでは、同じ EDI エンコードの種類、送信者パーティ、受信者パーティ、および方向を共有する EDI インターチェンジの数を示すレコードが 1 つ提供されます。 このレポートには、個別のインターチェンジの詳細情報は含まれません。  

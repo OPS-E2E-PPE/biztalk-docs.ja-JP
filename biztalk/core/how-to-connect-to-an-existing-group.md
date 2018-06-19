@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005499"
 ---
 # <a name="how-to-connect-to-an-existing-group"></a>既存のグループに接続する方法
 使用することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]これらのグループは、同じドメイン内または信頼されたドメイン内のコンピューターにある限り、企業内で 1 つまたは複数の BizTalk Server グループをリモートで管理する、企業内のコンピューターの管理コンソールです。  

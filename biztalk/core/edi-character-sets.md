@@ -1,14 +1,14 @@
 ---
-title: "EDI 文字セット |Microsoft ドキュメント"
-ms.custom: 
+title: EDI 文字セット |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 57fae748-d66e-4ecf-be00-70147078ef93
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971392"
 ---
 # <a name="edi-character-sets"></a>EDI 文字セット
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、文字セットを使用して EDI インターチェンジ全体を検証します。 X12 でエンコードされたメッセージに使用される文字セットと、EDIFACT または KEDIFACT でエンコードされたメッセージに使用される文字セットは、異なる方法で決定されます。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
  UNA セグメントとセグメント名 UNB には、ASCII 文字セット内の値のみを使用できます。  
   
 ## <a name="kedifact-character-set"></a>KEDIFACT 文字セット  
- EDIFACT の場合と同様に、KEDIFACT エンコード インターチェンジの文字セットも UNB1 データ要素で設定されます。 EDIFACT の場合と、文字のセットによって適用すべき[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]KEDIFACT インターチェンジの処理が確立されている場合のデータ要素で**UNB1**の**文字セットと区切り記号**双方向のページアグリーメントのタブ (アグリーメントが定義されている) 場合、または**文字セットと区切り記号**のアグリーメント タブのページで、 **EDIFACT フォールバックの設定** ダイアログ ボックス (アグリーメントが定義されていない) 場合。 値、**識別子 (UNB1.1)**要素は KECA に設定する必要があります。  
+ EDIFACT の場合と同様に、KEDIFACT エンコード インターチェンジの文字セットも UNB1 データ要素で設定されます。 EDIFACT の場合と、文字のセットによって適用すべき[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]KEDIFACT インターチェンジの処理が確立されている場合のデータ要素で**UNB1**の**文字セットと区切り記号**双方向のページアグリーメントのタブ (アグリーメントが定義されている) 場合、または**文字セットと区切り記号**のアグリーメント タブのページで、 **EDIFACT フォールバックの設定** ダイアログ ボックス (アグリーメントが定義されていない) 場合。 値、**識別子 (UNB1.1)** 要素は KECA に設定する必要があります。  
   
 ## <a name="x12-character-set"></a>X12 文字セット  
  BizTalk 受信パイプラインまたは送信パイプラインが X12 エンコード メッセージの EDI 検証を実行する際には、パイプラインの CharacterSet プロパティで選択された X12 文字セットを使用します。 このプロパティを設定するには、受信場所または送信ポートの [プロパティ] ダイアログ ボックスを開き、受信パイプラインまたは送信パイプラインの横にある省略記号をクリックし、逆アセンブラーまたはアセンブラーの CharacterSet プロパティを設定します。  

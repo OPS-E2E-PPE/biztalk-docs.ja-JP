@@ -1,11 +1,11 @@
 ---
-title: "サービスのパターン カタログ指向ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: サービスのパターン カタログ指向ソリューション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Calling Pipelines from Code pattern [service solutions]
@@ -26,7 +26,7 @@ helpviewer_keywords:
 - back-end processes
 - services, interface pattern [service solutions]
 ms.assetid: 5d8135c5-d5de-4e61-b3e8-2aa7f6de98c8
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -35,6 +35,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265498"
 ---
 # <a name="pattern-catalog-for-the-service-oriented-solution"></a>指向ソリューションのサービスのパターン カタログ
 サービス指向ソリューションのパターンには、前のセクションのエンタープライズ統合パターンと BizTalk Server 固有のプログラミング手法のパターンが含まれます。 このセクションの一覧は、両方のパターンを含みます。  

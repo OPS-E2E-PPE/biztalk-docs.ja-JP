@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 66d9badd-00c6-43a3-807e-0ad313983adc
-caps.latest.revision: ''
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22278330"
 ---
 # <a name="splitting-hipaa-subdocuments"></a>HIPAA サブドキュメントの分割
 HIPAA の EDI インターチェンジには、通常、1 つのトランザクション セット内に、ST ヘッダーと SE ヘッダーで囲まれた複数の子ドキュメント/サブドキュメントがあります。 EDI 受信パイプラインでは、このようなトランザクション セットから、複数の個別の HIPAA サブドキュメントを作成することがサポートされています。 これは、HIPAA 以外の EDI インターチェンジとは異なる点です。HIPAA 以外の EDI インターチェンジでは、1 つのトランザクション セットが単一のメッセージとして処理されます。  

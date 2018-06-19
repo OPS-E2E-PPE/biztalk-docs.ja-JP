@@ -1,17 +1,17 @@
 ---
-title: "進捗ディメンション |Microsoft ドキュメント"
-ms.custom: 
+title: 進捗ディメンション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], progress dimensions
 - Progress dimension [BAM]
 ms.assetid: 472fcbf6-502f-4c81-bf48-f7eec98e391b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973496"
 ---
 # <a name="progress-dimension"></a>進捗ディメンション
 到達したマイルストーンで BAM アクティビティをグループ化するには、進捗ディメンションを使用します。 これを例でわかりやすく示します。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  **進捗マイルス トーン**のボックス、**新しい進捗マイルス トーン** ダイアログ ボックスで、デザインした階層の最上位レベルに、進捗マイルス トーンの名前を入力します。 実行中の例のように入力`Received`です。  
   
-7.  進捗マイルス トーンに対応するビジネス マイルス トーンを選択し、クリックして**OK**です。 例については、実行中、選択**受信日時 (\<アクティビティ名\>)**です。  
+7.  進捗マイルス トーンに対応するビジネス マイルス トーンを選択し、クリックして**OK**です。 例については、実行中、選択**受信日時 (\<アクティビティ名\>)** です。  
   
 8.  **新しいディメンション**ダイアログ ボックスで、をクリックして**新しいステージ**です。  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 11/28/2017
   
 11. **進捗マイルス トーン**のボックス、**新しい進捗マイルス トーン** ダイアログ ボックスに、第 1 レベルのマイルス トーンのいずれかの名前を入力します。 たとえばを使用して、入力`Approved`です。  
   
-12. **ビジネス マイルス トーン**ドロップダウン ボックスでは、進捗マイルス トーンに対応するビジネス マイルス トーンを選択し、をクリックして**OK**です。 例については、実行中、選択**Approved (\<アクティビティ名\>)**です。  
+12. **ビジネス マイルス トーン**ドロップダウン ボックスでは、進捗マイルス トーンに対応するビジネス マイルス トーンを選択し、をクリックして**OK**です。 例については、実行中、選択**Approved (\<アクティビティ名\>)** です。  
   
 13. 前の 3 つの手順を繰り返して、同じ進捗段階内の他のマイルストーンをすべて追加します。  
   

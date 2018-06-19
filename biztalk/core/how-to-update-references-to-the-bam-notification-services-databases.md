@@ -1,11 +1,11 @@
 ---
-title: "Services データベース、BAM 通知への参照を更新する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Services データベース、BAM 通知への参照を更新する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Notification Services Application database [BAM], restoring
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - restoring [BAM], Notification Services Application database
 - restoring [BAM], NS$instance_name service
 ms.assetid: b007fdc2-2e74-4eef-b4c3-43689e9f2180
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973004"
 ---
 # <a name="how-to-update-references-to-the-bam-notification-services-databases"></a>BAM Notification Services データベースの参照を更新する方法
 送信先システムへのビジネス アクティビティの監視 (BAM) 通知サービス データベースを復元するために必要な手順が完了したら、Notification Services (NSservice.exe) を実行する [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] グループのすべてのコンピューターに Notification Services を再登録する必要があります。 こうして初めて、Notification Services から新しい場所のデータベースに接続できるようになります。  

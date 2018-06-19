@@ -1,11 +1,11 @@
 ---
-title: "BAM 定義を展開する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM 定義を展開する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, definitions [BAM]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - definitions [BAM], deploying
 - Deploy-All command [BAM]
 ms.assetid: 02b8888c-6f6c-45dd-8445-6e507a02f5f0
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970739"
 ---
 # <a name="how-to-deploy-bam-definitions"></a>BAM 定義を展開する方法
 管理者を使用して、**展開すべて**Excel ブックまたは XML 定義ファイルから BAM 定義を展開する BAM 管理ユーティリティのコマンドは、ブックからエクスポートします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の完全インストールを実行すると、構成ウィザードで BAM 構成 XML が自動的に構成されます。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  」と入力して、追跡フォルダーに移動**C:\Program files \microsoft BizTalk Server\<バージョン\>\Tracking**コマンド プロンプトでします。 **Enter**キーを押します。  
   
-3.  型**bm 展開すべて-definitionfile:\<BAM 定義ファイル\>**です。  
+3.  型**bm 展開すべて-definitionfile:\<BAM 定義ファイル\>** です。  
   
 4.  **Enter**キーを押します。  
   

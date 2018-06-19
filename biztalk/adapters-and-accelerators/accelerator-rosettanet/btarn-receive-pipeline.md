@@ -1,11 +1,11 @@
 ---
-title: "BTARN 受信パイプライン |Microsoft ドキュメント"
-ms.custom: 
+title: BTARN 受信パイプライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTARN, receive pipelines
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - MessageUpdater component
 - messages, message flow
 ms.assetid: 811f2a6a-ddd2-49cc-a00b-4c9d0110a0d1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005627"
 ---
 # <a name="btarn-receive-pipeline"></a>BTARN 受信パイプライン
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RosettaNet Implementation Framework (RNIF) メッセージの受信、RNIFReceive パイプライン (RNIFReceive.btp) を実行します。 受信パイプラインには、以下のコンポーネントが含まれます。  

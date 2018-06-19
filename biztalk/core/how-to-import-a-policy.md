@@ -13,7 +13,7 @@ helpviewer_keywords:
 - policies, importing
 - managing [policies], importing
 ms.assetid: 92f6ef18-279f-416d-b13e-8b9642539d27
-caps.latest.revision: ''
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25972336"
 ---
 # <a name="how-to-import-a-policy"></a>ポリシーをインポートする方法
 このトピックでは、BizTalk Server 管理コンソールを使用して BizTalk グループにポリシーをインポートする方法と、BTSTask コマンド ライン ツールを使用してポリシーを BizTalk アプリケーションにインポートする方法について説明します。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 03/28/2018
   
 4.  [参照] をクリックして、ポリシーを含む .xml ファイルに **開く**します。  
   
-     ポリシーがグループにインポートしに表示、**ポリシー**のフォルダー **\<すべての成果物\>**です。  
+     ポリシーがグループにインポートしに表示、**ポリシー**のフォルダー **\<すべての成果物\>** です。  
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用してください。  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  次の表に示すように適切な値を置き換えて、次のコマンドを入力します。  
   
-     **BTSTask ImportApp/:** *値*[**/applicationname は: * **値*] [**/overwrite**] [**/Server:***値 *] [* */database:***値 *]  
+     **BTSTask ImportApp/:** *値*[**/applicationname は: * **値*] [**/overwrite **] [**/Server:***値 *] [* */database:*** 値 *]  
   
      例:  
   

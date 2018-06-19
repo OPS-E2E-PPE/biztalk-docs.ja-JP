@@ -1,11 +1,11 @@
 ---
-title: "管理 (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: 管理 (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - examples, SSO
 - SSOMANAGE command line utility
 ms.assetid: f738e344-4d81-4557-b399-68b59c413245
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970968"
 ---
 # <a name="manage-biztalk-server-sample"></a>管理 (BizTalk Server サンプル)
 シングル サインオン (SSO) 管理のサンプルは、以下の種類の管理操作を実行するために、コマンド ライン ユーティリティ ssomanage.exe で使用できる .xml ファイルを構成する方法を示します。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 11/28/2017
  このサンプルには、上記の種類の操作のそれぞれに対する XSD とサンプル .xml ファイルのペアが含まれています。 サンプル .xml ファイルの値は有効ではありません。 各自の要件に合わせて値を変更する必要があります。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\SSO\Manage\  
+ *\<パスのサンプル\>* \SSO\Manage\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   

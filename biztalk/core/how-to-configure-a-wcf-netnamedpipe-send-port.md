@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 57684e09-1f72-4bde-976c-3fcec65dc182
-caps.latest.revision: ''
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25974968"
 ---
 # <a name="how-to-configure-a-wcf-netnamedpipe-send-port"></a>WCF-NetNamedPipe 送信ポートを構成する方法
 WCF-NetNamedPipe 送信ポートは、プログラムから、または BizTalk 管理コンソールを使用して構成できます。  
@@ -58,7 +59,7 @@ WCF-NetNamedPipe 送信ポートは、プログラムから、または BizTalk 
   
 2.  **全般**  タブの 、 **トランスポート**  をクリックして、 **構成** ボックスの横に **型**します。  
   
-3.  **Wcf-netnamedpipe トランスポートのプロパティ**  ダイアログ ボックスの 、 **全般**  タブで、エンドポイント アドレス、サービス id を構成して、 **SOAPAction** ヘッダーを Wcf-netnamedpipe 送信ポート。 詳細については、**全般** タブで、 **Wcf-netnamedpipe トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-netnamedpipe トランスポート プロパティ] ダイアログ ボックスの [送信[全般]**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+3.  **Wcf-netnamedpipe トランスポートのプロパティ**  ダイアログ ボックスの 、 **全般**  タブで、エンドポイント アドレス、サービス id を構成して、 **SOAPAction** ヘッダーを Wcf-netnamedpipe 送信ポート。 詳細については、**全般** タブで、 **Wcf-netnamedpipe トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-netnamedpipe トランスポート プロパティ] ダイアログ ボックスの [送信[全般]** タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
   
 4.  **Wcf-netnamedpipe トランスポートのプロパティ**  ダイアログ ボックスの 、 **バインド**  タブで、タイムアウトおよびトランザクションのプロパティを構成します。 詳細については、**バインド** タブで、 **Wcf-netnamedpipe トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-netnamedpipe トランスポートのプロパティ ダイアログ ボックス、送信、バインディング**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
   

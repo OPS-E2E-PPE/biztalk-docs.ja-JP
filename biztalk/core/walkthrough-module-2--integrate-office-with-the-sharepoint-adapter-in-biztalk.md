@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル: モジュール 2 - Windows SharePoint と Office の統合サービスのアダプター |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: モジュール 2 - Windows SharePoint と Office の統合サービスのアダプター |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Windows SharePoint Services adapters, InfoPath forms
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Windows SharePoint Services adapter tutorials, integrating Microsoft Office
 - Windows SharePoint Services, document libraries
 ms.assetid: 2f81a712-bb20-4c32-bbac-fb438deded38
-caps.latest.revision: "48"
+caps.latest.revision: 48
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22291458"
 ---
 # <a name="walkthrough-module-2---integrating-office-with-the-windows-sharepoint-services-adapter"></a>チュートリアル: モジュール 2 - Windows SharePoint Services アダプターと Office の統合
 このチュートリアルでは、継続の[チュートリアル: モジュール 1 - Windows SharePoint Services アダプターでメッセージを送受信する](../core/walkthrough-module-1--send-and-receive-messages-with-the-sharepoint-adapter.md)Microsoft Office と統合する方法を説明し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンテンツ ベースルーティング (CBR) アプリケーションを作成します。 概要については、Windows SharePoint Services アダプターを参照してください。 [Windows SharePoint Services アダプターは何ですか。](../core/what-is-the-windows-sharepoint-services-adapter.md)です。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  内の作業ディレクトリへのファイル パスを入力、**場所**フィールドです。 たとえば、 `C:\WSSAdapterWalkthrough\`のようにします。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
 #### <a name="associate-the-key-file-with-the-assembly"></a>アセンブリとキー ファイルの関連付け  
   
@@ -70,11 +71,11 @@ ms.lasthandoff: 09/20/2017
   
 2.  **[署名]** タブをクリックします。  
   
-3.  **[アセンブリの署名]** オプションを選択し、 **[厳密な名前のキー ファイルを選択してください]** オプションのドロップダウン リストをクリックして、 **[参照]**をクリックします。  
+3.  **[アセンブリの署名]** オプションを選択し、 **[厳密な名前のキー ファイルを選択してください]** オプションのドロップダウン リストをクリックして、 **[参照]** をクリックします。  
   
 4.  「`C:\WSSAdapterWalkthrough\OrderProcess.snk`.  
   
-5.  **[開く]**をクリックします。  
+5.  **[開く]** をクリックします。  
   
 #### <a name="create-an-xsd-schema-by-using-the-biztalk-editor"></a>BizTalk エディタを使用した XSD スキーマの作成  
   
@@ -130,7 +131,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  **ドキュメント テンプレート**セクションで、`None`の**ドキュメント テンプレート**です。  
   
-7.  **[作成]**をクリックします。 作成した空のライブラリにリダイレクトされます。  
+7.  **[作成]** をクリックします。 作成した空のライブラリにリダイレクトされます。  
   
 8.  左側にある、をクリックして**設定の変更と列**です。  
   
@@ -138,7 +139,7 @@ ms.lasthandoff: 09/20/2017
   
 10. **名前と種類**、型`Namespace`で、**名前**フィールドです。  
   
-11. **[OK]**をクリックします。  
+11. **[OK]** をクリックします。  
   
 12. `WSSAdapterWalkthrough` Web サイトを閉じます。  
   
@@ -152,7 +153,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  **データ ソース ウィザード**、 をクリックして**参照**最後の手順で作成したスキーマ ファイルを選択します。 たとえば、 `C:\WSSAdapterWalkthrough\OrderProcess\OrderProcess\OrderProcessSchema.xsd`のようにします。  
   
-5.  **[次へ]**をクリックし、 **[完了]**をクリックします。  
+5.  **[次へ]** をクリックし、 **[完了]** をクリックします。  
   
 6.  **データ ソース**タスク ウィンドウで、右クリックし、 **PurchaseOrder**ノードをクリックして**コントロール付きセクション**です。 テンプレートにフォームが作成されます。  
   
@@ -164,7 +165,7 @@ ms.lasthandoff: 09/20/2017
   
 10. **発行ウィザード**、 をクリックして**次**です。  
   
-11. 選択**Web サーバーに**、クリックして**[次へ]**です。  
+11. 選択**Web サーバーに**、クリックして **[次へ]** です。  
   
 12. パスとファイル名を入力、`InfoPathSolutions`ドキュメント ライブラリをクリックして**次**です。 たとえば、 `http://<server_name>/sites/WSSAdapterWalkthrough/InfoPathSolutions/PurchaseOrder.xsn`のようにします。  
   
@@ -197,7 +198,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  **名前と種類**、型`Partner Name`で、**列名**フィールドです。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 7.  `WSSAdapterWalkthrough` Web サイトを閉じます。  
   
@@ -226,7 +227,7 @@ ms.lasthandoff: 09/20/2017
   
 10. **Windows SharePoint Services 統合**、型`Partner Name`で、**列 01**フィールドです。  
   
-11. 型`%XPATH=//pons:PurchaseOrder/pons:BillTo%`で、**列 01 の値**フィールドで、をクリックして**OK**、順にクリック**[ok]**を終了するには、もう一度、**送信ポートのプロパティ**ダイアログ ボックス。  
+11. 型`%XPATH=//pons:PurchaseOrder/pons:BillTo%`で、**列 01 の値**フィールドで、をクリックして**OK**、順にクリック **[ok]** を終了するには、もう一度、**送信ポートのプロパティ**ダイアログ ボックス。  
   
 #### <a name="restart-the-send-port"></a>送信ポートを再起動します。  
   
@@ -257,7 +258,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  **Purchase Order Date**フィールドに「`1/2/2005`です。  
   
-8.  **[保存]**をクリックします。  
+8.  **[保存]** をクリックします。  
   
 9. **名前を付けて保存** ダイアログ ボックスで、「`http://<server_name>/sites/WSSAdapterWalkthrough/Source`で、**ファイル名**フィールド、および enter キー押しです。  
   

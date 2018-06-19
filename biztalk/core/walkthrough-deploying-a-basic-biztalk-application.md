@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル: 基本的な BizTalk アプリケーションの配置 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: 基本的な BizTalk アプリケーションの配置 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, tutorials
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - tutorials, applications
 - applications, tutorials
 ms.assetid: 21b67153-0f8c-406a-a224-fc792b16192f
-caps.latest.revision: "69"
+caps.latest.revision: 69
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010995"
 ---
 # <a name="walkthrough-deploying-a-basic-biztalk-application"></a>チュートリアル: 基本的な BizTalk アプリケーションの配置
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、BizTalk ビジネス ソリューションの管理と展開を簡略化する機能が備わっています。 オーケストレーション、スキーマ、マップ、パイプライン、.NET アセンブリなど、ビジネス ソリューションのさまざまなアイテムを格納する BizTalk アプリケーション コンテナーが取り入れられました。 ことができます管理、変更、展開、および 1 つの単位としてアプリケーションにすべての項目をインストールします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション展開タスクの自動化に役立つウィザードも含まれています。 背景情報について、次を参照してください。[アプリケーションの展開と管理機能](../core/application-deployment-and-management-features.md)と[アプリケーションの展開と管理ツール](../core/application-deployment-and-management-tools.md)です。  
@@ -137,7 +138,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
     |[サーバー]|\<サーバー名\>|ローカル コンピューターで BizTalk 管理データベースをホストする SQL Server インスタンスの名前。 単一のコンピューターにインストールする場合、通常はローカル コンピューターの名前です。 **注:** BizTalk プロジェクトを別のコンピューターに移動する場合は、アセンブリを配置することができます前に、新しいコンピューター名を反映するようにサーバー プロパティを変更する必要があります。|  
     |再配置します。|True または False|これを True に設定すると (既定)、バージョン番号を変更せずに BizTalk アセンブリを再展開できます。|  
     |[グローバル アセンブリ キャッシュにインストール]|True または False|これを True に設定すると (既定)、アセンブリの展開時に、ローカル コンピューター上のグローバル アセンブリ キャッシュ (GAC) にアセンブリがインストールされます。|  
-    |ホスト インスタンスを再起動します。|True または False|これを True に設定すると、アセンブリの再展開時に、ローカル コンピューター上で実行中のすべてのホスト インスタンスが自動的に再起動されます。 False に設定した場合 (既定)、アセンブリの再展開時に、ホスト インスタンスを手動で再起動する必要があります。 **注:**ソリューション レベルからアセンブリを再デプロイする場合は、ホスト インスタンスが再起動されますがこのオプションを True に設定するプロジェクトごとにします。 結果として、再起動が 2 回以上行われる可能性があります。 ソリューション レベルからの再展開を計画する場合は、ソリューション内のただ 1 つのプロジェクトに対してこのプロパティを True に設定することで、ホスト インスタンスが複数回再起動することを防ぐことができます。 その場合は、ソリューション内で再展開される最後のプロジェクトに設定する必要があります。 また、再展開を実行するときにホスト インスタンスが停止された場合は、起動されません。|  
+    |ホスト インスタンスを再起動します。|True または False|これを True に設定すると、アセンブリの再展開時に、ローカル コンピューター上で実行中のすべてのホスト インスタンスが自動的に再起動されます。 False に設定した場合 (既定)、アセンブリの再展開時に、ホスト インスタンスを手動で再起動する必要があります。 **注:** ソリューション レベルからアセンブリを再デプロイする場合は、ホスト インスタンスが再起動されますがこのオプションを True に設定するプロジェクトごとにします。 結果として、再起動が 2 回以上行われる可能性があります。 ソリューション レベルからの再展開を計画する場合は、ソリューション内のただ 1 つのプロジェクトに対してこのプロパティを True に設定することで、ホスト インスタンスが複数回再起動することを防ぐことができます。 その場合は、ソリューション内で再展開される最後のプロジェクトに設定する必要があります。 また、再展開を実行するときにホスト インスタンスが停止された場合は、起動されません。|  
     |単体テストを有効にする|True または False|プロジェクトの単体テストを有効にするかどうかを指定します。|  
   
 4.  ソリューションの各プロジェクトごとに、手順 1. ～ 3. を繰り返します。  
@@ -324,7 +325,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
      ![アプリケーションへの参照を追加](../core/media/appreferences.gif "AppReferences")  
   
-6.  **アプリケーションのターゲット環境設定**いることを確認 ページで、 **\<既定\>**が選択されているし、をクリックして**次へ**です。  
+6.  **アプリケーションのターゲット環境設定**いることを確認 ページで、 **\<既定\>** が選択されているし、をクリックして**次へ**です。  
   
 7.  **インポートの概要**ページで概要情報が正しいことを確認してをクリックして**インポート**です。  
   

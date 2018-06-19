@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: プログラムによって、ポリシーの実行 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: プログラムによって、ポリシーの実行 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6398e7af-2ed1-4596-879c-3b7d000b8de2
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290378"
 ---
 # <a name="walkthrough-executing-the-policy-programmatically"></a>チュートリアル: プログラムによって、ポリシーの実行
 このチュートリアルで作成したポリシーを呼び出すための手順では、[チュートリアル: 単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアルのコンソール アプリケーションからプログラムでします。  
@@ -42,18 +43,18 @@ ms.lasthandoff: 09/20/2017
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**プロジェクトの種類**|をクリックして**Visual c#**です。|  
+    |**プロジェクトの種類**|をクリックして**Visual c#** です。|  
     |**[テンプレート]**|をクリックして**コンソール アプリケーション**です。|  
     |**名前**|型**ConsoleClient**です。|  
     |**場所**|プロジェクト ファイルを保存するフォルダーを指定します。|  
     |**[ソリューション名]**|型**ConsoleClientSol**です。|  
     |**ソリューションのディレクトリを作成します。**|ソリューション ファイルのディレクトリを作成するには、このチェック ボックスをオンにします。|  
   
-4.  **[OK]**をクリックします。 **ConsoleClient**プロジェクトがソリューション エクスプ ローラーで表示されます。 ソリューション エクスプ ローラーが表示されない場合はクリックして**ソリューション エクスプ ローラー**上、**ビュー**メニュー。  
+4.  **[OK]** をクリックします。 **ConsoleClient**プロジェクトがソリューション エクスプ ローラーで表示されます。 ソリューション エクスプ ローラーが表示されない場合はクリックして**ソリューション エクスプ ローラー**上、**ビュー**メニュー。  
   
 5.  ソリューション エクスプ ローラーで右クリック**参照**、クリックして**参照の追加**です。  
   
-6.  をクリックして**参照**を参照、 **\program files \microsoft BizTalk**、順にダブルクリック**[microsoft.ruleengine.dll]**です。  
+6.  をクリックして**参照**を参照、 **\program files \microsoft BizTalk**、順にダブルクリック **[microsoft.ruleengine.dll]** です。  
   
 7.  先頭に次の行を追加、 **Program.cs**後、既存のファイル`using`ステートメント。  
   
@@ -200,7 +201,7 @@ ms.lasthandoff: 09/20/2017
     }  
     ```  
   
--   追加することがあります、 **Console.ReadLine()**ステートメントの最後に、 **Main**アプリケーションが待機すると、アプリケーションを終了するように機能します。  
+-   追加することがあります、 **Console.ReadLine()** ステートメントの最後に、 **Main**アプリケーションが待機すると、アプリケーションを終了するように機能します。  
   
 -   このチュートリアルでは、クライアントが ProcessPurchaseOrder ポリシーに送信するファクトは 1 つだけです。 ファクトの配列を作成し、オーバー ロードを使用する必要がある場合は、クライアントは、1 つ以上のファクトをポリシーを送信する必要があります、 **Execute**メソッド パラメーターとして配列を受け取る。 次のサンプル コードは、その方法を示しています。  
   

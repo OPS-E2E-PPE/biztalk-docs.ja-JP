@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268394"
 ---
 # <a name="receiveportcollection-node"></a>ReceivePortCollection ノード
 バインド ファイルの ReceivePortCollection ノードは、バインド ファイルと共にエクスポートされる受信ポートに関する特定の情報を含むすべての ReceivePort ノードの親ノードです。  

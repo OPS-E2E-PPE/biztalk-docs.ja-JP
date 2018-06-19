@@ -1,11 +1,11 @@
 ---
-title: "SelectiveBindingImport (アプリケーションの展開サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: SelectiveBindingImport (アプリケーションの展開サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - binding files, importing
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - deploying, scripts
 - examples, binding files
 ms.assetid: 963bfc80-8cc4-4d90-96b4-e85ae04405cf
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974832"
 ---
 # <a name="selectivebindingimport-application-deployment-sample"></a>SelectiveBindingImport (アプリケーションの展開サンプル)
 このトピックでは、SelectiveBindingImport サンプルの使用方法について説明します。 このサンプル スクリプトを使用すると、1 つのアプリケーションをさまざまな展開先環境にインポートするときに、異なるバインドをそのアプリケーションに適用できます。 この方法は、ネットワーク共有に格納されているバインド ファイルからバインドをインポートするときに使用できます。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 11/28/2017
  このサンプルは、BizTalk アプリケーションの .msi ファイルに含まれている処理後のスクリプトを使用して、ネットワーク共有からバインド ファイルを選択的にインポートする方法を示しています。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- 次のサンプル フォルダーとファイルを検索できます*\<サンプル パス\>*\Application Deployment\SelectiveBindingImport:  
+ 次のサンプル フォルダーとファイルを検索できます*\<サンプル パス\>* \Application Deployment\SelectiveBindingImport:  
   
 -   Develop (フォルダー)  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-run-the-sample"></a>サンプルを実行するには  
   
-1.  実行**から Build.Bat、 *\<サンプル パス\>*\Application Deployment\CreateApp**ディレクトリ。 これには、次のファイルが作成、 *\<サンプル パス\>*\Application Deployment\CreateApp\Dlls フォルダー: Schemas.dll、Maps.dll、および Orchestrations.dll です。  
+1.  実行**から Build.Bat、 *\<サンプル パス\>* \Application Deployment\CreateApp**ディレクトリ。 これには、次のファイルが作成、 *\<サンプル パス\>* \Application Deployment\CreateApp\Dlls フォルダー: Schemas.dll、Maps.dll、および Orchestrations.dll です。  
   
 2.  **アプリケーションを作成します。** BizTalk Server 管理コンソールには、アプリケーションを」の説明に従って作成[アプリケーションを作成する方法](../core/how-to-create-an-application.md)です。  
   

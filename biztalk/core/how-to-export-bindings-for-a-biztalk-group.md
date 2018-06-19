@@ -1,18 +1,18 @@
 ---
-title: "BizTalk グループのバインドをエクスポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk グループのバインドをエクスポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings, exporting
 - groups, bindings
 - groups, exporting
 ms.assetid: 51955266-f87f-41c9-992c-93036b40f663
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253986"
 ---
 # <a name="how-to-export-bindings-for-a-biztalk-group"></a>BizTalk グループのバインドをエクスポートする方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、.xml ファイルに BizTalk グループのバインドをエクスポートする方法について説明します。 」の説明に従って、BizTalk グループまたはアプリケーションにこれらのバインドにインポートすること、ことができます[を BizTalk グループにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-group.md)と[BizTalk アプリケーションにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-application.md)です。 バインド ファイルの使用の詳細については、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)です。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
      例: C:\Bindings\Group1Bindings_Staging1.xml  
   
-4.  いることを確認**、現在のグループからすべてのバインドをエクスポート**を選択して、をクリックして**OK**です。  
+4.  いることを確認 **、現在のグループからすべてのバインドをエクスポート**を選択して、をクリックして**OK**です。  
   
      指定した場所の .xml ファイルに、バインドがエクスポートされます。  
   

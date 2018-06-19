@@ -1,14 +1,14 @@
 ---
-title: "FTP アダプターに関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: FTP アダプターに関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9e58f2db-9ec5-41fe-af02-9a7d60a217db
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010091"
 ---
 # <a name="known-issues-with-the-ftp-adapter"></a>FTP アダプターに関する既知の問題
 ここでは、エラー回避に役立つ情報を記載します。  

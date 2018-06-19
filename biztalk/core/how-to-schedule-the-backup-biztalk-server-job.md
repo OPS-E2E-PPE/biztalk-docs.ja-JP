@@ -1,15 +1,15 @@
 ---
-title: "バックアップの BizTalk Server のジョブのスケジュールを設定 |Microsoft ドキュメント"
-description: "BizTalk Server のバックアップ ジョブのパラメーターを構成および実行毎月、毎週、日単位、または 1 時間ごとに、スケジュールを設定"
-ms.custom: 
+title: バックアップの BizTalk Server のジョブのスケジュールを設定 |Microsoft ドキュメント
+description: BizTalk Server のバックアップ ジョブのパラメーターを構成および実行毎月、毎週、日単位、または 1 時間ごとに、スケジュールを設定
+ms.custom: ''
 ms.date: 11/02/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e89fff4-da87-4cdc-acc4-46f03c3269fc
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 9aaed443492b74729171fef79c634bff561af929
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2017
+ms.locfileid: "23980754"
 ---
 # <a name="schedule-the-backup-biztalk-server-job"></a>バックアップの BizTalk Server ジョブのスケジュール
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブは、SQL Server エージェント サービスにより設定されたスケジュールに従って実行されます。 バックアップの実行頻度を変更するには、SQL Server Management Studio を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブのスケジュールを変更します。  
@@ -39,7 +40,7 @@ SQL Server の sysadmin 固定サーバー ロールのメンバーであるア�
   
 6.  **ジョブ ステップの一覧** **BackupFull**、し、**編集**です。  
   
-7.  **ジョブ ステップのプロパティ - BackupFull**で、**コマンド**ボックスで、完全バックアップを実行する頻度を変更することで、コマンドを更新します**'h'** (1 時間ごと)、**が '。** (毎日) **'w'** (毎週)、 **am'** (毎月)、 **'y'** (毎年)。 **[ OK]** を選択します。  
+7.  **ジョブ ステップのプロパティ - BackupFull**で、**コマンド**ボックスで、完全バックアップを実行する頻度を変更することで、コマンドを更新します **'h'** (1 時間ごと)、**が '。** (毎日) **'w'** (毎週)、 **am'** (毎月)、 **'y'** (毎年)。 **[ OK]** を選択します。  
   
     > [!NOTE]
     >  BizTalk Server のバックアップ ジョブを初めて実行するには、完全バックアップが完了します。  
@@ -74,7 +75,7 @@ SQL Server の sysadmin 固定サーバー ロールのメンバーであるア�
     > [!NOTE]
     >  [ジョブのスケジュール](https://docs.microsoft.com/sql/ssms/agent/schedule-a-job)詳細を示します。
   
-13. **ジョブのプロパティ - Backup BizTalk Server (BizTalkMgmtDb)**をクリックして**OK**です。  
+13. **ジョブのプロパティ - Backup BizTalk Server (BizTalkMgmtDb)** をクリックして**OK**です。  
   
 ## <a name="more-good-stuff"></a>便利な機能  
  [バックアップの BizTalk Server のジョブを構成します。](../core/how-to-configure-the-backup-biztalk-server-job.md)   

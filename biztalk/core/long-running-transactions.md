@@ -1,11 +1,11 @@
 ---
-title: "実行時間の長いトランザクション |Microsoft ドキュメント"
-ms.custom: 
+title: 実行時間の長いトランザクション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - long-running transactions, about long-running transactions
@@ -31,7 +31,7 @@ helpviewer_keywords:
 - transactions, nesting
 - examples, scopes
 ms.assetid: 4bf4d0c8-903a-411f-963b-bd4cfdfc2958
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -40,6 +40,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262778"
 ---
 # <a name="long-running-transactions"></a>長時間トランザクション
 長時間トランザクションは、BizTalk オーケストレーションでよく使用される重要なコンストラクターです。 スコープ ベースのカスタム補正、スコープ ベースのカスタム例外処理、およびトランザクションの入れ子に対応した機能があり、各機能を活用することで、堅牢なトランザクション アーキテクチャをきわめて柔軟に設計することができます。  

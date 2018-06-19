@@ -1,11 +1,11 @@
 ---
-title: "BAM アイテムを更新する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM アイテムを更新する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Update-All command [BAM]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - updating, artifacts
 - artifacts, updating
 ms.assetid: bc28159e-df51-499b-bd51-7b682b849891
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971048"
 ---
 # <a name="how-to-update-bam-artifacts"></a>BAM アイテムを更新する方法
 管理者を使用して、**更新すべて**コマンドを BAM プライマリ インポート データベースに展開されたアイテムを更新します。 指定する BAM 定義は、更新するアイテムについての情報を含んでいる XML ファイルまたは Excel ブックのいずれかです。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
   
-3.  型**bm 更新すべて-definitionfile:\<def ファイル\>**です。  
+3.  型**bm 更新すべて-definitionfile:\<def ファイル\>** です。  
   
 4.  **Enter**キーを押します。  
   

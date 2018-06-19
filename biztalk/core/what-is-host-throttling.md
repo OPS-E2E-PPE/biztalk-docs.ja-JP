@@ -12,7 +12,7 @@ helpviewer_keywords:
 - host throttling, inbound
 - host throttling, about host throttling
 ms.assetid: 36d1818b-c8a2-4f23-bfb3-c034ee242f69
-caps.latest.revision: ''
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22291186"
 ---
 # <a name="what-is-host-throttling"></a>ホスト制限とは何ですか?
 BizTalk サーバーで発生する処理の大半は、BizTalk Server ホスト インスタンスという論理エンティティ内で発生します。これは、BizTalk サーバーで Windows サービスまたは分離ホスト プロセスとして動作するプロセスです。 ホスト インスタンス プロセスによるリソースの使用を管理するために、BizTalk Server では、ホスト インスタンス全体のメッセージのフローおよび処理を管理する、調整可能な制限メカニズムが使用されます。  

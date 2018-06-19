@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22299010"
 ---
 # <a name="mscit-supply-chain-migration-from-biztalk-server-2009-hub-to-biztalk-server-2013-r2-virtualized-hub"></a>BizTalk Server 2013 R2 の仮想化されたハブに BizTalk Server 2009 のハブから MSCIT: サプライ チェーンの移行
 アプリケーションの移行は、BizTalk Server 2010 から BizTalk Server 2013 R2。  

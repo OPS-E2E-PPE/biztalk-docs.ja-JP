@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server2 の管理 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server2 の管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 977e2685-a914-422a-97f7-d0c23717f010
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008603"
 ---
 # <a name="managing-biztalk-server"></a>BizTalk Server の管理
 このセクションでは、実稼働環境で BizTalk Server システムを管理するためのガイダンスを提供します。 一般に次の手順では、展開後に BizTalk アプリケーションを使用している前提としています。 これらの手順では、ベスト プラクティスと、次の定期的な操作の概念について説明します。  

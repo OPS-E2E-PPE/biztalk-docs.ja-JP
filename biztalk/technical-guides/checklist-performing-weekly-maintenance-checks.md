@@ -1,14 +1,14 @@
 ---
-title: "チェックリスト: 毎週の保守チェックの実行 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チェックリスト: 毎週の保守チェックの実行 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b13e43ba-4bac-4d4b-aaf8-46d60c0561bf
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976528"
 ---
 # <a name="checklist-performing-weekly-maintenance-checks"></a>チェックリスト: 毎週の保守チェックの実行
 このトピックの内容が毎週の信頼性、管理、セキュリティ、およびパフォーマンスのメンテナンス チェックの実行に必要な手順について説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムです。  

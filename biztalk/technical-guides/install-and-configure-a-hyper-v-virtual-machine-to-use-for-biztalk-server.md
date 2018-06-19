@@ -1,14 +1,14 @@
 ---
-title: "インストールして、BizTalk Server で使用する HYPER-V 仮想マシンの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: インストールして、BizTalk Server で使用する HYPER-V 仮想マシンの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 86add392-3cde-432d-95d6-c81d68716537
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010971"
 ---
 # <a name="installing-and-configuring-a-hyper-v-virtual-machine-for-use-with-biztalk-server"></a>インストールして、BizTalk Server で使用する HYPER-V 仮想マシンの構成
 このトピックの内容をインストールして、HYPER-V 仮想マシンのインストールと構成に関する推奨事項を BizTalk Server をインストールするための推奨事項など、HYPER-V 環境で BizTalk Server の構成に関する推奨事項を提供する、HYPER-V バーチャル マシンです。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 12/01/2017
   
  仮想マシンを構成する場合は、レガシ ネットワーク アダプターではなく、ネットワーク アダプターを使用することを確認します。 レガシ ネットワーク アダプターは、統合コンポーネントをサポートしないオペレーティング システム向けです。  
   
- ネットワーク パフォーマンスの使用状況を測定する、 **"\Network インターフェイス \Bytes total/sec"**と**\Network インターフェイス (\*) \Output Queue Length**ホスト オペレーティングにパフォーマンス モニター カウンターネットワーク カードの全体的なパフォーマンスを測定するシステムです。 物理ネットワークが使用中として識別される場合を使用して、 **"\Hyper-V 仮想ネットワーク アダプター (\*) \Bytes/sec"**どのバーチャル マシン ネットワーク アダプターを識別する、ホスト オペレーティング システムのカウンターは、高負荷を生成しています。  
+ ネットワーク パフォーマンスの使用状況を測定する、 **"\Network インターフェイス \Bytes total/sec"** と**\Network インターフェイス (\*) \Output Queue Length**ホスト オペレーティングにパフォーマンス モニター カウンターネットワーク カードの全体的なパフォーマンスを測定するシステムです。 物理ネットワークが使用中として識別される場合を使用して、 **"\Hyper-V 仮想ネットワーク アダプター (\*) \Bytes/sec"** どのバーチャル マシン ネットワーク アダプターを識別する、ホスト オペレーティング システムのカウンターは、高負荷を生成しています。  
   
  HYPER-V 環境でネットワーク パフォーマンスの評価の詳細については、次を参照してください。、**ネットワーク パフォーマンスの測定**のセクション[チェックリスト: Hyper-v でのパフォーマンスの測定](../technical-guides/checklist-measuring-performance-on-hyper-v.md)です。  
   

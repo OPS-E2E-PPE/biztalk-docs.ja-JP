@@ -1,11 +1,11 @@
 ---
-title: "Windows グループと BizTalk Server でのユーザー アカウント |Microsoft ドキュメント"
-ms.custom: 
+title: Windows グループと BizTalk Server でのユーザー アカウント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking database, BTS_ADMIN_USERS role [SQL Server database]
@@ -81,7 +81,7 @@ helpviewer_keywords:
 - BAM Portal Users [Windows group]
 - Notification Services Application database [BAM], NSAdmin role [SQL Server database]
 ms.assetid: a01603bd-4105-4691-819d-de43b00b40f3
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -90,6 +90,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976104"
 ---
 # <a name="windows-groups-and-user-accounts-in-biztalk-server"></a>BizTalk Server の Windows グループ アカウントとユーザー アカウント
 BizTalk Server ローカルおよびドメイン グループ アカウントとユーザー アカウントに関する情報です。 BizTalk Server と必要なすべてのソフトウェアを 1 台のコンピューターにインストールすると、既定では、必要な BizTalk グループ アカウントが構成マネージャーで作成されます。 このセクションの説明は、複数コンピューター トポロジを対象としています。  

@@ -16,7 +16,7 @@ helpviewer_keywords:
 - WCF services, publishing
 - tutorials, WCF adapters
 ms.assetid: 43b76215-9cb0-47ab-a085-c4cf265410f9
-caps.latest.revision: ''
+caps.latest.revision: 72
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26010467"
 ---
 # <a name="walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter"></a>チュートリアル: Wcf-basichttp アダプタを使用して WCF サービスの発行
 ## <a name="introduction"></a>概要  
@@ -93,7 +94,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  **BizTalk WCF サービス公開ウィザードへようこそ** ] ページで [ **次**します。  
   
-3.  **WCF サービスの種類**] ページで、次の操作の種類を指定する実行[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]を公開するサービスと受信用 BizTalk エンドポイント[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]メッセージ、およびクリック**[次へ**:  
+3.  **WCF サービスの種類**] ページで、次の操作の種類を指定する実行[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]を公開するサービスと受信用 BizTalk エンドポイント[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]メッセージ、およびクリック **[次へ**:  
   
     1.  選択、**サービス エンドポイント**オプションは、公開する、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]アセンブリ内のオーケストレーションからサービス。 選択 **Wcf-basichttp** から、 **アダプター名 (トランスポートの種類)** ボックスの一覧です。  
   
@@ -112,7 +113,7 @@ ms.lasthandoff: 03/28/2018
   
 6.  **オーケストレーションとポート**  ページで、ことを確認して、 **ポート: DeliveryRequestPort** ノード ページで、選択したし、順にクリックして **次**します。 このノードを選択すると、対応する上位レベルのノードはも選択されていることを意味します。 このポートは、WCF-BasicHttp アダプターをホストする要求 - 応答の受信場所で公開されます。  
   
-7.  **WCF サービスのプロパティ**] ページの [、**ターゲット**の名前空間、 **WCF サービス**テキスト ボックスに入力する、この公開された URI[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]を使用するサービスとをクリックして**次**です。 このチュートリアルでは、URI の場合、既定値のまま"**http://tempuri.org/"**のターゲットの名前空間で、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービスのテキスト ボックス。  
+7.  **WCF サービスのプロパティ**] ページの [、**ターゲット**の名前空間、 **WCF サービス**テキスト ボックスに入力する、この公開された URI[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]を使用するサービスとをクリックして**次**です。 このチュートリアルでは、URI の場合、既定値のまま"**http://tempuri.org/"** のターゲットの名前空間で、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービスのテキスト ボックス。  
   
 8.  **WCF サービスの場所** ページで、次の場所を指定する操作を実行、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービスを作成して、をクリックする**次**:  
   
@@ -128,7 +129,7 @@ ms.lasthandoff: 03/28/2018
   
 1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
-2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[**アプリケーション**、展開**WCFBasicHttpReceiveAdapter**、展開**オーケストレーション**、を右クリックして**[Deliveryprocess]**オーケストレーション、] をクリックして**プロパティ**、し、バインド情報を次のように構成します。  
+2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[**アプリケーション**、展開**WCFBasicHttpReceiveAdapter**、展開**オーケストレーション**、を右クリックして **[Deliveryprocess]** オーケストレーション、] をクリックして**プロパティ**、し、バインド情報を次のように構成します。  
   
     1.  **オーケストレーションのプロパティ** ダイアログ ボックスで、をクリックして **バインド**, 、し設定 **ホスト** に **BizTalkServerApplication**します。  
   

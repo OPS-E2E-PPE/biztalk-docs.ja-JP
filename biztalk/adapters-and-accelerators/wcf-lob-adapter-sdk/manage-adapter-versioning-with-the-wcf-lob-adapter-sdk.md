@@ -1,14 +1,14 @@
 ---
-title: "WCF LOB Adapter SDK と、アダプター バージョンの管理 |Microsoft ドキュメント"
-ms.custom: 
+title: WCF LOB Adapter SDK と、アダプター バージョンの管理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb596fdd-251c-4978-9f33-cf2883d281d8
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225834"
 ---
 # <a name="manage-adapter-versioning-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK と、アダプター バージョンを管理します。
 アダプターとその有効期間中に、可能性のある数回の初期デプロイ後アダプター (およびが公開するエンドポイント) は、さまざまな理由を変更する必要があります。 これらの理由には、ビジネス ニーズ、情報テクノロジの要件、または基幹業務システムまたはアダプター自体に関する問題の変更が含まれます。 使用して記述されているアダプターのバージョン管理を処理するためのさまざまな方法について説明、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]です。  

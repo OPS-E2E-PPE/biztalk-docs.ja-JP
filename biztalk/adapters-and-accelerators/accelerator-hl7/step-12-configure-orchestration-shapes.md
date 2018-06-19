@@ -1,18 +1,18 @@
 ---
-title: "手順 12: オーケストレーション図形の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 12: オーケストレーション図形の構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, orchestration shapes
 - orchestrations, shapes
 - message enrichment tutorial, orchestrations
 ms.assetid: 9388254b-2841-4489-838e-de913ceff151
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006427"
 ---
 # <a name="step-12-configure-orchestration-shapes"></a>手順 12: オーケストレーション図形を構成します。
 このステップでは、不十分な構成のスマート タグを削除するためにオーケストレーション図形の構成を完了します。 指定する**DoorbellOutputMessage**最初の変換プロセスの出力として指定する**DoorbellMap.btm**そのプロセスで使用されるマップとして。 指定する**DoorbellFinalMessage** 2 番目の出力と同じプロセスを変換およびその他のフィールドのデータを持つメッセージを拡充する式を追加します。  
@@ -85,7 +86,7 @@ ms.lasthandoff: 12/01/2017
   
     ```  
   
-14. **[OK]**をクリックします。  
+14. **[OK]** をクリックします。  
   
     > [!IMPORTANT]
     >  式では、"HeaderInfo.LoadXml"には、キャリッジ リターンと、式内のスペースを削除します。 "HeaderInfo.LoadXml"ステートメントは、1 つの行にする必要があります。  

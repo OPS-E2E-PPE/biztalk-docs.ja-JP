@@ -1,14 +1,14 @@
 ---
-title: "構成をエクスポートできません |。Microsoft ドキュメント"
-ms.custom: 
+title: 構成をエクスポートできません |。Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 64f09af4-00a0-47cb-889e-d9aeb7266eb2
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286850"
 ---
 # <a name="unable-to-export-configuration"></a>構成をエクスポートできません
 ## <a name="details"></a>詳細  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  トランスポート名を右クリックします。  
   
-5.  **[プロパティ]**をクリックします。  
+5.  **[プロパティ]** をクリックします。  
   
 6.  ポート**型**一覧で、適切なポートを選択します。  
   
@@ -55,6 +56,6 @@ ms.lasthandoff: 09/20/2017
   
 8.  **WCF [***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**インポート/エクスポート**タブです。  
   
-9. **[エクスポート]**をクリックします。  
+9. **[エクスポート]** をクリックします。  
   
 10. 必要なプロパティが適切に指定されていることを確認します。 [アドレス (URI)] のスキームは、[バインディングの種類] と一致する必要があります。

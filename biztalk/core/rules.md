@@ -1,11 +1,11 @@
 ---
-title: "ルール |Microsoft ドキュメント"
-ms.custom: 
+title: ルール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, actions
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - business rules, facts
 - business rules
 ms.assetid: b288dd07-33f1-42fe-bbfb-02674ef3b3ca
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268778"
 ---
 # <a name="rules"></a>ルール
 ビジネス ルールはビジネス プロセスの運営を管理する宣言型ステートメントです。 ルールは条件とアクションで構成されます。 条件を評価するに評価されると、 **true**、ルール エンジンは、1 つまたは複数のアクションを開始します。  

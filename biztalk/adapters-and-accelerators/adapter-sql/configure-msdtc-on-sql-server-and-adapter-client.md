@@ -1,14 +1,14 @@
 ---
-title: "SQL Server とアダプターのクライアント上の MSDTC を構成する |Microsoft ドキュメント"
-ms.custom: 
+title: SQL Server とアダプターのクライアント上の MSDTC を構成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2c87f455-a8c4-4169-bf18-695926136df1
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222922"
 ---
 # <a name="configure-msdtc-on-sql-server-and-adapter-client"></a>SQL Server とアダプターのクライアント上の MSDTC を構成します。
 SQL Server を使用して、操作を実行、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] (を通じて[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、WCF サービス モデルで、または WCF チャネル モデル)、トランザクション スコープ内で実行することができます。 場合は、クライアント プログラムは、同じトランザクションの一部として 1 つ以上のトランザクション リソースを持つ、トランザクションが MSDTC トランザクションに昇格を取得します。 MSDTC トランザクションのスコープ内で操作を実行するアダプターを有効にするを実行しているコンピューターで MSDTC を両方を構成する必要があります、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]と SQL Server。 また、Windows ファイアウォールの例外の一覧に、MSDTC を追加する必要があります。 このセクションでは、アダプターのクライアントと SQL Server を実行するコンピューターでこれらのタスクを実行する方法に関する情報を提供します。  

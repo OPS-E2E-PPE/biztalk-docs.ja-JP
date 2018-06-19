@@ -1,17 +1,17 @@
 ---
-title: "公開ウィザード Web サービスとしてのスキーマを公開するサービス、BizTalk Web を使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 公開ウィザード Web サービスとしてのスキーマを公開するサービス、BizTalk Web を使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Web Services Publishing Wizard, publishing
 - BizTalk Web Services Publishing Wizard, schemas
 ms.assetid: b22de720-1416-486a-988f-e52527ad9ab1
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25974816"
 ---
 # <a name="how-to-use-the-biztalk-web-services-publishing-wizard-to-publish-schemas-as-a-web-service"></a>BizTalk Web サービス公開ウィザードを使用してスキーマを Web サービスとして公開する方法
 BizTalk Web サービス公開ウィザードを使用して、スキーマを Web サービスとして公開することができます。  
@@ -97,7 +98,7 @@ BizTalk Web サービス公開ウィザードを使用して、スキーマを W
     -   **BizTalk を作成する受信場所。** このオプションでは、生成された各 .asmx ファイルに対応する SOAP アダプターの受信ポートと受信場所が自動的に作成されます。 別の受信場所が既に存在する場合、受信場所は置き換えられません。 SOAP アダプターを解決する形式を使用して、受信場所"/\<*仮想ディレクトリ名*\>/\<*オーケストレーション namespace_typename_portname* \>.asmx"です。 このオプションの選択後、受信ポートと場所を生成するアプリケーションを選択します。  
   
         > [!NOTE]
-        >  プロジェクトの場所には、別のサーバーを指定することもできます。 別のサーバーに Web サービスを発行するとしてプロジェクト名を入力**http://&lt です*servername*>/<*project_name*>**です。  
+        >  プロジェクトの場所には、別のサーバーを指定することもできます。 別のサーバーに Web サービスを発行するとしてプロジェクト名を入力**http://&lt です*servername*>/<*project_name*>** です。  
   
         > [!NOTE]
         >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに発行するときは、URL に Web サイトのポート番号を含める: http://localhost:8080/<*project_name*> です。  

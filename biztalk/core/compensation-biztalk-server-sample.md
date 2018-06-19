@@ -1,11 +1,11 @@
 ---
-title: "補正 (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: 補正 (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - examples, compensations
 - compensations, orchestrations
 ms.assetid: 9d10c7be-6a4c-44cc-bf29-78ecdf147bd1
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975133"
 ---
 # <a name="compensation-biztalk-server-sample"></a>補正 (BizTalk Server サンプル)
 補正のサンプルを使用する方法を示しています、**補正**オーケストレーションの図形です。  
@@ -113,13 +114,13 @@ ms.lasthandoff: 11/28/2017
   
     1.  **BizTalk Web サービス公開ウィザードへようこそ** ページで、をクリックして**次**です。  
   
-    2.  **Web サービスの作成**] ページで、[ **web サービスとして公開する BizTalk オーケストレーション**をクリックし、 **[次へ]**です。  
+    2.  **Web サービスの作成**] ページで、[ **web サービスとして公開する BizTalk オーケストレーション**をクリックし、 **[次へ]** です。  
   
     3.  **BizTalk アセンブリ**ページを参照して選択\<*サンプル パス*\>\Orchestrations\Compensation\bin\Release\CompensationOrchestration.dll をクリックして**次**です。  
   
     4.  **オーケストレーションとポート** ページで、をクリックして**次**です。  
   
-    5.  **Web サービスのプロパティ**] ページの [ **web サービスのターゲット名前空間**、型**http://Microsoft.BizTalk.Samples.Compensation/**をクリックして**次**です。  
+    5.  **Web サービスのプロパティ**] ページの [ **web サービスのターゲット名前空間**、型**http://Microsoft.BizTalk.Samples.Compensation/** をクリックして**次**です。  
   
     6.  **Web サービス プロジェクト**] ページの [**場所**、型**http://localhost/CompensationOrchestrationWebServiceProxy**です。  
   
@@ -155,7 +156,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  **セキュリティ** タブで、をクリックして**インターネット**、クリックして**レベルのカスタマイズ**です。  
   
-    3.  **[その他]**セクションで、いることを確認、**ドメイン間でデータ ソースにアクセス**設定が有効であり、をクリックして**OK**です。 InfoPath ユーザー インターフェイス ソリューションのスクリプト コードを実行するには、この設定が必要です。  
+    3.  **[その他]** セクションで、いることを確認、**ドメイン間でデータ ソースにアクセス**設定が有効であり、をクリックして**OK**です。 InfoPath ユーザー インターフェイス ソリューションのスクリプト コードを実行するには、この設定が必要です。  
   
     4.  Windows エクスプ ローラーに移動\<*サンプル パス*\>\Orchestrations\Compensation\InfoPath を右クリックして**Contact Info Update.xsn**  をクリックし、 **デザイン**です。  
   

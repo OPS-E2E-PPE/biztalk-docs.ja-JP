@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 2013 での BizTalk プロジェクト システムの変更 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 2013 での BizTalk プロジェクト システムの変更 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 82f0dd18-073c-4cba-aa0d-48076c58f874
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006275"
 ---
 # <a name="changes-to-biztalk-project-system-in-biztalk-server-2013"></a>BizTalk Server 2013 での BizTalk プロジェクト システムへの変更
 このトピックでは変更の概要を BizTalk Server で BizTalk プロジェクト システムにします。  
@@ -76,4 +77,4 @@ ms.lasthandoff: 12/01/2017
  BizTalk Server では、柔軟なパッケージに行うのための BizTalk アイテムとヘルパー クラスを結合することができます。  ただしを使用して直接新しい c# ファイルを追加することはできません、**新しい項目の追加**または**新しいクラスの追加**メニュー オプション。  
   
 ## <a name="generatecsfiles-registry-key-is-obsolete"></a>GenerateCSFiles レジストリ キーの廃止  
- **GenerateCSFiles**レジストリ キーは廃止されます。 生成されたすべての .cs ファイルは、[ソリューション エクスプローラー] ウィンドウに表示されます。 をクリックする必要があります**[すべてのファイル**ツールバー項目では、ソリューション エクスプ ローラー] ウィンドウで、一部の BizTalk アイテムに関連付けられた .cs ファイルを参照してください。
+ **GenerateCSFiles**レジストリ キーは廃止されます。 生成されたすべての .cs ファイルは、[ソリューション エクスプローラー] ウィンドウに表示されます。 をクリックする必要があります **[すべてのファイル**ツールバー項目では、ソリューション エクスプ ローラー] ウィンドウで、一部の BizTalk アイテムに関連付けられた .cs ファイルを参照してください。

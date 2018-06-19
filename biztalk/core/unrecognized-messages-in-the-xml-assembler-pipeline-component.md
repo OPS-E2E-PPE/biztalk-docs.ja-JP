@@ -1,18 +1,18 @@
 ---
-title: "認識されないメッセージを XML アセンブラー パイプライン コンポーネント |Microsoft ドキュメント"
-ms.custom: 
+title: 認識されないメッセージを XML アセンブラー パイプライン コンポーネント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XMLNorm.AllowUnrecognizedMessage property
 - XML Assembler [pipeline component], unrecognized messages
 - pipeline components, XML Assembler
 ms.assetid: dd98512a-33a4-4b2e-977e-1b3a30747c6a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286810"
 ---
 # <a name="unrecognized-messages-in-the-xml-assembler-pipeline-component"></a>XML アセンブラー パイプライン コンポーネントで認識されないメッセージ
 XML アセンブラー コンポーネントは、メッセージが次に示す事項に該当する場合、"認識されない" メッセージとして処理します。  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "26009211"
 ---
 # <a name="using-biztalk-adapter-tracing"></a>BizTalk アダプターのトレースの使用
 ここでは、Trace Log tool (トレース ログ ツール) をインストールする方法、および BizTalk アダプターのトレースを可能にする方法について説明します。  
@@ -41,15 +42,15 @@ ms.lasthandoff: 04/20/2018
     > [!NOTE]
     >  64 ビット版の Windows を使用している場合は、お使いのシステム用の正しいファイルを選択してダウンロードしてください。  
   
-3.  **[Select an Installation Type]** ダイアログ ボックスで、 **[Custom]** インストールを選択し、 **[Next]**をクリックします。  
+3.  **[Select an Installation Type]** ダイアログ ボックスで、 **[Custom]** インストールを選択し、 **[Next]** をクリックします。  
   
-4.  既定のインストール先をそのまま使用し、 **[Next]**をクリックします。  
+4.  既定のインストール先をそのまま使用し、 **[Next]** をクリックします。  
   
 5.  **[Custom Installation]** ダイアログ ボックスで、利用可能な機能をすべてオフにします。  
   
 6.  **[Microsoft Windows Core SDK]** 機能を展開し、 **[Tools]** 機能を展開します。  
   
-7.  **[Tools (Intel 64-bit)]** 機能を選択し、 **[Will be installed on local hard drive]**をクリックします。  
+7.  **[Tools (Intel 64-bit)]** 機能を選択し、 **[Will be installed on local hard drive]** をクリックします。  
   
 8.  **次へ**をクリックし、**次へ**をクリックしてインストールを開始します。  
   

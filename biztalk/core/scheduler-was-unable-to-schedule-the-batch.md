@@ -1,14 +1,14 @@
 ---
-title: "スケジューラはバッチをスケジュールできませんでした |Microsoft ドキュメント"
-ms.custom: 
+title: スケジューラはバッチをスケジュールできませんでした |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5ac6d79c-c995-4c95-a4da-ee2f50b9a13a
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269194"
 ---
 # <a name="scheduler-was-unable-to-schedule-the-batch"></a>スケジューラはバッチをスケジュールできませんでした
 ## <a name="details"></a>詳細  
@@ -43,10 +44,10 @@ ms.lasthandoff: 09/20/2017
   
 3.  適切なパーティを右クリックします。  
   
-4.  **[プロパティ]**をクリックします。  
+4.  **[プロパティ]** をクリックします。  
   
 5.  [*パーティ名*]**パーティ プロパティ**ダイアログ ボックスで、左側のウィンドウでをクリックして**送信ポート**です。  
   
 6.  [送信ポートの名前を入力、**送信ポート**] ボックスの一覧です。  
   
-7.  **[OK]**をクリックします。
+7.  **[OK]** をクリックします。

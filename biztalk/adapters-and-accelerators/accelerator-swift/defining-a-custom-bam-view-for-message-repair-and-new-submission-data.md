@@ -1,17 +1,17 @@
 ---
-title: "Message Repair and 新しい送信データのカスタム BAM ビューの定義 |Microsoft ドキュメント"
-ms.custom: 
+title: Message Repair and 新しい送信データのカスタム BAM ビューの定義 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM views
 - Message Repair and New Submission, BAM views
 ms.assetid: 76a6e78d-9b11-4b43-a500-a9d7666ee468
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006819"
 ---
 # <a name="defining-a-custom-bam-view-for-message-repair-and-new-submission-data"></a>Message Repair and 新しい送信データのカスタム BAM ビューを定義します。
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]セットアップでは、ビジネス アクティビティとビジネス ビューを定義する BAM 定義ファイルを提供します。 そのビューを使用する BAM 定義ファイルを展開することができますか、BAM 定義ファイルに追加できるカスタム ビューを作成することができます。  

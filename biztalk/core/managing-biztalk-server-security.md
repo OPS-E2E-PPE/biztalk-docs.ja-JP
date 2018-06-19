@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server のセキュリティを管理する |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server のセキュリティを管理する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Server, security
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - passwords, security
 - user accounts, security
 ms.assetid: adc89b0a-9846-4c99-b0fc-a32fc56ed769
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262858"
 ---
 # <a name="managing-biztalk-server-security"></a>BizTalk Server のセキュリティを管理します。
 セキュリティで保護された Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境を維持するには、アカウント、証明書、およびパスワードを管理する必要があります。 BizTalk Server が処理するビジネス ドキュメントのセキュリティを確保できるよう、BizTalk Server 管理者は次のアカウントと証明書を管理します。  

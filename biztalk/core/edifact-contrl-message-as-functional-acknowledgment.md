@@ -1,14 +1,14 @@
 ---
-title: "機能確認としての EDIFACT CONTRL メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: 機能確認としての EDIFACT CONTRL メッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d3c2be0-0993-4b2d-b6c3-286020117078
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007947"
 ---
 # <a name="edifact-contrl-message-as-functional-acknowledgment"></a>機能確認としての EDIFACT CONTRL メッセージ
 ビジネス プロファイル設定または取引先アグリーメント (2 つのビジネス プロファイル間でアグリーメントが定義されていない場合はフォールバック アグリーメント) で機能確認を生成するように選択した場合、またはメッセージの UNB9 フィールドが "1" に設定されている場合、機能確認 (ACK) として CONTRL メッセージが生成されます。 この確認では、インターチェンジの構文チェックの結果が報告されます。  

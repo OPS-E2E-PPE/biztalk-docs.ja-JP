@@ -1,11 +1,11 @@
 ---
-title: "アプリケーションからスキーマを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションからスキーマを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, schemas
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - managing [schemas], applications
 - schemas, applications
 ms.assetid: 17dd5869-b56c-4166-9f02-03e04e691eda
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254650"
 ---
 # <a name="how-to-remove-a-schema-from-an-application"></a>スキーマをアプリケーションから削除する方法
 ここでは、BizTalk Server 管理コンソールを使用して、スキーマをアプリケーションから削除する方法について説明します。 この手順では、グループの BizTalk 管理データベースからもスキーマを削除します。 スキーマの新しいバージョンを展開した後にスキーマを削除する場合があります。 詳細とアプリケーションのアイテムを更新するための重要な考慮事項は、次を参照してください。 [BizTalk アプリケーションの更新](../core/updating-biztalk-applications.md)です。  

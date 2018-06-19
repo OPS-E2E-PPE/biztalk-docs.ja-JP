@@ -13,7 +13,7 @@ helpviewer_keywords:
 - MQSeries adapters, examples
 - examples, pipelines
 ms.assetid: ac709e45-524b-45ab-9673-060790ecbed2
-caps.latest.revision: ''
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25976120"
 ---
 # <a name="mqssendpipelinecomponent-biztalk-server-sample"></a>MQSSendPipelineComponent (BizTalk Server サンプル)
 このサンプルでは、一連の MQSeries プロパティ値を XML ファイルから読み取って、メッセージに適用する、パイプライン コンポーネントの作成方法を示します。  
@@ -31,9 +32,9 @@ ms.lasthandoff: 03/28/2018
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
   
--   *\<SamplesPath\>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent  
+-   *\<SamplesPath\>* \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent  
   
--   *\<SamplesPath\>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline  
+-   *\<SamplesPath\>* \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -148,7 +149,7 @@ ms.lasthandoff: 03/28/2018
   
     1.  BizTalk 管理コンソールを開きます。  
   
-    2.  クリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]**を展開し、をクリックし、**アセンブリ**フォルダーです。  
+    2.  クリックして展開**BizTalk グループ [\<servername\>:\<管理データベース\>]** を展開し、をクリックし、**アセンブリ**フォルダーです。  
   
          展開されたパイプライン アセンブリは、表示するか、 **アセンブリ** フォルダーです。  
   
@@ -190,7 +191,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  右クリック **キュー**, 、 をポイント **新規**, 、クリックして **ローカル キュー**します。  
   
-4.  **ローカル キューの作成** ダイアログ ボックスで、 **キュー名**, 、型 **SETHEADER**, 、クリックして **[ok]**します。  
+4.  **ローカル キューの作成** ダイアログ ボックスで、 **キュー名**, 、型 **SETHEADER**, 、クリックして **[ok]** します。  
   
 ## <a name="creating-the-send-port-and-mqseries-queue"></a>送信ポートと MQSeries キューの作成  
  この手順では、出力メッセージ用の送信ポートを作成します。 MQSeries キューは、送信ポートがまだ作成されていない場合に送信ポートを作成したときにも作成されます。  
@@ -203,7 +204,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  **トランスポートの種類** ボックスで、 **MQSeries**します。  
   
-4.  **送信パイプライン** ボックスで、 **[setmqseriesheaderpropertypipeline.setmqseriesheaderssendpipeline]**します。  
+4.  **送信パイプライン** ボックスで、 **[setmqseriesheaderpropertypipeline.setmqseriesheaderssendpipeline]** します。  
   
 5.  **フィルター**, 、次の名前/値ペアを持つ、新しいエントリを追加します。  
   

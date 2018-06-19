@@ -1,14 +1,14 @@
 ---
-title: "受信ホストをスケール |Microsoft ドキュメント"
-ms.custom: 
+title: 受信ホストをスケール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9f78710-93fa-4877-8273-a1634d768d88
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010147"
 ---
 # <a name="scaling-out-receiving-hosts"></a>スケール アウト受信ホスト
 受信ホストを高可用性にする必要がありますがある 2 つ以上の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]各受信ホストのインスタンスを実行しているコンピューター。 スケール アウト受信ホスト メッセージングを頻繁に実行する BizTalk Server 展開の可用性が向上します。 こうすることで、受信ホストが実行するオーケストレーション処理を最小限に抑えながら、さまざまなタイプのメッセージを高速かつ高い信頼性でルーティングさせることができます。  

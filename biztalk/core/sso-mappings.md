@@ -1,18 +1,18 @@
 ---
-title: "SSO マッピング |Microsoft ドキュメント"
-ms.custom: 
+title: SSO マッピング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps [SSO]
 - maps [SSO], creating
 - SSO, maps
 ms.assetid: b44f7a0c-595c-49dc-9d75-2e76f29dca88
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277242"
 ---
 # <a name="sso-mappings"></a>SSO マッピング
 エンタープライズ シングル サインオン (SSO) 管理者または SSO 関連管理者が関連アプリケーションを定義する場合、その管理者は、個別のマッピングを使用するアプリケーションかグループ マッピングを使用するアプリケーションとして、その関連アプリケーションを定義できます。  

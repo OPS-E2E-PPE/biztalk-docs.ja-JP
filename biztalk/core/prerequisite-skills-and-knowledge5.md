@@ -1,15 +1,15 @@
 ---
-title: "スキルと知識の BizTalk Server の推奨 |Microsoft ドキュメント"
-description: "Visual Studio、XML、JSON、Windows Server、SQL Server、パフォーマンス、高可用性、および複数のナレッジを含む BizTalk Server を使用する場合は、開発者、IT 担当者、およびビジネス analysists のエクスペリエンスをお勧めします。"
-ms.custom: 
+title: スキルと知識の BizTalk Server の推奨 |Microsoft ドキュメント
+description: Visual Studio、XML、JSON、Windows Server、SQL Server、パフォーマンス、高可用性、および複数のナレッジを含む BizTalk Server を使用する場合は、開発者、IT 担当者、およびビジネス analysists のエクスペリエンスをお勧めします。
+ms.custom: ''
 ms.date: 09/27/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a0a9a336-1554-4e45-8b4a-57b8136ff3f0
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5355a25d120d094778fb8f68ea14cab55c68d292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/28/2017
+ms.locfileid: "22317860"
 ---
 # <a name="prerequisite-skills-and-knowledge"></a>必要なスキルと知識
 読者の皆様[Understanding BizTalk Server](../core/understanding-biztalk-server.md) EAI テクノロジの知識と異種アプリケーションの統合の一般的な課題を既にが付与されます。  

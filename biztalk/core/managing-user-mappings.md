@@ -1,17 +1,17 @@
 ---
-title: "ユーザー マッピングを管理する |Microsoft ドキュメント"
-ms.custom: 
+title: ユーザー マッピングを管理する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps [SSO], managing
 - managing [SSO maps]
 ms.assetid: bde65a51-fcba-4dee-b673-34b731766480
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262458"
 ---
 # <a name="managing-user-mappings"></a>ユーザー マッピングを管理します。
 このセクションでは、エンタープライズ シングル サインオンのマッピングを作成および構成する方法について説明します。  

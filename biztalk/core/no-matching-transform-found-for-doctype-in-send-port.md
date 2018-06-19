@@ -1,14 +1,14 @@
 ---
-title: "一致する変換では見つかりませんでした DocType の送信ポート |Microsoft ドキュメント"
-ms.custom: 
+title: 一致する変換では見つかりませんでした DocType の送信ポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 23f62ac7-3849-49fe-a765-2be72880a4c9
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263058"
 ---
 # <a name="no-matching-transform-found-for-doctype-in-send-port"></a>送信ポートに DocType と一致する変換が見つかりません
 ## <a name="details"></a>詳細  
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  BizTalk 管理コンソールを開き、変換を探してトランスポート名を右クリックします。  
   
-2.  **[プロパティ]**をクリックします。  
+2.  **[プロパティ]** をクリックします。  
   
 3.  ポートの [種類] の一覧で、正しいポートを選択します。 をクリックして**構成**です。  
   

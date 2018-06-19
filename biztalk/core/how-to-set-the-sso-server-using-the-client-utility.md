@@ -12,7 +12,7 @@ helpviewer_keywords:
 - managing [SSO applications], selecting servers
 - SSOClient [SSO], selecting servers
 ms.assetid: a0f1038c-60c9-4e9d-a730-1ecfa036743b
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25971152"
 ---
 # <a name="how-to-set-the-sso-server-using-the-client-utility"></a>クライアント ユーティリティを使用して SSO サーバーを設定する方法
 ssoclient を使用するたびに、まず、ユーザーが構成情報を含む正しいシングル サインオン サーバーを参照するように設定する必要があります。  
@@ -31,7 +32,7 @@ ssoclient を使用するたびに、まず、ユーザーが構成情報を含�
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型 **ssoclient – server *\<シングル サインオン サーバー\>* * *、どこで\<*シングル サインオン サーバー\>* でのシングル サインオン サーバーの名前を指定します、ユーザーに接続しようとします。  
+3.  型 **ssoclient – server *\<シングル サインオン サーバー\>* * *、どこで\<* シングル サインオン サーバー\>* でのシングル サインオン サーバーの名前を指定します、ユーザーに接続しようとします。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

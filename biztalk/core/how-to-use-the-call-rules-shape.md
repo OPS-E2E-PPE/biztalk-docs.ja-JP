@@ -1,11 +1,11 @@
 ---
-title: "ルール図形の呼び出しを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ルール図形の呼び出しを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Call Rules shape [Orchestration Designer], how to
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Call Rules shape [Orchestration Designer], policies
 - policies, Call Rules shape [Orchestration Designer]
 ms.assetid: e4bc8a2c-de7e-4e3a-81b8-12bcebb17d27
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006443"
 ---
 # <a name="how-to-use-the-call-rules-shape"></a>ルールの呼び出し図形の使用方法
 オーケストレーション デザイナーで使用することができます、**ルールの呼び出し**図形をビジネス ポリシーを呼び出します。  

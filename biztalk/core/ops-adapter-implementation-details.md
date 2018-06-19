@@ -1,11 +1,11 @@
 ---
-title: "Ops アダプタの実装の詳細 |Microsoft ドキュメント"
-ms.custom: 
+title: Ops アダプタの実装の詳細 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching, Ops adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Ops adapters, transaction handling
 - process management solution tutorial, Ops adapters
 ms.assetid: dbca31ca-c3d8-4a25-9356-ef4bbab671e1
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970784"
 ---
 # <a name="ops-adapter-implementation-details"></a>Ops アダプタの実装の詳細
 次に示す Ops アダプタの特性を理解すると、アダプタを変更したりプログラムによって構成する場合に役立ちます。  

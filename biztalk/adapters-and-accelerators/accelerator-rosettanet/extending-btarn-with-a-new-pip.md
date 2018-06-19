@@ -1,18 +1,18 @@
 ---
-title: "新しい PIP による BTARN の拡張 |Microsoft ドキュメント"
-ms.custom: 
+title: 新しい PIP による BTARN の拡張 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTARN, extending functionality
 - PIPs, extending BTARN
 - BTARN, PIPs
 ms.assetid: 3db5cd5c-031f-4451-9be5-4b5d6163c3b1
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007177"
 ---
 # <a name="extending-btarn-with-a-new-pip"></a>新しい PIP による BTARN の拡張
 このトピックを拡張する方法について説明[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]新しいプロセス PIP (Partner Interface) スキーマを使用します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を拡張すると、RosettaNet PIP が BTARN セットアップ プログラムによってインストールされるどのスキーマとも関連付けられていない場合に、その PIP に基づくスキーマを追加できるようになります。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 12/01/2017
   
 4.  Visual Studio を起動します。  
   
-5.  **[ファイル]** メニューの **[新規作成]**をポイントし、 **[プロジェクト]**をクリックします。  
+5.  **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
   
 6.  新しいプロジェクト ダイアログ ボックスで、次のように選択します。 **BizTalk プロジェクト**をクリックして、左側のウィンドウ**空の BizTalk Server プロジェクト**右側のウィンドウでします。  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 12/01/2017
   
 26. [プロパティ] ウィンドウでスクロールして**ドキュメントの種類**です。 **ドキュメントの種類**ボックスで、 **PIP**\<*3 桁のコード*\>など、 **PIP3A2**です。 **ドキュメント バージョン**ボックスに、入力**v**\<*xx.xx* \>または**R** \< *xx.xx*\>など、 **R01.02**です。 このバージョン番号は、RosettaNet PIP 仕様に記載されています。  
   
-27. [プロパティ] ウィンドウでスクロールして**ルート参照**です。 をクリックして**ルート参照**、ドロップダウン リストから、スキーマ、たとえば、select のルート ノードを選択して**[pip3c5billingstatementnotification]**です。  
+27. [プロパティ] ウィンドウでスクロールして**ルート参照**です。 をクリックして**ルート参照**、ドロップダウン リストから、スキーマ、たとえば、select のルート ノードを選択して **[pip3c5billingstatementnotification]** です。  
   
 28. [プロパティ] ウィンドウで、スクロールまで**Target Namespace**です。 **Target Namespace**、型**http://schemas.microsoft.com/biztalk/btarn/2004/\<DTD ファイル名\>.dtd**DTD ファイル名はたとえば、 **3C5_MS_R01_00_BillingStatementNotification.dtd**です。  
   
@@ -101,13 +102,13 @@ ms.lasthandoff: 12/01/2017
   
 29. [プロパティ] ウィンドウで、スクロールまで**Imports**です。 横にある省略記号ボタン (...) をクリックして**Imports**、クリックして**追加**です。  
   
-30. **BizTalk 型の選択**] ダイアログ ボックスで、展開\<*プロジェクト名*\>、展開**参照**、展開**Microsoft.Solutions.BTARN.Schemas.RNPIPs**、展開**スキーマ**[ **Microsoft.Solutions.BTARN.Schemas.RNPIPs.BaseDataTypes**をクリックして**[ok]**、クリックして**OK**もう一度です。  
+30. **BizTalk 型の選択**] ダイアログ ボックスで、展開\<*プロジェクト名*\>、展開**参照**、展開**Microsoft.Solutions.BTARN.Schemas.RNPIPs**、展開**スキーマ**[ **Microsoft.Solutions.BTARN.Schemas.RNPIPs.BaseDataTypes**をクリックして **[ok]**、クリックして**OK**もう一度です。  
   
 31. プロジェクト名を右クリックし、をクリックして**展開**です。  
   
 32. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
-33. BizTalk 管理コンソールで、展開**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(ローカル)**の順に展開および**ホスト**です。 **ホスト**をクリックして**BizTalkServerApplication**です。  
+33. BizTalk 管理コンソールで、展開**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(ローカル)** の順に展開および**ホスト**です。 **ホスト**をクリックして**BizTalkServerApplication**です。  
   
 34. 右側のウィンドウで、ホストの名前を右クリックし、をクリックして**再起動**です。  
   

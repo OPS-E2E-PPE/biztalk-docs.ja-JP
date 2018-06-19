@@ -1,14 +1,14 @@
 ---
-title: "エンジンの MST を測定するためのシナリオをテスト |Microsoft ドキュメント"
-ms.custom: 
+title: エンジンの MST を測定するためのシナリオをテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e54667b9-7262-43c8-a013-9242eb062daf
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008019"
 ---
 # <a name="test-scenarios-for-measuring-mst-of-the-engine"></a>エンジンの MST を測定するためのテスト シナリオ
 このセクションでは、BizTalk システムを次の 3 つの負荷レベルで起動したときの効率性を測定するために実装したテスト シナリオについて説明します。  
@@ -86,9 +87,9 @@ ms.lasthandoff: 12/01/2017
   
 -   メッセージ ボックス データベースで 1 秒あたりのロック タイムアウトはデータベースによって測定される、 **Lock timeouts/sec**カウンターで利用可能な**SQLServer:Locks**パフォーマンス オブジェクトです。  
   
--   削除されたメッセージに関連付けられたメッセージ ボックス テーブルをクリーンアップする SQL エージェント ジョブの直前のジョブ実行時間 (秒単位)。 これは、によって測定、 **MsgBox Msg Cleanup(Purge Jobs)**カウンターで利用可能な**Counters**パフォーマンス オブジェクトです。  
+-   削除されたメッセージに関連付けられたメッセージ ボックス テーブルをクリーンアップする SQL エージェント ジョブの直前のジョブ実行時間 (秒単位)。 これは、によって測定、 **MsgBox Msg Cleanup(Purge Jobs)** カウンターで利用可能な**Counters**パフォーマンス オブジェクトです。  
   
--   削除されたメッセージ部分に関連付けられたメッセージ ボックス テーブルをクリーンアップする SQL エージェント ジョブの直前のジョブ実行時間 (秒単位)。 これは、によって測定、 **MsgBox パーツ Cleanup(Purge Jobs)**カウンターで利用可能な**Counters**パフォーマンス オブジェクトです。  
+-   削除されたメッセージ部分に関連付けられたメッセージ ボックス テーブルをクリーンアップする SQL エージェント ジョブの直前のジョブ実行時間 (秒単位)。 これは、によって測定、 **MsgBox パーツ Cleanup(Purge Jobs)** カウンターで利用可能な**Counters**パフォーマンス オブジェクトです。  
   
  維持可能な最大スループットを特定するテストを行う最には、スプール テーブルが無制限に拡大し始める時点まで入力負荷を増やします。  
   

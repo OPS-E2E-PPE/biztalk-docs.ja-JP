@@ -1,17 +1,17 @@
 ---
-title: "側開始 SSO のホストで、トレース ユーティリティを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 側開始 SSO のホストで、トレース ユーティリティを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - host initiated SSO, trace utility
 - trace utility
 ms.assetid: a53444d1-3f63-42a6-8ee6-b60ff9af9e41
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973456"
 ---
 # <a name="how-to-use-the-trace-utility-in-host-initiated-sso"></a>側開始 SSO のホストで、トレース ユーティリティを使用する方法
 トラブルシューティングの主要な方法はトレースを行うことです。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="to-use-the-trace-utility"></a>Trace ユーティリティを使用するには  
   
-1.  **[スタート]** メニューの **[ファイル名を指定して実行]**をクリックします。  
+1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
 2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
   

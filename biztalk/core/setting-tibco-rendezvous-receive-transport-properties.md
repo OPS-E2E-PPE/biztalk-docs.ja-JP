@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-rendezvous-receive-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 48eb0c1694168fb1acf840a52dc793d0ed943a19
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014233"
 ---
 # <a name="setting-tibco-rendezvous-receive-transport-properties"></a>TIBCO Rendezvous 受信トランスポートのプロパティを設定する
 メッセージをリッスンするように Microsoft BizTalk Adapter for TIBCO Rendezvous を構成するときは、どのサブジェクト名をリッスンするかを指定します。 必須のプロパティはこれだけです。  

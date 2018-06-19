@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 2010 操作ガイド |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 2010 操作ガイド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4dc0d8e9-9ad6-4ce1-8ca7-399b67cb360e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010387"
 ---
 # <a name="biztalk-server-2010-operations-guide"></a>BizTalk Server 2010 操作ガイド
 Microsoft® BizTalk® Server 2010 操作ガイドへようこそ。 実装と特に IT プロフェッショナル向けに、BizTalk ソリューションの管理に関連するすべてのユーザーにとって価値のあるリソースにするには、このガイドを作成しました。  

@@ -1,14 +1,14 @@
 ---
-title: "チェックリスト: SQL Server の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チェックリスト: SQL Server の構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: edd20f24-8a72-40b7-abee-81fbd3ceefda
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010291"
 ---
 # <a name="checklist-configuring-sql-server"></a>チェックリスト: SQL Server を構成します。
 用の SQL Server を準備するときに実行する手順は、BizTalk Server の実稼働環境で使用します。    
@@ -35,7 +36,7 @@ ms.lasthandoff: 12/01/2017
 |既定の構成設定を使用します。<br /><br /> Max Degree of Parallelism (MDOP)。<br />BizTalk Server メッセージ ボックス データベースで SQL Server 統計情報です。<br />SQL Server データベースのインデックス再構築と最適化します。|[変更しない SQL Server の設定](sql-server-settings-that-should-not-be-changed.md)|  
 |SQL Server のすべてのインスタンスの起動時のパラメーターとしてトレース フラグ 1118 (TF1118) を有効にします。|TF1118 を実装することは、ほとんどすべての単一のページ割り当てを削除することで、SQL Server インスタンス間で競合を減らすのに役立ちます。 詳細については「マイクロソフト サポート技術情報の記事[tempdb データベースの同時実行制御の機能強化](https://support.microsoft.com/en-us/help/328551/concurrency-enhancements-for-the-tempdb-database)です。 <br/><br/>**注:** TF1118 参照の詳細については[TF1118 周囲誤解](https://www.sqlskills.com/blogs/paul/misconceptions-around-tf-1118/)です。 Microsoft は、次のリンクでコンテンツを所有していない、Microsoft は、コンテンツの正確性を保証していないことに注意してください。|  
 |Tempdb データベースを同じサイズの BizTalk Server で使用される各 SQL Server インスタンス上の複数のデータ ファイルに分割します。|Tempdb に使用されるデータ ファイルと同じサイズのことを確認します。 SQL Server で使用される比例アルゴリズムは、データ ファイルのサイズに基づいているために、このことが重要です。 サイズの異なるデータ ファイルが作成比例アルゴリズムは複数作成する無意味にそれによって、すべてのファイル間での割り当てを展開するのではなく、グローバル アロケーション マップ (GAM) の割り当ての最も大きいファイルを使用します。データ ファイル。 一般的なガイドラインとして、サーバー上の各 CPU の 1 つのデータ ファイルを作成および必要に応じて上または下のファイルの数を調整します。 デュアルコア CPU は 2 つの CPU と見なされることに注意してください。 いかなる場合においては、データ ファイルの数を追加コアの数は、コンピューターで使用できるに関係なく 8 より大きい必要がありますできません。 Tempdb ファイルの詳細については、次を参照してください。 [tempdb のパフォーマンスを最適化する](https://docs.microsoft.com/sql/relational-databases/databases/tempdb-database)です。|  
-|最小値を設定し、SQL Server で同じ値に最大サーバー メモリ instance(s)、BizTalk Server データベースをホストするします。|ホストする SQL Server を実行するコンピューター、BizTalk Server データベースは、SQL Server を実行する専用必要があります。 ホストする SQL Server を実行するコンピューター、BizTalk Server データベース場合**は**SQL Server を実行する専用、ことをお勧め、'min server memory' と 'max server memory' を指定する各 SQL Server インスタンス上のオプションを設定します。SQL Server に割り当てるメモリの固定量。 ここでは、する必要があります、'min server memory' と 'max server memory'、同じ値に設定 (SQL Server が使用される物理メモリの最大量に等しい)。 これが減少それ以外の場合にこれらの値を動的に管理する SQL Server で使用されるオーバーヘッドです。 SQL Server に割り当てるメモリの固定量を指定する SQL Server を実行する各コンピューターで、次の T-SQL コマンドを実行します。<br /><br /> sp_configure 'Max Server memory (MB)'、(最大サイズ (MB) sp_configure '最小サーバー メモリ (MB)' (最小サイズ (MB)<br /><br /> SQL Server のメモリの量を設定すると、前に、合計物理メモリから Windows Server に必要なメモリを差し引くことで適切なメモリ設定を決定します。 これは、SQL Server に割り当てるメモリの最大量です。 **注:**場合は、トピックの説明に従って、BizTalk Server データベースもホストする SQL Server を実行するコンピューターが、エンタープライズ シングル サインオン マスター シークレットをホスト[マスター シークレット サーバーをクラスタ リング](clustering-the-master-secret-server.md)したい場合がありますエンタープライズ シングル サインオン サービスを実行可能にするための十分なメモリがあることを確認するには、この値を調整します。|  
+|最小値を設定し、SQL Server で同じ値に最大サーバー メモリ instance(s)、BizTalk Server データベースをホストするします。|ホストする SQL Server を実行するコンピューター、BizTalk Server データベースは、SQL Server を実行する専用必要があります。 ホストする SQL Server を実行するコンピューター、BizTalk Server データベース場合**は**SQL Server を実行する専用、ことをお勧め、'min server memory' と 'max server memory' を指定する各 SQL Server インスタンス上のオプションを設定します。SQL Server に割り当てるメモリの固定量。 ここでは、する必要があります、'min server memory' と 'max server memory'、同じ値に設定 (SQL Server が使用される物理メモリの最大量に等しい)。 これが減少それ以外の場合にこれらの値を動的に管理する SQL Server で使用されるオーバーヘッドです。 SQL Server に割り当てるメモリの固定量を指定する SQL Server を実行する各コンピューターで、次の T-SQL コマンドを実行します。<br /><br /> sp_configure 'Max Server memory (MB)'、(最大サイズ (MB) sp_configure '最小サーバー メモリ (MB)' (最小サイズ (MB)<br /><br /> SQL Server のメモリの量を設定すると、前に、合計物理メモリから Windows Server に必要なメモリを差し引くことで適切なメモリ設定を決定します。 これは、SQL Server に割り当てるメモリの最大量です。 **注:** 場合は、トピックの説明に従って、BizTalk Server データベースもホストする SQL Server を実行するコンピューターが、エンタープライズ シングル サインオン マスター シークレットをホスト[マスター シークレット サーバーをクラスタ リング](clustering-the-master-secret-server.md)したい場合がありますエンタープライズ シングル サインオン サービスを実行可能にするための十分なメモリがあることを確認するには、この値を調整します。|  
 |BizTalk 追跡データベースのサイズをアカウントします。|-メッセージを BizTalk 追跡 (DTA) データベースのサイズを決定するとき、メッセージ コンテキストの平均サイズを追加メッセージのサイズ重要である場合メッセージ サイズと比較します。<br />、BizTalk 追跡データベース内のメッセージのサイズを制限するためには昇格したプロパティの数を制限します。<br />オーケストレーション デバッガーのオプションが有効になっている場合は、オーケストレーション内の各図形の状態は、BizTalk 追跡データベースに保存されているを考慮します。|  
   
 <a name="BKMK_Maintain"></a>   

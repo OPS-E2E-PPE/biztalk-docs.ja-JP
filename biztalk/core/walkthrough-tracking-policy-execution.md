@@ -1,15 +1,15 @@
 ---
-title: "チュートリアル: BizTalk Server のポリシー実行の追跡 |Microsoft ドキュメント"
-description: "追跡を有効にして、BizTalk Server で、ポリシーの追跡の詳細を表示するのには、チュートリアル"
-ms.custom: 
+title: 'チュートリアル: BizTalk Server のポリシー実行の追跡 |Microsoft ドキュメント'
+description: 追跡を有効にして、BizTalk Server で、ポリシーの追跡の詳細を表示するのには、チュートリアル
+ms.custom: ''
 ms.date: 04/05/2016
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ef88eae7-f0f8-4f3f-85d0-3961a47395b6
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975096"
 ---
 # <a name="walkthrough-tracking-policy-execution"></a>チュートリアル: ポリシーの実行を追跡します。
 追跡を有効にするための手順、 **ProcessPurchaseOrder**ポリシー、およびポリシーが実行された後に追跡情報を表示するためです。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  **ポリシーの追加** ダイアログ ボックスで、展開**ProcessPurchaseOrder**、バージョンを選択して**1.3**です。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 6.  表示されない場合**ProcessPurchaseOrder**一覧で、f5 キーを押して表示を更新するを選択します。
   
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
 8.  **ポリシー追跡オプション** ダイアログ ボックスで、すべてのチェック ボックスを**ファクト アクティビティ**、**条件の評価**、**ルールの実行**、および**議題の更新**です。  
   
-9. **[OK]**をクリックします。  
+9. **[OK]** をクリックします。  
   
 ## <a name="test-the-solution-and-view-the-tracking-information"></a>ソリューションをテストして、追跡情報を表示  
   

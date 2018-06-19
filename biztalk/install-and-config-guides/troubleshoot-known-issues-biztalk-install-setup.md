@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e4d0e707-6b9e-49e1-9f17-19b3bac1229e
-caps.latest.revision: ''
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26011035"
 ---
 # <a name="troubleshoot-biztalk-server-setup"></a>BizTalk Server のセットアップをトラブルシューティングします。
 
@@ -339,7 +340,7 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
 ##### <a name="rpc-error-occurs-when-connecting-to-a-client-computer"></a>クライアント コンピューターに接続するときに、RPC エラーが発生します。  
   
 **問題**  
- などのコマンドを実行すると**ssomanage-displayapp** *< applicationname\>*コンピューター、情報を取得するリモート SSO サーバーに接続しようとしましたここで、が表示されたら、。次のエラー: エラー: 0x800706BA: RPC サーバーは使用できません。  
+ などのコマンドを実行すると**ssomanage-displayapp** *< applicationname\>* コンピューター、情報を取得するリモート SSO サーバーに接続しようとしましたここで、が表示されたら、。次のエラー: エラー: 0x800706BA: RPC サーバーは使用できません。  
   
 **原因**  
  このエラーは、間違ったサーバー情報を指定した場合、またはリモート サーバーで SSO サービスを利用できない場合に発生します。  

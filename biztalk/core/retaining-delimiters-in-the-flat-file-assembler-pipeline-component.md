@@ -1,14 +1,14 @@
 ---
-title: "フラット ファイル アセンブラー パイプライン コンポーネントの区切り記号の保持 |Microsoft ドキュメント"
-ms.custom: 
+title: フラット ファイル アセンブラー パイプライン コンポーネントの区切り記号の保持 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: adc27561-9996-49a9-b715-e313b9148506
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268786"
 ---
 # <a name="retaining-delimiters-in-the-flat-file-assembler-pipeline-component"></a>フラット ファイル アセンブラー パイプライン コンポーネントでの区切り記号の保持
 フラット ファイル アセンブラーを使用するカスタム パイプラインを通るメッセージに、レコードが不足している場合、フラット ファイルの出力にレコードの区切り記号が表示されるかどうかは、入力ファイルのどこでレコードが不足しているかによって決まります。  

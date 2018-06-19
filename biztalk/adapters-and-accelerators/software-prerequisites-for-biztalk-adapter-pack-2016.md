@@ -1,14 +1,14 @@
 ---
-title: "BizTalk アダプター パック 2016 でのソフトウェアの前提条件 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アダプター パック 2016 でのソフトウェアの前提条件 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65a063ca-37ae-420b-9d48-e6730caf17e3
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22227122"
 ---
 # <a name="software-prerequisites-for-biztalk-adapter-pack-2016"></a>BizTalk アダプター パック 2016 でのソフトウェアの前提条件
 Microsoft のソフトウェア要件を一覧表示[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)](BAP) に含まれる[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]です。
@@ -84,7 +85,7 @@ Microsoft SharePoint で、アダプターの使用の目的は、SharePoint por
   
 <a name="BKMK_SuppLOB"></a>   
 ## <a name="supported-enterprise-application-versions"></a>サポートされているエンタープライズ アプリケーションのバージョン  
-BizTalk Adapter Pack でサポートされている特定の LOB システムのバージョンを表示するには、次を参照してください。 **[サポートされている行の基幹業務 (LOB) システム](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-systems.aspx)**です。
+BizTalk Adapter Pack でサポートされている特定の LOB システムのバージョンを表示するには、次を参照してください。 **[サポートされている行の基幹業務 (LOB) システム](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-systems.aspx)** です。
 
 ここでは、各アダプターに必要なすべてのクライアント Dll など、各アダプターの追加情報を示します。  
   

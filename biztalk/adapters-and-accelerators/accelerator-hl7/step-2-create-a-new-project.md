@@ -1,18 +1,18 @@
 ---
-title: "手順 2: 新しいプロジェクトの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: 新しいプロジェクトの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, projects
 - projects, creating
 - message enrichment tutorial, projects
 ms.assetid: 6e994845-53b8-4de8-a64f-32d36f7b5412
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004699"
 ---
 # <a name="step-2-create-a-new-project"></a>手順 2: 新しいプロジェクトを作成します。
 使用して新しいソリューションをビルドするこの手順で、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudio2008](../../includes/btsvstudio2008-md.md)]環境。 最初に、(データ型、セグメント、およびテーブルの値) の一般的なスキーマの 3 つ HL7 V2.2 スキーマを使用して、送信 HL7 メッセージに使用するスキーマなどを含む新しいプロジェクト (BTAHL7V22Common) を作成します。 次に、別新しいプロジェクトをビルドする (BTAHL7V2XCommon) HL7 メッセージ (MSH_25_GLO_DEF) 内のヘッダーに使用される共通の標準的なスキーマが含まれています。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  開始**Visual Studio**です。  
   
-2.  **[ファイル]** メニューの **[新規作成]**をポイントし、 **[プロジェクト]**をクリックします。  
+2.  **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
   
 3.  新しいプロジェクト ダイアログ ボックスで、展開、 **BizTalk プロジェクト**フォルダーをクリックして、 **BTAHL7Projects**フォルダーです。  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 12/01/2017
   
      [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ファイル、プロジェクト フォルダーを作成して、 \<*ドライブ*\>: \Tutorial\BTAHL7V22Common フォルダーです。  
   
-7.  **[ファイル]** メニューの **[新規作成]**をポイントし、 **[プロジェクト]**をクリックします。  
+7.  **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
   
 8.  新しいプロジェクト ダイアログ ボックスで、展開、 **BizTalk プロジェクト**フォルダーをクリックして、 **BTAHL7Projects**フォルダーです。  
   

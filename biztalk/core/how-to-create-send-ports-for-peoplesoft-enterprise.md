@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-peoplesoft-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: ec518c16383d847bf13706a6469b038b447c1543
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013657"
 ---
 # <a name="how-to-create-send-ports-for-peoplesoft-enterprise"></a>PeopleSoft Enterprise の送信ポートを作成する方法
 BizTalk Server 管理コンソールを使用して送信ポートを作成するには、次の手順を実行します。  
@@ -27,9 +28,9 @@ BizTalk Server 管理コンソールを使用して送信ポートを作成す�
   
     3.  **送信ハンドラー**ドロップダウン リストで、URI を選択します。  
   
-    4.  送信パイプラインのドロップダウン リストから選択**[microsoft.biztalk.defaultpipelines.xmltransmit]**です。  
+    4.  送信パイプラインのドロップダウン リストから選択 **[microsoft.biztalk.defaultpipelines.xmltransmit]** です。  
   
-    5.  **受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]**です。  
+    5.  **受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** です。  
   
     6.  をクリックして**構成**送信ポートを構成します。  
   
@@ -43,9 +44,9 @@ BizTalk Server 管理コンソールを使用して送信ポートを作成す�
   
     3.  **SSO を使用する**[**はい**です。  
   
-    4.  **[OK]**をクリックします。  
+    4.  **[OK]** をクリックします。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
  [PeopleSoft 送信ハンドラーの作成](../core/creating-peoplesoft-send-handlers.md)

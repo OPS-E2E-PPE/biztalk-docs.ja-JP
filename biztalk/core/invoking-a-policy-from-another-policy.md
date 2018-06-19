@@ -1,14 +1,14 @@
 ---
-title: "ポリシー別のポリシーからを呼び出す |Microsoft ドキュメント"
-ms.custom: 
+title: ポリシー別のポリシーからを呼び出す |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5bf658a-02a1-426a-abe5-8c9de673cf0d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973560"
 ---
 # <a name="invoking-a-policy-from-another-policy"></a>別のポリシーからのポリシーの呼び出し
 次のいずれかのメソッドを使用すると、ポリシー (子) を別のポリシー (親) から呼び出すことができます。  
@@ -37,13 +38,13 @@ ms.lasthandoff: 11/28/2017
   
 1.  [ファクト エクスプ ローラー] ウィンドウ、 **.NET クラス**タブです。  
   
-2.  右クリック**.NET アセンブリ**、クリックして**参照**です。  
+2.  右クリック **.NET アセンブリ**、クリックして**参照**です。  
   
 3.  選択**Microsoft.RuleEngine**から、 **.NET アセンブリ**一覧をクリックして**OK**です。  
   
 4.  展開**ポリシー**です。  
   
-5.  ドラッグ**Execute (Object facts)**または**Execute (Object facts, IRuleSetTrackingInterceptor trackingInterceptor)** [THEN] ペインにします。  
+5.  ドラッグ**Execute (Object facts)** または**Execute (Object facts, IRuleSetTrackingInterceptor trackingInterceptor)** [THEN] ペインにします。  
   
 6.  クリックして、 **XML スキーマ**ノード。  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
   
 8.  スキーマをファクトとして渡すし、をクリックする、XML ドキュメントを選択**開く**です。  
   
-9. ドラッグ*\<スキーマ名\>*の最初の引数は、.xsd、 **Policy.Execute**子ポリシーにファクトとして親ポリシーに渡される XML ドキュメントを渡す方法です。  
+9. ドラッグ*\<スキーマ名\>* の最初の引数は、.xsd、 **Policy.Execute**子ポリシーにファクトとして親ポリシーに渡される XML ドキュメントを渡す方法です。  
   
 10. 使用する場合、 **Execute**を受け取らないメソッド、 **IRuleSetTrackingInterceptor** 2 番目の引数として、次の手順をスキップします。  
   

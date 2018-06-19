@@ -1,18 +1,18 @@
 ---
-title: "手順 3: アセンブリに厳密な名前を割り当てます |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 3: アセンブリに厳密な名前を割り当てます |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assemblies
 - message enrichment tutorial, strong name assemblies
 - strong name assemblies
 ms.assetid: 8709e4e1-b428-42af-ba3c-08225c17a9eb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "26004955"
 ---
 # <a name="step-3-assign-a-strong-name-to-the-assembly"></a>手順 3: アセンブリに厳密な名前を割り当てます
 この手順で作成して割り当てるの厳密な名前、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アセンブリ。 厳密な名前のアセンブリは、いくつかのセキュリティ上の利点を提供し、グローバル アセンブリ キャッシュ (GAC) でプロジェクトを展開するために必要な。 厳密な名前では、デジタル署名と一意キーのペアを割り当てることによって、アセンブリの一意性を保証します。 これは、アセンブリの系列をにより、それ以降のバージョンのアセンブリを生成できないことができますも保護します。 最後に、厳密な名前は、アセンブリの内容がのビルド以降に変更していないことを保証するために強力な整合性チェックを提供します。  

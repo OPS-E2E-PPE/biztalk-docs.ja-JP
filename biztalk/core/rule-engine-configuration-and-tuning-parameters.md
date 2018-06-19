@@ -1,11 +1,11 @@
 ---
-title: "ルール エンジンの構成およびチューニング パラメーター |Microsoft ドキュメント"
-ms.custom: 
+title: ルール エンジンの構成およびチューニング パラメーター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - troubleshooting, registry keys
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - validating, business rules
 - business rules, validating
 ms.assetid: cb0bcffe-bbc6-4495-84d2-2a822c3413b3
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270338"
 ---
 # <a name="rule-engine-configuration-and-tuning-parameters"></a>ルール エンジンの構成およびチューニング パラメーター
 次の表に、構成の検証およびトラブルシューティングに利用できるレジストリ キーの一覧を示します。 これらのレジストリ キーが格納されている**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\BusinessRules\3.0**です。  
@@ -51,9 +52,9 @@ ms.lasthandoff: 09/20/2017
 |DeploymentDriverClass|展開ドライバーのクラス名。|Microsoft.RuleEngine.RuleSetDeploymentDriver|Microsoft.BizTalk.RuleEngineExtensions.RuleSetDeploymentDriver|  
 |TrackingInterceptorAssembly|追跡情報インターセプターのアセンブリ名。|(空の文字列)|Microsoft.BizTalk.RuleEngineExtensions|  
 |TrackingInterceptorClass|追跡情報インターセプターのクラス名。|(空の文字列)|Microsoft.BizTalk.RuleEngineExtensions.RuleSetTrackingInterceptor|  
-|TranslationTimeout|ルール セットの変換に使用できる最大時間 (ミリ秒)。 **注:**これは ruleset ごとに、RuleSetConfiguration を使用してオーバーライドすることができます)。|60000 (1 分)|60000|  
+|TranslationTimeout|ルール セットの変換に使用できる最大時間 (ミリ秒)。 **注:** これは ruleset ごとに、RuleSetConfiguration を使用してオーバーライドすることができます)。|60000 (1 分)|60000|  
 |UpdateServiceName|更新サービスの名前。.NET リモート処理で、サービスを探す場合に使用されます。|RemoteUpdateService|RemoteUpdateService|  
-|UpdateServiceHost|更新サービスをホストするコンピューター。.NET リモート処理で、サービスを探す場合に使用されます。 **注:**サービスが現在受信メッセージを同じコンピューターにのみに制限します。|localhost|localhost|  
+|UpdateServiceHost|更新サービスをホストするコンピューター。.NET リモート処理で、サービスを探す場合に使用されます。 **注:** サービスが現在受信メッセージを同じコンピューターにのみに制限します。|localhost|localhost|  
 |UpdateServicePort|更新サービスが使用する TCP ポート番号。.NET リモート処理で、サービスを探す場合に使用されます。|3132|3132|  
 |CacheEntries|更新サービスによってキャッシュされるルール セットの最大数。|32|32|  
 |CacheTimeout|更新サービス キャッシュのエントリが期限切れになるまでの時間 (秒)。|3600 (1 時間)|3600|  

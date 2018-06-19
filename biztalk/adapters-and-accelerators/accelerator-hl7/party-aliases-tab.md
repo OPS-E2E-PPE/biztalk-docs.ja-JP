@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005587"
 ---
 # <a name="party-aliases-tab"></a>パーティ エイリアス タブ
 使用する、**パーティ エイリアス**タブには、選択したパーティに関する情報を表示します。  

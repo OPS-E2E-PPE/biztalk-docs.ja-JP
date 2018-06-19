@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218570"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-sap-adapter"></a>SAP アダプターで WCF サービス モデルの概要
 操作を使用する際にする、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]サーフェスは、コードは、機能、クライアントと、アダプターにサービスのどちらかです。  

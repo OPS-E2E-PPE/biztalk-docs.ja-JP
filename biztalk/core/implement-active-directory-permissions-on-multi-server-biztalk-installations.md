@@ -1,14 +1,14 @@
 ---
-title: "マルチ サーバーの BizTalk 環境に Active Directory アクセス許可を実装するためのガイドライン |Microsoft ドキュメント"
-ms.custom: 
+title: マルチ サーバーの BizTalk 環境に Active Directory アクセス許可を実装するためのガイドライン |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 315e25c4-b21d-4b5f-a1d2-1e2777b57f9e
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975976"
 ---
 # <a name="guidelines-for-implementing-active-directory-permissions-on-multi-server-biztalk-installations"></a>複数サーバーの BizTalk インストールでの Active Directory アクセス許可の実装に関するガイドライン
 このトピックでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インストールで使用するユーザー アカウントとグループから構成される Active Directory 組織単位を作成する際のガイドラインを示します。  
@@ -172,7 +173,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  クリックして、**ログに**を表示するボタン、**ログオンできるワークステーション** ダイアログ ボックス。  
   
-6.  オプションをクリックして**、次のコンピューター**、実行する各コンピューターを追加[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、クリックして**[ok]**です。  
+6.  オプションをクリックして **、次のコンピューター**、実行する各コンピューターを追加[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、クリックして **[ok]** です。  
   
 7.  をクリックして、**リモート_コントロール**のタブ、**プロパティ** ダイアログ ボックスをクリックし、オプションをオフに**リモート_コントロールを有効にする**です。  
   
@@ -211,7 +212,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  クリックして、**ログに**を表示するボタン、**ログオンできるワークステーション** ダイアログ ボックス。  
   
-6.  オプションをクリックして**、次のコンピューター**、実行する各コンピューターを追加[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、クリックして**[ok]**です。  
+6.  オプションをクリックして **、次のコンピューター**、実行する各コンピューターを追加[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、クリックして **[ok]** です。  
   
 7.  をクリックして、**リモート_コントロール**のタブ、**プロパティ**、チェック ボックスをクリックしてダイアログ ボックスで、**リモート_コントロールを有効にする**です。  
   
@@ -231,7 +232,7 @@ ms.lasthandoff: 11/28/2017
 |**グループ名**|**グループの種類**|**メンバー**|  
 |--------------------|--------------------|-----------------|  
 |BizTalk Application Users|グローバルまたはユニバーサル|-BTServiceHost<br />-BTUserHostInstance|  
-|BizTalk 開発ユーザー|グローバルまたはユニバーサル|(開発ユーザーのローカル ドメイン アカウント)**注:**ベスト プラクティスとして有効にしないアップラインの環境で BizTalk 開発ユーザー グループ。|  
+|BizTalk 開発ユーザー|グローバルまたはユニバーサル|(開発ユーザーのローカル ドメイン アカウント)**注:** ベスト プラクティスとして有効にしないアップラインの環境で BizTalk 開発ユーザー グループ。|  
 |BizTalk 展開ユーザー|グローバルまたはユニバーサル|(展開ユーザーのローカル ドメイン アカウント)|  
 |BizTalk ホスト ユーザー|グローバルまたはユニバーサル|BTUserHostInstance|  
 |BizTalk 分離ホスト ユーザー|グローバルまたはユニバーサル|-BTServiceHostIso<br />-BTUserHostInstance|  
@@ -247,7 +248,7 @@ ms.lasthandoff: 11/28/2017
   
 -   ドメイン グループは、グローバル グループにもユニバーサル グループにもすることができます。  
   
--   使用して *\<DomainName\>\\< ユーザー名\>*構成ウィザードでドメイン アカウント情報を指定する場合。  
+-   使用して *\<DomainName\>\\< ユーザー名\>* 構成ウィザードでドメイン アカウント情報を指定する場合。  
   
 -   グループとユーザー アカウントおよびサービス アカウントは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターが属しているドメインに属する必要があります (これは構成ウィザードで確認され、他のドメインのアカウントや他のドメインのアカウントを含むグループは表示されません)。  
   

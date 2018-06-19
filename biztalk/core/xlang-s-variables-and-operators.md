@@ -1,14 +1,14 @@
 ---
-title: "XLANG の変数および演算子 |Microsoft ドキュメント"
-ms.custom: 
+title: XLANG の変数および演算子 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 02512789-2cb9-4ba9-aa78-e59b248e6b24
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974728"
 ---
 # <a name="xlang-s-variables-and-operators"></a>XLANG の変数および演算子
 このセクションでは、XLANG/s 言語で使用される変数および演算子について説明します。  

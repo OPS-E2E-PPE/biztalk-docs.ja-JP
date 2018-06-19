@@ -1,17 +1,17 @@
 ---
-title: "Loans Processing Using Business Rules (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: Loans Processing Using Business Rules (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, business rules
 - business rules, examples
 ms.assetid: 3e1c80c6-adc1-4a0f-83fd-409ce1b8f21f
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008347"
 ---
 # <a name="loans-processing-using-business-rules-biztalk-server-sample"></a>ローン処理を使用してビジネス ルール (BizTalk Server サンプル)
 Loans Processing Using Business Rules サンプルは、オーケストレーション内で管理しているルール セットを使用する方法、および入力 (ファクトと呼ばれます) の組み合わせを使用して、処理中のドキュメント内のフィールドの設定値を計算する方法を示しています。 ファクトは、.NET ベースのアセンブリ呼び出しの結果、メッセージの XML から取得した値、またはデータベースから取得したデータです。 このサンプルでは、ルールを必要に応じて変更して、再展開の必要なしに後続の計算に影響を与える方法も示します。  
@@ -141,7 +142,7 @@ Loans Processing Using Business Rules サンプルは、オーケストレーシ
     |4|常駐状態ルール|IF **PlaceOfResidence &#124;です。TimeInMonths** > 18<br /><br /> **ResidencyStatus** = **有効**|  
     |!1, !2, !3, !4|否定ルール|論理条件**いない**ルール 1 ~ 4 で説明されている、対応する条件のです。 設定されている文字列の変更の結果として得られる操作には。|  
   
-6.  右クリックし、**バージョン 1.1 (未保存)**ノードをクリックして**保存**です。  
+6.  右クリックし、**バージョン 1.1 (未保存)** ノードをクリックして**保存**です。  
   
 7.  右クリックし、**バージョン 1.1**ノードをクリックして**発行**です。  
   

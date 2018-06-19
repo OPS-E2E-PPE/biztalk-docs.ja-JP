@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009027"
 ---
 # <a name="transmitpipeline-receiveport-node"></a>TransmitPipeline (ReceivePort ノード)
 バインド ファイルの ReceivePort ノードの TransmitPipeline ノードでは、バインド ファイルと共にエクスポートされる双方向受信ポートにバインドされている送信パイプラインに関する特定の情報が提供されます。  

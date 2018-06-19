@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/troubleshooting-tibco-rendezvous/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: cce9ad685bc4b0bc8a0d97e0645573c5e2db1cf5
 ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975568"
 ---
 # <a name="using-event-tracing-for-windows"></a>Windows イベント トレーシングの使用
 Microsoft BizTalk Adapter for TIBCO Rendezvous は、エラー、警告、および情報メッセージを Windows イベント ビューアーに記録します。 追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。 ETW をアクティブにすると、メッセージ受信用の *.etl ファイルが作成されます。 このファイルはバイナリ形式であり、読み取るには変換する必要があります。 これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル、tracerpt.exe や tracedmp.exe などです。 たとえば、tracerpt.exe アプリケーションに変換されます、 \*.etl ファイルを 2 つのテキスト ファイル: summary.txt と dumpfile.csv です。  
@@ -33,17 +34,17 @@ Microsoft BizTalk Adapter for TIBCO Rendezvous は、エラー、警告、およ
   
  BizTalk Adapter for TIBCO Rendezvous には 3 つのプロバイダーがあります。 そのため、異なる種類のメッセージを記録できます。  
   
--   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが**-受信者**です。  
+-   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが **-受信者**です。  
   
--   使用して**-受信者**を実行時にアダプターによって受信されたログからすべてのメッセージを取得します。  
+-   使用して **-受信者**を実行時にアダプターによって受信されたログからすべてのメッセージを取得します。  
   
--   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが**-トランスミッター**です。  
+-   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが **-トランスミッター**です。  
   
-     使用して**-トランスミッター**を実行時にアダプターによって送信されたログからすべてのメッセージを取得します。  
+     使用して **-トランスミッター**を実行時にアダプターによって送信されたログからすべてのメッセージを取得します。  
   
--   **管理ログ プロバイダー —**、\<トレース要素\>スイッチが**-管理**です。  
+-   **管理ログ プロバイダー —**、\<トレース要素\>スイッチが **-管理**です。  
   
-     使用して**-管理**サーバー システムの参照中に生成されたログからすべてのメッセージを取得します。  
+     使用して **-管理**サーバー システムの参照中に生成されたログからすべてのメッセージを取得します。  
   
 ## <a name="btatibcorvtrace-command"></a>BTATIBCORVTrace コマンド  
  ETW を使用するには、BizTalk Adapter for TIBCO Rendezvous コマンドである BTATIBCORVTrace.cmd を実行します。 このコマンドは次のように使用します。  
@@ -54,7 +55,7 @@ BTATIBCORVTrace <Trace element> -start [-cir <MB>|
 BTATIBCORVTrace <Trace element> -stop  
 ```  
   
- 場所: **\<トレース要素\>**プロバイダーの種類は、(必須)。  
+ 場所: **\<トレース要素\>** プロバイダーの種類は、(必須)。  
   
  そのオプションは次のとおりです。  
   

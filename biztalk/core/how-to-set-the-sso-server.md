@@ -1,11 +1,11 @@
 ---
-title: "SSO サーバーを設定する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SSO サーバーを設定する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - servers, selecting [SSO]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [SSO], selecting servers
 - SSOManage [SSO]
 ms.assetid: a0b0176d-b426-4ab1-8a7e-1f96f4214683
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972168"
 ---
 # <a name="how-to-set-the-sso-server"></a>SSO サーバーを設定する方法
 ssomanage を使用するたびに、まず、ユーザーが接続先のシングル サインオン サーバーを参照するように設定する必要があります。  
@@ -42,7 +43,7 @@ ssomanage を使用するたびに、まず、ユーザーが接続先のシン�
   
 4.  必要に応じて、、**すべてのユーザーの SSO サーバーの設定**チェック ボックスをオンします。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 ### <a name="to-set-the-enterprise-single-sign-on-server-for-a-single-user-using-the-command-line"></a>コマンド ラインで 1 人のユーザーに対してエンタープライズ シングル サインオン サーバーを設定するには  
   
@@ -50,7 +51,7 @@ ssomanage を使用するたびに、まず、ユーザーが接続先のシン�
   
 2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – server \<SSO サーバー名\>**ここで、  **\<SSO サーバー名\>**シングル サインオン サーバーのコンピューター名をユーザーには接続しようとしています。  
+3.  型**ssomanage – server \<SSO サーバー名\>** ここで、  **\<SSO サーバー名\>** シングル サインオン サーバーのコンピューター名をユーザーには接続しようとしています。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -61,7 +62,7 @@ ssomanage を使用するたびに、まず、ユーザーが接続先のシン�
   
 2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – serverall \<SSO サーバー名\>**ここで、  **\<SSO サーバー名\>**シングル サインオン サーバーのすべてのコンピューター名にはシングル サインオン ユーザー アカウントのメンバーが指すされます。  
+3.  型**ssomanage – serverall \<SSO サーバー名\>** ここで、  **\<SSO サーバー名\>** シングル サインオン サーバーのすべてのコンピューター名にはシングル サインオン ユーザー アカウントのメンバーが指すされます。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

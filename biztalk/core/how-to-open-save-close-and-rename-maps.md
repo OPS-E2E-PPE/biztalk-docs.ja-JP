@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9aa88ca7-a731-4295-8692-6dd36fdf0872
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973168"
 ---
 # <a name="how-to-open-save-close-and-rename-maps"></a>マップを開く、保存、終了する方法と、マップの名前を変更する方法
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のマップは、.btm という拡張子付きのファイルとして、ファイル システム内に格納されます。 ただし、マップを開く、保存する、閉じるなどの操作は、BizTalk プロジェクト内から行うのが一般的です。  
@@ -42,7 +43,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 1.  ソリューション エクスプローラーで、マップの保存先を選択します。  
   
-2.  **ファイル** メニューのをクリックして**保存*\<名のマップの\>*として**です。  
+2.  **ファイル** メニューのをクリックして**保存*\<名のマップの\>* として**です。  
   
 3.  **ファイルに名前を付けて**  ダイアログ ボックスで、マップを保存するフォルダーの場所を参照します。  
   
@@ -64,7 +65,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 1.  ソリューション エクスプローラーで、閉じるマップを選択します。  
   
-2.  **[ファイル]** メニューの **[閉じる]**をクリックします。  
+2.  **[ファイル]** メニューの **[閉じる]** をクリックします。  
   
     > [!NOTE]
     >  閉じるアイコンをクリックすることもできます (**[x]**)、Microsoft の右上隅に[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。  

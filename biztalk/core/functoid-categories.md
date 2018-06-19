@@ -1,14 +1,14 @@
 ---
-title: "Functoid カテゴリ |Microsoft ドキュメント"
-ms.custom: 
+title: Functoid カテゴリ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 029905e2-f01a-436a-b2ed-a364379c9cc5
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246762"
 ---
 # <a name="functoid-categories"></a>Functoid カテゴリ
 BizTalk の Functoid は、使用目的に応じてカテゴリに分けられています。 たとえば、データベース Functoid は実行時にデータベースからデータを抽出することを目的とし、数値演算 Functoid は数学的演算を実行するために使用されます。 BizTalk マッパーでは、Functoid は [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックスにカテゴリごとに表示されます。 

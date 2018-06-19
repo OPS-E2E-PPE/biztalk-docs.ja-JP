@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e698b21-e234-4d7d-b101-742eff68155c
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22258018"
 ---
 # <a name="how-validation-of-an-edi-interchange-is-configured"></a>EDI インターチェンジの検証を構成する方法
 アグリーメントを参照するプロセスで、受信インターチェンジまたは送信インターチェンジが解決されるアグリーメントが判断される場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はパイプラインのプロパティではなく、アグリーメントのプロパティを使用して、検証の実行方法を決定します。 インターチェンジに解決されるアグリーメントが存在しない場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、検証を実行するときにフォールバック アグリーメントのプロパティとパイプラインのプロパティを使用します。  

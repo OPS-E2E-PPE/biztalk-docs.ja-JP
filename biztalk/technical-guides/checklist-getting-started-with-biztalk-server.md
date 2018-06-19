@@ -1,14 +1,14 @@
 ---
-title: "チェックリスト: BizTalk Server の概要 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チェックリスト: BizTalk Server の概要 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/27/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 37d265cd-c393-46ac-ac21-129a1511359b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 ms.openlocfilehash: a441fa60bc4ef084d3be5032049e2f712c2e501b
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009443"
 ---
 # <a name="checklist-getting-started-with-biztalk-server"></a>チェックリスト: BizTalk Server の概要
 完全に初めて使用する場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]での高速に取得するには、このトピックのチェックリストに従ってください[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。  

@@ -13,7 +13,7 @@ helpviewer_keywords:
 - orchestrations, typed fault contracts
 - orchestrations, WCF services
 ms.assetid: 5a1a7d22-b0ff-4d09-bebf-4995229784b0
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25970768"
 ---
 # <a name="how-to-handle-typed-fault-contracts-in-orchestrations"></a>オーケストレーション内の型指定されたエラー コントラクトを処理する方法
 このトピックでは、オーケストレーション内から WCF サービスを使用する際に、型指定されたエラー コントラクトを処理する方法について説明します。 WCF サービスを使用している必要があります、オーケストレーションで型指定されたエラー例外を処理する、 **FaultContractAttribute**サービス操作に適用される以外の場合は、エラーをスローしてを使用してそのため、 **FaultException**\<T\> T が任意の有効なデータ コントラクトまたは WCF サービスからのシリアル化可能な型を指定できます。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 03/23/2018
   
 4.  **メタデータ ソース**  ページで、 **Metadata Exchange (MEX) エンドポイント**, 、 をクリックし、 **次**します。  
   
-5.  **メタデータ エンドポイント** ページで、Ws-metadata Exchange または Http-get を通じてダウンロードのメタデータを提供する実行中のサービスの URL を指定: http://localhost:8005 などです。 URL からメタデータ ドキュメントを取得するにはクリックして **取得**します。 実行中のサービスは、基本的な認証方式を使用したユーザーの資格情報を必要とする場合はクリックして **編集** を開くには、 **BizTalk WCF サービス使用ウィザード**  ダイアログ ボックスのユーザー名と実行中のサービスにアクセスするときに使用するパスワードを指定できます。 **[次へ]**をクリックします。  
+5.  **メタデータ エンドポイント** ページで、Ws-metadata Exchange または Http-get を通じてダウンロードのメタデータを提供する実行中のサービスの URL を指定: http://localhost:8005 などです。 URL からメタデータ ドキュメントを取得するにはクリックして **取得**します。 実行中のサービスは、基本的な認証方式を使用したユーザーの資格情報を必要とする場合はクリックして **編集** を開くには、 **BizTalk WCF サービス使用ウィザード**  ダイアログ ボックスのユーザー名と実行中のサービスにアクセスするときに使用するパスワードを指定できます。 **[次へ]** をクリックします。  
   
 6.  **WCF サービス メタデータの概要のインポート**  ページで、設定内容を確認します。 クリックして **戻る** に変更を加えます。 クリックして **インポート** BizTalk アイテムと、WCF サービスを使用するために使用されている型を作成します。  
   

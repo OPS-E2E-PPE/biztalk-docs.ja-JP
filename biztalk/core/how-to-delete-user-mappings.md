@@ -11,7 +11,7 @@ helpviewer_keywords:
 - maps [SSO], deleting
 - managing [SSO maps], deleting user maps
 ms.assetid: de511113-b0b0-4920-91dc-4c9e380fda58
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25970664"
 ---
 # <a name="how-to-delete-user-mappings"></a>ユーザー マッピングを削除する方法
 以下のコマンドを使用して、XML ファイルで指定された 1 つ以上のユーザー マッピングを削除できます。 XML ファイルの例を次に示します。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型 **ssomanage – deletemappings *\<マッピング ファイル名\>* * *、どこで\<*マッピング ファイル名*\>を含むファイルの名前を指定します、ユーザーのマッピングを削除します。  
+3.  型 **ssomanage – deletemappings *\<マッピング ファイル名\>* * *、どこで\<* マッピング ファイル名*\>を含むファイルの名前を指定します、ユーザーのマッピングを削除します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型 **ssomanage – deletemapping *\<ドメイン\>*\\*\<username\> *  *\<アプリケーション名\>* * *、どこで*\<ドメイン\>*は Windows ドメイン ユーザー アカウントを *\<ユーザー名\>*は、Windows ユーザー名と\<*アプリケーション名*\>ユーザー マッピングを削除する特定のアプリケーションは、します。  
+3.  型 **ssomanage – deletemapping *\<ドメイン\>*\\*\<username\> *  *\<アプリケーション名\>* * *、どこで*\<ドメイン\>* は Windows ドメイン ユーザー アカウントを *\<ユーザー名\>* は、Windows ユーザー名と\<* アプリケーション名*\>ユーザー マッピングを削除する特定のアプリケーションは、します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -73,7 +74,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型 * * ssoclient – deletemapping *\<アプリケーション名\>* * *、どこで*\<アプリケーション名\>*ユーザー マッピングを削除する関連アプリケーションの名前を指定します。  
+3.  型 * * ssoclient – deletemapping *\<アプリケーション名\>* * *、どこで*\<アプリケーション名\>* ユーザー マッピングを削除する関連アプリケーションの名前を指定します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

@@ -1,18 +1,18 @@
 ---
-title: "BizTalk 追跡データベースからデータを手動で削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk 追跡データベースからデータを手動で削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking database, purging
 - purging, manually
 - purging, warnings
 ms.assetid: f350d850-5034-4166-940c-8d10b7b445fb
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971704"
 ---
 # <a name="how-to-manually-purge-data-from-the-biztalk-tracking-database"></a>BizTalk 追跡データベースから手動でデータを削除する方法
 SQL Server エージェント ジョブである DTA Archive and Purge では、データベースの連続的な削除および格納された追跡データの圧縮により、BizTalk 追跡 (BizTalkDTADb) データベースから手動でデータを削除する必要性が低減されます。 BizTalk 追跡 (BizTalkDTADb) データベースのサイズが、パフォーマンスが低下するほど大幅に大きくなり、DTA Archive and Purge ジョブがデータベース サイズの増大に対応できなくなった場合には、手動でデータを削除することが必要になる場合があります。  
@@ -45,7 +46,7 @@ SQL Server エージェント ジョブである DTA Archive and Purge では、
   
     -   エンタープライズ シングル サインオン サービス  
   
-         場合 BizTalkServiceBizTalkGroup: BizTalkServerApplication サービスが実行されている、エンタープライズ シングル サインオン サービスをシャット ダウンしようとすると、**その他のサービスの停止**ダイアログが表示されます。 **[はい]**をクリックします。  
+         場合 BizTalkServiceBizTalkGroup: BizTalkServerApplication サービスが実行されている、エンタープライズ シングル サインオン サービスをシャット ダウンしようとすると、**その他のサービスの停止**ダイアログが表示されます。 **[はい]** をクリックします。  
   
     -   ルール エンジン更新サービス  
   
@@ -55,7 +56,7 @@ SQL Server エージェント ジョブである DTA Archive and Purge では、
   
 7.  **ホスト インスタンス** ウィンドウでは、各実行中のホスト インスタンスを右クリックし、をクリックして**停止**です。  
   
-8.  をクリックして**開始**には、**実行**、型**cmd**、順にクリック**[ok]**です。  
+8.  をクリックして**開始**には、**実行**、型**cmd**、順にクリック **[ok]** です。  
   
 9. コマンド プロンプトで、次のように入力します。  
   

@@ -1,17 +1,17 @@
 ---
-title: "関連アプリケーションのプロパティを更新する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 関連アプリケーションのプロパティを更新する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO applications], updating properties
 - applications [SSO], properties
 ms.assetid: b06eefdd-a5ca-4a32-93d7-72246e31a2e4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972648"
 ---
 # <a name="how-to-update-the-properties-of-an-affiliate-application"></a>関連アプリケーションのプロパティを更新する方法
 MMC スナップインまたはここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のアプリケーション プロパティを更新できます。 この作業を実行するには、関連管理者である必要があります。 更新できるフィールドを示す XML ファイルの例を次に示します。  
@@ -73,7 +74,7 @@ MMC スナップインまたはここで示すコマンドを使用すると、X
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – updateapps\<アプリケーション ファイル名\>**ここで、アプリケーション ファイル名は、XML ファイルです。  
+3.  型**ssomanage – updateapps\<アプリケーション ファイル名\>** ここで、アプリケーション ファイル名は、XML ファイルです。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

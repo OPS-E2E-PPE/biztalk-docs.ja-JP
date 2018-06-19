@@ -1,11 +1,11 @@
 ---
-title: "マルチパート メッセージの種類を使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: マルチパート メッセージの種類を使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - multi-part message types, parts
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - creating, multi-part messages
 - messages, about messages
 ms.assetid: 009a39bd-cfc4-42d9-918c-88ac24bfc370
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972080"
 ---
 # <a name="how-to-use-multi-part-message-types"></a>マルチパート メッセージの種類を使用する方法
 各メッセージには、マルチパート メッセージの種類、0 個以上のメッセージ部分で構成されるメッセージ構造の記述があります。 これらの部分は、XSD (XML Schema Definition) 言語スキーマまたは .NET クラスによって定義されます。 独自のマルチパート メッセージの種類を定義したり、既存の .NET クラスおよびスキーマを使用することもできます。  
@@ -79,7 +80,7 @@ ms.lasthandoff: 11/28/2017
   
     |プロパティ|Description|  
     |--------------|-----------------|  
-    |**型修飾子**|マルチパート メッセージの種類のスコープを設定します。<br /><br /> -   **Private-**マルチパート メッセージの種類へのアクセスが含まれているモジュールに制限されます。<br />-   **[パブリック]:**マルチパート メッセージの種類へのアクセスは制限されません。<br />-   **内部 —**マルチパート メッセージの種類へのアクセスは、同じプロジェクト内のモジュールに制限されます。|  
+    |**型修飾子**|マルチパート メッセージの種類のスコープを設定します。<br /><br /> -   **Private-** マルチパート メッセージの種類へのアクセスが含まれているモジュールに制限されます。<br />-   **[パブリック]:** マルチパート メッセージの種類へのアクセスは制限されません。<br />-   **内部 —** マルチパート メッセージの種類へのアクセスは、同じプロジェクト内のモジュールに制限されます。|  
   
 ## <a name="add-parts-to-an-existing-multi-part-message"></a>既存のマルチパート メッセージに部分を追加します。  
   
@@ -89,10 +90,10 @@ ms.lasthandoff: 11/28/2017
   
 -   変数を作成 (たとえば*xlangPart*) 型の**Microsoft.XLANGs.BaseTypes.XLANGMessage**です。  
   
--   呼び出す*xlangPart***です。AddPart(...)**式図形から適切な引数を使用します。  
+-   呼び出す*xlangPart***です。AddPart(...)** 式図形から適切な引数を使用します。  
   
     > [!NOTE]
-    >  追加された部分は型**XmlDocument**を使用してカスタムの書式設定されたメッセージ部分を追加することはできませんので、 **AddPart()**メソッドです。  
+    >  追加された部分は型**XmlDocument**を使用してカスタムの書式設定されたメッセージ部分を追加することはできませんので、 **AddPart()** メソッドです。  
   
 > [!NOTE]
 >  宣言された部分の数よりも大きい値を含むマルチパート メッセージを受信する場合、オーケストレーション エンジン読み取りの数の部分がありますが、メッセージに作成で宣言されたメッセージ部分の数に一致する部分の適切な部分の種類型と、コンストラクト**XmlDocument**残りの部分の部分です。  

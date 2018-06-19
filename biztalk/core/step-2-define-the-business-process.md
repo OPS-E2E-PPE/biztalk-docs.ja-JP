@@ -1,14 +1,14 @@
 ---
-title: "手順 2: ビジネス プロセスの定義 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 2: ビジネス プロセスの定義 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b37bd9f1-5ee2-434d-950a-cf12967b6fc2
-caps.latest.revision: "49"
+caps.latest.revision: 49
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974704"
 ---
 # <a name="step-2-define-the-business-process"></a>ステップ 2: ビジネス プロセスの定義
 ![手順 4 2](../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
  **所要時間:** 8 分  
   
- **目標:**このステップで、ビジネス プロセスを定義するオーケストレーション デザイナーを使用しています。  
+ **目標:** このステップで、ビジネス プロセスを定義するオーケストレーション デザイナーを使用しています。  
   
- **目的:**オーケストレーションのワークフローが表し、在庫補充要求を承認するため、会社のビジネス プロセスを自動化します。  
+ **目的:** オーケストレーションのワークフローが表し、在庫補充要求を承認するため、会社のビジネス プロセスを自動化します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このステップを開始する前に、以下の要件を確認してください。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/28/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**[Identifier]**|型**RequestMessage**です。|  
-    |**メッセージの種類**|をクリックして**スキーマ**、クリックして**\<参照されたアセンブリから選択しています...\>**. [アイテムの種類] ウィンドウからをクリックして**EAISchemas**、クリックして**要求**です。 **[OK]**をクリックします。|  
+    |**メッセージの種類**|をクリックして**スキーマ**、クリックして**\<参照されたアセンブリから選択しています...\>**. [アイテムの種類] ウィンドウからをクリックして**EAISchemas**、クリックして**要求**です。 **[OK]** をクリックします。|  
   
 4.  オーケストレーション ビューを右クリックして**メッセージ**、クリックして**新しいメッセージ**です。  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 11/28/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**[Identifier]**|型**RequestDeclineMessage**です。|  
-    |**メッセージの種類**|をクリックして**スキーマ**、クリックして**\<参照されたアセンブリから選択しています...\>**. [アイテムの種類] ウィンドウからをクリックして**EAISchemas**、クリックして**RequestDecline**です。 **[OK]**をクリックします。|  
+    |**メッセージの種類**|をクリックして**スキーマ**、クリックして**\<参照されたアセンブリから選択しています...\>**. [アイテムの種類] ウィンドウからをクリックして**EAISchemas**、クリックして**RequestDecline**です。 **[OK]** をクリックします。|  
   
 #### <a name="to-configure-the-properties-of-the-shapes"></a>図形のプロパティを構成するには  
   
@@ -111,7 +112,7 @@ ms.lasthandoff: 11/28/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**名前**|型**DeclineRule**です。|  
-    |**[式]**|省略記号ボタン (**.**)、し、入力`RequestMessage(EAISchemas.PropertySchema.GrandTotal ) > 10000`です。 **[OK]**をクリックします。|  
+    |**[式]**|省略記号ボタン (**.**)、し、入力`RequestMessage(EAISchemas.PropertySchema.GrandTotal ) > 10000`です。 **[OK]** をクリックします。|  
   
 7.  デザイン画面でクリックして、 **ConstructMessage_1**図形です。  
   
@@ -129,7 +130,7 @@ ms.lasthandoff: 11/28/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**名前**|型**TransformRequestToRequestDeclineMessage**です。|  
-    |**マップ名**|**...** をクリックします。 [変換の構成] で、次の操作を行います。<br /><br /> 構成情報の入力<br /><br /> -**既存のマップ**です。<br /><br /> 完全修飾マップ名:<br /><br /> - **\<参照されたアセンブリから選択\>**です。  左側のウィンドウから次のように選択します。 **EAISchemas**です。  右ペインで、[EAISchemas.MapToReqDecline] をクリックします。  **[OK]**をクリックします。<br /><br /> ソース<br /><br /> -RequestMessage<br /><br /> 転送先<br /><br /> -RequestDeclineMessage|  
+    |**マップ名**|**...** をクリックします。 [変換の構成] で、次の操作を行います。<br /><br /> 構成情報の入力<br /><br /> -**既存のマップ**です。<br /><br /> 完全修飾マップ名:<br /><br /> - **\<参照されたアセンブリから選択\>** です。  左側のウィンドウから次のように選択します。 **EAISchemas**です。  右ペインで、[EAISchemas.MapToReqDecline] をクリックします。  **[OK]** をクリックします。<br /><br /> ソース<br /><br /> -RequestMessage<br /><br /> 転送先<br /><br /> -RequestDeclineMessage|  
   
 11. デザイン画面でクリックして、 **Send_1**図形です。  
   
@@ -140,7 +141,7 @@ ms.lasthandoff: 11/28/2017
     |**名前**|型**SendRequestDecline**です。|  
     |**メッセージ**|選択**RequestDeclineMessage**です。|  
   
-13. デザイン画面でクリックして、 **[send_2]**図形です。  
+13. デザイン画面でクリックして、 **[send_2]** 図形です。  
   
 14. [プロパティ ウィンドウ] で、次の操作を行います。  
   

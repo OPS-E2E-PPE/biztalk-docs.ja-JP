@@ -1,14 +1,14 @@
 ---
-title: "手順 4: マップの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 4: マップの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2f7f1f6d-0e57-4a65-b91d-c81fcc832961
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973984"
 ---
 # <a name="step-4-create-the-map"></a>ステップ 4: マップの作成
 ![手順 5 の 4](../core/media/step-4of5.gif "Step_4of5")  
   
  **所要時間:** 6 分  
   
- **目標:**この手順では、要求メッセージを RequestDecline メッセージに変換するマップを作成します。  
+ **目標:** この手順では、要求メッセージを RequestDecline メッセージに変換するマップを作成します。  
   
- **目的:**マップ、倉庫在庫システムに返される要求拒否メッセージで、要求 ID 番号と総計が含まれていることを確認します。 ここでは BizTalk マッパーを使用して、送信メッセージ用に定義されているフィールドに受信メッセージのフィールドを関連付けます。 この操作は、2 種類のメッセージのスキーマ構造が異なるため、必要です。  
+ **目的:** マップ、倉庫在庫システムに返される要求拒否メッセージで、要求 ID 番号と総計が含まれていることを確認します。 ここでは BizTalk マッパーを使用して、送信メッセージ用に定義されているフィールドに受信メッセージのフィールドを関連付けます。 この操作は、2 種類のメッセージのスキーマ構造が異なるため、必要です。  
   
 ## <a name="prerequisites"></a>前提条件  
  このステップを開始する前に、以下の要件を確認してください。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 11/28/2017
     |**インストールされたテンプレート**|をクリックして**マップ ファイル**、クリックして**マップ**です。|  
     |**名前**|型**MapToReqDecline.btm**です。|  
   
-3.  **[追加]**をクリックします。  
+3.  **[追加]** をクリックします。  
   
      送信元スキーマ、送信先スキーマ、およびマッパー グリッドを次に示します。  
   

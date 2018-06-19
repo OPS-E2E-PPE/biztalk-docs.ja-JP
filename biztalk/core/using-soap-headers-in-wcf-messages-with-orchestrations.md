@@ -1,18 +1,18 @@
 ---
-title: "オーケストレーションでの WCF メッセージにおける SOAP ヘッダーの使用 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションでの WCF メッセージにおける SOAP ヘッダーの使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, SOAP headers [WCF services]
 - WCF services, orchestrations
 - WCF services, SOAP headers
 ms.assetid: 31c01e35-a2a6-4ea9-bdf4-6d4311268dbe
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972912"
 ---
 # <a name="using-soap-headers-in-wcf-messages-with-orchestrations"></a>オーケストレーションでの WCF メッセージにおける SOAP ヘッダーの使用
 コンテキスト プロパティを使用するオーケストレーションでの送信 WCF メッセージでは、カスタムの SOAP ヘッダーを送信する**WCF です。OutboundCustomHeaders**です。 WCF アダプタは、カスタムの SOAP ヘッダーを、WCF インフラストラクチャが WS-Addressing、WS-Security、WS-AtomicTransaction などの Web サービス標準に使用する標準 SOAP ヘッダーと組み合わせて送信します。 使用すると、 **OutboundCustomHeaders**プロパティ、プロパティには、 \<**ヘッダー** \>ルート要素としての要素。 内のすべてのカスタム SOAP ヘッダーに配置する必要があります、 \<**ヘッダー** \>要素。 カスタム SOAP ヘッダーの値が空の文字列の場合は、割り当てる必要があります\<**ヘッダー**\>\</**ヘッダー** \>または\<**ヘッダー** / \>を**OutboundCustomHeaders**プロパティです。  

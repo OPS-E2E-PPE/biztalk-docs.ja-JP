@@ -1,11 +1,11 @@
 ---
-title: "スキーマ リゾルバ コンポーネント (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: スキーマ リゾルバ コンポーネント (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Flat File Disassembler [pipeline component], examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, examples
 - examples, Flat File Disassembler [pipeline component]
 ms.assetid: 9ef68988-c4ee-42d5-83b5-a5c978b2007d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974920"
 ---
 # <a name="schema-resolver-component-biztalk-server-sample"></a>スキーマ リゾルバ コンポーネント (BizTalk Server サンプル)
 スキーマ リゾルバ コンポーネントのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] フラット ファイル逆アセンブラ コンポーネントの機能を拡張する方法を示します。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 11/28/2017
  スキーマ リゾルバ コンポーネントは、フラット ファイル逆アセンブラ コンポーネントのスキーマを選択する、もう 1 つの方法を示します。 このサンプルでは、4 つのスキーマが定義されており、各スキーマのメッセージの最初の 2 文字は一意です。 一意である最初の 2 文字、および対応するスキーマの間でマッピングが定義されます。 入力メッセージがスキーマ リゾルバ コンポーネントに提供されると、最初の 2 文字が読み取られ、対応するドキュメントに使用するスキーマが決定されて、メッセージ コンテキストでスキーマ情報が保存された後に、標準のフラット ファイル逆アセンブラ コンポーネントが呼び出されます。 標準フラット ファイル逆アセンブラ コンポーネントはメッセージ コンテキストからスキーマ情報を読み取り、そのスキーマを使用してドキュメントを解析します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\Pipelines\SchemaResolverComponent\  
+ *\<パスのサンプル\>* \Pipelines\SchemaResolverComponent\  
   
  次の表は、このサンプルで使用したファイルを示し、その目的を説明しています。  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  コマンド ウィンドウで、ディレクトリを次のフォルダに変更します (cd)。  
   
-     *\<パスのサンプル\>*\Pipelines\SchemaResolverComponent  
+     *\<パスのサンプル\>* \Pipelines\SchemaResolverComponent  
   
 2.  次の操作を実行する Setup.bat ファイルを実行します。  
   

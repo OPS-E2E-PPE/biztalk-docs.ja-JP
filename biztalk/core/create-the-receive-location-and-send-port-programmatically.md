@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47850e66-ce33-4c6a-8190-168071792c0b
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25976008"
 ---
 # <a name="create-the-receive-location-and-send-port-programmatically"></a>受信場所を作成し、プログラムでの送信ポート
 構成、Wcf-basichttp 受信場所と送信ポートをプログラムでします。 BizTalk 管理コンソールを使用するのを参照してください。 [、Wcf-basichttp アダプタ](../core/wcf-basichttp-adapter.md)です。 

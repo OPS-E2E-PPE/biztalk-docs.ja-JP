@@ -1,14 +1,14 @@
 ---
-title: "手順 1: AS2 チュートリアルの準備 |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: AS2 チュートリアルの準備 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3421c33b-0ccd-4e9d-b1c3-b161278e4d98
-caps.latest.revision: "39"
+caps.latest.revision: 39
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279546"
 ---
 # <a name="step-1-prepare-for-the-as2-tutorial"></a>手順 1: AS2 チュートリアルを準備します。
 ![11 の手順 1.](../core/media/tut-step1-of-11.gif "Tut_Step1_of_11")  
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  選択**Everyone**で、**グループまたはユーザー名**ボックスで、チェック ボックスをクリックして**書き込み**(下にある、**許可**列)、で**権限** ウィンドウで、クリックして**OK**です。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   
 6.  次の手順を繰り返して、 \\_MDNToFabrikam フォルダーです。  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  このチュートリアルを使用し、選択するインプロセス ホストを右クリックし、詳細ウィンドウで、**プロパティ**です。  
   
-4.  **ホストのプロパティ**ダイアログ ボックスの**全般**] タブで [ **32 ビットのみ**、順にクリック**[ok]**です。  
+4.  **ホストのプロパティ**ダイアログ ボックスの**全般**] タブで [ **32 ビットのみ**、順にクリック **[ok]** です。  
   
 5.  分離ホストについて手順 3. ～ 4. を繰り返します。  
   

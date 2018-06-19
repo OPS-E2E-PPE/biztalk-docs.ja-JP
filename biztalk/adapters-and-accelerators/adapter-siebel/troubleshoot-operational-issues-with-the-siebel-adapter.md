@@ -1,15 +1,15 @@
 ---
-title: "Siebel アダプターの BizTalk での運用上の問題のトラブルシューティング |Microsoft ドキュメント"
-description: "共通の問題と解決策の Siebel アダプターの BizTalk アダプター パック (BAP) の"
-ms.custom: 
+title: Siebel アダプターの BizTalk での運用上の問題のトラブルシューティング |Microsoft ドキュメント
+description: 共通の問題と解決策の Siebel アダプターの BizTalk アダプター パック (BAP) の
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 74d152d9-9893-4f93-894a-350bae8be7bd
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009635"
 ---
 # <a name="troubleshoot-operational-issues-with-the-siebel-adapter"></a>Siebel アダプターでの運用上の問題をトラブルシューティングします。
 このセクションで説明を使用する場合に発生する可能性が運用上の問題に関する情報をまとめて、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]です。  

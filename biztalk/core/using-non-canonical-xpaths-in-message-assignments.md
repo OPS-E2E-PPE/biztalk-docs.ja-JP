@@ -1,14 +1,14 @@
 ---
-title: "メッセージ割り当てにおける非正規 Xpath の使用 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージ割り当てにおける非正規 Xpath の使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 052d1d72-43ce-4654-bf29-86f82ad65e91
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287626"
 ---
 # <a name="using-non-canonical-xpaths-in-message-assignments"></a>メッセージ割り当てにおける非正規 XPath の使用
 .Net メッセージの部分を使用すると、XML シリアル化属性によってコードに注釈を付けることができますが、識別フィールドやプロパティ注釈も伴う場合、非常に複雑な XPath 式になります。 これらの複雑な XPath 式は非正規にすることができます。 非正規 XPath は、直接バインドされたオーケストレーションでのみ使用する必要があります。論理的または物理的にバインドされたオーケストレーションでは失敗する可能性があります。 直接バインドされたオーケストレーションは、XML ドキュメントの処理用のパイプラインに依存しないため、処理前に XML ドキュメント全体がメモリに読み込まれます。  

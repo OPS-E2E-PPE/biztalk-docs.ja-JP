@@ -1,11 +1,11 @@
 ---
-title: "HTTP 受信ハンドラを構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: HTTP 受信ハンドラを構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - permissions, receive handlers
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - receive handlers, HTTP adapters
 - HTTP adapters, permissions
 ms.assetid: c295489e-dbbb-44f7-bddb-d3cdfe302cf5
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007611"
 ---
 # <a name="how-to-configure-an-http-receive-handler"></a>HTTP 受信ハンドラを構成する方法
 次の手順を実行して、HTTP 受信ハンドラのプロパティを構成します。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **管理**、展開**BizTalk グループ**、展開**プラットフォームの設定**、順に展開**アダプター**です。  
   
-2.  展開したアダプターの一覧でクリックして**HTTP、**右側のウィンドウで、構成、およびをクリックする受信ハンドラを右クリックして**プロパティ**です。  
+2.  展開したアダプターの一覧でクリックして**HTTP、** 右側のウィンドウで、構成、およびをクリックする受信ハンドラを右クリックして**プロパティ**です。  
   
 3.  **アダプター ハンドラーのプロパティ** ダイアログ ボックスで、**全般** タブの 、**ホスト名**一覧で、受信ハンドラーが関連付けられる、ホストを選択します。  
   
@@ -51,13 +52,13 @@ ms.lasthandoff: 12/01/2017
   
 5.  1 から 256 に値を入力し、クリックして**OK**です。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
  BizTalk Server では、メッセージのバッチを効果的に処理し、1 つのメッセージを非常に高速処理を行わないように設計されています。 したがって、この受信ハンドラーを双方向 (要求 - 応答) の受信場所で使用する場合は、次の手順に従うことで、待機時間を最小限に抑えることができます。  
   
 -   設定、**バッチ サイズ**プロパティを 1 の値にします。  
   
--   削減、 **MaxReceiveInterval** 500 の既定値から値を 100 未満の値を**Messaging Isolated、xlang/s では、**と**メッセージング インプロセス**サービスクラス。  変更が加えられた、 **adm_ServiceClass**サービスの種類ごとに 1 つのレコードを含む BizTalk 管理データベースのテーブルです。  これは、サービスの種類全体の変更であるために、この設定を変更する場合は、注意を使用します。 この設定は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージング エージェントが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージ ボックス データベースでメッセージをポーリングするときの最大ポーリング間隔 (ミリ秒) を指定します。  また、特定の負荷条件下でメッセージの制限が必要かどうかを制限コントローラーが判断する際にも使用されます。 必要な場合、制限コントローラーは、システムのストレス条件に基づいてメッセージ ディスパッチの間隔を段階的に遅らせます。 高スループットのシステムでは、この設定は使用されません。  ただし、一度この値を使用すると、MaxReceiveInteral/10 と MaxReceiveInterval の間で間隔が動的に変更されます。  
+-   削減、 **MaxReceiveInterval** 500 の既定値から値を 100 未満の値を**Messaging Isolated、xlang/s では、** と**メッセージング インプロセス**サービスクラス。  変更が加えられた、 **adm_ServiceClass**サービスの種類ごとに 1 つのレコードを含む BizTalk 管理データベースのテーブルです。  これは、サービスの種類全体の変更であるために、この設定を変更する場合は、注意を使用します。 この設定は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージング エージェントが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージ ボックス データベースでメッセージをポーリングするときの最大ポーリング間隔 (ミリ秒) を指定します。  また、特定の負荷条件下でメッセージの制限が必要かどうかを制限コントローラーが判断する際にも使用されます。 必要な場合、制限コントローラーは、システムのストレス条件に基づいてメッセージ ディスパッチの間隔を段階的に遅らせます。 高スループットのシステムでは、この設定は使用されません。  ただし、一度この値を使用すると、MaxReceiveInteral/10 と MaxReceiveInterval の間で間隔が動的に変更されます。  
   
     > [!NOTE]
     >  この設定の変更で作成されるすべてのホストに影響を与える、**ホストの種類**の**Isolated**です。  

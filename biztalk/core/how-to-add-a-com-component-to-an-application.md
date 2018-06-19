@@ -1,11 +1,11 @@
 ---
-title: "アプリケーションに COM コンポーネントを追加する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションに COM コンポーネントを追加する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [applications], COM components
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - applications, COM components
 - COM components, applications
 ms.assetid: fdda1a9d-96af-41fe-9d94-ee1fbd80a7c9
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007283"
 ---
 # <a name="how-to-add-a-com-component-to-an-application"></a>COM コンポーネントをアプリケーションに追加する方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して BizTalk アプリケーションに COM コンポーネントを追加する方法について説明します。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 12/01/2017
   
      例: **%BTAD_InstallDir%\MyComponent.dll**  
   
-8.  完了したら、 **[OK]**をクリックします。  
+8.  完了したら、 **[OK]** をクリックします。  
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用  
   

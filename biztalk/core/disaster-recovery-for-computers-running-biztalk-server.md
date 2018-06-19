@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server を実行しているコンピューターの災害復旧 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server を実行しているコンピューターの災害復旧 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 10a2c26d-55d5-45d1-9fb1-e0664f005c21
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005227"
 ---
 # <a name="disaster-recovery-for-computers-running-biztalk-server"></a>BizTalk Server を実行しているコンピューターの災害復旧
 組織内の BizTalk Server を実行しているコンピューターで、復旧不可能なハードウェア障害が発生した場合、同等のコンピューターに置き換える必要があります。 これは、BizTalk Server データベースは破損しておらず、障害は BizTalk Server を実行しているコンピューターのいずれかで発生したことを前提としています。  

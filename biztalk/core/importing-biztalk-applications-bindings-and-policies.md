@@ -1,11 +1,11 @@
 ---
-title: "BizTalk アプリケーション、バインド、およびポリシーのインポート |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk アプリケーション、バインド、およびポリシーのインポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - importing, applications
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - importing, bindings
 - bindings, importing
 ms.assetid: 678bdb03-efaa-4053-9048-b71fc539d191
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256778"
 ---
 # <a name="importing-biztalk-applications-bindings-and-policies"></a>BizTalk アプリケーション、バインド、およびポリシーのインポート
 このセクションの各トピックでは、BizTalk アプリケーション、バインド、およびポリシーを BizTalk グループまたはアプリケーションにインポートする方法について説明します。 説明したよう[を BizTalk アプリケーションをエクスポートする方法](../core/how-to-export-a-biztalk-application.md)アプリケーションのエクスポートを異なる BizTalk グループ内のアプリケーションに、アプリケーションのアイテムをインポートし、使用できる Windows インストーラー (.msi) ファイルが作成されます。 インポートに指定したアプリケーションがそのグループ内に存在しない場合は、アプリケーションが作成されます。 これに加えて、そのグループの BizTalk Server データベースに、アプリケーションのアイテムが登録され、データが格納されます。 詳細については、次を参照してください。[新機能の動作との成果物がインポート](../core/what-happens-when-artifacts-are-imported.md)です。  

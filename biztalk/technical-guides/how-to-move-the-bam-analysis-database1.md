@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d8094153-072b-427a-b3a0-7310a37cf584
-caps.latest.revision: ''
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26010483"
 ---
 # <a name="how-to-move-the-bam-analysis-database"></a>BAM 分析データベースを移動する方法
 ここでは、BAM 分析データベースを他のサーバーに移動する手順について説明します。  エンド ツー エンドのシナリオの観点から、BAM 分析データベースの移動にも 2 つの主要な手順が含まれます。  
@@ -109,7 +110,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  SQL Server Business Intelligence Development Studio で、プロジェクトを新規作成します。 クリックして **ファイル**, 、 をクリックして **新規**, 、 をクリックし、 **プロジェクト**します。  
   
-3.  **新しいプロジェクト** ダイアログ ボックスで、**プロジェクトの種類**ボックスで、クリックして**ビジネス インテリジェンス プロジェクト**です。 右側のウィンドウで、**テンプレート**ボックスで、をクリックして**Integration Services プロジェクト**、クリックして**[ok]**です。  
+3.  **新しいプロジェクト** ダイアログ ボックスで、**プロジェクトの種類**ボックスで、クリックして**ビジネス インテリジェンス プロジェクト**です。 右側のウィンドウで、**テンプレート**ボックスで、をクリックして**Integration Services プロジェクト**、クリックして **[ok]** です。  
   
 4.  **Integration Services プロジェクト**ダイアログ ボックスで、ソリューション エクスプ ローラーで右クリックし**SSIS パッケージ**、クリックして**既存のパッケージの追加**です。  
   

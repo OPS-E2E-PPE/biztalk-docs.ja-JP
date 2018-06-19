@@ -1,14 +1,14 @@
 ---
-title: "IIS のパフォーマンスの最適化 |Microsoft ドキュメント"
-ms.custom: 
+title: IIS のパフォーマンスの最適化 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6722a2ee-3704-4aaa-9b0d-cef97bcb9a04
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976352"
 ---
 # <a name="optimizing-iis-performance"></a>IIS のパフォーマンスを最適化します。
 ## <a name="apply-iis-configuration-options-to-improve-iis-performance"></a>IIS のパフォーマンスを向上させるために IIS の構成オプションを適用します。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 11/28/2017
 3.  をクリックして**を無効にする**で、**アクション**をこの Web サイトのログ記録を無効にするウィンドウです。  
   
 ### <a name="disable-iis-asp-debugging-in-production-environments"></a>実稼働環境で IIS の ASP のデバッグを無効にします。  
- 運用環境で IIS の ASP のデバッグを無効にする必要があります。 IIS ASP を無効にする手順を次のデバッグ: で、**接続** ウィンドウをクリックして展開**サイト**ASP のデバッグを無効にするには、の選択をwebサイトを選択するをクリックします**。機能ビュー**、順にダブルクリックし、 **ASP**機能します。 クリックして展開**コンパイル**をクリックして展開**デバッグ プロパティ**、いることを確認し、両方**クライアント側のデバッグを有効にする**と**サーバー側を有効にします。デバッグ**に設定されている**False**です。  
+ 運用環境で IIS の ASP のデバッグを無効にする必要があります。 IIS ASP を無効にする手順を次のデバッグ: で、**接続** ウィンドウをクリックして展開**サイト**ASP のデバッグを無効にするには、の選択をwebサイトを選択するをクリックします **。機能ビュー**、順にダブルクリックし、 **ASP**機能します。 クリックして展開**コンパイル**をクリックして展開**デバッグ プロパティ**、いることを確認し、両方**クライアント側のデバッグを有効にする**と**サーバー側を有効にします。デバッグ**に設定されている**False**です。  
   
 1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をクリックして**管理ツール**、クリックして**インターネット インフォメーション サービス (IIS) マネージャー**.  
   

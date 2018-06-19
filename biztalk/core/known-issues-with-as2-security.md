@@ -1,14 +1,14 @@
 ---
-title: "AS2 セキュリティに関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: AS2 セキュリティに関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b291e000-630d-49a1-8e19-f76c4dfee294
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262402"
 ---
 # <a name="known-issues-with-as2-security"></a>AS2 セキュリティに関する既知の問題
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] AS2 ソリューションのセキュリティに関する既知の問題について説明します。  

@@ -1,11 +1,11 @@
 ---
-title: "式を使用する図形 |Microsoft ドキュメント"
-ms.custom: 
+title: 式を使用する図形 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Expression Editor, shapes
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - Loop shape [Orchestration Designer], expressions
 - Rule shape [Orchestration Designer]
 ms.assetid: 0d27f711-ff7c-422b-b231-aa3c9a42ed0c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270786"
 ---
 # <a name="shapes-that-take-expressions"></a>式を使用する図形
 オーケストレーション デザイナーで、複数の図形を含む**判断**と**ループ**、分岐を制御するルールを作成、ブール式を使用します。 他の図形は、それぞれ他の目的で式を使用します。 BizTalk 式エディターを使用して、これらの図形の式を作成または編集できます。  

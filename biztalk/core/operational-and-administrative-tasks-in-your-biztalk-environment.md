@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006867"
 ---
 # <a name="operational-and-administrative-tasks-in-your-biztalk-environment"></a>BizTalk 環境内の運用および管理タスク
 BizTalk Server には、すばやくと BizTalk Server の以前のリリースよりも簡単に BizTalk Server を管理する新機能が含まれています。 ここでは、BizTalk Server の管理について説明します。  

@@ -1,11 +1,11 @@
 ---
-title: "パターンを使用したデザイン: ビジネス プロセス管理ソリューション |Microsoft ドキュメント"
-ms.custom: 
+title: 'パターンを使用したデザイン: ビジネス プロセス管理ソリューション |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - patterns [process management solutions], examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - examples, programming patterns
 - designing, programming patterns
 ms.assetid: 0583f4a4-01db-4d5b-a1f5-1694c1ddbd30
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239666"
 ---
 # <a name="designing-with-patterns-the-business-process-management-solution"></a>パターンを使用したデザイン: ビジネス プロセス管理ソリューション
 ビジネス プロセス管理ソリューションは、BizTalk アプリケーションでプロセス マネージャを構築する方法の 1 つです。 このソリューションでは、1 つのコンポーネントを使用して、注文処理に含まれる一連のステージを選択および制御します。 ソリューションが注文を取得: 新しいサービス、変更、またはサービスの取り消しがあります:、ログに記録し、処理のため渡す前に、順序を確認します。 注文処理は、注文を扱う 1 つ以上のステージで構成されます。 処理が終わったら、元の注文要求に最後の応答を返します。  

@@ -1,17 +1,17 @@
 ---
-title: "BAM によるビジネス プロセス管理ソリューションの監視 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM によるビジネス プロセス管理ソリューションの監視 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, monitoring
 - monitoring, process management solutions
 ms.assetid: 7c5fde9d-6eef-41c9-979c-ac7e5a172812
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264370"
 ---
 # <a name="monitoring-the-business-process-management-solution-with-bam"></a>BAM によるビジネス プロセス管理ソリューションの監視
 このソリューションは、ビジネス アクティビティ監視 (BAM) API を使用して、注文の処理順序を監視します。 ビジネス プロセスのデザインでは、アクティビティを複数のステージに分けます。 アクティビティを再び組み合わせて、連続するプロセスのような一体感を持たせることができます。 BAM は集計データも提供するので、各バックエンドに要する時間、完了した注文数、その他の関連情報を入手できます。  

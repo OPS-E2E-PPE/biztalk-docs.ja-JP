@@ -1,18 +1,18 @@
 ---
-title: "アダプタ ハンドラについて | Microsoft Docs"
-ms.custom: 
+title: アダプタ ハンドラについて | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - handlers [adapters]
 - adapters, handlers
 - handlers [adapters], about handlers
 ms.assetid: 4d1afa39-6320-467f-a7e8-f5f18236648e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289306"
 ---
 # <a name="what-is-an-adapter-handler"></a>アダプタ ハンドラについて
 アダプタ ハンドラとは、アダプタ コードを実行する BizTalk ホストのインスタンスです。 アダプタの送信ハンドラまたは受信ハンドラを指定するとき、アダプタ コードが実行されるコンテキストとなるホスト インスタンスを指定します。 アダプタ ハンドラには、アダプタを実行する役割があり、アダプタの特定のインスタンスのプロパティが含まれています。 既定の BizTalk Server 構成では、インストールされているすべてのアダプタに対してアダプタ ハンドラが作成されますが、特定のアダプタ ハンドラへの負荷分散やプロセス分離のために、追加のアダプタ ハンドラを作成することができます。  

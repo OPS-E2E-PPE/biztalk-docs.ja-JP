@@ -1,14 +1,14 @@
 ---
-title: "インスタンス (EDI) の検証 |Microsoft ドキュメント"
-ms.custom: 
+title: インスタンス (EDI) の検証 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e0fe4e87-5ab4-41e4-8ceb-8f6cf40cae0b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288914"
 ---
 # <a name="validating-an-instance-edi"></a>インスタンスの検証 (EDI)
 デザイン時にインスタンスを EDI スキーマに対して検証することができます。 それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。 検証するインスタンスは、単一のトランザクション セット (インターチェンジとグループ ヘッダーなし)、単一のトランザクション セットを持つインターチェンジ (インターチェンジとグループ ヘッダーあり)、複数のトランザクション セットを持つ完全なバッチ処理されたインターチェンジ (インターチェンジとグループ ヘッダーあり) のいずれかです。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  インスタンスが必要があります以外の文字を使用するかどうかは**基本的な****拡張**または**Unicode**で**構文識別子**です。  
   
-    4.  **[OK]**をクリックします。  
+    4.  **[OK]** をクリックします。  
   
         > [!NOTE]
         >  **EDI インスタンスのプロパティ** ダイアログ ボックスが 2 回クリックした後に表示される**OK**です。 場合は、クリックして**OK**もう一度です。  

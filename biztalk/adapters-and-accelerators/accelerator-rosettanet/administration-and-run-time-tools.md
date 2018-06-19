@@ -1,11 +1,11 @@
 ---
-title: "管理およびランタイム ツール |Microsoft ドキュメント"
-ms.custom: 
+title: 管理およびランタイム ツール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Windows performance monitors
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - BTARN Management Console
 - BizTalk Administration Console
 ms.assetid: bca6d504-25b2-41ba-acc2-38867035ac40
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006587"
 ---
 # <a name="administration-and-run-time-tools"></a>管理およびランタイム ツール
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server と[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]展開、構成の管理、管理、ビジネス ルール管理などの管理および実行時のタスクを実行して、監視のための一連のツールを提供します。 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツールを参照してください[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server のヘルプします。  

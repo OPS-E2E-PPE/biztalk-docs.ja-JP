@@ -1,17 +1,17 @@
 ---
-title: "変換図形を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 変換図形を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [Orchestration Designer], Transform shape
 - Transform shape [Orchestration Designer]
 ms.assetid: ca81d153-77a6-4bcc-b14f-8f48469fffe0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972136"
 ---
 # <a name="how-to-configure-the-transform-shape"></a>変換図形を構成する方法
 ![](../core/media/ebiz-orch-transform.gif "ebiz_orch_transform")  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
  選択した場合**既存のマップ**の下向き矢印をクリックして、**名前**フィールドを使用するマップ ファイルを選択します。 このリスト ボックスには、プロジェクトで使用できるすべての既存のマップがアルファベット順に表示されます。 テキストをクリックした場合、この一覧に\<参照されたアセンブリから選択\>、**成果物の種類の選択** ダイアログ ボックスが表示されます。 使用できるように、選択の詳細については、次を参照してください。[成果物の種類の選択 ダイアログ ボックスを使用する方法](../core/how-to-use-the-select-artifact-type-dialog-box.md)です。  
   
 ### <a name="select-source-and-destination-messages"></a>変換元のメッセージと変換先のメッセージの選択  
- この部分を使用して、**変換の構成**で選択したマップを構成するダイアログ ボックス、**新規または既存マップ ファイルですか?**セクションです。 選択した場合は**新しいマップ**セクションでは、このセクションで構成することによってそのマップを作成します。  
+ この部分を使用して、**変換の構成**で選択したマップを構成するダイアログ ボックス、**新規または既存マップ ファイルですか?** セクションです。 選択した場合は**新しいマップ**セクションでは、このセクションで構成することによってそのマップを作成します。  
   
  選択した場合**既存のマップ**、次の 2 つのいずれかの操作をこのセクションの内容を使用することができます。  
   

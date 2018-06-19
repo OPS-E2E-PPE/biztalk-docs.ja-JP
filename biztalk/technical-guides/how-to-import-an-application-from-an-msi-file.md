@@ -1,14 +1,14 @@
 ---
-title: "アプリケーションを .msi ファイルからインポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションを .msi ファイルからインポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a5472df9-9f1e-42d5-82e0-cc559caf56b3
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009547"
 ---
 # <a name="how-to-import-an-application-from-an-msi-file"></a>アプリケーションを .msi ファイルからインポートする方法
 ターゲット環境で BizTalk グループに .msi ファイルから BizTalk アプリケーションをインポートして、グループ内の個々 のホスト インスタンスでアプリケーションをインストールする、MSI のインポート ウィザードで、BizTalk Server 管理コンソールまたは BTSTask を使用することができます。 フル インポート プロセスでは、次の操作を実行します。  

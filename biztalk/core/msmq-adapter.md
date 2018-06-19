@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263146"
 ---
 # <a name="msmq-adapter"></a>MSMQ アダプター
 MSMQ アダプターでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] からメッセージキュー 4.0 を使用できます。 メッセージ キュー テクノロジを BizTalk Server と統合すると、一時的にオフラインになる可能性がある異種ネットワークやシステムを経由して、それぞれ別の時間に実行されるアプリケーションどうしがやりとりできるようになります。  

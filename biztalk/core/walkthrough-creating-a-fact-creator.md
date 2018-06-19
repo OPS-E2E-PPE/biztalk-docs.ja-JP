@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: ファクト作成コンポーネントの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: ファクト作成コンポーネントの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 041c8f73-c72e-43fd-8446-144cecdc95ef
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290306"
 ---
 # <a name="walkthrough-creating-a-fact-creator"></a>チュートリアル: ファクト作成コンポーネントの作成
 このチュートリアルは、ファクト作成コンポーネントを作成する手順を示します**POFactCreator**、テストに使用できる、 **ProcessPurchaseOrder**以前で作成したポリシーチュートリアル。  
@@ -42,20 +43,20 @@ ms.lasthandoff: 09/20/2017
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**プロジェクトの種類**|をクリックして**Visual c#**です。|  
+    |**プロジェクトの種類**|をクリックして**Visual c#** です。|  
     |**[テンプレート]**|をクリックして**クラス ライブラリ**です。|  
     |**名前**|型**POFactCreatorLib**です。|  
     |**場所**|指定**C:\BRE-Walkthroughs**場所として。|  
     |**[ソリューション名]**|型**POFactCreatorSol**です。|  
     |**ソリューションのディレクトリを作成します。**|ソリューション ファイルのディレクトリを作成するには、このチェック ボックスをオンにします。|  
   
-4.  **[OK]**をクリックします。 **POFactCreatorLib**プロジェクトがソリューション エクスプ ローラーで表示されます。 ソリューション エクスプ ローラーが表示されない場合はクリックして**ソリューション エクスプ ローラー**上、**ビュー**メニュー。  
+4.  **[OK]** をクリックします。 **POFactCreatorLib**プロジェクトがソリューション エクスプ ローラーで表示されます。 ソリューション エクスプ ローラーが表示されない場合はクリックして**ソリューション エクスプ ローラー**上、**ビュー**メニュー。  
   
 5.  [プロパティ] ウィンドウで、ファイルの名前変更**Class1.cs**を**POFactCreator.cs**です。  
   
 6.  ソリューション エクスプ ローラー ウィンドウで右クリック**参照**、クリックして**参照の追加**です。  
   
-7.  をクリックして**参照**に移動**C:\Program files \common files \microsoft BizTalk**、順にダブルクリック**[microsoft.ruleengine.dll]**です。  
+7.  をクリックして**参照**に移動**C:\Program files \common files \microsoft BizTalk**、順にダブルクリック **[microsoft.ruleengine.dll]** です。  
   
 8.  先頭に次の行を追加、 **POFactCreator.cs**後、既存のファイル`using`ステートメント。  
   
@@ -171,7 +172,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  **.NET アセンブリ**ダイアログ ボックスで、 **POFactCreatorLib**、順にクリック**OK**です。  
   
-5.  **バインドの選択**ダイアログ ボックスで、をクリックして**POFactCreator**で**POFactCreatorLib、10.0.0**、クリックして**[ok]**です。  
+5.  **バインドの選択**ダイアログ ボックスで、をクリックして**POFactCreator**で**POFactCreatorLib、10.0.0**、クリックして **[ok]** です。  
   
 6.  をクリックして**テスト**です。  
   

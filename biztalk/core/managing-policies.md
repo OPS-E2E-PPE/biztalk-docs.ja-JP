@@ -1,15 +1,15 @@
 ---
-title: "ポリシーの管理 |Microsoft ドキュメント"
-description: "リンクをインポートするには、発行、追加、配置、削除、または BizTalk Server でポリシーをエクスポート"
-ms.custom: 
+title: ポリシーの管理 |Microsoft ドキュメント
+description: リンクをインポートするには、発行、追加、配置、削除、または BizTalk Server でポリシーをエクスポート
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f7b3bf92-8868-4c35-953f-61a7f2edff9c
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971168"
 ---
 # <a name="manage-policies"></a>ポリシーを管理します。
 

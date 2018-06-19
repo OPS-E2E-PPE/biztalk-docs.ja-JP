@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーション デザイナーでの作業 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーション デザイナーでの作業 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, saving
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - orchestrations, naming conventions
 - orchestrations, deleting
 ms.assetid: 13e72b41-d9b6-4508-9a44-b3c7c1804f36
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975480"
 ---
 # <a name="working-in-orchestration-designer"></a>オーケストレーション デザイナーの操作
 BizTalk プロジェクトを起動すると、新しいオーケストレーションを作成したり、既存のオーケストレーションをプロジェクトに追加したりできるようになります。 オーケストレーションの作成と保存、プロジェクトへの既存のオーケストレーションの追加や削除、オーケストレーションの名前の変更、およびオーケストレーションのプロパティの設定については、次の手順を参照してください。  
@@ -63,7 +64,7 @@ BizTalk プロジェクトを起動すると、新しいオーケストレーシ
   
 ### <a name="to-save-an-orchestration"></a>オーケストレーションを保存するには  
   
--   **ファイル** メニューのをクリックして**保存\<オーケストレーション名\>**です。  
+-   **ファイル** メニューのをクリックして**保存\<オーケストレーション名\>** です。  
   
     > [!NOTE]
     >  オーケストレーション ファイルは、utf-8 として保存されます。  スキーマ、マップ、およびパイプラインは、utf-16 として保存されます。  
@@ -109,7 +110,7 @@ BizTalk プロジェクトを起動すると、新しいオーケストレーシ
     |[トランザクション識別子]|トランザクション オーケストレーションの一意の識別子です。|  
     |トランザクションの種類|オーケストレーションがアトミックのトランザクションであるか、長時間トランザクションであるか、またはトランザクションではないかを指定します。|  
     |型修飾子|オーケストレーション レベルの変数のスコープを指定します。<br /><br /> プライベート: このオーケストレーションへのアクセスが含まれているモジュールに制限されます。<br /><br /> パブリック: このオーケストレーションへのアクセスが制限されていません。<br /><br /> 内部-このオーケストレーションへのアクセスは、同じプロジェクト内のモジュールに制限されます。|  
-    |[型名]|含んでいるモジュールにおけるこのオーケストレーションの名前を指定します。 **注:**場合、ルート レベルの名前空間と同じである型名を使用するメッセージを定義して、変数を実行しようと Typename に基づいてそれらに対する割り当て操作時に、オーケストレーション デザイナーのエラーを受信可能性があります。 たとえば、[型名] を System と指定して、System.String のようなメッセージや変数を定義すると、エラーが発生することがあります。|  
+    |[型名]|含んでいるモジュールにおけるこのオーケストレーションの名前を指定します。 **注:** 場合、ルート レベルの名前空間と同じである型名を使用するメッセージを定義して、変数を実行しようと Typename に基づいてそれらに対する割り当て操作時に、オーケストレーション デザイナーのエラーを受信可能性があります。 たとえば、[型名] を System と指定して、System.String のようなメッセージや変数を定義すると、エラーが発生することがあります。|  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーション図形](../core/orchestration-shapes.md)   

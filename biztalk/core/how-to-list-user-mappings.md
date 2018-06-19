@@ -1,17 +1,17 @@
 ---
-title: "ユーザー マッピングを一覧表示する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ユーザー マッピングを一覧表示する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO maps], listing maps
 - maps [SSO], listing maps
 ms.assetid: f9b73785-3a59-45c8-9e88-d2d16b5a46aa
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972152"
 ---
 # <a name="how-to-list-user-mappings"></a>ユーザー マッピングを一覧表示する方法
 ここで示すコマンドを使用すると、指定したユーザーの既存のマッピングすべてを一覧表示できます。  
   
  この作業を行うには、SSO 管理者、アプリケーション管理者、SSO 関連管理者、またはユーザーである必要があります。  
   
- (E) として表示される有効なユーザー マッピング\<*ドメイン*\>\\*\<username\>*無効になっているときに、(D)としてユーザーマッピングが表示されます\<*ドメイン*\>\\*\<username\>*です。  
+ (E) として表示される有効なユーザー マッピング\<*ドメイン*\>\\*\<username\>* 無効になっているときに、(D)としてユーザーマッピングが表示されます\<*ドメイン*\>\\*\<username\>* です。  
   
 ### <a name="to-list-user-mappings-using-the-administration-utility"></a>管理ユーティリティを使用してユーザー マッピングを一覧表示するには  
   
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  次のいずれかの操作を行います。  
   
-    -   型**ssomanage – listmappings *\<ドメイン\>\\< ユーザー名\>*** 関連アプリケーション内の特定のユーザーがすべてのマッピングを一覧表示登録したが属している、where *\<ドメイン\>*は、Microsoft Windows ドメイン ユーザー アカウントと *\<username\>* は、ユーザー マッピングを一覧表示する Windows ユーザー名。 ユーザーが関連管理者または SSO 管理者である場合にこのコマンドを実行すると、すべての関連アプリケーションを対象に、そのユーザーのすべてのマッピングが一覧表示されます。  
+    -   型**ssomanage – listmappings *\<ドメイン\>\\< ユーザー名\>*** 関連アプリケーション内の特定のユーザーがすべてのマッピングを一覧表示登録したが属している、where *\<ドメイン\>* は、Microsoft Windows ドメイン ユーザー アカウントと *\<username\>* は、ユーザー マッピングを一覧表示する Windows ユーザー名。 ユーザーが関連管理者または SSO 管理者である場合にこのコマンドを実行すると、すべての関連アプリケーションを対象に、そのユーザーのすべてのマッピングが一覧表示されます。  
   
          または  
   

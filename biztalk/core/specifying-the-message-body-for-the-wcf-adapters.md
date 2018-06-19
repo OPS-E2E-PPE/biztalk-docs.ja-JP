@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF adapters, message bodies
 - SOAP messages, WCF adapters
 ms.assetid: b20364b7-0365-4636-b4d6-bde9c69b8dcb
-caps.latest.revision: ''
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25975536"
 ---
 # <a name="specifying-the-message-body-for-the-wcf-adapters"></a>WCF アダプタのメッセージ本文の指定
 使用することができます、 **メッセージ** ] タブの [WCF アダプターでは、受信 SOAP メッセージから BizTalk メッセージ本文を抽出する方法を指定して、BizTalk メッセージの本文は、送信 SOAP メッセージに配置されます。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 03/23/2018
   
  BizTalk メッセージ本文を作成する方法を指定するには、次のオプションのいずれかを選択、 **受信 BizTalk メッセージ本文** 」セクションを上記の図。  
   
--   **-エンベロープ\<Soap:envelope\>**です。 SOAP を使用して **エンベロープ** を BizTalk メッセージのボディ部を作成する受信メッセージの要素。 受信メッセージ全体が BizTalk メッセージ本文になります。 このオプションは、すべてのヘッダーを組み込んで BizTalk メッセージ本文を作成する場合に使用します。  
+-   **-エンベロープ\<Soap:envelope\>** です。 SOAP を使用して **エンベロープ** を BizTalk メッセージのボディ部を作成する受信メッセージの要素。 受信メッセージ全体が BizTalk メッセージ本文になります。 このオプションは、すべてのヘッダーを組み込んで BizTalk メッセージ本文を作成する場合に使用します。  
   
     > [!NOTE]
     >  SOAP ヘッダーはメッセージ コンテキストに配置されますが、自動的に昇格されません。 昇格は、カスタム パイプライン コンポーネントで行うことができます。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 03/23/2018
 > [!NOTE]
 >  **本文のパス式** プロパティには、XML の前方参照専用の処理に適した式がサポートされている XPath のみです。 このプロパティの使用可能な XPath 式の詳細についてを参照してください"ベストの両方長所:: 結合 XPath で、XmlReader" [ http://go.microsoft.com/fwlink/?LinkID=75701](http://go.microsoft.com/fwlink/?LinkID=75701)です。  
   
- 場合、 **パス--本文のパスで見つかったコンテンツ** オプションを選択して **ノード エンコード** プロパティに設定されて **文字列**, 、WCF アダプタは、utf-8 でエンコードされた文字データが一致したノードにあるを期待します。 受信メッセージが含まれる場合など、XML の特殊文字の文字データをエスケープ\<と\>、WCF アダプターが BizTalk メッセージのボディ部を作成するときに、エスケープ文字データを復元します。 たとえば、一致するノードが文字データをようにエスケープ**&lt;FirstName&gt;CONTOSO&lt;/FirstName&gt;** 、WCF アダプタ作成**\<FirstName\>CONTOSO\</FirstName\>**受信 biztalk メッセージ本文。  
+ 場合、 **パス--本文のパスで見つかったコンテンツ** オプションを選択して **ノード エンコード** プロパティに設定されて **文字列**, 、WCF アダプタは、utf-8 でエンコードされた文字データが一致したノードにあるを期待します。 受信メッセージが含まれる場合など、XML の特殊文字の文字データをエスケープ\<と\>、WCF アダプターが BizTalk メッセージのボディ部を作成するときに、エスケープ文字データを復元します。 たとえば、一致するノードが文字データをようにエスケープ**&lt;FirstName&gt;CONTOSO&lt;/FirstName&gt;** 、WCF アダプタ作成**\<FirstName\>CONTOSO\</FirstName\>** 受信 biztalk メッセージ本文。  
   
  場合、 **パス--本文のパスで見つかったコンテンツ** オプションを選択して、 **ノード エンコード** プロパティに設定されて **16 進数** または **Base64**, 、一致するノードが、有効なことができますが **BinHex** または **Base64** シーケンスです。 一致するノードに無効なシーケンスがある場合は、WCF クライアントが受け取る **FaultException**, 、エラー メッセージは、BizTalk Server コンピューターのイベント ログに記録、およびメッセージは中断されません。  
   

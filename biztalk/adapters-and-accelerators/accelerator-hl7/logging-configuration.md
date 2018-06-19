@@ -1,11 +1,11 @@
 ---
-title: "ログの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: ログの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, auditing
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - logging, configuring
 - auditing, configuring
 ms.assetid: 5cd7aec1-bd38-4d37-9a79-b01eeb89337d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004539"
 ---
 # <a name="logging-configuration"></a>ログの構成
 同時に、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server と[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]医療機関病院、クリニック、看護住宅などのトランザクションとデジタル エンタープライズ アプリケーション統合 (EAI) 通信をセキュリティで保護を提供します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーションのアクティビティおよびトランザクション処理の調整、動的にメッセージをルーティング、検証、およびデータを変換する機能を提供し、さまざまなアダプタ経由で転送します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]米国規格協会 ANSI accredited ヘルス レベル 7 (HL7) をリアルタイムで医療のデータを交換プロバイダーのネットワークで医療/管理用のアプリケーションによって使用される標準のメッセージングをサポートします。  

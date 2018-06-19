@@ -1,14 +1,14 @@
 ---
-title: "ジェネリック型とジェネリック メソッドのサポート |Microsoft ドキュメント"
-ms.custom: 
+title: ジェネリック型とジェネリック メソッドのサポート |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc6b5b51-e084-4828-ad25-9209aa74dc6f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972320"
 ---
 # <a name="support-for-generic-types-and-generic-methods"></a>ジェネリック型とジェネリック メソッドのサポート
 ルール エンジンは、特殊なジェネリック型と特殊なジェネリック メソッドについて、ルール内での使用をサポートしています。 ジェネリック型とジェネリック メソッド自体については、ルール内での使用をサポートしていません。 たとえば、ビジネス ルールで行うこともできます**リスト**\<*int*\>、ではなく**リスト**\<T\> (、から**System.Collections.Generic** .NET クラス ライブラリの名前空間)。 現在、ビジネス ルール作成ツールは、特殊なジェネリック型と特殊なジェネリック メソッドを使用したルールの作成をサポートしていません。 ルール エンジン オブジェクト モデルを使用し、プログラムによってルールを作成する必要があります。 次のサンプル コードを使用する方法を示しています、**リスト**のビジネス ルールに汎用クラス。  

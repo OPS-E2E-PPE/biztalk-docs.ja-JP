@@ -1,18 +1,18 @@
 ---
-title: "ビジネス ルール エンジンのセキュリティに関する推奨事項 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ルール エンジンのセキュリティに関する推奨事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, business rules
 - Business Rules Framework, security
 - business rules, security
 ms.assetid: d5df1cd0-112a-4c72-b95d-cbcd1bc6a2c3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231946"
 ---
 # <a name="business-rule-engine-security-recommendations"></a>ビジネス ルール エンジンのセキュリティに関する推奨事項
 ビジネス ルール エンジンは、ビジネス ルール フレームワークのランタイム コンポーネントです。 ビジネス ルール フレームワークを使用すると、非常に判読しやすく意味論的にも充実した宣言型のルールを、任意のビジネス オブジェクト (.NET コンポーネント)、XML ドキュメント、またはデータベース テーブルに接続することができます。 ビジネス ルール フレームワークの詳細については、次を参照してください。[を使用してビジネス ルールの作成と](../core/creating-and-using-business-rules.md)です。 ビジネス ルール エンジンの詳細については、次を参照してください。[ルール エンジン](../core/rule-engine.md)です。  

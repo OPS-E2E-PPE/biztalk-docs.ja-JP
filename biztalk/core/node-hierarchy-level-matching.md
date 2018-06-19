@@ -1,11 +1,11 @@
 ---
-title: "ノード階層レベルの照合 |Microsoft ドキュメント"
-ms.custom: 
+title: ノード階層レベルの照合 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Field nodes
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - compiler directives, flattening source hierarchies
 - maps, processing
 ms.assetid: 5ba1ac77-0e70-4c58-9b8c-1b379dbbb3bd
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264762"
 ---
 # <a name="node-hierarchy-level-matching"></a>ノード階層レベルの照合
 BizTalk マッパーでは、リンク プロパティを構成することによって、コンパイラによる送信元スキーマと送信先スキーマ間のノード階層の照合方法を制御できます。 送信元スキーマのフィールドと送信先スキーマのフィールド間にリンクを作成すると、BizTalk マッパーにより自動的にコンパイラ リンクが追加されます。 コンパイラ リンクは、選択した照合方法に基づいて追加されます。  

@@ -1,11 +1,11 @@
 ---
-title: "XML アセンブラー パイプライン コンポーネントで処理命令 |Microsoft ドキュメント"
-ms.custom: 
+title: XML アセンブラー パイプライン コンポーネントで処理命令 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XMLNorm.ProcessingInstructionOption property
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - envelopes, XML Assembler [pipeline component]
 - pipeline components, XML Assembler
 ms.assetid: d8ea453e-3b20-417d-bf25-9d424b0150fd
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265154"
 ---
 # <a name="processing-instructions-in-the-xml-assembler-pipeline-component"></a>XML アセンブラー パイプライン コンポーネントで処理命令
 処理命令は、XML ドキュメントを処理するアプリケーションに対する情報を提供します。 この情報には、ドキュメントの処理方法や表示方法などの命令が含まれます。  

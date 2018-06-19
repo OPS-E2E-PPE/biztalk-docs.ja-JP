@@ -1,11 +1,11 @@
 ---
-title: "消費済み WCF サービスでの SOAP ヘッダー |Microsoft ドキュメント"
-ms.custom: 
+title: 消費済み WCF サービスでの SOAP ヘッダー |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - consuming, WCF services
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - WCF services, SOAP headers
 - SOAP headers, consuming [WCF services]
 ms.assetid: 0582ee26-b549-4b50-b365-36824010dab0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277490"
 ---
 # <a name="soap-headers-with-consumed-wcf-services"></a>消費済み WCF サービスでの SOAP ヘッダー
 カスタム SOAP ヘッダーで WCF サービスにメッセージを送信するこれらのヘッダーで設定しなければなりません (たとえば式図形) 内のオーケストレーションとパイプライン コンポーネントには (コード)、コンテキスト プロパティとして**OutboundCustomHeaders**です。 このコンテキスト プロパティがターゲットの名前空間内に**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**、カスタム SOAP ヘッダーの文字列表現が含まれています。  

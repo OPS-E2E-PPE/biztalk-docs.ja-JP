@@ -1,15 +1,15 @@
 ---
-title: "ビジネス アクティビティを使用して監視 |Microsoft ドキュメント"
-description: "ビジネス アクティビティ監視 (BAM) BizTalk Server で作業を開始します。"
-ms.custom: 
+title: ビジネス アクティビティを使用して監視 |Microsoft ドキュメント
+description: ビジネス アクティビティ監視 (BAM) BizTalk Server で作業を開始します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8e01f54f-1d7f-4aed-ad14-2aeae716fd58
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287002"
 ---
 # <a name="using-business-activity-monitoring"></a>ビジネス アクティビティ監視の使用
 ビジネス アクティビティ監視 (BAM) では、IT 環境や異種 IT 実装には関係なく、ビジネス プロセスを表示できます。 この点が、メッセージとインスタンスの監視などの運用の監視とは異なります。 BAM の重要な点は、できる限りリアルタイムに近い状態 (待機時間ゼロともいいます) でビジネス データを表示できることです。  

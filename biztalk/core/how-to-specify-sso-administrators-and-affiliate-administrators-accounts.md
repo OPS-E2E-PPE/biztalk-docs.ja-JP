@@ -18,7 +18,7 @@ helpviewer_keywords:
 - managing [SSO], disabling
 - SSO, administrator accounts
 ms.assetid: 6c300e09-b781-45de-b2da-b1083164a1c0
-caps.latest.revision: ''
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25972720"
 ---
 # <a name="how-to-specify-sso-administrators-and-affiliate-administrators-accounts"></a>SSO 管理者を指定し、関連管理者アカウント方法
 エンタープライズ シングル サインオン (SSO) 管理者アカウントと関連管理者アカウントは、ホスト グループまたは個別のアカウントにすることができます。 これらのアカウントは、SSO システムを構成する前に作成しておく必要があります。  

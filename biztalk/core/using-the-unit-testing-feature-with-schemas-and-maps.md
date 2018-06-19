@@ -1,14 +1,14 @@
 ---
-title: "単体テストのスキーマおよびマップの機能を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: 単体テストのスキーマおよびマップの機能を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 29bcb159-ffdb-44b9-a3ff-565973d41797
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288994"
 ---
 # <a name="using-the-unit-testing-feature-with-schemas-and-maps"></a>スキーマとマップを含む単体テスト機能の使用
 このトピックでは、単体テスト機能を使用してスキーマとマップの単体テストを HelloWorld オーケストレーション サンプルに追加する方法を示します。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  **新しいテスト プロジェクト** ダイアログ ボックスで、プロジェクト名としてのままにして**TestProject1**  をクリック**作成**です。  
   
-9. **単体テストの作成** ダイアログ ボックスで、種類を展開し、選択、 **POSchema()**下でコンス トラクター、 **poschema()**ノード。 選択も**POToInvoice()**下でコンス トラクター、 **Microsoft.Samples.BizTalk.HelloWorld.POToInvoice**ノード。 次の図は、選択する要素を示しています。 次に、選択した場合、キーを押して**OK**です。  
+9. **単体テストの作成** ダイアログ ボックスで、種類を展開し、選択、 **POSchema()** 下でコンス トラクター、 **poschema()** ノード。 選択も**POToInvoice()** 下でコンス トラクター、 **Microsoft.Samples.BizTalk.HelloWorld.POToInvoice**ノード。 次の図は、選択する要素を示しています。 次に、選択した場合、キーを押して**OK**です。  
   
      ![](../core/media/schemaandmapsunittestwizardselection.gif "SchemaAndMapsUnitTestWizardSelection")  
   
@@ -123,7 +124,7 @@ ms.lasthandoff: 09/20/2017
 5.  テストが不合格の場合、[テスト結果] ウィンドウのテストをダブルクリックして、不合格の原因となったアサートまたは例外を確認します。  
   
 ## <a name="test-code-summary"></a>テスト コードのまとめ  
- 単体テストが有効にすると、 **HelloWorld**プロジェクト、c# のクラスに関連付けられている**POSchema.xsd**から派生した、 **Microsoft.BizTalk.TestTools.Schema.TestableSchemaBase**クラスです。 **[Poschemainstancevalidationtest]**メソッド**TestProject1**使用、 **ValidateInstance**のメソッド、 **POSchema**にクラスPO スキーマに対する SamplePOInput.xml を検証します。  
+ 単体テストが有効にすると、 **HelloWorld**プロジェクト、c# のクラスに関連付けられている**POSchema.xsd**から派生した、 **Microsoft.BizTalk.TestTools.Schema.TestableSchemaBase**クラスです。 **[Poschemainstancevalidationtest]** メソッド**TestProject1**使用、 **ValidateInstance**のメソッド、 **POSchema**にクラスPO スキーマに対する SamplePOInput.xml を検証します。  
   
  同様に、単体テストが有効な場合の**HelloWorld**プロジェクト、c# のクラスに関連付けられている、 **POToInvoice.btm**マップの派生元の**Microsoft.BizTalk.TestTools.Mapper.TestableMapBase**クラスです。 **POToInvoiceMaptest**使用する方法、 **TestMap**のメソッド、 **POToInvoice**同じ SamplePOInput.xml メッセージを使用してマップをテストするクラス。 これにより、SampleInvoiceOutput.xml が HelloWorld ディレクトリで作成されました。  
   

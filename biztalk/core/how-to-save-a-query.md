@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255378"
 ---
 # <a name="how-to-save-a-query"></a>クエリを保存する方法
 後で再利用するためにクエリを保存できます。 既定では、保存されたクエリが格納されている、**マイ ドキュメント**を作成してそれらを保存したユーザーのフォルダーです。  

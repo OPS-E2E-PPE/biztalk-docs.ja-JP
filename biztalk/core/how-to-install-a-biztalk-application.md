@@ -13,7 +13,7 @@ helpviewer_keywords:
 - installing, warnings
 - applications, installing
 ms.assetid: 99ee0b1a-d46a-4fb6-802b-6827dc740418
-caps.latest.revision: ''
+caps.latest.revision: 56
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "26010539"
 ---
 # <a name="how-to-install-a-biztalk-application"></a>BizTalk アプリケーションをインストールする方法
 ここでは、ローカル コンピューターにアプリケーションをインストールする方法について説明します。ローカル コンピューターにアプリケーションをインストールするには、Windows インターフェイスでアプリケーションの Windows インストーラー (.msi) ファイルをダブルクリックする方法と、コマンド ラインから msiexec を実行する方法があります。 」の説明に従って、インポート ウィザードの最後の手順として、インストール ウィザードに開始することもできます[を BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)です。  

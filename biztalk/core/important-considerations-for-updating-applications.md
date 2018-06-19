@@ -1,11 +1,11 @@
 ---
-title: "アプリケーションを更新するための重要な考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: アプリケーションを更新するための重要な考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - updating, applications
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - planning, updating
 - updating, planning
 ms.assetid: e7690bdf-943d-4bb6-b8cd-a6841b722d40
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257746"
 ---
 # <a name="important-considerations-for-updating-applications"></a>アプリケーションの更新に関する重要な考慮事項
 アプリケーション (特に実稼働環境で実行されているアプリケーション) を更新する前に考慮する必要のある重要事項を以下に示します。  

@@ -1,14 +1,14 @@
 ---
-title: "[メッセージ カウント] データベースの制限のしきい値に含まれる保留メッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: '[メッセージ カウント] データベースの制限のしきい値に含まれる保留メッセージ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9eb708bb-6d6d-4494-8b8d-67aa44800a20
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278130"
 ---
 # <a name="suspended-messages-are-included-in-the-message-count-in-database-throttling-threshold"></a>[データベースのメッセージ カウント] の制限のしきい値に含まれる保留メッセージ
 既定では、ホスト**DB 内の数をメッセージ**は、次の状況で制限の条件をトリガーする 50,000 値に設定されている制限のしきい値。  

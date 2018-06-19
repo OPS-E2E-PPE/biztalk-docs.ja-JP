@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 0491ac0f26b19a96d11cf633263010026961c58b
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013481"
 ---
 # <a name="adding-the-adapter-to-biztalk-server"></a>BizTalk Server にアダプターを追加します。
 Microsoft BizTalk Adapter for JD Edwards OneWorld には、受信ハンドラーと送信ハンドラーの両方のフォルダーが含まれています。 送信ハンドラー フォルダーには、BizTalkServerApplication が含まれています。 BizTalk Adapter for JD Edwards OneWorld は作成可能です。BizTalk Server とインプロセスで実行され、分離されたホスト プロセスでは実行されません。  
@@ -23,14 +24,14 @@ Microsoft BizTalk Adapter for JD Edwards OneWorld には、受信ハンドラー
   
 4.  **アダプター プロパティ**ダイアログ ボックスで、アダプターの名前を入力します。 たとえば、JDEdwards です。  
   
-5.  選択**[jdeoneworld]**から、**アダプター**一覧をクリックして**OK**です。  
+5.  選択 **[jdeoneworld]** から、**アダプター**一覧をクリックして**OK**です。  
   
 ## <a name="verifying-the-adapter"></a>アダプターの確認  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、できることを確認するを確認して、アダプターが正しく機能している、**論理システム**ウィンドウです。 初回のインストレーションでは、このウィンドウは空です。これは、サーバー システムへの接続が未確立で、論理システムが作成されていないからです。  
   
 #### <a name="to-verify-that-the-adapter-is-running-correctly"></a>アダプターが正常に動作していることを確認するには  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開**プラットフォームの設定**、展開**アダプター**、し、 **[Jdeoneworld]**です。  
+1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開**プラットフォームの設定**、展開**アダプター**、し、 **[Jdeoneworld]** です。  
   
 2.  詳細ウィンドウで右クリック**BizTalkServerApplication**を選択して**プロパティ**です。  
   

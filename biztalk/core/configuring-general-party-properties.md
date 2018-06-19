@@ -1,14 +1,14 @@
 ---
-title: "パーティの全般プロパティの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: パーティの全般プロパティの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bbabf7e5-6388-4900-ad47-cf5d5af396b5
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005651"
 ---
 # <a name="configuring-general-party-properties"></a>パーティの全般プロパティの構成
 パーティまたは取引先は、ビジネス リレーションシップの参加組織を表します。 パーティのプロパティには次の情報が含まれます。  
@@ -41,8 +42,8 @@ ms.lasthandoff: 12/01/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**名前**|パーティ名を入力します。|  
-    |**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理します。**|パーティが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をホストしている同じ取引先を表すように指定する場合は、このチェック ボックスをオンにします。 **重要:**に付属する既定のパイプラインを使用するソリューション 2 パーティ TPM の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、少なくとも 1 つのパーティの場合は、このチェック ボックスを選択する必要があります。 **注:**このチェック ボックスをオフにすると、一部のプロパティは、このパーティのアグリーメントの作成中に無効になります。|  
-    |**追加のプロパティ – 名前/値**|パーティに関する任意の情報を格納する、名前と値の組み合わせを入力します。 名前と値の組み合わせは、必要な数だけ追加できます。 **注:**なんらかの処理の名前と値のペアが、BizTalk Server によって使用されません。 このデータは、情報提供のみを目的のはします。|  
+    |**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理します。**|パーティが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をホストしている同じ取引先を表すように指定する場合は、このチェック ボックスをオンにします。 **重要:** に付属する既定のパイプラインを使用するソリューション 2 パーティ TPM の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、少なくとも 1 つのパーティの場合は、このチェック ボックスを選択する必要があります。 **注:** このチェック ボックスをオフにすると、一部のプロパティは、このパーティのアグリーメントの作成中に無効になります。|  
+    |**追加のプロパティ – 名前/値**|パーティに関する任意の情報を格納する、名前と値の組み合わせを入力します。 名前と値の組み合わせは、必要な数だけ追加できます。 **注:** なんらかの処理の名前と値のペアが、BizTalk Server によって使用されません。 このデータは、情報提供のみを目的のはします。|  
     |**Del**|選択した名前と値の組み合わせを削除する場合にクリックします。|  
   
 3.  **送信ポート**のページ、**パーティ プロパティ** ダイアログ ボックスで、次の操作です。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 12/01/2017
     |**拇印**|パーティの解決および署名の確認に使用される秘密キー証明書の拇印を表示します。 証明書の拇印には、HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH、H は 16 進数字 (0 ~ 9 の数字) または a ~ F の文字の形式があります。|  
     |**証明書を削除します。**|表示されている証明書を削除する場合にクリックします。|  
   
-5.  をクリックして**適用**、プロパティを受け入れるか、をクリックする**[ok]**構成設定を完了します。 どちらの操作では、設定を検証します。  
+5.  をクリックして**適用**、プロパティを受け入れるか、をクリックする **[ok]** 構成設定を完了します。 どちらの操作では、設定を検証します。  
   
 ## <a name="see-also"></a>参照  
  [EDI のプロパティの構成](../core/configuring-edi-properties.md)

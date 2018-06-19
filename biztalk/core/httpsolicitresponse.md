@@ -1,17 +1,17 @@
 ---
-title: "HTTPSolicitResponse |Microsoft ドキュメント"
-ms.custom: 
+title: HTTPSolicitResponse |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP adapters, examples
 - examples, HTTP adapters
 ms.assetid: b149544e-3279-4ac9-b31f-fff3e41ec8e7
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973128"
 ---
 # <a name="httpsolicitresponse"></a>HTTPSolicitResponse
 HTTPSolicitResponse サンプルは、オーケストレーション データの処理に ASP.NET アプリケーションを利用する Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションを作成する方法を示します。 このサンプルでは、オーケストレーションは要求 - 応答のポートを利用して、ASP.NET アプリケーションにメッセージを送信し、応答を受信します。 HTTP アダプターを使用することにより、BizTalk Server オーケストレーションと ASP.NET アプリケーションを統合できます。 詳細については、次を参照してください。 [HTTP アダプター](../core/http-adapter.md)です。  
@@ -74,7 +75,7 @@ HTTPSolicitResponse サンプルは、オーケストレーション データ�
     -   このサンプルで使用するマルチプライア ASP.NET アプリケーションをコンパイルして構成します。  
   
         > [!NOTE]
-        >  IIS マネージャーでアプリケーション プールを作成中に次のように設定します。、 **DefaultAppPool** .NET Framework バージョンを**.Net Framework v4.0**です。  
+        >  IIS マネージャーでアプリケーション プールを作成中に次のように設定します。、 **DefaultAppPool** .NET Framework バージョンを **.Net Framework v4.0**です。  
   
     -   このサンプルで使用する [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションをコンパイルし、展開します。  
   

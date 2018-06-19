@@ -1,14 +1,14 @@
 ---
-title: "SOAP アダプターと証明書を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: SOAP アダプターと証明書を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 20ee05c5-9cea-456d-bff6-49dd249f0ff4
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298282"
 ---
 # <a name="how-to-configure-certificates-with-a-soap-adapter"></a>SOAP アダプターと証明書を構成する方法
 SOAP 送信アダプタを受け付けるか、クライアント証明書を必要とするサーバーとの接続をセキュリティで保護できます。 クライアント証明書を指定した場合、SOAP 送信アダプタではクライアント証明書を必要とするか受け付けるサーバーに接続するときに、この証明書を使用します。 クライアント証明書を指定しないと、移行先サーバーには、クライアント証明書が必要です、送信者が認証されていないと、SOAP 送信アダプターは、メッセージの送信に失敗し、標準の再試行ロジックに従っています。  
@@ -40,4 +41,4 @@ SOAP 送信アダプタを受け付けるか、クライアント証明書を必
   
 5.  **SSL クライアント証明書の拇印**、適切な拇印を入力します。  
   
-6.  をクリックして**[ok]**、順にクリック**OK**もう一度です。
+6.  をクリックして **[ok]**、順にクリック**OK**もう一度です。

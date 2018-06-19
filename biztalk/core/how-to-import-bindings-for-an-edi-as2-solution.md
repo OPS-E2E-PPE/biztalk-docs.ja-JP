@@ -1,14 +1,14 @@
 ---
-title: "EDI AS2 ソリューションのバインドをインポートする方法 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI AS2 ソリューションのバインドをインポートする方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b918fa2-44f2-4f57-95af-36858cea0d86
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007595"
 ---
 # <a name="how-to-import-bindings-for-an-edi-as2-solution"></a>EDI AS2 ソリューションのバインドをインポートする方法
 このトピックでは、EDI または AS2 ソリューションの構成を別のコンピューターにインポートする方法について説明します。 EDI/AS2 ソリューションの展開は、BizTalk アプリケーションの展開に統合されています。 この機能は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールおよび BTSTask コマンド ライン ツールから利用できます。  

@@ -1,15 +1,15 @@
 ---
-title: "マップの管理 |Microsoft ドキュメント"
-description: "リンクを表示するマップを削除するなど、BizTalk server マップに関する作業を"
-ms.custom: 
+title: マップの管理 |Microsoft ドキュメント
+description: リンクを表示するマップを削除するなど、BizTalk server マップに関する作業を
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0e8e3057-5a9f-4b6b-b6ee-c71b7e6a51ac
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263130"
 ---
 # <a name="manage-maps"></a>マップを管理します。
 

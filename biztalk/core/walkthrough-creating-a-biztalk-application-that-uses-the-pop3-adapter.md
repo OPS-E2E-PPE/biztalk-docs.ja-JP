@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル: は、POP3 アダプタを使用する BizTalk アプリケーションの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: は、POP3 アダプタを使用する BizTalk アプリケーションの作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tutorials, POP3 adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - POP3 adapters, tutorials
 - configuring [POP3 adapters], Outlook Express
 ms.assetid: b44c3b1d-7b4f-425c-831a-1ce5f6379595
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975944"
 ---
 # <a name="walkthrough-creating-a-biztalk-application-that-uses-the-pop3-adapter"></a>チュートリアル: POP3 アダプターを使用する BizTalk アプリケーションの作成
 このセクションでは、POP3 アダプタを使用する簡単な Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを作成する手順について説明します。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="create-the-receive-location"></a>受信場所を作成します。  
  受信場所を作成するには、次の手順を実行します。  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールが既定のデータベースをダブルクリックして **\<**  *machine_name***\>です。>.biztalkmgmtdb.dbo**ここで、 *machine_name*お使いのコンピューターの名前を指定します。 をクリックして**アプリケーション**をクリックし、 **[biztalk.application.1]**です。  
+1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールが既定のデータベースをダブルクリックして **\<**  *machine_name***\>です。>.biztalkmgmtdb.dbo**ここで、 *machine_name*お使いのコンピューターの名前を指定します。 をクリックして**アプリケーション**をクリックし、 **[biztalk.application.1]** です。  
   
 2.  右クリック**受信ポート**をクリックして**新規**、 をクリックして**一方向受信ポート**です。  
   
@@ -93,7 +94,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ファイル システムにフォルダーを作成します。 このフォルダが送信ポートの送信先になります。  
   
-2.  右クリック**送信ポート**、] をクリックして**、[新規**クリックして**静的な一方向送信ポート。**  
+2.  右クリック**送信ポート**、] をクリックして **、[新規**クリックして**静的な一方向送信ポート。**  
   
 3.  **送信ポートのプロパティ** ダイアログ ボックスで、**トランスポートの種類**ボックスで、**ファイル**です。  
   
@@ -101,13 +102,13 @@ ms.lasthandoff: 11/28/2017
   
 5.  **トランスポート**ボックスで、クリックして、**構成**ボタンをクリックします。  
   
-6.  横に、**コピー先フォルダー**ボックスで、をクリックして**参照**、上に作成したフォルダーを選択して、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、順にクリック**[ok]**です。  
+6.  横に、**コピー先フォルダー**ボックスで、をクリックして**参照**、上に作成したフォルダーを選択して、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、順にクリック **[ok]** です。  
   
-7.  **ファイル名**ボックスに、入力**%MessageID%.txt**、順にクリック**OK**です。  
+7.  **ファイル名**ボックスに、入力 **%MessageID%.txt**、順にクリック**OK**です。  
   
 8.  **送信パイプライン**ボックスで、 **Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**です。  
   
-9. **[フィルター]**をクリックします。  
+9. **[フィルター]** をクリックします。  
   
 10. **プロパティ**ボックスで、 **BTS です。ReceivePortName**です。  
   
@@ -133,9 +134,9 @@ ms.lasthandoff: 11/28/2017
   
 4.  **表示名**ボックスで、表示名を入力し、をクリックして**次**です。  
   
-5.  **インターネット電子メール アドレス**] ダイアログ ボックスで、**電子メール アドレス**ボックスに、入力**EmailTest @< domain_name >**、クリックして**[次へ**.  
+5.  **インターネット電子メール アドレス**] ダイアログ ボックスで、**電子メール アドレス**ボックスに、入力**EmailTest @< domain_name >**、クリックして **[次へ**.  
   
-     適切な値を入力することを確認*< domain_name >*です。 この値は、Windows サーバーの POP3 サービスの管理インターフェイスでこのメールボックスを作成したドメインの名前と一致する必要があります。  
+     適切な値を入力することを確認 *< domain_name >* です。 この値は、Windows サーバーの POP3 サービスの管理インターフェイスでこのメールボックスを作成したドメインの名前と一致する必要があります。  
   
 6.  **電子メール サーバー名** ダイアログ ボックスで、**受信メール**と**発信メール**ボックスに、サーバー名または Windows server の IP アドレスを入力し、 をクリックして**次へ**です。  
   
@@ -149,7 +150,7 @@ ms.lasthandoff: 11/28/2017
   
 11. **インターネット アカウント**ダイアログ ボックスで、をクリックして**閉じる**です。  
   
-12. Outlook Express を使用してテスト メッセージを作成する型**テスト**に、**サブジェクト**フィールド、および種類**EmailTest @< domain_name >**に、 **に**フィールドです。  
+12. Outlook Express を使用してテスト メッセージを作成する型**テスト**に、**サブジェクト**フィールド、および種類**EmailTest @< domain_name >** に、 **に**フィールドです。  
   
 13. をクリックして**送信**テスト メッセージを送信します。 確実に、Outlook Express メッセージを送信テストすぐに、をクリックして、**送受信**Outlook Express ツールバーのボタンをクリックします。  
   

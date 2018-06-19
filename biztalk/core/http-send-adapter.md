@@ -1,14 +1,14 @@
 ---
-title: "HTTP 送信アダプタ |Microsoft ドキュメント"
-ms.custom: 
+title: HTTP 送信アダプタ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e69308b4-421f-4d7c-b9bb-ee086df03272
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257978"
 ---
 # <a name="http-send-adapter"></a>HTTP 送信アダプタ
 HTTP 送信アダプターは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] からメッセージを取得して、HTTP POST 要求で送信先 URL に送信します。 メッセージの内容は BizTalk メッセージ オブジェクトのボディ部から取得します。 BizTalk メッセージ オブジェクトの他のすべての部分は無視されます。  

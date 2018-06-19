@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25976328"
 ---
 # <a name="settings-that-can-be-modified-to-improve-network-performance"></a>ネットワーク パフォーマンスを向上するように変更する設定
 このトピックでは、ネットワーク パフォーマンスに影響する推奨値の説明を提供します。  

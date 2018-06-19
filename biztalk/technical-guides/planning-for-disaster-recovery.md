@@ -1,14 +1,14 @@
 ---
-title: "障害回復の計画 |Microsoft ドキュメント"
-ms.custom: 
+title: 障害回復の計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a33e8875-cfde-4a60-9dab-fc6bb3ac4f1c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008989"
 ---
 # <a name="planning-for-disaster-recovery"></a>災害時の復旧計画
 このトピックでは、災害復旧の要件をアプリケーション チームと BizTalk Server 用の手順のガイダンスを提供します。 Microsoft BizTalk Server の構成と処理の情報を格納する[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]です。 BizTalk Server の高可用性と災害復旧処理は、高可用性と災害復旧の機能によって達成[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]です。  

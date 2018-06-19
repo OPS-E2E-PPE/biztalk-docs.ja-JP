@@ -1,14 +1,14 @@
 ---
-title: "受信 EDI メッセージのデータを格納する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 受信 EDI メッセージのデータを格納する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f8cbcb96-c0af-4f41-b844-f0e684a4af7c
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971560"
 ---
 # <a name="how-data-is-stored-for-inbound-edi-messages"></a>受信 EDI メッセージのデータ格納方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は次の操作を実行して、受信インターチェンジと、そのインターチェンジに対する応答として送信される受信確認の状態レポート エントリを生成します。  

@@ -1,11 +1,11 @@
 ---
-title: "Contoso LOB スキーマとマップの作成 |Microsoft ドキュメント"
-ms.custom: 
+title: Contoso LOB スキーマとマップの作成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, LOB
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - private process tutorial, creating maps
 - maps
 ms.assetid: fda8852a-51d8-4987-a187-834883a06d9b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004339"
 ---
 # <a name="creating-the-contoso-lob-schemas-and-maps"></a>Contoso LOB スキーマとマップの作成
 ここでは、Contoso 組織が ERP システムで使用する基幹業務 (LOB) スキーマを作成します。 使用する、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server マッパー ツールを Contoso の内部メッセージおよび受信と送信の RosettaNet メッセージの種類間のデータ変換を作成します。  

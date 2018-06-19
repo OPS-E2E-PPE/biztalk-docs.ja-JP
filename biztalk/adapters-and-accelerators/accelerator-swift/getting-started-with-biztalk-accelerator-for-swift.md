@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005211"
 ---
 # <a name="getting-started-with-biztalk-accelerator-for-swift"></a>入門 BizTalk Accelerator 用 SWIFT
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]スキーマ、ルール、および内部アプリケーションと SWIFT メッセージの統合に役立つ関連ツールのセットを提供します。 A4SWIFT 必要があります[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]使用して BizTalk Server[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]コンポーネントと解析、検証、ルールの処理、スキーマを実装する機能、およびオーケストレーションです。 A4SWIFT の複数の財務 (FIN) メッセージ、メッセージ修復し、新しい送信、および FIN 対応調整を含むファイルのバッチ解除する処理も実装します。  

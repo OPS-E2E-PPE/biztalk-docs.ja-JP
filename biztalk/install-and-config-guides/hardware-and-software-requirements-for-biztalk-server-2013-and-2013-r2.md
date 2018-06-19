@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 2013 および 2013 R2 のハードウェアおよびソフトウェア |Microsoft ドキュメント"
-description: "BizTalk Server 2013 および 2013 R2 をインストールするソフトウェアの前提条件とサポートされているバージョンを一覧表示します。"
-ms.custom: 
+title: BizTalk Server 2013 および 2013 R2 のハードウェアおよびソフトウェア |Microsoft ドキュメント
+description: BizTalk Server 2013 および 2013 R2 をインストールするソフトウェアの前提条件とサポートされているバージョンを一覧表示します。
+ms.custom: ''
 ms.date: 10/09/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b15dd23c-c899-43fb-b2da-f8ac55c055bf
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 85e816bcdeb3d66ea5018cf88aea7059f74f7d80
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/10/2017
+ms.locfileid: "22627607"
 ---
 # <a name="hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2"></a>BizTalk Server 2013 および 2013 R2 のハードウェア/ソフトウェア要件
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013 および [!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)] の要件を示します。  

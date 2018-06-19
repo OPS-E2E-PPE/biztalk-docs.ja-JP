@@ -1,11 +1,11 @@
 ---
-title: "オペレーション タスク |Microsoft ドキュメント"
-ms.custom: 
+title: オペレーション タスク |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BizTalk Accelerator for SWIFT, managing
 - administering
 ms.assetid: 555335a0-5a85-4498-b34f-97bb508ea5b1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004291"
 ---
 # <a name="operational-tasks"></a>オペレーション タスク
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 1 つまたは複数のサーバーと一連の財務ビジネス プロセスを自動化して、SWIFT FIN 標準を使用してメッセージ交換を容易にすることでエンタープライズ アプリケーション統合 (EAI) のツールが含まれます。  

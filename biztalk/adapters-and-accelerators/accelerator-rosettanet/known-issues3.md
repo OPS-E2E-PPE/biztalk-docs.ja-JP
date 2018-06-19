@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server で RosettaNet accelerator に関する既知の問題 |Microsoft ドキュメント"
-description: "既知の問題と解決策の障害、BAM、インストールおよび構成、および BizTalk Server で BTARN で複数の 0A1 通知を参照してください。"
-caps.latest.revision: "11"
+title: BizTalk Server で RosettaNet accelerator に関する既知の問題 |Microsoft ドキュメント
+description: 既知の問題と解決策の障害、BAM、インストールおよび構成、および BizTalk Server で BTARN で複数の 0A1 通知を参照してください。
+caps.latest.revision: 11
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 335eb3c9-b565-470f-b69c-2a771ef8b476
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010779"
 ---
 # <a name="known-issues"></a>既知の問題
 ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] に関するエラーを回避するときに役立つ情報を紹介します。 既知の問題は次の分野に分かれています。  

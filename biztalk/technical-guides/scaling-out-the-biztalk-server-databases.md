@@ -1,14 +1,14 @@
 ---
-title: "スケール アウトは、BizTalk Server データベース |Microsoft ドキュメント"
-ms.custom: 
+title: スケール アウトは、BizTalk Server データベース |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 11/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 18853ceb-7975-4c30-878f-6b162005f795
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009619"
 ---
 # <a name="scaling-out-the-biztalk-server-databases"></a>BizTalk Server データベースのスケール アウト
 BizTalk Server データベースの高可用性を実現するには、Windows クラスターで SQL Server を実行している 2 台のコンピューターを構成します。 これらのコンピューターは、アクティブ/アクティブ、アクティブ/パッシブまたはアクティブ/アクティブ/パッシブ (3 台のコンピューターが必要です) で実行できる冗長性の構成を共有ドライブ上のデータを格納できます (RAID など 1 + 0 SCSI ディスク アレイ) またはストレージ エリア ネットワーク (SAN)。  

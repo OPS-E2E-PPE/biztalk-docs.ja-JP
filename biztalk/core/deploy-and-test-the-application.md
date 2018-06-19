@@ -1,14 +1,14 @@
 ---
-title: "配置およびアプリケーションのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: 配置およびアプリケーションのテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e2c86d5f-1849-4b7d-8061-23f156245f5b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007003"
 ---
 # <a name="deploy-and-test-the-application"></a>アプリの配置およびテスト
 > [!NOTE]
@@ -47,7 +48,7 @@ ms.lasthandoff: 12/01/2017
   
     4.  受信場所が JSON 注文書を取得するフォルダーの場所を入力します。 指定`*.json`クリックしてファイル マスクとして**OK**です。  
   
-    5.  **受信パイプライン**ドロップダウン リストで、 **JSONToXml**です。 このカスタム受信パイプラインを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリで作成しました。 省略記号ボタンを右クリックして**([...])** 、パイプラインの横にし、ボタン**Stage 1 – Deocde コンポーネント**、次の値を指定します。  
+    5.  **受信パイプライン**ドロップダウン リストで、 **JSONToXml**です。 このカスタム受信パイプラインを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリで作成しました。 省略記号ボタンを右クリックして **([...])** 、パイプラインの横にし、ボタン**Stage 1 – Deocde コンポーネント**、次の値を指定します。  
   
         -   RootNode-`ROOT`  
   

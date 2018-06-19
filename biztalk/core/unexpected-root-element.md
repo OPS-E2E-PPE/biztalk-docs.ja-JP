@@ -1,14 +1,14 @@
 ---
-title: "予期しないルート要素 |Microsoft ドキュメント"
-ms.custom: 
+title: 予期しないルート要素 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ecccf57e-9295-4a6d-95b6-efec662478cf
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973032"
 ---
 # <a name="unexpected-root-element"></a>ルート要素が正しくありません
 ## <a name="details"></a>詳細  

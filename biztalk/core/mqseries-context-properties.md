@@ -1,11 +1,11 @@
 ---
-title: "MQSeries コンテキスト プロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: MQSeries コンテキスト プロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MQXQH_RemoteQName property [MQSeries adapters]
@@ -80,7 +80,7 @@ helpviewer_keywords:
 - MQCIH_ADSDescriptor property [MQSeries adapters]
 - MQMD_MsgId property [MQSeries adapters]
 ms.assetid: 1b22b7d7-432b-4ec5-938c-c43077ce3e0f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -89,6 +89,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266626"
 ---
 # <a name="mqseries-context-properties"></a>MQSeries コンテキスト プロパティ
 MQSeries アダプタには、アプリケーションで使用できる、MQSeries に固有のコンテキスト プロパティ セットが用意されています。 これらのプロパティは、フィルタ式やオーケストレーションで使用できます。  
@@ -113,7 +114,7 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 |----------|----------|------------|-----------|  
 |**MQMD_AccountingToken**|string|64|16 進数文字列|  
 |**MQMD_ApplIdentityData**|string|32|16 進数文字列|  
-|**MQMD_ApplOriginData**|string|4|文字列<br /><br /> **既定値:**領域|  
+|**MQMD_ApplOriginData**|string|4|文字列<br /><br /> **既定値:** 領域|  
 |**MQMD_BackoutCount**|unsigned int|4|数値<br /><br /> 読み取り専用<br /><br /> **既定値:** 0|  
 |**MQMD_CodedCharSetId**|unsigned int|4|数値<br /><br /> **既定値:** 0|  
 |**MQMD_CorrelId**|string|48|16 進数文字列|  
@@ -130,12 +131,12 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 |**MQMD_OriginalLength**|unsigned int|4||  
 |**MQMD_Persistence**|unsigned int|4|数値<br /><br /> ヘッダー ファイルの値を使用します。|  
 |**MQMD_Priority**|unsigned int|4|数値|  
-|**MQMD_PutApplName**|string|28|文字列<br /><br /> **既定値:**領域|  
+|**MQMD_PutApplName**|string|28|文字列<br /><br /> **既定値:** 領域|  
 |**MQMD_PutApplType**|unsigned int|4|数値<br /><br /> ヘッダー ファイルの値を使用します。 **既定値:** 0|  
 |**MQMD_PutDate**|string|8|日付|  
 |**MQMD_PutTime**|string|8|[時刻]|  
-|**MQMD_ReplyToQ**|string|48|文字列<br /><br /> **既定値:**領域|  
-|**MQMD_ReplyToQMgr**|string|48|文字列<br /><br /> **既定値:**領域|  
+|**MQMD_ReplyToQ**|string|48|文字列<br /><br /> **既定値:** 領域|  
+|**MQMD_ReplyToQMgr**|string|48|文字列<br /><br /> **既定値:** 領域|  
 |**MQMD_Report**|unsigned int|4|数値<br /><br /> ヘッダー ファイルの値を使用します。|  
 |**MQMD_UserIdentifier**|string|12|文字列<br /><br /> 使用するときに、ユーザーの識別子を含む、 **SSOAffiliateApplication**プロパティです。|  
   
@@ -199,7 +200,7 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 |**MQCIH_AbendCode**|string|4||  
 |**MQCIH_ADSDescriptor**|unsigned int|4||  
 |**MQCIH_AttentionId**|string|4||  
-|**MQCIH_Authenticator**|string|8|使用するときに、SSO パスワードに設定、 **SSOAffiliateApplication**プロパティです。 **注:**この値は、SSO パスワードの長さが 8 文字を超える場合、MQSeries アダプタによって空白に設定されます。|  
+|**MQCIH_Authenticator**|string|8|使用するときに、SSO パスワードに設定、 **SSOAffiliateApplication**プロパティです。 **注:** この値は、SSO パスワードの長さが 8 文字を超える場合、MQSeries アダプタによって空白に設定されます。|  
 |**MQCIH_CancelCode**|string|4||  
 |**MQCIH_CompCode**|unsigned int|4||  
 |**MQCIH_ConversationalTask**|unsigned int|4||  
@@ -222,7 +223,7 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 |**MQCIH_TaskEndStatus**|unsigned int|4||  
 |**MQCIH_TransactionId**|string|4||  
 |**MQCIH_UOWControl**|unsigned int|4||  
-|**MQIIH_Authenticator**|string|8|使用するときに、SSO パスワードに設定、 **SSOAffiliateApplication**プロパティです。 **注:**この値は、SSO パスワードの長さが 8 文字を超える場合、MQSeries アダプタによって空白に設定されます。|  
+|**MQIIH_Authenticator**|string|8|使用するときに、SSO パスワードに設定、 **SSOAffiliateApplication**プロパティです。 **注:** この値は、SSO パスワードの長さが 8 文字を超える場合、MQSeries アダプタによって空白に設定されます。|  
 |**MQIIH_CommitMode**|string|||  
 |**MQIIH_Flags**|unsigned int|4||  
 |**MQIIH_Format**|string|||  

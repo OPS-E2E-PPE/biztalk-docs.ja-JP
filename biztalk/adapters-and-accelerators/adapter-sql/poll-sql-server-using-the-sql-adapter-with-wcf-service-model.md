@@ -1,14 +1,14 @@
 ---
-title: "WCF サービス モデルで、SQL アダプターを使用してポーリング SQL Server |Microsoft ドキュメント"
-ms.custom: 
+title: WCF サービス モデルで、SQL アダプターを使用してポーリング SQL Server |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eef2e868-bd51-4393-b091-f67299b4759d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222914"
 ---
 # <a name="poll-sql-server-using-the-sql-adapter-with-wcf-service-model"></a>WCF サービス モデルで、SQL アダプターを使用して SQL サーバーにポーリング
 構成することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を SQL Server からデータ変更のポーリングに基づいたメッセージを受信します。 データベースをポーリングするアダプターを実行するポーリング ステートメントを指定することができます。 ポーリング ステートメントには、SELECT ステートメントまたは結果セットを返すストアド プロシージャを使用できます。 ポーリングのメッセージの種類に基づいて、アダプターは、さまざまなポーリング操作を公開します。  

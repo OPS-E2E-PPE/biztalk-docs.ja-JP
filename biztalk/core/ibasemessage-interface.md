@@ -1,14 +1,14 @@
 ---
-title: "IBaseMessage インターフェイス |Microsoft ドキュメント"
-ms.custom: 
+title: IBaseMessage インターフェイス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 10bfb95c-aef5-46ba-ba0e-9961833f27a3
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257090"
 ---
 # <a name="ibasemessage-interface"></a>IBaseMessage インターフェイス
 使用して、受信アダプターがそのプロトコルを介して受信データ パケットを受け入れるときに、 **IBaseMessage**メッセージング エンジンに渡すメッセージを作成するインターフェイスです。 すべてのメッセージは、このインターフェイスで表現されます。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
  昇格させたプロパティが既存のサブスクリプションと照合されてメッセージのルーティングに使用されると、サブスクリプションの照合が繰り返されないように、そのプロパティは降格されます。 降格されたプロパティはメタデータとしてメッセージ コンテキストに残りますが、昇格状態は失われます。  
   
- **実装のヒン ト:**メッセージ コンテキスト プロパティは、実行時にメモリに読み込まれます。 膨大なデータをメッセージ コンテキストに書き込むことは、サイズの大きいメッセージをサポートする [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の機能を損なう可能性があるのでお勧めできません。 実装すればメッセージ コンテキストにオブジェクトをシリアル化することがあります、 **IPersistStream**インターフェイスです。 なお、昇格させたプロパティは 255 文字までに制限されます。  
+ **実装のヒン ト:** メッセージ コンテキスト プロパティは、実行時にメモリに読み込まれます。 膨大なデータをメッセージ コンテキストに書き込むことは、サイズの大きいメッセージをサポートする [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の機能を損なう可能性があるのでお勧めできません。 実装すればメッセージ コンテキストにオブジェクトをシリアル化することがあります、 **IPersistStream**インターフェイスです。 なお、昇格させたプロパティは 255 文字までに制限されます。  
   
  新しいメッセージの作成には、必ずメッセージ ファクトリを使用します。  次のコードは、アダプターで受信したデータ ストリームから新しい BizTalk メッセージを作成する方法を示しています。  
   

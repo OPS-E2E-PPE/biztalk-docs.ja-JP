@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: カスタム メッセージを Wcf-nettcp アダプターを使用した処理 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: カスタム メッセージを Wcf-nettcp アダプターを使用した処理 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b56b7492-2ea0-4c63-8f1b-430eb277517d
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "26009771"
 ---
 # <a name="walkthrough-custom-message-processing-with-the-wcf-nettcp-adapter"></a>チュートリアル: カスタム メッセージを Wcf-nettcp アダプターを使用した処理
 このチュートリアルでは、WCF-NetTcp アダプターを使用して、[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] クライアントから BizTalk 受信場所に、バイナリ JPEG イメージ データが埋め込まれた [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] メッセージを送信します。 バイナリ エンコードされた JPEG イメージを取得による、XPath ステートメント (Base64 ノード エンコード) を使用して、抽出された、 **受信メッセージの本文** アダプターの構成で設定します。 XPath 処理は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で受信メッセージの処理に使用される既定の方法とは異なります。 アダプターがの内容全体を取得する既定の方法で、**本文**の要素、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]メッセージ、および BizTalk メッセージ ボックス データベースに送信します。 XPath メッセージ処理では、受信 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] メッセージの特定の部分が抽出されてカスタム BizTalk メッセージが作成されます。 このサンプルでは、XPath 処理がという名前の XML 要素を検索し**SendPicture**では、着信[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]メッセージ (XML 形式で)。 この要素が検出されると、Base64 エンコードされたバイナリ オブジェクトとしての要素の値が抽出され、そのバイナリ値が BizTalk メッセージに配置されます。 このメッセージはメッセージ ボックス データベースに発行された後、送信ポート フィルター サブスクリプションを使用して FILE 送信ポートに出力されます。 このサンプルでオーケストレーションは使用されず、すべての処理は XPath を使用して BizTalk メッセージング経由で行われます。  
@@ -83,7 +84,7 @@ ms.lasthandoff: 01/17/2018
   
     2.  **トランスポート**  をクリックして、 **型** ドロップダウン リスト ボックスで、 **ファイル** クリックしてドロップダウン リストから **構成**します。  
   
-    3.  [ **インストール先フォルダー** 入力 `C:\WCFCustomMessageProcessing\Out`, 、] をクリック **[ok]**します。  
+    3.  [ **インストール先フォルダー** 入力 `C:\WCFCustomMessageProcessing\Out`, 、] をクリック **[ok]** します。  
   
     4.  をクリックして **フィルター**, [ `BTS.ReceivePortName == NetTcpRP`, 、] をクリックし、 **[ok] です。**  
   

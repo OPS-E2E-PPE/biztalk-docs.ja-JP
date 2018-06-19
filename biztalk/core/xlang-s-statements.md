@@ -1,14 +1,14 @@
 ---
-title: "XLANG のステートメント |Microsoft ドキュメント"
-ms.custom: 
+title: XLANG のステートメント |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 620d0452-a8da-4285-b8b2-5a932ffcde28
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290338"
 ---
 # <a name="xlang-s-statements"></a>XLANG のステートメント
 Xlang/s ステートメントは一般に、2 つのカテゴリのいずれかに分類: 単純なステートメントなど、独自に作用する**受信**または**送信**、および複雑なステートメントに含まれているいずれかの単純なステートメントをグループ化またはその他の複雑なステートメントなど**スコープ**、**並列**、および**リッスン**です。 それぞれのステートメントは、BizTalk オーケストレーション デザイナーのオーケストレーション図形に対応しています。 XLANG/s では、次のステートメントを定義しています。  

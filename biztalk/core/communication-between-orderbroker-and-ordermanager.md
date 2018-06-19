@@ -1,17 +1,17 @@
 ---
-title: "OrderBroker と OrderManager 間の通信 |Microsoft ドキュメント"
-ms.custom: 
+title: OrderBroker と OrderManager 間の通信 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, publishing [MessageBox database]
 - MessageBox database, publishing
 ms.assetid: 1b77dcd2-f7a5-4013-b9a2-c06ace161792
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231874"
 ---
 # <a name="communication-between-orderbroker-and-ordermanager"></a>OrderBroker と OrderManager 間の通信
 注文ブローカと注文マネージャーのオーケストレーション (**OrderBroker**、 **OrderManager**)、メッセージ ボックス データベースはなくのパートナーの直接バインド経由で通信します。 これにより、ブローカとマネージャは疎結合して、必要に応じて個別の BizTalk グループおよび地理的に分散した場所に存在できます。 このようにオーケストレーションを分割するときに必要なのは、管理の構成だけです。コードの変更は必要ありません。  

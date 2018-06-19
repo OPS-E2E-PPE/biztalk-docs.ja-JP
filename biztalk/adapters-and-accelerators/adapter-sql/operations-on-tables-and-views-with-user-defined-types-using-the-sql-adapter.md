@@ -1,14 +1,14 @@
 ---
-title: "SQL アダプターを使用してユーザー定義の型とテーブルとビューでの操作 |Microsoft ドキュメント"
-ms.custom: 
+title: SQL アダプターを使用してユーザー定義の型とテーブルとビューでの操作 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c4006bbe-91ca-4cd9-844d-5ed63142001f
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006835"
 ---
 # <a name="operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter"></a>SQL アダプターを使用してユーザー定義の型とテーブルとビューでの操作
 使用することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]テーブルまたはユーザー定義型 (Udt) 列を含むビューの操作を実行します。 標準のテーブルの操作 (Insert、Update、Delete、および選択) に UDT 型の列にデータを読み書きするを使用することができます。 このようなテーブルでストアド プロシージャと関数を実行することもできます。 ただし、UDT 列を含むテーブルを操作するために、アダプターを使用する前に、特定のタスクを実行する必要があります。 これらのタスクを実行すると、アダプターを使用できます。  

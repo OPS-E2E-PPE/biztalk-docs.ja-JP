@@ -1,14 +1,14 @@
 ---
-title: "手順 1: エコー アダプター プロジェクトを作成する WCF LOB アダプター開発ウィザードを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: エコー アダプター プロジェクトを作成する WCF LOB アダプター開発ウィザードを使用して |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 634a6498-55b0-462d-a5ca-16507b3787f5
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22227330"
 ---
 # <a name="step-1-use-the-wcf-lob-adapter-development-wizard-to-create-the-echo-adapter-project"></a>手順 1: WCF LOB アダプター開発ウィザードを使用してエコー アダプター プロジェクトを作成するには
 ![手順 9 の 1](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-1of9.gif "Step_1of9")  
@@ -36,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**プロジェクトの種類**|をクリックして**Visual c#**です。|  
+    |**プロジェクトの種類**|をクリックして**Visual c#** です。|  
     |**[テンプレート]**|をクリックして**WCF LOB アダプター**です。|  
     |**名前**|型**EchoAdapter**です。|  
     |**場所**|型**C:\Tutorials**です。|  
@@ -47,13 +48,13 @@ ms.lasthandoff: 09/20/2017
   
      ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/3a349be4-1a7d-480a-8e9d-cfcba63cd14a.gif "3a349be4-1a7d-480a-8e9d-cfcba63cd14a")  
   
-3.  **[OK]**をクリックします。  
+3.  **[OK]** をクリックします。  
   
 4.  **ようこそ** ページで、をクリックして**次**です。 次の図に示しています、**ようこそ**ページ。  
   
      ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/0b8ef97f-044d-481f-8c7c-0d034fdba37d.gif "0b8ef97f-044d-481f-8c7c-0d034fdba37d")  
   
-5.  **[次へ]**をクリックします。  
+5.  **[次へ]** をクリックします。  
   
 ## <a name="enter-the-scheme-and-namespace-information"></a>スキームと名前空間の情報を入力します。  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 09/20/2017
   
      ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/0d72dab2-7992-47e4-bc4e-3e720b1cde38.gif "0d72dab2-7992-47e4-bc4e-3e720b1cde38")  
   
-2.  **[次へ]**をクリックします。  
+2.  **[次へ]** をクリックします。  
   
 ## <a name="enter-the-data-flow-and-metadata-features"></a>データ フローとメタデータ機能を入力します。  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 09/20/2017
   
      ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/4fa6f67d-4703-41db-b5f3-28cf9d6a40d2.gif "4fa6f67d-4703-41db-b5f3-28cf9d6a40d2")  
   
-2.  **[次へ]**をクリックします。  
+2.  **[次へ]** をクリックします。  
   
 ## <a name="enter-the-adapter-properties"></a>アダプターのプロパティを入力してください。  
   
@@ -142,7 +143,7 @@ ms.lasthandoff: 09/20/2017
   
      ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/84de11a5-a737-4aa5-96c8-61922e704f2b.gif "84de11a5-a737-4aa5-96c8-61922e704f2b")  
   
-6.  **[次へ]**をクリックします。  
+6.  **[次へ]** をクリックします。  
   
 ## <a name="enter-the-connection-properties"></a>接続プロパティを入力します。  
   
@@ -184,7 +185,7 @@ ms.lasthandoff: 09/20/2017
     |**既定値**|型**False**です。|  
     |**[追加]**|新しいアダプター プロパティを追加する をクリックします。|  
   
-6.  **[次へ]**をクリックします。  
+6.  **[次へ]** をクリックします。  
   
 ## <a name="end-the-wizard"></a>ウィザードを終了します。  
   

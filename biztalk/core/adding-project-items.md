@@ -1,15 +1,15 @@
 ---
-title: "プロジェクト項目の追加 |Microsoft ドキュメント"
-description: "オーケストレーション、スキーマ、マップ、およびパイプラインを Visual Studio で BizTalk Server プロジェクトに追加します。"
-ms.custom: 
+title: プロジェクト項目の追加 |Microsoft ドキュメント
+description: オーケストレーション、スキーマ、マップ、およびパイプラインを Visual Studio で BizTalk Server プロジェクトに追加します。
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d1b922d5-8ece-4e1a-a390-e6ae1222665a
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710225"
 ---
 # <a name="add-project-items"></a>プロジェクト項目を追加します。
 BizTalk プロジェクト システムのコンテキストでは、プロジェクト項目は構成済みの項目のことであり、マップやスキーマなどがあります。 BizTalk アプリケーションには、1 つ以上のオーケストレーション、スキーマ、マップ、およびパイプラインを含めることができます。  

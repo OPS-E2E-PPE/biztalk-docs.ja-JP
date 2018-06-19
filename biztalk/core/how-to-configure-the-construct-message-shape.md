@@ -1,11 +1,11 @@
 ---
-title: "メッセージの構築図形を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの構築図形を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Construct Message shape [Orchestration Designer], configuring
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - configuring [Orchestration Designer], Construct Message shapes
 - Construct Message shape [Orchestration Designer], about Construct Message shape
 ms.assetid: 8d052b4e-0873-4102-9462-6604423d0524
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248426"
 ---
 # <a name="how-to-configure-the-construct-message-shape"></a>メッセージの構築図形を構成する方法
 ![](../core/media/ebiz-orch-constructmsg.gif "ebiz_orch_constructmsg")  

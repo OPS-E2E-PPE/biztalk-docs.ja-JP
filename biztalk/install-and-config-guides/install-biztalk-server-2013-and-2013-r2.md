@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 2013 および 2013 R2 のインストール |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 2013 および 2013 R2 のインストール |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b4665ea-6f2c-477f-98ec-1cebef05ad4a
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976368"
 ---
 # <a name="install-biztalk-server-2013-and-2013-r2"></a>BizTalk Server 2013 および 2013 R2 のインストール
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール手順を示します。  

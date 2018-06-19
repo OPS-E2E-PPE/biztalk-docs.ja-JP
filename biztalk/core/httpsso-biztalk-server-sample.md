@@ -24,6 +24,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25974272"
 ---
 # <a name="httpsso-biztalk-server-sample"></a>HTTPSSO (BizTalk Server サンプル)
 HTTPSSO サンプルでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP アダプタでエンタープライズ シングル サインオン (SSO) を使用する方法を示します。  
@@ -92,7 +93,7 @@ HTTPSSO サンプルでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../i
   
 4.  Visual Studio を使用して、プロジェクト ファイル SsoSample.csproj を開きます。  
   
-5.  **[ビルド]** メニューの **[ソリューションのビルド]**をクリックします。  
+5.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
     > [!NOTE]
     >  ビルドを続行する前に、ソリューションを保存するように要求されます。  

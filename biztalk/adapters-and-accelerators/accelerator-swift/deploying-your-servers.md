@@ -1,17 +1,17 @@
 ---
-title: "サーバーを展開する |Microsoft ドキュメント"
-ms.custom: 
+title: サーバーを展開する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, servers
 - servers, deploying
 ms.assetid: 6036e42b-59b8-4092-addd-288e9c4b91d6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005404"
 ---
 # <a name="deploying-your-servers"></a>サーバーを展開します。
 このセクションでは、の各サーバーを構成するための説明、[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]展開します。 ネットワークを構成した後は、次の手順を使用して、各サーバー上のソフトウェアを展開する必要があります。  

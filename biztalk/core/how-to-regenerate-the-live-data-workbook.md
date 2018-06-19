@@ -1,14 +1,14 @@
 ---
-title: "ライブ データ ブックを再生成 |Microsoft ドキュメント"
-ms.custom: 
+title: ライブ データ ブックを再生成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4bd3a3fa-a550-4363-bbc0-2153226509ad
-caps.latest.revision: 
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710585"
 ---
 # <a name="regenerate-the-live-data-workbook"></a>ライブ データ ブックを再生成します。
 BAM ライブ データ ブックが失われるか破損した場合、BAM 管理ユーティリティを使用してブックを再生成できます。 このプロセスは、BizTalk Server の以前のバージョンからアップグレードするときにも役立ちます。

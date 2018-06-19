@@ -1,14 +1,14 @@
 ---
-title: "ビジネス ルールを使用して、3A4 プライベート応答側オーケストレーション |Microsoft ドキュメント"
-ms.custom: 
+title: ビジネス ルールを使用して、3A4 プライベート応答側オーケストレーション |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 33d87952-def6-4202-b535-3d80171332eb
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006283"
 ---
 # <a name="3a4-private-responder-orchestration-using-a-business-rule"></a>ビジネス ルールを使用して、3A4 プライベート応答側オーケストレーション
 PIP3A4PrivateResponder.odx サンプルは、ビジネス ルールを組み込んでいる PIP (Partner Interface Process) 固有の応答側プライベート プロセスの実装方法を示した、プライベート プロセス オーケストレーションです。 このプロセスの詳細については、次を参照してください。[プライベート プロセス オーケストレーションのビジネス ルールの定義](../../adapters-and-accelerators/accelerator-rosettanet/defining-a-business-rule-for-a-private-process-orchestration.md)です。  

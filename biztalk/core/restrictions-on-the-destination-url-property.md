@@ -11,7 +11,7 @@ helpviewer_keywords:
 - configuring [HTTP adapters], restrictions
 - HTTP adapters, restrictions
 ms.assetid: 982a5122-e43d-4730-a8b9-ceb1ff88638c
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25972072"
 ---
 # <a name="restrictions-on-the-destination-url-property"></a>送信先 URL のプロパティに関する制限事項
 送信先 URL とは、HTTP プロトコルを使用して送信するメッセージの送信先となる HTTP サーバーのアドレスを指定する文字列です。  

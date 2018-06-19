@@ -1,17 +1,17 @@
 ---
-title: "HTTPRequestResponse |Microsoft ドキュメント"
-ms.custom: 
+title: HTTPRequestResponse |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP adapters, examples
 - examples, HTTP adapters
 ms.assetid: 81c66f61-d86c-49cf-8d24-21c67c68bc5a
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973752"
 ---
 # <a name="httprequestresponse"></a>HTTPRequestResponse
 HTTPRequestResponse サンプルは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Internet Server API (ISAPI) フィルターを使用して ASP.NET アプリケーションと [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションの通信を行う方法を示します。  
@@ -36,7 +37,7 @@ HTTPRequestResponse サンプルは、Microsoft [!INCLUDE[btsBizTalkServerNoVers
  ASP.NET アプリケーションは XML PO 受信確認応答を受け取り、応答から抽出されたステータス情報で Web フォームを更新します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\AdaptersUsage\HTTPRequestResponse\  
+ *\<パスのサンプル\>* \AdaptersUsage\HTTPRequestResponse\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -64,7 +65,7 @@ HTTPRequestResponse サンプルは、Microsoft [!INCLUDE[btsBizTalkServerNoVers
     -   このサンプルを実行する ASP.NET アプリケーションをコンパイルし構成します。  
   
         > [!NOTE]
-        >  IIS マネージャーでアプリケーション プールを作成中に次のように設定します。、 **DefaultAppPool** .NET Framework バージョンを**.Net Framework v4.0**です。  
+        >  IIS マネージャーでアプリケーション プールを作成中に次のように設定します。、 **DefaultAppPool** .NET Framework バージョンを **.Net Framework v4.0**です。  
   
     -   このサンプルで使用する [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションをコンパイルし、展開します。  
   

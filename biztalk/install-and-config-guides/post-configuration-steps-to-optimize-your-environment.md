@@ -1,15 +1,15 @@
 ---
-title: "お客様の環境を最適化するために後の構成手順 |Microsoft ドキュメント"
-description: "インストールして、BizTalk Server を構成した後に完了するタスクを含む SQL エージェント ジョブの構成、EDI スキーマをインストール、ホストとホスト インスタンス、および BizTalk Server の詳細を作成します。"
-ms.custom: 
+title: お客様の環境を最適化するために後の構成手順 |Microsoft ドキュメント
+description: インストールして、BizTalk Server を構成した後に完了するタスクを含む SQL エージェント ジョブの構成、EDI スキーマをインストール、ホストとホスト インスタンス、および BizTalk Server の詳細を作成します。
+ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 09/27/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d0fef6ea-e7cc-4ea9-936d-5d638bc43feb
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976840"
 ---
 # <a name="post-configuration-steps-to-optimize-your-environment"></a>環境を最適化するための構成後の手順
 パフォーマンスを向上させ、BizTalk 環境を維持し、EDI スキーマをインストールする場合に役立つ構成後の手順です。

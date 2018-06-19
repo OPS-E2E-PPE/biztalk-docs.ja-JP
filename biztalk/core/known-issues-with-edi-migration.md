@@ -1,14 +1,14 @@
 ---
-title: "EDI の移行に関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: EDI の移行に関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc5d0a7e-974d-4e3b-a406-412420779456
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005971"
 ---
 # <a name="known-issues-with-edi-migration"></a>EDI の移行に関する既知の問題
 このトピックの EDI/HIPAA アダプタ モデルからの移行に関する既知の問題を説明します[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]BizTalk Server にします。  

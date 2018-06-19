@@ -1,11 +1,11 @@
 ---
-title: "SWIFT 逆アセンブラーまたはアセンブラーの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: SWIFT 逆アセンブラーまたはアセンブラーの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assembler, configuring
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - disassembler, configuring
 - configuring, assembler
 ms.assetid: 56e421f2-0292-40af-b878-0cba1b034e19
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005067"
 ---
 # <a name="configuring-the-swift-disassembler-or-assembler"></a>SWIFT 逆アセンブラーまたはアセンブラーを構成します。
 カスタム パイプラインに SWIFT 逆アセンブラーまたはアセンブラー SWIFT を追加した後、動的なメッセージの種類の探索、受信バッチ解除処理、XML 検証の有効/無効の場合など、特定のシナリオを対象にする機能を提供することを構成する必要があります。ビジネス ルール エンジン (BRE) の検証、およびなど)。 コンパイルおよびそれらを呼び出すカスタム パイプラインを展開する前に、開発時に SWIFT 逆アセンブラーまたはアセンブラーを構成する必要があります。 SWIFT の逆アセンブラーまたはアセンブラーを構成するのには、パイプライン デザイナーでコンポーネントを選択し、構成プロパティをプロパティ ウィンドウで編集します。  

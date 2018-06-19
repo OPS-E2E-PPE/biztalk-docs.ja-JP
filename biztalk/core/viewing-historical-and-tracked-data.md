@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287690"
 ---
 # <a name="viewing-historical-and-tracked-data"></a>履歴および追跡データの表示
 ここでは、BizTalk Server 管理コンソールの [グループ ハブ] ページでの履歴データおよび追跡データの表示方法に関するタスク固有の情報について説明します。  

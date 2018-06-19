@@ -1,14 +1,14 @@
 ---
-title: "ノードを記録 |Microsoft ドキュメント"
-ms.custom: 
+title: ノードを記録 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43af077d-5db8-43ca-8bd0-e3a9e3ebe2b0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268498"
 ---
 # <a name="record-nodes"></a>[レコード] ノード
 BizTalk エディターを使用する、**レコード**ノードについては、これの個々 の項目は、のコレクションを表します。  

@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションでの相関関係の使用 |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションでの相関関係の使用 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, orchestrations
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, messages
 - messages, validating
 ms.assetid: d919afa9-bada-406a-bf4b-7b46c831c6d5
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287370"
 ---
 # <a name="using-correlations-in-orchestrations"></a>オーケストレーションでの関連付けの使用
 関連付けは、受信メッセージをオーケストレーションの適切なインスタンスに一致させるプロセスです。 たとえば、オーケストレーションからメッセージを送信して応答を受信したり、同じオーケストレーションに応答を返信します。 以下の 3 つの関連付けメッセージ交換パターンがあります。  

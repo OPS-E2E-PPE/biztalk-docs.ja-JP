@@ -1,15 +1,15 @@
 ---
-title: "Oracle データベース アダプターの運用上の問題のトラブルシューティング |Microsoft ドキュメント"
-description: "共通の問題と Oracle データベース アダプターの BizTalk アダプター パック (BAP) の解決策"
-ms.custom: 
+title: Oracle データベース アダプターの運用上の問題のトラブルシューティング |Microsoft ドキュメント
+description: 共通の問題と Oracle データベース アダプターの BizTalk アダプター パック (BAP) の解決策
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2fb83245-2b6a-48cc-8601-b923bb009a58
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010107"
 ---
 # <a name="troubleshoot-operational-issues-with-the-oracle-database-adapter"></a>Oracle データベース アダプターの運用上の問題をトラブルシューティングします。
 トラブルシューティングの手法を使用して発生する可能性がある操作のエラーを解決するのには[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]します。  

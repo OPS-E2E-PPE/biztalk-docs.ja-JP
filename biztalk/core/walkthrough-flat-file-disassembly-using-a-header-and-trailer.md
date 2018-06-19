@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 715af9cc-d718-483d-b593-64462aa5a58b
-caps.latest.revision: ''
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25976056"
 ---
 # <a name="walkthrough-flat-file-disassembly-using-a-header-and-trailer"></a>チュートリアル: フラット ファイル逆アセンブル ヘッダーおよびトレーラーを使用します。
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 03/28/2018
 ### <a name="create-a-new-biztalk-project"></a>新しい BizTalk プロジェクトの作成  
  BizTalk プロジェクトを作成する必要があるソリューションをビルドする前に、ソリューションに厳密な名前が付いていることを確認し、アプリケーション名をそのソリューションに割り当てます。 アプリケーション名を割り当てると、そのソリューションが BizTalk Server によって既定の BizTalk アプリケーションに配置されるのを防ぐことができます。  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して新しい BizTalk プロジェクトを作成します。 プロジェクトを呼び出す **[ffdisassemblerwalkthrough]**します。  
+1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して新しい BizTalk プロジェクトを作成します。 プロジェクトを呼び出す **[ffdisassemblerwalkthrough]** します。  
   
 2.  キー ファイルを作成してプロジェクトに割り当てます。 このタスクの詳細については、次を参照してください。 [署名 ページ、プロジェクト デザイナー](http://go.microsoft.com/fwlink/?LinkId=125876)します。  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 03/28/2018
   
      ![ヘッダー スキーマ用に選択されたデータ](../core/media/ffwiz-header-select-document-data.gif "ffwiz_header_select_document_data")  
   
-     **[次へ]**をクリックします。  
+     **[次へ]** をクリックします。  
   
 6.  **レコード書式**  ページで  **次** を既定値を受け入れるようにします。 データ ファイルでは相対位置を使用していないので、既定の "区切り記号" を使用できます。  
   
@@ -128,7 +129,7 @@ ms.lasthandoff: 03/28/2018
   
      問題がなければをクリックして **完了** ウィザードを完了します。  
   
-10. クリックして、 **\<スキーマ\>**ヘッダー スキーマ ペイン内のノードです。 プロパティ ペインで次のように変更します。 **Element FormDefault** に **Qualified**します。 これは、ローカルに宣言された要素を、ターゲットの名前空間を使用してインスタンス ドキュメント内で修飾する必要があることを示します。  
+10. クリックして、 **\<スキーマ\>** ヘッダー スキーマ ペイン内のノードです。 プロパティ ペインで次のように変更します。 **Element FormDefault** に **Qualified**します。 これは、ローカルに宣言された要素を、ターゲットの名前空間を使用してインスタンス ドキュメント内で修飾する必要があることを示します。  
   
 ##### <a name="use-the-flat-file-schema-wizard-to-create-the-trailer-schema"></a>フラット ファイル スキーマ ウィザードを使用してトレーラー スキーマを作成するには  
   
@@ -147,7 +148,7 @@ ms.lasthandoff: 03/28/2018
   
      ![トレーラー スキーマ用に選択されたデータ](../core/media/ffwiz-trailer-select-document-data.gif "ffwiz_trailer_select_document_data")  
   
-     **[次へ]**をクリックします。  
+     **[次へ]** をクリックします。  
   
 6.  **レコード書式**  ページで  **次** を既定値を受け入れるようにします。 データ ファイルでは相対位置を使用していないので、既定の "区切り記号" を使用できます。  
   
@@ -165,7 +166,7 @@ ms.lasthandoff: 03/28/2018
   
      問題がなければをクリックして **完了** ウィザードを完了します。  
   
-10. クリックして、 **\<スキーマ\>**トレーラー スキーマ ペイン内のノードです。 プロパティ ペインで次のように変更します。 **elementFormDefault** に **Qualified**します。 これは、ローカルに宣言された要素を、ターゲットの名前空間を使用してインスタンス ドキュメント内で修飾する必要があることを示します。  
+10. クリックして、 **\<スキーマ\>** トレーラー スキーマ ペイン内のノードです。 プロパティ ペインで次のように変更します。 **elementFormDefault** に **Qualified**します。 これは、ローカルに宣言された要素を、ターゲットの名前空間を使用してインスタンス ドキュメント内で修飾する必要があることを示します。  
   
 ##### <a name="use-the-flat-file-schema-wizard-to-create-the-body-schema"></a>フラット ファイル スキーマ ウィザードを使用してボディ スキーマを作成するには  
   
@@ -184,7 +185,7 @@ ms.lasthandoff: 03/28/2018
   
      ![ボディ スキーマ用に選択されたデータ](../core/media/ffwiz-body-select-document-data.gif "ffwiz_body_select_document_data")  
   
-     **[次へ]**をクリックします。  
+     **[次へ]** をクリックします。  
   
 6.  **レコード書式**  ページで  **次** を既定値を受け入れるようにします。 データ ファイルでは相対位置を使用していないので、既定の "区切り記号" を使用できます。  
   
@@ -202,13 +203,13 @@ ms.lasthandoff: 03/28/2018
   
      ![構成で区切られたレコードのタグ識別子](../core/media/ffwiz-bodyerror-delimited-record.gif "ffwiz_bodyerror_delimited_record")  
   
-     **[次へ]**をクリックします。  
+     **[次へ]** をクリックします。  
   
 13. ここでは、Error レコードの子要素を定義します。  
   
      ![5 つの要素で定義されたエラー レコード](../core/media/ffwiz-bodyerror-child-elements.gif "ffwiz_bodyerror_child_elements")  
   
-     **[次へ]**をクリックします。  
+     **[次へ]** をクリックします。  
   
 14. **スキーマ ビュー**  ページで、そのスキーマを検証します。  
   
@@ -275,7 +276,7 @@ ms.lasthandoff: 03/28/2018
   
 4.  をクリックして **受信場所**, 、順にクリック **新規** 受信場所を追加します。 新しい受信場所に "ReceiveErrorLocation" という名前を付けます。 設定、 **受信パイプライン** に **FFReceivePipeline**します。 **トランスポートの種類**, [ **ファイル**, 、] をクリックし、 **構成**します。 設定し、作成した受信ディレクトリを選択して、 **ファイル マスク** *.txt にします。  
   
-5.  **[OK]**をクリックします。 受信ポートが正しく構成されます。 クリックして **OK** を閉じます。  
+5.  **[OK]** をクリックします。 受信ポートが正しく構成されます。 クリックして **OK** を閉じます。  
   
 ##### <a name="configure-the-send-port"></a>送信ポートを構成します。  
   
@@ -296,7 +297,7 @@ ms.lasthandoff: 03/28/2018
 ### <a name="run-the-example"></a>例の実行  
  次に、例を実行します。 BizTalk Server 管理コンソールを使用すると、アプリケーションを起動する、受信場所に、テスト ファイルをコピーし、送信場所に生成される内容を確認します。  
   
-1.  BizTalk Server 管理コンソールを右クリックし、 **[flatfileexample]**アプリケーション、およびクリック**開始**です。 送信を開始し、および受信ポートこれを参加させます。  
+1.  BizTalk Server 管理コンソールを右クリックし、 **[flatfileexample]** アプリケーション、およびクリック**開始**です。 送信を開始し、および受信ポートこれを参加させます。  
   
 2.  サンプルの Errorfile.txt のコピーを受信ディレクトリに置きます。 2 つの出力ファイルが送信ディレクトリに書き込まれます。  
   

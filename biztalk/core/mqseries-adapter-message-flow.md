@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263546"
 ---
 # <a name="mqseries-adapter-message-flow"></a>MQSeries アダプタのメッセージ フロー
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピュータから発信されるメッセージは、まず、Windows 上で実行されている MQSeries Server に渡されます。 Windows 上で実行されている MQSeries Server は、BizTalk Server が実行されているコンピュータと同じコンピュータでもかまいません。 メッセージは、MQSeries Server for Windows コンピュータ経由で、UNIX などのオペレーティング システム上の MQSeries Server ホストにルーティングされます。 その後、アプリケーションは、MQSeries キューからメッセージを取得します。  

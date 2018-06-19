@@ -1,11 +1,11 @@
 ---
-title: "テーブルドリブン ループの構成 |Microsoft ドキュメント"
-ms.custom: 
+title: テーブルドリブン ループの構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Table Looping functoids
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - Table Extractor functoids, about Table Extractor functoids
 - Table Looping functoids, adding to map
 ms.assetid: ecc24d9b-ebc0-4559-9746-58e3b00c02ab
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973936"
 ---
 # <a name="table-driven-looping-configuration"></a>テーブルドリブン ループの構成
 マップのテーブルドリブン ループを構成するには、次の手順を実行します。  

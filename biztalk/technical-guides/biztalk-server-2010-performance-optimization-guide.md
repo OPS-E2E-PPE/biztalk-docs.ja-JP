@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 2010 Performance Optimization Guide |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server 2010 Performance Optimization Guide |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a56b27f-3e57-47db-a776-520f2d67d65e
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010731"
 ---
 # <a name="biztalk-server-2010-performance-optimization-guide"></a>BizTalk Server 2010 Performance Optimization Guide
 Microsoft® BizTalk® Server 2010 のパフォーマンス最適化ガイドへようこそ。 BizTalk Server ソリューションのパフォーマンスを最適化するための詳細な情報を提供するには、このガイドを作成しました。 エンタープライズ アプリケーションの展開中に頻繁に、完全エンド ツー エンドのパフォーマンスのテスト機能は見落とされがちです。 Microsoft が拡張性の高いメッセージング インフラストラクチャを構築されたことを知ること、BizTalk Server を使用している多くの組織時間をほとんどまたはまったくない独自のアプリケーションのパフォーマンスのテストを実施します。 BizTalk Server アプリケーションは、カスタム コンポーネントだけでなく Microsoft によって提供されるには、多くの部分で構成されます。 それ以外は考えられるのパフォーマンスを Microsoft がこれらのコンポーネントのあらゆる組み合わせをテストします。 そのため、完全かつ適切実施、アプリケーションのパフォーマンス テストは、任意の展開の重要な手順です。  

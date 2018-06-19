@@ -1,14 +1,14 @@
 ---
-title: "パフォーマンスと安定性テストを自動化するための BizUnit および LoadGen を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: パフォーマンスと安定性テストを自動化するための BizUnit および LoadGen を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 73c2a97a-6256-4010-8374-433017cb15d4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976280"
 ---
 # <a name="using-bizunit-and-loadgen-to-automate-performance-and-stability-testing"></a>パフォーマンスと安定性テストを自動化するための BizUnit および LoadGen を使用します。
 このトピックでは、パフォーマンスと安定性は、BizTalk Server ソリューションのテストを自動化するための BizUnit で Microsoft BizTalk LoadGen 2007 ツールを使用する方法に関する情報を提供します。  

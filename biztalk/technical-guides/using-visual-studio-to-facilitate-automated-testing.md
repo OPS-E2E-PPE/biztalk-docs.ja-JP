@@ -1,14 +1,14 @@
 ---
-title: "Visual Studio を使用して自動テストを容易に |Microsoft ドキュメント"
-ms.custom: 
+title: Visual Studio を使用して自動テストを容易に |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 78f622af-08d5-480c-bd5e-f1db52e8d490
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302290"
 ---
 # <a name="using-visual-studio-to-facilitate-automated-testing"></a>自動テストを容易にするために Visual Studio を使用します。
 Visual Studio 2010 では、最大数百台のサーバー アプリケーションに同時にアクセスするユーザーのロード プロファイルをシミュレートする強力なロード テスト機能を提供します。 このロード テスト機能は、今後の分析用のデータベースでこれらのメトリックを保存する機能と、選択した主要業績評価指標のリアルタイムのメトリックを提供します。 このセクションでは、Visual Studio ロード テストを実行する BizTalk Server アプリケーションのパフォーマンスを評価するの使用について説明します。  

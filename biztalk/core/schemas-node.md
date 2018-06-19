@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269314"
 ---
 # <a name="schemas-node"></a>[スキーマ] ノード
 使用して、**スキーマ**BizTalk で使用できる現在のアプリケーションおよびシステム スキーマで展開されているスキーマを表示するノードです。 右クリックし、**スキーマ**次のコマンドを表示するノード。  

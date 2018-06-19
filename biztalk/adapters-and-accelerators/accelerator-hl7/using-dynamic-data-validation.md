@@ -1,17 +1,17 @@
 ---
-title: "動的なデータ検証を使用して |Microsoft ドキュメント"
-ms.custom: 
+title: 動的なデータ検証を使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - dynamic data validation
 - validating, dynamic data
 ms.assetid: 8dac7f74-92a7-447c-97bf-b1f3ce39b614
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009043"
 ---
 # <a name="using-dynamic-data-validation"></a>動的なデータ検証を使用します。
 動的データの検証の重要な部分は、メッセージの内容をメッセージの形式とメッセージの内容の検証を含む動的データに対して検証しています。 ドキュメント スキーマを[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server は、XSD ファイルで実装して、定義して、メッセージの形式を検証します。 ビジネス ルールは、メッセージの内容を定義する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ビジネス ルール エンジン ポリシーを介してを検証します。 コンテンツの検証には、メッセージ インスタンス内のデータが、相対的な頻度で変化するデータと一致することの確認を含めることができます。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]コードを再コンパイルやサービスをシャット ダウンすることがなく、運用環境でこのデータを更新できるように、動的な方法でこの種類の検証を実装します。  

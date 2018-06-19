@@ -1,14 +1,14 @@
 ---
-title: "[全般] パーティ プロパティ (AS2) の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: '[全般] パーティ プロパティ (AS2) の構成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c9a4dbd0-8849-403a-af82-58ee0b10f85a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007052"
 ---
 # <a name="configuring-general-party-properties-as2"></a>パーティの全般プロパティの構成 (AS2)
 パーティまたは取引先は、ビジネス リレーションシップの参加組織を表します。 パーティのプロパティには次の情報が含まれます。  
@@ -41,8 +42,8 @@ ms.lasthandoff: 12/01/2017
     |プロパティ|目的|  
     |--------------|----------------|  
     |**名前**|パーティ名を入力します。|  
-    |**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理します。**|パーティが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をホストしている同じ取引先を表すように指定する場合は、このチェック ボックスをオンにします。 **重要:**に付属する既定のパイプラインを使用するソリューション 2 パーティ TPM の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、少なくとも 1 つのパーティの場合は、このチェック ボックスを選択する必要があります。 **注:**このチェック ボックスをオフにすると、一部のプロパティは、このパーティのアグリーメントの作成中に無効になります。|  
-    |**追加のプロパティ – 名前/値**|パーティに関する任意の情報を格納する、名前と値の組み合わせを入力します。 名前と値の組み合わせは、必要な数だけ追加できます。 **注:**なんらかの処理の名前と値のペアが、BizTalk Server によって使用されません。 このデータは、情報提供のみを目的のはします。|  
+    |**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信メッセージを処理します。**|パーティが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をホストしている同じ取引先を表すように指定する場合は、このチェック ボックスをオンにします。 **重要:** に付属する既定のパイプラインを使用するソリューション 2 パーティ TPM の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、少なくとも 1 つのパーティの場合は、このチェック ボックスを選択する必要があります。 **注:** このチェック ボックスをオフにすると、一部のプロパティは、このパーティのアグリーメントの作成中に無効になります。|  
+    |**追加のプロパティ – 名前/値**|パーティに関する任意の情報を格納する、名前と値の組み合わせを入力します。 名前と値の組み合わせは、必要な数だけ追加できます。 **注:** なんらかの処理の名前と値のペアが、BizTalk Server によって使用されません。 このデータは、情報提供のみを目的のはします。|  
     |**Del**|選択した名前と値の組み合わせを削除する場合にクリックします。|  
   
 3.  **送信ポート**のページ、**パーティ プロパティ** ダイアログ ボックスで、次の操作します。  
@@ -72,7 +73,7 @@ ms.lasthandoff: 12/01/2017
     > [!NOTE]
     >  パーティに対して指定する証明書を使用して、パーティからの AS2 メッセージまたは MDN の署名を確認します。 パーティの署名確認に使用する証明書は、他のパーティの署名確認に使用する証明書と重複しない、一意のものでなければなりません。 AS2 メッセージに使用される証明書の詳細については、次を参照してください。 [AS2 セキュリティ](../core/as2-security.md)です。 送信メッセージの署名、受信メッセージの署名の確認、送信メッセージの暗号化、および受信メッセージの解読のための証明書のインストールと定義が必要な場合があります。  
   
-5.  をクリックして**適用**、プロパティを受け入れるか、をクリックする**[ok]**構成設定を完了します。 どちらの操作では、設定を検証します。  
+5.  をクリックして**適用**、プロパティを受け入れるか、をクリックする **[ok]** 構成設定を完了します。 どちらの操作では、設定を検証します。  
   
 ## <a name="see-also"></a>参照  
  [AS2 プロパティの構成](../core/configuring-as2-properties.md)

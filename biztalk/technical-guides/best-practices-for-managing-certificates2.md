@@ -1,14 +1,14 @@
 ---
-title: "Certificates2 を管理するためのベスト プラクティス |Microsoft ドキュメント"
-ms.custom: 
+title: Certificates2 を管理するためのベスト プラクティス |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 71fa00cc-2e0c-46b3-ae62-f130a5b5f4f5
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008619"
 ---
 # <a name="best-practices-for-managing-certificates"></a>証明書を管理するためのベスト プラクティス
 このセクションでは、Microsoft BizTalk Server 環境で証明書を管理するためのベスト プラクティスを説明します。  

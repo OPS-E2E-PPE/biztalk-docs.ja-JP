@@ -1,11 +1,11 @@
 ---
-title: "式を使用してパイプラインを実行する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 式を使用してパイプラインを実行する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ExecuteReceivePipeline() method
@@ -27,7 +27,7 @@ helpviewer_keywords:
 - pipelines, orchestrations
 - Message Assignment shape [Orchestration Designer], pipelines
 ms.assetid: f947fa73-526c-4747-8de7-df557a93056c
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -36,6 +36,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974656"
 ---
 # <a name="how-to-use-expressions-to-execute-pipelines"></a>パイプラインを実行する式の使用方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、オーケストレーション内からパイプラインを同期的に呼び出すことができます。 これにより、オーケストレーションで、パイプライン (送信または受信) にカプセル化されたメッセージ処理をデータの本体に対して利用することができます。そのデータをメッセージング インフラストラクチャに送信する必要はありません。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
  オーケストレーション内のメソッドを使用して、 **XLANGPipelineManager**クラス (で、 **Microsoft.XLANGs.Pipeline**名前空間) を呼び出して送信または受信パイプラインです。  受信パイプラインは、BizTalk メッセージングのメッセージ受信のコンテキストでパイプラインが実行される場合と同じように、単一のメッセージまたはインターチェンジを処理して 0 個以上のメッセージを生成します。 送信パイプラインも、BizTalk メッセージングのメッセージ送信のコンテキストでパイプラインが実行される場合と同じように、1 つ以上のメッセージを処理して単一のメッセージまたはインターチェンジを生成します。  
   
 ## <a name="calling-a-receive-pipeline"></a>受信パイプラインの呼び出し  
- アプリケーションの呼び出し、オーケストレーション内から受信パイプラインを呼び出すために、 **ExecuteReceivePipeline()**のメソッド、 **XLANGPipelineManager**クラスです。  このメソッドは、単一のインターチェンジを消費し、0 個以上のメッセージのコレクションを返します (のインスタンスに含まれている、 **ReceivePipelineOutputMessages**クラス)。 このメソッドの構文の詳細については、.NET クラス ライブラリ参照を**XLANGPipelineManager**クラスです。  
+ アプリケーションの呼び出し、オーケストレーション内から受信パイプラインを呼び出すために、 **ExecuteReceivePipeline()** のメソッド、 **XLANGPipelineManager**クラスです。  このメソッドは、単一のインターチェンジを消費し、0 個以上のメッセージのコレクションを返します (のインスタンスに含まれている、 **ReceivePipelineOutputMessages**クラス)。 このメソッドの構文の詳細については、.NET クラス ライブラリ参照を**XLANGPipelineManager**クラスです。  
   
  オーケストレーションから受信パイプラインを実行するための API を以下に示します。  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 11/28/2017
 >  呼び出すときに**PassThruReceive**ように、着信メッセージの種類に関係なく System.Xml.XmlDocument が XML か、受信メッセージの変数の型を宣言する必要がありますパイプラインまたはオーケストレーション内からカスタム パイプライン コンポーネントでは、. したがって、受信メッセージが XML メッセージ以外 (フラット ファイル形式のメッセージなど) の場合は、処理しようとすると例外が発生します。 これは、オーケストレーション エンジンが上記のシナリオでは受信メッセージの種類に関係なく System.Xml.XmlDocument を使用するためです。  
   
 ## <a name="calling-a-send-pipeline"></a>送信パイプラインの呼び出し  
- アプリケーションの呼び出し、オーケストレーション内から送信パイプラインを呼び出す、 **ExecuteSendPipeline()**のメソッド、 **XLANGPipelineManager**クラスです。 このメソッドは、1 つまたは複数のメッセージのコレクション (のインスタンスに含まれている、 **SendPipelineInputMessages**クラス) を 1 つのインターチェンジを返します。 このメソッドの構文の詳細については、.NET クラス ライブラリ参照を**XLANGPipelineManager**クラスです。  送信パイプラインの実行、新しいインターチェンジへの呼び出しを生成するため**ExecuteSendPipeline()**メソッドは、メッセージの割り当て図形、よう内で行う必要があります。  
+ アプリケーションの呼び出し、オーケストレーション内から送信パイプラインを呼び出す、 **ExecuteSendPipeline()** のメソッド、 **XLANGPipelineManager**クラスです。 このメソッドは、1 つまたは複数のメッセージのコレクション (のインスタンスに含まれている、 **SendPipelineInputMessages**クラス) を 1 つのインターチェンジを返します。 このメソッドの構文の詳細については、.NET クラス ライブラリ参照を**XLANGPipelineManager**クラスです。  送信パイプラインの実行、新しいインターチェンジへの呼び出しを生成するため**ExecuteSendPipeline()** メソッドは、メッセージの割り当て図形、よう内で行う必要があります。  
   
  オーケストレーションから送信パイプラインを実行するための API を以下に示します。  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 11/28/2017
  重複するスキーマが展開されていた場合に適切なスキーマを選択するアルゴリズムのロジックは、メッセージング インフラストラクチャのコンテキストで実行された場合に使用されるものと同じです。  
   
 ### <a name="transactional-pipelines"></a>トランザクション パイプライン  
- トランザクション コンポーネントを呼び出すステージがあるパイプラインでは、トランザクション コンテキストを使用できません。  すべての呼び出しに**IPipelineContext.GetTransaction()**がスローされます**NotSupportedException**です。  このようなパイプラインをオーケストレーションから実行できないわけではありませんが、パイプラインでこの状況を検出して処理する必要があります。  
+ トランザクション コンポーネントを呼び出すステージがあるパイプラインでは、トランザクション コンテキストを使用できません。  すべての呼び出しに**IPipelineContext.GetTransaction()** がスローされます**NotSupportedException**です。  このようなパイプラインをオーケストレーションから実行できないわけではありませんが、パイプラインでこの状況を検出して処理する必要があります。  
   
 ### <a name="message-destination"></a>メッセージ送信先  
  パイプライン コンポーネントによるメッセージ送信先の制御は、このコンテキストではサポートされません。  コンテキスト プロパティを設定**MessageDestination**または**SuspendOnRoutingFailure**により、 **XLANGPipelineManagerException**がスローされます。  

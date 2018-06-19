@@ -1,14 +1,14 @@
 ---
-title: "BizTalk フラット ファイル スキーマ ウィザードを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk フラット ファイル スキーマ ウィザードを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7cb8b18-266d-422e-bdb8-1efefb6b4c8e
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258298"
 ---
 # <a name="how-to-use-biztalk-flat-file-schema-wizard"></a>BizTalk フラット ファイル スキーマ ウィザードの使用方法
 BizTalk Server の以前のリリースでは、XSD (XML スキーマ定義) 言語のスキーマをフラット ファイル パイプライン コンポーネント (フラット ファイル アセンブラーやフラット ファイル逆アセンブラーなど) に認識させるには、BizTalk スキーマ エディターでスキーマに注釈を手動で追加する必要がありました。 同様の操作は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のスキーマ エディターでも行うことができますが、 ソリューションの作成で手動による操作と時間を減らすために、BizTalk フラット ファイル スキーマ ウィザードを使用することをお勧めします。このウィザードは、次の機能を備えています。  
@@ -56,7 +57,7 @@ BizTalk Server の以前のリリースでは、XSD (XML スキーマ定義) 言
   
     3.  **名前**テキスト ボックスで、新しいスキーマの名前を入力します。  
   
-    4.  **[追加]**をクリックします。  
+    4.  **[追加]** をクリックします。  
   
          BizTalk フラット ファイル スキーマ ウィザードが開きます。  
   
@@ -74,7 +75,7 @@ BizTalk Server の以前のリリースでは、XSD (XML スキーマ定義) 言
   
     3.  **名前**テキスト ボックスで、新しいスキーマの名前を入力します。  
   
-    4.  **[追加]**をクリックします。  
+    4.  **[追加]** をクリックします。  
   
     5.  右クリック**ルート**選択**フラット ファイル インスタンスからレコードを定義**です。  
   
@@ -210,7 +211,7 @@ BizTalk Server の以前のリリースでは、XSD (XML スキーマ定義) 言
 > [!NOTE]
 >  前に感嘆符が表示されます、**子ノード**次のインスタンスで。  
   
--   **フィールド属性**後に定義されて**フィールド要素**、**レコード、**または**繰り返しレコード**です。  
+-   **フィールド属性**後に定義されて**フィールド要素**、**レコード、** または**繰り返しレコード**です。  
   
 -   子要素に名前がない。  
   

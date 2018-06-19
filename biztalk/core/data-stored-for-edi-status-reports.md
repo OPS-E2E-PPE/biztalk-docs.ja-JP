@@ -1,14 +1,14 @@
 ---
-title: "EDI 状態レポートに格納されているデータ |Microsoft ドキュメント"
-ms.custom: 
+title: EDI 状態レポートに格納されているデータ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec66e4d7-2694-499f-a60c-2f80fe643e12
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970624"
 ---
 # <a name="data-stored-for-edi-status-reports"></a>EDI 状態レポート用に格納されるデータ
 2 つのレベルのレポートを EDI 状態レポートで利用可能: 最初の場合、**レポートをオンに**アグリーメント、および 2 番目の場合は、プロパティが選択されている、**ストア トランザクション セット/ペイロードを reporting**アグリーメントのプロパティが選択されます。 これらのプロパティで使用可能な**全般プロパティ**のページ、**全般** タブで、**アグリーメントのプロパティ** ダイアログ ボックス。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/28/2017
 |TransactionSetStatus|Accepted、AcceptedWithError、または Rejected|  
 |Direction|Send または Receive|  
 |BtsProcessingTime|受信側: BTSReceiveTime (ローカル時刻) (パイプラインで設定された時刻)<br /><br /> 送信側: BTSSendTime (ローカル時刻) (ASM コンポーネントによってエンベロープに設定された時刻)|  
-|BTS.MessageId|受信側: メッセージ プロパティの BTSMessageId<br /><br /> 送信側 : <br /><br /> 単一のトランザクション セットの場合: BTSMessageId<br /><br /> 送信バッチの: (バッチ メッセージの BTSMessageId でなく) のバッチで各メッセージの TransactionSet BTSMessageId**注:**記憶域のみ – はない UI に表示します。|  
+|BTS.MessageId|受信側: メッセージ プロパティの BTSMessageId<br /><br /> 送信側 : <br /><br /> 単一のトランザクション セットの場合: BTSMessageId<br /><br /> 送信バッチの: (バッチ メッセージの BTSMessageId でなく) のバッチで各メッセージの TransactionSet BTSMessageId**注:** 記憶域のみ – はない UI に表示します。|  
   
 ## <a name="see-also"></a>参照  
  [格納されている EDI および AS2 状態レポートのデータ](../core/data-stored-for-edi-and-as2-status-reports.md)   

@@ -1,14 +1,14 @@
 ---
-title: "ビジュアルの Siebel システムへの接続 Studio を使用して、アダプター メタデータのウィザードを追加 |Microsoft ドキュメント"
-ms.custom: 
+title: ビジュアルの Siebel システムへの接続 Studio を使用して、アダプター メタデータのウィザードを追加 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e0a82fcc-b3ac-4936-9210-03c99d3741d7
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222770"
 ---
 # <a name="connect-to-the-siebel-system-in-visual-studio-using-add-adapter-metadata-wizard"></a>ビジュアルの Siebel システムへの接続 Studio を使用して、アダプター メタデータのウィザードを追加
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]は BizTalk アダプターとしても公開し、そのため、使用することができます、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]アダプターを使用して、Siebel システムに対して実行する操作のスキーマを生成します。  
@@ -39,14 +40,14 @@ ms.lasthandoff: 09/20/2017
         |**カテゴリ**|をクリックして**アダプター サービスの使用**です。|  
         |**[テンプレート]**|をクリックして**アダプター サービスの使用**です。|  
   
-    4.  **[追加]**をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
+    4.  **[追加]** をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
   
     5.  [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、WCF Siebel を選択します。 コンピューターを選択して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]がインストールされていると、BizTalk データベースの名前。  
   
         > [!IMPORTANT]
         >  既に存在する場合、 **Wcf-siebel**で構成されている BizTalk のポートからポートを選択して、**ポート** ボックスの一覧です。  
   
-    6.  **[次へ]**をクリックします。  
+    6.  **[次へ]** をクリックします。  
   
 2.  **バインディングを選択**ドロップダウン リスト、選択**siebelBinding**、クリックして**構成**です。  
   
@@ -64,9 +65,9 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  使用してメタデータを生成する場合[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]と既存の WCF Siebel 送信ポートを選択して、バインドのプロパティを指定する必要はありません。 バインドのプロパティは、送信ポートの構成から取得されます。 ただし、存在する場合、デザイン時に、必要なバインドのプロパティを指定することもできます。 このような場合、メタデータの生成中にバインドのプロパティの新しい値をデザイン時に使用されます。 ただし、実行時に、バインドの送信ポートの構成のプロパティの指定値適用されます。  
   
-7.  **[OK]**をクリックします。  
+7.  **[OK]** をクリックします。  
   
-8.  **[接続]**をクリックします。 接続が確立されると、接続状態は表示**接続**です。  
+8.  **[接続]** をクリックします。 接続が確立されると、接続状態は表示**接続**です。  
   
      次の図に示しています、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続が確立された後にすぐにします。  
   

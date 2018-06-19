@@ -1,11 +1,11 @@
 ---
-title: "チュートリアル: XML エンベロープ (基本) の使用 |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: XML エンベロープ (基本) の使用 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - content-based routing, promoting properties
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - routing, messages
 - routing, promoting properties
 ms.assetid: 02d0c596-0cfe-4bae-9f1b-d7dbc17e18a9
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975757"
 ---
 # <a name="walkthrough-using-xml-envelopes-basic"></a>チュートリアル: を使用して XML エンベロープ (Basic)
 この例では、架空のエラー追跡システムを実装して、基本的な XML エンベロープの逆アセンブルを示します。 この例は次の要件を満たしています。  
@@ -105,7 +106,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  ルート ノードの名前を "ルート" から "エンベロープ" に変更します。  
   
-4.  次に、スキーマをエンベロープ スキーマとしてマークします。 クリックして、 **\<スキーマ\>**ノード。 プロパティ ペインで、スキーマ参照プロパティを設定**エンベロープ**に`OK`です。  
+4.  次に、スキーマをエンベロープ スキーマとしてマークします。 クリックして、 **\<スキーマ\>** ノード。 プロパティ ペインで、スキーマ参照プロパティを設定**エンベロープ**に`OK`です。  
   
 5.  設定、**ボディ XPath**プロパティです。 これを行うをクリックして、**エンベロープ**ノード。 [プロパティ] ウィンドウで、省略記号ボタンをクリックして (**.**) ボタンをクリックして、**ボディ XPath**プロパティを選択**エンベロープ**、順にクリック**OK**です。  
   
@@ -141,9 +142,9 @@ ms.lasthandoff: 11/28/2017
   
 ##### <a name="to-deploy-basicxmlenvelope"></a>BasicXMLEnvelope を配置するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、選択**[BasicXMLEnvelope の配置**ビルド] メニューからです。 この操作により、BizTalk Server に "BasicXMLEnvelope" アプリケーションとしてビルドおよび配置されます。  
+1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、選択 **[BasicXMLEnvelope の配置**ビルド] メニューからです。 この操作により、BizTalk Server に "BasicXMLEnvelope" アプリケーションとしてビルドおよび配置されます。  
   
-2.  BizTalk Server 管理コンソールで、展開、**アプリケーション**ことを確認するグループ**[basicxmlenvelope]**が、カスタム アプリケーションとして存在します。  
+2.  BizTalk Server 管理コンソールで、展開、**アプリケーション**ことを確認するグループ **[basicxmlenvelope]** が、カスタム アプリケーションとして存在します。  
   
 ##### <a name="to-configure-the-receive-port"></a>受信ポートを構成するには  
   
@@ -196,7 +197,7 @@ ms.lasthandoff: 11/28/2017
   
 ##### <a name="to-configure-the-example-for-recoverable-interchange-processing"></a>回復可能なインターチェンジ処理の例を構成するには  
   
-1.  BizTalk Server 管理コンソールで、展開、 **[basicxmlenvelope]**アプリケーションでは、をクリックして**受信ポート**、し、受信ポートをダブルクリックします。 これは既に作成したポートです。  
+1.  BizTalk Server 管理コンソールで、展開、 **[basicxmlenvelope]** アプリケーションでは、をクリックして**受信ポート**、し、受信ポートをダブルクリックします。 これは既に作成したポートです。  
   
 2.  **受信ポートのプロパティ**ダイアログ ボックスで、をクリックして**受信場所**です。 をクリックして**プロパティ**を呼び出すこと、 **ReceiveError 受信場所のプロパティ** ダイアログ ボックス。 省略記号ボタン (**.**) ボタンをクリックして、**受信パイプライン**です。  
   
@@ -242,7 +243,7 @@ ms.lasthandoff: 11/28/2017
   
 ##### <a name="to-promote-the-priority-field-in-the-error-schema"></a>[エラー] スキーマの "優先度" フィールドを昇格させるには  
   
-1.  **[Basicxmlenvelope]**でプロジェクトを開いて[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]を開き、**エラー**スキーマを展開し、**エラー**ノード。  
+1.  **[Basicxmlenvelope]** でプロジェクトを開いて[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]を開き、**エラー**スキーマを展開し、**エラー**ノード。  
   
 2.  右クリックし、**優先度**要素を指す**昇格**、順にクリック**クイック昇格**です。  
   
@@ -294,7 +295,7 @@ ms.lasthandoff: 11/28/2017
   
 ##### <a name="to-test-the-routing-solution"></a>ソリューションのルーティングをテストするには  
   
-1.  BizTalk Server 管理コンソールで、展開、**アプリケーション**グループで、右クリックし、 **[basicxmlenvelope]**クリックしてアプリケーションでは、**開始**です。 確認するメッセージが表示されたら、クリックして**開始**です。 これにより、新しい送信ポートが参加します。  
+1.  BizTalk Server 管理コンソールで、展開、**アプリケーション**グループで、右クリックし、 **[basicxmlenvelope]** クリックしてアプリケーションでは、**開始**です。 確認するメッセージが表示されたら、クリックして**開始**です。 これにより、新しい送信ポートが参加します。  
   
 2.  受信場所にテスト メッセージをドロップします。 エラー メッセージが異なる送信場所にルーティングされていることに注意してください。  
   

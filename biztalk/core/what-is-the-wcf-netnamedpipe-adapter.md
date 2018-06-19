@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289250"
 ---
 # <a name="what-is-the-wcf-netnamedpipe-adapter"></a>Wcf-netnamedpipe アダプタとは何ですか。
 WCF-NetNamedPipe アダプタは、サービスとクライアントの両方が WCF ベースである環境において、同一コンピュータ上でのプロセス間通信を可能にします。 このアダプタからは、SOAP の信頼性機能とトランザクション機能にフル アクセスできます。 このアダプタでは名前付きパイプ トランスポートが使用され、メッセージではバイナリ エンコードが使用されます。 コンピュータ間通信ではこのアダプタを使用できません。  

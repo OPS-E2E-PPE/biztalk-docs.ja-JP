@@ -1,14 +1,14 @@
 ---
-title: "ユーザー コード内の参照をメッセージ |Microsoft ドキュメント"
-ms.custom: 
+title: ユーザー コード内の参照をメッセージ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a1584be-35fd-4dc2-a5a9-559300e67e0e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263250"
 ---
 # <a name="message-references-in-user-code"></a>ユーザー コードでのメッセージ参照
 メッセージが構築された時点では、メッセージ ボックス データベースとコンピューターのメモリにメッセージ表現が存在します。 メッセージ参照を .NET オブジェクトまたは外部アセンブリに渡し、この .NET オブジェクトまたは外部アセンブリでコンピューターのメモリにあるメッセージ表現を変更することによってメッセージ割り当てを行った場合、BizTalk オーケストレーション エンジンではその変更が認識されません。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "26010267"
 ---
 # <a name="automating-the-build-process"></a>ビルド プロセスを自動化します。
 自動ビルド プロセスは、コンパイル、展開され、通常、あらかじめ決められた間隔でプロジェクトの最新のソース コードに対するビルド確認テスト (Bvt) を実行します。 「ビルド レポートを」ビルド処理の成否の詳細には、プロジェクトの利害関係者に配布します。 ビルド レポートを分析して、プロジェクトの区分が注意を払い、プロジェクトを以前のバージョン/ビルド ロールバックかどうかに必要かを判断します。  

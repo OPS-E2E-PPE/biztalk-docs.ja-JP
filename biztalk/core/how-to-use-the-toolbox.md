@@ -1,11 +1,11 @@
 ---
-title: "ツールボックスを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: ツールボックスを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, pipelines
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Pipeline Designer, toolbox
 - pipelines, creating
 ms.assetid: 7a60c590-1a38-46fe-addf-0aa2c8b63cf9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257274"
 ---
 # <a name="how-to-use-the-toolbox"></a>ツールボックスの使用方法
 パイプラインを作成する場合は、コンポーネント (図形) をツールボックスからデザイン画面にドラッグします。 パイプライン デザイナーでは、作成プロセスに特定の制限を設けることによって、有効なパイプラインをアセンブルできます。 作成しているパイプラインの種類に適用できるツールボックス コンポーネントのみ選択できます。 たとえば、受信パイプラインの場合は有効なツールボックス コンポーネントとしてデコーダー、逆アセンブラー、および検証が示されますが、エンコードとアセンブラーは無効 (淡色表示) になります。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-add-a-pipeline-component-to-the-toolbox"></a>パイプライン コンポーネントをツールボックスに追加するには  
   
-1.  **[ツール]** メニューで **[ツールボックス アイテムの選択]**をクリックします。  
+1.  **[ツール]** メニューで **[ツールボックス アイテムの選択]** をクリックします。  
   
      - または -  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  ツールボックスに追加するコンポーネントを選択します。  
   
-4.  **[OK]**をクリックします。 コンポーネントが表示されます、 **BizTalk パイプライン コンポーネント**ツールボックス タブをクリックします。  
+4.  **[OK]** をクリックします。 コンポーネントが表示されます、 **BizTalk パイプライン コンポーネント**ツールボックス タブをクリックします。  
   
 ### <a name="to-remove-a-pipeline-component-from-the-toolbox"></a>パイプライン コンポーネントをツールボックスから削除するには  
   

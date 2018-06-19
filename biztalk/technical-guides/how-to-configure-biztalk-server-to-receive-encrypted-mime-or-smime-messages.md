@@ -1,14 +1,14 @@
 ---
-title: "暗号化された MIME または SMIME メッセージを受信する BizTalk Server を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 暗号化された MIME または SMIME メッセージを受信する BizTalk Server を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d72002c8-6bd8-458f-8149-1c0c4cbbb682
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008763"
 ---
 # <a name="how-to-configure-biztalk-server-to-receive-encrypted-mime-or-smime-messages"></a>暗号化された MIME または SMIME メッセージを受信する BizTalk Server を構成する方法
 このトピックは、構成する方法を説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]暗号化 MIME/SMIME メッセージを受信する証明書を使用します。 以下の手順は、AS2 トランスポート経由での暗号化されたメッセージの受信の構成にも適用されます。  

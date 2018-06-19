@@ -1,14 +1,14 @@
 ---
-title: "0c2 要求 0 C 2 応答へマップ サンプル |Microsoft ドキュメント"
-ms.custom: 
+title: 0c2 要求 0 C 2 応答へマップ サンプル |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 012d663a-71f0-4509-85b7-f2068176bde2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004987"
 ---
 # <a name="0c2-request-to-0c2-response-map-sample"></a>0c2 要求 0 C 2 応答へマップ サンプル
 _0C2RequestMessageTo0C2ResponseMessage.btm サンプルは、0C2 要求メッセージを 0C2 応答メッセージにマップする方法を示します。  

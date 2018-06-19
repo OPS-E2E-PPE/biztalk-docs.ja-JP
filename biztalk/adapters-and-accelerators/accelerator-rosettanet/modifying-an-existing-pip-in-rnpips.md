@@ -1,11 +1,11 @@
 ---
-title: "Rnpip の既存の PIP の変更 |Microsoft ドキュメント"
-ms.custom: 
+title: Rnpip の既存の PIP の変更 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RNPIPs
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - PIPs, modifying
 - assemblies, RNPIPs
 ms.assetid: f2ed25c4-1979-4691-9315-e7568e7cca8b
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006291"
 ---
 # <a name="modifying-an-existing-pip-in-rnpips"></a>Rnpip の既存の PIP の変更
 このトピックを変更し、再デプロイしてインストール プロセス PIP (Partner Interface) スキーマの 1 つの方法について説明[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]セットアップします。 スキーマは、RNPIP アセンブリの一部として展開します。  
@@ -41,9 +42,9 @@ ms.lasthandoff: 12/01/2017
   
 5.  **ファイル** メニューのをポイント**開く**、クリックして**プロジェクト**です。  
   
-6.  **プロジェクトを開く**] ダイアログ ボックスに移動\<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\クリックして、スキーマ**[RNPIPs.btproj**です。  
+6.  **プロジェクトを開く**] ダイアログ ボックスに移動\<*ドライブ*\>\Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\クリックして、スキーマ **[RNPIPs.btproj**です。  
   
-7.  **ビュー**  メニューをクリックして**BizTalk エクスプ ローラー**です。 展開**アセンブリ**、し、右クリックし、 **Microsoft.Solutions.BTARN.Schemas.RNPIPs(3.3.0.0)**です。 をクリックして**展開解除**です。  
+7.  **ビュー**  メニューをクリックして**BizTalk エクスプ ローラー**です。 展開**アセンブリ**、し、右クリックし、 **Microsoft.Solutions.BTARN.Schemas.RNPIPs(3.3.0.0)** です。 をクリックして**展開解除**です。  
   
 8.  開始**Visual Studio 2012 コマンド プロンプト**です。  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 12/01/2017
   
 17. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
   
-18. BizTalk 管理コンソールで、展開**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(ローカル)**の順に展開および**ホスト**です。  
+18. BizTalk 管理コンソールで、展開**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(ローカル)** の順に展開および**ホスト**です。  
   
 19. 右側のウィンドウで、ホストの名前を右クリックし、をクリックして**停止**です。 サービスが停止した後、ホストの名前を右クリックし、をクリックして**開始**です。  
   

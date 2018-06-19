@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server の仮想化のパフォーマンスのテスト |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server の仮想化のパフォーマンスのテスト |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d09121b1-cdd6-4c01-9d69-0f1923464f0e
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008571"
 ---
 # <a name="testing-biztalk-server-virtualization-performance"></a>BizTalk Server の仮想化のパフォーマンスをテストします。
 Microsoft テスト ラボで物理コンピューターに展開されたそれぞれのこのガイドで説明されているパフォーマンス テストのシナリオと、それぞれ個別のシステム アーキテクチャが同じロード テストが実行されます。 各物理コンピュータ上のホスト オペレーティング システムがのフル インストールであった[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]Enterprise、64 ビット版で、HYPER-V サーバーの役割がインストールされています。 BizTalk Server をテストするために使用する仮想マシンに設定された[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]Enterprise、ゲスト オペレーティング システムと 64 ビット エディションです。 SQL Server をテストするために使用するバーチャル マシンで設定した[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]Enterprise、ゲスト オペレーティング システムと 64 ビット エディションです。 一連のベスト プラクティスとの設計、実装、ガイダンスの策定に使用されたテストのシナリオ、テスト メソッド、パフォーマンス テストの結果、およびその後の分析と仮想化を最適化して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。  

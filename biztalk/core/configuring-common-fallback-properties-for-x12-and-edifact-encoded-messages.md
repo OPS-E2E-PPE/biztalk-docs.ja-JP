@@ -1,14 +1,14 @@
 ---
-title: "エンコードされたメッセージの共通フォールバック プロパティの X12 および EDIFACT の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: エンコードされたメッセージの共通フォールバック プロパティの X12 および EDIFACT の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7393d6ac-b901-43ef-a8d6-c5b0b3033257
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006035"
 ---
 # <a name="configuring-common-fallback-properties-for-x12-and-edifact-encoded-messages"></a>X12 および EDIFACT でエンコードされたメッセージの共通フォールバック プロパティの構成
 フォールバック プロパティは、X12 (HIPAA を含む) でエンコードされたインターチェンジと EDIFACT でエンコードされたインターチェンジの両方に適用されます。 すべてのフォールバック アグリーメント プロパティと同じく、これらのプロパティは、受信メッセージまたは送信メッセージが解決されるアグリーメントを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が特定していない場合にのみ適用されます。  

@@ -1,17 +1,17 @@
 ---
-title: "Siebel アダプターと BizTalk アプリケーションを作成するビルド ブロック |Microsoft ドキュメント"
-ms.custom: 
+title: Siebel アダプターと BizTalk アプリケーションを作成するビルド ブロック |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - developing BizTalk applicatons, run-time tasks
 - developing BizTalk applications, design-time tasks
 ms.assetid: 76204181-18ad-43b5-b589-539aafd66835
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222594"
 ---
 # <a name="building-blocks-to-create-biztalk-applications-with-the-siebel-adapter"></a>Siebel アダプターと BizTalk アプリケーションを作成する構成要素
 Siebel システムを使用して、上の操作を実行する[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アクティビティの 2 つのセットが含まれます: デザイン時および実行時のアクティビティ。 使用して、Siebel システムに対して操作を実行する、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を使用して、デザイン時および実行時のタスクのセットを実行する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]と[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールをそれぞれします。 このセクションでは、これらのタスクの概要を示します。 すべてトピックでは、ここでは、Siebel システムを使用して、特定の操作を実行する方法を示す[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、これらの高度なタスクでは、モデル化します。  

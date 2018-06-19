@@ -1,14 +1,14 @@
 ---
-title: "エンタープライズ シングル サインオンのトラブルシューティング |Microsoft ドキュメント"
-ms.custom: 
+title: エンタープライズ シングル サインオンのトラブルシューティング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cb54af9f-a6ef-46c1-b987-2019cff3f837
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975312"
 ---
 # <a name="troubleshooting-enterprise-single-sign-on"></a>エンタープライズ シングル サインオンのトラブルシューティング
 このトピックでは、エンタープライズ シングル サインオン (SSO) の使用中に発生する可能性のある一般的な問題について説明します。  
@@ -25,17 +26,17 @@ ms.lasthandoff: 11/28/2017
   
 |質問|コメント|  
 |--------------|--------------|  
-|アプリケーション イベント ログに SSO システムからのメッセージが記録されていないか。|イベント ログ内の SSO のメッセージは、SSO システムの問題を絞り込むのに役立ちます。 SSO システムからのメッセージのソースは ENTSSO です。 **重要:**エラーではなく、イベント ログに警告として表示 SSO エラーやイベントの多くです。 SSO システムでは、SSO サービスの単一クライアントにのみ影響する問題を警告として、SSO システム全体 (すべてのクライアント) に影響する問題をエラーとして生成します。|  
+|アプリケーション イベント ログに SSO システムからのメッセージが記録されていないか。|イベント ログ内の SSO のメッセージは、SSO システムの問題を絞り込むのに役立ちます。 SSO システムからのメッセージのソースは ENTSSO です。 **重要:** エラーではなく、イベント ログに警告として表示 SSO エラーやイベントの多くです。 SSO システムでは、SSO サービスの単一クライアントにのみ影響する問題を警告として、SSO システム全体 (すべてのクライアント) に影響する問題をエラーとして生成します。|  
 |SSO サービスが正常にインストールされているか。<br /><br /> 正常に起動されるか。<br /><br /> どのサービス アカウントが SSO サービスを実行しているか。|SSO サービスが正常にインストールされていることと、SSO サービスのサービス アカウントが SSO 管理者グループのメンバーであることを確認します。|  
 |SSO データベースはどこにあるか。|コマンド ライン **ssoconfig -showdb**を使用してください。 このコマンドの詳細については、次を参照してください。 [SSO データベース情報を表示する方法](../core/how-to-display-the-sso-database-information.md)です。|  
 |どの SSO サーバーが使用されているか。|コマンド ライン **ssomanage -showserver**を使用してください。 このコマンドの詳細については、次を参照してください。 [SSO サーバーを設定する方法](../core/how-to-set-the-sso-server.md)です。|  
 |SSO 管理者アカウントは何か。|コマンド ライン **ssomanage –displaydb**を使用してください。 このコマンドの詳細については、次を参照してください。 [SSO データベース情報を表示する方法](../core/how-to-display-the-sso-database-information.md)です。|  
 |すべてが正しく有効化されているか。|コマンド ライン **ssomanage –displaydb**を使用してください。 このコマンドの詳細については、次を参照してください。 [SSO データベース情報を表示する方法](../core/how-to-display-the-sso-database-information.md)です。|  
 |関連アプリケーションはあるか。|コマンド ライン **ssomanage –listapps all**を使用してください。 このコマンドの詳細については、次を参照してください。[関連アプリケーションの一覧を方法](../core/how-to-list-affiliate-applications.md)です。|  
-|特定の関連アプリケーションが正常に実行されているか。<br /><br /> どのアカウントがこの関連アプリケーションを使用しているか。|コマンドラインを使用して**ssomanage – displayapp***\<アプリケーション名\>*です。 このコマンドの詳細については、次を参照してください。[関連アプリケーションのプロパティを一覧表示する方法](../core/how-to-list-the-properties-of-an-affiliate-application.md)です。|  
-|この関連アプリケーションにマッピングがあるか。|コマンドラインを使用して**ssomanage – listmappings***\<アプリケーション名\>*です。 このコマンドの詳細については、次を参照してください。[一覧のユーザーのマッピング方法](../core/how-to-list-user-mappings.md)です。|  
+|特定の関連アプリケーションが正常に実行されているか。<br /><br /> どのアカウントがこの関連アプリケーションを使用しているか。|コマンドラインを使用して**ssomanage – displayapp***\<アプリケーション名\>* です。 このコマンドの詳細については、次を参照してください。[関連アプリケーションのプロパティを一覧表示する方法](../core/how-to-list-the-properties-of-an-affiliate-application.md)です。|  
+|この関連アプリケーションにマッピングがあるか。|コマンドラインを使用して**ssomanage – listmappings***\<アプリケーション名\>* です。 このコマンドの詳細については、次を参照してください。[一覧のユーザーのマッピング方法](../core/how-to-list-user-mappings.md)です。|  
 |どのアカウントが SSO グループのメンバーか。|すべての SSO グループとアカウントについてグループのメンバーシップを確認します。|  
-|SSO サーバーの COM+ アプリケーションは正常に動作しているか。|SSO サーバーの COM+ アプリケーションを確認します。 **注:**イベント メッセージと警告メッセージなど、詳細な情報についてイベント ログを確認することもできます。|  
+|SSO サーバーの COM+ アプリケーションは正常に動作しているか。|SSO サーバーの COM+ アプリケーションを確認します。 **注:** イベント メッセージと警告メッセージなど、詳細な情報についてイベント ログを確認することもできます。|  
   
 ## <a name="known-issues"></a>既知の問題  
   

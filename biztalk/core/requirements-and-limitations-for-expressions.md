@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Expression Editor
 - Expression Editor, Orchestration Designer
 ms.assetid: 1e0353d3-c2f3-4c10-86e3-8620e62dd0d5
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22268386"
 ---
 # <a name="requirements-and-limitations-for-expressions"></a>式の要件と制限事項
 オーケストレーション デザイナーの BizTalk 式エディターは、IntelliSense を備えた標準の Visual Studio テキスト エディターです。 BizTalk 式エディターは、テキスト形式で式を入力するために使用します。  

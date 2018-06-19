@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255890"
 ---
 # <a name="how-to-modify-rate-based-throttling-settings"></a>比率ベースでの制限の設定を変更する方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の比率ベースでの制限は、メッセージ ボックスに公開されたメッセージの受信および配信または処理を行うオーケストレーションまたは送信アダプターを含むホスト インスタンスに適用されます。 [!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] を使用することにより、BizTalk グループ全体で、特定のホストの比率ベースでの制限の構成設定を変更できます。 これらの設定は、特定のホストに割り当てられているすべてのホスト インスタンスに適用されます。 このトピックでは、これらの設定を変更する手順を説明します。  

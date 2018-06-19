@@ -1,14 +1,14 @@
 ---
-title: "データベースのテストの計画 |Microsoft ドキュメント"
-ms.custom: 
+title: データベースのテストの計画 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a4cf5e1f-a960-4702-a050-a2cdacddcbca
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010139"
 ---
 # <a name="planning-for-database-testing"></a>データベースのテストの計画
 完全な負荷が BizTalk ソリューションのテストは、ultimate の成功または失敗、ソリューションで目立つように判別されます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンスがのパフォーマンスに依存するので、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース、テストし、BizTalk ソリューションのテストに頻繁に焦点を当てていますの最適化と最適化を実行しているコンピューターの[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]を収容する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。  

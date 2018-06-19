@@ -1,11 +1,11 @@
 ---
-title: "経由でメッセージの受信場所と InfoPath フォームを送信する |Microsoft ドキュメント"
-ms.custom: 
+title: 経由でメッセージの受信場所と InfoPath フォームを送信する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, receive locations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, InfoPath forms
 - InfoPath forms, messages
 ms.assetid: e8676830-3fbc-423f-82f6-03e6a532075f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005123"
 ---
 # <a name="submitting-messages-through-receive-locations-and-infopath-forms"></a>経由して送信メッセージの受信場所と InfoPath フォーム
 受信場所への発信メッセージを受信する[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]アプリケーションです。 定義することが指定されたトランスポート プロトコルを使用してメッセージを受信するように構成する物理エンドポイントとしての受信場所。 たとえば、ファイル トランスポートを使用して、特定のファイル システム フォルダーにドロップされた受信ファイルを受信場所を構成する可能性があります。  

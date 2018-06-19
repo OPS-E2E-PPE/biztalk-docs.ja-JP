@@ -1,17 +1,17 @@
 ---
-title: "BizTalk メッセージ キューの大きいメッセージ用拡張機能 |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk メッセージ キューの大きいメッセージ用拡張機能 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Message Queuing Large Message Extension
 - utilities, BizTalk Message Queuing Large Message Extension
 ms.assetid: 5d6892d3-fda8-41a3-8111-d28c11bd71fb
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006403"
 ---
 # <a name="biztalk-message-queuing-large-message-extension"></a>BizTalk メッセージ キューのサイズの大きいメッセージ用拡張機能
 4megabytes よりも大きい本体を持つメッセージを処理できないネイティブのメッセージ キュー (MB)。 ただし、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、4 MB を超えるメッセージを処理できるようにする、ネイティブのメッセージ キュー用のアドオンが用意されています。 このアドオンは、Mqrtlarge.dll ファイルとして提供され、公開、 **MQSendLargeMessage**と**MQReceiveLargeMessage**アプリケーション プログラミング インターフェイス (Api)、および COM 類似モデル。 これらの関数は、標準メッセージ キュー Api として実装されて**MQSendMessage**と**MQReceiveMessage**それぞれします。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 12/01/2017
   
 |ファイル|Description|  
 |---------------|-----------------|  
-|Mqrtlarge.dll|公開する Win32 ダイナミック リンク ライブラリ**MQSendLargeMessage**と**MQReceiveLargeMessage**です。<br /><br /> ヘッダー ファイルに配置されます、 *\<インストール パス\>*\SDK\Include ディレクトリ。 **注:**インストールする必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]64 ビット版の Mqrtlarge.dll にアクセスするために Windows の 64 ビット バージョンにします。|  
+|Mqrtlarge.dll|公開する Win32 ダイナミック リンク ライブラリ**MQSendLargeMessage**と**MQReceiveLargeMessage**です。<br /><br /> ヘッダー ファイルに配置されます、 *\<インストール パス\>* \SDK\Include ディレクトリ。 **注:** インストールする必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]64 ビット版の Mqrtlarge.dll にアクセスするために Windows の 64 ビット バージョンにします。|  
   
  **このユーティリティの使用**  
   

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk server 環境のプランニング |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk server 環境のプランニング |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3e9ef0b4-eccb-47e2-bbb5-e859ffa0468c
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010579"
 ---
 # <a name="planning-the-environment-for-biztalk-server"></a>BizTalk server 環境のプランニング
 Operations guide の「の計画セクションには、役割と責任に関連付けられているがについて説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。 計画に関する推奨事項のアプリケーションおよびデータ層が含まれている、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境、およびその計画推奨事項を提供、リリースの BizTalk ソリューションの管理の段階です。  

@@ -1,18 +1,18 @@
 ---
-title: "既知の Issues5 |Microsoft ドキュメント"
-ms.custom: 
+title: 既知の Issues5 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - troubleshooting, known issues
 - BizTalk Accelerator for SWIFT, known issues
 - known issues
 ms.assetid: 0f1ec7dd-9e74-479a-bdc8-ab9c4397c992
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006715"
 ---
 # <a name="known-issues"></a>既知の問題
 このセクションでのエラーを回避するために役立つ有用な情報が含まれています。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]です。 既知の問題は次の分野に分かれています。  

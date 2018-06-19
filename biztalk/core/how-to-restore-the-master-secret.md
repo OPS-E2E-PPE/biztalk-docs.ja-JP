@@ -12,7 +12,7 @@ helpviewer_keywords:
 - Master Secret server, restoring
 - restoring, Master Secret server
 ms.assetid: 68e133c5-4591-4d76-9a3b-c9564ff1aa60
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25970912"
 ---
 # <a name="how-to-restore-the-master-secret"></a>マスター シークレットを復元する方法
 データ復元処理の一環として、既存のデータを再利用するためにマスター シークレットの復元が必要になる場合があります。 この作業を行うには、Windows 管理者であり SSO 管理者でもあるアカウントを使用してマスター シークレット サーバーにログオンする必要があります。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
   
-4.  型**ssoconfig – restoresecret と入力\<ファイルを復元\>**ここで、 **\<ファイルを復元\>**マスター シークレットがファイルの名前とパスには格納されています。  
+4.  型**ssoconfig – restoresecret と入力\<ファイルを復元\>** ここで、 **\<ファイルを復元\>** マスター シークレットがファイルの名前とパスには格納されています。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

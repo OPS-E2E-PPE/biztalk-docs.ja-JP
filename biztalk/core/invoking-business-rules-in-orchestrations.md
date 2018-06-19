@@ -1,11 +1,11 @@
 ---
-title: "オーケストレーションでビジネス ルールの呼び出し |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションでビジネス ルールの呼び出し |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Call Rules shape [Orchestration Designer], business rules
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - policies, Call Rules shape [Orchestration Designer]
 - orchestrations, business rules
 ms.assetid: ac3a3277-e9ea-4f40-9326-c63076c6b90e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261826"
 ---
 # <a name="invoking-business-rules-in-orchestrations"></a>オーケストレーションでビジネス ルールの呼び出し
 呼び出すことができます、ポリシー (ルール セット) を使用してオーケストレーションから、**ルールの呼び出し**図形です。 ポリシーは、そのポリシー内のルールに基づいて動作するルール エンジンを呼び出します。  

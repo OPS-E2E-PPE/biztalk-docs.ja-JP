@@ -1,14 +1,14 @@
 ---
-title: "自己関連付けを行う直接バインド ポートを使用する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 自己関連付けを行う直接バインド ポートを使用する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: feb651fa-3e35-4598-b229-335448f6919c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257138"
 ---
 # <a name="how-to-use-self-correlating-direct-bound-ports"></a>自己関連付けを行う直接バインド ポートの使用方法
 自己関連付けを行う直接バインド ポートは、自己参照のポートです。 つまり、自己関連付けを行う直接バインド ポートが提供する情報を使用することで、オーケストレーションは、そのオーケストレーションを囲んでいるオーケストレーションにメッセージを返すことができます。 自己関連付けを行う直接バインドを使用すると、オーケストレーション エンジンによって、オーケストレーション インスタンス固有の関連付けトークンがメッセージに対して生成されます。 これにより、関連付けセットを使用しなくても、特定のオーケストレーション インスタンスにメッセージを返すことができます。  

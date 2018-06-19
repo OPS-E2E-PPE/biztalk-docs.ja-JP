@@ -27,6 +27,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25970672"
 ---
 # <a name="how-to-configure-send-ports-using-windows-sharepoint-services-context-properties"></a>Windows Sharepoint Services のコンテキスト プロパティを使用して送信ポートを構成する方法
 このトピックでは、BizTalk オーケストレーションから Windows Sharepoint Services のコンテキスト プロパティを使用して、実行時に Windows Sharepoint Services 送信ポートを構成する方法について説明します。 同じメカニズムを使用して、Windows SharePoint Services 動的送信ポートと遅延バインディング送信ポートを構成できます。 動的送信ポートの構成プロパティは、実行時にオーケストレーションで設定されます。 アダプターのプロパティで公開されている、 **Windows SharePoint Services トランスポート プロパティ**  ダイアログ ボックスは、動的または遅延バインディング送信ポートにも適用できます。 Windows Sharepoint Services アダプタのコンテキスト プロパティを使用して、動的送信ポートまたは遅延バインディング送信ポートの構成プロパティを設定するには、次の手順を実行します。  

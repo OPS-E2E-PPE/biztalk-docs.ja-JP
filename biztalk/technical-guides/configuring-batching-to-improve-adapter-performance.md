@@ -1,14 +1,14 @@
 ---
-title: "アダプターのパフォーマンスを向上させるためにバッチ処理の構成 |Microsoft ドキュメント"
-ms.custom: 
+title: アダプターのパフォーマンスを向上させるためにバッチ処理の構成 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65589925-af94-45f1-b501-37c21618b2cf
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300386"
 ---
 # <a name="configuring-batching-to-improve-adapter-performance"></a>アダプターのパフォーマンスを向上させるためにバッチ処理の構成
 アダプターがバッチを処理する方法には、パフォーマンスに大きな影響を及ぼすことができます。 トランザクションごとに一定の遅延が発生するため、複数の操作を 1 つのバッチにまとめることによってトランザクションの数を最小限に抑える必要があります。  

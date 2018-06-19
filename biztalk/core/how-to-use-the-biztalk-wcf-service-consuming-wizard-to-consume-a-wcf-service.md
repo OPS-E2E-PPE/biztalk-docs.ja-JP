@@ -13,7 +13,7 @@ helpviewer_keywords:
 - tools, WCF Service Consuming Wizard
 - consuming, WCF Service Consuming Wizard
 ms.assetid: d5fad2ac-4d98-4720-8026-88ebab78b120
-caps.latest.revision: ''
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25975544"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service"></a>BizTalk WCF サービス使用ウィザードを使用した WCF サービスの使用方法
 BizTalk アダプタ フレームワークでは、アダプタ スキーマと BizTalk の型を BizTalk プロジェクトに追加する方法が提供されています。 BizTalk WCF サービス使用ウィザードを使用すると、WCF 送信アダプタを BizTalk プロジェクトに追加できます。 WCF 送信アダプタを使用するために、送信ポートに対して、既存のメタデータ交換 (MEX) エンドポイントを選択する必要があります。 次に、スキーマと型を生成するために使用する情報を入力する必要があります。 ウィザードが完了すると、WCF サービスを使用するために必要なスキーマと型が BizTalk プロジェクトに追加されます。  

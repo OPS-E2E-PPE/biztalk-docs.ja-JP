@@ -1,14 +1,14 @@
 ---
-title: "ルール エンジンを使用する場合のパフォーマンスに関する考慮事項 |Microsoft ドキュメント"
-ms.custom: 
+title: ルール エンジンを使用する場合のパフォーマンスに関する考慮事項 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9e9020c2-5152-40f6-940b-d4ce4081f069
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266506"
 ---
 # <a name="performance-considerations-when-using-the-rule-engine"></a>ルール エンジン使用時のパフォーマンスに関する考慮事項
 このトピックでは、各種のシナリオで構成パラメーターやチューニング パラメーターにさまざまな値を指定した場合のルール エンジンのパフォーマンスについて説明します。  

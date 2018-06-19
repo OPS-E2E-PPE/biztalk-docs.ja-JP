@@ -1,15 +1,15 @@
 ---
-title: ".NET アセンブリ、証明書、およびその他のリソースの管理 |Microsoft ドキュメント"
-description: "バインド ファイル、証明書、アセンブリ、仮想ディレクトリ、ファイル、および BizTalk Server の詳細を追加するリンク"
-ms.custom: 
+title: .NET アセンブリ、証明書、およびその他のリソースの管理 |Microsoft ドキュメント
+description: バインド ファイル、証明書、アセンブリ、仮想ディレクトリ、ファイル、および BizTalk Server の詳細を追加するリンク
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: efe27a11-19d8-4eb3-9f8c-f4336e4c3d66
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262730"
 ---
 # <a name="manage-net-assemblies-certificates-and-other-resources"></a>.NET アセンブリ、証明書、およびその他のリソースを管理します。
 

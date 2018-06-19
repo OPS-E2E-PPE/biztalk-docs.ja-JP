@@ -1,14 +1,14 @@
 ---
-title: "Windows SharePoint Services アダプターに関する既知の問題 |Microsoft ドキュメント"
-ms.custom: 
+title: Windows SharePoint Services アダプターに関する既知の問題 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3c20eda7-643d-484c-bf5d-59ff69604cea
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970704"
 ---
 # <a name="known-issues-with-the-windows-sharepoint-services-adapter"></a>Windows SharePoint Services アダプタに関する既知の問題
 ここでは、エラー回避に役立つ情報を記載します。  

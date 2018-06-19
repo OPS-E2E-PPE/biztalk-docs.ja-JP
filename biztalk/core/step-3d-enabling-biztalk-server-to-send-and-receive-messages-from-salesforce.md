@@ -1,14 +1,14 @@
 ---
-title: "3d をステップ: BizTalk Server で Salesforce からのメッセージの送受信を有効にする |Microsoft ドキュメント"
-ms.custom: 
+title: '3d をステップ: BizTalk Server で Salesforce からのメッセージの送受信を有効にする |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 470c4a72-1e97-4493-8958-33a13f793ffd
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975774"
 ---
 # <a name="step-3d-enabling-biztalk-server-to-send-and-receive-messages-from-salesforce"></a>BizTalk Server で Salesforce からのメッセージの送受信を有効にする手順 3 d:
 REST インターフェイスを使用してメッセージを送信する際は、Salesforce で認証する必要があります。 Salesforce でサポートされている REST 呼び出しのための認証方法は、Salesforce の REST インターフェイスの起動に使用する WCF-WebHttp アダプターの既定では利用できません。 そのため、カスタムの WCF エンドポイントの動作を作成し、Salesforce REST インターフェイスを起動するよう構成した WCF-WebHttp 送信アダプターにアタッチします。  

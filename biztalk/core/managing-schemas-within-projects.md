@@ -1,14 +1,14 @@
 ---
-title: "プロジェクト内のスキーマを管理する |Microsoft ドキュメント"
-ms.custom: 
+title: プロジェクト内のスキーマを管理する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1af8d360-ccda-4e0e-824f-4ace242b5aa7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262490"
 ---
 # <a name="managing-schemas-within-projects"></a>プロジェクト内のスキーマの管理
 このセクションの内容が全体のスキーマを操作するための手順を説明します。たとえば、手順で同時に、複数のスキーマを使用して、スキーマを作成して保存するスキーマが関係しています。 スキーマ内のノードでの作業方法については、次を参照してください。 [、スキーマ内のノードを管理する](../core/managing-the-nodes-within-a-schema.md)です。  

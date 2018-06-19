@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server と SQL アダプタを使用してポーリング SQL Server |Microsoft ドキュメント"
-ms.custom: 
+title: BizTalk Server と SQL アダプタを使用してポーリング SQL Server |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eef9a4b4-552d-4552-b318-1deab506bad9
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223090"
 ---
 # <a name="poll-sql-server-using-the-sql-adapter-with-biztalk-server"></a>BizTalk Server と SQL アダプタを使用して SQL サーバーにポーリング
 構成することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を SQL Server からデータ変更のポーリングに基づいたメッセージを受信します。 データベースをポーリングするアダプターを実行するポーリング ステートメントを指定することができます。 ポーリング ステートメントには、SELECT ステートメントまたは結果セットを返すストアド プロシージャを使用できます。 ポーリングのメッセージの種類に基づいて、アダプターは、ポーリングの 3 つの方法を公開します。  

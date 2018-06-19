@@ -1,14 +1,14 @@
 ---
-title: "手順 1: 追加のヘッダーと受信確認スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: '手順 1: 追加のヘッダーと受信確認スキーマ |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 808132bf-02e7-4ff4-b914-9fae5d27e5fd
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005339"
 ---
 # <a name="step-1-add-header-and-acknowledgment-schemas"></a>手順 1: ヘッダーと受信確認スキーマを追加します。
 この手順では、BTAHL72XCommon プロジェクト テンプレートに基づく新しいプロジェクトを作成します。 このテンプレートには、メッセージ ヘッダー (MSH_25_GLO_DEF.xsd) と受信確認 (ACK_24_GLO_DEF.xsd) の 3 つの一般的なスキーマが含まれています (ACK_25_GLO_DEF.xsd) とします。 そのためのプロジェクトでこれらのスキーマを含める必要がありますを BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) ビルドや、メッセージ ヘッダーと受信確認を正しく検証します。 このプロセスは、すべてのスキーマ バージョンの間で共通[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X です。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 12/01/2017
   
 5.  **場所**ボックスを参照 **\<** *ドライブ***:\>\Batching チュートリアル**です。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 > [!NOTE]
 >  ソリューション エクスプ ローラーで、3 つのスキーマ (MSH_25_GLO_DEF.xsd、ACK_24_GLO_DEF.xsd、および ACK_25_GLO_DEF.xsd) は、プロジェクトに含まれます。  

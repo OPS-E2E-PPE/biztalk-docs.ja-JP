@@ -1,11 +1,11 @@
 ---
-title: "FTP アダプター プロパティ スキーマおよびプロパティ |Microsoft ドキュメント"
-ms.custom: 
+title: FTP アダプター プロパティ スキーマおよびプロパティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [FTP adapters], schemas
@@ -26,7 +26,7 @@ helpviewer_keywords:
 - Password property [FTP adapters]
 - MaxConnections property [FTP adapters]
 ms.assetid: 677fdb61-c2b0-4df2-a826-840113e61e8b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -35,6 +35,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006139"
 ---
 # <a name="ftp-adapter-property-schema-and-properties"></a>FTP アダプター プロパティ スキーマおよびプロパティ
 FTP アダプタ プロパティ スキーマのプロパティを次の表に示します。  
@@ -43,7 +44,7 @@ FTP アダプタ プロパティ スキーマのプロパティを次の表に�
   
 |名前|型|Description|  
 |----------|----------|-----------------|  
-|**RepresentationType**|xs:string|FTP アダプタによって送信されるデータの形式を指定します。<br /><br /> **有効な値:**バイナリまたは ASCII|  
+|**RepresentationType**|xs:string|FTP アダプタによって送信されるデータの形式を指定します。<br /><br /> **有効な値:** バイナリまたは ASCII|  
 |**SSOAffiliateApplication**|xs:string|FTP 送信ポートで使用するエンタープライズ シングル サインオン関連アプリケーションを指定します。|  
 |**UserName**|xs:string|メッセージの送信時に FTP サーバーにログオンするユーザーの名前を指定します。|  
 |**Password**|xs:string|メッセージの送信時に FTP サーバーへのログオンに使用するパスワードを指定します。|  
@@ -57,7 +58,7 @@ FTP アダプタ プロパティ スキーマのプロパティを次の表に�
 |**SpoolingFolder**|xs:string|FTP サーバーの一時フォルダの場所を指定します。 このフォルダは、転送エラーの修復に使用されます。|  
 |**UseSsl**|xs:boolean|FTPS サーバーとの通信で FTP アダプターが強制的に SSL を使用するかどうかを指定します。|  
 |**UseDataProtection**|xs:boolean|ファイル転送に SSL 暗号化を使用するかどうかを指定します。 FTPS サーバーとの間でデータ ファイルを送受信する場合にアダプターで強制的に SSL 暗号化を使用する場合は True を選択します。 アダプターがデータ ファイルをプレーンテキストで送受信する場合は False を選択します。|  
-|**FtpsConnectionMode**|xs:string|FTPS サーバーに対する SSL 接続のモードを指定します。<br /><br /> **有効な値:**暗黙的または明示的な|  
+|**FtpsConnectionMode**|xs:string|FTPS サーバーに対する SSL 接続のモードを指定します。<br /><br /> **有効な値:** 暗黙的または明示的な|  
 |**ClientCertificateHash**|xs:string|SSL (Secure Sockets Layer) のネゴシエーションで使用する必要のあるクライアント証明書の SHA1 ハッシュを指定します。<br /><br /> このハッシュに基づいて、BizTalk ホスト インスタンスを実行しているユーザー アカウントの個人ストアからクライアント証明書が取得されます。|  
   
 ## <a name="see-also"></a>参照  

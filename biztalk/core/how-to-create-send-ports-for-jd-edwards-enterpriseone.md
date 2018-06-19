@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-enterpriseone/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: fe877aa8c7b76a638df93a073eed0cf26f71a609
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013281"
 ---
 # <a name="how-to-create-send-ports-for-jd-edwards-enterpriseone"></a>JD Edwards EnterpriseOne 用送信ポートの作成方法
 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して送信ポートを作成します。  
@@ -27,5 +28,5 @@ ms.lasthandoff: 11/07/2017
   
     -   **送信ハンドラー**ドロップダウン リストで、送信ハンドラーのアドレスを選択します。  
   
-5.  **[OK]**をクリックします。  
+5.  **[OK]** をクリックします。  
   

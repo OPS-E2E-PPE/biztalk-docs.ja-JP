@@ -17,7 +17,7 @@ helpviewer_keywords:
 - TypedDataRow class
 - TypedXmlDocument class
 ms.assetid: 8207bfd5-ebd2-45ac-8992-795acdf3ba4c
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22287226"
 ---
 # <a name="typed-facts"></a>型指定されたファクト
 *型指定されたファクト* クラスを実装するには、 **ITypedFact** インターフェイス: **TypedXmlDocument**, 、**DataConnection**, 、**TypedDataTable**, 、および **TypedDataRow**します。  

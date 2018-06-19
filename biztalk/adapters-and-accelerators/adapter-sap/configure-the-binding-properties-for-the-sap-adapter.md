@@ -1,17 +1,17 @@
 ---
-title: "SAP アダプターのバインドのプロパティを構成する |Microsoft ドキュメント"
-ms.custom: 
+title: SAP アダプターのバインドのプロパティを構成する |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - binding properties, specifying at design time
 - binding properties, specifying at run time
 ms.assetid: 259a5895-c19d-409c-b2fc-bfdf59d5d74b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217442"
 ---
 # <a name="configure-the-binding-properties-for-the-sap-adapter"></a>SAP アダプターのバインドのプロパティを構成します。
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]動作特性を制御できるようにするいくつかのバインドのプロパティを表示します。 このセクションで説明および Visual Studio (設計時) からのバインドのプロパティを設定する方法について、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール (実行時)。 デザイン時に、特定の操作のスキーマを生成するバインドのプロパティを指定する必要があります。 、実行時に、送信の一部としてのバインドのプロパティを指定か、SAP システムからメッセージを送受信するためのポートが表示される必要があります。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  **アダプターの構成**ダイアログ ボックスで、をクリックして、**バインド プロパティ**タブをクリックし、別のバインディング プロパティを指定します。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 ### <a name="enter-binding-properties-using-add-adapter-metadata-wizard"></a>アダプター メタデータの追加ウィザードを使用してバインドのプロパティを入力してください。  
   
@@ -59,14 +60,14 @@ ms.lasthandoff: 09/20/2017
     |**カテゴリ**|をクリックして**アダプターを追加**です。|  
     |**[テンプレート]**|をクリックして**アダプター メタデータの追加**です。|  
   
-3.  **[追加]**をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
+3.  **[追加]** をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
   
 4.  アダプターの追加ウィザードで選択**WCF SAP**です。 BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。  
   
     > [!IMPORTANT]
     >  BizTalk で構成されている WCF SAP ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。  
   
-5.  **[次へ]**をクリックします。  
+5.  **[次へ]** をクリックします。  
   
 6.  **アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**ドロップダウン リストを**sapBinding**、 をクリック**構成**.  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  既存の SAP WCF 送信ポートを選択した場合、バインドのプロパティを指定する必要はありません。 バインドのプロパティは、送信ポートの構成から取得されます。 ただし、存在する場合、デザイン時に、必要なバインドのプロパティを指定することもできます。 このような場合、メタデータの生成中にバインドのプロパティの新しい値をデザイン時に使用されます。 ただし、実行時に、バインドの送信ポートの構成のプロパティの指定値適用されます。  
   
-8.  **[OK]**をクリックします。  
+8.  **[OK]** をクリックします。  
   
 ## <a name="enter-binding-properties-at-run-time"></a>実行時のバインドのプロパティを入力してください。  
  実行時は、WCF カスタム ポートまたはで WCF SAP 構成の一部としてのバインドのプロパティを指定できます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  
@@ -115,7 +116,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  バインドのプロパティは、送信ポートまたは受信ポートを構成するかどうかに基づいてが表示されます。 たとえば、バインディングのプロパティの受信に関連する操作利用できない受信操作には、受信ポートの構成が必要とするために、送信ポートを構成するときにします。  
   
-6.  **[OK]**をクリックします。  
+6.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
 [SAP アプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)

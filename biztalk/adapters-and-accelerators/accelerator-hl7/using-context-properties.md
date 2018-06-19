@@ -1,11 +1,11 @@
 ---
-title: "コンテキスト プロパティを使用して |Microsoft ドキュメント"
-ms.custom: 
+title: コンテキスト プロパティを使用して |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, context properties
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - promoted properties, context properties
 - context properties, messages
 ms.assetid: 306127a9-df03-4aaf-8dd8-76df51eb193d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006755"
 ---
 # <a name="using-context-properties"></a>コンテキスト プロパティを使用します。
 BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) メッセージング エンジンとそのコンポーネントのコンテキスト プロパティを内部的に使用します。 エンジンの実行ロジックに影響を与えるため、いくつかのコンテキスト プロパティ、エンジンによって設定された値の変更はお勧めできません。 ただし、多くのエンジンによって設定されていないプロパティを変更できます。 送信ポートのフィルター式を作成するため、コンテキスト プロパティを使用することができます (詳細については、次を参照してください。[送信ポートのフィルター式を設定](../../adapters-and-accelerators/accelerator-hl7/setting-filter-expressions-on-send-ports.md))。 オーケストレーションのフィルター式のコンテキスト プロパティを使用することもできます。 プロパティは、プロジェクトのグローバル プロパティ スキーマを参照している限り、フィルター式の使用可能な (これ[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]一般的なテンプレートのいずれかを使用するときに作成) します。  

@@ -1,18 +1,18 @@
 ---
-title: "MethodCall (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: MethodCall (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, calling
 - examples, orchestrations
 - orchestrations, methods
 ms.assetid: 6bdc72da-9478-403a-b706-3089b7374ac7
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973976"
 ---
 # <a name="methodcall-biztalk-server-sample"></a>MethodCall (BizTalk Server サンプル)
 MethodCall サンプルは、BizTalk Server オーケストレーションから .NET ベースのメソッドを呼び出す方法を示すものです。  

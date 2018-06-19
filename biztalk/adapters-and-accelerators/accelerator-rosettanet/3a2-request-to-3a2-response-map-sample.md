@@ -1,14 +1,14 @@
 ---
-title: "3 a 2 応答へマップのサンプルの 3 a 2 要求 |Microsoft ドキュメント"
-ms.custom: 
+title: 3 a 2 応答へマップのサンプルの 3 a 2 要求 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 71c70571-0cb4-4269-9ca9-87f6d1ba95dc
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004547"
 ---
 # <a name="3a2-request-to-3a2-response-map-sample"></a>3 a 2 要求 3 a 2 応答へマップのサンプル
 _3A2RequestMessageTo3A2ResponseMessage.btm サンプルは、3A2 要求メッセージを 3A2 応答メッセージにマップする方法を示します。  

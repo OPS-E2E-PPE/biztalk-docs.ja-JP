@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65e15d9e-40ae-4850-9c13-88033cb3b3bb
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25972368"
 ---
 # <a name="how-to-save-rename-and-close-schemas"></a>スキーマの保存、名前変更、および終了の方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、スキーマは XSD (XML Schema Definition) 言語ファイルであり、ファイル システムに .xsd という拡張子で格納されます。 BizTalk エディターを使用したスキーマの作成には、スキーマ ファイルの保存と終了、場合によっては、ファイル名の変更といった作業が常に伴います。 このトピックでは、こうした基本操作に必要な手順について説明します。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 03/28/2018
      スキーマに対する変更がまだ保存されていなかった場合、スキーマを保存すると、メイン編集ウィンドウ上部のタブに表示される名前からアスタリスク (*) が消えます。このアスタリスクは、変更内容が保存されていないことを示すマークです。  
   
 > [!NOTE]
->  クリックして、新しい名前でスキーマを保存することができます**保存*\<名前のスキーマ\>*として**上、**ファイル**メニュー。  
+>  クリックして、新しい名前でスキーマを保存することができます**保存*\<名前のスキーマ\>* として**上、**ファイル**メニュー。  
   
 > [!NOTE]
 >  クリックして、プロジェクトの変更されたすべての項目の保存の一部としてスキーマを保存する **すべてを保存** 上、 **ファイル** メニュー。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 03/28/2018
   
 1.  必要に応じて、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のメイン編集ウィンドウ上部にある適切なタブをクリックして、終了するスキーマの BizTalk エディターをアクティブにします。  
   
-2.  **[ファイル]** メニューの **[閉じる]**をクリックします。  
+2.  **[ファイル]** メニューの **[閉じる]** をクリックします。  
   
      BizTalk エディターによってスキーマが終了されます。  
   

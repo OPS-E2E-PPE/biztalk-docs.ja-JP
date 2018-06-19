@@ -1,14 +1,14 @@
 ---
-title: "Wcf-wshttp 受信場所を構成する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: Wcf-wshttp 受信場所を構成する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b38cce4a-9c81-4716-b847-1acada4afc15
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250754"
 ---
 # <a name="how-to-configure-a-wcf-wshttp-receive-location"></a>WCF-WSHttp 受信場所を構成する方法
 WCF-WSHttp 受信場所は、プログラムから、または BizTalk 管理コンソールを使用して構成できます。  
@@ -46,7 +47,7 @@ WCF-WSHttp 受信場所は、プログラムから、または BizTalk 管理コ
 |**AlgorithmSuite**|Enum<br /><br /> メンバー名の詳細については、 **AlgorithmSuite**プロパティを参照してください、**アルゴリズム スイート**プロパティに、 **Wcf-wshttp トランスポートのプロパティ ダイアログ ボックス、受信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|メッセージの暗号化とキー ラップのアルゴリズムを指定します。 これらのアルゴリズムは、セキュリティ ポリシー言語 (WS-SecurityPolicy) 仕様で指定されたアルゴリズムにマップされます。<br /><br /> 既定値: **Basic256**|  
 |**NegotiateServiceCredential**|ブール値|サービスの資格情報が帯域外のクライアントで提供されるか、またはネゴシエーションのプロセスによってクライアントへのサービスから取得されるかを指定します。 このようなネゴシエーションは、通常のメッセージ交換に先行して実行されます。<br /><br /> 場合、 **MessageClientCredentialType**プロパティ = **None**、 **Username**、または**証明書**にこのプロパティの設定**False**サービス証明書がクライアントの帯域外で使用可能であり、クライアントがサービス証明書を指定する必要があることを意味します。 このモードは、Ws-trust および Ws-secureconversation が実装された SOAP スタックと相互運用。<br /><br /> 場合、 **MessageClientCredentialType**プロパティに設定されている**Windows**、このプロパティを設定**False** Kerberos ベースの認証を指定します。 つまり、クライアントとサービスは同じ Kerberos ドメイン内に含める必要があります。 このモードは、WS-Trust や WS-SecureConversation に加えて (OASIS WSS TC で定義されている) Kerberos トークン プロファイルを実装する SOAP スタックと相互運用できます。<br /><br /> このプロパティが**True**、SOAP メッセージを介して SPNego 交換をトンネル化する .NET SOAP ネゴシエーションが発生します。<br /><br /> 既定値:**は True。**|  
 |**EstablishSecurityContext**|ブール値|セキュリティ チャネルで、セキュリティで保護されたセッションを確立するかどうかを指定します。 セキュリティで保護されたセッションでは、アプリケーションのメッセージを交換する前に、セキュリティ コンテキスト トークン (SCT) が確立されます。<br /><br /> 既定値:**は True。**|  
-|**ServiceCertificate**|文字列|クライアントがサービスの認証に使用する、この受信場所に対する X.509 証明書の拇印を指定します。 このプロパティに使用する証明書をインストールする必要があります、 **My**に格納、**現在のユーザー**場所。 **注:**にサービス証明書をインストールする必要があります、**現在のユーザー**この受信場所をホストする受信ハンドラーのユーザー アカウントの場所。 <br /><br /> 既定値は空の文字列です。|  
+|**ServiceCertificate**|文字列|クライアントがサービスの認証に使用する、この受信場所に対する X.509 証明書の拇印を指定します。 このプロパティに使用する証明書をインストールする必要があります、 **My**に格納、**現在のユーザー**場所。 **注:** にサービス証明書をインストールする必要があります、**現在のユーザー**この受信場所をホストする受信ハンドラーのユーザー アカウントの場所。 <br /><br /> 既定値は空の文字列です。|  
 |**UseSSO**|ブール値|エンタープライズ シングル サインオン (SSO) を使用して SSO チケットを発行するためにクライアントの資格情報を取得するかどうかを指定します。 セキュリティ構成の詳細については、SSO のサポートを参照して、」アダプタ エンタープライズ シングル サインオン サポートの「Wcf-wshttp 受信「、 **Wcf-wshttp トランスポートのプロパティ ダイアログ ボックス、受信、セキュリティ**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。|  
 |**InboundBodyLocation**|Enum<br /><br /> -   **UseBodyElement** -SOAP のコンテンツを使用して**本文**を BizTalk メッセージのボディ部を作成する受信メッセージの要素。 **Body** 要素に複数の子要素がある場合は、最初の要素のみが BizTalk メッセージのボディ部になります。<br />-   **UseEnvelope** -全体の SOAP から BizTalk メッセージのボディ部を作成する**エンベロープ**受信メッセージのです。<br />-   **UseBodyPath** -ボディ パス式を使用して、 **InboundBodyPathExpression**プロパティを BizTalk メッセージのボディ部を作成します。 ボディ パス式は、受信メッセージの SOAP **Body** 要素のすぐ下の子要素に対して評価されます。 このプロパティは、送信請求 - 応答のポートに対してのみ有効です。<br /><br /> 使用する方法についての詳細、 **InboundBodyLocation**プロパティを参照してください[WCF アダプタのメッセージの本文を指定する](../core/specifying-the-message-body-for-the-wcf-adapters.md)です。|SOAP のデータ選択を指定**本文**受信 WCF メッセージの要素。<br /><br /> 既定値: **UseBodyElement**|  
 |**InboundBodyPathExpression**|文字列<br /><br /> 使用する方法についての詳細、 **InboundBodyPathExpression**プロパティを参照してください[WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md)です。|BizTalk メッセージのボディ部を作成するために使用する受信メッセージの特定の部分を示すボディ パス式を指定します。 このボディ パス式が、SOAP の直接の子要素に対して評価されます**本文**受信メッセージのノードです。 このボディ パス式で複数のノードが返される場合は、最初のノードのみが BizTalk メッセージのボディ部に対して選択されます。 このプロパティは必要な場合、 **InboundBodyLocation**プロパティに設定されている**UseBodyPath**です。<br /><br /> 既定値は空の文字列です。|  
@@ -73,7 +74,7 @@ WCF-WSHttp 受信場所は、プログラムから、または BizTalk 管理コ
   
 4.  **受信場所のプロパティ**] ダイアログ ボックスで、**トランスポート**横**型**[ **Wcf-wshttp**ドロップダウン リストから一覧で、クリックして**構成**です。  
   
-5.  **Wcf-wshttp トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブで、エンドポイント アドレスを構成し、サービス id を Wcf-wshttp 受信場所。 詳細については、**全般** タブで、 **Wcf-wshttp トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-wshttp トランスポートのプロパティ ダイアログ ボックス、受信、[全般]**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
+5.  **Wcf-wshttp トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブで、エンドポイント アドレスを構成し、サービス id を Wcf-wshttp 受信場所。 詳細については、**全般** タブで、 **Wcf-wshttp トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-wshttp トランスポートのプロパティ ダイアログ ボックス、受信、[全般]** タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
   
 6.  **Wcf-wshttp トランスポートのプロパティ** ダイアログ ボックスで、**バインド** タブで、タイムアウト、エンコード、およびトランザクションのプロパティを構成します。 詳細については、**バインド** タブで、 **Wcf-wshttp トランスポートのプロパティ**ダイアログ ボックスを参照してください、 **Wcf-wshttp トランスポートのプロパティ ダイアログ ボックス、受信、バインディング**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
   

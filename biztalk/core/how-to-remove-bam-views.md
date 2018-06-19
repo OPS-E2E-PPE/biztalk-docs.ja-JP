@@ -1,18 +1,18 @@
 ---
-title: "BAM ビューを削除する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BAM ビューを削除する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, views
 - managing [BAM definitions], deleting views
 - Remove-View command [BAM]
 ms.assetid: 1a43ec81-20b1-41f7-941f-753132ac9ed2
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972184"
 ---
 # <a name="how-to-remove-bam-views"></a>BAM ビューを削除する方法
 管理者を使用して、**削除ビュー** BAM プライマリ インポート データベースからビューを削除するコマンド。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  」と入力して、追跡フォルダーに移動**C:\Program files \microsoft BizTalk Server 2009 \tracking**コマンド プロンプトでします。 **Enter**キーを押します。  
   
-3.  型**bm 削除ビューの名前:\<ビュー名\>**です。  
+3.  型**bm 削除ビューの名前:\<ビュー名\>** です。  
   
 4.  **Enter**キーを押します。  
   

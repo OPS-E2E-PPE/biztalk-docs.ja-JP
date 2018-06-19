@@ -1,15 +1,15 @@
 ---
-title: "バックアップの BizTalk Server のジョブを構成する |Microsoft ドキュメント"
-description: 
-ms.custom: 
+title: バックアップの BizTalk Server のジョブを構成する |Microsoft ドキュメント
+description: ''
+ms.custom: ''
 ms.date: 11/22/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 026622c9-fcb4-4db0-af48-1379feb30372
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972848"
 ---
 # <a name="configure-the-backup-biztalk-server-job"></a>バックアップの BizTalk Server のジョブを構成します。
 インストールし、BizTalk Server を構成した後は、バックアップを構成する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データをバックアップするジョブです。 
@@ -26,7 +27,7 @@ ms.lasthandoff: 11/28/2017
 
 
 ## <a name="overview"></a>概要
-**Backup BizTalk Server (BizTalkMgmtDb)**ジョブには、次の手順が含まれています。
+**Backup BizTalk Server (BizTalkMgmtDb)** ジョブには、次の手順が含まれています。
 
 -   手順 1 –**セット圧縮オプション**: を有効にするか、バックアップ中に圧縮を無効にします。
 
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  **[SQL Server エージェント]** を展開し、**[ジョブ]** を展開します。  
   
-3.  右クリック**Backup BizTalk Server (BizTalkMgmtDb)**選択**プロパティ**です。 ジョブのプロパティで選択**手順**です。  
+3.  右クリック**Backup BizTalk Server (BizTalkMgmtDb)** 選択**プロパティ**です。 ジョブのプロパティで選択**手順**です。  
   
 4.  選択、 **Set Compression Option**ステップ、および選択**編集**:  
 
@@ -134,12 +135,12 @@ ms.lasthandoff: 11/28/2017
   
     1.  **@MarkName**: これは、バックアップ ファイルの名前付け規則の一部:\<サーバー名\>\_\<データベース名\>**\_ログ\_** \<ログ マーク名\> \_\<タイムスタンプ\>  
     
-    2.  **@BackupPath**: 完全な宛先 (単一引用符を含む)、コンピューターおよびフォルダー パスに格納する、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 、データベースのログ、または Azure blob ストレージ アカウントとコンテナー。 *\<移行先パス\>*ローカルまたは別のサーバーへの UNC パスにもなります。  
+    2.  **@BackupPath**: 完全な宛先 (単一引用符を含む)、コンピューターおよびフォルダー パスに格納する、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 、データベースのログ、または Azure blob ストレージ アカウントとコンテナー。 *\<移行先パス\>* ローカルまたは別のサーバーへの UNC パスにもなります。  
   
      MarkAndBackupLog ステップで、バックアップのログをマークした後、バックアップします。  
   
     > [!IMPORTANT]
-    >  回避する**データ損失の可能性**および**パフォーマンスを向上させる**、 *\<移行先パス\>*別のコンピューターに設定する必要がありますまたはから元のデータベース ログを格納するために使用されるとは別のハード ドライブを選択します。  
+    >  回避する**データ損失の可能性**および**パフォーマンスを向上させる**、 *\<移行先パス\>* 別のコンピューターに設定する必要がありますまたはから元のデータベース ログを格納するために使用されるとは別のハード ドライブを選択します。  
   
      **[OK]** を選択します。  
   
@@ -167,7 +168,7 @@ ms.lasthandoff: 11/28/2017
 
 ## <a name="execute-backupsetupallprocssql-and-logshippingdestinationlogicsql"></a>Backup_Setup_All_Procs.sql および LogShipping_Destination_Logic.sql を実行します。
 
-**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]機能パック 2 (FP2)**で Backup_Setup_All_Procs.sql および LogShipping_Destination_Logic.sql スクリプトを使用する`\Program Files (x86)\Microsoft BizTalk Server *your version*\Schema`です。 
+**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]機能パック 2 (FP2)** で Backup_Setup_All_Procs.sql および LogShipping_Destination_Logic.sql スクリプトを使用する`\Program Files (x86)\Microsoft BizTalk Server *your version*\Schema`です。 
 
 BizTalk Server のバックアップ ジョブが既に構成されているし、切り替えたい場合は、Azure を使用する (ディスク) ではなく blob も、次の操作します。 
 

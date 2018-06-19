@@ -1,14 +1,14 @@
 ---
-title: "XML スキーマ |Microsoft ドキュメント"
-ms.custom: 
+title: XML スキーマ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1ec364e7-866d-4164-be91-be75a40ce878
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008099"
 ---
 # <a name="xml-schemas"></a>XML スキーマ
 XML スキーマは、XML で表されるビジネス ドキュメントの詳細情報を記述します。 Microsoft BizTalk Server では、正規表現として XML を使用して、ビジネス ドキュメントのため受信および送信ドキュメントには、翻訳は不要です。 また、すべてのスキーマで使用できる基本的なプロパティだけを使用して、XML スキーマを BizTalk エディターで作成できるので、スキーマ エディター拡張機能を有効にする必要はありません。  

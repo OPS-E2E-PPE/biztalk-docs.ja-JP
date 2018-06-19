@@ -1,14 +1,14 @@
 ---
-title: "証明書ストアを復元する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 証明書ストアを復元する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0c6f7551-d119-4668-9b52-6013f69a0302
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254698"
 ---
 # <a name="how-to-restore-the-certificate-store"></a>証明書ストアを復元する方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の復旧処理の一環として、証明書ストアを復元する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Standard Edition を復旧する場合は、この手順を使用して証明書ストアを復元する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の他のすべてのエディションを復旧する場合は、復旧処理によって自動的に証明書ストアが復元されるため、この手順を実行する必要はありません。  

@@ -1,18 +1,18 @@
 ---
-title: "送信ポートの開始 (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: 送信ポートの開始 (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, examples
 - examples, send ports
 - send ports, starting
 ms.assetid: 84e54c9e-e9e8-4bb2-a191-20c29e127dae
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973880"
 ---
 # <a name="start-send-port-biztalk-server-sample"></a>送信ポートの開始 (BizTalk Server サンプル)
 送信ポート開始のサンプルは、ファイル アダプタの使用時に、送信ポートを開始し、オプションでプライマリ トランスポート アドレスを設定する方法を示しています。  

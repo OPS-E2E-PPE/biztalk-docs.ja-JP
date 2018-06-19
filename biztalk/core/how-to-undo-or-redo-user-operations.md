@@ -1,14 +1,14 @@
 ---
-title: "元に戻すまたはユーザーの操作を再実行する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: 元に戻すまたはユーザーの操作を再実行する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1cb3708e-a9c2-4795-aba0-9c6d9635e08c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973400"
 ---
 # <a name="how-to-undo-or-redo-user-operations"></a>ユーザー操作の取り消しまたはやり直しの方法
 元に戻す/やり直しのサポートも、BizTalk マッパーに用意されている便利な操作です。 自分が加えた変更が希望どおりでないか、誤って変更を加えた場合は、	元に戻すを使用して、変更を加えていない以前の状態に徐々に戻り、そこから操作を再開することができます。 やり直しを使用すると、元に戻した編集操作を再適用することができます。 このトピックでは、元に戻すかやり直すことができる操作に関する情報を示します。  

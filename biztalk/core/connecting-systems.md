@@ -1,14 +1,14 @@
 ---
-title: "システム接続 |Microsoft ドキュメント"
-ms.custom: 
+title: システム接続 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c4895e5-7272-415f-a0de-905256fa0a43
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008651"
 ---
 # <a name="connecting-systems"></a>システムの接続
 異なるコンピュータ上の異なるソフトウェアの間で効率的にメッセージを交換することは、統合に必要な絶対条件です。 存在する通信スタイルの多様性を指定するには、BizTalk Server は、さまざまなプロトコルとメッセージ形式をサポートする必要があります。 次に説明するように、この通信の実現にはエンジンのかなりの部分が充てられていますが、 エンジンが機能するには、内部で XML ドキュメントを使用する必要があるということも重要なポイントです。 メッセージはどのような形式で届いた場合も、受信後に XML ドキュメントに変換される必要があります。 同様に、受信者がドキュメントを XML 形式で受信できない場合、ドキュメントはエンジンによって受信先に必要な形式に変換されます。  

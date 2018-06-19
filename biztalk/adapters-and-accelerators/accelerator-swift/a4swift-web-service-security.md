@@ -1,11 +1,11 @@
 ---
-title: "A4SWIFT Web サービス セキュリティ |Microsoft ドキュメント"
-ms.custom: 
+title: A4SWIFT Web サービス セキュリティ |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IIS security
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - security, Web service
 - messages, security
 ms.assetid: e6c7d275-569f-47f6-81fb-10bcd86ff417
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006475"
 ---
 # <a name="a4swift-web-service-security"></a>A4SWIFT Web サービスのセキュリティ
 [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]安全性の高いハイブリッド セキュリティ モデルの既定の Web サービスがインストールされています。 Web サービスの間で信頼の境界が存在する IIS/ASP.NET モデルで、[!INCLUDE[btsWinSharePointSvcsNoVersion](../../includes/btswinsharepointsvcsnoversion-md.md)]サイト、および[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]データベース。  

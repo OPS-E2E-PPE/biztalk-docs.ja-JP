@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265562"
 ---
 # <a name="managing-agreements"></a>契約の管理
 取引先アグリーメント (TPA) は、特定の B2B プロトコルでメッセージをやり取りする際に 2 つの取引パートナー間で交わされる決定的で拘束力があるアグリーメントと定義されます。 参照してください[取引先アグリーメント](../core/trading-partner-agreement.md)です。 

@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: Wcf-netmsmq アダプタを使用して WCF サービスを発行する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: Wcf-netmsmq アダプタを使用して WCF サービスを発行する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e623b6dc-32e5-467c-bb7d-68b7a75723c1
-caps.latest.revision: "46"
+caps.latest.revision: 46
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010723"
 ---
 # <a name="walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter"></a>チュートリアル: Wcf-netmsmq アダプタを使用して WCF サービスの発行
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  ソリューション エクスプ ローラーで、 **BizTalkApp**、開き、 **OrderProcess.odx**を確認します。 サンプル オーケストレーションは発注要求メッセージを受信し、注文応答メッセージを返します。  
   
-4.  **BizTalkApp**アセンブリを GAC にインストールする必要があります、厳密な名前キー ファイルを展開プロセスを完了する必要があります。 右クリックし、 **BizTalkApp**プロジェクトをクリックして**プロパティ**です。 **プロパティ**] ページで [**署名**を選択し、**アセンブリに署名**です。 下向きの矢印をクリックして、**厳密な名前キー ファイルを選択して**ドロップダウン リスト をクリックして**\<新規\>**を入力し、`keyfile.snk`で、**キー ファイル名** テキスト ボックス。 オフに**キーファイルをパスワードで保護する**、順にクリック**OK**です。  
+4.  **BizTalkApp**アセンブリを GAC にインストールする必要があります、厳密な名前キー ファイルを展開プロセスを完了する必要があります。 右クリックし、 **BizTalkApp**プロジェクトをクリックして**プロパティ**です。 **プロパティ**] ページで [**署名**を選択し、**アセンブリに署名**です。 下向きの矢印をクリックして、**厳密な名前キー ファイルを選択して**ドロップダウン リスト をクリックして**\<新規\>** を入力し、`keyfile.snk`で、**キー ファイル名** テキスト ボックス。 オフに**キーファイルをパスワードで保護する**、順にクリック**OK**です。  
   
 5.  クリックして、**展開**タブをクリックし、変更、**サーバー**プロパティだけでなく、BizTalk 管理データベースを別のデータベース サーバーを使用する場合**LOCALHOST**です。  確認**BizTalk アプリケーション**に値が設定されている**WCFNetMsmqAdapterPublishing**です。 確認**グローバル アセンブリ キャッシュにインストール**に設定されている**True**です。  
   
@@ -102,13 +103,13 @@ ms.lasthandoff: 12/01/2017
   
     3.  **受信ポートのプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスで、「 `WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder`、クリックしてして**ok**です。  
   
-    4.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックして**[wcfnetmsmqadapterpublishing.receivepurchaseorder]**、 をポイント**新規**、クリックして**受信場所**.  
+    4.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックして **[wcfnetmsmqadapterpublishing.receivepurchaseorder]**、 をポイント**新規**、クリックして**受信場所**.  
   
     5.  **受信場所のプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスで、「`WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder.NetMsmq`です。  
   
     6.  **受信場所のプロパティ**] ダイアログ ボックスで、**トランスポート**横**型**[ **Wcf-netmsmq**から、クリックしてドロップダウン リスト、**構成**です。  
   
-    7.  **Wcf-netmsmq トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブの 、**アドレス (URI)**テキスト ボックスで、「`net.msmq://localhost/private/WCFNetMsmqAdapterPublishing`です。  
+    7.  **Wcf-netmsmq トランスポートのプロパティ** ダイアログ ボックスで、**全般** タブの 、**アドレス (URI)** テキスト ボックスで、「`net.msmq://localhost/private/WCFNetMsmqAdapterPublishing`です。  
   
     8.  **Wcf-netmsmq トランスポートのプロパティ**ダイアログ ボックスの**バインド** タブで、ことを確認して、**トランザクション** チェック ボックスをオンします。  
   
@@ -152,9 +153,9 @@ ms.lasthandoff: 12/01/2017
   
 3.  **WCF サービスの種類** ページで、、**メタデータのみのエンドポイント (MEX)** WCFNetMsmq のメタデータを公開する チェック ボックスの受信場所。 選択**WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder.NetMsmq**から、**受信場所のメタデータを公開**クリックしてドロップダウン リスト、**次**です。  
   
-4.  **WCF サービスの作成**] ページで、[ **BizTalk オーケストレーションの WCF サービスとして発行**、クリックして**[次へ]**です。  
+4.  **WCF サービスの作成**] ページで、[ **BizTalk オーケストレーションの WCF サービスとして発行**、クリックして **[次へ]** です。  
   
-5.  **BizTalk アセンブリ**] ページの [、 **BizTalk アセンブリ ファイル (\*.dll)**テキスト ボックスで、をクリックして**参照**を参照する、 **C:\WCFNetMsmqAdapterPublishing\BizTalkApp\bin\Development**フォルダーで、をクリックし、サンプル オーケストレーションを含むアセンブリをダブルクリックして**次**です。  
+5.  **BizTalk アセンブリ**] ページの [、 **BizTalk アセンブリ ファイル (\*.dll)** テキスト ボックスで、をクリックして**参照**を参照する、 **C:\WCFNetMsmqAdapterPublishing\BizTalkApp\bin\Development**フォルダーで、をクリックし、サンプル オーケストレーションを含むアセンブリをダブルクリックして**次**です。  
   
 6.  **オーケストレーションとポート** ページで、ことを確認して、**ポート: PurchaseOrderRequestPort**ノードがページで、選択されているし をクリックして**次**です。  
   
@@ -211,7 +212,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  Visual Studio で、ソリューション エクスプ ローラーで右クリックし**WCFClient**、 をポイント**追加**、クリックして**既存項目の**です。  
   
-4.  **既存項目の追加** ダイアログ ボックスを参照、 **WCFClient**フォルダーを選択**すべてのファイル (\*.\*)**で、**ファイルの種類**ドロップダウン リストで、 **BizTalkServiceInstance.cs**と**output.config**ファイル、および  をクリックして**追加**です。  
+4.  **既存項目の追加** ダイアログ ボックスを参照、 **WCFClient**フォルダーを選択**すべてのファイル (\*.\*)** で、**ファイルの種類**ドロップダウン リストで、 **BizTalkServiceInstance.cs**と**output.config**ファイル、および  をクリックして**追加**です。  
   
 5.  展開**WCFClient**を右クリックして**output.config**、 をクリックして**の名前を変更**、し、入力`App.config`新しい名前として。  
   
@@ -223,7 +224,7 @@ ms.lasthandoff: 12/01/2017
   
 ## <a name="test-the-sample-solution-with-the-wcf-netmsmq-adapter"></a>Wcf-netmsmq アダプターを使用するサンプル ソリューションをテストします。  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックし、 **[wcfnetmsmqadapterpublishing]**アプリケーション、およびクリック**開始**です。 **開始**ダイアログ ボックスで、をクリックして**開始**です。  
+1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックし、 **[wcfnetmsmqadapterpublishing]** アプリケーション、およびクリック**開始**です。 **開始**ダイアログ ボックスで、をクリックして**開始**です。  
   
 2.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**プラットフォームの設定**、展開**ホスト インスタンス**を右クリックして**BizTalkServerApplication**または別クリックして、ホスト インスタンスの適切な**再起動**です。 このステップは必須ではありませんが、この時点でサンプルが正しく動作することを確認しておくことをお勧めします。  
   

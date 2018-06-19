@@ -1,11 +1,11 @@
 ---
-title: "攻撃のサービス拒否攻撃を緩和 |Microsoft ドキュメント"
-ms.custom: 
+title: 攻撃のサービス拒否攻撃を緩和 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IPSec, message protection
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - Internet Information Services (IIS) Lockdown Tool
 - Denial of Service attacks
 ms.assetid: f39c0d0a-b890-4c48-874d-5cafbc71473c
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971744"
 ---
 # <a name="mitigating-denial-of-service-attacks"></a>攻撃のサービス拒否攻撃の緩和
 サービスの拒否攻撃から BizTalk Server とサービスを保護するには、次の緩和方法を使用することをお勧めします。 どの緩和方法が環境に適しているのかを判断してください。  

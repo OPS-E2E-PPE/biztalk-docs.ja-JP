@@ -1,14 +1,14 @@
 ---
-title: "XML 構成ファイルを使用したテストの定義 |Microsoft ドキュメント"
-ms.custom: 
+title: XML 構成ファイルを使用したテストの定義 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d8339bcf-26d7-4a43-b68e-c4220a7a851d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976336"
 ---
 # <a name="defining-testing-using-an-xml-configuration-file"></a>XML 構成ファイルを使用したテストを定義します。
 BizUnit は、テストを定義する 2 つの方法を提供しています: XML 構成ファイルを使用して、Excel ワークシートを使用しています。 このトピックのねらいでテストを定義する XML 構成ファイルの使用ただし、する必要がありますも見て BizUnit SDK ので、Excel を使用するための BizUnit テスト_ケースを定義する方法の興味深い例を示します。 さらに、BizUnit テスト ケースの迅速に作成できる GUI を提供するための BizUnit デザイナー ツールを調査することもできます。 このトピックでは、非常に単純なシナリオを使用して XML 構成を使用してテスト_ケースを定義する方法の概要を示します。  

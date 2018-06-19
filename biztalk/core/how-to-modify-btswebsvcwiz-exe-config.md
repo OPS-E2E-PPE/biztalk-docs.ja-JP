@@ -1,17 +1,17 @@
 ---
-title: "BTSWebSvcWiz.exe.config を変更する方法 |Microsoft ドキュメント"
-ms.custom: 
+title: BTSWebSvcWiz.exe.config を変更する方法 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, code samples
 - Web services, debugging
 ms.assetid: 8466e460-faa9-45ea-9586-19174858d194
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971128"
 ---
 # <a name="how-to-modify-btswebsvcwizexeconfig"></a>BTSWebSvcWiz.exe.config を変更する方法
 コメントを解除して、BizTalk Web サービス公開ウィザードをデバッグするトレースを有効にする、\<追加\>BTSWebSvcWiz.exe.config ファイル内のノードです。 トレース リスナ ノードのコメントが解除されている場合、 *initializeData*パラメーターは、変更されたが、BizTalk Server トレース ファイルに出力を書き込みます、現在のディレクトリ。 または、することができます、トレースのレベルを設定**ApplicationTraceSwitch**し、トレース ファイルのパス名を設定します。  

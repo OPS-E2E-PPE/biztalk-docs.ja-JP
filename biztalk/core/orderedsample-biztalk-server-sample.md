@@ -1,11 +1,11 @@
 ---
-title: "OrderedSample (BizTalk Server サンプル) |Microsoft ドキュメント"
-ms.custom: 
+title: OrderedSample (BizTalk Server サンプル) |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, MQSeries adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - examples, orchestrations
 - MQSeries adapters, examples
 ms.assetid: 7e59ff43-d425-40cd-9725-af13084f83d9
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974752"
 ---
 # <a name="orderedsample-biztalk-server-sample"></a>OrderedSample (BizTalk Server サンプル)
 OrderedSample サンプルは、オーケストレーションを使用して、順序付けられた一連のメッセージをラウンド トリップ方式で送受信する方法を示します。  
@@ -36,7 +37,7 @@ OrderedSample サンプルは、オーケストレーションを使用して、
  オーケストレーションでは、メッセージのバッチおよび 1 つのメッセージを受信できます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>*\AdaptersUsage\MQSeriesAdapter\OrderedSample  
+ *\<パスのサンプル\>* \AdaptersUsage\MQSeriesAdapter\OrderedSample  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -73,11 +74,11 @@ OrderedSample サンプルは、オーケストレーションを使用して、
   
 3.  右クリック**キュー**、 をポイント**新規**、クリックして**ローカル キュー**です。  
   
-4.  **ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**"queue1"**、クリックして**[ok]**です。  
+4.  **ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型 **"queue1"**、クリックして **[ok]** です。  
   
 5.  右クリック**キュー**をクリックして**新規**、順にクリック**ローカル キュー**です。  
   
-6.  **ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**queue2**、クリックして**[ok]**です。  
+6.  **ローカル キューの作成**ダイアログ ボックスで、**キュー名**、型**queue2**、クリックして **[ok]** です。  
   
 ## <a name="creating-the-receive-location-and-the-mqseries-queue"></a>受信場所と MQSeries キューの作成  
  この手順では、MQSeries へのメッセージ送信および MQSeries からの関連メッセージの受信を行うための送信ポートと受信場所を作成します。 MQSeries キューは、受信場所がまだ作成されていない場合に受信場所を作成したときにも作成されます。  
@@ -104,9 +105,9 @@ OrderedSample サンプルは、オーケストレーションを使用して、
   
 10. をクリックして**構成**です。  
   
-11. **MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**のポーリング間隔**ボックスに、入力**「10」**です。  
+11. **MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**のポーリング間隔**ボックスに、入力 **「10」** です。  
   
-12. **キュー定義**ボックスで、クリックして、**省略記号 (...)**ボタンをクリックします。  
+12. **キュー定義**ボックスで、クリックして、**省略記号 (...)** ボタンをクリックします。  
   
 13. **キュー定義** ダイアログ ボックスで、**サーバー名**ボックスに、コンピューター名を入力します。  
   
@@ -114,7 +115,7 @@ OrderedSample サンプルは、オーケストレーションを使用して、
   
 15. **キュー**ボックスに、入力" **queue1**"、クリックして**エクスポート**です。  
   
-16. **エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック**[ok]**または**完了**すべてのダイアログ ボックスを終了します。  
+16. **エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック **[ok]** または**完了**すべてのダイアログ ボックスを終了します。  
   
 ## <a name="creating-the-send-port-and-mqseries-queue"></a>送信ポートと MQSeries キューの作成  
   
@@ -130,7 +131,7 @@ OrderedSample サンプルは、オーケストレーションを使用して、
   
 5.  をクリックして**構成**です。  
   
-6.  **MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**キュー定義**ボックスで、クリックして、**省略記号 (...)**ボタンをクリックします。  
+6.  **MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**キュー定義**ボックスで、クリックして、**省略記号 (...)** ボタンをクリックします。  
   
 7.  **キュー定義** ダイアログ ボックスで、**サーバー名**ボックスに、コンピューター名を入力します。  
   
@@ -138,7 +139,7 @@ OrderedSample サンプルは、オーケストレーションを使用して、
   
 9. **キュー**ボックスに、入力" **queue2**"、クリックして**エクスポート**です。  
   
-10. **エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック**[ok]**または**完了**すべてのダイアログ ボックスを終了します。  
+10. **エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリック **[ok]** または**完了**すべてのダイアログ ボックスを終了します。  
   
 #### <a name="to-enable-the-receive-location-and-start-the-send-port"></a>受信場所を有効にして送信ポートを開始するには  
   

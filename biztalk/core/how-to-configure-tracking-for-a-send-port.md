@@ -1,15 +1,15 @@
 ---
-title: "送信ポートの追跡を有効にする |Microsoft ドキュメント"
-description: "メッセージ本文の追跡を有効にし、BizTalk Server での送信ポートでメッセージ プロパティの追跡"
-ms.custom: 
+title: 送信ポートの追跡を有効にする |Microsoft ドキュメント
+description: メッセージ本文の追跡を有効にし、BizTalk Server での送信ポートでメッセージ プロパティの追跡
+ms.custom: ''
 ms.date: 12/13/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f32e97b0-244c-4acc-8f3f-b18cdb9ec0da
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/13/2017
+ms.locfileid: "26686633"
 ---
 # <a name="configure-send-port-tracking-in-biztalk-server"></a>BizTalk Server で送信ポートの追跡を構成します。
 使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをメッセージ本文や昇格させたプロパティを表示するオプションなどの送信ポートの追跡を構成します。 これにより、BizTalk 実装の稼動状況を監視し、ボトルネックを識別できます。 構成する追跡の設定は、送信ポートのすべてのインスタンスに適用されます。  

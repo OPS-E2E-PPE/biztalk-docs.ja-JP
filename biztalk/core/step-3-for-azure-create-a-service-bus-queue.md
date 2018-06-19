@@ -1,14 +1,14 @@
 ---
-title: "(Azure) の手順 3: Service Bus キューを作成 |Microsoft ドキュメント"
-ms.custom: 
+title: '(Azure) の手順 3: Service Bus キューを作成 |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b7192c3c-4ebf-49c4-b8ce-46a6e9fb5f4a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277338"
 ---
 # <a name="step-3-for-azure-create-a-service-bus-queue"></a>(Azure) の手順 3: Service Bus キューを作成します。
 このトピックでは、EDI アグリーメントを使用して X12 販売注文が処理および変換された後に X12 販売注文の送信先になる、Service Bus キューを作成します。  

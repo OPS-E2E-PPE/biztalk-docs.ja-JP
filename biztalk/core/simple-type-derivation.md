@@ -1,14 +1,14 @@
 ---
-title: "単純型の派生 |Microsoft ドキュメント"
-ms.custom: 
+title: 単純型の派生 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d43932a0-039c-4211-82c0-087bae186145
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270794"
 ---
 # <a name="simple-type-derivation"></a>単純型の派生
 XSD (XML Schema Definition) 言語は、次のように、既存の単純型の派生を使用した単純型のバリエーションを定義するための複数のメカニズムを提供します。  

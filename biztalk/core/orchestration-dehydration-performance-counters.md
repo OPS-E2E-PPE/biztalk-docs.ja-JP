@@ -1,14 +1,14 @@
 ---
-title: "オーケストレーションの退避のパフォーマンス カウンター |Microsoft ドキュメント"
-ms.custom: 
+title: オーケストレーションの退避のパフォーマンス カウンター |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3ab92e0e-6a33-4aaa-ab14-0c82322b04d5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263786"
 ---
 # <a name="orchestration-dehydration-performance-counters"></a>オーケストレーションの退避のパフォーマンス カウンター
 次の表に、退避の動作を監視するために使用される、オーケストレーション エンジンのパフォーマンス カウンターを示します。 パフォーマンス モニターを使用すると、これらのカウンターを監視しながら退避パラメーターを調整できます。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974792"
 ---
 # <a name="message-reference-for-the-service-oriented-solution"></a>サービス指向ソリューションのメッセージ リファレンス
 このセクションでは、ソリューションの各オーケストレーションで使用されるメッセージおよびメッセージの種類の一覧を示します。 メッセージおよびメッセージの種類は、アプリケーションのバージョンごとに記載されています。  

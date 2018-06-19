@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f25a76c-1c41-41c0-b28d-d7473dbe1cd1
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26009427"
 ---
 # <a name="system-resource-costs-on-hyper-v"></a>HYPER-V のシステム リソースのコスト
 ## <a name="system-resource-costs-associated-with-running-a-guest-operating-system-on-hyper-v"></a>HYPER-V でゲスト オペレーティング システムを実行しているに関連付けられたシステム リソースのコスト  
@@ -142,7 +143,7 @@ ms.lasthandoff: 03/28/2018
 |1 秒あたりの書き込み I/o|89.00|82.87|93.11%|  
 |1 秒あたりの合計 Mb|0.53|0.49|92.45%|  
 |平均応答時間 (ミリ秒) の読み取り|5.4066|5.7797|93.54%|  
-|書き込みの平均応答時間 (ミリ秒)|0.2544|0.3716|68.42%**注:**パススルー ディスクの書き込みの平均応答時間がまだ内でもはパス スルー ディスクの書き込みの平均応答時間の相対的なパフォーマンスでは、物理ディスクのパフォーマンスの 68.42% でしたが、10 ミリ秒の許容範囲を確立します。|  
+|書き込みの平均応答時間 (ミリ秒)|0.2544|0.3716|68.42%**注:** パススルー ディスクの書き込みの平均応答時間がまだ内でもはパス スルー ディスクの書き込みの平均応答時間の相対的なパフォーマンスでは、物理ディスクのパフォーマンスの 68.42% でしたが、10 ミリ秒の許容範囲を確立します。|  
 |I/O の平均応答時間 (ミリ秒)|3.7066|3.9904|93.89%|  
   
 > [!NOTE]  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269722"
 ---
 # <a name="scenario-1-sizing-the-tracking-database--for-simple-biztalk-messages"></a>シナリオ 1: 単純な BizTalk メッセージの追跡データベースのサイズ変更
 次の図は、BizTalk Server が、メッセージを一切変換せずに単純に送受信するようすを示したものです。  

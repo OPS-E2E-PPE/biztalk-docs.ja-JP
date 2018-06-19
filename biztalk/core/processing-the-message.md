@@ -1,11 +1,11 @@
 ---
-title: "メッセージの処理 |Microsoft ドキュメント"
-ms.custom: 
+title: メッセージの処理 |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - processing
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - messages, message types
 - messages, adapters
 ms.assetid: e6d1f969-20c9-41f6-85cb-46cf92656348
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266490"
 ---
 # <a name="processing-the-message"></a>メッセージの処理
 これまで説明したコンポーネントはすべて、メッセージが BizTalk Server を通過する過程で行われる処理にそれぞれの役割を果たしています。 このセクションでは、これらのコンポーネントが機能的にどのように連携するかについて説明します。最初にメッセージの受信について説明します。 受信ポートの作成と受信プロセスにおけるメッセージ フローを、次の図に示します。  

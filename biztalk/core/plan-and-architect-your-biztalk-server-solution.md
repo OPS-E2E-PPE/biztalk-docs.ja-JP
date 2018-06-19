@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263850"
 ---
 # <a name="plan-and-architect-your-biztalk-server-solution"></a>計画し、BizTalk Server ソリューションの設計
 このセクションでは、作業環境のプランニングに役立つ BizTalk Server の詳細について説明します。  

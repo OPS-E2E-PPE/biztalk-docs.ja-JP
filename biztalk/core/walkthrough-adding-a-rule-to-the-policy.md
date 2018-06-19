@@ -1,14 +1,14 @@
 ---
-title: "チュートリアル: ポリシーにルールを追加する |Microsoft ドキュメント"
-ms.custom: 
+title: 'チュートリアル: ポリシーにルールを追加する |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b2a682c0-a5d7-4550-924d-be9fa29b84d2
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975704"
 ---
 # <a name="walkthrough-adding-a-rule-to-the-policy"></a>チュートリアル: ポリシーにルールを追加します。
 このチュートリアルでは、という名前のルールを追加するための手順は**DeniedRule**を**ProcessPurchaseOrder**ポリシー。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
   
 10. ドラッグ**要求の状態**[THEN] ペインにします。  
   
-11. をクリックして**\<空の文字列\>**し、入力**Denied**です。  
+11. をクリックして**\<空の文字列\>** し、入力**Denied**です。  
   
 12. 右クリック**Version 1.2 (未保存)**、クリックして**保存**です。  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  値を変更して、SamplePO.xml ファイルと SamplePO2.xml ファイルをメモ帳で開き、**ステータス**フィールドを**XYZ**です。  
   
-2.  ポリシー エクスプ ローラー] ウィンドウで、**ポリシー**、展開**ProcessPurchaseOrder**を右クリックして**バージョン 1.2**、クリックして**[ポリシーのテスト**.  
+2.  ポリシー エクスプ ローラー] ウィンドウで、**ポリシー**、展開**ProcessPurchaseOrder**を右クリックして**バージョン 1.2**、クリックして **[ポリシーのテスト**.  
   
 3.  下にある、 **XMLDocuments**ノードで、選択**RuleTest.PO**、クリックして**インスタンスを追加**です。  
   

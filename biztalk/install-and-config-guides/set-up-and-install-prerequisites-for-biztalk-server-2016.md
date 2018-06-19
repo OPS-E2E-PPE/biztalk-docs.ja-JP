@@ -18,6 +18,7 @@ ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31816966"
 ---
 # <a name="set-up-and-install-prerequisites-for-biztalk-server-2016"></a>BizTalk Server 2016 のセットアップとインストールの前提条件
 サーバーのセットアップとソフトウェアのインストール/構成の前提条件。
@@ -295,7 +296,7 @@ BizTalk Server には SQL Server が必要です。 SQL Server は、BizTalk と
         - Integration Services
 
     > [!NOTE]
-    > **SQL Server Data Tools** は SQL Server の既定インストールには含まれていません。 必要ありませんがでダウンロードできます[SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt)です。 [**SQL Server Management Studio (SSMS)**](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) をダウンロードします。これは、Azure SQL Database を含め、サポートされているあらゆるバージョンの SQL Server で動作します。 ただし、BAM を使用する場合は、リモートの SSIS に接続するには、宛先 SSIS サーバーと同じバージョンの SSMS をインストールする必要があります。 たとえば、 [SSMS 16 をインストールします*。x* ](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#previous-ssms-releases) SQL 2016 SSIS への接続に関連するドライバーをインストールします。 SSMS 17 です。*x* SQL 2016 SSIS に接続できません。 複数のバージョンの SSMS はインストールされていることができます。 
+    > **SQL Server Data Tools** は SQL Server の既定インストールには含まれていません。 必要ありませんがでダウンロードできます[SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt)です。 [**SQL Server Management Studio (SSMS)**](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) をダウンロードします。これは、Azure SQL Database を含め、サポートされているあらゆるバージョンの SQL Server で動作します。 ただし、BAM を使用する場合は、リモートの SSIS に接続するには、宛先 SSIS サーバーと同じバージョンの SSMS をインストールする必要があります。 たとえば、 [SSMS 16 をインストールします *。x* ](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#previous-ssms-releases) SQL 2016 SSIS への接続に関連するドライバーをインストールします。 SSMS 17 です。*x* SQL 2016 SSIS に接続できません。 複数のバージョンの SSMS はインストールされていることができます。 
 
 3. インストールを続行します。コンピューターの再起動が求められたら再起動します。
 

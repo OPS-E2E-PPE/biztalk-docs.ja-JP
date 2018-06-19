@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 内のアセンブリを展開する方法 |Microsoft ドキュメント"
-description: "GAC にアセンブリを展開し、BizTalk Server 内のアセンブリのバージョン管理を有効にします。"
-ms.custom: 
+title: BizTalk Server 内のアセンブリを展開する方法 |Microsoft ドキュメント
+description: GAC にアセンブリを展開し、BizTalk Server 内のアセンブリのバージョン管理を有効にします。
+ms.custom: ''
 ms.date: 01/21/2016
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7f99ed5-b64a-4a38-99d7-83070fb69030
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006115"
 ---
 # <a name="biztalk-assemblies"></a>BizTalk アセンブリ
 Microsoft BizTalk Server と .NET Framework の特徴として最も重要な点は、BizTalk Server のアイテム、マップ、スキーマ、オーケストレーション、パイプラインがすべて、.NET アセンブリにコンパイルされることです。 このしくみが意味するのは、これらのアセンブリに厳密な名前が必要であり、そのために .NET のバージョン管理規則にも従う必要が生じることです。 結果として、BizTalk のプロジェクトは、別の .NET プロジェクトまたはアセンブリ (BizTalk プロジェクトを含む) の特定のバージョンに対して構築されると、新しいバージョンに対して再構築されるまではそのバージョンを使い続けることになります。  

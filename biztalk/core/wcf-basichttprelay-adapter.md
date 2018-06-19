@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 22eefde6-80f5-4d45-80cf-55f743ff9d45
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25975862"
 ---
 # <a name="wcf-basichttprelay-adapter"></a>WCF-BasicHttpRelay アダプター
 [!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用して、 **Wcf-basichttprelay**を介して WCF サービス要求を送受信するためのアダプター、 [BasicHttpRelayBinding クラス](https://msdn.microsoft.com/library/azure/microsoft.servicebus.basichttprelaybinding.aspx)です。 **Wcf-basichttprelay** アダプターを使用して Service Bus リレー エンドポイントを使用して、 **BasicHttpRelayBinding**します。  
@@ -83,11 +84,11 @@ Service Bus 名前空間を作成するときに、Access Control (ACS) 名前�
     |**ノード エンコード**|Wcf-basichttprelay 受信アダプター ボディ パス式で識別されるノードのデコードに使用するエンコードの種類の指定、 **本文のパス式** テキスト ボックスです。<br /><br /> **[パス -- 本文のパスで見つかったコンテンツ]** オプションが選択されている場合は、このプロパティが必要です。 有効な値は次のとおりです。<br /><br /> -   **Base64**: Base64 エンコードします。<br />-   **16 進**: 16 進エンコードします。<br />-   **文字列**: テキスト エンコード - utf-8<br />-   **XML**: WCF アダプターは、ボディ パス式で選択されたノードの外部の XML での BizTalk メッセージ本文の作成、 **本文のパス式** テキスト ボックスです。<br /><br /> 既定値は **[XML]** です。|  
     |**ボディ--BizTalk 応答メッセージ本文**|BizTalk メッセージのボディ部を使用して、送信応答メッセージの SOAP **Body** 要素の内容を作成します。 このプロパティは、要求 - 応答の受信場所に対してのみ有効です。<br /><br /> これが既定の設定です。|  
     |**テンプレート--テンプレートで指定されたコンテンツ**|**[XML]** ボックスで指定されているテンプレートを使用して、送信メッセージの SOAP **Body** 要素の内容を作成します。 このプロパティは、要求 - 応答の受信場所に対してのみ有効です。<br /><br /> 既定値はオフです。|  
-    |**XML**|送信メッセージの SOAP **Body** 要素の内容に対する XML 形式のテンプレートを入力します。 **[ボディ -- BizTalk 応答メッセージ本文]** オプションが選択されている場合は、このプロパティが必要です。 このプロパティは、要求 - 応答の受信場所に対してのみ有効です。<br /><br /> 型:文字列<br /><br /> 最小長: 0<br /><br /> 最大長:32767<br /><br /> 既定値は **\<bts メッセージ本文の xmlns ="http://www.microsoft.com/schemas/bts2007"エンコード"xml"を =\>**です。|  
+    |**XML**|送信メッセージの SOAP **Body** 要素の内容に対する XML 形式のテンプレートを入力します。 **[ボディ -- BizTalk 応答メッセージ本文]** オプションが選択されている場合は、このプロパティが必要です。 このプロパティは、要求 - 応答の受信場所に対してのみ有効です。<br /><br /> 型:文字列<br /><br /> 最小長: 0<br /><br /> 最大長:32767<br /><br /> 既定値は **\<bts メッセージ本文の xmlns ="http://www.microsoft.com/schemas/bts2007"エンコード"xml"を =\>** です。|  
     |**失敗時に要求メッセージを中断します。**|受信パイプラインまたはルーティングの障害によって受信処理に失敗した要求メッセージを保留するかどうかを指定します。<br /><br /> 既定値はオフです。|  
     |**エラーに例外の詳細を含める**|エラーが発生した場合に、デバッグのために SOAP エラーを返すかどうかを指定します。<br /><br /> 既定値はオフです。|  
   
-9. **[OK]**をクリックします。  
+9. **[OK]** をクリックします。  
   
 10. **[受信場所のプロパティ]** ダイアログ ボックスで、受信場所を構成するための適切な値を入力し、**[OK]** をクリックして設定を保存します。 については、 **受信場所のプロパティ** ダイアログ ボックスを参照してください [受信場所を作成する方法](../core/how-to-create-a-receive-location.md)します。  
 

@@ -1,15 +1,15 @@
 ---
-title: "送信ポートと送信ポート グループの管理 |Microsoft ドキュメント"
-description: "リンクを作成、構成、参加、参加解除、および開始し、停止の BizTalk Server での送信ポート"
-ms.custom: 
+title: 送信ポートと送信ポート グループの管理 |Microsoft ドキュメント
+description: リンクを作成、構成、参加、参加解除、および開始し、停止の BizTalk Server での送信ポート
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: db45f9f9-b32a-4b9c-a3bf-8c271d0f0cf9
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262706"
 ---
 # <a name="manage-send-ports-and-send-port-groups"></a>送信ポートと送信ポート グループを管理します。
 

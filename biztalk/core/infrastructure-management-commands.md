@@ -1,14 +1,14 @@
 ---
-title: "インフラストラクチャ管理コマンド |Microsoft ドキュメント"
-ms.custom: 
+title: インフラストラクチャ管理コマンド |Microsoft ドキュメント
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a2f1a88c-19fc-4384-b6bb-f95962a32921
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973360"
 ---
 # <a name="infrastructure-management-commands"></a>インフラストラクチャ管理コマンド
 BAM 管理 (BM) ユーティリティ構成コマンドを使用すると、BAM の構成を取得および更新できます。  

@@ -1,14 +1,14 @@
 ---
-title: "付録 b: SharePoint アダプターをインストールする |Microsoft ドキュメント"
-ms.custom: 
+title: '付録 b: SharePoint アダプターをインストールする |Microsoft ドキュメント'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f44c6e0a-dcce-4444-8cac-bd403c81a233
-caps.latest.revision: 
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710837"
 ---
 # <a name="appendix-b-install-the-microsoft-sharepoint-adapter"></a>付録 B: Microsoft SharePoint アダプターのインストール
 BizTalk Server には、メッセージを受信したり、SharePoint にメッセージを送信できる SharePoint アダプターが含まれています。 

@@ -1,15 +1,15 @@
 ---
-title: "WCF アダプターで WCF 機能拡張ポイントを有効にする |Microsoft ドキュメント"
-description: "アセンブリをインストールし、machine.config の構成、拡張 BizTalk 管理者を追加作成する受信場所で BizTalk Server で WCF アダプターの WCF 機能拡張ポイントを有効にするには"
-ms.custom: 
+title: WCF アダプターで WCF 機能拡張ポイントを有効にする |Microsoft ドキュメント
+description: アセンブリをインストールし、machine.config の構成、拡張 BizTalk 管理者を追加作成する受信場所で BizTalk Server で WCF アダプターの WCF 機能拡張ポイントを有効にするには
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0c2af105-5272-4a6a-95d2-066312ab788e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975416"
 ---
 # <a name="how-to-enable-the-wcf-extensibility-points-with-the-wcf-adapters"></a>WCF アダプターを使用して WCF 機能拡張ポイントを有効にする方法
 次の 3 つの WCF 機能拡張ポイントを有効にする — 動作拡張機能、バインド要素の拡張機能、およびバインド拡張機能: Wcf-custom および Wcf-customisolated アダプタを使用しています。 これを行うには、まず WCF 機能拡張ポイントを実装するアセンブリをグローバル アセンブリ キャッシュ (GAC) にインストールし、コンピューターの machine.config ファイルを変更した後に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して WCF-Custom アダプターまたは WCF-CustomIsolated アダプターを構成します。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  コマンド プロンプトで、%frameworkdir%\v4 に移動します。X.XXXXX\CONFIG フォルダーを開き、 **machine.config**メモ帳を使用して、ファイルです。  
   
-2.  メモ帳で、machine.config ファイルがない場合、  **\<system.serverModel\>\\< 拡張\>**要素内にその要素の追加、  **\<構成\>** 、machine.config の要素ファイル、および追加し、  **\<bindingExtensions\>** 内の WCF バインド拡張機能要素 **\<system.serverModel\>\\< 拡張\>**要素。 たとえば、netHttpBinding、カスタム バインド拡張機能を有効にする次のコードを追加、 **\<構成\>** machine.config ファイルの要素。  
+2.  メモ帳で、machine.config ファイルがない場合、  **\<system.serverModel\>\\< 拡張\>** 要素内にその要素の追加、  **\<構成\>** 、machine.config の要素ファイル、および追加し、  **\<bindingExtensions\>** 内の WCF バインド拡張機能要素 **\<system.serverModel\>\\< 拡張\>** 要素。 たとえば、netHttpBinding、カスタム バインド拡張機能を有効にする次のコードを追加、 **\<構成\>** machine.config ファイルの要素。  
   
     ```  
     <system.serviceModel>  
@@ -66,7 +67,7 @@ ms.lasthandoff: 11/28/2017
     ```  
   
     > [!NOTE]
-    >  - コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >*です。  
+    >  - コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >* です。  
     >  - 参照してください[bindingExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/bindingextensions)この要素上です。
   
 3.  メモ帳で、machine.config ファイルを保存します。  
@@ -87,11 +88,11 @@ ms.lasthandoff: 11/28/2017
   
 3.  WCF-CustomIsolated アダプターを使用する場合は、IIS 管理コンソールで、WCF 受信場所に関連付けられたアプリケーション プールを再起動します。  
   
-4.  WCF 機能拡張ポイントを使用する受信場所を構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**受信場所**、右側のペインをダブルクリックして*\<受信場所\>*です。  
+4.  WCF 機能拡張ポイントを使用する受信場所を構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**受信場所**、右側のペインをダブルクリックして*\<受信場所\>* です。  
   
     -   **受信場所のプロパティ** ダイアログ ボックスで、**型**ドロップダウン リストで、 **Wcf-custom**または**Wcf-customisolated**を使用して、をクリックする、WCF アダプタによって**構成**です。  
   
-5.  WCF 機能拡張ポイントを使用する送信ポートを構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**送信ポート**、右側のペインをダブルクリックして*\<送信ポート\>*です。  
+5.  WCF 機能拡張ポイントを使用する送信ポートを構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**送信ポート**、右側のペインをダブルクリックして*\<送信ポート\>* です。  
   
     -   **送信ポートのプロパティ** ダイアログ ボックスで、**型**ドロップダウン リストで、 **Wcf-custom**、クリックして**構成**です。  
   
@@ -103,7 +104,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  コマンド プロンプトで、%frameworkdir%\v4 に移動します。X.XXXXX\CONFIG フォルダーを開き、 **machine.config**メモ帳を使用して、ファイルです。  
   
-2.  メモ帳で、machine.config ファイルがない場合、  **\<system.serverModel\>\\< 拡張\>**要素内にその要素の追加、  **\<構成\>** 、machine.config の要素ファイル、および追加し、  **\<bindingElementExtensions\>**  WCF バインド要素の要素内に拡張機能、  **\<system.serverModel\>\\< 拡張\>**要素。 たとえば、droppingInterceptor、カスタム バインディング要素拡張を有効にする次のコードを追加、 **\<構成\>** machine.config ファイルの要素。  
+2.  メモ帳で、machine.config ファイルがない場合、  **\<system.serverModel\>\\< 拡張\>** 要素内にその要素の追加、  **\<構成\>** 、machine.config の要素ファイル、および追加し、  **\<bindingElementExtensions\>**  WCF バインド要素の要素内に拡張機能、  **\<system.serverModel\>\\< 拡張\>** 要素。 たとえば、droppingInterceptor、カスタム バインディング要素拡張を有効にする次のコードを追加、 **\<構成\>** machine.config ファイルの要素。  
   
     ```  
     <system.serviceModel>  
@@ -116,7 +117,7 @@ ms.lasthandoff: 11/28/2017
     ```  
   
     > [!NOTE]
-    > - コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >*です。  
+    > - コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >* です。  
     > - 参照してください[bindingElementExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/bindingelementextensions)この要素上です。
   
 3.  メモ帳で、machine.config ファイルを保存します。  
@@ -137,11 +138,11 @@ ms.lasthandoff: 11/28/2017
   
 3.  WCF-CustomIsolated アダプターを使用する場合は、IIS 管理コンソールで、WCF 受信場所に関連付けられたアプリケーション プールを再起動します。  
   
-4.  WCF 機能拡張ポイントを使用する受信場所を構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**受信場所**、右側のペインをダブルクリックして*\<受信場所\>*です。  
+4.  WCF 機能拡張ポイントを使用する受信場所を構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**受信場所**、右側のペインをダブルクリックして*\<受信場所\>* です。  
   
     -   **受信場所のプロパティ** ダイアログ ボックスで、**型**ドロップダウン リストで、 **Wcf-custom**または**Wcf-customisolated**を使用して、をクリックする、WCF アダプタによって**構成**です。  
   
-5.  WCF 機能拡張ポイントを使用する送信ポートを構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**送信ポート**、右側のペインをダブルクリックして*\<送信ポート\>*です。  
+5.  WCF 機能拡張ポイントを使用する送信ポートを構成する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**送信ポート**、右側のペインをダブルクリックして*\<送信ポート\>* です。  
   
     -   **送信ポートのプロパティ** ダイアログ ボックスで、**型**ドロップダウン リストで、 **Wcf-custom**、クリックして**構成**です。  
   
@@ -166,7 +167,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  コマンド プロンプトで、%frameworkdir%\v4 に移動します。X.XXXXX\CONFIG フォルダーを開き、 **machine.config**メモ帳を使用して、ファイルです。  
   
-2.  メモ帳で、machine.config ファイルがない場合、  **\<system.serverModel\>\\< 拡張\>**要素内にその要素の追加、  **\<構成\>** 、machine.config の要素ファイル、および追加し、  **\<behaviorExtensions\>**  WCF 動作拡張機能の要素内部、  **\<system.serverModel\>\\< 拡張\>**要素。 たとえば、schemaValidator、カスタム動作拡張機能を有効にする次のコードを追加、 **\<構成\>** machine.config ファイルの要素。  
+2.  メモ帳で、machine.config ファイルがない場合、  **\<system.serverModel\>\\< 拡張\>** 要素内にその要素の追加、  **\<構成\>** 、machine.config の要素ファイル、および追加し、  **\<behaviorExtensions\>**  WCF 動作拡張機能の要素内部、  **\<system.serverModel\>\\< 拡張\>** 要素。 たとえば、schemaValidator、カスタム動作拡張機能を有効にする次のコードを追加、 **\<構成\>** machine.config ファイルの要素。  
   
     ```  
     <system.serviceModel>  
@@ -179,7 +180,7 @@ ms.lasthandoff: 11/28/2017
     ```  
   
     > [!NOTE]
-    >  - コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >*です。  
+    >  - コマンドを使用して登録するアセンブリの情報を得られる**gacutil/lr** *< assembly_name >* です。  
     >  - 参照してください[behaviorExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/behaviorextensions)この要素上です。
   
 3.  メモ帳で、machine.config ファイルを保存します。  
@@ -200,11 +201,11 @@ ms.lasthandoff: 11/28/2017
   
 3.  WCF-CustomIsolated アダプターを使用する場合は、IIS 管理コンソールで、WCF 受信場所に関連付けられたアプリケーション プールを再起動します。  
   
-4.  BizTalk 管理コンソールで、WCF 機能拡張ポイントを使用して、展開の受信場所を構成する場合**BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**受信場所**、右側のペインをダブルクリックして*\<受信場所\>*です。  
+4.  BizTalk 管理コンソールで、WCF 機能拡張ポイントを使用して、展開の受信場所を構成する場合**BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**受信場所**、右側のペインをダブルクリックして*\<受信場所\>* です。  
   
     -   **受信場所のプロパティ** ダイアログ ボックスで、**型**ドロップダウン リストで、 **Wcf-custom**または**Wcf-customisolated**を使用して、をクリックする、WCF アダプタによって**構成**です。  
   
-5.  BizTalk 管理コンソールで、WCF 機能拡張ポイントを使用して、展開する送信ポートを構成する場合**BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**送信ポート**、右側のペインをダブルクリックして*\<送信ポート\>*です。  
+5.  BizTalk 管理コンソールで、WCF 機能拡張ポイントを使用して、展開する送信ポートを構成する場合**BizTalk グループ**、展開 *\<BizTalk アプリケーション\>*、展開**送信ポート**、右側のペインをダブルクリックして*\<送信ポート\>* です。  
   
     -   **送信ポートのプロパティ** ダイアログ ボックスで、**型**ドロップダウン リストで、 **Wcf-custom**、クリックして**構成**です。  
   
