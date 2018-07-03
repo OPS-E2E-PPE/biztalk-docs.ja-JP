@@ -1,5 +1,5 @@
 ---
-title: '手順 6: オーケストレーション図形 (Contoso) の構成 |Microsoft ドキュメント'
+title: '手順 6: オーケストレーション図形 (Contoso) の構成 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,23 +15,23 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9310e9b287f35876a137d13dbcc2d1fa39ba9588
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 31ffbdbe5cea810f08b5dc08b8d3dcae265c9f04
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009387"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36980651"
 ---
 # <a name="step-6-configuring-orchestration-shapes-contoso"></a>手順 6: オーケストレーション図形 (Contoso) の構成
-この手順で作成した PrivateResponder オーケストレーションに追加するオーケストレーション図形を構成する[手順 5: Contoso プライベート プロセス オーケストレーションの変更](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)です。 間の通信の設定が含まれます[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server と Contoso のエンタープライズ リソース プランニング (ERP) システムです。  
+作成した PrivateResponder オーケストレーションに追加したオーケストレーション図形を構成するこの手順で[手順 5: Contoso プライベート プロセス オーケストレーションの変更](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)します。 これには、Contoso の Microsoft® BizTalk Server とエンタープライズ リソース プランニング (ERP) システム間の通信の設定が含まれます。  
   
 ### <a name="to-configure-the-constructmessagepip3a2requestmessage-shape"></a>ConstructMessagePIP3A2RequestMessage 図形を構成するには  
   
-1.  オーケストレーション デザイン画面で、ソリューション エクスプ ローラーで選択されている PrivateResponder.odx を選択、 **ConstructPIP3A2RequestMessage**図形です。  
+1.  ソリューション エクスプ ローラーで、オーケストレーション デザイン画面で選択した PrivateResponder.odx を選択、 **ConstructPIP3A2RequestMessage**図形。  
   
-2.  [プロパティ] ウィンドウで、選択、**構築メッセージ**プロパティを選択**PIP3A2RequestMessage**ドロップダウン リスト、キーを押しますから**Enter**です。  
+2.  プロパティ ウィンドウで、選択、**構築メッセージ**プロパティで、 **PIP3A2RequestMessage**からドロップダウン リスト、およびキーを押します **」と入力**。  
   
-3.  ダブルクリックして、**メッセージの割り当て**図形に、 **ConstructPIP3A2RequestMessage**図形を BizTalk 式エディタを開きます。  
+3.  ダブルクリックして、**メッセージの割り当て**図形に、 **[constructpip3a2requestmessage]** 図形を BizTalk 式エディタを開きます。  
   
 4.  BizTalk 式エディターで、以下を入力します。  
   
@@ -43,66 +43,66 @@ ms.locfileid: "26009387"
   
 ### <a name="to-configure-the-constructcontoso3a2requestmessage-transform-shape"></a>ConstructContoso3A2RequestMessage 変換図形を構成するには  
   
-1.  オーケストレーション デザイン画面で、をクリックして、 **ConstructContoso3A2RequestMessage**図形です。  
+1.  オーケストレーション デザイン画面で、をクリックして、 **ConstructContoso3A2RequestMessage**図形。  
   
-2.  [プロパティ] ウィンドウで、選択、**メッセージ構築**プロパティ、および選択**Contoso3A2RequestMessage**ドロップダウン リストからです。  
+2.  [プロパティ] ウィンドウで、選択、**メッセージ構築**プロパティ、および選択し**Contoso3A2RequestMessage**ドロップダウン リストから。  
   
-3.  選択、**変換 _ 1**図形内、 **ConstructContoso3A2RequestMessage**図形です。  
+3.  選択、**変換 _ 1**図形内、 **ConstructContoso3A2RequestMessage**図形。  
   
-4.  プロパティ ウィンドウで、選択、**マップ名**プロパティ、省略記号ボタンをクリックして (**.**) 変換の構成 ダイアログ ボックスを開きます。  
+4.  プロパティ ウィンドウで、選択、**マップ名**プロパティ、省略記号ボタンをクリックします (**...**) 変換の構成 ダイアログ ボックスを開きます。  
   
-5.  変換の構成 ダイアログ ボックスで、**既存のマップ**、し、**完全修飾マップ名 ボックス**  **\<参照されたアセンブリから選択\>** を開くには、成果物の種類の選択 ダイアログ ボックスのドロップダウン リストからです。  
+5.  変換の構成 ダイアログ ボックスで、**既存のマップ**、し、**完全修飾マップ名 ボックス**を選択します **\<参照されたアセンブリから選択\>** 成果物の種類の選択 ダイアログ ボックスを開くドロップダウン リストから。  
   
-6.  成果物の種類の選択 ダイアログ ボックスで、選択、 **ContosoPriceAndAvailability**左側のウィンドウでアセンブリを選択**PIP3A2RequestToContosoPriceRequest**右側のウィンドウでマップをクリック**Ok**です。  
+6.  成果物の種類の選択 ダイアログ ボックスで、選択、 **ContosoPriceAndAvailability**左側のウィンドウでアセンブリを選択**PIP3A2RequestToContosoPriceRequest**右側のウィンドウでマップおよび順にクリックします**Ok**します。  
   
 7.  変換の構成] ダイアログ ボックスで、[**ソース**左側のウィンドウでします。  
   
-8.  空のボックスをクリックして**変数名**、し、 **PIP3A2RequestMessage**ドロップダウン リストからです。  
+8.  下の空のボックスをクリックします。**変数名**、し、 **PIP3A2RequestMessage**ドロップダウン リストから。  
   
-9. 選択**先**左側のウィンドウでをクリックして**Contoso3A2RequestMessage**から、 **VariableName**クリックしてドロップダウン リスト**OK**.  
+9. 選択**先**左側のウィンドウで次のようにクリックします**Contoso3A2RequestMessage**から、 **VariableName**ドロップダウン リスト、およびクリック **[ok]**.  
   
 ### <a name="to-configure-the-execute3a2vocabulary-call-rules-shape"></a>Execute3A2Vocabulary ルール呼び出しシェイプを構成するには  
   
-1.  オーケストレーション デザイン画面上をダブルクリックして、 **Execute3A2Vocabulary**図形内、 **スコープ _ 1**図形です。  
+1.  オーケストレーション デザイン画面で、ダブルクリックして、 **Execute3A2Vocabulary**図形内、 **Scope_1**図形。  
   
-2.  [CallRules ポリシーの構成] ダイアログ ボックスで選択**3 a2priceavailabilitypolicy**から、**呼び出すビジネス ポリシーを選択して**ドロップダウン リスト。  
+2.  CallRules ポリシーの構成 ダイアログ ボックスで選択**3 a2priceavailabilitypolicy**から、**呼び出すビジネス ポリシーを選択して**ドロップダウン リスト。  
   
-3.  **ポリシー パラメーターの指定**一覧で、クリックして**ここをクリックして新しい行を追加する**、し、 **contoso3a2responsemessage**ドロップダウン リストからです。  
+3.  **ポリシー パラメーターの指定**一覧で、**ここをクリックして新しい行を追加する**、し、 **contoso3a2responsemessage**ドロップダウン リストから。  
   
 4.  **[OK]** をクリックします。  
   
 ### <a name="to-configure-the-construct3a2responsemessage-transform-shape"></a>Construct3A2ResponseMessage 変換図形を構成するには  
   
-1.  オーケストレーション デザイン画面で、をクリックして、 **Construct3A2ResponseMessage**図形です。  
+1. オーケストレーション デザイン画面で、をクリックして、 **Construct3A2ResponseMessage**図形。  
   
-2.  [プロパティ] ウィンドウで選択、**構築メッセージ**プロパティ、および選択**PIP3A2ResponseMessage**ドロップダウン リスト、キーを押しますから**Enter**です。  
+2. [プロパティ] ウィンドウで、選択、**構築メッセージ**プロパティ、および選択し**PIP3A2ResponseMessage**からドロップダウン リスト、およびキーを押します **」と入力**します。  
   
-3.  選択、 **[transform_2]** 図形内、 **Construct3A2ResponseMessage**図形です。  
+3. 選択、 **[transform_2]** 図形内、 **Construct3A2ResponseMessage**図形。  
   
-4.  [プロパティ] ウィンドウでをクリックして**マップ名**、省略記号ボタンをクリックして (**.**).  
+4. プロパティ ウィンドウで次のようにクリックします**マップ名**、省略記号ボタンをクリックし (**...。**).  
   
-5.  [変換の構成] ダイアログ ボックスで、**新しいマップします。**  
+5. 変換の構成] ダイアログ ボックスで、[**新しいマップします。**  
   
-6.  **完全修飾マップ名**ボックスに、入力**ContosoPriceAndAvailability.ContosoResponse3A2RequestMerge**です。  
+6. **完全修飾マップ名**ボックスに「 **ContosoPriceAndAvailability.ContosoResponse3A2RequestMerge**します。  
   
-7.  変換の構成] ダイアログ ボックスで、[**ソース**左側のウィンドウでします。  
+7. 変換の構成] ダイアログ ボックスで、[**ソース**左側のウィンドウでします。  
   
-8.  クリックして、**ここをクリックして新しい行を追加する**の下にラベルを付ける**変数名**、し、 **PIP3A2RequestMessage**ドロップダウン リストからです。  
+8. をクリックして、**ここをクリックして新しい行を追加する**の下にラベルを付ける**変数名**、し、 **PIP3A2RequestMessage**ドロップダウン リストから。  
   
-9. をクリックして、**ここをクリックして新しい行を追加する**の下にラベルを付ける**変数名**クリックし、次の行で **[contoso3a2responsemessage]** ドロップダウン リストからです。  
+9. をクリックして、**ここをクリックして新しい行を追加する**の下にラベルを付ける**変数名**選択し、次の行で **[contoso3a2responsemessage]** ドロップダウン リストから。  
   
-10. 選択**変換先**左のペインで選択**PIP3A2ResponseMessage**から、**変数名**クリックしてドロップダウン リスト**OK**.  
+10. 選択**先**左側のウィンドウで次のように選択します**PIP3A2ResponseMessage**から、**変数名**ドロップダウン リスト、およびクリック **[ok]**.  
   
-11. ソリューション エクスプ ローラーで右クリックし、 **ContosoResponse3A2RequestMerge.btm**ファイルを開き、をクリックして**ファイルを開く**です。  
+11. ソリューション エクスプ ローラーで右クリックし、 **ContosoResponse3A2RequestMerge.btm**ファイルを開き、をクリックし、**プログラムから開く**します。  
   
-12. **開く選択-Contosoresponse3a2requestmerge.btm**ダイアログ ボックスで、 **XML エディター**クリックして、プログラムの一覧から**OK**です。 **[はい]** をクリックします。  
+12. **- Contosoresponse3a2requestmerge.btm**ダイアログ ボックスで、 **XML エディター**クリックして、プログラムの一覧から**OK**します。 **[はい]** をクリックします。  
   
     > [!NOTE]
-    >  このチュートリアルでは、このマップのために必要なリンクの数が多いため[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]2008 HTML/XML Editor マップ情報を手動でコピーして、マップを構築するためにします。  
+    >  このチュートリアルでは使用が多いのため、このマップに必要なリンクの[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]マップ情報を手動でコピーすることで、マップを構築する 2008 HTML または XML エディター。  
   
-13. **編集** メニューのをクリックして**すべて選択**です。  
+13. **編集** メニューのをクリックして**すべて選択**します。  
   
-14. 次の XML をクリップボードにコピーします。 **編集** メニューのをクリックして**貼り付け**を現在のマップを上書きします。  
+14. 次の XML をクリップボードにコピーします。 **編集** メニューのをクリックして**貼り付け**現在のマップを上書きします。  
   
     ```  
     <?xml version="1.0" encoding="utf-16"?>  
@@ -156,9 +156,9 @@ ms.locfileid: "26009387"
   
 ### <a name="to-configure-the-expression1-shape"></a>式_1 図形を構成するには  
   
-1.  ソリューション エクスプ ローラーで、 **PrivateResponder.odx**です。  
+1.  ソリューション エクスプ ローラーでダブルクリック**PrivateResponder.odx**します。  
   
-2.  オーケストレーション デザイン画面上をダブルクリックして、**式 _ 1**図形を BizTalk 式エディタを開きます。  
+2.  オーケストレーション デザイン画面で、ダブルクリックして、 **Expression_1**図形を BizTalk 式エディタを開きます。  
   
 3.  BizTalk 式エディターで、次のコードを入力します。  
   

@@ -1,5 +1,5 @@
 ---
-title: 診断トレースとメッセージ ログを SAP アダプターの |Microsoft ドキュメント
+title: 診断トレースと SAP アダプターのメッセージがログ記録 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,36 +17,36 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: beb5565141521c08e295a9d5cee88406c16df7de
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 40204b7d8835a4cc7231cee2b20938b03042f7a3
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007176"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36966827"
 ---
 # <a name="diagnostic-tracing-and-message-logging-for-the-sap-adapter"></a>診断トレースと SAP アダプターのメッセージ ログ
-診断トレースは、効果的にアダプターを使用するときに発生する可能性がある問題を診断するのに役立ちます。 アダプターのクライアントは、3 つのレベルでの診断のトレースをアクティブ化できます。  
+診断トレースは、効果的にアダプターを使用するときに発生する可能性がある問題を診断するのに役立ちます。 アダプター クライアントは、3 つのレベルの診断トレースをアクティブ化できます。  
   
--   アダプターのクライアントとアダプター間で  
+- アダプターのクライアントとアダプターの間  
   
--   アダプター内  
+- アダプター内  
   
--   アダプターと基幹業務 (LOB) アプリケーションの間  
+- アダプターと基幹業務 (LOB) アプリケーションの間  
   
- このセクションでは、これらのレベルでトレースをアクティブ化に関する情報を提供します。  
+  このセクションでは、これらのレベルでトレースをアクティブ化についての情報を提供します。  
   
-## <a name="tracing-between-the-adapter-client-and-the-adapter"></a>アダプターのクライアントとアダプター間でのトレース  
- アダプターのクライアントは、アダプターのクライアントとアダプター間のトレースの問題への WCF トレースを有効にできます。 WCF トレースは、WCF サービス モデルを使用して、アダプターのクライアントから取得し、シリアル化の問題の診断に役立つは入力 XML の追跡に使用します。 WCF トレースは、WCF チャネル モデルまたはアダプターのクライアントに、アダプターからの出力メッセージには使用されません。 それぞれの構成ファイルの抜粋を追加することで、BizTalk アプリケーションと WCF サービス モデルのアプリケーションの WCF トレースをアクティブにできます。 また、デザイン時と実行時の両方でトレースを有効にできます。  
+## <a name="tracing-between-the-adapter-client-and-the-adapter"></a>アダプターのクライアントと、アダプターのトレース  
+ アダプター クライアントには、アダプターのクライアントとアダプター間のトレースの問題に WCF トレースが有効にすることができます。 WCF トレースを使用して、WCF サービス モデルを使用して、アダプターのクライアントからは、シリアル化の問題の診断に役立つ入力 XML をトレースします。 WCF トレースは、WCF チャネル モデルまたはアダプター クライアントにアダプターからの出力メッセージには使用されません。 抜粋をそれぞれの構成ファイルに追加することで、BizTalk アプリケーションと WCF サービス モデルのアプリケーションの WCF トレースをアクティブにできます。 また、デザイン時と実行時の両方のトレースを有効にできます。  
   
--   **デザイン時にトレース**です。 デザイン時機能を使用することは、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]です。 これらすべてのツールを使用できる[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。 そのため、デザイン時の操作のトレースを有効にする必要がありますに追加する抜粋にある devenv.exe.config ファイル*\<インストール ドライブ\>*: \Program Files\Microsoft Visual Studio *\<バージョン\>* \Common7\IDE です。  
+- **デザイン時トレース**します。 デザイン時動作は、使用することがあります、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]します。 これらすべてのツールから使用できる[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]します。 そのため、デザイン時エクスペリエンスのトレースを有効にする必要がありますに追加する抜粋にある devenv.exe.config ファイル*\<インストール ドライブ\>*: Visual Studio \Program Files\Microsoft *\<バージョン\>* \Common7\IDE です。  
   
--   **実行時にトレース**です。 実行時のトレースを使用しているアプリケーションによっては抜粋を追加する必要があります。  
+- **実行時にトレース**します。 実行時のトレースを使用するアプリケーションに応じて抜粋を追加する必要があります。  
   
-    -   [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーションに BizTalk 構成ファイルで、通常 BTSNTSvc.exe.config の抜粋を追加する必要があります。BizTalk Server のこのファイルは通常 \<インストール ドライブ\>: \Program Files\Microsoft BizTalk Server です。  
+  - [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーションでは、BizTalk 構成ファイルで、通常は BTSNTSvc.exe.config に抜粋を追加する必要があります。BizTalk server では、このファイルは通常で使用可能な\<インストール ドライブ\>: \Program Files\Microsoft BizTalk Server です。  
   
-    -   WCF サービス モデル .NET アプリケーションのプロジェクトの app.config ファイルの抜粋を追加する必要があります。  
+  - WCF サービス モデル .NET アプリケーションのプロジェクトの app.config ファイルに抜粋を追加する必要があります。  
   
- WCF トレースを有効にするには、内で次の抜粋を追加、`<configuration>`タグ。  
+  WCF トレースを有効にするには、内で次の抜粋を追加、`<configuration>`タグ。  
   
 ```  
 <system.diagnostics>  
@@ -86,23 +86,23 @@ ms.locfileid: "26007176"
   </system.serviceModel>  
 ```  
   
- これは、C:\log\WCFTrace.svclog に WCF トレースを保存します。 WCF トレースの詳細については、次を参照してください。[トレース](https://msdn.microsoft.com/library/ms730342.aspx)です。 
+ これにより、WCF トレースが C:\log\WCFTrace.svclog を保存します。 WCF トレースの詳細については、次を参照してください。[トレース](https://msdn.microsoft.com/library/ms730342.aspx)します。 
   
 > [!IMPORTANT]
->  トレースを有効にすると、機密のビジネス データを公開するための潜在的なセキュリティ上の脅威を軽減することを確認してください。 推奨事項を参照してください[ベスト プラクティス、SAP アダプターをセキュリティで保護する](../../adapters-and-accelerators/adapter-sap/best-practices-to-secure-the-sap-adapter.md)です。  
+>  トレースを有効にすると、機密性の高いビジネス データを公開することの潜在的なセキュリティ脅威を軽減することを確認します。 推奨事項を参照してください[ベスト プラクティス、SAP アダプターをセキュリティで保護する](../../adapters-and-accelerators/adapter-sap/best-practices-to-secure-the-sap-adapter.md)します。  
   
 ## <a name="tracing-within-the-adapter"></a>アダプターのトレース  
- アダプターは、エラー、警告、および情報メッセージなど、トレース ファイルに有用な情報のさまざまなカテゴリをログオンします。 このような情報は、アダプター内のプロセス フローを理解し、アダプターに関する問題の診断に役立ちます。 アクティブ化することができます、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]とアダプターが BizTalk アプリケーションと WCF サービスの抜粋をそれぞれの構成ファイルに追加することによってモデル アプリケーション用にトレースされます。 また、デザイン時と実行時の両方でトレースを有効にできます。  
+ アダプターは、さまざまなカテゴリの有用な情報をエラー、警告、および情報メッセージなど、トレース ファイルにログインします。 このような情報は、アダプターの処理フローを理解し、アダプターに関する問題の診断に役立ちます。 アクティブ化することができます、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]とアダプターの BizTalk アプリケーションと WCF の抜粋をそれぞれの構成ファイルに追加することでモデルのアプリケーションをサービスのトレースします。 また、デザイン時と実行時の両方のトレースを有効にできます。  
   
--   **デザイン時にトレース**です。 デザイン時機能を使用することは、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]です。 これらすべてのツールを使用できる[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。 そのため、デザイン時の操作のトレースを有効にする必要がありますに追加する抜粋にある devenv.exe.config ファイル*\<インストール ドライブ\>*: \Program Files\Microsoft Visual Studio *\<バージョン\>* \Common7\IDE です。  
+- **デザイン時トレース**します。 デザイン時動作は、使用することがあります、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]します。 これらすべてのツールから使用できる[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]します。 そのため、デザイン時エクスペリエンスのトレースを有効にする必要がありますに追加する抜粋にある devenv.exe.config ファイル*\<インストール ドライブ\>*: Visual Studio \Program Files\Microsoft *\<バージョン\>* \Common7\IDE です。  
   
--   **実行時にトレース**です。 実行時のトレースを使用しているアプリケーションによっては抜粋を追加する必要があります。  
+- **実行時にトレース**します。 実行時のトレースを使用するアプリケーションに応じて抜粋を追加する必要があります。  
   
-    -   [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーションに BizTalk 構成ファイルで、通常 BTSNTSvc.exe.config の抜粋を追加する必要があります。BizTalk Server のこのファイルは通常 \<インストール ドライブ\>: \Program Files\Microsoft BizTalk Server です。  
+  - [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーションでは、BizTalk 構成ファイルで、通常は BTSNTSvc.exe.config に抜粋を追加する必要があります。BizTalk server では、このファイルは通常で使用可能な\<インストール ドライブ\>: \Program Files\Microsoft BizTalk Server です。  
   
-    -   WCF サービス モデル .NET アプリケーションのプロジェクトの app.config ファイルの抜粋を追加する必要があります。  
+  - WCF サービス モデル .NET アプリケーションのプロジェクトの app.config ファイルに抜粋を追加する必要があります。  
   
- 有効にする[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]とアダプターのトレース、内で次の抜粋を追加、`<configuration>`タグ。  
+  有効にする[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]とアダプターのトレース、内の抜粋を次の追加、`<configuration>`タグ。  
   
 ```  
 <system.diagnostics>  
@@ -127,23 +127,23 @@ ms.locfileid: "26007176"
   </system.diagnostics>  
 ```  
   
- これは、C:\log\AdapterTrace.svclog に WCF トレースを保存します。  
+ これにより、WCF トレースが C:\log\AdapterTrace.svclog を保存します。  
   
 ## <a name="tracing-between-the-adapter-and-the-lob-application"></a>アダプターと LOB アプリケーション間でのトレース  
- 診断と思われる問題アダプターと、LOB アプリケーション間の通信のトレースを有効にする必要があります、LOB アプリケーションに関連付けられます。 アダプターは、この情報にアクセスする (クライアントとサーバー側) をトレース LOB によっても異なります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプター クライアントが接続 URI の"RfcSdkTrace"パラメーターを指定することで、SAP システム内のトレースを有効にできるようにします。 RFC SDK SAP システム内のトレース情報のフローを有効にするには、このパラメーターを指定する必要があります。 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
+ 診断するには、疑いがある問題に関連する、LOB アプリケーション アダプターと LOB アプリケーション間の通信のトレースを有効にする必要があります。 アダプターは、この情報にアクセスする (クライアント/サーバー側) のトレース LOB によっても異なります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]によりアダプターでクライアント接続 URI の"RfcSdkTrace"パラメーターを指定することで、SAP システム内でトレースをオンにします。 SAP システム内のトレース情報の流れを RFC SDK を有効にするには、このパラメーターを指定する必要があります。 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
   
- さらに、RFC SDK トレースのレベルに設定した RFC_TRACE 環境変数を作成することもできます。 RFC_TRACE が SAP で定義されている環境変数であるし、RFC SDK を使用しています。 この変数は定義されていないか、0 に設定されている、RFC SDK トレース レベルが最低限のものです。 変数が 1 または 2 に設定されている場合は、トレース レベルの詳細になります。  
+ さらに、RFC SDK トレースのレベルに設定した RFC_TRACE 環境変数を作成することもできます。 RFC_TRACE は、SAP によって定義された環境変数は、RFC SDK によって使用されます。 場合この変数が定義されていない、または 0 に設定されている場合は、最小限に抑えられますが、RFC SDK トレース レベルです。 変数が 1 または 2 に設定されている場合、トレース レベルの詳細については以上。  
   
 > [!NOTE]
->  RFC_TRACE 環境変数が設定されているかに関係なく、RFC SDK トレースが有効になっている*のみ*"RfcSdkTrace"パラメーターに設定されている場合、接続 URI の場合は true です。 この環境変数の値は、RFC SDK トレースのレベルのみを制御します。 RfcSdkTrace が設定されている場合は true、メッセージをアダプターと、SAP システムの間でのトレースがコンピューターに"system32"フォルダーにコピーされます。 他の場所に、RFC SDK トレースを保存するには、RFC_TRACE_DIR 環境変数を設定することができます。 これらの環境変数の詳細については、SAP のマニュアルを参照してください。  
+>  RFC_TRACE 環境変数が設定されているかに関係なく RFC SDK トレースが有効になっている*のみ*"RfcSdkTrace"パラメーターに設定されている場合、接続 URI の場合は true。 この環境変数の値は、RFC SDK トレースのレベルのみを制御します。 RfcSdkTrace が設定されている場合は true、メッセージをアダプターと SAP システムの間のトレースは、コンピューターに"system32"フォルダーにコピーされます。 別の場所に、RFC SDK トレースを保存するには、RFC_TRACE_DIR の環境変数を設定することができます。 これらの環境変数の詳細については、SAP のマニュアルを参照してください。  
   
-## <a name="viewing-the-traces"></a>トレースの表示  
- Windows Communication Foundation (WCF) サービス トレース ビューアー ツールを使用するには、トレースを表示します。 ツールの詳細については、次を参照してください。[相関トレースの表示とトラブル サービス トレース ビューアーを使用して](https://msdn.microsoft.com/library/aa751795.aspx)です。
+## <a name="viewing-the-traces"></a>トレースを表示します。  
+ Windows Communication Foundation (WCF) サービス トレース ビューアー ツールを使用するには、トレースを表示します。 ツールの詳細については、次を参照してください。[相関トレースの表示と問題のサービス トレース ビューアーを使用して](https://msdn.microsoft.com/library/aa751795.aspx)します。
   
 ## <a name="configuring-tracking-for-biztalk-applications"></a>BizTalk アプリケーションの追跡の構成  
- BizTalk Server 管理コンソールでは、受信ポートと送信ポートなどの項目に対してさまざまな追跡オプションを構成できます。 追跡構成設定を使用すると、着信および発信のイベント データ、メッセージのプロパティ、メッセージ本文、およびオーケストレーションを追跡します。 BizTalk アプリケーションの追跡の構成の詳細については、次を参照してください。、[成果物の管理](../../core/managing-artifacts.md)です。
+ BizTalk Server 管理コンソールを使用するポートと受信ポートの送信ポートなどのアイテムのさまざまな追跡オプションを構成することができます。 追跡構成設定を使用すると、受信と送信イベント データ、メッセージのプロパティ、メッセージ本文、およびオーケストレーションを追跡します。 BizTalk アプリケーションの追跡を構成する方法の詳細については、次を参照してください。、[管理成果物](../../core/managing-artifacts.md)します。
   
- また、履歴および追跡したデータを表示するのに状態と動作状況の追跡 (HAT) を使用することができます。 詳細については、次を参照してください。[履歴の表示と追跡データ](../../core/viewing-historical-and-tracked-data.md)です。
+ 履歴および追跡したデータを表示するのに状態と動作状況の追跡 (HAT) を使用することもできます。 詳細については、次を参照してください。[履歴の表示と追跡データ](../../core/viewing-historical-and-tracked-data.md)します。
  
 ## <a name="see-also"></a>参照  
 [SAP アダプターをトラブルシューティングします。](../../adapters-and-accelerators/adapter-sap/troubleshoot-the-sap-adapter.md)

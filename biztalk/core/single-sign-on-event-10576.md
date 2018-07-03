@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10576 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10576 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5f4ef2b865fe92b0466bbf9f145b9b1e679562e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cae438c35d99ab9b81f44d4cf24a087e1a217fd3
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271362"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36966331"
 ---
 # <a name="single-sign-on-event-10576"></a>シングル サインオン: イベント 10576
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10576|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_INFO_CHANGED_SSO_ADMIN|  
-|メッセージ テキスト|SSO 管理者アカウントが更新されました。%r<br /><br /> 新しい SSO 管理者: %1 %r<br /><br /> 古い SSO 管理者: %2 %r<br /><br /> 追跡 ID: %3 %r<br /><br /> クライアント コンピューターの場合: %4 %r<br /><br /> クライアント ユーザー: %5|  
+|                 |                                                                                                                                                                                                                     |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                                                              エンタープライズ シングル サインオン                                                                                              |
+| 製品バージョン |                                                                             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                              |
+|    イベント ID     |                                                                                                        10576                                                                                                        |
+|  イベント ソース   |                                                                                                       ENTSSO                                                                                                        |
+|    コンポーネント    |                                                                                                         なし                                                                                                         |
+|  シンボル名  |                                                                                             SSO_INFO_CHANGED_SSO_ADMIN                                                                                              |
+|  メッセージ テキスト   | SSO 管理者アカウントが更新されました。%r<br /><br /> 新しい SSO 管理者: % 1 %r<br /><br /> 古い SSO 管理者: % 2 %r<br /><br /> 追跡 ID: % 3 %r<br /><br /> クライアント コンピューターの場合: % 4 %r<br /><br /> クライアント ユーザー: %5 |
   
 ## <a name="explanation"></a>説明  
  これは情報メッセージであり、SSO システム内で発生する重要なセキュリティ関連イベントの追跡に役立つことがあります。 このメッセージは、SSO 管理者アカウントが更新されたことを示します。  

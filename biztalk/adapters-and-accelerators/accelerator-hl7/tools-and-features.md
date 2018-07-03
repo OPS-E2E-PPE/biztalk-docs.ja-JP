@@ -1,5 +1,5 @@
 ---
-title: ツールと機能 |Microsoft ドキュメント
+title: ツールと機能 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a92ef78cdb342d015847377e46bcb434d9fce6ee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1d93b0d614d0db16dc2e6ab615171b4e47bd9a9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206466"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36974691"
 ---
-# <a name="tools-and-features"></a>ツールおよび機能
-ユーザー [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) へのアクセスがある、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 、ロール ベースの機能とツールだけでなく[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]-特定のツールと機能が医療業界に合わせて調整します。 ここでは、それらの機能やツールについて説明します。  
+# <a name="tools-and-features"></a>ツールと機能
+Microsoft BizTalk Accelerator for HL7 のユーザー ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)])、Microsoft へのアクセスがある[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、ロール ベースの機能とツールだけでなく[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]-特定のツールと機能は、医療業界に合わせて調整します。 ここでは、それらの機能やツールについて説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

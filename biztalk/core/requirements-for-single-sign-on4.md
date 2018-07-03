@@ -1,5 +1,5 @@
 ---
-title: TIBCO EMS アダプターの SSO の要件 |Microsoft ドキュメント
+title: TIBCO EMS アダプターの SSO の要件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 805d14e056da665f8828ce0244f28ed9adc40ff4
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 8baf665a7f997293130a2c1eb93f893167f39a4f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24012977"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36967883"
 ---
 # <a name="requirements-for-single-sign-on"></a>シングル サインオンの要件
 
@@ -26,26 +26,26 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) ではシ�
   
  シングル サインオンを使用するために必要なものは次のとおりです。  
   
--   Microsoft BizTalk Server
+- Microsoft BizTalk Server
   
--   Visual Studio  
+- Visual Studio  
   
--   エンタープライズ シングル サインオン  
+- エンタープライズ シングル サインオン  
   
--   SSO をサポートするサーバーのシステム  
+- SSO をサポートするサーバー システム  
   
- 分離ホストは、信頼されている認証として構成する必要があります。
+  分離ホストは、信頼されている認証として構成する必要があります。
   
 ## <a name="enable-sso"></a>SSO を有効にします。  
   
-1.  **トランスポートのプロパティ**ウィンドウで、**はい**の**SSO を使用する**です。  
+1.  **トランスポートのプロパティ**ウィンドウで、**はい**の**使用 SSO**。  
   
 2.  トランスポートのプロパティを指定するときに、適切な関連アプリケーションを選択します。  
   
-     関連アプリケーションを作成する方法については、次を参照してください。[関連アプリケーションの作成](../core/creating-affiliate-applications5.md)です。  
+     関連アプリケーションを作成する方法については、次を参照してください。[関連アプリケーションを作成する](../core/creating-affiliate-applications5.md)します。  
   
     > [!NOTE]
-    >  作業を実行した後、SSO を使用して任意の Web 共有フォルダーへのリセットに注意してください**を共有しない**です。 フォルダーが共有されていると、そのフォルダーは使用中と見なされるので、フォルダーを使用するアプリケーションが正しく更新またはアンインストールされません。  
+    >  作業が完了したら、SSO を使用してへの任意の Web 共有フォルダーに戻してください**を共有しない**します。 フォルダーが共有されていると、そのフォルダーは使用中と見なされるので、フォルダーを使用するアプリケーションが正しく更新またはアンインストールされません。  
   
 ## <a name="see-also"></a>参照  
-[アダプターをセキュリティで保護します。](../core/security-in-biztalk-adapter-for-tibco-ems.md)
+[アダプターのセキュリティ保護](../core/security-in-biztalk-adapter-for-tibco-ems.md)

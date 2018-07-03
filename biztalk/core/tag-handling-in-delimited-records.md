@@ -1,5 +1,5 @@
 ---
-title: 区切られたレコードの処理をタグ |Microsoft ドキュメント
+title: 区切られたレコードの処理をタグ付け |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5be9d28e3de6b1a7613db8d0c5ac7365a298a679
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c50a3daad9bb77ba4a9cbc264f018e29601edfff
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279058"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36972467"
 ---
-# <a name="tag-handling-in-delimited-records"></a>区切られたレコードのタグ処理
+# <a name="tag-handling-in-delimited-records"></a>タグで区切られたレコードの処理
 
 ## <a name="overview"></a>概要
-区切られたレコードには、レコードの種類を明確に区別するための、タグという文字列が含まれています。 こうと、適切なを正しく識別するフラット ファイル逆アセンブラー**レコード**フラット ファイル レコードを正しく解析に必要な情報を含むスキーマのノードです。  
-  
- 使用することができます、**タグ識別子**区切られたレコード内のタグを指定するプロパティです。 位置指定レコードのタグとは異なり、区切られたレコードのタグは、区切られたレコードの先頭に設定されている必要があります。また、等価な XML 形式に変換される際、タグはデータから自動的に除外されます。  
-  
+区切られたレコードには、レコードの種類を明確に区別するための、タグという文字列が含まれています。 これにより、適切なを正しく識別するためにフラット ファイル逆アセンブラー**レコード**フラット ファイル レコードを正しく解析に必要な情報を含むスキーマのノード。  
+
+ 使用することができます、**タグ識別子**区切られたレコードでタグを指定するプロパティ。 位置指定レコードのタグとは異なり、区切られたレコードのタグは、区切られたレコードの先頭に設定されている必要があります。また、等価な XML 形式に変換される際、タグはデータから自動的に除外されます。  
+
 ## <a name="see-also"></a>参照  
--  [区切り記号付きレコードに関する注意点](../core/delimited-record-considerations.md)   
--  **タグ識別子 (フラット ファイル スキーマのノード プロパティ)**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+- [区切り記号付きレコードに関する注意](../core/delimited-record-considerations.md)   
+- **タグ識別子 (フラット ファイル スキーマのノード プロパティ)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

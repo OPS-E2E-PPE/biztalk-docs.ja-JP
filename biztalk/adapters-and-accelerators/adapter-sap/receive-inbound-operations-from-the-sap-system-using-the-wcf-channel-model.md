@@ -1,5 +1,5 @@
 ---
-title: WCF チャネル モデルを使用して、SAP システムからの受信操作の受信 |Microsoft ドキュメント
+title: WCF チャネル モデルを使用して、SAP システムからの受信操作の受信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,44 +16,44 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b76ae42cf0ffc26b818e35d83f59e64158b923a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: f7c0c819372cf23842eb5311df8636e55e28c72a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966200"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969683"
 ---
 # <a name="receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して、SAP システムからの受信操作を受信します。
-RFC サーバーとして動作し、受信 (IDOC を送信する、RFC を呼び出すなど)、SAP システムによって呼び出される操作、経由での SAP プログラム ID からのメッセージをリッスンできるチャネル リスナーを作成する必要があります、 **System.ServiceModel.Channels.IReplyChannel**チャネル形状です。  
+RFC サーバーとして動作し、SAP システム (IDOC を送信、RFC を呼び出すなど) によって呼び出された操作の受信、経由での SAP プログラム ID からのメッセージをリッスンできるチャネル リスナーを作成する必要があります、 **System.ServiceModel.Channels.IReplyChannel**チャネル形状です。  
   
- チャネル リスナー (**System.ServiceModel.Channels.IChannelListener**) は、WCF 通信オブジェクトを特定の WCF エンドポイントからメッセージを受信するために使用できます。 チャネル リスナーは、どのクライアント (SAP システム) によって呼び出されたメッセージを受信して、サービスでチャネルを作成することができます、ファクトリとして機能します。 チャネル リスナーを作成する、 **Microsoft.Adapters.SAP.SAPBinding**オブジェクトを呼び出すことによって、 **BuildChannelListener**メソッドです。 SAP 接続元となる受信操作はこのメソッドを受信する SAP プログラム ID を指定する URI を指定します。  
+ チャネル リスナー (**System.ServiceModel.Channels.IChannelListener**) は、特定の WCF エンドポイントからメッセージを受信するために使用する WCF 通信オブジェクトです。 チャネル リスナーは、サービスによって、クライアント (SAP システム) によって呼び出されたメッセージを受信できるチャネルを作成するためのファクトリとして機能します。 チャネル リスナーを作成する、 **Microsoft.Adapters.SAP.SAPBinding**オブジェクトを呼び出すことによって、 **BuildChannelListener**メソッド。 SAP 接続元の受信操作はこのメソッドを受信する SAP プログラム ID を指定する URI を指定します。  
   
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]をサポートしている、 **IReplyChannel**チャネル形状です。 **IReplyChannel**チャネルが受信要求-応答メッセージ交換パターンをサポートします。 つまり、外部プログラムが、チャネルとプログラム経由で要求メッセージを送信するパターンは、応答を返します。  
+ [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サポート、 **IReplyChannel**チャネル形状です。 **IReplyChannel**チャネルが受信要求-応答メッセージ交換パターンをサポートします。 つまり、外部プログラムが、チャネルとプログラム経由で要求メッセージを送信するパターンは、応答を返します。  
   
- 受信操作を使用する方法の概要については、 **IReplyChannel** WCF では、次を参照してください。[サービス チャネル レベルのプログラミング](https://msdn.microsoft.com/library/ms789029.aspx)です。
+ 受信操作を使用する方法の概要については、 **IReplyChannel** WCF では、次を参照してください。[サービス チャネル レベルのプログラミング](https://msdn.microsoft.com/library/ms789029.aspx)します。
   
- このセクションでは、特定の SAP システムから、操作を受信するのには、次のトピックについて説明します。  
+ このセクションでは、SAP システムからの操作の受信に固有の次のトピックについて説明します。  
   
--   チャネル リスナーを使用して特定の操作に対してフィルター処理する方法です。  
+-   チャネル リスナーを使用して特定の操作に対してフィルター処理する方法。  
   
--   SAP システムで例外を発生させる方法です。  
+-   SAP システムで例外を発生させる方法。  
   
--   SAP アダプターから着信フラット ファイル Idoc をストリーミングします。  
+-   SAP アダプターからのフラット ファイル Idoc の受信をストリーミングします。  
   
--   SAP システムからの受信操作をする方法。  
+-   SAP システムから操作を受信する方法。  
   
 ## <a name="how-do-i-filter-operations-using-the-channel-listener"></a>チャネル リスナーを使用して操作をフィルター処理する方法  
   
-### <a name="using-an-inboundactioncollection-to-filter-operations"></a>InboundActionCollection を使用して、操作をフィルター処理するには  
- [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]提供、 **Microsoft.ServiceModel.Channels.InboundActionCollection**を有効にすると、チャネル リスナーによって受信され、アプリケーション コードに渡す操作をフィルター処理するためのクラスです。 特定の操作をフィルターするには、リスナー エンドポイント URI を使用してこのクラスのインスタンスを作成します。 (要求) メッセージ アクションを追加する対象の各操作のコレクション。 最後に、受信アクションのコレクションに追加、 **System.ServiceModel.Channels.BindingParameterCollection**オブジェクトし、チャネル リスナーの作成への呼び出しにこのバインディング パラメーターのコレクションを渡します。  
+### <a name="using-an-inboundactioncollection-to-filter-operations"></a>InboundActionCollection を使用して操作をフィルター処理するには  
+ [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]提供、 **Microsoft.ServiceModel.Channels.InboundActionCollection**チャネル リスナーによって受信され、アプリケーション コードに渡されるされる操作をフィルター処理するためのクラス。 特定の操作をフィルターするには、リスナー エンドポイント URI を使用してこのクラスのインスタンスを作成します。 コレクションに対象の操作ごとに (要求) メッセージのアクションを追加します。 最後に、受信アクションのコレクションを追加、 **System.ServiceModel.Channels.BindingParameterCollection**オブジェクトし、チャネル リスナーを作成する呼び出しにこのバインディング パラメーターのコレクションを渡します。  
   
- 場合は、SAP システムは、受信アクションのコレクションに含まれていない操作を呼び出します。  
+ 場合は、SAP システムでは、受信アクションのコレクションではない操作を呼び出します。  
   
--   [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムを次のメッセージで例外の例外を呼び出し元に返します。"Rfc サーバーでの着信 RFC 呼び出し [RFC_NAME] が処理されない"です。 このメッセージで [RFC_NAME] は、RFC (たとえば、IDOC_INBOUND_ASYNCHRONOUS) の名前。  
+- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムを次のメッセージで例外の例外を呼び出し元に返します。"受信 RFC 呼び出し [RFC_NAME] を Rfc サーバーが処理されない"。 このメッセージの [RFC_NAME] は、RFC (たとえば、IDOC_INBOUND_ASYNCHRONOUS) の名前です。  
   
--   アダプターをスロー、 **Microsoft.ServiceModel.Channels.Common.AdapterException**を受信した操作を示すメッセージを使用します。 この例外を使用する方法の例は、このトピックの最後の例を参照してください。  
+- アダプターがスローされます、 **Microsoft.ServiceModel.Channels.Common.AdapterException**受信した操作を示すメッセージを使用します。 この例外を使用する方法の例は、このトピックの最後の例を参照してください。  
   
- 次のコード例を使用する方法を示しています、 **InboundActionCollection** Z_RFC_MKD_DIV、単一の RFC のフィルター処理するチャネル リスナーを作成します。  
+  次のコード例を使用する方法を示しています、 **InboundActionCollection** Z_RFC_MKD_DIV、1 つの RFC をフィルター処理するチャネル リスナーを作成します。  
   
 ```  
 // The connection Uri must specify listener parameters (or an R-type destination in saprfc.ini)  
@@ -80,19 +80,19 @@ listener = binding.BuildChannelListener<IReplyChannel>(listeneraddress, bpcol);
 ```  
   
 ### <a name="manually-filtering-operations"></a>手動でフィルター処理  
- チャネル リスナーに対する受信アクション コレクションを指定しない場合、SAP システムによって呼び出されたすべての操作は、コードに渡されます。 受信要求のメッセージのアクションをチェックしてこのような操作を手動でフィルターできます。  
+ チャネル リスナーを受信アクションのコレクションを指定しない場合、SAP システムによって呼び出されるすべての操作はコードに渡すされます。 手動で、受信要求のメッセージのアクションを確認してこのような操作をフィルター処理することができます。  
   
- 内容に基づいて操作をフィルター処理するシナリオもあります。 たとえばでの Idoc を受信している場合。  
+ そのコンテンツに基づいて操作をフィルター処理するシナリオもあります。 例での Idoc を受信している場合。  
   
--   文字列の形式 (、 **ReceiveIDocFormat**プロパティのバインドは、**文字列**) 以外の場合はすべて、ReceiveIdoc 操作を使用して Idoc を受信します。  
+- 文字列の形式 (、 **ReceiveIDocFormat**プロパティのバインドは**文字列**) すべて; ReceiveIdoc 操作を使用して Idoc を受信します。  
   
--   Rfc 形式 (、 **ReceiveIDocFormat**プロパティのバインドは**Rfc**) 以外の場合はすべて IDOC_INBOUND_ASYNCHRONOUS RFC または INBOUND_IDOC_PROCESS RFC を使用して Idoc を受信します。  
+- Rfc 形式 (、 **ReceiveIDocFormat**プロパティのバインドは**Rfc**) すべて; IDOC_INBOUND_ASYNCHRONOUS RFC または INBOUND_IDOC_PROCESS RFC を使用して Idoc を受信します。  
   
- 実装することも、このシナリオでは、特定の IDOC パラメーター (IDOC の種類) など、コード内に基づくフィルター処理します。  
+  実装するこのシナリオでは、IDOC の種類) など、コード内の特定の IDOC パラメーターに基づくフィルター処理します。  
   
- 操作を手動でフィルター処理するときにエラーを返すことができます、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]処理しない操作します。 これにより、SAP システムで、呼び出し元に例外の例外が発生します。 SAP で例外が発生したくない場合は、空の応答を返すこともできます。  
+  操作を手動でフィルター処理する場合にエラーを返すことができます、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]処理しない操作。 これにより、SAP システムの呼び出し元に例外の例外が発生します。 SAP で例外が発生しない場合は、空の応答を返すこともできます。  
   
- 次のコードでは、Z_RFC_MKD_DIV 操作を手動でフィルター処理する方法を示します。  
+  次のコードでは、Z_RFC_MKD_DIV 操作を手動でフィルター処理する方法を示します。  
   
 ```  
 // Get the message from the channel  
@@ -116,24 +116,24 @@ else
 ```  
   
 ## <a name="how-do-i-raise-an-exception-on-the-sap-system"></a>SAP システムで例外を発生させる方法  
- SAP システムで、呼び出し元にエラーを示すには、SOAP エラーにより要求メッセージに返信することができます。 SOAP エラーに戻ったら、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプターは、SAP システムで、呼び出し元に、例外の例外を返します。 例外メッセージは、SOAP エラーの要素から作成されます。  
+ SAP システムの呼び出し元にエラーを示すには、SOAP エラーで要求メッセージに返信することができます。 SOAP エラーに戻ったら、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプターは、SAP システムで、呼び出し元に例外例外を返します。 例外メッセージは、SOAP エラーの要素から作成されます。  
   
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]次の優先順位に従って SAP 例外のメッセージを作成します。  
   
-1.  SOAP エラー詳細オブジェクトが含まれている場合は、アダプターが文字列に詳細をシリアル化し、例外メッセージがこの文字列に設定されています。  
+1.  SOAP エラーに詳細オブジェクトが含まれている場合は、アダプターを文字列の詳細をシリアル化し、例外メッセージは、この文字列に設定されます。  
   
-2.  SOAP エラーの理由が含まれている場合、例外メッセージは、その値に設定されます。  
+2.  SOAP エラーに理由が含まれている場合、例外メッセージは、その値に設定されます。  
   
-3.  それ以外の場合、アダプターがシリアル化、 **MessageFault**文字列と、例外メッセージをオブジェクト自体がこの文字列に設定します。  
+3.  それ以外の場合、アダプターがシリアル化、 **MessageFault**文字列および例外メッセージをオブジェクト自体がこの文字列に設定します。  
   
 > [!NOTE]
->  アダプターでは、SAP システムで発生する例外で返された例外メッセージを作成するのにエラー メッセージのみが使用します。したがって、これらのエンティティに設定した値が決定できます。  
+>  アダプターでは、SAP システムで発生する例外で返された例外メッセージを作成するのにエラー メッセージのみが使用します。そのため、これらのエンティティに設定した値は、責任は完全にです。  
   
- WCF の提供、 **System.ServiceModel.Channels.MessageFault** SOAP エラーのメモリ内表現をカプセル化するクラス。 ボリュームを使用して、静的のいずれかのオーバー ロードされた**MessageFault.CreateFault**元となることができますし、エラー メッセージを作成する、適切なを起動して、新しい SOAP エラーを作成するメソッド**Message.CreateMessage**オーバー ロードします。 WCF は、のオーバー ロードも用意されています。 **CreateMessage**を使用せず、エラー メッセージを作成する、 **MessageFault**オブジェクト。  
+ WCF の提供、 **System.ServiceModel.Channels.MessageFault**の SOAP エラー、メモリ内表現をカプセル化するクラス。 Static のいずれかを使用するオーバー ロードされた**MessageFault.CreateFault**元となることができますし、エラー メッセージを作成するを呼び出して、適切な新しい SOAP エラーを作成するメソッドを**Message.CreateMessage**オーバー ロードします。 WCF は、のオーバー ロードも用意されています。 **CreateMessage**を使用せず、エラー メッセージを作成する、 **MessageFault**オブジェクト。  
   
- 使用する、 **System.ServiceModel.Channels.RequestContext.Reply**をアダプターにフォールト メッセージを返すメソッド。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]メッセージ アクションの値を設定することができますので、エラー メッセージのメッセージのアクションは無視されます。  
+ 使用する、 **System.ServiceModel.Channels.RequestContext.Reply**をアダプターにフォールト メッセージを返すメソッド。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]メッセージのアクションを任意の値に設定できるように、エラー メッセージのメッセージのアクションは無視されます。  
   
- 次の例は、エラー メッセージを返す方法を示します、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。 この例では、チャネル リスナーとチャネルを作成する手順を省略します。  
+ 次の例にエラー メッセージを返す方法を示しています、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 この例では、チャネル リスナーとチャネルを作成する手順を省略します。  
   
 ```  
 RequestContext rc = channel.ReceiveRequest();  
@@ -149,22 +149,22 @@ Message faultMessage = Message.CreateMessage(MessageVersion.Default, new FaultCo
 rc.Reply(faultMessage);  
 ```  
   
-## <a name="streaming-inbound-flat-file-idocs-from-the-sap-adapter"></a>SAP アダプターからの着信フラット ファイル Idoc のストリーミング  
- (String) の Idoc の受信 ReceiveIdoc 操作で、アダプターからのフラット ファイルが表示されます。 IDOC データは、この操作で 1 つのノードの下の文字列として表されます。 このため、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]ノード値の要求メッセージのストリーミングをサポートします。 ノード値のストリーミングを実行するのを呼び出すことによって ReceiveIdoc 操作の要求メッセージを使用する必要があります、 **Message.WriteBodyContents**メソッドを**System.Xml.XmlDictionaryWriter**ですIDOC データをストリーミングできます。 これを行う方法については、次を参照してください。 [WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc のストリーミング](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)です。  
+## <a name="streaming-inbound-flat-file-idocs-from-the-sap-adapter"></a>受信フラット ファイル Idoc を SAP アダプターからストリーミング  
+ (String) Idoc 受信 ReceiveIdoc 操作でアダプターからのフラット ファイルが表示されます。 IDOC データは、この操作で 1 つのノードの下の文字列として表されます。 このため、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]ノード値の要求メッセージのストリーミングをサポートしています。 ノード値のストリーミングを実行するのには、呼び出すことによって ReceiveIdoc 操作の要求メッセージを使用する必要があります、 **Message.WriteBodyContents**メソッドを**System.Xml.XmlDictionaryWriter**ですIDOC データをストリーミングすることができます。 これを行う方法については、次を参照してください。 [WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc のストリーミング](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)します。  
   
 ## <a name="how-do-i-receive-operations-from-a-sap-system-using-an-ireplychannel"></a>IReplyChannel を使用して SAP システムから操作を受信する方法  
- WCF チャネル モデルを使用して SAP システムからの操作を受信するには、次の手順を実行します。  
+ WCF チャネル モデルを使用して、SAP システムから操作を受信するには、次の手順を実行します。  
   
 #### <a name="to-receive-operations-from-the-sap-system-using-an-ireplychannel"></a>操作を IReplyChannel を使用して、SAP システムから受信するには  
   
-1.  インスタンスを作成する**SAPBinding**を受信する操作のために必要なバインドのプロパティを設定します。 設定する必要がありますには、少なくとも、 **AcceptCredentialsInUri**バインディング プロパティを true に設定します。 TRFC サーバーとして機能しを設定する必要があります、 **TidDatabaseConnectionString**プロパティをバインドします。 バインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。  
+1.  インスタンスを作成**SAPBinding**を受信する操作に必要なバインドのプロパティを設定します。 設定する必要がありますには、少なくとも、 **AcceptCredentialsInUri**プロパティを true にバインドします。 TRFC サーバーとして機能しを設定する必要があります、 **TidDatabaseConnectionString**プロパティをバインドします。 バインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
     ```  
     SAPBinding binding = new SAPBinding();  
     binding.AcceptCredentialsInUri = true;  
     ```  
   
-2.  作成、 **BindingParameterCollection**を追加し、 **InboundActionCollection**を受信する操作のアクションを格納しています。 アダプターでは、その他のすべての操作の SAP システムに例外を返します。 このステップは省略可能です。 詳細については、次を参照してください。 [WCF チャネル モデルを使用して、SAP システムからの受信操作の受信](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)です。  
+2.  作成、 **BindingParameterCollection**を追加し、 **InboundActionCollection**を受信する操作のアクションを格納しています。 アダプターでは、その他のすべての操作の SAP システムに例外を返します。 このステップは省略可能です。 詳細については、次を参照してください。 [WCF チャネル モデルを使用して、SAP システムからの受信操作の受信](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)します。  
   
     ```  
     InboundActionCollection actions = new InboundActionCollection(listeneraddress);  
@@ -173,7 +173,7 @@ rc.Reply(faultMessage);
     bpcol.Add(actions);  
     ```  
   
-3.  呼び出してチャネル リスナーを作成する**BuildChannelListener < IReplyChannel\>** メソッドを**SAPBinding**して開きます。 このメソッドにパラメーターの 1 つとしては、SAP 接続 URI を指定します。 接続 URI は、SAP システムで、RFC 変換先のパラメーターを含める必要があります。 SAP 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。 作成した場合、 **BindingParameterCollection**手順 3. も指定するこのチャネル リスナーを作成するときにします。  
+3.  呼び出してチャネル リスナーを作成して**BuildChannelListener < IReplyChannel\>** メソッドを**SAPBinding**を開きます。 このメソッドにパラメーターの 1 つとして、SAP 接続 URI を指定します。 接続 URI は、SAP システムの RFC 転送先のパラメーターを含める必要があります。 SAP 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。 作成した場合、 **BindingParameterCollection**手順 3 で指定することもこのチャネル リスナーを作成するときにします。  
   
     ```  
     Uri listeneraddress =  
@@ -182,20 +182,20 @@ rc.Reply(faultMessage);
     listener.Open();  
     ```  
   
-4.  取得、 **IReplyChannel**を呼び出してチャネル、 **AcceptChannel**リスナーでメソッドを開きます。  
+4.  取得、 **IReplyChannel**チャネルを呼び出すことによって、 **AcceptChannel**メソッド リスナーを開きます。  
   
     ```  
     IReplyChannel channel = listener.AcceptChannel();  
     channel.Open();  
     ```  
   
-5.  呼び出す**ReceiveRequest**チャネル アダプターから次の操作の要求メッセージを取得します。  
+5.  呼び出す**ReceiveRequest**で次の操作をアダプターから要求メッセージを取得するチャネル。  
   
     ```  
     RequestContext rc = channel.ReceiveRequest();  
     ```  
   
-6.  アダプターによって送信された要求メッセージを消費します。 要求メッセージを取得する、 **RequestMessage**のプロパティ、 **RequestContext**です。 いずれかを使用してメッセージを処理することができます、 **XmlReader**または**XmlDictionaryWriter**です。  
+6.  アダプターによって送信された要求メッセージを消費します。 要求メッセージを取得する、 **RequestMessage**のプロパティ、 **RequestContext**します。 いずれかを使用してメッセージを処理することができます、 **XmlReader**または**XmlDictionaryWriter**します。  
   
     ```  
     XmlReader reader = (XmlReader)rc.RequestMessage.GetReaderAtBodyContents();  
@@ -210,7 +210,7 @@ rc.Reply(faultMessage);
         rc.Reply(respMessage);  
         ```  
   
-    2.  アダプターにフォールト メッセージを返すことによって、SAP システムに例外を返します。 メッセージ アクション、エラー コードと理由の任意の値を使用することができます。  
+    2.  SAP システムをアダプターにフォールト メッセージを返すことによって、例外を返します。 メッセージのアクション、エラー コード、および理由は、任意の値を使用できます。  
   
         ```  
         MessageFault fault = MessageFault.CreateFault(new FaultCode("ProcFault"), "Processing Error");  
@@ -224,14 +224,14 @@ rc.Reply(faultMessage);
     rc.Close();  
     ```  
   
-9. 要求の処理を完了すると、チャネルを閉じます。  
+9. 要求の処理が完了したら、チャネルを閉じます。  
   
     ```  
     channel.Close()  
     ```  
   
     > [!IMPORTANT]
-    >  操作の処理が完了した後は、チャネルを閉じる必要があります。 チャネルを閉じない、コードの動作に影響を与える可能性があります。  
+    >  操作の処理が完了した後、チャネルを閉じる必要があります。 チャネルを閉じない、コードの動作に影響を与える可能性があります。  
   
 10. SAP システムからの操作の受信が完了したら、リスナーを閉じます。  
   
@@ -240,16 +240,16 @@ rc.Reply(faultMessage);
     ```  
   
     > [!IMPORTANT]
-    >  完了したら、リスナーを明示的に閉じる必要がありますを使用します。それ以外の場合、プログラムが正常に動作しない可能性があります。 リスナーを閉じる、リスナーを使用して作成されるチャネルは閉じられません。 各チャネル リスナーを使用して作成を明示的に閉じる必要があります。  
+    >  完了したら、リスナーを明示的に閉じる必要がありますを使用します。それ以外の場合、プログラムが適切に動作しない可能性があります。 リスナーを閉じる、リスナーを使用して作成されるチャネルは閉じられません。 各チャネル リスナーを使用して作成を明示的に閉じる必要があります。  
   
 ### <a name="example"></a>例  
- 次の例では、RFC、SAP システムから Z_RFC_MKD_DIV を受信します。 この RFC では、2 つの数値を除算します。 この例では実装を使用して、 **InboundActionCollection** Z_RFC_MKD_DIV 操作とは、次のメッセージを受信したときにフィルター処理します。  
+ 次の例では、RFC、SAP システムから Z_RFC_MKD_DIV を受信します。 この RFC では、2 つの数値を除算します。 この例では実装を使用して、 **InboundActionCollection** Z_RFC_MKD_DIV 操作とは、次のメッセージが受信したときにフィルターを適用します。  
   
 -   除数がゼロ以外の場合は、除算の結果をコンソールに出力し、SAP システムを返します。  
   
--   除数がゼロの場合は、メソッド結果の例外メッセージをコンソールに出力し、SAP システムにエラーを返します。  
+-   除数がゼロの場合、結果の例外メッセージをコンソールに出力し、SAP システムにエラーを返します。  
   
--   SAP システムで他の操作を送信する場合は、コンソールにメッセージを書き込みます。 この場合、アダプター自体は、SAP システムにエラーを返します。  
+-   SAP システムによって、他の操作を送信する場合は、コンソールにメッセージを書き込みます。 この場合、アダプター自体は、SAP システムにエラーを返します。  
   
 ```  
 using System;  

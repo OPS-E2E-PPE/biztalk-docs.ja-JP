@@ -1,5 +1,5 @@
 ---
-title: マップの概要 |Microsoft ドキュメント
+title: マップについての詳細 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,32 +19,32 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3d15f37dc0ff0112906a449e1b1d84704b21727
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cd27793be4f1b1d9fd2b404f9a2a3a678b7622b2
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225562"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36966283"
 ---
 # <a name="about-maps"></a>マップについて
 BizTalk マッパーでは、リンクと Functoid を使って入力スキーマと出力スキーマの関係を定義できます。 リンクは、レコードまたはフィールドのデータを直接コピーするような関係を定義するときに使用します。 スキーマに含まれる項目どうしを直接接続したり、Functoid との接続を定義する場合にリンクが使用されます。 Functoid は、次のように複雑なデータ操作を実行するときに使用します。  
   
--   送信元スキーマに含まれる 2 つのフィールドの値を加算し、その結果を送信先スキーマにコピーする。  
+- 送信元スキーマに含まれる 2 つのフィールドの値を加算し、その結果を送信先スキーマにコピーする。  
   
--   文字を ASCII 形式に変換する。  
+- 文字を ASCII 形式に変換する。  
   
--   繰り返しレコードのフィールドの平均を取得し、その結果を送信先スキーマのフィールドにコピーする。  
+- 繰り返しレコードのフィールドの平均を取得し、その結果を送信先スキーマのフィールドにコピーする。  
   
- BizTalk マッパーでは、.btm という拡張子のファイルにマップが保存されます。 ファイル マップに関するデザイン情報が保存、functoid、スキーマ項目と functoid 間のリンクを表すアイコンの場所と、マップに関するその他の情報です。 マップをビルドまたはコンパイルすると、こうしたマップに関する情報が、BizTalk マッパーによって対応する XSLT (Extensible Language Stylesheet Transformations) スタイルシートに変換されます。  
+  BizTalk マッパーでは、.btm という拡張子のファイルにマップが保存されます。 ファイルは、マップに関するデザイン情報を保存します: functoid、スキーマ項目と functoid 間のリンクを表すアイコンの場所と、マップに関するその他の情報。 マップをビルドまたはコンパイルすると、こうしたマップに関する情報が、BizTalk マッパーによって対応する XSLT (Extensible Language Stylesheet Transformations) スタイルシートに変換されます。  
   
 > [!NOTE]
 >  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コンパイラには、単一のプロジェクトにおけるすべての文字列の合計サイズについて 16 MB の制限があります。 BizTalk プロジェクトをコンパイルしている間、コンパイラはアセンブリ作成のスキーマ、マップ、およびオーケストレーションをシリアル化し、これによってすべての文字列の合計サイズが増加し、制限を超える可能性があります。 この問題を解決するには、各プロジェクト内のすべての文字列の合計サイズが 16 MB より小さくなるようにスキームまたはマップを別の BizTalk プロジェクト (通常は、同じソリューションの下) に入れることで、プロジェクトを再編成します。  
   
- 作成したマップを使用することで、データをさまざまな形式に変換できます。たとえば、単一の取引先固有の形式に変換したり、複数の取引先とやり取りするための形式に変換することもできます。 このセクションの各トピックでは、スキーマのマッピングに関する概要について説明します。 マップに関する背景情報については、次を参照してください。[マップ](../core/maps.md)です。  
+ 作成したマップを使用することで、データをさまざまな形式に変換できます。たとえば、単一の取引先固有の形式に変換したり、複数の取引先とやり取りするための形式に変換することもできます。 このセクションの各トピックでは、スキーマのマッピングに関する概要について説明します。 マップの背景については、次を参照してください。[マップ](../core/maps.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [マップ内のリンク](../core/links-in-maps.md)  
+-   [マップのリンク](../core/links-in-maps.md)  
   
 -   [マップの Functoid](../core/functoids-in-maps.md)  
   

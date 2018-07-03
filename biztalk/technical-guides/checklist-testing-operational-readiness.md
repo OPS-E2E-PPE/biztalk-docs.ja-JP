@@ -1,5 +1,5 @@
 ---
-title: 'チェックリスト: 運用の準備のテスト |Microsoft ドキュメント'
+title: 'チェックリスト: 運用準備のテスト |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,34 +12,35 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6bc8ff5b2b3ca8d629c30b1cb37f83cb7847b2f5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 58a10610595b990e6fc2bae1838fa5653a4b2be0
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22299274"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982601"
 ---
-# <a name="checklist-testing-operational-readiness"></a>チェックリスト: テスト運用の準備
-運用の準備のテストでは、見落とされがちまたは最小限に抑えるだけが実行される重要な手順です。 すべてのエンタープライズ レベルのアプリケーションの重要な要件は、徹底的にテストしを使用して、ソリューションの開発[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]例外ではありません。 少なくとも BizTalk ソリューションを実稼働環境に移行する前に次のテストを実行する必要があります。  
-  
-|手順|リファレンス|  
-|-----------|---------------|  
-|単体テスト|[単体テストを実行します。](../technical-guides/performing-unit-testing.md)|  
-|機能テスト|[機能テストを実行します。](../technical-guides/performing-functional-testing.md)|  
-|ボトルネックのテストとチューニング|[テストとチューニングのボトルネックを実行します。](../technical-guides/performing-bottleneck-testing-and-tuning.md)|  
-|ロード テストとテストの最大スループット (MST)|[ロード テストとスループットのテストを実行します。](../technical-guides/performing-load-and-throughput-testing.md)|  
-|可用性テスト。<br /><br /> 個々 のハードウェア コンポーネントに障害をテストします。<br />-テスト[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]失敗します。<br />クラスター ノードのフェールオーバーをテストします。<br />回復のテスト[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SQL Server を使用して、データベースのログ配布します。|[可用性テストを実行します。](../technical-guides/performing-availability-testing.md)|  
-  
+# <a name="checklist-testing-operational-readiness"></a>チェックリスト: 運用準備のテスト
+運用準備のためのテストは、見落とされがちまたは最小限に抑えるだけが実行される重要な手順です。 任意のエンタープライズ レベル アプリケーションの重要な要件を徹底的にテストおよび開発したソリューションを使用して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]例外ではありません。 少なくとも、運用環境に BizTalk ソリューションを移行する前に次のテストを実行する必要があります。  
+
+
+|                                                                                                                                                                                         手順                                                                                                                                                                                          |                                                  リファレンス                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                                                      単体テスト                                                                                                                                                                                      |                  [単体テストの実行](../technical-guides/performing-unit-testing.md)                  |
+|                                                                                                                                                                                   機能テスト                                                                                                                                                                                   |            [機能テストの実行](../technical-guides/performing-functional-testing.md)            |
+|                                                                                                                                                                             ボトルネック テストとチューニング                                                                                                                                                                              | [ボトルネック テストとチューニングの実行](../technical-guides/performing-bottleneck-testing-and-tuning.md) |
+|                                                                                                                                                                 ロード テストとテストの最大持続可能スループット (MST)                                                                                                                                                                  |   [読み込みとスループット テストの実行](../technical-guides/performing-load-and-throughput-testing.md)   |
+| 可用性テスト:<br /><br /> -個々 のハードウェア コンポーネントに障害をテストします。<br />-テスト[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]失敗します。<br />-クラスター ノードのフェールオーバーをテストします。<br />-の回復をテストする[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SQL Server を使用してデータベースのログ配布します。 |          [可用性テストの実行](../technical-guides/performing-availability-testing.md)          |
+
 ## <a name="in-this-section"></a>このセクションの内容  
-  
--   [単体テストを実行します。](../technical-guides/performing-unit-testing.md)  
-  
--   [機能テストを実行します。](../technical-guides/performing-functional-testing.md)  
-  
--   [テストとチューニングのボトルネックを実行します。](../technical-guides/performing-bottleneck-testing-and-tuning.md)  
-  
--   [ロード テストとスループットのテストを実行します。](../technical-guides/performing-load-and-throughput-testing.md)  
-  
--   [可用性テストを実行します。](../technical-guides/performing-availability-testing.md)  
-  
+
+-   [単体テストの実行](../technical-guides/performing-unit-testing.md)  
+
+-   [機能テストの実行](../technical-guides/performing-functional-testing.md)  
+
+-   [ボトルネック テストとチューニングの実行](../technical-guides/performing-bottleneck-testing-and-tuning.md)  
+
+-   [読み込みとスループット テストの実行](../technical-guides/performing-load-and-throughput-testing.md)  
+
+-   [可用性テストの実行](../technical-guides/performing-availability-testing.md)  
+
 -   [テスト用ツール](~/technical-guides/tools-for-testing.md)

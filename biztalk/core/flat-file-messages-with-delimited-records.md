@@ -1,5 +1,5 @@
 ---
-title: 区切られたレコードのフラット ファイル メッセージ |Microsoft ドキュメント
+title: 区切られたレコードのあるフラット ファイル メッセージ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5dc9eb0253e2bfe8824f6395e1c619c23f0e551
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 5a3a3924983b52fb48d41f6d2422e054c656e02f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
-ms.locfileid: "22246714"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36986363"
 ---
 # <a name="flat-file-messages-with-delimited-records"></a>区切られたレコードのあるフラット ファイル メッセージ
 フラット ファイル インスタンス メッセージ内の区切られたレコードには、入れ子のレコード、および事前に定義された文字や文字セットによって分けられている個別のフィールド (データ項目) が含まれています。 これらの区切り記号に従って、フィールドが解析されます。 フラット ファイル インスタンス メッセージ内に、次のような区切られたレコードが存在する場合を例として説明します。このレコードには、仮の注文書を基にした 2 つの商品が含まれています。  
@@ -30,23 +30,23 @@ ITEMS,ITEM872-AA|Lawnmower|1|148.95|Electric-120vac,ITEM926-AA|Baby Monitor|1|39
   
  フラット ファイル スキーマのこのレコードの適切な定義を、次のように記述できます。  
   
--   子区切り記号 (,)、子の順序の接頭辞、およびタグ ITEMS を持つ、区切られたレコードの名前付き項目。  
+- 子区切り記号 (,)、子の順序の接頭辞、およびタグ ITEMS を持つ、区切られたレコードの名前付き項目。  
   
-    -   A、区切られた繰り返しレコードの子区切り記号と #124 item という名前の子注文挿入辞一致とタグ項目。  
+  -   区切られた A、繰り返しレコードという名前の子区切り記号を持つ項目&#124;、子注文挿入辞、およびタグ アイテム。  
   
-    -   "partNum" という属性。  
+  -   "partNum" という属性。  
   
-    -   "productName" という要素。  
+  -   "productName" という要素。  
   
-    -   "quantity" という要素。  
+  -   "quantity" という要素。  
   
-    -   "USPrice" という要素。  
+  -   "USPrice" という要素。  
   
-    -   "powerSource" という要素。  
+  -   "powerSource" という要素。  
   
--   "shipDate" という省略可能な要素。  
+- "shipDate" という省略可能な要素。  
   
- これらのレコードとフィールドの定義が提供されると、フラット ファイル逆アセンブラーは、これらのレコードと同等の次の XML を生成します。  
+  これらのレコードとフィールドの定義が提供されると、フラット ファイル逆アセンブラーは、これらのレコードと同等の次の XML を生成します。  
   
 ```  
   
@@ -70,24 +70,24 @@ ITEMS,ITEM872-AA|Lawnmower|1|148.95|Electric-120vac,ITEM926-AA|Baby Monitor|1|39
   
  区切られたレコードに関連する注意事項を次に示します。これらは、送信時レコードの受信および作成の際のレコードの解析方法に影響します。  
   
--   データの一部として処理するために、区切り記号としての解釈を行わない文字。 詳細については、次を参照してください。[フィールド値の一部として特殊文字を解釈する方法は](../core/ways-to-interpret-special-characters-as-part-of-a-field-value.md)します。  
+- データの一部として扱われるために区切り文字の解釈のオーバーライドにしようされる文字です。 詳細については、次を参照してください。[フィールド値の一部としての特殊文字の解釈方法](../core/ways-to-interpret-special-characters-as-part-of-a-field-value.md)します。  
   
--   他の類似しているレコードと区別するために使用される、レコードの先頭の省略可能なタグ。 詳細については、次を参照してください。[区切られたレコードのタグ処理](../core/tag-handling-in-delimited-records.md)です。  
+- 他の類似しているレコードと区別するために使用される、レコードの先頭の省略可能なタグ。 詳細については、次を参照してください。[区切られたレコードのタグ処理](../core/tag-handling-in-delimited-records.md)します。  
   
--   埋め込み文字に関連する最小長のフィールド内のデータの位置揃え方法。 詳細については、次を参照してください。[フィールド Padding](../core/field-padding.md)、[フィールドの位置揃え](../core/field-justification.md)、および[最小フィールド長区切られたレコードの](../core/minimum-field-lengths-within-delimited-records.md)します。  
+- 埋め込み文字に関連する最小長のフィールド内のデータの位置揃え方法。 詳細については、次を参照してください。[フィールド Padding](../core/field-padding.md)、[フィールドの位置揃え](../core/field-justification.md)、および[最小フィールド長区切られたレコードの](../core/minimum-field-lengths-within-delimited-records.md)します。  
   
--   位置指定レコードは、他の区切られたレコード内に入れ子にすることができます。 詳細については、次を参照してください。[入れ子になった位置指定引数と区切り記号付きレコード](../core/nested-positional-and-delimited-records.md)です。  
+- 位置指定レコードは、他の区切られたレコード内に入れ子にすることができます。 詳細については、次を参照してください。[入れ子になった位置指定レコードとレコードの区切り](../core/nested-positional-and-delimited-records.md)します。  
   
--   埋め込み文字に関連する固定長のフィールド内のデータの位置揃え方法。 詳細については、次を参照してください。[フィールドの位置揃え](../core/field-justification.md)です。  
+- 埋め込み文字に関連する固定長のフィールド内のデータの位置揃え方法。 詳細については、次を参照してください。[フィールドの位置揃え](../core/field-justification.md)します。  
   
--   区切り記号の位置に関する注意事項は、区切られるデータに関連します。 詳細については、次を参照してください。[子の順序に関する注意事項](../core/child-order-considerations.md)です。  
+- 区切り記号の位置に関する注意事項は、区切られるデータに関連します。 詳細については、次を参照してください。[子の順序に関する注意事項](../core/child-order-considerations.md)します。  
   
--   フラット ファイル メッセージを受信および送信する際の区切り記号の保存および非表示。 詳細については、次を参照してください。[区切り記号の保存と抑制](../core/delimiter-preservation-and-suppression.md)です。  
+- フラット ファイル メッセージを受信および送信する際の区切り記号の保存および非表示。 詳細については、次を参照してください。[区切り記号の保存と抑制](../core/delimiter-preservation-and-suppression.md)します。  
   
- 区切られたフラット ファイルで作業する方法を理解するために、サンプルの FlatFileReceive フォルダーと FlatFileSend フォルダーにあるを参照してください。 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\Pipelines\AssemblerDisassembler\\です。  
+  区切られたフラット ファイルを使用する方法を理解するために、サンプル、FlatFileReceive フォルダーと FlatFileSend フォルダーにあるを参照してください。 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\Pipelines\AssemblerDisassembler\\します。  
   
 > [!NOTE]
->  設定する必要がありますが、フラット ファイルに区切られたおよび位置指定レコードの両方が含まれている場合、 **構造** にルート ノードのプロパティ **区切り記号付き** と **構造** するか、下位のレコード ノードのプロパティ **区切り記号付き** または **位置指定** 必要に応じて。  
+>  設定する必要がありますが、フラット ファイルに区切られたおよび位置指定レコードの両方が含まれている場合、**構造**にルート ノードのプロパティ**区切り記号**と**構造**のプロパティいずれかに [レコード] ノードの下位**区切り記号**または**位置指定**に応じて。  
   
 > [!NOTE]
 >  フラット ファイルの区切られたフィールドの文字制限は、50000000 文字です。  

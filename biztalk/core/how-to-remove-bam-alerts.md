@@ -1,5 +1,5 @@
 ---
-title: BAM 警告を削除する方法 |Microsoft ドキュメント
+title: BAM 警告を削除する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,25 +16,25 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 644a6f017fee38db684fb0461bd6fa94aed65e15
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: a4d55456a78c126eec3d14c3b26852d488da3b5b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25970712"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36991219"
 ---
 # <a name="how-to-remove-bam-alerts"></a>BAM 警告を削除する方法
 管理者を使用して、**削除アラート**指定されたビューからすべてのアラートを削除するコマンド。  
   
 ### <a name="to-remove-bam-alerts"></a>BAM 警告を削除するには  
   
-1.  次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
+2. [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
   
-3.  型**bm 削除アラートの表示:\<ビュー名\>** です。  
+3. 型**bm 削除-アラートの表示:\<ビュー名\>** します。  
   
-4.  **Enter**キーを押します。  
+4. **Enter**キーを押します。  
   
 ## <a name="see-also"></a>参照  
  [BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md)   

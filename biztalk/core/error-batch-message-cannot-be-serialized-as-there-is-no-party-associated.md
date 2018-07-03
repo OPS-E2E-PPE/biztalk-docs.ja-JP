@@ -1,5 +1,5 @@
 ---
-title: パーティに関連付けられている送信ポートがあるために、バッチ メッセージをシリアル化することはできません |Microsoft ドキュメント
+title: 送信ポートに関連付けられているパーティがバッチ メッセージをシリアル化することはできません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b20d10a2c7b584eccc7d1fb57e5132a4ac0d608
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 84915c3544ed6e4222dd7fb035808617b51e5280
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241482"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969563"
 ---
 # <a name="batch-message-cannot-be-serialized-as-there-is-no-party-associated-with-send-port"></a>送信ポートに関連付けられたパーティが存在しないため、バッチ メッセージをシリアル化できません
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|バッチ処理エンジン|  
-|シンボル名|BatchMessageSerializationFailureDueToMissingParty|  
-|メッセージ テキスト|送信ポート {0} に関連付けられたパーティが存在しないため、バッチ メッセージをシリアル化できません。 パーティがポートに関連付けられていることを確認してください。|  
+|                 |                                                                                                                                            |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                             [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                             |
+| 製品バージョン |                                         [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                         |
+|    イベント ID     |                                                                     -                                                                      |
+|  イベント ソース   |                           [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                           |
+|    コンポーネント    |                                                              バッチ処理エンジン                                                               |
+|  シンボル名  |                                             BatchMessageSerializationFailureDueToMissingParty                                              |
+|  メッセージ テキスト   | 送信ポートに関連付けられているパーティがバッチのメッセージはシリアライズできません{0}します。 パーティがポートに関連付けられていることを確認してください。 |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、メッセージの送信先となるパーティを特定できなかったため、送信パイプラインが、保存されたインターチェンジを処理できなかったことを示します。 パーティを特定できなかったのは、DestinationPartyName コンテキスト プロパティが設定されていなかったためです。 その結果、送信パイプラインはエンベロープの設定を特定できませんでした。  

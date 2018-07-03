@@ -1,5 +1,5 @@
 ---
-title: アクティビティ ノードと ActivityID ノード |Microsoft ドキュメント
+title: アクティビティ ノードと ActivityID ノード |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d100c88eec5f5a05db2bb651968aa987e3ec4e33
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbe92c28a3ca84cdd94236c1069c9d340cc4630f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224674"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983563"
 ---
 # <a name="activity-and-activityid-nodes"></a>アクティビティ ノードと ActivityID ノード
 アクティビティ ノードと ActivityID ノードは、アクティビティ定義の格納と識別に使用します。 アクティビティ ノードは、アクティビティ定義に含まれる項目の親フォルダーです。 すべてのデータ項目とビジネス イベント ノードは、関連付けられているアクティビティ ノードの下位ノードで、アクティビティ ノードに含まれています。 アクティビティ ノードの名前は、アクティビティ自体の名前が反映されます。  
@@ -36,23 +36,23 @@ ms.locfileid: "22224674"
 ## <a name="working-with-activity-id-nodes"></a>ActivityID ノードの操作  
  たとえば、次のシナリオ: EquityLoan オーケストレーションに LoanProcess アクティビティ フォルダーが含まれています。 このオーケストレーションで次のビジネス イベントを参照しているとします。  
   
--   LoanApplicationReceived  
+- LoanApplicationReceived  
   
--   CHRequest  
+- CHRequest  
   
--   CHResponse  
+- CHResponse  
   
--   AppraisalRequest  
+- AppraisalRequest  
   
--   AppraisalResponse  
+- AppraisalResponse  
   
--   承認  
+- 承認  
   
--   拒否  
+- 拒否  
   
- ソリューション開発者は ActivityID ノードを使用して、アクティビティを一意に識別するデータ (注文番号など) を抽出できます。サンプル シナリオでは、メッセージの SSN フィールドのデータを抽出しました。 データを ActivityID ノードにドラッグしない場合、ビジネス アクティビティは、自動的に生成された GUID により識別されます。  
+  ソリューション開発者は ActivityID ノードを使用して、アクティビティを一意に識別するデータ (注文番号など) を抽出できます。サンプル シナリオでは、メッセージの SSN フィールドのデータを抽出しました。 データを ActivityID ノードにドラッグしない場合、ビジネス アクティビティは、自動的に生成された GUID により識別されます。  
   
- 異なるオーケストレーションに含まれているビジネス イベントまたはマイルストーンの間でリレーションシップを定義するには、ターゲット オーケストレーションで ActivityID を参照する必要があります。 TPE を使用してリレーションシップを実装する方法の詳細については、次を参照してください。[リレーションシップ ノード](../core/relationship-nodes.md)です。  
+  異なるオーケストレーションに含まれているビジネス イベントまたはマイルストーンの間でリレーションシップを定義するには、ターゲット オーケストレーションで ActivityID を参照する必要があります。 TPE を使用してリレーションシップを実装する方法の詳細については、次を参照してください。[リレーションシップ ノード](../core/relationship-nodes.md)します。  
   
 ## <a name="see-also"></a>参照  
  [TPE アクティビティ ビューのノード](../core/tpe-activity-view-nodes.md)

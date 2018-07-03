@@ -1,5 +1,5 @@
 ---
-title: '手順 8: BizTalk Server を再起動して |Microsoft ドキュメント'
+title: '手順 8: BizTalk Server の再起動 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09f89078b4491bb223ab02bf77aac89b77a74f06
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9f79e711a52c1d55417c0872e2b9ce9fa8c7a6e7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206274"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969381"
 ---
 # <a name="step-8-restart-biztalk-server"></a>手順 8: BizTalk Server を再起動します。
-このステップで再起動して、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を有効にするこのチュートリアルでは、変更するためにします。  
+この手順で再起動して、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を有効にするこのチュートリアルで行った変更の順序で。  
   
 ### <a name="to-restart-biztalk-server"></a>BizTalk Server を再起動するには  
   
-1.  開始**BizTalk Server 管理**です。  
+1. 開始**BizTalk Server 管理**します。  
   
-2.  [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk Server 管理コンソール**、展開**BizTalk グループ**、順に展開**プラットフォームの設定**. をクリックして**ホスト**、クリックして**BizTalkServerApplication**です。  
+2. Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk Server 管理**、展開**BizTalk グループ**、順に展開**プラットフォームの設定**します。 をクリックして**ホスト**、 をクリックし、 **BizTalkServerApplication**します。  
   
-3.  サーバーを右クリックし、をクリックして**再起動**です。  
+3. クリックして、サーバーを右クリックして**再起動**します。  
   
- 進みます[手順 9: 断片化した受信バッチのシナリオを確認してください](../../adapters-and-accelerators/accelerator-hl7/step-9-verify-the-fragmented-inbound-batch-scenario.md)です。
+   続行する[手順 9: 断片化した受信バッチのシナリオの確認](../../adapters-and-accelerators/accelerator-hl7/step-9-verify-the-fragmented-inbound-batch-scenario.md)します。

@@ -1,5 +1,5 @@
 ---
-title: スキーマのスキーマ定義 (XSD) を表示する方法 |Microsoft ドキュメント
+title: スキーマのスキーマ定義 (XSD) を表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,30 +18,30 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 941951398ec966dea0045283e13c4581f60016aa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 558c87b4ed8d9a5504725c17a7f8d36bb10e821d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256442"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985395"
 ---
 # <a name="how-to-view-the-schema-definition-xsd-of-a-schema"></a>スキーマのスキーマ定義 (XSD) を表示する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、スキーマのスキーマ定義 (XSD) を表示する方法について説明します。 これは、スキーマ検証エラーのトラブルシューティングを行ったり、正しいスキーマが展開されていることを確認したりするために必要です。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、BizTalk Server 管理者グループまたは BizTalk Server Operators グループのメンバー アカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)です。  
+ このトピックの手順を実行するには、BizTalk Server 管理者グループまたは BizTalk Server Operators グループのメンバー アカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
   
 ### <a name="to-view-the-xsd-of-a-schema"></a>スキーマの XSD を表示するには  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2.  コンソール ツリーで  **BizTalk Server 管理コンソール**XSD を表示するスキーマが含まれる BizTalk グループを展開し、スキーマを含むアプリケーションを展開します。  
+2. コンソール ツリーで、展開**BizTalk Server 管理**XSD を表示するスキーマが含まれる BizTalk グループを展開し、スキーマを含むアプリケーションを展開します。  
   
-3.  をクリックして**スキーマ**、スキーマを右クリックし、クリックして**プロパティ**です。  
+3. クリックして**スキーマ**、スキーマを右クリックし、クリックして**プロパティ**します。  
   
-4.  左側のウィンドウでをクリックして**スキーマ ビュー**です。  
+4. 左側のウィンドウで次のようにクリックします。**スキーマ ビュー**します。  
   
-     右ペインに XSD が表示されます。  
+    右ペインに XSD が表示されます。  
   
 ## <a name="see-also"></a>参照  
  [スキーマの管理](../core/managing-schemas.md)
