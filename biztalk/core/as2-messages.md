@@ -1,5 +1,5 @@
 ---
-title: AS2 メッセージ |Microsoft ドキュメント
+title: AS2 メッセージ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,41 +12,41 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d54d05a459eb6fef772add6d4bb77f0269fa0ba8
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 68ada5722e7b64d6ceaf3b511af5ac500a4dcce7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26008067"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022600"
 ---
 # <a name="as2-messages"></a>AS2 メッセージ
 このトピックでは、AS2 メッセージの構造、コンテキスト プロパティ、ヘッダーなど、AS2 メッセージについて説明します。  
   
 ## <a name="structure-of-an-as2-message"></a>AS2 メッセージの構造  
- BizTalk Server で AS2 メッセージはに従って構造化[RFC 4130「Mime-based Secure ピア ツー ピア Business Data Interchange Using HTTP, Applicability Statement 2 (AS2)](http://go.microsoft.com/fwlink/?LinkID=184212) ([http://go.microsoft.com/fwlink/?LinkID = 184212](http://go.microsoft.com/fwlink/?LinkID=184212))。  
+ BizTalk Server では、AS2 メッセージがに従って構造化[RFC 4130"Mime-based Secure ピア ツー ピア Business Data Interchange Using HTTP, Applicability Statement 2 (AS2)](http://go.microsoft.com/fwlink/?LinkID=184212) ([http://go.microsoft.com/fwlink/?LinkID=184212](http://go.microsoft.com/fwlink/?LinkID=184212))。  
   
  AS2 メッセージの基本構造は、AS2 固有のヘッダーが追加された HTTP メッセージ内の MIME 形式で構成されます。 HTTP、AS2、および MIME の各ヘッダーの下のメッセージの性質は、次のメッセージの種類によって異なります。  
   
--   **署名**– ドキュメント ペイロードの周囲に署名ラッパーが追加、メッセージが署名されている場合。  
+- **署名**– ドキュメント ペイロードの周囲に署名ラッパーが追加、メッセージが署名されている場合。  
   
--   **圧縮された**–、ドキュメント ペイロードと署名ペイロードの周囲に圧縮ラッパーが追加、メッセージが圧縮されている場合。  
+- **圧縮された**–、ドキュメント ペイロードと署名ペイロードの周囲に圧縮ラッパーが追加、メッセージが圧縮されている場合。  
   
--   **暗号化**– ドキュメント、署名、および圧縮のペイロードの周囲に暗号化ラッパーが追加メッセージが暗号化されている場合。  
+- **暗号化された**– ドキュメント、署名、および圧縮のペイロードの周囲に暗号化ラッパーが追加、メッセージが暗号化されている場合。  
   
- 暗号化、署名、および圧縮に基づいた AS2 メッセージのメッセージ構造を次の表に示します。  
+  暗号化、署名、および圧縮に基づいた AS2 メッセージのメッセージ構造を次の表に示します。  
   
 |AS2 メッセージのオプション|メッセージの構造|  
 |-------------------------|-----------------------|  
 |-圧縮なし<br /><br /> -暗号化なし<br /><br /> -署名|`HTTP, AS2, MIME Header      EDI/XML Payload`|  
 |圧縮されました。<br /><br /> -暗号化なし<br /><br /> -署名|`HTTP, AS2, MIME Header      PKCS7-MIME Compression           EDI/XML Payload (compressed)`|  
-|サインイン<br /><br /> -圧縮なし<br /><br /> -暗号化なし|`HTTP, AS2, MIME Header       MIME Security Multipart (signed)           EDI/XML Payload           CMS-PKCS7 Signature`|  
-|サインイン<br /><br /> 圧縮されました。<br /><br /> -暗号化なし|`HTTP, AS2, MIME Header       PKCS7-MIME Compression           MIME Security Multipart (signed)(compressed)                EDI/XML Payload (compressed)                CMS-PKCS7 Signature (compressed)`|  
-|暗号化されました。<br /><br /> -圧縮なし<br /><br /> -署名|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           EDI/XML Payload (encrypted)`|  
-|圧縮されました。<br /><br /> 暗号化されました。<br /><br /> -署名|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           PKCS7-MIME Compression (encrypted)                EDI/XML Payload (compressed)(encrypted)`|  
-|暗号化されました。<br /><br /> サインイン<br /><br /> -圧縮なし|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           MIME Security Multiparts (signed)(encrypted)                EDI/XML Payload (encrypted)                CMS-PKCS7 Signature (encrypted)`|  
-|圧縮されました。<br /><br /> 暗号化されました。<br /><br /> サインイン|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           PKCS7-MIME Compression (encrypted)                MIME Security Multiparts (signed)(compressed)(encrypted)                     EDI/XML Payload (compressed)(encrypted)                     CMS-PKCS7 Signature (compressed)(encrypted)`|  
+|署名付き<br /><br /> -圧縮なし<br /><br /> -暗号化なし|`HTTP, AS2, MIME Header       MIME Security Multipart (signed)           EDI/XML Payload           CMS-PKCS7 Signature`|  
+|署名付き<br /><br /> 圧縮されました。<br /><br /> -暗号化なし|`HTTP, AS2, MIME Header       PKCS7-MIME Compression           MIME Security Multipart (signed)(compressed)                EDI/XML Payload (compressed)                CMS-PKCS7 Signature (compressed)`|  
+|-暗号化<br /><br /> -圧縮なし<br /><br /> -署名|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           EDI/XML Payload (encrypted)`|  
+|圧縮されました。<br /><br /> -暗号化<br /><br /> -署名|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           PKCS7-MIME Compression (encrypted)                EDI/XML Payload (compressed)(encrypted)`|  
+|-暗号化<br /><br /> 署名付き<br /><br /> -圧縮なし|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           MIME Security Multiparts (signed)(encrypted)                EDI/XML Payload (encrypted)                CMS-PKCS7 Signature (encrypted)`|  
+|圧縮されました。<br /><br /> -暗号化<br /><br /> 署名付き|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           PKCS7-MIME Compression (encrypted)                MIME Security Multiparts (signed)(compressed)(encrypted)                     EDI/XML Payload (compressed)(encrypted)                     CMS-PKCS7 Signature (compressed)(encrypted)`|  
   
- ある場合、ドキュメント ペイロードは、複数のドキュメントは、RFC 2387 に基づいて」の説明に従って、マルチパート/関連 MIME エンベロープ内で格納されます。 Content-Disposition MIME ヘッダーは、メッセージ内の各ドキュメントのファイル名を指定するために使用できます。  
+ ドキュメントのペイロードは、複数のドキュメントで構成され、RFC 2387」の説明に従ってにマルチパート/関連の MIME エンベロープ内で格納されます。 Content-Disposition MIME ヘッダーは、メッセージ内の各ドキュメントのファイル名を指定するために使用できます。  
   
  次の表に、メッセージの暗号化、署名、および圧縮の各オプションに基づいた、複数の添付ファイルを含む AS2 メッセージのメッセージ構造を示します。  
   
@@ -54,18 +54,18 @@ ms.locfileid: "26008067"
 |-------------------------|-----------------------|  
 |-圧縮なし<br /><br /> -暗号化なし<br /><br /> -署名|`HTTP, AS2, MIME Header      MIME Multipart/related           EDI/XML Payloads`|  
 |圧縮されました。<br /><br /> -暗号化なし<br /><br /> -署名|`HTTP, AS2, MIME Header      PKCS7-MIME Compression           MIME Multipart/related                EDI/XML Payload (compressed)`|  
-|サインイン<br /><br /> -圧縮なし<br /><br /> -署名|`HTTP, AS2, MIME Header       MIME Security Multipart (signed)           MIME Multipart/related                EDI/XML Payload           CMS-PKCS7 Signature`|  
-|圧縮されました。<br /><br /> サインイン<br /><br /> -暗号化なし|`HTTP, AS2, MIME Header       PKCS7-MIME Compression           MIME Security Multipart (signed)(compressed)                MIME Multipart/related (compressed)                     EDI/XML Payload (compressed)                CMS-PKCS7 Signature (compressed)`|  
-|暗号化<br /><br /> -圧縮なし<br /><br /> -署名|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           MIME Multipart/related (encrypted)                EDI/XML Payload (encrypted)`|  
-|圧縮されました。<br /><br /> 暗号化されました。<br /><br /> -署名|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           PKCS7-MIME Compression (encrypted)                MIME Multipart/related                     EDI/XML Payload (compressed)(encrypted)`|  
-|暗号化されました。<br /><br /> サインイン<br /><br /> -圧縮なし|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           MIME Security Multiparts (signed)(encrypted)                MIME Multipart/related                     EDI/XML Payload (encrypted)                CMS-PKCS7 Signature (encrypted)`|  
-|圧縮されました。<br /><br /> 暗号化されました。<br /><br /> サインイン|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           PKCS7-MIME Compression (encrypted)                MIME Security Multiparts (signed)(compressed)(encrypted)                     MIME Multipart/related                          EDI/XML Payload (compressed)(encrypted)                     CMS-PKCS7 Signature (compressed)(encrypted)`|  
+|署名付き<br /><br /> -圧縮なし<br /><br /> -署名|`HTTP, AS2, MIME Header       MIME Security Multipart (signed)           MIME Multipart/related                EDI/XML Payload           CMS-PKCS7 Signature`|  
+|圧縮されました。<br /><br /> 署名付き<br /><br /> -暗号化なし|`HTTP, AS2, MIME Header       PKCS7-MIME Compression           MIME Security Multipart (signed)(compressed)                MIME Multipart/related (compressed)                     EDI/XML Payload (compressed)                CMS-PKCS7 Signature (compressed)`|  
+|-暗号化<br /><br /> -圧縮なし<br /><br /> -署名|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           MIME Multipart/related (encrypted)                EDI/XML Payload (encrypted)`|  
+|圧縮されました。<br /><br /> -暗号化<br /><br /> -署名|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           PKCS7-MIME Compression (encrypted)                MIME Multipart/related                     EDI/XML Payload (compressed)(encrypted)`|  
+|-暗号化<br /><br /> 署名付き<br /><br /> -圧縮なし|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           MIME Security Multiparts (signed)(encrypted)                MIME Multipart/related                     EDI/XML Payload (encrypted)                CMS-PKCS7 Signature (encrypted)`|  
+|圧縮されました。<br /><br /> -暗号化<br /><br /> 署名付き|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           PKCS7-MIME Compression (encrypted)                MIME Security Multiparts (signed)(compressed)(encrypted)                     MIME Multipart/related                          EDI/XML Payload (compressed)(encrypted)                     CMS-PKCS7 Signature (compressed)(encrypted)`|  
   
 ## <a name="as2-context-properties"></a>AS2 のコンテキスト プロパティ  
- AS2 メッセージの処理に使用されるコンテキスト プロパティには、昇格できるプロパティや非公開のプロパティが含まれますが、これらのプロパティは中断されたメッセージや追跡メッセージで表示できます。 AS2 コンテキスト プロパティの一覧は、次を参照してください。 [AS2 コンテキスト プロパティ](../core/as2-context-properties.md)です。  
+ AS2 メッセージの処理に使用されるコンテキスト プロパティには、昇格できるプロパティや非公開のプロパティが含まれますが、これらのプロパティは中断されたメッセージや追跡メッセージで表示できます。 AS2 コンテキスト プロパティの一覧は、次を参照してください。 [AS2 コンテキスト プロパティ](../core/as2-context-properties.md)します。  
   
 ## <a name="as2-headers"></a>AS2 のヘッダー  
- AS2 メッセージの AS2 ヘッダーは受信側パーティと送信元パーティを記述し、受信側パーティが MDN 応答を送信するために必要な情報を提供します。 しない限り、受信側パーティは MDN ヘッダーを使用は、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**AS2 アグリーメントのプロパティが選択されている情報が、アグリーメントで使用できない場合、またはプロパティ。  
+ AS2 メッセージの AS2 ヘッダーは受信側パーティと送信元パーティを記述し、受信側パーティが MDN 応答を送信するために必要な情報を提供します。 しない限り、受信側パーティは MDN ヘッダーを使用は、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**AS2 アグリーメントのプロパティが選択されている情報が、アグリーメントで使用できない場合またはプロパティ。  
   
  AS2-From ヘッダー、AS2-To ヘッダー、および MessageID コンテキスト プロパティは、AS2 メッセージを一意に記述します。 これらは、MDN を応答対象の AS2 メッセージに関連付けるためにも使用されます。  
   

@@ -1,6 +1,6 @@
 ---
-title: BizTalk Server で ESB Toolkit の SOA ガバナンス統合 |Microsoft ドキュメント
-description: BizTalk Server で ESB ツールキットを使用して、SOA ベースのシステムおよびサード パーティ統合での課題の一覧
+title: SOA ガバナンス統合 BizTalk Server で ESB Toolkit |Microsoft Docs
+description: BizTalk Server で ESB Toolkit を使用した、SOA ベースのシステムおよびサードパーティの統合に関する課題の一覧
 caps.latest.revision: 3
 author: MandiOhlinger
 manager: anneta
@@ -13,46 +13,46 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccb5ac2d-cd90-414d-a6c7-045a8fe9450b
 ms.author: mandia
-ms.openlocfilehash: 9e1489e01a8918d1dfa7ca61a69d57f5d7316f68
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b989373f4e0f10439374842c2dcf6c8b8226165
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295018"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37023048"
 ---
-# <a name="soa-governance-integration"></a>SOA ガバナンスの統合
-エンタープライズ レベルのアプリケーションでは、ビジネス要件、政府法律、サービス レベル アグリーメント (Sla)、および顧客とパートナーの要望を取引に従っていることができる堅牢性と信頼性の管理機能をサポートする必要があります。 実行時のガバナンス焦点を具体的にはの課題と要件については、サービス指向アーキテクチャ (SOA) を正常に実行する – ベースのこれらの要件を満たすシステムです。 ビジネス システムによって提供されるサービスの品質は、その成功または失敗を定義する主要な要素です。  
+# <a name="soa-governance-integration"></a>SOA ガバナンス統合
+エンタープライズ レベルのアプリケーションでは、ビジネス要件、政府の法律制定、サービス レベル アグリーメント (Sla) など、顧客およびパートナーの要望を取引先に準拠できる堅牢で信頼性の高い管理機能をサポートする必要があります。 実行時のガバナンスについて重点的に具体的には、課題と要件、サービス指向アーキテクチャ (SOA) を正常に実行 – ベースのシステムをこれらの要件を満たします。 ビジネス システムによって提供されるサービスの品質は、その成功または失敗を定義する主要な要素です。  
 
-## <a name="soa-challenges"></a>SOA の課題  
- 運用環境に SOA ベースのシステムを展開する企業は、多くの課題は、次のように直面します。  
-  
--   メンテナンスおよびアップグレードのコストを最小限に抑えると、増分更新を許可します。  
-  
--   ビジネス プロセスの管理と構成ツールを使って迅速な変更を許可します。  
-  
--   エンド ツー エンドのセキュリティこれは信頼とメッセージの送信者、受信者、およびコンテンツのプライバシーの保護に含まれます。  
-  
+## <a name="soa-challenges"></a>SOA における課題  
+ さまざまな課題は、次のようを運用環境に SOA ベースのシステムを展開する企業に直面します。  
+
+-   メンテナンスと、アップグレードのコストを最小限に抑えることと、増分更新を許可します。  
+
+-   ビジネス プロセス管理および構成ツールを使用して迅速な変更を許可します。  
+
+-   エンド ツー エンドのセキュリティこれは信頼とメッセージの送信者、受信者、およびコンテンツのプライバシーの保護が含まれます。  
+
 -   識別する、管理、および発生すると、例外を修復します。  
-  
--   サービスとコンシューマーの分離  
-  
--   測定し、コストに関する注意事項をオフセットする SOA アプリケーションのビジネス価値を証明します。  
-  
--   重複しているか、それ以外の場合に不要なサービスの急増のコントロール (管理)  
-  
--   初期開発コストを削減する潜在的なユーザーに必要な適切なサービスの識別を容易にすること  
-  
--   コストとメンテナンスのリスクを最小限に抑える変更をサービスのライフ サイクルを管理します。  
-  
--   適切なサービスの (場所、トランスポート、ポリシー、標準の分離とスタイルのメッセージング) 実際の使用率の簡略化  
-  
--   ユーザー、サービスを使用する、場所、およびその理由を識別するための機能の報告  
 
-## <a name="next-steps"></a>次の手順
+-   サービスとコンシューマーの分離  
+
+-   測定とコストの問題をオフセットする SOA アプリケーションのビジネス価値を証明します。  
+
+-   重複またはそれ以外の場合に不要なサービスの急増の制御 (管理)  
+
+-   潜在的なユーザーが初期の開発コストを削減するために必要な適切なサービスの id をサポートすること  
+
+-   コストと継続的なメンテナンスのリスクを最小限に抑える変更をサービスのライフ サイクルを管理します。  
+
+-   適切なサービス (切り離し、場所、トランスポート、ポリシー、標準、およびスタイルのメッセージング) の実際の使用量を簡略化します。  
+
+-   使用してユーザーをサービスでは、場所、および理由を識別するために使用される機能の報告  
+
+## <a name="next-steps"></a>次のステップ
  [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] 2 つの実行時のガバナンスをサード パーティ製システムとの統合をサポートしています。  
-  
--   **Sentinet SOA 競合回避モジュールおよび BizTalk Server の拡張**です。 Sentinet の拡張の詳細については[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]機能を参照してください[Sentinet で BizTalk ESB Toolkit 機能を拡張する](../technical-guides/extending-biztalk-esb-toolkit-capabilities-with-sentinet.md)です。
-  
--   [BizTalk 管理ポイントの SOA](../esb-toolkit/soa-biztalk-management-point.md) SOA ソフトウェア, inc. から  
-  
--   [AmberPoint BizTalk Nano エージェント](../esb-toolkit/amberpoint-biztalk-nano-agent.md)AmberPoint, inc. から
+
+- **Sentinet SOA 競合回避モジュールと BizTalk Server の拡張機能**します。 Sentinet の拡張の詳細については[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]機能を参照してください[Sentinet による BizTalk ESB Toolkit 機能を拡張する](../technical-guides/extending-biztalk-esb-toolkit-capabilities-with-sentinet.md)します。
+
+- [SOA BizTalk 管理ポイント](../esb-toolkit/soa-biztalk-management-point.md)SOA Software, Inc. から  
+
+- [AmberPoint BizTalk Nano エージェント](../esb-toolkit/amberpoint-biztalk-nano-agent.md)AmberPoint, inc.

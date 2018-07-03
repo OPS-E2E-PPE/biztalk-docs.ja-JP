@@ -1,5 +1,5 @@
 ---
-title: SWIFT スキーマ |Microsoft ドキュメント
+title: SWIFT スキーマ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,23 +17,23 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b4bac26d99fb3282650c20381bbc18237f8908a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f749a06c694007008f3d8138b2b087b77b2c4f03
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214922"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996115"
 ---
 # <a name="swift-schemas"></a>SWIFT スキーマ
-[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]送信し、非常に高速ネットワーク経由で個々 のフラット ファイルとして SWIFT の財務 (FIN) メッセージを受け取ります。 各メッセージは、定義済みの一連のラベルの付いたフィールドと位置指定引数または順序付けられたサブフィールド、およびトレーラーをトレーラ ブロック内の一連の構成のテキスト ブロック ヘッダー ブロックのセットで構成されます。 テキスト ブロックの内容は、メッセージの種類によって異なります。  
+[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 送信し、SWIFT ネットワーク経由で個々 のフラット ファイルとして SWIFT の財務 (FIN) メッセージを受け取ります。 各メッセージは、一連のヘッダーのブロックの定義済みの一連のラベル付きのフィールドと位置指定または順序付きのサブフィールドとトレーラーのブロック内でトレーラーのセットから成るテキスト ブロックで構成されます。 テキスト ブロックの内容は、メッセージの種類によって異なります。  
   
- SWIFT の財務 (FIN) メッセージのバッチを交換する多くのアプリケーションもあります: 1 つのファイルに含まれるメッセージのセット。 ファイルがローカルで配信される可能性がありますか、FileAct を介して送信される可能性があります (SWIFT IP ネットワーク経由で — SIPN)、または FTP を使用します。  
+ SWIFT の財務 (FIN) メッセージのバッチを交換する多くのアプリケーションもあります: 1 つのファイルに含まれるメッセージのセット。 ファイルがローカルに配信される可能性がありますまたは FileAct を介して送信される可能性があります (SWIFT IP ネットワーク経由で — SIPN)、または FTP を使用します。  
   
- バッチ処理や、個別に送信されるのかどうかに関係なく、これらのメッセージに関連付けられているデータの操作を簡単に[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]各メッセージの種類を定義する XSD スキーマを提供します。 このスキーマは、メッセージを適切なスキーマに自動的に関連付けられているし、SWIFT ネットワークは、XML との間で使用される、外部のフラット ファイル表記の間で自動的に変換できるように、メッセージの種類を昇格させます。  
+ データの操作を簡略化するに関連付けられているバッチ処理や、個別に送信されるのかどうかに関係なく、これらのメッセージ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]各メッセージの種類を定義する XSD スキーマを提供します。 このスキーマは、メッセージを適切なスキーマに自動的に関連付けられているし、XML との間は、SWIFT ネットワークで使用される、外部のフラット ファイル表記の間で自動的に変換できるように、メッセージの種類を昇格させます。  
   
- スキーマには、すべてのヘッダー、テキスト、およびトレーラーを含むブロックが含まれます。 このスキーマは、十分に総合的 FIN メッセージ レベルのプロトコルを使用して、SWIFT ネットワーク経由でメッセージを送信して、すべての SWIFT ネットワーク経由で受信したメッセージに関連付けられている情報を格納するために、インターチェンジのスキーマはします。  
+ スキーマには、すべてのヘッダー、テキスト、およびトレーラーを含むブロックが含まれます。 このスキーマは、総合的なのに十分な FIN メッセージ レベルのプロトコルを使用して行う SWIFT ネットワーク経由でメッセージを送信して、すべての SWIFT ネットワーク経由で受信したメッセージに関連付けられた情報を格納するために、インターチェンジのスキーマは。  
   
- 各メッセージの種類のスキーマは、全体的な形式とそのメッセージの種類のコンテキストを定義します。 A4SWIFT では、各ブロックを定義します。 各ブロック内のフィールドおよびサブフィールド レイアウトされます。必要に応じて、フィールドおよびサブフィールドが別のスキーマで定義されている一般的な基本または複合型から構築されます。 スキーマ レベルの検証には、形式、文字セット、設定値、範囲、必須/オプション、再現性、位置、および必要に応じて、長さが含まれています。 ビジネス ルールは、クロス フィールド検証およびその他の論理チェックを実行します。  
+ 各メッセージの種類のスキーマは、全体的な形式とそのメッセージの種類のコンテキストを定義します。 A4SWIFT では、各ブロックを定義します。 各ブロック内では、フィールドとサブフィールド配置されます。必要に応じて、フィールドとサブフィールドが個別のスキーマで定義されている一般的な基本または複合型から構築されます。 スキーマ レベルの検証には、形式、文字セット、設定値、範囲、必須/任意、再現性、位置、および必要に応じて、長さが含まれています。 ビジネス ルールでは、クロス フィールド検証やその他の論理チェックを実行します。  
   
  このセクションには、次のトピックが含まれています。  
   
@@ -45,6 +45,6 @@ ms.locfileid: "22214922"
   
 -   [SWIFT テキスト](../../adapters-and-accelerators/accelerator-swift/swift-text.md)  
   
--   [SWIFT は、トレーラー](../../adapters-and-accelerators/accelerator-swift/swift-trailers.md)  
+-   [SWIFT トレーラー](../../adapters-and-accelerators/accelerator-swift/swift-trailers.md)  
   
--   [SWIFT メッセージ標準を更新](../../adapters-and-accelerators/accelerator-swift/updating-swift-messaging-standards.md)
+-   [SWIFT メッセージ規格の更新](../../adapters-and-accelerators/accelerator-swift/updating-swift-messaging-standards.md)

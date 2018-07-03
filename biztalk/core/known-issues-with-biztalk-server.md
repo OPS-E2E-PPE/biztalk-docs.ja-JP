@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server に関する既知の問題 |Microsoft ドキュメント
+title: BizTalk Server に関する既知の問題 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b7998225af7ca598d4df5b4fd98f2826edce3a4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3ab3522254ea7cd965ed1b9172de2c382d214fb6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264282"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37014459"
 ---
 # <a name="known-issues-with-biztalk-server"></a>BizTalk Server の既知の問題
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の既知の問題について取り上げます。  
@@ -27,17 +27,17 @@ ms.locfileid: "22264282"
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成するときに、ファイアウォールで DTC ポートが有効になっていない場合、次のエラーが発生する可能性があります。  
   
- **データベースの作成中に WMI エラーが発生しましたロールバックを試行し、部分的に作成されたデータベース '\biztalkmsgboxdb' を削除**  
+ **データベースの作成時に WMI エラーが発生しましたロールバックを試行し、部分的に作成されたデータベース 'SQLServerName\BizTalkMsgBoxDb' を削除**  
   
- **WMI エラーの説明が生成されました: 'system.enterpriseservices.transactionproxyexception' がスローされた型の例外。**  
+ **WMI エラーの説明が生成されます。 スローされた 'system.enterpriseservices.transactionproxyexception' 型の例外。**  
   
- 次のリンクは、詳細を提供します。  
+ 次のリンクの詳細情報します。  
   
  [管理サーバーのポート](http://go.microsoft.com/fwlink/p/?LinkID=275568)  
   
  [BizTalk Server 2013 および 2013 R2 のインストール後の手順](../install-and-config-guides/post-installation-steps-for-biztalk-server-2013-and-2013-r2.md)  
   
-##  <a name="BKMK_BAM"></a>ビジネス アクティビティの監視  
+##  <a name="BKMK_BAM"></a> ビジネス アクティビティの監視  
  ここでは、ビジネス アクティビティの監視 (BAM) モジュールの既知の問題の一覧を示します。  
   
 ### <a name="bam-definition-deployment-fails-due-to-a-sql-login-error"></a>SQL ログイン エラーで BAM 定義の展開に失敗する  
@@ -55,15 +55,15 @@ OLE DB error: OLE DB or ODBC error: Login failed for user <username>.; 42000.
  この問題を修正するには、SQL Analysis Service のログイン アカウントに、BAM に関するすべてのデータベースへのアクセス権があることを確認してください。  
   
 ### <a name="bam-configuration-might-result-in-warnings-related-to-the-bam-analysis-logon-account"></a>BAM 構成で BAM Analysis ログイン アカウントに関する警告が表示される  
- BAM 構成では、それらにアクセスできるように BAM に関連するすべてのデータベースで BAM Analysis ログイン アカウントのアクセス許可を追加します。 ただし、次の前提条件を満たさなかった場合はアクセス権の付与に失敗し、警告が表示されます:  
+ BAM 構成では、それらにアクセスできる BAM に関連するすべてのデータベースで BAM Analysis ログイン アカウントのアクセス許可を追加します。 ただし、次の前提条件を満たさなかった場合はアクセス権の付与に失敗し、警告が表示されます:  
   
--   BAM 構成を実行しているユーザーは、Analysis Service がインストールされているコンピューターの管理者である必要があります。  
+- BAM 構成を実行しているユーザーは、Analysis Service がインストールされているコンピューターの管理者である必要があります。  
   
--   そのコンピューターでは、ファイアウォール経由のリモート管理が許可されている必要があります。  
+- そのコンピューターでは、ファイアウォール経由のリモート管理が許可されている必要があります。  
   
--   BAM Analysis のログイン アカウントが、BAM に関するデータベースがインストールされている SQL Server の管理者である場合にも、警告が表示されることがあります。 警告を無視して次に進むことができます。  
+- BAM Analysis のログイン アカウントが、BAM に関するデータベースがインストールされている SQL Server の管理者である場合にも、警告が表示されることがあります。 警告を無視して次に進むことができます。  
   
- **回避策**– BAM に関連するすべてのデータベースで、BAM Analysis ログイン アカウントに対するアクセス許可を手動で追加する必要があります。  
+  **回避策**– BAM に関連するすべてのデータベースで BAM Analysis のログイン アカウントに対するアクセス許可を手動で追加する必要があります。  
   
 ### <a name="bam-portal-compatibility-with-internet-explorer-10"></a>BAM ポータルと Internet Explorer 10 の間の互換性  
  Internet Explorer 10 で BAM ポータルを使用するには、常にブラウザーを互換モードで使用する必要があります。  
@@ -72,9 +72,9 @@ OLE DB error: OLE DB or ODBC error: Login failed for user <username>.; 42000.
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] を併用する場合、BAM 警告を使用する必要があれば、SQL Server でデータベース メール機能を構成する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、Alert Host サービスとデータベース メール機能を組み合わせて使用して、通知警告を送信します。 Alert Host サービスは、通知を処理した後、SQL Server のデータベース メール コンポーネントに通知のワークロードを渡します。 そのため、Alert Host サービスを停止した場合であっても、Alert Host サービスによって処理されたがデータベース メール コンポーネントでは処理されていないイベントに関して、まだいくつかの通知を受け取ることがあります。  
   
 ### <a name="configuring-tracing-for-bam-alerts"></a>BAM 警告のトレースの構成  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] を併用し、また BAM 警告の診断トレースを有効にする必要がある場合は、BAM 警告のホストに関する構成ファイルを作成する必要があります。 ファイルとして名前を付ける必要があります**BAMAlerts.exe.config** EXE と同じ場所にコピーし、(**BAMAlerts.exe**)、\Program Files\Microsoft BizTalk Server\Tracking \tracking\ にある\\です。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] を併用し、また BAM 警告の診断トレースを有効にする必要がある場合は、BAM 警告のホストに関する構成ファイルを作成する必要があります。 としてファイルに名前を付けて**BAMAlerts.exe.config** 、EXE と同じ場所にコピー (**BAMAlerts.exe**)、\Program Files\Microsoft BizTalk Server\Tracking にある\\。  
   
- 構成ファイルのサンプルは以下のようになります。 このファイルをログに記録**情報**レベルのイベント ビューアーの詳細情報。  
+ 構成ファイルのサンプルは以下のようになります。 このファイルに記録**情報**レベルのイベント ビューアーに詳細情報。  
   
 ```  
 <configuration>  
@@ -86,10 +86,10 @@ OLE DB error: OLE DB or ODBC error: Login failed for user <username>.; 42000.
 </configuration>  
 ```  
   
-##  <a name="BKMK_Upgrade"></a>BizTalk Server を SQL Server 2012 で使用中の問題  
- 使用しているときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で[!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)]設定することができます、 **Remote Login Timeout** 20 秒に SQL Server の値。 このように設定しないと、負荷が高い状況でエラーが発生する場合があります。 リモート ログイン タイムアウト値を設定する方法の詳細について[!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)]を参照してください[http://msdn.microsoft.com/library/ms175136.aspx](http://msdn.microsoft.com/library/ms175136.aspx)  
+##  <a name="BKMK_Upgrade"></a> SQL Server 2012 で BizTalk Server を使用中の問題  
+ 使用中に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で[!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)]を設定することができます、 **Remote Login Timeout** 20 秒に SQL Server での値。 このように設定しないと、負荷が高い状況でエラーが発生する場合があります。 リモート ログイン タイムアウト値を設定する方法については[!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)]を参照してください [http://msdn.microsoft.com/library/ms175136.aspx](http://msdn.microsoft.com/library/ms175136.aspx)  
   
-##  <a name="BKMK_Adapters"></a>アダプターの問題  
+##  <a name="BKMK_Adapters"></a> アダプターの問題  
  ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のアダプターに関する既知の問題の一覧を示します。  
   
 ### <a name="dynamic-port-may-fail-while-using-the-windows-sharepoint-services-wss-adapter"></a>Windows SharePoint Services (WSS) アダプターを使用している場合に動的ポートでエラーが発生することがある  
@@ -136,11 +136,11 @@ Error details: The Windows SharePoint Services site was not found. The URL "http
 ### <a name="edi"></a>EDI   
  EDI バッチ処理が使用されます。 アラビア語のカレンダーまたはローカル設定を使用する場合、オーケストレーションが中断され、次のエラーが表示されます。  
   
- **エラー コード: 0xC0C01B52 (オーケストレーション エンジン エラー) エラーの説明: 退避中に永続化エラーにより中断されました。** アラビア語のグレゴリオ暦の日付をサポートしている*04/30/1900 00.00.00*に*05/13/2029 23時 59分: 59*です。  
+ **エラー コード: 0xC0C01B52 (オーケストレーション エンジン エラー) エラーの説明: 退避中に永続化エラーにより中断されました。** アラビア語のグレゴリオ暦の日付をサポートしている*04/30/1900 00.00.00*に*2029 13/05/23時 59分: 59*します。  
   
  この現象を解決するには、有効なアラビア語の終了日を入力します。  
   
 ### <a name="enterprise-single-sign-on"></a>エンタープライズ シングル サインオン  
  エンタープライズ シングル サインオン (ESSO) をインストールする際、または ESSO サービスを再起動する際は、イベント ビューアーに記録される次のエラーが表示される場合があります。  
   
- **\Program files \common files \enterprise シングル サインオン \ssopsserver.dll エラー コードの読み込みに失敗しました: 0x8007007E、指定したモジュールに見つかりませんでした。** このエラーを無視できます。
+ **\Program Files\Common \enterprise シングル サインオン \ssopsserver.dll エラー コードの読み込みに失敗しました: 0x8007007E、指定されたモジュールは見つかりませんでした。** このエラーを無視してかまいません。

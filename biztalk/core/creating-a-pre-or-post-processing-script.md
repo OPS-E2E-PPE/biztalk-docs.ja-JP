@@ -1,5 +1,5 @@
 ---
-title: 作成する前または処理後のスクリプト |Microsoft ドキュメント
+title: 前に作成または処理後のスクリプト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,12 +20,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 532c730d5a654512610a37c9dac783fbc6a76d6c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6993ab2786cc33e40f00bab7910353170e318db0
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239298"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37006475"
 ---
 # <a name="creating-a-pre--or-post-processing-script"></a>処理前または処理後のスクリプトの作成
 アプリケーションの展開時に操作を実行するスクリプトを作成し、展開プロセスのどの時点でそのスクリプトを実行するかを定義できます。 同じスクリプトにインストールとクリーンアップ コードの両方を含めることができます。これらのコードは環境変数を使って区切ります。 コマンドライン引数をスクリプトに渡すこともできます。  
@@ -38,23 +38,23 @@ ms.locfileid: "22239298"
   
  処理前および処理後のスクリプトは次のように実行されます。  
   
--   処理前のスクリプトは、インポートまたはインストール プロセスの最初に実行されます。  
+- 処理前のスクリプトは、インポートまたはインストール プロセスの最初に実行されます。  
   
--   処理後のスクリプトは、インポートまたはインストール プロセスの最後に実行されます。  
+- 処理後のスクリプトは、インポートまたはインストール プロセスの最後に実行されます。  
   
--   アンインストール時、すべてのスクリプトはインストール時と逆の順番で実行されます。 つまり、処理後のスクリプトがアンインストールの最初に実行され、処理前のスクリプトがアンインストールの最後に実行されます。  
+- アンインストール時、すべてのスクリプトはインストール時と逆の順番で実行されます。 つまり、処理後のスクリプトがアンインストールの最初に実行され、処理前のスクリプトがアンインストールの最後に実行されます。  
   
--   インストールに失敗した場合、スクリプトは適切なロールバック アクションと共に逆の順番で呼び出されます。  
+- インストールに失敗した場合、スクリプトは適切なロールバック アクションと共に逆の順番で呼び出されます。  
   
- 呼び出されると、前または処理後のスクリプト決定展開の状態 (インストール、インポート、削除、アンインストール、インポート ロールバック、またはインストール ロールバック) ことにより、実行中、環境変数 BTAD_ChangeRequestAction、BTAD_InstallMode、および BTAD_HostClass、」の説明に従って[方法環境変数を示す配置状態](../core/how-environment-variables-indicate-deployment-state.md)です。 変数に関するリファレンス情報については、次を参照してください。[前処理および後処理のスクリプト環境変数](../core/pre-and-post-processing-script-environment-variables.md)です。  
+  前または処理後のスクリプトを呼び出されると、展開の状態を決定します (インストール、インポート、削除、アンインストール、インポート ロールバック、またはインストール ロールバック) ことにより、実行中環境変数 BTAD_ChangeRequestAction、BTAD_InstallMode、および BTAD_HostClass、」の説明に従って[方法環境変数を示す配置状態](../core/how-environment-variables-indicate-deployment-state.md)します。 変数に関するリファレンス情報は、次を参照してください。[前処理および後処理のスクリプト環境変数](../core/pre-and-post-processing-script-environment-variables.md)します。  
   
- アプリケーションにスクリプトを追加する方法の詳細については、次を参照してください。[前に追加する方法または処理後のスクリプトをアプリケーションに](../core/how-to-add-a-pre-or-post-processing-script-to-an-application.md)です。  
+  スクリプト アプリケーションを追加する方法の詳細については、次を参照してください。[より前に追加する方法または処理後のスクリプトをアプリケーションに](../core/how-to-add-a-pre-or-post-processing-script-to-an-application.md)します。  
   
 > [!NOTE]
 >  コマンドライン引数をスクリプトに含めるには、AddResource コマンドを使用してスクリプトを追加する必要があります。後の説明を参照してください。  
   
 ## <a name="supported-script-file-extensions"></a>サポートされるスクリプト ファイルの拡張子  
- 次のスクリプト ファイルの拡張子はサポートされて: .com、.exe、.bat、.cmd、.vbs、.vbe、.js、.jse、.wsf、および .wsh です。 この拡張子のセットは、PATHEXT 環境変数で定義されています。  
+ 次のスクリプト ファイルの拡張機能がサポートされています: .com、.exe、.bat、.cmd、.vbs、.vbe、.js、.jse、.wsf、および .wsh です。 この拡張子のセットは、PATHEXT 環境変数で定義されています。  
   
 ## <a name="logging-errors"></a>エラーのログ記録  
  ベスト プラクティスとして、スクリプトごとにエラーをログ ファイルに記録するよう構成することをお勧めします。 この理由は、Windows インストーラーではスクリプトで発生したエラーが記録されないためです。 スクリプトを実行した後はこれらのログを確認し、対処が必要なエラーがないかどうかを確認してください。  
@@ -121,8 +121,8 @@ ms.locfileid: "22239298"
 > [!IMPORTANT]
 >  BTSTask コマンドはスクリプトで使用しないでください。特にインポート時に実行されるスクリプトでは使用しないでください。スクリプトはインポートと同じトランザクションに参加しません。  
   
- AddResource コマンドを使用してスクリプトをアプリケーションに追加する方法の詳細については、次を参照してください。 [AddResource コマンド: 前処理スクリプト](../core/addresource-command-preprocessing-script.md)です。 参照してください[AddResource コマンド: 処理後のスクリプト](../core/addresource-command-postprocessing-script.md)  
+ AddResource コマンドを使用して、アプリケーションにスクリプトを追加する手順については、次を参照してください。 [AddResource コマンド: 前処理スクリプト](../core/addresource-command-preprocessing-script.md)します。 参照してください[AddResource コマンド: 処理後のスクリプト](../core/addresource-command-postprocessing-script.md)  
   
 ## <a name="see-also"></a>参照  
- [前処理および後処理のスクリプトを使用したアプリケーションの展開のカスタマイズ](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)   
- [テンプレート (アプリケーションの展開サンプル)](../core/template-application-deployment-sample.md)
+ [前処理および後処理のスクリプトを使用したアプリケーション展開のカスタマイズ](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)   
+ [Template (アプリケーションの展開サンプル)](../core/template-application-deployment-sample.md)

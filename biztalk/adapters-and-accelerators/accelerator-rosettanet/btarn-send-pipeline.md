@@ -1,5 +1,5 @@
 ---
-title: BTARN 送信パイプライン |Microsoft ドキュメント
+title: BTARN 送信パイプライン |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,15 +21,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f566b37cc43f8aca2f0a36143d10d809c008d5cd
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 0791ab4714e1e8a9de847a60d17d14e38f095ecf
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007523"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37011635"
 ---
 # <a name="btarn-send-pipeline"></a>BTARN 送信パイプライン
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFSend パイプライン (RNIFSend.btp) で転送するための RosettaNet Implementation Framework (RNIF) メッセージを作成します。 送信パイプラインには、次のものが組み込まれています。  
+Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFSend パイプライン (RNIFSend.btp) で転送するために RosettaNet Implementation Framework (RNIF) メッセージを準備します。 送信パイプラインには、次のものが組み込まれています。  
   
 -   XML プリプロセッサ  
   
@@ -43,18 +43,18 @@ ms.locfileid: "26007523"
 ## <a name="xml-assembler"></a>XML アセンブラー  
  XML アセンブラーは、BizTalk Server の XML アセンブラに基づいています。 XML アセンブラーは、メッセージ コンテキストからエンベロープとドキュメントにプロパティを転送します。 そして、XML 部分および添付ファイルからメッセージを構築します。 メッセージの検証は実行しません。  
   
- 詳細については、ネイティブの[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]XML アセンブラー、BizTalk Server ヘルプの「XML アセンブラー パイプライン コンポーネント」を参照してください。  
+ 詳細については、ネイティブ[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]XML アセンブラー、BizTalk Server ヘルプの「XML アセンブラー パイプライン コンポーネント」を参照してください。  
   
 ## <a name="mimesmime-encoder"></a>MIME/SMIME エンコーダ  
- MIME/SMIME エンコーダーは、BizTalk Server MIME/SMIME エンコーダに基づいています。 取引先アグリーメント、および BizTalk Server の MIME/SMIME エンコーダの設定でプロトコルの設定に応じて、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]エンコーダーは、次を実行します。  
+ MIME/SMIME エンコーダーは、BizTalk Server の MIME/SMIME エンコーダに基づいています。 取引先のパートナー契約と、BizTalk Server の MIME/SMIME エンコーダーの設定のプロトコル設定に応じて、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]エンコーダーは、次を実行します。  
   
--   RNIF 1.1 メッセージに必要な 8 バイトのバイナリ ヘッダーをメッセージに追加します。  
+- RNIF 1.1 メッセージに必要な 8 バイトのバイナリ ヘッダーをメッセージに追加します。  
   
--   メッセージ部分をエンコードし、ダイジェストを計算します。  
+- メッセージ部分をエンコードし、ダイジェストを計算します。  
   
--   ペイロード (Service Content と添付ファイル) またはペイロード コンテナー (Service Content、Service Header、および添付ファイル) を暗号化します。 設定した場合、**すべてのポートをエンコード**の設定、**プロトコル**を取引先アグリーメントのタブ`False`、エンコーダはペイロードのみを暗号化します。 設定した場合、**すべてのポートをエンコード**設定`True`、エンコーダはペイロード コンテナーを暗号化します。  
+- ペイロード (Service Content と添付ファイル) またはペイロード コンテナー (Service Content、Service Header、および添付ファイル) を暗号化します。 設定した場合、**すべてのポートをエンコード**の設定、**プロトコル**を取引先アグリーメントのタブ`False`、エンコーダはペイロードのみを暗号化します。 設定した場合、**すべてのポートをエンコード**設定`True`、エンコーダはペイロード コンテナーを暗号化します。  
   
- 詳細については、ネイティブ[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]MIME/SMIME エンコーダー、BizTalk Server ヘルプの「MIME/SMIME エンコーダー パイプライン コンポーネント」を参照してください。  
+  詳細については、ネイティブ[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]MIME/SMIME エンコーダーでは、BizTalk Server ヘルプの「MIME/SMIME エンコーダー パイプライン コンポーネント」を参照してください。  
   
 ## <a name="message-flow"></a>メッセージ フロー  
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 送信パイプラインを経由するメッセージ フローは次のとおりです。  
@@ -69,21 +69,21 @@ ms.locfileid: "26007523"
   
     3.  エンコーダーは、添付ファイルの MIME 部分を作成します。  
   
-3.  RNIF 2.01 で、パイプラインはメッセージ部分を暗号化し、設定に応じて RNIF メッセージを作成する**永続的な機密性の必要性が**(として、プロセス構成設定で設定)。  
+3.  RNIF 2.01 では、パイプラインはメッセージ部分を暗号化しの設定に応じて RNIF メッセージを作成する**永続的な機密性**(として、プロセス構成設定で設定)。  
   
-    1.  設定した場合**永続的な機密性の必要性が**に**ペイロード**エンコーダーは service content と添付ファイルを暗号化します。 次に、アセンブラーは Service Header、Delivery Header、および Preamble を追加して RNIF メッセージを完成します。  
+    1.  設定した場合**永続的な機密性**に**ペイロード**エンコーダーは service content と添付ファイルを暗号化します。 次に、アセンブラーは Service Header、Delivery Header、および Preamble を追加して RNIF メッセージを完成します。  
   
-    2.  設定した場合**永続的な機密性の必要性が**に**ペイロード コンテナー**エンコーダーは service header、service content と添付ファイルを暗号化します。 次に、アセンブラーは Delivery Header と Preamble を追加して RNIF メッセージを完成します。  
+    2.  設定した場合**永続的な機密性**に**ペイロード コンテナー**エンコーダーは service header、service content と添付ファイルを暗号化します。 次に、アセンブラーは Delivery Header と Preamble を追加して RNIF メッセージを完成します。  
   
-    3.  設定した場合**永続的な機密性の必要性が**に**None**アセンブラーは service content と添付ファイルを (なしに、service header、delivery header、および preamble が追加されます暗号化) をクリックし、最後の RNIF メッセージを構築するためにします。  
+    3.  設定した場合**永続的な機密性**に**None**アセンブラーは service content と添付ファイルを含めずに、service header、delivery header、および preamble が追加されます暗号化) をクリックし、最後の RNIF メッセージを構築します。  
   
 4.  RNIF 1.1 では、アセンブラーは暗号化せずに RNIF メッセージを完成します。  
   
 5.  次の場合、エンコーダーはメッセージに署名します。  
   
-    1.  メッセージがシグナル メッセージでは、および**否認不可のために必要な**プロパティ、プロセス構成設定が`True`です。  
+    1.  メッセージがシグナル メッセージでは、および**否認不可のために必要な**プロパティ (プロセス構成の設定) では、`True`します。  
   
-    2.  メッセージがアクション メッセージでは、および**発信元とコンテンツの否認**プロパティ、プロセス構成設定が`True`です。  
+    2.  メッセージがアクション メッセージでは、および**発信元とコンテンツの否認**プロパティ (プロセス構成の設定) では、`True`します。  
   
 6.  RNIF 2.01 では、エンコーダーは MIME メッセージの最初の本文部分のダイジェストを計算して、保持します。 エンコーダーは取引先アグリーメント (SHA-1 または MD5) の `Digest` メソッド プロパティのメソッド セットを使用してダイジェストを計算します。  
   

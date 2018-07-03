@@ -1,5 +1,5 @@
 ---
-title: SAP で Ws-metadata Exchange を使用してメタデータの取得 |Microsoft ドキュメント
+title: Ws-metadata Exchange を使用して sap メタデータの取得 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,21 +16,21 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ae33fd76725abf15f12d95be39997fc29e67403e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 55ba97f7757ff6f61a98002c496d9b6b26fc7be9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216882"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002067"
 ---
 # <a name="get-metadata-using-ws-metadata-exchange-in-sap"></a>SAP で Ws-metadata Exchange を使用してメタデータを取得します。
-として、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドを[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]から特定の操作についてのメタデータの取得に使用できる Ws-metadata Exchange (MEX) エンドポイントを公開して、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]です。  
+として、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドを[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]から特定の操作のメタデータの取得に使用できる Ws-metadata Exchange (MEX) エンドポイントを公開して、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]します。  
   
- WCF には、エクスポート、公開、取得、およびサービスに関するメタデータをインポートするための豊富なインフラストラクチャが用意されています。 アダプターと同様に、WCF サービスでは、メタデータを使用して、svcutil.exe などのツールが、サービスを使用するためのクライアント コードを自動的に生成されるようにサービス エンドポイントと対話する方法について説明します。 WCF では、サービスのメタデータを表すのインスタンスとして、 **MetadataSet**型で、Ws-metadata Exchange (MEX) で定義されているメタデータのシリアル化形式に強く関連付けられています。 作成することができます、 **MetadataSet**を使用してアダプターに対する操作の対象となる、 **MetadataExchangeClient**です。  
+ WCF には、エクスポート、公開、取得、およびサービスに関するメタデータをインポートするためのさまざまなインフラストラクチャが用意されています。 アダプターなどの WCF サービスでは、メタデータを使用して、svcutil.exe などのツールが、サービスを使用するためのクライアント コードを自動的に生成されるように、サービス エンドポイントと対話する方法について説明します。 WCF では、サービスのメタデータを表すのインスタンスとして、 **MetadataSet**型で、Ws-metadata Exchange (MEX) で定義されているメタデータのシリアル化形式には厳密に関連付けられています。 作成することができます、 **MetadataSet**を対象となる操作を使用して、アダプター、 **MetadataExchangeClient**します。  
   
- WCF では、メタデータ交換ができる拡張可能なトピックでは、このドキュメントの範囲を超えてをサポートします。 WCF でのメタデータのサポートの詳細についてを参照してください「メタデータ」で、WCF ドキュメント[http://go.microsoft.com/fwlink/?LinkId=105634](http://go.microsoft.com/fwlink/?LinkId=105634)です。 特に優れての詳細については、アーキテクチャ、クラス、および WCF は、メタデータの公開の名前空間を参照してください「メタデータ アーキテクチャの概要」 [http://go.microsoft.com/fwlink/?LinkId=105635](http://go.microsoft.com/fwlink/?LinkId=105635)です。 続行する前にこれらの WCF トピック内の WCF サービスからメタデータの取得に関連するコンテンツを理解しておく必要があります。  
+ WCF では、メタデータ交換は、包括的なトピックと、このドキュメントの範囲を超えてをサポートします。 WCF でのメタデータのサポートの詳細についてを参照してください「メタデータ」で、WCF ドキュメント[ http://go.microsoft.com/fwlink/?LinkId=105634](http://go.microsoft.com/fwlink/?LinkId=105634)します。 特に適切なアーキテクチャについては、クラス、およびメタデータについては、WCF が公開する名前空間を参照してください「メタデータ アーキテクチャの概要」 [ http://go.microsoft.com/fwlink/?LinkId=105635](http://go.microsoft.com/fwlink/?LinkId=105635)します。 続行する前にこれらの WCF トピック内の WCF サービスからメタデータの取得に関連するコンテンツを理解しておく必要があります。  
   
- 次のトピックには、使用方法に関する情報が含まれて、 **MetadataExchangeClient**メタデータを取得する、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
+ 次のトピックでは、使用する方法については、 **MetadataExchangeClient**メタデータを取得する、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
 ## <a name="using-a-metadataexchangeclient-to-retrieve-metadata"></a>MetadataExchangeClient を使用してメタデータを取得するには  
  使用する、 **MetadataExchangeClient**接続 URI とバインディングを指定する必要があります (**SAPBinding**)。 接続 URI では、メタデータを取得する操作を識別します。  
@@ -38,44 +38,44 @@ ms.locfileid: "22216882"
  次のセクションでは、接続 URI、重要なバインドのプロパティを指定する方法と使用方法に関する情報を格納する、 **MetadataExchangeClient**アダプターからメタデータを取得します。  
   
 ### <a name="the-connection-uri"></a>接続 URI  
- 使用する、 **MetadataExchangeClient** SAP 接続を MEX エンドポイントと操作のメタデータを取得する操作を指定する URI を指定する必要があります。 次のように、接続 URI で MEX エンドポイントとターゲットの操作を指定します。  
+ 使用する、 **MetadataExchangeClient** SAP 接続 MEX エンドポイントと操作、またはメタデータを取得する操作を指定する URI を指定する必要があります。 次のように、接続 URI で MEX エンドポイントとターゲットの操作を指定します。  
   
--   クエリ文字列には、"wsdl"パラメーターを含める必要があります。 クエリ文字列の最初のパラメーターは場合、疑問符 (?) の直後に指定されています。 場合は、最初のパラメーターでない場合は、その必要がありますの前に、アンパサンド (&)。  
+- クエリ文字列で"wsdl"パラメーターを含める必要があります。 クエリ文字列の最初のパラメーターは場合、疑問符 (?) の直後に指定します。 最初のパラメーターではない場合、アンパサンドを付ける必要があります (&)。  
   
--   1 つまたは複数の"op"パラメーターで、"wsdl"パラメーターに従う必要があります。 各"op"パラメーターは、前にアンパサンド (&) し、ターゲットの操作のメッセージのアクション (ノードの ID) を指定します。  
+- 1 つまたは複数の"op"パラメーターで"wsdl"パラメーターに従う必要があります。 各"op"パラメーターは、前にアンパサンド (&) を対象の操作のメッセージのアクション (ノード ID) を指定します。  
   
- たとえば、次の接続 URI SALESORDER_CREATEFROMDAT201 IDOC および SALESORDER_CREATEFROMDAT202 IDOC に対する送信操作のターゲットです。 "Wsdl"および"op"パラメーターが強調表示されます。  
+  たとえば、次の接続 URI SALESORDER_CREATEFROMDAT201 IDOC と SALESORDER_CREATEFROMDAT202 IDOC に対する送信操作の対象です。 "Wsdl"と"op"パラメーターが強調表示されます。  
   
 ```  
 "sap://User=YourUserName;Passwd=YourPassword;Client=800;Lang=EN;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Send&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT202//620/Send"  
 ```  
   
 > [!NOTE]
->  受信操作の接続 URI にリスナーのパラメーターを含める必要はありません。 アダプターは、SAP システムからメタデータを取得するクライアントとして接続します。  
+>  受信操作の接続 URI でリスナーのパラメーターを含める必要はありません。 アダプターは、SAP システムからメタデータを取得するクライアントとして接続します。  
   
- 定義されている定数を使用することもできます。`Microsoft.Adapters.SAP.SAPAdapterConstants.ActionConstants`接続 URI を作成するときに、操作を指定するためです。 これは、このトピックの最後のコード例に示します。  
+ 定義した定数を使用することもできます。`Microsoft.Adapters.SAP.SAPAdapterConstants.ActionConstants`接続 URI を作成するときに、操作を指定するためにします。 これについては、このトピックの最後のコード例に示します。  
   
- この接続 URI を渡す方法を**MetadataExchangeClient**クライアントを作成して、アダプターからのメタデータの取得に使用するオーバー ロードされたメソッドのうちに依存します。  
+ この接続の URI を渡す方法を**MetadataExchangeClient**のどのクライアントを作成して、アダプターからのメタデータの取得に使用するオーバー ロードされたメソッドに依存します。  
   
- SAP 接続 URI の詳細については、次を参照してください。 [SAP システムの接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
+ SAP 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
   
 ### <a name="binding-properties"></a>バインドのプロパティ  
- 作成するときに、 **MetadataExchangeClient**を指定する必要があります、 **SAPBinding**です。  
+ 作成するときに、 **MetadataExchangeClient**を指定する必要があります、 **SAPBinding**します。  
   
  アダプターがメタデータを生成する方法に影響を与えるいくつかのバインド プロパティがあります。 これらのプロパティは次のとおりです。  
   
--   **GenerateFlatfileCompatibleIdocSchema**  
+- **GenerateFlatfileCompatibleIdocSchema**  
   
--   **ReceiveIDocFormat**  
+- **receiveIDocFormat**  
   
--   **EnableSafeTyping**  
+- **EnableSafeTyping**  
   
--   **FlatFileSegmentIndicator**  
+- **flatFileSegmentIndicator**  
   
- 呼び出す前に、アプリケーションに必要な値をこれらのバインディング プロパティを設定することを確認する必要があります、 **GetMetadata**メソッドを**MetadataExchangeClient**です。 SAP アダプターのバインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。  
+  これらのバインドのプロパティを呼び出す前に、アプリケーションに必要な値に設定されていることを確認する必要があります、 **GetMetadata**メソッドを**MetadataExchangeClient**します。 SAP アダプターのバインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
 ### <a name="example"></a>例  
- 次の例では、 **MetadataExchangeClient** BAPI_TRANSACTION_COMMIT および BAPI_TRANSACTION_ROLLBACK 操作のサービスの説明 (WSDL ドキュメント) を作成します。  
+ 次の例では、 **MetadataExchangeClient** BAPI_TRANSACTION_COMMIT と BAPI_TRANSACTION_ROLLBACK の操作のためのサービスの説明 (WSDL ドキュメント) を作成します。  
   
 ```  
 using System;  
@@ -138,5 +138,5 @@ namespace SapMetadataExchangeClient
 ```  
   
 ## <a name="see-also"></a>参照  
- [SAP からメタデータをプログラムで取得します。](../../adapters-and-accelerators/adapter-sap/get-metadata-programmatically-from-sap.md)   
- [IMetadataRetrievalContract を使用して SAP のメタデータを取得します。](../../adapters-and-accelerators/adapter-sap/get-metadata-in-sap-using-imetadataretrievalcontract.md)
+ [SAP からプログラムでメタデータの取得](../../adapters-and-accelerators/adapter-sap/get-metadata-programmatically-from-sap.md)   
+ [IMetadataRetrievalContract を使用して sap メタデータの取得](../../adapters-and-accelerators/adapter-sap/get-metadata-in-sap-using-imetadataretrievalcontract.md)

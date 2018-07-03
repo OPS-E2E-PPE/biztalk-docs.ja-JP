@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server がビジネス Need2 を解決する方法 |Microsoft ドキュメント
+title: BizTalk Server がビジネス Need2 を解決する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5dcc7ee1b77c91cc4bbc52384a23347ce3e9a0f
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 45a0f21cfe71a1c7af0b4d05798a08c842c4b85d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004923"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995907"
 ---
 # <a name="how-biztalk-server-solves-the-business-need"></a>BizTalk Server がビジネス ニーズを解決する方法
-医療を解決するためにシステムの統合を必要がある BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) の機能を拡張[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]医療システム用の BizTalk Server です。  
+医療を解決するためにシステムの統合を必要がある BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 医療システム MicrosoftBizTalk サーバーの機能を拡張します。  
   
- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]セットアップは、BizTalk Server 上にアクセラレータをインストール、説明、テクノロジの機能の概要を提供することによって[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、機能の説明を[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]追加するとのディスカッション方法 2 つのテクノロジを展開することができます。  
+ [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]セットアップは、BizTalk Server 上にアクセラレータをインストールすると、このセクションの機能の概要を提供することで、テクノロジを説明します[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、機能の説明を[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]追加するとのディスカッション方法 2 つのテクノロジを展開することができます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

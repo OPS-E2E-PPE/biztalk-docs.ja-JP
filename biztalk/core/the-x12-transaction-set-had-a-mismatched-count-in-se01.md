@@ -1,5 +1,5 @@
 ---
-title: X12 トランザクション セットの SE01 に一致しないカウントが |Microsoft ドキュメント
+title: X12 トランザクション セットは、SE01 に一致しないカウントが |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 41539f0492f90d3f7276b0d80af28c568593ef4f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 947a557a81c6857b5d31f447acb2ec5a46cfcef9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278706"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36993355"
 ---
 # <a name="the-x12-transaction-set-had-a-mismatched-count-in-se01"></a>X12 トランザクション セットの SE01 に一致しないカウントがあります
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|X12StSeCountMismatch|  
-|メッセージ テキスト|X12 トランザクション セットの SE01 に一致しないカウントがあります。 SE01 {0} でした、一方 {1} されている必要があります。 問題の修正が完了しました。|  
+|                 |                                                                                                                               |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                      [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                       |
+| 製品バージョン |                                  [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                   |
+|    イベント ID     |                                                               -                                                               |
+|  イベント ソース   |                    [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                     |
+|    コンポーネント    |                                                          EDI エンジン                                                           |
+|  シンボル名  |                                                     X12StSeCountMismatch                                                      |
+|  メッセージ テキスト   | X12 トランザクション セットの SE01 に一致しないカウントがあります。 SE01 が{0}されている一方、{1}します。 問題の修正が完了しました。 |
   
 ## <a name="explanation"></a>説明  
  この警告は、トランザクション セット トレーラー (SE01 フィールド) の数値が、インターチェンジのトランザクション セットのセグメント数と一致しなかったことを示します。 送信パイプラインは、SE01 フィールドのカウントを修正し、警告を表示します。  

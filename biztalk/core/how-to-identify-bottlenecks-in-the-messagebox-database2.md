@@ -1,5 +1,5 @@
 ---
-title: メッセージ ボックス Database2 のボトルネックを特定する方法 |Microsoft ドキュメント
+title: メッセージ ボックス Database2 ボトルネックを特定する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,34 +12,34 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e69966f0f3ecff5a27788c9a92d4e3f1ac0eae68
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ffc04f31544a48f0ab25338c95beefaf14d5097c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254202"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010627"
 ---
 # <a name="how-to-identify-bottlenecks-in-the-messagebox-database"></a>メッセージ ボックス データベースのボトルネックを特定する方法
 メッセージ ボックス データベースのボトルネックを特定するには、まず SQL Server エージェント サービスが開始されていることを確認します。 サービスのスタートアップ状態を [手動] から [自動] に変更して、サーバーを再起動してもサービスが自動的に再開されるようにします。  
   
  既定では、Spool、TrackingData、または ApplicationQ テーブルのサイズが増加すると、BizTalk サービスによって制限されるようになっています。 これらのテーブルの切り捨てを行う SQL エージェント ジョブが実行されていない場合は、Spool テーブルのサイズが増加し、データベースにさらに負荷がかかるのを防ぐために制限が作動することになります。 以下のパフォーマンス カウンターの状態を確認します。  
   
--   BizTalk:Message Agent (Host Name) Message Delivery Throttling State  
+- BizTalk:Message Agent (Host Name) Message Delivery Throttling State  
   
--   BizTalk:Message Agent (Host Name) Message Publishing Throttling State  
+- BizTalk:Message Agent (Host Name) Message Publishing Throttling State  
   
- 値 0 は、制限が発生していないことを示します。 値 6 は、データベース サイズの増加に起因する制限が発生していることを示します。 これらのカウンターの値を解釈する方法については、ドキュメントを参照してください。  
+  値 0 は、制限が発生していないことを示します。 値 6 は、データベース サイズの増加に起因する制限が発生していることを示します。 これらのカウンターの値を解釈する方法については、ドキュメントを参照してください。  
   
 ## <a name="spool-table-growth"></a>Spool テーブルのサイズの増加  
  Spool のサイズが増加し始める原因は複数あります。 その 1 つとして、アプリケーション キューのサイズの増加があります。 この増加には、下流のボトルネックやリソースの競合などさまざまな原因が考えられます。  
   
  アプリケーション キューのサイズが小さいにもかかわらず Spool のサイズが大きい場合は、Purge ジョブの処理が追いついているかどうかを確認します。 SQL エージェント サービスが実行されていることを確かめたうえで、以下のジョブが正常に完了しているかどうかを確認してください。  
   
--   MessageBox_Message_Cleanup_BizTalkMessageBoxDb  
+- MessageBox_Message_Cleanup_BizTalkMessageBoxDb  
   
--   MessageBox_Parts_Cleanup_BizTalkMessageBoxDb  
+- MessageBox_Parts_Cleanup_BizTalkMessageBoxDb  
   
- MessageZeroSum テーブルのサイズが大きい場合は、メッセージの処理 (DeQueue の正常完了とアプリケーション キュー テーブルからのデータの削除) が完了し、該当する行に削除フラグが設定されているものの、 Purge ジョブによるデータの削除が追いついていないことを示します。 その原因の 1 つとして、SQL Server コンピューターで深刻な CPU の競合が発生しており、CPU 不足のため Purge ジョブが適正な処理能力を維持できなくなっていることが考えられます。  
+  MessageZeroSum テーブルのサイズが大きい場合は、メッセージの処理 (DeQueue の正常完了とアプリケーション キュー テーブルからのデータの削除) が完了し、該当する行に削除フラグが設定されているものの、 Purge ジョブによるデータの削除が追いついていないことを示します。 その原因の 1 つとして、SQL Server コンピューターで深刻な CPU の競合が発生しており、CPU 不足のため Purge ジョブが適正な処理能力を維持できなくなっていることが考えられます。  
   
 ## <a name="application-queue-table-growth"></a>アプリケーション キュー テーブルのサイズの増加  
  アプリケーション キューがホストするインフライト移行データは、処理が完了すると DeQueue によってクリーンアップされます。  

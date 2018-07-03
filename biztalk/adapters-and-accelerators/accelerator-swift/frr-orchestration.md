@@ -1,5 +1,5 @@
 ---
-title: FRR オーケストレーション |Microsoft ドキュメント
+title: FRR オーケストレーション |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -32,94 +32,94 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f56b16f59b967ccd9e57d03d38f86e64795da477
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 3ad5d9dd1b582aefa9a440508650ecd0e653dbfe
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25967887"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36998378"
 ---
 # <a name="frr-orchestration"></a>FRR オーケストレーション
-[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]FRR オーケストレーションで FRR を実装します。 オーケストレーションでは、FIN 応答の相関トークンと一致するどうか、元のメッセージのメッセージ ID を決定します。 SAA にメッセージを送信する送信ポートで実行される送信機能と SAA からメッセージを受信する受信場所で実行される受信機能は、並列でメッセージを処理します。  
+[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] FRR オーケストレーションを通じて FRR を実装します。 オーケストレーションは、FIN 応答の相関トークン一致、元のメッセージのメッセージ ID かどうかを判断します。 SAA にメッセージを送信する送信ポートで実行される送信機能と SAA からメッセージを受信する受信場所で実行される受信機能は、並列にメッセージを処理します。  
   
  最上位のレベルでは、オーケストレーションのインスタンスは、以下の処理を行います。  
   
-1.  元の送信メッセージのコピーはキャッシュ SAA のメッセージ ボックス データベースをリッスンしてバインドされます。  
+1. SAA の元の送信メッセージのコピーをバインド、メッセージ ボックスをリッスンしてキャッシュします。  
   
-    > [!NOTE]
-    >  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]オーケストレーションのインスタンスを作成時に[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]メッセージ ボックスに、元のメッセージをルーティングします。  
+   > [!NOTE]
+   >  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] オーケストレーションのインスタンスを作成時に[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]メッセージ ボックスに、元のメッセージをルーティングします。  
   
-2.  待機[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]SAA からメッセージ ボックス データベースへの FIN 応答を発行します。  
+2. 待機[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]SAA からメッセージ ボックス データベースへの FIN 応答を発行します。  
   
-3.  セットは、FIN 応答の性質によって、元のメッセージのコピーのプロパティを昇格します。  
+3. セットは、FIN 応答の性質によって、元のメッセージのコピーのプロパティを昇格します。  
   
-4.  元のメッセージのコピーをメッセージ ボックス データベースに発行します。 カスタム ハンドラーを取得するサブスクライブし、必要に応じてメッセージを処理します。  
+4. 元のメッセージのコピーをメッセージ ボックス データベースに発行します。 カスタム ハンドラーはサブスクライブ、取得、必要に応じてメッセージを処理します。  
   
 ## <a name="subscription-to-outbound-messages"></a>送信メッセージへのサブスクリプション  
- FRR オーケストレーションはメッセージ ボックスに直接バインドします。 FRR オーケストレーションは、すべての送信メッセージに SWIFT ネットワークは、バインドされている次のプロパティをサブスクライブすることによって検証エラーを含まないをサブスクライブします。  
+ FRR オーケストレーションは直接メッセージ ボックスにバインドされます。 FRR オーケストレーションは、次のプロパティをサブスクライブすることによって検証エラーを含まないすべての送信メッセージの SWIFT ネットワーク バインドをサブスクライブします。  
   
--   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_Failed false を = = (されている SWIFT の逆アセンブラーの検証プロセスで)  
+- [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_Failed (SWIFT 逆アセンブラーの検証プロセスで設定) として false を = =  
   
--   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_Swiftbound true を = = (プロセスによって設定された、SWIFT 逆アセンブラーの構成)  
+- [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_Swiftbound true を = = (プロセスによって設定された、SWIFT 逆アセンブラーの構成)  
   
 ## <a name="messageresponse-correlation"></a>メッセージと応答の相関関係  
- [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]次のプロパティを比較することによって元の送信 FIN メッセージを受信 FIN 応答メッセージを相互に関連付けます。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 次のプロパティを比較することによって元の送信 FIN メッセージを受信 FIN 応答メッセージを関連付けます。  
   
--   FIN 応答の MQMD_CorrelID コンテキスト プロパティ  
+- FIN 応答の MQMD_CorrelID コンテキスト プロパティ  
   
--   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]MTXYY の送信メッセージの _FRRCorrelationToken プロパティです。 このプロパティは、受信パイプラインのパーティの解決ステージによって昇格されます。  
+- [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]MTXYY の送信メッセージの _FRRCorrelationToken プロパティ。 このプロパティは、受信パイプラインのパーティの解決ステージによって昇格されます。  
   
- これらのプロパティの値を同一にする必要があります。 メッセージの送信パイプラインのエンコーダーの段階に SWIFT の値を送信メッセージの MQMD_MsgID プロパティを設定するがバインドされている、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FRRCorrelationToken プロパティです。 SAA は、MQMD_MsgID の値を応答メッセージの MQMD_CorrelID プロパティを設定します。  
+  これらのプロパティの値を同一にする必要があります。 SWIFT の値に、送信メッセージの MQMD_MsgID プロパティを設定するメッセージの送信パイプラインのエンコーダーの段階にバインドされた、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FRRCorrelationToken プロパティ。 SAA は、MQMD_MsgID の値を応答メッセージの MQMD_CorrelID プロパティを設定します。  
   
 ## <a name="setting-of-promoted-properties"></a>昇格させたプロパティの設定  
- FIN 応答の受信と、元のメッセージのコピーへの関連付け、FRR オーケストレーションは応答の性質によって、元のメッセージのコピーの次の昇格させたプロパティを設定します。  
+ FIN 応答の受信と、コピー元のメッセージを相関させる、FRR オーケストレーションは、応答の性質に応じて、元のメッセージのコピーの次の昇格させたプロパティを設定します。  
   
--   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]応答が NAK 場合の応答が ACK または False の場合は True に _FRRFailed  
+- [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]応答が NAK であった場合、応答が ACK または False の場合は True に _FRRFailed  
   
--   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]応答が NAK であった場合、次の値のいずれかの _FRRFailedReason:  
+- [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]応答が NAK であった場合、次の値のいずれかの _FRRFailedReason:  
   
-    -   *\<ErrorCode\>*  (MTS21_FIN_ACKNAK 負受信確認メッセージの 405 フィールド) から  
+  -   *\<ErrorCode\>*  (405 MTS21_FIN_ACKNAK 負では受信確認メッセージのフィールド) から  
   
-    -   (MQ 系列パン/NAN メッセージ) から TransportError  
+  -   (MQ Series パン/NAN メッセージ) から TransportError  
   
-    -   (MT015 (DNK) メッセージ) から DelayedNAK  
+  -   DelayedNAK (から MT015 (DNK) メッセージの場合)  
   
-    -   AbortReceived (、MT019 から (中止通知) メッセージ)  
+  -   AbortReceived (、MT019 から (中止通知) メッセージ)  
   
--   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]TimedOut に _FRRFailedReason 場合[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]タイムアウト期間内の応答を受信しませんでした。 FRR 遅延タイムアウトの詳細については、後述の「「調整タイムアウト」を参照してください。 または[FRR 遅延タイムアウトの設定](../../adapters-and-accelerators/accelerator-swift/setting-the-frr-delay-time-out.md)です。  
+- [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]TimedOut に _FRRFailedReason 場合[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]タイムアウト期間内の応答を受信しませんでした。 FRR 遅延タイムアウトの詳細については、以下の"調整のタイムアウト セクションを参照してください。 または[FRR 遅延タイムアウト](../../adapters-and-accelerators/accelerator-swift/setting-the-frr-delay-time-out.md)します。  
   
--   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_SendingServiceType [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrService  
+- [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_SendingServiceType [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrService  
   
--   BTS です。応答メッセージの種類に対応する値を操作します。 詳細については、次を参照してください。 [FRR 送信ポートを作成するカスタム ハンドラーに送信の](../../adapters-and-accelerators/accelerator-swift/creating-the-frr-send-ports-for-sending-to-the-custom-handlers.md)します。  
+- BTS します。応答メッセージの種類に対応する値を操作します。 詳細については、次を参照してください。[カスタム ハンドラーへの送信用として FRR 送信ポートを作成する](../../adapters-and-accelerators/accelerator-swift/creating-the-frr-send-ports-for-sending-to-the-custom-handlers.md)します。  
   
-    -   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]MQ 系列パン/NAN メッセージ (MQ Series トランスポート レベル ACK/NAK) _FrrSendTransport  
+  - [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSendTransport MQ Series パン/NAN メッセージ (MQ Series トランス ポート レベル ACK/NAK)  
   
-    -   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSend010NDW MT010 メッセージ (警告の配信不能)  
+  - [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSend010NDW MT010 メッセージ (警告の配信不能)  
   
-    -   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSend011Delivered MT011 メッセージ (配信通知)  
+  - [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSend011Delivered MT011 メッセージ (通知の配信)  
   
-    -   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSend012SenderACK MT012 メッセージ (通知の送信側)  
+  - [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSend012SenderACK MT012 メッセージ (通知の送信側)  
   
-    -   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSend015DNK MT015 メッセージ (DNK、または遅延 NAK)  
+  - [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSend015DNK MT015 メッセージ (DNK、または遅延 NAK)  
   
-    -   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSend019Abort MT019 メッセージ (通知の中止)  
+  - [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSend019Abort MT019 メッセージ (通知の中止)  
   
-    -   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSendS21ACK MTS21_FIN_ACKNAK 受信確認メッセージ (、LT によって送信された FIN メッセージの ACK)  
+  - [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSendS21ACK MTS21_FIN_ACKNAK 受信確認メッセージ (FIN メッセージを送信して、LT ACK)  
   
-    -   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSendS21NAK MTS21_FIN_ACKNAK 負受信確認メッセージ (NAK、LT によって送信された FIN メッセージの)  
+  - [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSendS21NAK MTS21_FIN_ACKNAK 負では受信確認メッセージ (NAK FIN メッセージを送信して、LT)  
   
 ## <a name="direct-binding"></a>直接バインド  
- オーケストレーションがメッセージ ボックスには、オーケストレーションはサブスクリプションによって定義されているは、入力を受け取ります。 コンテキスト プロパティと、オーケストレーションによって昇格された値は、オーケストレーションがメッセージ ボックスに公開されるメッセージの送信の出力を定義します。 メッセージ ボックスに直接このバインディングのため、オーケストレーションは、次の中から切り離されます。  
+ オーケストレーションがメッセージ ボックスには、オーケストレーションはサブスクリプションで定義されている入力を受け取ります。 コンテキスト プロパティと、オーケストレーションによって昇格された値は、オーケストレーションがメッセージ ボックスに公開されるメッセージの送信の出力を定義します。 メッセージ ボックスに直接このバインディングにより、オーケストレーションは、次の分離します。  
   
--   物理受信 SAA へのルーティング用のバックエンド アプリケーションから送信メッセージを受信する場所  
+- 物理的な SAA へのルーティングのバック エンド アプリケーションからの送信メッセージの受信場所を受信します。  
   
--   送信する送信ポートからのメッセージの FIN[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]に SWIFT Alliance アクセス (SAA)  
+- 送信する送信ポートからメッセージを FIN [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] SWIFT Alliance アクセス (SAA) する  
   
--   SAA から着信 FIN 応答メッセージを受信する受信場所  
+- SAA から FIN 応答の受信メッセージを受信する受信場所  
   
--   SAA によって FIN 応答を格納する場所、物理 MQSeries キュー  
+- SAA によって FIN 応答を格納する場所、物理 MQSeries キュー  
   
 ## <a name="reconciliation-time-out"></a>調整のタイムアウト  
- ときに[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]FRR オーケストレーション、FIN 応答を待機しているオーケストレーションの開始の新しいインスタンスを作成します。 実行時に、それが待機するようにいない応答を無期限にいくつかの期間の後にタイムアウトにオーケストレーションを構成する必要があります。 タイムアウト期間が経過すると、FRR オーケストレーションが昇格、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FRRFailedReason プロパティし TimedOut に設定します。 メッセージ ボックスにメッセージを公開し、終了します。 タイムアウトする場合は、相関 ID が削除されます。  
+ ときに[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]FIN 応答を待機しているオーケストレーションの開始、FRR オーケストレーションの新しいインスタンスを作成します。 実行時に、無期限に応答を待機するがないことをいくつかの期間の後にタイムアウトにオーケストレーションを構成する必要があります。 FRR オーケストレーションが昇格タイムアウト期間を過ぎると、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FRRFailedReason プロパティ TimedOut に設定します。 メッセージを MessageBox に公開し、終了します。 タイムアウトする場合は、関連付け ID はなくなっています。  
   
- タイムアウトになったメッセージ (元の送信メッセージのコピー) を処理するためのカスタム ハンドラーを作成することができます。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]そのためのオーケストレーションの待ち受け図形を使用して、します。 詳細については、次を参照してください。 [FRR 遅延タイムアウトの設定](../../adapters-and-accelerators/accelerator-swift/setting-the-frr-delay-time-out.md)です。
+ タイムアウト メッセージ (元の送信メッセージのコピー) を処理するためのカスタム ハンドラーを作成することができます。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 待ち受け図形をオーケストレーションを使用してこれを実現なります。 詳細については、次を参照してください。 [FRR 遅延タイムアウト](../../adapters-and-accelerators/accelerator-swift/setting-the-frr-delay-time-out.md)します。

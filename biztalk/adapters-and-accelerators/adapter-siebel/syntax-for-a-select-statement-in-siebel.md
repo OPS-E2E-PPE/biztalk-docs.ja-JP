@@ -1,5 +1,5 @@
 ---
-title: Siebel の SELECT ステートメントの構文 |Microsoft ドキュメント
+title: Siebel の SELECT ステートメントの構文 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3eeb0a6d4a1fceebe7e16b3f71566f848e4a20f
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 543445fe6958a156894bb6c0d268d9b3b5814b23
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "25964160"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022664"
 ---
 # <a name="syntax-for-a-select-statement-in-siebel"></a>Siebel の SELECT ステートメントの構文
-使用して、 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]、ADO.NET クライアントは Siebel 検索の有効な定義を表す WHERE 句を指定することで Siebel ビジネス コンポーネントで SELECT クエリを実行することができます。 SELECT ステートメントの構文です。  
+使用して、 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]、ADO.NET クライアントは Siebel 検索の有効な定義を表す WHERE 句を指定することで Siebel ビジネス コンポーネントに対する SELECT クエリを実行することができます。 SELECT ステートメントの構文です。  
   
 ```  
 SELECT  
@@ -39,63 +39,63 @@ OPTION
 'ViewMode <value>'  
 ```  
   
- 上記の構文では、ViewMode オプションに対応 Siebel システムの表示モードは、クエリに一致するレコードのセットを制限するフィルター メカニズムです。 値の許可されたセットは、Siebel のドキュメントを参照してください。  
+ 上記の構文で ViewMode オプションに対応 Siebel システムの表示モード、クエリに一致するレコードのセットを制限するフィルター メカニズムです。 値の許可されたセットは、Siebel のドキュメントを参照してください。  
   
 > [!NOTE]
->  WHERE 句内のフィールド名に特殊文字や空白を含んでいる場合は、常に角かっこ内のフィールド名を囲むを確認します。  
-  
+>  WHERE 句内のフィールド名には、特殊文字または空白が含まれている場合、常に角かっこ内のフィールド名を囲むことを確認します。  
+> 
 > [!NOTE]
->  特殊文字を含むエイリアス名を含む SELECT クエリでは、角かっこ内のエイリアス名を含めるを確認します。  
-  
+>  特殊文字を含むエイリアス名を含む SELECT クエリで角かっこ内のエイリアス名を含めることを確認します。  
+> 
 > [!NOTE]
->  [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]をサポートしている別名テーブルでの名前、WHERE 句ではなく、SELECT 句でします。  
+>  [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] WHERE 句ではなく、SELECT 句で、テーブル名でサポート エイリアス。  
   
-## <a name="searching-and-sorting-data-using-the-data-provider-for-siebel"></a>Siebel のデータ プロバイダーを使用してデータの並べ替えと検索  
+## <a name="searching-and-sorting-data-using-the-data-provider-for-siebel"></a>Siebel 用データ プロバイダーを使用してデータの並べ替えと検索  
  [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] Siebel システムでサポートされている検索仕様に基づいて SQL ステートメントでフィルター条件をサポートしています。  
   
  検索条件の規則は次のとおりです。  
   
--   標準的な比較演算子は、定数、フィールドまたは別のフィールドに 1 つのフィールドを比較するために使用する必要があります。 これらを含める =、! =、>、<>, =、および < = です。  
+- 標準的な比較演算子は、定数、フィールドまたは別のフィールドに 1 つのフィールドを比較するために使用する必要があります。 以下の =、! =、>、<>、=、および < =。  
   
-    ```  
-    Example: [Revenue] > 5000  
-    ```  
+  ```  
+  Example: [Revenue] > 5000  
+  ```  
   
--   文字列定数は、二重引用符で囲む必要があり、文字列の値は大文字小文字を区別する必要があります。  
+- 文字列定数は二重引用符で囲む必要があり、文字列値は大文字小文字を区別する必要があります。  
   
-    ```  
-    Example: [Type] != "COST LIST"  
-    ```  
+  ```  
+  Example: [Type] != "COST LIST"  
+  ```  
   
--   論理演算子 AND、OR、および否定または式を結合に使用する必要がありません。 これらの演算子では、大文字小文字の区別が無視されます。たとえば、「と」と同じでは、"AND"です。  
+- 論理演算子 AND、OR、および否定または式を結合するために使用する必要がありません。 これらの演算子では大文字小文字の区別が無視されます。たとえば、"and"と同じでは、"AND"。  
   
-    ```  
-    Example: [Competitor] IS NOT NULL and [Competitor] != "N"  
-    ```  
+  ```  
+  Example: [Competitor] IS NOT NULL and [Competitor] != "N"  
+  ```  
   
--   検索の定義でフィールド名は、角かっこで囲む必要があります。  
+- 検索の定義でフィールド名は、角かっこで囲む必要があります。  
   
-    ```  
-    Example: [Conflict Id] = 0  
-    ```  
+  ```  
+  Example: [Conflict Id] = 0  
+  ```  
   
--   フィールドが、定数と比較して比較式のテキスト文字列を作成する LIKE 演算子を使用するまたは、別のフィールドといくつかの先頭の文字のみで一致するフィールドが必要です。 ワイルドカード文字"*「と」?" それぞれの文字、および単一の文字の任意の数を示すために使用する必要があります。  
+- LIKE 演算子は、フィールドが、定数と比較して、比較式のテキスト文字列を作成するために使用可能性があります。 または別のフィールドと最初のいくつかの文字のみで一致するフィールドが必要です。 ワイルドカード文字"*「と」?" それぞれの文字、および単一の文字の任意の数を示すために使用する必要があります。  
   
--   ADO.NET クライアントには、元の Siebel ビジネス オブジェクト、ビジネス コンポーネント、およびビジネス コンポーネントのフィールド名を指定できます。 任意の特殊文字または空白文字が含まれる場合、これらの名前を角かっこで囲む必要があります。 サポートされているクエリの例は次のとおりです。  
+- ADO.NET クライアントには、元の Siebel ビジネス オブジェクト、ビジネス コンポーネント、およびビジネス コンポーネントのフィールド名を指定できます。 特殊文字や空白文字が含まれている場合、これらの名前を角かっこで囲む必要があります。 サポートされているクエリの例は次のとおりです。  
   
-    ```  
-    SELECT [Name], [Postal Code] FROM Account.Account where [Postal Code] != '11065'  
-    SELECT [Name], [Postal Code], Id From Account.Account where [Postal Code] != '60626' Order BY Id ASC, Name DESC  
-    SELECT * FROM [Admin Price List].[Price Book Items]  
-    ```  
+  ```  
+  SELECT [Name], [Postal Code] FROM Account.Account where [Postal Code] != '11065'  
+  SELECT [Name], [Postal Code], Id From Account.Account where [Postal Code] != '60626' Order BY Id ASC, Name DESC  
+  SELECT * FROM [Admin Price List].[Price Book Items]  
+  ```  
   
- [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] Siebel でサポートされている並べ替えの指定に基づいて SQL ステートメントの仕様の並べ替えをサポートします。 並べ替えの指定の規則は次のとおりです。  
+  [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] Siebel でサポートされている並べ替え仕様に基づいて SQL ステートメントの仕様の並べ替えがサポートされます。 並べ替え仕様の規則は次のとおりです。  
   
--   仕様では、並べ替え以外のフィールド名を区切るコンマを使用します。たとえば、名前、場所  
+- 並べ替え仕様; でフィールド名を区切るコンマを使用します。たとえば、名前、場所  
   
--   リスト内のフィールドを降順に並べ替えることを示す、「開始日 (DESC) です」のように、フィールド名の後 (DESC) を含める 並べ替え順序が指定されていない場合は、昇順を使用します。 昇順を明示的に指定するには、キーワード (ASC) を使用します。  
+- リスト内のフィールドを降順に並べ替えることを示す、「開始日 (DESC) です」のように、フィールド名の後 (DESC) を含める 並べ替え順序が指定されていない場合は、昇順が使用されます。 昇順を明示的に指定するには、キーワード (ASC) を使用します。  
   
--   並べ替え式の仕様は 255 文字である必要があります以下です。  
+- 並べ替え仕様の式は 255 文字である必要がありますまたはそれ以下。  
   
 ## <a name="see-also"></a>参照  
  [.NET Framework Data Provider for Siebel eBusiness Applications を使用する](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)

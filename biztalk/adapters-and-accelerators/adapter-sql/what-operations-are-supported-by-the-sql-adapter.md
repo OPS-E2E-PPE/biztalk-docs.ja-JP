@@ -1,5 +1,5 @@
 ---
-title: SQL アダプターによってどのような操作がサポートされている |Microsoft ドキュメント
+title: SQL アダプターによってサポートされる操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59d413a763823f49b0bf905b42d8513cbbb1e745
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e61230ed2244bc4bb7c79f87c18879c3c83f7f95
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222546"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37011275"
 ---
-# <a name="what-operations-are-supported-by-the-sql-adapter"></a>どのような操作、SQL アダプターによってサポートされます。
-アダプターのクライアントを使用して、によって、SQL Server データベースで操作を実行できます。  
+# <a name="what-operations-are-supported-by-the-sql-adapter"></a>SQL アダプターによってサポートされる操作
+アダプター クライアントを使用してでの SQL Server データベースで操作を実行できます。  
   
--   BizTalk プロジェクトの作成  
+- BizTalk プロジェクトの作成  
   
--   WCF サービス モデルを使用します。  
+- WCF サービス モデルの使用  
   
--   WCF チャネル モデルを使用します。  
+- WCF チャネル モデルを使用します。  
   
- [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]アプリケーションがそれで呼び出すことができ、アプリケーションで呼び出すことができます、さらに、操作を公開します。 これらの操作がチャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。 メッセージの構造および各操作に関連付けられている SOAP アクションについては、次を参照してください。[メッセージと BizTalk Adapter for SQL Server のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sql/messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)です。  
+  [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]アプリケーションは、それを呼び出すことができ、アプリケーションで呼び出すことができます、さらに、操作を公開します。 これらの操作は、チャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。 メッセージの構造とそれぞれの操作に関連付けられている SOAP アクションについては、次を参照してください。[メッセージと BizTalk adapter for SQL Server のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)します。  
   
- このセクションでは、SQL Server データベースを使用して、サポートされる操作に関する情報を提供、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。  
+  このセクションで、SQL Server データベースを使用してサポートされる操作について説明します、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
   
  
   

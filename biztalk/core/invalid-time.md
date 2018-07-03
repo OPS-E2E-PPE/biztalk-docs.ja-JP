@@ -1,5 +1,5 @@
 ---
-title: 無効な時間 |Microsoft ドキュメント
+title: 無効な時間 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aae508a945cc6934e83408b2a9b78c324947e0e8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 555934e0be188011a69efb3966e5316bc716c254
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261978"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37023824"
 ---
 # <a name="invalid-time"></a>時刻が無効です
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|X12Ta1InvalidTimeDescription|  
-|メッセージ テキスト|時刻が無効です|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  製品名   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 製品バージョン |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    イベント ID     |                                           -                                            |
+|  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
+|    コンポーネント    |                                       EDI エンジン                                       |
+|  シンボル名  |                              X12Ta1InvalidTimeDescription                              |
+|  メッセージ テキスト   |                                      時刻が無効です                                      |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、データ要素の時刻値が、EDI スキーマで指定されたデータ型に準拠していなかったか、または X12 インターチェンジの GS05 フィールド ヘッダーの時刻値が、サービス スキーマ (BaseArtifacts.dll 内の X12ServiceSchema) に準拠していなかったため、受信パイプラインで受信インターチェンジを処理できなかったことを示します。 X12 の場合、サービス スキーマは、GS05 フィールドの時刻を X12_TM データ型として、4 ～ 8 文字の長さで定義します。  

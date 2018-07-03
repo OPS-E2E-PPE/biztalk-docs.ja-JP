@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10780 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10780 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6c0991287ccccc67a267b0f949206608283fc1b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9e1fa02c02297f72765a26862d7c92ef29786c00
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277754"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022424"
 ---
 # <a name="single-sign-on-event-10780"></a>シングル サインオン: イベント 10780
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10780|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|ENTSSO_E_INVALID_ACCOUNT|  
-|メッセージ テキスト|アカウント名が無効であるか存在しません。|  
+|                 |                                                            |
+|-----------------|------------------------------------------------------------|
+|  製品名   |                 エンタープライズ シングル サインオン                  |
+| 製品バージョン | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    イベント ID     |                           10780                            |
+|  イベント ソース   |                           ENTSSO                           |
+|    コンポーネント    |                            なし                             |
+|  シンボル名  |                  ENTSSO_E_INVALID_ACCOUNT                  |
+|  メッセージ テキスト   |      アカウント名が無効であるか存在しません。      |
   
 ## <a name="explanation"></a>説明  
  アカウント名が無効であるか存在しません。  

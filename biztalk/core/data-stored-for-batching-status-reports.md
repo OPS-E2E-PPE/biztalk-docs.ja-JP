@@ -1,5 +1,5 @@
 ---
-title: データが格納されているバッチの状態レポートの |Microsoft ドキュメント
+title: データが格納されているバッチの状態レポートの |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,34 +12,34 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db9831aafce56845fe7b75e91f5369a8860d8996
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f42d503177e3b00ce418913e66948eb813575ab1
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238594"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37006859"
 ---
 # <a name="data-stored-for-batching-status-reports"></a>バッチの状態レポート用に格納されるデータ
-ときに、**レポートをオンに**、アグリーメントのプロパティが選択されている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は各バッチ処理のインスタンスの状態を格納します。 このプロパティで使用できる、**全般プロパティ**のページ、**全般** タブで、**アグリーメントのプロパティ** ダイアログ ボックス。 状態は、次のいずれかの値になります。  
+ときに、**レポートを有効にする**、アグリーメントのプロパティが選択されている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]バッチ処理の各インスタンスの状態に格納されます。 このプロパティはで使用できる、**全般プロパティ**のページ、**全般** タブで、**アグリーメントのプロパティ** ダイアログ ボックス。 状態は、次のいずれかの値になります。  
   
--   **定義されている**: バッチ インスタンスは、構成します。 バッチ アクティベーションの開始日時は、現在の日時よりも後になっています。 バッチ パラメーターはすべて定義されていますが、バッチは実行されていません (ドキュメントを受理していません)。  
+- **定義されている**: バッチ インスタンスが構成されています。 バッチ アクティベーションの開始日時は、現在の日時よりも後になっています。 バッチ パラメーターはすべて定義されていますが、バッチは実行されていません (ドキュメントを受理していません)。  
   
--   **アクティブな**: バッチ インスタンスはアクティブ化されており、トランザクション セットを集計しています。 受理/拒否されたトランザクション セットの数を表示できます。  
+- **アクティブな**: バッチ インスタンスがアクティブ化されて、トランザクション セットを集計します。 受理/拒否されたトランザクション セットの数を表示できます。  
   
--   **リリース**: バッチ リリース条件を満たすと、メッセージ ボックスにリリースされましたが、送信パイプラインによってリリースされていないか、すべてのメッセージを処理する前に、バッチが停止しました。  
+- **リリース**: バッチ リリース条件を満たす、メッセージ ボックスにリリースされていますが、送信パイプラインによってリリースされていない、またはすべてのメッセージを処理する前に、バッチが停止しました。  
   
--   **完了**: バッチは EdiSend パイプラインによって送信されました。  
+- **完了した**: バッチは EdiSend パイプラインによって送信されました。  
   
- バッチが EdiSend パイプラインによって送信されると、UI にあるバッチ レコードを、送信された EDI インターチェンジのレコードに関連付けて、トランザクション セットの詳細を参照できます。  
+  バッチが EdiSend パイプラインによって送信されると、UI にあるバッチ レコードを、送信された EDI インターチェンジのレコードに関連付けて、トランザクション セットの詳細を参照できます。  
   
 > [!NOTE]
 >  "完了" 状態のバッチ インスタンスは、1 つのバッチ構成について複数存在することが可能です。  
   
  **バッチ インターチェンジの関連付け**  
   
- BusinessMessageJournal BAM アクティビティにより、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、トランザクション セットを持つ受信 EDI インターチェンジを、同じトランザクション セットを持つ送信バッチ インターチェンジと関連付けることができます。 実装してこの相関関係情報を使用する方法については、次を参照してください。[送信バッチで受信トランザクション セットを相互に関連付ける](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md)です。  
+ BusinessMessageJournal BAM アクティビティにより、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、トランザクション セットを持つ受信 EDI インターチェンジを、同じトランザクション セットを持つ送信バッチ インターチェンジと関連付けることができます。 実装して、この相関関係情報を使用する方法については、次を参照してください。[送信バッチで受信トランザクション セットの関連付け](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md)します。  
   
 ## <a name="see-also"></a>参照  
- [格納されている EDI および AS2 状態レポートのデータ](../core/data-stored-for-edi-and-as2-status-reports.md)   
- [EDI 状態レポートに格納されているデータ](../core/data-stored-for-edi-status-reports.md)   
- [AS2 状態レポートに格納されているデータ](../core/data-stored-for-as2-status-reports.md)
+ [EDI および AS2 状態レポートの格納データ](../core/data-stored-for-edi-and-as2-status-reports.md)   
+ [EDI 状態レポート用に格納されているデータ](../core/data-stored-for-edi-status-reports.md)   
+ [AS2 状態レポート用に格納されるデータ](../core/data-stored-for-as2-status-reports.md)

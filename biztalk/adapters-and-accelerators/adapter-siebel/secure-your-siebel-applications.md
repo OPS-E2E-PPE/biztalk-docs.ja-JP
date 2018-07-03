@@ -1,5 +1,5 @@
 ---
-title: Siebel アプリケーションのセキュリティ保護 |Microsoft ドキュメント
+title: Siebel アプリケーションのセキュリティ保護 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,27 +15,27 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3b597120de91b6a09fdc26b90a2cb357cdc7dd1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1ad63e44e4d2dde5ffee743e0758a37e48a3d4d4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22221970"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012059"
 ---
 # <a name="secure-your-siebel-applications"></a>Siebel アプリケーションのセキュリティ保護します。
-Siebel システムには、多くの場合、お客様のアカウント詳細などの機密性の高いビジネス情報が含まれています。 使用するアプリケーション、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]にアクセスして、この情報を変更するいずれかのローカルまたは分散ネットワーク経由で公開される可能性が誤ってに不正のアクターによってアクセスする作業はに対して保護して、中にデータをセキュリティで保護しない限り、転送します。 データ保護およびセキュリティは、通常と考えるは次の用語で。  
+Siebel システムには、多くの場合、顧客アカウントの詳細などの機密性の高いビジネス情報が含まれています。 使用するアプリケーション、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]にアクセスして、この情報を変更するいずれかまたは分散ネットワーク経由でローカルにキーが誤って公開、不正なアクターによってアクセス中にデータをセキュリティで保護する取り組みが行われた場合を除き、転送します。 データ保護とセキュリティは、通常と考えられるので、次の用語。  
   
--   *承認*要求者の身元に基づいて、リソースへのアクセスを制御します。  
+- *承認*要求者の id に基づいてリソースへのアクセスを制御します。  
   
--   *認証*要求者の身元を確認するためのメカニズムを提供します。  
+- *認証*要求者の id を検証するためのメカニズムを提供します。  
   
--   *データの機密性*暗号化によるデータのプライバシーを保護するためのメカニズムを提供します。  
+- *データの機密性*暗号化を通じてデータのプライバシーを保護するためのメカニズムを提供します。  
   
--   *データの整合性*受信側が、データがされていないことを確認することができます、データのデジタル署名するメカニズムを提供、転送中に変更します。  
+- *データの整合性*データのデジタル署名するためのメカニズムを提供、受信側が、データの有効期限がされていないことを確認することができます、転送中に変更します。  
   
- 問題になるもう 1 つの重要な領域は、ユーザー名パスワード資格情報を提供する、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。 アダプターでは、これらの資格情報を使用して、Siebel システムへの接続を開きます。 これらの資格情報を指定する接続 URI です。ただし、ユーザー名とパスワードはクリア テキストであるため、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]より安全な方法でこれらの資格情報を指定するのに使用できる代替のメソッドを提供します。  
+  問題のもう 1 つの重要な領域は、ユーザー名パスワード資格情報に指定する、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。 アダプターでは、これらの資格情報を使用して、Siebel システムへの接続を開きます。 これらの資格情報を指定する接続 URI。ただし、ユーザー名とパスワードはクリア テキストであるため、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]より安全な方法でこれらの資格情報を指定するために使用できる代替のメソッドを提供します。  
   
- このセクションのトピックでは、向上に役立つガイドラインで開発したソリューションのセキュリティを提供、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。  
+  このセクションのトピックで説明に役立つガイドラインで開発したソリューションをセキュリティで保護された、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -43,6 +43,6 @@ Siebel システムには、多くの場合、お客様のアカウント詳細�
   
 -   [Siebel アダプターと BizTalk Server でのセキュリティ](../../adapters-and-accelerators/adapter-siebel/security-with-siebel-adapter-and-biztalk-server.md)
   
--   [Siebel アダプターをセキュリティで保護された使用したプログラミング](../../adapters-and-accelerators/adapter-siebel/secure-programming-with-the-siebel-adapter.md)
+-   [Siebel アダプターでの安全なプログラミング](../../adapters-and-accelerators/adapter-siebel/secure-programming-with-the-siebel-adapter.md)
   
 -   [Siebel アダプターをセキュリティで保護するベスト プラクティス](../../adapters-and-accelerators/adapter-siebel/best-practices-to-secure-the-siebel-adapter.md)

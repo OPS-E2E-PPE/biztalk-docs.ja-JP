@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11035 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 11035 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e104d28517eab153880e3c922f3fd1f174a6170a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 194d3069f0b74022e6b16a28de1c7f81ae3030f1
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276714"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37001723"
 ---
 # <a name="single-sign-on-event-11035"></a>シングル サインオン: イベント 11035
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|11035|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_INFO_PS_WIN_CHANGE_NO_ADAPTER|  
-|メッセージ テキスト|Windows パスワードが変更されています。 この Windows アカウントに対するマッピングが検出されましたが、このアプリケーションに対してはパスワード同期が構成されていないため無視されました。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> Windows アカウント: %2 %r<br /><br /> アプリケーション: %3 %r<br /><br /> 外部アカウント: %4 %r<br /><br /> クライアント ユーザー: %5|  
+|                 |                                                                                                                                                                                                                                                                                                                        |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                                                                                                               エンタープライズ シングル サインオン                                                                                                                                                |
+| 製品バージョン |                                                                                                                               [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                                               |
+|    イベント ID     |                                                                                                                                                         11035                                                                                                                                                          |
+|  イベント ソース   |                                                                                                                                                         ENTSSO                                                                                                                                                         |
+|    コンポーネント    |                                                                                                                                                          なし                                                                                                                                                           |
+|  シンボル名  |                                                                                                                                           SSO_INFO_PS_WIN_CHANGE_NO_ADAPTER                                                                                                                                            |
+|  メッセージ テキスト   | Windows パスワードが変更されています。 この Windows アカウントに対するマッピングが検出されましたが、このアプリケーションに対してはパスワード同期が構成されていないため無視されました。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> Windows アカウント: % 2 %r<br /><br /> アプリケーションの場合: % 3 %r<br /><br /> 外部アカウント: % 4 %r<br /><br /> クライアント ユーザー: %5 |
   
 ## <a name="explanation"></a>説明  
  この Windows アカウントに対するマッピングが検出されましたが、このアプリケーションに対してはパスワード同期が構成されていないため無視されました。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- パスワード同期の構成方法の詳細については、次を参照してください。[パスワード同期](../core/password-synchronization2.md)です。
+ パスワード同期の構成方法の詳細については、次を参照してください。[パスワード同期](../core/password-synchronization2.md)します。

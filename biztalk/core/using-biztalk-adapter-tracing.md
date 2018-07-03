@@ -1,5 +1,5 @@
 ---
-title: BizTalk アダプターのトレースを使用して |Microsoft ドキュメント
+title: BizTalk アダプターのトレースを使用して |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1e14234363ace4b953fa4766a97502753572e6f
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: a1074e2c526efb07597c0bb31dba891d2d6ce951
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "26009211"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012348"
 ---
 # <a name="using-biztalk-adapter-tracing"></a>BizTalk アダプターのトレースの使用
 ここでは、Trace Log tool (トレース ログ ツール) をインストールする方法、および BizTalk アダプターのトレースを可能にする方法について説明します。  
@@ -32,75 +32,75 @@ ms.locfileid: "26009211"
   
 #### <a name="to-install-the-trace-log-tool-tracelogexe"></a>トレース ログ ツール (tracelog.exe) をインストールするには  
   
-1.  トレース ログ ツールを [Microsoft® Windows® Software Development Kit Update for Windows Vista](http://go.microsoft.com/fwlink/?LinkId=128279) Web サイトからダウンロードします。  
+1. トレース ログ ツールを [Microsoft® Windows® Software Development Kit Update for Windows Vista](http://go.microsoft.com/fwlink/?LinkId=128279) Web サイトからダウンロードします。  
   
-    > [!NOTE]
-    >  [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を実行している場合でも、このバージョン (6.0) の SDK をインストールしてください。 インストールする場合、 **Windows SDK の Windows Server 2008 および .NET Framework 3.5** バージョン (v です。 6.1)、トレース ログ ツールはインストールされません。  
+   > [!NOTE]
+   >  [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を実行している場合でも、このバージョン (6.0) の SDK をインストールしてください。 インストールする場合、 **Windows SDK for Windows Server 2008 および .NET Framework 3.5**バージョン (v します。 6.1)、トレース ログ ツールはインストールされません。  
   
-2.  Web ページ下部にある **PSDK-x86.exe** ファイルのリンクをクリックして、 **Microsoft® Windows® Software Development Kit Update for Windows Vista** Web インストール プログラムを起動します。  
+2. Web ページ下部にある **PSDK-x86.exe** ファイルのリンクをクリックして、 **Microsoft® Windows® Software Development Kit Update for Windows Vista** Web インストール プログラムを起動します。  
   
-    > [!NOTE]
-    >  64 ビット版の Windows を使用している場合は、お使いのシステム用の正しいファイルを選択してダウンロードしてください。  
+   > [!NOTE]
+   >  64 ビット版の Windows を使用している場合は、お使いのシステム用の正しいファイルを選択してダウンロードしてください。  
   
-3.  **[Select an Installation Type]** ダイアログ ボックスで、 **[Custom]** インストールを選択し、 **[Next]** をクリックします。  
+3. **[Select an Installation Type]** ダイアログ ボックスで、 **[Custom]** インストールを選択し、 **[Next]** をクリックします。  
   
-4.  既定のインストール先をそのまま使用し、 **[Next]** をクリックします。  
+4. 既定のインストール先をそのまま使用し、 **[Next]** をクリックします。  
   
-5.  **[Custom Installation]** ダイアログ ボックスで、利用可能な機能をすべてオフにします。  
+5. **[Custom Installation]** ダイアログ ボックスで、利用可能な機能をすべてオフにします。  
   
-6.  **[Microsoft Windows Core SDK]** 機能を展開し、 **[Tools]** 機能を展開します。  
+6. **[Microsoft Windows Core SDK]** 機能を展開し、 **[Tools]** 機能を展開します。  
   
-7.  **[Tools (Intel 64-bit)]** 機能を選択し、 **[Will be installed on local hard drive]** をクリックします。  
+7. **[Tools (Intel 64-bit)]** 機能を選択し、 **[Will be installed on local hard drive]** をクリックします。  
   
-8.  **次へ**をクリックし、**次へ**をクリックしてインストールを開始します。  
+8. **次へ**をクリックし、**次へ**をクリックしてインストールを開始します。  
   
-    > [!NOTE]
-    >  **Microsoft® Windows® Software Development Kit Update for Windows Vista** のインストール後、トレース ログ ツールと同時にインストールするよう選択した機能によっては、再起動を求められることがあります。 これは、 **Microsoft® Windows® Software Development Kit Update for Windows Vista** の特定のコンポーネントが、再起動するまで正常に機能しないためです。 トレース ログ ツールを使用するために再起動する必要はありません。  
+   > [!NOTE]
+   >  **Microsoft® Windows® Software Development Kit Update for Windows Vista** のインストール後、トレース ログ ツールと同時にインストールするよう選択した機能によっては、再起動を求められることがあります。 これは、 **Microsoft® Windows® Software Development Kit Update for Windows Vista** の特定のコンポーネントが、再起動するまで正常に機能しないためです。 トレース ログ ツールを使用するために再起動する必要はありません。  
   
 ## <a name="enable-biztalk-adapter-tracing-with-tracecmd"></a>trace.cmd を使用した BizTalk アダプターのトレースの有効化  
   
 #### <a name="to-enable-biztalk-adapter-tracing"></a>BizTalk アダプターのトレースを有効化するには  
   
-1.  コマンド プロンプトでは、BizTalk Server がインストールされているディレクトリに、現在のディレクトリを変更します。 既定では、BizTalk Server がインストールされている、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]ディレクトリ。  インストール パスは、Windows および BizTalk Server の 64 ビット バージョンを使用して場合[!INCLUDE[btsBizTalkServerPathx64](../includes/btsbiztalkserverpathx64-md.md)]です。  
+1. コマンド プロンプトには、BizTalk Server がインストールされているディレクトリに現在のディレクトリを変更します。 既定では、BizTalk Server がインストールされている、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]ディレクトリ。  インストール パスは、Windows と BizTalk Server の 64 ビット バージョンを使用して場合[!INCLUDE[btsBizTalkServerPathx64](../includes/btsbiztalkserverpathx64-md.md)]します。  
   
-2.  次のコマンドを入力し、Enter キーを押します。  
+2. 次のコマンドを入力し、Enter キーを押します。  
   
-     **trace-tools「トレース ログ ツールのパス」ツール**  
+    **トレース - ツール「トレース ログ ツールのパス」**  
   
-     既定では、トレース ログ ツール (tracelog.exe) は **C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin** ディレクトリにあります。 64 ビット版の Windows を使用している場合、トレース ログ ツールは **C:\Program Files (x86)\Microsoft SDKs\Windows\v6.0\Bin**.にあります。  トレース ログ ツールのパスは二重引用符で囲む必要があります。  
+    既定では、トレース ログ ツール (tracelog.exe) は **C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin** ディレクトリにあります。 64 ビット版の Windows を使用している場合、トレース ログ ツールは **C:\Program Files (x86)\Microsoft SDKs\Windows\v6.0\Bin**.にあります。  トレース ログ ツールのパスは二重引用符で囲む必要があります。  
   
-     たとえば、次のコマンドを入力し、ENTER キーを押します。  
+    たとえば、次のコマンドを入力し、ENTER キーを押します。  
   
-     **trace-tools"C:\Program files \microsoft SDKs\Windows\v6.0\Bin"ツール**  
+    **トレース - ツール"C:\Program files \microsoft SDKs\Windows\v6.0\Bin"**  
   
-    > [!NOTE]
-    >  **-tools** スイッチは、Trace.cmd ファイルに Tracelog.exe ファイルの場所を示します。  
-    >   
-    >  コマンドが正常に実行された場合は、次のように出力されます。  
-    >   
-    >  **2.0 - 管理 BizTalk 2006 リリース ビット トレースをトレースします。**  
-    >   
-    >  **設定を"C:\Program files \microsoft SDKs\Windows\v6.0\Bin"TRACE_TOOL_SEARCH_PATH**  
+   > [!NOTE]
+   >  **-tools** スイッチは、Trace.cmd ファイルに Tracelog.exe ファイルの場所を示します。  
+   >   
+   >  コマンドが正常に実行された場合は、次のように出力されます。  
+   >   
+   >  **2.0 - 管理 BizTalk 2006 リリース ビット トレースをトレースします。**  
+   >   
+   >  **設定を"C:\Program files \microsoft SDKs\Windows\v6.0\Bin"TRACE_TOOL_SEARCH_PATH**  
   
 ## <a name="capture-trace-output-with-tracecmd"></a>trace.cmd を使用したトレース出力の取得  
   
 #### <a name="to-capture-trace-output"></a>トレース出力を取得するには  
   
-1.  コマンド プロンプトでは、BizTalk Server がインストールされているディレクトリに、現在のディレクトリを変更します。  
+1. コマンド プロンプトには、BizTalk Server がインストールされているディレクトリに現在のディレクトリを変更します。  
   
-2.  コマンド プロンプトで次のコマンドを入力し、Enter キーを押します。  
+2. コマンド プロンプトで次のコマンドを入力し、Enter キーを押します。  
   
-     **トレースの開始**  
+    **トレースの開始**  
   
-3.  トレース出力を取得するシナリオを再現します。  
+3. トレース出力を取得するシナリオを再現します。  
   
-4.  コマンド プロンプトで次のコマンドを入力し、Enter キーを押します。  
+4. コマンド プロンプトで次のコマンドを入力し、Enter キーを押します。  
   
-     **トレースの停止**  
+    **トレースの停止**  
   
-5.  という名前のバイナリ ファイル、トレースを停止した後**Btstrace.bin** 、フォルダーに生成された場所[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がインストールされています。  
+5. という名前のバイナリ ファイルは、トレースを停止した後**Btstrace.bin** 、フォルダーに生成された場所[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がインストールされています。  
   
-6.  分析のためにマイクロソフト製品サポート サービスに **Btstrace.bin** ファイルを送信します。  
+6. 分析のためにマイクロソフト製品サポート サービスに **Btstrace.bin** ファイルを送信します。  
   
 ## <a name="see-also"></a>参照  
  [アダプターを使用します。](../core/using-adapters.md)   

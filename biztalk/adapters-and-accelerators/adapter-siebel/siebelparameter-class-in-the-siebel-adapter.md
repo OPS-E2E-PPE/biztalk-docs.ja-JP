@@ -1,5 +1,5 @@
 ---
-title: Siebel アダプターの SiebelParameter クラス |Microsoft ドキュメント
+title: Siebel アダプターの SiebelParameter クラス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,63 +16,64 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27df4b207b23cd04f7d29a2a18ec4ab032836e5b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cff2f0f5324dfacd118bc59dccfa524819acaa75
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222490"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37021952"
 ---
 # <a name="siebelparameter-class-in-the-siebel-adapter"></a>Siebel アダプターの SiebelParameter クラス
-[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]提供、`DbParameter`実装を特定のコマンドのパラメーターを指定する ADO.NET クライアントを有効にします。 インスタンスを使用して、`System.Data.Common.DbCommand`のクラス、 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]、クライアント プログラムがのインスタンスを取得できます、`System.Data.Common.DbParameter`クラスです。  
-  
+[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]提供、`DbParameter`特定のコマンドのパラメーターを指定する、ADO.NET クライアントを有効にする実装。 インスタンスを使用して、`System.Data.Common.DbCommand`のクラス、 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]、クライアント プログラムがのインスタンスを取得、`System.Data.Common.DbParameter`クラス。  
+
 ```  
 //In this example, command is an instance of DbCommand  
 DbParameter param = command.CreateParameter();  
 ```  
-  
- また、次のアプローチを使用できます。  
-  
+
+ または、次のアプローチを使用できます。  
+
 ```  
-  
+
 //Here command is an instance of SiebelCommand  
 SiebelParameter param = (SiebelParameter) command.CreateParameter();                  
 param.ParameterName = "@Time";  
 ```  
-  
- `SiebelParameter`クラスから継承`DbParameter`です。  名前空間内に存在する`Microsoft.Data.SiebelClient`です。  
-  
+
+ `SiebelParameter`クラスから継承`DbParameter`します。  名前空間内に存在する`Microsoft.Data.SiebelClient`します。  
+
 ## <a name="supported-properties"></a>サポートされているプロパティ  
  `SiebelParameter`クラスは、次をサポート`DbParameter`*パブリック*プロパティ。  
-  
-|名前|取得/設定|Description|  
-|----------|--------------|-----------------|  
-|**DbType**|Get および Set|パラメーターのデータ型。 参照してください[Siebel の基本的なデータ型](../../adapters-and-accelerators/adapter-siebel/basic-siebel-data-types.md)です。|  
-|**方向**|Get および Set|次の値がサポートされています。<br /><br /> -                     `ParameterDirection.Input`<br /><br /> -                     `ParameterDirection.Output`<br /><br /> -                     `ParameterDirection.InputOutput`|  
-|**IsNullable**|Get および Set|プロパティはサポートされていませんし、呼び出された場合、例外がスローされます。|  
-|**パラメーター名**|Get および Set|[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]パラメーター名を指定する ADO.NET クライアントのこのプロパティをサポートします。|  
-|**値**|Get および Set|[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]文字列としてのパラメーター値を表します。|  
-  
-###  <a name="BKMK_Datatypes"></a>サポートされるデータ型  
- 次の表は、単純な Siebel フィールドの種類を[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]をサポートしています。 カバレッジの詳細を参照してください。 [Siebel の基本データ型](../../adapters-and-accelerators/adapter-siebel/basic-siebel-data-types.md)です。  
-  
-|Siebel のフィールドの種類|.NET 型|XML スキーマの型|  
+
+
+|       名前        |   取得/設定   |                                                                                                            説明                                                                                                            |
+|-------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    **DbType**     | Get と Set |                                               パラメーターのデータ型。 参照してください[基本的な Siebel データ型](../../adapters-and-accelerators/adapter-siebel/basic-siebel-data-types.md)します。                                               |
+|   **[方向]**   | Get と Set | 次の値がサポートされています。<br /><br /> -                     `ParameterDirection.Input`<br /><br /> -                     `ParameterDirection.Output`<br /><br /> -                     `ParameterDirection.InputOutput` |
+|  **IsNullable**   | Get と Set |                                                                               プロパティはサポートされていません、呼び出された場合、例外がスローされます。                                                                               |
+| **ParameterName** | Get と Set |                                  [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] ADO.NET クライアント パラメーター名を指定するには、このプロパティをサポートします。                                  |
+|     **[値]**     | Get と Set |                                                    [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]文字列としてパラメーター値を表します。                                                    |
+
+###  <a name="BKMK_Datatypes"></a> サポートされるデータ型  
+ 次の表に、単純な Siebel フィールドの種類を[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]をサポートしています。 カバレッジの詳細を参照してください。[基本的な Siebel データ型](../../adapters-and-accelerators/adapter-siebel/basic-siebel-data-types.md)します。  
+
+|Siebel のフィールドの種類|.NET Type|XML スキーマの型|  
 |-----------------------|---------------|---------------------|  
 |DTYPE_BOOL|ブール値|xsd:boolean|  
 |DTYPE_CURRENCY|Decimal|xsd:decimal|  
 |DTYPE_DATE|DateTime|xsd:dateTime|  
 |DTYPE_DATETIME|DateTime|xsd:dateTime|  
-|DTYPE_ UTCDATETIME のフィールド|DateTime|xsd:dateTime|  
-|DTYPE_ID|文字列|xsd:string|  
+|DTYPE_ UTCDATETIME|DateTime|xsd:dateTime|  
+|DTYPE_ID|String|xsd:string|  
 |DTYPE_INTEGER|Integer|xsd:int|  
-|DTYPE_NOTE|文字列|xsd:string|  
+|DTYPE_NOTE|String|xsd:string|  
 |DTYPE_NUMBER|Decimal|xsd:decimal|  
-|DTYPE_PHONE|文字列|xsd:string|  
-|DTYPE_TEXT|文字列|xsd:string|  
+|DTYPE_PHONE|String|xsd:string|  
+|DTYPE_TEXT|String|xsd:string|  
 |DTYPE_TIME|DateTime|xsd:dateTime|  
-  
+
 ## <a name="supported-methods"></a>サポートされているメソッド  
- `SiebelParameter`クラスがで特別なメソッドをオーバーライドしていない`DbParameter`です。  
-  
+ `SiebelParameter`クラスが内の特殊なメソッドをオーバーライドしていない`DbParameter`します。  
+
 ## <a name="see-also"></a>参照  
- [Siebel アダプターと ADO.NET インターフェイスを拡張します。](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)
+ [Siebel アダプターを使用した ADO.NET インターフェイスを拡張します。](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)

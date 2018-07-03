@@ -1,5 +1,5 @@
 ---
-title: '手順 2: SWIFTNet の構成を追加、Paramfile FileAct リアルタイム シナリオ |Microsoft ドキュメント'
+title: '手順 2: FileAct リアルタイム シナリオ用に Paramfile に SWIFTNet 構成を追加 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,85 +12,85 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: adad4d98be93e17bef4ab5eeb9e49271ffc94b74
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: f40da4b503a5b29e161b376fc25f535c338f5f42
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963768"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010563"
 ---
-# <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-fileact-real-time-scenario"></a>手順 2: SWIFTNet の構成を追加、Paramfile FileAct リアルタイム シナリオ
-SAG で作成されたサーバー メッセージのパートナーは、これらの値で初期化するために受信者を有効にする SWIFTNet paramfile で指定する必要があります。  
+# <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-fileact-real-time-scenario"></a>手順 2: は、FileAct リアルタイム シナリオ用に Paramfile に SWIFTNet 構成を追加します。
+これらの値で初期化するために受信者を有効にする SWIFTNet に paramfile に SAG で作成したサーバー メッセージのパートナーを指定する必要があります。  
   
- この手順を開始する前に行う必要があります[手順 1: FileAct リアルタイム シナリオでは、SWIFT アダプターを構成する](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario.md)です。  
+ この手順を開始する前に行う必要があります[手順 1: FileAct リアルタイム シナリオ用に SWIFT アダプターを構成する](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario.md)します。  
   
-### <a name="to-add-swiftnet-configuration-to-the-paramfile"></a>Paramfile SWIFTNet 構成を追加するには  
+### <a name="to-add-swiftnet-configuration-to-the-paramfile"></a>Paramfile に SWIFTNet 構成を追加するには  
   
-1.  メモ帳などのテキスト エディターで、paramfile を開きます。  
+1. Paramfile をメモ帳などのテキスト エディターで開きます。  
   
-    > [!NOTE]
-    >  Paramfile がある通常: C:\SWIFTAlliance\RA\Ra1\cfg\paramfile  
+   > [!NOTE]
+   >  位置に paramfile にある通常: C:\SWIFTAlliance\RA\Ra1\cfg\paramfile  
   
-2.  Paramfile では、サーバー メッセージのパートナー名を指定する、強調表示された変更を行います。  
+2. Paramfile では、サーバー メッセージのパートナー名を指定する、強調表示されている変更を行います。  
   
-     username:snlowner  
+    username:snlowner  
   
-     subsystem_name:FileactStub  
+    subsystem_name:FileactStub  
   
-     \#subsystem_group:fileact  
+    \#subsystem_group:fileact  
   
-     \#subsystem_dependency:Support、群  
+    \#subsystem_dependency:Support、Swarm  
   
-     subsystem_nature: 重大  
+    subsystem_nature: 重大  
   
-     subsystem_start:  
+    subsystem_start:  
   
-     **起動"snlreceiver - SagMessagePartner \<fileact RT 用サーバー MessagePartnerName \> -AdapterMode fileact"**  
+    **spawn"snlreceiver - SagMessagePartner \<fileact RT のサーバー MessagePartnerName \> -AdapterMode fileact"**  
   
-     * 終了  
+    * 終了  
   
-     subsystem_stop:  
+    subsystem_stop:  
   
-     * KILL9:snlreceiver  
+    * KILL9:snlreceiver  
   
-     * 終了  
+    * 終了  
   
-     subsystem_status:  
+    subsystem_status:  
   
-     * NB:1:snlreceiver  
+    * NB:1:snlreceiver  
   
-     * 終了  
+    * 終了  
   
-     start_event:SNL001:subsystem FileactStub が稼働  
+    start_event:SNL001:subsystem FileactStub です。  
   
-     stop_event:SNL002:subsystem FileactStub がダウンしています。  
+    stop_event:SNL002:subsystem FileactStub がダウン  
   
-     \#subsystem_name:User  
+    \#subsystem_name:User  
   
-     \## subsystem_group:user  
+    \## subsystem_group:user  
   
-     \## subsystem_dependency:  
+    \## subsystem_dependency:  
   
-     \#subsystem_nature: 重大  
+    \#subsystem_nature: 重大  
   
-     \#subsystem_start:  
+    \#subsystem_start:  
   
-     \#* 終了  
+    \#* 終了  
   
-     \#subsystem_stop:  
+    \#subsystem_stop:  
   
-     \#* 終了  
+    \#* 終了  
   
-     \#subsystem_status:  
+    \#subsystem_status:  
   
-     #<a name="end"></a>* 終了  
+    # <a name="end"></a>* 終了  
   
-     #<a name="starteventsnl001subsystem-user-is-up"></a>ユーザーが稼働 start_event:SNL001:subsystem です。  
+    # <a name="starteventsnl001subsystem-user-is-up"></a>ユーザーが稼働 start_event:SNL001:subsystem です。  
   
-     #<a name="stopeventsnl002subsystem-user-is-down"></a>ユーザーがダウンして stop_event:SNL002:subsystem  
+    # <a name="stopeventsnl002subsystem-user-is-down"></a>ユーザーがダウンして stop_event:SNL002:subsystem  
   
 ## <a name="see-also"></a>参照  
  [FileAct リアルタイム シナリオ](../../adapters-and-accelerators/fileact-interact/fileact-real-time-scenario.md)   
- [手順 1: FileAct リアルタイム シナリオでは、SWIFT のアダプターを構成します。](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario.md)   
- [手順 3: 送信ポートを作成し、FileAct リアルタイムのシナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md)   
+ [手順 1: FileAct リアルタイム シナリオ用に SWIFT アダプターを構成します。](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario.md)   
+ [手順 3: 送信ポートを作成および FileAct リアルタイム シナリオ用の受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md)   
  [手順 4: FileAct リアルタイム エンド ツー エンド シナリオをテストする](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-real-time-end-to-end-scenario.md)

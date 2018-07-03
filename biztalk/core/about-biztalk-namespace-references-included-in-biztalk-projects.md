@@ -1,5 +1,5 @@
 ---
-title: BizTalk プロジェクトに含まれる BizTalk Namespace 参照について |Microsoft ドキュメント
+title: BizTalk プロジェクトに含まれる BizTalk Namespace 参照について |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -24,25 +24,25 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 820e15eb3524713dfd7d3f86311ca262fde191d5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 608f3ebf9a80553749fe5de558c2db05e3c7673d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225178"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37016370"
 ---
 # <a name="about-biztalk-namespace-references-included-in-biztalk-projects"></a>BizTalk プロジェクト内の BizTalk 名前空間参照について
 新しい BizTalk プロジェクトを追加すると、既定で次の名前空間が設定されます。  
   
--   **Microsoft.BizTalk.DefaultPipelines**  
+- **Microsoft.BizTalk.DefaultPipelines**  
   
--   **Microsoft.BizTalk.GlobalPropertySchemas**  
+- **Microsoft.BizTalk.GlobalPropertySchemas**  
   
--   **システム**  
+- **システム**  
   
--   **System.Xml**  
+- **System.Xml**  
   
- また、新しい参照および Web 参照をプロジェクトに追加することもできます。 使用して追加する方法についての参照を**プロジェクト**] メニューの [を参照してください[Visual Studio を使って](../core/using-visual-studio.md)です。 Web 参照を追加する方法については、次を参照してください。 [Web 参照を追加する](../core/adding-web-references.md)です。  
+  また、新しい参照および Web 参照をプロジェクトに追加することもできます。 追加の詳細については参照を使用して、**プロジェクト**] メニューの [を参照してください[Visual Studio を使って](../core/using-visual-studio.md)します。 Web 参照を追加する方法の詳細については、次を参照してください。 [Web 参照を追加する](../core/adding-web-references.md)します。  
   
 > [!CAUTION]
 >  既定の参照は削除しないでください。 既定の参照を削除すると、プロジェクト内の BizTalk アイテムを参照するときに問題が発生する場合があります。 ソリューション エクスプローラーで既定の参照を復元できます。  
@@ -56,6 +56,6 @@ ms.locfileid: "22225178"
   
 -   [Microsoft.BizTalk.GlobalPropertySchemas 参照](../core/microsoft-biztalk-globalpropertyschemas-reference.md)  
   
--   [システムのリファレンス](../core/system-reference.md)  
+-   [System 参照](../core/system-reference.md)  
   
 -   [System.Xml 参照](../core/system-xml-reference.md)

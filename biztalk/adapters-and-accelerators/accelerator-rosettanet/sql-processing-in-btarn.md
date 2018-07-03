@@ -1,5 +1,5 @@
 ---
-title: BTARN での SQL 処理 |Microsoft ドキュメント
+title: BTARN での SQL 処理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,18 +18,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24798038ef7110a87efef2850c7787c066ae9511
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 21255c03a9a9c1f2a30eb7f716c5e1bf285a3c5b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005059"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37000715"
 ---
 # <a name="sql-processing-in-btarn"></a>BTARN での SQL 処理
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]基幹業務 (LOB) アプリケーションからのメッセージをルーティングする、SQL アダプターを使用します。 LOB アプリケーションへのメッセージのルーティングには、SQL 送信ポートが使用されます。  
+Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]基幹業務 (LOB) アプリケーションからのメッセージをルーティングする SQL アダプターを使用します。 LOB アプリケーションへのメッセージのルーティングには、SQL 送信ポートが使用されます。  
   
 ## <a name="message-flow"></a>メッセージ フロー  
- 発信側または応答側コンピューターで、バックエンド LOB アプリケーション メッセージをルーティングしますの MessagesFromLOB テーブル、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]データ[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]データベース。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]MessagesFromLOB テーブルから、プライベート プロセスにメッセージを移動するのにには、SQL アダプタを使用します。 詳細については、BizTalk Server ヘルプの「SQL アダプタ」を参照してください。  
+ バックエンドの LOB アプリケーションがの MessagesFromLOB テーブルにメッセージをルーティング、発信側または応答側コンピュータ、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]データ[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]データベース。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SQL アダプターを使用して、プライベート プロセスに MessagesFromLOB テーブルからメッセージを移動します。 詳細については、BizTalk Server ヘルプの「SQL アダプタ」を参照してください。  
   
  既定の SQL アダプタを使用する代わりに、ファイル アダプタを使用してサービス コンテンツを [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] に送信することもできます。 ファイル アダプタを使用する場合、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] では添付ファイルがサポートされません。  
   

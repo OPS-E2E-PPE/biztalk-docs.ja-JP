@@ -1,5 +1,5 @@
 ---
-title: BizTalk マッパーの有効な XSLT エンコードの種類 |Microsoft ドキュメント
+title: BizTalk マッパーの有効な XSLT エンコードの種類 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,56 +19,56 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 83e8b69de5c60a1701f0989f725d9225633d38ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 874e30f6d1cb56880dc9b15cce9c815305430871
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288018"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012339"
 ---
 # <a name="valid-biztalk-mapper-xslt-encoding-types"></a>BizTalk マッパーでの有効な XSLT エンコードの種類
-BizTalk マッパーは、各種の XSLT (Extensible Stylesheet Language Transformations) エンコードをサポートしています。 使用する、 **XSLT エンコード**グリッド プロパティをエンコードの種類を必要に応じて、XSLT を設定します。 次の一覧に関連付けられているドロップダウン リストで使用できるエンコード形式を示しています、 **XSLT エンコード**グリッドのプロパティ。  
+BizTalk マッパーは、各種の XSLT (Extensible Stylesheet Language Transformations) エンコードをサポートしています。 使用する、 **XSLT エンコード**グリッド プロパティを XSLT エンコードの種類を設定します。 次の一覧に関連付けられているドロップダウン リストで使用できるエンコード形式を示しています、 **XSLT エンコード**グリッドのプロパティ。  
   
--   なし  
+- なし  
   
--   アラビア語 (windows-1256)  
+- アラビア語 (windows-1256)  
   
--   バルト語 (windows-1257)  
+- バルト語 (windows-1257)  
   
--   中央ヨーロッパ言語 (windows-1250)  
+- 中央ヨーロッパ言語 (windows-1250)  
   
--   中国語 (GB18030)  
+- 中国語 (GB18030)  
   
--   キリル語 (windows-1251)  
+- キリル語 (windows-1251)  
   
--   ギリシャ語 (windows-1253)  
+- ギリシャ語 (windows-1253)  
   
--   ヘブライ語 (windows-1255)  
+- ヘブライ語 (windows-1255)  
   
--   日本語 (Shift_JIS)  
+- 日本語 (Shift_JIS)  
   
--   韓国語 (ks_c_5601-1987)  
+- 韓国語 (ks_c_5601-1987)  
   
--   リトル エンディアン Unicode (UTF-16)  
+- リトル エンディアン Unicode (UTF-16)  
   
--   簡体字中国語 (GBK)  
+- 簡体字中国語 (GBK)  
   
--   タイ語 (windows-874)  
+- タイ語 (windows-874)  
   
--   繁体字中国語 (Big5)  
+- 繁体字中国語 (Big5)  
   
--   トルコ語 (windows-1254)  
+- トルコ語 (windows-1254)  
   
--   UTF-8  
+- UTF-8  
   
--   ベトナム語 (windows-1258)  
+- ベトナム語 (windows-1258)  
   
--   西ヨーロッパ言語 (windows-1252)  
+- 西ヨーロッパ言語 (windows-1252)  
   
- 必要なエンコードがこの一覧に含まれていない場合、別のエンコード値を入力できます。 BizTalk マッパーはその値のテストを行わないので、適切な値を入力していることを確認してください。  
+  必要なエンコードがこの一覧に含まれていない場合、別のエンコード値を入力できます。 BizTalk マッパーはその値のテストを行わないので、適切な値を入力していることを確認してください。  
   
 > [!NOTE]
->  **コード ページ**のプロパティ、**スキーマ**ノードがマップで使用するスキーマのエンコード形式を定義します。 構成するのには**コード ページ**プロパティ、スキーマを BizTalk エディターで開きし、値を指定、**コード ページ**プロパティです。  
+>  **コード ページ**のプロパティ、**スキーマ**ノード マップで使用するスキーマのエンコーディング形式を定義します。 構成する、**コード ページ**プロパティ、スキーマを BizTalk エディターで開くしの値を指定、**コード ページ**プロパティ。  
   
 ## <a name="see-also"></a>参照  
  [マップ](../core/maps.md)   

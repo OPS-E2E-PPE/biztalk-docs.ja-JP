@@ -1,5 +1,5 @@
 ---
-title: シングル サインオンの要件 |Microsoft ドキュメント
+title: シングル サインオンの要件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43e54da709384611bffd1e05da6a79decc778e57
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 9045c51470d666906c090b55d6307c9f85d20e0c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015625"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022480"
 ---
 # <a name="requirements-for-single-sign-on"></a>シングル サインオンの要件
 シングル サインオン (SSO) を使用するには、以下のソフトウェアがインストールされている必要があります。  
@@ -30,18 +30,18 @@ ms.locfileid: "24015625"
   
 -   SSO をサポートするサーバー システム  
   
--   分離ホストとして構成しなければならない**信頼されている認証**です。  
+-   分離ホストとして構成する必要があります**信頼されている認証**します。  
   
 ## <a name="enable-sso"></a>SSO を有効にします。  
   
-1.  **トランスポートのプロパティ**ウィンドウで、**はい**の**SSO を使用する**です。  
+1. **トランスポートのプロパティ**ウィンドウで、**はい**の**使用 SSO**。  
   
-2.  トランスポートのプロパティを指定するときに、適切な関連アプリケーションを選択します。  
+2. トランスポートのプロパティを指定するときに、適切な関連アプリケーションを選択します。  
   
- 関連アプリケーションの作成方法の詳細については、次を参照してください。[関連アプリケーションの作成](../core/creating-affiliate-applications4.md)です。  
+   関連アプリケーションの作成方法の詳細については、次を参照してください。[関連アプリケーションを作成する](../core/creating-affiliate-applications4.md)します。  
   
 > [!NOTE]
->  作業を実行した後、SSO を使用して任意の Web 共有フォルダーへのリセットに注意してください**を共有しない**です。 フォルダーが共有されていると、そのフォルダーは使用中と見なされるので、フォルダーを使用しているアプリケーションが正しく更新またはアンインストールされません。  
+>  作業が完了したら、SSO を使用してへの任意の Web 共有フォルダーに戻してください**を共有しない**します。 フォルダーが共有されていると、そのフォルダーは使用中と見なされるので、フォルダーを使用しているアプリケーションが正しく更新またはアンインストールされません。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Adapter for JD Edwards EnterpriseOne のセキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)

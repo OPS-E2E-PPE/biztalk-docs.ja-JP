@@ -1,5 +1,5 @@
 ---
-title: BizTalk エディターを使用して |Microsoft ドキュメント
+title: BizTalk エディターを使用して |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdb293e6255042a46ecef16855d723c38543310c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f1f85fa69e07f252aa732d868353609ed065fbf
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287898"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37007163"
 ---
 # <a name="using-biztalk-editor"></a>BizTalk エディターの使用
 
 ## <a name="overview"></a>概要
-BizTalk エディターは、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] シェルの一部です。 BizTalk エディターの一部の機能は、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] シェルの既存のユーザー インターフェイス要素を利用しています。 たとえば、使用する、**ファイル**、**編集**と**ビュー**と同様のメニュー内で他の開発と[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。 この共通の機能に関する情報はから利用可能な**ヘルプ**メニュー。  
+BizTalk エディターは、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] シェルの一部です。 BizTalk エディターの一部の機能は、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] シェルの既存のユーザー インターフェイス要素を利用しています。 たとえば、使用する、**ファイル**、**編集**と**ビュー**で他の開発の場合と同様のメニューは[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。 この共通の機能についての情報は、**ヘルプ**メニュー。  
   
  BizTalk エディターは、新しいスキーマを BizTalk プロジェクトに追加した場合、BizTalk プロジェクトで既存のスキーマ (.xsd ファイル) を開いた場合、または [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のメイン編集ウィンドウでスキーマのタブをクリックしてスキーマを再アクティブ化した場合にアクティブになります。  
   
@@ -36,19 +36,19 @@ BizTalk エディターは、Microsoft [!INCLUDE[btsVStudioNoVersion](../include
   
  BizTalk エディターは、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] シェルの次のビューと関連するダイアログ ボックスで構成されます。  
   
--   **スキーマ ツリー。** このビューは、メインの左側に[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。 スキーマで定義されるメッセージの構造を示すツリー構造を構築すると、このビューでスキーマがアクティブに作成されます。 スキーマ ツリー ビューでの BizTalk スキーマの表記方法の詳細については、次を参照してください。[スキーマの BizTalk 表記](../core/biztalk-representation-of-schemas.md)です。  
+- **スキーマ ツリー。** このビューは、メインの左側にある[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。 スキーマで定義されるメッセージの構造を示すツリー構造を構築すると、このビューでスキーマがアクティブに作成されます。 スキーマ ツリー ビューでの BizTalk スキーマの表現方法の詳細については、次を参照してください。[スキーマの BizTalk 表記](../core/biztalk-representation-of-schemas.md)します。  
   
--   **XSD を表示します。** このビューは、メインの右側に[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。 スキーマ ツリー ビューに構築されているスキーマを表す XSD (XML Schema Definition ) 言語構造を示します。 このビューは読み取り専用で、作成するスキーマの XSD 構文を理解するためのものです。 必要に応じて、ビューの分割機能を使用して、XSD ビューの表示を調整できます。  
+- **XSD を表示します。** このビューは、メインの右側にある[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。 スキーマ ツリー ビューに構築されているスキーマを表す XSD (XML Schema Definition ) 言語構造を示します。 このビューは読み取り専用で、作成するスキーマの XSD 構文を理解するためのものです。 必要に応じて、ビューの分割機能を使用して、XSD ビューの表示を調整できます。  
   
--   **ソリューション エクスプ ローラー。** このビューは、の右側にある、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]シェルです。 BizTalk プロジェクトと BizTalk プロジェクトに含まれるさまざまな項目が表示されます。 ソリューション エクスプローラーを使用して、新しいスキーマおよび既存のスキーマをプロジェクトに追加したり、プロジェクトの一部であるスキーマを開いたりできます。 たとえば、新しいスキーマを作成するソリューション エクスプ ローラー ウィンドウで、BizTalk プロジェクトを右クリックし、をクリックして**追加**をクリックして**新しい項目の**、しを使用して、**新しい項目の追加**ダイアログボックス名前を指定し、新しいスキーマを作成します。  
+- **ソリューション エクスプ ローラー。** このビューが右側にあるは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]シェルです。 BizTalk プロジェクトと BizTalk プロジェクトに含まれるさまざまな項目が表示されます。 ソリューション エクスプローラーを使用して、新しいスキーマおよび既存のスキーマをプロジェクトに追加したり、プロジェクトの一部であるスキーマを開いたりできます。 たとえば、新しいスキーマを作成するソリューション エクスプ ローラー ウィンドウで、BizTalk プロジェクトを右クリックし、 をクリックして**追加**、 をクリックして**新しい項目の**、しを使用して、**新しい項目の追加**ダイアログ新しいスキーマを作成して名前をボックスです。  
   
--   [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]  **プロパティ ウィンドウ。** : このビューを使用して、ほとんどのスキーマ プロパティおよびノード プロパティの確認および設定を行います。 スキーマ ツリー ビューのノードまたは [ソリューション エクスプローラー] ウィンドウのスキーマを選択すると、ノードやスキーマに対応するプロパティが標準の Visual Studio パラダイムで [プロパティ] ウィンドウに表示されます。 たとえば、プロパティは、カテゴリごとにグループ化されていたり、カテゴリ順またはアルファベット順に従って表示されたりします。 異なる種類のノード、または、スキーマが選択されているときに使用できるプロパティの異なるセットの詳細については、次を参照してください。、**スキーマ プロパティのリファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+- [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]  **プロパティ ウィンドウ。** : このビューを使用して、ほとんどのスキーマ プロパティおよびノード プロパティの確認および設定を行います。 スキーマ ツリー ビューのノードまたは [ソリューション エクスプローラー] ウィンドウのスキーマを選択すると、ノードやスキーマに対応するプロパティが標準の Visual Studio パラダイムで [プロパティ] ウィンドウに表示されます。 たとえば、プロパティは、カテゴリごとにグループ化されていたり、カテゴリ順またはアルファベット順に従って表示されたりします。 異なるさまざまな種類のノード、または、スキーマが選択されているときに使用できるプロパティのセットの詳細については、次を参照してください。、**スキーマ プロパティのリファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
- これらのビュー以外にも、いくつかのダイアログ ボックスを使用できます。 通常、このようなダイアログ ボックスは、コレクションなど複雑なプロパティを編集する場合に使用します。  
+  これらのビュー以外にも、いくつかのダイアログ ボックスを使用できます。 通常、このようなダイアログ ボックスは、コレクションなど複雑なプロパティを編集する場合に使用します。  
   
- このセクションでは、BizTalk エディターで使用できるビュー、コマンド、およびショートカット キーに関する情報について説明します。  
+  このセクションでは、BizTalk エディターで使用できるビュー、コマンド、およびショートカット キーに関する情報について説明します。  
   
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
   
 -   [スキーマ ツリー ビューを管理する方法](../core/how-to-manage-the-schema-tree-view.md)  
   
@@ -56,8 +56,8 @@ BizTalk エディターは、Microsoft [!INCLUDE[btsVStudioNoVersion](../include
   
 -   [[プロパティ] ウィンドウを管理する方法](../core/how-to-manage-the-properties-window.md)  
   
--   [その他の Visual Studio のウィンドウを管理する方法](../core/how-to-manage-other-visual-studio-windows.md)  
+-   [その他の Visual Studio の Windows を管理する方法](../core/how-to-manage-other-visual-studio-windows.md)  
   
--   [BizTalk エディター コマンドの使用](../core/using-biztalk-editor-commands.md)  
+-   [BizTalk エディター コマンドを使用します。](../core/using-biztalk-editor-commands.md)  
   
 -   [大きなスキーマの操作](../core/working-with-large-schemas.md)

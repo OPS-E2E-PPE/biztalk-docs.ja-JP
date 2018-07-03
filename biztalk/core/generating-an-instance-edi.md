@@ -1,5 +1,5 @@
 ---
-title: インスタンス (EDI) の生成 |Microsoft ドキュメント
+title: インスタンスの生成 (EDI) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5696d1590859469b10def4a42c955ff098819d8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 82674b175ad1c408b6ddb9f7823427a550288e96
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22247418"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36999299"
 ---
 # <a name="generating-an-instance-edi"></a>インスタンスの生成 (EDI)
 デザイン時に、EDI スキーマからメッセージ インスタンスを生成できます。 それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。  
@@ -35,69 +35,69 @@ ms.locfileid: "22247418"
   
 ### <a name="to-generate-an-instance-of-a-batched-interchange"></a>バッチ化されたインターチェンジのインスタンスを生成するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロジェクトを開きます。 ソリューション エクスプローラーで、プロジェクトに、メッセージ インスタンスに含めるトランザクション セットの種類ごとに 1 つのメッセージ スキーマを追加します。 エンコードの種類に応じたバッチ スキーマ (Edifact_BatchSchema.xsd または X12_BatchSchema.xsd) をプロジェクトに追加します。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロジェクトを開きます。 ソリューション エクスプローラーで、プロジェクトに、メッセージ インスタンスに含めるトランザクション セットの種類ごとに 1 つのメッセージ スキーマを追加します。 エンコードの種類に応じたバッチ スキーマ (Edifact_BatchSchema.xsd または X12_BatchSchema.xsd) をプロジェクトに追加します。  
   
-    > [!NOTE]
-    >  バッチ スキーマは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI フォルダーにあります。  
+   > [!NOTE]
+   >  バッチ スキーマは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI フォルダーにあります。  
+   > 
+   > [!NOTE]
+   >  インスタンスを生成する際にプロジェクトをビルドする必要はありません。  
   
-    > [!NOTE]
-    >  インスタンスを生成する際にプロジェクトをビルドする必要はありません。  
+2. ソリューション エクスプ ローラーで、バッチ スキーマを右クリックし、をクリックし、**プロパティ**します。  
   
-2.  ソリューション エクスプ ローラーで、バッチ スキーマを右クリックし、をクリックして**プロパティ**です。  
+3. **プロパティ**ウィンドウで、設定**インスタンスの出力の種類の生成**に**ネイティブ**または**XML**します。 選択**ネイティブ**.txt 拡張子を持つフラット ファイルの生成を求められます。 選択**XML** XML ファイルの生成を求められます。  
   
-3.  **プロパティ**ウィンドウで、設定**インスタンスの出力の種類の生成**に**ネイティブ**または**XML**です。 選択すると**ネイティブ**.txt 拡張子を持つフラット ファイルの生成を求められます。 選択すると**XML**の XML ファイルが生成されます。  
+4. **出力インスタンス ファイル名**名前を入力、またはファイルを参照し、ファイルを選択します。  
   
-4.  **出力インスタンス ファイル名**名前を入力、またはファイルを参照し、ファイルを選択します。  
+   > [!NOTE]
+   >  出力インスタンス ファイル名の値を入力しない場合、ファイル名が自動的に選択されます。 ファイル名は [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の [出力] ウィンドウに表示されます。  
+   > 
+   > [!NOTE]
+   >  既存のファイルを選択した場合、既存のファイルの内容が、この操作によって生成された内容で置き換えられます。  
   
-    > [!NOTE]
-    >  出力インスタンス ファイル名の値を入力しない場合、ファイル名が自動的に選択されます。 ファイル名は [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の [出力] ウィンドウに表示されます。  
+5. バッチ スキーマを右クリックし、をクリックし、**インスタンスの生成**します。  
   
-    > [!NOTE]
-    >  既存のファイルを選択した場合、既存のファイルの内容が、この操作によって生成された内容で置き換えられます。  
+6. **EDI インスタンスのプロパティ**ダイアログ ボックスで、クリックして、そのインスタンスで使用する区切り記号、識別子、およびその他の構成のオプション、選択**OK**します。  
   
-5.  バッチ スキーマを右クリックし、をクリックして**インスタンスの生成**です。  
+7. 操作が成功したことを確認、**出力**ウィンドウ。  
   
-6.  **EDI インスタンスのプロパティ**ダイアログ ボックスで、そのインスタンスで使用して、をクリックする、区切り記号、識別子、およびその他の構成オプションを選択**OK**です。  
+8. ファイルを表示するには、キーを押して**コントロール**のリンクをクリックし、**出力**ウィンドウ。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の [BizTalk エディター] ウィンドウにファイルの内容が表示されます。  
   
-7.  操作が成功したことを確認、**出力**ウィンドウです。  
-  
-8.  ファイルを表示するには、キーを押して**コントロール**でリンクをクリックし、**出力**ウィンドウです。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の [BizTalk エディター] ウィンドウにファイルの内容が表示されます。  
-  
-    > [!NOTE]
-    >  837I、837D、または 837P を含むインスタンスを生成すると、GS08 の値は誤って 00401 に設定されます。 詳細については、次を参照してください。[に関する既知の問題の EDI ソリューションで XML ツールの使用と](../core/known-issues-with-xml-tools-used-with-edi-solutions.md)です。  
+   > [!NOTE]
+   >  837I、837D、または 837P を含むインスタンスを生成すると、GS08 の値は誤って 00401 に設定されます。 詳細については、次を参照してください。 [EDI ソリューションで XML ツールの使用に関する既知の問題](../core/known-issues-with-xml-tools-used-with-edi-solutions.md)します。  
   
 ### <a name="to-generate-an-instance-of-a-transaction-set"></a>トランザクション セットのインスタンスを生成するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロジェクトを開きます。 インスタンスを生成するトランザクション セットの種類に応じたスキーマを追加します。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロジェクトを開きます。 インスタンスを生成するトランザクション セットの種類に応じたスキーマを追加します。  
   
-    > [!NOTE]
-    >  トランザクション セットのインスタンスを生成する際に、プロジェクトにバッチ スキーマを追加する必要はありません。  
+   > [!NOTE]
+   >  トランザクション セットのインスタンスを生成する際に、プロジェクトにバッチ スキーマを追加する必要はありません。  
   
-    > [!NOTE]
-    >  インスタンスを生成する際にプロジェクトをビルドする必要はありません。  
+   > [!NOTE]
+   >  インスタンスを生成する際にプロジェクトをビルドする必要はありません。  
   
-2.  ソリューション エクスプ ローラーで、メッセージ スキーマを右クリックし、をクリックして**プロパティ**です。  
+2. ソリューション エクスプ ローラーで、メッセージ スキーマを右クリックし、をクリックし、**プロパティ**します。  
   
-3.  [プロパティ] ウィンドウで次のように設定します。**インスタンスの出力の種類の生成**に**ネイティブ**または**XML**です。 選択すると**ネイティブ**.txt 拡張子を持つフラット ファイルの生成を求められます。 選択すると**XML**の XML ファイルが生成されます。  
+3. [プロパティ] ウィンドウで次のように設定します。**インスタンスの出力の種類の生成**に**ネイティブ**または**XML**します。 選択**ネイティブ**.txt 拡張子を持つフラット ファイルの生成を求められます。 選択**XML** XML ファイルの生成を求められます。  
   
-4.  **出力インスタンス ファイル名**名前を入力、またはファイルを参照し、ファイルを選択します。  
+4. **出力インスタンス ファイル名**名前を入力、またはファイルを参照し、ファイルを選択します。  
   
-    > [!NOTE]
-    >  出力インスタンス ファイル名の値を入力しない場合、ファイル名が自動的に選択されます。 ファイル名が表示されます、**出力**のウィンドウ[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
+   > [!NOTE]
+   >  出力インスタンス ファイル名の値を入力しない場合、ファイル名が自動的に選択されます。 ファイル名が表示されます、**出力**のウィンドウ[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
+   > 
+   > [!NOTE]
+   >  既存のファイルを選択した場合、既存のファイルの内容が、この操作によって生成された内容で置き換えられます。  
   
-    > [!NOTE]
-    >  既存のファイルを選択した場合、既存のファイルの内容が、この操作によって生成された内容で置き換えられます。  
+5. メッセージ スキーマを右クリックし、をクリックし、**インスタンスの生成**します。  
   
-5.  メッセージ スキーマを右クリックし、をクリックして**インスタンスの生成**です。  
+6. **EDI インスタンスのプロパティ**ダイアログ ボックスで、構成オプションをクリックしたこと、選択**OK**します。  
   
-6.  **EDI インスタンスのプロパティ** ダイアログ ボックスで、構成オプションを選択して、をクリックして**OK**です。  
+7. 内のメッセージがあることを確認、**出力**操作が成功したことを示すウィンドウです。  
   
-7.  内のメッセージがあることを確認、**出力**操作が成功したことを示すウィンドウです。  
-  
-8.  ファイルを表示するには、キーを押して**コントロール**出力 ウィンドウで、リンクをクリックします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の [BizTalk エディター] ウィンドウにファイルの内容が表示されます。  
+8. ファイルを表示するには、キーを押して**コントロール**出力ウィンドウ内のリンクをクリックします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の [BizTalk エディター] ウィンドウにファイルの内容が表示されます。  
   
 9. 機能 EDI メッセージを作成する場合は、テキスト エディターで、メッセージにインターチェンジ ヘッダーとグループ ヘッダーを追加します。  
   
 ## <a name="see-also"></a>参照  
  [デザイン時 XML ツールを使用します。](../core/using-design-time-xml-tools.md)   
- [インスタンス (EDI) の検証](../core/validating-an-instance-edi.md)
+ [インスタンスの検証 (EDI)](../core/validating-an-instance-edi.md)

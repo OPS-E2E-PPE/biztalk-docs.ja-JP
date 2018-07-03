@@ -1,5 +1,5 @@
 ---
-title: SAP アプリケーションのセキュリティ保護 |Microsoft ドキュメント
+title: SAP アプリケーションのセキュリティ保護 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,32 +14,32 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 49f5fe75acf7b033d0f957c7742f52ba521bdde7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dade1433b0bd432b53e48da86d53d23be7512de7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216298"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37005787"
 ---
 # <a name="secure-your-sap-applications"></a>SAP アプリケーションのセキュリティ保護します。
-SAP システムは、お客様のアカウント詳細などの機密性の高いビジネス情報を含めることができます。 使用するアプリケーション、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]にアクセスして、この情報を変更するいずれかのローカルまたは分散ネットワーク経由で公開される可能性が誤ってに不正のアクターによってアクセスする作業はに対して保護して、中にデータをセキュリティで保護しない限り、転送します。 データ保護およびセキュリティは、通常と考えるは次の用語で。  
+SAP システムは、顧客アカウントの詳細などの機密性の高いビジネス情報を含めることができます。 使用するアプリケーション、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]にアクセスして、この情報を変更するいずれかまたは分散ネットワーク経由でローカルにキーが誤って公開、不正なアクターによってアクセス中にデータをセキュリティで保護する取り組みが行われた場合を除き、転送します。 データ保護とセキュリティは、通常と考えられるので、次の用語。  
   
--   *承認*要求者の身元に基づいて、リソースへのアクセスを制御します。  
+- *承認*要求元の id に基づいてリソースへのアクセスを制御します。  
   
--   *認証*要求者の身元を確認するためのメカニズムを提供します。  
+- *認証*要求者の id を検証するためのメカニズムを提供します。  
   
--   *データの機密性*暗号化によるデータのプライバシーを保護するためのメカニズムを提供します。  
+- *データの機密性*暗号化を通じてデータのプライバシーを保護するためのメカニズムを提供します。  
   
--   *データの整合性*受信側が、データがされていないことを確認することができます、データのデジタル署名するメカニズムを提供、転送中に変更します。  
+- *データの整合性*データのデジタル署名するためのメカニズムを提供、受信側が、データの有効期限がされていないことを確認することができます、転送中に変更します。  
   
- このセクションのトピックでは、向上に役立つガイドラインで開発したソリューションのセキュリティを提供、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
+  このセクションのトピックで説明に役立つガイドラインで開発したソリューションをセキュリティで保護された、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [SAP システムとアダプター間のセキュリティ](../../adapters-and-accelerators/adapter-sap/security-between-the-sap-system-and-the-adapter.md)
+-   [SAP システムとアダプターの間のセキュリティ](../../adapters-and-accelerators/adapter-sap/security-between-the-sap-system-and-the-adapter.md)
   
 -   [SAP アダプターと BizTalk Server でのセキュリティ](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md)
   
--   [SAP アダプターをセキュリティで保護された使用したプログラミング](../../adapters-and-accelerators/adapter-sap/secure-programming-with-the-sap-adapter.md)
+-   [SAP アダプターを使用した安全なプログラミング](../../adapters-and-accelerators/adapter-sap/secure-programming-with-the-sap-adapter.md)
   
 -   [SAP アダプターをセキュリティで保護するベスト プラクティス](../../adapters-and-accelerators/adapter-sap/best-practices-to-secure-the-sap-adapter.md)

@@ -1,5 +1,5 @@
 ---
-title: IMetadataRetrievalContract を使用して SAP のメタデータの取得 |Microsoft ドキュメント
+title: IMetadataRetrievalContract を使用して sap メタデータの取得 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,58 +17,58 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efa36eee26dd9467a71f7e8dd4d28d2e37e26606
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d9ff0828635b16cfc94d134f17e5210a255e862a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22218274"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37007467"
 ---
-# <a name="get-metadata-in-sap-using-imetadataretrievalcontract"></a>IMetadataRetrievalContract を使用して SAP のメタデータを取得します。
-[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]公開、 **IMetadataRetrievalContract**は Web サービス記述言語 (WSDL) ドキュメントの形式でメタデータを取得して SAP システムのアイテムを検索および参照を使用できるエンドポイント操作です。  
+# <a name="get-metadata-in-sap-using-imetadataretrievalcontract"></a>IMetadataRetrievalContract を使用して sap メタデータを取得します。
+[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]公開、 **IMetadataRetrievalContract**SAP システムのアイテムを検索および参照して、Web サービス記述言語 (WSDL) ドキュメントの形式でメタデータを取得するを使用するエンドポイント操作です。  
   
- **IMetadataRetrievalContract**インターフェイスは、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]とメタデータの参照、検索、および検索の機能を提供します。 加え、 **IMetadataRetrievalContract** 、インターフェイス、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]公開、 **MetadataRetrievalClient**インターフェイスを実装するクラス。 使用するか、 **IMetadataRetrievalContract**チャネルまたは**MetadataRetrievalClient**を使用するメタデータ; 参照、検索、およびメタデータを取得する公開されたメソッドは各ケースで同じです。  
+ **IMetadataRetrievalContract**インターフェイスによって実装されます、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]とメタデータの参照、検索、および検索機能を提供します。 加え、 **IMetadataRetrievalContract** 、インターフェイス、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]公開、 **MetadataRetrievalClient**クラス、インターフェイスを実装します。 いずれかを使用することができます、 **IMetadataRetrievalContract**チャネルまたは**MetadataRetrievalClient**を使用するメタデータ参照、検索、およびメタデータを取得する公開されたメソッドはいずれの場合も同じです。  
   
- 次のセクションでは、使用する方法に関する情報を提供する、 **IMetadataRetrievalContract**インターフェイスです。  
+ 次のセクションでは、使用する方法に関する情報を提供する、 **IMetadataRetrievalContract**インターフェイス。  
   
 ## <a name="the-imetadataretrievalcontract-interface"></a>IMetadataRetrievalContract インターフェイス  
- 次の表を使用するときに使用される重要なクラスに関する情報を提供する、 **IMetadataRetrievalContract**インターフェイスです。  
+ 次の表を使用するときに使用される重要なクラスに関する情報を提供する、 **IMetadataRetrievalContract**インターフェイス。  
   
-|クラスまたはインターフェイス|Description|  
+|クラスまたはインターフェイス|説明|  
 |------------------------|-----------------|  
-|**IMetadataRetrievalContract**インターフェイス<br /><br /> (Microsoft.ServiceModel.Channels)|定義、**参照**、**検索**、および**GetMetadata**メソッドです。 いずれかを使用してこれらのメソッドを呼び出す、 **IMetadataRetrievalContract**チャネルまたは**MetadataRetrievalClient**アダプター メタデータを使用します。|  
-|**MetadataRetrievalClient**クラス<br /><br /> (Microsoft.ServiceModel.Channels)|実装して、 **IMetadataRetrievalContract**インターフェイスです。 このクラスのインスタンスを作成し、提供することで、SAP システムのように構成することができます、 **SAPBinding**と**EndpointAddress**です。 メタデータを使用するには、そのメソッドを呼び出すことができます。|  
-|**MetadataRetrievalNode**クラス<br /><br /> (Microsoft.ServiceModel.Channels)|アダプター メタデータのノードを表します。 **参照**と**検索**メソッドには、この種類のノードが返されます、 **GetMetadata**メソッドには、パラメーターとしてこの型のノードです。|  
-|**ServiceDescription**クラス<br /><br /> (System.Web.Services.Description)|作成および有効な WSDL ドキュメント ファイルの書式設定する手段を提供します。 **GetMetadata**メソッドを返します、 **ServiceDescription**オブジェクト。|  
+|**IMetadataRetrievalContract**インターフェイス<br /><br /> (Microsoft.ServiceModel.Channels)|定義、**参照**、**検索**、および**GetMetadata**メソッド。 いずれかを使用してこれらのメソッドを呼び出す、 **IMetadataRetrievalContract**チャネルまたは**MetadataRetrievalClient**アダプター メタデータを操作します。|  
+|**MetadataRetrievalClient**クラス<br /><br /> (Microsoft.ServiceModel.Channels)|実装、 **IMetadataRetrievalContract**インターフェイス。 このクラスのインスタンスを作成し、提供することで、SAP システム用に構成することができます、 **SAPBinding**と**EndpointAddress**します。 メタデータを使用するには、そのメソッドを呼び出すことができます。|  
+|**MetadataRetrievalNode**クラス<br /><br /> (Microsoft.ServiceModel.Channels)|アダプター メタデータのノードを表します。 **参照**と**検索**メソッドは、この型のノードを返す、 **GetMetadata**メソッドはこの型をパラメーターとしてのノードを受け取ります。|  
+|**ServiceDescription**クラス<br /><br /> (System.Web.Services.Description)|作成および有効な WSDL ドキュメントのファイルを書式設定の手段を提供します。 **GetMetadata**メソッドを返します。 を**ServiceDescription**オブジェクト。|  
   
- 詳細については、 **IMetadataRetrievalContract** 、インターフェイス、 **MetadataRetrievalClient**クラス、および**MetadataRetrievalNode**クラスは、を参照してください**Microsoft.ServiceModel.Channels**での参照をマネージ[http://go.microsoft.com/fwlink/?LinkId=105566](http://go.microsoft.com/fwlink/?LinkId=105566)です。  
+ 詳細については、 **IMetadataRetrievalContract** 、インターフェイス、 **MetadataRetrievalClient**クラス、および**MetadataRetrievalNode**クラスは、を参照してください**Microsoft.ServiceModel.Channels**に関する管理リファレンスに[ http://go.microsoft.com/fwlink/?LinkId=105566](http://go.microsoft.com/fwlink/?LinkId=105566)します。  
   
-### <a name="metadata-node-ids"></a>メタデータのノード Id  
- アダプターは、ノードの階層ツリーとしてそのメタデータを整理します。 このツリー構造内では、メタデータのノードの 2 つの種類があります。  
+### <a name="metadata-node-ids"></a>メタデータ ノード Id  
+ アダプターは、ノードの階層ツリーとしてのメタデータを整理します。 このツリー構造内では、メタデータのノードの 2 つの種類があります。  
   
--   **操作のノード**SAP アイテムで、アダプターを表示する操作を表します。 操作のノードは、ツリーのリーフです。  
+- **操作のノード**SAP アイテムで、アダプターを表示する操作を表します。 操作のノードでは、ツリーのリーフです。  
   
--   **カテゴリ ノード**アダプターでの操作に SAP アイテムと直接対応しない SAP アイテムのグループを表します。 カテゴリのノードがツリーの分岐その他のカテゴリ ノードおよび操作のノードが含まれます。 たとえば、RFC 機能グループまたは SAP ビジネス オブジェクトは、カテゴリのノードとして表されます。  
+- **カテゴリ ノード**アダプターでの操作に SAP アイテムと直接対応しない SAP アイテムのグループを表します。 カテゴリのノードは、ツリーの分岐その他のカテゴリ ノードやノードの操作が含まれます。 たとえば、RFC 機能グループまたは SAP ビジネス オブジェクトは、カテゴリのノードとして表されます。  
   
- アダプター メタデータの各ノードが一意のノード ID で識別されます。 メタデータのノード、アダプターによって公開される Id の詳細については、次を参照してください。[メタデータのノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)です。 これらのノード Id を使用して使用すると、ターゲット SAP アイテムを指定する、 **IMetadataRetrievalContract**インターフェイスを参照、検索、およびメタデータを取得します。 定義されている定数を使用することができます`Microsoft.Adapters.SAP.SAPAdapterConstants.MetadataConstants`と`Microsoft.Adapters.SAP.SAPAdapterConstants.ActionConstants`メタデータ ノード Id を構築するためです。  
+  アダプター メタデータの各ノードは、一意のノード ID によって識別されます。 メタデータ ノード Id のアダプターの詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)します。 これらのノード Id を使用して、使用するときに、SAP アイテムのターゲットを指定する、 **IMetadataRetrievalContract**参照、検索、およびメタデータを取得するインターフェイス。 定義された定数を使用する`Microsoft.Adapters.SAP.SAPAdapterConstants.MetadataConstants`と`Microsoft.Adapters.SAP.SAPAdapterConstants.ActionConstants`メタデータ ノード Id を作成するお手伝いをします。  
   
 ### <a name="binding-properties"></a>バインドのプロパティ  
- 使用するかどうか、 **IMetadataRetrievalContract**チャネルまたは**IMetadataRetrievalClient**メタデータを使用する必要がありますを指定する、 **SAPBinding**を作成する場合、インスタンス。  
+ 使用するかどうか、 **IMetadataRetrievalContract**チャネルまたは**IMetadataRetrievalClient**メタデータを使用することを指定する必要があります、 **SAPBinding**を作成すると、インスタンス。  
   
  アダプターがメタデータを生成する方法に影響を与えるいくつかのバインド プロパティがあります。 これらのプロパティは次のとおりです。  
   
--   **GenerateFlatfileCompatibleIdocSchema**  
+- **GenerateFlatfileCompatibleIdocSchema**  
   
--   **ReceiveIDocFormat**  
+- **receiveIDocFormat**  
   
--   **EnableSafeTyping**  
+- **EnableSafeTyping**  
   
--   **FlatFileSegmentIndicator**  
+- **flatFileSegmentIndicator**  
   
- メタデータの取得オブジェクトを開く前に、アプリケーションに必要な値をこれらのバインディング プロパティを設定することを確認する必要があります。 SAP アダプターのバインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。  
+  これらのバインドのプロパティがメタデータの取得オブジェクトを開く前に、アプリケーションに必要な値に設定されているを確認してください。 SAP アダプターのバインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
 ### <a name="browsing-metadata-nodes"></a>メタデータのノードを参照  
- 使用する、**参照**を親ノードに含まれているすべてのメタデータのノードを返すメソッド。 次の例は、SAP システムでは、最初の 3 つの RFC 機能グループの参照します。 この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。  
+ 使用する、**参照**を親ノードに含まれているすべてのメタデータのノードを返すメソッド。 次の例は、SAP システムでは、最初の 3 つの RFC 機能グループの参照します。 この例で**クライアント**のインスタンスである**MetadataRetrievalClient**します。  
   
 ```  
 // The first parameter is the node ID.   
@@ -78,10 +78,10 @@ IMetadataRetrievalNode[] nodes = client.Browse(Microsoft.Adapters.SAP.SAPAdapter
 ```  
   
 > [!IMPORTANT]
->  カテゴリのノードを参照することができますのみ操作のノードを参照することはできません。  
+>  カテゴリのノードのみを参照できます。操作のノードを参照することはできません。  
   
 ### <a name="searching-for-metadata-nodes"></a>メタデータのノードの検索  
- 使用する、**検索**の親ノードに含まれるノードの検索を実行するメソッド。 アスタリスクを指定することができます (\*) ワイルドカード文字です。 この文字は、0 個以上の文字と一致します。 次の例は、文字列"BAPI"が含まれるすべての Rfc の検索を示しています。 この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。  
+ 使用する、**検索**親ノードが格納されているノードの検索を実行するメソッド。 アスタリスクを指定することができます (\*) ワイルドカード文字です。 この文字は、0 個以上の文字と一致します。 次の例では、文字列"BAPI"が含まれるすべての Rfc の検索を示します。 この例で**クライアント**のインスタンスである**MetadataRetrievalClient**します。  
   
 ```  
 // Search for all nodes that contain "BAPI" under the RFC node.  
@@ -91,10 +91,10 @@ IMetadataRetrievalNode[] nodes = client.Search(Microsoft.Adapters.SAP.SAPAdapter
 ```  
   
 > [!IMPORTANT]
->  検索は、限られた一連のノードでのみサポートされます。 検索式でサポートされているワイルドカード文字および検索がサポートされているノードに関する詳細については、次を参照してください。[メタデータのノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)です。  
+>  検索は限られた一連のノードでのみサポートします。 検索式でサポートされているワイルドカード文字および検索がサポートされているノードに関する詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)します。  
   
 ### <a name="retrieving-metadata-wsdl-for-operations"></a>操作のメタデータ (WSDL) を取得します。  
- 使用する、 **GetMetadata**操作のノードのグループに対するサービスの説明 (WSDL ドキュメント) を取得します。 次の例では、BAPI_TRANSACTION_COMMIT RFC のサービスの説明を取得します。 この例では**クライアント**のインスタンスは、 **MetadataRetrievalClient**です。 操作ノードのノードの ID がその操作の操作のメッセージと同じことに注意してください。  
+ 使用する、 **GetMetadata**操作のノードのグループのサービスの説明 (WSDL ドキュメント) を取得します。 次の例では、BAPI_TRANSACTION_COMMIT RFC のサービスの説明を取得します。 この例で**クライアント**のインスタンスである**MetadataRetrievalClient**します。 ノードの操作のノード ID がその操作のメッセージ アクションと同じことに注意してください。  
   
 ```  
 // Get a WSDL document that specifies a contract that contains the  
@@ -108,12 +108,12 @@ System.Web.Services.Description.ServiceDescription description = client.GetMetad
 ```  
   
 > [!IMPORTANT]
->  内の操作のノードを指定する必要がありますのみ、 **GetMetadata**メソッドです。  
+>  内の操作のノードのみを指定する必要があります、 **GetMetadata**メソッド。  
   
-### <a name="using-a-metadataretrievalclient"></a>使用して、MetadataRetrievalClient  
- 作成と使用、 **MetadataRetrievalClient**他の WCF クライアントは、ほぼ同じです。 エンドポイントとのインスタンスを指定して、クライアントを作成する**SAPBinding**です。 構成で宣言またはコードで強制的に、これを行うことができます。 次のメソッドを呼び出し、 **MetadataRetrievalClient**を参照するには、検索、およびアダプターからメタデータを取得します。  
+### <a name="using-a-metadataretrievalclient"></a>MetadataRetrievalClient を使用します。  
+ 作成と使用、 **MetadataRetrievalClient**他の WCF クライアントをほぼ同じです。 エンドポイントとのインスタンスを指定してクライアントを作成する**SAPBinding**します。 構成で宣言またはコードで強制的に、これを行うことができます。 メソッドを呼び出して、 **MetadataRetrievalClient**を参照するには、検索、およびアダプターからメタデータを取得します。  
   
- 次の例を使用する方法を示しています、 **MetadataRetrievalClient**を参照するには、検索、およびメタデータを取得、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
+ 次の例は、使用する方法を示します、 **MetadataRetrievalClient**を参照するには、検索、およびメタデータを取得、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
 ```  
 using System;  
@@ -214,7 +214,7 @@ namespace SapMetaDataBrowseClient
 }  
 ```  
   
- 次のコンソールでこのプログラムの出力は、次に示します。 それぞれのメソッドに返されるメタデータの取得のノードの構造を確認できます。 プログラムは、また、ファイルを検索によって返されるノードで構成されるサービス コントラクトを説明する WSDL ドキュメントを書き込みます。 (ほとんどの SAP インストールでは、サービスの説明が含まれません、BAPI_TRANSACTION_COMMIT および BAPI_TRANSACTION_ROLLBACK 操作します。)  
+ 次は、コンソールでこのプログラムの出力を示します。 各メソッドに対して返されるメタデータ取得のノードの構造を確認できます。 プログラムはまた、ファイルに、検索によって返されるノードで構成されるサービス コントラクトを記述する WSDL ドキュメントを書き込みます。 (ほとんどの SAP インストールでは、サービスの説明が含まれます、BAPI_TRANSACTION_COMMIT および BAPI_TRANSACTION_ROLLBACK 操作には。)  
   
 ```  
 Browse results for the root node:  
@@ -275,7 +275,7 @@ NodeId = http://Microsoft.LobServices.Sap/2007/03/Rfc/BAPI_TRANSACTION_ROLLBACK
   
 ```  
   
-## <a name="using-an-imetadataretrievalcontract-channel"></a>IMetadataRetrievalContract チャネルを使用します。  
+## <a name="using-an-imetadataretrievalcontract-channel"></a>IMetadataRetrievalContract チャネルを使用してください。  
  作成することも、 **IMetadataRetrievalContract**チャネルし、このチャネルを使用して、参照、検索、およびアダプターからメタデータを取得します。 (メソッドのシグネチャが同じである、 **MetadataRetrievalClient**クラスです)。その方法を次の例に示します。  
   
 ```  
@@ -299,4 +299,4 @@ MetadataRetrievalNode[] nodes = channel.Search(Microsoft.Adapters.SAP.SAPAdapter
 ```  
   
 ## <a name="see-also"></a>参照  
- [SAP からメタデータをプログラムで取得します。](../../adapters-and-accelerators/adapter-sap/get-metadata-programmatically-from-sap.md)
+ [SAP からプログラムでメタデータの取得](../../adapters-and-accelerators/adapter-sap/get-metadata-programmatically-from-sap.md)

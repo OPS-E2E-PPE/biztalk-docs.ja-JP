@@ -1,5 +1,5 @@
 ---
-title: A4SWIFT エンベロープ スキーマを展開する |Microsoft ドキュメント
+title: A4SWIFT エンベロープ スキーマの展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,54 +17,54 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8811f1dd056ca5a4ea4582d593af30e2ffc879f
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: ae07b6b957f608e89c3ae65802d6627440201a65
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "25967048"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37004147"
 ---
-# <a name="deploying-a4swift-envelope-schemas"></a>A4SWIFT エンベロープ スキーマを展開します。
-Message Repair and New Submission を設定するときに、プロジェクトのスキーマでエンベロープ スキーマを含める必要があります。 エンベロープ スキーマで、EnvelopeMT103.xsd などが MRSR サイトへの書き込みに必要です。  
+# <a name="deploying-a4swift-envelope-schemas"></a>A4SWIFT エンベロープ スキーマの展開
+Message Repair and New Submission を設定するたびに、プロジェクトのスキーマでエンベロープ スキーマを含める必要があります。 エンベロープ スキーマで、EnvelopeMT103.xsd などが MRSR サイトへの書き込みに必要です。  
   
  **概要**  
   
  ようエンベロープ スキーマをプロジェクトに追加します。  
   
--   Visual Studio で、メッセージ スキーマを含むプロジェクトに、各メッセージ スキーマをエンベロープ スキーマを追加します。  
+- Visual Studio で、メッセージ スキーマを含むプロジェクトに、各メッセージ スキーマをエンベロープ スキーマを追加します。  
   
--   1 つまたは複数のエンベロープ スキーマを含むすべてのプロジェクトに RuntimeSchemas.dll への参照を追加します。  
+- 1 つまたは複数のエンベロープ スキーマを含む任意のプロジェクトに RuntimeSchemas.dll への参照を追加します。  
   
-    > [!NOTE]
-    >  RuntimeSchemas.dll への参照を追加することが必要な[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]プロジェクトの Message Repair and New Submission プロジェクトへのエンベロープ スキーマを追加した場合にのみです。  
+  > [!NOTE]
+  >  RuntimeSchemas.dll への参照を追加することが必要な[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]Message Repair and New Submission をプロジェクトにエンベロープ スキーマを追加した場合にのみのプロジェクトします。  
   
--   未解析のメッセージのエンベロープ スキーマ (EnvelopeUnparsedMessage.xsd) をプロジェクトに追加します。  
+- 未解析メッセージのエンベロープ スキーマ (EnvelopeUnparsedMessage.xsd) をプロジェクトに追加します。  
   
 ### <a name="to-add-a-swift-envelope-schema"></a>SWIFT エンベロープ スキーマに追加するには  
   
-1.  ソリューション エクスプ ローラーの Visual Studio で、スキーマ プロジェクトを開きます。  
+1.  ソリューション エクスプ ローラーの Visual Studio でスキーマ プロジェクトを開きます。  
   
-2.  右クリック**参照**、クリックして**参照の追加**です。  
+2.  右クリック**参照**、 をクリックし、**参照の追加**します。  
   
-3.  [参照の追加] ダイアログ ボックス、**参照**タグ。  
+3.  [参照の追加] ダイアログ ボックスで、**参照**タグ。  
   
-4.  コンポーネントの選択 ダイアログ ボックスで、開く、**ファイルの場所**ドロップダウン リスト。 移動 ***\<ドライブ\>*:\Program \microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>メッセージ Pack\Assemblies**です。 選択**Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll**クリックして、アセンブリの一覧から**追加**です。  
+4.  コンポーネントの選択 ダイアログ ボックスで、開く、**検索**ドロップダウン リスト。 移動 ***\<ドライブ\>*:\Program \microsoft BizTalk Accelerator for SWIFT\<バージョン\>メッセージ Pack\Assemblies**します。 選択**Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll**クリックして、アセンブリの一覧から**追加**します。  
   
-5.  **参照の追加**ダイアログ ボックスで、をクリックして**OK**です。  
+5.  **参照の追加**ダイアログ ボックスで、をクリックして**OK**します。  
   
-6.  プロジェクトを右クリックし、順にポイント**追加**、クリックして**既存項目の追加**です。  
+6.  プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の追加**します。  
   
-7.  追加で既存の項目 ダイアログ ボックスで、**ファイルの場所**ドロップダウン ボックスに移動**\<ドライブ\>: \Program Files\ Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Categoryn\MTxxx**です。 たとえば、エンベロープ スキーマを選択**EnvelopeMT103.xsd**、クリックして**追加**です。  
+7.  追加で既存の項目 ダイアログ ボックスで、**検索**ドロップダウン ボックスに移動**\<ドライブ\>: \Program Files\ Microsoft BizTalk Accelerator for SWIFT\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Categoryn\MTxxx**します。 たとえば、エンベロープ スキーマを選択**EnvelopeMT103.xsd**、 をクリックし、**追加**します。  
   
-     追加で既存の項目 ダイアログ ボックスで、**ファイルの場所**ドロップダウン ボックスに移動します。 エンベロープ スキーマ、たとえば、EnvelopeMT103.xsd を選択し、[追加] をクリックします。  
+     追加で既存の項目 ダイアログ ボックスで、**検索**ドロップダウン ボックスに移動します。 エンベロープ スキーマ、たとえば、EnvelopeMT103.xsd を選択し、[追加] をクリックします。  
   
     > [!NOTE]
-    >  ソリューション エクスプ ローラーで示すように、A4SWIFT は、プロジェクトのエンベロープ スキーマを追加します。  
+    >  A4SWIFT は、ソリューション エクスプ ローラーで示すように、プロジェクトのエンベロープ スキーマを追加します。  
   
-8.  ソリューション エクスプ ローラーでプロジェクトを右クリックし、**追加**、クリックして**既存項目の追加**です。  
+8.  ソリューション エクスプ ローラーでプロジェクトを右クリックして**追加**、 をクリックし、**既存項目の追加**します。  
   
-9. 既存項目の追加 ダイアログ ボックスで、Message Repair and New Submission の機能を使用する場合、**ファイルの場所**ドロップダウン ボックスに移動 **\<*ドライブ*\>: \Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Unparsed メッセージ**です。 選択**EnvelopeUnparsedMessage.xsd**、クリックして**追加**です。  
+9. [既存項目の追加] ダイアログ ボックスで、Message Repair and New Submission 機能を使用する場合、**検索**ドロップダウン ボックスに移動 **\<*ドライブ*\>: \Microsoft BizTalk Accelerator for SWIFT\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Unparsed メッセージ**します。 選択**EnvelopeUnparsedMessage.xsd**、 をクリックし、**追加**します。  
   
-10. ソリューション エクスプ ローラーでプロジェクト名を右クリックし、をクリックし、 **ビルド**します。  
+10. ソリューション エクスプ ローラーでプロジェクト名を右クリックし をクリックし、**ビルド**します。  
   
-11. ソリューション エクスプ ローラーでプロジェクト名を右クリックし、をクリックし、 **展開**します。
+11. ソリューション エクスプ ローラーでプロジェクト名を右クリックし をクリックし、**デプロイ**します。

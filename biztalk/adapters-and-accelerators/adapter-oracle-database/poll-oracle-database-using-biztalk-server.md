@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server を使用して Oracle データベースをポーリング |Microsoft ドキュメント
+title: BizTalk Server を使用してポーリング Oracle データベース |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2578d00518a9f1632e690e84db04426575619109
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d819abc957eb46dc430befb01cbcae0b8b55ca48
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214178"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996099"
 ---
-# <a name="poll-oracle-database-using-biztalk-server"></a>BizTalk Server を使用して Oracle データベースをポーリング
-構成することができます、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースからのポーリングに基づいたメッセージを受信します。 アダプターは、Oracle データベースをポーリングする 2 つの方法を提供します。  
+# <a name="poll-oracle-database-using-biztalk-server"></a>BizTalk Server を使用してポーリング Oracle データベース
+構成することができます、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースからのポーリング ベースのメッセージを受信します。 アダプターは、Oracle データベースをポーリングの 2 つの方法を提供します。  
   
--   **SELECT ステートメントを使用して**です。 テーブルと、Oracle データベースでビューをポーリングする単純な SELECT ステートメントを指定することができます。 アダプターは、指定した間隔で SELECT ステートメントを実行し、アダプターのクライアントに結果を返します。  
+- **SELECT ステートメントを使用して**します。 テーブルと Oracle データベースでビューをポーリングする単純な SELECT ステートメントを指定することができます。 アダプターは、指定した間隔で SELECT ステートメントを実行し、アダプターのクライアントに結果を返します。  
   
--   **ストアド プロシージャ、関数、プロシージャ、またはパッケージ内で関数を使用して**です。 ストアド プロシージャ、関数、またはプロシージャまたは Oracle データベースをポーリングするパッケージ内で関数を指定することができます。 アダプターは、指定した間隔で要求メッセージを実行し、アダプターのクライアントに結果を返します。  
+- **ストアド プロシージャ、関数、またはプロシージャまたはパッケージ内の関数を使用して**します。 ストアド プロシージャ、関数、またはプロシージャまたは Oracle データベースをポーリングするパッケージ内の関数を指定することができます。 アダプターは、指定した間隔で要求メッセージを実行し、アダプターのクライアントに結果を返します。  
   
- 2 つのアプローチの主な違いは、方法アダプター クライアントが、アダプターを使用して Oracle データベースをポーリングするポーリング ステートメントを指定します。 単純な SELECT ステートメントでは、ポーリング ステートメントの最初の方法に関するその他の方法については、ポーリング ステートメント、ストアド プロシージャ、関数、またはプロシージャまたはパッケージ内で関数を実行する要求メッセージです。 アダプターのクライアントで、いずれかの方法では、ポーリング ステートメントを指定して、 **PollingStatement**プロパティをバインドします。 バインドのプロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについてお読み](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)です。  
+  2 つのアプローチの主な違いは、方法アダプターのクライアントは、アダプターを使用して Oracle データベースをポーリングするポーリング ステートメントを指定します。 最初の方法のポーリング ステートメントには、単純な SELECT ステートメントが、その他のアプローチのポーリング ステートメント、ストアド プロシージャ、関数、またはプロシージャまたはパッケージ内の関数を実行する要求メッセージです。 アダプター クライアントのいずれの方法でも、ポーリング ステートメントを指定する、 **PollingStatement**プロパティをバインドします。 バインド プロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)します。  
   
- このセクションのトピックでは、SELECT ステートメントおよびストアド プロシージャ、関数、またはプロシージャを使用してをポーリングする方法について説明またはパッケージ内で機能します。  
+  このセクションのトピックでは、SELECT ステートメントとストアド プロシージャ、関数、またはプロシージャを使用してポーリングする方法について説明またはパッケージ内で機能します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [SELECT ステートメントを使用してポーリング Oracle データベース](../../adapters-and-accelerators/adapter-oracle-database/poll-oracle-database-using-the-select-statement.md)  
   
--   [ストアド プロシージャ、関数、またはパッケージ化されたプロシージャおよび関数を使用して Oracle データベースをポーリング](../../adapters-and-accelerators/adapter-oracle-database/poll-oracle-db-using-stored-procedures-functions-or-packaged-procedures.md)  
+-   [ストアド プロシージャ、関数、またはパッケージ化されたプロシージャおよび関数を使用してポーリング Oracle データベース](../../adapters-and-accelerators/adapter-oracle-database/poll-oracle-db-using-stored-procedures-functions-or-packaged-procedures.md)  
   
 ## <a name="see-also"></a>参照  
 [Oracle データベース アダプターを使用して BizTalk アプリケーションを開発します。](../../adapters-and-accelerators/adapter-oracle-database/develop-biztalk-applications-using-the-oracle-database-adapter.md)

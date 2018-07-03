@@ -1,5 +1,5 @@
 ---
-title: コンポーネント インターフェイス ユーザー定義メソッド |Microsoft ドキュメント
+title: コンポーネント インターフェイス ユーザー定義メソッド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,12 +20,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 139117ffb26c8fec355dcfe481657817bc64bc0b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 68149876dc51d90b4dbc07772fd9b9b5c60fb7db
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22233834"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022568"
 ---
 # <a name="component-interface-user-defined-methods"></a>コンポーネント インターフェイス ユーザー定義メソッド
 Microsoft BizTalk Adapter for PeopleSoft Enterprise は、コンポーネント インターフェイスでユーザー定義メソッドをサポートします。 署名の形式は次のとおりです。  
@@ -36,11 +36,11 @@ myRet=myCI.myMethod(parameter1, parameter2, ...)
   
  それぞれの文字の説明は次のとおりです。  
   
--   `parameter1`、`parameter2` は入力パラメーターです。  
+- `parameter1`、`parameter2` は入力パラメーターです。  
   
--   `myRet` は戻り値です。  
+- `myRet` は戻り値です。  
   
- パラメーターに指定できるのは、メソッドへの入力パラメーターだけです。 戻りパラメーターとしてメソッドから返すことができるのは 1 つの値のみです。  
+  パラメーターに指定できるのは、メソッドへの入力パラメーターだけです。 戻りパラメーターとしてメソッドから返すことができるのは 1 つの値のみです。  
   
 > [!NOTE]
 >  ユーザー定義メソッドを含むコンポーネント インターフェイスは、有効な PeopleSoft `Get` 関数だけを保持している必要があります。 コンポーネント インターフェイスにキーがある場合は、カスタム メソッドは機能しません。  
@@ -73,4 +73,4 @@ End-Function;
 >  (1 つのコマンドで) 複数のテーブルを同時に変更するには、別のコンポーネント インターフェイスを作成するか、またはユーザー定義メソッドを含むコンポーネント インターフェイスを作成します。  
   
 ## <a name="see-also"></a>参照  
- [付録 a: コンポーネント インターフェイス メソッド](../core/appendix-a-component-interface-methods.md)
+ [付録 A: コンポーネント インターフェイス メソッド](../core/appendix-a-component-interface-methods.md)

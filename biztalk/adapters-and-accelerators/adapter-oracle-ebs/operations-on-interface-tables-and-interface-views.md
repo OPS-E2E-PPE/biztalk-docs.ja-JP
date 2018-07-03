@@ -1,5 +1,5 @@
 ---
-title: インターフェイスのテーブルとのインターフェイス ビューでの操作 |Microsoft ドキュメント
+title: インターフェイス テーブルとインターフェイス ビューに対する操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,34 +12,34 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ec9b7c5f952b6be60a3c3463e6ea0682faa9d4b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ffcf9b26f745112b4748c0020fd761f233caedd8
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22217106"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36992035"
 ---
-# <a name="operations-on-interface-tables-and-interface-views"></a>インターフェイスのテーブルとのインターフェイス ビューでの操作
-[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]一連の標準的な操作 (Select、Insert、Update、および各インターフェイス テーブルの削除) および Oracle E-business Suite では、各インターフェイス ビューの選択操作を表示します。 これらの操作を使用すると、SELECT、INSERT、UPDATE を実行し、対象のインターフェイス テーブルに対する WHERE 句で修飾されたステートメントおよび対象のインターフェイス ビューの WHERE 句で修飾された SELECT ステートメントを削除できます。 これらの操作は、データ操作言語 (DML) 操作とも呼ばれます。  
+# <a name="operations-on-interface-tables-and-interface-views"></a>インターフェイス テーブルとインターフェイス ビューに対する操作
+[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]一連の標準的な操作 (Select、Insert、Update、および Delete の各インターフェイス テーブル) と Oracle E-business Suite には、各インターフェイス ビューの選択操作を表示します。 これらの操作を使用すると、SELECT、INSERT、UPDATE を実行し、対象のインターフェイス テーブル、WHERE 句で修飾されたステートメントおよび修飾対象のインターフェイス ビューの WHERE 句で SELECT ステートメントを削除できます。 これらの操作は、データ操作言語 (DML) 操作とも呼ばれます。  
   
 > [!IMPORTANT]
->  インターフェイスのテーブルとのインターフェイス ビューでの操作を行うことができます、前にでこれらの成果物のアプリケーションのコンテキストを設定する必要があります[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。 アプリケーション コンテキストの設定 (責任、組織、および言語の設定) などのユーザー設定、およびアイテムのアクセス制御を設定して Oracle E-business Suite でセキュリティ保護されたトランザクションを容易にするためです。 アプリケーションのコンテキストおよびそれを設定する方法の詳細については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)です。  
+>  インターフェイス テーブルとインターフェイス ビューで操作を実行する前に、アプリケーションのコンテキストでこれらの成果物を設定する必要があります[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 アプリケーション コンテキストの設定 (責任、組織、および言語の設定) などのユーザー設定とアーティファクトのアクセス制御を設定して Oracle E-business Suite でセキュリティで保護されたトランザクションを促進するためです。 アプリケーションのコンテキストとその設定方法の詳細については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
 
 ## <a name="supported-dml-operations"></a>サポートされている DML 操作  
  次の表は、DML 操作を[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]をサポートしています。  
   
-|操作|Description|  
+|演算|説明|  
 |---------------|-----------------|  
-|Select|指定された列名と SQL の WHERE 句を指定するフィルター文字列の一覧に基づいてターゲット インターフェイス テーブルまたはインターフェイス ビューで選択操作を実行します。<br /><br /> Select 操作の戻り値は、指定された列と行を含む厳密に型指定された結果セットです。|  
-|Insert|対象のインターフェイス テーブルに対する挿入操作を実行します。 Insert 操作サポートしている複数のレコードは、指定されたレコード セットに基づくインターフェイス テーブルに挿入します。<br /><br /> 挿入操作の戻り値は、挿入された行の数です。<br /><br /> **InlineValue**<br /><br /> 挿入操作ですべての単純なデータ レコードを選択できますと呼ばれる省略可能な属性の値を指定することによって、レコードの値をオーバーライドする**InlineValue**です。 InlineValue 属性は、日付の列に主キー列のシーケンスまたは (SYSDATE を使用して) システムの日付を挿入することを設定するなどのインターフェイス テーブルに計算値を挿入を使用することができます。 たとえば、次のステートメントを挿入します。<br /><br /> `<Insert xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/InterfaceTables/AR/AR_ARCHIVE_PURGE_INTERIM">   <RECORDSET>     <InsertRecord xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/TableViewRecord/AR/AR_ARCHIVE_PURGE_INTERIM">       <TRNS_DATE InlineValue="sysdate">2008-06-21T15:52:19</TRNS_DATE>       <EMPNAME>John</EMPNAME>     </InsertRecord>   </RECORDSET>   </Insert>`<br /><br /> にもかかわらず"2008-06-21T15:52:19"TRNS_DATE の値を値として指定された、 **InlineValue**属性では、"SYSDATE、"(システムの日付) は、対象のインターフェイス テーブルに挿入されます。<br /><br /> InlineValue の使用中に次のように属性します。<br /><br /> -InlineValue 属性の定数値を使用しないでください。 たとえばを指定する場合に、INSERT ステートメントで`<EMPNAME InlineValue="John"/>`エラーが発生し、します。 これは、として InlineValue 属性の値が渡されるため-ここでは、oracle、 *John* Oracle E-business Suite は、予期される値ではないに渡される (期待される値は *"John"*)。 従業員名を囲む単一引用符を使用する必要があります。 たとえば、 `<EMPNAME InlineValue="’John’"/>`のようにします。<br /><br /> -InlineValue 属性の選択クエリを使用する場合、SELECT ステートメントをかっこで囲みますも select クエリが単一のレコードだけをフェッチすることを確認してください。 たとえば、 `<EMPNAME InlineValue="(SELECT NAME FROM MS_SAMPLE_EMPLOYEES WHERE ID=123)"/>`のようにします。<br /><br /> **注:** 要素は、Oracle E-business Suite で NOT NULL としてマークすると、インライン値を指定した場合でも、その要素の値を指定する必要があります。 これを行うがスキーマ検証が失敗します。|  
-|Update|対象のインターフェイス テーブルの更新操作を実行します。 更新するレコードは、SQL の WHERE 句を指定するフィルター文字列によって指定されます。 更新プログラムの値は、テンプレートのレコードで指定されます。<br /><br /> 更新操作の戻り値は、更新された行の数です。|  
-|DELETE|SQL の WHERE 句に基づいてフィルター文字列で指定されている対象のインターフェイス テーブルに対して Delete 操作を実行します。<br /><br /> 削除操作の戻り値は、削除された行の数です。|  
+|Select|指定された列の名前と SQL の WHERE 句を指定するフィルター文字列の一覧に基づいたターゲット インターフェイス テーブル、またはインターフェイス ビューで選択操作を行います。<br /><br /> Select 操作の戻り値は、指定した列と行を含む厳密に型指定された結果セットです。|  
+|Insert|対象のインターフェイス テーブルに対する挿入操作を実行します。 Insert 操作サポートする複数のレコードは、指定されたレコード セットに基づく対象のインターフェイス テーブルに挿入します。<br /><br /> 挿入操作の戻り値では、挿入された行の数です。<br /><br /> **InlineValue**<br /><br /> という名前の省略可能な属性の値を指定することでレコードの値をオーバーライドする挿入操作ですべての単純なデータ レコードを選択できます**InlineValue**します。 日付列に主キー列 (SYSDATE を使用) のシステム日付を挿入するシーケンスを使用する、またはの設定などのインターフェイス テーブルに計算値を挿入する InlineValue 属性を使用できます。 たとえば、次のステートメントを挿入します。<br /><br /> `<Insert xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/InterfaceTables/AR/AR_ARCHIVE_PURGE_INTERIM">   <RECORDSET>     <InsertRecord xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/TableViewRecord/AR/AR_ARCHIVE_PURGE_INTERIM">       <TRNS_DATE InlineValue="sysdate">2008-06-21T15:52:19</TRNS_DATE>       <EMPNAME>John</EMPNAME>     </InsertRecord>   </RECORDSET>   </Insert>`<br /><br /> でも"2008-06-21T15:52:19"TRNS_DATE の値の値として指定されて、 **InlineValue**属性を"SYSDATE、"(システムの日付) は、対象のインターフェイス テーブルに挿入されます。<br /><br /> InlineValue の使用中に次のように属性します。<br /><br /> -InlineValue 属性の定数値を使用しないでください。 たとえば、INSERT ステートメントで指定した場合で`<EMPNAME InlineValue="John"/>`エラーが発生し、します。 として InlineValue 属性の値が渡されるため、これは-ここでは、Oracle に*John*が予期される値ではない Oracle E-business Suite に渡されます (期待される値は *"John"*)。 従業員名を囲む単一引用符を使用する必要があります。 たとえば、「 `<EMPNAME InlineValue="’John’"/>`」のように入力します。<br /><br /> -InlineValue 属性の選択クエリを使用する場合は、SELECT ステートメントをかっこで囲み、select クエリが 1 つのレコードのみをフェッチすることも確認する必要があります。 たとえば、「 `<EMPNAME InlineValue="(SELECT NAME FROM MS_SAMPLE_EMPLOYEES WHERE ID=123)"/>`」のように入力します。<br /><br /> **注:** 要素は、Oracle E-business Suite で NOT NULL としてマークすると、インラインの値を指定した場合でも、その要素の値を指定する必要があります。 失敗すると、スキーマ検証が失敗します。|  
+|更新|対象のインターフェイス テーブル更新操作を実行します。 更新するレコードは、SQL の WHERE 句を指定するフィルター文字列によって指定されます。 更新プログラムの値は、テンプレートのレコードで指定されます。<br /><br /> 更新操作の戻り値では、更新された行の数です。|  
+|DELETE|フィルター文字列で指定されている SQL の WHERE 句に基づいてターゲット インターフェイス テーブルに対して Delete 操作を実行します。<br /><br /> 削除操作の戻り値では、削除された行の数です。|  
 
 ## <a name="important-details"></a>重要な詳細情報  
-  -   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]標準的な操作 (Select、Insert、Update、および各テーブルの削除) と、基になる Oracle データベース内の各ビューの選択操作の同じセットを表示します。 上記の DML 操作も、基になる Oracle データベース テーブルやビューに対して有効です。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]標準的な操作 (Select、Insert、Update、および、各テーブルの削除) と基になる Oracle データベース内の各ビューの選択操作の同じセットを表示します。 上記の DML 操作に対しても有効です、Oracle データベース テーブルの基になるとビュー。  
 
- -   Oracle データベースでテーブルおよびビューの操作を実行するアプリケーションのコンテキストを設定する必要はありません。 ただし、カスタム Oracle E-business Suite アプリケーションでのユーザーは、インターフェイス テーブルとして基本データベースのテーブルは登録できません。 データベース テーブルが、インターフェイス テーブルとして登録されていない場合で使用可能な**テーブル**にサブノード、**成果物ベース ビュー**ノードまたは、**スキーマ ベース ビュー**ノード使用しているときにデザイン時に[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
-    これらのテーブルは、Oracle E-business アプリケーションに関連付けられます。 それでこれらのテーブルのすべての操作に対して、アプリケーションのコンテキストを設定する必要があります。 アプリケーション コンテキストの設定を参照して[リンクは、ここの説明を入力](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)です。  
+  - Oracle データベースでテーブルとビューで操作を実行するアプリケーションのコンテキストを設定する必要はありません。 ただし、カスタム Oracle E-business Suite アプリケーションでは、ユーザーは、ベース データベース テーブルにはインターフェイス テーブルとして登録できません。 データベース テーブルが、インターフェイス テーブルとして登録されていない場合で使用可能な**テーブル**でサブノード、**成果物ベース ビュー**ノードまたは、**スキーマ ベースのビュー**ノード使用しているときにデザイン時に[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。  
+    これらのテーブルは、Oracle E-business アプリケーションに関連付けられます。 したがって、これらのテーブルの操作をアプリケーション コンテキストを設定する必要があります。 アプリケーション コンテキストの設定を参照してください。[ここリンクの説明を入力](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
   
 ## <a name="see-also"></a>参照  
- [どのような操作をアダプターであるを使用して実行しますか?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)
+ [どのような操作は、アダプターを使用して実行しますか?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)

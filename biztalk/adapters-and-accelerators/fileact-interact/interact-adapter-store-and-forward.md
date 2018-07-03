@@ -1,5 +1,5 @@
 ---
-title: アダプター ストア アンド フォワードの対話 |Microsoft ドキュメント
+title: InterAct アダプター ストア アンド フォワード |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,65 +12,65 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c7aff0b2421a19f5fe84ee914c4f9d2bd7ef04e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 2f3ce047de1c926e6e144b1351954774c1d3edb5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963208"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022592"
 ---
-# <a name="interact-adapter-store-and-forward"></a>アダプター ストア アンド フォワードを対話します。
-ストアにし、順方向 (SnF) モードでは、メッセージは送信時にキューに配信され、変換先にキューから取得されます。 SnF を使用する場合、応答は SWIFTNet SnF 自体から取得し、応答側からフィードバックが含まれていません。  
+# <a name="interact-adapter-store-and-forward"></a>InterAct アダプター ストア アンド フォワード
+ストアにし、転送 (SnF) モードでは、メッセージが送信時に、キューに配信され、変換先にキューから取得されます。 SnF を使用して、応答は SWIFTNet SnF 自体に由来し、応答側からのフィードバックが含まれていません。  
   
- メッセージとファイルは、SnF を使用していないときに、サーバー プロセスにルーティングされたメッセージと同じような柔軟性をキューにルーティングできます。 この定義は、(SWIFTNet) の内部で MRR 内がします。 受信者キューでメッセージやファイルが配置されることが送信者によって送信された後を決定することをお勧めします。 キューにメッセージやファイルを配置することを行う SnF 配信モード (RequestControl) 内のメッセージにフラグを設定します。  
+ メッセージとファイルは、SnF を使用しない場合は、サーバー プロセスにルーティングされたメッセージと同様の柔軟性をキューにルーティングできます。 この定義では、(SWIFTNet) の内部で MRR 内です。 受信側キューでメッセージやファイルが配置されますは、送信側が送信後かを決定することをお勧めします。 キューにメッセージまたはファイルを配置することは SnF の配信モード (RequestControl) 内のメッセージにフラグを設定して行われます。  
   
- キューからメッセージを取得するには、アプリケーション デザイナーによって行われた選択に基づき、2 つの異なるモードで発生します。 これらのモードは、プッシュおよびプルと呼ばれます。  
+ キューからメッセージを取得すると、アプリケーション デザイナーで行った選択によって、2 つの異なるモードでは発生します。 これらのモードは、プッシュとプルと呼ばれます。  
   
- プッシュ モードを使用する場合 SWIFTNet SnF メッセージを配信する取り組みが存在します。 メッセージは、「プッシュ」SWIFTNet SnF からされ、SWIFTNet リンク上のアプリケーション サーバーによって受信されます。 サーバー アプリケーションは、メッセージの受信確認で応答する前に safestored があることを確認します。 この受信確認は、メッセージを受信したどの SWIFTNet SnF ことを示します。 受信確認では、その他の追加"business"ロジックは含まれません。  
+ プッシュ モードを使用する場合、メッセージを配信するため、イニシアチブは SWIFTNet SnF で存在します。 メッセージは、「プッシュ」SWIFTNet SnF からされ SWIFTNet リンクをアプリケーション サーバーを受け取ります。 サーバー アプリケーションでは、メッセージの受信確認で応答する前に safestored があることを確認します。 この受信確認は SWIFTNet SnF をどのようにメッセージを受信したことを示します。 受信確認では、その他の追加"business"のロジックは含まれません。  
   
 ## <a name="queues-in-swiftnet"></a>SWIFTNet のキュー  
- キューには、メッセージと、指定した受信者に配信される、送信側から送信されたファイルが含まれます。 キューがも SWIFTNet SnF によって生成される配信通知に含まれます。  
+ キューには、メッセージおよび指定された受信者に配信される、送信側から送信されたファイルが含まれます。 キューがも SWIFTNet SnF によって生成される配信通知に含まれます。  
   
- キューが定義され、受信側の組織で構成されています。 キューの実際の作成は、ユーザーの要求に SWIFT で行われます。 送信者は、キューにメッセージが最終的に配置されますに関して何も知らないです。 受信側の制御下で完全です。  
+ キューが定義され、受信側の組織で構成されています。 キューの実際の作成は、ユーザーの要求で SWIFT によって実行されます。 送信者は、キューでメッセージが配置最終的には何も知りません。 受信側の制御下で完全です。  
   
- キューのウィンドウ サイズ属性は、受信確認せず、キューから SWIFTNet SnF を取得するメッセージの最大数を制御します。 受信側はまだ ウィンドウで、スロットを解放する前にメッセージを確認します。  
+ キューのウィンドウ サイズ属性では、受信確認をキューから SWIFTNet SnF を取得するメッセージの最大数を制御します。 受信側はまだ ウィンドウで、スロットを解放する前にメッセージを確認します。  
   
 ### <a name="delivery-into-a-queue"></a>キューに配信  
- ストア アンド フォワードを使用してサービスの場合、受信側では、ストア アンド フォワード モードで送信されたメッセージの格納に使用するキューを決定します。  
+ ストア アンド フォワードを使用してサービスの受信側は、ストア アンド フォワード モードで送信されたメッセージの格納に使用するキューを決定します。  
   
- 配信通知は、送信者に送信されたメッセージの配信ステータスを通知するために、送信者機関のキューに配置されています。 これは、送信アダプターのプロパティを構成できます。  
+ 配信通知は、送信者教育機関の送信者に送信されたメッセージの配信ステータスを通知するためにキューに配置されます。 これは、送信アダプターのプロパティで構成できます。  
   
 ## <a name="sessions"></a>セッション  
- キューを取得するには、セッションが開始されます。 Sw:SnFSessionId SWIFTNet SnF によって配信されるすべてのメッセージが返されます。 Sw:SnFSessionId にはキュー名、セッション モードが含まれています: プッシュ、およびセッションの数。 すべてのセッションのセッションの数は増加します。 例を示します。  
+ キューを取得する際に、セッションが開始されます。 Sw:SnFSessionId SWIFTNet SnF によって配信されるすべてのメッセージが返されます。 キュー名、セッション モードを含む、Sw:SnFSessionId: プッシュ、およびセッションの数。 すべてのセッションのセッションの数は増加します。 例を示します。  
   
  **\<Sw:SnFSessionId\>bankwxyz_applicq1:p:000458\</Sw:SnFSessionId\>**  
   
- "P"では、プッシュ セッションを示します。 セッション見なすことができますもキューの予約として、Authorizer でします。 後続のメッセージは、同じ承認者を承認する必要があります。  
+ "P"では、プッシュ セッションを示します。 セッションは、権限付与者で、キューの予約としても確認できます。 後続のメッセージは、同じ承認者によって確認する必要があります。  
   
  ストア アンド フォワードにメッセージを送信するときに、セッションは適用されません。  
   
 ### <a name="push-session-snf"></a>プッシュ セッション SnF  
  SnF シーケンスには、次の前提としています。  
   
--   クライアント プロセスでは、そのジョブが実行し、今すぐ終了できます。 これを行うには、オープンなセキュリティ コンテキストを SwSec:DestroyContextRequest を発行してクリーンアップする必要があります。 Sw:TermRequest 後は、プロセスには、exit() が可能性があります。  
+- クライアント プロセスでは、そのジョブで実行され、終了するようになりました。 これを行うには、オープンなセキュリティ コンテキストを SwSec:DestroyContextRequest を発行してクリーンアップする必要があります。 Sw:TermRequest 後は、プロセスには、exit() が可能性があります。  
   
--   別のクライアントが開始されます。 初期化の手順は、最初のクライアントの場合と同様です。 キューのリリースでは、SwCall 入力プリミティブとして Sw:ReleaseSnFQueueRequest でを実行することによってです。  
+- 別のクライアントが開始されます。 初期化の手順は、最初のクライアントの場合と同じです。 キューのリリースでは、SwCall 入力プリミティブとして Sw:ReleaseSnFQueueRequest でを実行することです。  
   
-     キューのリリースが正常に処理するようになったら、SWIFTNet はキューからメッセージの配信を停止します。  
+   SWIFTNet は、キューのリリースを正常に処理すると、すぐにキューからメッセージの配信を停止します。  
   
- サーバーは、時に 1 つの要求を処理します。 SWIFTNet SnF は、キューからの複数の要求を提供します。 これらは、サーバーが応答するか、タイムアウトが発生するまで、ネットワークと SWIFTNet リンク内でバッファリングされます。  
+  サーバーは、時に 1 つの要求を処理します。 SWIFTNet SnF では、キューからの複数の要求を提供します。 これらは、サーバーが応答するか、タイムアウトが発生するまでネットワークに SWIFTNet リンク内でバッファリングされます。  
   
- いくつかの要求が既に配信されている、キューを解放する前にまだ確認されて、ことができます。 キューが解放されるまで、SWIFTNet SnF はこれらのメッセージの複数の受信確認を処理しません。 これらのメッセージは、後続のセッションで再配信されます。  
+  一部の要求が既に配信されている、キューをリリースする前にまだ確認されたが、可能性があります。 SWIFTNet SnF は、キューが解放されるまで、これらのメッセージの複数の受信確認を処理しません。 これらのメッセージは、後続のセッションで再配信されます。  
   
- サーバー アプリケーションがまだ後、クライアントがそのキューのリリースを発行が通常これはない場合、キューから配信される要求の肯定応答で応答するかどうか、ローカルの実装に除外されます。  
+  サーバー アプリケーションにも通常が表示されない場合、クライアントがそのキューでは、リリースを発行した後、キューから配信される要求の肯定応答で応答するかどうかは、ローカルの実装にままです。  
   
 ## <a name="see-also"></a>参照  
- [アダプターのアーキテクチャを対話します。](../../adapters-and-accelerators/fileact-interact/interact-adapter-architecture.md)   
- [InterAct アダプター コンポーネント](../../adapters-and-accelerators/fileact-interact/interact-adapter-components.md)   
- [ビジネスの Exchange に対するアダプターのメッセージを相互作用します。](../../adapters-and-accelerators/fileact-interact/interact-adapter-messages-for-business-exchange.md)   
+ [InterAct アダプターのアーキテクチャ](../../adapters-and-accelerators/fileact-interact/interact-adapter-architecture.md)   
+ [InterAct アダプターのコンポーネント](../../adapters-and-accelerators/fileact-interact/interact-adapter-components.md)   
+ [業務用 Exchange 用の interAct アダプターのメッセージ](../../adapters-and-accelerators/fileact-interact/interact-adapter-messages-for-business-exchange.md)   
  [InterAct アダプターのクライアント アプリケーション](../../adapters-and-accelerators/fileact-interact/interact-adapter-client-application.md)   
  [InterAct アダプタ サーバー アプリケーション](../../adapters-and-accelerators/fileact-interact/interact-adapter-server-application.md)   
- [アダプターのセキュリティ アーキテクチャを対話します。](../../adapters-and-accelerators/fileact-interact/interact-adapter-security-architecture.md)   
- [アダプターのエンド ツー エンドの信頼性の高い配信を対話します。](../../adapters-and-accelerators/fileact-interact/interact-adapter-end-to-end-reliable-delivery.md)   
- [アダプターの状態を操作の監視](../../adapters-and-accelerators/fileact-interact/interact-adapter-status-monitoring.md)   
+ [InterAct アダプターのセキュリティ アーキテクチャ](../../adapters-and-accelerators/fileact-interact/interact-adapter-security-architecture.md)   
+ [アダプターのエンド ツー エンドの信頼性の高い配信を操作します。](../../adapters-and-accelerators/fileact-interact/interact-adapter-end-to-end-reliable-delivery.md)   
+ [InterAct アダプターの状態の監視](../../adapters-and-accelerators/fileact-interact/interact-adapter-status-monitoring.md)   
  [InterAct アダプターの否認不可](../../adapters-and-accelerators/fileact-interact/interact-adapter-non-repudiation.md)

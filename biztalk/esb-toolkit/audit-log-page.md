@@ -1,5 +1,5 @@
 ---
-title: 監査ログ ページ |Microsoft ドキュメント
+title: 監査ログ ページ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a52e90a52755baafee1cd3991ea1b36506482d37
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 19c5568170c2e6f8afb9a922686c068ad63aecf5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289834"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37015972"
 ---
 # <a name="audit-log-page"></a>監査ログ ページ
 図 1 は、監査ログ ページを示します。 このページには、監査イベントの一覧が表示されます。  
@@ -26,14 +26,14 @@ ms.locfileid: "22289834"
   
  **図 1**  
   
- **ESB の管理ポータルの [監査ログ] ページ**  
+ **ESB 管理ポータルの監査ログ ページ**  
   
  次の一覧では、ESB 管理ポータルの監査ログ ページの機能を使用する方法について説明します。  
   
--   再送信されたメッセージの本文を表示するメッセージ識別子のリンクをクリックします。 監査ログのメッセージ ビューアー ページが表示されます (図 2 を参照)、再送信されたメッセージ、および再送信されたメッセージの内容のユーザー、日付、および URL が表示されます。  
+- 再送信されたメッセージの本文を表示するメッセージ識別子リンクをクリックします。 監査ログ - メッセージ ビューアー ページが開きます (図 2 参照)、再送信されたメッセージ、および再送信されたメッセージの内容のユーザー、日付、および URL が表示されます。  
   
- ![AuditLog メッセージ ビューアー ページ](../esb-toolkit/media/ch8-auditlogmessageviewerpage.jpg "Ch8 AuditLogMessageViewerPage")  
+  ![AuditLog メッセージ ビューアー ページ](../esb-toolkit/media/ch8-auditlogmessageviewerpage.jpg "Ch8 AuditLogMessageViewerPage")  
   
- **図 2**  
+  **図 2**  
   
- **監査ログ – ESB 管理ポータルの [メッセージ ビューアー] ページ**
+  **監査ログ – ESB 管理ポータルのメッセージ ビューアー ページ**

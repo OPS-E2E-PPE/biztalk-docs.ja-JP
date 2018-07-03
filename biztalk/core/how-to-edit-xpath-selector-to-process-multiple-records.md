@@ -1,5 +1,5 @@
 ---
-title: 複数のレコードを処理する XPath セレクターを編集する方法 |Microsoft ドキュメント
+title: 複数のレコードを処理する XPath セレクターを編集する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34c9b45e3fce9f4ad5730d7f03d2a568b3701742
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2e69748feaeb877c816cc086ba978e53e8398baf
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254162"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37018354"
 ---
 # <a name="how-to-edit-xpath-selector-to-process-multiple-records"></a>複数のレコードを処理する XPath セレクターの編集方法
-1 つの子 TypedXmlDocuments が作成、TypedXmlDocument がエンジンにアサートされる場合参照してください[Assert](../core/assert.md)です。 エンジンは、ルールで定義された XPath セレクターに基づいて、作成される子の TypedXmlDocuments を決定します。 作成ツールでルールを構築する場合、XPath セレクターの既定値は、ファクト エクスプローラーの [XML スキーマ] タブで選択されているノードよりも上位にあるノードになります。 選択したノード自体に、その親ノードに対する XPath フィールドの値が既定値です。  
+別の子 TypedXmlDocument がエンジンにアサートされるときに TypedXmlDocuments が作成されました。参照してください[Assert](../core/assert.md)します。 エンジンは、ルールで定義された XPath セレクターに基づいて、作成される子の TypedXmlDocuments を決定します。 作成ツールでルールを構築する場合、XPath セレクターの既定値は、ファクト エクスプローラーの [XML スキーマ] タブで選択されているノードよりも上位にあるノードになります。 XPath フィールドの値は、その親ノードに相対的な自体には、選択したノードに既定値です。  
   
  場合によっては、ルールを構築する際に、作成ツールで作成される既定の XPath をカスタマイズすることがあります。 次のサンプル XML ドキュメントを例として説明します。  
   
@@ -55,15 +55,15 @@ ms.locfileid: "22254162"
   
  IF 1==1  
   
- **/Order/orderline//** 合計 = (**/順序/order/orderline/Hat/** コスト + **/順序/order/orderline/シャツ/** コスト)  
+ <strong>/Order/orderline//</strong>合計 = (<strong>/注文/order/orderline/Hat/</strong>コスト + <strong>/注文/order/orderline/シャツ/</strong>コスト)  
   
- XPath の太字は、セレクター部分を示します。残りは、フィールド XPath を表します。 これらは、作成ツールによって作成される既定値です。 ただし、このポリシーを実行する 6 つのオブジェクトの作成になります: 2 つの Orderline オブジェクト、2 つの Hat オブジェクト、および 2 つの Shirt オブジェクト。 "Orderline" の合計値は、Hat オブジェクトおよび Shirt オブジェクトが合わせて計算されます。合計値は、同じ値が常に設定され、最後にルールが実行されてから出力されます。 ルールは 8 回実行されます。 これは、このシナリオで適切ではありません。  
+ XPath の太字は、セレクター部分を示します。残りは、フィールド XPath を表します。 これらは、作成ツールによって作成される既定値です。 ただし、このポリシーを実行する 6 つのオブジェクトの作成時になります: 2 つの Orderline オブジェクト、2 つの Hat オブジェクト、および 2 つの Shirt オブジェクト。 "Orderline" の合計値は、Hat オブジェクトおよび Shirt オブジェクトが合わせて計算されます。合計値は、同じ値が常に設定され、最後にルールが実行されてから出力されます。 ルールは 8 回実行されます。 これは、このシナリオで適切ではありません。  
   
  次のように、XPath の値を編集する解決方法が考えられます。  
   
  IF 1==1  
   
- **/Order/orderline//** 合計 = (**/order/orderline//** Cost + **/order/orderline//** Cost)  
+ <strong>/Order/orderline//</strong>合計 = (<strong>/order/orderline//</strong>Cost + <strong>/order/orderline//</strong>Cost)  
   
  3 つのすべてのフィールドのセレクター XPath 値は、同じ "/Order/Orderline" 値に設定されます。フィールド XPath 値は、適宜に編集されます。 ノードが [XML スキーマ] タブで選択されている場合に [プロパティ] ウィンドウの XPath セレクター値および XPath フィールド値を変更すると、この処理が実行されます。フィールドをルールの引数にドラッグする前に、この処理を実行する必要があります。  
   

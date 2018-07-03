@@ -1,5 +1,5 @@
 ---
-title: BTSTask コマンド ライン リファレンス |Microsoft ドキュメント
+title: BTSTask コマンド ライン リファレンス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,41 +12,41 @@ caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c2de1e2e616b57d0cc8eda0cb9de9eae5c72d26
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 44aa603f777b2634422a6cbf5962088bc6724351
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231922"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37015579"
 ---
 # <a name="btstask-command-line-reference"></a>BTSTask コマンド ライン リファレンス
 このセクションの各トピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に付属する BTSTask コマンドライン ツールのリファレンス情報を紹介しています。 BTSTask を使用すると、さまざまなアプリケーション展開作業をコマンド ラインから実行できます。その例を次に示します。  
   
--   BizTalk アプリケーションを AddApp コマンドで BizTalk 管理データベースに追加する。  
+- BizTalk アプリケーションを AddApp コマンドで BizTalk 管理データベースに追加する。  
   
--   AddResource コマンドでアプリケーションにアイテムを追加する。  
+- AddResource コマンドでアプリケーションにアイテムを追加する。  
   
--   アプリケーションとそのアイテムを ExportApp コマンドで .msi ファイルにエクスポートする。  
+- アプリケーションとそのアイテムを ExportApp コマンドで .msi ファイルにエクスポートする。  
   
--   バインド情報を ExportBindings コマンドで .xml ファイルにエクスポートする。  
+- バインド情報を ExportBindings コマンドで .xml ファイルにエクスポートする。  
   
--   ImportApp コマンドを使用して、.msi ファイルからアプリケーションをインポートする。  
+- ImportApp コマンドを使用して、.msi ファイルからアプリケーションをインポートする。  
   
--   ImportBindings コマンドを使用して、.xml ファイルからバインド情報をインポートする。  
+- ImportBindings コマンドを使用して、.xml ファイルからバインド情報をインポートする。  
   
--   ListApp コマンドを使用して、アプリケーションに含まれるアイテムを、ローカル一意識別子 (LUID) と共に一覧表示する。  
+- ListApp コマンドを使用して、アプリケーションに含まれるアイテムを、ローカル一意識別子 (LUID) と共に一覧表示する。  
   
--   特定の BizTalk グループを対象に、BizTalk 管理データベース内のすべてのアプリケーションを、ListApps コマンドを使用して一覧表示する。  
+- 特定の BizTalk グループを対象に、BizTalk 管理データベース内のすべてのアプリケーションを、ListApps コマンドを使用して一覧表示する。  
   
--   ListPackage コマンドを使用して、.msi ファイル内のリソースを一覧表示する。  
+- ListPackage コマンドを使用して、.msi ファイル内のリソースを一覧表示する。  
   
--   ListTypes コマンドを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がサポートしているアイテムの種類をすべて一覧表示する。  
+- ListTypes コマンドを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がサポートしているアイテムの種類をすべて一覧表示する。  
   
--   RemoveApp コマンドを使用して、BizTalk 管理データベースおよび BizTalk 管理コンソールからアプリケーションを削除する。  
+- RemoveApp コマンドを使用して、BizTalk 管理データベースおよび BizTalk 管理コンソールからアプリケーションを削除する。  
   
--   RemoveResource コマンドを使用して、アプリケーションからアイテムを削除する。  
+- RemoveResource コマンドを使用して、アプリケーションからアイテムを削除する。  
   
--   UninstallApp コマンドを使用して、アプリケーションをローカル コンピューターからアンインストールする。  
+- UninstallApp コマンドを使用して、アプリケーションをローカル コンピューターからアンインストールする。  
   
 > [!IMPORTANT]
 >  アプリケーションのインポート中に実行される処理前/処理後スクリプトで BTSTask コマンドを使用することはできません。 使用すると、インポートに失敗する場合があります。 スクリプトからは、インポート中に行われた変更を認識できないためです。  
