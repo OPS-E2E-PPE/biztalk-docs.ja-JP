@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10826 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10826 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3728f9f21f17c7c8d898f8fba1bf797cb8f79f92
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbf2a0a0810a58b0b82ffd818e7328cda83ee8b5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276834"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36974491"
 ---
-# <a name="single-sign-on-event-10826"></a><span data-ttu-id="d8253-102">シングル サインオン: イベント 10826</span><span class="sxs-lookup"><span data-stu-id="d8253-102">Single Sign-On: Event 10826</span></span>
-## <a name="details"></a><span data-ttu-id="d8253-103">詳細</span><span class="sxs-lookup"><span data-stu-id="d8253-103">Details</span></span>  
+# <a name="single-sign-on-event-10826"></a><span data-ttu-id="1e3df-102">シングル サインオン: イベント 10826</span><span class="sxs-lookup"><span data-stu-id="1e3df-102">Single Sign-On: Event 10826</span></span>
+## <a name="details"></a><span data-ttu-id="1e3df-103">詳細</span><span class="sxs-lookup"><span data-stu-id="1e3df-103">Details</span></span>  
   
-|||  
-|-|-|  
-|<span data-ttu-id="d8253-104">製品名</span><span class="sxs-lookup"><span data-stu-id="d8253-104">Product Name</span></span>|<span data-ttu-id="d8253-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="d8253-105">Enterprise Single Sign-On</span></span>|  
-|<span data-ttu-id="d8253-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="d8253-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|<span data-ttu-id="d8253-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="d8253-107">Event ID</span></span>|<span data-ttu-id="d8253-108">10826</span><span class="sxs-lookup"><span data-stu-id="d8253-108">10826</span></span>|  
-|<span data-ttu-id="d8253-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="d8253-109">Event Source</span></span>|<span data-ttu-id="d8253-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="d8253-110">ENTSSO</span></span>|  
-|<span data-ttu-id="d8253-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="d8253-111">Component</span></span>|<span data-ttu-id="d8253-112">なし</span><span class="sxs-lookup"><span data-stu-id="d8253-112">N/A</span></span>|  
-|<span data-ttu-id="d8253-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="d8253-113">Symbolic Name</span></span>|<span data-ttu-id="d8253-114">ENTSSO_E_NO_GROUP_ADAPTER</span><span class="sxs-lookup"><span data-stu-id="d8253-114">ENTSSO_E_NO_GROUP_ADAPTER</span></span>|  
-|<span data-ttu-id="d8253-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="d8253-115">Message Text</span></span>|<span data-ttu-id="d8253-116">指定されたグループ アダプターは存在しません。</span><span class="sxs-lookup"><span data-stu-id="d8253-116">The specified group adapter does not exist.</span></span>|  
+|                 |                                                            |
+|-----------------|------------------------------------------------------------|
+|  <span data-ttu-id="1e3df-104">製品名</span><span class="sxs-lookup"><span data-stu-id="1e3df-104">Product Name</span></span>   |                 <span data-ttu-id="1e3df-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="1e3df-105">Enterprise Single Sign-On</span></span>                  |
+| <span data-ttu-id="1e3df-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="1e3df-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    <span data-ttu-id="1e3df-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="1e3df-107">Event ID</span></span>     |                           <span data-ttu-id="1e3df-108">10826</span><span class="sxs-lookup"><span data-stu-id="1e3df-108">10826</span></span>                            |
+|  <span data-ttu-id="1e3df-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="1e3df-109">Event Source</span></span>   |                           <span data-ttu-id="1e3df-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="1e3df-110">ENTSSO</span></span>                           |
+|    <span data-ttu-id="1e3df-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="1e3df-111">Component</span></span>    |                            <span data-ttu-id="1e3df-112">なし</span><span class="sxs-lookup"><span data-stu-id="1e3df-112">N/A</span></span>                             |
+|  <span data-ttu-id="1e3df-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="1e3df-113">Symbolic Name</span></span>  |                 <span data-ttu-id="1e3df-114">ENTSSO_E_NO_GROUP_ADAPTER</span><span class="sxs-lookup"><span data-stu-id="1e3df-114">ENTSSO_E_NO_GROUP_ADAPTER</span></span>                  |
+|  <span data-ttu-id="1e3df-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="1e3df-115">Message Text</span></span>   |        <span data-ttu-id="1e3df-116">指定されたグループ アダプターは存在しません。</span><span class="sxs-lookup"><span data-stu-id="1e3df-116">The specified group adapter does not exist.</span></span>         |
   
-## <a name="explanation"></a><span data-ttu-id="d8253-117">説明</span><span class="sxs-lookup"><span data-stu-id="d8253-117">Explanation</span></span>  
- <span data-ttu-id="d8253-118">指定されたグループ アダプターは存在しません。</span><span class="sxs-lookup"><span data-stu-id="d8253-118">The specified group adapter does not exist.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="1e3df-117">説明</span><span class="sxs-lookup"><span data-stu-id="1e3df-117">Explanation</span></span>  
+ <span data-ttu-id="1e3df-118">指定されたグループ アダプターは存在しません。</span><span class="sxs-lookup"><span data-stu-id="1e3df-118">The specified group adapter does not exist.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="d8253-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="d8253-119">User Action</span></span>  
- <span data-ttu-id="d8253-120">アダプター名のスペルをチェックし、グループ アダプターを再度指定します。</span><span class="sxs-lookup"><span data-stu-id="d8253-120">Check your spelling of the adapter name and specify the group adapter again.</span></span>
+## <a name="user-action"></a><span data-ttu-id="1e3df-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="1e3df-119">User Action</span></span>  
+ <span data-ttu-id="1e3df-120">アダプター名のスペルをチェックし、グループ アダプターを再度指定します。</span><span class="sxs-lookup"><span data-stu-id="1e3df-120">Check your spelling of the adapter name and specify the group adapter again.</span></span>

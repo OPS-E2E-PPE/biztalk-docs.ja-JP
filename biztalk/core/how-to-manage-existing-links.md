@@ -1,5 +1,5 @@
 ---
-title: 既存のリンクを管理する方法 |Microsoft ドキュメント
+title: 既存のリンクを管理する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,49 +12,49 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7cdc505f98f61dd7259c8893b526ff094128df42
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: cacb316d9783692dd55cbdbbbda92b6f55d98a3a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25970146"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982891"
 ---
-# <a name="how-to-manage-existing-links"></a><span data-ttu-id="38b4a-102">既存のリンクを管理する方法</span><span class="sxs-lookup"><span data-stu-id="38b4a-102">How to Manage Existing Links</span></span>
-<span data-ttu-id="38b4a-103">リンクの送信元や送信先の変更、リンクの名前付けや名前の変更、およびリンクの削除などが必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="38b4a-103">Sometimes you may need to change the source or destination of a link, name or rename a link, or delete a link.</span></span> <span data-ttu-id="38b4a-104">このトピックでは、このようなリンクに関する操作を実行する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="38b4a-104">This topic provides step-by-step instructions for performing these types of link operations.</span></span>  
+# <a name="how-to-manage-existing-links"></a><span data-ttu-id="40ff9-102">既存のリンクを管理する方法</span><span class="sxs-lookup"><span data-stu-id="40ff9-102">How to Manage Existing Links</span></span>
+<span data-ttu-id="40ff9-103">リンクの送信元や送信先の変更、リンクの名前付けや名前の変更、およびリンクの削除などが必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="40ff9-103">Sometimes you may need to change the source or destination of a link, name or rename a link, or delete a link.</span></span> <span data-ttu-id="40ff9-104">このトピックでは、このようなリンクに関する操作を実行する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="40ff9-104">This topic provides step-by-step instructions for performing these types of link operations.</span></span>  
   
-### <a name="to-change-the-source-or-destination-of-a-link"></a><span data-ttu-id="38b4a-105">リンクの送信元または送信先を変更するには</span><span class="sxs-lookup"><span data-stu-id="38b4a-105">To change the source or destination of a link</span></span>  
+### <a name="to-change-the-source-or-destination-of-a-link"></a><span data-ttu-id="40ff9-105">リンクの送信元または送信先を変更するには</span><span class="sxs-lookup"><span data-stu-id="40ff9-105">To change the source or destination of a link</span></span>  
   
-1.  <span data-ttu-id="38b4a-106">BizTalk マッパーのグリッド ページで、リンクをクリックして選択します。</span><span class="sxs-lookup"><span data-stu-id="38b4a-106">In BizTalk Mapper, in a grid page, click a link to select it.</span></span>  
+1.  <span data-ttu-id="40ff9-106">BizTalk マッパーのグリッド ページで、リンクをクリックして選択します。</span><span class="sxs-lookup"><span data-stu-id="40ff9-106">In BizTalk Mapper, in a grid page, click a link to select it.</span></span>  
   
-     <span data-ttu-id="38b4a-107">グリッド ページ内の選択したリンクのエンドポイントが強調表示されます。</span><span class="sxs-lookup"><span data-stu-id="38b4a-107">The endpoints of a selected link in the grid page are highlighted.</span></span>  
+     <span data-ttu-id="40ff9-107">グリッド ページ内の選択したリンクのエンドポイントが強調表示されます。</span><span class="sxs-lookup"><span data-stu-id="40ff9-107">The endpoints of a selected link in the grid page are highlighted.</span></span>  
   
-2.  <span data-ttu-id="38b4a-108">リンクのいずれかのエンドポイントを、新たに接続するスキーマ ノードまたは Functoid にドラッグします。</span><span class="sxs-lookup"><span data-stu-id="38b4a-108">Drag either endpoint of the link to the new schema node or functoid to which you want it to connect it.</span></span>  
+2.  <span data-ttu-id="40ff9-108">リンクのいずれかのエンドポイントを、新たに接続するスキーマ ノードまたは Functoid にドラッグします。</span><span class="sxs-lookup"><span data-stu-id="40ff9-108">Drag either endpoint of the link to the new schema node or functoid to which you want it to connect it.</span></span>  
   
-     <span data-ttu-id="38b4a-109">エンドポイントをドラッグしている間は、カーソルが十字型になります。</span><span class="sxs-lookup"><span data-stu-id="38b4a-109">As you drag an endpoint, the cursor becomes a crosshair.</span></span> <span data-ttu-id="38b4a-110">リンクを受け付けることができないスキーマ ノードや Functoid (またはその他のオブジェクト) にドラッグすると、円の中に 1 本の線が描かれた形にカーソルが変化します。</span><span class="sxs-lookup"><span data-stu-id="38b4a-110">If you point to a schema node or functoid (or other object) which cannot accept the link, the cursor becomes a circle with a line through it.</span></span>  
+     <span data-ttu-id="40ff9-109">エンドポイントをドラッグしている間は、カーソルが十字型になります。</span><span class="sxs-lookup"><span data-stu-id="40ff9-109">As you drag an endpoint, the cursor becomes a crosshair.</span></span> <span data-ttu-id="40ff9-110">リンクを受け付けることができないスキーマ ノードや Functoid (またはその他のオブジェクト) にドラッグすると、円の中に 1 本の線が描かれた形にカーソルが変化します。</span><span class="sxs-lookup"><span data-stu-id="40ff9-110">If you point to a schema node or functoid (or other object) which cannot accept the link, the cursor becomes a circle with a line through it.</span></span>  
   
     > [!IMPORTANT]
-    >  <span data-ttu-id="38b4a-111">2 つ以上の入力リンクを 1 つの Functoid に接続して、これらの入力リンクのいずれかを送信元スキーマの他のノードまたは他の Functoid にリダイレクトする場合、元の Functoid に対する入力パラメーターの順序は維持されません。</span><span class="sxs-lookup"><span data-stu-id="38b4a-111">If you have two or more input links connected to a functoid and you redirect one or more of those input links to other nodes in the source schema or to other functoids, the order of the input parameters to the original functoid may not be preserved.</span></span> <span data-ttu-id="38b4a-112">使用して、**構成\<Functoid\> Functoid**  ダイアログ ボックスを入力パラメーターの順序を確認し、必要に応じて順序を変更します。</span><span class="sxs-lookup"><span data-stu-id="38b4a-112">Use the **Configure \<Functoid\> Functoid** dialog box to review the resulting order of the input parameters and to reorder them if necessary.</span></span> <span data-ttu-id="38b4a-113">Functoid の入力パラメーターの順序変更の詳細については、次を参照してください。 [Functoid プロパティの編集および入力パラメーター](../core/editing-functoid-properties-and-input-parameters.md)です。</span><span class="sxs-lookup"><span data-stu-id="38b4a-113">For more information about reordering the input parameters of a functoid, see [Editing Functoid Properties and Input Parameters](../core/editing-functoid-properties-and-input-parameters.md).</span></span>  
+    >  <span data-ttu-id="40ff9-111">2 つ以上の入力リンクを 1 つの Functoid に接続して、これらの入力リンクのいずれかを送信元スキーマの他のノードまたは他の Functoid にリダイレクトする場合、元の Functoid に対する入力パラメーターの順序は維持されません。</span><span class="sxs-lookup"><span data-stu-id="40ff9-111">If you have two or more input links connected to a functoid and you redirect one or more of those input links to other nodes in the source schema or to other functoids, the order of the input parameters to the original functoid may not be preserved.</span></span> <span data-ttu-id="40ff9-112">使用して、**構成\<Functoid\> Functoid**  ダイアログ ボックスおよびを並べ替えるには必要に応じて、入力パラメーターの結果として得られる順序を確認します。</span><span class="sxs-lookup"><span data-stu-id="40ff9-112">Use the **Configure \<Functoid\> Functoid** dialog box to review the resulting order of the input parameters and to reorder them if necessary.</span></span> <span data-ttu-id="40ff9-113">Functoid の入力パラメーターの順序変更の詳細については、次を参照してください。 [Functoid プロパティの編集および入力パラメーター](../core/editing-functoid-properties-and-input-parameters.md)します。</span><span class="sxs-lookup"><span data-stu-id="40ff9-113">For more information about reordering the input parameters of a functoid, see [Editing Functoid Properties and Input Parameters](../core/editing-functoid-properties-and-input-parameters.md).</span></span>  
   
-### <a name="to-setedit-the-label-of-a-link"></a><span data-ttu-id="38b4a-114">リンクのラベルを設定/編集するには</span><span class="sxs-lookup"><span data-stu-id="38b4a-114">To set/edit the label of a link</span></span>  
+### <a name="to-setedit-the-label-of-a-link"></a><span data-ttu-id="40ff9-114">リンクのラベルを設定/編集するには</span><span class="sxs-lookup"><span data-stu-id="40ff9-114">To set/edit the label of a link</span></span>  
   
-1.  <span data-ttu-id="38b4a-115">BizTalk マッパーのグリッド ページで、リンクをクリックして選択します。</span><span class="sxs-lookup"><span data-stu-id="38b4a-115">In BizTalk Mapper, in a grid page, click a link to select it.</span></span>  
+1. <span data-ttu-id="40ff9-115">BizTalk マッパーのグリッド ページで、リンクをクリックして選択します。</span><span class="sxs-lookup"><span data-stu-id="40ff9-115">In BizTalk Mapper, in a grid page, click a link to select it.</span></span>  
   
-     <span data-ttu-id="38b4a-116">グリッド ページ内の選択したリンクのエンドポイントが強調表示されます。</span><span class="sxs-lookup"><span data-stu-id="38b4a-116">The endpoints of a selected link in the grid page are highlighted.</span></span>  
+    <span data-ttu-id="40ff9-116">グリッド ページ内の選択したリンクのエンドポイントが強調表示されます。</span><span class="sxs-lookup"><span data-stu-id="40ff9-116">The endpoints of a selected link in the grid page are highlighted.</span></span>  
   
-2.  <span data-ttu-id="38b4a-117">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウを使用して、リンクの (新しい) の名前を指定、**ラベル**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="38b4a-117">In the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, provide a (new) name for the link using the **Label** property.</span></span>  
+2. <span data-ttu-id="40ff9-117">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウで、リンクを使用して、名前を付けます (新規)、**ラベル**プロパティ。</span><span class="sxs-lookup"><span data-stu-id="40ff9-117">In the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, provide a (new) name for the link using the **Label** property.</span></span>  
   
-### <a name="to-delete-a-link"></a><span data-ttu-id="38b4a-118">リンクを削除するには</span><span class="sxs-lookup"><span data-stu-id="38b4a-118">To delete a link</span></span>  
+### <a name="to-delete-a-link"></a><span data-ttu-id="40ff9-118">リンクを削除するには</span><span class="sxs-lookup"><span data-stu-id="40ff9-118">To delete a link</span></span>  
   
-1.  <span data-ttu-id="38b4a-119">BizTalk マッパーのグリッド ページで、リンクをクリックして選択します。</span><span class="sxs-lookup"><span data-stu-id="38b4a-119">In BizTalk Mapper, in a grid page, click a link to select it.</span></span>  
+1.  <span data-ttu-id="40ff9-119">BizTalk マッパーのグリッド ページで、リンクをクリックして選択します。</span><span class="sxs-lookup"><span data-stu-id="40ff9-119">In BizTalk Mapper, in a grid page, click a link to select it.</span></span>  
   
-     <span data-ttu-id="38b4a-120">グリッド ページ内の選択したリンクのエンドポイントが強調表示されます。</span><span class="sxs-lookup"><span data-stu-id="38b4a-120">The endpoints of a selected link in the grid page are highlighted.</span></span>  
+     <span data-ttu-id="40ff9-120">グリッド ページ内の選択したリンクのエンドポイントが強調表示されます。</span><span class="sxs-lookup"><span data-stu-id="40ff9-120">The endpoints of a selected link in the grid page are highlighted.</span></span>  
   
-2.  <span data-ttu-id="38b4a-121">**編集** メニューのをクリックして**削除**です。</span><span class="sxs-lookup"><span data-stu-id="38b4a-121">On the **Edit** menu, click **Delete**.</span></span>  
+2.  <span data-ttu-id="40ff9-121">**編集** メニューのをクリックして**削除**します。</span><span class="sxs-lookup"><span data-stu-id="40ff9-121">On the **Edit** menu, click **Delete**.</span></span>  
   
-     <span data-ttu-id="38b4a-122">DEL キーを押してまたはリンクを右クリックしてをクリックして**削除**ショートカット メニューの します。</span><span class="sxs-lookup"><span data-stu-id="38b4a-122">You can also press the DELETE key or right-click the link and click **Delete** on the shortcut menu.</span></span>  
+     <span data-ttu-id="40ff9-122">また DEL キーを押しますまたはリンクを右クリックしてをクリックして**削除**ショートカット メニューの します。</span><span class="sxs-lookup"><span data-stu-id="40ff9-122">You can also press the DELETE key or right-click the link and click **Delete** on the shortcut menu.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="38b4a-123">複数のリンクおよび Functoid を一括で選択し、1 つの操作でそれらを削除できます。</span><span class="sxs-lookup"><span data-stu-id="38b4a-123">You can bulk-select multiple link(s) and/or functoid(s) and then delete them in one operation.</span></span> <span data-ttu-id="38b4a-124">リンクや Functoid の一括削除を取り消したり、やり直したりできます。</span><span class="sxs-lookup"><span data-stu-id="38b4a-124">You can undo or redo the bulk deletion of link(s) and/or functoid(s).</span></span> <span data-ttu-id="38b4a-125">詳細については、元に戻すおよびやり直し操作を参照してください。[を元に戻すまたはユーザーの操作を再実行する方法](../core/how-to-undo-or-redo-user-operations.md)です。</span><span class="sxs-lookup"><span data-stu-id="38b4a-125">For more information about undo and redo operations, see [How to Undo or Redo User Operations](../core/how-to-undo-or-redo-user-operations.md).</span></span>  
+    >  <span data-ttu-id="40ff9-123">複数のリンクおよび Functoid を一括で選択し、1 つの操作でそれらを削除できます。</span><span class="sxs-lookup"><span data-stu-id="40ff9-123">You can bulk-select multiple link(s) and/or functoid(s) and then delete them in one operation.</span></span> <span data-ttu-id="40ff9-124">リンクや Functoid の一括削除を取り消したり、やり直したりできます。</span><span class="sxs-lookup"><span data-stu-id="40ff9-124">You can undo or redo the bulk deletion of link(s) and/or functoid(s).</span></span> <span data-ttu-id="40ff9-125">詳細については、元に戻すおよびやり直し操作を参照してください。[を元に戻すまたはユーザーの操作をやり直す方法](../core/how-to-undo-or-redo-user-operations.md)します。</span><span class="sxs-lookup"><span data-stu-id="40ff9-125">For more information about undo and redo operations, see [How to Undo or Redo User Operations](../core/how-to-undo-or-redo-user-operations.md).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="38b4a-126">参照</span><span class="sxs-lookup"><span data-stu-id="38b4a-126">See Also</span></span>  
- [<span data-ttu-id="38b4a-127">リンクを使用してレコードとフィールド マッピングを指定する</span><span class="sxs-lookup"><span data-stu-id="38b4a-127">Using Links to Specify Record and Field Mappings</span></span>](../core/using-links-to-specify-record-and-field-mappings.md)
+## <a name="see-also"></a><span data-ttu-id="40ff9-126">参照</span><span class="sxs-lookup"><span data-stu-id="40ff9-126">See Also</span></span>  
+ [<span data-ttu-id="40ff9-127">リンクを使用してレコードとフィールド マッピングを指定する</span><span class="sxs-lookup"><span data-stu-id="40ff9-127">Using Links to Specify Record and Field Mappings</span></span>](../core/using-links-to-specify-record-and-field-mappings.md)
