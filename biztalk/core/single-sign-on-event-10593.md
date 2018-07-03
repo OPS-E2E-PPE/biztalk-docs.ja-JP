@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10593 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10593 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ee8172e6d0669ccc86c8d6e05a8619afd0b5c3b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 73a9d5486583dc7a6170f84046b9e3fc00a6665e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270594"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37016015"
 ---
-# <a name="single-sign-on-event-10593"></a><span data-ttu-id="7b535-102">シングル サインオン: イベント 10593</span><span class="sxs-lookup"><span data-stu-id="7b535-102">Single Sign-On: Event 10593</span></span>
-## <a name="details"></a><span data-ttu-id="7b535-103">詳細</span><span class="sxs-lookup"><span data-stu-id="7b535-103">Details</span></span>  
+# <a name="single-sign-on-event-10593"></a><span data-ttu-id="29af5-102">シングル サインオン: イベント 10593</span><span class="sxs-lookup"><span data-stu-id="29af5-102">Single Sign-On: Event 10593</span></span>
+## <a name="details"></a><span data-ttu-id="29af5-103">詳細</span><span class="sxs-lookup"><span data-stu-id="29af5-103">Details</span></span>  
   
-|||  
-|-|-|  
-|<span data-ttu-id="7b535-104">製品名</span><span class="sxs-lookup"><span data-stu-id="7b535-104">Product Name</span></span>|<span data-ttu-id="7b535-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="7b535-105">Enterprise Single Sign-On</span></span>|  
-|<span data-ttu-id="7b535-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="7b535-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|<span data-ttu-id="7b535-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="7b535-107">Event ID</span></span>|<span data-ttu-id="7b535-108">10593</span><span class="sxs-lookup"><span data-stu-id="7b535-108">10593</span></span>|  
-|<span data-ttu-id="7b535-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="7b535-109">Event Source</span></span>|<span data-ttu-id="7b535-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="7b535-110">ENTSSO</span></span>|  
-|<span data-ttu-id="7b535-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="7b535-111">Component</span></span>|<span data-ttu-id="7b535-112">なし</span><span class="sxs-lookup"><span data-stu-id="7b535-112">N/A</span></span>|  
-|<span data-ttu-id="7b535-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="7b535-113">Symbolic Name</span></span>|<span data-ttu-id="7b535-114">SSO_WARN_TICKET_BAD_FORMAT</span><span class="sxs-lookup"><span data-stu-id="7b535-114">SSO_WARN_TICKET_BAD_FORMAT</span></span>|  
-|<span data-ttu-id="7b535-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="7b535-115">Message Text</span></span>|<span data-ttu-id="7b535-116">チケットが正しい形式ではありません。%r</span><span class="sxs-lookup"><span data-stu-id="7b535-116">The ticket does not have the correct format.%r</span></span><br /><br /> <span data-ttu-id="7b535-117">アプリケーション名: %1</span><span class="sxs-lookup"><span data-stu-id="7b535-117">Application Name: %1</span></span>|  
+|                 |                                                                                 |
+|-----------------|---------------------------------------------------------------------------------|
+|  <span data-ttu-id="29af5-104">製品名</span><span class="sxs-lookup"><span data-stu-id="29af5-104">Product Name</span></span>   |                            <span data-ttu-id="29af5-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="29af5-105">Enterprise Single Sign-On</span></span>                            |
+| <span data-ttu-id="29af5-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="29af5-106">Product Version</span></span> |           [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]            |
+|    <span data-ttu-id="29af5-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="29af5-107">Event ID</span></span>     |                                      <span data-ttu-id="29af5-108">10593</span><span class="sxs-lookup"><span data-stu-id="29af5-108">10593</span></span>                                      |
+|  <span data-ttu-id="29af5-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="29af5-109">Event Source</span></span>   |                                     <span data-ttu-id="29af5-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="29af5-110">ENTSSO</span></span>                                      |
+|    <span data-ttu-id="29af5-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="29af5-111">Component</span></span>    |                                       <span data-ttu-id="29af5-112">なし</span><span class="sxs-lookup"><span data-stu-id="29af5-112">N/A</span></span>                                       |
+|  <span data-ttu-id="29af5-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="29af5-113">Symbolic Name</span></span>  |                           <span data-ttu-id="29af5-114">SSO_WARN_TICKET_BAD_FORMAT</span><span class="sxs-lookup"><span data-stu-id="29af5-114">SSO_WARN_TICKET_BAD_FORMAT</span></span>                            |
+|  <span data-ttu-id="29af5-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="29af5-115">Message Text</span></span>   | <span data-ttu-id="29af5-116">チケットが正しい形式ではありません。%r</span><span class="sxs-lookup"><span data-stu-id="29af5-116">The ticket does not have the correct format.%r</span></span><br /><br /> <span data-ttu-id="29af5-117">アプリケーション名: %1</span><span class="sxs-lookup"><span data-stu-id="29af5-117">Application Name: %1</span></span> |
   
-## <a name="explanation"></a><span data-ttu-id="7b535-118">説明</span><span class="sxs-lookup"><span data-stu-id="7b535-118">Explanation</span></span>  
- <span data-ttu-id="7b535-119">指定されたアプリケーションのチケットが正しい形式ではありません。</span><span class="sxs-lookup"><span data-stu-id="7b535-119">The ticket for the application specified does not have the correct format.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="29af5-118">説明</span><span class="sxs-lookup"><span data-stu-id="29af5-118">Explanation</span></span>  
+ <span data-ttu-id="29af5-119">指定されたアプリケーションのチケットが正しい形式ではありません。</span><span class="sxs-lookup"><span data-stu-id="29af5-119">The ticket for the application specified does not have the correct format.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="7b535-120">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="7b535-120">User Action</span></span>  
- <span data-ttu-id="7b535-121">チケットについては、次を参照してください。 [SSO チケット](../core/sso-tickets.md)です。</span><span class="sxs-lookup"><span data-stu-id="7b535-121">For information on tickets, see [SSO Tickets](../core/sso-tickets.md).</span></span>
+## <a name="user-action"></a><span data-ttu-id="29af5-120">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="29af5-120">User Action</span></span>  
+ <span data-ttu-id="29af5-121">チケットについては、次を参照してください。 [SSO チケット](../core/sso-tickets.md)します。</span><span class="sxs-lookup"><span data-stu-id="29af5-121">For information on tickets, see [SSO Tickets](../core/sso-tickets.md).</span></span>

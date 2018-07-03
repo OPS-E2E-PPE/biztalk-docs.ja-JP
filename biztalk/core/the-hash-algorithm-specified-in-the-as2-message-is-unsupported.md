@@ -1,5 +1,5 @@
 ---
-title: AS2 メッセージで指定したハッシュ アルゴリズムはサポートされていません |Microsoft ドキュメント
+title: AS2 メッセージに指定されたハッシュ アルゴリズムはサポートされていません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f6d16c7a3336a798c18b484bc50ff3e2f0c69764
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8c3c46f65fb71ef810fc4e657df01e0065757cae
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279298"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008595"
 ---
-# <a name="the-hash-algorithm-specified-in-the-as2-message-is-unsupported"></a><span data-ttu-id="298d8-102">AS2 メッセージに指定されたハッシュ アルゴリズムがサポートされていません</span><span class="sxs-lookup"><span data-stu-id="298d8-102">The hash algorithm specified in the AS2 message is unsupported</span></span>
-## <a name="details"></a><span data-ttu-id="298d8-103">詳細</span><span class="sxs-lookup"><span data-stu-id="298d8-103">Details</span></span>  
+# <a name="the-hash-algorithm-specified-in-the-as2-message-is-unsupported"></a><span data-ttu-id="41c94-102">AS2 メッセージに指定されたハッシュ アルゴリズムがサポートされていません</span><span class="sxs-lookup"><span data-stu-id="41c94-102">The hash algorithm specified in the AS2 message is unsupported</span></span>
+## <a name="details"></a><span data-ttu-id="41c94-103">詳細</span><span class="sxs-lookup"><span data-stu-id="41c94-103">Details</span></span>  
   
-|||  
-|-|-|  
-|<span data-ttu-id="298d8-104">製品名</span><span class="sxs-lookup"><span data-stu-id="298d8-104">Product Name</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|<span data-ttu-id="298d8-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="298d8-105">Product Version</span></span>|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|<span data-ttu-id="298d8-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="298d8-106">Event ID</span></span>|-|  
-|<span data-ttu-id="298d8-107">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="298d8-107">Event Source</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="298d8-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="298d8-108"> EDI</span></span>|  
-|<span data-ttu-id="298d8-109">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="298d8-109">Component</span></span>|<span data-ttu-id="298d8-110">AS2 エンジン</span><span class="sxs-lookup"><span data-stu-id="298d8-110">AS2 Engine</span></span>|  
-|<span data-ttu-id="298d8-111">シンボル名</span><span class="sxs-lookup"><span data-stu-id="298d8-111">Symbolic Name</span></span>|<span data-ttu-id="298d8-112">UnsupportedAS2HashAlgorithmError</span><span class="sxs-lookup"><span data-stu-id="298d8-112">UnsupportedAS2HashAlgorithmError</span></span>|  
-|<span data-ttu-id="298d8-113">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="298d8-113">Message Text</span></span>|<span data-ttu-id="298d8-114">AS2 メッセージに指定されたハッシュ アルゴリズムがサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="298d8-114">The hash algorithm specified in the AS2 message is unsupported.</span></span>|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  <span data-ttu-id="41c94-104">製品名</span><span class="sxs-lookup"><span data-stu-id="41c94-104">Product Name</span></span>   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| <span data-ttu-id="41c94-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="41c94-105">Product Version</span></span> |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    <span data-ttu-id="41c94-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="41c94-106">Event ID</span></span>     |                                           -                                            |
+|  <span data-ttu-id="41c94-107">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="41c94-107">Event Source</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="41c94-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="41c94-108"> EDI</span></span> |
+|    <span data-ttu-id="41c94-109">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="41c94-109">Component</span></span>    |                                       <span data-ttu-id="41c94-110">AS2 エンジン</span><span class="sxs-lookup"><span data-stu-id="41c94-110">AS2 Engine</span></span>                                       |
+|  <span data-ttu-id="41c94-111">シンボル名</span><span class="sxs-lookup"><span data-stu-id="41c94-111">Symbolic Name</span></span>  |                            <span data-ttu-id="41c94-112">UnsupportedAS2HashAlgorithmError</span><span class="sxs-lookup"><span data-stu-id="41c94-112">UnsupportedAS2HashAlgorithmError</span></span>                            |
+|  <span data-ttu-id="41c94-113">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="41c94-113">Message Text</span></span>   |            <span data-ttu-id="41c94-114">AS2 メッセージに指定されたハッシュ アルゴリズムがサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="41c94-114">The hash algorithm specified in the AS2 message is unsupported.</span></span>             |
   
-## <a name="explanation"></a><span data-ttu-id="298d8-115">説明</span><span class="sxs-lookup"><span data-stu-id="298d8-115">Explanation</span></span>  
- <span data-ttu-id="298d8-116">このエラー/警告/情報イベントは、受信した AS2 メッセージの signed-receipt-micalg ヘッダーに指定された MIC ハッシュ アルゴリズムが有効な値ではないため、受信パイプラインで指定どおりに MDN を生成できなかったことを示します。</span><span class="sxs-lookup"><span data-stu-id="298d8-116">This Error/Warning/Information event indicates that the receive pipeline could not generate the MDN as specified because the MIC hash algorithm specified in the signed-receipt-micalg header of the received AS2 message is not a valid value.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="41c94-115">説明</span><span class="sxs-lookup"><span data-stu-id="41c94-115">Explanation</span></span>  
+ <span data-ttu-id="41c94-116">このエラー/警告/情報イベントは、受信した AS2 メッセージの signed-receipt-micalg ヘッダーに指定された MIC ハッシュ アルゴリズムが有効な値ではないため、受信パイプラインで指定どおりに MDN を生成できなかったことを示します。</span><span class="sxs-lookup"><span data-stu-id="41c94-116">This Error/Warning/Information event indicates that the receive pipeline could not generate the MDN as specified because the MIC hash algorithm specified in the signed-receipt-micalg header of the received AS2 message is not a valid value.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="298d8-117">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="298d8-117">User Action</span></span>  
- <span data-ttu-id="298d8-118">このエラーを解決するには、メッセージの送信者にアルゴリズムを MD5 または SHA1 に変更してもらい、メッセージを再送信します。</span><span class="sxs-lookup"><span data-stu-id="298d8-118">To resolve this error, have the sender of the message change the algorithm to either MD5 or SHA1, and resend the message.</span></span>
+## <a name="user-action"></a><span data-ttu-id="41c94-117">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="41c94-117">User Action</span></span>  
+ <span data-ttu-id="41c94-118">このエラーを解決するには、メッセージの送信者にアルゴリズムを MD5 または SHA1 に変更してもらい、メッセージを再送信します。</span><span class="sxs-lookup"><span data-stu-id="41c94-118">To resolve this error, have the sender of the message change the algorithm to either MD5 or SHA1, and resend the message.</span></span>

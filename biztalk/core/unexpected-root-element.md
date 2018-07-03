@@ -1,5 +1,5 @@
 ---
-title: 予期しないルート要素 |Microsoft ドキュメント
+title: 予期しないルート要素 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec4ed8e39a05f81984dca21794eca3d829ba8f42
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b0e54e0eac7e3f8ae54d23417033388bc493b0ab
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25973032"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36981635"
 ---
-# <a name="unexpected-root-element"></a><span data-ttu-id="7018a-102">ルート要素が正しくありません</span><span class="sxs-lookup"><span data-stu-id="7018a-102">Unexpected root element</span></span>
-## <a name="details"></a><span data-ttu-id="7018a-103">詳細</span><span class="sxs-lookup"><span data-stu-id="7018a-103">Details</span></span>  
+# <a name="unexpected-root-element"></a><span data-ttu-id="aa28e-102">ルート要素が正しくありません</span><span class="sxs-lookup"><span data-stu-id="aa28e-102">Unexpected root element</span></span>
+## <a name="details"></a><span data-ttu-id="aa28e-103">詳細</span><span class="sxs-lookup"><span data-stu-id="aa28e-103">Details</span></span>  
   
-|||  
-|-|-|  
-|<span data-ttu-id="7018a-104">製品名</span><span class="sxs-lookup"><span data-stu-id="7018a-104">Product Name</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|<span data-ttu-id="7018a-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="7018a-105">Product Version</span></span>|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|<span data-ttu-id="7018a-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="7018a-106">Event ID</span></span>|<span data-ttu-id="7018a-107">0</span><span class="sxs-lookup"><span data-stu-id="7018a-107">0</span></span>|  
-|<span data-ttu-id="7018a-108">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="7018a-108">Event Source</span></span>|<span data-ttu-id="7018a-109">0</span><span class="sxs-lookup"><span data-stu-id="7018a-109">0</span></span>|  
-|<span data-ttu-id="7018a-110">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="7018a-110">Component</span></span>|<span data-ttu-id="7018a-111">0</span><span class="sxs-lookup"><span data-stu-id="7018a-111">0</span></span>|  
-|<span data-ttu-id="7018a-112">シンボル名</span><span class="sxs-lookup"><span data-stu-id="7018a-112">Symbolic Name</span></span>|<span data-ttu-id="7018a-113">0</span><span class="sxs-lookup"><span data-stu-id="7018a-113">0</span></span>|  
-|<span data-ttu-id="7018a-114">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="7018a-114">Message Text</span></span>|<span data-ttu-id="7018a-115">ルート要素が正しくありません</span><span class="sxs-lookup"><span data-stu-id="7018a-115">Unexpected root element</span></span>|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  <span data-ttu-id="aa28e-104">製品名</span><span class="sxs-lookup"><span data-stu-id="aa28e-104">Product Name</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| <span data-ttu-id="aa28e-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="aa28e-105">Product Version</span></span> |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    <span data-ttu-id="aa28e-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="aa28e-106">Event ID</span></span>     |                                         <span data-ttu-id="aa28e-107">0</span><span class="sxs-lookup"><span data-stu-id="aa28e-107">0</span></span>                                          |
+|  <span data-ttu-id="aa28e-108">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="aa28e-108">Event Source</span></span>   |                                         <span data-ttu-id="aa28e-109">0</span><span class="sxs-lookup"><span data-stu-id="aa28e-109">0</span></span>                                          |
+|    <span data-ttu-id="aa28e-110">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="aa28e-110">Component</span></span>    |                                         <span data-ttu-id="aa28e-111">0</span><span class="sxs-lookup"><span data-stu-id="aa28e-111">0</span></span>                                          |
+|  <span data-ttu-id="aa28e-112">シンボル名</span><span class="sxs-lookup"><span data-stu-id="aa28e-112">Symbolic Name</span></span>  |                                         <span data-ttu-id="aa28e-113">0</span><span class="sxs-lookup"><span data-stu-id="aa28e-113">0</span></span>                                          |
+|  <span data-ttu-id="aa28e-114">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="aa28e-114">Message Text</span></span>   |                              <span data-ttu-id="aa28e-115">ルート要素が正しくありません</span><span class="sxs-lookup"><span data-stu-id="aa28e-115">Unexpected root element</span></span>                               |
   
-## <a name="explanation"></a><span data-ttu-id="7018a-116">説明</span><span class="sxs-lookup"><span data-stu-id="7018a-116">Explanation</span></span>  
- <span data-ttu-id="7018a-117">ヘッダー プロパティに含まれていない\<ヘッダー\>...\</headers\>形式です。</span><span class="sxs-lookup"><span data-stu-id="7018a-117">Header property is not in \<headers\>….\</headers\> format.</span></span> <span data-ttu-id="7018a-118">通常、この状況は InboundHeaders および OutboundCustomHeaders に適用されます。</span><span class="sxs-lookup"><span data-stu-id="7018a-118">This situation normally applies to InboundHeaders and OutboundCustomHeaders.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="aa28e-116">説明</span><span class="sxs-lookup"><span data-stu-id="aa28e-116">Explanation</span></span>  
+ <span data-ttu-id="aa28e-117">ヘッダー プロパティにない\<ヘッダー\>...\</headers\>形式。</span><span class="sxs-lookup"><span data-stu-id="aa28e-117">Header property is not in \<headers\>….\</headers\> format.</span></span> <span data-ttu-id="aa28e-118">通常、この状況は InboundHeaders および OutboundCustomHeaders に適用されます。</span><span class="sxs-lookup"><span data-stu-id="aa28e-118">This situation normally applies to InboundHeaders and OutboundCustomHeaders.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="7018a-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="7018a-119">User Action</span></span>  
- <span data-ttu-id="7018a-120">ヘッダー プロパティの形式であることを確認\<ヘッダー\>しています.\</headers\>です。</span><span class="sxs-lookup"><span data-stu-id="7018a-120">Ensure that header property is in the format of  \<headers\>…\</headers\>.</span></span>
+## <a name="user-action"></a><span data-ttu-id="aa28e-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="aa28e-119">User Action</span></span>  
+ <span data-ttu-id="aa28e-120">ヘッダー プロパティの形式であることを確認\<ヘッダー\>.\</headers\>します。</span><span class="sxs-lookup"><span data-stu-id="aa28e-120">Ensure that header property is in the format of  \<headers\>…\</headers\>.</span></span>

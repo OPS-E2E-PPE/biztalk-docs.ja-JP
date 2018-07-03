@@ -1,5 +1,5 @@
 ---
-title: ログの構成 |Microsoft ドキュメント
+title: ログの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,26 +17,26 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb9a8cfb173881b3ec6c6e346bcd9f2d3ec54b87
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 83e15247158dd21c237064692931a83f6885f05e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004539"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002459"
 ---
-# <a name="logging-configuration"></a><span data-ttu-id="ba318-102">ログの構成</span><span class="sxs-lookup"><span data-stu-id="ba318-102">Logging Configuration</span></span>
-<span data-ttu-id="ba318-103">同時に、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server と[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]医療機関病院、クリニック、看護住宅などのトランザクションとデジタル エンタープライズ アプリケーション統合 (EAI) 通信をセキュリティで保護を提供します。</span><span class="sxs-lookup"><span data-stu-id="ba318-103">Together, [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server and [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] offer secure transactional and digital Enterprise Application Integration (EAI) communications for health care providers such as hospitals, clinics, and nursing homes.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="ba318-104">アプリケーションのアクティビティおよびトランザクション処理の調整、動的にメッセージをルーティング、検証、およびデータを変換する機能を提供し、さまざまなアダプタ経由で転送します。</span><span class="sxs-lookup"><span data-stu-id="ba318-104"> provides the ability to coordinate application activity and transaction processing, dynamically route messages, validate and transform data, and transport over a variety of adapters.</span></span> [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="ba318-105">米国規格協会 ANSI accredited ヘルス レベル 7 (HL7) をリアルタイムで医療のデータを交換プロバイダーのネットワークで医療/管理用のアプリケーションによって使用される標準のメッセージングをサポートします。</span><span class="sxs-lookup"><span data-stu-id="ba318-105"> supports the American National Standards Institute (ANSI)-accredited Health Level Seven (HL7) messaging standard used by clinical and administrative applications in provider networks to exchange medical data in real-time.</span></span>  
+# <a name="logging-configuration"></a><span data-ttu-id="cb8fa-102">ログの構成</span><span class="sxs-lookup"><span data-stu-id="cb8fa-102">Logging Configuration</span></span>
+<span data-ttu-id="cb8fa-103">同時に、MicrosoftBizTalk サーバーと[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]病院、診療所、看護の現場自宅などの医療のトランザクションとデジタル エンタープライズ アプリケーション統合 (EAI) 通信をセキュリティで保護を提供します。</span><span class="sxs-lookup"><span data-stu-id="cb8fa-103">Together, MicrosoftBizTalk Server and [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] offer secure transactional and digital Enterprise Application Integration (EAI) communications for health care providers such as hospitals, clinics, and nursing homes.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="cb8fa-104"> アプリケーションの動作とトランザクション処理の調整、動的にメッセージをルーティング、検証、およびデータを変換する機能を提供し、さまざまなアダプターのトランスポート。</span><span class="sxs-lookup"><span data-stu-id="cb8fa-104"> provides the ability to coordinate application activity and transaction processing, dynamically route messages, validate and transform data, and transport over a variety of adapters.</span></span> [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="cb8fa-105"> 米国規格協会 ANSI 認定された正常性レベル 7 (HL7) をリアルタイムでの医療データを交換プロバイダーのネットワークで臨床および管理アプリケーションで使用される標準のメッセージングをサポートします。</span><span class="sxs-lookup"><span data-stu-id="cb8fa-105"> supports the American National Standards Institute (ANSI)-accredited Health Level Seven (HL7) messaging standard used by clinical and administrative applications in provider networks to exchange medical data in real-time.</span></span>  
   
- <span data-ttu-id="ba318-106">Accelerator システムを通過する HL7 メッセージは非常に重要となります。</span><span class="sxs-lookup"><span data-stu-id="ba318-106">The HL7 messages that pass through the accelerator system can be very critical.</span></span> <span data-ttu-id="ba318-107">たとえば、データは、患者の医療や金融取引可能性があります。</span><span class="sxs-lookup"><span data-stu-id="ba318-107">For example, the data could be a patient's medical record or a financial transaction.</span></span> <span data-ttu-id="ba318-108">HL7 のセキュリティとプライバシーの規制に準拠するには、システム管理者は、次の操作できる必要があります。</span><span class="sxs-lookup"><span data-stu-id="ba318-108">To ensure compliance with HL7 security and privacy regulations, system administrators must be able to do the following:</span></span>  
+ <span data-ttu-id="cb8fa-106">アクセラレータのシステムを通過する HL7 メッセージは非常に重要となります。</span><span class="sxs-lookup"><span data-stu-id="cb8fa-106">The HL7 messages that pass through the accelerator system can be very critical.</span></span> <span data-ttu-id="cb8fa-107">たとえば、データには、患者の医療記録または金融取引ができます。</span><span class="sxs-lookup"><span data-stu-id="cb8fa-107">For example, the data could be a patient's medical record or a financial transaction.</span></span> <span data-ttu-id="cb8fa-108">HL7 のセキュリティとプライバシー規制に準拠するため、システム管理者は、以下を実行できる必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb8fa-108">To ensure compliance with HL7 security and privacy regulations, system administrators must be able to do the following:</span></span>  
   
--   <span data-ttu-id="ba318-109">保留メッセージをデバッグします。</span><span class="sxs-lookup"><span data-stu-id="ba318-109">Debug suspended messages</span></span>  
+- <span data-ttu-id="cb8fa-109">保留メッセージをデバッグします。</span><span class="sxs-lookup"><span data-stu-id="cb8fa-109">Debug suspended messages</span></span>  
   
--   <span data-ttu-id="ba318-110">潜在的な侵入者を検出し、セキュリティ侵害のリスクを低減する継続的にシステムとファイルのアクセスを監視します。</span><span class="sxs-lookup"><span data-stu-id="ba318-110">Monitor system and file access on an ongoing basis to detect potential intruders and reduce the risk of security breaches</span></span>  
+- <span data-ttu-id="cb8fa-110">可能性のある侵入者の検知し、セキュリティ侵害のリスクを軽減する継続的にシステムとファイルのアクセスを監視します。</span><span class="sxs-lookup"><span data-stu-id="cb8fa-110">Monitor system and file access on an ongoing basis to detect potential intruders and reduce the risk of security breaches</span></span>  
   
- <span data-ttu-id="ba318-111">このセクションでは、監査を構成して、ログを確認し、監査データおよびイベント ログを解釈することを有効にして、ログに記録されたデータに対してクエリを実行する概念および手順に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="ba318-111">This section provides conceptual and procedural information to enable you to configure auditing and logging, examine and interpret audit data and event logs, and run queries against the logged data.</span></span>  
+  <span data-ttu-id="cb8fa-111">このセクションでは、監査を構成し、監査データおよびイベント ログを解釈し、確認、ログ記録を有効にして、ログに記録されたデータに対してクエリを実行する概念と手順の情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="cb8fa-111">This section provides conceptual and procedural information to enable you to configure auditing and logging, examine and interpret audit data and event logs, and run queries against the logged data.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="ba318-112">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="ba318-112">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="cb8fa-112">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="cb8fa-112">In This Section</span></span>  
   
--   [<span data-ttu-id="ba318-113">ログ処理の概要</span><span class="sxs-lookup"><span data-stu-id="ba318-113">About the Logging Process</span></span>](../../adapters-and-accelerators/accelerator-hl7/about-the-logging-process.md)  
+-   [<span data-ttu-id="cb8fa-113">ログ処理の概要</span><span class="sxs-lookup"><span data-stu-id="cb8fa-113">About the Logging Process</span></span>](../../adapters-and-accelerators/accelerator-hl7/about-the-logging-process.md)  
   
--   [<span data-ttu-id="ba318-114">ログ記録の構成</span><span class="sxs-lookup"><span data-stu-id="ba318-114">Configuring Logging</span></span>](../../adapters-and-accelerators/accelerator-hl7/configuring-logging.md)
+-   [<span data-ttu-id="cb8fa-114">ログ記録の構成</span><span class="sxs-lookup"><span data-stu-id="cb8fa-114">Configuring Logging</span></span>](../../adapters-and-accelerators/accelerator-hl7/configuring-logging.md)

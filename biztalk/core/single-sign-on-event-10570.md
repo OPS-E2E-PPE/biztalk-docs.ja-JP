@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10570 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10570 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b002e3ce3c887a088346b3832568aacdd5fd43f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c104ec3087f0e75feb3e21551ae880b2237c7946
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270234"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022824"
 ---
-# <a name="single-sign-on-event-10570"></a><span data-ttu-id="fdbaa-102">シングル サインオン: イベント 10570</span><span class="sxs-lookup"><span data-stu-id="fdbaa-102">Single Sign-On: Event 10570</span></span>
-## <a name="details"></a><span data-ttu-id="fdbaa-103">詳細</span><span class="sxs-lookup"><span data-stu-id="fdbaa-103">Details</span></span>  
+# <a name="single-sign-on-event-10570"></a><span data-ttu-id="7557c-102">シングル サインオン: イベント 10570</span><span class="sxs-lookup"><span data-stu-id="7557c-102">Single Sign-On: Event 10570</span></span>
+## <a name="details"></a><span data-ttu-id="7557c-103">詳細</span><span class="sxs-lookup"><span data-stu-id="7557c-103">Details</span></span>  
   
-|||  
-|-|-|  
-|<span data-ttu-id="fdbaa-104">製品名</span><span class="sxs-lookup"><span data-stu-id="fdbaa-104">Product Name</span></span>|<span data-ttu-id="fdbaa-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="fdbaa-105">Enterprise Single Sign-On</span></span>|  
-|<span data-ttu-id="fdbaa-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="fdbaa-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|<span data-ttu-id="fdbaa-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="fdbaa-107">Event ID</span></span>|<span data-ttu-id="fdbaa-108">10570</span><span class="sxs-lookup"><span data-stu-id="fdbaa-108">10570</span></span>|  
-|<span data-ttu-id="fdbaa-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="fdbaa-109">Event Source</span></span>|<span data-ttu-id="fdbaa-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="fdbaa-110">ENTSSO</span></span>|  
-|<span data-ttu-id="fdbaa-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="fdbaa-111">Component</span></span>|<span data-ttu-id="fdbaa-112">なし</span><span class="sxs-lookup"><span data-stu-id="fdbaa-112">N/A</span></span>|  
-|<span data-ttu-id="fdbaa-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="fdbaa-113">Symbolic Name</span></span>|<span data-ttu-id="fdbaa-114">SSO_WARN_SSO_DISABLED_FOR_CHANGE_SSO_ADMIN</span><span class="sxs-lookup"><span data-stu-id="fdbaa-114">SSO_WARN_SSO_DISABLED_FOR_CHANGE_SSO_ADMIN</span></span>|  
-|<span data-ttu-id="fdbaa-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="fdbaa-115">Message Text</span></span>|<span data-ttu-id="fdbaa-116">SSO 管理者アカウント名を更新するには、最初に SSO を無効にする必要があります。%r</span><span class="sxs-lookup"><span data-stu-id="fdbaa-116">To update the SSO Administrators account name you must first disable SSO.%r</span></span>|  
+|                 |                                                                             |
+|-----------------|-----------------------------------------------------------------------------|
+|  <span data-ttu-id="7557c-104">製品名</span><span class="sxs-lookup"><span data-stu-id="7557c-104">Product Name</span></span>   |                          <span data-ttu-id="7557c-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="7557c-105">Enterprise Single Sign-On</span></span>                          |
+| <span data-ttu-id="7557c-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="7557c-106">Product Version</span></span> |         [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]          |
+|    <span data-ttu-id="7557c-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="7557c-107">Event ID</span></span>     |                                    <span data-ttu-id="7557c-108">10570</span><span class="sxs-lookup"><span data-stu-id="7557c-108">10570</span></span>                                    |
+|  <span data-ttu-id="7557c-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="7557c-109">Event Source</span></span>   |                                   <span data-ttu-id="7557c-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="7557c-110">ENTSSO</span></span>                                    |
+|    <span data-ttu-id="7557c-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="7557c-111">Component</span></span>    |                                     <span data-ttu-id="7557c-112">なし</span><span class="sxs-lookup"><span data-stu-id="7557c-112">N/A</span></span>                                     |
+|  <span data-ttu-id="7557c-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="7557c-113">Symbolic Name</span></span>  |                 <span data-ttu-id="7557c-114">SSO_WARN_SSO_DISABLED_FOR_CHANGE_SSO_ADMIN</span><span class="sxs-lookup"><span data-stu-id="7557c-114">SSO_WARN_SSO_DISABLED_FOR_CHANGE_SSO_ADMIN</span></span>                  |
+|  <span data-ttu-id="7557c-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="7557c-115">Message Text</span></span>   | <span data-ttu-id="7557c-116">SSO 管理者アカウント名を更新するには、最初に SSO を無効にする必要があります。%r</span><span class="sxs-lookup"><span data-stu-id="7557c-116">To update the SSO Administrators account name you must first disable SSO.%r</span></span> |
   
-## <a name="explanation"></a><span data-ttu-id="fdbaa-117">説明</span><span class="sxs-lookup"><span data-stu-id="fdbaa-117">Explanation</span></span>  
- <span data-ttu-id="fdbaa-118">SSO 管理者アカウント名を更新するには、最初に SSO を無効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="fdbaa-118">To update the SSO Administrators account name you must first disable SSO.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="7557c-117">説明</span><span class="sxs-lookup"><span data-stu-id="7557c-117">Explanation</span></span>  
+ <span data-ttu-id="7557c-118">SSO 管理者アカウント名を更新するには、最初に SSO を無効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="7557c-118">To update the SSO Administrators account name you must first disable SSO.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="fdbaa-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="fdbaa-119">User Action</span></span>  
- <span data-ttu-id="fdbaa-120">SSO を無効にする方法については、次を参照してください。 [SSO を無効にする方法](../core/how-to-disable-sso.md)です。</span><span class="sxs-lookup"><span data-stu-id="fdbaa-120">For information on disabling SSO, see [How to Disable SSO](../core/how-to-disable-sso.md).</span></span>
+## <a name="user-action"></a><span data-ttu-id="7557c-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="7557c-119">User Action</span></span>  
+ <span data-ttu-id="7557c-120">SSO を無効にする方法の詳細については、次を参照してください。 [SSO を無効にする方法](../core/how-to-disable-sso.md)します。</span><span class="sxs-lookup"><span data-stu-id="7557c-120">For information on disabling SSO, see [How to Disable SSO](../core/how-to-disable-sso.md).</span></span>

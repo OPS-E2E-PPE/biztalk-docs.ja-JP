@@ -1,5 +1,5 @@
 ---
-title: '手順 3: Oracle データベース アダプターに移行したアプリケーションのテスト |Microsoft ドキュメント'
+title: '手順 3: Oracle データベース アダプターに移行したアプリケーションのテスト |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,55 +12,55 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30b5871aee85316b9885bd1ec22f4118c83743d1
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 8cdd41227b8c51eae6a1f1d2e11f3b3b792482f4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25962896"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36970379"
 ---
-# <a name="step-3-test-the-migrated-application-to-oracle-database-adapter"></a><span data-ttu-id="5f272-102">手順 3: Oracle データベース アダプターに移行したアプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="5f272-102">Step 3: Test the migrated application to Oracle Database adapter</span></span>
-<span data-ttu-id="5f272-103">![手順 3 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="5f272-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
+# <a name="step-3-test-the-migrated-application-to-oracle-database-adapter"></a><span data-ttu-id="d9885-102">手順 3: Oracle データベース アダプターに移行したアプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="d9885-102">Step 3: Test the migrated application to Oracle Database adapter</span></span>
+<span data-ttu-id="d9885-103">![ステップ 3/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="d9885-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
   
- <span data-ttu-id="5f272-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="5f272-104">**Time to complete:** 5 minutes</span></span>  
+ <span data-ttu-id="d9885-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="d9885-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="5f272-105">**目標:** この手順では、上、SCOTT は挿入操作を実行することによって移行済みのアプリケーションをテストします。CUSTOMER テーブル。</span><span class="sxs-lookup"><span data-stu-id="5f272-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the SCOTT.CUSTOMER table.</span></span> <span data-ttu-id="5f272-106">これを行うには、vPrev Oracle データベース アダプターを使用して生成されたスキーマに準拠している要求メッセージをドロップします。</span><span class="sxs-lookup"><span data-stu-id="5f272-106">To do this, you drop a request message that conforms to the schema generated using the vPrev Oracle Database adapter.</span></span>  
+ <span data-ttu-id="d9885-105">**目標:** この手順では、SCOTT に対して、挿入操作を実行することによって移行済みのアプリケーションをテストします。CUSTOMER テーブル。</span><span class="sxs-lookup"><span data-stu-id="d9885-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the SCOTT.CUSTOMER table.</span></span> <span data-ttu-id="d9885-106">これを行うには、vPrev Oracle データベース アダプターを使用して生成されたスキーマに準拠した要求メッセージをドロップします。</span><span class="sxs-lookup"><span data-stu-id="d9885-106">To do this, you drop a request message that conforms to the schema generated using the vPrev Oracle Database adapter.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="5f272-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="5f272-107">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="d9885-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="d9885-107">Prerequisites</span></span>  
   
--   <span data-ttu-id="5f272-108">BizTalk Server 管理コンソールで物理ポートを BizTalk オーケストレーションの論理ポートにマップして、BizTalk アプリケーションを構成します。</span><span class="sxs-lookup"><span data-stu-id="5f272-108">Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.</span></span>  
+- <span data-ttu-id="d9885-108">BizTalk アプリケーションを構成するには、BizTalk オーケストレーションの論理ポートを BizTalk Server 管理コンソールで物理ポートにマッピングします。</span><span class="sxs-lookup"><span data-stu-id="d9885-108">Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.</span></span>  
   
--   <span data-ttu-id="5f272-109">WCF ベースの Wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成する[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="5f272-109">Configure the BizTalk application to use the WCF-Custom send port for the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span>  
+- <span data-ttu-id="d9885-109">WCF ベースの Wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成する[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="d9885-109">Configure the BizTalk application to use the WCF-Custom send port for the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span>  
   
-### <a name="to-test-the-migrated-application"></a><span data-ttu-id="5f272-110">移行したアプリケーションをテストするには</span><span class="sxs-lookup"><span data-stu-id="5f272-110">To test the migrated application</span></span>  
+### <a name="to-test-the-migrated-application"></a><span data-ttu-id="d9885-110">移行したアプリケーションをテストするには</span><span class="sxs-lookup"><span data-stu-id="d9885-110">To test the migrated application</span></span>  
   
-1.  <span data-ttu-id="5f272-111">Oracle_Migration フォルダーから OracleInsert.xml 要求メッセージをコピーします。</span><span class="sxs-lookup"><span data-stu-id="5f272-111">From the Oracle_Migration folder, copy the OracleInsert.xml request message.</span></span> <span data-ttu-id="5f272-112">この要求メッセージは、vPrev Oracle データベース アダプターによって生成されたスキーマに準拠しています。</span><span class="sxs-lookup"><span data-stu-id="5f272-112">This request message conforms to the schema generated by the vPrev Oracle Database adapter.</span></span> <span data-ttu-id="5f272-113">送信マップを使用して、Wcf-custom 送信ポートに変換 WCF ベースのスキーマに準拠するようにこの[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]し、Oracle データベースに送信します。</span><span class="sxs-lookup"><span data-stu-id="5f272-113">Using the outbound map, the WCF-Custom send port converts this to conform to the schema for the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] and sends it to the Oracle database.</span></span>  
+1. <span data-ttu-id="d9885-111">Oracle_Migration フォルダーから OracleInsert.xml 要求メッセージをコピーします。</span><span class="sxs-lookup"><span data-stu-id="d9885-111">From the Oracle_Migration folder, copy the OracleInsert.xml request message.</span></span> <span data-ttu-id="d9885-112">この要求メッセージは、vPrev Oracle データベース アダプターによって生成されたスキーマに準拠しています。</span><span class="sxs-lookup"><span data-stu-id="d9885-112">This request message conforms to the schema generated by the vPrev Oracle Database adapter.</span></span> <span data-ttu-id="d9885-113">送信マップを使用して、Wcf-custom 送信ポートに変換します WCF ベースのスキーマに準拠するようにこの[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]Oracle データベースに送信します。</span><span class="sxs-lookup"><span data-stu-id="d9885-113">Using the outbound map, the WCF-Custom send port converts this to conform to the schema for the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] and sends it to the Oracle database.</span></span>  
   
-    ```  
-    <ns0:Insert xmlns:ns0="http://schemas.microsoft.com/[OracleDb://ADAPTER/SCOTT/Tables/CUSTOMER]">  
-      <ns0:Rows>  
-        <ns0:InsertRecord>  
-          <ns0:NAME>Customer_1</ns0:NAME>  
-          <ns0:STREET>Street_1</ns0:STREET>  
-          <ns0:CITY>City_1</ns0:CITY>  
-        </ns0:InsertRecord>  
-        <ns0:InsertRecord>  
-          <ns0:NAME>Customer_2</ns0:NAME>  
-          <ns0:STREET>Street_2</ns0:STREET>  
-          <ns0:CITY>City_2</ns0:CITY>  
-        </ns0:InsertRecord>  
-      </ns0:Rows>  
-    </ns0:Insert>  
-    ```  
+   ```  
+   <ns0:Insert xmlns:ns0="http://schemas.microsoft.com/[OracleDb://ADAPTER/SCOTT/Tables/CUSTOMER]">  
+     <ns0:Rows>  
+       <ns0:InsertRecord>  
+         <ns0:NAME>Customer_1</ns0:NAME>  
+         <ns0:STREET>Street_1</ns0:STREET>  
+         <ns0:CITY>City_1</ns0:CITY>  
+       </ns0:InsertRecord>  
+       <ns0:InsertRecord>  
+         <ns0:NAME>Customer_2</ns0:NAME>  
+         <ns0:STREET>Street_2</ns0:STREET>  
+         <ns0:CITY>City_2</ns0:CITY>  
+       </ns0:InsertRecord>  
+     </ns0:Rows>  
+   </ns0:Insert>  
+   ```  
   
-2.  <span data-ttu-id="5f272-114">貼り付けをファイルにマップされているフォルダーに要求メッセージの受信場所。</span><span class="sxs-lookup"><span data-stu-id="5f272-114">Paste the request message to the folder mapped to the file receive location.</span></span>  
+2. <span data-ttu-id="d9885-114">貼り付け、ファイルにマップされているフォルダーに要求メッセージの受信場所。</span><span class="sxs-lookup"><span data-stu-id="d9885-114">Paste the request message to the folder mapped to the file receive location.</span></span>  
   
-3.  <span data-ttu-id="5f272-115">オーケストレーションは、要求メッセージを使用して、Oracle データベースに送信します。</span><span class="sxs-lookup"><span data-stu-id="5f272-115">The orchestration consumes the request message and sends it to the Oracle database.</span></span> <span data-ttu-id="5f272-116">WCF ベースのスキーマに準拠するスキーマで、Oracle データベースからの応答が受信した[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="5f272-116">The response from the Oracle database is received in the schema that conforms with the schema of the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="5f272-117">受信マップを使用して、Wcf-custom 送信ポートに変換しますこの vPrev Oracle データベース アダプター用のスキーマにします。</span><span class="sxs-lookup"><span data-stu-id="5f272-117">Using the inbound map, the WCF-Custom send port converts this to the schema for the vPrev Oracle Database adapter.</span></span> <span data-ttu-id="5f272-118">Oracle データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。</span><span class="sxs-lookup"><span data-stu-id="5f272-118">The response from the Oracle database is saved to the other file location defined as part of the orchestration.</span></span> <span data-ttu-id="5f272-119">上記の要求メッセージに対する応答は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="5f272-119">The response for the preceding request message is:</span></span>  
+3. <span data-ttu-id="d9885-115">オーケストレーションでは、要求メッセージを使用し、Oracle データベースに送信します。</span><span class="sxs-lookup"><span data-stu-id="d9885-115">The orchestration consumes the request message and sends it to the Oracle database.</span></span> <span data-ttu-id="d9885-116">WCF ベースのスキーマに準拠するスキーマで、Oracle データベースからの応答が受信した[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="d9885-116">The response from the Oracle database is received in the schema that conforms with the schema of the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="d9885-117">受信マップを使用して、Wcf-custom 送信ポートに変換しますこの vPrev Oracle データベース アダプター用のスキーマにします。</span><span class="sxs-lookup"><span data-stu-id="d9885-117">Using the inbound map, the WCF-Custom send port converts this to the schema for the vPrev Oracle Database adapter.</span></span> <span data-ttu-id="d9885-118">Oracle データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。</span><span class="sxs-lookup"><span data-stu-id="d9885-118">The response from the Oracle database is saved to the other file location defined as part of the orchestration.</span></span> <span data-ttu-id="d9885-119">前の要求メッセージに対する応答は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="d9885-119">The response for the preceding request message is:</span></span>  
   
-    ```  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <ns0:InsertResponse xmlns:ns0="http://schemas.microsoft.com/[OracleDb://ADAPTER/SCOTT/Tables/CUSTOMER]"></ns0:InsertResponse>  
-    ```  
+   ```  
+   <?xml version="1.0" encoding="utf-8"?>  
+   <ns0:InsertResponse xmlns:ns0="http://schemas.microsoft.com/[OracleDb://ADAPTER/SCOTT/Tables/CUSTOMER]"></ns0:InsertResponse>  
+   ```  
   
-## <a name="see-also"></a><span data-ttu-id="5f272-120">参照</span><span class="sxs-lookup"><span data-stu-id="5f272-120">See Also</span></span>  
- <span data-ttu-id="5f272-121">[チュートリアル: BizTalk プロジェクトを移行します。](https://msdn.microsoft.com/library/dd788186(v=bts.80).aspx)</span><span class="sxs-lookup"><span data-stu-id="5f272-121">[Tutorial: Migrating BizTalk Projects](https://msdn.microsoft.com/library/dd788186(v=bts.80).aspx)</span></span>
+## <a name="see-also"></a><span data-ttu-id="d9885-120">参照</span><span class="sxs-lookup"><span data-stu-id="d9885-120">See Also</span></span>  
+ <span data-ttu-id="d9885-121">[チュートリアル: BizTalk プロジェクトを移行します。](https://msdn.microsoft.com/library/dd788186(v=bts.80).aspx)</span><span class="sxs-lookup"><span data-stu-id="d9885-121">[Tutorial: Migrating BizTalk Projects](https://msdn.microsoft.com/library/dd788186(v=bts.80).aspx)</span></span>
