@@ -1,5 +1,5 @@
 ---
-title: 公開済み WCF サービスでの SOAP ヘッダー |Microsoft ドキュメント
+title: 公開済み WCF サービスでの SOAP ヘッダー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,23 +16,23 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78f36e778930a781ac797e18308240ecb4bef667
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: ea48ab7afeae2b54136c9134d3ef92878b802924
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975688"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985371"
 ---
-# <a name="soap-headers-with-published-wcf-services"></a><span data-ttu-id="bd47e-102">公開済み WCF サービスでの SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bd47e-102">SOAP Headers with Published WCF Services</span></span>
-<span data-ttu-id="bd47e-103">WCF 受信アダプター、受信メッセージにすべての SOAP ヘッダーの値をコピーすることができます、 **InboundHeaders**プロパティ、またはこれらを作成したりできます指定の値を BizTalk メッセージ コンテキストに昇格します。</span><span class="sxs-lookup"><span data-stu-id="bd47e-103">The WCF receive adapters can copy all the SOAP header values in the inbound messages to the **InboundHeaders** property, or they can write or promote specified values to the BizTalk message context.</span></span> <span data-ttu-id="bd47e-104">WCF アダプタでは、カスタムの SOAP ヘッダーと、WCF インフラストラクチャが使用する WS-Addressing、WS-Security、WS-AtomicTransaction などの標準 SOAP ヘッダーの両方を処理できます。</span><span class="sxs-lookup"><span data-stu-id="bd47e-104">The adapters can work with both custom SOAP headers and standard SOAP headers that the WCF infrastructure uses, such as WS-Addressing, WS-Security, and WS-AtomicTransaction.</span></span> <span data-ttu-id="bd47e-105">**InboundHeaders**コンテキスト プロパティがターゲットの名前空間内に**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**SOAP の文字列表現が含まれています受信メッセージのヘッダー値。</span><span class="sxs-lookup"><span data-stu-id="bd47e-105">The **InboundHeaders** context property is in the target namespace **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**, and contains string representations of the SOAP header values in inbound messages.</span></span>  
+# <a name="soap-headers-with-published-wcf-services"></a><span data-ttu-id="534be-102">公開済み WCF サービスでの SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="534be-102">SOAP Headers with Published WCF Services</span></span>
+<span data-ttu-id="534be-103">WCF 受信アダプタへの受信メッセージですべての SOAP ヘッダーの値をコピーすることができます、 **InboundHeaders**プロパティ、またはこれらできます記述または指定された値を BizTalk メッセージ コンテキストに昇格します。</span><span class="sxs-lookup"><span data-stu-id="534be-103">The WCF receive adapters can copy all the SOAP header values in the inbound messages to the **InboundHeaders** property, or they can write or promote specified values to the BizTalk message context.</span></span> <span data-ttu-id="534be-104">WCF アダプタでは、カスタムの SOAP ヘッダーと、WCF インフラストラクチャが使用する WS-Addressing、WS-Security、WS-AtomicTransaction などの標準 SOAP ヘッダーの両方を処理できます。</span><span class="sxs-lookup"><span data-stu-id="534be-104">The adapters can work with both custom SOAP headers and standard SOAP headers that the WCF infrastructure uses, such as WS-Addressing, WS-Security, and WS-AtomicTransaction.</span></span> <span data-ttu-id="534be-105">**InboundHeaders**コンテキスト プロパティは、ターゲットの名前空間**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**、受信メッセージの SOAP ヘッダーの値の文字列表現が含まれています。</span><span class="sxs-lookup"><span data-stu-id="534be-105">The **InboundHeaders** context property is in the target namespace **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**, and contains string representations of the SOAP header values in inbound messages.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="bd47e-106">指定した SOAP ヘッダーの値を昇格させる場合は、昇格対象の値に対応するプロパティ スキーマが、BizTalk プロジェクト内で展開されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="bd47e-106">If you are going to promote the SOAP header values you specified, there must be a deployed property schema in your BizTalk project that corresponds to the values you are promoting.</span></span>  
+>  <span data-ttu-id="534be-106">指定した SOAP ヘッダーの値を昇格させる場合は、昇格対象の値に対応するプロパティ スキーマが、BizTalk プロジェクト内で展開されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="534be-106">If you are going to promote the SOAP header values you specified, there must be a deployed property schema in your BizTalk project that corresponds to the values you are promoting.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="bd47e-107">昇格されたプロパティの長さは 256 文字以下にしてください。</span><span class="sxs-lookup"><span data-stu-id="bd47e-107">The promoted properties cannot be longer than 256 characters.</span></span>  
+>  <span data-ttu-id="534be-107">昇格されたプロパティの長さは 256 文字以下にしてください。</span><span class="sxs-lookup"><span data-stu-id="534be-107">The promoted properties cannot be longer than 256 characters.</span></span>  
   
- <span data-ttu-id="bd47e-108">次の XML データの SOAP ヘッダーの文字列表現の例を示しています、 **InboundHeaders**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="bd47e-108">The following XML data shows an example of the string representation of the SOAP headers for the **InboundHeaders** property.</span></span> <span data-ttu-id="bd47e-109">これはクライアントから渡されて、BizTalk 受信場所に送信されます。</span><span class="sxs-lookup"><span data-stu-id="bd47e-109">This comes from the client and is sent to the BizTalk receive location.</span></span>  
+ <span data-ttu-id="534be-108">次の XML データの SOAP ヘッダーの文字列表現の例を示しています、 **InboundHeaders**プロパティ。</span><span class="sxs-lookup"><span data-stu-id="534be-108">The following XML data shows an example of the string representation of the SOAP headers for the **InboundHeaders** property.</span></span> <span data-ttu-id="534be-109">これはクライアントから渡されて、BizTalk 受信場所に送信されます。</span><span class="sxs-lookup"><span data-stu-id="534be-109">This comes from the client and is sent to the BizTalk receive location.</span></span>  
   
 ```  
 <headers>  
@@ -44,17 +44,17 @@ ms.locfileid: "25975688"
 </headers>  
 ```  
   
- <span data-ttu-id="bd47e-110">SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させるには、プロパティ名と名前空間で構成される値ペアのコレクションを WCF メッセージに挿入することにより、ヘッダー値の書き込みまたは昇格を実行する必要があることを、WCF アダプタが認識できるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="bd47e-110">To write or promote SOAP header values to the BizTalk message context, you need to put a collection of value pairs that consist of property name and namespace into the WCF message so that the WCF adapters will recognize that the header values are to be written or promoted.</span></span> <span data-ttu-id="bd47e-111">WCF アダプターで SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させるには、WCF メッセージで次のメッセージ プロパティを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bd47e-111">A WCF adapter expects the following message properties in the WCF messages for writing or promoting SOAP header values to the BizTalk message context:</span></span>  
+ <span data-ttu-id="534be-110">SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させるには、プロパティ名と名前空間で構成される値ペアのコレクションを WCF メッセージに挿入することにより、ヘッダー値の書き込みまたは昇格を実行する必要があることを、WCF アダプタが認識できるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="534be-110">To write or promote SOAP header values to the BizTalk message context, you need to put a collection of value pairs that consist of property name and namespace into the WCF message so that the WCF adapters will recognize that the header values are to be written or promoted.</span></span> <span data-ttu-id="534be-111">WCF アダプターで SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させるには、WCF メッセージで次のメッセージ プロパティを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="534be-111">A WCF adapter expects the following message properties in the WCF messages for writing or promoting SOAP header values to the BizTalk message context:</span></span>  
   
--   <span data-ttu-id="bd47e-112">BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格するには、WCF アダプタを探しているキーのペアは、 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**および値**ボックスの一覧\<KeyValuePair\<XmlQualifiedName、オブジェクト\>\>** です。</span><span class="sxs-lookup"><span data-stu-id="bd47e-112">To promote the SOAP header values to the BizTalk message context, WCF adapters are looking for the pair of key **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote** and value **List\<KeyValuePair\<XmlQualifiedName, object\>\>**.</span></span>  
+- <span data-ttu-id="534be-112">BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格するには、WCF アダプターを検索して、キーのペアを**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**と値**一覧\<KeyValuePair\<XmlQualifiedName、オブジェクト\>\>**.</span><span class="sxs-lookup"><span data-stu-id="534be-112">To promote the SOAP header values to the BizTalk message context, WCF adapters are looking for the pair of key **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote** and value **List\<KeyValuePair\<XmlQualifiedName, object\>\>**.</span></span>  
   
-     <span data-ttu-id="bd47e-113">このペアを使用して、WCF アダプタを実行し、名前空間、名前からの値、 **XmlQualifiedName**オブジェクトおよびヘッダーの値を昇格させるために使用します。</span><span class="sxs-lookup"><span data-stu-id="bd47e-113">Using this pair, WCF adapters take the namespace, name, and value from the **XmlQualifiedName** object and use them for promoting the header values.</span></span>  
+   <span data-ttu-id="534be-113">このペアを使用して、WCF アダプタを名前空間、名前、および値から、 **XmlQualifiedName**オブジェクトし、ヘッダーの値を昇格する場合に使用します。</span><span class="sxs-lookup"><span data-stu-id="534be-113">Using this pair, WCF adapters take the namespace, name, and value from the **XmlQualifiedName** object and use them for promoting the header values.</span></span>  
   
--   <span data-ttu-id="bd47e-114">書き込むが、BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格しません、WCF アダプタを探しているキーのペアは、 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**および値**リスト\<KeyValuePair\<XmlQualifiedName、オブジェクト\>\>** です。</span><span class="sxs-lookup"><span data-stu-id="bd47e-114">To write but not promote the SOAP header values to the BizTalk message context, WCF adapters are looking for the pair of key **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext** and value **List\<KeyValuePair\<XmlQualifiedName, object\>\>**.</span></span>  
+- <span data-ttu-id="534be-114">書き込むが、SOAP ヘッダーの値を BizTalk メッセージ コンテキストに昇格させること、WCF アダプターを検索して、キーのペアを**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**と値**一覧\<KeyValuePair\<XmlQualifiedName、オブジェクト\>\>** します。</span><span class="sxs-lookup"><span data-stu-id="534be-114">To write but not promote the SOAP header values to the BizTalk message context, WCF adapters are looking for the pair of key **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext** and value **List\<KeyValuePair\<XmlQualifiedName, object\>\>**.</span></span>  
   
-     <span data-ttu-id="bd47e-115">WCF アダプターは、このペアを使用して、値をメッセージ コンテキストに書き込みます。</span><span class="sxs-lookup"><span data-stu-id="bd47e-115">Using this pair, WCF adapters write the values to the message context.</span></span>  
+   <span data-ttu-id="534be-115">WCF アダプターは、このペアを使用して、値をメッセージ コンテキストに書き込みます。</span><span class="sxs-lookup"><span data-stu-id="534be-115">Using this pair, WCF adapters write the values to the message context.</span></span>  
   
- <span data-ttu-id="bd47e-116">次のコードは、SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させる方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="bd47e-116">The following code shows how to write or promote the SOAP header values to the BizTalk message context:</span></span>  
+  <span data-ttu-id="534be-116">次のコードは、SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させる方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="534be-116">The following code shows how to write or promote the SOAP header values to the BizTalk message context:</span></span>  
   
 ```  
 const string PropertiesToPromoteKey="http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote";  
@@ -75,9 +75,9 @@ writeProps.Add(new KeyValuePair<XmlQualifiedName, object>(PropName2, "Property v
 wcfMessage.Properties[PropertiesToWriteKey]=writeProps;  
 ```  
   
- <span data-ttu-id="bd47e-117">BizTalk WCF サービス公開ウィザードで生成されたメタデータには、カスタム SOAP ヘッダーの定義が含まれません。</span><span class="sxs-lookup"><span data-stu-id="bd47e-117">The BizTalk WCF Service Publishing Wizard does not include custom SOAP header definitions in the generated metadata.</span></span> <span data-ttu-id="bd47e-118">カスタム SOAP ヘッダーを使用して、WCF サービスにメタデータを公開するには、Web サービス記述言語 (WSDL) ファイルを手動で作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bd47e-118">To publish metadata for WCF services using custom SOAP headers, you should manually create a Web Services Description Language (WSDL) file.</span></span> <span data-ttu-id="bd47e-119">使用することができます、 **externalMetadataLocation**の属性、 [ \<serviceMetadata\> ](http://go.microsoft.com/fwlink/?LinkId=89121)の場所を指定して、ウィザードを生成する Web.config ファイル内の要素、WSDL ファイルです。</span><span class="sxs-lookup"><span data-stu-id="bd47e-119">You can use the **externalMetadataLocation** attribute of the [\<serviceMetadata\>](http://go.microsoft.com/fwlink/?LinkId=89121) element in the Web.config file that the wizard generates to specify the location of the WSDL file.</span></span> <span data-ttu-id="bd47e-120">この WSDL ファイルは、WSDL およびメタデータ交換 (MEX) 要求の応答として、自動生成された WSDL の代わりにユーザーに返されます。</span><span class="sxs-lookup"><span data-stu-id="bd47e-120">The WSDL file is returned to the user in response to WSDL and metadata exchange (MEX) requests instead of the auto-generated WSDL.</span></span>  
+ <span data-ttu-id="534be-117">BizTalk WCF サービス公開ウィザードで生成されたメタデータには、カスタム SOAP ヘッダーの定義が含まれません。</span><span class="sxs-lookup"><span data-stu-id="534be-117">The BizTalk WCF Service Publishing Wizard does not include custom SOAP header definitions in the generated metadata.</span></span> <span data-ttu-id="534be-118">カスタム SOAP ヘッダーを使用して、WCF サービスにメタデータを公開するには、Web サービス記述言語 (WSDL) ファイルを手動で作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="534be-118">To publish metadata for WCF services using custom SOAP headers, you should manually create a Web Services Description Language (WSDL) file.</span></span> <span data-ttu-id="534be-119">使用することができます、 **externalMetadataLocation**の属性、 [ \<serviceMetadata\> ](http://go.microsoft.com/fwlink/?LinkId=89121)の場所を指定して、ウィザードが生成する Web.config ファイル内の要素、WSDL ファイルです。</span><span class="sxs-lookup"><span data-stu-id="534be-119">You can use the **externalMetadataLocation** attribute of the [\<serviceMetadata\>](http://go.microsoft.com/fwlink/?LinkId=89121) element in the Web.config file that the wizard generates to specify the location of the WSDL file.</span></span> <span data-ttu-id="534be-120">この WSDL ファイルは、WSDL およびメタデータ交換 (MEX) 要求の応答として、自動生成された WSDL の代わりにユーザーに返されます。</span><span class="sxs-lookup"><span data-stu-id="534be-120">The WSDL file is returned to the user in response to WSDL and metadata exchange (MEX) requests instead of the auto-generated WSDL.</span></span>  
   
- <span data-ttu-id="bd47e-121">次の XML データは、カスタム SOAP ヘッダーを定義する WSDL ファイルの一部を示しています。</span><span class="sxs-lookup"><span data-stu-id="bd47e-121">The following XML data shows an example of a part of the WSDL file defining custom SOAP headers:</span></span>  
+ <span data-ttu-id="534be-121">次の XML データは、カスタム SOAP ヘッダーを定義する WSDL ファイルの一部を示しています。</span><span class="sxs-lookup"><span data-stu-id="534be-121">The following XML data shows an example of a part of the WSDL file defining custom SOAP headers:</span></span>  
   
 ```  
 <wsdl:operation name="Request">  
@@ -93,12 +93,12 @@ wcfMessage.Properties[PropertiesToWriteKey]=writeProps;
 </wsdl:operation>  
 ```  
   
-## <a name="in-this-section"></a><span data-ttu-id="bd47e-122">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="bd47e-122">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="534be-122">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="534be-122">In This Section</span></span>  
   
--   [<span data-ttu-id="bd47e-123">オーケストレーションにおける WCF メッセージでの SOAP ヘッダーへのアクセス</span><span class="sxs-lookup"><span data-stu-id="bd47e-123">Accessing SOAP Headers in WCF Messages with Orchestrations</span></span>](../core/accessing-soap-headers-in-wcf-messages-with-orchestrations.md)  
+-   [<span data-ttu-id="534be-123">オーケストレーションにおける WCF メッセージでの SOAP ヘッダーへのアクセス</span><span class="sxs-lookup"><span data-stu-id="534be-123">Accessing SOAP Headers in WCF Messages with Orchestrations</span></span>](../core/accessing-soap-headers-in-wcf-messages-with-orchestrations.md)  
   
--   [<span data-ttu-id="bd47e-124">パイプライン コンポーネントにおける WCF メッセージでの SOAP ヘッダーへのアクセス</span><span class="sxs-lookup"><span data-stu-id="bd47e-124">Accessing SOAP Headers in WCF Messages with Pipeline Components</span></span>](../core/accessing-soap-headers-in-wcf-messages-with-pipeline-components.md)  
+-   [<span data-ttu-id="534be-124">パイプライン コンポーネントにおける WCF メッセージでの SOAP ヘッダーへのアクセス</span><span class="sxs-lookup"><span data-stu-id="534be-124">Accessing SOAP Headers in WCF Messages with Pipeline Components</span></span>](../core/accessing-soap-headers-in-wcf-messages-with-pipeline-components.md)  
   
-## <a name="see-also"></a><span data-ttu-id="bd47e-125">参照</span><span class="sxs-lookup"><span data-stu-id="bd47e-125">See Also</span></span>  
- <span data-ttu-id="bd47e-126">[WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md) </span><span class="sxs-lookup"><span data-stu-id="bd47e-126">[WCF Adapters Property Schema and Properties](../core/wcf-adapters-property-schema-and-properties.md) </span></span>  
- [<span data-ttu-id="bd47e-127">消費済み WCF サービスでの SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bd47e-127">SOAP Headers with Consumed WCF Services</span></span>](../core/soap-headers-with-consumed-wcf-services.md)
+## <a name="see-also"></a><span data-ttu-id="534be-125">参照</span><span class="sxs-lookup"><span data-stu-id="534be-125">See Also</span></span>  
+ <span data-ttu-id="534be-126">[WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md) </span><span class="sxs-lookup"><span data-stu-id="534be-126">[WCF Adapters Property Schema and Properties](../core/wcf-adapters-property-schema-and-properties.md) </span></span>  
+ [<span data-ttu-id="534be-127">消費済み WCF サービスでの SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="534be-127">SOAP Headers with Consumed WCF Services</span></span>](../core/soap-headers-with-consumed-wcf-services.md)

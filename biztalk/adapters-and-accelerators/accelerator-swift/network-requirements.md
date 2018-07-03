@@ -1,5 +1,5 @@
 ---
-title: ネットワークの要件 |Microsoft ドキュメント
+title: ネットワークの要件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f945201cb19f4281980583f847a587fb1c2f6ecc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbc2db94a98e7bfca6b5fc5b9c16ceb304b5d22b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22213970"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988467"
 ---
-# <a name="network-requirements"></a><span data-ttu-id="c25b5-102">ネットワーク要件</span><span class="sxs-lookup"><span data-stu-id="c25b5-102">Network Requirements</span></span>
-<span data-ttu-id="c25b5-103">次のネットワーク コンポーネントを指定された展開アーキテクチャをビルドする必要があります。</span><span class="sxs-lookup"><span data-stu-id="c25b5-103">You will need the following network components to build the prescribed deployment architecture:</span></span>  
-  
--   <span data-ttu-id="c25b5-104">などのファイアウォール サーバー、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Internet Security and Acceleration (ISA) Server です。</span><span class="sxs-lookup"><span data-stu-id="c25b5-104">A firewall server such as the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Internet Security and Acceleration (ISA) Server.</span></span>
+# <a name="network-requirements"></a><span data-ttu-id="e8cdb-102">ネットワークの要件</span><span class="sxs-lookup"><span data-stu-id="e8cdb-102">Network Requirements</span></span>
+<span data-ttu-id="e8cdb-103">次のネットワーク コンポーネントの規定された展開アーキテクチャを構築する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e8cdb-103">You will need the following network components to build the prescribed deployment architecture:</span></span>  
+
+- <span data-ttu-id="e8cdb-104">Microsoft Internet Security and Acceleration (ISA) Server などのファイアウォール サーバー。</span><span class="sxs-lookup"><span data-stu-id="e8cdb-104">A firewall server such as the Microsoft Internet Security and Acceleration (ISA) Server.</span></span>
