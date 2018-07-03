@@ -1,5 +1,5 @@
 ---
-title: AS2 over File (BizTalk Server サンプル) |Microsoft ドキュメント
+title: AS2 over File (BizTalk Server サンプル) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,139 +12,143 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 14d4c077cce861e94f6c2cdc0bfc6f4a14669340
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 0ad2254a4f6df5812d04823022a8ef3a66747530
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "25966792"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36967115"
 ---
-# <a name="as2-over-file-biztalk-server-sample"></a><span data-ttu-id="cc1d9-102">AS2 Over File (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="cc1d9-102">AS2 over File (BizTalk Server Sample)</span></span>
-<span data-ttu-id="cc1d9-103">AS2 Over File サンプルでは、FILE 受信場所経由で AS2 メッセージを受信する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-103">The AS2 Over File sample demonstrates how to receive an AS2 message over a FILE receive location.</span></span> <span data-ttu-id="cc1d9-104">これにより、通常使用される HTTP アダプタではなく、FILE アダプタを使用して AS2 メッセージを受信できます。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-104">This enables you to use a FILE adapter to receive the AS2 message, rather than an HTTP adapter, which is normally used.</span></span> <span data-ttu-id="cc1d9-105">そのために、このソリューションは、AS2 デコーダーの要求に応じて、AS2 メッセージの HTTP ヘッダーを InboundHTTPHeaders コンテキスト プロパティに書き込みます。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-105">To do so, this solution writes the HTTP headers in the AS2 message to the InboundHTTPHeaders context property, as required by the AS2 Decoder.</span></span>  
-  
-## <a name="what-this-sample-does"></a><span data-ttu-id="cc1d9-106">このサンプルの処理</span><span class="sxs-lookup"><span data-stu-id="cc1d9-106">What This Sample Does</span></span>  
- <span data-ttu-id="cc1d9-107">このサンプルでは、HTTP アダプタを使用せずに AS2 メッセージの HTTP ヘッダーを処理する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-107">This sample demonstrates how to process the HTTP headers in an AS2 message without having an HTTP adapter.</span></span> <span data-ttu-id="cc1d9-108">具体的には、このサンプルは以下の処理を行います。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-108">Specifically, this sample does the following:</span></span>  
-  
-1.  <span data-ttu-id="cc1d9-109">テスト メッセージを入力フォルダにドロップすると、FILE 受信場所がそのメッセージを取得します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-109">When you drop the test message into an input folder, the FILE receive location picks it up.</span></span>  
-  
-2.  <span data-ttu-id="cc1d9-110">カスタム AS2 受信パイプラインのカスタム パイプライン コンポーネントはメッセージを処理し、HTTP ヘッダーを InboundHTTPHeaders コンテキスト プロパティに書き込みます。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-110">The custom pipeline component in the custom AS2 receive pipeline processes the message, writing its HTTP headers to the InboundHTTPHeaders context property.</span></span>  
-  
+# <a name="as2-over-file-biztalk-server-sample"></a><span data-ttu-id="bec9c-102">AS2 Over File (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="bec9c-102">AS2 over File (BizTalk Server Sample)</span></span>
+<span data-ttu-id="bec9c-103">AS2 Over File サンプルでは、FILE 受信場所経由で AS2 メッセージを受信する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-103">The AS2 Over File sample demonstrates how to receive an AS2 message over a FILE receive location.</span></span> <span data-ttu-id="bec9c-104">これにより、通常使用される HTTP アダプタではなく、FILE アダプタを使用して AS2 メッセージを受信できます。</span><span class="sxs-lookup"><span data-stu-id="bec9c-104">This enables you to use a FILE adapter to receive the AS2 message, rather than an HTTP adapter, which is normally used.</span></span> <span data-ttu-id="bec9c-105">そのために、このソリューションは、AS2 デコーダーの要求に応じて、AS2 メッセージの HTTP ヘッダーを InboundHTTPHeaders コンテキスト プロパティに書き込みます。</span><span class="sxs-lookup"><span data-stu-id="bec9c-105">To do so, this solution writes the HTTP headers in the AS2 message to the InboundHTTPHeaders context property, as required by the AS2 Decoder.</span></span>  
+
+## <a name="what-this-sample-does"></a><span data-ttu-id="bec9c-106">このサンプルの処理</span><span class="sxs-lookup"><span data-stu-id="bec9c-106">What This Sample Does</span></span>  
+ <span data-ttu-id="bec9c-107">このサンプルでは、HTTP アダプタを使用せずに AS2 メッセージの HTTP ヘッダーを処理する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-107">This sample demonstrates how to process the HTTP headers in an AS2 message without having an HTTP adapter.</span></span> <span data-ttu-id="bec9c-108">具体的には、このサンプルは以下の処理を行います。</span><span class="sxs-lookup"><span data-stu-id="bec9c-108">Specifically, this sample does the following:</span></span>  
+
+1.  <span data-ttu-id="bec9c-109">テスト メッセージを入力フォルダにドロップすると、FILE 受信場所がそのメッセージを取得します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-109">When you drop the test message into an input folder, the FILE receive location picks it up.</span></span>  
+
+2.  <span data-ttu-id="bec9c-110">カスタム AS2 受信パイプラインのカスタム パイプライン コンポーネントはメッセージを処理し、HTTP ヘッダーを InboundHTTPHeaders コンテキスト プロパティに書き込みます。</span><span class="sxs-lookup"><span data-stu-id="bec9c-110">The custom pipeline component in the custom AS2 receive pipeline processes the message, writing its HTTP headers to the InboundHTTPHeaders context property.</span></span>  
+
     > [!NOTE]
-    >  <span data-ttu-id="cc1d9-111">メッセージの処理がカスタム パイプライン コンポーネントのダウンストリームに失敗した場合、メッセージが既に XML エンコードに変換されているため、メッセージの処理の再開が困難になる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-111">If processing of the message fails downstream of the custom pipeline component, you may have difficulty resuming the processing of the message because it will have already been converted to XML encoding.</span></span>  
-  
-3.  <span data-ttu-id="cc1d9-112">カスタム受信パイプラインの AS2 デコーダはメッセージを処理し、InboundHTTPHeaders コンテキスト プロパティのプロパティを読み取り、その処理を行います。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-112">The AS2 Decoder in the custom receive pipeline processes the message, reading the properties in the InboundHTTPHeaders context property to do its processing.</span></span>  
-  
-4.  <span data-ttu-id="cc1d9-113">送信ポートは受信パイプラインによって生成された XML メッセージをサブスクライブし、パススルー送信パイプラインを通じて渡した後、出力フォルダにドロップします。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-113">A send port subscribes to the XML message generated by the receive pipeline, passes it through a passthrough send pipeline, and drops it into an output folder.</span></span>  
-  
-## <a name="where-to-find-this-sample"></a><span data-ttu-id="cc1d9-114">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="cc1d9-114">Where to Find This Sample</span></span>  
- <span data-ttu-id="cc1d9-115">このサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール フォルダー ([!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File) にあります。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-115">This sample is located in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation folder: [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File.</span></span>  
-  
- <span data-ttu-id="cc1d9-116">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-116">The following table shows the files in this sample and describes their purpose.</span></span>  
-  
-|<span data-ttu-id="cc1d9-117">ファイル</span><span class="sxs-lookup"><span data-stu-id="cc1d9-117">File(s)</span></span>|<span data-ttu-id="cc1d9-118">Description</span><span class="sxs-lookup"><span data-stu-id="cc1d9-118">Description</span></span>|  
+    >  <span data-ttu-id="bec9c-111">メッセージの処理がカスタム パイプライン コンポーネントのダウンストリームに失敗した場合、メッセージが既に XML エンコードに変換されているため、メッセージの処理の再開が困難になる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="bec9c-111">If processing of the message fails downstream of the custom pipeline component, you may have difficulty resuming the processing of the message because it will have already been converted to XML encoding.</span></span>  
+
+3.  <span data-ttu-id="bec9c-112">カスタム受信パイプラインの AS2 デコーダはメッセージを処理し、InboundHTTPHeaders コンテキスト プロパティのプロパティを読み取り、その処理を行います。</span><span class="sxs-lookup"><span data-stu-id="bec9c-112">The AS2 Decoder in the custom receive pipeline processes the message, reading the properties in the InboundHTTPHeaders context property to do its processing.</span></span>  
+
+4.  <span data-ttu-id="bec9c-113">送信ポートは受信パイプラインによって生成された XML メッセージをサブスクライブし、パススルー送信パイプラインを通じて渡した後、出力フォルダにドロップします。</span><span class="sxs-lookup"><span data-stu-id="bec9c-113">A send port subscribes to the XML message generated by the receive pipeline, passes it through a passthrough send pipeline, and drops it into an output folder.</span></span>  
+
+## <a name="where-to-find-this-sample"></a><span data-ttu-id="bec9c-114">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="bec9c-114">Where to Find This Sample</span></span>  
+ <span data-ttu-id="bec9c-115">このサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール フォルダー ([!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File) にあります。</span><span class="sxs-lookup"><span data-stu-id="bec9c-115">This sample is located in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation folder: [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File.</span></span>  
+
+ <span data-ttu-id="bec9c-116">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="bec9c-116">The following table shows the files in this sample and describes their purpose.</span></span>  
+
+|<span data-ttu-id="bec9c-117">ファイル</span><span class="sxs-lookup"><span data-stu-id="bec9c-117">File(s)</span></span>|<span data-ttu-id="bec9c-118">説明</span><span class="sxs-lookup"><span data-stu-id="bec9c-118">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="cc1d9-119">AS2OverFile.csproj</span><span class="sxs-lookup"><span data-stu-id="cc1d9-119">AS2OverFile.csproj</span></span>|<span data-ttu-id="cc1d9-120">カスタム パイプライン コンポーネント コードを含むプロジェクトです。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-120">The project containing the custom pipeline component code.</span></span>|  
-|<span data-ttu-id="cc1d9-121">AS2OverFile.sln</span><span class="sxs-lookup"><span data-stu-id="cc1d9-121">AS2OverFile.sln</span></span>|<span data-ttu-id="cc1d9-122">AS2OverFile.btproj プロジェクトを含むソリューションです。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-122">The solution containing the AS2OverFile.btproj project.</span></span>|  
-|<span data-ttu-id="cc1d9-123">Program.cs</span><span class="sxs-lookup"><span data-stu-id="cc1d9-123">Program.cs</span></span>|<span data-ttu-id="cc1d9-124">ヘッダー データを表すクラスが含まれています。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-124">Includes classes representing headers data.</span></span>|  
-|<span data-ttu-id="cc1d9-125">SampleMessage.txt</span><span class="sxs-lookup"><span data-stu-id="cc1d9-125">SampleMessage.txt</span></span>|<span data-ttu-id="cc1d9-126">HTTP ヘッダーを含むサンプル メッセージです。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-126">The sample message containing HTTP headers.</span></span>|  
-  
-## <a name="implementing-and-running-this-sample"></a><span data-ttu-id="cc1d9-127">このサンプルの実装と実行</span><span class="sxs-lookup"><span data-stu-id="cc1d9-127">Implementing and Running This Sample</span></span>  
- <span data-ttu-id="cc1d9-128">AS2 Over File サンプルを実装するには、次の操作を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-128">To implement the AS2 Over File sample, you need to do the following:</span></span>  
-  
--   <span data-ttu-id="cc1d9-129">このサンプルの BizTalk プロジェクトをビルドして展開し、カスタム パイプライン コンポーネントを作成します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-129">Build and deploy the BizTalk project for this sample, creating the custom pipeline component</span></span>  
-  
--   <span data-ttu-id="cc1d9-130">カスタム パイプライン コンポーネントを使用してカスタム パイプラインを作成し、そのカスタム パイプラインを使用してプロジェクトをビルドおよび展開します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-130">Create a custom pipeline using the custom pipeline component, and build and deploy a project with that custom pipeline</span></span>  
-  
--   <span data-ttu-id="cc1d9-131">入力ファイル フォルダと出力ファイル フォルダを作成します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-131">Create input and output file folders</span></span>  
-  
--   <span data-ttu-id="cc1d9-132">受信ポートと受信場所を構成し、受信場所を有効にします。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-132">Configure a receive port and location, and enable the receive location</span></span>  
-  
--   <span data-ttu-id="cc1d9-133">送信ポートを構成して開始します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-133">Configure a send port and start the send port</span></span>  
-  
--   <span data-ttu-id="cc1d9-134">サンプル メッセージを送信するパーティを作成します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-134">Create a party for sending the sample message</span></span>  
-  
-#### <a name="to-build-a-custom-pipeline-with-the-as2-over-file-emulator-pipeline-component"></a><span data-ttu-id="cc1d9-135">AS2 Over File エミュレータ パイプライン コンポーネントを使用してカスタム パイプラインを構築するには</span><span class="sxs-lookup"><span data-stu-id="cc1d9-135">To build a custom pipeline with the AS2 Over File Emulator Pipeline Component</span></span>  
-  
-1.  <span data-ttu-id="cc1d9-136">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File フォルダーで AS2OverFile プロジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-136">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the AS2OverFile project in the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File folder.</span></span>  
-  
-2.  <span data-ttu-id="cc1d9-137">厳密な名前キー ファイルを作成し、AS2OverFile プロジェクトの [プロパティ] ダイアログ ボックスを開き、キー ファイルをプロジェクトに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-137">Create a strong name key file, open the Properties dialog box for the AS2OverFile project, and assign the key file to the project.</span></span>  
-  
-3.  <span data-ttu-id="cc1d9-138">プロジェクトをビルドする。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-138">Build the project.</span></span>  
-  
-4.  <span data-ttu-id="cc1d9-139">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、AS2OverFile_Pipeline という名前の新しい BizTalk プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-139">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], create a new BizTalk Project named AS2OverFile_Pipeline.</span></span>  
-  
-5.  <span data-ttu-id="cc1d9-140">AS2OverFile_Pipeline プロジェクトを右クリックし、順にポイント **追加**, 、クリックして **新しい項目の**です。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-140">Right-click the AS2OverFile_Pipeline project, point to **Add**, and then click **New Item**.</span></span>  
-  
-6.  <span data-ttu-id="cc1d9-141">**新しい項目の追加** ダイアログ ボックスで、 **パイプライン ファイル** 左側のウィンドウで  **受信パイプライン** 右側のペインで、パイプラインに AS2OverFile_Receive.btp という名前をクリックして **追加**します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-141">In the **Add New Item** dialog box, select **Pipeline Files** in the left-hand pane, select **Receive Pipeline** in the right-hand pane, name the pipeline AS2OverFile_Receive.btp, and then click **Add**.</span></span>  
-  
-7.  <span data-ttu-id="cc1d9-142">クリックして **ビュー** をクリックしてメニュー バーで **ツールボックス** ツールボックスを表示します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-142">Click **View** in the menu bar, and then click **Toolbox** to display the Toolbox.</span></span>  
-  
-8.  <span data-ttu-id="cc1d9-143">ツールボックスを右クリックして **BizTalk パイプライン コンポーネント**, 、クリックして **アイテムの選択**します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-143">In the Toolbox, right-click **BizTalk Pipeline Components**, and then click **Choose Items**.</span></span>  
-  
-9. <span data-ttu-id="cc1d9-144">**[ツールボックス アイテムの** ダイアログ ボックスで、をクリックして、 **BizTalk パイプライン コンポーネント** ] タブをクリックします。をクリックして**AS2 Over File Emulator**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-144">In the **Choose Toolbox Items** dialog box, click the **BizTalk Pipeline Components** tab. Click **AS2 Over File Emulator**, and then click **OK**.</span></span>  
-  
-10. <span data-ttu-id="cc1d9-145">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コマンド プロンプトを開き、\AS2 Over File\obj\Debug フォルダーの Microsoft.BizTalk.Sdk.Components.AS2OverFile.dll で `gacutil /if "<file name and path>"` コマンドを実行して、AS2OverFile.dll ファイルをグローバル アセンブリ キャッシュに追加します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-145">Add the AS2OverFile.dll file to the global assembly cache by opening a [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Command Prompt, and executing the command `gacutil /if "<file name and path>"` on the Microsoft.BizTalk.Sdk.Components.AS2OverFile.dll in the \AS2 Over File\obj\Debug folder.</span></span>  
-  
-11. <span data-ttu-id="cc1d9-146">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ツールボックスから AS2 Over File Emulator パイプライン コンポーネントをドラッグして、**デコード**カスタム パイプラインのステージ。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-146">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], drag the AS2 Over File Emulator pipeline component from the Toolbox into the **Decode** stage of the custom pipeline.</span></span>  
-  
-12. <span data-ttu-id="cc1d9-147">AS2 デコーダー コンポーネントをドラッグして、 **デコード** AS2 Over File コンポーネント後のカスタム パイプラインのステージ。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-147">Drag the AS2 decoder component into the **Decode** stage of the custom pipeline, after the AS2 Over File component.</span></span>  
-  
+|<span data-ttu-id="bec9c-119">AS2OverFile.csproj</span><span class="sxs-lookup"><span data-stu-id="bec9c-119">AS2OverFile.csproj</span></span>|<span data-ttu-id="bec9c-120">カスタム パイプライン コンポーネント コードを含むプロジェクトです。</span><span class="sxs-lookup"><span data-stu-id="bec9c-120">The project containing the custom pipeline component code.</span></span>|  
+|<span data-ttu-id="bec9c-121">AS2OverFile.sln</span><span class="sxs-lookup"><span data-stu-id="bec9c-121">AS2OverFile.sln</span></span>|<span data-ttu-id="bec9c-122">AS2OverFile.btproj プロジェクトを含むソリューションです。</span><span class="sxs-lookup"><span data-stu-id="bec9c-122">The solution containing the AS2OverFile.btproj project.</span></span>|  
+|<span data-ttu-id="bec9c-123">Program.cs</span><span class="sxs-lookup"><span data-stu-id="bec9c-123">Program.cs</span></span>|<span data-ttu-id="bec9c-124">ヘッダー データを表すクラスが含まれています。</span><span class="sxs-lookup"><span data-stu-id="bec9c-124">Includes classes representing headers data.</span></span>|  
+|<span data-ttu-id="bec9c-125">SampleMessage.txt</span><span class="sxs-lookup"><span data-stu-id="bec9c-125">SampleMessage.txt</span></span>|<span data-ttu-id="bec9c-126">HTTP ヘッダーを含むサンプル メッセージです。</span><span class="sxs-lookup"><span data-stu-id="bec9c-126">The sample message containing HTTP headers.</span></span>|  
+
+## <a name="implementing-and-running-this-sample"></a><span data-ttu-id="bec9c-127">このサンプルの実装と実行</span><span class="sxs-lookup"><span data-stu-id="bec9c-127">Implementing and Running This Sample</span></span>  
+ <span data-ttu-id="bec9c-128">AS2 Over File サンプルを実装するには、次の操作を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="bec9c-128">To implement the AS2 Over File sample, you need to do the following:</span></span>  
+
+-   <span data-ttu-id="bec9c-129">このサンプルの BizTalk プロジェクトをビルドして展開し、カスタム パイプライン コンポーネントを作成します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-129">Build and deploy the BizTalk project for this sample, creating the custom pipeline component</span></span>  
+
+-   <span data-ttu-id="bec9c-130">カスタム パイプライン コンポーネントを使用してカスタム パイプラインを作成し、そのカスタム パイプラインを使用してプロジェクトをビルドおよび展開します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-130">Create a custom pipeline using the custom pipeline component, and build and deploy a project with that custom pipeline</span></span>  
+
+-   <span data-ttu-id="bec9c-131">入力ファイル フォルダと出力ファイル フォルダを作成します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-131">Create input and output file folders</span></span>  
+
+-   <span data-ttu-id="bec9c-132">受信ポートと受信場所を構成し、受信場所を有効にします。</span><span class="sxs-lookup"><span data-stu-id="bec9c-132">Configure a receive port and location, and enable the receive location</span></span>  
+
+-   <span data-ttu-id="bec9c-133">送信ポートを構成して開始します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-133">Configure a send port and start the send port</span></span>  
+
+-   <span data-ttu-id="bec9c-134">サンプル メッセージを送信するパーティを作成します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-134">Create a party for sending the sample message</span></span>  
+
+#### <a name="to-build-a-custom-pipeline-with-the-as2-over-file-emulator-pipeline-component"></a><span data-ttu-id="bec9c-135">AS2 Over File エミュレータ パイプライン コンポーネントを使用してカスタム パイプラインを構築するには</span><span class="sxs-lookup"><span data-stu-id="bec9c-135">To build a custom pipeline with the AS2 Over File Emulator Pipeline Component</span></span>  
+
+1. <span data-ttu-id="bec9c-136">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File フォルダーで AS2OverFile プロジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="bec9c-136">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the AS2OverFile project in the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File folder.</span></span>  
+
+2. <span data-ttu-id="bec9c-137">厳密な名前キー ファイルを作成し、AS2OverFile プロジェクトの [プロパティ] ダイアログ ボックスを開き、キー ファイルをプロジェクトに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="bec9c-137">Create a strong name key file, open the Properties dialog box for the AS2OverFile project, and assign the key file to the project.</span></span>  
+
+3. <span data-ttu-id="bec9c-138">プロジェクトをビルドする。</span><span class="sxs-lookup"><span data-stu-id="bec9c-138">Build the project.</span></span>  
+
+4. <span data-ttu-id="bec9c-139">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、AS2OverFile_Pipeline という名前の新しい BizTalk プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-139">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], create a new BizTalk Project named AS2OverFile_Pipeline.</span></span>  
+
+5. <span data-ttu-id="bec9c-140">AS2OverFile_Pipeline プロジェクトを右クリックし、[**追加**、] をクリックし、**新しい項目の**します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-140">Right-click the AS2OverFile_Pipeline project, point to **Add**, and then click **New Item**.</span></span>  
+
+6. <span data-ttu-id="bec9c-141">**新しい項目の追加**ダイアログ ボックスで、**パイプライン ファイル**左側のウィンドウで次のように選択します**受信パイプライン**右側のウィンドウで、パイプライン AS2OverFile_ という名前。クリックして、Receive.btp**追加**します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-141">In the **Add New Item** dialog box, select **Pipeline Files** in the left-hand pane, select **Receive Pipeline** in the right-hand pane, name the pipeline AS2OverFile_Receive.btp, and then click **Add**.</span></span>  
+
+7. <span data-ttu-id="bec9c-142">をクリックして**ビュー**メニュー バー、およびクリックで**ツールボックス**ツールボックスを表示します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-142">Click **View** in the menu bar, and then click **Toolbox** to display the Toolbox.</span></span>  
+
+8. <span data-ttu-id="bec9c-143">ツールボックスで、右クリック**BizTalk パイプライン コンポーネント**、 をクリックし、**アイテムの選択**します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-143">In the Toolbox, right-click **BizTalk Pipeline Components**, and then click **Choose Items**.</span></span>  
+
+9. <span data-ttu-id="bec9c-144">**ツールボックス アイテムの選択**ダイアログ ボックスで、をクリックして、 **BizTalk パイプライン コンポーネント**タブ。クリックして**AS2 Over File Emulator**、順にクリックします**OK**します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-144">In the **Choose Toolbox Items** dialog box, click the **BizTalk Pipeline Components** tab. Click **AS2 Over File Emulator**, and then click **OK**.</span></span>  
+
+10. <span data-ttu-id="bec9c-145">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コマンド プロンプトを開き、\AS2 Over File\obj\Debug フォルダーの Microsoft.BizTalk.Sdk.Components.AS2OverFile.dll で `gacutil /if "<file name and path>"` コマンドを実行して、AS2OverFile.dll ファイルをグローバル アセンブリ キャッシュに追加します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-145">Add the AS2OverFile.dll file to the global assembly cache by opening a [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Command Prompt, and executing the command `gacutil /if "<file name and path>"` on the Microsoft.BizTalk.Sdk.Components.AS2OverFile.dll in the \AS2 Over File\obj\Debug folder.</span></span>  
+
+11. <span data-ttu-id="bec9c-146">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ツールボックスから AS2 Over File Emulator パイプライン コンポーネントをドラッグして、**デコード**カスタム パイプラインのステージ。</span><span class="sxs-lookup"><span data-stu-id="bec9c-146">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], drag the AS2 Over File Emulator pipeline component from the Toolbox into the **Decode** stage of the custom pipeline.</span></span>  
+
+12. <span data-ttu-id="bec9c-147">AS2 デコーダー コンポーネントをドラッグして、**デコード**AS2 Over File コンポーネントの後に、カスタム パイプラインのステージ。</span><span class="sxs-lookup"><span data-stu-id="bec9c-147">Drag the AS2 decoder component into the **Decode** stage of the custom pipeline, after the AS2 Over File component.</span></span>  
+
     > [!NOTE]
-    >  <span data-ttu-id="cc1d9-148">MDN を生成する場合は、AS2 逆アセンブラをカスタム パイプラインの逆アセンブル ステージに追加します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-148">If you want to generate an MDN, add an AS2 disassembler into the Disassemble stage of the custom pipeline.</span></span> <span data-ttu-id="cc1d9-149">MDN を返さない場合、AS2 逆アセンブラは不要です。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-149">If you are not returning an MDN, the AS2 disassembler is not required.</span></span>  
-  
-13. <span data-ttu-id="cc1d9-150">厳密な名前キー ファイルを作成し、AS2OverFile_Pipeline プロジェクトの [プロパティ] ダイアログ ボックスを開き、キー ファイルをプロジェクトに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-150">Create a strong name key file, open the Properties dialog box for the AS2OverFile_Pipeline project, and assign the key file to the project.</span></span>  
-  
-14. <span data-ttu-id="cc1d9-151">カスタム パイプラインをビルドして配置します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-151">Build and deploy the custom pipeline.</span></span>  
-  
-15. <span data-ttu-id="cc1d9-152">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[パイプライン] ノードをクリックし、をクリックして、カスタム パイプラインを [パイプライン] ノードに追加**更新**です。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-152">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, add the custom pipeline to the Pipelines node by clicking the Pipelines node, and then clicking **Refresh**.</span></span>  
-  
-#### <a name="to-implement-the-solution-for-this-sample"></a><span data-ttu-id="cc1d9-153">このサンプルのソリューションを実装するには</span><span class="sxs-lookup"><span data-stu-id="cc1d9-153">To implement the solution for this sample</span></span>  
-  
-1.  <span data-ttu-id="cc1d9-154">Windows エクスプローラーで、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File フォルダーに In 入力フォルダーおよび Out 出力フォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-154">In Windows Explorer, in the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File folder, create an In input folder and an Out output folder.</span></span>  
-  
-2.  <span data-ttu-id="cc1d9-155">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、AS2OverFile_Receive という名前の一方向の受信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-155">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, create a one-way receive port named AS2OverFile_Receive.</span></span> <span data-ttu-id="cc1d9-156">作成した受信ポートで、次のプロパティを使用して受信場所を作成します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-156">In the receive port, create a receive location with the following properties:</span></span>  
-  
-    |<span data-ttu-id="cc1d9-157">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cc1d9-157">Property</span></span>|<span data-ttu-id="cc1d9-158">設定</span><span class="sxs-lookup"><span data-stu-id="cc1d9-158">Setting</span></span>|  
-    |--------------|-------------|  
-    |<span data-ttu-id="cc1d9-159">名前</span><span class="sxs-lookup"><span data-stu-id="cc1d9-159">Name</span></span>|<span data-ttu-id="cc1d9-160">AS2OverFile_Receive</span><span class="sxs-lookup"><span data-stu-id="cc1d9-160">AS2OverFile_Receive</span></span>|  
-    |<span data-ttu-id="cc1d9-161">型</span><span class="sxs-lookup"><span data-stu-id="cc1d9-161">Type</span></span>|<span data-ttu-id="cc1d9-162">FILE</span><span class="sxs-lookup"><span data-stu-id="cc1d9-162">FILE</span></span>|  
-    |<span data-ttu-id="cc1d9-163">受信フォルダ</span><span class="sxs-lookup"><span data-stu-id="cc1d9-163">Receive folder</span></span>|[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]<span data-ttu-id="cc1d9-164">SDK\Samples\AS2\AS2 Over File/In</span><span class="sxs-lookup"><span data-stu-id="cc1d9-164">SDK\Samples\AS2\AS2 Over File/In</span></span>|  
-    |<span data-ttu-id="cc1d9-165">ファイル マスク</span><span class="sxs-lookup"><span data-stu-id="cc1d9-165">File mask</span></span>|<span data-ttu-id="cc1d9-166">\*.txt</span><span class="sxs-lookup"><span data-stu-id="cc1d9-166">\*.txt</span></span>|  
-    |<span data-ttu-id="cc1d9-167">受信パイプライン。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-167">Receive pipeline</span></span>|<span data-ttu-id="cc1d9-168">AS2OverFile</span><span class="sxs-lookup"><span data-stu-id="cc1d9-168">AS2OverFile</span></span>|  
-  
-3.  <span data-ttu-id="cc1d9-169">[受信場所] ノードを右クリックし、AS2OverFile_Receive 受信場所をクリックし、 **を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-169">In the Receive Locations node, right-click the AS2OverFile_Receive receive location, and then click **Enable**.</span></span>  
-  
-4.  <span data-ttu-id="cc1d9-170">[送信ポート] ノードで、次のプロパティを使用して静的な一方向の送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-170">In the Send Ports node, create a Static On-way send port with the following properties:</span></span>  
-  
-    |<span data-ttu-id="cc1d9-171">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cc1d9-171">Property</span></span>|<span data-ttu-id="cc1d9-172">設定</span><span class="sxs-lookup"><span data-stu-id="cc1d9-172">Setting</span></span>|  
-    |--------------|-------------|  
-    |<span data-ttu-id="cc1d9-173">名前</span><span class="sxs-lookup"><span data-stu-id="cc1d9-173">Name</span></span>|<span data-ttu-id="cc1d9-174">AS2OverFile_Send</span><span class="sxs-lookup"><span data-stu-id="cc1d9-174">AS2OverFile_Send</span></span>|  
-    |<span data-ttu-id="cc1d9-175">型</span><span class="sxs-lookup"><span data-stu-id="cc1d9-175">Type</span></span>|<span data-ttu-id="cc1d9-176">FILE</span><span class="sxs-lookup"><span data-stu-id="cc1d9-176">FILE</span></span>|  
-    |<span data-ttu-id="cc1d9-177">受信フォルダ</span><span class="sxs-lookup"><span data-stu-id="cc1d9-177">Receive folder</span></span>|[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]<span data-ttu-id="cc1d9-178">SDK\Samples\AS2\AS2 Over File/Out</span><span class="sxs-lookup"><span data-stu-id="cc1d9-178">SDK\Samples\AS2\AS2 Over File/Out</span></span>|  
-    |<span data-ttu-id="cc1d9-179">ファイル マスク</span><span class="sxs-lookup"><span data-stu-id="cc1d9-179">File mask</span></span>|<span data-ttu-id="cc1d9-180">%MessageID%.xml</span><span class="sxs-lookup"><span data-stu-id="cc1d9-180">%MessageID%.xml</span></span>|  
-    |<span data-ttu-id="cc1d9-181">[送信パイプライン]</span><span class="sxs-lookup"><span data-stu-id="cc1d9-181">Send pipeline</span></span>|<span data-ttu-id="cc1d9-182">Passthru</span><span class="sxs-lookup"><span data-stu-id="cc1d9-182">Passthru</span></span>|  
-    |<span data-ttu-id="cc1d9-183">[フィルター]</span><span class="sxs-lookup"><span data-stu-id="cc1d9-183">Filter</span></span>|<span data-ttu-id="cc1d9-184">BTS.REceivePortName == AS2OverFile_Receive</span><span class="sxs-lookup"><span data-stu-id="cc1d9-184">BTS.REceivePortName == AS2OverFile_Receive</span></span>|  
-  
-5.  <span data-ttu-id="cc1d9-185">送信ポート ノードで、AS2OverFile_Send 送信ポートを右クリックし、クリックして **開始**します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-185">In the Send Ports node, right-click the AS2OverFile_Send send port, and then click **Start**.</span></span>  
-  
-6.  <span data-ttu-id="cc1d9-186">[パーティ] ノードで、"Partner" という名前のパーティを作成します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-186">In the Parties node, create a party named "Partner".</span></span> <span data-ttu-id="cc1d9-187">エイリアスの一覧のエイリアスを追加、 **名前** の **ediint-as2 From Value**, 、 **修飾子** の **AS2-から**, 、および **値** の **パートナー**します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-187">To the Aliases list, add an alias with a **name** of **EDIINT-AS2 From Value**, a **Qualifier** of **AS2-From**, and a **Value** of **Partner**.</span></span>  
-  
- <span data-ttu-id="cc1d9-188">BizTalk Server は、このサンプルを使用する準備ができました。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-188">BizTalk Server is now ready to work with this sample.</span></span>  
-  
-## <a name="running-this-sample"></a><span data-ttu-id="cc1d9-189">このサンプルの実行</span><span class="sxs-lookup"><span data-stu-id="cc1d9-189">Running This Sample</span></span>  
- <span data-ttu-id="cc1d9-190">次の手順を使用して、AS2 Over File サンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-190">Use the following procedure to run the AS2 Over File sample.</span></span>  
-  
-#### <a name="to-run-this-sample"></a><span data-ttu-id="cc1d9-191">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="cc1d9-191">To run this sample</span></span>  
-  
-1.  <span data-ttu-id="cc1d9-192">SampleMessage.txt ファイルを、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File フォルダーから \AS2 Over File\In フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-192">Copy the SampleMessage.txt file from the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File folder into the \AS2 Over File\In folder.</span></span>  
-  
-2.  <span data-ttu-id="cc1d9-193">出力 XML メッセージが \AS2 Over File\Out 出力フォルダーにドロップされることを確認します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-193">Verify that an output XML message is dropped into the \AS2 Over File\Out output folder.</span></span>  
-  
-3.  <span data-ttu-id="cc1d9-194">入力メッセージ SampleMessage.txt をテキスト エディターで開き出力メッセージ\<GUID\>をテキスト エディターで .xml です。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-194">Open the input message SampleMessage.txt in a text editor, and open the output message \<GUID\>.xml in a text editor.</span></span> <span data-ttu-id="cc1d9-195">SampleMessage.txt 入力メッセージに HTTP (および AS2) ヘッダーがあり、出力メッセージに HTTP ヘッダーがないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="cc1d9-195">Verify that the SampleMessage.txt input message has HTTP (and AS2) headers and that the output message does not have HTTP headers.</span></span>  
-  
-## <a name="classes-or-methods-used-in-this-sample"></a><span data-ttu-id="cc1d9-196">このサンプルで使用されるクラスまたはメソッド</span><span class="sxs-lookup"><span data-stu-id="cc1d9-196">Classes or Methods Used in This Sample</span></span>  
- <span data-ttu-id="cc1d9-197">なし</span><span class="sxs-lookup"><span data-stu-id="cc1d9-197">None</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="cc1d9-198">参照</span><span class="sxs-lookup"><span data-stu-id="cc1d9-198">See Also</span></span>  
- <span data-ttu-id="cc1d9-199">[EDI および AS2 (BizTalk Server Samples フォルダ)](../core/edi-and-as2-biztalk-server-samples-folder.md) </span><span class="sxs-lookup"><span data-stu-id="cc1d9-199">[EDI and AS2 (BizTalk Server Samples Folder)](../core/edi-and-as2-biztalk-server-samples-folder.md) </span></span>  
- [<span data-ttu-id="cc1d9-200">FILE 送信ポートを使用した AS2 メッセージの送信</span><span class="sxs-lookup"><span data-stu-id="cc1d9-200">Sending an AS2 Message over a FILE Send Port</span></span>](../core/sending-an-as2-message-over-a-file-send-port.md)
+    >  <span data-ttu-id="bec9c-148">MDN を生成する場合は、AS2 逆アセンブラをカスタム パイプラインの逆アセンブル ステージに追加します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-148">If you want to generate an MDN, add an AS2 disassembler into the Disassemble stage of the custom pipeline.</span></span> <span data-ttu-id="bec9c-149">MDN を返さない場合、AS2 逆アセンブラは不要です。</span><span class="sxs-lookup"><span data-stu-id="bec9c-149">If you are not returning an MDN, the AS2 disassembler is not required.</span></span>  
+
+13. <span data-ttu-id="bec9c-150">厳密な名前キー ファイルを作成し、AS2OverFile_Pipeline プロジェクトの [プロパティ] ダイアログ ボックスを開き、キー ファイルをプロジェクトに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="bec9c-150">Create a strong name key file, open the Properties dialog box for the AS2OverFile_Pipeline project, and assign the key file to the project.</span></span>  
+
+14. <span data-ttu-id="bec9c-151">カスタム パイプラインをビルドして配置します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-151">Build and deploy the custom pipeline.</span></span>  
+
+15. <span data-ttu-id="bec9c-152">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[パイプライン] ノードをクリックし、をクリックして、カスタム パイプラインを [パイプライン] ノードに追加**更新**します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-152">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, add the custom pipeline to the Pipelines node by clicking the Pipelines node, and then clicking **Refresh**.</span></span>  
+
+#### <a name="to-implement-the-solution-for-this-sample"></a><span data-ttu-id="bec9c-153">このサンプルのソリューションを実装するには</span><span class="sxs-lookup"><span data-stu-id="bec9c-153">To implement the solution for this sample</span></span>  
+
+1. <span data-ttu-id="bec9c-154">Windows エクスプローラーで、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File フォルダーに In 入力フォルダーおよび Out 出力フォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-154">In Windows Explorer, in the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File folder, create an In input folder and an Out output folder.</span></span>  
+
+2. <span data-ttu-id="bec9c-155">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、AS2OverFile_Receive という名前の一方向の受信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-155">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, create a one-way receive port named AS2OverFile_Receive.</span></span> <span data-ttu-id="bec9c-156">作成した受信ポートで、次のプロパティを使用して受信場所を作成します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-156">In the receive port, create a receive location with the following properties:</span></span>  
+
+
+   |     <span data-ttu-id="bec9c-157">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bec9c-157">Property</span></span>     |                                                 <span data-ttu-id="bec9c-158">設定</span><span class="sxs-lookup"><span data-stu-id="bec9c-158">Setting</span></span>                                                  |
+   |------------------|----------------------------------------------------------------------------------------------------------|
+   |       <span data-ttu-id="bec9c-159">名前</span><span class="sxs-lookup"><span data-stu-id="bec9c-159">Name</span></span>       |                                           <span data-ttu-id="bec9c-160">AS2OverFile_Receive</span><span class="sxs-lookup"><span data-stu-id="bec9c-160">AS2OverFile_Receive</span></span>                                            |
+   |       <span data-ttu-id="bec9c-161">型</span><span class="sxs-lookup"><span data-stu-id="bec9c-161">Type</span></span>       |                                                   <span data-ttu-id="bec9c-162">FILE</span><span class="sxs-lookup"><span data-stu-id="bec9c-162">FILE</span></span>                                                   |
+   |  <span data-ttu-id="bec9c-163">受信フォルダ</span><span class="sxs-lookup"><span data-stu-id="bec9c-163">Receive folder</span></span>  | [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]<span data-ttu-id="bec9c-164">SDK\Samples\AS2\AS2 Over File/In</span><span class="sxs-lookup"><span data-stu-id="bec9c-164">SDK\Samples\AS2\AS2 Over File/In</span></span> |
+   |    <span data-ttu-id="bec9c-165">ファイル マスク</span><span class="sxs-lookup"><span data-stu-id="bec9c-165">File mask</span></span>     |                                                  <span data-ttu-id="bec9c-166">\*.txt</span><span class="sxs-lookup"><span data-stu-id="bec9c-166">\*.txt</span></span>                                                  |
+   | <span data-ttu-id="bec9c-167">受信パイプライン。</span><span class="sxs-lookup"><span data-stu-id="bec9c-167">Receive pipeline</span></span> |                                               <span data-ttu-id="bec9c-168">AS2OverFile</span><span class="sxs-lookup"><span data-stu-id="bec9c-168">AS2OverFile</span></span>                                                |
+
+
+3. <span data-ttu-id="bec9c-169">右クリックし、AS2OverFile_Receive 受信場所 をクリックし、受信場所 ノードで**を有効にする**します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-169">In the Receive Locations node, right-click the AS2OverFile_Receive receive location, and then click **Enable**.</span></span>  
+
+4. <span data-ttu-id="bec9c-170">[送信ポート] ノードで、次のプロパティを使用して静的な一方向の送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-170">In the Send Ports node, create a Static On-way send port with the following properties:</span></span>  
+
+
+   |    <span data-ttu-id="bec9c-171">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bec9c-171">Property</span></span>    |                                                  <span data-ttu-id="bec9c-172">設定</span><span class="sxs-lookup"><span data-stu-id="bec9c-172">Setting</span></span>                                                  |
+   |----------------|-----------------------------------------------------------------------------------------------------------|
+   |      <span data-ttu-id="bec9c-173">名前</span><span class="sxs-lookup"><span data-stu-id="bec9c-173">Name</span></span>      |                                             <span data-ttu-id="bec9c-174">AS2OverFile_Send</span><span class="sxs-lookup"><span data-stu-id="bec9c-174">AS2OverFile_Send</span></span>                                              |
+   |      <span data-ttu-id="bec9c-175">型</span><span class="sxs-lookup"><span data-stu-id="bec9c-175">Type</span></span>      |                                                   <span data-ttu-id="bec9c-176">FILE</span><span class="sxs-lookup"><span data-stu-id="bec9c-176">FILE</span></span>                                                    |
+   | <span data-ttu-id="bec9c-177">受信フォルダ</span><span class="sxs-lookup"><span data-stu-id="bec9c-177">Receive folder</span></span> | [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]<span data-ttu-id="bec9c-178">SDK\Samples\AS2\AS2 Over File/Out</span><span class="sxs-lookup"><span data-stu-id="bec9c-178">SDK\Samples\AS2\AS2 Over File/Out</span></span> |
+   |   <span data-ttu-id="bec9c-179">ファイル マスク</span><span class="sxs-lookup"><span data-stu-id="bec9c-179">File mask</span></span>    |                                              <span data-ttu-id="bec9c-180">%MessageID%.xml</span><span class="sxs-lookup"><span data-stu-id="bec9c-180">%MessageID%.xml</span></span>                                              |
+   | <span data-ttu-id="bec9c-181">[送信パイプライン]</span><span class="sxs-lookup"><span data-stu-id="bec9c-181">Send pipeline</span></span>  |                                                 <span data-ttu-id="bec9c-182">Passthru</span><span class="sxs-lookup"><span data-stu-id="bec9c-182">Passthru</span></span>                                                  |
+   |     <span data-ttu-id="bec9c-183">Assert</span><span class="sxs-lookup"><span data-stu-id="bec9c-183">Filter</span></span>     |                                <span data-ttu-id="bec9c-184">BTS.REceivePortName == AS2OverFile_Receive</span><span class="sxs-lookup"><span data-stu-id="bec9c-184">BTS.REceivePortName == AS2OverFile_Receive</span></span>                                 |
+
+
+5. <span data-ttu-id="bec9c-185">送信ポート ノードで、AS2OverFile_Send 送信ポートを右クリックし、**開始**します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-185">In the Send Ports node, right-click the AS2OverFile_Send send port, and then click **Start**.</span></span>  
+
+6. <span data-ttu-id="bec9c-186">[パーティ] ノードで、"Partner" という名前のパーティを作成します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-186">In the Parties node, create a party named "Partner".</span></span> <span data-ttu-id="bec9c-187">エイリアスの一覧にエイリアスを追加、**名前**の**ediint-as2 From 値**、**修飾子**の**AS2-から**、および**値**の**パートナー**します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-187">To the Aliases list, add an alias with a **name** of **EDIINT-AS2 From Value**, a **Qualifier** of **AS2-From**, and a **Value** of **Partner**.</span></span>  
+
+   <span data-ttu-id="bec9c-188">BizTalk Server は、このサンプルを使用する準備ができました。</span><span class="sxs-lookup"><span data-stu-id="bec9c-188">BizTalk Server is now ready to work with this sample.</span></span>  
+
+## <a name="running-this-sample"></a><span data-ttu-id="bec9c-189">このサンプルの実行</span><span class="sxs-lookup"><span data-stu-id="bec9c-189">Running This Sample</span></span>  
+ <span data-ttu-id="bec9c-190">次の手順を使用して、AS2 Over File サンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-190">Use the following procedure to run the AS2 Over File sample.</span></span>  
+
+#### <a name="to-run-this-sample"></a><span data-ttu-id="bec9c-191">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="bec9c-191">To run this sample</span></span>  
+
+1. <span data-ttu-id="bec9c-192">SampleMessage.txt ファイルを、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File フォルダーから \AS2 Over File\In フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="bec9c-192">Copy the SampleMessage.txt file from the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File folder into the \AS2 Over File\In folder.</span></span>  
+
+2. <span data-ttu-id="bec9c-193">出力 XML メッセージが \AS2 Over File\Out 出力フォルダーにドロップされることを確認します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-193">Verify that an output XML message is dropped into the \AS2 Over File\Out output folder.</span></span>  
+
+3. <span data-ttu-id="bec9c-194">入力メッセージ SampleMessage.txt をテキスト エディターで開くし、出力メッセージを開く\<GUID\>.xml をテキスト エディターでします。</span><span class="sxs-lookup"><span data-stu-id="bec9c-194">Open the input message SampleMessage.txt in a text editor, and open the output message \<GUID\>.xml in a text editor.</span></span> <span data-ttu-id="bec9c-195">SampleMessage.txt 入力メッセージに HTTP (および AS2) ヘッダーがあり、出力メッセージに HTTP ヘッダーがないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="bec9c-195">Verify that the SampleMessage.txt input message has HTTP (and AS2) headers and that the output message does not have HTTP headers.</span></span>  
+
+## <a name="classes-or-methods-used-in-this-sample"></a><span data-ttu-id="bec9c-196">このサンプルで使用されるクラスまたはメソッド</span><span class="sxs-lookup"><span data-stu-id="bec9c-196">Classes or Methods Used in This Sample</span></span>  
+ <span data-ttu-id="bec9c-197">なし</span><span class="sxs-lookup"><span data-stu-id="bec9c-197">None</span></span>  
+
+## <a name="see-also"></a><span data-ttu-id="bec9c-198">参照</span><span class="sxs-lookup"><span data-stu-id="bec9c-198">See Also</span></span>  
+ <span data-ttu-id="bec9c-199">[EDI および AS2 (BizTalk Server Samples フォルダ)](../core/edi-and-as2-biztalk-server-samples-folder.md) </span><span class="sxs-lookup"><span data-stu-id="bec9c-199">[EDI and AS2 (BizTalk Server Samples Folder)](../core/edi-and-as2-biztalk-server-samples-folder.md) </span></span>  
+ [<span data-ttu-id="bec9c-200">FILE 送信ポートを使用した AS2 メッセージの送信</span><span class="sxs-lookup"><span data-stu-id="bec9c-200">Sending an AS2 Message over a FILE Send Port</span></span>](../core/sending-an-as2-message-over-a-file-send-port.md)

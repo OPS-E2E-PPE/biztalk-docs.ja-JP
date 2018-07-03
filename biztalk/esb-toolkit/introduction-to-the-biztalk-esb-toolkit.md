@@ -1,5 +1,5 @@
 ---
-title: BizTalk ESB Toolkit の概要 |Microsoft ドキュメント
+title: BizTalk ESB Toolkit の概要 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,26 +14,26 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e44d3a100cdaefe04cf9d3aedfa8cf969811fc5e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 5cfab980a869029d565d378aaf0f75a147403f3e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25976208"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36986723"
 ---
-# <a name="introduction-to-the-biztalk-esb-toolkit"></a><span data-ttu-id="5ddd3-102">BizTalk ESB Toolkit の概要</span><span class="sxs-lookup"><span data-stu-id="5ddd3-102">Introduction to the BizTalk ESB Toolkit</span></span>
-<span data-ttu-id="5ddd3-103">アーキテクチャと Microsoft の内容について説明します[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="5ddd3-103">Explains the architecture and contents of the Microsoft [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].</span></span> <span data-ttu-id="5ddd3-104">サービスを有効にする柔軟なセキュリティで保護された、エンタープライズ アプリケーションを開発する Enterprise Service Bus (ESB) アーキテクチャ パターンを適用する方法および再利用可能なサービスと新しいエンド ツー エンドに既存のサービスの迅速な組織にも、ドキュメントを示していますビジネス プロセス。</span><span class="sxs-lookup"><span data-stu-id="5ddd3-104">The documentation also demonstrates how to apply an Enterprise Service Bus (ESB) architecture pattern to develop enterprise applications that enable flexible, secure, and reusable services and rapid organization of existing services into new end-to-end business processes.</span></span>  
-  
-## <a name="what-is-an-enterprise-service-bus"></a><span data-ttu-id="5ddd3-105">Enterprise Service Bus とは何ですか。</span><span class="sxs-lookup"><span data-stu-id="5ddd3-105">What Is an Enterprise Service Bus?</span></span>  
- <span data-ttu-id="5ddd3-106">Enterprise Service Bus は、サービス指向アーキテクチャ (SOA) を有効にするためのインフラストラクチャの実装のコンテキストで広く使用する用語。</span><span class="sxs-lookup"><span data-stu-id="5ddd3-106">The term Enterprise Service Bus is widely used in the context of implementing an infrastructure for enabling Service-Oriented Architecture (SOA).</span></span> <span data-ttu-id="5ddd3-107">ただし、SOA ソリューションの配置を使用して実際の動作では、こと、ESB は包括的なサービス指向インフラストラクチャ (SOI) をビルドに必要な多くのコンポーネントの 1 つだけが示されています。</span><span class="sxs-lookup"><span data-stu-id="5ddd3-107">However, real-world experience with the deployment of SOA solutions has demonstrated that an ESB is only one of many components required to build a comprehensive Service-Oriented Infrastructure (SOI).</span></span> <span data-ttu-id="5ddd3-108">さまざまな方向で進化してきました"ESB"という用語は、— 個々 の ESB ベンダーおよび統合プラットフォーム ベンダーの解釈とは、特定の SOA イニシアティブの要件とその定義が異なります。</span><span class="sxs-lookup"><span data-stu-id="5ddd3-108">The term "ESB" has evolved in a number of directions—its definition varies with the interpretation of individual ESB and integration platform vendors and with the requirements of particular SOA initiatives.</span></span>  
-  
- <span data-ttu-id="5ddd3-109">Microsoft が成功した多くの現実世界 SOI 実装から収集した経験に基づき、Microsoft が判断 Enterprise Service Bus で従来エンタープライズ アプリケーション統合 (EAI)、ベース アーキテクチャのパターンのコレクションであることメッセージ指向ミドルウェア、Web サービス、.NET と Java の相互運用性、ホスト システム統合、およびサービス レジストリおよび資産リポジトリとの相互運用。</span><span class="sxs-lookup"><span data-stu-id="5ddd3-109">Based on the experience Microsoft has gathered from many successful real-world SOI implementations, Microsoft considers an Enterprise Service Bus to be a collection of architectural patterns based on traditional Enterprise Application Integration (EAI), message-oriented middleware, Web services, .NET and Java interoperability, host system integration, and interoperability with service registries and asset repositories.</span></span> <span data-ttu-id="5ddd3-110">図 1 は、エンタープライズ サービス バスのアーキテクチャを示しています。</span><span class="sxs-lookup"><span data-stu-id="5ddd3-110">Figure 1 illustrates the architecture of an Enterprise Service Bus.</span></span>  
-  
- <span data-ttu-id="5ddd3-111">![ESB の概要](../esb-toolkit/media/esboverview.gif "ESBOverview")</span><span class="sxs-lookup"><span data-stu-id="5ddd3-111">![ESB Overview](../esb-toolkit/media/esboverview.gif "ESBOverview")</span></span>  
-  
- <span data-ttu-id="5ddd3-112">**図 1**</span><span class="sxs-lookup"><span data-stu-id="5ddd3-112">**Figure 1**</span></span>  
-  
- <span data-ttu-id="5ddd3-113">**Enterprise Service Bus アーキテクチャで提供される接続の概要を示したもの**</span><span class="sxs-lookup"><span data-stu-id="5ddd3-113">**A high-level representation of the connectivity provided by the Enterprise Service Bus architecture**</span></span>  
+# <a name="introduction-to-the-biztalk-esb-toolkit"></a><span data-ttu-id="c09ef-102">BizTalk ESB Toolkit の概要</span><span class="sxs-lookup"><span data-stu-id="c09ef-102">Introduction to the BizTalk ESB Toolkit</span></span>
+<span data-ttu-id="c09ef-103">アーキテクチャと、Microsoft の内容について説明します[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="c09ef-103">Explains the architecture and contents of the Microsoft [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].</span></span> <span data-ttu-id="c09ef-104">ドキュメントは、および再利用可能なサービスと新しいエンド ツー エンドに既存のサービスの迅速な組織の柔軟で、セキュリティで保護を有効にするエンタープライズ アプリケーションを開発の Enterprise Service Bus (ESB) アーキテクチャ パターンを適用する方法も示していますビジネス プロセス。</span><span class="sxs-lookup"><span data-stu-id="c09ef-104">The documentation also demonstrates how to apply an Enterprise Service Bus (ESB) architecture pattern to develop enterprise applications that enable flexible, secure, and reusable services and rapid organization of existing services into new end-to-end business processes.</span></span>  
+
+## <a name="what-is-an-enterprise-service-bus"></a><span data-ttu-id="c09ef-105">エンタープライズ サービス バスとは何ですか。</span><span class="sxs-lookup"><span data-stu-id="c09ef-105">What Is an Enterprise Service Bus?</span></span>  
+ <span data-ttu-id="c09ef-106">サービス指向アーキテクチャ (SOA) を有効にするためのインフラストラクチャの実装のコンテキストで Enterprise Service Bus が広く使用されているターム。</span><span class="sxs-lookup"><span data-stu-id="c09ef-106">The term Enterprise Service Bus is widely used in the context of implementing an infrastructure for enabling Service-Oriented Architecture (SOA).</span></span> <span data-ttu-id="c09ef-107">ただし、SOA ソリューションの展開の実際の経験、ESB は包括的なサービス指向インフラストラクチャ (SOI) を構築するために必要な多くのコンポーネントの 1 つだけを説明しました。</span><span class="sxs-lookup"><span data-stu-id="c09ef-107">However, real-world experience with the deployment of SOA solutions has demonstrated that an ESB is only one of many components required to build a comprehensive Service-Oriented Infrastructure (SOI).</span></span> <span data-ttu-id="c09ef-108">さまざまな方向で進化してきた"ESB"という用語 — 個々 の ESB との統合プラットフォーム ベンダーの解釈と特定の SOA イニシアティブの要件の定義が異なります。</span><span class="sxs-lookup"><span data-stu-id="c09ef-108">The term "ESB" has evolved in a number of directions—its definition varies with the interpretation of individual ESB and integration platform vendors and with the requirements of particular SOA initiatives.</span></span>  
+
+ <span data-ttu-id="c09ef-109">Microsoft では、Microsoft が成功した多くの現実 SOI 実装から収集された経験に基づき、エンタープライズ サービス バスで従来エンタープライズ アプリケーション統合 (EAI)、ベースのアーキテクチャ パターンのコレクションにするメッセージ指向ミドルウェア、Web サービス、.NET と Java の相互運用性、ホスト システム統合、およびサービス レジストリおよび資産リポジトリとの相互運用。</span><span class="sxs-lookup"><span data-stu-id="c09ef-109">Based on the experience Microsoft has gathered from many successful real-world SOI implementations, Microsoft considers an Enterprise Service Bus to be a collection of architectural patterns based on traditional Enterprise Application Integration (EAI), message-oriented middleware, Web services, .NET and Java interoperability, host system integration, and interoperability with service registries and asset repositories.</span></span> <span data-ttu-id="c09ef-110">図 1 は、エンタープライズ サービス バスのアーキテクチャを示しています。</span><span class="sxs-lookup"><span data-stu-id="c09ef-110">Figure 1 illustrates the architecture of an Enterprise Service Bus.</span></span>  
+
+ <span data-ttu-id="c09ef-111">![ESB の概要](../esb-toolkit/media/esboverview.gif "ESBOverview")</span><span class="sxs-lookup"><span data-stu-id="c09ef-111">![ESB Overview](../esb-toolkit/media/esboverview.gif "ESBOverview")</span></span>  
+
+ <span data-ttu-id="c09ef-112">**図 1**</span><span class="sxs-lookup"><span data-stu-id="c09ef-112">**Figure 1**</span></span>  
+
+ <span data-ttu-id="c09ef-113">**Enterprise Service Bus のアーキテクチャによって提供される接続の概要を示したもの**</span><span class="sxs-lookup"><span data-stu-id="c09ef-113">**A high-level representation of the connectivity provided by the Enterprise Service Bus architecture**</span></span>  
 
 <!---  Old text with old links
 ## The Industry View of ESB  
@@ -55,30 +55,30 @@ ms.locfileid: "25976208"
 -   Chappell, David. Enterprise Service Bus. Sebastopol, CA: O'Reilly Media, Inc. 2004.  
 -->
 
-  
-## <a name="the-biztalk-esb-toolkit"></a><span data-ttu-id="5ddd3-114">BizTalk ESB Toolkit</span><span class="sxs-lookup"><span data-stu-id="5ddd3-114">The BizTalk ESB Toolkit</span></span>
- <span data-ttu-id="5ddd3-115">このドキュメントでは、全体として設計者と開発者に導入 ESB アーキテクチャ概念によってアドレス指定されると、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]、一般に受け入れられた ESB ユース ケースのセットを ESB コンポーネントの機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="5ddd3-115">This documentation, as a whole, introduces architects and developers to ESB architectural concepts as addressed by the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)], and explains the functionality of the ESB components through a set of commonly accepted ESB use cases.</span></span>  
-  
- <span data-ttu-id="5ddd3-116">このセクションで説明の概要については、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]、次のトピックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="5ddd3-116">This section provides an introduction to the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)], and includes the following topics:</span></span>  
-  
--   [<span data-ttu-id="5ddd3-117">BizTalk ESB Toolkit の概要</span><span class="sxs-lookup"><span data-stu-id="5ddd3-117">Overview of the BizTalk ESB Toolkit</span></span>](../esb-toolkit/overview-of-the-biztalk-esb-toolkit.md)  
-  
--   [<span data-ttu-id="5ddd3-118">BizTalk ESB Toolkit の内容</span><span class="sxs-lookup"><span data-stu-id="5ddd3-118">Contents of the BizTalk ESB Toolkit</span></span>](../esb-toolkit/contents-of-the-biztalk-esb-toolkit.md)  
-  
- <span data-ttu-id="5ddd3-119">このドキュメントには、次のトピックのセクションも含まれます。</span><span class="sxs-lookup"><span data-stu-id="5ddd3-119">This documentation also includes the following topic sections:</span></span>  
-  
--   [<span data-ttu-id="5ddd3-120">BizTalk ESB Toolkit の作業の開始</span><span class="sxs-lookup"><span data-stu-id="5ddd3-120">Getting Started with the BizTalk ESB Toolkit</span></span>](../esb-toolkit/getting-started-with-the-biztalk-esb-toolkit.md)  
-  
--   [<span data-ttu-id="5ddd3-121">主要なシナリオと開発タスク</span><span class="sxs-lookup"><span data-stu-id="5ddd3-121">Key Scenarios and Development Tasks</span></span>](../esb-toolkit/key-scenarios-and-development-tasks.md)  
-  
--   [<span data-ttu-id="5ddd3-122">Itinerary Designer を利用してスケジュールを作成する</span><span class="sxs-lookup"><span data-stu-id="5ddd3-122">Creating Itineraries Using Itinerary Designer</span></span>](../esb-toolkit/creating-itineraries-using-itinerary-designer.md)  
-  
--   [<span data-ttu-id="5ddd3-123">BizTalk ESB Toolkit サンプル アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5ddd3-123">BizTalk ESB Toolkit Sample Applications</span></span>](../esb-toolkit/biztalk-esb-toolkit-sample-applications.md)  
-  
--   [<span data-ttu-id="5ddd3-124">BizTalk ESB Toolkit を変更し、拡張する</span><span class="sxs-lookup"><span data-stu-id="5ddd3-124">Modifying and Extending the BizTalk ESB Toolkit</span></span>](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)  
-  
--   [<span data-ttu-id="5ddd3-125">BizTalk ESB Toolkit による管理</span><span class="sxs-lookup"><span data-stu-id="5ddd3-125">Administration with the BizTalk ESB Toolkit</span></span>](../esb-toolkit/administration-with-the-biztalk-esb-toolkit.md)  
-  
--   [<span data-ttu-id="5ddd3-126">SOA ガバナンス統合</span><span class="sxs-lookup"><span data-stu-id="5ddd3-126">SOA Governance Integration</span></span>](../esb-toolkit/soa-governance-integration.md)  
-  
--   [<span data-ttu-id="5ddd3-127">トラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="5ddd3-127">Troubleshooting</span></span>](../esb-toolkit/troubleshooting-the-biztalk-esb-toolkit.md)
+
+## <a name="the-biztalk-esb-toolkit"></a><span data-ttu-id="c09ef-114">BizTalk ESB Toolkit</span><span class="sxs-lookup"><span data-stu-id="c09ef-114">The BizTalk ESB Toolkit</span></span>
+ <span data-ttu-id="c09ef-115">このドキュメントでは、全体を紹介アーキテクトと開発者 ESB アーキテクチャの概念をによってアドレス指定された、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]、一般に認められた ESB ユース ケースのセットを通じて ESB コンポーネントの機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="c09ef-115">This documentation, as a whole, introduces architects and developers to ESB architectural concepts as addressed by the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)], and explains the functionality of the ESB components through a set of commonly accepted ESB use cases.</span></span>  
+
+ <span data-ttu-id="c09ef-116">このセクションの概要を提供します、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]、次のトピックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="c09ef-116">This section provides an introduction to the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)], and includes the following topics:</span></span>  
+
+- [<span data-ttu-id="c09ef-117">BizTalk ESB Toolkit の概要</span><span class="sxs-lookup"><span data-stu-id="c09ef-117">Overview of the BizTalk ESB Toolkit</span></span>](../esb-toolkit/overview-of-the-biztalk-esb-toolkit.md)  
+
+- [<span data-ttu-id="c09ef-118">BizTalk ESB Toolkit の内容</span><span class="sxs-lookup"><span data-stu-id="c09ef-118">Contents of the BizTalk ESB Toolkit</span></span>](../esb-toolkit/contents-of-the-biztalk-esb-toolkit.md)  
+
+  <span data-ttu-id="c09ef-119">このドキュメントでは、次のトピックのセクションも含まれます。</span><span class="sxs-lookup"><span data-stu-id="c09ef-119">This documentation also includes the following topic sections:</span></span>  
+
+- [<span data-ttu-id="c09ef-120">BizTalk ESB Toolkit の作業の開始</span><span class="sxs-lookup"><span data-stu-id="c09ef-120">Getting Started with the BizTalk ESB Toolkit</span></span>](../esb-toolkit/getting-started-with-the-biztalk-esb-toolkit.md)  
+
+- [<span data-ttu-id="c09ef-121">主要なシナリオと開発タスク</span><span class="sxs-lookup"><span data-stu-id="c09ef-121">Key Scenarios and Development Tasks</span></span>](../esb-toolkit/key-scenarios-and-development-tasks.md)  
+
+- [<span data-ttu-id="c09ef-122">Itinerary Designer を利用してスケジュールを作成する</span><span class="sxs-lookup"><span data-stu-id="c09ef-122">Creating Itineraries Using Itinerary Designer</span></span>](../esb-toolkit/creating-itineraries-using-itinerary-designer.md)  
+
+- [<span data-ttu-id="c09ef-123">BizTalk ESB Toolkit サンプル アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c09ef-123">BizTalk ESB Toolkit Sample Applications</span></span>](../esb-toolkit/biztalk-esb-toolkit-sample-applications.md)  
+
+- [<span data-ttu-id="c09ef-124">BizTalk ESB Toolkit を変更し、拡張する</span><span class="sxs-lookup"><span data-stu-id="c09ef-124">Modifying and Extending the BizTalk ESB Toolkit</span></span>](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)  
+
+- [<span data-ttu-id="c09ef-125">BizTalk ESB Toolkit による管理</span><span class="sxs-lookup"><span data-stu-id="c09ef-125">Administration with the BizTalk ESB Toolkit</span></span>](../esb-toolkit/administration-with-the-biztalk-esb-toolkit.md)  
+
+- [<span data-ttu-id="c09ef-126">SOA ガバナンス統合</span><span class="sxs-lookup"><span data-stu-id="c09ef-126">SOA Governance Integration</span></span>](../esb-toolkit/soa-governance-integration.md)  
+
+- [<span data-ttu-id="c09ef-127">トラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="c09ef-127">Troubleshooting</span></span>](../esb-toolkit/troubleshooting-the-biztalk-esb-toolkit.md)

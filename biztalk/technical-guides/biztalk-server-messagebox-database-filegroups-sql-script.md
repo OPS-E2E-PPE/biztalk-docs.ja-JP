@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server メッセージ ボックス データベースのファイル グループの SQL スクリプト |Microsoft ドキュメント
+title: BizTalk Server メッセージ ボックス データベース ファイルグループの SQL スクリプト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54b8cc0164648eb22bd0ad3c9bb47a1a0828f91f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d80d5aeb35c27a04f637f4e5ca466996855f35fb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22300546"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973067"
 ---
-# <a name="biztalk-server-messagebox-database-filegroups-sql-script"></a><span data-ttu-id="6e904-102">BizTalk Server メッセージ ボックス データベースのファイル グループの SQL スクリプト</span><span class="sxs-lookup"><span data-stu-id="6e904-102">BizTalk Server MessageBox Database Filegroups SQL Script</span></span>
-<span data-ttu-id="6e904-103">このトピックでは、複数のファイルおよびファイル グループの BizTalk メッセージ ボックス データベースを作成する BizTalk Server 環境で SQL Server インスタンスで実行できる SQL スクリプトを提供します。</span><span class="sxs-lookup"><span data-stu-id="6e904-103">This topic provides a SQL script that can be run on the SQL Server instances in a BizTalk Server environment to create multiple files and filegroups for the BizTalk MessageBox databases.</span></span>  
+# <a name="biztalk-server-messagebox-database-filegroups-sql-script"></a><span data-ttu-id="e94f7-102">BizTalk Server メッセージ ボックス データベース ファイルグループの SQL スクリプト</span><span class="sxs-lookup"><span data-stu-id="e94f7-102">BizTalk Server MessageBox Database Filegroups SQL Script</span></span>
+<span data-ttu-id="e94f7-103">このトピックでは、複数のファイルおよびファイル グループの BizTalk メッセージ ボックス データベースを作成する BizTalk Server 環境で SQL Server インスタンスで実行できる SQL スクリプトを提供します。</span><span class="sxs-lookup"><span data-stu-id="e94f7-103">This topic provides a SQL script that can be run on the SQL Server instances in a BizTalk Server environment to create multiple files and filegroups for the BizTalk MessageBox databases.</span></span>  
   
-> [!IMPORTANT]  
->  <span data-ttu-id="6e904-104">このスクリプトは、提供「としては、」デモまたは演習目的でのみ、向けし、各自の責任で使用されます。</span><span class="sxs-lookup"><span data-stu-id="6e904-104">This script is provided “as is,” is intended for demo or educational purposes only, and is to be used at your own risk.</span></span> <span data-ttu-id="6e904-105">、Microsoft では、このスクリプトの使用はサポートされていないと、Microsoft がこのスクリプトの適合性に関して保証を行いません。</span><span class="sxs-lookup"><span data-stu-id="6e904-105">Use of this script is not supported by Microsoft, and Microsoft makes no guarantees about the suitability of this script.</span></span>  
+> [!IMPORTANT]
+>  <span data-ttu-id="e94f7-104">このスクリプトは、デモまたは教育目的にのみのためのものでは、ご自身の責任で使用される「とは、」です。</span><span class="sxs-lookup"><span data-stu-id="e94f7-104">This script is provided “as is,” is intended for demo or educational purposes only, and is to be used at your own risk.</span></span> <span data-ttu-id="e94f7-105">、Microsoft では、このスクリプトの使用はサポートされていないと、このスクリプトの適合性に関する Microsoft の保証がありません。</span><span class="sxs-lookup"><span data-stu-id="e94f7-105">Use of this script is not supported by Microsoft, and Microsoft makes no guarantees about the suitability of this script.</span></span>  
+> 
+> [!IMPORTANT]
+>  <span data-ttu-id="e94f7-106">データベースを作成する複数のファイルおよびファイル グループ、BizTalk メッセージ ボックスのこの SQL スクリプトを使用する場合は、次の考慮事項が適用されます。</span><span class="sxs-lookup"><span data-stu-id="e94f7-106">The following considerations apply when using this SQL script to create multiple files and filegroups for the BizTalk MessageBox databases:</span></span>  
+> 
+> 1. <span data-ttu-id="e94f7-107">**次の条件下でメッセージ ボックス データベース ファイル グループの SQL スクリプトを再実行します。**</span><span class="sxs-lookup"><span data-stu-id="e94f7-107">**Rerun the MessageBox database filegroups SQL script under the following conditions:**</span></span>  
+> 
+>    - <span data-ttu-id="e94f7-108">実行する BizTalk Server の修正プログラムまたはサービス パックをインストールするかどうかは**msgboxlogic.sql**、メッセージ ボックス データベースのファイル グループの SQL スクリプトをもう一度実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e94f7-108">If you install a BizTalk Server hotfix or service pack that runs **msgboxlogic.sql**, you will need to run the MessageBox database filegroups SQL script again.</span></span> <span data-ttu-id="e94f7-109">これは、機能は、msgboxlogic.sql を元に戻します、メッセージ ボックスのファイル グループとファイルの既定の設定をプライマリ ファイル グループを使用するため必要です。</span><span class="sxs-lookup"><span data-stu-id="e94f7-109">This is necessary because msgboxlogic.sql reverts the MessageBox filegroups and files to default settings, which is to use the PRIMARY filegroup.</span></span> <span data-ttu-id="e94f7-110">修正プログラムまたはサービス パックが msgboxlogic.sql を実行するかどうかを判断する確認、**ファイル情報**修正プログラム KB 記事の「します。</span><span class="sxs-lookup"><span data-stu-id="e94f7-110">To determine if a hotfix or service pack runs msgboxlogic.sql, check the **File Information** section of the hotfix KB article.</span></span> <span data-ttu-id="e94f7-111">または、サービス パックのファイルに含まれている setup.xml ファイルを確認します。</span><span class="sxs-lookup"><span data-stu-id="e94f7-111">Or check the setup.xml file that is included with the service pack files.</span></span>  
+>    - <span data-ttu-id="e94f7-112">BizTalk Server グループに新しいホストを追加する場合は、メッセージ ボックス データベースのファイル グループの SQL スクリプトをもう一度実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e94f7-112">If you add a new host to the BizTalk Server group, you will need to run the MessageBox database filegroups SQL script again.</span></span> <span data-ttu-id="e94f7-113">これは、機能は、新しいホストを作成するストアド プロシージャ、テーブルの既定では、プライマリ ファイル グループを使用するホストを構成するため、必要です。</span><span class="sxs-lookup"><span data-stu-id="e94f7-113">This is necessary because the stored procedure that creates new hosts configures the tables for the hosts to use the PRIMARY file group by default.</span></span>  
+>    - <span data-ttu-id="e94f7-114">**マルチ メッセージ ボックス環境でのデータベース ファイル グループの SQL スクリプトのメッセージ ボックス データベースに適用:** マルチ メッセージ ボックス環境で各メッセージ ボックスに対してメッセージ ボックス データベースのファイル グループの SQL スクリプトを実行できますが、要件ではありません。</span><span class="sxs-lookup"><span data-stu-id="e94f7-114">**Applying the MessageBox database filegroups SQL script in a multi-MessageBox environment:** Though not a requirement, the MessageBox database filegroups SQL script can be executed against each MessageBox in a multi-Messagebox environment.</span></span>  
   
-> [!IMPORTANT]  
->  <span data-ttu-id="6e904-106">次の考慮事項は、この SQL スクリプトを使用して複数のファイルおよびファイル グループの作成、BizTalk メッセージ ボックス データベースに適用されます。</span><span class="sxs-lookup"><span data-stu-id="6e904-106">The following considerations apply when using this SQL script to create multiple files and filegroups for the BizTalk MessageBox databases:</span></span>  
->   
->  1.  <span data-ttu-id="6e904-107">**次の条件下でメッセージ ボックス データベースのファイル グループの SQL スクリプトを再実行します。**</span><span class="sxs-lookup"><span data-stu-id="6e904-107">**Rerun the MessageBox database filegroups SQL script under the following conditions:**</span></span>  
->   
->      -   <span data-ttu-id="6e904-108">実行している BizTalk Server の修正プログラムまたはサービス パックをインストールするかどうかは**msgboxlogic.sql**、メッセージ ボックス データベースのファイル グループの SQL スクリプトをもう一度実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6e904-108">If you install a BizTalk Server hotfix or service pack that runs **msgboxlogic.sql**, you will need to run the MessageBox database filegroups SQL script again.</span></span> <span data-ttu-id="6e904-109">これは、機能は、msgboxlogic.sql を元に戻します、メッセージ ボックス データベースのファイル グループとファイルの既定の設定には、プライマリ ファイル グループを使用するため必要です。</span><span class="sxs-lookup"><span data-stu-id="6e904-109">This is necessary because msgboxlogic.sql reverts the MessageBox filegroups and files to default settings, which is to use the PRIMARY filegroup.</span></span> <span data-ttu-id="6e904-110">調べるには、修正プログラムまたはサービス パックが msgboxlogic.sql を実行するかどうか、確認、**ファイル情報**の修正プログラム KB 記事のセクションです。</span><span class="sxs-lookup"><span data-stu-id="6e904-110">To determine if a hotfix or service pack runs msgboxlogic.sql, check the **File Information** section of the hotfix KB article.</span></span> <span data-ttu-id="6e904-111">または、サービス パックのファイルに含まれている setup.xml ファイルを確認します。</span><span class="sxs-lookup"><span data-stu-id="6e904-111">Or check the setup.xml file that is included with the service pack files.</span></span>  
->     -   <span data-ttu-id="6e904-112">BizTalk Server グループに新しいホストを追加する場合は、メッセージ ボックス データベースのファイル グループの SQL スクリプトを再度実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6e904-112">If you add a new host to the BizTalk Server group, you will need to run the MessageBox database filegroups SQL script again.</span></span> <span data-ttu-id="6e904-113">これは、機能は、新しいホストを作成するストアド プロシージャには、テーブルの既定では、プライマリ ファイル グループを使用するホストが構成される必要があります。</span><span class="sxs-lookup"><span data-stu-id="6e904-113">This is necessary because the stored procedure that creates new hosts configures the tables for the hosts to use the PRIMARY file group by default.</span></span>  
-> 2.  <span data-ttu-id="6e904-114">**マルチパート メッセージ ボックス環境での SQL のデータベース ファイル グループ スクリプトのメッセージ ボックス データベースを適用する:** マルチ メッセージ ボックス環境で各メッセージ ボックスに対して、メッセージ ボックス データベースのファイル グループの SQL スクリプトを実行できるも要件ではありません。</span><span class="sxs-lookup"><span data-stu-id="6e904-114">**Applying the MessageBox database filegroups SQL script in a multi-MessageBox environment:** Though not a requirement, the MessageBox database filegroups SQL script can be executed against each MessageBox in a multi-Messagebox environment.</span></span>  
-  
-## <a name="biztalk-messagebox-database-filegroups-sql-script"></a><span data-ttu-id="6e904-115">BizTalk メッセージ ボックス データベースのファイル グループの SQL スクリプト</span><span class="sxs-lookup"><span data-stu-id="6e904-115">BizTalk MessageBox database filegroups SQL script</span></span>  
- <span data-ttu-id="6e904-116">次の SQL スクリプトは、トピックの説明に従って、複数のファイルおよびファイル グループを作成するために使用できます[、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)です。</span><span class="sxs-lookup"><span data-stu-id="6e904-116">The following SQL script can be used to create multiple files and filegroups as described in the topic [Optimizing Filegroups for the Databases2](../technical-guides/optimizing-filegroups-for-the-databases2.md).</span></span>  
+## <a name="biztalk-messagebox-database-filegroups-sql-script"></a><span data-ttu-id="e94f7-115">BizTalk メッセージ ボックス データベースのファイル グループの SQL スクリプト</span><span class="sxs-lookup"><span data-stu-id="e94f7-115">BizTalk MessageBox database filegroups SQL script</span></span>  
+ <span data-ttu-id="e94f7-116">次の SQL スクリプトは、トピックの説明に従って、複数のファイルおよびファイル グループを作成するために使用できます[、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)します。</span><span class="sxs-lookup"><span data-stu-id="e94f7-116">The following SQL script can be used to create multiple files and filegroups as described in the topic [Optimizing Filegroups for the Databases2](../technical-guides/optimizing-filegroups-for-the-databases2.md).</span></span>  
   
 ```  
 /************************************************************  
@@ -563,5 +563,5 @@ print '********Object to Filegroup Distribution Report Completed********'
 GO  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="6e904-117">参照</span><span class="sxs-lookup"><span data-stu-id="6e904-117">See Also</span></span>  
- [<span data-ttu-id="6e904-118">データベースのパフォーマンスを最適化します。</span><span class="sxs-lookup"><span data-stu-id="6e904-118">Optimizing Database Performance</span></span>](../technical-guides/optimizing-database-performance.md)
+## <a name="see-also"></a><span data-ttu-id="e94f7-117">参照</span><span class="sxs-lookup"><span data-stu-id="e94f7-117">See Also</span></span>  
+ [<span data-ttu-id="e94f7-118">データベース パフォーマンスの最適化</span><span class="sxs-lookup"><span data-stu-id="e94f7-118">Optimizing Database Performance</span></span>](../technical-guides/optimizing-database-performance.md)

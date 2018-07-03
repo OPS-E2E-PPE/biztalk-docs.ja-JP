@@ -1,5 +1,5 @@
 ---
-title: FileAct を構成し、アダプターの操作 |Microsoft ドキュメント
+title: 構成 FileAct および InterAct アダプター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,90 +12,90 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca2bc3aa739bf6914ea9943d84d58d44b1506323
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: 2d62e4cf0896e755a0ec8ece00d6a2140210b463
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "25966464"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36974603"
 ---
-# <a name="configure-the-fileact-and-interact-adapter"></a><span data-ttu-id="0874e-102">FileAct を構成し、アダプターの対話</span><span class="sxs-lookup"><span data-stu-id="0874e-102">Configure the FileAct and InterAct Adapter</span></span>
-<span data-ttu-id="0874e-103">によって使用されるさまざまなアイテムを構成、[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]ランタイム。</span><span class="sxs-lookup"><span data-stu-id="0874e-103">Configure the different artifacts used by the [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] runtime.</span></span> 
+# <a name="configure-the-fileact-and-interact-adapter"></a><span data-ttu-id="d818a-102">構成 FileAct および InterAct アダプター</span><span class="sxs-lookup"><span data-stu-id="d818a-102">Configure the FileAct and InterAct Adapter</span></span>
+<span data-ttu-id="d818a-103">使用されるさまざまな成果物を構成、[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]ランタイム。</span><span class="sxs-lookup"><span data-stu-id="d818a-103">Configure the different artifacts used by the [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] runtime.</span></span> 
 
   
-## <a name="prerequisites"></a><span data-ttu-id="0874e-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="0874e-104">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="d818a-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="d818a-104">Prerequisites</span></span>  
    
--   <span data-ttu-id="0874e-105">インストールします [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]</span><span class="sxs-lookup"><span data-stu-id="0874e-105">Install the [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]</span></span>
+- <span data-ttu-id="d818a-105">インストールします [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]</span><span class="sxs-lookup"><span data-stu-id="d818a-105">Install the [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]</span></span>
   
--   <span data-ttu-id="0874e-106">メンバーとしてサインイン、 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrators グループ</span><span class="sxs-lookup"><span data-stu-id="0874e-106">Sign in as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrators group</span></span>
+- <span data-ttu-id="d818a-106">メンバーとしてサインイン、 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrators グループ</span><span class="sxs-lookup"><span data-stu-id="d818a-106">Sign in as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrators group</span></span>
   
--   <span data-ttu-id="0874e-107">SQL Server が実行されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="0874e-107">Confirm SQL Server is running</span></span>
+- <span data-ttu-id="d818a-107">SQL Server が実行されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="d818a-107">Confirm SQL Server is running</span></span>
   
-## <a name="step-1-configure-the-fileact-and-interact-adapter"></a><span data-ttu-id="0874e-108">手順 1: FileAct および InterAct アダプターを構成します。</span><span class="sxs-lookup"><span data-stu-id="0874e-108">Step 1: Configure the FileAct and InterAct adapter</span></span>  
+## <a name="step-1-configure-the-fileact-and-interact-adapter"></a><span data-ttu-id="d818a-108">手順 1: FileAct および InterAct アダプターを構成します。</span><span class="sxs-lookup"><span data-stu-id="d818a-108">Step 1: Configure the FileAct and InterAct adapter</span></span>  
   
-1.  <span data-ttu-id="0874e-109">**Microsoft BizTalk FileAct およびアダプター構成の対話**ウィザードに移動して**概要**です。</span><span class="sxs-lookup"><span data-stu-id="0874e-109">In the **Microsoft BizTalk FileAct and InterAct Adapter Configuration** wizard, go to **Overview**.</span></span> <span data-ttu-id="0874e-110">左のペインで選択**ランタイム**アダプターのランタイム コンポーネントを構成します。</span><span class="sxs-lookup"><span data-stu-id="0874e-110">In the left pane, select **Runtime** to configure the runtime components of the adapters.</span></span>  
+1.  <span data-ttu-id="d818a-109">**Microsoft BizTalk FileAct と対話するアダプターの構成**ウィザードに移動して**概要**します。</span><span class="sxs-lookup"><span data-stu-id="d818a-109">In the **Microsoft BizTalk FileAct and InterAct Adapter Configuration** wizard, go to **Overview**.</span></span> <span data-ttu-id="d818a-110">左側のウィンドウで次のように選択します。**ランタイム**アダプターのランタイム コンポーネントを構成します。</span><span class="sxs-lookup"><span data-stu-id="d818a-110">In the left pane, select **Runtime** to configure the runtime components of the adapters.</span></span>  
   
-2.  <span data-ttu-id="0874e-111">**のランタイム構成** **アカウント**COM + ストア アンド フォワード モードの構成を入力する省略記号 [...] を選択します。</span><span class="sxs-lookup"><span data-stu-id="0874e-111">In **Runtime Configuration**, under **Account**, select the ellipsis […] to enter the COM plus configuration for the Store and Forward mode.</span></span>  
+2.  <span data-ttu-id="d818a-111">**のランタイム構成** **アカウント**COM + ストア アンド フォワード モードの構成を入力する省略記号 [...] を選択します。</span><span class="sxs-lookup"><span data-stu-id="d818a-111">In **Runtime Configuration**, under **Account**, select the ellipsis […] to enter the COM plus configuration for the Store and Forward mode.</span></span>  
   
-3.  <span data-ttu-id="0874e-112">**ユーザーの資格情報**、ユーザー名を入力 (で、 *domain \user name*形式) と COM + 構成で使用するアカウントのパスワード。</span><span class="sxs-lookup"><span data-stu-id="0874e-112">In **User Credentials**, enter the user name (in the *domain\user name* format) and password for the account used in the COM plus configuration.</span></span> <span data-ttu-id="0874e-113">**[OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0874e-113">Select **OK**.</span></span>  
-  
-    > [!NOTE]
-    >  <span data-ttu-id="0874e-114">A**ユーザーの資格情報**入力したアカウントは、推奨されるよりも高い特権を持っている場合に警告が表示されます。</span><span class="sxs-lookup"><span data-stu-id="0874e-114">A **User Credentials** warning appears if the account you entered has higher privileges than are recommended.</span></span> <span data-ttu-id="0874e-115">選択**はい**を続行します。</span><span class="sxs-lookup"><span data-stu-id="0874e-115">Select **Yes** to continue.</span></span>
-  
-4.  <span data-ttu-id="0874e-116">選択**適用構成**FileAct とアダプターの対話には、COM + + の構成を適用します。</span><span class="sxs-lookup"><span data-stu-id="0874e-116">Select **Apply configuration** to apply the COM plus configuration to the FileAct and InterAct Adapter.</span></span>  
-  
-5.  <span data-ttu-id="0874e-117">**概要**、確認、および選択**次**です。</span><span class="sxs-lookup"><span data-stu-id="0874e-117">In the **Summary**, review, and select **Next**.</span></span>  
-  
-6.  <span data-ttu-id="0874e-118">構成が完了したら、コンポーネントの一覧を確認します。</span><span class="sxs-lookup"><span data-stu-id="0874e-118">When the configuration completes, review the list of components.</span></span> <span data-ttu-id="0874e-119">チェック マークは、コンポーネントが正常に構成されていることを意味します。</span><span class="sxs-lookup"><span data-stu-id="0874e-119">A check mark means that the component is configured successfully.</span></span> <span data-ttu-id="0874e-120">"X"では、そのコンポーネントに問題があることを意味します。</span><span class="sxs-lookup"><span data-stu-id="0874e-120">An "X" means that there is a problem with that component.</span></span>  
+3.  <span data-ttu-id="d818a-112">**ユーザーの資格情報**、ユーザー名を入力します (で、 *domain \user name*形式) と COM + の構成で使用するアカウントのパスワード。</span><span class="sxs-lookup"><span data-stu-id="d818a-112">In **User Credentials**, enter the user name (in the *domain\user name* format) and password for the account used in the COM plus configuration.</span></span> <span data-ttu-id="d818a-113">**[OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d818a-113">Select **OK**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="0874e-121">使用して、 **Logfile**構成イベントを表示するリンクです。</span><span class="sxs-lookup"><span data-stu-id="0874e-121">Use the **Logfile** link to view the configuration events.</span></span>  
+    >  <span data-ttu-id="d818a-114">A**ユーザーの資格情報**入力したアカウントに推奨されるよりも高い特権がある場合に警告が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d818a-114">A **User Credentials** warning appears if the account you entered has higher privileges than are recommended.</span></span> <span data-ttu-id="d818a-115">選択**はい**を続行します。</span><span class="sxs-lookup"><span data-stu-id="d818a-115">Select **Yes** to continue.</span></span>
   
-7.  <span data-ttu-id="0874e-122">選択**完了**構成を完了します。</span><span class="sxs-lookup"><span data-stu-id="0874e-122">Select **Finish** to complete the configuration.</span></span> <span data-ttu-id="0874e-123">**概要**ランタイム コンポーネントの現在の構成状態を示しています。</span><span class="sxs-lookup"><span data-stu-id="0874e-123">The **Overview** shows the current configuration status for the Runtime components.</span></span>  
-
-<span data-ttu-id="0874e-124">次に、これらのアダプターを実行するには、ホストとホスト インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="0874e-124">Next, create the host and host instances to run these adapters.</span></span>
-
-## <a name="step-2-create-the-host-and-host-instances"></a><span data-ttu-id="0874e-125">手順 2: ホストおよびホスト インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="0874e-125">Step 2: Create the host and host instances</span></span>
-
-<span data-ttu-id="0874e-126">FileAct アダプター用の専用のホストおよび InterAct アダプターの場合は、独立した専用ホストを作成することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="0874e-126">We recommend that you create a dedicated host for the FileAct adapter and a separate dedicated host for the InterAct adapter.</span></span> <span data-ttu-id="0874e-127">各アダプターの 1 つ以上のホスト インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="0874e-127">For each adapter, create at least one host instance.</span></span>  
-
-<span data-ttu-id="0874e-128">[BizTalk ホストとホスト インスタンスを管理する](../../core/managing-biztalk-hosts-and-host-instances.md)ホストとホスト インスタンスを作成する手順を示します。</span><span class="sxs-lookup"><span data-stu-id="0874e-128">[Managing BizTalk Hosts and Host Instances](../../core/managing-biztalk-hosts-and-host-instances.md) list the steps to create hosts and host instances.</span></span> 
-
-<span data-ttu-id="0874e-129">作成されると、次の手順は、送信ハンドラーを追加し、SWIFT Alliance ゲートウェイ (SAG) で作成したクライアントのメッセージのパートナーを使用するは。</span><span class="sxs-lookup"><span data-stu-id="0874e-129">Once created, the next step is to add the send handler, and use the Client Message Partner you created in the SWIFT Alliance Gateway (SAG).</span></span>
-
-## <a name="step-3-create-the-send-handler"></a><span data-ttu-id="0874e-130">手順 3: 送信ハンドラーを作成します。</span><span class="sxs-lookup"><span data-stu-id="0874e-130">Step 3: Create the send handler</span></span>
-
-<span data-ttu-id="0874e-131">FileAct および InterAct ハンドラーのプロパティとして送信、送信ポートの構成値、個々 の FileAct のプロパティが設定されていないかの対話の送信ポートします。</span><span class="sxs-lookup"><span data-stu-id="0874e-131">You use the FileAct and InterAct send handler properties as the send port configuration values, if the properties are not set on the individual FileAct or InterAct send port.</span></span> 
+4.  <span data-ttu-id="d818a-116">選択**構成の適用**FileAct と対話するアダプターに COM + 構成を適用します。</span><span class="sxs-lookup"><span data-stu-id="d818a-116">Select **Apply configuration** to apply the COM plus configuration to the FileAct and InterAct Adapter.</span></span>  
   
-1.  <span data-ttu-id="0874e-132">**BizTalk Server 管理コンソール**コンソールで、 **BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**のプラットフォームの設定**の順に展開および**アダプター**です。</span><span class="sxs-lookup"><span data-stu-id="0874e-132">In the **BizTalk Server Administration** console, expand **BizTalk Server Administration**, expand **BizTalk Group**, expand **Platform Settings**, and then expand **Adapters**.</span></span>  
+5.  <span data-ttu-id="d818a-117">**概要**、レビュー、および選択**次**します。</span><span class="sxs-lookup"><span data-stu-id="d818a-117">In the **Summary**, review, and select **Next**.</span></span>  
   
-2.  <span data-ttu-id="0874e-133">選択、 **FileAct**または**InterAct**アダプター。</span><span class="sxs-lookup"><span data-stu-id="0874e-133">Select the **FileAct** or **InterAct** adapter.</span></span> <span data-ttu-id="0874e-134">右側のペインで、送信ハンドラをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="0874e-134">In the right pane, double-click the send handler.</span></span>  
-  
-3.  <span data-ttu-id="0874e-135">**ホスト名**ドロップダウン リストで、前のセクションで作成したホストを選択します。</span><span class="sxs-lookup"><span data-stu-id="0874e-135">In the **Host name** drop-down list, select the host you created in the previous section.</span></span> <span data-ttu-id="0874e-136">選択し、**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="0874e-136">Then select **Properties**.</span></span>  
-  
-4.  <span data-ttu-id="0874e-137">**トランスポートのプロパティ**を選択、**引数**プロパティ、入力として次の引数と。</span><span class="sxs-lookup"><span data-stu-id="0874e-137">In the **Transport Properties**, select the **Argument** property, and enter the following argument as:</span></span>  
-  
-     `-SagMessagePartner <Client Message Partner created in SAG\>`
+6.  <span data-ttu-id="d818a-118">構成が完了したら、コンポーネントの一覧を確認します。</span><span class="sxs-lookup"><span data-stu-id="d818a-118">When the configuration completes, review the list of components.</span></span> <span data-ttu-id="d818a-119">チェック マークは、コンポーネントが正常に構成されていることを意味します。</span><span class="sxs-lookup"><span data-stu-id="d818a-119">A check mark means that the component is configured successfully.</span></span> <span data-ttu-id="d818a-120">"X"は、そのコンポーネントに問題があることを意味します。</span><span class="sxs-lookup"><span data-stu-id="d818a-120">An "X" means that there is a problem with that component.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="0874e-138">置き換える <`Client Message Partner created in SAG`> クライアント メッセージのパートナーの名前に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="0874e-138">Replace <`Client Message Partner created in SAG`> with the name of the client message partner.</span></span> <span data-ttu-id="0874e-139">暗号モード、FACrypto モード、およびしプロパティの既定値のままにします。</span><span class="sxs-lookup"><span data-stu-id="0874e-139">Leave the default values for the Crypto Mode, FACrypto Mode, and LogMessages properties.</span></span>  
+    >  <span data-ttu-id="d818a-121">使用して、 **Logfile**構成イベントを表示するリンク。</span><span class="sxs-lookup"><span data-stu-id="d818a-121">Use the **Logfile** link to view the configuration events.</span></span>  
   
-5.  <span data-ttu-id="0874e-140">選択**OK**して変更を保存し、[プロパティ] ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="0874e-140">Select **OK** to save your changes, and then to close the properties window.</span></span> 
-  
-6.  <span data-ttu-id="0874e-141">**プラットフォームの設定****ホスト インスタンス**です。</span><span class="sxs-lookup"><span data-stu-id="0874e-141">Under **Platform Settings**, select **Host Instances**.</span></span>  
-  
-7. <span data-ttu-id="0874e-142">ホスト インスタンスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="0874e-142">Restart the host instances:</span></span> 
+7.  <span data-ttu-id="d818a-122">選択**完了**構成を完了します。</span><span class="sxs-lookup"><span data-stu-id="d818a-122">Select **Finish** to complete the configuration.</span></span> <span data-ttu-id="d818a-123">**概要**ランタイム コンポーネントの現在の構成状態が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d818a-123">The **Overview** shows the current configuration status for the Runtime components.</span></span>  
 
-  - <span data-ttu-id="0874e-143">FileAct ホスト インスタンスを右クリックし、**再起動**</span><span class="sxs-lookup"><span data-stu-id="0874e-143">Right-click the FileAct host instance, and **Restart**</span></span>
-  - <span data-ttu-id="0874e-144">対話するホスト インスタンスを右クリックし、**再起動**です。</span><span class="sxs-lookup"><span data-stu-id="0874e-144">Right-click the InterAct host instance, and **Restart**.</span></span>  
+<span data-ttu-id="d818a-124">次に、これらのアダプターを実行するには、ホストとホスト インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="d818a-124">Next, create the host and host instances to run these adapters.</span></span>
 
-<span data-ttu-id="0874e-145">次に、FileAct を有効にする SWIFTNet paramfile でサーバーのメッセージのパートナーを入力し、InterAct アダプターの受信します。</span><span class="sxs-lookup"><span data-stu-id="0874e-145">Next, enter the server message partners in the SWIFTNet paramfile to enable the FileAct and InterAct receive adapters.</span></span>
-  
-## <a name="step-4-configure-the-swiftnet-param-file"></a><span data-ttu-id="0874e-146">手順 4: SWIFTNet param ファイルを構成します。</span><span class="sxs-lookup"><span data-stu-id="0874e-146">Step 4: Configure the SWIFTNet param file</span></span>
+## <a name="step-2-create-the-host-and-host-instances"></a><span data-ttu-id="d818a-125">手順 2: ホストとホスト インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="d818a-125">Step 2: Create the host and host instances</span></span>
 
-<span data-ttu-id="0874e-147">有効にするには、FileAct および InterAct SWIFTNet paramfile で SAG で作成したパートナーを入力する必要があります、サーバー メッセージの値で初期化するためにアダプターを受信します。</span><span class="sxs-lookup"><span data-stu-id="0874e-147">To enable the FileAct and InterAct receive adapters to initialize with the values, the Server message partners created in SAG must be entered in the SWIFTNet paramfile.</span></span> <span data-ttu-id="0874e-148">通常格納されて、paramfile`c:\SWIFTAlliance\RA\<remote access instance name\>\cfg\paramfile`です。</span><span class="sxs-lookup"><span data-stu-id="0874e-148">The paramfile is typically located in `c:\SWIFTAlliance\RA\<remote access instance name\>\cfg\paramfile`.</span></span> <span data-ttu-id="0874e-149">構成した後、paramfile、開始**SnlReceiver.exe**です。</span><span class="sxs-lookup"><span data-stu-id="0874e-149">After you configure the paramfile, start **SnlReceiver.exe**.</span></span>  
+<span data-ttu-id="d818a-126">FileAct アダプターの専用ホストと InterAct アダプターの個別の専用ホストを作成することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="d818a-126">We recommend that you create a dedicated host for the FileAct adapter and a separate dedicated host for the InterAct adapter.</span></span> <span data-ttu-id="d818a-127">アダプターごとに少なくとも 1 つのホスト インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="d818a-127">For each adapter, create at least one host instance.</span></span>  
+
+<span data-ttu-id="d818a-128">[BizTalk ホストとホスト インスタンスを管理する](../../core/managing-biztalk-hosts-and-host-instances.md)ホストとホスト インスタンスを作成する手順を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="d818a-128">[Managing BizTalk Hosts and Host Instances](../../core/managing-biztalk-hosts-and-host-instances.md) list the steps to create hosts and host instances.</span></span> 
+
+<span data-ttu-id="d818a-129">作成されたら、次の手順は、送信ハンドラーを追加し、SWIFT Alliance ゲートウェイ (SAG) で作成したクライアントのメッセージのパートナーを使用するがします。</span><span class="sxs-lookup"><span data-stu-id="d818a-129">Once created, the next step is to add the send handler, and use the Client Message Partner you created in the SWIFT Alliance Gateway (SAG).</span></span>
+
+## <a name="step-3-create-the-send-handler"></a><span data-ttu-id="d818a-130">手順 3: 送信ハンドラーを作成します。</span><span class="sxs-lookup"><span data-stu-id="d818a-130">Step 3: Create the send handler</span></span>
+
+<span data-ttu-id="d818a-131">FileAct および InterAct ハンドラーのプロパティとして送信、送信ポートの構成値、個々 の FileAct プロパティが設定されていないか InterAct 送信ポートします。</span><span class="sxs-lookup"><span data-stu-id="d818a-131">You use the FileAct and InterAct send handler properties as the send port configuration values, if the properties are not set on the individual FileAct or InterAct send port.</span></span> 
   
-1. <span data-ttu-id="0874e-150">開く、 **SWIFTNet paramfile**です。</span><span class="sxs-lookup"><span data-stu-id="0874e-150">Open the **SWIFTNet paramfile**.</span></span> <span data-ttu-id="0874e-151">マークされた場所に"\*\*\*"、以下を追加します。</span><span class="sxs-lookup"><span data-stu-id="0874e-151">In the location marked with "\*\*\*" add the following.</span></span> <span data-ttu-id="0874e-152">なお、`AdapterType`値を指定できます`Interact`または`Fileact`です。</span><span class="sxs-lookup"><span data-stu-id="0874e-152">Note that the `AdapterType` value can be `Interact` or `Fileact`.</span></span>  
+1. <span data-ttu-id="d818a-132">**BizTalk Server 管理**コンソールで、 **BizTalk Server 管理**、展開**BizTalk グループ**、展開**プラットフォームの設定**、順に展開**アダプター**します。</span><span class="sxs-lookup"><span data-stu-id="d818a-132">In the **BizTalk Server Administration** console, expand **BizTalk Server Administration**, expand **BizTalk Group**, expand **Platform Settings**, and then expand **Adapters**.</span></span>  
+  
+2. <span data-ttu-id="d818a-133">選択、 **FileAct**または**InterAct**アダプター。</span><span class="sxs-lookup"><span data-stu-id="d818a-133">Select the **FileAct** or **InterAct** adapter.</span></span> <span data-ttu-id="d818a-134">右側のウィンドウで、送信ハンドラをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="d818a-134">In the right pane, double-click the send handler.</span></span>  
+  
+3. <span data-ttu-id="d818a-135">**ホスト名**ドロップダウン リストで、前のセクションで作成したホストを選択します。</span><span class="sxs-lookup"><span data-stu-id="d818a-135">In the **Host name** drop-down list, select the host you created in the previous section.</span></span> <span data-ttu-id="d818a-136">選び**プロパティ**します。</span><span class="sxs-lookup"><span data-stu-id="d818a-136">Then select **Properties**.</span></span>  
+  
+4. <span data-ttu-id="d818a-137">**トランスポートのプロパティ**を選択、**引数**プロパティとしては、次の引数を入力します。</span><span class="sxs-lookup"><span data-stu-id="d818a-137">In the **Transport Properties**, select the **Argument** property, and enter the following argument as:</span></span>  
+  
+    `-SagMessagePartner <Client Message Partner created in SAG\>`
+  
+   > [!NOTE]
+   >  <span data-ttu-id="d818a-138">置換 <`Client Message Partner created in SAG`> クライアント メッセージのパートナーの名前に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="d818a-138">Replace <`Client Message Partner created in SAG`> with the name of the client message partner.</span></span> <span data-ttu-id="d818a-139">暗号モード、FACrypto モード、およびしプロパティの既定値のままにします。</span><span class="sxs-lookup"><span data-stu-id="d818a-139">Leave the default values for the Crypto Mode, FACrypto Mode, and LogMessages properties.</span></span>  
+  
+5. <span data-ttu-id="d818a-140">選択 **[ok]** 変更を保存し、[プロパティ] ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="d818a-140">Select **OK** to save your changes, and then to close the properties window.</span></span> 
+  
+6. <span data-ttu-id="d818a-141">**プラットフォームの設定**、**ホスト インスタンス**します。</span><span class="sxs-lookup"><span data-stu-id="d818a-141">Under **Platform Settings**, select **Host Instances**.</span></span>  
+  
+7. <span data-ttu-id="d818a-142">ホスト インスタンスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="d818a-142">Restart the host instances:</span></span> 
+
+   - <span data-ttu-id="d818a-143">FileAct のホスト インスタンスを右クリックし、**再起動**</span><span class="sxs-lookup"><span data-stu-id="d818a-143">Right-click the FileAct host instance, and **Restart**</span></span>
+   - <span data-ttu-id="d818a-144">InterAct のホスト インスタンスを右クリックし、**再起動**します。</span><span class="sxs-lookup"><span data-stu-id="d818a-144">Right-click the InterAct host instance, and **Restart**.</span></span>  
+
+<span data-ttu-id="d818a-145">次に、SWIFTNet に paramfile に FileAct を有効にする、サーバー メッセージ パートナーを入力し、InterAct アダプターの受信します。</span><span class="sxs-lookup"><span data-stu-id="d818a-145">Next, enter the server message partners in the SWIFTNet paramfile to enable the FileAct and InterAct receive adapters.</span></span>
+  
+## <a name="step-4-configure-the-swiftnet-param-file"></a><span data-ttu-id="d818a-146">手順 4: SWIFTNet param ファイルを構成します。</span><span class="sxs-lookup"><span data-stu-id="d818a-146">Step 4: Configure the SWIFTNet param file</span></span>
+
+<span data-ttu-id="d818a-147">有効にするには、FileAct および InterAct アダプターは SWIFTNet に paramfile に入力する必要があります SAG で作成したパートナー サーバーのメッセージの値で初期化するためを受信します。</span><span class="sxs-lookup"><span data-stu-id="d818a-147">To enable the FileAct and InterAct receive adapters to initialize with the values, the Server message partners created in SAG must be entered in the SWIFTNet paramfile.</span></span> <span data-ttu-id="d818a-148">Paramfile に通常格納されて`c:\SWIFTAlliance\RA\<remote access instance name\>\cfg\paramfile`します。</span><span class="sxs-lookup"><span data-stu-id="d818a-148">The paramfile is typically located in `c:\SWIFTAlliance\RA\<remote access instance name\>\cfg\paramfile`.</span></span> <span data-ttu-id="d818a-149">開始する前に paramfile を構成する**SnlReceiver.exe**します。</span><span class="sxs-lookup"><span data-stu-id="d818a-149">After you configure the paramfile, start **SnlReceiver.exe**.</span></span>  
+  
+1. <span data-ttu-id="d818a-150">開く、 **SWIFTNet に paramfile**します。</span><span class="sxs-lookup"><span data-stu-id="d818a-150">Open the **SWIFTNet paramfile**.</span></span> <span data-ttu-id="d818a-151">マークされた場所に"\*\*\*"、以下を追加します。</span><span class="sxs-lookup"><span data-stu-id="d818a-151">In the location marked with "\*\*\*" add the following.</span></span> <span data-ttu-id="d818a-152">なお、`AdapterType`値を指定できます`Interact`または`Fileact`します。</span><span class="sxs-lookup"><span data-stu-id="d818a-152">Note that the `AdapterType` value can be `Interact` or `Fileact`.</span></span>  
   
      ```spawn "snlreceiver -SagMessagePartner <Server MessagePartnerName\> -AdapterMode <AdapterType\>"```  
        
@@ -119,25 +119,25 @@ ms.locfileid: "25966464"
     stop_event:SNL002:subsystem SampleSubsystem is down  
    ```  
   
-   > [!NOTE]
-    >  <span data-ttu-id="0874e-153">SNLreceiver を開始する前に、受信ポートを有効にする (FileAct と InterAct) を使用するアダプター。</span><span class="sxs-lookup"><span data-stu-id="0874e-153">Before you start SNLreceiver, enable the receive ports for the adapter you are using (FileAct or InterAct).</span></span>  
+> [!NOTE]
+>  <span data-ttu-id="d818a-153">SNLreceiver を開始する前に、受信ポートを有効にする (FileAct または対話) を使用するアダプター。</span><span class="sxs-lookup"><span data-stu-id="d818a-153">Before you start SNLreceiver, enable the receive ports for the adapter you are using (FileAct or InterAct).</span></span>  
   
-2. <span data-ttu-id="0874e-154">起動し、SnlReceiver.exe を停止します。</span><span class="sxs-lookup"><span data-stu-id="0874e-154">Start and stop SnlReceiver.exe:</span></span>
+2. <span data-ttu-id="d818a-154">開始および停止 SnlReceiver.exe:</span><span class="sxs-lookup"><span data-stu-id="d818a-154">Start and stop SnlReceiver.exe:</span></span>
 
-    1.  <span data-ttu-id="0874e-155">デスクトップで、選択、**リモート API**リモート API コマンド プロンプトを開くにはアイコン。</span><span class="sxs-lookup"><span data-stu-id="0874e-155">On the desktop, select the **Remote API** icon to open the Remote API command prompt.</span></span>  
+    1.  <span data-ttu-id="d818a-155">デスクトップで、選択、**リモート API**リモート API のコマンド プロンプトを開くにはアイコン。</span><span class="sxs-lookup"><span data-stu-id="d818a-155">On the desktop, select the **Remote API** icon to open the Remote API command prompt.</span></span>  
   
-    2.  <span data-ttu-id="0874e-156">コマンド プロンプトで次のように入力します。`Swiftnet start`です。</span><span class="sxs-lookup"><span data-stu-id="0874e-156">At the command prompt, type `Swiftnet start`.</span></span> <span data-ttu-id="0874e-157">SnlReceiver.exe を開始するには ENTER を選択します。</span><span class="sxs-lookup"><span data-stu-id="0874e-157">Select ENTER to start SnlReceiver.exe.</span></span>  
+    2.  <span data-ttu-id="d818a-156">コマンド プロンプトで「`Swiftnet start`します。</span><span class="sxs-lookup"><span data-stu-id="d818a-156">At the command prompt, type `Swiftnet start`.</span></span> <span data-ttu-id="d818a-157">SnlReceiver.exe を開始するには ENTER を選択します。</span><span class="sxs-lookup"><span data-stu-id="d818a-157">Select ENTER to start SnlReceiver.exe.</span></span>  
   
-    3.  <span data-ttu-id="0874e-158">コマンド プロンプトで次のように入力します。`Swiftnet stop`です。</span><span class="sxs-lookup"><span data-stu-id="0874e-158">At the command prompt, type `Swiftnet stop`.</span></span> <span data-ttu-id="0874e-159">SnlReceiver.exe を停止するには ENTER を選択します。</span><span class="sxs-lookup"><span data-stu-id="0874e-159">Select ENTER to stop SnlReceiver.exe.</span></span>  
+    3.  <span data-ttu-id="d818a-158">コマンド プロンプトで「`Swiftnet stop`します。</span><span class="sxs-lookup"><span data-stu-id="d818a-158">At the command prompt, type `Swiftnet stop`.</span></span> <span data-ttu-id="d818a-159">SnlReceiver.exe を停止するには ENTER を選択します。</span><span class="sxs-lookup"><span data-stu-id="d818a-159">Select ENTER to stop SnlReceiver.exe.</span></span>  
 
   
-<span data-ttu-id="0874e-160">次に、ファイルを更新**autoexec.bat** SWIFT 環境変数を設定します。</span><span class="sxs-lookup"><span data-stu-id="0874e-160">Next, update the file **autoexec.bat** to set the SWIFT environment variables.</span></span>
+<span data-ttu-id="d818a-160">次に、ファイルを更新**autoexec.bat** SWIFT 環境変数を設定します。</span><span class="sxs-lookup"><span data-stu-id="d818a-160">Next, update the file **autoexec.bat** to set the SWIFT environment variables.</span></span>
 
-## <a name="step-5-update-autoexecbat-to-configure-the-receive-adapters"></a><span data-ttu-id="0874e-161">手順 5: 更新プログラムの autoexec.bat ファイル受信アダプターを構成するには</span><span class="sxs-lookup"><span data-stu-id="0874e-161">Step 5: Update autoexec.bat to configure the receive adapters</span></span>
+## <a name="step-5-update-autoexecbat-to-configure-the-receive-adapters"></a><span data-ttu-id="d818a-161">手順 5: 更新プログラムの autoexec.bat 受信アダプタを構成するには</span><span class="sxs-lookup"><span data-stu-id="d818a-161">Step 5: Update autoexec.bat to configure the receive adapters</span></span>
 
-<span data-ttu-id="0874e-162">更新プログラム、 **autoexec.bat**をインストールしたコンピューターに SWIFT 環境変数を設定するファイル、[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]受信アダプター。</span><span class="sxs-lookup"><span data-stu-id="0874e-162">Update the **autoexec.bat** file to set the SWIFT environment variables on the computer where you installed the [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] receive adapters.</span></span> <span data-ttu-id="0874e-163">環境変数が、パスにインストールされている受信アダプターがあるシステムから生成された`c:\SWIFTAlliance`という名前の受信アダプターのインスタンスと**Ra1**です。</span><span class="sxs-lookup"><span data-stu-id="0874e-163">The environment variables are generated from the system that has the receive adapter installed in the path `c:\SWIFTAlliance` with an instance of the receive adapter named **Ra1**.</span></span> <span data-ttu-id="0874e-164">構成を適切に SWIFT 環境変数を更新します。</span><span class="sxs-lookup"><span data-stu-id="0874e-164">Update the SWIFT environment variables appropriately for your configuration.</span></span>  
+<span data-ttu-id="d818a-162">更新プログラム、 **autoexec.bat**をインストールしたコンピューターで、SWIFT 環境変数を設定するファイル、[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]受信アダプター。</span><span class="sxs-lookup"><span data-stu-id="d818a-162">Update the **autoexec.bat** file to set the SWIFT environment variables on the computer where you installed the [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] receive adapters.</span></span> <span data-ttu-id="d818a-163">環境変数は、パスにインストールされている受信アダプターがあるシステムから生成される`c:\SWIFTAlliance`という名前の受信アダプターのインスタンスと**Ra1**します。</span><span class="sxs-lookup"><span data-stu-id="d818a-163">The environment variables are generated from the system that has the receive adapter installed in the path `c:\SWIFTAlliance` with an instance of the receive adapter named **Ra1**.</span></span> <span data-ttu-id="d818a-164">適切に構成の SWIFT 環境変数を更新します。</span><span class="sxs-lookup"><span data-stu-id="d818a-164">Update the SWIFT environment variables appropriately for your configuration.</span></span>  
   
- <span data-ttu-id="0874e-165">Autoexe.bat ファイルのサンプルを次に示します。</span><span class="sxs-lookup"><span data-stu-id="0874e-165">The following is a sample of the autoexe.bat file:</span></span>
+ <span data-ttu-id="d818a-165">Autoexe.bat ファイルのサンプルを次に示します。</span><span class="sxs-lookup"><span data-stu-id="d818a-165">The following is a sample of the autoexe.bat file:</span></span>
   
 ```  
 SET COMPUTERNAME=<Machine Name>  
@@ -168,11 +168,11 @@ SET Path=%PATH%;C:\SWIFTAlliance\RA\lib
   
 ```  
   
-## <a name="see-some-examples"></a><span data-ttu-id="0874e-166">いくつかの例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0874e-166">See some examples</span></span>
-<span data-ttu-id="0874e-167">FileAct および InterAct メッセージの例については、次を参照してください。[サンプルの対話と FileAct メッセージ](../../adapters-and-accelerators/fileact-interact/sample-interact-and-fileact-messages.md)です。</span><span class="sxs-lookup"><span data-stu-id="0874e-167">For examples of FileAct and InterAct messages, see [Sample InterAct and FileAct Messages](../../adapters-and-accelerators/fileact-interact/sample-interact-and-fileact-messages.md).</span></span>  
+## <a name="see-some-examples"></a><span data-ttu-id="d818a-166">いくつかの例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d818a-166">See some examples</span></span>
+<span data-ttu-id="d818a-167">FileAct および InterAct メッセージの例については、次を参照してください。[サンプルを操作および FileAct メッセージ](../../adapters-and-accelerators/fileact-interact/sample-interact-and-fileact-messages.md)します。</span><span class="sxs-lookup"><span data-stu-id="d818a-167">For examples of FileAct and InterAct messages, see [Sample InterAct and FileAct Messages](../../adapters-and-accelerators/fileact-interact/sample-interact-and-fileact-messages.md).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="0874e-168">参照</span><span class="sxs-lookup"><span data-stu-id="0874e-168">See Also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="d818a-168">参照</span><span class="sxs-lookup"><span data-stu-id="d818a-168">See Also</span></span>  
 
-[<span data-ttu-id="0874e-169">FileAct および InterAct アダプターをインストールする</span><span class="sxs-lookup"><span data-stu-id="0874e-169">Install the FileAct and InterAct Adapter</span></span>](../../adapters-and-accelerators/fileact-interact/install-the-fileact-and-interact-adapter.md)  
-[<span data-ttu-id="0874e-170">FileAct および InterAct アダプターをアンインストールまたは修復する</span><span class="sxs-lookup"><span data-stu-id="0874e-170">Uninstall or repair the FileAct and InterAct adapter</span></span>](../../adapters-and-accelerators/fileact-interact/uninstall-or-repair-the-fileact-and-interact-adapter.md)  
-[<span data-ttu-id="0874e-171">インストールに関する既知の問題の確認</span><span class="sxs-lookup"><span data-stu-id="0874e-171">Read the installation known issues</span></span>](../../adapters-and-accelerators/fileact-interact/read-the-installation-known-issues.md)
+[<span data-ttu-id="d818a-169">FileAct および InterAct アダプターをインストールする</span><span class="sxs-lookup"><span data-stu-id="d818a-169">Install the FileAct and InterAct Adapter</span></span>](../../adapters-and-accelerators/fileact-interact/install-the-fileact-and-interact-adapter.md)  
+[<span data-ttu-id="d818a-170">FileAct および InterAct アダプターをアンインストールまたは修復する</span><span class="sxs-lookup"><span data-stu-id="d818a-170">Uninstall or repair the FileAct and InterAct adapter</span></span>](../../adapters-and-accelerators/fileact-interact/uninstall-or-repair-the-fileact-and-interact-adapter.md)  
+[<span data-ttu-id="d818a-171">インストールに関する既知の問題の確認</span><span class="sxs-lookup"><span data-stu-id="d818a-171">Read the installation known issues</span></span>](../../adapters-and-accelerators/fileact-interact/read-the-installation-known-issues.md)
