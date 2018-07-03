@@ -1,5 +1,5 @@
 ---
-title: スキーマ ファイルおよびスキーマ アイテム プロパティの設定 |Microsoft ドキュメント
+title: スキーマ ファイルおよびスキーマ アイテム プロパティの設定 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba49a87e0789a96b34a210f6ecedbbe788835997
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 62a06e0e1f0f8ed2af1277a7282fc1b729ac524b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22255258"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36993980"
 ---
 # <a name="how-to-set-schema-file-and-schema-item-properties"></a>スキーマ ファイルおよびスキーマ アイテム プロパティの設定方法
 スキーマ ファイル プロパティとスキーマ アイテム プロパティはどちらも [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロパティ ウィンドウで設定します。 ここでは、スキーマ ファイル プロパティとスキーマ アイテム プロパティの確認や設定の手順ついて説明します。  
   
-## <a name="set-schema-file-properties-in-the-properties-window"></a>[プロパティ] ウィンドウでスキーマ ファイル プロパティを設定します。  
+## <a name="set-schema-file-properties-in-the-properties-window"></a>[プロパティ] ウィンドウでスキーマ ファイルのプロパティを設定します。  
   
-1.  ソリューション エクスプ ローラーを調べるか、関連するプロパティを設定し、をクリックするスキーマを右クリックして**プロパティ**です。  
+1. ソリューション エクスプ ローラーで、調査や関連のプロパティを設定し、クリックするスキーマを右クリックして**プロパティ**します。  
   
-     目的のプロパティの確認や設定を行います。 BizTalk スキーマの使用可能なプロパティについては、次を参照してください。、**スキーマ ファイル プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+    目的のプロパティの確認や設定を行います。 BizTalk スキーマで使用できるプロパティについては、次を参照してください。、**スキーマ ファイル プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
-2.  Visual Studio の [プロパティ] ウィンドウで、目的のスキーマ ファイル プロパティを設定し、Enter を押します。  
+2. Visual Studio の [プロパティ] ウィンドウで、目的のスキーマ ファイル プロパティを設定し、Enter を押します。  
   
 ## <a name="set-schema-item-properties-in-the-properties-window"></a>[プロパティ] ウィンドウでスキーマ アイテム プロパティを設定します。  
   
-1.  ソリューション エクスプローラーで、プロパティの確認や設定を行うスキーマを選択します。  
+1. ソリューション エクスプローラーで、プロパティの確認や設定を行うスキーマを選択します。  
   
-2.  必要に応じて F4 キーを押し、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のプロパティ ウィンドウを開きます。  
+2. 必要に応じて F4 キーを押し、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のプロパティ ウィンドウを開きます。  
   
-3.  [プロパティ] ウィンドウで、目的のプロパティの確認や設定を行います。 BizTalk スキーマのプロパティ] ウィンドウで使用可能なプロパティについては、次を参照してください。 **[ノードのプロパティ - ノード型によって**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+3. [プロパティ] ウィンドウで、目的のプロパティの確認や設定を行います。 BizTalk スキーマのプロパティ] ウィンドウで使用できるプロパティについては、次を参照してください。 **[ノードのプロパティ - ノード タイプで**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
-     設定したプロパティの値は、変更の承認または取り消しを行う必要はなく、すぐに有効になります。  
+    設定したプロパティの値は、変更の承認または取り消しを行う必要はなく、すぐに有効になります。  
   
 ## <a name="see-also"></a>参照  
- [プロジェクト内のスキーマを管理します。](../core/managing-schemas-within-projects.md)
+ [プロジェクト内のスキーマの管理](../core/managing-schemas-within-projects.md)

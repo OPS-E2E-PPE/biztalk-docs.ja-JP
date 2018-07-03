@@ -1,5 +1,5 @@
 ---
-title: フラット ファイル アセンブラー パイプライン コンポーネントでの文字エン コード |Microsoft ドキュメント
+title: フラット ファイル アセンブラー パイプライン コンポーネントにおける文字エンコーディング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,39 +20,39 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af38855c81129cd4bafff50544f2aee15e6f3fab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 47c1b85531a2efe13b91383a4bb5a8deb35b63e3
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232122"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36986339"
 ---
 # <a name="character-encoding-in-the-flat-file-assembler-pipeline-component"></a>フラット ファイル アセンブラー パイプライン コンポーネントでの文字エン コード
 フラット ファイル アセンブラーを使用すると、ユーザーが指定する文字エンコードでメッセージを生成できます。 文字エンコードは複数のレベルで指定できます。  
   
--   **スキーマです。** 設定、**コードページ**ドキュメントのフラット ファイル スキーマのプロパティです。  
+- **スキーマです。** 設定、**コードページ**ドキュメントのフラット ファイル スキーマのプロパティ。  
   
--   **コンポーネント。** 設定、**表せない**パイプライン デザイナーでコンポーネントのプロパティです。  
+- **コンポーネント。** 設定、**ターゲット文字セット**パイプライン デザイナーでコンポーネントのプロパティ。  
   
--   **メッセージ。** 設定、 **XMLNorm.TargetCharset**メッセージ コンテキストのプロパティです。  
+- **メッセージ。** 設定、 **XMLNorm.TargetCharset**メッセージ コンテキストのプロパティ。  
   
- メッセージ コンテキストに設定されたプロパティ値は、パイプライン デザイナーで設定されたプロパティ値よりも常に優先されます。 また、常にパイプライン デザイナーで設定された値として設定された値を上書き、**コードページ**フラット ファイル ドキュメント スキーマ内のプロパティです。  
+  メッセージ コンテキストに設定されたプロパティ値は、パイプライン デザイナーで設定されたプロパティ値を常にオーバーライドします。 また、常にパイプライン デザイナーで設定された値として設定された値を上書き、**コードページ**フラット ファイル ドキュメント スキーマ内のプロパティ。  
   
- フラット ファイル アセンブラーでは、次のアルゴリズムに基づいて、出力メッセージのエンコードに使用する文字セットを決定します。  
+  フラット ファイル アセンブラーでは、次のアルゴリズムに基づいて、出力メッセージのエンコードに使用する文字セットを決定します。  
   
--   場合、 **XMLNorm.TargetCharset**コンテキスト プロパティが設定されて、その値はエンコードするために使用します。  
+- 場合、 **XMLNorm.TargetCharset**コンテキスト プロパティが設定されて、その値がエンコードに使用します。  
   
--   それ以外の場合、**表せない**パイプライン デザイナーでプロパティを指定すると、その値を使用します。  
+- の場合、**ターゲット文字セット**パイプライン デザイナーでプロパティを指定すると、その値を使用します。  
   
--   それ以外の場合、**コードページ**フラット ファイル スキーマのプロパティを指定すると、その値を使用します。  
+- の場合、**コードページ**フラット ファイル スキーマのプロパティを指定すると、その値を使用します。  
   
--   それ以外の場合、 **XMLNorm.SourceCharset**プロパティを指定すると、その値を使用します。  
+- の場合、 **XMLNorm.SourceCharset**プロパティを指定すると、その値を使用します。  
   
--   上記のいずれにも該当しない場合は、"UTF-8" が使用されます。 UTF-8 エンコードを使用する場合、フラット ファイル アセンブラー パイプライン コンポーネントでは、送信メッセージにバイト順マークが付加されないことに注意してください。  
+- 上記のいずれにも該当しない場合は、"UTF-8" が使用されます。 UTF-8 エンコードを使用する場合、フラット ファイル アセンブラー パイプライン コンポーネントでは、送信メッセージにバイト順マークが付加されないことに注意してください。  
   
- フラット ファイル アセンブラーでは、BizTalk メッセージ オブジェクトのボディ部のエンコード情報を保存、 **IBaseMessagePart.Charset**プロパティです。  
+  フラット ファイル アセンブラーでは、BizTalk メッセージ オブジェクトのボディ部のエンコード情報を保存、 **IBaseMessagePart.Charset**プロパティ。  
   
 ## <a name="see-also"></a>参照  
  [フラット ファイル アセンブラー パイプライン コンポーネント](../core/flat-file-assembler-pipeline-component.md)   
  [フラット ファイル アセンブラー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-flat-file-assembler-pipeline-component.md)   
- [パイプライン AssemblerDisassembler (BizTalk Server Samples フォルダ)](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)
+ [Pipelines-AssemblerDisassembler (BizTalk Server サンプル フォルダー)](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)

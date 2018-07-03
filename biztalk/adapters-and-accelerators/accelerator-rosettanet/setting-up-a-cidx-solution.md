@@ -1,5 +1,5 @@
 ---
-title: CIDX ソリューションのセットアップ |Microsoft ドキュメント
+title: CIDX ソリューションのセットアップ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -24,12 +24,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ab617efc701551f1d5bcbae2a292676cc4f33251
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 770691b2862aba307e6f1cc444c8d38adce4aeb4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210914"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36984291"
 ---
 # <a name="setting-up-a-cidx-solution"></a>CIDX ソリューションの設定
 Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] は、CIDX (Chemical Industry Data Exchange) XML メッセージ交換 (CIDX Chem eStandards バージョン 2.0 および 3.0) をサポートしています。 ここでは、次の操作を行って CIDX ソリューションを設定する方法について説明します。  
@@ -47,31 +47,31 @@ Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentv
 ## <a name="setting-up-a-cidx-process-configuration"></a>CIDX プロセス構成の設定  
  CIDX eStandards メッセージ交換を設定するには、次のプロパティを持つプロセス構成を作成する必要があります。  
   
--   **標準的な**プロパティ設定されたプロセス構成設定に**CIDX**  
+- **標準**プロパティに設定するプロセス構成設定で**CIDX**  
   
--   **シングル アクション**プロパティ設定されたプロセス構成設定に**は True。**  
+- **シングル アクション**プロパティに設定するプロセス構成設定で**は True。**  
   
--   **0A1 アグリーメント**プロパティに設定する、取引先アグリーメントに**非 0A1**  
+- **0A1 アグリーメント**プロパティ設定する取引先パートナー アグリーメントで**非 0A1**  
   
- 詳細については、次を参照してください。[設定を CIDX eStandards メッセージ交換](../../adapters-and-accelerators/accelerator-rosettanet/setting-up-cidx-estandards-message-exchange.md)です。  
+  詳細については、次を参照してください。[を CIDX eStandards メッセージ交換](../../adapters-and-accelerators/accelerator-rosettanet/setting-up-cidx-estandards-message-exchange.md)します。  
   
 ## <a name="creating-a-cidx-agreement"></a>CIDX アグリーメントの作成  
  CIDX eStandards メッセージ交換を設定するには、次のプロパティを持つアグリーメントを作成する必要があります。  
   
--   **RNIF バージョン**プロパティ設定したアグリーメント設定に**V01.10.00**  
+- **RNIF バージョン**プロパティに設定するアグリーメントの設定で**V01.10.00**  
   
--   **0A1 アグリーメント**プロパティ設定したアグリーメント設定に**非 0A1**  
+- **0A1 アグリーメント**プロパティに設定するアグリーメントの設定で**非 0A1**  
   
- 詳細については、次を参照してください。[を作成するか、契約の編集](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)です。  
+  詳細については、次を参照してください。[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)します。  
   
 ## <a name="applying-a-pip-for-cidx"></a>CIDX 用 PIP の適用  
- PIP を CIDX 実装に適用するには、設定、**標準**プロパティには、プロセス構成プロファイル**CIDX**です。 値を入力したらができます、**メッセージ標準**、**標準バージョン**、および**ペイロードのバインド ID**です。 これらの値は CIDX Chem eStandards の仕様に含まれています。  
+ PIP を CIDX 実装に適用するには、設定、**標準**にプロセス構成プロファイルのプロパティ**CIDX**します。 完了したら後の値を入力できるが、**メッセージ標準**、**標準バージョン**、および**ペイロードのバインド ID**します。 これらの値は CIDX Chem eStandards の仕様に含まれています。  
   
 ## <a name="importing-an-xsd-based-pip-for-cidx"></a>CIDX 用 XSD ベース PIP のインポート  
- CIDX 用、XSD ベース PIP をインポートするには、CIDX.org から PIP の ZIP ファイルをダウンロードする必要があります[http://go.microsoft.com/FWLink/?LinkID=33859](http://go.microsoft.com/FWLink/?LinkID=62361)です。 説明されているインポート手順に従います[XSD ベース PIP のインポート](../../adapters-and-accelerators/accelerator-rosettanet/importing-an-xsd-based-pip.md)です。  
+ CIDX 用、XSD ベース PIP をインポートするには、CIDX.org から PIP の ZIP ファイルをダウンロードする必要があります[ http://go.microsoft.com/FWLink/?LinkID=33859](http://go.microsoft.com/FWLink/?LinkID=62361)します。 説明されているインポート手順に従います[XSD ベース PIP のインポート](../../adapters-and-accelerators/accelerator-rosettanet/importing-an-xsd-based-pip.md)します。  
   
 ## <a name="connecting-to-the-elemica-network"></a>Elemica ネットワークへの接続  
- [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] をカスタマイズし、Elemica Connectivity Pack のプロジェクト ファイルを使用して Elemica に接続できます。 Connectivity Pack をダウンロードする[http://go.microsoft.com/fwlink/?LinkId=46195](http://go.microsoft.com/fwlink/?LinkId=46195)です。 詳細については、MSDN サイトで、「BizTalk Accelerator for RosettaNet 3.0 での Elemica ネットワークへの接続」ホワイト ペーパーを参照してください。 [http://go.microsoft.com/fwlink/?linkid=46539](http://go.microsoft.com/fwlink/?linkid=46539)です。  
+ [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] をカスタマイズし、Elemica Connectivity Pack のプロジェクト ファイルを使用して Elemica に接続できます。 Connectivity Pack をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=46195](http://go.microsoft.com/fwlink/?LinkId=46195)します。 詳細については、MSDN のページで、"BizTalk Accelerator for RosettaNet 3.0 での Elemica ネットワークへの接続 』 ホワイト ペーパーを参照してください。 [ http://go.microsoft.com/fwlink/?linkid=46539](http://go.microsoft.com/fwlink/?linkid=46539)します。  
   
 > [!NOTE]
 >  [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] に対して、ホワイト ペーパー『BizTalk Accelerator for RosettaNet 3.0 での Elemica ネットワークへの接続』の情報は有効です。  
@@ -79,6 +79,6 @@ Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentv
 ## <a name="see-also"></a>参照  
  [CIDX サポート](../../adapters-and-accelerators/accelerator-rosettanet/cidx-support.md)   
  [CIDX メッセージ規格](../../adapters-and-accelerators/accelerator-rosettanet/cidx-messaging-standards.md)   
- [設定を CIDX eStandards メッセージ交換](../../adapters-and-accelerators/accelerator-rosettanet/setting-up-cidx-estandards-message-exchange.md)   
+ [CIDX eStandards メッセージ交換](../../adapters-and-accelerators/accelerator-rosettanet/setting-up-cidx-estandards-message-exchange.md)   
  [作成するか、契約の編集](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)   
  [XSD ベース PIP のインポート](../../adapters-and-accelerators/accelerator-rosettanet/importing-an-xsd-based-pip.md)

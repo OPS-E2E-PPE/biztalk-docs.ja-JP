@@ -1,5 +1,5 @@
 ---
-title: 送信ポート グループから送信ポートを削除する方法 |Microsoft ドキュメント
+title: 送信ポート グループから送信ポートを削除する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d109064a1286bcd622479a4075ef2d23dc8d320c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6ce54faf09b45a46d2ac5150e1c2bbbe88c8ccac
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254522"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37018925"
 ---
 # <a name="how-to-remove-a-send-port-from-a-send-port-group"></a>送信ポート グループから送信ポートを削除する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポート グループから特定の送信ポートを削除する方法について説明します。 送信ポートを送信ポート グループから削除しても、アプリケーションや BizTalk 管理データベースからは削除されません。  
@@ -34,18 +34,18 @@ ms.locfileid: "22254522"
 >  メッセージをルーティングするには、送信ポート グループは、少なくとも 1 つの送信ポートを含める必要があります。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントを使用してログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)です。  
+ このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
   
 ### <a name="to-remove-a-send-port-from-a-send-port-group"></a>送信ポート グループから送信ポートを削除するには  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2.  コンソール ツリーで、BizTalk グループを展開し、送信ポート グループから送信ポートを削除する BizTalk アプリケーションを展開します。  
+2. コンソール ツリーで、BizTalk グループを展開し、送信ポート グループから送信ポートを削除する BizTalk アプリケーションを展開します。  
   
-3.  をクリックして**送信ポート グループ**送信ポート グループを右クリックし、クリックして**プロパティ**です。  
+3. クリックして**送信ポート グループ**送信ポート グループを右クリックし、クリックして**プロパティ**します。  
   
-4.  **名前**をクリックしてをクリックし、削除、送信ポート**削除**です。  
+4. **名前**、してをクリックし、削除、送信ポートをクリックします。**削除**します。  
   
 ## <a name="see-also"></a>参照  
- [作成して、送信ポート グループを構成します。](../core/creating-and-configuring-send-port-groups.md)   
- [作成して、送信ポートの構成](../core/creating-and-configuring-send-ports.md)
+ [作成と送信ポート グループの構成](../core/creating-and-configuring-send-port-groups.md)   
+ [送信ポートの作成および構成](../core/creating-and-configuring-send-ports.md)

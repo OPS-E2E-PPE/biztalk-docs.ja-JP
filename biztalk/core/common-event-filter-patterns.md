@@ -1,5 +1,5 @@
 ---
-title: 一般的なイベント フィルタ パターン |Microsoft ドキュメント
+title: 一般的なイベント フィルタ パターン |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef90a4533b8b12929488d3a323dae47976eace0a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4d5e5b7ad34a8b87bebe88e21630b178fb7ee35c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22234522"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012979"
 ---
 # <a name="common-event-filter-patterns"></a>一般的なイベント フィルタ パターン
 Windows Workflow Foundation (WF) 用の BAM インターセプタを使用すると、インターセプタ構成ファイル内で頻繁に使用する、一般的なフィルタ パターンがあることに気付きます。 これらのフィルタ パターンの一部はアプリケーションと環境に固有ですが、多くのパターンは、環境にまたがりさまざまなアプリケーションで使用できます。  
   
  このトピックでは、WF アプリケーション用に記述されたインターセプタ構成ファイルで使用する、一般的なフィルタ パターンを多数示します。 各パターンは、以下の Windows Workflow Foundation 追跡イベントでグループ化されています。  
   
--   アクティビティ状態イベント  
+- アクティビティ状態イベント  
   
--   ワークフロー状態イベント  
+- ワークフロー状態イベント  
   
--   ユーザー イベント  
+- ユーザー イベント  
   
- 各パターンをインターセプタ構成ファイルにコピーし、アプリケーションに合わせて変更することができます。  
+  各パターンをインターセプタ構成ファイルにコピーし、アプリケーションに合わせて変更することができます。  
   
 ## <a name="activity-status-event-filter-patterns"></a>アクティビティ状態イベントのフィルタ パターン  
  アクティビティは、ワークフローの基本的なビルディング ブロックです。 ワークフローは、ツリー状に階層化された一連のアクティビティです。 1 つのアクティビティは、ワークフロー内の 1 つのアクションを表します。 遅延などの単純なアクションのこともあれば、複数の子アクティビティで構成される複合的なアクティビティの場合もあります。  
@@ -70,7 +70,7 @@ Windows Workflow Foundation (WF) 用の BAM インターセプタを使用する
 ```  
   
 ### <a name="filter-by-activity-type-closed-activity-event"></a>アクティビティ タイプによるフィルタ (終了したアクティビティ イベント)  
- 名前ではなくタイプでアクティビティをフィルタしたい場合があります。 たとえば、ワークフロー内のすべてのアクティビティに対して、アクティビティ名と日付/タイムスタンプを保存したいことがあります。 このために使用する、`GetActivityType`操作します。 `GetActivityType`一致を判断するには、基本データ型とすべての派生型に対して指定された型を比較します。 `System.Workflow.ComponentModel.Activity` に対する比較は一致します。これは、すべてのワークフロー アクティビティがそこから派生する必要があるためです。  
+ 名前ではなくタイプでアクティビティをフィルタしたい場合があります。 たとえば、ワークフロー内のすべてのアクティビティに対して、アクティビティ名と日付/タイムスタンプを保存したいことがあります。 使用してこれを実現する、`GetActivityType`操作。 `GetActivityType` 一致を判断するには、基本データ型とすべての派生型に対して指定された型を比較します。 `System.Workflow.ComponentModel.Activity` に対する比較は一致します。これは、すべてのワークフロー アクティビティがそこから派生する必要があるためです。  
   
 ```  
 <ic:Filter>  
@@ -142,7 +142,7 @@ Windows Workflow Foundation (WF) 用の BAM インターセプタを使用する
 ```  
   
 ### <a name="filter-by-activity-type-and-event"></a>アクティビティ タイプとイベントによるフィルタ  
- このフィルタは、単一のアクティビティ イベント中に特定のタイプから派生したすべてのアクティビティに関する情報をキャプチャするのに便利です。 たとえば、ワークフロー内を流れる注文書から注文書 ID と日付/タイムスタンプを追跡したいことがあります。 使用してこれを実現する、`GetActivityEvent`と`GetActivityType`操作します。 `GetActivityType`一致を判断するには、基本データ型とすべての派生型に対して指定された型を比較します。 `System.Workflow.ComponentModel.Activity` に対する比較は一致します。これは、すべてのワークフロー アクティビティがそこから派生する必要があるためです。  
+ このフィルタは、単一のアクティビティ イベント中に特定のタイプから派生したすべてのアクティビティに関する情報をキャプチャするのに便利です。 たとえば、ワークフロー内を流れる注文書から注文書 ID と日付/タイムスタンプを追跡したいことがあります。 使用してこれを実現する、`GetActivityEvent`と`GetActivityType`操作。 `GetActivityType` 一致を判断するには、基本データ型とすべての派生型に対して指定された型を比較します。 `System.Workflow.ComponentModel.Activity` に対する比較は一致します。これは、すべてのワークフロー アクティビティがそこから派生する必要があるためです。  
   
 ```  
 <ic:Filter>  
@@ -214,25 +214,25 @@ Windows Workflow Foundation (WF) 用の BAM インターセプタを使用する
 ## <a name="user-event-filter-patterns"></a>ユーザー イベントのフィルタ パターン  
  アプリケーションが、TrackData メソッドを使用してカスタム情報を追跡する場合、以下の BAM インターセプタを 1 つ以上使用して、WF のユーザー データ操作をカスタマイズするために、データの特性に基づいてフィルタをすることができます。  
   
--   GetUserDataType  
+- GetUserDataType  
   
--   GetUserKey  
+- GetUserKey  
   
--   GetUserData  
+- GetUserData  
   
- フィルタでは、これらの操作を以下の操作と組み合わせて、より複雑な式を作成することができます。  
+  フィルタでは、これらの操作を以下の操作と組み合わせて、より複雑な式を作成することができます。  
   
--   GetActivityName  
+- GetActivityName  
   
--   GetActivityType  
+- GetActivityType  
   
--   GetActivityProperty  
+- GetActivityProperty  
   
--   GetWorkflowProperty  
+- GetWorkflowProperty  
   
--   GetContextProperty  
+- GetContextProperty  
   
- フィルタにユーザー データ操作が 1 つも含まれていない場合、フィルタはユーザー イベント フィルタではなく、それを含んでいる OnEvent はエラーになるか (ユーザー操作が対応する更新式に現れる場合)、ユーザー追跡点ではなくアクティビティ追跡点として識別されます。  
+  フィルタにユーザー データ操作が 1 つも含まれていない場合、フィルタはユーザー イベント フィルタではなく、それを含んでいる OnEvent はエラーになるか (ユーザー操作が対応する更新式に現れる場合)、ユーザー追跡点ではなくアクティビティ追跡点として識別されます。  
   
 ### <a name="filter-by-activity-name-and-user-data-type"></a>アクティビティ名とユーザー データ型によるフィルタ  
  アクティビティ名とユーザー データ型でイベントを識別することが頻繁にあります。 以下の式は、"MyActivity" という名前と、`System.Object` から派生するユーザー データ型でアクティビティをフィルタします。  

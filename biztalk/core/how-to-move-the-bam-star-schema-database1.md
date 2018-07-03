@@ -1,5 +1,5 @@
 ---
-title: BAM スター スキーマ データベース 1 に移動する方法 |Microsoft ドキュメント
+title: BAM スター スキーマ データベースを 1 に移動する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6661a9ae315988a5348198fa463e24ea508cf50f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3068c9d1c72c30c51f77d9fad7b8ddf5881ed09
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254242"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983411"
 ---
 # <a name="how-to-move-the-bam-star-schema-database"></a>BAM スター スキーマ データベースを移動する方法
 ここでは、BAM スター スキーマ データベースを他のサーバーに移動する手順について説明します。  
@@ -30,38 +30,38 @@ ms.locfileid: "22254242"
   
 ### <a name="to-move-the-bam-star-schema-database"></a>BAM スター スキーマ データベースを移動するには  
   
-1.  BAM を復元するときに使用する .xml ファイルのコピーを用意します。  
+1. BAM を復元するときに使用する .xml ファイルのコピーを用意します。  
   
-    1.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+   1. をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-    2.  コマンド プロンプトで、次のディレクトリに移動します  
+   2. コマンド プロンプトで、次のディレクトリに移動します  
   
-         [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡  
+       [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡  
   
-    3.  コマンド プロンプトで、次のように入力します。  
+   3. コマンド プロンプトで、次のように入力します。  
   
-        ```  
-        Bm.exe get-config –filename:BAMConfiguration.xml  
-        ```  
+      ```  
+      Bm.exe get-config –filename:BAMConfiguration.xml  
+      ```  
   
-        > [!NOTE]
-        >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
+      > [!NOTE]
+      >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-2.  古いサーバー上のデータベースをバックアップする方法 SQL Server オンライン ブックの指示に従います。  
+2. 古いサーバー上のデータベースをバックアップする方法の SQL Server オンライン ブックの指示に従います。  
   
-3.  BAM スター スキーマ データベースを新しい SQL Server にコピーします。  
+3. BAM スター スキーマ データベースを新しい SQL Server にコピーします。  
   
-4.  SQL Server Books Online に記載されている手順に従い、新しいサーバーにデータベースを復元します。  
+4. SQL Server Books Online に記載されている手順に従い、新しいサーバーにデータベースを復元します。  
   
-5.  BAMConfiguration.xml ファイルで、StarSchemaDatabase DeploymentUnit セクションの ServerName を新しいサーバー名に変更します。  
+5. BAMConfiguration.xml ファイルで、StarSchemaDatabase DeploymentUnit セクションの ServerName を新しいサーバー名に変更します。  
   
-6.  BAMConfiguration.xml ファイルを保存して閉じます。  
+6. BAMConfiguration.xml ファイルを保存して閉じます。  
   
-7.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+7. をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-8.  コマンド プロンプトで、次のディレクトリに移動します  
+8. コマンド プロンプトで、次のディレクトリに移動します  
   
-     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡  
+    [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡  
   
 9. コマンド プロンプトで、次のように入力します。  
   
@@ -76,11 +76,11 @@ ms.locfileid: "22254242"
   
     1.  SQL Server Management Studio を使用して、BAM がホストされているサーバーを開きます。  
   
-    2.  開く、**データ変換サービス**フォルダーです。  
+    2.  開く、**データ変換サービス**フォルダー。  
   
-    3.  開く、**ローカル パッケージ**フォルダーです。  
+    3.  開く、**ローカル パッケージ**フォルダー。  
   
-    4.  DTS パッケージを開き、ダブルクリックして**接続 2**接続を開きます。  
+    4.  DTS パッケージを開きをダブルクリック**Connection 2**接続を開きます。  
   
     5.  ドロップダウン ボックスから新しいサーバー名とデータベース名を選択します。  
   
@@ -88,11 +88,11 @@ ms.locfileid: "22254242"
   
     1.  SQL Server 分析マネージャーを使用して、BAM 分析データベースをホストするサーバーを展開します。  
   
-    2.  開く、**データソース**フォルダーです。  
+    2.  開く、**データソース**フォルダー。  
   
-    3.  キューブのデータ ソースを右クリックし、をクリックして**編集**です。  
+    3.  キューブのデータ ソースを右クリックし、をクリックし、**編集**します。  
   
-    4.  **接続** タブで、新しいサーバー名および BAM スター スキーマ データベースのデータベース名を入力し、をクリックして**OK**です。  
+    4.  **接続** タブで、新しいサーバー名と、BAM スター スキーマ データベースのデータベース名を入力し、をクリックし、 **OK**します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server データベースの移動](../core/moving-biztalk-server-databases.md)

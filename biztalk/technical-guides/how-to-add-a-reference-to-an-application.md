@@ -1,5 +1,5 @@
 ---
-title: アプリケーションへの参照を追加する方法 |Microsoft ドキュメント
+title: アプリケーションへの参照を追加する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22b28baa30f0c6af03a95917ee752b1a69f23aae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bff93f2380a78ee55dfe323761c1549d4b0b9442
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22297810"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008259"
 ---
 # <a name="how-to-add-a-reference-to-an-application"></a>アプリケーションへの参照を追加する方法
-このトピックは、別のアプリケーションへの参照を追加する BizTalk Server 管理コンソールの使用に関する情報を提供します。 同じ BizTalk グループの別のアプリケーション内に既に存在するアイテムを、現在のアプリケーションで使用する場合は、参照を追加します。 EDI 固有のスキーマ、パイプライン、および BizTalk アプリケーション 1 などの別のアプリケーションからオーケストレーション (BizTalk EDI アプリケーションに展開) を使用する場合は、BizTalk EDI アプリケーションへの参照を追加する必要があります。 カスタム アイテムを BizTalk EDI アプリケーションに追加することはできません。  
-  
+このトピックでは、BizTalk Server 管理コンソールを使用してから別のアプリケーションへの参照を追加する方法の情報を提供します。 同じ BizTalk グループの別のアプリケーション内に既に存在するアイテムを、現在のアプリケーションで使用する場合は、参照を追加します。 EDI に固有のスキーマ、パイプライン、および BizTalk アプリケーション 1 などの別のアプリケーションからのオーケストレーション (BizTalk EDI アプリケーションに展開) を使用する場合は、BizTalk EDI アプリケーションへの参照を追加する必要があります。 カスタム アイテムを BizTalk EDI アプリケーションに追加することはできません。  
+
  詳細については。  
-  
--   別のアプリケーションへの参照を追加するを参照してください[を別のアプリケーションへの参照を追加する方法](http://go.microsoft.com/fwlink/?LinkID=155011)(http://go.microsoft.com/fwlink/?LinkID=155011)。  
-  
--   参照を追加する、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI アプリケーションを参照してください[を BizTalk Server EDI アプリケーションへの参照を追加する方法](http://go.microsoft.com/fwlink/?LinkId=155026)(http://go.microsoft.com/fwlink/?LinkId=155026)。
+
+- 別のアプリケーションへの参照を追加するを参照してください[別のアプリケーションへの参照を追加する方法](http://go.microsoft.com/fwlink/?LinkID=155011)(http://go.microsoft.com/fwlink/?LinkID=155011)します。  
+
+- 参照を追加、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI アプリケーションを参照してください[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://go.microsoft.com/fwlink/?LinkId=155026)(<http://go.microsoft.com/fwlink/?LinkId=155026>)。

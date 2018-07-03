@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 6: カスタムを作成する送信パイプライン |Microsoft ドキュメント'
+title: 'レッスン 6: 作成、カスタム送信パイプライン |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,29 +15,29 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a82801b0084f2d1b82a2c25cfc0fa2a9f8f1376c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12afba9368554dc85cf57658f674a088db7580d2
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210162"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973723"
 ---
-# <a name="lesson-6-creating-a-custom-send-pipeline"></a>レッスン 6: カスタムの送信パイプラインを作成します。
-このレッスンでは、BizTalk パイプライン デザイナを使用して、カスタム送信パイプラインを作成します。 送信パイプラインは前に、のメッセージで実行するパイプライン[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]が宛先にメッセージを送信します。  
+# <a name="lesson-6-creating-a-custom-send-pipeline"></a>レッスン 6: カスタム送信パイプラインを作成します。
+このレッスンでは、BizTalk パイプライン デザイナを使用して、カスタム送信パイプラインを作成します。 送信パイプラインは、前に、メッセージで実行するパイプライン[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]が宛先にメッセージを送信します。  
   
- SWIFT アセンブラー (ASM) コンポーネントを使用するカスタム パイプラインを構成します。 ASM は XML 形式のメッセージを受け取る変換や、SWIFT のフラット ファイルにコンテンツをシリアル化してください。 この変換はで作成した MT103 スキーマに基づいて[レッスン 3: カスタム受信パイプラインを追加する](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-a-custom-receive-pipeline.md)です。  
+ SWIFT アセンブラー (ASM) コンポーネントを使用するカスタム パイプラインを構成します。 ASM は、XML 形式のメッセージを取得に変換したり、SWIFT のフラット ファイルにコンテンツをシリアル化します。 この変換はで作成した MT103 スキーマに基づいて[レッスン 3: カスタム受信パイプラインを追加する](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-a-custom-receive-pipeline.md)します。  
   
 ### <a name="to-create-a-custom-send-pipeline"></a>カスタム送信パイプラインを作成するには  
   
-1.  ソリューション エクスプ ローラーで右クリックし、 **SWIFTPipelines**プロジェクトをポイントし、**追加**、順にクリック**新しい項目の**します。  
+1. ソリューション エクスプ ローラーで右クリックし、 **SWIFTPipelines**プロジェクトをポイントして、**追加**、 をクリックし、**新しい項目の**。  
   
-2.  追加新しい項目の SWIFTPipelines ダイアログ ボックスであることを確認**パイプライン ファイル**が選択されてカテゴリ ウィンドウで、**送信パイプライン**テンプレート ペインからです。  
+2. 追加する新しい項目の SWIFTPipelines ダイアログ ボックスであることを確認**パイプライン ファイル**がカテゴリ ウィンドウで選択され、**送信パイプライン**テンプレート ペインから。  
   
-3.  **名前**ボックスに、入力**MT103SendPipeline.btp**です。  
+3. **名前**ボックスに「 **MT103SendPipeline.btp**します。  
   
-4.  をクリックして**追加**BizTalk パイプライン デザイナーで空白のパイプラインを開きます。  
+4. クリックして**追加**に BizTalk パイプライン デザイナで、空のパイプラインを開きます。  
   
-    > [!NOTE]
-    >  BizTalk パイプライン デザイナーで空のパイプラインが表示されます。 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーに SWIFTPipelines プロジェクトの下で、新しいパイプラインを追加します。  
+   > [!NOTE]
+   >  BizTalk パイプライン デザイナーで空のパイプラインが表示されます。 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] ソリューション エクスプ ローラーに SWIFTPipelines プロジェクトの下の新しいパイプラインを追加します。  
   
- 進みます[レッスン 7: カスタムに SWIFT アセンブラーを追加する送信パイプライン](../../adapters-and-accelerators/accelerator-swift/lesson-7-adding-the-swift-assembler-to-a-custom-send-pipeline.md)です。
+   続行する[レッスン 7: SWIFT アセンブラーをカスタムに追加する送信パイプライン](../../adapters-and-accelerators/accelerator-swift/lesson-7-adding-the-swift-assembler-to-a-custom-send-pipeline.md)します。

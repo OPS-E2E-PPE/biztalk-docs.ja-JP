@@ -1,5 +1,5 @@
 ---
-title: 'トラブルシューティング: 問題と Resolutions1 |Microsoft ドキュメント'
+title: 'トラブルシューティング: 問題と Resolutions1 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,24 +15,24 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07eacd1197b36a0f160f900e4442455876e86c87
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3a2b2f7cbbe2fb6f4ba67ce1268d9ebea4ff48e3
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214554"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982923"
 ---
 # <a name="troubleshooting-issues-and-resolutions"></a>トラブルシューティング : 問題と解決策
-このトピックの内容が実行中に関連する問題に対処[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]です。 それぞれの問題は、具体的な現象、考えられる原因および解決策について説明します。  
+このトピックの「Microsoft の実行に関連する問題に対処[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]します。 各問題について、具体的な現象、考えられる原因、およびソリューションを説明します。  
   
  問題と解決策は、次の領域に分類されます。  
   
--   [インストールと構成のトラブルシューティング](../../adapters-and-accelerators/accelerator-swift/installation-and-configuration-troubleshooting.md)  
+-   [インストールおよび構成のトラブルシューティング](../../adapters-and-accelerators/accelerator-swift/installation-and-configuration-troubleshooting.md)  
   
--   [移行とアップグレードのトラブルシューティング](../../adapters-and-accelerators/accelerator-swift/migration-and-upgrade-troubleshooting.md)  
+-   [移行およびアップグレードのトラブルシューティング](../../adapters-and-accelerators/accelerator-swift/migration-and-upgrade-troubleshooting.md)  
   
--   [Message Repair and 新しい送信のトラブルシューティング](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission-troubleshooting.md)  
+-   [Message Repair and New Submission のトラブルシューティング](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission-troubleshooting.md)  
   
--   [FIN 対応調整のトラブルシューティング](../../adapters-and-accelerators/accelerator-swift/fin-response-reconciliation-troubleshooting.md)  
+-   [FIN Response Reconciliation のトラブルシューティング](../../adapters-and-accelerators/accelerator-swift/fin-response-reconciliation-troubleshooting.md)  
   
 -   [その他のトラブルシューティング](../../adapters-and-accelerators/accelerator-swift/miscellaneous-troubleshooting.md)

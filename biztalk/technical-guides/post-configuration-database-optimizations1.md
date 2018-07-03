@@ -1,5 +1,5 @@
 ---
-title: インストール後の構成データベース Optimizations1 |Microsoft ドキュメント
+title: 構成後のデータベース Optimizations1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,82 +12,82 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eeb1c5c8bbb93bce5eb69462585c2da69d587dad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e89da931e7f7a007734d69dfec8921556982ec24
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302330"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36975083"
 ---
-# <a name="post-configuration-database-optimizations"></a>インストール後の構成データベースの最適化
-推奨事項に従うだけでなく[事前構成データベースを最適化](../technical-guides/post-configuration-database-optimizations1.md)、いくつかの手順は、SQL Server 上の BizTalk Server データベースのパフォーマンスを最適化するために従う必要があります*後*BizTalk Server がインストールされているし、BizTalk Server データベースが構成されています。 このトピックでは、これらの最適化の一覧を示します。  
+# <a name="post-configuration-database-optimizations"></a>構成後のデータベースの最適化
+推奨事項に従うだけでなく[事前構成のデータベースの最適化](../technical-guides/post-configuration-database-optimizations1.md)、いくつかの手順は、SQL Server で BizTalk Server データベースのパフォーマンスを最適化するために従う必要があります*後*BizTalk Server がインストールされているし、BizTalk Server データベースが構成されています。 このトピックでは、これらの最適化の一覧を示します。  
   
-## <a name="pre-allocate-space-for-biztalk-server-databases-and-define-auto-growth-settings-for-biztalk-server-databases-to-a-fixed-value-instead-of-a-percentage-value"></a>BizTalk Server データベースの容量をあらかじめ割り当てし、パーセント値ではなく、固定値に BizTalk Server データベースの自動拡張設定を定義  
+## <a name="pre-allocate-space-for-biztalk-server-databases-and-define-auto-growth-settings-for-biztalk-server-databases-to-a-fixed-value-instead-of-a-percentage-value"></a>BizTalk Server データベース用の領域を事前割り当てし、割合の値ではなく固定値に BizTalk Server データベースの自動拡張設定の定義  
   
--   SQL Server データベースの自動拡張は、BizTalk Server データベースのパフォーマンスの低下をブロックしている操作です。 したがって、BizTalk Server データベースのデータベースの自動拡張の発生を最小限に抑えるには、事前に十分な空き領域を割り当てることが重要です。  
+-   SQL Server データベースの自動拡張は、BizTalk Server データベースのパフォーマンスの低下をブロックしている操作です。 そのためデータベース自動拡張の発生を最小限に抑えるには、事前に、BizTalk Server データベースに対して十分な領域を割り当てることが重要です。  
   
--   データベースの自動拡張は、固定の代わりにパーセンテージをメガバイト数に設定する必要があります (ファイルの拡張を指定**メガバイト単位で**)。 これは、ため、過剰なデータベース サイズの増加する可能性が低くなります測定に基づく方式では自動拡張が発生した場合に行う必要があります。 拡張増分値を超える 100 MB (サイズの大きいファイル)、10 MB (中規模ファイル用)、または 1 MB (小さなファイル用)、通常場合があります。  
+-   データベース自動拡張は、固定数の割合の代わりにメガバイト単位に設定する必要があります (ファイルの拡張を指定**メガバイト単位で**)。 これは、過剰なデータベース サイズの増加が発生する可能性を軽減測定方式では自動拡張が発生した場合、実行する必要があります。 拡張増分値は、100 MB (サイズの大きいファイル) を (中規模ファイル用)、10 MB または 1 MB (小さなファイル) の以下通常場合があります。  
   
--   SQL Server では、ファイルのサイズを大きく、ときを使用する前に、新しい領域が初期化されて最初必要があります。 これは、ブロッキング操作を含む空のページで、新しい領域の情報を入力します。 Windows Server 2003 以降を実行する SQL Server 2005 は、「ファイルの瞬時初期化」をサポートしています。 これは、ファイルの拡張操作のパフォーマンスに与える影響を大幅に減らすことができます。 詳細についてを参照してください「データベース ファイルの初期化」で SQL Server 2008 のドキュメント[http://go.microsoft.com/fwlink/?LinkId=132063](http://go.microsoft.com/fwlink/?LinkId=132063)です。 このトピックでは、ファイルの瞬時初期化を有効にするための手順を説明します。  
+-   SQL Server では、ファイルのサイズが増えた、ときを使用する新しい領域が初期化されて最初する必要があります。 これは、空のページで、新しい領域の入力を含むブロッキング操作です。 Windows Server 2003 以降を実行する SQL Server 2005 は、「ファイルの瞬時初期化します。」をサポートしています。 これは、ファイルの拡張操作のパフォーマンスに与える影響を大幅に削減できます。 詳細については、SQL Server 2008 のドキュメント「データベース ファイルの初期化」を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=132063](http://go.microsoft.com/fwlink/?LinkId=132063)します。 このトピックでは、ファイルの瞬時初期化を有効にするための手順を説明します。  
   
-## <a name="move-the-backup-biztalk-server-output-directory-to-a-dedicated-lun"></a>専用の LUN に、BizTalk Server のバックアップの出力ディレクトリを移動します。  
- 専用の LUN に、BizTalk Server のバックアップ (完全およびログ バックアップ) の出力ディレクトリを移動、1 または 2 (新しい出力パスを挿入する) [BizTalkMgmtDb]、BizTalk Server のバックアップ ジョブのステップを編集します。 読み取りは、移動専用の LUN を BizTalk Server のバックアップの出力ディレクトリは、ジョブとは異なるディスクに書き込むことによって、ジョブが実行されている場合、ディスク I/O の競合が減少します。  
+## <a name="move-the-backup-biztalk-server-output-directory-to-a-dedicated-lun"></a>BizTalk Server のバックアップの出力ディレクトリを専用の LUN に移動します。  
+ 専用の LUN に BizTalk Server のバックアップ (完全およびログ バックアップ) の出力ディレクトリを移動、手順 1. および 2. (新しい出力パスを挿入する) の [BizTalkMgmtDb] BizTalk Server のバックアップ ジョブを編集します。 読み取りは専用 LUN に BizTalk Server のバックアップの出力ディレクトリは、ジョブとは異なるディスクに書き込むことで、ジョブの実行時にディスク I/O の競合を減らすが移動します。  
   
 ## <a name="verify-the-biztalk-server-sql-agent-jobs-are-running"></a>BizTalk Server の SQL エージェント ジョブを実行していることを確認します。  
- BizTalk Server には、動作状況と状態、サーバーを保つために重要な機能を実行するいくつかの SQL Server エージェント ジョブが含まれています。 これらのジョブの状態を監視し、エラーなく実行されていることを確認する必要があります。 BizTalk Server のパフォーマンスの問題の最も一般的な原因の 1 つは、BizTalk Server の SQL エージェント ジョブは実行中は、さらになる場合、メッセージ ボックス データベースおよび追跡データベース拡張がオフにします。 BizTalk Server の SQL エージェント ジョブが問題なく実行されていることを確認する手順に従います。  
+ BizTalk Server には、動作状況と状態、サーバーを保持する重要な機能を実行するいくつかの SQL Server エージェント ジョブが含まれています。 これらのジョブの正常性を監視し、エラーなしで実行されていることを確認する必要があります。 BizTalk Server のパフォーマンスの問題の最も一般的な原因の 1 つは、BizTalk Server の SQL エージェント ジョブではなく、実行中、メッセージ ボックスがさらに可能性があるあり、データベースをオフに拡張するトラッキングします。 BizTalk Server の SQL エージェント ジョブが問題なく実行されていることを確認する次の手順に従います。  
   
- BizTalk Server のパフォーマンスの問題の最も一般的な原因の 1 つは、BizTalk Server の SQL エージェント ジョブは実行中は、さらになる場合、メッセージ ボックス データベースおよび追跡データベース拡張がオフにします。 BizTalk Server の SQL エージェント ジョブが問題なく実行されていることを確認する手順に従います。  
+ BizTalk Server のパフォーマンスの問題の最も一般的な原因の 1 つは、BizTalk Server の SQL エージェント ジョブではなく、実行中、メッセージ ボックスがさらに可能性があるあり、データベースをオフに拡張するトラッキングします。 BizTalk Server の SQL エージェント ジョブが問題なく実行されていることを確認する次の手順に従います。  
   
--   **SQL Server エージェント サービスが実行されていることを確認**です。  
+-   **SQL Server エージェント サービスが実行されていることを確認**します。  
   
--   **BizTalk Server によってインストールされる SQL Server エージェント ジョブが有効になっていることを確認し、正常に実行されている**です。  
+-   **BizTalk Server によってインストールされる SQL Server エージェント ジョブが有効になっていることを確認し、正常に実行されている**します。  
   
-     BizTalk Server SQL Server エージェント ジョブは重要な時間の経過と共に実行されていない場合システムのパフォーマンスが低下します。  
+     BizTalk Server SQL Server エージェント ジョブが非常に重要ですが、時間の経過と共に実行されていない場合、システムのパフォーマンスが低下します。  
   
--   **BizTalk Server SQL Server エージェント ジョブに適時に完了していることを確認**です。  
+-   **BizTalk Server SQL Server エージェント ジョブが適切なタイミングで完了することを確認**します。  
   
      Microsoft Operations Manager (MOM) 2005 または Microsoft System Center Operations Manager 2007 を設定すると、ジョブを監視します。  
   
      特定のジョブを特定のスケジュールの注意する必要があります。  
   
-    -   MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb ジョブは、既定では継続的に実行されます。 監視ソフトウェアと、このスケジュールを考慮する必要があります、警告を生成されません。  
+    -   既定では、MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb ジョブが継続的に実行されます。 ソフトウェアを監視、このスケジュールを考慮に入れてし、警告を生成しない必要があります。  
   
-    -   MessageBox_Message_Cleanup_BizTalkMsgBoxDb ジョブは有効になっているスケジュールも 10 秒ごと、MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb ジョブによって起動されました。 そのため、このジョブ有効になっている、スケジュール、したりしないでを手動で開始します。  
+    -   MessageBox_Message_Cleanup_BizTalkMsgBoxDb ジョブは有効、またはスケジュール設定をされませんが、10 秒ごと、MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb ジョブによって起動されました。 そのため、このジョブする必要がありますいない有効、スケジュールまたは手動で開始されました。  
   
--   **SQL Server エージェント サービスのスタートアップの種類が正しく構成されていることを確認**です。  
+-   **SQL Server エージェント サービスのスタートアップの種類が正しく構成されていることを確認**します。  
   
-     SQL Server エージェント サービスを構成することを確認、**スタートアップの種類**の**自動**SQL Server エージェント サービスが、Windows Server クラスターでクラスター リソースとして構成されている場合を除き、します。 SQL Server エージェント サービスがクラスター リソースとして構成されているかどうかは、構成する必要があります、**スタートアップの種類**として**手動**サービスは、クラスター サービスによって管理するためです。  
+     SQL Server エージェント サービスが構成されていることを確認、**スタートアップの種類**の**自動**SQL Server エージェント サービスが Windows Server クラスターでクラスター リソースとして構成されていない場合。 SQL Server エージェント サービスがクラスター リソースとして構成されているかどうかは、構成する必要があります、**スタートアップの種類**として**手動**サービスは、クラスター サービスによって管理されるためです。  
   
-## <a name="configure-purging-and-archiving-of-tracking-data"></a>消去および追跡データのアーカイブを構成します。  
- 次の手順を消去および追跡データのアーカイブが正しく構成されていることを確認します。  
+## <a name="configure-purging-and-archiving-of-tracking-data"></a>構成の削除と追跡データのアーカイブ  
+ 削除と追跡データのアーカイブが正しく構成されていることを確認する次の手順に従います。  
   
--   SQL エージェント ジョブ「DTA の消去およびアーカイブ」が適切に構成された、有効であり、正常に完了することを確認します。 詳細については、BizTalk Server のドキュメントに「方法を構成、DTA Purge とアーカイブ ジョブ」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=104908](http://go.microsoft.com/fwlink/?LinkId=104908)です。  
+-   SQL エージェント ジョブ「DTA の消去およびアーカイブ」が適切に構成された、有効化、および正常に完了することを確認します。 詳細についてで BizTalk Server のドキュメントで「方法を構成、DTA Purge とアーカイブ ジョブ」を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=104908](http://go.microsoft.com/fwlink/?LinkId=104908)します。  
   
--   ジョブが速く受信追跡データが生成された追跡データを消去することを確認します。 詳細についてを参照してください「測定最大の追跡スループット」で BizTalk Server 2006 R2 マニュアル[http://go.microsoft.com/fwlink/?LinkId=104909](http://go.microsoft.com/fwlink/?LinkId=104909)です。  
+-   ジョブが速やかに受信した追跡データが生成されると、追跡データを消去することを確認します。 詳細については、BizTalk Server 2006 R2 のドキュメント「を測定する最大の追跡スループット」を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=104909](http://go.microsoft.com/fwlink/?LinkId=104909)します。  
   
--   論理削除と物理削除ようにパラメーターを最適な時間の長さのデータを保持している場合を確認します。 詳細については、BizTalk Server のドキュメントに「アーカイブと削除、BizTalk 追跡データベース」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=101585](http://go.microsoft.com/fwlink/?LinkId=101585)です。  
+-   論理削除と時間の最適な長さのデータを保持することを確認する物理削除パラメーターを確認します。 詳細についてで BizTalk Server のドキュメントで「アーカイブと削除、BizTalk 追跡データベース」を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=101585](http://go.microsoft.com/fwlink/?LinkId=101585)します。  
   
--   だけ古いデータを削除しないようにする必要がある場合必要があります、最初の変更をアーカイブする SQL エージェント ジョブ、ストアド プロシージャを呼び出す"dtasp_PurgeTrackingDatabase" 詳細については、BizTalk Server のドキュメントに「どのようにパージ データから BizTalk 追跡データベースへ」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=101584](http://go.microsoft.com/fwlink/?LinkId=101584)です。  
+-   古いデータを消去しないだけの場合必要があります、最初の変更を保存する SQL エージェント ジョブ"dtasp_PurgeTrackingDatabase"ストアド プロシージャを呼び出す 詳細についてで BizTalk Server のドキュメントで「方法にデータから、BizTalk 追跡データベースの削除」を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=101584](http://go.microsoft.com/fwlink/?LinkId=101584)します。  
   
-## <a name="monitor-and-reduce-dtc-log-file-disk-io-contention"></a>監視し、DTC ログ ファイル ディスク I/O の競合を削減  
- Microsoft 分散トランザクション コーディネーター (MS DTC) ログ ファイルは、トランザクションに依存する環境でディスク I/O のボトルネックになります。 これは、トランザクション、またはマルチ メッセージ ボックス環境で SQL Server、MSMQ、MQSeries などをサポートするアダプターを使用する場合に特に当てはまります。 トランザクション アダプターが DTC トランザクションを使用して、マルチ メッセージ ボックス環境 DTC トランザクションを広範に使用します。 DTC ログ ファイルがディスク I/O のボトルネックにならないようにには、ディスク DTC ログ ファイルが、SQL Server データベース サーバーに常駐するディスクの I/O の使用量を監視する必要があります。 ディスクが DTC ログ ファイルが存在するディスクの I/O の使用量が過剰な場合、DTC ログ ファイルの移動を高速なディスクを検討します。 SQL Server がクラスター化された環境では、これがありませんできるだけ多くの問題にならなければなので、ログ ファイルは既に共有ドライブが含まれ、複数のスピンドルを高速な SAN ドライブが場合があります。 非クラスター化環境でボトルネックになる、または DTC ログ ファイルが他の大量のディスク ファイルで共有ディスク上のためは、それでもまだディスク I/O の使用状況を監視してください。  
+## <a name="monitor-and-reduce-dtc-log-file-disk-io-contention"></a>監視し、DTC ログ ファイルのディスク I/O の競合の削減  
+ Microsoft 分散トランザクション コーディネーター (MS DTC) ログ ファイルは、トランザクション処理を要する環境でディスク I/O のボトルネックになります。 これは、トランザクション、またはマルチ メッセージ ボックス環境で SQL Server、MSMQ、MQSeries などをサポートするアダプターを使用する場合に特に当てはまります。 トランザクション アダプターが DTC トランザクションを使用し、メッセージ ボックスの複数の環境によって、DTC トランザクションを広範に使用します。 DTC ログ ファイルがディスク I/O のボトルネックにならないことを確認するには、SQL Server データベース サーバーには、DTC ログ ファイルが存在する場所、ディスクの I/O の使用量、ディスクを監視する必要があります。 ディスク、DTC ログ ファイルがあるディスクの I/O の使用量が過剰になると、DTC ログ ファイルを高速ディスクに移動し、検討してください。 SQL Server がクラスター化された環境でない問題の多くが複数のスピンドルを備えた高速な SAN ドライブ、共有ドライブ ログ ファイルが既に存在するためです。 それでもまだ、または、DTC ログ ファイルが他のハード ディスク ファイルと共有ディスク上の非クラスター化環境でのボトルネックになるため、ディスク I/O の使用状況を監視する必要があります。  
   
- DTC ログ ファイルがディスク I/O のボトルネックにならないようにには、ディスク DTC ログ ファイルが、SQL Server データベース サーバーに常駐するディスクの I/O の使用量を監視する必要があります。 ディスクの DTC ログ ファイルが存在するディスクの I/O 使用率が過剰になると、DTC ログ ファイルの移動を高速なディスクを検討します。  
+ DTC ログ ファイルがディスク I/O のボトルネックにならないことを確認するには、SQL Server データベース サーバーには、DTC ログ ファイルが存在する場所、ディスクの I/O の使用量、ディスクを監視する必要があります。 ディスク I/O、DTC ログ ファイルがあるディスクの使用量が過剰になると、DTC ログ ファイルを高速ディスクに移動し、検討してください。  
   
- SQL Server がクラスター化された環境では、これがありませんできるだけ多くの問題にならなければなので、ログ ファイルは既に共有ドライブが含まれ、複数のスピンドルを高速な SAN ドライブが場合があります。 非クラスター化環境でボトルネックになる、または DTC ログ ファイルが他の大量のディスク ファイルで共有ディスク上のためは、それでもまだディスク I/O の使用状況を監視してください。  
+ SQL Server がクラスター化された環境でない問題の多くが複数のスピンドルを備えた高速な SAN ドライブ、共有ドライブ ログ ファイルが既に存在するためです。 それでもまだ、または、DTC ログ ファイルが他のハード ディスク ファイルと共有ディスク上の非クラスター化環境でのボトルネックになるため、ディスク I/O の使用状況を監視する必要があります。  
   
-## <a name="separate-the-messagebox-and-tracking-databases"></a>メッセージ ボックス データベースおよび追跡データベースを分割します。  
- BizTalk メッセージ ボックス データベースと BizTalk 追跡データベースは、最もアクティブであるために、これらをディスク I/O の競合の問題の可能性を減らすために専用のドライブ上のそれぞれのデータ ファイルとトランザクション ログ ファイルを配置するをお勧めします。 たとえば、する必要があります、メッセージ ボックス データベースおよび BizTalk 追跡データベース ファイルの 4 つのドライブ、1 つのドライブ、次のそれぞれに。  
+## <a name="separate-the-messagebox-and-tracking-databases"></a>メッセージ ボックス データベースと追跡データベースを分離します。  
+ BizTalk メッセージ ボックスおよび BizTalk 追跡データベースは、最もアクティブであるために、ディスク I/O の競合に関する問題の可能性を低減する専用のドライブにこれらの各データ ファイルとトランザクション ログ ファイルを配置するをお勧めします。 たとえば、次の各メッセージ ボックス データベースと BizTalk 追跡データベース ファイルの 4 つのドライブ、1 つのドライブを必要があります。  
   
--   メッセージ ボックス データ ファイル  
+- メッセージ ボックス データ ファイル  
   
--   メッセージ ボックス データベースのトランザクション ログ ファイル  
+- メッセージ ボックス データベースのトランザクション ログ ファイル  
   
--   データ ファイルを BizTalk 追跡 (DTA)  
+- データ ファイルを BizTalk 追跡 (DTA)  
   
--   トランザクション ログ ファイルの BizTalk 追跡 (DTA)  
+- トランザクション ログ ファイルの BizTalk 追跡 (DTA)  
   
- BizTalk メッセージ ボックス データベースと BizTalk 追跡データベースを分離して、データベース ファイルとトランザクション ログ ファイルの異なる物理ディスクを分離することは、ディスク I/O の競合を減らすためのベスト プラクティスと見なされます。 可能な限り多くの物理スピンドル ディスク I/O に分散しようとしてください。 専用の SQL Server で、BizTalk 追跡データベースを配置することでディスク I/O の競合を削減することもできます。 ただし、必要がありますもに従う必要がデータ ファイルとトランザクション ログ ファイルの分離に関する上記のプラクティスです。  
+  BizTalk メッセージ ボックスおよび BizTalk 追跡データベースを分離し、データベース ファイルとトランザクション ログ ファイルの異なる物理ディスクを分離することは、ディスク I/O の競合を減らすためのベスト プラクティスと見なされます。 できるだけ多くの物理スピンドルにディスク I/O を分散しようとしてください。 専用の SQL Server で、BizTalk 追跡データベースを配置することで、ディスク I/O の競合を削減することも、データ ファイルとトランザクション ログ ファイルを分離することに関しては、上記のプラクティスがまだに従ってする必要があります。  
   
 ## <a name="optimize-filegroups-for-the-biztalk-server-databases"></a>BizTalk Server データベースのファイル グループを最適化します。  
- 手順に従います[、Databases1 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases1.md)と「BizTalk Server データベースの最適化」のホワイト ペーパー [http://go.microsoft.com/fwlink/?LinkId = 101578](http://go.microsoft.com/fwlink/?LinkId=101578)追加のファイル グループと BizTalk Server データベースのファイルを作成します。 これにより、1 つのディスク構成から BizTalk Server データベースのパフォーマンスが大幅に増加します。
+ 次の手順では、 [、Databases1 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases1.md)「BizTalk Server データベースの最適化」ホワイト ペーパーと[ http://go.microsoft.com/fwlink/?LinkId=101578 ](http://go.microsoft.com/fwlink/?LinkId=101578) BizTalk の追加のファイル グループとファイルを作成するにはサーバーのデータベース。 これにより、1 つのディスク構成から BizTalk Server データベースのパフォーマンスが大幅に増加します。

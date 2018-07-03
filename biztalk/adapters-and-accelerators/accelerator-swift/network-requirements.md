@@ -1,5 +1,5 @@
 ---
-title: ネットワークの要件 |Microsoft ドキュメント
+title: ネットワークの要件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f945201cb19f4281980583f847a587fb1c2f6ecc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbc2db94a98e7bfca6b5fc5b9c16ceb304b5d22b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22213970"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988467"
 ---
-# <a name="network-requirements"></a>ネットワーク要件
-次のネットワーク コンポーネントを指定された展開アーキテクチャをビルドする必要があります。  
-  
--   などのファイアウォール サーバー、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Internet Security and Acceleration (ISA) Server です。
+# <a name="network-requirements"></a>ネットワークの要件
+次のネットワーク コンポーネントの規定された展開アーキテクチャを構築する必要があります。  
+
+- Microsoft Internet Security and Acceleration (ISA) Server などのファイアウォール サーバー。

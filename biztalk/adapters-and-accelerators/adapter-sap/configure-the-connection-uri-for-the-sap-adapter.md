@@ -1,5 +1,5 @@
 ---
-title: SAP アダプターの接続 URI の構成 |Microsoft ドキュメント
+title: SAP アダプターの接続 URI の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,144 +15,148 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b614f3a300dbda213cd45ba7eaf9215802bc48c5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 88e96df27b0a8a26b20581e3ff757181ac8195cb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22218538"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983051"
 ---
 # <a name="configure-the-connection-uri-for-the-sap-adapter"></a>SAP アダプターの接続 URI を構成します。
-接続 URI は、SAP システムに接続する接続文字列です。 SAP システムとの接続を確立するために必要なさまざまなパラメーターが含まれています。 デザイン時に、メタデータを生成する SAP システムへの接続に URI を指定する必要があります。 実行時に、操作を実行する SAP システムへの接続に URI を指定する必要があります。  
-  
-## <a name="enter-the-connection-uri-at-design-time"></a>デザイン時に、接続 URI を入力してください。  
- デザイン時の接続を使用して URI を指定できます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]です。  
-  
-### <a name="enter-the-connection-uri-using-consume-adapter-service-add-in"></a>接続 アダプター サービスのアドインを使用して URI を入力してください。  
-  
-1.  BizTalk プロジェクトを右クリックし、順にポイント**追加**、クリックして**生成した項目の追加**です。  
-  
-2.  **生成した項目の追加** ダイアログ ボックスで、次の操作します。  
-  
-    |プロパティ|目的|  
-    |--------------|----------------|  
-    |**カテゴリ**|をクリックして**アダプター サービスの使用**です。|  
-    |**[テンプレート]**|をクリックして**アダプター サービスの使用**です。|  
-  
-3.  開始する、**アダプター サービスの使用**ダイアログ ボックスで、をクリックして**追加**です。  
-  
-4.  **アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**ドロップダウン リストを**sapBinding**、 をクリック**構成**.  
-  
-5.  **アダプターの構成**ダイアログ ボックスで、をクリックして、**セキュリティ**タブです。**クライアント資格情報の種類**ドロップダウン リスト ボックスで、 **Username**ユーザー名と、SAP システムへの接続にパスワードを指定します。  
-  
-6.  クリックして、 **URI プロパティ**タブおよび他のパラメーターの値を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を参照してください[SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
-  
-7.  クリックして、**バインド プロパティ** タブの値を指定します、バインディング、存在する場合は、スキーマを生成する前に指定する必要です。 たとえばの値を指定する必要があります、 **GenerateFlatFileCompatibleIDoc** SAP システムから IDOC を受信するためのスキーマを生成する前にプロパティです。 バインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。  
-  
-8.  **[OK]** をクリックします。  
-  
-### <a name="enter-the-connection-uri-using-add-adapter-metadata-wizard"></a>入力アダプター メタデータの追加ウィザードを使用して、URI の接続  
-  
-1.  BizTalk プロジェクトを右クリックし、順にポイント**追加**、クリックして**生成した項目の追加**です。  
-  
-2.  **生成した項目の追加** ダイアログ ボックスで、次の操作します。  
-  
-    |プロパティ|目的|  
-    |--------------|----------------|  
-    |**カテゴリ**|をクリックして**アダプターを追加**です。|  
-    |**[テンプレート]**|をクリックして**アダプター メタデータの追加**です。|  
-  
-3.  **[追加]** をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
-  
-4.  アダプターの追加ウィザードで選択**WCF SAP**です。 BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。  
-  
-    > [!IMPORTANT]
-    >  BizTalk で構成されている WCF SAP ポートがある場合からポートを選択して、**ポート** ボックスの一覧です。  
-  
-5.  **[次へ]** をクリックします。  
-  
-6.  **アダプター サービスの使用** ダイアログ ボックスから、**バインディングを選択**ドロップダウン リストを**sapBinding**、 をクリック**構成**.  
-  
-7.  **アダプターの構成**ダイアログ ボックスで、をクリックして、**セキュリティ**タブです。**クライアント資格情報の種類**ドロップダウン リスト ボックスで、 **Username**ユーザー名と、SAP システムへの接続にパスワードを指定します。  
-  
-8.  クリックして、 **URI プロパティ**タブおよび他のパラメーターの値を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を参照してください[SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
-  
-9. クリックして、**バインド プロパティ** タブの値を指定します、バインディング、存在する場合は、スキーマを生成する前に指定する必要です。 たとえばの値を指定する必要があります、 **GenerateFlatFileCompatibleIDoc** SAP システムから IDOC を受信するためのスキーマを生成する前にプロパティです。 バインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。  
-  
+接続 URI は、SAP システムへの接続への接続文字列です。 SAP システムとの接続を確立するために必要なさまざまなパラメーターが含まれています。 、デザイン時に、メタデータを生成する SAP システムに接続するための URI を指定する必要があります。 実行時に、操作を実行する SAP システムに接続する URI を指定する必要があります。  
+
+## <a name="enter-the-connection-uri-at-design-time"></a>デザイン時の接続 URI を入力します。  
+ デザイン時に、使用して接続 URI を指定できます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]します。  
+
+### <a name="enter-the-connection-uri-using-consume-adapter-service-add-in"></a>接続 Consume Adapter Service アドインを使用して URI を入力します。  
+
+1. BizTalk プロジェクトを右クリックし、[**追加**、] をクリックし、**生成した項目の追加**します。  
+
+2. **生成した項目の追加** ダイアログ ボックスで、次の操作を行います。  
+
+
+   |    プロパティ    |             目的             |
+   |----------------|------------------------------------|
+   | **カテゴリ** | クリックして**アダプター サービスの使用**します。 |
+   | **[テンプレート]**  | クリックして**アダプター サービスの使用**します。 |
+
+
+3. 開始する、 **Consume Adapter Service**ダイアログ ボックスで、をクリックして**追加**します。  
+
+4. **Consume Adapter Service**  ダイアログ ボックスから、**バインディングを選択**ドロップダウン リストを**sapBinding**、 をクリック**構成**.  
+
+5. **アダプターの構成**ダイアログ ボックスで、をクリックして、**セキュリティ**タブ。**クライアント資格情報の種類**ドロップダウン リスト ボックスで、 **Username**ユーザー名と SAP システムへの接続にパスワードを指定します。  
+
+6. をクリックして、 **URI プロパティ**タブし、さまざまなパラメーターの値を指定します。 接続 URI の詳細についてはの[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を参照してください[SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
+
+7. をクリックして、**バインドのプロパティ**タブし、バインドの値を指定、存在する場合は、スキーマを生成する前に指定するために必要です。 たとえばの値を指定する必要があります、 **GenerateFlatFileCompatibleIDoc** SAP システムから IDOC を受信するためのスキーマを生成する前にプロパティ。 バインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
+
+8. **[OK]** をクリックします。  
+
+### <a name="enter-the-connection-uri-using-add-adapter-metadata-wizard"></a>アダプター メタデータの追加ウィザードを使用して、URI の接続を入力します。  
+
+1. BizTalk プロジェクトを右クリックし、[**追加**、] をクリックし、**生成した項目の追加**します。  
+
+2. **生成した項目の追加** ダイアログ ボックスで、次の操作を行います。  
+
+
+   |    プロパティ    |           目的            |
+   |----------------|---------------------------------|
+   | **カテゴリ** |     クリックして**アダプターを追加**します。      |
+   | **[テンプレート]**  | クリックして**アダプター メタデータの追加**します。 |
+
+
+3. **[追加]** をクリックします。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] が表示されます。  
+
+4. アダプターの追加ウィザードで選択**WCF-SAP**します。 BizTalk Server がインストールされているコンピューターを選択し、BizTalk データベースの名前。  
+
+   > [!IMPORTANT]
+   >  BizTalk で構成されている WCF SAP ポート既にある場合からポートを選択して、**ポート**一覧。  
+
+5. **[次へ]** をクリックします。  
+
+6. **Consume Adapter Service**  ダイアログ ボックスから、**バインディングを選択**ドロップダウン リストを**sapBinding**、 をクリック**構成**.  
+
+7. **アダプターの構成**ダイアログ ボックスで、をクリックして、**セキュリティ**タブ。**クライアント資格情報の種類**ドロップダウン リスト ボックスで、 **Username**ユーザー名と SAP システムへの接続にパスワードを指定します。  
+
+8. をクリックして、 **URI プロパティ**タブし、さまざまなパラメーターの値を指定します。 接続 URI の詳細についてはの[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を参照してください[SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
+
+9. をクリックして、**バインドのプロパティ**タブし、バインドの値を指定、存在する場合は、スキーマを生成する前に指定するために必要です。 たとえばの値を指定する必要があります、 **GenerateFlatFileCompatibleIDoc** SAP システムから IDOC を受信するためのスキーマを生成する前にプロパティ。 バインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
+
     > [!NOTE]
-    >  既存の SAP WCF 送信ポートを選択した場合、バインドのプロパティを指定する必要はありません。 バインドのプロパティは、送信ポートの構成から取得されます。 ただし、存在する場合、デザイン時に、必要なバインドのプロパティを指定することもできます。 このような場合、メタデータの生成中にバインドのプロパティの新しい値をデザイン時に使用されます。 ただし、実行時に、バインドの送信ポートの構成のプロパティの指定値適用されます。  
-  
+    >  既存の SAP では WCF 送信ポートを選択した場合は、バインドのプロパティを指定する必要がありますできません。 バインドのプロパティは、送信ポートの構成から取得されます。 ただし、存在する場合に、デザイン時に必要なバインドのプロパティを指定することができます。 このような場合、メタデータの生成中にプロパティをバインドするための新しい値をデザイン時に使用されます。 ただし、実行時に送信ポートの構成でバインドのプロパティに指定された値を適用できるになります。  
+
 10. **[OK]** をクリックします。  
-  
-## <a name="enter-the-connection-uri-at-run-time"></a>実行時に、接続 URI を入力してください。  
- 構成の一部として、Wcf-custom または WCF SAP ポートの URI を指定する、実行時に、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  
-  
-### <a name="enter-the-connection-uri-for-the-wcf-custom-port"></a>WCF カスタム ポートの接続 URI を入力してください。  
-  
-1.  開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  
-  
-2.  コンソール ツリーで  **BizTalk グループ**の順に展開**アプリケーション**、ポートを作成し、をクリックする、アプリケーションの順に展開および**送信ポート**または**受信ポート**です。 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
-  
-3.  ポートのプロパティ ダイアログ ボックスから、**型**ドロップダウン リストで、 **Wcf-custom**、クリックして**構成**です。  
-  
-    > [!NOTE]
-    >  受信ポートの場所のプロパティ ダイアログ ボックスを表示するをクリックして、**受信場所の**ポートのプロパティ ダイアログ ボックスの左側のウィンドウでタブをクリックして**新規**です。  
-  
-4.  **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。  
-  
-5.  **アドレス (URI)** テキスト ボックスで、接続、SAP システムへの接続に URI を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を参照してください[SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
-  
-6.  **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブです。**バインディングの種類**ドロップダウン リストで、 **sapBinding**です。  
-  
-7.  送信ポートを作成する場合、 **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**資格情報**タブし、次のいずれかの操作します。  
-  
-    1.  選択、**シングル サインオンを使用しない**オプション、およびユーザー名と、SAP システムへの接続にパスワードを指定します。  
-  
-    2.  選択、**を使用してシングル サインオン**オプション、および関連するエンタープライズ シングル サインオン (SSO) アプリケーションを指定します。  
-  
-8.  受信ポートを作成する場合、 **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**他の**タブし、次のいずれかの操作します。  
-  
-    1.  選択**ユーザー アカウント**オプション、およびユーザー名と、SAP システムへの接続にパスワードを指定します。  
-  
-    2.  選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。  
-  
+
+## <a name="enter-the-connection-uri-at-run-time"></a>実行時に、接続 URI を入力します。  
+ 実行時の URI を指定で Wcf-custom または WCF SAP ポートの構成の一部として、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
+
+### <a name="enter-the-connection-uri-for-the-wcf-custom-port"></a>WCF カスタム ポートの接続 URI を入力します。  
+
+1. 開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
+
+2. コンソール ツリーで、展開**BizTalk グループ**の順に展開**アプリケーション**、順に展開する、ポートを作成し、をクリックしアプリケーション**送信ポート**または**受信ポート**します。 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
+
+3. ポートのプロパティ ダイアログ ボックスから、**型**ドロップダウン リストで、 **Wcf-custom**、 をクリックし、**構成**します。  
+
+   > [!NOTE]
+   >  受信ポートの場所のプロパティ ダイアログ ボックスを表示する をクリックして、**受信場所**ポートのプロパティ ダイアログ ボックスの左側のウィンドウでタブをクリックして**新規**します。  
+
+4. **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブ。  
+
+5. **アドレス (URI)** テキスト ボックスで、SAP システムに接続する接続 URI を指定します。 接続 URI の詳細についてはの[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を参照してください[SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
+
+6. **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブ。**バインドの種類**ドロップダウン リストで、 **sapBinding**します。  
+
+7. 送信ポートを作成する場合、 **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**資格情報**タブし、次のいずれかの操作を行います。  
+
+   1.  選択、**シングル サインオンを使用しないでください**オプション、およびユーザー名と SAP システムへの接続にパスワードを指定します。  
+
+   2.  選択、**使用してシングル サインオン**オプション、および関連アプリケーションにエンタープライズ シングル サインオン (SSO) を指定します。  
+
+8. 受信ポートを作成する場合、 **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、 をクリックして、**他**タブし、次のいずれかの操作を行います。  
+
+   1.  選択**ユーザー アカウント**オプション、およびユーザー名と SAP システムへの接続にパスワードを指定します。  
+
+   2.  選択**関連アプリケーションから資格情報を Get**オプション、および SSO 関連アプリケーションを指定します。  
+
 9. **[OK]** をクリックします。  
-  
-### <a name="enter-the-connection-uri-for-the-wcf-sap-port"></a>WCF SAP ポートの接続 URI を入力してください。  
-  
-1.  開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  
-  
-2.  WCF SAP アダプターを追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 手順については、次を参照してください。 [SAP アダプターを BizTalk Server 管理コンソールに追加](../../adapters-and-accelerators/adapter-sap/add-the-sap-adapter-to-biztalk-server-administration-console.md)です。  
-  
-3.  コンソール ツリーで  **BizTalk グループ**の順に展開**アプリケーション**、ポートを作成し、をクリックする、アプリケーションの順に展開および**送信ポート**または**受信ポート**です。 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
-  
-4.  ポートのプロパティ ダイアログ ボックスから、**型**ドロップダウン リストは、前に追加する WCF SAP アダプターを選択し、をクリックして**構成**です。  
-  
-    > [!NOTE]
-    >  受信ポートの場所のプロパティ ダイアログ ボックスを表示するをクリックして、**受信場所の**ポートのプロパティ ダイアログ ボックスの左側のウィンドウでタブをクリックして**新規**です。  
-  
-5.  トランスポートのプロパティ ダイアログ ボックスをクリックして、**全般**タブです。  
-  
-6.  クリックして、**構成**ボタンをクリックし、接続パラメーターの値を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を参照してください[SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
-  
-7.  トランスポートのプロパティ ダイアログ ボックスをクリックして、**バインディング**タブし、バインドのプロパティの値を指定します。  
-  
-    > [!NOTE]
-    >  バインドのプロパティは、送信ポートまたは受信ポートを構成するかどうかに基づいてが表示されます。 たとえば、バインディングのプロパティの受信に関連する操作利用できない受信操作には、受信ポートの構成が必要とするために、送信ポートを構成するときにします。  
-  
-8.  トランスポートのプロパティ ダイアログ ボックスで、送信ポートを作成する場合にクリックして、**資格情報**タブし、次のいずれかの操作します。  
-  
-    1.  選択、**シングル サインオンを使用しない**オプション、およびユーザー名と、SAP システムへの接続にパスワードを指定します。  
-  
-    2.  選択、**を使用してシングル サインオン**オプション、および関連するエンタープライズ シングル サインオン (SSO) アプリケーションを指定します。  
-  
-9. 受信ポートを作成する場合、 **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**他の**タブし、次のいずれかの操作します。  
-  
-    1.  選択**ユーザー アカウント**オプション、およびユーザー名と、SAP システムへの接続にパスワードを指定します。  
-  
-    2.  選択**から資格情報を取得関連アプリケーション**オプション、および SSO 関連アプリケーションを指定します。  
-  
+
+### <a name="enter-the-connection-uri-for-the-wcf-sap-port"></a>WCF SAP ポートの接続 URI を入力します。  
+
+1. 開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
+
+2. WCF-SAP アダプターの追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、次を参照してください。 [SAP アダプターを BizTalk Server 管理コンソールに追加](../../adapters-and-accelerators/adapter-sap/add-the-sap-adapter-to-biztalk-server-administration-console.md)します。  
+
+3. コンソール ツリーで、展開**BizTalk グループ**の順に展開**アプリケーション**、順に展開する、ポートを作成し、をクリックしアプリケーション**送信ポート**または**受信ポート**します。 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
+
+4. ポートのプロパティ ダイアログ ボックスから、**型**ドロップダウン リストでは、先ほど追加した WCF-SAP アダプターを選択し、順にクリックします**構成**します。  
+
+   > [!NOTE]
+   >  受信ポートの場所のプロパティ ダイアログ ボックスを表示する をクリックして、**受信場所**ポートのプロパティ ダイアログ ボックスの左側のウィンドウでタブをクリックして**新規**します。  
+
+5. トランスポートのプロパティ ダイアログ ボックスでをクリックして、**全般**タブ。  
+
+6. をクリックして、**構成**ボタンをクリックし、接続パラメーターの値を指定します。 接続 URI の詳細についてはの[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を参照してください[SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
+
+7. トランスポートのプロパティ ダイアログ ボックスでをクリックして、**バインド**タブし、バインドのプロパティの値を指定します。  
+
+   > [!NOTE]
+   >  バインドのプロパティは、送信ポートまたは受信ポートを構成するかどうかに基づいて表示されます。 たとえば、バインディングのプロパティに関連する受信操作をご利用いただけません受信操作には、受信ポートの構成が必要とするために、送信ポートを構成するときに。  
+
+8. トランスポートのプロパティ ダイアログ ボックスで、送信ポートを作成する場合にクリックして、**資格情報**タブし、次のいずれかの操作を行います。  
+
+   1.  選択、**シングル サインオンを使用しないでください**オプション、およびユーザー名と SAP システムへの接続にパスワードを指定します。  
+
+   2.  選択、**使用してシングル サインオン**オプション、および関連アプリケーションにエンタープライズ シングル サインオン (SSO) を指定します。  
+
+9. 受信ポートを作成する場合、 **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、 をクリックして、**他**タブし、次のいずれかの操作を行います。  
+
+    1.  選択**ユーザー アカウント**オプション、およびユーザー名と SAP システムへの接続にパスワードを指定します。  
+
+    2.  選択**関連アプリケーションから資格情報を Get**オプション、および SSO 関連アプリケーションを指定します。  
+
 10. **[OK]** をクリックします。  
-  
+
 ## <a name="see-also"></a>参照  
-[SAP アプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)
+[SAP アプリケーションを作成するための構成要素](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)

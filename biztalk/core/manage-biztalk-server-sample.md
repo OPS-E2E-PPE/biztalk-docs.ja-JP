@@ -1,5 +1,5 @@
 ---
-title: 管理 (BizTalk Server サンプル) |Microsoft ドキュメント
+title: 管理 (BizTalk Server サンプル) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,25 +17,25 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4234614cc9f00809f8922999ae96e6f254989c6a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 2a62fe56bed210669625c9fff4c76315d1eb4546
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25970968"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022872"
 ---
 # <a name="manage-biztalk-server-sample"></a>管理 (BizTalk Server サンプル)
 シングル サインオン (SSO) 管理のサンプルは、以下の種類の管理操作を実行するために、コマンド ライン ユーティリティ ssomanage.exe で使用できる .xml ファイルを構成する方法を示します。  
   
--   SSO システム レベルでのグローバル情報の更新  
+- SSO システム レベルでのグローバル情報の更新  
   
--   関連アプリケーションを作成します。  
+- 関連アプリケーションを作成します。  
   
--   ユーザー マッピングの作成  
+- ユーザー マッピングの作成  
   
- エンタープライズ シングル サインオンに関する概念的な情報は、次を参照してください。[を使用して SSO](../core/using-sso.md)です。  
+  エンタープライズ シングル サインオンに関する概念については、次を参照してください。[を使用して SSO](../core/using-sso.md)します。  
   
- 関連アプリケーションやユーザー マッピングの作成など、SSO をプログラムで構成する方法を示すサンプルについては、次を参照してください。 [HTTPSSO (BizTalk Server サンプル)](../core/httpsso-biztalk-server-sample.md)です。  
+  プログラムでユーザーのマッピング、関連アプリケーションの作成など、SSO を構成する方法を示すサンプルについては、次を参照してください。 [HTTPSSO (BizTalk Server サンプル)](../core/httpsso-biztalk-server-sample.md)します。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルには、上記の種類の操作のそれぞれに対する XSD とサンプル .xml ファイルのペアが含まれています。 サンプル .xml ファイルの値は有効ではありません。 各自の要件に合わせて値を変更する必要があります。  
@@ -45,7 +45,7 @@ ms.locfileid: "25970968"
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |---------------|-----------------|  
 |AffiliateApplication.xml、GlobalInfo.xml、UserMapping.xml|コマンド ライン ユーティリティ ssomanage.exe に引数を渡すサンプル .xml ファイルです。変更が必要です。|  
 |AffiliateApplication.xsd、GlobalInfo.xsd、UserMapping.xsd|可能な要素と属性を完全に記述した、対応する .xml ファイルのスキーマ ファイルです。 これらのファイルを使用して、他のソースから受信した、対応する .xml ファイルを検証することができます。|  
@@ -56,39 +56,39 @@ ms.locfileid: "25970968"
 ## <a name="running-this-sample"></a>このサンプルの実行  
  このサンプルには、以下の 3 つの異なるモードでコマンド ライン ユーティリティ ssomanage.exe を実行するための、サンプルの .xml ファイルが含まれています。  
   
--   **SSO システム レベルでグローバル情報を更新します。** この種類の操作を実行するには、次の手順を実行します。  
+- **SSO システム レベルのグローバル情報を更新します。** この種の操作を実行するには、次の手順を実行します。  
   
-    1.  各自の構成に合わせてファイル GlobalInfo.xml を編集します。  
+  1. 各自の構成に合わせてファイル GlobalInfo.xml を編集します。  
   
-    2.  以下のように、適切な引数を指定してコマンド ライン ユーティリティ ssomanage.exe を実行します。  
+  2. 以下のように、適切な引数を指定してコマンド ライン ユーティリティ ssomanage.exe を実行します。  
   
-        ```  
-        ssomanage –updatedb GlobalInfo.xml  
-        ```  
+     ```  
+     ssomanage –updatedb GlobalInfo.xml  
+     ```  
   
      環境に合わせてファイル GlobalInfo.xml 内の値を編集します。 たとえば、SSO 管理者アカウントは有効な Windows アカウントである必要があります。 SSO 管理者アカウントと SSO 関連管理者アカウントの両方が、Windows のグローバル ドメイン グループ アカウントである必要があります。  
   
--   **関連アプリケーションを作成します。** この種類の操作を実行するには、次の手順を実行します。  
+- **関連アプリケーションを作成します。** この種の操作を実行するには、次の手順を実行します。  
   
--   各自の構成要件に合わせてファイル AffiliateApplication.xml を編集します。  
+- 各自の構成要件に合わせてファイル AffiliateApplication.xml を編集します。  
   
-    -   よう、適切な引数でコマンド ライン ユーティリティ ssomanage.exe を実行します。  
+  - 次のように、適切な引数でコマンド ライン ユーティリティ ssomanage.exe を実行します。  
   
-        ```  
-        ssomanage –createapps AffiliateApplication.xml  
-        ```  
+    ```  
+    ssomanage –createapps AffiliateApplication.xml  
+    ```  
   
-     同時に複数の関連アプリケーションを作成することができます。  
+    同時に複数の関連アプリケーションを作成することができます。  
   
--   **ユーザー マッピングを作成します。** この種類の操作を実行するには、次の手順を実行します。  
+- **ユーザー マッピングを作成します。** この種の操作を実行するには、次の手順を実行します。  
   
-    1.  各自の構成に合わせてファイル UserMapping.xml を編集します。  
+  1. 各自の構成に合わせてファイル UserMapping.xml を編集します。  
   
-    2.  よう、適切な引数でコマンド ライン ユーティリティ ssomanage.exe を実行します。  
+  2. 次のように、適切な引数でコマンド ライン ユーティリティ ssomanage.exe を実行します。  
   
-        ```  
-        ssomanage –createmappings UserMapping.xml  
-        ```  
+     ```  
+     ssomanage –createmappings UserMapping.xml  
+     ```  
   
      1 つ以上の関連アプリケーションに対して同時に複数のマッピングを作成することができます。  
   

@@ -1,5 +1,5 @@
 ---
-title: 災害復旧の BizTalk サーバーを準備する |Microsoft ドキュメント
+title: ディザスター リカバリー BizTalk Server の準備 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9379136f0845c7c4c987170747a28bd3c50206c4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f9d806f3f757200e425b2f922032cb8f8d26bc6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302146"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36981571"
 ---
-# <a name="preparing-the-disaster-recovery-biztalk-servers"></a>災害復旧の BizTalk サーバーを準備します。
-インストール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]推奨事項に従い、障害復旧サイトで実行時のサーバー [BizTalk Server 2010 インストールおよびアップグレード ガイド](http://go.microsoft.com/fwlink/?LinkID=194815)(http://go.microsoft.com/fwlink/?LinkID=194815)。 これらの構成[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム サーバーの BizTalk 構成ウィザードを使用して、実稼働の BizTalk グループに参加させます。 構成するときに、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] (災害復旧のエンタープライズ シングル サインオン マスター シークレット サーバーを含む)、災害復旧サイト サーバーの実行時間を確認します。  
+# <a name="preparing-the-disaster-recovery-biztalk-servers"></a>ディザスター リカバリー BizTalk Server の準備
+インストール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、推奨事項に従い、ディザスター リカバリー サイトでの実行時サーバー [BizTalk Server 2010 インストールおよびアップグレード ガイド](http://go.microsoft.com/fwlink/?LinkID=194815)(<http://go.microsoft.com/fwlink/?LinkID=194815>)。 これらの構成[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム サーバーを BizTalk 構成ウィザードを使用して、運用環境の BizTalk グループに参加させます。 構成するときに、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] (ディザスター リカバリーのエンタープライズ シングル サインオン マスター シークレット サーバーを含む) のディザスター リカバリー サイトでの実行時のサーバーを確認します。  
   
--   選択**いいえ**「はこのマスター シークレット サーバーですか」という質問をする  
+- 選択**いいえ**「これはマスター シークレット サーバーとは」質問する  
   
--   選択**結合**の質問に「たい作成したり、BizTalk Server グループに参加しますか?」  
+- 選択**結合**の質問に"Do you want を作成または BizTalk Server グループに参加しますか?"  
   
- 構成した後、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実行時の障害復旧サーバーでは、実稼働サイトのホスト インスタンスに対応しているが、これらのホスト インスタンスを開始できません災害復旧サイトで BizTalk ホスト インスタンスを作成します。 たとえば、実稼働サイトでは 3 つのホスト**送信**、**受信**、および**オーケストレーション**server1、server2、および server3 インスタンスは、対応する 3 つの作成DRserver1、DRserver2、DRserver3 上のインスタンスをホストします。  
+  構成した後、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実行時の障害回復サーバーでは、実稼働サイトのホスト インスタンスに対応していますが、これらのホスト インスタンスを起動しないが、ディザスター リカバリー サイトでの BizTalk ホスト インスタンスを作成します。 たとえば、実稼働サイトがある 3 つのホスト**送信**、**受信**、および**オーケストレーション**server1、server2 というと server3 インスタンス、対応する 3 つの作成DRserver1、DRserver2、DRserver3 上のインスタンスをホストします。  
   
-> [!NOTE]  
->  すべて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]-Windows サービス、BizTalk ホスト インスタンスと障害復旧サイトでルール エンジンのサービスする必要があります設定する「無効」にサービス マネージャーで、障害復旧サイトが、処理を実行するを防ぐためで関連します。  
+> [!NOTE]
+>  すべて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]-Windows サービス、BizTalk ホスト インスタンスと、ディザスター リカバリー サイトでのルール エンジンのサービスに設定する"disabled"サービス マネージャーで、ディザスター リカバリー サイトが、処理を実行するを防ぐためになどに関連します。  
   
- インストールして構成する数が異なる[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実稼働環境で実行しているよりも、障害復旧サイトでの実行時のサーバー。 障害復旧イベントが発生した場合、災害復旧サイト内のサーバーを過負荷を避けるため、ただし、このアプローチをとる場合は、注意を使用します。 結合するスクリプトを実行できます、一連のデータベースで表される BizTalk グループが完全に復元され、BizTalk グループのすべての必要なシステム変更が実行される、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] BizTalk グループにサーバーの実行時間。
+ インストールして構成の数が異なる[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実稼働環境で実行しているよりも、ディザスター リカバリー サイトでの実行時のサーバー。 ディザスター リカバリーのイベントが発生した場合に、ディザスター リカバリー サイト内のサーバーをオーバー ロードを防ぐために、ただし、このアプローチを取る場合は、注意を使用します。 参加するスクリプトを実行できるデータベースのセットによって表される BizTalk グループを完全に復元され、BizTalk グループのすべての必要なシステム変更を実行、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実行時のサーバーを BizTalk グループにします。

@@ -1,5 +1,5 @@
 ---
-title: メッセージ エディター パイプライン サンプル |Microsoft ドキュメント
+title: メッセージ エディタ パイプライン サンプル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4bfe7187492652cc24a04527d64a0d4746858708
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ea5ce9c658b7fa0f5a641166cc3423c948a8e6d7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209218"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36974619"
 ---
-# <a name="message-editor-pipeline-sample"></a>メッセージ エディター パイプライン サンプル
+# <a name="message-editor-pipeline-sample"></a>メッセージ エディタ パイプライン サンプル
 このサンプルは、カスタム コンポーネントを受信パイプラインに追加して着信メッセージの内容を変更する方法を示します。  
   
- このサンプルはから利用可能な[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] Web サイトで[http://go.microsoft.com/fwlink/?LinkId=37877](http://go.microsoft.com/fwlink/?LinkId=37467)です。  
+ このサンプルは、Microsoft から入手できる[!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]Web サイトで[ http://go.microsoft.com/fwlink/?LinkId=37877](http://go.microsoft.com/fwlink/?LinkId=37467)します。  
   
 ## <a name="see-also"></a>参照  
  [パイプラインのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/pipeline-samples.md)

@@ -1,5 +1,5 @@
 ---
-title: BAM イベントの発行のためのパフォーマンスに関する考慮事項 |Microsoft ドキュメント
+title: BAM イベントの発行のパフォーマンスに関する考慮事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,26 +19,26 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ebab873c94c0ae17abf9938883662ca8777cef36
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c031f9a3325eda9cbcf865eaf72d1d9e100616c7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264426"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36997539"
 ---
 # <a name="performance-considerations-for-bam-event-publishing"></a>BAM イベントを公開する際のパフォーマンスに関する考慮事項
 BAM では、ビジネス イベントの公開形式として、次に示す 2 種類の形式がサポートされています。  
   
--   同期  
+- 同期  
   
--   非同期  
+- 非同期  
   
- 次の図に、これら 2 つのモデルを示します。  
+  次の図に、これら 2 つのモデルを示します。  
   
- ![](../core/media/bam-topologies.gif "bam_topologies")  
-BAM トポロジ  
+  ![](../core/media/bam-topologies.gif "bam_topologies")  
+  BAM トポロジ  
   
- 同期形式は管理とコードからの実行が容易ですが、非同期形式の方がパフォーマンスに優れています。  
+  同期形式は管理とコードからの実行が容易ですが、非同期形式の方がパフォーマンスに優れています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

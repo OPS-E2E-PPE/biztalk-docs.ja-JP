@@ -1,5 +1,5 @@
 ---
-title: '手順 7: オーケストレーションを開始し、BizTalk Server を再起動して |Microsoft ドキュメント'
+title: '手順 7: オーケストレーションの開始し、BizTalk Server の再起動 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc1c5cb301e1630d6b1ad3d780d85679a64943b5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7bf1541edcd5341461a2ff948ef82839c623ea51
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206354"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37006491"
 ---
-# <a name="step-7-start-the-orchestration-and-restart-biztalk-server"></a>手順 7: オーケストレーションを開始し、BizTalk Server を再起動
+# <a name="step-7-start-the-orchestration-and-restart-biztalk-server"></a>手順 7: オーケストレーションの開始し、BizTalk Server の再起動
 この手順で、オーケストレーションを開始し、再起動[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]このチュートリアルで行った変更を反映できるようにします。  
   
-### <a name="to-start-the-orchestration-and-restart-biztalk-server"></a>オーケストレーションを開始し、BizTalk Server を再起動するには  
+### <a name="to-start-the-orchestration-and-restart-biztalk-server"></a>オーケストレーションを開始して、BizTalk Server を再起動するには  
   
-1.  BizTalk 管理コンソールで、をクリックして**オーケストレーション**を右クリックして**BatchOrchestration.Orchestration_1**、クリックして**開始**です。  
+1. BizTalk 管理コンソールで、次のようにクリックします。**オーケストレーション**、を右クリック**BatchOrchestration.Orchestration_1**、 をクリックし、**開始**。  
   
-2.  展開**プラットフォームの設定**、クリックして**ホスト インスタンス**です。 右クリック**BizTalkServerApplication**、クリックして**再起動**です。 状態があることを確認**Stopped**、し**を実行している**です。  
+2. 展開**プラットフォームの設定**、 をクリックし、**ホスト インスタンス**します。 右クリック**BizTalkServerApplication**、 をクリックし、**再起動**します。 状態があることを確認**Stopped**、し**を実行している**します。  
   
- 進みます[手順 8: 作成するバッチのシナリオをテスト](../../adapters-and-accelerators/accelerator-hl7/step-8-test-the-create-batch-scenario.md)です。
+   続行する[手順 8: バッチの作成シナリオをテスト](../../adapters-and-accelerators/accelerator-hl7/step-8-test-the-create-batch-scenario.md)します。

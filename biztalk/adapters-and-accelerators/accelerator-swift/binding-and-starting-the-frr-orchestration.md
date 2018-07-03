@@ -1,5 +1,5 @@
 ---
-title: バインドおよび FRR オーケストレーションを開始 |Microsoft ドキュメント
+title: バインドと FRR オーケストレーションの開始 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81cf116fc03a8f2d898752a077e8347fd395a4a5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b01386cedbd25148e5ea0ce2ac44fb56e9fe3d03
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209058"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36987443"
 ---
 # <a name="binding-and-starting-the-frr-orchestration"></a>バインドおよび FRR オーケストレーションを開始します。
-[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]展開されたアセンブリとして FRR オーケストレーションが含まれています ([!INCLUDE[btsCoName](../../includes/btsconame-md.md)]です。Solutions.FinancialServices.SWIFT.FrrOrchestration)。 このオーケストレーションを開始する必要があります。  
+[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] FRR オーケストレーションが展開されたアセンブリ (Microsoft として含まれています。Solutions.FinancialServices.SWIFT.FrrOrchestration)。 このオーケストレーションを開始する必要があります。  
   
  **概要**  
   
@@ -37,10 +37,10 @@ ms.locfileid: "22209058"
   
 ### <a name="to-bind-and-start-the-frr-orchestration"></a>バインドして FRR オーケストレーションの開始  
   
-1.  BizTalk Server 管理コンソールで、展開**BizTalk Server 管理コンソール**、 **BizTalk グループ**、**アプリケーション**、し**BizTalkアプリケーション 1**です。 をクリックして**オーケストレーション**です。  
+1.  BizTalk Server 管理コンソールで  **BizTalk Server 管理**、 **BizTalk グループ**、**アプリケーション**、し**BizTalkアプリケーション 1**します。 クリックして**オーケストレーション**します。  
   
-2.  オーケストレーション ペインで右クリックし、 **FrrOrchestration.FrrMain**オーケストレーション、およびクリック**プロパティ**です。  
+2.  オーケストレーション ペインで右クリックし、 **FrrOrchestration.FrrMain**オーケストレーション、およびクリック**プロパティ**します。  
   
-3.  [オーケストレーションのプロパティ] ダイアログ ボックスで、**バインド**左側のウィンドウでします。 **ホスト** **BizTalkServerApplication**です。 をクリックして**適用**、順にクリック**OK**です。  
+3.  [オーケストレーションのプロパティ] ダイアログ ボックスで、**バインド**左側のウィンドウでします。 **ホスト**、 **BizTalkServerApplication**します。 クリックして**適用**、順にクリックします**OK**します。  
   
-4.  オーケストレーション ペインで右クリックし、 **FrrMain**オーケストレーション、およびクリック**開始**です。
+4.  オーケストレーション ペインで右クリックし、 **FrrMain**オーケストレーション、およびクリック**開始**します。

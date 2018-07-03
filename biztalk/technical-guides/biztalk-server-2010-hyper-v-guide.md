@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server 2010 の HYPER-V のガイド |Microsoft ドキュメント
+title: BizTalk Server 2010 HYPER-V ガイド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,94 +12,94 @@ caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 937fcb3618bf3bde4883242d48da2a841f00dea5
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: f07cd5f5406475fad3cfc3b9c1d234c5d93cf1eb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26011011"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36975091"
 ---
-# <a name="biztalk-server-2010-hyper-v-guide"></a>BizTalk Server 2010 の HYPER-V のガイド
-このガイドの目的は、Microsoft と Microsoft BizTalk Server を使用するための実用的なガイダンスを提供する[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]HYPER-V です。 強調[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がパフォーマンスの評価方法とパフォーマンスのテストのシナリオは一般に、仮想化サーバー アプリケーションのパフォーマンスを分析するために役立ちます。 このガイドは、IT 技術者と開発者コミュニティへの関心のあるされます。  
-  
- このガイドのコピーをダウンロードするには[http://go.microsoft.com/fwlink/?LinkId=149267](http://go.microsoft.com/fwlink/?LinkId=149267)です。  
-  
+# <a name="biztalk-server-2010-hyper-v-guide"></a>BizTalk Server 2010 HYPER-V ガイド
+このガイドの目的は、Microsoft と Microsoft BizTalk Server を使用するための実用的なガイダンスを提供する[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]HYPER-V。 強調[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がパフォーマンスの評価方法とパフォーマンス テストのシナリオでは一般に仮想化されたサーバー アプリケーションのパフォーマンスを分析するために便利です。 このガイダンスは、IT プロフェッショナルと開発者のコミュニティを対象になります。  
+
+ このガイドのコピーをダウンロードするには[ http://go.microsoft.com/fwlink/?LinkId=149267](http://go.microsoft.com/fwlink/?LinkId=149267)します。  
+
 ## <a name="introduction"></a>概要  
- サーバー仮想化は、単一の物理コンピューターに複数のオペレーティング システムを実行する機会を企業に提供します。 これにより、使用率が低いサーバーを完全に使用されているマシンの数を減らしてを統合できます。 仮想化を実装すると、企業は運用最小限に抑えるし、経費のコストを展開し、エンタープライズ アプリケーションに必要なサーバーを運用に関連付けられています。  
-  
- 潜在的なコスト削減はサーバー仮想化に適した候補を特定の新規および既存のアプリケーションを評価すると共に、IT 部門の入力を求めです。 このような最も評価は、仮想化の総コストを検出するシークします。 仮想化の総コストは、ハードウェアおよび IT 操作では、通貨のコストと、物理環境で達成可能なパフォーマンスと比較して仮想化のパフォーマンス コストの合計です。 このガイドでは、仮想化のパフォーマンスの面にのみ焦点を当てています。  
-  
- Windows Server 2008 以降では、HYPER-V テクノロジを使用してサーバー仮想化されたオペレーティング システムの重要な一部です。 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]HYPER-V では、企業サーバーの使用率を向上し、コストの削減を有効にして、信頼できる最適化された仮想化ソリューションを提供します。 ライブ マイグレーション機能、拡張されたプロセッサおよびメモリ サポート ホスト システムでは、動的な仮想マシンの記憶域のサポートなどの新機能の追加により、組織は単一の物理サーバー上にワークロードを統合し、開発およびテスト環境の場合と同様にサーバーを統合した組織に適してします。  
-  
- BizTalk Server は、最新の仮想化の機能強化の一部として含まれる[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]HYPER-V は、基になることができますを実稼働サーバーの統合とビジネス継続性の管理、および詳細動的の作成のコストの削減IT インフラストラクチャです。 クラスタ リング機能では、追加のソフトウェアまたはハードウェアせずマルチサイト クラスタ リング環境に展開される BizTalk Server。 HYPER-V の仮想化されたインスタンスで BizTalk Server の複数のインスタンスを実行するサポートを提供する[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]です。 サーバー仮想化は、BizTalk を安全な方法で過小使用されたリソースの統合による BizTalk 展開のハードウェアの使用量を最小限に抑えます。  
-  
- BizTalk Server の展開を含むその他のコンポーネントの数の通常で構成されています。 SQL Server、Windows Server インターネット インフォメーション サービス (IIS)。 HYPER-V では、動的、現実的なシナリオをオンデマンドでプロビジョニング System Center Virtual Machine Manager (VMM) 経由のプロビジョニングのサポートを提供します。  
-  
- [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]により、単一の物理サーバー上に複数のオペレーティング システムのインスタンスの仮想化サーバーの統合、それに合わせて HYPER-V テクノロジを提供します。 HYPER-V のコア部分として提供[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]または自分の組織での仮想化を導入するお客様できるだけ簡単にスタンドアロン製品として。 Hyper-v: を実装するためのいくつかの主要シナリオします。  
-  
--   **サーバーの統合**– server のフット プリント、運用と経費 (TCO) を 1 つのボックスに複数の物理サーバーを統合することでアプリケーションの実行に関連付けられているを最小化します。  
-  
--   **テストと開発**– 仮想マシンを使用して、開発者、アーキテクト迅速にマシンをプロビジョニングできます新しい新しいテクノロジおよびシナリオ物理環境の特性を正確に反映されている安全な環境で試してみてください。 仮想化をプロビジョニングする新しいマシンを新しいハードウェアが必要になることがなく、オペレーティング システムの幅の広いプラットフォームで実行します。 これは、テストおよび開発環境の優れたプラットフォームを提供します。  
-  
--   **ビジネス継続性と災害復旧**– HYPER-V は強力なビジネス継続性と災害復旧機能により、そのサービス レベル契約に対応するバックアップとクイック移行をライブなどです。  
-  
-    > [!NOTE]  
-    >  Windows Server バックアップを使用して HYPER-V 仮想マシンをバックアップには、Microsoft サポート技術情報を表示する方法に関する情報の記事 958662、"Windows を使用して Windows Server 2008 ベースのコンピューター上の親パーティションからの HYPER-V 仮想マシンをバックアップする方法サーバーのバックアップ"で[http://go.microsoft.com/fwlink/?LinkId=131207](http://go.microsoft.com/fwlink/?LinkId=131207)です。  
-    >   
-    >  HYPER-V のライブ移行機能は、Windows Server 2008 R2 で利用可能なを使用する方法についてを参照してください"Hyper-v: ステップ バイ ステップ ガイドを使用してライブ移行で Windows Server 2008 R2" [http://go.microsoft.com/fwlink/?LinkID=139667](http://go.microsoft.com/fwlink/?LinkID=139667)です。  
-  
--   **動的データ センター** : HYPER-V を Microsoft System Center 用ツール群を組み合わせることにより、組織を仮想マシンの構成と監視自動化できます。 詳細についてを参照してください"System Center Virtual Machine Manager" [http://go.microsoft.com/fwlink/?LinkID=111303](http://go.microsoft.com/fwlink/?LinkID=111303)です。  
-  
- このガイドの情報は、直接、HYPER-V のサーバーを統合し、テストと開発のシナリオに関連します。 他の 2 つは、このガイドのスコープ外でした。  
-  
- HYPER-V の主なシナリオの詳細については、次を参照してください。[の仮想化と hyper-v の概要](http://go.microsoft.com/fwlink/?LinkID=202438)およびトピックでは、、 [Appendices1](../technical-guides/appendices1.md)このガイドの「します。  
-  
-### <a name="who-should-read-this"></a>これを読み取るユーザー必要がありますか。  
-  
--   作業しているすべての IT プロフェッショナル[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
-  
--   を展開する IT 担当者は、最適化し、アプリケーション環境の管理  
-  
--   評価し、システムのアーキテクチャを最適化する開発チームと協力する IT 担当者  
-  
--   作成および管理する開発者[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション  
-  
--   パフォーマンスの最適化とパフォーマンスのボトルネックの特定の興味のある開発者  
-  
+ サーバー仮想化は、1 つの物理マシン上の複数のオペレーティング システムを実行する機会を企業に提供します。 これにより、少数の完全に使用されているコンピューター上に使用率が低いサーバーの統合。 仮想化を実装すると、企業は運用最小限に抑えるし、資本コストを展開し、エンタープライズ アプリケーションに必要なサーバーの運用に関連付けられています。  
+
+ 潜在的なコスト削減には、サーバー仮想化に適した候補を識別するために、新規および既存のアプリケーションを評価する IT 部門が求めるメッセージが表示します。 このような最も評価は、仮想化の総コストを検出するシークします。 仮想化の総コストは、ハードウェアと、IT オペレーションの金銭的コストと物理的な環境で達成可能なパフォーマンスと比較して、仮想化のパフォーマンス コストの合計です。 このガイドでは、仮想化のパフォーマンスの側面にのみ焦点を当てています。  
+
+ 以降 Windows Server 2008 では、HYPER-V テクノロジを使用してサーバーの仮想化されたオペレーティング システムの不可欠な部分です。 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] HYPER-V では、サーバー使用率の向上し、コストの削減組織にもたらす信頼性の高い、最適化された仮想化ソリューションを提供します。 ライブ マイグレーション機能、拡張プロセッサおよびメモリのサポートをホスト システムでは、動的な仮想マシンの記憶域のサポートなどの新機能の追加の 単一の物理サーバーにワークロードを統合することが可能し、は、開発およびテスト環境の場合と同様にサーバーの統合が組織に最適なソリューションです。  
+
+ BizTalk Server は最新の仮想化の機能強化の一部として含まれている[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]につながることが、HYPER-V を実稼働サーバーの統合とビジネス継続性管理、および動的な詳細の作成コストの削減IT インフラストラクチャ。 クラスタ リング機能には、追加のソフトウェアまたはハードウェアなしのマルチサイト クラスタ リング環境で展開する BizTalk Server ができます。 HYPER-V の仮想化されたインスタンスで BizTalk Server の複数のインスタンスを実行するサポートを提供する[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]します。 サーバー仮想化は、BizTalk に安全な方法で使用率が低いリソースを統合することで、BizTalk 展開のハードウェアの占有領域を最小限に抑えます。  
+
+ BizTalk Server の展開が通常の数を含むその他のコンポーネントで構成されます。 SQL Server、Windows Server、およびインターネット インフォメーション サービス (IIS)。 HYPER-V では、現実的なシナリオをオンデマンドでプロビジョニングする System Center Virtual Machine Manager (VMM) での動的プロビジョニングのサポートを提供します。  
+
+ [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 1 台の物理サーバー上に複数のオペレーティング システム インスタンスの仮想化によるサーバーの統合を対応するために HYPER-V テクノロジを提供します。 コア部分として、HYPER-V が提供される[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]または組織内の仮想化を採用するお客様にとってできるだけ簡単にするスタンドアロン製品として。 HYPER-V を実装するためのいくつかの主要シナリオします。  
+
+- **サーバーの統合**– 運用サーバー フット プリントと資本 (TCO) を 1 つのボックスに複数の物理サーバーを統合することでアプリケーションの実行に関連付けられているを最小化します。  
+
+- **テストと開発**– 仮想マシンを使用して、開発者やアーキテクト迅速にプロビジョニングできる新しいマシンの新しいテクノロジおよび物理環境の特性を正確に反映する安全な環境でのシナリオを試します。 仮想化により新しいマシンをプロビジョニングする新しいハードウェアが必要になることがなく、オペレーティング システムの幅広いプラットフォームで実行されています。 これは、テストと開発環境の優れたプラットフォームを提供します。  
+
+- **ビジネス継続性とディザスター リカバリー** – HYPER-V には、強力なビジネス継続性が含まれていて、ディザスター リカバリー機能により、そのサービス レベル契約を満たすためにバックアップし、クイック移行を live など。  
+
+  > [!NOTE]  
+  >  HYPER-V 仮想マシンが Windows Server バックアップを使用して、バックアップには、マイクロソフト サポート技術情報を表示する方法については、958662 の記事「Windows を使用して Windows Server 2008 ベース コンピューターにある親パーティションからの HYPER-V 仮想マシンをバックアップする方法サーバーのバックアップ"で[ http://go.microsoft.com/fwlink/?LinkId=131207](http://go.microsoft.com/fwlink/?LinkId=131207)します。  
+  >   
+  >  HYPER-V ライブ移行機能は、Windows Server 2008 R2 で利用可能なを使用する方法についてを参照してください"HYPER-V ステップ バイ ステップ ガイドを使用してライブ移行で Windows Server 2008 R2" [ http://go.microsoft.com/fwlink/?LinkID=139667](http://go.microsoft.com/fwlink/?LinkID=139667)します。  
+
+- **動的なデータ センター** – HYPER-V をツールの Microsoft System Center スイートを組み合わせることにより、組織を仮想マシンの構成と監視自動化できます。 詳細についてを参照してください"System Center Virtual Machine Manager の" [ http://go.microsoft.com/fwlink/?LinkID=111303](http://go.microsoft.com/fwlink/?LinkID=111303)します。  
+
+  このガイドの情報は、hyper-v サーバーの統合、テストおよび開発のシナリオに直接関連します。 他の 2 つは、このガイドの対象外でした。  
+
+  HYPER-V の主要なシナリオの詳細については、次を参照してください。[仮想化と hyper-v の概要](http://go.microsoft.com/fwlink/?LinkID=202438)およびトピックでは、、 [Appendices1](../technical-guides/appendices1.md)このガイドの「します。  
+
+### <a name="who-should-read-this"></a>読者でしょうか。  
+
+- 使用するすべての IT プロフェッショナル [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
+
+- 展開、最適化、およびアプリケーション環境を管理する IT プロフェッショナル  
+
+- IT プロフェッショナルを評価し、システム アーキテクチャを最適化する開発チームと協力  
+
+- 作成および管理する開発者[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション  
+
+- パフォーマンスの最適化とパフォーマンスのボトルネックの特定の関心のある開発者  
+
 ### <a name="goals-of-this-guide"></a>このガイドの目的  
- このガイドの主な目的は、HYPER-V で実行されている BizTalk Server が期待されるパフォーマンスを達成できそうかを判断する方法に関するガイダンスを提供します。 このガイダンスもされます値の展開済みの最適化に役立てるために[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーションです。  
-  
- このプロジェクトは、次の目的で実施されました。  
-  
--   評価する、設計、または、仮想化を実装したすべてのユーザーの具体的なガイダンスを提供[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。  
-  
--   パフォーマンス モニター カウンターおよび仮想化サーバー プラットフォームのパフォーマンス能力を測定するためのツールの概要を提供します。  
-  
--   物理および仮想サーバー環境のパフォーマンスの差の関数として仮想化のコストを判断するためのガイドラインを提供します。  
-  
--   開発の計画や、仮想化を最適化するときに使用するためのベスト プラクティス[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。  
-  
--   展開する方法を決定するためのアーキテクチャに関するガイダンスを提供[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を仮想環境でします。  
-  
--   識別し、仮想化環境でパフォーマンスのボトルネックを文書化します。  
-  
-### <a name="whats-in-this-guide"></a>このガイドで何ですか。  
- 実装するためのガイダンス、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HYPER-V 仮想化環境でソリューションです。 このガイドは次のとおりです。  
-  
--   **HYPER-V での BizTalk Server を展開する**: [HYPER-V 上の BizTalk Server の展開](../technical-guides/deploying-biztalk-server-on-hyper-v.md)のパフォーマンスを比較するために使用するラボ環境をセットアップするために行った手順について説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で実行されているソリューションHYPER-V 仮想マシンを同じ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]物理ハードウェア上で実行されているソリューションです。  
-  
--   **HYPER-V での BizTalk Server のパフォーマンスを評価する**: [HYPER-V 上の BizTalk サーバー パフォーマンスの評価](../technical-guides/evaluating-biztalk-server-performance-on-hyper-v.md)のパフォーマンスを測定するときに重要な考慮事項の詳細、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を HYPER-V で実行されているソリューション仮想化された環境です。  
-  
--   **HYPER-V での BizTalk Server のパフォーマンスをテストする**: [BizTalk サーバー仮想化のパフォーマンスのテスト](../technical-guides/testing-biztalk-server-virtualization-performance.md)のパフォーマンスを比較する 4 つの異なるテスト シナリオの詳細な結果を提供する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]同じ HYPER-V 仮想マシンで実行されているソリューション[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]物理ハードウェア上で実行されているソリューションです。  
-  
--   **付録**: トピックでは、 [Appendices1](../technical-guides/appendices1.md)など、このガイドについての重要な参考資料を提供します。  
-  
-    -   [付録 a: テスト環境のコンピューターに最適化適用](../technical-guides/appendix-a-optimizations-applied-to-computers-in-test-environment.md)– テスト環境内のコンピューターに適用されていたパフォーマンスの最適化に関する詳細な情報を提供します。  
-  
-    -   [付録 b: HYPER-V のアーキテクチャと機能の概要](../technical-guides/appendix-b-hyper-v-architecture-and-feature-overview.md)- HYPER-V アーキテクチャの概要を示します、HYPER-V の長所と短所について説明します、HYPER-V と Virtual Server 2005 の違いについて説明します  
-  
-    -   [付録 c: BizTalk Server と SQL Server の HYPER-V でサポート](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)– HYPER-V 仮想マシンで BizTalk Server と SQL Server を実行するためのサポート ポリシーをについて説明します。  
-  
-    -   [付録 d: ツールのパフォーマンスの測定を](../technical-guides/appendix-d-tools-for-measuring-performance.md)-を監視し、BizTalk Server 環境のパフォーマンスを評価するために使用できるいくつかのツールについて説明します。  
-  
--   **用語集**: [Glossary8](../technical-guides/glossary8.md)このガイドで使用される主な用語を定義します。
+ このガイドの主な目的は、HYPER-V で実行されている BizTalk Server がパフォーマンス要件に対応する可能性を判断する方法についてのガイダンスを提供します。 このガイダンスは、展開済みの最適化を支援するための値のするも[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション。  
+
+ このプロジェクトは、次の目的で実施されています。  
+
+- 評価、設計、または、仮想化の実装したすべてのユーザーの特定のガイダンスを提供[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。  
+
+- パフォーマンス モニター カウンターおよび仮想化されたサーバー プラットフォームのパフォーマンス能力を測定するためのツールを紹介します。  
+
+- 物理および仮想化サーバー環境のパフォーマンスの差の関数として仮想化のコストを判断するためのガイドラインを提供します。  
+
+- 計画したり、仮想化を最適化するときに使用するためのベスト プラクティスを開発[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。  
+
+- デプロイする方法を判断するのに役立つアーキテクチャ ガイダンスを提供[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]仮想環境にします。  
+
+- 識別し、仮想化環境でパフォーマンスのボトルネックを文書化します。  
+
+### <a name="whats-in-this-guide"></a>このガイドでは  
+ 実装するためのガイダンスを[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]HYPER-V 仮想化環境でのソリューションです。 このガイドは次のとおりです。  
+
+- **HYPER-V での BizTalk Server の展開**: [HYPER-V 上の BizTalk Server の展開](../technical-guides/deploying-biztalk-server-on-hyper-v.md)のパフォーマンスを比較するために使用するラボ環境をセットアップするために行った手順を説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で実行されているソリューションHYPER-V 仮想マシンを同じ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]物理ハードウェアで実行されているソリューションです。  
+
+- **HYPER-V での BizTalk Server のパフォーマンスを評価する**:[を評価する BizTalk Server のパフォーマンス、HYPER-V を](../technical-guides/evaluating-biztalk-server-performance-on-hyper-v.md)のパフォーマンスを測定するときに重要な考慮事項の詳細、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HYPER-V で実行されているソリューション仮想化された環境。  
+
+- **HYPER-V での BizTalk Server パフォーマンスをテスト**: [BizTalk サーバー仮想化のパフォーマンスのテスト](../technical-guides/testing-biztalk-server-virtualization-performance.md)のパフォーマンスを比較する 4 つの異なるテスト シナリオの詳細な結果を提供します、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]同じ HYPER-V 仮想マシンで実行されているソリューション[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]物理ハードウェアで実行されているソリューションです。  
+
+- **付録**: トピックでは、 [Appendices1](../technical-guides/appendices1.md)など、このガイドの重要な参照資料を提供します。  
+
+  -   [付録 a: テスト環境内のコンピューターに最適化適用](../technical-guides/appendix-a-optimizations-applied-to-computers-in-test-environment.md)– テスト環境内のコンピューターに適用されていたパフォーマンスの最適化に関する詳細な情報を提供します。  
+
+  -   [付録 b: HYPER-V のアーキテクチャと機能の概要](../technical-guides/appendix-b-hyper-v-architecture-and-feature-overview.md)- HYPER-V アーキテクチャの概要を説明します、ハイパー-V の長所と短所について説明し、HYPER-V と Virtual Server 2005 の違いについて説明します  
+
+  -   [付録 c: BizTalk Server と SQL Server、HYPER-V のサポート性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)–、HYPER-V 仮想マシンで BizTalk Server と SQL Server を実行するためのサポート ポリシーをについて説明します。  
+
+  -   [付録 d: ツールのパフォーマンスを測定する](../technical-guides/appendix-d-tools-for-measuring-performance.md)-監視し、BizTalk Server 環境のパフォーマンスの評価に使用できるいくつかのツールについて説明します。  
+
+- **用語集**: [Glossary8](../technical-guides/glossary8.md)このガイドで使用される主な用語を定義します。

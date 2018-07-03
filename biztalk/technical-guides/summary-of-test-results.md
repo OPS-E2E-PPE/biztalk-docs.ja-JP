@@ -1,5 +1,5 @@
 ---
-title: テスト結果の概要 |Microsoft ドキュメント
+title: テスト結果の概要 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,44 +12,44 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2eebcdef457716cab9ad61415bf3fe46db301b55
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ad5550a073101e2a30555f90ad6bd879edff3a79
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302994"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36997963"
 ---
 # <a name="summary-of-test-results"></a>テスト結果の概要
-このトピックでは、結果、テスト シナリオをまとめたものです。  
+このトピックでは、テスト シナリオの結果をまとめたものです。  
   
 ## <a name="summary-of-test-results"></a>テスト結果の概要  
- [BizTalk サーバー仮想化のパフォーマンスのテスト](../technical-guides/testing-biztalk-server-virtualization-performance.md)このガイドのセクションでは、使用するテスト アプリケーションと、さまざまな構成について説明します。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]テスト アプリケーションの実行対象となる環境。 テストのパフォーマンスを比較する実行された、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  /  [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] HYPER-V 仮想マシンで実行されている環境のパフォーマンスを物理ハードウェア上で実行されている環境です。 主要業績評価指標 (Kpi) がテスト中に測定には、次が含まれています。  
+ [BizTalk サーバー仮想化のパフォーマンスのテスト](../technical-guides/testing-biztalk-server-virtualization-performance.md)このガイドのセクションは、使用するテスト アプリケーションと、さまざまな構成について説明します。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]テスト アプリケーションの実行対象となる環境。 パフォーマンスを比較するテストが実行された、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  /  [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]物理ハードウェア上で HYPER-V 仮想マシンで実行されている環境のパフォーマンスで実行される環境。 主要業績評価指標 (Kpi) がテスト中に測定には、次が含まれています。  
   
-1.  メッセージのスループットの測定、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター。  
+1. メッセージのスループットの測定、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター。  
   
-2.  同期要求を送信した Visual Studio テスト クライアントで要求-応答の待機時間が測定される[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。  
+2. Visual Studio テスト クライアントを同期要求を送信した上で要求-応答の待機時間が計測されます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
-3.  プロセッサ使用率と 1 秒あたりのバッチ要求で計測される[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]です。  
+3. プロセッサ使用率と 1 秒あたりのバッチ要求で計測される[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。  
   
-4.  ネットワークのスループットがで計測される、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター。  
+4. ネットワークのスループットが計測される、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター。  
   
-5.  使用可能なメモリ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター。  
+5. 使用可能なメモリ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター。  
   
 ### <a name="throughput-comparison-sample-results"></a>スループットの比較サンプルの結果  
- すべての他の要因が等しければのスループット、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションによって測定される、"BizTalk: メッセージング ドキュメント処理数/秒"の範囲が 67% から 94.3% の達成可能なスループットとパフォーマンス モニター カウンター両方、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターと[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]環境内のコンピューターは、物理ハードウェアにインストールされていた。  
+ すべて他の要因が等しければのスループット、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションによって測定される、"BizTalk: メッセージング ドキュメント処理数/秒"パフォーマンス モニター カウンターが達成可能なスループットの 94.3% と 67% から範囲両方、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターと[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]環境内のコンピューターが物理ハードウェアにインストールされています。  
   
- ときに、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]環境内のコンピューターは、HYPER-V 仮想マシンにインストールされていた、ソリューションのスループットが大幅に低下する確認されました、HYPER-V で必要な CPU オーバーヘッドを原因と考えられるこのスループットの低下します。  
+ ときに、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]環境内のコンピューターが HYPER-V 仮想マシンにインストールされた、ソリューションのスループットが大幅に低下する検出された、このスループットの低下は、HYPER-V に必要な CPU オーバーヘッドに原因があります。  
   
-### <a name="latency-comparison-sample-results"></a>待機時間の比較サンプルの結果  
- によって測定される、BizTalk Server ソリューションの待機時間、HYPER-V 仮想マシン上の BizTalk Server 環境で使用する BizTalk Server コンピューターが実行されたときに、等しい、されているその他のすべての要因と、"BizTalk: メッセージング遅延/要求-応答の遅延時間 (秒)"パフォーマンス モニター カウンターの範囲は 66.9% から 94.3% 達成可能な待機時間に、BizTalk Server 環境で使用する BizTalk Server コンピューターが物理ハードウェアにインストールされていたとします。  
+### <a name="latency-comparison-sample-results"></a>待機時間の比較サンプル結果  
+ BizTalk Server 環境で使用する BizTalk Server コンピューターが HYPER-V 仮想マシンによって測定される、BizTalk Server ソリューションの待機時間で実行されたときに等しく、なるその他のすべての要因と、"BizTalk: メッセージング遅延/要求-応答の待機時間 (秒)"BizTalk Server 環境で使用する BizTalk Server コンピューターが物理ハードウェアにインストールされていたときに 66.9% からパフォーマンス モニター カウンターが 94.3% 達成可能な待機時間の範囲します。  
   
- ときに、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]環境内のコンピューターは、HYPER-V 仮想マシンにインストールされていた、ソリューションのスループットが大幅に低下する計測された、このスループットの低下原因と考えられる、でHYPER-Vに必要なCPUのオーバーヘッド[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]仮想マシン。  
+ ときに、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]環境内のコンピューターが HYPER-V 仮想マシンにインストールされた、ソリューションのスループットが大幅に低下する検出された、このスループットの低下は、で、HYPER-Vに必要なCPUオーバーヘッドに原因があります。[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]仮想マシン。  
   
-### <a name="sql-server-processor-utilization-and-batch-requests-per-second-sample-results"></a>SQL Server のプロセッサ使用率と 2 つ目のサンプル結果あたりのバッチ要求  
- SQL Server のプロセッサ使用率 \SQL\Processor(_Total) によって測定される\\% Processor Time カウンタが約 88% の低から 90.1% の high まで、すべてのテスト環境で同じです。 ありませんが、\SQL Server:SQL Statistics\Batch 間に大きな違い要求数/秒が統合された環境 (4520) で測定され、\SQL Server:SQL Statistics\Batch 要求数/秒が物理環境 (6350) で測定します。 \SQL Server:SQL Statistics\Batch 要求数/秒パフォーマンス モニター カウンターは、SQL Server によって実行される作業量を示す優れた指標を提供します。 バッチ要求数/秒を HYPER-V 環境で SQL Server が実行されている場合に削減は、HYPER-V で必要な CPU オーバーヘッドを属性付けすることができます。  
+### <a name="sql-server-processor-utilization-and-batch-requests-per-second-sample-results"></a>SQL Server のプロセッサ使用率と 2 つ目のサンプル結果ごとにバッチ要求  
+ SQL Server のプロセッサ使用率 \SQL\Processor(_Total) によって測定される\\% Processor Time カウンターが約 88% 低から 90.1% の値が高くに至るまで、すべてのテスト環境で同じです。 ありませんが、\SQL Server:SQL Statistics\Batch 間に大きな違い要求数/秒が統合された環境 (4520) で測定され、物理環境 (6350) で、\SQL Server:SQL Statistics\Batch 要求数/秒の測定します。 \SQL Server:SQL Statistics\Batch 要求数/秒パフォーマンス モニター カウンターは、SQL Server によって実行される作業量を示す優れた指標を提供します。 バッチ要求/秒、HYPER-V 環境で SQL Server が実行されている場合、削減は、HYPER-V で必要な CPU オーバーヘッドに原因があります。  
   
 ### <a name="biztalk-server-and-sql-server-network-throughput-sample-results"></a>BizTalk Server と SQL Server ネットワークのスループットのサンプルの結果  
- HYPER-V 仮想マシンで実行されている BizTalk Server のネットワーク スループットがから約 70 ~ 96%、特定のテスト環境に応じて、物理 BizTalk サーバーで達成されるネットワーク スループットの範囲内に確認されました。 HYPER-V 仮想マシンで実行されている SQL Server のネットワーク スループットがから約 68% から 81% の物理 SQL server の特定のテスト環境に応じて再び達成されるネットワーク スループットの範囲内に確認されました。 観察対象のネットワークのスループットのデルタは、HYPER-V ハイパーバイザーのリソース要件を属性付けすることができます。  
+ HYPER-V 仮想マシンで実行されている BizTalk Server のネットワーク スループットはから約 70 ~ 96%、特定のテスト環境に応じて、物理 BizTalk サーバーで行うこと、ネットワーク スループットの範囲に確認されました。 HYPER-V 仮想マシンで実行されている SQL Server のネットワーク スループットがから約 68% から 81% のネットワーク スループットを特定のテスト環境に応じてもう一度、物理 SQL Server で行うことの範囲に確認されました。 観察されたネットワークのスループット単位のデルタは、HYPER-V ハイパーバイザーのリソース要件に起因ことができます。  
   
-### <a name="biztalk-server-and-sql-server-available-memory-sample-results"></a>BizTalk Server と SQL Server の使用可能なメモリ サンプルの結果  
- SQL Server と BizTalk Server \Memory\Available Mbytes パフォーマンス モニター カウンターによって測定に使用できる合計メモリは、すべてのテスト シナリオ全体で一貫性でした。
+### <a name="biztalk-server-and-sql-server-available-memory-sample-results"></a>BizTalk Server と SQL Server の使用可能なメモリ サンプル結果  
+ SQL Server と \Memory\Available Mbytes パフォーマンス モニター カウンターによって測定される、BizTalk Server に使用できる合計メモリは、すべてのテスト シナリオは一貫性でした。

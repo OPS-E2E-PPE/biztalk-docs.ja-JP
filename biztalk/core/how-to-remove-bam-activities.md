@@ -1,5 +1,5 @@
 ---
-title: BAM アクティビティを削除する方法 |Microsoft ドキュメント
+title: BAM アクティビティを削除する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,25 +17,25 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 67320d4d7d96f037e8d16132e0274b43feee8003
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: a45201791912e960976d2e7820ae5421ebefe411
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25973312"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36972763"
 ---
 # <a name="how-to-remove-bam-activities"></a>BAM アクティビティを削除する方法
-管理者を使用して、**削除アクティビティ**BAM プライマリ インポート データベースから指定されたアクティビティを削除するコマンド。  
+管理者を使用して、**削除アクティビティ**コマンドを指定したアクティビティを BAM プライマリ インポート データベースから削除します。  
   
 ### <a name="to-remove-a-bam-activity"></a>BAM アクティビティを削除するには  
   
-1.  次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] に移動します。  
+2. [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] に移動します。  
   
-3.  型**bm 削除アクティビティの名前:\<アクティビティ名\>** です。  
+3. 型**bm の削除アクティビティ-名前:\<アクティビティ名\>** します。  
   
-4.  **Enter**キーを押します。  
+4. **Enter**キーを押します。  
   
 ## <a name="see-also"></a>参照  
  [BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md)   

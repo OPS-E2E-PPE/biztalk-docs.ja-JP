@@ -1,5 +1,5 @@
 ---
-title: すべての要素ノード |Microsoft ドキュメント
+title: すべての要素ノード |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f556a5629fd98d910cbbbd83632ac1a6a1702e74
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 905d6c25c5c2021840f4257c29df015d4bcb374e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963696"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002435"
 ---
 # <a name="any-element-nodes"></a>すべての要素ノード
-BizTalk エディターで行うこともできます、 **Any 要素**不明な要素が表示されるインスタンス メッセージ内の場所を示すためにノードです。 これにより、特定の要素がインスタンス メッセージ内の特定の場所に出現することはあらかじめわかっているが、要素の名前や複雑さの程度が不確定な状況にも対応できます。 配置した場合、 **Any 要素**ノードのスキーマでは、BizTalk 内で適切な位置には、このようなメッセージの不明な部分を処理できます。 唯一の要件は、対応する XML が整形式であることです。  
+使用できる BizTalk エディターで、 **Any 要素**ノードが、不明な要素が表示されるインスタンス メッセージ内の場所を示すことです。 これにより、特定の要素がインスタンス メッセージ内の特定の場所に出現することはあらかじめわかっているが、要素の名前や複雑さの程度が不確定な状況にも対応できます。 配置した場合、 **Any 要素**ノードのスキーマでは、BizTalk 内で適切な位置には、メッセージのような未知の部分を処理できます。 唯一の要件は、対応する XML が整形式であることです。  
   
 > [!NOTE]
->  BizTalk エディターで、 **Any 要素**ノードは、文字列で表されます\<任意\>スキーマ ツリー ビューでします。  
-  
-> [!NOTE]
->  整形式 XML としてメッセージの未知の部分を検証を使用して内容を制御できます、 **Process Contents**プロパティです。 多くの場合を設定する必要があります、 **Process Contents**プロパティを**Skip**の場所にあるインスタンス メッセージの内容を**Any 要素**に処理するノードです。 既定値を保持**Strict**の**Process Contents**プロパティは、インスタンス メッセージの検証の成功をできなくなります。  
+>  BizTalk エディターで、**すべての要素**ノードが文字列で表される\<任意\>スキーマ ツリー ビューで。  
 > 
-> このプロパティの詳細について[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+> [!NOTE]
+>  整形式 XML として、メッセージの未知の部分を検証を使用して程度を制御することができます、 **Process Contents**プロパティ。 多くの場合は、設定する必要があります、 **Process Contents**プロパティを**スキップ**の位置にあるインスタンス メッセージの内容として、 **Any 要素**処理するノード。 既定値を保持**Strict**の**Process Contents**プロパティがインスタンス メッセージの検証の成功を防ぐためです。  
+> 
+> このプロパティについて詳しく[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
 ## <a name="xsd-representation"></a>XSD 表記  
- ときに、 **Any 要素**ノードに追加された、**レコード**ノード、または別のノードを追加するように、**シーケンス グループ**、**選択肢グループ**、または**すべてのグループ**ノード、1 つの XML タグが、対応する XML スキーマ定義 (XSD) 言語表記のスキーマに追加します。 次の例では、新しい**Any 要素**を既存の XSD 表記が太字で示すように、ノードが追加されました**レコード**ノードが格納されている、**フィールド要素**ノード。  
+ ときに、 **Any 要素**にノードを追加、**レコード**ノード、または別のノードを追加するように、**シーケンス グループ**、 **グループの選択**、または**すべてのグループ**ノード、1 つの XML タグが、対応する XML スキーマ定義 (XSD) 言語表記のスキーマに追加します。 次の例では、新しい**Any 要素**を既存の XSD 表記が太字で表示されているノードが追加されました**レコード**既に含まれているノード、**フィールド要素**ノード。  
   
 ```  
 <xs:element name="ExistingRecord">  
@@ -44,7 +44,7 @@ BizTalk エディターで行うこともできます、 **Any 要素**不明な
 </xs:element>  
 ```  
   
- 想定されるので、 **Process Contents**のプロパティ、**すべての要素**に設定されているノード**Skip**内でこのスキーマ フラグメントで、によって管理されるインスタンスメッセージ**ExistingRecord**要素が通常含まれる、 **ExistingFieldElement**任意の複雑性の任意の 1 つの要素の後に文字列データを含む要素です。  
+ 仮定すると、 **Process Contents**のプロパティ、 **Any 要素**にノードが設定されている**スキップ**内でこのスキーマのフラグメントをによって管理されるインスタンスメッセージ**ExistingRecord**要素が格納する必要があります、 **ExistingFieldElement**任意の複雑さの任意の 1 つの要素の後に、文字列データを含む要素。  
   
 ## <a name="see-also"></a>参照  
  [スキーマの BizTalk 表記](../core/biztalk-representation-of-schemas.md)   

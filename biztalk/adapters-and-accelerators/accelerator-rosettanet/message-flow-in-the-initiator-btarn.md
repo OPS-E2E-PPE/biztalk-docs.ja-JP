@@ -1,5 +1,5 @@
 ---
-title: メッセージの開始側 BTARN での流れ |Microsoft ドキュメント
+title: メッセージの開始側 BTARN でのフロー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 85fed6404627fd8abfa9d50e7d56d98ff7306f09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 160f40d4dfd0d11a7bd5a5c7c127d62b3e42a2cb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210594"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37004027"
 ---
 # <a name="message-flow-in-the-initiator-btarn"></a>開始側 BTARN でのメッセージ フロー
 開始側コンピューターが、バックエンドの基幹業務 (LOB) アプリケーションから専用形式のメッセージを受信すると、メッセージ フローが開始されます。 メッセージ フローには、受信したメッセージを RNIF (RosettaNet Implementation Framework) に準拠するメッセージに変換して、インターネット経由で応答側コンピューターに送信するタスクも含まれています。  
@@ -34,42 +34,42 @@ ms.locfileid: "22210594"
 ## <a name="btarn-components-on-the-initiator-computer"></a>開始側コンピューター上の BTARN コンポーネント  
  メッセージが開始側コンピュータの [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] を流れていく際は、次のコンポーネントがメッセージを処理します。  
   
--   SQL アダプター  
+- SQL アダプター  
   
--   XML 受信パイプライン  
+- XML 受信パイプライン  
   
--   開始側プライベート プロセス  
+- 開始側プライベート プロセス  
   
--   開始側パブリック プロセス  
+- 開始側パブリック プロセス  
   
--   XML 送信パイプライン  
+- XML 送信パイプライン  
   
--   HTTP アダプター  
+- HTTP アダプター  
   
--   RNIFSend.aspx ページ  
+- RNIFSend.aspx ページ  
   
- これらのコンポーネントとメッセージの処理方法の詳細については、次を参照してください。 [BTARN でのメッセージ処理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)です。  
+  これらのコンポーネントとメッセージの処理方法の詳細については、次を参照してください。 [BTARN でのメッセージ処理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)します。  
   
 ## <a name="flow-of-an-initiated-message"></a>開始メッセージのフロー  
  以下の手順は、開始側の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] コンピュータから発信されたメッセージのメッセージ フローを示します。 このプロセスを次に示します。  
   
  ![](../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-initiator-send-message-flow.gif "RN3_Initiator_Send_Message_Flow")  
   
-1.  基幹業務アプリケーションにメッセージを送信する[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]です。  
+1. 基幹業務アプリケーションが Microsoft にメッセージを送信[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]します。  
   
-2.  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が、[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] データベースから SQL アダプタにメッセージを送信します。  
+2. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が、[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] データベースから SQL アダプタにメッセージを送信します。  
   
-3.  XML 受信パイプラインは、メッセージの単純な XML 検証を行います。  
+3. XML 受信パイプラインは、メッセージの単純な XML 検証を行います。  
   
-4.  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] が MessageBox データベースにメッセージをルーティングします。  
+4. [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] が MessageBox データベースにメッセージをルーティングします。  
   
-5.  プライベート プロセスでメッセージの Service Content を処理します。  
+5. プライベート プロセスでメッセージの Service Content を処理します。  
   
-6.  パブリック プロセスが、メッセージの RNIF ヘッダーを処理します。  
+6. パブリック プロセスが、メッセージの RNIF ヘッダーを処理します。  
   
-7.  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、再度 MessageBox データベースにメッセージをルーティングします。  
+7. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、再度 MessageBox データベースにメッセージをルーティングします。  
   
-8.  送信パイプラインは、メッセージのアセンブリと署名/暗号化/エンコードを実行します。  
+8. 送信パイプラインは、メッセージのアセンブリと署名/暗号化/エンコードを実行します。  
   
 9. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、HTTP アダプタにメッセージをルーティングします。  
   

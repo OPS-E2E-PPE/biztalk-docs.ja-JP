@@ -1,5 +1,5 @@
 ---
-title: BizTalk Accelerator for HL7 コンポーネント |Microsoft ドキュメント
+title: BizTalk Accelerator for HL7 コンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,24 +15,24 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63c6cbadac45bc0fb116f0f0046e4b87f61ffcd8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 97bc88b601e9b01f3ae119e868fce0b1f91b5cc6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204394"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973867"
 ---
 # <a name="biztalk-accelerator-for-hl7-components"></a>BizTalk Accelerator for HL7 コンポーネント
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) コンポーネントには、HL7 および XML 逆アセンブラーでは、HL7 および XML アセンブラーでは、受信し、送信ポート、パイプライン、およびバッチ オーケストレーションです。 これらのコンポーネントが収まる、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]シームレスな医療ソリューションを提供するシステムです。  
+Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) コンポーネントには、HL7 および XML 逆アセンブラーでは、HL7 および XML アセンブラーでは、受信し、送信ポート、パイプライン、およびバッチ オーケストレーションします。 これらのコンポーネントは、Microsoft に収まる[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]シームレスな医療ソリューションを提供するシステムです。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [HL7 逆アセンブラおよびアセンブラ](../../adapters-and-accelerators/accelerator-hl7/hl7-disassembler-and-assembler.md)  
+-   [HL7 の逆アセンブラーとアセンブラー](../../adapters-and-accelerators/accelerator-hl7/hl7-disassembler-and-assembler.md)  
   
--   [XML 逆アセンブラーまたはアセンブラー](../../adapters-and-accelerators/accelerator-hl7/xml-disassembler-and-assembler.md)  
+-   [XML の逆アセンブラーとアセンブラー](../../adapters-and-accelerators/accelerator-hl7/xml-disassembler-and-assembler.md)  
   
--   [MLLP の受信し、送信コンポーネント](../../adapters-and-accelerators/accelerator-hl7/mllp-receive-and-send-components.md)  
+-   [MLLP 受信および送信コンポーネント](../../adapters-and-accelerators/accelerator-hl7/mllp-receive-and-send-components.md)  
   
--   [BTAHL7 パイプライン](../../adapters-and-accelerators/accelerator-hl7/btahl7-pipelines.md)  
+-   [BTAHL7 のパイプライン](../../adapters-and-accelerators/accelerator-hl7/btahl7-pipelines.md)  
   
 -   [バッチ オーケストレーション](../../adapters-and-accelerators/accelerator-hl7/batch-orchestration.md)

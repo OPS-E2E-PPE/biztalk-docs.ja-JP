@@ -1,5 +1,5 @@
 ---
-title: BAM プライマリ インポート データベースの名前と接続文字列を更新 |Microsoft ドキュメント
+title: BAM プライマリ インポート データベース名と接続文字列の更新 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/01/2018
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 91792b66fa82be633123501f651d9a34784915ce
-ms.sourcegitcommit: c670558deccec266f90ae7ed042dba1105b15596
+ms.openlocfilehash: 846aa3b08ce6cce9b2334da72440cf5ba918e5d9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28956652"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37003139"
 ---
 # <a name="update-references-to-the-bam-primary-import-database-name-and-connection-string"></a>BAM プライマリ インポート データベース名および接続文字列への参照を更新します。
 BAMPrimaryImport データベースをバックアップしておくと、システムまたはデータに障害が発生したときに、別のコンピューターにバックアップを復元し、その名前を変更することができます。  
   
- BAM イベント バス サービスでは、イベント データをメッセージ ボックス データベースから BAMPrimaryImport データベースに移動します。 BAM イベント バス サービスには、予期しない障害が発生した場合にデータを失わずに復旧して再起動するためのフォールト トレランス ロジックが含まれています。 BAM イベント バス サービスの詳細については、次を参照してください。 [BAM イベント バス サービスを管理する](../core/managing-the-bam-event-bus-service.md)です。  
+ BAM イベント バス サービスでは、イベント データをメッセージ ボックス データベースから BAMPrimaryImport データベースに移動します。 BAM イベント バス サービスには、予期しない障害が発生した場合にデータを失わずに復旧して再起動するためのフォールト トレランス ロジックが含まれています。 BAM イベント バス サービスの詳細については、次を参照してください。 [BAM イベント バス サービスの管理](../core/managing-the-bam-event-bus-service.md)します。  
   
- BAMPrimaryImport データベースを復元する」の手順を実行[、データベースを復元する方法](../core/how-to-restore-your-databases.md)です。 これらの手順を実行したうえで、次の手順を実行します (詳細な手順については後述)。  
+ BAMPrimaryImport データベースを復元する手順を実行[、データベースを復元する方法](../core/how-to-restore-your-databases.md)します。 これらの手順を実行したうえで、次の手順を実行します (詳細な手順については後述)。  
   
 -   すべての BAM DTS パッケージで、SQL 接続 1 の参照先が新しいデータベース名になるように更新します。  
   
@@ -35,73 +35,73 @@ BAMPrimaryImport データベースをバックアップしておくと、シス
 ## <a name="prerequisites"></a>前提条件  
 BizTalk Server 管理者グループのメンバーとしてサインインします。  
   
-## <a name="update-the-references"></a>参照を更新します。  
+## <a name="update-the-references"></a>参照を更新します  
   
-1.  すべての BAM キューブ更新およびデータ変換サービス (DTS) パッケージを停止するか、BAMPrimaryImport データベースの復元が完了するまで実行されないように措置を講じます。  
+1. すべての BAM キューブ更新およびデータ変換サービス (DTS) パッケージを停止するか、BAMPrimaryImport データベースの復元が完了するまで実行されないように措置を講じます。  
   
-2.  BizTalk アプリケーション サービス (を BAM イベント バス サービスを含む) を停止するためより多くのデータをデータベースにインポートするのには試行されません。  
+2. (これは、BAM イベント バス サービスが含まれています)、BizTalk アプリケーション サービスを停止するためより多くのデータをデータベースにインポートする試行は行われません。  
   
-    1.  **開始**メニューで、「 **services.msc**、開き**Services**です。  
+   1.  **開始**メニューで、「 **services.msc**、開き**サービス**します。  
   
-    2.  右クリックし、 **BizTalk Service BizTalk Group: BizTalkServerApplication**サービス、し**停止**です。  
+   2.  右クリックし、 **BizTalk Service BizTalk Group: BizTalkServerApplication**サービスし**停止**します。  
   
-3.  BAMPrimaryImport データベースの復元 (ステップの[、データベースを復元する方法](../core/how-to-restore-your-databases.md))。  
+3. BAMPrimaryImport データベースを復元する (手順[、データベースを復元する方法](../core/how-to-restore-your-databases.md))。  
   
-4.  次の Web.Config ファイルを更新します。  
+4. 次の Web.Config ファイルを更新します。  
   
-    -   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamManagementService\Web.Config です。  
+   - [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamManagementService\Web.Config します。  
   
-         置換、  *\<ServerName\>*  、新しいサーバーの名前を持つ文字列と *\<DatabaseName\>* で新しいデータベースの名前。 次の接続文字列を更新します。  
+      置換、 *\<ServerName\>* 、新しいサーバー名を含む文字列と*\<DatabaseName\>* で新しいデータベース名。 次の接続文字列を更新します。  
   
-         \<appSettings\>  
+      \<appSettings\>  
   
-         <add key="BamServer" value="*\<ServerName\>*" /\>  
+      < キーを追加"BamServer"の値を = ="*\<ServerName\>*"/\>  
   
-         <add key="BamDatabase" value="*\<DatabaseName\>*" /\>  
+      <add key="BamDatabase" value="*\<DatabaseName\>*" /\>  
   
-         \<add key="MaxResultRows" value="2000" /\>  
+      \<add key="MaxResultRows" value="2000" /\>  
   
-         \</appSettings\>  
+      \</appSettings\>  
   
-    -   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamQueryService\Web.Config.  
+   - [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamQueryService\Web.Config します。  
   
-         置換、  *\<ServerName\>*  、新しいサーバー名の文字列と *\<DatabaseName\>* で新しいデータベースの名前。 次の接続文字列を更新します。  
+      置換、 *\<ServerName\>* 、新しいサーバー名を含む文字列と*\<DatabaseName\>* で新しいデータベース名。 次の接続文字列を更新します。  
   
-         \<appSettings\>  
+      \<appSettings\>  
   
-         \<キーを追加"BamServer"の値を = ="*\<ServerName\>*"/\>  
+      \<キーの追加"BamServer"の値を = ="*\<ServerName\>*"/\>  
   
-         \<add key="BamDatabase" value="*\<DatabaseName\>*" /\>  
+      \<add key="BamDatabase" value="*\<DatabaseName\>*" /\>  
   
-         \<add key="MaxResultRows" value="2000" /\>  
+      \<add key="MaxResultRows" value="2000" /\>  
   
-         \</appSettings\>  
+      \</appSettings\>  
   
-5.  コマンド プロンプトを開きます ([スタート] メニュー > コマンド プロンプト) を次のディレクトリに移動: [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Schema\Restore です。  
+5. コマンド プロンプトを開き ([スタート] メニュー > コマンド プロンプト)、次のディレクトリに移動します: [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Schema\Restore します。  
   
-6.  右クリック**SampleUpdateInfo.xml**、および**編集**です。  
+6. 右クリックして**SampleUpdateInfo.xml**、および**編集**します。  
   
-    1.  すべてのデータベース セクションでは、OldPrimaryImportDatabase、PrimaryImportDatabase、ArchivingDatabase、AnalysisDatabase、StarSchemaDatabase、およびアラートを除くコメントします。 
-    2.  OldPrimaryImportDatabase、PrimaryImportDatabase、ArchivingDatabase、AnalysisDatabase、StarSchemaDatabase、および警告のセクションでは、設定、 **SourceServer**と**移行先サーバー**に、これらのデータベースが存在する既存のサーバーの名前です。  
+   1.  データベース セクションでは、OldPrimaryImportDatabase、PrimaryImportDatabase、ArchivingDatabase、AnalysisDatabase、StarSchemaDatabase、およびアラートを除くのすべてのコメントします。 
+   2.  OldPrimaryImportDatabase、PrimaryImportDatabase、ArchivingDatabase、AnalysisDatabase、StarSchemaDatabase、および警告のセクションでは、設定、 **SourceServer**と**移行先サーバー**に、これらのデータベースが存在する既存のサーバーの名前です。  
   
-    3.  PrimaryImportDatabase、設定、 **"SourceServer"** BAM プライマリ インポート データベースを移動したサーバーの名前にします。  
+   3.  PrimaryImportDatabase、設定、 **"SourceServer"** BAM プライマリ インポート データベースを移動するサーバーの名前にします。  
   
-        > [!IMPORTANT]
-        >  送信元システムおよび送信先システムの名前は、引用符で囲んでください。  
+       > [!IMPORTANT]
+       >  送信元システムおよび送信先システムの名前は、引用符で囲んでください。  
   
-        > [!NOTE]
-        >  BizTalk Server データベースの名前を変更した場合は、データベース名も更新することを確認します。  
+       > [!NOTE]
+       >  BizTalk Server データベースの名前を変更した場合は、データベース名も更新することを確認します。  
   
-    4.  ファイルの編集を終了したら、ファイルを保存して閉じます。  
+   4.  ファイルの編集を終了したら、ファイルを保存して閉じます。  
   
-7.  コマンド プロンプトで、次のように入力します。  
+7. コマンド プロンプトで、次のように入力します。  
   
-     **cscript UpdateDatabase.vbs SampleUpdateInfo.xml**  
+    **cscript UpdateDatabase.vbs SampleUpdateInfo.xml**  
   
-    > [!NOTE]
-    >  UpdateDatabase.vbs を一度だけ実行します。  
-    > 
-    >  64 ビット コンピューターでは、64 ビット コマンド プロンプトから UpdateDatabase.vbs を実行します。  
+   > [!NOTE]
+   >  UpdateDatabase.vbs を 1 回のみ実行されます。  
+   > 
+   >  64 ビットのコンピューターでは、64 ビット コマンド プロンプトから UpdateDatabase.vbs を実行します。  
   
 8. コマンド プロンプトで、次のディレクトリに移動します  
   
@@ -113,23 +113,23 @@ BizTalk Server 管理者グループのメンバーとしてサインインし�
   
     1.  Excel ライブ データ ファイルを開きます。 ファイル名の末尾は _LiveData.xls となっています。  
   
-    2.  **BAM**  メニューのをクリックして **BAM データベースの接続**します。  
+    2.  **BAM**  メニューのをクリックして**BAM データベースの接続**します。  
   
-    3.  **[BAM データベースの** ] ダイアログ ボックスでは、SQL Server および BAMPrimaryImport データベースを入力し、をクリックして **OK**します。  
+    3.  **BAM データベースの選択** ダイアログ ボックスが、SQL Server および BAMPrimaryImport データベースを入力し、クリックして**OK**。  
   
-    4.  **ファイル**  メニューのをクリックして **を閉じるし、Microsoft Excel へ戻る**します。  
+    4.  **ファイル** メニューのをクリックして**閉じて Microsoft Excel へ戻る**します。  
   
     5.  **[ファイル]** メニューの **[保存]** をクリックします。  
   
 11. BizTalk Server アプリケーション サービスを再起動します。  
   
-    1.  開いている **services.msc**します。  
+    1.  開いている**services.msc**します。  
   
-    2.  右クリックし、 **BizTalk Service BizTalk Group: BizTalkServerApplication**サービス、し**開始**です。  
+    2.  右クリックし、 **BizTalk Service BizTalk Group: BizTalkServerApplication**サービスし**開始**します。  
   
 12. すべての BAM キューブ更新およびデータ保守 DTS パッケージを有効にします。  
   
-13. 不完全なアクティビティ インスタンスを解決するには、次を参照してください。[不完全なアクティビティのインスタンスを解決するには](../core/how-to-resolve-incomplete-activity-instances.md)します。  
+13. すべての不完全なトレース インスタンスを解決するには、次を参照してください。[不完全なアクティビティ インスタンスの解決](../core/how-to-resolve-incomplete-activity-instances.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BAM のバックアップと復元](../core/backing-up-and-restoring-bam.md)

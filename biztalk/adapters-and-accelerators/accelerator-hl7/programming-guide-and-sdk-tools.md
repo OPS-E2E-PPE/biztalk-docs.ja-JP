@@ -1,5 +1,5 @@
 ---
-title: プログラミング ガイド、および SDK ツール |Microsoft ドキュメント
+title: プログラミング ガイドと SDK ツール |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,21 +16,21 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ef9ffdaaeb0b8a2506e86ff8efc22a90f96a520
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b40802a02d51af6440b4f22e77cf0c32ce6ab386
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206162"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010603"
 ---
 # <a name="programming-guide-and-sdk-tools"></a>プログラミング ガイドと SDK ツール
-このソフトウェア開発キット (SDK) のツールを使用してアプリケーションを開発する開発者向けの情報を提供する[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]、パブリック アプリケーション プログラミング インターフェイス (API)、または提供されたサンプルおよびユーティリティ、BTAHL7 SDK。  
+このソフトウェア開発キット (SDK) は、Microsoft のツールを使用してアプリケーションを作成している開発者向けの情報を提供します[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]、パブリック アプリケーション プログラミング インターフェイス (API)、または、BTAHL7 で提供されるサンプルとユーティリティ。SDK があります。  
   
 ## <a name="tips-for-using-help-in-a-developer-environment"></a>開発環境でヘルプの使用に関するヒント  
- BTAHL7 ヘルプには、BTAHL7 のヘルプし、Visual Studio のヘルプの間のリンクを任意の言語で開発者ドキュメントを表示に使用できる機能が含まれます。  
+ BTAHL7 のヘルプには、BTAHL7 のヘルプし、Visual Studio のヘルプの間のリンクを選択した言語の開発者向けドキュメントを表示に使用できる機能が含まれています。  
   
-### <a name="using-language-filtering"></a>言語のフィルターを使用します。  
- BTAHL7[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]クラスのリファレンスでは、署名と複数のプログラミング言語のコード例です。 次のタグは、言語固有の情報を示すため。  
+### <a name="using-language-filtering"></a>言語フィルターを使用します。  
+ BTAHL7[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]署名とコード例は、複数のプログラミング言語でクラスの参照を提供します。 次のタグは、言語固有の情報を示します。  
   
  **[** [!INCLUDE[btsCSharp](../../includes/btscsharp-md.md)] **]**  
   
@@ -40,16 +40,16 @@ ms.locfileid: "22206162"
   
  **[** [!INCLUDE[btsJScript](../../includes/btsjscript-md.md)] **]**  
   
- リファレンス ページのコンテンツのビューをカスタマイズして、希望するプログラミング言語の情報だけを表示することができます。 カスタム言語を選択するには、**言語のフィルター**このページの左上隅にあるボタンをクリックします。 有効にした場合は言語のフィルター処理が変更されるまで保持されます。 言語フィルターが有効な場合は、ページ上部の青いバーのタイトルの後に、選択している言語の名前が表示されます。  
+ リファレンス ページのコンテンツのビューをカスタマイズして、希望するプログラミング言語の情報だけを表示することができます。 カスタム言語を選択するには、使用、**言語フィルター**このページの左上隅にあるボタンをクリックします。 有効にするとは言語のフィルター処理、変更されるまで保持します。 言語フィルターが有効な場合は、ページ上部の青いバーのタイトルの後に、選択している言語の名前が表示されます。  
   
-### <a name="linking-between-btahl7-help-and-microsoft-visual-studio-help"></a>BTAHL7 ヘルプおよび Microsoft Visual Studio ヘルプ間のリンク  
- メンバーを継承する場合、[!INCLUDE[btsDotNetFramework](../../includes/btsdotnetframework-md.md)]基底クラス ライブラリでは、2 つのリンクが提供される、次の例で示すようにします。  
+### <a name="linking-between-btahl7-help-and-microsoft-visual-studio-help"></a>BTAHL7 および Microsoft Visual Studio のヘルプの間のリンク  
+ メンバーを継承する場合、[!INCLUDE[btsDotNetFramework](../../includes/btsdotnetframework-md.md)]基本クラス ライブラリでは、2 つのリンクが提供される、次の例に示すようにします。  
   
 |||  
 |-|-|  
-|![](../../adapters-and-accelerators/accelerator-hl7/media/protmethod.gif "protmethod")最終処理 (から継承された**System.Object**)|システム名前空間に関する詳細については、次を参照してください。[システム Namespace クラス](https://msdn.microsoft.com/library/system(v=vs.110).aspx)です。|  
+|![](../../adapters-and-accelerators/accelerator-hl7/media/protmethod.gif "protmethod") Finalize (から継承された**System.Object**)|System 名前空間の詳細については、次を参照してください。 [System Namespace クラス](https://msdn.microsoft.com/library/system(v=vs.110).aspx)します。|  
   
- BTAHL7 でを表示している場合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]または、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ドキュメントについては、左の列にリンク、正確なメンバー ページに進みます。 BTAHL7 が外部のヘルプを表示している場合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、右側の列のリンクを使用して、MSDN ライブラリの System 名前空間 ページに移動します。 リンクは特定のメンバーのページに移動していないことに注意してください。  
+ BTAHL7 内を表示している場合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]または、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ドキュメントについては、左側にあるリンクは、メンバーの正確なページに移動します。 BTAHL7 が外部のヘルプを表示している場合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、右側の列にリンクを使用して、MSDN ライブラリの System 名前空間 ページに移動します。 リンクは特定のメンバーのページに移動していないことに注意してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

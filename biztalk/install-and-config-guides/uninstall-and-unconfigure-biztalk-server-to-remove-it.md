@@ -1,5 +1,5 @@
 ---
-title: アンインストールし、それを削除する BizTalk Server の構成を解除 |Microsoft ドキュメント
+title: アンインストールし、それを削除する BizTalk Server の構成を解除 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,55 +12,55 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 704c1f54a01ceb4c4b7b4cd80ad2df6fc34faa68
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 5ab66d347795a0b8264a8bb6238149ab1b64572b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25976264"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36990635"
 ---
 # <a name="uninstall-and-unconfigure-biztalk-server-to-remove-it"></a>BizTalk Server の削除 (アンインストールおよび構成の解除)
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のアンインストールおよび構成解除を行います。 
   
 ##  <a name="BKMK_BeforeYouBegin"></a> はじめに  
   
--   アンインストールする前に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の構成を解除する必要があります。  
+- アンインストールする前に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の構成を解除する必要があります。  
   
--   このトピックでは、削除されるジョブ、パッケージ、データベースの名前が記載されています。 ここに記載されている名前は、既定の名前です。 お使いの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境では、既定の名前を使用していない場合があります。  
+- このトピックでは、削除されるジョブ、パッケージ、データベースの名前が記載されています。 ここに記載されている名前は、既定の名前です。 お使いの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境では、既定の名前を使用していない場合があります。  
   
--   手順は、ここに示している順序どおりに実行してください。 順序が変わるとアンインストールを完了できません。  
+- 手順は、ここに示している順序どおりに実行してください。 順序が変わるとアンインストールを完了できません。  
   
 ##  <a name="BKMK_Unconfigure"></a> BizTalk Server の構成解除  
   
-1.  **[[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成]** を右クリックし、**[管理者として実行]** を選択します。  
+1. **[[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成]** を右クリックし、**[管理者として実行]** を選択します。  
   
-2.  [構成] で **[機能の構成解除]** を選択します。  
+2. [構成] で **[機能の構成解除]** を選択します。  
   
-3.  構成を解除する機能を選択し、**[OK]** を選択します。 続行を確認するメッセージが表示されたら、**[はい]** を選択します。 コンピューターからすべて削除する場合は、すべての機能を選択できます。  
+3. 構成を解除する機能を選択し、**[OK]** を選択します。 続行を確認するメッセージが表示されたら、**[はい]** を選択します。 コンピューターからすべて削除する場合は、すべての機能を選択できます。  
   
-4.  **[次へ]** を選択し、ウィザードを進みます。  
+4. **[次へ]** を選択し、ウィザードを進みます。  
   
- C:\Users\ユーザー名\AppData\Local\Temp\ConfigLog(8-29-2016 0h37m59s).log のようなログ ファイルが一時フォルダーに生成されます。  
+   C:\Users\ユーザー名\AppData\Local\Temp\ConfigLog(8-29-2016 0h37m59s).log のようなログ ファイルが一時フォルダーに生成されます。  
   
 ##  <a name="BKMK_Uninstall"></a> BizTalk Server ランタイム コンポーネントのアンインストール  
   
-1.  **[プログラムと機能]** を開きます。  
+1. **[プログラムと機能]** を開きます。  
   
-2.  リストから [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] バージョンを選択し、**アンインストール**します。  
+2. リストから [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] バージョンを選択し、**アンインストール**します。  
   
-3.  **削除**して、ウィザードを進みます。  
+3. **削除**して、ウィザードを進みます。  
   
- C:\Users\\*ユーザー名*\AppData\Local\Setup(083016 xxxxxx).htm のようなログ ファイルが一時フォルダーに生成されます。  
+   C:\Users\\*ユーザー名*\AppData\Local\Setup(083016 xxxxxx).htm のようなログ ファイルが一時フォルダーに生成されます。  
   
 ##  <a name="BKMK_UninstallSSO"></a> Enterprise Single Sign-On のアンインストール  
   
-1.  **[プログラムと機能]** を開きます。  
+1. **[プログラムと機能]** を開きます。  
   
-2.  リストから **[Microsoft Enterprise Single Sign-On]** を選択し、**アンインストール**します。  
+2. リストから **[Microsoft Enterprise Single Sign-On]** を選択し、**アンインストール**します。  
   
-3.  **削除**して、ウィザードを進みます。  
+3. **削除**して、ウィザードを進みます。  
   
- C:\Users\\*ユーザー名*\AppData\Local\Setup(083016 xxxxxx).htm のようなログ ファイルが一時フォルダーに生成されます。  
+   C:\Users\\*ユーザー名*\AppData\Local\Setup(083016 xxxxxx).htm のようなログ ファイルが一時フォルダーに生成されます。  
   
 ##  <a name="BKMK_RemoveRemaining"></a> SQL ジョブ、データベース、およびパッケージを削除する  
   
@@ -99,7 +99,7 @@ ms.locfileid: "25976264"
     -   TrackedMessages_Copy_BizTalkMsgBoxDb  
   
         > [!NOTE]
-        >  BAM を展開した場合、bam _ を削除する必要がありますも\<*キューブ名*\>_\<*ビュー名*\>ジョブです。  
+        >  BAM を展開した場合、bam _ を削除する必要がありますも\<*キューブ名*\>_\<*ビュー名*\>ジョブ。  
   
 #### <a name="delete-biztalk-server-databases"></a>BizTalk Server データベースの削除  
   
