@@ -1,5 +1,5 @@
 ---
-title: Siebel eBusiness Applications の .NET Framework データ プロバイダーを使用して |Microsoft ドキュメント
+title: .NET Framework データ プロバイダーを使用して、Siebel eBusiness Applications の |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,29 +15,29 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5acb8f96add3dcde48456751d82dc2a8e00ffe43
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4f593c1eb9f7158aa69d4fcd0278078caeca2dca
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222242"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36993155"
 ---
-# <a name="use-the-net-framework-data-provider-for-siebel-ebusiness-applications"></a>Siebel eBusiness Applications の .NET Framework データ プロバイダーを使用します。
-このセクションの内容については、手順を使用して、 [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])。 このセクションでは、に関する情報を提供します。  
+# <a name="use-the-net-framework-data-provider-for-siebel-ebusiness-applications"></a>.NET Framework Data Provider 用 Siebel eBusiness Applications を使用して、
+このセクションで使用方法については、 [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])。 このセクションでは、に関する情報を提供します。  
   
--   ADO.NET クライアントを使用して、Siebel システムへの接続への接続文字列。  
+- ADO.NET クライアントを使用して Siebel システムに接続する接続文字列。  
   
--   SELECT ステートメントおよび EXEC ステートメントの構文です。  
+- SELECT ステートメントと EXEC ステートメントの構文です。  
   
--   使用して、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]と SSIS します。  
+- 使用して、 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] SSIS を使用します。  
   
--   ADO.NET のインターフェイスを[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]を拡張します。  
+- ADO.NET インターフェイスを[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]を拡張します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [Siebel アダプターと ADO.NET インターフェイスを拡張します。](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)  
+-   [Siebel アダプターを使用した ADO.NET インターフェイスを拡張します。](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)  
   
--   [Siebel の接続文字列のデータ プロバイダーのプロパティ](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)  
+-   [Siebel 接続文字列のデータ プロバイダーのプロパティ](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)  
   
 -   [Siebel の SELECT ステートメントの構文](../../adapters-and-accelerators/adapter-siebel/syntax-for-a-select-statement-in-siebel.md)  
   
@@ -45,6 +45,6 @@ ms.locfileid: "22222242"
   
 -   [Siebel ビジネス コンポーネントで SELECT クエリを実行します。](../../adapters-and-accelerators/adapter-siebel/run-a-select-query-on-business-components-with-siebel.md)  
   
--   [Siebel ビジネス サービスの実行操作を実行します。](../../adapters-and-accelerators/adapter-siebel/run-an-execute-operation-on-business-services-with-siebel.md)  
+-   [Siebel ビジネス サービスに対して EXECUTE 操作を実行します。](../../adapters-and-accelerators/adapter-siebel/run-an-execute-operation-on-business-services-with-siebel.md)  
   
--   [Siebel と SSIS のデータ プロバイダーを使用します。](../../adapters-and-accelerators/adapter-siebel/use-the-data-provider-for-siebel-with-ssis.md)
+-   [Data Provider for Siebel を SSIS と一緒に使用する](../../adapters-and-accelerators/adapter-siebel/use-the-data-provider-for-siebel-with-ssis.md)

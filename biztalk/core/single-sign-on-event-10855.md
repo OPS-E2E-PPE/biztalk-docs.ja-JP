@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10855 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10855 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,27 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 89bbdb3c004dc7533be9b7f6371ec69b67bde532
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c2d5914cc119a68c109b883c888b3898bc7db07e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276922"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36986451"
 ---
 # <a name="single-sign-on-event-10855"></a>シングル サインオン: イベント 10855
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10855|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|ENTSSO_E_PASSWORD_FILTER_FAILED|  
-|メッセージ テキスト|パスワード フィルターが失敗したため、資格情報を返すことができません。|  
-  
+
+|                 |                                                                        |
+|-----------------|------------------------------------------------------------------------|
+|  製品名   |                       エンタープライズ シングル サインオン                        |
+| 製品バージョン |       [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]       |
+|    イベント ID     |                                 10855                                  |
+|  イベント ソース   |                                 ENTSSO                                 |
+|    コンポーネント    |                                  なし                                   |
+|  シンボル名  |                    ENTSSO_E_PASSWORD_FILTER_FAILED                     |
+|  メッセージ テキスト   | パスワード フィルターが失敗したため、資格情報を返すことができません。 |
+
 ## <a name="explanation"></a>説明  
  パスワード フィルターが有効ではありません。 最も可能性が高い原因は、フィルターを手動で作成したことです。これは推奨されていません。  
-  
+
 ## <a name="user-action"></a>ユーザーの操作  
  フィルターの作成ウィザードを使用して、もう一度パスワード フィルターを作成します。

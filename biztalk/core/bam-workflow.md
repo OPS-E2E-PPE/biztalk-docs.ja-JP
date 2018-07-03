@@ -1,5 +1,5 @@
 ---
-title: BAM ワークフロー |Microsoft ドキュメント
+title: BAM のワークフロー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -23,12 +23,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19356d6191963ec441f0b85c0e987c8515dcf1f4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4c925e1b77b53bc2ec30a7f42b2446ee410ffef7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232042"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36989939"
 ---
 # <a name="bam-workflow"></a>BAM のワークフロー
 ビジネス アクティビティ監視と連携する 4 つのユーザー ロールと、ロールで使用されるツールを次に示します。  
@@ -51,7 +51,7 @@ BAM ロール
   
 -   システム管理者と開発者は、この XML を使用してロールを実行します。  
   
--   BAM 定義ブックを使用するための手順にある[ビジネス アクティビティの定義および Excel でビュー](../core/defining-business-activities-and-views-in-excel.md)です。  
+-   手順については、BAM 定義ブックを使用するためにある[ビジネス アクティビティの定義および Excel でのビュー](../core/defining-business-activities-and-views-in-excel.md)します。  
   
 ## <a name="managing-the-bam-infrastructure"></a>BAM インフラストラクチャの管理  
  ビジネス アナリストが必要な BAM ビューを定義した後、システム管理者は BAM 管理ユーティリティ (BM.EXE) というコマンド ライン ツールを使用して、BAM 定義ブック、またはブックからエクスポートした XML から BAM インフラストラクチャを展開します。  
@@ -65,13 +65,13 @@ BAM ロール
   
  XML をオーケストレーションにマップするには、追跡プロファイル エディター (TPE) を使用して次の手順を実行します。  
   
--   BizTalk 管理データベース (構成データベース) に格納されている展開済みのアセンブリを読み込みます。 展開済みのアセンブリには、上記の手順 1. でビジネス アナリストが指定した要件に対応する 1 つ以上のオーケストレーションが含まれています。  
+- BizTalk 管理データベース (構成データベース) に格納されている展開済みのアセンブリを読み込みます。 展開済みのアセンブリには、上記の手順 1. でビジネス アナリストが指定した要件に対応する 1 つ以上のオーケストレーションが含まれています。  
   
--   オーケストレーションから抽出するデータを定義します。 これには、メッセージ スキーマやオーケストレーション図形から適切なビジネス マイルストーン (イベント) やデータ項目フォルダーに項目をドロップします。  
+- オーケストレーションから抽出するデータを定義します。 これには、メッセージ スキーマやオーケストレーション図形から適切なビジネス マイルストーン (イベント) やデータ項目フォルダーに項目をドロップします。  
   
--   作業が終了した後、ファイルを BizTalk® Server 追跡 (.btt) ファイルとして Visual SourceSafe などの格納データベースに保存します。  
+- 作業が終了した後、ファイルを BizTalk® Server 追跡 (.btt) ファイルとして Visual SourceSafe などの格納データベースに保存します。  
   
- 開発者は .btt ファイルをテスト データベースに展開し、結合テストを行って結果を確認します。  
+  開発者は .btt ファイルをテスト データベースに展開し、結合テストを行って結果を確認します。  
   
 ## <a name="deploying-the-tracking-profile"></a>追跡プロファイルの展開  
  システム管理者は、追跡プロファイル エディターを使用して、1 つ以上の BizTalk 管理データベースにプロファイルを展開します。  
@@ -81,12 +81,12 @@ BAM ロール
 ## <a name="viewing-the-business-data"></a>ビジネス データの表示  
  ビジネス ユーザーは、BM.exe ユーティリティによって生成される _LiveData ブックを使用します。 _LiveData ブックを開くたびに新しいライブ データが受信されます。このデータはビジネス プロセスの特定の側面を監視するために収集されたものです。  
   
--   リアルタイム集計として定義されているデータを表示するには、ビジネス ユーザーだけが必要 をクリックする**更新**データを表示するブックでします。  
+-   リアルタイム集計として定義されているデータを表示するビジネス ユーザーだけが必要 をクリックする**更新**データを表示するブックでします。  
   
 -   集計データがリアルタイムでない場合は、スケジュール設定された DTS パッケージの実行時に取得されたビジネス データのスナップショットを参照できます。  
   
 -   組織で共同作業が必要な場合、ビジネス ユーザーは BAS Web サイトからライブ データにアクセスできます。  
   
 ## <a name="see-also"></a>参照  
- [Excel でビジネス アクティビティとビューを定義します。](../core/defining-business-activities-and-views-in-excel.md)   
+ [Excel でビジネス アクティビティとビューの定義](../core/defining-business-activities-and-views-in-excel.md)   
  [BAM によるビジネス アクティビティの監視](../core/monitoring-business-activities-with-bam.md)

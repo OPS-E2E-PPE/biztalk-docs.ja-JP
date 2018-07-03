@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server を使用して SAP Rfc を呼び出す |Microsoft ドキュメント
+title: BizTalk Server を使用して SAP で Rfc を呼び出す |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,82 +14,82 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3db5180d8b4183a2a48c726fd5e73b3347f82dc
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 381cbebae5e87e459b8283c90b4bbc0de9afb1cc
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25965440"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988787"
 ---
-# <a name="invoke-rfcs-in-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP Rfc を呼び出す
-[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプター クライアントから呼び出すことができる操作として、SAP システムによって公開されている Rfc を表示します。 このセクションの内容を使用して SAP システムでの RFC を呼び出すための手順を説明する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 方法の詳細については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]SAP システムで RFC を呼び出すサポートを参照してください[SAP Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)です。 RFC を呼び出すための SOAP メッセージの構造に関する詳細については、次を参照してください。 [RFC 操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)です。  
+# <a name="invoke-rfcs-in-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP で Rfc を呼び出す
+[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプター クライアントによって呼び出すことができる操作として、SAP システムによって公開されている Rfc 明らかになります。 このセクションを使用して SAP システムでの RFC を呼び出すための説明、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 方法の詳細については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]RFC を呼び出すことは、SAP システムにサポートを参照してください[SAP で Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)します。 RFC を呼び出すための SOAP メッセージの構造の詳細については、次を参照してください。 [RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)します。  
   
-## <a name="how-to-invoke-an-rfc-in-an-sap-system"></a>SAP システムで RFC を呼び出す方法ですか。  
- SAP システムを使用して、操作を実行、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で説明した手順のタスクでは、 [SAP アプリケーションを作成するビルド ブロック](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)です。 SAP システムでは、RFC を呼び出し、これらのタスクです。  
+## <a name="how-to-invoke-an-rfc-in-an-sap-system"></a>SAP システムでの RFC を呼び出す方法でしょうか。  
+ 使用して SAP システムに対する演算を実行、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で説明されている手順のタスクが含まれます[SAP アプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)します。 これらのタスクは、SAP システムの RFC を呼び出すには。  
   
-1.  BizTalk プロジェクトを作成し、SAP システムで、呼び出し先の RFC のスキーマを生成します。  
+1. BizTalk プロジェクトを作成し、SAP システムが呼び出す RFC のスキーマを生成します。  
   
-2.  SAP システムからメッセージを送受信するための BizTalk プロジェクトでメッセージを作成します。  
+2. SAP システムからメッセージを送受信するための BizTalk プロジェクトでは、メッセージを作成します。  
   
-3.  SAP システムで RFC を呼び出すオーケストレーションを作成します。  
+3. SAP システムでの RFC を呼び出すオーケストレーションを作成します。  
   
-4.  構築し、BizTalk プロジェクトを展開します。  
+4. ビルドし、BizTalk プロジェクトを配置します。  
   
-5.  BizTalk アプリケーションを作成する物理送信ポートと受信ポートを構成します。  
+5. BizTalk 物理を作成してアプリケーションの送信および受信ポートを構成します。  
   
-6.  BizTalk アプリケーションを起動します。  
+6. BizTalk アプリケーションを起動します。  
   
- このトピックでは、これらのタスクを実行する手順を説明します。  
+   このトピックでは、これらのタスクを実行する手順を説明します。  
   
 ## <a name="generating-schema"></a>スキーマを生成します。  
- このトピックでは、SAP システムで RFC を起動する方法を示すおスキーマを生成*RFC_CUSTOMER_GET*です。 参照してください[参照、検索、および SAP RFC 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)スキーマを生成する方法についての詳細。  
+ このトピックでは、SAP システムでの RFC を呼び出す方法を示すためにスキーマを生成*RFC_CUSTOMER_GET*します。 参照してください[参照、検索、および SAP の RFC 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)スキーマを生成する方法の詳細について。  
   
-## <a name="defining-messages-and-message-types"></a>メッセージとメッセージの種類を定義します。  
- 以前に生成したスキーマには、オーケストレーション内のメッセージに対して必要な「種類」がについて説明します。 メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。 BizTalk プロジェクトのオーケストレーションの種類からのメッセージを生成したスキーマをリンクする必要があります。  
+## <a name="defining-messages-and-message-types"></a>メッセージおよびメッセージの種類を定義します。  
+ 以前に生成したスキーマには、オーケストレーション内のメッセージに必要な「型」について説明します。 メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。 BizTalk プロジェクトのオーケストレーションからメッセージを生成したスキーマをリンクする必要があります。  
   
- このトピックでは、2 つのメッセージを作成する必要があります: SAP システムと他の応答を受信する要求を送信する 1 つです。  
+ このトピックでは、2 つのメッセージを作成する必要があります: 1 つに、SAP システムと他の応答を受信する要求を送信します。  
   
- メッセージを作成し、スキーマにそれらをリンクするには、次の手順を実行します。  
+ メッセージを作成し、スキーマにリンクするには、次の手順を実行します。  
   
 #### <a name="to-create-messages-and-link-to-schema"></a>メッセージを作成し、スキーマにリンクするには  
   
-1.  オーケストレーションの種類、BizTalk プロジェクトを開くまだ開いていない場合。 をクリックして**ビュー**、 をポイント**その他のウィンドウ**、 をクリック**オーケストレーション**です。  
+1.  オーケストレーションの種類を BizTalk プロジェクトを開くまだ開いていない場合。 をクリックして**ビュー**、 をポイント**その他の Windows**、 をクリック**オーケストレーション**します。  
   
-2.  **オーケストレーション ビュー**を右クリックして**メッセージ**、クリックして**新しいメッセージ**です。  
+2.  **オーケストレーション**、右クリック**メッセージ**、順にクリックします**新しいメッセージ**します。  
   
 3.  右クリックし、新規メッセージを作成および選択**プロパティ ウィンドウ**します。  
   
-4.  **プロパティ**のウィンドウ**Message_1**次の操作を行います。  
+4.  **プロパティ**ウィンドウ **[message_1]** 次の操作を行います。  
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |[Identifier]|型**要求**です。|  
-    |メッセージの種類|ドロップダウン リストから、展開**スキーマ**を選択して*InvokeRFC.SAPBindingSchema.RFC_CUSTOMER_GET*ここで、 *InvokeRFC* BizTalk プロジェクトの名前を指定します。  *SAPBindingSchema*に対して生成されたスキーマは、 *RFC_CUSTOMER_GET*です。|  
+    |[Identifier]|型**要求**します。|  
+    |メッセージ型|ドロップダウン リストから展開**スキーマ**、選択と*InvokeRFC.SAPBindingSchema.RFC_CUSTOMER_GET*ここで、 *InvokeRFC* BizTalk プロジェクトの名前を指定します。  *SAPBindingSchema*に対して生成されたスキーマは、 *RFC_CUSTOMER_GET*します。|  
   
-5.  新しいメッセージを作成する前の手順を繰り返します。 **プロパティ**新しいメッセージ用のウィンドウは、以下を実行します。  
+5.  新しいメッセージを作成する前の手順を繰り返します。 **プロパティ**ウィンドウで、新しいメッセージの場合は、次を実行します。  
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |[Identifier]|型**応答**です。|  
-    |メッセージの種類|ドロップダウン リストから、展開**スキーマ**を選択して*InvokeRFC.SAPBindingSchema.RFC_CUSTOMER_GETResponse*です。|  
+    |[Identifier]|型**応答**します。|  
+    |メッセージ型|ドロップダウン リストから展開**スキーマ**、選択および*InvokeRFC.SAPBindingSchema.RFC_CUSTOMER_GETResponse*します。|  
   
-## <a name="setting-up-the-orchestration"></a>オーケストレーションを設定します。  
- 使用する BizTalk オーケストレーションを作成する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]SAP システムでの Rfc を呼び出すためです。 このオーケストレーションでの要求メッセージを削除する受信場所が、定義されています。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]メッセージを使用して、SAP システムに渡します。 SAP システムからの応答は、別の場所に保存されます。 SAP システムでの呼び出し元の Rfc の一般的なオーケストレーションにが含まれます。  
+## <a name="setting-up-the-orchestration"></a>オーケストレーションのセットアップ  
+ 使用する BizTalk オーケストレーションを作成する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]SAP システムでの Rfc を呼び出すためです。 このオーケストレーションでの要求メッセージを削除する、定義されている受信場所。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]メッセージを使用して、SAP システムに渡します。 SAP システムからの応答は、別の場所に保存されます。 SAP システムでの呼び出し元の Rfc の一般的なオーケストレーションが含まれます。  
   
--   SAP システムにメッセージを送信し、応答を受信する図形を送受信します。  
+- SAP システムにメッセージを送信し、応答を受信する図形を送受信します。  
   
--   一方向の受信ポートを SAP システムに送信する要求メッセージを受信します。  
+- SAP システムに送信する要求メッセージを受信するポートは一方向の受信します。  
   
--   双方向の送信ポートを SAP システムに要求メッセージを送信し、応答を受信します。  
+- SAP システムに要求メッセージを送信し、応答を受信するポートを双方向に送信します。  
   
--   SAP システムからフォルダーに、応答を送信する一方向の送信ポートです。  
+- SAP システムからフォルダーに、応答を送信する一方向の送信ポート。  
   
- サンプル オーケストレーションには、次のようになります。  
+  サンプル オーケストレーションには、次のようになります。  
   
- ![接続されているポートとオーケストレーション](../../adapters-and-accelerators/adapter-sap/media/c228e79f-02e8-4de3-b447-8703caa28d3b.gif "c228e79f-02e8-4de3-b447-8703caa28d3b")  
+  ![オーケストレーション ポートが接続された](../../adapters-and-accelerators/adapter-sap/media/c228e79f-02e8-4de3-b447-8703caa28d3b.gif "c228e79f-02e8-4de3-b447-8703caa28d3b")  
   
 ### <a name="adding-message-shapes"></a>メッセージの構築図形を追加します。  
- メッセージの構築図形のごとに、次のプロパティを指定することを確認してください。 示されている名前、*図形*列が上記のオーケストレーションで表示される、メッセージの構築図形の名前を示します。  
+ メッセージの構築図形のごとに、次のプロパティを指定することを確認します。 表示される名前、*図形*前のオーケストレーションに表示される、列は、メッセージの構築図形の名前。  
   
 |図形|図形の種類|[プロパティ]|  
 |-----------|----------------|----------------|  
@@ -99,16 +99,16 @@ ms.locfileid: "25965440"
 |Send_Response|Send|-設定**名前**に*Send_Response*|  
   
 ### <a name="adding-ports"></a>ポートの追加  
- 論理ポートごとには、次のプロパティを指定します。 示されている名前、*ポート*オーケストレーションで表示される、列が、ポートの名前を示します。  
+ ごとの論理ポートには、次のプロパティを指定します。 表示される名前、*ポート*列は、ポートの名前、オーケストレーションに表示されます。  
   
-|ポート|[プロパティ]|  
+|Port|[プロパティ]|  
 |----------|----------------|  
 |ReceiveMsgPort|-設定**識別子**に*ReceiveMsgPort*<br />-設定**型**に*ReceiveMsgPortType*<br />-設定**通信パターン**に*一方向*<br />-設定**通信方向**に*受信*|  
 |SendToLOBPort|-設定**識別子**に*SendToLOBPort*<br />-設定**型**に*SendToLOBPortType*<br />-設定**通信パターン**に*要求-応答*<br />-設定**通信方向**に*送受信*|  
 |SendMsgPort|-設定**識別子**に*SendMsgPort*<br />-設定**型**に*SendMsgPortType*<br />-設定**通信パターン**に*一方向*<br />-設定**通信方向**に*送信*|  
   
 ## <a name="specify-messages-for-action-shapes-and-connect-to-ports"></a>アクション図形のメッセージを指定し、ポートに接続  
- 次の表は、プロパティと、メッセージのアクション図形およびポートにリンクすることを指定するために設定するには、その値を指定します。 示されている名前、*図形*列が上記のオーケストレーションで表示される、メッセージの構築図形の名前を示します。  
+ 次の表には、プロパティとメッセージのアクション図形とポートにリンクすることを指定するために設定するには、その値を指定します。 表示される名前、*図形*前のオーケストレーションに表示される、列は、メッセージの構築図形の名前。  
   
 |図形|[プロパティ]|  
 |-----------|----------------|  
@@ -117,43 +117,43 @@ ms.locfileid: "25965440"
 |Receive_LOB|-設定**メッセージ**に*応答*<br />-設定**操作**に*SendToLOBPort.Operation_1.Response*|  
 |Send_Response|-設定**メッセージ**に*応答*<br />-設定**操作**に*SendMsgPort.Operation_1.Request*|  
   
- これらのプロパティを指定した後、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
+ これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
   
- 今すぐ BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 詳細については、次を参照してください。[のビルドおよび実行されているオーケストレーション](../../core/building-and-running-orchestrations.md)です。
+ ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 以前に作成したオーケストレーションが下に表示、BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションの構成の詳細については、次を参照してください。[アプリケーションを構成する方法](../../core/how-to-configure-an-application.md)です。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションを構成する方法の詳細については、次を参照してください。[アプリケーションを構成する方法](../../core/how-to-configure-an-application.md)します。
   
- アプリケーションの構成が含まれます。  
+ アプリケーションを構成する必要があります。  
   
--   アプリケーションのホストを選択します。  
+- アプリケーションのホストを選択します。  
   
--   BizTalk Server 管理コンソールで物理ポートにオーケストレーションで作成したポートをマッピングします。 このオーケストレーションの次の操作を行う必要があります。  
+- BizTalk Server 管理コンソールで物理ポートにオーケストレーションで作成したポートをマッピングします。 このオーケストレーションの次の操作を行う必要があります。  
   
-    -   ハード ディスクと、要求メッセージをドロップする場所、対応するファイル ポート上の場所を定義します。 BizTalk オーケストレーションは、要求メッセージを消費し、SAP システムに送信します。  
+  - ハード ディスクと、要求メッセージをドロップする場所、対応するファイル ポートでの場所を定義します。 BizTalk オーケストレーションは要求メッセージを使用し、SAP システムに送信します。  
   
-    -   ハード ディスクと、対応する file ポートを BizTalk オーケストレーションが SAP システムからの応答を含む応答メッセージをドロップする場所に場所を定義します。  
+  - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーションでの SAP システムからの応答を含む応答メッセージをドロップする場所の場所を定義します。  
   
-    -   SAP システムにメッセージを送信する物理 Wcf-custom または WCF SAP 送信ポートを定義します。 送信ポートでアクションを指定することもあります。 ポートを作成する方法については、次を参照してください。 [SAP アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sap/manually-configure-a-physical-port-binding-to-the-sap-adapter.md)です。
+  - SAP システムにメッセージを送信する物理 Wcf-custom または WCF-SAP 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 ポートを作成する方法については、次を参照してください。 [SAP アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sap/manually-configure-a-physical-port-binding-to-the-sap-adapter.md)します。
   
-        > [!NOTE]
-        >  使用してスキーマを生成する、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または受信ポート (着信)、BizTalk Server 管理コンソールから、このバインド ファイルをインポートすることができます。 詳細については、次を参照してください。 [sap ポートのバインド ファイルを使用して物理ポートのバインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)です。
+    > [!NOTE]
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、次を参照してください。 [sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)します。
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- 呼び出す RFC に SAP システムで BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションの起動方法の詳細については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)または[アプリケーションを起動する方法](../../core/how-to-start-and-stop-a-biztalk-application.md)です。
+ SAP システムでの RFC を呼び出すための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)または[アプリケーションを起動する方法](../../core/how-to-start-and-stop-a-biztalk-application.md)します。
   
- この段階で確認します。  
+ この段階で、ことを確認します。  
   
 -   ファイルは、オーケストレーションが実行中の要求メッセージを受信するポートを受信します。  
   
 -   オーケストレーションから応答メッセージを受信する FILE 送信ポートが実行されています。  
   
--   SAP システムにメッセージを送信する Wcf-custom または SAP WCF 送信ポートが実行されています。  
+-   SAP システムにメッセージを送信する Wcf-custom または WCF SAP の送信ポートが実行されています。  
   
 -   操作の BizTalk オーケストレーションが実行されています。  
   
 ## <a name="executing-the-operation"></a>操作の実行  
- アプリケーションを実行した後に、定義済みの場所で、オーケストレーションの要求メッセージを削除する必要があります。 参照してください[RFC 操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)を呼び出す RFC に SAP システムで要求メッセージのスキーマについて知ることです。 たとえば、RFC_CUSTOMER_GET を起動する要求メッセージには。  
+ アプリケーションを実行した後に、定義済みの場所で要求メッセージをオーケストレーションを削除する必要があります。 参照してください[RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)SAP システムでの RFC を呼び出すための要求メッセージのスキーマについて理解します。 たとえば、RFC_CUSTOMER_GET を起動する要求メッセージには。  
   
 ```  
 <RFC_CUSTOMER_GET xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/">  
@@ -163,7 +163,7 @@ ms.locfileid: "25965440"
 </RFC_CUSTOMER_GET>  
 ```  
   
- オーケストレーションはメッセージを処理して、SAP システムに送信します。 SAP システムからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 たとえば、上記の要求メッセージを SAP システムからの応答には。  
+ オーケストレーションはメッセージを使用し、SAP システムに送信します。 SAP システムからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 たとえば、上記の要求メッセージの SAP システムからの応答には。  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>   
@@ -185,10 +185,10 @@ ms.locfileid: "25965440"
 ```  
   
 ## <a name="possible-exceptions"></a>可能性のある例外  
- 例外については、BizTalk Server を使用して SAP システムでの RFC の呼び出し中に発生する可能性が、次を参照してください。[例外とエラー処理、SAP アダプター](../../adapters-and-accelerators/adapter-sap/exceptions-and-error-handling-with-the-sap-adapter.md)です。  
+ BizTalk Server を使用して SAP システムでの RFC の呼び出し中に発生する可能性が、例外については、次を参照してください。[例外とエラーは、SAP アダプターを使用した処理](../../adapters-and-accelerators/adapter-sap/exceptions-and-error-handling-with-the-sap-adapter.md)します。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開して、BizTalk プロジェクトを構成することが後、は、バインド ファイルと呼ばれる XML ファイルに構成設定をエクスポートできます。 バインド ファイルを生成したできるように、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありません、ファイルから構成設定をインポートすることができます。 バインド ファイルの詳細については、次を参照してください。[を再利用の SAP アダプターのバインド](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)です。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、次を参照してください。[再利用の SAP アダプター バインド](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)します。  
   
 ## <a name="see-also"></a>参照  
 [BizTalk アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-biztalk-applications-using-the-sap-adapter.md)

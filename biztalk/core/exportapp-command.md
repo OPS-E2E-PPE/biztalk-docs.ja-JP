@@ -1,5 +1,5 @@
 ---
-title: ExportApp コマンド |Microsoft ドキュメント
+title: ExportApp コマンド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 966e53a7c74ce687724a77ea57888a4c61bb2773
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7e3c54fe2d6a08e76c869e652f9bfbf859bedf38
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246274"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36990240"
 ---
 # <a name="exportapp-command"></a>ExportApp コマンド
 BizTalk アプリケーションを .msi ファイルにエクスポートします。 同じファイル名とパスの .msi ファイルが既に存在する場合、既存の .msi ファイルは上書きされます。  
   
- ResourceSpec パラメーターを使用することにより、アプリケーションの特定のアイテムだけを .msi ファイルにエクスポートできます。 XML ファイルを編集してエクスポートするアイテムの作成を実行するときに指定する、 **ListApp** 」の説明に従ってコマンドを使用して、ResourceSpec パラメーター [ListApp コマンド](../core/listapp-command.md)です。 場所を使用するこの XML ファイルの ResourceSpec の値として実行するときに、 **ExportApp**コマンド。 これを行うときに、指定した XML ファイルに表示されている成果物のみが、.msi ファイルにエクスポートされます。  
+ ResourceSpec パラメーターを使用することにより、アプリケーションの特定のアイテムだけを .msi ファイルにエクスポートできます。 XML ファイルを編集してエクスポートするアイテムの作成を実行するときに指定する、 **ListApp**で説明されているコマンドを ResourceSpec パラメーターと共に[ListApp コマンド](../core/listapp-command.md)します。 場所を使用する、この XML ファイルの ResourceSpec の値として実行するときに、 **ExportApp**コマンド。 これを行う場合は、指定した XML ファイルに表示されている成果物のみが、.msi ファイルにエクスポートされます。  
   
 > [!NOTE]
 >  セキュリティ上の理由により、パスワードは、アプリケーションのエクスポート中にアプリケーションのバインドから削除されます。 既にアプリケーションに追加されたバインド ファイルからは削除されません。 アプリケーションを正常に機能させるためには、.msi ファイルからアプリケーションをインストールした後で、パスワードを再構成する必要があります。  
@@ -30,23 +30,23 @@ BizTalk アプリケーションを .msi ファイルにエクスポートしま
 >  また、証明書ファイルからは、秘密キーが削除されます。  
   
 ## <a name="usage"></a>使用方法  
- **BTSTask の ExportApp** [**/applicationname は:***値*] **/パッケージ:***値*[**/ResourceSpec:***値*] [**/GlobalParties**] [**/Server:***値*] [**/データベース:***値*]  
+ **BTSTask の ExportApp** [**/applicationname は:**<em>値</em>] **/package:**<em>値</em>[**/ResourceSpec:**<em>値</em>] **[/GlobalParties]** [**/Server:**<em>値</em>] [**/database:** <em>値</em>]  
   
 ## <a name="parameters"></a>パラメーター  
   
 |パラメーター|必須|値|  
 |---------------|--------------|-----------|  
-|**/ApplicationName** (または **/A**、「解説」を参照してください)|不可|エクスポートする BizTalk アプリケーションの名前。 名前には、スペースが含まれている場合は、二重引用符 (") で囲む必要があります。 アプリケーション名が指定されなかった場合、グループの既定の BizTalk アプリケーションが使用されます。|  
-|**/パッケージ**(または **/P**、「解説」を参照してください)|はい|.msi ファイルの完全パス。 パスには、スペースが含まれている場合は、引用符 (") で囲む必要があります。 例: パッケージ:"C:\My MSI Files\My.msi"|  
-|**/ResourceSpec** (または **/R**、「解説」を参照してください)|不可|ResourceSpec ファイルの完全パス。 パスには、スペースが含まれている場合は、引用符 (") で囲む必要があります。 例: ResourceSpec:"C:\My Files\MyResourceSpec.xml"|  
-|**/GlobalParties** (または **/G**、「解説」を参照してください)|不可|指定した場合、グループのグローバル パーティ情報が .msi ファイルにエクスポートされます。|  
-|**/サーバー** (または **/S**、「解説」を参照してください)|不可|BizTalk 管理データベースをホストする SQL Server インスタンスの名前。ServerName\InstanceName,Port の形式で指定します。<br /><br /> インスタンス名の指定は、そのインスタンス名がサーバー名と異なる場合にのみ必要です。 ポートの指定は、SQL Server で使用するポート番号が既定値 (1433) と異なる場合にのみ必要です。<br /><br /> 例 :<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 指定しなかった場合、ローカル コンピューターで実行されている SQL Server インスタンスの名前が使用されます。|  
-|**/データベース**(または **/D**、「解説」を参照してください)|不可|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
+|**/ApplicationName** (または **/A**、「解説」を参照してください)|いいえ|エクスポートする BizTalk アプリケーションの名前。 名前にスペースが含まれている場合は、二重引用符 (") で囲む必要があります。 アプリケーション名が指定されなかった場合、グループの既定の BizTalk アプリケーションが使用されます。|  
+|**/パッケージ**(または **/P**、「解説」を参照してください)|はい|.msi ファイルの完全パス。 パスにスペースが含まれている場合は、引用符 (") で囲む必要があります。 例: パッケージ:"C:\My MSI Files\My.msi"|  
+|**/ResourceSpec** (または **/R**、「解説」を参照してください)|いいえ|ResourceSpec ファイルの完全パス。 パスにスペースが含まれている場合は、引用符 (") で囲む必要があります。 例: ResourceSpec:"C:\My Files\MyResourceSpec.xml"|  
+|**/GlobalParties** (または **/G**、「解説」を参照してください)|いいえ|指定した場合、グループのグローバル パーティ情報が .msi ファイルにエクスポートされます。|  
+|**/サーバー** (または **/S**、「解説」を参照してください)|いいえ|BizTalk 管理データベースをホストする SQL Server インスタンスの名前。ServerName\InstanceName,Port の形式で指定します。<br /><br /> インスタンス名の指定は、そのインスタンス名がサーバー名と異なる場合にのみ必要です。 ポートの指定は、SQL Server で使用するポート番号が既定値 (1433) と異なる場合にのみ必要です。<br /><br /> 例 :<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 指定しなかった場合、ローカル コンピューターで実行されている SQL Server インスタンスの名前が使用されます。|  
+|**/データベース**(または **/D**、「解説」を参照してください)|いいえ|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
   
 ## <a name="sample"></a>サンプル  
  **ExportApp applicationname: myapplication/Package:C:\MSI\MyApplication.msi**  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>コメント  
  パラメーターの大文字と小文字は区別されません。 パラメーター名は、すべて入力する必要はありません。最初の数文字 (一意に特定できるだけの文字数) を入力するだけで構いません。  
   
 ## <a name="see-also"></a>参照  

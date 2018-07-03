@@ -1,5 +1,5 @@
 ---
-title: メッセージ コンテキスト プロパティ Values2 に割り当てる方法 |Microsoft ドキュメント
+title: メッセージ コンテキスト プロパティ Values2 を割り当てる方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f0e19a425a4842e3bfac150d1cac851e4686f17
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: afb08895ba841ce2e99399ea9590b05394102472
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22247210"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37006387"
 ---
 # <a name="how-to-assign-message-context-property-values"></a>メッセージ コンテキスト プロパティの値を割り当てる方法
 BizTalk オーケストレーションから JD Edwards OneWorld 接続セッションを管理するには、プロジェクトの Microsoft.BizTalk.Adapters.JDEProperties.dll に参照を追加する必要があります。 このアセンブリは、%SystemDrive%\Program Files\Common Files\Microsoft BizTalk Adapters for Enterprise Applications\bin に配置されています。  
@@ -30,17 +30,17 @@ BizTalk オーケストレーションから JD Edwards OneWorld 接続セッシ
   
 ### <a name="to-assign-a-message-context-property-value"></a>メッセージ コンテキストのプロパティ値を割り当てるには  
   
-1.  新しいメッセージを作成します。  
+1. 新しいメッセージを作成します。  
   
-2.  メッセージのコンテンツを設定します (既存のメッセージを割り当てるなど)。  
+2. メッセージのコンテンツを設定します (既存のメッセージを割り当てるなど)。  
   
-3.  プロパティを設定します。  
+3. プロパティを設定します。  
   
- Microsoft BizTalk Adapter for JD Edwards OneWorld にバインドされた送信ポートに送信するメッセージにコンテキスト プロパティを割り当てるには、メッセージ代入演算子を使用します。 次に、JD Edwards OneWorld 名前空間の使用可能ないずれかのコンテキスト プロパティを指定します。  
+   Microsoft BizTalk Adapter for JD Edwards OneWorld にバインドされた送信ポートに送信するメッセージにコンテキスト プロパティを割り当てるには、メッセージ代入演算子を使用します。 次に、JD Edwards OneWorld 名前空間の使用可能ないずれかのコンテキスト プロパティを指定します。  
   
- 構文です。`Message(JDE.Property) = value;`  
+   次の構文 `Message(JDE.Property) = value;`  
   
 ## <a name="see-also"></a>参照  
  [メッセージ コンテキスト プロパティの使用](../core/using-message-context-properties2.md)   
  [セッション管理について](../core/about-session-management1.md)   
- [チュートリアル: BizTalk アダプターを使用して JD Edwards OneWorld の](../core/tutorial-using-the-biztalk-adapter-for-jd-edwards-oneworld.md)
+ [チュートリアル: BizTalk Adapter for JD Edwards OneWorld の使用](../core/tutorial-using-the-biztalk-adapter-for-jd-edwards-oneworld.md)

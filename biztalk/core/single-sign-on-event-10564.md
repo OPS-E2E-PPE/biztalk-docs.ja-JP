@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10564 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10564 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7268b877a59fcd4e993a2c9009d48d73e5db9ac8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8be4ea87757a1fa0cb5d8ebd2e344ce521dbf740
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270298"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36997147"
 ---
 # <a name="single-sign-on-event-10564"></a>シングル サインオン: イベント 10564
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10564|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_ERROR_BACKUP_FILE_INCORRECT_FORMAT|  
-|メッセージ テキスト|バックアップ ファイルの形式が正しくありません。|  
+|                 |                                                            |
+|-----------------|------------------------------------------------------------|
+|  製品名   |                 エンタープライズ シングル サインオン                  |
+| 製品バージョン | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    イベント ID     |                           10564                            |
+|  イベント ソース   |                           ENTSSO                           |
+|    コンポーネント    |                            なし                             |
+|  シンボル名  |           SSO_ERROR_BACKUP_FILE_INCORRECT_FORMAT           |
+|  メッセージ テキスト   |     バックアップ ファイルの形式が正しくありません。      |
   
 ## <a name="explanation"></a>説明  
  バックアップ ファイルの形式が正しくありません。  

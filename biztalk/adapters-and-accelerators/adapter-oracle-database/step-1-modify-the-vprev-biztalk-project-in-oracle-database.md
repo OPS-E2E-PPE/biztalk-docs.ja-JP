@@ -1,5 +1,5 @@
 ---
-title: '手順 1: vPrev Oracle データベースでの BizTalk プロジェクトを変更する |Microsoft ドキュメント'
+title: '手順 1: vPrev BizTalk プロジェクトで Oracle データベースの変更 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,99 +12,99 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f8911a31eeec34a5508d29ff598a2f7624e5cd6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d5d55a5535d1f3f2234198d08393a314b1a304e5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216194"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010571"
 ---
-# <a name="step-1-modify-the-vprev-biztalk-project-in-oracle-database"></a>手順 1: vPrev Oracle データベースでの BizTalk プロジェクトを変更します。
-![手順 1/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
+# <a name="step-1-modify-the-vprev-biztalk-project-in-oracle-database"></a>手順 1: vPrev BizTalk プロジェクトで Oracle データベースを変更します。
+![ステップ 1/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
  **所要時間:** 10 分  
   
- **目標:** このステップで、次を変更する既存の vPrev BizTalk プロジェクト。  
+ **目標:** この手順で、次を変更する既存の vPrev BizTalk プロジェクト。  
   
--   SCOTT に対する挿入操作のメタデータを生成します。WCF ベースを使用して顧客テーブル[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。  
+- SCOTT に対する挿入操作のメタデータを生成します。WCF ベースを使用して顧客テーブル[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。  
   
--   WCF ベースを使用する挿入操作を実行するための要求メッセージに vPrev Oracle データベース アダプターを使用して挿入操作を実行するための要求メッセージにマップ[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。  
+- WCF ベースを使用して挿入操作を実行するための vPrev Oracle データベース アダプターは要求メッセージを使用して挿入操作を実行するための要求メッセージにマップ[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。  
   
--   WCF ベースを使用して受信した応答メッセージをマップ[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]vPrev Oracle データベース アダプターの応答メッセージにします。  
+- WCF ベースを使用して受信応答メッセージにマップ[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]vPrev の Oracle データベース アダプターの応答メッセージにします。  
   
 ## <a name="prerequisites"></a>前提条件  
   
--   VPrev BizTalk プロジェクト、SCOTT に Insert 操作を実行する権限が必要です。Oracle データベースの CUSTOMER テーブル。  
+-   SCOTT の挿入操作を実行する vPrev BizTalk プロジェクトが必要です。Oracle データベースの CUSTOMER テーブル。  
   
 ## <a name="modify-the-vprev-biztalk-project"></a>VPrev BizTalk プロジェクトを変更します。  
   
-1.  SCOTT に対する挿入操作のメタデータを生成します。WCF ベースを使用して顧客テーブル[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。 使用することができます、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]メタデータを生成します。  
+1. SCOTT に対する挿入操作のメタデータを生成します。WCF ベースを使用して顧客テーブル[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 使用することができます、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]メタデータを生成します。  
   
-     メタデータを生成する方法については、次を参照してください。 [Visual Studio での Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)です。 スキーマを生成すると後のような名前のファイルが*OracleDBBindingSchema.xsd*が BizTalk プロジェクトに追加します。 このファイルには、SCOTT に Insert 操作を実行するメッセージを送信するためのスキーマが含まれています。WCF ベースを使用して Oracle データベースの CUSTOMER テーブル[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。  
+    メタデータを生成する方法の詳細については、次を参照してください。 [Visual Studio での Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)します。 スキーマを生成すると後のような名前のファイル*OracleDBBindingSchema.xsd* BizTalk プロジェクトに追加されます。 このファイルには、SCOTT の挿入操作を実行するメッセージを送信するためのスキーマが含まれています。WCF ベースを使用して Oracle データベースの CUSTOMER テーブル[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。  
   
-2.  挿入操作のメタデータを生成すると、ポートのバインド ファイルも作成されます。 次の手順でこのバインド ファイルは、Oracle データベースにメッセージを送信する Wcf-custom 送信ポートを作成する使用されます。 操作の SOAP アクションは、メタデータを生成する操作にも設定されます。 たとえば、挿入操作のメタデータを生成する場合、送信ポートでの SOAP アクションで、操作名されます"Insert"。 ただし、操作の名前、オーケストレーションの一部異なる場合があります、たとえばなどを作成する論理送信ポートで"Operation_1"。 結果として、送信ポートを使用して Oracle データベースにメッセージを送信するときに、エラーを取得します。 これを防ぐためには、確認の論理送信ポート、オーケストレーションでは、メタデータの生成対象の操作名と同じ操作名。  
+2. 挿入操作のメタデータを生成すると、ポートのバインド ファイルも作成します。 次の手順で、Oracle データベースにメッセージを送信する Wcf-custom 送信ポートを作成するこのバインド ファイルが使用されます。 操作の SOAP アクションは、メタデータの生成対象の操作にも設定されます。 たとえば、挿入操作のメタデータを生成すると、送信ポートでの SOAP アクションで、操作名が、"Insert"になります。 ただし、操作名とオーケストレーションの一部異なる可能性があります、たとえば、作成した論理送信ポートで"Operation_1"。 その結果、送信ポートを使用して Oracle データベースにメッセージを送信するときにエラーが発生します。 これを回避するには、ことを確認しますで論理送信ポート、オーケストレーションでは、メタデータを生成する操作名と同じ操作名。  
   
-     そのため、このチュートリアルが発生した場合、挿入操作のメタデータを生成するための名前を変更"Insert"への論理送信ポート操作します。  
+    そのため、このチュートリアルが発生した場合、挿入操作のメタデータを生成するための名前を変更"Insert"する論理送信ポートの操作。  
   
-3.  要求メッセージの WCF ベースを使用して生成されたスキーマに vPrev Oracle データベース アダプターを使用して生成されたスキーマにマップ[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。  
+3. 要求メッセージは、WCF ベースを使用して生成されたスキーマに vPrev Oracle データベース アダプターを使用して生成されたスキーマをマップ[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。  
   
-    1.  BizTalk マッパーは、BizTalk プロジェクトに追加します。 BizTalk プロジェクトを右クリックし、[**追加**、] をクリック**新しい項目の**します。  
+   1. BizTalk マッパーは、BizTalk プロジェクトに追加します。 BizTalk プロジェクトを右クリックし、[**追加**、] をクリック**新しい項目の**します。  
   
-         **新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定**RequestMap.btm**です。 **[追加]** をクリックします。  
+       **新しい項目の追加**ダイアログ ボックスで、左側のウィンドウから**マップ ファイル**します。 右側のウィンドウから次のように選択します。**マップ**します。 マップの名前を指定します。 **RequestMap.btm**します。 **[追加]** をクリックします。  
   
-    2.  送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。  
+   2. 送信元スキーマ ペインで、次のようにクリックします。**ソース スキーマを開く**します。  
   
-    3.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Oracle データベース アダプターの要求メッセージのスキーマを選択します。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*です。 **[OK]** をクリックします。  
+   3. **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**vPrev の Oracle データベース アダプターの要求メッセージのスキーマを選択します。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*します。 **[OK]** をクリックします。  
   
-    4.  **送信元スキーマのルート ノード**ダイアログ ボックスで、*挿入* をクリック**OK**です。  
+   4. **送信元スキーマのルート ノード**ダイアログ ボックスで、*挿入* をクリック**OK**します。  
   
-    5.  送信先スキーマ ペインで、をクリックして**送信先スキーマを開く**です。  
+   5. 送信先スキーマ ペインで、次のようにクリックします。**送信先スキーマを開く**します。  
   
-    6.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの要求メッセージのスキーマを選択して[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.OracleDBBindingSchema*です。 **[OK]** をクリックします。  
+   6. **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの要求メッセージのスキーマを選択して[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.OracleDBBindingSchema*します。 **[OK]** をクリックします。  
   
-    7.  **ターゲット スキーマのルート ノード**ダイアログ ボックスで、*挿入* をクリック**OK**です。  
+   7. **ターゲット スキーマのルート ノード**ダイアログ ボックスで、*挿入* をクリック**OK**します。  
   
-    8.  次の図に示すように、両方のスキーマ内の各要素をマップします。  
+   8. 次の図に示すように、両方のスキーマでは、それぞれの要素をマップします。  
   
-         ![Oracle データベースに送信された要求をマップ](../../adapters-and-accelerators/adapter-oracle-database/media/4cb59338-40d1-4eb1-bd89-b5a3183959e1.gif "4cb59338-40d1-4eb1-bd89-b5a3183959e1")  
+       ![Oracle データベースに送信される要求をマップ](../../adapters-and-accelerators/adapter-oracle-database/media/4cb59338-40d1-4eb1-bd89-b5a3183959e1.gif "4cb59338-40d1-4eb1-bd89-b5a3183959e1")  
   
-    9. マップを保存します。  
+   9. マップを保存します。  
   
-4.  応答メッセージは、WCF ベースを使用して生成されたスキーマに vPrev Oracle データベース アダプターを使用して生成されたスキーマにマップ[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。  
+4. 応答メッセージは、WCF ベースを使用して生成されたスキーマに vPrev Oracle データベース アダプターを使用して生成されたスキーマをマップ[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。  
   
-    1.  BizTalk マッパーは、BizTalk プロジェクトに追加します。 BizTalk プロジェクトを右クリックし、[**追加**、] をクリック**新しい項目の**します。  
+   1. BizTalk マッパーは、BizTalk プロジェクトに追加します。 BizTalk プロジェクトを右クリックし、[**追加**、] をクリック**新しい項目の**します。  
   
-         **新しい項目の追加**ダイアログ ボックスで、左ペインで、**マップ ファイル**です。 右側のウィンドウから次のように選択します。**マップ**です。 など、マップの名前を指定**ResponseMap.btm**です。 **[追加]** をクリックします。  
+       **新しい項目の追加**ダイアログ ボックスで、左側のウィンドウから**マップ ファイル**します。 右側のウィンドウから次のように選択します。**マップ**します。 マップの名前を指定します。 **ResponseMap.btm**します。 **[追加]** をクリックします。  
   
-    2.  送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。  
+   2. 送信元スキーマ ペインで、次のようにクリックします。**ソース スキーマを開く**します。  
   
-    3.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの応答メッセージのスキーマを選択して[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.OracleDBBindingSchema*です。 **[OK]** をクリックします。  
+   3. **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、WCF ベースの応答メッセージのスキーマを選択して[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.OracleDBBindingSchema*します。 **[OK]** をクリックします。  
   
-    4.  **送信元スキーマのルート ノード**ダイアログ ボックスで、 *InsertResponse*  をクリック**OK**です。  
+   4. **送信元スキーマのルート ノード**ダイアログ ボックスで、 *InsertResponse*  をクリック**OK**します。  
   
-    5.  送信先スキーマ ペインで、をクリックして**送信先スキーマを開く**です。  
+   5. 送信先スキーマ ペインで、次のようにクリックします。**送信先スキーマを開く**します。  
   
-    6.  **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**、vPrev Oracle データベース アダプターの応答メッセージのスキーマを選択します。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*です。 **[OK]** をクリックします。  
+   6. **BizTalk 型の選択** ダイアログ ボックスで、プロジェクト名を展開し、展開**スキーマ**vPrev の Oracle データベース アダプターの応答メッセージのスキーマを選択します。 このチュートリアルでは、次のように選択します。 *Oracle_Migration.CUSTOMERService_CUSTOMER_x5d*します。 **[OK]** をクリックします。  
   
-    7.  **ターゲット スキーマのルート ノード**ダイアログ ボックスで、 *InsertResponse*、順にクリック**OK**です。  
+   7. **ターゲット スキーマのルート ノード**ダイアログ ボックスで、 *InsertResponse*、順にクリックします**OK**します。  
   
-    8.  わかります WCF ベースに準拠した応答メッセージのスキーマ[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]追加が含まれています*InsertResult*要素。 スキーマとマップから削除する必要があります、 *InsertResponse*両方のスキーマ内の要素。  
+   8. 表示になります WCF ベースに準拠した応答メッセージのスキーマ[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]追加を含む*InsertResult*要素。 スキーマとマップから削除する必要があります、 *InsertResponse*両方のスキーマ内の要素。  
   
-         そのためから、**ツールボックス**、ドラッグ、**文字列左スペース削除**functoid マッパー グリッドの上にドロップします。 接続、 **InsertResponse** functoid への送信元スキーマ内の要素。 同様に、接続、 **InsertResponse**を functoid に送信先スキーマ内の要素。 次の図は、functoid を使用して 2 つの要素をマップする方法を示しています。  
+       、**ツールボックス**、ドラッグ、**文字列左スペース削除**functoid し、マッパーのグリッドにドロップします。 接続、 **InsertResponse** functoid への送信元スキーマ内の要素。 同様に、接続、 **InsertResponse**を functoid に送信先スキーマ内の要素。 次の図は、functoid を使用して 2 つの要素をマップする方法を示しています。  
   
-         ![Oracle データベースから受信した応答にマップする](../../adapters-and-accelerators/adapter-oracle-database/media/7fe18f5b-100f-4fe2-ac92-c111629d7fe9.gif "7fe18f5b-100f-4fe2-ac92-c111629d7fe9")  
+       ![Oracle データベースから受信した応答にマップする](../../adapters-and-accelerators/adapter-oracle-database/media/7fe18f5b-100f-4fe2-ac92-c111629d7fe9.gif "7fe18f5b-100f-4fe2-ac92-c111629d7fe9")  
   
-        > [!NOTE]
-        >  詳細については、次を参照してください。、**文字列左スペース削除 Functoid** [!INCLUDE[ui-guidance-developers-reference](../../includes/ui-guidance-developers-reference.md)]です。
+      > [!NOTE]
+      >  詳細については、次を参照してください。、**文字列左トリミング Functoid** [!INCLUDE[ui-guidance-developers-reference](../../includes/ui-guidance-developers-reference.md)]します。
   
-    9. マップを保存します。  
+   9. マップを保存します。  
   
-5.  保存し、BizTalk ソリューションをビルドします。 ソリューションを右クリックし、をクリックして**ソリューションのビルド**です。  
+5. 保存し、BizTalk ソリューションをビルドします。 クリックして、ソリューションを右クリックして**ソリューションのビルド**します。  
   
-6.  ソリューションを展開する。 ソリューションを右クリックし、をクリックして**ソリューションの配置**です。  
+6. ソリューションを展開する。 クリックして、ソリューションを右クリックして**ソリューションの配置**します。  
   
 ## <a name="next-steps"></a>次の手順  
- Wcf-custom 送信ポートを作成および構成」の説明に従って、この手順で作成したマップを使用するように[手順 2: SQL アダプターを使用して Biztalk Server 管理コンソールでオーケストレーションを構成する](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-orchestration-to-use-the-sql-adapter-in-biztalk-server.md)です。  
+ Wcf-custom 送信ポートを作成および構成」の説明に従って、この手順で作成したマップを使用するように[手順 2: SQL アダプターを使用して Biztalk Server 管理コンソールでオーケストレーションを構成](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-orchestration-to-use-the-sql-adapter-in-biztalk-server.md)します。  
   
 ## <a name="see-also"></a>参照  
  [チュートリアル: BizTalk プロジェクトを移行します。](https://msdn.microsoft.com/library/dd788186(v=bts.80).aspx)

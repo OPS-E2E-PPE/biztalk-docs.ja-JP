@@ -1,5 +1,5 @@
 ---
-title: メッセージ スキーマを ExecuteNonQuery、ExecuteReader、および ExecuteScalar Operations2 |Microsoft ドキュメント
+title: ExecuteNonQuery、ExecuteReader、ExecuteScalar Operations2 のメッセージ スキーマ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,40 +12,40 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0aaef682ad0528e8d22e043da94dc31e4f723f24
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ede2d471ce935d11286c49cc7cfb53c0e7ea9d92
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222474"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37001427"
 ---
-# <a name="message-schemas-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作のメッセージ スキーマ
-[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] SQL Server の任意の SQL ステートメントを実行するルート レベルで ExecuteNonQuery、ExecuteReader、および ExecuteScalar 送信操作を公開します。  
+# <a name="message-schemas-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のメッセージ スキーマ
+[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] SQL Server の任意の SQL ステートメントを実行する、ルート レベルで ExecuteNonQuery、ExecuteReader、executescalar 送信操作を公開します。  
   
  詳細については。  
   
--   これらの操作を参照してください[ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)です。  
+- これらの操作を参照してください[ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)します。  
   
--   使用してこれらの操作を実行する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[ExecuteReader、ExecuteScalar、または BizTalk Server を使用して SQL の ExecuteNonQuery Operations](../../adapters-and-accelerators/adapter-sql/executereader-executescalar-or-executenonquery-in-sql-server-using-biztalk.md)です。  
+- 使用してこれらの操作を実行する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[ExecuteReader、executescalar、ExecuteNonQuery 操作では、BizTalk Server を使用して SQL](../../adapters-and-accelerators/adapter-sql/executereader-executescalar-or-executenonquery-in-sql-server-using-biztalk.md)します。  
   
-## <a name="message-structure-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作のメッセージの構造  
- これらの操作でメッセージが、要求-応答メッセージ交換パターンに従うし、次の表は、これらの要求と応答メッセージの構造を示しています。  
+## <a name="message-structure-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のメッセージの構造  
+ これらの操作でメッセージが、要求-応答メッセージ交換パターンに従うし、次の表は、これらの要求と応答メッセージの構造を示します。  
   
-|操作|XML メッセージ|Description|  
+|演算|XML メッセージ|説明|  
 |---------------|-----------------|-----------------|  
 |ExecuteNonQuery 要求|`<ExecuteNonQuery xmlns="http://schemas.microsoft.com/Sql/2008/05/GenericTableOp/">    <Query>[PL/SQL STATEMENT1];[PL/SQL STATEMENT2];…</Query>  </ExecuteNonQuery>`|内で、`<Query>`タグをセミコロンで区切られた複数の PL/SQL ステートメントを指定することができます。|  
-|ExecuteNonQuery 応答|`<?xml version="1.0" encoding="utf-8" ?> <ExecuteNonQueryResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/GenericTableOp/">   <ExecuteNonQueryResult>[value]</ExecuteNonQueryResult> </ExecuteNonQueryResponse>`|UPDATE、INSERT、および DELETE のステートメントの`[value]`PL/SQL ステートメントの影響を受ける行の数を表す、 *ExecuteNonQuery 要求*メッセージ。 その他のすべての種類のステートメント、 `[value]` -1 です。|  
+|ExecuteNonQuery 応答|`<?xml version="1.0" encoding="utf-8" ?> <ExecuteNonQueryResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/GenericTableOp/">   <ExecuteNonQueryResult>[value]</ExecuteNonQueryResult> </ExecuteNonQueryResponse>`|UPDATE、INSERT、および DELETE のステートメントの`[value]`PL/SQL ステートメントによって影響を受ける行の数を表す、 *ExecuteNonQuery 要求*メッセージ。 その他のすべての種類のステートメント、`[value]`は-1 です。|  
 |ExecuteReader 要求|`<ExecuteReader xmlns="http://schemas.microsoft.com/Sql/2008/05/GenericTableOp/">   <Query>[PL/SQL STATEMENT1];[PL/SQL STATEMENT2];…</Query> </ExecuteReader>`|内で、`<Query>`タグをセミコロンで区切られた複数の PL/SQL ステートメントを指定することができます。|  
-|ExecuteReader 応答|`<?xml version="1.0" encoding="utf-8" ?>  <ExecuteReaderResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/GenericTableOp/">   <ExecuteReaderResult>     <DataSet>       <Any>[value]</Any>       <Any>[value]</Any>       …     </DataSet>   </ExecuteReaderResult> </ExecuteReaderResponse>`|結果セットで実行される PL/SQL ステートメントの応答メッセージでは、 *ExecuteReader 要求*メッセージ、およびデータセットの配列として返されます。 データセットについてで「データセット クラス」を参照してください。 [http://go.microsoft.com/fwlink/?LinkID=196853](http://go.microsoft.com/fwlink/?LinkID=196853)です。|  
+|ExecuteReader 応答|`<?xml version="1.0" encoding="utf-8" ?>  <ExecuteReaderResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/GenericTableOp/">   <ExecuteReaderResult>     <DataSet>       <Any>[value]</Any>       <Any>[value]</Any>       …     </DataSet>   </ExecuteReaderResult> </ExecuteReaderResponse>`|結果セットで実行される PL/SQL ステートメントの応答メッセージでは、 *ExecuteReader 要求*メッセージ、およびデータセットの配列として返されます。 データセットの詳細についてを参照してください「DataSet クラス」 [ http://go.microsoft.com/fwlink/?LinkID=196853](http://go.microsoft.com/fwlink/?LinkID=196853)します。|  
 |ExecuteScalar 要求|`<ExecuteScalar xmlns="http://schemas.microsoft.com/Sql/2008/05/GenericTableOp/">   <Query>[PL/SQL STATEMENT1];[PL/SQL STATEMENT2];…</Query> </ExecuteScalar>`|内で、`<Query>`タグをセミコロンで区切られた複数の PL/SQL ステートメントを指定することができます。|  
 |ExecuteScalar 応答|`<?xml version="1.0" encoding="utf-8" ?> <ExecuteScalarResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/GenericTableOp/">   <ExecuteScalarResult>[value]</ExecuteScalarResult> </ExecuteScalarResponse>`|`[value]` PL/SQL ステートメントによって返される結果セットの最初の行の最初の列の値を表す、 *ExecuteScalar 要求*メッセージ。|  
   
- [PL/SQL ステートメント] を実行する PL/SQL ステートメント全体を = です。  
+ [PL]/[SQL ステートメント] = PL/SQL ステートメント全体を実行します。  
   
-## <a name="message-action-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作のメッセージのアクション  
- 次の表は、ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作で使用されるメッセージのアクションを示します。  
+## <a name="message-action-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のメッセージのアクション  
+ ExecuteNonQuery、ExecuteReader、executescalar 操作によって使用されるメッセージのアクションを次の表に示します。  
   
-|操作|操作|  
+|演算|操作|  
 |---------------|------------|  
 |ExecuteNonQuery 要求|GenericOp/ExecuteNonQuery|  
 |ExecuteNonQuery 応答|GenericOp/ExecuteNonQuery/応答|  
@@ -55,4 +55,4 @@ ms.locfileid: "22222474"
 |ExecuteScalar 応答|GenericOp/ExecuteScalar/応答|  
   
 ## <a name="see-also"></a>参照  
- [メッセージと BizTalk Adapter for SQL Server のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)
+ [メッセージと BizTalk adapter for SQL Server のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)

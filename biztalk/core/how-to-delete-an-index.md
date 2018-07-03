@@ -1,5 +1,5 @@
 ---
-title: インデックスを削除する方法 |Microsoft ドキュメント
+title: インデックスを削除する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,28 +16,28 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9934c333699b853a3e10a0e5ecf212acf17fa6c6
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: aaafdf9515849fb84d569fb50a3e7117f30969b3
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25970472"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36978331"
 ---
 # <a name="how-to-delete-an-index"></a>インデックスを削除する方法
-管理者を使用して、 **delete インデックス**特定のチェックポイントで指定したアクティビティのインデックスを削除するコマンド。  
+管理者を使用して、**インデックスを削除**特定のチェックポイントで指定したアクティビティのインデックスを削除するコマンド。  
   
 ### <a name="to-delete-an-index-on-an-activity"></a>アクティビティのインデックスを削除するには  
   
-1.  次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-2.  コマンド プロンプトで「[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking」と入力して、追跡フォルダーに移動し、 **Enter**キーを押します。  
+2. コマンド プロンプトで「[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking」と入力して、追跡フォルダーに移動し、 **Enter**キーを押します。  
   
-3.  型**bm delete インデックス-indexname:\<インデックス名\>-アクティビティ:\<アクティビティ名\>** です。  
+3. 型**bm インデックスを削除-indexname:\<インデックス名\>-アクティビティ:\<アクティビティ名\>** します。  
   
-    > [!NOTE]
-    >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
+   > [!NOTE]
+   >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-4.  **Enter**キーを押します。  
+4. **Enter**キーを押します。  
   
 ## <a name="see-also"></a>参照  
  [BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md)   

@@ -1,5 +1,5 @@
 ---
-title: '手順 5: エコー アダプターのメタデータ検索ハンドラーを実装する |Microsoft ドキュメント'
+title: '手順 5: エコー アダプターのメタデータ検索ハンドラーの実装 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8d241499e10a944eb1941b680bc73b97ce6ffd93
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 29768fa47fd26f32308d517f175d906ec088ff7b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22226402"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37004091"
 ---
-# <a name="step-5-implement-the-metadata-search-handler-for-the-echo-adapter"></a>手順 5: エコー アダプターのメタデータの検索ハンドラーを実装します。
+# <a name="step-5-implement-the-metadata-search-handler-for-the-echo-adapter"></a>手順 5: エコー アダプターのメタデータ検索ハンドラーを実装します。
 ![手順 5. の 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-5of9.gif "Step_5of9")  
   
  **所要時間:** 30 分  
   
- チュートリアルのこの手順では、エコー アダプターの検索機能を実装します。 参照とは異なり、検索はオプションです。 よると、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、検索機能をサポートするために実装する必要があります、`Microsoft.ServiceModel.Channels.Common.IMetadataSearchHandler`インターフェイスです。 エコー アダプターの場合、 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] EchoAdapterMetadataSearchHandler と呼ばれる 1 つの派生クラスが自動的に生成されます。  
+ このチュートリアルの手順では、エコー アダプターの検索機能を実装します。 参照とは異なり、検索は省略可能です。 に従って、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、検索機能をサポートするために実装する必要があります、`Microsoft.ServiceModel.Channels.Common.IMetadataSearchHandler`インターフェイス。 エコー アダプターの場合、 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] EchoAdapterMetadataSearchHandler と呼ばれる 1 つの派生クラスが自動的に生成されます。  
   
- 最初に、このインターフェイスを実装する方法の理解を深めるために EchoAdapterMetadataSearchHandler クラスを更新する設定する方法について`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクト、およびで、検索結果の表示方法、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]ツールです。  
+ 最初に、このインターフェイスを実装する方法の理解を深めるために、EchoAdapterMetadataSearchHandler クラスを更新する方法を設定する`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクト、および検索結果を表示する方法、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]ツール。  
   
 ## <a name="prerequisites"></a>前提条件  
- この手順を開始する前に完了[手順 4: エコー アダプターのメタデータ参照ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)です。 次のクラスについて明確に理解も必要です。  
+ この手順を開始する前に完了[手順 4: エコー アダプターのメタデータ参照ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)します。 次のクラスについて明確に理解も必要です。  
   
 -   `Microsoft.ServiceModel.Channels.MetadataRetrievalNode`
   
@@ -47,19 +47,19 @@ public interface IMetadataSearchHandler : IConnectionHandler, IDisposable
 }  
 ```  
   
- `Microsoft.ServiceModel.Channels.Common.IMetadataSearchHandler.Search%2A`メソッドの配列を返します`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクトの検索条件をベースにします。 Search メソッドのパラメーターの定義は、次の表で説明します。  
+ `Microsoft.ServiceModel.Channels.Common.IMetadataSearchHandler.Search%2A`メソッドの配列を返します`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`検索条件に基づいてオブジェクト。 Search メソッドのパラメーターの定義は、次の表で説明します。  
   
 |**パラメーター**|**定義**|  
 |-------------------|--------------------|  
-|NodeId|検索を開始するノード ID。 場合は null または空の文字列 ("")、操作をルート ノード (「/」) から取得されます。|  
+|nodeId|検索を開始するノード ID。 場合は null または空の文字列 ("")、操作は、ルート ノード (「/」) から取得されます。|  
 |searchCriteria|検索条件は、アダプターに固有です。 検索条件が指定されていない場合、アダプターは、すべてのノードを返す必要があります。|  
-|maxChildNodes|返される結果のノードの最大数。 Int32.Max を使用して、結果のすべてのノードを取得します。<br /><br /> エコー アダプターによってサポートされていません。|  
-|timeout|操作が完了する許可された最大時間。<br /><br /> エコー アダプターによってサポートされていません。|  
+|maxChildNodes|返される結果のノードの最大数。 Int32.Max を使用すると、結果のすべてのノードを取得できます。<br /><br /> エコー アダプターによってサポートされていません。|  
+|timeout|操作が完了するに使用できる最大時間。<br /><br /> エコー アダプターによってサポートされていません。|  
   
- 検索結果、アダプターは、カテゴリのノードまたは操作のノード、またはその両方を返すを選択できます。 アダプターはまで検索機能の種類をサポートしています。  
+ 検索の結果をカテゴリのノードまたはノードの操作、またはその両方を返す、アダプターを選択できます。 アダプターが最大検索機能の種類をサポートしています。  
   
 ## <a name="echo-adapter-metadata-search"></a>エコー アダプター メタデータの検索  
- によっては、ターゲット システムのカテゴリと操作の配列を作成する方法はたくさんあります`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`で返されるオブジェクト。 エコー アダプター検索機能を実装する方法は、次の一覧には、そのノード ID を持つすべての操作を経由します。  
+ によって、ターゲット システムのカテゴリと操作の配列を構築する方法はたくさんあります`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクトを返します。 エコー アダプターは、検索機能を実装する方法は、次の一覧にそのノード ID を持つすべての操作を経由する場合します。  
   
 ```  
 Echo/OnReceiveEcho, inbound operation  
@@ -68,44 +68,44 @@ Echo/EchoGreetings, outbound operation
 Echo/EchoGreetingFromFile, outbound operation  
 ```  
   
--   作成し、ノード ID には、検索条件が一致すると、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクトの操作のノード ID を使用し、値を持つプロパティを割り当てます。 例を次に示します。  
+- ノード ID には、検索条件が一致すると、作成、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクト、操作のノード ID を使用し、値を持つプロパティを割り当てます。 例を次に示します。  
   
-    ```  
-    MetadataRetrievalNode nodeInbound = new MetadataRetrievalNode("Echo/OnReceiveEcho"); //create the MetadataRetrievalNode using the operation's node ID.  
-    nodeInbound.DisplayName = "OnReceiveEcho"; //The Display Name shown in the Name column of the Add Adapter Service Reference Visual Studio Plug-in  
-    nodeInbound.Description = "This operation echoes the location and length of a file dropped in the specified file system.";  //The Description shown as the tool tip in the Add Adapter Service Visual Studio Plug-in  
-    nodeInbound.Direction = MetadataRetrievalNodeDirections.Inbound;    //It is an inbound operation  
-    nodeInbound.IsOperation = true;  //It is an operation, not category.  
-    ```  
+  ```  
+  MetadataRetrievalNode nodeInbound = new MetadataRetrievalNode("Echo/OnReceiveEcho"); //create the MetadataRetrievalNode using the operation's node ID.  
+  nodeInbound.DisplayName = "OnReceiveEcho"; //The Display Name shown in the Name column of the Add Adapter Service Reference Visual Studio Plug-in  
+  nodeInbound.Description = "This operation echoes the location and length of a file dropped in the specified file system.";  //The Description shown as the tool tip in the Add Adapter Service Visual Studio Plug-in  
+  nodeInbound.Direction = MetadataRetrievalNodeDirections.Inbound;    //It is an inbound operation  
+  nodeInbound.IsOperation = true;  //It is an operation, not category.  
+  ```  
   
--   コレクションにオブジェクトを追加したり、 `Microsoft.ServiceModel.Channels.MetadataRetrievalNode`s、たとえば、  
+- コレクションにオブジェクトを追加し、 `Microsoft.ServiceModel.Channels.MetadataRetrievalNode`s、たとえば、  
   
-    ```  
-    resultList.Add(nodeInbound);  
-    ```  
+  ```  
+  resultList.Add(nodeInbound);  
+  ```  
   
--   最後に配列形式のコレクションを返します。  
+- 最後に配列形式のコレクションを返します。  
   
-    ```  
-    return resultList.ToArray();  
-    ```  
+  ```  
+  return resultList.ToArray();  
+  ```  
   
- 使用することができます、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]と[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続ベースの検索を使用可能な操作を実行するためのツールです。 たとえば、次の図を検索条件が、文字列の場合**Greeting**、検索、 **EchoGreetings**と**EchoGreetingFromFile**操作です。  
+  使用することができます、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]と[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]接続ベースの検索を使用可能な操作を実行するためのツール。 たとえば、次の図を示します文字列の検索条件の場合**Greeting**、検索、 **EchoGreetings**と**EchoGreetingFromFile**操作です。  
   
- ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/874c046a-590f-4047-9b9c-bb8074664755.gif "874c046a-590f-4047-9b9c-bb8074664755")  
+  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/874c046a-590f-4047-9b9c-bb8074664755.gif "874c046a-590f-4047-9b9c-bb8074664755")  
   
- 一致するものが見つからない場合、どちらのツールは次の図に示すように、エラー メッセージを返します。  
+  一致が検出されない場合、いずれかのツールは次の図に示すように、エラー メッセージを返します。  
   
- ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/cb1f79a2-a63d-4828-9dce-905c026cd1dc.gif "cb1f79a2-a63d-4828-9dce-905c026cd1dc")  
+  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/cb1f79a2-a63d-4828-9dce-905c026cd1dc.gif "cb1f79a2-a63d-4828-9dce-905c026cd1dc")  
   
 ## <a name="implementing-the-imetadatasearchhandler"></a>IMetadataSearchHandler を実装します。  
- 実装、`Microsoft.ServiceModel.Channels.Common.IMetadataSearchHandler.Search%2A`のメソッド、`Microsoft.ServiceModel.Channels.Common.IMetadataSearchHandler`インターフェイスです。 操作の表示名には、検索条件が一致すると場合、は、作成、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`その操作のオブジェクトし、型の配列をそのオブジェクトを追加、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクト。  
+ 実装、`Microsoft.ServiceModel.Channels.Common.IMetadataSearchHandler.Search%2A`のメソッド、`Microsoft.ServiceModel.Channels.Common.IMetadataSearchHandler`インターフェイス。 操作の表示名が検索条件に一致する場合は作成、 `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` 、その操作のオブジェクトし、の配列にそのオブジェクトを追加、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクト。  
   
-#### <a name="to-update-the-echoadaptermetadatasearchhandler-class"></a>EchoAdapterMetadataSearchHandler クラスの更新  
+#### <a name="to-update-the-echoadaptermetadatasearchhandler-class"></a>EchoAdapterMetadataSearchHandler クラスを更新するには  
   
 1.  ソリューション エクスプ ローラーで、 **EchoAdapterMetadataSearchHandler.cs**ファイル。  
   
-2.  Visual Studio エディターで、内部、**検索**メソッド、既存のロジックを次に置き換えます。 このロジックを作成、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`エコー/OnReceiveEcho が指定した検索条件に一致するかどうかのオブジェクトします。  
+2.  Visual Studio エディターでの内部、**検索**メソッドを次に、既存のロジックを置き換えます。 このロジックを作成、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`エコー/OnReceiveEcho が指定した検索条件と一致するかどうかのオブジェクトします。  
   
     ```csharp  
     List<MetadataRetrievalNode> resultList = new List<MetadataRetrievalNode>();  
@@ -120,7 +120,7 @@ Echo/EchoGreetingFromFile, outbound operation
     }  
     ```  
   
-3.  作成する次のロジックの追加を繰り返して、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`エコー/EchoStrings が指定した検索条件に一致するかどうかのオブジェクトします。  
+3.  作成するには、次のロジックの追加を続行する`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`エコー/EchoStrings が指定した検索条件と一致するかどうかのオブジェクトします。  
   
     ```csharp  
     if ("EchoStrings".ToLower().Contains(searchCriteria.ToLower()))  
@@ -134,7 +134,7 @@ Echo/EchoGreetingFromFile, outbound operation
     }  
     ```  
   
-4.  作成する次のロジックの追加を繰り返して、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`エコー/EchoGreetings が指定した検索条件に一致するかどうかのオブジェクトします。  
+4.  作成するには、次のロジックの追加を続行する`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`エコー/EchoGreetings が指定した検索条件と一致するかどうかのオブジェクトします。  
   
     ```csharp  
     if ("EchoGreetings".ToLower().Contains(searchCriteria.ToLower()))  
@@ -148,7 +148,7 @@ Echo/EchoGreetingFromFile, outbound operation
         }  
     ```  
   
-5.  作成する次のコードの追加を繰り返して、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`エコー/EchoGreetingFromFile が指定した検索条件に一致するかどうかのオブジェクトします。  
+5.  作成する次のコードの追加を続行する`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`エコー/EchoGreetingFromFile が指定した検索条件と一致するかどうかのオブジェクトします。  
   
     ```csharp  
     if ("EchoCustomGreetingFromFile".ToLower().Contains(searchCriteria.ToLower()))  
@@ -162,26 +162,26 @@ Echo/EchoGreetingFromFile, outbound operation
     }  
     ```  
   
-6.  配列を返すには、次のコードの追加を繰り返して`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクト。  
+6.  配列を返すには、次のコードの追加を続行`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクト。  
   
     ```csharp  
     return resultList.ToArray();  
     ```  
   
-7.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。  
+7.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**します。  
   
-8.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。 プロジェクトを正常にコンパイルする必要があります。 以外の場合は、上記のすべてのステップに従っていることを確認します。  
+8.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。 プロジェクトを正常にコンパイルする必要があります。 そうでない場合は、上記のすべての手順に従っていることを確認します。  
   
     > [!NOTE]
-    >  これで作業が保存されました。 安全にこの時点で Visual Studio を終了したり、次の手順に進みます[手順 6: エコー アダプターのメタデータを解決するハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)です。  
+    >  これで作業が保存されました。 安全にこの時点で Visual Studio を閉じて、次の手順に進むまたは[手順 6: エコー アダプターのメタデータ解決ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)します。  
   
-## <a name="what-did-i-just-do"></a>でしただけは何ですか。  
- 単に検索エコー アダプターの機能を実装することで、メタデータを実装して、`Microsoft.ServiceModel.Channels.Common.IMetadataSearchHandler.Search%2A`のメソッド、`Microsoft.ServiceModel.Channels.Common.IMetadataSearchHandler`インターフェイスです。 具体的には、作成した、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクトの配列を返すし、条件を一致するすべての操作に、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクト。  
+## <a name="what-did-i-just-do"></a>でしただけ何か。  
+ だけ、エコー アダプターの機能を実装することで検索するメタデータが実装されている、`Microsoft.ServiceModel.Channels.Common.IMetadataSearchHandler.Search%2A`のメソッド、`Microsoft.ServiceModel.Channels.Common.IMetadataSearchHandler`インターフェイス。 具体的には、作成した、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクトのすべての操作を条件に一致しての配列が返されます、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクト。  
   
 ## <a name="next-steps"></a>次の手順  
- 機能、および送信および受信のメッセージ交換の機能を解決するメタデータを実装します。 最後に、ビルドされ、エコー アダプターを展開します。  
+ 機能、および送信および受信のメッセージ交換機能を解決するメタデータを実装します。 最後に、ビルドされ、エコー アダプターを展開します。  
   
 ## <a name="see-also"></a>参照  
- [手順 4: エコー アダプターのメタデータ参照のハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)   
- [手順 6: エコー アダプター メタデータの解決ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)   
- [チュートリアル 1: エコー アダプターを開発します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+ [手順 4: エコー アダプターのメタデータ参照ハンドラーを実装する.](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)   
+ [手順 6: エコー アダプターのメタデータ解決ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)   
+ [チュートリアル 1: エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

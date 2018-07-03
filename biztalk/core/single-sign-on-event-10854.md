@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10854 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10854 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 42f9e9e761689b2ed21ec37acdbb8a63f1f88070
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: d1f89ef2727933e72de1e9d759bd91dc507a0954
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "22277578"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36994406"
 ---
 # <a name="single-sign-on-event-10854"></a>シングル サインオン: イベント 10854
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10854|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|ENTSSO_E_INVALID_STRING_FORMAT|  
-|メッセージ テキスト|この関数の文字列形式が正しくありません。|  
+|                 |                                                            |
+|-----------------|------------------------------------------------------------|
+|  製品名   |                 エンタープライズ シングル サインオン                  |
+| 製品バージョン | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    イベント ID     |                           10854                            |
+|  イベント ソース   |                           ENTSSO                           |
+|    コンポーネント    |                            なし                             |
+|  シンボル名  |               ENTSSO_E_INVALID_STRING_FORMAT               |
+|  メッセージ テキスト   |     この関数の文字列形式が正しくありません。      |
   
 ## <a name="explanation"></a>説明  
  この関数の文字列形式が正しくありません。  
@@ -64,7 +64,7 @@ ms.locfileid: "22277578"
   
  例: rc/2/#@/  
   
- ('#' 文字を削除し、' @' のパスワードから 'C@t#'"Ct"に)  
+ ('#' 文字を削除し、' @' からパスワード - 'C@t#' ct)  
   
  sc = 文字を置換します - 続けて文字数、置換前の文字、置換語の文字を指定します  
   
@@ -88,7 +88,7 @@ ms.locfileid: "22277578"
   
  (パスワードの長さが 10 文字以上でない場合、全体が 10 文字になるまで、文字列の末尾に文字 "$" を挿入します)  
   
- ("Cat"になります $$$ ')  
+ ('Cat$ $$' には ' cat')  
   
  tr = 切り捨てます - 文字列の長さを制限します - 続けて文字数を指定します  
   

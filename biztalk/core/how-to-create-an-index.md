@@ -1,5 +1,5 @@
 ---
-title: インデックスを作成する方法 |Microsoft ドキュメント
+title: インデックスを作成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,26 +18,26 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61c0393beae4883359d71915543b629e41c5f6ec
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b15fd07049ee31162b2ed69f38a99d26100e08c4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25969288"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36989699"
 ---
 # <a name="how-to-create-an-index"></a>インデックスを作成する方法
 管理者を使用して、**インデックスの作成**コマンドを特定のチェックポイントで指定したアクティビティにインデックスを作成します。  
   
 ### <a name="to-create-an-index-on-an-activity"></a>アクティビティにインデックスを作成するには  
   
-1.  コマンド プロンプトから次のディレクトリを参照:[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡します。  
+1. コマンド プロンプトから次のディレクトリを参照:[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡します。  
   
-2.  型**bm インデックスの作成-indexname:\<インデックス名\>-アクティビティ:\<アクティビティ名\>-チェックポイント:\<checkpoint1\>** です。  
+2. 型**bm インデックスの作成-indexname:\<インデックス名\>-アクティビティ:\<アクティビティ名\>-チェックポイント:\<チェックポイント 1\>** します。  
   
-    > [!NOTE]
-    >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
+   > [!NOTE]
+   >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-3.  **Enter**キーを押します。  
+3. **Enter**キーを押します。  
   
 ## <a name="see-also"></a>参照  
  [BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md)   

@@ -1,5 +1,5 @@
 ---
-title: Microsoft.BizTalk.DefaultPipelines の参照 |Microsoft ドキュメント
+title: Microsoft.BizTalk.DefaultPipelines の参照 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -26,50 +26,50 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ad7cad78e3e8606371a5fa49673297cf590ddbe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: de2ec54b34a4e6d92f471db7fe9ad5dbc7933014
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263410"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022056"
 ---
 # <a name="microsoftbiztalkdefaultpipelines-reference"></a>Microsoft.BizTalk.DefaultPipelines の参照
 **Microsoft.BizTalk.DefaultPipelines**名前空間には、次のパイプラインが含まれています。  
   
--   XMLReceive  
+- XMLReceive  
   
--   PassThruReceive  
+- PassThruReceive  
   
--   XMLTransmit  
+- XMLTransmit  
   
--   PassThruTransmit  
+- PassThruTransmit  
   
- パイプラインとは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で送受信されるメッセージを処理するために 1 つ以上のステージを定義およびリンクする、ソフトウェア コンポーネントです。 ステージは、エンコードやデコード、アセンブルや逆アセンブル、暗号化や復号化などの機能を備えています。 これらの機能は、特定の順序で実装されます。 パイプライン デザイナーを使用して、受信および送信パイプラインを作成できます。  
+  パイプラインとは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で送受信されるメッセージを処理するために 1 つ以上のステージを定義およびリンクする、ソフトウェア コンポーネントです。 ステージは、エンコードやデコード、アセンブルや逆アセンブル、暗号化や復号化などの機能を備えています。 これらの機能は、特定の順序で実装されます。 パイプライン デザイナーを使用して、受信および送信パイプラインを作成できます。  
   
- BizTalk プロジェクトに含まれる既定のパイプライン参照を使用してドキュメントのすべての型を処理できる、 **PassThruReceive**と**PassThruTransmit**パイプライン。  
+  BizTalk プロジェクトに含まれる既定のパイプライン参照を使用してドキュメントのすべての種類を処理できる、 **PassThruReceive**と**PassThruTransmit**パイプライン。  
   
- 既定のパイプラインに含まれる既定のコンポーネントを次に示します。 これらは、各パイプラインにおけるコンポーネントの既定の順序も示しています。 コンポーネントは必要に応じて追加したり削除したりできます。  
+  既定のパイプラインに含まれる既定のコンポーネントを次に示します。 これらは、各パイプラインにおけるコンポーネントの既定の順序も示しています。 コンポーネントは必要に応じて追加したり削除したりできます。  
   
- 既定の XMLReceive パイプラインに含まれる既定のコンポーネントは次のとおりです。  
+  既定の XMLReceive パイプラインに含まれる既定のコンポーネントは次のとおりです。  
   
--   復号化  
+- 復号化  
   
--   デコーダー  
+- デコーダー  
   
--   逆アセンブラー  
+- 逆アセンブラー  
   
--   検証コントロール  
+- 検証ツール  
   
--   パーティの解決  
+- パーティの解決  
   
- 既定の XMLTransmit パイプラインに含まれる既定のコンポーネントは次のとおりです。  
+  既定の XMLTransmit パイプラインに含まれる既定のコンポーネントは次のとおりです。  
   
--   アセンブラー  
+- アセンブラー  
   
--   エンコーダー  
+- エンコーダー  
   
--   暗号化  
+- 暗号化  
   
 ## <a name="see-also"></a>参照  
  [パイプライン デザイナーを使用してパイプラインを作成します。](../core/creating-pipelines-using-pipeline-designer.md)   
- [BizTalk プロジェクトに含まれる BizTalk Namespace 参照について](../core/about-biztalk-namespace-references-included-in-biztalk-projects.md)
+ [BizTalk プロジェクト内の BizTalk 名前空間参照について](../core/about-biztalk-namespace-references-included-in-biztalk-projects.md)

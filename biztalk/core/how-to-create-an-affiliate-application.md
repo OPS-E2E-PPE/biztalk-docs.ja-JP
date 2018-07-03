@@ -1,5 +1,5 @@
 ---
-title: 関連アプリケーションを作成する方法 |Microsoft ドキュメント
+title: 関連アプリケーションを作成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2f621faef7694a3dba7885bab5641e0baa58e8f
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 8775ea82843641600c9156d79afab49e6cd7c634
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "25969024"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37003107"
 ---
 # <a name="how-to-create-an-affiliate-application"></a>関連アプリケーションを作成する方法
 MMC スナップインまたはここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のアプリケーションを作成できます。 Windows 側開始 SSO の XML ファイルの例を次に示します。  
@@ -57,32 +57,32 @@ MMC スナップインまたはここで示すコマンドを使用すると、X
 > [!IMPORTANT]
 >  この作業を実行するには、SSO 管理者または SSO 関連管理者である必要があります。  
   
- 関連アプリケーションは作成した後で有効にする必要があります。 詳細については、次を参照してください。[関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md)です。  
+ 関連アプリケーションは作成した後で有効にする必要があります。 詳細については、次を参照してください。[関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md)します。  
   
 ### <a name="to-create-an-affiliate-application-using-the-mmc-snap-in"></a>MMC スナップインを使用して関連アプリケーションを作成するには  
   
-1.  **開始**  メニューのをクリックして **プログラム**, 、 をクリックして **Microsoft エンタープライズ シングル サインオン**, 、 をクリックし、 **SSO 管理**します。  
+1.  **開始** メニューのをクリックして**プログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、 をクリックし、 **SSO 管理**。  
   
-2.  ENTSSO MMC スナップインのスコープ ペインで、展開、 **エンタープライズ シングル サインオン** ノードです。  
+2.  ENTSSO MMC スナップインの [スコープ] ウィンドウで、**エンタープライズ シングル サインオン**ノード。  
   
-3.  右クリック **関連アプリケーション**, 、クリックして **アプリケーションの作成**します。  
+3.  右クリックして**関連アプリケーション**、 をクリックし、**アプリケーションの作成**です。  
   
-4.  指示に従って、 **エンタープライズ シングル サインオン アプリケーション ウィザード**します。  
+4.  指示に従って、**エンタープライズ シングル サインオン アプリケーション ウィザード**します。  
   
 ### <a name="to-create-an-affiliate-application-using-the-command-line"></a>コマンド ラインを使用して関連アプリケーションを作成するには  
   
-1.  **開始**  メニューのをクリックして **実行**, 、し、入力 **cmd**します。  
+1. **開始** メニューのをクリックして**実行**、し、入力**cmd**します。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
+2. コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \Program Files\Common \enterprise シングル サインオンします。  
   
-3.  型 * * ssomanage – createapps」と入力 *\<アプリケーション ファイル名\>* * *、どこで*\<アプリケーション ファイル名\>* XML ファイルです。  
+3. 型 * * ssomanage – createapps *\<アプリケーション ファイル名\>**<em>ここで、*\<アプリケーション ファイル名\></em>は XML ファイルです。  
   
-    > [!NOTE]
-    >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
+   > [!NOTE]
+   >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
 ## <a name="see-also"></a>参照  
  [SSO 関連アプリケーション](../core/sso-affiliate-applications.md)   
  [関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md)   
  [関連アプリケーションを削除する方法](../core/how-to-delete-an-affiliate-application.md)   
- [ユーザー マッピングを管理します。](../core/managing-user-mappings.md)   
+ [ユーザー マッピングの管理](../core/managing-user-mappings.md)   
  [関連アプリケーションの管理](../core/managing-affiliate-applications.md)

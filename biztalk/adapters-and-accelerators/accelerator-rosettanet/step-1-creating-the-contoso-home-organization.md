@@ -1,5 +1,5 @@
 ---
-title: '手順 1: Contoso ホーム組織の作成 |Microsoft ドキュメント'
+title: '手順 1: Contoso ホーム組織の作成 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,43 +16,47 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 06c1a9c4cf224055cc910e97902092fa476feb5a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 303048a06ce1acccac07d10bbe1ac53c32a08122
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25961448"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37000123"
 ---
 # <a name="step-1-creating-the-contoso-home-organization"></a>手順 1: Contoso ホーム組織の作成
-ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールを使用して、Contoso のホーム組織を作成します。  
-  
+この手順で、Microsoft® を使用して[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]Contoso ホーム組織を作成する管理コンソール。  
+
 ### <a name="to-start-the-btarn-management-console"></a>BTARN 管理コンソールを起動するには  
-  
--   Contoso のコンピューターでをクリックして**開始**、指す**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet** をクリックし、  **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールです。  
-  
+
+- Contoso コンピューターでは、次のようにクリックします**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet**。し**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソール。  
+
 ### <a name="to-create-the-home-organization"></a>ホーム組織を作成するには  
-  
-1.  [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]管理コンソールで、展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]を右クリックして**ホーム組織**、 をポイント**新規**、クリックして**ホーム組織**です。  
-  
-2.  新しいホーム組織のプロパティ ダイアログ ボックスで、**全般** タブで、次の操作します。  
-  
-    |プロパティ|目的|  
-    |--------------|----------------|  
-    |**名前**|型**CONTOSO**です。|  
-    |**[GBI]**|型**123456789**です。 **注:** を同じコンピューターでループバック チュートリアルを実行する場合は、異なる 123456789 以外は、[gbi] に値を入力する必要があります。|  
-    |**ホーム組織の分類**|選択**製造元**ドロップダウン リストからです。|  
-  
-3.  クリックして、**連絡先のプロパティ**タブをクリックし、次の操作します。  
-  
-    |プロパティ|目的|  
-    |--------------|----------------|  
-    |**連絡先の名前**|型**John doe さん**です。|  
-    |**E-mail Address**|型 **jdoe@contoso.com**です。|  
-    |**電話番号**|型**555-555-5555**です。|  
-    |**Fax 番号**|型**555-555-5555**です。|  
-    |**サプライ チェーン コード**|型**電子部品**です。|  
-  
-4.  **[OK]** をクリックします。  
-  
+
+1. [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]管理コンソールで、展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]、右クリックして**ホーム組織**、 をポイント**新規**、順にクリックします**ホーム組織**します。  
+
+2. 新しいホーム組織のプロパティ ダイアログ ボックスで、上、**全般** タブで、次の操作を行います。  
+
+
+   |               プロパティ               |                                                                              目的                                                                               |
+   |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |               **名前**               |                                                                           型**CONTOSO**します。                                                                           |
+   |               **GBI**                | 型**123456789**します。 **注:** を同じコンピューターで、Loopback チュートリアルを実行する gbi には異なる 123456789 以外の値を入力する必要があります。 |
+   | **ホーム組織の分類** |                                                           選択**製造元**ドロップダウン リストから。                                                            |
+
+
+3. をクリックして、**連絡先プロパティ**タブをクリックし、次の操作を行います。  
+
+
+   |       プロパティ        |               目的                |
+   |-----------------------|-----------------------------------------|
+   |   **連絡先の名前**    |           型**John Doe**します。            |
+   |  **E-mail Address**   | 型 <strong>jdoe@contoso.com</strong>します。 |
+   | **電話番号**  |         型**555-555-5555**します。          |
+   |    **Fax 番号**     |         型**555-555-5555**します。          |
+   | **サプライ チェーン コード** |     型**電子部品**します。     |
+
+
+4. **[OK]** をクリックします。  
+
 ## <a name="see-also"></a>参照  
  [手順 2: Fabrikam 取引先組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-fabrikam-partner-organization.md)

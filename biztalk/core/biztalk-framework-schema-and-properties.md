@@ -1,5 +1,5 @@
 ---
-title: BizTalk Framework スキーマおよびプロパティ |Microsoft ドキュメント
+title: BizTalk Framework スキーマおよびプロパティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,19 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 992f0fb9c66ee00cf425609db4231a57bf5782c4
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 75bbb67410f320cc566871f987f58ec3bae216b4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
-ms.locfileid: "22232722"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013059"
 ---
 # <a name="biztalk-framework-schema-and-properties"></a>BizTalk Framework スキーマおよびプロパティ
-**http://schemas.microsoft.com/BizTalk/2003/btf2-properties**名前空間には、BizTalk Framework 逆アセンブラー パイプライン コンポーネントのメッセージおよび部分コンテキストのプロパティを設定するために使用できるプロパティが含まれています。 BizTalk Framework 逆アセンブラー パイプライン コンポーネントは、これらのプロパティを使用して、作成されるメッセージの適切なヘッダーを生成します。 次の表は、BizTalk Framework のプロパティを示しています。  
+**http://schemas.microsoft.com/BizTalk/2003/btf2-properties**名前空間には、BizTalk Framework 逆アセンブラー パイプライン コンポーネントのメッセージおよび部分コンテキスト プロパティを設定するために使用できるプロパティが含まれています。 BizTalk Framework 逆アセンブラー パイプライン コンポーネントは、これらのプロパティを使用して、作成されるメッセージの適切なヘッダーを生成します。 次の表は、BizTalk Framework のプロパティを示しています。  
 
 ## <a name="properties-list"></a>[プロパティ]  
-|名前|型|Description|  
+
+|名前|型|説明|  
 |----------|----------|-----------------|  
 |**IsReliable**|xs:boolean|送信先から受信確認が送られるまで BizTalk Framework メッセージを再送するかどうかを示します。 このプロパティは、BizTalk Framework コンポーネントによって内部的に設定され、エンジンによって使用されます。 コードのこのプロパティの値を変更しないでください。|  
 |**PassAckThrough**|xs:boolean|破棄せずに BizTalk Framework 逆アセンブラー パイプライン コンポーネントを通じて受信確認のメッセージを渡すかどうかを示します。|  
@@ -48,7 +49,7 @@ ms.locfileid: "22232722"
 |**commitmentRct_decidedAt**|xs:string|この受信で確認されたドキュメントの処理決定のタイムスタンプを指定します。|  
 |**commitmentRct_decision**|xs:string|正または負の指定できる値と共に実際の決定を指定します。|  
 |**commitmentRct_commitmentCode**|xs:QName|処理決定に関する詳細な状態を指定する修飾名 (XSD 形式) を指定します。|  
-  
+
 ## <a name="see-also"></a>参照  
--  **メッセージ コンテキスト プロパティ** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]   
--  [ネイティブ パイプライン コンポーネントの構成](../core/configuring-native-pipeline-components.md)
+- **メッセージ コンテキスト プロパティ** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]   
+- [ネイティブ パイプライン コンポーネントの構成](../core/configuring-native-pipeline-components.md)

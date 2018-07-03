@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 2: SWIFTSchemas プロジェクト用の厳密な名前の BizTalk アセンブリの作成 |Microsoft ドキュメント'
+title: 'レッスン 2: SWIFTSchemas プロジェクト用の厳密な名前の BizTalk アセンブリを作成する |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,47 +15,47 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8ff979c7b6915f53ebc7144cf0774ab1ffb779a
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: d8e5b9ccc56b6b75ea574f956faac462e5b35dca
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "25961016"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995523"
 ---
 # <a name="lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project"></a>レッスン 2: SWIFTSchemas プロジェクト用の厳密な名前の BizTalk アセンブリを作成します。
-このレッスンでは、BizTalk アセンブリのコンパイルし、展開の基になる、厳密な名前を作成します。 厳密な名前のアセンブリには、いくつかのセキュリティの利点があります。  
+このレッスンでは、BizTalk アセンブリをコンパイルおよび展開する、厳密な名前を作成します。 厳密な名前のアセンブリには、いくつかのセキュリティの利点があります。  
   
--   厳密な名前では、デジタル署名と一意キーのペアを割り当てることによって、アセンブリの一意性を保証します。  
+- 厳密な名前では、デジタル署名と一意キーのペアを割り当てることで、アセンブリの一意性を保証します。  
   
--   厳密な名前では、それ以降のバージョンのアセンブリを生成できます誰もできるようにして、アセンブリの系列を保護します。  
+- 厳密な名前では、誰もそれ以降のバージョンのアセンブリを生成できることを確認して、アセンブリの系統を保護します。  
   
--   厳密な名前では、アセンブリの内容が前回のビルド以降変更されていないことを保証するために強力な整合性チェックを提供します。  
+- 厳密な名前では、前回のビルド以降、アセンブリの内容が変更されていないことを保証するために厳密な整合性チェックを提供します。  
   
- 付属している厳密名ツール (sn.exe) を使用してキー ファイルを生成することができます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]または[!INCLUDE[btsDotNetFramework](../../includes/btsdotnetframework-md.md)]です。  
+  付属する厳密な名前ツール (sn.exe) を使用してキー ファイルを生成できる[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]または[!INCLUDE[btsDotNetFramework](../../includes/btsdotnetframework-md.md)]します。  
   
 ### <a name="to-create-a-strong-named-biztalk-assembly"></a>厳密な名前の BizTalk アセンブリを作成するには  
   
-1.  Visual Studio コマンド プロンプトを起動します。  
+1. Visual Studio コマンド プロンプトを起動します。  
   
-2.  Visual Studio コマンド プロンプトを参照、 \<*ドライブ*\>: \labs フォルダーです。  
+2. Visual Studio コマンド プロンプトを参照、 \<*ドライブ*\>: \labs フォルダー。  
   
-3.  コマンド プロンプトで次のように入力します。 **sn – k swift.snk**、ENTER キーを押します。 成功メッセージが出力ウィンドウに表示されることを確認します。  
+3. コマンド プロンプトで「 **sn – k swift.snk**し、ENTER キーを押します。 成功メッセージが出力ウィンドウに表示されることを確認します。  
   
-    > [!NOTE]
-    >  適切なメッセージが表示されない場合は、Visual Studio を使用して、アセンブリのトラブルシューティングを行います。  
+   > [!NOTE]
+   >  適切なメッセージが表示されない場合は、Visual Studio を使用して、アセンブリのトラブルシューティングを行う。  
   
-4.  ソリューション エクスプ ローラーで右クリックし、 **SWIFTSchemas**プロジェクトをクリックして**プロパティ**です。  
+4. ソリューション エクスプ ローラーで右クリックし、 **SWIFTSchemas**プロジェクトをクリックして**プロパティ**します。  
   
-5.  SWIFTSchemas プロパティ ページ] ダイアログ ボックスで、いることを確認**共通プロパティ**が拡張され、[**アセンブリ**です。  
+5. SWIFTSchemas プロパティ ページ] ダイアログ ボックスで、ことを確認します**共通プロパティ**は拡張、および [**アセンブリ**します。  
   
-6.  アセンブリのプロパティと右側のペインで下へスクロールして、**厳密な名前**セクションで、の右側に**アセンブリ キー ファイル**です。 省略記号ボタンをクリックします。  
+6. アセンブリのプロパティと右側のウィンドウで下にスクロール、**厳密な名前**セクションで、の右側に**アセンブリ キー ファイル**します。 省略記号ボタンをクリックします。  
   
-7.  アセンブリ キー ファイル ダイアログ ボックスでを参照 **\<*ドライブ*:\>\labs**です。  
+7. アセンブリ キー ファイル ダイアログ ボックスを参照 **\<*ドライブ*:\>\labs**します。  
   
-8.  選択、 **swift.snk**クリックしてファイルをキー ファイルとして**開く**です。  
+8. 選択、 **swift.snk**キーのファイルとしてファイルをクリックして**オープン**します。  
   
-9. SWIFTSchemas プロパティ ページ] ダイアログ ボックスで、[ **OK**です。  
+9. SWIFTSchemas プロパティ ページ] ダイアログ ボックスで、[ **OK**します。  
   
-10. **ファイル** メニューのをクリックして**すべて保存**して変更を保存します。  
+10. **ファイル** メニューのをクリックして**すべて保存**変更を保存します。  
   
- 進みます[レッスン 3: SWIFT スキーマをプロジェクトに追加する](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-swift-schemas-to-a-project.md)です。
+    続行する[レッスン 3: SWIFT スキーマをプロジェクトに追加する](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-swift-schemas-to-a-project.md)します。

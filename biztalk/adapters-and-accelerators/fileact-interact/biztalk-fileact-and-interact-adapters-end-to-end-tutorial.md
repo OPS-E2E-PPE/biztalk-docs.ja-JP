@@ -1,5 +1,5 @@
 ---
-title: BizTalk FileAct アダプター エンド ツー エンドのチュートリアルの対話と |Microsoft ドキュメント
+title: BizTalk FileAct および InterAct アダプターのエンド ツー エンド チュートリアル |Microsoft Docs
 ms.custom: ''
 ms.date: 2015-12-10
 ms.prod: biztalk-server
@@ -12,38 +12,38 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15f2908abdb039d531fc0829efa7e019a6d0ca03
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af083b0e38d372c18bca4496033983cd7f579347
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222962"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37014803"
 ---
-# <a name="biztalk-fileact-and-interact-adapters-end-to-end-tutorial"></a>BizTalk FileAct と対話するアダプターのエンド ツー エンドのチュートリアル
-The Microsoft®[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]エンド ツー エンドのチュートリアルを使用する方法に関する情報を提供する[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]と[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]をリアルタイムに設定し、格納、およびメッセージ交換のシナリオを転送します。  
+# <a name="biztalk-fileact-and-interact-adapters-end-to-end-tutorial"></a>BizTalk FileAct および InterAct アダプターのエンド ツー エンド チュートリアル
+The Microsoft®[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]エンド ツー エンドのチュートリアルを使用する方法に関する特定の情報を提供する[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]と[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]をリアルタイムに設定し、格納、およびメッセージ交換シナリオを転送します。  
   
- [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]エンド ツー エンドのチュートリアルは、ソリューションの種類ごとにチュートリアルの形式で詳細な手順を含む 4 つの独立したシナリオを提供します。 これらのチュートリアルを開始する前に、BizTalk Server の基本概念を理解して SWIFT Alliance ゲートウェイ (SAG) ドキュメントに理解してください。  
+ [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]エンド ツー エンドのチュートリアルは、チュートリアルのソリューションの各種類のフォームに詳細な手順が含まれる 4 つの独立したシナリオを提供します。 これらのチュートリアルを開始する前に、BizTalk Server の基本概念を理解し、SWIFT Alliance ゲートウェイ (SAG) ドキュメントをよく理解してください。  
   
- A4SWIFT のエンド ツー エンド チュートリアルを使うと A4Swift のリアルタイムを構成する詳細な手順と、FileAct と InterAct アダプターを使用するストア アンド フォワード シナリオを使用できます。 シナリオごとに、次を行います。  
+ A4SWIFT のエンド ツー エンド チュートリアルを使うと A4Swift のリアルタイムを構成する詳細な手順と、FileAct と InterAct アダプターのストア アンド フォワード シナリオ。 シナリオごとは、次の操作を行います。  
   
--   SWIFT のアダプターを構成します。  
+- SWIFT アダプターを構成します。  
   
--   SWIFTNet paramfile を構成します。  
+- SWIFTNet に paramfile を構成します。  
   
--   送信ポートを作成し、受信ポート  
+- 送信ポートを作成し、受信ポート  
   
--   シナリオをテストします。  
+- シナリオをテストします。  
   
- このチュートリアルでは、2 つのロールを再生する: 送信者と受信者です。 メッセージの送信し、受信ポートを作成します。  
+  このチュートリアルでは、2 つのロールを再生します。 送信者と受信者。 メッセージの送信し、受信ポートを作成します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [このチュートリアルを使用する準備をしています](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)  
+-   [チュートリアルを使用する準備](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)  
   
--   [リアルタイムのシナリオを対話します。](../../adapters-and-accelerators/fileact-interact/interact-real-time-scenario.md)  
+-   [InterAct のリアルタイム シナリオ](../../adapters-and-accelerators/fileact-interact/interact-real-time-scenario.md)  
   
--   [ストアと順方向 (プッシュ) シナリオを対話します。](../../adapters-and-accelerators/fileact-interact/interact-store-and-forward-push-scenario.md)  
+-   [InterAct ストア アンド フォワード (プッシュ) シナリオ](../../adapters-and-accelerators/fileact-interact/interact-store-and-forward-push-scenario.md)  
   
--   [FileAct リアルタイム シナリオ](../../adapters-and-accelerators/fileact-interact/fileact-real-time-scenario.md)  
+-   [FileAct のリアルタイム シナリオ](../../adapters-and-accelerators/fileact-interact/fileact-real-time-scenario.md)  
   
--   [FileAct ストア アンド フォワードのシナリオ](../../adapters-and-accelerators/fileact-interact/fileact-store-and-forward-scenario.md)
+-   [FileAct ストア アンド フォワード シナリオ](../../adapters-and-accelerators/fileact-interact/fileact-store-and-forward-scenario.md)

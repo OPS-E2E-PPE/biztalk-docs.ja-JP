@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server のログ配布災害復旧を使用して |Microsoft ドキュメント
+title: BizTalk Server ログ配布のディザスター リカバリーを使用して |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,35 +12,35 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 16f2cf9e1d8b717ff42536ef9c0dba79132b9663
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b2ded5686cc81b1cc3b629601b142a19c3b7b193
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302298"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37023384"
 ---
-# <a name="using-biztalk-server-log-shipping-for-disaster-recovery"></a>BizTalk Server のログ配布災害復旧を使用します。
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実装してデータベースのデータベースを使用してスタンバイ機能ログ配布します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ログ配布は、スタンバイ サーバーで実稼働データベース サーバーが失敗した場合に、データベース処理を再開できるように、データベースとトランザクション ログ ファイルの復元とバックアップを自動化します。  
+# <a name="using-biztalk-server-log-shipping-for-disaster-recovery"></a>BizTalk Server ログ配布のディザスター リカバリーを使用します。
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 実装は、データベースを使用してスタンバイの機能をデータベース ログ配布します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ログ配布は、バックアップと、スタンバイ サーバー データベースが実稼働データベース サーバーが失敗したことに処理を再開できるように、データベースとトランザクション ログ ファイルの復元を自動化します。  
   
 ## <a name="how-log-shipping-works"></a>どのログ配布のしくみ  
- [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]によって使用されるエージェント ジョブ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]のログ配布は、実稼働環境で使用されている移行元サーバーと既定 (BizTalk Server のバックアップ ジョブで実行するすべての時刻) では 15 分ごと、スタンバイ状態として使用する移行先サーバー間でデータを同期します。  
+ [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]によって使用されるエージェント ジョブ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]のログ配布は、実稼働環境で使用するソース サーバーと (BizTalk Server のバックアップ ジョブで実行するすべての時刻) を既定で 15 分ごと、スタンバイ状態として使用する移行先サーバーの間でデータを同期します。  
   
-## <a name="using-log-shipping-for-disaster-recovery"></a>ログ配布の障害復旧の使用  
- 使用する場合、次の操作を[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ログ災害復旧のための配布。  
+## <a name="using-log-shipping-for-disaster-recovery"></a>ディザスター リカバリーのログ配布を使用します。  
+ 使用する場合、次の操作[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ログ ディザスター リカバリーのための配布。  
   
--   トピックの手順に従って[チェックリスト: 可用性と災害復旧を増やす](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)、稼働環境の可用性を向上させる[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]災害復旧を使用して環境。  
+- トピックの手順に従って[チェックリスト: ディザスター リカバリーによる可用性の向上](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)、運用環境の可用性を向上させる[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ディザスター リカバリーを使用して環境。  
   
--   障害回復サーバーに実稼働負荷を処理する能力があることを確認します。  
+- ディザスター リカバリー server に運用環境の負荷を処理する能力があることを確認します。  
   
-     スタンバイ サーバーが、同一または類似した使用可能なリソース (CPU とメモリまたはディスク) として、実稼働サーバーであることを確認します。  
+   スタンバイ サーバーに、同じまたは類似した使用可能なリソース (CPU/メモリ/ディスク) として、運用サーバーがあることを確認します。  
   
--   災害復旧ルーチンの詳細が明確になっていることを確認します。  
+- ディザスター リカバリ ルーチンの詳細がも記載されていることを確認します。  
   
-     障害復旧の準備、実装の詳細のすべてのステップを文書化します。 ストライキ都合の良いときが障害復旧手順を実装する責任者が、最初の曜日を開始するいると仮定ため頻度の低い災害は作業し、初めてこれでは。  
+   障害復旧の準備、実装の詳細の各手順を文書化します。 Strikes 都合の良いときがディザスター リカバリーの手順を実装するために必要な責任は、最初の日の開始されていると仮定ため頻度の低いディザスターは動作し、最初にこれが。  
   
--   障害復旧サイトに通常のテスト、プラクティス フェールオーバーの一環として、新しい BizTalk として特にアプリケーションが配置実稼働環境でします。  
+- ディザスター リカバリー サイトに通常のテスト、実際にフェールオーバーの一環として、新しい BizTalk として特にアプリケーションが配置実稼働環境でします。  
   
-     正規のテストとスムーズに実行できることができることを確認するためのメンテナンスの一環としてテスト フェールオーバーを実行します。  
+   通常のテストとスムーズに実行することができますを確認するためのメンテナンスの一部としてテスト フェールオーバーを実行します。  
   
 ## <a name="see-also"></a>参照  
- [災害復旧](../technical-guides/disaster-recovery.md)
+ [ディザスター リカバリー](../technical-guides/disaster-recovery.md)

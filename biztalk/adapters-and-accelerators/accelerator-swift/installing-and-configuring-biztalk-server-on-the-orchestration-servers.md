@@ -1,5 +1,5 @@
 ---
-title: インストールして、オーケストレーション サーバー上の BizTalk Server の構成 |Microsoft ドキュメント
+title: インストールして、オーケストレーション サーバーに BizTalk Server の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,28 +15,28 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 18a13d553e31739c959ff6baf317240c3c268ecc
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: ecd5e9e4be9c9274a402b54a5bf6a2eba4ed73cc
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004211"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36984099"
 ---
 # <a name="installing-and-configuring-biztalk-server-on-the-orchestration-servers"></a>インストールして、オーケストレーション サーバーに BizTalk Server を構成します。
-このセクションでは、インストールを修復または新規のメッセージの発信オーケストレーションおよび FIN 修復と調整のオーケストレーションを実行するため、オーケストレーション サーバーとして使用する BizTalk Server を構成する方法について説明します。  
-  
-### <a name="to-install-and-configure-biztalk-server-on-the-orchestration-server"></a>インストールして、オーケストレーション サーバー上の BizTalk Server の構成  
-  
-1.  カスタム インストールを実行する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]他のアプリケーションで必要な場合は、EDI、ヒューマン ワークフロー サービス (HWS)、および MRSR、以外のすべての機能を選択します。  
-  
-    > [!NOTE]
-    >  1 台のコンピューター展開では、このコンピューターは、HTTP フロント エンド サービスと、BizTalk メッセージング サーバーを実行しているものと同じコンピューターは。  
-  
-2.  構成を行う[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。  
-  
-    > [!NOTE]
-    >  BizTalk オーケストレーション サーバーを構成するときに、次のガイドラインを考慮してください。  
-  
-    -   このサーバーに接続するための 1 つのみのネットワーク アダプターが必要、[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]コンピューター。 パブリック HTTP フロント エンド サーバーなど、メッセージング サーバー側で別のネットワーク アダプターは必要ありませんし、これにより、インターネットまたはイントラネットとエクストラネットからのハッキングに対してセキュリティを強化します。  
-  
-3.  必要な追加の修正プログラムをインストール[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]インストール ガイドで使用可能とします。
+このセクションでは、インストールして、メッセージの修復]、[新しい送信オーケストレーションおよび FIN 修復と調整のオーケストレーションを実行するため、オーケストレーション サーバーとして使用する BizTalk Server を構成する方法について説明します。  
+
+### <a name="to-install-and-configure-biztalk-server-on-the-orchestration-server"></a>インストールして、オーケストレーション サーバーに BizTalk Server を構成するには  
+
+1. カスタム インストール実行[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]他のアプリケーションで必要な場合は、EDI、ヒューマン ワークフロー サービス (HWS) および MRSR、以外のすべての機能を選択します。  
+
+   > [!NOTE]
+   >  1 台のコンピューターの展開では、このコンピューターは、HTTP フロント エンド サービスと、BizTalk メッセージング サーバーを実行しているものと同じコンピューターは。  
+
+2. 構成を行う[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。  
+
+   > [!NOTE]
+   >  BizTalk オーケストレーション サーバーを構成するときに、次のガイドラインを考慮してください。  
+
+   - このサーバーに接続するネットワーク アダプターを 1 つだけが必要です、[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]コンピューター。 HTTP フロント エンド サーバーなど、メッセージング サーバーでは、パブリックにある別のネットワーク アダプターは必要ありませんし、これにより、インターネットまたはイントラネットとエクストラネットからのハッキングに対してセキュリティを強化します。  
+
+3. 必要な他の修正プログラムをインストール[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]インストール ガイドで利用可能な。

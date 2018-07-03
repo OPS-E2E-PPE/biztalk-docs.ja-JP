@@ -1,5 +1,5 @@
 ---
-title: 'X12 の処理中にエラーが発生した送信ポートでメッセージ: 受信者および送信者 id 修飾子の組み合わせのアグリーメントがありません |。Microsoft ドキュメント'
+title: 'X12 の処理でエラーが発生しました送信ポートでメッセージ: 受信者および送信者 id 修飾子の組み合わせの契約 |。Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 637cd174b2c9723f4391417392700e3a4f079b79
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8fa38616bfc4117614ab81d4a369f64d3b85e13f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240858"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988803"
 ---
-# <a name="a-failure-occurred-in-processing-x12-message-on-send-port-no-agreement-for-receiver-and-sender-identifier-qualifier-pairs"></a>X12 の処理中にエラーが発生した送信ポートでメッセージ: 受信者および送信者 id 修飾子の組み合わせのアグリーメントがありません。
+# <a name="a-failure-occurred-in-processing-x12-message-on-send-port-no-agreement-for-receiver-and-sender-identifier-qualifier-pairs"></a>X12 の処理でエラーが発生しました送信ポートでメッセージ: アグリーメント受信者および送信者 id 修飾子の組み合わせが存在しません。
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|-|  
-|メッセージ テキスト|送信ポート {0} で X12 メッセージの処理中にエラーが発生しました。 {1}、{2}、{3}、{4} 受信者および送信者の id と修飾子の組み合わせのアグリーメントが存在しません。|  
+|                 |                                                                                                                                                               |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                      [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                                       |
+| 製品バージョン |                                                  [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                                   |
+|    イベント ID     |                                                                               -                                                                               |
+|  イベント ソース   |                                    [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                     |
+|    コンポーネント    |                                                                          EDI エンジン                                                                           |
+|  シンボル名  |                                                                               -                                                                               |
+|  メッセージ テキスト   | X12 の処理でエラーが発生しました。 送信ポートでメッセージ{0}します。 {1}、{2}、{3}、{4} に対する受信者および送信者の ID と修飾子の組み合わせにはアグリーメントが存在しません。 |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、BizTalk Server で、昇格した送信者の修飾子と識別子のプロパティ、および昇格した受信者の修飾子と識別子のプロパティが、パーティの対応する値と一致しなかったために、BizTalk Server で EDIFACT インターチェンジのパーティを解決できなかったことを示します。  

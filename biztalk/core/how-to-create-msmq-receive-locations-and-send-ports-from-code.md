@@ -1,6 +1,6 @@
 ---
-title: MSMQ を作成するコードからの受信場所と送信ポート |Microsoft ドキュメント
-description: MSMQ をプログラムで作成する受信場所と、BizTalk Server での送信ポート
+title: MSMQ を作成するコードからの受信場所と送信ポート |Microsoft Docs
+description: プログラムで作成する MSMQ 受信場所と、BizTalk Server での送信ポート
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,28 +13,28 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5f00a0bfe14eeb7d4205973b3fef96e23026616
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: f367680408f208d5d7a93ef45e925ddfc1893ba5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971672"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36989763"
 ---
 # <a name="create-msmq-receive-locations-and-send-ports-programmatically"></a>MSMQ 受信場所と送信ポートをプログラムで作成します。
 このトピックでは、WMI を使用して MSMQ アダプタのポートまたは場所を作成する方法について説明します。  
   
- 詳細については、次を参照してください。**日時スケジュール構成を使用して WMI と受信場所を作成する**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+ 詳細については、次を参照してください。**日時スケジュール構成を使用して WMI の受信場所を作成する**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
 ## <a name="setting-property-values"></a>プロパティ値の設定  
  ポートまたは場所を作成するプロセスは常に同じです。  
   
-1.  適切な種類のオブジェクトを作成します。  
+1. 適切な種類のオブジェクトを作成します。  
   
-2.  オブジェクトのプロパティの値を設定します。  
+2. オブジェクトのプロパティの値を設定します。  
   
-3.  オブジェクト値をデータベースにコミットします。  
+3. オブジェクト値をデータベースにコミットします。  
   
- すべてのアダプターは、特定のプロパティをなどある**HostName**に共通します。 これらの共通のプロパティを、オブジェクトに直接割り当てることで設定します。 次の C# コードは通常の場合を示しています。  
+   すべてのアダプターは、特定のプロパティをなどある**HostName**、共通します。 これらの共通のプロパティを、オブジェクトに直接割り当てることで設定します。 次の C# コードは通常の場合を示しています。  
   
 ```  
 objReceiveLocation["HostName"] = "BizTalkServerApplication";  
@@ -54,7 +54,7 @@ objReceiveLocation["CustomCfg"] =
   
  CustomProps 要素のタグの名前は、アダプタがプロパティに使用する内部名です。  
   
- MSMQ アダプタには、CustomProps タグ内に 1 つのタグ (AdapterConfig) があります。 AdapterConfig タグには、Config タグで囲まれたカスタム プロパティ値の XML タグの文字列が含まれています。 ただし、タグがエンコードされます:"&lt;「置換」\<「と」&gt;「置換」\>"です。 たとえば、MSMQ プロパティのアダプタのサブセットの XML は次のようになります。  
+ MSMQ アダプタには、CustomProps タグ内に 1 つのタグ (AdapterConfig) があります。 AdapterConfig タグには、Config タグで囲まれたカスタム プロパティ値の XML タグの文字列が含まれています。 ただし、タグがエンコードされます:"&lt;「置換」\<「と」&gt;「置換」\>"。 たとえば、MSMQ プロパティのアダプタのサブセットの XML は次のようになります。  
   
 ```  
 <Config>  
@@ -62,14 +62,14 @@ objReceiveLocation["CustomCfg"] =
 </Config>  
 ```  
   
- 注意して、 **vt**属性は使用されません。 割り当てられた文字列、 **CustomCfg**エンコード後プロパティは次のように表示されます。  
+ なお、 **vt**属性は使用されません。 割り当てられた文字列、 **CustomCfg**プロパティは次のようにエンコードした後に表示されます。  
   
 ```  
 <CustomProps><AdapterConfig vt="8"><Config><batchSize>40</batchSize></Config></AdapterConfig></CustomProps>  
 ```  
   
 ## <a name="custom-property-names"></a>カスタム プロパティ名  
- 次の表に、MSMQ アダプターの内部名**送信**カスタム プロパティです。  
+ 次の表に、MSMQ アダプターの内部名**送信**カスタム プロパティ。  
   
 |**カスタム プロパティの名前を送信します。**|**表示名**|  
 |-----------------------------------|----------------------|  
@@ -78,7 +78,7 @@ objReceiveLocation["CustomCfg"] =
 |証明書 (certificate)|証明書の拇印|  
 |encryptionAlgorithm|暗号化アルゴリズム|  
 |maximumMessageSize|[メッセージの最大サイズ (KB)]|  
-|パスワード|Password|  
+|password|パスワード|  
 |priority|メッセージの優先度|  
 |queue|送信先キュー|  
 |recoverable|回復可能|  
@@ -93,12 +93,12 @@ objReceiveLocation["CustomCfg"] =
 |useJournalQueue|[ジャーナル キューの使用]|  
 |userName|[ユーザー名]|  
   
- 次の表に、MSMQ アダプターの内部名**受信**カスタム プロパティです。  
+ 次の表に、MSMQ アダプターの内部名**受信**カスタム プロパティ。  
   
 |**カスタム プロパティの名前が表示されます。**|**表示名**|  
 |--------------------------------------|----------------------|  
 |batchSize|バッチ サイズ|  
-|Password|Password|  
+|パスワード|パスワード|  
 |キュー|キュー|  
 |serialProcessing|[順次処理]|  
 |トランザクション|トランザクション|  

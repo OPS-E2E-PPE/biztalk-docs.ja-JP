@@ -1,5 +1,5 @@
 ---
-title: RNIFReceive |Microsoft ドキュメント
+title: RNIFReceive |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57af8140157b901d7e6265fc26249c7fbfef0c46
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: d54b66c42fae286ec748ef560c461a22124165b0
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963880"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36991779"
 ---
 # <a name="rnifreceive"></a>RNIFReceive
-このサンプルは、RNIF メッセージを受信し、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] パブリック プロセスによって処理するためにそれを準備する有効な [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]® [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RNIFReceive.aspx ファイルを提供します。 ASPX ページをカスタマイズして、次の操作を実行できます。  
+このサンプルは、作業 Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFReceive.aspx ファイルを RNIF メッセージを受信して処理用に準備する、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]パブリック プロセス。 ASPX ページをカスタマイズして、次の操作を実行できます。  
   
--   パフォーマンス カウンタの追加と削除  
+- パフォーマンス カウンタの追加と削除  
   
--   機能の追加 (データベースへのデータの書き込みや追跡機能のカスタマイズなど)  
+- 機能の追加 (データベースへのデータの書き込みや追跡機能のカスタマイズなど)  
   
--   検証機能の追加  
+- 検証機能の追加  
   
- このサンプルに格納*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>\sdk\webapplication\rnifreceiver のアクセラレータです。  
+  このサンプルにある*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>\sdk\webapplication\rnifreceiver のアクセラレータです。  
   
 ## <a name="demonstrates"></a>使用例  
  このサンプルは、以下を含み、パブリック プロセス用に着信メッセージを準備する方法を示します。  

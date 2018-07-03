@@ -1,5 +1,5 @@
 ---
-title: スキーマのテスト |Microsoft ドキュメント
+title: スキーマのテスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 20879925ff98d5c5d6ca7d0c9ebcf11853239bba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fc036be84bb64e794e6109e1ebc4ec730f382878
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279586"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37023112"
 ---
 # <a name="testing-schemas"></a>スキーマのテスト
 スキーマを作成した後、XML 構造が正しいかどうかを検証したい場合があります。 スキーマに対して次の 3 つの操作を実行して、検証を行うことができます。  
   
--   **インスタンスの生成**です。 この結果、スキーマで指定された XML 要素および XML 属性と共にテスト データが作成されます。  
+- **インスタンス生成**します。 この結果、スキーマで指定された XML 要素および XML 属性と共にテスト データが作成されます。  
   
--   **スキーマの検証**です。 標準の XSD (XML Schema Definition) 言語のスキーマに準拠しているかどうかが検証されます。  
+- **スキーマ検証**です。 標準の XSD (XML Schema Definition) 言語のスキーマに準拠しているかどうかが検証されます。  
   
--   **インスタンスの検証**です。 この操作では、スキーマに対する特定のインスタンス メッセージを検証します。  
+- **インスタンスの検証**です。 この操作は、スキーマに対する特定のインスタンス メッセージを検証します。  
   
- これらの 3 つの操作は、実稼働環境で運用する前にスキーマをテストする場合に便利です。  
+  これらの 3 つの操作は、実稼働環境で運用する前にスキーマをテストする場合に便利です。  
   
- このセクションでは、これらの操作の詳細について説明します。  
+  このセクションでは、これらの操作の詳細について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -1,5 +1,5 @@
 ---
-title: PeopleSoft HTTP ホストおよびポートを作成 |Microsoft ドキュメント
+title: PeopleSoft の HTTP ホストとポートを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,25 +15,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e673b2a2acdcd5248391f245ab990d424aefd298
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d991642b45a636c50ea12148d07efd8b93917754
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238114"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36997163"
 ---
 # <a name="creating-a-peoplesoft-http-host-and-port"></a>PeopleSoft の HTTP ホストとポートを作成する
 PeopleSoft のメッセージ公開アーキテクチャは、Integration Broker と呼ばれています。 Integration Broker の主なコンポーネントは次のとおりです。  
   
--   ゲートウェイ  
+- ゲートウェイ  
   
--   公開ノード  
+- 公開ノード  
   
--   サブスクライバー ノード  
+- サブスクライバー ノード  
   
- これら 3 つが連携して、HTTP リスナーの URL にメッセージを公開します。 公開ノードを設定する必要があります。 PeopleSoft には既定の公開ノードがあり、ローカル メッセージ ノードとも呼ばれます。 ノードおよび公開ノードのトランザクションをアクティブ化する必要があります。 サブスクリプション ノードの種類を外部ノードとして設定した後、ノードとトランザクションをアクティブ化する必要があります。 このノードの場合は、また、タイプを HTTP に設定し、接続情報も設定します。  
+  これら 3 つが連携して、HTTP リスナーの URL にメッセージを公開します。 公開ノードを設定する必要があります。 PeopleSoft には既定の公開ノードがあり、ローカル メッセージ ノードとも呼ばれます。 ノードおよび公開ノードのトランザクションをアクティブ化する必要があります。 サブスクリプション ノードの種類を外部ノードとして設定した後、ノードとトランザクションをアクティブ化する必要があります。 このノードの場合は、また、タイプを HTTP に設定し、接続情報も設定します。  
   
- PeopleSoft によってイベントの送信に使用される PeopleSoft HTTP ホストおよびポートを作成するには、PeopleSoft Integration Broker を使用します。 確認すること、メッセージがアクティブでルーティング」の手順を使用して、[メッセージのアクティビティの状態を確認する方法](../core/how-to-verify-activity-status-of-a-message.md)です。  
+  PeopleSoft によってイベントの送信に使用される PeopleSoft HTTP ホストおよびポートを作成するには、PeopleSoft Integration Broker を使用します。 メッセージでの手順を使用して、アクティブおよびルーティングが確認する[メッセージのアクティビティの状態を確認する方法](../core/how-to-verify-activity-status-of-a-message.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -1,5 +1,5 @@
 ---
-title: 識別フィールドに逆アセンブラー パイプライン コンポーネント |Microsoft ドキュメント
+title: 識別フィールドに逆アセンブラー パイプライン コンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,21 +17,21 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 20a9c79050b4489238ed94444eaebf8c3dac79d9
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: b08a5c3dd6b88351e67f678524a03052e8435439
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31008445"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012291"
 ---
 # <a name="distinguished-fields-in-disassembler-pipeline-components"></a>識別フィールドに逆アセンブラー パイプライン コンポーネント
 スキーマで定義された識別フィールドは、XML 逆アセンブラー、BizTalk 逆アセンブラー、またはフラット ファイル逆アセンブラー パイプランによって、次の形式でメッセージ コンテキストに書き込まれます。  
   
- *使用される名前* XPath で識別フィールドは、  
+ *使用される名前*XPath で識別フィールド  
   
- *名前空間 URI*は"http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields"  
+ *名前空間 URI*は"<http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields>"  
   
- プロパティの値は、 **System.String** による XML ドキュメントから抽出された値は、XPath を指定します。  
+ プロパティの値は、 **System.String**使用して XML ドキュメントから抽出された値は、XPath を指定します。  
   
  次の例では、スキーマに識別フィールド Price があります。  
   

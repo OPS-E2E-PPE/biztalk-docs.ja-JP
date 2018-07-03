@@ -1,5 +1,5 @@
 ---
-title: パイプライン デザイナーを使用してパイプラインを作成する |Microsoft ドキュメント
+title: パイプライン デザイナーを使用してパイプラインを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 18b693a4e8df20a7f39f81fb820810c1191ef637
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 62e182440522e82f7ae6eaeaf52234161bee7483
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238050"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36998611"
 ---
 # <a name="creating-pipelines-using-pipeline-designer"></a>パイプライン デザイナーを使用してパイプラインを作成します。
 Microsoft BizTalk Server は、主に XML ドキュメント形式を処理します。 BizTalk Server の機能を最大限に活用してメッセージを処理するには、多くの場合、ネイティブ形式から XML 表現へ変換する必要があります。 BizTalk Server パイプラインでは、受信メッセージおよび送信メッセージに対して、データの暗号化や復号化、プロパティの昇格などのデータ自身に対する操作だけでなく、ネイティブ形式から XML 表現への変換といったメッセージ変換も行います。 このセクションでは、パイプラインおよびパイプライン デザイナーに関する概要とタスク固有の情報について説明します。  
@@ -30,28 +30,28 @@ Microsoft BizTalk Server は、主に XML ドキュメント形式を処理し�
   
  通常、パイプラインは、次の処理を行います。  
   
--   さまざまな形式から XML 形式へのデータの正規化  
+- さまざまな形式から XML 形式へのデータの正規化  
   
--   XML 形式からさまざまな形式へのデータ変換  
+- XML 形式からさまざまな形式へのデータ変換  
   
--   プロパティの昇格および降格  
+- プロパティの昇格および降格  
   
--   ドキュメントの逆アセンブリおよびアセンブリ  
+- ドキュメントの逆アセンブリおよびアセンブリ  
   
--   ドキュメントのデコードおよびエンコード  
+- ドキュメントのデコードおよびエンコード  
   
--   ドキュメントの復号化および暗号化  
+- ドキュメントの復号化および暗号化  
   
--   ドキュメントの署名およびデジタル署名の確認  
+- ドキュメントの署名およびデジタル署名の確認  
   
- パイプラインでのメッセージ処理を含むワークフローを次に示します。  
+  パイプラインでのメッセージ処理を含むワークフローを次に示します。  
   
- ![メッセージを処理するためのワークフローのダイアグラム。] (../core/media/ebiz-dev-busprcsadptc.gif "ebiz_dev_busprcsadptc")  
-メッセージ処理ワークフロー  
+  ![メッセージを処理するためのワークフローのダイアグラム。] (../core/media/ebiz-dev-busprcsadptc.gif "ebiz_dev_busprcsadptc")  
+  メッセージ処理ワークフロー  
   
- 図に示すように、メッセージは、アダプターから受信パイプラインに渡されます。この受信パイプラインで、メッセージが XML に変換されます。 この後、メッセージはオーケストレーションで使用可能になります。また、メッセージを送信パイプラインに渡してから、送信アダプターに渡すこともできます。  
+  図に示すように、メッセージは、アダプターから受信パイプラインに渡されます。この受信パイプラインで、メッセージが XML に変換されます。 この後、メッセージはオーケストレーションで使用可能になります。また、メッセージを送信パイプラインに渡してから、送信アダプターに渡すこともできます。  
   
- パイプライン デザイナーのキーボード ショートカットの使用方法の詳細については、次を参照してください。[パイプライン デザイナーのキーボード ショートカット](../core/pipeline-designer-keyboard-shortcuts.md)です。  
+  パイプライン デザイナーのキーボード ショートカットの使用方法の詳細については、次を参照してください。[パイプライン デザイナーのキーボード ショートカット](../core/pipeline-designer-keyboard-shortcuts.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -59,10 +59,10 @@ Microsoft BizTalk Server は、主に XML ドキュメント形式を処理し�
   
 -   [パイプライン デザイナーの使用](../core/using-pipeline-designer.md)  
   
--   [パイプライン デザイナーでパイプラインの作成](../core/creating-pipelines-with-pipeline-designer.md)  
+-   [パイプライン デザイナーでのパイプラインの作成](../core/creating-pipelines-with-pipeline-designer.md)  
   
 -   [ネイティブ パイプライン コンポーネントの構成](../core/configuring-native-pipeline-components.md)  
   
--   [パイプラインを展開する方法](../core/how-to-deploy-pipelines.md)  
+-   [パイプラインをデプロイする方法](../core/how-to-deploy-pipelines.md)  
   
 -   [パイプラインをセキュリティで保護する方法](../core/how-to-secure-pipelines.md)

@@ -1,5 +1,5 @@
 ---
-title: '手順 12: オーケストレーション図形の構成 |Microsoft ドキュメント'
+title: '手順 12: オーケストレーション図形の構成 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,43 +16,43 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f21c373aacc949b95588c66f1243936b15ea9e89
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: d269fa177e7c0da857fb903cef5013f434554d17
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006427"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36991475"
 ---
 # <a name="step-12-configure-orchestration-shapes"></a>手順 12: オーケストレーション図形を構成します。
-このステップでは、不十分な構成のスマート タグを削除するためにオーケストレーション図形の構成を完了します。 指定する**DoorbellOutputMessage**最初の変換プロセスの出力として指定する**DoorbellMap.btm**そのプロセスで使用されるマップとして。 指定する**DoorbellFinalMessage** 2 番目の出力と同じプロセスを変換およびその他のフィールドのデータを持つメッセージを拡充する式を追加します。  
+この手順では、不十分な構成のスマート タグを削除するためにオーケストレーション図形の構成を完了します。 指定した**DoorbellOutputMessage**最初の変換プロセスの出力として指定する**DoorbellMap.btm**そのプロセスで使用されるマップとして。 指定する**DoorbellFinalMessage** 2 番目の出力として、プロセスを変換し、追加のフィールドのデータを持つメッセージを拡充する式を追加します。  
   
  **前提条件:** [サポート技術情報記事 941261](http://support.microsoft.com/kb/941261)オーケストレーションの構成を設定する前に適用する必要があります。  
   
 ### <a name="to-configure-orchestration-shapes"></a>オーケストレーション図形を構成するには  
   
-1.  Visual Studio のオーケストレーションのデザイン ビュー画面、をクリックして、 **ConstructMessage_1**図形です。  
+1. Visual Studio のオーケストレーションのデザイン ビュー画面、をクリックして、 **ConstructMessage_1**図形。  
   
-2.  **プロパティ**ウィンドウで、をクリックして、**構築メッセージ**プロパティを選択**DoorbellOutputMessage**ドロップダウン リストを押してからから**入力**です。  
+2. **プロパティ**ウィンドウで、をクリックして、**構築メッセージ**プロパティで、 **DoorbellOutputMessage**からドロップダウン リスト、およびキーを押します**入力**します。  
   
-3.  オーケストレーション デザイン ビュー サーフェイスで、をクリックして、 **DoorbellTransform**図形の内側、 **ConstructMessage_1**図形です。 **プロパティ**ウィンドウで、をクリックして**マップ名**、属性フィールドで省略記号 (...) ボタンをクリックします。  
+3. オーケストレーション デザイン ビュー サーフェイスで、をクリックして、 **DoorbellTransform**図形の内部、 **ConstructMessage_1**図形。 **プロパティ**ウィンドウで、をクリックして**マップ名**、属性フィールドで省略記号 (...) ボタンを順にクリックします。  
   
-4.  変換の構成] ダイアログ ボックスで、[**既存のマップ**です。 **完全修飾マップ名**ドロップダウン リストをクリックして**BTAHL7_Project.DoorbellMap**です。  
+4. 変換の構成] ダイアログ ボックスで、[**既存のマップ**します。 **完全修飾マップ名**ドロップダウン リストでは、をクリックして**BTAHL7_Project.DoorbellMap**します。  
   
-5.  をクリックして**ソース**左側のウィンドウでします。  
+5. クリックして**ソース**左側のウィンドウでします。  
   
-6.  空のボックスをクリックして**変数名** をクリック**DoorBellInputMessage**ドロップダウン リストからです。  
+6. 下の空のボックスをクリックします。**変数名** をクリック**DoorBellInputMessage**ドロップダウン リストから。  
   
-7.  をクリックして**先**左側のウィンドウでします。  
+7. クリックして**先**左側のウィンドウでします。  
   
-8.  空のボックスをクリックして**変数名** をクリック**DoorbellOutputMessage**ドロップダウン リストからです。  
+8. 下の空のボックスをクリックします。**変数名** をクリック**DoorbellOutputMessage**ドロップダウン リストから。  
   
-9. をクリックして**OK**変更を保存します。  
+9. クリックして**OK**変更を保存します。  
   
-10. オーケストレーション デザイン ビュー サーフェイスで、をクリックして、 **ConstructMessage_2**図形です。  
+10. オーケストレーション デザイン ビュー サーフェイスで、をクリックして、 **ConstructMessage_2**図形。  
   
-11. **プロパティ**ウィンドウで、をクリックして**構築メッセージ** **DoorbellFinalMessage**ドロップダウン リスト、キーを押しますから**を入力してください**.  
+11. **プロパティ**ウィンドウで、をクリックして**構築メッセージ**を選択します**DoorbellFinalMessage**ドロップダウン リスト、およびキーを押しますから **」と入力**.  
   
-12. オーケストレーション デザイン ビュー サーフェイスで、をクリックして、 **DoorbellFinalTransform**図形の内側、 **ConstructMessage_2**図形です。 **プロパティ**ウィンドウで、をクリックして**式**BizTalk 式エディターを開くに省略記号 (...) ボタンをクリックします。  
+12. オーケストレーション デザイン ビュー サーフェイスで、をクリックして、 **DoorbellFinalTransform**図形の内部、 **ConstructMessage_2**図形。 **プロパティ**ウィンドウで、をクリックして**式**BizTalk 式エディターを開く省略記号 (...) ボタンを順にクリックします。  
   
 13. BizTalk 式エディターでは、テキスト フィールドをクリックし、次のテキストを貼り付けます。  
   
@@ -89,12 +89,12 @@ ms.locfileid: "26006427"
 14. **[OK]** をクリックします。  
   
     > [!IMPORTANT]
-    >  式では、"HeaderInfo.LoadXml"には、キャリッジ リターンと、式内のスペースを削除します。 "HeaderInfo.LoadXml"ステートメントは、1 つの行にする必要があります。  
-  
+    >  "HeaderInfo.LoadXml"の式では、キャリッジ リターンと、式内のスペースを削除します。 "HeaderInfo.LoadXml"ステートメントは、1 行で指定する必要があります。  
+    > 
     > [!NOTE]
-    >  上記のテキストの最初のブロックは、ハード コーディングされた XML ヘッダーの例を示します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]シリアライザーには、ヘッダー セグメントが必要です。 お客様の環境のニーズに合わせてこれらのヘッダー値をカスタマイズすることができます。 上記のテキストの 2 番目のブロックでは、マルチパート メッセージで必要な 3 つのメッセージ部分を定義します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]シリアライザーには、マルチパート メッセージが必要です。 上記のテキストの 3 番目のブロックには、昇格させたプロパティが含まれています。 を、 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] HL7 フラット ファイル メッセージに XML メッセージをシリアル化するためにシリアライザーを調べます。  
+    >  上記のテキストの最初のブロックは、ハード コーディングされた XML ヘッダーの例を示します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]シリアライザーにはヘッダー セグメントが必要です。 環境のニーズに合わせてこれらのヘッダー値をカスタマイズすることができます。 上記のテキストの 2 つ目のブロックは、マルチパート メッセージで必要な 3 つのメッセージ部分を定義します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]シリアライザーがマルチパート メッセージが必要です。 前のテキストの 3 番目のブロックには、昇格させたプロパティが含まれている[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]HL7 のフラット ファイル メッセージに XML メッセージをシリアル化するためにシリアライザーが検査します。  
   
- 進みます[手順 13: を作成し、ポートを構成する](../../adapters-and-accelerators/accelerator-hl7/step-13-create-and-configure-ports.md)です。  
+    進みます[手順 13: を作成し、ポートを構成する](../../adapters-and-accelerators/accelerator-hl7/step-13-create-and-configure-ports.md)します。  
   
 ## <a name="see-also"></a>参照  
  [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

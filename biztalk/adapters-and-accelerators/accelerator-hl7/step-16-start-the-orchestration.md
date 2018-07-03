@@ -1,5 +1,5 @@
 ---
-title: '手順 16: オーケストレーションを開始 |Microsoft ドキュメント'
+title: '手順 16: オーケストレーションの開始 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,26 +15,26 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5256d33dc6751db34d1d827624d2dbe2644639e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3d2d1429d6b5d8df7facf55900683356200279b9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206178"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36992771"
 ---
-# <a name="step-16-start-the-orchestration"></a>手順 16.、オーケストレーションを開始します。
-このステップでは、オーケストレーションが実行される物理環境と、オーケストレーションで設計したビジネス プロセスを関連付けるために、サービスを参加させます。 さらに、アプリケーションをテストすることができるように、オーケストレーションの処理を開始します。  
+# <a name="step-16-start-the-orchestration"></a>手順 16: オーケストレーションを開始します。
+この手順では、オーケストレーションを実行する物理環境と、オーケストレーションで設計したビジネス プロセスを関連付けるために、サービスを参加させます。 さらに、アプリケーションをテストできるように、オーケストレーションの処理を開始します。  
   
 ### <a name="to-start-the-orchestration"></a>オーケストレーションを開始するには  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールのコンソール ツリー ウィンドウで**オーケストレーション**を右クリックして**BTAHL7_Project.Doorbell_Orchestration**、クリックして**参加**.  
+1. [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、コンソールのツリー ウィンドウで [**オーケストレーション**、右クリックして**BTAHL7_Project.Doorbell_Orchestration**、] をクリックし、**参加**.  
   
-2.  右クリック**BTAHL7_Project.Doorbell_Orchestration**、クリックして**開始**です。  
+2. 右クリック**BTAHL7_Project.Doorbell_Orchestration**、 をクリックし、**開始**します。  
   
-    > [!NOTE]
-    >  開始したことを確認してください、 **MLLPSendPort**送信ポートを有効になっている、 **WebService_BTAHL7_Project_Proxy/BTAHL7_Project_Doorbell_Orchestration_SOAPReceivePort**受信場所。  
+   > [!NOTE]
+   >  開始したことを確認、 **MLLPSendPort**送信ポートを有効になっている、 **WebService_BTAHL7_Project_Proxy/BTAHL7_Project_Doorbell_Orchestration_SOAPReceivePort**受信場所。  
   
- 進みます[手順 17: クライアント アプリケーションを作成する](../../adapters-and-accelerators/accelerator-hl7/step-17-create-the-wsclient-application.md)です。  
+   続行する[手順 17: WSClient アプリケーションの作成](../../adapters-and-accelerators/accelerator-hl7/step-17-create-the-wsclient-application.md)です。  
   
 ## <a name="see-also"></a>参照  
- [メッセージの強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

@@ -1,5 +1,5 @@
 ---
-title: パーティのトランザクション セット制御番号に達した許容される Edifact の上限 |Microsoft ドキュメント
+title: パーティのトランザクション セット制御番号に達した許容される Edifact 上限 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fcbd2ce29ddeb99ba8c06e5dac9ff01be8c300b6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 85fd53beb1484d1e9ffbddf1bbc4f4ac69ae1e67
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241258"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37004539"
 ---
 # <a name="max-limit-of-acceptable-edifact-transaction-set-control-number-has-reached-for-party"></a>パーティの EDIFACT トランザクション セット制御番号が、許容される上限に到達しました
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|GlobalEdifactUnhNumberError|  
-|メッセージ テキスト|パーティ {0} の EDIFACT トランザクション セット制御番号が、許容される上限に到達しました。 パートナー アグリーメント マネージャーで、[Party in receiver role] の [UNH 1] フィールドに移動して、カウンターをリセットしてください。|  
+|                 |                                                                                                                                                                                                  |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                        [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                                                        |
+| 製品バージョン |                                                                    [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                                                    |
+|    イベント ID     |                                                                                                -                                                                                                 |
+|  イベント ソース   |                                                      [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                                      |
+|    コンポーネント    |                                                                                            EDI エンジン                                                                                            |
+|  シンボル名  |                                                                                   GlobalEdifactUnhNumberError                                                                                    |
+|  メッセージ テキスト   | パーティのトランザクション セット制御番号に達した許容される Edifact 上限{0}します。 パートナー アグリーメント マネージャーで、[Party in receiver role] の [UNH 1] フィールドに移動して、カウンターをリセットしてください。 |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、パーティ設定で指定された UNH1 フィールドのトランザクション セット制御番号 (具体的には、UNH1.2 フィールドの参照番号) が許容される最大値よりも大きかったため、送信パイプラインで送信インターチェンジを処理できなかったことを示します。 トランザクション セット制御番号の最大許容値は UNH1 の 3 つのフィールドの値によって決まります。 最大文字数は、フィールド UNH1.2、UNH1.1 のプレフィックスが 13 と 13、UNH1.3 のサフィックス、組み合わせるすべての 3 つのフィールドの 14 の参照番号の 14 です。  
+ このエラー/警告/情報イベントは、パーティ設定で指定された UNH1 フィールドのトランザクション セット制御番号 (具体的には、UNH1.2 フィールドの参照番号) が許容される最大値よりも大きかったため、送信パイプラインで送信インターチェンジを処理できなかったことを示します。 トランザクション セット制御番号の最大許容値は UNH1 の 3 つのフィールドの値によって決まります。 最大文字数が、フィールド UNH1.2、unh1.1 のプレフィックスと、UNH1.3 のサフィックスの 13 および 14 を組み合わせた 3 つのフィールドの参照番号が 14 文字です。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、次のように、トランザクション セット制御番号の参照番号フィールド (UNH1.2) をリセットします。  

@@ -1,5 +1,5 @@
 ---
-title: 側開始 SSO のホストのユーザー マッピングを管理する方法 |Microsoft ドキュメント
+title: 側開始 SSO のホストのユーザー マッピングを管理する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,64 +15,64 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0bf65bdb3de30d5b701946215b5c7ae7d40d828
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: ad232bf81fff96e6cabf367e9c591d02d4296151
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25972384"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37006707"
 ---
 # <a name="how-to-manage-user-mappings-for-host-initiated-sso"></a>側開始 SSO のホストのユーザー マッピングを管理する方法
 次の手順を使用して、マッピングの作成、資格情報の設定、およびマッピングの有効化または無効化を行います。  
   
 ### <a name="to-manage-user-mappings-for-host-initiated-sso-using-the-mmc-snap-in"></a>MMC スナップインを使用してホスト側開始 SSO のユーザー マッピングを管理するには  
   
-1.  **開始** メニューのをクリックして**すべてのプログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、クリックして**SSO 管理**です。  
+1.  **開始** メニューのをクリックして**すべてのプログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、 をクリックし、 **SSO 管理**。  
   
-2.  ENTSSO MMC スナップインの [スコープ] ウィンドウで、展開、**エンタープライズ シングル サインオン**ノード。  
+2.  ENTSSO MMC スナップインの [スコープ] ウィンドウで、**エンタープライズ シングル サインオン**ノード。  
   
-3.  スコープ ペインで、をクリックして**関連アプリケーション**です。  
+3.  スコープ ペインで次のようにクリックします。**関連アプリケーション**します。  
   
 4.  詳細ペインで、関連アプリケーションを右クリックし、アクションに適したメニュー項目を選択します。  
   
 ### <a name="to-create-mappings-in-host-initiated-sso-using-the-command-line"></a>コマンド ラインを使用してホスト側開始 SSO のマッピングを作成するには  
   
-1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
+1. **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
+2. **実行**ダイアログ ボックスに「 **cmd**、順にクリックします**OK**します。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
+3. コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \Program Files\Common \enterprise シングル サインオンします。  
   
-4.  型**ssomanage – createmappings\<マッピング ファイル\>** ここで、**マッピング ファイル >** xml ファイルの名前を指定します。  
+4. 型**ssomanage – createmappings\<マッピング ファイル\>** ここで、**マッピング ファイル >** xml ファイルの名前を指定します。  
   
-    > [!NOTE]
-    >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
+   > [!NOTE]
+   >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-     サンプル マッピング ファイルを次に示します。  
+    サンプル マッピング ファイルを次に示します。  
   
-    ```  
-    <SSO>  
-      <mapping>  
-        <windowsDomain>DomainName</windowsDomain>  
-        <windowsUserId>UserA</windowsUserId>  
-        <externalApplication>SSOApplication</externalApplication>  
-    <externalUserId>ExternalUserID that corresponds to UserA</externalUserId>  
-      </mapping>  
-    </SSO>  
+   ```  
+   <SSO>  
+     <mapping>  
+       <windowsDomain>DomainName</windowsDomain>  
+       <windowsUserId>UserA</windowsUserId>  
+       <externalApplication>SSOApplication</externalApplication>  
+   <externalUserId>ExternalUserID that corresponds to UserA</externalUserId>  
+     </mapping>  
+   </SSO>  
   
-    ```  
+   ```  
   
- 関連アプリケーションのパスワードの検証機能が有効になっている場合、次のように資格情報を設定する必要があります。  
+   関連アプリケーションのパスワードの検証機能が有効になっている場合、次のように資格情報を設定する必要があります。  
   
 #### <a name="to-set-credentials-for-individual-type-affiliate-applications-using-the-command-line"></a>コマンド ラインを使用して単独タイプの関連アプリケーションの資格情報を設定するには  
   
 1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
+2.  **実行**ダイアログ ボックスに「 **cmd**、順にクリックします**OK**します。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \Program Files\Common \enterprise シングル サインオンします。  
   
-4.  型**ssomanage-setcredentials \<Windows アカウント名\>\<アプリケーション名\>** です。  
+4.  型**ssomanage-setcredentials \<Windows アカウント名\>\<アプリケーション名\>** します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -81,11 +81,11 @@ ms.locfileid: "25972384"
   
 1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
+2.  **実行**ダイアログ ボックスに「 **cmd**、順にクリックします**OK**します。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \Program Files\Common \enterprise シングル サインオンします。  
   
-4.  型**ssomanage-setcredentials\<外部アカウント名\>\<アプリケーション名\>** です。  
+4.  型**ssomanage-setcredentials\<外部アカウント名\>\<アプリケーション名\>** します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -94,11 +94,11 @@ ms.locfileid: "25972384"
   
 1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
+2.  **実行**ダイアログ ボックスに「 **cmd**、順にクリックします**OK**します。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \Program Files\Common \enterprise シングル サインオンします。  
   
-4.  型**ssomanage-enablemapping \<Windows アカウント名\>\<アプリケーション名\>** です。  
+4.  型**ssomanage-enablemapping \<Windows アカウント名\>\<アプリケーション名\>** します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -107,11 +107,11 @@ ms.locfileid: "25972384"
   
 1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
+2.  **実行**ダイアログ ボックスに「 **cmd**、順にクリックします**OK**します。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \Program Files\Common \enterprise シングル サインオンします。  
   
-4.  型**ssomanage-disablemapping \<Windows アカウント名\>\<アプリケーション名\>** です。  
+4.  型**ssomanage-disablemapping \<Windows アカウント名\>\<アプリケーション名\>** します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -120,11 +120,11 @@ ms.locfileid: "25972384"
   
 1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
+2.  **実行**ダイアログ ボックスに「 **cmd**、順にクリックします**OK**します。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \Program Files\Common \enterprise シングル サインオンします。  
   
-4.  型**ssomanage-enablemapping\<外部アカウント名\>\<アプリケーション名\>** です。  
+4.  型**ssomanage-enablemapping\<外部アカウント名\>\<アプリケーション名\>** します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
@@ -133,11 +133,11 @@ ms.locfileid: "25972384"
   
 1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
+2.  **実行**ダイアログ ボックスに「 **cmd**、順にクリックします**OK**します。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \Program Files\Common \enterprise シングル サインオンします。  
   
-4.  型**ssomanage-disablemapping\<外部アカウント名\>\<アプリケーション名\>** です。  
+4.  型**ssomanage-disablemapping\<外部アカウント名\>\<アプリケーション名\>** します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

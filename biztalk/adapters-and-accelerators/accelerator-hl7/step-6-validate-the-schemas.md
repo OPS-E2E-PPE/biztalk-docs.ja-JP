@@ -1,5 +1,5 @@
 ---
-title: '手順 6: スキーマの検証 |Microsoft ドキュメント'
+title: '手順 6: スキーマの検証 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,25 +16,25 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6de54e086865f0ca6c406ad8c24127192c8353f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 94f0ab3ba2d9586aa60817bb261be0660305c820
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206338"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37005339"
 ---
 # <a name="step-6-validate-the-schemas"></a>手順 6: スキーマを検証します。
-このステップでは、検証スキーマ コマンドを使用する、スキーマのいずれか、内部不整合があるかからインスタンス メッセージの処理を効果的に使用されているいずれかのスキーマを妨げる可能性のあるその他の問題があるかを確認します。  
+この手順では、検証のスキーマ コマンドを使用する、スキーマのいずれか、内部の不整合が含まれていますかからインスタンス メッセージを処理するために効果的に使用されているいずれかのスキーマを妨げる可能性のあるその他の問題があるかを判断します。  
   
 ### <a name="to-validate-the-schema"></a>スキーマを検証するには  
   
-1.  ソリューション エクスプ ローラーで右クリック**Doorbell.xsd**  をクリックし、**スキーマの検証**です。 成功メッセージが出力ウィンドウに表示されることを確認します。  
+1. ソリューション エクスプ ローラーで右クリックして**Doorbell.xsd**し**スキーマの検証**です。 成功メッセージが出力ウィンドウに表示されることを確認します。  
   
-     成功メッセージが表示されない場合は、作成されていることを確認してください。 **Doorbell.xsd**適切です。  
+    成功メッセージが表示されない場合は、作成したことを確認**Doorbell.xsd**適切です。  
   
-2.  ステップ 1 を繰り返します、 **ADT_A04_22_GLO_DEF.xsd**スキーマ ファイルです。 成功メッセージが出力ウィンドウに表示されることを確認します。  
+2. ステップ 1 を繰り返します、 **ADT_A04_22_GLO_DEF.xsd**スキーマ ファイル。 成功メッセージが出力ウィンドウに表示されることを確認します。  
   
- 進みます[手順 7: サインインし、プロジェクトをビルド](../../adapters-and-accelerators/accelerator-hl7/step-7-sign-and-build-the-projects.md)です。  
+   進みます[手順 7: サインインし、プロジェクトをビルド](../../adapters-and-accelerators/accelerator-hl7/step-7-sign-and-build-the-projects.md)します。  
   
 ## <a name="see-also"></a>参照  
- [メッセージの強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

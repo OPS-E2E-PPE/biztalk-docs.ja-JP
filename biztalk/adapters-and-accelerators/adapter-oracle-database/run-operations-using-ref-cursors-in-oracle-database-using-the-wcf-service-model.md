@@ -1,5 +1,5 @@
 ---
-title: WCF サービス モデルを使用して Oracle データベースで操作を使用して REF CURSOR を実行 |Microsoft ドキュメント
+title: WCF サービス モデルを使用して Oracle データベースでの操作を使用して REF CURSOR の実行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,39 +15,39 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb527a4451388475ce69a5321d0d05616fc8afde
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: c30af70ffe58e1ca8107c07d265e848532e2c768
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "22216434"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36990707"
 ---
 # <a name="run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle データベースでの操作を使用して REF CURSOR の実行します。
-REF CURSOR は、Oracle データベースに結果セットへのポインターを表す Oracle PL/SQL データ型です。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]プロシージャ、関数、およびパッケージ内の REF CURSOR パラメーターをサポートしています。 REF CURSOR パラメーターには、厳密に型指定または厳密に型指定されたプロシージャまたは関数の宣言方法に応じてを指定できます。 REF CURSOR パラメーターを表現する方法の詳細について、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[REF CURSOR のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)です。次の表では、WCF サービス モデルでの REF CURSOR パラメーターを表現する方法をまとめたものです。  
+REF CURSOR は、結果セットで、Oracle データベースへのポインターを表す PL/SQL の Oracle データ型です。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]プロシージャ、関数、およびパッケージの REF CURSOR パラメーターをサポートしています。 REF CURSOR パラメーターには、厳密に型指定またはプロシージャまたは関数の宣言方法に応じて弱い型指定ができます。 REF CURSOR パラメーターを表現する方法の詳細については、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[の REF CURSOR のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)します。次の表では、WCF サービス モデルでの REF CURSOR パラメーターを表現する方法を示します。  
   
-|パラメーターの方向|厳密に型指定された REF CURSOR|弱い型指定の REF CURSOR|  
+|パラメーターの方向|厳密に型指定の REF CURSOR|厳密に型指定の REF CURSOR|  
 |-------------------------|--------------------------------|------------------------------|  
-|IN|`string [PARAM_NAME]`<br /><br /> PL/SQL ブロックを含む文字列です。 PL/SQL ブロックは、"オープンの SELECT"ステートメントを実行するか、関数またはプロシージャを呼び出すことによって開かれた REF CURSOR を返す必要があります。 疑問符 (?) では、REF CURSOR を返す、パラメーターの位置を示します。 たとえば、"OPEN を開始しますか。 SELECT * MY_TABLE; から最後に、"または"BEGIN MY_PROC (PARM1、?、PARM2);終了;"です。|厳密に型指定と同じ|  
+|IN|`string [PARAM_NAME]`<br /><br /> PL/SQL ブロックを含む文字列。 PL/SQL ブロックは、「オープンの選択」ステートメントを実行するか、関数またはプロシージャを呼び出すことによって開かれた REF CURSOR を返す必要があります。 疑問符 (?) では、REF CURSOR を返す、パラメーターの位置を示します。 たとえば、"オープンを開始しますか。 SELECT * MY_TABLE; から最後に、"または"開始 MY_PROC (PARM1、?、PARM2);終了;"します。|厳密に型指定と同じ|  
 |OUT|`out [PROC_NS].[PARAM_NAME]RECORD[] [PARAM_NAME]`<br /><br /> 厳密に型指定されたレコード セット。|`out [GENERIC_NS].GenRecordRow[] [PARAM_NAME]`<br /><br /> 厳密に型指定されたジェネリック レコード セット。|  
-|OUT IN|REF CURSOR 出力パラメーターは、IN、OUT パラメーターに分割されます。 IN パラメーターは、OUT パラメーターと区別するためのメソッド シグネチャで"_IN"に付加されます。 OUT パラメーターは、厳密に型指定されたレコード セットで表されます。<br /><br /> `string [PARAM_NAME]_IN`<br /><br /> `out [PROC_NS].[PARAM_NAME]RECORD[] [PARAM_NAME]`|REF CURSOR 出力パラメーターは、IN、OUT パラメーターに分割されます。 IN パラメーターには、OUT パラメーターと区別するためには、"_IN"が追加されます。 OUT パラメーターは、弱い型指定のレコード セットで表されます。<br /><br /> `string [PARAM_NAME]_IN`<br /><br /> `out [GENERIC_NS].GenRecordRow[] [PARAM_NAME]`|  
+|OUT IN|REF CURSOR アウトでは、パラメーターは IN と OUT パラメーターに分割されます。 IN パラメーターは、OUT パラメーターと区別するためのメソッド シグネチャで"_IN"が付加されます。 OUT パラメーターは、厳密に型指定されたレコード セットで表されます。<br /><br /> `string [PARAM_NAME]_IN`<br /><br /> `out [PROC_NS].[PARAM_NAME]RECORD[] [PARAM_NAME]`|REF CURSOR アウトでは、パラメーターは IN と OUT パラメーターに分割されます。 IN パラメーターは、OUT パラメーターと区別するためには、"_IN"が付加されます。 OUT パラメーターは、厳密に型指定のレコード セットで表されます。<br /><br /> `string [PARAM_NAME]_IN`<br /><br /> `out [GENERIC_NS].GenRecordRow[] [PARAM_NAME]`|  
   
  [PARAM_NAME]、Oracle データベースで関数またはプロシージャの定義でパラメーターの名前を =たとえば、MYREFCURSOR です。  
   
- [PROC_NS] パッケージ、プロシージャ、または関数のパラメーターを含むに生成された一意の名前空間を =たとえば、"microsoft.lobservices.oracledb._2007._03.SCOTT です。Package.ACCOUNT_PKG です。GET_ACTIVITY"です。  
+ [PROC_NS] パッケージ、プロシージャ、または関数のパラメーターを格納する生成された一意の名前空間を =たとえば、"microsoft.lobservices.oracledb._2007._03.SCOTT します。Package.ACCOUNT_PKG します。GET_ACTIVITY"。  
   
- [GENERIC_NS]、ジェネリックのレコード セットが定義されている名前空間を ="microsoft.lobservices.oracledb._2007._03"です。  
+ [GENERIC_NS] 汎用のレコード セットが定義されている名前空間 ="microsoft.lobservices.oracledb._2007._03"。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、SCOTT/パッケージ/ACCOUNT_PKG の Oracle パッケージを使用します。 次の手順は ACCOUNT_PKG から使用されます。  
+ このトピックの例では、SCOTT/パッケージ/ACCOUNT_PKG Oracle パッケージを使用します。 次の手順は、ACCOUNT_PKG から使用されます。  
   
 ```  
 PROCEDURE get_activity(inrecs IN SYS_REFCURSOR, status OUT NUMBER, inoutrecs IN OUT activity_ref_type, outrecs OUT SYS_REFCURSOR);  
 ```  
   
- このパッケージを生成するスクリプトは、SDK サンプルの値が提供されます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)です。  
+ このパッケージを生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
   
 ## <a name="ref-cursor-parameters-in-the-wcf-service-model"></a>WCF サービス モデルの REF CURSOR パラメーター  
- 次の例では、クラスおよび/SCOTT/Package/ACCOUNT_PKG/GET_ACTIVITY プロシージャに対して生成される WCF クライアントを表示します。 この手順が弱い型指定に、厳密に型指定された IN OUT REF CURSOR パラメーターや REF CURSOR 出力パラメーターです。  
+ 次の例では、クラスと/SCOTT/Package/ACCOUNT_PKG/GET_ACTIVITY プロシージャの生成された WCF クライアントを示します。 この手順が厳密に型指定の厳密に型指定の REF CURSOR を IN パラメーターや REF CURSOR をパラメーター。  
   
  GET_ACTIVITY を呼び出すために WCF クライアントで生成されるメソッドのシグネチャを次に示します。  
   
@@ -55,16 +55,16 @@ PROCEDURE get_activity(inrecs IN SYS_REFCURSOR, status OUT NUMBER, inoutrecs IN 
 public System.Nullable<decimal> GET_ACTIVITY(string INRECS, string INOUTRECS_IN, out microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.GET_ACTIVITY.INOUTRECSRECORD[] INOUTRECS, out microsoft.lobservices.oracledb._2007._03.GenRecordRow[] OUTRECS);  
 ```  
   
- **GET_ACTIVITY**メソッド、INOUTRECS の 2 つのパラメーターは分割 IN OUT パラメーター。  
+ **GET_ACTIVITY**メソッド、INOUTRECS 分割は、2 つのパラメーターの OUT パラメーター。  
   
--   INOUTRECS_IN は、REF CURSOR パラメーターを表す文字列です。  
+- INOUTRECS_IN の REF CURSOR パラメーターを表す文字列です。  
   
--   INOUTRECS は、REF CURSOR 出力パラメーターを表す厳密に型指定されたレコード セットです。  
+- INOUTRECS は、REF CURSOR 出力パラメーターを表す厳密に型指定されたレコード セットです。  
   
- 厳密に型指定された OUT パラメーター、OUTRECS は、汎用のレコード セットとして表されます。 厳密に型指定されたパラメーター、INRECS には、文字列として表されます。  
+  厳密に型指定された OUT パラメーター、OUTRECS は、汎用のレコード セットとして表されます。 厳密に型指定されたパラメーター、INRECS には、文字列として表されます。  
   
-### <a name="strongly-typed-out-ref-cursor-parameters"></a>厳密に型指定された出力 REF CURSOR パラメーター  
- 厳密に型指定された出力 (または IN OUT) スキーマ、パッケージ、およびプロシージャまたはそれらを使用する関数の名前に基づく一意の名前空間での REF CURSOR パラメーターが生成されます。 この名前空間は、手順については、/SCOTT/Package/ACCOUNT_PKG/GET_ACTIVITY`microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.GET_ACTIVITY`です。 クラス名が「レコード」を持つパラメーターの名前を追加することによって作成され、Oracle フィールドを表すプロパティは、クラスで構成されます。 INOUTRECS REF CURSOR パラメーターに対して生成される厳密に型指定されたレコードを表すクラスの一部を次に示します。  
+### <a name="strongly-typed-out-ref-cursor-parameters"></a>厳密に型指定された OUT、REF CURSOR パラメーター  
+ 厳密に型指定された OUT IN は OUT (または) の REF CURSOR パラメーターは、スキーマ、パッケージ、およびプロシージャまたは関数では、使用の名前に基づく一意の名前空間に生成されます。 /SCOTT/Package/ACCOUNT_PKG/GET_ACTIVITY プロシージャでこの名前空間は`microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.GET_ACTIVITY`します。 クラス名は「レコード」を含むパラメーターの名前が追加された形式し、Oracle のフィールドを表すプロパティは、クラスで構成されます。 INOUTRECS REF CURSOR パラメーターに対して生成される厳密に型指定されたレコードを表すクラスの一部を次に示します。  
   
 ```  
 namespace microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.GET_ACTIVITY {  
@@ -97,7 +97,7 @@ namespace microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.GET
 ```  
   
 ### <a name="weakly-typed-out-ref-cursor-parameters"></a>REF CURSOR パラメーターを弱い型指定  
- 弱い型指定 IN OUT は OUT (または) の REF CURSOR パラメーターはジェネリック レコード クラスによって表されます。 ジェネリック レコード セットが、同じ名前空間の名前を使用して、同じクラス関数またはプロシージャに関係なく常に生成されます。 次のコードは、ジェネリック レコード クラスには、 **microsoft.lobservices.oracledb._2007._03.GenRecordRow**、OUTRECS アウト SYS_REFCURSOR パラメーター (厳密に型指定された) のレコードを表します。  
+ 厳密に型指定のアウトは OUT (または) の REF CURSOR パラメーターは、汎用レコード クラスによって表されます。 関数またはプロシージャに関係なく、同じクラス名を使用して、同じ名前空間で汎用のレコード セットが常に生成されます。 次のコードは、汎用レコード クラス**microsoft.lobservices.oracledb._2007._03.GenRecordRow**、OUTRECS アウト SYS_REFCURSOR パラメーター (弱い型指定) のレコードを表します。  
   
 ```  
 namespace microsoft.lobservices.oracledb._2007._03 {  
@@ -185,22 +185,22 @@ namespace microsoft.lobservices.oracledb._2007._03 {
 }  
 ```  
   
-## <a name="using-ref-cursor-parameters-with-a-wcf-client"></a>WCF クライアントで REF カーソル パラメーターの使用  
- WCF クライアントを使用して、プロシージャまたは REF CURSOR パラメーターを持つ関数を呼び出しするには、以下が行います。  
+## <a name="using-ref-cursor-parameters-with-a-wcf-client"></a>WCF クライアントで REF CURSOR パラメーターを使用します。  
+ WCF クライアントを使用して REF CURSOR パラメーターを持つ関数またはプロシージャを呼び出す、次を行います。  
   
-1.  それぞれの文字列を渡すまたは REF カーソルをオープンする PL/SQL を含む IN OUT REF CURSOR パラメーターをブロックします。 このブロックでは、開いているステートメントを実行することか、関数または OUT パラメーターで開かれている REF CURSOR を返すプロシージャを呼び出すできます。  
+1. それぞれの文字列を渡すか、PL/SQL を含む REF CURSOR を IN パラメーターが REF カーソルをオープンするブロックします。 このブロックでは、OPEN ステートメントを実行することまたは、関数または OUT パラメーターに開かれている REF CURSOR を返すプロシージャを呼び出すできます。  
   
-2.  プロシージャまたは関数が戻るときに、パラメーター、OUT または REF CURSOR を IN に対して返されるレコード セット内のデータを操作します。 レコード セットは、弱い型指定の REF CURSOR パラメーターのセットの汎用レコードまたは厳密に型指定されたレコードの REF CURSOR パラメーターの厳密に型指定されたセットになります。  
+2. プロシージャまたは関数が戻るとき、OUT または REF CURSOR を内のパラメーターに返されるレコード セットでデータを操作します。 レコード セットは、厳密に型指定の REF CURSOR パラメーターを設定する汎用レコードまたは厳密に型指定の REF CURSOR パラメーターを設定する、厳密に型指定されたレコードになります。  
   
- WCF サービス モデルを使用してプロシージャと関数を呼び出す方法の詳細については、次を参照してください。[関数の呼び出しと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)です。  
+   WCF サービス モデルを使用してプロシージャと関数を呼び出す方法の詳細については、次を参照してください。[関数を呼び出すと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)します。  
   
- 次の例では、GET_ACTIVITY プロシージャを呼び出します。 REF CURSOR パラメーターを指定するのどちらの方法を示しています。  
+   次の例では、GET_ACTIVITY プロシージャを呼び出します。 これには、両方の REF CURSOR パラメーターを指定する方法を示しています。  
   
--   REF CURSOR パラメーター アカウント 100001 活動で返される、開いている用の SELECT ステートメントを指定します。  
+- REF CURSOR パラメーター アカウント 100001 のアクティビティを取得するため、開くための SELECT ステートメントを指定します。  
   
--   REF CURSOR を IN パラメーター/SCOTT/Package/ACCOUNT_PKG/GET_ALL_ACTIVITY プロシージャが呼び出されます。 この手順では、ACCOUNTACTIVITY テーブル内のアクティビティのすべてを含み、OUT パラメーターとして返す REF カーソルを開きます。  
+- REF CURSOR を IN パラメーターには、/SCOTT/Package/ACCOUNT_PKG/GET_ALL_ACTIVITY プロシージャが呼び出されます。 この手順では、ACCOUNTACTIVITY テーブル内のアクティビティのすべてを含み、OUT パラメーターとして返します REF カーソルを開きます。  
   
- この例では、レコード厳密に型指定され、弱い型指定の両方の REF CURSOR パラメーターで返されるセットからデータを読み取る方法も示します。  
+  この例では、厳密に型指定され、厳密に型指定の両方の REF CURSOR パラメーターに対して返されるレコードからデータを読み取る方法も示します。  
   
 ```  
 using System;  

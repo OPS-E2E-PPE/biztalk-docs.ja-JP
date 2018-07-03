@@ -1,5 +1,5 @@
 ---
-title: SAP アダプターのパフォーマンス カウンターを使用して |Microsoft ドキュメント
+title: SAP アダプターを使用したパフォーマンス カウンターの使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,55 +15,55 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbc7ed347bc81a8a00ff7faa826bd48203c47e63
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 7818f5f5cf24bd1d4e58da2c24691813fc2b761f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25962256"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36991459"
 ---
-# <a name="use-performance-counters-with-the-sap-adapter"></a>SAP アダプターのパフォーマンス カウンターを使用します。
-Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]クライアントは、アダプターのパフォーマンスを測定するパフォーマンス カウンターを使用することができます。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムは、パフォーマンス カウンターのカテゴリを作成します。"[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]"をインストールするに沿って、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。  
+# <a name="use-performance-counters-with-the-sap-adapter"></a>SAP アダプターを使用したパフォーマンス カウンターを使用します。
+Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]クライアントは、パフォーマンス カウンターを使用して、アダプターのパフォーマンスを測定します。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムは、パフォーマンス カウンター カテゴリを作成します。"[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]"インストールに沿って、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。  
   
-## <a name="lob-time-cumulative-performance-counter"></a>LOB (累積) 時間のパフォーマンス カウンター  
- **SAP 向け BizTalk .NET Adapter**カテゴリには 1 つのパフォーマンス カウンター"LOB Time (累積)"と呼ばれます。 このパフォーマンス カウンターは、LOB クライアント ライブラリは、アダプターを開始する操作が完了する時間をミリ秒単位で、時間を表します。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]次のパターンでは、パフォーマンス カウンターのインスタンスを作成します。  
+## <a name="lob-time-cumulative-performance-counter"></a>LOB の時間 (累積) パフォーマンス カウンター  
+ **SAP 向け BizTalk .NET アダプター**カテゴリには 1 つのパフォーマンス カウンター"LOB Time (累積)"と呼ばれます。 このパフォーマンス カウンターは、LOB クライアント ライブラリは、アダプターを起動する操作を完了するまでをミリ秒単位の時間を示します。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]次のパターンでは、パフォーマンス カウンターのインスタンスを作成します。  
   
 ```  
 <process id>:<app domain id>:<endpoint id>:<action id>  
 ```  
   
- エンドポイント ID が考えられます。  
+ エンドポイントの ID になります。  
   
--   アダプターから (送信)、SAP システムへの呼び出しの  
+- (送信) の SAP システムにアダプターからの呼び出し  
   
-    -   A、\<アプリケーション サーバー ホスト\>、\<システム番号\>  
+  -   A、\<アプリケーション サーバーのホスト\>、\<システム番号\>  
   
-    -   B、\<メッセージ サーバー ホスト\>、\<R3NAME\>  
+  -   B、\<メッセージ サーバー ホスト\>、\<R3NAME\>  
   
-    -   D、\<変換先\>  
+  -   D、\<変換先\>  
   
--   SAP システムからアダプターへの呼び出しの (受信)  
+- SAP システムからアダプターへの呼び出しの (受信)  
   
-    -   I,\<ゲートウェイ ホスト\>、\<ゲートウェイ サーバー\>  
+  -   I,\<ゲートウェイ ホスト\>、\<ゲートウェイ サーバー\>  
   
-    -   ID、\<変換先\>  
+  -   ID、\<変換先\>  
   
- アクション ID が考えられます。  
+  操作 ID になります。  
   
--   \<RFC 名前\>(RFC 呼び出し) の  
+- \<RFC 名前\>(の RFC 呼び出しを)  
   
--   T、\<RFC 名前\>(用 tRFC の呼び出し)  
+- T、\<RFC 名前\>(の tRFC の呼び出し)  
   
- パフォーマンス カウンターは、アダプターが SAP システムへの最初の呼び出し後にのみ初期化されます。 また、 [InstanceLifetime](https://msdn.microsoft.com/library/system.diagnostics.performancecounter.instancelifetime.aspx)パフォーマンス カウンターのプロパティが 'Process' は、パフォーマンス カウンターは、カウンターを作成するプログラムが終了するとすぐに存在しなくなることを意味します。
+  パフォーマンス カウンターは、アダプターが SAP システムへの最初の呼び出し後にのみ初期化されます。 また、 [InstanceLifetime](https://msdn.microsoft.com/library/system.diagnostics.performancecounter.instancelifetime.aspx) 'Process' は、パフォーマンス カウンターは、カウンターを作成するプログラムが終了すると、すぐに存在しなくなることを意味するパフォーマンス カウンターのプロパティが設定されています。
   
 > [!NOTE]
->  LOB Time (累積) パフォーマンス カウンターの有効桁数は、16 ミリ秒です。  
+>  LOB の時間 (累積) パフォーマンス カウンターの有効桁数は、16 ミリ秒です。  
   
 ## <a name="enabling-performance-counters"></a>パフォーマンス カウンターを有効にします。  
- パフォーマンス カウンターを有効になっているやバインド プロパティを設定して無効になっている*EnablePerformanceCounters*です。 パフォーマンス カウンターを有効にするには設定、 *EnablePerformanceCounters*にプロパティのバインド**True**です。 パフォーマンス カウンターを無効にする設定*EnablePerformanceCounters*に**False**です。 既定では、 *EnablePerformanceCounters*に設定されている**False**です。  
+ パフォーマンス カウンターを有効またはバインドのプロパティを設定して無効にできる*EnablePerformanceCounters*します。 パフォーマンス カウンターを有効にするには設定、 *EnablePerformanceCounters*プロパティをバインド**True**します。 パフォーマンス カウンターを無効にするには設定*EnablePerformanceCounters*に**False**します。 既定では、 *EnablePerformanceCounters*に設定されている**False**します。  
   
 ## <a name="performance-counters-and-the-wcf-lob-adapter-sdk"></a>パフォーマンス カウンターと WCF LOB Adapter SDK  
- 値を変更する、 *EnablePerformanceCounters*に対応するパフォーマンス カウンターの値が変更もプロパティのバインド、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。 バインディング プロパティも、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]静的では、一方の[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]は動的です。 そのため、2 つのインスタンスがある場合、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] 、AppDomain にバインドされ、 *EnablePerformanceCounters*に設定されているプロパティのバインド**True**いずれかでと**False**アダプター固有のパフォーマンス カウンターのいずれかで有効にし、他の無効になっているは、それ以外のです。 ただし、ためのバインディング プロパティ[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]は静的で、いずれかに設定されます**True**または**False**によってどのような値を最後に指定されました。  
+ 値を変更する、 *EnablePerformanceCounters*に対応するパフォーマンス カウンターの値を変更してもプロパティをバインド、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]します。 バインド プロパティも、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]は静的で一方の場合、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]は動的です。 そのため、2 つのインスタンスがある場合、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] 、appdomain のバインドと*EnablePerformanceCounters*に設定されているプロパティのバインド**True**で 1 つと**False**アダプター固有のパフォーマンス カウンターのいずれかで有効にし、他の無効になっているで、他のです。 ただし、ためのバインディング プロパティ[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]は静的で、いずれかに設定されます**True**または**False**によってどのような値を最後に指定されました。  
   
 ## <a name="see-also"></a>参照  
 

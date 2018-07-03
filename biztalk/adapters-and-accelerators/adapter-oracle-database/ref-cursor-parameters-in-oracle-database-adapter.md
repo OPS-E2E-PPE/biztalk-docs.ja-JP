@@ -1,5 +1,5 @@
 ---
-title: 関数と Oracle データベースの REF CURSOR パラメーターを持つプロシージャに対する操作 |Microsoft ドキュメント
+title: 関数と Oracle データベースの REF CURSOR パラメーターを使用したプロシージャに対する操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,29 +17,29 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a918553cd687d80a5898c7171981dffbcf7b092c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 27b1d3ac6ff54fa15c300962e7ecfdae91414bff
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22215602"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37014811"
 ---
-# <a name="operations-on-functions-and-procedures-with-ref-cursor-parameters-in-oracle-database"></a>関数と Oracle データベースの REF CURSOR パラメーターを持つプロシージャに対する操作
-REF CURSOR は、クエリを実行することによって生成されるサーバー側の結果セットへのポインターを表す PL/SQL データ型です。 REF カーソルの種類の入力と出力データのストリーミングとは大量の PL/SQL コードとの間のデータを転送するのに最適。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]でとして、PL/SQL プロシージャと関数を OUT を渡すことができる厳密に型指定され、弱い型指定の (SYS_REFCURSOR) REF カーソルまたはローカルの OUT パラメーターのサポートを提供します。  
+# <a name="operations-on-functions-and-procedures-with-ref-cursor-parameters-in-oracle-database"></a>関数と Oracle データベースの REF CURSOR パラメーターを使用したプロシージャに対する操作
+REF CURSOR は、クエリの実行によって生成されるサーバー側の結果セットへのポインターを表す PL/SQL データ型です。 REF CURSOR 型はにより、入力データのストリーミングを出力して、大量の PL/SQL コードとの間のデータを転送するために最適です。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] PL/SQL プロシージャと、関数、渡すことができる厳密に型指定された、厳密に型指定の (SYS_REFCURSOR) REF カーソルまたはローカルの OUT パラメーターのサポートを提供します。  
   
--   **REF CURSOR に**です。 アダプターのクライアントは、Oracle データベースで REF カーソルをオープンする PL/SQL コード (文字列) として指定することによっての REF CURSOR を使用する必要があります。 アダプターは、変数を作成および開かれた REF カーソルを設定し、関数またはその変数にプロシージャを呼び出します。 したがっての REF CURSOR パラメーター PL/SQL ストアド プロシージャ、関数は、REF CURSOR 出力変数とマークする入力値として PL/SQL コード ブロックを取得する文字列として表す必要があります、"?"。  
+- **REF CURSOR の**します。 アダプター クライアントは、Oracle データベースで REF カーソルをオープンする PL/SQL コード (文字列) として指定することによって内の REF CURSOR を使用する必要があります。 アダプターは、変数を作成し、開かれた REF カーソルを設定し、関数または変数を持つプロシージャを呼び出します。 そのための REF CURSOR パラメーター PL/SQL ストアド プロシージャと関数を REF カーソルを変数とマークする入力値として PL/SQL コード ブロックを取得する文字列として表す必要があります、"?"。  
   
--   **REF CURSOR を**です。 REF CURSOR 出力パラメーターに、いずれかとして厳密に型指定や、弱い型指定の結果セットが返されます。 返される結果の型は、Oracle サーバーでストアド プロシージャまたは関数定義で厳密に型指定されたか、弱い型指定の REF CURSOR として REF CURSOR パラメーターが宣言されているかどうかによって異なります。  
+- **REF CURSOR を**します。 REF CURSOR 出力パラメーターに、いずれかとして厳密に型指定された、または厳密に型指定の結果セットが返されます。 返される結果の型は、Oracle サーバーでストアド プロシージャまたは関数定義で厳密に型指定された、または厳密に型指定の REF CURSOR としての REF CURSOR パラメーターが宣言されているかどうかによって異なります。  
   
--   **REF CURSOR 出力パラメーターで**です。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]の REF CURSOR パラメーターをモデル化文字列パラメーターと複合型としての REF CURSOR 出力パラメーターとしてサポートできない 1 つの型の REF CURSOR を IN パラメーター。 このため、REF CURSOR を IN パラメーターとして扱います 2 つの異なるパラメーター: 要求メッセージと応答メッセージの OUT パラメーターに IN パラメーター。  
+- **REF CURSOR 出力パラメーターで**します。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]モデル内の REF CURSOR パラメーターとして文字列と複合型としての REF CURSOR 出力パラメーターでは、REF CURSOR を IN パラメーターの 1 つの型をサポートすることはできません。 このため、異なる 2 つのパラメーターとしての REF CURSOR を IN パラメーターが処理: 要求メッセージと応答メッセージで OUT パラメーターに IN パラメーター。  
   
- 詳細については。  
+  詳細については。  
   
--   関数またはを使用して REF CURSOR パラメーターを使用するプロシージャを呼び出す、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[関数の呼び出しと BizTalk Server を使用して Oracle データベース内の REF CURSOR を持つプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/run-functions-and-procedures-with-ref-cursors-in-oracle-db-using-biztalk-server.md)です。  
+- 呼び出す関数またはプロシージャを使用して REF CURSOR パラメーターを使用する、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[関数を呼び出すと、BizTalk Server を使用して Oracle データベース内の REF CURSOR を使用したプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/run-functions-and-procedures-with-ref-cursors-in-oracle-db-using-biztalk-server.md)します。  
   
--   関数または WCF サービス モデルを使用して REF CURSOR パラメーターを使用するプロシージャを呼び出してを参照してください[実行操作を使用して REF CURSOR、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model.md)です。  
+- 関数または WCF サービス モデルを使用して REF CURSOR パラメーターを使用するプロシージャを呼び出しを参照してください[実行操作を使用して REF CURSOR、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model.md)します。  
   
--   サポートされている REF CURSOR の XML 構造、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[REF CURSOR のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)です。  
+- サポートされている REF CURSOR の XML 構造、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[の REF CURSOR のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)します。  
   
 ## <a name="see-also"></a>参照  
- [アダプターを使用して Oracle データベースへの接続します。](../../adapters-and-accelerators/adapter-oracle-database/connect-to-oracle-database-using-the-adapter.md)
+ [アダプターを使用して Oracle データベースに接続する](../../adapters-and-accelerators/adapter-oracle-database/connect-to-oracle-database-using-the-adapter.md)

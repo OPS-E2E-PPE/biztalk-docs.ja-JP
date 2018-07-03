@@ -1,5 +1,5 @@
 ---
-title: ランタイム コンピューターを更新する方法 |Microsoft ドキュメント
+title: ランタイム コンピューターを更新する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,49 +12,49 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca8edb4da6b59c33f87100ee3669bb2472d4350c
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 0fff5c5ec4c965b9dbdaaf5d876ca0943a32be96
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26010899"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36993299"
 ---
 # <a name="how-to-update-the-runtime-computers"></a>ランタイム コンピューターを更新する方法
-送信先システム[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム コンピューターで構成されます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実稼働環境で実行されている実稼働の BizTalk グループの一部として構成します。 各設定を更新する必要があります、障害回復環境で実稼働の BizTalk グループが復元される場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ことは、災害復旧を指すように、ランタイム コンピューター[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]復元されたに接続しようとしたときのインスタンス運用環境の BizTalk グループです。 送信先システムに、BizTalk グループが復元されると後、に、次の手順を使用して更新、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム コンピューター。  
+送信先システム[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム コンピューターで構成されて、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]運用環境で実行されている運用環境の BizTalk グループの一部として構成します。 各設定を更新する必要があります、ディザスター リカバリー環境で運用環境の BizTalk グループが復元されると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム コンピューターのことが、ディザスター リカバリーを指すように[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]復元されたに接続しようとしたときにインスタンス運用環境の BizTalk グループ。 送信先システムで BizTalk グループが復元された後に、次の手順を使用して更新、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム コンピューター。  
   
 ### <a name="to-update-the-biztalk-server-runtime-computers"></a>BizTalk Server ランタイム コンピューターを更新するには  
   
-1.  \Program Files\Microsoft すべて 32 ビット BizTalk server 上の BizTalk Server\Schema\Restore ディレクトリまたはすべての 64 ビット BizTalk で: \Program Files (x86) \Microsoft BizTalk Server\Bins32\Schema\Restore ディレクトリには、編集した SampleUpdateInfo.xml ファイルをコピーします。送信先システム内のサーバー。  
+1. すべての 32 ビット BizTalk server 上のディレクトリに BizTalk Server\Schema\Restore \Program Files\Microsoft またはすべて 64 ビットの BizTalk では、\Program Files (x86) \Microsoft BizTalk Server\Bins32\Schema\Restore ディレクトリには、編集した SampleUpdateInfo.xml ファイルをコピーします。送信先システムのサーバー。  
   
-2.  各 BizTalk server では、コマンド プロンプトを開きます。 をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+2. 各 BizTalk server では、コマンド プロンプトを開きます。 をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-    > [!NOTE]  
-    >  64 ビット コンピューターでは、64 ビット コマンド プロンプトを開く必要があります。  
+   > [!NOTE]  
+   >  64 ビット コンピューターでは、64 ビット コマンド プロンプトを開く必要があります。  
   
-3.  コマンド プロンプトで、または (64 ビット コンピューター) 上の \Program Files (x86) \Microsoft BizTalk Server\Bins32\Schema\Restore \Program Files\Microsoft BizTalk Server\Schema\Restore (32 ビット コンピューター) 上に移動し、このコマンドを入力します。  
+3. コマンド プロンプトで、または (64 ビットのコンピューター) 上の \Program Files (x86) \Microsoft BizTalk Server\Bins32\Schema\Restore \Program Files\Microsoft BizTalk Server\Schema\Restore (32 ビット コンピューター) に移動し、このコマンドを入力します。  
   
-    ```  
-    cscript UpdateRegistry.vbs SampleUpdateInfo.xml  
-    ```  
+   ```  
+   cscript UpdateRegistry.vbs SampleUpdateInfo.xml  
+   ```  
   
-4.  有効にし、送信先システムにすべての BizTalk ホスト インスタンスおよび BizTalk server 上の他のすべての BizTalk サービスを再開します。  
+4. 有効にして、送信先システムですべての BizTalk ホスト インスタンスと、BizTalk server 上の他のすべての BizTalk サービスを再起動します。  
   
-5.  送信先システムで、各 BizTalk サーバーで WMI を再起動します。 をクリックして**開始**、 をクリックして**実行**、型**services.msc**、順にクリック**ok**です。 **Services** MMC スナップインで、右クリックして**Windows Management Instrumentation**を選択し、**再起動**です。  
+5. 送信先システムで、各 BizTalk サーバーで WMI を再起動します。 をクリックして**開始**、 をクリックして**実行**、型**services.msc**、順にクリックします**OK**。 **サービス**MMC スナップインで、右クリックして**Windows Management Instrumentation**選択**再起動**します。  
   
-6.  各 BizTalk サーバーで開く、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックして**BizTalk グループ**、し、**削除**です。  
+6. 各 BizTalk サーバーで開く、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、右クリック**BizTalk グループ**、し、**削除**。  
   
-7.  右クリック**BizTalk Server 2010 管理**[**既存グループに接続**SQL Server データベース インスタンスを選択して、データベースの名前の BizTalk 管理データベースに対応します。クリックして BizTalk グループ]、 **OK**です。  
+7. 右クリック**BizTalk Server 2010 管理**、**既存グループへの接続**、SQL Server データベース インスタンスを選択し、データベース名の BizTalk 管理データベースに対応します。をクリックし、BizTalk グループ**OK**します。  
   
-    > [!NOTE]  
-    >  更新した後、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム コンピューターでは、する必要がありますも更新、 **SSO サーバー名**に表示されるとおり、**グループのプロパティ** ダイアログ ボックスで使用できる、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 更新する、 **SSO サーバー名**、起動、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをクリックして展開[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理 を右クリックし、 **BizTalk グループ**ノードと選択**プロパティ**を表示する、**全般**のタブ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 その後、、 **SSO サーバー名** ボックスに、アダプターの構成情報にアクセスして このコンピューターが使用するエンタープライズ シングル サインオン サーバーの名前を入力**OK**です。 これは、SSO データベースへの接続に使用する SSO サーバーの名前です。  
+   > [!NOTE]
+   >  更新した後、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム コンピューターの場合は、する必要がありますも更新、 **SSO サーバー名**に表示される、**グループ プロパティ**ダイアログ ボックスで、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 更新する、 **SSO サーバー名**、起動、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをクリックして展開[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理 を右クリックし、 **BizTalk グループ**ノードと選択**プロパティ**を表示する、**全般**のタブ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 次に、 **SSO サーバー名**] ボックスに、アダプターの構成情報にアクセスして [このコンピューターが使用するエンタープライズ シングル サインオン サーバーの名前を入力**OK**します。 これは、SSO データベースへの接続に使用する SSO サーバーの名前です。  
   
-8.  各 BizTalk ランタイム サーバーで次の Windows サービスを再起動します。  
+8. 各 BizTalk ランタイム サーバーで、次の Windows サービスを再起動します。  
   
-    -   エンタープライズ SSO サービス  
+   -   エンタープライズ SSO サービス  
   
-    -   ルール エンジン更新サービス  
+   -   ルール エンジン更新サービス  
   
-    -   BizTalk ホスト インスタンス  
+   -   BizTalk ホスト インスタンス  
   
 ## <a name="see-also"></a>参照  
  [ランタイム コンピューターの回復](../technical-guides/recovering-the-runtime-computers.md)

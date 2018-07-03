@@ -1,5 +1,5 @@
 ---
-title: 1 台のコンピューター展開上のパスを管理から CertSrv を除く |Microsoft ドキュメント
+title: 1 台のコンピューター展開上のパスを管理から CertSrv を除外する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,26 +16,26 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c77fc1733859cd903bafcebc26162323feff82d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1651131369ef4a8e0c4683b82f5b97163e33382f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207434"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36987843"
 ---
-# <a name="excluding-certsrv-from-managed-paths-on-a-single-computer-deployment"></a>1 台のコンピューター展開の管理パスから CertSrv の除外
-展開した場合[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]1 台のコンピューターにも証明書サーバーをインストールし、同じコンピューター上での管理パスから証明書サーバー (CertSrv) を除外する必要があります。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] SharePoint サーバーのサーバーの全体管理。  
+# <a name="excluding-certsrv-from-managed-paths-on-a-single-computer-deployment"></a>1 台のコンピューターの展開の管理パスから CertSrv を除外します。
+デプロイした場合[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]1 台のコンピューターに証明書サーバーをインストールすることも、同じコンピューターにする必要がある証明書サーバー (/certsrv を指定します) を除外する Microsoft SharePoint Server のサーバーの全体管理の管理パスから。  
   
 ### <a name="to-exclude-certsrv-from-the-managed-paths"></a>管理パスから CertSrv を除外するには  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、順にクリック**SharePoint サーバーの全体管理**です。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、順にクリックします**SharePoint Central Administration**。  
   
-2.  ウィンドウで、サーバーの全体管理で、**仮想サーバーの構成**セクションで、**仮想サーバーの設定を構成する**です。  
+2.  サーバーの全体管理] ウィンドウで、**仮想サーバーの構成**セクションで、[**仮想サーバー設定を構成**します。  
   
-3.  仮想サーバーの一覧] ウィンドウで、[ **Default Web Site**です。  
+3.  仮想サーバーの一覧] ウィンドウで、[**既定の Web サイト**します。  
   
-4.  仮想サーバーの設定] ウィンドウで、**仮想サーバーの管理**セクションで、[**管理パスの定義**です。  
+4.  仮想サーバーの設定] ウィンドウで、**仮想サーバーの管理**セクションで、[**管理パスの定義**します。  
   
-5.  管理パスの定義] ウィンドウで、[、**新しいパスを追加**セクションで、入力**CertSrv**で、**パス**テキスト ボックス。 **型**セクションで、**エクスクルード パス**です。 **[OK]** をクリックします。  
+5.  管理パスの定義 ウィンドウで、**新しいパスを追加**セクションに、入力**CertSrv**で、**パス**テキスト ボックス。 **型**セクションで、**エクスクルード パス**します。 **[OK]** をクリックします。  
   
 6.  管理パスの定義ウィンドウを閉じます。

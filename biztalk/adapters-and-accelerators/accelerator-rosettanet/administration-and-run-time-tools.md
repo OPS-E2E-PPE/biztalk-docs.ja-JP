@@ -1,5 +1,5 @@
 ---
-title: 管理およびランタイム ツール |Microsoft ドキュメント
+title: 管理およびランタイム ツール |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,31 +18,31 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ad5f8d9c9436f9d32f6adbb30de9ac0efc9948f8
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 683a0f8f3ffbacf78f5a5bec2cf1aa447826e094
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006587"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36990659"
 ---
 # <a name="administration-and-run-time-tools"></a>管理およびランタイム ツール
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server と[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]展開、構成の管理、管理、ビジネス ルール管理などの管理および実行時のタスクを実行して、監視のための一連のツールを提供します。 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツールを参照してください[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server のヘルプします。  
+Microsoft BizTalk Server と Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]展開、構成管理、管理、ビジネス ルールの管理などの管理および実行時のタスクを実行して、監視用ツールのセットを提供します。 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツール、MicrosoftBizTalk Server のヘルプを参照してください。  
   
 ## <a name="biztalk-explorer"></a>BizTalk エクスプローラー  
- BizTalk エクスプローラーを使用して、プロジェクト、パーティ、およびオーケストレーションの構成と管理を行います。 BizTalk エクスプ ローラーでは、アセンブリ、ポート、パーティなどのアイテムを表示する構成データベースの内容を表示します。  
+ BizTalk エクスプローラーを使用して、プロジェクト、パーティ、およびオーケストレーションの構成と管理を行います。 BizTalk エクスプ ローラーでは、アセンブリ、ポート、パーティなどのアイテムを表示、構成データベースの内容を表示します。  
   
 ## <a name="biztalk-accelerator-for-rosettanet-management-console"></a>BizTalk Accelerator for RosettaNet 管理コンソール  
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管理コンソールを使用して、次のような [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 実装を管理します。  
   
--   プロセス構成設定、ホーム組織、パートナー、およびアグリーメント  
+- プロセス構成設定、ホーム組織、パートナー、およびアグリーメント  
   
--   証明書  
+- 証明書  
   
--   BizTalk と[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)][!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]データベース  
+- BizTalk と[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)][!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]データベース  
   
--   イベント  
+- イベント  
   
--   パフォーマンス ログと警告  
+- パフォーマンス ログと警告  
   
 ## <a name="business-rule-engine"></a>ビジネス ルール エンジン  
  BizTalk ビジネス ルール エンジン (BRE) は、事実と照合してルールを評価し、評価の結果に基づいてアクションを開始するために使用できるランタイム推論エンジンです。  

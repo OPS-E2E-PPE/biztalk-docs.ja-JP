@@ -1,5 +1,5 @@
 ---
-title: SSO Projects3 を実行している |Microsoft ドキュメント
+title: SSO Projects3 を実行している |。Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb24cbf09686e8e8a3442583f16f7469d0a2f5aa
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: 27e0423121d0259de0a406e17fa9987a522b549d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "25974944"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008875"
 ---
 # <a name="running-sso-projects"></a>SSO プロジェクトの実行
 Internet Explorer からシングル サインオン (SSO) のサンプル プロジェクトを実行できます。  
@@ -31,13 +31,13 @@ Internet Explorer からシングル サインオン (SSO) のサンプル プ�
   
 #### <a name="to-run-the-sample-from-the-internet-explorer"></a>Internet Explorer からサンプルを実行するには  
   
-1.  ブラウザーを開きます。  
+1. ブラウザーを開きます。  
   
-2.  次の URL に移動します。  
+2. 次の URL に移動します。  
   
-     http://localhost/SSODemo/BTSHTTPReceive.dll?<ns0:method_list_method%20xmlns:ns0="http://microsoft.com/exposed/object/object1"><ns0:method_list_method><ns1:method_list%20xmlns:ns1="http://microsoft.com/exposed/object"><ns1:comp_code></ns1:comp_code><ns1:comp_name></ns1:comp_name></ns1:object_1></ns0:method_list></ns0:method_list_method>  
+    http://localhost/SSODemo/BTSHTTPReceive.dll?<ns0:method_list_method%20xmlns:ns0="http://microsoft.com/exposed/object/object1"><ns0:method_list_method><ns1:method_list%20xmlns:ns1="http://microsoft.com/exposed/object"><ns1:comp_code></ns1:comp_code><ns1:comp_name></ns1:comp_name></ns1:object_1></ns0:method_list></ns0:method_list_method>  
   
-     この場合、資格情報を指定する必要はありません。  
+    この場合、資格情報を指定する必要はありません。  
   
 ## <a name="see-also"></a>参照  
  [アダプターのセキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

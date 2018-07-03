@@ -1,5 +1,5 @@
 ---
-title: アグリゲーター (BizTalk Server サンプル) |Microsoft ドキュメント
+title: アグリゲーター (BizTalk Server サンプル) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 493f4d28214a815aca88f214e5efb9cd883e7192
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: facf91aed1957bca095f004ced4de50843cf55a4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
-ms.locfileid: "25965256"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36994595"
 ---
 # <a name="aggregator-biztalk-server-sample"></a>アグリゲーター (BizTalk Server サンプル)
 このサンプルの目的は、オーケストレーションとパイプラインを使用してメッセージ アグリゲーション機能を構築することです。 特に、以下のことを行うオーケストレーションを構築します。  
@@ -36,54 +36,54 @@ ms.locfileid: "25965256"
 3.  1 分ごとか、アグリゲートするのに十分なメッセージを受信した場合はすぐに XML インターチェンジ メッセージを生成します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<Samples Path\>* \Pipelines\Aggregator  
+ *\<パスのサンプル\>* \Pipelines\Aggregator  
   
  次の表に、このサンプルのファイル一覧を示します。  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |---------------|-----------------|  
 |Aggregator.sln|サンプルの Visual Studio ソリューション ファイルです。|  
 |AggretatorBinding.xml|サンプルのバインド ファイルです。|  
 |Cleanup.bat|アセンブリを展開解除し、グローバル アセンブリ キャッシュ (GAC) から削除するために使用されます。 送信ポートと受信ポートが削除されます。 必要に応じて、Microsoft インターネット インフォメーション サービス (IIS) の仮想ディレクトリが削除されます。|  
 |Setup.bat|このサンプルをビルドおよび初期化するために使用されます。|  
-|Aggregate フォルダー内:<br /><br /> Aggregate.btproj|オーケストレーションをアグリゲートするための BizTalk プロジェクトです。|  
-|Aggregator フォルダー内:<br /><br /> Aggregate.odx|関連付けられているメッセージを 1 か所に集め、送信パイプラインを実行して単一のインターチェンジに組み立てるオーケストレーションです。|  
-|Aggregate フォルダー内:<br /><br /> SuspendMessage.odx|アグリゲート オーケストレーション内で処理できない保留メッセージに対して使用するオーケストレーションです。|  
-|PipelinesAndSchemas フォルダー内:<br /><br /> FFReceivePipeline.btp|フラット ファイル逆アセンブラーを使用した受信パイプラインです。|  
-|PipelinesAndSchemas フォルダー内:<br /><br /> Instance1.txt、Instance2.txt、Instance3.txt、Instance4.txt|サンプルのドキュメント インスタンスです。 Instance1.txt と Instance2.txt は、宛先パートナーのインターチェンジに追加する必要があります[ http://www.contoso.com ](http://www.contoso.com/) Instance3.txt と Instance4.txt は、宛先パートナーのインターチェンジに追加する必要があります[ http://www.northwind.com](http://www.northwind.com/).|  
-|PipelinesAndSchemas フォルダー内:<br /><br /> Invoice.xsd、InvoiceEnvelope.xsd|出力インターチェンジのドキュメント スキーマとエンベロープ スキーマです。|  
-|PipelinesAndSchemas フォルダー内:<br /><br /> PipelinesAndSchemas.btproj|スキーマとパイプラインの BizTalk プロジェクトです。|  
-|PipelinesAndSchemas フォルダー内:<br /><br /> PropertySchema.xsd|サンプルのプロパティ スキーマです。|  
-|PipelinesAndSchemas フォルダー内:<br /><br /> XMLAggregatingPipeline.btp|収集されたメッセージを XML インターチェンジに組み立てるために、オーケストレーションから実行される送信パイプラインです。|  
+|Aggregate フォルダー内: <br /><br /> Aggregate.btproj|オーケストレーションをアグリゲートするための BizTalk プロジェクトです。|  
+|Aggregator フォルダー内: <br /><br /> Aggregate.odx|関連付けられているメッセージを 1 か所に集め、送信パイプラインを実行して単一のインターチェンジに組み立てるオーケストレーションです。|  
+|Aggregate フォルダー内: <br /><br /> SuspendMessage.odx|アグリゲート オーケストレーション内で処理できない保留メッセージに対して使用するオーケストレーションです。|  
+|PipelinesAndSchemas フォルダー内: <br /><br /> FFReceivePipeline.btp|フラット ファイル逆アセンブラーを使用した受信パイプラインです。|  
+|PipelinesAndSchemas フォルダー内: <br /><br /> Instance1.txt、Instance2.txt、Instance3.txt、Instance4.txt|サンプルのドキュメント インスタンスです。 Instance1.txt と Instance2.txt は、宛先パートナーのインターチェンジに追加する必要があります[ http://www.contoso.com ](http://www.contoso.com/) Instance3.txt と Instance4.txt は、宛先パートナーのインターチェンジに追加する必要があります[ http://www.northwind.com](http://www.northwind.com/).|  
+|PipelinesAndSchemas フォルダー内: <br /><br /> Invoice.xsd、InvoiceEnvelope.xsd|出力インターチェンジのドキュメント スキーマとエンベロープ スキーマです。|  
+|PipelinesAndSchemas フォルダー内: <br /><br /> PipelinesAndSchemas.btproj|スキーマとパイプラインの BizTalk プロジェクトです。|  
+|PipelinesAndSchemas フォルダー内: <br /><br /> PropertySchema.xsd|サンプルのプロパティ スキーマです。|  
+|PipelinesAndSchemas フォルダー内: <br /><br /> XMLAggregatingPipeline.btp|収集されたメッセージを XML インターチェンジに組み立てるために、オーケストレーションから実行される送信パイプラインです。|  
   
 ## <a name="building-and-initializing-the-sample"></a>サンプルのビルドおよび初期化  
  次の手順を使用して、アグリゲーターのサンプルをビルドおよび初期化します。  
   
 #### <a name="to-build-and-initialize-the-aggregator-sample"></a>アグリゲーターのサンプルをビルドおよび初期化するには  
   
-1.  コマンド ウィンドウで、次のフォルダーに移動します。  
+1. コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<パスのサンプル\>\Pipelines\Aggregator  
+    \<パスのサンプル\>\Pipelines\Aggregator  
   
-2.  ファイル Setup.bat では、次の操作を実行しますが、実行します。  
+2. ファイルは、次の操作を実行します。 Setup.bat を実行します。  
   
-    -   次のフォルダに、このサンプル用の入力 (In) フォルダと出力 (Out) フォルダを作成します。  
+   - 次のフォルダに、このサンプル用の入力 (In) フォルダと出力 (Out) フォルダを作成します。  
   
-         \<パスのサンプル\>\Pipelines\Aggregator  
+      \<パスのサンプル\>\Pipelines\Aggregator  
   
-    -   このサンプル用の [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトをコンパイルします。  
+   - このサンプル用の [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトをコンパイルします。  
   
-    -   新しいアプリケーション Aggregator Sample を作成し、そこにサンプル アセンブリを展開します。  
+   - 新しいアプリケーション Aggregator Sample を作成し、そこにサンプル アセンブリを展開します。  
   
-    -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信場所、送信ポート、および受信ポートを作成しバインドします。  
+   - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信場所、送信ポート、および受信ポートを作成しバインドします。  
   
-    -   オーケストレーションを参加させて開始し、受信場所を有効化し、送信ポートを開始します。  
+   - オーケストレーションを参加させて開始し、受信場所を有効化し、送信ポートを開始します。  
   
-         開き、Setup.bat ファイルを実行することがなく、このサンプルのプロジェクトをビルドする場合は、最初に .NET Framework の厳密名ユーティリティ (sn.exe) を使用して厳密な名前キーのペアを作成する必要があります。 このキー ペアを使用して、生成されたアセンブリの署名に使用します。  
+      開き、Setup.bat ファイルを実行することがなくこのサンプルでは、プロジェクトをビルドする場合は、まず、.NET Framework の厳密名ユーティリティ (sn.exe) を使用して厳密な名前キーのペアを作成する必要があります。 このキー ペアが結果として得られるアセンブリの署名に使用されるを使用します。  
   
-3.  このサンプルを実行する前に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がビルド プロセス中または初期化プロセス中にエラーを報告していないことを確認してください。  
+3. このサンプルを実行する前に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がビルド プロセス中または初期化プロセス中にエラーを報告していないことを確認してください。  
   
-     Setup.bat によって行われた変更を元に戻すには、Cleanup.bat を実行します。 Setup.bat を 2 回目に実行する場合は、その前に Cleanup.bat を実行してください。  
+    Setup.bat によって行われた変更を元に戻すには、Cleanup.bat を実行します。 Setup.bat を 2 回目に実行する場合は、その前に Cleanup.bat を実行してください。  
   
 ## <a name="running-the-sample"></a>サンプルを実行します。  
  次の手順を使用して、アグリゲーターのサンプルを実行します。  
@@ -92,9 +92,9 @@ ms.locfileid: "25965256"
   
 1.  PipelinesAndSchemas フォルダーにあるファイル Instance1.txt と Instance2.txt を開き、その内容を確認します。  
   
-     どちらのファイルも、DestinationPartnerURI 要素に通知が値を含むhttp://www.contoso.comです。この値は、1 つのインターチェンジに追加できるようにこれら 2 つのメッセージをまとめて関連付けるために使用されます。  
+     どちらのファイルも、DestinationPartnerURI 要素に通知には、値が含まれています。http://www.contoso.comします。 この値は、1 つのインターチェンジに追加できるようにこれら 2 つのメッセージをまとめて関連付けるために使用されます。  
   
-     同様にも、DestinationPatnerURI 要素に設定のあるファイル Instance3.txt と Instance4.txthttp://www.northwind.comです。  
+     同様に、DestinationPatnerURI 要素に設定のあるファイル Instance3.txt と Instance4.txthttp://www.northwind.comします。  
   
      これら 2 つのメッセージが、別の 1 つのインターチェンジに追加されます。  
   

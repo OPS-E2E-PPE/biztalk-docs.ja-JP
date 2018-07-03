@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10844 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10844 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8a3478c05b8613a936c27e60e892d98c4ad0c69
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d3e2a842ac2ab28c7466aaff0b57fe4df27bd08
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276226"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995251"
 ---
 # <a name="single-sign-on-event-10844"></a>シングル サインオン: イベント 10844
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10844|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|ENTSSO_E_MAPPING_EXISTS2|  
-|メッセージ テキスト|マッピングは既に存在します。 詳細については、イベント ログ (コンピューター "%1" 上) を参照してください。|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  製品名   |                             エンタープライズ シングル サインオン                              |
+| 製品バージョン |             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]             |
+|    イベント ID     |                                       10844                                        |
+|  イベント ソース   |                                       ENTSSO                                       |
+|    コンポーネント    |                                        なし                                         |
+|  シンボル名  |                              ENTSSO_E_MAPPING_EXISTS2                              |
+|  メッセージ テキスト   | マッピングは既に存在します。 詳細については、イベント ログ (コンピューター "%1" 上) を参照してください。 |
   
 ## <a name="explanation"></a>説明  
  マッピングは既に存在します。  

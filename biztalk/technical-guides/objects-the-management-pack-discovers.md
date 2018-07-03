@@ -1,5 +1,5 @@
 ---
-title: オブジェクトの管理パックで検出 |Microsoft ドキュメント
+title: 管理パックで検出されるオブジェクト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 109612c690c1e4e2ecb1c0a4a34a07c7bda27e02
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c5c96ea4b2d1b54dfd6105c40046810fb6482e92
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298866"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36990603"
 ---
 # <a name="objects-the-management-pack-discovers"></a>管理パックで検出されるオブジェクト
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックは、次の表で説明されているオブジェクトの種類を検出します。 オブジェクトの検出方法の詳細については、次を参照してください。、 [Operations Manager 2007 のオブジェクト検出](http://go.microsoft.com/fwlink/?LinkId=108505)Operations Manager 2007 R2 または 2012 オンライン ライブラリ (http://go.microsoft.com/fwlink/?LinkId=108505) のトピックです。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックは、次の表で説明されているオブジェクトの種類を検出します。 オブジェクト検出の詳細については、次を参照してください。、 [Operations Manager 2007 のオブジェクト検出](http://go.microsoft.com/fwlink/?LinkId=108505)2012/Operations Manager 2007 R2 のオンライン ライブラリのトピック (<http://go.microsoft.com/fwlink/?LinkId=108505>)。  
   
 |名前|カテゴリ|[オブジェクトの種類]|  
 |----------|--------------|-----------------|  

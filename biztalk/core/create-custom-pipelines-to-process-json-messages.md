@@ -1,5 +1,5 @@
 ---
-title: JSON メッセージを処理するカスタム パイプラインを作成 |Microsoft ドキュメント
+title: JSON メッセージを処理するカスタム パイプラインの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4c329bce3ee8f9e2e4faf11a60e5e38a82ff467
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: e28f825b1f26f3c080a02fd9a2e2bf8960a816fd
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005011"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37005995"
 ---
 # <a name="create-custom-pipelines-to-process-json-messages"></a>JSON メッセージ処理用のカスタム パイプラインの作成
 > [!NOTE]
@@ -27,19 +27,19 @@ ms.locfileid: "26005011"
   
 ## <a name="create-a-custom-receive-pipeline"></a>カスタム受信パイプラインを作成します。  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューション エクスプ ローラーからのアプリケーションは、プロジェクトを右クリックし、順にポイント**追加** > **新しい項目の** > **受信パイプライン**. パイプラインの名前を付けて`JSONToXmlReceivePipeline.btp`、クリックして**追加**です。  
+1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューション エクスプ ローラーからのアプリケーション プロジェクトを右クリックし をポイント**追加** > **新しい項目の** > **受信パイプライン**. パイプラインの名前を付けて`JSONToXmlReceivePipeline.btp`、 をクリックし、**追加**します。  
   
-2.  内で、**デコード**ステージを追加、新しい**JSON デコーダー**です。 スクリーンショットのように、他のステージの他のパイプライン コンポーネントで変更を保存します。  
+2. 内で、**デコード**段階の新しい追加**JSON デコーダー**します。 スクリーンショットのように、他のステージの他のパイプライン コンポーネントで変更を保存します。  
   
-     ![カスタム受信パイプライン](../core/media/btsjson-receivepipeline.png "BTSJSON_ReceivePipeline")  
+    ![カスタム受信パイプライン](../core/media/btsjson-receivepipeline.png "BTSJSON_ReceivePipeline")  
   
 ## <a name="create-a-custom-send-pipeline"></a>カスタム送信パイプラインを作成します。  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューション エクスプ ローラーからのアプリケーションは、プロジェクトを右クリックし、順にポイント**追加** > **新しい項目の** > **送信パイプライン**. パイプラインの名前を付けて`XmlToJSONSendPipeline.btp`、クリックして**追加**です。  
+1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューション エクスプ ローラーからのアプリケーション プロジェクトを右クリックし をポイント**追加** > **新しい項目の** > **送信パイプライン**. パイプラインの名前を付けて`XmlToJSONSendPipeline.btp`、 をクリックし、**追加**します。  
   
-2.  内で、**エンコード**ステージを追加、新しい**JSON エンコーダー**です。 スクリーンショットのように、他のステージの他のパイプライン コンポーネントで変更を保存します。  
+2. 内で、**エンコード**段階の新しい追加**JSON エンコーダー**します。 スクリーンショットのように、他のステージの他のパイプライン コンポーネントで変更を保存します。  
   
-     ![カスタム送信パイプライン](../core/media/btsjson-sendpipeline.png "BTSJSON_SendPipeline")  
+    ![カスタム送信パイプライン](../core/media/btsjson-sendpipeline.png "BTSJSON_SendPipeline")  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server を使用して JSON メッセージの処理](../core/processing-json-messages-using-biztalk-server.md)

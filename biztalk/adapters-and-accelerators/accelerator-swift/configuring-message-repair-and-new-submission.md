@@ -1,5 +1,5 @@
 ---
-title: Message Repair and New Submission の構成 |Microsoft ドキュメント
+title: Message Repair and New Submission の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,19 +16,19 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d2cdbad69b017a3927d3912de42053072d061b6
-ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
+ms.openlocfilehash: 0544adb9fc2ffa60bfc3b69ebee1937e5eb7a18a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34848970"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995795"
 ---
-# <a name="configuring-message-repair-and-new-submission"></a>Message Repair and New Submission を構成します。
-次のセクションの Message Repair and New Submission の機能を構成する手順を実行する必要があります[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]、次の図に示すようにします。  
+# <a name="configuring-message-repair-and-new-submission"></a>Message Repair and New Submission の構成
+Microsoft の Message Repair and New Submission の機能を構成する次のセクションで手順を実行する必要があります[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]、次の図に示すようにします。  
   
  ![](../../adapters-and-accelerators/accelerator-swift/media/a4swift-message-repair-configuration.gif "A4SWIFT_Message_Repair_Configuration")  
   
- A4SWIFT のインストール ウィザードで、Message Repair および New Submission および FIN 対応調整 (FRR) または Message Repair and New Submission FRR、または Message Repair and New Submission せず FRR なしのインストールを選択できます。 その結果、このセクションの手順に限りませんをインストールしている FRR を構成します。 」の手順を実行したこと、ただし、前提、 [A4SWIFT コンポーネント構成ガイド](../../adapters-and-accelerators/accelerator-swift/a4swift-component-configuration-guide.md)セクションです。  
+ A4SWIFT のインストール ウィザードでは、Message Repair および New Submission および FIN 応答の調整 (FRR) または Message Repair and New Submission FRR、または Message Repair and New Submission せず FRR せずにインストールできます。 その結果、インストールと構成の FRR は、このセクションの手順には想定しないでください。 ただし、前提としている手順を実行したこと、 [A4SWIFT コンポーネント構成ガイド](../../adapters-and-accelerators/accelerator-swift/a4swift-component-configuration-guide.md)セクション。  
   
  このセクションには、次のトピックが含まれています。  
   

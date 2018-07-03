@@ -1,5 +1,5 @@
 ---
-title: ESB ディスパッチャー コンポーネント |Microsoft ドキュメント
+title: ESB ディスパッチャー コンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fe377221034637eab23b70c50ccf48a8454a23bf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 16281ff49da6470212e9e8396a051270adf1eef7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294906"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982131"
 ---
 # <a name="the-esb-dispatcher-component"></a>ESB ディスパッチャー コンポーネント
-Itinerary サービスのメッセージング ベース ESB ディスパッチャー コンポーネント内で実行されます。 ディスパッチャーのコンポーネントでは、送信メッセージのエンドポイントの場所のプロパティを動的に設定でき、メッセージを動的に変換することができます。  
+ESB ディスパッチャー コンポーネント内でメッセージング ベースのスケジュール サービスが実行されます。 ディスパッチャー コンポーネントでは、送信メッセージのエンドポイントの場所のプロパティを動的に設定でき、メッセージを動的に変換することができます。  
   
 ## <a name="component-properties"></a>コンポーネント プロパティ  
- ディスパッチャーのコンポーネントには、6 つのプロパティがあります。  
+ ディスパッチャー コンポーネントでは、6 つのプロパティがあります。  
   
--   **RoutingServiceName**です。 このプロパティは、メッセージ ベースのルーティング サービスの登録名を指定します。 既定値は**Microsoft.Practices.ESB.Services.Routing**です。  
+- **RoutingServiceName**します。 このプロパティは、メッセージング ベースのルーティング サービスの登録名を指定します。 既定値は**Microsoft.Practices.ESB.Services.Routing**します。  
   
--   **TransformServiceName**です。 このプロパティは、トランス フォームのメッセージング ベースのサービスの登録名を指定します。 既定値は**Microsoft.Practices.ESB.Services.Transform**です。  
+- **TransformServiceName**します。 このプロパティは、変換のメッセージング ベースのサービスの登録名を指定します。 既定値は**Microsoft.Practices.ESB.Services.Transform**します。  
   
--   **検証**です。 このプロパティは、メッセージが検証に使用する必要があるかどうかを指定します。  
+- **検証**です。 このプロパティは、メッセージを検証する必要かどうかを指定します。  
   
--   **有効になっている**です。 このプロパティは、有効またはコンポーネントを無効にします。  
+- **有効になっている**します。 このプロパティは、有効またはコンポーネントを無効にします。  
   
--   **エンドポイント**です。 このプロパティは、BizTalk ESB Toolkit に登録されている形式での競合回避モジュールの接続文字列です。  
+- **エンドポイント**します。 このプロパティは、BizTalk ESB Toolkit に登録されている形式での競合回避モジュールの接続文字列です。  
   
--   **マップ名**です。 このプロパティは、マップの完全修飾名または接続文字列の形式に登録されている[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]:  
+- **マップ名**します。 このプロパティは、マップの完全修飾名または接続文字列の形式に登録されている[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]:  
   
-    -   マップ名の例を次に示します。  
+  -   マップ名の例を次に示します。  
   
-        ```  
-        GlobalBank.ESB.DynamicResolution.Transforms.SubmitOrderRequestNA_To_SubmitOrderRequestCN, GlobalBank.ESB.DynamicResolution.Transforms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c2c8b2b87f54180a  
-        ```
+      ```  
+      GlobalBank.ESB.DynamicResolution.Transforms.SubmitOrderRequestNA_To_SubmitOrderRequestCN, GlobalBank.ESB.DynamicResolution.Transforms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c2c8b2b87f54180a  
+      ```

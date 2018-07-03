@@ -1,5 +1,5 @@
 ---
-title: 'チェックリスト: がセキュリティで保護された環境での操作の計画 |Microsoft ドキュメント'
+title: 'チェックリスト: セキュリティで保護された環境での操作の計画 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
@@ -12,130 +12,134 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c99c14f16df3f6b98555a4006706eb7804f24a34
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 9caa74fbd3e9ac06728a9e2ee332bb3277f8a240
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25976832"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995923"
 ---
-# <a name="checklist-planning-for-operations-in-a-secure-environment"></a>チェックリスト: がセキュリティで保護された環境での操作の計画
-実行している[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セキュリティで保護された環境での展開と構成の追加の手順が必要です。 オペレーティング システムの既定のインストールが必要を使用しないこれらのアカウントが、シナリオに制限の厳しいセキュリティ ポリシーが適用されたときに、このセクションの情報はアカウントにする必要があります。 サーバーに適用される制限のレベルが異なる場合がありますが、次の情報を選択し、ほとんどのケースを反映する必要がありますが、適切な開始点です。  
-  
--   [BizTalk Server を実行するコンピューターのセキュリティに関する考慮事項](../technical-guides/checklist-planning-for-operations-in-a-secure-environment.md#BKMK_BTSSec)  
-  
--   [SQL Server を実行するコンピューターのセキュリティに関する考慮事項](../technical-guides/checklist-planning-for-operations-in-a-secure-environment.md#BKMK_SQLServSec)  
-  
+# <a name="checklist-planning-for-operations-in-a-secure-environment"></a>チェックリスト: セキュリティで保護された環境での操作の計画
+実行している[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セキュリティで保護された環境でのデプロイと構成の追加の手順が必要です。 オペレーティング システムの既定のインストールが必要になりませんこれらのアカウントが、シナリオに制限の厳しいセキュリティ ポリシーが適用されている、中に、このセクションの情報はアカウントに行う必要があります。 サーバーに適用される制限のレベルが異なる場合がありますが、以下の情報は、ほとんどの場合に対応する必要があり、、出発点として適しています。  
+
+-   [BizTalk Server を実行しているコンピューターのセキュリティに関する考慮事項](../technical-guides/checklist-planning-for-operations-in-a-secure-environment.md#BKMK_BTSSec)  
+
+-   [SQL Server を実行しているコンピューターのセキュリティに関する考慮事項](../technical-guides/checklist-planning-for-operations-in-a-secure-environment.md#BKMK_SQLServSec)  
+
 -   [追加のセキュリティに関する考慮事項](../technical-guides/checklist-planning-for-operations-in-a-secure-environment.md#BKMK_AddSec)  
-  
+
 <a name="BKMK_BTSSec"></a>   
-## <a name="security-considerations-for-computers-running-biztalk-server"></a>BizTalk Server を実行するコンピューターのセキュリティに関する考慮事項  
- 次の表は、実行しているコンピューターのセキュリティ関連の設定を提案[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。  
-  
+## <a name="security-considerations-for-computers-running-biztalk-server"></a>BizTalk Server を実行しているコンピューターのセキュリティに関する考慮事項  
+ 次の表は、実行しているコンピューターのセキュリティ関連の設定を示して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
+
 ### <a name="user-rights-assignment"></a>ユーザー権利の割り当て  
- ユーザー権利の割り当ての MMC スナップインを開始するには、クリックして**開始**、 をクリックして**管理ツール**、順にクリック**ローカル セキュリティ ポリシー**です。 **ローカル セキュリティ ポリシー** MMC スナップインで、展開**セキュリティ設定**、展開**ローカル ポリシー**、クリックして**ユーザー権利の割り当て**.  
-  
-|ポリシー設定|値|参照と詳細|  
+ ユーザー権利の割り当ての MMC スナップインを開始するには、クリックして**開始**、 をクリックして**管理ツール**、 をクリックし、**ローカル セキュリティ ポリシー**。 **ローカル セキュリティ ポリシー** MMC スナップインで、展開**セキュリティ設定**、展開**ローカル ポリシー**、 をクリックし、**ユーザー権利の割り当て**.  
+
+|ポリシーの設定|値|リファレンスと詳細|  
 |--------------------|------------|---------------------------|  
-|サービスとしてログオン|BizTalk Application Users|BizTalk ホスト インスタンスの実行に必要です。 別のユーザー アカウントの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)。|  
-|サービスとしてログオン|ルール エンジン更新サービス アカウント|ルール エンジン更新サービスの実行に必要です。 別のユーザー アカウントの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)。|  
-|サービスとしてログオン|SSO サービス アカウント|エンタープライズ シングル サインオン サービスの実行に必要です。 別のユーザー アカウントの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)。|  
-  
+|サービスとしてログオン|BizTalk Application Users|BizTalk ホスト インスタンスの実行に必要です。 別のユーザー アカウントの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)します。|  
+|サービスとしてログオン|ルール エンジン更新サービス アカウント|ルール エンジン更新サービスの実行に必要です。 別のユーザー アカウントの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)します。|  
+|サービスとしてログオン|SSO サービス アカウント|エンタープライズ シングル サインオン サービスの実行に必要です。 別のユーザー アカウントの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)します。|  
+
 ### <a name="system-services"></a>システム サービス  
- サービス MMC スナップインを開始するには、クリックして**開始**、 をクリックして**実行**、し、、**実行** ダイアログ ボックスで、「 `services.msc` ENTER キーを押します。  
-  
-|[サービス名]|スタートアップの種類<sup>1</sup>|詳細|ユーザー<sup>2</sup>|Permissions|詳細|  
-|------------------|------------------------------|-------------|----------------------|-----------------|-------------|  
-|COM+ System Application|自動|BizTalk が正常に実行するために必要な|(既定値)。|||  
-|DHCP クライアント|自動|必要な場合でも、IP アドレスは静的|(既定値)。|||  
-|分散トランザクション コーディネーター|自動|BizTalk が正常に実行するために必要な|SSO サービス アカウント|フル コントロール|SSO サービスを開始するために必要|  
-||||BizTalk ホスト サービス アカウント|フル コントロール|BizTalk ホストを開始するために必要|  
-||||Network Service|フル コントロール|IIS で必要|  
-|HTTP SSL<sup>3</sup>|自動|IIS で必要|(既定値)。|||  
-|IPSEC サービス<sup>3</sup>|自動|IPSEC が使用されている場合、ネットワークのセキュリティを向上します。|(既定値)。|||  
-|Netlogon|(既定値)。||Local Service|フル コントロール||  
-|NT LM セキュリティ サポート プロバイダー<sup>3</sup>|自動|Kerberos 認証のために必要な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]sql|(既定値)。|||  
-|Remote Access Connection Manager|(既定値)。||SSO サービス アカウント|フル コントロール|SSO サービスを開始するために必要|  
-||||BizTalk ホスト サービス アカウント|フル コントロール|BizTalk ホストを開始するために必要|  
-||||Network Service|フル コントロール|IIS で必要|  
-|リモート プロシージャ コール (RPC) ロケーター|自動|BizTalk で必要|(既定値)。|||  
-|WinHTTP Web プロキシ自動検出サービス|(既定値)。||SSO サービス アカウント|フル コントロール|SSO サービスを開始するために必要|  
-||||BizTalk ホスト サービス アカウント|フル コントロール|BizTalk ホストを開始するために必要|  
-  
+ サービス MMC スナップインを開始するには、クリックして**開始**、 をクリックして**実行**、し、**実行**ダイアログ ボックスに「 `services.msc` ENTER キーを押します。  
+
+
+|                [サービス名]                 | スタートアップの種類<sup>1</sup> |                                                              詳細                                                               |       ユーザー<sup>2</sup>        | アクセス許可  |             詳細             |
+|---------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|--------------|---------------------------------|
+|           COM+ System Application           |        自動         |                                                BizTalk が正常に実行するために必要な                                                 |           (既定値)。           |              |                                 |
+|                 DHCP クライアント                 |        自動         |                                              IP アドレスは静的な場合でも必要です。                                              |           (既定値)。           |              |                                 |
+|     分散トランザクション コーディネーター     |        自動         |                                                BizTalk が正常に実行するために必要な                                                 |      SSO サービス アカウント      | フル コントロール |  SSO サービスを開始するために必要  |
+|                                             |                          |                                                                                                                                    | BizTalk ホスト サービス アカウント | フル コントロール | BizTalk ホストを開始するために必要 |
+|                                             |                          |                                                                                                                                    |        Network Service        | フル コントロール |         IIS が必要です。         |
+|            HTTP SSL<sup>3</sup>             |        自動         |                                                          IIS が必要です。                                                           |           (既定値)。           |              |                                 |
+|         IPSEC サービス<sup>3</sup>          |        自動         |                                              IPSEC が使用されている場合、ネットワーク セキュリティを向上します。                                              |           (既定値)。           |              |                                 |
+|                  Netlogon                   |        (既定値)。         |                                                                                                                                    |         Local Service         | フル コントロール |                                 |
+| NT LM Security Support Provider<sup>3</sup> |        自動         | Kerberos 認証のために必要な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]sql |           (既定値)。           |              |                                 |
+|      Remote Access Connection Manager       |        (既定値)。         |                                                                                                                                    |      SSO サービス アカウント      | フル コントロール |  SSO サービスを開始するために必要  |
+|                                             |                          |                                                                                                                                    | BizTalk ホスト サービス アカウント | フル コントロール | BizTalk ホストを開始するために必要 |
+|                                             |                          |                                                                                                                                    |        Network Service        | フル コントロール |         IIS が必要です。         |
+|     リモート プロシージャ コール (RPC) ロケーター     |        自動         |                                                        BizTalk が必要です。                                                         |           (既定値)。           |              |                                 |
+|  WinHTTP の Web プロキシ自動検出サービス   |        (既定値)。         |                                                                                                                                    |      SSO サービス アカウント      | フル コントロール |  SSO サービスを開始するために必要  |
+|                                             |                          |                                                                                                                                    | BizTalk ホスト サービス アカウント | フル コントロール | BizTalk ホストを開始するために必要 |
+
  <sup>1</sup> (既定値) の値は、セキュリティ ポリシーによって適用される既定の設定が変更されていないことを意味  
-  
+
  <sup>2</sup> (既定値) の値は、サービスの既定のユーザー アクセス許可が変更されていないことを意味  
-  
+
 ### <a name="registry-settings"></a>レジストリ設定  
- レジストリ エディターを起動する をクリックして**開始**、 をクリックして**実行**、し、、**実行** ダイアログ ボックスで、「 `regedit` ENTER キーを押します。  
-  
-|Key|ユーザー|Permissions|詳細|  
+ レジストリ エディターを起動するには、次のようにクリックします。**開始**、 をクリック**実行**、し、**実行**ダイアログ ボックスに「 `regedit` ENTER キーを押します。  
+
+|Key|ユーザー|アクセス許可|詳細|  
 |---------|----------|-----------------|-------------|  
-|Hklm \ SYSTEM\CurrentControlSet\Services\DHCP|Network Service|フル コントロール|DHCP クライアント サービスで必要|  
-|Hklm \ SYSTEM\CurrentControlSet\Services\TCPIP|Network Service|フル コントロール|DHCP クライアント サービスで必要|  
-  
+|Hklm \ SYSTEM\CurrentControlSet\Services\DHCP|Network Service|フル コントロール|DHCP クライアント サービスに必要な|  
+|Hklm \ SYSTEM\CurrentControlSet\Services\TCPIP|Network Service|フル コントロール|DHCP クライアント サービスに必要な|  
+
 <a name="BKMK_SQLServSec"></a>   
-## <a name="security-considerations-for-computers-running-sql-server"></a>SQL Server を実行するコンピューターのセキュリティに関する考慮事項  
- 次の表は、実行しているコンピューターのセキュリティ関連の設定を提案[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]です。  
-  
+## <a name="security-considerations-for-computers-running-sql-server"></a>SQL Server を実行しているコンピューターのセキュリティに関する考慮事項  
+ 次の表は、実行しているコンピューターのセキュリティ関連の設定を示して[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。  
+
 ### <a name="user-rights-assignment"></a>ユーザー権利の割り当て  
- ユーザー権利の割り当ての MMC スナップインを開始するには、クリックして**開始**、 をクリックして**管理ツール**、順にクリック**ローカル セキュリティ ポリシー**です。 **ローカル セキュリティ ポリシー** MMC スナップインで、展開**セキュリティ設定**、展開**ローカル ポリシー**、クリックして**ユーザー権利の割り当て**.  
-  
-|ポリシー設定|値|参照と詳細|  
-|--------------------|------------|---------------------------|  
-|オペレーティング システムの一部として機能|SQL Server エージェント サービス アカウント、SQL Server サービス アカウント|実行するために必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
-|プロセスのメモリ クォータの調整|SQL Server エージェント サービス アカウント、SQL Server サービス アカウント|実行するために必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
-|走査チェックのバイパス|SQL Server エージェント サービス アカウント、SQL Server サービス アカウント|実行するために必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
-|グローバル オブジェクトの作成|[SQL Server サービス アカウント]|SSIS サービスで必要です。 詳細については、次を参照してください。 [Windows サービス アカウントの設定](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
-|委任に対して信頼されているコンピューターとユーザーのアカウントを有効にします。|SQL Server サービス アカウント、SQL Server サーバーでは、BizTalk Server サーバー、SQL Server クラスター名|BizTalk Server で必要です。 サーバー名は、フォーム\<servername\>$ です。 詳細については、次を参照してください。[する方法: SQL Server フェールオーバー クラスターで Kerberos 認証を有効にする](http://go.microsoft.com/fwlink/?LinkId=157417)(http://go.microsoft.com/fwlink/?LinkId=157417)。|  
-|サービスとしてログオン|SQL Server エージェント サービス アカウント、SQL Server サービス アカウント|実行するために必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
-|サービスとしてログオン|SSO サービス アカウント|エンタープライズ シングル サインオン サービスの実行に必要です。 別のユーザー アカウントの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)。|  
-|バッチ ジョブとしてログオンします。|SQL Server エージェント サービス アカウント、SQL Server サービス アカウント|実行するために必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
-|プロセス レベル トークンを置き換え|SQL Server エージェント サービス アカウント、SQL Server サービス アカウント|実行するために必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
-  
+ ユーザー権利の割り当ての MMC スナップインを開始するには、クリックして**開始**、 をクリックして**管理ツール**、 をクリックし、**ローカル セキュリティ ポリシー**。 **ローカル セキュリティ ポリシー** MMC スナップインで、展開**セキュリティ設定**、展開**ローカル ポリシー**、 をクリックし、**ユーザー権利の割り当て**.  
+
+
+|                         ポリシーの設定                         |                                             値                                              |                                                                                                                             リファレンスと詳細                                                                                                                             |
+|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|              オペレーティング システムの一部として機能               |                  SQL Server エージェント サービス アカウント、SQL Server サービス アカウント                   |         実行に必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定を](http://go.microsoft.com/fwlink/?LinkId=157415)(<http://go.microsoft.com/fwlink/?LinkId=157415>)。          |
+|               プロセスのメモリ クォータの調整               |                   SQL Server エージェント サービス アカウント、SQL Server サービス アカウント                   |         実行に必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定を](http://go.microsoft.com/fwlink/?LinkId=157415)(<http://go.microsoft.com/fwlink/?LinkId=157415>)。          |
+|                    走査チェックのバイパス                    |                   SQL Server エージェント サービス アカウント、SQL Server サービス アカウント                   |         実行に必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定を](http://go.microsoft.com/fwlink/?LinkId=157415)(<http://go.microsoft.com/fwlink/?LinkId=157415>)。          |
+|                     グローバル オブジェクトの作成                      |                                   [SQL Server サービス アカウント]                                    |                                          SSIS サービスで必要です。 詳細については、次を参照してください。 [Windows サービス アカウントの設定を](http://go.microsoft.com/fwlink/?LinkId=157415)(<http://go.microsoft.com/fwlink/?LinkId=157415>)。                                           |
+| 委任に対して信頼されるコンピューターとユーザーのアカウントを有効にします。 | SQL Server サービス アカウント、SQL Server サーバーでは、BizTalk Server サーバー、SQL Server クラスター名 | BizTalk Server で必要です。 サーバー名が、 \<servername\>$。 詳細については、次を参照してください。[方法: SQL Server フェールオーバー クラスターで Kerberos 認証を有効にする](http://go.microsoft.com/fwlink/?LinkId=157417)(<http://go.microsoft.com/fwlink/?LinkId=157417>)。 |
+|                      サービスとしてログオン                       |                   SQL Server エージェント サービス アカウント、SQL Server サービス アカウント                   |         実行に必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定を](http://go.microsoft.com/fwlink/?LinkId=157415)(<http://go.microsoft.com/fwlink/?LinkId=157415>)。          |
+|                      サービスとしてログオン                       |                                       SSO サービス アカウント                                       |       エンタープライズ シングル サインオン サービスの実行に必要です。 別のユーザー アカウントの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(<http://go.microsoft.com/fwlink/?LinkID=155755>)。       |
+|                      バッチ ジョブとしてログオンします。                       |                   SQL Server エージェント サービス アカウント、SQL Server サービス アカウント                   |         実行に必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定を](http://go.microsoft.com/fwlink/?LinkId=157415)(<http://go.microsoft.com/fwlink/?LinkId=157415>)。          |
+|                 プロセス レベル トークンを置き換え                  |                   SQL Server エージェント サービス アカウント、SQL Server サービス アカウント                   |         実行に必要な[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 詳細については、次を参照してください。 [Windows サービス アカウントの設定を](http://go.microsoft.com/fwlink/?LinkId=157415)(<http://go.microsoft.com/fwlink/?LinkId=157415>)。          |
+
 ### <a name="system-services"></a>システム サービス  
- サービス MMC スナップインを開始するには、クリックして**開始**、 をクリックして**実行**、し、、**実行** ダイアログ ボックスで、「 `services.msc` ENTER キーを押します。  
-  
-|[サービス名]|スタートアップの種類<sup>1</sup>|詳細|ユーザー<sup>2</sup>|Permissions|詳細|  
-|------------------|------------------------------|-------------|----------------------|-----------------|-------------|  
-|DHCP クライアント|自動|必要な場合でも、IP アドレスは静的|(既定値)。|||  
-|分散トランザクション コーディネーター|手動|クラスター サービスによって管理されるサービスの開始|SSO サービス アカウント|フル コントロール|SSO サービスを開始するために必要|  
-||||Network Service|フル コントロール|IIS で必要|  
-|HTTP SSL<sup>3</sup>|自動|IIS で必要|(既定値)。|||  
-|IPSEC サービス<sup>3</sup>|自動|IPSEC が使用されている場合、ネットワークのセキュリティを向上します。|(既定値)。|||  
-|Netlogon|(既定値)。||Local Service|フル コントロール||  
-|NT LM セキュリティ サポート プロバイダー<sup>3</sup>|自動|Kerberos 認証のために必要な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]sql|(既定値)。|||  
-|Remote Access Connection Manager|(既定値)。||SSO サービス アカウント|フル コントロール|SSO サービスを開始するために必要|  
-||||Network Service|フル コントロール|IIS で必要|  
-|[サーバー]|自動|ファイル共有のクラスター化されたリソースの使用|Network Service|フル コントロール||  
-|WinHTTP Web プロキシ自動検出サービス|(既定値)。||SSO サービス アカウント|フル コントロール|SSO サービスを開始するために必要|  
-||World Wide Web Publishing サービス|自動|SQL Server Reporting Services が必要|(既定値)。||  
-  
+ サービス MMC スナップインを開始するには、クリックして**開始**、 をクリックして**実行**、し、**実行**ダイアログ ボックスに「 `services.msc` ENTER キーを押します。  
+
+
+|                [サービス名]                 |     スタートアップの種類<sup>1</sup>      |                                                              詳細                                                               |             ユーザー<sup>2</sup>              | アクセス許可  |            詳細            |
+|---------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|--------------|-------------------------------|
+|                 DHCP クライアント                 |             自動             |                                              IP アドレスは静的な場合でも必要です。                                              |                 (既定値)。                 |              |                               |
+|     分散トランザクション コーディネーター     |              手動               |                                             クラスター サービスによって管理されるサービスのスタートアップ                                             |            SSO サービス アカウント            | フル コントロール | SSO サービスを開始するために必要 |
+|                                             |                                   |                                                                                                                                    |              Network Service              | フル コントロール |        IIS が必要です。        |
+|            HTTP SSL<sup>3</sup>             |             自動             |                                                          IIS が必要です。                                                           |                 (既定値)。                 |              |                               |
+|         IPSEC サービス<sup>3</sup>          |             自動             |                                              IPSEC が使用されている場合、ネットワーク セキュリティを向上します。                                              |                 (既定値)。                 |              |                               |
+|                  Netlogon                   |             (既定値)。             |                                                                                                                                    |               Local Service               | フル コントロール |                               |
+| NT LM Security Support Provider<sup>3</sup> |             自動             | Kerberos 認証のために必要な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]sql |                 (既定値)。                 |              |                               |
+|      Remote Access Connection Manager       |             (既定値)。             |                                                                                                                                    |            SSO サービス アカウント            | フル コントロール | SSO サービスを開始するために必要 |
+|                                             |                                   |                                                                                                                                    |              Network Service              | フル コントロール |        IIS が必要です。        |
+|                   [サーバー]                    |             自動             |                                              ファイル共有のクラスター化されたリソースの使用                                               |              Network Service              | フル コントロール |                               |
+|  WinHTTP の Web プロキシ自動検出サービス   |             (既定値)。             |                                                                                                                                    |            SSO サービス アカウント            | フル コントロール | SSO サービスを開始するために必要 |
+|                                             | World Wide Web Publishing サービス |                                                             自動                                                              | SQL Server Reporting Services で必要 |  (既定値)。   |                               |
+
  <sup>1</sup> (既定値) の値は、セキュリティ ポリシーによって適用される既定の設定が変更されていないことを意味  
-  
+
  <sup>2</sup> (既定値) の値は、サービスの既定のユーザー アクセス許可が変更されていないことを意味  
-  
+
 ### <a name="registry-settings"></a>レジストリ設定  
- レジストリ エディターを起動する をクリックして**開始**、 をクリックして**実行**、し、、**実行** ダイアログ ボックスで、「 `regedit` ENTER キーを押します。  
-  
-|Key|ユーザー|Permissions|詳細|  
+ レジストリ エディターを起動するには、次のようにクリックします。**開始**、 をクリック**実行**、し、**実行**ダイアログ ボックスに「 `regedit` ENTER キーを押します。  
+
+|Key|ユーザー|アクセス許可|詳細|  
 |---------|----------|-----------------|-------------|  
-|Hklm \ SYSTEM\CurrentControlSet\Services\DHCP|Network Service|フル コントロール|DHCP クライアント サービスで必要|  
-|Hklm \ SYSTEM\CurrentControlSet\Services\TCPIP|Network Service|フル コントロール|DHCP クライアント サービスで必要|  
-  
+|Hklm \ SYSTEM\CurrentControlSet\Services\DHCP|Network Service|フル コントロール|DHCP クライアント サービスに必要な|  
+|Hklm \ SYSTEM\CurrentControlSet\Services\TCPIP|Network Service|フル コントロール|DHCP クライアント サービスに必要な|  
+
 <a name="BKMK_AddSec"></a>   
 ## <a name="additional-security-considerations"></a>追加のセキュリティに関する考慮事項  
  次の表は、その他の重要なセキュリティ関連の設定を示して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。  
-  
-|影響を受けたアイテム|変更|参照と詳細|  
-|-----------------------|------------|---------------------------|  
-|SSO サービス アカウント|クラスター マネージャーでクラスターに対するフル コントロール権限を許可します。|この変更が正常に動作するために SSO 必要|  
-|SQL Server サービス アカウント、SQL Server サーバーでは、BizTalk Server サーバー、SQL Server クラスター名|Active Directory による委任に対して信頼|適切な Kerberos 認証が必要です。 詳細については、次を参照してください。[する方法: SQL Server フェールオーバー クラスターで Kerberos 認証を有効にする](http://go.microsoft.com/fwlink/?LinkId=157417)(http://go.microsoft.com/fwlink/?LinkId=157417)。|  
-|[SQL Server サービス アカウント]|SPN のエントリを作成するアクセス許可を付与します。|適切な Kerberos 認証が必要です。 詳細については、次を参照してください。 [SQL Server で Kerberos 認証を使用する方法](http://go.microsoft.com/fwlink/?LinkId=157420)(http://go.microsoft.com/fwlink/?LinkId=157420)。|  
-|ノードの SQL Server、SQL クラスターの名前|SQL Server サービス アカウントのユーザーの SPN のエントリを作成します。|適切な Kerberos 認証が必要です。 詳細については、次を参照してください。 [SQL Server で Kerberos 認証を使用する方法](http://go.microsoft.com/fwlink/?LinkId=157420)(http://go.microsoft.com/fwlink/?LinkId=157420)。|  
-|SQL ネットワーク名クラスター リソース|DNS 登録する必要がありますの成功、Kerberos 認証の有効化|適切な Kerberos 認証に必要な|  
-|SQL Server セキュリティ構成|リモート管理者が直接接続を有効にします。|SQL クライアント (BizTalk/ASP.NET) に SQL Server のインスタンスの名前を正しく特定するために必要な適切に機能する SQL の Browser サービスが必要|  
-|BizTalk アプリケーション ユーザー グループ|に対する Execute 権限を付与権限**sp_help_jobhistory**で**msdb**データベース|必要[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-  
+
+
+|                                        成果物の影響を受ける                                        |                                 [変更]                                  |                                                                                                               リファレンスと詳細                                                                                                                |
+|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                       SSO サービス アカウント                                       |       クラスター マネージャーでクラスターに対するフル コントロール権限を許可します。       |                                                                                             この変更は正常に動作するために SSO に必要なします。                                                                                              |
+| SQL Server サービス アカウント、SQL Server サーバーでは、BizTalk Server サーバー、SQL Server クラスター名 |                Active Directory で委任に対して信頼                 | 適切な Kerberos 認証が必要です。 詳細については、次を参照してください。[方法: SQL Server フェールオーバー クラスターで Kerberos 認証を有効にする](http://go.microsoft.com/fwlink/?LinkId=157417)(<http://go.microsoft.com/fwlink/?LinkId=157417>)。 |
+|                                   [SQL Server サービス アカウント]                                    |                 SPN のエントリを作成するアクセス許可を付与                  |            適切な Kerberos 認証が必要です。 詳細については、次を参照してください。 [SQL Server で Kerberos 認証を使用する方法](http://go.microsoft.com/fwlink/?LinkId=157420)(<http://go.microsoft.com/fwlink/?LinkId=157420>)。             |
+|                               SQL Server ノードでは、SQL クラスターの名前                                |         SQL Server サービス アカウントのユーザーの SPN のエントリを作成します。          |            適切な Kerberos 認証が必要です。 詳細については、次を参照してください。 [SQL Server で Kerberos 認証を使用する方法](http://go.microsoft.com/fwlink/?LinkId=157420)(<http://go.microsoft.com/fwlink/?LinkId=157420>)。             |
+|                               SQL ネットワーク名クラスター リソース                                |     DNS 登録する必要がありますの成功、Kerberos 認証の有効化      |                                                                                                    適切な Kerberos 認証に必要な                                                                                                     |
+|                                SQL Server セキュリティ構成                                 |              管理者が直接リモート接続を有効にします。              |                                           SQL Server のインスタンスの名前を正しく特定するには、SQL クライアント (BizTalk/ASP.NET) で必要な適切に機能する SQL ブラウザー サービスで必要                                           |
+|                                 BizTalk アプリケーション ユーザー グループ                                 | Grant Execute 権限を**sp_help_jobhistory**で**msdb**データベース |                                                                           要求者 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                                                                           |
+
 ## <a name="see-also"></a>参照  
  [その他の重要なタスクのチェックリスト](~/technical-guides/checklists-for-other-important-tasks.md)

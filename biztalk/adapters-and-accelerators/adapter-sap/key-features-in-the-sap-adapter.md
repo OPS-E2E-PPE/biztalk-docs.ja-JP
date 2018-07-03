@@ -1,5 +1,5 @@
 ---
-title: SAP アダプターの機能のキー |Microsoft ドキュメント
+title: 主要な SAP アダプターの機能 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -25,56 +25,56 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b34a695e34f617f6444b728e92cb544f91448c5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8e85f067b53c8a46238e4de343f240cfc2784885
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22218386"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36994571"
 ---
-# <a name="key-features-in-the-sap-adapter"></a>SAP アダプターの主要な機能
-このセクションに一覧表示、非推奨の新機能と[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]です。  
+# <a name="key-features-in-the-sap-adapter"></a>SAP アダプターの主な機能
+このセクションでは、新しいと非推奨の機能を示します[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]します。  
   
 > [!NOTE]
->  このトピックの内容が以前のバージョンから使用された[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]ヘルプします。  
+>  このトピックでは、以前のバージョンから使用されています[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]ヘルプします。  
   
 ## <a name="features-in-the-sap-adapter"></a>SAP アダプターの機能  
- 以前のリリースで導入された機能は、次のとおり、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
+ 以前のリリースで導入された機能を次に、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
-### <a name="technology-related-features"></a>テクノロジに関連する機能  
+### <a name="technology-related-features"></a>テクノロジ関連の機能  
   
-|機能|解説|  
-|-------------|-------------|  
-|使用して、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]と SQL Server Reporting Services (SSRS)。|クライアント プログラムを使用できるようになりました、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SSRS プロジェクトに SAP バックエンドからデータをインポートし、データを使用してレポートを生成します。 使用する方法の詳細について、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]で、SSRS では、次を参照してください。 [SSRS と SAP 用データ プロバイダーを使用して](../../adapters-and-accelerators/adapter-sap/use-the-data-provider-for-sap-with-ssrs.md)です。 SSRS の詳細については、次を参照してください。 [SQL Server Reporting Services](https://msdn.microsoft.com/library/ms159106.aspx)です。|  
-|SAP システムで定義されているクエリを呼び出すためのサポート|[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]操作を公開する、EXECQUERY、SAP システムで定義されているクエリを実行するために使用できます。 EXECQUERY 機能を使用する方法の詳細については、[SAP クエリの実行のサポートを参照してください。
+|                                                            機能                                                             |                                                                                                                                                                                                                                                                                              解説                                                                                                                                                                                                                                                                                               |
+|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 使用して、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]と SQL Server Reporting Services (SSRS)。 | クライアント プログラムが使用できるようになりました、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SSRS プロジェクトに SAP バックエンドからデータをインポートし、データからレポートを生成します。 使用方法の詳細については、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] ssrs では、次を参照してください。 [for SAP を SSRS と一緒にデータ プロバイダーを使用して](../../adapters-and-accelerators/adapter-sap/use-the-data-provider-for-sap-with-ssrs.md)します。 SSRS の詳細については、次を参照してください。 [SQL Server Reporting Services](https://msdn.microsoft.com/library/ms159106.aspx)します。 |
+|                                     SAP システムで定義されているクエリを呼び出すためのサポート                                      |                                                                                                                                                           [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]する操作では、SAP システムで定義されているクエリを実行するために使用するには、EXECQUERY を公開します。 EXECQUERY 機能を使用する方法の詳細については、[SAP クエリの実行のサポートを参照してください。                                                                                                                                                            |
 
 ](https://msdn.microsoft.com/library/dd788118.aspx).|  
-|使用するためのサポート、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]と Microsoft Office SharePoint Server (MOSS) |アダプターを使用して、MOSS ポータルに SAP システムからデータを表示することができます。 詳細については、次を参照してください[SAP アダプターを使用して、SharePoint と](../../adapters-and-accelerators/adapter-sap/use-the-sap-adapter-with-sharepoint.md)。 |。  
+|使用するためのサポート、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]と Microsoft Office SharePoint Server (MOSS) |アダプターを使用して、MOSS ポータル上に SAP システムからデータを表示することができます。 詳細については、次を参照してください[SharePoint で SAP アダプターを使用する](../../adapters-and-accelerators/adapter-sap/use-the-sap-adapter-with-sharepoint.md)。 |。  
   
 ### <a name="metadata-related-features"></a>メタデータに関連する機能  
   
-|機能|解説|  
-|-------------|-------------|  
-|**DataTypesBehavior**プロパティのバインド|[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]付属[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]複合バインディング プロパティを提供**DataTypesBehavior**、SAP システム内の特殊な値が発生したときに、アダプターの動作を制御するアダプターのクライアントを有効にします。 このバインディングのプロパティに関する詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。|  
+|                機能                 |                                                                                                                                                                                                                                                                                                   解説                                                                                                                                                                                                                                                                                                    |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **DataTypesBehavior**プロパティのバインド | [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]付属[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]複合バインディングのプロパティを提供します。 **DataTypesBehavior**、特殊な値が SAP システムで発生した場合に、アダプターの動作を制御するアダプターのクライアントを有効にします。 このバインドのプロパティに関する詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。 |
   
-### <a name="operations-related-features"></a>操作に関連する機能  
+### <a name="operations-related-features"></a>操作に関連の機能  
   
-|機能|解説|  
-|-------------|-------------|  
-|RFC で必要な外部のプログラムを起動するためのサポート|[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]バインド プロパティを提供**RfcAllowStartProgram** 、必要な特定の RFC で場合は、外部プログラムを呼び出すために RFC クライアント ライブラリを有効にするを設定することができます。 このバインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)です。|  
-|1 回の呼び出しで複数の Idoc を送信するためのサポート|SAP アダプターは、1 つのアダプターの呼び出しで同じ種類の複数の Idoc を送信できるようになりました。|  
+|                          機能                          |                                                                                                                                                                                                                                                 解説                                                                                                                                                                                                                                                  |
+|-----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| RFC で必要な外部のプログラムを呼び出すためのサポート | [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]バインドのプロパティを提供します。 **RfcAllowStartProgram**特定 RFC に必要な場合は、外部のプログラムを呼び出す RFC クライアント ライブラリを有効に設定できます。 このバインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。 |
+|    1 回の呼び出しで複数の Idoc を送信するためのサポート    |                                                                                                                                                                                                      SAP アダプターは、アダプターが 1 つの呼び出しで同じ種類の複数の Idoc を送信できるようになりました。                                                                                                                                                                                                      |
   
 ### <a name="other-features"></a>その他の機能  
   
-|機能|解説|  
-|-------------|-------------|  
-|アダプターを使用する新しい方法[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]|[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]で BizTalk WCF カスタム ポートまたは WCF SAP ポートとして使用できます。 使用する場合、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] WCF カスタム ポートを経由は WCF カスタム ポートを追加する必要はありません、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールに、WCF カスタム ポートが追加されるため、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]既定では管理コンソールです。 ただし、使用する場合、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] WCF SAP ポートを介してへの WCF SAP アダプターを追加する必要があります最初、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 詳細については、次を参照してください。 [SAP アダプターを BizTalk Server 管理コンソールに追加](../../adapters-and-accelerators/adapter-sap/add-the-sap-adapter-to-biztalk-server-administration-console.md)です。|  
+|                                                        機能                                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                解説                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| アダプターを使用する新しい方法 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] | [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Biztalk WCF カスタム ポートまたは WCF SAP ポートとして使用できます。 使用する場合、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] WCF カスタム ポートには WCF カスタム ポートを追加する必要はありません、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールに、WCF カスタム ポートが追加されるため、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]既定では、管理コンソール。 ただし、使用する場合、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] WCF-SAP ポートを通じて、WCF-SAP アダプターを追加する必要があります最初、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 詳細については、次を参照してください。 [SAP アダプターを BizTalk Server 管理コンソールに追加](../../adapters-and-accelerators/adapter-sap/add-the-sap-adapter-to-biztalk-server-administration-console.md)します。 |
   
-## <a name="deprecated-features-in-the-sap-adapter"></a>SAP アダプターの非推奨機能  
- 次のセクションでは、アダプターの以前のバージョンをサポートされていましたが、これは、現在のバージョンのサポートされていません機能の一覧、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
+## <a name="deprecated-features-in-the-sap-adapter"></a>SAP アダプターの非推奨の機能  
+ 次のセクションでは、アダプターの以前のバージョンがサポートされていましたの現在のバージョンでサポートされていません、機能の一覧、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
-### <a name="enablebusinessobjects-binding-property-deprecated"></a>非推奨 EnableBusinessObjects バインディング プロパティ  
- このバインドのプロパティは推奨されなくなりました[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]付属[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。 このバインドのプロパティが使用中にメタデータを生成するときに、BAPI ノードを表示するかどうかを決定に使用された[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]です。  
+### <a name="enablebusinessobjects-binding-property-deprecated"></a>非推奨とされます EnableBusinessObjects バインディング プロパティ  
+ このバインドのプロパティで非推奨とされた[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]付属[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 このバインドのプロパティは、BAPI ノードが使用中にメタデータを生成するときに表示されるかどうかを決定に使用された[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]します。  
   
 ## <a name="see-also"></a>参照  
- [MySAP Business Suite の BizTalk アダプターを理解します。](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)
+ [BizTalk Adapter for mySAP Business Suite について](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)

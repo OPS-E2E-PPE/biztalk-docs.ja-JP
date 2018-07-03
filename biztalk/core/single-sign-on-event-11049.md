@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11049 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 11049 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45ac6095950e02e7e73ab287b180bc22d88b4191
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5b86cf3d5361a912cd976d8a27e83981b71237e2
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277442"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36997507"
 ---
 # <a name="single-sign-on-event-11049"></a>シングル サインオン: イベント 11049
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|11049|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_ERROR_DTC_FAILED|  
-|メッセージ テキスト|MSDTC を取得できませんでした。 SSO を正しく機能させるには MSDTC が必要です。|  
+|                 |                                                                |
+|-----------------|----------------------------------------------------------------|
+|  製品名   |                   エンタープライズ シングル サインオン                    |
+| 製品バージョン |   [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]   |
+|    イベント ID     |                             11049                              |
+|  イベント ソース   |                             ENTSSO                             |
+|    コンポーネント    |                              なし                               |
+|  シンボル名  |                      SSO_ERROR_DTC_FAILED                      |
+|  メッセージ テキスト   | MSDTC を取得できませんでした。 SSO を正しく機能させるには MSDTC が必要です。 |
   
 ## <a name="explanation"></a>説明  
  ENTSSO システムが、Microsoft 分散トランザクション コーディネーター (MSDTC) に接続できませんでした。  
@@ -38,4 +38,4 @@ ms.locfileid: "22277442"
 ## <a name="user-action"></a>ユーザーの操作  
  MSDTC が現在動作しているかどうかを確認します。  
   
- MSDTC の問題に関するヘルプを参照するには、次を参照してください。 [MSDTC の問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)です。
+ MSDTC の問題に関するヘルプは、次を参照してください。 [MSDTC を使用した問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)します。

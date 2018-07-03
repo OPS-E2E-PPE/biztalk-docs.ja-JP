@@ -1,5 +1,5 @@
 ---
-title: セグメントは、少なくとも 2 つの文字の名前を持つ必要があります |Microsoft ドキュメント
+title: セグメントは、少なくとも 2 つの文字の名前が必要 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 70d4b39aa9421e4b60fd9e0c4415c69862c00526
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: def67be8b1c146bd6da37b669a71f2be15e22e2d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269146"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985963"
 ---
 # <a name="segment-should-have-a-name-with-at-least-two-characters"></a>セグメントには 2 文字以上の名前を指定する必要があります
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|SchemaCode103EInvalidTagLength|  
-|メッセージ テキスト|セグメントが少なくとも 2 つの文字を含む名前を付ける必要があります。|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  製品名   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 製品バージョン |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    イベント ID     |                                           -                                            |
+|  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
+|    コンポーネント    |                                       EDI エンジン                                       |
+|  シンボル名  |                             SchemaCode103EInvalidTagLength                             |
+|  メッセージ テキスト   |                 セグメントは少なくとも 2 つの文字の名前である必要があります。                  |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、インターチェンジのセグメントに 2 文字以上の名前が指定されていなかったため、受信パイプラインで受信インターチェンジを処理できなかったことを示します。  

@@ -1,5 +1,5 @@
 ---
-title: 名前空間の型が見つからない |Microsoft ドキュメント
+title: 名前空間で型が見つからない |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 515dd9b6b73b43bee22ffc7b67745bb45adcaf6c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b369b3ce29b989f01f0ea95d6f32a663d7e7bc5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286458"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36980772"
 ---
 # <a name="type-cannot-be-found-in-namespace"></a>種類が名前空間に見つかりません
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|イベント ID|0|  
-|イベント ソース|0|  
-|コンポーネント|0|  
-|シンボル名|0|  
-|メッセージ テキスト|エラー:"{0}"の種類が見つかりません「{1}」名前空間|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  製品名   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| 製品バージョン |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    イベント ID     |                                         0                                          |
+|  イベント ソース   |                                         0                                          |
+|    コンポーネント    |                                         0                                          |
+|  シンボル名  |                                         0                                          |
+|  メッセージ テキスト   |                エラー: 型"{0}「名前空間で見つかったことはできません」{1}"                |
   
 ## <a name="explanation"></a>説明  
  このエラーは、作成されたアイテムが、指定した名前空間に存在しない種類を参照していることを示します。  

@@ -1,5 +1,5 @@
 ---
-title: BTARN 受信パイプライン |Microsoft ドキュメント
+title: BTARN 受信パイプライン |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,15 +22,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db4bc69348cfb99b5e7cebb07c65e05a0513cd0e
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 31b841048f79f460ec3c8098d63eec5cf348b6a1
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005627"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36991923"
 ---
 # <a name="btarn-receive-pipeline"></a>BTARN 受信パイプライン
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RosettaNet Implementation Framework (RNIF) メッセージの受信、RNIFReceive パイプライン (RNIFReceive.btp) を実行します。 受信パイプラインには、以下のコンポーネントが含まれます。  
+Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFReceive パイプライン (RNIFReceive.btp) と RosettaNet Implementation Framework (RNIF) メッセージの受信を実行します。 受信パイプラインには、以下のコンポーネントが含まれます。  
   
 -   ReceiveMessageNonRepudiate  
   
@@ -48,33 +48,33 @@ ms.locfileid: "26005627"
 ## <a name="rnmimedecoder"></a>RNMimeDecoder  
  このコンポーネントは、上のネイティブ BizTalk Server MIME プリプロセッサ/デコーダーに基づいています。 RNMimeDecoder は、RNIF 処理のための以下の機能を備えています。  
   
--   RNIF 2.01 の場合、Service Content と添付ファイル (存在する場合) を暗号化解除します。  
+- RNIF 2.01 の場合、Service Content と添付ファイル (存在する場合) を暗号化解除します。  
   
--   RNIF 1.1 の場合、ペイロードの末尾にある 8 バイト ヘッダーとデタッチされた署名ヘッダーを処理します。  
+- RNIF 1.1 の場合、ペイロードの末尾にある 8 バイト ヘッダーとデタッチされた署名ヘッダーを処理します。  
   
- 詳細については、ネイティブ[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]プリプロセッサ/デコーダー、BizTalk Server ヘルプの「MIME/SMIME デコーダー パイプライン コンポーネント」を参照してください。  
+  詳細については、ネイティブ[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]プリプロセッサ/デコーダの場合、BizTalk Server ヘルプの「MIME/SMIME デコーダー パイプライン コンポーネント」を参照してください。  
   
 ## <a name="rndasm"></a>RNDAsm  
  このコンポーネントは、ネイティブの BizTalk Server XML 逆アセンブラーに基づいています。 RNDAsm は、RNIF 処理のための以下の機能を備えています。  
   
--   受信ドキュメントに DOCTYPE ヘッダーがある場合、このコンポーネントはヘッダーから名前空間を生成し、受信ドキュメントのすべてのノードを名前空間に移動します。  
+- 受信ドキュメントに DOCTYPE ヘッダーがある場合、このコンポーネントはヘッダーから名前空間を生成し、受信ドキュメントのすべてのノードを名前空間に移動します。  
   
--   メッセージの相関を確認して、着信メッセージが重複しているかどうかを判断し、メッセージが重複している場合は、エラー メッセージを生成します。  
+- メッセージの相関を確認して、着信メッセージが重複しているかどうかを判断し、メッセージが重複している場合は、エラー メッセージを生成します。  
   
--   添付ファイルをメッセージの追加部分として保存します。  
+- 添付ファイルをメッセージの追加部分として保存します。  
   
--   メッセージ プロパティを昇格します。  
+- メッセージ プロパティを昇格します。  
   
- 詳細については、ネイティブ[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]逆アセンブラー、BizTalk Server ヘルプの「XML 逆アセンブラー パイプライン コンポーネント」を参照してください。  
+  詳細については、ネイティブ[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]逆アセンブラー、BizTalk Server ヘルプの「XML 逆アセンブラー パイプライン コンポーネント」を参照してください。  
   
 ## <a name="rnpartyres"></a>RNPartyRes  
  このコンポーネントは、ネイティブの BizTalk Server パーティの解決コンポーネントに基づいています。 RNPartyRes は、RNIF 処理のための以下の機能を備えています。  
   
--   着信メッセージが BizTalk パーティに対して署名されている場合は、送信者の証明書をマップします。 着信メッセージに署名がなく、取引先アグリーメントでそれが許可されている場合、このコンポーネントは RNIF 2.01 については Delivery ヘッダーから、RNIF 1.1 については Service ヘッダーから送信者のパーティを取得します。  
+- 着信メッセージが BizTalk パーティに対して署名されている場合は、送信者の証明書をマップします。 着信メッセージに署名がなく、取引先アグリーメントでそれが許可されている場合、このコンポーネントは RNIF 2.01 については Delivery ヘッダーから、RNIF 1.1 については Service ヘッダーから送信者のパーティを取得します。  
   
--   送信者が存在し、送信者がホーム組織との取引先アグリーメントを持っているかどうかを検証します。  
+- 送信者が存在し、送信者がホーム組織との取引先アグリーメントを持っているかどうかを検証します。  
   
- 詳細については、ネイティブ[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]party resolution コンポーネント、BizTalk Server ヘルプの「パーティの解決パイプライン コンポーネント」を参照してください。  
+  詳細については、ネイティブ[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]party resolution コンポーネントを BizTalk Server ヘルプの「パーティの解決パイプライン コンポーネント」を参照してください。  
   
 ## <a name="messageupdater"></a>MessageUpdater  
  このコンポーネントは、RNIF 処理のための以下の機能を備えています。  
@@ -86,21 +86,21 @@ ms.locfileid: "26005627"
 ## <a name="message-flow"></a>メッセージ フロー  
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 受信パイプラインを経由するメッセージ フローは次のとおりです。  
   
-1.  HTTP アダプターは HTTP POST を使用して RNIF 1.1 オブジェクトまたは RNIF 2.01 ビジネス メッセージを受信します。  
+1. HTTP アダプターは HTTP POST を使用して RNIF 1.1 オブジェクトまたは RNIF 2.01 ビジネス メッセージを受信します。  
   
-2.  メッセージを正常に受信すると、アダプターは RosettaNet オブジェクトまたはビジネス メッセージを抽出し、受信パイプラインにルーティングします。  
+2. メッセージを正常に受信すると、アダプターは RosettaNet オブジェクトまたはビジネス メッセージを抽出し、受信パイプラインにルーティングします。  
   
-3.  オブジェクトまたはビジネス メッセージに署名がある場合、MIME プリプロセッサ/デコーダーが署名を削除します。  
+3. オブジェクトまたはビジネス メッセージに署名がある場合、MIME プリプロセッサ/デコーダーが署名を削除します。  
   
-4.  署名が有効な場合、逆アセンブラーは Preamble を読み取ります。  
+4. 署名が有効な場合、逆アセンブラーは Preamble を読み取ります。  
   
-5.  メッセージがアクション メッセージで否認不可が必要な場合 (、**発信元とコンテンツの否認**プロセス構成設定の設定が`True`)、デコーダーを計算し、ダイジェストが引き続き発生します。  
+5. メッセージがアクション メッセージで否認不可が必要な場合 (、**発信元とコンテンツの否認**プロセス構成設定の設定が`True`)、デコーダーを計算してダイジェストを維持します。  
   
-6.  逆アセンブラーは、メッセージ (MSG) ガイドラインとグローバル変数の Preamble スキーマを使用して Preamble を検証します。  
+6. 逆アセンブラーは、メッセージ (MSG) ガイドラインとグローバル変数の Preamble スキーマを使用して Preamble を検証します。  
   
-7.  RNIF 2.01 では、逆アセンブラーは Delivery Header を読み取り、メッセージ ガイドラインとグローバル変数の Delivery Header スキーマを使用してヘッダーを検証します。  
+7. RNIF 2.01 では、逆アセンブラーは Delivery Header を読み取り、メッセージ ガイドラインとグローバル変数の Delivery Header スキーマを使用してヘッダーを検証します。  
   
-8.  RNIF 2.01 では、逆アセンブラーは Delivery Header からパートナー情報を抽出し、署名がパートナーに属しているかどうかを検証します。  
+8. RNIF 2.01 では、逆アセンブラーは Delivery Header からパートナー情報を抽出し、署名がパートナーに属しているかどうかを検証します。  
   
 9. RNIF 2.01 でペイロードが暗号化されている場合、デコーダーによってペイロード コンテナーの暗号化が解除されます。  
   
@@ -110,9 +110,9 @@ ms.locfileid: "26005627"
   
 12. 逆アセンブラーは、パートナーが PIP に承認されているかどうかを確認します。 承認されていない場合、逆アセンブラーは HTTP POST に HTTP 403 ステータス メッセージを返し、必要に応じてエラーを送信します。  
   
-13. メッセージが署名されたアクション メッセージの場合と**発信元とコンテンツの否認**に設定されている`True`、ReceiveMessageNonRepudiate コンポーネント MessageStorageIn テーブルに元のメッセージが引き続き発生します。  
+13. メッセージが署名されたアクション メッセージの場合と**発信元とコンテンツの否認**に設定されている`True`、ReceiveMessageNonRepudiate コンポーネントには、MessageStorageIn テーブルに元のメッセージが引き続き発生します。  
   
-14. メッセージが署名されたシグナル メッセージの場合と**否認不可のために必要な**に設定されている`True`、ReceiveMessageNonRepudiate コンポーネント MessageStorageIn テーブルにシグナル メッセージが引き続き発生します。  
+14. メッセージが署名されたシグナル メッセージの場合と**否認不可のために必要な**に設定されている`True`、ReceiveMessageNonRepudiate コンポーネントはシグナル メッセージを MessageStorageIn テーブルを永続化します。  
   
 15. メッセージが否認不可の MessageStorageIn テーブルに保存されている場合、MessageUpdater はメッセージのプロセス構成のプロパティを使用して MessageStorageIn テーブルを更新します。  
   

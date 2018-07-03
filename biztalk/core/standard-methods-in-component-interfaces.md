@@ -1,5 +1,5 @@
 ---
-title: コンポーネント インターフェイスの標準メソッド |Microsoft ドキュメント
+title: コンポーネント インターフェイスの標準メソッド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,25 +17,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f44b3977a3921d92b1f3f83dd3e744f14b5709fc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eecb56f262a56e6567b44b146c631542cb1ceda6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278050"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36994827"
 ---
 # <a name="standard-methods-in-component-interfaces"></a>コンポーネント インターフェイスの標準メソッド
 コンポーネント インターフェイスの標準メソッドを次に示します。  
   
--   `Create`  
+- `Create`  
   
--   `Find`  
+- `Find`  
   
--   `Get`  
+- `Get`  
   
--   `Save`  
+- `Save`  
   
- 使用できるのは、基になるコンポーネントに含まれている上記のメソッドだけです。 たとえば、基になるコンポーネントに `Add` 機能が含まれていない場合、`Create` は使用できません。  
+  使用できるのは、基になるコンポーネントに含まれている上記のメソッドだけです。 たとえば、基になるコンポーネントに `Add` 機能が含まれていない場合、`Create` は使用できません。  
   
 ## <a name="viewing-or-changing-available-methods"></a>使用可能なメソッドの表示または変更  
   
@@ -45,10 +45,10 @@ ms.locfileid: "22278050"
   
      ![](../core/media/psadapter-46-ps-properties.gif "PSAdapter_46_PS_Properties")  
   
-2.  クリックして、**標準メソッド**タブです。  
+2.  をクリックして、**標準メソッド**タブ。  
   
-3.  目的のメソッドを選択し、クリックして**OK**です。  
+3.  目的のメソッドを選択し、クリックして**OK**します。  
   
 ## <a name="see-also"></a>参照  
  [コンポーネント インターフェイスを作成する方法](../core/how-to-create-component-interfaces.md)   
- [付録 c: コンポーネント インターフェイスの使用](../core/appendix-c-using-component-interfaces.md)
+ [付録 C: コンポーネント インターフェイスの使用](../core/appendix-c-using-component-interfaces.md)

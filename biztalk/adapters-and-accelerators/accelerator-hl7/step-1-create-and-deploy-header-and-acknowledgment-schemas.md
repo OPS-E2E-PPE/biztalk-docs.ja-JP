@@ -1,5 +1,5 @@
 ---
-title: '手順 1: を作成し、ヘッダーと受信確認スキーマを展開 |Microsoft ドキュメント'
+title: '手順 1: を作成し、ヘッダーと確認スキーマの展開 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,57 +15,57 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9ffa8ab8d80a8b2da172378349eb9761a728fb7
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 50aa394f033d935c3838e056c715ee74e296b063
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25960744"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36989395"
 ---
-# <a name="step-1-create-and-deploy-header-and-acknowledgment-schemas"></a>手順 1: を作成し、ヘッダーと受信確認スキーマを展開
-メッセージ インスタンスのヘッダー (MSH セグメント) を検証するのにには、ヘッダー スキーマを使用します。 メッセージ インスタンスの確認を生成するのにには、受信確認スキーマを使用します。 このプロセスは、すべてのスキーマ バージョンの間で共通[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X です。  
+# <a name="step-1-create-and-deploy-header-and-acknowledgment-schemas"></a>手順 1: を作成し、ヘッダーと確認スキーマをデプロイします。
+メッセージ インスタンスのヘッダー (MSH セグメント) を検証するのにには、ヘッダー スキーマを使用します。 受信確認メッセージのインスタンスを生成するのにには、受信確認スキーマを使用します。 このプロセスは、すべてのスキーマ バージョンの間で共通[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X。  
   
-### <a name="to-create-the-header-and-acknowledgment-schemas"></a>ヘッダーおよび受信確認応答スキーマを作成するには  
+### <a name="to-create-the-header-and-acknowledgment-schemas"></a>ヘッダーと受信確認スキーマを作成するには  
   
-1.  開始**Microsoft Visual Studio 2012**です。  
+1. 開始**Microsoft Visual Studio 2012**します。  
   
-2.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**新規**、クリックして**プロジェクト**です。  
+2. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], の **ファイル** メニューをポイント **新規**, 、クリックして **プロジェクト**します。  
   
-3.  新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**セクションで、展開**BizTalk プロジェクト**、し、[ **BTAHL7Projects**です。  
+3. 新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**セクションで、展開**BizTalk プロジェクト**、し、[ **BTAHL7Projects**します。  
   
-4.  テンプレート セクションで、 **BTAHL7V2XCommon プロジェクト**、順にクリック**ok**です。  
+4. テンプレート セクションで**BTAHL7V2XCommon プロジェクト**、 をクリックし、 **OK**。  
   
-     ソリューション エクスプローラで、プロジェクトに 3 つのスキーマ (ACK_24_GLO_DEF.xsd ACK_25_GLO_DEF.xsd および MSH_25_GLO_DEF.xsd) が含まれていることを確認します。  
+    ソリューション エクスプ ローラーでは、(ACK_24_GLO_DEF.xsd ACK_25_GLO_DEF.xsd、および MSH_25_GLO_DEF.xsd) の 3 つのスキーマをプロジェクトに含まれることに注意してください。  
   
-## <a name="step-1a-assign-a-strong-key-to-the-assembly-and-deploy"></a>手順 1 a: アセンブリに厳密なキーを割り当てると展開  
+## <a name="step-1a-assign-a-strong-key-to-the-assembly-and-deploy"></a>手順 1 a: アセンブリに厳密なキーを割り当てるとデプロイ  
  アセンブリに厳密なキーを割り当てるし、アセンブリを配置するには、次の手順を使用します。  
   
 #### <a name="to-assign-a-strong-key-and-deploy-the-assembly"></a>強力なキーを割り当てるし、アセンブリを展開するには  
   
-1.  開始**Visual Studio 2012 コマンド プロンプト**です。  
+1. 開始**Visual Studio 2012 のコマンド プロンプト**します。  
   
-2.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]コマンド プロンプトで、参照、 \<*ドライブ*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>Accelerator 用 HL7 \SDK\エンド ツー エンド チュートリアル フォルダーです。  
+2. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]コマンド プロンプトで、参照、 \<*ドライブ*\>: \Program Files\\Microsoft BizTalk\<バージョン\>Accelerator for HL7 \SDK\End-to-Endチュートリアル フォルダーです。  
   
-3.  コマンド プロンプトで次のように入力します。 **sn – k key.snk**、ENTER キーを押します。 [出力] ウィンドウで次の成功メッセージを表示することを確認し、コマンド ウィンドウを閉じます。  
+3. コマンド プロンプトで「 **sn – k key.snk**し、ENTER キーを押します。 出力 ウィンドウで次の成功メッセージが表示されることを確認し、コマンド ウィンドウを閉じます。  
   
-     **「キーペア key.snk に書き込まれます。」**  
+    **「キーの key.snk に書き込まれるペアです。」**  
   
-    > [!NOTE]
-    >  使用して、適切なメッセージが表示されない場合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]アセンブリをトラブルシューティングします。  
+   > [!NOTE]
+   >  適切なメッセージが表示されない場合は、使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]アセンブリのトラブルシューティングを行う。  
   
-4.  ソリューション エクスプ ローラーで右クリック**BTAHL7V2XCommon Project1**、クリックして**プロパティ**です。  
+4. ソリューション エクスプ ローラーで右クリックして**BTAHL7V2XCommon Project1**、 をクリックし、**プロパティ**します。  
   
-5.  BTAHL7V2XCommon Project1 プロパティ ページ ページで、をクリックして**アセンブリ**です。  
+5. BTAHL7V2XCommon Project1 プロパティ ページ ページで、次のようにクリックします。**アセンブリ**します。  
   
-6.  右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、クリックして、省略記号 (**.**) ボタンをクリックします。  
+6. 右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、クリックして、省略記号 (**.**) ボタンをクリックします。  
   
-7.  アセンブリ キー ファイル ダイアログ ボックスでを参照\<*ドライブ*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>HL7\SDK\End エンドツー エンドのアクセラレータチュートリアル、select **key.snk**、クリックして**開く**です。  
+7. アセンブリ キー ファイル ダイアログ ボックスを参照\<*ドライブ*\>: \Program Files\\Microsoft BizTalk\<バージョン\>HL7\SDK\End ツー エンド チュートリアルについては、アクセラレータ選択**key.snk**、 をクリックし、**オープン**します。  
   
-8.  BTAHL7V2XCommon プロジェクトのプロパティ ページで、 **OK**して変更を保存します。  
+8. BTAHL7V2XCommon プロジェクトのプロパティ ページで、次のようにクリックします。 **OK** 、変更を保存します。  
   
-9. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]で、**ソリューション エクスプ ローラー**を右クリックして**BTAHL7V2XCommon プロジェクト**、クリックして**展開**です。 成功メッセージが出力ウィンドウに表示を確認します。  
+9. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ソリューション エクスプ ローラー**、右クリック**BTAHL7V2XCommon プロジェクト**、順にクリックします**デプロイ**します。 成功メッセージが出力ウィンドウに表示を確認します。  
   
-    > [!NOTE]
-    >  使用して、正しい配置メッセージが表示されない場合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]展開のトラブルシューティングにします。  
+   > [!NOTE]
+   >  デプロイの適切なメッセージが表示されない場合は、使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]デプロイのトラブルシューティングを行う。  
   
- 進みます[手順 2: V2.3.1 の一般的なスキーマを作成する](../../adapters-and-accelerators/accelerator-hl7/step-2-create-common-schemas-for-v2-3-1.md)です。
+   進みます[手順 2: V2.3.1 の一般的なスキーマを作成する](../../adapters-and-accelerators/accelerator-hl7/step-2-create-common-schemas-for-v2-3-1.md)します。

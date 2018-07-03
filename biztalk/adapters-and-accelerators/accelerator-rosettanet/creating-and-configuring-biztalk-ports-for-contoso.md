@@ -1,5 +1,5 @@
 ---
-title: 作成して、Contoso の BizTalk ポートの構成 |Microsoft ドキュメント
+title: 作成して、Contoso の BizTalk ポートの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,15 +19,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7264d2eaa5c3ce249bc1077f7754d93eecdd786a
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 4e7453fb35758aaca4eea3d8b05be4a7a7584085
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004459"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996507"
 ---
 # <a name="creating-and-configuring-biztalk-ports-for-contoso"></a>作成して、Contoso の BizTalk ポートの構成
-このセクションに現在のソリューションを統合[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server です。 この統合を行う前に、グローバル アセンブリ キャッシュ (GAC) にアセンブリをインストールし、構成データベースで構成します。 次に、SQL アダプターと HTTP アダプターを使用する送信ポートを作成および構成します。  
+このセクションでは、Microsoft® BizTalk Server に現在のソリューションを統合します。 この統合を行う前に、グローバル アセンブリ キャッシュ (GAC) にアセンブリをインストールし、構成データベースで構成します。 次に、SQL アダプターと HTTP アダプターを使用する送信ポートを作成および構成します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

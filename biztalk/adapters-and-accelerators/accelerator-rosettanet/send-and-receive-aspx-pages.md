@@ -1,5 +1,5 @@
 ---
-title: 送信および受信 ASPX ページ |Microsoft ドキュメント
+title: 送信および受信 ASPX ページ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -31,15 +31,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0782c421dfe771cd024b5ce4df893e2aaa45721d
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: e688686e8bd787e22d7e5a246e0cce62f469649c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "25967448"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982051"
 ---
 # <a name="send-and-receive-aspx-pages"></a>送信および受信 ASPX ページ
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] ASPX ページは、直接結ぶインターフェイス[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]とインターネットです。 受信ページ (RNIFReceive.aspx) と送信ページ (RNIFSend.aspx) の 2 つの ASPX ページで構成されています。 各 ASPX ページは、対応する [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] パイプラインを拡張したものです。 パイプラインは ASPX ページに対して、RNIF (RosettaNet Implementation Framework) ヘッダーの処理を要求します。 ほとんどの HTTP 処理はパイプラインが実行しますが、RNIF ヘッダーの HTTP 処理は各 ASPX ページが実行します。 ASPX ページは、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] HTTP アダプタの機能を強化します。  
+Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] ASPX ページは、直接結ぶインターフェイス[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]とインターネットです。 受信ページ (RNIFReceive.aspx) と送信ページ (RNIFSend.aspx) の 2 つの ASPX ページで構成されています。 各 ASPX ページは、対応する [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] パイプラインを拡張したものです。 パイプラインは ASPX ページに対して、RNIF (RosettaNet Implementation Framework) ヘッダーの処理を要求します。 ほとんどの HTTP 処理はパイプラインが実行しますが、RNIF ヘッダーの HTTP 処理は各 ASPX ページが実行します。 ASPX ページは、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] HTTP アダプタの機能を強化します。  
   
  各 ASPX ページは、ユーザー インターフェイスを持たない ASP[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] Web アプリケーションです。 ASP[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] Web セキュリティを使用して、外部パーティとの安全な接続を確立します。 フォールト トレランス、スケーラビリティ、可用性の高いサービスを実装できるレイヤを備えています。  
   
@@ -54,13 +54,13 @@ http://localhost:<port number>/RNIFSend.aspx?<query string>
   
  クエリ文字列には、以下に示すように、送信ページがメッセージをパートナーに送信するために必要なデータ、およびパートナーがメッセージを処理するために必要なデータが含まれます。  
   
--   取引先の URL: http://www.\<*アドレス*\>.com/RNIFReceive.aspx  
+- 取引先 URL: http://www.\<*アドレス*\>.com/RNIFReceive.aspx  
   
--   応答タイプ : 同期または非同期  
+- 応答タイプ : 同期または非同期  
   
--   RNIF バージョン : 1.1 または 2.0  
+- RNIF バージョン : 1.1 または 2.0  
   
- BizTalk HTTP アダプタは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 送信パイプラインによって生成された MIME メッセージを開始側の RNIFSend.aspx ページに送信します。 RNIFSend.aspx では、次のようにメッセージが処理されます。  
+  BizTalk HTTP アダプタは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 送信パイプラインによって生成された MIME メッセージを開始側の RNIFSend.aspx ページに送信します。 RNIFSend.aspx では、次のようにメッセージが処理されます。  
   
 1.  送信ページがメッセージを検証します。  
   
@@ -106,40 +106,40 @@ http://localhost:<port number>/RNIFSend.aspx?<query string>
   
  このシナリオでは、手順ごとに異なる HTTP 接続 (つまり合計で 4 つの HTTP 接続) を使用します。  
   
-1.  開始側の送信ページがアクション要求メッセージを応答側の受信ページに送信します。  
+1. 開始側の送信ページがアクション要求メッセージを応答側の受信ページに送信します。  
   
-    > [!NOTE]
-    >  システムの負荷によっては、手順 2. と 3. の順序が入れ替わる場合があります。  
+   > [!NOTE]
+   >  システムの負荷によっては、手順 2. と 3. の順序が入れ替わる場合があります。  
   
-2.  応答側の送信ページが要求シグナル メッセージを開始側の受信ページに送信します。  
+2. 応答側の送信ページが要求シグナル メッセージを開始側の受信ページに送信します。  
   
-3.  応答側の送信ページがアクション応答メッセージを開始側の受信ページに送信します。  
+3. 応答側の送信ページがアクション応答メッセージを開始側の受信ページに送信します。  
   
-4.  開始側の送信ページが応答シグナル メッセージを応答側の受信ページに送信します。  
+4. 開始側の送信ページが応答シグナル メッセージを応答側の受信ページに送信します。  
   
- **非同期のシングル アクション**  
+   **非同期のシングル アクション**  
   
- このシナリオでは、手順ごとに異なる HTTP 接続 (つまり合計で 2 つの HTTP 接続) を使用します。 このシナリオは、非同期のダブル アクションのシナリオの手順 1. と 2. から構成されています。  
+   このシナリオでは、手順ごとに異なる HTTP 接続 (つまり合計で 2 つの HTTP 接続) を使用します。 このシナリオは、非同期のダブル アクションのシナリオの手順 1. と 2. から構成されています。  
   
-1.  開始側の送信ページがアクション要求メッセージを応答側の受信ページに送信します。  
+5. 開始側の送信ページがアクション要求メッセージを応答側の受信ページに送信します。  
   
-2.  応答側の送信ページが要求シグナル メッセージを開始側の受信ページに送信します。  
+6. 応答側の送信ページが要求シグナル メッセージを開始側の受信ページに送信します。  
   
- **同期のダブル アクション**  
+   **同期のダブル アクション**  
   
- このシナリオでは、1 つの HTTP 接続を使用します。  
+   このシナリオでは、1 つの HTTP 接続を使用します。  
   
-1.  開始側の送信ページがアクション要求メッセージを応答側の受信ページに送信します。  
+7. 開始側の送信ページがアクション要求メッセージを応答側の受信ページに送信します。  
   
-2.  応答側の受信ページは手順 1. と同じ接続を使用して、アクション応答メッセージ (問題がある場合は例外) を開始側の送信ページに送信します。  
+8. 応答側の受信ページは手順 1. と同じ接続を使用して、アクション応答メッセージ (問題がある場合は例外) を開始側の送信ページに送信します。  
   
- **同期のシングル アクション**  
+   **シングル アクションの同期**  
   
- このシナリオでは、1 つの HTTP 接続を使用します。  
+   このシナリオでは、1 つの HTTP 接続を使用します。  
   
-1.  開始側の送信ページがアクション要求メッセージを応答側の受信ページに送信します。  
+9. 開始側の送信ページがアクション要求メッセージを応答側の受信ページに送信します。  
   
-2.  応答側の受信ページは同じ接続を使用して、要求シグナル メッセージ (問題がある場合は例外) を開始側の送信ページに送信します。  
+10. 応答側の受信ページは同じ接続を使用して、要求シグナル メッセージ (問題がある場合は例外) を開始側の送信ページに送信します。  
   
 ## <a name="see-also"></a>参照  
  [BTARN でのメッセージ処理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)   

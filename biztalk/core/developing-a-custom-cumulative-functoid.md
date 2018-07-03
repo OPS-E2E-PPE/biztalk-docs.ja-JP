@@ -1,5 +1,5 @@
 ---
-title: カスタムの累積 Functoid の開発 |Microsoft ドキュメント
+title: カスタムの累積 Functoid の開発 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f69ae870269948358f117b07f37d481faced160
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8763f557c5bacb13b3fbc1542216d9eb9be8d319
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22242330"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008531"
 ---
 # <a name="developing-a-custom-cumulative-functoid"></a>カスタムの累積 Functoid の開発
 カスタムの累積 Functoid を使用して、インスタンス メッセージ内で何度も発生する値の累積処理を行います。  
@@ -27,15 +27,15 @@ ms.locfileid: "22242330"
 ## <a name="writing-a-thread-safe-functoid"></a>スレッド セーフ Functoid の作成  
  この Functoid のコードは、ストレス条件下でマップの複数のインスタンスが同時に実行される場合があるので、スレッド セーフにする必要があります。 注意事項を次に示します。  
   
--   静的状態は、スレッド セーフであることが必要です。  
+- 静的状態は、スレッド セーフであることが必要です。  
   
--   インスタンス状態は、必ずしもスレッド セーフである必要はありません。  
+- インスタンス状態は、必ずしもスレッド セーフである必要はありません。  
   
--   高いストレス条件下で実行されることを考慮してデザインします。 可能な場合、ロックの取得は避けます。  
+- 高いストレス条件下で実行されることを考慮してデザインします。 可能な場合、ロックの取得は避けます。  
   
--   可能な場合、同期の必要性を避けるようにします。  
+- 可能な場合、同期の必要性を避けるようにします。  
   
- BizTalk Server では、単純なメカニズムを使用することによって、スレッド セーフの累積 Functoid を簡単に作成できます。 3 つのすべての関数は、最初のパラメーターが同じ (整数型のインデックス値) です。 BizTalk Server は、初期化関数を呼び出すとき、固有の数値をインデックス値に割り当てます。 この値は、次のコードに示すように、累積値を格納する配列用のインデックスとして使用できます。  
+  BizTalk Server では、単純なメカニズムを使用することによって、スレッド セーフの累積 Functoid を簡単に作成できます。 3 つのすべての関数は、最初のパラメーターが同じ (整数型のインデックス値) です。 BizTalk Server は、初期化関数を呼び出すとき、固有の数値をインデックス値に割り当てます。 この値は、次のコードに示すように、累積値を格納する配列用のインデックスとして使用できます。  
   
 ```  
 private HashTable cumulativeArray = new HashTable();  
@@ -58,8 +58,8 @@ public string InitCumulativeMultiply(int index)
   
 |関数の目的|引数|参照の設定|インライン スクリプトの設定|  
 |----------------------|---------------|------------------------|--------------------------|  
-|初期化|**int インデックス**|**SetExternalFunctionName**|**SetScriptBuffer**で`functionNumber`0 を =|  
-|累計|**int val、文字列のスコープにインデックスを作成、**|**SetExternalFunctionName2**|**SetScriptBuffer**で`functionNumber`= 1|  
+|初期化|**int インデックス**|**SetExternalFunctionName**|**SetScriptBuffer**で`functionNumber`= 0|  
+|累計|**int インデックス、val、文字列の範囲の文字列**|**SetExternalFunctionName2**|**SetScriptBuffer**で`functionNumber`= 1|  
 |取得|**int インデックス**|**SetExternalFunctionName3**|**SetScriptBuffer**で`functionNumber`= 2|  
   
 ### <a name="initialization"></a>初期化  
@@ -68,16 +68,16 @@ public string InitCumulativeMultiply(int index)
 ### <a name="cumulation"></a>累計  
  この操作で、Functoid の累積処理を実行します。 BizTalk Server は次の 3 つのパラメーターを渡します。  
   
--   **インデックス。** マップのインスタンスを表す整数型の値です。 複数のマップのインスタンスが同時に実行される場合があります。  
+- **インデックス。** マップのインスタンスを表す整数型の値です。 複数のマップのインスタンスが同時に実行される場合があります。  
   
--   **Val です。** 累積する値を含む文字列です。 文字列の累積 Functoid を記述していない場合は、数値が使用されます。  
+- **Val します。** 累積する値を含む文字列です。 文字列の累積 Functoid を記述していない場合は、数値が使用されます。  
   
--   **スコープです。** 累積する要素または属性を示す数値を含む文字列です。 実際の値は、実装によって決まります。  
+- **スコープ。** 累積する要素または属性を示す数値を含む文字列です。 実際の値は、実装によって決まります。  
   
- 累積する値および無視する値を決めます。 たとえば、0 未満ではない値を無視し、値が数値ではない場合に例外をスローできます。 **BaseFunctoid**関数を 2 つ提供 —**IsDate**と**IsNumeric**— 検証を支援します。  
+  累積する値および無視する値を決めます。 たとえば、0 未満ではない値を無視し、値が数値ではない場合に例外をスローできます。 **BaseFunctoid**関数を 2 つ提供:**IsDate**と**IsNumeric**-検証をサポートします。  
   
 > [!NOTE]
->  使用する場合**IsDate**または**IsNumeric**インライン スクリプトでは設定を必ず**RequiredGlobalHelperFunctions**関数、スクリプトで利用できるようにします。  
+>  使用する場合**IsDate**または**IsNumeric**をインライン スクリプトで設定することを確認する**RequiredGlobalHelperFunctions**関数、スクリプトで利用できるようにします。  
   
  文字列の戻り値は使用されません。  
   

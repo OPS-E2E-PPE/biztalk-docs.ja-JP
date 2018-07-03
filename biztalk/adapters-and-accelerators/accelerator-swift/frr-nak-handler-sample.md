@@ -1,5 +1,5 @@
 ---
-title: FRR NAK ハンドラー サンプル |Microsoft ドキュメント
+title: FRR NAK ハンドラー サンプル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,29 +19,29 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a3881b8bcf4b62af7653ef6214b4fccdf8402d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 35574f47af789054bd8192da93ce5cffa1b3984b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207410"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996937"
 ---
-# <a name="frr-nak-handler-sample"></a>FRR NAK ハンドラーのサンプル
-FRR NAK ハンドラーのサンプルでは、迅速な応答を FIN 対応調整 (FRR) が関連付けられたメッセージを処理するカスタム ハンドラーを作成する方法を示します。 このカスタム ハンドラーを SWIFT 正常から取得されなかったメッセージ A4SWIFT を示す MTS21_FIN_ACKNAK 負の値確認のメッセージで FRR が関連付けられたメッセージを処理します。 カスタム ハンドラーは、2 部構成のメッセージでは、メッセージを作成、メッセージにエラー オブジェクトを追加し、発生するメッセージ修復オーケストレーションがメッセージを取得するプロパティを昇格させます。 その結果、修理会社は、メッセージを修正し、SWIFT Alliance アクセス (SAA) に再送信できます。  
+# <a name="frr-nak-handler-sample"></a>FRR NAK ハンドラー サンプル
+FRR NAK ハンドラー サンプルでは、迅速な応答を FIN 応答の調整 (FRR) が関連付けられたメッセージを処理するカスタム ハンドラーを作成する方法を示します。 このカスタム ハンドラーでは、する SWIFT 正常から受信しなかったメッセージ A4SWIFT を示す MTS21_FIN_ACKNAK 負では受信確認のメッセージの FRR が関連付けられたメッセージが処理されます。 カスタム ハンドラーは、エラー オブジェクトを 2 つの部分のメッセージがメッセージになります、メッセージに追加し、メッセージ修復オーケストレーションが、メッセージを取得するプロパティを昇格させます。 その結果、修理会社は、メッセージを修正し、SWIFT Alliance アクセス (SAA) を再送信できます。  
   
  **サンプル コンポーネント**  
   
  FRR NAK ハンドラー サンプルには、次のコンポーネントが含まれます。  
   
--   **RepairSWIFTRejectedMessage.odx です。** このオーケストレーションは、SWIFT が正常に受信できません、修理会社が修正し、メッセージを再送信できるように、メッセージ修復オーケストレーションにルーティングするメッセージを処理するカスタム ハンドラーです。  
+- **RepairSWIFTRejectedMessage.odx します。** このオーケストレーションは、SWIFT 正常に受信できなかった、修理会社が修正し、メッセージの再送信できるようにメッセージ修復オーケストレーションにルーティングするメッセージを処理するカスタム ハンドラーです。  
   
--   **RepairSWIFTRejectedMessage.btproj です。** このプロジェクトには、ビルドおよび配置するには、RepairSWIFTRejectedMessage.odx と、プロジェクトに必要な参照が含まれています。  
+- **RepairSWIFTRejectedMessage.btproj します。** このプロジェクトには、構築およびデプロイするには、RepairSWIFTRejectedMessage.odx と、プロジェクトに必要な参照が含まれています。  
   
--   **RepairSWIFTRejectedMessage.sln です。** このソリューションには、RepairSWIFTRejectedMessage.btproj プロジェクトが含まれています。  
+- **RepairSWIFTRejectedMessage.sln します。** このソリューションには、RepairSWIFTRejectedMessage.btproj プロジェクトが含まれています。  
   
- このセクションには、次のトピックが含まれています。  
+  このセクションには、次のトピックが含まれています。  
   
--   [FRR NAK ハンドラーのサンプルを実装します。](../../adapters-and-accelerators/accelerator-swift/implementing-the-frr-nak-handler-sample.md)  
+- [FRR NAK ハンドラー サンプルの実装](../../adapters-and-accelerators/accelerator-swift/implementing-the-frr-nak-handler-sample.md)  
   
--   [FRR NAK ハンドラーのサンプルのしくみ](../../adapters-and-accelerators/accelerator-swift/how-the-frr-nak-handler-sample-works.md)  
+- [FRR NAK ハンドラー サンプルのしくみ](../../adapters-and-accelerators/accelerator-swift/how-the-frr-nak-handler-sample-works.md)  
   

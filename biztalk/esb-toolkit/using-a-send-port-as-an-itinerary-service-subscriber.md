@@ -1,5 +1,5 @@
 ---
-title: 送信ポートを使用して、Itinerary サービス サブスクライバーとして |Microsoft ドキュメント
+title: 送信ポートを使用して、スケジュール サービス サブスクライバーとして |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,31 +12,31 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5213b22c1bdfaa505dbf4b62a03095bcec5a1746
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8cf33ab303127ba369a619637abf455c80ee539
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295490"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37018729"
 ---
-# <a name="using-a-send-port-as-an-itinerary-service-subscriber"></a>Itinerary サービス サブスクライバーとして、送信ポートを使用します。
-Itinerary サービス サブスクライバーとして、送信ポートを使用する方法の例は、としては、図 1 は、次の条件に一致するメッセージを取得する動的な一方向送信ポートのフィルター条件を示します。  
+# <a name="using-a-send-port-as-an-itinerary-service-subscriber"></a>スケジュール サービス サブスクライバーとして送信ポートを使用します。
+スケジュール サービス サブスクライバーとして送信ポートを使用する方法の例としては、図 1 を次の条件を満たすメッセージを取得する動的な一方向送信ポートのフィルター条件を示します。  
   
--   **IsRequestResponse = False**  
+- **IsRequestResponse = False**  
   
--   **ServiceName = DynamicTest**  
+- **ServiceName = DynamicTest**  
   
--   **ServiceState = 保留中**  
+- **ServiceState = 保留中**  
   
--   **ServiceType メッセージングを =**  
+- **ServiceType メッセージングを =**  
   
- ![送信ポート](../esb-toolkit/media/ch4-sendport.gif "Ch4 SendPort")  
+  ![送信ポート](../esb-toolkit/media/ch4-sendport.gif "Ch4 SendPort")  
   
- **図 1**  
+  **図 1**  
   
- **送信ポート フィルターの例**  
+  **送信ポート フィルターの例**  
   
- 送信ポートのフィルター式を使用すると、itinerary の増加を使用してメッセージ ボックス データベースからピックアップされますメッセージのプロパティと値のセットを指定します。  
+  送信ポートのフィルター式を使用するが選択 itinerary の傾斜を使用して、メッセージ ボックス データベースからメッセージのプロパティと値のセットを指定します。  
   
 > [!NOTE]
->  特定で可能なです。 フォーカスのあるフィルター条件を使用することが重要それ以外の場合、意図しないメッセージは、大容量の環境で問題が発生する可能性がありますのピックアップのリスクがあります。 システム Properties.xsd スキーマでは、サブスクリプションのフィルターのプロパティを定義します。
+>  できるだけ; フォーカスがある、特定のフィルター条件を使用することが重要それ以外の場合、意図しないメッセージは、大規模環境で問題が発生する可能性がありますのリスクがあります。 システム Properties.xsd スキーマでは、サブスクリプションのフィルターのプロパティを定義します。

@@ -1,5 +1,5 @@
 ---
-title: アダプターのローカリゼーション |Microsoft ドキュメント
+title: アダプターのローカライズに関する問題 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,36 +12,36 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8862318547f2a7b8b4fa5dc7291e1673f1b9ba29
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c829ce496c124f3333c353f481eb3958e29d5c77
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22229866"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996339"
 ---
-# <a name="adapter-localization-issues"></a>アダプターのローカリゼーションの問題
+# <a name="adapter-localization-issues"></a>アダプターのローカライズに関する問題
 ここでは、カスタム アダプターを作成するときに発生する可能性のあるローカライズに関する問題を取り上げます。  
   
 ## <a name="xsd-issues"></a>XSD の問題点  
  アダプターの開発者は、アダプター フレームワークを使用して、アダプターのプロパティ ページを XML スキーマ定義 (XSD) スキーマで実装できます。  
   
- アダプターにグローバリゼーションまたはローカライズの要件がない場合、XSD スキーマ内の文字列をハードコーディングできます、 **IDynamicAdapterConfig:GetConfigSchema**関数。  
+ アダプターにグローバリゼーションまたはローカライズの要件がないかどうかは、内の XSD スキーマ文字列をハードコーディングできます、 **IDynamicAdapterConfig:GetConfigSchema**関数。  
   
  アダプターにグローバリゼーションまたはローカライズの要件がある場合は、2 つの方法のうちのいずれかを使用して XSD スキーマを実装できます。  
   
--   デザイン時バイナリの外で個別の XSD ファイルを使用します。 スキーマのテキスト全体をマニフェスト リソースにします。  
+- デザイン時バイナリの外で個別の XSD ファイルを使用します。 スキーマのテキスト全体をマニフェスト リソースにします。  
   
--   プロパティ名と説明をリソースから動的に置き換えます。  
+- プロパティ名と説明をリソースから動的に置き換えます。  
   
-    -   _locID をローカライズする各要素に追加します。  
+  -   _locID をローカライズする各要素に追加します。  
   
-    -   xpath を使用して、_locID 属性を持つスキーマ内のすべてのノードを返します。  
+  -   xpath を使用して、_locID 属性を持つスキーマ内のすべてのノードを返します。  
   
-    -   リソースで、_locID の値によりインデックス化された文字列を検索します。  
+  -   リソースで、_locID の値によりインデックス化された文字列を検索します。  
   
-    -   ノードのテキストを結果に置き換えます。  
+  -   ノードのテキストを結果に置き換えます。  
   
- 2 つ目のオプションのサンプル コードを以下に示します。  
+  2 つ目のオプションのサンプル コードを以下に示します。  
   
 ```  
 string mySchema = GetSchemaFromResource(“mySchema”);  

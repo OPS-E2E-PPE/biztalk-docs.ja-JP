@@ -1,5 +1,5 @@
 ---
-title: アダプターの登録 |Microsoft ドキュメント
+title: アダプターの登録 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2cc195a55b38a232880ed04108d5a533afd1a311
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6ff8395a6ea80494e5fe21c7b05ebc25e6ed8c44
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270266"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985787"
 ---
 # <a name="registering-an-adapter"></a>アダプターの登録
-カスタム アダプターを開発している場合が変更され、ソフトウェア開発キット (SDK) にサンプル ファイル アダプターに含まれているレジストリ ファイルの 1 つを実行して BizTalk Server に登録することができます。 また、アダプター レジストリ ウィザードを使用してレジストリ ファイルを作成することもできます。 このウィザードは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Utilities\AdapterRegistryWizard フォルダーにあります。  
+カスタム アダプターを開発している場合を変更し、ソフトウェア開発キット (SDK) のサンプル ファイル アダプターに含まれているレジストリ ファイルのいずれかの操作を実行している BizTalk Server に登録することができます。 また、アダプター レジストリ ウィザードを使用してレジストリ ファイルを作成することもできます。 このウィザードは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Utilities\AdapterRegistryWizard フォルダーにあります。  
   
 > [!IMPORTANT]
->  -   32 ビット マシンでは、アダプターの登録ウィザードで生成されたレジストリ (.reg) ファイルをコマンド プロンプトから実行する必要があります。  
-> -   64 ビット マシンでは、アダプターの登録ウィザードで生成されたレジストリ (.reg) ファイルを 32 ビットと 64 ビットの両方のコマンド プロンプトから実行する必要があります。  
+> - 32 ビット マシンでは、アダプターの登録ウィザードで生成されたレジストリ (.reg) ファイルをコマンド プロンプトから実行する必要があります。  
+>   -   64 ビット マシンでは、アダプターの登録ウィザードで生成されたレジストリ (.reg) ファイルを 32 ビットと 64 ビットの両方のコマンド プロンプトから実行する必要があります。  
   
  レジストリ エントリを作成した後、アダプターを BizTalk Server 管理コンソールに追加するか、WMI (Windows Management Instrumentation) のメソッドを使用することでプログラム的に追加することができます。 このトピックでは、各レジストリ エントリについて説明してから、既存のレジストリ ファイルをカスタム アダプター用に変更する場所と方法を示します。  
   
- アダプター レジストリ ウィザードの使用方法の詳細については、次を参照してください。[アダプター レジストリ ウィザード](../core/adapter-registry-wizard.md)です。 SDK に含まれているサンプル レジストリ ファイルを変更する方法については、次を参照してください。[アダプターの登録ファイル](../core/adapter-registration-file.md)です。  
+ アダプター レジストリ ウィザードの使用方法の詳細については、次を参照してください。[アダプター レジストリ ウィザード](../core/adapter-registry-wizard.md)します。 SDK に含まれるサンプル レジストリ ファイルを変更する方法については、次を参照してください。[アダプターの登録ファイル](../core/adapter-registration-file.md)します。  
   
 ## <a name="registry-keys"></a>レジストリ キー  
  アダプターを展開するには、次に示すレジストリ エントリを作成する必要があります。  
@@ -43,7 +43,7 @@ ms.locfileid: "22270266"
   
  **型名**  
   
- アダプターの種類名は、BizTalk Server コンピューターのアダプターの種類を識別します。 このキーはすべてのアダプターに必要です。  
+ アダプターの種類名は、BizTalk Server コンピューターのアダプターの種類を識別します。 このキーは、すべてのアダプター必要があります。  
   
 ```  
 "TransportType"="MyTransportAdapter"  
@@ -62,7 +62,7 @@ ms.locfileid: "22270266"
   
  アダプターの機能を表す値は、次の表に示す値の組み合わせとなります。  
   
-|値|16 進値|フラグ|Description|  
+|値|16 進値|フラグ|説明|  
 |-----------|---------------|----------|-----------------|  
 |1|0x0001|eProtocolSupportsReceive|アダプターが受信操作をサポートします。|  
 |2|0x0002|eProtocolSupportsTransmit|アダプターが送信操作をサポートします。|  
@@ -77,7 +77,7 @@ ms.locfileid: "22270266"
 |32768|0x8000|eInitTransmitterOnServiceStart|最初のメッセージの送信時ではなく、サービスの開始時に、送信アダプターが起動します。|  
 |65536|0x10000|eSupport32BitOnly|アダプターが 32 ビット ホストでのみ実行をサポートすることを示します。|  
   
-### <a name="namespace"></a>名前空間  
+### <a name="namespace"></a>Namespace  
  アダプターごとに、プロパティの名前空間を定義する必要があります。 BizTalk Server によって、アダプター固有のプロパティが、この名前空間のメッセージ コンテキストに格納されます。 このプロパティはすべてのアダプターに必須です。  
   
 ```  
@@ -116,7 +116,7 @@ ms.locfileid: "22270266"
  アダプターのランタイム コンポーネントを登録するには、受信ランタイム コンポーネントと送信ランタイム コンポーネントのクラス ID (COM および .NET の場合)、種類名、およびアセンブリ パス (.NET の場合) を指定します。  
   
 > [!NOTE]
->  すべての**OutboundEngineCLSID**と**InboundEngineCLSID**キーは一意である必要があります。 データベースでは、単一行の**OutboundEngineCLSID**と**InboundEngineCLSID**と同じである可能性があります。  
+>  すべての**OutboundEngineCLSID**と**InboundEngineCLSID**キーは一意である必要があります。 データベースでは、単一行、 **OutboundEngineCLSID**と**InboundEngineCLSID**同じである可能性があります。  
   
 ```  
 "OutboundEngineCLSID"="{%CLSID of outbound transport%}"  
@@ -143,7 +143,7 @@ SendLocationPropertiesXML
  これらの値には、アダプターに対応するエンティティで使用可能なプロパティの定義 (スキーマ) が含まれ、これらを構成ストアに格納できます。 これらの定義は、XML 文字列として保存されます。この XML 文字列は、プロパティの種類を含むが値は含まないプロパティ バッグによってシリアル化解除されます。 プロパティ要素の値が空でない場合、プロパティはマスクされています  ("マスクされている" とは、書き込み専用であり、管理モードでの呼び出し時にセキュリティ保護されたストア API によって返されないことを意味します。セキュリティ保護されたストア API は、このようなプロパティに対して VT_NULL を返します)。  
   
 ### <a name="example"></a>例  
- HTTP アダプターが定義することで、HTTP 送信ポートのプロパティを登録、 **SendLocationPropertiesXML**次の値を持つレジストリ キー。  
+ HTTP アダプターが定義することで、HTTP 送信ポートのプロパティを登録、 **SendLocationPropertiesXML**値は、次のレジストリ キー。  
   
 ```  
 <CustomProps><Username vt="8"/><Password vt="8">Encrypted</Password><Certificate vt="8"/><RequestTimeout vt="3"/><MaxRedirects vt="3"/><ContentType vt="8"/><UseProxy vt="11"/><ProxyName vt="8"/><ProxyPort vt="3"/><ProxyUsername vt="8"/><ProxyPassword vt="8">Encrypted</ProxyPassword><UseHandlerSetting vt="11"/><AuthenticationScheme vt="8"/><UseSSO vt="11"/><AffiliateApplicationName vt="8"/></CustomProps>  
@@ -158,4 +158,4 @@ SendLocationPropertiesXML
 ```  
   
 ## <a name="see-also"></a>参照  
- [アダプターのデザインに関する問題](../core/adapter-design-issues.md)
+ [アダプターのデザインの問題点](../core/adapter-design-issues.md)

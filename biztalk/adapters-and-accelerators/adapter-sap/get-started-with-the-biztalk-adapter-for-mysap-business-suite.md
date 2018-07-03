@@ -1,6 +1,6 @@
 ---
-title: BizTalk Adapter 用 mySAP Business Suite の概要 |Microsoft ドキュメント
-description: カスタム Rfc のインストール、アダプターについて、SAP、mySAP アダプターの BizTalk アダプター パック (BAP) を使用するチュートリアルのステップでタスクを RFC および IDOC 完了
+title: BizTalk Adapter for mySAP Business Suite の概要 |Microsoft Docs
+description: カスタム Rfc をインストール、アダプターについて、SAP、BizTalk アダプター パック (BAP) での mySAP アダプターを使用するチュートリアルの手順で RFC および IDOC のタスクを完了
 ms.custom: ''
 ms.date: 08/16/2017
 ms.prod: biztalk-server
@@ -13,47 +13,47 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e5607a255f50bf5295d4ea22c9a680d86f38e5b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02112b6974a537c9f66cc301014ae16bb4bf326f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216322"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36967473"
 ---
-# <a name="get-started-with-the-biztalk-adapter-for-mysap-business-suite"></a>BizTalk Adapter 用 mySAP Business Suite の概要します。
-このセクションでは Microsoft に新しいユーザーのアダプター、前提条件、およびトピックの概要を説明する[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。 機能についても説明[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]とアダプターを使用して SAP システムで実行できるさまざまな操作です。  
+# <a name="get-started-with-the-biztalk-adapter-for-mysap-business-suite"></a>BizTalk Adapter for mySAP Business Suite の概要します。
+このセクションでは、ユーザーが Microsoft に新しいアダプター、前提条件、およびトピックの概要を示します[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 機能について説明します[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]とアダプターを使用して SAP システムで実行できるさまざまな操作です。  
 
 ## <a name="what-is-an-adapter"></a>アダプターとは何ですか。 
-アダプターは、ソフトウェア コンポーネントと基幹業務 (LOB) システムからメッセージを送受信することができます。 アダプターの主な設計目標は、取引先間でのビジネス ドキュメントの交換を容易にです。 各ビジネス システムは、特定のドキュメント形式およびプロトコルに従うことがあります、ために、アダプターは、共通に認識される標準と、ユーザーに一貫したインターフェイスを提供するプロトコルに準拠した配信メカニズムを使用する必要があります。  
+アダプターは、基幹業務 (LOB) システムとのメッセージを送受信することができるソフトウェア コンポーネントです。 アダプターの主な設計目標は、取引先間でのビジネス ドキュメントの交換を促進します。 各ビジネス システムは、特定のドキュメント形式とプロトコルに従うことがあります、ため、アダプターは、一般的な規格と、ユーザーに統一インターフェイスを提供するプロトコルに準拠した配信メカニズムを使用する必要があります。  
   
  アダプターは、2 つのカテゴリに分類できます。  
   
--   **LOB アダプタ**です。 このようなアダプターが LOB システムへのアクセスをサービス指向のプログラミング モデルを提供、SAP の Siebel アダプターなどです。  
+- **LOB アダプタ**します。 このようなアダプターへのアクセスの LOB システムへのサービス指向のプログラミング モデルを提供する、SAP や Siebel アダプターなど。  
   
--   **データ アダプター**です。 このようなアダプターがデータベースにアクセスできるサービス指向のプログラミング モデルを提供、Oracle データベースまたは SQL Server 用のアダプターなどです。  
+- **データ アダプター**します。 このようなアダプターは、access データベースにサービス指向のプログラミング モデルを提供 — たとえば、Oracle database または SQL Server のアダプター。  
   
- 5 つのアダプタでは、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]:  
+  5 つのアダプタでは、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]:  
   
--   [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)](、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)])  
+- [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] (、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)])  
   
--   [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)](、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)])  
+- [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] (、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)])  
   
--   [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)](、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)])  
+- [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] (、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)])  
   
--   [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)](、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]) など、 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)])  
+- [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] (、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]) など、 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)])  
   
--   [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)](、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]) など、 [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])  
+- [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] (、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]) など、 [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])  
   
-    > [!NOTE]
-    >  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] 64 ビット プラットフォームでは使用できません。  
+  > [!NOTE]
+  >  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] 64 ビット プラットフォームでは使用できません。  
   
- かどうかは既に分かっていなければを使用する方法、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]で、社内をお勧めする機能を表示することによって起動してで説明されているアダプターの機能[BizTalk Adapter 用 mySAP Business Suite 理解](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md).  
+  かどうかは既にわからないを使用する方法、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]で、社内をお勧めして機能の探索を開始してで説明されているアダプターの機能を[理解の BizTalk Adapter 用 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md).  
   
-## <a name="next-steps"></a>次の手順  
-- [SAP 用データ プロバイダーのカスタム Rfc をインストールします。](install-custom-rfcs-for-the-data-provider-for-sap.md)
+## <a name="next-steps"></a>次のステップ  
+- [Data Provider for SAP のカスタム RFC をインストールする](install-custom-rfcs-for-the-data-provider-for-sap.md)
   
--   [MySAP Business Suite の BizTalk アダプターを理解します。](understand-biztalk-adapter-for-mysap-business-suite.md)  
+-   [BizTalk Adapter for mySAP Business Suite について](understand-biztalk-adapter-for-mysap-business-suite.md)  
 
-- [SAP での RFC および IDOC のタスクを完了](performing-tasks-using-the-sap-gui-for-specific-sap-adapter-scenarios.md)
+- [SAP で RFC および IDOC のタスクを実行する](performing-tasks-using-the-sap-gui-for-specific-sap-adapter-scenarios.md)
   
--   [SAP アダプタ チュートリアル](sap-adapter-tutorials.md)  
+-   [SAP アダプター チュートリアル](sap-adapter-tutorials.md)  

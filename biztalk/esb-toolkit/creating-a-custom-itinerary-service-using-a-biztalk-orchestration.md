@@ -1,5 +1,5 @@
 ---
-title: BizTalk オーケストレーションを使用してカスタム Itinerary サービスを作成する |Microsoft ドキュメント
+title: BizTalk オーケストレーションを使用して、カスタム スケジュール サービスを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,77 +12,77 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 723c0bc93192267f404d42e7fe859bb37ea59895
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa36acc84358a8e91a0b9daaa4370270fb5860b1
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289810"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988539"
 ---
-# <a name="creating-a-custom-itinerary-service-using-a-biztalk-orchestration"></a>BizTalk オーケストレーションを使用してカスタム Itinerary サービスを作成します。
-Itinerary フレームワークの一部である、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]オーケストレーションを使用して、itinerary 手順の実行をサポートします。 以下のことがありますが、機能の要件に基づいて、Microsoft BizTalk Server オーケストレーションとしてカスタム itinerary サービスを実装することができます。  
+# <a name="creating-a-custom-itinerary-service-using-a-biztalk-orchestration"></a>BizTalk オーケストレーションを使用して、カスタム スケジュール サービスを作成します。
+スケジュール オンランプ フレームワークの一部である、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]オーケストレーションを使用して、itinerary 手順の実行をサポートしています。 カスタム スケジュール サービスは、次の機能要件に基づいて、Microsoft BizTalk Server オーケストレーションとして実装できます。  
   
--   複数のサービスの呼び出し (に示すように、[をインストールして、スキャッター/ギャザー サンプルを実行している](../esb-toolkit/installing-and-running-the-scatter-gather-sample.md))  
+- 複数のサービス呼び出し (に示すように、[をインストールして、スキャッター/ギャザー サンプルを実行している](../esb-toolkit/installing-and-running-the-scatter-gather-sample.md))  
   
--   プロトコル仲介およびメッセージの相関関係 (たとえば、HTTP、MQSeries)  
+- プロトコル、仲介とメッセージの関連付け (たとえば、HTTP、MQSeries)  
   
--   複雑なルーティングの決定に基づいてメッセージを強化外部データからソース  
+- メッセージの強化外部データからソースをに基づいて複雑なルーティングの決定  
   
--   ビジネス処理のロジック  
+- ビジネス処理ロジック  
   
- BizTalk Server オーケストレーションを使用して実装すべて itinerary サービスは、次の場合です。  
+  BizTalk Server オーケストレーションを使用して実装されているすべてのスケジュール サービスは、次を担当です。  
   
--   例外と ESB 例外処理のフレームワークまたは (一方向の日程) の再送信をサポートする省略可能なカスタム例外ハンドラーを使用して、エラー処理  
+- 例外と ESB 例外処理のフレームワークまたは再送信 (一方向のスケジュール) をサポートするオプションのカスタム例外ハンドラーを使用して、エラー処理  
   
--   旅行計画を進めると、次の itinerary サービス ステップが実行できるように、BizTalk Server を経由して送信メッセージを発行  
+- 旅行計画を進めると、次のスケジュール サービス ステップが実行できるように、BizTalk Server を経由して送信メッセージを公開  
   
-#### <a name="to-create-a-custom-itinerary-service-using-a-biztalk-server-orchestration"></a>BizTalk Server オーケストレーションを使用してカスタム itinerary サービスを作成するには  
+#### <a name="to-create-a-custom-itinerary-service-using-a-biztalk-server-orchestration"></a>BizTalk Server オーケストレーションを使用して、カスタム スケジュール サービスを作成するには  
   
-1.  新しいオーケストレーション; を含む新しい BizTalk Server プロジェクトを作成します。たとえば、MyCustomeItineraryService.odx です。  
+1. 新しいオーケストレーションでは; を含む新しい BizTalk Server プロジェクトを作成します。たとえば、MyCustomeItineraryService.odx です。  
   
-2.  次のアセンブリへの参照を追加します。  
+2. 次のアセンブリへの参照を追加します。  
   
-    -   **Microsoft.Practices.ESB.Itinerary**  
+   -   **Microsoft.Practices.ESB.Itinerary**  
   
-    -   **Microsoft.Practices.ESB.Itinerary.Schemas**  
+   -   **Microsoft.Practices.ESB.Itinerary.Schemas**  
   
-    -   **Microsoft.Practices.ESB.ExceptionHandling**  
+   -   **Microsoft.Practices.ESB.ExceptionHandling**  
   
-    -   **Microsoft.Practices.ESB.ExceptionHandling.Faults**  
+   -   **Microsoft.Practices.ESB.ExceptionHandling.Faults**  
   
-3.  論理の直接バインドを定義するポートとアクティブ化された受信図形をオーケストレーションで受信します。  
+3. 論理の直接バインドを定義する受信ポートとアクティブ化された受信図形をオーケストレーションします。  
   
-4.  オーケストレーションが実行されるように、メッセージの itinerary コンテキストからオーケストレーションをアクティブ化するためのサブスクリプション フィルターを定義、 **MyCustomItineraryService**手順です。 次のコードでは、適切なフィルターの例を示します。  
+4. オーケストレーションが実行されるようにスケジュール オンランプのメッセージ コンテキストからオーケストレーションをアクティブ化するサブスクリプション フィルターを定義、 **MyCustomItineraryService**手順。 次のコードでは、適切なフィルターの例を示します。  
   
-    ```csharp  
-    (Microsoft.Practices.ESB.Itinerary.Schemas.ServiceName   
-        == "MyCustomItineraryService")   
-    && (Microsoft.Practices.ESB.Itinerary.Schemas.ServiceState == "Pending")  
-    && (Microsoft.Practices.ESB.Itinerary.Schemas.ServiceType   
-        == "Orchestration")  
-    ```  
+   ```csharp  
+   (Microsoft.Practices.ESB.Itinerary.Schemas.ServiceName   
+       == "MyCustomItineraryService")   
+   && (Microsoft.Practices.ESB.Itinerary.Schemas.ServiceState == "Pending")  
+   && (Microsoft.Practices.ESB.Itinerary.Schemas.ServiceType   
+       == "Orchestration")  
+   ```  
   
-5.  型のオーケストレーションを定義する**Microsoft.Practices.ESB.Itinerary.ItineraryStep**です。 次のコードに示すように、この変数を設定するオーケストレーションに式アクティビティを追加します。  
+5. オーケストレーションの種類の定義**Microsoft.Practices.ESB.Itinerary.ItineraryStep**します。 次のコードに示すように、この変数を設定するオーケストレーションに式アクティビティを追加します。  
   
-    ```csharp  
-    // Retrieve the current itinerary step.  
-    itinerary = new Microsoft.Practices.ESB.Itinerary.SerializableItineraryWrapper();  
-    step = new Microsoft.Practices.ESB.Itinerary.SerializableItineraryStepWrapper();  
+   ```csharp  
+   // Retrieve the current itinerary step.  
+   itinerary = new Microsoft.Practices.ESB.Itinerary.SerializableItineraryWrapper();  
+   step = new Microsoft.Practices.ESB.Itinerary.SerializableItineraryStepWrapper();  
   
-    itinerary.Itinerary = Microsoft.Practices.ESB.Itinerary.ItineraryOMFactory.Create(InboundMessage);  
-    step.ItineraryStep = itinerary.Itinerary.GetItineraryStep(InboundMessage);  
+   itinerary.Itinerary = Microsoft.Practices.ESB.Itinerary.ItineraryOMFactory.Create(InboundMessage);  
+   step.ItineraryStep = itinerary.Itinerary.GetItineraryStep(InboundMessage);  
   
-    ```  
+   ```  
   
-6.  手順については、[次へ] itinerary; 送信メッセージを作成する旅行計画に、カスタム実装を追加します。たとえば、OutboundMsg です。  
+6. スケジュール オンランプ法; 送信メッセージを作成するスケジュールに、カスタム実装を追加します。たとえば、OutboundMsg です。  
   
-7.  受信メッセージからメッセージ コンテキストを使用する次の式アクティビティを使用して旅程を進めます。  
+7. 受信メッセージからメッセージ コンテキストを使用して次の式アクティビティを使用してスケジュールを進めます。  
   
-    ```csharp  
-    OutboundMessage(*) = InboundMessage(*);   
-    itinerary.Itinerary.Advance(OutboundMessage, itineraryStep.ItineraryStep);  
-    ```  
+   ```csharp  
+   OutboundMessage(*) = InboundMessage(*);   
+   itinerary.Itinerary.Advance(OutboundMessage, itineraryStep.ItineraryStep);  
+   ```  
   
-8.  [次へ] の itinerary サービスを有効に直接バインドの送信ポートを通じて更新行程、送信メッセージを送信します。  
+8. [次へ] のスケジュール サービスをアクティブに直接バインドされた送信ポートを通じて更新のスケジュールと送信メッセージを送信します。  
   
- BizTalk Server オーケストレーションを使用してカスタム itinerary サービスの実装の詳細については、次を参照してください[のインストールと旅程ランプでサンプルを実行して](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)と[インストールしてスキャッター/ギャザーを実行する。サンプル](../esb-toolkit/installing-and-running-the-scatter-gather-sample.md)です。
+   BizTalk Server オーケストレーションを使用して、カスタム スケジュール サービスを実装する方法の詳細については、次を参照してください[をインストールすると、日程ランプでサンプルを実行する](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)と[インストールし、スキャッター/ギャザーの実行。サンプル](../esb-toolkit/installing-and-running-the-scatter-gather-sample.md)します。

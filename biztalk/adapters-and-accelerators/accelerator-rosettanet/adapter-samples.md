@@ -1,5 +1,5 @@
 ---
-title: アダプタ サンプル |Microsoft ドキュメント
+title: アダプタ サンプル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d7d1aea5afa53bb334d61a1c560326b67361686
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 10dac21957095f7e7e78c7b5243541ec61e41653
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206498"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36989275"
 ---
 # <a name="adapter-samples"></a>アダプタ サンプル
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] の Software Development Kit (SDK) には、アダプタのサンプルが含まれています。 このセクションでは、各アダプター サンプルが示す機能、サンプルをビルドおよび実行する方法、および予測できる実行結果について詳しく説明します。  
+Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]アダプター サンプルいくつかにはのソフトウェア開発キット (SDK) が含まれています。 このセクションでは、各アダプター サンプルが示す機能、サンプルをビルドおよび実行する方法、および予測できる実行結果について詳しく説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

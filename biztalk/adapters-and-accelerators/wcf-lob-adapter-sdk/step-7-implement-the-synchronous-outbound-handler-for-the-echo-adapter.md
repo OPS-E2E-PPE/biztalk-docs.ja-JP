@@ -1,5 +1,5 @@
 ---
-title: '手順 7: エコー アダプターの同期送信ハンドラーを実装する |Microsoft ドキュメント'
+title: '手順 7: エコー アダプターの同期送信ハンドラーを実装する |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a2e2679edafd72dc0d64510e7a8566180818f8c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: e44c26c1708f54cceeb979cf20e5c43a95528a54
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25967736"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979467"
 ---
-# <a name="step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter"></a>手順 7: エコー アダプターの同期送信ハンドラーを実装します。
+# <a name="step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter"></a>手順 7: エコー アダプターの同期送信ハンドラーを実装する.
 ![手順 9 の 7](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-7of9.gif "Step_7of9")  
   
  **所要時間:** 30 分  
   
- この手順で、同期送信アダプターの性能、エコーを実装します。 よると、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、同期の送信機能をサポートするために実装する必要があります、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler`インターフェイスです。 エコー アダプターの場合、 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] EchoAdapterOutboundHandler と呼ばれる 1 つの派生クラスが自動的に生成されます。  
+ この手順では、エコー アダプターの送信同期の機能を実装します。 に従って、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、同期の送信機能をサポートするために実装する必要があります、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler`インターフェイス。 エコー アダプターの場合、 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] EchoAdapterOutboundHandler と呼ばれる 1 つの派生クラスが自動的に生成されます。  
   
- 実装する方法の理解を深めるために EchoAdapterOutboundHandler クラスを更新する次のセクションで、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler.Execute%2A`着信 WCF 要求メッセージを解析する方法、および応答の送信 WCF メッセージを生成する方法です。  
+ 実装する方法の理解を深めるために、EchoAdapterOutboundHandler クラスを更新する次のセクションで、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler.Execute%2A`着信 WCF 要求メッセージを解析する方法、および応答の送信 WCF メッセージを生成する方法。  
   
 ## <a name="prerequisites"></a>前提条件  
- この手順を開始する前にする必要がありますが正常に完了しました[手順 6: エコー アダプターのメタデータを解決するハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)です。 基礎知識`Microsoft.ServiceModel.Channels.Common.IOutboundHandler`も便利です。  
+ この手順を開始する前にする必要がありますが正常に完了して[手順 6: エコー アダプターのメタデータ解決ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)します。 基本的な知識`Microsoft.ServiceModel.Channels.Common.IOutboundHandler`も便利です。  
   
 ## <a name="the-ioutboundhandler-interface"></a>IOutboundHandler インターフェイス  
  `Microsoft.ServiceModel.Channels.Common.IOutboundHandler`として定義されます。  
@@ -41,41 +41,41 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
 }  
 ```  
   
- `Microsoft.ServiceModel.Channels.Common.IOutboundHandler.Execute%2A`メソッドは、ターゲット システムに対応するメソッドを呼び出すことによって、着信 WCF 要求メッセージを実行し、出力方向の WCF 応答メッセージを返します。 そのパラメーターの定義は、次の表のとおりです。  
+ `Microsoft.ServiceModel.Channels.Common.IOutboundHandler.Execute%2A`メソッドは、ターゲット システムに対応するメソッドを呼び出すことによって、着信 WCF 要求メッセージを実行し、送信 WCF 応答メッセージを返します。 そのパラメーターの定義は、次の表のとおりです。  
   
 |**パラメーター**|**定義**|  
 |-------------------|--------------------|  
 |message|受信 WCF 要求メッセージ。|  
-|timeout|時間間隔が内部では、この操作を完了する必要があります。 操作がスローする必要があります、`System.TimeoutException`操作を完了する前に、指定したタイムアウト時間を超過した場合。|  
+|timeout|時間間隔が、この操作を完了する必要があります。 操作をスローする必要があります、`System.TimeoutException`操作を完了する前に、指定したタイムアウト時間を超過した場合。|  
   
- 場合は、アダプターは、一方向の送信 (、アダプターで期待される応答メッセージはありません) を実行する、このメソッドは null を返す必要があります。 アダプターは双方向の操作を実行している場合`Microsoft.ServiceModel.Channels.Common.OperationResult`と等しい`Microsoft.ServiceModel.Channels.Common.OperationResult.Empty%2A`、このメソッドは、空の本文で WCF 応答メッセージを返します。 それ以外の場合に値を含む本体を持つ WCF 応答メッセージを返す必要がありますが、`Microsoft.ServiceModel.Channels.Common.OperationResult`オブジェクト。 応答アクション文字列を構築するために使用`Microsoft.ServiceModel.Channels.Common.OperationMetadata.OutputMessageAction%2A`です。  
+ アダプターは、一方向の送信 (アダプターで期待される応答メッセージはありません) を実行する場合は、このメソッドは null を返します。 アダプターがによる双方向の操作を実行する場合`Microsoft.ServiceModel.Channels.Common.OperationResult`等しく`Microsoft.ServiceModel.Channels.Common.OperationResult.Empty%2A`、このメソッドは、空の本文で WCF 応答メッセージを返します。 内の値を格納している本文を使用して WCF 応答メッセージを返す必要がありますそれ以外の場合、`Microsoft.ServiceModel.Channels.Common.OperationResult`オブジェクト。 応答アクションの文字列を構築するには使用`Microsoft.ServiceModel.Channels.Common.OperationMetadata.OutputMessageAction%2A`します。  
   
-## <a name="echo-adapter-synchronous-outbound"></a>同期アダプターをエコー送信  
- によっては、ターゲット システムの操作を実装する方法はたくさんあります、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler.Execute%2A`メソッドです。 エコー アダプターの 3 つの送信操作があるし、それらの割り当て済みのノード Id と表示名は。  
+## <a name="echo-adapter-synchronous-outbound"></a>エコー アダプターの同期送信  
+ によって、ターゲット システムの操作を実装する方法はたくさんあります、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler.Execute%2A`メソッド。 エコー アダプターの 3 つの送信操作があるし、割り当てられているノードの Id と表示名。  
   
--   文字列 EchoStrings (文字列データを)、ノード ID エコー/EchoString、表示名を = EchoString を =  
+- string EchoStrings (文字列データ)、ノード ID エコー/EchoString、表示名を = = EchoString  
   
--   EchoGreetings(Greeting greeting)、ノード ID を greeting エコー/EchoGreetings、表示名を = EchoGreetings を =  
+- EchoGreetings(Greeting greeting)、ノード ID を案内エコー/EchoGreetings、表示名を = = EchoGreetings  
   
--   CustomGreeting EchoCustomGreetingFromFile(Uri greetingInstancePath)、nodeID エコー/EchoCustomGreetingFromFile、表示名を = EchoGreetings を =  
+- CustomGreeting EchoCustomGreetingFromFile(Uri greetingInstancePath)、nodeID エコー/EchoCustomGreetingFromFile、表示名を = = EchoGreetings  
   
- 正しく受信 WCF 要求メッセージを解析し、出力方向の WCF 応答メッセージを生成、知識が必要で使用される SOAP メッセージ内の次の要素の[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]:  
+  正しく着信 WCF 要求メッセージを解析し、送信する WCF 応答メッセージを生成、によって使用される SOAP メッセージ内で、次の要素を理解しておく必要がありますあります、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]:  
   
- 受信 WCF 要求メッセージ。  
+  受信 WCF 要求メッセージ。  
   
--   WCF メッセージのアクションを入力する操作のノード ID を =  
+- WCF メッセージのアクションの入力操作のノード ID を =  
   
--   着信メッセージの本文 = 開始本文の要素は\<displayname\>\<パラメーター名\>{データ}\</parameter 名前\>\</displayname\>  
+- 着信メッセージの本文 = 開始本文の要素が\<displayname\>\<パラメーター名\>{データ}\</parameter 名前\>\</displayname\>  
   
- 送信 WCF 応答メッセージ。  
+  送信 WCF 応答メッセージ。  
   
--   WCF メッセージのアクションの出力操作のノード ID = +"/応答"  
+- WCF メッセージのアクションの出力操作のノード ID を = +"/応答"  
   
--   メッセージ本文を送信 = 開始本文の要素が\<displayname +"Response"\>」と入力し\<displayname +「結果」\>、続くと、 \<datatype\>データ\</datatype\>\</displayname+"結果\>\</displayname +"Response"\>  
+- メッセージ本文を送信 = 開始本文の要素が\<displayname +"Response"\>、その後に\<displayname +「結果」\>、後に、 \<datatype\>データ\</datatype\>\</displayname+"結果\>\</displayname +"Response"\>  
   
- たとえば、操作**string[] EchoStrings (文字列データ)**、ノード ID = エコー/EchoStrings、および表示名が EchoStrings を =。  
+  操作など、 **string[] EchoStrings (文字列データ)**、ノード ID と表示名をエコー/EchoStrings を = = EchoStrings:  
   
- WCF メッセージのアクションの入力 ="エコー/EchoStrings"です。パラメーター名があるため、入力の本文は次のように、検索と`data`です。  
+  WCF メッセージのアクションの入力 ="エコー/EchoStrings";パラメーター名があるため、入力本文は次のように、`data`します。  
   
 ```  
 <EchoStrings>  
@@ -84,7 +84,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
 </EchoStrings>  
 ```  
   
- WCF メッセージのアクションの出力 =「エコー/EchoStrings/応答」です。出力本文次のとおり、データ型なので、**文字列**です。  
+ WCF メッセージのアクションの出力 =「エコー/EchoStrings/応答」;データ型があるため、出力本文は次のように、**文字列**します。  
   
 ```  
 <EchoStringsResponse>  
@@ -94,10 +94,10 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
 </EchoStringsResponse>  
 ```  
   
- 受信 WCF 要求メッセージを解析するときに行うこともできます、 `System.Xml.XmlDictionaryReader` WCF 応答メッセージを作成するときに、WCF メッセージ内のコンテンツを取得、使用することができます、`System.Xml.XmlWriter`するようにします。  
+ 着信 WCF 要求メッセージを解析するときに使用できます、 `System.Xml.XmlDictionaryReader` WCF 応答メッセージを作成するときは、WCF メッセージ内のコンテンツを取得、使用することができます、`System.Xml.XmlWriter`するようにします。  
   
 ## <a name="implementing-the-ioutboundhandler"></a>IOutboundHandler を実装します。  
- Execute メソッドを実装する、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler`です。 最初に、取得、`Microsoft.ServiceModel.Channels.Common.OperationMetadata`入力メッセージのアクションに基づいてオブジェクト。 受信 WCF メッセージを解析し、各操作に基づいて関連付けられているエコー機能を実行します。 最後に、出力方向のメッセージ本文の形式を使用して、送信 WCF 応答メッセージを作成します。  
+ Execute メソッドを実装する、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler`します。 最初に、取得、`Microsoft.ServiceModel.Channels.Common.OperationMetadata`オブジェクトに基づく入力メッセージのアクション。 受信 WCF メッセージを解析し、操作のたびに基に、関連付けられている echo 機能を実行します。 最後に、送信メッセージの本文の形式を使用して、送信 WCF 応答メッセージを作成します。  
   
 #### <a name="to-implement-the-execute-method-of-the-echoadapteroutboundhandler-class"></a>EchoAdapterOutboundHandler クラスの Execute メソッドを実装するには  
   
@@ -110,13 +110,13 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     using System.IO;  
     ```  
   
-3.  内部、 **Execute**メソッド、既存のロジックを次に置き換えます。  
+3.  内で、 **Execute**メソッドを次に、既存のロジックを置き換えます。  
   
-    1.  このロジックでは、要求された操作を確認します。  
+    1.  このロジックは、要求された操作を確認します。  
   
-    2.  取得、 `Microsoft.ServiceModel.Channels.Common.OperationMetadata` SOAP 入力メッセージのアクションに基づいてオブジェクト。  
+    2.  取得、`Microsoft.ServiceModel.Channels.Common.OperationMetadata`オブジェクトに基づく入力メッセージの SOAP アクション。  
   
-    3.  アクションの種類に基づき、WCF 要求メッセージを解析し、適切な操作が呼び出されます。  
+    3.  アクションの種類に基づき、WCF 要求メッセージを解析し、適切な操作を呼び出します。  
   
     ```csharp  
     // Trace input message  
@@ -146,7 +146,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     return null;              
     ```  
   
-4.  ここで追加、 **ExecuteEchoStrings** string[] EchoStrings (文字列データ) の操作を処理するメソッド。 このヘルパー関数を読み取り、WCF 要求メッセージ、echoInUpperCase URI 要素が設定されているかどうかはかどうかを確認 true です。場合は、大文字に変換する回数のカウント変数に示すように、入力文字列に変換します。 次に、WCF 応答メッセージの形式で生成: \<EchoStringsResponse\>\<EchoStringResult\>\<文字列\>{データ}\</string\> \</EchoStringResult\>\</EchoStringsResponse\>です。  
+4.  ここで追加、 **ExecuteEchoStrings** string[] EchoStrings (文字列データ) の操作を処理するメソッド。 このヘルパー関数は、WCF 要求メッセージ、echoInUpperCase URI 要素が設定されているかどうかにチェックを読み取りを true にそうである場合は、入力文字列を count 変数が示すとおりの回数だけに大文字に変換します。 次に、WCF 応答メッセージの形式で生成: \<EchoStringsResponse\>\<EchoStringResult\>\<文字列\>{データ}\</string\> \</EchoStringResult\>\</EchoStringsResponse\>します。  
   
     ```csharp  
     private Message ExecuteEchoStrings(ParameterizedOperationMetadata om, Message message, TimeSpan timeout)  
@@ -188,7 +188,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-5.  追加することにより続行、 **ExecuteEchoGreetings** EchoGreetings 操作を処理するメソッド。 このヘルパー関数は、WCF 要求メッセージを読み取り、操作およびによって型を解決、`ResolveOperationMetadata`と`ResolveTypeMetadata`のメソッド、`Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler`インターフェイス、およびの形式を使用して WCF 応答メッセージが生成されます: \<EchoGreetingsResponse\>\<EchoGreetingsResult\>... メッセージしています.\</EchoGreetingsResult\>\</EchoGreetingsResponse\>です。  
+5.  追加することで引き続き、 **ExecuteEchoGreetings** EchoGreetings 操作を処理するメソッド。 このヘルパー関数は、WCF 要求メッセージを読み取り、操作とした型の解決、`ResolveOperationMetadata`と`ResolveTypeMetadata`のメソッド、`Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler`インターフェイス、し、次の形式を使用して WCF 応答メッセージを生成: \<EchoGreetingsResponse\>\<EchoGreetingsResult\>... メッセージ.\</EchoGreetingsResult\>\</EchoGreetingsResponse\>します。  
   
     ```csharp  
     private Message ExecuteEchoGreetings(ParameterizedOperationMetadata om, Message message, TimeSpan timeout)  
@@ -233,7 +233,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-6.  ここで追加、 **ExecuteEchoCustomGreetingFromFile** EchoCustomGreetingFromFile 操作を処理するメソッド。 指定したファイルからメッセージを読み取りこのヘルパー関数は、WCF 要求メッセージを読み取りの形式を使用して WCF 応答メッセージが生成されます: \<EchoGreetingsFromFileResponse\> \<EchoGreetingsFromFileResult\>... メッセージしています.\</EchoGreetingsFromFileResult\>\</EchoGreetingsFromFileResponse\>です。  
+6.  ここで追加、 **ExecuteEchoCustomGreetingFromFile** EchoCustomGreetingFromFile 操作を処理するメソッド。 指定したファイルからメッセージを読み取るこのヘルパー関数は、WCF 要求メッセージを読み取るし、次の形式を使用して WCF 応答メッセージを生成: \<EchoGreetingsFromFileResponse\> \<EchoGreetingsFromFileResult\>... メッセージ.\</EchoGreetingsFromFileResult\>\</EchoGreetingsFromFileResponse\>します。  
   
     ```csharp  
     private Message ExecuteEchoCustomGreetingFromFile(OperationMetadata om, Message message, TimeSpan timeout)  
@@ -274,18 +274,18 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-7.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。  
+7.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**します。  
   
-8.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。 これは、エラーなしでコンパイルする必要があります。 以外の場合は、上記のすべてのステップに従っていることを確認します。 ここで、安全に Visual Studio を終了したりに進む[手順 8: エコー アダプターの同期受信ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)です。  
+8.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。 これは、エラーなしでコンパイルする必要があります。 そうでない場合は、上記のすべての手順に従っていることを確認します。 ここで、安全に Visual Studio を終了したりに進んでください[手順 8: エコー アダプターの同期受信ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)します。  
   
-## <a name="what-did-i-just-do"></a>でしただけは何ですか。  
- このステップでは、エコー アダプターの同期送信メッセージング機能を実装する方法について学習しました。 実装してこれを行う、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler.Execute%2A`のメソッド、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler`です。 このメソッドは、着信 WCF 要求メッセージを解析し、必要な処理を実行、出力方向の WCF 応答メッセージを生成します。  
+## <a name="what-did-i-just-do"></a>でしただけ何か。  
+ この手順では、エコー アダプターの同期送信メッセージング機能を実装する方法について説明しました。 実装してこれを行うには`Microsoft.ServiceModel.Channels.Common.IOutboundHandler.Execute%2A`のメソッド、`Microsoft.ServiceModel.Channels.Common.IOutboundHandler`します。 このメソッドは、着信 WCF 要求メッセージを解析、必要なアクションを実行し送信する WCF 応答メッセージを生成します。  
   
- WCF を使用して、着信 WCF 要求メッセージの具体的には、`System.ServiceModel.Channels.Message.Headers.Action%2A`をさらに、受信メッセージ本文の基本的な構造を理解することにより、入力メッセージのアクションを取得します。 使用した出力方向の WCF 応答メッセージの`Microsoft.ServiceModel.Channels.Common.OperationMetadata.OutputMessageAction%2A`をさらに、出力方向のメッセージ本文の基本的な構造を理解することにより、出力メッセージのアクションを取得します。 使用して解析し、WCF メッセージを作成する、`System.Xml.XmlDictionaryReader`に着信 WCF 要求メッセージを読んだり使用したり`System.Xml.XmlWriter`出力方向の WCF 応答メッセージを書き込む。  
+ WCF を使用して、着信 WCF 要求メッセージの具体的には、`System.ServiceModel.Channels.Message.Headers.Action%2A`をさらに受信したメッセージの本文の基本的な構造を理解することによって入力メッセージのアクションを取得します。 使用して、送信する WCF 応答メッセージの`Microsoft.ServiceModel.Channels.Common.OperationMetadata.OutputMessageAction%2A`をさらに、送信メッセージの本文の基本的な構造を理解することにより、出力メッセージのアクションを取得します。 使用して解析し、WCF メッセージを作成する、`System.Xml.XmlDictionaryReader`に着信 WCF 要求メッセージを読み取って、使用`System.Xml.XmlWriter`送信 WCF 応答メッセージを記述します。  
   
 ## <a name="next-steps"></a>次の手順  
-ビルドして、エコー アダプターを展開します。  
+ビルドしてエコー アダプターを展開します。  
   
 ## <a name="see-also"></a>参照  
- [手順 6: エコー アダプター メタデータの解決ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)   
+ [手順 6: エコー アダプターのメタデータ解決ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)   
  [手順 8: エコー アダプターの同期受信ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)

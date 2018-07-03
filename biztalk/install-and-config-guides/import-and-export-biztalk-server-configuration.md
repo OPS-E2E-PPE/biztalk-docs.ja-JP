@@ -1,6 +1,6 @@
 ---
-title: インポートおよびエクスポートの BizTalk Server の構成 |Microsoft ドキュメント
-description: 手順を適用するインポート、エクスポート、または、コンポーネントの構成を解除およびデータベースと BizTalk Server でのサービス アカウントを更新
+title: インポートおよびエクスポートの BizTalk Server の構成 |Microsoft Docs
+description: 手順を適用するには、インポート、エクスポートまたは、コンポーネントの構成を解除およびデータベースと BizTalk Server のサービス アカウントを更新
 ms.custom: ''
 ms.date: 08/14/2017
 ms.prod: biztalk-server
@@ -13,12 +13,12 @@ caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d0d2ae3f94c0ced65c65fd36dc3499c93ce40b0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 60faef2bf700a5e7fa1f5ced556e9fdd572201b4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22300130"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36980739"
 ---
 # <a name="import-and-export-biztalk-server-configuration"></a>BizTalk Server 構成のインポートとエクスポート
 BizTalk Server 構成では、ローカル コンピューターにインストールした機能の構成状態に関する包括的な分析が提供されます。 このツールを使用すると、機能の構成と構成解除、セキュリティ設定の構成、および構成のインポートとエクスポートを行えます。  
@@ -29,10 +29,10 @@ BizTalk Server 構成では、ローカル コンピューターにインスト�
   
 -   BizTalk Server によって生成され、BizTalk Server 構成で一覧表示される既定のアカウントは、ローカル グループに属しています。 マルチ サーバー環境では、これらのローカル グループにドメイン グループを置き換えます。  
   
--   サインインしているアカウントは、構成する場合、OLAP コンピューター上の OLAP 管理者グループのメンバーにすることがあります。  
+-   サインインしているアカウントを構成する場合、OLAP コンピューターでは、OLAP 管理者グループのメンバーにすることがあります。  
   
     > [!NOTE]
-    >  現在サインインしているユーザーのグループ メンバーシップを変更すると、グループは、ドメインのメンバーでも、out、ことを確認して署名して、変更が完了した後にもう一度サインインし、します。 サインインしない場合の出力/記号にすることがありますアクセスが拒否されるように新しいグループのメンバーシップは、現在のログインでは反映されません。  
+    >  現在サインインしているユーザーのグループ メンバーシップを変更すると、グループは、ドメインのメンバーでも、out、ことを確認して署名して、変更が完了した後にもう一度、サインインします。 署名しない場合の出力/記号にすることがありますのアクセスを拒否、現在のログインが新しいグループのメンバーシップを反映できません。  
   
 ## <a name="apply-the-configuration"></a>構成を適用します。  
   
@@ -45,9 +45,9 @@ BizTalk Server 構成では、ローカル コンピューターにインスト�
 ## <a name="import-configuration"></a>構成のインポート
 
 > [!IMPORTANT]
-> 構成ファイルをインポートするときに、構成ファイルが構成している BizTalk Server にインストールされていませんが、コンポーネントを構成していないを確認します。 BizTalk Server 上にインストールされていないコンポーネントを構成しようとすると、デッドロック状態が発生することがあります。 このような状況は、構成しようとして、構成ファイルをコンポーネントに依存するコンポーネントの構成を解除します。 ただし、依存コンポーネントの構成を解除しようとしています。 には、不足しているコンポーネントが存在し、構成すること必要があります。 この問題を解決するのには、コンポーネントをアンインストールする、参照を削除する構成ファイルを編集か、構成ファイルを互換性のある BizTalk Server のインストールに適用する必要があります。  
+> 構成ファイルをインポートすると、構成ファイルが BizTalk Server を構成するにはインストールされていませんのコンポーネントを構成していないことを確認します。 BizTalk Server 上にインストールされていないコンポーネントを構成しようとすると、デッドロック状態が発生することがあります。 このような状況では、構成ファイルで構成しようとするコンポーネントに依存するコンポーネントの構成を解除します。 ただし、依存コンポーネントの構成を解除しようとしています。 には、不足しているコンポーネントが存在し構成する必要があります。 この問題を解決するには、アンインストールのコンポーネントへの参照を削除する構成ファイルを編集または構成ファイルを BizTalk Server の互換性のあるインストールに適用する必要があります。  
 > 
->  パスワードとバックアップ ファイルの場所は、ファイルを手動で編集していない限りをインポートする構成ファイルに保存されません。 機能が既に構成されてはインポートされません。  
+>  パスワードとバックアップ ファイルの場所は、インポートするファイルを手動で編集していない限り、構成ファイルでは保存されません。 機能が既に構成はインポートされません。  
   
   
 1.  **[BizTalk Server 構成]** で、**[構成のインポート]** をクリックします。  
@@ -60,18 +60,18 @@ BizTalk Server 構成では、ローカル コンピューターにインスト�
   
 5.  **[完了]** 画面で、**[完了]** をクリックします。  
 
-BizTalk Server の構成フレームワークを使用して BizTalk Server 構成ファイルをインポートすることができます。 これらのファイルを使用した作業の詳細については、「[構成フレームワークを使用した作業](../install-and-config-guides/working-with-the-configuration-framework.md)」を参照してください。  
+BizTalk Server 構成フレームワークを使用して BizTalk Server 構成ファイルをインポートすることができます。 これらのファイルを使用した作業の詳細については、「[構成フレームワークを使用した作業](../install-and-config-guides/working-with-the-configuration-framework.md)」を参照してください。  
   
-## <a name="export-configuration"></a>構成をエクスポートします。
+## <a name="export-configuration"></a>エクスポートの構成
 
 > [!NOTE]
 >  構成ファイルには、パスワードが保存されていません。    
  
-1.  **[BizTalk Server 構成]** で、**[構成のエクスポート]** をクリックします。  
+1. **[BizTalk Server 構成]** で、**[構成のエクスポート]** をクリックします。  
   
-2.  **[名前を付けて保存]** ダイアログ ボックスで、保存するファイル名を入力し、**[保存]** をクリックします。  
+2. **[名前を付けて保存]** ダイアログ ボックスで、保存するファイル名を入力し、**[保存]** をクリックします。  
 
- BizTalk Server の構成フレームワークを使用して BizTalk Server の構成をエクスポートすることができます。 これらのファイルの使用の詳細については、次を参照してください[構成フレームワークの操作。](../install-and-config-guides/working-with-the-configuration-framework.md)  
+   BizTalk Server 構成フレームワークを使用して BizTalk Server の構成をエクスポートすることができます。 これらのファイルの使用方法の詳細については、次を参照してください[構成フレームワークを使用。](../install-and-config-guides/working-with-the-configuration-framework.md)  
   
 ## <a name="unconfigure-features"></a>機能の構成解除  
  コンピューター上の BizTalk Server 機能の構成を解除するには、BizTalk Server 構成で機能を削除します。  

@@ -1,5 +1,5 @@
 ---
-title: アクティビティ Continuation |Microsoft ドキュメント
+title: アクティビティ Continuation |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,32 +18,32 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c7568da0647ae9847c3de2d060d75a53466b9709
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 91eadd02e3b0a8792b9b27ea6c913b847b534456
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224794"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36981995"
 ---
 # <a name="activity-continuation"></a>アクティビティ Continuation
-BAM アクティビティ (ビジネス アクティビティとも呼ばれます) は複数の異種アプリケーションにまたがることができます (たとえば、1 つのパイプラインから 2 つのオーケストレーション、1 つの基幹業務アプリケーションを経て別のパイプラインに至るなど)。 BAM インフラストラクチャは、開発者と呼ばれる概念の手助けを持つ複数のアプリケーションからのイベントを関連付けることができます"*継続*、"次の図に示したです。  
+BAM アクティビティ (ビジネス アクティビティとも呼ばれます) は複数の異種アプリケーションにまたがることができます (たとえば、1 つのパイプラインから 2 つのオーケストレーション、1 つの基幹業務アプリケーションを経て別のパイプラインに至るなど)。 BAM インフラストラクチャは、わずかな作業、開発者などと呼ばれる概念を持つ複数のアプリケーションからのイベントを関連付けることができます"*継続*、"次の図に表示されます。  
   
  ![](../core/media/ebiz-prog-bam-fig4-app-scopes-cont-tokens.gif "ebiz_prog_bam_fig4_app_scopes_cont_tokens")  
 
 ## <a name="applications"></a>[アプリケーション]  
  アクティビティの最初の部分は販売アプリケーションで行われ、2 番目の部分は梱包/組み立てアプリケーションで行われます。最後に、配送の進捗が、出荷アプリケーションで利用可能になります。 各アプリケーションでは、そのときの作業単位によって、注文書番号 (PO)、販売注文番号 (SO)、出荷指示番号 (UPS) というように ID を使い分けます。 2 つの異なるアプリケーションの間でイベントを関連付けるには、以下の指示に従う必要があります。  
   
--   継続トークンという、両方のアプリケーションで使用できる一意のデータ (たとえば、交換するメッセージの一部分) を指定します。  
+- 継続トークンという、両方のアプリケーションで使用できる一意のデータ (たとえば、交換するメッセージの一部分) を指定します。  
   
--   最初のアプリケーションで EnableContinuation を呼び出し、現在の ActivityID と共に継続トークンを渡します。  
+- 最初のアプリケーションで EnableContinuation を呼び出し、現在の ActivityID と共に継続トークンを渡します。  
   
--   2 つ目のアプリケーションでは BeginActivity を呼び出さないでください。  
+- 2 つ目のアプリケーションでは BeginActivity を呼び出さないでください。  
   
--   2 つ目のアプリケーションでは、以後すべてのイベントを ActivityID ではなく継続トークンを使用して発生させます。  
+- 2 つ目のアプリケーションでは、以後すべてのイベントを ActivityID ではなく継続トークンを使用して発生させます。  
   
- 次のコード例で、3 つのアプリケーションでアクティビティ Continuation を使用する方法を示します。  
+  次のコード例で、3 つのアプリケーションでアクティビティ Continuation を使用する方法を示します。  
   
- **注文書アプリケーション**  
+  **注文書アプリケーション**  
   
 ```  
 string oID="PO#123";  
@@ -97,4 +97,4 @@ es.EndActivity("PurchaseOrder",upsID)
   
  [BAM 動的インフラストラクチャ](../core/bam-dynamic-infrastructure.md)   
  [BAM API (BizTalk Server サンプル)](../core/bam-api-biztalk-server-sample.md)   
- [BAM エンド ツー エンド (BizTalk Server サンプル)](../core/bam-end-to-end-biztalk-server-sample.md)
+ [BAM End-to-End (BizTalk Server サンプル)](../core/bam-end-to-end-biztalk-server-sample.md)

@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10777 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10777 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7343155b649747712a42b70561f8029364537cc9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 08c3f3d1022e58f922ed8e300396fbfe2b8acf8d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277706"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36968595"
 ---
 # <a name="single-sign-on-event-10777"></a>シングル サインオン: イベント 10777
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10777|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|ENTSSO_E_NO_BUILTIN_ACCOUNTS|  
-|メッセージ テキスト|セキュリティ上の理由は次のアカウントは許可されません。 ビルトイン アカウントです。Everyone;|  
+|                 |                                                                                           |
+|-----------------|-------------------------------------------------------------------------------------------|
+|  製品名   |                                 エンタープライズ シングル サインオン                                 |
+| 製品バージョン |                [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                 |
+|    イベント ID     |                                           10777                                           |
+|  イベント ソース   |                                          ENTSSO                                           |
+|    コンポーネント    |                                            なし                                            |
+|  シンボル名  |                               ENTSSO_E_NO_BUILTIN_ACCOUNTS                                |
+|  メッセージ テキスト   | セキュリティ上の理由は、次のアカウントは許可されていません。 ビルトイン アカウントです。Everyone; |
   
 ## <a name="explanation"></a>説明  
  これらのアカウントは使用できません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 詳細については、次を参照してください。 [SSO のセキュリティに関する推奨事項](../core/sso-security-recommendations.md)です。
+ 詳細については、次を参照してください。 [SSO のセキュリティに関する推奨事項](../core/sso-security-recommendations.md)します。

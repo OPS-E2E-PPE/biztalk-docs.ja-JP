@@ -1,5 +1,5 @@
 ---
-title: メッセージ割り当てにおける非正規 Xpath の使用 |Microsoft ドキュメント
+title: メッセージ割り当てにおける非正規 Xpath の使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,35 +12,35 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 201d6f8b6bc910faf79b64ac0b4617530b20608a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f35d946ff595fa4d85427c7b3d6be81247cedf68
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287626"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36977861"
 ---
 # <a name="using-non-canonical-xpaths-in-message-assignments"></a>メッセージ割り当てにおける非正規 XPath の使用
 .Net メッセージの部分を使用すると、XML シリアル化属性によってコードに注釈を付けることができますが、識別フィールドやプロパティ注釈も伴う場合、非常に複雑な XPath 式になります。 これらの複雑な XPath 式は非正規にすることができます。 非正規 XPath は、直接バインドされたオーケストレーションでのみ使用する必要があります。論理的または物理的にバインドされたオーケストレーションでは失敗する可能性があります。 直接バインドされたオーケストレーションは、XML ドキュメントの処理用のパイプラインに依存しないため、処理前に XML ドキュメント全体がメモリに読み込まれます。  
   
 ## <a name="canonical-and-non-canonical-xpath"></a>正規 XPath と非正規 XPath  
- 標準または XPath の省略形は、XPath 仕様から省略構文を使用して ([http://www.w3.org/TR/xpath](http://go.microsoft.com/fwlink/?LinkId=119567)) の場所のパスを指定します。 正規 XPath 式の一部の識別に役立つプロパティは次のとおりです。  
+ または正規 XPath の短い形式は、XPath 仕様から省略構文を使用して ([http://www.w3.org/TR/xpath](http://go.microsoft.com/fwlink/?LinkId=119567)) の場所のパスを指定します。 正規 XPath 式の一部の特徴的なプロパティは次のとおりです。  
   
--   `child::` 軸は、既定では式の各ステップに使用されます。  
+- `child::` 軸は、既定では式の各ステップに使用されます。  
   
--   `@` は、`attribute::` の短縮形です。  
+- `@` は、`attribute::` の短縮形です。  
   
--   `//` は、`/descendant-or-self::node()/` の短縮形です。  
+- `//` は、`/descendant-or-self::node()/` の短縮形です。  
   
--   `.` は、`self::node()` の短縮形です。  
+- `.` は、`self::node()` の短縮形です。  
   
--   `..` は、`parent::node()` の短縮形です。  
+- `..` は、`parent::node()` の短縮形です。  
   
- 正規 XPath 式は、`/*[local-name()='element-name' and namespaceURI()='http://MyUri.org']/*[local-name()='element-name']/@*[local-name='attribute-name']` のような単純式です。  
+  正規 XPath 式は、`/*[local-name()='element-name' and namespaceURI()='http://MyUri.org']/*[local-name()='element-name']/@*[local-name='attribute-name']` のような単純式です。  
   
- 正規 XPath 式は XPath の非正規形と対比できます。 正規 XPath 式は、"一般形式" または "任意の XPath" とも呼ばれ、任意の複雑な式および複数の軸を組み合わせる式 (`//element-name//*[local-name()='element-name' and position()=2]` など) とは区別されます。  
+  正規 XPath 式は XPath の非正規形と対比できます。 正規 XPath 式は、"一般形式" または "任意の XPath" とも呼ばれ、任意の複雑な式および複数の軸を組み合わせる式 (`//element-name//*[local-name()='element-name' and position()=2]` など) とは区別されます。  
   
 ## <a name="example"></a>例  
- 次のプログラムを考慮してください。  
+ 次のプログラムを検討してください。  
   
 ```  
 using System;  

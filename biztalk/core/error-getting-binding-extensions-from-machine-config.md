@@ -1,5 +1,5 @@
 ---
-title: Machine.config からバインド拡張を取得中にエラー |Microsoft ドキュメント
+title: Machine.config からバインド拡張機能を取得中にエラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbe53def02f42c59cf5e40380c898f47695c19da
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 6c65c0341941634bb11bd058bfcbe9c365c612d6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25968800"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36990731"
 ---
 # <a name="error-getting-binding-extensions-from-machineconfig"></a>machine.config からバインド拡張機能を取得中にエラーが発生しました
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|イベント ID|0|  
-|イベント ソース|0|  
-|コンポーネント|0|  
-|シンボル名|0|  
-|メッセージ テキスト|machine.config からバインド拡張機能を取得中にエラーが発生しました|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  製品名   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| 製品バージョン |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    イベント ID     |                                         0                                          |
+|  イベント ソース   |                                         0                                          |
+|    コンポーネント    |                                         0                                          |
+|  シンボル名  |                                         0                                          |
+|  メッセージ テキスト   |                machine.config からバインド拡張機能を取得中にエラーが発生しました                |
   
 ## <a name="explanation"></a>説明  
  このエラーは、受信場所または送信ポートのバインディング構成にはユーザー定義のバインディング拡張機能がありますが、machine.config ファイルに定義されていないときに発生します。 この状況は、主に WCF-Custom アダプターおよび WCF-CustomIsolated アダプターで発生します。  
@@ -42,11 +42,11 @@ ms.locfileid: "25968800"
   
 2.  Machine.config ファイルを変更 (で見つかった **%FrameworkDir%\v4.0.30319\CONFIG**)。  
   
-    1.  動作のサービス構成エディター内の DLL を読み込む (**svcConfigEditor.exe**)。  
+    1.  動作のサービス構成エディター内で DLL を読み込む (**svcConfigEditor.exe**)。  
   
     2.  構成を保存、 **app.config**ファイル  
   
-    3.  コピーし、貼り付け、 **system.servicemodel** extensions セクションは machine.config の同様のセクションでします。場合**system.servicemodel**セクションが必要があります、machine.config に存在しない 1 つを作成します。 次に、machine.config ファイルの構成セクションの例を示します。  
+    3.  コピーして貼り付け、 **system.servicemodel** machine.config の同様のセクションの extensions セクション。場合**system.servicemodel**セクションがあります、machine.config に存在しない 1 つを作成します。 次に、machine.config ファイルの構成セクションの例を示します。  
   
         ```  
           <system.serviceModel>  
@@ -59,6 +59,6 @@ ms.locfileid: "25968800"
         ```  
   
 > [!NOTE]
->  上記のコードは、WCF 拡張機能 タブにも追加できます。拡張機能が必要な場合、受信側を参照してください、 **\<ホスト名\>プロパティ ダイアログ ボックスで、WCF 拡張機能**タブ (Wcf-custom または Wcf-customisolated アダプターの受信ハンドラー)[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。 拡張機能が必要な場合、送信側を参照してください。 **\<ホスト名\>プロパティ ダイアログ ボックスで、WCF 拡張機能** タブ (Wcf-custom アダプターの送信ハンドラー)[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
+>  上記のコードは、WCF 拡張機能 タブにも追加できます。場合は、拡張機能は、受信側である必要がありますを参照してください、 **\<ホスト名\>プロパティ ダイアログ ボックスで、WCF 拡張機能**タブ (Wcf-custom または Wcf-customisolated アダプターの受信ハンドラー)[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。 表示拡張機能は、送信側である必要があります、 **\<ホスト名\>プロパティ ダイアログ ボックスで、WCF 拡張機能** タブ (Wcf-custom アダプターの送信ハンドラー)[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。  
   
  3. 管理コンソールを閉じ、開き直します。 WCF-Custom アダプターのカスタム動作を確認できるようになります。また、管理コンソールを開くと、ポートは有効なままです。

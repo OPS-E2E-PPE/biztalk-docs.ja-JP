@@ -1,6 +1,6 @@
 ---
-title: 送受信コンポーネントの RosettaNet accelerator を使用して、BizTalk Server での送信をカスタマイズする |Microsoft ドキュメント
-description: 作成、カスタマイズ、または RosettaNet acclerator (BTARN) に送信し、BizTalk Server で受信ポートのプロパティを設定
+title: 送受信コンポーネントの RosettaNet アクセラレータを使用して、BizTalk Server での送信のカスタマイズ |Microsoft Docs
+description: 作成、カスタマイズ、または、RosettaNet acclerator (BTARN) に送信し、BizTalk Server での受信ポートのプロパティを設定
 ms.custom: ''
 ms.date: 08/09/2017
 ms.prod: biztalk-server
@@ -18,22 +18,22 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19dbd20fe8e032a31c3665670b6add61eec3c1f1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2215a5464c2798c7b7ffe6f128deccf48d8500e3
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209538"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37009155"
 ---
-# <a name="customizing-send-and-receive-components"></a>送受信コンポーネントの送信をカスタマイズします。
-ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] の送受信コンポーネントのプロパティを作成、カスタマイズ、および設定する方法を説明します。 これらのコンポーネントには ASPX ページ、送信ポートと受信ポート、およびアダプターが含まれます。  
+# <a name="customizing-send-and-receive-components"></a>送受信コンポーネントのカスタマイズ
+このセクションのトピックでは、作成、カスタマイズ、または Microsoft® のプロパティを設定する方法を説明[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]コンポーネントを送受信します。 これらのコンポーネントには ASPX ページ、送信ポートと受信ポート、およびアダプターが含まれます。  
   
- 詳細については[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]、し[RosettaNet accelerator に関する読み取り](learn-the-rosettanet-accelerator-and-the-biztalk-tools-available.md)です。  
+ 詳細については[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]、し[RosettaNet アクセラレータについて](learn-the-rosettanet-accelerator-and-the-biztalk-tools-available.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [ASPX ページの接続のタイムアウトの設定](../../adapters-and-accelerators/accelerator-rosettanet/setting-the-connection-time-out-for-an-aspx-page.md)  
+-   [ASPX ページのタイムアウトの設定](../../adapters-and-accelerators/accelerator-rosettanet/setting-the-connection-time-out-for-an-aspx-page.md)  
   
 -   [孤立したメッセージまたは重複メッセージを処理する送信ポートの作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-a-send-port-to-handle-orphan-or-duplicate-messages.md)  
   
--   [パブリック プロセス オーケストレーションと HTTP アダプターのタイムアウトの設定](../../adapters-and-accelerators/accelerator-rosettanet/setting-time-outs-for-a-public-process-orchestration-and-an-http-adapter.md)
+-   [パブリック プロセス オーケストレーションと HTTP アダプタのタイムアウト設定](../../adapters-and-accelerators/accelerator-rosettanet/setting-time-outs-for-a-public-process-orchestration-and-an-http-adapter.md)

@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10767 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10767 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 67eb30238071cbac6dd50fe8edeec9ae581f9a57
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a14733abb624207704b304ef9718608c9df1c4bf
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276322"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36977339"
 ---
 # <a name="single-sign-on-event-10767"></a>シングル サインオン: イベント 10767
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10767|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|ENTSSO_E_NO_SSO_SERVER|  
-|メッセージ テキスト|SSO サーバー ‘%1’ に接続できませんでした。 SSO が構成されていること、およびそのサーバーで SSO サービスが実行されていることを確認してください。|  
+|                 |                                                                                                                         |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                エンタープライズ シングル サインオン                                                |
+| 製品バージョン |                               [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                |
+|    イベント ID     |                                                          10767                                                          |
+|  イベント ソース   |                                                         ENTSSO                                                          |
+|    コンポーネント    |                                                           なし                                                           |
+|  シンボル名  |                                                 ENTSSO_E_NO_SSO_SERVER                                                  |
+|  メッセージ テキスト   | SSO サーバー ‘%1’ に接続できませんでした。 SSO が構成されていること、およびそのサーバーで SSO サービスが実行されていることを確認してください。 |
   
 ## <a name="explanation"></a>説明  
  ENTSSO クライアントが ENTSSO サーバーに接続できません。  

@@ -1,5 +1,5 @@
 ---
-title: 展開またはポリシーを展開解除する方法 |Microsoft ドキュメント
+title: 展開またはポリシーを展開解除する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,34 +19,34 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d6e7f9f70e6f1f0f09ae1d006172fdc00dc1bc0
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: ad8aa910982ddb63a9f8b9602dbb1bfa843895fa
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25970104"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022896"
 ---
 # <a name="how-to-deploy-or-undeploy-a-policy"></a>ポリシーを展開または展開解除する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、手動でポリシーを展開または展開解除する方法について説明します。 アプリケーションを開始すると、その中に含まれているすべてのポリシーが自動的に展開され、アプリケーションを停止すると、そのポリシーが自動的に展開解除されます。 ポリシーを展開すると、そのポリシーを使用するアプリケーション内で有効になります。 ポリシーは、展開解除すると非アクティブとなり、BizTalk グループ内でそれを使用しているすべてのアプリケーションで動作しなくなります。  
   
  ポリシーを展開または展開解除する際は、次の点に注意してください。  
   
--   ポリシーを展開するには、そのポリシーが BizTalk グループのルール エンジン データベースにあらかじめ存在している必要があります。 ポリシーを含むアプリケーションをインポートすると、ポリシーはルール エンジン データベースに自動的にインポートまたはできる明示的にポリシーをインポートするルール エンジン データベースに、管理コンソールまたは BTSTask を使用して、 」の説明に従って[ポリシーをインポートする方法](../core/how-to-import-a-policy.md)です。 代わりに、追加できますポリシー ルール エンジン データベースにルール エンジン展開ウィザードを使用して」の説明に従って[展開と展開解除ポリシーとボキャブラリを方法](../core/how-to-deploy-and-undeploy-policies-and-vocabularies.md)です。  
+-   ポリシーを展開するには、そのポリシーが BizTalk グループのルール エンジン データベースにあらかじめ存在している必要があります。 ポリシーを含むアプリケーションをインポートすると、ポリシーが、ルール エンジン データベースに自動的にインポートまたは明示的にポリシーをインポートするルール エンジン データベースに、管理コンソールまたは BTSTask を使用して、 」の説明に従って[ポリシーをインポートする方法](../core/how-to-import-a-policy.md)します。 または、追加できますポリシーをルール エンジン データベースに、ルール エンジン展開ウィザードを使用して」の説明に従って[とボキャブラリを展開およびポリシーの展開を解除する方法](../core/how-to-deploy-and-undeploy-policies-and-vocabularies.md)します。  
   
--   ポリシーを展開する前に、必ずパブリッシュして、」の説明に従って[ポリシーを公開する方法](../core/how-to-publish-a-policy.md)です。  
+-   ポリシーを展開する前に発行して、」の説明に従って[ポリシーを公開する方法](../core/how-to-publish-a-policy.md)します。  
   
 -   展開済みのポリシーは変更できません。 展開済みのポリシーを変更する場合は、まず展開を解除する必要があります。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントを使用してログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)です。  
+ このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
   
 ### <a name="to-deploy-or-undeploy-a-policy"></a>ポリシーを展開または展開解除するには  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2.  コンソール ツリーで  **BizTalk Server 管理コンソール**、展開または展開解除、および順に展開するポリシーを含む BizTalk グループを展開**\<すべての成果物\>**.  
+2. コンソール ツリーで、展開**BizTalk Server 管理**、展開または展開解除、および順に展開するポリシーが含まれる BizTalk グループを展開**\<すべての成果物\>**.  
   
-3.  をクリックして**ポリシー**ポリシーを右クリックし、クリックして**展開**または**Undeploy**です。  
+3. クリックして**ポリシー**ポリシーを右クリックし、クリックして**デプロイ**または**Undeploy**します。  
   
 ## <a name="see-also"></a>参照  
  [ポリシーの管理](../core/managing-policies.md)   

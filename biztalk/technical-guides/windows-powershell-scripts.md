@@ -1,5 +1,5 @@
 ---
-title: Windows PowerShell スクリプト |Microsoft ドキュメント
+title: Windows PowerShell スクリプト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4248a81f918b674dcf72c930132b7743472241f3
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b531fa3469139434f341fe9e413a49b4b021e86f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25976344"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979131"
 ---
 # <a name="windows-powershell-scripts"></a>Windows PowerShell スクリプト
-このトピックには、このガイドで説明されているレジストリ設定を適用する BizTalk Server 環境内のコンピューターで実行できる Windows PowerShell スクリプトが含まれています。  
+このトピックでには、このガイドで説明されているレジストリ設定を適用する BizTalk Server 環境内のコンピューターで実行できる Windows PowerShell スクリプトが含まれています。  
   
-> [!IMPORTANT]  
->  これらのスクリプトは、上でのみ実行する必要があります[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]ではありません、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]です。 これらのスクリプトが正常に実行中に[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]、ラボのテストによると、これらのスクリプトを提供しないこと、大幅なパフォーマンスの利点に[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]です。 これらのスクリプトは、上でのみ実行する必要があります、[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]徹底的にテストおよび評価後の運用環境。  
+> [!IMPORTANT]
+>  これらのスクリプトでのみ実行する必要があります[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]ではありません、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]します。 これらのスクリプトが正常に実行中に[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]、これらのスクリプトを提供しないこともパフォーマンスに大きなメリットに示されるがラボ テスト[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]します。 これらのスクリプトでのみ実行する必要があります、[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]徹底的なテストと評価した後、運用環境です。  
   
-## <a name="optimizing-operating-system-performance-through-registry-settings"></a>レジストリ設定によって、オペレーティング システムのパフォーマンスを最適化します。  
- 説明するレジストリ設定を適用する、次の Windows PowerShell スクリプトを使用することができます[オペレーティング システムのパフォーマンスの最適化](../technical-guides/optimizing-operating-system-performance.md)です。  
+## <a name="optimizing-operating-system-performance-through-registry-settings"></a>レジストリ設定を使用してオペレーティング システムのパフォーマンスを最適化します。  
+ 次の Windows PowerShell スクリプトで説明されているレジストリ設定を適用するために使用できます[オペレーティング システムのパフォーマンスの最適化](../technical-guides/optimizing-operating-system-performance.md)します。  
   
- 次のスクリプトをメモ帳にコピーし、セット OSRegSettings.ps1 として保存します。 各コンピューターでスクリプトを実行し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境での指示に従って[オペレーティング システムのパフォーマンスの最適化](../technical-guides/optimizing-operating-system-performance.md):  
+ 次のスクリプトをメモ帳にコピーし、セット OSRegSettings.ps1 として保存します。 内の各コンピューターでスクリプトを実行し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境での手順に従って[オペレーティング システムのパフォーマンスの最適化](../technical-guides/optimizing-operating-system-performance.md):  
   
 ```  
 #Set-OSRegSettings.ps1  
@@ -121,10 +121,10 @@ SetProperty "HKLM:\System\CurrentControlSet\Services\LanmanServer\Parameters" "S
 SetProperty "HKLM:\System\CurrentControlSet\Control\Session Manager\Memory Management" "LargeSystemCache" 0          
 ```  
   
-## <a name="optimizing-network-performance-through-registry-settings"></a>レジストリ設定によってネットワーク パフォーマンスを最適化します。  
- 説明するレジストリ設定を適用する、次の Windows PowerShell スクリプトを使用することができます[ネットワークのパフォーマンスの最適化](../technical-guides/optimizing-network-performance.md)です。  
+## <a name="optimizing-network-performance-through-registry-settings"></a>レジストリ設定を使用してネットワークのパフォーマンスを最適化します。  
+ 次の Windows PowerShell スクリプトで説明されているレジストリ設定を適用するために使用できます[ネットワークのパフォーマンスの最適化](../technical-guides/optimizing-network-performance.md)します。  
   
- 次のスクリプトをメモ帳にコピーし、セット NetworkRegSettings.ps1 として保存します。 各コンピューターでスクリプトを実行し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境での指示に従って[ネットワークのパフォーマンスの最適化](../technical-guides/optimizing-network-performance.md):  
+ 次のスクリプトをメモ帳にコピーし、セット NetworkRegSettings.ps1 として保存します。 内の各コンピューターでスクリプトを実行し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境での手順に従って[ネットワークのパフォーマンスの最適化](../technical-guides/optimizing-network-performance.md):  
   
 ```  
 #Set-NetworkRegSettings.ps1  

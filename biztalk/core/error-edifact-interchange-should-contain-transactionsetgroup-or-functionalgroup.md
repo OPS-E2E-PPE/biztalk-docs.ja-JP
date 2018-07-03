@@ -1,5 +1,5 @@
 ---
-title: Edifact インターチェンジの必要がありますが含まれている TransactionSetGroup または FunctionalGroup Xml タグ |Microsoft ドキュメント
+title: Edifact インターチェンジの必要がありますが含まれている TransactionSetGroup または FunctionalGroup Xml タグ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: adb93582daf235a7f1f0633231e536f3c5b14ab0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f5736a9146a88dd9c9dac6747e381fccc88f18d9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240106"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979331"
 ---
 # <a name="edifact-interchange-should-have-contained-transactionsetgroup-or-functionalgroup-xml-tags"></a>EDIFACT インターチェンジには TransactionSetGroup または FunctionalGroup XML タグが含まれている必要があります
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|-|  
-|メッセージ テキスト|EDIFACT インターチェンジには TransactionSetGroup または FunctionalGroup XML タグが含まれている必要があります|  
+|                 |                                                                                           |
+|-----------------|-------------------------------------------------------------------------------------------|
+|  製品名   |    [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]     |
+| 製品バージョン |                [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                 |
+|    イベント ID     |                                             -                                             |
+|  イベント ソース   |  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI   |
+|    コンポーネント    |                                        EDI エンジン                                         |
+|  シンボル名  |                                             -                                             |
+|  メッセージ テキスト   | EDIFACT インターチェンジには TransactionSetGroup または FunctionalGroup XML タグが含まれている必要があります |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、TransactionSetGroup または FunctionalGroup タグがインターチェンジ XML ファイルに含まれていなかったため、送信パイプラインが保存された EDIFACT バッチ インターチェンジを処理できなかったことを示します。  

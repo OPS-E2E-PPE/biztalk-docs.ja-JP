@@ -1,5 +1,5 @@
 ---
-title: A4SWIFT アクセラレータ |Microsoft ドキュメント
+title: A4SWIFT アクセラレータ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 51f81033c95a0aa7204ff087fda405fc3bde32ff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 383677a743e2cb54ce884e7aa68c12d58240dddb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223530"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996851"
 ---
 # <a name="a4swift-accelerator"></a>A4SWIFT Accelerator
 Message Repair and Submission Request (MRSR) シナリオを使用するように [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../includes/btaa4swift2-3abbrevnonumber-md.md)] アクセラレータをインストールする場合は、以下のバージョンの SharePoint を使用できます。  
   
--   [!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] 3.0 (SP1/SP2 適用)  
+- [!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] 3.0 (SP1/SP2 適用)  
   
--   SharePoint Server 2010  
+- SharePoint Server 2010  
   
--   [!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] 4.0  
+- [!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] 4.0  
   
- [BizTalk Server Accelerator for SWIFT のインストール](http://go.microsoft.com/fwlink/p/?LinkId=271252)をインストールするのには、特定の手順を提供、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../includes/btaa4swift2-3abbrevnonumber-md.md)]アクセラレータと MRSR シナリオを構成します。
+  [BizTalk Server Accelerator for SWIFT のインストール](http://go.microsoft.com/fwlink/p/?LinkId=271252)をインストールするのには、特定の手順を提供します、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../includes/btaa4swift2-3abbrevnonumber-md.md)]アクセラレータと MRSR シナリオを構成します。

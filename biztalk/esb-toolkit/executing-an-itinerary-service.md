@@ -1,5 +1,5 @@
 ---
-title: Itinerary サービスを実行 |Microsoft ドキュメント
+title: スケジュールのサービスを実行する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,35 +12,35 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4a4dc5c201b26ec33ee5666bc0dbeec8f54ccfc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6a85e5c134e9fbbd2d1b6880fdb9e5cd866bc512
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294458"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37024384"
 ---
-# <a name="executing-an-itinerary-service"></a>Itinerary サービスを実行します。
-ESB 行程 itinerary する任意のサービス オーケストレーションとして実装されているか、次のタスクを実行するメッセージング可能性がありますを含めることができます。  
+# <a name="executing-an-itinerary-service"></a>スケジュールのサービスを実行します。
+ESB スケジュールは、オーケストレーションとして実装されているか、次のタスクを実行するメッセージング可能性のある任意のスケジュール サービスを含めることができます。  
   
--   旅行計画を含むメッセージを受信できます。  
+- 旅行プランを含むメッセージを受信できます。  
   
--   現在の itinerary ステップを取得できます。  
+- スケジュールの現在のステップを取得できます。  
   
--   サービスを処理できます。  
+- サービスを処理できます。  
   
--   呼び出して、送信メッセージに旅行計画を進めることことができます、**事前**メソッドです。  
+- 呼び出すことによって、送信メッセージで旅行計画を進めることことができます、**事前**メソッド。  
   
--   Microsoft BizTalk メッセージ ボックス データベースに、処理済みのメッセージを発行できます。  
+- Microsoft BizTalk メッセージ ボックス データベースに、処理されたメッセージを発行できます。  
   
- たとえば、オーケストレーションがの図 1 に示すように、アクティブ化された受信図形に定義されたフィルターを実装することによって、日程を含むメッセージを受信できる[行程サービス サブスクライバーとして、オーケストレーションを使用して](../esb-toolkit/using-an-orchestration-as-an-itinerary-service-subscriber.md)です。 ただし、メッセージングが若干異なります: パイプライン コンポーネントの呼び出し、 **GetItineraryStep**日程が受信メッセージに存在するかどうかを調べます。 それが処理する必要があるかどうかを確認するメッセージのプロパティも検証します。  
+  たとえば、オーケストレーションの図 1 に示すように、アクティブ化された受信図形に定義されたフィルターを実装することにより、旅行プランを含むメッセージを表示される[スケジュール サービス サブスクライバーとしてオーケストレーションを使用して](../esb-toolkit/using-an-orchestration-as-an-itinerary-service-subscriber.md)します。 ただし、メッセージングは若干異なります: パイプライン コンポーネントの呼び出し、 **GetItineraryStep**日程が受信メッセージが存在するかどうかを判断するメソッド。 それが処理する必要があるかどうかを確認するメッセージのプロパティを調べます。  
   
- ![オーケストレーション](../esb-toolkit/media/ch4-orchestration.jpg "Ch4 オーケストレーション")  
+  ![オーケストレーション](../esb-toolkit/media/ch4-orchestration.jpg "Ch4 オーケストレーション")  
   
- **図 1**  
+  **図 1**  
   
- **サブスクライバーとして日程に参加するオーケストレーションのフィルター式の例**  
+  **サブスクライバーとして、スケジュールに参加するオーケストレーションのフィルター式の例**  
   
- サービスは、メッセージを取得した後に呼び出す必要があります、 **GetItineraryStep**のインスタンスを返すメソッド、 **ItineraryStep**クラスです。 次の一覧では、オーケストレーションとカスタム パイプライン コンポーネントの両方から行程 API のメソッドを呼び出す方法を示しています。 次のコードが実行される、 **GetItineraryStep**オーケストレーションの式図形からメソッドです。  
+  呼び出す必要がありますが、サービスがメッセージを取得した後、 **GetItineraryStep**のインスタンスを返すメソッド、 **ItineraryStep**クラス。 次の一覧は、オーケストレーションとカスタム パイプライン コンポーネントの両方から行程 API のメソッドを呼び出す方法を示します。 次のコードが実行される、 **GetItineraryStep**オーケストレーションの式図形からメソッド。  
   
 ```  
   
@@ -73,16 +73,16 @@ public IBaseMessage Execute(IPipelineContext context, IBaseMessage msg, string r
 }  
 ```  
   
- インスタンス、 **IItineraryStep**クラスには、現在のサービスの実行環境のアンビエント プロパティを含め、現在のサービスのすべてのメタデータが含まれています。 この機能には 2 つの良い例、 **ServiceInstanceID**と現在**MessageDirection**パイプライン コンポーネントのプロパティです。  
+ インスタンス、 **IItineraryStep**クラスには、現在のサービスの実行環境のアンビエント プロパティを含む、現在のサービスのすべてのメタデータが含まれています。 この機能には 2 つの優れた例、 **ServiceInstanceID**と現在**MessageDirection**パイプライン コンポーネントのプロパティ。  
   
- サービスの呼び出し後、 **GetItineraryStep**メソッドを取得できる、関連付けられたすべての競合回避モジュール。 **ResolverCollection**のプロパティ、 **ItineraryStep**クラスは、サービスを通じて、次の例に示すように列挙できる競合回避モジュールのコレクションを返します。  
+ サービスを呼び出してから、 **GetItineraryStep**メソッドを取得できる、関連付けられたすべての競合回避モジュール。 **ResolverCollection**のプロパティ、 **ItineraryStep**クラスは、サービスを列挙できるまで、次の例に示すように競合回避モジュールのコレクションを返します。  
   
 ```csharp  
 Microsoft.Practices.ESB.Itinerary.ResolverCollection resolvers;  
 resolvers = step.ItineraryStep.ResolverCollection;  
 ```  
   
- 内の各項目、 **ResolverCollection**競合回避モジュールとアダプター フレームワークでサポートされる型のいずれかに一致する競合回避モジュールの接続文字列を表します。 など、コレクション内の項目は、次のリストのようになります。  
+ 内の各項目、 **ResolverCollection**リゾルバーとアダプター フレームワークでサポートされる型のいずれかに一致する競合回避モジュールの接続文字列を表します。 たとえば、次のリストよう、コレクション内の項目になります。  
   
 ```idl  
 BRE:\\policy=GetCanadaPurchaseEndPoint;version=;useMsg=;  
@@ -99,9 +99,9 @@ uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*
 uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/'];  
 ```  
   
- 競合回避モジュールとアダプターのプロバイダー フレームワークで競合回避モジュールのマネージャーでは、エンドポイントを解決でき、メッセージのエンドポイントのプロパティを設定することができます。 このしくみの詳細については、次を参照してください。[動的解決の使用とルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)です。  
+ リゾルバーとアダプターのプロバイダー フレームワークの競合回避モジュールのマネージャーは、エンドポイントを解決し、メッセージのエンドポイントのプロパティを設定できます。 このしくみの詳細については、次を参照してください。[を使用して動的な解決とルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)します。  
   
- サービスでは、メッセージの処理が完了すると後、は、送信メッセージに旅行計画を進める必要があり、メッセージをメッセージ ボックス データベースに発行します。 次の例では、オーケストレーションの式図形のプロセスを示します。  
+ サービスでは、メッセージの処理が完了すると後、は、送信メッセージで旅行計画を進める必要があり、メッセージをメッセージ ボックス データベースに発行します。 次の例では、オーケストレーションの式図形のプロセスを示します。  
   
 ```xml  
   
@@ -114,7 +114,7 @@ OutboundMessage(*) = InboundMessage(*);
 itinerary.Itinerary.Advance(OutboundMessage, step.ItineraryStep);  
 ```  
   
- 次の例は、ことを指定する方法を示しています。[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コア エンジンは、カスタム パイプライン コンポーネントの日程を進める必要があります。  
+ 次の例があることを示す方法を示します[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コア エンジンは、カスタム パイプライン コンポーネントのスケジュールを進める必要があります。  
   
 ```csharp  
 // Advance Itinerary  

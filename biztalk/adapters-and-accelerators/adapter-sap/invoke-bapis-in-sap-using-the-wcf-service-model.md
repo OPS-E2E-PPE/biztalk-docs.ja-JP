@@ -1,5 +1,5 @@
 ---
-title: WCF サービス モデルを使用して SAP での Bapi を呼び出す |Microsoft ドキュメント
+title: WCF サービス モデルを使用して SAP の Bapi を呼び出す |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,40 +15,40 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 437c88516cfb771e0e5ae10807391235d602eb37
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b6f5cab88b0f672f9f09bdeb7795c0a58213f92f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22218514"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002443"
 ---
-# <a name="invoke-bapis-in-sap-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SAP での Bapi を呼び出し
-[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]として Bapi を表示します。  
+# <a name="invoke-bapis-in-sap-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SAP の Bapi を呼び出す
+[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]として Bapi 明らかになります。  
   
--   **RFC 操作**です。 [RFC] ノードに表示された Bapi の他の任意の RFC のように、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
+- **RFC 操作**します。 [RFC] ノードに表示されますなどその他の任意の RFC、Bapi、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。  
   
--   **SAP ビジネス オブジェクトのメソッド**です。 BAPI ノードの下のビジネス オブジェクトによって、ビジネス オブジェクトのメソッドとしての Bapi の表示、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
+- **SAP ビジネス オブジェクトのメソッド**します。 BAPI ノードの下のビジネス オブジェクトによって表示される Bapi、ビジネス オブジェクトのメソッドとして、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。  
   
- RFC 操作、またはビジネス オブジェクトのメソッドとして BAPI を呼び出すと、各 BAPI は常に、LUW SAP システムでの一部です。  
+  RFC 操作として、またはビジネス オブジェクト メソッドとして BAPI を呼び出すかどうか各 BAPI、常に、LUW で SAP システムの一部です。  
   
- 方法の概要については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サポートの Bapi を参照してください[SAP での Bapi の操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)です。  
+  方法の概要については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サポート Bapi を参照してください[SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)します。  
   
- Bapi のビジネス オブジェクト メソッドとして呼び出す WCF サービス モデルを使用する場合は、SAP business の各オブジェクトは、WCF クライアント クラスで表されるされ、そのビジネス オブジェクトの Bapi は、クライアント上のメソッドとして表されます。 使用することができます、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]をコードで起動するそれぞれの BAPI のメソッドを格納する、特定のビジネス オブジェクトの WCF クライアント クラスを生成します。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]も各 BAPI によって使用されているパラメーターとデータ型をカプセル化する .NET 型を生成します。 この WCF クライアント クラスのインスタンスを作成し、ターゲット Bapi を起動するには、そのメソッドを呼び出すことができます。  
+  WCF サービス モデルを使用してビジネス オブジェクト メソッドとして Bapi を呼び出すと、各 SAP ビジネス オブジェクトは、WCF クライアント クラスで表されるし、そのビジネス オブジェクトの Bapi はクライアント上のメソッドとして表されます。 使用することができます、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]をコードで呼び出す各 BAPI のメソッドを格納する、特定のビジネス オブジェクトの WCF クライアント クラスを生成します。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]も各 BAPI によって使用されているパラメーターおよびデータ型をカプセル化する .NET 型を生成します。 この WCF クライアント クラスのインスタンスを作成し、ターゲットの Bapi を呼び出すメソッドを呼び出すことができます。  
   
- 次のセクションでは、ビジネス オブジェクトのメソッドとして Bapi を呼び出すし、WCF サービス モデルでの BAPI のトランザクションのサポートについて説明する方法を示します。  
+  次のセクションでは、ビジネス オブジェクトのメソッドとして Bapi を呼び出すし、WCF サービス モデルでの BAPI トランザクションのサポート方法について説明する方法を示します。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]ビジネス オブジェクトごとに、別のサービス コントラクトを表示します。 これは、各ビジネス オブジェクトの一意の WCF クライアント クラスを作成することを意味します。 このクラスの名前は、ビジネス オブジェクトの種類に基づいています。 たとえば、Sales Order ビジネス オブジェクト (ビジネス オブジェクトの種類 BUS2032) には、WCF クライアント クラスは**BapiBUS2032Client**です。 ビジネス オブジェクト内の各ターゲット BAPI は、生成された WCF クライアント クラスのメソッドとして表されます。 各メソッドには。  
+ [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]さまざまなサービス コントラクトはビジネス オブジェクトごとに、明らかになります。 これは、各ビジネス オブジェクトの一意の WCF クライアント クラスが作成されたことを意味します。 このクラスの名前は、ビジネス オブジェクトの種類に基づきます。 たとえば、Sales Order ビジネス オブジェクト (ビジネス オブジェクト タイプ BUS2032) の WCF クライアント クラスは**BapiBUS2032Client**します。 ビジネス オブジェクト内の各ターゲット BAPI が生成された WCF クライアント クラスのメソッドとして表されます。 各メソッドには。  
   
--   SAP のエクスポートのパラメーターは、として表示された**アウト**パラメーター  
+- SAP のエクスポートのパラメーターとして表示されますが**アウト**パラメーター  
   
--   SAP 呼び出しのパラメーターは、として表示された**ref**パラメーター。  
+- として SAP 呼び出しのパラメーターが表示された**ref**パラメーター。  
   
--   構造体など、SAP の複合型は、SAP の種類のフィールドに対応するプロパティを持つ .NET クラスとして表示されます。 これらのクラスは、次の名前空間で定義されます: microsoft.lobservices.sap._2007._03.Types.Rfc です。  
+- 構造体などの複雑な SAP 型は、SAP の種類のフィールドに対応するプロパティの .NET クラスとして表示されます。 これらのクラスは、次の名前空間で定義されている: microsoft.lobservices.sap._2007._03.Types.Rfc します。  
   
- BAPI_TRANSACTION_COMMIT と BAPI_TRANSACTION_ROLLBACK がビジネス オブジェクトごとに表示され、WCF クライアントでこれらを常に含める必要があります。  
+  BAPI_TRANSACTION_COMMIT と BAPI_TRANSACTION_ROLLBACK が各ビジネス オブジェクトの表示し、WCF クライアントでこれらを常に含める必要があります。  
   
- 次のコードは、販売注文のビジネス オブジェクトに対して生成される WCF クライアント クラスの一部を示しています。 このクライアントには、CREATEFROMDAT2、BAPI_TRANSACTION_COMMIT および BAPI_TRANSACTION_ROLLBACK を呼び出すメソッドが含まれています。 わかりやすくするためには、コンス トラクターおよびその他のコードを省略されています。  
+  次のコードでは、販売注文のビジネス オブジェクトに対して生成された WCF クライアント クラスの一部を示します。 このクライアントには、メソッド呼び出す CREATEFROMDAT2、BAPI_TRANSACTION_COMMIT および BAPI_TRANSACTION_ROLLBACK にはが含まれています。 わかりやすくするためには、コンス トラクターと他のコードを省略されています。  
   
 ```  
 [System.Diagnostics.DebuggerStepThroughAttribute()]  
@@ -110,72 +110,72 @@ public partial class BapiBUS2032Client : System.ServiceModel.ClientBase<BapiBUS2
 }  
 ```  
   
-## <a name="bapi-transactions-in-the-wcf-service-model"></a>WCF サービス モデルでの BAPI のトランザクション  
- すべての BAPI RFC、またはビジネス オブジェクトのメソッドとしてメソッドが呼び出されたかどうかの一部であるトランザクション (LUW)、SAP システムで同じ SAP 接続経由で受信したすべての BAPI の SAP システムでの同じ BAPI トランザクションの一部であります。 SAP がコミットまたは、BAPI_TRANSACTION_COMMIT または接続で BAPI_TRANSACTION_ROLLBACK を受信したときに、BAPI トランザクションをロールバックします。 コミットまたはロールバックが実行された後、接続経由で受信した次の BAPI は新しいトランザクションを開始します。  
+## <a name="bapi-transactions-in-the-wcf-service-model"></a>WCF サービス モデルでの BAPI トランザクション  
+ すべての BAPI RFC、またはビジネス オブジェクトのメソッドとして呼び出されるかどうかの一部であるトランザクション (LUW) SAP システム同じ SAP 接続経由で受信したすべての BAPI SAP システムで同じ BAPI トランザクションの一部であります。 SAP では、コミットまたは、BAPI_TRANSACTION_COMMIT または接続での BAPI_TRANSACTION_ROLLBACK の受信時に、BAPI トランザクションをロールバックします。 コミットまたはロールバックが実行されて、[次へ] の BAPI 接続経由で受信した新しいトランザクションが開始されます。  
   
- アダプターは、各 WCF チャネルは、専用の SAP 接続がします。 WCF サービス モデルで、各 WCF クライアントに使用される送信メッセージを SAP システムである内部チャネルがあります。 これは、特定の WCF クライアントを使用して呼び出される Bapi SAP システムで一意の BAPI トランザクションの一部であることを意味します。 これにより、モデルを使用して、WCF サービスをビジネス オブジェクト メソッドとして Bapi を呼び出す際に重要な制限です。 SAP business の各オブジェクトは、専用の WCF クライアント クラスで表される、ために、同じトランザクションの一部として 2 つの異なるビジネス オブジェクトから Bapi を呼び出すことはできません。 この問題を回避方法では、RFC 操作として Bapi を呼び出します。 これは、ため、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] RFC 操作の場合は、1 つの WCF クライアントを生成し、そのクライアントを使用して呼び出されたすべての操作が同じ WCF チャネル経由で送信されるため、します。  
+ アダプターの各 WCF チャネルは、専用の SAP 接続が。 WCF サービス モデルでは、各 WCF クライアントは、SAP システムへの送信に使用されるメッセージの内部チャネルが。 これは、特定の WCF クライアントを使用して呼び出される Bapi SAP システムで一意の BAPI トランザクションの一部であることを意味します。 これは、WCF サービス モデルを使用してビジネス オブジェクト メソッドとして Bapi を呼び出すときに、重大な制限事項です。 各 SAP ビジネス オブジェクトは、専用の WCF クライアント クラスによって表される、ため、同じトランザクションの一部として 2 つの異なるビジネス オブジェクトからの Bapi を呼び出すことはできません。 RFC 操作として Bapi を呼び出すにはこの問題を回避します。 ため、これは、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] RFC の操作の 1 つの WCF クライアントを生成し、そのため、そのクライアントを使用して呼び出されたすべての操作が同じ WCF チャネル経由で送信されます。  
   
 > [!IMPORTANT]
->  同じ BAPI トランザクション内で異なる SAP ビジネス オブジェクトの Bapi を含める場合は、(同じ WCF クライアントを使用) の RFC 操作として呼び出す必要があります。 ビジネス オブジェクト メソッドとして呼び出すことはできません。  
+>  同じ BAPI トランザクション内で別の SAP ビジネス オブジェクトからの Bapi を含める場合は、(同じ WCF クライアントを使用) の RFC 操作として呼び出す必要があります。 ビジネス オブジェクト メソッドとして呼び出すことはできません。  
   
- コミットまたは SAP システムでの BAPI のトランザクションがロールバックするには、BAPI_TRANSACTION_COMMIT または BAPI_TRANSACTION_ROLLBACK を呼び出します。 アダプターは、これら 2 つの Bapi を表示します。  
+ BAPI_TRANSACTION_COMMIT または BAPI_TRANSACTION_ROLLBACK コミットまたは SAP システムでの BAPI トランザクションのロールバックを呼び出すことができます。 アダプターでは、これら 2 つの Bapi が表示されます。  
   
--   RFC 操作として [基準] ノードの下。  
+- RFC 操作として [基準] ノードの下。  
   
--   各ビジネス オブジェクト。  
+- 各ビジネス オブジェクト。  
   
- アダプターが SAP で BAPI トランザクションをサポートする方法の詳細については、次を参照してください。 [SAP での Bapi の操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)です。  
+  アダプターが SAP の BAPI トランザクションをサポートする方法の詳細については、次を参照してください。 [SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)します。  
   
 ## <a name="how-to-create-an-application-that-invokes-bapis-as-methods-of-business-objects"></a>ビジネス オブジェクトのメソッドとして Bapi を起動するアプリケーションを作成する方法  
- このセクションでは、ビジネス オブジェクトのメソッドとして Bapi を起動する方法に関する情報を提供します。 同じ基本的な手順は、WCF クライアントを対象とする RFC 操作として Bapi を作成し、各 BAPI の呼び出しに使用する点を除いて RFC 操作として Bapi を呼び出すに従う必要があります。  
+ このセクションでは、ビジネス オブジェクトのメソッドとして Bapi を呼び出す方法について説明します。 同じ基本手順は、WCF クライアントを対象とする RFC 操作として Bapi を作成し、各 BAPI を呼び出すために使用する点を除いて RFC の操作として Bapi を呼び出すに従う必要があります。  
   
  BAPI のクライアント アプリケーションを作成するには、次の手順を実行します。  
   
 #### <a name="to-create-an-bapi-client-application"></a>BAPI クライアント アプリケーションを作成するには  
   
-1.  WCF クライアント クラスを生成します。 使用して、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を WCF クライアント クラス (またはクラス) を生成するビジネス オブジェクトを対象として Bapi 操作するか。 必ず、BAPI_TRANSACTION_COMMIT と各ターゲット ビジネス オブジェクトの公開された BAPI_TRANSACTION_ROLLBACK メソッド (Bapi) を含めるようにします。 WCF クライアントを生成する方法の詳細については、次を参照してください。 [SAP ソリューションの成果物のため、WCF クライアントまたは WCF サービス コントラクトを生成する](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)です。  
+1. WCF クライアント クラスを生成します。 使用して、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を WCF クライアント クラス (またはクラス) を生成するビジネス オブジェクトを対象として Bapi を操作するか。 必ず、BAPI_TRANSACTION_COMMIT とターゲットのビジネス オブジェクトごとに公開される BAPI_TRANSACTION_ROLLBACK メソッド (Bapi) が含まれます。 WCF クライアントを生成する方法の詳細については、次を参照してください。 [SAP ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成する](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)します。  
   
-2.  手順 1 で生成される WCF クライアント クラスのインスタンスを作成して作成し、WCF クライアントを構成します。 WCF クライアントを構成するには、バインディングと、クライアントが使用するエンドポイントのアドレス指定が含まれます。 これは、コードで命令として記述または構成で宣言によって行うことができます。 クライアントのバインディングを指定する方法の詳細については、次を参照してください。 [、SAP システムのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)です。 次のコードは、Sales Order (BUS2032) SAP ビジネス オブジェクトの構成から WCF クライアントを初期化し、SAP システムの資格情報を設定します。  
+2. 手順 1 で生成された WCF クライアント クラスのインスタンスを作成し、作成し、WCF クライアントを構成します。 WCF クライアントを構成するには、バインドと、クライアントが使用するエンドポイント アドレスを指定する必要があります。 コードで強制的に、または構成で宣言的に、これを行うことができます。 クライアントのバインディングを指定する方法の詳細については、次を参照してください。 [SAP システムのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)します。 次のコードでは、構成から販売注文 (BUS2032) SAP ビジネス オブジェクト用の WCF クライアントを初期化し、SAP システムの資格情報を設定します。  
   
-    ```  
-    BapiBUS2032Client bapiClient = new BapiBUS2032Client("SAPBinding_BapiBUS2032");  
+   ```  
+   BapiBUS2032Client bapiClient = new BapiBUS2032Client("SAPBinding_BapiBUS2032");  
   
-    bapiClient.ClientCredentials.UserName.UserName = "YourUserName";  
-    bapiClient.ClientCredentials.UserName.Password = "YourPassword";  
-    ```  
+   bapiClient.ClientCredentials.UserName.UserName = "YourUserName";  
+   bapiClient.ClientCredentials.UserName.Password = "YourPassword";  
+   ```  
   
-3.  WCF クライアントを開きます。  
+3. WCF クライアントを開きます。  
   
-    ```  
-    bapiClient.Open();  
-    ```  
+   ```  
+   bapiClient.Open();  
+   ```  
   
-4.  SAP システムでの Bapi の適切なを起動する手順 2. で作成された WCF クライアントでメソッドを呼び出します。 SAP システムでの Bapi の複数を呼び出すことができます。  
+4. SAP システムで適切な Bapi を呼び出す手順 2. で作成された WCF クライアントのメソッドを呼び出します。 SAP システムで複数の Bapi を呼び出すことができます。  
   
-5.  トランザクションを終了します。  
+5. トランザクションを終了するには。  
   
-    1.  トランザクションをコミットする BAPI_TRANSACTION_COMMIT メソッドの呼び出し。  
+   1.  トランザクションをコミットする BAPI_TRANSACTION_COMMIT メソッドの呼び出し。  
   
-        ```  
-        bapiClient.BAPI_TRANSACTION_COMMIT("X");  
-        ```  
+       ```  
+       bapiClient.BAPI_TRANSACTION_COMMIT("X");  
+       ```  
   
-    2.  トランザクションをロールバックする BAPI_TRANSACTION_ROLLBACK メソッドの呼び出し。  
+   2.  トランザクションをロールバックする BAPI_TRANSACTION_ROLLBACK メソッドの呼び出し。  
   
-        ```  
-        bapiClient.BAPI_TRANSACTION_ROLLBACK();  
-        ```  
+       ```  
+       bapiClient.BAPI_TRANSACTION_ROLLBACK();  
+       ```  
   
-6.  WCF クライアントを閉じます。  
+6. WCF クライアントを閉じます。  
   
-    ```  
-    bapiClient.Close();   
-    ```  
+   ```  
+   bapiClient.Close();   
+   ```  
   
 ### <a name="example"></a>例  
- 次の例では、販売注文のビジネス オブジェクトで CREATEFROMDAT2 BAPI を呼び出します。 BAPI を数回呼び出し、トランザクションをコミットする BAPI_TRANSACTION_COMMIT を呼び出します。 BAPI を呼び出すときに、エラーが発生する場合は、トランザクションをロールバックして、例外ハンドラーの BAPI_TRANSACTION_ROLLBACK が呼び出されます。  
+ 次の例では、販売注文のビジネス オブジェクトで CREATEFROMDAT2 BAPI を呼び出します。 複数回、BAPI を呼び出すし、トランザクションをコミットする BAPI_TRANSACTION_COMMIT を呼び出します。 BAPI を呼び出すときにエラーが発生する場合は、トランザクションをロールバックして、例外ハンドラーの BAPI_TRANSACTION_ROLLBACK が呼び出されます。  
   
- CREATEFROMDAT2 メソッドは多くのパラメーターです。これらは、ここでは簡略化のための例では省略されます。 Microsoft に付属のサンプルでの BAPI のトランザクションを示すサンプルが見つかります[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。 詳細については、次を参照してください。 [SAP アダプターのサンプル](../../adapters-and-accelerators/adapter-sap/samples-for-the-sap-adapter.md)です。  
+ CREATEFROMDAT2 メソッドは、多くのパラメーターを受け取ります。これらは、簡潔にする例では省略されます。 Microsoft に付属のサンプルでの BAPI トランザクションを示すサンプルが見つかります[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。 [SAP アダプターのサンプル](../../adapters-and-accelerators/adapter-sap/samples-for-the-sap-adapter.md)します。  
   
 ```  
 using System;  
@@ -311,5 +311,5 @@ namespace SapBapiTxClientSM
 ```  
   
 ## <a name="see-also"></a>参照  
-[WCF サービス モデルを使用してアプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-service-model.md)  
- [SAP での Bapi の操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)
+[WCF サービス モデルを使用してアプリケーションを開発する](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-service-model.md)  
+ [Sap Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)

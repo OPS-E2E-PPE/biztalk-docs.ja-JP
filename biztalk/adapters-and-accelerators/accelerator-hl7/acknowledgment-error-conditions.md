@@ -1,5 +1,5 @@
 ---
-title: 受信確認エラーの状態 |Microsoft ドキュメント
+title: 受信確認エラーの状態 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,33 +15,33 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15b481f4cdb60822841021f7f708a6caea021b8b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 26bc0524e76521fcb673c6d5d3dc70f43cb12798
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204586"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36970259"
 ---
-# <a name="acknowledgment-error-conditions"></a>受信確認エラー条件
-致命的なエラーで、次の条件が発生条件の場合に[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) は、処理の受信確認 (ACK) メッセージ。  
+# <a name="acknowledgment-error-conditions"></a>受信確認エラーの状態
+致命的なエラーで、次の条件が発生条件の場合に Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) (ACK) メッセージを受信確認の処理には。  
   
--   MSH9 内の必須フィールドがありません。  
+- MSH9 で必須のフィールドがありません。  
   
--   MSH12 内の必須フィールドがありません。  
+- MSH12 で必須のフィールドがありません。  
   
- 次の条件は結果として、致命的なエラー状態です。 このような状況で[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]ACK が生成されますが、また、ACK が中断します。  
+  致命的なエラー条件で、次の条件が発生します。 このような状況で[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]ACK が生成されますが、また、ACK が中断します。  
   
--   MSH11 の必須フィールドがありません。  
+- MSH11 で必要なフィールドが見つかりません  
   
--   MSH10 値がありません。  
+- MSH10 値がありません。  
   
--   ヘッダーにオプションのフィールドに列挙型のエラーです。  
+- ヘッダーの省略可能なフィールドの列挙型のエラー。  
   
 > [!NOTE]
->  AL または ER、MSH 15 が設定されている場合、ヘッダーにある列挙型のエラーの[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]コミット ACK の状態が生成されます**MSA_1 = CR**です。  
+>  AL または ER、MSH 15 が設定されている場合、ヘッダーにある列挙型のエラーの[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]コミット ACK の状態が生成されます**MSA_1 CR を =** します。  
   
 ## <a name="see-also"></a>参照  
  [作成して、受信確認の処理](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)   
  [ACK メッセージ スキーマの種類](../../adapters-and-accelerators/accelerator-hl7/ack-message-schema-types.md)   
- [メッセージ受信確認セグメント](../../adapters-and-accelerators/accelerator-hl7/message-acknowledgment-segment.md)   
- [Ack を受信するための送信ポートの設定](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)
+ [メッセージの受信確認セグメント](../../adapters-and-accelerators/accelerator-hl7/message-acknowledgment-segment.md)   
+ [ACK を受信するための送信ポートの設定](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)

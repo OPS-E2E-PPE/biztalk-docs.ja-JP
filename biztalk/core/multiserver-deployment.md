@@ -1,5 +1,5 @@
 ---
-title: マルチ サーバー展開 |Microsoft ドキュメント
+title: マルチ サーバー展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,12 +19,12 @@ caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af87c78ef632ea9794d725cb70440d62371c349e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: e857aece2911aa9f1b3551f339524d2262cc0bf4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25974440"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979763"
 ---
 # <a name="multiserver-deployment"></a>マルチサーバー展開
 このトピックでは、Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプターを、マルチサーバー環境に設定および展開する場合の考慮事項について説明します。  
@@ -36,30 +36,30 @@ ms.locfileid: "25974440"
   
  Windows SharePoint Services アダプターには、次の 3 つのコンポーネントがあります。  
   
--   ランタイム コンポーネント  
+- ランタイム コンポーネント  
   
--   デザイン時コンポーネント  
+- デザイン時コンポーネント  
   
--   アダプター Web サービス  
+- アダプター Web サービス  
   
- アダプター ランタイムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイム機能によって自動的にインストールおよび構成されます。 アダプターのデザイン時コンポーネントは、その他の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 機能によってインストールおよび構成されます。 デザイン時コンポーネントを操作するには、管理ツール、開発ツール、SDK に含まれているツールか、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイム機能を使用して、Windows SharePoint Services ポートを作成します。 ランタイム コンポーネントおよびデザイン時コンポーネントの構成オプションは、カスタマイズできません。 Windows SharePoint Services アダプター Web サービス オプションのみをカスタマイズすることができます。  
+  アダプター ランタイムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイム機能によって自動的にインストールおよび構成されます。 アダプターのデザイン時コンポーネントは、その他の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 機能によってインストールおよび構成されます。 デザイン時コンポーネントを操作するには、管理ツール、開発ツール、SDK に含まれているツールか、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイム機能を使用して、Windows SharePoint Services ポートを作成します。 ランタイム コンポーネントおよびデザイン時コンポーネントの構成オプションは、カスタマイズできません。 Windows SharePoint Services アダプター Web サービス オプションのみをカスタマイズすることができます。  
   
- SharePoint Enabled Hosts グループのメンバーのみをアダプター Web サービスを呼び出す権限が付与されます。 Windows SharePoint Services アダプター ランタイムで必要な Windows SharePoint Services のアクセス許可の詳細については、セキュリティ」セクションを参照してください。 [Windows SharePoint Services アダプターは何ですか?](../core/what-is-the-windows-sharepoint-services-adapter.md)です。  
+  SharePoint Enabled Hosts グループのメンバーだけでは、アダプター Web サービスを呼び出すアクセス許可があります。 Windows SharePoint Services アダプターのランタイムで必要な Windows SharePoint Services のアクセス許可の詳細については、セキュリティ」セクションを参照してください。 [、Windows SharePoint Services アダプターとは何ですか?](../core/what-is-the-windows-sharepoint-services-adapter.md)します。  
   
 > [!NOTE]
 >  BAS をインストールするとき、Windows SharePoint Services アダプター Web サービス コンポーネントが自動的に選択されます。  
   
 #### <a name="to-install-the-windows-sharepoint-services-adapter"></a>Windows SharePoint Services アダプターをインストールするには  
   
-1.  インストール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)です。  
+1. インストール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)します。  
   
-2.  **コンポーネントのインストール**画面で、**使用可能なコンポーネント****追加のソフトウェア** **Windows SharePoint Services アダプターWeb サービス**です。  
+2. **コンポーネントのインストール**画面で、**使用可能なコンポーネント****追加ソフトウェア**を選択します**Windows SharePoint Services アダプターWeb サービス**します。  
   
 > [!NOTE]
 >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイムをホストするコンピューター、および Windows SharePoint Services を実行するコンピューターでセットアップと構成を実行する必要があります。  
   
 ## <a name="configuring-the-windows-sharepoint-services-adapter-web-service-in-a-multiserver-deployment"></a>マルチサーバー展開の Windows SharePoint Services アダプター Web サービスの構成  
- Windows SharePoint Services アダプターは、BizTalk Server 構成を使用して構成します。 これらのツールの詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 の構成の概要](http://msdn.microsoft.com/library/aa58c43f-8f0e-4a5c-89b9-db7b8a852a72)です。  
+ Windows SharePoint Services アダプターは、BizTalk Server 構成を使用して構成します。 これらのツールの詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 の構成の概要](http://msdn.microsoft.com/library/aa58c43f-8f0e-4a5c-89b9-db7b8a852a72)します。  
   
 ### <a name="using-a-custom-configuration"></a>ユーザー構成の使用  
  BizTalk Server 構成では、ローカル コンピューターにインストールした機能の構成状態に関する高レベルの分析が提供されます。 このツールを使用すると、機能の構成と構成解除、セキュリティ設定の構成、および他のコンピューターの構成のインポートとエクスポートを行えます。  
@@ -68,8 +68,8 @@ ms.locfileid: "25974440"
   
 |プロパティ|目的|  
 |--------------|----------------|  
-|**このコンピューターで Windows SharePoint Services アダプターを有効にします。**|選択**このコンピューターで Windows SharePoint Services アダプターを有効にする**をこのコンピューターでアダプターを有効にします。|  
-|**Windows グループ**|**Windows グループ**一覧は、BizTalk SharePoint Adapter Enabled Hosts Windows グループの編集可能なビューを提供します。|  
+|**このコンピューターで Windows SharePoint Services アダプターを有効にします。**|選択**このコンピューターで Windows SharePoint Services アダプターを有効にする**このコンピューターでアダプターを有効にします。|  
+|**Windows グループ**|**Windows グループ**一覧は、BizTalk SharePoint アダプター有効になっているホスト Windows グループの編集可能なビューを提供します。|  
 |**Windows SharePoint Services アダプター Web サイト**|Windows SharePoint Services アダプター Web サービスをホストする Web サイトを選択します。|  
   
  ユーザー構成を使用して Windows SharePoint Services アダプターを構成する際は、次のことが行われます。  
@@ -85,24 +85,24 @@ ms.locfileid: "25974440"
 > [!NOTE]
 >  この仮想ディレクトリが既に存在する場合は、構成を行ってもメタベースのプロパティが更新されません。 仮想ディレクトリを削除して、構成を再実行する必要があります。  
   
--   BTSharePointAdapterWS 仮想アプリケーションに Web サービスが含められます。  
+- BTSharePointAdapterWS 仮想アプリケーションに Web サービスが含められます。  
   
- BizTalk Server の構成の詳細については、次を参照してください。[のインポートとエクスポートの BizTalk Server 構成](../install-and-config-guides/import-and-export-biztalk-server-configuration.md)です。  
+  BizTalk Server の構成の詳細については、次を参照してください。[のインポートとエクスポートの BizTalk Server 構成](../install-and-config-guides/import-and-export-biztalk-server-configuration.md)します。  
   
 ##### <a name="to-configure-the-windows-sharepoint-services-adapter-by-using-custom-configuration"></a>ユーザー設定を使用して Windows SharePoint Services アダプターを構成するには  
   
-1.  **BizTalk Server 構成**、select、 **SharePoint アダプター**ノード。  
+1. **BizTalk Server 構成**を選択、 **SharePoint アダプター**ノード。  
   
-2.  選択**このコンピューターで Windows SharePoint Services アダプターを有効にする**です。  
+2. 選択**このコンピューターで Windows SharePoint Services アダプターを有効にする**します。  
   
-3.  **Windows グループ**は、Windows SharePoint Services アダプターを使用する Windows グループを選択します。 既定では、SharePoint Enabled Hosts です。  
+3. **Windows グループ**、Windows SharePoint Services アダプターを使用する Windows グループを選択します。 既定では、SharePoint Enabled Hosts です。  
   
-4.  **Windows SharePoint Services アダプター Web サイト**ドロップダウン ボックスで、Web サイトのアダプター コンポーネントをインストールします。 特に選択しない場合、既定の Web サイトが選択されます。  
+4. **Windows SharePoint Services アダプター Web サイト**ドロップダウン ボックスで、Web サイトのアダプター コンポーネントのインストール先を選択します。 特に選択しない場合、既定の Web サイトが選択されます。  
   
-    > [!NOTE]
-    >  他の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンポーネントがインストールされていないリモート SharePoint Server コンピューターに Windows SharePoint Services アダプター Web サイトをインストールする構成は、完全にサポートされている構成です。  
+   > [!NOTE]
+   >  他の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンポーネントがインストールされていないリモート SharePoint Server コンピューターに Windows SharePoint Services アダプター Web サイトをインストールする構成は、完全にサポートされている構成です。  
   
-5.  **[構成の適用]** をクリックします。  
+5. **[構成の適用]** をクリックします。  
   
 ## <a name="considerations-for-a-multiserver-deployment"></a>マルチサーバー展開に関する考慮事項  
  ![](../core/media/adapters-wss-multiserver-screenshot01.gif "Adapters_WSS_Multiserver_Screenshot01")  
@@ -110,25 +110,25 @@ ms.locfileid: "25974440"
 ### <a name="general-considerations"></a>全般的な考慮事項  
  マルチサーバー環境で Windows SharePoint Services アダプターを設定および展開する際は、次のことを考慮してください。  
   
--   各サーバー上で、BizTalk Service アカウントを SharePoint Enabled Hosts Windows グループに追加します。  
+- 各サーバー上で、BizTalk Service アカウントを SharePoint Enabled Hosts Windows グループに追加します。  
   
--   SharePoint のサーバーの管理ツールを使用して、SharePoint Enabled Hosts グループを SharePoint の関係者ロールに追加します。  
+- SharePoint のサーバーの管理ツールを使用して、SharePoint Enabled Hosts グループを SharePoint の関係者ロールに追加します。  
   
--   [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] では、SharePoint アダプター Web サービスを実行する ID に次のアクセス許可が必要です。  
+- [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] では、SharePoint アダプター Web サービスを実行する ID に次のアクセス許可が必要です。  
   
-     **読み取り**に対するアクセス許可、 **Program files \microsoft BizTalk Server\<バージョン\>\Business Activity Services\BTSharePointV3AdapterWS**フォルダーです。 64 ビット バージョンの Windows を使用する場合と[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、アクセス許可に設定する必要があります、 **%program Files (x86) \Microsoft BizTalk Server\<バージョン\>\Business Activity Services\BTSharePointV3AdapterWS**  
+   **読み取り**に対するアクセス許可、 **Program files \microsoft BizTalk Server\<バージョン\>\Business Activity Services\BTSharePointV3AdapterWS**フォルダー。 Windows の 64 ビット バージョンを使用している場合と[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、アクセス許可を設定する必要があります、 **Program Files (x86) \Microsoft BizTalk Server\<バージョン\>\Business Activity Services\BTSharePointV3AdapterWS**  
   
-     **読み取り**次のレジストリ キーに対する権限: **hkey_local_machine \software\microsoft\shared Server\Extensions\12.0\Secure\ConfigDB**です。  
+   **読み取り**次のレジストリ キーに対する権限: **hkey_local_machine \software\microsoft\shared Server\Extensions\12.0\Secure\ConfigDB**します。  
   
-     SharePoint データベースを含む SQL Server に対するログオン アクセス許可。  
+   SharePoint データベースを含む SQL Server に対するログオン アクセス許可。  
   
-     メンバー、**パブリック**と**WSS_Content_Application_Pools** SharePoint 構成データベース内のロール。  
+   メンバー、**パブリック**と**WSS_Content_Application_Pools** SharePoint 構成データベース内のロール。  
   
-     メンバー、**パブリック**と**db 所有者**SharePoint コンテンツ データベース内のロール。  
+   メンバー、**パブリック**と**db 所有者**SharePoint コンテンツ データベース内のロール。  
   
--   Web サービスをインストールする Web サイトは、SharePoint Services Web サイトとして拡張しておく必要があります。  
+- Web サービスをインストールする Web サイトは、SharePoint Services Web サイトとして拡張しておく必要があります。  
   
--   Windows SharePoint Services アダプターは、サイレント インストールでインストールおよび構成できます。 詳細については、次を参照してください。[付録 a: サイレント インストール](../install-and-config-guides/appendix-a-silent-installation.md)です。  
+- Windows SharePoint Services アダプターは、サイレント インストールでインストールおよび構成できます。 詳細については、次を参照してください。[付録 a: サイレント インストール](../install-and-config-guides/appendix-a-silent-installation.md)します。  
   
 ### <a name="considerations-for-network-load-balancing-nlb"></a>ネットワーク負荷分散 (NLB) に関する考慮事項  
  Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプターを使用すると、同一グループ内に構成されている複数の BizTalk サーバーと共に Windows SharePoint Services サーバーを NLB クラスターにすることができます。 この場合、SharePoint のマニュアルで推奨されているように、Windows SharePoint Services を NLB クラスターにインストールする必要があります。  

@@ -1,5 +1,5 @@
 ---
-title: ESB のパイプライン コンポーネントを相互運用機能 |Microsoft ドキュメント
+title: ESB パイプライン相互運用機能コンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ccf4d4353e6928b998d31e8096ee642cd80bb60a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 794ce6407d10fc820444384550357f10d24f7723
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294130"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37024246"
 ---
-# <a name="esb-pipeline-interop-components"></a>ESB のパイプライン コンポーネントを相互運用機能
+# <a name="esb-pipeline-interop-components"></a>ESB パイプライン相互運用機能コンポーネント
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]サポート コンポーネントと、次を含むサービスを提供します。  
   
--   **JMS はパイプライン コンポーネントです。** これらのコンポーネントを認識するには、検証、およびメタデータと IBM Mqseries のメッセージング システムで使用される JMS MQRFH2 形式に準拠するメッセージの内容を公開します。 この機能により、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]アプリケーションからメッセージを受信し、MQ Series JMS システムにメッセージを送信します。 コンポーネントは自動的に、ヘッダー情報を昇格させるし、メッセージの内容から降格します。  
+- **JMS では、コンポーネントをパイプラインします。** これらのコンポーネントを認識するには、検証、およびメタデータ、および IBM MQ Series のメッセージング システムで使用する JMS MQRFH2 形式に準拠するメッセージの内容を公開します。 この機能により、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]アプリケーションからメッセージを受信し、MQ Series JMS システムにメッセージを送信します。 コンポーネントは自動的に、ヘッダー情報を昇格し、メッセージの内容から降格します。  
   
--   **Namespace パイプライン コンポーネントです。** これらのコンポーネントでは、追加したり、XML メッセージの内容の名前空間を削除することができます。 これにより、競合する名前空間を修復またはメッセージ ボックス データベースおよびアプリケーションのオーケストレーション内で名前空間の競合を防ぐために不足している名前空間を追加するアプリケーション。 コンポーネントには、BizTalk Server 外部の発行システムを変更することがなく POX (Plain Old XML) を使用することもできます。  
+- **Namespace パイプライン コンポーネント。** これらのコンポーネントでは、追加したり、名前空間で XML メッセージの内容を削除することができます。 これにより、アプリケーションを競合する名前空間を修復またはメッセージ ボックス データベースとアプリケーションのオーケストレーション内で名前空間の競合を防ぐために不足している名前空間を追加できます。 コンポーネントでは、BizTalk Server 外部の発行システムを変更することがなく、POX (Plain Old XML) を使用することもできます。  
   
- ESB パイプライン コンポーネントの詳細については、次を参照してください。[サポートのパイプライン コンポーネントを使用して](../esb-toolkit/using-the-pipeline-support-components.md)です。
+  ESB パイプライン コンポーネントの詳細については、次を参照してください。[パイプライン サポート コンポーネントを使用して](../esb-toolkit/using-the-pipeline-support-components.md)します。

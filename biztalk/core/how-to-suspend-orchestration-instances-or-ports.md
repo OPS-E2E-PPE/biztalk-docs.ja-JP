@@ -1,5 +1,5 @@
 ---
-title: オーケストレーションのインスタンスまたはポートを中断する方法 |Microsoft ドキュメント
+title: オーケストレーションのインスタンスまたはポートを停止する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -24,12 +24,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62d91c8d1e02b7283a430f7c82c572b6a989d108
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 10f6923df37b5cce3a500ed6e02014f09d1c2c0f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "22256698"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36994931"
 ---
 # <a name="how-to-suspend-orchestration-instances-or-ports"></a>オーケストレーションのインスタンスまたはポートを中断する方法
 BizTalk Server 管理コンソールのクエリ結果一覧から、オーケストレーションのインスタンスまたはポートを中断できます。  
@@ -39,23 +39,23 @@ BizTalk Server 管理コンソールのクエリ結果一覧から、オーケ�
   
 ### <a name="to-suspend-orchestration-instances-or-ports"></a>オーケストレーションのインスタンスまたはポートを中断するには  
   
-1.  をクリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1. クリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2.  コンソール ツリーで  **BizTalk Server 管理コンソール**, 、し、BizTalk グループ をクリックします。  
+2. コンソール ツリーで、展開**BizTalk Server 管理**、し、[BizTalk グループ] をクリックします。  
   
-3.  詳細ペインでクリックして、 **新しいクエリ**  タブをクリックします。  
+3. 詳細ウィンドウでをクリックして、**新しいクエリ**タブ。  
   
-4.  **クエリ式** グループの **値** 列で、選択 **サービス インスタンスを実行している** ドロップダウン リスト ボックスからです。  
+4. **クエリ式**グループに、**値**列で、**サービス インスタンスを実行している**ドロップダウン リスト ボックスから。  
   
-5.  次のいずれかの操作を行います。  
+5. 次のいずれかの操作を行います。  
   
-    -   単一のインスタンスを中断する、 **フィールド名** 列のアスタリスクの横にある空のドロップダウン リスト ボックスで、(**\***) を選択、 **サービス名** フィルターし、次に、 **値**  列で、サービス名を指定します。  
+   - 1 つのインスタンスを中断する、**フィールド名**アスタリスクの横にある空のドロップダウン リスト ボックス内の列 (**\\**<em>) を選択、**のサービス名</em>* フィルターし、**値**列で、サービス名を指定します。  
   
-    -   インスタンスをまとめてを中断する、 **フィールド名** 列のアスタリスクの横にある空のドロップダウン リスト ボックスで、(**\***) を選択 **結果をグループ化** し、次に、 **値**  列で、サービス名を指定します。  
+   - インスタンスをまとめてを中断する、**フィールド名**アスタリスクの横にある空のドロップダウン リスト ボックス内の列 (**\\**<em>) を選択します **でのグループの結果</em>* し、**値**列で、サービス名を指定します。  
   
-6.  クリックして **クエリを実行**します。  
+6. クリックして**クエリを実行**します。  
   
-7.  クエリ結果の一覧で、中断、およびをクリックするアクティブなオーケストレーションまたはポートを右クリックして **インスタンスの中断** または **インスタンスの中断**します。  
+7. クエリ結果の一覧で、中断、 をクリックして、アクティブなオーケストレーションまたはポートを右クリックして**インスタンスの中断**または**インスタンスの中断**します。  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーション、ポート、およびメッセージのエラーの調査](../core/investigating-orchestration-port-and-message-failures.md)

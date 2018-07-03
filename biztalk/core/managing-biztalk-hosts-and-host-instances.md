@@ -1,5 +1,5 @@
 ---
-title: BizTalk ホストとホスト インスタンスを管理する |Microsoft ドキュメント
+title: BizTalk ホストとホスト インスタンスの管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,38 +16,38 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0e60981f69bc3ff71bdd8581659f9cdd20f87467
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1915408853680140643445f4878d9ac925139def
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262586"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983403"
 ---
 # <a name="managing-biztalk-hosts-and-host-instances"></a>BizTalk ホストとホスト インスタンスの管理
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホストとは、0 個以上の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 実行時プロセスの論理的セットです。アダプター ハンドラー、受信場所 (パイプラインを含む)、オーケストレーションなどの各種アイテムをここに展開します。 ホストの詳細については、次を参照してください。[ホスト](../core/hosts.md)です。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホストとは、0 個以上の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 実行時プロセスの論理的セットです。アダプター ハンドラー、受信場所 (パイプラインを含む)、オーケストレーションなどの各種アイテムをここに展開します。 ホストの詳細については、次を参照してください。[ホスト](../core/hosts.md)します。  
   
- ホスト インスタンスとは、メッセージの処理や送受信を行うプロセスです。 ホスト インスタンスは、1 つ以上のホストがマップされており、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を稼働する各サーバーにインストールします。 ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)です。  
+ ホスト インスタンスとは、メッセージの処理や送受信を行うプロセスです。 ホスト インスタンスは、1 つ以上のホストがマップされており、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を稼働する各サーバーにインストールします。 ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)します。  
   
  ホストの特性は、次のとおりです。  
   
--   ホストは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オブジェクトの論理的なコンテナーです。  
+- ホストは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オブジェクトの論理的なコンテナーです。  
   
--   特定のホストのインスタンスは各サーバーに 1 つのみです。  
+- 特定のホストのインスタンスは各サーバーに 1 つのみです。  
   
--   1 つのホストを複数のサーバーにマップできます。  
+- 1 つのホストを複数のサーバーにマップできます。  
   
- ホスト インスタンスの特性は、次のとおりです。  
+  ホスト インスタンスの特性は、次のとおりです。  
   
--   ホスト インスタンスは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オブジェクトの物理的なコンテナーです。  
+- ホスト インスタンスは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オブジェクトの物理的なコンテナーです。  
   
--   サーバーをホストにマップするときに、ホスト インスタンスを作成します。  
+- サーバーをホストにマップするときに、ホスト インスタンスを作成します。  
   
--   負荷分散目的で、またはフェールオーバー用に、さまざまなホストの複数のホスト インスタンスを 1 台のサーバーに配置できます。  
+- 負荷分散目的で、またはフェールオーバー用に、さまざまなホストの複数のホスト インスタンスを 1 台のサーバーに配置できます。  
   
- 次の図に、サーバー、ホスト、およびホスト インスタンスの関係を示します。  
+  次の図に、サーバー、ホスト、およびホスト インスタンスの関係を示します。  
   
- ![ホスト、ホスト インスタンス、およびサーバーの関係](../core/media/ebiz-ops-adm01.gif "ebiz_ops_adm01")  
-ホスト、ホスト インスタンス、およびサーバー間のリレーションシップ  
+  ![ホスト、ホスト インスタンス、およびサーバーの関係](../core/media/ebiz-ops-adm01.gif "ebiz_ops_adm01")  
+  ホスト、ホスト インスタンス、およびサーバー間のリレーションシップ  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -61,7 +61,7 @@ ms.locfileid: "22262586"
   
 -   [ホスト インスタンスを追加する方法](../core/how-to-add-a-host-instance.md)  
   
--   [ホスト インスタンスを起動する方法](../core/how-to-start-a-host-instance.md)  
+-   [ホスト インスタンスを開始する方法](../core/how-to-start-a-host-instance.md)  
   
 -   [ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)  
   

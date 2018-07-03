@@ -1,5 +1,5 @@
 ---
-title: '手順 2: V2.4 用の共通のスキーマの作成 |Microsoft ドキュメント'
+title: '手順 2: V2.4 の一般的なスキーマを作成する |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,43 +14,43 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60b199bcd350a3341640baa05b875347c4f04bb5
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 0b19d735a792fff91197eb0336501264c6e9c772
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25960712"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995803"
 ---
 # <a name="step-2-create-common-schemas-for-v24"></a>手順 2: V2.4 の一般的なスキーマを作成します。
 V2.4 スキーマは、頻繁に参照されるスキーマは、クエリと応答メッセージ インスタンスの検証に使用します。  
   
 ### <a name="to-create-the-common-schemas-for-v24"></a>V2.4 の一般的なスキーマを作成するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**新規**、クリックして**プロジェクト**です。  
+1. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], の **ファイル** メニューをポイント **新規**, 、クリックして **プロジェクト**します。  
   
-2.  新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**一覧で、展開**BizTalk プロジェクト**、し、[ **BTAHL7Projects**です。  
+2. 新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**一覧で、展開**BizTalk プロジェクト**、し、[ **BTAHL7Projects**します。  
   
-3.  **テンプレート**一覧で、 **BTAHL7V24Common プロジェクト**です。  
+3. **テンプレート**一覧で、 **BTAHL7V24Common プロジェクト**します。  
   
-4.  **名前**フィールドに「 **Interrogative_24Schemas**です。  
+4. **名前**フィールドに「 **Interrogative_24Schemas**します。  
   
-5.  ソリューション フィールドで、選択**ソリューションに追加**、順にクリック**OK**です。  
+5. ソリューションのフィールドで、選択**ソリューションに追加**、順にクリックします**OK**。  
   
-     ソリューション エクスプ ローラーで、プロジェクトに 3 つのスキーマ (datatypes_24.xsd、segments_24.xsd、および tablevalues_24.xsd) が含まれていることを確認します。  
+    ソリューション エクスプ ローラーでは、(datatypes_24.xsd、segments_24.xsd、および tablevalues_24.xsd) の 3 つのスキーマをプロジェクトに含まれることに注意してください。  
   
-6.  ソリューション エクスプ ローラーで右クリック**Interrogative_24Schemas**プロジェクトをクリックして**プロパティ**です。  
+6. ソリューション エクスプ ローラーで右クリックして**Interrogative_24Schemas**プロジェクトをクリックして**プロパティ**します。  
   
-7.  Interrogative_24Schemas プロパティ ページ] ダイアログ ボックスで、[**アセンブリ**です。  
+7. Interrogative_24Schemas プロパティ ページ] ダイアログ ボックスで、[**アセンブリ**します。  
   
-8.  右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、省略記号 (...) ボタンをクリックします。  
+8. 右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、省略記号 (...) ボタンを順にクリックします。  
   
-9. **アセンブリ キー ファイル** ダイアログ ボックスを参照\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\ のアクセラレータInterrogative チュートリアルをクリックして**key.snk**、順にクリック**開く**です。  
+9. **アセンブリ キー ファイル** ダイアログ ボックスを参照\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\ のアクセラレータInterrogative チュートリアル, をクリックして**key.snk**、 をクリックし、**オープン**します。  
   
-10. Interrogative_24Schemas プロパティ ページ] ダイアログ ボックスで、[ **OK**して変更を保存します。  
+10. Interrogative_24Schemas プロパティ ページ] ダイアログ ボックスで、[ **OK**変更を保存します。  
   
-11. ソリューション エクスプ ローラーで右クリック**Interrogative_24Schemas**プロジェクトをクリックして**展開**です。 をクリックして**OK**ソリューションに変更を保存するように求めるダイアログ ボックスにします。 成功メッセージが出力ウィンドウに表示を確認します。  
+11. ソリューション エクスプ ローラーで右クリックして**Interrogative_24Schemas**プロジェクトをクリックして**デプロイ**します。 をクリックして**OK**をソリューションに変更を保存することを確認するダイアログ ボックスにします。 成功メッセージが出力ウィンドウに表示を確認します。  
   
     > [!NOTE]
-    >  使用して、適切なメッセージが表示されない場合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]スキーマをトラブルシューティングします。  
+    >  適切なメッセージが表示されない場合は、使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]スキーマのトラブルシューティングを行う。  
   
- 進みます[手順 3: を作成し、トリガー イベント (メッセージ) プロジェクトを配置](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-deploy-a-trigger-event-message-project-hl7-main.md)です。
+    続行する[手順 3: を作成し、トリガー イベント (メッセージ) プロジェクトを配置](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-deploy-a-trigger-event-message-project-hl7-main.md)します。

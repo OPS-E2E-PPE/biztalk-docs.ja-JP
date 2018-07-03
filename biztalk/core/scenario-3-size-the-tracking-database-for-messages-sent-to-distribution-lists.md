@@ -1,5 +1,5 @@
 ---
-title: 'シナリオ 3: メッセージは、同報リストに出力を送信の追跡データベースのサイズ変更 |Microsoft ドキュメント'
+title: 'シナリオ 3: メッセージが配布リストに出力を送信の追跡データベースのサイズ調整 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,41 +14,41 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dca1722e24e0c76c85699ea00fcf6ffc120b2e14
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bb9a5992865ffbf09a493a480ecbcb61e9c0f034
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271106"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996219"
 ---
-# <a name="scenario-3-sizing-the-tracking-database--for-messages-sent-out-to-distribution-lists"></a>シナリオ 3: 同報リストに送信されるメッセージの追跡データベースのサイズ変更
+# <a name="scenario-3-sizing-the-tracking-database--for-messages-sent-out-to-distribution-lists"></a>シナリオ 3: 同報リストに送信されるメッセージの追跡データベースのサイズ調整
 次の図では、オーケストレーションによって変更されたメッセージが、同報リストを通じて複数の送信ポートに送られています。  
   
- ![複数のポートに、オーケストレーションでメッセージ](../core/media/biztalk-server-message-orch-multiple-ports.gif "BizTalk_Server_message_orch_multiple_ports")  
+ ![複数のポートにオーケストレーションでメッセージを](../core/media/biztalk-server-message-orch-multiple-ports.gif "BizTalk_Server_message_orch_multiple_ports")  
   
- **オーケストレーション処理の適用し、複数のポートに送信する BizTalk Server メッセージ**  
+ **オーケストレーション処理の適用し、複数のポートに送信するメッセージを BizTalk Server**  
   
  このシナリオに関するファクトの一部を次に示します。  
   
--   メッセージのサイズは、10 K です。  
+- メッセージ サイズは、10 K です。  
   
--   プロパティは昇格しません。  
+- プロパティは昇格しません。  
   
--   1 年に受け取るメッセージ数は、350 万件です。  
+- 1 年に受け取るメッセージ数は、350 万件です。  
   
--   追跡は、すべてのイベントに対して有効になっています。 このシナリオには次に示す 5 つのイベントがあります。  
+- 追跡は、すべてのイベントに対して有効になっています。 このシナリオには次に示す 5 つのイベントがあります。  
   
-    -   メッセージ M0 の受信  
+  -   メッセージ M0 の受信  
   
-    -   受信ポートからのメッセージ M1 の出力  
+  -   受信ポートからのメッセージ M1 の出力  
   
-    -   送信ポートによるメッセージ M3 の出力  
+  -   送信ポートによるメッセージ M3 の出力  
   
-    -   送信ポートによるメッセージ M4 の出力  
+  -   送信ポートによるメッセージ M4 の出力  
   
-    -   送信ポートによるメッセージ M5 の出力  
+  -   送信ポートによるメッセージ M5 の出力  
   
- この情報を適用する数式には、次。  
+  式にこの情報を適用するには、次の。  
   
 ```  
 [(5*252 bytes) + (10*182 bytes) + (0*5(40 bytes + 0) * 3,500,000]/1024/1024  
@@ -56,7 +56,7 @@ ms.locfileid: "22271106"
 ```  
   
 ## <a name="messages-in-an-orchestration-that-are-sent-out-to-a-distribution-list-with-a-single-promoted-property"></a>同報リストに送信されるオーケストレーション内のメッセージ (プロパティを 1 つ昇格した場合)  
- 前述のシナリオについて、サイズが約 10 バイトのプロパティを 1 つ昇格させてみましょう。 次のような式のようになりました。  
+ 前述のシナリオについて、サイズが約 10 バイトのプロパティを 1 つ昇格させてみましょう。 これで、式のようになります。  
   
 ```  
 [((5*150 bytes) + (10*230 bytes) + (1*5(52 bytes + 10 bytes)) * 3,500,000]/1024/1024  
@@ -79,8 +79,8 @@ ms.locfileid: "22271106"
 ```  
   
 ## <a name="see-also"></a>参照  
- [追跡データベースのサイズをメッセージ変数を使用](../core/using-message-variables-to-size-the-tracking-database.md)   
- [メッセージ本文を追跡する追跡データベースのサイズ変更](../core/sizing-the-tracking-database-to-track-message-bodies.md)   
- [シナリオ 1: 単純な BizTalk メッセージの追跡データベースのサイズ変更](../core/scenario-1-sizing-the-tracking-database-for-simple-biztalk-messages.md)   
- [シナリオ 2: オーケストレーションでメッセージの追跡データベースのサイズ変更](../core/scenario-2-sizing-the-tracking-database-for-messages-in-orchestrations.md)   
- [シナリオ 4: すべてのメッセージの追跡データベースのサイズ変更](../core/scenario-4-sizing-the-tracking-database-for-all-messages.md)
+ [追跡データベースのサイズにメッセージ変数を使用します。](../core/using-message-variables-to-size-the-tracking-database.md)   
+ [メッセージ本文を追跡する追跡データベースのサイズ調整](../core/sizing-the-tracking-database-to-track-message-bodies.md)   
+ [シナリオ 1: 単純な BizTalk メッセージの追跡データベースのサイズ調整](../core/scenario-1-sizing-the-tracking-database-for-simple-biztalk-messages.md)   
+ [シナリオ 2: オーケストレーション内のメッセージの追跡データベースのサイズ調整](../core/scenario-2-sizing-the-tracking-database-for-messages-in-orchestrations.md)   
+ [シナリオ 4: すべてのメッセージの追跡データベースのサイズ調整](../core/scenario-4-sizing-the-tracking-database-for-all-messages.md)

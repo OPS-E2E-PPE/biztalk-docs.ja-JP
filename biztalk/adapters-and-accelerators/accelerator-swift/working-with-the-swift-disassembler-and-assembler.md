@@ -1,5 +1,5 @@
 ---
-title: SWIFT 逆アセンブラおよびアセンブラの操作 |Microsoft ドキュメント
+title: SWIFT 逆アセンブラーとアセンブラーの操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a63b27e3c89ac59c698098b09e2f6565980e363
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 1942e6648311c65acc2bb1cd91406904906cc8f4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004875"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37005739"
 ---
-# <a name="working-with-the-swift-disassembler-and-assembler"></a>SWIFT 逆アセンブラおよびアセンブラの操作
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]カスタム パイプライン コンポーネント、SWIFT の逆アセンブラー、および SWIFT のフラット ファイル メッセージの処理専用に設計された機能が用意されている SWIFT アセンブラーを提供します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]送信および受信の段階で定義された特定のタスクを実行するパイプラインを使用して、A4SWIFT パイプライン コンポーネントを受信 (受信) と送信 (送信) 処理します。 メッセージの処理、パイプライン、およびパイプライン コンポーネントの詳細については、BizTalk Server ヘルプを参照してください。  
+# <a name="working-with-the-swift-disassembler-and-assembler"></a>SWIFT 逆アセンブラーとアセンブラーの操作
+Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]カスタム パイプライン コンポーネントでは、SWIFT 逆アセンブラー、および SWIFT のフラット ファイル メッセージの処理専用に設計された機能を備えている SWIFT アセンブラーを提供します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]送信し、受信の段階で定義されている特定のタスクを実行するパイプラインの使用、A4SWIFT パイプライン コンポーネントの受信 (受信) と送信 (送信) 処理します。 メッセージの処理、パイプライン、およびパイプライン コンポーネントの詳細については、BizTalk Server のヘルプを参照してください。  
   
  このセクションには、次のトピックが含まれています。  
   

@@ -1,5 +1,5 @@
 ---
-title: Siebel アダプターを物理ポートのバインドを手動で構成 |Microsoft ドキュメント
+title: Siebel アダプターを物理ポートのバインドを手動で構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,30 +15,30 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed94ca9f6a44919684d36a1be931cbb33f746377
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 25afdeaf544cddb67440d050690ca8ca08df4547
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222122"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37020034"
 ---
 # <a name="manually-configure-a-physical-port-binding-to-the-siebel-adapter"></a>Siebel アダプターを物理ポートのバインドを手動で構成します。
-このセクションの構成に関する情報を提供する、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]を使用して WCF カスタム バインドとして、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 アダプターを展開したらことができますを使用しての Siebel システムからメッセージを送受信する、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 アダプタの展開の手順の間の通信の方向によって異なる[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。 送信ポートまたは送信受信ポートを構成することができます。 選択項目は次のとおりです。  
+このセクションでは、構成に関する情報を提供、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]を使用して WCF カスタム バインドとして、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 アダプタの展開後にすることを使用しての Siebel システムからメッセージを送受信、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 アダプタの展開の手順の間の通信の方向によって異なります[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。 送信または送受信ポートを構成することができます。 選択項目は次のとおりです。  
   
-|ポートの方向|通信方式|選択への通信方向|  
+|ポートの方向|通信方式|選択する通信の方向|  
 |---|---|---|  
 |Send|一方向|常にこのポートでメッセージを送信します。|  
 |送信 - 受信|要求 - 応答|要求の送信と応答の受信をされます。|  
   
- 詳細については、次を参照してください。[の作成および構成する送信ポート](../../core/creating-and-configuring-send-ports.md)です。
+ 詳細については、次を参照してください。[構成する送信ポートの作成と](../../core/creating-and-configuring-send-ports.md)します。
   
 > [!NOTE]
->  受信ポートがあるためにサポートされていません、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Siebel システムの受信操作を有効にしません。  
-  
+>  受信ポートはため、サポートされていません、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Siebel システムからの受信操作を有効にしません。  
+> 
 > [!NOTE]
->  によって作成されるバインディングの構成ファイルをインポートして、Wcf-custom 送信ポートを構成することも、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータの生成の一部として。 このバインド ファイルを使用するポートを構成する方法の詳細については、次を参照してください。 [Siebel するポートのバインド ファイルを使用する物理ポートのバインドを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-physical-port-binding-using-a-port-binding-file-to-siebel.md)です。
+>  によって作成されるバインド構成ファイルをインポートすることで、Wcf-custom 送信ポートを構成することも、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータの生成の一部として。 このバインド ファイルを使用してポートを構成する方法の詳細については、次を参照してください。 [Siebel にポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-physical-port-binding-using-a-port-binding-file-to-siebel.md)します。
   
  
   
 ## <a name="see-also"></a>参照  
-[Siebel アダプターと BizTalk アプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-siebel/building-blocks-to-create-biztalk-applications-with-the-siebel-adapter.md)
+[Siebel アダプターを使用した BizTalk アプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-siebel/building-blocks-to-create-biztalk-applications-with-the-siebel-adapter.md)

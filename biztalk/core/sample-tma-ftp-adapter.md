@@ -1,5 +1,5 @@
 ---
-title: 'サンプル TMA: FTP アダプター |Microsoft ドキュメント'
+title: 'サンプル TMA: FTP アダプター |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,12 +18,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b88f01eadc2fcadf6592e61b38203bb09e69b547
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e1dc1a7779b3dde57c1546ace3cd5ea191152d0f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271962"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988091"
 ---
 # <a name="sample-tma-ftp-adapter"></a>サンプル TMA: FTP アダプター
 このトピックでは、サンプル アーキテクチャの FTP アダプター シナリオ向けの脅威モデル分析 (TMA) について説明します。  
@@ -32,17 +32,17 @@ ms.locfileid: "22271962"
   
  **図 1. FTP アダプタ シナリオのサンプル アーキテクチャ**  
   
- ![FTP アダプターのアーキテクチャをサンプル](../core/media/tdi-sec-refarch-ftp.gif "TDI_Sec_RefArch_FTP")  
+ ![FTP アダプターのアーキテクチャのサンプル](../core/media/tdi-sec-refarch-ftp.gif "TDI_Sec_RefArch_FTP")  
   
 ## <a name="step-1-collect-background-information-ftp-adapter-scenario"></a>手順 1. 背景情報 (FTP アダプタ シナリオ) の収集します。  
  このセクションでは、サンプル アーキテクチャの FTP アダプタ シナリオ向けのデータ フロー ダイアグラム (DFD) について説明します。  
   
- その他のすべての背景情報の使用シナリオ、すべて同じでありで既に説明した[サンプル シナリオの背景情報](../core/background-information-for-sample-scenarios.md)です。  
+ その他のすべての背景情報の使用シナリオ、すべて同じで既に説明した[サンプル シナリオの背景情報](../core/background-information-for-sample-scenarios.md)します。  
   
 ### <a name="data-flow-diagram"></a>データ フロー ダイアグラム  
  次の図は、FTP アダプタを使用した場合におけるサンプル アーキテクチャのデータ フロー ダイアグラム (DFD) を示しています。  
   
- **FTP アダプタ シナリオのサンプル アーキテクチャの図 2 の DFD**  
+ **図 2 DFD のサンプル アーキテクチャの FTP アダプタ シナリオ**  
   
  ![FTP アダプターの DFD](../core/media/tdi-sec-refarch-dfd-ftp.gif "TDI_Sec_RefArch_DFD_FTP")  
   
@@ -63,23 +63,23 @@ ms.locfileid: "22271962"
 ## <a name="step-2-create-and-analyze-the-threat-model-ftp-adapter-scenario"></a>手順 2. 作成し、分析、脅威モデル (FTP アダプタ シナリオ)  
  このセクションでは、サンプル アーキテクチャの FTP アダプタ シナリオに対して実行した TMA の結果を示します。  
   
--   **エントリ ポイント、信頼の境界、データ フローの - 特定**背景情報および手順 1. で前の説明を参照してください[サンプル シナリオの背景情報](../core/background-information-for-sample-scenarios.md)です。  
+- **特定のエントリ ポイント、信頼の境界、およびデータのフロー -** および手順 1 で前に説明されている背景情報を参照してください[サンプル シナリオの背景情報](../core/background-information-for-sample-scenarios.md)します。  
   
--   **特定された脅威の一覧を作成**を使用して、次の分類、DFD のすべてのエントリのシナリオに潜在的な脅威を特定する: **S**poofing を識別、 **T**データを ampering **R**、これが否認**すれば**漏洩、 **D**ービス拒否、および**E**の levation権限です。 次の表は、FTP アダプタを使用して BizTalk Server との間でメッセージを送受信したときに特定された脅威を示しています。  
+- **-特定された脅威の一覧を作成**シナリオに潜在的な脅威を識別するために、DFD のすべてのエントリのカテゴリに分類を使いました**S**poofing を識別、 **T**ampering。データ、 **R**、これが否認**は**漏洩、 **D**ービス拒否、および**E**特権の levation。 次の表は、FTP アダプタを使用して BizTalk Server との間でメッセージを送受信したときに特定された脅威を示しています。  
   
- **表 1 の脅威リスト**  
+  **特定された脅威の一覧を表 1**  
   
-|脅威|Description|[Asset]|影響|  
+|脅威|説明|[Asset]|影響|  
 |------------|-----------------|-----------|------------|  
 |FTP プロトコルがセキュリティで保護されていない|FTP プロトコルのユーザー ID とパスワードはクリア テキストとして送信されます。 悪意のあるユーザーがネットワークを監視して資格情報にアクセスすることがあります。 その結果、データが公開されることになります。|ユーザーの資格情報|ID 偽装<br /><br /> データの改ざん<br /><br /> 情報の漏えい|  
 |FTP サーバーが、未認証の DHCP サーバーの攻撃に対して脆弱である|URI にユーザーのパスワードが含まれていなくても、ハンドラで指定されている場合、実行時にハンドラから FTP サーバーにパスワードが送信されます。 認証要求をリッスンしている未認証の FTP サーバーがある場合、この方法でパスワードが盗まれる可能性があります。 解決策の 1 つは、ハンドラ レベルでのパスワードの使用の有効と無効を切り替えることです。|FTP サーバー|ID 偽装<br /><br /> データの改ざん<br /><br /> 情報の漏えい|  
   
 ## <a name="step-3-review-threats-ftp-adapter-scenario"></a>手順 3. 脅威の確認 (FTP アダプタ シナリオ)  
- このセクションでは、サンプル アーキテクチャの FTP アダプタ シナリオで特定された脅威に対して実行したリスク分析の結果を示します。 主な脅威モデルについてのミーティングの後に、脅威を確認し、使用されているために使用、次に影響を与える各脅威のリスクを識別するカテゴリ: **D**amage 潜在的な**R**eproducibility、 **E**xploitability、 **A**影響を受けるユーザー、および**D**iscoverability です。  
+ このセクションでは、サンプル アーキテクチャの FTP アダプタ シナリオで特定された脅威に対して実行したリスク分析の結果を示します。 主要な脅威モデルは、会議後、脅威を確認し、使用のために使用、次に影響を与える各脅威のリスクを識別するためにカテゴリ: **D**amage、潜在的な**R**可能性、 **E**xploitability、 **A**影響を受けるユーザー、および**D**iscoverability します。  
   
  次の表は、FTP アダプタを使用して BizTalk Server との間でメッセージを送受信したときに特定された脅威のリスクの度合いを示しています。  
   
- **特定された脅威のリスクの度合いを 2 つのテーブルにします。**  
+ **表 2. 特定された脅威のリスクの度合い**  
   
 |脅威|影響|潜在的な損害|再現性|悪用性|影響を受けるユーザー|検出可能性|リスクの度合い|  
 |------------|------------|----------------------|---------------------|--------------------|--------------------|---------------------|-------------------|  
@@ -91,7 +91,7 @@ ms.locfileid: "22271962"
   
  次の表は、FTP アダプタを使用して BizTalk Server との間でメッセージを送受信したときに特定された脅威の緩和方法とテクノロジを示しています。  
   
- **表 3 の緩和方法とテクノロジ**  
+ **表 3. 緩和方法とテクノロジ**  
   
 |脅威|影響|リスクの度合い|緩和方法とテクノロジ|  
 |------------|------------|-------------------|--------------------------------------------|  
@@ -101,4 +101,4 @@ ms.locfileid: "22271962"
 ## <a name="see-also"></a>参照  
  [脅威モデル分析](../core/threat-model-analysis.md)   
  [脅威モデル分析のサンプル シナリオ](../core/sample-scenarios-for-threat-model-analysis.md)   
- [小規模および中規模企業向けのサンプル アーキテクチャ](../core/sample-architectures-for-small-medium-sized-companies.md)
+ [中小企業向けのサンプル アーキテクチャ](../core/sample-architectures-for-small-medium-sized-companies.md)

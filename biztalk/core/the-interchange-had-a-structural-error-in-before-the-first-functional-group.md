@@ -1,5 +1,5 @@
 ---
-title: インターチェンジ構造エラーが、最初の機能グループの前に |Microsoft ドキュメント
+title: インターチェンジ構造エラーが、最初の機能グループの前に |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d5ab490de214f53e85ea32c1b243456f837c72e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 04150fc8db853719517c26e7ae91a904e7096fb5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278658"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996659"
 ---
 # <a name="the-interchange-had-a-structural-error-in-before-the-first-functional-group"></a>インターチェンジ構造エラーが、最初の機能グループの前に
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|X12InterchangeStructuralErrorBefore1stGroup|  
-|メッセージ テキスト|Id '{0}'、送信者 id '{1}' で、インターチェンジ受信者 id '{2}' が最初の機能グループ内/前に、の構造のエラー|  
+|                 |                                                                                                                                  |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                        [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                        |
+| 製品バージョン |                                    [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                    |
+|    イベント ID     |                                                                -                                                                 |
+|  イベント ソース   |                      [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                      |
+|    コンポーネント    |                                                            EDI エンジン                                                            |
+|  シンボル名  |                                           X12InterchangeStructuralErrorBefore1stGroup                                            |
+|  メッセージ テキスト   | Id を持つインターチェンジ '{0}'、送信者 id'{1}'、受信者 id '{2}' で/最初の機能グループの前に構造エラーが |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、次のいずれかの理由により、受信パイプラインで受信インターチェンジを処理できなかったことを示します。  

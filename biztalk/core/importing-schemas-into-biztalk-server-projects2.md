@@ -1,5 +1,5 @@
 ---
-title: Visual Studio に JD Edwards EnterpriseOne のスキーマをインポート |Microsoft ドキュメント
+title: Visual Studio に JD Edwards EnterpriseOne のスキーマのインポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: acd61cc8ab63d6859a8e10afb76f93c2f8cb2150
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 1ffc55fcb2bf5dd563dcc0fc9e2aed93b3a0c624
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013977"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37009571"
 ---
 # <a name="importing-schemas-into-biztalk-server-projects"></a>BizTalk Server プロジェクトへのスキーマのインポート
 ここでは、JD Edwards EnterpriseOne サーバーのブラウズ、および [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトへのスキーマのインポートについて説明します。  
   
 > [!NOTE]
->  arglist を設定したことを確認する必要があります。 オーケストレーションでスキーマを生成する前に、jdearglist.txt を更新する必要があります。 詳細については、次を参照してください。[文字列値の処理](../core/handling-string-values2.md)です。  
+>  arglist を設定したことを確認する必要があります。 オーケストレーションでスキーマを生成する前に、jdearglist.txt を更新する必要があります。 詳細については、次を参照してください。[文字列値の処理](../core/handling-string-values2.md)します。  
   
 > [!NOTE]
 >  Jdearglist を変更するたびにそのビジネス オブジェクトのスキーマを再生成する必要があります。  
@@ -32,52 +32,52 @@ ms.locfileid: "24013977"
   
 ## <a name="import-schemas-into-visual-studio"></a>Visual Studio にスキーマをインポートします。
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]を開きます。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]を開きます。  
   
-2.  名前を右クリックし、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロジェクトをポイントし、**追加**を選択して**生成した項目の追加**です。  
+2. 名前を右クリックし、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロジェクトをポイントして、**追加**、選択と**生成した項目の追加**します。  
   
-3.  をクリックして**追加**を開くには、**アダプターの追加ウィザード**です。  
+3. クリックして**追加**を開く、**アダプターの追加ウィザード**します。  
   
-4.  **アダプターの選択** ページで、スキーマをインポートするアダプターの名前を選択して (たとえば、 **JDEEnterpriseOne**)。  
+4. **アダプターの選択** ページで、スキーマをインポートするアダプターの名前を選択します (たとえば、 **JDEEnterpriseOne**)。  
   
-5.  **SQL Server**ボックスで、SQL server を選択します。  
+5. **SQL Server**ボックスで、SQL server を選択します。  
   
-6.  **データベース**ボックスで、データベースを選択します。  
+6. **データベース**ボックスに、データベースを選択します。  
   
-     既定のデータベースは、SQL サーバーと同じデータベースです。  
+    既定のデータベースは、SQL サーバーと同じデータベースです。  
   
-7.  **ポート**ボックスで SQL サーバーを選択し、をクリックして**次**です。  
+7. **ポート**ボックスで、SQL server を選択し、をクリックし、**次**します。  
   
-     JD Edwards EnterpriseOne システムがブラウザーに表示されます。  
+    JD Edwards EnterpriseOne システムがブラウザーに表示されます。  
   
-8.  以下に示す手順に進みます。  
+8. 以下に示す手順に進みます。  
   
- アダプターの追加ウィザードに、定義済みのすべてのシステムのツリーが表示されます。 JD Edwards EnterpriseOne には多くのモジュールがあります。 モジュールは名前の最初の 3 文字に従ってグループ化されます。  
+   アダプターの追加ウィザードに、定義済みのすべてのシステムのツリーが表示されます。 JD Edwards EnterpriseOne には多くのモジュールがあります。 モジュールは名前の最初の 3 文字に従ってグループ化されます。  
   
--   階層の最初のレベルはモジュール名のすべての 3 文字プレフィックスのリストです。  
+- 階層の最初のレベルはモジュール名のすべての 3 文字プレフィックスのリストです。  
   
--   2 番目のレベルは同じ 3 文字プレフィックスを共有するすべてのモジュールのリストを示します。  
+- 2 番目のレベルは同じ 3 文字プレフィックスを共有するすべてのモジュールのリストを示します。  
   
--   最後のレベルはモジュールに属するビジネス関数のリストを示します。 サービス アイコンを展開すると、サービスの操作を閲覧できます。  
+- 最後のレベルはモジュールに属するビジネス関数のリストを示します。 サービス アイコンを展開すると、サービスの操作を閲覧できます。  
   
- 操作を展開すると、入出力引数が表示されます。 入出力引数を展開すると、引数のデータ型が表示されます。  
+  操作を展開すると、入出力引数が表示されます。 入出力引数を展開すると、引数のデータ型が表示されます。  
   
 > [!NOTE]
 >  サーバー オブジェクト定義が変更されると、スキーマを再生成し、そのデータを更新する必要があります。  
   
 > [!NOTE]
->  スキーマの生成後に jdearglist.txt を変更した場合、スキーマを再生成してそのデータを更新する必要があります。 Jdearglist.txt の詳細については、次を参照してください。[文字列値の処理](../core/handling-string-values2.md)です。  
+>  スキーマの生成後に jdearglist.txt を変更した場合、スキーマを再生成してそのデータを更新する必要があります。 Jdearglist.txt の詳細については、次を参照してください。[文字列値の処理](../core/handling-string-values2.md)します。  
   
 ## <a name="select-the-schemas"></a>スキーマを選択します。  
   
-1.  **[インポートするサービス**] ページの最上位のノードを展開し、**ビジネス オブジェクト**ノードまたは**ビジネス サービス**ノード。  
+1. **[インポートするサービス**] ページの最上位ノードを展開し、**ビジネス オブジェクト**ノードまたは**ビジネス サービス**ノード。  
   
-2.  インポート、およびをクリックする項目の横にチェック ボックスをオンに**OK**です。  
+2. クリックして、インポートする項目の横にあるチェック ボックスをオン**OK**します。  
   
-3.  選択した JD Edwards EnterpriseOne の項目について生成されたスキーマが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトにインポートされます。  
+3. 選択した JD Edwards EnterpriseOne の項目について生成されたスキーマが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトにインポートされます。  
   
 > [!NOTE]
->  AddressBook (N0100041) を使用する場合、フィールド名は**cActionCode**です。 アクションは XML ファイル自体の一部です。 コードは次のとおりです。  
+>  AddressBook (N0100041) を使用する場合、フィールド名は**cActionCode**します。 アクションは XML ファイル自体の一部です。 コードは次のとおりです。  
   
 -   A は追加 (Add) を表します。  
   

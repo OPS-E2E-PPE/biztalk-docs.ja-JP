@@ -1,5 +1,5 @@
 ---
-title: WCF サービス モデルを使用して Oracle データベースでデータ変更のポーリングに基づいたメッセージを受信 |Microsoft ドキュメント
+title: WCF サービス モデルを使用して Oracle データベースでのポーリングに基づいたデータ変更メッセージの受信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,65 +16,65 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fd36081bd92c3bfae13916ed7d984fcd5de9763f
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: cda98a1600df28fab476114e697cd47e24316251
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "22217226"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012603"
 ---
-# <a name="receive-polling-based-data-changed-messages-in-oracle-database-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle データベースでデータ変更のポーリングに基づいたメッセージを受信します。
-構成することができます、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]ポーリング ベースのデータを受信するには、Oracle のテーブルまたはビューに対してメッセージを変更します。 メッセージを受信するデータが変更されて、アダプターは、Oracle のテーブルまたはビューにオプションの PL/SQL コード ブロックを続けるに対して SQL クエリを定期的に実行します。 SQL クエリの結果では返されます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]受信 POLLINGSTMT 操作で設定厳密に型指定された結果としてアプリケーションにします。 使用してデータベースを構成し、Oracle のポーリングを実行するためのメカニズムの詳細については、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[Oracle データベース アダプターのデータ変更のポーリングに基づいたメッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)です。 続行する前に、このトピックを読むことを強くお勧めします。  
+# <a name="receive-polling-based-data-changed-messages-in-oracle-database-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle データベースでのポーリングに基づいたデータ変更メッセージを受信します。
+構成することができます、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]ポーリング ベースのデータを受信するには、Oracle のテーブルまたはビューに対するメッセージを変更します。 データ変更メッセージを受信するには、定期的に、アダプターが Oracle のテーブルまたはビューにオプションの PL/SQL コード ブロックを続けるに対する SQL クエリを実行します。 によって SQL クエリの結果が返されるし、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]受信 POLLINGSTMT 操作の設定、厳密に型指定された結果としてアプリケーションにします。 使用してデータベースを構成し、Oracle のポーリングを実行するためのメカニズムの詳細については、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[Oracle データベース アダプターのポーリングに基づいたデータ変更メッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)します。 続行する前に、このトピックで確認することを強くお勧めします。  
   
  WCF サービス モデルを使用する場合は、POLLINGSTMT 操作を受信するには、次の必要があります。  
   
--   アダプターによって公開されるメタデータから POLLINGSTMT 操作のためには、WCF サービス コントラクト (インターフェイス) を生成します。 これを行うには、使用する、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)。  
+- アダプターによって公開されているメタデータから POLLINGSTMT 操作用には、WCF サービス コントラクト (インターフェイス) を生成します。 これを行うには、使用する、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)。  
   
--   このインターフェイスから WCF サービスを実装します。  
+- このインターフェイスからの WCF サービスを実装します。  
   
--   サービス ホストを使用してこの WCF サービスをホスト (**System.ServiceModel.ServiceHost**)。  
+- サービス ホストを使用してこの WCF サービス ホスト (**System.ServiceModel.ServiceHost**)。  
   
- このセクションのトピックでは、情報および Oracle データベースのテーブルと、WCF サービス モデルでのビューにポーリングを実行するための手順を紹介します。  
+  このセクションのトピックでは、情報および Oracle データベースのテーブルおよび WCF サービス モデルでのビューにポーリングを実行するために手順を説明します。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、/SCOTT/ACCOUNTACTIVITY テーブルと/SCOTT/Package/ACCOUNT_PKG/PROCESS_ACTIVITY 関数を使用します。 これらの成果物を生成するスクリプトがで提供される、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]サンプルです。 サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)です。  
+ このトピックの例では、/SCOTT/ACCOUNTACTIVITY テーブルと/SCOTT/Package/ACCOUNT_PKG/PROCESS_ACTIVITY 関数を使用します。 これらの成果物を生成するスクリプトが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]サンプル。 サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
   
-## <a name="configuring-polling-in-the-wcf-service-model"></a>WCF サービス モデルでのポーリングを構成します。  
- 構成する、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベース テーブルやビュー上のバインドのプロパティとオプションの接続プロパティ (パラメーター) を設定してポーリングを実行します。 必須ですが、これらのプロパティの一部があり、デザイン時と実行時の両方でいくつか、無効に設定する必要があります。  
+## <a name="configuring-polling-in-the-wcf-service-model"></a>WCF サービス モデルでのポーリングの構成  
+ 構成する、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースのテーブルおよびビューのバインドのプロパティとオプションの接続プロパティ (パラメーター) を設定してポーリングを実行します。 これらのプロパティの一部は必須ですが、およびデザイン時と実行時の両方でいくつかに影響を与える設定する必要があります。  
   
--   デザイン時に、設定する接続パラメーターとバインドのプロパティを WCF サービス コントラクトを生成する Oracle データベースに接続するとします。  
+- デザイン時に、設定する接続パラメーターとバインドのプロパティを WCF サービス コントラクトを生成する Oracle データベースに接続するとき。  
   
--   実行時に、サービス ホストを作成するために使用 OracleDBBinding オブジェクトにバインドのプロパティを設定します。 サービス ホストにサービスのリスナーを追加する場合は、接続パラメーターを設定します。  
+- 実行時に、サービス ホストを作成するために使用 OracleDBBinding オブジェクトにバインドのプロパティを設定します。 サービス ホストにサービスのリスナーを追加する場合は、接続パラメーターを設定します。  
   
- バインドのプロパティと構成のポーリングに使用する接続パラメーターの概要を次に示します。  
+  バインドのプロパティとポーリングを構成するために使用する接続パラメーターの概要を次に示します。  
   
--   **PollingStatement**プロパティをバインドします。 デザイン時と実行時の両方には、このバインド プロパティを設定する必要があります。  
+- **PollingStatement**プロパティをバインドします。 デザイン時と実行時の両方にこのバインドのプロパティを設定する必要があります。  
   
--   省略可能なバインディング プロパティです。 これらは、実行時に設定するのみ必要です。  
+- 省略可能なバインドのプロパティ。 これらは、実行時に設定するのみ必要です。  
   
--   **AcceptCredentialsInUri**プロパティをバインドします。 このバインドのプロパティを設定する必要があります**true**実行時の接続 URI 内の資格情報を有効にする場合にします。 サービス ホストにサービス エンドポイントを追加する場合に、ユーザー名とパスワードを接続 URI であることがあります。  
+- **AcceptCredentialsInUri**プロパティをバインドします。 このバインドのプロパティを設定する必要があります**true**実行時の接続 URI 内の資格情報を有効にする場合にします。 サービス ホストにサービス エンドポイントを追加するときに、ユーザー名とパスワードを接続 URI に存在することがあります。  
   
--   **PollingId**接続 URI の文字列パラメーターをクエリします。 POLLINGSTMT 操作の名前空間を変更する場合は、デザイン時と実行時の両方でこの接続プロパティを設定する必要があります。  
+- **PollingId**接続 URI の文字列パラメーターをクエリします。 POLLINGSTMT 操作の名前空間を変更する場合は、デザイン時と実行時の両方では、この接続プロパティを設定する必要があります。  
   
- バインドのプロパティとポーリングを構成するために使用する接続パラメーターの詳細については、次を参照してください。 [Oracle データベース アダプターのデータ変更のポーリングに基づいたメッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)です。  
+  バインドのプロパティとポーリングを構成するために使用する接続パラメーターの詳細については、次を参照してください。 [Oracle データベース アダプターのポーリングに基づいたデータ変更メッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)します。  
   
 ## <a name="the-wcf-service-contract-and-class"></a>WCF サービス コントラクトとクラス  
- どちらを使用した、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を作成する WCF サービス コントラクト (インターフェイス) および POLLINGSTMT 操作のクラスをサポートします。  
+ いずれかを使用する、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を作成する WCF サービス コントラクト (インターフェイス) と POLLINGSTMT 操作のクラスをサポートします。  
   
- POLLINGSTMT 操作のサービス コントラクトの生成にこれらのツールのいずれかで、Oracle データベースに接続する場合。  
+ POLLINGSTMT 操作のサービス コントラクトを生成するこれらのツールのいずれかで、Oracle データベースに接続する場合。  
   
--   指定する必要があります、 **PollingStatement**プロパティをバインドします。 アダプターでは、このバインディングのプロパティで、SELECT ステートメントを使用して、POLLINGSTMT 操作によって返される結果の厳密に型指定されたセットのメタデータを正しいを生成します。  
+- 指定する必要があります、 **PollingStatement**プロパティをバインドします。 アダプターは、正しいメタデータ POLLINGSTMT 操作によって返される結果の厳密に型指定されたセットを生成するのに、このバインドのプロパティで、SELECT ステートメントを使用します。  
   
--   必要に応じて、接続 URI で PollingId パラメーターを指定することができます。 アダプターでは、このパラメーターを使用して、POLLINGSTMT 操作の名前空間を生成します。  
+- 必要に応じて、接続 URI で PollingId パラメーターを指定することができます。 アダプターでは、このパラメーターを使用して、POLLINGSTMT 操作の名前空間を生成します。  
   
- 次の例。  
+  次の例。  
   
--   **PollingStatement** "SELECT * から ACCOUNTACTIVITY FOR UPDATE"に設定されています。  
+- **PollingStatement** "SELECT * から ACCOUNTACTIVITY FOR UPDATE"に設定されます。  
   
--   **PollingId** "AcctActivity"に設定されています。  
+- **PollingId** "AcctActivity"に設定されます。  
   
 ### <a name="the-wcf-service-contract-interface"></a>WCF サービス コントラクト (インターフェイス)  
- 次のコードでは、POLLINGSTMT 操作に対して生成される WCF サービス コントラクト (インターフェイス) を示します。  
+ 次のコードでは、POLLINGSTMT 操作用に生成する WCF サービス コントラクト (インターフェイス) を示します。  
   
 ```  
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]  
@@ -109,10 +109,10 @@ public partial class POLLINGSTMT {
 }  
 ```  
   
-### <a name="the-data-contract-namespace"></a>データ コントラクト Namespace  
- データ コントラクトとは、サービスと交換するデータを抽象的に記述されているクライアントの間の正式な取り決めです。 通信するために、クライアントとサービスはありません、同じ、のみ、同じデータ コントラクト型を共有します。  
+### <a name="the-data-contract-namespace"></a>データ コントラクトの Namespace  
+ データ コントラクトは、サービスと交換されるデータを抽象的に記述するクライアントの間の正式な取り決めです。 これは、通信するために、クライアントとサービスする必要はありません同一の型では、同じデータ コントラクトのみを共有します。  
   
- メッセージの変更データが発生した場合、データ コントラクト名前空間も変更 PollingId パラメーターで (指定した場合)、接続 URI でします。 データ コントラクトは、クエリの結果セット内の厳密に型指定されたレコードを表すクラスで構成されます。 クラス定義の詳細については、この例では省略されています。 クラスには、結果セット内の列を表すプロパティが含まれています。  
+ メッセージの変更データが発生した場合、データ コントラクト名前空間も変更 PollingId パラメーターで (指定した) 場合の接続 URI です。 データ コントラクトは、クエリの結果セット内の厳密に型指定されたレコードを表すクラスで構成されます。 クラス定義の詳細については、この例では省略されます。 クラスには、結果セット内の列を表すプロパティが含まれています。  
   
  次の例では、PollingId"AcctActivity"が使用されます。  
   
@@ -129,7 +129,7 @@ namespace microsoft.lobservices.oracledb._2007._03.POLLINGSTMTAcctActivity {
 ```  
   
 ### <a name="wcf-service-class"></a>WCF サービス クラス  
- [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]をサービス コントラクト (インターフェイス) から実装、WCF サービス クラスのスタブを持つファイルも生成します。 ファイルの名前は、OracleDBBindingService.cs です。 このクラスに直接 POLLINGSTMT 操作を処理するロジックを挿入することができます。 Svcutil.exe を使用して、サービス コントラクト インターフェイスを生成する場合、必要がありますクラスを実装するこの自分でします。 次のコードによって生成された WCF サービス クラスを示しています、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
+ [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]をサービス コントラクト (インターフェイス) から実装された WCF サービス クラスのスタブを持つファイルも生成されます。 ファイルの名前は、OracleDBBindingService.cs です。 このクラスに直接 POLLINGSTMT 操作を処理するロジックを挿入することができます。 Svcutil.exe を使用して、サービス コントラクト インターフェイスを生成する場合、必要がありますこのクラスの実装自分でします。 次のコードによって生成される WCF サービス クラスを示しています、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。  
   
 ```  
 namespace OracleDBBindingNamespace {  
@@ -149,109 +149,109 @@ namespace OracleDBBindingNamespace {
   
 #### <a name="to-receive-polling-data-from-the-oracle-database-adapter"></a>Oracle データベース アダプターのポーリングのデータを受信するには  
   
-1.  使用して、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]または WCF を生成する svcutil.exe サービス コントラクト (インターフェイス) および POLLINGSTMT 操作用にヘルパー クラス。 詳細については、次を参照してください。 [WCF クライアントまたは Oracle データベース ソリューションの成果物のための WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)です。 設定する必要がありますには、少なくとも、 **PollingStatement**アダプターに接続するときにプロパティをバインドします。 必要に応じて、接続 URI で PollingId パラメーターを指定することができます。 使用している場合、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、する必要がありますすべてのバインディング パラメーターに必要な設定の構成。 これは、生成された構成ファイルで正しく設定されていることを保証します。  
+1. 使用して、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]または WCF を生成する svcutil.exe サービス コントラクト (インターフェイス) と POLLINGSTMT 操作用にヘルパー クラス。 詳細については、次を参照してください。 [WCF クライアントまたは Oracle データベース ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)します。 設定する必要がありますには、少なくとも、 **PollingStatement**アダプターに接続するときにプロパティをバインドします。 必要に応じて、接続 URI で PollingId パラメーターを指定することができます。 使用する場合、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]構成のために必要な設定のすべてのバインディング パラメーター。 これは、生成された構成ファイルで設定は正しくことを保証します。  
   
-2.  手順 1. で生成されたインターフェイスとヘルパー クラスからの WCF サービスを実装します。 POLLINGSTMT 操作; から受信したデータの処理エラーが発生した場合、ポーリング トランザクションを中止する例外をスローする、このクラスの POLLINGSTMT メソッドそれ以外の場合、メソッドは何も返さない。 次のように、WCF サービス クラスを属性する必要があります。  
+2. 手順 1. で生成されたインターフェイスとヘルパー クラスからの WCF サービスを実装します。 このクラスの POLLINGSTMT メソッドは、POLLINGSTMT 操作から受信したデータの処理エラーが発生した場合、ポーリング トランザクションを中止する例外をスローできます。それ以外の場合、メソッドは何も返しません。 次のように、WCF サービス クラスを属性する必要があります。  
   
-    ```  
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
-    ```  
+   ```  
+   [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
+   ```  
   
-    1.  使用した場合、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]インターフェイスを生成するには、直接のロジックを実装できる、 **POLLINGSTMT** 、生成されたメソッド**OracleDBBindingService**クラスです。 このクラスは、OracleDBBindingService.cs で確認できます。 この例では、このコードはサブ クラス、 **OracleDBBindingService**クラスです。  
+   1. 使用した場合、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]インターフェイスを生成するには、直接のロジックを実装できる、 **POLLINGSTMT**に生成されたメソッド**OracleDBBindingService**クラス。 このクラスは、OracleDBBindingService.cs で確認できます。 この例では、このコードはサブ クラス、 **OracleDBBindingService**クラス。  
   
-        ```  
-        [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
+      ```  
+      [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
   
-        public class PollingStmtService : OracleDBBindingService  
-        {  
-            public override void POLLINGSTMT(POLLINGSTMT request)  
-            {  
-                Console.WriteLine("\nNew Polling Records Received");  
-                Console.WriteLine("Tx Id\tAccount\tAmount\tDate\t\t\tDescription");  
-                for (int i = 0; i < request.POLLINGSTMTRECORD.Length; i++)  
-                {  
-                    Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}", request.POLLINGSTMTRECORD[i].TID,  
-                                        request.POLLINGSTMTRECORD[i].ACCOUNT,  
-                                        request.POLLINGSTMTRECORD[i].AMOUNT,  
-                                        request.POLLINGSTMTRECORD[i].TRANSDATE,  
-                                        request.POLLINGSTMTRECORD[i].DESCRIPTION);  
-                }  
-            }  
-        }  
-        ```  
+      public class PollingStmtService : OracleDBBindingService  
+      {  
+          public override void POLLINGSTMT(POLLINGSTMT request)  
+          {  
+              Console.WriteLine("\nNew Polling Records Received");  
+              Console.WriteLine("Tx Id\tAccount\tAmount\tDate\t\t\tDescription");  
+              for (int i = 0; i < request.POLLINGSTMTRECORD.Length; i++)  
+              {  
+                  Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}", request.POLLINGSTMTRECORD[i].TID,  
+                                      request.POLLINGSTMTRECORD[i].ACCOUNT,  
+                                      request.POLLINGSTMTRECORD[i].AMOUNT,  
+                                      request.POLLINGSTMTRECORD[i].TRANSDATE,  
+                                      request.POLLINGSTMTRECORD[i].DESCRIPTION);  
+              }  
+          }  
+      }  
+      ```  
   
-    2.  Svcutil.exe を使用して、インターフェイスを生成した場合は、インターフェイスを実装する WCF サービスを作成しのロジックを実装する必要があります、 **POLLINGSTMT**このクラスのメソッドです。  
+   2. Svcutil.exe を使用してインターフェイスを生成した場合は、インターフェイスを実装する WCF サービスを作成しのロジックを実装する必要があります、 **POLLINGSTMT**このクラスのメソッド。  
   
-3.  手順 2 で作成した WCF サービスのインスタンスを作成します。  
+3. 手順 2 で作成した WCF サービスのインスタンスを作成します。  
   
-    ```  
-    // create service instance  
-    PollingStmtService pollingInstance = new PollingStmtService();  
-    ```  
+   ```  
+   // create service instance  
+   PollingStmtService pollingInstance = new PollingStmtService();  
+   ```  
   
-4.  インスタンスを作成する**System.ServiceModel.ServiceHost** WCF サービスと基本接続 URI を使用しています。 基本の接続 URI には、userinfoparams またはクエリ文字列を含めることはできません。  
+4. インスタンスを作成**System.ServiceModel.ServiceHost** WCF サービスと基本の接続 URI を使用しています。 基本の接続 URI には、userinfoparams またはクエリ文字列を含めることはできません。  
   
-    ```  
-    // Enable service host  
-    Uri[] baseUri = new Uri[] { new Uri("oracledb://Adapter") };  
-    ServiceHost srvHost = new ServiceHost(pollingInstance, baseUri);  
-    ```  
+   ```  
+   // Enable service host  
+   Uri[] baseUri = new Uri[] { new Uri("oracledb://Adapter") };  
+   ServiceHost srvHost = new ServiceHost(pollingInstance, baseUri);  
+   ```  
   
-5.  作成、 **OracleDBBinding**とそのバインドのプロパティを設定してポーリング操作を構成します。 これは、コードで明示的にまたは構成で宣言によって行うことができます。 少なくとも、ポーリング ステートメントとポーリング間隔を指定する必要があります。 この例ではようにを指定する資格情報は、URI の一部としても設定する必要があります、 **AcceptCredentialsInUri**に**true**です。  
+5. 作成、 **OracleDBBinding**し、そのバインドのプロパティを設定してポーリング操作を構成します。 コードで明示的に、または構成で宣言的に、これを行うことができます。 少なくとも、ポーリング ステートメントとポーリング間隔を指定する必要があります。 この例では、する資格情報を指定の URI の一部としても設定する必要がありますので、 **AcceptCredentialsInUri**に**true**します。  
   
-    ```  
-    // Create and configure a binding for the service endpoint. NOTE: binding  
-    // parameters are set here for clarity, but these are already set in the  
-    // the generated configuration file  
-    OracleDBBinding binding = new OracleDBBinding();  
+   ```  
+   // Create and configure a binding for the service endpoint. NOTE: binding  
+   // parameters are set here for clarity, but these are already set in the  
+   // the generated configuration file  
+   OracleDBBinding binding = new OracleDBBinding();  
   
-    // The credentials are included in the connection URI, so set this property to true  
-    binding.AcceptCredentialsInUri = true;  
+   // The credentials are included in the connection URI, so set this property to true  
+   binding.AcceptCredentialsInUri = true;  
   
-    // Same as statement specified in Configure Adapter dialog box  
-    binding.PollingStatement = "SELECT * FROM ACCOUNTACTIVITY FOR UPDATE";  
-    binding.PostPollStatement = "BEGIN ACCOUNT_PKG.PROCESS_ACTIVITY(); END;";  
+   // Same as statement specified in Configure Adapter dialog box  
+   binding.PollingStatement = "SELECT * FROM ACCOUNTACTIVITY FOR UPDATE";  
+   binding.PostPollStatement = "BEGIN ACCOUNT_PKG.PROCESS_ACTIVITY(); END;";  
   
-    // Be sure to set the interval long enough to complete processing before  
-    // the next poll  
-    binding.PollingInterval = 15;  
-    // Polling is transactional; be sure to set an adequate isolation level   
-    // for your environment  
-    binding.TransactionIsolationLevel = TransactionIsolationLevel.ReadCommitted;  
-    ```  
+   // Be sure to set the interval long enough to complete processing before  
+   // the next poll  
+   binding.PollingInterval = 15;  
+   // Polling is transactional; be sure to set an adequate isolation level   
+   // for your environment  
+   binding.TransactionIsolationLevel = TransactionIsolationLevel.ReadCommitted;  
+   ```  
   
-6.  サービス ホストにサービス エンドポイントを追加します。 これを行うには :  
+6. サービス ホストにサービス エンドポイントを追加します。 これを行うには :  
   
-    -   手順 5. で作成したバインディングを使用します。  
+   -   手順 5. で作成したバインドを使用します。  
   
-    -   接続の資格情報を含む URI を指定して、必要に応じて、PollingId です。  
+   -   接続の資格情報を含む URI を指定し、必要に応じて、PollingId 場合。  
   
-    -   "POLLINGSTMT_OperationGroup"としてコントラクトを指定します。  
+   -   "POLLINGSTMT_OperationGroup"としてコントラクトを指定します。  
   
-    ```  
-    // Add service endpoint: be sure to specify POLLINGSTMT_OperationGroup as the contract  
-    Uri serviceUri = new Uri("oracledb://User=SCOTT;Password=TIGER@Adapter?PollingId=AcctActivity");  
-    srvHost.AddServiceEndpoint("POLLINGSTMT_OperationGroup", binding, serviceUri);  
-    ```  
+   ```  
+   // Add service endpoint: be sure to specify POLLINGSTMT_OperationGroup as the contract  
+   Uri serviceUri = new Uri("oracledb://User=SCOTT;Password=TIGER@Adapter?PollingId=AcctActivity");  
+   srvHost.AddServiceEndpoint("POLLINGSTMT_OperationGroup", binding, serviceUri);  
+   ```  
   
-7.  ポーリングのデータを受信するには、サービス ホストを開きます。 アダプターは、クエリが結果セットを返すときにデータを返します。  
+7. ポーリングのデータを受信するには、サービス ホストを開きます。 アダプターは、クエリが結果セットを返すたびにデータを返します。  
   
-    ```  
-    // Open the service host to begin polling  
-    srvHost.Open();  
-    ```  
+   ```  
+   // Open the service host to begin polling  
+   srvHost.Open();  
+   ```  
   
-8.  ポーリングを終了するには、サービス ホストを閉じます。  
+8. ポーリングを終了するには、サービス ホストを閉じます。  
   
-    > [!IMPORTANT]
-    >  アダプターは、サービス ホストが閉じられるまでポーリングを続行します。  
+   > [!IMPORTANT]
+   >  アダプターは、サービス ホストが閉じられるまでポーリングを続行します。  
   
-    ```  
-    srvHost.Close();  
-    ```  
+   ```  
+   srvHost.Close();  
+   ```  
   
 ### <a name="example"></a>例  
- 次の例では、SCOTT/ACCOUNTACTIVITY テーブルに対して実行されるポーリング クエリを示します。 ポーリング後ステートメントでは、別のテーブル/SCOTT/ACCOUNTHISTORY に処理されたレコードを移動する Oracle 関数を呼び出します。 接続 URI の"AccountActivity"PollingId パラメーターを設定して、POLLINGSTMT 操作の名前空間が変更されます。 この例では、生成されたをサブクラスで POLLINGSTMT 操作用の WCF サービスが作成**OracleDBBindingService**クラスです。 ただし、生成されたクラス内で直接、ロジックを実装することができます。  
+ 次の例では、SCOTT/ACCOUNTACTIVITY テーブルに対して実行されるポーリング クエリを示します。 ポーリング後ステートメントは、処理済みレコードを別のテーブル/SCOTT/ACCOUNTHISTORY に移動する Oracle 関数を呼び出します。 接続 URI の"AccountActivity"PollingId パラメーターを設定して POLLINGSTMT 操作の名前空間が変更されます。 この例では、生成されたをサブクラス化して POLLINGSTMT 操作用の WCF サービスを作成**OracleDBBindingService**クラス。 ただし、生成されたクラス内で直接、ロジックを実装できます。  
   
 ```  
 using System;  

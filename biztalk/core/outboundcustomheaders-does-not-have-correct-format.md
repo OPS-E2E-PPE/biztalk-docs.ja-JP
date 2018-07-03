@@ -1,5 +1,5 @@
 ---
-title: OutboundCustomHeaders は正しい形式はいません |Microsoft ドキュメント
+title: OutboundCustomHeaders は正しい形式をありません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,32 +12,32 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df751526661ddef455be45c4258c331c940fdd47
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 6d9cb9311015bfa7d88169944a206a8882b11cfe
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971264"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008923"
 ---
-# <a name="outboundcustomheaders-does-not-have-correct-format"></a>OutboundCustomHeaders は正しい形式はいません
+# <a name="outboundcustomheaders-does-not-have-correct-format"></a>OutboundCustomHeaders には、正しい形式はありません。
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|イベント ID|0|  
-|イベント ソース|0|  
-|コンポーネント|0|  
-|シンボル名|0|  
-|メッセージ テキスト|OutboundCustomHeaders は正しい形式ではありません|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  製品名   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| 製品バージョン |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    イベント ID     |                                         0                                          |
+|  イベント ソース   |                                         0                                          |
+|    コンポーネント    |                                         0                                          |
+|  シンボル名  |                                         0                                          |
+|  メッセージ テキスト   |                OutboundCustomHeaders は正しい形式ではありません                |
   
 ## <a name="explanation"></a>説明  
- WCF の値。InboundHeaders または WCF です。OutboundCustomHeaders が次の形式ではありません:\<ヘッダー\>...\</headers\>です。  
+ WCF の値。InboundHeaders または WCF です。OutboundCustomHeaders は次の形式がありません:\<ヘッダー\>...\</headers\>します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- プロパティ値のラップ\<ヘッダー\>要素。  
+ プロパティ値をラップ\<ヘッダー\>要素。  
   
- 詳細については、次のリソースを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
+ 詳細についてで、次のリソースを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
   
 -   [パイプライン コンポーネントでの WCF メッセージにおける SOAP ヘッダーの使用](../core/using-soap-headers-in-wcf-messages-with-pipeline-components.md)

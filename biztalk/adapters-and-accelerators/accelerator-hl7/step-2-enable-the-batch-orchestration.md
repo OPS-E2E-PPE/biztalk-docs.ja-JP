@@ -1,5 +1,5 @@
 ---
-title: '手順 2: バッチ オーケストレーションの有効化 |Microsoft ドキュメント'
+title: '手順 2: バッチ オーケストレーションの有効化 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f8b18e41aacf61ac4e55e1c8047e9685179656a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4b44dd71c44f2510b6ccd80a731dd21739ed7055
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206258"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996171"
 ---
-# <a name="step-2-enable-the-batch-orchestration"></a>手順 2: に、バッチ オーケストレーションが有効にします。
-バッチ オーケストレーションは、バッチの作成処理を制御します。 バッチに含まれるすべてのメッセージの参照を保持、送信バッチのトランザクションを制御、バッチ メッセージを生成、送信バッチにルーティングし、入力方向の受信確認のバッチ処理します。 作業を作成するバッチ処理のバッチ オーケストレーションを参加させる必要があります。  
+# <a name="step-2-enable-the-batch-orchestration"></a>手順 2: バッチ オーケストレーションを有効にします。
+バッチ オーケストレーションでは、バッチの作成処理を制御します。 バッチに含まれるすべてのメッセージの参照を保持、送信バッチのトランザクションを制御、バッチ メッセージを生成、送信のバッチをルーティングし、受信確認のバッチを処理します。 作業を作成するバッチ処理のバッチ オーケストレーションを参加させる必要があります。  
   
 ### <a name="to-enable-the-batch-orchestration"></a>バッチ オーケストレーションを有効にするには  
   
-1.  BizTalk 管理コンソールで、をクリックして**オーケストレーション**を右クリックして**BatchOrchestration.Orchestration_1**、クリックして**プロパティ**です。  
+1. BizTalk 管理コンソールで、次のようにクリックします。**オーケストレーション**、を右クリック**BatchOrchestration.Orchestration_1**、 をクリックし、**プロパティ**します。  
   
-2.  [オーケストレーションのプロパティ] ダイアログ ボックスのコンソール ツリーで、**バインド**です。  
+2. オーケストレーションのプロパティ] ダイアログ ボックスのコンソール ツリーで [**バインド**します。  
   
-3.  **バインド**] ウィンドウの**ホスト**[ **BizTalkServerApplication**です。 **[OK]** をクリックします。  
+3. **バインド**ウィンドウの**ホスト**を選択します**BizTalkServerApplication**します。 **[OK]** をクリックします。  
   
-4.  BizTalk 管理コンソールで、右クリック**BatchOrchestration.Orchestration_1**、クリックして**Enlist**です。  
+4. 右クリックし、BizTalk 管理コンソールで**BatchOrchestration.Orchestration_1**、 をクリックし、**参加**します。  
   
- 進みます[手順 3: を作成し、送信先パーティを構成する](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-configure-a-destination-party.md)です。
+   進みます[手順 3: を作成し、送信先パーティを構成する](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-configure-a-destination-party.md)します。

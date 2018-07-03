@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10775 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10775 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 443660f5c0babe8f8833be3bd3939c20b8b33c58
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 43d09ea0edb5331857beb8117d6811a12aa2c788
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277482"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36981643"
 ---
 # <a name="single-sign-on-event-10775"></a>シングル サインオン: イベント 10775
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10775|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|ENTSSO_E_APP_ADMIN_SAME|  
-|メッセージ テキスト|このアプリケーションのアプリケーション管理者アカウントが SSO 関連管理者アカウントとして指定されています。|  
+|                 |                                                                                                                          |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                エンタープライズ シングル サインオン                                                 |
+| 製品バージョン |                                [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                |
+|    イベント ID     |                                                          10775                                                           |
+|  イベント ソース   |                                                          ENTSSO                                                          |
+|    コンポーネント    |                                                           なし                                                            |
+|  シンボル名  |                                                 ENTSSO_E_APP_ADMIN_SAME                                                  |
+|  メッセージ テキスト   | このアプリケーションのアプリケーション管理者アカウントが SSO 関連管理者アカウントとして指定されています。 |
   
 ## <a name="explanation"></a>説明  
  アプリケーションは、SSO 関連管理者アカウントをアプリケーション管理者アカウントとして使用するように指定されています。 そのため、アプリケーション管理者アカウントは設定または変更できません。  

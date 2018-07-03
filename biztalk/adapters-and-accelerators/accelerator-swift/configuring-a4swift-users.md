@@ -1,5 +1,5 @@
 ---
-title: A4SWIFT のユーザーの構成 |Microsoft ドキュメント
+title: A4SWIFT ユーザーの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,31 +16,31 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 79c3b63cd77bb34545f4c4093796310aa7720563
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b75a3e95c836f8a577543b43319e6abe49a96c42
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209378"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37005259"
 ---
-# <a name="configuring-a4swift-users"></a>A4SWIFT のユーザーを構成します。
-インストール中に[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]、A4SWIFT 構成プログラムが既定の取引パートナー プロファイルやアグリーメントが作成され、BizTalk Server を登録します。 A4SWIFT には、Message Repair and New Submission のコンポーネントで使用されるドキュメント ライブラリも作成されます。  
+# <a name="configuring-a4swift-users"></a>A4SWIFT ユーザーの構成
+インストール中に[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]、A4SWIFT 構成プログラムが既定取引先のプロファイルと、契約を作成し、BizTalk Server を登録します。 また、A4SWIFT には、Message Repair and New Submission のコンポーネントで使用されるドキュメント ライブラリが作成されます。  
   
- A4SWIFT のインストール時に、次のドキュメント フォルダーを作成します。  
+ A4SWIFT のインストール中に次のドキュメント フォルダーを作成します。  
   
--   送信トレイ ドキュメント ライブラリ  
+- 送信トレイ ドキュメント ライブラリ  
   
--   テンプレート ドキュメント ライブラリ  
+- テンプレート ドキュメント ライブラリ  
   
--   未解析のドキュメント ライブラリ  
+- 未解析のドキュメント ライブラリ  
   
--   新しい SWIFT MT メッセージ ドキュメント ライブラリ  
+- 新しい SWIFT MT メッセージ ドキュメント ライブラリ  
   
--   新しい SWIFT MX メッセージ ドキュメント ライブラリ  
+- 新しい SWIFT MX メッセージ ドキュメント ライブラリ  
   
- 各部署を作成すると、A4SWIFT 管理者は、対応する部門のグループをサイトを手動で設定する必要があり、A4SWIFT がロールを定義します。 各部門/ロールには、受信トレイ プロファイル Web Client(PWC) によって自動的に作成します。  
+  各部門を作成すると、A4SWIFT 管理者は、対応する部門のサイト グループを手動で設定する必要があり、A4SWIFT がロールを定義します。 各部門/ロールでは、プロファイルの Web Client(PWC) によって自動的に作成された受信トレイがあります。  
   
- A4SWIFT セットアップ構成プログラムが完了した後、A4SWIFT 管理者は、組織の各部門のワークフローを構成します。 プロファイル Web クライアントを通じて、Message Repair and New Submission の構成時に、対応する受信トレイは、部門またはロールの組み合わせごとに作成されます。 など、PWC 構成中に、A4SWIFT 管理者は支払いをという名前の部門を作成し、し、支払と呼ばれる部門に作成者、Repairers、および承認者の役割を割り当てます。 MRSR サイト上のドキュメント ライブラリは、次の表の例に示すように、受信トレイ名で作成されます。  
+  A4SWIFT セットアップ構成プログラムが完了した後、A4SWIFT 管理者は、組織の各部門のワークフローを構成します。 プロファイル Web クライアントを通じて、Message Repair and New Submission の構成中に、対応する受信トレイは、部門/ロールの組み合わせごとに作成されます。 たとえば、PWC 構成中に、A4SWIFT 管理者は支払いをという名前の部署を作成しますを支払いと呼ばれる部門に作成者、Repairers、および承認者のロールを割り当てます。 MRSR サイトのドキュメント ライブラリは、次の表の例で示すように、受信トレイの名前で作成されます。  
   
 |部門名|ロール名|受信トレイ名|  
 |---------------------|---------------|----------------|  

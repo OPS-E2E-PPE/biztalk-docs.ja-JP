@@ -1,5 +1,5 @@
 ---
-title: BizTalk adapter for JD Edwards OneWorld のフロー制御 |Microsoft ドキュメント
+title: BizTalk adapter for JD Edwards OneWorld のフローの制御 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0fc5a8be6516b61c4049242952967ce939513e9c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c777d909d5ffd405caec6641ef4a50a59e66b3b9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22237978"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36978931"
 ---
 # <a name="control-flow-in-biztalk-adapter-for-jd-edwards-oneworld"></a>BizTalk Adapter for JD Edwards OneWorld の制御フロー
 このトピックでは、Microsoft BizTalk Adapter for JD Edwards OneWorld のデザイン時および実行時の制御フローについて説明します。  
@@ -37,21 +37,21 @@ ms.locfileid: "22237978"
   
  アダプターは、次の 1 つ以上の形式でアプリケーションの機能を拡張することにより、社内のアプリケーションが JD Edwards OneWorld アプリケーションと対話できるようにします。  
   
--   ネイティブなデータ形式  
+- ネイティブなデータ形式  
   
--   手順  
+- 手順  
   
--   メソッド  
+- メソッド  
   
--   メッセージ  
+- メッセージ  
   
--   [プロパティ]  
+- [プロパティ]  
   
--   アプリケーション インターフェイス  
+- アプリケーション インターフェイス  
   
- BizTalk Adapter for JD Edwards OneWorld は、実行時に、JD Edwards OneWorld と対話するクライアント アプリケーションのアプリケーション インターフェイスの説明を作成します。 アダプターは、必要に応じてビジネス オブジェクトを作成、削除、および呼び出し、アプリケーションで計算を実行して直接メソッドを呼び出すことができます。 JD Edwards OneWorld へのすべての呼び出しは同期呼び出しです。 アダプターは、BizTalk Server から XML メッセージを受信し、SOAP エンベロープにメッセージを埋め込み、SOAP メッセージから呼び出しのデータを Java タイプに変換します。  
+  BizTalk Adapter for JD Edwards OneWorld は、実行時に、JD Edwards OneWorld と対話するクライアント アプリケーションのアプリケーション インターフェイスの説明を作成します。 アダプターは、必要に応じてビジネス オブジェクトを作成、削除、および呼び出し、アプリケーションで計算を実行して直接メソッドを呼び出すことができます。 JD Edwards OneWorld へのすべての呼び出しは同期呼び出しです。 アダプターは、BizTalk Server から XML メッセージを受信し、SOAP エンベロープにメッセージを埋め込み、SOAP メッセージから呼び出しのデータを Java タイプに変換します。  
   
- この返信は、次のような同様の処理に従って送信されます。  
+  この返信は、次のような同様の処理に従って送信されます。  
   
 1.  Java タイプが SOAP メッセージに変換されます。  
   
@@ -60,7 +60,7 @@ ms.locfileid: "22237978"
 3.  XML メッセージが BizTalk Server に送信され、さらに処理されます。  
   
 ### <a name="apartment-threading-of-business-functions"></a>ビジネス関数のアパートメント スレッド  
- JD Edwards OneWorld のビジネス関数と任意のインスタンスは、その作成元または取得元のスレッドのみで使用できます。 これは呼ば*アパートメント スレッド*です。 BizTalk Adapter for JD Edwards OneWorld の接続プール フレームワークは、使用できる接続のプールを管理します。  
+ JD Edwards OneWorld のビジネス関数と任意のインスタンスは、その作成元または取得元のスレッドのみで使用できます。 これと呼ばれます*アパートメント スレッド*します。 BizTalk Adapter for JD Edwards OneWorld の接続プール フレームワークは、使用できる接続のプールを管理します。  
   
 ### <a name="connection-pooling"></a>接続のプール  
  接続プールは、サーバー システムへの接続を開いたままにし、呼び出し後に毎回閉じるのではなく再利用することにより、呼び出しのパフォーマンスを向上させます。 BizTalk Adapter for JD Edwards OneWorld を使用すると、特定のログオン ID 内で接続をプールする一方で、すべてのプールにわたる合計接続数の厳密な制御を維持できます。  
@@ -69,4 +69,4 @@ ms.locfileid: "22237978"
   
 ## <a name="see-also"></a>参照  
  [アプリケーションの開発](../core/developing-applications3.md)   
- [計画とアーキテクチャ](../core/planning-and-architecture17.md)
+ [計画および設計](../core/planning-and-architecture17.md)

@@ -1,5 +1,5 @@
 ---
-title: RFC 呼び出しの受信を WCF サービス モデルを使用して SAP で受信 |Microsoft ドキュメント
+title: WCF サービス モデルを使用して SAP で受信 RFC 呼び出しを受け取る |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,41 +15,41 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a415e3ab0ecbaab8778254d817241e5cafb61a92
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e9650567f9f2072662af7f75d735a5a647de6d10
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22218458"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37014187"
 ---
-# <a name="receive-inbound-rfc-calls-in-sap-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SAP で受信 RFC 呼び出しの受信します。
+# <a name="receive-inbound-rfc-calls-in-sap-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SAP で受信 RFC 呼び出しを受信します。
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] SAP システムによって呼び出される Rfc を受信する RFC サーバーとして機能できます。  
   
- WCF サービス モデルで、受信の Rfc を受信するには、次の必要があります。  
+ WCF サービス モデルでは、受信 Rfc を受信するには、次の必要があります。  
   
--   SAP システムで、RFC 変換先が存在することを確認します。  
+- RFC 転送先が SAP システムに存在することを確認します。  
   
--   RFC が SAP システムで定義されていることを確認します。  
+- RFC が SAP システムで定義されていることを確認します。  
   
--   アダプターによって公開されるメタデータから RFC 操作のためには、WCF サービス コントラクト (インターフェイス) を生成します。 これを行うには、使用する、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)。  
+- RFC 操作、アダプターによって公開されているメタデータからの WCF サービス コントラクト (インターフェイス) を生成します。 これを行うには、使用する、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)。  
   
--   このインターフェイスから WCF サービスを実装します。 WCF サービスのメソッドは、RFC の処理をアダプターに応答を返すために必要なロジックを含む (つまり、SAP システム)。  
+- このインターフェイスからの WCF サービスを実装します。 WCF サービスのメソッドは、RFC を処理し、アダプターに応答を返すために必要なロジックを含めることが (つまり、SAP システム)。  
   
--   サービス ホストを使用してこの WCF サービスをホスト (**System.ServiceModel.ServiceHost**)。  
+- サービス ホストを使用してこの WCF サービス ホスト (**System.ServiceModel.ServiceHost**)。  
   
- 以降のセクションを使用して SAP システムからの Rfc を受信する方法を表示、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
+  次のセクションでは、Rfc を使用して、SAP システムから受信する方法を説明、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
-## <a name="how-to-set-up-the-sap-system-to-send-an-rfc-to-the-sap-adapter"></a>RFC を SAP アダプターに送信する SAP システムを設定する方法  
- SAP システムから、RFC を送信する前に、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]次が SAP システムで該当することを確認する必要があります。  
+## <a name="how-to-set-up-the-sap-system-to-send-an-rfc-to-the-sap-adapter"></a>SAP アダプターを RFC を送信する SAP システムを設定する方法  
+ SAP システムから RFC を送信する前に、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を次が SAP システムに該当することを確認する必要があります。  
   
--   RFC 変換先、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]存在する必要があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]は自身の Rfc を SAP システムから受信するため、RFC 変換先に登録します。 SAP 接続 SAP ゲートウェイ ホスト、SAP ゲートウェイ サービス、および、アダプター自身を登録に使用する SAP プログラム ID などの URI でパラメーターを指定するとします。 SAP に、RFC 変換先をセットアップする方法については、次を参照してください。 [Create RFC、RFC 変換先、および送信の SAP システムから RFC](creating-an-rfc-in-an-sap-system.md)です。  
+- RFC 転送先の[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]存在する必要があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]自身の SAP システムから Rfc を受信する RFC 転送先を登録します。 SAP 接続、SAP ゲートウェイ ホスト、SAP ゲートウェイ サービスと、アダプター自身を登録に使用する SAP プログラム ID などの URI でパラメーターを指定します。 SAP で RFC 転送先をセットアップする方法については、次を参照してください。 [RFC を作成する、RFC 変換先、および RFC を送信する SAP システムから](creating-an-rfc-in-an-sap-system.md)します。  
   
--   SAP システムでは、RFC を定義する必要があります。 SAP システムで、RFC を定義する関数モジュールを作成する必要があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムで、RFC 定義を使用して、RFC (デザイン時および実行時に両方) に関するメタデータを取得します。 詳細については、次を参照してください。 [SAP システムで RFC を作成する](../../adapters-and-accelerators/adapter-sap/creating-an-rfc-in-an-sap-system.md)です。  
+- RFC は、SAP システムで定義する必要があります。 SAP システムに対する RFC を定義する関数モジュールを作成する必要があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] (デザイン時と実行時に両方)、RFC に関するメタデータを取得する SAP システムの RFC 定義を使用します。 詳細については、次を参照してください。 [SAP システムでの RFC を作成する](../../adapters-and-accelerators/adapter-sap/creating-an-rfc-in-an-sap-system.md)します。  
   
-    > [!NOTE]
-    >  SAP システムの RFC を定義する必要があります。ただし、RFC を実装するクライアント コードでアダプターにします。 アダプターは、RFC のメタデータを取得できるように、SAP システムで RFC を定義する必要があります。  
+  > [!NOTE]
+  >  SAP システムの RFC を定義する必要があります。ただし、RFC を実装するクライアント コードでアダプターにします。 アダプターは、RFC のメタデータを取得できるように、SAP システムで、RFC を定義する必要があります。  
   
- RFC を 2 つの整数を追加し、その結果を返しますの SAP システム上のソース コードの例を次に示します。 コードでは、指定した宛先を介して、RFC だけ呼び出します。 関数の実装は、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]クライアント コード。  
+  次は、RFC を 2 つの整数を追加し、その結果を返しますの SAP システムのソース コードの例です。 コードは、指定した変換先をだけで、RFC を呼び出します。 関数の実装は、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]クライアント コード。  
   
 ```  
 FUNCTION Z_RFC_SAMPLE_ADD.  
@@ -69,10 +69,10 @@ ENDFUNCTION.
 ```  
   
 ## <a name="the-wcf-service-contract-for-an-rfc"></a>RFC の WCF サービス コントラクト  
- 使用する、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を SAP システムから受信する Rfc に WCF サービス コントラクトを生成します。 以降のセクションでは、マネージ コード クラスと Z_RFC_MKD_ADD 操作に対して生成されたインターフェイスを表示します。  
+ 使用する、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または SAP システムから受信する Rfc を WCF サービス コントラクトを生成する ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)。 次のセクションでは、マネージ コード クラスと Z_RFC_MKD_ADD 操作用に生成するインターフェイスを示します。  
   
 ### <a name="the-rfc-interface-wcf-service-contract"></a>Rfc インターフェイス (WCF サービス コントラクト)  
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] "Rfc"、1 つのサービス コントラクトでのすべての RFC 操作を表示します。 つまり、1 つのインターフェイス**Rfc**のすべての受信する RFC 操作が作成されます。 RFC 操作の各ターゲットは、このインターフェイスのメソッドとして表されます。 各メソッドには、単一のパラメーターを操作の要求メッセージのメッセージ コントラクトを表します。 操作の応答メッセージのメッセージ コントラクトを表すオブジェクトを返します。  
+ [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] "Rfc"、1 つのサービス契約の RFC 操作をすべて明らかになります。 つまり、1 つのインターフェイス**Rfc**のすべての受信する RFC 操作が作成されます。 RFC 操作の各ターゲットは、このインターフェイスのメソッドとして表されます。 各メソッドは、操作の要求メッセージのメッセージ コントラクトを表し、操作の応答メッセージのメッセージ コントラクトを表すオブジェクトを返しますが、1 つのパラメーターを受け取ります。  
   
 ```  
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]  
@@ -86,8 +86,8 @@ public interface Rfc {
   
 ```  
   
-### <a name="the-request-and-response-messages"></a>要求および応答メッセージ  
- RFC の各操作は、要求メッセージを表し、応答メッセージを表すオブジェクトを取得するパラメーターを受け取ります。 要求メッセージのプロパティは、インポートおよび rfc (入力) の変化させるパラメーターを格納します。 応答メッセージのプロパティは、エクスポートを含めるし、(出力) 操作のパラメーターを変更します。  
+### <a name="the-request-and-response-messages"></a>要求と応答メッセージ  
+ RFC の各操作は、要求メッセージを表し、応答メッセージを表すオブジェクトを返しますパラメーターを受け取ります。 要求メッセージのプロパティには、インポートおよび RFC の (入力) 変更するパラメーターが含まれます。 応答メッセージのプロパティは、エクスポートを含み、(出力) 操作のパラメーターを変更します。  
   
 ```  
 [System.Diagnostics.DebuggerStepThroughAttribute()]  
@@ -132,7 +132,7 @@ public partial class Z_RFC_MKD_ADDResponse {
 ```  
   
 ### <a name="the-generated-wcf-service"></a>生成された WCF サービス  
- [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]もで WCF サービス コントラクトを実装する WCF サービスが生成されます (**Rfc**)。 このクラスのメソッドがスタブとして作成します。 このクラスは、別のファイルに生成されます。 このクラスのメソッド内で直接コードを実装できます。  
+ [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF サービス コントラクトを実装する WCF サービスも生成されます (**Rfc**)。 このクラスのメソッドがスタブとして作成されました。 このクラスは、別のファイルに生成されます。 このクラスのメソッドに直接コードを実装できます。  
   
 ```  
 namespace SAPBindingNamespace {  
@@ -148,9 +148,9 @@ namespace SAPBindingNamespace {
 ```  
   
 ## <a name="how-to-create-an-rfc-server-application"></a>RFC サーバー アプリケーションを作成する方法  
- SAP システムからの Rfc を受信するには、WCF サービス モデルを使用して、する」の手順を行うことができる[SAP アダプターで WCF サービス モデルの概要](../../adapters-and-accelerators/adapter-sap/overview-of-the-wcf-service-model-with-the-sap-adapter.md)です。 必ず、サービス エンドポイント (の作成と WCF サービスを実装する手順の手順 6) を追加するときに、サービス コントラクトの 'Rfc' を指定してください。  
+ Rfc を WCF サービス モデルを使用して SAP システムから受信するには」の手順に従ってできます[SAP アダプターを使用した WCF サービス モデルの概要](../../adapters-and-accelerators/adapter-sap/overview-of-the-wcf-service-model-with-the-sap-adapter.md)します。 必ずサービス エンドポイント (プロシージャを作成および WCF サービスを実装するための手順 6) を追加するときに、サービス コントラクトの 'Rfc' を指定してください。  
   
- 次のコードを使用して SAP システムから、Z_RFC_MKD_RFC を受信する方法の完全な例を示しています、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。 この RFC では、2 つの整数パラメーターを SAP システムに、結果を返します。  
+ 次のコードを使用して、SAP システムから、Z_RFC_MKD_RFC を受信する方法の完全な例を示しています、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 この RFC は、2 つの整数パラメーターを受け取り、SAP システムに結果を返します。  
   
 ```  
 using System;  

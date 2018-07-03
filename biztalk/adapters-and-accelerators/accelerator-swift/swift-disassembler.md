@@ -1,5 +1,5 @@
 ---
-title: SWIFT 逆アセンブラー |Microsoft ドキュメント
+title: SWIFT 逆アセンブラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,37 +16,37 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac0024abe862f777e7ee798991d97845ec5098a9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 25c389e10a48287ef87495b32fe2d69644a8259e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214186"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010923"
 ---
 # <a name="swift-disassembler"></a>SWIFT 逆アセンブラー
-入力方向の受信パイプラインに送信されたすべてのメッセージの処理、 [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] (受信場所で受信した) アプリケーションです。  
+パイプラインは、受信処理に送信されたすべてのメッセージ、[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]アプリケーション (受信場所で受信済み)。  
   
- BizTalk の受信処理に関連する論理実行段階は受信パイプラインです。 パイプライン コンポーネントは、サービスまたは、各ステージを実装します。 具体的には、逆アセンブラーは、受信パイプラインの逆アセンブル ステージをサービスします。 A4SWIFT は、SWIFT 固有のメッセージにカスタム逆アセンブラー コンポーネントで処理機能を提供します。  
+ で、BizTalk の受信処理に関連する論理実行段階では、パイプラインが表示されます。 パイプライン コンポーネントは、サービスまたは各ステージを実装します。 具体的には、逆アセンブラーは、受信パイプラインの逆アセンブル ステージをサービスします。 A4SWIFT は、SWIFT 固有のメッセージにカスタム逆アセンブラー コンポーネントで処理機能を提供します。  
   
- SWIFT の逆アセンブラー、カスタムのフラット ファイル逆アセンブラーは、SWIFT メッセージの受信と、バッチ処理の機能を提供し、次の機能を実行します。  
+ SWIFT 逆アセンブラー、独自のフラット ファイル逆アセンブラーは、SWIFT メッセージの受信と、バッチ処理するための機能を提供し、次の関数を実行します。  
   
--   動的にメッセージの種類を検出し、ドキュメント スキーマの解決  
+- 動的にメッセージの種類を検出し、ドキュメント スキーマの解決  
   
--   XML に SWIFT のフラット ファイルを解析します。  
+- XML に SWIFT のフラット ファイルを解析します。  
   
--   XML (スキーマ) 検証を実行するリーダーを検証する XML を呼び出します  
+- XML (スキーマ) 検証を実行するにはリーダーを検証する XML を呼び出します  
   
--   BRE の検証を実行するビジネス ルール エンジン (BRE) を呼び出します  
+- BRE の検証を実行するビジネス ルール エンジン (BRE) を呼び出します  
   
--   解析された XML メッセージを公開します、メッセージ ボックス データベースに昇格されたコンテキスト プロパティと XML のシリアル化されたエラー収集  
+- 昇格されたコンテキスト プロパティと XML のシリアル化されたエラー コレクションを付けて MessageBox データベースに解析された XML メッセージを発行します。  
   
--   処理し、受信バッチを逆アセンブル  
+- 処理し、受信バッチを逆アセンブル  
   
- 次の図は、逆アセンブラーの迅速なデータ フローです。  
+  次の図に、SWIFT 逆アセンブラーのデータ フローです。  
   
- ![](../../adapters-and-accelerators/accelerator-swift/media/fsa-intro2.gif "FSA_Intro2")  
+  ![](../../adapters-and-accelerators/accelerator-swift/media/fsa-intro2.gif "FSA_Intro2")  
   
- SWIFT の逆アセンブラの詳細については、次を参照してください。 [SWIFT 逆アセンブラおよびアセンブラ扱う](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)です。  
+  SWIFT 逆アセンブラーの詳細については、次を参照してください。 [SWIFT 逆アセンブラーとアセンブラー](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)します。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk Accelerator for SWIFT のランタイム](../../adapters-and-accelerators/accelerator-swift/biztalk-accelerator-for-swift-runtime.md)
+ [BizTalk Accelerator for SWIFT ランタイム](../../adapters-and-accelerators/accelerator-swift/biztalk-accelerator-for-swift-runtime.md)

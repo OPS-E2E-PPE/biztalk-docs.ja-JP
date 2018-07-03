@@ -1,5 +1,5 @@
 ---
-title: メッセージ セキュリティを実装する |Microsoft ドキュメント
+title: メッセージ セキュリティの実装 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,32 +12,32 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84c0430b0a8edd0c241706047886f395515c853f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ae25a8e09b6e9aa8f4b5cef7b6dc5365a601e7de
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256498"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37001187"
 ---
 # <a name="implementing-message-security"></a>メッセージ セキュリティの実装
 署名および暗号化されたメッセージの送受信に証明書を使用するように Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境を構成できます。 BizTalk Server では、暗号化およびデジタル署名用の証明書を使用することで次の処理が可能になります。  
   
--   信頼できるデータを送受信できます。  
+- 信頼できるデータを送受信できます。  
   
--   処理するデータの安全性を確保できます。  
+- 処理するデータの安全性を確保できます。  
   
--   承認されたパーティにメッセージを確実に送信できます。  
+- 承認されたパーティにメッセージを確実に送信できます。  
   
--   承認されたパーティからメッセージを確実に受信できます。  
+- 承認されたパーティからメッセージを確実に受信できます。  
   
- ここでは、BizTalk Server パイプライン、受信場所、ポート、および BizTalk Server 環境を構成してメッセージ セキュリティを実装する方法について説明します。  
+  ここでは、BizTalk Server パイプライン、受信場所、ポート、および BizTalk Server 環境を構成してメッセージ セキュリティを実装する方法について説明します。  
   
- メッセージ セキュリティの詳細については、次を参照してください。[メッセージ セキュリティの計画](../core/planning-message-security.md)です。  
+  メッセージ セキュリティの詳細については、次を参照してください。[メッセージ セキュリティの計画](../core/planning-message-security.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [暗号化されたメッセージを送受信します。](../core/sending-and-receiving-encrypted-messages.md)  
+-   [暗号化されたメッセージの送受信](../core/sending-and-receiving-encrypted-messages.md)  
   
--   [署名付きメッセージを送受信します。](../core/sending-and-receiving-signed-messages.md)  
+-   [署名付きメッセージの送受信](../core/sending-and-receiving-signed-messages.md)  
   
--   [パーティの解決の証明書の使用](../core/using-certificates-for-party-resolution.md)
+-   [パーティの解決での証明書の使用](../core/using-certificates-for-party-resolution.md)

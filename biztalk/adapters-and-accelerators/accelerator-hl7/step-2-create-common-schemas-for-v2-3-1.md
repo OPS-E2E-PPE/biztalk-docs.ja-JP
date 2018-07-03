@@ -1,5 +1,5 @@
 ---
-title: '手順 2: V2.3.1 用の共通のスキーマの作成 |Microsoft ドキュメント'
+title: '手順 2: V2.3.1 の一般的なスキーマを作成する |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,46 +15,46 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5f8ed36b4a1ae8553e8df488e8fd5a606c0eabd
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: e6331538a3dd46dcd45d63bcbdbc3b8f19b2c531
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25960992"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995411"
 ---
 # <a name="step-2-create-common-schemas-for-v231"></a>手順 2: V2.3.1 の一般的なスキーマを作成します。
 V2.3.1 スキーマは、頻繁に参照されるスキーマは、メッセージ インスタンスの検証に使用します。  
   
-### <a name="to-create-a-common-schema-for-v231"></a>V2.3.1 の共通のスキーマを作成するには  
+### <a name="to-create-a-common-schema-for-v231"></a>V2.3.1 の一般的なスキーマを作成するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**新規**、クリックして**プロジェクト**です。  
+1. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], の **ファイル** メニューをポイント **新規**, 、クリックして **プロジェクト**します。  
   
-2.  新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**セクションで、展開**BizTalk プロジェクト**、し、[ **BTAHL7Projects**です。  
+2. 新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**セクションで、展開**BizTalk プロジェクト**、し、[ **BTAHL7Projects**します。  
   
-3.  テンプレート セクションで、 **BTAHL7V231Common プロジェクト**です。  
+3. [テンプレート] セクションで**BTAHL7V231Common プロジェクト**します。  
   
-4.  **名前**ボックスに、入力**BTAHL7V231Common プロジェクト**プロジェクト名として。  
+4. **名前**ボックスに、入力**BTAHL7V231Common プロジェクト**プロジェクト名として。  
   
-5.  **ソリューション**ボックスで、**ソリューションに追加**です。  
+5. **ソリューション**ボックスで、**ソリューションに追加**します。  
   
-6.  **[OK]** をクリックします。  
+6. **[OK]** をクリックします。  
   
-    > [!NOTE]
-    >  ソリューション エクスプ ローラーで、3 つのスキーマ (datatypes_231.xsd、segments_231.xsd、および tablevalues_231.xsd) は、プロジェクトに含まれます。  
+   > [!NOTE]
+   >  ソリューション エクスプ ローラーでプロジェクトの 3 つのスキーマ (datatypes_231.xsd、segments_231.xsd、および tablevalues_231.xsd) が含まれます。  
   
-7.  ソリューション エクスプ ローラーで右クリック**BTAHL7V231Common プロジェクト**、クリックして**プロパティ**です。  
+7. ソリューション エクスプ ローラーで右クリックして**BTAHL7V231Common プロジェクト**、 をクリックし、**プロパティ**します。  
   
-8.  BTAHL7V231Common プロパティ ページで、をクリックして**署名**です。  
+8. BTAHL7V231Common プロパティ ページで、次のようにクリックします。**署名**します。  
   
 9. 選択、**アセンブリに署名**チェック ボックスをオンします。  
   
-10. **厳密な名前キー ファイルを選択して** **\<を参照しています.\>** .  
+10. **厳密な名前キー ファイルを選択して**を選択します**\<を参照しています.\>** .  
   
-11. 参照\<ドライブ\>: \Batching チュートリアルでは、選択**key.snk**、クリックして**開く**です。  
+11. 参照\<ドライブ\>: \Batching チュートリアルでは、選択**key.snk**、 をクリックし、**オープン**します。  
   
-12. ソリューション エクスプ ローラーで右クリック**BTAHL7V231Common プロジェクト**、クリックして**展開**です。 成功メッセージが出力ウィンドウに表示を確認します。  
+12. ソリューション エクスプ ローラーで右クリックして**BTAHL7V231Common プロジェクト**、 をクリックし、**デプロイ**します。 成功メッセージが出力ウィンドウに表示を確認します。  
   
     > [!NOTE]
-    >  使用して、適切なメッセージが表示されない場合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]スキーマをトラブルシューティングします。  
+    >  適切なメッセージが表示されない場合は、使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]スキーマのトラブルシューティングを行う。  
   
- 進みます[手順 3: トリガー イベント (メッセージ) スキーマを追加](../../adapters-and-accelerators/accelerator-hl7/step-3-add-a-trigger-event-message-schema.md)です。
+    続行する[手順 3: トリガー イベント (メッセージ) スキーマを追加](../../adapters-and-accelerators/accelerator-hl7/step-3-add-a-trigger-event-message-schema.md)します。

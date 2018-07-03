@@ -1,5 +1,5 @@
 ---
-title: WCF LOB Adapter SDK のチュートリアルの Prequisities |Microsoft ドキュメント
+title: WCF LOB Adapter SDK のチュートリアルの Prequisities |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,52 +12,52 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e16ba0911026508a40f234456c0b5d379f69bc4d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d9e0f1959563b0a0f1273de6341e2402f90f8f34
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224082"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995451"
 ---
-# <a name="prequisities-for-the-wcf-lob-adapter-sdk-tutorials"></a>WCF LOB Adapter SDK のチュートリアルについて Prequisities
-このセクションでは、それらを完了するために必要なソフトウェアと同様に、チュートリアルを最大限に慣れておく必要がありますの概念について説明します。  
+# <a name="prequisities-for-the-wcf-lob-adapter-sdk-tutorials"></a>WCF LOB Adapter SDK のチュートリアルの Prequisities
+このセクションでは、それらを完了するために必要なソフトウェアと同様に、チュートリアルを最大限に慣れておく必要がある概念について説明します。  
   
-## <a name="what-to-install"></a>新機能をインストールする  
- チュートリアルを開始するには、コンピューターにインストールされている次のソフトウェアが必要です。  
+## <a name="what-to-install"></a>インストールします。  
+ チュートリアルを開始するには、コンピューターにインストールされている、次のソフトウェアが必要です。  
   
--   [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]
+- [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]
   
--   インターネット インフォメーション サービス (IIS)  
+- インターネット インフォメーション サービス (IIS)  
   
--   [!INCLUDE[btsDotNetFramework_md](../../includes/btsdotnetframework-md.md)]
+- [!INCLUDE[btsDotNetFramework_md](../../includes/btsdotnetframework-md.md)]
   
--   [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)](BizTalk Server のインストール ファイル、および名前付き ASDK_x64、ASDK_x86 で使用可能)  
+- [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] (BizTalk Server インストール ファイル、および名前付き ASDK_x64 と ASDK_x86 で使用可能)  
   
- チュートリアル 3 を完了するには、コンピューターにインストールされている次のソフトウェアが必要です。  
+  チュートリアル 3 を完了するには、コンピューターにインストールされている、次のソフトウェアが必要です。  
   
--   Microsoft SharePoint  
+- Microsoft SharePoint  
   
--   Microsoft SharePoint SDK  
+- Microsoft SharePoint の SDK  
   
 > [!CAUTION]
 >  実稼働環境では、これらのチュートリアルを実行しません。  
   
-完了したエコー アダプターが、BizTalk のインストール ファイルに含まれる`\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples`または`\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`です。
+完了したエコー アダプターので、BizTalk のインストール ファイルに含まれている`\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples`または`\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`します。
   
 ## <a name="prerequisites"></a>前提条件  
- チュートリアルでは、次のように熟知するいると仮定します。  
+ チュートリアルでは、次のようにについて理解しているものとします。  
   
--   オブジェクト指向のソフトウェアの設計と開発  
+- オブジェクト指向のソフトウェアの設計と開発  
   
--   Windows Communication Foundation (WCF) は、具体的には、モデルのプログラミングのチャネルし、モデルのプログラミングをサービス  
+- Windows Communication Foundation (WCF) は、具体的には、モデルのプログラミングのチャネルし、モデルのプログラミングをサービス  
   
--   XSD、XML、WSDL、および Web サービス記述言語 (WSDL) と API 間のリレーションシップ  
+- XSD、XML、WSDL、および Web サービス記述言語 (WSDL) と API 間のリレーションシップ  
   
--   C# プログラミング言語  
+- C# プログラミング言語  
   
--   .NET Framework  
+- .NET Framework  
   
- チュートリアルを開始する前にことが便利な場合はこの SDK の概念説明のトピックを確認し、チャネルでの一般的な知識がある[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]、内の型を含む、 **T:Microsoft.ServiceModel.Channels**と**T:Microsoft.ServiceModel.Channels.Common**名前空間。  チャネルの詳細については、次を参照してください。、[チャネル モデルの概要](https://msdn.microsoft.com/library/ms729840.aspx)です。  
+  チュートリアルを開始する前にことが便利な場合は、この SDK の概念説明のトピックを確認し、チャネルでの基本的な知識がある[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]、内の型を含む、 **T:Microsoft.ServiceModel.Channels**と**T:Microsoft.ServiceModel.Channels.Common**名前空間。  チャネルの詳細については、次を参照してください。、[チャネル モデルの概要](https://msdn.microsoft.com/library/ms729840.aspx)します。  
   
 ## <a name="see-also"></a>参照  
- [WCF LOB Adapter SDK を説明するチュートリアル](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorials-to-learn-the-wcf-lob-adapter-sdk.md)
+ [WCF LOB Adapter SDK についてのチュートリアル](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorials-to-learn-the-wcf-lob-adapter-sdk.md)

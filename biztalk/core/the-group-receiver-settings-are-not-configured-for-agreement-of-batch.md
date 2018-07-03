@@ -1,5 +1,5 @@
 ---
-title: バッチのアグリーメントのグループの受信者設定が構成されていません |Microsoft ドキュメント
+title: グループの受信者設定がバッチのアグリーメント構成されていません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ea41ad5c8de88e446a86745b57ff282d5b90af5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 534d426d192e27bbe7c6c7e866399b42360a8e3a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279074"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36990643"
 ---
 # <a name="the-group-receiver-settings-are-not-configured-for-agreement-of-batch"></a>バッチのアグリーメントにグループの受信者設定が構成されていません
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|バッチ処理エンジン|  
-|シンボル名|GroupReceiverNotSelected|  
-|メッセージ テキスト|バッチ {0} のアグリーメントは、グループの受信者設定は構成されていません。 バッチ処理を続行する前にこの設定を構成する必要があります。|  
+|                 |                                                                                                                                     |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                         [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                          |
+| 製品バージョン |                                     [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                      |
+|    イベント ID     |                                                                  -                                                                  |
+|  イベント ソース   |                       [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                        |
+|    コンポーネント    |                                                           バッチ処理エンジン                                                           |
+|  シンボル名  |                                                      GroupReceiverNotSelected                                                       |
+|  メッセージ テキスト   | グループの受信者設定がバッチのアグリーメント構成されていない{0}します。 バッチ処理を続行する前にこの設定を構成する必要があります。 |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、2 つの状態のいずれか 1 つが発生したことを示します。  

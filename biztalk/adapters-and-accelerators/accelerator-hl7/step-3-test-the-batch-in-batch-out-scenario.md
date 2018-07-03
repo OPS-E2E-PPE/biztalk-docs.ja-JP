@@ -1,5 +1,5 @@
 ---
-title: '手順 3: テストのシナリオをバッチ内にバッチ |Microsoft ドキュメント'
+title: '手順 3: テストのシナリオをバッチ内に Batch |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,42 +12,42 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d84c34eb3019f83ecd28f30425a93708affcecb2
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: dcbbed83d8828aeb7169ea5fcdbe11ad343c353e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "25960800"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36999371"
 ---
-# <a name="step-3-test-the-batch-inbatch-out-scenario"></a>手順 3: テストのバッチ処理/シナリオをバッチ処理
-この手順では、バッチをテストでバッチをチュートリアルでのバッチ処理のテスト インスタンスの削除/フォルダーにメッセージをバッチ処理/です。 送信ポートを設定するにはメッセージを送信、受信ポートによって受信されます、および受信パイプラインが処理され、コピー先のフォルダーにドロップします。  
+# <a name="step-3-test-the-batch-inbatch-out-scenario"></a>手順 3: テストのバッチ処理/バッチ アウト シナリオ
+この手順では、バッチをテストで/バッチ アウト チュートリアル で、バッチ内のテスト インスタンスを削除/フォルダーにメッセージをバッチ処理します。 送信ポートを設定することは、メッセージを送信、受信ポートによって受信されます、および受信パイプラインが処理され、コピー先のフォルダーにドロップします。  
   
-### <a name="to-test-the-batch-inbatch-out-scenario"></a>バッチのテストでシナリオをバッチ処理/  
+### <a name="to-test-the-batch-inbatch-out-scenario"></a>バッチをテストするで/バッチ アウト シナリオ  
   
-1.  使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、  **\<*ドライブ*\>: \Batching Tutorial\Instances**フォルダーです。  
+1. 使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、  **\<*ドライブ*\>: \Batching Tutorial\Instances**フォルダー。  
   
-2.  右クリックして**BatchInBatchOut.txt**、クリックして**コピー**です。  
+2. 右クリックして**BatchInBatchOut.txt**、 をクリックし、**コピー**します。  
   
-3.  参照、  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator HL7\SDK\End エンドツー エンド Tutorial\Tutorial_BTAHL7PickUp for**フォルダーです。  
+3. 参照、  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator HL7\SDK\End ツー エンド Tutorial\Tutorial_BTAHL7PickUp for**フォルダー。  
   
-4.  フォルダーを右クリックし、をクリックして**貼り付け**です。  
+4. フォルダーを右クリックし、**貼り付け**します。  
   
-### <a name="to-verify-the-results-of-the-batch-inbatch-out-tutorial"></a>バッチの結果を確認するでチュートリアルをバッチ処理/  
+### <a name="to-verify-the-results-of-the-batch-inbatch-out-tutorial"></a>バッチの結果を確認するに/バッチ アウトのチュートリアル  
   
--   使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End エンドツー エンドのアクセラレータTutorial\Tutorial_BTAHL7Drop**フォルダーです。 短時間後に、バッチ メッセージおよび受信確認の処理済みのインスタンスを参照してください、フォルダーに表示する必要があります。 これらが表示されない場合は、確認、[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]イベント ビューアで、エラー メッセージ。 各ファイル形式で別の名前を持つ必要があります\< *Guid*\>.txt です。  
+- 使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、参照、  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End ツー エンドのアクセラレータTutorial\Tutorial_BTAHL7Drop**フォルダー。 短時間では後は、必要があります、バッチ メッセージおよび受信確認の処理済みのインスタンスを参照してください、フォルダーに表示されます。 確認して、表示されない場合、[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]イベント ビューアーにエラー メッセージ。 各ファイルが別の名前をフォーム\< *Guid*\>.txt します。  
   
-     最初のメッセージは、2 つのメッセージで構成されるバッチにする必要があります。 BizTalk Accelerator 用 HL7 (BTAHL7) は .txt ファイルでこれら 2 つのメッセージを順番に含まれます。 このバッチでは、FHS/FTS と BHS/BTS タグは含まれません。 バッチは、タグを含めるかすべて FHS/FTS および BHS/BTS、か、このバッチ メッセージ、FHS/FTS、BHS/BTS タグがないなどの必要があります。  
+   2 つのメッセージで構成されるバッチの最初のメッセージがあります。 BizTalk Accelerator 用 HL7 (BTAHL7) は .txt ファイルでこれら 2 つのメッセージを順番に含めるは。 このバッチは FHS/FTS と BHS/BTS タグは含まれません。 バッチは、タグを含む、すべて FHS/FTS および BHS/BTS、かなどのバッチ メッセージをこの、FHS/FTS BHS/BTS タグがありません必要があります。  
   
-    |MSH.9|MSH.10|MSH.3|MSH.5|  
-    |-----------|------------|-----------|-----------|  
-    |ADT^A03|000001|Tutorial_BatchSource|MESA_IS|  
-    |ADT^A03|000002|Tutorial_BatchSource|MESA_IS|  
+  |MSH.9|MSH.10|MSH.3|MSH.5|  
+  |-----------|------------|-----------|-----------|  
+  |ADT ^ A03|000001|Tutorial_BatchSource|MESA_IS|  
+  |ADT ^ A03|000002|Tutorial_BatchSource|MESA_IS|  
   
-     2 番目のメッセージは、バッチ メッセージと、次のフィールドへの応答で送信される 1 つのアプリケーションの受信確認をする必要があります。  
+   2 番目のメッセージは、次のフィールドで、バッチ メッセージへの応答で送信される 1 つのアプリケーションの受信確認をする必要があります。  
   
-    |MSH.9|MSH.3|MSH.5|MSA.1|MSA.2|  
-    |-----------|-----------|-----------|-----------|-----------|  
-    |ACK^A03^ACK|MESA_IS|Tutorial_BatchSource|AA|000001|  
+  |MSH.9|MSH.3|MSH.5|MSA.1|MSA.2|  
+  |-----------|-----------|-----------|-----------|-----------|  
+  |ACK ^ A03 ^ ACK|MESA_IS|Tutorial_BatchSource|AA|000001|  
   
 ## <a name="see-also"></a>参照  
  [パート 1: 断片化した受信バッチのシナリオ](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)   

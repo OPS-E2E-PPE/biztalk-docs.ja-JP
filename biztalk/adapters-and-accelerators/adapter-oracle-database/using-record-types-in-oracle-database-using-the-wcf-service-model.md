@@ -1,5 +1,5 @@
 ---
-title: WCF サービス モデルを使用して Oracle データベースで操作を使用してレコードの種類を実行 |Microsoft ドキュメント
+title: WCF サービス モデルを使用して Oracle データベースでの操作を使用してレコードの種類の実行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,29 +15,29 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3de78290e29c4c1ddc1465e8a9463a6e9d7b86f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5fd9bda9fc560310a882c5d48117cd823d544453
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216258"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37004475"
 ---
 # <a name="run-operations-using-record-types-in-oracle-database-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle データベースでの操作を使用してレコードの種類の実行します。
-Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに渡されるパラメーターで階層的な情報を表すために使用されます。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]複雑な XML 型としてレコードの種類を表示します。 WCF サービス モデルでは、レコードの種類が厳密に型指定された .NET クラスを逆シリアル化します。 レコードのフィールドは、クラスのプロパティとして表されます。  
+Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに渡されるパラメーターで階層的な情報を表すために使用されます。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェスの複雑な XML 型としてレコードの種類。 WCF サービス モデルでは、レコードの種類が厳密に型指定された .NET クラスに逆シリアル化します。 レコードのフィールドは、クラスのプロパティとして表されます。  
   
  [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]次の種類のレコードの種類をサポートしています。  
   
--   ストアド プロシージャおよび関数では、テーブル %rowtype パラメーターとして宣言されているレコードの種類。  
+- ストアド プロシージャおよび関数でテーブル %rowtype パラメーターとして宣言されているレコードの種類。  
   
--   たとえば、PL/SQL パッケージ内のレコードの型パラメーターとして宣言されているレコードの種類`TYPE rec_type1 IS RECORD(name varchar2(100), age number(3));`  
+- たとえば、PL/SQL パッケージ内のレコードの型パラメーターとして宣言されているレコードの種類 `TYPE rec_type1 IS RECORD(name varchar2(100), age number(3));`  
   
--   入れ子になったレコードを含むレコードの種類。  
+- 入れ子になったレコードを含むレコードの種類。  
   
--   レコードに表示される型として、OUT、またはプロシージャまたは関数への OUT パラメーターです。  
+- OUT、IN として表示されるレコードの種類またはプロシージャまたは関数への OUT パラメーター。  
   
--   関数の戻り値は、レコードの種類。  
+- 関数の戻り値であるレコードの種類。  
   
- このトピックでは、WCF サービス モデルでのレコードの種類の表現方法を示します。 Oracle プロシージャと関数を呼び出す方法については、次を参照してください。[関数の呼び出しと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)です。  
+  このトピックでは、WCF サービス モデルでのレコードの種類の表示方法を示します。 Oracle プロシージャと関数を呼び出す方法については、次を参照してください。[関数を呼び出すと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)します。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
  このトピックの例では、SCOTT/ACCOUNT_PKG Oracle の PL/SQL パッケージを使用します。 ACCOUNT_PKG から、次の要素が使用されます。  
@@ -52,27 +52,27 @@ TYPE acctinfo_rec_type IS RECORD (acct account%ROWTYPE, address address_rec_type
 FUNCTION get_accountinfo(aid NUMBER) RETURN acctinfo_rec_type;  
 ```  
   
- このパッケージを生成するスクリプトがで提供される、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]サンプルです。 詳細については、スクリプトを参照してください。  
+ このパッケージを生成するスクリプトが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]サンプル。 詳細については、スクリプトを参照してください。  
   
- サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)です。  
+ サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
   
-## <a name="record-types-in-the-wcf-service-model"></a>WCF サービスのモデル内のレコードの種類  
- Oracle のレコードの種類は、複雑な XML 型として表されます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。 モデルでは、WCF サービス、複雑な XML 型が、クラスによって表され、このクラスのプロパティは、Oracle のレコードの種類のフィールドを表すです。 パッケージ (存在する場合) および関数またはプロシージャのスキーマ修飾の名前空間では、レコード型のパラメーターを表すクラスが生成されます。 この名前空間は、関数やパラメーターのプロシージャを一意に識別します。 次の名前空間での Oracle パッケージ ACCOUNT_PKG CREATE_ACCOUNT プロシージャに、レコード型のパラメーターを作成するなど、:`microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.CREATE_ACCOUNT`です。 プロシージャおよび関数の複合型を表すため、WCF サービス モデルで使用される名前空間の詳細については、次を参照してください。[関数の呼び出しと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)です。  
+## <a name="record-types-in-the-wcf-service-model"></a>WCF サービス モデル内のレコードの種類  
+ Oracle のレコードの種類は、複雑な XML 型として表されます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 WCF サービス モデルで複雑な XML 型が、クラスによって表され、このクラスのプロパティは、Oracle のレコードの種類のフィールドを表します。 レコード型のパラメーターを表すクラスは、関数またはプロシージャのスキーマとパッケージ (ある場合) に限定されている名前空間に生成されます。 この名前空間には、関数またはプロシージャ パラメーターの一意に識別します。 次の名前空間での Oracle パッケージの ACCOUNT_PKG CREATE_ACCOUNT プロシージャにレコードの型パラメーターを作成するなど。`microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.CREATE_ACCOUNT`します。 プロシージャおよび関数での複合型を表すために WCF サービス モデルで使用する名前空間の詳細については、次を参照してください。[関数を呼び出すと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)します。  
   
- レコード型のパラメーターの名前空間は、プロシージャまたは関数によって決まりますが、レコード型のパラメーターに対して生成されるクラスの名前はレコードの種類が宣言されることによって決まります。 次の表は、Oracle レコード型のパラメーターを宣言する 2 つの異なる方法に基づいて、クラスの名前を生成する方法を示します。  
+ レコード型のパラメーターの名前空間は、プロシージャまたは関数によって決まりますが、レコードの種類が宣言されているレコードの型パラメーターに対して生成されたクラスの名前がところで決定されます。 次の表は、Oracle のレコードの型パラメーターを宣言することの 2 つの方法に基づいて、クラスの名前を生成する方法を示します。  
   
-|Oracle レコードの種類|名前|例|  
+|Oracle のレコードの種類|名前|例|  
 |------------------------|----------|-------------|  
-|テーブル % の ROWTYPE プロシージャまたは関数パラメーター|[PARAMETER_NAME]レコード|ACCTRECORD|  
-|レコードのパッケージ パラメーターの型|[PACKAGE_NAME][RECORD_TYPE_NAME]レコード|ACCOUNT_PKGACCTINFO_REC_TYPERECORD|  
+|テーブル %rowtype のプロシージャまたは関数のパラメーター|[パラメーター名]レコード|ACCTRECORD|  
+|レコードのパッケージのパラメーターの型|[PACKAGE_NAME][RECORD_TYPE_NAME]レコード|ACCOUNT_PKGACCTINFO_REC_TYPERECORD|  
   
- [PARAMETER_NAME]; プロシージャまたは関数のパラメーターの名前を =例については、累積  
+ [パラメーター名]; プロシージャまたは関数のパラメーターの名前を =たとえば、アカウント  
   
- [PACKAGE_NAME]、Oracle パッケージの名前を = です。  
+ [PACKAGE_NAME] = Oracle パッケージの名前。  
   
  [RECORD_TYPE_NAME]; レコードの種類の宣言で指定された名前を =たとえば、ACCTINFO_REC_TYPE です。  
   
- 次のコードは、2 つの Oracle 関数に対して生成される WCF クライアントのメソッド シグネチャを示しています。 /SCOTT/Package/ACCOUNT_PKG/CREATE_ACCOUNT 関数は、2 つ単純なレコード型のパラメーターを受け取るし、/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNTINFO 関数が入れ子になった 2 つのレコード型を含むレコード型のパラメーターを返します。 Oracle 関数宣言は、コードの先頭でインクルードされます。 各関数のパラメーターは一意の名前空間によって修飾されます。  
+ 次のコードでは、2 つの Oracle 関数に対して生成された WCF クライアントのメソッド シグネチャを示します。 /SCOTT/Package/ACCOUNT_PKG/CREATE_ACCOUNT 関数は 2 つ単純なレコードで、型パラメーターを受け取り、/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNTINFO 関数が入れ子になった 2 つのレコード型を含むレコードの型パラメーターを返します。 Oracle 関数の宣言は、コードの先頭に含まれています。 各関数のパラメーターは、一意の名前空間によって修飾されます。  
   
 ```  
 FUNCTION create_account(acct IN ACCOUNT%ROWTYPE, addr IN address_rec_type) RETURN NUMBER;  
@@ -88,9 +88,9 @@ public partial class SCOTTPackageACCOUNT_PKGClient : System.ServiceModel.ClientB
 }  
 ```  
   
- 次のコードは、CREATE_ACCOUNT 関数のパラメーターに対して生成されたクラスを示しています。`FUNCTION create_account(acct IN ACCOUNT%ROWTYPE, addr IN address_rec_type) RETURN NUMBER;`  
+ 次のコードは、CREATE_ACCOUNT 関数のパラメーターに対して生成されたクラスを示しています。 `FUNCTION create_account(acct IN ACCOUNT%ROWTYPE, addr IN address_rec_type) RETURN NUMBER;`  
   
- この関数はテーブル %rowtype で宣言されたパラメーターと型のレコードのパッケージ型で宣言されたパラメーター (`TYPE acctinfo_rec_type IS RECORD (acct account%ROWTYPE, address address_rec_type);`)。  
+ この関数はテーブル %rowtype で宣言されたパラメーターおよびパッケージの種類のレコード型で宣言パラメーター (`TYPE acctinfo_rec_type IS RECORD (acct account%ROWTYPE, address address_rec_type);`)。  
   
 ```  
 namespace microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.CREATE_ACCOUNT {  
@@ -107,7 +107,7 @@ namespace microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.CRE
 ```  
   
 ### <a name="representation-of-a-simple-record-type"></a>単純なレコード型の表現  
- 次のコードでは、WCF サービス モデルでの単純なレコード型の表現方法を示します。 このコードでは、展開されたビューの**ACCOUNTRECORD** CREATE_ACCOUNT 関数では、アカウント %rowtype パラメーターを表すクラスです。 このクラスでは、レコードのフィールド (行の列) はプロパティとして表されます。  
+ 次のコードでは、単純なレコードの種類を WCF サービス モデルで表現する方法を示します。 このコードの展開ビューを示しています、 **ACCOUNTRECORD** CREATE_ACCOUNT 関数では、アカウント %rowtype パラメーターを表すクラスです。 このクラスでは、レコードのフィールド (行の列) はプロパティとして表されます。  
   
 ```  
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]  
@@ -164,7 +164,7 @@ public partial class ACCTRECORD : object, System.Runtime.Serialization.IExtensib
 ```  
   
 ### <a name="representation-of-a-record-type-that-contains-nested-records"></a>入れ子になったレコードを含むレコード型の表現  
- 次のコードでは、入れ子になったレコードを含むレコード型の表現を示します。 この特定のレコードの種類は GET_ACCOUNTINFO 関数の戻り値 (`FUNCTION get_accountinfo(aid NUMBER) RETURN acctinfo_rec_type;`)。 ACCTINFO_REC_TYPE は型のレコードの構造を使用して宣言されているパッケージのパラメーター (`TYPE acctinfo_rec_type IS RECORD (acct account%ROWTYPE, address address_rec_type);`)。 2 つの入れ子になったの単純なレコードの種類、テーブル % の行のレコードおよびパッケージの種類のレコードが含まれています。 これら 2 つの単純なレコードは、レコードが親と同じ名前空間で宣言され、予期される名前付け規則に従ってください。  
+ 次のコードでは、入れ子になったレコードを格納するレコード型の表現を示します。 この特定のレコードの種類は GET_ACCOUNTINFO 関数の戻り値 (`FUNCTION get_accountinfo(aid NUMBER) RETURN acctinfo_rec_type;`)。 ACCTINFO_REC_TYPE タイプのレコードの構造を使用して宣言されているパッケージのパラメーターは、(`TYPE acctinfo_rec_type IS RECORD (acct account%ROWTYPE, address address_rec_type);`)。 2 つの単純なレコードを入れ子になった型、テーブル % の行のレコードおよびレコードの種類、パッケージが含まれています。 これら 2 つの単純なレコードは、親レコードと同じ名前空間で宣言され、予期される名前付け規則に従ってください。  
   
 ```  
 namespace microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.GET_ACCOUNTINFO {  
@@ -212,12 +212,12 @@ namespace microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.GET
 ```  
   
 ## <a name="using-record-types-in-your-code"></a>コード内のレコードの種類を使用します。  
- レコードの種類を使用して、コードでは簡単です。 レコード型パラメーターを持つ関数またはプロシージャを呼び出すには、レコード型または型のインスタンスを作成し、WCF クライアントで、適切なメソッドに渡すことです。 プロシージャまたは関数から返されるすべての出力のプロパティを読み取ることができますまたは IN OUT パラメーターまたは関数の戻り値の値を場合は、レコードの種類として宣言されます。 WCF サービス モデルを使用してプロシージャと関数を呼び出す方法の詳細については、次を参照してください。[関数の呼び出しと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)です。  
+ レコードの種類を使用して、コードでは簡単です。 レコード型のパラメーターを持つ関数またはプロシージャを呼び出すには、レコード型または型のインスタンスを作成し、WCF クライアントで、適切なメソッドに渡すことです。 プロシージャまたは関数から返される任意の出力のプロパティを読み取ることができます、IN OUT パラメーターまたは関数の戻り値または場合は、レコードの種類として宣言されます。 WCF サービス モデルを使用してプロシージャと関数を呼び出す方法の詳細については、次を参照してください。[関数を呼び出すと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)します。  
   
 > [!IMPORTANT]
->  Oracle のレコード型のパラメーター (と関数の戻り値) は、関数、プロシージャ、およびパッケージ) の名前空間によって修飾されます。 これは、次の 2 つの別のプロシージャまたは関数で使用されているレコードの種類が各プロシージャまたは関数の別の名前空間を持つことを意味します。 特定のプロシージャまたは関数を使用するときにレコードの種類を正しく修飾することを確認する必要があります。 たとえば、パッケージは次の 2 つの異なる関数を IN パラメーターとして使用するレコードの種類です (レコードの種類の宣言) は、関数ごとに生成される一意の名前空間に対応する各宣言に 2 回、WCF クライアント コードで宣言されます。 それぞれの各関数に渡すパラメーターの正しい名前空間を使用することを確認する必要があります。  
+>  Oracle のレコード型のパラメーター (と関数の戻り値) は、その関数またはプロシージャ (、およびパッケージ) の名前空間によって修飾されます。 これは、2 つの別のプロシージャまたは関数で使用されているレコードの種類が各プロシージャまたは関数の別の名前空間にあることを意味します。 特定のプロシージャまたは関数を使用する場合は、レコードの種類を正しく修飾するためを確認する必要があります。 たとえば、パッケージに 2 つの異なる関数を IN パラメーターとして使用されるレコードの種類 (レコードの種類の宣言) が各関数に対して生成された一意の名前空間に対応する各宣言に WCF クライアント コードで 2 回宣言されます。 それぞれの各関数に渡すパラメーターで、正しい名前空間を使用することを確認する必要があります。  
   
- 次の例では、CREATE_ACCOUNT 関数は 2 つの単純なレコード パラメーターを使用して呼び出されます。 次に、GET_ACCOUNTINFO 関数が呼び出されます。 この関数は、入れ子になったレコードが含まれているレコードの種類を返します。 返されたレコードの値は、コンソールに書き込まれます。 フィールドを選択します。 この例から Oracle データベースの資格情報を設定して、WCF クライアントを開く手順が省略されています。  
+ 次の例では、2 つの単純なレコード パラメーター CREATE_ACCOUNT 関数が呼び出されます。 次に、GET_ACCOUNTINFO 関数が呼び出されます。 この関数は、入れ子になったレコードを含むレコードの種類を返します。 選択したフィールドが、返されるレコードの値は、コンソールに書き込まれます。 手順を実行する Oracle データベースの資格情報を設定し、WCF クライアントを開くには、この例から省略されます。  
   
 ```  
 // Add WCF, WCF Adapter LOB SDK, and Oracle Database adapter namepaces  

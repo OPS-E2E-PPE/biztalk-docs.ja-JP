@@ -1,5 +1,5 @@
 ---
-title: BAM 警告の実行を管理する |Microsoft ドキュメント
+title: BAM 警告の実行の管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5607bed785ee4f91a341b546dbe81ec39458c4e1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6d8dca3f99480b6875253eb6aca102977935160b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262562"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37021984"
 ---
 # <a name="managing-bam-alert-execution"></a>BAM 警告の実行の管理
 BAM 警告の実行は、BAM ポータル、BAM 管理ユーティリティ、および ProcessBamNSFiles.vbs スクリプトの 3 つの方法で変更できます。  
@@ -30,7 +30,7 @@ BAM 警告の実行は、BAM ポータル、BAM 管理ユーティリティ、�
 ## <a name="bam-portal"></a>BAM ポータル  
  ナレッジ ワーカーおよび管理者は、警告の配信方法を BAM ポータルの警告マネージャーを使用して変更できます。 BAM ポータルからは、警告の有効と無効の切り替え、しきい値レベルの変更、配信場所の変更を実行できます。また、警告の実行に影響を与えるようなその他の操作も実行できます。  
   
- 警告の変更の詳細については、次を参照してください。 [、BAM ポータル ページの警告マネージャー](../core/alert-manager-on-the-bam-portal-page.md)と[BAM ポータルでアラート](../core/alerts-in-the-bam-portal.md)です。  
+ アラートを変更する方法の詳細については、次を参照してください。 [BAM ポータル ページで、警告マネージャー](../core/alert-manager-on-the-bam-portal-page.md)と[BAM ポータルのアラート](../core/alerts-in-the-bam-portal.md)します。  
   
 ### <a name="bam-management-utility"></a>BAM 管理ユーティリティ  
  管理者は、BAM 管理ユーティリティを使用して、警告の有効化、無効化、および削除を実行できます。  
@@ -44,17 +44,17 @@ BAM 警告の実行は、BAM ポータル、BAM 管理ユーティリティ、�
 -   [BAM 警告を削除する方法](../core/how-to-remove-bam-alerts.md)  
   
 ### <a name="modifying-notification-services-configuration-files"></a>Notification Services 構成ファイルの変更  
- 管理者は、ProcessBamNSFiles.vbs スクリプトを使用して、Notification Services で警告を配信する方法を変更できます。 詳細については、アプリケーション定義ファイル (ADF) for Notification Services を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=127016](http://go.microsoft.com/fwlink/?LinkId=127016)です。  
+ 管理者は、ProcessBamNSFiles.vbs スクリプトを使用して、Notification Services で警告を配信する方法を変更できます。 Notification Services の詳細については、アプリケーション定義ファイル (ADF)、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=127016](http://go.microsoft.com/fwlink/?LinkId=127016)します。  
   
  BAM に関連付けられた ADF を変更するには、次の一般的な手順を実行します。  
   
-1.  スクリプトを実行して、現在の構成ファイルと ADF ファイルを入手します。  
+1. スクリプトを実行して、現在の構成ファイルと ADF ファイルを入手します。  
   
-2.  ファイルを変更します。  
+2. ファイルを変更します。  
   
-3.  スクリプトを実行して、変更を適用します。  
+3. スクリプトを実行して、変更を適用します。  
   
- ProcessBamNSFiles.vbs スクリプトの詳細については、次を参照してください。 [Notification Services の構成ファイル用の BAM コマンド ライン スクリプト](../core/bam-command-line-script-for-notification-services-configuration-files.md)です。  
+   ProcessBamNSFiles.vbs スクリプトの詳細については、次を参照してください。[通知サービス構成ファイル用の BAM コマンド ライン スクリプト](../core/bam-command-line-script-for-notification-services-configuration-files.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BAM ポータルの管理](../core/managing-the-bam-portal.md)   

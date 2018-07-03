@@ -1,5 +1,5 @@
 ---
-title: メッセージ ボックス データベースを削除する方法 |Microsoft ドキュメント
+title: メッセージ ボックス データベースを削除する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a12c74bfef8d6afec15b0c83f520eb4be43696c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2a025ea29e13ef938a39f9555785177f2c64e922
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22250066"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37023600"
 ---
 # <a name="how-to-delete-a-messagebox-database"></a>メッセージ ボックス データベースを削除する方法
 BizTalk グループからメッセージ ボックス データベースを削除するには、BizTalk 管理コンソールまたは Windows Management Instrumentation (WMI) を使用します。 メッセージ ボックス データベースは BizTalk グループから削除するか、または BizTalk Server の展開から完全に削除することができます。  
@@ -32,11 +32,11 @@ BizTalk グループからメッセージ ボックス データベースを削�
   
 1.  新しいメッセージの公開を無効にします。  
   
-     メッセージ ボックス データベースを削除する前に、新しいメッセージの公開を無効にする必要があります。 新しいメッセージの公開を無効にする方法については、次を参照してください。[新しいメッセージの公開を無効にする方法](../core/how-to-disable-new-message-publication.md)です。  
+     メッセージ ボックス データベースを削除する前に、新しいメッセージの公開を無効にする必要があります。 新しいメッセージの公開を無効にする方法については、次を参照してください。[新しいメッセージの公開を無効にする方法](../core/how-to-disable-new-message-publication.md)します。  
   
 2.  キャッシュ更新間隔に指定した時間が経過するまで待ちます。  
   
-     新しいメッセージの公開を無効にした後、データベースをすぐに削除することはできず、待機時間が発生します。 待機時間は、CacheRefreshInterval の 2 倍の長さとして定義されています。 CacheRefreshInterval の既定値は 60 秒です。 使用する、**グループのプロパティ**キャッシュ更新間隔を変更するダイアログ ボックス。  
+     新しいメッセージの公開を無効にした後、データベースをすぐに削除することはできず、待機時間が発生します。 待機時間は、CacheRefreshInterval の 2 倍の長さとして定義されています。 CacheRefreshInterval の既定値は 60 秒です。 使用する、**グループ プロパティ**キャッシュ更新間隔を変更するダイアログ ボックス。  
   
 3.  BizTalk グループからメッセージ ボックス データベースを削除します。  
   
@@ -44,9 +44,9 @@ BizTalk グループからメッセージ ボックス データベースを削�
   
 4.  削除したメッセージ ボックス データベースへのキャッシュされた接続を含むホスト インスタンスを再起動します。  
   
-     ホスト インスタンスにランタイム エンジンからキャッシュされたデータベースへの接続がある場合、データベースを SQL Server から物理的に削除する前に、ホスト インスタンスを再起動する必要があります。 ホスト インスタンスの開始方法の詳細については、次を参照してください。[ホスト インスタンスを起動する方法](../core/how-to-start-a-host-instance.md)です。  
+     ホスト インスタンスにランタイム エンジンからキャッシュされたデータベースへの接続がある場合、データベースを SQL Server から物理的に削除する前に、ホスト インスタンスを再起動する必要があります。 ホスト インスタンスの開始方法の詳細については、次を参照してください。[ホスト インスタンスを開始する方法](../core/how-to-start-a-host-instance.md)します。  
   
-5.  データベースにアクセスする、実行中のホスト インスタンスをすべて停止します。 実行中のホスト インスタンスを停止する方法については、次を参照してください。[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)です。  
+5.  データベースにアクセスする、実行中のホスト インスタンスをすべて停止します。 実行中のホスト インスタンスを停止する方法の詳細については、次を参照してください。[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)します。  
   
      プライマリ以外のメッセージ ボックス データベースを削除する場合は、実行中のホスト インスタンスを停止する前に、そのメッセージ ボックスへの新しいメッセージの公開を無効にして、次の点を確認する必要があります。  
   
@@ -79,23 +79,23 @@ BizTalk グループからメッセージ ボックス データベースを削�
   
 ### <a name="to-delete-a-messagebox-database-from-a-biztalk-group"></a>BizTalk グループからメッセージ ボックス データベースを削除するには  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2.  コンソール ツリーで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)][BizTalk グループ]、をクリックして**プラットフォームの設定**、クリックして**メッセージ ボックス**です。  
+2. コンソール ツリーで、展開[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)][BizTalk グループ]、をクリックして**プラットフォームの設定**、 をクリックし、**メッセージ ボックス**します。  
   
-3.  詳細ウィンドウで、削除、およびをクリックする、メッセージ ボックス データベースを右クリックして**プロパティ**です。  
+3. 詳細ウィンドウで、削除、およびクリックするメッセージ ボックス データベースを右クリックして**プロパティ**します。  
   
-4.  **メッセージ ボックスのプロパティ**ダイアログ ボックスで、**新しいメッセージの公開を無効にする**チェック ボックスをオンします。  
+4. **メッセージ ボックスのプロパティ**ダイアログ ボックスで、**新しいメッセージの公開を無効にする**チェック ボックスをオンします。  
   
-5.  BizTalk Server 管理コンソールの [グループ ハブ] ページを使用して、削除するメッセージ ボックス データベースに退避または中断されたメッセージ インスタンスがないことを確認します。  
+5. BizTalk Server 管理コンソールの [グループ ハブ] ページを使用して、削除するメッセージ ボックス データベースに退避または中断されたメッセージ インスタンスがないことを確認します。  
   
-6.  CacheRefreshInterval の 2 倍 の長さの時間待機します。 CacheRefreshInterval の既定値は 60 秒です。  
+6. CacheRefreshInterval の 2 倍 の長さの時間待機します。 CacheRefreshInterval の既定値は 60 秒です。  
   
-7.  詳細ウィンドウで、削除、およびをクリックする、メッセージ ボックス データベースを右クリックして**削除**です。  
+7. 詳細ウィンドウで、削除、およびをクリックするメッセージ ボックス データベースを右クリックして**削除**します。  
   
-8.  警告メッセージを読み、をクリックして**OK**です。  
+8. 警告メッセージを読み、次のようにクリックします。 **OK**します。  
   
-9. コンソール ツリーで、[BizTalk グループ]、をクリックして**プラットフォームの設定**、クリックして**ホスト インスタンス**です。  
+9. コンソール ツリーで BizTalk グループ、をクリックして**プラットフォームの設定**、 をクリックし、**ホスト インスタンス**します。  
   
 10. 詳細ペインで、実行中のホスト インスタンスを右クリックし、停止してから再起動します (この操作は、実行中のすべてのホスト インスタンスに対して行います)。  
   
