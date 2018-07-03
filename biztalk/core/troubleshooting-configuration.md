@@ -1,5 +1,5 @@
 ---
-title: 構成のトラブルシューティング |Microsoft ドキュメント
+title: 構成のトラブルシューティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 37
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e523c5c992ea422e6fe81f3c0d948db7007bcdb1
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: f79f2d2ec9e87a22d07802f52b063f279d65ab8a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975992"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973195"
 ---
 # <a name="troubleshooting-configuration"></a>構成のトラブルシューティング
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成プログラムは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] を実行する 1 つ以上のコンピューター上にデータベースを作成し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が使用するテーブル、ロール、およびストアド プロシージャをそのデータベースに格納して、実行時に使用される .NET アセンブリを BizTalk 管理データベースに展開します。  
@@ -25,14 +25,14 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
  このセクションでは、構成エラーを解決するためのトラブルシューティング手法について説明します。 一般的な構成の問題とその解決方法の一覧も含まれています。  
   
 ## <a name="configuration-logging"></a>構成のログ記録  
- 構成プログラムが既定で実行しているコンピューターの一時ディレクトリに格納されている構成ログ ファイルに詳細な情報を書き込みます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 TEMP 環境変数によって指定されているフォルダーを確認するには、そのコンピューターでコマンド プロンプトを開き、次のコマンドを入力して、Enter キーを押します。  
+ 構成プログラムが既定で実行しているコンピューターの一時ディレクトリに格納されている構成ログ ファイルに詳細な情報を書き込みます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 TEMP 環境変数によって指定されているフォルダーを確認するには、そのコンピューターでコマンド プロンプトを開き、次のコマンドを入力して、Enter キーを押します。  
   
  **エコー %temp%**  
   
- 構成ログ ファイルの内容は、実行された構成手順の概要と、構成処理中に発生した疑いのあるエラーに関する診断情報です。 構成エラーが発生した場合メモ帳などのテキスト エディターでは、構成ログを開くし、エラーの考えられる原因のログ ファイルを確認します。  
+ 構成ログ ファイルの内容は、実行された構成手順の概要と、構成処理中に発生した疑いのあるエラーに関する診断情報です。 構成エラーが発生した場合、メモ帳などのテキスト エディターでは、構成ログを開くし、エラーの考えられる原因は、ログ ファイルを確認してください。  
   
 ## <a name="troubleshooting-tools"></a>トラブルシューティング ツール  
- SQL Server プロファイラー、Filemon、または Regmon を使用して、構成エラーに関する追加情報を収集します。 これらのツールの詳細については、次を参照してください。[トラブルシューティングに使用するツールとユーティリティ](../core/tools-and-utilities-to-use-for-troubleshooting.md)です。  
+ SQL Server プロファイラー、Filemon、または Regmon を使用して、構成エラーに関する追加情報を収集します。 これらのツールの詳細については、次を参照してください。[トラブルシューティングのために使用するツールとユーティリティ](../core/tools-and-utilities-to-use-for-troubleshooting.md)します。  
   
 ## <a name="known-issues"></a>既知の問題  
   
@@ -45,15 +45,15 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
  関数: FieldInfoCreate  
   
- -または-  
+ - または -  
   
  シングル サインオン (SSO) サービスの有効化に失敗しました (エラー コード 0X800706BA)  
   
 ##### <a name="cause"></a>原因  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] が別のコンピューターにインストールされている場合、構成操作は分散トランザクション コーディネーター (MSDTC) トランザクションのコンテキストで行われます。このため、それらのコンピューターの間のネットワークで MSDTC 機能を利用可能にする必要があります。 かどうか MSDTC 機能は使用できませんを実行しているコンピューター間でネットワーク経由で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]し、このエラーが発生することができます。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] が別のコンピューターにインストールされている場合、構成操作は分散トランザクション コーディネーター (MSDTC) トランザクションのコンテキストで行われます。このため、それらのコンピューターの間のネットワークで MSDTC 機能を利用可能にする必要があります。 実行するコンピューター間のネットワークで MSDTC 機能は利用でできないかどうか[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]し、このエラーが発生することができます。  
   
 ##### <a name="resolution"></a>解決策  
- 手順に従います[MSDTC の問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)を実行しているコンピューター間のネットワークで MSDTC 機能を確認[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]です。  
+ 次の手順では、 [MSDTC を使用した問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)を実行するコンピューター間のネットワークで MSDTC 機能を[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。  
   
 #### <a name="antivirus-software-interferes-with-configuration-and-causes-configuration-failures"></a>ウイルス対策ソフトウェアの干渉によって構成エラーが発生する  
   
@@ -61,7 +61,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
  ウイルス対策ソフトウェアによって構成プログラムが誤ってウイルスと判断されると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の構成が失敗します。  
   
 ##### <a name="cause"></a>原因  
- 含める、ウイルス対策ソフトウェアが更新されていない、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成プログラムが正当な (ウイルスではない) プログラムです。  
+ ウイルス対策ソフトウェアが更新されていない、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]正当な (ウイルスではない) プログラムとしてプログラムを構成します。  
   
 ##### <a name="resolution"></a>解決策  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成プログラムが正当な (ウイルスではない) プログラムとして認識されるようにウイルス対策プログラムを構成するか、構成プログラムを実行する間、ウイルス対策ソフトウェアを一時的に無効にします。  
@@ -73,9 +73,9 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
  BizTalk システム アセンブリ "C:\Program Files\Microsoft\" を展開できませんでした。  
   
- BizTalk Server 2009\Microsoft.BizTalk.DefaultPipelines.dll です。 [未指定]  
+ BizTalk Server 2009\Microsoft.BizTalk.DefaultPipelines.dll します。 [未指定]  
   
- 例外: ファイルまたはアセンブリ名 filename.dll、またはのいずれかの  
+ 例外: ファイルまたはアセンブリ名 filename.dll、またはいずれか、  
   
  依存関係の 1 つが見つかりませんでした。 ファイルまたはアセンブリ名 FileName.dll、または  
   
@@ -85,7 +85,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
  このエラーは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を実行しているコンピューターの一時フォルダーに対する書き込みアクセス許可がネットワーク サービス アカウントにない場合に発生します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の構成では、構成の間に .NET アセンブリを BizTalk 管理データベースに展開するために Windows Management Instrumentation (WMI) が使用されます。 WMI はこれらのアセンブリを BizTalk 管理データベースに展開する際にネットワーク サービス アカウントを借用するため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を実行しているコンピューターの一時フォルダーに対する書き込みアクセス許可がネットワーク サービス アカウントに必要です。  
   
 ##### <a name="resolution"></a>解決策  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を実行しているコンピューターの一時フォルダーに対する書き込みアクセス許可をネットワーク サービス アカウントに与えてから、再度構成プログラムを実行します。 TEMP 環境変数で指定されているフォルダーを特定するのには、コンピューターでコマンド プロンプトを開き、次のコマンドを入力およびし、ENTER キーを押します。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を実行しているコンピューターの一時フォルダーに対する書き込みアクセス許可をネットワーク サービス アカウントに与えてから、再度構成プログラムを実行します。 TEMP 環境変数で指定されているフォルダーを決定するには、コンピューターでコマンド プロンプトを開き、次のコマンドを入力し、ENTER キーを押します。  
   
 ```  
 echo %TEMP%  
@@ -168,19 +168,19 @@ echo %TEMP%
 ##### <a name="resolution"></a>解決策  
  以下の手順を手動で実行し、分析サーバーを新しいコンピューター名で更新します。  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft SQL Server**、 をポイント**Analysis Services**をクリックして**分析マネージャー**です。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft SQL Server**、 をポイント**Analysis Services**をクリックして**分析マネージャー**します。  
   
-2.  **分析マネージャー**ナビゲーション ペインをダブルクリックして、 **Analysis Servers**ノードを展開します。  
+2.  **分析マネージャー**ナビゲーション ウィンドウで、ダブルクリックして、**分析サーバー**ノードを展開します。  
   
-3.  クリックして、編集するリポジトリ接続文字列を使用してサーバーを右クリックして**リポジトリ接続文字列の編集**です。  
+3.  リポジトリ接続文字列を編集して、選択すると、サーバーを右クリックして**リポジトリ接続文字列の編集**します。  
   
-4.  **リポジトリ接続文字列の編集** ダイアログ ボックスで、この文字列内でサーバー名を確認しが正しくない場合、新しいコンピューター名を更新します。  
+4.  **リポジトリ接続文字列の編集** ダイアログ ボックスでこの文字列内のサーバー名を確認しが正しくない場合、新しいコンピューター名を更新します。  
   
-5.  次の場所に移動: \<*インストール ディレクトリ*\>\Program Files\Microsoft Analysis services \bin です。  
+5.  次の場所に移動します: \<*インストール ディレクトリ*\>\Program Files\Microsoft Analysis services \bin です。  
   
-6.  右クリックし、 **Bin**フォルダー、およびクリック**共有とセキュリティ**です。 **Bin のプロパティ** ダイアログ ボックスが表示されます。  
+6.  右クリックし、 **Bin**フォルダー、およびクリック**共有とセキュリティ**します。 **Bin のプロパティ** ダイアログ ボックスが表示されます。  
   
-7.  **Bin のプロパティ**ダイアログ ボックスで、をクリックして、**共有**タブをすべてのオンライン分析処理 (OLAP) 管理者が完全なアクセス許可をこのフォルダーにあることを確認します。  
+7.  **Bin のプロパティ**ダイアログ ボックスで、をクリックして、**共有** タブに、すべてのオンライン分析処理 (OLAP) 管理者が完全なアクセス許可をこのフォルダーにあることを確認します。  
   
 #### <a name="artifacts-disappear-from-configuration-database-on-redeployment-of-assemblies-from-visual-studio"></a>Visual Studio からアセンブリを再展開すると構成データベースからアイテムが消える  
   
@@ -190,46 +190,46 @@ echo %TEMP%
 ##### <a name="cause"></a>原因  
  この問題の原因を示すために、ユーザーが Maps プロジェクトを再展開しようとしているサンプル BizTalk Server ソリューションに基づく例について考えてみます。 プロジェクトをコンパイルすると個々のアセンブリが生成されます。 次の図は、ユーザーが再展開を行う前のソリューションの状態を示しています。 アイテム間の関係は次のようになっています。  
   
--   Orch1、Orch2、Maps、Pipelines、および Schemas はプロジェクトです。  
+- Orch1、Orch2、Maps、Pipelines、および Schemas はプロジェクトです。  
   
--   Orch1 は Maps を参照し、Maps は Schemas を参照しています。  
+- Orch1 は Maps を参照し、Maps は Schemas を参照しています。  
   
--   Orch2 は Schemas を参照しています。  
+- Orch2 は Schemas を参照しています。  
   
--   Pipelines は Schemas を参照しています。  
+- Pipelines は Schemas を参照しています。  
   
- ![](../core/media/bcd-existingbiztalkserversolutionc.gif "bcd_ExistingBizTalkServerSolutionc")  
+  ![](../core/media/bcd-existingbiztalkserversolutionc.gif "bcd_ExistingBizTalkServerSolutionc")  
   
- ユーザーが Visual Studio の既定のプロジェクト設定を使用して Maps プロジェクトを再展開すると、次の図のように、Orch1、Orch2、および Pipeline の各アイテムが消えてしまいます。  
+  ユーザーが Visual Studio の既定のプロジェクト設定を使用して Maps プロジェクトを再展開すると、次の図のように、Orch1、Orch2、および Pipeline の各アイテムが消えてしまいます。  
   
- ![](../core/media/bcd-biztalksolutionwlostartifactsc.gif "bcd_BizTalkSolutionWLostArtifactsc")  
+  ![](../core/media/bcd-biztalksolutionwlostartifactsc.gif "bcd_BizTalkSolutionWLostArtifactsc")  
   
- Maps の再展開は、現在展開されている Maps.dll アセンブリの展開を解除して、新しい Maps.dll ファイルを展開する、2 段階のプロセスです。 Visual Studio は、再展開プロセスの一部として自動的にこれらの手順を実行します。  
+  Maps の再展開は、現在展開されている Maps.dll アセンブリの展開を解除して、新しい Maps.dll ファイルを展開する、2 段階のプロセスです。 Visual Studio は、再デプロイ プロセスの一環として自動的に次の手順を実行します。  
   
 > [!NOTE]
 >  前の文は厳密には正しくありません。というのも、これらの手順は Visual Studio で常に行われるものなので、正しく行われているかどうかを意識することはありません。  
   
  ここで重要な点は、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] が BizTalk Server アセンブリの展開を解除するためには、そのアセンブリに依存しているすべての (展開フラグが設定されている) アセンブリの展開を解除しなければならないということです。 この例で言うと、再展開の最初の展開解除の手順を実行するには、BizTalk Server が Orch1.dll (Maps.dll に依存している) の展開を解除する必要があります。 Maps.dll の展開を解除する際、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] は Schemas.dll の展開も解除します (展開フラグが設定されている場合)。 Schemas.dll の展開を解除するには、Orch2.dll と Pipelines.dll (いずれも Schemas.dll に依存している) の展開を解除する必要があります。  
   
- 問題が存在する[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]Maps.dll とそれが依存するアセンブリのみを再配置: この場合は Schemas.dll します。 そのため、ユーザーが BizTalk Server MMC を更新すると、Orch1、Orch2、および Pipeline の各アセンブリが消えたように見えますが、Maps.dll と Schemas.dll は引き続き表示されます。  
+ 問題の存在を[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]Maps.dll とそれが依存するアセンブリのみを再デプロイ: この場合は Schemas.dll します。 そのため、ユーザーが BizTalk Server MMC を更新すると、Orch1、Orch2、および Pipeline の各アセンブリが消えたように見えますが、Maps.dll と Schemas.dll は引き続き表示されます。  
   
 ##### <a name="resolution"></a>解決策  
  メイン プロジェクト (他のプロジェクトを参照しているプロジェクト) に対して次の手順を実行します。  
   
 1.  ソリューション エクスプローラーで、ソリューション ノードを右クリックします。  
   
-2.  をクリックして**プロパティ**を開くには、**ソリューション プロパティ ページ** ダイアログ ボックス。  
+2.  クリックして**プロパティ**を開く、**ソリューション プロパティ ページ** ダイアログ ボックス。  
   
-3.  をクリックして**構成プロパティ**、クリックして**構成**です。  
+3.  をクリックして**構成プロパティ**、 をクリックし、**構成**します。  
   
-4.  クリア、**展開**参照プロジェクトのチェック ボックスです。  
+4.  クリア、**デプロイ**参照先のプロジェクトのチェック ボックス。  
   
-5.  ソリューション エクスプローラーで、新しいソリューション レベルの展開を実行します。 これを行うには、ソリューション ノードを右クリックし、をクリックして**ソリューションの配置**です。  
+5.  ソリューション エクスプローラーで、新しいソリューション レベルの展開を実行します。 これを行うには、ソリューション ノードを右クリックし をクリックし、**ソリューションの配置**します。  
   
 #### <a name="supported-virtual-directory-types"></a>サポートされている仮想ディレクトリのタイプ  
- 関連付けられている仮想ディレクトリが型の場合にのみエクスポート操作は成功 MSI のエクスポートを実行しようと、オーケストレーションから Web サービスを参照する、ときに**IIsWebVirtualDir**または**IIsWebDirectory**. **IIsWebVirtualDir**と**IIsWebDirectory** IIS メタベースに表示するノード型です。 **IIsWebVirtualDir**の仮想ディレクトリ、**パス**絶対ファイル フォルダーを指すプロパティです。 **IIsWebDirectory**なしの仮想ディレクトリ、**パス**プロパティ別のサブフォルダーでは通常、相対ファイル フォルダーを参照および**IIsWebVirtualDir**または**IIsWebDirectory**ノード。 メタベース階層でフォルダーを表すものとしてはこの 2 つのタイプが一般的です。  
+ 関連付けられている仮想ディレクトリが型の場合にのみ、エクスポート操作は成功を MSI のエクスポートを実行しようと、オーケストレーションから Web サービスを参照するときに**IIsWebVirtualDir**または**IIsWebDirectory**. **IIsWebVirtualDir**と**IIsWebDirectory**は IIS メタベースに表示されるノードの種類。 **IIsWebVirtualDir**の仮想ディレクトリ、**パス**絶対ファイル フォルダーを指すプロパティ。 **IIsWebDirectory**仮想ディレクトリでは、**パス**プロパティ別のサブフォルダーでは通常、相対ファイル フォルダーを参照および**IIsWebVirtualDir**または**IIsWebDirectory**ノード。 メタベース階層でフォルダーを表すものとしてはこの 2 つのタイプが一般的です。  
   
- 型の仮想ディレクトリ**IIsConfigObject**はサポートされていませんし、MSI のエクスポートはここでは失敗します。 **IIsConfigObject**が BizTalk Server が正しく処理されないか、有効なノード型では予期しないメタベース ノード タイプか、正しく作成されていない (およびしたがって無効な) メタベース エントリを示す値。 このような状況では、BizTalk Server によって、次のようなエラー メッセージが示されます。 種類 IIsConfigObject の予期しないディレクトリ エントリ"IIS://LM/W3SVC/1/ROOT/BadVdir/"です。  
+ 型の仮想ディレクトリ**IIsConfigObject**はサポートされていませんし、この場合、MSI のエクスポートは失敗します。 **IIsConfigObject**が、予期しないメタベース ノード タイプは BizTalk Server が正しく処理されないか、有効なノード型か、正しく作成されていない (およびしたがって無効な) メタベース エントリを示す値。 このような状況では、BizTalk Server によって次のようエラー メッセージが表示されます: 予期しないディレクトリ エントリ"IIS://LM/W3SVC/1/ROOT/BadVdir/"種類 IIsConfigObject します。  
   
 #### <a name="unable-to-view-group-information-after-removing-stale-logons"></a>古いログオンを削除するとグループ情報を表示できなくなる  
   

@@ -1,5 +1,5 @@
 ---
-title: 送信アダプターの処理中の MLLP |Microsoft ドキュメント
+title: MLLP 送信アダプターの処理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,85 +16,85 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1644d699014f23ce90568034c4bd90f6f0c7b099
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 396905f9b4cc8c1ebb0dbd1d3051b6f40566662a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207530"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36971915"
 ---
 # <a name="mllp-send-adapter-processing"></a>MLLP 送信アダプターの処理
-最小限の下位層プロトコル (MLLP) 送信アダプターは、次の構成で、一方向と双方向トランスポート モードをサポートします。  
+最小限の下位レイヤー プロトコル (MLLP) 送信アダプターでは、次の構成で一方向と双方向トランスポート モードをサポートしています。  
   
 -   双方向の送信請求-応答送信アダプター  
   
 -   一方向の送信アダプターの受信確認 (Ack) を受信するように構成  
   
--   戻り値メッセージが表示されない用に構成された一方向の送信アダプター  
+-   一方向の送信アダプターが構成されている戻りメッセージが表示されません。  
   
-## <a name="two-way-solicit-response-send-mllp-adapter"></a>双方向の送信請求-応答送信 MLLP アダプター  
- True のエンド ツー エンド同期シナリオでは、このアダプタを使用します。 そのため、このアダプターは、1 つの送信先パーティにのみ使用できます。 送信アダプターは、リモート パーティ (URL) に対して開いている接続を継続的に維持要求の応答を返信メッセージをルーティングするまでは、ポートを受信します。 要求応答/送信請求-応答処理のアーキテクチャの次の図を参照してください。  
+## <a name="two-way-solicit-response-send-mllp-adapter"></a>双方向の送信請求-応答送信の MLLP アダプター  
+ エンド ツー エンドの真の同期シナリオでは、このアダプターを使用します。 そのため、このアダプターは、1 つの送信先パーティでのみ使用できます。 送信アダプターはリモート パーティ (URL) に対して開いている接続を維持して継続的に要求の応答を返信メッセージにルーティングされるまで受信ポート。 要求応答/送信請求-応答処理のアーキテクチャの次の図を参照してください。  
   
- このアダプタを使用する場合は、ACK または応答メッセージを基幹業務アプリケーションに返されるシステムに送信できます。 これを行うと、確認をルーティング送信パイプラインに要求-応答受信ポートでの設定、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー。 ACK を取得するには、このプロパティを選択するかを返す応答会議の選択を解除します。  
+ このアダプタを使用する場合は、ACK または応答メッセージを基幹業務アプリケーションに返されるシステムに送信できます。 そのためには受信確認をルーティングする送信パイプラインで要求-応答受信ポートの設定、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー。 ACK を返すには、このプロパティを選択するかを返す応答の会議の選択を解除します。  
   
- このアダプターを使用して送信ポートには、元のメッセージが正常に送信されたら[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]そのメッセージを削除します。 この送信ポートに関連付けられている受信パイプラインは ACK を生成していません BizTalk では、その応答の MSA2 フィールドの値に関係なく、ソース アプリケーションへのクエリ応答を転送します。  
+ このアダプターを使用して送信ポートには、元のメッセージが正常に送信されたら[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]そのメッセージを削除します。 この送信ポートに関連付けられている受信パイプラインに ACK が生成されます。 BizTalk では、その応答の MSA2 フィールドの値に関係なく、ソース アプリケーションに、クエリの応答を転送します。  
   
-## <a name="one-way-send-mllp-adapter-configured-to-receive-acks"></a>一方向の送信 MLLP アダプターの Ack を受信するように構成  
- このアダプターは、同じソケット接続で、元のメッセージを送信し、受信場所に Ack を配信ことで、Ack を受信します。 送信アダプターは、の待機中のメッセージがない場合でも継続的に、リモート パーティ (URL) に対して開いている接続を維持[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]に送信します。 いくつかのポートは、同じリモート パーティを指している、送信アダプターによって送信ポートごとに 1 つの接続が保持されます。  
+## <a name="one-way-send-mllp-adapter-configured-to-receive-acks"></a>一方向の送信の MLLP アダプターに Ack を受信するように構成  
+ このアダプターは、同じソケット接続、元のメッセージを送信し、Ack を受信場所に配信することで、Ack を受信します。 送信アダプターはリモート パーティ (URL) に対して開いている接続を継続的に維持の待機中のメッセージがない場合でも[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ことにお送りします。 いくつかのポートは、同じリモート パーティを指している、送信アダプターは送信ポートごとに 1 つの接続を保持します。  
   
- [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 受信場所、TwoWayAckReceiveLocation が既定のインストールをセットアップします。 これを行うこともできますでの受信場所、送信アダプターが MLLP の Ack を受信するためです。 このアダプターを使用して、送信ポートのこの構成では、送信ポートと受信場所に関連付ける必要があります。  
+ Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 受信場所、TwoWayAckReceiveLocation が既定のインストールをセットアップします。 これを使用することができますの Ack を受信するための受信場所、MLLP 送信アダプター。 このアダプターを使用して、送信ポートのこの構成では、送信ポートと受信場所を関連付けることが必要です。  
   
- MSA フィールドでは、応答メッセージを受信する、または複数の変換先をサポートするためを設定する場合は、この送信ポートを使用します。 双方向の送信請求-応答アダプターでは、MSA フィールドまたは複数の変換先では機能しません。  
+ MSA フィールドでは、応答メッセージを受信する、または複数の送信先をサポートするためを設定する場合は、この送信ポートを使用します。 双方向の送信請求-応答アダプターでは、MSA フィールドまたは複数の送信先は機能しません。  
   
 ### <a name="acknowledgments-received-by-the-one-way-mllp-send-adapter"></a>一方向の MLLP で受信した受信確認の送信アダプター  
- Ack 用に構成された一方向 MLLP 送信アダプターでは、1 つは受信[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]元のメッセージをメッセージ ボックス データベースから削除、再試行、または ACK の種類に応じて、それを一時停止 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2 つのフェーズでは、ACK を解析します。  
+ Ack 用に構成されたの一方向 MLLP 送信アダプターは、1 つは受信[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]元のメッセージをメッセージ ボックス データベースから削除、再試行、または ACK の種類に応じて、これを中断します [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2 つのフェーズでは、ACK を解析します。  
   
--   最初のフェーズが、送信アダプターで行われる場所[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]MSA1 ACK の種類を決定するフィールドを解析して  
+- 最初のフェーズは、送信アダプターで行われる場所[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]MSA1 ACK の種類を決定するフィールドを解析します。  
   
--   2 番目のフェーズで[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]ACK の完全な解析を実行し、MessageBox データベースに ACK を送信します。  
+- 2 番目のフェーズで[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]ACK の完全な解析を実行し、メッセージ ボックス データベースに ACK に送信します。  
   
- 双方向の送信アダプターを求めて、ACK を構成する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー。  
+  双方向の送信アダプターではの ACK を構成する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー。  
   
- 次の表は、元のメッセージの Ack MLLP 送信アダプターが受け取ることができると結果の動作を示します。  
+  次の表は、元のメッセージの MLLP 送信アダプターが受信できる Ack および動作の結果を示します。  
   
-|受信確認|元のメッセージのアクション|  
+|受信した ACK|元のメッセージに対するアクション|  
 |------------------|------------------------------------|  
 |コミットが受け入れるか、アプリケーションがそのまま使用|メッセージ ボックス データベースから削除します。|  
-|コミット/アプリケーション、却下、ACK、無効な ACK|[中断]|  
-|コミット/アプリケーション エラー|バックアップ トランスポート/中断する再試行/移動|  
-|静的 ACK 成功|メッセージ ボックス データベースから削除します。|  
-|静的 ACK エラー|[中断]|  
+|コミット/アプリケーション、拒否、ACK または ACK が無効です。|[中断]|  
+|コミット/アプリケーション エラー|バックアップ トランスポート/中断するには、再試行/移動|  
+|静的な確認成功|メッセージ ボックス データベースから削除します。|  
+|静的な確認エラー|[中断]|  
   
- 次の表は、無効な ACK 条件を示します。  
+ 次の表は、無効な条件を確認します。  
   
 |Instance|条件|  
 |--------------|---------------|  
-|HL7 (元の強化、遅延)|1.XML は含まれません。<br />2.構造体を持っていないため、MSA1 フィールドを取得することはできません。または、MSA1 フィールドを含んでいません (カナダ、AA、CR、AR、CE、AE) に指定できる値のいずれか。|  
+|HL7 (強化された、元の遅延)|1.XML は含まれません。<br />2.構造を持っていないため、MSA1 フィールドを取得することはできません。または、(CA、AA、CR、AR、CE、AE) に指定できる値のいずれかの MSA1 フィールドを含んでいません。|  
 |静的|確認の失敗または成功した場合に指定できる値のいずれかと一致しません|  
-|XML が含まれています|(コンテンツ) に関係なく受け入れ ACK として扱われ、元のメッセージを削除します。|  
+|XML が含まれています|(コンテンツ) に関係なく受け入れ ACK として扱われ、元のメッセージを削除しています。|  
   
 ### <a name="error-conditions"></a>エラー条件  
- エラー状態または非アクティブ状態がある場合に、次のメッセージは発生します。  
+ エラー状態または非アクティブ状態が存在とは、次の処理を発生することができます。  
   
--   送信メッセージは、シリアル化に失敗した場合、送信アダプターはメッセージを送信、バッチ メッセージがある場合を除き、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]をストリーミングします。 場合と[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]シリアル化の失敗を検出、メッセージの途中で、アダプターは送信しません EB/CR 以降[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]は完全なメッセージを送信していません。 パイプラインが、エラーを記録し、アダプターがバッチ メッセージを再送信しようとします。  
+- 送信メッセージにシリアル化に失敗した場合、送信アダプターはメッセージを送信、メッセージのバッチである場合を除き[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]をストリーミングします。 場合と[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]シリアル化の障害を検出、メッセージの途中で、アダプターは送信しません EB/CR 以降[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]が完全なメッセージを送信していません。 パイプラインは、エラーを記録し、アダプターがバッチ メッセージを再送信しようとします。  
   
--   送信操作が失敗すると、アダプターは送信ポートの構成設定で指定された再試行の数に達するまで、メッセージを送信しようとします。 再試行を試みた後は、いずれかが存在する場合も、メッセージは、バックアップ トランスポートに移動します。 他のすべてが失敗した場合は、メッセージは中断されます。 保留メッセージは、元の (XML) 形式になります。  
+- 送信操作に失敗した場合、アダプターは送信ポートの構成設定で指定された回数まで、もう一度メッセージを送信しようとします。 再試行を試みた後、メッセージに存在する場合をバックアップ トランスポートに移動します。 すべてうまくいかなかった場合は、メッセージは中断されます。 保留メッセージは、元の (XML) 形式になります。  
   
- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]エラー条件を記述する次のイベントを生成できます。  
+  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] エラー条件を記述する次のイベントを生成できます。  
   
-|イベント|ID|エラー条件|  
-|-----------|--------|---------------------|  
-|ErrorSendingMessage|8450|リモート パーティにメッセージを送信できませんでした。 最も一般的な理由は、ネットワーク障害またはタイムアウトです。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]サイズの大きいメッセージをシリアル化中に、送信パイプラインが失敗した場合、このエラーを報告することがあります。|  
-|ErrorReceivingAck|8451|ネットワーク障害またはタイムアウトのため、受信確認を受信しませんでした。|  
-|ErrorConnecting|8453|リモート パーティへの TCP 接続を確立できませんでした: ホスト名を解決できませんでした、またはリモート パーティがポートでリッスンしていないか、接続を拒否します。|  
+|        イベント        |  ID  |                                                                                                                                   エラー条件                                                                                                                                   |
+|---------------------|------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ErrorSendingMessage | 8450 | リモート パーティにメッセージを送信できませんでした。 最も一般的な理由は、ネットワーク障害またはタイムアウトです。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] サイズの大きいメッセージをシリアル化中に、送信パイプラインが失敗した場合、このエラーを報告する可能性があります。 |
+|  ErrorReceivingAck  | 8451 |                                                                                                       ネットワークの障害またはタイムアウトのため、受信確認を受信しませんでした。                                                                                                       |
+|   ErrorConnecting   | 8453 |                                                    リモート パーティへの TCP 接続を確立できませんでした: ホスト名を解決できませんでした」または「リモート パーティがポートでリッスンしていないか、接続が拒否しています。                                                     |
   
 > [!NOTE]
->  送信先パーティ (元のメッセージの MSH5) での構成を決定するかどうか[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]HL7 または静的な確認が必要です 不一致が発生した場合[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]ACK を無効として扱われます。  
+>  送信先パーティ (元のメッセージの MSH5) での構成を決定するかどうか[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]HL7 または静的の確認が必要です 、一致しない場合[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]ACK を無効として扱われます。  
   
- MLLP アダプター プロセス ACK、送信後に ACK が独自のメッセージとして受信場所に配信されます。 逆アセンブラーは、ACK では、受信パイプラインによって報告されるエラーを解析中に発生する可能性がありますや中断される ACK の完全解析を実行します。  
+ MLLP 送信アダプターのプロセスと ACK、ACK が独自のメッセージとして受信場所に配信されます。 逆アセンブラーは、受信パイプラインによって報告されたエラーを解析中になる可能性があります、ACK や、ACK が中断されるの完全な解析を実行します。  
   
 ## <a name="see-also"></a>参照  
  [MLLP でエンコードされたメッセージの処理](../../adapters-and-accelerators/accelerator-hl7/processing-mllp-encoded-messages.md)   
  [構成パラメーターを送信および受信アダプター](../../adapters-and-accelerators/accelerator-hl7/configuration-parameters-for-send-and-receive-adapters.md)   
- [MLLP の受信アダプターの処理](../../adapters-and-accelerators/accelerator-hl7/mllp-receive-adapter-processing.md)   
- [Ack を受信するための送信ポートの設定](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)
+ [MLLP 受信アダプターの処理](../../adapters-and-accelerators/accelerator-hl7/mllp-receive-adapter-processing.md)   
+ [ACK を受信するための送信ポートの設定](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)

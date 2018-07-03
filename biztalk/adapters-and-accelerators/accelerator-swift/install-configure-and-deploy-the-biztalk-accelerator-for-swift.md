@@ -1,5 +1,5 @@
 ---
-title: インストール、構成、および for SWIFT の BizTalk アクセラレータの展開 |Microsoft ドキュメント
+title: インストール、構成、および for SWIFT の BizTalk アクセラレータのデプロイ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,22 +15,22 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ebdc6e56aa3f9dff2fbe61da54b722528c6eb2a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 44119bb7a8dd16189eea1e476a1ac694ec5e9fa2
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209906"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969243"
 ---
-# <a name="install-configure-and-deploy-the-biztalk-accelerator-for-swift"></a>インストール、構成、および for SWIFT の BizTalk アクセラレータの展開
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]を含むプラットフォームで動作[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]、 [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]、および[!INCLUDE[btsSQLServerNoVersion_md](../../includes/btssqlservernoversion-md.md)]です。 機能セット[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]以前設定の機能と互換性が[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]バージョン。 ただし、BizTalk Server、Visual Studio および SQL Server の新しいバージョンでの拡張機能を実行できます。  
+# <a name="install-configure-and-deploy-the-biztalk-accelerator-for-swift"></a>インストール、構成、および for SWIFT の BizTalk アクセラレータのデプロイ
+Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]などのプラットフォームで動作[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]、 [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]、および[!INCLUDE[btsSQLServerNoVersion_md](../../includes/btssqlservernoversion-md.md)]します。 機能セットに[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]以前設定の機能と互換性が[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]バージョン。 ただし、BizTalk Server、Visual Studio および SQL Server の新しいバージョンでの拡張機能を実行できます。  
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-[BizTalk Accelerator を SWIFT をインストールします。](../../adapters-and-accelerators/accelerator-swift/install-biztalk-accelerator-for-swift.md)  
-[アップグレードの BizTalk Accelerator 用 SWIFT](../../adapters-and-accelerators/accelerator-swift/upgrade-biztalk-accelerator-for-swift.md)  
-[SWIFT の BizTalk アクセラレータを構成します。](../../adapters-and-accelerators/accelerator-swift/configure-biztalk-accelerator-for-swift.md)  
+[BizTalk Accelerator for SWIFT のインストール](../../adapters-and-accelerators/accelerator-swift/install-biztalk-accelerator-for-swift.md)  
+[BizTalk Accelerator for SWIFT のアップグレード](../../adapters-and-accelerators/accelerator-swift/upgrade-biztalk-accelerator-for-swift.md)  
+[BizTalk Accelerator for SWIFT の構成](../../adapters-and-accelerators/accelerator-swift/configure-biztalk-accelerator-for-swift.md)  
 [A4SWIFT コンポーネント構成ガイド](../../adapters-and-accelerators/accelerator-swift/a4swift-component-configuration-guide.md)  
-[BizTalk Accelerator for SWIFT のデプロイ ガイド](../../adapters-and-accelerators/accelerator-swift/deployment-guide-for-biztalk-accelerator-for-swift.md)  
-[インストールと構成の既知の問題を読み取る](../../adapters-and-accelerators/accelerator-swift/read-the-installation-and-configuration-known-issues.md)  
-[構成を解除または for SWIFT BizTalk Accelerator を削除します。](../../adapters-and-accelerators/accelerator-swift/unconfigure-or-remove-biztalk-accelerator-for-swift.md)
+[BizTalk Accelerator for SWIFT の展開ガイド](../../adapters-and-accelerators/accelerator-swift/deployment-guide-for-biztalk-accelerator-for-swift.md)  
+[インストールおよび構成に関する既知の問題の確認](../../adapters-and-accelerators/accelerator-swift/read-the-installation-and-configuration-known-issues.md)  
+[BizTalk Accelerator for SWIFT の構成解除と削除](../../adapters-and-accelerators/accelerator-swift/unconfigure-or-remove-biztalk-accelerator-for-swift.md)

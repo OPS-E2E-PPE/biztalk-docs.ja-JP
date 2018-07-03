@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10551 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10551 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30c4b315744749d232c30f4cc28c4d297a0f5243
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8a014d9fa9adec99a05eba3f4a0f17047e2e1175
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270746"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973491"
 ---
 # <a name="single-sign-on-event-10551"></a>シングル サインオン: イベント 10551
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10551|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_WARN_INVALID_USER|  
-|メッセージ テキスト|指定したユーザーがこのアプリケーションで有効ではないため、マッピングを作成できませんでした。%r<br /><br /> ドメイン名: %1 %r<br /><br /> ユーザー名: %2 %r<br /><br /> アプリケーション名: %3 %r<br /><br /> アプリケーション ユーザー: %4|  
+|                 |                                                                                                                                                                                                                               |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                                                                   エンタープライズ シングル サインオン                                                                                                   |
+| 製品バージョン |                                                                                  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                   |
+|    イベント ID     |                                                                                                             10551                                                                                                             |
+|  イベント ソース   |                                                                                                            ENTSSO                                                                                                             |
+|    コンポーネント    |                                                                                                              なし                                                                                                              |
+|  シンボル名  |                                                                                                     SSO_WARN_INVALID_USER                                                                                                     |
+|  メッセージ テキスト   | 指定したユーザーがこのアプリケーションで有効ではないため、マッピングを作成できませんでした。%r<br /><br /> ドメイン名: %1 %r<br /><br /> ユーザー名: % 2 %r<br /><br /> アプリケーション名: % 3 %r<br /><br /> アプリケーション ユーザー: %4 |
   
 ## <a name="explanation"></a>説明  
  指定されたユーザーが有効ではありません。 これは入力の誤りである可能性があります。  

@@ -1,5 +1,5 @@
 ---
-title: アクティブな保留中のバッチがあるインポート コピーに失敗しました |Microsoft ドキュメント
+title: アクティブな保留中のバッチがあるためインポート コピーできませんでした。Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e3055f3e95ef3d0fb8bf5a36dae5957e318f6e0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8a74bfdccbd12db00cd0f325aedee2e42cc76729
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256722"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36970539"
 ---
-# <a name="import-copy-failed-as-there-are-active-pending-batches"></a>アクティブな保留中のバッチがあるインポート コピーに失敗しました
+# <a name="import-copy-failed-as-there-are-active-pending-batches"></a>アクティブな保留中のバッチがあるためインポート コピーできませんでした。
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|Err_ActiveBatchFound|  
-|メッセージ テキスト|アクティブ状態または保留中のバッチがあるため、インポートまたはコピーはできませんでした アクティブ状態または保留中のバッチを停止してから、インポートまたはコピーを再試行してください。|  
+|                 |                                                                                                                |
+|-----------------|----------------------------------------------------------------------------------------------------------------|
+|  製品名   |               [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]               |
+| 製品バージョン |                           [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                           |
+|    イベント ID     |                                                       -                                                        |
+|  イベント ソース   |             [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI             |
+|    コンポーネント    |                                                   EDI エンジン                                                   |
+|  シンボル名  |                                              Err_ActiveBatchFound                                              |
+|  メッセージ テキスト   | アクティブ状態または保留中のバッチがあるため、インポートまたはコピーはできませんでした アクティブ状態または保留中のバッチを停止してから、インポートまたはコピーを再試行してください。 |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、影響を受けるアグリーメントに 1 つ以上のアクティブ状態または保留中のバッチがあるため、BizTalk Server がバインド ファイルをインポートできなかったか、設定をコピーできなかったことを示します。  

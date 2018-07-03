@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 3: XML インスタンスのテスト |Microsoft ドキュメント'
+title: 'レッスン 3: XML インスタンスのテスト |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,30 +15,30 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dcb9d5ada3054219b1387d92f4244475037c26ac
-ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
+ms.openlocfilehash: 5660ab4e67545b1b98785aedeaeea6e123b6d008
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34848898"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36971899"
 ---
-# <a name="lesson-3-testing-an-xml-instance"></a>レッスン 3: XML インスタンスのテスト
-このレッスンでは、ファイルに XML 形式でメッセージの受信前のレッスンで作成されたポートの有効な MT103 を送信します。 この操作は、前のモジュールで作成した送信パイプラインをテストします。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 前のモジュールで、送信ポート用に選択した出力フォルダーにフラット ファイルとして出力を書き込みます。  
+# <a name="lesson-3-testing-an-xml-instance"></a>レッスン 3: XML インスタンスをテストします。
+このレッスンでは、XML 形式でファイルにメッセージの受信ポートの前のレッスンで作成した有効な MT103 を送信します。 このアクションは、前のモジュールで作成した送信パイプラインをテストします。 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]前のモジュールで、送信ポート用に選択した出力フォルダーにフラット ファイルとして出力を書き込みます。  
   
- ファイルを開始する受信アダプターの受信フォルダーに SWIFT XML 形式のファイルをコピーしています。 発信フォルダーに SWIFT 有効なフラット ファイルをコピーする、システムでこの操作の結果します。  
+ ファイルを開始する受信アダプターの受信フォルダーに SWIFT XML 形式のファイルをコピーします。 この操作の結果、システムが有効な SWIFT フラット ファイルを送信フォルダーにコピーします。  
   
 ### <a name="to-test-an-xml-instance"></a>XML インスタンスをテストするには  
   
-1.  Windows エクスプ ローラーで開く\<*ドライブ*\>: \Labs\Outbound です。 このフォルダーにこのフォルダーに送信した {GUID} .xml ファイルが含まれていることを確認[レッスン 1: サンプル フラット ファイルを送信する](../../adapters-and-accelerators/accelerator-swift/lesson-1-submitting-a-sample-flat-file.md)このモジュールのです。  
+1. Windows エクスプ ローラーで開く\<*ドライブ*\>: \Labs\Outbound します。 このフォルダーにこのフォルダー内に送信した {GUID} .xml ファイルが含まれていることを確認[レッスン 1: サンプル フラット ファイルを送信する](../../adapters-and-accelerators/accelerator-swift/lesson-1-submitting-a-sample-flat-file.md)このモジュールの。  
   
-2.  XML ファイルをコピーして貼り付けます\<*ドライブ*\>: \Labs\Inbound\XMLFile です。 このファイルを貼り付けることに注意してください。  
+2. XML ファイルをコピーして貼り付けます\<*ドライブ*\>: \Labs\Inbound\XMLFile します。 このファイルを貼り付けることに注意してください。  
   
-3.  移動\<*ドライブ*\>: \Labs\Outbound です。 このフォルダーに {GUID} .txt という名前のファイルがあることと、更新日時 列でこのファイルの時刻が、ファイルに貼り付けたとなる時間に対応していることを確認\<*ドライブ*\>: \Labs\Inbound\XMLFile です。  
+3. 移動\<*ドライブ*\>: \Labs\Outbound します。 このフォルダーに、{GUID} .txt という名前のファイルが変更された日付列でこのファイルの時刻が、ファイルに貼り付けた時間に対応していることを確認\<*ドライブ*\>: \Labs\Inbound\XMLFile します。  
   
-4.  メモ帳で開きますで MT103_Sample.txt \<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tutorial です。  
+4. メモ帳で開きで MT103_Sample.txt \<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tutorial します。  
   
-5.  メモ帳の別のインスタンスで開くで {GUID} .txt \<*ドライブ*\>: \Labs\Inbound\XMLFile です。  
+5. メモ帳の別のインスタンスで開く {GUID} .txt で\<*ドライブ*\>: \Labs\Inbound\XMLFile します。  
   
-6.  メモ帳で次の 2 つのファイルに同じコンテンツが含まれていることを確認します。  
+6. メモ帳で 2 つのファイルに同じコンテンツが含まれていることを確認します。  
   
- 進みます[第 8 章: 無効なメッセージの修復](http://msdn.microsoft.com/fb531b22-ac7a-4620-b395-87aebf56077d)です。
+   進みます[モジュール 8: 無効なメッセージの修復](http://msdn.microsoft.com/fb531b22-ac7a-4620-b395-87aebf56077d)します。

@@ -1,5 +1,5 @@
 ---
-title: パイプライン デザイナーでパイプラインの作成 |Microsoft ドキュメント
+title: パイプライン デザイナーでパイプラインの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,29 +16,29 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73842a24169f9e589fb1eecef80bca3d97cad262
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 51d7f15a50c5504468cc3da19293afd251dff312
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238322"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969179"
 ---
-# <a name="creating-pipelines-with-pipeline-designer"></a>パイプライン デザイナーでパイプラインの作成
+# <a name="creating-pipelines-with-pipeline-designer"></a>パイプライン デザイナーでパイプラインを作成します。
 このセクションでは、次の作業の方法について説明します。  
   
--   パイプラインを作成する、開く、保存する  
+- パイプラインを作成する、開く、保存する  
   
--   コンポーネントをパイプラインに追加する  
+- コンポーネントをパイプラインに追加する  
   
--   スキーマ コレクション プロパティ エディターを使用する  
+- スキーマ コレクション プロパティ エディターを使用する  
   
--   ツールボックスの使用  
+- ツールボックスの使用  
   
--   キーボードで移動する  
+- キーボードで移動する  
   
--   パイプライン コンポーネントの読み取り専用プロパティを使用する  
+- パイプライン コンポーネントの読み取り専用プロパティを使用する  
   
- パイプライン デザイナーの使用方法の詳細については、次を参照してください。[パイプライン デザイナーの使用](../core/using-pipeline-designer.md)です。  
+  パイプライン デザイナーの使用方法の詳細については、次を参照してください。[パイプライン デザイナーを使用して](../core/using-pipeline-designer.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -46,7 +46,7 @@ ms.locfileid: "22238322"
   
 -   [パイプラインを開く方法](../core/how-to-open-a-pipeline.md)  
   
--   [コンポーネントをパイプラインに追加する方法](../core/how-to-add-a-component-to-a-pipeline.md)  
+-   [パイプラインにコンポーネントを追加する方法](../core/how-to-add-a-component-to-a-pipeline.md)  
   
 -   [パイプライン コンポーネントのプロパティを設定する方法](../core/how-to-set-pipeline-component-properties.md)  
   

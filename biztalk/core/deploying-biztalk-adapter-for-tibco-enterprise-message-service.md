@@ -1,6 +1,6 @@
 ---
-title: TIBCO EMS 用のバインドのインポート |Microsoft ドキュメント
-description: BizTalk Server でバインドのインポート機能を使用して TIBCO Enterprise Message Service アプリケーションの BizTalk アダプターの展開します。
+title: TIBCO EMS のバインドのインポート |Microsoft Docs
+description: BizTalk Server でバインドのインポート機能を使用して TIBCO Enterprise Message Service のアプリケーション用 BizTalk アダプターの展開します。
 ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
@@ -13,43 +13,43 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 79f7f3ec0478746b8c2c6762fe212229f9c7b11d
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: e90d083833e7961770c6ecd535e9ed3e5143be30
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "25969406"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36981363"
 ---
-# <a name="deploy-tibco-ems-ports-and-assemblies"></a>TIBCO EMS ポートとアセンブリを展開します。
+# <a name="deploy-tibco-ems-ports-and-assemblies"></a>TIBCO EMS のポートとアセンブリを展開します。
 
 ## <a name="overview"></a>概要
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ポートとターゲット コンピューター上のアセンブリを複製することができます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] エクスポートは、ポートおよび受信場所の構成を XML ファイルに送信します。  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用すると、次のタスクを実行できます。  
   
--   BizTalk 構成データベースで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アセンブリを展開または削除します。  
+- BizTalk 構成データベースで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アセンブリを展開または削除します。  
   
--   グローバル アセンブリ キャッシュ (GAC) 内での、アセンブリのインストールまたはアンインストール  
+- グローバル アセンブリ キャッシュ (GAC) 内での、アセンブリのインストールまたはアンインストール  
   
--   バインド ファイルに対する、BizTalk アセンブリのバインド情報のインポートまたはエクスポート  
+- バインド ファイルに対する、BizTalk アセンブリのバインド情報のインポートまたはエクスポート  
   
- 使用する方法については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ポートとアセンブリを展開するを参照してください。 [BizTalk アプリケーションのバインドのエクスポート方法](../core/how-to-export-bindings-for-a-biztalk-application.md)です。  
+  使用する方法については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ポートとアセンブリを展開するを参照してください。 [BizTalk アプリケーションのバインドのエクスポート方法](../core/how-to-export-bindings-for-a-biztalk-application.md)します。  
   
 > [!NOTE]
 >  Microsoft BizTalk Adapter for TIBCO Enterprise Message Service の場合のみ、ソース (開発) コンピューターに Visual Studio がインストールされている必要があります。 実稼動コンピュータでは Visual Studio は必要ありません。  
 
-## <a name="confirm-your-setup"></a>セットアップを確認します。
+## <a name="confirm-your-setup"></a>設定を確認します。
 BizTalk Server を使用してバインド ファイルをインポートする前に、以下の項目について確認してください。  
   
 -   新しいコンピューターで、応答用のフォルダーが存在し、同じである。同じでない場合は、バインド ファイルを編集します。  
   
--   TIBCO Enterprise Message Service システム パスワードが構成に存在する場合、パスワードが ***** としてバインド ファイルに保存される必要があります。 参照してください**制限**」を参照します。
+-   TIBCO Enterprise Message Service システム パスワードが構成に存在する場合、パスワードが ***** としてバインド ファイルに保存される必要があります。 参照してください**制限**このトピックの「します。
 
 
 ## <a name="clean-the-target-computer"></a>ターゲット コンピューターをクリーニングします。
 展開には、受信場所の構成が上書きされます。 バインド ファイル (およびアセンブリ) を展開先のコンピューターに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  
 
-インポートすると、前に、送信ポートを削除し、受信場所、オーケストレーションにバインドします。  
+をインポートする前に、送信ポートを削除し、受信場所、オーケストレーションにバインドします。  
   
 Microsoft Visual Studio が展開先のコンピューターにインストールされていない場合は、次のスクリプトを実行してポートを削除できます。  
   
@@ -65,7 +65,7 @@ cscript RemoveSendPort.vbs \<Send port name\>
 ```
 
 ## <a name="limitations"></a>制限事項
-個の星トランスポート アダプターのパスワードが格納されている (\*\*\*\*\*\*) BizTalk Server によってエクスポートされるバインド ファイルにされ、同じ形式で管理コンポーネントに渡されます。 アスタリスクを無効な値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。 使用して、正しいパスワードを入力、 **トランスポートのプロパティ** ] ページで、バインド ファイルをインポートした後は、BizTalk Server 管理コンソールです。  
+トランスポート アダプターのパスワードは、星として格納されます (\*\*\*\*\*\*)、BizTalk Server によってエクスポートされるバインド ファイルにされ、同じ管理コンポーネントに渡されます形式です。 アスタリスクを無効な値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。 使用して、正しいパスワードを入力、**トランスポートのプロパティ**バインド ファイルをインポートした後は、BizTalk Server 管理コンソール内のページ。  
   
  これは、既知の制限です。 バインド情報をエクスポートしても、生成されるバインド ファイルには、受信場所/送信ポートでトランスポート アダプターが使用したパスワードは含まれません。 このため、パスワード情報はクリア テキストでは表示されません。 次にファイルを使用してバインド情報をインポートするときに、トランスポート プロパティ ページのユーザー インターフェイスを使用してパスワードを入力する必要があります。 または、パスワードをバインド ファイルに入力することで、インポート前にバインド ファイルを一時的に変更することもできます。 この場合、インポート操作が正常に完了した後は、バインド ファイルからパスワードを削除する必要があります。  
   
@@ -78,12 +78,12 @@ cscript RemoveSendPort.vbs \<Send port name\>
     > [!CAUTION]
     >  これは、セキュリティ上の理由により推奨されていません。  
   
--   アスタリスクを無効な値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。 使用して、正しいパスワードを入力、 **トランスポートのプロパティ** ] ページで、バインド ファイルをインポートした後は、BizTalk Server 管理コンソールです。  
+-   アスタリスクを無効な値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。 使用して、正しいパスワードを入力、**トランスポートのプロパティ**バインド ファイルをインポートした後は、BizTalk Server 管理コンソール内のページ。  
   
     > [!NOTE]
     >  この対処方法を使用できるのは、対象のコンピューターに Visual Studio がインストールされているか、カスタム ツールを開発する場合のみです。  
   
 -   論理システムと送信および受信サービスを確認します。  
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 [BizTalk Server 例外処理を使用して、オーケストレーションで](../core/using-biztalk-server-exception-handling5.md)

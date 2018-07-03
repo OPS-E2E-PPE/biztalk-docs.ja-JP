@@ -1,5 +1,5 @@
 ---
-title: '手順 7: 署名し、プロジェクトをビルド |Microsoft ドキュメント'
+title: '手順 7: サインインし、プロジェクトのビルド |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,33 +16,33 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f62a37da291bdc148369a28149cdfe29ed7fe446
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: b34ad40b7ee8e083f53e18c34e65fa3c8699d352
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "25961768"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36970123"
 ---
-# <a name="step-7-sign-and-build-the-projects"></a>手順 7: 署名し、プロジェクトのビルド
-この手順で、厳密な名前を割り当てるし、で作成したリソース (スキーマ) を含むアセンブリを生成するプロジェクトをビルド[手順 6: スキーマの検証](../../adapters-and-accelerators/accelerator-hl7/step-6-validate-the-schemas.md)です。 またこれにより、これまでに完了した作業ではコンパイル エラーがないこと。  
+# <a name="step-7-sign-and-build-the-projects"></a>手順 7: サインインし、プロジェクトのビルド
+この手順で、厳密な名前を割り当てるし、で作成したリソース (スキーマ) を含むアセンブリを生成するプロジェクトをビルド[手順 6: スキーマの検証](../../adapters-and-accelerators/accelerator-hl7/step-6-validate-the-schemas.md)です。 またこれにより、これまでに完了した作業でコンパイル エラーがないこと。  
   
 ### <a name="to-sign-the-btahl7-project"></a>BTAHL7 プロジェクトに署名するには  
   
-1.  ソリューション エクスプ ローラーで右クリック**BTAHL7 プロジェクト**、クリックして**プロパティ**です。  
+1.  ソリューション エクスプ ローラーで右クリックして**BTAHL7 プロジェクト**、 をクリックし、**プロパティ**します。  
   
-2.  BTAHL7 プロジェクト プロパティ ページ] ダイアログ ボックスで、[**アセンブリ**です。  
+2.  BTAHL7 プロジェクト プロパティ ページ] ダイアログ ボックスで、[**アセンブリ**します。  
   
-3.  右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、省略記号 (...) ボタンをクリックします。  
+3.  右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、省略記号 (...) ボタンを順にクリックします。  
   
-4.  アセンブリ キー ファイル ダイアログ ボックスでを参照 **\<*ドライブ*\>: \Tutorial\BTAHL7V22Common\key.snk** (で作成されるよう[手順 3: に厳密な名前を割り当てる、アセンブリ](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md))、をクリックして**開く**です。  
+4.  アセンブリ キー ファイル ダイアログ ボックスを参照 **\<*ドライブ*\>: \Tutorial\BTAHL7V22Common\key.snk** (で作成した[手順 3: に厳密な名前を割り当てる、アセンブリ](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md))、をクリックし、**オープン**します。  
   
-5.  をクリックして**OK**変更を保存します。  
+5.  クリックして**OK**変更を保存します。  
   
 ### <a name="to-build-the-btahl7-project"></a>BTAHL7 プロジェクトをビルドするには  
   
--   ソリューション エクスプ ローラーで右クリック**BTAHL7 プロジェクト**、クリックして**展開**です。 [!INCLUDE[btsVStudio2008](../../includes/btsvstudio2008-md.md)]DLL ファイルにアセンブリをコンパイルしで保存、 \<*ドライブ*\>: \Tutorial\BTAHL7V22Common\Bin\Development フォルダーです。  
+- ソリューション エクスプ ローラーで右クリック**BTAHL7 プロジェクト**、 をクリックし、**デプロイ**します。 [!INCLUDE[btsVStudio2008](../../includes/btsvstudio2008-md.md)] DLL ファイルにアセンブリをコンパイルし、保存します、 \<*ドライブ*\>: \Tutorial\BTAHL7V22Common\Bin\Development フォルダー。  
   
- 進みます[手順 8: BizTalk マッパーでマップの作成](../../adapters-and-accelerators/accelerator-hl7/step-8-create-a-map-with-biztalk-mapper.md)です。  
+  続行する[手順 8: BizTalk マッパーでマップの作成](../../adapters-and-accelerators/accelerator-hl7/step-8-create-a-map-with-biztalk-mapper.md)です。  
   
 ## <a name="see-also"></a>参照  
  [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

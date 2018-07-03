@@ -1,6 +1,6 @@
 ---
-title: BizTalk Server で HL7 アクセラレータでのパーティ タブ |Microsoft ドキュメント
-description: BTAHL7 構成エクスプ ローラーを使用して、既存のパーティを表示し、BizTalk Server で受信確認を構成します。
+title: BizTalk Server で HL7 アクセラレータ [パーティ] タブ |Microsoft Docs
+description: BTAHL7 構成エクスプ ローラーを使用して、既存のパーティを表示し、受信確認を BizTalk Server の構成
 ms.custom: ''
 ms.date: 08/14/2017
 ms.prod: biztalk-server
@@ -13,40 +13,40 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8d8572da051d046d46b6e895f11f07d3f9d9771c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2b048cccdcc46f4713967003c81671e062420377
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206138"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36976315"
 ---
 # <a name="parties-in-btahl7-configuration-explorer"></a>BTAHL7 構成エクスプ ローラーでパーティ
-使用する、**パーティ** タブを使用できる関係者を表示および指定[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成を選択すると、特定の人および受信確認のプロパティを構成します。 
+使用する、**パーティ** タブを使用可能な関係者を表示および指定[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成を選択すると、特定のパーティおよび受信確認のプロパティを構成します。 
 
 ## <a name="parties-ui-explained"></a>UI のパーティの説明
-**パーティ** タブには、左と右ペイン両方にはが含まれています。 使用可能なパーティは、左側のウィンドウに表示されます。 右側のペインには、選択したパーティに対して、次のタブが含まれています。  
+**パーティ** タブには、左と右ウィンドウ両方にはが含まれています。 使用可能なパーティは、左側のウィンドウに表示されます。 右側のウィンドウには、選択したパーティに対して、次のタブが含まれています。  
   
--   **パーティのエイリアス**です。 左側のペインで選択したパーティに関する情報を表示するのにには、このタブを使用します。  
+- **パーティのエイリアス**します。 左側のウィンドウで選択したパーティに関する情報を表示するのにには、このタブを使用します。  
   
-    > [!NOTE]
-    >  パーティを作成するのにには、BizTalk エクスプ ローラーを使用します。  
+  > [!NOTE]
+  >  パーティを作成するのにには、BizTalk エクスプ ローラーを使用します。  
   
--   **定義のバッチ**です。 このタブを使用して構成する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]バッチ処理します。  
+- **定義のバッチ**します。 このタブを使用して構成する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]バッチ処理します。  
   
--   **バッチ スケジュール**です。 このタブを使用して、送信バッチをアクティブ化します。  
+- **バッチ スケジュール**します。 送信バッチをアクティブ化するのにには、このタブを使用します。  
   
--   **受信確認**です。 このタブを使用して、受信および生成された受信確認のプロパティを指定します。  
+- **受信確認**します。 このタブを使用して、受信と生成される受信確認のプロパティを指定します。  
   
--   **検証**です。 このタブを使用すると、受信メッセージおよび生成されたメッセージのメッセージの検証オプションを選択します。  
+- **検証**です。 このタブを使用すると、受信、および生成されたメッセージのメッセージの検証オプションを選択します。  
   
--   **MSH マップ**です。 受信メッセージのメッセージ ヘッダーの変換を有効にするのにには、このタブを使用します。  
+- **MSH マップ**します。 受信メッセージのメッセージ ヘッダーの変換を有効にするのにには、このタブを使用します。  
   
-    > [!NOTE]
-    >  パーティ エイリアス、バッチの定義、バッチ スケジュール、およびすべての取引パーティに対する受信確認情報を構成する必要があります。  
-    > 
-    >  F5 キーを押して、またはパーティの一覧を右クリックして、パーティの一覧を更新してを選択することができます**更新**です。  
+  > [!NOTE]
+  >  パーティ エイリアス、バッチ定義、バッチ スケジュール、およびすべての取引先パーティの受信確認情報を構成する必要があります。  
+  > 
+  >  F5 キーを押して、またはパーティの一覧を右クリックして、パーティの一覧を更新して、選択**更新**します。  
   
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
   
 -   [パーティ エイリアス タブ](../../adapters-and-accelerators/accelerator-hl7/party-aliases-tab.md)  
   
@@ -58,4 +58,4 @@ ms.locfileid: "22206138"
   
 -   [[検証] タブ](../../adapters-and-accelerators/accelerator-hl7/validation-tab.md)  
   
--   [MSH マップ タブ](../../adapters-and-accelerators/accelerator-hl7/msh-map-tab.md)
+-   [[MSH マップ] タブ](../../adapters-and-accelerators/accelerator-hl7/msh-map-tab.md)

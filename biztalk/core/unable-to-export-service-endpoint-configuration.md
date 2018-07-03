@@ -1,5 +1,5 @@
 ---
-title: サービス エンドポイント構成をエクスポートできません |。Microsoft ドキュメント
+title: サービス エンドポイント構成をエクスポートできません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3b36fa47d9302f3f88f65575bfa8f74c6469e9e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2418517b7695aedd5c80a950a9b74faf5d380346
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286882"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973355"
 ---
 # <a name="unable-to-export-service-endpoint-configuration"></a>サービス エンドポイント構成をエクスポートできません
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|イベント ID|0|  
-|イベント ソース|0|  
-|コンポーネント|0|  
-|シンボル名|0|  
-|メッセージ テキスト|サービス エンドポイント構成を "{0}" にエクスポートできません|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  製品名   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| 製品バージョン |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    イベント ID     |                                         0                                          |
+|  イベント ソース   |                                         0                                          |
+|    コンポーネント    |                                         0                                          |
+|  シンボル名  |                                         0                                          |
+|  メッセージ テキスト   |              サービス エンドポイント構成をエクスポートすることができません"{0}"              |
   
 ## <a name="explanation"></a>説明  
  このエラーは、宛先に書き込むアクセス許可がユーザーにない可能性があることを示します。 または、[アドレス (URI)] や [バインディングの種類] など、必要なプロパティの一部が適切に指定されませんでした。  
@@ -40,25 +40,25 @@ ms.locfileid: "22286882"
   
 #### <a name="to-configure-the-endpoint-identity"></a>エンドポイント ID を構成するには  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリック**BizTalk Server 管理コンソール**です。  
+1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリック**BizTalk Server 管理**します。  
   
-2.  コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開と**アプリケーション**です。  
+2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3.  アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを特定し、次にトランスポートを特定します。  
   
-4.  トランスポート名を右クリックします。  
+4. トランスポート名を右クリックします。  
   
-5.  **[プロパティ]** をクリックします。  
+5. **[プロパティ]** をクリックします。  
   
-6.  ポート**型**一覧で、適切なポートを選択します。  
+6. ポート**型**一覧で、適切なポートを選択します。  
   
-7.  をクリックして**構成**です。  
+7. クリックして**構成**します。  
   
-8.  Wcf **[***トランスポートの種類***] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブです。  
+8. Wcf **[**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブ。  
   
-9. コピー先フォルダーへの書き込みが許可されていることを確認します。  
+9. コピー先のフォルダーへの書き込みが許可されていることを確認します。  
   
-10. チェック、**動作** タブおよび**エンドポイント Id**の設定、**全般**が有効であることを確認するには、タブ。  
+10. チェック、**動作** タブと**エンドポイント Id**の設定、**全般** タブが有効であることを確認します。  
   
     > [!NOTE]
     >  送信先フォルダーの書き込みアクセス権が必要です。 必要なアクセス権を取得するには、コンピューターの管理者に連絡してください。

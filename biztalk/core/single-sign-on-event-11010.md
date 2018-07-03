@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11010 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 11010 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f81bef87439c4607a32f2547d5bf44b19491140b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9ba07dde6b32ebb2f5d92365fcead94c0b4ecc66
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277186"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965819"
 ---
 # <a name="single-sign-on-event-11010"></a>シングル サインオン: イベント 11010
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|11010|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_WARN_NOT_SSO_AFF_ADMIN|  
-|メッセージ テキスト|クライアント ユーザーが SSO 関連管理者アカウントのメンバーではありません。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> クライアント ユーザー: %2\\%3 %r<br /><br /> SSO 関連管理者: %4|  
+|                 |                                                                                                                                                                                         |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                                                エンタープライズ シングル サインオン                                                                                |
+| 製品バージョン |                                                               [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                |
+|    イベント ID     |                                                                                          11010                                                                                          |
+|  イベント ソース   |                                                                                         ENTSSO                                                                                          |
+|    コンポーネント    |                                                                                           なし                                                                                           |
+|  シンボル名  |                                                                               SSO_WARN_NOT_SSO_AFF_ADMIN                                                                                |
+|  メッセージ テキスト   | クライアント ユーザーが SSO 関連管理者アカウントのメンバーではありません。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> クライアント ユーザー: %2\\% 3 %r<br /><br /> SSO 関連管理者: %4 |
   
 ## <a name="explanation"></a>説明  
  クライアント ユーザーが SSO 関連管理者アカウントのメンバーではありません。 この警告は、監査レベルが高に設定されている場合にのみ表示されます。  

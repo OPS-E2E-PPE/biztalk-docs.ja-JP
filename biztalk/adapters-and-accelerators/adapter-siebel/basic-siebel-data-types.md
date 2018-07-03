@@ -1,5 +1,5 @@
 ---
-title: Siebel の基本的なデータの種類 |Microsoft ドキュメント
+title: 基本的な Siebel データ型 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,119 +14,120 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0266f445c2fd8a7cba9a0e2089b9542813230580
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 7d45a5c8b0caf16d38df7b368c6f0f63ba020d95
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "22218754"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36971547"
 ---
-# <a name="basic-siebel-data-types"></a>Siebel の基本的なデータ型
-このセクションで Siebel データ型をサポートする方法について説明します、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]です。  
-  
+# <a name="basic-siebel-data-types"></a>基本的な Siebel データ型
+このセクションで Siebel データ型をサポートする方法について説明します、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]します。  
+
 ## <a name="supported-siebel-data-types"></a>サポートされる Siebel データ型  
- 次の表は、Siebel データ型を[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]サポートし、それらの表示、アダプターによって BizTalk (XSD 型) と WCF サービス モデル (.NET 型) にします。 アスタリスクでマークされた型では、次の表に、メモを参照してください。  
-  
-|データ型|XSD 型|.NET の種類|Description|  
-|---------------|--------------|---------------|-----------------|  
-|DTYPE_BOOL|xsd:boolean|ブール値|-|  
-|DTYPE_CURRENCY|xsd:decimal|Decimal|-|  
-|DTYPE_DATE|xsd:dateTime*|DateTime|値は、世界協定時刻 (UTC) をすることはできません。<br /><br /> -Xsd:dateTime、値が必要に、このパターンに従う:"(\d\d\d\d-\d\d-\d\d)T(00:00:00) (.\*)"です。<br />- **DateTime**オブジェクト、**DateTime.Kind**する必要があります**DateTimeKind.Unspecified**です。<br /><br /> アダプターによって、時刻部分は無視されます。<br /><br /> 送信メッセージの場合は、アダプターは、指定された値が UTC (z または UTC オフセット) でないことを確認する実行時の検証を実行します。 その検証に失敗した場合、アダプターは例外をスローします。<br /><br /> ときにこの型は、(以下に示す規則に基づく) xsd:string として公開されています。<br /><br /> -形式は、基になるデータベースによって決まります。<br />-値には、実行時の検証は実行されません。|  
-|DTYPE_DATETIME|xsd:dateTime*|DateTime|値は、日付と時刻の両方のコンポーネントを含めることができ、UTC をすることはできません。<br /><br /> - **DateTime**オブジェクト、 **DateTime.Kind**する必要があります**DateTimeKind.Unspecified**です。<br /><br /> 送信メッセージにについては、アダプターは、これらの条件が満たされていることを確認する実行時検証を実行します。検証に失敗した場合、アダプターは例外をスローします。<br /><br /> ときにこの型は、(以下に示す規則に基づく) xsd:string として公開されています。<br /><br /> -形式は、基になるデータベースによって決まります。<br />-値には、実行時の検証は実行されません。|  
-|DTYPE_ID|xsd:string|文字列|-|  
-|DTYPE_INTEGER|xsd:int|Int32|-|  
-|DTYPE_NOTE|xsd:string|文字列|-|  
-|DTYPE_NUMBER|xsd:decimal|Decimal|-|  
-|DTYPE_PHONE|xsd:string|文字列|-|  
-|DTYPE_TEXT|xsd:string|文字列|-|  
-|DTYPE_TIME|xsd:dateTime*|DateTime|値は、UTC をすることはできません。<br /><br /> -Xsd:dateTime、値が必要に、このパターンに従う: (1753-01-01)T(\d\d:\d\d:\d\d) (.\*)"です。<br />- **DateTime**オブジェクト **、DateTime.Kind**する必要があります**DateTimeKind.Unspecified**です。<br /><br /> 送信メッセージの場合は、アダプターは、指定された値が UTC (z または UTC オフセット) でないことを確認する実行時の検証を実行します。 その検証に失敗した場合、アダプターは例外をスローします。<br /><br /> ときにこの型は、(以下に示す規則に基づく) xsd:string として公開されています。<br /><br /> -形式は、基になるデータベースによって決まります。<br />-値には、実行時の検証は実行されません。|  
-|DTYPE_UTCDATETIME|xsd:dateTime*|DateTime|値は、日付と時刻の両方のコンポーネントを含めることができ、UTC があります。<br /><br /> -に対して xsd:dateTime、UTC ('Z' 表記または UTC オフセット) の値を表現する必要があります。<br />- **DateTime**オブジェクト**DateTime.Kind**する必要があります**DateTimeKind.Utc**です。<br /><br /> 送信メッセージにについては、アダプターは、これらの条件が満たされていることを確認する実行時検証を実行します。検証に失敗した場合、アダプターは例外をスローします。<br /><br /> ときにこの型は、(以下に示す規則に基づく) xsd:string として公開されています。<br /><br /> -形式は、基になるデータベースによって決まります。<br />-値には、実行時の検証は実行されません。|  
-  
- ビジネス サービス メソッドの引数の型を次に示します。  
-  
- 日付  
+ 次の表は、Siebel データ型を[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]方法によって表される、アダプターの BizTalk (XSD 型) と WCF サービス モデル (.NET 型) とサポートしています。 アスタリスクでマークされた型、表の次の注を参照してください。  
+
+
+|     データ型     |    XSD 型    | .NET の種類 |                                                                                                                                                                                                                                                                                                                                                                             説明                                                                                                                                                                                                                                                                                                                                                                              |
+|-------------------|----------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    DTYPE_BOOL     |  xsd:boolean   |  ブール値  |                                                                                                                                                                                                                                                                                                                                                                                  -                                                                                                                                                                                                                                                                                                                                                                                   |
+|  DTYPE_CURRENCY   |  xsd:decimal   |  Decimal  |                                                                                                                                                                                                                                                                                                                                                                                  -                                                                                                                                                                                                                                                                                                                                                                                   |
+|    DTYPE_DATE     | xsd:dateTime\* | DateTime  | 値は世界協定時刻 (UTC) にはできません。<br /><br /> このパターンに従う xsd:dateTime の値が予測されます:"(\d\d\d\d-\d\d-\d\d)T(00:00:00) (.\*)"。<br />- **DateTime**オブジェクト、**DateTime.Kind**あります**DateTimeKind.Unspecified**します。<br /><br /> アダプターによって、時刻部分は無視されます。<br /><br /> 送信メッセージの場合は、アダプターは、指定された値が UTC (z または UTC オフセット) でないことを確認するランタイム検証を実行します。 検証に失敗した場合、アダプターは例外をスローします。<br /><br /> ときにこの型は、xsd:string (以下で説明するルールに基づく) として公開されます。<br /><br /> 形式は、基になるデータベースによって決まります。<br />-値には、実行時の検証を実行されません。 |
+|  DTYPE_DATETIME   | xsd:dateTime\* | DateTime  |                                                                                          値は、日付と時刻の両方のコンポーネントを含めることができ、UTC をすることはできません。<br /><br /> - **DateTime**オブジェクト、 **DateTime.Kind**あります**DateTimeKind.Unspecified**します。<br /><br /> 送信メッセージの場合、アダプターです。 これらの条件が満たされていることを確認するための実行時検証を実行します検証に失敗した場合、アダプターは例外をスローします。<br /><br /> ときにこの型は、xsd:string (以下で説明するルールに基づく) として公開されます。<br /><br /> 形式は、基になるデータベースによって決まります。<br />-値には、実行時検証を実行されません。                                                                                           |
+|     DTYPE_ID      |   xsd:string   |  String   |                                                                                                                                                                                                                                                                                                                                                                                  -                                                                                                                                                                                                                                                                                                                                                                                   |
+|   DTYPE_INTEGER   |    xsd:int     |   Int32   |                                                                                                                                                                                                                                                                                                                                                                                  -                                                                                                                                                                                                                                                                                                                                                                                   |
+|    DTYPE_NOTE     |   xsd:string   |  String   |                                                                                                                                                                                                                                                                                                                                                                                  -                                                                                                                                                                                                                                                                                                                                                                                   |
+|   DTYPE_NUMBER    |  xsd:decimal   |  Decimal  |                                                                                                                                                                                                                                                                                                                                                                                  -                                                                                                                                                                                                                                                                                                                                                                                   |
+|    DTYPE_PHONE    |   xsd:string   |  String   |                                                                                                                                                                                                                                                                                                                                                                                  -                                                                                                                                                                                                                                                                                                                                                                                   |
+|    DTYPE_TEXT     |   xsd:string   |  String   |                                                                                                                                                                                                                                                                                                                                                                                  -                                                                                                                                                                                                                                                                                                                                                                                   |
+|    DTYPE_TIME     | xsd:dateTime\* | DateTime  |                                       値は UTC にはできません。<br /><br /> このパターンに従う xsd:dateTime の値が予測されます: (1753-01-01)T(\d\d:\d\d:\d\d) (.\*)"。<br />- **DateTime**オブジェクト<strong>、DateTime.Kind</strong>あります**DateTimeKind.Unspecified**します。<br /><br /> 送信メッセージの場合は、アダプターは、指定された値が UTC (z または UTC オフセット) でないことを確認するランタイム検証を実行します。 検証に失敗した場合、アダプターは例外をスローします。<br /><br /> ときにこの型は、xsd:string (以下で説明するルールに基づく) として公開されます。<br /><br /> 形式は、基になるデータベースによって決まります。<br />-値には、実行時検証を実行されません。                                       |
+| DTYPE_UTCDATETIME | xsd:dateTime\* | DateTime  |                                                   値は、日付と時刻の両方のコンポーネントを含めることができ、UTC である必要があります。<br /><br /> Xsd:dateTime の値を UTC ('Z' notation または UTC オフセット) で表現する必要があります。<br />- **DateTime**オブジェクト**DateTime.Kind**あります**DateTimeKind.Utc**します。<br /><br /> 送信メッセージの場合、アダプターです。 これらの条件が満たされていることを確認するための実行時検証を実行します検証に失敗した場合、アダプターは例外をスローします。<br /><br /> ときにこの型は、xsd:string (以下で説明するルールに基づく) として公開されます。<br /><br /> 形式は、基になるデータベースによって決まります。<br />-値には、実行時検証を実行されません。                                                   |
+
+ 以下は、ビジネス サービス メソッドの引数の型です。  
+
+ date  
  DTYPE_DATE と同じです。  
-  
+
  数値  
  DTYPE_NUMBER と同じです。  
-  
- 文字列  
+
+ String  
  DTYPE_TEXT と同じです。  
-  
- 階層  
- XSD 型の xsd:string にし、.Net 型の文字列に対応しています。  XML メッセージで CDATA ノードに配置することがあります。  
-  
+
+ Hieararchy  
+ XSD 型の xsd:string を .Net 型の文字列に対応しています。  XML メッセージでは、CDATA のノードに配置することがあります。  
+
  統合オブジェクト  
  階層と同じです。  
-  
- *、アダプターでは、次のようにビジネス コンポーネントで DTYPE_DATE、DTYPE_DATETIME、DTYPE_TIME、および DTYPE_UTCDATETIME のフィールドを表す xsd:dateTime または xsd:string を使用するかどうかを判断します。  
-  
-1.  ビジネス コンポーネントのフィールドが前のデータ型のいずれかの場合、アダプターとして公開、xsd:dateTime 内の型が DateTime 型にマップする .Net)。  
-  
-2.  ビジネス コンポーネントのフィールドがデータ型を持たない場合、アダプターとして公開 (これは、文字列型にマップする .Net) で xsd:string です。  
-  
-## <a name="supported-facets-for-the-xml-schema-types"></a>XML スキーマ型のサポートされているファセット  
+
+ *、アダプターは、次のようにビジネス コンポーネントで DTYPE_DATE、DTYPE_DATETIME、DTYPE_TIME、および DTYPE_UTCDATETIME のフィールドを表す xsd:dateTime または xsd:string を使用するかどうかを決定します。  
+
+1.  ビジネス コンポーネントのフィールドの前のデータ型のいずれかの場合、アダプターとして公開、xsd:dateTime (これは、DateTime 型にマップする .Net) の型。  
+
+2.  ビジネス コンポーネントのフィールドがデータ型を持たない場合、アダプターとして公開 xsd:string (これは、文字列型にマップする .Net) にします。  
+
+## <a name="supported-facets-for-the-xml-schema-types"></a>サポートされている XML スキーマ型のファセット  
  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] XML スキーマ型の次のファセットをサポートしています。  
-  
+
 |Siebel の種類|ファセット|  
 |-----------------|-----------|  
 |DTYPE_BOOL|なし|  
-|DTYPE_CURRENCY|有効桁数 (22)、小数点以下桁数|  
+|DTYPE_CURRENCY|有効桁数 (22) スケール|  
 |DTYPE_DATE|(\d\d\d\d-\d\d-\d\d)T(00:00:00)(.*)|  
 |DTYPE_DATETIME|なし|  
 |DTYPE_ID|MaxLength (15)|  
 |DTYPE_INTEGER|有効桁数 (22)|  
 |DTYPE_NOTE|MaxLength (16384)|  
-|DTYPE_NUMBER|有効桁数 (22)、小数点以下桁数|  
+|DTYPE_NUMBER|有効桁数 (22) スケール|  
 |DTYPE_PHONE|MaxLength (40)|  
 |DTYPE_TEXT|MaxLength (2048)|  
 |DTYPE_TIME|(1753-01-01)T(\d\d:\d\d:\d\d)(.*)|  
 |DTYPE_UTCDATETIME|なし|  
-  
- 制御するいくつかの規則は、次のとおり、ファセット、およびその値を公開する方法とタイミング。  
-  
- フィールドの長さの属性が値 0 より大きい値に設定されている場合 (上記の表では、かっこで指定された) 最大値以下。  
-  
--   有効桁数ファセットは次のように公開されます。  
-  
-    -   有効桁数属性が、フィールドに設定されている場合は、同じ値が有効桁数ファセットとしてパブリッシュされます。  
-  
-    -   有効桁数属性は、フィールドに設定されていない場合、長さの値は、Precision facet としてパブリッシュされます。  
-  
--   場合にのみ両方は、小数点以下桁数のファセットが公開されます。  
-  
-    -   有効桁数属性が発行されました  
-  
-    -   Scale 属性が設定フィールドの値を 0 より大きく、Precision facet の一部としてパブリッシュされた値よりも小さい  
-  
--   MaxLength ファセットは、Length 属性に指定された値です。 これから取得されて、フィールド定義のリポジトリ。 フィールド定義リポジトリに長さが指定されていない場合に、前の表では、かっこで指定された値は公開を取得します。  
-  
+
+ 次にいくつかのルールを管理する方法とタイミング、ファセットと、その値が公開されます。  
+
+ フィールドの長さ属性が 0 より大きい値に設定されている場合、最大値 (上記の表では、かっこで指定)。  
+
+-   有効桁数ファセットは、次のように公開されます。  
+
+    -   有効桁数の属性がフィールドに設定されている場合は、同じ値が有効桁数ファセットとして発行されます。  
+
+    -   有効桁数の属性がフィールドに設定されていない場合、長さの値は、有効桁数ファセットとして発行されます。  
+
+-   場合にだけ、Scale ファセットが発行されます。  
+
+    -   発行された有効桁数属性  
+
+    -   Scale 属性がフィールドの値に設定、0 を超えると、有効桁数ファセットの一部としてパブリッシュ値よりも小さい  
+
+-   MaxLength ファセットは、Length 属性に指定された値です。 これフィールド定義のリポジトリから取得されます。 フィールド定義のリポジトリで、長さが指定されていない場合に、前の表では、かっこで指定された値が公開されます。  
+
 ### <a name="special-cases-related-to-siebel-data-types"></a>Siebel データ型に関連する特殊なケース  
- 次の規則では、ビジネス コンポーネントのフィールドのファセットが使用される操作のコンテキストに基づいてに影響します。 これらの規則は、INSERT および UPDATE 操作のみに適用できます。 クエリ操作では、ビジネス コンポーネントのすべてのフィールドがユーザーに公開されます。  
-  
- **ビジネス コンポーネントのフィールドは、Siebel に必須としてマークされています**  
-  
- ビジネス コンポーネントのフィールドが Siebel システムで必須としてマークされていますが、前の既定のインスタンスまたは後の既定値は、フィールドを設定した場合でも[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]フィールド省略可能としてマークします。 そのため、ユーザーは、挿入または更新する値を提供する場合、アダプターは、その値を処理します。 値が指定されていない場合、Siebel は前 default/後 default 値を使用します。  
-  
- **Siebel の 読み取り専用とマークされていないビジネス コンポーネントのフィールド**  
-  
- ビジネス コンポーネントのフィールドは読み取り専用としてマークされていない場合、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]書き込み可能なフィールドとして公開します。 ただし、これには、いくつかのこの規則の例外があります。 これらの設定は、次のとおりです。  
-  
--   ビジネス コンポーネントのフィールドがある場合、 **Calculated**  フィールドに Siebel、Insert または Update 操作では表示されません Siebel は自動的に対処するため**Calculated**フィールドです。  
-  
--   ビジネス コンポーネントのフィールドは、明示的な結合 (別のテーブルにテーブルの結合) から取得した場合は、通常、読み取り専用であります。 ただし Siebel は、候補リストのフィールドである場合、このフィールドに書き込まれるデータです。 そのため、ビジネス コンポーネントのフィールドから場合、明示的な結合フィールドが候補リストのフィールドではありません、し、これはために表示されません Insert または Update 操作でアダプター クライアントは、このようなフィールドにデータを書き込むことはできません。  
-  
- **ビジネス コンポーネントで指定されていないフィールドのデータ型**  
-  
- Business component のフィールドのデータ型が指定されていない場合、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]次のヒューリスティックを使用して、フィールド メタデータを公開します。  
-  
--   かどうか、このフィールドは、特別なフィールド (つまり候補リストまたは結合など)、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]ビジネス コンポーネント マップ先でマップされたフィールドを検索します。 そのフィールドに関連付けられている型の場合、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]するフィールドの型として公開されます。 ただし、その型が DTYPE_DATE、DTYPE_TIME、DTYPE_DATETIME、または、DTYPE_UTCDATETIME 場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] xsd:string 型としてフィールドを公開します。 マップされたフィールドは、関連付けられた型を持っていない場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] xsd:string 型として、元のフィールドを公開します。  
-  
--   フィールドの候補リストまたは結合フィールドがない場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] xsd:string 型として公開されます。  
-  
- **データ型、フィールド長、または親ビジネス コンポーネントの有効桁数は使用できません。**  
-  
- かどうか、データが型、長さ、または親ビジネス コンポーネント (ビジネス コンポーネントの候補リストまたは MVLs に基づく子ビジネス コンポーネントを含む) の有効桁数のフィールド、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]データ型、長さ、有効桁数、およびスケールに関する情報を取得しますビジネス コンポーネントの候補リストまたは MVL ビジネス コンポーネントです。  
-  
+ 次の規則では、ビジネス コンポーネントのフィールドのファセットが使用される操作のコンテキストに基づいてに影響します。 これらの規則は、INSERT および UPDATE 操作にのみ適用できます。 クエリ操作の場合は、ビジネス コンポーネントのすべてのフィールドは、ユーザーに公開されます。  
+
+ **Siebel の必須としてマークされているビジネス コンポーネントのフィールド**  
+
+ Siebel システムで必須としてマークされたビジネス コンポーネント フィールドがフィールドに、既定の前または後の既定値を設定した場合でも[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]省略可能としてフィールドをマークします。 そのため、ユーザーが値を挿入または更新すると、アダプターはその値を処理します。 値が指定されていない場合、Siebel には、事前 default/後 default 値が使用されます。  
+
+ **Siebel の READ ONLY とマークされていないビジネス コンポーネントのフィールド**  
+
+ ビジネス コンポーネントのフィールドが読み取り専用としてマークされていない場合、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]書き込み可能なフィールドとして公開します。 ただし、この規則の例外のいくつかがあります。 これらの設定は、次のとおりです。  
+
+- ビジネス コンポーネントのフィールドがある場合、 **Calculated**フィールドでは、Siebel、Insert または Update 操作では表示されませんの Siebel が自動的に行ってくれますので**Calculated**フィールド。  
+
+- ビジネス コンポーネントのフィールドを明示的な結合 (別のテーブルにテーブルの結合) を取得した場合、通常は読み取り専用です。 ただし Siebel は、候補リスト フィールドである場合、このフィールドに書き込まれるデータです。 そのため、ビジネス コンポーネントのフィールドは、明示的な結合フィールドが候補リスト フィールドではない場合は、し、これはために表示されません Insert または Update 操作でアダプター クライアントは、このようなフィールドにデータを書き込むことはできません。  
+
+  **ビジネス コンポーネントで指定されていないフィールドのデータ型**  
+
+  ビジネス コンポーネントでフィールドのデータ型が指定されていない場合、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]は、次のヒューリスティックを使用してフィールドのメタデータを公開します。  
+
+- 特別なフィールド (つまり候補リストまたは結合) かどうか、フィールドには、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]は転送先のビジネス コンポーネントにマップされたフィールドを検索します。 そのフィールドにそれに関連付けられている型がある場合、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]フィールドの型として公開されます。 ただし、その型が DTYPE_DATE、DTYPE_TIME、DTYPE_DATETIME、または、DTYPE_UTCDATETIME 場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] xsd:string 型としてフィールドが公開されます。 マップされたフィールドは、関連付けられた型を持っていない場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] xsd:string 型として、元のフィールドが公開されます。  
+
+- フィールドの候補リストまたは結合フィールドがない場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] xsd:string 型として公開されます。  
+
+  **データ型、フィールド長、または親ビジネス コンポーネントの有効桁数は使用できません。**  
+
+  かどうか、データが型長さは、または親ビジネス コンポーネント (ビジネス コンポーネントの候補リストまたは MVLs に基づく子ビジネス コンポーネントを含む) の有効桁数のフィールド、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]データ型、長さ、有効桁数、およびスケールからの情報を取得します。ビジネス コンポーネントの候補リストまたは MVL ビジネス コンポーネント。  
+
 ## <a name="see-also"></a>参照  
- [メッセージと BizTalk Adapter for Siebel eBusiness Applications のメッセージ スキーマ](../../adapters-and-accelerators/adapter-siebel/messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)
+ [メッセージと BizTalk adapter for Siebel eBusiness Applications のメッセージ スキーマ](../../adapters-and-accelerators/adapter-siebel/messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)

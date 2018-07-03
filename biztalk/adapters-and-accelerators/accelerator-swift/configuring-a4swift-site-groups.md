@@ -1,5 +1,5 @@
 ---
-title: A4SWIFT サイト グループの構成 |Microsoft ドキュメント
+title: A4SWIFT サイト グループの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,26 +18,26 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0070f10819ebbde18cdeab9c3bd534ca74bfbcd9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7f19db0461fc4dc5584fa0774ba0476e3ee471b8
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209010"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969771"
 ---
 # <a name="configuring-a4swift-site-groups"></a>A4SWIFT サイト グループの構成
-Message Repair and New Submission の構成時に作成されたドキュメント ライブラリのアクセス許可をロックダウンする対応するサイト グループを作成する必要があります。 前のセクションの例のように、A4SWIFT 管理者は MRSR サイトに移動して、次のサイト グループを設定します。  
+Message Repair and New Submission の構成時に作成されたドキュメント ライブラリのアクセス許可をロックダウンする対応するサイトのグループを作成する必要があります。 前のセクションの例のように、A4SWIFT 管理者は MRSR サイトに移動して、次のサイト グループを設定します。  
   
--   Payments_Creators  
+- Payments_Creators  
   
--   Payments_Repairers  
+- Payments_Repairers  
   
--   Payments_Approvers  
+- Payments_Approvers  
   
- これらのサイト グループの列ごとには、次のアクセス許可を適用してください。  
+  これらのサイト グループごとには、次のアクセス許可を適用してください。  
   
--   **項目を表示します。** ドキュメント ライブラリのドキュメント、リストの項目を表示では、Web ディスカッションのコメントを表示し、リストの電子メール通知を設定します。  
+- **項目を表示します。** リスト、ドキュメント ライブラリにアイテムを表示、Web ディスカッション コメントを表示およびリストの電子メール通知を設定します。  
   
--   **ページを表示します。** Web サイト内のページを表示します。  
+- **ページを表示します。** Web サイトでページを表示します。  
   
- 各ユーザーの支払い部門では、役割に参加している、する必要があります、新しいサイトのユーザーを作成し、そのユーザーに対応するサイト グループを割り当てます[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]MMC の構成時に作成されたロールです。
+  支払部門のロールに参加しているユーザーごとに、新しいサイトのユーザーを作成し、そのユーザーに対応するサイトのグループに割り当てする必要があります。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] MMC 構成中に作成されたロール。

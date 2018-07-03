@@ -1,5 +1,5 @@
 ---
-title: インストールと構成 BizTalk Accelerator for SWIFT のメッセージング サーバー |Microsoft ドキュメント
+title: インストールと構成 BizTalk Accelerator for SWIFT メッセージング サーバー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,24 +16,24 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef434603c1740375f4399f368e89f99a923cba86
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1034b7b3f0d4761446e1cbc1b9a3cc296cb01efb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209394"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36968987"
 ---
-# <a name="installing-and-configuring-biztalk-accelerator-for-swift-on-messaging-servers"></a>インストールと構成 BizTalk Accelerator for SWIFT のメッセージング サーバー
-インストールおよび構成する方法について説明[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]メッセージング サーバーにします。 これらのサーバーは主に SWIFT ネットワークとの通信に使用します。  
-  
+# <a name="installing-and-configuring-biztalk-accelerator-for-swift-on-messaging-servers"></a>インストールと構成 BizTalk Accelerator for SWIFT メッセージング サーバー
+このセクションは、インストールして構成する方法を説明します[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]メッセージング サーバーにします。 これらのサーバーは主に、SWIFT ネットワークとの通信に使用します。  
+
 ### <a name="to-install-and-configure-biztalk-accelerator-for-a4swift-on-the-messaging-server"></a>インストールして、メッセージング サーバーに A4SWIFT の BizTalk アクセラレータを構成するには  
-  
-1.  カスタム インストールを実行[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]です。 インストール、 **MRSR**と**SWIFT メッセージ**機能します。  
-  
-    > [!NOTE]
-    >  このサーバーに MRSR サイトがあるないために、Message Repair and New Submission の機能の Web コンポーネントをインストールする必要はありません。  
-  
-    > [!NOTE]
-    >  インストールが完了したら、構成ウィザードを開始します。  
-  
-2.  Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]構成コンソールで、構成**MCRR**です。
+
+1. カスタム インストール実行[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]します。 インストール、 **MRSR**と**SWIFT メッセージ**機能します。  
+
+   > [!NOTE]
+   >  このサーバーに MRSR サイトがあるないために、Message Repair and New Submission の機能の Web コンポーネントをインストールする必要はありません。  
+
+   > [!NOTE]
+   >  インストールが完了したら、構成ウィザードが開始されます。  
+
+2. Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]構成コンソールで、構成**MCRR**します。

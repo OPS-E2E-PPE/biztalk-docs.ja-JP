@@ -1,5 +1,5 @@
 ---
-title: チュートリアルのフォルダーを作成 |Microsoft ドキュメント
+title: チュートリアル フォルダーの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b2c07732a5ac9183f4648822a331130cb67edbd
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 4345daef579d228983e475828193ae2637fc0e48
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25960320"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36978683"
 ---
-# <a name="create-the-tutorial-folder"></a>チュートリアルのフォルダーを作成します。
-次のフォルダーを使用して、作成[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラー。  
+# <a name="create-the-tutorial-folder"></a>チュートリアル フォルダーを作成します。
+使用して次のフォルダーを作成する[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラー。  
   
--   \<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\Interrogative チュートリアルではアクセラレータ  
+- \<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\Interrogative チュートリアルのアクセラレータ  
   
-     このシナリオでは、キー、クエリ、応答、および使用する受信確認応答ファイルを保存するのにには、このフォルダーを使用します。  
+   このシナリオでは、キー、クエリ、応答、および使用する受信確認ファイルを保存するのにには、このフォルダーを使用します。  
   
- 進みます[QRY^Q01.txt ファイルを作成](../../adapters-and-accelerators/accelerator-hl7/create-the-qry-q01-txt-file.md)です。
+  進みます[qry ^ q01.txt ファイル作成](../../adapters-and-accelerators/accelerator-hl7/create-the-qry-q01-txt-file.md)です。

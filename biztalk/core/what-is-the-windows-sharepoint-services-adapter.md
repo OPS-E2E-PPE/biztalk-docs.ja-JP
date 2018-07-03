@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a25bc378bdbb4c8bef34c3cff0140d03094faad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c5d97c55918b82a639e502681db9289befa9f32
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22291138"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973531"
 ---
 # <a name="what-is-the-windows-sharepoint-services-adapter"></a>Windows SharePoint Services アダプターについて 
 Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプタによって、Windows SharePoint Services と Microsoft Office InfoPath の密接な統合を実現できます。 このトピックでは、Windows SharePoint Services アダプタの機能および動作の概要について説明します。  
@@ -35,36 +35,36 @@ Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes
   
 -   XML またはバイナリの BizTalk Server メッセージを SharePoint Services ドキュメント ライブラリに送信する機能。  
   
--   InfoPath との統合: Windows SharePoint Services サイトから開かれたときに InfoPath で自動的に開くへの送信の BizTalk Server の XML メッセージを変換することができます。  
+-   InfoPath との統合: Windows SharePoint Services サイトから開いたときに InfoPath で自動的に開きますへの送信の BizTalk Server の XML メッセージを変換することができます。  
   
 -   Windows SharePoint Services に送信されるメッセージのプロパティの昇格。 オーケストレーション インスタンス ID、メッセージ ID、またはメッセージから抽出した値など、メッセージに関する BizTalk Server メタデータで、最大 16 列の SharePoint 列を更新できます。  
   
 -   メッセージの内容および BizTalk Server プロパティに基づくファイル名の定義。  
   
--   任意の一覧にドキュメントを送信する機能 (の代わりに、ドキュメント ライブラリに) ここで Windows SharePoint Services では、ドキュメント自体は格納されませんが、プロパティの昇格が発生するので、新しい一覧項目が作成され、列の値が取得されます。メッセージです。  
+-   任意の一覧にドキュメントを送信する機能 (の代わりに、ドキュメント ライブラリに) この場合、ドキュメント自体は、Windows SharePoint Services に格納されていないが、プロパティの昇格が発生するので、新しいリスト アイテムが作成され、列の値を取得。メッセージ。  
   
--   任意のドキュメント ライブラリの任意のビューからメッセージを受信し、指定したファイル名を使用して指定されたドキュメント ライブラリに保存して整理する機能。  
+-   任意のドキュメント ライブラリの任意のビューからメッセージを受信し、指定したファイル名を使用して指定されたドキュメント ライブラリにアーカイブできる機能。  
   
--   BizTalk Server で Windows SharePoint Services アダプターのプロパティの昇格: Windows SharePoint Services ファイルの情報はメッセージ コンテキスト プロパティとして BizTalk Server で使用可能になります。 メッセージ コンテキスト プロパティには、パイプライン、オーケストレーションなどからアクセスできます。カスタム SharePoint 列には WSS.InPropertiesXml ドキュメント経由でアクセスできます。  
+-   BizTalk Server で Windows SharePoint Services アダプターのプロパティの昇格: Windows SharePoint Services ファイルの情報はメッセージ コンテキスト プロパティとして BizTalk Server で提供されます。 メッセージ コンテキスト プロパティには、パイプライン、オーケストレーションなどからアクセスできます。カスタム SharePoint 列には WSS.InPropertiesXml ドキュメント経由でアクセスできます。  
   
--   動的ポートの完全なサポート: 送信アダプターは、(送信ポートの作成時に、ユーザーによって定義された) 静的 URI バインドまたは (メッセージを送信するときに、オーケストレーションで定義された) 動的 URI バインドをサポートできます。 物理送信ポートや動的送信ポートのすべての構成情報は、WSS.Filename、WSS.ConfigTimeout などのメッセージ コンテキスト プロパティから定義できます。  
+-   完全に動的ポートのサポート: 送信アダプターは、静的 URI バインドが (送信ポートが作成されるときにユーザーによって定義) または (メッセージを送信するときに、オーケストレーションで定義された)、動的 URI バインドをサポートできます。 物理送信ポートや動的送信ポートのすべての構成情報は、WSS.Filename、WSS.ConfigTimeout などのメッセージ コンテキスト プロパティから定義できます。  
   
 -   パフォーマンス カウンター  
   
 ## <a name="how-the-windows-sharepoint-services-adapter-works"></a>Windows SharePoint Services アダプターの動作  
  Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプタは、次の 3 つの主要コンポーネントから構成されています。  
   
--   Windows SharePoint Services アダプタ Web サービス  
+- Windows SharePoint Services アダプタ Web サービス  
   
--   Windows SharePoint Services 受信アダプタ  
+- Windows SharePoint Services 受信アダプタ  
   
--   Windows SharePoint Services 送信アダプタ  
+- Windows SharePoint Services 送信アダプタ  
   
- Windows SharePoint Services サーバーには、Windows SharePoint Services のライブラリおよび一覧にアクセスするための Web サービス (BTSharePointAdapterWS.asmx) がインストールされます。 この Web サービスは、SharePoint ライブラリのドキュメントを取得、配置、削除、およびアーカイブするメソッドを公開しています。 受信アダプタは Web サービスからファイルを受け取り、送信アダプタは Web サービスにファイルを渡します。  
+  Windows SharePoint Services サーバーには、Windows SharePoint Services のライブラリおよび一覧にアクセスするための Web サービス (BTSharePointAdapterWS.asmx) がインストールされます。 この Web サービスは、SharePoint ライブラリのドキュメントを取得、配置、削除、およびアーカイブするメソッドを公開しています。 受信アダプタは Web サービスからファイルを受け取り、送信アダプタは Web サービスにファイルを渡します。  
   
- 次の図は、これらの機能を提供する Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプタの主要なコンポーネントを示しています。  
+  次の図は、これらの機能を提供する Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプタの主要なコンポーネントを示しています。  
   
- ![](../core/media/bts-dev-adapters-wss-architecture.gif "BTS_Dev_Adapters_WSS_Architecture")  
+  ![](../core/media/bts-dev-adapters-wss-architecture.gif "BTS_Dev_Adapters_WSS_Architecture")  
   
 ### <a name="receiving-documents-from-windows-sharepoint-services"></a>Windows SharePoint Services からのドキュメントの受信  
  受信アダプタは、Windows SharePoint Services ドキュメント ライブラリのビューにポーリングして、 Windows SharePoint Services サーバーにある、Windows SharePoint Services オブジェクト モデルを使用する Web メソッドを呼び出し、ライブラリの参照、ファイルのチェックアウト、およびアダプタへのファイル データ返信を行います。 その後、BizTalk Server メッセージ ボックスにファイルを送信して、Windows SharePoint Services からファイルを削除またはアーカイブする別のメソッドを呼び出します。 Windows SharePoint Services ライブラリのファイルをフィルタ選択するため、アダプタが Windows SharePoint Services のビューから Windows SharePoint Services のライブラリにポーリングします。  
@@ -90,7 +90,7 @@ Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes
  Windows SharePoint Services アダプタを (任意の XML およびドキュメント ライブラリではなく) InfoPath フォームおよびフォーム ライブラリと使用するときは、昇格させたプロパティを送信アダプタで設定する必要はありません。 代わりに、(メッセージを直接変更するか、降格するプロパティから間接的に変更して) ドキュメントをオーケストレーション内で変更できます。 値は Windows SharePoint Services により自動的に昇格されます。  
   
 ## <a name="security-considerations-for-the-windows-sharepoint-services-adapter"></a>Windows SharePoint Services アダプタのセキュリティに関する考慮事項  
- Windows SharePoint Services アダプタは、Windows SharePoint Services Web サイトで実行される BTSharePointAdapterWS Web サービスと、BizTalk Server ホスト インスタンス プロセス内の BizTalk Server で実行されるアダプタ ランタイムという 2 つのサブシステムから構成されています。 アダプタ ランタイムから呼び出す BTSharePointAdapterWS Web サービスには、Windows SharePoint Services 内の特定の作業を実行できるアクセス許可が必要です。 アダプタ ランタイムは呼び出し元として実行されるので、アクセス許可は呼び出し元に与える必要があります。 つまり、BizTalk ホスト インスタンスを行う必要があります、**共同作成者**を送信し、そのサイトからメッセージを受信できるように、SharePoint サイトでします。 BTSharePointAdapterWS Web サービスは、のメンバーによってのみ呼び出すことができます、 **SharePoint Enabled Hosts**グループ。 Web サービスと対話する、アダプター ランタイムを実行している BizTalk ホスト インスタンスを許可するためにホスト インスタンスの Windows アカウント行う必要がありますのメンバー、 **SharePoint Enabled Hosts**グループ。 SharePoint のメンバーのアカウントを追加し、ホスト インスタンスを作成したり、このグループにもからアカウントを削除するには、管理者の責任において、**共同作成者**ロール。  
+ Windows SharePoint Services アダプタは、Windows SharePoint Services Web サイトで実行される BTSharePointAdapterWS Web サービスと、BizTalk Server ホスト インスタンス プロセス内の BizTalk Server で実行されるアダプタ ランタイムという 2 つのサブシステムから構成されています。 アダプタ ランタイムから呼び出す BTSharePointAdapterWS Web サービスには、Windows SharePoint Services 内の特定の作業を実行できるアクセス許可が必要です。 アダプタ ランタイムは呼び出し元として実行されるので、アクセス許可は呼び出し元に与える必要があります。 つまり、BizTalk ホスト インスタンスを行う必要があります、**共同作成者**そのサイトからメッセージを送受信するには、SharePoint サイト。 BTSharePointAdapterWS Web サービスは、のメンバーでのみ呼び出すことができます、 **SharePoint Enabled Hosts**グループ。 アダプター ランタイムや、Web サービスとの対話を実行する BizTalk ホスト インスタンスを許可するためにホスト インスタンスの Windows アカウント行う必要がありますのメンバー、 **SharePoint Enabled Hosts**グループ。 アカウント、SharePoint のメンバーを追加し、ホスト インスタンスを作成したり、このグループにもからアカウントを削除するには、管理者の責任は**共同作成者**ロール。  
   
 |コンポーネント|プロセス ID|権限|  
 |---------------|----------------------|----------------|  
@@ -98,13 +98,13 @@ Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes
 |アダプタ ランタイム|BizTalk ホストの ID|なし|  
 |Windows SharePoint Services オブジェクト モデル|なし|SharePoint Enabled Hosts グループのメンバーである必要があります、**共同作成者**SharePoint Services のロール。|  
   
- BizTalk Server のセットアップがのメンバーであるアカウントのみにするように、BTSharePointAdapterWS Web サービスにアクセス許可を構成、 **SharePoint Enabled Hosts**グループがこの Web サービスにアクセスできます。 管理者がそのホストに関連付けられた NT グループを追加する必要があるホストで Windows SharePoint Services アダプターを実行する場合、 **SharePoint Enabled Hosts**グループを追加、 **SharePoint Enabled Hosts**グループ、Windows SharePoint Services に**共同作成者**ロール。  
+ BizTalk Server セットアップではアカウントのみのメンバーであるように BTSharePointAdapterWS Web サービスのアクセス許可を構成、 **SharePoint Enabled Hosts**グループがこの Web サービスにアクセスできます。 管理者がホストに関連付けられた NT グループを追加する必要が、Windows SharePoint Services アダプターを実行するホストを実行する場合に、 **SharePoint Enabled Hosts**グループを追加したり、 **SharePoint Enabled Hosts**グループ、Windows SharePoint Services に**共同作成者**ロール。  
   
  Windows SharePoint Services のファイル、一覧、およびドキュメント ライブラリへのアクセス許可は、Windows SharePoint Services のセキュリティで制限します。 メッセージは、Windows SharePoint Services から直接 BizTalk Server に送信されます。 アダプタ ランタイムと Web サービスの間の通信は、HTTP または HTTPS 経由で行われます。  
   
  アダプタでは、BTSharePointAdapterWS Web サービスが Windows SharePoint Services サイトと同一の HTTP スキーマ (HTTP または HTTPS) を使用していることを前提としています。 つまり、セキュリティで保護された IIS Web サイトに Windows SharePoint Services サイトが作成されている場合、BTSSharePointAdapterWS Web サービスとの通信には HTTPS が使用され、サーバー証明書がない IIS Web サイトに Windows SharePoint Services サイトが作成されている場合、HTTP が使用されます。  
   
 ## <a name="see-also"></a>参照  
- [設定して、Windows SharePoint Services アダプターの展開](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)   
- [Windows SharePoint Services アダプターを構成します。](../core/configuring-the-windows-sharepoint-services-adapter.md)   
- [Windows SharePoint Services アダプタのチュートリアル](../core/windows-sharepoint-services-adapter-walkthroughs.md)
+ [設定して、Windows SharePoint Services アダプターを展開します。](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)   
+ [Windows SharePoint Services アダプターの構成](../core/configuring-the-windows-sharepoint-services-adapter.md)   
+ [Windows SharePoint Services アダプターのチュートリアル](../core/windows-sharepoint-services-adapter-walkthroughs.md)

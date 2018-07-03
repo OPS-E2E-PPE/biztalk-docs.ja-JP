@@ -1,5 +1,5 @@
 ---
-title: ツール |Microsoft ドキュメント
+title: ツール |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34ac99b3342a22a8708a9673f5091baed0cd4a0b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1916b5b182fdd11718254c738c8df83a6ca6e6c7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22213914"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985067"
 ---
 # <a name="tools"></a>ツール
-このセクションに含まれているユーティリティを使用するための手順を説明する、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK)。  
+このセクションでは、Microsoft に含まれるユーティリティを使用するための説明[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK)。  
   
  このセクションには、次のトピックが含まれています。  
   

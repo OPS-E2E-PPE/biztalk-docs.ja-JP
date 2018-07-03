@@ -1,5 +1,5 @@
 ---
-title: WCF 受信アダプター |Microsoft ドキュメント
+title: WCF アダプターの受信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -23,12 +23,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdd4d6335723d068333403b4c9d811d96db058e9
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 4c30d858c08da8a0f8d71d56397e43d591b3d773
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25972696"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965835"
 ---
 # <a name="wcf-receive-adapter"></a>WCF 受信アダプタ
 WCF 受信アダプターを使用すると、WCF サービス要求を受信できます。  
@@ -36,13 +36,13 @@ WCF 受信アダプターを使用すると、WCF サービス要求を受信で
 ## <a name="extracting-the-biztalk-message-body-from-the-soap-message"></a>SOAP メッセージからの BizTalk メッセージ本文の抽出  
  受信 BizTalk メッセージ本文を SOAP メッセージから抽出するには、次のいずれかのオプションを使用します。  
   
--   SOAP Body 要素のコンテンツを抽出する  
+- SOAP Body 要素のコンテンツを抽出する  
   
--   SOAP エンベロープ全体を抽出する  
+- SOAP エンベロープ全体を抽出する  
   
--   XPath 式を使用して SOAP エンベロープ内の要素のコンテンツを抽出する  
+- XPath 式を使用して SOAP エンベロープ内の要素のコンテンツを抽出する  
   
- [トランスポートのプロパティ] ダイアログ ボックスで、これらのオプションを構成できます。  
+  [トランスポートのプロパティ] ダイアログ ボックスで、これらのオプションを構成できます。  
   
 #### <a name="extract-the-content-of-the-soap-body-element"></a>SOAP Body 要素のコンテンツを抽出します。  
  このオプションを選択すると、SOAP Body 要素の内部コンテンツが、SOAP メッセージから読み込まれ、BizTalk メッセージのボディ部に挿入されます。  
@@ -57,19 +57,19 @@ WCF 受信アダプターを使用すると、WCF サービス要求を受信で
 >  XML エンコードを選択すると、要素の外部コンテンツが、XPath 式で検出され、ボディ部に挿入されます。  
   
 ## <a name="handling-web-services-headers"></a>Web サービス ヘッダーの処理  
- 受信アダプターでは、標準 Web サービス ヘッダーのサブセットを BizTalk メッセージ コンテキストに昇格させて、これらのヘッダーの値に基づいたアクセスおよびルーティングを容易にします。 次の表に、受信アダプターによってメッセージ コンテキストに保存されるプロパティを示します。 プロパティは、次の名前空間で定義されて: http://www.w3.org/2005/addressing および http://schemas.microsoft.com/BizTalk/2006/Adapters/WCF-properties です。  
+ 受信アダプターでは、標準 Web サービス ヘッダーのサブセットを BizTalk メッセージ コンテキストに昇格させて、これらのヘッダーの値に基づいたアクセスおよびルーティングを容易にします。 次の表に、受信アダプターによってメッセージ コンテキストに保存されるプロパティを示します。 プロパティは、次の名前空間で定義されます:http://www.w3.org/2005/addressingとhttp://schemas.microsoft.com/BizTalk/2006/Adapters/WCF-propertiesします。  
   
-|Header|BizTalk プロパティ名|昇格の有無|  
+|[ヘッダー]|BizTalk プロパティ名|昇格の有無|  
 |------------|---------------------------|------------------|  
-|操作|操作|可|  
-|MessageID|MessageID|不可|  
-|変換先|変換先|可|  
-|ReplyTo/Address|ReplyTo|可|  
-|From/Address|From|可|  
-|Sequence/Identifier|SequenceId|可|  
-|Sequence/MessageNumber|SequenceNumber|可|  
-|Sequence/LastMessage|SequenceLastMessage|可|  
-|\<soap ヘッダー\>|InboundHeaders|不可|  
+|操作|操作|はい|  
+|MessageID|MessageID|いいえ|  
+|変換先|変換先|はい|  
+|ReplyTo/Address|ReplyTo|はい|  
+|From/Address|From|はい|  
+|Sequence/Identifier|SequenceId|はい|  
+|Sequence/MessageNumber|SequenceNumber|はい|  
+|Sequence/LastMessage|SequenceLastMessage|はい|  
+|\<soap ヘッダー:\>|InboundHeaders|いいえ|  
   
 ## <a name="see-also"></a>参照  
  [WCF アダプタのメッセージ本文の指定](../core/specifying-the-message-body-for-the-wcf-adapters.md)   

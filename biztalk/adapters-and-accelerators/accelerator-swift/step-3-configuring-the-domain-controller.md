@@ -1,5 +1,5 @@
 ---
-title: '手順 3: ドメイン コント ローラーの構成 |Microsoft ドキュメント'
+title: '手順 3: ドメイン コント ローラーの構成 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,52 +15,53 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b2c89b3db94ce28376ab988a4342931c6d7dcad
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: a0196e2a2549831b1a8dcc043b5c8070e2f9fdab
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007267"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36981459"
 ---
 # <a name="step-3-configuring-the-domain-controller"></a>手順 3: ドメイン コント ローラーの構成
-このセクションのドメイン コント ローラーを構成する方法を説明する、[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]展開します。 具体的には、このセクションの内容がインストールおよび構成する方法について説明します[!INCLUDE[btsAD](../../includes/btsad-md.md)]次の手順で。  
-  
+このセクションで、ドメイン コント ローラーを構成する方法を説明します、[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]展開します。 具体的には、このセクションでをインストールして構成する方法を説明します。[!INCLUDE[btsAD](../../includes/btsad-md.md)]によって、次の手順。  
+
 -   Active Directory と DNS をインストールします。  
-  
+
 -   必要なアカウントを作成します。  
-  
+
 -   ドメインに参加します。  
-  
+
 ## <a name="installing-active-directory-and-dns"></a>Active Directory と DNS をインストールします。  
- 使用して、[!INCLUDE[btsAD](../../includes/btsad-md.md)]インストール ウィザードをドメイン コント ローラーを構成するプロセスを簡略化します。 Active Directory をインストールすると、ドメイン ネーム システム (DNS) の逆引き参照ゾーンを作成します。 作成し、正引きおよび逆引き参照ゾーンにホストを追加します。  
-  
+ 使用して、[!INCLUDE[btsAD](../../includes/btsad-md.md)]インストール ウィザードをドメイン コント ローラーを構成するプロセスを簡略化します。 Active Directory をインストールした後は、ドメイン ネーム システム (DNS) の逆引き参照ゾーンを作成します。 作成し、前方および逆引き参照ゾーンにホストを追加します。  
+
 ## <a name="creating-the-required-accounts"></a>必要なアカウントを作成します。  
- 次の表は、グローバル セキュリティ グループを作成する方法の詳細を提供します。 次の作成**グローバル セキュリティ**グループと、独自の名前付け規則を使用してドメイン コント ローラー上のユーザーです。 以下の例は、わかりやすくするために使用されます。 作成されたグループを一覧で、指定したメンバーを追加します。  
-  
- グループを作成するときに選択**グローバル**グループのスコープと**セキュリティ**グループの種類のです。  
-  
-|アカウントまたはグループの名前|型|Description|メンバー|  
-|---------------------------|----------|-----------------|-------------|  
-|管理|ユーザー|すべての BizTalk コンピューター、ドメイン コント ローラーと SQL Server を実行しているすべてのコンピューターのローカル管理者アカウント。<br /><br /> これは、アプリケーションのインストールに使用されるドメイン ユーザー アカウント (BizTalk Server [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]、および SQL Server) および A4SWIFT のデザイン時に BizTalk Accelerator を構成するためです。 A4SWIFT のインストールを実行するドメイン管理者特権を持っている必要はありません。 管理者ユーザー アカウントが Domain Users グループ、ドメインの BizTalk Server 管理者グループ、およびローカルの Administrators グループのメンバーにする必要があります。||  
-|SQLSvc|ユーザー|SQL Server サービスを実行するためのアカウント||  
-|SSOSvc|ユーザー|シングル サインオン (SSO) サービスを実行するためのアカウント||  
-|HostSvc|ユーザー|BizTalk ホスト サービスを実行するためのアカウント||  
-|IsolatedSvc|ユーザー|BizTalk の分離サービスを実行するためのアカウント||  
-|BAMSvc|ユーザー|BAMPortal、BAMAlerts、および BAMTools の BizTalk Server の構成に必要な||  
-|BRESvc|ユーザー|ルール エンジン更新サービスのサービスを実行するためのアカウント||  
-|Domain Admins|ドメイン グループ|ドメイン管理者のグローバル ドメイン グループ アカウント||  
-|BizTalk 分離ホスト ユーザー|ドメイン グループ|BizTalk 分離ホスト (ホスト プロセスが HTTP および SOAP など、BizTalk Server で実行されていない) へのアクセスを持つアカウントのグローバル ドメイン グループです。|\<IsolatedSvc\>、 \<HostSvc\>|  
-|BizTalk Server 管理者|ドメイン グループ|フレームワークの構成ウィザードに含まれる管理タスクを実行して、BizTalk Server を管理するために必要な最小限の特権を持つグローバル ドメイン グループ アカウント。|\<管理者\>|  
-|BizTalk Application Users|ドメイン グループ|BizTalk アプリケーション ユーザーのグローバル ドメイン グループ アカウント。|\<HostSvc\>|  
-|BizTalk Server オペレータ|ドメイン グループ|インストールした後、BizTalk Server 環境を操作するために必要なタスクを実行するために必要な最低限の権限を持つグループです。||  
-|SharePoint 対応ホスト|ドメイン グループ|Windows SharePoint Services アダプター Web サービスを呼び出すアクセス許可を持つ Windows グループ。|\<HostSvc\>|  
-|SSO 管理者|ドメイン グループ|SSO 管理者のグローバル ドメイン グループ アカウント。|\<Admin\>、 \<SSOSvc\>|  
-|SSO 関連管理者|ドメイン グループ|グローバル ドメイン グループ アカウントの SSO 関連管理者|\<管理者\>|  
-|A4SWIFT のユーザー|ドメイン グループ|A4SWIFT の基本的なタスクを実行するために必要な最小限の特権を持つグローバル ドメイン グループ アカウント。|\<HostSvc\>、追加のユーザーのネットワーク|  
-|A4SWIFT の管理者|ドメイン グループ|A4SWIFT を管理するために必要な最小限の特権を持つグローバル ドメイン グループ アカウント。|\<管理者\>|  
-  
+ 次の表は、グローバル セキュリティ グループを作成する方法の詳細を提供します。 次の作成**グローバル セキュリティ**グループと名前付け規則を使用してドメイン コント ローラー上のユーザー。 以下の例は、わかりやすくするために使用されます。 一覧で、作成したグループに指定されたメンバーを追加します。  
+
+ グループを作成するときに選択**Global**グループのスコープと**セキュリティ**グループ タイプ用。  
+
+
+|     アカウントまたはグループの名前     |     型     |                                                                                                                                                                                                                                                                                                                          説明                                                                                                                                                                                                                                                                                                                          |                Members                |
+|-------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
+|             管理             |     ユーザー     | すべての BizTalk コンピューター、ドメイン コント ローラーおよび SQL Server を実行しているすべてのコンピューターのローカル管理者アカウント。<br /><br /> これはアプリケーションのインストールに使用されるドメイン ユーザー アカウント (BizTalk Server では、 [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]、および SQL Server) および A4SWIFT のデザイン時に BizTalk Accelerator を構成するためです。 A4SWIFT のインストールを実行するドメイン管理者特権を持っている必要はありません。 管理者のユーザー アカウントが Domain Users グループ、ドメインの BizTalk Server 管理者グループ、およびローカルの Administrators グループのメンバーにする必要があります。 |                                       |
+|            SQLSvc             |     ユーザー     |                                                                                                                                                                                                                                                                                                          SQL Server サービスを実行するためのアカウント                                                                                                                                                                                                                                                                                                           |                                       |
+|            SSOSvc             |     ユーザー     |                                                                                                                                                                                                                                                                                                     シングル サインオン (SSO) サービスを実行するためのアカウント                                                                                                                                                                                                                                                                                                      |                                       |
+|            HostSvc            |     ユーザー     |                                                                                                                                                                                                                                                                                                         BizTalk ホスト サービスを実行するためのアカウント                                                                                                                                                                                                                                                                                                          |                                       |
+|          IsolatedSvc          |     ユーザー     |                                                                                                                                                                                                                                                                                                       分離 BizTalk サービスを実行するためのアカウント                                                                                                                                                                                                                                                                                                        |                                       |
+|            BAMSvc             |     ユーザー     |                                                                                                                                                                                                                                                                                        BAMPortal、BAMAlerts、および BAMTools の BizTalk Server 構成に必要な                                                                                                                                                                                                                                                                                        |                                       |
+|            BRESvc             |     ユーザー     |                                                                                                                                                                                                                                                                                                  ルール エンジン更新サービスのサービスを実行するためのアカウント                                                                                                                                                                                                                                                                                                   |                                       |
+|         Domain Admins         | ドメイン グループ |                                                                                                                                                                                                                                                                                                     ドメイン管理者のグローバル ドメイン グループ アカウント                                                                                                                                                                                                                                                                                                     |                                       |
+|  BizTalk 分離ホスト ユーザー  | ドメイン グループ |                                                                                                                                                                                                                                                       BizTalk 分離ホスト (HTTP や SOAP などの BizTalk Server で実行されていないホスト プロセス) にアクセスできるアカウントのグローバル ドメイン グループです。                                                                                                                                                                                                                                                       |     \<IsolatedSvc\>、 \<HostSvc\>      |
+| BizTalk Server 管理者 | ドメイン グループ |                                                                                                                                                                                                                                   構成フレームワーク ウィザードに含まれる管理タスクを実行して、BizTalk Server を管理するために必要な最小限の特権を持つグローバル ドメイン グループ アカウント。                                                                                                                                                                                                                                    |               \<管理者\>               |
+|   BizTalk Application Users   | ドメイン グループ |                                                                                                                                                                                                                                                                                                  BizTalk アプリケーション ユーザーのグローバル ドメイン グループ アカウント。                                                                                                                                                                                                                                                                                                   |              \<HostSvc\>              |
+|   BizTalk Server オペレータ    | ドメイン グループ |                                                                                                                                                                                                                                                         インストール後に、BizTalk Server 環境を運用に必要なタスクを実行するために必要な最小限の特権を持つグループです。                                                                                                                                                                                                                                                          |                                       |
+|   SharePoint 対応ホスト    | ドメイン グループ |                                                                                                                                                                                                                                                                             Windows SharePoint Services アダプター Web サービスを呼び出すアクセス許可を持つ Windows グループ。                                                                                                                                                                                                                                                                              |              \<HostSvc\>              |
+|      SSO 管理者       | ドメイン グループ |                                                                                                                                                                                                                                                                                                      SSO 管理者のグローバル ドメイン グループ アカウント。                                                                                                                                                                                                                                                                                                      |         \<管理者\>、 \<SSOSvc\>         |
+| SSO 関連管理者  | ドメイン グループ |                                                                                                                                                                                                                                                                                                 グローバル ドメイン グループ アカウントの SSO 関連管理者                                                                                                                                                                                                                                                                                                  |               \<管理者\>               |
+|         A4SWIFT ユーザー         | ドメイン グループ |                                                                                                                                                                                                                                                                            A4SWIFT の基本的なタスクを実行するために必要な最小限の特権を持つグローバル ドメイン グループ アカウント。                                                                                                                                                                                                                                                                            | \<HostSvc\>、追加のネットワーク ユーザー |
+|    A4SWIFT 管理者     | ドメイン グループ |                                                                                                                                                                                                                                                                                  A4SWIFT を管理するために必要な最小限の特権を持つグローバル ドメイン グループ アカウント。                                                                                                                                                                                                                                                                                   |               \<管理者\>               |
+
 > [!NOTE]
->  すべてのグループ アカウントは、グローバル セキュリティ アカウントとローカルではないドメイン アカウントにする必要があります。 (Net localgroup を使用して作成される) のローカル ドメイン グループ アカウントを使用している場合、セットアップ プログラム[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]特定を検証できません[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ドメイン ユーザー。  
-  
+>  すべてのグループ アカウントには、グローバル セキュリティ アカウントとローカル ドメイン アカウントがあります。 (Net localgroup を使用して作成される)、ローカル ドメイン グループ アカウントを使用している場合、セットアップ プログラム[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]特定を検証できません[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ドメイン ユーザーです。  
+
 ## <a name="joining-the-domain"></a>ドメインに参加します。  
- 作成した後、ドメインおよびドメイン コント ローラーを再起動して、各サーバーをドメインに参加させます。
+ 作成した後、ドメインとドメイン コント ローラーを再起動して、各サーバーをドメインに参加させます。

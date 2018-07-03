@@ -1,5 +1,5 @@
 ---
-title: メタデータ エラー |Microsoft ドキュメント
+title: メタデータ エラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,45 +12,45 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4dce5fc9eb944eccbeed57073c2546f81825ec6f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 07167c2c0189c36f7b1a321d81bd0070398953e8
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262946"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36975123"
 ---
 # <a name="metadata-errors"></a>メタデータ エラー
-診断および WCF のメタデータ エラーを解決するための情報です。  
+診断と WCF メタデータのエラーの解決に関する情報。  
   
 ## <a name="error-consuming-wcf-service-metadata"></a>WCF サービスのメタデータを使用中にエラーが発生しました
 
-||エラーの詳細|  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|イベント ID|0|  
-|イベント ソース|0|  
-|コンポーネント|0|  
-|シンボル名|0|  
-|メッセージ テキスト|WCF サービスのメタデータを使用中にエラーが発生しました|  
+|                 |                                   エラーの詳細                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  製品名   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| 製品バージョン |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    イベント ID     |                                         0                                          |
+|  イベント ソース   |                                         0                                          |
+|    コンポーネント    |                                         0                                          |
+|  シンボル名  |                                         0                                          |
+|  メッセージ テキスト   |                        WCF サービスのメタデータを使用中にエラーが発生しました                        |
   
 ### <a name="explanation"></a>説明  
  このエラーは、サービスのメタデータが使用できないか、有効ではないことを示します。  
   
 ### <a name="user-action"></a>ユーザーの操作  
- サービスのメタデータを修正して使用します (使用する WCF サービスを所有している場合)。 サービス構成エディターに移動 (**svcConfigEditor.exe**) して、構成ファイルを変更します。  それ以外の場合、サービス プロバイダーに問い合わせてください。
+ サービスのメタデータを修正して使用します (使用する WCF サービスを所有している場合)。 サービス構成エディターに移動 (**svcConfigEditor.exe**)、構成ファイルを変更します。  それ以外の場合、サービス プロバイダーにお問い合わせください。
 
 ## <a name="failed-to-get-metadata"></a>メタデータを取得できませんでした
 
-||エラーの詳細|  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|イベント ID|0|  
-|イベント ソース|0|  
-|コンポーネント|0|  
-|シンボル名|0|  
-|メッセージ テキスト|"{0}" からメタデータを取得できませんでした。|  
+|                 |                                   エラーの詳細                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  製品名   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| 製品バージョン |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    イベント ID     |                                         0                                          |
+|  イベント ソース   |                                         0                                          |
+|    コンポーネント    |                                         0                                          |
+|  シンボル名  |                                         0                                          |
+|  メッセージ テキスト   |                          メタデータを取得できませんでした"{0}                          |
   
 ## <a name="explanation"></a>説明  
  このエラーは、メタデータをそのサービスに使用できないことを示します。  

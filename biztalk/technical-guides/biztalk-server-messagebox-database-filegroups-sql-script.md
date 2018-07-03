@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server メッセージ ボックス データベースのファイル グループの SQL スクリプト |Microsoft ドキュメント
+title: BizTalk Server メッセージ ボックス データベース ファイルグループの SQL スクリプト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54b8cc0164648eb22bd0ad3c9bb47a1a0828f91f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d80d5aeb35c27a04f637f4e5ca466996855f35fb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22300546"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973067"
 ---
-# <a name="biztalk-server-messagebox-database-filegroups-sql-script"></a>BizTalk Server メッセージ ボックス データベースのファイル グループの SQL スクリプト
+# <a name="biztalk-server-messagebox-database-filegroups-sql-script"></a>BizTalk Server メッセージ ボックス データベース ファイルグループの SQL スクリプト
 このトピックでは、複数のファイルおよびファイル グループの BizTalk メッセージ ボックス データベースを作成する BizTalk Server 環境で SQL Server インスタンスで実行できる SQL スクリプトを提供します。  
   
-> [!IMPORTANT]  
->  このスクリプトは、提供「としては、」デモまたは演習目的でのみ、向けし、各自の責任で使用されます。 、Microsoft では、このスクリプトの使用はサポートされていないと、Microsoft がこのスクリプトの適合性に関して保証を行いません。  
-  
-> [!IMPORTANT]  
->  次の考慮事項は、この SQL スクリプトを使用して複数のファイルおよびファイル グループの作成、BizTalk メッセージ ボックス データベースに適用されます。  
->   
->  1.  **次の条件下でメッセージ ボックス データベースのファイル グループの SQL スクリプトを再実行します。**  
->   
->      -   実行している BizTalk Server の修正プログラムまたはサービス パックをインストールするかどうかは**msgboxlogic.sql**、メッセージ ボックス データベースのファイル グループの SQL スクリプトをもう一度実行する必要があります。 これは、機能は、msgboxlogic.sql を元に戻します、メッセージ ボックス データベースのファイル グループとファイルの既定の設定には、プライマリ ファイル グループを使用するため必要です。 調べるには、修正プログラムまたはサービス パックが msgboxlogic.sql を実行するかどうか、確認、**ファイル情報**の修正プログラム KB 記事のセクションです。 または、サービス パックのファイルに含まれている setup.xml ファイルを確認します。  
->     -   BizTalk Server グループに新しいホストを追加する場合は、メッセージ ボックス データベースのファイル グループの SQL スクリプトを再度実行する必要があります。 これは、機能は、新しいホストを作成するストアド プロシージャには、テーブルの既定では、プライマリ ファイル グループを使用するホストが構成される必要があります。  
-> 2.  **マルチパート メッセージ ボックス環境での SQL のデータベース ファイル グループ スクリプトのメッセージ ボックス データベースを適用する:** マルチ メッセージ ボックス環境で各メッセージ ボックスに対して、メッセージ ボックス データベースのファイル グループの SQL スクリプトを実行できるも要件ではありません。  
+> [!IMPORTANT]
+>  このスクリプトは、デモまたは教育目的にのみのためのものでは、ご自身の責任で使用される「とは、」です。 、Microsoft では、このスクリプトの使用はサポートされていないと、このスクリプトの適合性に関する Microsoft の保証がありません。  
+> 
+> [!IMPORTANT]
+>  データベースを作成する複数のファイルおよびファイル グループ、BizTalk メッセージ ボックスのこの SQL スクリプトを使用する場合は、次の考慮事項が適用されます。  
+> 
+> 1. **次の条件下でメッセージ ボックス データベース ファイル グループの SQL スクリプトを再実行します。**  
+> 
+>    - 実行する BizTalk Server の修正プログラムまたはサービス パックをインストールするかどうかは**msgboxlogic.sql**、メッセージ ボックス データベースのファイル グループの SQL スクリプトをもう一度実行する必要があります。 これは、機能は、msgboxlogic.sql を元に戻します、メッセージ ボックスのファイル グループとファイルの既定の設定をプライマリ ファイル グループを使用するため必要です。 修正プログラムまたはサービス パックが msgboxlogic.sql を実行するかどうかを判断する確認、**ファイル情報**修正プログラム KB 記事の「します。 または、サービス パックのファイルに含まれている setup.xml ファイルを確認します。  
+>    - BizTalk Server グループに新しいホストを追加する場合は、メッセージ ボックス データベースのファイル グループの SQL スクリプトをもう一度実行する必要があります。 これは、機能は、新しいホストを作成するストアド プロシージャ、テーブルの既定では、プライマリ ファイル グループを使用するホストを構成するため、必要です。  
+>    - **マルチ メッセージ ボックス環境でのデータベース ファイル グループの SQL スクリプトのメッセージ ボックス データベースに適用:** マルチ メッセージ ボックス環境で各メッセージ ボックスに対してメッセージ ボックス データベースのファイル グループの SQL スクリプトを実行できますが、要件ではありません。  
   
 ## <a name="biztalk-messagebox-database-filegroups-sql-script"></a>BizTalk メッセージ ボックス データベースのファイル グループの SQL スクリプト  
- 次の SQL スクリプトは、トピックの説明に従って、複数のファイルおよびファイル グループを作成するために使用できます[、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)です。  
+ 次の SQL スクリプトは、トピックの説明に従って、複数のファイルおよびファイル グループを作成するために使用できます[、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)します。  
   
 ```  
 /************************************************************  
@@ -564,4 +564,4 @@ GO
 ```  
   
 ## <a name="see-also"></a>参照  
- [データベースのパフォーマンスを最適化します。](../technical-guides/optimizing-database-performance.md)
+ [データベース パフォーマンスの最適化](../technical-guides/optimizing-database-performance.md)

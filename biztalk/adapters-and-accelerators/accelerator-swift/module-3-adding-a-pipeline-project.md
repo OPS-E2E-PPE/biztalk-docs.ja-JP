@@ -1,5 +1,5 @@
 ---
-title: '第 3 章: パイプライン プロジェクトを追加 |Microsoft ドキュメント'
+title: 'モジュール 3: パイプライン プロジェクトの追加 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,36 +16,36 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d14e0f334514fd35a7f8de963f7fb457e3fbbd5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 85305614cec2757a91aa006238b3eb1ca4fbdbba
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22208162"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36970659"
 ---
-# <a name="module-3-adding-a-pipeline-project"></a>第 3 章: パイプライン プロジェクトの追加
-このモジュールでは、新しいプロジェクトをカスタムの送信を含むソリューションを追加し、受信パイプラインします。 含まれている既定のパイプラインを使用することはできません、本質的にフラット ファイルであり、SWIFT のメッセージに作業しているため[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]です。  
+# <a name="module-3-adding-a-pipeline-project"></a>モジュール 3: パイプライン プロジェクトの追加
+このモジュールでは、新しいプロジェクトをカスタムの送信を含むソリューションに追加し、受信パイプラインします。 SWIFT メッセージは、本質的にフラット ファイルには、使用しているため、Microsoft に含まれている既定のパイプラインを使用することはできません[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]します。  
   
- SWIFT メッセージ レベルが必要に追加の検証のため[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]カスタム逆アセンブラー (DASM) および SWIFT メッセージで使用するためのアセンブラー (ASM) コンポーネントが含まれています。  
+ SWIFT メッセージに追加レベルの検証が必要なマイクロソフト[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]カスタム逆アセンブラー (逆アセンブラー) と SWIFT のメッセージで使用するためのアセンブラー (ASM) のコンポーネントが含まれています。  
   
- このモジュールに追加することも、新しいパイプライン プロジェクトに追加受信し送信パイプライン、および SWIFT DASM と ASM を使用します。  
+ このモジュールで追加することも、新しいパイプライン プロジェクトに追加受信し、送信パイプライン、SWIFT 逆アセンブラーおよび ASM を使用します。  
   
- BizTalk マッパー, など、BizTalk ツール内で公開する BizTalk プロジェクト テンプレートを選択する、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]開発環境です。  
+ BizTalk プロジェクト テンプレートを選択すると、Microsoft 内での BizTalk マッパーなど、BizTalk ツールを公開します[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]開発環境。  
   
  このセクションには、次のトピックが含まれています。  
   
--   [レッスン 1: パイプライン プロジェクトをソリューションに追加します。](../../adapters-and-accelerators/accelerator-swift/lesson-1-adding-a-pipelines-project-to-the-solution.md)  
+-   [レッスン 1: パイプライン プロジェクトをソリューションに追加する](../../adapters-and-accelerators/accelerator-swift/lesson-1-adding-a-pipelines-project-to-the-solution.md)  
   
--   [レッスン 2: プロジェクト参照の追加](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-project-references.md)  
+-   [レッスン 2: プロジェクト参照を追加する](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-project-references.md)  
   
--   [レッスン 3: カスタム受信パイプラインを追加します。](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-a-custom-receive-pipeline.md)  
+-   [レッスン 3: カスタム受信パイプラインを追加する](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-a-custom-receive-pipeline.md)  
   
--   [レッスン 4: SWIFT アセンブラーおよび逆アセンブラーをツールボックスに追加します。](../../adapters-and-accelerators/accelerator-swift/lesson-4-adding-the-swift-assembler-and-disassembler-to-the-toolbox.md)  
+-   [レッスン 4: SWIFT アセンブラーと逆アセンブラーをツールボックスに追加する](../../adapters-and-accelerators/accelerator-swift/lesson-4-adding-the-swift-assembler-and-disassembler-to-the-toolbox.md)  
   
--   [レッスン 5: カスタム受信パイプラインに SWIFT の逆アセンブラーを追加します。](../../adapters-and-accelerators/accelerator-swift/lesson-5-adding-the-swift-disassembler-to-a-custom-receive-pipeline.md)  
+-   [レッスン 5: SWIFT 逆アセンブラーをカスタム受信パイプラインに追加する](../../adapters-and-accelerators/accelerator-swift/lesson-5-adding-the-swift-disassembler-to-a-custom-receive-pipeline.md)  
   
--   [レッスン 6: カスタムの送信パイプラインを作成します。](../../adapters-and-accelerators/accelerator-swift/lesson-6-creating-a-custom-send-pipeline.md)  
+-   [レッスン 6: カスタム送信パイプラインを作成する](../../adapters-and-accelerators/accelerator-swift/lesson-6-creating-a-custom-send-pipeline.md)  
   
--   [レッスン 7: カスタム送信パイプラインに SWIFT アセンブラーを追加します。](../../adapters-and-accelerators/accelerator-swift/lesson-7-adding-the-swift-assembler-to-a-custom-send-pipeline.md)  
+-   [レッスン 7: カスタム送信パイプラインに SWIFT アセンブラーを追加する](../../adapters-and-accelerators/accelerator-swift/lesson-7-adding-the-swift-assembler-to-a-custom-send-pipeline.md)  
   
--   [レッスン 8: のビルドと、アセンブリの展開](../../adapters-and-accelerators/accelerator-swift/lesson-8-building-and-deploying-the-assembly.md)
+-   [レッスン 8: アセンブリをビルドして展開する](../../adapters-and-accelerators/accelerator-swift/lesson-8-building-and-deploying-the-assembly.md)

@@ -1,6 +1,6 @@
 ---
-title: BizTalk Server で RosettaNet のダブル アクション チュートリアルの前提条件 |Microsoft ドキュメント
-description: BizTalk Server では、RosettaNet accelerator (BTARN)、ダブル アクション チュートリアルの手順の前提条件
+title: BizTalk Server で RosettaNet のダブル アクション チュートリアルの前提条件 |Microsoft Docs
+description: BizTalk Server では、RosettaNet アクセラレータ (BTARN) のダブル アクション チュートリアルの手順の前提条件
 ms.custom: ''
 ms.date: 08/09/2017
 ms.prod: biztalk-server
@@ -13,28 +13,28 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfc247aa1ab9ec7cb6f056cd45df54bc324990ad
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 48584cf7dfee0ca4812b41e56b4e8f7c0984e4fc
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963520"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979011"
 ---
 # <a name="prepare-for-the-double-action-tutorial"></a>ダブル アクション チュートリアルを準備します。
 
 ## <a name="prerequisites"></a>前提条件
-このチュートリアルを開始: する前に
+前に、チュートリアルを開始するには。
   
--   BizTalk Server の完全インストールを行うと[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]2 台のコンピューター。 詳細については、次を参照してください。[をインストールして構成する](install-configure-biztalk-accelerator-for-rosettanet.md)です。  
+- BizTalk Server のフル インストールを行うと[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]2 台のコンピューター。 詳細については、次を参照してください。[インストールおよび構成](install-configure-biztalk-accelerator-for-rosettanet.md)します。  
   
-    > [!IMPORTANT]
-    >  BTARN オーケストレーションを開始するなど、RosettaNet accelerator を完全に構成することを確認します。 参照してください[をインストールして構成する](install-configure-biztalk-accelerator-for-rosettanet.md)です。
+  > [!IMPORTANT]
+  >  BTARN オーケストレーションを開始するなど、RosettaNet アクセラレータを完全に構成してください。 参照してください[インストールおよび構成](install-configure-biztalk-accelerator-for-rosettanet.md)します。
   
--   このチュートリアルでは、ループバック アグリーメントを持つ 1 台のコンピューターではなく 2 台のコンピューターを使用して、実際のシナリオをシミュレートします。 このチュートリアルで使用するコンピューター名は、プレースホルダーとして示されます。 選択した実際のコンピューター名でそのプレース ホルダーを置き換えます。 たとえば、コンピューター、Contoso ソリューションを実行している場合は、という名前の**Contoso**のチュートリアルでは置換\\ \\< contoso **_** *コンピューター* \>そのコンピューターの名前を持つ。  
+- このチュートリアルでは、2 台のコンピューターを使用して、ループバック アグリーメントを持つ 1 台のコンピューターではなく、実際のシナリオをシミュレートします。 このチュートリアルで使用するコンピューター名は、プレースホルダーとして示されます。 選択した実際のコンピューター名では、そのプレース ホルダーを置き換えます。 たとえば、コンピューター、Contoso ソリューションを実行している場合がという名前**Contoso**のチュートリアルでは置換\\ \\< contoso<strong>_</strong> *コンピューター* \>そのコンピューターの名前。  
   
--   このチュートリアルでは、Contoso と Fabrikam の間で証明書を使用する、セキュリティで保護された通信の使用を推奨します。 を必要として、それぞれのコンピューターでインストールするには、すべての証明書を生成する必要があります。  
+- このチュートリアルでは、Contoso と Fabrikam の間で証明書を使用する、セキュリティで保護された通信の使用を推奨します。 それぞれのコンピューターにインストールして、必要なすべての証明書を生成する必要があります。  
   
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
   
 -   [手順 1: 証明機関の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: 構成エラー。 メッセージの署名は &#39; このパーティ用に構成されたシグネチャと一致する t |Microsoft ドキュメント
+title: 構成エラー。 メッセージの署名は&#39;このパーティ用に構成された署名が一致しない |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23214832300fe6125318ce67083f6bee0a364158
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 729fff283d8fa63ce9e933a0dc69a4a8f2200874
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232490"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36980459"
 ---
-# <a name="configuration-error-the-message-signature-doesn39t-match-the-signature-configured-for-this-party"></a>構成エラー。 メッセージの署名は &#39; 一致このパーティ用に構成された署名
+# <a name="configuration-error-the-message-signature-doesn39t-match-the-signature-configured-for-this-party"></a>構成エラー。 メッセージの署名は&#39;このパーティ用に構成された署名が一致しません。
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|AS2 エンジン|  
-|シンボル名|-|  
-|メッセージ テキスト|構成エラー。 メッセージの署名がこのパーティ用に構成された署名と一致しません。 送信元パートナーに問い合わせて、使用された証明書を確認してください。 AS2-から:"{0}"AS2-を:"\ "MessageID:"\ {2 \}"|  
+|                 |                                                                                                                                                                                                            |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                             [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                                                             |
+| 製品バージョン |                                                                         [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                                                         |
+|    イベント ID     |                                                                                                     -                                                                                                      |
+|  イベント ソース   |                                                           [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                                           |
+|    コンポーネント    |                                                                                                 AS2 エンジン                                                                                                 |
+|  シンボル名  |                                                                                                     -                                                                                                      |
+|  メッセージ テキスト   | 構成エラー。 メッセージの署名がこのパーティ用に構成された署名と一致しません。 送信元パートナーに問い合わせて、使用された証明書を確認してください。 AS2-から:"{0}"AS2-を:"{1}"MessageID:"{2}" |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、MIME 処理の実行時に AS2 受信パイプラインで署名を検証できなかったことを示します。 この原因として、送信者がメッセージの署名に使用したものとは異なる証明書を使用して、受信したメッセージを処理した可能性があります。 BizTalk Server が間違ったパーティの設定を使用して、受信した AS2 メッセージの署名を検証した可能性があります。  

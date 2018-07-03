@@ -1,5 +1,5 @@
 ---
-title: ACK メッセージ モード |Microsoft ドキュメント
+title: ACK メッセージ モード |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,37 +17,37 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 122f0851005c7d8abba6c1739ae86a1d65d89625
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 181617a41ba892a8ac04f2bf2154bbe78e8c892e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204402"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36967857"
 ---
 # <a name="ack-message-modes"></a>ACK メッセージ モード
-確認 (ACK) メッセージの[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 受信確認モードおよびを生成する ACK の MSH15 および MSH16 フィールドを設定するために使用する値を決定します。 これらの値は、取引先管理 (TPM) 構成内に存在します。 次の値は、ACK モードの可能な。  
+確認 (ACK) メッセージ、Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 受信確認モードおよび生成する ACK の MSH15 および MSH16 フィールドを設定するために使用する値を決定します。 これらの値は、取引先管理 (TPM) の構成に存在します。 次の値は ACK モードのことです。  
   
 > [!NOTE]
->  次の一覧には、HL7 仕様は、1 ~ 3 のアイテムと MSH15 と MSH16 の値が含まれている定められています。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]項目を受信確認を生成されないことを示すために 4 を定義します。  
+>  次の一覧で、HL7 仕様には、1 ~ 3 のアイテムと MSH15 と MSH16 の値が含まれていることが定められています。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 受信確認を生成しないことを示すために 4 項目を定義します。  
   
-1.  元のヘッダーと本文の検証後に送信された 1 つ確認します。 このモードには、スキーマの検証が含まれます。  
+1. 元のヘッダーと本文の検証後に送信された 1 つ確認します。 このモードには、スキーマの検証が含まれます。  
   
-2.  拡張 - 2 つの ACK メッセージが送信されます。  
+2. 拡張 - 2 つの ACK メッセージが送信されます。  
   
-    -   ACK – を受け入れる受信側システムでは、ヘッダーの検証後にこの種類の確認を送信します。 この確認は、メッセージがデータベースにコミットされることを発信側アプリケーションに通知します。  
+   -   ACK – を受け入れ、受信側システム ヘッダーの検証後にこの種類の確認を送信します。 この確認は、メッセージがデータベースにコミットである、発信側アプリケーションに通知します。  
   
-    -   アプリケーション ACK の受信側システムでは、ヘッダーおよび本文を含む、完全なメッセージの検証後にこの種類の確認を送信します。  
+   -   アプリケーション ACK が受信側システムでは、ヘッダーおよび本文を含む、完全なメッセージの検証後にこの種類の確認を送信します。  
   
-3.  遅延の 2 つの ACK メッセージが送信されます。  
+3. 遅延された - 2 つの ACK メッセージを送信します。  
   
-    -   元のモード: 受信側システムは、ヘッダーと本文の検証後にこの種類の確認を送信します。 このモードには、スキーマの検証が含まれます。  
+   - 元のモード: ヘッダーと本文の検証後に、この種類の確認が受信側のシステムに送信します。 このモードには、スキーマの検証が含まれます。  
   
-    -   遅延モード: 処理した後、基幹業務アプリケーションがメッセージを確認します。 アプリケーション メッセージを配信の遅延を[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、スタンドアロンのメッセージとして処理され、送信先に配信します。  
+   - 遅延モード: 基幹業務アプリケーションは、処理した後、メッセージを確認します。 アプリケーションに遅延メッセージを配信する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、スタンドアロンのメッセージとして処理することと、変換先に配信します。  
   
-4.  静的 - 成功した場合に、または送信される ACK エラー発生時にします。  
+4. 静的 - 成功した場合にまたはエラー発生時の確認を送信します。  
   
 ## <a name="see-also"></a>参照  
  [作成して、受信確認の処理](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)   
  [プログラミング ガイド](../../adapters-and-accelerators/accelerator-hl7/programming-guide1.md)   
  [ACK プロセス モデル](../../adapters-and-accelerators/accelerator-hl7/ack-process-model.md)   
- [静的な受信確認](../../adapters-and-accelerators/accelerator-hl7/static-acknowledgments.md)
+ [静的受信確認](../../adapters-and-accelerators/accelerator-hl7/static-acknowledgments.md)

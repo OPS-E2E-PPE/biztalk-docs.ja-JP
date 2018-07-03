@@ -1,6 +1,6 @@
 ---
-title: BizTalk Server で RosettaNet accelerator のトラブルシューティングと既知の問題 |Microsoft ドキュメント
-description: 問題と解決策の一般的なエラーまたは BizTalk Server で BTARN での動作
+title: BizTalk Server で、RosettaNet アクセラレータのトラブルシューティングと既知の問題 |Microsoft Docs
+description: 問題と解決策で、一般的なエラーまたは BizTalk Server で BTARN での動作
 caps.latest.revision: 4
 author: MandiOhlinger
 manager: anneta
@@ -13,15 +13,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7da1689a-8226-4aa8-9f7b-6d85420c682d
 ms.author: mandia
-ms.openlocfilehash: 6242ffa745a4dcf4cd2aa469737c8018b8bedc86
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec32883215298eb2afb2b53fdfc9406e1d1ebccf
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207130"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36975467"
 ---
 # <a name="troubleshooting-and-known-issues"></a>トラブルシューティングと既知の問題
-ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] のトラブルシューティング、解決策、および既知の問題について説明します。  
+トラブルシューティング、解決策、および Microsoft® の既知の問題のこのセクションから成る[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

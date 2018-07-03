@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10505 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10505 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: da9565f6f2cd4710b8b6ec4a08597730b45c2697
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0aa9f4e520e1d95ee621bad1d2de985478225d98
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269586"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36966507"
 ---
 # <a name="single-sign-on-event-10505"></a>シングル サインオン: イベント 10505
 ## <a name="details"></a>詳細  
-  
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10505|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|N\A|  
-|シンボル名|SSO_INFO_SERVICE_STOPPED|  
-|メッセージ テキスト|SSO サービスが停止されました。|  
-  
+
+|                 |                                                            |
+|-----------------|------------------------------------------------------------|
+|  製品名   |                 エンタープライズ シングル サインオン                  |
+| 製品バージョン | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    イベント ID     |                           10505                            |
+|  イベント ソース   |                           ENTSSO                           |
+|    コンポーネント    |                            N\A                             |
+|  シンボル名  |                  SSO_INFO_SERVICE_STOPPED                  |
+|  メッセージ テキスト   |                SSO サービスが停止されました。                |
+
 ## <a name="explanation"></a>説明  
  この情報イベントは、ENTSSO サービスが停止されたことを示します。  
-  
+
 ## <a name="user-action"></a>ユーザーの操作  
-  
--   ユーザーの操作は必要ありません。  
-  
- 詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
-  
--   [SSO の使用](../core/using-sso.md)
+
+- ユーザーの操作は必要ありません。  
+
+  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+
+- [SSO の使用](../core/using-sso.md)

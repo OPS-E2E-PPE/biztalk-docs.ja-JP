@@ -1,5 +1,5 @@
 ---
-title: ACK メッセージ スキーマの種類 |Microsoft ドキュメント
+title: ACK メッセージ スキーマの種類 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,47 +16,49 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09537a9fda34ee1148e3e4d880f17f35f83f761c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: a556155e364fe56b66f7938fd49036b47085aeac
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25960960"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36967469"
 ---
 # <a name="ack-message-schema-types"></a>ACK メッセージ スキーマの種類
 受信確認メッセージのスキーマは 2 つの形式があります。  
-  
--   **一般的な確認 (ACK)** です。 アプリケーションは、特定の基幹業務アプリケーション レベルの受信確認メッセージを定義していない、またはエラーが発生したアプリケーションの処理が除外は、一般的な確認 (ACK) を使用できます。 これを使用することもできますのレベルの受信確認をそのまま使用します。 次の表は、ACK メッセージの構造を示します。  
-  
-    |ACK ^ 異なります ^ ACK|一般的な受信確認|章|  
-    |--------------------|----------------------------|-------------|  
-    |MSH|メッセージ ヘッダー|2|  
-    |MSA|メッセージの受信確認|2|  
-    |[エラー]|[エラー]|2|  
-  
--   **遅延確認応答 (MCF)** です。 このメッセージは、HL7 バージョン 2.1 で旧バージョンとの互換性のためだけ存在します。 非同期のアプリケーション レベル受信確認、MCF メッセージの一般的なフォームを作成するプロトコルの一部として使用するとします。 次の表は、MCF メッセージの構造を示します。  
-  
-    |MCF ^ 異なります ^ ACK|受信確認の遅延|章|  
-    |--------------------|----------------------------|-------------|  
-    |MSH|メッセージ ヘッダー|2|  
-    |MSA|メッセージの受信確認|2|  
-    |[エラー]|[エラー]|2|  
-  
- 受信確認メッセージがある、MSH9 フィールドに設定するか**ACK ^\<***トリガー イベント***\>^ ACK**または**MCF ^\<** *トリガー イベント***\>^ ACK**です。 その結果、MSH9 の最初のコンポーネントは ACK スキーマを決定するだけで十分です。 ドキュメント名を[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) パイプラインには、名前空間として HL7 常に含まれています。 型名は、これは ACK または MCF MSH9_1 フィールドの内容です。 上記の例と同様にその結果、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]パイプラインは、HL7 の名前を持つスキーマを検索します。ACK または HL7 します。MCF、MSH9_1 フィールドの値によって決まります。 メッセージ本文のスキーマは、同じ 2.X バージョンのすべてのメッセージです。  
-  
+
+- **一般的な確認 (ACK)** します。 一般的な確認 (ACK) を使用するには、アプリケーションが特別な基幹業務アプリケーション レベルの受信確認メッセージを定義していない、またはアプリケーションの処理にエラーが発生しました。 これを使用することもできますの受信確認のレベルをそのまま使用します。 次の表では、ACK メッセージの構造を示します。  
+
+
+  | ACK ^ 異なります ^ ACK | 一般的な受信確認 | 章 |
+  |----------------|------------------------|---------|
+  |      MSH       |     メッセージ ヘッダー     |    2    |
+  |      MSA       | メッセージの受信確認 |    2    |
+  |    [エラー]     |         [エラー]          |    2    |
+
+
+- **遅延確認応答 (mcf という)** します。 このメッセージは、HL7 バージョン 2.1 の旧バージョンと互換性のためにのみ存在します。 非同期のアプリケーション レベル確認、MCF メッセージの一般的なフォームを作成するプロトコルの一部として使用するとします。 次の表では、MCF メッセージの構造を示します。  
+
+  |MCF ^ 異なります ^ ACK|受信確認の遅延|章|  
+  |--------------------|----------------------------|-------------|  
+  |MSH|メッセージ ヘッダー|2|  
+  |MSA|メッセージの受信確認|2|  
+  |[エラー]|[エラー]|2|  
+
+  受信確認メッセージがある、MSH9 フィールドに設定するか**ACK ^\<**<em>トリガー イベント</em>**\>^ ACK**または**MCF ^\<** <em>トリガー イベント</em>**\>^ ACK**します。 その結果、MSH9 の最初のコンポーネントは ACK スキーマを決定するための十分です。 ドキュメント名を Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) パイプラインの名前空間として HL7 を常に含まれます。 型名は、これは ACK または MCF MSH9_1 フィールドの内容です。 結果として、上記の例のように、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]パイプラインが HL7 の名前を持つスキーマを探します。ACK または HL7 します。MCF、MSH9_1 フィールドの値によって決まります。 メッセージ本文のスキーマは、2.X バージョンのすべてのメッセージに同じです。  
+
 > [!NOTE]
->  内のバッチで/ACK シナリオでは、ACK のヘッダーの内容をバッチは次のようにします。  
-  
--   [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]MSH1、2、8、およびユーザー インターフェイスでの構成を 15 に設定します。  
-  
--   [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]システム時刻を MSH7 を設定します。  
-  
--   [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]確認を MSH9 に設定します。  
-  
--   [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.4 または 2.5 MSH12 に設定します。  
-  
+>  内のバッチで/バッチ アウト シナリオの確認、ACK ヘッダーの内容は次のようにします。  
+
+- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] MSH1、2、8、15 日に、ユーザー インターフェイスの構成を設定します。  
+
+- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] MSH7 システム時刻に設定します。  
+
+- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] MSH9 を確認する設定します。  
+
+- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2.4、2.5 MSH12 に設定します。  
+
 ## <a name="see-also"></a>参照  
  [作成して、受信確認の処理](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)   
- [メッセージ受信確認セグメント](../../adapters-and-accelerators/accelerator-hl7/message-acknowledgment-segment.md)   
+ [メッセージの受信確認セグメント](../../adapters-and-accelerators/accelerator-hl7/message-acknowledgment-segment.md)   
  [Ack を受信するための送信ポートの設定](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)   
  [受信確認エラーの条件](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-error-conditions.md)

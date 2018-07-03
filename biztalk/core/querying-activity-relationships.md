@@ -1,5 +1,5 @@
 ---
-title: アクティビティの関係を照会 |Microsoft ドキュメント
+title: アクティビティ リレーションシップのクエリを実行する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,25 +15,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 70c94644e505409f863e5104168740232d57c664
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 18cec34263598f50c9852ffe3f3a7d749914c977
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25970415"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36984019"
 ---
 # <a name="querying-activity-relationships"></a>アクティビティ リレーションシップに対するクエリの実行
 アクティビティ リレーションシップ情報は、アクティビティごとに動的に生成される SQL ビューで閲覧できます。 クエリでのビューの名前は次のようになります。  
   
  **bam _\<**  *アクティビティ*  **\>_AllRelationships**  
   
- ここで\<*アクティビティ*\> BAM 定義 XML 内の Activity 要素の Name 属性は、Excel 用 BAM アドインを使用して入力されたアクティビティ名と同じです。  
+ 場所\<*アクティビティ*\> BAM 定義 XML 内の Activity 要素の Name 属性は、Excel 用 BAM アドインを使用して入力されたアクティビティ名と同じです。  
   
- リレーションシップ イベントは、特定のアクティビティのコンテキスト内で発生します。 たとえば、発注と出荷間のリレーションシップは、発注アクティビティのコンテキストで発生する場合、リレーションシップ レコードに表示されます**bam_PurchaseOrder_AllRelationships**ではなく**bam_Shipment_AllRelationships**です。 詳細については、次を参照してください。[アクティビティ リレーションシップ](../core/activity-relationships.md)です。  
+ リレーションシップ イベントは、特定のアクティビティのコンテキスト内で発生します。 たとえば、発注と出荷間のリレーションシップが発注アクティビティのコンテキストで発生した場合、リレーションシップ レコードに表示**bam_PurchaseOrder_AllRelationships**ではなく**bam_Shipment_AllRelationships**します。 詳細については、次を参照してください。[アクティビティ リレーションシップ](../core/activity-relationships.md)します。  
   
- 購入に関連するアクティビティの順序、両方のビューをクエリする必要がありますすべてを検索する**bam_PurchaseOrder_AllRelationships**のすべてのビューだけでなく**bam _\<***OtherActivity*  **\>_AllRelationships**ここで、 \< *OtherActivity* \>同じ BAM ビューで、アクティビティです。  
+ 購入に関連するアクティビティの順序、両方のビューをクエリする必要がありますすべてを検索する**bam_PurchaseOrder_AllRelationships**すべてのビューと**bam _\<**<em>OtherActivity</em>  **\>_AllRelationships**ここで、 \< *OtherActivity* \>同じ BAM ビューでアクティビティします。  
   
- リレーションシップ レコードは、アクティビティ インスタンスの一部および」の説明に従って、インスタンス データとの同期を管理、[アクティビティ データのストレージ](../core/activity-data-storage.md)です。  
+ リレーションシップ レコードはアクティビティ インスタンスの一部であり、」の説明に従って、インスタンス データとの同期でサポートされており[アクティビティ データのストレージ](../core/activity-data-storage.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BAM データのクエリ](../core/querying-bam-data.md)

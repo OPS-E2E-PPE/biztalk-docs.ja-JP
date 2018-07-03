@@ -1,5 +1,5 @@
 ---
-title: MQSeries コンテキスト プロパティ |Microsoft ドキュメント
+title: MQSeries コンテキスト プロパティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -84,19 +84,19 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d27309379fac2c4821251f27fd2aa5a6e9d59418
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 684fad8e1a417e9faf7127a81a4e8f7d6f10e630
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22266626"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36976595"
 ---
 # <a name="mqseries-context-properties"></a>MQSeries コンテキスト プロパティ
 MQSeries アダプタには、アプリケーションで使用できる、MQSeries に固有のコンテキスト プロパティ セットが用意されています。 これらのプロパティは、フィルタ式やオーケストレーションで使用できます。  
   
  MQSeries アダプタにバインドされた送信ポートに送信するメッセージに MQSeries コンテキスト プロパティを割り当てるには、メッセージ代入演算子を使用し、MQSeries 名前空間の使用可能ないずれかのコンテキスト プロパティを指定します。  
   
- MQSeries を設定する例を次に示します**MQMD_UserIdentifier**プロパティ。  
+ MQSeries を設定する例を次に**MQMD_UserIdentifier**プロパティ。  
   
 ```  
 Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";  
@@ -114,14 +114,14 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 |----------|----------|------------|-----------|  
 |**MQMD_AccountingToken**|string|64|16 進数文字列|  
 |**MQMD_ApplIdentityData**|string|32|16 進数文字列|  
-|**MQMD_ApplOriginData**|string|4|文字列<br /><br /> **既定値:** 領域|  
-|**MQMD_BackoutCount**|unsigned int|4|数値<br /><br /> 読み取り専用<br /><br /> **既定値:** 0|  
+|**MQMD_ApplOriginData**|string|4|String<br /><br /> **既定値:** 領域|  
+|**MQMD_BackoutCount**|unsigned int|4|数値<br /><br /> 読み取り専用です。<br /><br /> **既定値:** 0|  
 |**MQMD_CodedCharSetId**|unsigned int|4|数値<br /><br /> **既定値:** 0|  
 |**MQMD_CorrelId**|string|48|16 進数文字列|  
 |**MQMD_Encoding**|unsigned int|4|数値<br /><br /> ヘッダー ファイルの値を使用します。 **既定値:** 0|  
 |**MQMD_Expiry**|unsigned int|4|数値|  
 |**MQMD_Feedback**|unsigned int|4|数値<br /><br /> ヘッダー ファイルの値を使用します。 **既定値:** 0|  
-|**MQMD_Format**|string|8|文字列<br /><br /> MQXMIT に設定した場合、MQXQH プロパティに値が設定されていることを確認してください。|  
+|**MQMD_Format**|string|8|String<br /><br /> MQXMIT に設定した場合、MQXQH プロパティに値が設定されていることを確認してください。|  
 |**MQMD_GroupID**|string|48|16 進数文字列|  
 |**MQMD_MsgFlags**|unsigned int|4|数値<br /><br /> ヘッダー ファイルの値を使用します。 **既定値:** 0|  
 |**MQMD_MsgId**|string|48|16 進数文字列|  
@@ -131,16 +131,16 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 |**MQMD_OriginalLength**|unsigned int|4||  
 |**MQMD_Persistence**|unsigned int|4|数値<br /><br /> ヘッダー ファイルの値を使用します。|  
 |**MQMD_Priority**|unsigned int|4|数値|  
-|**MQMD_PutApplName**|string|28|文字列<br /><br /> **既定値:** 領域|  
+|**MQMD_PutApplName**|string|28|String<br /><br /> **既定値:** 領域|  
 |**MQMD_PutApplType**|unsigned int|4|数値<br /><br /> ヘッダー ファイルの値を使用します。 **既定値:** 0|  
-|**MQMD_PutDate**|string|8|日付|  
+|**MQMD_PutDate**|string|8|date|  
 |**MQMD_PutTime**|string|8|[時刻]|  
-|**MQMD_ReplyToQ**|string|48|文字列<br /><br /> **既定値:** 領域|  
-|**MQMD_ReplyToQMgr**|string|48|文字列<br /><br /> **既定値:** 領域|  
+|**MQMD_ReplyToQ**|string|48|String<br /><br /> **既定値:** 領域|  
+|**MQMD_ReplyToQMgr**|string|48|String<br /><br /> **既定値:** 領域|  
 |**MQMD_Report**|unsigned int|4|数値<br /><br /> ヘッダー ファイルの値を使用します。|  
-|**MQMD_UserIdentifier**|string|12|文字列<br /><br /> 使用するときに、ユーザーの識別子を含む、 **SSOAffiliateApplication**プロパティです。|  
+|**MQMD_UserIdentifier**|string|12|String<br /><br /> 使用するときに、ユーザー識別子を含む、 **SSOAffiliateApplication**プロパティ。|  
   
- MQSeries 転送キューから直接メッセージを受信するとき、MQSeries アダプタでは、転送キューのヘッダー プロパティ (MQXQH データ構造) をフォーマットし、それらを対応するコンテキスト プロパティに配置します。 ヘッダーのプロパティはフォーマットされ、対応するコンテキスト プロパティ場合にのみから値を割り当てられているメッセージを MQSeries 転送キューに直接送信するときに、 **MQMD_Format** MQXMIT の値を持つプロパティです。 次の表では、ヘッダー プロパティについて説明します。  
+ MQSeries 転送キューから直接メッセージを受信するとき、MQSeries アダプタでは、転送キューのヘッダー プロパティ (MQXQH データ構造) をフォーマットし、それらを対応するコンテキスト プロパティに配置します。 ヘッダーのプロパティはフォーマットされ、対応するコンテキスト プロパティ場合にのみから値を割り当てられているメッセージを MQSeries 転送キューに直接送信する場合、 **MQMD_Format** MQXMIT の値を持つプロパティです。 次の表では、ヘッダー プロパティについて説明します。  
   
 |名前|型|長さ|値|  
 |----------|----------|------------|-----------|  
@@ -149,58 +149,58 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
   
  ここまで記載したプロパティに加えて、アダプタでは、同じ規則に従って次のメッセージ記述子の値を作成します。 アダプタによってこれらのプロパティ名に付けられるプレフィックスは MQMD_ ではなく MQXQH_ ですが、それ以外の場合はこれらのプロパティ名が、メッセージ記述子テーブルで定義されているプロパティに直接マップされます。  
   
--   **MQXQH_MsgDesc_AccountingToken**  
+- **MQXQH_MsgDesc_AccountingToken**  
   
--   **MQXQH_MsgDesc_ApplIdentityData**  
+- **MQXQH_MsgDesc_ApplIdentityData**  
   
--   **MQXQH_MsgDesc_ApplOriginData**  
+- **MQXQH_MsgDesc_ApplOriginData**  
   
--   **MQXQH_MsgDesc_BackoutCount**  
+- **MQXQH_MsgDesc_BackoutCount**  
   
--   **MQXQH_MsgDesc_CodedCharSetId**  
+- **MQXQH_MsgDesc_CodedCharSetId**  
   
--   **MQXQH_MsgDesc_CorrelId**  
+- **MQXQH_MsgDesc_CorrelId**  
   
--   **MQXQH_MsgDesc_Encoding**  
+- **MQXQH_MsgDesc_Encoding**  
   
--   **MQXQH_MsgDesc_Expiry**  
+- **MQXQH_MsgDesc_Expiry**  
   
--   **MQXQH_MsgDesc_Feedback**  
+- **MQXQH_MsgDesc_Feedback**  
   
--   **MQXQH_MsgDesc_Format**  
+- **MQXQH_MsgDesc_Format**  
   
--   **MQXQH_MsgDesc_MsgId**  
+- **MQXQH_MsgDesc_MsgId**  
   
--   **MQXQH_MsgDesc_MsgType**  
+- **MQXQH_MsgDesc_MsgType**  
   
--   **MQXQH_MsgDesc_Persistence**  
+- **MQXQH_MsgDesc_Persistence**  
   
--   **MQXQH_MsgDesc_Priority**  
+- **MQXQH_MsgDesc_Priority**  
   
--   **MQXQH_MsgDesc_PutApplName**  
+- **MQXQH_MsgDesc_PutApplName**  
   
--   **MQXQH_MsgDesc_PutApplType**  
+- **MQXQH_MsgDesc_PutApplType**  
   
--   **MQXQH_MsgDesc_PutDate**  
+- **MQXQH_MsgDesc_PutDate**  
   
--   **MQXQH_MsgDesc_PutTime**  
+- **MQXQH_MsgDesc_PutTime**  
   
--   **MQXQH_MsgDesc_ReplyToQ**  
+- **MQXQH_MsgDesc_ReplyToQ**  
   
--   **MQXQH_MsgDesc_ReplyToQMgr**  
+- **MQXQH_MsgDesc_ReplyToQMgr**  
   
--   **MQXQH_MsgDesc_Report**  
+- **MQXQH_MsgDesc_Report**  
   
--   **MQXQH_MsgDesc_UserIdentifier**  
+- **MQXQH_MsgDesc_UserIdentifier**  
   
- プロパティ スキーマには、フィルタ式に使用できる MQSeries 関連のプロパティが他にも含まれています。 次の表は、これらのプロパティを示しています。  
+  プロパティ スキーマには、フィルタ式に使用できる MQSeries 関連のプロパティが他にも含まれています。 次の表は、これらのプロパティを示しています。  
   
 |名前|型|長さ|値|  
 |----------|----------|------------|-----------|  
 |**MQCIH_AbendCode**|string|4||  
 |**MQCIH_ADSDescriptor**|unsigned int|4||  
 |**MQCIH_AttentionId**|string|4||  
-|**MQCIH_Authenticator**|string|8|使用するときに、SSO パスワードに設定、 **SSOAffiliateApplication**プロパティです。 **注:** この値は、SSO パスワードの長さが 8 文字を超える場合、MQSeries アダプタによって空白に設定されます。|  
+|**MQCIH_Authenticator**|string|8|使用すると、SSO パスワードに設定、 **SSOAffiliateApplication**プロパティ。 **注:** この値は、SSO パスワードの長さが 8 文字を超える場合は、MQSeries アダプターが空白に設定されます。|  
 |**MQCIH_CancelCode**|string|4||  
 |**MQCIH_CompCode**|unsigned int|4||  
 |**MQCIH_ConversationalTask**|unsigned int|4||  
@@ -223,7 +223,7 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 |**MQCIH_TaskEndStatus**|unsigned int|4||  
 |**MQCIH_TransactionId**|string|4||  
 |**MQCIH_UOWControl**|unsigned int|4||  
-|**MQIIH_Authenticator**|string|8|使用するときに、SSO パスワードに設定、 **SSOAffiliateApplication**プロパティです。 **注:** この値は、SSO パスワードの長さが 8 文字を超える場合、MQSeries アダプタによって空白に設定されます。|  
+|**MQIIH_Authenticator**|string|8|使用すると、SSO パスワードに設定、 **SSOAffiliateApplication**プロパティ。 **注:** この値は、SSO パスワードの長さが 8 文字を超える場合は、MQSeries アダプターが空白に設定されます。|  
 |**MQIIH_CommitMode**|string|||  
 |**MQIIH_Flags**|unsigned int|4||  
 |**MQIIH_Format**|string|||  
@@ -237,4 +237,4 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 ## <a name="see-also"></a>参照  
  [MQSeries アダプターのプロパティ](../core/mqseries-adapter-properties.md)   
  [BizTalk Server に関連するプロパティ](../core/properties-related-to-biztalk-server.md)   
- [プロパティのデータ型の変換](../core/data-type-conversion-of-properties.md)
+ [プロパティのデータ型変換](../core/data-type-conversion-of-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: 受信確認の使用 |Microsoft ドキュメント
+title: 受信確認の使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -34,12 +34,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c3a5363ee70a67c5882088af9fa3d2f4b805823
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2fe568185bde471bea9396786e58c31ced960d23
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288186"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36968187"
 ---
 # <a name="using-acknowledgments"></a>受信確認の使用
 BizTalk メッセージング エンジンは、ポートを通じたメッセージの処理中に発生した条件に応じて、肯定受信確認応答 (ACK) および否定受信確認応答 (NACK) を生成します。 BizTalk Server では、メッセージの転送が成功したことを示す受信確認、および転送の失敗やメッセージの中断を示す否定受信確認応答を作成します。  
@@ -47,26 +47,26 @@ BizTalk メッセージング エンジンは、ポートを通じたメッセ�
 ## <a name="why-use-acknowledgments"></a>受信確認を使用する理由  
  受信確認および否定受信確認応答は、強力なフィードバックを提供します。このフィードバックを使用して、メッセージが送信先に到達したかどうか、途中で問題が発生したかどうかを判断できます。 たとえば、受信確認は、次の場合に役立ちます。  
   
--   スキーマの検証や他のエラーの調査を行うため、新しい取引先の受信ポートを監視する。  
+- スキーマの検証や他のエラーの調査を行うため、新しい取引先の受信ポートを監視する。  
   
--   取引先に承認用のローン要求が正常に送信された場合に、"インプロセス" としてその状態をマークする。または、転送に失敗した場合 (取引先のサーバーがダウンしている場合など) に "失敗" としてその状態をマークする。  
+- 取引先に承認用のローン要求が正常に送信された場合に、"インプロセス" としてその状態をマークする。または、転送に失敗した場合 (取引先のサーバーがダウンしている場合など) に "失敗" としてその状態をマークする。  
   
--   複数の注文書を含むインターチェンジを処理し、転送された注文数または転送に失敗した注文数を追跡する。  
+- 複数の注文書を含むインターチェンジを処理し、転送された注文数または転送に失敗した注文数を追跡する。  
   
- フィルターを使用するコンテンツ ベースのルーティングと受信確認を使用して、これらの各シナリオを実現できます。  
+  フィルターを使用するコンテンツ ベースのルーティングと受信確認を使用して、これらの各シナリオを実現できます。  
   
 ## <a name="routing-acknowledgments"></a>受信確認のルーティング  
- ACK または NACK が生成されると、ACK/NACK を発生させたメッセージのすべてのメッセージ コンテキスト プロパティが降格します。 昇格させたプロパティは、受信確認に流れません。 受信確認をルーティングする次のプロパティを使用してフィルターを作成、 **BTS**名前空間。  
+ ACK または NACK が生成されると、ACK/NACK を発生させたメッセージのすべてのメッセージ コンテキスト プロパティが降格します。 昇格させたプロパティは、受信確認に流れません。 受信確認をルーティングするには、次のプロパティを使用してフィルターを作成、 **BTS**名前空間。  
   
-|プロパティ名|データ型|Description|  
+|プロパティ名|データ型|説明|  
 |-------------------|---------------|-----------------|  
-|BTS.AckFailureCategory|xs:int|識別、 **ErrorCategory**場所と中断理由を提供します。|  
-|BTS.AckFailureCode|xs:string|識別、 **ErrorCode**場所と中断理由を提供します。|  
+|BTS.AckFailureCategory|xs:int|識別、 **ErrorCategory**場所と、中断の理由を提供します。|  
+|BTS.AckFailureCode|xs:string|識別、 **ErrorCode**場所と、中断の理由を提供します。|  
 |BTS.AckType|xs:string|受信確認の値は ACK、否定受信確認応答の値は NACK です。|  
 |BTS.AckID|xs:string|識別、 **MessageID**元のメッセージ。|  
 |BTS.AckOwnerID|xs:string|元のメッセージのインスタンス ID を確認します。|  
 |BTS.CorrelationToken|xs:string|元のメッセージの関連付けトークン (存在する場合) を確認します。|  
-|BTS.AckDescription|xs:string|識別、 **ErrorDescription**場所と中断理由を提供します。|  
+|BTS.AckDescription|xs:string|識別、 **ErrorDescription**場所と、中断の理由を提供します。|  
 |BTS.AckSendPortID|xs:string|識別、 **SendPortID**元のメッセージ。|  
 |BTS.AckSendPortName|xs:string|識別、 **SendPortName**元のメッセージ。|  
 |BTS.AckOutboundTransportLocation|xs:string|識別、 **OutboundTransportLocation**元のメッセージ。|  

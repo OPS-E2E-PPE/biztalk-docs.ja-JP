@@ -1,5 +1,5 @@
 ---
-title: 確認の設定 |Microsoft ドキュメント
+title: 確認の設定 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,32 +16,32 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34eda8a977de0dadbad974268b46e4d580cc1f33
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8c1f19fa1a0d1abaad29f454f25f0d8608ed497
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204362"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36967139"
 ---
 # <a name="acknowledgment-settings"></a>確認の設定
-使用する、**受信確認**のタブ[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー (、高レベルの下で**パーティ** タブ) 確認 (ACK) の設定を構成します。  
+使用する、**受信確認**のタブ[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー (大まかに言って **[パーティ]** タブ) 確認 (ACK) の設定を構成します。  
   
- 次の受信確認の種類を使用できます。  
+ 次の受信確認の種類があります。  
   
--   **None**。 受信確認を構成したくない場合は、このオプションを選択します。  
+- **None**。 受信確認を構成したくない場合は、このオプションを選択します。  
   
--   **元**です。 構成するのには、このオプションを選択**MSH1 – フィールド区切り文字**、 **MSH2 – 文字のエンコード**、および**MSH8 – セキュリティ**オプションのみです。  
+- **元**します。 構成するには、このオプションを選択**MSH1 – フィールドの区切り記号**、 **MSH2 – 文字のエンコード**、および**MSH8 – セキュリティ**オプションのみです。  
   
--   **強化された**です。 すべての受信確認の使用可能なオプションを構成するには、このオプションを選択します。  
+- **強化された**します。 すべての受信確認の使用可能なオプションを構成するには、このオプションを選択します。  
   
--   **遅延**です。 構成するのには、このオプションを選択**MSH1 – フィールド区切り文字**、 **MSH2 – 文字のエンコード**、および**MSH8 – セキュリティ**オプションのみです。  
+- **遅延**します。 構成するには、このオプションを選択**MSH1 – フィールドの区切り記号**、 **MSH2 – 文字のエンコード**、および**MSH8 – セキュリティ**オプションのみです。  
   
--   **静的**です。 構成するのには、このオプションを選択、**成功**と**エラー発生時に**受信確認のオプションです。  
+- **静的**します。 構成するには、このオプションを選択、**成功**と**失敗**の確認オプション。  
   
- 受信確認の種類を設定すると、受信確認の種類に応じて、ヘッダー フィールドと、受信確認の値を設定できます。  
+  受信確認の種類を設定すると、受信確認の種類に応じて、ヘッダー フィールドと、受信確認の値を設定できます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [確認の構成の設定](../../adapters-and-accelerators/accelerator-hl7/ack-configuration-settings.md)  
+-   [ACK の構成設定](../../adapters-and-accelerators/accelerator-hl7/ack-configuration-settings.md)  
   
--   [メッセージの受信確認を構成します。](../../adapters-and-accelerators/accelerator-hl7/configuring-message-acknowledgments.md)
+-   [メッセージ受信確認の構成](../../adapters-and-accelerators/accelerator-hl7/configuring-message-acknowledgments.md)

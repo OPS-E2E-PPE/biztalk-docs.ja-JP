@@ -1,5 +1,5 @@
 ---
-title: CLR Namespace および rootName が見つかりませんスキーマ |。Microsoft ドキュメント
+title: 見つからない CLR Namespace および rootName のスキーマ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 06db4a89803b8386ccbb45372b72423e83c6ff7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a830d46a439ad85e5e9e3d54afaca688dac201ca
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269402"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36966347"
 ---
 # <a name="schema-not-found-for-clr-namespace-and-rootname"></a>CLR Namespace および rootName のスキーマが見つかりません
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|SchemaNotFoundForCLRAndRN|  
-|メッセージ テキスト|スキーマが見つかりません CLR Namespace = {0} および rootName {1} を =|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  製品名   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 製品バージョン |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    イベント ID     |                                           -                                            |
+|  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
+|    コンポーネント    |                                       EDI エンジン                                       |
+|  シンボル名  |                               SchemaNotFoundForCLRAndRN                                |
+|  メッセージ テキスト   |              スキーマが見つかりません CLR Namespace ={0}および rootName = {1}               |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、受信パイプラインが、インターチェンジに関連付けられたルート名およびインターチェンジに解決されたパーティに関連付けられた名前空間を使用して、ドキュメント スキーマを見つけられなかったことを示します。  

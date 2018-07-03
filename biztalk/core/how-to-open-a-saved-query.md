@@ -1,5 +1,5 @@
 ---
-title: 保存済みのクエリを開く方法 |Microsoft ドキュメント
+title: 保存されたクエリを開く方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4c36c14d00a94e948e6a45335b0210bc85e83772
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cd2474aebf77baf39a623a246cf575ba9af7a113
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254594"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36970179"
 ---
 # <a name="how-to-open-a-saved-query"></a>保存したクエリを開く方法
 保存したクエリは、クエリの保存先フォルダーから直接開くか、BizTalk Server 管理コンソール内から開くことができます。 フォルダーから直接クエリを開くと、管理コンソールの適切な BizTalk Server グループが開きます。 管理コンソール内からクエリを開くと、一覧に表示された任意のグループにクエリを実行するオプションが表示されます。  
@@ -32,19 +32,19 @@ ms.locfileid: "22254594"
 1.  保存したクエリが格納されているフォルダーに移動します。  
   
     > [!NOTE]
-    >  既定では、保存されたクエリが格納されている、**マイ ドキュメント**を作成してそれらを保存したユーザーのフォルダーです。  
+    >  既定では、保存されたクエリが格納されている、 **My Documents**作成および保存したユーザーのフォルダー。  
   
 2.  保存したクエリをダブルクリックすると、BizTalk Server 管理コンソールが開き、クエリが実行されます。  
   
 ### <a name="to-open-a-saved-query-from-the-administration-console"></a>保存したクエリを管理コンソールから開くには  
   
-1.  をクリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1. クリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2.  コンソール ツリーで、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)] を展開し、[BizTalk グループ] をクリックします。  
+2. コンソール ツリーで、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)] を展開し、[BizTalk グループ] をクリックします。  
   
-3.  詳細ウィンドウで、をクリックして、**新しいクエリ** タブをクリックして**クエリを開く**です。  
+3. 詳細ウィンドウでをクリックして、**新しいクエリ**タブをクリックし、をクリックし、**クエリを開く**します。  
   
-4.  **開く** ダイアログ ボックスを開き、そのクエリを選択し、をクリックする保存済みのクエリを参照**開く**です。  
+4. **開く**保存したクエリを開き、そのクエリを選択し、をクリックするには、[参照] ダイアログ ボックスで、**開く**。  
   
 ## <a name="see-also"></a>参照  
- [管理コンソールの [クエリ] タブを使用します。](../core/using-the-administration-console-query-tab.md)
+ [管理コンソールの [クエリ] タブの使用](../core/using-the-administration-console-query-tab.md)

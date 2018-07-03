@@ -1,5 +1,5 @@
 ---
-title: ウォーム バックアップから運用環境の復元 |Microsoft ドキュメント
+title: ウォーム バックアップから運用環境の復元 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,41 +12,41 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e590b4eccb6ee946a915ff1f3a0265bbfe977e7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 66177cd1f6f10e252a71d2875b4079e660125719
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302090"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36971363"
 ---
 # <a name="restoring-production-from-a-warm-backup"></a>ウォーム バックアップから運用環境の復元
-ソース システムの信頼性の低いになると、そのソースに、ターゲット データベースを復元する可能性があります。 データベースを復元するターゲットからソースへの次の手順を実行します。  
+ソース システムには、信頼性の低いになると、ソース、ターゲット データベースを復元すること勧めします。 ソース コピー先からデータベースを復元する次の手順を実行します。  
   
-### <a name="to-restore-the-databases-from-the-destination-to-the-source-follow-these-steps"></a>ターゲットからソースへのデータベースを復元するには、以下の手順  
+### <a name="to-restore-the-databases-from-the-destination-to-the-source-follow-these-steps"></a>ソースに、ターゲット データベースを復元するには、以下の手順  
   
-1.  ソース (運用環境) 上のすべてのバックアップ ジョブを無効にする[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンス。  
+1. ソース (運用) 上のすべてのバックアップ ジョブを無効にする[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスします。  
   
-2.  すべての復元ジョブが移行先の災害復旧 (DR) で完了するまで待機[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンス。  
+2. すべての復元ジョブが移行先のディザスター リカバリー (DR) を完了するまで待機[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスします。  
   
-3.  移行先 (DR) 上のすべての復元ジョブを無効にする[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンス。  
+3. 宛先 (DR) のすべての復元ジョブを無効にする[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスします。  
   
-4.  STOPATMARK 先 (DR) にあるすべてのデータベースを復元[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンス。  
+4. STOPATMARK (DR) の接続先であるすべてのデータベースを復元[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスします。  
   
-5.  すべて停止[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]すべての BizTalk server 上のサービスです。  
+5. すべて停止[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]すべての BizTalk server 上のサービスです。  
   
-6.  すべてを削除[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]-ソース (運用環境) 上のデータベースの関連[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンス。  
+6. すべて削除[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]-ソース (運用) 上のデータベースに関連[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスします。  
   
-7.  (完全) すべてのデータベースをバックアップ先 (DR)[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンス。  
+7. 変換先 (DR) 上のすべてのデータベースの (完全) をバックアップ[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスします。  
   
-8.  すべての復元 (完全)[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース バックアップ手順 7. で、ソース (運用)[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンス。  
+8. すべての復元 (完全)[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース バックアップ手順 7. で、ソース (運用)[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスします。  
   
 9. マスター シークレット サーバーを含むすべての BizTalk server を再起動します。  
   
-10. すべてを削除[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]-移行先 (DR) 上のデータベースの関連[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンス。  
+10. すべて削除[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]-変換先 (DR) 上のデータベースに関連[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスします。  
   
-11. ソースのバックアップ ジョブを有効にする[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンス。  
+11. ソースのバックアップ ジョブを有効にする[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスします。  
   
-12. 宛先 (DR) の復元ジョブを有効にする[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンス。  
+12. 宛先 (DR) の復元ジョブを有効にする[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスします。  
   
 ## <a name="see-also"></a>参照  
  [バックアップおよび Restore2 に関する詳細情報](../technical-guides/advanced-information-about-backup-and-restore2.md)

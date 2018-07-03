@@ -1,5 +1,5 @@
 ---
-title: サンプル BTARN ビジネス ポリシー |Microsoft ドキュメント
+title: サンプル BTARN ビジネス ポリシー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c85cbb7894f0d8bd1b61b7e7856865b49fd33859
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 5e055d039e323fb985d9650f6f105bb3b44e9581
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25960624"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36974907"
 ---
 # <a name="sample-btarn-business-policy"></a>サンプル BTARN ビジネス ポリシー
-このサンプルは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] ビジネス ルール ポリシーに関連する XML コードです。  
+このサンプルは、Microsoft® に関連付けられている XML コード[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ビジネス ルール ポリシー。  
   
- サンプル ファイル samplebtarnpolicy.xml は\<*ドライブ*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>Accelerator for rosettanet \sdk\PIPAutomation\3A4 です。  
+ サンプル ファイル samplebtarnpolicy.xml は、 \<*ドライブ*\>: \Program Files\\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\PIPAutomation\3A4 します。  
   
 ## <a name="demonstrates"></a>使用例  
  このコードは、次のルールを含んでいるビジネス ルール ポリシーを示します。  

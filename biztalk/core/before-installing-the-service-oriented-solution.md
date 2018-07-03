@@ -1,5 +1,5 @@
 ---
-title: 指向ソリューションのサービスをインストールする前に |Microsoft ドキュメント
+title: ソリューションを指向サービスをインストールする前に |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,55 +14,55 @@ caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23f326a6fe028c5b7ea5edf60216c1933eccbdb6
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: b3a735ed832051c24e5ccd253df61c42c07ed6e6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006227"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982387"
 ---
 # <a name="before-installing-the-service-oriented-solution"></a>サービス指向ソリューションをインストールする前に
 単一のコンピューターにサービス指向ソリューションのスタブ バージョンをインストールするために必要な次のコンポーネントを用意する必要があります。  
   
--   [!INCLUDE[bts2010R2](../includes/bts2010r2-md.md)]」をご覧ください。  
+- [!INCLUDE[bts2010R2](../includes/bts2010r2-md.md)]。  
   
--   [!INCLUDE[bts2010R2](../includes/bts2010r2-md.md)] でサポートされているソフトウェア  
+- [!INCLUDE[bts2010R2](../includes/bts2010r2-md.md)] でサポートされているソフトウェア  
   
--   IBM WebSphere MQ Client for Windows の最新バージョン  
+- IBM WebSphere MQ Client for Windows の最新バージョン  
   
-    > [!NOTE]
-    >  MQSeries Server は、このソリューションのスタブ バージョンで必要ありません。  
+  > [!NOTE]
+  >  MQSeries Server は、このソリューションのスタブ バージョンで必要ありません。  
   
-    > [!NOTE]
-    >  IBM Web サイトから IBM WebSphere MQ Client for Windows をダウンロードできます。  
+  > [!NOTE]
+  >  IBM Web サイトから IBM WebSphere MQ Client for Windows をダウンロードできます。  
   
- 単一のコンピューターにサービス指向ソリューションのインライン バージョンおよびアダプター バージョンをインストールするには  
+  単一のコンピューターにサービス指向ソリューションのインライン バージョンおよびアダプター バージョンをインストールするには  
   
--   [!INCLUDE[bts2010R2](../includes/bts2010r2-md.md)]」をご覧ください。  
+- [!INCLUDE[bts2010R2](../includes/bts2010r2-md.md)]。  
   
-    > [!NOTE]
-    >  ドメイン アカウントは、エンタープライズ シングル サインオン (SSO) の資格情報をマップするために必要です。 BizTalk サービス用のドメイン アカウントおよび ENTSSO サービス アカウント用のドメイン アカウントを使用することをお勧めします。  
+  > [!NOTE]
+  >  ドメイン アカウントは、エンタープライズ シングル サインオン (SSO) の資格情報をマップするために必要です。 BizTalk サービス用のドメイン アカウントおよび ENTSSO サービス アカウント用のドメイン アカウントを使用することをお勧めします。  
   
--   [!INCLUDE[bts2010R2](../includes/bts2010r2-md.md)] でサポートされているソフトウェア  
+- [!INCLUDE[bts2010R2](../includes/bts2010r2-md.md)] でサポートされているソフトウェア  
   
--   ローカル コンピューター上の MQSeries Server または MQSeries Server を実行しているコンピューターへのアクセス。 インライン バージョンを使用する場合、このソリューションのオーケストレーションを実行している BizTalk Server 上に MQSeries クライアント API を用意する必要があります。  
+- ローカル コンピューター上の MQSeries Server または MQSeries Server を実行しているコンピューターへのアクセス。 インライン バージョンを使用する場合、このソリューションのオーケストレーションを実行している BizTalk Server 上に MQSeries クライアント API を用意する必要があります。  
   
-    > [!NOTE]
-    >  MQSeries Server のバージョンは、BizTalk Server MQSeries アダプタで必要なバージョンに一致する必要があります。 これにより、フィックス パック (CSD10) が適用されている IBM WebSphere MQ for Windows のバージョン 5.3 以降を使用できます。  
+  > [!NOTE]
+  >  MQSeries Server のバージョンは、BizTalk Server の MQSeries アダプタで必要なバージョンに一致する必要があります。 これにより、フィックス パック (CSD10) が適用されている IBM WebSphere MQ for Windows のバージョン 5.3 以降を使用できます。  
   
-    > [!NOTE]
-    >  分散コンポーネント オブジェクト モデル (DCOM) によるサーバーの呼び出しを可能にする MQSeries などの機能を使用する際は、ネットワーク アドレス変換 (NAT) ベースのファイアウォールが無効になっていることを確認します。 クライアントは、実際の IP アドレスを使用してサーバーにアクセスできる必要があり、NAT ベースのファイアウォールによって、このアドレスはクライアントが認識できないように変換されます。  
+  > [!NOTE]
+  >  分散コンポーネント オブジェクト モデル (DCOM) によるサーバーの呼び出しを可能にする MQSeries などの機能を使用する際は、ネットワーク アドレス変換 (NAT) ベースのファイアウォールが無効になっていることを確認します。 クライアントは、実際の IP アドレスを使用してサーバーにアクセスできる必要があり、NAT ベースのファイアウォールによって、このアドレスはクライアントが認識できないように変換されます。  
   
--   メインフレームに必要なソリューションのバリエーションを使用している場合の CICS および Transaction X 対応の IBM メインフレーム。 この場合、CICS アプリケーション (COBOL コード) をメインフレームにインストールする必要があります。また、メインフレームにアクセスするには、Microsoft Host Integration Server (HIS) が必要です。  
+- メインフレームに必要なソリューションのバリエーションを使用している場合の CICS および Transaction X 対応の IBM メインフレーム。 この場合、CICS アプリケーション (COBOL コード) をメインフレームにインストールする必要があります。また、メインフレームにアクセスするには、Microsoft Host Integration Server (HIS) が必要です。  
   
-     このソリューションに対応するメインフレームがない場合、ポートのバインドを変更して、Pending Transactions のスタブ Web サービスを使用できます。 メインフレームのトランザクションをエミュレートするため、Web サービスは、ローカルにトランザクションを生成します。 スタブ Pending Transactions Web サービスのポートのバインドを変更する方法の詳細については、次を参照してください。[インライン バージョンおよびサービス指向ソリューションのアダプター バージョンをインストールする方法](../core/how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution.md)です。  
+   このソリューションに対応するメインフレームがない場合、ポートのバインドを変更して、Pending Transactions のスタブ Web サービスを使用できます。 メインフレームのトランザクションをエミュレートするため、Web サービスは、ローカルにトランザクションを生成します。 スタブ Pending Transactions Web サービスのポートのバインドを変更する方法の詳細については、次を参照してください。[インライン バージョンおよびアダプター バージョンのサービス指向ソリューションのインストール方法](../core/how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution.md)します。  
   
--   Host Integration Server は、メインフレームに接続するために必要です。  
+- Host Integration Server は、メインフレームに接続するために必要です。  
   
-    > [!NOTE]
-    >  Host Integration Server は、BizTalk Server の一部として含まれています。  
+  > [!NOTE]
+  >  Host Integration Server は、BizTalk Server の一部として含まれています。  
   
--   HTTPS 接続に使用する証明書を構成した Web サーバー。  
+- HTTPS 接続に使用する証明書を構成した Web サーバー。  
   
 ## <a name="see-also"></a>参照  
  [指向ソリューションのスタブ バージョンのサービスをインストールする方法](../core/how-to-install-the-stub-version-of-the-service-oriented-solution.md)   

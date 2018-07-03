@@ -1,5 +1,5 @@
 ---
-title: キャプチャおよび Message Repair ソリューションを拡張 |Microsoft ドキュメント
+title: キャプチャおよびメッセージ修復のソリューションを拡張 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bb2f5fb1960a149c96a179ba596c67c9f402016
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bc2b4436906b1df913deec8b525143773dd43e4e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209090"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979643"
 ---
-# <a name="extending-the-solution-for-capture-and-message-repair"></a>キャプチャおよび Message Repair ソリューションを拡張します。
-このヘルプに MT103 エンド ツー エンド チュートリアルでは、失敗した SWIFT メッセージをサブスクライブする BizTalk オーケストレーションを構築する方法を示します。  
+# <a name="extending-the-solution-for-capture-and-message-repair"></a>キャプチャおよびメッセージ修復のソリューションを拡張します。
+このヘルプに MT103 エンド ツー エンドのチュートリアルでは、失敗した SWIFT メッセージをサブスクライブする BizTalk オーケストレーションを構築する方法を示します。  
   
- MT103 エンド ツー エンドのチュートリアルのオーケストレーションでは、ヘルパー クラスの静的メソッドを使用して**ErrorExtractor**エラーの部分と本文を文字列としてメッセージから抽出します。 オーケストレーションは、パーツを別のファイルを書き込みます。  
+ MT103 エンド ツー エンドのチュートリアルのオーケストレーションでは、ヘルパー クラスの静的メソッドを使用して**ErrorExtractor**をエラーの部分と本文を文字列としてメッセージから抽出します。 オーケストレーションは、個別のファイルの部分を書き込みます。  
   
- 失敗したメッセージのエラーの一部がのシリアル化であるため、**元**パイプライン コンポーネントによって構築された、コレクションを逆シリアル化して使用できますが、エラー報告および処理の多くを自動化します。 次[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]コードが失敗したメッセージのエラー メッセージの部分を逆シリアル化し、コレクション内の解析エラーを反復処理する方法を示しています。 コード フラグメントには、読みやすくするための名前空間の修飾を省略します。  
+ 失敗したメッセージのエラーの一部がのシリアル化であるため、 **ErrorCollection**パイプライン コンポーネントによって構築された、コレクションを逆シリアル化して使用できますが、エラー報告と処理の多くを自動化します。 次の Microsoft[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]のコードが失敗したメッセージのエラー メッセージの部分を逆シリアル化し、コレクション内の解析エラーを反復処理する方法を示しています。 コード フラグメントは、読みやすくするための名前空間の修飾が省略されます。  
   
 ```  
 // instantiate an appropriate XmlTextReader  
@@ -51,7 +51,7 @@ while(pEnum.MoveNext())
   
 ```  
   
- **元**エラーによって、すべてのエラーのコレクションを反復処理する場合と同様に型を反復処理するためのメソッドが含まれています。 詳細については、**元**元のメンバーを参照してください。  
+ **ErrorCollection**エラーによって、すべてのコレクション内のエラーを反復処理する場合と同様に型を反復処理するメソッドが含まれます。 詳細については、 **ErrorCollection**元のメンバーを参照してください。  
   
 ## <a name="see-also"></a>参照  
- [失敗したメッセージと元のオブジェクト](../../adapters-and-accelerators/accelerator-swift/failed-messages-and-errorcollection-objects.md)
+ [失敗したメッセージと ErrorCollection オブジェクト](../../adapters-and-accelerators/accelerator-swift/failed-messages-and-errorcollection-objects.md)

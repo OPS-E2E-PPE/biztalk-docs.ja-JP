@@ -1,5 +1,5 @@
 ---
-title: '第 7 章: テストの有効なフラット ファイル インスタンス |Microsoft ドキュメント'
+title: 'モジュール 7: 有効なフラット ファイル インスタンスのテスト |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,24 +16,24 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 572df71fe479bc26e6b803cdbb95ff7a409c394a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2344e537fe2b66720e0df9296e22145d1c23bfa6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209818"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36972251"
 ---
-# <a name="module-7-testing-a-valid-flat-file-instance"></a>第 7 章: テストの有効なフラット ファイル インスタンス
-このモジュールでは、有効なサンプル フラット ファイルをファイル受信ポートの前の実習で作成した MT103 を送信します。 このタスクは、前の実習で作成した受信パイプラインをテストします。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]前のレッスンで選択した送信ポートの出力フォルダーに XML 形式で出力を書き込みます[レッスン 2: XML 送信ポートを追加する](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-an-xml-send-port.md)です。  
+# <a name="module-7-testing-a-valid-flat-file-instance"></a>モジュール 7: 有効なフラット ファイル インスタンスをテストします。
+このモジュールでは、有効なサンプル フラット ファイルをファイルの受信ポートの前の演習で作成された MT103 を送信します。 このタスクは、前の演習で作成した受信パイプラインをテストします。 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]前のレッスンでは、選択した送信ポートの出力フォルダーに XML 形式で出力を書き込みます[レッスン 2: XML の送信ポートを追加する](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-an-xml-send-port.md)します。  
   
- ファイルを開始する受信アダプターの受信フォルダーに SWIFT のフラット形式のファイルをコピーしています。 この操作の結果[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]発信フォルダーに有効な SWIFT XML ファイルをルーティングします。  
+ ファイルを開始する受信アダプターの受信フォルダーに SWIFT のフラット形式のファイルをコピーします。 この操作の結果で[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]有効な SWIFT XML ファイルを送信フォルダーにルーティングします。  
   
- このタスクもが無効です MT103 メッセージを送信します。 エラーを解決するのにには、イベントを使用します。  
+ このタスクでは、無効な MT103 メッセージも送信します。 エラーを解決するのにには、イベントを使用します。  
   
  このセクションには、次のトピックが含まれています。  
   
--   [レッスン 1: サンプル フラット ファイルを送信します。](../../adapters-and-accelerators/accelerator-swift/lesson-1-submitting-a-sample-flat-file.md)  
+-   [レッスン 1: サンプル フラット ファイルを送信する](../../adapters-and-accelerators/accelerator-swift/lesson-1-submitting-a-sample-flat-file.md)  
   
--   [レッスン 2: 無効な MT103 メッセージを送信します。](../../adapters-and-accelerators/accelerator-swift/lesson-2-submitting-an-mt103-message-that-is-not-valid.md)  
+-   [レッスン 2: 無効な MT103 メッセージを送信する](../../adapters-and-accelerators/accelerator-swift/lesson-2-submitting-an-mt103-message-that-is-not-valid.md)  
   
--   [レッスン 3: XML インスタンスのテスト](../../adapters-and-accelerators/accelerator-swift/lesson-3-testing-an-xml-instance.md)
+-   [レッスン 3: XML インスタンスをテストする](../../adapters-and-accelerators/accelerator-swift/lesson-3-testing-an-xml-instance.md)

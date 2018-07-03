@@ -1,5 +1,5 @@
 ---
-title: パフォーマンスしきい値ルールの調整の監視 |Microsoft ドキュメント
+title: パフォーマンスしきい値ルールを使用して調整の監視 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,35 +12,35 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2aedf8040b821230b6541785426731f1cef32099
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4d5bf8f327cbdb12ebe0723941afd6e37b5d2409
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22299082"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36968051"
 ---
-# <a name="monitoring-throttling-using-performance-threshold-rules"></a>パフォーマンスしきい値ルールの調整の監視
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]調整、回復不可能な状態に到達できない、システムの保護を初期化します。 調整、問題があるし、そのソースの識別に役立つことができます。 制限の状態に基づいて、ボトルネックの原因を識別した後は、問題の原因を絞り込む、他のパフォーマンス カウンターを分析します。  
+# <a name="monitoring-throttling-using-performance-threshold-rules"></a>パフォーマンスしきい値ルールを使用して調整の監視
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 回復不可能な状態から、システムを保護するために調整が初期化されます。 調整に問題があるし、そのソースの特定に役立てることができます。 制限の状態に基づいて、ボトルネックの原因を特定したら、問題の原因を絞り込むために他のパフォーマンス カウンターを分析します。  
   
- たとえば、メッセージ ボックス データベースで競合が増加高い CPU 使用率、ディスクで、さらに原因がでメモリ不足の状態への過剰なページングが考えられますが考えられます。 メッセージ ボックス データベースで競合が増加も考えられます高ロックの競合は、彩度の高いディスク ドライブの可能性があります。  
+ たとえば、メッセージ ボックス データベースで競合が増加高い CPU 使用率、ディスクで、さらに、メモリ不足の条件によって発生する可能性がありますに過剰なページングが原因が可能性があります。 メッセージ ボックス データベースで競合が増加が飽和状態のディスク ドライブが原因である可能性がある高のロックの競合によっても原因。  
   
- Message Delivery Throttling State と各ホスト インスタンスに Message Publishing Throttling State の監視は、通常調整のトラブルシューティングを開始するに適しています。 これらのカウンターの値が 0 でない場合は、BizTalk Server システム内で調整が行われている、さらに、ボトルネックの原因を分析することがあることを示してです。 その他のパフォーマンス カウンターの説明については、次を参照してください。[データベース層のボトルネックを識別する](http://go.microsoft.com/fwlink/?LinkID=154678)(http://go.microsoft.com/fwlink/?LinkID=154678) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
+ Message Delivery Throttling State と各ホスト インスタンスの Message Publishing Throttling State の監視は、調整をトラブルシューティングする場合にお勧めでは、通常は。 これらのカウンターの値が 0 でない場合に、BizTalk Server システム内で調整が行われていることと、さらに、ボトルネックの原因を分析することができますを示しています。 その他のパフォーマンス カウンターの説明については、次を参照してください。[データベース層のボトルネックを識別する](http://go.microsoft.com/fwlink/?LinkID=154678)(<http://go.microsoft.com/fwlink/?LinkID=154678>) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
   
-## <a name="biztalk-server-system-performance-counters"></a>BizTalk Server システムのパフォーマンス カウンター  
+## <a name="biztalk-server-system-performance-counters"></a>BizTalk Server システムのパフォーマンス カウンターします。  
   
 |オブジェクト|Instance|カウンター|監視の目的|  
 |------------|--------------|-------------|------------------------|  
 |プロセッサ|_Total|[% プロセッサ時間]|リソースの競合|  
-|[処理]|BTSNTSvc|Virtual Bytes|メモリ リーク/メモリの肥大化|  
-|[処理]|BTSNTSvc|Private Bytes|メモリ リーク/メモリの肥大化|  
-|[処理]|BTSNTSvc|Handle Count|リソースの競合|  
-|[処理]|BTSNTSvc|スレッド数|リソースの競合|  
+|Process|BTSNTSvc|Virtual Bytes|メモリ リーク/メモリの肥大化|  
+|Process|BTSNTSvc|Private Bytes|メモリ リーク/メモリの肥大化|  
+|Process|BTSNTSvc|Handle Count|リソースの競合|  
+|Process|BTSNTSvc|スレッド数|リソースの競合|  
 |Physical Disk|_Total|% Idle Time|リソースの競合|  
 |Physical Disk|_Total|Current Disk Queue Length|リソースの競合|  
   
 ## <a name="biztalk-application-counters"></a>BizTalk アプリケーション カウンター  
   
-|オブジェクト|Instance|カウンター|Description|  
+|オブジェクト|Instance|カウンター|説明|  
 |------------|--------------|-------------|-----------------|  
 |BizTalk Messaging|RxHost|Documents Received/Sec|受信速度|  
 |BizTalk Messaging|TxHost|Documents Processed/Sec|送信速度|  
@@ -56,4 +56,4 @@ ms.locfileid: "22299082"
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [監視の調整](../technical-guides/monitoring-for-throttling.md)
+-   [調整のための監視](../technical-guides/monitoring-for-throttling.md)

@@ -1,5 +1,5 @@
 ---
-title: サプライ チェーンの課題 |Microsoft ドキュメント
+title: サプライ チェーンの課題 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1dbe848a62fe891ed18b076b016f987ef636bdbf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b7acd5910e6e8f4a7de6e92d755d7e2923857c7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209954"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36972283"
 ---
 # <a name="the-supply-chain-challenge"></a>サプライ チェーンの課題
 ハイテク業界では、パートナーとの統合に多くの困難が伴います。 情報技術 (IT)、電子部品、半導体製造、および遠距離通信のどの分野の企業でも、問題が発生するのはサプライ チェーンです。  
@@ -34,7 +34,7 @@ ms.locfileid: "22209954"
 ## <a name="supply-chain-complexity"></a>サプライ チェーンの複雑化  
  多くのハイテク メーカーのサプライ チェーンは、長大かつ複雑です。 このようなサプライ チェーンには、多数のパートナー、サプライヤ、および購入者が含まれます。 そのため、業務が複雑化し、さまざまな相互連絡が必要になる場合があります。 メーカーは、これまで使用してきた方法、自社とパートナーの能力、およびパートナーの要件に基づいて、通信手段を用意する必要があります。 そのため、パートナーごとにカスタマイズしたビジネス プロセスを作成することになる場合があります。 また、パートナーが 1 つの主要なデータ接続に頼るという一般的な方法を使用せずに、多様な通信デバイスを使用してデータを交換する場合もあります。 次の図に、サプライ チェーンで多様な通信デバイスを使用する必要がある 2 つのパートナーの例を示します。  
   
- 一方のパートナーとは FAX で Request Price メッセージを交換し、他方のパートナーとは EDI で交換します。 1 つのパートナーと電話および電子メールの添付を使用して、部分取り消しメッセージを交換することがあります[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsExcel](../../includes/btsexcel-md.md)]を別のスプレッドシートです。 通信は、電話、FAX、通常の郵便、[!INCLUDE[btsExcel](../../includes/btsexcel-md.md)] スプレッドシートを添付した電子メールなどによって、手動で実行されることがあります。 EDI、FTP、またはバイナリ ファイルを使用して自動化されていることもあります。  
+ 一方のパートナーとは FAX で Request Price メッセージを交換し、他方のパートナーとは EDI で交換します。 1 つのパートナーとの電話と電子メールを接続されている Microsoft を介して、部分取り消しメッセージを交換することがあります[!INCLUDE[btsExcel](../../includes/btsexcel-md.md)]と他のスプレッドシートです。 通信は、電話、FAX、通常の郵便、[!INCLUDE[btsExcel](../../includes/btsexcel-md.md)] スプレッドシートを添付した電子メールなどによって、手動で実行されることがあります。 EDI、FTP、またはバイナリ ファイルを使用して自動化されていることもあります。  
   
  このような多様性によってサプライ チェーンが複雑になり、多くの場合、手動処理とカスタム プログラミングの量が増加します。 そのため、サプライ チェーンの開発、展開、保守、およびアップグレードが非常に困難になります。 変更の管理が難しいので、企業とそのパートナーは新しい技術開発に適応することも困難です。 1 つの取引先との接続を変更することにも、多くの作業が必要になります。 変更内容をサプライ チェーン全体に適用するには、膨大な作業が必要になります。  
   

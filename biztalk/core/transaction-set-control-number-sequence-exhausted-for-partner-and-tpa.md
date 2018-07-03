@@ -1,5 +1,5 @@
 ---
-title: トランザクション セット制御番号シーケンスが終了パートナーと TPA の |Microsoft ドキュメント
+title: トランザクション セット制御番号シーケンスがパートナーと TPA の |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40d87b1f2681bb07816721971cfbd17d2c3a0b91
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c39815ccd013deea9ac4ef78426320e5c371feb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278338"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36968515"
 ---
 # <a name="transaction-set-control-number-sequence-exhausted-for-partner-and-tpa"></a>パートナーと TPA のトランザクション セット制御番号のシーケンスが終了しました
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|EdiControlNumberExhaustedForParty|  
-|メッセージ テキスト|トランザクション セット制御番号のシーケンスが終了 TPA '{2}' の 'パートナー '{1} です。 {2} - BizTalk Server 管理コンソールを使用して EDI プロパティでシーケンスをリセットします。|  
+|                 |                                                                                                                                                                        |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                           [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                                           |
+| 製品バージョン |                                                       [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                                       |
+|    イベント ID     |                                                                                   -                                                                                    |
+|  イベント ソース   |                                         [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                         |
+|    コンポーネント    |                                                                               EDI エンジン                                                                               |
+|  シンボル名  |                                                                   EdiControlNumberExhaustedForParty                                                                    |
+|  メッセージ テキスト   | トランザクション セット制御番号シーケンスがパートナー '{1}'for 'TPA{2}'。 シーケンスをリセット{2}- BizTalk Server 管理コンソールを使用して EDI のプロパティ。 |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、BizTalk Server がドキュメントのため、トランザクション セット制御の範囲が使い果たされた {2} でアグリーメントを処理することを示します。  
+ このエラー/警告/情報イベントは、トランザクション セット制御の範囲が {2} のアグリーメントにすべて使用されたため、BizTalk Server がドキュメントを処理できなかったことを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するのには、チェックを {2} アグリーメントの制御番号をリセットまたは制御番号の範囲を増やすか、アグリーメントでは、制御番号範囲指定に対するリセット ボタンをクリックします。
+ このエラーを解決するには、チェック ボックスをオンにして {2} アグリーメントの制御番号をリセットするか、制御番号の範囲を大きくするか、またはアグリーメントの制御番号範囲指定に対するリセット ボタンを押します。

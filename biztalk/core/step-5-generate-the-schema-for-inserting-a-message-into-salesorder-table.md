@@ -1,5 +1,5 @@
 ---
-title: '手順 5 (オンプレミス): にメッセージを SalesOrder テーブルを挿入するためのスキーマの生成 |Microsoft ドキュメント'
+title: '手順 5 (オンプレミス): メッセージする SalesOrder テーブルを挿入するためのスキーマの生成 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,47 +12,49 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: facb5d638ed82e1632e434a2a9c9063a2c3daa68
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: afdca03f5ad8639705ac40171e4142a12c07d757
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279322"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973475"
 ---
-# <a name="step-5-on-premises-generate-the-schema-for-inserting-a-message-inito-salesorder-table"></a>手順 5 (オンプレミス): にメッセージを SalesOrder テーブルを挿入するためのスキーマを生成します。
-ビジネス シナリオに従って、X12 販売注文メッセージは、Contoso から送信される必要があります挿入される Northwind の**SalesOrder**テーブルの場合は、注文、数量が 100 より大きい。 メッセージを挿入する、 **SalesOrder**テーブルのスキーマを生成する必要があります、**挿入**テーブルで操作します。 このトピックでは、作成、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューション、およびしを使用して、[!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)]を実行するためのスキーマを生成する、**挿入**での操作、 **SalesOrder**テーブル。  
-  
+# <a name="step-5-on-premises-generate-the-schema-for-inserting-a-message-inito-salesorder-table"></a>手順 5 (オンプレミス): メッセージする SalesOrder テーブルを挿入するためのスキーマを生成します。
+ビジネス シナリオに従って販売注文メッセージは、Contoso から送信された X12 を Northwind に挿入する必要があります**SalesOrder**テーブルの場合、注文、数量が 100 より大きい。 メッセージを挿入するのには、 **SalesOrder**テーブルのスキーマを生成する必要があります、**挿入**テーブルに対する操作。 このトピックでは、作成、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションでは、次を使用して、[!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)]を実行するためのスキーマを生成する、**挿入**操作、 **SalesOrder**テーブル。  
+
 ### <a name="to-generate-the-schema-for-insert-operation-on-salesorder-table"></a>SalesOrder テーブルで挿入操作を行うスキーマを生成するには  
-  
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Visual Studio プロジェクトを作成します。 Visual Studio から**ファイル** メニューのをクリックして**新規**、クリックして**プロジェクト**です。 **新しいプロジェクト**ダイアログ ボックスで、インストール済みのテンプレートの一覧からクリックして**BizTalk プロジェクト**、し、**空[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロジェクト**です。 プロジェクト名を入力してください。 `OrderProcessingDemo`  をクリックし、 **OK**です。  
-  
-2.  ソリューション エクスプ ローラーでプロジェクト名を右クリックし、**追加**、クリックして**生成した項目の追加**です。  
-  
-3.  **生成した項目の追加**ダイアログ ボックスで、**アダプター サービスの使用**、クリックして**追加**です。 [!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)] が表示されます。  
-  
-4.  **バインディングを選択**ドロップダウン リスト、選択**sqlBinding**、クリックして**構成**です。  
-  
-5.  **アダプターの構成** ダイアログ ボックスをクリックして、**セキュリティ** タブとの間、**クライアント資格情報の種類**ドロップダウン リストで、次のいずれかの操作を行います。  
-  
-    |このボタンをクリックします。|目的|  
-    |----------------|----------------|  
-    |**なし**|Windows 認証を使用して SQL Server に接続します。|  
-    |**Windows**|Windows 認証を使用して SQL Server に接続します。|  
-    |**ユーザー名**|ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白には、アダプターが Windows 認証を使用して SQL Server に接続します。|  
-  
-6.  クリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。 詳細については、接続 URI の[!INCLUDE[adaptersqlshort](../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI](http://msdn.microsoft.com/library/dd788089.aspx)です。  
-  
-    > [!NOTE]
-    >  接続パラメーターに予約済みの文字が含まれている場合、そのままを指定する必要がありますのでは、 **URI プロパティ** タブでは、エスケープ文字を使用せずします。 ただし、URI で直接指定する場合、 **URI の構成**フィールドと接続パラメーターは、予約文字を含める、適切なエスケープ文字を使用して接続パラメーターを指定する必要があります。  
-  
-    > [!NOTE]
-    >  [URI のプロパティ] タブで値を指定しないと、[!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)] により URI が `mssql://.//` になります。 このような場合、アダプターは既定のデータベースと、ローカル コンピューター上の既定のデータベース インスタンスに接続します。  
-  
-7.  **アダプターの構成**ダイアログ ボックスで、をクリックして**OK**です。 **アダプター サービスの使用**ダイアログ ボックスで、をクリックして**接続**です。  
-  
-8.  **カテゴリを選択**ボックスで、展開**テーブル**、をクリックし、 **SalesOrder**テーブル。  
-  
-9. **利用可能なカテゴリと操作**ボックスで、**挿入**、 をクリックして**追加**、順にクリック**OK**です。 ソリューション エクスプローラーに新しい項目が追加されます。 スキーマ ファイル (**TableOperation.dbo.SalesOrder.xsd**) は、生成されたスキーマでは挿入操作を実行する場合、 **SalesOrder**テーブル。  
-  
+
+1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Visual Studio プロジェクトを作成します。 Visual Studio から**ファイル** メニューのをクリックして**新規**、 をクリックし、**プロジェクト**します。 **新しいプロジェクト**] ダイアログ ボックスで、インストール済みのテンプレートの一覧からクリックして**BizTalk プロジェクト**、し、[**空[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロジェクト**します。 プロジェクト名の入力`OrderProcessingDemo`順にクリックします**OK**します。  
+
+2. ソリューション エクスプ ローラーでプロジェクト名を右クリックし、[**追加**、] をクリックし、**生成した項目の追加**します。  
+
+3. **生成した項目の追加**ダイアログ ボックスで、 **Consume Adapter Service**、 をクリックし、**追加**します。 [!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)] が表示されます。  
+
+4. **バインディングを選択**ドロップダウン リスト、選択**sqlBinding**、 をクリックし、**構成**します。  
+
+5. **アダプターの構成**ダイアログ ボックスで、をクリックして、**セキュリティ** タブとの間、**クライアント資格情報の種類**ドロップダウン リストで、次のいずれかの操作を行います。  
+
+
+   |  このボタンをクリックします。  |                                                                                                                                                               目的                                                                                                                                                               |
+   |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |   **なし**   |                                                                                                                                          Windows 認証を使用して SQL Server に接続します。                                                                                                                                           |
+   | **Windows**  |                                                                                                                                          Windows 認証を使用して SQL Server に接続します。                                                                                                                                           |
+   | **ユーザー名** | ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白、アダプターが Windows 認証を使用して SQL Server に接続します。 |
+
+
+6. をクリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。 接続 URI の詳細についてはの[!INCLUDE[adaptersqlshort](../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI](http://msdn.microsoft.com/library/dd788089.aspx)します。  
+
+   > [!NOTE]
+   >  接続パラメーターに予約済みの文字が含まれている場合、としてを指定する必要がありますのでは、 **URI プロパティ**タブ、つまり、エスケープ文字を使用せずします。 ただし、直接の URI を指定する場合、 **URI の構成**フィールドと接続パラメーターは、予約文字を含めることが、適切なエスケープ文字を使用して接続パラメーターを指定する必要があります。  
+   > 
+   > [!NOTE]
+   >  [URI のプロパティ] タブで値を指定しないと、[!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)] により URI が `mssql://.//` になります。 このような場合、アダプターは既定のデータベースと、ローカル コンピューター上の既定のデータベース インスタンスに接続します。  
+
+7. **アダプターの構成**ダイアログ ボックスで、をクリックして**OK**します。 **Consume Adapter Service**ダイアログ ボックスで、をクリックして**Connect**します。  
+
+8. **カテゴリを選択**ボックスで、展開**テーブル**、 をクリックし、 **SalesOrder**テーブル。  
+
+9. **利用可能なカテゴリと操作**ボックスで、**挿入**、 をクリックして**追加**、順にクリックします**OK**します。 ソリューション エクスプローラーに新しい項目が追加されます。 スキーマ ファイル (**TableOperation.dbo.SalesOrder.xsd**) で挿入操作を実行するため、生成されたスキーマには、 **SalesOrder**テーブル。  
+
 ## <a name="see-also"></a>参照  
- [チュートリアル 4: BizTalk Server 2013 を使用するハイブリッド アプリケーションを作成します。](../core/tutorial-4-creating-a-hybrid-application-using-biztalk-server-2013.md)
+ [チュートリアル 4: BizTalk Server 2013 を使用してハイブリッド アプリケーションを作成します。](../core/tutorial-4-creating-a-hybrid-application-using-biztalk-server-2013.md)

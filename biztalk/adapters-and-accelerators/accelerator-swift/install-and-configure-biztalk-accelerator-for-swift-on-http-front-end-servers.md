@@ -1,5 +1,5 @@
 ---
-title: インストールと BizTalk Accelerator を HTTP フロント エンド サーバーに SWIFT の構成 |Microsoft ドキュメント
+title: インストールと BizTalk Accelerator を HTTP フロント エンド サーバー上の SWIFT の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,23 +15,23 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8a63277ec58981f5f0f904aabe61957de66df08
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 375f5f26c9c71554f4ad44bd688f1d715cb81b92
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25965672"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973459"
 ---
-# <a name="installing-and-configuring-biztalk-accelerator-for-swift-on-http-front-end-servers"></a>インストールと BizTalk Accelerator を HTTP フロント エンド サーバーに SWIFT の構成
-インストールおよび構成する方法について説明[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]HTTP フロント エンド サーバーにします。 これらのサーバーは主に SWIFT ネットワークとの通信に使用します。  
-  
-### <a name="to-install-and-configure-biztalk-accelerator-for-swift-on-the-http-front-end-server"></a>インストールでおよび構成する BizTalk Accelerator for SWIFT HTTP フロント エンド サーバー  
-  
-1.  カスタム インストールを実行[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]です。 インストール、 **MRSR**と**Message Repair and New Submission の Web コンポーネント**機能します。  
-  
-    > [!NOTE]
-    >  インストールが完了したら、構成ウィザードを開始します。  
-  
-2.  Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]構成コンソールで、構成**MCRR**と**WebService**です。  
-  
-3.  Web サーバーで、構成ウィザードの完了後に、フォルダーに web.config ファイルを開きます。 \<*ドライブ*\>: \Program Files\Microsoft[!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)]メモ帳で \Service\ です。 "Authorization"を検索します。 **承認**セクションで、ロール値 A4SWIFT users グループの名前を設定します。
+# <a name="installing-and-configuring-biztalk-accelerator-for-swift-on-http-front-end-servers"></a>インストールと BizTalk Accelerator を HTTP フロント エンド サーバー上の SWIFT の構成
+このセクションは、インストールして構成する方法を説明します[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]HTTP フロント エンド サーバー。 これらのサーバーは主に、SWIFT ネットワークとの通信に使用します。  
+
+### <a name="to-install-and-configure-biztalk-accelerator-for-swift-on-the-http-front-end-server"></a>インストールして構成 BizTalk Accelerator for SWIFT HTTP フロント エンド サーバーに  
+
+1. カスタム インストール実行[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]します。 インストール、 **MRSR**と**Message Repair and New Submission の Web コンポーネント**機能します。  
+
+   > [!NOTE]
+   >  インストールが完了したら、構成ウィザードが開始されます。  
+
+2. Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]構成コンソールで、構成**MCRR**と**WebService**します。  
+
+3. フォルダーに web.config ファイルを開き、Web サーバーで、構成ウィザードの完了後に\<*ドライブ*\>: \Program Files\Microsoft [!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)]\Service\ メモ帳でします。 "Authorization"を検索します。 **承認**セクションで、A4SWIFT ユーザーのグループの名前にロールの値を設定します。

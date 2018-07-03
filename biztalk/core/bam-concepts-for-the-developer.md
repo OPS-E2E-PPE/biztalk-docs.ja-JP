@@ -1,5 +1,5 @@
 ---
-title: 開発者用の BAM 概念 |Microsoft ドキュメント
+title: 開発者のための BAM 概念 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e407121e9f71707b45f95e77a8520ed30df3b33
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9fc6d74eb8b14479776febea1530e142e6897729
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230810"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36967451"
 ---
 # <a name="bam-concepts-for-the-developer"></a>開発者のための BAM 概念
 BAM 開発者は、アクティビティ、Continuation、参照など重要な BAM 概念を十分に理解する必要があります。 また、追跡とトランザクション処理の違いについても理解する必要があります。  
@@ -36,11 +36,11 @@ BAM 開発者は、アクティビティ、Continuation、参照など重要な 
 ## <a name="what-is-a-continuation"></a>Continuation について  
  Continuation は、次の情報に関するガイダンスを BAM インフラストラクチャに提供します。  
   
--   イベントの発生順序  
+- イベントの発生順序  
   
--   イベント項目が関連付けられている一意 ID が変更された場合の処理方法  
+- イベント項目が関連付けられている一意 ID が変更された場合の処理方法  
   
- 継続タスクとその使用方法の詳細については、次を参照してください。 [Continuation ノードと ContinuationID ノード](../core/continuation-and-continuationid-nodes.md)です。  
+  継続タスクとその使用方法の詳細については、次を参照してください。 [Continuation ノードと ContinuationID ノード](../core/continuation-and-continuationid-nodes.md)します。  
   
 ## <a name="what-is-a-reference"></a>参照について  
  参照 (関連アクティビティとも呼びます) は、アクティビティと他の項目間の関係を指定します。 関連付けることができる項目には、別のアクティビティやドキュメントの場所などがあります。  
@@ -53,7 +53,7 @@ BAM 開発者は、アクティビティ、Continuation、参照など重要な 
   
  次の表に、BAM でのデータ追跡モードを示します。  
   
-|Scenario|[説明]|  
+|シナリオ|[説明]|  
 |--------------|------------------|  
 |処理よりも追跡を優先|処理が成功すると、追跡情報が書き込まれます。<br /><br /> 処理が失敗すると、エラーに関する情報が書き込まれます。|  
 |処理と追跡は同等|追跡または処理が失敗すると、すべてがロールバックされます。|  

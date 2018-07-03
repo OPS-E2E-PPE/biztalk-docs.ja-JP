@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11055 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 11055 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4626041ba952260834e9bcdbdf9b3538e4d4855a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 49ecac7ef371dd5a40af59c6d9b335c7a758312b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277322"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36978225"
 ---
 # <a name="single-sign-on-event-11055"></a>シングル サインオン: イベント 11055
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|11055|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_WARN_PS_DIRECT_SET_EXTERNAL_PASSWORD|  
-|メッセージ テキスト|SSO データベース内で外部パスワードを直接更新できませんでした。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アプリケーション名: %2 %r<br /><br /> Windows アカウント: %3 %r<br /><br /> 外部アカウント: %4 %r<br /><br /> エラー コード: %5|  
+|                 |                                                                                                                                                                                                                                         |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                                                                        エンタープライズ シングル サインオン                                                                                                        |
+| 製品バージョン |                                                                                       [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                        |
+|    イベント ID     |                                                                                                                  11055                                                                                                                  |
+|  イベント ソース   |                                                                                                                 ENTSSO                                                                                                                  |
+|    コンポーネント    |                                                                                                                   なし                                                                                                                   |
+|  シンボル名  |                                                                                                SSO_WARN_PS_DIRECT_SET_EXTERNAL_PASSWORD                                                                                                 |
+|  メッセージ テキスト   | SSO データベース内で外部パスワードを直接更新できませんでした。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アプリケーション名: % 2 %r<br /><br /> Windows アカウント: % 3 %r<br /><br /> 外部アカウント: % 4 %r<br /><br /> エラー コード: %5 |
   
 ## <a name="explanation"></a>説明  
  SSO データベース内で外部パスワードを直接更新できませんでした。  

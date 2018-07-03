@@ -1,5 +1,5 @@
 ---
-title: 新しいパイプラインを作成する方法 |Microsoft ドキュメント
+title: 新しいパイプラインを作成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 83c1df14c0015ac26b99ad8f0760fe18438e8024
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 908c0eebecaf005e22194584f9a1d1e7fafa4daf
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248762"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36970235"
 ---
 # <a name="how-to-create-a-new-pipeline"></a>新しいパイプラインを作成する方法
 プロジェクトにパイプライン テンプレートを追加して、新しいパイプラインを作成できます。  
@@ -32,26 +32,26 @@ ms.locfileid: "22248762"
   
 ### <a name="to-create-a-new-pipeline"></a>新しいパイプラインを作成するには  
   
-1.  ソリューション エクスプローラーで、パイプラインを作成するプロジェクトを選択します。  
+1. ソリューション エクスプローラーで、パイプラインを作成するプロジェクトを選択します。  
   
-2.  **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。  
+2. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。  
   
-3.  **新しい項目の追加**ダイアログ ボックスで、**受信パイプライン**または**送信パイプライン**テンプレートを 1 回クリックするとします。  
+3. **新しい項目の追加**ダイアログ ボックスで、**受信パイプライン**または**送信パイプライン**テンプレートで 1 回クリックします。  
   
-    > [!NOTE]
-    >  パイプラインに表示される既定の名前で自動的に作成する場合は、テンプレートをダブルクリックすると、**名前**フィールドです。  
+   > [!NOTE]
+   >  パイプラインに表示される既定の名前を自動的に作成されます、テンプレートをダブルクリックした場合、**名前**フィールド。  
   
-4.  **名前**フィールドに、パイプラインの名前を入力します。  
+4. **名前**フィールドに、パイプラインの名前を入力します。  
   
-5.  **[開く]** をクリックします。  
+5. **[開く]** をクリックします。  
   
-     新しいパイプラインがソリューション エクスプローラーに表示されます。 デザイン画面に、パイプラインのステージおよび既定のコンポーネントが表示されます。  
+    新しいパイプラインがソリューション エクスプローラーに表示されます。 デザイン画面に、パイプラインのステージおよび既定のコンポーネントが表示されます。  
   
- パイプライン コンポーネントをパイプラインに追加する方法の詳細については、次を参照してください。[パイプラインにコンポーネントを追加する方法](../core/how-to-add-a-component-to-a-pipeline.md)です。  
+   パイプライン コンポーネントをパイプラインに追加する方法の詳細については、次を参照してください。[パイプラインにコンポーネントを追加する方法](../core/how-to-add-a-component-to-a-pipeline.md)します。  
   
 ## <a name="see-also"></a>参照  
  [パイプラインを開く方法](../core/how-to-open-a-pipeline.md)   
  [パイプラインを保存する方法](../core/how-to-save-a-pipeline.md)   
  [ツールボックスの使用方法](../core/how-to-use-the-toolbox.md)   
  [キーボードで移動する方法](../core/how-to-navigate-with-the-keyboard.md)   
- [パイプライン デザイナーでパイプラインの作成](../core/creating-pipelines-with-pipeline-designer.md)
+ [パイプライン デザイナーでのパイプラインの作成](../core/creating-pipelines-with-pipeline-designer.md)

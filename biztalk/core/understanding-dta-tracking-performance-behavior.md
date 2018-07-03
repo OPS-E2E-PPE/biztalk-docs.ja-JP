@@ -1,5 +1,5 @@
 ---
-title: DTA 追跡のパフォーマンスに関する動作を理解する |Microsoft ドキュメント
+title: DTA 追跡のパフォーマンス特性を理解する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 278d1e3c4b52c14c68d692ce3d3a3179d15bb10b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 37c0f1749e87556d52ec9cc1ab84ed64f64a88c6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287026"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979707"
 ---
 # <a name="understanding-dta-tracking-performance-behavior"></a>DTA 追跡のパフォーマンス特性について
 DTA 追跡の維持可能な最大スループット (MST) を決定する主要な要因として、次のものがあります。  
   
--   システムに必要なメッセージのスループット (単位時間に受信されたメッセージ)。  
+- システムに必要なメッセージのスループット (単位時間に受信されたメッセージ)。  
   
--   メッセージごとの追跡データ量。  
+- メッセージごとの追跡データ量。  
   
--   データが BizTalkDTADb データベースから削除されるまでの存続期間 (データ保有期間)。  
+- データが BizTalkDTADb データベースから削除されるまでの存続期間 (データ保有期間)。  
   
--   BizTalkDTADb のデータをアーカイブして削除するかどうか。 アーカイブは任意ですが、削除は定期的に行う必要があります。  
+- BizTalkDTADb のデータをアーカイブして削除するかどうか。 アーカイブは任意ですが、削除は定期的に行う必要があります。  
   
- これらの要因のすべてに共通するのは、DTA がデータを受け入れて処理 (アーカイブおよび削除) する速度です。  
+  これらの要因のすべてに共通するのは、DTA がデータを受け入れて処理 (アーカイブおよび削除) する速度です。  
   
 ## <a name="how-the-biztalkdtadb-insert-and-processing-speed-affects-your-system"></a>BizTalkDTADb の挿入と処理速度がシステムに与える影響  
- ここで、追跡を見ていきましょうに記載されているデータの経路[維持可能な最大の追跡スループットの測定](../core/measuring-maximum-sustainable-tracking-throughput.md)、およびシステムのさまざまなコンポーネントで BizTalkDTADb の挿入と処理速度の影響を評価します。  
+ 次に、追跡してみましょうで説明されているデータの経路[維持可能な最大の追跡スループットの測定](../core/measuring-maximum-sustainable-tracking-throughput.md)、およびシステムのさまざまなコンポーネントで BizTalkDTADb の挿入と処理速度の影響を評価します。  
   
  まず trackingdata テーブルとスプール テーブルについて考えてみると、これらのテーブルから BizTalkDTADb データベースにデータを移動するプロセスが、ランタイムによって trackingdata テーブルおよびスプール テーブルにデータが挿入されるのと同等以上の速度で BizTalkDTADb データベースにデータを挿入できなければ、trackingdata テーブルおよびスプール テーブルにバックログが蓄積され始めることは想像がつきます。 これは、メッセージ スループットの低下により最終的にはバックログを解消できることがわかっている限り、短期的には必ずしも問題にはなりません。 しかし、データがスプール テーブルまたは trackingdata テーブルに残っている間は、BizTalkDTADb データベースのデータを [グループ ハブ] ページでクエリを追跡したりその他のツールで照会することはできません。  このため、問題解決には役立ちません。 したがって、想定されるバックログ期間は、BizTalkDTADb データに基づいて調査する必要のある問題が発生した時点でタイムリーに追跡情報を利用できる程度に抑える必要があります。  
   
@@ -46,6 +46,6 @@ DTA 追跡の維持可能な最大スループット (MST) を決定する主要
   
 ## <a name="see-also"></a>参照  
  [維持可能な最大の追跡スループットの測定](../core/measuring-maximum-sustainable-tracking-throughput.md)   
- [DTA 追跡の MST を測定するためのシナリオをテストします。](../core/test-scenarios-for-measuring-mst-of-dta-tracking.md)   
- [DTA 追跡の MST の検索のヒントし、テクニック](../core/tips-and-tricks-for-finding-mst-of-dta-tracking.md)   
+ [DTA 追跡の MST を測定するためのテスト シナリオ](../core/test-scenarios-for-measuring-mst-of-dta-tracking.md)   
+ [DTA 追跡の MST を特定のヒントし、テクニック](../core/tips-and-tricks-for-finding-mst-of-dta-tracking.md)   
  [追跡データベースのサイズに関するガイドライン](../core/tracking-database-sizing-guidelines.md)

@@ -1,5 +1,5 @@
 ---
-title: XML 逆アセンブラーまたはアセンブラー |Microsoft ドキュメント
+title: XML 逆アセンブラーとアセンブラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,41 +15,41 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4978484f888290377986ee4ae8bf049c14a1b31
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3d8dfaf91d9b0d3d058c4d3e31cd67c652235eff
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206650"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983043"
 ---
-# <a name="xml-disassembler-and-assembler"></a>XML 逆アセンブラーまたはアセンブラー
-XML 逆アセンブラーまたはアセンブラーいることを確認[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) だけでなく、HL7 でエンコードされたメッセージをサポートしますも XML メッセージの受信/送信をサポートします。  
+# <a name="xml-disassembler-and-assembler"></a>XML 逆アセンブラーとアセンブラー
+XML 逆アセンブラーとアセンブラーことを確認します。 Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) だけでなく、HL7 でエンコードされたメッセージをサポートしますが、受信/送信 XML メッセージをもサポートしています。  
   
 ## <a name="xml-disassembler"></a>XML 逆アセンブラー  
- XML 逆アセンブラーは、受信 XML メッセージを処理するための XML セグメントに解析します。 メッセージを解析する際、逆アセンブラーは、次のタスクを実行します。  
+ XML 逆アセンブラーでは、受信 XML メッセージを処理するための XML セグメントに解析します。 メッセージを解析する際、逆アセンブラーは、次のタスクを実行します。  
   
--   ハンドルのエスケープ シーケンス  
+- ハンドルのエスケープ シーケンス  
   
--   必須/オプションのプロパティのチェックを処理します。  
+- 必須/任意のプロパティのチェックを処理します。  
   
--   ハンドル宣言 Z セグメント  
+- ハンドルの Z セグメントの宣言  
   
- メッセージを解析する際、逆アセンブラーは、次を実行します。  
+  メッセージを解析する際、逆アセンブラーは、次を実行します。  
   
--   構文検証  
+- 構文の検証  
   
--   スキーマの検証 (有効な場合)  
+- スキーマの検証 (有効な場合)  
   
 ## <a name="xml-assembler"></a>XML アセンブラー  
- XML アセンブラーは、送信 XML メッセージに XML セグメントをシリアル化します。 XML アセンブラーは、サポートしており、次の受信確認 (ACK) メッセージの作成します。  
+ XML アセンブラーは、XML のセグメントを送信 XML メッセージにシリアル化します。 XML アセンブラーは、サポートおよび次の受信確認 (ACK) メッセージを作成します。  
   
--   静的  
+- 静的  
   
--   元のモード  
+- 元のモード  
   
--   強化されたモード  
+- 拡張モード  
   
- XML アセンブラーでは、遅延の ACK メッセージをルーティングする機能もあります。  
+  XML アセンブラーでは、遅延の ACK メッセージをルーティングする機能もあります。  
   
 ## <a name="see-also"></a>参照  
  [BTAHL72XML 処理](../../adapters-and-accelerators/accelerator-hl7/btahl72xml-processing.md)   

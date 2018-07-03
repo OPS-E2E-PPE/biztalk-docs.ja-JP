@@ -1,5 +1,5 @@
 ---
-title: エンタープライズ シングル サインオンを回復する方法 |Microsoft ドキュメント
+title: エンタープライズ シングル サインオンを復旧する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a87404e608789fa3dba003f3aba6155c5f049e8d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: d56953fcab29b53f23ba3097296a74aeb67a17c8
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25974224"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973123"
 ---
 # <a name="how-to-recover-enterprise-single-sign-on"></a>エンタープライズ シングル サインオンを復旧する方法
 BizTalk Server を復旧する前に、まずはエンタープライズ シングル サインオン (SSO) を復旧する必要があります。  
@@ -34,41 +34,41 @@ BizTalk Server を復旧する前に、まずはエンタープライズ シン�
   
 ### <a name="to-recover-enterprise-single-sign-on"></a>エンタープライズ シングル サインオンを復旧するには  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 構成**です。  
+1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 構成**します。  
   
-2.  Microsoft BizTalk Server 構成で、コンソール ツリーで、をクリックして**エンタープライズ SSO**です。  
+2. Microsoft BizTalk Server 構成では、コンソール ツリーで、クリックして**エンタープライズ SSO**します。  
   
-3.  詳細ウィンドウで、次のように選択します。**を有効にするエンタープライズ シングル サインオンこのコンピューターに**、クリックして**既存の SSO システムに参加**です。  
+3. 詳細] ウィンドウで、[**を有効にするエンタープライズ シングル サインオン コンピューターこの**、順にクリックします**既存の SSO システムに参加**します。  
   
-4.  **データ ストア**、SSO データベースと SSO データベースの名前をホストする SQL server の名前を入力します。  
+4. **データ ストア**、SSO データベースと SSO データベースの名前をホストする SQL server の名前を入力します。  
   
-5.  **Windows サービス**、最初にインストールして BizTalk Server を構成するときに使用する SSO サービス アカウントのユーザー名とパスワードを入力します。  
+5. **Windows サービス**、最初にインストールして BizTalk Server を構成するときに使用した SSO サービス アカウントのユーザー名とパスワードを入力します。  
   
-    > [!NOTE]
-    >  別のアカウントを使用することもできますが、使用するアカウントはシングル サインオン管理者グループのメンバーである必要があります。  
+   > [!NOTE]
+   >  別のアカウントを使用することもできますが、使用するアカウントはシングル サインオン管理者グループのメンバーである必要があります。  
   
-6.  **[構成の適用]** をクリックします。  
+6. **[構成の適用]** をクリックします。  
   
-     マスター シークレットが取得されなかったことを示す警告が表示されます。 イベント ビューアーを使用すると、エンタープライズ シングル サインオン サービスがコンピューターで開始され実行されていることを確認できます。  
+    マスター シークレットが取得されなかったことを示す警告が表示されます。 イベント ビューアーを使用すると、エンタープライズ シングル サインオン サービスがコンピューターで開始され実行されていることを確認できます。  
   
-7.  をクリックして**ファイル**、クリックして**終了**です。  
+7. クリックして**ファイル**、 をクリックし、**終了**します。  
   
-8.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+8. をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
 9. コマンド プロンプトで、次のように入力します。  
   
-     **cd プログラム files \common files \enterprise でのシングル サインオン**  
+     **cd Program files \common files \enterprise でシングル サインオン**  
   
 10. コマンド プロンプトで、次のように入力します。  
   
-     **ssoconfig restoresecret と入力***\<backupfile  \>*  
+     **ssoconfig-restoresecret***\<backupfile  \>*  
   
-     ここで *\<backupfile\>* バックアップしたマスター シークレット ファイルの名前を指定します。  
+     場所*\<backupfile\>* バックアップしたマスター シークレット ファイルの名前を指定します。  
   
-     ときに**ssoconfig**バックアップ ファイルのパスワードの入力を求め SSO の構成中に指定されたパスワードを入力してください。 パスワードが正しい場合、 **ssoconfig**次のメッセージが表示されます。  
+     ときに**ssoconfig** SSO を構成中に指定されたパスワードを入力するバックアップ ファイルのパスワードをユーザーに求めます。 パスワードが正しい場合、 **ssoconfig**次のメッセージが表示されます。  
   
      **操作は正常に完了しました**  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server を実行しているコンピューターの回復](../core/recovering-a-computer-running-biztalk-server.md)   
- [エンタープライズを構成する BizTalk Server 構成を使用して SSO](http://msdn.microsoft.com/library/f63d1aec-a8c7-4e76-a67f-19af69e252f0)
+ [Enterprise を構成する BizTalk Server 構成を使用して SSO](http://msdn.microsoft.com/library/f63d1aec-a8c7-4e76-a67f-19af69e252f0)

@@ -1,5 +1,5 @@
 ---
-title: アプリケーションの参照を表示する方法 |Microsoft ドキュメント
+title: アプリケーションの参照を表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,28 +15,28 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 249e7432216368113e916118910acb6a4e11e415
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a23583edde1e1edbf4f0613904ebf24271a225f5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256650"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979275"
 ---
 # <a name="how-to-view-the-references-of-an-application"></a>アプリケーションの参照を表示する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、現在のアプリケーションが参照しているアプリケーションの一覧を表示する方法について説明します。 参照の追加の詳細については、次を参照してください。[を別のアプリケーションへの参照を追加する方法](../core/how-to-add-a-reference-to-another-application.md)です。 このアプリケーションを参照しているアプリケーションの一覧も表示できます。  
+このトピックでは、BizTalk Server 管理コンソールを使用して、現在のアプリケーションが参照しているアプリケーションの一覧を表示する方法について説明します。 参照を追加する方法の詳細については、次を参照してください。[別のアプリケーションへの参照を追加する方法](../core/how-to-add-a-reference-to-another-application.md)します。 このアプリケーションを参照しているアプリケーションの一覧も表示できます。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントを使用してログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)です。  
+ このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
   
 ### <a name="to-view-the-references-for-an-application"></a>アプリケーションの参照を表示するには  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2.  コンソール ツリーで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、表示、およびをクリックする参照がアプリケーションを右クリックして**プロパティ**です。  
+2. コンソール ツリーで、展開[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、アプリケーションを表示する をクリックするが参照を右クリックして**プロパティ**します。  
   
-3.  [プロパティ] ページの左側のウィンドウでをクリックして**参照**です。  
+3. [プロパティ] ページの左側のウィンドウで次のようにクリックします。**参照**します。  
   
-     このアプリケーションが参照しているアプリケーションの一覧が、右ペインの上部に表示されます。 このアプリケーションを参照しているアプリケーションの一覧は、右ペインの下部に表示されます。  
+    このアプリケーションが参照しているアプリケーションの一覧が、右ペインの上部に表示されます。 このアプリケーションを参照しているアプリケーションの一覧は、右ペインの下部に表示されます。  
   
 ## <a name="see-also"></a>参照  
- [作成して、BizTalk アプリケーションの変更](../core/creating-and-modifying-biztalk-applications.md)
+ [BizTalk アプリケーションの作成と変更](../core/creating-and-modifying-biztalk-applications.md)

@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 1: 新しい BizTalk プロジェクトの追加 |Microsoft ドキュメント'
+title: 'レッスン 1: 新しい BizTalk プロジェクトの追加 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,32 +15,32 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 942ef00948920cd19e2a34e0be52d61a8f492786
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: c6760719bad28463b99a9de389b012156c1abb2f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "25964312"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36987419"
 ---
 # <a name="lesson-1-adding-a-new-biztalk-project"></a>レッスン 1: 新しい BizTalk プロジェクトの追加
-このレッスンでは、ソリューションに新しい BizTalk プロジェクトを追加します。 このチュートリアルで使用するプロジェクトでスキーマを作成します。  
+このレッスンでは、ソリューションに新しい BizTalk プロジェクトを追加します。 このチュートリアル全体で使用するプロジェクトでは、スキーマを作成します。  
   
- BizTalk マッパー, など、BizTalk ツール内で公開する BizTalk プロジェクト テンプレートを選択する、 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]開発環境です。  
+ 内で、BizTalk マッパーなど、BizTalk ツールを公開する、BizTalk プロジェクト テンプレートを選択、 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]開発環境。  
   
 ### <a name="to-add-a-new-biztalk-project"></a>新しい BizTalk プロジェクトに追加するには  
   
-1.  Visual Studio で、[**ファイル**、] をポイント**新規**、クリックして**プロジェクト**です。  
+1. Visual Studio で、次のようにクリックします。**ファイル**、 をポイント**新規**、 をクリックし、**プロジェクト**します。  
   
-2.  新しいプロジェクト ダイアログ ボックスで、**プロジェクトの種類**ペインで、 **BizTalk プロジェクト**フォルダーです。  
+2. 新しいプロジェクト ダイアログ ボックスで、**プロジェクトの種類**ペインで、 **BizTalk プロジェクト**フォルダー。  
   
-3.  **テンプレート**ペインで、**空の BizTalk Server プロジェクト**です。  
+3. **テンプレート**ペインで、**空の BizTalk Server プロジェクト**します。  
   
-4.  **名前**ボックスに、入力**SWIFTSchemas**プロジェクト名として。  
+4. **名前**ボックスに「 **SWIFTSchemas**プロジェクト名として。  
   
-5.  **ソリューション**ボックスで、**ソリューションに追加**です。 **場所**ボックスしていることを確認するには、  **\<*ドライブ*:\>\labs\SWIFTProject**が選択されています。  
+5. **ソリューション**ボックスで、**ソリューションに追加**します。 **場所**ボックスしていることを確認するには、  **\<*ドライブ*:\>\labs\SWIFTProject**が選択されています。  
   
-6.  をクリックして**OK**新しいプロジェクトを作成します。  
+6. をクリックして**OK**新しいプロジェクトを作成します。  
   
-     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーに新しいプロジェクトを追加し、プロジェクト フォルダーが作成され、内のファイル、 \<*ドライブ*:\>\labs\SWIFTProject\SWIFTSchemas フォルダーです。  
+    [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] ソリューション エクスプ ローラーに新しいプロジェクトを追加し、プロジェクト フォルダーを作成し、ファイル、 \<*ドライブ*:\>\labs\SWIFTProject\SWIFTSchemas フォルダー。  
   
- 進みます[レッスン 2: SWIFTSchemas プロジェクトの厳密な名前の BizTalk アセンブリを作成する](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md)です。
+   続行する[レッスン 2: SWIFTSchemas プロジェクト用の厳密な名前の BizTalk アセンブリを作成する](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md)します。

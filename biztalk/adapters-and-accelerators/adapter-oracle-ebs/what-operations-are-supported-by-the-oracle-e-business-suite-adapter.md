@@ -1,5 +1,5 @@
 ---
-title: Oracle E-business Suite アダプターによってどのような操作がサポートされている |Microsoft ドキュメント
+title: Oracle E-business Suite アダプターによってサポートされる操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,60 +12,60 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7236c21f1e298f2ccd4cbb97db481cbd3626d186
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 07ad676d737fffc45898c31f68d0895fc6919b63
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22217666"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36984051"
 ---
-# <a name="what-operations-are-supported-by-the-oracle-e-business-suite-adapter"></a>どのような操作、Oracle E-business Suite アダプターによってサポートされます。
+# <a name="what-operations-are-supported-by-the-oracle-e-business-suite-adapter"></a>Oracle E-business Suite アダプターによってサポートされる操作
 ## <a name="overview"></a>概要
-アダプターのクライアントは、Oracle E-business Suite での操作を実行できます。  
+アダプター クライアントでの Oracle E-business Suite での操作を実行できます。  
   
--   BizTalk プロジェクトの作成  
+- BizTalk プロジェクトの作成  
   
--   WCF チャネル モデルを使用します。  
+- WCF チャネル モデルを使用します。  
   
--   WCF サービス モデルを使用します。  
+- WCF サービス モデルの使用  
   
- [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]アプリケーションがそれで呼び出すことができ、アプリケーションで呼び出すことができます、さらに、操作を公開します。 これらの操作がチャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。 メッセージの構造および各操作に関連付けられている SOAP アクションについては、次を参照してください。[メッセージと BizTalk Adapter for Oracle E-business Suite のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)です。  
+  [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]アプリケーションは、それを呼び出すことができ、アプリケーションで呼び出すことができます、さらに、操作を公開します。 これらの操作は、チャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。 メッセージの構造とそれぞれの操作に関連付けられている SOAP アクションについては、次を参照してください。[メッセージとメッセージ スキーマの BizTalk Adapter for Oracle E-business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)します。  
   
- このセクションでは、Oracle E-business Suite を使用してサポートされる操作に関する情報を提供、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。  
+  このセクションで、Oracle E-business Suite を使用してサポートされる操作について説明します、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [アプリケーション コンテキストを設定します。](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)  
+-   [アプリケーションのコンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)  
   
--   [インターフェイスのテーブルとのインターフェイス ビューでの操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md)  
+-   [インターフェイス テーブルとインターフェイス ビューに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md)  
   
--   [PL/SQL Api に対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-pl-sql-apis.md)  
+-   [PL/SQL API に対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-pl-sql-apis.md)  
   
--   [同時実行プログラムでの操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)  
+-   [同時実行プログラムに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)  
   
--   [要求のセットに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md)  
+-   [要求セットに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md)  
   
--   [インターフェイス テーブル、インターフェイス ビュー、テーブル、および LOB データを含むビューでの操作](../../adapters-and-accelerators/adapter-oracle-ebs/read-and-update-on-interface-tables-and-views-with-large-object-data-types.md)  
+-   [LOB データを含むインターフェイス テーブル、インターフェイス ビュー、テーブル、ビューに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/read-and-update-on-interface-tables-and-views-with-large-object-data-types.md)  
   
--   [BFILE データ型を含むテーブルでの操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)  
+-   [BFILE データ型を含むテーブルに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)  
   
--   [関数およびストアド プロシージャでの操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-stored-procedures1.md)  
+-   [関数とストアド プロシージャに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-stored-procedures1.md)  
   
--   [関数と REF CURSOR パラメーターを持つプロシージャに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-ref-cursor-parameters1.md)  
+-   [REF CURSOR パラメーターを使用した関数およびプロシージャに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-ref-cursor-parameters1.md)  
   
--   [関数およびレコードの種類のプロシージャでの操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-record-types1.md)  
+-   [RECORD 型を使用した関数およびプロシージャに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-record-types1.md)  
   
 -   [シノニムに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-synonyms2.md)  
   
--   [データベースの変更通知を受信するための考慮事項](../../adapters-and-accelerators/adapter-oracle-database/before-you-receive-database-change-notifications-using-the-oracle-db-adapter.md)  
+-   [データベース変更通知を受信するための考慮事項](../../adapters-and-accelerators/adapter-oracle-database/before-you-receive-database-change-notifications-using-the-oracle-db-adapter.md)  
   
--   [ポーリングの受信呼び出しのサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-inbound-calls-using-polling.md)  
+-   [ポーリングを使用する受信呼び出しのサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-inbound-calls-using-polling.md)  
   
--   [ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)  
+-   [ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)  
   
 -   [複合操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-composite-operations2.md)  
   
 -   [Oracle ユーザー定義型のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-oracle-user-defined-types2.md)  
   
 ## <a name="see-also"></a>参照  
-[Oracle E-business Suite の BizTalk アダプターを理解します。](../../adapters-and-accelerators/adapter-oracle-ebs/understand-biztalk-adapter-for-oracle-e-business-suite.md)
+[BizTalk Adapter for Oracle E-Business Suite について](../../adapters-and-accelerators/adapter-oracle-ebs/understand-biztalk-adapter-for-oracle-e-business-suite.md)

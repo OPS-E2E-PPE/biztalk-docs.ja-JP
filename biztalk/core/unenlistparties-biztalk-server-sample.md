@@ -1,5 +1,5 @@
 ---
-title: UnenlistParties (BizTalk Server サンプル) |Microsoft ドキュメント
+title: UnenlistParties (BizTalk Server サンプル) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,12 +18,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34cbb94dff7211a157fc492c1157fa379236641e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: c7525e97ba93ebd35d2439044b8c1be55a70be3d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25973472"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973027"
 ---
 # <a name="unenlistparties-biztalk-server-sample"></a>UnenlistParties (BizTalk Server サンプル)
 UnenlistParties サンプルは、展開された BizTalk Server アセンブリに関連付けられているすべてのパーティの参加を解除する方法を示しています。  
@@ -33,9 +33,9 @@ UnenlistParties サンプルは、展開された BizTalk Server アセンブリ
   
 ## <a name="prerequisites"></a>前提条件  
   
--   このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
+- このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
   
--   Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、次を参照してください。:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)です。  
+- Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、次を参照してください。:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)します。  
   
 ## <a name="how-this-sample-is-designed-and-why"></a>このサンプルのデザイン方法とその理由  
  このサンプルは、BizTalk エクスプローラー オブジェクト モデルのオブジェクトを使用して Visual C# で記述されています。このサンプルは、以下の操作を実行します。  
@@ -55,42 +55,42 @@ UnenlistParties サンプルは、展開された BizTalk Server アセンブリ
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |---------------|-----------------|  
 |App.ico、AssemblyInfo.cs、UnenlistParties.csproj、UnenlistParties.sln、UnenlistParties.cs|特定のアセンブリに対してすべてのパーティの参加を解除する Visual C# コマンド ライン アプリケーションを構築するためのプロジェクト、ソリューション、およびソース ファイル。|  
   
 ### <a name="to-build-and-initialize-this-sample"></a>このサンプルを作成および初期化するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル UnenlistParties.sln を開きます。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル UnenlistParties.sln を開きます。  
   
-2.  **ビルド**メニューの **ソリューションのビルド**です。  
+2. **ビルド**メニューの **ソリューションのビルド**します。  
   
 ### <a name="to-run-this-sample"></a>このサンプルを実行するには  
   
-1.  コマンド ウィンドウで、次のフォルダーに移動します。  
+1. コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*\>\Admin\ExplorerOM\UnenlistParties\bin\Debug\  
+    \<*パスのサンプル*\>\Admin\ExplorerOM\UnenlistParties\bin\Debug\  
   
-2.  ファイル UnenlistParties.exe を実行し、次の 2 つのコマンド ライン引数のいずれかを渡します。  
+2. ファイル UnenlistParties.exe を実行し、次の 2 つのコマンド ライン引数のいずれかを渡します。  
   
-    -   **\<** ***AssemblyName* \>** です。 すべての関連パーティの参加を解除するアセンブリの名前。 アセンブリ名に空白が含まれている場合は、名前を引用符で囲みます。  
+   - **\<** ***AssemblyName* \>** します。 すべての関連パーティの参加を解除するアセンブリの名前。 アセンブリ名に空白が含まれている場合は、名前を引用符で囲みます。  
   
-    -   **/?.** ヘルプを表示します。  
+   - **/?.** ヘルプを表示します。  
   
-     例:  
+     以下に例を示します。  
   
-    ```  
-    UnenlistParties "My BizTalk Assembly.dll"  
-    ```  
+   ```  
+   UnenlistParties "My BizTalk Assembly.dll"  
+   ```  
   
-     - または -  
+    -または-  
   
-    ```  
-    UnenlistParties /?  
-    ```  
+   ```  
+   UnenlistParties /?  
+   ```  
   
 ## <a name="windows-powershell-script-example"></a>Windows PowerShell スクリプトの例  
- 次の Windows Powershell スクリプト フラグメントは、の同じ機能を示すために使用できます、 **ExplorerOM**クラス。  
+ 同じ機能を次の Windows Powershell スクリプト フラグメントを使用することができます、 **ExplorerOM**クラス。  
   
 ```  
 #===================#  
@@ -183,7 +183,7 @@ else
   
 ```  
   
- 次のスクリプト出力は、PartyResolution サンプルの一部である Supplier アセンブリからパーティを参加解除したときに生成されました。 PartyResolution サンプルに格納、 \<*サンプル パス*\>\Admin\Orchestrations\PartyResolution ディレクトリ。  
+ 次のスクリプト出力は、PartyResolution サンプルの一部である Supplier アセンブリからパーティを参加解除したときに生成されました。 PartyResolution サンプルが記載されています、 \<*サンプル パス*\>\Admin\Orchestrations\PartyResolution ディレクトリ。  
   
 ```  
 PS C:\> .\UnenlistParties.ps1 Supplier  

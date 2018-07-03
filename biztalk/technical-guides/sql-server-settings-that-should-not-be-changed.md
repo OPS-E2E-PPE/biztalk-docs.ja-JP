@@ -1,5 +1,5 @@
 ---
-title: SQL Server の設定を変更できません |Microsoft ドキュメント
+title: SQL Server の設定を変更しないように |Microsoft Docs
 description: Max Degree of Parallelism を自動作成統計の自動更新の統計、および BizTalk Server でのインデックスの再構築
 ms.custom: ''
 ms.date: 06/08/2017
@@ -13,51 +13,51 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32186bc9487dc71900c98467a45bc3e67e915f35
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 60479097dc9e56c2bc0c525d0de7d7a33afccaa5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015369"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36978267"
 ---
 # <a name="sql-server-settings-that-should-not-be-changed"></a>SQL Server の設定を変更しないでください。
-設定する場合に[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]の運用の準備手順の間に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、次の設定を変更しないようにします。  
+設定するときに[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]の運用準備手順の間に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、次の設定を変更しないでいます。  
   
 ## <a name="sql-server-max-degree-of-parallelism"></a>SQL Server の並列処理の最大限度  
- Max Degree の並列化 (MDOP) の構成中に「1」に設定されている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]instance(s) をホストする、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックス データベースです。 これは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンス レベルの設定。 この設定は、「1」の値からない変更する必要があります。 重大な悪影響を持つ「1」以外のものに変更することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ストアド プロシージャとパフォーマンス。 インスタンスの並列処理の設定を変更する場合[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]で実行されている他のデータベース アプリケーションに悪影響を与えるには、 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 、インスタンスの別のインスタンスを作成する必要があります[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]をホストするため[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。  
+ 最大限の並列処理 (MDOP) は、構成する際に「1」に設定されて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスをホストする、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックス データベースです。 これは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンス レベルの設定。 この設定は、「1」の値から変更する必要があります。 「1」以外のものに変更するの大きな悪影響を及ぼすことができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ストアド プロシージャとパフォーマンス。 インスタンスを並列処理の設定を変更する場合[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]で実行されている他のデータベース アプリケーションに悪影響を与えるが、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスの別のインスタンスを作成する必要があります[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]専用のホスト[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。  
   
- 並列クエリでは、バッチ処理に最も適したは一般にし、意思決定支援ワークロード。 通常、これらは、並列で実行される、多くの短い、高速なクエリを持つトランザクション処理環境で必要はありません。 クエリのパフォーマンス低下につながるまたはでもでデッドロックが、クエリ プランを変更することもあります原因設定 MDOP をさらに、変更、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]クエリ。  
+ 並列クエリでは、バッチ処理に最も適したは一般にし、意思決定支援作業します。 通常では、並列で実行されている多数の短い、高速なクエリを持つトランザクション処理環境で望ましいはありません。 クエリのパフォーマンス低下につながるまたはでもデッドロックがクエリ プランを変更することもあります原因設定 MDOP をさらに、変更、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]クエリ。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ストアド プロシージャが適切な結合を提供および多くの作業を行うと、プランの変更から、クエリ オプティマイザーを保持しようとするために可能な限り、ヒントをロックします。 これらのストアド プロシージャは、クエリ オプティマイザーが可能な限り、画像から除外するようにクエリを構築することによって、一貫性のあるクエリの実行を提供します。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ストアド プロシージャが適切な結合を提供および多くの作業を行い、プランの変更から、クエリ オプティマイザーを維持しようとするために可能な場合にヒントをロックします。 これらのストアド プロシージャは、クエリ オプティマイザーが可能な限り、画像から実行されるように、クエリを構築することによって、一貫性のあるクエリの実行を提供します。  
   
- 詳細については、次を参照してください。 [KB 899000: BizTalk Server によって使用される SQL Server インスタンスの並列処理の設定](https://support.microsoft.com/help/899000/the-parallelism-setting-for-the-instance-of-sql-server-when-you-config)です。  
+ 詳細については、次を参照してください。 [KB 899000: BizTalk Server で使用される SQL Server インスタンスの並列処理の設定](https://support.microsoft.com/help/899000/the-parallelism-setting-for-the-instance-of-sql-server-when-you-config)します。  
   
-## <a name="sql-server-statistics-on-the-messagebox-database"></a>メッセージ ボックス データベースで SQL Server の統計情報  
- 既定で、次のオプションがになっている、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックス データベースが作成されるとき。  
+## <a name="sql-server-statistics-on-the-messagebox-database"></a>メッセージ ボックス データベースで SQL Server の統計  
+ 次のオプションが既定でオフ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックス データベースが作成されたとき。  
   
--   統計の自動作成します。  
+- 統計の自動作成します。  
   
--   統計の自動更新  
+- 統計の自動更新  
   
- メッセージ ボックス データベースにこれらのオプションを有効にしないでください。 「統計の自動作成」の有効化し、オプションの「統計の更新を自動」特に高負荷環境で不適切なクエリ実行の遅延が発生することができます。  
+  メッセージ ボックス データベースにこれらのオプションを有効にしないでください。 「統計の自動作成」を有効にして、オプションの「自動 update statistics」特に負荷の高い環境で望ましくないクエリ実行の遅延が発生することができます。  
   
- さらに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ストアド プロシージャは、完全結合とクエリに指定されたロック ヒントがあります。 これは、によって最適なクエリ プランが使用されるようにするため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]でのクエリ[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。 分布と期待される結果のクエリがわかっているです。返される行の概数がわかっているとします。 統計情報は、通常必要ありません。  
+  さらに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ストアド プロシージャは、正確な結合とクエリに指定されたロック ヒントがあります。 これは、によって最適なクエリ プランが使用されるようにするため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]でクエリを[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 ディストリビューションと、クエリの結果を予想が呼ばれます。返される行の概数をいいます。 通常、統計情報は必要ありません。  
   
- 詳細については、次のサポート技術情報の記事を参照してください。  
+  詳細については、次のサポート技術情報の記事を参照してください。  
   
--   **912262**—[「、自動統計更新オプション、自動統計の作成オプション、および並列処理の設定が、BizTalk Server BizTalkMsgBoxDB データベースをホストする SQL Server データベース インスタンスでになっている」](https://support.microsoft.com/help/912262/the-auto-update-statistics-option-the-auto-create-statistics-option-an).  
+- **912262**—[「自動更新の統計オプションの自動作成統計のオプションと、BizTalk Server BizTalkMsgBoxDB データベースをホストする SQL Server データベース インスタンスで並列処理の設定がになっている」](https://support.microsoft.com/help/912262/the-auto-update-statistics-option-the-auto-create-statistics-option-an).  
   
--   **917845**—[「するブロックが発生する、BizTalk Server で、BizTalkMsgBoxDb データベースに接続しようとすると、条件、またはその他の SQL Server の問題をデッドロック」](https://support.microsoft.com/help/917845/you-experience-blocking--deadlock-conditions--or-other-sql-server-issu)です。  
+- **917845**—[「、発生したブロックしている BizTalk Server で、BizTalkMsgBoxDb データベースに接続しようとすると、条件、またはその他の SQL Server の問題をデッドロック」](https://support.microsoft.com/help/917845/you-experience-blocking--deadlock-conditions--or-other-sql-server-issu)します。  
   
 ## <a name="changes-to-the-messagebox-database"></a>メッセージ ボックス データベースへの変更  
- メッセージ ボックス データベースは、Microsoft 以外のアプリケーションのソース コードのように処理されます。 必要がありますいない「に合わせて調整する」、メッセージ ボックス データベースを介してテーブル、インデックス、ストアド プロシージャ、およびほとんどの SQL Server データベースの設定を変更します。 詳細については、BizTalk のコア エンジンのブログを参照してください。[できる項目と、メッセージ ボックス データベース サーバーでは実行できない](http://go.microsoft.com/fwlink/p/?LinkId=101577)です。  
+ メッセージ ボックス データベースは、Microsoft 以外のアプリケーションのソース コードのように処理されます。 つまり、する必要がありますいない「を調整する」テーブル、インデックス、ストアド プロシージャ、およびほとんどの SQL Server データベースの設定の変更を使用してメッセージ ボックス データベースです。 詳細については、BizTalk コア エンジンのブログでは、次を参照してください。[ことを確認し、メッセージ ボックス データベース サーバーで実行できない](http://go.microsoft.com/fwlink/p/?LinkId=101577)します。  
   
 ## <a name="default-settings-for-the-database-index-rebuilds-and-defragmentation"></a>データベースのインデックス再構築と最適化の既定の設定  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]最適化インデックスはサポートされません。 "DBCC INDEXDEFRAG"および"ALTER INDEX… REORGANIZE..." ページ ロック、ブロックが発生することができを使用してデッドロックを使用しているのではサポートされていません[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]("DBCC DBREINDEX"および"ALTER INDEX... の機能はサポートのデータベースのインデックスの再構築します。 REBUILD...")、メンテナンス期間中にのみ実行する必要がありますが、ときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]はデータを処理していません。 インデックスの再作成中に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]処理は、データがサポートされていません。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インデックスの最適化をサポートしません。 "DBCC INDEXDEFRAG"および"ALTER INDEX… REORGANIZE..." ページ ロックのブロックしている可能性があるとを使用したデッドロックを使用するためにサポートされていません[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ("DBCC DBREINDEX"および"ALTER INDEX... はサポートのデータベースのインデックスの再構築します。 REBUILD...")、メンテナンス期間中にのみ実行する必要がありますが、ときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がデータを処理していません。 インデックスを再構築中に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]処理は、データがサポートされていません。  
   
- 詳細については、次を参照してください。 [KB 917845: デッドロック条件、またはその他の SQL Server の問題の BizTalk Server で、BizTalkMsgBoxDb データベースに接続しようとすると、ブロッキングが発生した"](https://support.microsoft.com/help/917845/you-experience-blocking--deadlock-conditions--or-other-sql-server-issu)です。  
+ 詳細については、次を参照してください。 [KB 917845:、ブロッキングが発生した BizTalk Server で、BizTalkMsgBoxDb データベースに接続しようとすると、条件、またはその他の SQL Server の問題をデッドロック"](https://support.microsoft.com/help/917845/you-experience-blocking--deadlock-conditions--or-other-sql-server-issu)します。  
   
- インデックスの断片化ができるだけ多くのパフォーマンスの問題の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]DSS システムまたはインデックス スキャンを実行する OLTP システムであるようです。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]非常に選択的なクエリと更新プログラムおよび[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]またはインデックス スキャンのストアド プロシージャがテーブルに発生することはできません。  
+ インデックスの断片化がないほどのパフォーマンスの問題の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]DSS システムまたはインデックス スキャンを実行する OLTP システムであるようです。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 非常に高いクエリと更新プログラムと[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]またはインデックス スキャンのストアド プロシージャがテーブルに発生することはできません。  
   
  
 ## <a name="see-also"></a>参照  

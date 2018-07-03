@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル 5: BizTalk Server を使用して REST インターフェイスの呼び出し |Microsoft ドキュメント'
+title: 'チュートリアル 5: BizTalk Server を使用して REST インターフェイスの呼び出し |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fce915ec277b1f73f93a9508a5dd6c92fb0a5c9d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5d45daa5f567863fd3531edb1f951ac673628fd6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287298"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36967571"
 ---
 # <a name="tutorial-5-invoking-a-rest-interface-using-biztalk-server"></a>チュートリアル 5: BizTalk Server を使用して REST インターフェイスの呼び出し
-このセクションでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して REST エンドポイントを呼び出す方法の手順を説明します。 このチュートリアルでは、[!INCLUDE[winazure](../includes/winazure-md.md)] Marketplace から入手できる、米国航空会社のフライトの遅延を返す REST エンドポイントを呼び出します。 チュートリアルを使用して、新しい**Wcf-webhttp**でアダプターが導入された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を REST エンドポイントを呼び出します。  
+このセクションでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して REST エンドポイントを呼び出す方法の手順を説明します。 このチュートリアルでは、[!INCLUDE[winazure](../includes/winazure-md.md)] Marketplace から入手できる、米国航空会社のフライトの遅延を返す REST エンドポイントを呼び出します。 このチュートリアルは、新しい**Wcf-webhttp**でアダプターが導入された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]REST エンドポイントを呼び出す。  
   
-##  <a name="BKMK_Scenario"></a>このチュートリアルで使用されるシナリオ  
+##  <a name="BKMK_Scenario"></a> このチュートリアルで使用するシナリオ  
  [!INCLUDE[winazure](../includes/winazure-md.md)] Marketplace では、米国航空会社のフライト遅延を取得する次の REST リソース URL が提供されています。  
   
 ```  
 https://api.datamarket.azure.com/oakleaf/US_Air_Carrier_Flight_Delays_Incr/On_Time_Performance  
 ```  
   
- この URL を Web ブラウザーのアドレス バーに入力すると、リソースにアクセスするための資格情報の入力を求められます。 ログインした後、 [Windows Azure Marketplace](http://go.microsoft.com/fwlink/p/?LinkId=257913)から資格情報を取得することができます、**マイ アカウント**web ページのタブです。 に対して資格情報が表示されている、**顧客 ID** (ユーザー名) と**プライマリ アカウント キー** (パスワード) ラベル。  
+ この URL を Web ブラウザーのアドレス バーに入力すると、リソースにアクセスするための資格情報の入力を求められます。 ログインした後、 [Windows Azure Marketplace](http://go.microsoft.com/fwlink/p/?LinkId=257913)から資格情報を取得することができます、**マイ アカウント**web ページのタブ。 に対して資格情報が一覧表示されます、**顧客 ID** (ユーザー名) と**プライマリ アカウント キー** (パスワード) ラベル。  
   
- このチュートリアルで使用するリソースの URL と資格情報を構成する、双方向に**Wcf-webhttp**ポートを送信します。 双方向送信ポートの受信パイプラインは、フライト詳細情報を含む応答メッセージを受信し、メッセージを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージ ボックス データベースに公開します。 ユーザーは WCF-WebHttp 送信ポートによって公開されたすべてのメッセージをサブスクライブする FILE 送信ポートを構成します。 FILE 送信ポートは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] からのメッセージを取得し、それをファイルの場所にコピーします。  
+ このチュートリアルで使用するリソースの URL と資格情報を双方向を構成する**Wcf-webhttp**ポートを送信します。 双方向送信ポートの受信パイプラインは、フライト詳細情報を含む応答メッセージを受信し、メッセージを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージ ボックス データベースに公開します。 ユーザーは WCF-WebHttp 送信ポートによって公開されたすべてのメッセージをサブスクライブする FILE 送信ポートを構成します。 FILE 送信ポートは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] からのメッセージを取得し、それをファイルの場所にコピーします。  
   
  現実のビジネス シナリオでは、ビジネス アプリケーションからのメッセージを取得する受信場所のようなさらに大きいビジネス プロセスと関連付けることによって、WCF-WebHttp 送信ポートをトリガーできます。 ただし、このチュートリアルの目的は REST インターフェイスを呼び出す方法を示すことなので、ダミー メッセージを受信する簡単な FILE の場所を使用して、送信ポートをトリガーします。  
   
@@ -48,23 +48,23 @@ https://api.datamarket.azure.com/oakleaf/US_Air_Carrier_Flight_Delays_Incr/On_Ti
   
 #### <a name="to-subscribe-to-the-data-feed"></a>データ フィードをサブスクライブするには  
   
-1.  Microsoft アカウントを使用して [!INCLUDE[winazure](../includes/winazure-md.md)] Marketplace にログインします。  
+1. Microsoft アカウントを使用して [!INCLUDE[winazure](../includes/winazure-md.md)] Marketplace にログインします。  
   
-2.  **データ** タブを特定し、をクリックして、 **US Air Carrier Flight Delays**サービス。  
+2. **データ** タブを見つけて、クリックして、 **US Air Carrier Flight Delays**サービス。  
   
-3.  データ サービス ページで、**サインアップ**です。 [サインアップ] ページで、契約の条項に同意し、をクリックして**サインアップ**もう一度です。  
+3. データ サービス ページで、次のようにクリックします。**サインアップ**します。 [サインアップ] ページで、契約の条項に同意し、**サインアップ**もう一度です。  
   
-4.  **マイ アカウント** タブで、データ サービスにアクセスする資格情報を取得します。 に対して資格情報が表示されている、**顧客 ID** (ユーザー名) と**プライマリ アカウント キー** (パスワード) ラベル。 構成中にこれらの資格情報は必要があります、 **Wcf-webhttp**ポートを送信します。  
+4. **マイ アカウント** タブで、データ サービスにアクセスする資格情報を取得します。 に対して資格情報が一覧表示されます、**顧客 ID** (ユーザー名) と**プライマリ アカウント キー** (パスワード) ラベル。 これらの資格情報を構成するときに必要があります、 **Wcf-webhttp**ポートを送信します。  
   
 ## <a name="set-up-your-computer"></a>コンピューターのセットアップ  
- このチュートリアルで使用するシナリオを構成するには、コンピューターに [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールして構成する必要があります。 プロビジョニングする場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]にある指示に従って、Windows Azure 仮想マシン上のコンピューター [Azure VM での BizTalk Server の構成](http://msdn.microsoft.com/library/azure/jj248689.aspx)です。  
+ このチュートリアルで使用するシナリオを構成するには、コンピューターに [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールして構成する必要があります。 プロビジョニングする場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]にある指示に従って、Windows Azure VM 上のコンピューター [Azure VM での BizTalk Server の構成](http://msdn.microsoft.com/library/azure/jj248689.aspx)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: 構成ファイルの受信場所](../core/step-1-configure-a-file-receive-location.md)  
+-   [手順 1: FILE 受信場所を構成する](../core/step-1-configure-a-file-receive-location.md)  
   
--   [手順 2: 双方向 Wcf-webhttp 送信ポートを構成します。](../core/step-2-configure-a-two-way-wcf-webhttp-send-port.md)  
+-   [手順 2: 双方向の WCF-WebHttp 送信ポートを構成する](../core/step-2-configure-a-two-way-wcf-webhttp-send-port.md)  
   
--   [手順 3: 一方向 FILE 送信ポートを構成します。](../core/step-3-configure-a-one-way-file-send-port.md)  
+-   [手順 3: 一方向の FILE 送信ポートを構成する](../core/step-3-configure-a-one-way-file-send-port.md)  
   
--   [手順 4: ソリューションをテストします。](../core/step-4-test-the-solution.md)
+-   [手順 4: ソリューションのテスト](../core/step-4-test-the-solution.md)

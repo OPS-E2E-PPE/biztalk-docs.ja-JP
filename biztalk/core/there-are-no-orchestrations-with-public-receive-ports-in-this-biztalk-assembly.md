@@ -1,5 +1,5 @@
 ---
-title: パブリック オーケストレーションなしに受信ポートをこの BizTalk アセンブリがある |Microsoft ドキュメント
+title: パブリック オーケストレーションなしに受信ポートをこの BizTalk アセンブリがある |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e04c10119b617ebabe07169dcae999fe60210e0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c062f5e23972ed841c4c9d614ad58967a07a4fe2
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279642"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36978217"
 ---
 # <a name="there-are-no-orchestrations-with-public-receive-ports-in-this-biztalk-assembly"></a>この BizTalk アセンブリには、パブリック受信ポートを保持するオーケストレーションがありません
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|イベント ID|0|  
-|イベント ソース|0|  
-|コンポーネント|0|  
-|シンボル名|0|  
-|メッセージ テキスト|この BizTalk アセンブリには、パブリック受信ポートを保持するオーケストレーションがありません。 [戻る] をクリックして、パブリック受信ポートを保持するオーケストレーションを含む BizTalk アセンブリを指定してください。|  
+|                 |                                                                                                                                                                               |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                              [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                                               |
+| 製品バージョン |                                                          [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]                                                           |
+|    イベント ID     |                                                                                       0                                                                                       |
+|  イベント ソース   |                                                                                       0                                                                                       |
+|    コンポーネント    |                                                                                       0                                                                                       |
+|  シンボル名  |                                                                                       0                                                                                       |
+|  メッセージ テキスト   | この BizTalk アセンブリには、パブリック受信ポートを保持するオーケストレーションがありません。 [戻る] をクリックして、パブリック受信ポートを保持するオーケストレーションを含む BizTalk アセンブリを指定してください。 |
   
 ## <a name="explanation"></a>説明  
  このエラーは、選択したオーケストレーションにパブリック ポートがないことを示します。  
@@ -44,7 +44,7 @@ ms.locfileid: "22279642"
   
     1.  ポート構成ウィザードを開きます。  
   
-    2.  **ポートの種類を選択して**、変更**アクセス制限**から**内部**(既定) に**パブリック - 制限なし**です。  
+    2.  **ポートの種類を選択します。**、変更**アクセス制限**から**内部**(既定)**パブリック - 制限なし**します。  
   
 2.  アセンブリを再コンパイルします。  
   

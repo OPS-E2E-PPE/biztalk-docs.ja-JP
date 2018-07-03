@@ -1,5 +1,5 @@
 ---
-title: DeleteParty (BizTalk Server サンプル) |Microsoft ドキュメント
+title: DeleteParty (BizTalk Server サンプル) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68016285a53a2655c56810028925a91c1f8d66b0
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: a6d6d488bf7431f805e8719e10fe17cef7d13fa4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25969224"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982963"
 ---
 # <a name="deleteparty-biztalk-server-sample"></a>DeleteParty (BizTalk Server サンプル)
 DeleteParty サンプルは、指定したパーティを削除する方法を示します。  
@@ -33,13 +33,13 @@ DeleteParty サンプルは、指定したパーティを削除する方法を�
 >  展開スクリプトは、展開後に不要になった場合は、削除する必要があります。 保持する必要のある管理スクリプトおよび他のスクリプトは、ACL によってセキュリティで保護し、厳重に監視する必要があります。  
   
 > [!NOTE]
->  パーティを削除する前に、パーティを作成する必要があります。 これを行うには 1 つの方法を実行する、 [PartyResolution (BizTalk Server サンプル)](../core/partyresolution-biztalk-server-sample.md)サンプルです。  
+>  パーティを削除する前に、パーティを作成する必要があります。 実行するがこれを行う方法の 1 つ、 [PartyResolution (BizTalk Server サンプル)](../core/partyresolution-biztalk-server-sample.md)サンプル。  
   
 ## <a name="prerequisites"></a>前提条件  
   
--   このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
+- このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
   
--   Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、次を参照してください。:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)です。  
+- Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、次を参照してください。:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)します。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルは、BizTalk エクスプローラー オブジェクト モデル (ExplorerOM) のオブジェクトを使用して Microsoft Visual C# で記述されており、以下の操作を実行します。  
@@ -57,42 +57,42 @@ DeleteParty サンプルは、指定したパーティを削除する方法を�
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |---------------|-----------------|  
 |App.ico、AssemblyInfo.cs、DeleteParty.csproj、DeleteParty.sln、DeleteParty.cs|指定したパーティを削除する Visual C# コマンド ライン アプリケーションを構築するためのプロジェクト、ソリューション、およびソース ファイル。|  
   
 ### <a name="to-build-and-initialize-this-sample"></a>このサンプルを作成および初期化するには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル DeleteParty.sln を開きます。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル DeleteParty.sln を開きます。  
   
-2.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
+2. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
 ### <a name="to-run-this-sample"></a>このサンプルを実行するには  
   
-1.  コマンド ウィンドウで、次のフォルダーに移動します。  
+1. コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*\>\Admin\ExplorerOM\DeleteParty\bin\Debug\  
+    \<*パスのサンプル*\>\Admin\ExplorerOM\DeleteParty\bin\Debug\  
   
-2.  ファイル DeleteParty.exe を実行し、次の 2 つのコマンド ライン引数の 1 つを渡します。  
+2. ファイル DeleteParty.exe を実行し、次の 2 つのコマンド ライン引数の 1 つを渡します。  
   
-    -   **\<** ***PartyName* \>です。** 削除するパーティの名前。 パーティ名に空白が含まれている場合は、名前を引用符で囲みます。  
+   - **\<** ***PartyName* \>します。** 削除するパーティの名前。 パーティ名に空白が含まれている場合は、名前を引用符で囲みます。  
   
-    -   **/?.** ヘルプを表示します。  
+   - **/?.** ヘルプを表示します。  
   
-     例:  
+     以下に例を示します。  
   
-    ```  
-    DeleteParty "My Party #3"  
-    ```  
+   ```  
+   DeleteParty "My Party #3"  
+   ```  
   
-     - または -  
+    -または-  
   
-    ```  
-    DeleteParty /?  
-    ```  
+   ```  
+   DeleteParty /?  
+   ```  
   
 ## <a name="windows-powershell-script-example"></a>Windows Powershell スクリプトの例  
- 次の Windows PowerShell スクリプト フラグメントは、の同じ機能を示すために使用できます、 **ExplorerOM**クラス。  
+ 同じ機能を次の Windows PowerShell スクリプト フラグメントを使用することができます、 **ExplorerOM**クラス。  
   
 ```  
   

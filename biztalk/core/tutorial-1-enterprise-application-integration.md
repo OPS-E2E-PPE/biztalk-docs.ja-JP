@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル 1: エンタープライズ アプリケーション統合 |Microsoft ドキュメント'
+title: 'チュートリアル 1: エンタープライズ アプリケーションの統合 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,32 +16,32 @@ caps.latest.revision: 37
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb6ddbd6c2a3e25619c684036eee3fb0fa46a18f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 04e0c7e6e654290aaf5bebf786f3294e988364f8
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287514"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36968531"
 ---
 # <a name="tutorial-1-enterprise-application-integration"></a>チュートリアル 1: エンタープライズ アプリケーション統合
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、アプリケーション統合とビジネス プロセス マネジメント (BPM) 用の開発環境と実行環境が提供されます。 このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用してエンタープライズ アプリケーション統合 (EAI) ソリューションをセットアップして展開する方法について、詳細に学習します。  
   
-##  <a name="BKMK_Tut1_scenario"></a>ビジネス シナリオ  
+##  <a name="BKMK_Tut1_scenario"></a> ビジネス シナリオ  
  Contoso は、コンピューターのハードウェアやソフトウェアを販売するオンライン ストアです。  Contoso は最近、リソース管理用にエンタープライズ リソース プランニング (ERP) システムを購入しました。  このチュートリアルでは、既存の倉庫システムを ERP システムに統合し、倉庫の要求プロセスを自動化するために、BizTalk Server を使用してエンタープライズ アプリケーション統合 (EAI) ソリューションを開発します。  
   
  この統合ソリューションには課題がいくつかあります。  
   
--   **メッセージのトランスポート**です。  倉庫システムと ERP システムは、2 つの異なるプラットフォームに存在し、メッセージの送受信に異なるトランスポート プロトコルを使用する可能性があります。 このソリューションでは、送信側システムによってサポートされるプロトコルでメッセージを受信し、受信側システムによってサポートされるプロトコルでメッセージを転送できる必要があります。  BizTalk Server を使用して*アダプター*メッセージを転送します。  BizTalk Server と BizTalk Adapter Pack には多数のネイティブ アダプターが付属しています。  アダプターを追加するには、ベンダーから購入する方法と、BizTalk Server で提供されるアダプター フレームワークを使用して独自に開発する方法があります。 アダプターの詳細については、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=191131](http://go.microsoft.com/fwlink/?LinkId=191131)です。  
+- **メッセージのトランスポート**します。  倉庫システムと ERP システムは、2 つの異なるプラットフォームに存在し、メッセージの送受信に異なるトランスポート プロトコルを使用する可能性があります。 このソリューションでは、送信側システムによってサポートされるプロトコルでメッセージを受信し、受信側システムによってサポートされるプロトコルでメッセージを転送できる必要があります。  BizTalk Server を使用して*アダプター*メッセージを転送します。  BizTalk Server と BizTalk Adapter Pack には多数のネイティブ アダプターが付属しています。  アダプターを追加するには、ベンダーから購入する方法と、BizTalk Server で提供されるアダプター フレームワークを使用して独自に開発する方法があります。 アダプターの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=191131](http://go.microsoft.com/fwlink/?LinkId=191131)します。  
   
--   **メッセージの変換**です。 メッセージには、XML (eXtended Markup Language)、EDI (Electronic Data Interchange)、区切り文字を使用したファイルなど、多くの種類があります。 BizTalk Server では主に XML を使用します。 ほとんどの場合、受信メッセージはまず XML に変換されます。  このプロセスが呼び出されると*解析*です。  送信側では、メッセージを XML から他の種類に変換できます。  このプロセスが呼び出されると*シリアル化*です。  
+- **メッセージの変換**します。 メッセージには、XML (eXtended Markup Language)、EDI (Electronic Data Interchange)、区切り文字を使用したファイルなど、多くの種類があります。 BizTalk Server では主に XML を使用します。 ほとんどの場合、受信メッセージはまず XML に変換されます。  このプロセスが呼び出されます*解析*します。  送信側では、メッセージを XML から他の種類に変換できます。  このプロセスが呼び出されます*シリアル化*します。  
   
--   **ビジネス プロセス管理**です。 ほとんどの EAI シナリオは、メッセージをあるシステムから別のシステムに転送するだけではありません。  通常は、より多くのシステムと複雑なワークフローにかかわっています。  このシナリオでは、倉庫は在庫の補充を要求するメッセージを送信します。ソリューションでは、メッセージを受信し、要求の総計を確認します。  総計が一定量を超える場合、要求は自動的に拒否され、拒否メッセージが送信されます。それ以外の場合は要求が ERP システムに転送されます。  
+- **ビジネス プロセス管理**します。 ほとんどの EAI シナリオは、メッセージをあるシステムから別のシステムに転送するだけではありません。  通常は、より多くのシステムと複雑なワークフローにかかわっています。  このシナリオでは、ウェアハウスが在庫の補充を要求するメッセージを送信します。ソリューションでは、メッセージを受信し、要求の総計を確認します。  総計が一定量を超える場合、要求は自動的に拒否され、拒否メッセージが送信されます。それ以外の場合は要求が ERP システムに転送されます。  
   
-     このビジネス プロセスを説明する図を次に示します。  
+   このビジネス プロセスを説明する図を次に示します。  
   
-     ![チュートリアル 1 メッセージ フロー](../core/media/tut1-msg-flow.gif "tut1_msg_flow")  
+   ![チュートリアル 1 メッセージ フロー](../core/media/tut1-msg-flow.gif "tut1_msg_flow")  
   
- このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 開発ツールを使用して、ビジネス プロセスをデザインし、展開します。  
+  このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 開発ツールを使用して、ビジネス プロセスをデザインし、展開します。  
   
 ## <a name="preparation"></a>準備  
  BizTalk Server 統合ソリューションを作成する前に、次の基本情報を収集する必要があります。  
@@ -71,10 +71,10 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [このチュートリアルを開始する前に](../core/before-you-begin-the-tutorial.md) 
+-   [チュートリアルを開始する前に](../core/before-you-begin-the-tutorial.md) 
   
--   [レッスン 1: 定義のスキーマとマップ](../core/lesson-1-define-schemas-and-a-map.md) 
+-   [レッスン 1: スキーマおよびマップの定義](../core/lesson-1-define-schemas-and-a-map.md) 
   
--   [レッスン 2: ビジネス プロセスを定義します。](../core/lesson-2-define-the-business-process.md)  
+-   [レッスン 2: ビジネス プロセスの定義](../core/lesson-2-define-the-business-process.md)  
   
--   [レッスン 3: ソリューションを配置します。](../core/lesson-3-deploy-the-solution.md)
+-   [レッスン 3: ソリューションの展開](../core/lesson-3-deploy-the-solution.md)
