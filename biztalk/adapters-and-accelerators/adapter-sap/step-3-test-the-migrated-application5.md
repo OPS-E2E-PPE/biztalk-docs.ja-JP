@@ -1,5 +1,5 @@
 ---
-title: '手順 3: テスト移行 Application5 |Microsoft ドキュメント'
+title: '手順 3: テスト移行 Application5 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,33 +15,33 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b5e49968e4b0b463b1665d0752689a14039c2da
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 195b150dcbc3edcd1bfe0a18a17c6fe73cb4f50b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22217250"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37009147"
 ---
 # <a name="step-3-test-the-migrated-application"></a>手順 3: 移行後のアプリケーションをテストします。
-![手順 3 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
+![ステップ 3/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
  **所要時間:** 5 分  
   
- **目標:** この手順では、WCF ベースを使用してフラット ファイル IDOC を受信して移行したアプリケーションをテストします[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
+ **目標:** この手順では、WCF ベースを使用してフラット ファイル IDOC を受信することによって、移行済みのアプリケーションをテストします[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
 ## <a name="prerequisites"></a>前提条件  
   
--   BizTalk Server 管理コンソールで物理ポートを BizTalk オーケストレーションの論理ポートにマップして、BizTalk アプリケーションを構成します。  
+- BizTalk アプリケーションを構成するには、BizTalk オーケストレーションの論理ポートを BizTalk Server 管理コンソールで物理ポートにマッピングします。  
   
--   BizTalk を構成する Wcf-custom を使用するアプリケーションを受信ポートを WCF ベースの[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
+- 構成、BizTalk WCF カスタムを使用するアプリケーションが WCF ベースのポートを受信[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
 ### <a name="to-test-the-migrated-application"></a>移行したアプリケーションをテストするには  
   
-1.  SAP GUI を起動し、接続 URI で指定した SAP システムに接続します。  
+1.  SAP の GUI を起動し、接続 URI で指定した SAP システムに接続します。  
   
-2.  SE37 を実行し、外部システムに IDOC を送信する SAP の関数モジュールを起動します。 Wcf-custom 受信ポートの接続 URI で指定されている同じプログラム ID を使用して、IDOC を送信することを確認してください。  
+2.  SE37 を実行して、sap の IDOC を外部システムに送信する関数モジュールを呼び出します。 Wcf-custom の受信ポートの接続 URI で指定されている同じプログラム ID を使用して IDOC を送信することを確認します。  
   
 3.  オーケストレーションの一部として指定されたファイルの場所で受信 IDOC を探します。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 4: SAP を移行する BizTalk プロジェクトの IDOC を受信](../../adapters-and-accelerators/adapter-sap/tutorial-4-migrating-an-sap-receive-idoc-biztalk-project.md)
+ [チュートリアル 4: SAP の IDOC 受信 BizTalk プロジェクトを移行する](../../adapters-and-accelerators/adapter-sap/tutorial-4-migrating-an-sap-receive-idoc-biztalk-project.md)

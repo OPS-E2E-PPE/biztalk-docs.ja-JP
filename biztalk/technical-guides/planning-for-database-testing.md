@@ -1,5 +1,5 @@
 ---
-title: データベースのテストの計画 |Microsoft ドキュメント
+title: データベースのテストの計画 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3849b68af9fdd4e457a8e1e492134a87dc1655bd
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: bce48244f67fd757fae5c2657634274625677850
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26010139"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996619"
 ---
 # <a name="planning-for-database-testing"></a>データベースのテストの計画
-完全な負荷が BizTalk ソリューションのテストは、ultimate の成功または失敗、ソリューションで目立つように判別されます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンスがのパフォーマンスに依存するので、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース、テストし、BizTalk ソリューションのテストに頻繁に焦点を当てていますの最適化と最適化を実行しているコンピューターの[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]を収容する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。  
+Ultimate の成功または失敗のソリューションで目立つようを図、BizTalk ソリューションの徹底的な負荷をテストします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンスのためのパフォーマンスに依存しているが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース、テストしソリューションのテストに頻繁に重点を置いています BizTalk の最適化、および実行しているコンピューターの最適化[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]が収容[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。  
   
 ## <a name="considerations-when-planning-for-database-testing"></a>データベースのテストを計画する際の考慮事項  
- データベースのテストを計画する場合は、次を考慮してください。  
+ データベースのテストを計画するときは、次を考慮してください。  
   
-1.  **テスト環境が、実稼働環境をできるだけと一致することを確認します。** 単体テストの Microsoft HYPER-V Server 2008 などの仮想環境を使用して、まったく問題ありません。ただし、可能な限り、最終的な実稼働環境に一致するハードウェアに対してすべてのロード/ストレス テストを実行してください。  
+1. **テスト環境が運用環境をできるだけと一致することを確認します。** 単体テストの Microsoft HYPER-V Server 2008 などの仮想環境を使用することはまったく問題ありません。ただし、すべてのロード/ストレス テストは、可能な限り、最終的な運用環境に一致するハードウェアに対して実行する必要があります。  
   
-2.  **維持可能な最大のスループット、BizTalk Server システムの維持可能な最大の追跡スループットを測定する計画**です。 最大スループットは、BizTalk Server システムは、実稼働環境で無制限に処理できるメッセージ トラフィックの最大負荷として測定されます。 BizTalk Server ヘルプの次のトピックの手順に従います。  
+2. **維持可能な最大のスループットと、BizTalk Server システムの維持可能な最大の追跡スループットを測定する**します。 維持可能な最大のスループットは、実稼働環境で BizTalk Server システムを無制限に処理できるメッセージ トラフィックの最大負荷として測定されます。 BizTalk Server ヘルプで、次のトピックの手順に従います。  
   
-    -   [維持可能な最大のエンジン スループットの測定](http://go.microsoft.com/fwlink/?LinkID=154388)(http://go.microsoft.com/fwlink/?LinkID=154388)。  
+   - [維持可能な最大のエンジン スループットの測定](http://go.microsoft.com/fwlink/?LinkID=154388)(http://go.microsoft.com/fwlink/?LinkID=154388)します。  
   
-    -   [維持可能な最大の追跡スループットの測定](http://go.microsoft.com/fwlink/?LinkID=153815)(http://go.microsoft.com/fwlink/?LinkID=153815)。  
+   - [維持可能な最大の追跡スループットの測定](http://go.microsoft.com/fwlink/?LinkID=153815)(http://go.microsoft.com/fwlink/?LinkID=153815)します。  
   
-     これらのトピックでは、システム、計測する必要があります、パラメーター、MST をテストする場合に従う一般的な推奨事項に対する負荷を生成する方法について説明します。  
+     これらのトピックでは、システム、測定する必要があるパラメーター、MST をテストするときに実行する一般的な推奨事項に対する負荷を生成する方法について説明します。  
   
-3.  **方法の影響について理解する BizTalk Server**  
-     **ホスト制限を実装します。** [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ホスト制限アルゴリズムのワークロードを中程度しようとしました。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ワークロードがホスト インスタンスの容量を超えないまたはいずれかのダウン ストリーム ホスト インスタンスのことを確認するインスタンスをホストします。 制限メカニズムは自律的で、既定の構成オプションは、ほとんどの適切な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]シナリオを処理します。 読み込み/ストレス テストを実装する前に、制限メカニズムをよく理解が必要、ただし、です。 詳細については、次を参照してください。[を最適化するリソース使用状況を通じてホスト制限](http://go.microsoft.com/fwlink/?LinkId=155770)(http://go.microsoft.com/fwlink/?LinkId=155770)、BizTalk Server のヘルプ。
+3. **方法の理解 BizTalk Server**  
+    **ホスト制限を実装します。** [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ホスト制限アルゴリズムのワークロードをモデレートしようとしました。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]のインスタンスに、ワークロードがホスト インスタンスの容量を超えていないこと、またはいずれかのダウン ストリーム ホスト インスタンスをホストします。 制限メカニズムは自律的と既定の構成オプションは、大半の適切な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]シナリオを処理します。 ただし、ロード/ストレス テストを実装する前に、制限メカニズムを理解がある必要があります。 詳細については、次を参照してください。[を最適化するリソースをホストの調整](http://go.microsoft.com/fwlink/?LinkId=155770)(<http://go.microsoft.com/fwlink/?LinkId=155770>) BizTalk Server のヘルプ。

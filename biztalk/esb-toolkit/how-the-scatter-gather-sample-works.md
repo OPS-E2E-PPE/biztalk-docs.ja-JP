@@ -1,5 +1,5 @@
 ---
-title: スキャッター/ギャザー サンプルの動作 |Microsoft ドキュメント
+title: スキャッター/ギャザー サンプルのしくみ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c1221c038fa2e59636092c5cb49c6cbc40053708
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c675f2c6a9f558be597f7765ec936daf0a5a2dde
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294922"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37001101"
 ---
 # <a name="how-the-scatter-gather-sample-works"></a>スキャッター/ギャザー サンプルのしくみ
-サンプル アプリケーション スキャッター/ギャザー itinerary ファイルから読み込まれた旅程を含む SOAP ヘッダーのセットが作成され、ディスクから指定されたメッセージ ファイルを読み込み、itinerary ヘッダーをメッセージに追加および入り口のを通じて ESB に送信処理しています。 旅行計画は、応答を生成する場合、アプリケーションはこれを収集し、アプリケーション ウィンドウに表示します。  
+サンプル アプリケーションは、スキャッター/ギャザー itinerary ファイルから読み込まれたスケジュールを格納している SOAP ヘッダーのセットを構築、ディスクから、指定されたメッセージ ファイルを読み込み、itinerary ヘッダーをメッセージに追加および入り口のを通じて ESB に送信します処理しています。 旅行プランは、応答を生成する場合、アプリケーションはこれを収集し、アプリケーション ウィンドウに表示します。  
   
- 行程サービスがメッセージの道順の情報を使用する方法を理解するためは、次のリストは、ScatterGatherItinerary.xml をという名前のサンプル itinerary 構成ファイルを示します。 この行程の最初のセクションでは、次の 2 つのサービス呼び出しのステップを指定します。  
+ スケジュール サービスがメッセージのスケジュールの情報を使用する方法を理解するためは、次のリストは、ScatterGatherItinerary.xml という名前のサンプルの itinerary 構成ファイルを示します。 このスケジュールの最初のセクションでは、サービス呼び出しの 2 つの手順を指定します。  
   
 ```xml  
 <Itinerary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
@@ -46,7 +46,7 @@ ms.locfileid: "22294922"
 ...  
 ```  
   
- 次の旅行計画でのサービス呼び出しの手順の一覧は、競合回避モジュールと旅程サービスの次の XML に示すように、旅行計画で定義された各サービスを検索するようにする接続文字列の詳細を含むセクションです。  
+ 旅行プランのサービス呼び出しの手順の一覧は、競合回避モジュールと、次の XML に示すように、スケジュールで定義されている各サービスを検索するスケジュール サービスを許可する接続文字列の詳細を含むセクションです。  
   
 ```xml  
 <ResolverGroups xmlns="">  
@@ -56,7 +56,7 @@ ms.locfileid: "22294922"
   </ResolverGroups>  
 ```  
   
- この例では、アプリケーション実行 SubmitPOService Web サービスの両方の競合回避モジュールの接続文字列が (http://localhost/ESB.CanadianServices/SubmitPOService.asmx) このサービスの場所を解決するために 2 回です。 メッセージ コンテキストをアクティブ化すると、最初の itinerary サービスで定義されている、サンプルを次のようにブローカ オーケストレーションを指定します。  
+ この例で、アプリケーションの実行、SubmitPOService Web サービスの両方の競合回避モジュールの接続文字列をこのサービスの場所を解決するために 2 回 (http://localhost/ESB.CanadianServices/SubmitPOService.asmx)します。 メッセージ コンテキストは、として、次の例で定義されている最初のスケジュール サービスをアクティブ化するようにブローカ オーケストレーションを指定します。  
   
 ```csharp  
 (Microsoft.Practices.ESB.Itinerary.Schemas.ServiceName == "ScatterGather")  
@@ -65,23 +65,23 @@ ms.locfileid: "22294922"
     == "Orchestration")  
 ```  
   
- ブローカ オーケストレーションは、その itinerary のステップの設定を分析し、itinerary ステップに関連付けられた競合回避モジュールのコレクションを取得します。 これらの競合回避モジュールのそれぞれについて、オーケストレーションを使用して、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]サービス エンドポイントを解決するのには型リゾルバーとアダプター フレームワークです。 ブローカ オーケストレーションしをアクティブに n 個 ServiceDispatcher オーケストレーションの非同期的に (n は itinerary で ScatterGather サービスに関連付けられている競合回避モジュールの数) を次のパラメーターを使用して要求メッセージをディスパッチします。  
+ ブローカ オーケストレーションは、スケジュールのステップの設定を分析し、スケジュールのステップに関連付けられた競合回避モジュールのコレクションを取得します。 これらの競合回避モジュールごとに、オーケストレーションを使用して、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]リゾルバーとアダプター フレームワークは、サービス エンドポイントを解決します。 ブローカ オーケストレーションしをアクティブに n 個 ServiceDispatcher オーケストレーションの非同期的に (n は、スケジュールで ScatterGather サービスに関連付けられた競合回避モジュールの数) を次のパラメーターを含む要求メッセージをディスパッチします。  
   
--   **TransportLocation**です。 競合回避モジュールは、このパラメーターを追加します。  
+- **TransportLocation**します。 競合回避モジュールは、このパラメーターを設定します。  
   
--   **TransportType**です。 競合回避モジュールは、このパラメーターを追加します。  
+- **TransportType**します。 競合回避モジュールは、このパラメーターを設定します。  
   
--   **ResolverDictionary**です。 このパラメーターには、具体的な競合回避モジュール インスタンスによって設定の競合回避モジュールのファクトのコレクションが含まれています。  
+- **ResolverDictionary**します。 このパラメーターには、競合回避モジュールのファクト具体的な競合回避モジュールのインスタンスによって設定のコレクションが含まれています。  
   
--   **InboundMessage**です。 このパラメーターには、旅行計画を含む元のメッセージが含まれています。  
+- **InboundMessage**します。 このパラメーターには、旅行プランを含む元のメッセージが含まれています。  
   
--   **ServiceResponsePort**です。 このパラメーターは、ServiceDispatcher オーケストレーションのインスタンスからの応答を受信する自己関連付けを行う応答のポートの名前です。  
+- **ServiceResponsePort**します。 このパラメーターは、自己関連付けを行うに ServiceDispatcher オーケストレーションのインスタンスからの応答を受信する応答のポートの名前です。  
   
- ServiceDispatcher オーケストレーションの各インスタンスは ResolveMapScatterGather ポリシーを使用して解決するには、Microsoft BizTalk マップの種類に基づいて、要求と応答メッセージを**TransportType**と**TransportLocation**プロパティです。 オーケストレーション インスタンスでは、解決済みのマップを使用して、受信メッセージを Web サービス呼び出しの要求メッセージに変換します。  
+  ServiceDispatcher オーケストレーションの各インスタンスでは、ResolveMapScatterGather ポリシーを使用して解決するには、Microsoft BizTalk マップの種類に基づいて、要求と応答メッセージの**TransportType**と**TransportLocation**プロパティ。 オーケストレーション インスタンスでは、解決済みのマップを使用して、受信メッセージを Web サービス呼び出しの要求メッセージに変換します。  
   
- ESB アダプター マネージャーでは、どの BizTalk し、送信請求-応答ポートへの転送という ServiceRequestPort、要求メッセージの送信トランスポート コンテキスト プロパティを設定します。  
+  ESB のアダプター マネージャーでは、どの BizTalk し、送信請求-応答ポートへの転送という ServiceRequestPort、要求メッセージの送信トランスポート コンテキスト プロパティを設定します。  
   
- サービスから応答メッセージを受け取ると、ServiceDispatcher オーケストレーションは、正規の形式への着信応答メッセージを変換するのに解決マップ情報を使用します。 ServiceResponse エンベロープ内で変更された応答をラップし、自己関連付けポートを通じてブローカ オーケストレーションに転送します。 ブローカ オーケストレーションは、すべての着信応答を集計し、次のコードに示すように、GlobalBank.ESB.ScatterGather.Processes.AggregatingPipeline を使用して、最後の応答メッセージを準備します。  
+  をサービスから応答メッセージを受信した場合、ServiceDispatcher オーケストレーションは受信応答メッセージを標準形式に変換する解決済みのマップ情報を使用します。 ServiceResponse エンベロープ内で変更された応答をラップし、自己関連付けポートを通じてブローカ オーケストレーションに転送します。 ブローカ オーケストレーションは、すべての着信応答を集計し、次のコードに示すように、GlobalBank.ESB.ScatterGather.Processes.AggregatingPipeline を使用して、最後の応答メッセージを準備します。  
   
 ```csharp  
 AggregatedResponse.Body = null;  
@@ -91,7 +91,7 @@ Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(
     messageAggregator,AggregatedResponse);  
 ```  
   
- このコードは、定義済みのエンベロープ内の応答のバッチ全体をラップします。 ブローカのオーケストレーション、進めますに行程、 **DynamicTest** itinerary 手順、次のコードに示すようにします。  
+ このコードは、定義済みのエンベロープ内の応答のバッチ全体をラップします。 ブローカ オーケストレーションしするスケジュールを進めます、 **DynamicTest** itinerary の手順で次のコードに示すようにします。  
   
 ```csharp  
 // Copy the context and advance the itinerary.  
@@ -101,4 +101,4 @@ OutboundMessage(*) = AggregatedResponse(*);
 itinerary.Itinerary.Advance(OutboundMessage, itineraryStep);  
 ```  
   
- サービス型の属性が名前付きため**DynamicTest**に設定されている**メッセージング**、 **ItineraryHelper**クラスのコンテキストに競合回避モジュールのプロパティを昇格する、という名前のメッセージ**OutboundMessage**です。 ブローカ オーケストレーションは、このメッセージを BizTalk の直接バインド ポートに送信します。 BizTalk によって表される動的送信ポートにメッセージを転送し、 **ServiceName**サブスクリプションの場合、これは**DynamicTest**です。 この送信ポートは、\Source\Samples\DynamicResolution\Test\Filedrop\Out フォルダーに集計された最後の応答をシリアル化します。
+ という名前のサービス型の属性のため**DynamicTest**に設定されている**メッセージング**、 **ItineraryHelper**クラスのコンテキストに競合回避モジュールのプロパティを昇格する、という名前のメッセージ**OutboundMessage**します。 ブローカ オーケストレーションは、このメッセージを BizTalk の直接バインド ポートに送信します。 BizTalk によって表される動的送信ポートにメッセージを転送し、 **ServiceName**サブスクリプションの場合、これは**DynamicTest**します。 この送信ポートには、\Source\Samples\DynamicResolution\Test\Filedrop\Out フォルダーに集計された最後の応答がシリアル化します。

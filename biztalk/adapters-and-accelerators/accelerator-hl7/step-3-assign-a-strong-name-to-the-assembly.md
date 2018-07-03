@@ -1,5 +1,5 @@
 ---
-title: '手順 3: アセンブリに厳密な名前を割り当てます |Microsoft ドキュメント'
+title: '手順 3: アセンブリに厳密な名前を割り当てる |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,40 +16,40 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57368dbbb2d8ecaa6621707ea7b989bf7f5b005d
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: 591423d04d8551620036e94a6ec780271e04feec
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "26004955"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012627"
 ---
-# <a name="step-3-assign-a-strong-name-to-the-assembly"></a>手順 3: アセンブリに厳密な名前を割り当てます
-この手順で作成して割り当てるの厳密な名前、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アセンブリ。 厳密な名前のアセンブリは、いくつかのセキュリティ上の利点を提供し、グローバル アセンブリ キャッシュ (GAC) でプロジェクトを展開するために必要な。 厳密な名前では、デジタル署名と一意キーのペアを割り当てることによって、アセンブリの一意性を保証します。 これは、アセンブリの系列をにより、それ以降のバージョンのアセンブリを生成できないことができますも保護します。 最後に、厳密な名前は、アセンブリの内容がのビルド以降に変更していないことを保証するために強力な整合性チェックを提供します。  
+# <a name="step-3-assign-a-strong-name-to-the-assembly"></a>手順 3: アセンブリに厳密な名前を割り当てる
+この手順で作成して割り当てるの厳密な名前、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アセンブリ。 厳密な名前のアセンブリは、いくつかのセキュリティの利点しがグローバル アセンブリ キャッシュ (GAC) にプロジェクトを配置するために必要です。 厳密な名前では、デジタル署名と一意キーのペアを割り当てることで、アセンブリの一意性を保証します。 これもだれ以降のバージョンのアセンブリを生成できることを確認して、アセンブリの系統を保護します。 最後に、厳密な名前は、アセンブリの内容がのビルド以降に変更していないことを保証するために厳密な整合性チェックを提供します。  
   
 ### <a name="to-assign-a-strong-name-to-the-assembly"></a>アセンブリに厳密な名前を割り当てる  
   
-1.  開始 **Visual Studio コマンド プロンプト**します。  
+1. 開始**Visual Studio コマンド プロンプト**します。  
   
-    > [!NOTE]
-    >  厳密な名前キーを既に作成した場合は、再利用することができます。  
+   > [!NOTE]
+   >  厳密な名前キーを既に作成している場合は、再利用することができます。  
   
-2.  コマンド プロンプトでに移動**\<*ドライブ*\>: \Tutorial\BTAHL7V22Common** (ここで\<*ドライブ*\>はインストール ドライブ文字) キーを押します**Enter**です。  
+2. コマンド プロンプトに移動します<strong>\<*ドライブ*\>: \Tutorial\BTAHL7V22Common</strong> (場所\<*ドライブ*\>は。インストール ドライブ文字) とキーを押します**Enter**します。  
   
-3.  コマンド プロンプトで次のように入力します。 **sn – k key.snk**、キーを押します**Enter**です。 示すメッセージが表示されます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]キーファイル key.snk にキーのペアを書き込みました。  
+3. コマンド プロンプトで「 **sn – k key.snk**、押します **」と入力**します。 あることを示すメッセージが表示されます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]キー ファイルの key.snk にキーのペアを作成します。  
   
-4.  ソリューション エクスプ ローラーで右クリックし、 **BTAHL7V22Common**プロジェクトをクリックして**プロパティ**です。  
+4. ソリューション エクスプ ローラーで右クリックし、 **BTAHL7V22Common**プロジェクトをクリックして**プロパティ**します。  
   
-5.  BTAHL7V22Common プロパティ ページ] ダイアログ ボックスで、[**アセンブリ**です。  
+5. BTAHL7V22Common プロパティ ページ] ダイアログ ボックスで、[**アセンブリ**します。  
   
-6.  右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、省略記号 (...) ボタンをクリックします。  
+6. 右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして**アセンブリ キー ファイル**、省略記号 (...) ボタンを順にクリックします。  
   
-7.  アセンブリ キー ファイル ダイアログ ボックスでを参照 **\<*ドライブ*\>: \Tutorial\BTAHL7V22Common\key.snk**をクリックして**開く**、 をクリックし、**OK**です。  
+7. アセンブリ キー ファイル ダイアログ ボックスを参照 **\<*ドライブ*\>: \Tutorial\BTAHL7V22Common\key.snk**、 をクリックして**オープン**、順にクリックします**OK**します。  
   
-8.  ソリューション エクスプ ローラーで右クリック**BTAHL7V22Common**、クリックして**展開**です。 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]次のプロジェクトから参照できるアセンブリを作成します。  
+8. ソリューション エクスプ ローラーで右クリックして**BTAHL7V22Common**、 をクリックし、**デプロイ**します。 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] 次のプロジェクトから参照できるアセンブリを作成します。  
   
-9. BTAHL7V2XCommon プロジェクトに対して手順 4. ~ 8. を繰り返します。  
+9. BTAHL7V2XCommon プロジェクトに対して手順 4 ~ 8 を繰り返します。  
   
- 進みます[手順 4: スキーマ作成](../../adapters-and-accelerators/accelerator-hl7/step-4-create-the-schemas.md)です。  
+   進みます[手順 4: スキーマの作成](../../adapters-and-accelerators/accelerator-hl7/step-4-create-the-schemas.md)です。  
   
 ## <a name="see-also"></a>参照  
  [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

@@ -1,5 +1,5 @@
 ---
-title: イベントと Errors2 |Microsoft ドキュメント
+title: イベントと Errors2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b4828fb5171f74473678400eb4ea53066337e2e3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d2299e8145fc302f41e9ea640381e82a6f52be06
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22245770"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010043"
 ---
 # <a name="events-and-errors"></a>イベントとエラー
 このセクションでは、BizTalk Server テクノロジに関するイベントおよびエラーを示します。 エラーおよびユーザーの適切な対処方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [WCF イベントとエラー](../core/wcf-events-and-errors.md)  
+- [WCF イベントとエラー](../core/wcf-events-and-errors.md)  
   
--   [EDI および AS2 イベントとエラー](../core/edi-and-as2-events-and-errors.md)  
+- [EDI および AS2 イベントとエラー](../core/edi-and-as2-events-and-errors.md)  
   
--   [SSO イベントとエラー](../core/sso-events-and-errors.md)  
+- [SSO のイベントとエラー](../core/sso-events-and-errors.md)  
   
--   [BizTalk エディター エラー](../core/biztalk-editor-errors.md)  
+- [BizTalk エディターのエラー](../core/biztalk-editor-errors.md)  
   
--   [BizTalk マッパーのエラー](../core/biztalk-mapper-errors.md)  
+- [BizTalk マッパー エラー](../core/biztalk-mapper-errors.md)  
   
- RFID イベントとエラーは、ダウンロード[BizTalk RFID ヘルプ](http://www.microsoft.com/download/details.aspx?id=38167)です。
+  RFID イベントとエラーは、ダウンロード[BizTalk RFID ヘルプ](http://www.microsoft.com/download/details.aspx?id=38167)します。

@@ -1,5 +1,5 @@
 ---
-title: 例外の収集および ESB 例外プロセッサを使用して、ペイロードを保持する |Microsoft ドキュメント
+title: 例外の収集および ESB 例外プロセッサを使用してペイロードを保持する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9dd0ec42ab60636202a8ff99fa8fab8d96a95a19
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: c43925006153ccfdcfa0c9700dd1ecf27fd3fd2f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007019"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36994819"
 ---
-# <a name="collecting-exceptions-and-persisting-the-payload-using-the-esb-exception-processor"></a>例外の収集および ESB 例外プロセッサを使用して、ペイロードを保持します。
-このユース ケースでは、オーケストレーションの例外ハンドラーは、BizTalk Server メッセージ ボックスに ESB フォールト メッセージを発行するか、または BizTalk 失敗のメッセージのルーティング メカニズムには、エラー メッセージが生成されます。 ESB 例外エンコーダ パイプライン コンポーネントでは、事前に構成されて、送信ポートは、エラー メッセージの種類の両方をサブスクライブします。 エラー メッセージを処理し、表示できる、InfoPath を使用して図 1 に示すようにディスク ファイルとが引き続き発生することです。  
+# <a name="collecting-exceptions-and-persisting-the-payload-using-the-esb-exception-processor"></a>例外の収集および ESB 例外プロセッサを使用してペイロードを保持します。
+このユース ケースでは、オーケストレーションの例外ハンドラーを BizTalk Server メッセージ ボックスに、ESB エラー メッセージを発行するか、または BizTalk 失敗のメッセージのルーティング メカニズムには、エラー メッセージが生成されます。 ESB 例外エンコーダー パイプライン コンポーネントを事前構成済み、送信ポートは、エラー メッセージの種類の両方をサブスクライブします。 エラー メッセージを処理し、それらを表示、InfoPath を使用して図 1 に示すようにディスク ファイルとしてが引き続き発生します。  
   
- ![例外のペイロードの収集](../esb-toolkit/media/ch3-collectingexceptionspayload.gif "Ch3 CollectingExceptionsPayload")  
+ ![収集のペイロードの例外](../esb-toolkit/media/ch3-collectingexceptionspayload.gif "Ch3 CollectingExceptionsPayload")  
   
  **図 1**  
   
- **エラー メッセージをキャプチャし、ディスク ファイルに永続化します。**  
+ **エラー メッセージをキャプチャし、ディスク ファイルを永続化します。**  
   
  [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]次が含まれています。  
   
--   **ESB フォールト プロセッサ送信パイプラインを使用するポートを構成済みに送信します。** 特定の要件に基づいて、この送信ポートを構成することができます。  
+- **ESB エラー プロセッサの送信パイプラインを使用するポートを構成済みに送信します。** 独自の要件に従って、この送信ポートを構成できます。  
   
--   **メッセージの永続化のカスタム例外ハンドラーのサンプルです。** このサンプルは、疎結合の一般的な例外ハンドラーがエラー メッセージを受信する方法を示しています。 これらが含まれて正規化と、拡充、調査メッセージ、ファイル システムにディスク ファイルとして書き込む BizTalk Server メッセージを抽出します。  
+- **メッセージの永続化カスタム例外ハンドラーのサンプルです。** この例では、疎結合の汎用的な例外ハンドラーが、エラー メッセージを受信する方法を含む、正規化に、メッセージを強化およびファイル システムにディスク ファイルとして書き込むが、BizTalk Server メッセージを抽出します。  
   
--   **メッセージのルーティングに失敗しました BizTalk サンプルです。** このサンプルでは、ESB 例外管理フレームワークを正規化し、BizTalk Server でメッセージのルーティングに失敗しましたメカニズムによってネイティブに生成されたエラー メッセージの強化方法を示します。  
+- **メッセージのルーティングに失敗しました BizTalk サンプルです。** このサンプルでは、ESB 例外管理フレームワークの正規化および BizTalk Server の失敗のメッセージのルーティング メカニズムによって生成されたネイティブ フォールト メッセージを強化する方法を示します。  
   
- 詳細については、次を参照してください。[メッセージのカスタム例外ハンドラーの永続化サンプルを実行している](../esb-toolkit/running-the-message-persisting-custom-exception-handler-sample.md)と[サンプルを実行する BizTalk できませんでしたメッセージ ルーティング ESB 処理](../esb-toolkit/running-the-biztalk-failed-message-routing-esb-processing-sample.md)です。
+  詳細については、次を参照してください。[メッセージの永続化カスタム例外ハンドラー サンプルを実行している](../esb-toolkit/running-the-message-persisting-custom-exception-handler-sample.md)と[BizTalk できませんでしたメッセージ ルーティング ESB 処理サンプルを実行している](../esb-toolkit/running-the-biztalk-failed-message-routing-esb-processing-sample.md)します。

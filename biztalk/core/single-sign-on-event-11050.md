@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11050 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 11050 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8314b58cf968a78b22e66783d0da8c36fac2873e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2406a29150710286a6560a2239315feaa10c42b6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276826"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37021928"
 ---
 # <a name="single-sign-on-event-11050"></a>シングル サインオン: イベント 11050
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|11050|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_INFO_LINE|  
-|メッセージ テキスト|SSO: %1 %r|  
+|                 |                                                            |
+|-----------------|------------------------------------------------------------|
+|  製品名   |                 エンタープライズ シングル サインオン                  |
+| 製品バージョン | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    イベント ID     |                           11050                            |
+|  イベント ソース   |                           ENTSSO                           |
+|    コンポーネント    |                            なし                             |
+|  シンボル名  |                       SSO_INFO_LINE                        |
+|  メッセージ テキスト   |                         SSO: % 1 %r                          |
   
 ## <a name="explanation"></a>説明  
  これは内部エラーです。  

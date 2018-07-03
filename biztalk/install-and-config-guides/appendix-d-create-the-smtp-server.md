@@ -1,5 +1,5 @@
 ---
-title: '付録 d: SMTP サーバーの作成 |Microsoft ドキュメント'
+title: '付録 d: SMTP サーバーの作成 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f4d4acc35f5cb38be5f783ee7c4017c8ada83e2
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: b6c773935a52e58a4bc04b3f963d83d988bf78d8
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "22300138"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37007083"
 ---
 # <a name="appendix-d-create-the-smtp-server"></a>付録 D: SMTP サーバーの作成
 SQL Server Database Mail で使用される SMTP サーバーを作成します。  
@@ -28,7 +28,7 @@ SQL Server Database Mail で使用される SMTP サーバーを作成します�
 * [!INCLUDE[sqlserver2014](../includes/sqlserver2014-md.md)]
 * [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] 
   
- SQL Server Database Mail では SMTP サーバーを使用して BAM 警告を送信します。 SMTP サーバーは、インターネット インフォメーション サービス (IIS) に含まれています。 SMTP サーバーは BizTalk Server のローカル、または IIS のインストールされた別のサーバーにインストールできます。  
+  SQL Server Database Mail では SMTP サーバーを使用して BAM 警告を送信します。 SMTP サーバーは、インターネット インフォメーション サービス (IIS) に含まれています。 SMTP サーバーは BizTalk Server のローカル、または IIS のインストールされた別のサーバーにインストールできます。  
   
 > [!IMPORTANT]
 >  通常、Windows 10 や Windows 7 などのクライアント オペレーティング システムには、SMTP サーバーの機能は含まれません。 IIS 内の *SMTP Email* 機能を使用して、Windows Server の既存の SMTP サーバーに接続することができます。 *SMTP Email* 機能は、SQL Server Database Mail で必要とされる SMTP サーバーではないため、 このトピックではクライアント オペレーティング システムでの SMTP サーバーのインストールと構成手順は省きます。  
@@ -154,45 +154,45 @@ SQL Server Database Mail で使用される SMTP サーバーを作成します�
 ## <a name="test-the-smtp-server"></a>SMTP サーバーのテスト  
  Telnet を使用して、SMTP サーバーの構成をテストできます。 次の手順では、構成した SMTP サーバーを使用して、メール アドレスにメッセージを送信します。 [http://support.microsoft.com/kb/153119](http://support.microsoft.com/kb/153119) telnet コマンドの説明を示します。  
   
-1.  管理者としてコマンド ウィンドウを開きます。
+1. 管理者としてコマンド ウィンドウを開きます。
   
-2.  コマンド プロンプトで、次のように入力します:  
+2. コマンド プロンプトで、次のように入力します:  
   
-     `telnet localhost 25`  
+    `telnet localhost 25`  
   
-     telnet がインストールされていない場合は、次のように入力してインストールします:  
+    telnet がインストールされていない場合は、次のように入力してインストールします:  
   
-     `pkgmgr /iu:"TelnetClient"`  
+    `pkgmgr /iu:"TelnetClient"`  
   
-3.  次のように入力して通信を開始します:  
+3. 次のように入力して通信を開始します:  
   
-     `EHLO server`  
+    `EHLO server`  
   
-4.  送信者アドレスを入力します:  
+4. 送信者アドレスを入力します:  
   
-     `MAIL FROM: *YourEmailAddress*@*YourProvider*.com`  
+    `MAIL FROM: *YourEmailAddress*@*YourProvider*.com`  
   
-     たとえば、次のように入力します。  
+    たとえば、次のように入力します。  
   
-     `MAIL FROM: EmailAddress@outlook.com`  
+    `MAIL FROM: EmailAddress@outlook.com`  
   
-5.  送信先アドレスを入力します:  
+5. 送信先アドレスを入力します:  
   
-     `RCPT TO: *YourEmailAddress*@*YourProvider*.com`  
+    `RCPT TO: *YourEmailAddress*@*YourProvider*.com`  
   
-     たとえば、次のように入力します。  
+    たとえば、次のように入力します。  
   
-     `RCPT TO: EmailAddress@outlook.com`  
+    `RCPT TO: EmailAddress@outlook.com`  
   
-6.  次のように入力して SMTP サーバーにデータの送信準備ができたことを伝えます:  
+6. 次のように入力して SMTP サーバーにデータの送信準備ができたことを伝えます:  
   
-     `DATA`  
+    `DATA`  
   
-7.  次のように入力して件名を入力します:  
+7. 次のように入力して件名を入力します:  
   
-     `Subject: Test Message`  
+    `Subject: Test Message`  
   
-8.  Enter キーを 2 回押します。  
+8. Enter キーを 2 回押します。  
   
 9. 次のようにメッセージ本文を入力します:  
   
@@ -200,5 +200,5 @@ SQL Server Database Mail で使用される SMTP サーバーを作成します�
   
 10. Enter を押し、ピリオド (.) を入力して、Enter を押します。  
   
- メール メッセージの RCPT TO アドレスを確認します。 メールが配信されない場合は (受信トレイと迷惑メール フォルダーを確認してください)、メッセージが正常に送信されておらず、SMTP キュー フォルダー (C:\inetpub\mailroot\Queue) に残っている可能性があります。  
+    メール メッセージの RCPT TO アドレスを確認します。 メールが配信されない場合は (受信トレイと迷惑メール フォルダーを確認してください)、メッセージが正常に送信されておらず、SMTP キュー フォルダー (C:\inetpub\mailroot\Queue) に残っている可能性があります。  
   

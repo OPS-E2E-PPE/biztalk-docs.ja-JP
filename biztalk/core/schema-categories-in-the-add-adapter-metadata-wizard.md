@@ -1,5 +1,5 @@
 ---
-title: スキーマのカテゴリ、アダプター メタデータのウィザードの追加 |Microsoft ドキュメント
+title: スキーマ カテゴリ、アダプター メタデータのウィザードの追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4fda24ee5ef4993c90eb82e0f406da2e06618776
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 46fd9ffab7aa4f8617e08a18824cc251ad9f4173
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271506"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008011"
 ---
 # <a name="schema-categories-in-the-add-adapter-metadata-wizard"></a>アダプター メタデータの追加ウィザードのスキーマ カテゴリ
 
 ## <a name="overview"></a>概要
 > [!NOTE]
->  このトピックは、実装する静的アダプターに対してのみ、 **IStaticAdapterConfig**インターフェイスです。  
+>  このトピックは、実装する静的アダプターに対してのみ、 **IStaticAdapterConfig**インターフェイス。  
   
  アダプターは、データを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に渡す前に、数千あるスキーマのうちのいずれかを使用してデータを変換します。 メタデータを BizTalk プロジェクトに追加する場合は、アダプター メタデータの追加ウィザードを使用して、アダプターと連携するすべてのスキーマの一覧からスキーマを選択します。  
   
@@ -31,7 +31,7 @@ ms.locfileid: "22271506"
   
  このファイルを作成し、ソリューションに即した方法でスキーマを構成できるようにする必要があります。 CategorySchema.xml の既存のカテゴリは、独自のツリーで実行できることの一例にすぎません。 これらのカテゴリとサンプル アダプターによって渡されるデータは特に関連性がありません。 スキーマの構成は、数千もの異なるスキーマを利用できるアプリケーション固有のアダプターで特に重要になります。 トランスポート固有のアダプターの場合、ツリー ビュー構成は必要ありません。  
   
- 次の図に示しています、 **インポートするサービス**アダプター メタデータの追加ウィザードのページです。  
+ 次に示します、 **インポートするサービス**アダプター メタデータの追加ウィザードのページ。  
   
  ![](../core/media/ebiz-prog-custad-tree.gif "ebiz_prog_custad_tree")  
 アダプター メタデータの追加ウィザードのスキーマ カテゴリのツリー ビュー  
@@ -77,18 +77,18 @@ ms.locfileid: "22271506"
   
  このスキーマ インスタンスには、次のノード タイプが表示されます。  
   
--   **CategoryTree です。** システム情報モデルの最上位レベルの構造。 0 個以上の CategoryTreeNode ノード、ExpandableCategoryTreeNode ノード、および ServiceTreeNode ノードが格納されます。  
+- **CategoryTree します。** システム情報モデルの最上位レベルの構造。 0 個以上の CategoryTreeNode ノード、ExpandableCategoryTreeNode ノード、および ServiceTreeNode ノードが格納されます。  
   
--   **CategoryTreeNode です。** 0 個以上の CategoryTreeNode ノード、および ServiceTreeNode ノードが格納されます。 ユーザー インターフェイスでフォルダーとして表示される CategoryTreeNode を使用して、関連する一連のサービスをグループ化します。 通常、このノードには、表示されるサービスの表示名と説明が格納されます。 子ノードの数が少数である場合、アダプターは CategoryTreeNode を使用する可能性があります。  
+- **CategoryTreeNode します。** 0 個以上の CategoryTreeNode ノード、および ServiceTreeNode ノードが格納されます。 ユーザー インターフェイスでフォルダーとして表示される CategoryTreeNode を使用して、関連する一連のサービスをグループ化します。 通常、このノードには、表示されるサービスの表示名と説明が格納されます。 子ノードの数が少数である場合、アダプターは CategoryTreeNode を使用する可能性があります。  
   
--   **ExpandableCategoryTreeNode です。** 展開時に動的に生成されるリーフ ノード。 ExpandableCategoryTreeNode はプレースホルダーとして使用され、UI でフォルダーとして表示されます。 このノードを使用すると、ユーザーがノードをクリックして展開するまで、サブ要素を含むカテゴリ ノードの生成を延期することができます。 多数の子ノードがカテゴリに含まれる場合、アダプターは ExpandableCategoryTreeNode を使用する可能性があります。  
+- **ExpandableCategoryTreeNode します。** 展開時に動的に生成されるリーフ ノード。 ExpandableCategoryTreeNode はプレースホルダーとして使用され、UI でフォルダーとして表示されます。 このノードを使用すると、ユーザーがノードをクリックして展開するまで、サブ要素を含むカテゴリ ノードの生成を延期することができます。 多数の子ノードがカテゴリに含まれる場合、アダプターは ExpandableCategoryTreeNode を使用する可能性があります。  
   
--   **ServiceTreeNode です。** ServiceTreeNode は、UI でドキュメントまたはリーフ ノードとして表示され、Web Services Description Language (WSDL) ファイルを表します。  
+- **ServiceTreeNode します。** ServiceTreeNode は、UI でドキュメントまたはリーフ ノードとして表示され、Web Services Description Language (WSDL) ファイルを表します。  
   
- ユーザーは、ノードを展開するフォルダーをクリックすると、アダプター フレームワークは、 **IStaticAdapterConfig.GetServiceOrganization**メソッドの値として、ノードの名前を渡すアダプターを**NodeIdentifier**属性。 アダプターは、ExpandableCategoryTreeNode の下に追加するサブノードを含む CategoryTree を返す必要があります。 アダプター フレームワークは、ExpandableCategoryTreeNode を CategoryTreeNode に置き換えて、返された CategoryTree の子を CategoryTreeNode に追加します。  
+  ユーザーは、ノードを展開するフォルダーをクリックすると、アダプター フレームワークが呼び出す、 **IStaticAdapterConfig.GetServiceOrganization**メソッドの値として、ノードの名前を渡して、アダプターを**NodeIdentifier**属性。 アダプターは、ExpandableCategoryTreeNode の下に追加するサブノードを含む CategoryTree を返す必要があります。 アダプター フレームワークは、ExpandableCategoryTreeNode を CategoryTreeNode に置き換えて、返された CategoryTree の子を CategoryTreeNode に追加します。  
   
 > [!NOTE]
->  最初の呼び出しで**IStaticAdapterConfig.GetServiceOrganization**アダプター フレームワーク ノード識別子に対して null を渡します。 これは、ルート レベルの CategoryTree を返すようにアダプターに通知します。  
+>  最初の呼び出しで**IStaticAdapterConfig.GetServiceOrganization**アダプター フレームワークは、ノード識別子を null に渡します。 これは、ルート レベルの CategoryTree を返すようにアダプターに通知します。  
   
  BiztalkAdapterFramework.xsd ファイルから抽出したカテゴリ ツリー スキーマを次に示します。 アダプター メタデータの追加ウィザードは、このカテゴリ ツリー スキーマをスケルトン ツリーとして使用し、特定のアプリケーション依存エンティティを XML ファイルから生成します。 この例では、CategorySchema.xml ファイルがその XML ファイルに該当します。  
   
@@ -136,4 +136,4 @@ ms.locfileid: "22271506"
   
  CategorySchema.xml ファイルを修正したら、AdapterManagement プロジェクトをリビルドし、アダプター メタデータの追加ウィザードを実行して、CategorySchema.xml のツリーが正しく表示されることを確認します。  
   
- アダプター メタデータの追加ウィザードを実行する方法の詳細については、次を参照してください。、**アダプター メタデータのウィザード ダイアログ ボックスを追加**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+ アダプター メタデータの追加ウィザードを実行する方法の詳細については、次を参照してください。、**アダプター メタデータのウィザード ダイアログ ボックスを追加**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス |Microsoft ドキュメント'
+title: 'チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,166 +17,166 @@ caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23bc9f0b1f2d350864509536a393de639e108e2d
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: b0d66a381403f8649174046cb249ff92a644ac15
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26010963"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37006827"
 ---
 # <a name="walkthrough-module-3---accessing-sharepoint-properties-from-an-orchestration"></a>チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス
-このチュートリアルでは、継続の[チュートリアル: モジュール 2 - Windows SharePoint Services アダプターと Office の統合](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md)し、受信メッセージでの Windows SharePoint Services コンテキスト プロパティにアクセスする方法を示します実行時間とし、動的ポート、オーケストレーションでのプロパティに基づいてメッセージの送信先を判断します。 概要については、Windows SharePoint Services アダプターを参照してください。 [Windows SharePoint Services アダプターは何ですか。](../core/what-is-the-windows-sharepoint-services-adapter.md)です。  
+このチュートリアルの続きでは、[チュートリアル: モジュール 2 - Windows SharePoint Services アダプターと Office の統合](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md)で受信メッセージの Windows SharePoint Services コンテキスト プロパティにアクセスする方法を示します実行時間とし、オーケストレーションでの動的ポートを使用してプロパティに基づいてメッセージの送信先を判断します。 Windows SharePoint Services アダプターの概要についてを参照してください。 [、Windows SharePoint Services アダプターとは何ですか?](../core/what-is-the-windows-sharepoint-services-adapter.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するための前提条件は、次のとおりです。  
   
--   シングル サーバー配置で実行されている BizTalk Server の完全インストールする必要があります[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]です。  
+- シングル サーバー配置で実行されている BizTalk Server の完全インストールする必要があります[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]します。  
   
--   次のチュートリアルを完了する必要があります:[チュートリアル: モジュール 1 - Windows SharePoint Services アダプターでメッセージを送受信する](../core/walkthrough-module-1--send-and-receive-messages-with-the-sharepoint-adapter.md)と[チュートリアル: モジュール 2 - Windows と Office の統合SharePoint Services アダプター](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md)  
+- 次のチュートリアルを完了する必要があります:[チュートリアル: モジュール 1 - Windows SharePoint Services アダプターでメッセージを送受信する](../core/walkthrough-module-1--send-and-receive-messages-with-the-sharepoint-adapter.md)と[チュートリアル: モジュール 2 -、Windows と Office の統合SharePoint Services アダプター](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md)  
   
- 複数のサーバーの展開で Windows SharePoint Services アダプターを使用する方法については、次を参照してください。[の設定と Windows SharePoint Services アダプターを展開する](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)です。  
+  マルチ サーバー展開で、Windows SharePoint Services アダプターを使用する方法の詳細については、次を参照してください。[設定と、Windows SharePoint Services アダプターを展開する](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)します。  
   
 ## <a name="modify-the-biztalk-project"></a>BizTalk プロジェクトの変更  
- PurchaseOrder スキーマを変更するこの手順で[チュートリアル: モジュール 2 - Windows SharePoint Services アダプターと Office の統合](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md)です。 この手順は、スキーマ プロパティを昇格させ、BizTalk オーケストレーションで容易にアクセスできるようにする方法を示しています。  
+ この手順を PurchaseOrder スキーマを変更して[チュートリアル: モジュール 2 - Windows SharePoint Services アダプターと Office の統合](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md)します。 この手順は、スキーマ プロパティを昇格させ、BizTalk オーケストレーションで容易にアクセスできるようにする方法を示しています。  
   
 #### <a name="modify-the-purchaseorderxsd-schema"></a>PurchaseOrder.xsd スキーマの変更  
   
-1.  開始**Microsoft Visual Studio**です。  
+1. 開始**Microsoft Visual Studio**します。  
   
-2.  をクリックして**ファイル**、 をクリックして**開く**、順にクリック**プロジェクト/ソリューション**です。  
+2. クリックして**ファイル**、 をクリックして**オープン**、順にクリックします**プロジェクト/ソリューション**します。  
   
-3.  参照、`OrderProcess.sln`ファイルを開き、をクリックして**開く**です。  
+3. 参照、`OrderProcess.sln`ファイルを開き、をクリックし、**オープン**します。  
   
-4.  **ソリューション エクスプ ローラー**を右クリックし、`OrderProcessSchema.xsd`ファイルを開き、をクリックして**開く**です。  
+4. **ソリューション エクスプ ローラー**を右クリックし、`OrderProcessSchema.xsd`ファイルを開き、をクリックし、**オープン**します。  
   
-5.  **BizTalk エディター**、展開`PurchaseOrder`です。  
+5. **BizTalk エディター**、展開`PurchaseOrder`します。  
   
-6.  右クリック`Amount`をクリックして**昇格**、順にクリック**クイック昇格**です。  
+6. 右クリック`Amount`、 をクリックして**昇格**、 をクリックし、**クイック昇格**します。  
   
-7.  **[OK]** をクリックします。  
+7. **[OK]** をクリックします。  
   
-    > [!NOTE]
-    >  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、これに対応するプロパティ スキーマが現在のプロジェクト内に作成されます。  
+   > [!NOTE]
+   >  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、これに対応するプロパティ スキーマが現在のプロジェクト内に作成されます。  
   
-8.  `PurchaseOrder.xsd` を保存します。  
+8. `PurchaseOrder.xsd` を保存します。  
   
 ## <a name="create-an-orchestration"></a>オーケストレーションの作成  
  ここでは、新しい BizTalk オーケストレーションを作成します。 この手順により、Windows SharePoint Services アダプターが受信したメッセージを処理するためのオーケストレーションが作成されます。  
   
 #### <a name="add-a-biztalk-orchestration"></a>BizTalk オーケストレーションの追加  
   
-1.  **ソリューション エクスプ ローラー**を右クリックし、`OrderProcess`プロジェクトで、をクリックして**追加**、クリックして**新しい項目の**します。  
+1.  **ソリューション エクスプ ローラー**を右クリックし、`OrderProcess`プロジェクトで、をクリックして**追加**、 をクリックし、**新しい項目の**します。  
   
-2.  **カテゴリ****オーケストレーション ファイル**です。  
+2.  **カテゴリ**、**オーケストレーション ファイル**します。  
   
-3.  **テンプレート** **BizTalk オーケストレーション**です。  
+3.  **テンプレート**、 **BizTalk オーケストレーション**します。  
   
-4.  型`MyCompanyOrderProcessing`で、**名前**フィールドをクリックして**追加**です。  
+4.  型`MyCompanyOrderProcessing`で、**名前**フィールドをクリックして**追加**します。  
   
 ## <a name="create-receive-information"></a>受信情報の作成  
  ここでは、オーケストレーションの新しいメッセージ、受信ポート、受信図形を作成します。 この手順は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] からメッセージを受信するオーケストレーションの構成方法を示しています。  
   
 #### <a name="create-a-new-message"></a>新しいメッセージの作成  
   
-1.  **オーケストレーション ビュー**を右クリックして**メッセージ**、クリックして**新しいメッセージ**です。 `Message_1` という名前の新しいメッセージが生成されます。  
+1.  **オーケストレーション**、右クリック**メッセージ**、順にクリックします**新しいメッセージ**します。 `Message_1` という名前の新しいメッセージが生成されます。  
   
-2.  右クリック`Message_1`をクリックして**の名前を変更**、し、入力`Message_PO`です。  
+2.  右クリックして`Message_1`、 をクリックして**の名前を変更**、し、入力`Message_PO`します。  
   
-3.  右クリック`Message_PO`、クリックして**プロパティ ウィンドウ**します。  
+3.  右クリック`Message_PO`、 をクリックし、**プロパティ ウィンドウ**します。  
   
-4.  **メッセージの種類**プロパティ、展開**スキーマ**、し、`OrderProcess.OrderProcessSchema`スキーマです。  
+4.  **メッセージの種類**プロパティ、展開**スキーマ**、し、`OrderProcess.OrderProcessSchema`スキーマ。  
   
 #### <a name="add-a-receive-port-to-the-orchestration"></a>オーケストレーションへの受信ポートの追加  
   
-1.  **BizTalk オーケストレーション**、ツールボックスのドラッグ、**ポート**図形をポート画面にします。 ポート構成ウィザードが起動します。  
+1.  **BizTalk オーケストレーション**、ツールボックスのドラッグを**ポート**図形をポート画面にします。 ポート構成ウィザードが起動します。  
   
-2.  [ようこそ] 画面で、をクリックして**次**です。  
+2.  [ようこそ] 画面で、次のようにクリックします。**次**します。  
   
-3.  型`ReceivePurchaseOrder`で、**名前**フィールド、およびをクリックして**次**です。  
+3.  型`ReceivePurchaseOrder`で、**名前**フィールドをクリックして**次**します。  
   
-4.  選択**新しいポートの種類を作成する**です。  
+4.  選択**新しいポートの種類を作成する**します。  
   
-5.  型`PurchaseOrderPT`で、**ポートの種類名**フィールドをクリックして**次**です。  
+5.  型`PurchaseOrderPT`で、**ポートの種類名**フィールドをクリックして**次**。  
   
-6.  **画面のポートのバインド**で、既定値のままにし、クリックして**次**です。  
+6.  **画面のポートのバインド**、既定値のままにし、クリックして**次**します。  
   
 7.  **[完了]** をクリックします。  
   
 8.  **オーケストレーション****ポートの種類**、展開、`PurchaseOrderPT`ポートの種類。  
   
-9. 右クリック`Operation_1`をクリックして**の名前を変更**、し、入力`PurchaseOrderOperation`です。  
+9. 右クリックして`Operation_1`、 をクリックして**の名前を変更**、し、入力`PurchaseOrderOperation`します。  
   
 #### <a name="add-a-receive-shape-to-the-orchestration"></a>オーケストレーションへの受信図形の追加  
   
-1.  **BizTalk オーケストレーション**、ツールボックスのドラッグ、**受信**オーケストレーションへの図形です。  
+1.  **BizTalk オーケストレーション**、ツールボックスのドラッグを**受信**オーケストレーションへの図形。  
   
-2.  受信図形を右クリックし、をクリックして**プロパティ ウィンドウ**します。  
+2.  受信図形を右クリックし、**プロパティ ウィンドウ**します。  
   
-3.  設定、 **Activate**プロパティを`True`です。  
+3.  設定、 **Activate**プロパティを`True`します。  
   
     > [!NOTE]
     >  "アクティブ化" プロパティを false に設定すると、"エラー X2214: 自己関連付けを行わないポート上での非アクティベーション受信に対して、既に初期化されている関連付けセットを少なくとも 1 つ指定する必要があります" というエラーが表示されます。  
   
-4.  型`Receive_PO`で、**名前**フィールドです。  
+4.  型`Receive_PO`で、**名前**フィールド。  
   
-5.  **プロパティ] ウィンドウ**[`Message_PO`メッセージ プロパティのです。  
+5.  **プロパティ ウィンドウ**を選択します`Message_PO`メッセージ プロパティ。  
   
-6.  選択`ReceivePurchaseOrder.PurchaseOrderOperation.Request`の**操作**プロパティです。 オーケストレーション デザイナの受信図形にポートが連結されます。  
+6.  選択`ReceivePurchaseOrder.PurchaseOrderOperation.Request`の**操作**プロパティ。 オーケストレーション デザイナの受信図形にポートが連結されます。  
   
 ## <a name="create-send-information"></a>送信情報の作成  
  ここでは、オーケストレーションに新しいメッセージ、送信ポート、判断構造を作成します。 この手順は、判断ロジックを使ったオーケストレーションの構成方法、および、メッセージを送信ポートに送るようにオーケストレーションを構成する方法を示しています。  
   
 #### <a name="create-a-new-message"></a>新しいメッセージの作成  
   
-1.  **オーケストレーション ビュー**を右クリックして**メッセージ**、クリックして**新しいメッセージ**です。 `Message_1` という名前の新しいメッセージが生成されます。  
+1.  **オーケストレーション**、右クリック**メッセージ**、順にクリックします**新しいメッセージ**します。 `Message_1` という名前の新しいメッセージが生成されます。  
   
-2.  右クリック`Message_1`をクリックして**の名前を変更**、し、入力`Message_Task`です。  
+2.  右クリックして`Message_1`、 をクリックして**の名前を変更**、し、入力`Message_Task`します。  
   
-3.  右クリック`Message_Task`、クリックして**プロパティ ウィンドウ**します。  
+3.  右クリック`Message_Task`、 をクリックし、**プロパティ ウィンドウ**します。  
   
-4.  **メッセージの種類**プロパティ、展開**スキーマ**、し、`OrderProcess.OrderProcessSchema`スキーマです。  
+4.  **メッセージの種類**プロパティ、展開**スキーマ**、し、`OrderProcess.OrderProcessSchema`スキーマ。  
   
 #### <a name="add-a-send-port-to-the-orchestration"></a>オーケストレーションへの送信ポートの追加  
   
-1.  **BizTalk オーケストレーション**、ツールボックスのドラッグ、**ポート**図形をポート画面にします。 ポート構成ウィザードが起動します。  
+1.  **BizTalk オーケストレーション**、ツールボックスのドラッグを**ポート**図形をポート画面にします。 ポート構成ウィザードが起動します。  
   
-2.  [ようこそ] 画面で、をクリックして**次**です。  
+2.  [ようこそ] 画面で、次のようにクリックします。**次**します。  
   
-3.  型`SendPurchaseOrder`で、**名前**フィールド、およびをクリックして**次**です。  
+3.  型`SendPurchaseOrder`で、**名前**フィールドをクリックして**次**します。  
   
-4.  選択**既存のポートの種類を使用して**です。  
+4.  選択**既存のポートの種類を使用して、** します。  
   
-5.  **使用可能なポートの種類** `OrderProcess.PurchaseOrderPT`、順にクリック**次へ**です。  
+5.  **使用可能なポートの種類**を選択します`OrderProcess.PurchaseOrderPT`、順にクリックします**次**します。  
   
-6.  **画面のポートのバインド****ポートの通信方向** `I'll always be sending messages on this port`、順にクリック**次へ**です。  
+6.  **画面のポートのバインド****ポートの通信方向**を選択します`I'll always be sending messages on this port`、順にクリックします**次**します。  
   
 7.  **[完了]** をクリックします。  
   
 #### <a name="add-a-send-shape-to-the-orchestration"></a>オーケストレーションへの送信図形の追加  
   
-1.  **BizTalk オーケストレーション**、ツールボックスのドラッグ、**送信**図形をオーケストレーション デザイナにします。 `Receive_PO` 受信図形の下に配置します。  
+1.  **BizTalk オーケストレーション**、ツールボックスのドラッグを**送信**図形をオーケストレーション デザイナにします。 `Receive_PO` 受信図形の下に配置します。  
   
-2.  送信図形を右クリックし、をクリックして**プロパティ ウィンドウ**します。  
+2.  送信図形を右クリックし、**プロパティ ウィンドウ**します。  
   
-3.  型`Send_PO`で、**名前**フィールドです。  
+3.  型`Send_PO`で、**名前**フィールド。  
   
-4.  選択`Message_PO`の**メッセージ**プロパティです。  
+4.  選択`Message_PO`の**メッセージ**プロパティ。  
   
-5.  選択`SendPurchaseOrder.PurchaseOrderOperation.Request`の**操作**プロパティです。 オーケストレーション デザイナの送信図形にポートが連結されます。  
+5.  選択`SendPurchaseOrder.PurchaseOrderOperation.Request`の**操作**プロパティ。 オーケストレーション デザイナの送信図形にポートが連結されます。  
   
 #### <a name="add-a-decide-shape-to-the-orchestration"></a>オーケストレーションへの判断図形の追加  
   
-1.  **BizTalk オーケストレーション**、ツールボックスのドラッグ、**判断**図形をオーケストレーション デザイナにします。 `Send_PO` 送信図形の下に配置します。  
+1.  **BizTalk オーケストレーション**、ツールボックスのドラッグを**判断**図形をオーケストレーション デザイナにします。 `Send_PO` 送信図形の下に配置します。  
   
-2.  判断図形を右クリックし、をクリックして**プロパティ ウィンドウ。**  
+2.  判断図形を右クリックし、**プロパティ ウィンドウ。**  
   
-3.  型`NeedsApproval`で、**名前**フィールドです。  
+3.  型`NeedsApproval`で、**名前**フィールド。  
   
-4.  オーケストレーション デザイナーで、をクリックして**Rule_1**判断図形にします。  
+4.  オーケストレーション デザイナーで、次のようにクリックします。 **[rule_1]** 判断図形にします。  
   
-5.  プロパティ ウィンドウで、次のように入力します。`ApprovalRequired`の、**名前**プロパティです。  
+5.  プロパティの Windows、入力`ApprovalRequired`の**名前**プロパティ。  
   
-6.  クリックして、**式**プロパティ フィールドに、クリックして、省略記号 (**.**) ボタンをクリックします。  
+6.  をクリックして、**式**プロパティ、フィールドし、省略記号をクリックし、(**.**) ボタンをクリックします。  
   
 7.  BizTalk 式エディターに、以下の式を入力またはコピーします。  
   
@@ -188,33 +188,33 @@ ms.locfileid: "26010963"
   
 #### <a name="add-another-send-port-to-the-orchestration"></a>オーケストレーションへの別の送信ポートの追加  
   
-1.  **BizTalk オーケストレーション**、ツールボックスのドラッグ、**ポート**図形をポート画面にします。 ポート構成ウィザードが起動します。  
+1.  **BizTalk オーケストレーション**、ツールボックスのドラッグを**ポート**図形をポート画面にします。 ポート構成ウィザードが起動します。  
   
-2.  [ようこそ] 画面で、をクリックして**次**です。  
+2.  [ようこそ] 画面で、次のようにクリックします。**次**します。  
   
-3.  型`SendToTasksList`で、**名前**フィールド、およびをクリックして**次**です。  
+3.  型`SendToTasksList`で、**名前**フィールドをクリックして**次**します。  
   
-4.  選択**既存のポートの種類を使用して**です。  
+4.  選択**既存のポートの種類を使用して、** します。  
   
-5.  **使用可能なポートの種類** `OrderProcess.PurchaseOrderPT`、順にクリック**次へ**です。  
+5.  **使用可能なポートの種類**を選択します`OrderProcess.PurchaseOrderPT`、順にクリックします**次**します。  
   
-6.  **画面のポートのバインド****ポートの通信方向**`I'll always be sending messages on this port`です。  
+6.  **画面のポートのバインド****ポートの通信方向**を選択します`I'll always be sending messages on this port`します。  
   
-7.  **ポートのバインド** `Dynamic`、順にクリック**次へ**です。  
+7.  [**ポートのバインド**を選択します`Dynamic`、] をクリックし、**次**。  
   
 8.  **[完了]** をクリックします。  
   
 #### <a name="add-a-send-shape-to-the-decide-shape"></a>判断図形への送信図形の追加  
   
-1.  **BizTalk オーケストレーション**、ツールボックスのドラッグ、**送信**図形をオーケストレーション デザイナにします。 `ApprovalRequired` 図形の下に配置します。  
+1.  **BizTalk オーケストレーション**、ツールボックスのドラッグを**送信**図形をオーケストレーション デザイナにします。 `ApprovalRequired` 図形の下に配置します。  
   
-2.  送信図形を右クリックし、をクリックして**プロパティ ウィンドウ**  
+2.  送信図形を右クリックし、**プロパティ ウィンドウ**  
   
-3.  型`CreateApprovalTask`で、**名前**フィールドです。  
+3.  型`CreateApprovalTask`で、**名前**フィールド。  
   
-4.  選択`Message_Task`の**メッセージ**プロパティです。  
+4.  選択`Message_Task`の**メッセージ**プロパティ。  
   
-5.  選択`SendToTasksList.PurchaseOrderOperation.Request`の**操作**プロパティです。 オーケストレーション デザイナの送信図形にポートが連結されます。  
+5.  選択`SendToTasksList.PurchaseOrderOperation.Request`の**操作**プロパティ。 オーケストレーション デザイナの送信図形にポートが連結されます。  
   
 ## <a name="create-an-expression"></a>式の作成  
  ここでは、To Do パス値を変数に代入する式図形をソリューションに追加します。 この手順は、動的送信ポートのプロパティを変更するためのロジックをオーケストレーションに追加する方法を示しています。  
@@ -223,11 +223,11 @@ ms.locfileid: "26010963"
   
 1.  **BizTalk オーケストレーション**、ツールボックスのドラッグ、**式**図形の前に、`CreateApprovalTask`送信図形。  
   
-2.  式図形を右クリックし、をクリックして**プロパティ ウィンドウ。**  
+2.  式図形を右クリックし、をクリックし、**プロパティ ウィンドウ。**  
   
-3.  型`SetPortDestination`で、**名前**フィールドです。  
+3.  型`SetPortDestination`で、**名前**フィールド。  
   
-4.  クリックして、**式**プロパティ フィールドに、クリックして、省略記号 (**.**) ボタンをクリックします。  
+4.  をクリックして、**式**プロパティ、フィールドし、省略記号をクリックし、(**.**) ボタンをクリックします。  
   
 5.  **BizTalk 式エディタ**次を入力します。  
   
@@ -242,19 +242,19 @@ ms.locfileid: "26010963"
   
 #### <a name="add-a-construct-shape"></a>メッセージ構築図形の追加  
   
-1.  **BizTalk オーケストレーション**、ツールボックスのドラッグ、**メッセージの構築**図形の前に、`SetPortDestination`式図形です。  
+1.  **BizTalk オーケストレーション**、ツールボックスのドラッグを**メッセージの構築**図形の前に、`SetPortDestination`式図形。  
   
-2.  メッセージの構築図形を右クリックし、をクリックして**プロパティ ウィンドウ。**  
+2.  メッセージの構築図形を右クリックし、**プロパティ ウィンドウ。**  
   
-3.  型`ConstructTaskMessage`で、**名前**フィールドです。  
+3.  型`ConstructTaskMessage`で、**名前**フィールド。  
   
-4.  選択`Message_Task`の**構築メッセージ**プロパティです。  
+4.  選択`Message_Task`の**構築メッセージ**プロパティ。  
   
-5.  **BizTalk オーケストレーション**、ツールボックスのドラッグ、**メッセージの割り当て**図形を`ConstructTaskMessage`**メッセージの構築**図形です。  
+5.  **BizTalk オーケストレーション**、ツールボックスのドラッグを**メッセージの割り当て**図形を`ConstructTaskMessage`**メッセージの構築**図形。  
   
-6.  **プロパティ ウィンドウ**、型`InitTaskMessage`で、**名前**フィールドです。  
+6.  **プロパティ ウィンドウ**、型`InitTaskMessage`で、**名前**フィールド。  
   
-7.  クリックして、**式**プロパティ フィールドに、クリックして、省略記号 (**.**) ボタンをクリックします。  
+7.  をクリックして、**式**プロパティ、フィールドし、省略記号をクリックし、(**.**) ボタンをクリックします。  
   
 8.  **BizTalk 式エディタ**を入力するか、以下をコピーします。  
   
@@ -266,79 +266,79 @@ ms.locfileid: "26010963"
     ```  
   
     > [!IMPORTANT]
-    >  上記のコンテキスト プロパティに指定する値は、大文字と小文字が区別されます。 コンテキスト プロパティと動的なポートの構成値を設定するときに正しい大文字小文字を使用するか、送信ポートを BizTalk の試行を指定したドキュメントをルーティングする場合は、エラーが発生することを確認する必要があります。  
+    >  上記のコンテキスト プロパティに指定する値は、大文字と小文字が区別されます。 コンテキスト プロパティが正しい大文字小文字を使用することも、BizTalk を指定したドキュメントをルーティングしようとしたときにエラーが発生することを確認する必要がありますと動的なポートの構成値を設定するときに、ポートを送信します。  
   
 9. **[OK]** をクリックします。  
   
-10. をクリックして**ファイル**、クリックして**すべてを保存**です。  
+10. をクリックして**ファイル**、 をクリックし、**すべて保存**します。  
   
 ## <a name="build-the-biztalk-project"></a>BizTalk プロジェクトのビルド  
  ここでは、BizTalk プロジェクトをビルドして配置します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって実行時に使用されるアセンブリを作成および配置するために、この手順が必要になります。  
   
 #### <a name="build-and-deploy-the-solution"></a>ソリューションのビルドおよび配置  
   
-1.  をクリックして**ビルド**、クリックして**orderprocess のビルド**です。  
+1. をクリックして**ビルド**、 をクリックし、 **orderprocess のビルド**します。  
   
-2.  をクリックして**ビルド**、クリックして**orderprocess の配置**です。  
+2. をクリックして**ビルド**、 をクリックし、 **orderprocess の配置**します。  
   
-3.  [Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]] を閉じます。  
+3. [Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]] を閉じます。  
   
 ## <a name="modify-the-receive-location-and-send-port"></a>受信場所と送信ポートの変更  
  ここでは、既存の受信場所と送信ポートを、パイプラインで XML 処理を行うように変更します。 受信 XML パイプラインでは、オーケストレーション処理中に使用されたメッセージ プロパティが保持されます。また、送信 XML パイプラインでは、オーケストレーションで適用されたメッセージ プロパティ (後でメッセージ ルーティングに使用される) が保持されます。  
   
 #### <a name="modify-the-receive-location"></a>受信場所を変更します。  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリック**BizTalk Server 管理コンソールです。**  
+1. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリックします**BizTalk Server 管理コンソール。**  
   
-2.  展開**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **管理スナップイン**、展開**BizTalk グループ**、展開**アプリケーション**の展開**BizTalk アプリケーション 1**、をクリックし、**受信場所**ノード。  
+2. 展開**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **管理スナップイン**、展開**BizTalk グループ**、展開**アプリケーション**の展開**BizTalk アプリケーション 1**、 をクリックし、**受信場所**ノード。  
   
-3.  右クリック`SourceLocation`、クリックして**プロパティ**です。  
+3. 右クリックして`SourceLocation`、 をクリックし、**プロパティ**します。  
   
-4.  **受信場所のプロパティ**ダイアログ ボックスで、**全般**`XMLReceive`の**受信パイプライン**プロパティです。  
+4. **受信場所のプロパティ**ダイアログ ボックスで、**全般**、`XMLReceive`の**受信パイプライン**プロパティ。  
   
-5.  **[OK]** をクリックします。  
+5. **[OK]** をクリックします。  
   
 #### <a name="modify-the-send-port"></a>送信ポートの変更  
   
-1.  クリックして、**送信ポート**ノード。  
+1.  をクリックして、**送信ポート**ノード。  
   
-2.  右クリック`SendToDestination`、クリックして**プロパティ**です。  
+2.  右クリックして`SendToDestination`、 をクリックし、**プロパティ**します。  
   
-3.  **送信ポートのプロパティ**ダイアログ ボックスで、**全般**`XMLTransmit`の**送信パイプライン**プロパティです。  
+3.  **送信ポートのプロパティ**ダイアログ ボックスで、**全般**を選択します`XMLTransmit`の**送信パイプライン**プロパティ。  
   
-4.  選択、**フィルター**タブです。  
+4.  選択、**フィルター**タブ。  
   
-5.  既存の条件を選択して、del キー、およびをクリックして**OK**です。  
+5.  既存の条件を選択、del キー、および順にクリックします**OK**します。  
   
 #### <a name="start-a-new-send-port"></a>新しい送信ポートの開始  
   
-1.  クリックして、**送信ポート**ノード。  
+1.  をクリックして、**送信ポート**ノード。  
   
-2.  右クリック`OrderProcess_1.0.0.0_OrderProcess.MyCompanyOrderProcess_SendToTasksList_<GUID>`、クリックして**開始**です。  
+2.  右クリック`OrderProcess_1.0.0.0_OrderProcess.MyCompanyOrderProcess_SendToTasksList_<GUID>`、 をクリックし、**開始**します。  
   
 > [!NOTE]
 >  これが表示されない場合は、コンソールを更新する必要があります。  
   
-## <a name="bind-the-orchestration"></a>オーケストレーションをバインドします  
+## <a name="bind-the-orchestration"></a>オーケストレーションをバインドします。  
  ここでは、指定したポートにオーケストレーションをバインドします。 ビルドと配置が済んだオーケストレーションに対し、物理ポートを関連付けるために、この手順が必要になります。  
   
-#### <a name="bind-the-orchestration"></a>オーケストレーションをバインドします  
+#### <a name="bind-the-orchestration"></a>オーケストレーションをバインドします。  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、をクリックして、**オーケストレーション**ノード。  
+1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、をクリックして、**オーケストレーション**ノード。  
   
-2.  右クリックし、`OrderProcess.MyCompanyOrderProcessing`オーケストレーション、およびクリック**プロパティ**です。  
+2. 右クリックし、`OrderProcess.MyCompanyOrderProcessing`オーケストレーション、およびクリック**プロパティ**します。  
   
-3.  選択、**バインド**タブです。  
+3. 選択、**バインド**タブ。  
   
-4.  **ホスト**`BizTalkServerApplication`で、**ホスト**フィールドです。  
+4. **ホスト**、`BizTalkServerApplication`で、**ホスト**フィールド。  
   
-5.  **バインド**`FromSource`の`ReceivePurchaseOrder`受信論理ポートです。  
+5. **バインド**、`FromSource`の`ReceivePurchaseOrder`受信論理ポート。  
   
-6.  **バインド**`SendToDestination`の`SendPurchaseOrder`論理送信ポート。  
+6. **バインド**、`SendToDestination`の`SendPurchaseOrder`論理送信ポート。  
   
-7.  **[OK]** をクリックします。  
+7. **[OK]** をクリックします。  
   
-8.  右クリックして`OrderProcess.MyCompanyOrderProcessing`オーケストレーション、およびクリック**開始**です。  
+8. 右クリックして`OrderProcess.MyCompanyOrderProcessing`オーケストレーション、およびクリック**開始**します。  
   
 ## <a name="send-a-message-through-the-system"></a>システムからのメッセージ送信  
  ここでは、InfoPath フォームを作成し、Windows SharePoint Services Web サイトにアップロードします。 そのメッセージは Windows SharePoint Services アダプターによって取得され、アーカイブ ドキュメント ライブラリにアーカイブされた後、アップロード先のドキュメント ライブラリに送信されます。 このメッセージを処理する間、送信先を判断するために Windows SharePoint Services のコンテキスト プロパティにアクセスします。  
@@ -349,40 +349,40 @@ ms.locfileid: "26010963"
   
 2.  クイック起動メニューの `InfoPathSolutions` をクリックします。  
   
-3.  クリックして、`PurchaseOrder`に表示されるファイル、**ファイルのダウンロード**クリックしてダイアログ ボックスで、**開く**です。 フォームが読み込まれます。  
+3.  をクリックして、`PurchaseOrder`ファイルを表示する、**ファイルのダウンロード**クリックしてダイアログ ボックスで、**オープン**します。 フォームが読み込まれます。  
   
-4.  **Purchase Order ID**フィールドに「`1003`です。  
+4.  **Purchase Order ID**フィールドに「`1003`します。  
   
-5.  **請求先**フィールドに「`John Doe`です。  
+5.  **請求先**フィールドに「`John Doe`します。  
   
-6.  **量**フィールドに「`1750`です。  
+6.  **量**フィールドに「`1750`します。  
   
-7.  **Purchase Order Date**フィールドに「`1/3/2005`です。  
+7.  **発注書日付**フィールドに「`1/3/2005`します。  
   
 8.  **[保存]** をクリックします。  
   
-9. **名前を付けて保存** ダイアログ ボックスで、「`http://<server_name>/sites/WSSAdapterWalkthrough/Source`で、**ファイル名**フィールド、および ENTER キーを押します。  
+9. **付けて**ダイアログ ボックスに「`http://<server_name>/sites/WSSAdapterWalkthrough/Source`で、**ファイル名**フィールド、および ENTER キーを押します。  
   
-10. 型`PurchaseOrder3.xml`で、**ファイル名**フィールドをクリックして**保存**です。  
+10. 型`PurchaseOrder3.xml`で、**ファイル名**フィールドをクリックして**保存**します。  
   
 11. InfoPath を終了します。  
   
-12. Web ブラウザーで、をクリックして**ドキュメントし、リスト**です。  
+12. Web ブラウザーで次のようにクリックします。**ドキュメントとリスト**します。  
   
-13. **ドキュメント ライブラリ**をクリックして**先**です。  
+13. [**ドキュメント ライブラリ**、] をクリックして**先**します。  
   
-14. 移行先ドキュメント ライブラリに表示されます、メッセージのこのライブラリの一覧です。 アーカイブ ドキュメント ライブラリにアーカイブされたコピーも紹介します。  
+14. アップロード先のドキュメント ライブラリで表示されます、メッセージをこのライブラリに一覧表示します。 アーカイブ ドキュメント ライブラリにアーカイブされたコピーも紹介します。  
   
 15. **[ホーム]** をクリックします。  
   
-16. **を一覧表示**をクリックして**タスク**です。  
+16. [**一覧**、] をクリックして**タスク**します。  
   
 17. To Do リストに、新しく作成した承認済みのアイテムが表示されます。  
   
 > [!NOTE]
 >  注文書の総額が $1,000.00 を超えていたので、タスクが作成されます。  
   
-## <a name="summary"></a>概要  
+## <a name="summary"></a>まとめ  
  このチュートリアルでは、Windows SharePoint Services のコンテキスト プロパティにアクセスする方法、および動的ポートを経由してメッセージの送信先を判断する方法を確認しました。  
   
 ## <a name="next-steps"></a>次の手順  

@@ -1,5 +1,5 @@
 ---
-title: HL7 2.X バージョン |Microsoft ドキュメント
+title: HL7 2.X バージョン |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,29 +15,30 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c163506e9a83afac29bea1615290a1840f3baf3e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 17b149e6cfd93115abde267e935ae6f76707561c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25960376"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36993723"
 ---
 # <a name="hl7-2x-versions"></a>HL7 2.X バージョン
-次の表に、正常性レベル 7 (HL7) の標準の 2.X バージョンは、承認 HL7 組織から日付をどのバージョンを一覧表示[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]) をサポートしています。  
-  
-|HL7 バージョン|承認日付|[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] によるサポート|  
-|-----------------|-------------------|---------------------------------------------------------------------------------------------|  
-|2.1|年 12 月 31日 1992|可|  
-|2.2|Dec 01 1994|可|  
-|2.3|Apr 07 1997 年|可|  
-|2.3.1|月の 17 1999 年|可|  
-|2.4|11 月 01日 2000|可|  
-|2.5|2003 年 6 月 26 日|可|  
-  
+次の表に、正常性レベル 7 (HL7) の標準の 2.X バージョン、承認、HL7 組織からの日付や for HL7 のどのバージョンの Microsoft BizTalk Accelerator を一覧表示されます ([!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]) をサポートしています。  
+
+
+| HL7 バージョン | 承認日 | [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] によるサポート |
+|-------------|---------------|------------------------------------------------------------------------------------------------------|
+|     2.1     |  12/31 1992 年  |                                                 はい                                                  |
+|     2.2     |  12/01 1994 年  |                                                 はい                                                  |
+|     2.3     |  4 月 7日 1997 年  |                                                 はい                                                  |
+|    2.3.1    |  月の 17 1999 年  |                                                 はい                                                  |
+|     2.4     |  11 月 01日 2000  |                                                 はい                                                  |
+|     2.5     | 2003 年 6 月 26 日 |                                                 はい                                                  |
+
 > [!NOTE]
->  のバージョンは、2.1、2.2、および 2.3 は古い、version 2.3.1 を使用することをお勧めまたは 2.X 標準のそれ以降。  
-  
- インストールするときに[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]、セットアップ ウィザードを作成、 *\<ドライブ\>*: \プログラム ファイル\\[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>Accelerator for HL7 のイベントをサポートするためにテンプレートを含む HL7\Templates\Schemas フォルダー構造です。 このフォルダは、V2 下にあります。X フォルダーには、HL7 のそれぞれ対応するサブフォルダーが含まれる 2.X バージョン: 2.1、2.2、2.3、2.3.1、2.4 および 2.5 です。  
-  
+>  ため、バージョン、2.1、2.2、および 2.3 が古く、version 2.3.1 を使用することをお勧めまたは 2.X の標準のそれ以降。  
+
+ インストールするときに[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]、セットアップ ウィザードを作成、 *\<ドライブ\>*: \プログラム ファイル\\Microsoft BizTalk\<バージョン\>Accelerator for HL7 のイベントをサポートするためにテンプレートを含む HL7\Templates\Schemas フォルダー構造です。 このフォルダは、V2 下にあります。X フォルダーには、HL7 の各サブフォルダーが含まれています 2.X バージョン: 2.1、2.2、2.3、2.3.1、2.4、2.5 です。  
+
 ## <a name="see-also"></a>参照  
  [HL7 2.X のサブフォルダーとイベント](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-subfolders-and-events.md)

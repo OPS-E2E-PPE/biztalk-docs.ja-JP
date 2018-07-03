@@ -1,5 +1,5 @@
 ---
-title: BizTalk Operations サンプルのインストール |Microsoft ドキュメント
+title: BizTalk 操作サンプルをインストールする |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa8fb289e5bb7950f9ad8bca3dac98035bada176
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 6a4fa6aeb56c9d5e4ed65e80f0a43c2cdedcf8b9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007315"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002579"
 ---
-# <a name="installing-the-biztalk-operations-sample"></a>BizTalk Operations サンプルをインストールします。
-Microsoft BizTalk Operations サンプルには、ESB BizTalk 操作のサービスのインストールし、構成が必要です。 ESB BizTalk Operations サービスをインストールして、ESB 構成ツールを使用して構成するコア Web サービスの 1 つです。 ESB 構成ツールの使用に関する詳細については、次を参照してください[http://msdn.microsoft.com/library/jj684558(v=bts.80).aspx](http://msdn.microsoft.com/library/jj684558\(v=bts.80\).aspx).。 BizTalk Operations Web サービスの既定の場所は http://localhost/ESB.BizTalkOperationsService/Operations.asmx;ただし、変更できますこのアプリケーション構成ファイル内の別の場所またはリモート サーバーでサービスを展開する場合。  
-  
+# <a name="installing-the-biztalk-operations-sample"></a>BizTalk 操作サンプルをインストールします。
+Microsoft BizTalk 操作サンプルには、ESB BizTalk 操作のサービスをインストールして構成が必要です。 ESB BizTalk Operations サービスでは、インストールして、ESB 構成ツールを使用して構成するコア Web サービスの 1 つです。 詳細については、ESB 構成ツールを使用して、次を参照してください。 [ http://msdn.microsoft.com/library/jj684558(v=bts.80).aspx](http://msdn.microsoft.com/library/jj684558\(v=bts.80\).aspx)します。 BizTalk 操作 Web サービスの既定の場所は<http://localhost/ESB.BizTalkOperationsService/Operations.asmx>。 ただし、別の場所またはリモート サーバーでサービスをデプロイする場合、アプリケーション構成ファイルで変更することができます。  
+
  ソリューションのプロジェクトからの BizTalk 操作サンプルをインストールする必要があります。  
-  
+
  **BizTalk 操作サンプルをインストールするには**  
-  
-1.  インストールした \Source\Samples\BizTalkOperations フォルダーから ESB.BizTalkOperations.Test.Client.csproj をという名前のソリューションを開き、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Visual studio のサンプルです。  
-  
-2.  コマンドを使用、**ビルド**ソリューションをコンパイルするにはメニュー。
+
+1. インストールした \Source\Samples\BizTalkOperations フォルダーから ESB.BizTalkOperations.Test.Client.csproj という名前のソリューションを開き、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]に Visual Studio のサンプル。  
+
+2. 使用して、**ビルド**] メニューの [ソリューションをコンパイルします。

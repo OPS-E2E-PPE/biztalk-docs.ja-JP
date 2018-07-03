@@ -1,6 +1,6 @@
 ---
-title: Biztalk の Siebel アダプターの SOAP アクションの構成 |Microsoft ドキュメント
-description: Visual Studio で SOAP アクションを入力するか、Wcf-custom アダプターまたは Wcf-siebel アダプターの BizTalk アダプター パック (BAP) でを使用
+title: BizTalk での Siebel アダプターの SOAP アクションの構成 |Microsoft Docs
+description: Visual Studio での SOAP アクションの入力または BizTalk アダプター パック (BAP) で、Wcf-custom または Wcf-siebel アダプターを使用して、
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,99 +13,99 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b851aa0b26d80a43f5a839232298ace5507f471b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fb945aba089e0c57e42e846cec765ae48b10d433
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222562"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022248"
 ---
 # <a name="configure-the-soap-action-for-siebel"></a>Siebel の SOAP アクションを構成します。
-WCF ベースを使用して、Siebel システムで操作を実行する[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アダプターのユーザーは、SOAP アクションを指定する必要があります。 SOAP アクションは、どのようなアクションを実行する必要があります、アダプターに通信します。 デザイン時に、または実行時に SOAP アクションを指定することができます。 ただし、SOAP アクション両方デザイン時に指定し、実行時、デザイン時に指定されたアクションがオーバーライドされます。  
+WCF ベースを使用して Siebel システムに対して任意の操作を実行する[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アダプターのユーザーは、SOAP アクションを指定する必要があります。 SOAP アクションは、どのようなアクションが実行されるアダプターに通信します。 デザイン時または実行時に SOAP アクションを指定することができます。 ただし、SOAP アクション両方デザイン時に指定する時間を実行すると、デザイン時に指定されたアクションは上書きされます。  
   
- SOAP アクションを指定する方法の詳細については、次を参照してください。 [WCF 送信アダプタ用の SOAP アクションの指定](../../core/specifying-soap-actions-for-wcf-send-adapters.md)です。
+ SOAP アクションを指定する方法については、次を参照してください。 [WCF 送信アダプター用の SOAP アクションを指定する](../../core/specifying-soap-actions-for-wcf-send-adapters.md)します。
   
 ## <a name="enter-soap-action-at-design-time"></a>デザイン時に SOAP アクションを入力します。  
- デザイン時の式図形を含めることによって、オーケストレーションの一部として SOAP アクションを指定する必要があります。  
+ 式図形を含めることによって、デザイン時のオーケストレーションの一部として SOAP アクションを指定する必要があります。  
   
-1.  BizTalk オーケストレーションが含まれる式図形からドラッグすることで、 **BizTalk オーケストレーション**ツールボックスします。  
+1.  Biztalk オーケストレーションはからドラッグすることで、式図形を含める、 **BizTalk オーケストレーション**ツールボックスです。  
   
-2.  ダブルクリックして、**式**図形を BizTalk 式エディタを開きます。  
+2.  ダブルクリックして、**式**図形、BizTalk 式エディターを開きます。  
   
-3.  BizTalk 式エディターで、アクションを指定します。 例:  
+3.  BizTalk 式エディタで、アクションを指定します。 以下に例を示します。  
   
     ```  
     OutboundMessage(WCF.Action)="http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert"  
     ```  
   
-     詳細については**式**図形と、BizTalk 式エディターを参照してください[式を作成する方法](../../core/how-to-create-expressions.md)です。  
+     詳細については**式**図形と、BizTalk 式エディタでを参照してください[式を作成する方法](../../core/how-to-create-expressions.md)します。  
   
-## <a name="enter-soap-action-at-run-time"></a>SOAP アクションを実行時に入力してください。  
+## <a name="enter-soap-action-at-run-time"></a>実行時に SOAP アクションを入力します。  
  実行時に、Wcf-custom または Wcf-siebel ポートのプロパティ ダイアログ ボックスの一部として SOAP アクションを指定する必要があります。  
   
 #### <a name="enter-a-soap-action-for-the-wcf-custom-port"></a>WCF カスタム ポートの SOAP アクションを入力します。  
   
-1.  開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  
+1. 開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
-2.  コンソール ツリーで  **BizTalk グループ**の順に展開**アプリケーション**、順にクリック**送信ポート**です。 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
+2. コンソール ツリーで、展開**BizTalk グループ**の順に展開**アプリケーション**、 をクリックし、**送信ポート**します。 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
   
-3.  ポートのプロパティ ダイアログ ボックスから、**型**ドロップダウン リストで、 **Wcf-custom**、クリックして**構成**です。  
+3. ポートのプロパティ ダイアログ ボックスから、**型**ドロップダウン リストで、 **Wcf-custom**、 をクリックし、**構成**します。  
   
-4.  **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブです。  
+4. **Wcf-custom トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブ。  
   
-5.  **アクション**テキスト ボックスで、操作の SOAP アクションを指定します。 次の方法では、アクションを指定できます。  
+5. **アクション**テキスト ボックスで、操作の SOAP アクションを指定します。 次の方法では、アクションを指定できます。  
   
-    -   **シングル アクション形式を使用して、** です。 Wcf-custom 送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。 例:  
+   -   **シングル アクション形式を使用して**します。 Wcf-custom 送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。 以下に例を示します。  
   
-        ```  
-        http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert  
-        ```  
+       ```  
+       http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert  
+       ```  
   
-    -   **アクション マッピング形式を使用して、** です。 1 つの WCF カスタム ポートを送信し、1 つ以上の操作のメッセージを受け取る場合は、この形式を使用します。 たとえば、1 つの WCF カスタム ポートを送信および (アカウント ビジネス コンポーネントで挿入操作の実行) する Op1、Op2 (を実行するアカウントのビジネス コンポーネントの更新操作) のメッセージを受け取る場合、SOAP アクションを指定できますでは、次に方法:  
+   -   **アクション マッピング形式を使用して**します。 1 つの WCF カスタム ポートが 1 つ以上の操作のメッセージを送受信する場合は、この形式を使用します。 たとえば、送受信 (アカウントのビジネス コンポーネントに対して、挿入操作を実行) を Op1 と Op2 (アカウントのビジネス コンポーネントに対する更新操作を実行) にメッセージを受け取る 1 つの WCF カスタム ポートを SOAP アクションで指定できます、次方法:  
   
-        ```  
-        <BtsActionMapping>  
-          <Operation Name="Op1" Action="http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert " />  
-          <Operation Name="Op2" Action="http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Update " />  
-        </BtsActionMapping>  
-        ```  
+       ```  
+       <BtsActionMapping>  
+         <Operation Name="Op1" Action="http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert " />  
+         <Operation Name="Op2" Action="http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Update " />  
+       </BtsActionMapping>  
+       ```  
   
-         このアプローチには、一連のアクションを指定して、そのため、同じポートを通過するさまざまなアクションの種類に属するメッセージの有効化の観点から高い柔軟性が実現します。  
+        このアプローチには、一連のアクションを指定して、そのため、同じポートを経由するさまざまなアクションの種類に属するメッセージの有効化の観点から高い柔軟性が提供されます。  
   
-         SOAP アクションの形式は操作ごとに異なります。 各操作のアクションの形式の詳細については、次を参照してください。[メッセージおよびメッセージ スキーマ](messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)です。
+        SOAP アクションの形式は操作ごとに異なります。 各操作のアクションの形式の詳細については、次を参照してください。[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)します。
   
 #### <a name="enter-a-soap-action-for-the-wcf-siebel-port"></a>Wcf-siebel ポートの SOAP アクションを入力します。  
   
-1.  開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。  
+1. 開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
-2.  Wcf-siebel アダプターの追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールです。 手順については、次を参照してください。 [Siebel アダプターを BizTalk Server 管理コンソールに追加](../../adapters-and-accelerators/adapter-siebel/add-the-siebel-adapter-to-biztalk-server-administration-console.md)です。  
+2. Wcf-siebel アダプターの追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、次を参照してください。 [Siebel アダプターを BizTalk Server 管理コンソールに追加](../../adapters-and-accelerators/adapter-siebel/add-the-siebel-adapter-to-biztalk-server-administration-console.md)します。  
   
-3.  コンソール ツリーで  **BizTalk グループ**の順に展開**アプリケーション**、順にクリック**送信ポート**です。 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
+3. コンソール ツリーで、展開**BizTalk グループ**の順に展開**アプリケーション**、 をクリックし、**送信ポート**します。 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
   
-4.  ポートのプロパティ ダイアログ ボックスから、**型**一覧から、以前に追加し、をクリックして選択、Wcf-siebel アダプター**構成**です。  
+4. ポートのプロパティ ダイアログ ボックスから、**型**ドロップダウン リスト、選択、Wcf-siebel アダプター以前では、追加し、をクリックし、**構成**します。  
   
-5.  ポートのプロパティ ダイアログ ボックスをクリックして、**全般**タブです。  
+5. ポートのプロパティ ダイアログ ボックスでをクリックして、**全般**タブ。  
   
-6.  **アクション**テキスト ボックスで、操作の SOAP アクションを指定します。 次の方法では、アクションを指定できます。  
+6. **アクション**テキスト ボックスで、操作の SOAP アクションを指定します。 次の方法では、アクションを指定できます。  
   
-    -   **シングル アクション形式を使用して、** です。 Wcf-custom 送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。 例:  
+   -   **シングル アクション形式を使用して**します。 Wcf-custom 送信ポートし、1 つの操作のメッセージを受信する場合は、この形式を使用します。 以下に例を示します。  
   
-        ```  
-        http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert  
-        ```  
+       ```  
+       http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert  
+       ```  
   
-    -   **アクション マッピング形式を使用して、** です。 1 つの WCF カスタム ポートを送信し、1 つ以上の操作のメッセージを受け取る場合は、この形式を使用します。 たとえば、1 つの WCF カスタム ポートを送信および (アカウント ビジネス コンポーネントで挿入操作の実行) する Op1、Op2 (を実行するアカウントのビジネス コンポーネントの更新操作) のメッセージを受け取る場合、SOAP アクションを指定できますでは、次に方法:  
+   -   **アクション マッピング形式を使用して**します。 1 つの WCF カスタム ポートが 1 つ以上の操作のメッセージを送受信する場合は、この形式を使用します。 たとえば、送受信 (アカウントのビジネス コンポーネントに対して、挿入操作を実行) を Op1 と Op2 (アカウントのビジネス コンポーネントに対する更新操作を実行) にメッセージを受け取る 1 つの WCF カスタム ポートを SOAP アクションで指定できます、次方法:  
   
-        ```  
-        <BtsActionMapping>  
-          <Operation Name="Op1" Action="http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert " />  
-          <Operation Name="Op2" Action="http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Update " />  
-        </BtsActionMapping>  
-        ```  
+       ```  
+       <BtsActionMapping>  
+         <Operation Name="Op1" Action="http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert " />  
+         <Operation Name="Op2" Action="http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Update " />  
+       </BtsActionMapping>  
+       ```  
   
-         このアプローチには、一連のアクションを指定して、そのため、同じポートを通過するさまざまなアクションの種類に属するメッセージの有効化の観点から高い柔軟性が実現します。  
+        このアプローチには、一連のアクションを指定して、そのため、同じポートを経由するさまざまなアクションの種類に属するメッセージの有効化の観点から高い柔軟性が提供されます。  
   
-         SOAP アクションの形式は操作ごとに異なります。 各操作のアクションの形式の詳細については、次を参照してください。[メッセージおよびメッセージ スキーマ](messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)です。
+        SOAP アクションの形式は操作ごとに異なります。 各操作のアクションの形式の詳細については、次を参照してください。[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)します。
   
 ## <a name="see-also"></a>参照  
-[Siebel アダプターと BizTalk アプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-siebel/building-blocks-to-create-biztalk-applications-with-the-siebel-adapter.md)
+[Siebel アダプターを使用した BizTalk アプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-siebel/building-blocks-to-create-biztalk-applications-with-the-siebel-adapter.md)

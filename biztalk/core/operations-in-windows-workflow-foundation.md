@@ -1,5 +1,5 @@
 ---
-title: Windows Workflow Foundation での操作 |Microsoft ドキュメント
+title: Windows Workflow Foundation での操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62cb1ba3cb82a21bb573145d00057112784c89a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 057154a2e64541b00c704be7078ef27ba596de20
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22265626"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37007603"
 ---
 # <a name="operations-in-windows-workflow-foundation"></a>Windows Workflow Foundation での操作
 このセクションでは、BAM WF インターセプタによってサポートされているカスタム操作について説明します。  
@@ -25,13 +25,13 @@ ms.locfileid: "22265626"
 ## <a name="determining-where-operations-are-allowed"></a>操作を許可する場所の決定  
  BAM WF インターセプタから提供されているカスタム操作は、関連する Windows Workflow Foundation 追跡ポイントの種類ごとに分類することができます。  
   
--   アクティビティ  
+- アクティビティ  
   
--   ワークフロー  
+- ワークフロー  
   
--   ユーザー  
+- ユーザー  
   
- BAM WF インターセプターでは、カテゴリを使用して、各追跡ポイントの種類を割り当てます**OnEvent**です。 この割り当てに表示される操作の種類に基づく、 **OnEvent**フィルターおよびデータの抽出、および操作セクションです。 たとえば場合、 **OnEvent**が含まれています、**更新**を使用する要素、 **GetUserData**は、アクティビティとワークフローのイベントが、ユーザー追跡ポイントの種類この操作をサポートしません。 追跡ポイントの詳細についてを参照してください System.Workflow.Runtime.Tracking [http://go.microsoft.com/fwlink/?LinkId=80242](http://go.microsoft.com/fwlink/?LinkId=80242)です。  
+  BAM WF インターセプタは、カテゴリを使用して、各追跡ポイントの種類を割り当てるを**OnEvent**します。 この割り当てに表示される操作の種類に基づく、 **OnEvent**フィルターとデータの抽出、および操作セクション。 たとえば場合、 **OnEvent**が含まれています、 **Update**を使用する要素、 **GetUserData**アクティビティとワークフロー イベントを行うため、ユーザー追跡ポイントの種類は、その操作、この操作をサポートします。 追跡ポイントの詳細については、System.Workflow.Runtime.Tracking を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=80242](http://go.microsoft.com/fwlink/?LinkId=80242)します。  
   
 > [!NOTE]
 >  ワークフロー追跡ポイントは、ワークフローからデータを抽出できません。  
@@ -40,44 +40,44 @@ ms.locfileid: "22265626"
   
 |フィルタ式の操作|アクティビティ追跡ポイントに対して有効|ワークフロー追跡ポイントに対して有効|ユーザー追跡ポイントに対して有効|  
 |---------------------------------|-------------------------------------|-------------------------------------|---------------------------------|  
-|[等しい]|はい|可|はい|  
-|And|はい|可|はい|  
-|連結|不可|いいえ|不可|  
-|定数|はい|可|はい|  
-|GetActivityEvent|はい|いいえ|不可|  
+|[等しい]|はい|はい|はい|  
+|And|はい|はい|はい|  
+|連結|いいえ|いいえ|いいえ|  
+|定数|はい|はい|はい|  
+|GetActivityEvent|はい|いいえ|いいえ|  
 |GetActivityName|はい|いいえ|はい|  
 |GetActivityProperty|はい|いいえ|はい|  
 |GetActivityType|はい|いいえ|はい|  
-|GetContextProperty|不可|いいえ|不可|  
-|GetUserData|不可|いいえ|不可|  
-|GetUserDataType|不可|いいえ|はい|  
-|GetUserKey|不可|いいえ|はい|  
-|GetWorkflowEvent|不可|可|不可|  
-|GetWorkflowProperty|不可|いいえ|不可|  
+|GetContextProperty|いいえ|いいえ|いいえ|  
+|GetUserData|いいえ|いいえ|いいえ|  
+|GetUserDataType|いいえ|いいえ|はい|  
+|GetUserKey|いいえ|いいえ|はい|  
+|GetWorkflowEvent|いいえ|はい|いいえ|  
+|GetWorkflowProperty|いいえ|いいえ|いいえ|  
   
- 互換性のない操作を組み合わせると、インターセプタ構成ファイルを展開するときにエラーが発生します。 たとえば、両方を使用する場合、`GetActivityEvent`と`GetWorkflowEvent`フィルター内または、フィルターおよびデータの抽出、または操作イベント (と同様に**CorrelationID**)、エラーが表示されます。  
+ 互換性のない操作を組み合わせると、インターセプタ構成ファイルを展開するときにエラーが発生します。 両方を使用する場合など、`GetActivityEvent`と`GetWorkflowEvent`フィルター、内またはフィルター処理およびデータ抽出、または操作イベント (など**CorrelationID**)、エラーが表示されます。  
   
  次の表に、データ抽出、または操作イベントの各アクティビティの種類でサポートされる操作についての概要を示します。  
   
 |データ抽出、または操作|アクティビティ追跡ポイントに対して有効|ワークフロー追跡ポイントに対して有効|ユーザー追跡ポイントに対して有効|  
 |-----------------------------------------------|-------------------------------------|-------------------------------------|---------------------------------|  
-|[等しい]|はい|可|はい|  
-|And|はい|可|はい|  
-|連結|はい|可|はい|  
-|定数|はい|可|はい|  
-|GetActivityEvent|はい|いいえ|不可|  
+|[等しい]|はい|はい|はい|  
+|And|はい|はい|はい|  
+|連結|はい|はい|はい|  
+|定数|はい|はい|はい|  
+|GetActivityEvent|はい|いいえ|いいえ|  
 |GetActivityName|はい|いいえ|はい|  
 |GetActivityProperty|はい|いいえ|はい|  
 |GetActivityType|はい|いいえ|はい|  
-|GetContextProperty|はい|可|はい|  
-|GetUserData|不可|いいえ|はい|  
-|GetUserDataType|不可|いいえ|はい|  
-|GetUserKey|不可|いいえ|はい|  
-|GetWorkflowEvent|不可|可|不可|  
+|GetContextProperty|はい|はい|はい|  
+|GetUserData|いいえ|いいえ|はい|  
+|GetUserDataType|いいえ|いいえ|はい|  
+|GetUserKey|いいえ|いいえ|はい|  
+|GetWorkflowEvent|いいえ|はい|いいえ|  
 |GetWorkflowProperty|はい|いいえ|はい|  
   
 > [!NOTE]
->  1 つの間の一対一のマッピングがある**OnEvent**と単一の追跡ポイントです。  
+>  1 つの間の一対一のマッピングがある**OnEvent**と単一の追跡ポイント。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -102,4 +102,4 @@ ms.locfileid: "22265626"
 -   [GetWorkflowProperty](../core/getworkflowproperty.md)  
   
 ## <a name="see-also"></a>参照  
- [BAM WF インターセプタ](../core/bam-wf-interceptor.md)
+ [BAM WF インターセプター](../core/bam-wf-interceptor.md)

@@ -1,5 +1,5 @@
 ---
-title: 受信場所 |Microsoft ドキュメント
+title: 受信場所 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9866edd5dfa6f953c4e847f191891bd7e6bc25ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 15ee246c07fa471cefe8f4dc42f55b0543bb8419
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268626"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37024264"
 ---
 # <a name="receive-locations"></a>受信場所
 受信場所の作成時には、着信メッセージを受信するアドレスと、そのアドレスで受信したメッセージを処理するメッセージング パイプラインを指定します。 受信場所の作成および有効化は、管理者のみが行えます。  
@@ -43,10 +43,10 @@ ms.locfileid: "22268626"
   
 > [!NOTE]
 >  Windows Management Instrumentation (WMI) で受信場所に対して行った変更は、BizTalk 管理コンソールの受信場所の表示に影響します。 たとえば、管理者が WMI を使用して新しい受信場所を作成した場合、その受信場所は BizTalk 管理コンソールに表示されます。 同様に、管理者が受信場所を削除した場合、その受信場所は BizTalk 管理コンソールに表示されなくなります。  
-  
+> 
 > [!IMPORTANT]
 >  各受信場所には一意の名前が必要です。 2 つの受信場所と同じで、同じ名前を持つことはできません[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]展開します。  
-  
+> 
 > [!IMPORTANT]
 >  受信場所の格納先には強力なアクセス制御リスト (ACL) を設定することをお勧めします。 たとえば、ファイルの受信場所がメッセージを取得するディレクトリに強力な ACL を設定し、認証されたユーザーだけがこの場所にメッセージを格納できるようにする必要があります。  
   
@@ -60,8 +60,8 @@ ms.locfileid: "22268626"
 ## <a name="receive-location-properties"></a>受信場所のプロパティ  
  受信場所にグローバルとアダプター固有のプロパティがあります。 BizTalk 管理コンソールを使用して、管理者は、特定のアダプターに関連付けられている受信場所のすべてのグローバル プロパティを設定します。  
   
- 受信場所のプロパティへの変更は、順番に行われます。 ソリューション開発者がプロパティ値を変更する場合、特定の受信場所、新しいプロパティ値のオーバーライドのグローバル プロパティの値を受信場所を BizTalk 管理コンソールで管理者が設定します。  
+ 受信場所のプロパティへの変更は、順番に行われます。 ソリューション開発者がプロパティ値を変更した場合、特定の受信場所、新しいプロパティ値のオーバーライドをグローバル プロパティの値の受信場所、管理者は、BizTalk 管理コンソールで設定します。  
   
 ## <a name="see-also"></a>参照  
  [受信場所の管理](../core/managing-receive-locations.md)   
- [成果物](../core/artifacts.md)
+ [アイテム](../core/artifacts.md)

@@ -1,5 +1,5 @@
 ---
-title: BizTalk プロジェクトのプロパティの構成 |Microsoft ドキュメント
+title: BizTalk プロジェクトのプロパティの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,28 +15,28 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1817f9d6bfa4cfbfa7dd34f58fa75b15dd89df7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 81e35a06a17a7e623db87463c1af336e1e6a8fea
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232258"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010003"
 ---
 # <a name="configuring-biztalk-project-properties"></a>BizTalk プロジェクトのプロパティの構成
 プロジェクト プロパティでは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で作成するプロジェクトのグローバル設定を構成します。 BizTalk プロジェクトでは、他の [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトの多くのプロジェクト プロパティを共有します。 これらのプロパティの多くは、プロジェクト デザイナーで構成します。  
   
 ### <a name="to-access-properties-with-the-project-designer"></a>プロジェクト デザイナーでプロパティにアクセスするには  
   
-1.  ソリューション エクスプローラーで、プロジェクトを選択します。  
+1. ソリューション エクスプローラーで、プロジェクトを選択します。  
   
-2.  **プロジェクト** メニューのをクリックして**プロパティ**プロジェクト デザイナーにアクセスします。  
+2. **プロジェクト** メニューのをクリックして**プロパティ**プロジェクト デザイナーにアクセスします。  
   
-    > [!NOTE]
-    >  または、プロジェクトを右クリックし、をクリックして**プロパティ**です。  
+   > [!NOTE]
+   >  または、プロジェクトを右クリックし、をクリックし、**プロパティ**します。  
   
-3.  目的のプロパティ タブをクリックして、プロジェクトのプロパティにアクセスします。  
+3. 目的のプロパティ タブをクリックして、プロジェクトのプロパティにアクセスします。  
   
- ドキュメントすべてに共通するプロパティを[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]次のリンクからそれぞれプロジェクト デザイナーのプロパティ タブの情報を参照することによってプロジェクトが見つかりません: [http://go.microsoft.com/fwlink/?LinkId=124727](http://go.microsoft.com/fwlink/?LinkId=124727)です。  
+   すべてに共通のプロパティに関する資料[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、次のリンクからそれぞれプロジェクト デザイナーのプロパティ タブの情報を参照することによってプロジェクトが見つかりません: [ http://go.microsoft.com/fwlink/?LinkId=124727](http://go.microsoft.com/fwlink/?LinkId=124727)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

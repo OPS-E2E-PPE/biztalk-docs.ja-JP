@@ -1,5 +1,5 @@
 ---
-title: SQL アダプタを使用して SQL Server で複合操作を実行 |Microsoft ドキュメント
+title: SQL アダプターを使用して SQL Server で複合操作の実行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c36a1ff6e4b2c7d4d56855ce1531f99cd490a2a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5acf0eca210bd163c0d74e7d8d873ec6009d40a5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223330"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36999283"
 ---
-# <a name="run-composite-operations-in-sql-server--using-the-sql-adapter"></a>SQL アダプタを使用して SQL Server での複合操作を実行します。
-[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]アダプター クライアントが、SQL Server データベースでの複合操作を実行できるようにします。 複合操作は、次の操作、および任意の順序で任意の数を含めることができます。  
+# <a name="run-composite-operations-in-sql-server--using-the-sql-adapter"></a>SQL アダプターを使用して SQL Server で複合操作を実行します。
+[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]アダプター クライアントが SQL Server データベースでの複合操作を実行できるようにします。 複合操作では、および任意の順序で、次の操作の任意の数を含めることができます。  
   
--   テーブルおよびビューに対する Insert、Update、および Delete 操作。  
+- テーブルおよびビューに対する Insert、Update、および Delete 操作。  
   
--   アダプターでの操作として表示されたストアド プロシージャです。  
+- アダプターでの操作として表示されるストアド プロシージャ。  
   
- 複合操作の操作は、*必要があります*テーブルとビューを 1 つのデータベースでのみを対象します。  
+  複合操作に含まれる操作*する必要があります*テーブルとビューでは、1 つのデータベースのみを対象します。  
   
- 詳細については。  
+  詳細については。  
   
--   複合操作を実行する方法[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[SQL Server を使用して BizTalk Server での複合操作を実行](../../adapters-and-accelerators/adapter-sql/run-composite-operations-on-sql-server-using-biztalk-server.md)です。  
+- 複合操作を実行する方法[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[SQL Server を使用して BizTalk Server での複合操作を実行](../../adapters-and-accelerators/adapter-sql/run-composite-operations-on-sql-server-using-biztalk-server.md)します。  
   
--   メッセージ複合操作のスキーマを参照してください[複合操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sql/message-schemas-for-composite-operations.md)です。  
+- 複合操作のスキーマのメッセージを参照してください[複合操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/message-schemas-for-composite-operations.md)します。  
   
 > [!IMPORTANT]
->  "N"を返す操作で複合操作ではさまざまな接続の数に設定し、"n+1"結果は複合操作が実行する必要があります。 したがって、ことを確認用に指定された値、 **MaxConnectionPoolSize** n+1 プロパティのバインドは以上です。 詳細については、 **MaxConnectionPoolSize**バインディング プロパティを参照してください[BizTalk Adapter for SQL Server のアダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。  
+>  "N"の数を返す複合操作での操作がある接続の数に設定し、"n+1"結果は複合操作が実行する必要があります。 そのため、することが必要に指定された値、 **MaxConnectionPoolSize**プロパティのバインドは、n+1 以上。 詳細については、 **MaxConnectionPoolSize**プロパティ、バインドを参照してください[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。  
   
 ## <a name="see-also"></a>参照  
- [どのような操作をアダプターであるを使用して実行しますか?](https://msdn.microsoft.com/library/cc185435(v=bts.10).aspx)
+ [どのような操作は、アダプターを使用して実行しますか?](https://msdn.microsoft.com/library/cc185435(v=bts.10).aspx)

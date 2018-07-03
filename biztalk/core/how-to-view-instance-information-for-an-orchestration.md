@@ -1,5 +1,5 @@
 ---
-title: オーケストレーションのインスタンスの情報を表示する方法 |Microsoft ドキュメント
+title: オーケストレーションのインスタンス情報を表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,30 +15,30 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84129d48fba15dadfc97722ead85b1535a8fa597
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 761f29d6f341410fec544fb0d6fdc032f671775c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256530"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983995"
 ---
 # <a name="how-to-view-instance-information-for-an-orchestration"></a>オーケストレーションのインスタンス情報を表示する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、オーケストレーションのインスタンス情報を表示する方法について説明します。 サービスのインスタンスとは、後続の処理や追跡を目的に BizTalk Server が処理しているオーケストレーションのインスタンス、または、メッセージ ボックスにシリアル化したオーケストレーションのインスタンスを指します。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)です。  
+ このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
   
 ### <a name="to-view-instance-information-for-an-orchestration"></a>オーケストレーションのインスタンス情報を表示するには  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2.  コンソール ツリーで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、BizTalk グループを展開し、**アプリケーション**、し、インスタンス情報を表示するオーケストレーションを含むアプリケーションを展開します。  
+2. コンソール ツリーで、展開[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]展開し、BizTalk グループを展開し、**アプリケーション**、し、インスタンス情報を表示するオーケストレーションを含むアプリケーションを展開します。  
   
-3.  をクリックして**オーケストレーション**インスタンス情報を表示するオーケストレーションをクリックして**ビュー**、し、**インスタンス情報**です。  
+3. をクリックして**オーケストレーション**を選択、オーケストレーション インスタンスの情報を表示する] をクリックして**ビュー**、し、[**インスタンス情報**。  
   
-     ページ下部のクエリ結果パネルに、オーケストレーションのすべてのインスタンスが表示されます。  
+    ページ下部のクエリ結果パネルに、オーケストレーションのすべてのインスタンスが表示されます。  
   
-     オーケストレーションの別のインスタンス情報をクエリおよびビューを絞り込むを下にあるボックスをクリックして**値**、検索対象フィールドの表示、およびをクリックするインスタンスの種類を選択して**クエリの実行**です。 クエリの作成の詳細については、「関連項目」で検索に関するトピックを選んで参照してください。  
+    オーケストレーションのクエリおよびビューの別のインスタンス情報を絞り込む、下にあるボックスをクリックします。**値**、検索対象フィールドの表示、およびクリックするインスタンスの種類を選択します。**クエリの実行**します。 クエリの作成の詳細については、「関連項目」で検索に関するトピックを選んで参照してください。  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーションの管理](../core/managing-orchestrations.md)   

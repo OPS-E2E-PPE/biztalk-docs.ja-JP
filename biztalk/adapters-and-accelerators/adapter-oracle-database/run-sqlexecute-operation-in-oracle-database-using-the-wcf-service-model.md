@@ -1,5 +1,5 @@
 ---
-title: WCF サービス モデルを使用して Oracle データベースで SQLEXECUTE 操作を実行 |Microsoft ドキュメント
+title: WCF サービス モデルを使用して Oracle データベースで SQLEXECUTE 操作の実行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,31 +16,31 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6bda1c864e7a6eff442099d6caf1a2bba98e7f3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f2aedcd9874682ed71af774db72979c152836ab3
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22215978"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37004859"
 ---
 # <a name="run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle データベースで SQLEXECUTE 操作を実行します。
-[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle のデータベース成果物の操作の標準セットを表示します。 これらの操作を使用すると、Oracle 関数またはプロシージャの呼び出しなどの操作または基本的な SQL データ操作言語 (DML) 操作でテーブルを実行できます。 ただし、シナリオが考えられます、ビジネス ロジックによって操作を実行する必要があること、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]発生しません。 たとえばをする可能性があります。  
+[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle データベース アイテムに対する操作の標準セットを明らかになります。 これらの操作を使用して、Oracle 関数またはプロシージャの呼び出しなどで行うまたは基本的な SQL データ操作言語 (DML) 操作でテーブルを実行できます。 ただし、ある可能性があります、ビジネス ロジックによって操作を実行する必要があるシナリオを[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]記録されません。 たとえば、しをたい場合があります。  
   
--   表示されませんがデータベースのアイテムに対して操作を実行、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。 たとえば、CURVAL または Oracle シーケンスの NEXTVAL を取得します。  
+- 表示されませんがデータベースのアイテムに対して操作を実行、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。 たとえば、CURVAL または Oracle のシーケンスの NEXTVAL を取得します。  
   
--   データ定義言語の操作です。たとえば、テーブルを作成します。  
+- データ定義言語の操作を実行します。たとえば、テーブルを作成します。  
   
--   デザイン時に存在しませんでした、データベースの成果物の操作を実行します。たとえば、ビジネス ロジックによって作成される一時テーブル内のレコードを更新します。  
+- デザイン時に存在しませんでしたが、データベース成果物に対して操作を実行します。たとえば、ビジネス ロジックによって作成される一時テーブル内のレコードを更新します。  
   
--   操作よりもテーブルでより複雑な DML 操作を実行する、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サーフェス; たとえば、クエリを実行して、含む JOIN 句です。  
+- 操作よりもテーブルでより複雑な DML 操作を実行する、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サーフェス; JOIN 句を含むクエリを実行するなど。  
   
- これらのシナリオでは、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] SQLEXECUTE 操作を表示します。 SQLEXECUTE 操作を使用すると、Oracle データベースでパラメーター化された SQL ステートメントを実行できます。 SQLEXECUTE 操作には、セットごとに、同じ SQL ステートメントを実行できるようにするパラメーター セットで構成される入力パラメーター ブロックがサポートされています。 SQLEXECUTE 操作は、レコード セットの汎用的な SQL ステートメントの結果を返します。  
+  このようなシナリオでの[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]SQLEXECUTE 操作を表示します。 SQLEXECUTE 操作を使用すると、Oracle データベースでパラメーター化 SQL ステートメントを実行できます。 SQLEXECUTE 操作のセットごとに、同じ SQL ステートメントを実行するためのパラメーター セットで構成される、入力パラメーター ブロックをサポートします。 SQLEXECUTE 操作は、ジェネリック レコード セット内の SQL ステートメントの結果を返します。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックは、Oracle シーケンスを使用しての例では、TID_SEQ という名前です。 このシーケンスを生成するスクリプトは、SDK サンプルの値が提供されます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)です。  
+ このトピックで使用して Oracle シーケンスの例では、TID_SEQ という名前です。 このシーケンスを生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
- WCF サービス モデルには、専用の WCF クライアントが生成されます**SQLEXECUTEClient**、SQLEXECUTE 操作します。 次のコードは、 **SQLEXECUTEClient**と SQLEXECUTE 操作を呼び出すに呼び出すメソッドのシグネチャ。  
+ WCF サービス モデルは、専用の WCF クライアントを生成します**SQLEXECUTEClient**、SQLEXECUTE 操作。 次のコードは、 **SQLEXECUTEClient** SQLEXECUTE 操作を呼び出すために呼び出すメソッドのシグネチャとします。  
   
 ```  
 public partial class SQLEXECUTEClient : System.ServiceModel.ClientBase<SQLEXECUTE>, SQLEXECUTE {  
@@ -51,7 +51,7 @@ public partial class SQLEXECUTEClient : System.ServiceModel.ClientBase<SQLEXECUT
 }  
 ```  
   
- SQLEXECUTE 操作では、汎用のレコード セットを返します。 このレコード セットが含まれています値には (存在する場合)、SQLEXECUTE 操作が実行されるステートメントによって返されます。 SQLEXECUTE 操作 PARAMETERDATA オブジェクトの文字列で表される入力パラメーターのコレクションを含む各コレクションには、入力パラメーターのセットを渡すことができます。 次のコードは、PARAMETERDATA 一連の定義を示しています。  
+ SQLEXECUTE 操作には、汎用のレコード セットが返されます。 このレコード セットが含まれています、値には (ある場合) その SQLEXECUTE 操作の実行ステートメントによって返されます。 文字列として表される入力パラメーターのコレクションを含む各 PARAMETERDATA オブジェクトのコレクションで SQLEXECUTE 操作には、入力パラメーターのセットを渡すことができます。 次のコードでは、PARAMETERDATA セットの定義を示します。  
   
 ```  
 namespace microsoft.lobservices.oracledb._2007._03 {  
@@ -81,18 +81,18 @@ namespace microsoft.lobservices.oracledb._2007._03 {
 ```  
   
 ## <a name="invoking-the-sqlexecute-operation"></a>SQLEXECUTE 操作を呼び出す  
- WCF クライアントを使用して、SQLEXECUTE 操作を呼び出すには、次の手順を実行します。  
+ SQLEXECUTE 操作を呼び出すには、WCF クライアントを使用してするには、次の手順を実行します。  
   
-1.  生成、 **SQLEXECUTEClient**対象のテーブルまたはビューのクラスです。  
+1. 生成、 **SQLEXECUTEClient**対象のテーブルまたはビューのクラス。  
   
-    > [!IMPORTANT]
-    >  SQLEXECUTE 操作がルート ノードの下に表示される (**/**) で、**カテゴリを選択**ペインで、**アダプター サービス参照の追加** ダイアログ ボックス。  
+   > [!IMPORTANT]
+   >  SQLEXECUTE 操作は、ルート ノードの下に表示される (**/**) で、**カテゴリを選択**ペインで、**アダプター サービス参照の追加** ダイアログ ボックス。  
   
-2.  インスタンスを作成、 **SQLEXECUTEClient**クラス、および呼び出し、 **SQLEXECUTE** Oracle データベースで SQL ステートメントを実行するメソッド。  
+2. インスタンスを作成、 **SQLEXECUTEClient**クラス、および呼び出す、 **SQLEXECUTE** Oracle データベースで SQL ステートメントを実行するメソッド。  
   
- 詳細については、WCF クライアント クラスを作成し、に対して操作を呼び出す方法については、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[Oracle データベース アダプターで WCF サービス モデルの概要](../../adapters-and-accelerators/adapter-oracle-database/overview-of-the-wcf-service-model-with-the-oracle-database-adapter.md)です。  
+   WCF クライアント クラスを作成し、操作を呼び出す方法についての詳細、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[Oracle データベース アダプターで WCF サービス モデルの概要](../../adapters-and-accelerators/adapter-oracle-database/overview-of-the-wcf-service-model-with-the-oracle-database-adapter.md)します。  
   
- 次の例では、 **SQLEXECUTEClient**を次の SQL ステートメントを実行することによって Oracle シーケンス、TID_SEQ の次の値を取得する:`SELECT tid_seq.nextval id from DUAL`です。 出力がコンソールに書き込まれます。  
+   次の例では、 **SQLEXECUTEClient**次の SQL ステートメントを実行することによって、TID_SEQ、Oracle シーケンスの次の値を取得する:`SELECT tid_seq.nextval id from DUAL`します。 出力は、コンソールに書き込まれます。  
   
 ```  
 using (SQLEXECUTEClient sqlClient = new SQLEXECUTEClient("OracleDBBinding_SQLEXECUTE"))  

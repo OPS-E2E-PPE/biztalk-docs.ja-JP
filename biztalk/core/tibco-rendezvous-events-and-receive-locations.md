@@ -2,15 +2,15 @@
 redirect_url: /biztalk/core/creating-tibco-rendezvous-receive-handlers/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: b93e747cdc665fb5a8407ca2a3d052b880236378
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 8fc76fb212d343bcafa67c5ea76f62899847b40e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013041"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36984267"
 ---
 # <a name="tibco-rendezvous-events-and-receive-locations"></a>TIBCO Rendezvous イベントと受信場所
-TIBCO Rendezvous システムは、選択したサブジェクト名にメッセージを送信できます。 概念*イベント*の他の TIBCO Rendezvous プログラムでメッセージが生成されます。  
+TIBCO Rendezvous システムは、選択したサブジェクト名にメッセージを送信できます。 概念*イベント*は他の TIBCO Rendezvous プログラムによるメッセージの生成。  
   
  次の手順は、受信場所のライフ サイクルについて説明しています。  
   
@@ -26,7 +26,7 @@ TIBCO Rendezvous システムは、選択したサブジェクト名にメッセ
   
 > [!IMPORTANT]
 >  各受信場所には一意の名前が必要です。 2 つの受信場所が同じ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の展開で同じ名前を持つことはできません。  
-  
+> 
 > [!IMPORTANT]
 >  お勧め強力なアクセス制御リスト (ACL) に設定することで、受信場所のドロップ場所。 たとえば、ファイルの受信場所がメッセージを取得するディレクトリに強力な ACL を設定し、認証されたユーザーだけがこの場所にメッセージを格納できるようにする必要があります。  
   

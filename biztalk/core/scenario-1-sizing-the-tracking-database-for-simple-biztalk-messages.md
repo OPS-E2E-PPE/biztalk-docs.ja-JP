@@ -1,5 +1,5 @@
 ---
-title: 'シナリオ 1: 単純な BizTalk メッセージの追跡データベースのサイズ変更 |Microsoft ドキュメント'
+title: 'シナリオ 1: 単純な BizTalk メッセージの追跡データベースのサイズ調整 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,41 +14,41 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b9c99c99485e34f95c6f6a75b86170d73678518
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 13faa8f149c70d7647ff9f2dbf1d3718472f4a0b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269722"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37006723"
 ---
-# <a name="scenario-1-sizing-the-tracking-database--for-simple-biztalk-messages"></a>シナリオ 1: 単純な BizTalk メッセージの追跡データベースのサイズ変更
+# <a name="scenario-1-sizing-the-tracking-database--for-simple-biztalk-messages"></a>シナリオ 1: 単純な BizTalk メッセージの追跡データベースのサイズ調整
 次の図は、BizTalk Server が、メッセージを一切変換せずに単純に送受信するようすを示したものです。  
   
- ![単純な BizTalk Server メッセージ &#45;変換なし](../core/media/simple-bts-message.gif "Simple_BTS_Message")  
+ ![単純な BizTalk Server メッセージ&#45;変換なし](../core/media/simple-bts-message.gif "Simple_BTS_Message")  
   
  **単純な BizTalk Server メッセージ - 変換なし**  
   
  このシナリオについて前セクションの式を適用する前に、いくつかのファクトを収集しておく必要があります。 この例では、次のファクトを使用します。  
   
--   メッセージのサイズは、5 K です。  
+- メッセージのサイズは、5 K です。  
   
--   プロパティの昇格は行われません。  
+- プロパティの昇格は行われません。  
   
--   1 年に受け取るメッセージ数は、350 万件です。  
+- 1 年に受け取るメッセージ数は、350 万件です。  
   
--   追跡は、すべてのイベントに対して有効になっています。 このシナリオには、次の 4 つのイベントがあります。 イベントは次のとおりです。  
+- 追跡は、すべてのイベントに対して有効になっています。 このシナリオには、次の 4 つのイベントがあります。 イベントは次のとおりです。  
   
-    -   メッセージ M0 の受信  
+  -   メッセージ M0 の受信  
   
-    -   受信ポートからのメッセージ M1 の出力  
+  -   受信ポートからのメッセージ M1 の出力  
   
-    -   送信パイプラインによるメッセージ M1 の受信  
+  -   送信パイプラインによるメッセージ M1 の受信  
   
-    -   送信パイプラインからのメッセージ M2 の出力  
+  -   送信パイプラインからのメッセージ M2 の出力  
   
--   このシナリオでは、2 つの追加メッセージが作成されます。 メッセージ M0 は受信メッセージであり、BizTalk Server によって作成されるものではありません。 M1 は受信ポートからの出力メッセージです。M2 は送信ポートからの出力メッセージです。 M1 と M2 は BizTalk Server によって作成されます。  
+- このシナリオでは、2 つの追加メッセージが作成されます。 メッセージ M0 は受信メッセージであり、BizTalk Server によって作成されるものではありません。 M1 は受信ポートからの出力メッセージです。M2 は送信ポートからの出力メッセージです。 M1 と M2 は BizTalk Server によって作成されます。  
   
- この情報を式に適用すると、結果は次のようになります。  
+  この情報を式に適用すると、結果は次のようになります。  
   
 ```  
 [(5*252 bytes) + (10*182 bytes) + (0*5(40 bytes + 0) * 3,500,000]/1024/1024  
@@ -87,8 +87,8 @@ ms.locfileid: "22269722"
  2 つの式の結果を加算することにより、BizTalk 追跡データベースのサイズは、年間で約 54.48 GB ～ 54.88 GB 増加すると見積もることができます。  
   
 ## <a name="see-also"></a>参照  
- [追跡データベースのサイズをメッセージ変数を使用](../core/using-message-variables-to-size-the-tracking-database.md)   
- [メッセージ本文を追跡する追跡データベースのサイズ変更](../core/sizing-the-tracking-database-to-track-message-bodies.md)   
- [シナリオ 2: オーケストレーションでメッセージの追跡データベースのサイズ変更](../core/scenario-2-sizing-the-tracking-database-for-messages-in-orchestrations.md)   
- [シナリオ 4: すべてのメッセージの追跡データベースのサイズ変更](../core/scenario-4-sizing-the-tracking-database-for-all-messages.md)   
- [シナリオ 3: 同報リストに送信されるメッセージの追跡データベースのサイズ変更](../core/scenario-3-size-the-tracking-database-for-messages-sent-to-distribution-lists.md)
+ [追跡データベースのサイズにメッセージ変数を使用します。](../core/using-message-variables-to-size-the-tracking-database.md)   
+ [メッセージ本文を追跡する追跡データベースのサイズ調整](../core/sizing-the-tracking-database-to-track-message-bodies.md)   
+ [シナリオ 2: オーケストレーション内のメッセージの追跡データベースのサイズ調整](../core/scenario-2-sizing-the-tracking-database-for-messages-in-orchestrations.md)   
+ [シナリオ 4: すべてのメッセージの追跡データベースのサイズ調整](../core/scenario-4-sizing-the-tracking-database-for-all-messages.md)   
+ [シナリオ 3: 同報リストに送信されるメッセージの追跡データベースのサイズ調整](../core/scenario-3-size-the-tracking-database-for-messages-sent-to-distribution-lists.md)

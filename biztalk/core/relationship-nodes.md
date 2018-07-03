@@ -1,5 +1,5 @@
 ---
-title: リレーションシップ ノード |Microsoft ドキュメント
+title: リレーションシップ ノード |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,12 +20,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f670c62b4e883b124d849ab61396f6f5216e7182
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 866a2e1367279c6a53eeb738f4800a647a0cd468
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268250"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37001755"
 ---
 # <a name="relationship-nodes"></a>リレーションシップ ノード
 アクティビティ定義ファイルに複数のアクティビティが含まれている場合は常に、リレーションシップ フォルダーが使用されます。 フォルダー名は、関連するアクティビティと同じ名前になります。 リレーションシップ フォルダーの名前と関連するアクティビティのアクティビティ ID を照合し、データ項目の値を照合して、リンクを形成します。 リレーションシップは、それぞれ個別のノードを使用して定義します。  
@@ -33,11 +33,11 @@ ms.locfileid: "22268250"
 ## <a name="working-with-relationship-nodes"></a>リレーションシップ ノードの操作  
  アクティビティ間のデータ項目をリンクする一意のインスタンス識別子を指定するには、次の操作を行います。  
   
--   メインのオーケストレーションの ActivityId ノードには、データ項目をマップします。  
+- データ項目をメインのオーケストレーションの ActivityId ノードにマップします。  
   
--   上記手順と同じ名前のデータ項目を、関連するアクティビティのリレーションシップ ノードにドラッグ アンド ドロップします。 リレーションシップ ノードの名前は、メイン アクティビティのアクティビティ ノードと同じです。  
+- 上記手順と同じ名前のデータ項目を、関連するアクティビティのリレーションシップ ノードにドラッグ アンド ドロップします。 リレーションシップ ノードの名前は、メイン アクティビティのアクティビティ ノードと同じです。  
   
- たとえば、サンプル シナリオに、RefinanceOrchestration というオーケストレーションで表現される、関連はあるが独立したビジネス プロセスが存在するとします。 このオーケストレーションには、LoanRefinance アクティビティ ノード、Refinance ActivityID のほか、評価要求受信などのオーケストレーション図形が含まれています。 ただし、リレーションシップ ノードとリレーションシップ ID は、元の LoanProcess アクティビティへのリンクを示す LoanID になります。  
+  たとえば、サンプル シナリオに、RefinanceOrchestration というオーケストレーションで表現される、関連はあるが独立したビジネス プロセスが存在するとします。 このオーケストレーションには、LoanRefinance アクティビティ ノード、Refinance ActivityID のほか、評価要求受信などのオーケストレーション図形が含まれています。 ただし、リレーションシップ ノードとリレーションシップ ID は、元の LoanProcess アクティビティへのリンクを示す LoanID になります。  
   
 ## <a name="see-also"></a>参照  
  [TPE アクティビティ ビューのノード](../core/tpe-activity-view-nodes.md)

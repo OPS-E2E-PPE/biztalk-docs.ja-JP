@@ -1,5 +1,5 @@
 ---
-title: テーブルと、SQL アダプターを使用して大規模なデータ型を含むビューでの操作 |Microsoft ドキュメント
+title: テーブルと、SQL アダプターを使用して大規模なデータ型を含むビューに対する操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e1d6d2c52ce0772297bb2834c13f31a55d7b7a13
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d4f693b676c1e3c0675051e9d0faf685e8b9d8df
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223866"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37021190"
 ---
-# <a name="operations-on-tables-and-views-that-contain-large-data-types-using-the-sql-adapter"></a>テーブルと、SQL アダプターを使用して大規模なデータ型を含むビューでの操作
-[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]の次の SQL Server 大量のデータ型のサポートを提供します。  
+# <a name="operations-on-tables-and-views-that-contain-large-data-types-using-the-sql-adapter"></a>テーブルと、SQL アダプターを使用して大規模なデータ型を含むビューに対する操作
+[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]次の SQL Server の大量のデータ型のサポートを提供します。  
   
--   Varchar (max)  
+- Varchar (max)  
   
--   Nvarchar (max)  
+- Nvarchar (max)  
   
--   Varbinary (max)  
+- Varbinary (max)  
   
- SQL Server から大きなデータ値を読み取る、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]選択操作を公開します。  
+  SQL Server から大きなデータ値を読み取る、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]選択操作を公開します。  
   
- SQL Server に大きなデータ値を書き込む、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]型 varchar (max)、nvarchar (max) または varbinary (max) の列の名前を < column_name > がここでは、設定 < column_name > 操作を公開します。 < Column_name > の設定操作では、アダプター クライアントが SQL Server 2008 で FILESTREAM データを記述することもできます。  
+  SQL Server に大きなデータ値を書き込む、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] < column_name > がの型 varchar (max)、nvarchar (max) または varbinary (max) 列の名前は、< column_name > の設定操作を公開します。 < Column_name > の設定操作では、SQL Server 2008 で FILESTREAM データを書き込むアダプター クライアントもできます。  
   
 > [!NOTE]
->  設定 < column_name > 操作は、テーブルと列を含む上記 3 つの大規模なデータ型のいずれかのビューに対してのみ使用できます。  
+>  < Column_name > の設定操作では、これらのテーブルとビューの前に説明した 3 つの大規模なデータ型のいずれかの列を含むのみ使用できます。  
   
- 大規模なデータ型が含まれている SQL Server のテーブルおよびビューの操作の実行の詳細については、次を参照してください。[テーブルとビューを SQL アダプターを使用して大規模なデータ型を含む Operations](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)です。  
+ 大規模なデータ型を含む SQL Server でのテーブルとビューで操作を実行する方法の詳細については、次を参照してください。[テーブルと、SQL アダプターを使用して大規模なデータ型を含むビューで操作](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)します。  
   
 ## <a name="see-also"></a>参照  
  [アダプターを使用して SAP システムへの接続します。](../../adapters-and-accelerators/adapter-sap/connect-to-an-sap-system-using-the-adapter.md)

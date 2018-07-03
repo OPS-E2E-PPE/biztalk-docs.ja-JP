@@ -1,5 +1,5 @@
 ---
-title: メッセージ スキーマを ExecuteNonQuery、ExecuteReader、および ExecuteScalar Operations1 |Microsoft ドキュメント
+title: ExecuteNonQuery、ExecuteReader、ExecuteScalar Operations1 のメッセージ スキーマ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b42ed9075ad16708f835786fd1fd09b414d06ebb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7078fed7a007eca4dfb3eb5608eb6e688bb74a45
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216154"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37011971"
 ---
-# <a name="message-schemas-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作のメッセージ スキーマ
-[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] Oracle E-business Suite で、任意の SQL ステートメントまたは PL/SQL ブロックを実行するルート レベルで ExecuteNonQuery、ExecuteReader、および ExecuteScalar 送信操作を公開します。  
+# <a name="message-schemas-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のメッセージ スキーマ
+[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] Oracle E-business Suite で、任意の SQL ステートメントまたは PL/SQL ブロックを実行する、ルート レベルで ExecuteNonQuery、ExecuteReader、executescalar 送信操作を公開します。  
   
  詳細については。  
   
--   これらの操作を参照してください[ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)です。  
+- これらの操作を参照してください[ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)します。  
   
--   使用してこれらの操作を実行する、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]を参照してください[ExecuteReader、ExecuteScalar、または BizTalk Server を使用して SQL の ExecuteNonQuery Operations](../../adapters-and-accelerators/adapter-sql/executereader-executescalar-or-executenonquery-in-sql-server-using-biztalk.md)です。  
+- 使用してこれらの操作を実行する、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]を参照してください[ExecuteReader、executescalar、ExecuteNonQuery 操作では、BizTalk Server を使用して SQL](../../adapters-and-accelerators/adapter-sql/executereader-executescalar-or-executenonquery-in-sql-server-using-biztalk.md)します。  
   
-## <a name="message-structure-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作のメッセージの構造  
- これらの操作でメッセージが、要求-応答メッセージ交換パターンに従うし、次の表は、これらの要求と応答メッセージの構造を示しています。  
+## <a name="message-structure-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のメッセージの構造  
+ これらの操作でメッセージが、要求-応答メッセージ交換パターンに従うし、次の表は、これらの要求と応答メッセージの構造を示します。  
   
 > [!NOTE]
->  表の後に、エンティティの説明を参照してください。  
+>  表の後は、エンティティの説明を参照してください。  
   
-|操作|XML メッセージ|  
+|演算|XML メッセージ|  
 |---------------|-----------------|  
 |ExecuteNonQuery 要求|`<?xml version="1.0" encoding="utf-8" ?> <ExecuteNonQuery xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/GenericOperation/ ">   <Query>[PL/SQL block]</Query>   <OutputRefCursorNames>     <string>[stringvalue1]</string>     <string>[stringvalue2]</string>     …   </OutputRefCursorNames> </ExecuteNonQuery>`|  
 |ExecuteNonQuery 応答|`<?xml version="1.0" encoding="utf-8" ?> <ExecuteNonQueryResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/GenericOperation/ ">   <ExecuteNonQueryResult>[value]</ExecuteNonQueryResult>   <OutputRefCursors>     <DataSet>       <Any>[value]</Any>       <Any>[value]</Any>       …     </DataSet>   </OutputRefCursors> </ExecuteNonQueryResponse>`|  
@@ -43,16 +43,16 @@ ms.locfileid: "22216154"
 |ExecuteScalar 要求|`<?xml version="1.0" encoding="utf-8" ?> <ExecuteScalar xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/GenericOperation/ ">   <Query>[PL/SQL block]</Query> </ExecuteScalar>`|  
 |ExecuteScalar 応答|`<?xml version="1.0" encoding="utf-8" ?> <ExecuteScalarResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/GenericOperation/ ">   <ExecuteScalarResult>[value]</ExecuteScalarResult> </ExecuteScalarResponse>`|  
   
- エンティティの説明  
+ エンティティの説明:  
   
- [PL/SQL ブロック] を実行する PL/SQL ブロック全体を = です。  
+ [ブロックの PL/SQL] = PL/SQL ブロック全体を実行します。  
   
- [stringvalue1] 文字列の配列内の値を = です。  
+ [stringvalue1] = 文字列の配列内の値。  
   
-## <a name="message-action-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、および ExecuteScalar 操作のメッセージのアクション  
- 次の表は、ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作で使用されるメッセージのアクションを示します。  
+## <a name="message-action-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のメッセージのアクション  
+ ExecuteNonQuery、ExecuteReader、executescalar 操作によって使用されるメッセージのアクションを次の表に示します。  
   
-|操作|操作|  
+|演算|操作|  
 |---------------|------------|  
 |ExecuteNonQuery 要求|GenericOp/ExecuteNonQuery|  
 |ExecuteNonQuery 応答|GenericOp/ExecuteNonQuery/応答|  

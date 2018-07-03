@@ -1,6 +1,6 @@
 ---
-title: Siebel アダプタ サンプル |Microsoft ドキュメント
-description: Siebel の BizTalk Server、WCF サービス モデル、およびデータ プロバイダーで使用できる Siebel WCF アダプタ サンプル
+title: Siebel アダプターのサンプル |Microsoft Docs
+description: Siebel の BizTalk Server、WCF サービス モデル、およびデータ プロバイダーで使用できる WCF の Siebel アダプターのサンプル
 ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
@@ -13,54 +13,53 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aefe831b03da4f0199bacd775adc6948094cfa1b
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 608603ead6b708722a7fc51cd2d5e2849812b408
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015225"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37014827"
 ---
 # <a name="samples-for-the-siebel-adapter"></a>Siebel アダプターのサンプル
-サンプルを[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]に分類されます。  
-  
--   [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]サンプル  
-  
--   WCF サービス モデルのサンプル  
-  
--   [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]サンプル  
- 
-  
-サンプルはいただけます[BizTalk Adapter Pack 2010: Siebel アダプタ サンプル](https://www.microsoft.com/download/details.aspx?id=6492)です。 
+サンプルは[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]に分類されます。  
+
+- [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] サンプル  
+
+- WCF サービス モデルのサンプル  
+
+- [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] サンプル  
+
+
+サンプルについては、「 [BizTalk Adapter Pack 2010: Siebel アダプターのサンプル](https://www.microsoft.com/download/details.aspx?id=6492)します。 
 
 > [!NOTE]
 > [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]
-  
+
 サンプルを次に示します。
-  
+
 ## <a name="biztalk-server-samples"></a>BizTalk Server のサンプル  
-  
-|サンプルのディレクトリ名|Description|  
-|---------------------------|-----------------|  
-|BusinessService|Siebel ビジネス サービスを呼び出す方法を示します、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。|  
-|MVLDemo|Siebel を使用して複数値リンク (MVLs) を使用する方法を示します、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。|  
-|SiebelAccount|Siebel を使用して、アカウントのビジネス コンポーネントにレコードを挿入する方法を示します、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。|  
-|SiebelAdapterIntegrationObjects|使用して、統合オブジェクトと共に動作する Siebel のビジネス サービスを呼び出す方法を示します、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。|  
-|SiebelPicklist|Siebel ビジネス コンポーネントを使用して、候補リスト型の値を挿入する方法を示します、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。|  
-  
+
+|      サンプルのディレクトリ名      |                                                                                     説明                                                                                     |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         BusinessService         |                    Siebel を使用して、ビジネス サービスを呼び出す方法を示します、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。                     |
+|             MVLDemo             |                Siebel を使用して複数値リンク (MVLs) を使用する方法を示します、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。                 |
+|          SiebelAccount          |        Siebel を使用してアカウントのビジネス コンポーネントにレコードを挿入する方法を示します、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。        |
+| SiebelAdapterIntegrationObjects | これを使用して、統合オブジェクトでは、Siebel ビジネス サービスを呼び出す方法を示します、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。 |
+|         SiebelPicklist          |      使用して Siebel ビジネス コンポーネントの候補リストの型の値を挿入する方法を示します、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。      |
+
 ## <a name="wcf-service-model-samples"></a>WCF サービス モデルのサンプル 
-  
-|サンプルのディレクトリ名|Description|  
+
+|サンプルのディレクトリ名|説明|  
 |---------------------------|-----------------|  
-|AccountInsertDelete|Insert、Update、Delete を実行し、Siebel ビジネス コンポーネント操作のクエリを実行する方法を示します。 サンプルでは、アカウント ビジネス オブジェクトのアカウントのビジネス コンポーネントにレコードを挿入し、レコードを更新して、最後には削除されます。 各操作の前後に、クエリ操作は結果を確認するビジネス コンポーネントで実行されます。|  
-|ビジネス サービス|Siebel ビジネス サービス メソッド、TimeStamp を呼び出す方法について説明し、結果をコンソールに表示します。|  
-|MVL|Siebel ビジネス コンポーネントでの複数値リンクの関連付け、関連付けを解除、および子クエリ操作を使用して操作する方法を示します。 このサンプルでは、アカウントに関連付けられているすべての連絡先を表示します。 関連付けるし、アカウントの連絡先の関連付けを解除する方法も示しています。|  
-  
-## <a name="data-provider-for-siebel-sample"></a>Siebel サンプルのデータ プロバイダー  
-  
-|サンプルのディレクトリ名|Description|  
-|---------------------------|-----------------|  
-|siebel ado|使用する方法を示します、[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]です。|  
-  
- 
+|AccountInsertDelete|Insert、Update、Delete を実行し、Siebel ビジネス コンポーネントに対する操作を照会する方法を示します。 サンプルでは、アカウントのビジネス オブジェクトのアカウントのビジネス コンポーネントにレコードを挿入し、レコードを更新して、最後にそれを削除します。 各操作の前後にクエリ操作は結果を確認するビジネス コンポーネントに実行します。|  
+|ビジネス サービス|Siebel ビジネス サービス メソッド、タイムスタンプを呼び出す方法と結果をコンソールに表示します。|  
+|MVL|Siebel ビジネス コンポーネントの複数値リンクの関連付けや関連付け解除、子のクエリ操作を使用して操作する方法を示します。 このサンプルでは、アカウントに関連付けられているすべての連絡先が表示されます。 関連付けるし、アカウントからの連絡先の関連付けを解除する方法も示します。|  
+
+## <a name="data-provider-for-siebel-sample"></a>Siebel のサンプルのデータ プロバイダー  
+
+| サンプルのディレクトリ名 |                                                説明                                                 |
+|-----------------------|------------------------------------------------------------------------------------------------------------|
+|      siebel ado       | 使用する方法を示します、[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]します。 |
+
 ## <a name="see-also"></a>参照  
 [Siebel アプリケーションの開発](../../adapters-and-accelerators/adapter-siebel/develop-your-siebel-applications.md)

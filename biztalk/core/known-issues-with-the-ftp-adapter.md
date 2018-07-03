@@ -1,5 +1,5 @@
 ---
-title: FTP アダプターに関する既知の問題 |Microsoft ドキュメント
+title: FTP アダプターに関する既知の問題 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e13ce12e8514eaa2b5843ba81eff4f505e65d9e1
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: fcab9b35759d491c0732cfb2613a2fd4fe992a3e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26010091"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022488"
 ---
 # <a name="known-issues-with-the-ftp-adapter"></a>FTP アダプターに関する既知の問題
 ここでは、エラー回避に役立つ情報を記載します。  
@@ -39,14 +39,14 @@ ms.locfileid: "26010091"
 ##### <a name="resolution"></a>解決策  
  この動作を回避するには、以下のいずれかの方法を使用します。  
   
--   パブリック FTP フォルダーと同じハード ディスク上の一時フォルダーに書き込み、一時フォルダーの内容を定期的に FTP フォルダーに移動するように、ホスト アプリケーションを構成します。 移動操作がアトミックになるように、一時フォルダーを、パブリック FTP フォルダーと同じハード ディスク上に配置する必要があります。 アトミック操作とは、機能的にそれ以上分割できない操作のことです。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP アダプターを使用してデータをパブリック FTP フォルダーに書き込む場合、この操作を行うには、送信ポートの構成時に [FTP トランスポートのプロパティ] ダイアログ ボックスで "一時フォルダー" プロパティを指定します。 "一時フォルダー" プロパティを指定する場合は、このフォルダーがパブリック FTP フォルダーと同じ物理ディスク上にあることを確認します。  
+- パブリック FTP フォルダーと同じハード ディスク上の一時フォルダーに書き込み、一時フォルダーの内容を定期的に FTP フォルダーに移動するように、ホスト アプリケーションを構成します。 移動操作がアトミックになるように、一時フォルダーを、パブリック FTP フォルダーと同じハード ディスク上に配置する必要があります。 アトミック操作とは、機能的にそれ以上分割できない操作のことです。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP アダプターを使用してデータをパブリック FTP フォルダーに書き込む場合、この操作を行うには、送信ポートの構成時に [FTP トランスポートのプロパティ] ダイアログ ボックスで "一時フォルダー" プロパティを指定します。 "一時フォルダー" プロパティを指定する場合は、このフォルダーがパブリック FTP フォルダーと同じ物理ディスク上にあることを確認します。  
   
--   ホスト アプリケーションがデータを FTP サーバーに書き込まない場合、サービス時間帯に動作するように FTP 受信場所を構成します。 サービス時間帯は、受信場所のプロパティを構成する際に指定できます。  
+- ホスト アプリケーションがデータを FTP サーバーに書き込まない場合、サービス時間帯に動作するように FTP 受信場所を構成します。 サービス時間帯は、受信場所のプロパティを構成する際に指定できます。  
   
 #### <a name="ftp-adapter-does-not-support-revocation-checks-on-the-server-certificates"></a>FTP アダプターではサーバー証明書の失効の確認をサポートしていない  
   
 ##### <a name="problem"></a>問題  
- BizTalk Server で FTP アダプターは、SSL/TLS を使用した FTPS サーバーとの間のセキュリティで保護されたファイル転送をサポートするために強化されました。 証明書失効リスト (CRL) には失効し、無効になった証明書のリストが入っています。 FTP アダプターでは、サーバー証明書を認証するために CRL を参照しません。  
+ BizTalk Server で FTP アダプターが拡張され、SSL や TLS を使用して、FTPS サーバーとの間にセキュリティで保護されたファイル転送をサポートします。 証明書失効リスト (CRL) には失効し、無効になった証明書のリストが入っています。 FTP アダプターでは、サーバー証明書を認証するために CRL を参照しません。  
   
 ##### <a name="cause"></a>原因  
  仕様上、FTP アダプターではサーバー証明書を受け取る前に CRL を参照しません。  

@@ -1,5 +1,5 @@
 ---
-title: SQL アダプタのサンプルを実行している |Microsoft ドキュメント
+title: SQL アダプター サンプルを実行する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,32 +12,32 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf04c06a1ef96974912ce3affe278d5a98936325
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 505f60d287b82b5650855870329e9a18496d63f1
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294794"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979075"
 ---
-# <a name="running-the-sql-adapter-sample"></a>SQL アダプタのサンプルを実行しています。
-SQL アダプタ サンプルでは、行程入り口サンプルに用意されている、テスト クライアントの Windows フォーム アプリケーションを使用します。  
+# <a name="running-the-sql-adapter-sample"></a>SQL アダプター サンプルを実行します。
+SQL Adapter サンプルは、行程導入サンプルで提供される Windows フォームのテスト クライアント アプリケーションを使用します。  
   
- **SQL アダプタ サンプルを実行するには**  
+ **SQL アダプター サンプルを実行するには**  
   
-1.  GlobalBank.ESB アプリケーションが既に実行されていない場合は、Microsoft BizTalk 管理コンソールを使用して、開始します。  
+1. GlobalBank.ESB アプリケーションが実行されていない場合は、Microsoft の BizTalk 管理コンソールを使用して、開始します。  
   
-2.  Windows エクスプ ローラーでフォルダー \Source\Samples\Itinerary\Source\ESB を開きます。インストールした Itinerary.Test、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]サンプル、および Esb.Itinerary.Test.exe をという名前のアプリケーションを開始します。  
+2. Windows エクスプ ローラーでフォルダー \Source\Samples\Itinerary\Source\ESB を開きます。インストールした Itinerary.Test、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]サンプルをし、Esb.Itinerary.Test.exe という名前のアプリケーションを起動します。  
   
-3.  クリア、**を使用して WCF サービス**クライアント側の日程を使用できるようにするチェック ボックスをオンします。  
+3. クリア、 **WCF サービスを使用して**クライアント側の旅行プランを使用できるようにチェック ボックスをオンします。  
   
-4.  選択、 **2 つの方法サービス**オプション  
+4. 選択、**方法の 2 つのサービス**オプション  
   
-5.  クリックして、**ロード行程**ボタンをクリックし、フォルダー \Source\Samples\SqlAdapter \Itineraries にあるサンプルの日程のいずれかを選択します。  
+5. をクリックして、**ロード行程**ボタンをクリックし、フォルダー \Source\Samples\SqlAdapter \Itineraries 内にあるサンプルのスケジュールのいずれかを選択します。  
   
-6.  クリックして、 **LoadMessage**ボタンをクリックし、フォルダー \Source\Samples\SqlAdapter \Test で OrderDoc.xml サンプル メッセージを選択します。  
+6. をクリックして、 **LoadMessage**ボタンをクリックし、フォルダー \Source\Samples\SqlAdapter \Test で OrderDoc.xml サンプル メッセージを選択します。  
   
-7.  クリックして、 **SubmitRequest**行程入り口サービスに要求を送信するボタンをクリックします。  
+7. をクリックして、 **SubmitRequest**行程入口サービスに要求を送信するボタンをクリックします。  
   
-8.  1 つの行は GlobalBankESB データベースの Product テーブルに挿入することを確認します。  
+8. GlobalBankESB データベースの Product テーブル内 1 つの行が挿入されることを確認します。  
   
- SQL Adapter サンプルのしくみについては、次を参照してください。 [「SQL アダプタ サンプルの動作](../esb-toolkit/how-the-sql-adapter-sample-works.md)です。
+   SQL アダプター サンプルのしくみについては、次を参照してください。 [、SQL アダプター サンプルのしくみ](../esb-toolkit/how-the-sql-adapter-sample-works.md)します。

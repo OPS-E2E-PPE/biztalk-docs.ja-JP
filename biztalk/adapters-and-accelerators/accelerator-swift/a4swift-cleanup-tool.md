@@ -1,5 +1,5 @@
 ---
-title: A4SWIFT クリーンアップ ツール |Microsoft ドキュメント
+title: A4SWIFT クリーンアップ ツール |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,79 +14,79 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b2d0e251bf5e8a4169ff0d86cc6635944ca12e1
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: db6e9f6f6ec25762abc4416bc18f0955055b7e70
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25965600"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983619"
 ---
 # <a name="a4swift-cleanup-tool"></a>A4SWIFT クリーンアップ ツール
-[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]クリーンアップ ツールを持つサーバーを準備することができます、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]の新規インストール用にインストールされている[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]です。 ツールは、契約、部門、およびビジネス ルール エンジン (BRE) ポリシーなど、A4SWIFT の成果物を削除し、アセンブリの展開を解除します。 ツールを実行して、A4SWIFT の多くのアイテムを手動で削除されないようにすることができます、展開解除が参照されるアセンブリを他のアセンブリからの問題が解決します。  
+[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]クリーンアップ ツールでは、Microsoft のあるサーバーを準備できます。[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]の新規インストール用にインストールされている[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]します。 このツールは、A4SWIFT の成果物など、契約、部門、およびビジネス ルール エンジン (BRE) ポリシーを削除し、アセンブリが展開解除されます。 ツールを実行して、多くの A4SWIFT アイテムを手動で削除しないようにすることができ、他のアセンブリから参照する場合があるアセンブリを展開解除の問題が解決します。  
   
- クリーンアップ ツールを実行するときに、成果物を削除した後、コンピューター (既定)、またはアンインストール A4SWIFT にインストールされている A4SWIFT のままの選択肢がありません。 A4SWIFT をアンインストールする前に、ツールを実行する必要があります。  
+ クリーンアップ ツールを実行すると、アイテムを削除した後、コンピューター (既定)、またはアンインストール A4SWIFT にインストールされている A4SWIFT 保持するための選択肢があります。 A4SWIFT をアンインストールする前に、ツールを実行する必要があります。  
   
 > [!CAUTION]
->  運用環境では、A4SWIFT クリーンアップ ツールを使わないでください。 このツールはマルチ サーバー展開ではなく、単一サーバーの開発環境で使用するものです。  
+>  運用環境で、A4SWIFT クリーンアップ ツールを使わないでください。 ツールの目的は、マルチ サーバー展開ではなく、1 台のサーバーの開発環境で使用します。  
   
 > [!NOTE]
->  既定では、クリーンアップ ツール機能しません、他の言語が英語以外の。 クリーンアップ ツールは、ローカライズされたコンピューターで動作するように環境を変更することができます、ただし、します。 FormPublish ツールを実行して、t パラメーターとテンプレート ドキュメント ライブラリのローカライズされた文字列と**t:VorLagen**ドイツ語の環境でします。 クリーンアップ ツールは、ローカライズされた環境で実行できます。  
+>  既定では、クリーンアップ ツールはその他の言語が英語以外は機能しません。 ただし、クリーンアップ ツールは、ローカライズされたコンピューターで動作するよう環境を変更することができます。 FormPublish ツール、t パラメーターとテンプレート ドキュメント ライブラリのローカライズされた文字列を使用して実行**t:VorLagen**ドイツ語の環境にします。 ローカライズされた環境のクリーンアップ ツールを実行できます。  
   
- 次では true、クリーンアップ ツールを実行します。  
+ 次がありますクリーンアップ ツールを実行する場合は true。  
   
--   メンバーである必要がある必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理者グループ。  
+- メンバーがあります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理者グループ。  
   
--   [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]ツールを実行するサーバーにインストールする必要があります。  
+- [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] ツールを実行するサーバーにインストールする必要があります。  
   
--   MrsrConfiguration.dll、Shared.dll、および RuleEngineExtension.dll はツールを実行するサーバーに配置する必要があります。  
+- MrsrConfiguration.dll、Shared.dll、および RuleEngineExtension.dll は、ツールを実行するサーバーに配置する必要があります。  
   
-## <a name="what-the-cleanup-tool-does"></a>クリーンアップ ツールの実行内容  
- A4SWIFT のクリーンアップ ツールでは、次の操作を実行します。  
+## <a name="what-the-cleanup-tool-does"></a>クリーンアップ ツールでは、  
+ A4SWIFT クリーンアップ ツールは、次の操作を実行します。  
   
--   実行**BM が展開解除**ForActivities.xml および MRSRBAM.xml に対する  
+- 実行**BM が展開解除**ForActivities.xml と MRSRBAM.xml に対して  
   
--   存在する場合、FrrActivities_ConnectionStrings.xml と MRSRActivities_ConnectionStrings.xml ファイルを削除します。  
+- 存在する場合に、FrrActivities_ConnectionStrings.xml と MRSRActivities_ConnectionStrings.xml ファイルを削除します  
   
--   存在する場合は、A4SWIFT 2.1 を削除 (にサーバーをアップグレードした場合[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]が、セットアップがインストールされている A4SWIFT 2.1 を左) および A4SWIFT 2.1 フォルダーを削除  
+- 存在する場合は、A4SWIFT 2.1 を削除します (サーバーをアップグレードした場合[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]セットアップがインストールされている A4SWIFT 2.1 を左が) と A4SWIFT 2.1 フォルダーを削除します  
   
--   A4SWIFT のすべてのアセンブリを展開解除します。  
+- A4SWIFT のすべてのアセンブリを展開解除します。  
   
--   A4SWIFT の管理者グループと、A4SWIFT Users グループを削除します。  
+- A4SWIFT の管理者グループと A4SWIFT ユーザー グループを削除します。  
   
--   A4SWIFT データベースを削除します  
+- A4SWIFT データベースを削除します。  
   
--   A4SWIFT の仮想ディレクトリを削除します。  
+- A4SWIFT の仮想ディレクトリを削除します  
   
--   完全なサイレント アンインストールを実行[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]を削除し、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]フォルダー (選択した場合)  
+- 完全なサイレント アンインストールを実行[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]し、削除、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]フォルダー (選択) 場合  
   
- 成果物を削除し、アセンブリを展開解除、クリーンアップ ツールもは次のとおり  
+  成果物を削除し、アセンブリを展開解除、クリーンアップ ツールは次の処理。  
   
--   実行するためにインターネット インフォメーション サービス (IIS) 管理サービスを開始します  
+- 実行するためにインターネット インフォメーション サービス (IIS) 管理サービスを開始します。  
   
--   停止し、MSSQLSERVER、SQLSERVERAGENT、BizTalk、およびエンタープライズ シングル サインオン サービスを再起動  
+- 停止し、MSSQLSERVER、SQLSERVERAGENT、BizTalk、およびエンタープライズ シングル サインオン サービスを再起動し、  
   
-#### <a name="to-run-the-a4swift-cleanup-tool"></a>A4SWIFT のクリーンアップ ツールを実行するには  
+#### <a name="to-run-the-a4swift-cleanup-tool"></a>A4SWIFT クリーンアップ ツールを実行するには  
   
-1.  A4SWIFT のクリーンアップ ツールを実行する前に、A4SWIFT の既定のアセンブリのいずれかを参照する他のプロジェクトを展開解除します。  
+1. A4SWIFT クリーンアップ ツールを実行する前に、A4SWIFT の既定のアセンブリのいずれかを参照する任意のプロジェクトを展開解除します。  
   
-2.  コマンド プロンプトを開きに移動\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for swift \sdk\tools です。  
+2. コマンド プロンプトを開きに移動\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for swift \sdk\tools します。  
   
-3.  型**A4SWIFTCleanupTool.exe**キーを押します**ENTER**です。  
+3. 型**A4SWIFTCleanupTool.exe**しキーを押します**ENTER**します。  
   
-    > [!NOTE]
-    >  A4SWIFTCleanupTool.exe を最初に実行すると、ヘルプ画面を表示され、パラメーターを入力するように求められます。 このツールは、パラメーターを入力するまでは実行されません。  
+   > [!NOTE]
+   >  最初に A4SWIFTCleanupTool.exe を実行して、ツール、ヘルプ画面を表示します。 パラメーターを入力するように求められます。 このツールは、パラメーターを入力するまでは実行されません。  
   
-4.  ツールを実行するアクションに応じて、次のキーのいずれかを押すと**ENTER**:  
+4. ツールを実行するアクションに応じて、次のキーを押してし、キーを押します**ENTER**:  
   
-    -   **0**の (既定) が実行されるアクションがありません  
+   - **0**の (既定値) の取得操作はありません  
   
-    -   **1**仮想ディレクトリとレジストリ設定を含め、コンピューター上のすべてのローカル A4SWIFT リソースを削除するには  
+   - **1** 、仮想ディレクトリとレジストリ設定を含め、コンピューター上のすべてのローカル A4SWIFT リソースを削除するには  
   
-    -   **2**を Sharepoint Web フォルダー、FIN メッセージ テンプレート、BRE ポリシーとボキャブラリ、BizTalk アイテム、および A4SWIFT データベースを含む BizTalk Server グループ上のすべての共有 A4SWIFT リソースを削除するには  
+   - **2** Sharepoint Web フォルダー、FIN メッセージ テンプレート、BRE ポリシーとボキャブラリ、BizTalk アイテム、および A4SWIFT データベースなど、BizTalk Server グループ上のすべての共有 A4SWIFT リソースを削除するには  
   
-    -   **3**すべてのローカルと共有リソースを削除するには  
+   - **3**ローカルと共有リソースを削除するには  
   
-    -   **4**すべてのローカルと共有リソースを削除すると、アンインストール、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]製品です。  
+   - **4**をローカルと共有リソースを削除し、アンインストール、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]製品です。  
   
 ## <a name="see-also"></a>参照  
  [ツール](../../adapters-and-accelerators/accelerator-swift/tools.md)

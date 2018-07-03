@@ -1,5 +1,5 @@
 ---
-title: Siebel eBusiness Applications の BizTalk アダプターを理解する |Microsoft ドキュメント
+title: BizTalk Adapter for Siebel eBusiness Applications について |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,29 +17,29 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 51c3576df5f62a0350f85d79b603c9f1cbda8a60
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 788db9ba048141256cfaa3cc5017fa48bd6ec7de
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25962616"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36999235"
 ---
-# <a name="understand-biztalk-adapter-for-siebel-ebusiness-applications"></a>Siebel eBusiness Applications の BizTalk アダプターを理解します。
-[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]外部システムと対話するためにサービス指向のプログラムによるアクセスを有効にします。 アダプターでは、次の利点をクライアントに使用します。  
+# <a name="understand-biztalk-adapter-for-siebel-ebusiness-applications"></a>BizTalk Adapter for Siebel eBusiness Applications についてください。
+[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]外部システムと対話するためにサービス指向のプログラムによるアクセスを使用します。 アダプターは、次の利点をクライアントに提供します。  
   
--   **デザイン時のエクスペリエンスを一貫した**です。 アダプターは、参照、検索、および LOB アーティファクトのメタデータを取得するための一般的なとわかりやすいデザイン時のエクスペリエンスを提供します。  
+- **デザイン時エクスペリエンスの一貫性のある**します。 アダプターは、参照、検索、および LOB アーティファクトのメタデータを取得するための一般的な使いやすいもののデザイン時のエクスペリエンスを提供します。  
   
--   **さまざまなプログラミング オプション**です。 アダプターは、Windows Communication Foundation (WCF) などのプログラミング モデルの選択肢を提供するチャネル モデルを WCF サービス モデルでは、ADO.NET、Web サービス、または BizTalk は、モデルをサポートします。  
+- **プログラミングのオプションをさまざまな**します。 アダプターは、Windows Communication Foundation (WCF) などのプログラミング モデルの選択肢を提供するチャネル モデルでは、WCF サービス モデルでは、ADO.NET、Web サービス、または BizTalk には、モデルがサポートされています。  
   
--   **Lob の間でのエクスペリエンス、統一された**です。 使用して、WCF アダプターを標準化および[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]でき、したがって一貫した環境での任意の LOB システムへのアクセスを取得します。  
+- **Lob の間でのエクスペリエンス、統一された**します。 アダプターが、WCF を使用して標準と[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]し、そのため、LOB システムへのアクセスのエクスペリエンスの一貫性を提供します。  
   
- 前述のように、アダプターは、上に組み込ま、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]です。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]のさまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションで使用できる統合アダプターを構築するための共通の基本を提供します。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]が Windows Communication Foundation (WCF) チャネルとの統合アダプターを公開することにより、アダプター戦略の Microsoft サービスの戦略を揃えて配置します。 詳細については、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]を参照してください、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]ドキュメント。 と共に、ドキュメントがインストールされている、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]通常 \<インストール ドライブ\>: \Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents です。  
+  前述のように、アダプターは WCF LOB Adapter SDK の上に構築されます。 WCF LOB Adapter SDK は、さまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションが使用できる統合アダプターを構築するための共通の基盤を提供します。 WCF LOB Adapter SDK は、Windows Communication Foundation (WCF) チャネルとしての統合アダプターを公開することで、Microsoft のサービスを使用したアダプターの戦略を配置します。 WCF LOB Adapter SDK の詳細については、次を参照してください。 [WCF LOB Adapter SDK ドキュメント](../../adapters-and-accelerators/wcf-lob-adapter-sdk/microsoft-wcf-line-of-business-adapter-sdk-documentation.md)します。
   
- Siebel システムでの操作を行うには、Siebel システムによって公開されるビジネス サービスへのアクセスがアダプターのクライアントに必要です。 Siebel アプリケーションでは、ビジネス コンポーネントとビジネス オブジェクト データを公開します。 Siebel*ビジネス コンポーネント*を 1 つの構造に 1 つまたは複数のテーブルの列を関連付ける論理エンティティです。 Siebel*ビジネス オブジェクト*一連の相互に関連するビジネス コンポーネントの連携により、ビジネス モデルを実装します。 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]アダプターのクライアントは、Siebel ビジネス オブジェクトとビジネス コンポーネントを表示できます。  
+  Siebel システムの操作を実行するには、アダプター クライアントは、Siebel システムによって公開されるビジネス サービスにアクセスする必要があります。 Siebel アプリケーションでは、ビジネス コンポーネントおよびビジネス オブジェクトとしてデータを公開します。 Siebel*ビジネス コンポーネント*を 1 つまたは複数のテーブルの列を 1 つの構造に関連付ける論理エンティティです。 Siebel*ビジネス オブジェクト*一連の相互に関連するビジネス コンポーネントの連携により、ビジネス モデルを実装します。 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]、アダプター クライアントは、Siebel ビジネス オブジェクトおよびビジネス コンポーネントを表示できます。  
   
- [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]も含まれています、 [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])。 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] ADO.NET インターフェイスを拡張することによって、Siebel システムへの ADO インターフェイスを提供します。  
+  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]も含まれています、 [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])。 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] ADO.NET インターフェイスを拡張することで Siebel システムへの ADO インターフェイスを提供します。  
   
- このセクションでの機能について説明します、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]と[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]です。  
+  このセクションには、機能がについて説明します、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] 、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

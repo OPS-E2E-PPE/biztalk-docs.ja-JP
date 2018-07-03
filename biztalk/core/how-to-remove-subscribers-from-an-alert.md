@@ -1,5 +1,5 @@
 ---
-title: サブスクライバーを警告から削除する方法 |Microsoft ドキュメント
+title: サブスクライバーを警告から削除する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,28 +16,28 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9122b74ecc82e32230d09e2d0e01b553aaa2bd06
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 74c896eea581b50782e282a9ff5a08db04e8a4e6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25969992"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37021014"
 ---
 # <a name="how-to-remove-subscribers-from-an-alert"></a>サブスクライバーを警告から削除する方法
-管理者を使用して、**削除サブスクリプション**サブスクライバーとして、指定したユーザーを警告から削除するコマンド。  
+管理者を使用して、**削除サブスクリプション**アラートから、サブスクライバーとして、指定されたユーザーを削除するコマンド。  
   
 ### <a name="to-remove-subscribers-from-an-alert"></a>サブスクライバーを警告から削除するには  
   
-1.  次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
+2. [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
   
-3.  型**bm 削除-サブスクリプション-ビュー:\<ビュー名\>-警告:\<警告名\>-accountname:\<アカウント名\>** です。  
+3. 型**bm 削除-サブスクリプション-ビュー:\<ビュー名\>-警告:\<アラート名\>-accountname:\<アカウント名\>** します。  
   
-    > [!NOTE]
-    >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
+   > [!NOTE]
+   >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-4.  **Enter**キーを押します。  
+4. **Enter**キーを押します。  
   
 ## <a name="see-also"></a>参照  
  [BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md)   

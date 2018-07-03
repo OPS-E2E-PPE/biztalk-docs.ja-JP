@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server のメッセージ コンテキスト プロパティ (送信ハンドラー) |Microsoft ドキュメント
+title: BizTalk Server メッセージ コンテキスト プロパティ (送信ハンドラー) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0504e13115229f1325938e8ca48acc17fa5bc1d
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: cfd3dca7c807ef48c82d46743e749e19a40001bc
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013841"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37016301"
 ---
-# <a name="biztalk-server-message-context-properties-send-handlers"></a>BizTalk Server のメッセージ コンテキスト プロパティ (送信ハンドラー)
+# <a name="biztalk-server-message-context-properties-send-handlers"></a>BizTalk Server メッセージ コンテキスト プロパティ (送信ハンドラー)
 BizTalk Server オーケストレーションの実行時には、メッセージ ペイロードに加えて、メッセージに含まれる補足情報にもアクセスできる必要があります。  
   
 ## <a name="tibco-rv-message-information-promoted-as-message-context-properties"></a>メッセージ コンテキストのプロパティとして昇格される TIBCO RV メッセージ情報  
@@ -30,22 +30,22 @@ BizTalk Server オーケストレーションの実行時には、メッセー�
 |返信サブジェクト|string|はい|必要に応じて、オーケストレーションにより返信メッセージのサブジェクトが指定されます。 既定値は Null です。|  
   
 ## <a name="getting-a-tibco-reply"></a>TIBCO の返信の取得  
- **質問:** TIBCO Rendezvous の読み取りおよび応答の送信サブジェクトとして使用できるように、オーケストレーション内の返信サブジェクトを操作については、BizTalk アダプターにはどのしますか? BizTalk Adapter for TIBCO Rendezvous では Rendezvous からの受信メッセージのメッセージ コンテキストにどのようにアクセスしますか。  
+ **質問:** 方法は、BizTalk アダプターは TIBCO Rendezvous を読み取り、応答の送信サブジェクトとして使用できるように、オーケストレーション内で返信サブジェクトを操作してでしょうか。 BizTalk Adapter for TIBCO Rendezvous では Rendezvous からの受信メッセージのメッセージ コンテキストにどのようにアクセスしますか。  
   
- **回答:** 返信サブジェクトが、受信メッセージのコンテキストで値が入力され、オーケストレーションで読み取ることができます。 最終的にオーケストレーションで返信を作成する場合は、その値を使用して返信メッセージの送信サブジェクトを設定できます。  
+ **回答:** 返信サブジェクトは、着信メッセージのコンテキストで設定し、オーケストレーションで読み取ることができます。 最終的にオーケストレーションで返信を作成する場合は、その値を使用して返信メッセージの送信サブジェクトを設定できます。  
   
-1.  BizTalk Server プロジェクトで、<install_directory>\TibcoRV\bin\Microsoft.BizTalk.Adapters.TibRV.Properties.dll への参照を追加します。  
+1. BizTalk Server プロジェクトで、<install_directory>\TibcoRV\bin\Microsoft.BizTalk.Adapters.TibRV.Properties.dll への参照を追加します。  
   
-2.  オーケストレーション (受信 Rendezvous メッセージを渡す受信図形と、返信を送信する送信図形の間の場所) 内で、作成した返信に次の例のような処理を実行するメッセージの構築/割り当て図形 (または式図形) を追加します。  
+2. オーケストレーション (受信 Rendezvous メッセージを渡す受信図形と、返信を送信する送信図形の間の場所) 内で、作成した返信に次の例のような処理を実行するメッセージの構築/割り当て図形 (または式図形) を追加します。  
   
-    ```  
-    OutgoingMsg(Rendezvous.SendSubject) = IncomingMsg  
-    (Rendezvous.ReplySubject);  
-    ```  
-## <a name="management-assembly"></a>アセンブリの管理
-TIBCO Rendezvous はメタデータ リポジトリを備えておらず、Microsoft BizTalk Adapter for TIBCO Rendezvous 管理アセンブリは参照機能またはスキーマ生成機能を備えていません。 したがって、ユーザーがスキーマを BizTalk Server に提供する必要があります。 詳細については、次を参照してください。[インストール、スキーマ、および制限事項](../core/installing-biztalk-adapter-for-tibco-rendezvous.md)です。
+   ```  
+   OutgoingMsg(Rendezvous.SendSubject) = IncomingMsg  
+   (Rendezvous.ReplySubject);  
+   ```  
+   ## <a name="management-assembly"></a>アセンブリの管理
+   TIBCO Rendezvous はメタデータ リポジトリを備えておらず、Microsoft BizTalk Adapter for TIBCO Rendezvous 管理アセンブリは参照機能またはスキーマ生成機能を備えていません。 したがって、ユーザーがスキーマを BizTalk Server に提供する必要があります。 詳細については、次を参照してください。[インストール、スキーマ、および制限事項](../core/installing-biztalk-adapter-for-tibco-rendezvous.md)します。
   
- BizTalk Adapter for TIBCO Rendezvous には定義済みの型のスキーマが含まれます。 アダプターは、一部の特定のデータ型 (配列) のメッセージを生成するときに、これらの型を使用します。
+   BizTalk Adapter for TIBCO Rendezvous には定義済みの型のスキーマが含まれます。 アダプターは、一部の特定のデータ型 (配列) のメッセージを生成するときに、これらの型を使用します。
 
   
 ## <a name="see-also"></a>参照  

@@ -1,5 +1,5 @@
 ---
-title: インスタンスの検証 |Microsoft ドキュメント
+title: インスタンスの検証 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3db1903030bbde96f2587ac14b5d168345b31823
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f4e4901d11bda5fb6633c00dd72899ee1b72db4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257378"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012875"
 ---
 # <a name="instance-validation"></a>インスタンスの検証
-BizTalk エディターを起動、 **IInstanceValidator.ValidateInstance**次の条件が満たされたときに、拡張機能のメソッド。  
+BizTalk エディターを起動、 **IInstanceValidator.ValidateInstance**メソッドの次の条件が満たされたときに、拡張機能。  
   
--   使用して、拡張機能が設定の標準として、**標準**のプロパティ、**スキーマ**ノード。  
+- 使用して、拡張機能が設定の標準として、**標準**のプロパティ、**スキーマ**ノード。  
   
--   **プロパティ ページ** ダイアログ ボックスが、スキーマに関連付けられている、**インスタンスの出力の種類の生成**プロパティに設定されている**ネイティブです。**  
+- **プロパティ ページ** ダイアログ ボックスが、スキーマに関連付けられた、**インスタンスの出力の種類の生成**プロパティに設定されて**ネイティブです。**  
   
--   **プロパティ ページ** ダイアログ ボックスが、スキーマに関連付けられている、**入力インスタンス ファイル名**プロパティが検証に使用するインスタンス メッセージを含むファイルの名前に設定します。  
+- **プロパティ ページ** ダイアログ ボックスが、スキーマに関連付けられた、**入力インスタンス ファイル名**プロパティが検証するインスタンス メッセージを含むファイルの名前に設定します。  
   
- 指定されたファイル、**入力インスタンス ファイル名**プロパティにパラメーターとして渡される、 **IInstanceValidator.ValidateInstance**メソッドです。  
+  指定されたファイル、**入力インスタンス ファイル名**プロパティがパラメーターとして渡される、 **IInstanceValidator.ValidateInstance**メソッド。  
   
- 配列としてエラーが発生した場合のエラー メッセージが返されます**IValidationInfo**オブジェクト、およびに表示される、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]タスク一覧ウィンドウ。  
+  エラーが発生したエラー メッセージがの配列として返されます**IValidationInfo**オブジェクトとに表示される、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]タスク一覧 ウィンドウ。  
   
 > [!NOTE]
->  ファイルが渡された場合、スキーマにパターン ステートメントが含まれています、 **ValidateInstance**メソッドは、対応するを使用して生成された**インスタンスの生成**コマンドをインスタンス メッセージを渡すことがありますいません。検証します。  
+>  スキーマにパターン ステートメントが含まれていて、ファイルに渡されます、 **ValidateInstance**メソッドは、対応するを使用して生成された**インスタンスの生成**コマンドをインスタンス メッセージに渡すことができません検証します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk エディターの拡張](../core/extending-biztalk-editor.md)

@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server 2016 へのアップグレード |Microsoft ドキュメント
+title: BizTalk Server 2016 へのアップグレード |Microsoft Docs
 ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 06/08/2017
@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39b5b6b6da7d97d3c763e5f45f215aa03d13c77c
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: bbd6debef5517e95295be0b7680244ee433b6e2f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "25976376"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36976579"
 ---
 # <a name="upgrade-to-biztalk-server-2016"></a>BizTalk Server 2016 へのアップグレード
 [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)] または BizTalk Server 2013 から [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] へのアップグレード。
@@ -56,7 +56,7 @@ ms.locfileid: "25976376"
 
 次の表は、[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] にアップグレードできる、サポートされる SQL Server のバージョンの一覧です。 SQL Server は、BizTalk Server で使用されるデータベースをホストします。 「可」は、その SQL Server バージョンを使用している BizTalk Server がアップグレードできることを意味しています。 「いえ」は、その SQL Server バージョンを使用している BizTalk Server がアップグレードできないことを意味しています。 「不可」の場合、BizTalk 環境をサポートされる SQL Server バージョンで再作成する必要があります。 サポートされる SQL Server のバージョンの一覧については、「[BizTalk Server 2016 のハードウェアとソフトウェアの要件](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)」をご覧ください。 
 
-> [!TIP] 
+> [!TIP]
 > お使いの SQL Server のバージョンがサポートされていない場合、または次の一覧にない場合は、SQL Server のアップグレード マニュアルを確認してください。 SQL のアップグレードでは、BizTalk がサポートするものより多くのバージョンがカバーされています。 たとえば、SQL Server 2008 を使っている場合は、SQL Server 2016 にアップグレードすることができます。 その後、[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] にアップグレードできます。 「[SQL Server 2016 へのアップグレード](https://msdn.microsoft.com/library/bb677622.aspx)」および「[SQL Server 2014 へのアップグレード](https://msdn.microsoft.com/library/bb677622(v=sql.120).aspx)」では、アップグレードできる SQL Server のバージョンの一覧が示されています。
 
 | SQL Server | BizTalk Server 2013 R2 |BizTalk Server 2013 |
@@ -72,9 +72,9 @@ ms.locfileid: "25976376"
 | BizTalk Server 2013 R2/2013 | BizTalk Server 2016 Evaluation Edition | BizTalk Server 2016 Branch Edition | BizTalk Server 2016 Developer Edition | BizTalk Server 2016 Standard Edition | BizTalk Server 2016 Enterprise Edition |
 | --- | --- | --- | --- | --- | --- |
 | Evaluation | いいえ | いいえ | いいえ | いいえ | はい | 
-| 分岐 | いいえ | 可 | いいえ | いいえ | はい | 
-| Developer | いいえ | いいえ | 可 | いいえ | はい | 
-| Standard | いいえ | いいえ | いいえ | [ユーザー アカウント制御] | はい | 
+| 分岐 | いいえ | はい | いいえ | いいえ | はい | 
+| Developer | いいえ | いいえ | はい | いいえ | はい | 
+| Standard | いいえ | いいえ | いいえ | はい | はい | 
 | Enterprise | いいえ | いいえ | いいえ | いいえ | はい | 
 
 ## <a name="before-the-upgrade--what-you-need-to-know"></a>アップグレードする前に知っておくべきこと
@@ -100,14 +100,14 @@ ms.locfileid: "25976376"
 
     1. サーバー マネージャーで、**[ツール]** を選択して **[セキュリティが強化された Windows ファイアウォール]** を開きます。
     2. **[受信の規則]** を選択します。
-    3. **受信の規則**を右クリックして**分散トランザクション コーディネーター** * (必要に応じて)、し**規則の有効化**です。
+    3. **受信の規則**、右クリックして**分散トランザクション コーディネーター** * (必要に応じて)、し**規則の有効化**します。
     4.  [セキュリティが強化された Windows ファイアウォール] で、**[受信の規則]** を選択します。
-    5.  **送信の規則**を右クリックして**分散トランザクション コーディネーター** * (必要に応じて)、し**規則の有効化**です。
-    
+    5.  **送信の規則**、右クリックして**分散トランザクション コーディネーター** * (必要に応じて)、し**規則の有効化**します。
+
 - **SharePoint**: SharePoint Services に接続するには、Client Side Object Model (CSOM) を使用します。 Server Side Object Model (SSOM) (Web サービス) は、[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] では削除されました。
 
     CSOM をサポートしていない SharePoint のバージョンを使用している場合は、サポートされる SharePoint バージョンにアップグレードできる可能性があります。
-    
+
     [SharePoint 2016 へのアップグレード](https://technet.microsoft.com/library/cc303420(v=office.16).aspx)  
     [SharePoint 2013 へのアップグレード](https://technet.microsoft.com/library/cc303420(v=office.15).aspx)
 
@@ -129,12 +129,12 @@ BAM 警告を使用するには、SQL Server Database Mail が必要です。 SQ
 
 1. コマンド プロンプトを開き、`\Program Files (x86)\Microsoft BizTalk Server <your version>\Tracking` に移動します。
 2. コマンド プロンプトで定義ファイルを作成します。 `bm.exe get-defxml -FileName:YourBAMDefinition.xml`
-4. [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]/2013 の構成で、BAM 警告の構成を解除します。
-5. SQL Server 2016 または SQL Server 2014 SP1 にアップグレードします。
-6. SQL Server Database Mail を構成します。
-7. [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] にアップグレードする。
-8. [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] の構成で、BAM 警告を構成します。
-9. コマンド プロンプトで、保存した定義ファイルを展開します。 `bm.exe update-all -DefinitionFile:YourBAMDefinition.xml`
+3. [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]/2013 の構成で、BAM 警告の構成を解除します。
+4. SQL Server 2016 または SQL Server 2014 SP1 にアップグレードします。
+5. SQL Server Database Mail を構成します。
+6. [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] にアップグレードする。
+7. [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] の構成で、BAM 警告を構成します。
+8. コマンド プロンプトで、保存した定義ファイルを展開します。 `bm.exe update-all -DefinitionFile:YourBAMDefinition.xml`
 
 > [!IMPORTANT]
 > この手順の順番に従わないか、定義ファイルを作成しない場合、BizTalk Server のアップグレード後に定義ファイルを再作成する必要があります。
@@ -162,23 +162,23 @@ BAM 警告を使用するには、SQL Server Database Mail が必要です。 SQ
 
 - **LiveData ブック**: BizTalk Server 2013 R2/2013 で BAM を使用している場合は、アップグレード後に手動で LiveData ブックを再生成する必要があります。 LiveData ブックを再生成するには:
 
-    1. 次のコマンドを実行して、BAM 定義を取得します。  
-    `BM get-defxml MyDef.xml`
-    2. Microsoft Office Excel を起動し、BAM アドインを選択して、PivotTable レポートを再作成します。ステップ 1 で作成した *MyDef.xml* ファイルをインポートし、PivotTable レポートを再作成します。 新しい BAM ブックを *MyNewBook.xls* という名前で保存します。
-    3. `<BAMDefinition>\<Extension>\<OWC>\<PivotTableView>\<PivotTable>\<PivotView>\<Label>` パスの `<Caption>` の下にある *MyDef.xml* でピボットテーブル名を探して、ピボットテーブル レポートの名前を変更します。 次の名前を使用して、*MyNewBook.xls* のピボットテーブル レポートの名前を変更します。
-    4. 次のコマンドを実行して、LiveData ブックを再生成します。  
-    `BM regenerate-livedataworkbook MyNewBook.xls`
+  1. 次のコマンドを実行して、BAM 定義を取得します。  
+     `BM get-defxml MyDef.xml`
+  2. Microsoft Office Excel を起動し、BAM アドインを選択して、PivotTable レポートを再作成します。ステップ 1 で作成した *MyDef.xml* ファイルをインポートし、PivotTable レポートを再作成します。 新しい BAM ブックを *MyNewBook.xls* という名前で保存します。
+  3. `<BAMDefinition>\<Extension>\<OWC>\<PivotTableView>\<PivotTable>\<PivotView>\<Label>` パスの `<Caption>` の下にある *MyDef.xml* でピボットテーブル名を探して、ピボットテーブル レポートの名前を変更します。 次の名前を使用して、*MyNewBook.xls* のピボットテーブル レポートの名前を変更します。
+  4. 次のコマンドを実行して、LiveData ブックを再生成します。  
+     `BM regenerate-livedataworkbook MyNewBook.xls`
 
-    > [!NOTE]
-    > 再生成された LiveData ブックでは、元の LiveData ブックにある Excel アイテム (チャートなど) は再作成されません。 手動でアイテムを再作成します。
+     > [!NOTE]
+     > 再生成された LiveData ブックでは、元の LiveData ブックにある Excel アイテム (チャートなど) は再作成されません。 手動でアイテムを再作成します。
 
 
 ### <a name="enterprise-single-sign-on-esso"></a>エンタープライズ シングル サインオン (ESSO)
 
-| Scenario | 詳細 |
-| --- | --- |
+|                            シナリオ                            |                                                                                                                                                                                                                                                                                                                                          詳細                                                                                                                                                                                                                                                                                                                                          |
+|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 以前のバージョンの Enterprise Single Sign-on からのアップグレード | BizTalk Server には、更新されたバージョンの Enterprise Single Sign-On (ESSO) が含まれています。 このリリースを以前のバージョンの BizTalk がインストールされているコンピューターにインストールする場合は、ESSO はセットアップ中に自動的に更新されます。 アップグレード前に次の手順を実行することをお勧めします。 <br/><br/> 1.現在のバージョンのシングル サインオン データベース (SSODB) が安全な場所にバックアップされていることを確認します。 <br/>2.現在のマスター シークレット キーが安全な場所にバックアップされていることを確認します。<br/>3.マスター シークレットのパスワードを確認します。<br/><br/>1 つの BizTalk グループ内のすべてのサーバーを同じリリースにアップグレードします。 この要件は、スタンドアロンのマスター シークレット サーバーの場合でも同じです。 |
-| エンタープライズ シングル サインオン スタンドアロン セットアップを使用したアップグレード | 次の手順に従って、専用のマスター シークレット サーバーなどの、スタンドアロンのエンタープライズ シングル サインオンがインストールされているコンピューター上でアップグレードを実行します。<br/><br/>1.現在のマスター シークレット キーが安全な場所にバックアップされていることを確認します。<br/>2.現在のバージョンの SSODB が安全な場所にバックアップされていることを確認します。<br/>3.[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] インストール メディアから ESSO の **Setup.exe** を実行します。 既定のインストール フォルダーは `\Platform\SSO` です。<br/>4.**[自動実行]** ダイアログ ボックスで、**[Microsoft Enterprise Single Sign-On]** を選択します。<br/>5.[概要] ダイアログ ボックスで、**[アップグレード]** を選択します。 |
+|  エンタープライズ シングル サインオン スタンドアロン セットアップを使用したアップグレード  |             次の手順に従って、専用のマスター シークレット サーバーなどの、スタンドアロンのエンタープライズ シングル サインオンがインストールされているコンピューター上でアップグレードを実行します。<br/><br/>1.現在のマスター シークレット キーが安全な場所にバックアップされていることを確認します。<br/>2.現在のバージョンの SSODB が安全な場所にバックアップされていることを確認します。<br/>3.[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] インストール メディアから ESSO の **Setup.exe** を実行します。 既定のインストール フォルダーは `\Platform\SSO` です。<br/>4.**[自動実行]** ダイアログ ボックスで、**[Microsoft Enterprise Single Sign-On]** を選択します。<br/>5.[概要] ダイアログ ボックスで、**[アップグレード]** を選択します。              |
 
 ### <a name="multicomputer-environment"></a>複数コンピューター環境
 複数コンピューターの環境では、SSO マスター シークレット サーバーのコンピューターをアップグレードします。 その後、その他の BizTalk Server コンピューターをアップグレードします。 グループ内の複数の BizTalk コンピュータを同時にアップグレードすることはできません。 以下の手順で、一度に 1 台ずつコンピュータをアップグレードします:
@@ -219,17 +219,17 @@ BAM 警告を使用するには、SQL Server Database Mail が必要です。 SQ
 
 ## <a name="prepare-your-computer-for-upgrade"></a>アップグレードのためのコンピューターの準備
 
-| タスク | Info |
-| --- | --- | 
-| 重要な Windows 更新プログラムをインストールする | [プログラム] メニューから [Windows Update] を選択します。 コンピューターの再起動が必要な場合があります。 |
-| BAM 警告の定義を保存する | 現在、既存の BAM 警告の定義と SQL Server Notification Services を使用している場合にのみ適用されます。 BM.exe を使用して定義ファイルを作成し、[!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]/2013 の構成で BAM 警告の構成を解除します。<br/><br/>**アップグレードの前に** (このトピックでは) 具体的な手順を列記します。<br/><br/>それ以外の場合、アップグレード後に BAM 警告の定義を再生成します。 |
-| SQL Server をアップグレードする | サポートされるバージョンの SQL Server にアップグレードします。 次のチュートリアルを参照してください。<br/><br/>[BizTalk Server 2016 のハードウェア/ソフトウェア要件](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)<br/>[SQL Server 2016 へのアップグレード](https://msdn.microsoft.com/library/bb677622.aspx)<br/>[SQL Server 2014 へのアップグレード](https://msdn.microsoft.com/library/bb677622(v=sql.120).aspx) |
-| SQL Server クライアント ツールをアップグレードする | 複数コンピューター環境では、管理ツールを別のコンピューターにインストールすることができます。 管理ツールを含む、SQL Server 管理のクライアント ツールをアップグレードします。 |
-| Visual Studio のインストール | サポートされるバージョンについては、「[BizTalk Server 2016 のハードウェアとソフトウェアの要件](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)」をご覧ください。 異なる Visual Studo のバージョンをサイド バイ サイドでインストールできます。 [Visual Studio 2015](https://msdn.microsoft.com/library/ms246609(v=vs.140).aspx) および [Visual Studio 2013](https://msdn.microsoft.com/library/ms246609(v=vs.120).aspx) を参照してください。 |
-| Office をインストールする | 「[異なるバージョンの Office を同じ PC にインストールして使う](https://support.office.com/article/Install-and-use-different-versions-of-Office-on-the-same-PC-6EBB44CE-18A3-43F9-A187-B78C513788BF)」をご覧ください。 サポートされる Office のバージョンの一覧については、「[BizTalk Server 2016 のハードウェアとソフトウェアの要件](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)」をご覧ください。 |
-| BizTalk Services と Windows サービスを停止する | - BizTalk Services BizTalk グループ: <*アプリケーション名*><br/>- BizTalk ベース EDI サービス<br/>- ルール エンジン更新サービス<br/>- World Wide Web Publishing サービス<br/><br/>**注**<br/>BizTalk Server のアクセラレータがインストールされている場合は、HL7 ログ サービスを停止します。 |
-| データベースをバックアップする | - Master<br/>- MSDB<br/>- BAMArchive<br/>- BAMPrimaryImport<br/>- BAMStarSchema<br/>- BizTalkDTADb<br/>- BizTalkEDIDb<br/>- BizTalkHwsDb<br/>- BizTalkMgmtDb<br/>- BizTalkMsgBoxDb<br/>- BizTalkRuleEngineDb<br/>- TPM<br/>- BizTalkAnalysisDb<br/>- BAMAnalysis<br/><br/>[SQL Server 2014: バックアップの概要](https://technet.microsoft.com/library/ms175477(v=sql.120).aspx)<br/>[SQL Server 2012: バックアップの概要](https://technet.microsoft.com/library/ms175477(v=sql.110).aspx) |
-| SQL Server データベース メールを構成する | BAM 警告の定義と SQL Server Notification Services を使用している場合にのみ適用されます。<br/><br/>**アップグレードの前に** (このトピックでは) 具体的な手順を列記します。<br/><br/>それ以外の場合、アップグレード後に BAM 警告の定義を再生成します。 |
+|                 タスク                  |                                                                                                                                                                                                                                        Info                                                                                                                                                                                                                                         |
+|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   重要な Windows 更新プログラムをインストールする    |                                                                                                                                                                                                [プログラム] メニューから [Windows Update] を選択します。 コンピューターの再起動が必要な場合があります。                                                                                                                                                                                                 |
+|      BAM 警告の定義を保存する       |                                    現在、既存の BAM 警告の定義と SQL Server Notification Services を使用している場合にのみ適用されます。 BM.exe を使用して定義ファイルを作成し、[!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]/2013 の構成で BAM 警告の構成を解除します。<br/><br/>**アップグレードの前に** (このトピックでは) 具体的な手順を列記します。<br/><br/>それ以外の場合、アップグレード後に BAM 警告の定義を再生成します。                                    |
+|          SQL Server をアップグレードする           |                                         サポートされるバージョンの SQL Server にアップグレードします。 次のチュートリアルを参照してください。<br/><br/>[BizTalk Server 2016 のハードウェア/ソフトウェア要件](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)<br/>[SQL Server 2016 へのアップグレード](https://msdn.microsoft.com/library/bb677622.aspx)<br/>[SQL Server 2014 へのアップグレード](https://msdn.microsoft.com/library/bb677622(v=sql.120).aspx)                                          |
+|    SQL Server クライアント ツールをアップグレードする    |                                                                                                                                                複数コンピューター環境では、管理ツールを別のコンピューターにインストールすることができます。 管理ツールを含む、SQL Server 管理のクライアント ツールをアップグレードします。                                                                                                                                                |
+|         Visual Studio のインストール         |                         サポートされるバージョンについては、「[BizTalk Server 2016 のハードウェアとソフトウェアの要件](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)」をご覧ください。 異なる Visual Studo のバージョンをサイド バイ サイドでインストールできます。 [Visual Studio 2015](https://msdn.microsoft.com/library/ms246609(v=vs.140).aspx) および [Visual Studio 2013](https://msdn.microsoft.com/library/ms246609(v=vs.120).aspx) を参照してください。                         |
+|            Office をインストールする             |                                     「[異なるバージョンの Office を同じ PC にインストールして使う](https://support.office.com/article/Install-and-use-different-versions-of-Office-on-the-same-PC-6EBB44CE-18A3-43F9-A187-B78C513788BF)」をご覧ください。 サポートされる Office のバージョンの一覧については、「[BizTalk Server 2016 のハードウェアとソフトウェアの要件](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)」をご覧ください。                                     |
+| BizTalk Services と Windows サービスを停止する |                                                                                                      - BizTalk Services BizTalk グループ: <*アプリケーション名*><br/>- BizTalk ベース EDI サービス<br/>- ルール エンジン更新サービス<br/>- World Wide Web Publishing サービス<br/><br/>**注**<br/>BizTalk Server のアクセラレータがインストールされている場合は、HL7 ログ サービスを停止します。                                                                                                      |
+|         データベースをバックアップする         | - Master<br/>- MSDB<br/>- BAMArchive<br/>- BAMPrimaryImport<br/>- BAMStarSchema<br/>- BizTalkDTADb<br/>- BizTalkEDIDb<br/>- BizTalkHwsDb<br/>- BizTalkMgmtDb<br/>- BizTalkMsgBoxDb<br/>- BizTalkRuleEngineDb<br/>- TPM<br/>- BizTalkAnalysisDb<br/>- BAMAnalysis<br/><br/>[SQL Server 2014: バックアップの概要](https://technet.microsoft.com/library/ms175477(v=sql.120).aspx)<br/>[SQL Server 2012: バックアップの概要](https://technet.microsoft.com/library/ms175477(v=sql.110).aspx) |
+|  SQL Server データベース メールを構成する   |                                                                                                                      BAM 警告の定義と SQL Server Notification Services を使用している場合にのみ適用されます。<br/><br/>**アップグレードの前に** (このトピックでは) 具体的な手順を列記します。<br/><br/>それ以外の場合、アップグレード後に BAM 警告の定義を再生成します。                                                                                                                       |
 
 ## <a name="do-the-upgrade"></a>アップグレードを実行する
 
@@ -252,9 +252,9 @@ BAM 警告を使用するには、SQL Server Database Mail が必要です。 SQ
 8. 必須コンポーネントがコンピューターにインストールされていない場合、必要な再配布可能コンポーネントをインストールできます。 次のいずれかを実行できます。
 
     - [必要な再配布可能コンポーネントを Web から自動的にインストールする] を選択します。  
-  
+
       または  
-  
+
     - CAB ファイルを既にダウンロードしている場合は、[必要な再配布可能コンポーネントを CAB ファイルから自動的にインストールする] を選択します。 CAB ファイルの場所に移動し、ファイルを選択します。
 
 9. **[概要]** で、アップグレード可能なコンポーネントを確認します。
@@ -280,7 +280,8 @@ BizTalk Server のアップグレード中には数多くのことが起こる�
 
 - **MSMQ の開始**: MSMQ アダプターを使用する場合、メッセージ キュー サービスを起動します。
 
-- **カスタム EXE および BRE**: BizTalk Server 2010 内のビジネス ルール エンジン アセンブリを参照するカスタム マネージ実行可能ファイルがある場合は、.NET Framework 2.0 でプロセスを実行するために、アプリケーション構成ファイルに次のコードを追加します。
+- 
+  **カスタム EXE および BRE**: BizTalk Server 2010 内のビジネス ルール エンジン アセンブリを参照するカスタム マネージド実行可能ファイルがある場合は、.NET Framework 2.0 でプロセスを実行するために、アプリケーション構成ファイルに次のコードを追加します。
 
     ```
     <?xml version="1.0" encoding="Windows-1252"?>
@@ -322,25 +323,25 @@ BizTalk Server のカスタマー エクスペリエンス向上プログラム�
 - **管理用コンピューターでの BAM 警告の構成**: 複数コンピューター環境では、管理用、ランタイム、SQL Server のコンポーネントが別々のコンピューターにインストールされます。 BAM ツールまたは BAM 警告を使用する場合、以下の問題が発生することがあります:
 
     **問題**: BizTalk 管理用コンピューターで BAM ツールを構成するときに、次のエラーが発生します。
-    
+
     `Service BAMAlerts was not found on computer ‘.’.The specified service does not exist as an installed service.`
 
     **問題**: ランタイム コンピューターから BAM アクティビティ定義を展開するときに、次のエラーが発生します:
-    
+
     `A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) (.Net SqlClient Data Provider)`
-    
+
     このエラーは、BAM 警告がランタイム コンピューターで構成された場合に発生します。 解決するには、BizTalk 管理コンソールと同じコンピュータで BAM 警告を構成します。 ランタイム コンピューターでは BAM 警告を構成しないでください。
 
 - **アップグレードの失敗からの復旧**: アップグレードのいずれかの段階で、アップグレードが失敗する可能性があります。 アップグレードの失敗から復旧する方法は、失敗が発生したのが各フェーズのどのポイントかによって決まります。
 
-    - アップグレードが必須コンポーネントをインストールする際に失敗した場合、必須コンポーネントの以降のインストールが中止され、エラーを示すメッセージが返されます。 この後、問題を解決して、セットアップを再実行できます。
-    
-    - アップグレードの失敗が、データベースをアップグレードする際、既存の BizTalk Server バージョンから機能を削除する際、または新しいバージョンをインストールする際に発生した場合、以降のインストールが中止され、エラーを示すメッセージが返されます。 変更はすべてロールバックされます。 BizTalk Server データベースに加えられた変更はロールバックできません。
-    
-        BizTalk Server の以前のインストールのコンポーネントがアップグレード中に削除された場合、コンピューターには BizTalk Server コンポーネントがない状態になっている可能性があります。 前のインストールからの機能構成情報は維持される場合があります。 また、アップグレード プロセスが失敗した段階によっては、BizTalk Server データベースがアップグレードされている場合があります。 場合によっては、セットアップを再実行する前に、以前にバックアップしたデータベースを復元する必要があります。
-    
-    - BizTalk Server の機能を再構成する際にアップグレードが失敗した場合、完了のレベルを示すメッセージが返されます。 構成のアップグレードに失敗した場合、または部分的にのみ成功した場合、BizTalk Server 構成を実行し、アップグレードを完了します。
-    
+  - アップグレードが必須コンポーネントをインストールする際に失敗した場合、必須コンポーネントの以降のインストールが中止され、エラーを示すメッセージが返されます。 この後、問題を解決して、セットアップを再実行できます。
+
+  - アップグレードの失敗が、データベースをアップグレードする際、既存の BizTalk Server バージョンから機能を削除する際、または新しいバージョンをインストールする際に発生した場合、以降のインストールが中止され、エラーを示すメッセージが返されます。 変更はすべてロールバックされます。 BizTalk Server データベースに加えられた変更はロールバックできません。
+
+      BizTalk Server の以前のインストールのコンポーネントがアップグレード中に削除された場合、コンピューターには BizTalk Server コンポーネントがない状態になっている可能性があります。 前のインストールからの機能構成情報は維持される場合があります。 また、アップグレード プロセスが失敗した段階によっては、BizTalk Server データベースがアップグレードされている場合があります。 場合によっては、セットアップを再実行する前に、以前にバックアップしたデータベースを復元する必要があります。
+
+  - BizTalk Server の機能を再構成する際にアップグレードが失敗した場合、完了のレベルを示すメッセージが返されます。 構成のアップグレードに失敗した場合、または部分的にのみ成功した場合、BizTalk Server 構成を実行し、アップグレードを完了します。
+
     アップグレードに引き続き失敗し、以前のバージョンの BizTalk Server に戻す必要がある場合は、バックアップしたデータベースを復元してから、以前の BizTalk Server のバージョンを再インストールする必要があります。
 
 - **同じバージョンの使用**: BizTalk アプリケーション グループでは、バージョンの異なる BizTalk Server がインストールされたコンピューターを実行することはできません。 たとえば、BizTalk 管理コンソールで、あるバージョンの BizTalk Server 上で実行されている送信ポートを、異なるバージョンの BizTalk Server 上で実行されている受信場所にバインドすることはできません。 
@@ -371,25 +372,25 @@ BizTalk Server のカスタマー エクスペリエンス向上プログラム�
 
 - **BAM ポータル**: 64 ビット コンピューターでは、アップグレードを行った後は BAM ポータルにアクセスできません。 解決方法:
 
-    1. `%BizTalkInstallDir%\BAMPortal\web.config` にある web.config ファイルのバックアップ コピーを作成します。
+  1. `%BizTalkInstallDir%\BAMPortal\web.config` にある web.config ファイルのバックアップ コピーを作成します。
 
-    2. BizTalk Server の Tracking フォルダーにある bm.exe を使用して、コマンド プロンプトから次のコマンドを実行します。 `bm.exe get-config –FileName:<filepath> -Server:MyServer -Database:MyDB`
+  2. BizTalk Server の Tracking フォルダーにある bm.exe を使用して、コマンド プロンプトから次のコマンドを実行します。 `bm.exe get-config –FileName:<filepath> -Server:MyServer -Database:MyDB`
 
-    Config XML ファイルから *BAMVRoot* の値を取得します (xpath: BAMConfiguration\ GlobalProperty\Name="BAMVRoot")。
+     Config XML ファイルから *BAMVRoot* の値を取得します (xpath: BAMConfiguration\ GlobalProperty\Name="BAMVRoot")。
 
-    3. BAMVRoot として示されているコンピューターで BizTalk Server の構成を開き、BAM ポータルの構成を解除します。
+  3. BAMVRoot として示されているコンピューターで BizTalk Server の構成を開き、BAM ポータルの構成を解除します。
 
-    4. BizTalk Server の構成を開き、BAM ポータルを構成します。
+  4. BizTalk Server の構成を開き、BAM ポータルを構成します。
 
-    5. ステップ (1) で示した場所から新しい web.config ファイルを開きます。
+  5. ステップ (1) で示した場所から新しい web.config ファイルを開きます。
 
-    6. web.config ファイルのバックアップ コピーを使用して、次の値を設定します (`configuration\appSettings` の下)。
+  6. web.config ファイルのバックアップ コピーを使用して、次の値を設定します (`configuration\appSettings` の下)。
 
-        - key="MainPageContentUrl"
-        - key="AlertNotificationOptions"
+      - key="MainPageContentUrl"
+      - key="AlertNotificationOptions"
 
-    > [!NOTE] 
-    > 64 ビット コンピューターの場合は、オペレーティング システムをアップグレードした後に BAM ポータルを再構成することをお勧めします。
+     > [!NOTE] 
+     > 64 ビット コンピューターの場合は、オペレーティング システムをアップグレードした後に BAM ポータルを再構成することをお勧めします。
 
 - **EDI BAM アクティビティの展開**: アップグレードするとき、アップグレードが部分的にしか成功しない場合があります。 これは、(EDI 構成を含む) SQL Server をアップグレードする際に発生することがあります。 EDI BAM アクティビティが適切にアップグレードされないことがあります。 この問題を解決するには、管理者資格情報を使用してコマンド プロンプトから次のコマンドを実行して、BAM アクティビティを展開します。
 
@@ -407,20 +408,20 @@ BizTalk Server のカスタマー エクスペリエンス向上プログラム�
 
     **SSO クラスター内の SSO サービスを最新の状態に更新するには**:
 
-    1. クラスター アドミニストレーターで、クラスター化された Enterprise SSO サービス リソースを含むクラスター グループを**オンラインにします**。 これにより、クラスター グループのすべてのリソースが開始します。
+  1. クラスター アドミニストレーターで、クラスター化された Enterprise SSO サービス リソースを含むクラスター グループを**オンラインにします**。 これにより、クラスター グループのすべてのリソースが開始します。
 
-    2. Enterprise SSO サービスのクラスター化されたインスタンスを**オフラインにします**。 その後、**オンライン**に戻します。
+  2. Enterprise SSO サービスのクラスター化されたインスタンスを**オフラインにします**。 その後、**オンライン**に戻します。
 
-    3. クラスター グループを**移動**します。 この操作により、クラスター化された Enterprise SSO サービス リソースを含むクラスター グループが最初のノードから 2 番目のノードに移動されます。
+  3. クラスター グループを**移動**します。 この操作により、クラスター化された Enterprise SSO サービス リソースを含むクラスター グループが最初のノードから 2 番目のノードに移動されます。
 
-    4. Enterprise SSO サービスのクラスター化されたインスタンスを**オフラインにします**。 その後、**オンライン**に戻します。
+  4. Enterprise SSO サービスのクラスター化されたインスタンスを**オフラインにします**。 その後、**オンライン**に戻します。
 
-    **BizTalk Server ランタイム クラスターで SSO サービスを最新の状態に更新するには**:
+     **BizTalk Server ランタイム クラスターで SSO サービスを最新の状態に更新するには**:
 
-    1. クラスター アドミニストレーターで、クラスター化された BizTalk Server ランタイム リソースを含むクラスター グループを**オンラインにします**。 これにより、クラスター グループのすべてのリソースが開始します。
+  5. クラスター アドミニストレーターで、クラスター化された BizTalk Server ランタイム リソースを含むクラスター グループを**オンラインにします**。 これにより、クラスター グループのすべてのリソースが開始します。
 
-    2. Enterprise SSO サービスのクラスター化されたインスタンスを**オフラインにします**。 その後、**オンライン**に戻します。
+  6. Enterprise SSO サービスのクラスター化されたインスタンスを**オフラインにします**。 その後、**オンライン**に戻します。
 
-    3. クラスター グループを**移動**します。 この操作により、クラスター化された BizTalk Server ランタイム リソースを含むクラスター グループが最初のノードから 2 番目のノードに移動されます。
+  7. クラスター グループを**移動**します。 この操作により、クラスター化された BizTalk Server ランタイム リソースを含むクラスター グループが最初のノードから 2 番目のノードに移動されます。
 
-    4. Enterprise SSO サービスのクラスター化されたインスタンスを**オフラインにします**。 その後、**オンライン**に戻します。
+  8. Enterprise SSO サービスのクラスター化されたインスタンスを**オフラインにします**。 その後、**オンライン**に戻します。

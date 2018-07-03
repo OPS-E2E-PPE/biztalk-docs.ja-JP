@@ -1,5 +1,5 @@
 ---
-title: 一般的なエラー |Microsoft ドキュメント
+title: 一般的なエラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b882c44e69489114a2dd8084df71d6414df0cb5
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 01c5dfe58f7b31bb5ef461249765d527f78d9264
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971536"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37009059"
 ---
 # <a name="common-errors"></a>一般的なエラー
 ここでは、BizTalk マッパーを使用してマップを作成しているときによく発生するエラー メッセージを示します。  
@@ -25,7 +25,7 @@ ms.locfileid: "25971536"
 ## <a name="you-receive-error-event-id-324-when-parsing-dates"></a>日付の解析時にエラー イベント ID 324 が発生する  
   
 ### <a name="problem"></a>問題  
- データベースを使用すると**値抽出**日付フィールドをドキュメントを抽出するマップの functoid には、送信ドキュメント定義に対して検証が失敗します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]イベント ログに次のように、検証エラーをログ可能性があります。  
+ データベースを使用すると**値抽出**日付フィールド、ドキュメントを抽出するマップの functoid には送信ドキュメント定義に対して検証が失敗します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] イベント ログに次のような検証エラーをログする可能性があります。  
   
  BizTalk Server のイベント ソース:  
   
@@ -41,7 +41,7 @@ ms.locfileid: "25971536"
   
  -----------------------------\-  
   
- 次の理由により、XML ドキュメントを検証できませんでした: '10/12/1995 を解析中にエラー' date データ型として。  
+ XML ドキュメントには次の理由で検証が失敗した: '10/12/1995 の解析中にエラー' date データ型として。  
   
  保留キュー ID:"{A1127909-CA36-4359-B672-7CBA8B60BDAF}"  
   
@@ -51,18 +51,18 @@ ms.locfileid: "25971536"
 ### <a name="resolution"></a>解決策  
  この問題を解決するには、次のいずれかの操作を行います。  
   
--   送信ドキュメント定義を編集して、date データ型ではなく string データ型を使用します。  
+- 送信ドキュメント定義を編集して、date データ型ではなく string データ型を使用します。  
   
--   カスタム作成[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsVBNoVersion](../includes/btsvbnoversion-md.md)]**スクリプト**データベースの出力を変換 functoid**値抽出**functoid を ISO 8601 形式にします。  
+- カスタムを作成する[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsVBNoVersion](../includes/btsvbnoversion-md.md)]**スクリプト**データベースの出力を変換する functoid**値抽出**functoid を ISO 8601 形式にします。  
   
- 詳細については、サポート技術情報の記事を参照してください[278737](http://support.microsoft.com/kb/278737/en-us)です。  
+  詳細については、サポート技術情報の記事を参照してください[278737](http://support.microsoft.com/kb/278737/en-us)します。  
   
 ## <a name="you-receive-internal-compiler-error-0xc0000005-at-address-53624fd6-when-compiling-the-maps"></a>マップのコンパイル時に内部コンパイラ エラー (アドレス 53624FD6 の 0xc0000005) が発生する  
   
 ### <a name="problem"></a>問題  
  大きなスキーマ、マップ、またはオーケストレーションで構成された単一の BizTalk プロジェクトをコンパイルした場合、次のようなエラーが発生する可能性があります。  
   
- 内部コンパイラ エラー (アドレス 53624fd6 の 0xc0000005): 'CODEGEN' は、原因と考えられます。  
+ 内部コンパイラ エラー (アドレス 53624fd6 の 0xc0000005): 可能性の高い原因は 'CODEGEN'。  
   
 ### <a name="cause"></a>原因  
  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コンパイラには、単一のプロジェクトにおけるすべての文字列の合計サイズについて 16 MB の制限があります。 BizTalk プロジェクトをコンパイルしている間、コンパイラはアセンブリ作成のスキーマ、マップ、およびオーケストレーションをシリアル化し、これによってすべての文字列の合計サイズが増加し、制限を超える可能性があります。  
@@ -73,7 +73,7 @@ ms.locfileid: "25971536"
 ## <a name="you-receive-errors-about-the-type-name-of-a-biztalk-artifact"></a>BizTalk アイテムの型名についてのエラーが発生する  
   
 ### <a name="problem"></a>問題  
- BizTalk プロジェクトにファイル名で、マップの作成**System.btm**または**Microsoft.btm**です。 プロジェクトをビルドすると、BizTalk マッパーが次のようなエラーを生成します。  
+ BizTalk プロジェクトでは、ファイル名にマップを作成**System.btm**または**Microsoft.btm**します。 プロジェクトをビルドすると、BizTalk マッパーが次のようなエラーを生成します。  
   
 -   "型名 'SerializableAttribute' が存在しません..."  
   
@@ -84,14 +84,14 @@ ms.locfileid: "25971536"
 -   "型名 'XLANs' が存在しません..."  
   
 ### <a name="cause"></a>原因  
- **型名**で、**プロパティ**グリッド必要はありません、予約された .NET 名前空間など**システム**、 **Microsoft**, などです。  
+ **型名**で、**プロパティ**グリッド必要はありません予約 .NET 名前空間など**システム**、 **Microsoft**など。  
   
 ### <a name="resolution"></a>解決策  
  この問題を解決するには、次のいずれかの対処方法を使用できます。  
   
--   マップの名前を、.NET の予約語ではない文字列に変更します。 既定では、BizTalk プロジェクト システムを作成、**型名**はそれぞれのアイテムの名前から。  
+-   マップの名前を、.NET の予約語ではない文字列に変更します。 既定では、BizTalk プロジェクト システムを作成、**型名**それぞれのアイテムの名前から。  
   
-     例:: 名前を持つ新しいマップを作成する**Map1.btm**設定、**型名**プロパティの値を**Map1**です。 ただし、既存の BizTalk の名前を変更する成果物は変更されません、**型名**です。  
+     例:: 名前の新しいマップを作成する**Map1.btm**設定、**型名**プロパティの値を**Map1**します。 ただし、既存の BizTalk アイテムは変更されません、**型名**します。  
   
 -   BizTalk プロジェクトのアイテムのファイル名が .NET の予約された名前空間ではないことを確認してください。  
   
@@ -107,9 +107,9 @@ ms.locfileid: "25971536"
 ### <a name="cause"></a>原因  
  BizTalk プロジェクトでは、次のことが検査されます。  
   
--   複数のアイテムが同じファイル名を持っている。 例: **Map1.xsd**と**Map1.btm**です。  
+-   複数のアイテムが同じファイル名を持っている。 例: **Map1.xsd**と**Map1.btm**します。  
   
--   特殊文字のみのファイル名で構成されます (**~**、 **!**、  **@** , などです。)。  
+-   特殊文字のみのファイル名で構成されます (**~**、 **!**、  **@** など。)。  
   
 ### <a name="resolution"></a>解決策  
  この問題を解決するには、次のいずれかの対処方法を使用できます。  

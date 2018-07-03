@@ -1,5 +1,5 @@
 ---
-title: 送信するバッチ要素がないと、パーティに対して構成されていないので、空のメッセージを送信できません |Microsoft ドキュメント
+title: 送信するバッチ要素がないと、パーティが構成されていないので、空のメッセージを送信できません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80dcf96feef006a2576afc5829e7927e003524a5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 73d0d44c8a5a206748eb128cd2461d1d04b54c93
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241962"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36976667"
 ---
 # <a name="there-are-no-batch-elements-to-send-and-an-empty-message-cannot-be-sent-as-it-is-not-configured-for-party"></a>空のメッセージがパーティ用に構成されていないため、送信するバッチ要素がないので空のメッセージを送信できません
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|バッチ処理エンジン|  
-|シンボル名|EmptyMessageNotAllowed|  
-|メッセージ テキスト|空のメッセージがパーティ {0} 用に構成されていないため、送信するバッチ要素がないので空のメッセージを送信できません|  
+|                 |                                                                                                               |
+|-----------------|---------------------------------------------------------------------------------------------------------------|
+|  製品名   |              [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]               |
+| 製品バージョン |                          [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                           |
+|    イベント ID     |                                                       -                                                       |
+|  イベント ソース   |            [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI             |
+|    コンポーネント    |                                                バッチ処理エンジン                                                |
+|  シンボル名  |                                            EmptyMessageNotAllowed                                             |
+|  メッセージ テキスト   | 送信するバッチ要素がないと、パーティが構成されていないので、空のメッセージを送信できません。 {0} |
   
 ## <a name="explanation"></a>説明  
  この警告は、バッチ リリースのスケジュールが設定されているもののバッチ要素が受信されておらず、空のバッチ通知が有効化されていなかったため、スケジュールに基づくバッチ処理プロセスでバッチ メッセージが送信されなかったことを示します。  

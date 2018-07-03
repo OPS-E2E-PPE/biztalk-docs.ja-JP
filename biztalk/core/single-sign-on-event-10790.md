@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10790 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10790 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5769f202edf303616a0fc2ae7259520585455b1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 452e2e5612ed6e81ba6352c54ab14f82bf8abedb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276818"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996611"
 ---
 # <a name="single-sign-on-event-10790"></a>シングル サインオン: イベント 10790
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10790|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|ENTSSO_E_TICKET_EXPIRED|  
-|メッセージ テキスト|チケットがタイムアウトしました。|  
+|                 |                                                            |
+|-----------------|------------------------------------------------------------|
+|  製品名   |                 エンタープライズ シングル サインオン                  |
+| 製品バージョン | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    イベント ID     |                           10790                            |
+|  イベント ソース   |                           ENTSSO                           |
+|    コンポーネント    |                            なし                             |
+|  シンボル名  |                  ENTSSO_E_TICKET_EXPIRED                   |
+|  メッセージ テキスト   |                 チケットがタイムアウトしました。                  |
   
 ## <a name="explanation"></a>説明  
  チケットがタイムアウトしました。  

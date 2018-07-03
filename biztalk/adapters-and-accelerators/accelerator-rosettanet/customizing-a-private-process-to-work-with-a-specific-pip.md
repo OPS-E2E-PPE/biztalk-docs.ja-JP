@@ -1,5 +1,5 @@
 ---
-title: 特定の PIP に使用するプライベート プロセスをカスタマイズする |Microsoft ドキュメント
+title: 特定の PIP に使用するプライベート プロセスのカスタマイズ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,61 +18,61 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f84cd2de6d5f79062592dbf71947587b6d7a6ff0
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 77abdf870f0813bb5b9e1dd7a039b99ef0726c15
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966752"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37001507"
 ---
-# <a name="customizing-a-private-process-to-work-with-a-specific-pip"></a>特定の PIP で使用するプライベート プロセスのカスタマイズ
+# <a name="customizing-a-private-process-to-work-with-a-specific-pip"></a>特定の PIP に使用するプライベート プロセスのカスタマイズ
 応答側のプライベートプロセス オーケストレーションが特定の Partner Interface Process (PIP) のインスタンスを処理するかどうかを指定するフィルター式を作成できます。 これにより、特定の PIP インスタンスを受信して処理するためのカスタム プライベート プロセスを作成し、その他の PIP インスタンスには既定のプライベート プロセスを使用する柔軟性が備わります。  
   
- 特定の PIP で使用するカスタム プライベート プロセスを作成するには、プライベートプロセス オーケストレーションの受信図形のフィルタ式を作成します。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK の PIP3A4PrivateResponder.odx オーケストレーションがその一例です。 これは、 \<*ドライブ*\>: \Program Files\BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pip3a4process を使用してビジネス \pip3a4privateresponder です。  
+ 特定の PIP で使用するカスタム プライベート プロセスを作成するには、プライベートプロセス オーケストレーションの受信図形のフィルタ式を作成します。 例としては、Microsoft® で PIP3A4PrivateResponder.odx オーケストレーション[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SDK。 場所は\<*ドライブ*\>: \Program Files\BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pip3a4process を使用して Business rules \pip3a4privateresponder にあります。  
   
  特定の PIP のインスタンスのみを処理するプライベート プロセスを作成するだけでなく、既定の BTARN プライベート プロセスをカスタマイズして、その PIP のインスタンスを処理しないように設定する必要があります。  
   
 ### <a name="to-customize-a-responder-private-process-to-work-with-a-specific-pip"></a>特定の PIP で使用する応答側プライベート プロセスをカスタマイズするには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] で、特定の PIP で使用する応答側プライベートプロセス オーケストレーションを作成します。 既定の BTARN 応答側プライベートプロセスのオーケストレーションを基盤にできます。  
+1. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] で、特定の PIP で使用する応答側プライベートプロセス オーケストレーションを作成します。 既定の BTARN 応答側プライベートプロセスのオーケストレーションを基盤にできます。  
   
-    > [!NOTE]
-    >  PrivateResponder.odx という名前の既定の応答側プライベートプロセス オーケストレーションは BTARN SDK にあります。 これは、 *\<ドライブ\>*: \Program Files\BizTalk\<バージョン\>Accelerator for rosettanet \sdk\privateresponder です。  
+   > [!NOTE]
+   >  PrivateResponder.odx という名前の既定の応答側プライベートプロセス オーケストレーションは BTARN SDK にあります。 場所は*\<ドライブ\>*: \Program Files\BizTalk\<バージョン\>Accelerator for rosettanet \sdk\privateresponder です。  
   
-2.  カスタム オーケストレーションを BizTalk プロジェクトに追加します。 プロジェクトに Microsoft.Solutions.BTARN.GlobalSchemas.dll ファイルへの参照があることを確認してください。  
+2. カスタム オーケストレーションを BizTalk プロジェクトに追加します。 プロジェクトに Microsoft.Solutions.BTARN.GlobalSchemas.dll ファイルへの参照があることを確認してください。  
   
-3.  オーケストレーション デザイナでカスタム オーケストレーションを開きます。  
+3. オーケストレーション デザイナでカスタム オーケストレーションを開きます。  
   
-4.  1 つを右クリックして**受信**図形をクリックして、オーケストレーションをアクティブに**フィルタ式の編集**です。  
+4. 1 つ目を右クリックして**受信**図形をオーケストレーションをアクティブ化し、をクリックし、**フィルター式の編集**します。  
   
-    > [!NOTE]
-    >  既定の BTARN 応答側プライベートプロセス オーケストレーションの受信図形には、Microsoft.Solutions.BTARN.GlobalSchemas.SCCategory == "AsyncAction" または Microsoft.Solutions.BTARN.GlobalSchemas.SCCategory == "SyncAction" という 2 つのフィルター条件があります。 この式は、オーケストレーションが RosettaNet メッセージを処理することを確認します。 カスタム オーケストレーションにこのフィルター式を維持してください。  
+   > [!NOTE]
+   >  既定の BTARN 応答側プライベートプロセス オーケストレーションの受信図形には、Microsoft.Solutions.BTARN.GlobalSchemas.SCCategory == "AsyncAction" または Microsoft.Solutions.BTARN.GlobalSchemas.SCCategory == "SyncAction" という 2 つのフィルター条件があります。 この式は、オーケストレーションが RosettaNet メッセージを処理することを確認します。 カスタム オーケストレーションにこのフィルター式を維持してください。  
   
-5.  **フィルター式**ダイアログ ボックスで、最初の空白行の プロパティ 列で選択**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**ドロップダウン リストから、演算子 列選択 **==** ドロップダウン リストから値 列に 3 桁の PIP コードの例については、型と入力します。 **3A4**です。  
+5. **フィルター式**ダイアログ ボックスで、最初の開いている行のプロパティの列で選択**microsoft.solutions.btarn.globalschemas.scpipcode** 演算子 列で、ドロップダウン リストから選択**==** 値 列に入力 3 桁の PIP コードの例では、型のボックスの一覧から**3A4**します。  
   
-6.  **[OK]** をクリックします。  
+6. **[OK]** をクリックします。  
   
-7.  オーケストレーション デザイナーで既定の応答側プライベートプロセス オーケストレーション プロジェクト (PrivateResponder.btproj) を開きます。 プロジェクトに Microsoft.Solutions.BTARN.GlobalSchemas.dll ファイルへの実際の参照があることを確認してください。  
+7. オーケストレーション デザイナーで既定の応答側プライベートプロセス オーケストレーション プロジェクト (PrivateResponder.btproj) を開きます。 プロジェクトに Microsoft.Solutions.BTARN.GlobalSchemas.dll ファイルへの実際の参照があることを確認してください。  
   
-8.  ダブルクリックして**PrivateResponder.odx**です。  
+8. ダブルクリック**PrivateResponder.odx**します。  
   
-9. 右クリックし、 **[receivefrompublicprocessresponder]** 受信図形をクリックして**フィルタ式の編集**です。  
+9. 右クリックし、 **[receivefrompublicprocessresponder]** 受信図形をクリックして**フィルター式の編集**します。  
   
-10. **フィルター式**ダイアログ ボックスで、最初の空白行の [プロパティ] 列で選択**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**ドロップダウン リストからです。 [演算子] 列で選択 **! =** ドロップダウン リストからです。 [値] 列で、3 桁の PIP コードの例については、型を入力"**3A4"** です。  
+10. **フィルター式**ダイアログ ボックスで、最初の開いている行のプロパティの列で選択 **[microsoft.solutions.btarn.globalschemas.scpipcode]** ドロップダウン リストから。 [演算子] 列で選択 **! =** ドロップダウン リストから。 [値] 列で、入力 3 桁の PIP コードの例では、型の"**3A4"** します。  
   
 11. **[OK]** をクリックします。  
   
-12. ソリューション エクスプ ローラーでオーケストレーションを含むプロジェクトを右クリックし、をクリックして**ビルド**です。  
+12. ソリューション エクスプ ローラーでオーケストレーションを含むプロジェクトを右クリックし、クリックして**ビルド**します。  
   
-13. プロジェクトが正常にビルドされたら、プロジェクトを右クリックし、をクリックして**展開**です。  
+13. プロジェクトがビルドされたら、プロジェクトを右クリックし、**デプロイ**します。  
   
-14. **ファイル** メニューのをポイント**開く**、順にクリック**プロジェクト**です。  
+14. **ファイル**メニューで、**オープン**、 をクリックし、**プロジェクト**。  
   
-15. 移動\<*ドライブ*\>: \Program Files\BizTalk\<バージョン\>Accelerator for rosettanet \sdk\privateresponder、選択**PrivateResponder.odx**、クリックして**OK**です。  
+15. 移動\<*ドライブ*\>: \Program Files\BizTalk\<バージョン\>Accelerator for rosettanet \sdk\privateresponder には、選択**PrivateResponder.odx**、 をクリックし、 **OK**します。  
   
 16. ソリューション エクスプローラーで、プロジェクトを右クリックし、 **[ビルド]** をクリックします。  
   
-17. プロジェクトが正常にビルドされたら、プロジェクトを右クリックし、をクリックして**展開**です。  
+17. プロジェクトがビルドされたら、プロジェクトを右クリックし、**デプロイ**します。  
   
 ## <a name="see-also"></a>参照  
  [プログラミング ガイド](../../adapters-and-accelerators/accelerator-rosettanet/programming-guide2.md)

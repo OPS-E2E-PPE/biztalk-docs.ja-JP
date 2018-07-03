@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10573 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10573 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39c07ba359c93c4a98211216af1c795340b5801b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bf7b2dffb5bd78a3257a400cf2d3cb93978e1d72
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270402"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36980185"
 ---
 # <a name="single-sign-on-event-10573"></a>シングル サインオン: イベント 10573
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10573|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_WARN_INVALID_SSO_APP_ADMIN_GROUP|  
-|メッセージ テキスト|SSO 関連管理者アカウントがグローバル情報アダプターに対して無効です。%r<br /><br /> SSO 関連管理者: %1 %r<br /><br /> 無効なアカウント: %2 %r<br /><br /> エラー コード: %3|  
+|                 |                                                                                                                                                                                              |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                                                  エンタープライズ シングル サインオン                                                                                   |
+| 製品バージョン |                                                                  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                  |
+|    イベント ID     |                                                                                            10573                                                                                             |
+|  イベント ソース   |                                                                                            ENTSSO                                                                                            |
+|    コンポーネント    |                                                                                             なし                                                                                              |
+|  シンボル名  |                                                                             SSO_WARN_INVALID_SSO_APP_ADMIN_GROUP                                                                             |
+|  メッセージ テキスト   | SSO 関連管理者アカウントがグローバル情報アダプターに対して無効です。%r<br /><br /> SSO 関連管理者: % 1 %r<br /><br /> 無効なアカウント: % 2 %r<br /><br /> エラー コード: %3 |
   
 ## <a name="explanation"></a>説明  
  SSO 関連管理者アカウントがグローバル情報アダプターに対して無効です。  

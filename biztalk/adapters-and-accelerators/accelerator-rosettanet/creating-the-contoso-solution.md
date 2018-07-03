@@ -1,5 +1,5 @@
 ---
-title: Contoso ソリューションの作成 |Microsoft ドキュメント
+title: Contoso ソリューションの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dcc840a33bf9f0a4708b7c9b44902fc02b5f2ea7
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: a2ed65010926f04e99eb126980870368c5d4a512
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004515"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37000131"
 ---
 # <a name="creating-the-contoso-solution"></a>Contoso ソリューションの作成
-ここでは、Contoso 組織側で従う必要のある手順の詳細について説明します。 使用して 2 つの組織の連絡先情報および取引先契約を追加するには、まず、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールです。 次に、基幹業務 (LOB) スキーマを作成し、これらのスキーマとそれぞれの RosettaNet ベースの PIP (Partner Interface Process) スキーマとの間のマッピングを作成します。 次に、ERP システムとの通信には SQL アダプターを、Fabrikam への情報の送信には HTTP アダプターを使用するポート情報を構成します。 最後の手順では、BizTalk Server でビジネス ルール エンジン (BRE) を使用するプライベート プロセス オーケストレーションをカスタマイズします。  
+ここでは、Contoso 組織側で従う必要のある手順の詳細について説明します。 Microsoft® を使用して 2 つの組織の連絡先情報および取引先契約を追加するには、まず[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソール。 次に、基幹業務 (LOB) スキーマを作成し、これらのスキーマとそれぞれの RosettaNet ベースの PIP (Partner Interface Process) スキーマとの間のマッピングを作成します。 次に、ERP システムとの通信には SQL アダプターを、Fabrikam への情報の送信には HTTP アダプターを使用するポート情報を構成します。 最後の手順では、BizTalk Server でビジネス ルール エンジン (BRE) を使用するプライベート プロセス オーケストレーションをカスタマイズします。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

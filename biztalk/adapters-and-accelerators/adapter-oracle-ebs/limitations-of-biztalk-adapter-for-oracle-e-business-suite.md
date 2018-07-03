@@ -1,5 +1,5 @@
 ---
-title: BizTalk adapter for Oracle E-business Suite の制限事項 |Microsoft ドキュメント
+title: BizTalk adapter for Oracle E-business Suite の制限事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,83 +12,83 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7611c56fbd24c7c7cf09d38d376df585b72b284
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b6de75a2955632f4f8e0daae2a2035e90f1f2fca
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216274"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988395"
 ---
 # <a name="limitations-of-biztalk-adapter-for-oracle-e-business-suite"></a>BizTalk adapter for Oracle E-business Suite の制限事項
 ## <a name="general-limitations"></a>一般的な制限事項  
- 次はの既知の制限[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]:  
+ 次の制限事項を呼びます[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]:  
   
--   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] XML Gateway、アドバンスド キュー、およびビジネス イベントはサポートされません。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] XML ゲートウェイ、アドバンスド キュー、およびビジネス イベントはサポートされません。  
   
-     ただし、次のように、ビジネス イベントの制限を回避することができます。  
+   ただし、次のように、ビジネス イベントの制限を回避取得できます。  
   
-    1.  Oracle のビジネス イベント システムでは、プロシージャを呼び出すカスタム PL/SQL ビジネス イベント発生時にサブスクリプションを作成します。  
+  1. Oracle のビジネス イベント システムでは、ビジネス イベントが発生したときに、カスタム PL/SQL プロシージャを呼び出すためのサブスクリプションを作成します。  
   
-    2.  ビジネス イベントを受け取るカスタム PL/SQL プロシージャを記述します。  
+  2. ビジネス イベントを受け取るカスタム PL/SQL プロシージャを記述します。  
   
-    3.  テーブルに結果データ (イベントおよびイベント ペイロード) を格納するカスタムの PL/SQL 手順に従います。  
+  3. テーブルに結果のデータ (イベントとイベント ペイロード) を格納するのにには、カスタムの PL/SQL 手順を使用します。  
   
-    4.  使用して、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]をポーリングまたはテーブルから通知を受信します。  
+  4. 使用して、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]ポーリングまたはテーブルから通知を受信します。  
   
--   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] XML 型をサポートしていません。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] XML 型をサポートしていません。  
   
--   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]を NULL に VARRAY で最初の要素の値を設定するクライアントを有効にしません。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Null の VARRAY で最初の要素の値を設定するクライアントを有効にしません。  
   
--   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]のフィールドを含むサポート レコードいないは、レコード型の PL/SQL テーブルを入力します。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]のフィールドを含むレコードのないサポートは、レコードの種類の PL/SQL テーブルを入力します。  
   
--   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]循環参照が含まれるユーザー定義型 (Udt) をサポートしていません。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]は循環参照があるユーザー定義型 (Udt) をサポートしていません。  
   
--   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] (レコード型、テーブルの種類、UDT、および VARRAY) などの複合型の内部 BFILE データ型をサポートしていません。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] (レコードの種類、テーブル型、UDT、および VARRAY) などの複合型、BFILE データ型をサポートしていません。  
   
--   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]のみに最大 2 つのレベルの入れ子の UDT をサポートしています。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]のみに最大 2 つのレベルの入れ子の UDT をサポートしています。  
   
--   PL/SQL テーブルを除く、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]はパッケージ内で定義されている Udt をサポートしていません。  
+- PL/SQL のテーブルを除く、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]はパッケージ内で定義されている Udt をサポートしていません。  
   
--   BizTalk Server にアダプターを使用する場合は、WCF カスタム資格情報の送信ポートが正しくない場合、要求メッセージは処理されません。 正しい資格情報を指定すると後、は、Oracle E-business Suite にメッセージを送信し、応答を受信します。 ただし、応答メッセージでは、出力ポートを使用できません。 このようなシナリオでは、ホスト インスタンスを再起動する必要があります。  
+- BizTalk Server でアダプターを使用する場合は、WCF カスタム資格情報の送信ポートが正しくない、要求メッセージは処理されません。 正しい資格情報を指定すると、Oracle E-business Suite にメッセージを送信し、応答を受信します。 ただし、応答メッセージでは、出力ポートを使用できません。 このようなシナリオでは、ホスト インスタンスを再起動する必要があります。  
   
-## <a name="limitations-due-to-odpnet"></a>ODP.NET のための制限事項  
- 次はの既知の制限[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]ODP.NET の制限のため。  
+## <a name="limitations-due-to-odpnet"></a>ODP.NET に関する制約  
+ 次の制限事項を呼びます[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]ODP.NET の制限のため。  
   
--   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]数値フィールドをインデックス化されていない PL/SQL テーブルをサポートしていません。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]数値フィールドでインデックス化されていない PL/SQL テーブルをサポートしません。  
   
--   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]は含まれていない任意の要素の連想配列をサポートしていません。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]は任意の要素が含まれていない連想配列をサポートしていません。  
   
--   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]はローカル タイム ゾーンの属性 (TimeStampLTZ) を持つ TimeStamp データ型が含まれている Udt をサポートしていません。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]はローカル タイム ゾーンの属性 (TimeStampLTZ) を持つ TimeStamp データ型が含まれている Udt をサポートしていません。  
   
--   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Udt を含むをサポートしていない、"です"。 (期間)、名前にします。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]が含まれている Udt をサポートしていませんが、"." (期間)、名前にします。  
   
--   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] IN OUT パラメーターとして BLOB、CLOB、および NCLOB データ型が含まれている Udt をサポートしていません。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] IN OUT パラメーターとして BLOB、CLOB、NCLOB データ型が含まれている Udt をサポートしていません。  
   
--   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Varray の Varray の次の単純型をサポートしていません: BFILE、IntervalDS、IntervalYM、TimeStampLTZ、および TimeStampTZ です。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Varray の Varray の次の単純型をサポートしていません: BFILE、IntervalDS、IntervalYM、TimeStampLTZ、および TimeStampTZ します。  
   
--   連想配列の制限、により PL/SQL テーブルまたはデータ型を次のいずれかが含まれるレコードの PL/SQL テーブルでサポートされていない、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]:  
+- 連想配列の制限のため PL/SQL テーブルまたは次のデータ型のいずれかが含まれているレコードの PL/SQL テーブルでサポートされていない、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]:  
   
-    -   BFILE  
+  -   BFILE  
   
-    -   BLOB  
+  -   BLOB  
   
-    -   CLOB  
+  -   CLOB  
   
-    -   IntervalDS  
+  -   IntervalDS  
   
-    -   IntervalYM  
+  -   IntervalYM  
   
-    -   Long  
+  -   Long  
   
-    -   NCLOB  
+  -   NCLOB  
   
-    -   RowID  
+  -   RowID  
   
-    -   TimeStamp  
+  -   TimeStamp  
   
-    -   TimeStampLTZ  
+  -   TimeStampLTZ  
   
-    -   TimeStampTZ  
+  -   TimeStampTZ  
   
 ## <a name="see-also"></a>参照  
- [Oracle E-business Suite の BizTalk アダプターを理解します。](../../adapters-and-accelerators/adapter-oracle-ebs/understand-biztalk-adapter-for-oracle-e-business-suite.md)
+ [BizTalk Adapter for Oracle E-Business Suite について](../../adapters-and-accelerators/adapter-oracle-ebs/understand-biztalk-adapter-for-oracle-e-business-suite.md)

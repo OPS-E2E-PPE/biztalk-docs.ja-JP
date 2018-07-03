@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 3: SWIFT スキーマをプロジェクトに追加する |Microsoft ドキュメント'
+title: 'レッスン 3: SWIFT スキーマをプロジェクトに追加する |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,41 +15,41 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12fb5741b75fb9792cbabf46bf7a0402972d7bb4
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: 3fcaa7f9af0dd802f457f84d7661f92bcdf08157
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "25961992"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982043"
 ---
 # <a name="lesson-3-adding-swift-schemas-to-a-project"></a>レッスン 3: SWIFT スキーマをプロジェクトに追加します。
-ソリューションと、新しいプロジェクトがある場合は、これで、プロジェクトに項目を追加できます。 追加する最初の項目は、MT103 SWIFT 支払いメッセージのスキーマです。 スキーマ テンプレートを選択すると、BizTalk エディターが起動します。  
+ソリューションと新しいプロジェクトをプロジェクトに項目を追加できます。 追加する最初の項目は、MT103 SWIFT 支払いメッセージのスキーマです。 スキーマ テンプレートを選択すると、BizTalk エディターが起動します。  
   
 ### <a name="to-add-a-new-schema-to-the-project"></a>新しいスキーマをプロジェクトに追加するには、次の操作を行います。  
   
-1.  ソリューション エクスプ ローラーで右クリックし、 **SWIFTSchemas**プロジェクトをポイントし、**追加**、順にクリック**既存項目の**します。  
+1. ソリューション エクスプ ローラーで右クリックし、 **SWIFTSchemas**プロジェクトをポイントして、**追加**、 をクリックし、**既存項目の**。  
   
-2.  追加既存項目の SWIFTSchemas ダイアログ ボックスを参照 **\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>MessagePack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Base スキーマ**です。  
+2. 追加する既存の項目-SWIFTSchemas ダイアログ ボックスを参照 **\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\<バージョン\>MessagePack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Base スキーマ**します。  
   
-3.  選択、 **SWIFT ベース Types.xsd**と**SWIFT 共通データ Types.xsd**スキーマ、およびクリック**追加**です。  
+3. 選択、 **SWIFT ベース Types.xsd**と**SWIFT 共通データ Types.xsd**スキーマ、およびクリック**追加**します。  
   
-    > [!NOTE]
-    >  SWIFT ベース Types.xsd と SWIFT 共通データ Types.xsd スキーマ SWIFTSchemas プロジェクトの下ソリューション エクスプ ローラーで表示します。  
+   > [!NOTE]
+   >  SWIFT のベース Types.xsd と SWIFT の一般的なデータ Types.xsd スキーマ SWIFTSchemas プロジェクトの下でソリューション エクスプ ローラーで表示します。  
   
-4.  ソリューション エクスプ ローラーで右クリックし、 **SWIFTSchemas**プロジェクトをポイントし、**追加**、順にクリック**既存項目の**します。  
+4. ソリューション エクスプ ローラーで右クリックし、 **SWIFTSchemas**プロジェクトをポイントして、**追加**、 をクリックし、**既存項目の**。  
   
-5.  追加既存項目の SWIFTSchemas ダイアログ ボックスを参照、  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator 用 SWIFT\<バージョン\>MessagePack\SWIFT Messages\A4SWIFT SRG\<バージョン\>\Category 1\MT103**フォルダーです。  
+5. 追加する既存の項目-SWIFTSchemas ダイアログ ボックスを参照、  **\<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\<バージョン\>MessagePack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Category 1\MT103**フォルダー。  
   
-6.  選択、 **MT103.xsd**スキーマ、およびクリック**追加**です。  
+6. 選択、 **MT103.xsd**スキーマ、およびクリック**追加**します。  
   
-    > [!NOTE]
-    >  SWIFTSchemas プロジェクトの下で、ソリューション エクスプ ローラーで、新しいスキーマ MT103.xsd が表示されます。  
+   > [!NOTE]
+   >  ソリューション エクスプ ローラーで、SWIFTSchemas プロジェクト MT103.xsd、新しいスキーマが表示されます。  
   
-7.  ソリューション エクスプ ローラーで、 **MT103.xsd** BizTalk エディターでスキーマを表示します。  
+7. ソリューション エクスプ ローラーでダブルクリック**MT103.xsd** BizTalk エディターでスキーマを表示します。  
   
-    > [!NOTE]
-    >  (左側のウィンドウ) のスキーマ ツリーと XSD ビュー (右ペイン) には、BizTalk エディターが表示されます。  
+   > [!NOTE]
+   >  スキーマ ツリー (左側のウィンドウ) と XSD ビュー (右側のウィンドウ) には、BizTalk エディターが表示されます。  
   
-8.  **ファイル** メニューのをクリックして**すべて保存**して変更を保存します。  
+8. **ファイル** メニューのをクリックして**すべて保存**変更を保存します。  
   
- 進みます[レッスン 4: ビルドしてアセンブリを配置する](../../adapters-and-accelerators/accelerator-swift/lesson-4-building-and-deploying-the-assembly.md)です。
+   進みます[レッスン 4: アセンブリの配置のビルドと](../../adapters-and-accelerators/accelerator-swift/lesson-4-building-and-deploying-the-assembly.md)します。

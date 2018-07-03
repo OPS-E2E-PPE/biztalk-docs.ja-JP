@@ -1,5 +1,5 @@
 ---
-title: 静的デザイン時アダプター構成 |Microsoft ドキュメント
+title: 静的デザイン時アダプター構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8337e4f53afe22ccbde0e1d1d2a6437d280011d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c865acca81228a18e027b5b65a7488965eeb7d46
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278898"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36972507"
 ---
 # <a name="static-design-time-adapter-configuration"></a>静的デザイン時アダプター構成
 アダプターのデザイン時部分では、使用可能なすべてのプロパティを定義し、ユーザー入力を検証します。 アダプターの静的デザイン時構成では、既定のユーザー インターフェイス (UI) を使用して、そのプロパティを表示および編集します。  
@@ -27,21 +27,21 @@ ms.locfileid: "22278898"
 ## <a name="guidelines-for-the-static-development-process"></a>静的な開発プロセスのガイドライン  
  以下に、静的デザイン時機能をアダプターに組み込む場合の推奨事項を示します。 開発中は、これらの手順をすべて実行する必要はありません。また、記述されているとおりの順序で実行する必要もありません。  
   
-1.  アダプター構成要件、および設定する必要がある構成パラメーターの一覧を作成します。 すべての受信場所と送信ポートでグローバルに使用するパラメーターは、ハンドラー スキーマ構成ファイルで指定します。 特定のポートまたは特定の場所で使用するパラメーターは、送信ポート構成ファイルと受信場所構成ファイルでそれぞれ構成します。  
+1. アダプター構成要件、および設定する必要がある構成パラメーターの一覧を作成します。 すべての受信場所と送信ポートでグローバルに使用するパラメーターは、ハンドラー スキーマ構成ファイルで指定します。 特定のポートまたは特定の場所で使用するパラメーターは、送信ポート構成ファイルと受信場所構成ファイルでそれぞれ構成します。  
   
-2.  アダプターのプロパティ ページを新しい構成パラメーターに対応するように変更します。 この手順については、次を参照してください。[アダプター構成スキーマ](../core/adapter-configuration-schemas.md)です。  
+2. アダプターのプロパティ ページを新しい構成パラメーターに対応するように変更します。 この手順の詳細については、次を参照してください。[アダプター構成スキーマ](../core/adapter-configuration-schemas.md)します。  
   
-3.  アダプター メタデータの追加ウィザードを使用して、スキーマ カテゴリのツリー ビューを変更します。 この手順の詳細については、次を参照してください[アダプター メタデータの追加ウィザードのスキーマ カテゴリ。](../core/schema-categories-in-the-add-adapter-metadata-wizard.md)  
+3. アダプター メタデータの追加ウィザードを使用して、スキーマ カテゴリのツリー ビューを変更します。 この手順の詳細については、次を参照してください[アダプター メタデータの追加ウィザードのスキーマ カテゴリ。](../core/schema-categories-in-the-add-adapter-metadata-wizard.md)  
   
-4.  スキーマが Web サービス記述言語 (WSDL) ファイルとして返されるようにサンプル コードを修正します。 この手順の詳細については、次を参照してください。[静的アダプターの IStaticAdapterConfig インターフェイス](../core/static-adapter-istaticadapterconfig-interface.md)です。  
+4. スキーマが Web サービス記述言語 (WSDL) ファイルとして返されるようにサンプル コードを修正します。 この手順の詳細については、次を参照してください。[静的アダプターの IStaticAdapterConfig インターフェイス](../core/static-adapter-istaticadapterconfig-interface.md)します。  
   
-5.  既存の WSDL ファイルを変更するか、新しい WSDL ファイルを作成します。 この手順の詳細については、次を参照してください。[アダプター WSDL ファイル](../core/adapter-wsdl-files.md)です。  
+5. 既存の WSDL ファイルを変更するか、新しい WSDL ファイルを作成します。 この手順の詳細については、次を参照してください。[アダプター WSDL ファイル](../core/adapter-wsdl-files.md)します。  
   
-6.  サンプル コードを変更して、WSDL ファイルに含まれていないアダプターによって必要とされている追加の XSD ファイルを返します。 この手順の詳細については、次を参照してください。[アダプターの GetSchema メソッド](../core/adapter-getschema-method.md)です。  
+6. サンプル コードを変更して、WSDL ファイルに含まれていないアダプターによって必要とされている追加の XSD ファイルを返します。 この手順の詳細については、次を参照してください。[アダプターの GetSchema メソッド](../core/adapter-getschema-method.md)します。  
   
-7.  アダプターのレジストリ キーを変更して、アダプターのレジストリ ファイルを実行します。 この手順の詳細については、次を参照してください。[アダプターの登録ファイル](../core/adapter-registration-file.md)です。  
+7. アダプターのレジストリ キーを変更して、アダプターのレジストリ ファイルを実行します。 この手順の詳細については、次を参照してください。[アダプターの登録ファイル](../core/adapter-registration-file.md)します。  
   
-8.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に静的アダプターをインストールします。 この手順の詳細については、次を参照してください。[アダプターを BizTalk Server インストール](../core/install-the-adapter-into-biztalk-server.md)です。  
+8. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に静的アダプターをインストールします。 この手順の詳細については、次を参照してください。[アダプターを BizTalk Server インストール](../core/install-the-adapter-into-biztalk-server.md)します。  
   
 9. アダプターのプロパティ ページに対して行われた変更をテストします。 アダプターを再ビルドして、アダプター メタデータの追加ウィザードに表示される UI をテストします。 この手順の詳細については、次を参照してください[のビルドとアダプター プロジェクトのテスト。](../core/build-and-test-the-adapter-project.md)  
   
@@ -49,4 +49,4 @@ ms.locfileid: "22278898"
   
 -   [静的アダプターの IStaticAdapterConfig インターフェイス](../core/static-adapter-istaticadapterconfig-interface.md)  
   
--   [スキーマのカテゴリ、アダプター メタデータのウィザードの追加](../core/schema-categories-in-the-add-adapter-metadata-wizard.md)
+-   [アダプター メタデータの追加ウィザードのスキーマ カテゴリ](../core/schema-categories-in-the-add-adapter-metadata-wizard.md)

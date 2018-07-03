@@ -1,5 +1,5 @@
 ---
-title: SSO 展開の概要 |Microsoft ドキュメント
+title: SSO 展開の概要 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,47 +18,47 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f88afb52f1db1263112732e70befb2ab95e6b135
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c98a12c11ae735945f4e69631e7211c05c0b9186
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277258"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022368"
 ---
 # <a name="sso-deployment-overview"></a>SSO 展開の概要
 この例では、システムは次のコンピュータを含む 3 つのドメインに展開されています。  
   
  **ドメイン ORCH.com**  
   
--   ORCH ドメイン コントローラ  
+- ORCH ドメイン コントローラ  
   
--   HIS1、HISSO サーバー  
+- HIS1、HISSO サーバー  
   
--   HIS2、マスタ シークレット サーバー  
+- HIS2、マスタ シークレット サーバー  
   
--   HIS3、管理データベース  
+- HIS3、管理データベース  
   
- **ドメイン SQL.com**  
+  **ドメイン SQL.com**  
   
--   SQL ドメイン コントローラ  
+- SQL ドメイン コントローラ  
   
--   SQL2、SSO データベース  
+- SQL2、SSO データベース  
   
- **ドメイン HIS.com**  
+  **ドメイン HIS.com**  
   
--   HIS ドメイン コントローラ  
+- HIS ドメイン コントローラ  
   
--   HIS4 データベース  
+- HIS4 データベース  
   
- この展開の定義について重要な点は次のとおりです。  
+  この展開の定義について重要な点は次のとおりです。  
   
--   ドメイン ORCH.com とドメイン SQL.com には、双方向の信頼関係があり、どちらの方向を使用するかを選択できます。  
+- ドメイン ORCH.com とドメイン SQL.com には、双方向の信頼関係があり、どちらの方向を使用するかを選択できます。  
   
--   ドメイン ORCH.com は、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] または [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] のネイティブの機能レベルとして構成されています。  
+- ドメイン ORCH.com は、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] または [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] のネイティブの機能レベルとして構成されています。  
   
--   すべての SSO サービスは、ORCH.com のドメイン ユーザー アカウント (Orch\SSOSvcUser) で実行されています。 ユーザーは、SQL.com ドメイン内の SQL2 コンピュータに対するアクセス許可を持つように構成されています。 ユーザーは、ORCH.com ドメイン内のプロトコル遷移および制約付き委任用に構成されています。  
+- すべての SSO サービスは、ORCH.com のドメイン ユーザー アカウント (Orch\SSOSvcUser) で実行されています。 ユーザーは、SQL.com ドメイン内の SQL2 コンピュータに対するアクセス許可を持つように構成されています。 ユーザーは、ORCH.com ドメイン内のプロトコル遷移および制約付き委任用に構成されています。  
   
--   ORCH.com のもう 1 つのドメイン ユーザー (Orch\TestAppUser) は、テスト プログラムの実行用に設定されています。 このユーザーも、プロトコル遷移および制約付き委任用に構成されています。  
+- ORCH.com のもう 1 つのドメイン ユーザー (Orch\TestAppUser) は、テスト プログラムの実行用に設定されています。 このユーザーも、プロトコル遷移および制約付き委任用に構成されています。  
   
 ## <a name="see-also"></a>参照  
  [展開プロセス](../core/deployment-process.md)

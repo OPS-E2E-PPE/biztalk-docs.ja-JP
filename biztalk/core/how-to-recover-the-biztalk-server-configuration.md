@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server の構成を回復する方法 |Microsoft ドキュメント
+title: BizTalk Server の構成を回復する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9935c2c565d78d0bc102d4aef86959c2a9066e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 179ff0690c7c07dcf58bf2d7fd92a885435509cc
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254330"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36980339"
 ---
 # <a name="how-to-recover-the-biztalk-server-configuration"></a>BizTalk Server 構成を復旧する方法
 BizTalk Server を復旧するときには、BizTalk Server をインストールしたときに作成した構成ファイルもインポートする必要があります。  
@@ -27,17 +27,17 @@ BizTalk Server を復旧するときには、BizTalk Server をインストー�
   
 ### <a name="to-recover-the-biztalk-server-configuration"></a>BizTalk Server 構成を復旧するには  
   
-1.  メモ帳を使用して、以前バックアップした BizTalk Server 構成ファイルを編集し、すべての BizTalk Server サービスに対するユーザー アカウントのパスワードを入力します。  
+1. メモ帳を使用して、以前バックアップした BizTalk Server 構成ファイルを編集し、すべての BizTalk Server サービスに対するユーザー アカウントのパスワードを入力します。  
   
-2.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 構成**です。  
+2. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 構成**します。  
   
-3.  **Microsoft BizTalk Server 構成**をクリックして**構成のインポート**です。  
+3. **Microsoft BizTalk Server 構成**、 をクリックして**構成のインポート**します。  
   
-     機能の前に無効のアイコンが表示されていないことを確認します。 構成エラーがある機能が存在する場合は、ここで修正します。  
+    機能の前に無効のアイコンが表示されていないことを確認します。 構成エラーがある機能が存在する場合は、ここで修正します。  
   
-4.  [**構成の適用**] をクリックします。  
+4. **[構成の適用]** をクリックします。  
   
-     すべての BizTalk Server 機能の構成が終了したら、構成ウィンドウを閉じます。  
+    すべての BizTalk Server 機能の構成が終了したら、構成ウィンドウを閉じます。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server を実行しているコンピューターの回復](../core/recovering-a-computer-running-biztalk-server.md)   

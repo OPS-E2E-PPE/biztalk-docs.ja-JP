@@ -1,5 +1,5 @@
 ---
-title: '手順 3: SQL アダプターを使用する移行されたアプリケーションのテスト |Microsoft ドキュメント'
+title: '手順 3: SQL アダプタを使用する移行されたアプリケーションのテスト |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,54 +12,54 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32314638b3352dccb2c30eb0b99a4d328d22b092
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 0c2487c6bdf05ae926b8bb962ed9dae6c770298e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25964024"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973291"
 ---
-# <a name="step-3-test-the-migrated-application-that-uses-the-sql-adapter"></a>手順 3: SQL アダプターを使用する移行されたアプリケーションをテストします。
-![手順 3 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
+# <a name="step-3-test-the-migrated-application-that-uses-the-sql-adapter"></a>手順 3: SQL アダプタを使用する移行されたアプリケーションをテストします。
+![ステップ 3/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
  **所要時間:** 5 分  
   
- **目標:** この手順では、顧客テーブルに挿入操作を実行することによって移行済みのアプリケーションをテストします。 これを行う、vPrev を使用して生成されたスキーマに準拠した要求メッセージをドロップする[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。  
+ **目標:** この手順では、顧客テーブルに対する挿入操作を実行することによって移行済みのアプリケーションをテストします。 これを行うには、vPrev を使用して生成されたスキーマに準拠した要求メッセージをドロップ[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
   
 ## <a name="prerequisites"></a>前提条件  
   
--   BizTalk Server 管理コンソールで物理ポートを BizTalk オーケストレーションの論理ポートにマップして、BizTalk アプリケーションを構成します。  
+- BizTalk アプリケーションを構成するには、BizTalk オーケストレーションの論理ポートを BizTalk Server 管理コンソールで物理ポートにマッピングします。  
   
--   WCF ベースの Wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成する[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。  
+- WCF ベースの Wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成する[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
   
 ### <a name="to-test-the-migrated-application"></a>移行したアプリケーションをテストするには  
   
-1.  要求、vPrev によって生成されたスキーマに準拠した XML を作成する[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 送信マップを使用して、Wcf-custom 送信ポートに変換 WCF ベースのスキーマに準拠するようにこの[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]し、SQL Server データベースに送信します。  
+1. VPrev によって生成されたスキーマに準拠した XML 要求を作成する[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 送信マップを使用して、Wcf-custom 送信ポートに変換します WCF ベースのスキーマに準拠するようにこの[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]SQL Server データベースに送信します。  
   
-    ```  
-    <Insert xmlns="http://SQLInsert">  
-      <sync>  
-        <after>  
-          <CustomerTable Name="John" />  
-        </after>  
-      </sync>  
-    </Insert>  
-    ```  
+   ```  
+   <Insert xmlns="http://SQLInsert">  
+     <sync>  
+       <after>  
+         <CustomerTable Name="John" />  
+       </after>  
+     </sync>  
+   </Insert>  
+   ```  
   
-2.  貼り付けをファイルにマップされているフォルダーに要求メッセージの受信場所。  
+2. 貼り付け、ファイルにマップされているフォルダーに要求メッセージの受信場所。  
   
-3.  オーケストレーションは、要求メッセージを使用して、SQL Server データベースに送信します。 WCF ベースのスキーマに準拠するスキーマで、SQL Server データベースからの応答が受信した[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 受信マップを使用して、Wcf-custom 送信ポートに変換しますこの、vPrev 用のスキーマに[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 SQL Server データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 上記の要求メッセージに対する応答は次のとおりです。  
+3. オーケストレーションでは、要求メッセージを使用し、SQL Server データベースに送信します。 WCF ベースのスキーマに準拠するスキーマで、SQL Server データベースからの応答が受信した[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 受信マップを使用して、Wcf-custom 送信ポートに変換しますこの vPrev 用のスキーマに[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 SQL Server データベースからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。 前の要求メッセージに対する応答は次のとおりです。  
   
-    ```  
-    <?xml version="1.0" encoding="utf-8" ?>   
-    <InsertResponse xmlns="http://SQLInsert">  
-      <Success>  
-        <long xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">101</long>   
-      </Success>  
-    </InsertResponse>  
-    ```  
+   ```  
+   <?xml version="1.0" encoding="utf-8" ?>   
+   <InsertResponse xmlns="http://SQLInsert">  
+     <Success>  
+       <long xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">101</long>   
+     </Success>  
+   </InsertResponse>  
+   ```  
   
-     前の応答では、「101」は、Customer テーブルに挿入された identity 列の値です。  
+    前の応答では、「101」は、顧客テーブルに挿入される id 列の値です。  
   
 ## <a name="see-also"></a>参照  
  [チュートリアル 1: SQL アダプタを BizTalk プロジェクトを移行します。](../../adapters-and-accelerators/adapter-sql/tutorial-1-migrate-biztalk-projects-to-the-sql-adapter.md)

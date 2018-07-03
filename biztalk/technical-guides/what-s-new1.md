@@ -1,5 +1,5 @@
 ---
-title: どのような &#39; s New1 |Microsoft ドキュメント
+title: どのような&#39;s New1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b04342a3ebdd23dad0c11644ce2d7c4f9cfa0d1e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 000d787e4a8b00d8d4539a043a36a8c4013fcc67
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302858"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37020313"
 ---
-# <a name="what39s-new"></a>どのような &#39; s New
+# <a name="what39s-new"></a>どのような&#39;s New
 次の機能はの今回のリリースの新機能、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パック。  
-  
--   更新された探索処理を大量に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]成果物  
-  
--   重要なメッセージだけを表示するためのルールの抑制を増加  
-  
--   インストール済みの開示に問題が解決した[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]バージョン
+
+- 大量の処理するために更新された探索[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]成果物  
+
+- 重要なメッセージのみを表示するためのルールの増加の抑制  
+
+- インストール済みの検出、問題を修正しました[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]バージョン。

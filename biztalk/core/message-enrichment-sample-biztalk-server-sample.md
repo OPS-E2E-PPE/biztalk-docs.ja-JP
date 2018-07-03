@@ -1,5 +1,5 @@
 ---
-title: メッセージ強化サンプル (BizTalk Server サンプル) |Microsoft ドキュメント
+title: メッセージ強化サンプル (BizTalk Server サンプル) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3413345c4e2d0a2ce4cd7ee1cb5ebda50b1dea7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 01fa66b344548654a4d2e2e2f2b8700b604ec0e7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22265210"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36998507"
 ---
 # <a name="message-enrichment-sample-biztalk-server-sample"></a>メッセージ強化サンプル (BizTalk Server サンプル)
 このメッセージ強化サンプルでは、X12 ドキュメントおよび EDIFACT ドキュメント用のインターチェンジ ヘッダーをトランザクション セット メッセージに追加する方法を示します。  
@@ -43,11 +43,11 @@ ms.locfileid: "22265210"
 7.  送信ポートは、新規メッセージを取得し、ファイル アダプター経由で \Message Enrichment\Out フォルダーに送信します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- このサンプルに格納、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストール フォルダー: [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \samples\edi\message Enrichment。  
+ このサンプルにある、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストール フォルダー: [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \samples\edi\message Enrichment。  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |---------------|-----------------|  
 |Cleanup.bat|サンプル シナリオの展開を解除します。 このファイルが正しく実行されるには、オーケストレーションのアクティブなインスタンスがないことが必要です。 アクティブなインスタンスがある場合、ファイルは正しく実行されません。|  
 |MessageEnrichment.sln|MessageEnrichment プロジェクトと MessageEnrichmentLibrary プロジェクトが含まれています。|  
@@ -76,47 +76,47 @@ ms.locfileid: "22265210"
   
 #### <a name="to-build-and-deploy-the-biztalk-project-for-this-sample"></a>このサンプルの BizTalk プロジェクトをビルドして展開するには  
   
-1.  Notepad.Exe を使用して開きます[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \samples\edi\messageenrichment\  
-    MessageEnrichment\properties\AssemblyInfo.cs し、ファイルの下部にある次の行を追加します。  
+1. Notepad.Exe を使用して開く[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \samples\edi\messageenrichment\  
+   MessageEnrichment\properties\AssemblyInfo.cs し、ファイルの下部にある次の行を追加します。  
   
-    ```  
-    [assembly: Microsoft.XLANGs.BaseTypes.BizTalkAssembly(typeof(Microsoft.BizTalk.XLANGs.BTXEngine.BTXService))]  
-    ```  
+   ```  
+   [assembly: Microsoft.XLANGs.BaseTypes.BizTalkAssembly(typeof(Microsoft.BizTalk.XLANGs.BTXEngine.BTXService))]  
+   ```  
   
-2.  変更した AssemblyInfo.cs ファイルを保存し、メモ帳を終了します。  
+2. 変更した AssemblyInfo.cs ファイルを保存し、メモ帳を終了します。  
   
-3.  コマンド ウィンドウで、次のフォルダーに移動します。  
+3. コマンド ウィンドウでは、次のフォルダーに移動します。  
   
-     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\EDI\Message Enrichment  
+    [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\EDI\Message Enrichment  
   
-4.  実行**Setup.bat**、次の操作を実行します。  
+4. 実行**Setup.bat**、次の操作を実行します。  
   
-    -   受信 (**で**) と送信 (**アウト**) \MessageEnrichment フォルダーに、このサンプル用のフォルダーです。  
+   -   受信側を作成します (**で**) と送信 (**アウト**) \MessageEnrichment フォルダーに、このサンプル用のフォルダー。  
   
-    -   キーのペアを MessageEnrichmentLibrary\testkey.snk に書き込みます。  
+   -   キーのペアを MessageEnrichmentLibrary\testkey.snk に書き込みます。  
   
-    -   MessageEnrichmentLibrary.btproj プロジェクトを構築し、展開します。  
+   -   MessageEnrichmentLibrary.btproj プロジェクトを構築し、展開します。  
   
-    -   MessageEnrichment.btproj プロジェクトを構築して展開します。  
+   -   MessageEnrichment.btproj プロジェクトを構築して展開します。  
   
-    -   MessageEnrichmentBindings.xml のバインド情報を読み取ります。  
+   -   MessageEnrichmentBindings.xml のバインド情報を読み取ります。  
   
-        > [!NOTE]
-        >  このプロジェクトのバインドでは、BizTalk ホストが信頼された認証として設定されていることが必要です。  信頼されていないホストでバインドを使用するためには、MessageEnrichmentBindings.xml で HostTrusted="true" エントリを HostTrusted="false" に変更します。  
+       > [!NOTE]
+       >  このプロジェクトのバインドでは、BizTalk ホストが信頼された認証として設定されていることが必要です。  信頼されていないホストでバインドを使用するためには、MessageEnrichmentBindings.xml で HostTrusted="true" エントリを HostTrusted="false" に変更します。  
   
-    -   オーケストレーションのバインドを更新します。  
+   -   オーケストレーションのバインドを更新します。  
   
-    -   送信ポート、送信ポート グループ、および受信ポートを更新します。  
+   -   送信ポート、送信ポート グループ、および受信ポートを更新します。  
   
-    -   パーティと参加状況を更新します。  
+   -   パーティと参加状況を更新します。  
   
-    -   送信ポートを開始します。  
+   -   送信ポートを開始します。  
   
-    -   受信場所を有効にします。  
+   -   受信場所を有効にします。  
   
-    -   オーケストレーションを登録して開始します。  
+   -   オーケストレーションを登録して開始します。  
   
- BizTalk Server でこのサンプルを使用する準備ができました。  
+   BizTalk Server でこのサンプルを使用する準備ができました。  
   
 ## <a name="running-this-sample"></a>このサンプルの実行  
  Message Enrichment サンプルを実行するには、次の手順に従います。  
@@ -137,4 +137,4 @@ ms.locfileid: "22265210"
  なし  
   
 ## <a name="see-also"></a>参照  
- [EDI および AS2 (BizTalk Server Samples フォルダ)](../core/edi-and-as2-biztalk-server-samples-folder.md)
+ [EDI および AS2 (BizTalk Server Samples フォルダー)](../core/edi-and-as2-biztalk-server-samples-folder.md)

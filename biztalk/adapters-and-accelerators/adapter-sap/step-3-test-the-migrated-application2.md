@@ -1,5 +1,5 @@
 ---
-title: '手順 3: テスト移行 Application2 |Microsoft ドキュメント'
+title: '手順 3: 移行後のアプリケーション 2 のテスト |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,33 +15,33 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6dbf6154337dc9daf5dcfe75b3f5b7299ae843ab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cc49906e58e549a8ed9c90446b011dc3b51e0a45
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216466"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37017818"
 ---
 # <a name="step-3-test-the-migrated-application"></a>手順 3: 移行後のアプリケーションをテストします。
-![手順 3 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
+![ステップ 3/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
  **所要時間:** 5 分  
   
- **目標:** この手順では、WCF ベースを使用してフラット ファイル IDOC を送信することによって移行済みのアプリケーションをテストします[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
+ **目標:** この手順では、WCF ベースを使用してフラット ファイル IDOC を送信することによって移行済みのアプリケーションをテストします[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
 ## <a name="prerequisites"></a>前提条件  
   
--   BizTalk Server 管理コンソールで物理ポートを BizTalk オーケストレーションの論理ポートにマップして、BizTalk アプリケーションを構成します。  
+- BizTalk アプリケーションを構成するには、BizTalk オーケストレーションの論理ポートを BizTalk Server 管理コンソールで物理ポートにマッピングします。  
   
--   WCF ベースの wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成する[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
+- WCF ベースの wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成する[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
 ### <a name="to-test-the-migrated-application"></a>移行したアプリケーションをテストするには  
   
-1.  SendIDOC_Migration フォルダーから BOMDOC.txt ファイルをコピーします。 これは、フラット ファイル IDOC を SAP システムに送信します。  
+1.  SendIDOC_Migration フォルダーから BOMDOC.txt ファイルをコピーします。 これは、SAP システムに送信するフラット ファイル IDOC です。  
   
-2.  貼り付けをファイルにマップされているフォルダーにフラット ファイル IDOC の受信場所。  
+2.  貼り付け、ファイルにマップされているフォルダーにフラット ファイル IDOC の受信場所。  
   
-3.  オーケストレーションがファイルを使用し、IDOC を SAP システムに送信します。 イベント ビューアーにエラーがあるかどうかを確認します。  
+3.  オーケストレーションは、ファイルを使用し、IDOC を SAP システムに送信します。 イベント ビューアーにエラーがあるかを確認します。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 3: SAP 送信 IDOC の BizTalk プロジェクトを移行します。](../../adapters-and-accelerators/adapter-sap/tutorial-3-migrating-an-sap-send-idoc-biztalk-project.md)
+ [チュートリアル 3: SAP の IDOC 送信 BizTalk プロジェクトを移行する](../../adapters-and-accelerators/adapter-sap/tutorial-3-migrating-an-sap-send-idoc-biztalk-project.md)

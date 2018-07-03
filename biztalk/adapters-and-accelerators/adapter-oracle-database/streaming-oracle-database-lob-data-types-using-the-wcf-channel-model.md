@@ -1,5 +1,5 @@
 ---
-title: WCF チャネル モデルを使用して Oracle データベース LOB データ型をストリーミング |Microsoft ドキュメント
+title: WCF チャネル モデルを使用して Oracle データベース LOB データ型のストリーミング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,32 +15,32 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf0ee2f8d1c90f69a206a3006398d52e67f819e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa8a493c94761ce74d76885ee59fae1425c15523
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22215794"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013843"
 ---
 # <a name="streaming-oracle-database-lob-data-types-using-the-wcf-channel-model"></a>ストリーミングの Oracle データベース LOB データ型 WCF チャネル モデルを使用します。
-[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]エンド ツー エンドの特定の操作の LOB データのストリーミングをサポートしています。 このトピックのセクションでは、WCF チャネル モデルを使用すると、LOB データのストリーミングを実装する方法について説明します。  
+[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] LOB データの特定の操作のエンド ツー エンドのストリーミングをサポートしています。 このトピックのセクションでは、WCF チャネル モデルを使用すると、LOB データのストリーミングを実装する方法について説明します。  
   
- アダプターが LOB データ型のストリーミングをサポートする方法の詳細については、次を参照してください。 [Oracle データベース アダプターのラージ オブジェクト データ型をストリーミング](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)です。 続行する前にこのトピックの内容を確認してください。  
+ 背景情報アダプターが LOB データ型のストリーミングがサポートする方法については、次を参照してください。 [Oracle データベース アダプターのラージ オブジェクト データ型のストリーミング](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)します。 続行する前に、このトピックを確認してください。  
   
- LOB データのストリーミングを示すサンプルに含まれている SDK のサンプルで使用できる、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。 詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)です。  
+ LOB データのストリーミングを示すサンプルに含まれる SDK サンプルでは、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
   
 ## <a name="streaming-outbound-messages-to-the-adapter"></a>アダプターに送信メッセージのストリーミング  
- アダプターは、エンド ツー エンドの LOB データ UpdateLOB 操作の要求メッセージのストリーミングをサポートします。  
+ アダプターでは、エンド ツー エンドの LOB データのストリーミング UpdateLOB 操作の要求メッセージをサポートしています。  
   
- ストリーミングをサポートするエンド ツー エンド WCF チャネル モデルで UpdateLOB 操作で、次の操作を行う必要があります。  
+ WCF チャネル モデルで UpdateLOB 操作に関するエンド ツー エンドのストリーミングをサポートするには、次の操作をする必要があります。  
   
-1.  設定、 **UseAmbientTransaction**バインディング プロパティを true に設定します。  
+1.  設定、 **UseAmbientTransaction**プロパティを true にバインドします。  
   
-2.  実装する**System.ServiceModel.Channels.BodyWriter**が (ノード値の LOB データのストリーミングを実行中) の LOB データをストリーミング可能です。  
+2.  実装を**System.ServiceModel.Channels.BodyWriter**ことができる (ノード値の LOB データのストリーミングを実行する) LOB データをストリーミングします。  
   
-3.  トランザクションのスコープ内で UpdateLOB 操作を実行します。  
+3.  トランザクション スコープ内で UpdateLOB 操作を実行します。  
   
-4.  作成、 **System.ServiceModel.Message**これを使用してメッセージ本文を指定することによって、操作を呼び出すために使用**BodyWriter**の適切なオーバー ロードを使用して、 **Message.Create**メソッドです。  
+4.  作成、 **System.ServiceModel.Message**このメッセージ本文を指定して、操作を呼び出すために使用**BodyWriter**の適切なオーバー ロードを使用して、 **Message.Create**メソッド。  
   
 ### <a name="setting-the-useambienttransaction-binding-property"></a>プロパティのバインド UseAmbientTransaction の設定  
  次の例のバインドを作成する方法を示しています、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]設定と、 **UseAmbientTransaction**プロパティをバインドします。  
@@ -125,8 +125,8 @@ class StreamingBodyWriter : BodyWriter, IDisposable
 }  
 ```  
   
-### <a name="perform-the-operations-within-a-transaction-scope"></a>トランザクションのスコープ内での操作を実行します。  
- 次の例では、トランザクション スコープ内で操作を実行する方法を示します。  
+### <a name="perform-the-operations-within-a-transaction-scope"></a>トランザクション スコープ内で操作を実行します。  
+ 次の例では、トランザクション スコープ内での操作を実行する方法を示します。  
   
 ```  
 // Create a transaction scope  
@@ -143,7 +143,7 @@ using(TransactionScope tx = new TransactionScope())
 ```  
   
 ### <a name="creating-a-message-by-using-a-bodywriter"></a>BodyWriter によるメッセージの作成  
- 次の例は、UpdateLOB 要求を使用してメッセージを作成する方法を示します、 **BodyWriter**前の例です。 メッセージのデータは、ファイルから読み取られます。  
+ 次の例では、使用して UpdateLOB 要求メッセージを作成する方法を示しています、 **BodyWriter**前の例です。 メッセージのデータは、ファイルから読み取られます。  
   
 ```  
 // Create a transaction scope  
@@ -166,27 +166,27 @@ using(TransactionScope tx = new TransactionScope())
 ```  
   
 ## <a name="streaming-inbound-messages-from-the-adapter"></a>アダプターから受信メッセージのストリーミング  
- アダプターには、次の受信メッセージのストリーミング エンド ツー エンドの LOB データがサポートされています。  
+ アダプターには、エンド ツー エンドの LOB データが次の受信メッセージのストリーミングがサポートされています。  
   
--   出力を持つ関数の応答メッセージまたは LOB データを含む IN OUT パラメーターです。 レコード型のパラメーターが LOB データの列を含めることができますに注意してください。  
+- 応答メッセージを持つ関数または LOB データが含まれている IN OUT パラメーター。 レコードの種類のパラメーターが LOB データの列を含めることができますに注意してください。  
   
--   LOB データを含む関数の REF CURSOR 出力パラメーター (または戻り値) の応答メッセージ。 これには、REF CURSOR を IN パラメーターの出力側が含まれます。  
+- LOB データが含まれている関数を REF CURSOR パラメーター (または戻り値) の応答メッセージ。 これには、出力側 REF CURSOR を IN パラメーターにはが含まれます。  
   
--   プロシージャの応答メッセージまたは LOB データを含む IN OUT パラメーターです。 レコード型のパラメーターが LOB データの列を含めることができますに注意してください。  
+- プロシージャの応答メッセージまたは LOB データが含まれている IN OUT パラメーター。 レコードの種類のパラメーターが LOB データの列を含めることができますに注意してください。  
   
--   LOB データを含む REF CURSOR 出力パラメーターを含むプロシージャの応答メッセージ。 出力側 REF CURSOR を IN パラメーターにはが含まれます  
+- LOB データを含む OUT REF CURSOR パラメーターを含むプロシージャの応答メッセージ。 これにより、出力側 REF CURSOR を IN パラメーターにはが含まれます。  
   
--   LOB データを含む結果セットを返す SQLEXECUTE 操作の応答メッセージ。  
+- LOB データを含む結果セットを返す SQLEXECUTE 操作の応答メッセージ。  
   
--   LOB データを返す結果のテーブルまたはビューの Select 操作の応答メッセージを設定します。  
+- LOB データを返す結果のテーブルまたはビューの Select 操作の応答メッセージを設定します。  
   
--   要求操作のメッセージ (受信) POLLINGSTMT  
+- (受信) POLLINGSTMT 操作の要求メッセージ  
   
- WCF チャネル モデルで受信メッセージのエンド ツー エンドのストリーミングをサポートする必要があります。  
+  WCF チャネル モデル内の受信メッセージのエンド ツー エンドのストリーミングをサポートするには、次の操作をする必要があります。  
   
-1.  実装する**System.Xml.XmlDictionaryWriter**が (ノード値の LOB データのストリーミングを実行中) の LOB データをストリーミング可能です。  
+1.  実装を**System.Xml.XmlDictionaryWriter**ことができる (ノード値の LOB データのストリーミングを実行する) LOB データをストリーミングします。  
   
-2.  使用する、**メッセージ**を呼び出すことによって**WriteBodyContents**メソッドをこの**XmlDictionaryWriter**です。  
+2.  使用、**メッセージ**を呼び出して**WriteBodyContents**メソッドをこの**XmlDictionaryWriter**します。  
   
 ### <a name="implementing-an-xmldictionarywriter"></a>XmlDictionaryWriter の実装  
  次の例の実装を示しています、 **XmlDictionaryWriter**ノード値のストリーミングを実行します。  
@@ -334,7 +334,7 @@ class FileXmlWriter : XmlDictionaryWriter
 ```  
   
 ### <a name="consuming-a-message-by-using-an-xmldictionarywriter"></a>メッセージを使用する XmlDictionaryWriter を使用して、  
- 次の例は、応答メッセージを使用してテーブルを使用する方法を示しています、 **FileXmlWriter**前の例で実装します。 (、 **FileWriter**サブクラスによってクラスが作成された**XmlDictionaryWriter**)。この例では、 **IRequestChannel**選択操作を呼び出すためのチャネル。 チャネルの作成の詳細が省略されています。 要求メッセージはファイルから読み取られ、応答メッセージは、ファイルに書き込まれます。  
+ 次の例は、応答メッセージを使用してテーブルを使用する方法を示しています、 **FileXmlWriter**前の例で実装します。 (、 **FileWriter**クラスがサブクラス化によって作成された**XmlDictionaryWriter**)。この例では、 **IRequestChannel**選択操作を呼び出すためのチャネル。 チャネルの作成の詳細が省略されています。 要求メッセージは、ファイルから読み取られ、選択の応答メッセージは、ファイルに書き込まれます。  
   
 ```  
 // Read Select message body from a file  
@@ -354,7 +354,7 @@ fileXmlWriter.Close();
 OutputMsg.Close();  
 ```  
   
- 次の XML では、Select 操作の要求メッセージ (select.xml ファイルの内容) を表示します。 CUSTOMER テーブルには、写真をという名前の BLOB 列が含まれています。  
+ 次の XML では、選択操作の要求メッセージ (select.xml ファイルの内容) を表示します。 CUSTOMER テーブルには、写真をという名前の BLOB 列が含まれています。  
   
 ```  
 <Select xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER">  

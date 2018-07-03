@@ -2,52 +2,52 @@
 redirect_url: /biztalk/core/troubleshooting-tibco-rendezvous/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: cce9ad685bc4b0bc8a0d97e0645573c5e2db1cf5
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: f394629849f1c06328ca66ec6eb6cc21c574982a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975568"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969027"
 ---
-# <a name="using-event-tracing-for-windows"></a>Windows イベント トレーシングの使用
-Microsoft BizTalk Adapter for TIBCO Rendezvous は、エラー、警告、および情報メッセージを Windows イベント ビューアーに記録します。 追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。 ETW をアクティブにすると、メッセージ受信用の *.etl ファイルが作成されます。 このファイルはバイナリ形式であり、読み取るには変換する必要があります。 これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル、tracerpt.exe や tracedmp.exe などです。 たとえば、tracerpt.exe アプリケーションに変換されます、 \*.etl ファイルを 2 つのテキスト ファイル: summary.txt と dumpfile.csv です。  
+# <a name="using-event-tracing-for-windows"></a>イベント トレーシング Windows の使用
+Microsoft BizTalk Adapter for TIBCO Rendezvous は、エラー、警告、および情報メッセージを Windows イベント ビューアーに記録します。 追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。 ETW をアクティブにすると、メッセージ受信用の *.etl ファイルが作成されます。 このファイルはバイナリ形式であり、読み取るには変換する必要があります。 これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル、tracerpt.exe や tracedmp.exe などです。 たとえば、tracerpt.exe アプリケーションは変換、 \*.etl ファイルを 2 つのテキスト ファイル: summary.txt と dumpfile.csv です。  
   
 ## <a name="etw-components"></a>ETW コンポーネント  
  Windows イベント トレーシングには 3 つのコンポーネントがあります。  
   
--   **コント ローラー アプリケーション**: をアクティブにし、(たとえば、tracelog.exe または logman.exe) プロバイダーが非アクティブ化します。  
+-   **コント ローラー アプリケーション**: をアクティブにし、(たとえば、tracelog.exe または logman.exe) のプロバイダーを非アクティブにします。  
   
      PATH 環境変数を、tracelog.exe の場所を指すように設定します。 これにより、BTATIBCO RendezvousTrace の呼び出しが、システムの tracelog.exe を見つけることができます。 既定では、BTATIBCO RendezvousTrace は現在のパスを検索します。  
   
 > [!NOTE]
 >  tracelog.exe は Microsoft SDK に含まれており、Microsoft BizTalk Adapter for TIBCO Rendezvous で提供されるコマンドと互換性があります。 logman.exe の使い方については、logman のマニュアルを参照してください。  
   
--   **コンシューマー アプリケーション**: 記録されたイベントの読み取り。  
+- **コンシューマー アプリケーション**: 記録されたイベントの読み取り。  
   
-     コンシュマー アプリケーションで etl ファイルのイベントを読み取るには、Event Tracing for Windows によるダンプ処理でファイルを生成する必要があります。 通常、この作業は、コントローラーがトレーシングを非アクティブ化するときに行われます。  
+   コンシュマー アプリケーションで etl ファイルのイベントを読み取るには、Event Tracing for Windows によるダンプ処理でファイルを生成する必要があります。 通常、この作業は、コントローラーがトレーシングを非アクティブ化するときに行われます。  
   
-     コント ローラーにコンシューマー アプリケーションを使用して、トレースを非アクティブ化せず、リアル タイム オプションを使用してトレースをアクティブ化する必要があります\<リアルタイム\>-rt を = です。  
+   コンシューマー アプリケーションを使用して、トレースを非アクティブ化せず、リアルタイム オプションでは、トレースで、コント ローラーによってアクティブ化する必要があります\<リアルタイム\>-rt を = です。  
   
--   **プロバイダー**: イベントを提供します。  
+- **プロバイダー**: イベントを提供します。  
   
-     BizTalk Adapter for TIBCO Rendezvous には 3 つの異なるプロバイダーが含まれています。 これらは Windows Management Instrumentation (WMI) に登録されます。 root\WMI\EventTrace パス内で登録プロバイダーを検索するには、WMI CIM Studio などのツールを使用します。  
+   BizTalk Adapter for TIBCO Rendezvous には 3 つの異なるプロバイダーが含まれています。 これらは Windows Management Instrumentation (WMI) に登録されます。 root\WMI\EventTrace パス内で登録プロバイダーを検索するには、WMI CIM Studio などのツールを使用します。  
   
- BizTalk Adapter for TIBCO Rendezvous には 3 つのプロバイダーがあります。 そのため、異なる種類のメッセージを記録できます。  
+  BizTalk Adapter for TIBCO Rendezvous には 3 つのプロバイダーがあります。 そのため、異なる種類のメッセージを記録できます。  
   
--   **受信元ログ プロバイダー**:\<トレース要素\>スイッチが **-受信者**です。  
+- **受信側のログ記録プロバイダー**: \<Trace 要素\>スイッチが **-受信者**します。  
   
--   使用して **-受信者**を実行時にアダプターによって受信されたログからすべてのメッセージを取得します。  
+- 使用 **-受信者**実行時にアダプターで受信されたログからすべてのメッセージを取得します。  
   
--   **送信元ログ プロバイダー**:\<トレース要素\>スイッチが **-トランスミッター**です。  
+- **送信元ログ プロバイダー**: \<Trace 要素\>スイッチが **-送信機**します。  
   
-     使用して **-トランスミッター**を実行時にアダプターによって送信されたログからすべてのメッセージを取得します。  
+   使用 **-送信機**実行時にアダプターによって送信されたログからすべてのメッセージを取得します。  
   
--   **管理ログ プロバイダー —**、\<トレース要素\>スイッチが **-管理**です。  
+- <strong>管理ログ プロバイダー —</strong>、 \<Trace 要素\>スイッチが **-管理**します。  
   
-     使用して **-管理**サーバー システムの参照中に生成されたログからすべてのメッセージを取得します。  
+   使用 **-管理**サーバー システムの参照中に生成されたログからすべてのメッセージを取得します。  
   
 ## <a name="btatibcorvtrace-command"></a>BTATIBCORVTrace コマンド  
- ETW を使用するには、BizTalk Adapter for TIBCO Rendezvous コマンドである BTATIBCORVTrace.cmd を実行します。 このコマンドは次のように使用します。  
+ ETW を使用するには、BizTalk Adapter for TIBCO Rendezvous コマンド BTATIBCORVTrace.cmd を実行します。 このコマンドは次のように使用します。  
   
 ```  
 BTATIBCORVTrace <Trace element> -start [-cir <MB>|   
@@ -55,27 +55,27 @@ BTATIBCORVTrace <Trace element> -start [-cir <MB>|
 BTATIBCORVTrace <Trace element> -stop  
 ```  
   
- 場所: **\<トレース要素\>** プロバイダーの種類は、(必須)。  
+ 場所:  **\<Trace 要素\>** プロバイダーの種類は、(必須)。  
   
  そのオプションは次のとおりです。  
   
--   **送信機能**  
+- **-送信機**  
   
--   **-受信機**  
+- **-受信機**  
   
--   **-管理**  
+- **-管理**  
   
--   **-開始、停止**: プロバイダーをアクティブまたは非アクティブです。  
+- **-開始、停止**: プロバイダーをアクティブまたは非アクティブです。  
   
--   **-cir \<MB\>**: ファイルのサイズおよび種類です。 **-cir**循環ファイルです。 **\<MB\>**: サイズ (メガバイト単位)。  
+- **-cir \<MB\>**: ファイルのサイズおよび種類。 **-cir**は循環ファイルです。 **\<MB\>**: サイズ (メガバイト単位)。  
   
--   **-seq \<MB\>**: ファイルのサイズおよび種類です。 **-seq**シーケンシャル ファイルです。 **\<MB\>**: サイズ (メガバイト単位)。  
+- **-seq \<MB\>**: ファイルのサイズおよび種類。 **-seq**はシーケンシャル ファイルです。 **\<MB\>**: サイズ (メガバイト単位)。  
   
--   **-rt**: リアル タイム モードに設定します。  
+- **-rt**: のリアル タイム モードに設定します。  
   
--   **Logfile**: ログ ファイルの名前 (既定では c:\rtlog.etl) です。  
+- **ログ ファイル**: ログ ファイルの名前 (既定では c:\rtlog.etl) です。  
   
- 例:  
+  以下に例を示します。  
   
 ```  
 BTATIBCORVTrace -transmitter -start -cir 10 -rt c:\log\mylog.etl  

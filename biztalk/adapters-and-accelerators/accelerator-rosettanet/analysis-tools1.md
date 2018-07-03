@@ -1,5 +1,5 @@
 ---
-title: 分析 Tools1 |Microsoft ドキュメント
+title: 分析 Tools1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,15 +17,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92e8fb1061092b378ca38d888ea6c34d89b0e787
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: c565beaba3a8d39d566a8c2b644256128c837157
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005443"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988475"
 ---
 # <a name="analysis-tools"></a>分析ツール
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server では、ビジネス アナリストやインフォメーション ワーカーは分析ツールのセットを提供します。 これらのツールの詳細については、次を参照してください。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server のヘルプ。  
+Microsoft BizTalk Server は、ビジネス アナリストやインフォメーション ワーカーは、一連の分析ツールを提供します。 これらのツールの詳細については、MicrosoftBizTalk Server のヘルプを参照してください。  
   
 ## <a name="business-activity-monitoring"></a>ビジネス アクティビティの監視  
  BizTalk ビジネス アクティビティ監視 (BAM) は、異種ビジネス プロセスのリアルタイム ビューをビジネス ユーザーに提供します。 これによって、ビジネス上の決定を行うデータがもたらされます。  

@@ -1,6 +1,6 @@
 ---
-title: BizTalk Server で RosettaNet accelerator に関する既知の問題 |Microsoft ドキュメント
-description: 既知の問題と解決策の障害、BAM、インストールおよび構成、および BizTalk Server で BTARN で複数の 0A1 通知を参照してください。
+title: BizTalk Server で RosettaNet accelerator に関する既知の問題 |Microsoft Docs
+description: 既知の問題と解決策の障害、BAM、インストールと構成、および BizTalk Server で BTARN では、0A1 通知を参照してください。
 caps.latest.revision: 11
 author: MandiOhlinger
 manager: anneta
@@ -13,15 +13,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 335eb3c9-b565-470f-b69c-2a771ef8b476
 ms.author: mandia
-ms.openlocfilehash: bbb7ddc2028383f8ac346e7876459f322d2dd96b
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: a7c421f647a7e23ff23474af6c00cb6f06ec9c55
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26010779"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36974243"
 ---
 # <a name="known-issues"></a>既知の問題
-ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] に関するエラーを回避するときに役立つ情報を紹介します。 既知の問題は次の分野に分かれています。  
+このセクションには、Microsoft® によるエラーの回避に役立つ有用な情報が含まれています。[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]します。 既知の問題は次の分野に分かれています。  
   
 -   0A1 エラー通知  
   
@@ -50,7 +50,7 @@ ms.locfileid: "26010779"
  [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] では、BizTalk Application Users グループと BizTalk Server Administrators グループのどちらにでもグループを追加できます。 ただし、BizTalk Application Users グループまたは BizTalk Server Administrators グループに所属する個々のユーザー アカウントとグループが同じドメインに属していることが必要です。  
   
 ### <a name="uninstallation-of-btarn-fails-if-biztalk-server-is-removed-first"></a>BizTalk Server を先に削除すると BTARN のアンインストールに失敗する  
- 削除する前に BizTalk Server を削除する場合[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]エラーなく削除処理が失敗しました。 この問題を解決するを再インストールし、BizTalk Server を再構成し、削除[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]です。  
+ 削除する前に BizTalk Server を削除する場合[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]削除プロセスがエラーなしに失敗します。 この問題を解決するに再インストールし、BizTalk Server を再構成し、削除[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]します。  
   
 ### <a name="distributed-deployment-requires-a-domain-controller"></a>分散展開にドメイン コントローラが必要である  
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を 1 台のサーバーにインストールし、構成に使用する [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] データベースを別のサーバーにインストールしているようなマルチサーバー環境では、[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] を展開する際にドメイン コントローラーが必要になります。  
@@ -67,22 +67,22 @@ ms.locfileid: "26010779"
 ## <a name="miscellaneous"></a>その他  
   
 ### <a name="btarn-will-receive-messages-encrypted-in-either-encryption-algorithm"></a>どちらの暗号アルゴリズムで暗号化されているメッセージでも受信する  
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] の受信パイプラインは、メッセージの暗号化に使用されるプロトコルと、このフィールドの Encoding 設定が一致しない場合でも、メッセージを受信して暗号化を解除します。 したがって、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RC2 40 または 3 des で暗号化されているメッセージを受信します。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] の受信パイプラインは、メッセージの暗号化に使用されるプロトコルと、このフィールドの Encoding 設定が一致しない場合でも、メッセージを受信して暗号化を解除します。 そのため、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RC2 40 または 3 des で暗号化されたメッセージを受信します。  
   
 ### <a name="btarn-requires-a-signal-in-a-single-action-synchronous-scenario"></a>シングル アクション同期シナリオでシグナルが必要である  
  シングル アクションの同期シナリオでは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は常にシグナルを要求し、シグナルを生成します。 この動作は、シングル アクションの同期シナリオではシグナルの必要性が場合に応じて変化する RosettaNet の仕様とは異なります。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が応答側であれば、開始側からのメッセージに応答して常にシグナルを生成します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が開始側であれば、応答側からのシグナルを常に要求します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、シグナルを受信しなかった場合、プロセス構成設定の `Time To Perform` プロパティに指定された時間が経過するとタイムアウトになり、0A1 メッセージを生成します。  
   
 ### <a name="btarn-supports-utf-16-in-received-messages"></a>受信メッセージで UTF-16 がサポートされる  
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]受信し、utf-16 の文字セットを持つメッセージを処理します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]utf-8 の文字セットを含むメッセージを送信します。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 受信し、utf-16 の文字セットのメッセージを処理します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] utf-8 の文字セットを含むメッセージを送信します。  
   
 ### <a name="namespaces-must-be-stripped-from-response-messages-mapped-from-request-messages"></a>要求メッセージからマップされた応答メッセージから名前空間を削除する必要がある  
- ダブル アクションのシナリオのプライベート プロセスで BizTalk マッパーを使用すると、BizTalk マッパーは、要求メッセージからマップされた応答メッセージ インスタンスの一部の要素タグに名前空間を追加します。 この名前空間により、送信パイプラインで障害が発生します。 したがって、この名前空間は削除する必要があります。 そのためには、HeaderHelper サンプルを使用します。 詳細については、次を参照してください[Double Action PIPAutomation Orchestration &#91;。RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)と[手順 4: HeaderHelper プロジェクト &#91; を作成します。RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-4-creating-the-headerhelper-project.md).  
+ ダブル アクションのシナリオのプライベート プロセスで BizTalk マッパーを使用すると、BizTalk マッパーは、要求メッセージからマップされた応答メッセージ インスタンスの一部の要素タグに名前空間を追加します。 この名前空間により、送信パイプラインで障害が発生します。 したがって、この名前空間は削除する必要があります。 そのためには、HeaderHelper サンプルを使用します。 詳細については、次を参照してください。 [Double Action PIPAutomation Orchestration &#91;RN3&#93; ](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)と[手順 4: HeaderHelper プロジェクトの作成&#91;RN3&#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-4-creating-the-headerhelper-project.md)します。  
   
 ### <a name="changing-uri-settings-requires-iisreset"></a>URI 設定を変更すると IISRESET が必要になる  
  セットアップ プログラムの実行中に、受信と送信の .aspx ページが使用する URI 設定、および受信と送信のアダプタの URI 設定が行われます。 .aspx ページまたはアダプタがインストールされているコンピュータの名前を変更する場合は、この設定を変更する必要があります。 構成処理を再実行することでこれらの設定を変更できますが、そのためには、構成設定をすべてリセットする必要があります。 URI 設定のみを変更するには、関連付けられたレジストリ キー (`AsyncReceivePortURI`、`RNIFSenderURI`、および `SyncReceivePortURI`) を変更します。 このレジストリ設定のいずれかを変更した後は、変更を有効にするため、IISRESET を実行する必要があります。 これは、後で使用するために [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が設定をキャッシュしているためです。 IISRESET の実行後は、BizTalk サービスも再開する必要があります。  
   
 ### <a name="btarn-does-not-enforce-restrictions-on-rnif-v11-enumerations"></a>BTARN が RNIF v1.1 列挙には制約を実行しない  
- RosettaNet Implementation Framework (RNIF) Specification v1.1 では、一部の RNIF スキーマ列挙に制限を指定します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]これらの制限を強制しませんしがこれらの制限事項に対して検証されません。 この制約は RNIF V2.01 には適用されません。  
+ RosettaNet Implementation Framework (RNIF) Specification v1.1 では、一部の RNIF スキーマ列挙に制限を指定します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] これらの制限は適用されませんし、その制限に対する検証を行いません。 この制約は RNIF V2.01 には適用されません。  
   
  これは、以下の Service Header 要素に適用されます。  
   
@@ -98,26 +98,26 @@ ms.locfileid: "26010779"
   
 -   `VersionIdentifier`  
   
-### <a name="performancecontrolrequest-parameters-will-not-override-default-process-configuration-settings"></a>PerformanceControlRequest パラメーターが既定のプロセス構成設定を上書きしない  
- 受信メッセージでは、サービス ヘッダーに `PerformanceControlRequest` パラメーターを組み込むことができます。 これらのパラメーターで行われた、プロセス構成設定で設定されている Time to Acknowledge (Receipt) と Time to Perform の時間遅延パラメータの値を含める、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールです。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]基づくこの遅延時間を動的に設定しません、`PerformanceControlRequest`受信メッセージ内のパラメーターです。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]プロセス構成設定で設定する既定の PIP 値から時間遅延を引き継ぎます。 この処理は RNIF (RosettaNet Implementation Framework) Specification V1.1 に準拠しています。  
+### <a name="performancecontrolrequest-parameters-will-not-override-default-process-configuration-settings"></a>PerformanceControlRequest パラメーターが既定のプロセス構成設定をオーバーライドしない  
+ 受信メッセージでは、サービス ヘッダーに `PerformanceControlRequest` パラメーターを組み込むことができます。 これらのパラメーターがで行われるプロセス構成設定で設定されている Time to Acknowledge (Receipt) と、実行までの時間の時間遅延パラメータの値を含める、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソール。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 基づく時間遅延を動的に設定しません、`PerformanceControlRequest`受信メッセージ内のパラメーター。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] プロセス構成設定で設定された既定の PIP 値から時間遅延を引き継ぎます。 この処理は RNIF (RosettaNet Implementation Framework) Specification V1.1 に準拠しています。  
   
 ### <a name="the-pip-name-and-pip-version-of-double-action-messages-are-case-sensitive"></a>ダブルアクション メッセージの PIP 名と PIP バージョンで大文字と小文字が区別される  
  応答メッセージの PIP 名および PIP バージョンの大文字と小文字の区別が、元のダブル アクション要求メッセージの対応する値と異なる場合、開始側 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は応答メッセージを無効として拒否し、応答側に例外を返します。  
   
 ### <a name="btarn-does-not-support-changing-agreement-settings-while-there-are-active-processes"></a>アクティブなプロセスが存在する間はアグリーメントを変更できない  
- クリックすると、すぐにアグリーメントのプロパティへの変更が適用されます**適用**または**OK**を受け付けるようにします。 アグリーメントを変更すると、そのアグリーメントが関係している、既に実行中のプロセスまたは新しいプロセスでの新しいアクティビティで、変更されたアグリーメント プロパティが使用されます。 アグリーメントを変更した時点で実行中のプロセスがあった場合、以前のアグリーメント プロパティが既にメッセージに使用されていた可能性があります。 このプロセスの新しいメッセージでは、新しいアグリーメント設定が使用されるので、予測不可能な結果が生じることがあります。 アグリーメント設定の変更は、実行中のプロセスがないときに行うことをお勧めします。  
+ クリックするとすぐにアグリーメントのプロパティへの変更が適用されます**適用**または**OK**を受け付けるようにします。 アグリーメントを変更すると、そのアグリーメントが関係している、既に実行中のプロセスまたは新しいプロセスでの新しいアクティビティで、変更されたアグリーメント プロパティが使用されます。 アグリーメントを変更した時点で実行中のプロセスがあった場合、以前のアグリーメント プロパティが既にメッセージに使用されていた可能性があります。 このプロセスの新しいメッセージでは、新しいアグリーメント設定が使用されるので、予測不可能な結果が生じることがあります。 アグリーメント設定の変更は、実行中のプロセスがないときに行うことをお勧めします。  
   
 ### <a name="btarn-will-not-perform-cross-field-validation-after-changes-to-a-process-configuration-profile"></a>プロセス構成プロファイルの変更後にスフィールド検証が実行されない  
- プロセス構成プロファイルを作成してからアグリーメントを作成すると、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] でクロスフィールド検証が実行され、アグリーメントとプロファイルのプロパティに互換性があることが確認されます。 たとえば、"CIDX" に設定されている標準プロパティを持つプロファイルに対して、アグリーメントの 0A1 アグリーメント プロパティが "非 0A1" に設定されていることが確認されます。 ただし、アグリーメントの作成後に、プロセス構成プロファイルを変更する場合は、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]クロス フィールド検証は実行されません。 プロパティ変更した場合、標準的な"RosettaNet"から"CIDX"に[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]"0A1"に、アグリーメントの 0A1 アグリーメント プロパティを設定することを確認できません。  
+ プロセス構成プロファイルを作成してからアグリーメントを作成すると、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] でクロスフィールド検証が実行され、アグリーメントとプロファイルのプロパティに互換性があることが確認されます。 たとえば、"CIDX" に設定されている標準プロパティを持つプロファイルに対して、アグリーメントの 0A1 アグリーメント プロパティが "非 0A1" に設定されていることが確認されます。 ただし、アグリーメントの作成後、プロセス構成プロファイルを変更した場合、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]クロス フィールド検証は実行されません。 "RosettaNet"から"CIDX"に標準的なプロパティを変更する場合[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]アグリーメントの 0A1 アグリーメント プロパティが"非 0A1"に設定されていることを検証しません。  
   
 ### <a name="errors-will-result-if-all-orchestrations-are-not-started"></a>全部のオーケストレーションを開始しないとエラーが発生する  
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] セットアップ プログラムでは 9 つのオーケストレーションがインストールされます。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] がメッセージを正常に処理するには、処理を開始する前に、これら 9 つのオーケストレーションをすべてバインド、登録、開始する必要があります。 詳細については、BizTalk Server ヘルプの「BizTalk エクスプ ローラーのオーケストレーション管理」または「オーケストレーション管理」のトピックを参照してください。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] セットアップ プログラムでは 9 つのオーケストレーションがインストールされます。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] がメッセージを正常に処理するには、処理を開始する前に、これら 9 つのオーケストレーションをすべてバインド、登録、開始する必要があります。 詳細については、BizTalk Server ヘルプで「BizTalk エクスプ ローラーのオーケストレーション管理」または「オーケストレーション管理」のトピックを参照してください。  
   
 ### <a name="rnifreceiveaspx-does-not-remove-the-mime-bottom-boundary-from-a-message"></a>RNIFReceive.aspx でメッセージから MIME の下位境界が削除されない  
  RNIFReceive.aspx ページが、パートナーの RNIFSend.aspx ページからメッセージを受信すると、メッセージには MIME ヘッダー、および MIME の上下の境界値 (64 進数) が埋め込まれます。 RNIFSend.aspx は、ヘッダーと境界を RNIF 送信のメッセージに追加します。 RNIFReceive.aspx は、メッセージをパブリック プロセスに送信する前に、メッセージから MIME ヘッダーと境界を削除する必要があります。 RNIFReceive.aspx は MIME ヘッダーと上位境界は削除しますが、下位境界は削除しません。 下位境界が存在しても、パブリック プロセスにおけるメッセージの処理には影響ありません。  
   
 ### <a name="btarn-does-not-support-a-case-sensitive-configuration-of-sql-server-databases"></a>SQL Server データベースの大文字小文字の区別の設定がサポートされない  
- 加えた場合[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)][!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]データベースおよびデータベース オブジェクトが、大文字小文字を区別、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールがデータベース リソースを見つけることはできませんし、例外をスローします。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]データベースおよびデータベース オブジェクトを大文字にする必要があります。  
+ 行った場合[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)][!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]データベースおよびデータベース オブジェクトの大文字小文字が区別、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールは、データベース リソースを見つけることができません、例外をスローします。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]データベースおよびデータベース オブジェクトを大文字にする必要があります。  
   
 ### <a name="all-queries-in-database-maintenance-scripts-should-be-written-for-utc-time"></a>データベース管理スクリプトのすべてのクエリを UTC 時刻形式で記述しなければならない  
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] データベースでは協定世界時 (UTC) の時刻を使用します。したがって、このデータベースを管理するためのクエリは、UTC 時刻用に作成する必要があります。 たとえば、管理スクリプトで `GetDate()` コマンドを使用する場合は、それを `GetUTCDate()` に変更する必要があります。  
@@ -129,7 +129,7 @@ ms.locfileid: "26010779"
  パブリック プロセスのオーケストレーションがその最終メッセージを処理するときに送信エラーが発生すると、イベント ログと HAT にはエラーが表示されますが、BAM には表示されません。 オーケストレーションが停止しているため、BAM にこのエラー メッセージを表示できません。  
   
 ### <a name="the-pipelineexe-tool-cannot-be-used-to-debug-a-btarn-receive-pipeline"></a>pipeline.exe ツールを使用して BTARN 受信パイプラインをデバッグできない  
- 受信パイプラインをデバッグする場合、パイプラインをホストするポートを作成する必要があります。 BizTalk Server は、pipeline.exe ツールを使用してデバッグすることはできません。  
+ 受信パイプラインをデバッグする場合、パイプラインをホストするポートを作成する必要があります。 BizTalk Server が提供されている pipeline.exe ツールを使用してデバッグすることはできません。  
   
 ### <a name="an-error-may-be-generated-for-a-retried-message-that-is-successfully-processed-after-the-orchestration-finishes"></a>オーケストレーション完了後に正常に処理されたメッセージを再送するとエラーが生成される  
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] では、プロセス フローを表すためにオーケストレーションを使用しています。 再試行メッセージがいくつか再試行される場合、再試行メッセージの 1 つが BizTalk MessageBox に到着しないうちにオーケストレーションが正常に終了することがあります。 この現象が発生すると、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] により、"完了したが破棄された" ことを示すエラー メッセージが生成されます。 プロセスが終了したかどうかを判断するには、基幹業務 (LOB) アプリケーションを確認する必要があります。 正常に終了したことが LOB アプリケーションで確認できた場合は、"完了したが破棄された" ことを示すエラー メッセージを無視してかまいません。  

@@ -1,5 +1,5 @@
 ---
-title: ホスト インスタンスを追加 |Microsoft ドキュメント
+title: ホスト インスタンスの追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c4c2e029e9599143c52577771a313d9810ca6f12
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: c95dc019d1d6ed885d195f0c871fd91178b9a58a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25972752"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37006819"
 ---
 # <a name="add-a-host-instance"></a>ホスト インスタンスを追加します。
 
 ## <a name="overview"></a>概要
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールまたは Windows Management Instrumentation (WMI) を使用すると、ホスト インスタンスを追加できます。 しかし、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では一度に 1 つのサーバーにしかホスト インスタンスを追加できません。 ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)です。 WMI を使用してホスト インスタンスを追加する方法については、次を参照してください。 **MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールまたは Windows Management Instrumentation (WMI) を使用すると、ホスト インスタンスを追加できます。 しかし、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では一度に 1 つのサーバーにしかホスト インスタンスを追加できません。 ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)します。 WMI を使用して、ホスト インスタンスを追加する方法については、次を参照してください。 **MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
- ホスト インスタンスを追加すると、そのホストのインスタンスは BizTalk Server のインスタンスにマップされます。 既存のホスト インスタンスを修復する必要がある場合は、ホスト インスタンスのプロパティを更新できます。 既存のホスト インスタンスを再度追加するには、インスタンスを停止する必要があります。 ホスト インスタンスを停止する方法については、次を参照してください。[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)です。  
+ ホスト インスタンスを追加すると、そのホストのインスタンスは BizTalk Server のインスタンスにマップされます。 既存のホスト インスタンスを修復する必要がある場合は、ホスト インスタンスのプロパティを更新できます。 既存のホスト インスタンスを再度追加するには、インスタンスを停止する必要があります。 ホスト インスタンスの停止については、次を参照してください。[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)します。  
   
 > [!NOTE]
->  技術情報の資料 184802「User32.dll または Kernel32.dll の初期化に失敗、」記載されている手順を行う必要があります複数 26 のホスト インスタンスを作成する場合は、 [http://go.microsoft.com/fwlink/?LinkId=26176](http://go.microsoft.com/fwlink/?LinkId=26176)です。 このサポート技術情報の資料に記載されている内容を反映した後で、ホスト インスタンスを追加する必要がある場合は、BTSNTSvc サービスの各インスタンスに割り当てるメモリ量を減らしてみてください。 メモリ量を減らすことによって、追加のインスタンスを作成するのに必要なメモリを提供できます。  
+>  サポート技術情報資料 184802「User32.dll または Kernel32.dll の初期化に失敗」で利用可能な手順が従う必要があります詳細 26 のホスト インスタンスを作成する場合は、 [ http://go.microsoft.com/fwlink/?LinkId=26176](http://go.microsoft.com/fwlink/?LinkId=26176)します。 このサポート技術情報の資料に記載されている内容を反映した後で、ホスト インスタンスを追加する必要がある場合は、BTSNTSvc サービスの各インスタンスに割り当てるメモリ量を減らしてみてください。 メモリ量を減らすことによって、追加のインスタンスを作成するのに必要なメモリを提供できます。  
   
 > [!NOTE]
 >  サービス アカウントには、ホスト インスタンスのインストール先サーバーに対する "サービスとしてログオン" アクセス許可が自動的に与えられます。  
@@ -52,23 +52,23 @@ ms.locfileid: "25972752"
   
 ## <a name="steps"></a>手順
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2.  コンソール ツリーで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]BizTalk グループを展開し、クリックして**プラットフォームの設定**です。  
+2. コンソール ツリーで、展開[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]BizTalk グループを展開し、クリックして**プラットフォームの設定**します。  
   
-3.  右クリック**ホスト インスタンス**をクリックして**新規**、順にクリック**ホスト インスタンス**です。  
+3. 右クリック**ホスト インスタンス**、 をクリックして**新規**、 をクリックし、**ホスト インスタンス**します。  
   
-4.  **ホスト インスタンスのプロパティ**ダイアログ ボックスで、次のように行い、クリックして**OK**:  
+4. **ホスト インスタンスのプロパティ** ダイアログ ボックスで、次の操作をクリックして**OK**:  
   
-    |プロパティ|目的|  
-    |--------------|----------------|  
-    |**ホスト名**|選択したサーバーに関連付けられているホストの名前を表示します。|  
-    |**[サーバー]**|選択したホストに関連付けられているサーバーを表示します。|  
-    |**ログオン**|ホスト インスタンスを実行する、新しいサービス アカウントのアカウント名を表示します。|  
-    |**構成**|クリックすると表示、**ログオン資格情報**ダイアログ ボックスで、アカウント名とホスト インスタンスを実行するアカウントのパスワードを入力できます。|  
-    |**ホスト インスタンスの開始を無効にします。**|選択したホストの状態を有効から無効に変更する場合、このチェック ボックスをオンにします。 ホスト インスタンスを開始せずに設定を保持する場合は、インスタンスを無効にすると便利です。|  
+   |プロパティ|目的|  
+   |--------------|----------------|  
+   |**ホスト名**|選択したサーバーに関連付けられているホストの名前を表示します。|  
+   |**[サーバー]**|選択したホストに関連付けられているサーバーを表示します。|  
+   |**ログオン**|ホスト インスタンスを実行する、新しいサービス アカウントのアカウント名を表示します。|  
+   |**構成**|表示するをクリックして、**ログオン資格情報**] ダイアログ ボックスの [アカウント名とホスト インスタンスを実行するアカウントのパスワードを入力できます。|  
+   |**ホスト インスタンスの開始を無効にします。**|選択したホストの状態を有効から無効に変更する場合、このチェック ボックスをオンにします。 ホスト インスタンスを開始せずに設定を保持する場合は、インスタンスを無効にすると便利です。|  
   
- ホスト インスタンスをインストールしたら、インスタンスを再起動して、メッセージがメッセージ ボックス データベースにルーティングされるようにする必要があります。 ホスト インスタンスの開始方法の詳細については、次を参照してください。[ホスト インスタンスを起動する方法](../core/how-to-start-a-host-instance.md)です。  
+   ホスト インスタンスをインストールしたら、インスタンスを再起動して、メッセージがメッセージ ボックス データベースにルーティングされるようにする必要があります。 ホスト インスタンスの開始方法の詳細については、次を参照してください。[ホスト インスタンスを開始する方法](../core/how-to-start-a-host-instance.md)します。  
   
 ## <a name="known-issues"></a>既知の問題  
   
@@ -79,7 +79,7 @@ ms.locfileid: "25972752"
   
  利用できない [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューター上に BizTalk ホストのインスタンスを作成しようとすると、次のエラー メッセージを示すダイアログ ボックスが表示されます。  
   
- ホストのインスタンスをインストール\<*ホスト名*\>サーバーで\<*サーバー名*\>できませんでした。  
+ ホストのインスタンスのインストール\<*ホスト名*\>サーバー \<*サーバー名*\>できませんでした。  
   
  追加情報:  
   
@@ -87,25 +87,25 @@ ms.locfileid: "25972752"
   
  [OK] をクリックしてダイアログ ボックスを消すと、次のエラー メッセージを示すダイアログ ボックスが表示されます。  
   
- ホストのインストールを中止をクリーンアップして\<*ホスト名*\>サーバーで\<*サーバー名*\>できませんでした。  
+ 中止されたホストのインストールをクリーンアップする\<*ホスト名*\>サーバー \<*サーバー名*\>できませんでした。  
   
  追加情報:  
   
  Windows NT サービス BTSSvc を削除するときにエラーが発生しました {*\<GUID\>*}。 (WinMgmt)。  
   
- クリックすると、 **OK**このダイアログ ボックスを破棄する BizTalk ホストのインスタンスは、BizTalk 管理コンソールに表示されます、**ステータス**の**アンインストールに失敗しました**.  
+ クリックすると**OK**をこのダイアログ ボックスを閉じるには、BizTalk ホストのインスタンスは、BizTalk 管理コンソールに表示されます、**状態**の**アンインストールに失敗しました**.  
   
 ##### <a name="cause"></a>原因  
  ホスト インスタンスの作成時には、指定した [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューター上にホスト インスタンスがインストールされる前に、BizTalk 管理データベースにエントリが作成されます。 指定した [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューター上へのホスト インスタンスのインストールに失敗すると、BizTalk 管理プログラムは、そのホスト インスタンスのアンインストールを試みます。しかし、指定した [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターが利用できないため、アンインストールにも失敗します。  
   
 ##### <a name="resolution"></a>解決策  
- 状態で、BizTalk 管理コンソールで、BizTalk ホスト インスタンスを作成する場合**アンインストールに失敗しました**、ホスト インスタンスを削除して、指定した BizTalk Server コンピューターが使用可能なになった後に、ホスト インスタンスを再作成します。  
+ BizTalk ホスト インスタンスが BizTalk 管理コンソールの状態で作成された場合**アンインストールに失敗しました**、ホスト インスタンスを削除し、ホスト インスタンスを再作成後、指定した BizTalk Server コンピューターが使用可能になります。  
   
 > [!NOTE]
->  BizTalk ホスト インスタンスが BizTalk 管理コンソールで作成されたかどうか、**ステータス**の**アンインストールに失敗しました**ホスト インスタンスは、指定した後でもは機能できません[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターが再び使用可能です。  
+>  BizTalk 管理コンソールで、BizTalk ホスト インスタンスが作成されたかどうか、**状態**の**アンインストールに失敗しました**ホスト インスタンスは、指定した後でもは機能できません[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターが再び使用可能です。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk ホストとホスト インスタンスを管理します。](../core/managing-biztalk-hosts-and-host-instances.md)   
+ [BizTalk ホストとホスト インスタンスの管理](../core/managing-biztalk-hosts-and-host-instances.md)   
  [ホスト インスタンスを開始します。](../core/how-to-start-a-host-instance.md)   
  [ホスト インスタンスを停止します。](../core/how-to-stop-a-host-instance.md)   
  [ホスト インスタンスを削除します。](../core/how-to-delete-a-host-instance.md)   

@@ -1,5 +1,5 @@
 ---
-title: メッセージのバッチ処理 |Microsoft ドキュメント
+title: メッセージのバッチ処理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,33 +17,33 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 849f14113d5a5e4776c303ef7a5ea4e1e50a552b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cc1157dc270fceae7b092a252f75e2c0de658eb9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204650"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37004971"
 ---
 # <a name="message-batching"></a>メッセージのバッチ処理
-プロトコルの標準、スケジューリング問題、またはメッセージのサイズ制限は、メッセージ バッチ処理する必要を決める場合があります。 HL7 バッチ ヘッダーとトレーラーのバッチで囲まれたメッセージの正常性レベル 7 (HL7) のバッチで構成されます。 メッセージの区切り記号は、バッチ内の個々 のメッセージを区切ります。  
+プロトコルの標準、スケジュールの問題またはメッセージ サイズの制限は、メッセージのバッチの必要を起こさ可能性があります。 正常性レベル 7 (HL7) のバッチは、HL7 バッチ ヘッダーとトレーラーのバッチで囲まれたメッセージで構成されます。 メッセージの区切り記号は、バッチ内の個々 のメッセージを区切ります。  
   
- [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]バッチ処理のシナリオでは、次の 3 つのメッセージ。  
+ Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]バッチ処理のシナリオでは、次の 3 つのメッセージ。  
   
--   **断片化された受信バッチ**です。 このシナリオでは、BTAHL7 は、HL7 メッセージ バッチを受信し、送信先システムに個々 のメッセージをルーティングします。  
+-   **断片化した受信バッチ**します。 このシナリオでは、BTAHL7 は、HL7 メッセージのバッチを受信し、送信先システムに、個々 のメッセージをルーティングします。  
   
--   **バッチ/アウト バッチ**です。このシナリオでは、BTAHL7 は HL7 メッセージ バッチの受信、バッチ内の個々 のメッセージを確認し、送信先システムに、メッセージ バッチをルーティングします。  
+-   **バッチ処理/バッチ アウト**します。このシナリオでは、BTAHL7 は HL7 メッセージのバッチを受信、バッチ内の個々 のメッセージを確認し、送信先システムにメッセージのバッチをルーティングします。  
   
--   **バッチまたは送信バッチ処理を作成する**です。 このシナリオでは、BTAHL7 は個々 のメッセージを受信して、送信先システムにルーティングする前にバッチします。  
+-   **バッチまたは送信バッチ処理を作成する**します。 このシナリオでは、BTAHL7 は個々 のメッセージを受信し、送信先システムにルーティングする前にバッチとしてします。  
   
     > [!NOTE]
-    >  BTAHL7 では、既定では、送信バッチ処理用メッセージのバッチ処理は有効にしません。 BizTalk エクスプ ローラーを使用して、まず、BTAHL7 バッチ オーケストレーションを参加させると、バッチ オーケストレーションを開始する必要があります。 メッセージのバッチ処理を有効にする方法の詳細については、次を参照してください。[バッチ処理構成](../../adapters-and-accelerators/accelerator-hl7/configuring-batching.md)です。  
+    >  BTAHL7 では、既定では、送信バッチ処理用メッセージのバッチ処理は有効にしません。 BizTalk エクスプ ローラーを使用して、まず、BTAHL7 バッチ オーケストレーションを参加させると、バッチ オーケストレーションを開始する必要があります。 メッセージのバッチ処理を有効にする方法の詳細については、次を参照してください。[バッチ処理構成](../../adapters-and-accelerators/accelerator-hl7/configuring-batching.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [受信バッチの断片化](../../adapters-and-accelerators/accelerator-hl7/fragmented-inbound-batch.md)  
+-   [断片化した受信バッチ](../../adapters-and-accelerators/accelerator-hl7/fragmented-inbound-batch.md)  
   
 -   [バッチ処理の構成](../../adapters-and-accelerators/accelerator-hl7/configuring-batching.md)  
   
--   [バッチ処理のスケジュール設定](../../adapters-and-accelerators/accelerator-hl7/scheduling-batching.md)  
+-   [バッチ処理のスケジュール](../../adapters-and-accelerators/accelerator-hl7/scheduling-batching.md)  
   
--   [受信確認をバッチ処理を構成します。](../../adapters-and-accelerators/accelerator-hl7/configuring-batching-acknowledgments.md)
+-   [受信確認のバッチ処理の構成](../../adapters-and-accelerators/accelerator-hl7/configuring-batching-acknowledgments.md)

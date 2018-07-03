@@ -1,5 +1,5 @@
 ---
-title: SMTP ホストのプロパティに関する制限事項 |Microsoft ドキュメント
+title: SMTP ホストのプロパティに関する制限事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,25 +15,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 465946f15d11f087995b8000231796c5e204c077
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: e2e8ef3800b67119bf9ffaffb4fd069064b640d1
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25972904"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985347"
 ---
 # <a name="restrictions-on-the-smtp-host-property"></a>SMTP ホストのプロパティに関する制限事項
 SMTP ホストのプロパティは、BizTalk Server からメッセージを送信する際に SMTP アダプタによって使用される SMTP サーバーを指定する文字列です。  
   
  このプロパティには、次の規則および制限が適用されます。  
   
--   このプロパティは、アダプタ ハンドラ レベル、エンドポイント レベル、またはその両方の場所で構成する必要があります。  
+- このプロパティは、アダプタ ハンドラ レベル、エンドポイント レベル、またはその両方の場所で構成する必要があります。  
   
--   SMTP サーバーのプロパティは、次の文字を含めることはできません: ' ~! @ # $ ^ & * ( ) = + [ ] { } \ &#124; ; : ' " , \< \> /, ?;  
+- SMTP サーバーのプロパティは、次の文字を含めることはできません ' ~!。 @ # $ ^ & * ( ) = + [ ] { } \ &#124; ; : ' " , \< \> /, ?;  
   
--   SMTP サーバー名は 256 文字以内で指定する必要があります。  
+- SMTP サーバー名は 256 文字以内で指定する必要があります。  
   
- SMTP アダプタでは、上記の規則を使用して、デザイン時に常に SMTP ホスト名を検証します。 また、メッセージが SMTP アダプタを使用して動的ポート経由で送信される場合は、実行時に SMTP ホスト名を検証します。  
+  SMTP アダプタでは、上記の規則を使用して、デザイン時に常に SMTP ホスト名を検証します。 また、メッセージが SMTP アダプタを使用して動的ポート経由で送信される場合は、実行時に SMTP ホスト名を検証します。  
   
 ## <a name="see-also"></a>参照  
  [SMTP アダプター構成時の制限事項](../core/restrictions-when-configuring-the-smtp-adapter.md)
