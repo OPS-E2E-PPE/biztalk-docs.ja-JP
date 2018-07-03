@@ -1,5 +1,5 @@
 ---
-title: インスタンスの検証 |Microsoft ドキュメント
+title: インスタンスの検証 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3db1903030bbde96f2587ac14b5d168345b31823
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f4e4901d11bda5fb6633c00dd72899ee1b72db4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257378"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012875"
 ---
-# <a name="instance-validation"></a><span data-ttu-id="9ed7d-102">インスタンスの検証</span><span class="sxs-lookup"><span data-stu-id="9ed7d-102">Instance Validation</span></span>
-<span data-ttu-id="9ed7d-103">BizTalk エディターを起動、 **IInstanceValidator.ValidateInstance**次の条件が満たされたときに、拡張機能のメソッド。</span><span class="sxs-lookup"><span data-stu-id="9ed7d-103">BizTalk Editor invokes the **IInstanceValidator.ValidateInstance** method of an extension when the following conditions are met:</span></span>  
+# <a name="instance-validation"></a><span data-ttu-id="cd5b8-102">インスタンスの検証</span><span class="sxs-lookup"><span data-stu-id="cd5b8-102">Instance Validation</span></span>
+<span data-ttu-id="cd5b8-103">BizTalk エディターを起動、 **IInstanceValidator.ValidateInstance**メソッドの次の条件が満たされたときに、拡張機能。</span><span class="sxs-lookup"><span data-stu-id="cd5b8-103">BizTalk Editor invokes the **IInstanceValidator.ValidateInstance** method of an extension when the following conditions are met:</span></span>  
   
--   <span data-ttu-id="9ed7d-104">使用して、拡張機能が設定の標準として、**標準**のプロパティ、**スキーマ**ノード。</span><span class="sxs-lookup"><span data-stu-id="9ed7d-104">The extension is set as standard by using the **Standard** property of the **Schema** node.</span></span>  
+- <span data-ttu-id="cd5b8-104">使用して、拡張機能が設定の標準として、**標準**のプロパティ、**スキーマ**ノード。</span><span class="sxs-lookup"><span data-stu-id="cd5b8-104">The extension is set as standard by using the **Standard** property of the **Schema** node.</span></span>  
   
--   <span data-ttu-id="9ed7d-105">**プロパティ ページ** ダイアログ ボックスが、スキーマに関連付けられている、**インスタンスの出力の種類の生成**プロパティに設定されている**ネイティブです。**</span><span class="sxs-lookup"><span data-stu-id="9ed7d-105">On the **Property Pages** dialog box associated with the schema, the **Generate Instance Output Type** property is set to **Native.**</span></span>  
+- <span data-ttu-id="cd5b8-105">**プロパティ ページ** ダイアログ ボックスが、スキーマに関連付けられた、**インスタンスの出力の種類の生成**プロパティに設定されて**ネイティブです。**</span><span class="sxs-lookup"><span data-stu-id="cd5b8-105">On the **Property Pages** dialog box associated with the schema, the **Generate Instance Output Type** property is set to **Native.**</span></span>  
   
--   <span data-ttu-id="9ed7d-106">**プロパティ ページ** ダイアログ ボックスが、スキーマに関連付けられている、**入力インスタンス ファイル名**プロパティが検証に使用するインスタンス メッセージを含むファイルの名前に設定します。</span><span class="sxs-lookup"><span data-stu-id="9ed7d-106">On the **Property Pages** dialog box associated with the schema, the **Input Instance Filename** property is set to the name of a file containing the instance message to be validated.</span></span>  
+- <span data-ttu-id="cd5b8-106">**プロパティ ページ** ダイアログ ボックスが、スキーマに関連付けられた、**入力インスタンス ファイル名**プロパティが検証するインスタンス メッセージを含むファイルの名前に設定します。</span><span class="sxs-lookup"><span data-stu-id="cd5b8-106">On the **Property Pages** dialog box associated with the schema, the **Input Instance Filename** property is set to the name of a file containing the instance message to be validated.</span></span>  
   
- <span data-ttu-id="9ed7d-107">指定されたファイル、**入力インスタンス ファイル名**プロパティにパラメーターとして渡される、 **IInstanceValidator.ValidateInstance**メソッドです。</span><span class="sxs-lookup"><span data-stu-id="9ed7d-107">The file specified in the **Input Instance Filename** property is passed as a parameter to the **IInstanceValidator.ValidateInstance** method.</span></span>  
+  <span data-ttu-id="cd5b8-107">指定されたファイル、**入力インスタンス ファイル名**プロパティがパラメーターとして渡される、 **IInstanceValidator.ValidateInstance**メソッド。</span><span class="sxs-lookup"><span data-stu-id="cd5b8-107">The file specified in the **Input Instance Filename** property is passed as a parameter to the **IInstanceValidator.ValidateInstance** method.</span></span>  
   
- <span data-ttu-id="9ed7d-108">配列としてエラーが発生した場合のエラー メッセージが返されます**IValidationInfo**オブジェクト、およびに表示される、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]タスク一覧ウィンドウ。</span><span class="sxs-lookup"><span data-stu-id="9ed7d-108">If errors occur, error messages are returned as an array of **IValidationInfo** objects, and are displayed in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Task List window.</span></span>  
+  <span data-ttu-id="cd5b8-108">エラーが発生したエラー メッセージがの配列として返されます**IValidationInfo**オブジェクトとに表示される、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]タスク一覧 ウィンドウ。</span><span class="sxs-lookup"><span data-stu-id="cd5b8-108">If errors occur, error messages are returned as an array of **IValidationInfo** objects, and are displayed in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Task List window.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="9ed7d-109">ファイルが渡された場合、スキーマにパターン ステートメントが含まれています、 **ValidateInstance**メソッドは、対応するを使用して生成された**インスタンスの生成**コマンドをインスタンス メッセージを渡すことがありますいません。検証します。</span><span class="sxs-lookup"><span data-stu-id="9ed7d-109">If the schema contains pattern statements, and the file passed to the **ValidateInstance** method was generated by using the corresponding **Generate Instance** command, the instance message may not pass validation.</span></span>  
+>  <span data-ttu-id="cd5b8-109">スキーマにパターン ステートメントが含まれていて、ファイルに渡されます、 **ValidateInstance**メソッドは、対応するを使用して生成された**インスタンスの生成**コマンドをインスタンス メッセージに渡すことができません検証します。</span><span class="sxs-lookup"><span data-stu-id="cd5b8-109">If the schema contains pattern statements, and the file passed to the **ValidateInstance** method was generated by using the corresponding **Generate Instance** command, the instance message may not pass validation.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="9ed7d-110">参照</span><span class="sxs-lookup"><span data-stu-id="9ed7d-110">See Also</span></span>  
- [<span data-ttu-id="9ed7d-111">BizTalk エディターの拡張</span><span class="sxs-lookup"><span data-stu-id="9ed7d-111">Extending BizTalk Editor</span></span>](../core/extending-biztalk-editor.md)
+## <a name="see-also"></a><span data-ttu-id="cd5b8-110">参照</span><span class="sxs-lookup"><span data-stu-id="cd5b8-110">See Also</span></span>  
+ [<span data-ttu-id="cd5b8-111">BizTalk エディターの拡張</span><span class="sxs-lookup"><span data-stu-id="cd5b8-111">Extending BizTalk Editor</span></span>](../core/extending-biztalk-editor.md)

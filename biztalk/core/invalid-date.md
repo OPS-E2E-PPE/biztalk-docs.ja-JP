@@ -1,5 +1,5 @@
 ---
-title: 無効な日付 |Microsoft ドキュメント
+title: 無効な日付 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 259456e781f5f5255f9fed8a51c8eb0569dd57b4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6a7e5f8003cbb8cc88487f471e10ce0d7ba857e5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257394"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36987755"
 ---
-# <a name="invalid-date"></a><span data-ttu-id="b1b99-102">日付が無効です</span><span class="sxs-lookup"><span data-stu-id="b1b99-102">Invalid Date</span></span>
-## <a name="details"></a><span data-ttu-id="b1b99-103">詳細</span><span class="sxs-lookup"><span data-stu-id="b1b99-103">Details</span></span>  
+# <a name="invalid-date"></a><span data-ttu-id="1f6ce-102">日付が無効です</span><span class="sxs-lookup"><span data-stu-id="1f6ce-102">Invalid Date</span></span>
+## <a name="details"></a><span data-ttu-id="1f6ce-103">詳細</span><span class="sxs-lookup"><span data-stu-id="1f6ce-103">Details</span></span>  
   
-|||  
-|-|-|  
-|<span data-ttu-id="b1b99-104">製品名</span><span class="sxs-lookup"><span data-stu-id="b1b99-104">Product Name</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|<span data-ttu-id="b1b99-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="b1b99-105">Product Version</span></span>|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|<span data-ttu-id="b1b99-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="b1b99-106">Event ID</span></span>|-|  
-|<span data-ttu-id="b1b99-107">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="b1b99-107">Event Source</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="b1b99-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="b1b99-108"> EDI</span></span>|  
-|<span data-ttu-id="b1b99-109">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="b1b99-109">Component</span></span>|<span data-ttu-id="b1b99-110">EDI エンジン</span><span class="sxs-lookup"><span data-stu-id="b1b99-110">EDI Engine</span></span>|  
-|<span data-ttu-id="b1b99-111">シンボル名</span><span class="sxs-lookup"><span data-stu-id="b1b99-111">Symbolic Name</span></span>|<span data-ttu-id="b1b99-112">X12DeInvalidDateDescription</span><span class="sxs-lookup"><span data-stu-id="b1b99-112">X12DeInvalidDateDescription</span></span>|  
-|<span data-ttu-id="b1b99-113">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="b1b99-113">Message Text</span></span>|<span data-ttu-id="b1b99-114">日付が無効です</span><span class="sxs-lookup"><span data-stu-id="b1b99-114">Invalid Date</span></span>|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  <span data-ttu-id="1f6ce-104">製品名</span><span class="sxs-lookup"><span data-stu-id="1f6ce-104">Product Name</span></span>   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| <span data-ttu-id="1f6ce-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="1f6ce-105">Product Version</span></span> |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    <span data-ttu-id="1f6ce-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="1f6ce-106">Event ID</span></span>     |                                           -                                            |
+|  <span data-ttu-id="1f6ce-107">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="1f6ce-107">Event Source</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="1f6ce-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="1f6ce-108"> EDI</span></span> |
+|    <span data-ttu-id="1f6ce-109">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="1f6ce-109">Component</span></span>    |                                       <span data-ttu-id="1f6ce-110">EDI エンジン</span><span class="sxs-lookup"><span data-stu-id="1f6ce-110">EDI Engine</span></span>                                       |
+|  <span data-ttu-id="1f6ce-111">シンボル名</span><span class="sxs-lookup"><span data-stu-id="1f6ce-111">Symbolic Name</span></span>  |                              <span data-ttu-id="1f6ce-112">X12DeInvalidDateDescription</span><span class="sxs-lookup"><span data-stu-id="1f6ce-112">X12DeInvalidDateDescription</span></span>                               |
+|  <span data-ttu-id="1f6ce-113">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="1f6ce-113">Message Text</span></span>   |                                      <span data-ttu-id="1f6ce-114">日付が無効です</span><span class="sxs-lookup"><span data-stu-id="1f6ce-114">Invalid Date</span></span>                                      |
   
-## <a name="explanation"></a><span data-ttu-id="b1b99-115">説明</span><span class="sxs-lookup"><span data-stu-id="b1b99-115">Explanation</span></span>  
- <span data-ttu-id="b1b99-116">このエラー/警告/情報イベントは、データ要素の日付値が、EDI スキーマで指定されたデータ型に準拠していなかったか、または X12 インターチェンジの GS04 フィールド ヘッダーの日付値が、サービス スキーマ (BaseArtifacts.dll 内の X12ServiceSchema) に準拠していなかったため、受信パイプラインで受信インターチェンジを処理できなかったか、または送信パイプラインで送信インターチェンジを処理できなかったことを示します。</span><span class="sxs-lookup"><span data-stu-id="b1b99-116">This Error/Warning/Information event indicates that the receive pipeline could not process the incoming interchange or the send pipeline could not process the outgoing interchange because a date value in a data element did not conform to the data type specified by the EDI schema or the date value in the GS04 field header in an X12 interchange did not conform to the service schema (X12ServiceSchema in BaseArtifacts.dll).</span></span> <span data-ttu-id="b1b99-117">X12 の場合、サービス スキーマは、GS04 フィールドの日付を X12_DT データ型として、6 ～ 8 文字の長さで定義します。</span><span class="sxs-lookup"><span data-stu-id="b1b99-117">For X12, the service schema defines a date in the GS04 field as of the X12_DT data type and between six and eight characters in length.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="1f6ce-115">説明</span><span class="sxs-lookup"><span data-stu-id="1f6ce-115">Explanation</span></span>  
+ <span data-ttu-id="1f6ce-116">このエラー/警告/情報イベントは、データ要素の日付値が、EDI スキーマで指定されたデータ型に準拠していなかったか、または X12 インターチェンジの GS04 フィールド ヘッダーの日付値が、サービス スキーマ (BaseArtifacts.dll 内の X12ServiceSchema) に準拠していなかったため、受信パイプラインで受信インターチェンジを処理できなかったか、または送信パイプラインで送信インターチェンジを処理できなかったことを示します。</span><span class="sxs-lookup"><span data-stu-id="1f6ce-116">This Error/Warning/Information event indicates that the receive pipeline could not process the incoming interchange or the send pipeline could not process the outgoing interchange because a date value in a data element did not conform to the data type specified by the EDI schema or the date value in the GS04 field header in an X12 interchange did not conform to the service schema (X12ServiceSchema in BaseArtifacts.dll).</span></span> <span data-ttu-id="1f6ce-117">X12 の場合、サービス スキーマは、GS04 フィールドの日付を X12_DT データ型として、6 ～ 8 文字の長さで定義します。</span><span class="sxs-lookup"><span data-stu-id="1f6ce-117">For X12, the service schema defines a date in the GS04 field as of the X12_DT data type and between six and eight characters in length.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="b1b99-118">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="b1b99-118">User Action</span></span>  
- <span data-ttu-id="b1b99-119">このエラーを解決するには、データ要素の時間値が、EDI スキーマで定義されたデータ型に準拠しているか、または X12 インターチェンジの GS04 ヘッダーの日付値がサービス スキーマに準拠していることを確認し、インターチェンジを再送信してもらいます。</span><span class="sxs-lookup"><span data-stu-id="b1b99-119">To resolve this error, make sure that the time value in a data element conforms to the data type specified by the EDI schema or the date value in the GS04 header of an X12 interchange conforms to the service schema, and then have the interchange resent.</span></span>
+## <a name="user-action"></a><span data-ttu-id="1f6ce-118">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="1f6ce-118">User Action</span></span>  
+ <span data-ttu-id="1f6ce-119">このエラーを解決するには、データ要素の時間値が、EDI スキーマで定義されたデータ型に準拠しているか、または X12 インターチェンジの GS04 ヘッダーの日付値がサービス スキーマに準拠していることを確認し、インターチェンジを再送信してもらいます。</span><span class="sxs-lookup"><span data-stu-id="1f6ce-119">To resolve this error, make sure that the time value in a data element conforms to the data type specified by the EDI schema or the date value in the GS04 header of an X12 interchange conforms to the service schema, and then have the interchange resent.</span></span>

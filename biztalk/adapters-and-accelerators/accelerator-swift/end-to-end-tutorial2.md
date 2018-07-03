@@ -1,5 +1,5 @@
 ---
-title: エンド ツー エンド Tutorial2 |Microsoft ドキュメント
+title: エンド ツー エンド Tutorial2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,39 +16,39 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4c4022595ed05cb779d11e09d66080024ac76654
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: da298e0c69de7a351e64aa33ac48611700de3621
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209258"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36980675"
 ---
-# <a name="end-to-end-tutorial"></a><span data-ttu-id="4b7b2-102">エンド ツー エンドのチュートリアル</span><span class="sxs-lookup"><span data-stu-id="4b7b2-102">End-to-End Tutorial</span></span>
-<span data-ttu-id="4b7b2-103">このチュートリアルには作成および設定する方法を説明する詳しい手順が含まれています、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]ソリューションです。</span><span class="sxs-lookup"><span data-stu-id="4b7b2-103">This tutorial contains detailed steps that describe how to create and set up a [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] solution.</span></span> <span data-ttu-id="4b7b2-104">モジュールとレッスン使用[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]スキーマを作成するオーケストレーション、および A4SWIFT を使用してコンポーネントをパイプラインにマップします。</span><span class="sxs-lookup"><span data-stu-id="4b7b2-104">The modules and lessons use [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] to create the schema, maps orchestrations, and pipeline components using A4SWIFT.</span></span>  
+# <a name="end-to-end-tutorial"></a><span data-ttu-id="46050-102">エンド ツー エンドのチュートリアル</span><span class="sxs-lookup"><span data-stu-id="46050-102">End-to-End Tutorial</span></span>
+<span data-ttu-id="46050-103">このチュートリアルには、Microsoft の作成および設定する方法について説明する詳細な手順が含まれています。[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]ソリューション。</span><span class="sxs-lookup"><span data-stu-id="46050-103">This tutorial contains detailed steps that describe how to create and set up a Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] solution.</span></span> <span data-ttu-id="46050-104">Microsoft を使用して、モジュールとレッスン[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]スキーマを作成するオーケストレーション、および A4SWIFT を使用して、パイプライン コンポーネントをマップします。</span><span class="sxs-lookup"><span data-stu-id="46050-104">The modules and lessons use Microsoft [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] to create the schema, maps orchestrations, and pipeline components using A4SWIFT.</span></span>  
   
- <span data-ttu-id="4b7b2-105">次の図は、エンド ツー エンド A4SWIFT ソリューションの一般的な統合エンジン使用シナリオのワークフローを示しています。</span><span class="sxs-lookup"><span data-stu-id="4b7b2-105">The following figure shows the workflow of a common Integration Engine usage scenario for an end-to-end A4SWIFT solution.</span></span>  
+ <span data-ttu-id="46050-105">次の図は、エンド ツー エンドの A4SWIFT ソリューションの一般的統合エンジン使用シナリオのワークフローを示しています。</span><span class="sxs-lookup"><span data-stu-id="46050-105">The following figure shows the workflow of a common Integration Engine usage scenario for an end-to-end A4SWIFT solution.</span></span>  
   
- ![](../../adapters-and-accelerators/accelerator-swift/media/fsa-tut-wklw.gif "FSA_Tut_wklw")  
+ <span data-ttu-id="46050-106">![](../../adapters-and-accelerators/accelerator-swift/media/fsa-tut-wklw.gif "FSA_Tut_wklw")</span><span class="sxs-lookup"><span data-stu-id="46050-106">![](../../adapters-and-accelerators/accelerator-swift/media/fsa-tut-wklw.gif "FSA_Tut_wklw")</span></span>  
   
-|<span data-ttu-id="4b7b2-106">A4SWIFT チュートリアル ワークフロー キー</span><span class="sxs-lookup"><span data-stu-id="4b7b2-106">A4SWIFT Tutorial Workflow Key</span></span>|  
+|<span data-ttu-id="46050-107">A4SWIFT チュートリアル ワークフロー キー</span><span class="sxs-lookup"><span data-stu-id="46050-107">A4SWIFT Tutorial Workflow Key</span></span>|  
 |-----------------------------------|  
-|<span data-ttu-id="4b7b2-107">**ASM** SWIFT アセンブラーを =</span><span class="sxs-lookup"><span data-stu-id="4b7b2-107">**ASM** = SWIFT Assembler</span></span>|  
-|<span data-ttu-id="4b7b2-108">**DASM** SWIFT 逆アセンブラーを =</span><span class="sxs-lookup"><span data-stu-id="4b7b2-108">**DASM** = SWIFT Disassembler</span></span>|  
-|<span data-ttu-id="4b7b2-109">**MTxxx** A4SWIFT メッセージの種類を =</span><span class="sxs-lookup"><span data-stu-id="4b7b2-109">**MTxxx** = A4SWIFT Message type</span></span>|  
-|<span data-ttu-id="4b7b2-110">**SIPN** SWIFT のセキュリティで保護された IP ネットワークを =</span><span class="sxs-lookup"><span data-stu-id="4b7b2-110">**SIPN** = SWIFT Secure IP Network</span></span>|  
+|<span data-ttu-id="46050-108">**ASM** SWIFT アセンブラーを =</span><span class="sxs-lookup"><span data-stu-id="46050-108">**ASM** = SWIFT Assembler</span></span>|  
+|<span data-ttu-id="46050-109">**逆アセンブラー** SWIFT 逆アセンブラーを =</span><span class="sxs-lookup"><span data-stu-id="46050-109">**DASM** = SWIFT Disassembler</span></span>|  
+|<span data-ttu-id="46050-110">**MTxxx** A4SWIFT メッセージの種類を =</span><span class="sxs-lookup"><span data-stu-id="46050-110">**MTxxx** = A4SWIFT Message type</span></span>|  
+|<span data-ttu-id="46050-111">**SIPN** SWIFT のセキュリティで保護された IP ネットワークを =</span><span class="sxs-lookup"><span data-stu-id="46050-111">**SIPN** = SWIFT Secure IP Network</span></span>|  
   
- <span data-ttu-id="4b7b2-111">このセクションには、次のトピックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="4b7b2-111">This section contains:</span></span>  
+ <span data-ttu-id="46050-112">このセクションには、次のトピックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="46050-112">This section contains:</span></span>  
   
--   [<span data-ttu-id="4b7b2-112">第 1 章: SWIFT ソリューションを作成します。</span><span class="sxs-lookup"><span data-stu-id="4b7b2-112">Module 1: Creating a SWIFT Solution</span></span>](../../adapters-and-accelerators/accelerator-swift/module-1-creating-a-swift-solution.md)  
+-   [<span data-ttu-id="46050-113">モジュール 1: SWIFT ソリューションの作成</span><span class="sxs-lookup"><span data-stu-id="46050-113">Module 1: Creating a SWIFT Solution</span></span>](../../adapters-and-accelerators/accelerator-swift/module-1-creating-a-swift-solution.md)  
   
--   [<span data-ttu-id="4b7b2-113">第 2 章: 新しいスキーマ プロジェクトの追加</span><span class="sxs-lookup"><span data-stu-id="4b7b2-113">Module 2: Adding a New Schemas Project</span></span>](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)  
+-   [<span data-ttu-id="46050-114">モジュール 2: 新しいスキーマ プロジェクトの追加</span><span class="sxs-lookup"><span data-stu-id="46050-114">Module 2: Adding a New Schemas Project</span></span>](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)  
   
--   [<span data-ttu-id="4b7b2-114">第 3 章: パイプライン プロジェクトの追加</span><span class="sxs-lookup"><span data-stu-id="4b7b2-114">Module 3: Adding a Pipeline Project</span></span>](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)  
+-   [<span data-ttu-id="46050-115">モジュール 3: パイプライン プロジェクトの追加</span><span class="sxs-lookup"><span data-stu-id="46050-115">Module 3: Adding a Pipeline Project</span></span>](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)  
   
--   [<span data-ttu-id="4b7b2-115">第 4 章: XML の受信場所およびフラット ファイル送信ポートを追加します。</span><span class="sxs-lookup"><span data-stu-id="4b7b2-115">Module 4: Adding an XML Receive Location and Flat File Send Port</span></span>](../../adapters-and-accelerators/accelerator-swift/module-4-adding-an-xml-receive-location-and-flat-file-send-port.md)  
+-   [<span data-ttu-id="46050-116">モジュール 4: XML 受信場所とフラット ファイル送信ポートの追加</span><span class="sxs-lookup"><span data-stu-id="46050-116">Module 4: Adding an XML Receive Location and Flat File Send Port</span></span>](../../adapters-and-accelerators/accelerator-swift/module-4-adding-an-xml-receive-location-and-flat-file-send-port.md)  
   
--   [<span data-ttu-id="4b7b2-116">第 5 章: フラット ファイルを追加する受信場所と XML 送信ポート</span><span class="sxs-lookup"><span data-stu-id="4b7b2-116">Module 5: Adding a Flat File Receive Location and XML Send Port</span></span>](../../adapters-and-accelerators/accelerator-swift/module-5-adding-a-flat-file-receive-location-and-xml-send-port.md)  
+-   [<span data-ttu-id="46050-117">モジュール 5: フラット ファイルの受信場所と XML 送信ポートの追加</span><span class="sxs-lookup"><span data-stu-id="46050-117">Module 5: Adding a Flat File Receive Location and XML Send Port</span></span>](../../adapters-and-accelerators/accelerator-swift/module-5-adding-a-flat-file-receive-location-and-xml-send-port.md)  
   
--   [<span data-ttu-id="4b7b2-117">第 6 章: ビジネス ルールの展開</span><span class="sxs-lookup"><span data-stu-id="4b7b2-117">Module 6: Deploying the Business Rules</span></span>](../../adapters-and-accelerators/accelerator-swift/module-6-deploying-the-business-rules.md)  
+-   [<span data-ttu-id="46050-118">モジュール 6: ビジネス ルールの展開</span><span class="sxs-lookup"><span data-stu-id="46050-118">Module 6: Deploying the Business Rules</span></span>](../../adapters-and-accelerators/accelerator-swift/module-6-deploying-the-business-rules.md)  
   
--   [<span data-ttu-id="4b7b2-118">第 7 章: テストの有効なフラット ファイル インスタンス</span><span class="sxs-lookup"><span data-stu-id="4b7b2-118">Module 7: Testing a Valid Flat File Instance</span></span>](../../adapters-and-accelerators/accelerator-swift/module-7-testing-a-valid-flat-file-instance.md)
+-   [<span data-ttu-id="46050-119">モジュール 7: 有効なフラット ファイル インスタンスのテスト</span><span class="sxs-lookup"><span data-stu-id="46050-119">Module 7: Testing a Valid Flat File Instance</span></span>](../../adapters-and-accelerators/accelerator-swift/module-7-testing-a-valid-flat-file-instance.md)
