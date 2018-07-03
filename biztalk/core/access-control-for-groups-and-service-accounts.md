@@ -1,5 +1,5 @@
 ---
-title: グループおよびサービス アカウントのアクセス制御 |Microsoft ドキュメント
+title: グループおよびサービス アカウントのアクセス制御 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,28 +21,28 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a04129427b524f0e183012ba7f10df1288327a8
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: da1bb9a52bef2e81729a8b566e4af4dcbed89c2a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25967032"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37021792"
 ---
 # <a name="access-control-for-groups-and-service-accounts"></a>グループおよびサービス アカウントのアクセス制御
 BizTalk ホスト インスタンスは、ユーザーが作成したサービス アカウントで実行されます。 コンピュータにホスト インスタンスを作成するときには、サービス アカウントとパスワードを指定する必要があります。 その後、BizTalk Server では、これらのサービス アカウントがローカルまたはドメインの Windows グループに追加され、次に、そのホストに固有の SQL Server データベース ロールに追加されます。これで、ジョブの実行に必要な最小限のユーザー権限がアカウントに許可されます。  
   
  この方法には次の利点があります。  
   
--   ホスト インスタンスごとに異なるサービス アカウントを設定して、サーバーをオフラインにせずに各ホスト インスタンスのパスワードを変更できます。 サービスを中断せずに、パスワード更新のロールを実行できます。  
+- ホスト インスタンスごとに異なるサービス アカウントを設定して、サーバーをオフラインにせずに各ホスト インスタンスのパスワードを変更できます。 サービスを中断せずに、パスワード更新のロールを実行できます。  
   
-    > [!NOTE]
-    >  認証が信頼済みに設定されているホストと認証が信頼済みに設定されていないホストで、同じサービス アカウントを使用することはできません。  
+  > [!NOTE]
+  >  認証が信頼済みに設定されているホストと認証が信頼済みに設定されていないホストで、同じサービス アカウントを使用することはできません。  
   
--   リソース ユーザー権限を Microsoft SQL Server™ レベルでローカル グループまたはドメイン グループに許可すると、SQL Server で許可されているユーザー権限を変更することなくサービス アカウントの追加や削除を実行できるため、所有者の管理の負担や総コストが軽減されます。  
+- リソース ユーザー権限を Microsoft SQL Server™ レベルでローカル グループまたはドメイン グループに許可すると、SQL Server で許可されているユーザー権限を変更することなくサービス アカウントの追加や削除を実行できるため、所有者の管理の負担や総コストが軽減されます。  
   
- サービス アカウントに対し、ジョブ実行に必要な最小限のユーザー権限が許可されるようにするため、BizTalk Server でサービス アカウントに作成される SQL Server データベース ロールは、すべての BizTalk Server データベースで重複しないようになっています。 管理データベースおよび追跡データベースでは、ホスト インスタンス サービス アカウントはすべて同じ SQL Server オブジェクトにアクセスする必要があるため、BizTalk Server では BTS_Host_User という名前の単一の SQL Server データベース ロールが作成されます。 BizTalk ホスト用に作成された Windows グループは、すべてこの SQL Server データベース ロールに追加されます。  
+  サービス アカウントに対し、ジョブ実行に必要な最小限のユーザー権限が許可されるようにするため、BizTalk Server でサービス アカウントに作成される SQL Server データベース ロールは、すべての BizTalk Server データベースで重複しないようになっています。 管理データベースおよび追跡データベースでは、ホスト インスタンス サービス アカウントはすべて同じ SQL Server オブジェクトにアクセスする必要があるため、BizTalk Server では BTS_Host_User という名前の単一の SQL Server データベース ロールが作成されます。 BizTalk ホスト用に作成された Windows グループは、すべてこの SQL Server データベース ロールに追加されます。  
   
- メッセージ ボックス データベースでは、各ホストに専用のリソースが割り当てられています。 BizTalk Server ホストごとに、bts _ という名前の SQL Server データベース ロールを作成する\<*hostname*\>(_u)、1 つのアクセスをブロックするために、それぞれの SQL Server データベース ロールには各ホストの Windows グループに追加されます別のホストのリソースをホストします。  
+  メッセージ ボックス データベースでは、各ホストに専用のリソースが割り当てられています。 BizTalk Server は、bts _ という名前のホストごとの SQL Server データベース ロールを作成します。\<*ホスト名*\>(_u)、1 つのアクセスをブロックするために、それぞれの SQL Server データベース ロールには、各ホストの Windows グループを追加します。別のホストのリソースをホストします。  
   
 ## <a name="accounts-not-supported-by-biztalk-server"></a>BizTalk Server でサポートされていないアカウント  
  BizTalk Server では、次の組み込み Windows アカウントの使用はサポートされていません。  

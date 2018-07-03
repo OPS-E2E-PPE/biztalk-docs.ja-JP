@@ -1,5 +1,5 @@
 ---
-title: Doctype が有効ではありません |Microsoft ドキュメント
+title: Doctype が無効です |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fec7dc4f2dfed0c8e8b8fcde13593d4e29997f7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0676653df3124de72740a18c1d29b58f9282f684
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239146"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37001851"
 ---
 # <a name="doctype-is-invalid"></a>Doctype が無効です
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|DocTypeInvalidFormat|  
-|メッセージ テキスト|Doctype {0} が無効です。 1 つ以上の名前空間、バージョン、またはトランザクション セット ID を指定することはできません。|  
+|                 |                                                                                                                 |
+|-----------------|-----------------------------------------------------------------------------------------------------------------|
+|  製品名   |               [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                |
+| 製品バージョン |                           [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                            |
+|    イベント ID     |                                                        -                                                        |
+|  イベント ソース   |             [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI              |
+|    コンポーネント    |                                                   EDI エンジン                                                    |
+|  シンボル名  |                                              DocTypeInvalidFormat                                               |
+|  メッセージ テキスト   | Doctype{0}が無効です。 1 つ以上の名前空間、バージョン、またはトランザクション セット ID を指定することはできません。 |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、スキーマが正しく検出されなかったため、EDI 受信パイプラインが受信インターチェンジを処理できなかったことを示します。  

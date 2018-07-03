@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10850 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10850 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94e9bef6d104b8da3c41d295005a7a274a1d2610
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0430d5d7ea3ff2a0fabf9c9698acffe15b644f24
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278034"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37011363"
 ---
 # <a name="single-sign-on-event-10850"></a>シングル サインオン: イベント 10850
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10850|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|ENTSSO_E_ENABLED_NOT_ALLOWED_CREATE|  
-|メッセージ テキスト|'enabled' フラグを指定してアプリケーションを作成することはできません。|  
+|                 |                                                                     |
+|-----------------|---------------------------------------------------------------------|
+|  製品名   |                      エンタープライズ シングル サインオン                      |
+| 製品バージョン |     [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]      |
+|    イベント ID     |                                10850                                |
+|  イベント ソース   |                               ENTSSO                                |
+|    コンポーネント    |                                 なし                                 |
+|  シンボル名  |                 ENTSSO_E_ENABLED_NOT_ALLOWED_CREATE                 |
+|  メッセージ テキスト   | 'enabled' フラグを指定してアプリケーションを作成することはできません。 |
   
 ## <a name="explanation"></a>説明  
  アプリケーションを有効にするには、アプリケーションを作成し、アプリケーションの各フィールド (UserID および Password) にフィールド情報を入力する必要があります。 "enabled" フィールドを設定済みの状態でアプリケーションを作成することはできません。  

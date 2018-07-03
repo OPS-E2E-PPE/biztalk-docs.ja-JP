@@ -1,5 +1,5 @@
 ---
-title: ビューにアクセス権を持つアカウントのユーザーを一覧表示する方法 |Microsoft ドキュメント
+title: ビューにアクセス権を持つアカウントのユーザーの一覧を表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,30 +16,30 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c80a01aa9b4bd19581cb97f7fee127fc244322d4
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 8b8e27f1f48846c1eb134c2ee71bf9c00c72d4a2
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25972512"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36981707"
 ---
 # <a name="how-to-list-user-accounts-with-access-to-a-view"></a>ビューへのアクセス権を持つユーザー アカウントを一覧表示する方法
-管理者を使用して、 **get アカウント**BAM 管理ユーティリティのコマンド一覧を取得する、すべてのユーザー アカウントのビュー ロールの場合、指定されたビューへのアクセス権を持つすべてのユーザー アカウントを意味します。  
+管理者を使用して、 **get アカウント**ビュー ロールの場合、指定されたビューへのアクセスを持つすべてのユーザー アカウントを意味するすべてのユーザー アカウントの一覧を取得する BAM 管理ユーティリティ コマンド。  
   
- BAM ビューを表示する方法については、次を参照してください。[リスト BAM ビューの表示方法](../core/how-to-list-bam-views.md)です。  
+ BAM ビューを表示する方法については、次を参照してください。 [BAM ビューをリストする方法](../core/how-to-list-bam-views.md)します。  
   
 ### <a name="to-list-user-accounts-with-access-to-a-view"></a>ビューへのアクセス権を持つユーザー アカウントを一覧表示するには  
   
-1.  次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-2.  移動[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡  
+2. 移動します[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡  
   
-3.  型**bm get-アカウントの表示:\<ビュー名\>** です。  
+3. 型**bm get-アカウントのビュー:\<ビュー名\>** します。  
   
-    > [!NOTE]
-    >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
+   > [!NOTE]
+   >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-4.  **Enter**キーを押します。  
+4. **Enter**キーを押します。  
   
 ## <a name="see-also"></a>参照  
  [BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md)   

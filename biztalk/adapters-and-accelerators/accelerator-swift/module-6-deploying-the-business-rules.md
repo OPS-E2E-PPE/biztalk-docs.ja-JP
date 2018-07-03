@@ -1,5 +1,5 @@
 ---
-title: '第 6 章: ビジネス ルールの展開 |Microsoft ドキュメント'
+title: 'モジュール 6: ビジネス ルールの展開 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,28 +16,28 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e890456b7ff3e467a0f513a261d12a52f92689f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 389d8038b5a216f90d85399eeefaebde86284c71
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207994"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36972843"
 ---
-# <a name="module-6-deploying-the-business-rules"></a>第 6 章: ビジネス ルールの展開
-このモジュールで、インストール ログを確認、および、ビジネス ルール作成ツールを使用してデプロイを確認するビジネス ルールを展開します。  
+# <a name="module-6-deploying-the-business-rules"></a>モジュール 6: ビジネス ルールの展開
+このモジュールで、インストール ログを確認、および、ビジネス ルール作成ツールを使用してデプロイを確認します。 ビジネス ルールを展開します。  
   
- ビジネス ルールを使用していることを確認する[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] Worldwide 銀行間財務通信 (SWIFT) 標準の Society で定義されている書式指定、フィールドの仕様、およびネットワーク検証規則に従う必要メッセージ。 書式指定が全体としてメッセージの構造に関連し、フィールドの仕様が、メッセージ内の各フィールドについて詳しく説明します。 ネットワーク検証ルールは、クロス フィールド検証に適用され、本質的に複雑です。  
+ ビジネス ルールを使用することを確認するマイクロソフト[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]メッセージは、世界銀行間金融電気通信 (SWIFT) 標準の社会で定義されている書式指定、フィールドの仕様、およびネットワークの検証規則に準拠します。 書式指定が全体としてのメッセージの構造に関連し、フィールドの指定が、メッセージ内の各フィールドについて詳しく説明します。 ネットワーク検証規則は、クロス フィールド検証に適用され、本質的に複雑な。  
   
- A4SWIFT は、各メッセージの XSD スキーマの仕様を提供します。 A4SWIFT の逆アセンブラー (DASM) およびアセンブラー (ASM) は、スキーマを使用して解析またはシリアル化し、ネイティブのフラット ファイル メッセージを検証します。 検証は、書式指定とスキーマをエンコードするフィールドの仕様に制限されます。 ただし、いくつかの形式をエンコードし、スキーマ内の関連の規則をフィールドすることはできません。  
+ A4SWIFT では、各メッセージの XSD スキーマの仕様を提供します。 A4SWIFT (逆アセンブラー) を逆アセンブラーとアセンブラー (ASM) は、スキーマを使用して解析またはシリアル化し、ネイティブのフラット ファイル メッセージを検証します。 検証は、書式指定と、スキーマをエンコードするフィールドの指定に制限されます。 ただし、いくつかの形式をエンコードし、スキーマ内で関連する規則をフィールドことはできません。  
   
- A4SWIFT には、以下の SWIFT 標準リリース ガイド (SRG) ビジネス ルールのセットも含まれています。 BizTalk Server ビジネス ルール エンジン (BRE) は、A4SWIFT ポリシーを呼び出すし、A4SWIFT ビジネス規則が適用されます。  
+ A4SWIFT には、以下の SWIFT 標準リリース ガイド (SRG) ビジネス ルールのセットも含まれています。 BizTalk Server ビジネス ルール エンジン (BRE) は、A4SWIFT ポリシーを呼び出すし、A4SWIFT のビジネス ルールを適用します。  
   
- これらのビジネス ルールが形式とフィールド、およびスキーマの自然な能力を超えているネットワーク検証規則に関連する複雑な検証のために含まれます。 SWIFT DASM または ASM コンポーネントの受信または送信パイプライン内では、BRE を呼び出します。  
+ これらのビジネス ルールは、形式とフィールド、およびスキーマの自然な能力を超えているネットワーク検証ルールに関連する複雑な検証のためです。 SWIFT 逆アセンブラーまたは ASM コンポーネントの受信または送信パイプライン内では、BRE を呼び出します。  
   
- 変更することで、オンまたはオフ、検証を有効にする、 **BREValidation**パイプラインの内部で逆アセンブラーのプロパティです。  
+ 変更することでオンまたはオフの検証を有効にする、 **BREValidation**パイプライン内での逆アセンブラーのプロパティ。  
   
  このセクションには、次のトピックが含まれています。  
   
--   [レッスン 1: 関連するビジネス ルールの展開](../../adapters-and-accelerators/accelerator-swift/lesson-1-deploying-the-related-business-rules.md)  
+-   [レッスン 1: 関連するビジネス ルールを展開する](../../adapters-and-accelerators/accelerator-swift/lesson-1-deploying-the-related-business-rules.md)  
   
--   [レッスン 2: ビジネス ルール作成ツールを使用して、展開を確認します。](../../adapters-and-accelerators/accelerator-swift/lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool.md)
+-   [レッスン 2: ビジネス ルール作成ツールを使用して展開を確認する](../../adapters-and-accelerators/accelerator-swift/lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool.md)

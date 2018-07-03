@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server2 の管理 |Microsoft ドキュメント
+title: BizTalk Server2 の管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 154b7d62af79f557f01064235744b2b56ba0fe3a
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 08f74b441ca42b1a0854cd5aff098c221281e579
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26008603"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988515"
 ---
 # <a name="managing-biztalk-server"></a>BizTalk Server の管理
-このセクションでは、実稼働環境で BizTalk Server システムを管理するためのガイダンスを提供します。 一般に次の手順では、展開後に BizTalk アプリケーションを使用している前提としています。 これらの手順では、ベスト プラクティスと、次の定期的な操作の概念について説明します。  
+このセクションでは、運用環境で BizTalk Server システムを管理するためのガイダンスを提供します。 一般に次の手順では、デプロイ後に BizTalk アプリケーションを使用するとします。 これらの手順では、ベスト プラクティスと、次のルーチン処理の概念について説明します。  
   
--   チェックリストと運用環境に BizTalk アプリケーションを展開するための手順です。  
+- チェックリストと運用環境に BizTalk アプリケーションをデプロイするための手順。  
   
--   チェックリストと運用環境に展開した後、BizTalk アプリケーションを更新するための手順です。  
+- チェックリストと運用環境にデプロイ後に BizTalk アプリケーションを更新するための手順。  
   
--   をインストールする手順は、構成、およびデジタル暗号化証明書を管理します。  
+- をインストールする手順では、構成、およびデジタル暗号化証明書を管理します。  
   
--   移動手順について[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SQL Server の 1 つのインスタンスから別のデータベースです。  
+- 移動する手順[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SQL Server の 1 つのインスタンスから別のデータベース。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

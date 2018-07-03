@@ -1,5 +1,5 @@
 ---
-title: '手順 2: Web プロジェクトを展開する |Microsoft ドキュメント'
+title: '手順 2: Web プロジェクトをデプロイする |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,48 +12,48 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 85cef88de4e8fa05bb50840002a0f344b1f0b350
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: a99defc18cd38dc6f88a16b8c3fd0db2a8168426
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
-ms.locfileid: "23450291"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013123"
 ---
-# <a name="step-2-deploy-the-web-project"></a>手順 2: Web プロジェクトを展開します。
+# <a name="step-2-deploy-the-web-project"></a>手順 2: Web プロジェクトをデプロイします。
 ![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
  **所要時間:** 5 分  
   
- この手順で生成された Web プロジェクトをパブリッシュします[手順 1: Web プロジェクトを作成するアダプター サービス開発ウィザードを使用して](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)インターネット インフォメーション サービス (IIS) にします。  
+ この手順で生成された Web プロジェクトをパブリッシュします[手順 1: アダプター サービス開発ウィザードを使用して Web プロジェクトを作成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)インターネット インフォメーション サービス (IIS) にします。  
   
 ## <a name="prerequisites"></a>前提条件  
- この手順を完了する必要がありますを行った[手順 1: Web プロジェクトを作成するアダプター サービス開発ウィザードを使用して](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)です。 Web サーバーは、HTTPS 通信を有効にインストールされている SSL 証明書も必要です。  
+ 作成したこの手順を完了する[手順 1: アダプター サービス開発ウィザードを使用して、Web プロジェクトを作成する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)します。 Web サーバーは、HTTPS 通信を有効にインストールされている SSL 証明書も必要です。  
   
 ## <a name="compile-and-deploy-the-web-project"></a>コンパイルして、Web プロジェクトの配置  
   
-1.  Visual Studio では、以前に作成された EchoWeb プロジェクトを読み込みます。  
+1. Visual Studio では、以前に作成 EchoWeb プロジェクトを読み込みます。  
   
-2.  Visual Studio コマンド プロンプトを開きます。  
+2. Visual Studio コマンド プロンプトを開きます。  
   
-3.  C:\tutorials\echoweb フォルダーから、コマンド プロンプトで次のコマンドを入力し、ENTER キーを押します。  
+3. C:\tutorials\echoweb フォルダーから、コマンド プロンプトで次のコマンドを入力し、ENTER キーを押します。  
   
-     **sn/k EchoWebKey.snk**  
+    **sn/k EchoWebKey.snk**  
   
-     確認メッセージを**キー ペア EchoWebKey.snk に書き込まれる**、コマンド ラインで表示されます。  
+    確認のメッセージでは、**キーのペア EchoWebKey.snk に書き込まれる**コマンドラインで表示されます。  
   
-4.  コマンド プロンプトを閉じます。  
+4. コマンド プロンプトを閉じます。  
   
-5.  **ソリューション エクスプ ローラー**EchoWeb プロジェクトを右クリックし、、 **Web サイトの発行**です。  
+5. **ソリューション エクスプ ローラー**EchoWeb プロジェクトを右クリックして選択し、 **Web サイトの発行**します。  
   
-6.  **Web サイトの発行** ダイアログ ボックスの**ターゲットの場所**、入力**http://machinename/EchoWeb**です。 選択**このプリコンパイル済みサイトを更新できるように**、**固定名およびシングル ページ アセンブリを使用する**、および**プリコンパイル済みアセンブリに厳密な名前を有効にする**です。 **ファイルの場所をキー**フィールドで省略記号ボタンをクリックして **([...])** ボタンをクリックし、以前作成した EchoWebKey.snk ファイルを選択し、をクリックして**OK**です。  
+6. **Web サイトの発行** ダイアログ ボックスの**ターゲットの場所**、入力 **http://machinename/EchoWeb**します。 選択**このプリコンパイル済みサイトを更新可能**、**固定名およびシングル ページ アセンブリを使用する**、および**プリコンパイル済みアセンブリで厳密な名前を有効にする**します。 **ファイルの場所をキー**フィールドで省略記号をクリックします **([...])。** ボタンをクリックし、以前は、作成 EchoWebKey.snk ファイルを選択し、順にクリックします**OK**します。  
   
-7.  Web サイトが正しく作成されたことを確認するには、Internet Explorer を起動、入力 **"http://localhost/EchoWeb/EchoOutboundContract.svc"** でアドレス バー、および、ENTER キーを押します。 EchoOutboundContractClient を説明する Web ページが表示されます。  
+7. Web サイトが正しく作成されたことを確認するには、Internet Explorer を起動、入力 **"<http://localhost/EchoWeb/EchoOutboundContract.svc>"** でアドレス バー、および ENTER キーを押します。 EchoOutboundContractClient を説明する Web ページが表示されます。  
   
-## <a name="what-did-i-just-do"></a>でしただけは何ですか。  
- IIS に Web プロジェクトをパブリッシュしただけです。  
+## <a name="what-did-i-just-do"></a>でしただけ何か。  
+ IIS に Web プロジェクトを発行するだけです。  
   
 ## <a name="next-steps"></a>次の手順  
- 進むことができますをコンパイルし、プロジェクトを展開した、[手順 3: アプリケーション定義ファイルの作成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-create-an-application-definition-file.md)  
+ これでコンパイルされ、プロジェクトのデプロイに進んで[手順 3: アプリケーション定義ファイルの作成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-create-an-application-definition-file.md)  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 3: IIS でエコー アダプターをホストします。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-3-hosting-the-echo-adapter-in-iis.md)
+ [チュートリアル 3: IIS でエコー アダプターをホストする](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-3-hosting-the-echo-adapter-in-iis.md)

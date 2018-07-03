@@ -1,5 +1,5 @@
 ---
-title: フラット ファイルの処理は BTAHL72X |Microsoft ドキュメント
+title: BTAHL72X フラット ファイル処理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -38,121 +38,121 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bcd1afb4843f68b56228c8e9aaa655d83f70119e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 0a0220d44386eed94efbddc1a5a22fe6704a7780
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25962088"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36975555"
 ---
 # <a name="btahl72x-flat-file-processing"></a>BTAHL72X フラット ファイル処理
-次のコンポーネントで[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) プロセス HL7 2.X (HL7 エンコード) メッセージ。  
+Microsoft BizTalk Accelerator for HL7 の次のコンポーネント ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) プロセス HL7 2.X (HL7 でエンコードされた) メッセージ。  
   
--   パイプラインとコア ライブラリ:[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]です。PipelineCommon.dll と[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]です。PipelineMessageCore.dll  
+- パイプラインとコア ライブラリ:[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]します。PipelineCommon.dll と[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]します。PipelineMessageCore.dll  
   
--   アセンブラーおよび逆アセンブラーのライブラリ:[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]です。HL72fAsm.dll と[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]です。HL72fDAsm.dll  
+- アセンブラーおよび逆アセンブラー ライブラリ:[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]します。HL72fAsm.dll と[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]します。HL72fDAsm.dll  
   
--   送信アダプターを受信確認 (ACK) の検証用のライブラリ双方向の MLLP:[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]です。HL7ACKHelper.dll  
+- 送信アダプターのための双方向の MLLP 受信確認 (ACK) 検証ライブラリ:[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]します。HL7ACKHelper.dll  
   
 ## <a name="hl7-message-modes"></a>HL7 メッセージ モード  
- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X メッセージは、次のメッセージ モードをサポートしています。  
+ [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2.X のメッセージを次のメッセージ モードをサポートしています。  
   
--   パブリッシャーとサブスクライバー (パブリッシュ サブスクライブ) モード  
+- パブリッシャーとサブスクライバー (パブリッシュ-サブスクライブ) モード  
   
-     パブリッシャーのブロードキャストとして宣言的または要請されていないが、サブスクライバーのパーティに更新します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]および[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]デザイン時の後に、サブスクリプションとパーティを管理することができますので、このモードでは、柔軟性を提供します。  
+   パブリッシャーにブロードキャストする宣言型または要請されていないが、サブスクライバーのパーティを更新します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]デザイン時後のサブスクリプションとパーティを管理できるため、このモードでは、柔軟性を提供します。  
   
--   要求-応答モード  
+- 要求-応答モード  
   
-     Interrogative またはクエリ メッセージ交換を特定のエンティティからの特定の要求の結果、応答メッセージ。  
+   Interrogative またはクエリ メッセージ交換を特定のエンティティから特定の要求の結果、応答メッセージ。  
   
 ## <a name="flat-file-parsing"></a>フラット ファイル解析  
- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]解析 HL7 2.X マルチパート メッセージのハンドラーを次の 3 つの部分に:  
+ [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 解析 HL7 2.X を 3 つの部分にマルチパート メッセージ:  
   
--   MSH ヘッダーの一部  
+-   ヘッダー MSH パーツ  
   
 -   ボディ部  
   
 -   Z の一部  
   
 ## <a name="hl7-header-validation"></a>HL7 ヘッダーの検証  
- HL7 逆アセンブラおよびアセンブラは、メッセージを処理できることを確認するために、2.X メッセージのヘッダーの構造とスキーマの検証を実行します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]一般的なヘッダー スキーマ、MSH_25_GLO_DEF 概略図の検証を行います。  
+ HL7 の逆アセンブラーとアセンブラーは、メッセージを処理できることを確認するには、2.X のメッセージのヘッダーの構造とスキーマの検証を実行します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 一般的なヘッダー スキーマ、MSH_25_GLO_DEF の概略図の検証を行います。  
   
- たとえば、パーサーは、MSH1 および MSH2 フィールドが整形を決定します。 MSH1 には、1 つだけの文字が必要です。 MSH2 は 2 ~ 4 文字である必要があり、文字を繰り返すことがありません。  
+ たとえば、MSH1 と MSH2 フィールドが整形パーサーを決定します。 MSH1 には、1 つだけの文字が必要です。 文字を繰り返すことがないと、2 ~ 4 つの文字、MSH2 があります。  
   
-## <a name="hl7-body-validation"></a>HL7 本文の検証  
- HL7 逆アセンブラおよびアセンブラは、2.X メッセージの本文の基本的な構造検証とスキーマの検証を有効にする場合は、実行します。  
+## <a name="hl7-body-validation"></a>HL7 の本文の検証  
+ HL7 の逆アセンブラーとアセンブラーは、2.X のメッセージの本文の基本的な構造の検証とスキーマの検証を有効にした場合実行します。  
   
- 本文の基本的な構造検証される[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]常に実行する、次の検証が含まれます。  
+ 本文の基本的な構造検証を[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]常に実行する、次の検証が含まれます。  
   
--   セグメントで 3 つの文字があること  
+- セグメントで 3 つの文字があること  
   
--   セグメント区切り記号がである\<CR\>または\<CR\>\<LF\> (最後のセグメントの省略可能)  
+- セグメント区切り記号が\<CR\>または\<CR\>\<LF\> (最後のセグメントは省略可能)  
   
--   フィールドの区切り記号が適切であります。  
+- フィールド区切り記号が適切であります。  
   
--   宣言されていない Z セグメント (定義済みの 3 文字セグメント タグ) で宣言されたセグメントがないこと  
+- 未宣言の Z セグメント (定義済みの 3 文字セグメント タグ) で宣言されたセグメントがないこと  
   
- 本文のスキーマの検証をより広範な次のとおりです。  
+  本文のスキーマ検証がより広範な次のとおりです。  
   
--   末尾のフィールドの区切り記号  
+- 末尾のフィールドの区切り記号  
   
-     MSH ヘッダー セグメントと本文セグメント  
+   ヘッダー MSH セグメントとセグメントの本文  
   
--   Z セグメント  
+- Z セグメント  
   
--   XSD でサポートされているとカスタム データ型  
+- XSD でサポートされていると、カスタムのデータ型  
   
-     サポートされている XSD および XSD 以外の型 (TS (タイムスタンプ)、DT (date)、TM (時間)、および TN (電話番号)  
+   サポートされている XSD と XSD 以外の型 (TS (タイムスタンプ)、DT (date)、TM (時間)、および TN (電話番号)  
   
--   列挙型  
+- 列挙型  
   
-     ID (HL7 定義テーブル) と IS (ユーザー定義テーブル)  
+   ID (HL7 定義テーブル) とは (ユーザー定義テーブル)  
   
--   Optionality  
+- Optionality  
   
-     必須およびオプション  
+   必須およびオプション  
   
--   繰り返し  
+- 繰り返し  
   
-     セグメントとフィールド  
+   セグメントとフィールド  
   
--   エスケープ シーケンス  
+- エスケープ シーケンス  
   
-     文字エン コード、書式、および文字セット  
+   文字エン コード、書式、および文字セット  
   
- 有効にするにまたはから受信した、または (送信元パーティの逆アセンブラー、アセンブラーの送信先パーティ) の特定のパーティに送信されるすべてのメッセージのスキーマの検証を無効にするとします。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]MSH9.3 メッセージ構造のヘッダー フィールド、MSH12 バージョン ID フィールド (2.3.1、2.4 または 2.5) と、名前空間での設定によって決定される、この処理に直接 2.X スキーマを使用して、HL7[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー。  
+  有効またはから受信した、または (送信元パーティの逆アセンブラー、アセンブラーの送信先パーティ) の特定のパーティに送信されるすべてのメッセージの概略図の検証を無効にするとします。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] MSH9.3 メッセージ構造のヘッダー フィールド (2.3.1、2.4、または 2.5)、MSH12 バージョン ID フィールドおよび設定名前空間によって決定される、この処理を直接使用して、HL7 2.X スキーマ[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー。  
   
-## <a name="hl7-disassembler-processing"></a>HL7 逆アセンブラーの処理  
- HL7 逆アセンブラーは、処理のための XML セグメントに受信 HL7 メッセージを解析します。 メッセージを解析する際、逆アセンブラーは、次のタスクを実行します。  
+## <a name="hl7-disassembler-processing"></a>HL7 の逆アセンブラーの処理  
+ HL7 の逆アセンブラーでは、HL7 メッセージの受信を処理するための XML セグメントに解析します。 メッセージを解析する際、逆アセンブラーは、次のタスクを実行します。  
   
 -   ハンドルのエスケープ シーケンス  
   
--   必須/オプションのプロパティのチェックを処理します。  
+-   必須/任意のプロパティのチェックを処理します。  
   
--   ハンドルには、セグメントと未定義または予期しない Z セグメントが定義されている (Z セグメントの説明は、次を参照してください。 [Z オブジェクトを介してメッセージをカスタマイズする](../../adapters-and-accelerators/accelerator-hl7/customizing-messages-through-z-objects.md))。  
+-   Z セグメントで未定義または予期しないセグメントをハンドルが定義されている (Z セグメントの説明は、次を参照してください。 [Z オブジェクト経由でメッセージをカスタマイズする](../../adapters-and-accelerators/accelerator-hl7/customizing-messages-through-z-objects.md))。  
   
--   予期しないセグメント、インスタンスの最後 (宣言されていない Z セグメントになります) は無視されます。  
+-   (なる Z セグメントが宣言されていない) インスタンスの末尾に予期しないセグメントを無視します。  
   
 ## <a name="error-reporting"></a>[エラー報告]  
- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]標準 HL7 エラー形式では、セグメント、シーケンス、フィールド、およびエラー コードが含まれているほとんどのエラーを報告します。 ただし、エラー条件がありますなるようなすべての利用可能なたとえば、スキーマが存在しない場合。 このようなケースを処理するために[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]、代替のエラーを報告することができます[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]エラー形式です。 メッセージのエラー セグメントには、2 つの部分が含まれています: HL7 エラーと別名のいずれかのいずれかの[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]エラーです。  
+ [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 標準 HL7 エラー形式では、セグメント、シーケンス、フィールド、およびエラー コードを含むほとんどのエラーを報告します。 ただし、エラー条件がありますなどすべての使用できるようにする、たとえば、スキーマが存在しない場合。 、このようなケースを処理する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]代替でエラーが報告できる[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]エラー形式。 メッセージのエラー セグメントに 2 つの部分が含まれています: 1 つは HL7 エラー、1 つの別名[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]エラー。  
   
 ## <a name="ack-generation"></a>確認の生成  
- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X メッセージの受信確認 (Ack) の次の種類をサポートします。 HL7 両方エラーの種類と[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)](代替) エラーの種類が使用されます。  
+ [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2.X のメッセージの受信確認 (Ack) の次の種類をサポートしています。 HL7 両方エラーの種類と[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)](代替) エラーの種類が使用されます。  
   
 -   元のメッセージと ACK のマッピング  
   
--   HL7 元 Ack  
+-   HL7 の元の確認  
   
--   HL7 Ack の強化  
+-   HL7 の Ack を強化します。  
   
      コミットがそのまま使用し、アプリケーションの同意  
   
--   ACK の静的/プロキシ  
+-   静的/プロキシの確認  
   
      ACK または NAK  
   
 ## <a name="property-promotion"></a>プロパティの昇格  
- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]次の 2.X プロパティの昇格をサポートします。  
+ [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2.X の次のプロパティの昇格をサポートしています。  
   
 -   プロパティ スキーマ  
   

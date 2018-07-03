@@ -1,5 +1,5 @@
 ---
-title: 応答側プライベート プロセス |Microsoft ドキュメント
+title: 応答側プライベート プロセス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,44 +19,44 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8ba5ca38eb64859182242c944d260c9db15c880
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 045559ad13492055e0e63a0cb19c4e7e780d5252
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210898"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36989619"
 ---
 # <a name="responder-private-process"></a>応答側プライベート プロセス
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]応答側プライベート プロセス (PrivateResponder.odx) を使用して、応答側コンピュータの service content を処理します。 これには、次の内容が含まれます。  
+Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]の service content を応答側コンピューターの処理に応答側プライベート プロセス (PrivateResponder.odx) を使用します。 これには、次の内容が含まれます。  
   
--   基幹業務 (LOB) アプリケーションへの着信メッセージのルーティング  
+- 基幹業務 (LOB) アプリケーションへの着信メッセージのルーティング  
   
--   応答メッセージの Service Content の作成、および応答側コンピューター宛てのメッセージのパブリック プロセスへのルーティング  
+- 応答メッセージの Service Content の作成、および応答側コンピューター宛てのメッセージのパブリック プロセスへのルーティング  
   
- プライベート プロセスにより、メタデータの設定と、応答メッセージへの添付ファイルの追加も行われます。 プライベート プロセスでは、応答側パブリック プロセスに送信メッセージをルーティングします。これによって、RNIF (RosettaNet Implementation Framework) ヘッダーが追加され、メッセージを送信する準備が整います。 プライベート プロセスは、LOB アプリケーション宛ての着信メッセージを [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]DATA [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] データベースの MessagesToLOB テーブルにルーティングします。  
+  プライベート プロセスにより、メタデータの設定と、応答メッセージへの添付ファイルの追加も行われます。 プライベート プロセスでは、応答側パブリック プロセスに送信メッセージをルーティングします。これによって、RNIF (RosettaNet Implementation Framework) ヘッダーが追加され、メッセージを送信する準備が整います。 プライベート プロセスは、LOB アプリケーション宛ての着信メッセージを [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]DATA [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] データベースの MessagesToLOB テーブルにルーティングします。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には、個々のビジネス プロセスに合わせてカスタマイズ可能な応答側プライベート プロセスのサンプルが 2 つ含まれています。 1 つ目のサンプルは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] によってインストールされた応答側プライベート プロセスのコードを含む PrivateResponder プロセスのサンプルです。 詳細については、次を参照してください。 [PrivateResponder サンプル](../../adapters-and-accelerators/accelerator-rosettanet/privateresponder-sample.md)です。  
+  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には、個々のビジネス プロセスに合わせてカスタマイズ可能な応答側プライベート プロセスのサンプルが 2 つ含まれています。 1 つ目のサンプルは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] によってインストールされた応答側プライベート プロセスのコードを含む PrivateResponder プロセスのサンプルです。 詳細については、次を参照してください。 [PrivateResponder サンプル](../../adapters-and-accelerators/accelerator-rosettanet/privateresponder-sample.md)します。  
   
- 2 つ目のサンプルは、3A2 および 3A4 の PIP (Partner Interface Process) を使用する発注照会/発注プロセスを自動化する PIP3A4PrivateResponder プライベート プロセスのサンプルです。 他のすべての PIP メッセージも処理します。 詳細については、次を参照してください。 [3A4 プライベート応答側オーケストレーションを使用して、ビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)です。  
+  2 つ目のサンプルは、3A2 および 3A4 の PIP (Partner Interface Process) を使用する発注照会/発注プロセスを自動化する PIP3A4PrivateResponder プライベート プロセスのサンプルです。 他のすべての PIP メッセージも処理します。 詳細については、次を参照してください。 [3A4 プライベート レスポンダー オーケストレーションを使用してビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)します。  
   
 ## <a name="message-flow"></a>メッセージ フロー  
  応答側プライベート プロセスを経由するメッセージ フローは次のとおりです。  
   
-1.  応答側プライベート プロセスは、開始側コンピューターから発信された元の着信メッセージを応答側パブリック プロセスから受信します。  
+1. 応答側プライベート プロセスは、開始側コンピューターから発信された元の着信メッセージを応答側パブリック プロセスから受信します。  
   
-2.  プライベート プロセスは、LOB アプリケーション メッセージを作成します。 これには、LOB メッセージ テンプレートの取得、XML サービス コンテンツのシリアル化、および LOB メッセージへの XML メッセージ部の読み込みが含まれます。  
+2. プライベート プロセスは、LOB アプリケーション メッセージを作成します。 これには、LOB メッセージ テンプレートの取得、XML サービス コンテンツのシリアル化、および LOB メッセージへの XML メッセージ部の読み込みが含まれます。  
   
-3.  プライベート プロセスは、バックエンド LOB アプリケーション宛てのメッセージを、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]DATA [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] データベースの MessagesFromLOB テーブルにルーティングします。  
+3. プライベート プロセスは、バックエンド LOB アプリケーション宛てのメッセージを、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]DATA [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] データベースの MessagesFromLOB テーブルにルーティングします。  
   
-4.  元のメッセージに添付ファイルがある場合、プライベート プロセスは AttachmentHelper コンポーネントを呼び出して添付ファイルを処理します。  
+4. 元のメッセージに添付ファイルがある場合、プライベート プロセスは AttachmentHelper コンポーネントを呼び出して添付ファイルを処理します。  
   
-5.  プライベート プロセスは、応答メッセージを MessagesToLOB テーブルに保存したことを LOB アプリケーションに通知します。  
+5. プライベート プロセスは、応答メッセージを MessagesToLOB テーブルに保存したことを LOB アプリケーションに通知します。  
   
-6.  シングル アクション メッセージの場合、プライベート プロセスは完了します。  
+6. シングル アクション メッセージの場合、プライベート プロセスは完了します。  
   
-7.  ダブル アクション メッセージの場合、プライベート プロセスは LOB アプリケーションからの応答をリッスンします。  
+7. ダブル アクション メッセージの場合、プライベート プロセスは LOB アプリケーションからの応答をリッスンします。  
   
-8.  プライベート プロセスは LOB アプリケーションからの応答を受信すると、応答メッセージを作成してパブリック プロセスに送信します。  
+8. プライベート プロセスは LOB アプリケーションからの応答を受信すると、応答メッセージを作成してパブリック プロセスに送信します。  
   
 9. プライベート プロセスは、パブリック プロセスからのシグナルを待ちます。 シグナルを受信すると、プライベート プロセスは LOB シグナル メッセージを作成して LOB アプリケーションに送信します。 RNIF のバージョンが 1.1 の場合、プライベート プロセスは 2 番目の受信確認シグナルの受信をリッスンし、それを受信すると、LOB シグナル メッセージを作成して LOB アプリケーションに送信します。 プライベート プロセスは、各シグナル メッセージを送信した後に LOB アプリケーションに通知します。  
   

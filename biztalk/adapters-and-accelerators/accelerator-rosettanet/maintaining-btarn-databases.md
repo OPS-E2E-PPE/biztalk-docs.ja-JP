@@ -1,5 +1,5 @@
 ---
-title: BTARN データベースの保守 |Microsoft ドキュメント
+title: BTARN データベースの保守 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ba898931c4fe295c90d6eb94cad60b69d0910d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 496e83311c4ede6446bad8893fbe37b22cf8420d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209762"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37000771"
 ---
 # <a name="maintaining-btarn-databases"></a>BTARN データベースの保守
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] のデータベースは、サイズが大きくなりすぎてシステム パフォーマンスが低下することがあります。 これは、孤立した添付ファイルや未使用のダイジェストなど、使用されないエントリがテーブルに残っているためです。 テーブルの古いエントリが削除されていないことが原因の場合もあります。 このセクションの手順に従って [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] データベースの保守を行い、パフォーマンスに影響が出ないようにしてください。  
+Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]データベースの規模が大きいため、サイズがシステム パフォーマンスに影響する拡張可能です。 これは、孤立した添付ファイルや未使用のダイジェストなど、使用されないエントリがテーブルに残っているためです。 テーブルの古いエントリが削除されていないことが原因の場合もあります。 このセクションの手順に従って [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] データベースの保守を行い、パフォーマンスに影響が出ないようにしてください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -31,4 +31,4 @@ ms.locfileid: "22209762"
   
 -   [ダイジェストの削除](../../adapters-and-accelerators/accelerator-rosettanet/deleting-digests.md)  
   
--   [孤立した添付ファイルを削除します。](../../adapters-and-accelerators/accelerator-rosettanet/deleting-orphan-attachments.md)
+-   [孤立した添付ファイルの削除](../../adapters-and-accelerators/accelerator-rosettanet/deleting-orphan-attachments.md)

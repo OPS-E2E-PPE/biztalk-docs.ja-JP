@@ -1,5 +1,5 @@
 ---
-title: ログの構成 |Microsoft ドキュメント
+title: ログの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,23 +17,23 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb9a8cfb173881b3ec6c6e346bcd9f2d3ec54b87
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 83e15247158dd21c237064692931a83f6885f05e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004539"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002459"
 ---
 # <a name="logging-configuration"></a>ログの構成
-同時に、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server と[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]医療機関病院、クリニック、看護住宅などのトランザクションとデジタル エンタープライズ アプリケーション統合 (EAI) 通信をセキュリティで保護を提供します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーションのアクティビティおよびトランザクション処理の調整、動的にメッセージをルーティング、検証、およびデータを変換する機能を提供し、さまざまなアダプタ経由で転送します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]米国規格協会 ANSI accredited ヘルス レベル 7 (HL7) をリアルタイムで医療のデータを交換プロバイダーのネットワークで医療/管理用のアプリケーションによって使用される標準のメッセージングをサポートします。  
+同時に、MicrosoftBizTalk サーバーと[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]病院、診療所、看護の現場自宅などの医療のトランザクションとデジタル エンタープライズ アプリケーション統合 (EAI) 通信をセキュリティで保護を提供します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] アプリケーションの動作とトランザクション処理の調整、動的にメッセージをルーティング、検証、およびデータを変換する機能を提供し、さまざまなアダプターのトランスポート。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 米国規格協会 ANSI 認定された正常性レベル 7 (HL7) をリアルタイムでの医療データを交換プロバイダーのネットワークで臨床および管理アプリケーションで使用される標準のメッセージングをサポートします。  
   
- Accelerator システムを通過する HL7 メッセージは非常に重要となります。 たとえば、データは、患者の医療や金融取引可能性があります。 HL7 のセキュリティとプライバシーの規制に準拠するには、システム管理者は、次の操作できる必要があります。  
+ アクセラレータのシステムを通過する HL7 メッセージは非常に重要となります。 たとえば、データには、患者の医療記録または金融取引ができます。 HL7 のセキュリティとプライバシー規制に準拠するため、システム管理者は、以下を実行できる必要があります。  
   
--   保留メッセージをデバッグします。  
+- 保留メッセージをデバッグします。  
   
--   潜在的な侵入者を検出し、セキュリティ侵害のリスクを低減する継続的にシステムとファイルのアクセスを監視します。  
+- 可能性のある侵入者の検知し、セキュリティ侵害のリスクを軽減する継続的にシステムとファイルのアクセスを監視します。  
   
- このセクションでは、監査を構成して、ログを確認し、監査データおよびイベント ログを解釈することを有効にして、ログに記録されたデータに対してクエリを実行する概念および手順に関する情報を提供します。  
+  このセクションでは、監査を構成し、監査データおよびイベント ログを解釈し、確認、ログ記録を有効にして、ログに記録されたデータに対してクエリを実行する概念と手順の情報を提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

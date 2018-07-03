@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10661 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10661 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,38 +12,38 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6fdc655a87975a89387d84e2aefdd07a603c0ed3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b52ec67069951bcda3dee54da96e33ca5145e9e6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270170"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36998859"
 ---
 # <a name="single-sign-on-event-10661"></a>シングル サインオン: イベント 10661
 ## <a name="details"></a>詳細  
-  
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10661|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|N\A|  
-|シンボル名|SSO_ERROR_PASSWORD_SYNC_WINDOWS_START_FAILED|  
-|メッセージ テキスト|(PCNS からの) Windows のパスワード同期を開始できませんでした。%r<br /><br /> エラー コード: %1|  
-  
+
+|                 |                                                                                     |
+|-----------------|-------------------------------------------------------------------------------------|
+|  製品名   |                              エンタープライズ シングル サインオン                              |
+| 製品バージョン |             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]              |
+|    イベント ID     |                                        10661                                        |
+|  イベント ソース   |                                       ENTSSO                                        |
+|    コンポーネント    |                                         N\A                                         |
+|  シンボル名  |                    SSO_ERROR_PASSWORD_SYNC_WINDOWS_START_FAILED                     |
+|  メッセージ テキスト   | (PCNS からの) Windows のパスワード同期を開始できませんでした。%r<br /><br /> エラー コード: %1 |
+
 ## <a name="explanation"></a>説明  
  このエラー イベントは、Windows のパスワード同期を開始できなかったことを示します。  
-  
+
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、以下の 1 つ以上の操作を実行します。  
-  
+
 -   関連するイベントについては、アプリケーションとシステムのイベント ログを確認します。  
-  
+
 -   アダプター構成プロパティを確認します。  
-  
+
 ## <a name="more-info"></a>詳細
-  
--   [パスワード同期を管理する方法](../core/how-to-administer-password-synchronization.md)  
-  
--   **エンタープライズ シングル サインオン UI ヘルプ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+
+- [パスワード同期を管理する方法](../core/how-to-administer-password-synchronization.md)  
+
+- **エンタープライズ シングル サインオン UI のヘルプ** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

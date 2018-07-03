@@ -1,6 +1,6 @@
 ---
-title: 設定し、BizTalk Server 2016 の前提条件のインストール |Microsoft ドキュメント
-description: インストールして、必要なソフトウェアと BizTalk Server 2016 用の設定を構成する手順
+title: 設定して、BizTalk Server 2016 の前提条件のインストール |Microsoft Docs
+description: インストールして、必要なソフトウェアと BizTalk Server 2016 の設定を構成する手順
 author: MandiOhlinger
 manager: anneta
 ms.prod: biztalk-server
@@ -13,12 +13,12 @@ ms.topic: article
 ms.assetid: aa70b621-903a-4cfa-9cb0-c6a82ed8f733
 caps.latest.revision: 11
 ms.author: mandia
-ms.openlocfilehash: 666cddaab4d23fa69b0ae488f665e2eda5182c05
-ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
+ms.openlocfilehash: aab7bb1fa22a249eb287f01b2050d10d9f0042ac
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31816966"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37018055"
 ---
 # <a name="set-up-and-install-prerequisites-for-biztalk-server-2016"></a>BizTalk Server 2016 のセットアップとインストールの前提条件
 サーバーのセットアップとソフトウェアのインストール/構成の前提条件。
@@ -58,11 +58,11 @@ BizTalk と SQL Server が別々のコンピューターにインストールさ
     * 受信を許可する
     * 送信を許可する
     * 認証を必要としない
-5. **[OK]** を選択します。 MS DTC を再起動するメッセージが表示されたら、選択**はい**です。 
+5. **[OK]** を選択します。 MS DTC の再起動を求められたら、選択**はい**します。 
 
 追加の設定が必要な場合、「[MSDTC を使用した問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)」を参照してください。
 
-## <a name="configure-application-event-log-optional"></a>(省略可能) アプリケーション イベント ログを構成します。
+## <a name="configure-application-event-log-optional"></a>(省略可能) のアプリケーション イベント ログを構成します。
 
 BizTalk Server のセットアップを実行すると、イベントの記録がアプリケーション イベント ログに保存されます。 インストールされる BizTalk Server の機能によっては、ログの空き領域を超える大きさのログが作成されることもあります。 セットアップ中にアプリケーション イベント ログの領域が不足すると、インストールは失敗します。 アプリケーション イベント ログの設定を変更すれば、この失敗を回避できます。
 
@@ -107,7 +107,7 @@ BizTalk Server の機能のうち、IIS を必要とするものは次のとお�
 - Windows SharePoint Services アダプター
 - SSL (Secure Sockets Layer) 暗号化
 - BAM ポータル
-- EDI
+- EDI 
 
 IIS は**役割**または**機能**としてオペレーティング システムに付属します。OS によって役割または機能になります。 インストール方法:
 
@@ -115,36 +115,36 @@ IIS は**役割**または**機能**としてオペレーティング システ�
 2. **[インターネット インフォメーション サービス]** または **[Web サーバー (IIS)]** を選択します。 既定でオンになっているオプションのほか、次の項目も選択します: 
 
     **Windows 10**
-    - **[Web 管理ツール]** で、次の項目もオンにします:  
-        - IIS 6 管理互換
-        - IIS 6 管理コンソール
-        - IIS 6 スクリプト ツール (adsutil.vbs のインストール)
-        - IIS メタベースおよび IIS 6 構成との互換性
-        - IIS 管理コンソール
-    - **[World Wide Web サービス]** で **[セキュリティ]** を展開し、次の項目もオンにします:
-        - 基本認証
-        - [Windows 認証]    
+   - **[Web 管理ツール]** で、次の項目もオンにします:  
+       - IIS 6 管理互換
+       - IIS 6 管理コンソール
+       - IIS 6 スクリプト ツール (adsutil.vbs のインストール)
+       - IIS メタベースおよび IIS 6 構成との互換性
+       - IIS 管理コンソール
+   - **[World Wide Web サービス]** で **[セキュリティ]** を展開し、次の項目もオンにします:
+       - 基本認証
+       - [Windows 認証]    
 
-    **Windows Server**
-    - **[セキュリティ]** で、次の項目もオンにします: 
-        - 基本認証
-        - [Windows 認証]    
-    - **[管理ツール]** で、次の項目もオンにします:  
-        - IIS 管理コンソール
-        - IIS 6 管理互換
-        - IIS 6 メタベース互換性
-        - IIS 6 管理コンソール
-        - IIS 6 スクリプト ツール (adsutil.vbs のインストール)
+     **Windows Server**
+   - **[セキュリティ]** で、次の項目もオンにします: 
+       - 基本認証
+       - [Windows 認証]    
+   - **[管理ツール]** で、次の項目もオンにします:  
+       - IIS 管理コンソール
+       - IIS 6 管理互換
+       - IIS 6 メタベース互換性
+       - IIS 6 管理コンソール
+       - IIS 6 スクリプト ツール (adsutil.vbs のインストール)
 
 3. インストールを続行します。コンピューターの再起動が求められたら再起動します。 
 
 **関連項目**: [Windows 8 または Windows Server 2012](http://www.iis.net/learn/get-started/whats-new-in-iis-8/installing-iis-8-on-windows-server-2012) に IIS をインストールする
 
 
-## <a name="run-64-bit-bam-portal-optional"></a>64 ビットの BAM ポータル (オプション) を実行します。
-BAM ポータルを使用しない場合は、このセクションを省略できます。 
+## <a name="run-64-bit-bam-portal-optional"></a>(省略可能) 64 ビットの BAM ポータルを実行します。
+BAM ポータルを使用しない場合は、このセクションをスキップできます。 
 
-BAM ポータルは、32 ビット モードで動作します。 64 ビット環境でインターネット インフォメーション サービス (IIS) を使用している場合は、32 ビット モードで実行するアプリケーション プールを設定します。 
+BAM ポータルは、32 ビット モードで動作します。 64 ビット環境でインターネット インフォメーション サービス (IIS) を使用する場合は、32 ビット モードで実行するアプリケーション プールを設定します。 
 
 #### <a name="using-adsutilvbs"></a>adsutil.vbs を利用する
 1.  管理者としてコマンド プロンプトを開きます。 
@@ -160,7 +160,7 @@ BAM ポータルは、32 ビット モードで動作します。 64 ビット�
 5.  **[OK]** を選択します。
 
 ## <a name="install-windows-identity-foundation-wif-optional"></a>Windows Identity Foundation をインストールする (省略可能)
-SharePoint Services アダプターを使用する場合、BizTalk Server には、WIF が必要です。 SharePoint Services アダプターを使用しない場合、このセクションを省略できます。
+SharePoint Services アダプタを使用する場合、BizTalk Server には、WIF が必要です。 SharePoint Services アダプターを使用しない場合、このセクションを省略できます。
 
 Windows Identity Foundation はオペレーティング システムに**機能**として付属します。
 
@@ -168,7 +168,7 @@ Windows Identity Foundation はオペレーティング システムに**機能*
 2. **[Windows Identity Foundation 3.5]** を選択し、インストールを続行します。 
 3. 再起動を促すメッセージが表示されたら、コンピューターを再起動します。
 
-## <a name="install--configure-smtp-server-optional"></a>インストールして SMTP サーバー (省略可能) を構成するには.
+## <a name="install--configure-smtp-server-optional"></a>インストールおよび構成する SMTP サーバー (省略可能)
 BAM 警告を使用する場合、BizTalk Server には、SMTP サーバーが必要です。 BAM 警告を使用しない場合、このセクションを省略できます。
 
 SQL Server Database Mail では SMTP サーバーを使用して BAM 警告を送信します。 SMTP サーバーは BizTalk Server のローカル、または IIS のインストールされた別のサーバーにインストールできます。 SMTP サーバーは、Windows 8.1 や Windows 10 のようなクライアント オペレーティング システムでは利用できません。 
@@ -179,7 +179,7 @@ SMTP サーバーは**機能**としてサーバー オペレーティング シ
 2. **[SMTP サーバー]** を選択し、インストールを続行します。 
 3. 再起動を促すメッセージが表示されたら、コンピューターを再起動します。
 
-## <a name="install-excel-2016-or-2013-optional"></a>Excel 2016 または 2013 (省略可能) をインストールします。
+## <a name="install-excel-2016-or-2013-optional"></a>Excel 2016 または 2013 (省略可能を) インストールします。
 ビジネス アクティビティ監視 (BAM) を使用する場合、BizTalk Server には、Excel が必要です。 BAM を使用しない場合、このセクションを省略できます。
 
 BAM の Office Excel では、監視するビジネス プロセスを定義します。 この BAM Excel ブックでは、BAM によって収集されたデータをどのようにビジネス ユーザーの画面に表示するかを定義することもできます。
@@ -238,9 +238,9 @@ Office 2016 は "クイック実行" または "C2R インストーラー" で�
 
 ## <a name="install-visual-c-redistributable-package"></a>Visual C 再頒布可能パッケージをインストールします。
 
-ダウンロードしてインストール、 [Visual C 再頒布可能パッケージ](https://support.microsoft.com/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package)です。 Visual Studio 2015 が使用されている場合でも、2013 バージョンが必要です。
+ダウンロードしてインストール、 [Visual C 再頒布可能パッケージ](https://support.microsoft.com/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package)します。 Visual Studio 2015 が使用されている場合でも、2013 バージョンが必要です。
 
-[Visual C をダウンロード](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)使用可能なすべてのバージョンを一覧表示します。
+[Visual C ダウンロード](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)使用可能なすべてのバージョンを一覧表示されます。
 
 ## <a name="install-visual-studio-2015-optional"></a>Visual Studio 2015 をインストールします (省略可能)。
 開発ツールで BizTalk プロジェクトを作成するために、BizTalk Server は Visual Studio を必要とします。 これがステージングまたは運用サーバーの場合、あるいは BizTalk 開発を行っていない場合、このセクションを省略できます。
@@ -261,7 +261,7 @@ Visual Studio Enterprise Edition が推奨されますが、Professional 版と 
 > - BizTalk Server をインストールする前に Visual Studio をインストールし、その後 Visual Studio Team Explorer にアップグレードする場合、BizTalk Server インストールの修復が必要になることがあります。
 > - Visual Studio では、Microsoft SQL Server Express は自動的にインストールされますが、BizTalk Server では使用しません。 Microsoft SQL Server Express をアンインストールします。 Microsoft SQL Server Compact もアンインストールできます。  
 > - BizTalk Server 開発ツールは、Visual Studio をベースとして動作します。 BizTalk Server 開発ツールと SDK をインストールする前に、少なくとも Microsoft Visual C#® .NET コンポーネントをインストールしてください。
-> - BizTalk Server ランタイムには、.NET Framework 4.6 が必要です。 Windows Communication Foundation (WCF) アダプターまたは WCF インターセプターがインストールされている場合、.NET Framework 3.0 が必要
+> - BizTalk Server ランタイムには、.NET Framework 4.6 が必要です。 Windows Communication Foundation (WCF) アダプターまたは WCF インターセプターがインストールされている場合は、必要な .NET Framework 3.0 です。
 
 #### <a name="uninstall-sql-server-express"></a>SQL Server Express をアンインストールする
 1. [スタート] メニューで、**[プログラムと機能]** を開きます。 あるいは、**[コントロール パネル]** を開いて **[プログラムのアンインストール]** を選択します。
@@ -281,44 +281,44 @@ BizTalk Server には SQL Server が必要です。 SQL Server は、BizTalk と
 > - BizTalk Server SDK の全機能を使用する場合や、Visual Studio から BizTalk Server アプリケーションを展開する場合には、SQL Server 開発ツールをインストールします。
 > - BizTalk Server では、バイナリ照合順序を除く、大文字と小文字を区別する/区別しないすべての SQL Server 照合順序がサポートされています。 バイナリ照合順序はサポートされません。
 
-**特定のインストール手順については、次を参照してください。** [SQL Server 2016 のインストール](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup)または[SQL Server 2014 のインストール](https://msdn.microsoft.com/library/bb500469(v=sql.120).aspx)です。
+**特定のインストール手順については、次を参照してください。** [SQL Server 2016 のインストール](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup)または[SQL Server 2014 のインストール](https://msdn.microsoft.com/library/bb500469(v=sql.120).aspx)します。
 
 1. SQL Server のインストールを開始します。 
 2. 機能セットアップ中に、以下の項目を選択します。
-    - データベース エンジン サービス
-        - SQL Server のレプリケーション
-        - R Services (In-database) (**省略可能な**; でヒント[SQL Server R Services](https://docs.microsoft.com/sql/advanced-analytics/r/sql-server-r-services))
-        - 検索のためのフルテキスト抽出とセマンティック抽出
-    - Analysis Services
-    - Reporting Services - ネイティブ
-    - 共有機能
-        - クライアント ツール接続
-        - Integration Services
+   - データベース エンジン サービス
+       - SQL Server のレプリケーション
+       - R Services (In-database) (**省略可能な**; で情報[SQL Server R Services](https://docs.microsoft.com/sql/advanced-analytics/r/sql-server-r-services))
+       - 検索のためのフルテキスト抽出とセマンティック抽出
+   - Analysis Services
+   - Reporting Services - ネイティブ
+   - 共有機能
+       - クライアント ツール接続
+       - Integration Services
 
-    > [!NOTE]
-    > **SQL Server Data Tools** は SQL Server の既定インストールには含まれていません。 必要ありませんがでダウンロードできます[SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt)です。 [**SQL Server Management Studio (SSMS)**](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) をダウンロードします。これは、Azure SQL Database を含め、サポートされているあらゆるバージョンの SQL Server で動作します。 ただし、BAM を使用する場合は、リモートの SSIS に接続するには、宛先 SSIS サーバーと同じバージョンの SSMS をインストールする必要があります。 たとえば、 [SSMS 16 をインストールします *。x* ](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#previous-ssms-releases) SQL 2016 SSIS への接続に関連するドライバーをインストールします。 SSMS 17 です。*x* SQL 2016 SSIS に接続できません。 複数のバージョンの SSMS はインストールされていることができます。 
+     > [!NOTE]
+     > **SQL Server Data Tools** は SQL Server の既定インストールには含まれていません。 ダウンロードできますが、必須ではありません[SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt)します。 [**SQL Server Management Studio (SSMS)**](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) をダウンロードします。これは、Azure SQL Database を含め、サポートされているあらゆるバージョンの SQL Server で動作します。 ただし、BAM を使用する場合は、リモート SSIS に接続するには、移行先の SSIS サーバーとして同じバージョンの SSMS をインストールする必要があります。 たとえば、 [16 の SSMS をインストールします *。x* ](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#previous-ssms-releases) SQL 2016 SSIS への接続に関連するドライバーをインストールします。 SSMS 17。*x* SQL 2016 SSIS に接続できません。 複数のバージョンの SSMS がインストールされていることができます。 
 
 3. インストールを続行します。コンピューターの再起動が求められたら再起動します。
 
 ## <a name="disable-shared-memory"></a>共有メモリを無効にします。
 
 1. **[SQL Server 構成マネージャー]** を開きます。
-2. SQL Server 構成マネージャーで、展開**SQL Server ネットワーク構成**、し、 **MSSQLSERVER のプロトコル**です。
+2. SQL Server 構成マネージャーで、展開**SQL Server ネットワーク構成**、し、 **MSSQLSERVER のプロトコル**します。
 3. **[共有メモリ]** を右クリックし、**[無効]** を選択します。
-4. 選択**SQL Server サービス**、SQL を右クリックして**Server (MSSQLSERVER)**、し、**停止**です。 右クリックし、サービスが停止したら、 **SQL Server (MSSQLSERVER)**、し、**開始**です。
+4. 選択**SQL Server サービス**、SQL を右クリックして**Server (MSSQLSERVER)**、し、**停止**します。 右クリックし、サービスが停止したら、 **SQL Server (MSSQLSERVER)**、し、**開始**します。
 5. **SQL Server 構成マネージャー**を終了します。
 
 通常、共有メモリ プロトコルには、SQL Server と同じコンピューターにインストールされているクライアント (BizTalk Server) のみに影響します。 ある種のストレス条件下では (たとえば、同じコンピューターから複数のクライアントが SQL Server にアクセスしている場合)、SQL Server の共有メモリ プロトコルが原因で BizTalk Server のパフォーマンスが低下することがあります。 共有メモリ ネットワーク プロトコルを無効にすると、この解決します。
 
 > [!TIP]
-> SQL Server エージェントが共有メモリを無効にした後を開始し、確認に失敗したかどうか[SQL Server 用 ODBC Driver 13.1](https://www.microsoft.com/download/details.aspx?id=53339)がインストールされています。
+> SQL Server エージェントがメモリの共有を無効にした後に開始し、確認が失敗したかどうかは[ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339)がインストールされています。
 
 ## <a name="install-sql-xml-4"></a>SQL XML 4 をインストールします。
 BizTalk Server ランタイム、管理ツール、および BAM で必要です。 
 
-ダウンロードしてインストール[SqlXml 4.0](https://www.microsoft.com/download/details.aspx?id=30403)です。
+ダウンロードしてインストール[SqlXml 4.0](https://www.microsoft.com/download/details.aspx?id=30403)します。
 
-## <a name="configure-sql-database-mail-optional"></a>(省略可能) SQL データベース メールを構成します。
+## <a name="configure-sql-database-mail-optional"></a>(省略可能) SQL データベースのメールを構成します。
 BAM 警告を使用する場合、BizTalk Server には、SQL Server Database Mail が必要です。 BAM 警告を使用しない場合は、このセクションはスキップしてください。 
 
 **関連項目**: [データベース メール](https://docs.microsoft.com/sql/relational-databases/database-mail/database-mail)に詳細があります。
@@ -327,7 +327,7 @@ BAM 警告を使用する場合、BizTalk Server には、SQL Server Database Ma
 > - SMTP サーバーのサーバー名と TCP ポート番号を知っている必要があります。 この同じコンピューターでは IIS と SMTP サーバーをインストールした場合、ローカル SMTP サーバーを使用します。 SMTP サーバーが認証を必要とする場合、ユーザー名とパスワードを用意します。
 > - BAM ポータルと BAM 警告は別々の機能です。 BAM 警告を使用している場合、SQL Server Database Mail が必要です。 BAM 警告を使用していない場合、SQL Server Database Mail は必要ありません。
 
-**特定の構成手順については、次を参照してください。**: 構成[SQL Server 2016 データベース メール](https://docs.microsoft.com/sql/relational-databases/database-mail/configure-database-mail)または[SQL Server 2014 データベース メール](https://msdn.microsoft.com/library/hh245116(v=sql.120).aspx)です。
+**特定の構成手順については、次を参照してください。**: 構成[SQL Server 2016 Database Mail](https://docs.microsoft.com/sql/relational-databases/database-mail/configure-database-mail)または[SQL Server 2014 Database Mail](https://msdn.microsoft.com/library/hh245116(v=sql.120).aspx)します。
 
    
 テスト メールを送信するには: 
@@ -337,9 +337,9 @@ BAM 警告を使用する場合、BizTalk Server には、SQL Server Database Ma
 **[宛先:]** の受信者がメールを受信すると、データベース メールが構成されます。 
 
 ## <a name="install-winscp-optional"></a>(省略可能) WinSCP をインストールします。
-FTP アダプタで必要です。 FTP アダプターを使用しない場合は、このセクションをスキップします。 
+FTP アダプターで必要です。 FTP アダプターを使用しない場合は、このセクションをスキップします。 
 
-ダウンロードしてインストール[WinSCP](http://winscp.net)です。 
+ダウンロードしてインストール[WinSCP](http://winscp.net)します。 
 
 ## <a name="next-step"></a>次の手順
 [BizTalk Server 2016](../install-and-config-guides/install-biztalk-server-2016.md) をインストールします。

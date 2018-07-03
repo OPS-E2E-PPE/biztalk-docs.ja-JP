@@ -1,5 +1,5 @@
 ---
-title: 取引先との統合の必要性 |Microsoft ドキュメント
+title: 取引先のパートナーとの統合の必要性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94122ceb1ccf39d7a5781334239b5002a2772979
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: e137274013af7b1a919729ce121e31fb7c5b01ed
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004155"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013901"
 ---
-# <a name="the-need-for-trading-partner-integration"></a>取引先との統合の必要性
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] は、ハイテクのビジネス シナリオを持つパートナーに、アプリケーションの統合やビジネス プロセスの自動化のニーズを満たすためのソリューションを提供します。 このセクションでは、ビジネスの課題企業、ハイテク製造面で進行中の一部について説明しますとどのように BizTalk Server を組み込んだシステムと[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]を達成できるこれらの問題に対応します。 最後のトピックでは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] のサンプル ビジネス アプリケーションを示す一般的なシナリオを使用します。  
+# <a name="the-need-for-trading-partner-integration"></a>取引先のパートナーとの統合の必要性
+Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ソリューションと、そのアプリケーションの統合とビジネス プロセス オートメーションのニーズには、ハイテクのビジネス シナリオでパートナーを提供します。 このセクションでは、ハイテク製造の面に関与して企業がビジネス課題の一部について説明しますとどのように BizTalk Server を組み込んだシステムと[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]の問題に対応するこれらの企業が役立ちます。 最後のトピックでは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] のサンプル ビジネス アプリケーションを示す一般的なシナリオを使用します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

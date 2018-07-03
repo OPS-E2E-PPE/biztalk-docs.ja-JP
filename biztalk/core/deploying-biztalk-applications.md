@@ -1,5 +1,5 @@
 ---
-title: BizTalk アプリケーションの展開 |Microsoft ドキュメント
+title: BizTalk アプリケーションの展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,38 +18,38 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56417fa7e9c4aef40a6c76144a8e2d9e5bae548f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f141b0b5ee89c0106e25666a4a6c253e91499aea
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239074"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37007651"
 ---
 # <a name="deploying-biztalk-applications"></a>BizTalk アプリケーションの展開
 このセクションでは、BizTalk アプリケーションの展開に関する次の情報について説明します。  
   
--   アプリケーションとそのアイテムを Windows インストーラー (.msi) ファイルにエクスポートする。  
+- アプリケーションとそのアイテムを Windows インストーラー (.msi) ファイルにエクスポートする。  
   
--   .msi ファイルを別の BizTalk グループにインポートして、アプリケーションとそのアイテムを新しいグループ内に作成する。  
+- .msi ファイルを別の BizTalk グループにインポートして、アプリケーションとそのアイテムを新しいグループ内に作成する。  
   
--   アプリケーションを実行するコンピューターにアプリケーションをインストールする。  
+- アプリケーションを実行するコンピューターにアプリケーションをインストールする。  
   
--   BizTalk アセンブリをグローバル アセンブリ キャッシュ (GAC) にインストールする。  
+- BizTalk アセンブリをグローバル アセンブリ キャッシュ (GAC) にインストールする。  
   
--   アプリケーションの展開およびテストの進行状況を監視する。  
+- アプリケーションの展開およびテストの進行状況を監視する。  
   
--   アプリケーションを取引先に展開する。  
+- アプリケーションを取引先に展開する。  
   
--   バインド ファイルを編集し、さまざまな展開環境に合わせてバインドをカスタマイズする。  
+- バインド ファイルを編集し、さまざまな展開環境に合わせてバインドをカスタマイズする。  
   
- 別のアプリケーションの展開シナリオで実行する必要のあるタスクのチェックリストは、次を参照してください。 [BizTalk アプリケーションの展開と管理のチェックリスト](../core/biztalk-application-deployment-and-management-checklists.md)です。 BizTalk アプリケーションおよびその展開の背景情報については、次を参照してください。 [Understanding BizTalk アプリケーションの展開と管理](../core/understanding-biztalk-application-deployment-and-management.md)です。 アプリケーションを作成して、追加または成果物を削除または別のアプリケーションへの参照を追加する変更については、次を参照してください。[を変更する BizTalk アプリケーションの作成と](../core/creating-and-modifying-biztalk-applications.md)です。 BizTalk アセンブリを展開する方法の詳細については、次を参照してください。 [BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)です。  
+  別のアプリケーションの展開シナリオで実行する必要があるタスクのチェックリストは、次を参照してください。 [BizTalk アプリケーションの展開と管理のチェックリスト](../core/biztalk-application-deployment-and-management-checklists.md)します。 BizTalk アプリケーションと、展開に関する背景情報は、次を参照してください。 [Understanding BizTalk アプリケーションの展開と管理](../core/understanding-biztalk-application-deployment-and-management.md)します。 アプリケーションを作成して、追加または成果物を削除または別のアプリケーションへの参照を追加することで変更については、次を参照してください。[を変更する BizTalk アプリケーションの作成と](../core/creating-and-modifying-biztalk-applications.md)します。 BizTalk アセンブリの展開方法の詳細については、次を参照してください。 [BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BizTalk アプリケーション、バインド、およびポリシーをエクスポートします。](../core/exporting-biztalk-applications-bindings-and-policies.md)  
+-   [BizTalk アプリケーション、バインド、およびポリシーのエクスポート](../core/exporting-biztalk-applications-bindings-and-policies.md)  
   
--   [BizTalk アプリケーション、バインド、およびポリシーをインポートします。](../core/importing-biztalk-applications-bindings-and-policies.md)  
+-   [BizTalk アプリケーション、バインド、およびポリシーのインポート](../core/importing-biztalk-applications-bindings-and-policies.md)  
   
 -   [BizTalk アプリケーションをインストールする方法](../core/how-to-install-a-biztalk-application.md)  
   
--   [BizTalk アプリケーションの展開の進行状況の監視](../core/monitoring-the-progress-of-your-biztalk-application-deployment.md)
+-   [BizTalk アプリケーション展開の進行状況の監視](../core/monitoring-the-progress-of-your-biztalk-application-deployment.md)

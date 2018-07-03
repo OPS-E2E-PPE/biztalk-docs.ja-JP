@@ -1,5 +1,5 @@
 ---
-title: 受信側の処理、受信 EDI メッセージの AS2 経由で |Microsoft ドキュメント
+title: 受信側 AS2 経由で受信 EDI メッセージの処理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1fc9069dddf8a8b58ad439ed915fc9afa539c2a8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b6c17e3f9fd0950d27d2d86568e08726d4886b2f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270066"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983419"
 ---
 # <a name="receive-side-processing-of-an-incoming-edi-message-over-as2"></a>AS2 経由での受信 EDI メッセージの受信側の処理
 AS2 経由の EDI メッセージの受信側の処理では、AS2 メッセージの受信、MDN の送信、EDI ペイロードの処理、および EDI 受信確認の送信 (有効になっている場合) が行われます。  
   
- AS2EdiReceive 受信パイプラインは、AS2 メッセージを受信し、AS2 メッセージ内の EDI ペイロードを逆アセンブルします。 AS2EDISend 送信パイプラインは、AS2 メッセージへの応答としての MDN と、EDI メッセージへの応答として返される EDI 受信確認を送信します。 これらを含めることができます双方向 http パイプラインに送信請求応答の送信ポート (MDN が同期の場合)、または一方向の HTTP 送信ポートと一方向の HTTP 受信ポート (MDN が非同期の場合)。  
+ AS2EdiReceive 受信パイプラインは、AS2 メッセージを受信し、AS2 メッセージ内の EDI ペイロードを逆アセンブルします。 AS2EDISend 送信パイプラインは、AS2 メッセージへの応答としての MDN と、EDI メッセージへの応答として返される EDI 受信確認を送信します。 これらを含めることができます双方向 http パイプラインに送信請求応答の送信ポート (MDN が同期する場合)、または、一方向 HTTP 送信ポートと一方向の HTTP 受信ポート (MDN が非同期の場合)。  
   
  AS2 経由で EDI インターチェンジを受信するために、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は次の手順を実行します。  
   
@@ -37,36 +37,36 @@ AS2 経由の EDI メッセージの受信側の処理では、AS2 メッセー�
 ## <a name="processing-the-received-as2-message"></a>受信した AS2 メッセージの処理  
  AS2EdiReceive 受信パイプラインの AS2 デコーダーが受信 AS2 メッセージを処理します。 この処理は、HTTP アダプターが AS2 メッセージの HTTP ヘッダーから作成する、`InboundHTTPHeaders` コンテキスト プロパティを使用して行われます。 これらのヘッダーには、次の AS2 ヘッダーが含まれます。  
   
--   AS2-To  
+- AS2-To  
   
--   AS2-From  
+- AS2-From  
   
--   AS2-Version  
+- AS2-Version  
   
--   MessageID  
+- MessageID  
   
--   OriginalMessageID (MDN のみ)  
+- OriginalMessageID (MDN のみ)  
   
--   Disposition-Notification-To (MDN が要求されている場合)  
+- Disposition-Notification-To (MDN が要求されている場合)  
   
--   Receipt-Delivery-Option (MDN が要求されている場合)  
+- Receipt-Delivery-Option (MDN が要求されている場合)  
   
--   Signed-Receipt-MICalg (MDN が要求されている場合)  
+- Signed-Receipt-MICalg (MDN が要求されている場合)  
   
- AS2 デコーダーは、これらのヘッダーをメッセージのコンテキストに昇格させます。 これは、後は、次の:  
+  AS2 デコーダーは、これらのヘッダーをメッセージのコンテキストに昇格させます。 これは、後は、次の:  
   
--   アグリーメントの解決を実行して、受信メッセージの処理に使用するパーティのプロパティを特定します。 詳細については、次を参照してください。[受信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-incoming-as2-messages.md)です。  
+- アグリーメントの解決を実行して、受信メッセージの処理に使用するパーティのプロパティを特定します。 詳細については、次を参照してください。[受信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-incoming-as2-messages.md)します。  
   
--   使用して送信者の認証、 **AS2-から**プロパティです。  
+- 使用して送信者の認証、 **AS2-から**プロパティ。  
   
-    > [!NOTE]
-    >  AS2 受信パイプライン処理の詳細については、受信 AS2 メッセージに対して実行しを参照してください[受信 AS2 メッセージを処理](../core/processing-an-incoming-as2-message.md)です。  
+  > [!NOTE]
+  >  AS2 受信パイプライン処理の詳細については、受信 AS2 メッセージに対して実行しを参照してください[受信 AS2 メッセージの処理](../core/processing-an-incoming-as2-message.md)します。  
   
 ## <a name="sending-an-mdn"></a>MDN の送信  
  MDN が有効にされている場合、AS2EdiReceive パイプラインは MDN を生成し、メッセージボックスにドロップします。  
   
 > [!NOTE]
->  送信 Mdn に対して行う AS2 受信パイプライン処理の詳細についてを参照してください[送信 MDN の生成](../core/generating-an-outgoing-mdn.md)です。  
+>  AS2 受信パイプライン処理の詳細については、送信 Mdn に対して実行しを参照してください[送信 MDN の生成](../core/generating-an-outgoing-mdn.md)します。  
   
  **同期モード**  
   
@@ -95,9 +95,9 @@ AS2 経由の EDI メッセージの受信側の処理では、AS2 メッセー�
 ## <a name="sending-the-edi-acknowledgment"></a>EDI 受信確認の送信  
  EDI 受信確認が有効にされている場合、AS2EdiReceive 受信パイプラインの EDI 逆アセンブラーによって EDI 受信確認が生成されます (有効になっている場合)。 EDI 受信確認は、AS2EdiSend 送信パイプラインによって、別の一方向送信ポートで送信される必要があります。  
   
- 双方向の要求-応答を設定した場合の受信ポートの EDI および AS2 メッセージを応答として同期 MDN または (非同期 MDN の場合)、HTTP 応答を返す、**要求-応答で送信パイプラインに確認をルーティングの受信ポート**プロパティ (設定、**ローカル ホストの設定**で一方向 EDI アグリーメントのページ、**アグリーメントのプロパティ** ダイアログ ボックス) は無視されます。 このプロパティがオンになっていても、送信パイプラインは EDI 受信確認ではなく同期 MDN または HTTP 応答を返します。  
+ 双方向の要求-応答を設定する場合の受信ポートの EDI および AS2 メッセージを同期 MDN または (非同期 MDN の場合)、HTTP 応答を返す、**受信ポートで要求-応答送信パイプラインに確認をルーティング**プロパティ (設定、**ローカル ホスト設定**で一方向 EDI アグリーメントのページ、**アグリーメントのプロパティ** ダイアログ ボックス) は無視されます。 このプロパティがオンになっていても、送信パイプラインは EDI 受信確認ではなく同期 MDN または HTTP 応答を返します。  
   
- 詳細については、次を参照してください。 [EDI 受信確認を送信する](../core/sending-an-edi-acknowledgment.md)です。  
+ 詳細については、次を参照してください。 [EDI 受信確認を送信する](../core/sending-an-edi-acknowledgment.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server が AS2 メッセージを受信する方法](../core/how-biztalk-server-receives-as2-messages.md)

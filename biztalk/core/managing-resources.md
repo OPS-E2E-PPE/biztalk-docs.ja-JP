@@ -1,6 +1,6 @@
 ---
-title: リソースの管理 |Microsoft ドキュメント
-description: Btstask または BizTalk 管理コンソールを使用して、BizTalk Server で複数のアセンブリ、スクリプト、証明書、バインド ファイルで動作するには
+title: リソースの管理 |Microsoft Docs
+description: Btstask または BizTalk 管理コンソールを使用して、アセンブリ、スクリプト、証明書、バインド ファイル、および BizTalk Server で複数の操作
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07248c1689adf6b6474fd8e1f3e01f2d660becdc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d9aad282dfb444c2947afca3cefc0a96cd806826
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262442"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37015115"
 ---
 # <a name="manage-resources"></a>リソースを管理します。
 
@@ -44,17 +44,17 @@ ms.locfileid: "22262442"
 -   仮想ディレクトリ  
   
 > [!NOTE]
->  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用については、次を参照してください。、 **WMI クラス参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
-  
+>  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、次を参照してください。、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+> 
 > [!NOTE]
 >  どのような場合においても、同じ名前の複数のリソースを BizTalk Server グループに追加しないでください。 BizTalk Server 管理データベースの格納先 SQL Server の構成で、バイナリ照合順序が使用され、大文字と小文字の区別がサポートされている場合でも、同じ名前の複数のリソースを BizTalk Server グループに追加することはできません。  
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [BizTalk アセンブリの管理](../core/managing-biztalk-assemblies.md)  
   
--   [前処理および後処理のスクリプトを管理します。](../core/managing-pre-and-post-processing-scripts.md)  
+-   [処理前および処理後のスクリプトの管理](../core/managing-pre-and-post-processing-scripts.md)  
   
 -   [.NET アセンブリ、証明書、およびその他のリソースの管理](../core/managing-net-assemblies-certificates-and-other-resources.md)  
   
--   [リソースを更新します。](../core/how-to-refresh-a-resource.md)
+-   [リソースの更新](../core/how-to-refresh-a-resource.md)

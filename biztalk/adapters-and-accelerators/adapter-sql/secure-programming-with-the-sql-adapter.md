@@ -1,5 +1,5 @@
 ---
-title: SQL アダプタをセキュリティで保護された使用したプログラミング |Microsoft ドキュメント
+title: SQL アダプタを使用したセキュリティで保護されたプログラミング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,31 +12,31 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 44886b490ce63e8c34e1a5bdb41554c96a0873ad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8e0c5e68eb1f07067a43995693cbb43bdcad76a4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224026"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002387"
 ---
-# <a name="secure-programming-with-the-sql-adapter"></a>SQL アダプタをセキュリティで保護された使用したプログラミング
-## <a name="how-do-i-protect-credentials-when-i-use-the-add-adapter-service-reference-visual-studio-plug-in"></a>どのように保護する資格情報を使用する場合、アダプター サービス参照を Visual Studio プラグインを追加しますか?  
- 使用すると、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアントを作成するには、ユーザー名と SQL Server データベースのパスワードを指定する必要があります。 資格情報を入力する必要があります、**セキュリティ**タブで、**アダプターの構成** ダイアログ ボックス。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]接続 URI の一部として、ユーザー名とパスワードを指定するオプションが用意されていません。 これにより、次に。  
+# <a name="secure-programming-with-the-sql-adapter"></a>SQL アダプタを使用したプログラミングをセキュリティで保護します。
+## <a name="how-do-i-protect-credentials-when-i-use-the-add-adapter-service-reference-visual-studio-plug-in"></a>保護するには資格情報を使用する場合、アダプター サービス参照を Visual Studio プラグインを追加しますか?  
+ 使用すると、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアントを作成するには、ユーザー名と SQL Server データベースのパスワードを指定する必要があります。 資格情報を入力する必要があります、**セキュリティ** タブで、**アダプターの構成** ダイアログ ボックス。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]接続 URI の一部として、ユーザー名とパスワードを指定するオプションは提供されません。 これにより、次に。  
   
--   資格情報は表示されません、 **URI の構成**のフィールド、**アダプター サービス参照のプラグインの追加** ダイアログ ボックスが、コンピューター画面にアクセスできる人が読み取ることができます。  
+- 資格情報は表示されません、 **URI の構成**のフィールド、 **Adapter Service Reference プラグインの追加**ダイアログ ボックスで、コンピューターの画面にアクセスできる人が読み取ることができます。  
   
--   構成では、資格情報は表示されませんファイルを[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]が生成されます。  
+- 資格情報は、構成には表示されませんファイルを[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]が生成されます。  
   
- 使用して、WCF クライアントを生成する方法について、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]を参照してください、SQL Server データベースのユーザー名とパスワードを入力する方法を含む[SQLアダプターを使用してVisualStudioでのSQLServer操作のメタデータを取得](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md).  
+  使用して WCF クライアントを生成する方法について、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]を参照してください、SQL Server データベースのユーザー名とパスワードを入力する方法を含む[SQLアダプタを使用してVisualStudioでSQLServer操作のメタデータを取得](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md).  
   
 ## <a name="what-are-best-practices-for-setting-credentials-in-code"></a>コードで資格情報の設定のベスト プラクティスとは  
- [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]提供、 **ClientCredentials**などのクライアント通信オブジェクトの資格情報を構成するためのクラス、 **ChannelFactory**サービスで自身を認証に使用します。 使用して、 **ClientCredentials**クラス、することを確認 WCF はどのような認証メカニズムは、そのオブジェクトのチャネル スタックで指定し、クライアントとサービス間の交換に適用します。  
+ [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] 提供します、 **ClientCredentials**などのクライアント通信オブジェクトを資格情報を構成するためのクラス、 **ChannelFactory**を使用して、サービスで自身を認証します。 使用して、 **ClientCredentials**クラス、することを確認 WCF はどのような認証メカニズムは、そのオブジェクトのチャネル スタックで指定された、クライアントとサービス間の交換に適用します。  
   
- [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]がホストされている、インプロセスでその処理を行うアプリケーションでは使用する命令型、 **ClientCredentials**クラスを利用するアプリケーションが使用している通信オブジェクトはクライアントで資格情報を設定します。 これを行うことをお勧めただしと見なされます、します。  
+ [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]がホストされているプロセス内のコンシューマー側アプリケーションを使用する命令型、 **ClientCredentials**コンシューマー側アプリケーションが使用する通信オブジェクトをクライアントの資格情報を設定するクラス。 ただし、これを行うことをお勧めと捉えられます、します。  
   
- [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]の使用を要求、 **ClientCredentials**をプログラムで資格情報を渡すためのクラスです。 **AcceptCredentialsInUri**プロパティのバインドでは無視されます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] URI 内の資格情報を渡すようにします。  
+ [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]の使用が必要です、 **ClientCredentials**資格情報をプログラムで渡すためのクラス。 **AcceptCredentialsInUri**プロパティのバインドでは無視されます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] URI 内の資格情報を渡すようにします。  
   
- 次の例を使用する方法を示しています、**資格情報**で SQL Server データベースの資格情報を設定するプロパティ、 **ChannelFactory**です。  
+ 次の例は、使用する方法を示します、**資格情報**で SQL Server データベースの資格情報を設定するプロパティを**ChannelFactory**します。  
   
 ```  
 // Create binding and endpoint  
@@ -54,7 +54,7 @@ factory.Credentials.UserName.Password = "mypassword";
 factory.Open();  
 ```  
   
- 次の例を使用する方法を示しています、 **ClientCredentials** WCF クライアントで SQL Server データベースの資格情報を設定するクラス。  
+ 次の例は、使用する方法を示します、 **ClientCredentials** WCF クライアントでの SQL Server データベースの資格情報を設定するクラス。  
   
 ```  
 // Initialize a new client for the SELECT operation on the Employee table   
@@ -70,9 +70,9 @@ client.ClientCredentials.UserName.Password = "mypassword";
 client.Open();  
 ```  
   
-## <a name="how-can-i-provide-for-more-secure-data-exchange-across-process-boundaries"></a>どのことができます提供するにはより安全なデータ交換プロセス境界を越えてしますか。  
- [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]がホストされているアプリケーションまたはサービスを利用するとインプロセスでします。 アダプターがホストされているので、インプロセスでコンシューマーとコンシューマー間で交換されるメッセージのセキュリティを提供する必要はありません、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 ただし、使用のアプリケーションまたはサービスは、別のサービスまたはクライアントにプロセス境界を越えて機密データベースの情報を含むメッセージを送信する場合は、環境内でこのデータの適切な保護対策を提供するメジャーを行う必要があります。 [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]クライアントとサービス間で送信されるセキュリティで保護されたメッセージに役立つ多くのオプションを提供します。 クライアントとサービス間で送信されるセキュリティで保護されたメッセージに保護の詳細について[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]を参照してください[Services のセキュリティ保護とクライアント](https://msdn.microsoft.com/library/ms734736.aspx)です。 セキュリティに関する一般情報についての機能の[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]提供を参照してください[Windows Communication Foundation セキュリティ](https://msdn.microsoft.com/library/ms732362.aspx)です。
+## <a name="how-can-i-provide-for-more-secure-data-exchange-across-process-boundaries"></a>な方法はより安全なデータの交換プロセスの境界を越えてでしょうか。  
+ [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]がホストされているアプリケーションまたはサービスで使用することでインプロセスでします。 アダプターがホストされるため、インプロセスで、コンシューマーとコンシューマー間で交換されるメッセージのセキュリティを提供する必要はありません、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 ただし、使用するアプリケーションまたはサービスを別のサービスまたはクライアントのプロセス境界を越えて機密性の高いデータベースの情報を含むメッセージを送信する場合は、環境内でこのデータを適切に保護を提供するメジャーを行う必要があります。 [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] セキュリティで保護されたメッセージがクライアントとサービス間で送信する際に役立つ多くのオプションを提供します。 セキュリティで保護されたメッセージがクライアントとサービスの間で送信することの詳細については[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]を参照してください[Securing Services and Clients](https://msdn.microsoft.com/library/ms734736.aspx)します。 セキュリティに関する一般的な情報の機能の[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]提供しますを参照してください[Windows Communication Foundation セキュリティ](https://msdn.microsoft.com/library/ms732362.aspx)します。
   
 ## <a name="see-also"></a>参照  
-[SQL アプリケーションのセキュリティ保護します。](../../adapters-and-accelerators/adapter-sql/secure-your-sql-applications.md)  
+[SQL アプリケーションをセキュリティで保護する](../../adapters-and-accelerators/adapter-sql/secure-your-sql-applications.md)  
 [SQL アダプタをセキュリティで保護するベスト プラクティス](../../adapters-and-accelerators/adapter-sql/best-practices-to-secure-the-sql-adapter.md)

@@ -1,5 +1,5 @@
 ---
-title: 無効な制御番号の値 |Microsoft ドキュメント
+title: 無効な制御番号の値 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ce9df9724d85a3b4a2d6ebf28f94e4b9c05db05
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 09b274170505bf1b010d61fbefe9d43a51528aac
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257226"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37019840"
 ---
 # <a name="invalid-control-number-value"></a>制御番号の値が無効です
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|X12Ta1InvalidControlNumberValueDescription|  
-|メッセージ テキスト|制御番号の値が無効です|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  製品名   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 製品バージョン |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    イベント ID     |                                           -                                            |
+|  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
+|    コンポーネント    |                                       EDI エンジン                                       |
+|  シンボル名  |                       X12Ta1InvalidControlNumberValueDescription                       |
+|  メッセージ テキスト   |                              制御番号の値が無効です                              |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、インターチェンジの制御番号の値 (インターチェンジ、グループ、またはトランザクション セット) が、スキーマで指定されたデータ型または正しい桁数に準拠していなかったため、受信パイプラインで受信インターチェンジを処理できなかったことを示します。 スキーマは、BaseArtifacts.dll 内の X12ServiceSchema または EdifactServiceSchema です。  

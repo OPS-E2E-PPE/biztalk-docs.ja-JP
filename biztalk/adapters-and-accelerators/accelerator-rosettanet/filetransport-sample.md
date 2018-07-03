@@ -1,5 +1,5 @@
 ---
-title: FileTransport サンプル |Microsoft ドキュメント
+title: FileTransport サンプル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,46 +12,46 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 38c08be5cd58ed6c80af351715ff6257f533c6af
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 4a4be76ba244418612fe9c4a4996569b3c40b506
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005003"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37007003"
 ---
 # <a name="filetransport-sample"></a>FileTransport サンプル
-FileTransport サンプルは、SQL ポートの代わりにファイル ポートを使用するように [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] を設定する方法を示します。 FileTransport サンプルは、HTTP の代わりにファイル転送プロトコル (FTP) を使用してメッセージを送受信します。  
+FileTransport サンプルは Microsoft® を構成する方法を示します[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SQL ポートではなくファイルのポートを使用します。 FileTransport サンプルは、HTTP の代わりにファイル転送プロトコル (FTP) を使用してメッセージを送受信します。  
   
 > [!NOTE]
 >  このドキュメントでは、内部テストまたは説明を目的として [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] をインストールすることを前提としており、 最小セキュリティ アカウントやセットアップについては説明しません。 このトピックの手順に従うには、ローカル管理権限を持つアカウントを使用する必要があります。  
-  
+> 
 > [!NOTE]
 >  このサンプルはメッセージの添付ファイルをサポートしていません。  
   
 ## <a name="filetransport-binding-files"></a>FileTransport バインド ファイル  
- FileTransport サンプルには、2 つのバインド ファイルが含まれています。 各バインド ファイルを使用すると、BTARN のオーケストレーションで使用するファイル ポートを設定できます。 これらのバインド ファイルにある*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet \SDK\FileTransport です。 次に示すように、オーケストレーション、送信ポート、受信ポート、および受信場所に関する設定を確認するには、各バインド ファイルをメモ帳などのエディターで開きます。  
+ FileTransport サンプルには、2 つのバインド ファイルが含まれています。 各バインド ファイルを使用すると、BTARN のオーケストレーションで使用するファイル ポートを設定できます。 これらのバインド ファイルにある*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet \SDK\FileTransport します。 次に示すように、オーケストレーション、送信ポート、受信ポート、および受信場所に関する設定を確認するには、各バインド ファイルをメモ帳などのエディターで開きます。  
   
--   PrivateInitiatorusingFileDrops.xml  
+- PrivateInitiatorusingFileDrops.xml  
   
-    -   オーケストレーション : Microsoft.Solutions.BTARN.PrivateInitiator.PrivateInitiatorProcess  
+  -   オーケストレーション : Microsoft.Solutions.BTARN.PrivateInitiator.PrivateInitiatorProcess  
   
-    -   送信ポート : PrivateInitiator_To_File  
+  -   送信ポート : PrivateInitiator_To_File  
   
-    -   受信ポート : File_To_PrivateInitiator  
+  -   受信ポート : File_To_PrivateInitiator  
   
-    -   受信場所 : File_To_PrivateInitiator  
+  -   受信場所 : File_To_PrivateInitiator  
   
--   PrivateResponderusingFileDrops.xml  
+- PrivateResponderusingFileDrops.xml  
   
-    -   オーケストレーション : Microsoft.Solutions.BTARN.PrivateResponder.PrivateResponderProcess  
+  -   オーケストレーション : Microsoft.Solutions.BTARN.PrivateResponder.PrivateResponderProcess  
   
-    -   送信ポート : PrivateResponder_To_File  
+  -   送信ポート : PrivateResponder_To_File  
   
-    -   受信ポート : File_To_PrivateResponder  
+  -   受信ポート : File_To_PrivateResponder  
   
-    -   受信場所 : File_To_PrivateResponder  
+  -   受信場所 : File_To_PrivateResponder  
   
- 次の手順では、BTSTask コマンドを使用してバインド ファイルからバインドをインポートする方法について説明します。 詳細については、BizTalk Server ヘルプの「ImportBindings コマンド」を参照してください。  
+  次の手順では、BTSTask コマンドを使用してバインド ファイルからバインドをインポートする方法について説明します。 詳細については、BizTalk Server ヘルプの「ImportBindings コマンド」のトピックを参照してください。  
   
 ## <a name="procedure"></a>手順  
   
@@ -67,7 +67,7 @@ FileTransport サンプルは、SQL ポートの代わりにファイル ポー�
   
 5.  Microsoft.Solutions.BTARN.PrivateInitiator.PrivateInitiatatorProcess の登録を解除します。  
   
-6.  C:\Program files \microsoft BizTalk の BTARN フォルダーの下に \FileDrops フォルダーを作成する\<バージョン\>Accelerator for RosettaNet、し、\FileDrops の下にある次のフォルダー構造を作成します。  
+6.  C:\Program files \microsoft BizTalk の BTARN フォルダーの下に \FileDrops フォルダーを作成する\<バージョン\>Accelerator for RosettaNet、し、\FileDrops の下の次のフォルダー構造を作成します。  
   
     -   \PrivateInitiator  
   

@@ -1,5 +1,5 @@
 ---
-title: Functoid の移行 |Microsoft ドキュメント
+title: Functoid の移行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,45 +20,45 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5fac30a9b884bc769752623003d16e7089b140d4
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 3b01f37551b9d4c1aef13786be7094504f8cee08
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009323"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37020504"
 ---
 # <a name="migrating-functoids"></a>Functoid の移行
-以前のバージョンの BizTalk Server から BizTalk Server にマップを移行するときに、マップに含まれる functoid も移行します。 移行する functoid が含まれない場合**スクリプト**functoid、追加の移行タスクは必要ありません。 ただし、マップが含まれる場合**スクリプト**functoid またはカスタム functoid を追加の手順を実行する必要があります。  
+BizTalk Server の以前のバージョンから BizTalk Server にマップを移行する場合、マップに含まれる functoid も移行されます。 移行する functoid が含まれない場合**Scripting** functoid の場合、追加の移行タスクは必要ありません。 ただし、マップが含まれている場合**Scripting** functoid またはカスタム functoid では、追加の手順を実行する必要があります。  
   
- すべてのカスタム スクリプトを BizTalk Server の以前のバージョンに含まれている、**スクリプト**functoid がインラインで書き込まれました。 つまり、Functoid を作成する際、実行時に Functoid で呼び出されるすべてのスクリプトが Functoid と共に格納されていました。 別の functoid で同じスクリプトを使用する場合をコピーして貼り付けるか、いずれかから**スクリプト**するか、別の functoid を最初からスクリプトを書き直していました。  
+ BizTalk Server の以前のバージョンに含まれるすべてのカスタム スクリプトを**Scripting** functoid はインラインで書き込まれました。 つまり、Functoid を作成する際、実行時に Functoid で呼び出されるすべてのスクリプトが Functoid と共に格納されていました。 別の functoid で同じスクリプトを使用する場合をコピーして貼り付けるか、いずれかから**Scripting**にするか、別の functoid がゼロからスクリプトを書き直しています。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、マップを移行すると、Functoid と共に既存のインライン スクリプトもコピーされます。 ただし、すべてのスクリプトは正常に機能します。 BizTalk Server は、VBScript ではなく、Visual Basic .NET および JScript .NET を使用し、JScript が以前のバージョンで使用します。 .NET バージョンの言語では、構文に一部の変更があります。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、マップを移行すると、Functoid と共に既存のインライン スクリプトもコピーされます。 ただし、すべてのスクリプトが正しく機能します。 BizTalk Server は、VBScript ではなく、Visual Basic .NET および JScript .NET を使用し、JScript が以前のバージョンで使用します。 .NET バージョンの言語では、構文に一部の変更があります。  
   
 > [!NOTE]
->  必ずテストして、**スクリプト**functoid を移行した後です。  
+>  必ずテストして、 **Scripting** functoid は移行後にします。  
   
- カスタム functoid を書き直す必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].NET framework を使用するカスタム functoid が必要です。 COM ベースの古いカスタム Functoid は使用できません。 .NET Framework を使用するように、カスタム Functoid を作成し直してください。 カスタム functoid のサンプル コードは、次を参照してください。[カスタム Functoid (BizTalk Server サンプル)](../core/custom-functoid-biztalk-server-sample.md)です。  
+ カスタム functoid を書き直す必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] .NET framework を使用するカスタム functoid が必要です。 COM ベースの古いカスタム Functoid は使用できません。 .NET Framework を使用するように、カスタム Functoid を作成し直してください。 カスタム functoid のサンプル コードを参照してください。[カスタム Functoid (BizTalk Server サンプル)](../core/custom-functoid-biztalk-server-sample.md)します。  
   
- 外部アセンブリにカスタム functoid の機能をラップして、によってこのアセンブリを呼び出すには、代わりに、**スクリプト**functoid です。 次のセクションでは、この方法について説明します。  
+ 代わりに、外部アセンブリにカスタム functoid の機能をラップし、使用してこのアセンブリを呼び出すし、 **Scripting** functoid。 次のセクションでは、この方法について説明します。  
   
 ### <a name="to-migrate-your-custom-functoids"></a>カスタム Functoid を移行するには  
   
-1.  Functoid の機能を、Microsoft Visual Basic .NET、JScript .NET、Microsoft Visual C# .NET などの .NET 言語で再作成します。  
+1. Functoid の機能を、Microsoft Visual Basic .NET、JScript .NET、Microsoft Visual C# .NET などの .NET 言語で再作成します。  
   
-2.  新しい機能を含むアセンブリを作成します。  
+2. 新しい機能を含むアセンブリを作成します。  
   
-3.  グローバル アセンブリ キャッシュ (GAC) にアセンブリを登録します。  
+3. グローバル アセンブリ キャッシュ (GAC) にアセンブリを登録します。  
   
-    > [!NOTE]
-    >  グローバル アセンブリ キャッシュにアセンブリを登録するには、アセンブリに厳密な名前を付けて署名する必要があります。 アセンブリ登録の詳細については、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 連結ヘルプ コレクションの「グローバル アセンブリ キャッシュ」を参照してください。  
+   > [!NOTE]
+   >  グローバル アセンブリ キャッシュにアセンブリを登録するには、アセンブリに厳密な名前を付けて署名する必要があります。 アセンブリ登録の詳細については、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 連結ヘルプ コレクションの「グローバル アセンブリ キャッシュ」を参照してください。  
   
-4.  含むマップとの間の参照を作成、**スクリプト**functoid とを再作成された機能を含むアセンブリです。  
+4. 含むマップとの間の参照を作成、 **Scripting** functoid と再作成された機能を格納するアセンブリ。  
   
-5.  構成、**スクリプト**プロパティを**スクリプト**functoid です。 このプロパティは、どのようなスクリプトを決定、**スクリプト**functoid の呼び出し時に実行します。 このプロパティの値と、カスタム スクリプトの再作成で使用した言語を一致させる必要があります。 スクリプト プロパティを構成する方法の詳細については、次を参照してください。 [Functoid のプロパティを編集および入力パラメーター](../core/editing-functoid-properties-and-input-parameters.md)です。 参照してください[スクリプト Functoid の](../core/scripting-functoid.md)します。  
+5. 構成、**スクリプト**プロパティを**Scripting** functoid。 このプロパティは、どのようなスクリプトを決定します、 **Scripting**実行時に functoid の呼び出し。 このプロパティの値と、カスタム スクリプトの再作成で使用した言語を一致させる必要があります。 スクリプト プロパティを構成する方法の詳細については、次を参照してください。 [Functoid のプロパティを編集および入力パラメーター](../core/editing-functoid-properties-and-input-parameters.md)します。 参照してください[スクリプト Functoid の](../core/scripting-functoid.md)します。  
   
-6.  マップを含んでいる BizTalk プロジェクトをビルド、**スクリプト**functoid です。  
+6. マップを含んでいる BizTalk プロジェクトをビルド、 **Scripting** functoid。  
   
-7.  マップの検証とテストを行います。  
+7. マップの検証とテストを行います。  
   
 ## <a name="see-also"></a>参照  
  [Functoid のプロパティおよび入力パラメーターの編集](../core/editing-functoid-properties-and-input-parameters.md)   

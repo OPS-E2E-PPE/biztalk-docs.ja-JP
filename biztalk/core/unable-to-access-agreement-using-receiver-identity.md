@@ -1,5 +1,5 @@
 ---
-title: アグリーメントにアクセスできません受信者 id を使用して |Microsoft ドキュメント
+title: 受信者 id を使用してアクセス契約にできませんでした |。Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f41b126ca0ebb96716f21381d2e1681ea59bd414
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 630ce4850c2bb11f9b5a18db03204ef2c1e24cae
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286514"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37003731"
 ---
 # <a name="unable-to-access-agreement-using-receiver-identity"></a>受信者 ID を使用してアグリーメントにアクセスできません
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|AS2 エンジン|  
-|シンボル名|UnableToLocateAS2PartyByPartyNameError|  
-|メッセージ テキスト|アグリーメントにアクセスできません受信者 id を使用して: {0}|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  製品名   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 製品バージョン |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    イベント ID     |                                           -                                            |
+|  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
+|    コンポーネント    |                                       AS2 エンジン                                       |
+|  シンボル名  |                         UnableToLocateAS2PartyByPartyNameError                         |
+|  メッセージ テキスト   |                受信者 id を使用してアクセス契約を読み込めません。 {0}                 |
   
 ## <a name="explanation"></a>説明  
  このエラーは、送信パイプラインで送信 AS2 メッセージの送信先パーティを決定できなかったことを示します。送信パイプラインは、送信メッセージの AS2To コンテキスト プロパティまたは Http.UserHttpHeaders コンテキスト プロパティの AS2To プロパティと、[AS2 のプロパティ] ダイアログ ボックスの [パーティ - AS2 メッセージの受信者] ページにある AS2-To プロパティのパーティの名前を照合できませんでした。  

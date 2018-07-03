@@ -1,5 +1,5 @@
 ---
-title: SAP を使用してチャネルを作成 |Microsoft ドキュメント
+title: SAP を使用するチャネルの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,41 +17,41 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22a0d6e48d1a33e4d7c0aec8a1231346a671c1ef
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: c8f42d21fe70a3058a9d92384c6a2853b0e35c84
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963976"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36981411"
 ---
-# <a name="create-a-channel-using-sap"></a>SAP を使用して、チャネルを作成します。
-WCF チャネル モデルでの SAP システムに対する操作を呼び出すまたは SOAP メッセージを交換することで、SAP システムからメッセージを受信、 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] WCF チャネルを経由します。  
+# <a name="create-a-channel-using-sap"></a>SAP を使用してチャネルを作成します。
+WCF チャネル モデルでの SAP システムに対する操作を呼び出すまたはによって SOAP メッセージを交換することで、SAP システムからメッセージを受信、 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] WCF チャネルを経由します。  
   
--   いずれかを使用して操作 (送信操作) を呼び出し、 **IRequestChannel**または**IOutputChannel**アダプターにメッセージを送信するには  
+- いずれかを使用して操作 (送信操作) を呼び出し、 **IRequestChannel**または**IOutputChannel**アダプターにメッセージを送信するには  
   
--   (からトリガーされた SAP システム) 経由でメッセージを受信する、 **IReplyChannel**です。  
+- (トリガーされます)、SAP システムから経由でメッセージを受信する、 **IReplyChannel**します。  
   
- このセクションのトピックでは、作成して、着信および発信の操作に使用されるチャネル形状を構成する方法に関する情報を提供します。  
+  このセクションのトピックでは、作成して、受信と送信操作に使用されるチャネル形状を構成する方法に関する情報を提供します。  
   
 ## <a name="creating-outbound-client-channels"></a>送信 (クライアント) チャネルを作成します。  
- いずれかを使用することができます、 **IRequestChannel**または**IOutputChannel** SAP システムでの操作を呼び出します。 作成する最初のどちらの場合、 **System.ServiceModel.ChannelFactory**適切なインターフェイスを使用します。 チャネルを作成するのにファクトリを使用します。 チャネルを作成した後は、アダプターの操作の呼び出しに使用できます。  
+ いずれかを使用することができます、 **IRequestChannel**または**IOutputChannel**上の SAP システム操作を呼び出します。 作成する最初のどちらの場合、 **System.ServiceModel.ChannelFactory**適切なインターフェイスを使用します。 チャネルを作成するのにファクトリを使用します。 チャネルを作成した後は、アダプターの操作の呼び出しに使用できます。  
   
-#### <a name="to-create-and-open-an-outbound-channel"></a>作成および送信チャネルを開く  
+#### <a name="to-create-and-open-an-outbound-channel"></a>作成し、送信チャネルを開く  
   
-1.  作成しのインスタンスを初期化**ChannelFactory**のエンドポイントとバインディングを使用して必要なチャネル形状です。 エンドポイントは SAP 接続 URI を指定し、バインディングは、インスタンスの**SAPDBBinding**です。 (チャネル ファクトリを開く前に必要なすべてのバインドのプロパティを設定します。)  
+1. 作成しのインスタンスを初期化**ChannelFactory**エンドポイントとバインディングを使用して必要なチャネル形状にします。 SAP 接続 URI を指定する、エンドポイントとバインディングのインスタンスでは**SAPDBBinding**します。 (チャネル ファクトリを開く前に必要なすべてのバインドのプロパティを設定します)。  
   
-2.  使用してチャネル ファクトリの SAP 資格情報を提供、 **ClientCredentials**プロパティです。  
+2. チャネル ファクトリを使用して SAP の資格情報を提供、 **ClientCredentials**プロパティ。  
   
-3.  チャネル ファクトリを開きます。  
+3. チャネル ファクトリを開きます。  
   
-4.  呼び出すことによって、チャネルのインスタンスを取得、 **CreateChannel**チャネル ファクトリでのメソッドです。  
+4. 呼び出すことによって、チャネルのインスタンスを取得、 **CreateChannel**チャネル ファクトリ メソッド。  
   
-5.  チャネルを開きます。  
+5. チャネルを開きます。  
   
- コードまたは構成からバインディングとエンドポイント アドレスを指定できます。  
+   コードまたは構成からバインディングとエンドポイント アドレスを指定できます。  
   
-### <a name="specifying-the-binding-and-endpoint-address-in-code"></a>コードでのバインディングとエンドポイント アドレスの指定  
- 次のコード例を作成する方法を示しています、 **IRequestChannel**コード内のバインドとエンドポイント アドレスを指定することによってです。 作成するコード、 **IOutputChannel**同じですが、指定する必要があります、 **IOutputChannel**のためのインターフェイス、 **ChannelFactory**チャネルの種類とします。  
+### <a name="specifying-the-binding-and-endpoint-address-in-code"></a>バインディングとエンドポイント アドレスを指定するコード  
+ 次のコード例は、作成する方法を示します、 **IRequestChannel**コードでバインディングとエンドポイント アドレスを指定しています。 作成するコード、 **IOutputChannel**する必要がありますを指定する以外には、同じ、 **IOutputChannel**のためのインターフェイス、 **ChannelFactory**チャネルの種類とします。  
   
 ```  
 // Create binding -- set binding properties before you open the factory.  
@@ -76,7 +76,7 @@ IRequestChannel channel = factory.CreateChannel();
 channel.Open();  
 ```  
   
-### <a name="specifying-the-binding-and-endpoint-address-in-configuration"></a>構成でバインディングとエンドポイント アドレスを指定します。  
+### <a name="specifying-the-binding-and-endpoint-address-in-configuration"></a>構成では、バインディングとエンドポイント アドレスを指定します。  
  次のコード例では、構成で指定されたクライアント エンドポイントからチャネル ファクトリを作成する方法を示します。  
   
 ```  
@@ -97,7 +97,7 @@ channel.Open();
 ```  
   
 #### <a name="the-configuration-settings"></a>構成設定  
- 次のコードは、前述の例で使用される構成設定を示しています。 クライアント エンドポイントのコントラクトには、"System.ServiceModel.Channels.IRequestChannel"または"System.ServiceModel.Channels.IRequestChannel"を作成するチャネル形状の種類に応じてをする必要があります。  
+ 次のコードでは、前の例に使用される構成設定を示します。 "System.ServiceModel.Channels.IRequestChannel"または"System.ServiceModel.Channels.IRequestChannel"を作成するチャネル形状の種類に応じて、クライアント エンドポイントのコントラクトがある必要があります。  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -125,25 +125,25 @@ channel.Open();
 ```  
   
 ### <a name="creating-inbound-service-channels"></a>受信 (サービス) チャネルを作成します。  
- インスタンス上のバインドのプロパティを設定して、SAP システムから受信メッセージを受信するアダプターを構成する**SAPBinding**です。 取得できますチャネル リスナーを作成し、このバインディングを使用する、 **IReplyChannel**アダプターからの受信操作へのチャネル。  
+ インスタンスにバインドのプロパティを設定して、SAP システムから受信メッセージを受信するアダプターを構成する**SAPBinding**します。 取得できますチャネル リスナーを作成し、このバインディングを使用する、 **IReplyChannel**アダプターから操作を受信するチャネル。  
   
-##### <a name="to-create-and-open-an-ireplychannel-to-receive-data-changed-notifications"></a>作成し、受信データの変更通知を IReplyChannel を開く  
+##### <a name="to-create-and-open-an-ireplychannel-to-receive-data-changed-notifications"></a>作成し、IReplyChannel 受信データの変更通知を開く  
   
-1.  インスタンスを作成する**SAPBinding**です。  
+1. インスタンスを作成**SAPBinding**します。  
   
-2.  受信する操作に必要なすべてのバインドのプロパティを設定します。 設定して、 **AcceptCredentialsInUri**プロパティをバインドします。  
+2. 受信する操作に必要なすべてのバインドのプロパティを設定します。 設定してください、 **AcceptCredentialsInUri**プロパティをバインドします。  
   
-3.  作成、 **BindingParameterCollection**を追加し、 **InboundActionCollection**を受信する操作のアクションを格納しています。 アダプターでは、その他のすべての操作の SAP システムに例外を返します。 このステップは省略可能です。 詳細については、次を参照してください。 [WCF チャネル モデルを使用して SAP システムからの受信操作の受信](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)です。  
+3. 作成、 **BindingParameterCollection**を追加し、 **InboundActionCollection**を受信する操作のアクションを格納しています。 アダプターでは、その他のすべての操作の SAP システムに例外を返します。 このステップは省略可能です。 詳細については、次を参照してください。 [WCF チャネル モデルを使用して、SAP システムからの受信操作の受信](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)します。  
   
-4.  呼び出してチャネル リスナーを作成する**BuildChannelListener\<IReplyChannel\>** メソッドを**SAPBinding**です。 このメソッドにパラメーターの 1 つとしては、SAP 接続 URI を指定します。 接続 URI は、SAP システムで、RFC 変換先のパラメーターを含める必要があります。 SAP 接続 URI の詳細については、次を参照してください。、 [SAP システムの接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。 作成した場合、 **BindingParameterCollection**手順 3. も指定するこのチャネル リスナーを作成するときにします。  
+4. 呼び出してチャネル リスナーを作成して**BuildChannelListener\<IReplyChannel\>** メソッドを**SAPBinding**します。 このメソッドにパラメーターの 1 つとして、SAP 接続 URI を指定します。 接続 URI は、SAP システムの RFC 転送先のパラメーターを含める必要があります。 SAP 接続 URI の詳細については、次を参照してください。、 [SAP システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。 作成した場合、 **BindingParameterCollection**手順 3 で指定することもこのチャネル リスナーを作成するときにします。  
   
-5.  リスナーを開きます。  
+5. リスナーを開きます。  
   
-6.  取得、 **IReplyChannel**チャネルを呼び出すことによって、 **AcceptChannel**リスナーのメソッドです。  
+6. 取得、 **IReplyChannel**チャネルを呼び出すことによって、 **AcceptChannel**メソッド リスナーをします。  
   
-7.  チャネルを開きます。  
+7. チャネルを開きます。  
   
- 次のコードは、チャネル リスナーを作成し、取得する方法を示します、 **IReplyChannel**アダプターからの受信操作にします。  
+   次のコードは、チャネル リスナーを作成し、取得する方法を示しています、 **IReplyChannel**アダプターから操作を受信します。  
   
 ```  
 // Create a binding and specify any binding properties required  

@@ -1,5 +1,5 @@
 ---
-title: 特別な操作 |Microsoft ドキュメント
+title: 特別な操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,43 +14,43 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fe2472d905e9e726b827d44da79bdfe840233354
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2bada45064e588748b25947e08b104dc79838ee0
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216610"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36975987"
 ---
 # <a name="special-operations"></a>特別な操作
-[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]いくつかの特別な操作を表示します。 これらの操作は、SAP システムの成果物に基づいていません。 アダプターのクライアント アプリケーションの機能を提供する表示されます。 特別な操作は次のとおりです。  
+[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サーフェスのいくつかの特別な操作です。 これらの操作は、SAP システムの成果物には基づいていません。 アダプターのクライアント アプリケーションの機能を提供するは表示されます。 特別な操作は次のとおりです。  
   
--   **RfcGetAttributes**です。 この操作は、RFC ノードの下に表示され、RFC SDK の機能を公開します。 RFC 接続に関する次の情報を提供します。  
+- **RfcGetAttributes**します。 この操作は、RFC ノードの下に表示され、RFC SDK の機能を公開します。 RFC 接続に関する次の情報が提供します。  
   
-    -   システム ID  
+  - システム ID  
   
-    -   パートナーのコード ページ  
+  - パートナーのコード ページ  
   
-    -   言語  
+  - 言語  
   
-     詳細については、メッセージ スキーマを含む RfcGetAttributes 操作は、次を参照してください。 [RFC 操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)です。  
+    そのメッセージのスキーマを含む RfcGetAttributes 操作に関する詳細については、次を参照してください。 [RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)します。  
   
--   **RfcConfirmTransID**です。 この操作は、TRFC ノードの下に表示され、RFC SDK の機能を公開します。 SAP システムでの SAP トランザクション Id を確認するのにには、この操作を使用します。  
+- **RfcConfirmTransID**します。 この操作は、TRFC ノードの下に表示され、RFC SDK の機能を公開します。 SAP システムでの SAP トランザクション Id を確認するのにには、この操作を使用します。  
   
-     RfcConfirmTransID 操作を使用して、そのメッセージ スキーマについての説明を参照してください。 詳細について[SAP で tRFCs に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)です。  
+   RfcConfirmTransID 操作を使用して、そのメッセージ スキーマの詳細についてを参照してください。 詳細について[SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)します。  
   
--   **文字列の SapAdapterUtilities.ConvertGuidToTid(Guid)** です。 これは、SAP アダプターのアセンブリによって公開されているパブリック メソッドです。 (はアダプターによって公開される操作)SAP トランザクション ID (TID) が指定された GUID にマップを返します。  
+- **文字列の SapAdapterUtilities.ConvertGuidToTid(Guid)** します。 これは、SAP アダプターのアセンブリによって公開されるパブリック メソッドです。 (その操作がないアダプターします。)指定された GUID にマップされている ID (TID) SAP トランザクションを返します。  
   
-     内部的には、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] GUID に SAP システムに SAP トランザクション ID (TID) 作業 (LUW) の論理単位を識別するをマップします。 この GUID がクライアントに公開アダプター、tRFC (LUW) をコミットできるように、SAP システムでその TID を確認する RfcConfirmTransID 操作を呼び出すことによってです。  
+   内部的には、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] GUID に SAP システムに関する SAP トランザクション ID (TID) 作業 (LUW) の論理単位を識別するをマップします。 この GUID がクライアントに公開アダプター、tRFC (LUW) をコミットできるように、SAP システムでは、その TID を確認する RfcConfirmTransID 操作を呼び出すことによって。  
   
-     ただし、一部のシナリオについて、tRFC に関連付けられている TID を必要があります。 たとえば、問題のトラブルシューティングを SAP システムで LUW を識別することがあります。 このようなシナリオを呼び出せる**ConvertGuidToTid**です。 使用する**ConvertGuidToTid**コードで、プロジェクトに SAP アダプターのアセンブリへの参照を追加する必要があります。  
+   ただし、一部のシナリオに関連付けられた、tRFC TID を必要があります。 たとえば、特定の問題をトラブルシューティングする SAP システムで LUW たい場合があります。 このようなシナリオを呼び出すことができます**ConvertGuidToTid**します。 使用する**ConvertGuidToTid**コードをプロジェクトに SAP アダプターのアセンブリへの参照を追加する必要があります。  
   
-     TRFCs の呼び出しの詳細については、次を参照してください。 [SAP で tRFCs に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)です。 次の例を呼び出す方法を示しています。 **ConvertGuidToTid**です。  
+   Trfc を呼び出す方法の詳細については、次を参照してください。 [SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)します。 次の例を呼び出す方法を示しています。 **ConvertGuidToTid**します。  
   
-    ```  
-    // messageGuid is the GUID associated with a tRFC or IDOC  
+  ```  
+  // messageGuid is the GUID associated with a tRFC or IDOC  
   
-    string tid = SapAdapterUtilities.ConvertGuidToTid(messageGuid);  
-    ```  
+  string tid = SapAdapterUtilities.ConvertGuidToTid(messageGuid);  
+  ```  
   
 ## <a name="see-also"></a>参照  
- [メッセージと BizTalk Adapter 用 mySAP Business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)
+ [メッセージと BizTalk adapter for mySAP Business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)

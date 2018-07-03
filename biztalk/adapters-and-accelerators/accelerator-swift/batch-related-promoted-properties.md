@@ -1,5 +1,5 @@
 ---
-title: バッチに関連する昇格させたプロパティ |Microsoft ドキュメント
+title: バッチに関連する昇格させたプロパティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,41 +15,41 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 20fa421c6536d1d5182a11872206783392c65f69
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a27d10fd4fc4224d54db166ecdf5f774192cb10a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210546"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37000683"
 ---
 # <a name="batch-related-promoted-properties"></a>バッチに関連する昇格させたプロパティ
-逆アセンブラーが特殊なメッセージをマーク SWIFT の逆アセンブラーを発行すると、メッセージ ボックス データベースに受信のバッチから発信されたメッセージ、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]バッチ メッセージに固有のプロパティを昇格します。 これらのプロパティは、メッセージをどのような序数の位置から開始するバッチなど内にあったに A4SWIFT の部分が保持されると、バッチなどのコンテキスト情報を提供します。  
+逆アセンブラーが特別な Microsoft とメッセージをマーク SWIFT 逆アセンブラーがメッセージ ボックス データベースに受信のバッチから送信されたメッセージを発行したとき[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]バッチ メッセージに固有のプロパティを昇格します。 これらのプロパティは、どのバッチがどのような序数の位置から、メッセージの送信元など内にあったに A4SWIFT の部分が保持すると、バッチなどのコンテキスト情報を提供します。  
   
  A4SWIFT は、バッチ メッセージの次の昇格させたプロパティを設定します。  
   
--   **A4SWIFT_BatchId**  
+- **A4SWIFT_BatchId**  
   
--   **A4SWIFT_IsMessageHeaderValued**  
+- **A4SWIFT_IsMessageHeaderValued**  
   
--   **A4SWIFT_IsMessageTrailerValued**  
+- **A4SWIFT_IsMessageTrailerValued**  
   
--   **A4SWIFT_NumberOfParts**  
+- **A4SWIFT_NumberOfParts**  
   
--   **A4SWIFT_PosInBatch**  
+- **A4SWIFT_PosInBatch**  
   
- これらおよびその他の昇格させたプロパティについては、次を参照してください。 [A4SWIFT_ * 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。  
+  これらおよびその他の昇格させたプロパティについては、次を参照してください。 [a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)します。  
   
 ## <a name="failures-during-batch-processing"></a>バッチ処理中にエラー  
- バッチ処理中に SWIFT の逆アセンブラーがメッセージのエラー (解析または検証) を検出した場合 (**受信バッチ解除処理**'éý' **True**)、として、その動作がバッチ処理の構成によって異なります次に示します。  
+ SWIFT 逆アセンブラーがメッセージのエラー (解析または検証) を検出した、バッチ処理中に場合 (**受信バッチ解除処理**設定**True**)、として、その動作がバッチ処理の構成によって異なります次に示します。  
   
--   バッチ処理の (**受信バッチ解除処理**に設定**True**) 断片化が有効になっていると (**断片化**に設定**True**) では、逆アセンブラー、MessageBox データベースに失敗したメッセージに個別に、公開されたメッセージの昇格させたプロパティに追加され、シリアル化に対応するエラー情報**元**XML です。 逆アセンブラーには、(つまり、指定したスキーマのいずれかを使用して、逆アセンブラーを解析できませんデータ) のバッチの終了時に予期しないデータが検出されると、逆アセンブラー、バッチの最後のメッセージで予期しないデータが含まれています、解析失敗としてマーク. 逆アセンブラーでは、処理中に致命的なエラーが発生すると、逆アセンブラーは、致命的なエラーとすべてのデータを単一のメッセージとして、インターチェンジの終了の原因となったメッセージを公開します。 逆アセンブラーは致命的なエラーの後にメッセージをフラグメント化されません。  
+- バッチ処理 (**受信バッチ解除処理**に設定**True**) を有効になっている断片化 (**断片化**に設定**True**)、逆アセンブラーは発行失敗したメッセージをメッセージ ボックス データベースに個別に、昇格させたプロパティに追加され、シリアル化に対応するエラー情報を**ErrorCollection** XML。 逆アセンブラーでは、予期しないデータ (つまり、指定したスキーマのいずれかを使用して、逆アセンブラーを解析できませんデータ) のバッチの最後に検出されると、逆アセンブラーが、バッチの最後のメッセージで予期しないデータが含まれています、解析失敗としてマークを付けます. 逆アセンブラーでは、処理中に致命的なエラーが発生すると、逆アセンブラーは、致命的なエラーとすべてのデータを 1 つのメッセージとして、インターチェンジの終了の原因となったメッセージを発行します。 逆アセンブラーには、致命的なエラーの発生後のメッセージをフラグメントされません。  
   
--   バッチ処理の (**受信バッチ解除処理**に設定**True**) 断片化が無効になっていると (**断片化**'éý' **False**) では、逆アセンブラー、MessageBox データベースに失敗したメッセージに個別に、公開されたメッセージの昇格させたプロパティに追加され、シリアル化に対応するエラー情報**元**XML です。 さらに、逆アセンブラーは、ネイティブ形式 (入力の正確なコピー) で、1 つのメッセージとしてメッセージ ボックス データベースにバッチ全体が (1 つまたは複数の失敗したメッセージを含む) を公開します。 逆アセンブラーをマークして、 **A4SWIFT_Failed**プロパティ セットを昇格**True**を 1 つまたは複数の失敗したメッセージが、バッチに含まれていることを示します。 逆アセンブラーがアタッチもシリアル化**元**を断片化されていないバッチをバッチ内の個々 のメッセージで発生したすべてのエラーの連結を表す XML。 バッチ内の失敗したメッセージからメッセージごとのエラーの詳細を探索するには、(を関連付けることによって A4SWIFT_BatchId で)、メッセージ ボックス データベースから個々 の失敗したメッセージを取得し、抽出する必要があります、**元**XML各メッセージに失敗しました。 逆アセンブラーに失敗したバッチ全体に予期しないデータが含まれています (逆アセンブラーを公開するため、逆アセンブラーでは、(つまり、指定したスキーマのいずれかを使用して、逆アセンブラーを解析できませんデータ) のバッチの終了時に予期しないデータが検出されると、メッセージ ボックス データベースにもそのまま)、予期しないデータのための解析失敗としてマークを付けます。  
+- バッチ処理 (**受信バッチ解除処理**に設定**True**) を無効になっている断片化 (**断片化**に設定**False**)、逆アセンブラーは発行失敗したメッセージをメッセージ ボックス データベースに個別に、昇格させたプロパティに追加され、シリアル化に対応するエラー情報を**ErrorCollection** XML。 さらに、逆アセンブラーは、ネイティブ形式 (入力の正確なコピー) で、1 つのメッセージとしてメッセージ ボックス データベースにバッチ全体が (1 つまたは複数の失敗したメッセージを含む) を発行します。 逆アセンブラーでマークされます、 **A4SWIFT_Failed**プロパティ セットを昇格**True**を 1 つまたは複数の失敗したメッセージがバッチに含まれているかを示します。 逆アセンブラーもアタッチしますシリアル化**ErrorCollection** XML フラグメント化されていないバッチで、バッチ内の個々 のメッセージで発生したすべてのエラーの連結を表します。 バッチ内の失敗したメッセージからメッセージごとのエラーの詳細を検出するには、(を関連付けることによって A4SWIFT_BatchId 上)、個々 の失敗したメッセージをメッセージ ボックス データベースから取得し、抽出する必要があります、 **ErrorCollection** XML各メッセージに失敗しました。 逆アセンブラーに失敗したバッチ全体に予期しないデータが含まれています (逆アセンブラーを発行するため、逆アセンブラーでは、予期しないデータ (つまり、指定したスキーマのいずれかを使用して、逆アセンブラーを解析できませんデータ) のバッチの最後に検出されると、メッセージ ボックス データベースにもそのまま)、予期しないデータが原因の解析失敗としてマークを付けます。  
   
--   バッチ以外のシナリオ (**受信バッチ解除処理**'éý' **False**)、逆アセンブラー常にメッセージの公開失敗したメッセージ ボックス データベースに期待どおりに、個別にします。  
+- 非バッチ シナリオ (**受信バッチ解除処理**に設定**False**)、逆アセンブラー常にメッセージを発行失敗したメッセージ ボックス データベースに期待どおりに、個別にします。  
   
- 昇格させたプロパティ A4SWIFT のエラーの詳細については、**元**オブジェクトを参照してください[メッセージ サブスクリプションの失敗の操作](../../adapters-and-accelerators/accelerator-swift/working-with-failed-message-subscriptions.md)です。  
+  A4SWIFT のエラーの詳細については、昇格させたプロパティと**ErrorCollection**オブジェクトを参照してください[メッセージ サブスクリプションの失敗の操作](../../adapters-and-accelerators/accelerator-swift/working-with-failed-message-subscriptions.md)します。  
   
 ## <a name="see-also"></a>参照  
- [受信バッチを逆アセンブル](../../adapters-and-accelerators/accelerator-swift/disassembling-inbound-batches.md)   
- [SWIFT 逆アセンブラおよびアセンブラの操作](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)
+ [受信バッチの逆アセンブル](../../adapters-and-accelerators/accelerator-swift/disassembling-inbound-batches.md)   
+ [SWIFT 逆アセンブラーおよびアセンブラーの操作](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)

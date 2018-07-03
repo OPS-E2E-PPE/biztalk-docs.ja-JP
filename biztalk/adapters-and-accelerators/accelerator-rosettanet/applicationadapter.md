@@ -1,5 +1,5 @@
 ---
-title: ApplicationAdapter |Microsoft ドキュメント
+title: ApplicationAdapter |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee9d04f98da5e9b8aa1faba81f32fe5ec37d23b9
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 8b7a754b044fb12bf7cec9fed0e5455e6192c072
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963192"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36974931"
 ---
 # <a name="applicationadapter"></a>ApplicationAdapter
 ApplicationAdapter サンプルは、メッセージの受信時にパブリック プロセスとプライベート プロセス (応答側または開始側) から通知を送信する方法を示します。 このサンプルには、必要に応じて新しい機能を追加できます。  
   
  ApplicationAdapter サンプルは、`IApplicationAdapter` インターフェイスを `ApplicationAdapter1` クラスに実装する方法を示します。 このクラスには、`BeginNotify` と `Notify` という 2 つのメソッドが含まれます。 各クラスのパラメーターは、メッセージ カテゴリ、送信元パーティ名、送信先パーティ名、PIP (Partner Interface Process) コード、PIP インスタンス ID、および PIP バージョンです。  
   
- アセンブリ名とクラス名を入力して、アグリーメントの ApplicationAdapter を設定する、**全般**アグリーメントのタブ、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] ([!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]) 管理コンソールです。 アプリケーション アダプタの .dll ファイルが BizTalk ホスト サービスと同じ資格情報を使用して実行されます。  
+ アセンブリ名とクラス名を入力して、アグリーメントの ApplicationAdapter を設定する、**全般**Microsoft® でアグリーメントのタブ[!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]([!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]) 管理コンソール。 アプリケーション アダプタの .dll ファイルが BizTalk ホスト サービスと同じ資格情報を使用して実行されます。  
   
  ApplicationAdapter サンプルまたは関連するいずれかの外部環境変数を変更した場合は、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] のパブリック プロセスをホストする BizTalk ホスト サービスを再起動します。  
   
- ApplicationAdapter サンプル コードにある\<*ドライブ*\>: \Program Files\ BizTalk\<バージョン\>Accelerator RosettaNet\SDK\ApplicationAdapterfor\\.  
+ ApplicationAdapter サンプル コードは\<*ドライブ*\>: \Program Files\ BizTalk\<バージョン\>Accelerator RosettaNet\SDK\ApplicationAdapterfor\\.  
   
 ## <a name="demonstrates"></a>使用例  
  ApplicationAdapter サンプルは、パブリック プロセスがメッセージを受信したことを応答側プライベート プロセスに通知する方法を示します。 通知には、メッセージ カテゴリ、送信元パーティ名、送信先パーティ名、PIP コード、PIP バージョン、および PIP インスタンス ID が示されます。 この通知は、アクション メッセージと応答メッセージのいずれに関しても送信できます。  
@@ -58,15 +58,15 @@ ApplicationAdapter サンプルは、メッセージの受信時にパブリッ�
   
 #### <a name="to-add-the-application-adapter-to-an-agreement"></a>アプリケーション アダプターをアグリーメントに追加するには  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] **BizTalk\<バージョン\>Accelerator for RosettaNet**、し、をクリックして[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理コンソール**です。  
+1. クリックして**開始**、 をポイント**すべてのプログラム**、microsoft **BizTalk\<バージョン\>Accelerator for RosettaNet**順にクリックします[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理コンソール**します。  
   
-2.  [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]管理コンソールで、展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]、 をクリック**契約**です。  
+2. [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]管理コンソールで、展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]、 をクリック**契約**します。  
   
-3.  アプリケーション アダプターを追加するアグリーメントをダブルクリックします。  
+3. アプリケーション アダプターを追加するアグリーメントをダブルクリックします。  
   
-4.  **アプリケーション アダプター**ボックスで、省略記号ボタンをクリックして (**.**) の右側にあるボタン**アセンブリ名**、アプリケーション アダプタ アセンブリが含まれている場所に移動して、適切な .dll ファイルを選択および順にクリックして**開く**です。  
+4. **アプリケーション アダプター**ボックスで、省略記号ボタンをクリックします (**.**) ボタンの右側に**アセンブリ名**、アプリケーション アダプターのアセンブリを格納している場所に移動、適切な .dll ファイルを選択およびクリックして**オープン**します。  
   
-5.  下矢印をクリックして**クラス名**アプリケーション アダプター クラスを選択し、クリックして**OK**です。  
+5. 下矢印をクリックして**クラス名**アプリケーション アダプター クラスを選択し、クリックして**OK**。  
   
 ## <a name="see-also"></a>参照  
  [アダプター サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)

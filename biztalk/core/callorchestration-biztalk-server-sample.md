@@ -1,5 +1,5 @@
 ---
-title: CallOrchestration (BizTalk Server サンプル) |Microsoft ドキュメント
+title: CallOrchestration (BizTalk Server サンプル) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9cf37bd2b4ceacfe38736cadd8343b4259db126e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 614cbb4531d0d7052263e5e4c7d73ec209e9b685
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966768"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37021880"
 ---
 # <a name="callorchestration-biztalk-server-sample"></a>CallOrchestration (BizTalk Server サンプル)
 CallOrchestration サンプルは、1 つの BizTalk オーケストレーションから別のオーケストレーションを呼び出す方法を示すものです。  
@@ -42,7 +42,7 @@ CallOrchestration サンプルは、1 つの BizTalk オーケストレーショ
 ## <a name="how-this-sample-is-designed-and-why"></a>このサンプルのデザイン方法とその理由  
  このサンプルの主な目的は、1 つのオーケストレーション内から別のオーケストレーションを呼び出す方法を示すことです。 オーケストレーションの呼び出しは、ビジネス プロセスを再利用可能なコンポーネントに分割する 1 つの方法であり、 頻繁に使用するプロセスを取り出して個別のオーケストレーションを作成すれば、他でも再利用できるようになります。  
   
- このサンプルでは、**オーケストレーションの呼び出し**receivePO.odx 内の図形が findShippingPrice.odx を呼び出し、入れ子になったオーケストレーション findShippingPrice.odx を計算して、注文書を送信する前に出荷金額を返す待機順序です。 オーケストレーション findShippingPrice.odx での出荷金額の計算には、次のロジックを使用します。  
+ このサンプルで、**オーケストレーションの呼び出し**receivePO.odx 内の図形 findShippingPrice.odx を呼び出すし、入れ子になったオーケストレーション findShippingPrice.odx を計算して、購入を送信する前に、出荷金額を返すを待ちます順序。 オーケストレーション findShippingPrice.odx での出荷金額の計算には、次のロジックを使用します。  
   
 ```  
 If ( weight * shippingRate ) < minShippingPrice Then  
@@ -58,14 +58,14 @@ End If
 >  アトミック オーケストレーションから、長時間実行されるトランザクションを呼び出すことはできません。  
   
 > [!NOTE]
->  使用方法の相違、**オーケストレーションの呼び出し**図形および**オーケストレーションの開始**図形がオーケストレーションを呼び出すときに返されるまでにネストされているオーケストレーションの呼び出し元が待機続行しています。 後者の場合、呼び出し元のオーケストレーションは別のオーケストレーションを開始した後すぐプロセス フローの次の手順に進む点です。 後者の場合、呼び出されたオーケストレーションは呼び出し元とは独立して、自身のプロセス フローを最後まで実行します。 詳細については、次を参照してください。[オーケストレーションの呼び出し図形を構成する方法](../core/how-to-configure-the-call-orchestration-shape.md)です。 参照してください[オーケストレーションの開始図形を構成する方法](../core/how-to-configure-the-start-orchestration-shape.md)です。  
+>  使用方法の違い、**オーケストレーションの呼び出し**図形と**オーケストレーションの開始**図形がオーケストレーションを呼び出すときに、入れ子になったオーケストレーションが返されるまでの呼び出し元が待機続行しています。 後者の場合、呼び出し元のオーケストレーションは別のオーケストレーションを開始した後すぐプロセス フローの次の手順に進む点です。 後者の場合、呼び出されたオーケストレーションは呼び出し元とは独立して、自身のプロセス フローを最後まで実行します。 詳細については、次を参照してください。[オーケストレーションの呼び出し図形を構成する方法](../core/how-to-configure-the-call-orchestration-shape.md)します。 参照してください[オーケストレーションの開始図形を構成する方法](../core/how-to-configure-the-start-orchestration-shape.md)します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  \<*パスのサンプル*\>\Orchestrations\CallOrchestration\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |---------------|-----------------|  
 |CallOrchestration.btproj、CallOrchestration.sln|このサンプルのプロジェクト ファイルとソリューション ファイルです。|  
 |CallOrchestrationBinding.xml|ポートのバインドなど、自動化されたセットアップに使用されます。|  
@@ -81,19 +81,19 @@ End If
   
 #### <a name="to-build-and-initialize-the-callorchestration-sample"></a>CallOrchestration サンプルをビルドおよび初期化するには  
   
-1.  コマンド ウィンドウで、次のフォルダーに移動します。  
+1. コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*\>\Orchestrations\CallOrchestration\  
+    \<*パスのサンプル*\>\Orchestrations\CallOrchestration\  
   
-2.  次の操作を実行する Setup.bat ファイルを実行します。  
+2. ファイルは、次の操作を実行します。 Setup.bat を実行します。  
   
-    -   CallOrchestration フォルダに、このサンプルの入力 (In) フォルダと出力 (Out) フォルダを作成します。  
+   - CallOrchestration フォルダに、このサンプルの入力 (In) フォルダと出力 (Out) フォルダを作成します。  
   
-    -   このサンプルの両方のオーケストレーションを含む [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトをコンパイルし展開します。  
+   - このサンプルの両方のオーケストレーションを含む [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトをコンパイルし展開します。  
   
-    -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信場所、送信ポート、および受信ポートを作成しバインドします。  
+   - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信場所、送信ポート、および受信ポートを作成しバインドします。  
   
-    -   受信場所を有効にし、送信ポートを開始します。  
+   - 受信場所を有効にし、送信ポートを開始します。  
   
 > [!NOTE]
 >  このサンプルを実行する前に、ビルドと初期化のプロセス中に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でエラーが報告されていないことを確認する必要があります。  
@@ -104,17 +104,17 @@ End If
   
 1.  ファイル InputPO.xml を In フォルダにコピーします。  
   
-2.  更新された XML PO ファイルが Out フォルダに作成されることを確認します。 このファイルには元の PO メッセージが含まれます。このメッセージには、前述のように計算後の出荷費用が反映されています。 このファイルの名前の形式が\< *MessageID*\>、.xml、  *\<MessageID\>* メッセージを一意に識別する GUID が生成.  
+2.  更新された XML PO ファイルが Out フォルダに作成されることを確認します。 このファイルには元の PO メッセージが含まれます。このメッセージには、前述のように計算後の出荷費用が反映されています。 このファイルの名前の形式が\< *MessageID*\>、.xml、 *\<MessageID\>* メッセージを一意に識別するために生成される GUID.  
   
 ## <a name="uninstalling-this-sample"></a>このサンプルのアンインストール  
   
 #### <a name="to-uninstall-the-callorchestration-sample"></a>CallOrchestration サンプルをアンインストールするには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コマンド ウィンドウで、次のフォルダーに移動します。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*\>\Orchestrations\CallOrchestration\  
+    \<*パスのサンプル*\>\Orchestrations\CallOrchestration\  
   
-2.  Cleanup.bat を実行します。  
+2. Cleanup.bat を実行します。  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーション (BizTalk Server サンプル フォルダー)](../core/orchestrations-biztalk-server-samples-folder.md)

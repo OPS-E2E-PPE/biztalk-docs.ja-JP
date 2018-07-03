@@ -1,5 +1,5 @@
 ---
-title: 停止および開始オーケストレーション、送信ポート、および受信場所をプログラムによって |Microsoft ドキュメント
+title: 停止し開始オーケストレーション、送信ポート、および受信場所をプログラムで |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,15 +22,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96b914129d9afb6dfd542f00a302e739e34dafbe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2736f76e3292c6e21a05c995afdd2808a9f60590
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210882"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995475"
 ---
-# <a name="stopping-and-starting-orchestrations-send-ports-and-receive-locations-programmatically"></a>停止および開始オーケストレーション、送信ポート、および受信場所をプログラムで
-ここでは、プログラミングによってオーケストレーション、送信ポート、および受信場所を停止および開始するサンプル コードを紹介します。 これらのアクションは、すべてのオーケストレーション、送信ポート、および受信場所で、個々にまたは複数同時に実行することができます。 このコードをプログラムに組み込んで、これらのアクションを動的に実行できます。 デザイン時に、グラフィカル ユーザー インターフェイスでアクションを実行する[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]、または BizTalk 管理コンソールで実行時にします。  
+# <a name="stopping-and-starting-orchestrations-send-ports-and-receive-locations-programmatically"></a>停止し開始オーケストレーション、送信ポート、および受信場所をプログラムで
+ここでは、プログラミングによってオーケストレーション、送信ポート、および受信場所を停止および開始するサンプル コードを紹介します。 これらのアクションは、すべてのオーケストレーション、送信ポート、および受信場所で、個々にまたは複数同時に実行することができます。 このコードをプログラムに組み込んで、これらのアクションを動的に実行できます。 Microsoft では、デザイン時のグラフィカル ユーザー インターフェイスでアクションを実行する[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]、または BizTalk 管理コンソールでの実行時にします。  
   
 > [!NOTE]
 >  オーケストレーションを開始または停止するコードの場合、オーケストレーション、送信ポート、または受信場所を指定する必要はありません。 サンプル コードは、セットアップ時に [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] によってインストールされたすべてのオーケストレーション、送信ポート、および受信場所でアクションを実行します。 単一のオーケストレーション、送信ポート、または受信場所でアクションを実行するコードの場合、コードを実行するオーケストレーション、送信ポート、または受信場所を指定するパラメーターを追加します。  

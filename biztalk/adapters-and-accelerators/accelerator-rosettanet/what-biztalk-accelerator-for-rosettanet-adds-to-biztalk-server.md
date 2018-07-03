@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server に追加する BizTalk Accelerator for RosettaNet |Microsoft ドキュメント
+title: BizTalk Server に BizTalk Accelerator for RosettaNet の追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24c06f6a7709962c5d67f0dbda4e5d7117d35276
-ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
+ms.openlocfilehash: c73d8d8d75b704973cbd0998256dc5c324bee289
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34855573"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979619"
 ---
 # <a name="what-biztalk-accelerator-for-rosettanet-adds-to-biztalk-server"></a>BizTalk Server に BizTalk Accelerator for RosettaNet の追加
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] ビルド、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] RosettaNet 準拠システムの統合に BizTalk Server の統合システムです。 これにより、RosettaNet 準拠のソリューションを実装するために必要なものがすべて追加されます。  
+Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RosettaNet 準拠の統合システムに Microsoft BizTalk Server の統合システムを構築します。 これにより、RosettaNet 準拠のソリューションを実装するために必要なものがすべて追加されます。  
   
-インストールする[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]BizTalk Server 上と[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]中核となる BizTalk Server エンジンに機能を追加します。 機能、ツール、およびユーティリティが、BizTalk Server の機能、ツール、およびユーティリティに追加されます。 さらに、アプリケーション プログラミング インターフェイス (API) が BizTalk Server ソフトウェア開発キット (SDK) の API に追加されます。  
+インストールする[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]BizTalk Server 上と[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]BizTalk Server エンジンのコア機能が追加されます。 機能、ツール、およびユーティリティが、BizTalk Server の機能、ツール、およびユーティリティに追加されます。 さらに、アプリケーション プログラミング インターフェイス (API) が BizTalk Server ソフトウェア開発キット (SDK) の API に追加されます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

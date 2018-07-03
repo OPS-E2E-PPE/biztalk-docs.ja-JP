@@ -1,5 +1,5 @@
 ---
-title: プログラミング Guide1 |Microsoft ドキュメント
+title: プログラミング Guide1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 230ecf4cf9b735bdc2d4e68fc233799e95bb3182
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: f0a36c2714c8da07f054553466f4e9105c4f6517
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004683"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36980691"
 ---
 # <a name="programming-guide"></a>プログラミング ガイド
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]プログラミング ガイド BTAHL7 でコードを記述する開発者向けの概念と手順を説明します。 このガイドを使用すると組み合わせて[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]ドキュメント。  
+Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]プログラミング ガイド BTAHL7 でコードを記述する開発者向けの概念と手順を説明します。 このガイドを使用して、Microsoft と組み合わせて[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]ドキュメント。  
   
 > [!NOTE]
->  このガイドを読む前に理解すると[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]開発、BizTalk Server と[HL7 アクセラレータと使用可能な BizTalk ツールの学習](../../adapters-and-accelerators/accelerator-hl7/learn-the-hl7-accelerator-and-the-biztalk-tools-available.md)です。  
+>  このガイドを読む前に理解しておく必要があります[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]開発、BizTalk Server、および[HL7 アクセラレータや使用可能な BizTalk ツールの学習](../../adapters-and-accelerators/accelerator-hl7/learn-the-hl7-accelerator-and-the-biztalk-tools-available.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

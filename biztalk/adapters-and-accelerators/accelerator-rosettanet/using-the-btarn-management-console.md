@@ -1,5 +1,5 @@
 ---
-title: BTARN 管理コンソールを使用して |Microsoft ドキュメント
+title: BTARN 管理コンソールの使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -40,79 +40,79 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39157aa2454690a77ffbb1a5c2492bc07404c602
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b35c054e78f09edbe84d799b7218d4921b83795c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209722"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36977923"
 ---
 # <a name="using-the-btarn-management-console"></a>BTARN 管理コンソールの使用
 ここでは、[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールを使用して、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を管理する方法について説明します。  
   
- 開く、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソール をクリックして**開始**をポイントして、**プログラム**をポイントして、 **Microsoft** [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]をクリックし、[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理コンソール**です。  
+ 開く、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールをクリックして**開始**をポイントして、**プログラム**をポイントして、 **Microsoft** [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]をクリックし、[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理コンソール**します。  
   
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管理コンソールのスコープ (左) ペインには、すべての [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 構成ノードが含まれます。 結果 (右) ペインには、スコープ ペインで選択した構成項目の特定のインスタンスがすべて含まれます。  
   
 ## <a name="operations-in-the-scope-pane"></a>スコープ ペインでの操作  
  スコープ ペイン内のノードについて、次の操作を実行できます。  
   
--   パートナー送信ポートで使用する [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 送受信パイプラインを設定します。 詳細については、次を参照してください。[設定 BTARN 送信パイプラインと受信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/setting-btarn-send-and-receive-pipelines.md)です。  
+- パートナー送信ポートで使用する [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 送受信パイプラインを設定します。 詳細については、次を参照してください。[設定 BTARN 送信パイプラインと受信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/setting-btarn-send-and-receive-pipelines.md)します。  
   
--   ビジネス アクティビティ監視 (BAM) の追跡を有効にします。 詳細については、次を参照してください。 [BAM の追跡を有効にすると](../../adapters-and-accelerators/accelerator-rosettanet/enabling-bam-tracking.md)です。  
+- ビジネス アクティビティ監視 (BAM) の追跡を有効にします。 詳細については、次を参照してください。 [BAM の追跡を有効にする](../../adapters-and-accelerators/accelerator-rosettanet/enabling-bam-tracking.md)します。  
   
--   新しくインポートした構成は、スコープ ペインで、[構成] ノードを右クリックし、をクリックして、コンソールに表示されるかどうかを確認**更新**です。  
+- 新しくインポートした構成をスコープ ペインで、[構成] ノードを右クリックし、をクリックして、コンソールに表示されることを確認**更新**します。  
   
--   右クリックして、結果ウィンドウで、追加の列を表示、**プロセス構成設定**または**アグリーメント**を指す、スコープ ペインでノード**ビュー**、し、クリックすると**列の追加/削除**です。 使用可能な列と表示されている列の間を使用して列を移動、**を追加または削除**ボタンをクリックします。 このコマンドは、既定では [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] に表示されませんが、使用できる列が多数あるアグリーメントで特に役に立ちます。  
+- 右クリックし、結果ウィンドウで、追加の列を表示、**プロセス構成設定**または**契約**を指す、スコープ ペインでノード**ビュー**、し、クリックすると**列の追加/削除**します。 使用して、使用可能な列と表示されている列の間で列を移動、**を追加または削除**ボタンをクリックします。 このコマンドは、既定では [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] に表示されませんが、使用できる列が多数あるアグリーメントで特に役に立ちます。  
   
 ## <a name="process-configurations"></a>プロセス構成  
  プロセス構成設定について、次の操作を実行できます。  
   
--   右クリックして、新しいプロセス構成を追加、**プロセス構成設定**スコープ ノードを指す**新規**、クリックして**プロセス構成**です。 詳細については、次を参照してください。[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)です。  
+-   右クリックして新しいプロセス構成を追加、**プロセス構成設定**スコープ ノードを指す**新規**、 をクリックし、**プロセス構成**します。 詳細については、次を参照してください。[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)します。  
   
--   結果ウィンドウで、プロセス構成を右クリックし、をクリックして既存のプロセス構成を編集**プロパティ**、またはプロセス構成をダブルクリックします。 詳細については、次を参照してください。[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)です。  
+-   結果ウィンドウでプロセス構成を右クリックし、をクリックして既存のプロセス構成を編集**プロパティ**、またはプロセス構成をダブルクリックします。 詳細については、次を参照してください。[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)します。  
   
--   結果ウィンドウで、プロセス構成を右クリックし、をクリックして既存のプロセス構成を削除**削除**です。  
+-   結果ウィンドウでプロセス構成を右クリックし、をクリックして既存のプロセス構成を削除**削除**します。  
   
--   結果ウィンドウで、新しい構成を基にする構成を右クリックし、をクリックして既存のプロセス構成に基づいた新しいプロセス構成を作成**のコピーから新しいプロセス構成**. これにより、新しい表示されます**プロセス構成のプロパティ** ダイアログ ボックスの既存の構成の設定と設定されます。 新しい入力**コードを表示**、順にクリック **[ok]** 新しい構成を作成します。 詳細については、次を参照してください。 [PIP 仕様を使用して、プロセス構成を作成する](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md)です。  
+-   新しい構成を基準とする結果ウィンドウで、構成を右クリックし、をクリックして、既存のプロセス構成に基づいて、新しいプロセス構成を作成**コピーから新しいプロセス構成**. これにより、新しい表示されます**プロセス構成のプロパティ**が設定された、既存の構成 ダイアログ ボックス。 新しい入力**コードを表示**、順にクリックします**OK**新しい構成を作成します。 詳細については、次を参照してください。 [PIP 仕様を使用して、プロセス構成を作成する](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md)します。  
   
--   結果ウィンドウで、特定の構成を右クリックし、をクリックして、プロセス構成が関連付けられているすべての契約の一覧を表示する**アグリーメントの表示**です。 フォーカスを移すこれは、**契約**スコープ ペインでノードし、結果ウィンドウで、関連付けられているアグリーメントを表示します。 右クリックして、アグリーメントの完全な一覧に戻すことができます、**契約**、スコープ ペインで、してクリックし、ノード**すべて表示**です。  
+-   結果ウィンドウで特定の構成を右クリックし、をクリックして、プロセス構成が関連付けられているすべての契約の一覧を表示する**を表示する契約**します。 フォーカスを移すこれは、**契約**スコープ ペインでノードし、結果ウィンドウで、関連付けられているアグリーメントを表示します。 右クリックし、アグリーメントの完全な一覧に戻すことができます、**契約**スコープ ウィンドウで、クリックすると、ノード**すべて表示**します。  
   
 ## <a name="home-organizations"></a>ホーム組織  
  ホーム組織について、次の操作を実行できます。  
   
--   右クリックして新しいホーム組織を追加、**ホーム組織**スコープ ノードを指す**新規**、クリックして**ホーム組織**です。 詳細については、次を参照してください。[作成またはホーム組織を編集する](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)です。  
+-   右クリックして新しいホーム組織を追加、**ホーム組織**スコープ ノードを指す**新規**、 をクリックし、**ホーム組織**します。 詳細については、次を参照してください。[を作成または編集、ホーム組織](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)します。  
   
--   結果ウィンドウで、ホーム組織を右クリックし、をクリックして既存のホーム組織を編集**プロパティ**、またはホーム組織をダブルクリックします。 詳細については、次を参照してください。[作成またはホーム組織を編集する](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)です。  
+-   結果ウィンドウでホーム組織を右クリックし、をクリックして既存のホーム組織を編集**プロパティ**、ホーム組織をダブルクリックして、します。 詳細については、次を参照してください。[を作成または編集、ホーム組織](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)します。  
   
--   結果ウィンドウで、ホーム組織を右クリックし、をクリックして既存のホーム組織を削除**削除**です。  
+-   結果ウィンドウでホーム組織を右クリックし、をクリックして既存のホーム組織を削除**削除**します。  
   
 ## <a name="partners"></a>パートナー  
  パートナーについて、次の操作を実行できます。  
   
--   右クリックして、新しいパートナーを追加、**パートナー**スコープ ノードを指す**新規**、クリックして**パートナー**です。 詳細については、次を参照してください。[を作成または編集パートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)です。  
+-   右クリックして新しいパートナーを追加、**パートナー**スコープ ノードを指す**新規**、 をクリックし、**パートナー**します。 詳細については、次を参照してください。[を作成または編集するパートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)します。  
   
--   結果ペインでパートナーを右クリックし、をクリックして既存のパートナーを編集**プロパティ**、または、パートナーをダブルクリックします。 詳細については、次を参照してください。[を作成または編集パートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)です。  
+-   結果ウィンドウで、パートナーを右クリックし、をクリックして既存のパートナーを編集**プロパティ**、または、パートナーをダブルクリックします。 詳細については、次を参照してください。[を作成または編集するパートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)します。  
   
--   結果ペインでパートナーを右クリックし、をクリックして既存のパートナーを削除**削除**です。  
+-   結果ウィンドウで、パートナーを右クリックし、をクリックして既存のパートナーを削除**削除**します。  
   
 ## <a name="agreements"></a>契約  
  アグリーメントについて、次の操作を実行できます。  
   
--   右クリックして新しい契約を追加、**契約**スコープ ノードを指す**新規**、クリックして**アグリーメント**です。 詳細については、次を参照してください。[を作成するか、契約の編集](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)です。  
+-   右クリックして新しい契約を追加、**契約**スコープ ノードを指す**新規**、 をクリックし、**契約**します。 詳細については、次を参照してください。[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)します。  
   
--   結果ペインでアグリーメントを右クリックし、をクリックして既存のアグリーメントを編集**プロパティ**、または、アグリーメントをダブルクリックします。 詳細については、次を参照してください。[を作成するか、契約の編集](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)です。  
+-   結果ウィンドウで、アグリーメントを右クリックし、をクリックして既存のアグリーメントを編集**プロパティ**、または、アグリーメントをダブルクリックします。 詳細については、次を参照してください。[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)します。  
   
--   結果ペインでアグリーメントを右クリックし、をクリックして既存のアグリーメントを削除**削除**です。  
+-   結果ウィンドウで、アグリーメントを右クリックし、をクリックして既存のアグリーメントを削除**削除**します。  
   
--   結果ウィンドウで、非アクティブ化されたアグリーメントを右クリックし、をクリックしてアグリーメントをアクティブ化**Activate**です。 これにより、送信または受信されるアグリーメントに関連付けられたメッセージが有効になります。 アグリーメントに関連付けられたメッセージが送信または受信されないように、アグリーメントを非アクティブ化することもできます。  
+-   結果ウィンドウで、非アクティブ化されたアグリーメントを右クリックし、をクリックしてアグリーメントをアクティブ化**Activate**します。 これにより、送信または受信されるアグリーメントに関連付けられたメッセージが有効になります。 アグリーメントに関連付けられたメッセージが送信または受信されないように、アグリーメントを非アクティブ化することもできます。  
   
--   プロセス構成が関連付けられているアグリーメントだけの一覧を表示した後、アグリーメントの完全な一覧に戻すを右クリックして、**契約**、スコープ ペインで、してクリックし、ノード**すべて表示**.  
+-   プロセス構成が関連付けられているアグリーメントだけの一覧を表示した後は、アグリーメントの完全な一覧に戻すを右クリックし、**契約**スコープ ウィンドウで、クリックすると、ノード**すべて表示**.  
   
 ## <a name="see-also"></a>参照  
- [BTARN 送信を設定し、受信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/setting-btarn-send-and-receive-pipelines.md)   
+ [BTARN 送信の設定および受信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/setting-btarn-send-and-receive-pipelines.md)   
  [BAM 追跡を有効にします。](../../adapters-and-accelerators/accelerator-rosettanet/enabling-bam-tracking.md)   
  [作成またはプロセス構成を編集する方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)   
  [作成またはホーム組織を編集します。](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)   
- [作成またはパートナーを編集します。](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)   
- [作成するか、契約の編集](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)
+ [作成または編集するパートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)   
+ [アグリーメントの作成と編集](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)

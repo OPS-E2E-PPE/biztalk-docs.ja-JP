@@ -1,5 +1,5 @@
 ---
-title: サプライ チェーン ソリューション |Microsoft ドキュメント
+title: サプライ チェーン ソリューション |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,24 +15,24 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c89bc75871d19939846a587ff23730c05022c7f
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: a62808e556ae7870c52b7b4101c86ec697a04f1e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006451"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36967499"
 ---
 # <a name="the-supply-chain-solution"></a>サプライ チェーン ソリューション
 ビジネス プロセスとデータ通信に関する問題の解決に、テクノロジが役立ちます。 先端企業は情報技術 (IT) システムを利用することで、パートナーとの通信をオフラインで互換性のないプロセスから、統合かつ標準化されたプロセスへと変革することができます。  
   
 ## <a name="supply-chain-integration"></a>サプライ チェーンの統合  
- サプライ チェーン内の個々のパートナーのプロセスに互換性がなくても、これらを統合することができます。 テクノロジによって、さまざまな独自の接続を使用する統一性のないシステムを 1 つの標準化した接続を使用するシステムに変え、パートナー間を接続することができます。 このようなソリューションの例は、次の図を参照およびの図に示すようにシステムに比較[、サプライ チェーンの課題](../../adapters-and-accelerators/accelerator-rosettanet/the-supply-chain-challenge.md)です。  
+ サプライ チェーン内の個々のパートナーのプロセスに互換性がなくても、これらを統合することができます。 テクノロジによって、さまざまな独自の接続を使用する統一性のないシステムを 1 つの標準化した接続を使用するシステムに変え、パートナー間を接続することができます。 このようなソリューションの例は、次の図を参照およびの図に示すように、システムとの比較[、サプライ チェーンの課題](../../adapters-and-accelerators/accelerator-rosettanet/the-supply-chain-challenge.md)します。  
   
- ![(& m); 60変更なし &#62;。] (../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-integrated-supply-chain-scenario.gif "RN3_Integrated_Supply_Chain_Scenario")  
+ ![&#60;変更なし&#62;](../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-integrated-supply-chain-scenario.gif "RN3_Integrated_Supply_Chain_Scenario")  
   
  このシステムでは、取引先間の標準インターフェイスは RNIF (RosettaNet Implementation Framework) 接続です。 システムは RosettaNet に準拠して実装されており、独自の手動処理はすべて自動化された RNIF 接続に置き換えられています。 このシステムを利用していても、企業は必要に応じて各システムをカスタマイズしたり、パートナーと独自のアグリーメントを作成したり、他の通信デバイスを使用したりできます。 このシステムは、パートナーがそれぞれの目的に合わせてシステムをカスタマイズできる柔軟性を備えています。 ただし、すべてのパートナーがルーチン データ通信に一貫して同じプロセスを使用する必要があります。  
   
- このサプライ チェーンに属するすべての会社は RNIF 接続を共有します。 大企業の場合は、完全に自動化されたエンタープライズ システムを使用して、設定できます[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server と[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]です。 さらに、取引先はインストール済みの任意の RosettaNet 準拠実装を使用するか、EDI システムの使用を継続できます。 一方、中小企業では、完全な [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムに必要なリソースを用意できない場合があります。 このような企業は、サプライ チェーン システムに接続するための Web サービスをセットアップできます。 この場合のテクノロジ要件は Web ブラウザーのみです。 どちらの場合でも、システム上のすべての企業が統一した方法を使ってパートナーと接続できます。  
+ このサプライ チェーンに属するすべての会社は RNIF 接続を共有します。 大規模な会社は MicrosoftBizTalk サーバーを使用して完全に自動化されたエンタープライズ システムを設定することができますと[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]します。 さらに、取引先はインストール済みの任意の RosettaNet 準拠実装を使用するか、EDI システムの使用を継続できます。 一方、中小企業では、完全な [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムに必要なリソースを用意できない場合があります。 このような企業は、サプライ チェーン システムに接続するための Web サービスをセットアップできます。 この場合のテクノロジ要件は Web ブラウザーのみです。 どちらの場合でも、システム上のすべての企業が統一した方法を使ってパートナーと接続できます。  
   
 ## <a name="the-benefits-of-standardization"></a>標準化の利点  
  完全統合システムに参加しなくても、企業は電子手段によってデータを交換できます。 しかし、それぞれの取引先が別々の形式でデータを管理し、そのデータを別々のデータ プロトコルで転送すると、データ交換の設計とカスタマイズに多大な労力が必要になります。 接続しているすべてのパートナーが、標準化された形式とプロトコルを使用してデータ交換を行えば、取り引きの効率性を大幅に向上させることができます。  

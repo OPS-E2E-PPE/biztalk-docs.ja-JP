@@ -1,5 +1,5 @@
 ---
-title: フォールバック受信確認プロパティ (X12) の構成 |Microsoft ドキュメント
+title: フォールバック受信確認プロパティ (X12) の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 216961dea0bdf4a67c550fba8a599eff2d0c89ce
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ed4ce98bd4191d79ef05742b389e1d065325d8ed
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232834"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008979"
 ---
 # <a name="configuring-fallback-acknowledgement-properties-x12"></a>フォールバック受信確認プロパティの構成 (X12)
 フォールバック アグリーメントでは、パーティから受信した X12 エンコード インターチェンジへの応答としての受信確認を [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で生成する方法、およびパーティに返す受信確認の種類を指定できます。 ここでは、この指定を行う手順について説明します。  
@@ -30,15 +30,15 @@ ms.locfileid: "22232834"
   
 ### <a name="to-configure-x12-ack-properties"></a>X12 確認のプロパティを構成するには  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックし、**パーティ**ノードをクリックして**X12 フォールバック設定**です。  
+1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックし、**パーティ**ノード、およびクリック**X12 フォールバックの設定**します。  
   
-2.  **X12 フォールバック設定**] ダイアログ ボックスで、 **X12 アグリーメント ページ**] タブの [、**インターチェンジの設定**セクションで、[ **受信確認**.  
+2. **X12 フォールバック設定**] ダイアログ ボックスで、 **X12 アグリーメント ページ**] タブの [、**インターチェンジの設定**セクションで、[ **受信確認**.  
   
-3.  選択**TA1 が必要**をインターチェンジ送信者に技術 (TA1) 確認を返します。  
+3. 選択**TA1 が必要**をインターチェンジの送信者に技術 (TA1) 確認を返します。  
   
-4.  選択**997 が必要**をインターチェンジ送信者に機能 (997) 確認を返します。  
+4. 選択**997 が必要**機能 (997) 確認をインターチェンジの送信者に戻ります。  
   
-5.  をクリックして**適用**構成を続行する前に、変更を受け入れるか、をクリックする**OK**を変更を検証し、ダイアログ ボックスを閉じます。  
+5. をクリックして**適用**構成では、続行する前に、変更を受け入れるか、をクリックする**OK**変更を検証し、ダイアログ ボックスを閉じます。  
   
 ## <a name="see-also"></a>参照  
- [設定の X12 インターチェンジ処理のためのフォールバック アグリーメント プロパティ](../core/configuring-x12-fallback-agreement-properties-for-interchange-processing.md)
+ [インターチェンジ処理用の X12 フォールバック アグリーメント プロパティの構成](../core/configuring-x12-fallback-agreement-properties-for-interchange-processing.md)

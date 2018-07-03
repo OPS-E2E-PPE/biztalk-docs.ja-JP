@@ -1,6 +1,6 @@
 ---
-title: 作成し、TIBCO でスキーマの使用 |Microsoft ドキュメント
-description: BizTalk エディターを使用してスキーマを作成する、BizTalk adapter for TIBCO Enterprise Message Service とターゲットの名前空間をスキーマの BizTalk Server の設定
+title: 作成し、TIBCO でスキーマの使用 |Microsoft Docs
+description: BizTalk エディターを使用して、BizTalk adapter for TIBCO Enterprise Message Service、スキーマを作成して、スキーマの BizTalk Server のターゲットの名前空間を設定
 ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 384d140832c123f46ecf531e64b3c1ca11e64f4e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: a9c3ba874f7db3b1aff77c9377ea27874de8501d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25968720"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969521"
 ---
 # <a name="create-and-use-tibco-schemas"></a>作成し、TIBCO スキーマを使用
 
@@ -33,11 +33,11 @@ BizTalk Adapter for TIBCO Enterprise Message Service で使用するスキーマ
  
 1.  BizTalk エディターで、プロジェクトを開きます。  
   
-2.  ソリューション エクスプ ローラーで右上で、で **追加**、し、**生成した項目の追加**です。  
+2.  右上でソリューション エクスプ ローラーの **追加**、し、**生成した項目の追加**します。  
   
-3.  **テンプレート**ペインで、**スキーマの生成**、クリックして**追加**です。  
+3.  **テンプレート**ペインで、**スキーマの生成**、 をクリックし、**追加**します。  
   
-4.  **スキーマの生成**] ダイアログ ボックスで、**ドキュメントの種類**一覧で、[**整形式 XML**です。  
+4.  **スキーマの生成**] ダイアログ ボックスで、**ドキュメントの種類**一覧で、[**整形式 XML**します。  
   
 5.  をクリックして**参照**をクリックして、スキーマを生成する入力ファイルを検索する**OK**。  
   
@@ -45,11 +45,11 @@ BizTalk Adapter for TIBCO Enterprise Message Service で使用するスキーマ
   
 ## <a name="set-the-target-namespace"></a>ターゲットの名前空間を設定します。  
   
-1.  BizTalk エディターで開き、スキーマ ファイルを右クリックして**\<スキーマ\>**、し、**プロパティ**です。  
+1. BizTalk エディターで開き、スキーマ ファイルを右クリックして**\<スキーマ\>**、し、**プロパティ**します。  
   
-2.  **プロパティ** ウィンドウで、検索、 **Namespace**フィールド名を入力、たとえば、`testNameSpace`です。  
+2. **プロパティ**ウィンドウで、検索、 **Namespace**フィールドし、たとえば、名前を入力`testNameSpace`します。  
   
- これで、メッセージを使用してオーケストレーションを継続できます。 メッセージが取得されると、ターゲットの名前空間が設定されたスキーマを使用するオーケストレーションが BizTalk Server で検索され、オーケストレーション プロセスが実行されます。  
+   これで、メッセージを使用してオーケストレーションを継続できます。 メッセージが取得されると、ターゲットの名前空間が設定されたスキーマを使用するオーケストレーションが BizTalk Server で検索され、オーケストレーション プロセスが実行されます。  
   
 ## <a name="see-also"></a>参照  
  [アプリケーションの開発](../core/developing-applications5.md)

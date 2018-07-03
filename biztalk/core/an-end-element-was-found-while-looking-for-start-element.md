@@ -1,5 +1,5 @@
 ---
-title: 開始要素を検索中に、終了要素が見つかりました |Microsoft ドキュメント
+title: 開始要素の中に、終了要素が見つかりました |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9dacaa096b15a6f2969ed56b5bac2138876a6095
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2e200f4ffd8d822a5c2bb1a0bad74a60e84a408a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22229962"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36992435"
 ---
 # <a name="an-end-element-was-found-while-looking-for-start-element"></a>StartElement の検索中に EndElement が見つかりました
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|EndElementFoundWhenLookingForStartElement|  
-|メッセージ テキスト|{0} という名前の EndElement が見つかりましたが、StartElement 名前 {1}、深さ {2} での検索中には|  
+|                 |                                                                                                   |
+|-----------------|---------------------------------------------------------------------------------------------------|
+|  製品名   |        [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]         |
+| 製品バージョン |                    [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                     |
+|    イベント ID     |                                                 -                                                 |
+|  イベント ソース   |      [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI       |
+|    コンポーネント    |                                            EDI エンジン                                             |
+|  シンボル名  |                             EndElementFoundWhenLookingForStartElement                             |
+|  メッセージ テキスト   | 名前の EndElement{0}検出されましたが、名前の StartElement の検索中に{1}、深さ {2} |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、XML メッセージが検証に失敗したため、BizTalk Server が受信 XML メッセージ (解析後) または送信 XML メッセージ (シリアル化前) を処理できなかったことを示します。 XML メッセージに、ヘッダーまたはデータ要素の終了タグが含まれていませんでした。  

@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10602 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10602 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ef24a13944bc44b924586263cce74ee2cb34e5e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec5f44a11c291ae4b9a71f95c6dfdb004f635457
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271162"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37006227"
 ---
 # <a name="single-sign-on-event-10602"></a>シングル サインオン: イベント 10602
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10602|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_ERROR_RPC_FAILURE|  
-|メッセージ テキスト|RPC エラー。 ネットワークの構成を確認してください。%r<br /><br /> エラー コード: %1|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  製品名   |                             エンタープライズ シングル サインオン                              |
+| 製品バージョン |             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]             |
+|    イベント ID     |                                       10602                                        |
+|  イベント ソース   |                                       ENTSSO                                       |
+|    コンポーネント    |                                        なし                                         |
+|  シンボル名  |                               SSO_ERROR_RPC_FAILURE                                |
+|  メッセージ テキスト   | RPC エラー。 ネットワークの構成を確認してください。%r<br /><br /> エラー コード: %1 |
   
 ## <a name="explanation"></a>説明  
  RPC エラー。  

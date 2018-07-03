@@ -1,5 +1,5 @@
 ---
-title: Certificates1 を管理する |Microsoft ドキュメント
+title: Certificates1 の管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3d74342d15d65082b6d94f252023c3df1d601dd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2d9d326155ea788a77fe86c0c4eb126476d21ece
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209290"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985003"
 ---
 # <a name="managing-certificates"></a>証明書の管理
-RosettaNet で通信をセキュリティで保護するには、証明書を使用する必要があります。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] では、証明書を使用して、送信メッセージの暗号化、送信メッセージへの署名、着信メッセージの暗号化の解除、着信メッセージに記された署名の確認を行います。  
+RosettaNet で通信をセキュリティで保護するには、証明書を使用する必要があります。 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]送信メッセージの暗号化、送信メッセージに署名、受信メッセージを復号化および受信メッセージの署名を検証する証明書を使用します。  
   
  証明書を使用するには、次の手順の一部またはすべてを実行する必要があります。  
   

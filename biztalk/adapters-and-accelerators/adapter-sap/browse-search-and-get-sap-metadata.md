@@ -1,5 +1,5 @@
 ---
-title: 参照、検索、および SAP メタデータの取得 |Microsoft ドキュメント
+title: 参照、検索、および SAP メタデータの取得 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,92 +21,92 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40cc1bd6592b38dbda9c9bff3ad01d6cdaf8a707
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: fa942786cda8c5e1070b3fa1c66e3300ffd16d4f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "22218442"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36984059"
 ---
 # <a name="browse-search-and-get-sap-metadata"></a>参照、検索、および SAP メタデータの取得
-[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムからのサーフェス メタデータ。 このメタデータは、アダプターを使用して SAP システムと通信するためのメッセージの構造を記述します。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]メタデータを取得するための 2 つのインターフェイスをサポートしています。  
+[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムからのサーフェスのメタデータ。 このメタデータには、アダプターを使用して SAP システムと通信するためのメッセージの構造について説明します。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]メタデータを取得するための 2 つのインターフェイスをサポートしています。  
   
--   **MetadataExchange**によって提供される[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]です。 WCF は、クライアントが、SAP システムからメタデータを取得することができますにすべての WCF バインドをメタデータ交換エンドポイントに提供します。  
+- **MetadataExchange**によって提供される[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]します。 WCF は、これにより、SAP システムからメタデータを取得するクライアントにすべての WCF バインドのメタデータ交換エンドポイントに提供します。  
   
--   **IMetadataRetrievalContract**によって提供される、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]をサポートするメタデータ参照とアダプターの機能を検索します。  
+- **IMetadataRetrievalContract**によって提供される、 [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]、閲覧と検索機能を備えたアダプターのメタデータをサポートしています。  
   
- 目標の 1 つ、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]は、WCF サービスとして SAP システムを公開します。 アダプターは、アダプターのクライアントが呼び出すことのできる操作として SAP アイテム (Rfc、Bapi、および Idoc) を表示します。 アダプターでは、いくつかを特定の操作を送信または SAP システムから Idoc を受信することできますも明らかです。 これらの操作は、このトピックの後半に一覧表示されます。  
+  目標の 1 つ、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]は WCF サービスとしての SAP システムを公開します。 アダプターでは、アダプターのクライアントが呼び出すことができる操作として SAP アイテム (Rfc、Bapi、Idoc) が表示されます。 アダプターでは、送信または SAP システムから Idoc を受信するために使用できるいくつかの特定の操作も表示されます。 これらの操作は、このトピックで後で表示されます。  
   
- 参照、検索、およびモデルを使用して、WCF サービス、WCF チャネル モデルを使用してメタデータを取得または BizTalk を作成することで、プロジェクトで行うことが[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]です。  
+  参照、検索、および WCF チャネル モデルを使用して、WCF サービス モデルを使用してメタデータを取得または BizTalk を作成してプロジェクトを行うことが[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]します。  
   
- 使用する必要があります、WCF サービス モデルを使用する場合、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] SAP システムでの操作を実行するプロキシ クラスを生成します。 BizTalk プロジェクトを使用する場合は、使用、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]または[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]SAP システムで実行する操作のメタデータを生成します。  
+  使用する必要があります、WCF サービス モデルを使用する場合、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] SAP システムの操作を実行するためのプロキシ クラスを生成します。 使用する必要がある BizTalk プロジェクトを使用する場合、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]または[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]SAP システムで実行する操作のメタデータを生成します。  
   
- 閲覧、検索、およびを使用してメタデータの取得の詳細については[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]または[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]を参照してください[Visual Studio での SAP 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)です。  
+  参照、検索、およびメタデータを使用した取得の詳細については[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]または[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]を参照してください[Visual Studio で SAP 操作のメタデータの取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)します。  
   
 ## <a name="browsing-metadata"></a>メタデータの参照  
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Rfc、tRFCs、Bapi、および Idoc が SAP システムによって公開されているを参照するアダプターのクライアントを有効にします。 メタデータの参照操作の一環として、アダプター サーフェスの Rfc および Bapi の操作として。 Idoc、アダプターは Idoc を送受信するための操作を表示します。 これらの操作はから利用可能な[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]または[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。 SAP メタデータは、次のノードの下にある分類されます。  
+ [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプター クライアントが Rfc、Trfc、Bapi、および SAP システムによって公開される Idoc を参照できるようにします。 メタデータの参照操作の一環として、アダプターは操作として Rfc および Bapi を表示します。 、Idoc のアダプターには、Idoc を送受信するための操作が表示されます。 これらの操作はから利用可能な[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]または[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]します。 SAP メタデータは、次のノードの下に分類されます。  
   
--   **RFC**. このノードは、SAP システムによって公開されている Rfc が含まれています、SAP の関数モジュールを表します。 アダプターは、Rfc では複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 RFC は、この階層の最下位レベルにあるし、外部アプリケーションから呼び出すことができる操作として公開されます。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] RFC SDK を使用して、Rfc のメタデータを生成します。 アダプターは、対象のメタデータが生成できます Rfc のみを呼び出すことができます。  
+- **RFC**します。 このノードは、SAP システムによって公開されている Rfc を含み、SAP で関数モジュールを表します。 アダプターは、Rfc を複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 RFC がこの階層の最下位レベルであり、外部アプリケーションによって呼び出すことができる操作として公開されます。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] RFC SDK を使用して、Rfc のメタデータを生成します。 アダプターは、メタデータを生成できます Rfc のみを呼び出すことができます。  
   
-     以外の操作として、Rfc を提示するには、アダプターも明らかによって特定の操作など**RfcGetAttributes**です。 これらの操作の詳細については、次を参照してください。 [SAP Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)です。  
+   以外の操作として Rfc を表示するには、アダプターもサーフェスのいくつかの特定の操作など**RfcGetAttributes**します。 これらの操作の詳細については、次を参照してください。 [SAP で Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)します。  
   
--   **TRFC**. このノードには、SAP システムによって公開される tRFCs が含まれています。 tRFCs で、SAP システムが Rfc を呼び出すためのメカニズムではなく、従来の成果物ではありません。 そのメタデータの特性は Rfc 異なるのでは個別のノード下 tRFCs に分類されます。 具体的には、Rfc には、エクスポートのパラメーターも含まれます。 アダプターは、tRFCs を複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 TRFC はこの階層の最下位レベルにあるし、外部アプリケーションから呼び出すことができる操作として公開されます。  
+- **TRFC**. このノードには、SAP システムによって公開される Trfc が含まれています。 Trfc は、SAP システムが Rfc を呼び出すためのメカニズムではなくで従来の成果物ではありません。 Trfc は、メタデータ特性が Rfc に異なるため、個別のノード下に分類されます。 具体的には、Rfc には、エクスポートのパラメーターも含まれます。 アダプターは、Trfc を複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 TRFC がこの階層の最下位レベルであり、外部アプリケーションによって呼び出すことができる操作として公開されます。  
   
-     以外の操作として tRFCs を提示するには、アダプターも明らかによって特定の操作など**RfcConfirmTransID**です。 これらの操作の詳細については、次を参照してください。 [SAP で tRFCs に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)です。  
+   以外の操作として Trfc を提示するには、アダプターもサーフェスのいくつかの特定の操作など**RfcConfirmTransID**します。 これらの操作の詳細については、次を参照してください。 [SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)します。  
   
--   **BAPI**. このノードには、SAP システムによって公開される Bapi が含まれています。 アダプターでの Bapi は複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 BAPI はこの階層の最下位レベルにあるし、外部アプリケーションから呼び出すことができる操作として公開されます。  
+- **BAPI**します。 このノードには、SAP システムによって公開される Bapi が含まれています。 アダプターは、Bapi を複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 BAPI がこの階層の最下位レベルであり、外部アプリケーションによって呼び出すことができる操作として公開されます。  
   
--   **IDOC**. このノードには、SAP システムによって公開される Idoc が含まれています。 アダプターは、Idoc を複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 アダプターは、Idoc の公開される操作は次のとおりです。  
+- **IDOC**します。 このノードには、SAP システムによって公開される Idoc が含まれています。 アダプターは、Idoc を複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 アダプターが、Idoc 用に公開する操作は次のとおりです。  
   
-    -   **送信**と**受信**です。 アダプターのクライアントは、厳密に型指定されたスキーマを使用して SAP システムから Idoc を送受信するこれらの操作を使用できます。  
+  - **送信**と**受信**します。 アダプターのクライアントは、厳密に型指定されたスキーマを使用して SAP システムから Idoc を送受信するこれらの操作を使用できます。  
   
-    -   **SendIdoc**と**ReceiveIdoc**です。 アダプターのクライアントは、弱い型指定のスキーマを使用して SAP システムから Idoc を送受信するこれらの操作を使用できます。  
+  - **SendIdoc**と**ReceiveIdoc**します。 アダプターのクライアントは、厳密に型指定のスキーマを使用して SAP システムから Idoc を送受信するこれらの操作を使用できます。  
   
-     これらの操作の詳細については、次を参照してください。 [sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)です。  
+    これらの操作の詳細については、次を参照してください。 [sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)します。  
   
- メタデータを分類する方法の詳細については、次を参照してください。[メタデータのノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)です。  
+  メタデータの分類方法の詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)します。  
   
 ## <a name="searching-metadata"></a>メタデータの検索  
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、アダプターのクライアントは、基になる Rfc に依存する検索式を使用して SAP システムでメタデータを検索することを[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を使用します。 次の表は、SAP アイテムとメタデータ階層をアダプターのクライアントを検索できます。  
+ [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、アダプター クライアントは、基になる Rfc に依存する検索式を使用して SAP システムでメタデータを検索することができる[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を使用します。 次の表は、SAP アイテムとメタデータの階層をアダプター クライアントを検索できます。  
   
-|成果物|GUI でのノードの下の検索|  
+|成果物|GUI でノードの下の検索|  
 |--------------|------------------------------------|  
-|RFC|-   /RFC<br />-   /RFC/[Application Group]|  
+|RFC|-   /RFC<br />-/RFC/[アプリケーション グループ]|  
 |tRFC|-   /TRFC<br />-/TRFC/[アプリケーション グループ]|  
-|BAPI|-   /BAPI|  
-|IDOC|-   /IDOC|  
+|BAPI|-/BAPI|  
+|IDOC|-/IDOC|  
   
- 次の表に、検索とその解釈で使用できる特殊文字、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。  
+ 次の表に、検索とその解釈で使用できる特殊文字、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
 |特殊文字|解釈|  
 |-----------------------|--------------------|  
-|+ (プラス)|1 文字と一致します。<br /><br /> たとえば、A + 一致 AB、AC、AD|  
-|* (アスタリスク)|0 個以上の文字と一致します。<br /><br /> たとえば、A * A、AB、ABC に一致します。|  
+|+ (プラス)|1 つだけの文字と一致します。<br /><br /> たとえば、A + と一致する AB、AC、AD|  
+|* (アスタリスク)|0 個以上の文字と一致します。<br /><br /> たとえば、A * A、AB ABC に一致します。|  
   
 ## <a name="retrieving-metadata"></a>メタデータの取得  
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプター クライアントが、詳細なメタデータの特徴を含む、SAP システムのメタデータを取得できるようにします。  
+ [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]によりアダプターでクライアントに詳細なメタデータ特性を含め、SAP システムのメタデータを取得します。  
   
--   RFC、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]インポート、エクスポート、変更、およびテーブルのパラメーターと共に RFC 名を取得します。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]も、パラメーターのフィールドの長さのパラメーターのデータ型を必須およびオプションのパラメーターをさらに取得します。  
+- RFC、用、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]インポート、エクスポート、変更、およびテーブル パラメーターと共に RFC 名前を取得します。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]もパラメーター、パラメーター、フィールド長のデータ型を必須および省略可能なパラメーターをさらに取得します。  
   
--   A tRFC の[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]エクスポート パラメーターを除き、RFC のような詳細情報を取得します。 TRFC の呼び出しは非同期であるために、出力パラメーターは取得されません。  
+- TRFC は、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]エクスポート パラメーターを除き、RFC のような詳細を取得します。 TRFC の呼び出しは非同期であるために、出力パラメーターは取得されません。  
   
--   BAPI、用、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]ビジネス オブジェクトの名前、ビジネス オブジェクトのメソッド名、および Rfc のようなその他の特定の情報を取得します。  
+- BAPI、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]ビジネス オブジェクトの名前、ビジネス オブジェクトのメソッド名、および Rfc のようなその他の特定の情報を取得します。  
   
--   IDOC の[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]IDOC の種類、リリース番号、バージョン、IDOC 制御レコード、IDOC データ レコード、およびその他の IDOC セグメント情報を取得します。  
+- IDOC での[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]IDOC の種類、リリース番号、バージョン、IDOC 制御レコード、IDOC データ レコード、およびその他の IDOC のセグメント情報を取得します。  
   
-    > [!NOTE]
-    >  IDOC のメタデータには、データ型の場合は、低、高の両方の値 (範囲) が含まれている場合、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を文字列として公開します。 メタデータには、不足値のみが含まれている場合、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]列挙型として公開します。  
-  
-> [!NOTE]
->  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP 関数定義でパラメーターの順序付け方法に関係なく、アルファベット順に SAP 関数のパラメーターを公開します。 これは、次の理由です。  
->   
->  -   異なるバージョンの SAP RFC SDK は、異なる順序で SAP 関数のパラメーターを返します。 そのため、アダプターのユーザーに一貫した使用環境を提供するために、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アルファベット順では、パラメーターを公開します。  
-> -   異なる SAP サーバーに同じ Rfc 関数のパラメーターを公開するための順序が異なることができます。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]この違いは透過的に実行したユーザー一貫性のあるアルファベット順では、パラメーターを公開することによりします。  
+  > [!NOTE]
+  >  IDOC のメタデータには、データ型の場合は、下限と上限の両方の値 (範囲) が含まれている場合、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を文字列として公開します。 メタデータには、低値のみが含まれている場合、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]列挙型として公開します。  
   
 > [!NOTE]
->  SAP システムを使用して、データを取得中に、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]サービス モデル、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] 65536 以上のノードを持つメッセージを逆シリアル化ではありません。 応答メッセージに 65536 のノード少ないがあることを確認してください。 この制限は、アプリケーションの app.config ファイルを変更することで回避できます。 手順については、次を参照してください。[運用上の問題のトラブルシューティングを行う](../../adapters-and-accelerators/adapter-oracle-database/troubleshoot-operational-issues-with-the-oracle-database-adapter.md)です。  
+>  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP 関数定義でパラメーターが順序付け方法に関係なく、アルファベット順で SAP 関数のパラメーターを公開します。 これは、次の理由。  
+> 
+> - 異なるバージョンの SAP の RFC SDK は、異なる順序での SAP の関数のパラメーターを返します。 そのため、アダプターのユーザーに一貫したエクスペリエンスを提供するために、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アルファベット順の順序でパラメーターを公開します。  
+>   - 異なる SAP サーバーに同じ Rfc には、別の順序の関数のパラメーターを公開する可能性があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]一貫性のあるアルファベット順にパラメーターを公開することで、この違いをユーザーに透過的なにより、します。  
+> 
+> [!NOTE]
+>  使用して SAP システムからデータを取得中に、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]サービス モデル、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] 65536 の複数のノードを持つメッセージを逆シリアル化ではありません。 応答メッセージが 65536 のノード以下を確認します。 この制限を回避するには、アプリケーションの app.config ファイルを変更します。 手順については、次を参照してください。[運用上の問題のトラブルシューティングを行う](../../adapters-and-accelerators/adapter-oracle-database/troubleshoot-operational-issues-with-the-oracle-database-adapter.md)します。  
   
- 詳細については、参照、検索、およびメタデータを取得するを参照してください[Visual Studio での SAP 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)です。  
+ 詳細については、参照、検索、およびメタデータを取得するを参照してください[Visual Studio で SAP 操作のメタデータの取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)します。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk adapter 用 mySAP Business Suite のアーキテクチャの概要](../../adapters-and-accelerators/adapter-sap/architecture-overview-of-the-biztalk-adapter-for-mysap-business-suite.md)
+ [BizTalk Adapter 用 mySAP Business Suite のアーキテクチャの概要](../../adapters-and-accelerators/adapter-sap/architecture-overview-of-the-biztalk-adapter-for-mysap-business-suite.md)

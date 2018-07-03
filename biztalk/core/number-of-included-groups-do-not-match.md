@@ -1,5 +1,5 @@
 ---
-title: 含まれているグループの数が一致しません |Microsoft ドキュメント
+title: 含まれているグループの数が一致しません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f02262012a5d02cebaf86fae5a4d19d9b5486d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cf61012de6ba864d6f0ff4e553b4c74e1d501c20
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263034"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988171"
 ---
 # <a name="number-of-included-groups-do-not-match"></a>含まれているグループの数が一致しません
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|X12Ta1InvalidNumberOfIncludedGroupsDescription|  
-|メッセージ テキスト|グループ数含まれているが一致しません|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  製品名   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 製品バージョン |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    イベント ID     |                                           -                                            |
+|  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
+|    コンポーネント    |                                       EDI エンジン                                       |
+|  シンボル名  |                     X12Ta1InvalidNumberOfIncludedGroupsDescription                     |
+|  メッセージ テキスト   |                         グループ数に含まれるが一致しません                         |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、インターチェンジに含まれているグループの数が、インターチェンジ トレーラー (IEA01 フィールド) 内の数と等しくないことを示します。 これは、インターチェンジが保存されて、インターチェンジがエラーで中断されている場合に発生します。 (インターチェンジが保存され、トランザクション セットがエラーで中断している場合、またはインターチェンジが分割されている場合、エラー メッセージは通知されません)。  

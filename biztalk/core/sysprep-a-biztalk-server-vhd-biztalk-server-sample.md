@@ -1,5 +1,5 @@
 ---
-title: Sysprep による BizTalk Server VHD (BizTalk Server サンプル) |Microsoft ドキュメント
+title: Sysprep による BizTalk Server VHD (BizTalk Server サンプル) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cc6ec29ece503f324758cdc08a6ff1351c066af4
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: ef9152e9a95c9a6a6cec0cedb3e5fa5c60022bf9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007771"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36974411"
 ---
 # <a name="sysprep-a-biztalk-server-vhd-biztalk-server-sample"></a>Sysprep による BizTalk Server VHD の準備 (BizTalk Server サンプル)
 Sysprep は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がインストールされている仮想マシンのスナップショットを作成し、他の仮想マシンに簡単に展開できるようにします。  
   
 ## <a name="prerequisites"></a>前提条件  
- Sysprep を使用するのには、HYPER-V で仮想マシンの使用のある程度の知識が必要です。 BizTalk Server とその前提条件のすべてのクリーンで標準インストールと仮想マシンも必要です。  
+ Sysprep を使用する前に、HYPER-V と仮想マシンの使用の知識が必要です。 BizTalk Server とその前提条件のすべての一般的なクリーン インストールと仮想マシンも必要です。  
   
  Sysprep は Windows Server 2008 および Windows Vista SP1 で動作します。  
   
@@ -42,52 +42,52 @@ Sysprep は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservern
 > [!NOTE]
 >  次の表の .vbs ファイルと .cmd ファイルはすべて Sysprep の応答ファイル (Sysprep.xml および SetupCompletecmd.txt) で自動化されており、ここでは参照のためにのみ示してあります。 これらのスクリプトを手動で実行する必要がある場合は、表に示されている順序で実行してください。  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |Sysprep.xml|応答ファイル|  
 |SetupCompletecmd.txt|応答ファイル|  
-|ReplaceMachineName.vbs|目的: は、ファイルを開き、現在のコンピューター名を指定する文字列のすべてのインスタンスで置き換えます。 他のスクリプトおよび xml ファイルを準備し、bm.exe.config を更新するのに便利です。<br /><br /> 使用法: ReplaceMachineName.vbs\<ファイルを開く\>\<を置換する文字列\>|  
-|UpdateRegistry.vbs|目的: は、BizTalk のレジストリ設定に格納されているコンピューター名を更新します。<br /><br /> 使用法: UpdateRegistry.vbs \<UpdateInfo.xml\>です。 この xml ファイルの $(OLDCOMPUTERNAME) および $(NEWCOMPUTERNAME) のすべてのインスタンスを置き換えてください。|  
+|ReplaceMachineName.vbs|目的: ファイルを開き、指定された文字列のすべてのインスタンスを現在のコンピューター名に置き換えます。 他のスクリプトおよび xml ファイルを準備し、bm.exe.config を更新するのに便利です。<br /><br /> 使用法: ReplaceMachineName.vbs\<ファイルを開く\>\<を置換する文字列\>|  
+|UpdateRegistry.vbs|目的: は、BizTalk のレジストリ設定に格納されているコンピューター名を更新します。<br /><br /> 使用法: UpdateRegistry.vbs \<UpdateInfo.xml\>します。 この xml ファイルの $(OLDCOMPUTERNAME) および $(NEWCOMPUTERNAME) のすべてのインスタンスを置き換えてください。|  
 |UpdateDatabase.vbs|目的: は、BizTalk 管理データベースに格納されているコンピューター名を更新します。<br /><br /> 使用法: UpdateDatabase.vbs \<UpdateInfo.xml\>|  
 |UpdateBAMDb.vbs|目的: は、BAM データベースに格納されているコンピューター名を更新します。<br /><br /> 使用法: UpdateBamDb.vbs \<UpdateInfo.xml\>|  
 |UpdateSSO.cmd|目的: は、エンタープライズ シングル サインオン (SSO) シークレット サーバーを再構成します。<br /><br /> 使用法: sso.cmd \<UpdateInfo.xml\>|  
-|UpdateSqlServerAndInstanceName.cmd|目的: SQL および SQL Express を再構成するには、一連の依存サービスを再起動し、BAMAlerts を再登録します。<br /><br /> 使用法: は、スクリプトを編集し、$(NEWCOMPUTERNAME) のすべてのインスタンスを置き換えると BAM 警告の serviceusername および servicepassword を更新します。 その後、UpdateSqlServerAndInstanceName.cmd を実行し、1 番目の引数として古いコンピューター名を渡します。|  
+|UpdateSqlServerAndInstanceName.cmd|目的: SQL および SQL Express を再構成するには、一連の依存サービスを再起動し、BAMAlerts を登録します。<br /><br /> 使用法: は、スクリプトを編集し $(NEWCOMPUTERNAME) のすべてのインスタンスを置換し、BAM 警告の serviceusername および servicepassword を更新します。 その後、UpdateSqlServerAndInstanceName.cmd を実行し、1 番目の引数として古いコンピューター名を渡します。|  
   
 ## <a name="creating-the-answer-files-and-running-sysprep"></a>応答ファイルの作成と Sysprep の実行  
   
 #### <a name="to-create-the-answer-files"></a>応答ファイルを作成するには  
   
-1.  インストールし、仮想マシンで BizTalk Server を構成します。 Sysprep はカスタマイズされたインストールをサポートしないので、必ず既定のインストールと構成オプションを使用します。  
+1. インストールし、仮想マシンで BizTalk Server を構成します。 Sysprep はカスタマイズされたインストールをサポートしないので、必ず既定のインストールと構成オプションを使用します。  
   
-2.  含まれる "scripts" フォルダーの内容を仮想マシンの C:\Scripts にコピーします。  
+2. 含まれる "scripts" フォルダーの内容を仮想マシンの C:\Scripts にコピーします。  
   
-3.  Sysprep.xml で次の行を変更することにより、sysprep 応答ファイルを準備します。 (注: これらの行が付いている、"!" 前にします。)これらをテンプレートとして使用して、または独自に作成および経由でコピー、 \<FirstLogonCommands\>セクションです。  
+3. Sysprep.xml で次の行を変更することにより、sysprep 応答ファイルを準備します。 (注: これらの行が付いて、"!" 前にします。)これらをテンプレートとして使用または独自に作成および経由でコピー、 \<FirstLogonCommands\>セクション。  
   
-    -   $(OLDCOMPUTERNAME) 仮想マシンの現在のコンピューター名に置き換えます。  
+   - $(OLDCOMPUTERNAME) 仮想マシンの現在のコンピューター名に置き換えます。  
   
-    -   ユーザー アカウント  
+   - ユーザー アカウント  
   
-    -   パスワード  
+   - パスワード  
   
-    -   会社に関するすべての詳細も、UpdateSqlServerAndInstance.cmd および作成する Sysprep.xml で更新する必要があります。  
+   - 会社に関するすべての詳細も、UpdateSqlServerAndInstance.cmd および作成する Sysprep.xml で更新する必要があります。  
   
-     使用して最初から、Sysprep 応答ファイルを作成する代わりに、[自動インストール キット (AIK)](http://www.microsoft.com/downloads/details.aspx?FamilyID=94bb6e34-d890-4932-81a5-5b50c657de08&DisplayLang=en) Windows Server 2008 でします。 いることを確認、 \<FirstLogonCommands\>セクションには、サンプルが一致するため、BizTalk スクリプトが最初の起動で実行します。  
+     使用して最初から、Sysprep 応答ファイルを作成する代わりに、[自動インストール キット (AIK)](http://www.microsoft.com/downloads/details.aspx?FamilyID=94bb6e34-d890-4932-81a5-5b50c657de08&DisplayLang=en) Windows Server 2008 でします。 いることを確認、 \<FirstLogonCommands\>セクションに、サンプルと一致する場合、最初の起動時に BizTalk スクリプトが実行されますので。  
   
 #### <a name="to-run-sysprep"></a>Sysprep を実行するには  
   
-1.  コマンド プロンプトを開き、Sysprep を実行します。 次のようなコマンドを使用します。  
+1. コマンド プロンプトを開き、Sysprep を実行します。 次のようなコマンドを使用します。  
   
-    ```  
-    C:\windows\system32\sysprep\sysprep.exe /oobe /generalize /shutdown /unattend:c:\scripts\unattend_Win2K8x64.xml  
-    ```  
+   ```  
+   C:\windows\system32\sysprep\sysprep.exe /oobe /generalize /shutdown /unattend:c:\scripts\unattend_Win2K8x64.xml  
+   ```  
   
-2.  Sysprep の実行には約 30 分かかります。 完了すると、仮想マシンを自動的にシャットダウンします。  
+2. Sysprep の実行には約 30 分かかります。 完了すると、仮想マシンを自動的にシャットダウンします。  
   
-3.  仮想マシンがシャットダウンされた後、スナップショットをマージし、VHD ファイルを安全な場所にコピーします。  
+3. 仮想マシンがシャットダウンされた後、スナップショットをマージし、VHD ファイルを安全な場所にコピーします。  
   
-4.  VHD は、オペレーティング システム、BizTalk Server、すべての前提条件を完備し、他の仮想マシンに展開できる状態になっています。  
+4. VHD は、オペレーティング システム、BizTalk Server、すべての前提条件を完備し、他の仮想マシンに展開できる状態になっています。  
   
- **SetupCompletecmd.txt**  
+   **SetupCompletecmd.txt**  
   
 ```  
 del /Q /F c:\windows\system32\sysprep\sysprep.xml  

@@ -1,5 +1,5 @@
 ---
-title: メッセージ スキーマのレコードの種類 |Microsoft ドキュメント
+title: メッセージのスキーマのレコードの種類 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,30 +15,30 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9022274041e06ad8ccc3f5243715d44d2b64282
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aae82fad713fd9a2789e165845958421e1213402
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214138"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996923"
 ---
 # <a name="message-schemas-for-record-types"></a>レコードの種類のメッセージ スキーマ
-Oracle レコードの種類は、いずれかで構成される構造化の PL/SQL データ型またはより単純型または構造化されたデータベースの種類です。 レコードの種類は、階層データを送受信する PL/SQL ストアド プロシージャおよび関数で、主に使用されます。  
+Oracle レコードの種類のいずれかで構成されている PL/SQL データ型が構造化されたより単純型または構造化されたデータベース型。 レコードの種類は、階層データを送受信する PL/SQL ストアド プロシージャおよび関数で主に使用されます。  
   
- [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]次の方法でレコードの種類をサポートしています。  
+ [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]次のように、レコードの種類をサポートしています。  
   
--   レコードの種類は、複合型として表示されます。  
+- レコードの種類は複合型として表示されます。  
   
--   レコードの種類は、入れ子になった (レコードのレコード) を指定できます。  
+- レコードの種類には、入れ子になった (レコードのレコード) を指定できます。  
   
--   レコードの種類は、ストアド プロシージャおよび関数では、テーブル %rowtype パラメーターとして宣言できます。  
+- レコードの種類は、ストアド プロシージャおよび関数では、テーブル %rowtype パラメーターとして宣言できます。  
   
--   レコードの種類は PL/SQL パッケージ内のレコードの型パラメーターとして宣言することができます。たとえば、`TYPE rec_type1 IS RECORD(name varchar2(100), age number(3));`です。  
+- レコードの種類は PL/SQL パッケージ; 内のレコードの型パラメーターとして宣言することができます。たとえば、`TYPE rec_type1 IS RECORD(name varchar2(100), age number(3));`します。  
   
-    > [!NOTE]
-    >  [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]レコードのメンバーとして BFILE 型をサポートしていません。  
+  > [!NOTE]
+  >  [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]レコードのメンバーとして BFILE 型をサポートしていません。  
   
- レコード型のパラメーターは、ストアド プロシージャまたは関数で使用する場合は、その操作の名前空間で修飾されます。 次の XML では、メッセージのレコードの種類の構造を示しています。  
+  レコード型のパラメーターを使用すると、ストアド プロシージャまたは関数でその操作の名前空間で修飾されます。 次の XML は、メッセージのレコードの種類の構造を示しています。  
   
 ```  
 <[REC_PARAM_NAME]>  
@@ -48,13 +48,13 @@ Oracle レコードの種類は、いずれかで構成される構造化の PL/
 </[REC_PARAM_NAME]>  
 ```  
   
- [REC_PARAM_NAME] は、レコード パラメーターの名前です。  
+ [REC_PARAM_NAME] は、レコードのパラメーターの名前です。  
   
  [<] は、レコードの種類のフィールドの名前です。  
   
- [OPERATION_NAMESPACE] は、ストアド プロシージャまたはレコード パラメーターが使用されている関数の名前空間です。  
+ [OPERATION_NAMESPACE] は、ストアド プロシージャまたはレコードのパラメーターが使用されている関数の名前空間です。  
   
- 次の XML は、入れ子になったレコードの種類フィールドを持つレコード型パラメーターの構造を示しています。  
+ 次の XML は、入れ子になったレコードの種類フィールドを持つレコード型のパラメーターの構造を示しています。  
   
 ```  
 <[REC_PARAM_NAME]>    
@@ -70,4 +70,4 @@ Oracle レコードの種類は、いずれかで構成される構造化の PL/
 ```  
   
 ## <a name="see-also"></a>参照  
- [メッセージと BizTalk Adapter 用 Oracle Database のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)
+ [BizTalk Adapter for Oracle Database 用のメッセージとメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)

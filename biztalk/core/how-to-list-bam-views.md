@@ -1,5 +1,5 @@
 ---
-title: BAM ビューを一覧表示する方法 |Microsoft ドキュメント
+title: BAM ビューを一覧表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,25 +16,25 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 766ffdd21fd92d817f7959c5688bb4097dc3de97
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3c69943852a00ada5fae6b10ab2f3953ef6f1db8
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254306"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37015675"
 ---
 # <a name="how-to-list-bam-views"></a>BAM ビューを一覧表示する方法
-管理者を使用して、 **get ビュー**コマンドを実行するコンピューターで BAM プライマリ インポート データベースに展開された BAM ビューを一覧表示するコマンド。  
+管理者を使用して、 **get ビュー**コマンド、コマンドを実行するコンピューター上の BAM プライマリ インポート データベースにデプロイされている BAM ビューを一覧表示します。  
   
 ### <a name="to-list-bam-views"></a>BAM ビューを一覧表示するには  
   
-1.  次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] に移動します。  
+2. [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] に移動します。  
   
-3.  型**bm get ビュー**です。  
+3. 型**bm の get ビュー**します。  
   
-4.  **Enter**キーを押します。  
+4. **Enter**キーを押します。  
   
 ## <a name="see-also"></a>参照  
  [BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md)   

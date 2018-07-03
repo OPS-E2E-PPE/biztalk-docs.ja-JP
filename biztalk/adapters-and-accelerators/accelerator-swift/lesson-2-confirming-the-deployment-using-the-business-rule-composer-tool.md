@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 2: ビジネス ルール作成ツールを使用して、展開を確認する |Microsoft ドキュメント'
+title: 'レッスン 2: ビジネス ルールの作成ツールを使用して、展開の確認 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,27 +18,27 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3115dc425fedca9019f0e5e5171f7234e6fbdbb2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1e9de00e6996daf5ce7759d395f6dfcf97989aa4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210242"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36997803"
 ---
-# <a name="lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool"></a>レッスン 2: ビジネス ルール作成ツールを使用して、展開を確認します。
-このレッスンでは、ビジネス ルール作成ツールが、ボキャブラリを作成し、ポリシーを配置したことを確認します。 ボキャブラリは、ルールを作成で使用するボキャブラリ要素のコレクションです。 ポリシーとはバージョン管理されたビジネス ルールのコレクションです。  
+# <a name="lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool"></a>レッスン 2: ビジネス ルールの作成ツールを使用して、展開を確認します。
+このレッスンでは、ビジネス ルール作成ツールは、ボキャブラリを作成し、ポリシーの展開を確認します。 ボキャブラリは、ルールの合成で使用するボキャブラリ要素のコレクションです。 ポリシーとはバージョン管理されたビジネス ルールのコレクションです。  
   
 ### <a name="to-confirm-the-deployment-using-the-business-rule-composer-tool"></a>ビジネス ルール作成ツールを使用して、展開を確認するには  
   
 1.  開始**ビジネス ルール作成ツール**BizTalk Server でします。  
   
-2.  [ルール ストアを開く] ダイアログ ボックスで、 **OK**です。  
+2.  [ルール ストアを開く] ダイアログ ボックスで、 **OK**します。  
   
-3.  ファクト エクスプ ローラーのウィンドウで、ビジネス ルール作成ツール、確認、ファクト エクスプ ローラーに必要なボキャブラリが表示されている次の図に示すようにします。  
+3.  ビジネス ルール作成ツールのファクト エクスプローラ ペインでを確認、ファクト エクスプ ローラーに必要なボキャブラリが表示されること、次の図に示すようにします。  
   
      ![](../../adapters-and-accelerators/accelerator-swift/media/tut2-scrn2.gif "Tut2_scrn2")  
   
-4.  ポリシー エクスプ ローラーで、ビジネス ルール作成ツールには次のポリシーが展開されていることを確認します。  
+4.  ポリシー エクスプ ローラーでは、ビジネス ルール作成ツールで、次のポリシーが展開されていることを確認します。  
   
      MT103_Master_Policy  
   
@@ -96,10 +96,10 @@ ms.locfileid: "22210242"
   
 ### <a name="to-view-a-policy"></a>ポリシーを表示するには  
   
-1.  ビジネス ルール作成ツールの [ポリシー エクスプ ローラー] ウィンドウでいることを確認、 **SWIFT_NetworkRule149_Policy**が展開され、順に展開、**バージョン 1.0-展開済み**ノード。  
+1. ビジネス ルール作成ツールの [ポリシー エクスプ ローラー] ウィンドウで、 **SWIFT_NetworkRule149_Policy**を展開し、展開、**バージョン 1.0-展開済み**ノード。  
   
-2.  ダブルクリックして、 **Validate_MT103**ノードを開きます。  
+2. ダブルクリックして、 **Validate_MT103**ノードを開きます。  
   
-     ポリシーは、画面の右側にある、エディター ウィンドウで開きます。  
+    ポリシーは、画面の右側にあるエディター ウィンドウが開きます。  
   
- 進みます[第 7 章: テストの有効なフラット ファイル インスタンス](../../adapters-and-accelerators/accelerator-swift/module-7-testing-a-valid-flat-file-instance.md)です。
+   続行する[モジュール 7: 有効なフラット ファイル インスタンスをテスト](../../adapters-and-accelerators/accelerator-swift/module-7-testing-a-valid-flat-file-instance.md)します。

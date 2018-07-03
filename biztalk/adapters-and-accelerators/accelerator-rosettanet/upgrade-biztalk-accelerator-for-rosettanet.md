@@ -1,6 +1,6 @@
 ---
-title: BizTalk Server では、RosettaNet Accelerator (BTARN) のアップグレード |Microsoft ドキュメント"
-description: BTARN を BizTalk Server の現在のバージョンに更新するアップグレードの手順に従います
+title: BizTalk Server では、RosettaNet アクセラレータ (BTARN) のアップグレード |Microsoft Docs"
+description: BTARN を BizTalk Server では、現在のバージョンに更新するアップグレードの手順に従います
 author: MandiOhlinger
 manager: anneta
 ms.date: 06/08/2017
@@ -10,44 +10,44 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ''
 ms.author: mandia
-ms.openlocfilehash: 16e6083f3e5fb1778d77536cd602ee2208c0005f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 80e813ced767cdd56910027b655060e1db9f91fe
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210098"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37011310"
 ---
-# <a name="upgrade-the-rosettanet-accelerator"></a>RosettaNet accelerator をアップグレードします。
+# <a name="upgrade-the-rosettanet-accelerator"></a>RosettaNet アクセラレータをアップグレードします。
 
 ## <a name="upgrade-overview"></a>アップグレードの概要
 BizTalk Accelerator for RosettaNet (BTARN) のインストールの以前のバージョンは、現在のバージョンにアップグレードできます。 アップグレード プロセスには、BizTalk Server をアップグレードして、BTARN のアップグレードが含まれます。  
   
- BTARN の以前のバージョンからアップグレードすることができます、BTARN のインストール プログラムを実行します。 セットアップでは、BTRAN の構成情報を現在のバージョンに移行します。  
+ BTARN の以前のバージョンからアップグレードすることができます、BTARN のインストール プログラムを実行しています。 セットアップでは、BTRAN の構成情報を現在のバージョンに移行します。  
   
- マルチ サーバー BTARN 環境では、最初に、し、BTARN には、すべての BizTalk Server をアップグレードしてください。 次の順序でサーバーを移行します。  
+ BTARN マルチ サーバー環境では、してから BTARN には、すべての BizTalk Server をアップグレードする必要があります。 次の順序でサーバーを移行します。  
   
--   BizTalk グループをホストするサーバー  
+- BizTalk グループをホストするサーバー  
   
--   各処理ノード  
+- 各処理ノード  
   
--   BAM ポータル サーバー  
+- BAM ポータル サーバー  
   
- BTARN でアップグレード プロセスは、次を行うことを確認してください。  
+  BTARN では、アップグレード プロセスで、次のことを確認します。  
   
--   SQL Server (MSSQLSERVER) サービスが実行中であることを確認します。  
+- SQL Server (MSSQLSERVER) サービスが実行中であることを確認します。  
   
--   サイレント インストールは実行しないでください。  
+- サイレント インストールは実行しないでください。  
   
 ## <a name="upgrade-steps"></a>アップグレード手順  
   
-1.  BizTalk Server をアップグレードします。 参照してください[BizTalk Server 新機能、インストール、構成、およびアップグレード](../../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)です。
+1.  BizTalk Server をアップグレードします。 参照してください[BizTalk Server 新機能については、インストール、構成、およびアップグレード](../../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)します。
   
-2.  BTARN データベースおよび BTARN のメッセージ スキーマをバックアップします。  
+2.  BTARN データベースとメッセージ スキーマを BTARN をバックアップします。  
   
     > [!NOTE]
     >  安全上の理由から BTARN データベースをバックアップする必要があります。 インストール プログラムは、BTRAN データベースを新しいバージョンに移行します。  
   
-3.  下位にあるファイルをバックアップ、 *< ドライブ\>*: \Program Files\\Microsoft BizTalk Accelerator RosettaNet フォルダーに対して行った変更が、たとえば、ファイル、SDK に含まれています。  
+3.  すべてのファイルをバックアップ、 *< ドライブ\>*: \Program Files\\Microsoft BizTalk Accelerator の RosettaNet フォルダーに対して行ったが、変更、ファイルなど、sdk。  
   
 4.  以前のバージョンの BTRAN アセンブリを参照している場合は、該当するプロジェクトまたはアセンブリの展開を解除します。  
   
@@ -73,11 +73,11 @@ BizTalk Accelerator for RosettaNet (BTARN) のインストールの以前のバ�
   
     -   Microsoft.Solutions.BTARN.Schemas.RNIFv20  
   
-    -   Microsoft.Solutions.BTARN.Schemas.RNPIPs  
+    -   [Microsoft.solutions.btarn.schemas.rnpips]  
   
-6.  BTARN のインストールを実行します。 参照してください[インストール RosettaNet accelerator を構成および](install-configure-biztalk-accelerator-for-rosettanet.md)です。
+6.  BTARN のインストールを実行します。 参照してください[インストール RosettaNet アクセラレータの構成と](install-configure-biztalk-accelerator-for-rosettanet.md)します。
   
-7.  使用して**BTSTask.exe** (\Program Files\Microsoft BizTalk Server) を次の順序で BTARN アセンブリを手動で再展開します。  
+7.  使用**BTSTask.exe** (\Program Files\Microsoft BizTalk Server) を次の順序で BTARN アセンブリを手動で再デプロイします。  
   
     -   Microsoft.Solutions.BTARN.CommonTypes  
   
@@ -99,12 +99,12 @@ BizTalk Accelerator for RosettaNet (BTARN) のインストールの以前のバ�
   
     -   Microsoft.Solutions.BTARN.Schemas.RNIFv20  
   
-    -   Microsoft.Solutions.BTARN.Schemas.RNPIPs  
+    -   [Microsoft.solutions.btarn.schemas.rnpips]  
   
     > [!NOTE]
     >  詳細については**BTSTask.exe**、BizTalk Server ヘルプの「BTSTask コマンドライン リファレンス」を参照してください。  
   
-8.  該当するプロジェクトまたはを 1 つまたは複数の [BTARN アセンブリへの参照を持つアセンブリを再構築します。 使用して**BTSTask.exe**をこれらのプロジェクトを手動で再展開します。  
+8.  該当するプロジェクトまたは 1 つまたは複数の [BTARN アセンブリへの参照を持つアセンブリを再構築します。 使用**BTSTask.exe**を手動でこれらのプロジェクトを再デプロイします。  
   
 9. 次のコンポーネントについて、IIS の仮想フォルダーを ASP.NET 2.0 から ASP.NET 4.0 にアップグレードします。  
   

@@ -1,5 +1,5 @@
 ---
-title: 認識されないメッセージを XML アセンブラー パイプライン コンポーネント |Microsoft ドキュメント
+title: XML アセンブラーで認識されないメッセージのパイプライン コンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6766554374413c3d1b6a3ce385f24d4046521c91
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: de9f072fc09126d56397725f93505afaca46adf4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286810"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36974819"
 ---
 # <a name="unrecognized-messages-in-the-xml-assembler-pipeline-component"></a>XML アセンブラー パイプライン コンポーネントで認識されないメッセージ
 XML アセンブラー コンポーネントは、メッセージが次に示す事項に該当する場合、"認識されない" メッセージとして処理します。  
@@ -37,27 +37,27 @@ XML アセンブラー コンポーネントは、メッセージが次に示す
 > [!NOTE]
 >  XML 以外のメッセージは、常に "認識されない" メッセージとして処理されます。  
   
- によって、XML アセンブラーが認識されないメッセージを処理する方法を制御、 **XMLNorm.AllowUnrecognizedMessage**メッセージ コンテキスト プロパティです。  
+ XML アセンブラーが認識されないメッセージを処理する方法がによって制御される、 **XMLNorm.AllowUnrecognizedMessage**メッセージ コンテキスト プロパティ。  
   
  ときに**XMLNorm.AllowUnrecognizedMessage**に設定されている**True**、XML アセンブラーが XML ドキュメントを次のように処理します。  
   
--   ボディ部のないメッセージ、ボディ部が空のメッセージ、またはボディ部にデータがないメッセージは、アセンブラーを通じて変更せずに渡されます。  
+- ボディ部のないメッセージ、ボディ部が空のメッセージ、またはボディ部にデータがないメッセージは、アセンブラーを通じて変更せずに渡されます。  
   
--   展開されたスキーマがドキュメントに関連付けられていない場合、アセンブラーを通じて変更せずに渡されます。  
+- 展開されたスキーマがドキュメントに関連付けられていない場合、アセンブラーを通じて変更せずに渡されます。  
   
--   スキーマがコンポーネントのプロパティで明示的に参照されているか、スキーマ解決プロセスで見つかったかどうかに関係なく、展開されたスキーマがドキュメントに関連付けられている場合は、アセンブラーによって処理されます。  
+- スキーマがコンポーネントのプロパティで明示的に参照されているか、スキーマ解決プロセスで見つかったかどうかに関係なく、展開されたスキーマがドキュメントに関連付けられている場合は、アセンブラーによって処理されます。  
   
- 場合**XMLNorm.AllowUnrecognizedMessage**に設定されている**False**、XML アセンブラーが XML ドキュメントを次のように処理します。  
+  場合**XMLNorm.AllowUnrecognizedMessage**に設定されている**False**、XML アセンブラーが XML ドキュメントを次のように処理します。  
   
--   ボディ部のないメッセージ、ボディ部が空のメッセージ、またはボディ部にデータがないメッセージは、処理されません。 エラーが報告され、メッセージが中断されます。  
+- ボディ部のないメッセージ、ボディ部が空のメッセージ、またはボディ部にデータがないメッセージは、処理されません。 エラーが報告され、メッセージが中断されます。  
   
--   展開されたスキーマがメッセージに関連付けられていない場合、メッセージは処理されません。 エラーが報告され、メッセージが中断されます。  
+- 展開されたスキーマがメッセージに関連付けられていない場合、メッセージは処理されません。 エラーが報告され、メッセージが中断されます。  
   
--   スキーマがコンポーネントのプロパティで明示的に参照されているか、スキーマ解決プロセスで見つかったかどうかに関係なく、展開されたスキーマがドキュメントに関連付けられている場合は、アセンブラーによって処理されます。  
+- スキーマがコンポーネントのプロパティで明示的に参照されているか、スキーマ解決プロセスで見つかったかどうかに関係なく、展開されたスキーマがドキュメントに関連付けられている場合は、アセンブラーによって処理されます。  
   
--   既定では、XML アセンブラー コンポーネントはメッセージを許可しません認識されていない (つまり、 **XMLNorm.AllowUnrecognizedMessages**と見なされます**False**メッセージ コンテキストに設定されていない場合)。  
+- 既定では、XML アセンブラー コンポーネントにより認識されないメッセージ (つまり、 **XMLNorm.AllowUnrecognizedMessages**と見なされます**False**メッセージ コンテキストに設定されていない場合)。  
   
 ## <a name="see-also"></a>参照  
  [XML アセンブラー パイプライン コンポーネント](../core/xml-assembler-pipeline-component.md)   
  [XML アセンブラー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-xml-assembler-pipeline-component.md)   
- [パイプライン AssemblerDisassembler (BizTalk Server Samples フォルダ)](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)
+ [Pipelines-AssemblerDisassembler (BizTalk Server サンプル フォルダー)](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)

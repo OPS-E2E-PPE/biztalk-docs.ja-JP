@@ -1,5 +1,5 @@
 ---
-title: カスタム ハンドラーに送信するための FRR 送信ポートの作成 |Microsoft ドキュメント
+title: カスタム ハンドラーに送信するための FRR 送信ポートの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,124 +16,125 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a6326ae6e82e819d3cdf76ecc4d81e2a377ea65
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: ed467b149674580b9ed8921a59433c5402a24a0e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966544"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013939"
 ---
 # <a name="creating-the-frr-send-ports-for-sending-to-the-custom-handlers"></a>カスタム ハンドラーに送信するための FRR 送信ポートの作成
-FIN 対応調整を実行する必要があります (元のメッセージまたは応答) メッセージを送信するの各送信ポートの系列を作成するから[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]相関関係を持つメッセージを処理するカスタム ハンドラーにします。  
-  
+FIN Response Reconciliation を実行する必要があります (元のメッセージまたは応答) メッセージを送信する各送信ポートの系列を作成するから[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]相関メッセージを処理するカスタム ハンドラーにします。  
+
  **概要**  
-  
- 次のプロパティとコンポーネント、BTS の値で識別される 1 つずつ一連の送信ポートを作成します。フィルターの操作:  
-  
-|プロパティ/コンポーネント|設定|  
-|-------------------------|-------------|  
-|送信ポート|静的な一方向ポート|  
-|トランスポートの種類|FILE|  
-|コピー先フォルダー (アドレス URI)|メッセージを送信する先のフォルダー|  
-|ファイル名 (アドレス URI)|%MessageID%.txt|  
-|[送信パイプライン]|[!INCLUDE[btsCoName](../../includes/btsconame-md.md)].BizTalk.DefaultPipelines です。 PassThruTransmit|  
-|フィルター|次の表に示すように|  
-  
- さまざまなメッセージの送信ポートは、BTS の値で識別されます。操作は、送信ポートのフィルターです。  
-  
+
+ 次のプロパティとコンポーネントをそれぞれ 1 つが BTS の値によって識別して、一連の送信ポートを作成します。フィルターの操作:  
+
+
+|        プロパティ/コンポーネント        |                                             設定                                              |
+|----------------------------------|--------------------------------------------------------------------------------------------------|
+|            送信ポート             |                                       静的な一方向ポート                                        |
+|          トランスポートの種類          |                                               FILE                                               |
+| コピー先フォルダー (アドレス URI) |                         メッセージを送信するフォルダー                          |
+|     ファイル名 (アドレス URI)      |                                         %MessageID%.txt                                          |
+|          [送信パイプライン]           | Microsoft。BizTalk.DefaultPipelines します。 PassThruTransmit |
+|             フィルター              |                                   次の表に示すように                                   |
+
+ さまざまなメッセージの送信ポートは、BTS の値によって識別されます。操作は、送信ポートのフィルターです。  
+
 ### <a name="to-add-frr-send-ports-for-sending-to-the-custom-handlers"></a>カスタム ハンドラーに送信するための FRR 送信ポートを追加するには  
-  
-1.  BizTalk Server 管理コンソールで、右クリック**送信ポート**、 をポイント**新規**、クリックして**静的なポートを 1 つ waySend**です。  
-  
-2.  送信ポートのプロパティ ダイアログ ボックスで、**名前**ボックス FRRCustomHandlersSendPort など、送信ポートの名前を入力します。  
-  
-3.  **型****ファイル**です。  
-  
-4.  をクリックして**構成**です。  
-  
-5.  [FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**です。  
-  
+
+1.  BizTalk Server 管理コンソールで、右クリック**送信ポート**、 をポイント**新規**、 をクリックし、**静的 1 waySend ポート**します。  
+
+2.  送信ポートのプロパティ ダイアログ ボックスでの**名前**ボックスに、FRRCustomHandlersSendPort など、送信ポートの名前を入力します。  
+
+3.  **型**、**ファイル**します。  
+
+4.  クリックして**構成**します。  
+
+5.  [FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**します。  
+
 6.  フォルダーの参照 ダイアログ ボックスからメッセージを送信するフォルダーに移動します。 **[OK]** をクリックします。  
-  
+
     > [!NOTE]
-    >  このフォルダーが存在しない場合を使用してそれを作成、**新しいフォルダーの作成**コマンド。  
-  
-7.  **ファイル名**ボックスに、入力 **%MessageID%.txt**、順にクリック**OK**です。  
-  
+    >  このフォルダーが存在しない場合を使用してそれを作成、**フォルダの新規**コマンド。  
+
+7.  **ファイル名**ボックスに「 **%MessageID%.txt**、順にクリックします**OK**します。  
+
     > [!NOTE]
     >  メッセージの種類ごとに別のフォルダーを作成することができます。  
-  
+
 8.  送信ポートのプロパティ ダイアログ ボックスの送信ハンドラーであることを確認**BizTalkServerApplication**が選択されています。  
-  
-9. **送信パイプライン** **PassThruTransmit**です。  
-  
-10. をクリックして**フィルター**左側のウィンドウで、次の操作。  
-  
+
+9. **送信パイプライン**、 **PassThruTransmit**します。  
+
+10. クリックして**フィルター**左側のウィンドウで、次の操作を行います。  
+
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**です。|  
-    |**演算子**|選択 **==** です。|  
-    |**値**|型**A4SWIFT_FrrService**です。|  
+    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**します。|  
+    |**[演算子]**|選択 **==** します。|  
+    |**[値]**|型**A4SWIFT_FrrService**します。|  
     |**[グループ]**|**And**|  
-    |**プロパティ**|選択**BTS です。操作**です。|  
-    |**演算子**|選択 **==** です。|  
-    |**値**|BTS のいずれかを入力します。次の表の値を操作します。|  
-  
-     BTS です。操作では、次の値のいずれかを入力します。  
-  
-    |メッセージ型|BTS です。操作の値|  
+    |**プロパティ**|選択**BTS します。操作**します。|  
+    |**[演算子]**|選択 **==** します。|  
+    |**[値]**|BTS のいずれかを入力します。次の表からの値を操作します。|  
+
+     BTS の.操作では、次の値のいずれかを入力します。  
+
+    |メッセージ型|BTS します。操作の値|  
     |------------------|-------------------------|  
-    |すべてのカテゴリ、0 ~ 9 SWIFT FIN メッセージ型|**A4SWIFT_FrrSendMTMsg**|  
-    |MQ 系列パン/NAN (MQ Series トランスポート レベル ACK/NAK)|**A4SWIFT_FrrSendTransport**|  
-    |MT010 (配信不能警告)|**A4SWIFT_FrrSend010NDW**|  
+    |すべてのカテゴリ 0 ~ 9 SWIFT FIN メッセージの種類|**A4SWIFT_FrrSendMTMsg**|  
+    |MQ Series パン/NAN (MQ Series トランス ポート レベル ACK/NAK)|**A4SWIFT_FrrSendTransport**|  
+    |MT010 (警告の配信不能)|**A4SWIFT_FrrSend010NDW**|  
     |MT011 (配信通知)|**A4SWIFT_FrrSend011Delivered**|  
-    |MT012 (送信者 Notification)|**A4SWIFT_FrrSend012SenderACK**|  
+    |MT012 (送信者の通知)|**A4SWIFT_FrrSend012SenderACK**|  
     |MT015 (DNK、または遅延 NAK)|**A4SWIFT_FrrSend015DNK**|  
     |MT019 (通知を中止)|**A4SWIFT_FrrSend019Abort**|  
-    |MTS21_FIN_ACKNAK (LT (ACK) によって送信された FIN メッセージの受信確認|**A4SWIFT_FrrSendS21ACK**|  
+    |MTS21_FIN_ACKNAK (、LT (ACK) によって送信された FIN メッセージの受信確認|**A4SWIFT_FrrSendS21ACK**|  
     |MTS21_FIN_ACKNAK (否定、LT (NAK) によって送信された FIN メッセージの受信確認|**A4SWIFT_FrrSendS21NAK**|  
-  
-11. 次の操作を正常に送信されていない、カテゴリ、0 ~ 9 SWIFT FIN メッセージに対して、**フィルター**ウィンドウ。  
-  
+
+11. 次の操作が正常に送信されていないカテゴリ 0 ~ 9 の SWIFT FIN メッセージに対して、**フィルター**ウィンドウ。  
+
     > [!NOTE]
-    >  **A4SWIFT_FRRFailedReason**次のフィルターのプロパティをグループ化する必要があります。  
-  
+    >  **A4SWIFT_FRRFailedReason**で次のフィルターのプロパティをグループ化する必要があります。  
+
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**です。|  
-    |**演算子**|選択 **==** です。|  
-    |**値**|型**A4SWIFT_FrrService**です。|  
+    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**します。|  
+    |**[演算子]**|選択 **==** します。|  
+    |**[値]**|型**A4SWIFT_FrrService**します。|  
     |**[グループ]**|**And**|  
-    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FrrFailed**です。|  
-    |**演算子**|選択 **==** です。|  
-    |**値**|型**True**です。|  
+    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FrrFailed**します。|  
+    |**[演算子]**|選択 **==** します。|  
+    |**[値]**|型**True**します。|  
     |**[グループ]**|**And**|  
-    |**プロパティ**|選択**BTS です。操作**です。|  
-    |**演算子**|選択 **==** です。|  
-    |**値**|型**A4SWIFT_FrrSendMTMsg**です。|  
+    |**プロパティ**|選択**BTS します。操作**します。|  
+    |**[演算子]**|選択 **==** します。|  
+    |**[値]**|型**A4SWIFT_FrrSendMTMsg**します。|  
     |**[グループ]**|**And**|  
-    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。|  
-    |**演算子**|選択 **==** です。|  
-    |**値**|型 *\<NAKErrorCode\>*、"Y01"などです。|  
+    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**します。|  
+    |**[演算子]**|選択 **==** します。|  
+    |**[値]**|型 *\<NAKErrorCode\>*、"Y01"など。|  
     |**[グループ]**|**Or**|  
-    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。|  
-    |**演算子**|選択 **==** です。|  
-    |**値**|型**TimedOut**です。|  
+    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**します。|  
+    |**[演算子]**|選択 **==** します。|  
+    |**[値]**|型**TimedOut**します。|  
     |**[グループ]**|**Or**|  
-    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。|  
-    |**演算子**|選択 **==** です。|  
-    |**値**|型**TransportError**です。|  
+    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**します。|  
+    |**[演算子]**|選択 **==** します。|  
+    |**[値]**|型**TransportError**します。|  
     |**[グループ]**|**Or**|  
-    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。|  
-    |**演算子**|選択 **==** です。|  
-    |**値**|型**DelayedNAK**です。|  
+    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**します。|  
+    |**[演算子]**|選択 **==** します。|  
+    |**[値]**|型**DelayedNAK**します。|  
     |**[グループ]**|**Or**|  
-    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**です。|  
-    |**演算子**|選択 **==** です。|  
-    |**値**|型**AbortMessage**です。|  
-  
-12. をクリックして**適用**、順にクリック**OK**です。  
-  
-13. 送信ポートを右クリックし、をクリックして**開始**です。  
-  
-14. 手順 2. ~ 13. を必要なメッセージの種類ごとの送信ポートを作成します。
+    |**プロパティ**|選択**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**します。|  
+    |**[演算子]**|選択 **==** します。|  
+    |**[値]**|型**AbortMessage**します。|  
+
+12. クリックして**適用**、順にクリックします**OK**します。  
+
+13. 送信ポートを右クリックし、**開始**します。  
+
+14. 手順 2. ~ 13 に必要なメッセージの種類ごとの送信ポートを作成する.

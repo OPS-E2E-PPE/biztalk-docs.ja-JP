@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10593 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10593 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ee8172e6d0669ccc86c8d6e05a8619afd0b5c3b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 73a9d5486583dc7a6170f84046b9e3fc00a6665e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270594"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37016015"
 ---
 # <a name="single-sign-on-event-10593"></a>シングル サインオン: イベント 10593
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10593|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_WARN_TICKET_BAD_FORMAT|  
-|メッセージ テキスト|チケットが正しい形式ではありません。%r<br /><br /> アプリケーション名: %1|  
+|                 |                                                                                 |
+|-----------------|---------------------------------------------------------------------------------|
+|  製品名   |                            エンタープライズ シングル サインオン                            |
+| 製品バージョン |           [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]            |
+|    イベント ID     |                                      10593                                      |
+|  イベント ソース   |                                     ENTSSO                                      |
+|    コンポーネント    |                                       なし                                       |
+|  シンボル名  |                           SSO_WARN_TICKET_BAD_FORMAT                            |
+|  メッセージ テキスト   | チケットが正しい形式ではありません。%r<br /><br /> アプリケーション名: %1 |
   
 ## <a name="explanation"></a>説明  
  指定されたアプリケーションのチケットが正しい形式ではありません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- チケットについては、次を参照してください。 [SSO チケット](../core/sso-tickets.md)です。
+ チケットについては、次を参照してください。 [SSO チケット](../core/sso-tickets.md)します。

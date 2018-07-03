@@ -1,5 +1,5 @@
 ---
-title: カスタム パイプライン コンポーネントの開発 |Microsoft ドキュメント
+title: カスタム パイプライン コンポーネントの開発 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -27,23 +27,23 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 186c95c7ddf19c1d29b6ea76a63ccb5c92d6ba9d
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 74828d31b55a4b50bdb18a537fbf7bb293445545
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005467"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008971"
 ---
 # <a name="developing-custom-pipeline-components"></a>カスタム パイプライン コンポーネントの開発
-ここでは、パイプライン コンポーネントを開発する方法について説明します。 3 種類のパイプライン コンポーネントを作成することができます: 全般、アセンブル、および逆アセンブルします。 これらの各パイプライン コンポーネントでは、プローブ機能を追加実装できます。 各パイプライン コンポーネントの種類が関連付けられているインターフェイスを BizTalk メッセージング エンジンに接続するコンポーネントを実装する必要があります。パイプライン インターフェイス コンポーネントの種類を識別するには、 **IComponent**、 **IAssemblerComponent**、および**IDisassemblerComponent**です。 プルーブ コンポーネントを実装する必要があります、 **IProbeMessage**インターフェイスです。  
+ここでは、パイプライン コンポーネントを開発する方法について説明します。 3 種類のパイプライン コンポーネントを作成することができます: 全般、アセンブル、および逆アセンブルします。 これらの各パイプライン コンポーネントでは、プローブ機能を追加実装できます。 パイプライン コンポーネントの種類ごとに関連付けられているインターフェイスを BizTalk メッセージング エンジンに接続コンポーネントを実装する必要があります。コンポーネントの種類を識別するパイプライン インターフェイスは**IComponent**、 **IAssemblerComponent**、および**IDisassemblerComponent**します。 コンポーネントをプローブするには、実装する必要があります、 **IProbeMessage**インターフェイス。  
   
- Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にはサンプル パイプライン コンポーネントが含まれており、独自のコンポーネントを作成するときに参照できます。 サンプル コンポーネントは、メッセージの末尾や先頭にデータを追加する方法を示すものです。 サンプル パイプライン コンポーネントの詳細については、次を参照してください。 [CustomComponent (BizTalk Server サンプル)](../core/customcomponent-biztalk-server-sample.md)です。  
+ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にはサンプル パイプライン コンポーネントが含まれており、独自のコンポーネントを作成するときに参照できます。 サンプル コンポーネントは、メッセージの末尾や先頭にデータを追加する方法を示すものです。 サンプル パイプライン コンポーネントの詳細については、次を参照してください。 [CustomComponent (BizTalk Server サンプル)](../core/customcomponent-biztalk-server-sample.md)します。  
   
 > [!CAUTION]
 >  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、パイプラインからカスタム パイプライン コンポーネントを参照すると、コンパイル時エラーが発生することがあります。 このエラーを修正するには、コンパイル前にパイプライン デザイナーをいったん閉じて再度開きます。 または、コンポーネントをいったん削除して追加することもできます。  
-  
+> 
 > [!IMPORTANT]
->  BizTalk Server にアップグレードする際は、任意の文字列変数に、既存のカスタム パイプライン コンポーネントには、"\n"などの改行文字が含まれていないことを確認します。 改行文字が含まれていると、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でこのコンポーネントをコンパイルする際に "定数が 2 行目に続いています" エラーが発生します。  
+>  BizTalk Server にアップグレードする際、既存のカスタム パイプライン コンポーネント内の文字列変数には、"\n"などの改行文字が含まれていないことを確認します。 改行文字が含まれていると、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でこのコンポーネントをコンパイルする際に "定数が 2 行目に続いています" エラーが発生します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -57,7 +57,8 @@ ms.locfileid: "26005467"
   
 -   [プローブ パイプライン コンポーネントの開発](../core/developing-a-probing-pipeline-component.md)  
   
--   [マネージ ストリーミング パイプライン コンポーネントでの Seek メソッドの実装](../core/implementing-a-seek-method-in-a-managed-streaming-pipeline-component.md)  
+-   
+  [マネージド ストリーミング パイプライン コンポーネントでの Seek メソッドの実装](../core/implementing-a-seek-method-in-a-managed-streaming-pipeline-component.md)  
   
 -   [解析エンジンおよびシリアル化エンジンの使用](../core/using-the-parsing-and-serializing-engines.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: '手順 2 b: Sw:HandleFileRequest をキャプチャするファイルの送信ポートを追加し、FileAct ストア アンド フォワードの Sw:HandleSnFRequest メッセージ (プル) シナリオ |Microsoft ドキュメント'
+title: '手順 2 b: Sw:HandleFileRequest をキャプチャするファイルの送信ポートを追加および Sw:HandleSnFRequest メッセージを FileAct ストア アンド フォワード (プル) シナリオ |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,54 +12,58 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c2eb55cd6aca9b26b8a8ac47ab6dbe192f174d8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 47515324fae89937754e0643563f16df9777868a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224362"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36991491"
 ---
-# <a name="step-2b-add-file-send-ports-to-capture-the-swhandlefilerequest-and-swhandlesnfrequest-messages-for-the-fileact-store-and-forward-pull-scenario"></a>手順 2 b: Sw:HandleFileRequest をキャプチャするファイルの送信ポートを追加し、FileAct ストア アンド フォワードの Sw:HandleSnFRequest メッセージ (プル) のシナリオ
-この手順を開始する前に行う必要があります、 [Step 2 a: FileAct ストア アンド フォワード (プル) シナリオ用のファイル受信場所の追加](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md)セクションです。  
-  
-### <a name="to-add-a-file-send-port-to-capture-the-sw-handlefilerequest-message"></a>ファイル送信ポート、ソフトウェアのキャプチャを追加する: HandleFileRequest メッセージ  
-  
-1.  開始**BizTalk Server 管理**です。  
-  
-2.  コンソール ツリーで、BizTalk グループを展開し、送信ポートを作成する BizTalk アプリケーションの順に展開します。  
-  
-3.  右クリック**送信ポート**、 をポイント**新規**、クリックして**静的な一方向送信ポート。**  
-  
-4.  **送信ポートのプロパティ**ウィンドウで、名前、送信ポートを**Tutorial_FA_SendPullResponsetoReceiver**です。  
-  
-5.  **送信ポートのプロパティ** ウィンドウから、**トランスポートの種類**ドロップダウン リストで、**ファイル**、順にクリック**構成**です。  
-  
-6.  **FILE トランスポートのプロパティ** ダイアログ ボックスで、**コピー先フォルダー**ボックスに、入力**C:\SWIFTAdapterTutorial\FileAct\PullResponse**をクリックして**OK**です。  
-  
-7.  **送信ポートのプロパティ** ウィンドウで、次の操作します。  
-  
-    |**これを使用してください。**|**これを行う**|  
-    |------------------|--------------------|  
-    |**送信ハンドラー**|ドロップダウン リストから選択**BizTalkServerApplication**です。|  
-    |**送信パイプライン**|ドロップダウン リストから選択**XMLTransmit**です。|  
-  
-8.  **[OK]** をクリックします。  
-  
+# <a name="step-2b-add-file-send-ports-to-capture-the-swhandlefilerequest-and-swhandlesnfrequest-messages-for-the-fileact-store-and-forward-pull-scenario"></a>手順 2 b: Sw:HandleFileRequest をキャプチャするファイルの送信ポートを追加および Sw:HandleSnFRequest メッセージを FileAct ストア アンド フォワード (プル) シナリオ
+この手順を開始する前に行う必要があります、 [Step 2 a: FileAct ストア アンド フォワード (プル) シナリオ用のファイル受信場所の追加](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md)セクション。  
+
+### <a name="to-add-a-file-send-port-to-capture-the-sw-handlefilerequest-message"></a>ファイル送信ポート、Sw のキャプチャを追加する: HandleFileRequest メッセージ  
+
+1. 開始**BizTalk Server 管理**します。  
+
+2. コンソール ツリーで、BizTalk グループを展開し、送信ポートを作成する BizTalk アプリケーションを順に展開します。  
+
+3. 右クリック**送信ポート**、 をポイント**新規**、 をクリックし、**静的な一方向送信ポート。**  
+
+4. **送信ポートのプロパティ**ウィンドウで、送信ポート名**Tutorial_FA_SendPullResponsetoReceiver**します。  
+
+5. **送信ポートのプロパティ**ウィンドウから、**トランスポートの種類**ドロップダウン リストで、**ファイル**、 をクリックし、**構成**。  
+
+6. **FILE トランスポートのプロパティ** ダイアログ ボックスで、**先フォルダー**ボックスに「 **C:\SWIFTAdapterTutorial\FileAct\PullResponse**、をクリックしてして**OK**します。  
+
+7. **送信ポートのプロパティ**ウィンドウで、次の操作を行います。  
+
+
+   |   **これを使用して、**    |                        **これを行う**                         |
+   |-------------------|---------------------------------------------------------------|
+   | **送信ハンドラー**  | ドロップダウン リストから選択**BizTalkServerApplication**します。 |
+   | **送信パイプライン** |       ドロップダウン リストから選択**XMLTransmit**します。        |
+
+
+8. **[OK]** をクリックします。  
+
 9. 手順 1. および 2. を繰り返します。  
-  
-10. 右クリック**送信ポート**、 をポイント**新規**、クリックして**動的な送信請求-応答送信ポート**です。  
-  
-11. **送信ポートのプロパティ**ウィンドウで、送信ポートの名前 **、Tutorial_IA_DynamicSendPort**です。  
-  
-12. **送信ポートのプロパティ** ウィンドウで、次の操作します。  
-  
-    |**これを使用してください。**|**これを行う**|  
-    |------------------|--------------------|  
-    |**送信パイプライン**|ドロップダウン リストから選択**XMLTransmit**です。|  
-    |**受信パイプライン**|ドロップダウン リストから選択**XMLReceive**です。|  
-  
+
+10. 右クリック**送信ポート**、 をポイント**新規**、 をクリックし、**動的な送信請求-応答送信ポート**します。  
+
+11. **送信ポートのプロパティ**ウィンドウで、送信ポート名<strong>、Tutorial_IA_DynamicSendPort</strong>します。  
+
+12. **送信ポートのプロパティ**ウィンドウで、次の操作を行います。  
+
+
+    |     **これを使用して、**     |                  **これを行う**                  |
+    |----------------------|--------------------------------------------------|
+    |  **送信パイプライン**   | ドロップダウン リストから選択**XMLTransmit**します。 |
+    | **受信パイプライン** | ドロップダウン リストから選択**XMLReceive**します。  |
+
+
 13. **[OK]** をクリックします。  
-  
+
 ## <a name="see-also"></a>参照  
- [手順 2 a: ファイルの受信場所 FileAct ストア アンド フォワード (プル) シナリオの追加](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md)   
- [手順 2 C: FileAct ストア アンド フォワード (プル) シナリオの FILEACT 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md)
+ [手順 2 a: FileAct ストア アンド フォワード (プル) シナリオ用の場所の受信ファイルを追加](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md)   
+ [手順 2C: FileAct ストア アンド フォワード (プル) シナリオ用に FILEACT 送信ポートを追加する](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md)

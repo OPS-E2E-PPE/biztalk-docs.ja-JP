@@ -1,5 +1,5 @@
 ---
-title: その他のリソース |Microsoft ドキュメント
+title: その他のリソース |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,33 +14,33 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e0f6cc39bda0d4e8a0f5331ea0d8d70c6dbf691
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 44a3099fa34c4560c4a63de3d359b6f4b8ffc44a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004203"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982011"
 ---
 # <a name="additional-resources"></a>その他のリソース
-加え[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]と[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]このプラットフォームでのプログラミングについて説明するその他のリソースは、BizTalk Server のヘルプがあります。 これらのリソースに関する詳細については、次の Web サイトを参照してください。  
+Microsoft だけでなく[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]MicrosoftBizTalk Server ヘルプで、このプラットフォームでプログラミングをについて説明するその他のリソースがあるとします。 これらのリソースの詳細については、次の Web サイトを参照してください。  
   
--   MSDN [http://go.microsoft.com/fwlink/?LinkId=25353](http://go.microsoft.com/fwlink/?LinkId=25353)  
+- Msdn ライブラリ [http://go.microsoft.com/fwlink/?LinkId=25353](http://go.microsoft.com/fwlink/?LinkId=25353)  
   
--   GotDotNet: [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsDotNetFramework](../../includes/btsdotnetframework-md.md)]コミュニティで[http://go.microsoft.com/fwlink/?LinkId=25354](http://go.microsoft.com/fwlink/?LinkId=25354)  
+- GotDotNet: Microsoft[!INCLUDE[btsDotNetFramework](../../includes/btsdotnetframework-md.md)]コミュニティで [http://go.microsoft.com/fwlink/?LinkId=25354](http://go.microsoft.com/fwlink/?LinkId=25354)  
   
--   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で[http://go.microsoft.com/fwlink/?LinkId=25355](http://go.microsoft.com/fwlink/?LinkId=25355)  
+- Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で [http://go.microsoft.com/fwlink/?LinkId=25355](http://go.microsoft.com/fwlink/?LinkId=25355)  
   
--   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]Web サービス デベロッパー センター [http://go.microsoft.com/fwlink/?LinkId=25356](http://go.microsoft.com/fwlink/?LinkId=25356)  
+- Microsoft での Web サービス デベロッパー センター [http://go.microsoft.com/fwlink/?LinkId=25356](http://go.microsoft.com/fwlink/?LinkId=25356)  
   
--   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]ビジネスおよびテクノロジ センター/統合でのビジネス プロセスを自動化および[http://go.microsoft.com/fwlink/?LinkId=25357](http://go.microsoft.com/fwlink/?LinkId=25357)  
+- Microsoft のビジネスおよびテクノロジ センター/統合でのビジネス プロセスを自動化し、 [http://go.microsoft.com/fwlink/?LinkId=25357](http://go.microsoft.com/fwlink/?LinkId=25357)  
   
--   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HIPAA で[http://go.microsoft.com/fwlink/?LinkID=116712](http://go.microsoft.com/fwlink/?LinkID=116712)  
+- Microsoft BizTalk Accelerator for HIPAA で [http://go.microsoft.com/fwlink/?LinkID=116712](http://go.microsoft.com/fwlink/?LinkID=116712)  
   
--   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for で金融サービス[http://go.microsoft.com/fwlink/?LinkId=116713](http://go.microsoft.com/fwlink/?LinkId=116713)  
+- Microsoft BizTalk Accelerator for で金融サービス [http://go.microsoft.com/fwlink/?LinkId=116713](http://go.microsoft.com/fwlink/?LinkId=116713)  
   
--   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for RosettaNet で[http://go.microsoft.com/fwlink/?LinkId=116714](http://go.microsoft.com/fwlink/?LinkId=116714)  
+- Microsoft BizTalk Accelerator for RosettaNet で [http://go.microsoft.com/fwlink/?LinkId=116714](http://go.microsoft.com/fwlink/?LinkId=116714)  
   
--   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]に msdn デベロッパー センター [http://go.microsoft.com/fwlink/?LinkId=25362](http://go.microsoft.com/fwlink/?LinkId=25362)  
+- Microsoft[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]に msdn デベロッパー センター [http://go.microsoft.com/fwlink/?LinkId=25362](http://go.microsoft.com/fwlink/?LinkId=25362)  
   
 ## <a name="see-also"></a>参照  
  [プログラミング ガイド](../../adapters-and-accelerators/accelerator-hl7/programming-guide1.md)

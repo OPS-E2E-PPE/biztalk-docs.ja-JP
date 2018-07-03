@@ -1,5 +1,5 @@
 ---
-title: バックアップの BizTalk Server のジョブをスケジュールする方法 |Microsoft ドキュメント
+title: バックアップ BizTalk Server ジョブをスケジュールする方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 616d5123e6af4c41fe56c7e4c011c4edf099ac07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e136e3729afb35611551450a0eff0a2af6cfa0dd
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22297906"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012643"
 ---
-# <a name="how-to-schedule-a-backup-biztalk-server-job"></a>バックアップの BizTalk Server のジョブをスケジュールする方法
-BizTalk Server のバックアップ ジョブは、SQL Server エージェント サービスにより設定されたスケジュールに従って実行されます。 バックアップの実行頻度を変更するには、SQL Server Enterprise Manager を使用して、BizTalk Server のバックアップ ジョブのスケジュールを変更します。 BizTalk Server のバックアップ ジョブをスケジュールする方法の詳細については、次を参照してください。[を BizTalk Server のバックアップ ジョブをスケジュールする方法](http://go.microsoft.com/fwlink/?LinkId=154674)(http://go.microsoft.com/fwlink/?LinkId=154674) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。
+# <a name="how-to-schedule-a-backup-biztalk-server-job"></a>バックアップ BizTalk Server ジョブをスケジュールする方法
+BizTalk Server のバックアップ ジョブは、SQL Server エージェント サービスにより設定されたスケジュールに従って実行されます。 バックアップの実行頻度を変更するには、SQL Server Enterprise Manager を使用して、BizTalk Server のバックアップ ジョブのスケジュールを変更します。 BizTalk Server のバックアップ ジョブをスケジュールする方法の詳細については、次を参照してください。 [Backup BizTalk Server のジョブをスケジュールする方法](http://go.microsoft.com/fwlink/?LinkId=154674)(<http://go.microsoft.com/fwlink/?LinkId=154674>) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。

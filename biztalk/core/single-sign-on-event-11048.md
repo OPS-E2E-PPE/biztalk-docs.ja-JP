@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11048 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 11048 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e73c41c380388750f35e8b0c901a959413ea427
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: da3843cf1cde3394df048230e642c98770d0da3e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277226"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36989219"
 ---
 # <a name="single-sign-on-event-11048"></a>シングル サインオン: イベント 11048
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|11048|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_ERROR_SSOCSTX_FAILED|  
-|メッセージ テキスト|SSOCSTX を作成できませんでした。 この問題を修正するには、SSO を再インストールするか、SSOCSTX.dll を COM+ ライブラリ アプリケーションにインストールします。%r<br /><br /> 追加データ: 1 %r<br /><br /> エラー コード: %2|  
+|                 |                                                                                                                                                                                    |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                                             エンタープライズ シングル サインオン                                                                              |
+| 製品バージョン |                                                             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                             |
+|    イベント ID     |                                                                                       11048                                                                                        |
+|  イベント ソース   |                                                                                       ENTSSO                                                                                       |
+|    コンポーネント    |                                                                                        なし                                                                                         |
+|  シンボル名  |                                                                              SSO_ERROR_SSOCSTX_FAILED                                                                              |
+|  メッセージ テキスト   | SSOCSTX を作成できませんでした。 この問題を修正するには、SSO を再インストールするか、SSOCSTX.dll を COM+ ライブラリ アプリケーションにインストールします。%r<br /><br /> 追加データ: 1 %r<br /><br /> エラー コード: %2 |
   
 ## <a name="explanation"></a>説明  
  これはインストール エラーにより発生した可能性があります。  

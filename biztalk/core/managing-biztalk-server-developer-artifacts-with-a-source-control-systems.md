@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server 開発アイテムのソース管理システムを制御する |Microsoft ドキュメント
+title: BizTalk Server 開発アイテムのソース管理システムの制御 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 829749911bd4f3ca6aee1da42578a1aac28db7ae
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 8ce9483518275c57c7defb730aeeffc8a4139115
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "22265802"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36991011"
 ---
 # <a name="managing-biztalk-server-developer-artifacts-with-a-source-control-systems"></a>ソース管理システムを使用した BizTalk Server の開発アイテムの管理
 BizTalk プロジェクトを予期しないシステム障害から保護することは、最優先事項として考える必要があります。 プロジェクト ファイルを保護する方法の 1 つは、Team Foundation Server ソース管理や Microsoft Visual SourceSafe のようなソース コード管理システムを使用することです。 ここでは、任意のソース管理システムで最適に動作するようプロジェクトを編成するための基本的な方法について説明し、Visual SourceSafe の具体的な使用方法を紹介します。  
@@ -95,21 +95,21 @@ BizTalk プロジェクトを予期しないシステム障害から保護する
   
 ##### <a name="to-enable-visual-sourcesafe-to-work-with-biztalk-server-unicode-files"></a>Visual SourceSafe で BizTalk Server の Unicode ファイルを使用できるようにするには  
   
-1.  Visual SourceSafe 8.0 Admin を起動します。  
+1. Visual SourceSafe 8.0 Admin を起動します。  
   
-2.  使用する SourceSafe データベースを選択します。  
+2. 使用する SourceSafe データベースを選択します。  
   
-3.  **[ツール]** メニューの **[オプション]** をクリックします。  
+3. **[ツール]** メニューの **[オプション]** をクリックします。  
   
-4.  クリックして、 **ファイルの種類**  タブをクリックします。  
+4. をクリックして、**ファイルの種類**タブ。  
   
-5.  バイナリ ファイルの一覧の最後に、次のファイルの種類を追加します。 ファイルの種類はセミコロンで区切ってください。  
+5. バイナリ ファイルの一覧の最後に、次のファイルの種類を追加します。 ファイルの種類はセミコロンで区切ってください。  
   
-     *.btm;\*します。btp;\*します。xsd;\*します。odx  
+    *.btm;\*.btp;\*.xsd;\*.odx  
   
-6.  **[OK]** をクリックします。  
+6. **[OK]** をクリックします。  
   
- これで Visual SourceSafe では、BizTalk Server ファイルの確認や形式の変更が試行されないようになります。  
+   これで Visual SourceSafe では、BizTalk Server ファイルの確認や形式の変更が試行されないようになります。  
   
 ### <a name="use-visual-studio-for-source-control-operations"></a>ソース管理操作に Visual Studio を使用する  
  Visual SourceSafe でプロジェクトを作成および操作する場合は常に、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に統合されている Visual SourceSafe のサポート メニューを使用して行う必要があります。 Visual SourceSafe エクスプローラーは使用しないでください。  
@@ -117,18 +117,18 @@ BizTalk プロジェクトを予期しないシステム障害から保護する
 ### <a name="when-to-check-in-biztalk-server-projects"></a>BizTalk Server プロジェクトをチェックインするタイミング  
  Visual SourceSafe を使用する場合は、コードが機能テストに合格し、関連コードに影響なくビルドできると開発者が確信できてから、コードをチェックインしてください。 この基準を [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に適用した場合、ガイドラインは次のようになります。  
   
--   メッセージ スキーマのみを含む BizTalk プロジェクトは、さまざまなサンプル メッセージでのスキーマのテストが正常に完了してからチェックインする。  
+- メッセージ スキーマのみを含む BizTalk プロジェクトは、さまざまなサンプル メッセージでのスキーマのテストが正常に完了してからチェックインする。  
   
--   ビジネス プロセスを含む BizTalk プロジェクトは、適切な入出力メッセージと正しい送受信ポートを使用したソリューションのテストが正常に完了してからチェックインする。  
+- ビジネス プロセスを含む BizTalk プロジェクトは、適切な入出力メッセージと正しい送受信ポートを使用したソリューションのテストが正常に完了してからチェックインする。  
   
--   ASP.NET Web サービス プロジェクトは、Web サービス コードの、開始システムに対するテストまたはテスト ハーネスを使用したテストが完了してからチェックインする。  
+- ASP.NET Web サービス プロジェクトは、Web サービス コードの、開始システムに対するテストまたはテスト ハーネスを使用したテストが完了してからチェックインする。  
   
- この基準に従うと、Visual SourceSafe リポジトリでは常に、正常に作成されテストされたビルドが保持されます。 "ナイト ビルド" の方法に従う場合、この原則は重要です。  
+  この基準に従うと、Visual SourceSafe リポジトリでは常に、正常に作成されテストされたビルドが保持されます。 "ナイト ビルド" の方法に従う場合、この原則は重要です。  
   
 ### <a name="checking-in-intermediate-versions"></a>中間バージョンのチェックイン  
- ファイルをチェックインする別の方法として、"中間" バージョンをチェックインする方法があります。 この方法を使用する場合、中間バージョンは機能テストに合格しておらず、正式なビルドではないと考えることができます。 これはソース管理システム内に含まれるバージョンは常にビルド可能であるという一般原則に反するため、一般的に推奨される方法ではありませんが、 ただしチームによっては、開発者がチェックインして、正式なビルドにチェックインするための条件を満たすしなくても、バージョンをロールバックするソース管理システムを使用するため、このアプローチを選択します。  
+ ファイルをチェックインする別の方法として、"中間" バージョンをチェックインする方法があります。 この方法を使用する場合、中間バージョンは機能テストに合格しておらず、正式なビルドではないと考えることができます。 これはソース管理システム内に含まれるバージョンは常にビルド可能であるという一般原則に反するため、一般的に推奨される方法ではありませんが、 ただし一部のチームは、これにより開発者は、ソース管理システムを使用して、チェックインし、正式なビルドにチェックインするための条件を満たすなしのバージョンをロールバックするため、このアプローチを選択します。  
   
- 中間バージョンをチェックインする方法を使用する場合は、ソース管理システムに "ビルド可能な" バージョンが含まれるという前提が破棄されます。 したがって、中間バージョンとビルド バージョンを区別する必要があります。 Visual SourceSafe を使用すると、自動またはプロセス ベースのさまざまな方法でこれを実現できます。 例:  
+ 中間バージョンをチェックインする方法を使用する場合は、ソース管理システムに "ビルド可能な" バージョンが含まれるという前提が破棄されます。 したがって、中間バージョンとビルド バージョンを区別する必要があります。 Visual SourceSafe を使用すると、自動またはプロセス ベースのさまざまな方法でこれを実現できます。 以下に例を示します。  
   
 -   開発者は、"ビルド可能な" バージョンを Visual SourceSafe に追加したときにビルド管理者に通知するというプロセスに従う。  
   
@@ -136,7 +136,7 @@ BizTalk プロジェクトを予期しないシステム障害から保護する
   
 -   Visual SourceSafe COM インターフェイスを使用したコードまたはスクリプトを記述し、活用する。 たとえば、特定のラベルを使用して、ビルドの準備が完了したコードを表すことができます。この場合、スクリプトではそのラベルが検索され、Visual SourceSafe の別の分岐にこのソースが "固定" されます。 この後、この分岐をマスター ビルドのソースとして使用します。  
   
-### <a name="comparing-files"></a>ファイルを比較します。  
+### <a name="comparing-files"></a>ファイルの比較  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ソース ファイルの 2 つのバージョン間の相違点は、Visual SourceSafe を使用して確認できます。 この操作は、マップやスキーマなどのアイテム、およびテスト メッセージやエクスポートされた構成ファイルなどの関連ファイルを使用して実行できます。  
   
 > [!NOTE]
@@ -145,25 +145,25 @@ BizTalk プロジェクトを予期しないシステム障害から保護する
 ### <a name="version-controlling-non-biztalk-server-project-files"></a>BizTalk Server プロジェクト以外のファイルのバージョン管理  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で使用される追加ファイルには、Visual SourceSafe で有効にバージョン管理および保存できるものがあります。 これらのファイルには次のものが含まれます。  
   
--   バインド ファイル (開発およびテスト ファイル)  
+- バインド ファイル (開発およびテスト ファイル)  
   
--   カスタム パイプライン アセンブリ  
+- カスタム パイプライン アセンブリ  
   
--   テスト データ (テスト メッセージなど)  
+- テスト データ (テスト メッセージなど)  
   
--   テスト ハーネス (プロジェクトの有効期間中に変化する場合があります)  
+- テスト ハーネス (プロジェクトの有効期間中に変化する場合があります)  
   
--   ビルド スクリプト、開発スクリプト、および開始と停止のスクリプト (開発チームとビルド チーム間での共有が必要なもの)  
+- ビルド スクリプト、開発スクリプト、および開始と停止のスクリプト (開発チームとビルド チーム間での共有が必要なもの)  
   
- こうしたファイルが [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の特定の BizTalk プロジェクトに関連する場合は、BizTalk プロジェクト内に格納し、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の統合ソース管理機能を使用して管理することができます。  
+  こうしたファイルが [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の特定の BizTalk プロジェクトに関連する場合は、BizTalk プロジェクト内に格納し、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の統合ソース管理機能を使用して管理することができます。  
   
 ##### <a name="to-include-a-file-or-folder-into-an-existing-visual-studio-project"></a>ファイルまたはフォルダーを既存の Visual Studio プロジェクトに格納するには  
   
-1.  ソリューション エクスプ ローラーでクリックして **すべてのファイル**します。  
+1.  ソリューション エクスプ ローラーでクリックして**すべてのファイル**します。  
   
 2.  ソリューションに含めるフォルダーまたはファイルを選択します。  
   
-3.  フォルダーまたはファイルを右クリックし、クリックして **プロジェクトに含める**します。  
+3.  フォルダーまたはファイルを右クリックし、**プロジェクトに含める**します。  
   
 > [!NOTE]
 >  ソース管理下にある [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトのアイテムを管理するときには、Visual SourceSafe エクスプローラーを使用しないでください。  

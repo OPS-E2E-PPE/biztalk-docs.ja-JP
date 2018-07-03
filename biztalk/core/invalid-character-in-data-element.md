@@ -1,5 +1,5 @@
 ---
-title: データ要素に無効な文字 |Microsoft ドキュメント
+title: データ要素に無効な文字 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cc805fbede667013b56088b3d2c29913157c2fe5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f2461a5542daaf701c90a76d26c31b72095d5aef
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257114"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010027"
 ---
 # <a name="invalid-character-in-data-element"></a>データ要素に無効な文字があります
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|イベント ID|-|  
-|イベント ソース|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|コンポーネント|EDI エンジン|  
-|シンボル名|X12DeInvalidCharacterInDataElementDescription|  
-|メッセージ テキスト|データ要素に無効な文字があります|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  製品名   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 製品バージョン |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    イベント ID     |                                           -                                            |
+|  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
+|    コンポーネント    |                                       EDI エンジン                                       |
+|  シンボル名  |                     X12DeInvalidCharacterInDataElementDescription                      |
+|  メッセージ テキスト   |                           データ要素に無効な文字があります                            |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、データ要素の値が EDI スキーマで指定された値に準拠していなかったため、受信パイプラインで受信インターチェンジを処理できなかったことを示します。  

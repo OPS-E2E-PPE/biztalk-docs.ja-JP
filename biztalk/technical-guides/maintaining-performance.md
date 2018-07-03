@@ -1,5 +1,5 @@
 ---
-title: パフォーマンスを維持する |Microsoft ドキュメント
+title: パフォーマンスの維持 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,54 +12,54 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: da10987a6532987ff7a2ed925e717a0a713cac6e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bdaa00ebb244db6d389393a0bbf32c0075c1f3d3
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298146"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36984427"
 ---
 # <a name="maintaining-performance"></a>パフォーマンスを維持します。
-このセクションでは、定期的なメンテナンスのチェック中に検出されたパフォーマンスの問題を解決できるようにするためのものでは、情報を提供します。 ツールと重大な問題になる前に、潜在的な問題を識別する事前に、ここで説明する手法を使用することもできます。  
-  
- 通常、対象となる現在のシステム パフォーマンスを評価する基準としてパフォーマンス ベースラインを確立する必要があります。  
-  
- このセクションのトピック、に加えては、このドキュメントでは、その他のトピックは、パフォーマンスの問題を解決します。 これらのトピックは、関連するセクションの下に表示されます。  
-  
+このセクションでは、ものでは、定期的なメンテナンスの確認中に検出されたパフォーマンスの問題の解決に役立つ情報を提供します。 ツールとの重要な問題になる前に、潜在的な問題を識別するために事前に、ここで説明する手法を使用することもできます。  
+
+ 一般に、対象となる現在のシステムのパフォーマンスを評価するための標準としてパフォーマンス ベースラインを確立する必要があります。  
+
+ このセクションのトピックだけでなくは、このドキュメントでその他のトピックは、パフォーマンスの問題を説明します。 これらのトピックは、関連するセクションの下に表示されます。  
+
 ## <a name="in-this-section"></a>このセクションの内容  
-  
+
 -   [パフォーマンスを維持するためのベスト プラクティス](../technical-guides/best-practices-for-maintaining-performance.md)  
-  
--   [アダプターのパフォーマンスを向上させるためにバッチ処理の構成](../technical-guides/configuring-batching-to-improve-adapter-performance.md)  
-  
--   [構成キャッシュの更新間隔を調整する方法](../technical-guides/how-to-adjust-the-configuration-cache-refresh-interval.md)  
-  
+
+-   [アダプターのパフォーマンスを向上するためのバッチ処理の構成](../technical-guides/configuring-batching-to-improve-adapter-performance.md)  
+
+-   [構成キャッシュ更新間隔を調整する方法](../technical-guides/how-to-adjust-the-configuration-cache-refresh-interval.md)  
+
 -   [追跡を無効にする方法](../technical-guides/how-to-disable-tracking.md)  
-  
+
 -   [パフォーマンス Issues3 のトラブルシューティング](../technical-guides/troubleshooting-performance-issues3.md)  
-  
+
 ## <a name="related-sections"></a>関連項目  
-  
--   を一般に、問題のパフォーマンスの詳細についてを参照してください[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンス最適化ガイド[http://go.microsoft.com/fwlink/?LinkID=150492](http://go.microsoft.com/fwlink/?LinkID=150492)です。  
-  
--   ベースラインとしきい値に対して毎週のパフォーマンス モニターのログを分析する方法については、次を参照してください[パフォーマンス分析のログ (PAL) のツールを使用して](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)、"を検索すると排除"のボトルネック、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンス。最適化ガイド[http://go.microsoft.com/fwlink/?LinkId=154675](http://go.microsoft.com/fwlink/?LinkId=154675)、および[パフォーマンス Issues3 のトラブルシューティング](../technical-guides/troubleshooting-performance-issues3.md)です。  
-  
--   システムが頻繁に自動拡張の発生していないことを確認する方法についての[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースを参照してください[データベースの自動拡張設定を定義する](../technical-guides/defining-auto-growth-settings-for-databases.md)、追跡データベースのサイズ変更ガイドライン」、で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]でヘルプを[http://go.microsoft.com/fwlink/?LinkId=154677](http://go.microsoft.com/fwlink/?LinkId=154677)とで「データベース層のボトルネックを識別する」、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]でヘルプを[http://go.microsoft.com/fwlink/?LinkId=154678](http://go.microsoft.com/fwlink/?LinkId=154678)です。  
-  
--   SQL Server の管理に関する情報の[を実行する SQL Server のメンテナンスのプロシージャ](~/technical-guides/checklist-configuring-sql-server.md)です。  
-  
--   応答時間と高いリソース使用率を確認する高負荷時に SQL Server Profiler の実行方法の詳細については、"を使用して SQL Server Profiler"SQL Server のヘルプにあるを参照してください。 [http://go.microsoft.com/fwlink/?LinkID=106720](http://go.microsoft.com/fwlink/?LinkID=106720)です。  
-  
--   すべてのアダプターのメッセージのバッチ処理がリソースの消費量や待機時間の適切なことを確認する方法については、次を参照してください。[アダプターのパフォーマンスを向上させるバッチ処理構成](../technical-guides/configuring-batching-to-improve-adapter-performance.md)です。  
-  
--   BizTalk Server のキャッシュ更新間隔を増やす方法については、次を参照してください。[構成キャッシュ更新間隔を調整する方法](../technical-guides/how-to-adjust-the-configuration-cache-refresh-interval.md)です。  
-  
--   受信および送信ホストの制限については、「ホストの制限は何ですか?」を参照してください。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ[http://go.microsoft.com/fwlink/?LinkId=154694](http://go.microsoft.com/fwlink/?LinkId=154694)です。 トリガー、アクション、および受信と送信制限の緩和方法についてを参照してください「の制限の条件の発生原因、アクション、および軽減戦略」[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ[http://go.microsoft.com/fwlink/?LinkId = 154695](http://go.microsoft.com/fwlink/?LinkId=154695)です。  
-  
--   パススルー送信パイプラインを使用して、既定の XML 送信パイプラインではなくを参照して「管理する送信ポートを使用して BizTalk エクスプ ローラー」[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ[http://go.microsoft.com/fwlink/?LinkID=154696](http://go.microsoft.com/fwlink/?LinkID=154696)です。  
-  
--   追跡データベースのサイズ変更方法の詳細については、追跡データベース サイズ ガイドライン」を参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ[http://go.microsoft.com/fwlink/?LinkId=154677](http://go.microsoft.com/fwlink/?LinkId=154677)です。  
-  
--   メッセージ ボックス データベース、BizTalkDTADb、BAMPrimaryImport データベースのサイズ変更方法の詳細についてを参照してください「を識別するボトルネックで、データベース層」、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ[http://go.microsoft.com/fwlink/?LinkId=154678](http://go.microsoft.com/fwlink/?LinkId=154678)です。  
-  
--   メッセージ ボックス データベースでの競合を回避する方法については、次を参照してください。[ディスクの競合を回避する方法](http://go.microsoft.com/fwlink/?LinkId=158809)([http://go.microsoft.com/fwlink/?LinkId=158809](http://go.microsoft.com/fwlink/?LinkId=158809)) で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンスの最適化をガイドします。
+
+- を一般に、問題のパフォーマンスの詳細についてを参照してください[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]でのパフォーマンス最適化ガイド[ http://go.microsoft.com/fwlink/?LinkID=150492](http://go.microsoft.com/fwlink/?LinkID=150492)します。  
+
+- ベースラインとしきい値に対して毎週のパフォーマンス モニターのログの分析については、次を参照してください[パフォーマンス分析のログ (PAL) ツールを使用して](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)、"を検索し、を排除すること"のボトルネック、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンス。最適化ガイド[ http://go.microsoft.com/fwlink/?LinkId=154675 ](http://go.microsoft.com/fwlink/?LinkId=154675)、および[トラブルシューティング パフォーマンス Issues3](../technical-guides/troubleshooting-performance-issues3.md)します。  
+
+- システムが頻繁に自動拡張の発生していないことを確認する方法についての[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースを参照してください[データベースの自動拡張設定を定義する](../technical-guides/defining-auto-growth-settings-for-databases.md)、追跡データベースのサイズ変更ガイドライン」、で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ[ http://go.microsoft.com/fwlink/?LinkId=154677](http://go.microsoft.com/fwlink/?LinkId=154677)で「データベース層のボトルネックを識別する」と、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ[ http://go.microsoft.com/fwlink/?LinkId=154678](http://go.microsoft.com/fwlink/?LinkId=154678)します。  
+
+- SQL Server の保守について[を実行する SQL Server のメンテナンスのプロシージャ](~/technical-guides/checklist-configuring-sql-server.md)します。  
+
+- 応答時間と高いリソース使用状況を確認する高負荷時に SQL Server Profiler の実行方法の詳細については、"を使用して SQL Server Profiler"SQL Server のヘルプにあるを参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=106720](http://go.microsoft.com/fwlink/?LinkID=106720)します。  
+
+- すべてのアダプターのメッセージのバッチ処理がリソースの消費量や待機時間の適切なことを確認する方法については、次を参照してください。[アダプターのパフォーマンスを向上させるバッチ処理構成](../technical-guides/configuring-batching-to-improve-adapter-performance.md)します。  
+
+- BizTalk Server のキャッシュ更新間隔を増やす方法については、次を参照してください。[構成キャッシュ更新間隔を調整する方法](../technical-guides/how-to-adjust-the-configuration-cache-refresh-interval.md)します。  
+
+- 受信および送信ホストの制限については、「ホストの制限は何か」を参照してください。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ[ http://go.microsoft.com/fwlink/?LinkId=154694](http://go.microsoft.com/fwlink/?LinkId=154694)します。 トリガー、アクション、および軽減戦略の受信と送信の制限についてを参照してください「の制限の条件のトリガー、アクション、および軽減戦略」[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ[ http://go.microsoft.com/fwlink/?LinkId=154695](http://go.microsoft.com/fwlink/?LinkId=154695)します。  
+
+- 既定の XML 送信パイプラインではなく、パススルー送信パイプラインを使用する「を管理する送信ポートを使用して BizTalk エクスプ ローラー」を参照してください[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ[ http://go.microsoft.com/fwlink/?LinkID=154696](http://go.microsoft.com/fwlink/?LinkID=154696)します。  
+
+- 追跡データベースのサイジングついて詳しくは、「追跡データベース サイズ変更ガイドライン」を参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ[ http://go.microsoft.com/fwlink/?LinkId=154677](http://go.microsoft.com/fwlink/?LinkId=154677)します。  
+
+- メッセージ ボックス データベース、BizTalkDTADb、BAMPrimaryImport データベースのサイジングついて詳しくは、「を識別するボトルネックで、データベース層」を参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ[ http://go.microsoft.com/fwlink/?LinkId=154678](http://go.microsoft.com/fwlink/?LinkId=154678)します。  
+
+- メッセージ ボックス データベース内での競合を避ける方法については、次を参照してください。[ディスクの競合を回避する方法](http://go.microsoft.com/fwlink/?LinkId=158809)([http://go.microsoft.com/fwlink/?LinkId=158809](http://go.microsoft.com/fwlink/?LinkId=158809)) で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンスの最適化をガイドします。

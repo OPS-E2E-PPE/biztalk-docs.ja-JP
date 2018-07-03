@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11036 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 11036 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63b11005248471c222f63c88439a0e60571b341e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f19a3ff1d35d3c2de04ec9c3846de94d7a2657a7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277154"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013915"
 ---
 # <a name="single-sign-on-event-11036"></a>シングル サインオン: イベント 11036
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|11036|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_INFO_PS_WIN_CHANGE_ADAPTER_NO_SYNC|  
-|メッセージ テキスト|Windows パスワードが変更されています。 この Windows アカウントのマッピングが見つかりましたが、このアプリケーションについて、アダプターは外部システムとのパスワード同期をサポートしないように構成されているので無視されました。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> Windows アカウント: %2 %r<br /><br /> アプリケーション: %3 %r<br /><br /> アダプター: %4 %r<br /><br /> クライアント ユーザー: %5|  
+|                 |                                                                                                                                                                                                                                                                                                                                                         |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                                                                                                                                エンタープライズ シングル サインオン                                                                                                                                                                |
+| 製品バージョン |                                                                                                                                               [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                                                                |
+|    イベント ID     |                                                                                                                                                                          11036                                                                                                                                                                          |
+|  イベント ソース   |                                                                                                                                                                         ENTSSO                                                                                                                                                                          |
+|    コンポーネント    |                                                                                                                                                                           なし                                                                                                                                                                           |
+|  シンボル名  |                                                                                                                                                         SSO_INFO_PS_WIN_CHANGE_ADAPTER_NO_SYNC                                                                                                                                                          |
+|  メッセージ テキスト   | Windows パスワードが変更されています。 この Windows アカウントのマッピングが見つかりましたが、このアプリケーションについて、アダプターは外部システムとのパスワード同期をサポートしないように構成されているので無視されました。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> Windows アカウント: % 2 %r<br /><br /> アプリケーションの場合: % 3 %r<br /><br /> アダプター: % 4 %r<br /><br /> クライアント ユーザー: %5 |
   
 ## <a name="explanation"></a>説明  
  この Windows アカウントのマッピングが見つかりましたが、このアプリケーションについて、アダプターは外部システムとのパスワード同期をサポートしないように構成されているので無視されました。  
@@ -38,4 +38,4 @@ ms.locfileid: "22277154"
 ## <a name="user-action"></a>ユーザーの操作  
  アダプターの構成を確認します。  
   
- パスワード同期については、次を参照してください。[パスワード同期](../core/password-synchronization2.md)です。
+ パスワード同期については、次を参照してください。[パスワード同期](../core/password-synchronization2.md)します。

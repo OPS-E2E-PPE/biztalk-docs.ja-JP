@@ -1,5 +1,5 @@
 ---
-title: オーケストレーション サンプル |Microsoft ドキュメント
+title: オーケストレーション サンプル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,21 +16,21 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b03b3583c5dec1b482b4ce87c19e29b9a1ae774
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cd0afe156d33dca1dabc55f31203fbeecbbb37d9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209690"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36977187"
 ---
 # <a name="orchestration-samples"></a>オーケストレーション サンプル
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK) には、オーケストレーション サンプルが含まれています。 ここでは、これらのオーケストレーション サンプルの機能、サンプルを構築して実行する手順、および予期される結果について詳細に説明します。  
+The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK) には、いくつかのオーケストレーション サンプルが含まれています。 ここでは、これらのオーケストレーション サンプルの機能、サンプルを構築して実行する手順、および予期される結果について詳細に説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [ビジネス ルールを使用して、3A4 プライベート応答側オーケストレーション](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)  
+-   [ビジネス ルールを使用した 3A4 プライベート レスポンダー オーケストレーション](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)  
   
--   [ダブル アクション PIPAutomation オーケストレーション](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)  
+-   [ダブルアクション PIPAutomation オーケストレーション](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)  
   
 -   [PrivateInitiator サンプル](../../adapters-and-accelerators/accelerator-rosettanet/privateinitiator-sample.md)  
   

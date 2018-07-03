@@ -1,5 +1,5 @@
 ---
-title: プライベート プロセスで応答する要求をマッピング |Microsoft ドキュメント
+title: プライベート プロセスで応答する要求のマッピング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,15 +22,15 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 966ad6ad752c36be36b4013743eaba3af5434d0a
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: fb7cab4ba412a46f61df89daefd86df260454195
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26008371"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36976227"
 ---
 # <a name="mapping-a-request-to-a-response-in-a-private-process"></a>プライベート プロセスで応答する要求のマッピング
-このトピックにプライベート応答側のプロセスで受信した要求メッセージをマップする方法について説明: から、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]を応答メッセージを送信できる、応答側パブリック プロセス、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]応答側パブリック プロセス。  
+このトピックでは、応答側プライベート プロセスが受信した要求メッセージにマップする方法を説明します: Microsoft から[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]を応答メッセージを送信できる、パブリック応答側プロセス、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]応答側パブリック プロセス。  
   
  応答側が要求メッセージを受信すると、その要求メッセージは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] によってパブリック プロセス オーケストレーションからプライベート プロセス オーケストレーション、基幹業務 (LOB) プログラムへとルーティングされます。 応答側では、RosettaNet 応答メッセージを生成し、開始側に返すために、LOB プログラムからの応答サービス コンテンツを必要とします。 応答メッセージ内の多くの要素では、要求メッセージの値が使用されます。 その結果、応答側プライベート プロセス オーケストレーションにマップを統合することにより、LOB プログラムで必要な形式の応答サービス コンテンツ メッセージを生成できます。  
   
@@ -46,25 +46,25 @@ ms.locfileid: "26008371"
   
 ### <a name="to-create-the-map"></a>マップを作成するには、次の操作を行います。  
   
-1.  開始**Microsoft Visual Studio 2012**です。  
+1.  開始**Microsoft Visual Studio 2012**します。  
   
-2.  **ファイル** メニューのをポイント**開く**、順にクリック**プロジェクト**です。  
+2.  **ファイル**メニューで、**オープン**、 をクリックし、**プロジェクト**。  
   
 3.  マップを追加するプライベート プロセス オーケストレーションを含んでいる BizTalk プロジェクトを格納するフォルダーを選択します。  
   
 4.  ソリューション エクスプローラーで、プロジェクトを右クリックして **[追加]** をポイントし、**[新しい項目]** をクリックします。  
   
-5.  新しい項目の追加 ウィンドウで、**カテゴリ** ウィンドウで、をクリックして**マップ ファイル**です。 テンプレート ウィンドウで **マップ**です。 **名前**ボックスで、マップの名前を入力し、をクリックして**開く**です。  
+5.  [新しい項目の追加] ウィンドウで、**カテゴリ**ウィンドウで、をクリックして**マップ ファイル**。 [テンプレート] ペインで次のようにクリックします。**マップ**します。 **名前**ボックスで、マップの名前を入力し、クリックして**オープン**します。  
   
-6.  送信元スキーマ ペインで、をクリックして**ソース スキーマを開く**です。  
+6.  送信元スキーマ ペインで次のようにクリックします。**ソース スキーマを開く**します。  
   
-7.  BizTalk 型の選択 ウィンドウで、**スキーマ**、クリックしてから、マップする要求メッセージの PIP スキーマを選択して**OK**です。  
+7.  BizTalk 型の選択 ウィンドウで、**スキーマ**をクリックしてから、マップする要求メッセージの PIP スキーマを選択します。 **OK**します。  
   
-8.  送信先スキーマ ペインで、をクリックして**送信先スキーマを開く**です。  
+8.  送信先スキーマ ペインで次のようにクリックします。**送信先スキーマを開く**します。  
   
-9. BizTalk 型の選択 ウィンドウで、**参照**、展開**Microsoft.Solutions.BTARN.Schemas.RNPIPs**、展開**スキーマ**、PIP スキーマを選択しますをクリックし、マップ先の応答メッセージ**OK**です。  
+9. BizTalk 型の選択 ウィンドウで、**参照**、展開**microsoft.solutions.btarn.schemas.rnpips**、展開**スキーマ**、PIP スキーマを選択します応答メッセージをクリックし、マップする**OK**します。  
   
-10. 右クリックし、 \<*スキーマ*\>をクリックし、送信元スキーマのノード**ツリー ノードの展開**です。  
+10. 右クリックし、 \<*スキーマ*\>クリック、送信元スキーマのノード**ツリー ノードの展開**します。  
   
 11. 送信先スキーマについても、手順 10. を繰り返します。  
   
@@ -72,7 +72,7 @@ ms.locfileid: "26008371"
   
 13. 両スキーマ間でマップする必要のあるすべてのフィールドについて、手順 12. を繰り返します。  
   
-14. マップの検証とテストを行います。 詳細については、BizTalk Server ヘルプの「マップのコンパイルとテスト」トピックを参照してください。  
+14. マップの検証とテストを行います。 詳細については、BizTalk Server ヘルプで「マップのコンパイルとテスト」のトピックを参照してください。  
   
 ### <a name="to-add-the-map-to-the-orchestration"></a>オーケストレーションにマップを追加するには  
   
@@ -81,23 +81,23 @@ ms.locfileid: "26008371"
     > [!NOTE]
     >  オーケストレーションに、スキーマを含んでいるアセンブリへの参照があることを確認します。  
   
-2.  ツールボックスで、をクリックして、**変換**図形し、する要求メッセージを応答メッセージに変換する必要があるオーケストレーション内の位置にドラッグします。  
+2.  ツールボックスで、をクリックして、**変換**図形、および位置は、要求メッセージを応答メッセージに変換する必要があるオーケストレーション内の位置にドラッグします。  
   
     > [!NOTE]
-    >  配置の例については、**変換**図形の PIP3A4PrivateResponder.odx オーケストレーションを参照してください。 ある\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pipautomation\3a4\pr です。 このサンプルでは、**変換**図形のすぐ下、 **IsActivityDoubleAction**図形です。 詳細については、次を参照してください。 [3A4 プライベート応答側オーケストレーションを使用して、ビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)です。  
+    >  配置の例については、**変換**図形、PIP3A4PrivateResponder.odx オーケストレーションを参照してください。 ある\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pipautomation\3a4\pr です。 このサンプルでは、**変換**図形のすぐ下、 **IsActivityDoubleAction**図形。 詳細については、次を参照してください。 [3A4 プライベート レスポンダー オーケストレーションを使用してビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)します。  
   
     > [!NOTE]
-    >  複数の Pip の複数のマップを組み込む方法の例は、次を参照してください。 [Double Action PIPAutomation オーケストレーション](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)です。  
+    >  複数の Pip の複数のマップを組み込む方法の例は、次を参照してください。 [Double Action PIPAutomation Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)します。  
   
-3.  オーケストレーション デザイン画面でクリックして**ConstructMessage1**です。 プロパティ ウィンドウで、図形の名前、および作成するメッセージの名前を入力します。  
+3.  オーケストレーション デザイン画面でクリックして**ConstructMessage1**します。 プロパティ ウィンドウで、図形の名前、および作成するメッセージの名前を入力します。  
   
-4.  オーケストレーション デザイン画面でクリックして**変換**です。 プロパティ ウィンドウで、省略記号ボタンをクリックします (**.**) の横に**マップ名**です。  
+4.  オーケストレーション デザイン画面でクリックして**変換**します。 [プロパティ] ウィンドウで、省略記号ボタンをクリックします (**.。**) 横に**マップ名**します。  
   
-5.  変換の構成 ウィンドウで、**既存のマップ**、し、**完全修飾マップ名**、先ほど作成したマップをクリックします。  
+5.  変換の構成 ウィンドウで、次のようにクリックします。**既存のマップ**、および**完全修飾マップ名**、先ほど作成したマップをクリックします。  
   
-6.  **変換**をクリックして**ソース**です。 変数の下の空のボックスをクリックし、ドロップダウン リストから要求メッセージの名前を選択します。  
+6.  [**変換**、] をクリックして**ソース**します。 変数の下の空のボックスをクリックし、ドロップダウン リストから要求メッセージの名前を選択します。  
   
-7.  **変換**をクリックして**先**です。 変数の下の空のボックスをクリックし、ドロップダウン リストから応答メッセージの名前を選択します。  
+7.  [**変換**、] をクリックして**先**します。 変数の下の空のボックスをクリックし、ドロップダウン リストから応答メッセージの名前を選択します。  
   
 8.  **[OK]** をクリックします。  
   

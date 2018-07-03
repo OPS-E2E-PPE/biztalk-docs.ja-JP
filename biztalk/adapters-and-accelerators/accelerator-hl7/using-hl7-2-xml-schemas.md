@@ -1,5 +1,5 @@
 ---
-title: HL7 2. XML スキーマを使用して |Microsoft ドキュメント
+title: HL7 2. XML スキーマの使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff3af77874ed668bb73298662646c87206aacb31
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6758be134043c77138e37960641a54c0aff8455b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206298"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982035"
 ---
-# <a name="using-hl7-2xml-schemas"></a>HL7 2. XML スキーマを使用します。
-このセクションで説明、2. XML 標準のバージョン ヘルス レベル 7 (HL7) でサポートされている[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]です。  
+# <a name="using-hl7-2xml-schemas"></a>HL7 2. XML スキーマの使用
+このセクションでは、Microsoft でサポートされている正常性レベル 7 (HL7) の標準の 2. の XML バージョンをについて説明します[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [HL7 2. XML サブフォルダーとイベント](../../adapters-and-accelerators/accelerator-hl7/hl7-2-xml-subfolders-and-events.md)  
+-   [HL7 2.XML のサブフォルダーとイベント](../../adapters-and-accelerators/accelerator-hl7/hl7-2-xml-subfolders-and-events.md)  
   
 -   [V2 を変更します。BizTalk エディターで使用する XML スキーマ](../../adapters-and-accelerators/accelerator-hl7/modifying-2-xml-schemas-to-work-with-biztalk-editor.md)

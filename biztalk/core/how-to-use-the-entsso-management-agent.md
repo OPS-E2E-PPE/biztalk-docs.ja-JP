@@ -1,5 +1,5 @@
 ---
-title: ENTSSO 管理エージェントを使用する方法 |Microsoft ドキュメント
+title: ENTSSO 管理エージェントを使用する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,31 +12,31 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03c0f7d2c04a2707cf965f64ff7a559d8642a12c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 68c354f2250e9abc6a02ea52f4b7c106f57144e6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256138"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37018478"
 ---
 # <a name="how-to-use-the-entsso-management-agent"></a>ENTSSO 管理エージェントを使用する方法
 エンタープライズ シングル サインオン (SSO) のこのバージョンには、Microsoft Identity Integration Server (MIIS) の管理エージェントが含まれます。この管理エージェントは、エンタープライズ SSO を MIIS のアカウント同期機能と統合します。 これにより、MIIS 管理者は、SSO データベースで SSO マッピングを管理できます。  
   
- エンタープライズ SSO でマッピングは Windows ドメインのアカウント間で作成されます (*domainname \username*) および外部資格情報。 Active Directory 管理エージェント、および外部データ ソースの管理エージェント (例: RACF MA) がある場合は、エンタープライズ SSO MA (ENTSSO MA) を使用して、SSO データベースでのマッピングを管理できます。 ENTSSO MA は、*呼び出しベースのエクスポート*管理エージェントのみです。  
+ Windows ドメイン アカウント間で、エンタープライズ SSO でマッピングの作成 (*domainname \username*) および外部資格情報。 Active Directory 管理エージェント、および外部データ ソースの管理エージェント (例: RACF MA) がある場合は、エンタープライズ SSO MA (ENTSSO MA) を使用して、SSO データベースでのマッピングを管理できます。 ENTSSO MA は、*呼び出しベースのエクスポート*管理エージェントのみです。  
   
  管理エージェントは、次の 3 つの異なる部分で構成されます。  
   
--   構成ファイル (ENTSSO.xml)  
+- 構成ファイル (ENTSSO.xml)  
   
--   MIIS ユーザー インターフェイス  
+- MIIS ユーザー インターフェイス  
   
--   ENTSSO ユーザー インターフェイス  
+- ENTSSO ユーザー インターフェイス  
   
- ここでは、構成プロセスについて説明します。  
+  ここでは、構成プロセスについて説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [XML ファイルを構成します。](../core/configuring-the-xml-file.md)  
+-   [XML ファイルの構成](../core/configuring-the-xml-file.md)  
   
 -   [ENTSSO MA 用に MIIS を構成する方法](../core/how-to-configure-miis-for-entsso-ma.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: '手順 1: Fabrikam ホーム組織の作成 |Microsoft ドキュメント'
+title: '手順 1: Fabrikam ホーム組織の作成 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,43 +14,47 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d5190bcc7d757a2f2f2ca2a0efacc6c0ffc0a9c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 7da8abbaf99dee8d0e4d328a26f5471e9e8750ad
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963632"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36994227"
 ---
 # <a name="step-1-creating-the-fabrikam-home-organization"></a>手順 1: Fabrikam ホーム組織の作成
-ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールを使用して、Fabrikam のホーム組織を作成します。  
-  
+この手順で、Microsoft® を使用して[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]Fabrikam ホーム組織を作成する管理コンソール。  
+
 ### <a name="to-start-the-btarn-management-console"></a>BTARN 管理コンソールを起動するには  
-  
--   をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet**をクリックして**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールです。  
-  
+
+- クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet**順にクリックします**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソール。  
+
 ### <a name="to-create-the-home-organization"></a>ホーム組織を作成するには  
-  
-1.   **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]を右クリックして**ホーム組織**、 をポイント**新規**、クリックして**ホーム組織**です。  
-  
-2.  [新しいホーム組織のプロパティ] ダイアログ ボックスで、次の操作を行います。  
-  
-    |プロパティ|目的|  
-    |--------------|----------------|  
-    |**名前**|型**FABRIKAM**です。|  
-    |**[GBI]**|型**987654321**です。|  
-    |**ホーム組織の分類**|選択**Shopper**ドロップダウン リストからです。|  
-  
-3.  **新しいホーム組織のプロパティ** ダイアログ ボックスで、**連絡先のプロパティ** タブで、次の操作します。  
-  
-    |プロパティ|目的|  
-    |--------------|----------------|  
-    |**連絡先の名前**|型**Jane Doe**です。|  
-    |**E-mail Address**|型 **jdoe@fabrikam.com**です。|  
-    |**電話番号**|型**555-555-5555**です。|  
-    |**Fax 番号**|型**555-555-5555**です。|  
-    |**サプライ チェーン コード**|型**電子部品**です。|  
-  
-4.  **[OK]** をクリックします。  
-  
+
+1. **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]を右クリックして**ホーム組織**、 をポイント**新規**、 をクリックし、**ホーム組織**します。  
+
+2. [新しいホーム組織のプロパティ] ダイアログ ボックスで、次の操作を行います。  
+
+
+   |               プロパティ               |                 目的                  |
+   |--------------------------------------|---------------------------------------------|
+   |               **名前**               |             型**FABRIKAM**します。              |
+   |               **GBI**                |             型**987654321**します。             |
+   | **ホーム組織の分類** | 選択**買い物客**ドロップダウン リストから。 |
+
+
+3. **新しいホーム組織のプロパティ** ダイアログ ボックスで、**連絡先プロパティ** タブで、次の操作を行います。  
+
+
+   |       プロパティ        |                目的                |
+   |-----------------------|------------------------------------------|
+   |   **連絡先の名前**    |            型**Jane Doe**します。            |
+   |  **E-mail Address**   | 型 <strong>jdoe@fabrikam.com</strong>します。 |
+   | **電話番号**  |          型**555-555-5555**します。          |
+   |    **Fax 番号**     |          型**555-555-5555**します。          |
+   | **サプライ チェーン コード** |     型**電子部品**します。      |
+
+
+4. **[OK]** をクリックします。  
+
 ## <a name="see-also"></a>参照  
  [手順 2: Contoso 取引先組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-contoso-partner-organization.md)

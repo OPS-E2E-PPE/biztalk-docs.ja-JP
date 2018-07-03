@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server 管理コンソールを開く方法 |Microsoft ドキュメント
+title: BizTalk Server 管理コンソールを開く方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81efcc6e2d972bde7b30c57860da4ced711b1294
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 46c5185307aeda0289fd8d4c53363ec45510a492
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254482"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37016124"
 ---
 # <a name="how-to-open-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールを開く方法
 BizTalk Server 管理コンソールを開く手順、および詳細ペインに表示されるデータの並べ替えと更新を行う手順を以下に示します。  
@@ -31,15 +31,15 @@ BizTalk Server 管理コンソールを開く手順、および詳細ペイン�
   
 ### <a name="to-open-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールを開くには  
   
--   をクリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+- クリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-     または  
+   スイッチまたは  
   
--   をクリックして**開始**、 をクリックして**実行**、型**BTSmmcLauncher.exe**、順にクリック**ok**です。  
+- をクリックして**開始**、 をクリックして**実行**、型**BTSmmcLauncher.exe**、順にクリックします**OK**。  
   
 ### <a name="to-refresh-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールを更新するには  
   
--   コンソール ツリーで、更新し、をクリックするノードを右クリックして**更新**です。  
+-   更新し、をクリックする、コンソール ツリーでノードを右クリックして**更新**します。  
   
      これにより、そのノードに含まれるすべてのオブジェクトが更新されます。  
   
@@ -56,5 +56,5 @@ BizTalk Server 管理コンソールを開く手順、および詳細ペイン�
 -   詳細ペインの列の表示順序を変更するには、詳細ペインで列をクリックし、新しい場所にドラッグします。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk Server 管理コンソールを使用します。](../core/using-the-biztalk-server-administration-console.md)   
+ [BizTalk Server 管理コンソールの使用](../core/using-the-biztalk-server-administration-console.md)   
  [既存のグループに接続する方法](../core/how-to-connect-to-an-existing-group.md)

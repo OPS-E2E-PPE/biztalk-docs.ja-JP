@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10580 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10580 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb23922da499fdbb001748e622b0256228d72069
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e928e59a7ea18e2305411f1c76ef5701cdbbecfe
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270242"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36994843"
 ---
 # <a name="single-sign-on-event-10580"></a>シングル サインオン: イベント 10580
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10580|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_INFO_APP_ENABLED|  
-|メッセージ テキスト|アプリケーションは有効になっていました。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> クライアント コンピューターの場合: %2 %r<br /><br /> クライアント ユーザー: %3 %r<br /><br /> アプリケーション名: %4|  
+|                 |                                                                                                                                                               |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                                   エンタープライズ シングル サインオン                                                                   |
+| 製品バージョン |                                                  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                   |
+|    イベント ID     |                                                                             10580                                                                             |
+|  イベント ソース   |                                                                            ENTSSO                                                                             |
+|    コンポーネント    |                                                                              なし                                                                              |
+|  シンボル名  |                                                                     SSO_INFO_APP_ENABLED                                                                      |
+|  メッセージ テキスト   | アプリケーションは有効になっていました。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> クライアント コンピューターの場合: % 2 %r<br /><br /> クライアント ユーザー: % 3 %r<br /><br /> アプリケーション名: %4 |
   
 ## <a name="explanation"></a>説明  
  これは情報メッセージであり、SSO システム内で発生する重要なセキュリティ関連イベントの追跡に役立つことがあります。 このメッセージは、アプリケーションが有効になっていたことを示します。  

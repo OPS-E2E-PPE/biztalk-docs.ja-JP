@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10570 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10570 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b002e3ce3c887a088346b3832568aacdd5fd43f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c104ec3087f0e75feb3e21551ae880b2237c7946
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270234"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022824"
 ---
 # <a name="single-sign-on-event-10570"></a>シングル サインオン: イベント 10570
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10570|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_WARN_SSO_DISABLED_FOR_CHANGE_SSO_ADMIN|  
-|メッセージ テキスト|SSO 管理者アカウント名を更新するには、最初に SSO を無効にする必要があります。%r|  
+|                 |                                                                             |
+|-----------------|-----------------------------------------------------------------------------|
+|  製品名   |                          エンタープライズ シングル サインオン                          |
+| 製品バージョン |         [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]          |
+|    イベント ID     |                                    10570                                    |
+|  イベント ソース   |                                   ENTSSO                                    |
+|    コンポーネント    |                                     なし                                     |
+|  シンボル名  |                 SSO_WARN_SSO_DISABLED_FOR_CHANGE_SSO_ADMIN                  |
+|  メッセージ テキスト   | SSO 管理者アカウント名を更新するには、最初に SSO を無効にする必要があります。%r |
   
 ## <a name="explanation"></a>説明  
  SSO 管理者アカウント名を更新するには、最初に SSO を無効にする必要があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- SSO を無効にする方法については、次を参照してください。 [SSO を無効にする方法](../core/how-to-disable-sso.md)です。
+ SSO を無効にする方法の詳細については、次を参照してください。 [SSO を無効にする方法](../core/how-to-disable-sso.md)します。

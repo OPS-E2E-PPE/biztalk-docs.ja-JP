@@ -1,5 +1,5 @@
 ---
-title: MySAP Business Suite の BizTalk アダプターを理解する |Microsoft ドキュメント
+title: BizTalk Adapter for mySAP Business Suite について |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,39 +19,39 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5d04c435208e316c343ac7b307943e0f91b8af7
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 709833ecec71a98e0e09d2cd660b68bf5b647d8b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25962200"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985611"
 ---
-# <a name="understand-biztalk-adapter-for-mysap-business-suite"></a>MySAP Business Suite の BizTalk アダプターを理解します。
-[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]外部システムと対話するためにサービス指向のプログラムによるアクセスを有効にします。 アダプターでは、次の利点をクライアントに使用します。  
+# <a name="understand-biztalk-adapter-for-mysap-business-suite"></a>BizTalk Adapter for mySAP Business Suite についてください。
+[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]外部システムと対話するためにサービス指向のプログラムによるアクセスを使用します。 アダプターは、次の利点をクライアントに提供します。  
   
--   **デザイン時のエクスペリエンスを一貫した**です。 アダプターは、参照、検索、および LOB アーティファクトのメタデータを取得するための一般的なとわかりやすいデザイン時のエクスペリエンスを提供します。  
+- **デザイン時エクスペリエンスの一貫性のある**します。 アダプターは、参照、検索、および LOB アーティファクトのメタデータを取得するための一般的な使いやすいもののデザイン時のエクスペリエンスを提供します。  
   
--   **さまざまなプログラミング オプション**です。 アダプターは、プログラミング モデル Windows Communication Foundation (WCF) チャネル モデルを含む、WCF サービスのモデル、ADO.NET、web サービス、またはサポートされている BizTalk モデルの選択肢を提供します。  
+- **プログラミングのオプションをさまざまな**します。 アダプターは、さまざまなプログラミング モデルの Windows Communication Foundation (WCF) チャネル モデルを含む、WCF サービス モデル、ADO.NET、web サービス、または BizTalk がサポートされているモデルを提供します。  
   
--   **Lob の間でのエクスペリエンス、統一された**です。 使用して、WCF アダプターを標準化および[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]でき、したがって一貫した環境での任意の LOB システムへのアクセスを取得します。  
+- **Lob の間でのエクスペリエンス、統一された**します。 アダプターが、WCF を使用して標準と[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]し、そのため、LOB システムへのアクセスのエクスペリエンスの一貫性を提供します。  
   
- 前述のように、アダプターは、上に組み込ま、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]です。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]のさまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションで使用できる統合アダプターを構築するための共通の基本を提供します。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]が Windows Communication Foundation (WCF) チャネルとの統合アダプターを公開することにより、アダプター戦略の Microsoft サービスの戦略を揃えて配置します。 詳細については、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]を参照してください、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]ドキュメント。 と共に、ドキュメントがインストールされている、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]通常 \<インストール ドライブ\>: \Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents です。  
+  前述のように、アダプターは WCF LOB Adapter SDK の上に構築されます。 WCF LOB Adapter SDK は、さまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションが使用できる統合アダプターを構築するための共通の基盤を提供します。 WCF LOB Adapter SDK は、Windows Communication Foundation (WCF) チャネルとしての統合アダプターを公開することで、Microsoft のサービスを使用したアダプターの戦略を配置します。 WCF LOB Adapter SDK の詳細については、次を参照してください。 [WCF LOB Adapter SDK ドキュメント](../../adapters-and-accelerators/wcf-lob-adapter-sdk/microsoft-wcf-line-of-business-adapter-sdk-documentation.md)します。
   
- SAP システムに対して操作を実行するには、アダプターのクライアントは、関連するリモート関数呼び出し (Rfc)、ビジネス アプリケーション プログラミング インターフェイス (Bapi) と Idoc (中級者向けのドキュメント) へのアクセスが必要です。 SAP R/3 システムは、ビジネスの統合の Rfc、Bapi、および Idoc を公開します。 Rfc は、特定のビジネス ロジックを実装しているリモート関数モジュールです。 このロジックは、BizTalk Server など、外部アプリケーションまたは .NET アプリケーションから呼び出すことができます。 Bapi は、標準の RFC インターフェイスを介して公開されるさらに、SAP ビジネス オブジェクトをメソッドのインターフェイスです。 Idoc は、SAP および SAP 以外のシステム間の通信には、電子データ交換 (EDI) 通信レイヤーを抽象化するメカニズムです。 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]Idoc が SAP システムによって公開される、Rfc、Bapi にアクセスすることができます。  
+  SAP システムの操作を実行するには、アダプター クライアントは、関連するリモート関数呼び出し (Rfc)、ビジネス アプリケーション プログラミング インターフェイス (Bapi)、および Idoc (または中間ドキュメント) にアクセスする必要があります。 SAP R/3 システムでは、ビジネスの統合の Rfc、Bapi、Idoc を公開します。 Rfc は、特定のビジネス ロジックを実装するリモート関数モジュールです。 このロジックは、BizTalk Server などの外部アプリケーションまたは .NET アプリケーションから呼び出すことができます。 Bapi は、標準の RFC インターフェイスを通じて公開されるさらに、SAP ビジネス オブジェクトにメソッドのインターフェイスです。 Idoc は、SAP と SAP 以外のシステム間の通信には、電子データ交換 (EDI) 通信レイヤーを抽象化するメカニズムです。 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]Idoc が SAP システムによって公開される、Rfc、Bapi にアクセスすることができます。  
   
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]も含まれています[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]、SAP システムの ADO インターフェイスを提供します。  
+  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]も含まれています[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]、SAP システムへの ADO インターフェイスを提供します。  
   
- このセクションの機能の一覧、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]と[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]です。  
+  このセクションの機能の一覧、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] 、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BizTalk adapter 用 mySAP Business Suite のアーキテクチャの概要](../../adapters-and-accelerators/adapter-sap/architecture-overview-of-the-biztalk-adapter-for-mysap-business-suite.md)  
+-   [BizTalk Adapter 用 mySAP Business Suite のアーキテクチャの概要](../../adapters-and-accelerators/adapter-sap/architecture-overview-of-the-biztalk-adapter-for-mysap-business-suite.md)  
   
--   [SAP アダプターの主要な機能](../../adapters-and-accelerators/adapter-sap/key-features-in-the-sap-adapter.md)  
+-   [SAP アダプターの主な機能](../../adapters-and-accelerators/adapter-sap/key-features-in-the-sap-adapter.md)  
   
 -   [BizTalk Adapter for mySAP Business Suite の制限事項](../../adapters-and-accelerators/adapter-sap/limitations-of-biztalk-adapter-for-mysap-business-suite.md)  
   
 -   [.NET Framework Data Provider for mySAP Business Suite について](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)  
   
 ## <a name="see-also"></a>参照  
-[BizTalk Adapter 用 mySAP Business Suite の概要します。](../../adapters-and-accelerators/adapter-sap/get-started-with-the-biztalk-adapter-for-mysap-business-suite.md)
+[BizTalk Adapter for mySAP Business Suite の概要します。](../../adapters-and-accelerators/adapter-sap/get-started-with-the-biztalk-adapter-for-mysap-business-suite.md)

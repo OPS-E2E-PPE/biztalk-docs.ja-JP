@@ -1,5 +1,5 @@
 ---
-title: '付録 a: サンプル ファイル |Microsoft ドキュメント'
+title: '付録 a: サンプル ファイル |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,28 +14,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6012d7d93b10797c5a907c2e08dfc69cefd16d72
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b4aeb71cdd79df800e5d14fd35ebe106f3af0c48
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230114"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995299"
 ---
 # <a name="appendix-a-sample-files"></a>付録 a: サンプル ファイル
 Microsoft BizTalk Adapter for JD Edwards EnterpriseOne では、JD Edwards EnterpriseOne 内でビジネス関数を実行するための jdeRequest と jdeResponse XML 構造をサポートしています。  
   
  JD Edwards EnterpriseOne XML を使用して次の操作を行うことができます。  
   
--   ビジネス関数呼び出しを 1 つのオブジェクトに集約する。  
+- ビジネス関数呼び出しを 1 つのオブジェクトに集約する。  
   
--   JD Edwards EnterpriseOne ThinNet API を使用する。  
+- JD Edwards EnterpriseOne ThinNet API を使用する。  
   
--   Z ファイルとビジネス関数にアクセスする。  
+- Z ファイルとビジネス関数にアクセスする。  
   
- ここでは、JD Edwards EnterpriseOne 内でビジネス関数を実行するための jdeRequest と jdeResponse XML 構造の例を示します。  
+  ここでは、JD Edwards EnterpriseOne 内でビジネス関数を実行するための jdeRequest と jdeResponse XML 構造の例を示します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [単一関数の要求を発行します。](../core/issuing-a-single-function-request.md)  
+-   [単一関数の要求の発行](../core/issuing-a-single-function-request.md)  
   
 -   [SalesOrder セッション用の XML](../core/xml-for-a-salesorder-session.md)

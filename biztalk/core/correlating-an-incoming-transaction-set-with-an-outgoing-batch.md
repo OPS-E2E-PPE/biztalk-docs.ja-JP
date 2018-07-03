@@ -1,5 +1,5 @@
 ---
-title: 送信バッチ設定で受信トランザクションを相互に関連付ける |Microsoft ドキュメント
+title: 送信バッチの設定、受信トランザクションの関連付け |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ddd5a1ec83db1177050711d82bfb465c2bcb7637
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b44f89133cbfb7f5925f975a723b84c715180c7a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239410"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013803"
 ---
 # <a name="correlating-an-incoming-transaction-set-with-an-outgoing-batch"></a>受信トランザクション セットと送信パッチの関連付け
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、バッチ処理オーケストレーションに送信された EDI トランザクション セットを、送信バッチに関連付けることができます。 これを行うには、バッチ処理オーケストレーションに送信されたトランザクション セットの状態レポートのエントリ (BTSInterchangeID) を、オーケストレーションの状態レポートのエントリ (ActivityID) に関連付けます。 この関連付けは、BusinessMessageJournal BAM アクティビティのエントリを使用して行います。 これらのエントリは、バッチ処理オーケストレーションが、バッチ要素の受信時に作成します。  
@@ -27,13 +27,13 @@ ms.locfileid: "22239410"
   
  以下のセクションでは、次の事項について詳しく説明します。  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が追跡データを保存する方法  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が追跡データを保存する方法  
   
--   カスタム パイプライン コンポーネントを作成して関連付けを有効にする方法  
+- カスタム パイプライン コンポーネントを作成して関連付けを有効にする方法  
   
--   受信トランザクション セットを送信バッチに関連付ける方法  
+- 受信トランザクション セットを送信バッチに関連付ける方法  
   
--   バッチに含まれるトランザクション セットの BTSInterchangeID がわかっている場合に、BusinessMessageJournal アクティビティに対してクエリを実行し、バッチの BTSInterchangeID を特定する方法  
+- バッチに含まれるトランザクション セットの BTSInterchangeID がわかっている場合に、BusinessMessageJournal アクティビティに対してクエリを実行し、バッチの BTSInterchangeID を特定する方法  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
@@ -44,7 +44,7 @@ ms.locfileid: "22239410"
 1.  EDI 逆アセンブラーは、受信 EDI インターチェンジの処理時に、InterchangeStatusActivity テーブルと TransactionSetActivity テーブルにエントリを作成します。  
   
     > [!NOTE]
-    >  BAM アクティビティの詳細については、次を参照してください。 [EDI、AS2 メッセージの追跡するために BAM アクティビティ作成](../core/bam-activities-created-to-track-edi-as2-messages.md)です。  
+    >  BAM アクティビティの詳細については、次を参照してください。 [EDI AS2 メッセージの追跡するために BAM アクティビティ作成](../core/bam-activities-created-to-track-edi-as2-messages.md)です。  
   
 2.  バッチ処理オーケストレーションは、インスタンスが作成されたときに、BatchingActivity にエントリを作成します。 BAM サブシステムは、ActivityID の値を作成します。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "22239410"
 5.  オーケストレーションは、BusinessMessageJournal アクティビティに 2 つ目のエントリを作成します。 次に、MessageTrackingID フィールドを、TransactionSetActivity テーブルに作成したエントリの ActivityID フィールドに設定します。 さらに、BTSInterchangeID フィールドを、バッチの BTS.InterchangeID コンテキスト プロパティに設定します。 また、BTSMessageID は設定せずに、 ContainerActivityID を BatchingActivity の ActivityID の値に設定します。  
   
 ## <a name="creating-a-custom-pipeline-component-for-enabling-correlation"></a>カスタム パイプライン コンポーネントの作成による関連付けの準備  
- 受信トランザクション セットをそのトランザクションを含む送信バッチの相関関係を設定するには、設定、カスタム パイプライン コンポーネントを作成する必要があります。 このパイプライン コンポーネントでの処理は、EDI 逆アセンブラーによる処理の後、EDIReceive パイプラインの BatchMarker コンポーネントで処理を行う前に行います。 このパイプライン コンポーネントでは、BusinessMessageJournal アクティビティにエントリを作成する必要があります。 このエントリでは、BTSInterchangeID フィールドを BTS.InterchangeID コンテキスト プロパティに、BTSMessageID フィールドを BTS.MessageID コンテキスト プロパティに設定します。  
+ 受信トランザクション セットをそのトランザクションを含む、送信バッチの相関関係を設定する設定、カスタム パイプライン コンポーネントを作成する必要があります。 このパイプライン コンポーネントでの処理は、EDI 逆アセンブラーによる処理の後、EDIReceive パイプラインの BatchMarker コンポーネントで処理を行う前に行います。 このパイプライン コンポーネントでは、BusinessMessageJournal アクティビティにエントリを作成する必要があります。 このエントリでは、BTSInterchangeID フィールドを BTS.InterchangeID コンテキスト プロパティに、BTSMessageID フィールドを BTS.MessageID コンテキスト プロパティに設定します。  
   
 ## <a name="looking-up-the-interchangeid-for-a-transaction-set-in-a-batch"></a>バッチ内トランザクション セットの InterchangeID の検索  
  受信したインターチェンジと、インターチェンジ内のトランザクション セットを含むバッチを関連付けるには、BatchingActivity テーブルと BusinessMessageJournal アクティビティのエントリを使用して、次に示す作業を行います。  
@@ -91,5 +91,5 @@ Where MessageTrackingID = <MessageTrackingID from the previous query> and BTSInt
 ```  
   
 ## <a name="see-also"></a>参照  
- [EDI、AS2 メッセージの追跡に作成された BAM アクティビティ](../core/bam-activities-created-to-track-edi-as2-messages.md)   
- [EDI および AS2 状態レポートを有効にします。](../core/enabling-edi-and-as2-status-reports.md)
+ [EDI AS2 メッセージの追跡に作成された BAM アクティビティ](../core/bam-activities-created-to-track-edi-as2-messages.md)   
+ [EDI および AS2 状態レポートの有効化](../core/enabling-edi-and-as2-status-reports.md)

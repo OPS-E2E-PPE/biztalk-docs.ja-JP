@@ -1,5 +1,5 @@
 ---
-title: メッセージ強化サンプルを実行している |Microsoft ドキュメント
+title: メッセージ強化サンプルを実行している |。Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c4ed3b3ebc24a908dfefd70711db0d40638c2d3b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 192d300702b8194096f40e5f54b57717669730ac
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294826"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37015131"
 ---
 # <a name="running-the-message-enrichment-sample"></a>メッセージ強化サンプルを実行しています。
-Message Enrichment サンプルでは、行程入り口サンプルに用意されている、テスト クライアントの Windows フォーム アプリケーションを使用します。  
+メッセージ強化サンプルでは、行程導入サンプルで提供される Windows フォームのテスト クライアント アプリケーションを使用します。  
   
  **Message Enrichment サンプルを実行するには**  
   
-1.  GlobalBank.ESB アプリケーションが既に実行されていない場合は、Microsoft BizTalk 管理コンソールを使用して、開始します。  
+1. GlobalBank.ESB アプリケーションが実行されていない場合は、Microsoft の BizTalk 管理コンソールを使用して、開始します。  
   
-2.  Windows エクスプ ローラーでフォルダー \Source\Samples\Itinerary\Source\ESB を開きます。インストールした Itinerary.Test、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]サンプル、および Esb.Itinerary.Test.exe をという名前のアプリケーションを開始します。  
+2. Windows エクスプ ローラーでフォルダー \Source\Samples\Itinerary\Source\ESB を開きます。インストールした Itinerary.Test、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]サンプルをし、Esb.Itinerary.Test.exe という名前のアプリケーションを起動します。  
   
-3.  クリア、**を使用して WCF サービス**クライアント側の日程を利用するようにチェック ボックスをオンします。  
+3. クリア、 **WCF サービスを使用して**クライアント側の旅行プランを利用できるようにチェック ボックスをオンします。  
   
-4.  クリックして、**ロード行程**ボタンをクリックし、\Source\Samples\MessageEnrichment\Itineraries フォルダーにあるサンプルの日程のいずれかを選択します。  
+4. をクリックして、**ロード行程**ボタンをクリックし、\Source\Samples\MessageEnrichment\Itineraries フォルダーにあるサンプルのスケジュールのいずれかを選択します。  
   
-5.  クリックして、 **LoadMessage**ボタンをクリックし、\Source\Samples\MessageEnrichment\Test\ フォルダーから OrderDoc.xml サンプル メッセージを選択します。  
+5. をクリックして、 **LoadMessage**ボタンをクリックし、\Source\Samples\MessageEnrichment\Test\ フォルダーから OrderDoc.xml サンプル メッセージを選択します。  
   
-6.  クリックして、 **SubmitRequest**行程入り口サービスに要求を送信するボタンをクリックします。  
+6. をクリックして、 **SubmitRequest**行程入口サービスに要求を送信するボタンをクリックします。  
   
-7.  参照 C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Test\Filedrop\Out\\%MessageID%.xml 出力メッセージを表示します。  
+7. C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Test\Filedrop\Out 参照\\%MessageID%.xml 出力メッセージを確認します。  
   
- Message Enrichment サンプルのしくみについては、次を参照してください。 [「メッセージ強化サンプルの動作](../esb-toolkit/how-the-message-enrichment-sample-works.md)です。
+   メッセージ強化サンプルのしくみについては、次を参照してください。 [、メッセージ強化サンプルのしくみ](../esb-toolkit/how-the-message-enrichment-sample-works.md)します。

@@ -1,5 +1,5 @@
 ---
-title: LOBWebApplication |Microsoft ドキュメント
+title: LOBWebApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b1f60d5802f61f964919e1340a36d2fd7757b300
-ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
+ms.openlocfilehash: d9120d9078303092740fdbfc27b6932b7849cc6a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34855661"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002107"
 ---
 # <a name="lobwebapplication"></a>LOBWebApplication
 LOBWebApplication ユーティリティは、実際の基幹業務 (LOB) Web アプリケーションをシミュレートして、ASPX ページから取引先にアクションまたは応答メッセージを送信するために使用します。  
@@ -39,17 +39,17 @@ LOBWebApplication ユーティリティは、実際の基幹業務 (LOB) Web ア
   
 #### <a name="to-add-a-virtual-server"></a>仮想サーバーを追加するには  
   
-1.  をクリックして**開始**、 をポイント**シリアルキー**、 をポイント**管理ツール**、クリックして**インターネット インフォメーション サービス (IIS) マネージャー**.  
+1.  クリックして**開始**、 をポイント**シリアルキー**、 をポイント**管理ツール**、順にクリックします**インターネット インフォメーション サービス (IIS) マネージャー**.  
   
-2.  インフォメーション サービス マネージャで、展開**\<コンピューター名\>(ローカル コンピューター)**、展開**Web サイト**、し、右クリックし、 **Default Web Site**.  
+2.  インフォメーション サービス マネージャーで、展開**\<コンピューター名\>(ローカル コンピューター)**、展開**Web サイト**、右クリックし、**既定の Web サイト**.  
   
-3.  をポイント**新規**、クリックして**仮想ディレクトリ**です。  
+3.  をポイント**新規**、 をクリックし、**仮想ディレクトリ**します。  
   
-4.  **仮想ディレクトリの作成ウィザード** ページで、をクリックして**次**など、サイトのエイリアスを入力し、 **LOBWebApplication**です。  
+4.  **仮想ディレクトリの作成ウィザード**] ページで [**次**など、サイトのエイリアスを入力し、 **LOBWebApplication**。  
   
-5.  **Web サイトのコンテンツのディレクトリ**] ページで [**参照**に移動\<*ドライブ*\>\Program Files (x86) \Microsoft BizTalk \<バージョン\>Accelerator for rosettanet \sdk\lobwebapplication をクリックして**OK**、順にクリック **[次へ]** です。  
+5.  **Web サイトのコンテンツ ディレクトリ** ページで **参照**に移動\<*ドライブ*\>\Program Files (x86) \Microsoft BizTalk \<バージョン\>Accelerator for rosettanet \sdk\lobwebapplication、 をクリックして**OK**、順にクリックします**次**します。  
   
-6.  **仮想ディレクトリのアクセス許可**] ページで、[**読み取り**と**スクリプトを実行する**、順にクリック **[次へ]** です。 **[完了]** をクリックします。  
+6.  **仮想ディレクトリのアクセス許可**] ページで、[**読み取り**と**スクリプトを実行する**、順にクリックします**次**。 **[完了]** をクリックします。  
   
 7.  BTARN を構成するために使用するサービス アカウント ユーザー (hostsvc など) を STS_WPG に追加します。  
   
@@ -63,37 +63,37 @@ LOBWebApplication ユーティリティは、実際の基幹業務 (LOB) Web ア
   
 #### <a name="to-build-lobwebapplication"></a>LOBWebApplication を構築するには  
   
-1.  Visual Studio を起動します。  
+1. Visual Studio を起動します。  
   
-2.  **ファイル**、 をポイント**開く**、順にクリック**ソリューションを開く**です。  
+2. **ファイル**、 をポイント**オープン**、 をクリックし、**ソリューションを開く**。  
   
-3.  移動\<*ドライブ*\>\Program Files (x86) \Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\lobwebapplication、選択**LOBWebApplication.sln**、クリックして**開く**です。  
+3. 移動\<*ドライブ*\>\Program Files (x86) \Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\lobwebapplication には、選択**LOBWebApplication.sln**、 をクリックし、**オープン**します。  
   
-    > [!NOTE]
-    >  LOBWebApplication 用の仮想サーバーを追加していない場合、ソリューションは [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] で正常に開きません。  
+   > [!NOTE]
+   >  LOBWebApplication 用の仮想サーバーを追加していない場合、ソリューションは [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] で正常に開きません。  
   
-4.  右クリック**参照**、クリックして**参照の追加**です。  
+4. 右クリック**参照**、 をクリックし、**参照の追加**します。  
   
-5.  **参照の追加**ダイアログ ボックスで、をクリックして**参照**に移動\<*ドライブ*\>: \Program Files (x86) \Microsoft BizTalk \<バージョン\>Accelerator for rosettanet \bin、Microsoft.Solutions.BTARN.ConfigurationManager.dll および Microsoft.Solutions.BTARN.Shared.dll ファイルを選択し、をクリックして**開く**です。  
+5. **参照の追加**ダイアログ ボックスで、をクリックして**参照**に移動\<*ドライブ*\>: \Program Files (x86) \Microsoft BizTalk \<バージョン\>Accelerator for rosettanet \bin が、Microsoft.Solutions.BTARN.ConfigurationManager.dll および Microsoft.Solutions.BTARN.Shared.dll ファイルを選択し、クリックして**オープン**します。  
   
-6.  右クリック**LOBWebApplication**、クリックして**ビルド**です。  
+6. 右クリック**LOBWebApplication**、 をクリックし、**ビルド**します。  
   
 ## <a name="running-lobwebapplication"></a>LOBWebApplication の実行  
   
 #### <a name="to-run-lobwebapplication-and-submit-a-message"></a>LOBWebApplication を実行してメッセージを送信するには  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、順にクリック**Internet Explorer**です。  
+1.  クリックして**開始**、 をポイント**すべてのプログラム**、順にクリックします**Internet Explorer**します。  
   
-2.  Internet Explorer での**アドレス**ボックスに、入力http://localhost/LOBWebApplication、順にクリック**移動**です。  
+2.  Internet Explorer で、**アドレス**ボックスに「 http://localhost/LOBWebApplication、 をクリックし、**移動**します。  
   
-3.  **Submit Message**  ダイアログ ボックスで、ホーム組織、取引先組織、PIP コード、PIP バージョン、PIP インスタンス ID、およびメッセージ カテゴリを入力します。  
+3.  **Submit Message**  ダイアログ ボックスに、ホーム組織、取引先組織、PIP コード、PIP バージョン、PIP インスタンス ID、およびメッセージ カテゴリを入力します。  
   
 4.  必要に応じてサービス コンテンツを変更します。  
   
 5.  **[送信]** をクリックします。  
   
 ## <a name="remarks"></a>コメント  
- LOBWebApplication ユーティリティは、指定した PIP からメッセージのインスタンスを生成し、ASPX ページに生成されたメッセージのインスタンスからサービスのコンテンツを入力します。 この処理を実行する際、LOBWebApplication ユーティリティは、書式設定されたメッセージ インスタンスを PIP から直接生成するのと同じ技法を使用します。 詳細については、次を参照してください。 [PIP からの整形式メッセージ インスタンスを作成する](../../adapters-and-accelerators/accelerator-rosettanet/creating-a-well-formed-message-instance-from-a-pip.md)です。 ASPX ページのサービス コンテンツのフィールドに実際のデータを入力すると、実際のメッセージ インスタンスを生成できます。  
+ LOBWebApplication ユーティリティは、指定した PIP からメッセージのインスタンスを生成し、ASPX ページに生成されたメッセージのインスタンスからサービスのコンテンツを入力します。 この処理を実行する際、LOBWebApplication ユーティリティは、書式設定されたメッセージ インスタンスを PIP から直接生成するのと同じ技法を使用します。 詳細については、次を参照してください。 [PIP からの整形式メッセージ インスタンスを作成する](../../adapters-and-accelerators/accelerator-rosettanet/creating-a-well-formed-message-instance-from-a-pip.md)します。 ASPX ページのサービス コンテンツのフィールドに実際のデータを入力すると、実際のメッセージ インスタンスを生成できます。  
   
  LOBWebApplication ユーティリティは、メッセージを送信する基幹業務 (LOB) Web アプリケーションをシミュレートするために使用します。 LOBApplication ユーティリティは、メッセージを送信する基幹業務 (LOB) デスクトップ アプリケーションをシミュレートするために使用します。  
   

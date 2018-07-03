@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11039 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 11039 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 985f78305ca3d76ce713ec0e71bb0ffbf767480f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9badc899afddd8ab84ecd52532096453e4579316
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277130"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37024072"
 ---
 # <a name="single-sign-on-event-11039"></a>シングル サインオン: イベント 11039
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|11039|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_ERROR_NO_LOCAL_SERVICE|  
-|メッセージ テキスト|SSO サービスは Local Service アカウントでは実行できません。%r|  
+|                 |                                                               |
+|-----------------|---------------------------------------------------------------|
+|  製品名   |                   エンタープライズ シングル サインオン                   |
+| 製品バージョン |  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]   |
+|    イベント ID     |                             11039                             |
+|  イベント ソース   |                            ENTSSO                             |
+|    コンポーネント    |                              なし                              |
+|  シンボル名  |                  SSO_ERROR_NO_LOCAL_SERVICE                   |
+|  メッセージ テキスト   | SSO サービスは Local Service アカウントでは実行できません。%r |
   
 ## <a name="explanation"></a>説明  
  SSO サービスは Local Service アカウントでは実行できません。%r  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 詳細については、次を参照してください。[高可用性 SSO インストール オプション](../core/high-availability-sso-installation-options.md)です。
+ 詳細については、次を参照してください。[高可用性 SSO インストール オプション](../core/high-availability-sso-installation-options.md)します。

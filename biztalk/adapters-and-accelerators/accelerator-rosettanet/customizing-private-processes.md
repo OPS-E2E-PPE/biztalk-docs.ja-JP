@@ -1,5 +1,5 @@
 ---
-title: プライベート プロセスのカスタマイズ |Microsoft ドキュメント
+title: プライベート プロセスのカスタマイズ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,20 +16,20 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 767c04a262c32305ae8b26162661c7869b58e970
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa1437d1dbe154f553323077b1c29127c58abdf4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206714"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37009531"
 ---
 # <a name="customizing-private-processes"></a>プライベート プロセスのカスタマイズ
-このセクションでは、service content を処理するプライベート プロセス オーケストレーションをカスタマイズする方法について説明します。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]プライベート プロセスとして組織の内部には、ビジネス プロセスを実装します。 これらのプロセスは、サービス コンテンツのメッセージ部分を処理するオーケストレーションです。 詳細については、次を参照してください。[プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)です。  
+このセクションでは、サービスのコンテンツを処理するプライベート プロセス オーケストレーションをカスタマイズする方法について説明します。 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]プライベート プロセスとして、組織の内部ビジネス プロセスを実装します。 これらのプロセスは、サービス コンテンツのメッセージ部分を処理するオーケストレーションです。 詳細については、次を参照してください。[プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [特定の PIP で使用するプライベート プロセスのカスタマイズ](../../adapters-and-accelerators/accelerator-rosettanet/customizing-a-private-process-to-work-with-a-specific-pip.md)  
+-   [特定の PIP に使用するプライベート プロセスのカスタマイズ](../../adapters-and-accelerators/accelerator-rosettanet/customizing-a-private-process-to-work-with-a-specific-pip.md)  
   
--   [プライベート プロセスで応答する要求のマッピング](../../adapters-and-accelerators/accelerator-rosettanet/mapping-a-request-to-a-response-in-a-private-process.md)  
+-   [プライベート プロセスで要求を応答にマップする方法](../../adapters-and-accelerators/accelerator-rosettanet/mapping-a-request-to-a-response-in-a-private-process.md)  
   
 -   [プライベート プロセス オーケストレーションのビジネス ルールの定義](../../adapters-and-accelerators/accelerator-rosettanet/defining-a-business-rule-for-a-private-process-orchestration.md)

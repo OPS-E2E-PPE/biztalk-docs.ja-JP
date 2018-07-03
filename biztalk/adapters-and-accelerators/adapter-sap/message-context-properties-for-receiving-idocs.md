@@ -1,5 +1,5 @@
 ---
-title: Idoc を受信するためのメッセージ コンテキスト プロパティ |Microsoft ドキュメント
+title: Idoc を受信するためのメッセージ コンテキスト プロパティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,95 +14,95 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca289e37cac15972e75c69d7ad20928b72911963
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1f99c403648ec2fae7fd9ee93f349f7c1fe69434
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22217362"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36999803"
 ---
 # <a name="message-context-properties-for-receiving-idocs"></a>Idoc を受信するためのメッセージ コンテキスト プロパティ
-Microsoft を使用して、IDOC を受信するため[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]次のメッセージ コンテキスト プロパティをサポートしています。  
+Microsoft を使用して IDOC を受信するため[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]次のメッセージ コンテキスト プロパティがサポートされます。  
   
  **IDOC 制御レコードのプロパティです。**  
   
--   **TABNAM** -テーブルの構造体の名前  
+- **TABNAM** -テーブルの構造体の名前  
   
--   **MANDT** -クライアント  
+- **MANDT** -クライアント  
   
--   **DOCNUM** -IDOC 番号  
+- **DOCNUM** -IDOC 番号  
   
--   **DOCREL** -IDOC に対する SAP リリース  
+- **DOCREL** -IDOC を SAP リリース  
   
--   **ステータス**の IDOC の状態  
+- **ステータス**の IDOC の状態  
   
--   **直接**-の方向  
+- **直接**-の方向  
   
--   **OUTMOD** -出力モード  
+- **OUTMOD** -出力モード  
   
--   **表現**受信処理にオーバーライドする -  
+- **表現**- 受信処理にオーバーライドします。  
   
--   **テスト**-フラグのテスト  
+- **テスト**-フラグをテストします。  
   
--   **IDOCTYP** -基本型の名前  
+- **IDOCTYP** -基本的な型の名前  
   
--   **CIMTYP** -拡張機能 (顧客により定義)  
+- **CIMTYP** -拡張機能 (顧客によって定義される)  
   
--   **MESTYP** -メッセージの種類  
+- **MESTYP** -メッセージの種類  
   
--   **MESCOD** -メッセージ コード  
+- **MESCOD** -メッセージ コード  
   
--   **MESFCT** -メッセージ関数  
+- **MESFCT** -メッセージの関数  
   
--   **STD** -EDI 標準、フラグ  
+- **STD** -EDI 標準、フラグ  
   
--   **STDVRS** -EDI のバージョンとリリースに標準的な  
+- **STDVRS** -EDI、標準のバージョンとリリース  
   
--   **STDMES** -EDI メッセージの種類  
+- **STDMES** -EDI メッセージの種類  
   
--   **SNDPOR** -送信者のポート (SAP システム、サブシステムの外部)  
+- **SNDPOR** -送信者のポート (SAP システムの外部のサブシステム)  
   
--   **SNDPRT** -パートナーの送信者の種類  
+- **SNDPRT** -パートナーの送信者の種類  
   
--   **SNDPFC** -パートナーの送信元の関数  
+- **SNDPFC** -パートナーの送信元の関数  
   
--   **SNDPRN** -パートナーの送信者の数  
+- **SNDPRN** -パートナーの送信側の数  
   
--   **SNDSAD** -センダのアドレス (SADR)  
+- **SNDSAD** -センダのアドレス (SADR)  
   
--   **SNDLAD** -送信者の論理アドレス  
+- **SNDLAD** -送信者の論理アドレス  
   
--   **RCVPOR** -受信ポート  
+- **RCVPOR** -受信ポート  
   
--   **RCVPRT** -受信者のパートナーの種類  
+- **RCVPRT** -受信者のパートナーの種類  
   
--   **RCVPFC** -パートナーの受信者の関数  
+- **RCVPFC** -パートナーの受信者の関数  
   
--   **RCVPRN** -パートナーの受信者の数  
+- **RCVPRN** -パートナーの受信者の数  
   
--   **RCVSAD** -受信者のアドレス (SADR)  
+- **RCVSAD** -受信者のアドレス (SADR)  
   
--   **RCVLAD** -受信者の論理アドレス  
+- **RCVLAD** -受信者の論理アドレス  
   
--   **CREDAT**上に作成された -  
+- **CREDAT** - の作成  
   
--   **CRETIM** -作成された時刻  
+- **CRETIM** -作成された時刻  
   
--   **REFINT** -転送のファイル (EDI インターチェンジ)  
+- **REFINT** -転送のファイル (EDI インターチェンジ)  
   
--   **REFGRP** -メッセージのグループ (EDI メッセージのグループ)  
+- **REFGRP** -メッセージのグループ (EDI メッセージのグループ)  
   
--   **REFMES** -メッセージ (EDI メッセージ)  
+- **REFMES** -メッセージ (EDI メッセージ)  
   
--   **ARCKEY** - 外部メッセージのアーカイブのキー  
+- **ARCKEY** - 外部メッセージのアーカイブのキー  
   
--   **シリアル**のシリアル化  
+- **シリアル**-シリアル化  
   
--   **DOCTYP** -IDOC タイプ (この EDI_DC で使用できるだけです。 コンテキスト プロパティ内に存在する必要がありますが、2 の Idoc のバージョンののみ昇格させる必要があります)  
+- **DOCTYP**の IDOC の種類 (この EDI_DC で使用できるだけです。 コンテキスト プロパティに存在する必要がありますが、2 の Idoc のバージョンののみ昇格する必要があります)  
   
- **TID** – 着信 TRFC の呼び出しの SAP システムによって送信された TID を表します。  
+  **TID** – 受信 TRFC 呼び出しの SAP システムから送信された TID を表します。  
   
- **GUID** : GUID を表します[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]内部的に使用します。 これは、SAP システムから受け取った TID と一対一のマッピングです。  
+  **GUID** : GUID を表します[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]は内部的に使用します。 これは、SAP システムから受け取った TID で一対一のマッピングがあります。  
   
 ## <a name="see-also"></a>参照  
- [メッセージと BizTalk Adapter 用 mySAP Business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)
+ [メッセージと BizTalk adapter for mySAP Business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)

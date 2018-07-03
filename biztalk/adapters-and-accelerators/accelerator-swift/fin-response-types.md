@@ -1,5 +1,5 @@
 ---
-title: FIN 応答タイプ |Microsoft ドキュメント
+title: FIN 応答の種類 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,42 +21,43 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54c890a5e0f51207cce1897b10095a87ae438793
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 382e0e628d01903a6274dd3f0321379f71fc7a15
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22208066"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995403"
 ---
 # <a name="fin-response-types"></a>FIN 応答の種類
-FIN 対応調整 (FRR) は、カテゴリ、0 ~ 9 SWIFT FIN メッセージに応答を調整します。 SWIFT FIN アプリケーションは常に、少なくとも 1 つと、複数の可能性のあるいずれかの確認 (ACK) の送信、これらの FIN メッセージに応答または否定受信確認 (NAK)。 次の表に、メッセージの送信および受信の種類を (応答) FRR によって処理されるメッセージ。  
-  
-|送信/<br /><br /> 受信|メッセージ型|メッセージの状態|  
-|----------------------------|------------------|--------------------|  
-|送信|すべてのカテゴリ、0 ~ 9 SWIFT FIN メッセージ型|なし|  
-|受信|MQ 系列パン/NAN (MQ Series トランスポート レベル ACK/NAK)|MQSeries トランスポートの受信確認|  
-||MT010 (配信不能警告)|SWIFT が正常に送信元は、取引先、メッセージ、パートナーがメッセージを受信することを示す値がありません。 場合[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]は複数の配信不能の警告 (NDW) メッセージを受信ループを実行し、次の予期されるメッセージを待ちます。|  
-||MT011 (配信通知)|SWIFT が正常に送信元は、パートナーにメッセージの送受信、パートナーがメッセージを受信することを示す値です。|  
-||MT012 (送信者 Notification)|SWIFT から元のメッセージを正常に受信された[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]です。|  
-||MT015 (DNK、または遅延 NAK)|SWIFT が、パートナーに、元のメッセージを正常に送信していないがします。|  
-||MT019 (通知を中止)|SWIFT のメッセージ転送が中止されました。|  
-||MTS21_FIN_ACKNAK (受信確認メッセージまたは否定受信確認 (ACK/NAK)、LT によって送信された FIN メッセージの)|SWIFT 成功と失敗からのメッセージを受信した[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]です。 このメッセージは、このような場合の両方について説明します。 ACK と NAK であるかは、メッセージ (ACK 用の「0」) と NAK の「1」の 451 フィールドの値によって決まります。 これに配信された最初の応答になります[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]です。|  
-  
-## <a name="deployment-of-schemas-for-frr"></a>FRR 用にスキーマの展開  
- [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]セットアップでは、(上記の表に示すように) として FrrSchemas.dll でシステム レベルのすべてのメッセージのスキーマが配置されます。 FRR オーケストレーションでは、これらのスキーマを展開する必要があります。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]セットアップ FrrSchemas.dll でこれらのスキーマを配置するには、する必要はありませんしてする必要がある別のプロジェクトでこれらのスキーマを展開します。 そうと、エラーが生成されます。  
-  
+FIN 応答の調整 (FRR) は、0 ~ 9 のカテゴリ SWIFT FIN メッセージに応答を調整します。 少なくとも 1 つと、場合によっては複数のいずれかの確認 (ACK) を送信する SWIFT FIN アプリケーションは常に FIN メッセージへの応答、否定受信確認 (NAK)。 次の表に、送信および受信のメッセージ型 (応答) FRR によって処理されるメッセージ。  
+
+
+| 送信/<br /><br /> 受信 |                                             メッセージ型                                              |                                                                                                                                                                                                                             メッセージの状態                                                                                                                                                                                                                              |
+|-------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|           送信            |                              すべてのカテゴリ 0 ~ 9 SWIFT FIN メッセージの種類                              |                                                                                                                                                                                                                                   なし                                                                                                                                                                                                                                   |
+|            受信            |                         MQ Series パン/NAN (MQ Series トランス ポート レベル ACK/NAK)                         |                                                                                                                                                                                                                    MQSeries トランスポートの受信確認                                                                                                                                                                                                                    |
+|                               |                                     MT010 (警告の配信不能)                                      |                                                                     正常に元に送信する SWIFT では、パートナーにメッセージしますが、パートナーがメッセージを受信することを示す値がありません。 場合[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]は複数の警告 (NDW) の配信不能メッセージを受信ループを実行し、[次へ] の予期されるメッセージを待ちます。                                                                     |
+|                               |                                     MT011 (配信通知)                                     |                                                                                                                                                                     SWIFT 元が正常に送信は、パートナーにメッセージの送受信、パートナーがメッセージを受信することを示す値です。                                                                                                                                                                      |
+|                               |                                      MT012 (送信者の通知)                                      |                                                                                                                                                            SWIFT からの元のメッセージを正常に受信[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]します。                                                                                                                                                             |
+|                               |                                      MT015 (DNK、または遅延 NAK)                                      |                                                                                                                                                                                                  SWIFT が、パートナーに、元のメッセージを正常に送信していませんが。                                                                                                                                                                                                   |
+|                               |                                      MT019 (通知を中止)                                       |                                                                                                                                                                                                                 SWIFT でメッセージの転送が中止されました。                                                                                                                                                                                                                  |
+|                               | MTS21_FIN_ACKNAK (受信確認または否定応答 (ACK/NAK)、LT によって送信された FIN メッセージの) | SWIFT からのメッセージを受信成功したか、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]します。 このメッセージは、このような場合の両方について説明します。 ACK または NAK は、メッセージ (確認用の「0」) と NAK の「1」の 451 フィールドの値によって決まります。 これは、最初の応答への提供となります[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]します。 |
+
+## <a name="deployment-of-schemas-for-frr"></a>FRR のスキーマの配置  
+ [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] セットアップでは、(上記の表に示した) と、システム レベルのすべてのメッセージの FrrSchemas.dll 内のスキーマが配置されます。 FRR オーケストレーションでは、これらのスキーマを展開する必要があります。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]セットアップ FrrSchemas.dll でこれらのスキーマでは、そうでない必要があり、する必要はありませんこれらのスキーマを別のプロジェクトをデプロイします。 そうと、エラーが生成されます。  
+
  FRRSchemas.dll には、次のスキーマが含まれています。  
-  
+
 -   TransportAck  
-  
+
 -   MT010  
-  
+
 -   MT011  
-  
+
 -   MT012  
-  
+
 -   MT015  
-  
+
 -   MT019  
-  
+
 -   MTS21_FIN_ACKNAK

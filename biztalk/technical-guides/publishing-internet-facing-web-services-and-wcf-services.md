@@ -1,5 +1,5 @@
 ---
-title: インターネットに接続された Web サービスと WCF サービスを発行 |Microsoft ドキュメント
+title: インターネットに接続する Web サービスと WCF サービスの発行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,42 +12,42 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e466c4fc2a5f83f5a8445601235b53f44404a912
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 32a0478e43f87dfbf29f736fde062c67fb4a94cc
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009076"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37009203"
 ---
-# <a name="publishing-internet-facing-web-services-and-wcf-services"></a>インターネットに接続された Web サービスと WCF サービスの発行
-複数の方法を使用するには発行のため[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web サービスと WCF サービスをインターネット。  
+# <a name="publishing-internet-facing-web-services-and-wcf-services"></a>インターネットに接続する Web サービスと WCF サービスの発行
+複数のアプローチを使用して、パブリッシング用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web サービスと WCF サービスをインターネット。  
   
--   リバース プロキシ ルールを使用して、境界ネットワーク (DMZ、非武装地帯およびスクリーン サブネットとも呼ばれます)。  
+- リバース プロキシ ルールを使用して、境界ネットワーク (DMZ、非武装地帯、およびスクリーン サブネットとも呼ばれます)。  
   
--   実行するコンピューターに配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]境界ネットワークのドメインに、Web サービスまたは WCF サービスを発行します。  
+- 実行しているコンピュータ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]境界ネットワークのドメインに Web サービスまたは WCF サービスを発行します。  
   
--   Azure AppFabric Service Bus リレー エンドポイントとして、Web サービスまたは WCF サービスを公開するのにには、BizTalk Server クラウドの有効化の機能を使用します。  
+- Azure AppFabric Service Bus のリレー エンドポイントとして、Web サービスまたは WCF サービスを公開するのに BizTalk Server のクラウドの有効化の機能を使用します。  
   
 ## <a name="using-a-reverse-proxy"></a>リバース プロキシを使用します。  
- 発行のための従来のアプローチがされてこの[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web サービスと WCF サービスです。 リバース プロキシ ルールを使用して、境界ネットワーク内と、境界ネットワークにある BizTalk サーバーが存在する必要があります。 リバース プロキシ ルールだけで、HTTP および SOAP に要求を転送、境界ネットワークから実行しているコンピューター[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]イントラネット ドメインにします。  
+ これは、発行のため、従来のアプローチをされた[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web サービスと WCF サービス。 境界ネットワークでリバース プロキシ ルールを使用して、BizTalk サーバーを境界ネットワークにある必要があります。 リバース プロキシ ルール単に要求を転送、HTTP および SOAP、境界ネットワークから実行するコンピューターに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]イントラネット ドメインにします。  
   
- 詳細については、リバース プロキシを使用して、BizTalk Server ヘルプの次のトピックを参照してください。  
+ 詳細については、リバース プロキシを使用して、BizTalk Server ヘルプで、次のトピックを参照してください。  
   
--   ["サンプル アーキテクチャ: HTTP アダプタと SOAP アダプタ"](http://go.microsoft.com/fwlink/?LinkId=153339) (http://go.microsoft.com/fwlink/?LinkId=153339)。  
+-   ["サンプル アーキテクチャ: HTTP アダプターと SOAP アダプター"](http://go.microsoft.com/fwlink/?LinkId=153339) (http://go.microsoft.com/fwlink/?LinkId=153339)します。  
   
--   ["サンプル TMA: HTTP アダプタと SOAP アダプタ"](http://go.microsoft.com/fwlink/?LinkId=153340) (http://go.microsoft.com/fwlink/?LinkId=153340)。  
+-   ["サンプル TMA: HTTP アダプターと SOAP アダプター"](http://go.microsoft.com/fwlink/?LinkId=153340) (http://go.microsoft.com/fwlink/?LinkId=153340)します。  
   
--   ["Large Distributed Architecture"](http://go.microsoft.com/fwlink/?LinkId=153341) (http://go.microsoft.com/fwlink/?LinkId=153341)。  
+-   ["大規模な分散アーキテクチャ"](http://go.microsoft.com/fwlink/?LinkId=153341) (http://go.microsoft.com/fwlink/?LinkId=153341)します。  
   
-## <a name="using-computers-running-biztalk-server-in-the-perimeter-network"></a>境界ネットワークに BizTalk Server を実行しているコンピューターを使用します。  
- これは発行のため推奨できるアプローチではありません[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web サービスまたはインターネットへの WCF サービスを実行しているコンピューターが必要とするため[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]境界ネットワーク内に配置します。 ただし、リバース プロキシを境界ネットワークで使用できない場合は、この方法を使用できます。  
+## <a name="using-computers-running-biztalk-server-in-the-perimeter-network"></a>境界ネットワーク内の BizTalk Server を実行しているコンピューターを使用します。  
+ これは発行に対して推奨されるアプローチではありません[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]サービスまたはインターネットへの WCF サービスを実行しているコンピューターが必要とするため Web[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]境界ネットワーク内に配置します。 ただし、リバース プロキシが境界ネットワークで利用できない場合は、このアプローチを使用できます。  
   
- この方法には、イントラネット ドメインと一方向の信頼関係に参加する、境界ネットワークのドメインが必要があります (ただし、イントラネット ドメインは、境界ネットワークのドメインを信頼しません)。 IIS アプリケーション プールのホストは「BizTalk 分離ホスト ユーザー」のドメイン グループに属するイントラネット ドメイン アカウントでは、Web サービスや境界ネットワークのドメインでの WCF サービスを実行する必要があります。 こうと、アプリケーション プールにメッセージを公開する必要な権限、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックス データベースです。  
+ このアプローチには、イントラネット ドメインと一方向の信頼関係に参加する、境界ネットワークのドメインが必要があります (ただし、イントラネット ドメインでは、境界ネットワークのドメインを信頼しません)。 IIS アプリケーション ホストとなるプール、Web サービスまたは境界ネットワークのドメインでの WCF サービスは、「BizTalk 分離ホスト ユーザー」ドメインのグループ内にあるイントラネット ドメイン アカウントで実行する必要があります。 こうと、アプリケーション プールにメッセージを発行する必要な権限、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックス データベースです。  
   
- これに合わせてファイアウォールで特定のポートを開く必要があります。 必要なポートの詳細については、次を参照してください。 ["ポート、受信と送信サーバーを"](http://go.microsoft.com/fwlink/?LinkId=153342) (http://go.microsoft.com/fwlink/?LinkId=153342) で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ドキュメント。  
+ これに合わせてファイアウォールでは、特定のポートを開く必要があります。 必要なポートの詳細については、次を参照してください。 ["ポートを、受信と送信サーバー"](http://go.microsoft.com/fwlink/?LinkId=153342) (<http://go.microsoft.com/fwlink/?LinkId=153342>) で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ドキュメント。  
   
-## <a name="exposing-biztalk-applications-on-the-cloud-using-appfabric-connect-for-services"></a>AppFabric Connect サービスを使用するクラウド上の BizTalk アプリケーションを公開します。  
- 記事を参照して[AppFabric Connect サービスを使用するクラウドに BizTalk アプリケーションを公開する](http://go.microsoft.com/fwlink/?LinkID=204700)(http://go.microsoft.com/fwlink/?LinkID=204700) の詳細については、クラウドでの WCF サービスとしての BizTalk アプリケーションを公開します。  
+## <a name="exposing-biztalk-applications-on-the-cloud-using-appfabric-connect-for-services"></a>サービスの AppFabric Connect を使用して、クラウド上の BizTalk アプリケーションを公開します。  
+ 記事をご覧ください[サービスの AppFabric Connect を使用して、クラウドでの BizTalk アプリケーションの公開](http://go.microsoft.com/fwlink/?LinkID=204700)(http://go.microsoft.com/fwlink/?LinkID=204700)の詳細については、クラウドでの WCF サービスとしての BizTalk アプリケーションを公開します。  
   
 ## <a name="see-also"></a>参照  
  [Web Services1 を公開するための計画](../technical-guides/planning-for-publishing-web-services1.md)

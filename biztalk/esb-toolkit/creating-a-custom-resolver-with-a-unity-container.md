@@ -1,5 +1,5 @@
 ---
-title: Unity コンテナーとカスタム競合回避モジュールを作成 |Microsoft ドキュメント
+title: Unity コンテナーでのカスタム競合回避モジュールの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef4a96542bcf2a7deae4911c6ee81fa846d0766f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b5280108bddeeacd78b9e8f6df0fa908329af8dd
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975616"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012675"
 ---
-# <a name="creating-a-custom-resolver-with-a-unity-container"></a>Unity コンテナーとカスタム競合回避モジュールを作成します。
-使用してカスタム競合回避モジュールを作成することができます、 [Unity Application Block](http://go.microsoft.com/fwlink/?LinkId=188286) (Unity) ([http://go.microsoft.com/fwlink/?LinkId=188286](http://go.microsoft.com/fwlink/?LinkId=188286)) 解決ロジックとメタデータのソースの実行時の依存関係挿入します。
+# <a name="creating-a-custom-resolver-with-a-unity-container"></a>Unity コンテナーでのカスタム競合回避モジュールを作成します。
+使用してカスタム競合回避モジュールを作成することができます、 [Unity Application Block](http://go.microsoft.com/fwlink/?LinkId=188286) (Unity) ([http://go.microsoft.com/fwlink/?LinkId=188286](http://go.microsoft.com/fwlink/?LinkId=188286)) の解決ロジックとメタデータのソースの実行時の依存関係の挿入します。
   
- **ファクト プロバイダー**  
+ **ファクトのプロバイダー**  
   
- ファクトのプロバイダーを実装するクラスのインスタンスである、 **IFactProvider**インターフェイスです。 このインターフェイスは、という名前のメソッドの 3 つの異なるオーバー ロードを公開**RegisterFact**です。 このメソッドは、メッセージで、競合回避モジュールの構成、および場合によっては、パイプライン コンテキストを受け取るし、オブジェクトを返します。 このオブジェクトが何らかの方法で、入力から抽出された情報、何らかの形式の計算がある可能性がありますか外部ソースから参照可能性があります。 ファクト プロバイダーによって返される各オブジェクトをファクトとして参照できますされ、通常、ファクト トランスレーターが後で使用できる解決コンテナーによってリストに追加されます。  
+ ファクトのプロバイダーを実装するクラスのインスタンスである、 **IFactProvider**インターフェイス。 このインターフェイスは、という名前のメソッドの 3 つの異なるオーバー ロードを公開**RegisterFact**します。 このメソッドは、メッセージの競合回避モジュールの構成、および場合によっては、パイプラインのコンテキストを受け取るし、オブジェクトを返します。 このオブジェクトは何らかの方法で、入力から抽出された情報には、何らかの形式の計算がある可能性があります。 またはいくつかの外部ソースから見えるかもしれません。 ファクト プロバイダーによって返される各オブジェクトをファクトとして参照でき、通常、ファクトの翻訳者によって後で使用できる解決コンテナーによって、一覧に追加されます。  
   
- Unity の競合回避モジュールは、0 個以上のファクト プロバイダーを追加したりできる 1 つの構成の変更では、いつでも削除でがあります。  
+ Unity の競合回避モジュールを追加または 1 つの構成変更をいつでも削除できる 0 個以上のファクトのプロバイダーがあります。  
   
- 次のコードは、ファクトのプロバイダーに含まれているロジックの例です。 このコードは、ESB の ItineraryStaticFactProvider.cs ファイルにも見つかりません。Resolver.Itinerary.Facts プロジェクトです。 行程静的競合回避モジュールに競合回避モジュールの接続文字列から名前と、日程のバージョンを収集するコンポーネントです。  
+ 次のコードは、ファクトのプロバイダーに含まれるロジックの例です。 このコードは、ESB の ItineraryStaticFactProvider.cs ファイルでもあります。Resolver.Itinerary.Facts プロジェクトです。 競合回避モジュールの接続文字列から名前と、スケジュールのバージョンを収集し、日程静的リゾルバーでのコンポーネントになります。  
   
 ```csharp  
 public object RegisterFact(IBaseMessage message, IPipelineContext pipelineContext, Dictionary\<string, string\> resolverContents)  
@@ -53,13 +53,13 @@ private static object GetItineraryFactFromResolver(Dictionary\<string, string\> 
 }  
 ```  
   
- **翻訳者のファクト**  
+ **ファクトの翻訳者**  
   
- ファクト翻訳者を実装するクラスのインスタンスである、 **IFactTranslator**インターフェイスです。 このインターフェイスはという単一のメソッドを公開**TranslateFact**です。 このメソッドはファクトとファクト トランスレータを使用して競合回避モジュールによって後で返される競合回避モジュールのディクショナリの一覧を格納しているオブジェクト配列で使用します。 ファクト トランスレーターは、有意義な方法でファクト プロバイダーによって提供されるファクトの処理との競合回避モジュールのディクショナリを作成します。  
+ ファクトの翻訳者を実装するクラスのインスタンスである、 **IFactTranslator**インターフェイス。 このインターフェイスは、という名前の 1 つのメソッドを公開**TranslateFact**します。 このメソッドは、一連のファクトとファクト translator を使用して競合回避モジュールによって後で返される競合回避モジュール ディクショナリを格納しているオブジェクト配列で受け取ります。 ファクトのトランスレーターは、わかりやすい方法でファクト プロバイダーによって提供されるファクトの処理と、競合回避モジュール ディクショナリを担当します。  
   
- Unity の競合回避モジュールは、0 個以上のファクト翻訳を追加したりできる 1 つの構成の変更では、いつでも削除でがあります。  
+ Unity の競合回避モジュールには、0 個以上のファクト翻訳を追加または 1 つの構成変更をいつでも削除できる可能性があります。  
   
- 次のコードは、ファクト変換プログラムに含まれているロジックの例です。 このコードは、ESB の ItineraryStaticFactTranslator.cs ファイルにも見つかりません。Resolver.Itinerary.Facts プロジェクトです。 行程静的競合回避モジュールに名前や、必要に応じて、バージョンによって、日程の日程 XML を収集するためのデータベース クエリを実行するコンポーネントです。  
+ 次のコードに含まれるファクト translator ロジックの例に示します。 このコードは、ESB の ItineraryStaticFactTranslator.cs ファイルでもあります。Resolver.Itinerary.Facts プロジェクトです。 名前と、必要に応じて、バージョンによって、日程の旅行プラン XML を収集するために、データベース クエリを実行するスケジュール静的競合回避モジュール内のコンポーネントになります。  
   
 ```csharp  
 public void TranslateFact(object[] facts, Dictionary\<string, string\> factDictionary)  
@@ -117,9 +117,9 @@ public void TranslateFact(object[] facts, Dictionary\<string, string\> factDicti
   
  **コンテナーを解決するには**  
   
- 実装するクラスが、解決コンテナーには、 **IResolveContainer**インターフェイスです。 通常も実装、 **IResolveProvider**インターフェイスです。 **IResolveContainer**インターフェイスという単一のメソッドを公開する**初期化**内を取得、 **IUnityContainer**です。 このメソッドに渡されたコンテナーで、すべての依存関係が含まれます (クラスのインスタンスは、 **IFactProvider**と**IFactTranslator**、および必要なその他のすべての種類) に必要なその処理を完了する競合回避モジュール。  
+ 解決するコンテナーを実装するクラスとは、 **IResolveContainer**インターフェイス。 実装して、通常、 **IResolveProvider**インターフェイス。 **IResolveContainer**インターフェイスという単一のメソッドを公開する**初期化**内を取得、 **IUnityContainer**します。 このメソッドに渡されるコンテナーには、依存関係がすべて含まれます (クラスのインスタンスは、 **IFactProvider**と**IFactTranslator**、および必要なその他のすべての種類) に必要なその処理の完了に競合回避モジュール。  
   
- 次のコードの実装の例は、 **IResolveContainer**インターフェイスです。 このコードは、ESB の StaticItineraryResolveContainer.cs ファイルにも見つかりません。Resolver.Itinerary プロジェクトです。  
+ 次のコードの実装の例は、 **IResolveContainer**インターフェイス。 このコードは、ESB の StaticItineraryResolveContainer.cs ファイルでもあります。Resolver.Itinerary プロジェクトです。  
   
 ```csharp  
 #region IResolveContainer Members  
@@ -147,9 +147,9 @@ public void Initialize(IUnityContainer container)
 #endregion  
 ```  
   
- 実装では、解決のコンテナーで、**解決**メソッドを**IResolveProvider**すべてのファクトのプロバイダーと、Unity にファクト トランスレーターを反復処理する必要があるインターフェイスそれぞれの処理を実行するを許可するコンテナーです。  
+ 実装では、解決のコンテナーで、**解決**からメソッド、 **IResolveProvider**すべてのファクトのプロバイダーと、Unity でのファクトの翻訳者を反復処理する必要があるインターフェイスそれぞれの処理を実行するを許可するコンテナーです。  
   
- 次のコードは、解決のコンテナーに含まれているロジックの例です。 このコードは、ESB の StaticItineraryResolveContainer.cs ファイルにも見つかりません。Resolver.Itinerary プロジェクトです。  
+ 次のコードは、解決のコンテナーに含まれるロジックの例です。 このコードは、ESB の StaticItineraryResolveContainer.cs ファイルでもあります。Resolver.Itinerary プロジェクトです。  
   
 ```csharp  
 public Dictionary\<string, string\> Resolve(ResolverInfo resolverInfo,  
@@ -206,17 +206,17 @@ private Dictionary\<string, string\> ResolveStatic(string config, string resolve
 }  
 ```  
   
- **カスタム Unity 競合回避モジュールを構成します。**  
+ **Unity のカスタム競合回避モジュールを構成します。**  
   
- カスタム Unity 競合回避モジュールを構成するには、同じ構成手順を適用としてカスタム競合回避モジュール; を作成するときにただし、いくつか追加の構成は、競合回避モジュールを構成するコンポーネントを正しく登録に含める必要があります。  
+ カスタム Unity 競合回避モジュールを構成するには、同じの構成手順として適用カスタム競合回避モジュール; を作成するときにただし、競合回避モジュールを構成するコンポーネントを正しく登録するために含める必要があるいくつか追加の構成があります。  
   
- 最初に、競合回避モジュール宣言の下、Esb.config ファイル、 **resolverConfig**ノードは、次の 2 つのプロパティを追加する必要があります。  
+ 最初に、競合回避モジュールの宣言の下の Esb.config ファイルを**resolverConfig**プロパティは、次の 2 つのノードを追加する必要があります。  
   
--   **unitySectionName**です。 このプロパティには、Unity アプリケーション ブロック; の構成を含む構成ファイルで構成セクションの名前が含まれています。このプロパティの値は、既定では、 **esb.resolver**です。  
+- **unitySectionName**します。 このプロパティには、Unity アプリケーション ブロックの構成を含む構成ファイルで構成セクションの名前が含まれていますこのプロパティの値は、既定では、 **esb.resolver**します。  
   
--   **unityContainerName**です。 このプロパティには、Unity に固有の構成、カスタム競合回避モジュールで定義されている Unity コンテナーの名前が含まれています。  
+- **unityContainerName**します。 このプロパティには、カスタム競合回避モジュールに固有の Unity の構成で定義されている Unity コンテナーの名前が含まれています。  
   
- 次の XML に必要な構成の例は、**リゾルバー**ノード。  
+  次の XML で必要な構成の例に示します、**リゾルバー**ノード。  
   
 ```xml  
 <resolver name="ITINERARY-STATIC" type="Microsoft.Practices.ESB.Resolver.Unity.ResolveProvider, Microsoft.Practices.ESB.Resolver.Unity, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c62dd63c784d6e22">  
@@ -227,7 +227,7 @@ private Dictionary\<string, string\> ResolveStatic(string config, string resolve
 </resolver>  
 ```  
   
- 次の XML は、必要な構成の例、 **esb.resolver**ノード。  
+ 次の XML の下に必要な構成の例に示します、 **esb.resolver**ノード。  
   
 ```xml  
 <typeAliases>  
@@ -294,24 +294,24 @@ private Dictionary\<string, string\> ResolveStatic(string config, string resolve
 </containers>  
 ```  
   
- 詳細についてで必要な構成は、 **esb.resolvers**  ノードを参照してください[Unity アプリケーション ブロックのソース スキーマ](http://go.microsoft.com/fwlink/?LinkId=188288)([http://go.microsoft.com/fwlink/?LinkId = 188288](http://go.microsoft.com/fwlink/?LinkId=188288)) MSDN のです。  
+ 詳細のために必要な構成については、 **esb.resolvers**ノードを参照してください[Unity Application Block の送信元スキーマ](http://go.microsoft.com/fwlink/?LinkId=188288)([ http://go.microsoft.com/fwlink/?LinkId=188288 ](http://go.microsoft.com/fwlink/?LinkId=188288)) msdn です。  
   
- **カスタム Unity 競合回避モジュールを作成します。**  
+ **Unity のカスタム競合回避モジュールを作成します。**  
   
- **カスタム Unity リゾルバーを作成するには**  
+ **カスタム Unity 競合回避モジュールを作成するには**  
   
-1.  (省略可能)アセンブリまたはアセンブリを実装するクラスを作成、 **IFactProvider**インターフェイスし、が含まれています、 **RegisterFact**発生する可能性への解決に必要な情報を提供するメソッド。  
+1.  (省略可能)実装するクラスを使用して、アセンブリまたはアセンブリを作成、 **IFactProvider**インターフェイスし、が含まれています、 **RegisterFact**解像度が発生するために必要な情報を提供するメソッド。  
   
-2.  (省略可能)アセンブリまたはアセンブリを実装するクラスを作成、 **IFactTranslator**インターフェイスし、が含まれています、 **TranslateFact**キー/値ペア内に指定されたファクトを変換する方法、競合回避モジュールのディクショナリ。  
+2.  (省略可能)実装するクラスを使用して、アセンブリまたはアセンブリを作成、 **IFactTranslator**インターフェイスし、が含まれています、 **TranslateFact**キー/値ペア内に指定されたファクトを変換するメソッド、競合回避モジュールのディクショナリ。  
   
-3.  実装するクラスを持つアセンブリを作成、 **IResolveContainer**と**IResolveProvider**とインターフェイスが含まれています、**解決**を検証する方法、競合回避モジュールの構成、ファクト プロバイダーからすべてのファクトを収集し、任意の特殊な処理を実行はファクト トランスレータを使用してそれを変換および翻訳済みのファクトのインスタンスを返します、**ディクショナリ**クラス。  
+3.  実装するクラスを使用してアセンブリを作成、 **IResolveContainer**と**IResolveProvider**インターフェイスを含む、**解決**を検証するメソッド、競合回避モジュール構成では、ファクト プロバイダーからすべてのファクトを収集し、任意の特殊な処理を実行しますはファクトのトランスレーターを使用してそれを変換およびのインスタンスとして変換されたファクトを返します、**ディクショナリ**クラス。  
   
-4.  Esb.config ファイルを使用して構成を追加して、競合回避モジュールを登録、 **\<リゾルバー\>** としてルート モニカーを格納する要素、**名前**属性と完全にアセンブリの修飾名として、**型**属性。  
+4.  追加、Esb.config ファイルを使用して構成することによって、競合回避モジュールを登録、 **\<競合回避モジュール\>** としてルート モニカーを含む要素、**名前**属性と完全にアセンブリの修飾名として、**型**属性。  
   
 5.  この競合回避モジュールの Esb.config ファイルを Unity に固有の構成を追加します。  
   
-6.  (省略可能)ルート モニカーとクエリ パラメーターを定義するスキーマを作成し、ESB で保存します。Schemas.Resolvers フォルダーです。 名前が既存の ESB 名前付け規則; に従う必要があります。つまり、"_Resolution.xsd"が付いたルート モニカーの名前を使用する必要があります。  
+6.  (省略可能)ルート モニカーと、クエリ パラメーターを定義するスキーマを作成し、ESB で保存します。Schemas.Resolvers フォルダーです。 名前が既存の ESB 名前付け規則; に従う必要があります。これは、"_Resolution.xsd"を付加するルート モニカーの名前を使用することを意味します。  
   
-7.  (省略可能)新しいスキーマからクラスを生成し、カスタム競合回避モジュールのアセンブリに保存します。 これにより、カスタム競合回避モジュールに型指定されたパラメーターが公開されます。  
+7.  (省略可能)新しいスキーマからクラスを生成し、カスタム競合回避モジュールのアセンブリに保存します。 これにより、カスタムの競合回避モジュールに型指定されたパラメーターを公開します。  
   
 8.  グローバル アセンブリ キャッシュ内のすべてのアセンブリを登録します。

@@ -1,5 +1,5 @@
 ---
-title: 管理およびパフォーマンス ツール |Microsoft ドキュメント
+title: 管理およびパフォーマンス ツール |Microsoft Docs
 description: タスク、パフォーマンス、および BizTalk Server でのトレースを管理する一般的なツール
 ms.custom: ''
 ms.date: 11/29/2017
@@ -13,52 +13,52 @@ caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 100b72949cd5fc6ab4da2dd90469f924db27963d
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: e345e001d354cf925a68bc33d43f09bb42ad2761
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006579"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36980499"
 ---
 # <a name="administrative-and-performance-tools"></a>管理およびパフォーマンス ツール 
 
 ## <a name="tools-list"></a>ツールの一覧
-次のツールを使用して、取引先との対話を BizTalk Server のステータスを監視する、BizTalk Server アプリケーションを展開する、BizTalk Server グループを管理する、BizTalk ServerBizTalk サーバーを管理することができます。  
+取引先との対話を BizTalk Server の状態を監視するのに、BizTalk Server アプリケーションを展開するのに、BizTalk Server グループを管理するのに、BizTalk ServerBizTalk サーバーの管理には、次のツールを使用できます。  
   
--   **BizTalk Server 管理コンソール**です。 BizTalk Server 管理コンソールは、BizTalk Server の主要な管理ツールです。 この管理コンソールでは、BizTalk アプリケーションのすべての展開操作を実行するためのグラフィカル ユーザー インターフェイスを提供します。 たとえば、アプリケーションのアイテムを追加および削除したり、その他の変更をアプリケーションに加えたりするだけでなく、インポート ウィザード、インストール ウィザード、エクスポート ウィザードなどを起動することもできます。  
+- **BizTalk Server 管理コンソール**します。 BizTalk Server 管理コンソールは、BizTalk Server の主要な管理ツールです。 この管理コンソールでは、BizTalk アプリケーションのすべての展開操作を実行するためのグラフィカル ユーザー インターフェイスを提供します。 たとえば、アプリケーションのアイテムを追加および削除したり、その他の変更をアプリケーションに加えたりするだけでなく、インポート ウィザード、インストール ウィザード、エクスポート ウィザードなどを起動することもできます。  
   
-     BizTalk Server 管理コンソールを使用して、ライブまたはアーカイブ済みのメッセージ イベントまたはサービス インスタンス データの表示を使用して、BizTalk Server の実装の状態を追跡、ボトルネックを特定および BizTalk Server 環境を監視します。 特定のオーケストレーション、パイプライン、またはメッセージ インスタンスに関する技術的な詳細情報だけでなく、システムで受け取った特定のメッセージのメッセージ フローを表示することもできます。  
+   BizTalk Server 管理コンソールを使用して、BizTalk Server の実装の正常性の追跡、ボトルネックの特定、および BizTalk Server 環境を監視するライブまたはアーカイブ済みのメッセージ イベントまたはサービス インスタンス データの表示を使用できます。 特定のオーケストレーション、パイプライン、またはメッセージ インスタンスに関する技術的な詳細情報だけでなく、システムで受け取った特定のメッセージのメッセージ フローを表示することもできます。  
   
-     BizTalk Server 管理コンソールを使用する方法の詳細については、次を参照してください。 [、BizTalk Server 管理コンソールを使用して](../core/using-the-biztalk-server-administration-console.md)です。  
+   BizTalk Server 管理コンソールの使用方法の詳細については、次を参照してください。 [、BizTalk Server 管理コンソールを使用して](../core/using-the-biztalk-server-administration-console.md)します。  
   
--   **BTSTask コマンド ライン ツール**です。 BTSTask を使用すると、コマンド ラインから多くの管理タスクを実行できます。 詳細については、BTSTask を使用して、次を参照してください。 [BTSTask コマンドライン リファレンス](../core/btstask-command-line-reference.md)です。  
+- **BTSTask コマンド ライン ツール**します。 BTSTask を使用すると、コマンド ラインから多くの管理タスクを実行できます。 詳細については、BTSTask を使用して、次を参照してください。 [BTSTask コマンド ライン リファレンス](../core/btstask-command-line-reference.md)します。  
   
--   **スクリプトとプログラミング Api**です。 Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用については、次を参照してください。、 **WMI クラス参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+- **スクリプトとプログラミング Api**します。 Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、次を参照してください。、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
-     WMI オブジェクト モデルは、管理 API を公開および簡素化します。 すべての管理 API は、管理対象のすべてのオブジェクトに対して、作成、列挙、変更、および削除操作のいくつかを公開します。 WMI は、この機能をすべての WMI オブジェクトに対して一貫した方法で公開します。  
+   WMI オブジェクト モデルは、管理 API を公開および簡素化します。 すべての管理 API は、管理対象のすべてのオブジェクトに対して、作成、列挙、変更、および削除操作のいくつかを公開します。 WMI は、この機能をすべての WMI オブジェクトに対して一貫した方法で公開します。  
   
--   **ビジネス アクティビティの監視 (BAM)。** BAM では、Microsoft Office Excel ブックを使用して、ビジネス ユーザーがビジネス プロセスのリアルタイムの包括的なビューを表示する方法を提供します。 BAM の詳細については、次を参照してください。[を使用したビジネス アクティビティ監視](../core/using-business-activity-monitoring.md)です。  
+- **ビジネス アクティビティを監視 (BAM)。** BAM では、Microsoft Office Excel ブックを使用して、ビジネス ユーザーがビジネス プロセスのリアルタイムの包括的なビューを表示する方法を提供します。 BAM の詳細については、次を参照してください。[ビジネス アクティビティの監視を使用して](../core/using-business-activity-monitoring.md)します。  
 
 
--   [**BizTalk Health Monitor**](http://blogs.msdn.com/b/biztalkhealthmonitor/ "BizTalk Health Monitor")テーブルの使用法、既知の問題など、BizTalk 環境に関する情報を収集する BizTalk サポート チームが作成されました。 潜在的な問題領域が強調表示されている、レポートが生成されます。 このツールを実行して、BizTalk 環境を維持するために定期的に出力を確認することを検討してください。 これには、BizTalk MsbBox ビューアーが置き換えられます。
+- [**BizTalk Health Monitor**](http://blogs.msdn.com/b/biztalkhealthmonitor/ "BizTalk Health Monitor")テーブルの使用法、既知の問題など、BizTalk 環境に関する情報を収集する BizTalk サポート チームによって作成されました。 レポートを強調表示されている潜在的な問題の領域が生成されます。 このツールを実行して、BizTalk 環境を維持するために定期的に出力の確認を検討してください。 これには、BizTalk MsbBox ビューアーが置き換えられます。
 
--   [**BizTalk 終端記号ツール**](https://www.microsoft.com/download/en/details.aspx?id=2846 "BizTalk 終端記号ツール")通常 BizTalk MsgBox ビューアーの出力にある、一般的なデータベース整合性の問題を解決するのには、BizTalk サポート チームによって作成されました。 一般的なタスクには、インスタンスを削除して、大きなテーブルの削除が含まれます。 BizTalk 終端記号ツールの詳細についてを参照してください[この投稿](http://blogs.msdn.com/b/biztalkcpr/archive/2011/02/10/using-biztalk-terminator-to-resolve-issues-identified-by-biztalk-msgboxviewer.aspx)BizTalk エンジニアのブログを 1 つにします。
+- [**BizTalk 終端記号ツール**](https://www.microsoft.com/download/en/details.aspx?id=2846 "BizTalk 終端記号ツール")通常 BizTalk MsgBox ビューアー出力にある、一般的なデータベース整合性の問題を解決するのには、BizTalk のサポート チームによって作成されました。 一般的なタスクには、インスタンスを削除して、大きなテーブルの削除が含まれます。 BizTalk 終端記号のツールの詳細についてを参照してください[この投稿](http://blogs.msdn.com/b/biztalkcpr/archive/2011/02/10/using-biztalk-terminator-to-resolve-issues-identified-by-biztalk-msgboxviewer.aspx)BizTalk エンジニアのブログの 1 つにします。
 
--   [**Microsoft BizTalk LoadGen 2007** ](https://www.microsoft.com/download/details.aspx?id=14925)パフォーマンスと、Microsoft BizTalk Server アプリケーションのストレス テストを実行するメッセージ転送の負荷を生成し、パフォーマンス カウンターのパフォーマンスの監視を提供しますBizTalk Server を実行するインフラストラクチャ。
+- [**Microsoft BizTalk LoadGen 2007** ](https://www.microsoft.com/download/details.aspx?id=14925)パフォーマンスと、Microsoft BizTalk Server アプリケーションのストレス テストを実行するメッセージ転送の負荷を生成し、パフォーマンス カウンターのパフォーマンスを監視を提供しますBizTalk Server を実行するインフラストラクチャ。
 
--   [**BizTalk Server のベスト プラクティス アナライザー**](https://www.microsoft.com/downloads/details.aspx?FamilyID=93d432fe-1370-4b6d-aaa8-a0c43c30f5ab "BizTalk Server のベスト プラクティス アナライザー")読み取りのみレポートを作成して構成レベルの検証を実行します。 ベスト プラクティス アナライザーは、Windows Management Instrumentation (WMI) クラス、SQL Server データベース、およびレジストリ エントリなど、さまざまな情報のソースからデータを収集します。 ベスト プラクティス アナライザーでは、データを使用して、展開の構成を評価します。 ベスト プラクティス アナライザーは、任意のシステム設定は変更されず、自己調整ツールではありません。
+- [**BizTalk Server のベスト プラクティス アナライザー**](https://www.microsoft.com/downloads/details.aspx?FamilyID=93d432fe-1370-4b6d-aaa8-a0c43c30f5ab "BizTalk Server のベスト プラクティス アナライザー")読み取って報告するだけで構成レベルの検証を実行します。 ベスト プラクティス アナライザーは、Windows Management Instrumentation (WMI) クラス、SQL Server データベース、およびレジストリ エントリなど、さまざまな情報のソースからデータを収集します。 ベスト プラクティス アナライザーでは、データを使用して、展開の構成を評価します。 ベスト プラクティス アナライザーは、任意のシステム設定は変更されませんし、自己調整ツールではありません。
 
--   [**パフォーマンス分析のログ (PAL)** ](https://github.com/clinthuffman/PAL)強力なツールのパフォーマンス モニター カウンター ログ (任意の既知形式) を読み取り、(提供) が、複雑で、既知のしきい値を使用して分析します。 このツールでは、視覚的に重要なパフォーマンス カウンターをグラフ化し、しきい値を超えたときにアラートをスローする HTML ベース レポートを生成します。
+- [**パフォーマンス分析のログ (PAL)** ](https://github.com/clinthuffman/PAL)はパフォーマンス モニター カウンター ログ (任意の既知形式) を読み取り、分析、複雑なが既知のしきい値 (提供) を使用して強力なツールです。 ツールでは、視覚的に重要なパフォーマンス カウンターをグラフし、しきい値を超えた場合にアラートをスローする HTML ベースのレポートを生成します。
 
--   [**DebugView for Windows** ](https://docs.microsoft.com/sysinternals/downloads/debugview)は、アプリケーションをデバッグ出力をローカル システムまたは TCP/IP 経由でアクセスできるネットワーク上のコンピューターを監視することができます。 デバッガーのアプリケーションまたはデバイス ドライバーを生成するデバッグ出力をキャッチする必要はありません、カーネル モードと Win32 デバッグ出力の両方を表示できます。 また非標準のデバッグ出力の Api を使用するには、アプリケーションまたはドライバーを変更する必要があります。
+- [**Windows の DebugView** ](https://docs.microsoft.com/sysinternals/downloads/debugview)アプリケーション デバッグ出力をローカル システムまたは TCP/IP 経由でアクセスできるネットワーク上のコンピューターを監視することができます。 デバッガーが、アプリケーションやデバイス ドライバーを生成するデバッグ出力をキャッチする必要はありませんので、カーネル モードと Win32 のデバッグ出力の両方を表示することも非標準のデバッグ出力 Api を使用するには、アプリケーションやドライバーを変更する必要があります。
 
--   [**ログ パーサー 2.2** ](https://www.microsoft.com/download/details.aspx?id=24659) 、強力な多様なツール、イベント ログなどの Windows オペレーティング システムでキーのデータ ソースに加え、ログ ファイル、XML ファイルおよび CSV ファイルなどのテキスト ベースのデータにユニバーサル クエリ アクセスを提供するは、レジストリ、ファイル システム、および Active Directory です。
+- [**ログイン Parser 2.2** ](https://www.microsoft.com/download/details.aspx?id=24659)イベント ログなど、Windows オペレーティング システムの主要なデータ ソースに加え、ログ ファイル、XML ファイルおよび CSV ファイルなどのテキスト ベースのデータへの汎用クエリ アクセスを提供する強力な多目的ツールには、レジストリ、ファイル システム、および Active Directory。
 
--   [**エクスプ ローラーの処理**](https://docs.microsoft.com/sysinternals/downloads/process-explorer)は DLL バージョンの問題、またはハンドルのリークを追跡するために役立ちますし、Windows の方法とアプリケーションの作業を理解できるようにします。
+- [**プロセス エクスプ ローラー** ](https://docs.microsoft.com/sysinternals/downloads/process-explorer)は DLL バージョンの問題またはハンドルのリークを追跡するために役立ちますし、Windows の方法とアプリケーションのしくみを把握します。
 
--   [**TCP トレース**](http://www.pocketsoap.com/tcptrace/ "TCP トレース")クライアントとサーバー間でテキスト ベースのネットワーク トラフィックを監視するために使用します。 トラベル ネットワーク経由でメッセージを表示する SOAP、HTTP、POP3 などのようにアダプターを使用しているときに便利です。
+- [**TCP トレース**](http://www.pocketsoap.com/tcptrace/ "TCP トレース")クライアントとサーバー間のテキスト ベースのネットワーク トラフィックを監視するために使用します。 旅行、ネットワーク経由でメッセージを表示する SOAP、HTTP、POP3 などのようなアダプターの使用時に便利です。
 
--   [**DTCPing** ](https://www.microsoft.com/download/details.aspx?id=2868) BizTalk のマルチ サーバー展開でわかります多くの場合、Microsoft DTC ファイアウォール問題のトラブルシューティングに役立つよう設計されています。
+- [**DTCPing** ](https://www.microsoft.com/download/details.aspx?id=2868)は BizTalk のマルチ サーバー展開でわかります多くの場合、Microsoft DTC ファイアウォール問題のトラブルシューティングを支援するために設計されています。
 
   
 ## <a name="see-also"></a>参照  

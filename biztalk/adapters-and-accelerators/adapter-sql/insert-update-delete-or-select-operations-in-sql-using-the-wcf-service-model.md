@@ -1,5 +1,5 @@
 ---
-title: 挿入、更新、削除、または WCF サービス モデルを使用して SQL の操作の選択 |Microsoft ドキュメント
+title: 挿入、更新、削除、または WCF サービス モデルを使用して SQL の操作を選択します |。Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,53 +12,53 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2bc522a1b0b60a9ba0b8407228dd1db65c4e6f0
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: dcf58b5ff9a379b7b28647e0d5b07475d08310db
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
-ms.locfileid: "22226090"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37011171"
 ---
-# <a name="insert-update-delete-or-select-operations-in-sql-using-the-wcf-service-model"></a>挿入、更新、削除、または WCF サービス モデルを使用して SQL の操作の選択
-[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]一連の SQL Server データベース テーブルおよびビューの基本的な Insert、Select、Update、および削除操作を検出します。 これらの操作を使用することができますを実行して単純な SQL Insert、Select、Update、Delete ステートメントで Where 修飾対象のテーブルまたはビューの句。 このトピックでは、WCF サービス モデルを使用してこれらの操作を実行する方法について説明します。  
+# <a name="insert-update-delete-or-select-operations-in-sql-using-the-wcf-service-model"></a>挿入、更新、削除、または WCF サービス モデルを使用して SQL の操作を選択します。
+[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]一連の SQL Server データベースのテーブルおよびビューに対する Insert、Select、Update、および Delete の基本的な操作を検出します。 これらの操作を使用すると、実行の単純な SQL Insert、Select、Update、および Delete ステートメントで Where 修飾対象のテーブルまたはビューの句。 このトピックでは、WCF サービス モデルを使用してこれらの操作を実行する方法について説明します。  
   
- アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。 [Insert、Update、Delete、およびテーブルおよび SQL アダプターとビューの選択操作](../../adapters-and-accelerators/adapter-sql/insert-update-delete-and-select-on-tables-and-views-with-the-sql-adapter.md)です。  
+ アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。 [Insert、Update、Delete、およびテーブルとビューを SQL アダプターを使用した操作の選択](../../adapters-and-accelerators/adapter-sql/insert-update-delete-and-select-on-tables-and-views-with-the-sql-adapter.md)します。  
   
 > [!NOTE]
->  ユーザー定義型の列を含むテーブルでの操作を実行する場合、必ずするを参照してください[テーブルと、SQL アダプターを使用してユーザー定義型を持つビューに対して操作](../../adapters-and-accelerators/adapter-sql/operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter.md)アプリケーションの開発を開始する前にします。  
+>  ユーザー定義型の列を含むテーブルに対して操作を実行している場合ことを確認するを参照してください[テーブルと、SQL アダプターを使用してユーザー定義型を持つビューで操作](../../adapters-and-accelerators/adapter-sql/operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter.md)アプリケーションの開発を開始する前にします。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、Employee テーブルでの操作を実行します。 サンプルに用意されている SQL スクリプトを実行して、従業員テーブルが作成されます。 サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)です。 サンプルは、 **EmployeeBasicOps**、これは、このトピックの内容に基づいても付属、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サンプルです。  
+ このトピックの例では、Employee テーブルに対する操作を実行します。 サンプルで提供される SQL スクリプトを実行して、従業員テーブルが作成されます。 サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。 サンプルについては、 **EmployeeBasicOps**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サンプル。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
- 基本的な SQL 操作の生成、WCF クライアントの名前を[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]検出は次の表に示すと、テーブルまたはビューの名前に基づいています。  
+ 基本的な SQL 操作に対して生成された WCF クライアントの名前を[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]検出、次の表に示すように、テーブルまたはビューの名前に基づきます。  
   
-|SQL Server のデータベース成果物|WCF クライアント名|  
+|SQL Server データベースの成果物|WCF クライアント名|  
 |----------------------------------|---------------------|  
-|Table|TableOp_[Schema]_[TABLE_NAME]Client|  
-|表示|ViewOp_[Schema]_[VIEW_NAME]Client|  
+|テーブル|TableOp_ [Schema] _ [TABLE_NAME] のクライアント|  
+|表示|ViewOp_ [Schema] _ [VIEW_NAME] のクライアント|  
   
- [スキーマ]; SQL Server のコレクション アイテムを =たとえば、dbo します。  
+ [スキーマ] コレクションの SQL Server のアイテム、=たとえば、dbo です。  
   
  [TABLE_NAME] テーブルの名前を =たとえば、従業員です。  
   
  [VIEW_NAME] ビューの名前を =たとえば、Employee_View です。  
   
 ### <a name="method-signature-for-invoking-operations-on-tables"></a>テーブルに対する操作を呼び出すためのメソッド シグネチャ  
- 次の表は、テーブルの基本的な操作について、メソッド シグネチャを示します。 署名は、ビューの名前空間と名前のテーブルを置換する点を除いて、表示は、同じです。  
+ 次の表では、テーブルに対する基本操作のメソッド シグネチャを示します。 署名は、ビューの名前空間と名前のテーブルを置換する点を除いて表示は、同じです。  
   
-|操作|メソッド シグネチャ|  
+|演算|メソッド シグネチャ|  
 |---------------|----------------------|  
-|Insert|長い [挿入 ([TABLE_NS]. [TABLE_NAME] 行) です。|  
+|Insert|長い [Insert ([TABLE_NS]. [TABLE_NAME] 行)。|  
 |Select|[TABLE_NS].[TABLE_NAME][] Select(string COLUMNS, string QUERY);|  
-|Update|int 更新 ([TABLE_NS]. [TABLE_NAME] です。RowPair:operator[] 行) です。|  
-|Del|int Delete([TABLE_NS].[TABLE_NAME][] Rows);|  
+|更新|int 更新 ([TABLE_NS]. [TABLE_NAME]。RowPair 行)。|  
+|DELETE|int 削除 ([TABLE_NS]. [TABLE_NAME] 行)。|  
   
- [TABLE_NS] テーブルの名前空間の名前を =たとえば、schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee です。  
+ [TABLE_NS] テーブル、名前空間の名前を =たとえば、schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee します。  
   
  [TABLE_NAME] テーブルの名前を =たとえば、従業員です。  
   
- 例としては、次のコードは、既定値"dbo"スキーマの下にある従業員テーブルで Delete、Insert、Select および Update 操作に対して生成される WCF クライアント クラスのメソッドのシグニチャを示します。  
+ 例としては、次のコードは、既定値"dbo"スキーマの Employee テーブルに対する Delete、Insert、Select および Update 操作に対して生成された WCF クライアント クラスのメソッド シグネチャを示します。  
   
 ```  
 public partial class TableOp_dbo_EmployeeClient : System.ServiceModel.ClientBase<TableOp_dbo_Employee>, TableOp_dbo_Employee {      
@@ -72,10 +72,10 @@ public partial class TableOp_dbo_EmployeeClient : System.ServiceModel.ClientBase
 }  
 ```  
   
- このスニペットでは、TableOp_dbo_EmployeeClient はによって生成された SqlAdapterBindingClient.cs で WCF クラスの名前、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
+ このスニペットで TableOp_dbo_EmployeeClient はによって生成された SqlAdapterBindingClient.cs で WCF クラスの名前、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。  
   
 ### <a name="parameters-for-table-operations"></a>テーブル操作のパラメーター  
- このセクションでは、各テーブルの操作に必要なパラメーターを説明します。  
+ このセクションでは、各テーブルの操作に必要なパラメーターを提供します。  
   
  **挿入操作**  
   
@@ -87,113 +87,113 @@ public partial class TableOp_dbo_EmployeeClient : System.ServiceModel.ClientBase
   
  **操作を選択します。**  
   
-|COLUMN_NAMES|QUERY|  
+|それら|QUERY|  
 |-------------------|-----------|  
-|ターゲット内の列名のコンマ区切りの一覧たとえば、「Employee_ID, 表記」です。 列の一覧では、結果セットに返される対象の列を指定します。 列リストで指定されていない列は、返されるレコード セット内の .NET の既定値に設定されます。 Nillable 列は、この値は**null**です。|クエリの対象の行を指定する SQL の WHERE 句の内容たとえば、"表記 = 'Manager'"です。 このパラメーターを設定することができます**null**ターゲットのすべての行を取得します。|  
+|は、ターゲット内の列名のコンマ区切りの一覧たとえば、「Employee_ID, 指定」です。 列の一覧には、結果セットで返される対象の列を指定します。 列リストで指定されていない列は、返されたレコード セット内の .NET の既定値に設定されます。 Nillable 列は、この値は**null**します。|クエリの対象の行を指定する SQL の WHERE 句の内容たとえば、"指定 = 'マネージャー'"です。 このパラメーターを設定する**null**をターゲットのすべての行を返します。|  
   
- Select 操作の戻り値は、指定された列と対象のテーブルまたはビューから行を含む厳密に型指定された結果セットです。  
+ 選択操作の戻り値は、指定された列と対象のテーブルまたはビューから行を含む厳密に型指定された結果セットです。  
   
  **更新操作**  
   
-|ペアの最初の行|ペアの 2 番目の行|  
+|ペアの最初の行|ペアの 2 行目|  
 |---------------------------|----------------------------|  
-|ペアが、更新する必要のある新しい値に対応するレコードの最初のレコードに対応して、UPDATE ステートメントの SET 句。 使用して設定できます`RowPair.After`です。|レコードのペアの 2 番目のレコードの行の古い値、つまり、UPDATE ステートメントの WHERE 句に対応します。 使用して設定できます`RowPair.Before`です。|  
+|ペアが、更新する必要がある新しい値に対応するレコードの最初のレコードは、対応、UPDATE ステートメントの SET 句にします。 使用して設定できます`RowPair.After`します。|レコードのペアの 2 番目のレコード行の古い値、つまり、UPDATE ステートメントの WHERE 句に対応します。 使用して設定できます`RowPair.Before`します。|  
   
- 更新操作の戻り値は、Int32 データ型では、更新された行の数を表します。  
+ 更新操作の戻り値では、Int32 データ型では、更新された行の数を表します。  
   
 > [!IMPORTANT]
->  更新する必要のあるレコードを指定する際にすべての値が更新されていない場合でも、すべての列の値を指定する必要があります。 たとえば、行に 5 つの列があり、ユーザーが、更新操作が RowPair.Before の一部としてのみに 2 つの列を更新は、5 つの列のすべての値を渡す必要があります。 ただし、RowPair.After、更新される列のみを指定できます。  
+>  更新する必要のあるレコードを指定するには、中にすべての値が更新されていない場合でも、すべての列の値を指定する必要があります。 たとえば場合は、行は 5 つの列を備え、更新操作では、2 つだけの列を更新 RowPair.Before の一部として、すべての 5 つの列値を渡す必要があります。 ただし、RowPair.After、更新される列のみを指定できます。  
   
  **削除操作**  
   
- 削除操作は、レコードの配列を厳密に型指定された入力として受け取ります。 削除操作の戻り値は、Int32 データ型では、削除された行の数を表します。  
+ 削除操作はレコードの配列を厳密に型指定の入力として受け取ります。 削除操作の戻り値では、Int32 データ型では、削除された行の数を表します。  
   
-## <a name="creating-a-wcf-client-to-invoke-operations-on-tables-and-views"></a>テーブルおよびビューの操作の呼び出しに WCF クライアントを作成します。  
- WCF クライアントを使用して SQL Server で操作の実行に必要なアクションの汎用的なセットは、一連のタスクで説明されている[SQL アダプターで WCF サービス モデルの概要](../../adapters-and-accelerators/adapter-sql/overview-of-the-wcf-service-model-with-the-sql-adapter.md)です。 このセクションでは、基本的な Insert、Select、Update、テーブルに対する削除操作を呼び出すための WCF クライアントを作成する方法について説明します。  
+## <a name="creating-a-wcf-client-to-invoke-operations-on-tables-and-views"></a>テーブルおよびビューの操作を呼び出すための WCF クライアントを作成します。  
+ WCF クライアントを使用して SQL Server で操作の実行に必要なアクションの汎用的なセットは、一連のタスクで説明されている[SQL アダプターを使用した WCF サービス モデルの概要](../../adapters-and-accelerators/adapter-sql/overview-of-the-wcf-service-model-with-the-sql-adapter.md)します。 このセクションでは、基本的な Insert、Select、Update、テーブルに対する削除操作を呼び出すための WCF クライアントを作成する方法について説明します。  
   
 #### <a name="to-create-a-wcf-client-to-perform-operations-on-tables"></a>テーブルに対する操作を実行する WCF クライアントを作成するには  
   
-1.  Visual Studio で Visual c# プロジェクトを作成します。 このトピックでは、コンソール アプリケーションを作成します。  
+1. Visual Studio で Visual c# プロジェクトを作成します。 このトピックでは、コンソール アプリケーションを作成します。  
   
-2.  Insert、Select、Update の WCF クライアント クラスを生成し、Employee テーブルの操作を削除します。 詳細については、WCF クライアント クラスを生成する、次を参照してください。 [SQL Server の成果物のために、WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)です。  
+2. Insert、Select、Update、WCF クライアント クラスを生成し、Employee テーブルに対して操作を削除します。 WCF クライアント クラスを生成する詳細については、次を参照してください。 [SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)します。  
   
-    > [!IMPORTANT]
-    >  WCF クライアント クラスを生成する前に必ず設定してください、 **EnableBizTalkCompatibilityMode**プロパティを false にバインドします。  
+   > [!IMPORTANT]
+   >  WCF クライアント クラスを生成する前に必ず設定して、 **EnableBizTalkCompatibilityMode**プロパティを false にバインドします。  
   
-3.  ソリューション エクスプ ローラーへの参照を追加`Microsoft.Adapters.Sql`と`Microsoft.ServiceModel.Channels`です。  
+3. ソリューション エクスプ ローラーへの参照を追加`Microsoft.Adapters.Sql`と`Microsoft.ServiceModel.Channels`します。  
   
-4.  Program.cs ファイルを開き、次のスニペットの説明に従って、クライアントを作成します。  
+4. Program.cs ファイルを開き、次のスニペットの説明に従って、クライアントを作成します。  
   
-    ```  
+   ```  
   
-              TableOp_dbo_EmployeeClient client = new TableOp_dbo_EmployeeClient("SqlAdapterBinding_TableOp_dbo_Employee");  
-    client.ClientCredentials.UserName.UserName = "<Enter user name here>";  
-    client.ClientCredentials.UserName.Password = "<Enter password here>";  
-    ```  
+             TableOp_dbo_EmployeeClient client = new TableOp_dbo_EmployeeClient("SqlAdapterBinding_TableOp_dbo_Employee");  
+   client.ClientCredentials.UserName.UserName = "<Enter user name here>";  
+   client.ClientCredentials.UserName.Password = "<Enter password here>";  
+   ```  
   
-     このスニペットで`TableOp_dbo_EmployeeClient`SqlAdapterBindingClient.cs で定義された WCF クライアントです。 このファイルにより生成されて、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。 `SqlAdapterBinding_TableOp_dbo_Employee` クライアント エンドポイント構成の名前を指定、app.config で定義されます。このファイルがによって生成されても、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]バインドのプロパティおよびその他の構成設定が含まれています。  
+    このスニペットで`TableOp_dbo_EmployeeClient`SqlAdapterBindingClient.cs で定義されている WCF クライアントです。 このファイルがによって生成された、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 `SqlAdapterBinding_TableOp_dbo_Employee` クライアント エンドポイント構成の名前を指定され、app.config で定義されます。このファイルがによって生成されても、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]バインドのプロパティとその他の構成設定が含まれています。  
   
-    > [!NOTE]
-    >  このスニペットでは、構成ファイルからバインディングとエンドポイント アドレスを使用します。 これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定するさまざまな方法の詳細については、次を参照してください。 [SQL アダプタのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md)です。  
+   > [!NOTE]
+   >  このスニペットでは、構成ファイルからバインドおよびエンドポイント アドレスを使用します。 これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定する、さまざまな方法の詳細については、次を参照してください。 [SQL アダプタのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md)します。  
   
-5.  次のスニペット」の説明に従って、クライアントを開きます。  
+5. 次のスニペットで説明されているように、クライアントを開きます。  
   
-    ```  
-    try  
-    {  
-       Console.WriteLine("Opening Client...");  
-       client.Open();  
-    }  
-    catch (Exception ex)  
-    {  
-       Console.WriteLine("Exception: " + ex.Message);  
-       throw;  
-    }  
-    ```  
+   ```  
+   try  
+   {  
+      Console.WriteLine("Opening Client...");  
+      client.Open();  
+   }  
+   catch (Exception ex)  
+   {  
+      Console.WriteLine("Exception: " + ex.Message);  
+      throw;  
+   }  
+   ```  
   
-6.  Employee テーブルに対する挿入操作を呼び出します。  
+6. Employee テーブルに対する挿入操作を呼び出します。  
   
-    ```  
-    long[] recordsInserted;  
+   ```  
+   long[] recordsInserted;  
   
-    schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee[] insertRecord =  
-    new schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee[1];  
+   schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee[] insertRecord =  
+   new schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee[1];  
   
-    insertRecord[0] = new schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee();  
-    insertRecord[0].Name = "John Smith";  
-    insertRecord[0].Designation = "Manager";  
-    insertRecord[0].Salary = 500000;  
+   insertRecord[0] = new schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee();  
+   insertRecord[0].Name = "John Smith";  
+   insertRecord[0].Designation = "Manager";  
+   insertRecord[0].Salary = 500000;  
   
-    try  
-    {  
-       Console.WriteLine("Inserting new table entry...");  
-       recordsInserted = client.Insert(insertRecord);  
-    }  
-    catch (Exception ex)  
-    {  
-       Console.WriteLine("Exception: " + ex.Message);  
-       throw;  
-    }  
+   try  
+   {  
+      Console.WriteLine("Inserting new table entry...");  
+      recordsInserted = client.Insert(insertRecord);  
+   }  
+   catch (Exception ex)  
+   {  
+      Console.WriteLine("Exception: " + ex.Message);  
+      throw;  
+   }  
   
-    Console.WriteLine("Record inserted");  
-    Console.WriteLine("Press any key to continue ...");  
-    Console.ReadLine();  
-    ```  
+   Console.WriteLine("Record inserted");  
+   Console.WriteLine("Press any key to continue ...");  
+   Console.ReadLine();  
+   ```  
   
-     Select を実行する上記のコード スニペットを置き換えることができますを更新、または同様の操作を削除します。 1 つのアプリケーションのすべての操作を実行するコード スニペットを追加することもできます。 これらの操作を実行する方法のコード スニペット。  
+    Select を実行する前のコード スニペットを置き換えることができます更新、または同様の操作を削除します。 単一のアプリケーションですべての操作を実行するコード スニペットを追加することもできます。 これらの操作を実行する方法のコード スニペット。  
   
-7.  次のスニペット」の説明に従って、クライアントを閉じます。  
+7. 次のスニペットの説明に従って、クライアントを閉じます。  
   
-    ```  
-    client.Close();  
-    Console.WriteLine("Press any key to exit...");  
-    Console.ReadLine();  
-    ```  
+   ```  
+   client.Close();  
+   Console.WriteLine("Press any key to exit...");  
+   Console.ReadLine();  
+   ```  
   
-8.  プロジェクトをビルドし、それを実行します。 アプリケーションは、Employee テーブルにレコードを挿入します。  
+8. プロジェクトをビルドし、それを実行します。 アプリケーションでは、Employee テーブルにレコードを挿入します。  
   
 ###   <a name="select-operation"></a>操作を選択します。  
- 次のコードは、Employee テーブルを対象とする選択操作を示しています。 選択操作は、テーブルに挿入された最後のレコードを選択します。 返されたレコードは、コンソールに書き込まれます。  
+ 次のコードでは、Employee テーブルを対象とする操作を選択します。 選択操作では、テーブルに挿入された最後のレコードを選択します。 返されるレコードは、コンソールに書き込まれます。  
   
 ```  
 schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee[] selectRecords;  
@@ -265,7 +265,7 @@ Console.ReadLine();
 ```  
   
 ###   <a name="delete-operation"></a>削除操作  
- 次のコードは、Employee テーブルを対象とする削除操作を示しています。  
+ 次のコードでは、Employee テーブルを対象とする削除操作を示します。  
   
 ```  
 int deleteSuccess;  

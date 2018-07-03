@@ -1,5 +1,5 @@
 ---
-title: コンポーネントのマップ |Microsoft ドキュメント
+title: コンポーネントのマップ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,25 +19,25 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58a7555ff45d25c4e131b05b078c713f7a169687
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b1590ad1450453602b4dd5f25b2d52a4364787af
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262378"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996771"
 ---
 # <a name="map-components"></a>マップの構成要素
 マップの構成要素のほとんどは、.btm 拡張子を持つマップ ファイルに保存されます。 このファイルに格納される項目を次に示します。  
   
--   送信元スキーマおよび送信先スキーマへの参照  
+- 送信元スキーマおよび送信先スキーマへの参照  
   
--   リンク (リンクのプロパティを含む)  
+- リンク (リンクのプロパティを含む)  
   
--   Functoid とそのプロパティ (入力パラメーターなど)  
+- Functoid とそのプロパティ (入力パラメーターなど)  
   
--   その他さまざまなプロパティ (グリッドやマップそのものに関連付けられたプロパティなど)  
+- その他さまざまなプロパティ (グリッドやマップそのものに関連付けられたプロパティなど)  
   
- BizTalk マッパーは、.btm ファイル内のマップを XSLT (Extensible Stylesheet Language Transformations) ファイルとしてコンパイルしますが、XSLT がこのファイルの一部になることはありません。 BizTalk マッパーがマップの XSLT を生成するのは、プロジェクトのコンパイル時とマップの検証時だけです。 BizTalk マッパーは、XSLT をプロジェクト アセンブリの一部としてパッケージします。  
+  BizTalk マッパーは、.btm ファイル内のマップを XSLT (Extensible Stylesheet Language Transformations) ファイルとしてコンパイルしますが、XSLT がこのファイルの一部になることはありません。 BizTalk マッパーがマップの XSLT を生成するのは、プロジェクトのコンパイル時とマップの検証時だけです。 BizTalk マッパーは、XSLT をプロジェクト アセンブリの一部としてパッケージします。  
   
 ## <a name="see-also"></a>参照  
  [マップ](../core/maps.md)   

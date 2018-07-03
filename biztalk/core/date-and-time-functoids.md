@@ -1,5 +1,5 @@
 ---
-title: 日付と時刻 Functoid |Microsoft ドキュメント
+title: 日時 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,32 +12,32 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ec31607ecefb417fef597b5ba700e6461c71a2f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5224c409a6d705806cccc493009ce2c32062f0a1
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238522"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010667"
 ---
-# <a name="date-and-time-functoids"></a>日付と時刻 Functoid
+# <a name="date-and-time-functoids"></a>日時 Functoid
 
 ## <a name="overview"></a>概要
-**日付/時刻**functoid は 2 つのカテゴリに分けることができます。 最初のカテゴリには、1 つの functoid が含まれています。**日数加算**、を使用して、指定した日付と時刻の値を指定した日数を追加します。 これは、出力インスタンス メッセージのフィールドが将来の日時の推定値を含む場合に役立ちます。 たとえば、**日数加算**見積もりを生成する functoid を使用することができます、注文を受け取った日付からの固定の差分に基づいて出荷日。  
-  
+**日付/時刻**functoid は 2 つのカテゴリに分類できます。 最初のカテゴリには、1 つの functoid が含まれています。**日数加算**、を使用して、指定した日付と時刻の値を指定した日数を追加します。 これは、出力インスタンス メッセージのフィールドが将来の日時の推定値を含む場合に役立ちます。 たとえば、**日数加算**functoid を使用して推定できます注文が受信した日付からの固定の差分をに基づいて出荷日。  
+
  2 番目のカテゴリには、すべての残りの functoid が含まれています、**日付と時刻**カテゴリ。 これらの Functoid を使用して実行時にタイムスタンプを提供することで、メッセージ変換が行われる日時を出力インスタンス メッセージに格納できます。  
-  
- **日数加算**functoid が、2 つの入力パラメーターを受け入れる、**日付**、**日付と時刻**、および**時間**functoid に入力いるなしパラメーター。  
+
+ **日数加算**functoid が、2 つの入力パラメーターを受け入れる、**日付**、**日付と時刻**、および**時間**functoid の入力があるないです。パラメーター。  
 
 ## <a name="available-functoids"></a>使用可能な functoid  
  **日付/時刻**functoid には。 
 
 * 日数加算
-* 日付
+* date
 * 日時
 * [時刻]
 
-これらの functoid の詳細については、使用可能な**Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
-  
+これらの functoid の詳細については**Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+
 ## <a name="see-also"></a>参照  
--  [マップに基本 Functoid を追加する方法](../core/how-to-add-basic-functoids-to-a-map.md)   
--  **日時 Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+- [マップに基本 Functoid を追加する方法](../core/how-to-add-basic-functoids-to-a-map.md)   
+- **日時 Functoid のリファレンス** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

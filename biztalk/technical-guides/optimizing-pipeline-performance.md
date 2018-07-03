@@ -1,5 +1,5 @@
 ---
-title: パイプラインのパフォーマンスの最適化 |Microsoft ドキュメント
+title: パイプラインのパフォーマンスの最適化 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,57 +12,57 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4311efd0d23e29b63f02fc34b1650a894d29d335
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7102eb3fc0f6f7b1ef16a319e5e04daff6d544d1
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22299554"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37007875"
 ---
 # <a name="optimizing-pipeline-performance"></a>パイプラインのパフォーマンスを最適化します。
-このトピックでのパイプラインのパフォーマンスを最適化するためのガイドラインを説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションです。  
+このトピックでは、パイプラインでのパフォーマンスを最適化するためのガイドラインを説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューション。  
   
 ## <a name="best-practices-for-optimizing-performance-of-biztalk-server-pipelines"></a>BizTalk Server パイプラインのパフォーマンスを最適化するためのベスト プラクティス  
   
-1.  パイプライン コンポーネントは、パフォーマンスに大きな影響を与えるため (たとえば、パススルー パイプライン コンポーネントを実行する、XML アセンブラー/逆アセンブラー パイプライン コンポーネントをより最大 30%)、そのカスタム パイプライン コンポーネントが実行することを確認してください最適な状態での展開では、それらを実装前にします。 BizTalk アプリケーションの全体的なパフォーマンスを最大化したい場合は、パイプライン コンポーネントで、カスタム パイプラインの数を最小限に抑えます。  
+1. パイプライン コンポーネントは、パフォーマンスに大きな影響を与えるため、(たとえば、パススルー パイプライン コンポーネントは XML アセンブラ/逆アセンブラ パイプライン コンポーネントをより最大 30% を実行します)、カスタム パイプライン コンポーネントが実行を確認最適に実装する前に、展開でします。 BizTalk アプリケーションの全体的なパフォーマンスを最大化したい場合は、カスタム パイプラインのパイプライン コンポーネントの数を最小限に抑えます。  
   
-2.  パフォーマンスを向上できます全体と、パイプライン コンポーネントでメッセージの永続化の頻度を減らすことによって冗長性を最小化するようにコンポーネントをコーディングします。 すべてのカスタム アセンブリは具体的には、カスタムの追跡コンポーネントと同様に、パフォーマンスに悪影響を及ぼす可能性のあるアイテム テストするくださいとは別に負荷が高い状況を検索して、システムが最大能力で操作するときに、その動作を確認するにはボトルネックです。  
+2. パフォーマンスを向上できます全体的なパイプライン コンポーネントでメッセージの永続化の頻度を減らすことで、冗長性を最小化するコンポーネントをコーディングしています。 すべてのカスタム アセンブリ具体的には、カスタムの追跡のコンポーネントと同様のパフォーマンスに悪影響を及ぼす可能性があるアーティファクト テストするくださいとは別に、システムが最大能力で作業する場合、その動作を観察して、検索の高負荷条件下で任意のボトルネックの可能性。  
   
-3.  パイプライン コンポーネント内の受信メッセージを読み取る必要がある場合は、メモリを使用してにドキュメント全体が読み込まれないように、 **XmlDocument**オブジェクト。 インスタンスで必要な領域の量、 **XmlDocument**を読み込んで、XML ドキュメントのメモリ内表現を作成するクラスは、実際のメッセージ サイズの 10 倍までです。 メッセージを読み取るために使用する必要があります、 **XmlTextReader**と共に、次のクラスのインスタンスのオブジェクト。  
+3. パイプライン コンポーネント内で受信メッセージを確認する必要がある場合にメモリを使用してドキュメント全体を読み込みを避けるため、 **XmlDocument**オブジェクト。 インスタンスで必要な領域の量、 **XmlDocument**を読み込むし、XML ドキュメントのメモリ内表現を作成するクラスは、最大 10 倍の実際のメッセージ サイズ。 メッセージを読み取るために使用する必要があります、 **XmlTextReader**オブジェクトと共に、次のクラスのインスタンス。  
   
-    -   **VirtualStream (Microsoft.BizTalk.Streaming.dll)** -このクラスのソース コードにある 2 つの場所、パイプラインの SDK の下にある次のように: \samples\pipelines\arbitraryxpathpropertyhandler および SDK\Samples\Pipelines\SchemaResolverComponent\SchemaResolverFlatFileDasm です。  
+   -   **VirtualStream (Microsoft.BizTalk.Streaming.dll)** -このクラスのソース コードが次のように、パイプラインの SDK の下の 2 つの場所にある: \samples\pipelines\arbitraryxpathpropertyhandler および SDK\Samples\Pipelines\SchemaResolverComponent\SchemaResolverFlatFileDasm します。  
   
-    -   **ReadOnlySeekableStream (Microsoft.BizTalk.Streaming.dll)** です。  
+   -   **ReadOnlySeekableStream (Microsoft.BizTalk.Streaming.dll)** します。  
   
-    -   **SeekAbleReadOnlyStream** -このクラスのソース コードにある 2 つの場所、パイプラインの SDK の下にある次のように: \samples\pipelines\arbitraryxpathpropertyhandler および SDK\Samples\Pipelines\SchemaResolverComponent\SchemaResolverFlatFileDasm です。  
+   -   **SeekAbleReadOnlyStream** -このクラスのソース コードが次のように、パイプラインの SDK の下の 2 つの場所にある: \samples\pipelines\arbitraryxpathpropertyhandler および SDK\Samples\Pipelines\SchemaResolverComponent\SchemaResolverFlatFileDasm します。  
   
-4.  PassThruReceive パイプラインと可能な限り PassThruTransmit の標準パイプラインを使用します。 任意のパイプライン コンポーネントが含まれていないし、メッセージの処理を実行しません。 このため、それらには受信または送信メッセージの最大のパフォーマンスを確認してください。 バイナリ メッセージを送信する必要がある場合は、BizTalk メッセージ ボックスと送信ポートで PassThruTransmit パイプラインにバイナリ ドキュメントを公開する必要がある場合は、受信場所で PassThruReceive パイプラインを使用できます。 メッセージがフォーマットされているし、転送する準備ができて場合オーケストレーションにバインドされる物理送信ポートで PassThruTransmit パイプラインを使用することもできます。 次の操作のいずれかを実行する必要がある場合、別のアプローチを使用する必要があります。  
+4. PassThruReceive パイプラインおよび可能な限り PassThruTransmit 標準パイプラインを使用します。 任意のパイプライン コンポーネントが含まれていないされ、メッセージの処理を実行しないでください。 このため、受信または送信メッセージの最大のパフォーマンスを支えます。 バイナリ メッセージを送信する必要がある場合は、バイナリのドキュメントを BizTalk メッセージ ボックスと送信ポートで PassThruTransmit パイプラインに発行する必要がある場合は、受信場所で PassThruReceive パイプラインを使用できます。 PassThruTransmit パイプラインで、メッセージは、フォーマットされているし、送信する準備ができている場合、オーケストレーションにバインドする物理送信ポートを使用することもできます。 次の操作のいずれかを実行する必要がある場合に、別のアプローチを使用する必要があります。  
   
-    -   受信 XML またはフラット ファイル メッセージのコンテキストにプロパティを昇格します。  
+   - 受信 XML またはフラット ファイル メッセージのコンテキストのプロパティを昇格させます。  
   
-    -   受信場所内のマップを適用します。  
+   - 受信場所内でマップを適用します。  
   
-    -   メッセージをサブスクライブするオーケストレーションでマップを適用します。  
+   - メッセージにサブスクライブするオーケストレーションでマップを適用します。  
   
-    -   メッセージをサブスクライブする送信ポートでマップを適用します。  
+   - メッセージをサブスクライブする送信ポートでマップを適用します。  
   
-     これらの操作を行うためには、プローブし、受信パイプライン内のドキュメントの種類を検出して MessageType コンテキスト プロパティに、(名前空間 #root 名) の値を割り当てます。 この操作は、通常、Xml 逆アセンブラー コンポーネント (XmlDasmComp) などの逆アセンブラー コンポーネントまたはフラット ファイル逆アセンブラー コンポーネント (FFDasmComp) して行います。 この例では、standard (たとえば、XmlReceive パイプライン) または標準またはカスタム逆アセンブラー コンポーネントを含むカスタム パイプラインを使用する必要があります。  
+     これらの操作を行うためには、プローブし受信パイプライン内のドキュメントの種類を検出し、MessageType のコンテキスト プロパティに (名前空間 #root 名の) 値を代入する必要があります。 この操作は、通常、Xml 逆アセンブラー コンポーネント (XmlDasmComp) などの逆アセンブラー コンポーネントまたはフラット ファイル逆アセンブラー コンポーネント (FFDasmComp) して行います。 この場合は、標準 (たとえば、XmlReceive パイプライン) または標準またはカスタム逆アセンブラー コンポーネントを含むカスタム パイプラインを使用する必要があります。  
   
-5.  できる限り遅くリソースを取得し、できるだけ早くリリースできるだけします。 たとえば、データベース上のデータにアクセスする必要がある場合は、できるだけ遅く接続を開くしてできるだけ早く閉じます。 C# を使用して、暗黙的に破棄可能なオブジェクトを解放するステートメントを使用して、または、オブジェクトを明示的に破棄するには、try – catch – finally ステートメントの finally ブロックします。 すると、コンポーネントをデバッグする単純なソース コードをインストルメント化します。  
+5. できる限り遅くリソースを取得し、できるだけ早期にリリースします。 たとえば、データをデータベースにアクセスする必要がある場合は、できるだけ遅く接続を開くして、できるだけ早く閉じます。 C# のステートメントを使用して、破棄可能なオブジェクトを暗黙的にリリースを使用して、または、オブジェクトを明示的に破棄するには、try – catch – finally ステートメントの最後にブロックします。 すると、コンポーネントをデバッグする単純なソース コードをインストルメント化します。  
   
-6.  厳密にメッセージの処理を高速化する必要はありません、パイプラインからコンポーネントを削除します。  
+6. 厳密に、メッセージの処理を高速化する必要はありませんが、パイプラインからコンポーネントを削除します。  
   
-7.  受信パイプライン内のメッセージのルーティング (オーケストレーション、送信ポート) またはメッセージ コンテキスト プロパティ (送信ポート) の降格する必要がある場合にのみ、メッセージ コンテキストに項目を昇格する必要があります。  
+7. 受信パイプラインでは、内部で (オーケストレーション、送信ポート) のメッセージのルーティング、メッセージ コンテキスト プロパティ (送信ポート) の下位変換の必要な場合にのみメッセージ コンテキストに項目を昇格する必要があります。  
   
-8.  メッセージを表示してメタデータを含める必要があるあり、ルーティングまたは降格目的で、使用するメタデータを使用しない場合、 **IBaseMessageContext.Write**メソッドの代わりに、 **IBaseMessageContext.Promote**メソッド。  
+8. メッセージを表示してメタデータを含める必要があると、ルーティングまたは降格のための使用をメタデータを使用しない場合、 **IBaseMessageContext.Write**メソッドの代わりに、 **IBaseMessageContext.Promote**メソッド。  
   
-9. XPath 式を使用してメッセージから情報を抽出する必要がある場合は、メモリを使用してにドキュメント全体が読み込まれないように、 **XmlDocument**だけ使用するオブジェクトを**SelectNodes**または**SelectSingleNode**メソッドです。 またはで説明する手法を使用して[ストリーミングでのメモリ使用量の最適化](../technical-guides/optimizing-memory-usage-with-streaming.md)です。  
+9. XPath 式を使用してメッセージから情報を抽出する必要がある場合にメモリを使用してドキュメント全体を読み込みを避けるため、 **XmlDocument**のみを使用するオブジェクト、 **SelectNodes**または**SelectSingleNode**メソッド。 説明する手法を使用して、または、[ストリーミングでのメモリ使用量の最適化](../technical-guides/optimizing-memory-usage-with-streaming.md)します。  
   
-## <a name="use-streaming-to-minimize-the-memory-footprint-required-when-loading-messages-in-pipelines"></a>ストリーミングを使用して、パイプラインでメッセージを読み込むときに必要なメモリ使用量を最小限に抑える  
+## <a name="use-streaming-to-minimize-the-memory-footprint-required-when-loading-messages-in-pipelines"></a>ストリーミングを使ってパイプラインでメッセージを読み込むときに必要なメモリのフット プリントを最小限にするには  
  次の手法では、パイプラインにメッセージを読み込む場合は、メッセージのメモリ使用量を最小限に抑える方法について説明します。  
   
-### <a name="use-readonlyseekablestream-and-virtualstream-to-process-a-message-from-a-pipeline-component"></a>ReadOnlySeekableStream と VirtualStream パイプライン コンポーネントからのメッセージの処理を使用してください。  
- メッセージ全体をパイプライン コンポーネントの内部でメモリに読み込まれないようにするベスト プラクティスと見なされます。 優先のアプローチは、カスタム ストリームの実装とし、要求が行われる読み取りとして、受信ストリームをラップする、カスタム ストリームの実装が、基になる、ラップされたストリームを読み取り、(純粋なストリーミング的に) 読み取られると、データを処理します。 これを実装するのには非常に難しくなり、ストリームで実行する必要がある新機能によって、可能なことができない可能性があります。 このケースでは、使用して、 **ReadOnlySeekableStream**と**VirtualStream** Microsoft.BizTalk.Streaming.dll によって公開されるクラスです。 これらの実装を提供しても[任意の XPath プロパティ ハンドラ (BizTalk Server サンプル)](http://go.microsoft.com/fwlink/?LinkId=160069) (http://go.microsoft.com/fwlink/?LinkId=160069) BizTalk SDK に含まれています。**ReadOnlySeekableStream**カーソルは、ストリームの先頭に移動できることを確認します。 **VirtualStream**サイズが、指定されたしきい値を超えていない限り、MemoryStream を内部で、使用する場合、ファイル システムにストリームが書き込まれます。 これら 2 つのストリームの組み合わせで使用する (を使用して**VirtualStream**の永続的な記憶域として、 **ReadOnlySeekableStream**)"seekability"と「オーバーフロー ファイル システムに」機能の両方を提供します。 これには、メッセージ全体をメモリに読み込むことがなくサイズの大きいメッセージの処理が対応しています。 次のコードは、この機能を実装するパイプライン コンポーネントで使用可能性があります。  
+### <a name="use-readonlyseekablestream-and-virtualstream-to-process-a-message-from-a-pipeline-component"></a>ReadOnlySeekableStream と VirtualStream を使用して、パイプライン コンポーネントからのメッセージを処理するには  
+ パイプライン コンポーネントの内部でメモリへのメッセージ全体の読み込みを回避するために、ベスト プラクティスと見なされます。 お勧めの方法は、カスタム ストリームの実装では、使用し、要求が行われた読み取りとして、受信ストリームをラップする、カスタム ストリームの実装は、基になる、ラップされたストリームを読み取り、(純粋なストリーミング方法) で読み取られると、データを処理します。 これは、実装が非常に困難にすることができ、可能であれば、に応じて、ストリームを使用して行うに必要なことができない可能性があります。 ここでは、使用して、 **ReadOnlySeekableStream**と**VirtualStream** Microsoft.BizTalk.Streaming.dll によって公開されるクラス。 これらの実装でも提供[任意の XPath プロパティ ハンドラ (BizTalk Server サンプル)](http://go.microsoft.com/fwlink/?LinkId=160069) (http://go.microsoft.com/fwlink/?LinkId=160069) BizTalk SDK に含まれています **。ReadOnlySeekableStream**により、カーソルは、ストリームの先頭に移動できます。 **VirtualStream**サイズが指定のしきい値を超えていない限り、MemoryStream を内部で、使用する場合、ストリーム、ファイル システムに書き込まれます。 これら 2 つのストリームを組み合わせての使用 (を使用して**VirtualStream**の永続的なストレージとして、 **ReadOnlySeekableStream**)"seekability"と「オーバーフロー ファイル システムに」機能の両方を提供します。 これには、メッセージ全体をメモリに読み込むことがなくサイズの大きいメッセージの処理が対応しています。 次のコードは、この機能を実装するパイプライン コンポーネントで使用可能性があります。  
   
 ```  
 int bufferSize = 0x280;  
@@ -71,15 +71,15 @@ Stream vStream = new VirtualStream(bufferSize, thresholdSize);
 Stream seekStream = new ReadOnlySeekableStream(inboundStream, vStream, bufferSize);  
 ```  
   
- このコードは、bufferSize を公開することで「オーバーフローしきい値」を提供し、各 thresholdSize 変数は、受信場所または送信ポート構成します。 開発者や管理者がさまざまなメッセージ型と (32 ビット エディションとなどのさまざまな構成が、このオーバーフローしきい値を調整し、ことができます。64 ビット)。  
+ このコードは、bufferSize を公開することで「オーバーフローしきい値」を提供し、各 thresholdSize 変数は、受信場所または送信ポートの構成。 開発者や管理者のさまざまなメッセージの種類と (32 ビットとなどのさまざまな構成によって、このオーバーフローしきい値を調整し、ことができます。64 ビット)。  
   
-### <a name="using-xpathreader-and-xpathcollection-to-extract-a-given-ibasemessage-object-from-within-a-custom-pipeline-component"></a>XPathReader と XPathCollection を使用して、カスタム パイプライン コンポーネントの中から指定された IBaseMessage オブジェクトを抽出します。  
- 特定の値を使用する代わりに、XML ドキュメントからプルされる必要がある場合、 **SelectNodes**と**SelectSingleNode** XmlDocument クラスによって公開されたメソッドが XPathReader クラスのインスタンスを使用します。次のコード例に示すように、Microsoft.BizTalk.XPathReader.dll アセンブリによって提供されます。  
+### <a name="using-xpathreader-and-xpathcollection-to-extract-a-given-ibasemessage-object-from-within-a-custom-pipeline-component"></a>XPathReader と XPathCollection を使用して、カスタム パイプライン コンポーネント内から指定した IBaseMessage オブジェクトを抽出します。  
+ 特定の値を使用する代わりに、XML ドキュメントからプルする必要がある場合、 **SelectNodes**と**SelectSingleNode** XPathReader クラスのインスタンスを使用して、XmlDocument クラスによって公開されるメソッド次のコード例に示すように、Microsoft.BizTalk.XPathReader.dll アセンブリによって提供されます。  
   
 > [!NOTE]  
->  小さいメッセージを特に、SelectNodes または SelectSingleNode と共に、XmlDocument を使用することがあります XPathReader を使用するよりも優れたパフォーマンスが、XPathReader では、アプリケーションのフラットなメモリ プロファイルを維持することができます。  
+>  XPathReader を使用してより優れたパフォーマンスを提供 SelectNodes または SelectSingleNode で XmlDocument を使用する可能性がありますが、XPathReader では、アプリケーションのフラットなメモリのプロファイルを保持できます。 特に、小さいメッセージ。  
   
- XPathReader と XPathCollection を使用して抽出する方法を示します、指定された**IBaseMessage**カスタム パイプライン コンポーネント内のオブジェクトにします。  
+ XPathReader と XPathCollection を使用して、抽出する方法を示します、指定された**IBaseMessage**からカスタム パイプライン コンポーネント内のオブジェクトします。  
   
 ```  
 public IBaseMessage Execute(IPipelineContext context, IBaseMessage message)  
@@ -126,8 +126,8 @@ public IBaseMessage Execute(IPipelineContext context, IBaseMessage message)
 }  
 ```  
   
-## <a name="use-xmlreader-and-xmlwriter-with-xmltranslatorstream-to-process-a-message-from-a-pipeline-component"></a>パイプライン コンポーネントからのメッセージを処理するのに XMLTranslatorStream で XMLReader および XMLWriter を使用します。  
- ストリーミングの手法を使用してカスタム パイプライン コンポーネントを実装するための別の方法は、.NET を使用する**XmlReader**と**XmlWriter**クラスと組み合わせて、 **XmlTranslatorStream** BizTalk Server によって提供されるクラスです。 たとえば、 **NamespaceTranslatorStream** Microsoft.BizTalk.Pipeline.Components アセンブリに含まれているクラスから継承**XmlTranslatorStream**し、古い名前空間の代わりに使用することができますストリームに含まれる XML ドキュメントに新しいものです。 新しいインスタンスをメッセージのボディ部の元のデータ ストリームをラップするカスタム パイプライン コンポーネントの内部には、この機能を使用するために、 **NamespaceTranslatorStream**クラスおよび後者を返します。 この方法で、受信メッセージがない読み取り、処理内では、パイプライン コンポーネントが、ストリームは、同一のパイプラインの後続のコンポーネントによって読み取られるか、最後に、ドキュメントを BizTalk Server に発行する前に、メッセージ エージェントによって使用される場合にのみメッセージ ボックスです。  
+## <a name="use-xmlreader-and-xmlwriter-with-xmltranslatorstream-to-process-a-message-from-a-pipeline-component"></a>パイプライン コンポーネントからのメッセージを処理する XMLTranslatorStream と XMLReader および XMLWriter を使用して、  
+ ストリーミングの手法を使用するカスタム パイプライン コンポーネントを実装するためのもう 1 つのメソッドは、.NET を使用する**XmlReader**と**XmlWriter**クラスと組み合わせて、 **XmlTranslatorStream** BizTalk Server によって提供されるクラス。 たとえば、 **NamespaceTranslatorStream** Microsoft.BizTalk.Pipeline.Components アセンブリに含まれるクラスから継承**XmlTranslatorStream**古い名前空間を置換するために使用できますストリームに含まれる XML ドキュメントに新しいものです。 新しいインスタンスをメッセージのボディ パーツの元のデータ ストリームをラップするカスタム パイプライン コンポーネント内でこの機能を使用するには、 **NamespaceTranslatorStream**クラスし、後者を返します。 この方法で、受信メッセージがない読み取り、処理ではなく、パイプライン コンポーネントでは、内部ストリームが同じパイプラインに後続のコンポーネントによって読み取られたか、ドキュメントを BizTalk Server に発行する前に、メッセージ エージェントによって最後に使用された場合にのみメッセージ ボックス。  
   
  次の例では、この機能を使用する方法を示します。  
   
@@ -168,25 +168,25 @@ public IBaseMessage Execute(IPipelineContext context, IBaseMessage message)
 ```  
   
 ## <a name="using-resourcetracker-in-custom-pipeline-components"></a>カスタム パイプライン コンポーネントで ResourceTracker を使用します。  
- パイプライン コンポーネントを作成オブジェクトの有効期間を管理し、これらのオブジェクトが不要にするとすぐに、ガベージ コレクションを実行します。  場合は、パイプライン コンポーネントには、このようなオブジェクトをパイプラインがパイプラインのコンテキストからフェッチするリソースの追跡ツールに追加する必要がありますし、最後のパイプラインの実行が終了するまでにオブジェクトの有効期間が希望しています。  
+ パイプライン コンポーネントは、作成オブジェクトの有効期間を管理して、これらのオブジェクトが不要とすぐに、ガベージ コレクションを実行する必要があります。  場合は、パイプライン コンポーネントには、このようなオブジェクトをパイプラインのコンテキストから、パイプラインをフェッチがリソースの追跡ツールに追加する必要がありますし、最後のパイプラインの実行が終わるまでオブジェクトの有効期間が希望しています。  
   
- リソースの追跡ツールは、次の種類のオブジェクトに使用します。  
+ リソースの追跡ツールは、次の種類のオブジェクトに使用されます。  
   
--   ストリーム オブジェクト  
+- Stream オブジェクト  
   
--   COM オブジェクト  
+- COM オブジェクト  
   
--   IDisposable オブジェクト  
+- IDisposable オブジェクト  
   
- メッセージ エンジンはそれが成功したか失敗したかどうかに関係なく、パイプラインは完全に実行した後、適切なタイミングでリソースの追跡ツールに追加されるすべてのネイティブ リソースが解放されることを確認します。 リソース トラッカー インスタンスとそれを追跡しているオブジェクトの有効期間は、パイプラインのコンテキスト オブジェクトによって管理されます。 パイプラインのコンテキストは IPipelineContext インターフェイスを実装するオブジェクトをパイプライン コンポーネントのすべての種類に提供されます。  
+  メッセージ エンジンによりが成功または失敗したかどうかに関係なく、パイプラインは完全に実行した後、適切なタイミングでリソースの追跡ツールに追加されるすべてのネイティブ リソースが解放されるようになります。 リソースの追跡ツールのインスタンスとそれを追跡しているオブジェクトの有効期間は、パイプラインのコンテキスト オブジェクトによって管理されます。 IPipelineContext インターフェイスを実装するオブジェクトをパイプライン コンポーネントのすべての種類に利用可能になってパイプライン コンテキスト。  
   
- たとえば、次のコード スニペットは、カスタム パイプライン コンポーネントで ResourceTracker プロパティを使用する方法について説明するサンプルです。 コード スニペットを ResourceTracker プロパティを使用するには、次のパラメーターを使用して`IPipelineContext.ResourceTracker.AddResource`です。 このパラメーターには。  
+  たとえば、次のコード スニペットは、カスタム パイプライン コンポーネントで ResourceTracker プロパティを使用する方法を示すサンプルです。 コード スニペットを ResourceTracker プロパティを使用するには、次のパラメーターを使用して`IPipelineContext.ResourceTracker.AddResource`します。 このパラメーターには。  
   
--   IPipelineContext インターフェイスは、ドキュメント処理に固有のすべてのインターフェイスへのアクセスに使用するメソッドを定義します。  
+- IPipelineContext インターフェイスは、すべてのドキュメント処理に固有のインターフェイスへのアクセスに使用するメソッドを定義します。  
   
--   ResourceTracker プロパティは、IPipelineContext を参照し、パイプライン処理の最後に明示的に破棄されるオブジェクトを追跡するために使用します。  
+- ResourceTracker プロパティは、IPipelineContext を参照し、パイプライン処理の最後に明示的に破棄されたオブジェクトを追跡するために使用します。  
   
--   ResourceTracker.AddResource メソッド COM オブジェクト、破棄可能なオブジェクトおよびストリームを追跡するために使用およびは常に内で使用、カスタム パイプライン コンポーネントを明示的に閉じる (ストリーム)、(IDisposable オブジェクト) を破棄またはこれら (COM オブジェクト) のリリースBizTalk メッセージ ボックスに、メッセージが公開される場合、リソースの種類。  
+- ResourceTracker.AddResource メソッドが COM オブジェクト、破棄可能なオブジェクトおよびストリームを追跡するために使用し、明示的に閉じる (ストリーム)、(IDisposable オブジェクト) を破棄またはこれら (COM オブジェクト) のリリースにカスタム パイプライン コンポーネント内で常に使用します。BizTalk メッセージ ボックスに、メッセージが発行されると、リソースの種類。  
   
 ```  
 public IBaseMessage Execute(IPipelineContext pContext, IBaseMessage pInMsg)  
@@ -227,16 +227,16 @@ public IBaseMessage Execute(IPipelineContext pContext, IBaseMessage pInMsg)
 }  
 ```  
   
-## <a name="comparison-of-loading-messages-into-pipelines-using-an-in-memory-approach-and-using-a-streaming-approach"></a>読み込みメッセージをインメモリ アプローチを使用して、ストリーミングの手法を使用するパイプラインの比較  
- 次の情報は、Nic Barden ブログから取得されました[http://blogs.objectsharp.com/cs/blogs/nbarden/archive/2008/04/14/developing-streaming-pipeline-components-part-1.aspx](http://go.microsoft.com/fwlink/?LinkId=160228) (http://go.microsoft.com/fwlink/?LinkId=160228)。 次の表は、パイプライン インメモリ アプローチを使用して、ストリーミングの手法の利用に読み込みメッセージの集計の比較を提供します。  
+## <a name="comparison-of-loading-messages-into-pipelines-using-an-in-memory-approach-and-using-a-streaming-approach"></a>読み込みメッセージをメモリ内のアプローチを使用して、ストリーミングのアプローチを使用して、パイプラインの比較  
+ 次の情報が Nic Barden のブログから引用したもの[ http://blogs.objectsharp.com/cs/blogs/nbarden/archive/2008/04/14/developing-streaming-pipeline-components-part-1.aspx ](http://go.microsoft.com/fwlink/?LinkId=160228) (http://go.microsoft.com/fwlink/?LinkId=160228)します。 このテーブルは、メモリ内のアプローチを使用して、ストリーミングのアプローチを使用してパイプラインに読み込みメッセージの集計の比較を提供します。  
   
 |比較しています.|ストリーミング|メモリ内|  
 |----------------------|---------------|---------------|  
-|1 つのメッセージのメモリ使用量|メッセージのサイズに関係なく、低|高 (メッセージのサイズによって異なります)|  
-|XML データの処理に使用する一般的なクラス|構築されたのとではカスタム派生します。<br /><br /> XmlTranslatorStream、XmlReader、および XmlWriter|XmlDocument、XPathDocument、MemoryStream および VirtualStream|  
-|ドキュメント|Poor – 多くのサポートされないと文書化されていない BizTalk クラス|非常に良好 - .NET Framework クラス|  
-|「処理ロジック」のコードの場所|-「をネットワーク上で」リーダーおよび Execute メソッドを使用してストリーム。<br />実際の実行は、データの読み取りと、リーダーおよびストリーム内に発生します。|パイプライン コンポーネントの実行メソッドから直接。|  
-|data|それを介するデータが読み込まれるとは、ラッピング各層で再作成されます。|読み、変更して、次のコンポーネントが呼び出される前に各コンポーネントに書き込まれます。|  
+|メッセージごとのメモリ使用量|メッセージのサイズに関係なく、低|高 (メッセージ サイズによって異なります)|  
+|XML データの処理に使用される一般的なクラス|ビルドとカスタムの派生の。<br /><br /> XmlTranslatorStream、XmlReader および XmlWriter|XmlDocument、XPathDocument、MemoryStream および VirtualStream|  
+|ドキュメント|役に立たなかった – 多くのサポートされていないと文書化されていない BizTalk クラス|非常に良好な - .NET Framework クラス|  
+|「ロジックを処理する」コードの場所|-「結び付ける」リーダーおよび Execute メソッドを使用してストリームします。<br />のデータの読み取りとは、リーダーおよびストリーム内実際の実行に発生します。|パイプライン コンポーネントの Execute メソッドから直接。|  
+|data|説明データを読むには、ラッピング各層で再作成されます。|変更し、次のコンポーネントが呼び出される前に各コンポーネントに書き出さの読み取り。|  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server アプリケーションの最適化](../technical-guides/optimizing-biztalk-server-applications.md)

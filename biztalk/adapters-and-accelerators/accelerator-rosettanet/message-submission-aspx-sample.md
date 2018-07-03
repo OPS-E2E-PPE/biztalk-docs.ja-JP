@@ -1,5 +1,5 @@
 ---
-title: メッセージ送信 ASPX サンプル |Microsoft ドキュメント
+title: メッセージ送信 ASPX サンプル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12fb7d90485014a62ed9010590d27a79ecd925c5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a36a41e5bb60169632072445ff4685e1df5dbce9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207202"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979595"
 ---
 # <a name="message-submission-aspx-sample"></a>メッセージ送信 ASPX サンプル
 ここでは、サービス内容をプライベート プロセスに送信するために使用するサンプル .aspx コードを提供します。 line-of-business (LOB) アプリケーションの代わりに、この .aspx コードを使用できます。  
@@ -34,9 +34,9 @@ ms.locfileid: "22207202"
 -   入力添付ファイルの配列と注釈を生成する  
   
 ## <a name="example"></a>例  
- このコードは、ブラウザ、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]®、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® Word のようなフロントエンド アプリケーションからの入力を受け入れて、開始側のプライベート プロセスが使用できる XML ドキュメントを生成します。  
+ このコードは、ブラウザーなどのフロント エンド アプリケーションからの入力を受け付ける[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]®、または Microsoft® Word では、開始側プライベート プロセスが消費できる XML ドキュメントを生成します。  
   
- LOBWebApplication ユーティリティには次のコードが含まれています。 詳細については、次を参照してください。 [LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)です。  
+ LOBWebApplication ユーティリティには次のコードが含まれています。 詳細については、次を参照してください。 [LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)します。  
   
 ```  
 using System;  
@@ -111,4 +111,4 @@ namespace Microsoft.Solutions.BTARN.SDK
   
 ## <a name="see-also"></a>参照  
  [LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)   
- [メッセージング サンプル](../../adapters-and-accelerators/accelerator-rosettanet/messaging-samples.md)
+ [メッセージ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/messaging-samples.md)

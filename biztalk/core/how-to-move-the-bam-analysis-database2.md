@@ -1,5 +1,5 @@
 ---
-title: BAM Analysis Database2 を移動する方法 |Microsoft ドキュメント
+title: BAM Analysis の Database2 を移動する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f9ae627dffd36ceca78e7da0b9e8e516845691a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 237f951a4795ef6571a72989be22893d57572df9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254946"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37011795"
 ---
 # <a name="how-to-move-the-bam-analysis-database"></a>BAM 分析データベースを移動する方法
 ここでは、BAM 分析データベースを他のサーバーに移動する手順について説明します。  
@@ -30,38 +30,38 @@ ms.locfileid: "22254946"
   
 ### <a name="to-move-the-bam-analysis-database"></a>BAM 分析データベースを移動するには  
   
-1.  BAM を復元するときに使用する .xml ファイルのコピーを用意します。  
+1. BAM を復元するときに使用する .xml ファイルのコピーを用意します。  
   
-    1.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+   1. をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-    2.  コマンド プロンプトで、次のディレクトリに移動します  
+   2. コマンド プロンプトで、次のディレクトリに移動します  
   
-         [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡  
+       [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡  
   
-    3.  コマンド プロンプトで、次のように入力します。  
+   3. コマンド プロンプトで、次のように入力します。  
   
-        ```  
-        Bm.exe get-config –filename:BAMConfiguration.xml  
-        ```  
+      ```  
+      Bm.exe get-config –filename:BAMConfiguration.xml  
+      ```  
   
-        > [!NOTE]
-        >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
+      > [!NOTE]
+      >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-2.  古いサーバー上のデータベースをバックアップする方法 SQL Server オンライン ブックの指示に従います。  
+2. 古いサーバー上のデータベースをバックアップする方法の SQL Server オンライン ブックの指示に従います。  
   
-3.  BAM 分析データベースを新しい SQL Server にコピーします。  
+3. BAM 分析データベースを新しい SQL Server にコピーします。  
   
-4.  SQL Server Books Online に記載されている手順に従い、新しいサーバーにデータベースを復元します。  
+4. SQL Server Books Online に記載されている手順に従い、新しいサーバーにデータベースを復元します。  
   
-5.  BAMConfiguration.xml ファイルで、AnalysisDatabase DeploymentUnit セクションの ServerName を新しいサーバー名に変更します。  
+5. BAMConfiguration.xml ファイルで、AnalysisDatabase DeploymentUnit セクションの ServerName を新しいサーバー名に変更します。  
   
-6.  BAMConfiguration.xml ファイルを保存して閉じます。  
+6. BAMConfiguration.xml ファイルを保存して閉じます。  
   
-7.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+7. をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-8.  コマンド プロンプトで、次のディレクトリに移動します  
+8. コマンド プロンプトで、次のディレクトリに移動します  
   
-     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡  
+    [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡  
   
 9. コマンド プロンプトで、次のように入力します。  
   

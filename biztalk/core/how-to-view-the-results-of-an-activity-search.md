@@ -1,5 +1,5 @@
 ---
-title: アクティビティの検索の結果を表示する方法 |Microsoft ドキュメント
+title: アクティビティの検索の結果を表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,49 +21,49 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c5e96da9ed256557306cc4d69ad529161fa3342
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 061f6a8c15f4ce2aabbdf90364a521a8fdf2093b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257730"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008899"
 ---
 # <a name="how-to-view-the-results-of-an-activity-search"></a>アクティビティの検索の結果を表示する方法
-ユーザーをクリックして、クエリの結果を表示できます、**クエリの実行**BAM ポータルのコンテンツ フレームの上部のセクションでボタンをクリックします。 クエリの結果に表示されます、**結果**フレームの下部のセクションです。  
+ユーザーをクリックして、クエリの結果を表示できます、**クエリの実行**BAM ポータルのコンテンツ フレームの上部にボタンをクリックします。 クエリの結果に表示されます、**結果**フレームの下部のセクション。  
   
- アクティビティの検索の結果は各行に 1 レコードずつ表示されます。 各レコードから成るデータとマイルス トーンは、列の選択 で選択されているしで配置された順に表示されます、**に表示される項目**ボックス。  
+ アクティビティの検索の結果は各行に 1 レコードずつ表示されます。 各レコードから成るデータとマイルス トーンは、列の選択 で選択されているしで配置された順に表示されます、**表示する項目**ボックス。  
   
  返されたレコードの詳細を確認するには、行内の任意の場所をクリックしてください。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、アクティビティが展開されている必要があります。 これを行う方法については、次を参照してください。[を適用し、追跡プロファイルを削除する方法](../core/how-to-apply-and-remove-a-tracking-profile.md)です。  
+ このトピックの手順を実行するには、アクティビティが展開されている必要があります。 これを行う方法については、次を参照してください。[を適用し、追跡プロファイルの削除方法](../core/how-to-apply-and-remove-a-tracking-profile.md)します。  
   
 ## <a name="return-results"></a>結果を返す  
   
 #### <a name="to-execute-a-query-to-return-results"></a>結果を返すクエリを実行するには  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BAM ポータル Web サイト**です。  
+1. クリックして**開始**、 をポイント**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BAM ポータル Web サイト**します。  
   
-2.  **マイ ビュー**  ウィンドウで、アクティビティの検索を作成するビューをクリックします。  
+2. **マイ ビュー**ウィンドウで、アクティビティの検索を作成するビューをクリックします。  
   
-3.  そのビューに関連するアクティビティをクリックし、コンテンツ フレームにそのアクティビティを読み込みます。  
+3. そのビューに関連するアクティビティをクリックし、コンテンツ フレームにそのアクティビティを読み込みます。  
   
-4.  アクティビティの検索を作成するか、既存のアクティビティの検索を開きます。 作成またはアクティビティの検索を開く方法については、次を参照してください。[アクティビティの検索でクエリを作成する方法](../core/how-to-create-a-query-in-activity-search.md)です。  
+4. アクティビティの検索を作成するか、既存のアクティビティの検索を開きます。 作成またはアクティビティの検索を開く方法については、次を参照してください。[アクティビティの検索でクエリを作成する方法](../core/how-to-create-a-query-in-activity-search.md)します。  
   
-5.  クリックして、**クエリの実行**ポータルのコンテンツ フレームの上部にあるボタンをクリックします。  
+5. をクリックして、**クエリの実行**ポータルのコンテンツ フレームの上部にあるボタンをクリックします。  
   
-6.  クエリの出力を表示するスクロール、**結果** コンテンツ フレームの領域。  
+6. クエリの出力を表示するスクロール、**結果** コンテンツ フレームの領域。  
   
 ## <a name="view-results-information"></a>結果情報の表示  
  クエリによって返された項目の詳細なステータス情報を表示できます。 次の補足情報が表示されます。  
   
--   関連するマイルストーンとデータで構成されるアクティビティ ステータス  
+- 関連するマイルストーンとデータで構成されるアクティビティ ステータス  
   
--   関連ドキュメント  
+- 関連ドキュメント  
   
--   関連アクティビティ  
+- 関連アクティビティ  
   
- をクリックして、管理者によるアシスタンスを要求するさらに、**アシスタンス**下のボタン、**関連アクティビティ**コンテンツ フレーム内の領域。  
+  クリックして、管理者によるアシスタンスを要求するさらに、**アシスタンス**下のボタン、**関連アクティビティ**コンテンツ フレーム内の領域。  
   
 #### <a name="to-view-detailed-status-information-on-results"></a>結果の詳細なステータス情報を表示するには  
   
@@ -79,9 +79,9 @@ ms.locfileid: "22257730"
   
 -   [関連ドキュメント](../core/related-documents.md)  
   
--   [関連するアクティビティ](../core/related-activities.md)  
+-   [関連アクティビティ](../core/related-activities.md)  
   
--   [アシスタンスを要求します。](../core/request-assistance.md)  
+-   [サポートの要求](../core/request-assistance.md)  
   
 ## <a name="see-also"></a>参照  
  [BAM ポータルでのアクティビティの検索](../core/activity-searches-in-the-bam-portal.md)

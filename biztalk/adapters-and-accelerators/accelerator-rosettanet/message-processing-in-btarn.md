@@ -1,5 +1,5 @@
 ---
-title: BTARN での処理をメッセージ |Microsoft ドキュメント
+title: BTARN での処理のメッセージ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27d3448902c7a8957a80c6cf926ba78ce41d342d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f2833d0ae20462d5be84a45b49fc2e1fde44be4f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209626"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36967147"
 ---
 # <a name="message-processing-in-btarn"></a>BTARN でのメッセージ処理
-ここでは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] の主なコンポーネントがどのようにメッセージを処理するかについて説明します。 このセクションのトピックでは、必要に応じてコンポーネント内のメッセージの流れについても説明します。  
+このセクションの説明方法 Microsoft® の主要コンポーネント[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]メッセージを処理します。 このセクションのトピックでは、必要に応じてコンポーネント内のメッセージの流れについても説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
