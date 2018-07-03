@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11013 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 11013 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4765f542f7694b8ca5019af9effb8eace1ffbb60
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9f251dcbe15fc53c45f0b253cd4437e9e123d54d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277946"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37000315"
 ---
-# <a name="single-sign-on-event-11013"></a><span data-ttu-id="55bdf-102">シングル サインオン: イベント 11013</span><span class="sxs-lookup"><span data-stu-id="55bdf-102">Single Sign-On: Event 11013</span></span>
-## <a name="details"></a><span data-ttu-id="55bdf-103">詳細</span><span class="sxs-lookup"><span data-stu-id="55bdf-103">Details</span></span>  
+# <a name="single-sign-on-event-11013"></a><span data-ttu-id="b1cf2-102">シングル サインオン: イベント 11013</span><span class="sxs-lookup"><span data-stu-id="b1cf2-102">Single Sign-On: Event 11013</span></span>
+## <a name="details"></a><span data-ttu-id="b1cf2-103">詳細</span><span class="sxs-lookup"><span data-stu-id="b1cf2-103">Details</span></span>  
   
-|||  
-|-|-|  
-|<span data-ttu-id="55bdf-104">製品名</span><span class="sxs-lookup"><span data-stu-id="55bdf-104">Product Name</span></span>|<span data-ttu-id="55bdf-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="55bdf-105">Enterprise Single Sign-On</span></span>|  
-|<span data-ttu-id="55bdf-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="55bdf-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|<span data-ttu-id="55bdf-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="55bdf-107">Event ID</span></span>|<span data-ttu-id="55bdf-108">11013</span><span class="sxs-lookup"><span data-stu-id="55bdf-108">11013</span></span>|  
-|<span data-ttu-id="55bdf-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="55bdf-109">Event Source</span></span>|<span data-ttu-id="55bdf-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="55bdf-110">ENTSSO</span></span>|  
-|<span data-ttu-id="55bdf-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="55bdf-111">Component</span></span>|<span data-ttu-id="55bdf-112">なし</span><span class="sxs-lookup"><span data-stu-id="55bdf-112">N/A</span></span>|  
-|<span data-ttu-id="55bdf-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="55bdf-113">Symbolic Name</span></span>|<span data-ttu-id="55bdf-114">SSO_WARN_NOT_APP_USER</span><span class="sxs-lookup"><span data-stu-id="55bdf-114">SSO_WARN_NOT_APP_USER</span></span>|  
-|<span data-ttu-id="55bdf-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="55bdf-115">Message Text</span></span>|<span data-ttu-id="55bdf-116">クライアント ユーザーがアプリケーション ユーザー アカウントのメンバーではありません。%r</span><span class="sxs-lookup"><span data-stu-id="55bdf-116">Client user is not a member of the Application Users account.%r</span></span><br /><br /> <span data-ttu-id="55bdf-117">追跡 ID: %1 %r</span><span class="sxs-lookup"><span data-stu-id="55bdf-117">Tracking ID: %1%r</span></span><br /><br /> <span data-ttu-id="55bdf-118">クライアント ユーザー: %2\\%3 %r</span><span class="sxs-lookup"><span data-stu-id="55bdf-118">Client User: %2\\%3%r</span></span><br /><br /> <span data-ttu-id="55bdf-119">アプリケーション名: %4 %r</span><span class="sxs-lookup"><span data-stu-id="55bdf-119">Application Name: %4%r</span></span><br /><br /> <span data-ttu-id="55bdf-120">アプリケーション ユーザー: %5</span><span class="sxs-lookup"><span data-stu-id="55bdf-120">Application Users: %5</span></span>|  
+|                 |                                                                                                                                                                                                      |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <span data-ttu-id="b1cf2-104">製品名</span><span class="sxs-lookup"><span data-stu-id="b1cf2-104">Product Name</span></span>   |                                                                                      <span data-ttu-id="b1cf2-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="b1cf2-105">Enterprise Single Sign-On</span></span>                                                                                       |
+| <span data-ttu-id="b1cf2-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="b1cf2-106">Product Version</span></span> |                                                                      [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                      |
+|    <span data-ttu-id="b1cf2-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="b1cf2-107">Event ID</span></span>     |                                                                                                <span data-ttu-id="b1cf2-108">11013</span><span class="sxs-lookup"><span data-stu-id="b1cf2-108">11013</span></span>                                                                                                 |
+|  <span data-ttu-id="b1cf2-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="b1cf2-109">Event Source</span></span>   |                                                                                                <span data-ttu-id="b1cf2-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="b1cf2-110">ENTSSO</span></span>                                                                                                |
+|    <span data-ttu-id="b1cf2-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="b1cf2-111">Component</span></span>    |                                                                                                 <span data-ttu-id="b1cf2-112">なし</span><span class="sxs-lookup"><span data-stu-id="b1cf2-112">N/A</span></span>                                                                                                  |
+|  <span data-ttu-id="b1cf2-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="b1cf2-113">Symbolic Name</span></span>  |                                                                                        <span data-ttu-id="b1cf2-114">SSO_WARN_NOT_APP_USER</span><span class="sxs-lookup"><span data-stu-id="b1cf2-114">SSO_WARN_NOT_APP_USER</span></span>                                                                                         |
+|  <span data-ttu-id="b1cf2-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="b1cf2-115">Message Text</span></span>   | <span data-ttu-id="b1cf2-116">クライアント ユーザーがアプリケーション ユーザー アカウントのメンバーではありません。%r</span><span class="sxs-lookup"><span data-stu-id="b1cf2-116">Client user is not a member of the Application Users account.%r</span></span><br /><br /> <span data-ttu-id="b1cf2-117">追跡 ID: %1 %r</span><span class="sxs-lookup"><span data-stu-id="b1cf2-117">Tracking ID: %1%r</span></span><br /><br /> <span data-ttu-id="b1cf2-118">クライアント ユーザー: %2\\% 3 %r</span><span class="sxs-lookup"><span data-stu-id="b1cf2-118">Client User: %2\\%3%r</span></span><br /><br /> <span data-ttu-id="b1cf2-119">アプリケーション名: % 4 %r</span><span class="sxs-lookup"><span data-stu-id="b1cf2-119">Application Name: %4%r</span></span><br /><br /> <span data-ttu-id="b1cf2-120">アプリケーション ユーザー: %5</span><span class="sxs-lookup"><span data-stu-id="b1cf2-120">Application Users: %5</span></span> |
   
-## <a name="explanation"></a><span data-ttu-id="55bdf-121">説明</span><span class="sxs-lookup"><span data-stu-id="55bdf-121">Explanation</span></span>  
- <span data-ttu-id="55bdf-122">クライアント ユーザーがアプリケーション ユーザー アカウントのメンバーではありません。</span><span class="sxs-lookup"><span data-stu-id="55bdf-122">The client user is not a member of the Application Users account.</span></span> <span data-ttu-id="55bdf-123">この警告は、監査レベルが高に設定されている場合にのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="55bdf-123">This warning only appears when the audit levels are set to high.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="b1cf2-121">説明</span><span class="sxs-lookup"><span data-stu-id="b1cf2-121">Explanation</span></span>  
+ <span data-ttu-id="b1cf2-122">クライアント ユーザーがアプリケーション ユーザー アカウントのメンバーではありません。</span><span class="sxs-lookup"><span data-stu-id="b1cf2-122">The client user is not a member of the Application Users account.</span></span> <span data-ttu-id="b1cf2-123">この警告は、監査レベルが高に設定されている場合にのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="b1cf2-123">This warning only appears when the audit levels are set to high.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="55bdf-124">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="55bdf-124">User Action</span></span>  
- <span data-ttu-id="55bdf-125">この状況を解決するには、クライアント ユーザーをアプリケーション ユーザー アカウントのメンバーにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="55bdf-125">To remedy the situation, you must make the client user a member of the Application Users account.</span></span> <span data-ttu-id="55bdf-126">今後警告を表示しない場合は、監査レベルを低くします。</span><span class="sxs-lookup"><span data-stu-id="55bdf-126">To stop this warning from appearing in the future, you can lower the audit levels.</span></span>
+## <a name="user-action"></a><span data-ttu-id="b1cf2-124">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="b1cf2-124">User Action</span></span>  
+ <span data-ttu-id="b1cf2-125">この状況を解決するには、クライアント ユーザーをアプリケーション ユーザー アカウントのメンバーにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b1cf2-125">To remedy the situation, you must make the client user a member of the Application Users account.</span></span> <span data-ttu-id="b1cf2-126">今後警告を表示しない場合は、監査レベルを低くします。</span><span class="sxs-lookup"><span data-stu-id="b1cf2-126">To stop this warning from appearing in the future, you can lower the audit levels.</span></span>

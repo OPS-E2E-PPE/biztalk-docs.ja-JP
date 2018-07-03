@@ -1,5 +1,5 @@
 ---
-title: インストールに関するエラー メッセージ |Microsoft ドキュメント
+title: インストールに関するエラー メッセージ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,46 +15,46 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ec99a2e9f20b09c4daddad0336037c7f539782a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 1fe3b422c860b4b697b259dc731f5484fac87455
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971920"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37001811"
 ---
-# <a name="installation-error-message"></a><span data-ttu-id="724dc-102">インストールに関するエラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="724dc-102">Installation Error Message</span></span>
-<span data-ttu-id="724dc-103">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service をインストールした後に、送信場所または受信場所を定義すると、次のエラーが発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="724dc-103">After you install Microsoft BizTalk Adapter for TIBCO Enterprise Message Service, defining a send or receive location for it might result in the following error:</span></span>  
+# <a name="installation-error-message"></a><span data-ttu-id="f0924-102">インストールに関するエラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="f0924-102">Installation Error Message</span></span>
+<span data-ttu-id="f0924-103">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service をインストールした後に、送信場所または受信場所を定義すると、次のエラーが発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="f0924-103">After you install Microsoft BizTalk Adapter for TIBCO Enterprise Message Service, defining a send or receive location for it might result in the following error:</span></span>  
   
- <span data-ttu-id="724dc-104">メッセージング エンジンが受信 URL に追加できませんでした"\<送信/受信場所の URL\>"アダプター"TIBCO EMS"にします。</span><span class="sxs-lookup"><span data-stu-id="724dc-104">The Messaging Engine failed to add a receive URL "\< send/receive location URL\>" to the adapter "TIBCO EMS".</span></span> <span data-ttu-id="724dc-105">理由:"ファイルまたはアセンブリ名 TIBCO。EMS、またはその依存関係の 1 つが見つかりませんでした。"</span><span class="sxs-lookup"><span data-stu-id="724dc-105">Reason: "File or assembly name TIBCO.EMS, or one of its dependencies, was not found."</span></span>  
+ <span data-ttu-id="f0924-104">メッセージング エンジンは、受信 URL を追加できませんでした"\<送信/受信場所 URL\>"アダプター"TIBCO EMS"にします。</span><span class="sxs-lookup"><span data-stu-id="f0924-104">The Messaging Engine failed to add a receive URL "\< send/receive location URL\>" to the adapter "TIBCO EMS".</span></span> <span data-ttu-id="f0924-105">理由:"ファイルまたはアセンブリ名 TIBCO。EMS、またはその依存関係の 1 つが見つかりません。"</span><span class="sxs-lookup"><span data-stu-id="f0924-105">Reason: "File or assembly name TIBCO.EMS, or one of its dependencies, was not found."</span></span>  
   
-## <a name="possible-causes"></a><span data-ttu-id="724dc-106">考えられる原因</span><span class="sxs-lookup"><span data-stu-id="724dc-106">Possible Causes</span></span>  
- <span data-ttu-id="724dc-107">通常、このエラーの原因は以下のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="724dc-107">This error usually has one of the following causes.</span></span>  
+## <a name="possible-causes"></a><span data-ttu-id="f0924-106">考えられる原因</span><span class="sxs-lookup"><span data-stu-id="f0924-106">Possible Causes</span></span>  
+ <span data-ttu-id="f0924-107">通常、このエラーの原因は以下のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="f0924-107">This error usually has one of the following causes.</span></span>  
   
-### <a name="assembly-not-in-gac"></a><span data-ttu-id="724dc-108">アセンブリが GAC に存在しない</span><span class="sxs-lookup"><span data-stu-id="724dc-108">Assembly Not in GAC</span></span>  
- <span data-ttu-id="724dc-109">BizTalk Adapter for TIBCO EMS は .NET Framework アプリケーションであり、.NET Framework アセンブリ TIBCO.EMS を使用します。</span><span class="sxs-lookup"><span data-stu-id="724dc-109">BizTalk Adapter for TIBCO EMS is a .NET Framework application, and uses the .NET Framework assembly, TIBCO.EMS.</span></span> <span data-ttu-id="724dc-110">このアセンブリは、.NET Framework が実行時に特定できるように、.NET Framework グローバル アセンブリ キャッシュ (GAC) に存在している必要があります。</span><span class="sxs-lookup"><span data-stu-id="724dc-110">This assembly must be present in the .NET Framework global assembly cache (GAC) for the .NET Framework to find it at run time.</span></span>  
+### <a name="assembly-not-in-gac"></a><span data-ttu-id="f0924-108">アセンブリが GAC に存在しない</span><span class="sxs-lookup"><span data-stu-id="f0924-108">Assembly Not in GAC</span></span>  
+ <span data-ttu-id="f0924-109">BizTalk Adapter for TIBCO EMS は .NET Framework アプリケーションであり、.NET Framework アセンブリ TIBCO.EMS を使用します。</span><span class="sxs-lookup"><span data-stu-id="f0924-109">BizTalk Adapter for TIBCO EMS is a .NET Framework application, and uses the .NET Framework assembly, TIBCO.EMS.</span></span> <span data-ttu-id="f0924-110">このアセンブリは、.NET Framework が実行時に特定できるように、.NET Framework グローバル アセンブリ キャッシュ (GAC) に存在している必要があります。</span><span class="sxs-lookup"><span data-stu-id="f0924-110">This assembly must be present in the .NET Framework global assembly cache (GAC) for the .NET Framework to find it at run time.</span></span>  
   
-#### <a name="solution"></a><span data-ttu-id="724dc-111">解決方法</span><span class="sxs-lookup"><span data-stu-id="724dc-111">Solution</span></span>  
- <span data-ttu-id="724dc-112">アセンブリが GAC に存在するかどうかを判断するには、コマンド プロンプトを開き、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="724dc-112">To determine if the assembly is present in the GAC, open a command prompt and type the following command:</span></span>  
+#### <a name="solution"></a><span data-ttu-id="f0924-111">解決方法</span><span class="sxs-lookup"><span data-stu-id="f0924-111">Solution</span></span>  
+ <span data-ttu-id="f0924-112">アセンブリが GAC に存在するかどうかを判断するには、コマンド プロンプトを開き、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="f0924-112">To determine if the assembly is present in the GAC, open a command prompt and type the following command:</span></span>  
   
  `GACUTIL /L TIBCO.EMS`  
   
- <span data-ttu-id="724dc-113">結果に項目が表示されない場合は、アセンブリを GAC に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="724dc-113">If the result shows zero items, you must add the assembly to the GAC.</span></span> <span data-ttu-id="724dc-114">そのためには、コマンド プロンプトを開き、ディレクトリを TIBCO EMS のインストール クライアントの \cs ディレクトリ (既定のインストール場所は C:\TIBCO\EMS\Clients\CS) に変更し、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="724dc-114">To do this, open a command prompt, change directories to your TIBCO EMS installation clients\cs directory (the default installation location is C:\TIBCO\EMS\Clients\CS), and run the following command:</span></span>  
+ <span data-ttu-id="f0924-113">結果に項目が表示されない場合は、アセンブリを GAC に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f0924-113">If the result shows zero items, you must add the assembly to the GAC.</span></span> <span data-ttu-id="f0924-114">そのためには、コマンド プロンプトを開き、ディレクトリを TIBCO EMS のインストール クライアントの \cs ディレクトリ (既定のインストール場所は C:\TIBCO\EMS\Clients\CS) に変更し、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="f0924-114">To do this, open a command prompt, change directories to your TIBCO EMS installation clients\cs directory (the default installation location is C:\TIBCO\EMS\Clients\CS), and run the following command:</span></span>  
   
  `GACUTIL /i TIBCO.EMS.DLL`  
   
-### <a name="different-version-of-assembly-in-gac"></a><span data-ttu-id="724dc-115">GAC のアセンブリのバージョンが異なる</span><span class="sxs-lookup"><span data-stu-id="724dc-115">Different Version of Assembly in GAC</span></span>  
- <span data-ttu-id="724dc-116">TIBCO.EMS.dll アセンブリは GAC に存在していますが、バージョンが BizTalk Adapter for TIBCO EMS のビルドに使用されたバージョンとは異なります。</span><span class="sxs-lookup"><span data-stu-id="724dc-116">The TIBCO.EMS.dll assembly is in the GAC, but it is a different version from the one used to build BizTalk Adapter for TIBCO EMS.</span></span> <span data-ttu-id="724dc-117">コンピュータにインストールされた TIBCO.EMS.dll が Version 4.2 以上の場合は、アダプタのビルドに使用されたバージョンと互換性があります (TIBCO で情報を確認できます)。</span><span class="sxs-lookup"><span data-stu-id="724dc-117">If the TIBCO.EMS.dll that is installed on the computer is from a product version 4.2 or above, it should be compatible with the version used to build the adapter (you can verify that information with TIBCO).</span></span>  
+### <a name="different-version-of-assembly-in-gac"></a><span data-ttu-id="f0924-115">GAC のアセンブリのバージョンが異なる</span><span class="sxs-lookup"><span data-stu-id="f0924-115">Different Version of Assembly in GAC</span></span>  
+ <span data-ttu-id="f0924-116">TIBCO.EMS.dll アセンブリは GAC に存在していますが、バージョンが BizTalk Adapter for TIBCO EMS のビルドに使用されたバージョンとは異なります。</span><span class="sxs-lookup"><span data-stu-id="f0924-116">The TIBCO.EMS.dll assembly is in the GAC, but it is a different version from the one used to build BizTalk Adapter for TIBCO EMS.</span></span> <span data-ttu-id="f0924-117">コンピュータにインストールされた TIBCO.EMS.dll が Version 4.2 以上の場合は、アダプタのビルドに使用されたバージョンと互換性があります (TIBCO で情報を確認できます)。</span><span class="sxs-lookup"><span data-stu-id="f0924-117">If the TIBCO.EMS.dll that is installed on the computer is from a product version 4.2 or above, it should be compatible with the version used to build the adapter (you can verify that information with TIBCO).</span></span>  
   
-#### <a name="solution"></a><span data-ttu-id="724dc-118">解決方法</span><span class="sxs-lookup"><span data-stu-id="724dc-118">Solution</span></span>  
- <span data-ttu-id="724dc-119">.NET Framework にはこの問題を回避する方法が用意されています。</span><span class="sxs-lookup"><span data-stu-id="724dc-119">The .NET Framework provides a way to work around this problem.</span></span> <span data-ttu-id="724dc-120">呼び出された*バインディングのリダイレクト*、構成ファイルを使用します。</span><span class="sxs-lookup"><span data-stu-id="724dc-120">It is called *binding redirection*, which uses a configuration file.</span></span>  
+#### <a name="solution"></a><span data-ttu-id="f0924-118">解決方法</span><span class="sxs-lookup"><span data-stu-id="f0924-118">Solution</span></span>  
+ <span data-ttu-id="f0924-119">.NET Framework にはこの問題を回避する方法が用意されています。</span><span class="sxs-lookup"><span data-stu-id="f0924-119">The .NET Framework provides a way to work around this problem.</span></span> <span data-ttu-id="f0924-120">呼び出された*バインド リダイレクト*、構成ファイルを使用します。</span><span class="sxs-lookup"><span data-stu-id="f0924-120">It is called *binding redirection*, which uses a configuration file.</span></span>  
   
- <span data-ttu-id="724dc-121">エラー メッセージが表示されないようにするには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="724dc-121">Follow these steps to eliminate the error message:</span></span>  
+ <span data-ttu-id="f0924-121">エラー メッセージが表示されないようにするには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="f0924-121">Follow these steps to eliminate the error message:</span></span>  
   
-1.  <span data-ttu-id="724dc-122">任意のテキスト エディタを使用して、ファイル BTSNTSVC.exe.config を開きます。</span><span class="sxs-lookup"><span data-stu-id="724dc-122">With any text editor, open the file BTSNTSVC.exe.config.</span></span>  
+1. <span data-ttu-id="f0924-122">任意のテキスト エディタを使用して、ファイル BTSNTSVC.exe.config を開きます。</span><span class="sxs-lookup"><span data-stu-id="f0924-122">With any text editor, open the file BTSNTSVC.exe.config.</span></span>  
   
-     <span data-ttu-id="724dc-123">ファイルは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ディレクトリ (既定のインストール場所は [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]) にあります。</span><span class="sxs-lookup"><span data-stu-id="724dc-123">The file is located in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] directory (the default installation location is: [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]).</span></span>  
+    <span data-ttu-id="f0924-123">ファイルは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ディレクトリ (既定のインストール場所は [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]) にあります。</span><span class="sxs-lookup"><span data-stu-id="f0924-123">The file is located in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] directory (the default installation location is: [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]).</span></span>  
   
-2.  <span data-ttu-id="724dc-124">子として、次のエントリを BTSNTSVC.exe.config ファイルに追加、 \<assemblyBinding\>要素。</span><span class="sxs-lookup"><span data-stu-id="724dc-124">Add the following entry to the BTSNTSVC.exe.config file, as a child of the \<assemblyBinding\> element:</span></span>  
+2. <span data-ttu-id="f0924-124">子として、BTSNTSVC.exe.config ファイルに次のエントリを追加、 \<assemblyBinding\>要素。</span><span class="sxs-lookup"><span data-stu-id="f0924-124">Add the following entry to the BTSNTSVC.exe.config file, as a child of the \<assemblyBinding\> element:</span></span>  
   
 ```  
 <dependentAssembly>  
@@ -65,7 +65,7 @@ ms.locfileid: "25971920"
 </dependentAssembly>  
 ```  
   
- <span data-ttu-id="724dc-125">BTSNTSVC.exe.config ファイルが変更されていない場合、 \<assemblyBinding\>要素は次のようになりますできません。</span><span class="sxs-lookup"><span data-stu-id="724dc-125">If the BTSNTSVC.exe.config file has not been previously modified, the \<assemblyBinding\> element would not look like this:</span></span>  
+ <span data-ttu-id="f0924-125">BTSNTSVC.exe.config ファイルが変更されていない場合、 \<assemblyBinding\>要素にいない次のようになります。</span><span class="sxs-lookup"><span data-stu-id="f0924-125">If the BTSNTSVC.exe.config file has not been previously modified, the \<assemblyBinding\> element would not look like this:</span></span>  
   
 ```  
 <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
@@ -80,18 +80,18 @@ ms.locfileid: "25971920"
 </assemblyBinding>  
 ```  
   
-1.  <span data-ttu-id="724dc-126">コマンド プロンプトでコマンドを入力:`GACUTIL /L TIBCO.EMS`です。</span><span class="sxs-lookup"><span data-stu-id="724dc-126">In a command prompt, type the command: `GACUTIL /L TIBCO.EMS`.</span></span>  
+1. <span data-ttu-id="f0924-126">コマンド プロンプトでコマンドを入力:`GACUTIL /L TIBCO.EMS`します。</span><span class="sxs-lookup"><span data-stu-id="f0924-126">In a command prompt, type the command: `GACUTIL /L TIBCO.EMS`.</span></span>  
   
-2.  <span data-ttu-id="724dc-127">出力から TIBCO.EMS アセンブリ バージョン番号をコピーします。</span><span class="sxs-lookup"><span data-stu-id="724dc-127">Copy the TIBCO.EMS assembly version number from the output.</span></span>  
+2. <span data-ttu-id="f0924-127">出力から TIBCO.EMS アセンブリ バージョン番号をコピーします。</span><span class="sxs-lookup"><span data-stu-id="f0924-127">Copy the TIBCO.EMS assembly version number from the output.</span></span>  
   
-    > [!CAUTION]
-    >  <span data-ttu-id="724dc-128">2 つのバージョン番号が表示されます。1 つは gacutil ユーティリティのバージョン番号です。</span><span class="sxs-lookup"><span data-stu-id="724dc-128">Two version numbers appear: one is the version number of the gacutil utility.</span></span> <span data-ttu-id="724dc-129">2 番目のバージョンの番号は、直後に表示する**バージョン =** です。</span><span class="sxs-lookup"><span data-stu-id="724dc-129">You want the second version number, which appears just after **Version=**.</span></span>  
+   > [!CAUTION]
+   >  <span data-ttu-id="f0924-128">2 つのバージョン番号が表示されます。1 つは gacutil ユーティリティのバージョン番号です。</span><span class="sxs-lookup"><span data-stu-id="f0924-128">Two version numbers appear: one is the version number of the gacutil utility.</span></span> <span data-ttu-id="f0924-129">2 番目のバージョンの番号は、直後に表示する**バージョン =** します。</span><span class="sxs-lookup"><span data-stu-id="f0924-129">You want the second version number, which appears just after **Version=**.</span></span>  
   
-3.  <span data-ttu-id="724dc-130">直後に、引用符の間、BTSNTSVC.exe.config ファイルにバージョン番号を貼り付け**newVersion =** (前の XML 例内の文字を太字)。</span><span class="sxs-lookup"><span data-stu-id="724dc-130">Paste the version number in the BTSNTSVC.exe.config file, between the quotation marks, right after **newVersion=** (bold characters in the previous XML example).</span></span>  
+3. <span data-ttu-id="f0924-130">直後に、引用符の間、BTSNTSVC.exe.config ファイルにバージョン番号を貼り付ける**newVersion =** (前の例の XML 文字を太字)。</span><span class="sxs-lookup"><span data-stu-id="f0924-130">Paste the version number in the BTSNTSVC.exe.config file, between the quotation marks, right after **newVersion=** (bold characters in the previous XML example).</span></span>  
   
-4.  <span data-ttu-id="724dc-131">変更した BTSNTSVC.exe.config ファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="724dc-131">Save the modified BTSNTSVC.exe.config file.</span></span>  
+4. <span data-ttu-id="f0924-131">変更した BTSNTSVC.exe.config ファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="f0924-131">Save the modified BTSNTSVC.exe.config file.</span></span>  
   
-5.  <span data-ttu-id="724dc-132">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホストを再起動します。</span><span class="sxs-lookup"><span data-stu-id="724dc-132">Restart the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] host.</span></span>  
+5. <span data-ttu-id="f0924-132">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホストを再起動します。</span><span class="sxs-lookup"><span data-stu-id="f0924-132">Restart the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] host.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="724dc-133">参照</span><span class="sxs-lookup"><span data-stu-id="724dc-133">See Also</span></span>  
- [<span data-ttu-id="724dc-134">TIBCO Enterprise Message Service のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="724dc-134">Troubleshooting TIBCO Enterprise Message Service</span></span>](../core/troubleshooting-tibco-enterprise-message-service.md)
+## <a name="see-also"></a><span data-ttu-id="f0924-133">参照</span><span class="sxs-lookup"><span data-stu-id="f0924-133">See Also</span></span>  
+ [<span data-ttu-id="f0924-134">TIBCO Enterprise Message Service のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="f0924-134">Troubleshooting TIBCO Enterprise Message Service</span></span>](../core/troubleshooting-tibco-enterprise-message-service.md)

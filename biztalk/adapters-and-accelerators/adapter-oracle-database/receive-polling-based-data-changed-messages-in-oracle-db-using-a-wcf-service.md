@@ -1,5 +1,5 @@
 ---
-title: WCF サービス モデルを使用して Oracle データベースでデータ変更のポーリングに基づいたメッセージを受信 |Microsoft ドキュメント
+title: WCF サービス モデルを使用して Oracle データベースでのポーリングに基づいたデータ変更メッセージの受信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,65 +16,65 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fd36081bd92c3bfae13916ed7d984fcd5de9763f
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: cda98a1600df28fab476114e697cd47e24316251
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "22217226"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012603"
 ---
-# <a name="receive-polling-based-data-changed-messages-in-oracle-database-using-the-wcf-service-model"></a><span data-ttu-id="c05de-102">WCF サービス モデルを使用して Oracle データベースでデータ変更のポーリングに基づいたメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="c05de-102">Receive Polling-based Data-changed Messages in Oracle Database using the WCF Service Model</span></span>
-<span data-ttu-id="c05de-103">構成することができます、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]ポーリング ベースのデータを受信するには、Oracle のテーブルまたはビューに対してメッセージを変更します。</span><span class="sxs-lookup"><span data-stu-id="c05de-103">You can configure the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] to receive polling-based data changed messages against an Oracle table or view.</span></span> <span data-ttu-id="c05de-104">メッセージを受信するデータが変更されて、アダプターは、Oracle のテーブルまたはビューにオプションの PL/SQL コード ブロックを続けるに対して SQL クエリを定期的に実行します。</span><span class="sxs-lookup"><span data-stu-id="c05de-104">To receive data-changed messages, the adapter periodically executes a SQL query against an Oracle table or view followed by an optional PL/SQL code block.</span></span> <span data-ttu-id="c05de-105">SQL クエリの結果では返されます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]受信 POLLINGSTMT 操作で設定厳密に型指定された結果としてアプリケーションにします。</span><span class="sxs-lookup"><span data-stu-id="c05de-105">The results of the SQL query are then returned by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to your application as a strongly-typed result set in an inbound POLLINGSTMT operation.</span></span> <span data-ttu-id="c05de-106">使用してデータベースを構成し、Oracle のポーリングを実行するためのメカニズムの詳細については、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[Oracle データベース アダプターのデータ変更のポーリングに基づいたメッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="c05de-106">For more information about the mechanism used to configure and perform polling on an Oracle database using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], see [Receive polling-based data-changed messages in Oracle Database adapter](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md).</span></span> <span data-ttu-id="c05de-107">続行する前に、このトピックを読むことを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="c05de-107">We strongly recommended that you read this topic before proceeding.</span></span>  
+# <a name="receive-polling-based-data-changed-messages-in-oracle-database-using-the-wcf-service-model"></a><span data-ttu-id="24949-102">WCF サービス モデルを使用して Oracle データベースでのポーリングに基づいたデータ変更メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="24949-102">Receive Polling-based Data-changed Messages in Oracle Database using the WCF Service Model</span></span>
+<span data-ttu-id="24949-103">構成することができます、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]ポーリング ベースのデータを受信するには、Oracle のテーブルまたはビューに対するメッセージを変更します。</span><span class="sxs-lookup"><span data-stu-id="24949-103">You can configure the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] to receive polling-based data changed messages against an Oracle table or view.</span></span> <span data-ttu-id="24949-104">データ変更メッセージを受信するには、定期的に、アダプターが Oracle のテーブルまたはビューにオプションの PL/SQL コード ブロックを続けるに対する SQL クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="24949-104">To receive data-changed messages, the adapter periodically executes a SQL query against an Oracle table or view followed by an optional PL/SQL code block.</span></span> <span data-ttu-id="24949-105">によって SQL クエリの結果が返されるし、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]受信 POLLINGSTMT 操作の設定、厳密に型指定された結果としてアプリケーションにします。</span><span class="sxs-lookup"><span data-stu-id="24949-105">The results of the SQL query are then returned by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to your application as a strongly-typed result set in an inbound POLLINGSTMT operation.</span></span> <span data-ttu-id="24949-106">使用してデータベースを構成し、Oracle のポーリングを実行するためのメカニズムの詳細については、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[Oracle データベース アダプターのポーリングに基づいたデータ変更メッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)します。</span><span class="sxs-lookup"><span data-stu-id="24949-106">For more information about the mechanism used to configure and perform polling on an Oracle database using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], see [Receive polling-based data-changed messages in Oracle Database adapter](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md).</span></span> <span data-ttu-id="24949-107">続行する前に、このトピックで確認することを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="24949-107">We strongly recommended that you read this topic before proceeding.</span></span>  
   
- <span data-ttu-id="c05de-108">WCF サービス モデルを使用する場合は、POLLINGSTMT 操作を受信するには、次の必要があります。</span><span class="sxs-lookup"><span data-stu-id="c05de-108">To receive the POLLINGSTMT operation when you use the WCF service model, you must:</span></span>  
+ <span data-ttu-id="24949-108">WCF サービス モデルを使用する場合は、POLLINGSTMT 操作を受信するには、次の必要があります。</span><span class="sxs-lookup"><span data-stu-id="24949-108">To receive the POLLINGSTMT operation when you use the WCF service model, you must:</span></span>  
   
--   <span data-ttu-id="c05de-109">アダプターによって公開されるメタデータから POLLINGSTMT 操作のためには、WCF サービス コントラクト (インターフェイス) を生成します。</span><span class="sxs-lookup"><span data-stu-id="c05de-109">Generate a WCF service contract (interface) for the POLLINGSTMT operation from the metadata exposed by the adapter.</span></span> <span data-ttu-id="c05de-110">これを行うには、使用する、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)。</span><span class="sxs-lookup"><span data-stu-id="c05de-110">To do this, you use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or the ServiceModel Metadata Utility Tool (svcutil.exe).</span></span>  
+- <span data-ttu-id="24949-109">アダプターによって公開されているメタデータから POLLINGSTMT 操作用には、WCF サービス コントラクト (インターフェイス) を生成します。</span><span class="sxs-lookup"><span data-stu-id="24949-109">Generate a WCF service contract (interface) for the POLLINGSTMT operation from the metadata exposed by the adapter.</span></span> <span data-ttu-id="24949-110">これを行うには、使用する、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)。</span><span class="sxs-lookup"><span data-stu-id="24949-110">To do this, you use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or the ServiceModel Metadata Utility Tool (svcutil.exe).</span></span>  
   
--   <span data-ttu-id="c05de-111">このインターフェイスから WCF サービスを実装します。</span><span class="sxs-lookup"><span data-stu-id="c05de-111">Implement a WCF service from this interface.</span></span>  
+- <span data-ttu-id="24949-111">このインターフェイスからの WCF サービスを実装します。</span><span class="sxs-lookup"><span data-stu-id="24949-111">Implement a WCF service from this interface.</span></span>  
   
--   <span data-ttu-id="c05de-112">サービス ホストを使用してこの WCF サービスをホスト (**System.ServiceModel.ServiceHost**)。</span><span class="sxs-lookup"><span data-stu-id="c05de-112">Host this WCF service using a service host (**System.ServiceModel.ServiceHost**).</span></span>  
+- <span data-ttu-id="24949-112">サービス ホストを使用してこの WCF サービス ホスト (**System.ServiceModel.ServiceHost**)。</span><span class="sxs-lookup"><span data-stu-id="24949-112">Host this WCF service using a service host (**System.ServiceModel.ServiceHost**).</span></span>  
   
- <span data-ttu-id="c05de-113">このセクションのトピックでは、情報および Oracle データベースのテーブルと、WCF サービス モデルでのビューにポーリングを実行するための手順を紹介します。</span><span class="sxs-lookup"><span data-stu-id="c05de-113">The topics in this section provide information and procedures to help you perform polling on Oracle database tables and views in the WCF service model.</span></span>  
+  <span data-ttu-id="24949-113">このセクションのトピックでは、情報および Oracle データベースのテーブルおよび WCF サービス モデルでのビューにポーリングを実行するために手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="24949-113">The topics in this section provide information and procedures to help you perform polling on Oracle database tables and views in the WCF service model.</span></span>  
   
-## <a name="about-the-examples-used-in-this-topic"></a><span data-ttu-id="c05de-114">このトピックで使用する例について</span><span class="sxs-lookup"><span data-stu-id="c05de-114">About the Examples Used in this Topic</span></span>  
- <span data-ttu-id="c05de-115">このトピックの例では、/SCOTT/ACCOUNTACTIVITY テーブルと/SCOTT/Package/ACCOUNT_PKG/PROCESS_ACTIVITY 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="c05de-115">The examples in this topic use the /SCOTT/ACCOUNTACTIVITY table and the /SCOTT/Package/ACCOUNT_PKG/PROCESS_ACTIVITY function.</span></span> <span data-ttu-id="c05de-116">これらの成果物を生成するスクリプトがで提供される、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]サンプルです。</span><span class="sxs-lookup"><span data-stu-id="c05de-116">A script to generate these artifacts is supplied with the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] samples.</span></span> <span data-ttu-id="c05de-117">サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)です。</span><span class="sxs-lookup"><span data-stu-id="c05de-117">For more information about the samples, see [Adapter Samples](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md).</span></span>  
+## <a name="about-the-examples-used-in-this-topic"></a><span data-ttu-id="24949-114">このトピックで使用する例について</span><span class="sxs-lookup"><span data-stu-id="24949-114">About the Examples Used in this Topic</span></span>  
+ <span data-ttu-id="24949-115">このトピックの例では、/SCOTT/ACCOUNTACTIVITY テーブルと/SCOTT/Package/ACCOUNT_PKG/PROCESS_ACTIVITY 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="24949-115">The examples in this topic use the /SCOTT/ACCOUNTACTIVITY table and the /SCOTT/Package/ACCOUNT_PKG/PROCESS_ACTIVITY function.</span></span> <span data-ttu-id="24949-116">これらの成果物を生成するスクリプトが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]サンプル。</span><span class="sxs-lookup"><span data-stu-id="24949-116">A script to generate these artifacts is supplied with the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] samples.</span></span> <span data-ttu-id="24949-117">サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。</span><span class="sxs-lookup"><span data-stu-id="24949-117">For more information about the samples, see [Adapter Samples](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md).</span></span>  
   
-## <a name="configuring-polling-in-the-wcf-service-model"></a><span data-ttu-id="c05de-118">WCF サービス モデルでのポーリングを構成します。</span><span class="sxs-lookup"><span data-stu-id="c05de-118">Configuring Polling in the WCF Service Model</span></span>  
- <span data-ttu-id="c05de-119">構成する、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベース テーブルやビュー上のバインドのプロパティとオプションの接続プロパティ (パラメーター) を設定してポーリングを実行します。</span><span class="sxs-lookup"><span data-stu-id="c05de-119">You configure the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to perform polling on Oracle database tables and views by setting binding properties and an optional connection property (parameter).</span></span> <span data-ttu-id="c05de-120">必須ですが、これらのプロパティの一部があり、デザイン時と実行時の両方でいくつか、無効に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c05de-120">Some of these properties are mandatory, and some, to have an effect, must be set both at design-time and run-time.</span></span>  
+## <a name="configuring-polling-in-the-wcf-service-model"></a><span data-ttu-id="24949-118">WCF サービス モデルでのポーリングの構成</span><span class="sxs-lookup"><span data-stu-id="24949-118">Configuring Polling in the WCF Service Model</span></span>  
+ <span data-ttu-id="24949-119">構成する、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースのテーブルおよびビューのバインドのプロパティとオプションの接続プロパティ (パラメーター) を設定してポーリングを実行します。</span><span class="sxs-lookup"><span data-stu-id="24949-119">You configure the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to perform polling on Oracle database tables and views by setting binding properties and an optional connection property (parameter).</span></span> <span data-ttu-id="24949-120">これらのプロパティの一部は必須ですが、およびデザイン時と実行時の両方でいくつかに影響を与える設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="24949-120">Some of these properties are mandatory, and some, to have an effect, must be set both at design-time and run-time.</span></span>  
   
--   <span data-ttu-id="c05de-121">デザイン時に、設定する接続パラメーターとバインドのプロパティを WCF サービス コントラクトを生成する Oracle データベースに接続するとします。</span><span class="sxs-lookup"><span data-stu-id="c05de-121">At design-time, you set connection parameters and binding properties when you connect to the Oracle Database to generate a WCF service contract.</span></span>  
+- <span data-ttu-id="24949-121">デザイン時に、設定する接続パラメーターとバインドのプロパティを WCF サービス コントラクトを生成する Oracle データベースに接続するとき。</span><span class="sxs-lookup"><span data-stu-id="24949-121">At design-time, you set connection parameters and binding properties when you connect to the Oracle Database to generate a WCF service contract.</span></span>  
   
--   <span data-ttu-id="c05de-122">実行時に、サービス ホストを作成するために使用 OracleDBBinding オブジェクトにバインドのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="c05de-122">At runtime you set binding properties on the OracleDBBinding object that you use to create the service host.</span></span> <span data-ttu-id="c05de-123">サービス ホストにサービスのリスナーを追加する場合は、接続パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="c05de-123">You set the connection parameter when you add a service listener to the service host.</span></span>  
+- <span data-ttu-id="24949-122">実行時に、サービス ホストを作成するために使用 OracleDBBinding オブジェクトにバインドのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="24949-122">At runtime you set binding properties on the OracleDBBinding object that you use to create the service host.</span></span> <span data-ttu-id="24949-123">サービス ホストにサービスのリスナーを追加する場合は、接続パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="24949-123">You set the connection parameter when you add a service listener to the service host.</span></span>  
   
- <span data-ttu-id="c05de-124">バインドのプロパティと構成のポーリングに使用する接続パラメーターの概要を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c05de-124">The following list provides a brief overview of the binding properties and connection parameters used to configure polling:</span></span>  
+  <span data-ttu-id="24949-124">バインドのプロパティとポーリングを構成するために使用する接続パラメーターの概要を次に示します。</span><span class="sxs-lookup"><span data-stu-id="24949-124">The following list provides a brief overview of the binding properties and connection parameters used to configure polling:</span></span>  
   
--   <span data-ttu-id="c05de-125">**PollingStatement**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="c05de-125">The **PollingStatement** binding property.</span></span> <span data-ttu-id="c05de-126">デザイン時と実行時の両方には、このバインド プロパティを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c05de-126">You must set this binding property both at design-time and at run-time.</span></span>  
+- <span data-ttu-id="24949-125">**PollingStatement**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="24949-125">The **PollingStatement** binding property.</span></span> <span data-ttu-id="24949-126">デザイン時と実行時の両方にこのバインドのプロパティを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="24949-126">You must set this binding property both at design-time and at run-time.</span></span>  
   
--   <span data-ttu-id="c05de-127">省略可能なバインディング プロパティです。</span><span class="sxs-lookup"><span data-stu-id="c05de-127">Optional binding properties.</span></span> <span data-ttu-id="c05de-128">これらは、実行時に設定するのみ必要です。</span><span class="sxs-lookup"><span data-stu-id="c05de-128">These only have to be set at run-time.</span></span>  
+- <span data-ttu-id="24949-127">省略可能なバインドのプロパティ。</span><span class="sxs-lookup"><span data-stu-id="24949-127">Optional binding properties.</span></span> <span data-ttu-id="24949-128">これらは、実行時に設定するのみ必要です。</span><span class="sxs-lookup"><span data-stu-id="24949-128">These only have to be set at run-time.</span></span>  
   
--   <span data-ttu-id="c05de-129">**AcceptCredentialsInUri**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="c05de-129">The **AcceptCredentialsInUri** binding property.</span></span> <span data-ttu-id="c05de-130">このバインドのプロパティを設定する必要があります**true**実行時の接続 URI 内の資格情報を有効にする場合にします。</span><span class="sxs-lookup"><span data-stu-id="c05de-130">You must set this binding property to **true** during run-time if you want to enable credentials in the connection URI.</span></span> <span data-ttu-id="c05de-131">サービス ホストにサービス エンドポイントを追加する場合に、ユーザー名とパスワードを接続 URI であることがあります。</span><span class="sxs-lookup"><span data-stu-id="c05de-131">The user name and password must be present in the connection URI when you add a service endpoint to the service host.</span></span>  
+- <span data-ttu-id="24949-129">**AcceptCredentialsInUri**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="24949-129">The **AcceptCredentialsInUri** binding property.</span></span> <span data-ttu-id="24949-130">このバインドのプロパティを設定する必要があります**true**実行時の接続 URI 内の資格情報を有効にする場合にします。</span><span class="sxs-lookup"><span data-stu-id="24949-130">You must set this binding property to **true** during run-time if you want to enable credentials in the connection URI.</span></span> <span data-ttu-id="24949-131">サービス ホストにサービス エンドポイントを追加するときに、ユーザー名とパスワードを接続 URI に存在することがあります。</span><span class="sxs-lookup"><span data-stu-id="24949-131">The user name and password must be present in the connection URI when you add a service endpoint to the service host.</span></span>  
   
--   <span data-ttu-id="c05de-132">**PollingId**接続 URI の文字列パラメーターをクエリします。</span><span class="sxs-lookup"><span data-stu-id="c05de-132">The **PollingId** query string parameter in the connection URI.</span></span> <span data-ttu-id="c05de-133">POLLINGSTMT 操作の名前空間を変更する場合は、デザイン時と実行時の両方でこの接続プロパティを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c05de-133">If you want to change the namespace of the POLLINGSTMT operation, you must set this connection property both at design-time and run-time.</span></span>  
+- <span data-ttu-id="24949-132">**PollingId**接続 URI の文字列パラメーターをクエリします。</span><span class="sxs-lookup"><span data-stu-id="24949-132">The **PollingId** query string parameter in the connection URI.</span></span> <span data-ttu-id="24949-133">POLLINGSTMT 操作の名前空間を変更する場合は、デザイン時と実行時の両方では、この接続プロパティを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="24949-133">If you want to change the namespace of the POLLINGSTMT operation, you must set this connection property both at design-time and run-time.</span></span>  
   
- <span data-ttu-id="c05de-134">バインドのプロパティとポーリングを構成するために使用する接続パラメーターの詳細については、次を参照してください。 [Oracle データベース アダプターのデータ変更のポーリングに基づいたメッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)です。</span><span class="sxs-lookup"><span data-stu-id="c05de-134">For a complete description of the binding properties and connection parameters used to configure polling, see [Receive polling-based data-changed messages in Oracle Database adapter](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md).</span></span>  
+  <span data-ttu-id="24949-134">バインドのプロパティとポーリングを構成するために使用する接続パラメーターの詳細については、次を参照してください。 [Oracle データベース アダプターのポーリングに基づいたデータ変更メッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)します。</span><span class="sxs-lookup"><span data-stu-id="24949-134">For a complete description of the binding properties and connection parameters used to configure polling, see [Receive polling-based data-changed messages in Oracle Database adapter](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md).</span></span>  
   
-## <a name="the-wcf-service-contract-and-class"></a><span data-ttu-id="c05de-135">WCF サービス コントラクトとクラス</span><span class="sxs-lookup"><span data-stu-id="c05de-135">The WCF Service Contract and Class</span></span>  
- <span data-ttu-id="c05de-136">どちらを使用した、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を作成する WCF サービス コントラクト (インターフェイス) および POLLINGSTMT 操作のクラスをサポートします。</span><span class="sxs-lookup"><span data-stu-id="c05de-136">You use either the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or the ServiceModel Metadata Utility Tool (svcutil.exe) to create a WCF service contract (interface) and supporting classes for the POLLINGSTMT operation.</span></span>  
+## <a name="the-wcf-service-contract-and-class"></a><span data-ttu-id="24949-135">WCF サービス コントラクトとクラス</span><span class="sxs-lookup"><span data-stu-id="24949-135">The WCF Service Contract and Class</span></span>  
+ <span data-ttu-id="24949-136">いずれかを使用する、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を作成する WCF サービス コントラクト (インターフェイス) と POLLINGSTMT 操作のクラスをサポートします。</span><span class="sxs-lookup"><span data-stu-id="24949-136">You use either the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or the ServiceModel Metadata Utility Tool (svcutil.exe) to create a WCF service contract (interface) and supporting classes for the POLLINGSTMT operation.</span></span>  
   
- <span data-ttu-id="c05de-137">POLLINGSTMT 操作のサービス コントラクトの生成にこれらのツールのいずれかで、Oracle データベースに接続する場合。</span><span class="sxs-lookup"><span data-stu-id="c05de-137">When you connect to the Oracle database with either of these tools to generate a service contract for the POLLINGSTMT operation:</span></span>  
+ <span data-ttu-id="24949-137">POLLINGSTMT 操作のサービス コントラクトを生成するこれらのツールのいずれかで、Oracle データベースに接続する場合。</span><span class="sxs-lookup"><span data-stu-id="24949-137">When you connect to the Oracle database with either of these tools to generate a service contract for the POLLINGSTMT operation:</span></span>  
   
--   <span data-ttu-id="c05de-138">指定する必要があります、 **PollingStatement**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="c05de-138">You must specify the **PollingStatement** binding property.</span></span> <span data-ttu-id="c05de-139">アダプターでは、このバインディングのプロパティで、SELECT ステートメントを使用して、POLLINGSTMT 操作によって返される結果の厳密に型指定されたセットのメタデータを正しいを生成します。</span><span class="sxs-lookup"><span data-stu-id="c05de-139">The adapter uses the SELECT statement in this binding property to generate the correct metadata for the strongly-typed result set returned by the POLLINGSTMT operation.</span></span>  
+- <span data-ttu-id="24949-138">指定する必要があります、 **PollingStatement**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="24949-138">You must specify the **PollingStatement** binding property.</span></span> <span data-ttu-id="24949-139">アダプターは、正しいメタデータ POLLINGSTMT 操作によって返される結果の厳密に型指定されたセットを生成するのに、このバインドのプロパティで、SELECT ステートメントを使用します。</span><span class="sxs-lookup"><span data-stu-id="24949-139">The adapter uses the SELECT statement in this binding property to generate the correct metadata for the strongly-typed result set returned by the POLLINGSTMT operation.</span></span>  
   
--   <span data-ttu-id="c05de-140">必要に応じて、接続 URI で PollingId パラメーターを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="c05de-140">You can optionally specify a PollingId parameter in the connection URI.</span></span> <span data-ttu-id="c05de-141">アダプターでは、このパラメーターを使用して、POLLINGSTMT 操作の名前空間を生成します。</span><span class="sxs-lookup"><span data-stu-id="c05de-141">The adapter uses this parameter to generate the namespace for the POLLINGSTMT operation.</span></span>  
+- <span data-ttu-id="24949-140">必要に応じて、接続 URI で PollingId パラメーターを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="24949-140">You can optionally specify a PollingId parameter in the connection URI.</span></span> <span data-ttu-id="24949-141">アダプターでは、このパラメーターを使用して、POLLINGSTMT 操作の名前空間を生成します。</span><span class="sxs-lookup"><span data-stu-id="24949-141">The adapter uses this parameter to generate the namespace for the POLLINGSTMT operation.</span></span>  
   
- <span data-ttu-id="c05de-142">次の例。</span><span class="sxs-lookup"><span data-stu-id="c05de-142">In the following examples:</span></span>  
+  <span data-ttu-id="24949-142">次の例。</span><span class="sxs-lookup"><span data-stu-id="24949-142">In the following examples:</span></span>  
   
--   <span data-ttu-id="c05de-143">**PollingStatement** "SELECT \* から ACCOUNTACTIVITY FOR UPDATE"に設定されています。</span><span class="sxs-lookup"><span data-stu-id="c05de-143">**PollingStatement** is set to "SELECT \* FROM ACCOUNTACTIVITY FOR UPDATE".</span></span>  
+- <span data-ttu-id="24949-143">**PollingStatement** "SELECT \* から ACCOUNTACTIVITY FOR UPDATE"に設定されます。</span><span class="sxs-lookup"><span data-stu-id="24949-143">**PollingStatement** is set to "SELECT \* FROM ACCOUNTACTIVITY FOR UPDATE".</span></span>  
   
--   <span data-ttu-id="c05de-144">**PollingId** "AcctActivity"に設定されています。</span><span class="sxs-lookup"><span data-stu-id="c05de-144">**PollingId** is set to "AcctActivity".</span></span>  
+- <span data-ttu-id="24949-144">**PollingId** "AcctActivity"に設定されます。</span><span class="sxs-lookup"><span data-stu-id="24949-144">**PollingId** is set to "AcctActivity".</span></span>  
   
-### <a name="the-wcf-service-contract-interface"></a><span data-ttu-id="c05de-145">WCF サービス コントラクト (インターフェイス)</span><span class="sxs-lookup"><span data-stu-id="c05de-145">The WCF Service Contract (Interface)</span></span>  
- <span data-ttu-id="c05de-146">次のコードでは、POLLINGSTMT 操作に対して生成される WCF サービス コントラクト (インターフェイス) を示します。</span><span class="sxs-lookup"><span data-stu-id="c05de-146">The following code shows the WCF service contract (interface) generated for the POLLINGSTMT operation.</span></span>  
+### <a name="the-wcf-service-contract-interface"></a><span data-ttu-id="24949-145">WCF サービス コントラクト (インターフェイス)</span><span class="sxs-lookup"><span data-stu-id="24949-145">The WCF Service Contract (Interface)</span></span>  
+ <span data-ttu-id="24949-146">次のコードでは、POLLINGSTMT 操作用に生成する WCF サービス コントラクト (インターフェイス) を示します。</span><span class="sxs-lookup"><span data-stu-id="24949-146">The following code shows the WCF service contract (interface) generated for the POLLINGSTMT operation.</span></span>  
   
 ```  
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]  
@@ -88,8 +88,8 @@ public interface POLLINGSTMT_OperationGroup {
 }  
 ```  
   
-### <a name="the-message-contracts"></a><span data-ttu-id="c05de-147">メッセージ コントラクト</span><span class="sxs-lookup"><span data-stu-id="c05de-147">The Message Contracts</span></span>  
- <span data-ttu-id="c05de-148">接続 URI の PollingId パラメーターでは、メッセージ コントラクトの名前空間が変更されます。</span><span class="sxs-lookup"><span data-stu-id="c05de-148">The message contract namespace is modified by the PollingId parameter in the connection URI.</span></span> <span data-ttu-id="c05de-149">要求メッセージは、厳密に型指定されたレコードのセットを返します。</span><span class="sxs-lookup"><span data-stu-id="c05de-149">The request message returns a set of strongly-typed records.</span></span>  
+### <a name="the-message-contracts"></a><span data-ttu-id="24949-147">メッセージ コントラクト</span><span class="sxs-lookup"><span data-stu-id="24949-147">The Message Contracts</span></span>  
+ <span data-ttu-id="24949-148">接続 URI の PollingId パラメーターでは、メッセージ コントラクトの名前空間が変更されます。</span><span class="sxs-lookup"><span data-stu-id="24949-148">The message contract namespace is modified by the PollingId parameter in the connection URI.</span></span> <span data-ttu-id="24949-149">要求メッセージは、厳密に型指定されたレコードのセットを返します。</span><span class="sxs-lookup"><span data-stu-id="24949-149">The request message returns a set of strongly-typed records.</span></span>  
   
 ```  
 [System.Diagnostics.DebuggerStepThroughAttribute()]  
@@ -109,12 +109,12 @@ public partial class POLLINGSTMT {
 }  
 ```  
   
-### <a name="the-data-contract-namespace"></a><span data-ttu-id="c05de-150">データ コントラクト Namespace</span><span class="sxs-lookup"><span data-stu-id="c05de-150">The Data Contract Namespace</span></span>  
- <span data-ttu-id="c05de-151">データ コントラクトとは、サービスと交換するデータを抽象的に記述されているクライアントの間の正式な取り決めです。</span><span class="sxs-lookup"><span data-stu-id="c05de-151">A data contract is a formal agreement between a service and a client that abstractly describes the data to be exchanged.</span></span> <span data-ttu-id="c05de-152">通信するために、クライアントとサービスはありません、同じ、のみ、同じデータ コントラクト型を共有します。</span><span class="sxs-lookup"><span data-stu-id="c05de-152">That is, in order to communicate, the client and the service do not have to share the same types, only the same data contracts.</span></span>  
+### <a name="the-data-contract-namespace"></a><span data-ttu-id="24949-150">データ コントラクトの Namespace</span><span class="sxs-lookup"><span data-stu-id="24949-150">The Data Contract Namespace</span></span>  
+ <span data-ttu-id="24949-151">データ コントラクトは、サービスと交換されるデータを抽象的に記述するクライアントの間の正式な取り決めです。</span><span class="sxs-lookup"><span data-stu-id="24949-151">A data contract is a formal agreement between a service and a client that abstractly describes the data to be exchanged.</span></span> <span data-ttu-id="24949-152">これは、通信するために、クライアントとサービスする必要はありません同一の型では、同じデータ コントラクトのみを共有します。</span><span class="sxs-lookup"><span data-stu-id="24949-152">That is, in order to communicate, the client and the service do not have to share the same types, only the same data contracts.</span></span>  
   
- <span data-ttu-id="c05de-153">メッセージの変更データが発生した場合、データ コントラクト名前空間も変更 PollingId パラメーターで (指定した場合)、接続 URI でします。</span><span class="sxs-lookup"><span data-stu-id="c05de-153">In case of data change messages, the data contract namespace is also modified by the PollingId parameter (if specified) in the connection URI.</span></span> <span data-ttu-id="c05de-154">データ コントラクトは、クエリの結果セット内の厳密に型指定されたレコードを表すクラスで構成されます。</span><span class="sxs-lookup"><span data-stu-id="c05de-154">The data contract is composed of a class that represents a strongly-typed record in the query result set.</span></span> <span data-ttu-id="c05de-155">クラス定義の詳細については、この例では省略されています。</span><span class="sxs-lookup"><span data-stu-id="c05de-155">The details of the class definition are omitted in this example.</span></span> <span data-ttu-id="c05de-156">クラスには、結果セット内の列を表すプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="c05de-156">The class contains properties that represent the columns in the result set.</span></span>  
+ <span data-ttu-id="24949-153">メッセージの変更データが発生した場合、データ コントラクト名前空間も変更 PollingId パラメーターで (指定した) 場合の接続 URI です。</span><span class="sxs-lookup"><span data-stu-id="24949-153">In case of data change messages, the data contract namespace is also modified by the PollingId parameter (if specified) in the connection URI.</span></span> <span data-ttu-id="24949-154">データ コントラクトは、クエリの結果セット内の厳密に型指定されたレコードを表すクラスで構成されます。</span><span class="sxs-lookup"><span data-stu-id="24949-154">The data contract is composed of a class that represents a strongly-typed record in the query result set.</span></span> <span data-ttu-id="24949-155">クラス定義の詳細については、この例では省略されます。</span><span class="sxs-lookup"><span data-stu-id="24949-155">The details of the class definition are omitted in this example.</span></span> <span data-ttu-id="24949-156">クラスには、結果セット内の列を表すプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="24949-156">The class contains properties that represent the columns in the result set.</span></span>  
   
- <span data-ttu-id="c05de-157">次の例では、PollingId"AcctActivity"が使用されます。</span><span class="sxs-lookup"><span data-stu-id="c05de-157">In the following example, the PollingId “AcctActivity” is used.</span></span>  
+ <span data-ttu-id="24949-157">次の例では、PollingId"AcctActivity"が使用されます。</span><span class="sxs-lookup"><span data-stu-id="24949-157">In the following example, the PollingId “AcctActivity” is used.</span></span>  
   
 ```  
 namespace microsoft.lobservices.oracledb._2007._03.POLLINGSTMTAcctActivity {  
@@ -128,8 +128,8 @@ namespace microsoft.lobservices.oracledb._2007._03.POLLINGSTMTAcctActivity {
 }  
 ```  
   
-### <a name="wcf-service-class"></a><span data-ttu-id="c05de-158">WCF サービス クラス</span><span class="sxs-lookup"><span data-stu-id="c05de-158">WCF Service Class</span></span>  
- <span data-ttu-id="c05de-159">[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]をサービス コントラクト (インターフェイス) から実装、WCF サービス クラスのスタブを持つファイルも生成します。</span><span class="sxs-lookup"><span data-stu-id="c05de-159">The [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] also generates a file that has a stub for the WCF service class implemented from the service contract (interface).</span></span> <span data-ttu-id="c05de-160">ファイルの名前は、OracleDBBindingService.cs です。</span><span class="sxs-lookup"><span data-stu-id="c05de-160">The name of the file is OracleDBBindingService.cs.</span></span> <span data-ttu-id="c05de-161">このクラスに直接 POLLINGSTMT 操作を処理するロジックを挿入することができます。</span><span class="sxs-lookup"><span data-stu-id="c05de-161">You can insert the logic to process the POLLINGSTMT operation directly into this class.</span></span> <span data-ttu-id="c05de-162">Svcutil.exe を使用して、サービス コントラクト インターフェイスを生成する場合、必要がありますクラスを実装するこの自分でします。</span><span class="sxs-lookup"><span data-stu-id="c05de-162">If you use svcutil.exe to generate the service contract interface, you must implement this class yourself.</span></span> <span data-ttu-id="c05de-163">次のコードによって生成された WCF サービス クラスを示しています、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="c05de-163">The following code shows the WCF service class generated by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
+### <a name="wcf-service-class"></a><span data-ttu-id="24949-158">WCF サービス クラス</span><span class="sxs-lookup"><span data-stu-id="24949-158">WCF Service Class</span></span>  
+ <span data-ttu-id="24949-159">[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]をサービス コントラクト (インターフェイス) から実装された WCF サービス クラスのスタブを持つファイルも生成されます。</span><span class="sxs-lookup"><span data-stu-id="24949-159">The [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] also generates a file that has a stub for the WCF service class implemented from the service contract (interface).</span></span> <span data-ttu-id="24949-160">ファイルの名前は、OracleDBBindingService.cs です。</span><span class="sxs-lookup"><span data-stu-id="24949-160">The name of the file is OracleDBBindingService.cs.</span></span> <span data-ttu-id="24949-161">このクラスに直接 POLLINGSTMT 操作を処理するロジックを挿入することができます。</span><span class="sxs-lookup"><span data-stu-id="24949-161">You can insert the logic to process the POLLINGSTMT operation directly into this class.</span></span> <span data-ttu-id="24949-162">Svcutil.exe を使用して、サービス コントラクト インターフェイスを生成する場合、必要がありますこのクラスの実装自分でします。</span><span class="sxs-lookup"><span data-stu-id="24949-162">If you use svcutil.exe to generate the service contract interface, you must implement this class yourself.</span></span> <span data-ttu-id="24949-163">次のコードによって生成される WCF サービス クラスを示しています、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="24949-163">The following code shows the WCF service class generated by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
   
 ```  
 namespace OracleDBBindingNamespace {  
@@ -145,113 +145,113 @@ namespace OracleDBBindingNamespace {
 }  
 ```  
   
-## <a name="receiving-the-pollingstmt-operation"></a><span data-ttu-id="c05de-164">POLLINGSTMT 操作の受信</span><span class="sxs-lookup"><span data-stu-id="c05de-164">Receiving the POLLINGSTMT Operation</span></span>  
+## <a name="receiving-the-pollingstmt-operation"></a><span data-ttu-id="24949-164">POLLINGSTMT 操作の受信</span><span class="sxs-lookup"><span data-stu-id="24949-164">Receiving the POLLINGSTMT Operation</span></span>  
   
-#### <a name="to-receive-polling-data-from-the-oracle-database-adapter"></a><span data-ttu-id="c05de-165">Oracle データベース アダプターのポーリングのデータを受信するには</span><span class="sxs-lookup"><span data-stu-id="c05de-165">To receive polling data from the Oracle Database adapter</span></span>  
+#### <a name="to-receive-polling-data-from-the-oracle-database-adapter"></a><span data-ttu-id="24949-165">Oracle データベース アダプターのポーリングのデータを受信するには</span><span class="sxs-lookup"><span data-stu-id="24949-165">To receive polling data from the Oracle Database adapter</span></span>  
   
-1.  <span data-ttu-id="c05de-166">使用して、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]または WCF を生成する svcutil.exe サービス コントラクト (インターフェイス) および POLLINGSTMT 操作用にヘルパー クラス。</span><span class="sxs-lookup"><span data-stu-id="c05de-166">Use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] or svcutil.exe to generate a WCF service contract (interface) and helper classes for the POLLINGSTMT operation.</span></span> <span data-ttu-id="c05de-167">詳細については、次を参照してください。 [WCF クライアントまたは Oracle データベース ソリューションの成果物のための WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)です。</span><span class="sxs-lookup"><span data-stu-id="c05de-167">For more information, see [Generate a WCF client or a WCF service contract for Oracle Database solution artifacts](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md).</span></span> <span data-ttu-id="c05de-168">設定する必要がありますには、少なくとも、 **PollingStatement**アダプターに接続するときにプロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="c05de-168">At a minimum, you must set the **PollingStatement** binding property when you connect to the adapter.</span></span> <span data-ttu-id="c05de-169">必要に応じて、接続 URI で PollingId パラメーターを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="c05de-169">You can optionally specify a PollingId parameter in the connection URI.</span></span> <span data-ttu-id="c05de-170">使用している場合、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、する必要がありますすべてのバインディング パラメーターに必要な設定の構成。</span><span class="sxs-lookup"><span data-stu-id="c05de-170">If you are using the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], you should set all of the binding parameters necessary for your configuration.</span></span> <span data-ttu-id="c05de-171">これは、生成された構成ファイルで正しく設定されていることを保証します。</span><span class="sxs-lookup"><span data-stu-id="c05de-171">This guarantees that they are properly set in the generated configuration file.</span></span>  
+1. <span data-ttu-id="24949-166">使用して、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]または WCF を生成する svcutil.exe サービス コントラクト (インターフェイス) と POLLINGSTMT 操作用にヘルパー クラス。</span><span class="sxs-lookup"><span data-stu-id="24949-166">Use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] or svcutil.exe to generate a WCF service contract (interface) and helper classes for the POLLINGSTMT operation.</span></span> <span data-ttu-id="24949-167">詳細については、次を参照してください。 [WCF クライアントまたは Oracle データベース ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)します。</span><span class="sxs-lookup"><span data-stu-id="24949-167">For more information, see [Generate a WCF client or a WCF service contract for Oracle Database solution artifacts](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md).</span></span> <span data-ttu-id="24949-168">設定する必要がありますには、少なくとも、 **PollingStatement**アダプターに接続するときにプロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="24949-168">At a minimum, you must set the **PollingStatement** binding property when you connect to the adapter.</span></span> <span data-ttu-id="24949-169">必要に応じて、接続 URI で PollingId パラメーターを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="24949-169">You can optionally specify a PollingId parameter in the connection URI.</span></span> <span data-ttu-id="24949-170">使用する場合、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]構成のために必要な設定のすべてのバインディング パラメーター。</span><span class="sxs-lookup"><span data-stu-id="24949-170">If you are using the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], you should set all of the binding parameters necessary for your configuration.</span></span> <span data-ttu-id="24949-171">これは、生成された構成ファイルで設定は正しくことを保証します。</span><span class="sxs-lookup"><span data-stu-id="24949-171">This guarantees that they are properly set in the generated configuration file.</span></span>  
   
-2.  <span data-ttu-id="c05de-172">手順 1. で生成されたインターフェイスとヘルパー クラスからの WCF サービスを実装します。</span><span class="sxs-lookup"><span data-stu-id="c05de-172">Implement a WCF service from the interface and helper classes generated in step 1.</span></span> <span data-ttu-id="c05de-173">POLLINGSTMT 操作; から受信したデータの処理エラーが発生した場合、ポーリング トランザクションを中止する例外をスローする、このクラスの POLLINGSTMT メソッドそれ以外の場合、メソッドは何も返さない。</span><span class="sxs-lookup"><span data-stu-id="c05de-173">The POLLINGSTMT method of this class can throw an exception to abort the polling transaction, if an error is encountered processing the data received from the POLLINGSTMT operation; otherwise the method does not return anything.</span></span> <span data-ttu-id="c05de-174">次のように、WCF サービス クラスを属性する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c05de-174">You must attribute the WCF service class as follows:</span></span>  
+2. <span data-ttu-id="24949-172">手順 1. で生成されたインターフェイスとヘルパー クラスからの WCF サービスを実装します。</span><span class="sxs-lookup"><span data-stu-id="24949-172">Implement a WCF service from the interface and helper classes generated in step 1.</span></span> <span data-ttu-id="24949-173">このクラスの POLLINGSTMT メソッドは、POLLINGSTMT 操作から受信したデータの処理エラーが発生した場合、ポーリング トランザクションを中止する例外をスローできます。それ以外の場合、メソッドは何も返しません。</span><span class="sxs-lookup"><span data-stu-id="24949-173">The POLLINGSTMT method of this class can throw an exception to abort the polling transaction, if an error is encountered processing the data received from the POLLINGSTMT operation; otherwise the method does not return anything.</span></span> <span data-ttu-id="24949-174">次のように、WCF サービス クラスを属性する必要があります。</span><span class="sxs-lookup"><span data-stu-id="24949-174">You must attribute the WCF service class as follows:</span></span>  
   
-    ```  
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
-    ```  
+   ```  
+   [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
+   ```  
   
-    1.  <span data-ttu-id="c05de-175">使用した場合、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]インターフェイスを生成するには、直接のロジックを実装できる、 **POLLINGSTMT** 、生成されたメソッド**OracleDBBindingService**クラスです。</span><span class="sxs-lookup"><span data-stu-id="c05de-175">If you used the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to generate the interface, you can implement your logic directly in the **POLLINGSTMT** method in the generated **OracleDBBindingService** class.</span></span> <span data-ttu-id="c05de-176">このクラスは、OracleDBBindingService.cs で確認できます。</span><span class="sxs-lookup"><span data-stu-id="c05de-176">This class can be found in OracleDBBindingService.cs.</span></span> <span data-ttu-id="c05de-177">この例では、このコードはサブ クラス、 **OracleDBBindingService**クラスです。</span><span class="sxs-lookup"><span data-stu-id="c05de-177">This code in this example sub-classes the **OracleDBBindingService** class.</span></span>  
+   1. <span data-ttu-id="24949-175">使用した場合、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]インターフェイスを生成するには、直接のロジックを実装できる、 **POLLINGSTMT**に生成されたメソッド**OracleDBBindingService**クラス。</span><span class="sxs-lookup"><span data-stu-id="24949-175">If you used the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to generate the interface, you can implement your logic directly in the **POLLINGSTMT** method in the generated **OracleDBBindingService** class.</span></span> <span data-ttu-id="24949-176">このクラスは、OracleDBBindingService.cs で確認できます。</span><span class="sxs-lookup"><span data-stu-id="24949-176">This class can be found in OracleDBBindingService.cs.</span></span> <span data-ttu-id="24949-177">この例では、このコードはサブ クラス、 **OracleDBBindingService**クラス。</span><span class="sxs-lookup"><span data-stu-id="24949-177">This code in this example sub-classes the **OracleDBBindingService** class.</span></span>  
   
-        ```  
-        [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
+      ```  
+      [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
   
-        public class PollingStmtService : OracleDBBindingService  
-        {  
-            public override void POLLINGSTMT(POLLINGSTMT request)  
-            {  
-                Console.WriteLine("\nNew Polling Records Received");  
-                Console.WriteLine("Tx Id\tAccount\tAmount\tDate\t\t\tDescription");  
-                for (int i = 0; i < request.POLLINGSTMTRECORD.Length; i++)  
-                {  
-                    Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}", request.POLLINGSTMTRECORD[i].TID,  
-                                        request.POLLINGSTMTRECORD[i].ACCOUNT,  
-                                        request.POLLINGSTMTRECORD[i].AMOUNT,  
-                                        request.POLLINGSTMTRECORD[i].TRANSDATE,  
-                                        request.POLLINGSTMTRECORD[i].DESCRIPTION);  
-                }  
-            }  
-        }  
-        ```  
+      public class PollingStmtService : OracleDBBindingService  
+      {  
+          public override void POLLINGSTMT(POLLINGSTMT request)  
+          {  
+              Console.WriteLine("\nNew Polling Records Received");  
+              Console.WriteLine("Tx Id\tAccount\tAmount\tDate\t\t\tDescription");  
+              for (int i = 0; i < request.POLLINGSTMTRECORD.Length; i++)  
+              {  
+                  Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}", request.POLLINGSTMTRECORD[i].TID,  
+                                      request.POLLINGSTMTRECORD[i].ACCOUNT,  
+                                      request.POLLINGSTMTRECORD[i].AMOUNT,  
+                                      request.POLLINGSTMTRECORD[i].TRANSDATE,  
+                                      request.POLLINGSTMTRECORD[i].DESCRIPTION);  
+              }  
+          }  
+      }  
+      ```  
   
-    2.  <span data-ttu-id="c05de-178">Svcutil.exe を使用して、インターフェイスを生成した場合は、インターフェイスを実装する WCF サービスを作成しのロジックを実装する必要があります、 **POLLINGSTMT**このクラスのメソッドです。</span><span class="sxs-lookup"><span data-stu-id="c05de-178">If you used svcutil.exe to generate the interface, you must create a WCF service that implements the interface and implement your logic in the **POLLINGSTMT** method of this class.</span></span>  
+   2. <span data-ttu-id="24949-178">Svcutil.exe を使用してインターフェイスを生成した場合は、インターフェイスを実装する WCF サービスを作成しのロジックを実装する必要があります、 **POLLINGSTMT**このクラスのメソッド。</span><span class="sxs-lookup"><span data-stu-id="24949-178">If you used svcutil.exe to generate the interface, you must create a WCF service that implements the interface and implement your logic in the **POLLINGSTMT** method of this class.</span></span>  
   
-3.  <span data-ttu-id="c05de-179">手順 2 で作成した WCF サービスのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="c05de-179">Create an instance of the WCF service created in step 2.</span></span>  
+3. <span data-ttu-id="24949-179">手順 2 で作成した WCF サービスのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="24949-179">Create an instance of the WCF service created in step 2.</span></span>  
   
-    ```  
-    // create service instance  
-    PollingStmtService pollingInstance = new PollingStmtService();  
-    ```  
+   ```  
+   // create service instance  
+   PollingStmtService pollingInstance = new PollingStmtService();  
+   ```  
   
-4.  <span data-ttu-id="c05de-180">インスタンスを作成する**System.ServiceModel.ServiceHost** WCF サービスと基本接続 URI を使用しています。</span><span class="sxs-lookup"><span data-stu-id="c05de-180">Create an instance of **System.ServiceModel.ServiceHost** by using the WCF service and a base connection URI.</span></span> <span data-ttu-id="c05de-181">基本の接続 URI には、userinfoparams またはクエリ文字列を含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="c05de-181">The base connection URI cannot contain userinfoparams or a query_string.</span></span>  
+4. <span data-ttu-id="24949-180">インスタンスを作成**System.ServiceModel.ServiceHost** WCF サービスと基本の接続 URI を使用しています。</span><span class="sxs-lookup"><span data-stu-id="24949-180">Create an instance of **System.ServiceModel.ServiceHost** by using the WCF service and a base connection URI.</span></span> <span data-ttu-id="24949-181">基本の接続 URI には、userinfoparams またはクエリ文字列を含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="24949-181">The base connection URI cannot contain userinfoparams or a query_string.</span></span>  
   
-    ```  
-    // Enable service host  
-    Uri[] baseUri = new Uri[] { new Uri("oracledb://Adapter") };  
-    ServiceHost srvHost = new ServiceHost(pollingInstance, baseUri);  
-    ```  
+   ```  
+   // Enable service host  
+   Uri[] baseUri = new Uri[] { new Uri("oracledb://Adapter") };  
+   ServiceHost srvHost = new ServiceHost(pollingInstance, baseUri);  
+   ```  
   
-5.  <span data-ttu-id="c05de-182">作成、 **OracleDBBinding**とそのバインドのプロパティを設定してポーリング操作を構成します。</span><span class="sxs-lookup"><span data-stu-id="c05de-182">Create an **OracleDBBinding** and configure the polling operation by setting its binding properties.</span></span> <span data-ttu-id="c05de-183">これは、コードで明示的にまたは構成で宣言によって行うことができます。</span><span class="sxs-lookup"><span data-stu-id="c05de-183">You can do this either explicitly in code or declaratively in configuration.</span></span> <span data-ttu-id="c05de-184">少なくとも、ポーリング ステートメントとポーリング間隔を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c05de-184">At a minimum, you must specify the polling statement and polling interval.</span></span> <span data-ttu-id="c05de-185">この例ではようにを指定する資格情報は、URI の一部としても設定する必要があります、 **AcceptCredentialsInUri**に**true**です。</span><span class="sxs-lookup"><span data-stu-id="c05de-185">In this example, you specify the credentials as part of the URI so you must also set the **AcceptCredentialsInUri** to **true**.</span></span>  
+5. <span data-ttu-id="24949-182">作成、 **OracleDBBinding**し、そのバインドのプロパティを設定してポーリング操作を構成します。</span><span class="sxs-lookup"><span data-stu-id="24949-182">Create an **OracleDBBinding** and configure the polling operation by setting its binding properties.</span></span> <span data-ttu-id="24949-183">コードで明示的に、または構成で宣言的に、これを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="24949-183">You can do this either explicitly in code or declaratively in configuration.</span></span> <span data-ttu-id="24949-184">少なくとも、ポーリング ステートメントとポーリング間隔を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="24949-184">At a minimum, you must specify the polling statement and polling interval.</span></span> <span data-ttu-id="24949-185">この例では、する資格情報を指定の URI の一部としても設定する必要がありますので、 **AcceptCredentialsInUri**に**true**します。</span><span class="sxs-lookup"><span data-stu-id="24949-185">In this example, you specify the credentials as part of the URI so you must also set the **AcceptCredentialsInUri** to **true**.</span></span>  
   
-    ```  
-    // Create and configure a binding for the service endpoint. NOTE: binding  
-    // parameters are set here for clarity, but these are already set in the  
-    // the generated configuration file  
-    OracleDBBinding binding = new OracleDBBinding();  
+   ```  
+   // Create and configure a binding for the service endpoint. NOTE: binding  
+   // parameters are set here for clarity, but these are already set in the  
+   // the generated configuration file  
+   OracleDBBinding binding = new OracleDBBinding();  
   
-    // The credentials are included in the connection URI, so set this property to true  
-    binding.AcceptCredentialsInUri = true;  
+   // The credentials are included in the connection URI, so set this property to true  
+   binding.AcceptCredentialsInUri = true;  
   
-    // Same as statement specified in Configure Adapter dialog box  
-    binding.PollingStatement = "SELECT * FROM ACCOUNTACTIVITY FOR UPDATE";  
-    binding.PostPollStatement = "BEGIN ACCOUNT_PKG.PROCESS_ACTIVITY(); END;";  
+   // Same as statement specified in Configure Adapter dialog box  
+   binding.PollingStatement = "SELECT * FROM ACCOUNTACTIVITY FOR UPDATE";  
+   binding.PostPollStatement = "BEGIN ACCOUNT_PKG.PROCESS_ACTIVITY(); END;";  
   
-    // Be sure to set the interval long enough to complete processing before  
-    // the next poll  
-    binding.PollingInterval = 15;  
-    // Polling is transactional; be sure to set an adequate isolation level   
-    // for your environment  
-    binding.TransactionIsolationLevel = TransactionIsolationLevel.ReadCommitted;  
-    ```  
+   // Be sure to set the interval long enough to complete processing before  
+   // the next poll  
+   binding.PollingInterval = 15;  
+   // Polling is transactional; be sure to set an adequate isolation level   
+   // for your environment  
+   binding.TransactionIsolationLevel = TransactionIsolationLevel.ReadCommitted;  
+   ```  
   
-6.  <span data-ttu-id="c05de-186">サービス ホストにサービス エンドポイントを追加します。</span><span class="sxs-lookup"><span data-stu-id="c05de-186">Add a service endpoint to the service host.</span></span> <span data-ttu-id="c05de-187">これを行うには :</span><span class="sxs-lookup"><span data-stu-id="c05de-187">To do this:</span></span>  
+6. <span data-ttu-id="24949-186">サービス ホストにサービス エンドポイントを追加します。</span><span class="sxs-lookup"><span data-stu-id="24949-186">Add a service endpoint to the service host.</span></span> <span data-ttu-id="24949-187">これを行うには :</span><span class="sxs-lookup"><span data-stu-id="24949-187">To do this:</span></span>  
   
-    -   <span data-ttu-id="c05de-188">手順 5. で作成したバインディングを使用します。</span><span class="sxs-lookup"><span data-stu-id="c05de-188">Use the binding created in step 5.</span></span>  
+   -   <span data-ttu-id="24949-188">手順 5. で作成したバインドを使用します。</span><span class="sxs-lookup"><span data-stu-id="24949-188">Use the binding created in step 5.</span></span>  
   
-    -   <span data-ttu-id="c05de-189">接続の資格情報を含む URI を指定して、必要に応じて、PollingId です。</span><span class="sxs-lookup"><span data-stu-id="c05de-189">Specify a connection URI that contains credentials and, if needed, a PollingId.</span></span>  
+   -   <span data-ttu-id="24949-189">接続の資格情報を含む URI を指定し、必要に応じて、PollingId 場合。</span><span class="sxs-lookup"><span data-stu-id="24949-189">Specify a connection URI that contains credentials and, if needed, a PollingId.</span></span>  
   
-    -   <span data-ttu-id="c05de-190">"POLLINGSTMT_OperationGroup"としてコントラクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="c05de-190">Specify the contract as "POLLINGSTMT_OperationGroup".</span></span>  
+   -   <span data-ttu-id="24949-190">"POLLINGSTMT_OperationGroup"としてコントラクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="24949-190">Specify the contract as "POLLINGSTMT_OperationGroup".</span></span>  
   
-    ```  
-    // Add service endpoint: be sure to specify POLLINGSTMT_OperationGroup as the contract  
-    Uri serviceUri = new Uri("oracledb://User=SCOTT;Password=TIGER@Adapter?PollingId=AcctActivity");  
-    srvHost.AddServiceEndpoint("POLLINGSTMT_OperationGroup", binding, serviceUri);  
-    ```  
+   ```  
+   // Add service endpoint: be sure to specify POLLINGSTMT_OperationGroup as the contract  
+   Uri serviceUri = new Uri("oracledb://User=SCOTT;Password=TIGER@Adapter?PollingId=AcctActivity");  
+   srvHost.AddServiceEndpoint("POLLINGSTMT_OperationGroup", binding, serviceUri);  
+   ```  
   
-7.  <span data-ttu-id="c05de-191">ポーリングのデータを受信するには、サービス ホストを開きます。</span><span class="sxs-lookup"><span data-stu-id="c05de-191">To receive polling data, open the service host.</span></span> <span data-ttu-id="c05de-192">アダプターは、クエリが結果セットを返すときにデータを返します。</span><span class="sxs-lookup"><span data-stu-id="c05de-192">The adapter will return data whenever the query returns a result set.</span></span>  
+7. <span data-ttu-id="24949-191">ポーリングのデータを受信するには、サービス ホストを開きます。</span><span class="sxs-lookup"><span data-stu-id="24949-191">To receive polling data, open the service host.</span></span> <span data-ttu-id="24949-192">アダプターは、クエリが結果セットを返すたびにデータを返します。</span><span class="sxs-lookup"><span data-stu-id="24949-192">The adapter will return data whenever the query returns a result set.</span></span>  
   
-    ```  
-    // Open the service host to begin polling  
-    srvHost.Open();  
-    ```  
+   ```  
+   // Open the service host to begin polling  
+   srvHost.Open();  
+   ```  
   
-8.  <span data-ttu-id="c05de-193">ポーリングを終了するには、サービス ホストを閉じます。</span><span class="sxs-lookup"><span data-stu-id="c05de-193">To terminate polling, close the service host.</span></span>  
+8. <span data-ttu-id="24949-193">ポーリングを終了するには、サービス ホストを閉じます。</span><span class="sxs-lookup"><span data-stu-id="24949-193">To terminate polling, close the service host.</span></span>  
   
-    > [!IMPORTANT]
-    >  <span data-ttu-id="c05de-194">アダプターは、サービス ホストが閉じられるまでポーリングを続行します。</span><span class="sxs-lookup"><span data-stu-id="c05de-194">The adapter will continue to poll until the service host is closed.</span></span>  
+   > [!IMPORTANT]
+   >  <span data-ttu-id="24949-194">アダプターは、サービス ホストが閉じられるまでポーリングを続行します。</span><span class="sxs-lookup"><span data-stu-id="24949-194">The adapter will continue to poll until the service host is closed.</span></span>  
   
-    ```  
-    srvHost.Close();  
-    ```  
+   ```  
+   srvHost.Close();  
+   ```  
   
-### <a name="example"></a><span data-ttu-id="c05de-195">例</span><span class="sxs-lookup"><span data-stu-id="c05de-195">Example</span></span>  
- <span data-ttu-id="c05de-196">次の例では、SCOTT/ACCOUNTACTIVITY テーブルに対して実行されるポーリング クエリを示します。</span><span class="sxs-lookup"><span data-stu-id="c05de-196">The following example shows a polling query that executes against the /SCOTT/ACCOUNTACTIVITY table.</span></span> <span data-ttu-id="c05de-197">ポーリング後ステートメントでは、別のテーブル/SCOTT/ACCOUNTHISTORY に処理されたレコードを移動する Oracle 関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="c05de-197">The post-poll statement invokes an Oracle function that moves the processed records to another table /SCOTT/ACCOUNTHISTORY.</span></span> <span data-ttu-id="c05de-198">接続 URI の"AccountActivity"PollingId パラメーターを設定して、POLLINGSTMT 操作の名前空間が変更されます。</span><span class="sxs-lookup"><span data-stu-id="c05de-198">The namespace of the POLLINGSTMT operation is modified by setting the PollingId parameter to "AccountActivity" in the connection URI.</span></span> <span data-ttu-id="c05de-199">この例では、生成されたをサブクラスで POLLINGSTMT 操作用の WCF サービスが作成**OracleDBBindingService**クラスです。 ただし、生成されたクラス内で直接、ロジックを実装することができます。</span><span class="sxs-lookup"><span data-stu-id="c05de-199">In this example, the WCF service for the POLLINGSTMT operation is created by sub-classing the generated **OracleDBBindingService** class; however, you can implement your logic directly in the generated class.</span></span>  
+### <a name="example"></a><span data-ttu-id="24949-195">例</span><span class="sxs-lookup"><span data-stu-id="24949-195">Example</span></span>  
+ <span data-ttu-id="24949-196">次の例では、SCOTT/ACCOUNTACTIVITY テーブルに対して実行されるポーリング クエリを示します。</span><span class="sxs-lookup"><span data-stu-id="24949-196">The following example shows a polling query that executes against the /SCOTT/ACCOUNTACTIVITY table.</span></span> <span data-ttu-id="24949-197">ポーリング後ステートメントは、処理済みレコードを別のテーブル/SCOTT/ACCOUNTHISTORY に移動する Oracle 関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="24949-197">The post-poll statement invokes an Oracle function that moves the processed records to another table /SCOTT/ACCOUNTHISTORY.</span></span> <span data-ttu-id="24949-198">接続 URI の"AccountActivity"PollingId パラメーターを設定して POLLINGSTMT 操作の名前空間が変更されます。</span><span class="sxs-lookup"><span data-stu-id="24949-198">The namespace of the POLLINGSTMT operation is modified by setting the PollingId parameter to "AccountActivity" in the connection URI.</span></span> <span data-ttu-id="24949-199">この例では、生成されたをサブクラス化して POLLINGSTMT 操作用の WCF サービスを作成**OracleDBBindingService**クラス。 ただし、生成されたクラス内で直接、ロジックを実装できます。</span><span class="sxs-lookup"><span data-stu-id="24949-199">In this example, the WCF service for the POLLINGSTMT operation is created by sub-classing the generated **OracleDBBindingService** class; however, you can implement your logic directly in the generated class.</span></span>  
   
 ```  
 using System;  
@@ -383,5 +383,5 @@ namespace OraclePollingSM
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="c05de-200">参照</span><span class="sxs-lookup"><span data-stu-id="c05de-200">See Also</span></span>  
- [<span data-ttu-id="c05de-201">WCF サービス モデルを使用して Oracle データベース アプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="c05de-201">Develop Oracle Database applications using the WCF Service Model</span></span>](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md)
+## <a name="see-also"></a><span data-ttu-id="24949-200">参照</span><span class="sxs-lookup"><span data-stu-id="24949-200">See Also</span></span>  
+ [<span data-ttu-id="24949-201">WCF サービス モデルを使用して Oracle データベース アプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="24949-201">Develop Oracle Database applications using the WCF Service Model</span></span>](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md)

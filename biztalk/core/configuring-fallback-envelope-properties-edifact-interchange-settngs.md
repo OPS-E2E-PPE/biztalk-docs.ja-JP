@@ -1,5 +1,5 @@
 ---
-title: フォールバック エンベロープ プロパティ (EDIFACT インターチェンジの設定) の構成 |Microsoft ドキュメント
+title: フォールバック エンベロープ プロパティ (EDIFACT インターチェンジの設定) の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,39 +12,39 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6a141b852f85947165d3d3d4d638cf1cb10ccb0
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: b7547e646e166a9ec438da246242a2d460d77d63
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "22233034"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013075"
 ---
-# <a name="configuring-fallback-envelope-properties-edifact-interchange-settngs"></a><span data-ttu-id="ed965-102">フォールバック エンベロープ プロパティの構成 (EDIFACT インターチェンジの設定)</span><span class="sxs-lookup"><span data-stu-id="ed965-102">Configuring Fallback Envelope Properties (EDIFACT-Interchange Settngs)</span></span>
-<span data-ttu-id="ed965-103">このセクションでは、送信 EDIFACT メッセージのエンベロープを構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="ed965-103">This section provides instructions on how to configure the envelope for outgoing EDIFACT messages.</span></span>  
+# <a name="configuring-fallback-envelope-properties-edifact-interchange-settngs"></a><span data-ttu-id="e6dc2-102">フォールバック エンベロープ プロパティの構成 (EDIFACT インターチェンジの設定)</span><span class="sxs-lookup"><span data-stu-id="e6dc2-102">Configuring Fallback Envelope Properties (EDIFACT-Interchange Settngs)</span></span>
+<span data-ttu-id="e6dc2-103">このセクションでは、送信 EDIFACT メッセージのエンベロープを構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e6dc2-103">This section provides instructions on how to configure the envelope for outgoing EDIFACT messages.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="ed965-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="ed965-104">Prerequisites</span></span>  
- <span data-ttu-id="ed965-105">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ed965-105">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="e6dc2-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="e6dc2-104">Prerequisites</span></span>  
+ <span data-ttu-id="e6dc2-105">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6dc2-105">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  
   
-### <a name="to-configure-the-interchange-envelope"></a><span data-ttu-id="ed965-106">インターチェンジ エンベロープを構成するには</span><span class="sxs-lookup"><span data-stu-id="ed965-106">To configure the interchange envelope</span></span>  
+### <a name="to-configure-the-interchange-envelope"></a><span data-ttu-id="e6dc2-106">インターチェンジ エンベロープを構成するには</span><span class="sxs-lookup"><span data-stu-id="e6dc2-106">To configure the interchange envelope</span></span>  
   
-1.  <span data-ttu-id="ed965-107">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、右クリックし、**パーティ**ノードをクリックして**EDIFACT フォールバックの設定**です。</span><span class="sxs-lookup"><span data-stu-id="ed965-107">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, right-click the **Parties** node, and then click **EDIFACT Fallback Settings**.</span></span>  
+1. <span data-ttu-id="e6dc2-107">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックし、**パーティ**ノード、およびクリック**EDIFACT フォールバックの設定**します。</span><span class="sxs-lookup"><span data-stu-id="e6dc2-107">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, right-click the **Parties** node, and then click **EDIFACT Fallback Settings**.</span></span>  
   
-2.  <span data-ttu-id="ed965-108">**EDIFACT フォールバックの設定** ダイアログ ボックスで、 **EDIFACT アグリーメント ページ**  タブの 、 **インターチェンジの設定**  をクリックして **エンベロープ**します。</span><span class="sxs-lookup"><span data-stu-id="ed965-108">In the **EDIFACT Fallback Settings** dialog box, in the **EDIFACT Agreement Pages** tab, under the **Interchange Settings** section, click **Envelopes**.</span></span>  
+2. <span data-ttu-id="e6dc2-108">**EDIFACT フォールバックの設定**] ダイアログ ボックスで、 **EDIFACT アグリーメント ページ**] タブの [、**インターチェンジの設定**セクションで、[**封筒**.</span><span class="sxs-lookup"><span data-stu-id="e6dc2-108">In the **EDIFACT Fallback Settings** dialog box, in the **EDIFACT Agreement Pages** tab, under the **Interchange Settings** section, click **Envelopes**.</span></span>  
   
-3.  <span data-ttu-id="ed965-109">**処理優先度コード (UNB8)**, 、1 文字以上、最大 1 つの文字でアルファベット順の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="ed965-109">For **Processing priority code (UNB8)**, enter an alphabetical value with a minimum of one character and a maximum of one character.</span></span> <span data-ttu-id="ed965-110">このフィールドの入力は省略可能です。</span><span class="sxs-lookup"><span data-stu-id="ed965-110">This is an optional field.</span></span>  
+3. <span data-ttu-id="e6dc2-109">**処理優先度コード (UNB8)**、1 つの文字の最小値、1 つの文字のアルファベット順の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6dc2-109">For **Processing priority code (UNB8)**, enter an alphabetical value with a minimum of one character and a maximum of one character.</span></span> <span data-ttu-id="e6dc2-110">このフィールドの入力は省略可能です。</span><span class="sxs-lookup"><span data-stu-id="e6dc2-110">This is an optional field.</span></span>  
   
-4.  <span data-ttu-id="ed965-111">**通信アグリーメント (UNB10)**, 、英数字 1 文字以上、35 文字の最大値を入力します。</span><span class="sxs-lookup"><span data-stu-id="ed965-111">For **Communication agreement (UNB10)**, enter an alphanumeric value with a minimum of one character and a maximum of 35 characters.</span></span> <span data-ttu-id="ed965-112">このフィールドは省略可能です。</span><span class="sxs-lookup"><span data-stu-id="ed965-112">This is an optional field</span></span>  
+4. <span data-ttu-id="e6dc2-111">**通信アグリーメント (UNB10)**、1 つの文字の最小値、最大 35 文字の英数字を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6dc2-111">For **Communication agreement (UNB10)**, enter an alphanumeric value with a minimum of one character and a maximum of 35 characters.</span></span> <span data-ttu-id="e6dc2-112">このフィールドは省略可能です。 </span><span class="sxs-lookup"><span data-stu-id="e6dc2-112">This is an optional field</span></span>  
   
-5.  <span data-ttu-id="ed965-113">選択**テスト インジケータ (UNB11)** によって、インターチェンジが生成されることを示すために[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]テスト データは、します。</span><span class="sxs-lookup"><span data-stu-id="ed965-113">Select **Test indicator (UNB11)** to indicate that the interchange generated by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is test data.</span></span>  
+5. <span data-ttu-id="e6dc2-113">選択**テスト インジケーター (UNB11)** で、インターチェンジが生成されることを示す[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がテスト データ。</span><span class="sxs-lookup"><span data-stu-id="e6dc2-113">Select **Test indicator (UNB11)** to indicate that the interchange generated by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is test data.</span></span>  
   
-6.  <span data-ttu-id="ed965-114">選択 **適用 UNA セグメント (文字列サービス通知)** を送信するインターチェンジの UNA セグメントを生成します。</span><span class="sxs-lookup"><span data-stu-id="ed965-114">Select **Apply UNA segment (String service advice)** to generate a UNA segment for the interchange to be sent.</span></span> <span data-ttu-id="ed965-115">このオプションがオンの場合、 **UNA6** 空にすることはできませんと **UNA6 サフィックス** することはできません **None**します。</span><span class="sxs-lookup"><span data-stu-id="ed965-115">If this option is checked, then **UNA6** cannot be empty and **UNA 6 Suffix** cannot be **None**.</span></span>  
+6. <span data-ttu-id="e6dc2-114">選択**適用の UNA セグメント (文字列サービス通知)** を送信するインターチェンジの UNA セグメントを生成します。</span><span class="sxs-lookup"><span data-stu-id="e6dc2-114">Select **Apply UNA segment (String service advice)** to generate a UNA segment for the interchange to be sent.</span></span> <span data-ttu-id="e6dc2-115">このオプションがオンの場合、 **UNA6**空にすることはできませんと**UNA6 サフィックス**することはできません**None**します。</span><span class="sxs-lookup"><span data-stu-id="e6dc2-115">If this option is checked, then **UNA6** cannot be empty and **UNA 6 Suffix** cannot be **None**.</span></span>  
   
-    > [!NOTE]
-    >  <span data-ttu-id="ed965-116">指定した**UNA6**と**UNA6 サフィックス**で、**文字セットと区切り記号**ページ」の説明に従って[構成フォールバック文字セットと区切り記号のプロパティ (EDIFACT)](../core/configuring-fallback-charset-and-separator-properties-edifact.md)です。</span><span class="sxs-lookup"><span data-stu-id="ed965-116">You specify **UNA6** and **UNA6 Suffix** in the **Charset and Separators** page as described in [Configuring Fallback Charset and Separator Properties (EDIFACT)](../core/configuring-fallback-charset-and-separator-properties-edifact.md).</span></span>  
+   > [!NOTE]
+   >  <span data-ttu-id="e6dc2-116">指定した**UNA6**と**UNA6 サフィックス**で、**文字セットと区切り記号**」の説明に従ってページ[構成フォールバック文字セットと区切り記号のプロパティ (EDIFACT)](../core/configuring-fallback-charset-and-separator-properties-edifact.md)します。</span><span class="sxs-lookup"><span data-stu-id="e6dc2-116">You specify **UNA6** and **UNA6 Suffix** in the **Charset and Separators** page as described in [Configuring Fallback Charset and Separator Properties (EDIFACT)](../core/configuring-fallback-charset-and-separator-properties-edifact.md).</span></span>  
   
-7.  <span data-ttu-id="ed965-117">選択 **適用 UNG セグメント (機能グループ ヘッダー)** 送信メッセージの機能グループ ヘッダーにグループ化セグメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="ed965-117">Select **Apply UNG segments (Functional group header)** to create grouping segments in the functional group header in outgoing messages.</span></span>  
+7. <span data-ttu-id="e6dc2-117">選択**適用の UNG セグメント (機能グループ ヘッダー)** 送信メッセージの機能グループ ヘッダーにグループ化セグメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="e6dc2-117">Select **Apply UNG segments (Functional group header)** to create grouping segments in the functional group header in outgoing messages.</span></span>  
   
-8.  <span data-ttu-id="ed965-118">をクリックして **適用** 構成を続行する前にその変更を受け入れるか、クリックして **OK** 、変更を検証し、ダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="ed965-118">Click **Apply** to accept the changes before continuing with the configuration, or click **OK** to validate the changes and then close the dialog box.</span></span>  
+8. <span data-ttu-id="e6dc2-118">をクリックして**適用**構成では、続行する前に、変更を受け入れるか、をクリックする**OK**変更を検証し、ダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e6dc2-118">Click **Apply** to accept the changes before continuing with the configuration, or click **OK** to validate the changes and then close the dialog box.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="ed965-119">参照</span><span class="sxs-lookup"><span data-stu-id="ed965-119">See Also</span></span>  
- [<span data-ttu-id="ed965-120">インターチェンジ処理に対する EDIFACT フォールバック アグリーメント プロパティの構成</span><span class="sxs-lookup"><span data-stu-id="ed965-120">Configuring EDIFACT Fallback Agreement Properties for Interchange Processing</span></span>](../core/configuring-edifact-fallback-agreement-properties-for-interchange-processing.md)
+## <a name="see-also"></a><span data-ttu-id="e6dc2-119">参照</span><span class="sxs-lookup"><span data-stu-id="e6dc2-119">See Also</span></span>  
+ [<span data-ttu-id="e6dc2-120">インターチェンジ処理に対する EDIFACT フォールバック アグリーメント プロパティの構成</span><span class="sxs-lookup"><span data-stu-id="e6dc2-120">Configuring EDIFACT Fallback Agreement Properties for Interchange Processing</span></span>](../core/configuring-edifact-fallback-agreement-properties-for-interchange-processing.md)

@@ -1,5 +1,5 @@
 ---
-title: Windows PowerShell スクリプト |Microsoft ドキュメント
+title: Windows PowerShell スクリプト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4248a81f918b674dcf72c930132b7743472241f3
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b531fa3469139434f341fe9e413a49b4b021e86f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25976344"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979131"
 ---
-# <a name="windows-powershell-scripts"></a><span data-ttu-id="30095-102">Windows PowerShell スクリプト</span><span class="sxs-lookup"><span data-stu-id="30095-102">Windows PowerShell Scripts</span></span>
-<span data-ttu-id="30095-103">このトピックには、このガイドで説明されているレジストリ設定を適用する BizTalk Server 環境内のコンピューターで実行できる Windows PowerShell スクリプトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="30095-103">This topic contains Windows PowerShell scripts that can be run on the computers in a BizTalk Server environment to apply registry settings described in this guide.</span></span>  
+# <a name="windows-powershell-scripts"></a><span data-ttu-id="9df5f-102">Windows PowerShell スクリプト</span><span class="sxs-lookup"><span data-stu-id="9df5f-102">Windows PowerShell Scripts</span></span>
+<span data-ttu-id="9df5f-103">このトピックでには、このガイドで説明されているレジストリ設定を適用する BizTalk Server 環境内のコンピューターで実行できる Windows PowerShell スクリプトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="9df5f-103">This topic contains Windows PowerShell scripts that can be run on the computers in a BizTalk Server environment to apply registry settings described in this guide.</span></span>  
   
-> [!IMPORTANT]  
->  <span data-ttu-id="30095-104">これらのスクリプトは、上でのみ実行する必要があります[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]ではありません、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="30095-104">These scripts should only be run on [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)], not on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)].</span></span> <span data-ttu-id="30095-105">これらのスクリプトが正常に実行中に[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]、ラボのテストによると、これらのスクリプトを提供しないこと、大幅なパフォーマンスの利点に[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="30095-105">While these scripts will execute successfully on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], lab testing has indicated that these scripts do not provide any significant performance advantage on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)].</span></span> <span data-ttu-id="30095-106">これらのスクリプトは、上でのみ実行する必要があります、[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]徹底的にテストおよび評価後の運用環境。</span><span class="sxs-lookup"><span data-stu-id="30095-106">These scripts should only be run on a [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] production environment after thorough testing and evaluation.</span></span>  
+> [!IMPORTANT]
+>  <span data-ttu-id="9df5f-104">これらのスクリプトでのみ実行する必要があります[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]ではありません、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="9df5f-104">These scripts should only be run on [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)], not on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)].</span></span> <span data-ttu-id="9df5f-105">これらのスクリプトが正常に実行中に[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]、これらのスクリプトを提供しないこともパフォーマンスに大きなメリットに示されるがラボ テスト[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="9df5f-105">While these scripts will execute successfully on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], lab testing has indicated that these scripts do not provide any significant performance advantage on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)].</span></span> <span data-ttu-id="9df5f-106">これらのスクリプトでのみ実行する必要があります、[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]徹底的なテストと評価した後、運用環境です。</span><span class="sxs-lookup"><span data-stu-id="9df5f-106">These scripts should only be run on a [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] production environment after thorough testing and evaluation.</span></span>  
   
-## <a name="optimizing-operating-system-performance-through-registry-settings"></a><span data-ttu-id="30095-107">レジストリ設定によって、オペレーティング システムのパフォーマンスを最適化します。</span><span class="sxs-lookup"><span data-stu-id="30095-107">Optimizing operating system performance through registry settings</span></span>  
- <span data-ttu-id="30095-108">説明するレジストリ設定を適用する、次の Windows PowerShell スクリプトを使用することができます[オペレーティング システムのパフォーマンスの最適化](../technical-guides/optimizing-operating-system-performance.md)です。</span><span class="sxs-lookup"><span data-stu-id="30095-108">The following Windows PowerShell script can be used to apply the registry settings described in [Optimizing Operating System Performance](../technical-guides/optimizing-operating-system-performance.md).</span></span>  
+## <a name="optimizing-operating-system-performance-through-registry-settings"></a><span data-ttu-id="9df5f-107">レジストリ設定を使用してオペレーティング システムのパフォーマンスを最適化します。</span><span class="sxs-lookup"><span data-stu-id="9df5f-107">Optimizing operating system performance through registry settings</span></span>  
+ <span data-ttu-id="9df5f-108">次の Windows PowerShell スクリプトで説明されているレジストリ設定を適用するために使用できます[オペレーティング システムのパフォーマンスの最適化](../technical-guides/optimizing-operating-system-performance.md)します。</span><span class="sxs-lookup"><span data-stu-id="9df5f-108">The following Windows PowerShell script can be used to apply the registry settings described in [Optimizing Operating System Performance](../technical-guides/optimizing-operating-system-performance.md).</span></span>  
   
- <span data-ttu-id="30095-109">次のスクリプトをメモ帳にコピーし、セット OSRegSettings.ps1 として保存します。</span><span class="sxs-lookup"><span data-stu-id="30095-109">Copy the script below into Notepad and save as Set-OSRegSettings.ps1.</span></span> <span data-ttu-id="30095-110">各コンピューターでスクリプトを実行し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境での指示に従って[オペレーティング システムのパフォーマンスの最適化](../technical-guides/optimizing-operating-system-performance.md):</span><span class="sxs-lookup"><span data-stu-id="30095-110">Then run the script on each computer in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by following the instructions in [Optimizing Operating System Performance](../technical-guides/optimizing-operating-system-performance.md):</span></span>  
+ <span data-ttu-id="9df5f-109">次のスクリプトをメモ帳にコピーし、セット OSRegSettings.ps1 として保存します。</span><span class="sxs-lookup"><span data-stu-id="9df5f-109">Copy the script below into Notepad and save as Set-OSRegSettings.ps1.</span></span> <span data-ttu-id="9df5f-110">内の各コンピューターでスクリプトを実行し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境での手順に従って[オペレーティング システムのパフォーマンスの最適化](../technical-guides/optimizing-operating-system-performance.md):</span><span class="sxs-lookup"><span data-stu-id="9df5f-110">Then run the script on each computer in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by following the instructions in [Optimizing Operating System Performance](../technical-guides/optimizing-operating-system-performance.md):</span></span>  
   
 ```  
 #Set-OSRegSettings.ps1  
@@ -121,10 +121,10 @@ SetProperty "HKLM:\System\CurrentControlSet\Services\LanmanServer\Parameters" "S
 SetProperty "HKLM:\System\CurrentControlSet\Control\Session Manager\Memory Management" "LargeSystemCache" 0          
 ```  
   
-## <a name="optimizing-network-performance-through-registry-settings"></a><span data-ttu-id="30095-111">レジストリ設定によってネットワーク パフォーマンスを最適化します。</span><span class="sxs-lookup"><span data-stu-id="30095-111">Optimizing network performance through registry settings</span></span>  
- <span data-ttu-id="30095-112">説明するレジストリ設定を適用する、次の Windows PowerShell スクリプトを使用することができます[ネットワークのパフォーマンスの最適化](../technical-guides/optimizing-network-performance.md)です。</span><span class="sxs-lookup"><span data-stu-id="30095-112">The following Windows PowerShell script can be used to apply the registry settings described in [Optimizing Network Performance](../technical-guides/optimizing-network-performance.md).</span></span>  
+## <a name="optimizing-network-performance-through-registry-settings"></a><span data-ttu-id="9df5f-111">レジストリ設定を使用してネットワークのパフォーマンスを最適化します。</span><span class="sxs-lookup"><span data-stu-id="9df5f-111">Optimizing network performance through registry settings</span></span>  
+ <span data-ttu-id="9df5f-112">次の Windows PowerShell スクリプトで説明されているレジストリ設定を適用するために使用できます[ネットワークのパフォーマンスの最適化](../technical-guides/optimizing-network-performance.md)します。</span><span class="sxs-lookup"><span data-stu-id="9df5f-112">The following Windows PowerShell script can be used to apply the registry settings described in [Optimizing Network Performance](../technical-guides/optimizing-network-performance.md).</span></span>  
   
- <span data-ttu-id="30095-113">次のスクリプトをメモ帳にコピーし、セット NetworkRegSettings.ps1 として保存します。</span><span class="sxs-lookup"><span data-stu-id="30095-113">Copy the script below into Notepad and save as Set-NetworkRegSettings.ps1.</span></span> <span data-ttu-id="30095-114">各コンピューターでスクリプトを実行し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境での指示に従って[ネットワークのパフォーマンスの最適化](../technical-guides/optimizing-network-performance.md):</span><span class="sxs-lookup"><span data-stu-id="30095-114">Then run the script on each computer in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by following the instructions in [Optimizing Network Performance](../technical-guides/optimizing-network-performance.md):</span></span>  
+ <span data-ttu-id="9df5f-113">次のスクリプトをメモ帳にコピーし、セット NetworkRegSettings.ps1 として保存します。</span><span class="sxs-lookup"><span data-stu-id="9df5f-113">Copy the script below into Notepad and save as Set-NetworkRegSettings.ps1.</span></span> <span data-ttu-id="9df5f-114">内の各コンピューターでスクリプトを実行し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境での手順に従って[ネットワークのパフォーマンスの最適化](../technical-guides/optimizing-network-performance.md):</span><span class="sxs-lookup"><span data-stu-id="9df5f-114">Then run the script on each computer in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by following the instructions in [Optimizing Network Performance](../technical-guides/optimizing-network-performance.md):</span></span>  
   
 ```  
 #Set-NetworkRegSettings.ps1  
@@ -213,5 +213,5 @@ SetProperty $path "DynamicBacklogGrowthDelta" 0x64 # DynamicBacklogGrowthDelta -
 #Disable NETBIOS on cluster private network, if configured  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="30095-115">参照</span><span class="sxs-lookup"><span data-stu-id="30095-115">See Also</span></span>  
- [<span data-ttu-id="30095-116">パフォーマンスの最適化</span><span class="sxs-lookup"><span data-stu-id="30095-116">Optimizing Performance</span></span>](../technical-guides/optimizing-performance.md)
+## <a name="see-also"></a><span data-ttu-id="9df5f-115">参照</span><span class="sxs-lookup"><span data-stu-id="9df5f-115">See Also</span></span>  
+ [<span data-ttu-id="9df5f-116">パフォーマンスの最適化</span><span class="sxs-lookup"><span data-stu-id="9df5f-116">Optimizing Performance</span></span>](../technical-guides/optimizing-performance.md)

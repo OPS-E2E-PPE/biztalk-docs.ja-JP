@@ -1,5 +1,5 @@
 ---
-title: 関連アプリケーションを作成する方法 |Microsoft ドキュメント
+title: 関連アプリケーションを作成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2f621faef7694a3dba7885bab5641e0baa58e8f
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 8775ea82843641600c9156d79afab49e6cd7c634
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "25969024"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37003107"
 ---
-# <a name="how-to-create-an-affiliate-application"></a><span data-ttu-id="011f4-102">関連アプリケーションを作成する方法</span><span class="sxs-lookup"><span data-stu-id="011f4-102">How to Create an Affiliate Application</span></span>
-<span data-ttu-id="011f4-103">MMC スナップインまたはここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のアプリケーションを作成できます。</span><span class="sxs-lookup"><span data-stu-id="011f4-103">You can use the MMC Snap-In or this command to create one or more applications, as specified by the XML file.</span></span> <span data-ttu-id="011f4-104">Windows 側開始 SSO の XML ファイルの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="011f4-104">An example XML file for Windows Initiated SSO is:</span></span>  
+# <a name="how-to-create-an-affiliate-application"></a><span data-ttu-id="bd6de-102">関連アプリケーションを作成する方法</span><span class="sxs-lookup"><span data-stu-id="bd6de-102">How to Create an Affiliate Application</span></span>
+<span data-ttu-id="bd6de-103">MMC スナップインまたはここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のアプリケーションを作成できます。</span><span class="sxs-lookup"><span data-stu-id="bd6de-103">You can use the MMC Snap-In or this command to create one or more applications, as specified by the XML file.</span></span> <span data-ttu-id="bd6de-104">Windows 側開始 SSO の XML ファイルの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="bd6de-104">An example XML file for Windows Initiated SSO is:</span></span>  
   
 ```  
 <sso>  
@@ -41,48 +41,48 @@ ms.locfileid: "25969024"
   
 ```  
   
- <span data-ttu-id="011f4-105">関連アプリケーションを作成した後は、次のプロパティを変更できません。</span><span class="sxs-lookup"><span data-stu-id="011f4-105">After you create an affiliate application, you cannot modify the following properties:</span></span>  
+ <span data-ttu-id="bd6de-105">関連アプリケーションを作成した後は、次のプロパティを変更できません。</span><span class="sxs-lookup"><span data-stu-id="bd6de-105">After you create an affiliate application, you cannot modify the following properties:</span></span>  
   
--   <span data-ttu-id="011f4-106">関連アプリケーションの名前</span><span class="sxs-lookup"><span data-stu-id="011f4-106">Name of the affiliate application</span></span>  
+-   <span data-ttu-id="bd6de-106">関連アプリケーションの名前</span><span class="sxs-lookup"><span data-stu-id="bd6de-106">Name of the affiliate application</span></span>  
   
--   <span data-ttu-id="011f4-107">関連アプリケーションに関連付けられたフィールド</span><span class="sxs-lookup"><span data-stu-id="011f4-107">Fields associated with the affiliate application</span></span>  
+-   <span data-ttu-id="bd6de-107">関連アプリケーションに関連付けられたフィールド</span><span class="sxs-lookup"><span data-stu-id="bd6de-107">Fields associated with the affiliate application</span></span>  
   
--   <span data-ttu-id="011f4-108">関連アプリケーションの種類 (ホスト グループ、単独、構成ストア)</span><span class="sxs-lookup"><span data-stu-id="011f4-108">Affiliate application type (host group, individual, or configuration store)</span></span>  
+-   <span data-ttu-id="bd6de-108">関連アプリケーションの種類 (ホスト グループ、単独、構成ストア)</span><span class="sxs-lookup"><span data-stu-id="bd6de-108">Affiliate application type (host group, individual, or configuration store)</span></span>  
   
--   <span data-ttu-id="011f4-109">関連管理者グループと同じ管理者アカウント</span><span class="sxs-lookup"><span data-stu-id="011f4-109">Administration account same as affiliate administrators group.</span></span> <span data-ttu-id="011f4-110">(このフラグを指定すると、この関連アプリケーションの管理者アカウントとして常に関連管理者グループが使用されます)</span><span class="sxs-lookup"><span data-stu-id="011f4-110">(Specifying this flag will always use the affiliate administrators group as the administrator account for this affiliate application)</span></span>  
-  
-> [!IMPORTANT]
->  <span data-ttu-id="011f4-111">allowLocalAccounts フラグを yes に設定すると、管理アカウントとユーザー アカウントにローカル アカウントを使用できます。</span><span class="sxs-lookup"><span data-stu-id="011f4-111">You can use local accounts for the administration account and user account by setting the allowLocalAccounts flag to yes.</span></span> <span data-ttu-id="011f4-112">ただし、このフラグは 1 台のコンピューターのシナリオ以外では使用できません。</span><span class="sxs-lookup"><span data-stu-id="011f4-112">However, you should only use this flag in single-computer scenarios.</span></span>  
+-   <span data-ttu-id="bd6de-109">関連管理者グループと同じ管理者アカウント</span><span class="sxs-lookup"><span data-stu-id="bd6de-109">Administration account same as affiliate administrators group.</span></span> <span data-ttu-id="bd6de-110">(このフラグを指定すると、この関連アプリケーションの管理者アカウントとして常に関連管理者グループが使用されます)</span><span class="sxs-lookup"><span data-stu-id="bd6de-110">(Specifying this flag will always use the affiliate administrators group as the administrator account for this affiliate application)</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="011f4-113">この作業を実行するには、SSO 管理者または SSO 関連管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="011f4-113">You must be an SSO administrator or SSO affiliate administrator to perform this task.</span></span>  
+>  <span data-ttu-id="bd6de-111">allowLocalAccounts フラグを yes に設定すると、管理アカウントとユーザー アカウントにローカル アカウントを使用できます。</span><span class="sxs-lookup"><span data-stu-id="bd6de-111">You can use local accounts for the administration account and user account by setting the allowLocalAccounts flag to yes.</span></span> <span data-ttu-id="bd6de-112">ただし、このフラグは 1 台のコンピューターのシナリオ以外では使用できません。</span><span class="sxs-lookup"><span data-stu-id="bd6de-112">However, you should only use this flag in single-computer scenarios.</span></span>  
   
- <span data-ttu-id="011f4-114">関連アプリケーションは作成した後で有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="011f4-114">After you create the affiliate application, you must enable it.</span></span> <span data-ttu-id="011f4-115">詳細については、次を参照してください。[関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md)です。</span><span class="sxs-lookup"><span data-stu-id="011f4-115">For more information, see [How to Enable an Affiliate Application](../core/how-to-enable-an-affiliate-application.md).</span></span>  
+> [!IMPORTANT]
+>  <span data-ttu-id="bd6de-113">この作業を実行するには、SSO 管理者または SSO 関連管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="bd6de-113">You must be an SSO administrator or SSO affiliate administrator to perform this task.</span></span>  
   
-### <a name="to-create-an-affiliate-application-using-the-mmc-snap-in"></a><span data-ttu-id="011f4-116">MMC スナップインを使用して関連アプリケーションを作成するには</span><span class="sxs-lookup"><span data-stu-id="011f4-116">To create an affiliate application using the MMC Snap-In</span></span>  
+ <span data-ttu-id="bd6de-114">関連アプリケーションは作成した後で有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="bd6de-114">After you create the affiliate application, you must enable it.</span></span> <span data-ttu-id="bd6de-115">詳細については、次を参照してください。[関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md)します。</span><span class="sxs-lookup"><span data-stu-id="bd6de-115">For more information, see [How to Enable an Affiliate Application](../core/how-to-enable-an-affiliate-application.md).</span></span>  
   
-1.  <span data-ttu-id="011f4-117">**開始**  メニューのをクリックして **プログラム**, 、 をクリックして **Microsoft エンタープライズ シングル サインオン**, 、 をクリックし、 **SSO 管理**します。</span><span class="sxs-lookup"><span data-stu-id="011f4-117">On the **Start** menu, click **Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
+### <a name="to-create-an-affiliate-application-using-the-mmc-snap-in"></a><span data-ttu-id="bd6de-116">MMC スナップインを使用して関連アプリケーションを作成するには</span><span class="sxs-lookup"><span data-stu-id="bd6de-116">To create an affiliate application using the MMC Snap-In</span></span>  
   
-2.  <span data-ttu-id="011f4-118">ENTSSO MMC スナップインのスコープ ペインで、展開、 **エンタープライズ シングル サインオン** ノードです。</span><span class="sxs-lookup"><span data-stu-id="011f4-118">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
+1.  <span data-ttu-id="bd6de-117">**開始** メニューのをクリックして**プログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、 をクリックし、 **SSO 管理**。</span><span class="sxs-lookup"><span data-stu-id="bd6de-117">On the **Start** menu, click **Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
   
-3.  <span data-ttu-id="011f4-119">右クリック **関連アプリケーション**, 、クリックして **アプリケーションの作成**します。</span><span class="sxs-lookup"><span data-stu-id="011f4-119">Right-click **Affiliate Applications**, and then click **Create Application**.</span></span>  
+2.  <span data-ttu-id="bd6de-118">ENTSSO MMC スナップインの [スコープ] ウィンドウで、**エンタープライズ シングル サインオン**ノード。</span><span class="sxs-lookup"><span data-stu-id="bd6de-118">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
   
-4.  <span data-ttu-id="011f4-120">指示に従って、 **エンタープライズ シングル サインオン アプリケーション ウィザード**します。</span><span class="sxs-lookup"><span data-stu-id="011f4-120">Follow the instructions in the **Enterprise Single Sign-On Application Wizard**.</span></span>  
+3.  <span data-ttu-id="bd6de-119">右クリックして**関連アプリケーション**、 をクリックし、**アプリケーションの作成**です。</span><span class="sxs-lookup"><span data-stu-id="bd6de-119">Right-click **Affiliate Applications**, and then click **Create Application**.</span></span>  
   
-### <a name="to-create-an-affiliate-application-using-the-command-line"></a><span data-ttu-id="011f4-121">コマンド ラインを使用して関連アプリケーションを作成するには</span><span class="sxs-lookup"><span data-stu-id="011f4-121">To create an affiliate application using the command line</span></span>  
+4.  <span data-ttu-id="bd6de-120">指示に従って、**エンタープライズ シングル サインオン アプリケーション ウィザード**します。</span><span class="sxs-lookup"><span data-stu-id="bd6de-120">Follow the instructions in the **Enterprise Single Sign-On Application Wizard**.</span></span>  
   
-1.  <span data-ttu-id="011f4-122">**開始**  メニューのをクリックして **実行**, 、し、入力 **cmd**します。</span><span class="sxs-lookup"><span data-stu-id="011f4-122">On the **Start** menu, click **run**, and then type **cmd**.</span></span>  
+### <a name="to-create-an-affiliate-application-using-the-command-line"></a><span data-ttu-id="bd6de-121">コマンド ラインを使用して関連アプリケーションを作成するには</span><span class="sxs-lookup"><span data-stu-id="bd6de-121">To create an affiliate application using the command line</span></span>  
   
-2.  <span data-ttu-id="011f4-123">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="011f4-123">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="011f4-124">既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="011f4-124">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+1. <span data-ttu-id="bd6de-122">**開始** メニューのをクリックして**実行**、し、入力**cmd**します。</span><span class="sxs-lookup"><span data-stu-id="bd6de-122">On the **Start** menu, click **run**, and then type **cmd**.</span></span>  
   
-3.  <span data-ttu-id="011f4-125">型 * * ssomanage – createapps」と入力 *\<アプリケーション ファイル名\>* * *、どこで*\<アプリケーション ファイル名\>* XML ファイルです。</span><span class="sxs-lookup"><span data-stu-id="011f4-125">Type **ssomanage –createapps *\<application file name\>***, where *\<application file name\>* is the XML file.</span></span>  
+2. <span data-ttu-id="bd6de-123">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="bd6de-123">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="bd6de-124">既定のインストール ディレクトリは*\<ドライブ\>*: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="bd6de-124">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-    > [!NOTE]
-    >  <span data-ttu-id="011f4-126">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="011f4-126">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+3. <span data-ttu-id="bd6de-125">型 * * ssomanage – createapps *\<アプリケーション ファイル名\>**<em>ここで、*\<アプリケーション ファイル名\></em>は XML ファイルです。</span><span class="sxs-lookup"><span data-stu-id="bd6de-125">Type **ssomanage –createapps *\<application file name\>**<em>, where *\<application file name\></em> is the XML file.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="011f4-127">参照</span><span class="sxs-lookup"><span data-stu-id="011f4-127">See Also</span></span>  
- <span data-ttu-id="011f4-128">[SSO 関連アプリケーション](../core/sso-affiliate-applications.md) </span><span class="sxs-lookup"><span data-stu-id="011f4-128">[SSO Affiliate Applications](../core/sso-affiliate-applications.md) </span></span>  
- <span data-ttu-id="011f4-129">[関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md) </span><span class="sxs-lookup"><span data-stu-id="011f4-129">[How to Enable an Affiliate Application](../core/how-to-enable-an-affiliate-application.md) </span></span>  
- <span data-ttu-id="011f4-130">[関連アプリケーションを削除する方法](../core/how-to-delete-an-affiliate-application.md) </span><span class="sxs-lookup"><span data-stu-id="011f4-130">[How to Delete an Affiliate Application](../core/how-to-delete-an-affiliate-application.md) </span></span>  
- <span data-ttu-id="011f4-131">[ユーザー マッピングを管理します。](../core/managing-user-mappings.md) </span><span class="sxs-lookup"><span data-stu-id="011f4-131">[Managing User Mappings](../core/managing-user-mappings.md) </span></span>  
- [<span data-ttu-id="011f4-132">関連アプリケーションの管理</span><span class="sxs-lookup"><span data-stu-id="011f4-132">Managing Affiliate Applications</span></span>](../core/managing-affiliate-applications.md)
+   > [!NOTE]
+   >  <span data-ttu-id="bd6de-126">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="bd6de-126">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="bd6de-127">参照</span><span class="sxs-lookup"><span data-stu-id="bd6de-127">See Also</span></span>  
+ <span data-ttu-id="bd6de-128">[SSO 関連アプリケーション](../core/sso-affiliate-applications.md) </span><span class="sxs-lookup"><span data-stu-id="bd6de-128">[SSO Affiliate Applications](../core/sso-affiliate-applications.md) </span></span>  
+ <span data-ttu-id="bd6de-129">[関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md) </span><span class="sxs-lookup"><span data-stu-id="bd6de-129">[How to Enable an Affiliate Application](../core/how-to-enable-an-affiliate-application.md) </span></span>  
+ <span data-ttu-id="bd6de-130">[関連アプリケーションを削除する方法](../core/how-to-delete-an-affiliate-application.md) </span><span class="sxs-lookup"><span data-stu-id="bd6de-130">[How to Delete an Affiliate Application](../core/how-to-delete-an-affiliate-application.md) </span></span>  
+ <span data-ttu-id="bd6de-131">[ユーザー マッピングの管理](../core/managing-user-mappings.md) </span><span class="sxs-lookup"><span data-stu-id="bd6de-131">[Managing User Mappings](../core/managing-user-mappings.md) </span></span>  
+ [<span data-ttu-id="bd6de-132">関連アプリケーションの管理</span><span class="sxs-lookup"><span data-stu-id="bd6de-132">Managing Affiliate Applications</span></span>](../core/managing-affiliate-applications.md)

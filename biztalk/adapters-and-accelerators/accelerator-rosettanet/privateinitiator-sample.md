@@ -1,5 +1,5 @@
 ---
-title: PrivateInitiator サンプル |Microsoft ドキュメント
+title: PrivateInitiator サンプル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 853b77e24359d6a833d526fc07166384ea946887
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 2ab84d145939191a8bdbca9afb44d04fdf24b3e9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004379"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37011283"
 ---
-# <a name="privateinitiator-sample"></a><span data-ttu-id="7155a-102">PrivateInitiator サンプル</span><span class="sxs-lookup"><span data-stu-id="7155a-102">PrivateInitiator Sample</span></span>
-<span data-ttu-id="7155a-103">PrivateInitiator.odx サンプルがインストールされている開始側プライベート プロセスのコードが含まれています[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server です。</span><span class="sxs-lookup"><span data-stu-id="7155a-103">The PrivateInitiator.odx sample contains the code for the initiator private process installed by [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server.</span></span> <span data-ttu-id="7155a-104">これは、SQL アダプターベースの既定の送受信ポートを使用して RNIF Service Content メッセージを送受信する、汎用のプライベート プロセスです。</span><span class="sxs-lookup"><span data-stu-id="7155a-104">This is a generic private process that sends and receives RNIF service-content messages from the default SQL adapter-based send and receive ports.</span></span>  
+# <a name="privateinitiator-sample"></a><span data-ttu-id="74d25-102">PrivateInitiator サンプル</span><span class="sxs-lookup"><span data-stu-id="74d25-102">PrivateInitiator Sample</span></span>
+<span data-ttu-id="74d25-103">PrivateInitiator.odx サンプルには、Microsoft® BizTalk Server によってインストールされる開始側プライベート プロセスのコードが含まれています。</span><span class="sxs-lookup"><span data-stu-id="74d25-103">The PrivateInitiator.odx sample contains the code for the initiator private process installed by Microsoft® BizTalk Server.</span></span> <span data-ttu-id="74d25-104">これは、SQL アダプターベースの既定の送受信ポートを使用して RNIF Service Content メッセージを送受信する、汎用のプライベート プロセスです。</span><span class="sxs-lookup"><span data-stu-id="74d25-104">This is a generic private process that sends and receives RNIF service-content messages from the default SQL adapter-based send and receive ports.</span></span>  
   
- <span data-ttu-id="7155a-105">既定では、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]セットアップ プログラムのインストールのサンプルを\<*ドライブ*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<バージョン\>\Sdk\privateinitiator のアクセラレータです。</span><span class="sxs-lookup"><span data-stu-id="7155a-105">By default, the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Setup program installs the sample in \<*drive*\>:\Program Files\\[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator for RosettaNet\SDK\PrivateInitiator.</span></span>  
+ <span data-ttu-id="74d25-105">既定で、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]セットアップ プログラムによってサンプルでは、 \<*ドライブ*\>: \Program Files\\Microsoft BizTalk\<バージョン\>のアクセラレータRosettaNet\SDK\PrivateInitiator します。</span><span class="sxs-lookup"><span data-stu-id="74d25-105">By default, the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Setup program installs the sample in \<*drive*\>:\Program Files\\Microsoft  BizTalk \<version\> Accelerator for RosettaNet\SDK\PrivateInitiator.</span></span>  
   
-## <a name="sample-contents"></a><span data-ttu-id="7155a-106">サンプルの内容</span><span class="sxs-lookup"><span data-stu-id="7155a-106">Sample Contents</span></span>  
- <span data-ttu-id="7155a-107">開始側プライベート プロセスは、開始側の内部ビジネス プロセスです。</span><span class="sxs-lookup"><span data-stu-id="7155a-107">The initiator private process is the business process that is internal to the initiator.</span></span> <span data-ttu-id="7155a-108">このプライベート プロセスにより、開始側パブリック プロセスとバックエンド基幹業務プログラムとの間にバックエンド統合がもたらされます。</span><span class="sxs-lookup"><span data-stu-id="7155a-108">The private process provides back-end integration between the initiator public process and the back-end line-of-business program.</span></span> <span data-ttu-id="7155a-109">開始側プライベート プロセスは、パブリック プロセスと通信してメッセージを開始します。</span><span class="sxs-lookup"><span data-stu-id="7155a-109">The initiator private process communicates with the public process to initiate messages.</span></span>  
+## <a name="sample-contents"></a><span data-ttu-id="74d25-106">サンプルの内容</span><span class="sxs-lookup"><span data-stu-id="74d25-106">Sample Contents</span></span>  
+ <span data-ttu-id="74d25-107">開始側プライベート プロセスは、開始側の内部ビジネス プロセスです。</span><span class="sxs-lookup"><span data-stu-id="74d25-107">The initiator private process is the business process that is internal to the initiator.</span></span> <span data-ttu-id="74d25-108">このプライベート プロセスにより、開始側パブリック プロセスとバックエンド基幹業務プログラムとの間にバックエンド統合がもたらされます。</span><span class="sxs-lookup"><span data-stu-id="74d25-108">The private process provides back-end integration between the initiator public process and the back-end line-of-business program.</span></span> <span data-ttu-id="74d25-109">開始側プライベート プロセスは、パブリック プロセスと通信してメッセージを開始します。</span><span class="sxs-lookup"><span data-stu-id="74d25-109">The initiator private process communicates with the public process to initiate messages.</span></span>  
   
- <span data-ttu-id="7155a-110">開始側プライベート プロセスは実装ごとに固有です。</span><span class="sxs-lookup"><span data-stu-id="7155a-110">The initiator private process is unique for each implementation.</span></span> <span data-ttu-id="7155a-111">PrivateInitiator.odx サンプルは用途に合わせてカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="7155a-111">You can customize the PrivateInitiator.odx sample for your purposes.</span></span> <span data-ttu-id="7155a-112">ただし、開始側パブリック プロセスの機能に支障をきたさないように注意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7155a-112">You must be careful that you do not adversely affect the functioning of the initiator public process.</span></span>  
+ <span data-ttu-id="74d25-110">開始側プライベート プロセスは実装ごとに固有です。</span><span class="sxs-lookup"><span data-stu-id="74d25-110">The initiator private process is unique for each implementation.</span></span> <span data-ttu-id="74d25-111">PrivateInitiator.odx サンプルは用途に合わせてカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="74d25-111">You can customize the PrivateInitiator.odx sample for your purposes.</span></span> <span data-ttu-id="74d25-112">ただし、開始側パブリック プロセスの機能に支障をきたさないように注意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="74d25-112">You must be careful that you do not adversely affect the functioning of the initiator public process.</span></span>  
   
- <span data-ttu-id="7155a-113">詳細については、メッセージ フローの説明を参照してください。[開始側プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/initiator-private-process.md)です。</span><span class="sxs-lookup"><span data-stu-id="7155a-113">For more information, including a description of the message flow, see [Initiator Private Process](../../adapters-and-accelerators/accelerator-rosettanet/initiator-private-process.md).</span></span>  
+ <span data-ttu-id="74d25-113">詳細については、メッセージ フローの説明を含む、次を参照してください。[開始側プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/initiator-private-process.md)します。</span><span class="sxs-lookup"><span data-stu-id="74d25-113">For more information, including a description of the message flow, see [Initiator Private Process](../../adapters-and-accelerators/accelerator-rosettanet/initiator-private-process.md).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="7155a-114">参照</span><span class="sxs-lookup"><span data-stu-id="7155a-114">See Also</span></span>  
- <span data-ttu-id="7155a-115">[オーケストレーション サンプル](../../adapters-and-accelerators/accelerator-rosettanet/orchestration-samples.md) </span><span class="sxs-lookup"><span data-stu-id="7155a-115">[Orchestration Samples](../../adapters-and-accelerators/accelerator-rosettanet/orchestration-samples.md) </span></span>  
- [<span data-ttu-id="7155a-116">プライベート プロセス</span><span class="sxs-lookup"><span data-stu-id="7155a-116">Private Processes</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)
+## <a name="see-also"></a><span data-ttu-id="74d25-114">参照</span><span class="sxs-lookup"><span data-stu-id="74d25-114">See Also</span></span>  
+ <span data-ttu-id="74d25-115">[オーケストレーション サンプル](../../adapters-and-accelerators/accelerator-rosettanet/orchestration-samples.md) </span><span class="sxs-lookup"><span data-stu-id="74d25-115">[Orchestration Samples](../../adapters-and-accelerators/accelerator-rosettanet/orchestration-samples.md) </span></span>  
+ [<span data-ttu-id="74d25-116">プライベート プロセス</span><span class="sxs-lookup"><span data-stu-id="74d25-116">Private Processes</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)

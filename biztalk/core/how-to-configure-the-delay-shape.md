@@ -1,5 +1,5 @@
 ---
-title: 遅延図形を構成する方法 |Microsoft ドキュメント
+title: 遅延図形を構成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,42 +18,42 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b76448398facd3af7f3b9712491f9895ffb406d
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 7c00e002418dac53295828a4cbed632a6de0c235
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
-ms.locfileid: "22248338"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36993651"
 ---
-# <a name="how-to-configure-the-delay-shape"></a><span data-ttu-id="0317a-102">遅延図形を構成する方法</span><span class="sxs-lookup"><span data-stu-id="0317a-102">How to Configure the Delay Shape</span></span>
-<span data-ttu-id="0317a-103">![](../core/media/ebiz-orch-delay.gif "ebiz_orch_delay")</span><span class="sxs-lookup"><span data-stu-id="0317a-103">![](../core/media/ebiz-orch-delay.gif "ebiz_orch_delay")</span></span>  
-<span data-ttu-id="0317a-104">遅延図形</span><span class="sxs-lookup"><span data-stu-id="0317a-104">Delay shape</span></span>  
+# <a name="how-to-configure-the-delay-shape"></a><span data-ttu-id="90451-102">遅延図形を構成する方法</span><span class="sxs-lookup"><span data-stu-id="90451-102">How to Configure the Delay Shape</span></span>
+<span data-ttu-id="90451-103">![](../core/media/ebiz-orch-delay.gif "ebiz_orch_delay")</span><span class="sxs-lookup"><span data-stu-id="90451-103">![](../core/media/ebiz-orch-delay.gif "ebiz_orch_delay")</span></span>  
+<span data-ttu-id="90451-104">遅延図形</span><span class="sxs-lookup"><span data-stu-id="90451-104">Delay shape</span></span>  
   
- <span data-ttu-id="0317a-105">タイムアウトを指定する 2 つの方法がある、 **遅延**:</span><span class="sxs-lookup"><span data-stu-id="0317a-105">There are two ways to specify the timeout for a **Delay**:</span></span>  
+ <span data-ttu-id="90451-105">タイムアウトを指定する 2 つの方法がある、**遅延**:</span><span class="sxs-lookup"><span data-stu-id="90451-105">There are two ways to specify the timeout for a **Delay**:</span></span>  
   
--   <span data-ttu-id="0317a-106">使用する **System.DateTime**, それが原因で、オーケストレーションを指定した日付まで一時停止、および日時に達した。</span><span class="sxs-lookup"><span data-stu-id="0317a-106">You can use **System.DateTime**, which causes your orchestration to pause until the specified date and time is reached.</span></span>  
+- <span data-ttu-id="90451-106">使用することができます**System.DateTime**を指定した日付まで一時停止するオーケストレーションを停止して、時間に到達します。</span><span class="sxs-lookup"><span data-stu-id="90451-106">You can use **System.DateTime**, which causes your orchestration to pause until the specified date and time is reached.</span></span>  
   
-     <span data-ttu-id="0317a-107">System.DateTime.UtcNow.AddSeconds(60)</span><span class="sxs-lookup"><span data-stu-id="0317a-107">System.DateTime.UtcNow.AddSeconds(60)</span></span>  
+   <span data-ttu-id="90451-107">System.DateTime.UtcNow.AddSeconds(60)</span><span class="sxs-lookup"><span data-stu-id="90451-107">System.DateTime.UtcNow.AddSeconds(60)</span></span>  
   
-    > [!NOTE]
-    >  <span data-ttu-id="0317a-108">遅延が表現する必要が世界協定時刻 (UTC) を使用する場合 **DateTime**します。</span><span class="sxs-lookup"><span data-stu-id="0317a-108">Delays must be expressed in Coordinated Universal Time (UTC) when using **DateTime**.</span></span>  
+  > [!NOTE]
+  >  <span data-ttu-id="90451-108">使用する場合、遅延で世界協定時刻 (UTC) でが表現する必要があります**DateTime**します。</span><span class="sxs-lookup"><span data-stu-id="90451-108">Delays must be expressed in Coordinated Universal Time (UTC) when using **DateTime**.</span></span>  
   
--   <span data-ttu-id="0317a-109">使用する **System.TimeSpan**, 、それが原因で時間の指定した時間一時停止するオーケストレーションです。</span><span class="sxs-lookup"><span data-stu-id="0317a-109">You can use **System.TimeSpan**, which causes your orchestration to pause for the specified length of time.</span></span>  
+- <span data-ttu-id="90451-109">使用することができます**System.TimeSpan**、指定した長さの時間一時停止するオーケストレーションを停止します。</span><span class="sxs-lookup"><span data-stu-id="90451-109">You can use **System.TimeSpan**, which causes your orchestration to pause for the specified length of time.</span></span>  
   
-     <span data-ttu-id="0317a-110">System.TimeSpan(0, 1, 0)</span><span class="sxs-lookup"><span data-stu-id="0317a-110">System.TimeSpan(0, 1, 0)</span></span>  
+   <span data-ttu-id="90451-110">System.TimeSpan(0, 1, 0)</span><span class="sxs-lookup"><span data-stu-id="90451-110">System.TimeSpan(0, 1, 0)</span></span>  
   
- <span data-ttu-id="0317a-111">場合、 **遅延** 図形内部にある、 **リッスン** 図形をする必要はありません、式の末尾にセミコロンを追加します。</span><span class="sxs-lookup"><span data-stu-id="0317a-111">If your **Delay** shape is inside a **Listen** shape, you do not need to add a semicolon at the end of the expression.</span></span>  
+  <span data-ttu-id="90451-111">場合、**遅延**内の図形は、**リッスン**図形、する必要はありません、式の末尾にセミコロンを追加します。</span><span class="sxs-lookup"><span data-stu-id="90451-111">If your **Delay** shape is inside a **Listen** shape, you do not need to add a semicolon at the end of the expression.</span></span>  
   
- <span data-ttu-id="0317a-112">詳細については **System.DateTime** と **System.TimeSpan**, の「DateTime 構造体」および「TimeSpan 構造体」を参照してください、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 連結ヘルプ コレクションです。</span><span class="sxs-lookup"><span data-stu-id="0317a-112">For more information about **System.DateTime** and **System.TimeSpan**, see "DateTime Structure" and "TimeSpan Structure" in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Combined Collection.</span></span>  
-  
-> [!NOTE]
->  <span data-ttu-id="0317a-113">複数のコンピューターのインストール環境で、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] SQL Server が別々 のコンピューターにインストールされていると、 **遅延** 図形が時間のために予想よりも早く終了する可能性があります [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] マシンは同期されていません。</span><span class="sxs-lookup"><span data-stu-id="0317a-113">In a multiple machines installation environment where [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and SQL Server are installed on separated machines, the **Delay** shape may end earlier than expected because of the times on [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] machines are unsynchronized.</span></span>  
+  <span data-ttu-id="90451-112">詳細については**System.DateTime**と**System.TimeSpan**の「DateTime 構造体」および「TimeSpan 構造体」を参照してください、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]連結ヘルプ コレクションです。</span><span class="sxs-lookup"><span data-stu-id="90451-112">For more information about **System.DateTime** and **System.TimeSpan**, see "DateTime Structure" and "TimeSpan Structure" in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Combined Collection.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="0317a-114">ストレス条件下で指定されたタイムアウト、 **遅延** 図形に指定したものよりも後で発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="0317a-114">Under the stress condition, the timeout specified in the **Delay** shape may occur later than what you have specified.</span></span> <span data-ttu-id="0317a-115">この遅れは、ストレス条件下でスレッドが不足するために起こります。</span><span class="sxs-lookup"><span data-stu-id="0317a-115">This is because of the thread starvation under the stress condition.</span></span>  
+>  <span data-ttu-id="90451-113">複数のマシンのインストール環境で、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] SQL Server が別々 のコンピューターにインストールされていると、**遅延**図形がで時間が原因で予期される値よりも早く終了する可能性があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]マシンは同期されません。</span><span class="sxs-lookup"><span data-stu-id="90451-113">In a multiple machines installation environment where [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and SQL Server are installed on separated machines, the **Delay** shape may end earlier than expected because of the times on [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] machines are unsynchronized.</span></span>  
+> 
+> [!NOTE]
+>  <span data-ttu-id="90451-114">ストレス条件下で、タイムアウトが指定された、**遅延**図形に指定したものよりも後で発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="90451-114">Under the stress condition, the timeout specified in the **Delay** shape may occur later than what you have specified.</span></span> <span data-ttu-id="90451-115">この遅れは、ストレス条件下でスレッドが不足するために起こります。</span><span class="sxs-lookup"><span data-stu-id="90451-115">This is because of the thread starvation under the stress condition.</span></span>  
   
-### <a name="to-configure-a-delay-shape"></a><span data-ttu-id="0317a-116">遅延図形を構成するには</span><span class="sxs-lookup"><span data-stu-id="0317a-116">To configure a Delay shape</span></span>  
+### <a name="to-configure-a-delay-shape"></a><span data-ttu-id="90451-116">遅延図形を構成するには</span><span class="sxs-lookup"><span data-stu-id="90451-116">To configure a Delay shape</span></span>  
   
-1.  <span data-ttu-id="0317a-117">BizTalk 式エディターが表示されていない場合を右クリックし、 **遅延** 図形を **遅延の編集**, は、[プロパティ] ウィンドウで、 **省略記号** (**...**) ボタンをクリックして、 **式** プロパティです。</span><span class="sxs-lookup"><span data-stu-id="0317a-117">If BizTalk Expression Editor is not visible, right-click the **Delay** shape and click **Edit Delay**, or in the Properties window, click the **Ellipsis** (**...**) button for the **Expression** property.</span></span>  
+1.  <span data-ttu-id="90451-117">BizTalk 式エディターが表示されていない場合を右クリックし、 **遅延** 図形を **遅延の編集**, は、[プロパティ] ウィンドウで、 **省略記号** (**...**) ボタンをクリックして、 **式** プロパティです。</span><span class="sxs-lookup"><span data-stu-id="90451-117">If BizTalk Expression Editor is not visible, right-click the **Delay** shape and click **Edit Delay**, or in the Properties window, click the **Ellipsis** (**...**) button for the **Expression** property.</span></span>  
   
-2.  <span data-ttu-id="0317a-118">BizTalk 式エディターを返す式を作成、 **System.DateTime** オブジェクトまたは **System.TimeSpan** オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="0317a-118">In BizTalk Expression Editor, create an expression that returns a **System.DateTime** object or a **System.TimeSpan** object.</span></span> <span data-ttu-id="0317a-119">詳細については、次を参照してください。[式の要件と制限](../core/requirements-and-limitations-for-expressions.md)です。</span><span class="sxs-lookup"><span data-stu-id="0317a-119">For more information, see [Requirements and Limitations for Expressions](../core/requirements-and-limitations-for-expressions.md).</span></span>
+2.  <span data-ttu-id="90451-118">BizTalk 式エディターで、作成を返す式、 **System.DateTime**オブジェクトまたは**System.TimeSpan**オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="90451-118">In BizTalk Expression Editor, create an expression that returns a **System.DateTime** object or a **System.TimeSpan** object.</span></span> <span data-ttu-id="90451-119">詳細については、次を参照してください。[式の要件と制限](../core/requirements-and-limitations-for-expressions.md)します。</span><span class="sxs-lookup"><span data-stu-id="90451-119">For more information, see [Requirements and Limitations for Expressions](../core/requirements-and-limitations-for-expressions.md).</span></span>

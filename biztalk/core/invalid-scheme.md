@@ -1,5 +1,5 @@
 ---
-title: 無効なスキーム |Microsoft ドキュメント
+title: スキームが無効です |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5736a3738a9598f4c4b419d7e291c3c3e32207f0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 063c60ed07d89429f14f7ed3b7c090cdc0bac033
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257738"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008163"
 ---
-# <a name="invalid-scheme"></a><span data-ttu-id="40a79-102">スキームが無効です</span><span class="sxs-lookup"><span data-stu-id="40a79-102">Invalid scheme</span></span>
-## <a name="details"></a><span data-ttu-id="40a79-103">詳細</span><span class="sxs-lookup"><span data-stu-id="40a79-103">Details</span></span>  
+# <a name="invalid-scheme"></a><span data-ttu-id="e92e1-102">スキームが無効です</span><span class="sxs-lookup"><span data-stu-id="e92e1-102">Invalid scheme</span></span>
+## <a name="details"></a><span data-ttu-id="e92e1-103">詳細</span><span class="sxs-lookup"><span data-stu-id="e92e1-103">Details</span></span>  
   
-|||  
-|-|-|  
-|<span data-ttu-id="40a79-104">製品名</span><span class="sxs-lookup"><span data-stu-id="40a79-104">Product Name</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|<span data-ttu-id="40a79-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="40a79-105">Product Version</span></span>|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|<span data-ttu-id="40a79-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="40a79-106">Event ID</span></span>|<span data-ttu-id="40a79-107">0</span><span class="sxs-lookup"><span data-stu-id="40a79-107">0</span></span>|  
-|<span data-ttu-id="40a79-108">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="40a79-108">Event Source</span></span>|<span data-ttu-id="40a79-109">0</span><span class="sxs-lookup"><span data-stu-id="40a79-109">0</span></span>|  
-|<span data-ttu-id="40a79-110">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="40a79-110">Component</span></span>|<span data-ttu-id="40a79-111">0</span><span class="sxs-lookup"><span data-stu-id="40a79-111">0</span></span>|  
-|<span data-ttu-id="40a79-112">シンボル名</span><span class="sxs-lookup"><span data-stu-id="40a79-112">Symbolic Name</span></span>|<span data-ttu-id="40a79-113">0</span><span class="sxs-lookup"><span data-stu-id="40a79-113">0</span></span>|  
-|<span data-ttu-id="40a79-114">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="40a79-114">Message Text</span></span>|<span data-ttu-id="40a79-115">無効なスキームです。スキーム"{0}"または「{1}」を指定してください。</span><span class="sxs-lookup"><span data-stu-id="40a79-115">Invalid scheme; expecting scheme "{0}" or "{1}"</span></span>|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  <span data-ttu-id="e92e1-104">製品名</span><span class="sxs-lookup"><span data-stu-id="e92e1-104">Product Name</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| <span data-ttu-id="e92e1-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="e92e1-105">Product Version</span></span> |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    <span data-ttu-id="e92e1-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="e92e1-106">Event ID</span></span>     |                                         <span data-ttu-id="e92e1-107">0</span><span class="sxs-lookup"><span data-stu-id="e92e1-107">0</span></span>                                          |
+|  <span data-ttu-id="e92e1-108">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="e92e1-108">Event Source</span></span>   |                                         <span data-ttu-id="e92e1-109">0</span><span class="sxs-lookup"><span data-stu-id="e92e1-109">0</span></span>                                          |
+|    <span data-ttu-id="e92e1-110">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="e92e1-110">Component</span></span>    |                                         <span data-ttu-id="e92e1-111">0</span><span class="sxs-lookup"><span data-stu-id="e92e1-111">0</span></span>                                          |
+|  <span data-ttu-id="e92e1-112">シンボル名</span><span class="sxs-lookup"><span data-stu-id="e92e1-112">Symbolic Name</span></span>  |                                         <span data-ttu-id="e92e1-113">0</span><span class="sxs-lookup"><span data-stu-id="e92e1-113">0</span></span>                                          |
+|  <span data-ttu-id="e92e1-114">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="e92e1-114">Message Text</span></span>   |                  <span data-ttu-id="e92e1-115">スキームが無効です。スキームを指定してください"{0}「または」{1}"</span><span class="sxs-lookup"><span data-stu-id="e92e1-115">Invalid scheme; expecting scheme "{0}" or "{1}"</span></span>                   |
   
-## <a name="explanation"></a><span data-ttu-id="40a79-116">説明</span><span class="sxs-lookup"><span data-stu-id="40a79-116">Explanation</span></span>  
- <span data-ttu-id="40a79-117">次のいずれかが発生しました。 URI (uniform リソース識別子) フィールドに指定されているアドレスが http:// または https:// で開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="40a79-117">One of the following situations has occurred: the address that is specified in the URI (uniform resource identifier) field must start with either http:// or https://.</span></span> <span data-ttu-id="40a79-118">または、スキームが、トランスポート バインディング要素の実装で指定されているスキームと一致しません。</span><span class="sxs-lookup"><span data-stu-id="40a79-118">Or the scheme does not match what is specified in the implementation of the transport binding element.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="e92e1-116">説明</span><span class="sxs-lookup"><span data-stu-id="e92e1-116">Explanation</span></span>  
+ <span data-ttu-id="e92e1-117">次のいずれかが発生しました。 URI (uniform リソース識別子) フィールドに指定されているアドレスが http:// または https:// で開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e92e1-117">One of the following situations has occurred: the address that is specified in the URI (uniform resource identifier) field must start with either http:// or https://.</span></span> <span data-ttu-id="e92e1-118">または、スキームが、トランスポート バインディング要素の実装で指定されているスキームと一致しません。</span><span class="sxs-lookup"><span data-stu-id="e92e1-118">Or the scheme does not match what is specified in the implementation of the transport binding element.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="40a79-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="40a79-119">User Action</span></span>  
- <span data-ttu-id="40a79-120">http:// または https:// から始まる有効なプロキシ アドレスの URI を入力します</span><span class="sxs-lookup"><span data-stu-id="40a79-120">Enter a valid proxy address URI that starts with http:// or https://</span></span>
+## <a name="user-action"></a><span data-ttu-id="e92e1-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="e92e1-119">User Action</span></span>  
+ <span data-ttu-id="e92e1-120">http:// または https:// から始まる有効なプロキシ アドレスの URI を入力します</span><span class="sxs-lookup"><span data-stu-id="e92e1-120">Enter a valid proxy address URI that starts with http:// or https://</span></span>
