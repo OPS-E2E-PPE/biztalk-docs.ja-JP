@@ -1,5 +1,5 @@
 ---
-title: HL7 アクセラレータと使用可能な BizTalk ツールの説明 |Microsoft ドキュメント
+title: HL7 アクセラレータや使用可能な BizTalk ツールの学習 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,26 +16,26 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 579b715a8cf11e09c39e5ef805e59628590a3e06
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 73456b8938faa52403149e3d20523eb1e1de8f57
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22205034"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37003683"
 ---
-# <a name="learn-the-hl7-accelerator-and-the-biztalk-tools-available"></a>HL7 アクセラレータと使用可能な BizTalk ツールを説明します。
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]幅広い用途は、医療コンピューター アプリケーション間のデータ交換のパフォーマンスの高い完全な医療ソリューションが、正常性レベル 7 (HL7) 標準に基づいています。  
+# <a name="learn-the-hl7-accelerator-and-the-biztalk-tools-available"></a>HL7 アクセラレータと BizTalk ツールの使用について説明します
+Microsoft[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]は高い汎用性とパフォーマンスの高い包括的な医療ソリューションを医療コンピューター アプリケーション間でデータの交換が正常性レベル 7 (HL7) の標準に基づきます。  
   
- このドキュメントの次のサービス、機能、および BTAHL7 の機能に慣れるに設定してください。  
+ このドキュメントは、次のサービス、機能、および BTAHL7 の機能に慣れるにセットを使用します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [健康保険システム統合の必要性](../../adapters-and-accelerators/accelerator-hl7/the-need-for-health-care-systems-integration.md)  
+-   [医療保険システムの統合の必要性](../../adapters-and-accelerators/accelerator-hl7/the-need-for-health-care-systems-integration.md)  
   
--   [BizTalk Server がビジネス ニーズを解決する方法](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-server-solves-the-business-need2.md)  
+-   [BizTalk Server がビジネス ニーズを解決するしくみ](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-server-solves-the-business-need2.md)  
   
--   [BizTalk Accelerator 用 HL7 のしくみ](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-accelerator-for-hl7-works.md)  
+-   [BizTalk Accelerator for HL7 のしくみ](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-accelerator-for-hl7-works.md)  
   
--   [ツールおよび機能](../../adapters-and-accelerators/accelerator-hl7/tools-and-features.md)  
+-   [ツールと機能](../../adapters-and-accelerators/accelerator-hl7/tools-and-features.md)  
   
--   [HL7 メッセージ](../../adapters-and-accelerators/accelerator-hl7/hl7-messaging.md)
+-   [HL7 メッセージング](../../adapters-and-accelerators/accelerator-hl7/hl7-messaging.md)

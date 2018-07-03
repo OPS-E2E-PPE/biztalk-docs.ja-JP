@@ -1,5 +1,5 @@
 ---
-title: Oracle データベース アダプターの概要 |Microsoft ドキュメント
+title: Oracle データベース アダプターの概要 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,38 +16,38 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7aa93ae3f64f4f2f914a51508a3a8dee4e3be41
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: daead7b52c17fe5a045d6681a7aa957aaa23133c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214442"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36966859"
 ---
 # <a name="get-started-with-the-oracle-database-adapter"></a>Oracle データベース アダプターを概要します。
-このセクションでは Microsoft に新しいユーザーのアダプター、前提条件、およびトピックの概要を説明する[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]です。 機能についても説明[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]とアダプターを使用して Oracle データベースで実行できるさまざまな操作です。  
+このセクションでは、ユーザーが Microsoft に新しいアダプター、前提条件、およびトピックの概要を示します[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 機能について説明します[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]とアダプターを使用して Oracle データベースで実行できるさまざまな操作です。  
   
- アダプターとは何ですか。 アダプターは、ソフトウェア コンポーネントと基幹業務 (LOB) システムからメッセージを送受信することができます。 アダプターの主な設計目標は、取引先間でのビジネス ドキュメントの交換を容易にです。 各ビジネス システムは、特定のドキュメント形式およびプロトコルに従うことができます、ため、アダプターは、共通に認識される標準とプロトコルに準拠した配信メカニズムを使用します。  
+ アダプターとは何ですか。 アダプターは、基幹業務 (LOB) システムとのメッセージを送受信することができるソフトウェア コンポーネントです。 アダプターの主な設計目標は、取引先間でのビジネス ドキュメントの交換を促進します。 各ビジネス システムは、特定のドキュメント形式とプロトコルに従うことができます、ため、アダプターは、一般的な規格とプロトコルに準拠した配信メカニズムを使用します。  
   
  アダプターは、2 つのカテゴリに分類できます。  
   
--   **LOB アダプタ**です。 このようなアダプターが LOB システムへのアクセスをサービス指向のプログラミング モデルを提供、SAP の Siebel アダプターなどです。  
+- **LOB アダプタ**します。 このようなアダプターへのアクセスの LOB システムへのサービス指向のプログラミング モデルを提供する、SAP や Siebel アダプターなど。  
   
--   **データ アダプター**です。 このようなアダプターがデータベースにアクセスできるサービス指向のプログラミング モデルを提供、Oracle データベースまたは SQL Server 用のアダプターなどです。  
+- **データ アダプター**します。 このようなアダプターは、access データベースにサービス指向のプログラミング モデルを提供 — たとえば、Oracle database または SQL Server のアダプター。  
   
- 5 つのアダプタでは、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]:  
+  5 つのアダプタでは、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]:  
   
--   [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)](、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)])  
+- [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] (、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)])  
   
--   [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)](、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)])  
+- [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] (、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)])  
   
--   [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)](、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)])  
+- [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] (、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)])  
   
--   [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)](、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]) など、 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)])  
+- [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] (、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]) など、 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)])  
   
--   [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)](、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]) など、 [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])  
+- [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] (、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]) など、 [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])  
   
-    > [!NOTE]
-    >  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] 64 ビット プラットフォームでは使用できません。  
+  > [!NOTE]
+  >  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] 64 ビット プラットフォームでは使用できません。  
   
- かどうかは既に分かっていなければを使用する方法、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]で、社内をお勧めする機能を表示することによって起動してで説明されているアダプターの機能[Oracle データベースのBizTalkアダプターの理解](../../adapters-and-accelerators/adapter-oracle-database/understand-the-biztalk-adapter-for-oracle-database.md).  
+  かどうかは既にわからないを使用する方法、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]で、社内をお勧め、機能を開始してで説明されているアダプターの機能を[のOracleデータベースのBizTalkアダプターの理解](../../adapters-and-accelerators/adapter-oracle-database/understand-the-biztalk-adapter-for-oracle-database.md).  
   

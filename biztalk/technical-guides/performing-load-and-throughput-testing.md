@@ -1,5 +1,5 @@
 ---
-title: ロード テストとスループットのテストを実行する |Microsoft ドキュメント
+title: ロード テストとスループットのテストを実行する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3da46b2dc3208208305e60e9efbfadd0c60d7d32
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2d4313c073abff7022de99ac1d38375599b6ee43
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302114"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36966915"
 ---
 # <a name="performing-load-and-throughput-testing"></a>ロード テストとスループットのテストを実行します。
-必要があります使用可能なパフォーマンスとストレスのテストの実稼働環境に一致する環境です。 この環境は、すべての標準的なサービスをインストールし、監視エージェントとウイルス対策ソフトウェアなど、実行に必要です。  
+必要があります使用可能なパフォーマンスとストレス テスト、運用環境に一致する環境。 この環境には、すべての標準的なサービスをインストールし、監視エージェントとウイルス対策ソフトウェアなど、実行している必要があります。  
   
 ## <a name="how-adding-applications-affects-load"></a>アプリケーションを追加すると、負荷にどのように影響する方法  
- また、実稼働環境で同じハードウェア上で実行される他の BizTalk アプリケーションと共に新しい BizTalk アプリケーションをテストする必要があります。 これは、新しい BizTalk アプリケーションを実行するコンピューターに追加の負荷を配置するため[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と SQL Server。 これは、ホストで使用されるアルゴリズムの制限に照らし合わせて重要[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 制限のアルゴリズムが使用可能なリソースの合計数を監視し、新しい BizTalk アプリケーションによって発生する追加の負荷で実行中のすべての BizTalk アプリケーションに影響を与える制限の条件が引き起こされる可能性がありますのでします。 詳細については、次を参照してください。[どのように BizTalk Server を実装してホスト Throttling](http://go.microsoft.com/fwlink/?LinkId=154389) (http://go.microsoft.com/fwlink/?LinkId=154389)。  
+ 運用環境で同じハードウェア上で実行するようになっている他の BizTalk アプリケーションと共に新しい BizTalk アプリケーションをテストすることも必要があります。 これは、新しい BizTalk アプリケーションを実行しているコンピューターで追加の負荷を配置するため[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と SQL Server。 これは、ホストで使用されるアルゴリズムの制限に照らし合わせて重要[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 調整アルゴリズムは、合計使用可能なリソースを監視し、そのため、新しい BizTalk アプリケーションで発生する追加の負荷が実行中のすべての BizTalk アプリケーションに影響が制限の条件を誘発可能性があります。 詳細については、次を参照してください。[どのように BizTalk Server 実装ホスト Throttling](http://go.microsoft.com/fwlink/?LinkId=154389) (<http://go.microsoft.com/fwlink/?LinkId=154389>)。  
   
-## <a name="testing-load-and-determining-recovery-time"></a>ロード テストと、復旧時間を決定します。  
- パフォーマンスとストレスを運用環境に配置する前にすべての BizTalk アプリケーションをテストする必要があります。 ピーク時の負荷と予想される負荷に対してテストを実行する必要があります。 BizTalk アプリケーションの最大の維持可能なスループット (MST) を決定する必要があります。 さらに、ピーク ロードから回復するシステムに要する時間を決定する必要があります。 場合は、システムは負荷のピーク時から完全に回復は [次へ] のピーク時の負荷が実行されるまで、システムの背後に段階的に離れた位置が表示されますを完全に回復することはできません。 詳細については、以下をご覧ください。  
+## <a name="testing-load-and-determining-recovery-time"></a>ロード テストと復旧時間を決定します。  
+ パフォーマンスとストレスを運用環境に配置する前にすべての BizTalk アプリケーションをテストする必要があります。 予想される負荷とピーク時の負荷に対してテストを実行する必要があります。 BizTalk アプリケーションの最大持続可能スループット (MST) を決定する必要があります。 さらに、ピーク ロードから回復するシステムにかかる時間を決定する必要があります。 システムが完全にピーク時の負荷から復旧しない場合、[次へ] のピーク時の前に負荷が発生したを実行し、システムの背後にある段階的に離れた受け取ります、完全に回復することはできませんを実行します。 詳細については、以下をご覧ください。  
   
 -   [維持可能な最大のエンジン スループットの測定](http://go.microsoft.com/fwlink/?LinkId=154388)(http://go.microsoft.com/fwlink/?LinkId=154388)  
   
 -   [維持可能な最大の追跡スループットの測定](http://go.microsoft.com/fwlink/?LinkID=153815)(http://go.microsoft.com/fwlink/?LinkID=153815)  
   
 ## <a name="see-also"></a>参照  
- [チェックリスト: テスト運用の準備](../technical-guides/checklist-testing-operational-readiness.md)
+ [チェックリスト: 運用準備のテスト](../technical-guides/checklist-testing-operational-readiness.md)

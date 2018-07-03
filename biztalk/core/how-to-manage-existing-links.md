@@ -1,5 +1,5 @@
 ---
-title: 既存のリンクを管理する方法 |Microsoft ドキュメント
+title: 既存のリンクを管理する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7cdc505f98f61dd7259c8893b526ff094128df42
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: cacb316d9783692dd55cbdbbbda92b6f55d98a3a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25970146"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982891"
 ---
 # <a name="how-to-manage-existing-links"></a>既存のリンクを管理する方法
 リンクの送信元や送信先の変更、リンクの名前付けや名前の変更、およびリンクの削除などが必要になる場合があります。 このトピックでは、このようなリンクに関する操作を実行する手順について説明します。  
@@ -33,15 +33,15 @@ ms.locfileid: "25970146"
      エンドポイントをドラッグしている間は、カーソルが十字型になります。 リンクを受け付けることができないスキーマ ノードや Functoid (またはその他のオブジェクト) にドラッグすると、円の中に 1 本の線が描かれた形にカーソルが変化します。  
   
     > [!IMPORTANT]
-    >  2 つ以上の入力リンクを 1 つの Functoid に接続して、これらの入力リンクのいずれかを送信元スキーマの他のノードまたは他の Functoid にリダイレクトする場合、元の Functoid に対する入力パラメーターの順序は維持されません。 使用して、**構成\<Functoid\> Functoid**  ダイアログ ボックスを入力パラメーターの順序を確認し、必要に応じて順序を変更します。 Functoid の入力パラメーターの順序変更の詳細については、次を参照してください。 [Functoid プロパティの編集および入力パラメーター](../core/editing-functoid-properties-and-input-parameters.md)です。  
+    >  2 つ以上の入力リンクを 1 つの Functoid に接続して、これらの入力リンクのいずれかを送信元スキーマの他のノードまたは他の Functoid にリダイレクトする場合、元の Functoid に対する入力パラメーターの順序は維持されません。 使用して、**構成\<Functoid\> Functoid**  ダイアログ ボックスおよびを並べ替えるには必要に応じて、入力パラメーターの結果として得られる順序を確認します。 Functoid の入力パラメーターの順序変更の詳細については、次を参照してください。 [Functoid プロパティの編集および入力パラメーター](../core/editing-functoid-properties-and-input-parameters.md)します。  
   
 ### <a name="to-setedit-the-label-of-a-link"></a>リンクのラベルを設定/編集するには  
   
-1.  BizTalk マッパーのグリッド ページで、リンクをクリックして選択します。  
+1. BizTalk マッパーのグリッド ページで、リンクをクリックして選択します。  
   
-     グリッド ページ内の選択したリンクのエンドポイントが強調表示されます。  
+    グリッド ページ内の選択したリンクのエンドポイントが強調表示されます。  
   
-2.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウを使用して、リンクの (新しい) の名前を指定、**ラベル**プロパティです。  
+2. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウで、リンクを使用して、名前を付けます (新規)、**ラベル**プロパティ。  
   
 ### <a name="to-delete-a-link"></a>リンクを削除するには  
   
@@ -49,12 +49,12 @@ ms.locfileid: "25970146"
   
      グリッド ページ内の選択したリンクのエンドポイントが強調表示されます。  
   
-2.  **編集** メニューのをクリックして**削除**です。  
+2.  **編集** メニューのをクリックして**削除**します。  
   
-     DEL キーを押してまたはリンクを右クリックしてをクリックして**削除**ショートカット メニューの します。  
+     また DEL キーを押しますまたはリンクを右クリックしてをクリックして**削除**ショートカット メニューの します。  
   
     > [!NOTE]
-    >  複数のリンクおよび Functoid を一括で選択し、1 つの操作でそれらを削除できます。 リンクや Functoid の一括削除を取り消したり、やり直したりできます。 詳細については、元に戻すおよびやり直し操作を参照してください。[を元に戻すまたはユーザーの操作を再実行する方法](../core/how-to-undo-or-redo-user-operations.md)です。  
+    >  複数のリンクおよび Functoid を一括で選択し、1 つの操作でそれらを削除できます。 リンクや Functoid の一括削除を取り消したり、やり直したりできます。 詳細については、元に戻すおよびやり直し操作を参照してください。[を元に戻すまたはユーザーの操作をやり直す方法](../core/how-to-undo-or-redo-user-operations.md)します。  
   
 ## <a name="see-also"></a>参照  
  [リンクを使用してレコードとフィールド マッピングを指定する](../core/using-links-to-specify-record-and-field-mappings.md)

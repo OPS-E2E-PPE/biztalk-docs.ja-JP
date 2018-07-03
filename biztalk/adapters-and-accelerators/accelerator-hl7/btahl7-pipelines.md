@@ -1,5 +1,5 @@
 ---
-title: BTAHL7 パイプライン |Microsoft ドキュメント
+title: BTAHL7 のパイプライン |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,20 +14,20 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed47068944dc6c6299da9c1a91ef958db42c24d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 86a9a61b17be27b8c0855354a01cd1b889258eda
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204434"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36974651"
 ---
-# <a name="btahl7-pipelines"></a>BTAHL7 パイプライン
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 受信のセットを提供および HL7 エンコードし、XML でエンコードされた両方の処理のパイプラインを送信します。 これらのパイプラインは、医療ソリューションの BizTalk パイプライン処理を向上させます。  
+# <a name="btahl7-pipelines"></a>BTAHL7 のパイプライン
+Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 受信のセットを提供および HL7 エンコードし、XML でエンコードされた両方の処理のパイプラインを送信します。 これらのパイプラインは、医療ソリューションの BizTalk パイプライン処理を強化します。  
   
--   HL7 FF の 2.X (です。BTP) を提供する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XReceive と[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XSend パイプライン  
+- HL7 FF の 2.X (します。BTP) を提供する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XReceive と[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XSend パイプライン  
   
--   2. XML HL7XML for (です。BTP) を提供する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XMLReceive と[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XMLSend  
+- HL7XML の 2.XML (します。BTP) を提供する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XMLReceive と[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XMLSend  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Accelerator for HL7 コンポーネント](../../adapters-and-accelerators/accelerator-hl7/biztalk-accelerator-for-hl7-components.md)   
- [BizTalk Accelerator 用 HL7 のしくみ](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-accelerator-for-hl7-works.md)
+ [BizTalk Accelerator for HL7 のしくみ](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-accelerator-for-hl7-works.md)

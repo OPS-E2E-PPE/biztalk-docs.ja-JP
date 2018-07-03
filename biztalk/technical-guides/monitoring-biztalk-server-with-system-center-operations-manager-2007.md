@@ -1,5 +1,5 @@
 ---
-title: System Center Operations Manager 2007 での BizTalk Server の監視 |Microsoft ドキュメント
+title: System Center Operations Manager 2007 による BizTalk Server の監視 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdaa0f0639bc640e87ff59e3cee0c229319de4ff
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 380af93ccba2671e3ffa3e6377c049eaf23dcd67
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009643"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995819"
 ---
-# <a name="monitoring-biztalk-server-with-system-center-operations-manager-2007"></a>System Center Operations Manager 2007 での BizTalk Server の監視
-BizTalk アプリケーションと Microsoft System Center Operations Manager (Operations Manager) とインフラストラクチャの監視は、推奨される監視アプローチです。 Operations Manager 用の Microsoft BizTalk Server 管理パックの提供を実行するコンピューターの監視を主体的および対応[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。 これらの管理パックが数十個の包括的かつ自動的に監視できるように、組み込み、カスタマイズ可能な規則を提供[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。  
+# <a name="monitoring-biztalk-server-with-system-center-operations-manager-2007"></a>System Center Operations Manager 2007 による BizTalk Server の監視
+BizTalk アプリケーションと Microsoft System Center Operations Manager (Operations Manager) でインフラストラクチャの監視は、推奨される監視アプローチです。 Operations Manager 用の Microsoft BizTalk Server 管理パックの提供を実行するコンピューターの監視を主体的かつ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 これらの管理パックの提供を包括的な自動監視を許可するルールを組み込み、カスタマイズ可能な多数の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
- 次の BizTalk Server 管理パックは Operations Manager で使用可能です。  
+ 次の BizTalk Server 管理パックは Operations Manager で使用できます。  
   
--   [BizTalk Server 2010 の監視管理パック](ttp://go.microsoft.com/fwlink/?LinkId=210666)(ttp://go.microsoft.com/fwlink/?LinkId=210666)。  
+- [BizTalk Server 2010 の監視管理パック](ttp://go.microsoft.com/fwlink/?LinkId=210666)(ttp://go.microsoft.com/fwlink/?LinkId=210666)。  
   
- 操作ガイドのこのセクションには、背景情報については、ベスト プラクティス、チェックリスト、および Operations Manager に基づく監視戦略を実装する際に支援するために使用できる手順が含まれています。  
+  操作ガイドのこのセクションには、背景情報については、ベスト プラクティス、チェックリスト、および Operations Manager に基づく監視戦略の実装で支援するために使用できる手順が含まれています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

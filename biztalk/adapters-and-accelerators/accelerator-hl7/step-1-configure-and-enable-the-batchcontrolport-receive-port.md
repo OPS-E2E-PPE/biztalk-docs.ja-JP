@@ -1,5 +1,5 @@
 ---
-title: '手順 1: 構成して、受信ポートの有効化、BatchControlPort |Microsoft ドキュメント'
+title: '手順 1: 構成し、有効にする BatchControlPort 受信ポート |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d50289924062268db078844f2b3d2eaaccda23a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1fb11e0638a66fa7d22332d1cbca103a14490528
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206146"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988251"
 ---
-# <a name="step-1-configure-and-enable-the-batchcontrolport-receive-port"></a>手順 1: 構成して、受信ポートの有効化、BatchControlPort
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) セットアップは、受信ポートを作成、バッチ コントロール ポート、開始するには、バッチ オーケストレーションを使用するメッセージを処理するバッチの終了、および時間。 これらのメッセージには、バッチのアクティベーションには、バッチの終了、タイマー メッセージをバッチ処理が含まれます。 このステップでは、バッチ コントロール ポートの受信パイプラインを構成し、ポートを有効にします。  
+# <a name="step-1-configure-and-enable-the-batchcontrolport-receive-port"></a>手順 1: 構成し、有効にする BatchControlPort 受信ポート
+Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) セットアップは、受信ポートを作成、バッチ コントロール ポートを開始するには、バッチ オーケストレーションを使用するメッセージを処理するバッチの停止、および時間。 これらのメッセージには、バッチのアクティベーションには、バッチの終了、タイマー メッセージ バッチにはが含まれます。 この手順では、バッチ コントロール ポートの受信パイプラインを構成し、ポートを有効にします。  
   
 ### <a name="to-configure-and-enable-batchcontrolport"></a>構成して BatchControlPort を有効にするには  
   
-1.  開始**BizTalk Server 管理**です。  
+1. 開始**BizTalk Server 管理**します。  
   
-2.  BizTalk Server 管理コンソールで、展開**BizTalk Server 管理コンソール**、 **BizTalk グループ**、**アプリケーション**、および**BizTalk アプリケーション1**です。 をクリックして**受信場所**です。  
+2. BizTalk Server 管理コンソールで  **BizTalk Server 管理**、 **BizTalk グループ**、**アプリケーション**、および**BizTalk アプリケーション1**します。 クリックして**受信場所**します。  
   
-3.  右クリック**BatchControlLocation**、クリックして**を無効にする**です。  
+3. 右クリック**BatchControlLocation**、 をクリックし、**を無効にする**します。  
   
-4.  右クリック**BatchControlLocation**、クリックして**プロパティ**です。  
+4. 右クリックして**BatchControlLocation**、 をクリックし、**プロパティ**します。  
   
-5.  受信場所のプロパティ] ダイアログ ボックスの**受信パイプライン**[ **BTAHL72XPipelines.BTAHL72XReceivePipeline**です。をクリックして**OK**です。  
+5. 受信場所のプロパティ ダイアログ ボックスでの**受信パイプライン**、 **BTAHL72XPipelines.BTAHL72XReceivePipeline**します。クリックして**OK**します。  
   
-6.  BizTalk 管理コンソールで、右クリック**BatchControlLocation**、クリックして**を有効にする**です。  
+6. 右クリックし、BizTalk 管理コンソールで**BatchControlLocation**、 をクリックし、**を有効にする**します。  
   
- 進みます[手順 2: バッチ オーケストレーションを有効にする](../../adapters-and-accelerators/accelerator-hl7/step-2-enable-the-batch-orchestration.md)です。
+   続行する[手順 2: バッチ オーケストレーションを有効にする](../../adapters-and-accelerators/accelerator-hl7/step-2-enable-the-batch-orchestration.md)します。

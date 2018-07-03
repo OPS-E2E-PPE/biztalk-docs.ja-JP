@@ -1,5 +1,5 @@
 ---
-title: SQL アダプターのパフォーマンス カウンターを使用して |Microsoft ドキュメント
+title: SQL アダプターを使用したパフォーマンス カウンターの使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,47 +12,47 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f81189e34346d377686dac79b44e5a9b34889dc
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: cb28399887452688e084f5f2858745958fd85991
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25965520"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36993755"
 ---
-# <a name="use-performance-counters-with-the-sql-adapter"></a>SQL アダプターのパフォーマンス カウンターを使用します。
-[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]クライアントは、アダプターのパフォーマンスを測定するのにパフォーマンス カウンターを使用できます。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムによって作成のパフォーマンス カウンター カテゴリ"[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]"アダプター パックのインストールと共にします。  
+# <a name="use-performance-counters-with-the-sql-adapter"></a>SQL アダプターを使用したパフォーマンス カウンターを使用します。
+[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] クライアントは、アダプターのパフォーマンスを測定するのにパフォーマンス カウンターを使用できます。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムは、パフォーマンス カウンター カテゴリを作成します。"[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]"アダプター パックのインストールと共にします。  
   
-## <a name="the-lob-time-cumulative-performance-counter"></a>LOB (累積) 時間のパフォーマンス カウンター  
- **SQL 用の BizTalk .NET アダプター**カテゴリには 1 つのパフォーマンス カウンター「LOB 時間 (累積)」と呼ばれます。 このパフォーマンス カウンターは、SQL Server のクライアント ライブラリがアダプターを開始する操作が完了する時間をミリ秒単位で、時間を表します。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]特定の SQL Server インスタンスおよびデータベースの名前については、各操作のパフォーマンス カウンターのインスタンスを作成します。 次のパターンでは、インスタンスが作成されます。  
+## <a name="the-lob-time-cumulative-performance-counter"></a>LOB の時間 (累積) パフォーマンス カウンター  
+ **SQL 用の BizTalk .NET アダプター**カテゴリには 1 つのパフォーマンス カウンター"LOB Time (累積)"と呼ばれます。 このパフォーマンス カウンターは、SQL Server のクライアント ライブラリは、アダプターを起動する操作を完了するまでをミリ秒単位の時間を表します。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]の各アクションは、特定の SQL Server インスタンスとデータベース名のパフォーマンス カウンターのインスタンスを作成します。 次のパターンでは、インスタンスが作成されます。  
   
 ```  
 <processId>:<appDomainId>:<endpointId>:<actionId>  
 ```  
   
- `<endpointId>`として派生`<sql_server_name>, <instance_name>, <database_name>`です。  
+ `<endpointId>`としては、派生`<sql_server_name>, <instance_name>, <database_name>`します。  
   
  \<ActionId\>は次のように派生します。  
   
--   接続を開くには、アクション ID「開く」です。  
+- 接続を開くは、操作 ID は、[開く] です。  
   
--   受信操作は、操作 ID は"Inbound"です。  
+- 受信操作の場合は、操作 ID は、"Inbound"です。  
   
--   送信操作は、操作 ID は、呼び出される操作のアクションと「/」は、アンダー スコア「_」に置換します。 また、アクション ID が付いて"ExecuteScalar"、"ExecuteReader"または"ExecuteNonQuery"方法によっては、アダプターは、SQL Server データベースで操作を実行する内部で使用します。 アダプターが内部的に使用するなど、 **ExecuteReader** SQL Server でストアド プロシージャを実行するメソッド。 そのため、ストアド プロシージャで MyProcedure、操作 ID になります。  
+- 送信操作は、操作 ID が呼び出される操作のアクションを「/」は、アンダー スコア「_」で置き換えられます。 また、操作 ID は、アダプターは、SQL Server データベースで操作を実行する内部的に使用する方法によって"ExecuteScalar"、"ExecuteReader"または"ExecuteNonQuery"プレフィックスします。 アダプターが内部的に使用するなど、 **ExecuteReader**メソッドを SQL Server のストアド プロシージャを実行します。 そのため、ストアド プロシージャで MyProcedure、操作 ID になります。  
   
-    ```  
-    ExecuteReader_Procedure_dbo_MyProcedure  
-    ```  
+  ```  
+  ExecuteReader_Procedure_dbo_MyProcedure  
+  ```  
 
- パフォーマンス カウンターは、アダプターが SQL Server データベースへの最初の呼び出し後にのみ初期化されます。 また、 [InstanceLifetime](https://msdn.microsoft.com/library/system.diagnostics.performancecounter.instancelifetime.aspx)パフォーマンス カウンターのプロパティが 'Process' は、パフォーマンス カウンターは、カウンターを作成するプログラムが終了するとすぐに存在しなくなることを意味します。
+  パフォーマンス カウンターは、アダプターが SQL Server データベースの最初の呼び出し後にのみ初期化されます。 また、 [InstanceLifetime](https://msdn.microsoft.com/library/system.diagnostics.performancecounter.instancelifetime.aspx) 'Process' は、パフォーマンス カウンターは、カウンターを作成するプログラムが終了すると、すぐに存在しなくなることを意味するパフォーマンス カウンターのプロパティが設定されています。
   
 > [!NOTE]
->  LOB Time (累積) パフォーマンス カウンターの有効桁数は、16 ミリ秒です。  
+>  LOB の時間 (累積) パフォーマンス カウンターの有効桁数は、16 ミリ秒です。  
   
 ## <a name="enabling-performance-counters"></a>パフォーマンス カウンターを有効にします。  
- パフォーマンス カウンターを有効になっているやバインド プロパティを設定して無効になっている**EnablePerformanceCounters**です。 パフォーマンス カウンターを有効にするには設定、 **EnablePerformanceCounters**にプロパティのバインド**True**です。 パフォーマンス カウンターを無効にする設定**EnablePerformanceCounters**に**False**です。 既定では、プロパティに設定が**False**です。 このバインドのプロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。  
+ パフォーマンス カウンターを有効またはバインドのプロパティを設定して無効にできる**EnablePerformanceCounters**します。 パフォーマンス カウンターを有効にするには設定、 **EnablePerformanceCounters**プロパティをバインド**True**します。 パフォーマンス カウンターを無効にするには設定**EnablePerformanceCounters**に**False**します。 既定では、プロパティに設定が**False**します。 このバインドのプロパティの詳細については、次を参照してください。 [for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。  
   
 ## <a name="performance-counters-and-the-wcf-lob-adapter-sdk"></a>パフォーマンス カウンターと WCF LOB Adapter SDK  
- 値を変更する、 **EnablePerformanceCounters**に対応するパフォーマンス カウンターの値が変更もプロパティのバインド、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。 バインディング プロパティも、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]静的では、一方の[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]は動的です。 そのため、2 つのインスタンスがある場合、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アプリケーション ドメインでのバインディング、および**EnablePerformanceCounters**に設定されているプロパティのバインド**True**いずれかでと**False**アダプター固有のパフォーマンス カウンターのいずれかで有効にし、他の無効になっているは、それ以外のです。 ただし、ためのバインディング プロパティ[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]は静的で、いずれかに設定されます**True**または**False**によってどのような値を最後に指定されました。  
+ 値を変更する、 **EnablePerformanceCounters**に対応するパフォーマンス カウンターの値を変更してもプロパティをバインド、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]します。 バインド プロパティも、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]は静的で一方の場合、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]は動的です。 そのため、2 つのインスタンスがある場合、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] 、アプリケーション ドメインでのバインドと**EnablePerformanceCounters**に設定されているプロパティのバインド**True**いずれかでと**False**アダプター固有のパフォーマンス カウンターのいずれかで有効にし、他の無効になっているで、他のです。 ただし、ためのバインディング プロパティ[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]は静的で、いずれかに設定されます**True**または**False**によってどのような値を最後に指定されました。  
   
 ## <a name="see-also"></a>参照  
 [SQL アダプターをトラブルシューティングします。](../../adapters-and-accelerators/adapter-sql/troubleshoot-the-sql-adapter.md)

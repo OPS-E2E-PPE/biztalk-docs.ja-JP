@@ -1,5 +1,5 @@
 ---
-title: メッセージ プロセッサ (BizTalk Server サンプル) で構成される |Microsoft ドキュメント
+title: メッセージ プロセッサ (BizTalk Server サンプル) で構成されます |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,29 +17,29 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3097ef6a0da695c3b07cf68182a374eabed11b5e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: d884fba7d19e26613c457ed5789f847a5c23babc
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975280"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969211"
 ---
 # <a name="composed-message-processor-biztalk-server-sample"></a>構成済みメッセージ プロセッサ (BizTalk Server サンプル)
 このサンプルの目的は、集計メッセージの個別の品目を処理する構成済みメッセージ プロセッサ アプリケーションをビルドすることです。  
   
  具体的には、以下の処理を行うオーケストレーション スケジュールをビルドします。  
   
-1.  複数の注文書で構成されるバッチ インターチェンジ メッセージを受信します。  
+1. 複数の注文書で構成されるバッチ インターチェンジ メッセージを受信します。  
   
-2.  インターチェンジ メッセージを個別の注文書ドキュメントに逆アセンブルします。  
+2. インターチェンジ メッセージを個別の注文書ドキュメントに逆アセンブルします。  
   
-3.  各ドキュメントを処理し、各注文書を請求書メッセージに変換します。  
+3. 各ドキュメントを処理し、各注文書を請求書メッセージに変換します。  
   
-4.  すべての請求書メッセージをバッチ インターチェンジにアセンブルします。  
+4. すべての請求書メッセージをバッチ インターチェンジにアセンブルします。  
   
- ステップ 3 はサンプル用であるため、簡略化されています。 たとえば、より複雑なアプリケーションの場合、オーケストレーションが逆アセンブルした注文書を異なるバックエンド在庫システムに送信し、すべての応答を収集した後で、応答をバッチ化された 1 つの請求書メッセージに集計することがあります。  
+   ステップ 3 はサンプル用であるため、簡略化されています。 たとえば、より複雑なアプリケーションの場合、オーケストレーションが逆アセンブルした注文書を異なるバックエンド在庫システムに送信し、すべての応答を収集した後で、応答をバッチ化された 1 つの請求書メッセージに集計することがあります。  
   
- 構成済みメッセージ プロセッサのパターンの詳細については、[1] を参照してください。  
+   構成済みメッセージ プロセッサのパターンの詳細については、[1] を参照してください。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  サンプル ソリューションには 2 つのプロジェクトがあります。次のセクションで、両方のプロジェクトについて詳しく説明します。  
@@ -135,15 +135,15 @@ BILLTO,US,Alice Smith,123 Maple Street,Mill Valley,CA,90952
   
  まず、以下のフラット ファイル スキーマを作成します。  
   
--   注文書ドキュメント (PO.xsd)  
+- 注文書ドキュメント (PO.xsd)  
   
--   請求書ドキュメント (Invoice.xsd)  
+- 請求書ドキュメント (Invoice.xsd)  
   
--   注文書ヘッダー (POHeader.xsd)  
+- 注文書ヘッダー (POHeader.xsd)  
   
--   請求書ヘッダー (InvoiceHeader.xsd)  
+- 請求書ヘッダー (InvoiceHeader.xsd)  
   
- このサンプルでは、フラット ファイル スキーマの作成プロセスについては説明しません。 ドキュメント インスタンスからフラット ファイル スキーマを作成する方法については、「ドキュメント インスタンスからのフラット ファイル スキーマの作成」ドキュメント セクションを参照してください。  
+  このサンプルでは、フラット ファイル スキーマの作成プロセスについては説明しません。 ドキュメント インスタンスからフラット ファイル スキーマを作成する方法については、「ドキュメント インスタンスからのフラット ファイル スキーマの作成」ドキュメント セクションを参照してください。  
   
 #### <a name="map-to-transform-purchase-order-document-into-invoice-document"></a>請求書ドキュメントに注文書ドキュメントを変換するマップ  
  マップ (PO2Invoice.btm) は、注文書のインスタンスを請求書ドキュメントに変換します。  
@@ -153,31 +153,31 @@ BILLTO,US,Alice Smith,123 Maple Street,Mill Valley,CA,90952
   
  受信パイプラインのフラット ファイル逆アセンブラは、以下のように構成されます。  
   
--   **ドキュメント スキーマ:** PipelinesAndSchemas.PO  
+- **ドキュメント スキーマ:** PipelinesAndSchemas.PO  
   
--   **ヘッダー スキーマ:** PipelinesAndSchemas.POHeader  
+- **ヘッダー スキーマ:** PipelinesAndSchemas.POHeader  
   
--   **ヘッダーの保存:** False  
+- **ヘッダーの保存:** False  
   
--   **回復可能なインターチェンジ:** False  
+- **回復可能なインターチェンジ:** False  
   
--   **トレーラー スキーマ:** (なし)  
+- **トレーラー スキーマ:** (なし)  
   
--   **ドキュメント構造の検証:** False  
+- **ドキュメント構造の検証:** False  
   
- 送信パイプライン (FFSendPipeline.btp) には、集計請求書インターチェンジの作成に使用するフラット ファイル アセンブラ コンポーネントが含まれています。  
+  送信パイプライン (FFSendPipeline.btp) には、集計請求書インターチェンジの作成に使用するフラット ファイル アセンブラ コンポーネントが含まれています。  
   
- 送信パイプラインのフラット ファイルアセンブラは、以下のように構成されます。  
+  送信パイプラインのフラット ファイルアセンブラは、以下のように構成されます。  
   
--   **ドキュメント スキーマ:** PipelinesandSchemas.Invoice  
+- **ドキュメント スキーマ:** PipelinesandSchemas.Invoice  
   
--   **ヘッダー スキーマ:** PipelinesAndSchemas.InvoiceHeader  
+- **ヘッダー スキーマ:** PipelinesAndSchemas.InvoiceHeader  
   
--   **バイト オーダー マークの保存:** False  
+- **バイト オーダー マークの保存:** False  
   
--   **文字セットをターゲット:** (なし)  
+- **ターゲット文字セット:** (なし)  
   
--   **トレーラー スキーマ:** (なし)  
+- **トレーラー スキーマ:** (なし)  
   
 ### <a name="orchestration-schedule"></a>オーケストレーション スケジュール  
  オーケストレーション スケジュール (CMP.odx) は、すべてのメイン処理が行われる場所です。 具体的には、次のアクションが実行されます。  
@@ -196,13 +196,13 @@ BILLTO,US,Alice Smith,123 Maple Street,Mill Valley,CA,90952
 #### <a name="executing-receive-pipeline"></a>受信パイプラインの実行  
  次のステップではロジックを追加して、オーケストレーションで受信したメッセージの受信パイプラインを実行します。 この操作を行うには、まず、スコープ内で Microsoft.XLANGs.Pipeline.ReceivePipelineOutputMessages の種類の変数 (RcvPipeOutput) を宣言します。 この変数は、受信パイプライン出力メッセージを順番に表示する列挙子です。 この種類、およびパイプラインを実行するその他の種類にオーケストレーションからアクセスするには、次のアセンブリに参照を追加する必要があります。  
   
--   Microsoft.XLANGs.Pipeline.dll  
+- Microsoft.XLANGs.Pipeline.dll  
   
--   Microsoft.BizTalk.Pipeline.dll  
+- Microsoft.BizTalk.Pipeline.dll  
   
- 受信パイプラインが常に正常に実行されるという保証はありません。 メッセージの形式が正しくないために、パイプライン処理が失敗することがあります。 オーケストレーションでパイプラインの実行に失敗すると、例外がスローされます。これをキャッチして、エラー処理ロジックを実行することができます。 パイプラインでスローされた例外をキャッチするには、非アトミックなスコープで例外処理を使用して、パイプラインを実行する必要があります。 パイプラインを実行する実際のコードは、そのスコープの式図形から呼び出されます。  
+  受信パイプラインが常に正常に実行されるという保証はありません。 メッセージの形式が正しくないために、パイプライン処理が失敗することがあります。 オーケストレーションでパイプラインの実行に失敗すると、例外がスローされます。これをキャッチして、エラー処理ロジックを実行することができます。 パイプラインでスローされた例外をキャッチするには、非アトミックなスコープで例外処理を使用して、パイプラインを実行する必要があります。 パイプラインを実行する実際のコードは、そのスコープの式図形から呼び出されます。  
   
- ExecuteRcvPipe 式図形に次のコード行を書き込んで、受信パイプラインを実行します。  
+  ExecuteRcvPipe 式図形に次のコード行を書き込んで、受信パイプラインを実行します。  
   
 ```  
 RcvPipeOutput = Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteReceivePipeline(typeof(PipelinesAndSchemas.FFReceivePipeline), InputInterchange);  
@@ -219,7 +219,7 @@ RcvPipeOutput = Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteReceivePip
   
  オーケストレーションで変換を使用するには、変換入力と変換出力の 2 つのメッセージを定義する必要があります。 これらのメッセージをアトミックのスコープ内に定義します。 TmpMessageIn という変換入力メッセージは、PipelinesAndSchemas.PO 型になります。 TmpMessageOut という変換出力メッセージは、PipeliensAndSchemas.Invoice 型になります。 PipelinesAndSchemas プロジェクトで定義したマップ、PO2Invoice.btm を適用します。  
   
- 各パイプライン出力メッセージにマップするよう、ループ内で変換を実行する必要があります。 以下の終了条件を持つループ図形を使用します。  
+ 各パイプライン出力メッセージにマップするため、ループ内で変換を実行する必要があります。 以下の終了条件を持つループ図形を使用します。  
   
 ```  
 RcvPipeOutput.MoveNext()  
@@ -265,7 +265,7 @@ Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(Pipeli
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  次の表に、このサンプルのファイル一覧を示します。  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |---------------|-----------------|  
 |Cleanup.bat|アセンブリを展開解除し、グローバル アセンブリ キャッシュ (GAC) から削除するために使用されます。<br /><br /> 送信ポートと受信ポートが削除されます。<br /><br /> 必要に応じて、Microsoft インターネット インフォメーション サービス (IIS) の仮想ディレクトリが削除されます。|  
 |ComposedMessageProcessor.sln|サンプルの Visual Studio ソリューション ファイルです。|  
@@ -289,7 +289,7 @@ Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(Pipeli
   
      \<パスのサンプル\>\Pipelines\ComposedMessageProcessor  
   
-2.  次の操作を実行する Setup.bat ファイルを実行します。  
+2.  ファイルは、次の操作を実行します。 Setup.bat を実行します。  
   
     -   次のフォルダに、このサンプル用の入力 (In) フォルダと出力 (Out) フォルダを作成します。  
   
@@ -303,7 +303,7 @@ Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(Pipeli
   
     -   オーケストレーションを参加させて開始し、受信場所を有効化し、送信ポートを開始します。  
   
-         開き、Setup.bat ファイルを実行せずにこのサンプルのプロジェクトをビルドする場合は、まず、.NET Framework の厳密名ユーティリティ (sn.exe) を使用して、厳密な名前のキー ペアを作成する必要があります。 このキー ペアが結果として得られるアセンブリの署名に使用されるを使用します。  
+         開き、Setup.bat ファイルを実行することがなくこのサンプルでは、プロジェクトをビルドする場合は、まず、.NET Framework の厳密名ユーティリティ (sn.exe) を使用して厳密な名前キーのペアを作成する必要があります。 このキー ペアが結果として得られるアセンブリの署名に使用されるを使用します。  
   
 3.  このサンプルを実行する前に、BizTalk Server において、作成プロセスおよび初期化プロセスでエラーが報告されていないことを確認してください。  
   

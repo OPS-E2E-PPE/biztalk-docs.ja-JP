@@ -1,5 +1,5 @@
 ---
-title: OperationsSamples (BizTalk Server サンプル) |Microsoft ドキュメント
+title: OperationsSamples (BizTalk Server サンプル) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e42b17f19791eef9bd3f1b5d7d4554f61f08356
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: a2a871afd76d6dd46cb4aa5d72d1c23b332ad90e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26010251"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969499"
 ---
 # <a name="operationssamples-biztalk-server-sample"></a>OperationsSamples (BizTalk Server サンプル)
 OperationsSamples サンプルは、Operations オブジェクト モデルを使用して、さまざまな操作を実行する方法を具体的に示します。  
@@ -25,15 +25,15 @@ OperationsSamples サンプルは、Operations オブジェクト モデルを�
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルは、次の操作方法を示します。  
   
--   追跡プロファイルを使用して、オーケストレーションにアクティビティのコメントを付ける。  
+- 追跡プロファイルを使用して、オーケストレーションにアクティビティのコメントを付ける。  
   
--   BAM 追跡データベースを使用して、アクティビティ ID を検索し、ID を使用して、関連するオーケストレーション インスタンスを検索する方法です。  
+- BAM 追跡データベースを使用して、アクティビティ ID を検索し、関連するオーケストレーション インスタンスを検索する ID を使用する方法。  
   
--   検索およびメッセージ フローを使用して操作する方法、 **MessageFlow**クラスとその他の Operations オブジェクト モデル クラスおよび Api です。  
+- 検索して、メッセージ フローを使用して操作する方法、 **MessageFlow**クラスおよびその他の Operations オブジェクト モデル クラスと Api。  
   
--   ポートへのアクセス方法、メッセージ、およびから派生したクラスを使用して他のインスタンス、**インスタンス**クラスです。  
+- ポートにアクセスする方法、メッセージ、およびから派生したクラスを使用して他のインスタンス、**インスタンス**クラス。  
   
- サンプルには、上の操作をサポートする多くの有益なヘルパー クラスとメソッドが含まれています。 これらと他のコードの特長については、次のセクションで説明します。  
+  サンプルには、上の操作をサポートする多くの有益なヘルパー クラスとメソッドが含まれています。 これらと他のコードの特長については、次のセクションで説明します。  
   
 ## <a name="how-this-sample-is-designed-and-why"></a>このサンプルの目的とその理由  
  このサンプルは、Operations オブジェクト モデルの主要クラスおよびメソッドの機能を紹介し、ユーザーに公開されている BAM 追跡データベースでクエリを実行する方法を示すことを目的としています。  
@@ -43,16 +43,16 @@ OperationsSamples サンプルは、Operations オブジェクト モデルを�
 ### <a name="using-a-bam-activity-id"></a>BAM アクティビティ ID の使用  
  このサンプルでは、BAM との対話方法と、ユーザーに公開されている追跡データベースのビューを使用して、ビジネス データを使ってメッセージ ボックスのライブ メッセージを見つける方法を示します。 サンプルでは、注文書番号に対応するオーケストレーション ID を取得して、この作業を行います。 このタスクを成功させるには、次のことを行う必要があります。  
   
-1.  ビジネス データ (注文書番号) を使用して、アクティビティ ID を検索します。 この手順では、ビジネス データを内部 ID にマップして、追加情報の検索に使用できるようにします。  
+1. ビジネス データ (注文書番号) を使用して、アクティビティ ID を検索します。 この手順では、ビジネス データを内部 ID にマップして、追加情報の検索に使用できるようにします。  
   
-2.  アクティビティ ID に関連する BAM 参照を取得します。  
+2. アクティビティ ID に関連する BAM 参照を取得します。  
   
-3.  種類が "BizTalkService" の参照を検索し、オーケストレーションを参照します。 見つかったら、そのインスタンス ID を返します。  
+3. 種類が "BizTalkService" の参照を検索し、オーケストレーションを参照します。 見つかったら、そのインスタンス ID を返します。  
   
- この機能は、 **BAMWebService.GetOrchestrationID**静的メソッドと、BamManagementService.cs ソース ファイルのクラスとメソッドを含む関連ヘルパー メソッドです。  
+   この機能は、 **BAMWebService.GetOrchestrationID**静的メソッドと、BamManagementService.cs ソース ファイルでクラスとメソッドを含む関連ヘルパー メソッド。  
   
 ### <a name="suspending-terminating-and-resuming-an-instance"></a>インスタンスの中断、終了、および再開  
- サンプル プログラムが含まれています、 **Samples.OperateOnInstance**メソッドを操作し、インスタンス ID をインスタンスに対して指定された操作を実行します。 有効な操作がによって定義されている、 **InstanceOperation**列挙しており、Suspend、Terminate、Resume です。 これらの操作は、biztalkoperations のメソッドに直接マップ —**SuspendInstance**、 **TerminateInstance**、および**ResumeInstance**です。  
+ サンプル プログラムが含まれています、 **Samples.OperateOnInstance**メソッドを操作とインスタンス ID を受け取り、インスタンスで指定された操作を実行します。 有効な操作がによって定義されている、 **InstanceOperation**列挙しており、Suspend、Terminate、再開します。 これらの操作は、biztalkoperations のメソッドに直接マップ-**SuspendInstance**、 **TerminateInstance**、および**ResumeInstance**します。  
   
  メソッドは ArgumentException と SqlException の両方の例外を処理します。 Operations オブジェクト モデルのクラスおよびメソッドの操作時に、SqlException を含む例外が発生する可能性があるので注意してください。  
   
@@ -81,7 +81,7 @@ foreach (BizTalkMessage msg in messages)
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |---------------|-----------------|  
 |BamManagementService.cs|BAM Web サービスの Web プロキシ クラスです。|  
 |Cleanup.bat|サンプル オーケストレーションを削除し、HelloWorld サンプルを元の状態に戻します。|  
@@ -96,7 +96,7 @@ foreach (BizTalkMessage msg in messages)
   
  次のタスクを行うこともできます。  
   
--   カスタム アプリケーションにグループのハブのよく使われるサブセットをレプリケートするアプリケーションを作成します。  
+-   カスタム アプリケーションに、グループのハブの最も使用頻度のサブセットをレプリケートするアプリケーションを作成します。  
   
 -   ポートを作成し、新しい取引先にテスト メッセージを送信するカスタム プロビジョニング アプリケーションを作成する。  
   
@@ -136,11 +136,11 @@ foreach (BizTalkMessage msg in messages)
   
 #### <a name="to-compile-and-run-the-sample"></a>サンプルをコンパイルおよび実行するには  
   
-1.  をクリックして**開始****すべてのプログラム**を選択**Microsoft BizTalk Server**、し、 **BizTalk Server 管理コンソール**です。  
+1.  をクリックして**開始**を選択します**すべてのプログラム**を選択します**Microsoft BizTalk Server**、し、 **BizTalk Server 管理**します。  
   
-2.  BizTalk Server 管理コンソールで、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**プラットフォームの設定**を順に展開**ホスト インスタンスの**します。  
+2.  BizTalk Server 管理コンソールで  **BizTalk Server 管理**、展開**BizTalk グループ**、展開**プラットフォームの設定**順に展開**ホスト インスタンスの**します。  
   
-3.  右クリック**BizTalkServerApplication**、クリックして**再起動**です。  
+3.  右クリック**BizTalkServerApplication**、 をクリックし、**再起動**します。  
   
     > [!NOTE]
     >  製品を構成してからホスト インスタンスを再起動していない場合は、BAM に正しい作業データベースを設定するために、BizTalkServerApplication ホスト インスタンスの再起動が必要です。  
@@ -149,16 +149,16 @@ foreach (BizTalkMessage msg in messages)
   
      `<Samples Path>\Admin\OperationsOM\OperationSamples`  
   
-5.  ダブルクリックして、 **OperationsOM.sln** Visual Studio に読み込むプロジェクト ファイルです。  
+5.  ダブルクリックして、 **OperationsOM.sln**プロジェクト ファイルを Visual Studio に読み込みます。  
   
 6.  F5 キーを押して、サンプルを実行します。  
   
-     -または--  
+     --または--  
   
-     **ビルド** メニューのをクリックして**ソリューションのリビルド**です。 ビルドが完了したら、エクスプ ローラーを使用して、移動する`<Samples Path>\Admin\OperationsOM\OperationSamples\bin\Debug,`順にダブルクリック**OperationsSamples.exe**です。  
+     **ビルド** メニューのをクリックして**ソリューションのリビルド**します。 ビルドが完了したらは、Windows エクスプ ローラーを使用して、移動する`<Samples Path>\Admin\OperationsOM\OperationSamples\bin\Debug,`し、ダブルクリック**OperationsSamples.exe**します。  
   
 ## <a name="classes-or-methods-used-in-this-sample"></a>このサンプルで使用されるクラスまたはメソッド  
- [Microsoft.BizTalk.Operations.BizTalkOperations](http://msdn.microsoft.com/library/microsoft.biztalk.operations.biztalkoperations.aspx)&#124;です。[Microsoft.BizTalk.Operations.MessageFlow](http://msdn.microsoft.com/library/microsoft.biztalk.operations.messageflow.aspx)&#124;です。[Microsoft.BizTalk.Operations.SendPortInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.sendportinstance.aspx)&#124;です。[Microsoft.BizTalk.Operations.RoutingFailureInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.routingfailureinstance.aspx)&#124;です。[Microsoft.BizTalk.Operations.OrchestrationInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.orchestrationinstance.aspx)&#124;です。[Microsoft.BizTalk.Operations.MSMQtInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.msmqtinstance.aspx)&#124;です。[Microsoft.BizTalk.Operations.TrackedServiceInstance](http://msdn.microsoft.com/library/Microsoft.BizTalk.Operations.TrackedServiceInstance.aspx)  
+ [Microsoft.BizTalk.Operations.BizTalkOperations](http://msdn.microsoft.com/library/microsoft.biztalk.operations.biztalkoperations.aspx) &#124; [Microsoft.BizTalk.Operations.MessageFlow](http://msdn.microsoft.com/library/microsoft.biztalk.operations.messageflow.aspx) &#124; [Microsoft.BizTalk.Operations.SendPortInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.sendportinstance.aspx)&#124; [Microsoft.BizTalk.Operations.RoutingFailureInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.routingfailureinstance.aspx) &#124; [Microsoft.BizTalk.Operations.OrchestrationInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.orchestrationinstance.aspx) &#124; [Microsoft.BizTalk.Operations.MSMQtInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.msmqtinstance.aspx) &#124; [Microsoft.BizTalk.Operations.TrackedServiceInstance](http://msdn.microsoft.com/library/Microsoft.BizTalk.Operations.TrackedServiceInstance.aspx)  
   
 ## <a name="see-also"></a>参照  
  [Admin-OperationsOM (BizTalk Server Samples フォルダー)](../core/admin-operationsom-biztalk-server-samples-folder.md)

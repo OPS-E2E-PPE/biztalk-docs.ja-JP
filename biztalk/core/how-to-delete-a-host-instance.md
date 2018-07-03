@@ -1,5 +1,5 @@
 ---
-title: ホスト インスタンスを削除する |Microsoft ドキュメント
+title: ホスト インスタンスの削除 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 798ea341ef61b15729dd15742eef7701641e7547
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6ecc7999e807b4036f80e8fdd1941d447f7af163
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22249202"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37023584"
 ---
 # <a name="delete-a-host-instance"></a>ホスト インスタンスを削除します。
 
 ## <a name="overview"></a>概要
-使用することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールまたは Windows Management Instrumentation (WMI) をホスト インスタンスを削除します。 ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)です。 WMI を使用してホスト インスタンスを削除する方法については、次を参照してください。 **MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+使用することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールまたは Windows Management Instrumentation (WMI) ホスト インスタンスを削除します。 ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)します。 WMI を使用して、ホスト インスタンスを削除する方法の詳細については、次を参照してください。 **MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
  ホスト インスタンスを削除すると、BizTalk Server ランタイムのインスタンスが、関連付けられたサーバーから削除されます。また、BizTalk 管理データベースが、ホストからそのインスタンスを削除するように更新されます。  
   
@@ -48,20 +48,20 @@ ms.locfileid: "22249202"
   
 ## <a name="steps"></a>手順
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2.  コンソール ツリーで  **BizTalk Server 管理コンソール**BizTalk グループ、をクリックして**プラットフォームの設定**、順にクリック**ホスト インスタンス**です。  
+2. コンソール ツリーで、展開**BizTalk Server 管理**BizTalk グループ、をクリックして**プラットフォームの設定**、 をクリックし、**ホスト インスタンス**します。  
   
-3.  詳細ウィンドウで、削除、およびをクリックするホスト インスタンスを右クリックして**削除**です。  
+3. 詳細ペインで、削除、およびクリックするホスト インスタンスを右クリックして**削除**します。  
   
-4.  **確認ホスト インスタンスの削除**ダイアログ ボックスで、をクリックして**はい**です。  
+4. **ホスト インスタンスの削除確認**ダイアログ ボックスで、をクリックして **[はい]** します。  
   
-    > [!NOTE]
-    >  BizTalk Server でホスト インスタンスを削除できない場合は、別のダイアログ ボックスが表示され、ホスト インスタンスを強制的に削除できます。 提供される内容を読み、をクリックして**はい**ホスト インスタンスを削除します。  
+   > [!NOTE]
+   >  BizTalk Server でホスト インスタンスを削除できない場合は、別のダイアログ ボックスが表示され、ホスト インスタンスを強制的に削除できます。 提供される情報を読むには、次のようにクリックします。**はい**ホスト インスタンスを削除します。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk ホストとホスト インスタンスを管理します。](../core/managing-biztalk-hosts-and-host-instances.md)   
+ [BizTalk ホストとホスト インスタンスの管理](../core/managing-biztalk-hosts-and-host-instances.md)   
  [ホスト インスタンスを追加する方法](../core/how-to-add-a-host-instance.md)   
- [ホスト インスタンスを起動する方法](../core/how-to-start-a-host-instance.md)   
+ [ホスト インスタンスを開始する方法](../core/how-to-start-a-host-instance.md)   
  [ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)   
  [ホスト インスタンスのプロパティを変更する方法](../core/how-to-modify-host-instance-properties.md)

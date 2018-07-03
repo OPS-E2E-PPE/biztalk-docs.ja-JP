@@ -1,5 +1,5 @@
 ---
-title: SWIFT 逆アセンブラーまたはアセンブラーをパイプラインに追加する |Microsoft ドキュメント
+title: SWIFT 逆アセンブラーまたはアセンブラーをパイプラインに追加する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,19 +17,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0648e6c51d83a95fb24b36d872e06e157480c5fb
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: f48317c21942e0912f88d3e48523e07728c16ad3
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005251"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36968003"
 ---
 # <a name="adding-the-swift-disassembler-or-assembler-to-a-pipeline"></a>SWIFT 逆アセンブラーまたはアセンブラーをパイプラインに追加します。
-BizTalk パイプライン デザイナを使用する[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]カスタム BizTalk を作成する受信および送信パイプラインです。 「逆アセンブル」カスタム受信パイプラインのステージの SWIFT の逆アセンブラーを使用することができます。 同様に、カスタム送信パイプラインで"をアセンブル"ステージの SWIFT アセンブラーを使用することができます。 呼び出すには、SWIFT 逆アセンブラーまたはアセンブラー パイプライン デザイナーのツールボックスは、パイプライン デザイナー キャンバスに逆アセンブラーまたはアセンブラー対応するパイプラインのステージにドラッグします。 逆アセンブラーまたはアセンブラーの呼び出しについての詳しい手順については、「[第 3 章: パイプライン プロジェクトを追加する](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)、エンド ツー エンド チュートリアル」でします。 詳細については、パイプライン デザイナーまたはパイプライン プロジェクトでの作業では、BizTalk Server ヘルプを参照してください。  
+BizTalk パイプライン デザイナを使用するには Microsoft と[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]カスタム BizTalk を作成する受信パイプラインと送信されます。 SWIFT 逆アセンブラーは、カスタム受信パイプラインの「逆アセンブル」段階を使用できます。 同様に、カスタム送信パイプラインの「アセンブル」段階の SWIFT アセンブラーを使用することができます。 SWIFT 逆アセンブラーまたはアセンブラーをパイプライン デザイナーのツールボックスからを起動するには、は、パイプライン デザイナー キャンバスに、逆アセンブラーまたはアセンブラーを対応するパイプライン ステージにドラッグします。 逆アセンブラーまたはアセンブラーを呼び出す方法について詳しい手順については、「[モジュール 3: パイプライン プロジェクトの追加](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)でエンド ツー エンド チュートリアル。 パイプライン プロジェクトでの作業やパイプライン デザイナーに関する詳細については、BizTalk Server のヘルプを参照してください。  
   
- 仕様では、SWIFT の逆アセンブラーである「逆アセンブル」ステージが必要ですが、*最終*呼び出される受信パイプラインのステージ。 すべての後続のステージを使用すると、予期しない動作 (後続のステージを呼び出していない、このような逆アセンブラーや逆アセンブラーが以前設定と、メッセージ ボックスに、メッセージを発行する前に昇格されたコンテキスト プロパティを削除します。データベースの場合)。 SWIFT アセンブラー"をアセンブル"ステージをするが必要ですが、同様に、*最初*送信パイプラインのステージ。 前のステージを使用すると、SWIFT アセンブラーによって動的なメッセージの種類の探索が損なわれる可能性があります。  
+ 仕様では、SWIFT 逆アセンブラーに「逆アセンブル」ステージが必要ですが、*最終的な*呼び出される受信パイプラインのステージ。 すべての後続のステージを使用すると、予期しない動作 (いない後続のステージを呼び出し、このような逆アセンブラーまたはが以前設定され、メッセージ ボックスに、メッセージを発行する前に昇格するコンテキスト プロパティを削除する逆アセンブラーデータベースの場合)。 SWIFT アセンブラーを「アセンブル」段階が必要ですが、同様に、*最初*送信パイプラインのステージ。 前のステージを使用して SWIFT アセンブラーが動的メッセージ型の探索が損なわれる可能性があります。  
   
- それらを使用するパイプライン デザイナー ツールボックス最初の時刻に SWIFT 逆アセンブラおよびアセンブラを手動で追加する必要があります。 これを行うための手順の詳細については[第 3 章: パイプライン プロジェクトを追加する](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)エンド ツー エンド チュートリアル」でします。 手動で追加すると、ツールボックスに表示するには、コンポーネントが続行されます (手動で削除するまで、またはアンインストールする[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)])。  
+ SWIFT 逆アセンブラーおよびアセンブラーは、それらを使用するときに、パイプライン デザイナー ツールボックス最初に手動で追加する必要があります。 これを行うための手順の詳細については[モジュール 3: パイプライン プロジェクトの追加](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)でエンド ツー エンド チュートリアル。 コンポーネントは引き続き手動で追加すると、ツールボックスに表示されます (手動で削除するまで、またはアンインストールする[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)])。  
   
 ## <a name="see-also"></a>参照  
  [SWIFT 逆アセンブラーおよびアセンブラーの操作](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)

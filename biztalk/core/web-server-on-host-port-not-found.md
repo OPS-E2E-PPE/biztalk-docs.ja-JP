@@ -1,5 +1,5 @@
 ---
-title: Web ポートでサーバーにホストが見つかりません |。Microsoft ドキュメント
+title: Web サーバーが見つかりませんホスト ポート |。Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3dce09ce00a169ad14bbc8ae2ab28fe70c039c2b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 62f9260f477669debf709ba592568a15fbaf7194
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288562"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36987147"
 ---
 # <a name="web-server-on-host-port-not-found"></a>ホスト ポートの Web サーバーが見つかりません
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|製品バージョン|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|イベント ID|0|  
-|イベント ソース|0|  
-|コンポーネント|0|  
-|シンボル名|0|  
-|メッセージ テキスト|見つかりません。"{0}"ホスト ポート {1} 上の web サーバー|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  製品名   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| 製品バージョン |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    イベント ID     |                                         0                                          |
+|  イベント ソース   |                                         0                                          |
+|    コンポーネント    |                                         0                                          |
+|  シンボル名  |                                         0                                          |
+|  メッセージ テキスト   |                    ホスト上の web サーバー"{0}"ポート{1}が見つかりません。                     |
   
 ## <a name="explanation"></a>説明  
  このエラーは、World Wide Web (WWW) サービスが実行されていないことを示します。  
@@ -40,12 +40,12 @@ ms.locfileid: "22288562"
   
 #### <a name="to-start-the-world-wide-web-service"></a>World Wide Web サービスを開始するには  
   
-1.  をクリックして**開始**、 をクリックして**コントロール パネル**をダブルクリックして**管理ツール**、 をダブルクリック**サービス。**  
+1.  クリックして**開始**、 をクリックして**コントロール パネルの **、 をダブルクリックします**管理ツール**、 をダブルクリックします**サービス。**  
   
-2.  [名前] 列で探します**World Wide Web Publishing**です。 状態があることを確認してください。 **Started**です。  
+2.  [名前] 列で検索**World Wide Web 発行**します。 状態があることを確認**開始**します。  
   
-3.  戻り、**管理ツール**ウィンドウです。 ダブルクリックして**インターネット インフォメーション サービス**です。  
+3.  戻り、**管理ツール**ウィンドウ。 ダブルクリック**インターネット インフォメーション サービス**します。  
   
 4.  フォルダー領域を展開し、Web サイトを探します。  
   
-5.  状態があることを確認してください。 **Started**です。
+5.  状態があることを確認**開始**します。

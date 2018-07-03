@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11018 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 11018 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ef66523f16e8ae3d4abfb13c0f5bd00c8e0dd92
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 318928225c18a8d134d799db039058c862b034e6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277722"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37024520"
 ---
 # <a name="single-sign-on-event-11018"></a>シングル サインオン: イベント 11018
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|11018|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_PS_WARN_GROUP_CHECK_FAILED|  
-|メッセージ テキスト|マッピングがアプリケーション ユーザー アカウントのメンバーであるかどうかを確認できませんでした。 マッピングは無視されます。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> Windows アカウント: %2 %r<br /><br /> アプリケーション名: %3 %r<br /><br /> アプリケーション ユーザー: %4 %r<br /><br /> エラー コード: %5|  
+|                 |                                                                                                                                                                                                                                                                                     |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                                                                                              エンタープライズ シングル サインオン                                                                                                                              |
+| 製品バージョン |                                                                                                             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                              |
+|    イベント ID     |                                                                                                                                        11018                                                                                                                                        |
+|  イベント ソース   |                                                                                                                                       ENTSSO                                                                                                                                        |
+|    コンポーネント    |                                                                                                                                         なし                                                                                                                                         |
+|  シンボル名  |                                                                                                                           SSO_PS_WARN_GROUP_CHECK_FAILED                                                                                                                            |
+|  メッセージ テキスト   | マッピングがアプリケーション ユーザー アカウントのメンバーであるかどうかを確認できませんでした。 マッピングは無視されます。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> Windows アカウント: % 2 %r<br /><br /> アプリケーション名: % 3 %r<br /><br /> アプリケーション ユーザー: % 4 %r<br /><br /> エラー コード: %5 |
   
 ## <a name="explanation"></a>説明  
  Windows 側で特定できないエラーが発生しました。  

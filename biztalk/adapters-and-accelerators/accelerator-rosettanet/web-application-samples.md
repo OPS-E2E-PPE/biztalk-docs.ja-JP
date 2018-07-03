@@ -1,5 +1,5 @@
 ---
-title: アプリケーションのサンプルを web |Microsoft ドキュメント
+title: Web アプリケーションのサンプル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,17 +16,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 64ed05203fa3eeb2c71641a53589d4affae20e6a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7a61b07d34a27d7ceebd5b8d8e0b5171d1659e22
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207018"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37014179"
 ---
 # <a name="web-application-samples"></a>Web アプリケーションのサンプル
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK) には、RNIFSend.aspx サンプルおよび RNIFReceive.aspx サンプルが含まれています。 これらの ASPX ページは、開始側から応答側への RNIF メッセージの送信、または受信側での RNIF メッセージの受信を行います。  
+The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK) には、RNIFSend.aspx サンプルおよび RNIFReceive.aspx サンプルが含まれています。 これらの ASPX ページは、開始側から応答側への RNIF メッセージの送信、または受信側での RNIF メッセージの受信を行います。  
   
- ASPX ページの機能に関する詳細については、次を参照してください。[送信および受信 ASPX ページ](../../adapters-and-accelerators/accelerator-rosettanet/send-and-receive-aspx-pages.md)です。 ここでは、サンプルを構築および実行する手順について説明します。  
+ ASPX ページの機能の詳細については、次を参照してください。[送信および受信 ASPX ページ](../../adapters-and-accelerators/accelerator-rosettanet/send-and-receive-aspx-pages.md)します。 ここでは、サンプルを構築および実行する手順について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

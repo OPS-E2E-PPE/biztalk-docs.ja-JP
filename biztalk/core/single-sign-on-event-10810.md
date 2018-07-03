@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10810 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10810 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1663f133c35f717803e705dd4bbdb9730516c1ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 92259f18dda8633e72eaded2b988281bcbc02520
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276874"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36986123"
 ---
 # <a name="single-sign-on-event-10810"></a>シングル サインオン: イベント 10810
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10810|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|ENTSSO_E_HISSO_INVALID_CREDENTIALS|  
-|メッセージ テキスト|指定された資格情報は無効であるか、SSO データベースの資格情報に一致しません。|  
+|                 |                                                                                  |
+|-----------------|----------------------------------------------------------------------------------|
+|  製品名   |                            エンタープライズ シングル サインオン                             |
+| 製品バージョン |            [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]            |
+|    イベント ID     |                                      10810                                       |
+|  イベント ソース   |                                      ENTSSO                                      |
+|    コンポーネント    |                                       なし                                        |
+|  シンボル名  |                        ENTSSO_E_HISSO_INVALID_CREDENTIALS                        |
+|  メッセージ テキスト   | 指定された資格情報は無効であるか、SSO データベースの資格情報に一致しません。 |
   
 ## <a name="explanation"></a>説明  
  指定された資格情報は無効であるか、SSO データベースの資格情報に一致しません。  

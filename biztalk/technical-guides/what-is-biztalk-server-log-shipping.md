@@ -12,31 +12,31 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3b20589229b1e3868f23c3823d2a26decc56081
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 7735617b0d70aa3c693b1808b07d7670e6137f15
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26010499"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36999339"
 ---
 # <a name="what-is-biztalk-server-log-shipping"></a>BizTalk Server ログ配布とですか。
-BizTalk Server の障害復旧手順が構築されています。 BizTalk ログ配布します。 BizTalk ログ配布は継続的に、障害復旧サイト データベースをトランザクション ログの更新プログラムを適用して、障害時におけるデータベースの復元を簡略化します。  
+BizTalk Server のディザスター リカバリーの手順は、BizTalk を中心に構築された、ログ配布します。 BizTalk ログ配布は継続的に障害回復サイトのデータベースにトランザクション ログの更新プログラムを適用することで、災害発生時のデータベースの復元を簡略化します。  
   
- While BizTalk ログ配布として同じ原則に基づいて[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]ログ配布、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]ログ配布はサポートされていません、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]のデータベースが、Backup BizTalk Server の SQL エージェント ジョブの一部としてバックアップします。  
+ BizTalk ログ配布と同様の原則に基づいて while[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]ログ配布、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]ログ配布はサポートされていません、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースがバックアップ BizTalk Server の SQL エージェント ジョブの一部としてバックアップします。  
   
-## <a name="how-does-biztalk-log-shipping-work"></a>BizTalk ログ配布の作業がどのようにしますか。  
- BizTalk でログ配布関数と同様の方法[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]ログ配布します。 実稼働[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をバックアップするグループが構成されている、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] UNC の場所へのデータベースです。 既定は、Backup BizTalk SQL エージェント ジョブは、1 時間ごとの完全バックアップおよび 15 分ごとのログ バックアップを実行します。 BizTalk Server のバックアップ ジョブでは、バックアップの失敗が検出された場合に、完全バックアップを自動的に開始するためのロジックを実装します。  
+## <a name="how-does-biztalk-log-shipping-work"></a>BizTalk ログ配布作業がどのようにか。  
+ BizTalk のログ配布と同様の方法で関数[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]ログ配布します。 実稼働[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をバックアップするグループが構成されている、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] UNC の場所へのデータベース。 既定では、1 時間ごとの完全バックアップとログのバックアップを 15 分ごと、バックアップの BizTalk SQL エージェント ジョブを実行します。 BizTalk Server のバックアップ ジョブは、バックアップの失敗が検出された場合、完全バックアップを自動的に開始するためのロジックを実装します。  
   
- 場合、災害復旧[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスは BizTalk ログ配布、バックアップ ジョブは、障害復旧サイトで 15 分ごとで復元既定 BizTalk Server SQL エージェントによって作成されたバックアップ ファイルに構成します。 バックアップ ファイルは、SQL の復元のコマンドによって、ネットワーク経由でコピーされます。 次の状況でのみ完全バックアップ ファイルがコピーされます。  
+ ときに、ディザスター リカバリー [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] BizTalk ログ配布、バックアップ ジョブ、復元、ディザスター リカバリー サイトで 15 分ごと既定では BizTalk Server SQL エージェントによって作成されたバックアップ ファイルのインスタンスが構成されます。 バックアップ ファイルは、SQL の復元コマンドで、ネットワーク経由でコピーされます。 次の状況でのみ、完全バックアップのファイルがコピーされます。  
   
--   配布が最初に構成される BizTalk ログ  
+- BizTalk ログ配布が構成最初  
   
--   ときに、新しいデータベースは、BizTalk Server のバックアップ ジョブに追加されます。  
+- ときに新しいデータベースは、BizTalk Server のバックアップ ジョブに追加されます。  
   
--   復元に失敗した場合、災害復旧サイト  
+- ディザスター リカバリー サイトでの復元エラーの発生時  
   
- 各[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスの災害復旧サイトには、実稼働環境でホストされているデータベースを復元する BizTalk ログ配布の一部として個別に構成[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース インスタンスです。 ときに、 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] BizTalk Server のインスタンスが構成されているログ配布と**BTS ログ配布データベースの復元**ジョブが有効になっている、 **BTS ログ配布データベースの復元**ジョブが接続する、運用環境で BizTalk 管理データベース[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループ。  
+  各[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスのディザスター リカバリー サイトには、運用環境でホストされるデータベースを復元する BizTalk ログ配布の一部として個別に構成[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース インスタンス。 ときに、 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] BizTalk Server のインスタンスが構成されているログ配布と**BTS ログ配布データベースの復元**ジョブが有効になっている、 **BTS ログ配布データベースの復元**ジョブへの接続は、運用環境で BizTalk 管理データベース[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループ。  
   
- 前述のよう、移行先サーバーが最初に構成されている場合、移行先サーバーにデータベースの完全バックアップが復元されます。 ほとんどの場合のみのログが復元されたときに、 **BTS ログ配布データベースの復元**ジョブの実行。  
+  上述のよう、移行先サーバーが最初に構成されている場合、データベースの完全バックアップが移行先サーバーに復元されます。 ほとんどのログのみが復元されたときに、 **BTS ログ配布データベースの復元**ジョブが実行されます。  
   
- 災害復旧を表示するときに[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンス[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]Management Studio でのデータベースが「読み込み」状態で表示されます。 バックアップ セットの最後のログが自動的に復元しないためにです。 新しいログが使用可能、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ログ配布は、最後のログに、[次へ] を復元します。 障害復旧イベントの発生し障害復旧サイトをオンラインにする必要があります、STOPATMARK コマンドを使用してデータベースを回復する最後のログを復元し、データベースが不要になった「読み込み中」状態にあるものとして表示されます。
+  ディザスター リカバリーを表示するときに[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンス[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]Management Studio で、データベースが「読み込み中」状態で表示されます。 これは、バックアップ セットの最後のログが自動的に復元しないためにです。 新しいログが使用可能、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ログ配布は、最後のログに、[次へ] を復元します。 ディザスター リカバリーのイベントが発生して、ディザスター リカバリー サイトをオンラインにする必要があります、STOPATMARK コマンドを使用して、データベースを復旧する最後のログを復元し、データベースは「読み込み中」状態にあるものとして表示されなくされます。

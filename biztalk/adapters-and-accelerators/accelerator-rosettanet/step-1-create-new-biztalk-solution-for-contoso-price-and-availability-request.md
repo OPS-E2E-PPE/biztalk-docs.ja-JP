@@ -1,5 +1,5 @@
 ---
-title: '手順 1: Contoso Price and Availability Request の新しい BizTalk ソリューションの作成 |Microsoft ドキュメント'
+title: '手順 1: Contoso Price and Availability Request の新しい BizTalk ソリューションの作成 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,33 +14,33 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee09981b11be8892eefe8d73d526e5712145c9c0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a4d48087411241f6ba26b55d4b20f6dce6a255e5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210138"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36971579"
 ---
-# <a name="step-1-creating-a-new-biztalk-solution-for-the-contoso-price-and-availability-request"></a>手順 1: Contoso Price and Availability Request の新しい BizTalk ソリューションの作成
-この手順で作成、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Contoso Price and Availability Request プロジェクトのソリューションです。 このプロジェクトには、3A2 Price and Availability メッセージの要求および応答のための、スキーマとマップが含まれます。  
+# <a name="step-1-creating-a-new-biztalk-solution-for-the-contoso-price-and-availability-request"></a>手順 1: Contoso Price and Availability Request の新しい BizTalk ソリューションを作成します。
+この手順で Microsoft を作成する[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]Contoso Price and Availability Request プロジェクトのソリューションです。 このプロジェクトには、3A2 Price and Availability メッセージの要求および応答のための、スキーマとマップが含まれます。  
   
 ### <a name="to-create-a-blank-solution"></a>空のソリューションを作成するには  
   
-1.  開始**Microsoft Visual Studio 2012**です。  
+1.  開始**Microsoft Visual Studio 2012**します。  
   
 2.  **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
   
-3.  新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**セクションで、展開**その他のプロジェクトの種類**select、 **Visual Studio ソリューション**、し、[、 **テンプレート**セクションで、**空のソリューション**です。  
+3.  新しいプロジェクト ダイアログ ボックスで、**プロジェクトの種類**セクションで、展開**その他のプロジェクトの種類**を選択します**Visual Studio ソリューション**、し、 **テンプレート**セクションで、**空のソリューション**します。  
   
-4.  **名前**ボックスに、入力**Contoso**ソリューション名、およびクリックとして **[ok]** 新しいソリューションを開きます。  
+4.  **名前**ボックスに「 **Contoso**としてソリューション名 をクリック**ok**を新しいソリューションを開きます。  
   
 ### <a name="to-create-the-price-and-availability-project"></a>Price and Availability プロジェクトを作成するには  
   
-1.  Visual Studio での**ファイル** メニューのをポイント**新規**、順にクリック**プロジェクト**です。  
+1.  Visual Studio での**ファイル**メニューで、**新規**、順にクリックします**プロジェクト**します。  
   
-2.  新しいプロジェクト] ダイアログ ボックスで、**プロジェクトの種類**セクションで、 **BizTalk プロジェクト**、し、[、**テンプレート**セクションで、**空の BizTalkサーバー プロジェクト**です。  
+2.  新しいプロジェクト ダイアログ ボックスで、**プロジェクトの種類**セクションで、 **BizTalk プロジェクト**、し、**テンプレート**セクションで、**空の BizTalkサーバー プロジェクト**します。  
   
-3.  **名前**ボックスに、入力**ContosoPriceAndAvailability**プロジェクト名として。 **ソリューション****ソリューションに追加**です。 をクリックして**OK**新しいプロジェクトを開きます。  
+3.  **名前**ボックスに「 **ContosoPriceAndAvailability**プロジェクト名として。 **ソリューション**、**ソリューションに追加**します。 をクリックして**OK**を新しいプロジェクトを開きます。  
   
 ## <a name="see-also"></a>参照  
- [手順 2: Price and Availability プロジェクトの BizTalk エディターを使用して用の Contoso LOB アプリケーション スキーマの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-contoso-lob-application-schema-for-price-and-availability.md)
+ [手順 2: BizTalk エディターを使用した Price and Availability プロジェクト用の Contoso LOB アプリケーション スキーマの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-contoso-lob-application-schema-for-price-and-availability.md)

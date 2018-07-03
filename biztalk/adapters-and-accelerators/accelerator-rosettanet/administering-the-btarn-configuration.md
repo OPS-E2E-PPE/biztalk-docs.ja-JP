@@ -1,5 +1,5 @@
 ---
-title: BTARN 構成の管理 |Microsoft ドキュメント
+title: BTARN 構成の管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,30 +15,30 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 48df2985716fe4ab1d94ba695dba5f4e108dc42b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d947db632e612a9973b2f247be2fff865f8a5d5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206770"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37011267"
 ---
 # <a name="administering-the-btarn-configuration"></a>BTARN 構成の管理
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理コンソールでは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 構成のあらゆる要素を 1 つのユーザー インターフェイスで管理できます。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 構成には、プロセス構成、ホーム組織、パートナー、および取引先アグリーメントが含まれます。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールで、管理することも、証明書のインスタンスの管理[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]™ イベントを表示し、パフォーマンスの表示、ログと警告します。  
+The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理コンソールでは、すべての側面を管理することができます、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 1 人のユーザー インターフェイスから構成します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 構成には、プロセス構成、ホーム組織、パートナー、および取引先アグリーメントが含まれます。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールで、管理することも、証明書インスタンスの Microsoft 管理[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]™、イベントを表示し、パフォーマンスを表示するログと警告。  
   
- 実行できるすべての操作の概要については、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールを参照してください[BTARN 管理コンソールを使用して](../../adapters-and-accelerators/accelerator-rosettanet/using-the-btarn-management-console.md)です。  
+ 実行できるすべての操作の概要については、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールを参照してください[BTARN 管理コンソールを使用して](../../adapters-and-accelerators/accelerator-rosettanet/using-the-btarn-management-console.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [BTARN 管理コンソールの使用](../../adapters-and-accelerators/accelerator-rosettanet/using-the-btarn-management-console.md)  
   
--   [BTARN 送信を設定し、受信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/setting-btarn-send-and-receive-pipelines.md)  
+-   [BTARN 送信パイプラインと BTARN 受信パイプラインの設定](../../adapters-and-accelerators/accelerator-rosettanet/setting-btarn-send-and-receive-pipelines.md)  
   
--   [BAM 追跡を有効にします。](../../adapters-and-accelerators/accelerator-rosettanet/enabling-bam-tracking.md)  
+-   [BAM の追跡を有効にする](../../adapters-and-accelerators/accelerator-rosettanet/enabling-bam-tracking.md)  
   
--   [作成またはプロセス構成を編集します。](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-process-configuration.md)  
+-   [プロセス構成の作成と編集](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-process-configuration.md)  
   
--   [作成またはホーム組織を編集します。](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)  
+-   [ホーム組織の作成と編集](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)  
   
--   [作成またはパートナーを編集します。](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)  
+-   [パートナーの作成と編集](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)  
   
--   [作成するか、契約の編集](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)
+-   [アグリーメントの作成と編集](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)

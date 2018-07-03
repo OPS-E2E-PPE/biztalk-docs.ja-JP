@@ -1,5 +1,5 @@
 ---
-title: 更新、修復、または BizTalk Accelerator を HL7 のアンインストール |Microsoft ドキュメント
+title: 更新、修復、または for HL7 の BizTalk アクセラレータのアンインストール |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,94 +12,94 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5b4fa1dba322e830114a76a0ca69134edbb1d06
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: a63f015541c93f1fb2000eed064aaa50df0fca86
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "25962176"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36977315"
 ---
-# <a name="update-repair-or-uninstall-biztalk-accelerator-for-hl7"></a>更新、修復、または BizTalk Accelerator を HL7 のアンインストール
+# <a name="update-repair-or-uninstall-biztalk-accelerator-for-hl7"></a>更新、修復、または for HL7 の BizTalk アクセラレータのアンインストール
 
-変更、修復、アンインストール、[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]です。  
+変更、修復、アンインストール、[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]します。  
   
 > [!IMPORTANT]
->  アンインストールすることを確認する[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]アンインストールする前に[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]です。 [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]場合はアンインストールできません[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]がインストールされていません。  
+>  アンインストールすることを確認する[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]アンインストールする前に[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] 場合はアンインストールできません[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]はインストールされません。  
 
 ## <a name="prerequisites"></a>前提条件
-* メンバーであるアカウントでサインイン、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理者グループ。  
+* メンバーであるアカウントを使用してサインイン、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理者グループ。  
 
-* このユーザー アカウントの Administrators グループのメンバーである必要がありますも、 [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] BizTalk Accelerator for HL7 のデータを格納します。  
+* このユーザー アカウントを Administrators グループのメンバーがあります、 [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] BizTalk Accelerator for HL7 のデータを格納します。  
     
 ## <a name="update-an-existing-installation"></a>更新プログラムの既存のインストール
 
 > [!NOTE]
->  インストールを変更すると[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]、エンド ツー エンドのチュートリアルは自動的に実行されません。 
+>  インストールを変更するときに[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]、エンド ツー エンドのチュートリアルは自動的に実行されません。 
 > 
-> このチュートリアルを実行し、変更後のインストールが正しく実行されることを確認してくださいから手動でチュートリアルを実行、 ***\<ドライブ\>*** **\Program Files\Microsoft BizTalk \<バージョン\>HL7\SDK\End エンドツー エンド チュートリアルのアクセラレータ**フォルダーです。
+> チュートリアルを実行し、変更後のインストールが正しく実行されることを確認します実行から手動でチュートリアル、 ***\<ドライブ\>*** **\Program Files\Microsoft BizTalk \< 。バージョン\>HL7\SDK\End ツー エンドのチュートリアルのアクセラレータ**フォルダー。
   
-1. 実行、 [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] **setup.exe**を管理者として 
+1. 実行、 [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] **setup.exe**に管理者として 
   
-2.  [ようこそ] ページで、**次**です。  
+2. [ようこそ] ページで、次のように選択します。**次**します。  
   
-3.  **プログラムのメンテナンス**select、**変更**、し、**次**です。  
+3. **プログラムのメンテナンス**を選択します**変更**、し、**次**します。  
   
-4.  **カスタム セットアップ**を選択し、必要な機能をインストールする、クリア、機能しないしを選択し、**次**です。  
+4. **カスタム セットアップ**をインストールする機能を選択して、チェック ボックスをオフの機能はありませんしを選択し、**次**します。  
   
-5.  つまり、次のように選択します。**次**です。  
+5. 概要では、次のように選択します。**次**します。  
   
-6.  **[インストール]** を選択します。  
+6. **[インストール]** を選択します。  
   
 7. 完了したら、**[完了]** を選択します。  
 
 ## <a name="repair-an-existing-installation"></a>既存のインストールを修復します。
-[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]不足または壊れているファイルやショートカット、レジストリ エントリを修正して、インストールを修復します。  
+[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]ウィザードが見つからないか壊れているファイル、ショートカット、またはレジストリ エントリを修正して、インストールを修復します。  
   
 1. 実行、 [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] **setup.exe**管理者として。  
   
-2.  [ようこそ] ページで、**次**です。  
+2. [ようこそ] ページで、次のように選択します。**次**します。  
   
-3.  **プログラムのメンテナンス****修復**、し、**次**。  
+3. **プログラムのメンテナンス**を選択します**修復**、し、**次**します。  
   
-4.  **サービス アカウントのログ記録**ユーザー アカウントを再入力し、 **OK**です。  
+4. **サービス アカウントのログ記録**、ユーザー アカウントを再入力し、 **OK**します。  
   
-4.  メッセージが表示されたら**アカウント名が与えられてログオン右サービスとして**選択してから、 **OK**を続行します。  
+5. メッセージが表示されたら**アカウント名が許可されているログオン適切なサービスとして**を選択し、 **OK**を続行します。  
   
-5.  修復する準備ができたらを選択**インストール**です。  
+6. 修復する準備が完了したら、選択**インストール**します。  
   
-6. 完了すると、選択**完了**です。 
+7. 完了したら、選択**完了**します。 
 
   
 ## <a name="uninstall-btahl7"></a>BTAHL7 をアンインストールします。  
 
 > [!IMPORTANT]
->  ある場合、受信場所または送信ポートが MLLP のトランスポートの種類を使用して、BTAHL7 セットアップは、BTAHL7 のアンインストール時に MLLP アダプターを削除できません。 アンインストールする前に削除のすべての受信場所または送信ポートの MLLP トランスポートを使用します。 または、別の型に MLLP からトランスポートの種類を変更します。 その後、アンインストール MLLP アダプターが削除されます。  
+>  ある場合、受信場所または送信ポートの MLLP トランスポートの種類を使用して、BTAHL7 セットアップの BTAHL7 のアンインストール時に MLLP アダプターは削除されません。 アンインストールする前に削除のすべての受信場所または送信ポートの MLLP トランスポートを使用しています。 または、別の型 MLLP からトランスポートの種類を変更します。 次に、アンインストール、MLLP アダプターが削除されます。  
       
-1.  **[プログラムと機能]** を開きます。  
+1. **[プログラムと機能]** を開きます。  
   
-2.  選択[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]、し、**アンインストール**です。  
+2. 選択[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]、し、**アンインストール**します。  
   
-4.  選択**はい**確認を求められた場合。 
+3. 選択**はい**ことを確認するように求められる場合。 
   
-5.  完了すると、選択**完了**です。  
+4. 完了したら、選択**完了**します。  
   
-    > [!NOTE]
-    >  BTAHL7 が自動的にアンインストールされない[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アイテムとアセンブリです。  
+   > [!NOTE]
+   >  BTAHL7 が自動的にアンインストールされない[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アイテムとアセンブリです。  
   
 
   
 ## <a name="troubleshooting-installation-issues"></a>インストールに関する問題のトラブルシューティング  
- かどうか、サーバーは、ユーザーがいるかどうかを検証することは、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理者は、BTAHL7 をアンインストールする、次のエラーを返します。 
+ かどうか、サーバーでは、ユーザーがいるかどうかを検証できない、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理者は、BTAHL7 をアンインストールする、次のエラーを返します。 
  
  `Fatal error during uninstallation`  
   
 アンインストールを続行するには、次の操作を行います。  
   
-1.  ローカル管理者としてサーバーにサインインします。  
+1. ローカル管理者としてサーバーにサインインします。  
   
-2.  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] をアンインストールします。  
+2. [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] をアンインストールします。  
   
-3.  [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] をアンインストールします。  
+3. [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] をアンインストールします。  
   
 ## <a name="see-also"></a>参照  
 [Microsoft BizTalk Accelerator for HL7 のインストールまたはアップグレード](../../adapters-and-accelerators/accelerator-hl7/install-or-upgrade-microsoft-biztalk-accelerator-for-hl7.md)

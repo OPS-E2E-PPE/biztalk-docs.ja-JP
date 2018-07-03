@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10605 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10605 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e7d0fb4befaacd8734f866f2c11c7446d4e5854
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c578462759d2eeb69767d21191e028ef9e8ce1e5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270314"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36972515"
 ---
 # <a name="single-sign-on-event-10605"></a>シングル サインオン: イベント 10605
 ## <a name="details"></a>詳細  
   
-|||  
-|-|-|  
-|製品名|エンタープライズ シングル サインオン|  
-|製品バージョン|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|イベント ID|10605|  
-|イベント ソース|ENTSSO|  
-|コンポーネント|なし|  
-|シンボル名|SSO_ERROR_DTC_IMPORT|  
-|メッセージ テキスト|DTC トランザクションをインポートできませんでした。 MSDTC がリモート操作用に正しく構成されていることを確認してください。 Details.%r のマニュアルを参照してください。<br /><br /> エラー コード: %1|  
+|                 |                                                                                                                                                                       |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  製品名   |                                                                       エンタープライズ シングル サインオン                                                                       |
+| 製品バージョン |                                                      [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                       |
+|    イベント ID     |                                                                                 10605                                                                                 |
+|  イベント ソース   |                                                                                ENTSSO                                                                                 |
+|    コンポーネント    |                                                                                  なし                                                                                  |
+|  シンボル名  |                                                                         SSO_ERROR_DTC_IMPORT                                                                          |
+|  メッセージ テキスト   | DTC トランザクションをインポートできませんでした。 MSDTC がリモート操作用に正しく構成されていることを確認してください。 Details.%r のドキュメントを参照してください。<br /><br /> エラー コード: %1 |
   
 ## <a name="explanation"></a>説明  
  Microsoft 分散トランザクション コーディネーター (MSDTC) に問題があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- MSDTC の問題に関するヘルプを参照するには、次を参照してください。 [MSDTC の問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)です。
+ MSDTC の問題に関するヘルプは、次を参照してください。 [MSDTC を使用した問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)します。

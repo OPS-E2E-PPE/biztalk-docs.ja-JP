@@ -1,5 +1,5 @@
 ---
-title: アダプターのリスト |Microsoft ドキュメント
+title: アダプターの一覧 |Microsoft Docs
 description: ''
 ms.custom: ''
 ms.date: 11/16/2017
@@ -13,19 +13,19 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 700d14d45d33c54aac60b837dc33b553c447f686
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.openlocfilehash: cbf2cd833a607efb98ee634774885ffaa1692f4a
+ms.sourcegitcommit: e7609c319b64ec20bf215d17aa5ac4f9dcae52ec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2017
-ms.locfileid: "25497787"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945557"
 ---
 # <a name="available-adapters-in-biztalk-server"></a>BizTalk Server で使用可能なアダプター
 
 ## <a name="overview"></a>概要
 このセクションでは、アダプターの概要について説明します。 ここでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] におけるアダプタの使用方法と、各アダプタのアダプタ ハンドラ、送信ポート、および受信場所の構成方法について説明します。 また、ネイティブ アダプターについて理解を深め、BizTalk ソリューションで使用するために役立つバッチ処理のサポート情報が記載されています。  
   
- アダプターのプロパティ ページのキーボード ショートカットの使用方法の詳細については、次を参照してください。[アダプター プロパティ ページのキーボード ショートカット](../core/adapter-property-page-keyboard-shortcuts.md)です。  
+ アダプターのプロパティ ページのキーボード ショートカットの使用方法の詳細については、次を参照してください。[アダプターのプロパティ ページのキーボード ショートカット](../core/adapter-property-page-keyboard-shortcuts.md)します。  
   
 ## <a name="adapters-list"></a>アダプターの一覧
   
@@ -35,7 +35,7 @@ ms.locfileid: "25497787"
   
 -   [アダプターのセキュリティに関する考慮事項](../core/security-considerations-for-adapters.md)  
 
--   [イベント ハブのアダプター](../core/event-hubs-adapter.md)
+-   [Event Hubs のアダプター](../core/event-hubs-adapter.md)
   
 -   [Sb-messaging アダプター](../core/sb-messaging-adapter.md)  
   
@@ -52,6 +52,8 @@ ms.locfileid: "25497787"
 -   [MQSeries アダプター](../core/mqseries-adapter.md)  
   
 -   [MSMQ アダプター](../core/msmq-adapter.md)  
+
+-   [Office 365 アダプター](office365-adapters.md)
   
 -   [POP3 アダプター](../core/pop3-adapter.md)  
   

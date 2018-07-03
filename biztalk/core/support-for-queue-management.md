@@ -1,5 +1,5 @@
 ---
-title: キューの管理のサポート |Microsoft ドキュメント
+title: キュー管理のサポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: faeb3f141e114cf1f86157084f50d0a0d490833a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b0d09e75dbf3ff92b3b298d31ff2dfcb80b5217d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278698"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37017078"
 ---
 # <a name="support-for-queue-management"></a>キュー管理のサポート
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] MQSeries アダプタを使用して、MQSeries キュー マネージャ上のキューをリモートから作成および削除できます。 この機能がサポートされるのは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で、MQSeries キュー マネージャと直接通信するリモートの MQSAgent COM+ オブジェクトが使用されるためです。 通常この MQSAgent は、リモートの MQSeries Server キューにメッセージを読み書きする実行時に使用されます。 このリモート サービスには、複数の BizTalk サーバーをクライアントとすることができます。 MQSAgent ではキューの作成および削除機能も提供され、これはオーケストレーションまたはアダプタ内から直接呼び出すことができます。 このことによって、高度に動的なシナリオを実現できます。このシナリオでは、オーケストレーションまたはアダプタは一時キューを作成でき、そのキューでメッセージを送信し、別のキューで返信を受け取り、最後に一時キューを削除できます。  
@@ -90,98 +90,98 @@ HRESULT DeleteQueue (
   
 ##### <a name="create-a-c-console-application-to-manage-mqseries-server-queues"></a>MQSeries Server キューを管理する C# コンソール アプリケーションの作成  
   
-1.  新しい Visual c# コンソール アプリケーションを作成で[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]名前を持つ**MQSeriesQueues**です。  
+1. 新しい Visual c# コンソール アプリケーションを作成で[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]名前**MQSeriesQueues**します。  
   
-2.  以下のコードで生成される Program.cs ファイルで既存のコードを置き換えます。  
+2. 以下のコードで生成される Program.cs ファイルで既存のコードを置き換えます。  
   
-    ```  
-    using System;  
-    using System.Collections.Generic;  
-    using System.Text;  
-    using MQSAgentLib;  
+   ```  
+   using System;  
+   using System.Collections.Generic;  
+   using System.Text;  
+   using MQSAgentLib;  
   
-    namespace MQSeriesQueues  
-    {  
-        class ManageQueues  
-        {  
-            public static void Main(string[] args)  
-            {  
-                // The first argument should be "c" (without quotes)  
-                // to create a queue, anything else to delete a queue.  
-                // The 2nd and 3rd arguments should be the name of   
-                // the MQSeries Queue Manager and the name of   
-                // the queue to be created or deleted for example  
-                // the following usage will create the local   
-                // queue testq for the Queue Manager QM_Test  
-                // MQSeriesQueues c QM_Test testq  
-                createordeleteQs(args[0], args[1], args[2]);  
+   namespace MQSeriesQueues  
+   {  
+       class ManageQueues  
+       {  
+           public static void Main(string[] args)  
+           {  
+               // The first argument should be "c" (without quotes)  
+               // to create a queue, anything else to delete a queue.  
+               // The 2nd and 3rd arguments should be the name of   
+               // the MQSeries Queue Manager and the name of   
+               // the queue to be created or deleted for example  
+               // the following usage will create the local   
+               // queue testq for the Queue Manager QM_Test  
+               // MQSeriesQueues c QM_Test testq  
+               createordeleteQs(args[0], args[1], args[2]);  
+           }  
+  
+           static void createordeleteQs(string Qswitch, string QMgr, string QName)  
+           {   
+           if ((Qswitch =="c" & (QMgr != null & QName != null)))  
+               {  
+                   CreateQueue(QMgr, QName);  
+               }  
+               else if(QMgr != null & QName != null)  
+               {  
+                   DeleteQueue(QMgr, QName);  
+               }  
             }  
   
-            static void createordeleteQs(string Qswitch, string QMgr, string QName)  
-            {   
-            if ((Qswitch =="c" & (QMgr != null & QName != null)))  
-                {  
-                    CreateQueue(QMgr, QName);  
-                }  
-                else if(QMgr != null & QName != null)  
-                {  
-                    DeleteQueue(QMgr, QName);  
-                }  
-             }  
+           static void CreateQueue(string Qmgr, string Qname)  
+           {  
+               MQSAdmin admin = new MQSAdmin();    
   
-            static void CreateQueue(string Qmgr, string Qname)  
-            {  
-                MQSAdmin admin = new MQSAdmin();    
+               ResultCode resultCode = admin.CreateQueue(Qmgr, Qname, 0, "", "", "", 0);  
   
-                ResultCode resultCode = admin.CreateQueue(Qmgr, Qname, 0, "", "", "", 0);  
+               if ((resultCode & ResultCode.QueueCreated) == ResultCode.QueueCreated)  
+               {  
+                   Console.WriteLine("Queue Created.");  
+               }  
+               else if ((resultCode & ResultCode.QueueAlreadyExists) == ResultCode.QueueAlreadyExists)  
+               {  
+                   Console.WriteLine("Queue Already Exists.");  
+               }  
+           }  
   
-                if ((resultCode & ResultCode.QueueCreated) == ResultCode.QueueCreated)  
-                {  
-                    Console.WriteLine("Queue Created.");  
-                }  
-                else if ((resultCode & ResultCode.QueueAlreadyExists) == ResultCode.QueueAlreadyExists)  
-                {  
-                    Console.WriteLine("Queue Already Exists.");  
-                }  
-            }  
+           static void DeleteQueue(string Qmgr, string Qname)  
+           {  
+               MQSAdmin admin = new MQSAdmin();  
   
-            static void DeleteQueue(string Qmgr, string Qname)  
-            {  
-                MQSAdmin admin = new MQSAdmin();  
+               ResultCode resultCode = admin.DeleteQueue(Qmgr, Qname);  
   
-                ResultCode resultCode = admin.DeleteQueue(Qmgr, Qname);  
+               if ((resultCode & ResultCode.QueueDeleted) == ResultCode.QueueDeleted)  
+               {  
+                   Console.WriteLine("Queue successfully deleted.");  
+               }  
+               if ((resultCode & ResultCode.QueueDoesNotExist) == ResultCode.QueueDoesNotExist)  
+               {  
+                   Console.WriteLine("Queue did not exist anyway!");  
+               }  
+           }  
   
-                if ((resultCode & ResultCode.QueueDeleted) == ResultCode.QueueDeleted)  
-                {  
-                    Console.WriteLine("Queue successfully deleted.");  
-                }  
-                if ((resultCode & ResultCode.QueueDoesNotExist) == ResultCode.QueueDoesNotExist)  
-                {  
-                    Console.WriteLine("Queue did not exist anyway!");  
-                }  
-            }  
+       }  
+   }  
+   ```  
   
-        }  
-    }  
-    ```  
+3. このプロジェクトへの参照を追加、 **MQSAgent 1.0 Type Library**します。 **MQSAgent 1.0 Type Library**で使用できますが、 **COM**のタブ、**参照の追加** ダイアログ ボックス。  
   
-3.  このプロジェクトへの参照を追加、 **MQSAgent 1.0 Type Library**です。 **MQSAgent 1.0 Type Library**で使用できるは、 **COM**のタブ、**参照の追加** ダイアログ ボックス。  
+   > [!NOTE]
+   >  このコンソール アプリケーションを実行するコンピュータには、MQSAgent COM+ コンポーネントがインストールされている必要があります。 MQSAgent COM + コンポーネントのインストールの詳細については、次を参照してください。 [MQSAgent COM + 構成ウィザードを使用して](../core/using-the-mqsagent-com-configuration-wizard.md)します。  
   
-    > [!NOTE]
-    >  このコンソール アプリケーションを実行するコンピュータには、MQSAgent COM+ コンポーネントがインストールされている必要があります。 MQSAgent COM + コンポーネントのインストールの詳細については、次を参照してください。 [MQSAgent COM + 構成ウィザードを使用して](../core/using-the-mqsagent-com-configuration-wizard.md)です。  
+4. コンソール アプリケーションをビルドします。  
   
-4.  コンソール アプリケーションをビルドします。  
+5. コンパイルしたコンソール アプリケーションと同じディレクトリで、コマンド プロンプトを開きます。  
   
-5.  コンパイルしたコンソール アプリケーションと同じディレクトリで、コマンド プロンプトを開きます。  
+6. コンパイルしたコンソール アプリケーションの名前を、適切な引数と共に入力し、Enter キーを押します。 たとえば、キューを削除する**testq**キュー マネージャーの**QM_Test**をコマンド プロンプトで、次のテキストを入力し、ENTER キーを押します。  
   
-6.  コンパイルしたコンソール アプリケーションの名前を、適切な引数と共に入力し、Enter キーを押します。 例については、キューを削除する**testq**キュー マネージャーの**QM_Test**はコマンド プロンプトで次のテキストを入力して ENTER キーを押します。  
+   ```  
+   MQSeriesQueues d QM_Test testq  
+   ```  
   
-    ```  
-    MQSeriesQueues d QM_Test testq  
-    ```  
+7. キューを作成する**testq**キュー マネージャーの**QM_Test**をコマンド プロンプトで、次のテキストを入力し、ENTER キーを押します。  
   
-7.  キューを作成する**testq**キュー マネージャーの**QM_Test**はコマンド プロンプトで次のテキストを入力して ENTER キーを押します。  
-  
-    ```  
-    MQSeriesQueues c QM_Test testq  
-    ```
+   ```  
+   MQSeriesQueues c QM_Test testq  
+   ```

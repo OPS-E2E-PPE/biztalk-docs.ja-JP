@@ -1,5 +1,5 @@
 ---
-title: HL7 2.X アセンブラーでスキーマの決定 |Microsoft ドキュメント
+title: HL7 2.X アセンブラーのスキーマの決定 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,33 +16,33 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50a430750846ae2567f063f9aa77221bad9c97e0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 962f9576032ec8b42542111502c2b6d6698f98d1
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206098"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983651"
 ---
-# <a name="schema-determination-in-the-hl7-2x-assembler"></a>HL7 2.X アセンブラーでスキーマの決定
-メッセージが、このシリアライザーで、シリアライザーに送信されるときに[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) MSH5 を使用して (送信先パーティ)、メッセージ上で実行される操作を決定するメッセージのです。 このような操作は次のとおりです。  
+# <a name="schema-determination-in-the-hl7-2x-assembler"></a>HL7 2.X アセンブラーのスキーマ決定
+シリアライザーにメッセージをフローするときでは、Microsoft BizTalk Accelerator for HL7 のシリアライザー ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) MSH5 を使用して (送信先パーティ) のメッセージに対して実行する操作を決定するメッセージ。 このような操作は次のとおりです。  
   
--   本文のセグメントの XML 検証を実行するかどうか  
+- 本文のセグメントの XML の検証を実行するかどうか  
   
--   本文のセグメントのカスタム データ型を検証するかどうか  
+- 本文のセグメントのカスタム データ型を検証するかどうか  
   
--   末尾の本体に区切り記号を許可するかどうか  
+- 末尾の本体に区切り記号を許可するかどうか  
   
--   シリアライザーを使用するスキーマ ターゲットの名前空間  
+- シリアライザーを使用するスキーマ ターゲットの名前空間  
   
--   かどうか、シリアライザーは、ヘッダーにマップする必要があります。  
+- シリアライザーがヘッダーにマップする必要があるかどうか  
   
- スキーマを決定するには、シリアライザーは次のとおり  
+  スキーマを決定するには、シリアライザーは、次を行います。  
   
--   ターゲットの名前空間の設定 (**TargetNS**) 送信先パーティに対して構成されている名前空間と同じ値を  
+- ターゲットの名前空間の設定 (**TargetNS**) 送信先のパーティ用に構成された名前空間と同じ値を  
   
--   抽出**Rootnode**から、 **BTS です。MessageType**昇格されたプロパティ  
+- 抽出**Rootnode**から、 **BTS します。MessageType**プロパティの昇格  
   
- **Doctype**なります**TargetNS「#」+ Rootnode**です。  
+  **Doctype**なります**TargetNS「#」+ Rootnode**します。  
   
 ## <a name="see-also"></a>参照  
  [メッセージの処理](../../adapters-and-accelerators/accelerator-hl7/message-processing.md)   

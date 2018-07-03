@@ -1,5 +1,5 @@
 ---
-title: テスト環境でメッセージ ボックス データベースからデータを手動で削除する方法 |Microsoft ドキュメント
+title: テスト環境でメッセージ ボックス データベースからデータを手動で削除する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4a6d5f8b232e31a140ee4786b87d2bb270505f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5282ad864e5c2d4f47b541b59d608087f090f935
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254058"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979735"
 ---
 # <a name="how-to-manually-purge-data-from-the-messagebox-database-in-a-test-environment"></a>テスト環境でメッセージ ボックス データベースから手動でデータを削除する方法
 開発環境またはテスト環境で [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を実行する場合、メッセージ ボックス データベースに格納されているデータは、通常、ビジネスで重要な "実際の" データではないので、削除することができます。 このようなシナリオでは、メッセージ ボックス データベースからデータを削除するための簡単な方法が必要になる場合があります。 bts_CleanupMsgbox ストアド プロシージャを使用して、メッセージ ボックス データベースから手動でデータを削除するには、このトピックの手順に従ってください。  
@@ -35,30 +35,30 @@ ms.locfileid: "22254058"
   
 ### <a name="to-create-and-execute-the-btscleanupmsgbox-stored-procedure-using-sql-server-2008"></a>SQL Server 2008 を使用して bts_CleanupMsgbox ストアド プロシージャを作成および実行するには  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして**Microsoft SQL Server 2008 R2**、順にクリック**SQL Server Management Studio**です。  
+1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして**Microsoft SQL Server 2008 R2**、順にクリックします**SQL Server Management Studio**します。  
   
-2.  **SQL Server への接続**ダイアログ ボックスでは、SQL server および適切な認証方法を選択し、をクリックして**接続**です。  
+2. **SQL サーバーへの接続**ダイアログ ボックスで、SQL server と、適切な認証方式を選択し、順にクリックします**Connect**します。  
   
-3.  **利用可能なデータベース**ドロップダウン リストで、BizTalk メッセージ ボックス データベースを選択 (**BizTalkMsgBoxDB**既定)。  
+3. **利用可能なデータベース**ドロップダウン リストで、BizTalk メッセージ ボックス データベースを選択 (**BizTalkMsgBoxDB**既定)。  
   
-4.  クリックして、**新しいクエリ**ツールバーのアイコン。  
+4. をクリックして、**新しいクエリ**ツールバーのアイコン。  
   
-5.  開く、 **msgbox_cleanup_logic.sql** SQL Server Management Studio からのファイルです。 msgbox_cleanup_logic.sql ファイルは、BizTalk Server コンピューターの [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Schema\ ディレクトリにあります。  
+5. 開く、 **msgbox_cleanup_logic.sql** SQL Server Management Studio からのファイル。 msgbox_cleanup_logic.sql ファイルは、BizTalk Server コンピューターの [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Schema\ ディレクトリにあります。  
   
-6.  クリックして、**クエリの実行**bts_CleanupMsgbox を作成するスクリプトを実行するツールバーのアイコンをストアド プロシージャです。 これで、bts_CleanupMsgbox ストアド プロシージャが、ストアド プロシージャの一覧に dbo.bts_CleanupMsgbox として表示されるようになります。  
+6. をクリックして、**クエリの実行**bts_CleanupMsgbox を作成するスクリプトを実行するツールバーのアイコンをストアド プロシージャ。 これで、bts_CleanupMsgbox ストアド プロシージャが、ストアド プロシージャの一覧に dbo.bts_CleanupMsgbox として表示されるようになります。  
   
-7.  クリックして、**新しいクエリ**ツールバーのアイコン。  
+7. をクリックして、**新しいクエリ**ツールバーのアイコン。  
   
-8.  次のコマンドを新しいクエリ ウィンドウに貼り付けます。  
+8. 次のコマンドを新しいクエリ ウィンドウに貼り付けます。  
   
-    ```  
-    exec bts_CleanupMsgbox  
-    ```  
+   ```  
+   exec bts_CleanupMsgbox  
+   ```  
   
-9. クリックして、**クエリの実行**bts_CleanupMsgbox を実行するツールバーのアイコンをストアド プロシージャです。  
+9. をクリックして、**クエリの実行**bts_CleanupMsgbox を実行するには、ツールバーのアイコンには、プロシージャが格納されています。  
   
-    > [!IMPORTANT]
-    >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を実行している運用サーバーでは、bts_CleanupMsgbox ストアド プロシージャを実行しないでください。 bts_CleanupMsgbox ストアド プロシージャは、テスト環境でのみ実行してください。 運用環境での bts_CleanupMsgbox ストアド プロシージャの実行はサポートされていません。  
+   > [!IMPORTANT]
+   >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を実行している運用サーバーでは、bts_CleanupMsgbox ストアド プロシージャを実行しないでください。 bts_CleanupMsgbox ストアド プロシージャは、テスト環境でのみ実行してください。 運用環境での bts_CleanupMsgbox ストアド プロシージャの実行はサポートされていません。  
   
 10. 必要に応じて、BizTalk サービスを再開します。  
   
@@ -69,7 +69,7 @@ ms.locfileid: "22254058"
   
 2.  新しいメッセージ ボックス データベースを作成した場合、bts_CleanupMsgbox ストアド プロシージャは空であり、このトピックで説明した手順に従って、bts_CleanupMsgbox ストアド プロシージャを再作成する必要があります。  
   
-3.  Bts_CleanupMsgbox ストアド プロシージャの使用は**はサポートされていません**実稼働システムでします。 このストアド プロシージャは、メッセージ ボックス データベース内のすべてのデータを削除します。  
+3.  Bts_CleanupMsgbox ストアド プロシージャの使用は**はサポートされていません**実稼働システムにします。 このストアド プロシージャは、メッセージ ボックス データベース内のすべてのデータを削除します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk 追跡データベースからデータを削除する方法](../core/how-to-purge-data-from-the-biztalk-tracking-database.md)

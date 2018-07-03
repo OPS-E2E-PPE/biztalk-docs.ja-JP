@@ -2,14 +2,14 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-peoplesoft-enterprise/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: acc8560096423eb69b7cad8d9e6264707ae9a636
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 9d12874ef6042580183f407afc811a9d7f6e0fc9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013273"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37009867"
 ---
-# <a name="deployment-limitations"></a>展開の制限事項
+# <a name="deployment-limitations"></a>デプロイメントの制限事項
 
 ## <a name="overview"></a>概要
 トランスポート アダプターのパスワードは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によってエクスポートされるバインド ファイルにアスタリスク (******) で保存され、同じ形式で管理コンポーネントに渡されます。  
@@ -20,23 +20,23 @@ ms.locfileid: "24013273"
 ## <a name="password-limitation-workaround"></a>パスワードの制限への対処方法  
  このパスワードの制限に対処するには、次のいずれかの方法を使用します。  
   
--   アスタリスクをプレーンテキストに置き換えて、インポート前にバインド ファイルを編集します。  
+- アスタリスクをプレーンテキストに置き換えて、インポート前にバインド ファイルを編集します。  
   
-    > [!CAUTION]
-    >  この操作は、セキュリティ上の理由により推奨されていません。  
+  > [!CAUTION]
+  >  この操作は、セキュリティ上の理由により推奨されていません。  
   
--   アスタリスクを無効な値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。 使用して、正しいパスワードを入力してください、**トランスポートのプロパティ**バインド ファイルをインポートした後は、BizTalk Server 管理コンソール内のページです。  
+- アスタリスクを無効な値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。 使用して、正しいパスワードを入力、**トランスポートのプロパティ**バインド ファイルをインポートした後は、BizTalk Server 管理コンソール内のページ。  
   
-    > [!NOTE]
-    >  この対処方法を使用できるのは、対象のコンピューターに Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] がインストールされているか、カスタム ツールを開発する場合のみです。  
+  > [!NOTE]
+  >  この対処方法を使用できるのは、対象のコンピューターに Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] がインストールされているか、カスタム ツールを開発する場合のみです。  
   
- -または-  
+  - または -  
   
--   パスワードではなく、エンタープライズ シングル サインオン (SSO) を使用します。  
+- パスワードではなく、エンタープライズ シングル サインオン (SSO) を使用します。  
   
-     SSO オプションを使用するには、バインド ファイルをインポートする必要があります。  
+   SSO オプションを使用するには、バインド ファイルをインポートする必要があります。  
   
- 論理システムと送信を確認し、サービスを受信します。  
+  論理システムと送信を確認し、サービスを受信します。  
   
 ## <a name="see-also"></a>参照  
 [バインドのインポートと制限事項](../core/deploying-biztalk-adapter-for-peoplesoft-enterprise.md)

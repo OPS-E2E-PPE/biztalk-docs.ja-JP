@@ -1,5 +1,5 @@
 ---
-title: アプリケーション キャッシュをクリアする方法 |Microsoft ドキュメント
+title: アプリケーション キャッシュをクリアする方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,36 +16,36 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 184569a3eed693a7b699b2ad14cfb8461cc496e8
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 106435fafcd9319fcee1df9bdf1b64396fa2006f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "25968640"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973171"
 ---
 # <a name="how-to-clear-the-application-cache"></a>アプリケーション キャッシュをクリアする方法
 MMC スナップインまたはコマンド ラインを使用して、すべてのシングル サインオン サーバーの指定したアプリケーションの、資格情報キャッシュの内容 (関連アプリケーションに関連付けられたすべての情報) を削除できます。  
   
 ### <a name="to-clear-the-cache-using-the-mmc-snap-in"></a>MMC スナップインを使用してキャッシュをクリアするには  
   
-1.  **開始**  メニューのをクリックして **すべてのプログラム**, 、 をクリックして **Microsoft エンタープライズ シングル サインオン**, 、 をクリックし、 **SSO 管理**します。  
+1.  **開始** メニューのをクリックして**すべてのプログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、 をクリックし、 **SSO 管理**。  
   
-2.  ENTSSO MMC スナップインのスコープ ペインで、展開、 **エンタープライズ シングル サインオン** ノードです。  
+2.  ENTSSO MMC スナップインの [スコープ] ウィンドウで、**エンタープライズ シングル サインオン**ノード。  
   
-3.  クリックして **関連アプリケーション**します。  
+3.  クリックして**関連アプリケーション**します。  
   
-4.  結果ウィンドウで 関連アプリケーションを右クリックし、をクリックして **クリア**します。  
+4.  結果ウィンドウで、関連アプリケーションを右クリックし、をクリックして**クリア**します。  
   
 ### <a name="to-clear-the-cache-using-the-command-line"></a>コマンド ラインを使用してキャッシュをクリアするには  
   
-1.  **開始**  メニューのをクリックして **実行**, 、し、入力 **cmd**します。  
+1. **開始** メニューのをクリックして**実行**、し、入力**cmd**します。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*\>: \program files \common files \enterprise シングル サインオンします。  
+2. コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは\<*ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。  
   
-3.  型 **ssomanage – purgecache *\<アプリケーション名\>* * *、どこで\<* アプリケーション名*\>関連アプリケーションの名前を指定します。キャッシュを消去します。  
+3. 型<strong>ssomanage – purgecache *\<アプリケーション名\></strong><em>ここで、 \<</em>アプリケーション名*\>名前を指定します関連アプリケーションのキャッシュをクリアすることが。  
   
-    > [!NOTE]
-    >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
+   > [!NOTE]
+   >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
 ## <a name="see-also"></a>参照  
  [SSO 関連アプリケーション](../core/sso-affiliate-applications.md)   
