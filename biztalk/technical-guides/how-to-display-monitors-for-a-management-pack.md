@@ -1,5 +1,5 @@
 ---
-title: 管理パックのモニタを表示する方法 |Microsoft ドキュメント
+title: 管理パックのモニタを表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b3954052159633894e59b4251ee20b1ea0844a6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d561c7b49c47d59f7affccaaee582e26db500c09
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298010"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010275"
 ---
-# <a name="how-to-display-monitors-for-a-management-pack"></a><span data-ttu-id="9b5bf-102">管理パックのモニタを表示する方法</span><span class="sxs-lookup"><span data-stu-id="9b5bf-102">How to Display Monitors for a Management Pack</span></span>
-<span data-ttu-id="9b5bf-103">管理パックのモニタおよびコマンド シェルを使用して上書きの出力の一覧を表示するには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="9b5bf-103">To display a list of outputs for a management pack's monitors and overrides using the Command Shell, use the following procedure.</span></span>  
+# <a name="how-to-display-monitors-for-a-management-pack"></a><span data-ttu-id="e769e-102">管理パックのモニタを表示する方法</span><span class="sxs-lookup"><span data-stu-id="e769e-102">How to Display Monitors for a Management Pack</span></span>
+<span data-ttu-id="e769e-103">管理パックのモニタおよび上書きコマンド シェルを使用して出力の一覧を表示するには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="e769e-103">To display a list of outputs for a management pack's monitors and overrides using the Command Shell, use the following procedure.</span></span>  
   
-### <a name="to-display-monitors-for-a-management-pack"></a><span data-ttu-id="9b5bf-104">管理パックのモニタを表示するには</span><span class="sxs-lookup"><span data-stu-id="9b5bf-104">To display monitors for a management pack</span></span>  
+### <a name="to-display-monitors-for-a-management-pack"></a><span data-ttu-id="e769e-104">管理パックのモニタを表示するには</span><span class="sxs-lookup"><span data-stu-id="e769e-104">To display monitors for a management pack</span></span>  
   
-1.  <span data-ttu-id="9b5bf-105">管理サーバーで、をクリックして**プログラム**、クリックして**System Center です。**</span><span class="sxs-lookup"><span data-stu-id="9b5bf-105">In your management server, click **Programs**, and then click **System Center.**</span></span>  
+1. <span data-ttu-id="e769e-105">管理サーバーで次のようにクリックします。**プログラム**、 をクリックし、 **System Center。**</span><span class="sxs-lookup"><span data-stu-id="e769e-105">In your management server, click **Programs**, and then click **System Center.**</span></span>  
   
-2.  <span data-ttu-id="9b5bf-106">をクリックして**コマンド シェル**です。</span><span class="sxs-lookup"><span data-stu-id="9b5bf-106">Click **Command Shell**.</span></span>  
+2. <span data-ttu-id="e769e-106">クリックして**コマンド シェル**します。</span><span class="sxs-lookup"><span data-stu-id="e769e-106">Click **Command Shell**.</span></span>  
   
-3.  <span data-ttu-id="9b5bf-107">コマンド シェルでは、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="9b5bf-107">In the Command Shell, type the following command:</span></span>   
-    `get-scommanagementpack –DisplayName “DisplayName” | get-scommonitor | export.csv filename`  
+3. <span data-ttu-id="e769e-107">コマンド シェルでは、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="e769e-107">In the Command Shell, type the following command:</span></span>   
+   `get-scommanagementpack –DisplayName “DisplayName” | get-scommonitor | export.csv filename`  
   
-4.  <span data-ttu-id="9b5bf-108">.Csv ファイルが作成されます。</span><span class="sxs-lookup"><span data-stu-id="9b5bf-108">A .csv file is created.</span></span> <span data-ttu-id="9b5bf-109">この .csv ファイルは、Microsoft Office Excel で開くことができます。</span><span class="sxs-lookup"><span data-stu-id="9b5bf-109">The .csv file can be opened in Microsoft Office Excel.</span></span>  
+4. <span data-ttu-id="e769e-108">.Csv ファイルが作成されます。</span><span class="sxs-lookup"><span data-stu-id="e769e-108">A .csv file is created.</span></span> <span data-ttu-id="e769e-109">.Csv ファイルは、Microsoft Office Excel で開くことができます。</span><span class="sxs-lookup"><span data-stu-id="e769e-109">The .csv file can be opened in Microsoft Office Excel.</span></span>  
   
-    > [!NOTE]  
-    >  <span data-ttu-id="9b5bf-110">Excel では、.csv ファイルをテキスト ファイルに指定する必要する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9b5bf-110">In Excel, you may be required to specify that the .csv file is a text file.</span></span>  
+   > [!NOTE]  
+   >  <span data-ttu-id="e769e-110">Excel では、.csv ファイルをテキスト ファイルに指定する必要する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e769e-110">In Excel, you may be required to specify that the .csv file is a text file.</span></span>  
   
- <span data-ttu-id="9b5bf-111">たとえば、次のコマンドは、コア管理パックのいずれかに関連付けられているモニターのデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="9b5bf-111">For example, the following command retrieves data for the monitors associated with one of the core management packs:</span></span>   
-`get-scommanagementpack -DisplayName "BizTalk Server Monitoring" | Get-ScomMonitor | export-csv "c:\monitors.csv"`
+   <span data-ttu-id="e769e-111">たとえば、次のコマンドは、コア管理パックのいずれかに関連付けられているモニターのデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="e769e-111">For example, the following command retrieves data for the monitors associated with one of the core management packs:</span></span>   
+   `get-scommanagementpack -DisplayName "BizTalk Server Monitoring" | Get-ScomMonitor | export-csv "c:\monitors.csv"`

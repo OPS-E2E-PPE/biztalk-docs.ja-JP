@@ -1,5 +1,5 @@
 ---
-title: WCF LOB Adapter SDK を使用してバインド プロパティとしてアダプターの設定を公開 |Microsoft ドキュメント
+title: WCF LOB Adapter SDK を使用してバインドのプロパティとしてアダプターの設定を公開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,42 +12,42 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c72ba43378829c71bfb3379bb70ea274de652c9b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a51833c9f1a27185654bf8f0ddaca0fdd8ac0b57
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224186"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002339"
 ---
-# <a name="expose-adapter-settings-as-a-binding-property-using-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="86659-102">WCF LOB Adapter SDK を使用してバインド プロパティとしてアダプターの設定を公開します。</span><span class="sxs-lookup"><span data-stu-id="86659-102">Expose adapter settings as a binding property using the WCF LOB Adapter SDK</span></span>
-<span data-ttu-id="86659-103">[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]接続プール、メタデータのキャッシュ、およびその他のアダプターの動作を構成するためのさまざまなクラスで定義されたプロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="86659-103">The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] uses the properties defined in different classes for configuring the connection pool, metadata cache, and other adapter behaviors.</span></span> <span data-ttu-id="86659-104">このトピックは、アダプターのコンシューマーが構成ファイルで設定できるように、バインディングのプロパティとしてこれらのプロパティを表面化する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="86659-104">This topic describes how you can surface these properties as binding properties, so that the adapter consumer can set them through a configuration file.</span></span>  
+# <a name="expose-adapter-settings-as-a-binding-property-using-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="8b929-102">WCF LOB Adapter SDK を使用してバインドのプロパティとしてアダプターの設定を公開します。</span><span class="sxs-lookup"><span data-stu-id="8b929-102">Expose adapter settings as a binding property using the WCF LOB Adapter SDK</span></span>
+<span data-ttu-id="8b929-103">[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]接続プール、メタデータのキャッシュ、およびその他のアダプターの動作を構成するためのさまざまなクラスで定義されたプロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="8b929-103">The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] uses the properties defined in different classes for configuring the connection pool, metadata cache, and other adapter behaviors.</span></span> <span data-ttu-id="8b929-104">このトピックでは、アダプターのコンシューマーが、構成ファイルで設定できるようにバインドのプロパティとしてこれらのプロパティを表示する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="8b929-104">This topic describes how you can surface these properties as binding properties, so that the adapter consumer can set them through a configuration file.</span></span>  
   
-### <a name="to-surface-an-adapter-setting-as-an-adapter-binding-property"></a><span data-ttu-id="86659-105">アダプターのバインド プロパティとしてアダプターの設定を表示するには</span><span class="sxs-lookup"><span data-stu-id="86659-105">To surface an adapter setting as an adapter binding property</span></span>  
+### <a name="to-surface-an-adapter-setting-as-an-adapter-binding-property"></a><span data-ttu-id="8b929-105">アダプターのバインド プロパティとしてアダプターの設定を表示するには</span><span class="sxs-lookup"><span data-stu-id="8b929-105">To surface an adapter setting as an adapter binding property</span></span>  
   
-1.  <span data-ttu-id="86659-106">Visual Studio を起動し、**ファイル** メニューのをポイント**新規**、クリックして**プロジェクト**です。</span><span class="sxs-lookup"><span data-stu-id="86659-106">Start Visual Studio, and then on the **File** menu, point to **New**, and then click **Project**.</span></span>  
+1. <span data-ttu-id="8b929-106">Visual Studio を起動し、**ファイル**メニューで、**新規**、 をクリックし、**プロジェクト**します。</span><span class="sxs-lookup"><span data-stu-id="8b929-106">Start Visual Studio, and then on the **File** menu, point to **New**, and then click **Project**.</span></span>  
   
-2.  <span data-ttu-id="86659-107">選択、 **WCF LOB アダプター**テンプレート、その他のアダプター プロジェクトの情報を指定します。</span><span class="sxs-lookup"><span data-stu-id="86659-107">Choose the **WCF LOB Adapter** template, and then provide the other adapter project information.</span></span>  
+2. <span data-ttu-id="8b929-107">選択、 **WCF LOB アダプター**テンプレート、その他のアダプター プロジェクト情報を指定します。</span><span class="sxs-lookup"><span data-stu-id="8b929-107">Choose the **WCF LOB Adapter** template, and then provide the other adapter project information.</span></span>  
   
-3.  <span data-ttu-id="86659-108">ステップ実行、[!INCLUDE[afdevwizardnamelong](../../includes/afdevwizardnamelong-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="86659-108">Step through the [!INCLUDE[afdevwizardnamelong](../../includes/afdevwizardnamelong-md.md)].</span></span> <span data-ttu-id="86659-109">取得するときに、**アダプター プロパティ** ページで、提供することで公開するバインディングのプロパティを追加、**プロパティ名**、**データ型**、および**既定値**、クリックして**追加**新しいアダプター プロパティを追加します。</span><span class="sxs-lookup"><span data-stu-id="86659-109">When you get to the **Adapter Properties** page, add the binding properties that you want to expose by providing a **Property name**, **Data type**, and **Default value**, and then click **Add** to add the new adapter property.</span></span>  
+3. <span data-ttu-id="8b929-108">ステップ実行、[!INCLUDE[afdevwizardnamelong](../../includes/afdevwizardnamelong-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="8b929-108">Step through the [!INCLUDE[afdevwizardnamelong](../../includes/afdevwizardnamelong-md.md)].</span></span> <span data-ttu-id="8b929-109">取得するときに、**アダプター プロパティ**ページで、追加のバインドのプロパティを提供することで公開する、**プロパティ名**、**データ型**、および**既定値**、 をクリックし、**追加**新しいアダプターのプロパティを追加します。</span><span class="sxs-lookup"><span data-stu-id="8b929-109">When you get to the **Adapter Properties** page, add the binding properties that you want to expose by providing a **Property name**, **Data type**, and **Default value**, and then click **Add** to add the new adapter property.</span></span>  
   
-4.  <span data-ttu-id="86659-110">完了、[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="86659-110">Complete the [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)].</span></span> <span data-ttu-id="86659-111">プロジェクトには、ウィザードによって提供される新しいファイルを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="86659-111">Your project should contain new files provided by the wizard.</span></span>  
+4. <span data-ttu-id="8b929-110">完了、[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="8b929-110">Complete the [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)].</span></span> <span data-ttu-id="8b929-111">プロジェクトには、ウィザードによって提供される新しいファイルを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="8b929-111">Your project should contain new files provided by the wizard.</span></span>  
   
-5.  <span data-ttu-id="86659-112">ソリューション エクスプ ローラーで、Visual Studio では、アダプターから派生したクラスを開きます。</span><span class="sxs-lookup"><span data-stu-id="86659-112">In Visual Studio, in Solution Explorer, open the adapter-derived class.</span></span> <span data-ttu-id="86659-113">たとえば、アダプター プロジェクトの名前が"SampleAdapter"の場合は、アダプターの派生クラスを"SampleAdapter.cs"で確認できます。</span><span class="sxs-lookup"><span data-stu-id="86659-113">For example, if the name of your adapter project is "SampleAdapter", the adapter derived class can be found in "SampleAdapter.cs".</span></span>  
+5. <span data-ttu-id="8b929-112">ソリューション エクスプ ローラーで、Visual Studio では、アダプターから派生したクラスを開きます。</span><span class="sxs-lookup"><span data-stu-id="8b929-112">In Visual Studio, in Solution Explorer, open the adapter-derived class.</span></span> <span data-ttu-id="8b929-113">たとえば、アダプター プロジェクトの名前が"SampleAdapter"の場合は、派生アダプター クラスを"SampleAdapter.cs"で確認できます。</span><span class="sxs-lookup"><span data-stu-id="8b929-113">For example, if the name of your adapter project is "SampleAdapter", the adapter derived class can be found in "SampleAdapter.cs".</span></span>  
   
-6.  <span data-ttu-id="86659-114">取得し、アダプターの設定から設定するプロパティのプライベート変数を削除します。</span><span class="sxs-lookup"><span data-stu-id="86659-114">Remove the private variables for the properties that you want to get and set from adapter settings.</span></span> <span data-ttu-id="86659-115">プライベート変数がによって生成された、[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]です。</span><span class="sxs-lookup"><span data-stu-id="86659-115">The private variables were generated by the [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)].</span></span>  
+6. <span data-ttu-id="8b929-114">アダプターの設定から設定を取得するプロパティのプライベート変数を削除します。</span><span class="sxs-lookup"><span data-stu-id="8b929-114">Remove the private variables for the properties that you want to get and set from adapter settings.</span></span> <span data-ttu-id="8b929-115">によって生成された秘密の変数、[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="8b929-115">The private variables were generated by the [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)].</span></span>  
   
-7.  <span data-ttu-id="86659-116">読み取り/書き込みから/にアダプターの設定値を取得または設定メソッドを更新します。</span><span class="sxs-lookup"><span data-stu-id="86659-116">Update the get/set methods to read/write values from/to adapter settings.</span></span> <span data-ttu-id="86659-117">次の例では、アダプターのプロパティを使用して、パフォーマンス カウンターの有効化を許可します。</span><span class="sxs-lookup"><span data-stu-id="86659-117">The following example uses an adapter property to allow enablement of performance counters.</span></span>  
+7. <span data-ttu-id="8b929-116">アダプターの設定を値の読み取り/書き込みを get/set メソッドを更新します。</span><span class="sxs-lookup"><span data-stu-id="8b929-116">Update the get/set methods to read/write values from/to adapter settings.</span></span> <span data-ttu-id="8b929-117">次の例は、アダプターのプロパティを使用して、パフォーマンス カウンターの有効化を許可します。</span><span class="sxs-lookup"><span data-stu-id="8b929-117">The following example uses an adapter property to allow enablement of performance counters.</span></span>  
   
-    ```  
-    [System.Configuration.ConfigurationProperty("enablePerfCounters", DefaultValue = false)]  
-    public bool EnablePerfCounters  
-    {  
-        get { return environmentSettings.PerformanceCounters.Enabled;    }  
-        set { environmentSettings.PerformanceCounters.Enabled = value; }  
-    }  
-    ```  
+   ```  
+   [System.Configuration.ConfigurationProperty("enablePerfCounters", DefaultValue = false)]  
+   public bool EnablePerfCounters  
+   {  
+       get { return environmentSettings.PerformanceCounters.Enabled;    }  
+       set { environmentSettings.PerformanceCounters.Enabled = value; }  
+   }  
+   ```  
   
-8.  <span data-ttu-id="86659-118">Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。</span><span class="sxs-lookup"><span data-stu-id="86659-118">In Visual Studio, on the **File** menu, click **Save All**.</span></span>  
+8. <span data-ttu-id="8b929-118">Visual Studio での**ファイル** メニューのをクリックして**すべて保存**します。</span><span class="sxs-lookup"><span data-stu-id="8b929-118">In Visual Studio, on the **File** menu, click **Save All**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="86659-119">参照</span><span class="sxs-lookup"><span data-stu-id="86659-119">See Also</span></span>  
- <span data-ttu-id="86659-120">[チュートリアル 1: エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)[開発アクティビティ](../../esb-toolkit/development-activities.md)</span><span class="sxs-lookup"><span data-stu-id="86659-120">[Tutorial 1: Develop the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md) [Development Activities](../../esb-toolkit/development-activities.md)</span></span>
+## <a name="see-also"></a><span data-ttu-id="8b929-119">参照</span><span class="sxs-lookup"><span data-stu-id="8b929-119">See Also</span></span>  
+ <span data-ttu-id="8b929-120">[チュートリアル 1: エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)[開発アクティビティ](../../esb-toolkit/development-activities.md)</span><span class="sxs-lookup"><span data-stu-id="8b929-120">[Tutorial 1: Develop the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md) [Development Activities](../../esb-toolkit/development-activities.md)</span></span>

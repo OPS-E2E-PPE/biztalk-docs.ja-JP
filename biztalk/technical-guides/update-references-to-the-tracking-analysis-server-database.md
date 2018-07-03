@@ -1,5 +1,5 @@
 ---
-title: 追跡分析サーバー データベースへの参照の更新 |Microsoft ドキュメント
+title: 追跡分析サーバー データベースへの参照の更新 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,39 +12,39 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b85c5c50bc8aeb388d6b7df1591f4b13900998e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 417569d99b7326b435422b5fa0dff28019006116
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25976320"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37014707"
 ---
-# <a name="update-references-to-the-tracking-analysis-server-database"></a><span data-ttu-id="cb289-102">追跡分析サーバー データベースへの参照を更新します。</span><span class="sxs-lookup"><span data-stu-id="cb289-102">Update References to the Tracking Analysis Server Database</span></span>
-<span data-ttu-id="cb289-103">Tracking Analysis Server データベースは、省略可能なオンライン分析処理 (OLAP) キューブが含まれています。</span><span class="sxs-lookup"><span data-stu-id="cb289-103">The Tracking Analysis Server database is an optional and contains the online analytical processing (OLAP) cubes.</span></span> <span data-ttu-id="cb289-104">これらの OLAP キューブは、BizTalk 追跡データベースに含まれるデータの集計です。</span><span class="sxs-lookup"><span data-stu-id="cb289-104">These OLAP cubes are aggregations of data contained in the BizTalk Tracking database.</span></span>  
+# <a name="update-references-to-the-tracking-analysis-server-database"></a><span data-ttu-id="1eab8-102">追跡分析サーバー データベースへの参照を更新します。</span><span class="sxs-lookup"><span data-stu-id="1eab8-102">Update References to the Tracking Analysis Server Database</span></span>
+<span data-ttu-id="1eab8-103">Tracking Analysis Server データベースであり、省略可能なオンライン分析処理 (OLAP) キューブが含まれています。</span><span class="sxs-lookup"><span data-stu-id="1eab8-103">The Tracking Analysis Server database is an optional and contains the online analytical processing (OLAP) cubes.</span></span> <span data-ttu-id="1eab8-104">これらの OLAP キューブは、BizTalk 追跡データベースに含まれるデータの集計です。</span><span class="sxs-lookup"><span data-stu-id="1eab8-104">These OLAP cubes are aggregations of data contained in the BizTalk Tracking database.</span></span>  
   
- <span data-ttu-id="cb289-105">Tracking Analysis Server データベースを復元するには使用[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]分析マネージャーで、MessageMetrics キューブおよび ServiceMetrics キューブを処理します。</span><span class="sxs-lookup"><span data-stu-id="cb289-105">To restore the Tracking Analysis Server database, use [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Analysis Manager to process the MessageMetrics and ServiceMetrics cubes.</span></span> <span data-ttu-id="cb289-106">手順については、次を参照してください。[管理バックアップと復旧 (Analysis Services)](http://go.microsoft.com/fwlink/?LinkId=130939) (http://go.microsoft.com/fwlink/?LinkId=130939) で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]オンライン ブック。</span><span class="sxs-lookup"><span data-stu-id="cb289-106">For instructions, see [Managing Backing Up and Restoring (Analysis Services)](http://go.microsoft.com/fwlink/?LinkId=130939) (http://go.microsoft.com/fwlink/?LinkId=130939) in [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Books Online.</span></span>  
+ <span data-ttu-id="1eab8-105">Tracking Analysis Server データベースを復元する[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]分析マネージャー、MessageMetrics キューブおよび ServiceMetrics キューブを処理します。</span><span class="sxs-lookup"><span data-stu-id="1eab8-105">To restore the Tracking Analysis Server database, use [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Analysis Manager to process the MessageMetrics and ServiceMetrics cubes.</span></span> <span data-ttu-id="1eab8-106">手順については、次を参照してください。[管理バックアップと復元 (Analysis Services)](http://go.microsoft.com/fwlink/?LinkId=130939) (<http://go.microsoft.com/fwlink/?LinkId=130939>) で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]オンライン ブックの「します。</span><span class="sxs-lookup"><span data-stu-id="1eab8-106">For instructions, see [Managing Backing Up and Restoring (Analysis Services)](http://go.microsoft.com/fwlink/?LinkId=130939) (<http://go.microsoft.com/fwlink/?LinkId=130939>) in [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Books Online.</span></span>  
   
- <span data-ttu-id="cb289-107">別のコンピューターに、Tracking Analysis Server データベースを復元するも、次の手順を使用して、BizTalk 管理データベースにデータベース名への参照を更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb289-107">To restore the Tracking Analysis Server database to an alternate computer, you must also update references to the database name in the BizTalk Management database by using the following procedure.</span></span>  
+ <span data-ttu-id="1eab8-107">Tracking Analysis Server データベースを別のコンピューターを復元するには、次の手順を使用して、BizTalk 管理データベースにデータベース名への参照を更新することも必要があります。</span><span class="sxs-lookup"><span data-stu-id="1eab8-107">To restore the Tracking Analysis Server database to an alternate computer, you must also update references to the database name in the BizTalk Management database by using the following procedure.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="cb289-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="cb289-108">Prerequisites</span></span>  
- <span data-ttu-id="cb289-109">メンバーとしてログオンする必要があります、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators グループにこの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="cb289-109">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group to perform this procedure.</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="1eab8-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="1eab8-108">Prerequisites</span></span>  
+ <span data-ttu-id="1eab8-109">メンバーとしてログオンする必要があります、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators グループにこの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="1eab8-109">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group to perform this procedure.</span></span>  
   
-### <a name="to-update-references-to-the-tracking-analysis-server-database-name"></a><span data-ttu-id="cb289-110">Tracking Analysis Server データベース名への参照を更新するには</span><span class="sxs-lookup"><span data-stu-id="cb289-110">To update references to the Tracking Analysis Server database name</span></span>  
+### <a name="to-update-references-to-the-tracking-analysis-server-database-name"></a><span data-ttu-id="1eab8-110">Tracking Analysis Server データベース名への参照を更新するには</span><span class="sxs-lookup"><span data-stu-id="1eab8-110">To update references to the Tracking Analysis Server database name</span></span>  
   
-1.  <span data-ttu-id="cb289-111">送信先システムでをクリックして**開始**をクリックして**プログラム**、 をクリックして**Microsoft SQL Server 2008**、順にクリック**SQL Server Management Studio**.</span><span class="sxs-lookup"><span data-stu-id="cb289-111">On the destination system, click **Start**, click **Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.</span></span>  
+1.  <span data-ttu-id="1eab8-111">送信先システムで、をクリックして**開始**、 をクリックして**プログラム**、 をクリックして**Microsoft SQL Server 2008**、 をクリックし、 **SQL Server Management Studio**.</span><span class="sxs-lookup"><span data-stu-id="1eab8-111">On the destination system, click **Start**, click **Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.</span></span>  
   
-2.  <span data-ttu-id="cb289-112">**サーバーへの接続**ダイアログ ボックスで、**サーバーの種類**として**データベース エンジン**サーバー名を指定、サーバー、ot の接続に資格情報を提供し、をクリックして**接続**です。</span><span class="sxs-lookup"><span data-stu-id="cb289-112">In the **Connect to Server** dialog box, select the **Server type** as **Database Engine**, provide a server name, provide the credentials to connect ot the server, and then click **Connect**.</span></span>  
+2.  <span data-ttu-id="1eab8-112">**サーバーへの接続**ダイアログ ボックスで、**サーバーの種類**として**データベース エンジン**サーバー名を指定、サーバー、ot の接続に資格情報を提供し、クリックして**Connect**します。</span><span class="sxs-lookup"><span data-stu-id="1eab8-112">In the **Connect to Server** dialog box, select the **Server type** as **Database Engine**, provide a server name, provide the credentials to connect ot the server, and then click **Connect**.</span></span>  
   
-3.  <span data-ttu-id="cb289-113">ダブルクリックするをクリックして、適切なサーバーを開く**データベース**、 **BizTalkMgmtDb**、クリックして**テーブル**です。</span><span class="sxs-lookup"><span data-stu-id="cb289-113">Open the appropriate server by clicking it, double-clicking **Databases**, double-clicking **BizTalkMgmtDb**, and then clicking **Tables**.</span></span>  
+3.  <span data-ttu-id="1eab8-113">ダブルクリックするをクリックして、適切なサーバーを開く**データベース**、 **BizTalkMgmtDb**、 をクリックし、**テーブル**します。</span><span class="sxs-lookup"><span data-stu-id="1eab8-113">Open the appropriate server by clicking it, double-clicking **Databases**, double-clicking **BizTalkMgmtDb**, and then clicking **Tables**.</span></span>  
   
-4.  <span data-ttu-id="cb289-114">詳細ウィンドウで右クリック**adm_Group**、順にポイントして**テーブルを開く**です。</span><span class="sxs-lookup"><span data-stu-id="cb289-114">In the details pane, right-click **adm_Group**, and then point to **Open Table**.</span></span>  
+4.  <span data-ttu-id="1eab8-114">詳細ペインで右クリックして**adm_Group**、順にポイント**テーブルを開く**します。</span><span class="sxs-lookup"><span data-stu-id="1eab8-114">In the details pane, right-click **adm_Group**, and then point to **Open Table**.</span></span>  
   
-5.  <span data-ttu-id="cb289-115">新しいデータベースの適切な値を参照するように、元のデータベースに対応する列を変更します。</span><span class="sxs-lookup"><span data-stu-id="cb289-115">Modify the columns corresponding to the original database to reference the appropriate values for the new database.</span></span>  
+5.  <span data-ttu-id="1eab8-115">新しいデータベースの適切な値を参照するように、元のデータベースに対応する列を変更します。</span><span class="sxs-lookup"><span data-stu-id="1eab8-115">Modify the columns corresponding to the original database to reference the appropriate values for the new database.</span></span>  
   
     > [!NOTE]  
-    >  <span data-ttu-id="cb289-116">*\<DBType\>* データベースおよび *\<DBType\>*  DBName は、データベースの場所を示す、  *\<DBType\>* TrackingAnalysis、データベースの種類に対応しています。</span><span class="sxs-lookup"><span data-stu-id="cb289-116">*\<DBType\>* DBServerName and *\<DBType\>* DBName indicate the location of the database, where *\<DBType\>* corresponds to the type of the database, for example, TrackingAnalysis.</span></span>  
+    >  <span data-ttu-id="1eab8-116">*\<DBType\>*  DBServerName および*\<DBType\>* DBName は、データベースの場所を示す、 *\<DBType\>* 、データベースは、TrackingAnalysis の型に対応します。</span><span class="sxs-lookup"><span data-stu-id="1eab8-116">*\<DBType\>* DBServerName and *\<DBType\>* DBName indicate the location of the database, where *\<DBType\>* corresponds to the type of the database, for example, TrackingAnalysis.</span></span>  
   
-6.  <span data-ttu-id="cb289-117">テーブルを閉じて新しい値を保存します。</span><span class="sxs-lookup"><span data-stu-id="cb289-117">Close the table to save the new values.</span></span>  
+6.  <span data-ttu-id="1eab8-117">テーブルを閉じて新しい値を保存します。</span><span class="sxs-lookup"><span data-stu-id="1eab8-117">Close the table to save the new values.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="cb289-118">参照</span><span class="sxs-lookup"><span data-stu-id="cb289-118">See Also</span></span>  
- [<span data-ttu-id="cb289-119">データベース参照の更新</span><span class="sxs-lookup"><span data-stu-id="cb289-119">Updating Database References</span></span>](../technical-guides/updating-database-references.md)
+## <a name="see-also"></a><span data-ttu-id="1eab8-118">参照</span><span class="sxs-lookup"><span data-stu-id="1eab8-118">See Also</span></span>  
+ [<span data-ttu-id="1eab8-119">データベース参照の更新</span><span class="sxs-lookup"><span data-stu-id="1eab8-119">Updating Database References</span></span>](../technical-guides/updating-database-references.md)

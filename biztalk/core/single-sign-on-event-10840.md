@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10840 |Microsoft ドキュメント'
+title: 'シングル サインオン: イベント 10840 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8d33e6f58033223f11f5d774af3f1eb528d5d98
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 703695c4dabd6f65664f2ebd8d4b344b2b418f0d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276970"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37021776"
 ---
-# <a name="single-sign-on-event-10840"></a><span data-ttu-id="206a3-102">シングル サインオン: イベント 10840</span><span class="sxs-lookup"><span data-stu-id="206a3-102">Single Sign-On: Event 10840</span></span>
-## <a name="details"></a><span data-ttu-id="206a3-103">詳細</span><span class="sxs-lookup"><span data-stu-id="206a3-103">Details</span></span>  
+# <a name="single-sign-on-event-10840"></a><span data-ttu-id="54248-102">シングル サインオン: イベント 10840</span><span class="sxs-lookup"><span data-stu-id="54248-102">Single Sign-On: Event 10840</span></span>
+## <a name="details"></a><span data-ttu-id="54248-103">詳細</span><span class="sxs-lookup"><span data-stu-id="54248-103">Details</span></span>  
   
-|||  
-|-|-|  
-|<span data-ttu-id="206a3-104">製品名</span><span class="sxs-lookup"><span data-stu-id="206a3-104">Product Name</span></span>|<span data-ttu-id="206a3-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="206a3-105">Enterprise Single Sign-On</span></span>|  
-|<span data-ttu-id="206a3-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="206a3-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|<span data-ttu-id="206a3-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="206a3-107">Event ID</span></span>|<span data-ttu-id="206a3-108">10840</span><span class="sxs-lookup"><span data-stu-id="206a3-108">10840</span></span>|  
-|<span data-ttu-id="206a3-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="206a3-109">Event Source</span></span>|<span data-ttu-id="206a3-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="206a3-110">ENTSSO</span></span>|  
-|<span data-ttu-id="206a3-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="206a3-111">Component</span></span>|<span data-ttu-id="206a3-112">なし</span><span class="sxs-lookup"><span data-stu-id="206a3-112">N/A</span></span>|  
-|<span data-ttu-id="206a3-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="206a3-113">Symbolic Name</span></span>|<span data-ttu-id="206a3-114">ENTSSO_E_MAX_PASSWORD_REMINDER</span><span class="sxs-lookup"><span data-stu-id="206a3-114">ENTSSO_E_MAX_PASSWORD_REMINDER</span></span>|  
-|<span data-ttu-id="206a3-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="206a3-115">Message Text</span></span>|<span data-ttu-id="206a3-116">パスワード関連語句の最大文字数は、512 文字です。</span><span class="sxs-lookup"><span data-stu-id="206a3-116">The maximum password reminder length is 512 characters.</span></span>|  
+|                 |                                                            |
+|-----------------|------------------------------------------------------------|
+|  <span data-ttu-id="54248-104">製品名</span><span class="sxs-lookup"><span data-stu-id="54248-104">Product Name</span></span>   |                 <span data-ttu-id="54248-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="54248-105">Enterprise Single Sign-On</span></span>                  |
+| <span data-ttu-id="54248-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="54248-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    <span data-ttu-id="54248-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="54248-107">Event ID</span></span>     |                           <span data-ttu-id="54248-108">10840</span><span class="sxs-lookup"><span data-stu-id="54248-108">10840</span></span>                            |
+|  <span data-ttu-id="54248-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="54248-109">Event Source</span></span>   |                           <span data-ttu-id="54248-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="54248-110">ENTSSO</span></span>                           |
+|    <span data-ttu-id="54248-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="54248-111">Component</span></span>    |                            <span data-ttu-id="54248-112">なし</span><span class="sxs-lookup"><span data-stu-id="54248-112">N/A</span></span>                             |
+|  <span data-ttu-id="54248-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="54248-113">Symbolic Name</span></span>  |               <span data-ttu-id="54248-114">ENTSSO_E_MAX_PASSWORD_REMINDER</span><span class="sxs-lookup"><span data-stu-id="54248-114">ENTSSO_E_MAX_PASSWORD_REMINDER</span></span>               |
+|  <span data-ttu-id="54248-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="54248-115">Message Text</span></span>   |  <span data-ttu-id="54248-116">パスワード関連語句の最大文字数は、512 文字です。</span><span class="sxs-lookup"><span data-stu-id="54248-116">The maximum password reminder length is 512 characters.</span></span>   |
   
-## <a name="explanation"></a><span data-ttu-id="206a3-117">説明</span><span class="sxs-lookup"><span data-stu-id="206a3-117">Explanation</span></span>  
- <span data-ttu-id="206a3-118">パスワード関連語句の最大文字数は、512 文字です。</span><span class="sxs-lookup"><span data-stu-id="206a3-118">The maximum password reminder length is 512 characters.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="54248-117">説明</span><span class="sxs-lookup"><span data-stu-id="54248-117">Explanation</span></span>  
+ <span data-ttu-id="54248-118">パスワード関連語句の最大文字数は、512 文字です。</span><span class="sxs-lookup"><span data-stu-id="54248-118">The maximum password reminder length is 512 characters.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="206a3-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="206a3-119">User Action</span></span>  
- <span data-ttu-id="206a3-120">これらのガイドラインに従ったアラームを使用します。</span><span class="sxs-lookup"><span data-stu-id="206a3-120">Use a reminder which fits these guidelines.</span></span>
+## <a name="user-action"></a><span data-ttu-id="54248-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="54248-119">User Action</span></span>  
+ <span data-ttu-id="54248-120">これらのガイドラインに従ったアラームを使用します。</span><span class="sxs-lookup"><span data-stu-id="54248-120">Use a reminder which fits these guidelines.</span></span>
