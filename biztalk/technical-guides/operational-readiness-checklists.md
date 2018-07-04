@@ -1,5 +1,5 @@
 ---
-title: 運用の準備のチェックリスト |Microsoft ドキュメント
+title: 運用準備チェックリスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,53 +12,53 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9e9297e5539fd95f316ebbf6239a5d017ec4ecf
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: 76cab24c2ba0d47baa22dbe694a1d929e98c8f9d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "23450227"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002755"
 ---
-# <a name="operational-readiness-checklists"></a>運用の準備のチェックリスト
-運用の準備のチェックリストには、考慮すべき推奨事項と、BizTalk ソリューションを実稼働環境に展開する前に行う必要がありますタスクが含まれています。 これらのチェックリストには、前提条件ソフトウェアの可用性を高める構成に関する情報が含まれます。 監視、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境、およびテストする手順。  
+# <a name="operational-readiness-checklists"></a>運用準備チェックリスト
+運用準備チェックリストには、考慮すべき推奨事項とタスクを運用環境に BizTalk ソリューションをデプロイする前に実行する必要がありますが含まれています。 これらのチェックリストには、可用性の向上、前提条件のソフトウェアを構成するための情報が含まれます。 監視、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境、およびテストする手順。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で依存関係が維持される他の多くの Microsoft テクノロジとなるように、実稼働環境に依存している各テクノロジのタスクを完了する必要がありますので[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境がスムーズに実行されます。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で依存関係が保持される他の多くの Microsoft テクノロジ、運用環境を確保しやすく依存している各テクノロジのタスクを完了する必要がありますので[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境をスムーズに実行します。  
   
 ## <a name="typical-prerequisite-software"></a>一般的な前提条件ソフトウェア  
- 前提条件ソフトウェア、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション プラットフォームには通常、次の製品が含まれています。  
+ 前提条件のソフトウェア、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション プラットフォームには通常、次の製品が含まれています。  
   
--   Windows オペレーティング システム  
+- Windows オペレーティング システム  
   
--   SQL Server 
+- SQL Server 
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
   
--   Visual Studio (開発目的で、実行時ではなく)  
+- Visual Studio (用に開発、実行時ではなく)  
   
 ## <a name="additional-components"></a>その他のコンポーネント  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション プラットフォームもかかる場合、次のソフトウェア コンポーネントのいくつか。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション プラットフォームでは、次のソフトウェア コンポーネントのいくつか必要がありますも。  
   
--   インターネット インフォメーション サービス (IIS)  
+- インターネット インフォメーション サービス (IIS)  
   
--   SharePoint
+- SharePoint
   
--   Microsoft Office Excel 
+- Microsoft Office Excel 
   
-    > [!NOTE]  
-    >  BizTalk Server には、Microsoft Office の 32 ビット バージョンのみがサポートしています。  
+  > [!NOTE]  
+  >  BizTalk Server には、Microsoft Office の 32 ビット バージョンのみがサポートしています。  
   
--   SQL Server
+- SQL Server
   
--   SQLXML 
+- SQLXML 
   
--   .NET Framework 
+- .NET Framework 
   
--   特定の機能を有効にする Microsoft 以外のコンポーネント[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプター。  
+- 特定の機能を有効にする Microsoft 以外のコンポーネント[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプター。  
   
- さまざまな Windows オペレーティング システムのバージョンの BizTalk アプリケーション プラットフォームの特定の機能に必要な依存関係のソフトウェアの詳細については、次を参照してください[は新規、インストール、構成、およびアップグレード](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md).
+  さまざまな Windows オペレーティング システムのバージョンの BizTalk アプリケーション プラットフォームの特定の機能に必要な依存関係のソフトウェアの詳細については、次を参照してください[新機能、インストール、構成、アップグレード](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md).
 - 
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [チェックリスト: BizTalk Server の概要](http://msdn.microsoft.com/library/37d265cd-c393-46ac-ac21-129a1511359b)  
   

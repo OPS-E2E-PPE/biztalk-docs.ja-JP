@@ -1,5 +1,5 @@
 ---
-title: BtarnClean |Microsoft ドキュメント
+title: BtarnClean |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,21 +21,21 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc3759d13498b6582eeb87fe162d287d64550044
-ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
+ms.openlocfilehash: f94c69552a59cf8cae8a12e056502ae405638e69
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34855557"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36992843"
 ---
 # <a name="btarnclean"></a>BtarnClean
-BtarnClean ユーティリティは、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] のアイテムをコンピューターから削除するために使用します。 以下の処理が実行されます。  
+BtarnClean ユーティリティを使用して Microsoft® をクリーンアップする[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]アイテムをコンピューターから。 以下の処理が実行されます。  
   
--   すべての [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] オーケストレーションを停止し、登録を解除する  
+- すべての [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] オーケストレーションを停止し、登録を解除する  
   
--   関連するすべてのポートを停止し、削除する  
+- 関連するすべてのポートを停止し、削除する  
   
--   すべての [!INCLUDE[btsCoName](../../includes/btsconame-md.md)].Solutions.BTARN.* アセンブリの展開を解除する  
+- すべての Microsoft の展開解除します.Solutions.btarn.* アセンブリ  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
  \<*ドライブ*\>\Program Files (x86) \ Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk  
@@ -46,9 +46,9 @@ BtarnClean ユーティリティは、[!INCLUDE[btsCoName](../../includes/btscon
   
 1.  コマンド プロンプトを開きます。  
   
-2.  移動\<*ドライブ*\>\ Program Files (x86) \Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\\です。  
+2.  移動\<*ドライブ*\>\ Program Files (x86) \Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\\します。  
   
-3.  コマンド プロンプトで次のように入力します。 **BtarnClean**、ENTER キーを押します。  
+3.  コマンド プロンプトで「 **BtarnClean**、し、ENTER キーを押します。  
   
      コマンドの実行を確認するプロンプトが表示されます。  
   

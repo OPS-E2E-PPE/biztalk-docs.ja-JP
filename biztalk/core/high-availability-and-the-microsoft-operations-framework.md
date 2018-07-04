@@ -1,5 +1,5 @@
 ---
-title: 高可用性と Microsoft Operations Framework |Microsoft ドキュメント
+title: 高可用性と Microsoft Operations Framework |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,34 +12,34 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a06bdadb026617dc55ed40d03e0344584111a0c
-ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
+ms.openlocfilehash: 37cdfd9a98f035b306bed1db88f3256336c0d1d1
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29710445"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36972787"
 ---
 # <a name="high-availability-and-the-microsoft-operations-framework"></a>高可用性と MOF
-計画と可用性の高い Microsoft BizTalk Server ソリューションの実装を Microsoft Operations Framework (MOF) プロセス モデルを適用すると、リリース ライフ サイクルのさまざまな段階で適切なプロセスがあることを確認できます。 高可用性に影響するすべてのライフ サイクル ステージをあらかじめ把握しておくことにより、可用性の問題に伴うインストール、メンテナンス、およびトラブルシューティングを、より円滑に行うことができます。  
+計画と Microsoft BizTalk Server の高可用性ソリューションの実装に、Microsoft Operations Framework (MOF) プロセス モデルを適用すると、適切なプロセスが、リリース ライフ サイクルのさまざまな段階であることを確認できます。 高可用性に影響するすべてのライフ サイクル ステージをあらかじめ把握しておくことにより、可用性の問題に伴うインストール、メンテナンス、およびトラブルシューティングを、より円滑に行うことができます。  
   
  このセクションでは、高可用性を実現するために必要な MOF プロセスについて考えていきます。  
   
 ## <a name="microsoft-operations-framework-process-model"></a>MOF プロセス モデル  
- [Microsoft Operations Framework (MOF)](https://technet.microsoft.com/solutionaccelerators/dd320379.aspx)をミッション クリティカルなシステムの信頼性、可用性、保守性、および Microsoft の製品およびテクノロジの管理の容易性を実現するためのガイダンスを提供. 運用上の指針は、ホワイト ペーパー、運用ガイド、評価ツール、ベスト プラクティス、ケース スタディ、テンプレート、サポート ツール、およびサービスの形態で提供されます。 これにより、分散された複雑な異種混合 IT 環境に伴う、要員、プロセス、技術、および管理の問題の解決を図ります。 
+ [Microsoft Operations Framework (MOF)](https://technet.microsoft.com/solutionaccelerators/dd320379.aspx)により、ミッション クリティカルなシステムの信頼性、可用性、保守性、および Microsoft 製品とテクノロジの管理の容易性を実現するために組織のガイダンスを提供します. 運用上の指針は、ホワイト ペーパー、運用ガイド、評価ツール、ベスト プラクティス、ケース スタディ、テンプレート、サポート ツール、およびサービスの形態で提供されます。 これにより、分散された複雑な異種混合 IT 環境に伴う、要員、プロセス、技術、および管理の問題の解決を図ります。 
   
  企業にとって、MOF プロセス モデルには次のような利点があります。  
   
--   サービス ソリューション全体にわたり、一貫した IT サービス管理を円滑に行うことができる。  
+- サービス ソリューション全体にわたり、一貫した IT サービス管理を円滑に行うことができる。  
   
--   IT の機能、プロセス、および手順を体系的に捉えることができる。  
+- IT の機能、プロセス、および手順を体系的に捉えることができる。  
   
--   ライフサイクル ベースのアプローチが可能になる。  
+- ライフサイクル ベースのアプローチが可能になる。  
   
- MOF プロセス モデルの大きな特徴は、SMF (Service Management Function) と呼ばれる運用プロセスおよび手順を 4 つの領域に分けることです。 SMF は、IT 環境の運用と保守の基礎となるベスト プラクティスと規範的な指針です。  
+  MOF プロセス モデルの大きな特徴は、SMF (Service Management Function) と呼ばれる運用プロセスおよび手順を 4 つの領域に分けることです。 SMF は、IT 環境の運用と保守の基礎となるベスト プラクティスと規範的な指針です。  
   
- 次の図は、高可用性を実現する上で考慮する必要のある MOF プロセスを示しています。  
+  次の図は、高可用性を実現する上で考慮する必要のある MOF プロセスを示しています。  
   
- ![MOF Processes](../core/media/tdi-highava-mof.gif "TDI_HighAva_MOF")  
+  ![MOF プロセス](../core/media/tdi-highava-mof.gif "TDI_HighAva_MOF")  
   
 ## <a name="changing-quadrant"></a>変更領域  
  変更領域には、管理対象となる IT 環境への変更を見極め、レビューし、さらに、それを承認して実行に移す、というプロセスに必要な SMF (Service Management Function) が含まれます。 ソフトウェア、ハードウェア、ドキュメント、役割/責任の変更のほか、特定のプロセスや手順に対する変更も含まれます。  
@@ -62,7 +62,7 @@ ms.locfileid: "29710445"
 ### <a name="configuration-management"></a>構成管理  
  構成管理は、ソフトウェア、ハードウェア、ドキュメント、プロセス、手順など、変更管理プロセス下にある IT 環境のあらゆる構成要素のバージョンをすべて識別、管理、追跡するプロセスです。  
   
- 構成管理プロセス中には、BizTalk Server の高可用性ソリューションの実装に移動する方法の詳細な計画を作成する必要があります。 ソリューションの作成に要した手順を記録しておくことも必要です。 大まかな手順としては、次のようなことが含まれます。  
+ 構成管理プロセスでは、詳細な計画をどのように BizTalk Server の高可用性ソリューションを実装しようとを作成する必要があります。 ソリューションの作成に要した手順を記録しておくことも必要です。 大まかな手順としては、次のようなことが含まれます。  
   
 -   ドメイン コントローラーで、BizTalk Server 環境で使用するドメイン グループおよびアカウントを作成する。  
   
@@ -72,7 +72,7 @@ ms.locfileid: "29710445"
   
 -   BizTalk Server 管理者が、マスター シークレット サーバー クラスターを構成する。  
   
--   BizTalk Server 管理者は、インストールし、受信、およびサーバーの送信処理は、BizTalk Server を構成します。  
+-   BizTalk Server 管理者は、インストールし、受信、および送信サーバーで行う処理は、BizTalk Server を構成します。  
   
 -   BizTalk Server 管理者が、適切なサーバー上にホストを作成し、ホスト インスタンスをインストールすることによって可用性や処理能力の向上を図る。  
   
@@ -109,7 +109,7 @@ ms.locfileid: "29710445"
 ### <a name="service-continuity-management"></a>サービス継続性管理  
  サービス継続性管理機能の目的は、標準の可用性ソリューションでは対応できないような問題が発生したとしても、特定の IT サービスが顧客に価値を提供できるようにすることです。  
   
- サービスの継続性機能の中に、お客様にも計画または計画外のダウンタイムが発生すると、期待されるサービスを提供できているかどうかを確認するために実装するには、どのような高可用性構成を確認する必要があります。 計画外のダウンタイムには、ハードウェア障害や自然災害などがあります。  
+ サービスの継続性機能の中にも計画または計画外のダウンタイムが発生すると、期待されるサービスを顧客に提供を続行することを確認するために実装するには、どのような高可用性構成を確認する必要があります。 計画外のダウンタイムには、ハードウェア障害や自然災害などがあります。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server の高可用性を実現するサンプル シナリオ](../core/sample-biztalk-server-high-availability-scenarios.md)
