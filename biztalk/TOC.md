@@ -807,8 +807,7 @@
 ###### [EDI 送信コンポーネント](core/edi-send-components.md)
 ###### [送信 EDI メッセージのアグリーメントの解決とスキーマの決定](core/agreement-resolution-and-schema-determination-for-outgoing-edi-messages.md)
 ###### [EDI アセンブラーの動作](core/how-the-edi-assembler-works.md)
-###### 
-  [EDI ヘッダーのオーバーライド](core/overriding-edi-headers.md)
+###### [EDI ヘッダーのオーバーライド](core/overriding-edi-headers.md)
 ###### [送信 EDI メッセージの検証](core/validation-of-outgoing-edi-messages.md)
 ###### [送信 EDI メッセージのバッチ処理](core/batching-outgoing-edi-messages.md)
 ###### # [送信バッチの構成](core/configuring-an-outgoing-batch.md)
@@ -996,8 +995,7 @@
 ##### [マップのテスト](core/testing-a-map.md)
 ##### [マップの検証 (EDI)](core/validating-a-map-edi.md)
 #### [EDI のコンテキスト プロパティ](core/edi-context-properties.md)
-#### 
-  [EDI オーバーライドコンテキストのプロパティ](core/edi-override-context-properties.md)
+#### [EDI オーバーライドコンテキストのプロパティ](core/edi-override-context-properties.md)
 ### [BizTalk Server AS2 ソリューションの開発と構成](core/developing-and-configuring-biztalk-server-as2-solutions.md)
 #### [FILE 送信ポートを使用した AS2 メッセージの送信](core/sending-an-as2-message-over-a-file-send-port.md)
 #### [AS2 プロパティの構成](core/configuring-as2-properties.md)
