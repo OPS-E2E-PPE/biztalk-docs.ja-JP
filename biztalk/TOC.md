@@ -23,8 +23,7 @@
 #### [ヘルスのロールアップのしくみ](technical-guides/how-health-rolls-up.md)
 #### [主要な監視シナリオ](technical-guides/key-monitoring-scenarios.md)
 ### [トラブルシューティング](technical-guides/troubleshoot-biztalk-management-pack.md)
-### 
-  [付録: 管理パックのモニターとオーバーライド](technical-guides/appendix-monitors-and-overrides-for-management-packs.md)
+### [付録: 管理パックのモニターとオーバーライド](technical-guides/appendix-monitors-and-overrides-for-management-packs.md)
 #### [管理パックの詳細を表示](technical-guides/how-to-view-management-pack-details.md)
 #### [管理パックのモニターを表示](technical-guides/how-to-display-monitors-for-a-management-pack.md)
 #### [管理パックのオーバーライドを表示](technical-guides/how-to-display-overrides-for-a-management-pack.md)

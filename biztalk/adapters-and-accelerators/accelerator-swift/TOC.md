@@ -15,8 +15,7 @@
 ##### [証明書のインストール](installing-certificates.md)
 ###### [クライアント上の証明書ストアに証明書を追加する](adding-certificates-to-the-certificates-store-on-the-client.md)
 ###### [サーバー上の証明書ストアに証明書を追加する](adding-certificates-to-the-certificates-store-on-the-server.md)
-###### 
-  [1 台のコンピューターの展開の管理パスから CertSrv を除外する](excluding-certsrv-from-managed-paths-on-a-single-computer-deployment.md)
+###### [1 台のコンピューターの展開の管理パスから CertSrv を除外する](excluding-certsrv-from-managed-paths-on-a-single-computer-deployment.md)
 ##### [A4SWIFT プロパティの設定](setting-a4swift-properties.md)
 ##### [A4SWIFT ユーザーの追加と Windows グループの更新](adding-a4swift-users-and-updating-windows-groups.md)
 ##### [ロールと部門の追加](adding-roles-and-departments.md)
