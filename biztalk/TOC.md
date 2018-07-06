@@ -903,8 +903,7 @@
 #### [パーティーの作成、更新、削除、または検索](core/managing-parties.md)
 #### [ビジネス プロファイルの作成、更新、または削除](core/managing-business-profiles.md)
 #### [契約の作成、更新、無効化、または削除](core/managing-agreements.md)
-#### 
-  [バッチの開始、停止、オーバーライド、または削除](core/managing-batches.md)
+#### [バッチの開始、停止、オーバーライド、または削除](core/managing-batches.md)
 ### [BizTalk Server EDI ソリューションの開発と構成](core/developing-and-configuring-biztalk-server-edi-solutions.md)
 #### [EDI のプロパティの構成](core/configuring-edi-properties.md)
 ##### [パーティの全般プロパティの構成](core/configuring-general-party-properties.md)
@@ -1896,8 +1895,7 @@
 ###### [逆アセンブラー パイプライン コンポーネントでのエンコードの処理](core/handling-encoding-in-a-disassembler-pipeline-component.md)
 ###### [フラット ファイル逆アセンブラー パイプライン コンポーネントの拡張](core/extending-the-flat-file-disassembler-pipeline-component.md)
 ##### [プローブ パイプライン コンポーネントの開発](core/developing-a-probing-pipeline-component.md)
-##### 
-  [マネージド ストリーミング パイプライン コンポーネントでの Seek メソッドの実装](core/implementing-a-seek-method-in-a-managed-streaming-pipeline-component.md)
+##### [マネージド ストリーミング パイプライン コンポーネントでの Seek メソッドの実装](core/implementing-a-seek-method-in-a-managed-streaming-pipeline-component.md)
 ##### [解析エンジンおよびシリアル化エンジンの使用](core/using-the-parsing-and-serializing-engines.md)
 ###### [パイプライン コンポーネントでの文字エンコードの実装](core/implementing-character-encoding-in-a-pipeline-component.md)
 ###### [スキーマの使用](core/using-schemas.md)
