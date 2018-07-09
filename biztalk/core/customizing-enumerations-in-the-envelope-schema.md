@@ -1,5 +1,5 @@
 ---
-title: エンベロープ スキーマで列挙をカスタマイズする |Microsoft ドキュメント
+title: エンベロープ スキーマで列挙のカスタマイズ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b33458d3a7fbc71ea5e2df7603390f10b928113
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d8897130974f0d2248de49d2fd84646bb0cbafd7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241858"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36991995"
 ---
 # <a name="customizing-enumerations-in-the-envelope-schema"></a>エンベロープ スキーマでの列挙のカスタマイズ
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、サービス (エンベロープ) スキーマで ID フィールドの列挙をカスタマイズできます。 これにより、エンベロープの送信者 ID フィールドまたは受信者 ID フィールドに標準以外の値 (X12 標準の本文に定義された値以外の値セット) を使用しているインターチェンジの送受信を行うことができます。 また、アグリーメント プロパティを定義する際に、ヘッダー値のドロップダウン リストで使用できる修飾子を変更することもできます。  
@@ -25,9 +25,9 @@ ms.locfileid: "22241858"
 > [!IMPORTANT]
 >  スキーマを変更すると、該当する標準のすべてのトランザクションに変更が適用されます。 1 つのパーティのエンベロープ スキーマに変更を加えることはできません。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、製品に付属している Microsoft.BizTalk.Edi.BaseArtifacts.dll の静的サービス スキーマから使用可能な値の一覧を組み込みます。 値の基本セットを拡張するには、サービス スキーマ拡張を開発し、展開する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]サービス (エンベロープ) スキーマ テンプレートの列挙の変更に使用することができますを提供します。 これらのサービス スキーマは、X12_ServiceSchemaExtension.xsd および EDIFACT_ServiceSchemaExtension.xsd がします。 各カスタム スキーマには、標準に応じて、次のいずれかの名前空間が存在します。 この名前空間は変更できません。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、製品に付属している Microsoft.BizTalk.Edi.BaseArtifacts.dll の静的サービス スキーマから使用可能な値の一覧を組み込みます。 値の基本セットを拡張するには、サービス スキーマ拡張を開発し、展開する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サービス (エンベロープ) スキーマ テンプレートの列挙体を変更するのに使用できるを提供します。 これらのサービス スキーマは、X12_ServiceSchemaExtension.xsd および EDIFACT_ServiceSchemaExtension.xsd が。 各カスタム スキーマには、標準に応じて、次のいずれかの名前空間が存在します。 この名前空間は変更できません。  
   
-|Standard|名前空間|  
+|Standard|Namespace|  
 |--------------|---------------|  
 |X12 および HIPAA|`http://schemas.microsoft.com/BizTalk/EDI/X12/2006`|  
 |EDIFACT|`http://schemas.microsoft.com/BizTalk/EDI/EDIFACT/2006`|  
@@ -43,7 +43,7 @@ ms.locfileid: "22241858"
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。  
   
-##  <a name="BKMK_Env_Can"></a>変更可能なエンベロープ フィールド  
+##  <a name="BKMK_Env_Can"></a> 変更可能なエンベロープ フィールド  
  次のエンベロープ フィールドのみ変更できます。 拡張スキーマには、これらのフィールドのみ含まれています。 サービス拡張スキーマに他のフィールドを追加しても、処理には影響しません。  
   
 |Standard|フィールド|  
@@ -61,25 +61,25 @@ ms.locfileid: "22241858"
   
 ### <a name="to-customize-an-enumeration-in-the-envelope-schema"></a>エンベロープ スキーマで列挙をカスタマイズするには  
   
-1.  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で新しいプロジェクトを作成します。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で新しいプロジェクトを作成します。  
   
-2.  BizTalk エディターで、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI にある X12_ServiceSchemaExtension.xsd スキーマ (X12 または HIPAA の列挙を変更する場合) または EDIFACT_ServiceSchemaExtension.xsd スキーマを BizTalk プロジェクトに追加します。 スキーマを開きます。  
+2. BizTalk エディターで、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI にある X12_ServiceSchemaExtension.xsd スキーマ (X12 または HIPAA の列挙を変更する場合) または EDIFACT_ServiceSchemaExtension.xsd スキーマを BizTalk プロジェクトに追加します。 スキーマを開きます。  
   
-3.  列挙の値を変更するには、内の列挙型を選択、**プロパティ** ウィンドウで、を開くには、省略記号をクリックし、**列挙エディター**です。 各行に 1 つの値が存在する、必要に応じて、値の一覧に追加、**値**ウィンドウです。 **[OK]** をクリックします。  
+3. 列挙体の値を変更するで列挙を選択します。、**プロパティ**ウィンドウを開く省略記号をクリックして、**列挙エディター**します。 必要に応じて、各行に 1 つの値が存在する値のリストを追加、**値**ウィンドウ。 **[OK]** をクリックします。  
   
-    > [!IMPORTANT]
-    >  サービス スキーマの名前空間は変更できません。 スキーマは、製品にインストールされている元の拡張スキーマと同じ名前空間とルート ノード名を持つ必要があります。  
+   > [!IMPORTANT]
+   >  サービス スキーマの名前空間は変更できません。 スキーマは、製品にインストールされている元の拡張スキーマと同じ名前空間とルート ノード名を持つ必要があります。  
   
-    > [!NOTE]
-    >  新しいフィールドをスキーマに追加しても、そのフィールドは無視されます。 記載されたフィールドのみ、[エンベロープ フィールドを変更できる](../core/customizing-enumerations-in-the-envelope-schema.md#BKMK_Env_Can)前のセクションを変更することができます。  
+   > [!NOTE]
+   >  新しいフィールドをスキーマに追加しても、そのフィールドは無視されます。 示されているフィールドのみ、[エンベロープ フィールドを変更できること](../core/customizing-enumerations-in-the-envelope-schema.md#BKMK_Env_Can)前のセクションを変更することができます。  
   
-4.  スキーマを保存します。  
+4. スキーマを保存します。  
   
-5.  スキーマを右クリックし、をクリックして**展開**です。  
+5. スキーマを右クリックし、をクリックして**デプロイ**します。  
   
-    > [!NOTE]
-    >  スキーマは、現在の BizTalk グループに展開する必要があります。  
+   > [!NOTE]
+   >  スキーマは、現在の BizTalk グループに展開する必要があります。  
   
 ## <a name="see-also"></a>参照  
  [EDI スキーマの開発](../core/developing-edi-schemas.md)   
- [EDI スキーマを変更します。](../core/modifying-edi-schemas.md)
+ [EDI スキーマの変更](../core/modifying-edi-schemas.md)

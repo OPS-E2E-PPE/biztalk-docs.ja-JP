@@ -1,5 +1,5 @@
 ---
-title: 中断、再開、およびオーケストレーションのインスタンスを終了する方法 |Microsoft ドキュメント
+title: 中断、再開、およびオーケストレーションのインスタンスを終了する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9528ac0e810a3d4e203733ab1cc5b041d3d61d31
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 88ad7a5b278f8f972a518af40d527ff312d0d237
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256770"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36980395"
 ---
 # <a name="how-to-suspend-resume-and-terminate-orchestration-instances"></a>オーケストレーション インスタンスを中断、再開、および終了する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、実行中の 1 つ以上のオーケストレーションのサービス インスタンスを中断、再開、および終了する方法について説明します。 サービスのインスタンスとは、後続の処理や追跡を目的に BizTalk Server が処理しているオーケストレーションのインスタンス、または、メッセージ ボックスにシリアル化されたオーケストレーションのインスタンスを指します。  
@@ -41,26 +41,26 @@ ms.locfileid: "22256770"
 -   **終了します。** メッセージ処理をすべて終了します。 サービス インスタンスは、BizTalk Server データベースから削除されます。 サービス インスタンスが処理しているメッセージも削除されます。ただし、終了しないサービス インスタンスによって参照されているメッセージは削除されません。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、BizTalk Server Operators グループまたは BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)です。  
+ このトピックの手順を実行するには、BizTalk Server Operators グループまたは BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
   
 ### <a name="to-view-start-stop-or-terminate-an-instance-of-an-orchestration"></a>オーケストレーションのインスタンスを開始、停止、または終了するには  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリック**BizTalk Server 管理コンソール**です。  
+1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2.  [グループ ハブ] ページを表示する BizTalk グループを選択します。  
+2. [グループ ハブ] ページを表示する BizTalk グループを選択します。  
   
-3.  **進行中の作業**をクリックして**サービス インスタンスを実行している**です。  
+3. [**進行中の作業**、] をクリックして**サービス インスタンスを実行している**します。  
   
-     ページ下部のクエリ結果パネルに、オーケストレーションのすべてのインスタンスが表示されます。  
+    ページ下部のクエリ結果パネルに、オーケストレーションのすべてのインスタンスが表示されます。  
   
-4.  オーケストレーションの別のインスタンスを表示して、クエリを絞り込んでするには、下にあるボックスをクリックして**値**の**Search For**フィールドで、表示、およびをクリックするインスタンスの種類を選択**クエリの実行**. クエリの作成の詳細については、「関連項目」で検索に関するトピックを選んで参照してください。  
+4. クエリを変更して、オーケストレーションの別のインスタンスを表示、下にあるボックスをクリックします**値**の、**検索の**フィールドで、表示する をクリックし、インスタンスの種類を選択します。**クエリの実行。**. クエリの作成の詳細については、「関連項目」で検索に関するトピックを選んで参照してください。  
   
-5.  をクリックして、インスタンスを右クリックして**Suspend**、**再開**、または**Terminate**です。 この機能を使用すると、再開するインスタンスを選択できます。  
+5. をクリックしてインスタンスを右クリックして**Suspend**、**再開**、または**Terminate**します。 この機能を使用すると、再開するインスタンスを選択できます。  
   
-    > [!NOTE]
-    >  複数のインスタンスに対して操作を実行するには、CTRL キーを押しながら目的のインスタンスをクリックします。 インスタンスを右クリックし、をクリックし、 **Suspend**、**再開**、または**Terminate**です。  
+   > [!NOTE]
+   >  複数のインスタンスに対して操作を実行するには、CTRL キーを押しながら目的のインスタンスをクリックします。 次にインスタンスを右クリックし、をクリックして**Suspend**、**再開**、または**Terminate**します。  
   
-     [サービス インスタンスの状態](../core/service-instance-states.md)中断状態について詳しく説明します。  
+    [サービス インスタンスの状態](../core/service-instance-states.md)中断状態について詳しく説明します。  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーションの管理](../core/managing-orchestrations.md)   
