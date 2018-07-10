@@ -1,5 +1,5 @@
 ---
-title: 作成して、A4SWIFT パイプラインを展開する |Microsoft ドキュメント
+title: A4SWIFT パイプラインの作成と |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,86 +17,86 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bec21ebd5a3b32986969676a78109cad55d870cf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d337b97dfb1973ef10c113ae0a206a51dcd63b1a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210954"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002451"
 ---
-# <a name="creating-and-deploying-a4swift-pipelines"></a>作成して、A4SWIFT パイプラインを展開します。
-次の図に示すように作成し、メッセージ repair and new submission の SWIFT パイプラインを展開するには、次の手順を実行します。  
-  
+# <a name="creating-and-deploying-a4swift-pipelines"></a>A4SWIFT パイプラインの作成と
+次の図に示すように作成してメッセージ repair and new submission は、SWIFT パイプラインをデプロイするには、次の手順を実行します。  
+
  ![](../../adapters-and-accelerators/accelerator-swift/media/a4swift-pipeline-configuration.gif "A4SWIFT_Pipeline_Configuration")  
-  
+
  **概要**  
-  
+
  次のスキーマを展開します。  
-  
--   カスタムは、SWIFT 逆アセンブラのパイプラインが表示されます。 BRE の検証および XML プロパティを設定すると、True、かつ、SWIFT ヘッダー スキーマ プロパティを (なし)。  
-  
+
+-   カスタムの受信、SWIFT 逆アセンブラーをパイプラインします。 True、SWIFT ヘッダー スキーマ プロパティを (None) には、BRE の検証および XML の検証のプロパティを設定します。  
+
 -   カスタム送信パイプラインに SWIFT アセンブラー  
-  
+
 ### <a name="to-create-a-pipeline-project"></a>パイプライン プロジェクトを作成するには  
-  
-1.  Visual Studio で、[**ファイル**、] をポイント**新規**、クリックして**プロジェクト**です。  
-  
-2.  新しいプロジェクト ダイアログ ボックスで、**プロジェクトの種類**ペインで、 **BizTalk プロジェクト**フォルダーです。  
-  
-3.  **テンプレート**ペインで、**空の BizTalk Server プロジェクト**です。  
-  
-4.  **名前**ボックスで、プロジェクト名の名前を入力します。  
-  
-5.  **ソリューション**ボックスで、**ソリューションに追加**です。 **場所**ボックスで作成したスキーマ プロジェクトの場所を入力[A4SWIFT のスキーマを展開する](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)です。  
-  
-6.  をクリックして**OK**新しいプロジェクトを開きます。  
-    [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]ソリューション エクスプ ローラーに新しいプロジェクトを追加し、指定されたフォルダーにプロジェクト フォルダーとファイルを作成します。  
-  
-7.  作成し、強力なキー ファイルをプロジェクトに割り当てます。 詳細についてを参照してください「プロジェクトを作成する、厳密な名前 SWIFT」 [A4SWIFT のスキーマを展開する](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)です。  
-  
+
+1. Visual Studio で、次のようにクリックします。**ファイル**、 をポイント**新規**、 をクリックし、**プロジェクト**します。  
+
+2. 新しいプロジェクト ダイアログ ボックスで、**プロジェクトの種類**ペインで、 **BizTalk プロジェクト**フォルダー。  
+
+3. **テンプレート**ペインで、**空の BizTalk Server プロジェクト**します。  
+
+4. **名前**ボックスで、プロジェクト名の名前を入力します。  
+
+5. **ソリューション**ボックスで、**ソリューションに追加**します。 **場所**ボックスで作成したスキーマ プロジェクトの場所を入力[A4SWIFT スキーマの展開](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)します。  
+
+6. をクリックして**OK**を新しいプロジェクトを開きます。  
+   [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] ソリューション エクスプ ローラーに新しいプロジェクトを追加し、指定したフォルダーで、プロジェクト フォルダーとファイルを作成します。  
+
+7. 作成し、厳密なキー ファイルをプロジェクトに割り当てます。 詳細についてを参照してください「厳密な名前の SWIFT プロジェクトを作成するには" [A4SWIFT スキーマの展開](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)します。  
+
 ### <a name="to-add-a-custom-receive-pipeline"></a>カスタム受信パイプラインを追加するには  
-  
-1.  ソリューション エクスプ ローラーで、パイプライン プロジェクトを右クリックし、**追加**、クリックして**新しい項目の**します。  
-  
-2.  新しい項目の追加 ダイアログ ボックスで、**パイプライン ファイル**カテゴリ ウィンドウで、選択**受信パイプライン**テンプレート ペインからです。  
-  
-3.  **名前**ボックスで、パイプラインの名前を入力します。  
-  
-4.  をクリックして**追加**BizTalk パイプライン デザイナーで空白のパイプラインを開きます。  
-  
-5.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]をクリックして**ビュー**し**ツールボックス**です。  
-  
-6.  **BizTalk パイプライン コンポーネントのツールボックス**、ドラッグ、 **SWIFT 逆アセンブラー**を**ここにドロップ**下のボックス、**逆アセンブル**ステージ図形に**BizTalk パイプライン デザイナ**です。 ままにして、 **SWIFT 逆アセンブラー**で選択されて、 **BizTalk パイプライン デザイナ**です。  
-  
-7.  **プロパティ**、いることを確認、 **BRE 検証**と**XML 検証**プロパティに設定されます**True**です。  
-  
-    > [!NOTE]
-    >  SWIFT ヘッダー スキーマ プロパティを設定する必要があります **(なし)** です。  
-  
-8.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]をクリックして**ファイル**、し**すべてを保存**です。  
-  
+
+1. ソリューション エクスプ ローラーで、パイプライン プロジェクトを右クリックして**追加**、 をクリックし、**新しい項目の**します。  
+
+2. 新しい項目の追加 ダイアログ ボックスで、**パイプライン ファイル**カテゴリ ウィンドウで選択し**受信パイプライン**テンプレート ペインから。  
+
+3. **名前**ボックスに、パイプラインの名前を入力します。  
+
+4. クリックして**追加**に BizTalk パイプライン デザイナで、空のパイプラインを開きます。  
+
+5. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、] をクリックして**ビュー**し**ツールボックス**します。  
+
+6. **BizTalk パイプライン コンポーネントのツールボックス**、ドラッグ、 **SWIFT 逆アセンブラー**を**ここにドロップ**下のボックス、**逆アセンブル**ステージ図形に**BizTalk パイプライン デザイナ**します。 ままに、 **SWIFT 逆アセンブラー**として選択された状態で、 **BizTalk パイプライン デザイナ**します。  
+
+7. **プロパティ**、いることを確認、 **BRE 検証**と**XML 検証**プロパティに設定されます**True**します。  
+
+   > [!NOTE]
+   >  SWIFT ヘッダー スキーマ プロパティに設定する必要があります **(なし)** します。  
+
+8. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、] をクリックして**ファイル**、し**すべて保存**します。  
+
 ### <a name="to-add-a-custom-send-pipeline"></a>カスタム送信パイプラインを追加するには  
-  
-1.  ソリューション エクスプ ローラーで右クリックし、 **SWIFTPipelines**プロジェクトをポイントし、**追加**、順にクリック**新しい項目の**します。  
-  
-2.  新しい項目の追加 ダイアログ ボックスであることを確認**パイプライン ファイル**が選択されてカテゴリ ウィンドウで、**送信パイプライン**テンプレート ペインからです。  
-  
-3.  **名前**ボックスで、パイプラインの名前を入力します。  
-  
-4.  をクリックして**追加**BizTalk パイプライン デザイナーで空白のパイプラインを開きます。  
-  
-    > [!NOTE]
-    >  BizTalk パイプライン デザイナーで空のパイプラインが表示されます。 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーに SWIFTPipelines プロジェクトの下で、新しいパイプラインを追加します。  
-  
-5.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]をクリックして**ビュー**し**ツールボックス**です。  
-  
-6.  **BizTalk パイプライン コンポーネントのツールボックス**、ドラッグ**SWIFT アセンブラー**を**ここにドロップ**下のボックス、**アセンブル**で図形をステージ**BizTalk パイプライン デザイナ**です。  
-  
-7.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]をクリックして**ファイル**、し**すべてを保存**です。  
-  
-8.  パイプライン プロジェクトを右クリックし、をクリックして**ビルド**です。  
-  
-    > [!NOTE]
-    >  コンパイル プロセス中に表示しないようにすべてのエラーです。 場合は、エラーの原因を確認して修正して、プロジェクトを再構築します。 ただし、警告が表示、可能性があります。 警告を引き起こす状況を修正することができます。 詳細についてを参照してください「パイプライン プロジェクトをビルドすることがありますで警告を表示」[その他の既知の問題](http://msdn.microsoft.com/library/bc94c781-2a56-4f80-8ecb-e654de2f6ed6)です。  
-  
-9. パイプライン プロジェクトを右クリックし、をクリックして**展開**です。
+
+1. ソリューション エクスプ ローラーで右クリックし、 **SWIFTPipelines**プロジェクトをポイントして、**追加**、 をクリックし、**新しい項目の**。  
+
+2. 新しい項目の追加 ダイアログ ボックスであることを確認**パイプライン ファイル**がカテゴリ ウィンドウで選択されて **送信パイプライン**テンプレート ペインから。  
+
+3. **名前**ボックスに、パイプラインの名前を入力します。  
+
+4. クリックして**追加**に BizTalk パイプライン デザイナで、空のパイプラインを開きます。  
+
+   > [!NOTE]
+   >  BizTalk パイプライン デザイナーで空のパイプラインが表示されます。 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] ソリューション エクスプ ローラーに SWIFTPipelines プロジェクトの下の新しいパイプラインを追加します。  
+
+5. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、] をクリックして**ビュー**し**ツールボックス**します。  
+
+6. **BizTalk パイプライン コンポーネントのツールボックス**、ドラッグ**SWIFT アセンブラー**を**ここにドロップ**下のボックス、**アセンブル**で図形をステージ**BizTalk パイプライン デザイナ**します。  
+
+7. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、] をクリックして**ファイル**、し**すべて保存**します。  
+
+8. パイプライン プロジェクトを右クリックし、をクリックし、**ビルド**します。  
+
+   > [!NOTE]
+   >  コンパイル プロセス中にいない、エラーが発生する必要があります。 場合は、エラーの原因を確認、修正およびプロジェクトを再ビルドします。 ただし、警告が表示、可能性があります。 警告につながる条件を修正することができます。 詳細についてを参照してください「で警告結果がパイプライン プロジェクトのビルド」[その他の既知の問題](http://msdn.microsoft.com/library/bc94c781-2a56-4f80-8ecb-e654de2f6ed6)します。  
+
+9. パイプライン プロジェクトを右クリックし、をクリックし、**デプロイ**します。

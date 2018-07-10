@@ -1,5 +1,5 @@
 ---
-title: メッセージ エディタ パイプライン コンポーネント |Microsoft ドキュメント
+title: メッセージ エディタ パイプライン コンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,46 +17,46 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f7685fbf800ad69b20eda31e9b64cb75ec7c511
-ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
+ms.openlocfilehash: 6f0ac419e64b8a1a949fb2e3044be9de670b387a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34855685"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36975427"
 ---
 # <a name="message-editor-pipeline-component"></a>メッセージ エディター パイプライン コンポーネント
 このコンポーネントにより、送信または受信パイプライン内のマルチパート メッセージの一部を自動的に編集できます。 このコンポーネントは既存のパイプラインに追加して、通常の処理の一部として置換のためのパイプラインを設定します。  
   
 ## <a name="building-the-message-editor-pipeline-component-into-an-existing-pipeline"></a>既存のパイプラインへのメッセージ エディタ パイプライン コンポーネントの構築  
- メッセージ エディタ パイプライン コンポーネントを使用するには、既存のパイプラインにコンポーネントを追加する必要があります。 詳細については、パイプラインとパイプライン デザイナーの作成」BizTalk Server ヘルプを参照してください。  
+ メッセージ エディタ パイプライン コンポーネントを使用するには、既存のパイプラインにコンポーネントを追加する必要があります。 詳細については、」を作成するパイプライン「パイプライン デザイナーで BizTalk Server のヘルプを参照してください。  
   
 #### <a name="to-add-the-message-editor-pipeline-component-to-an-existing-pipeline"></a>メッセージ エディタ パイプライン コンポーネントを既存のパイプラインに追加するには  
   
-1.  Visual Studio を起動します。  
+1. Visual Studio を起動します。  
   
-2.  **ファイル** メニューのをポイント**開く**、順にクリック**プロジェクト**です。  
+2. **ファイル**メニューで、**オープン**、 をクリックし、**プロジェクト**。  
   
-3.  C:\Program Files (x86) \Microsoft BizTalk に移動\<バージョン\>Accelerator for rosettanet \sdk\message Editor Pipeline Component、選択 **[messageeditor.csproj]**、クリックして**開く**.  
+3. C:\Program Files (x86) \microsoft BizTalk 移動\<バージョン\>Accelerator for rosettanet \sdk\message Editor Pipeline Component では、選択 **[messageeditor.csproj]**、順にクリックします**開く**.  
   
-4.  Visual Studio コマンド プロンプトを起動します。  
+4. Visual Studio コマンド プロンプトを起動します。  
   
-5.  コマンド プロンプトで C:\Program Files (x86) \Microsoft BizTalk に移動\<バージョン\>Accelerator for rosettanet \sdk\message Editor Pipeline component \obj\debug です。  
+5. コマンド プロンプトで C:\Program Files (x86) \microsoft BizTalk 移動\<バージョン\>Accelerator for rosettanet \sdk\message Editor Pipeline component \obj\debug します。  
   
-6.  コマンド プロンプトで次のように入力します。 **sn-k MessageEditor.snk**キーを作成し、ENTER キーを押します。  
+6. コマンド プロンプトで「 **sn-k MessageEditor.snk**キーを作成し、ENTER キーを押します。  
   
-7.  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーで右クリック**MessageEditor**、クリックして**プロパティ**です。  
+7. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーで右クリックして **[messageeditor]**、] をクリックし、**プロパティ**します。  
   
-8.  **MessageEditor プロパティ** ページで **署名** タブをクリックして**アセンブリに署名**チェック ボックスをオンします。  
+8. **MessageEditor プロパティ** ページで **署名** タブをクリックして**アセンブリに署名**チェック ボックスをオンします。  
   
-9. **厳密な名前キー ファイルを選択して**ドロップダウン リストで、C:\Program Files (x86) \microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\message Editor Pipeline component \obj\debug を選択**MessageEditor.snk**  をクリックし、**開く**です。  
+9. **厳密な名前キー ファイルを選択して**ドロップダウンで、C:\Program Files (x86) \microsoft BizTalk\<バージョン\>アクセラレータを選択してください Editor Pipeline component \obj\debug**MessageEditor.snk**し**オープン**します。  
   
-10. ソリューション エクスプ ローラーで右クリック**MessageEditor**、クリックして**ビルド**です。 出力ペインで、ビルドが成功したことを確認します。  
+10. ソリューション エクスプ ローラーで右クリックして**messageeditor**、 をクリックし、**ビルド**します。 出力ペインで、ビルドが成功したことを確認します。  
   
-11. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリック**Windows エクスプ ローラー**です。  
+11. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリックします**Windows エクスプ ローラー**します。  
   
-12. [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーで、C:\Program files \microsoft BizTalk 2013 Accelerator for rosettanet \sdk\message Editor Pipeline component \obj\debug 移動を右クリックして **[microsoft.solutions.btarn.sdk.messageeditor.dll]**、クリックして**コピー**です。  
+12. [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーには、C:\Program files \microsoft BizTalk 2013 Accelerator for rosettanet \sdk\message Editor Pipeline component \obj\debug の移動を右クリックして **[microsoft.solutions.btarn.sdk.messageeditor.dll]**、クリックして**コピー**します。  
   
-13. C:\Program files \microsoft BizTalk Server 2013\Pipeline コンポーネントに移動、右クリック**パイプライン コンポーネント**、順にクリック**貼り付け**です。  
+13. 2013\Pipeline コンポーネントを C:\Program files \microsoft BizTalk Server に移動、右クリックして**パイプライン コンポーネント**、 をクリックし、**貼り付け**します。  
   
 14. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをポイント**開く**、クリックして**プロジェクト**です。  
   
@@ -64,26 +64,26 @@ ms.locfileid: "34855685"
   
 16. ソリューション エクスプローラーで、パイプライン名をクリックし、パイプライン デザイナーでパイプラインを開きます。  
   
-17. ツールボックス ペインの BizTalk パイプライン コンポーネント ペイン内を右クリックし、をクリックして**アイテムの追加/削除**です。  
+17. ツールボックス ウィンドウの BizTalk パイプライン コンポーネント ペインで右クリックし をクリックし、**アイテムの追加/削除**します。  
   
-18. **ツールボックスのカスタマイズ** ダイアログ ボックスで、 **BizTalk パイプライン コンポーネント** タブで  **BTARN Message Editor Component**、順にクリック**ok**.  
+18. **ツールボックスのカスタマイズ** ダイアログ ボックスで、 **BizTalk パイプライン コンポーネント** タブで  **BTARN Message Editor Component**、順にクリックします**ok**.  
   
-19. BizTalk パイプライン コンポーネント ペインで、[ツールボックス] ウィンドウをクリックして押した**BTARN Message Editor Component**、コンポーネントをパイプライン内の目的の位置にドラッグします。  
+19. [ツールボックス] ウィンドウの [BizTalk パイプライン コンポーネント] ウィンドウで、クリックして押したまま**BTARN Message Editor Component**、コンポーネントをパイプライン内の目的の位置にドラッグします。  
   
-20. BizTalk パイプライン コンポーネント ペインで、[ツールボックス] ウィンドウをクリックして押した**BTARN Message Editor Component**、コンポーネントをパイプライン内の目的の位置にドラッグします。  
+20. [ツールボックス] ウィンドウの [BizTalk パイプライン コンポーネント] ウィンドウで、クリックして押したまま**BTARN Message Editor Component**、コンポーネントをパイプライン内の目的の位置にドラッグします。  
   
     > [!NOTE]
     >  メッセージ エディター パイプライン コンポーネントは、受信パイプライン コンポーネントの逆アセンブル ステージ、または送信パイプライン コンポーネントのプリアセンブル ステージの後で追加することをお勧めします。  
   
-21. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、パイプライン デザイナーで、選択、 **BTARN Message Editor Component**図形です。  
+21. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、パイプライン デザイナーで、選択、 **BTARN Message Editor Component**図形。  
   
 22. 関連付けられているテキスト ボックスに、プロパティ ペインで**XPath クエリ**値を変更する XPath 要素の名前を入力します。  
   
 23. 関連付けられているテキスト ボックスに**XPath 値**、XPath 要素を設定する値を入力します。  
   
-24. ソリューション エクスプ ローラーでプロジェクト名を右クリックし、をクリックして**ビルド**です。 ビルドが成功することを確認します。  
+24. ソリューション エクスプ ローラーでプロジェクト名を右クリックし をクリックし、**ビルド**します。 ビルドが成功することを確認します。  
   
-25. ソリューション エクスプ ローラーでプロジェクト名を右クリックし、をクリックして**展開**です。 展開が成功することを確認します。  
+25. ソリューション エクスプ ローラーでプロジェクト名を右クリックし をクリックし、**デプロイ**します。 展開が成功することを確認します。  
   
 ## <a name="example"></a>例  
  0C1 PIP スキーマで `ProprietaryDocumentIdentifier` 要素の値を変更するには、次のコード セクションに示された XPath クエリをメッセージ エディタ パイプライン コンポーネントの XPath クエリ プロパティに追加します。  

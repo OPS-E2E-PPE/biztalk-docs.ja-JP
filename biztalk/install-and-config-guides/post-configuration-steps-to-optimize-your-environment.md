@@ -1,6 +1,6 @@
 ---
-title: お客様の環境を最適化するために後の構成手順 |Microsoft ドキュメント
-description: インストールして、BizTalk Server を構成した後に完了するタスクを含む SQL エージェント ジョブの構成、EDI スキーマをインストール、ホストとホスト インスタンス、および BizTalk Server の詳細を作成します。
+title: 構成後の手順、環境を最適化する |Microsoft Docs
+description: インストールして、BizTalk Server を構成した後に完了するタスクを含む SQL エージェント ジョブの構成、EDI スキーマをインストール、ホストとホスト インスタンス、および BizTalk Server では、複数の作成
 ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 09/27/2017
@@ -13,12 +13,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80c5f4b69e8204c89ebb3dd74252e85e815b1867
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 51f78d561af0c7ebe1212bffe79c862a16d0a512
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25976840"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36986147"
 ---
 # <a name="post-configuration-steps-to-optimize-your-environment"></a>環境を最適化するための構成後の手順
 パフォーマンスを向上させ、BizTalk 環境を維持し、EDI スキーマをインストールする場合に役立つ構成後の手順です。
@@ -67,7 +67,7 @@ BizTalk Server の場合、バックアップ ファイルを削除するジョ�
     FOR SELECT 'del "' + [BackupFileLocation] + '\' + [BackupFileName] + '"' FROM [adm_BackupHistory]
     WHERE  datediff( dd, [BackupDateTime], getdate() ) >= @DaysToKeep
     AND [BackupSetId] NOT IN ( SELECT [BackupSetId] FROM [dbo].[adm_BackupHistory] [h2] WHERE [h2].[BackupSetId] = [BackupSetId] AND datediff( dd, [h2].[BackupDateTime], getdate() ) < @DaysToKeep )
- 
+
     DECLARE @cmd varchar(400)
     OPEN DeleteBackupFiles
     FETCH NEXT FROM DeleteBackupFiles INTO @cmd
@@ -101,65 +101,66 @@ BizTalk Server の場合、バックアップ ファイルを削除するジョ�
 5. **[クリーンアップ タスク]** ウィンドウで、**[フォルダーを検索し、拡張子に基づいてファイルを削除する]** に移動し、バックアップ フォルダー (f:\BizTalkBackUps など) を選択して、ファイル拡張子として **.bak** を入力します。 経過期間に基づいてファイルを削除することもできます。 たとえば、3 週間が経過したファイルを削除する場合は、3 と入力します。 **[次へ]** を選択します。
 6. ウィザードでの操作が完了したら、必要な追加情報を入力します。 **[完了]** を選択します。
 
-  
+
 ## <a name="install-edi-schemas-and-more-edi-as2-configuration"></a>EDI スキーマのインストールおよび EDI AS2 の追加構成
  EANCOM、EDIFACT、HIPAA、および X12 のスキーマ ファイルは、MicrosoftEdiXSDTemplates.exe という名前の自己展開型の実行可能ファイルに含まれています。 EDI ソリューションを作成するには、これらのファイルを抽出し、プロジェクトと共に配置します。 これらのファイルをインストールして抽出するには、次のようにします。  
-  
-1.  [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] インストールを実行し、**開発ツールおよび SDK** コンポーネントをインストールします。 このコンポーネントは、MicrosoftEdiXSDTemplates.exe EDI スキーマ ファイルを \XSD_Schema\EDI フォルダーにダウンロードします。  
-  
-    > [!NOTE]
-    > [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] をアップグレードすると、環境内の MicrosoftEdiXSDTemplates.exe ファイルが、アップグレードに関連付けられた新しい MicrosoftEdiXSDTemplates.exe ファイルに置き換えられます。 前のスキーマが必要な場合は、前の MicrosoftEdiXSDTemplates.exe ファイルをバックアップします。  
-  
-    > [!NOTE] 
-    > [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] を新しいビルドにアップグレードするときにメッセージ スキーマをアップグレードすると、更新されたスキーマを使用するときに問題が発生したり、追加の更新手順が必要になったりする場合があります。 「[アプリケーションの更新に関する重要な考慮事項](../core/important-considerations-for-updating-applications.md)」の「スキーマを更新する際の考慮事項」セクションを参照してください。
-  
-2.  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\XSD_Schema\EDI に移動し、MicrosoftEdiXSDTemplates.exe をダブルクリックします。  
-  
-3.  スキーマを [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\XSD_Schema\EDI に抽出します。 スキーマを抽出すると、EANCOM、EDIFACT、HIPAA、および X12 のフォルダーに格納されます。  
-  
+
+1. [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] インストールを実行し、**開発ツールおよび SDK** コンポーネントをインストールします。 このコンポーネントは、MicrosoftEdiXSDTemplates.exe EDI スキーマ ファイルを \XSD_Schema\EDI フォルダーにダウンロードします。  
+
+   > [!NOTE]
+   > [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] をアップグレードすると、環境内の MicrosoftEdiXSDTemplates.exe ファイルが、アップグレードに関連付けられた新しい MicrosoftEdiXSDTemplates.exe ファイルに置き換えられます。 前のスキーマが必要な場合は、前の MicrosoftEdiXSDTemplates.exe ファイルをバックアップします。  
+   > 
+   > [!NOTE]
+   > [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] を新しいビルドにアップグレードするときにメッセージ スキーマをアップグレードすると、更新されたスキーマを使用するときに問題が発生したり、追加の更新手順が必要になったりする場合があります。 「[アプリケーションの更新に関する重要な考慮事項](../core/important-considerations-for-updating-applications.md)」の「スキーマを更新する際の考慮事項」セクションを参照してください。
+
+2. [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\XSD_Schema\EDI に移動し、MicrosoftEdiXSDTemplates.exe をダブルクリックします。  
+
+3. スキーマを [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\XSD_Schema\EDI に抽出します。 スキーマを抽出すると、EANCOM、EDIFACT、HIPAA、および X12 のフォルダーに格納されます。  
+
 #### <a name="add-a-reference-to-the-biztalk-server-edi-application"></a>BizTalk Server EDI アプリケーションへの参照を追加する  
  EDI スキーマ、パイプライン、およびオーケストレーションは **BizTalk EDI アプリケーション**に展開されます。 他のアプリケーションを EDI アプリケーションとして使用するには、**BizTalk EDI アプリケーション**への参照を追加します。 手順:  
-  
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、**[アプリケーション]** を展開します。 EDI で使用するアプリケーション (*BizTalk アプリケーション 1* など) を右クリックして、**[追加]**、**[参照]** の順に選択します。  
-  
-2.  **[BizTalk EDI アプリケーション]** を選択し、**[OK]** を選択して変更を保存します。  
-  
+
+1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、**[アプリケーション]** を展開します。 EDI で使用するアプリケーション (*BizTalk アプリケーション 1* など) を右クリックして、**[追加]**、**[参照]** の順に選択します。  
+
+2. **[BizTalk EDI アプリケーション]** を選択し、**[OK]** を選択して変更を保存します。  
+
 > [!TIP]
 >  他のアプリケーションへの参照を表示するには、任意のアプリケーションを右クリックし **[プロパティ]** を選択します。 **[参照]** を選択します。 新しい参照を追加して、既存の参照を削除することもできます。  
-  
+
 > [!NOTE]
 >  BizTalk EDI アプリケーションにカスタム アイテムを追加しないでください。 このアプリケーションはそのままにしておくことをお勧めします。  
-  
+
 #### <a name="start-batch-orchestrations"></a>バッチ オーケストレーションを開始する  
  パーティが EDI バッチを送受信できるようにするには、バッチ処理オーケストレーションを開始します。 これらのオーケストレーションは、インストール ウィザードや構成ウィザードでは開始されません。 手順:  
-  
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、**[BizTalk EDI アプリケーション]** を展開し、**[オーケストレーション]** を選択します。  
-  
-2.  次のオーケストレーションをそれぞれ右クリックし、**[開始]** を選択します。  
-  
-    -   Microsoft.BizTalk.Edi.BatchSuspendOrchestration.BatchElementSuspendService (アセンブリ: Microsoft.BizTalk.Edi.BatchingOrchestration.dll)  
-  
-    -   Microsoft.BizTalk.Edi.BatchingOrchestration.BatchingService (アセンブリ: Microsoft.BizTalk.Edi.BatchingOrchestration.dll)  
-  
-    -   Microsoft.BizTalk.Edi.RoutingOrchestration.BatchRoutingService (アセンブリ: Microsoft.BizTalk.Edi.RoutingOrchestration.dll)  
-  
+
+1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、**[BizTalk EDI アプリケーション]** を展開し、**[オーケストレーション]** を選択します。  
+
+2. 次のオーケストレーションをそれぞれ右クリックし、**[開始]** を選択します。  
+
+   -   Microsoft.BizTalk.Edi.BatchSuspendOrchestration.BatchElementSuspendService (アセンブリ: Microsoft.BizTalk.Edi.BatchingOrchestration.dll)  
+
+   -   Microsoft.BizTalk.Edi.BatchingOrchestration.BatchingService (アセンブリ: Microsoft.BizTalk.Edi.BatchingOrchestration.dll)  
+
+   -   Microsoft.BizTalk.Edi.RoutingOrchestration.BatchRoutingService (アセンブリ: Microsoft.BizTalk.Edi.RoutingOrchestration.dll)  
+
 > [!NOTE]
 >  EDI バッチ処理オーケストレーションは、EDI バッチを送受信する場合にのみ開始する必要があります。 システムが EDI バッチの送受信を行わないときに開始すると、システム パフォーマンスに影響することがあります。  
-  
+
 #### <a name="migrate-edi-artifacts-from-a-previous-biztalk-version"></a>以前の BizTalk バージョンからの EDI アイテムを移行します。  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2010 以降のバージョンでの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] での取引先の管理方法が更新されました。 以前の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] バージョンでは、パーティは取引先でのみ作成され、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をホストするパートナーでは作成されませんでした。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2010 以降では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をホストするパートナーを含むすべての取引先に関してパーティーを作成する必要があります。 以前の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] バージョンでは、エンコード (X12 および EDIFACT) とトランスポート (AS2) プロトコルのプロパティはパーティ レベルで定義されています。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2010 以降のバージョンでは、これらのプロパティはアグリーメントを通じて定義されます。  
-  
+ ph x="2" /&gt; 2010 以降のバージョンでの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] での取引先の管理方法が更新されました。 以前の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] バージョンでは、パーティは取引先でのみ作成され、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をホストするパートナーでは作成されませんでした。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2010 以降では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をホストするパートナーを含むすべての取引先に関してパーティーを作成する必要があります。 以前の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] バージョンでは、エンコード (X12 および EDIFACT) とトランスポート (AS2) プロトコルのプロパティはパーティ レベルで定義されています。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2010 以降のバージョンでは、これらのプロパティはアグリーメントを通じて定義されます。  
+
  以前のバージョンからパーティー データを移行するため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には [パーティー移行ツール] があります。 移行パスには以下のものがあります。  
-  
-|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] バージョン|移行パス|  
-|---------------------------------------------------------------------------------------|--------------------|  
-|**[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]**|BizTalk Server 2009 にアップグレードします。 次に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013/2013 R2 のパーティ移行ツールを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013/2013 R2 に移行します。<br /><br /> **あるいは**、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013/2013 R2 のパーティ移行ツールを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2010 に移行します。 次に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013/2013 R2 にアップグレードします。|  
-|**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2009**|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013/2013 R2 のパーティー移行ツールを使用して、直接 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013/2013 R2 に移行する。|  
-|**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2010**|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013/2013 R2 にアップグレードする。|  
-  
+
+
+| [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] バージョン  |                                                                                                                                                                                                                                                                                                                                     移行パス                                                                                                                                                                                                                                                                                                                                      |
+|---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      **[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]**       | BizTalk Server 2009 にアップグレードします。 次に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013/2013 R2 のパーティ移行ツールを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013/2013 R2 に移行します。<br /><br /> **あるいは**、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013/2013 R2 のパーティ移行ツールを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2010 に移行します。 次に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013/2013 R2 にアップグレードします。 |
+| **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2009** |                                                                                                                                                                                                           [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013/2013 R2 のパーティー移行ツールを使用して、直接 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013/2013 R2 に移行する。                                                                                                                                                                                                            |
+| **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2010** |                                                                                                                                                                                                                                                                                       [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013/2013 R2 にアップグレードする。                                                                                                                                                                                                                                                                                       |
+
  パーティ移行ツールは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メディアの \PartyMigrationTool フォルダーの中から入手できます。  
 
-  
+
 ## <a name="install-biztalk-health-monitor-bhm"></a>BizTalk Health Monitor (BHM) をインストールする
 
 BizTalk Health Monitor では、メッセージ ボックス ビューアー レポートの作成と表示、カスタム クエリの作成、ターミネータ タスクの実行、複数の BizTalk 環境の監視などを行うダッシュボードが提供されます。 BizTalk 環境の担当者は、このツールをインストールし、BizTalk 環境の正常性を確認する場合や、維持する場合にも使用することをお勧めします。
@@ -179,5 +180,5 @@ BizTalk Health Monitor では、メッセージ ボックス ビューアー レ
 [BizTalk ホストの高可用性](../core/providing-high-availability-for-biztalk-hosts.md)  
 [ベスト プラクティス: BizTalk Server ホストとホスト インスタンスの作成および構成](http://social.technet.microsoft.com/wiki/contents/articles/19701.biztalk-server-best-practices-create-and-configure-biztalk-server-host-and-host-instances.aspx)  
 [同じコンピューターの複数のホストでのオーケストレーションの実行](http://social.technet.microsoft.com/wiki/contents/articles/31183.biztalk-server-running-orchestrations-in-multiple-hosts-on-the-same-computer.aspx)  
-[PowerShell を作成し、BizTalk Server ホスト、ホスト インスタンスおよびハンドラーを構成するには](https://gallery.technet.microsoft.com/PowerShell-to-Configure-43d77916)  
+[PowerShell を作成し、BizTalk Server ホスト、ホスト インスタンスおよびハンドラーの構成](https://gallery.technet.microsoft.com/PowerShell-to-Configure-43d77916)  
 [TechNet Wiki の BizTalk Server リソース](http://social.technet.microsoft.com/wiki/contents/articles/2240.biztalk-server-resources-on-the-technet-wiki.aspx)

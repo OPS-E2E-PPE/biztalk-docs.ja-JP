@@ -2,7 +2,7 @@
 title: SQL Server Always On 可用性グループを使用して高可用性 |Microsoft Docs
 description: SQL Server 常にで使用可能なグループ (AG)、システム要件や制限事項などを使用して高可用性 (HA) ソリューションを取得する別のノードで BizTalk Server データベースをグループ化します。 Always on AG では、Windows Server フェールオーバー クラスタ リング (WSFC) が必要です。
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 07/8/2018
 ms.prod: biztalk-server
 ms.reviewer: ''
 ms.suite: ''
@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24a72698a97aa79ccd1b748a390f8e919ff0717f
-ms.sourcegitcommit: 6379723045cf05ed36f2bc500f6b41be1135f47c
+ms.openlocfilehash: d163c035cdf45ede600509783040114a0eaa0a2b
+ms.sourcegitcommit: 1f0306e812c95dc32c4496345c19f141612cb2c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37069399"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37913859"
 ---
 # <a name="high-availability-using-sql-server-always-on-availability-groups---biztalk-server"></a>SQL Server Always On 可用性グループの BizTalk Server を使用して高可用性
 SQL Server AlwaysOn 可用性グループを使用して高可用性を構成します。
@@ -84,7 +84,8 @@ BizTalk Server は、SQL Server Analysis Services と BAM 分析とアーカイ�
 BizTalk Server の構成と SQL Server データベース、SQL Server セキュリティ ログイン、SQL エージェント ジョブも作成されます。 AlwaysOn 可用性グループは、可用性グループ内のデータベースを管理する機能のみを提供します。 ログインと BizTalk の SQL エージェント ジョブは、作成および更新/管理できる手動ですべての可用性レプリカにする必要があります。  
 
 > [!NOTE]
-> SQL Server 2016 Service Pack 2 では、同じ可用性グループ内の複数のデータベース間の DTC トランザクションをサポートします。 BizTalk Server では、CU5 以降、この機能をサポートします。
+> SQL Server 2016 Service Pack 2 以降、同じ可用性グループ内の複数のデータベース間で DTC トランザクションをサポートする. BizTalk Server では、CU5 以降、この機能をサポートします。
+> SQL Server 2016 Service Pack 2 以降を BizTalk Server 2016 を構成する場合は、1 つの可用性グループにすべての BizTalk Server データベースをデプロイできます。
 
 次の SQL Server セキュリティ ログインの一覧は、BizTalk Server に関連付けられます。 追加のログインが、BizTalk Server アプリケーション用に作成する必要があります。 そうである場合は、BizTalk データベースのレプリカをホストする SQL Server のすべてのインスタンスでこれらをレプリケートする必要があります。 
 
