@@ -1,5 +1,5 @@
 ---
-title: メッセージのサブスクリプションの失敗の操作 |Microsoft ドキュメント
+title: メッセージのサブスクリプションの失敗の操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,47 +16,47 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6540259fd6983fd418e57ff700de3f1b550016ec
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 1e4cedf2d47c0bbe8e812795ad428a987d4c2014
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005611"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37014219"
 ---
-# <a name="working-with-failed-message-subscriptions"></a>失敗したメッセージのサブスクリプションの操作
-ときに、 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]逆アセンブラー プロセス (解析し、検証) メッセージ、そのメッセージのプロパティを昇格させます。 これらの昇格させたプロパティは、A4SWIFT 受信バッチの一部としてメッセージを受信した場合、正しいことと、メッセージの有効性に関する情報と、バッチに関連する情報を提供します。 これらのプロパティの完全な一覧を参照してください。 [A4SWIFT_ * 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。  
+# <a name="working-with-failed-message-subscriptions"></a>失敗したメッセージのサブスクリプションの使用
+ときに、Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]逆アセンブラーのプロセス (解析および検証します)、メッセージをそのメッセージのプロパティを昇格します。 これらの昇格させたプロパティは、A4SWIFT 受信バッチの一環として、メッセージを受信した場合、バッチに関連する情報だけでなく、正確性と、メッセージの有効性についての情報を提供します。 これらのプロパティの完全な一覧を参照してください。 [a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)します。  
   
- ネイティブの BizTalk 逆アセンブラーとは異なり、A4SWIFT 逆アセンブラーはメッセージを保留できません生成エラーや失敗を処理するときにします。 代わりに、発行、失敗したメッセージをメッセージ ボックス データベースに有効なメッセージの場合と同様です。 その結果、失敗したメッセージはメッセージ ボックス データベースにエラーの詳細を実行できます。 メッセージ ボックス データベースからメッセージを取得、処理し、メッセージの修復し、も、メッセージ ボックス データベースにメッセージを再送信します。 メッセージが実際に場合は、これらのタスクのほとんどを実行することはできません*中断*です。  
+ ネイティブの BizTalk 逆アセンブラーとは異なり、A4SWIFT 逆アセンブラーはメッセージを保留しない生成エラーや障害を処理するときにします。 代わりに、そのメッセージを発行、失敗したメッセージ ボックス データベースに有効なメッセージと同様です。 その結果、失敗したメッセージはメッセージ ボックス データベースにエラーの詳細を実行できます。 メッセージ ボックス データベースからメッセージを取得、処理し、メッセージを修復しても、メッセージ ボックス データベースにメッセージを再送信できます。 メッセージが実際にあった場合、これらのタスクのほとんどを実行することはできません*中断*します。  
   
- A4SWIFT が昇格させたプロパティによって失敗またはエラーとして、メッセージ ボックス データベースに公開するメッセージを識別できます。 SWIFT の逆アセンブラーに入力し、昇格、失敗したメッセージを処理する際、 **A4SWIFT_Failed**プロパティ、および 1 つ以上の他の次のプロパティ、メッセージ ボックス データベースにメッセージを発行する前に。  
+ A4SWIFT が昇格させたプロパティによってエラーがあるかどうかと、メッセージ ボックス データベースに公開するメッセージを識別できます。 SWIFT 逆アセンブラーが設定し、昇格失敗したメッセージを処理する際、 **A4SWIFT_Failed**プロパティ、および 1 つ以上のメッセージをメッセージ ボックス データベースに公開する前に、他の次プロパティ。  
   
--   **A4SWIFT_ParseErrors**解析処理中に発生した (形式が正しくないデータなど) のエラーの数を示します。  
+- **A4SWIFT_ParseErrors**解析処理中に発生 (形式が正しくないデータ) などのエラーの数を示します。  
   
--   **A4SWIFT_XmlValidationErrors**処理中に発生した (無効なデータ スキーマに関して型が正しくないなど) XML 検証のエラーの数を示します。  
+- **A4SWIFT_XmlValidationErrors**処理中に発生した (無効なデータやスキーマに関して型が正しくない) XML 検証のエラーの数を示します。  
   
--   **A4SWIFT_BreValidationErrors**処理中に発生した (SWIFT ネットワーク規則に違反するデータの場合) などのビジネス ルール エンジン (BRE) の検証エラーの数を示します。  
+- **A4SWIFT_BreValidationErrors**処理中に発生した (SWIFT ネットワーク規則に違反するデータ) などのビジネス ルール エンジン (BRE) の検証エラーの数を示します。  
   
--   **A4SWIFT_Failed**は**true**任意の数、上記のプロパティが 0 より大きい場合または**false**カウントが 0 に等しい場合。  
+- **A4SWIFT_Failed**は**true**任意の数、上記のプロパティが 0 より大きい場合、または**false**カウントが 0 に等しい場合。  
   
- これらのプロパティのすべての一部である、[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]です。Solutions.A4SWIFT.Property 名前空間です。 これらおよびその他の昇格させたプロパティの詳細については、次を参照してください。 [A4SWIFT_ * 昇格されたプロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)です。  
+  これらのプロパティは、Microsoft のすべての一部です。Solutions.A4SWIFT.Property 名前空間。 これらおよびその他の昇格させたプロパティの詳細については、次を参照してください。 [a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)します。  
   
- キャッチまたは失敗したメッセージを取得、送信ポートのフィルター式 (サブスクリプション) を作成する必要がありますまたはオーケストレーションの受信図形を含む、上記のプロパティの一部として**AND**式の句。  
+  Catch または失敗したメッセージを取得、送信ポートのフィルター式 (サブスクリプション) を作成する必要があるまたはオーケストレーションの受信図形を含む、上記のプロパティの一部として**AND**式の句。  
   
- 次の句を追加するすべての失敗したメッセージをサブスクライブ、たとえば、(として、 **AND**句の他の句がある場合)。  
+  次の句を追加するすべての失敗したメッセージをサブスクライブするなど、(として、 **AND**句の他の句がある場合)。  
   
- [!INCLUDE[btsCoName](../../includes/btsconame-md.md)].Solutions.A4SWIFT.Property.A4SWIFT_Failed = =**は true。**  
+  Microsoft .Solutions.A4SWIFT.Property.A4SWIFT_Failed == **true**  
   
- 解析エラーのみを持つメッセージをサブスクライブするには、加算、次の句。  
+  解析エラーのみを持つメッセージをサブスクライブするには、加算、次の句。  
   
- **および**[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]です。Solutions.A4SWIFT.Property.A4SWIFT_Failed = = **true**、**AND**[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]です。Solutions.A4SWIFT.Property.A4SWIFT_XmlValidationErrors = = 0、**AND**[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]です。Solutions.A4SWIFT.Property.A4SWIFT_BreValidationErrors = = 0 になります。  
+  **AND** Microsoft。Solutions.A4SWIFT.Property.A4SWIFT_Failed = = **true**、**AND**Microsoft。Solutions.A4SWIFT.Property.A4SWIFT_XmlValidationErrors 0、= =**AND**Microsoft。Solutions.A4SWIFT.Property.A4SWIFT_BreValidationErrors; 0 = =  
   
- 逆に、送信ポートまたはオーケストレーションの有効なメッセージのみを処理するように設計の場合は、"**AND**[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]です。Solutions.A4SWIFT.Property.A4SWIFT_Failed = = **false**"として、フィルター式の句。  
-  
-> [!NOTE]
->  サブスクリプションが重なると、A4SWIFT はすべてのサブスクリプションを満たします。 つまり、(送信ポートまたはオーケストレーション) の複数のサービスが、特定のメッセージによって実行されるフィルター式を持つ、このようなすべてのサービスすると、同じメッセージが表示されます。 たとえば、すべての失敗したメッセージをサブスクライブする送信ポート、オーケストレーションは、解析エラー メッセージのみをサブスクライブする場合は、両方のサブスクリプションが満たさ A4SWIFT でメッセージを処理するときに解析エラーが発生したときにします。 サービス間でのサブスクリプションに不要な重複を排除することを確認します。  
+  逆に、送信ポートまたはオーケストレーションの有効なメッセージのみを処理するように設計の場合は、"**AND**Microsoft。Solutions.A4SWIFT.Property.A4SWIFT_Failed = = **false**"として、フィルター式の句。  
   
 > [!NOTE]
->  A4SWIFT のメッセージは中断されます A4SWIFT を受信および処理し、メッセージをメッセージ ボックス データベースにそのメッセージを公開、メッセージは任意のサブスクリプションを満たさない場合は、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]サブスクライバーが不足していることを示すエラーです。 たとえば、すべてのメッセージをサブスクライブするサービスがある場合"A4SWIFT_Failed = = false"、サービスがメッセージをサブスクライブありませんが、ここで"A4SWIFT_Failed = = true"、解析に失敗したメッセージまたは検証が実際に中断サブスクライバーがないのため、します。 実際には、このシナリオでは、失敗したメッセージの従来の中断を模倣できます。 中断したくないすべてのメッセージをサブスクライブすることを確認します。 BizTalk Server のヘルプを参照して、メッセージ ボックス データベースのサブスクリプションの詳細については、送信ポート、オーケストレーション、およびフィルター式です。  
+>  サブスクリプションが重なっている場合、A4SWIFT はすべてのサブスクリプションを満たします。 つまり、(送信ポートまたはオーケストレーション) は、複数のサービスには、特定のメッセージによって実行されるフィルター式にある場合、このようなすべてのサービスは、同じメッセージを受け取ります。 たとえば、送信ポートがすべて失敗したメッセージをサブスクライブすると、オーケストレーションは、解析エラー メッセージのみをサブスクライブ、両方のサブスクリプションが満たされる A4SWIFT でメッセージを処理するときに解析エラーが発生したときにします。 サービス間でのサブスクリプションで不要な重複を排除してください。  
+> 
+> [!NOTE]
+>  A4SWIFT 受信メッセージを処理し、MessageBox データベースにそのメッセージを発行するメッセージがすべてのサブスクリプションを満たさない場合は、A4SWIFT はメッセージを中断、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]サブスクライバーがないことを示すエラー。 例では、すべてのメッセージをサブスクライブするサービスがある場合の"A4SWIFT_Failed false = ="、サービスがメッセージをサブスクライブしないが、場所"A4SWIFT_Failed true = ="、サブスクライバーがないのために解析に失敗したメッセージまたは検証を中断するが実際にします。 実際にこのシナリオでは失敗したメッセージの従来の中断を模倣することができます。 中断したくないすべてのメッセージをサブスクライブすることを確認します。 BizTalk Server のヘルプを参照して、メッセージ ボックス データベースのサブスクリプションの詳細については、送信ポート、オーケストレーション、およびフィルター式。  
   
  このセクションには、次のトピックが含まれています。  
   
