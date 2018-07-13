@@ -1,1 +1,1 @@
-<span data-ttu-id="9def8-101">Microsoft Azure BizTalk サービス</span><span class="sxs-lookup"><span data-stu-id="9def8-101">Microsoft Azure BizTalk Services</span></span>
+<span data-ttu-id="7d03c-101">Microsoft Azure BizTalk Services</span><span class="sxs-lookup"><span data-stu-id="7d03c-101">Microsoft Azure BizTalk Services</span></span>
