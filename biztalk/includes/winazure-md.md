@@ -1,1 +1,1 @@
-<span data-ttu-id="01753-101">Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="01753-101">Microsoft Azure</span></span>
+<span data-ttu-id="a8abd-101">Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="a8abd-101">Microsoft Azure</span></span>
