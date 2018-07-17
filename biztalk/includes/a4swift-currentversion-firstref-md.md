@@ -1,1 +1,1 @@
-BizTalk Accelerator 用 SWIFT (A4SWIFT)
+BizTalk Accelerator for SWIFT (A4SWIFT)

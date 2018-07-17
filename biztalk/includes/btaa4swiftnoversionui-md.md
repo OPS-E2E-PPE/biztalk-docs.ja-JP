@@ -1,1 +1,1 @@
-**BizTalk Accelerator 用 SWIFT**
+**BizTalk Accelerator for SWIFT**
