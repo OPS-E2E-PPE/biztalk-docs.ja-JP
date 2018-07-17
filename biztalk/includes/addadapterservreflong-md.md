@@ -1,1 +1,1 @@
-<span data-ttu-id="57b27-101">"アダプター サービス参照の追加" Visual Studio プラグイン</span><span class="sxs-lookup"><span data-stu-id="57b27-101">Add Adapter Service Reference Visual Studio Plug-in</span></span>
+<span data-ttu-id="db5ac-101">"アダプター サービス参照の追加" Visual Studio プラグイン</span><span class="sxs-lookup"><span data-stu-id="db5ac-101">Add Adapter Service Reference Visual Studio Plug-in</span></span>

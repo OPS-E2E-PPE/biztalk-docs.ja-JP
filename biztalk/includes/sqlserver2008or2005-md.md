@@ -1,1 +1,1 @@
-<span data-ttu-id="f452c-101">SQL Server 2014 または SQL Server 2012 SP1</span><span class="sxs-lookup"><span data-stu-id="f452c-101">SQL Server 2014 or SQL Server 2012 SP1</span></span>
+<span data-ttu-id="f87ca-101">SQL Server 2014 または SQL Server 2012 SP1</span><span class="sxs-lookup"><span data-stu-id="f87ca-101">SQL Server 2014 or SQL Server 2012 SP1</span></span>

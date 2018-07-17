@@ -1,1 +1,1 @@
-<span data-ttu-id="2bedf-101">BizTalk Accelerator 用 SWIFT</span><span class="sxs-lookup"><span data-stu-id="2bedf-101">BizTalk Accelerator for SWIFT</span></span>
+<span data-ttu-id="b432a-101">BizTalk Accelerator 用 SWIFT</span><span class="sxs-lookup"><span data-stu-id="b432a-101">BizTalk Accelerator for SWIFT</span></span>

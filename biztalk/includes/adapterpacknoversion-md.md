@@ -1,1 +1,1 @@
-<span data-ttu-id="e0982-101">BizTalk アダプター パック</span><span class="sxs-lookup"><span data-stu-id="e0982-101">BizTalk Adapter Pack</span></span>
+<span data-ttu-id="fb270-101">BizTalk アダプター パック</span><span class="sxs-lookup"><span data-stu-id="fb270-101">BizTalk Adapter Pack</span></span>

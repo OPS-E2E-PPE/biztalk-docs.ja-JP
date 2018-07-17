@@ -1,1 +1,1 @@
-<span data-ttu-id="62ca8-101">BizTalk FileAct および InterAct アダプター</span><span class="sxs-lookup"><span data-stu-id="62ca8-101">BizTalk FileAct and InterAct Adapters</span></span>
+<span data-ttu-id="6c43b-101">BizTalk FileAct および InterAct アダプター</span><span class="sxs-lookup"><span data-stu-id="6c43b-101">BizTalk FileAct and InterAct Adapters</span></span>

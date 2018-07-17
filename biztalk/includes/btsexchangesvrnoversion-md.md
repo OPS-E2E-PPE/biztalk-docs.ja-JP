@@ -1,1 +1,1 @@
-<span data-ttu-id="2ed87-101">Exchange Server</span><span class="sxs-lookup"><span data-stu-id="2ed87-101">Exchange Server</span></span>
+<span data-ttu-id="6ab48-101">Exchange Server</span><span class="sxs-lookup"><span data-stu-id="6ab48-101">Exchange Server</span></span>

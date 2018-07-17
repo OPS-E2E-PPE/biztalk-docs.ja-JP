@@ -1,1 +1,1 @@
-<span data-ttu-id="49828-101">取引先管理 (TPM)</span><span class="sxs-lookup"><span data-stu-id="49828-101">Trading Partner Management (TPM)</span></span>
+<span data-ttu-id="01200-101">取引先管理 (TPM)</span><span class="sxs-lookup"><span data-stu-id="01200-101">Trading Partner Management (TPM)</span></span>

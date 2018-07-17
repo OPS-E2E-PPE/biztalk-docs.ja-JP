@@ -1,1 +1,1 @@
-<span data-ttu-id="a5c48-101">Excel</span><span class="sxs-lookup"><span data-stu-id="a5c48-101">Excel</span></span>
+<span data-ttu-id="6dad6-101">[エクスポート]</span><span class="sxs-lookup"><span data-stu-id="6dad6-101">Excel</span></span>

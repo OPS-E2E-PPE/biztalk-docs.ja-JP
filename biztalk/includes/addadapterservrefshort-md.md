@@ -1,1 +1,1 @@
-<span data-ttu-id="df2a0-101">"アダプター サービス参照の追加" プラグイン</span><span class="sxs-lookup"><span data-stu-id="df2a0-101">Add Adapter Service Reference Plug-in</span></span>
+<span data-ttu-id="08b87-101">"アダプター サービス参照の追加" プラグイン</span><span class="sxs-lookup"><span data-stu-id="08b87-101">Add Adapter Service Reference Plug-in</span></span>

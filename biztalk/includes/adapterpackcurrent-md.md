@@ -1,1 +1,1 @@
-<span data-ttu-id="a2047-101">BizTalk Adapter Pack 2013</span><span class="sxs-lookup"><span data-stu-id="a2047-101">BizTalk Adapter Pack 2013</span></span>
+<span data-ttu-id="978d1-101">BizTalk Adapter Pack 2013</span><span class="sxs-lookup"><span data-stu-id="978d1-101">BizTalk Adapter Pack 2013</span></span>

@@ -1,1 +1,1 @@
-<span data-ttu-id="4bacb-101">Windows Update</span><span class="sxs-lookup"><span data-stu-id="4bacb-101">Windows Update</span></span>
+<span data-ttu-id="26184-101">Windows 更新プログラム</span><span class="sxs-lookup"><span data-stu-id="26184-101">Windows Update</span></span>

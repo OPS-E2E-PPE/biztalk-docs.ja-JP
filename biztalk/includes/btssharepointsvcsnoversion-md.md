@@ -1,1 +1,1 @@
-<span data-ttu-id="59bf0-101">SharePoint サービス</span><span class="sxs-lookup"><span data-stu-id="59bf0-101">SharePoint Services</span></span>
+<span data-ttu-id="05df5-101">SharePoint サービス</span><span class="sxs-lookup"><span data-stu-id="05df5-101">SharePoint Services</span></span>
