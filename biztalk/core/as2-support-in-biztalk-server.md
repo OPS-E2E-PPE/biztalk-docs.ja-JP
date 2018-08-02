@@ -50,8 +50,7 @@ ms.locfileid: "36975443"
   
 - AS2 では、HTTP アダプターが受信側と送信側の両方で使用されていることが必要です。  
   
-- 
-  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、アグリーメントごとに証明書を定義して、AS2 メッセージの既定の署名証明書をオーバーライドできます。 パーティの別の証明書を指定する方法については、次を参照してください。 [AS2 プロパティを設定する](../core/configuring-as2-properties.md)します。  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、アグリーメントごとに証明書を定義して、AS2 メッセージの既定の署名証明書をオーバーライドできます。 パーティの別の証明書を指定する方法については、次を参照してください。 [AS2 プロパティを設定する](../core/configuring-as2-properties.md)します。  
   
 ## <a name="as2-components-in-biztalk-server"></a>BizTalk Server の AS2 コンポーネント  
  AS2 トランスポートに使用される BizTalk Server コンポーネントを以下に示します。  
