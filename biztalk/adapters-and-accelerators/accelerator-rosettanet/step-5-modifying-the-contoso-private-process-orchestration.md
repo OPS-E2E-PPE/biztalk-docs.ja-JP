@@ -141,7 +141,7 @@ ms.locfileid: "36972899"
   
 11. ドラッグ、**式**図形をデザイン画面に、下にドロップし、 **Construct3A2ResponseMessageTransform**図形。  
   
-12. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル**、] をクリックして**すべて保存**プロジェクトを保存します。  
+12. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル**、 をクリックして**すべて保存**プロジェクトを保存します。  
   
 ## <a name="see-also"></a>参照  
  [手順 6: オーケストレーション図形の構成 (Contoso)](../../adapters-and-accelerators/accelerator-rosettanet/step-6-configuring-orchestration-shapes-contoso.md)

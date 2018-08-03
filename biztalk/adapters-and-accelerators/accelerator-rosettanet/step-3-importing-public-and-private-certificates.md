@@ -56,7 +56,7 @@ ms.locfileid: "37002347"
   
 1.  Contoso コンピューターでは、次のようにクリックします。**開始**、 をクリック**実行、** 型**cmd**、順にクリックします**ok**します。  
   
-2.  コマンド プロンプトに移動します*\<ドライブ\>* * *:\Program files \microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk** と押します **」と入力。**.  
+2.  コマンド プロンプトに移動します*\<ドライブ\>* * *:\Program files \microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk** と押します **」と入力**。  
   
 3.  コマンド プロンプトで「 **CertWizard/Publickey"***\<ドライブ\>***: \Certs\Fabrikam Public Encryption.cer"**、し、キーを押します**Enter**.  
   
@@ -68,9 +68,9 @@ ms.locfileid: "37002347"
   
 2.  Fabrikum コンピューターでは、次のようにクリックします。**開始**、 をクリック**実行**、型**cmd**、順にクリックします**OK**します。  
   
-3.  コマンド プロンプトに移動します*\<ドライブ\>* * *:\Program files \microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk** と押します **」と入力。**.  
+3.  コマンド プロンプトに移動します*\<ドライブ\>* * *:\Program files \microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk** と押します **」と入力**。  
   
-4.  コマンド プロンプトで「 **CertWizard/Privatekey"***\<ドライブ\>***: \Certs\Fabrikam Private Encryption.pfx"**、およびキーを押します**Enter**.  
+4.  コマンド プロンプトで「 **CertWizard/Privatekey"***\<ドライブ\>***: \Certs\Fabrikam Private Encryption.pfx"**、およびキーを押します**Enter**。  
   
 5.  **証明書ファイルのパスワードを入力してください**プロンプトで「 **mysecret**、キーを押しますと **」と入力**します。  
   
@@ -89,7 +89,7 @@ ms.locfileid: "37002347"
   
 1.  Fabrikum コンピューターでは、次のようにクリックします。**開始**、 をクリック**実行**、型**cmd**、順にクリックします**OK**します。  
   
-2.  コマンド プロンプトに移動します*\<ドライブ\>* * *:\Program files \microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk** と押します **」と入力。**.  
+2.  コマンド プロンプトに移動します*\<ドライブ\>* * *:\Program files \microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk** と押します **」と入力**。  
   
 3.  コマンド プロンプトで「 **CertWizard/Publickey"***\<ドライブ\>***: \Certs\Contoso Public Encryption.cer"**、押します **」と入力**します。  
   
