@@ -51,7 +51,7 @@ ms.locfileid: "36980051"
 
 12. 発行ウィザード ウィンドウで、次のように選択します。**ネットワークの場所に** をクリック**次**します。  
 
-13. フォーム テンプレートのパスとファイル名 ボックスに、次のように入力します<strong>http://localhost/sites/BASSite/Templates/\<MessageType\>.xsn</strong>と種類**\<MessageType\>** フォーム テンプレートの名前をテキスト ボックスと  をクリック**次へ。**.  
+13. フォーム テンプレートのパスとファイル名 ボックスに、次のように入力します<strong>http://localhost/sites/BASSite/Templates/\<MessageType\>.xsn</strong>と種類**\<MessageType\>** フォーム テンプレートの名前をテキスト ボックスと [] をクリック **[次へ]**。  
 
 14. **[次へ]** をクリックします。  
 
