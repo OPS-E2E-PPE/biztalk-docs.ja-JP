@@ -27,7 +27,7 @@ ms.locfileid: "37012099"
 
 ### <a name="to-verify-a-message"></a>メッセージを確認するには  
 
-1. Internet Explorer で、開く、MRSR サイトがhttp://localhost/sites/bassiteします。  
+1. Internet Explorer で、開く、MRSR サイトが http://localhost/sites/bassite します。  
 
 2. [ホーム] ウィンドウ**ドキュメント**します。  
 
