@@ -26,7 +26,7 @@ ms.locfileid: "36992043"
 
 ### <a name="to-repair-a-message"></a>メッセージを修復するには  
 
-1. Internet Explorer で、開く、MRSR サイトがhttp://localhost/sites/bassiteします。  
+1. Internet Explorer で、開く、MRSR サイトが http://localhost/sites/bassite します。  
 
 2. [ホーム] ウィンドウ**ドキュメント**します。  
 

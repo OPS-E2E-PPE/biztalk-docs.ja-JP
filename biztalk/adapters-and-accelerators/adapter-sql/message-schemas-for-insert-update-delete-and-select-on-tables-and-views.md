@@ -36,7 +36,7 @@ ms.locfileid: "25967216"
 |Del|`<Delete xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <Rows>     <[TABLE_NAME]>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </[TABLE_NAME]>   </Rows> </Delete>`|--|`DELETE FROM [TABLE_NAME] WHERE [FIELD1_NAME] = value1, [FIELD2_NAME] = value2, …;`|  
 |応答を削除します。|`<DeleteResponse xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <DeleteResult>[rows deleted]</DeleteResult> </DeleteResponse>`|削除された行の数が返される、 **DeleteResult**要素。|--|  
   
- [バージョン]、メッセージのバージョン文字列を =たとえば、http://schemas.microsoft.com/Sql/2008/05 です。  
+ [バージョン]、メッセージのバージョン文字列を =たとえば http://schemas.microsoft.com/Sql/2008/05 です。  
   
  [スキーマ]; SQL Server のコレクション アイテムを =たとえば、dbo します。  
   
