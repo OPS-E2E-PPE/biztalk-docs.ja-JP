@@ -270,7 +270,7 @@ ms.locfileid: "36985099"
 ## <a name="you-receive-503-service-unavailable-from-internet-explorer-on-64-bit-machine"></a>64 ビット マシンで、Internet Explorer に "503: Service Unavailable" というメッセージが表示される  
   
 ### <a name="symptom"></a>現象  
- 後[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]にアクセスしようとすると、構成が完了した[ http://localhost ](http://localhost/)または[ http://localhost/BtarnApp/RnifSend.aspx ](http://localhost/BtarnApp/RnifSend.aspx)、以下のようなエラーが発生した可能性があります。  
+ 後[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]にアクセスしようとすると、構成が完了した [http://localhost](http://localhost/) または [http://localhost/BtarnApp/RnifSend.aspx](http://localhost/BtarnApp/RnifSend.aspx)、以下のようなエラーが発生した可能性があります。  
   
  503: Service Unavailable  
   
