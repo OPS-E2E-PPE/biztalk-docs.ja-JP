@@ -35,7 +35,7 @@ ms.locfileid: "36970099"
 
 ### <a name="to-create-and-submit-a-new-message"></a>作成して、新しいメッセージを送信するには  
 
-1. Internet Explorer で、開く、MRSR サイトがhttp://localhost/sites/bassiteします。  
+1. Internet Explorer で、開く、MRSR サイトが http://localhost/sites/bassite します。  
 
 2. をクリックして**ドキュメント**、 をクリックし、**新しい SWIFT メッセージ**します。  
 

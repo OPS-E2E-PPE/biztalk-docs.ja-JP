@@ -22,7 +22,7 @@ ms.lasthandoff: 09/20/2017
 ms.locfileid: "22221858"
 ---
 # <a name="message-versioning-support"></a>メッセージ バージョン管理のサポート
-[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]操作に対して表示されるメッセージ アクション、名前空間、およびノード Id でバージョン文字列の要素を含めることでバージョン管理をサポートしています。 現在のバージョンは、http://Microsoft.LobServices.Siebel/2007/03 です。 つまり、Siebel リポジトリ内のアカウント ビジネス オブジェクトの挿入操作の場合、アダプターによって公開される挿入操作は、次。  
+[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]操作に対して表示されるメッセージ アクション、名前空間、およびノード Id でバージョン文字列の要素を含めることでバージョン管理をサポートしています。 現在のバージョンは、 http://Microsoft.LobServices.Siebel/2007/03 です。 つまり、Siebel リポジトリ内のアカウント ビジネス オブジェクトの挿入操作の場合、アダプターによって公開される挿入操作は、次。  
   
 -   ノード ID: http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert  
   

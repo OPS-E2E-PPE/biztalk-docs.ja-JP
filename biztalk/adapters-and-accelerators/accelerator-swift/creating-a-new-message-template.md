@@ -30,7 +30,7 @@ ms.locfileid: "36999835"
   
 ### <a name="to-save-a-modified-existing-template-as-a-new-template"></a>変更された既存のテンプレートを新しいテンプレートとして保存するには  
   
-1. Internet Explorer で、開く、MRSR サイトがhttp://localhost/sites/bassiteします。  
+1. Internet Explorer で、開く、MRSR サイトが http://localhost/sites/bassite します。  
   
 2. **[ドキュメント]** をクリックします。  
   

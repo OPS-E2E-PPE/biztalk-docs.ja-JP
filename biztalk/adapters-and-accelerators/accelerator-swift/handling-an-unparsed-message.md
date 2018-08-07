@@ -27,7 +27,7 @@ ms.locfileid: "36998667"
 
 ### <a name="to-handle-an-unparsed-message"></a>未解析メッセージを処理するには  
 
-1. Internet Explorer で、開く、MRSR サイトがhttp://localhost/sites/bassiteします。  
+1. Internet Explorer で、開く、MRSR サイトが http://localhost/sites/bassite します。  
 
 2. [ホーム] ウィンドウ**ドキュメント**します。  
 
