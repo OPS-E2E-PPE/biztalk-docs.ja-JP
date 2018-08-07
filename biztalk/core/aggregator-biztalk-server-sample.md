@@ -92,7 +92,7 @@ ms.locfileid: "36994595"
   
 1.  PipelinesAndSchemas フォルダーにあるファイル Instance1.txt と Instance2.txt を開き、その内容を確認します。  
   
-     どちらのファイルも、DestinationPartnerURI 要素に通知には、値が含まれています。http://www.contoso.comします。 この値は、1 つのインターチェンジに追加できるようにこれら 2 つのメッセージをまとめて関連付けるために使用されます。  
+     どちらのファイルも、DestinationPartnerURI 要素に通知には、値が含まれています。 http://www.contoso.comします。 この値は、1 つのインターチェンジに追加できるようにこれら 2 つのメッセージをまとめて関連付けるために使用されます。  
   
      同様に、DestinationPatnerURI 要素に設定のあるファイル Instance3.txt と Instance4.txthttp://www.northwind.comします。  
   

@@ -41,7 +41,7 @@ ms.locfileid: "22218234"
   
  属性の説明:  
   
- [バージョン]、メッセージのバージョン文字列を =たとえば、http://schemas.microsoft.com/OracleEBS/2008/05 です。  
+ [バージョン]、メッセージのバージョン文字列を =たとえば、 http://schemas.microsoft.com/OracleEBS/2008/05 です。  
   
  [スキーマ] コレクションの Oracle の成果物を =たとえば、SCOTT です。  
   

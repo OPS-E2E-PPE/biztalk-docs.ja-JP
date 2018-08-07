@@ -47,7 +47,7 @@ ms.locfileid: "36966155"
  ACK メッセージのバッチ メッセージへの応答で生成された MSH10 フィールド (メッセージのコントロール ID) は、バッチ メッセージに MSH10 フィールドのデータ型に基づくのではなく、GUID になります。  
   
 ## <a name="generated-acknowledgments-doc-type"></a>受信確認の生成されたドキュメントの種類  
- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] ドキュメントの種類を使用して受信確認の生成http://Microsoft.com/HealthCare/HL7/2X#ACK_24_GLO_DEFまたはhttp://Microsoft.com/HealthCare/HL7/2X#ACK_25_GLO_DEFします。 送信先のパーティは、別の名前空間を使用している場合は、送信ポートで本文マップを適用する必要があります。それ以外の場合、シリアル化エラーが発生する可能性があります。  
+ [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] ドキュメントの種類を使用して受信確認の生成 http://Microsoft.com/HealthCare/HL7/2X#ACK_24_GLO_DEF または http://Microsoft.com/HealthCare/HL7/2X#ACK_25_GLO_DEFします。 送信先のパーティは、別の名前空間を使用している場合は、送信ポートで本文マップを適用する必要があります。それ以外の場合、シリアル化エラーが発生する可能性があります。  
   
 ## <a name="see-also"></a>参照  
  [既知の問題](../../adapters-and-accelerators/accelerator-hl7/known-issues1.md)

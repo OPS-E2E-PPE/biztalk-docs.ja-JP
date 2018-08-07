@@ -27,7 +27,7 @@ ms.locfileid: "36967107"
 
 ### <a name="to-approve-a-message"></a>メッセージを承認するには  
 
-1. Internet Explorer で、開く、MRSR サイトがhttp://localhost/sites/bassiteします。  
+1. Internet Explorer で、開く、MRSR サイトが http://localhost/sites/bassite します。  
 
 2. [ホーム] ウィンドウ**ドキュメント**します。  
 
