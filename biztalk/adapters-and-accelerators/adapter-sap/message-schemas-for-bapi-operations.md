@@ -34,7 +34,7 @@ ms.locfileid: "36995219"
 |[BUSOBJ_METHOD]|`<[BUSOBJ_METHOD] xmlns="[VERSION]/Bapi/[BUSOBJ]/">   <IN1_PARAM_NAME>v1</IN1_PARAM_NAME>   <IN2_PARAM_NAME>v2</IN2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME xmlns="[VERSION]/Types/Rfc/">     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   … </[BUSOBJ_METHOD]>`|SAP システムのビジネス オブジェクト メソッドを呼び出します。<br /><br /> インポート、変更、およびテーブル パラメーターがサポートされています。|  
 |[BUSOBJ_METHOD]応答|`<[BUSOBJ_METHOD]Response xmlns="[VERSION]/Bapi/[BUSOBJ]/">   <OUT1_PARAM_NAME>v1</OUT1_PARAM_NAME>   <OUT2_PARAM_NAME>v2</OUT2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME xmlns="[VERSION]/Types/Rfc/">     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   … </[BUSOBJ_METHOD]Response>`|ビジネス オブジェクト メソッドの応答。<br /><br /> エクスポート、変更、およびテーブル パラメーターがサポートされます。<br /><br /> **注**応答メッセージに表示しないテーブル パラメーターの既定では、します。 応答メッセージのテーブルのパラメーターが必要な場合は、要求メッセージ内で空のテーブルのパラメーターを渡す必要があります。|  
 
- [バージョン] = メッセージ バージョン文字列。たとえば、http://Microsoft.LobServices.Sap/2007/03します。  
+ [バージョン] = メッセージ バージョン文字列。たとえば、 http://Microsoft.LobServices.Sap/2007/03 します。  
 
  [BUSOBJ_METHOD] ビジネス オブジェクト メソッドの名前を =たとえば、CREATEFROMDAT2 です。  
 
@@ -57,7 +57,7 @@ ms.locfileid: "36995219"
 |     [BUSOBJ_METHOD]      |     [バージョン]/Bapi/[BUSOBJ_NAME]/[BUSOBJ_METHOD]/[BAPI_RFC_NAME]      |     http://Microsoft.LobServices.Sap/2007/03/Bapi/BUS2032/CREATEFROMDAT2/BAPI_SALESORDER_CREATEFROMDAT2      |
 | [BUSOBJ_METHOD]応答 | [バージョン]/Bapi/[BUSOBJ_NAME]/[BUSOBJ_METHOD]/[BAPI_RFC_NAME]/応答 | http://Microsoft.LobServices.Sap/2007/03/Bapi/BUS2032/CREATEFROMDAT2/BAPI_SALESORDER_CREATEFROMDAT2/response |
 
- [バージョン] = メッセージ バージョン文字列。たとえば、http://Microsoft.LobServices.Sap/2007/03します。  
+ [バージョン] = メッセージ バージョン文字列。たとえば、 http://Microsoft.LobServices.Sap/2007/03 します。  
 
  [BUSOBJ_NAME]、ビジネス オブジェクトの名前を =たとえば、BUS2032 です。  
 

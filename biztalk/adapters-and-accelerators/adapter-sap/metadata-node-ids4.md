@@ -48,7 +48,7 @@ ms.locfileid: "22218506"
 |Receive|OPERATION|[バージョン]/Idoc/[IDOC_VERSION]/[IDOC_TYPE_NAME]/[IDOC_CIMTYPE]/[IDOC_REL_NO]/受信|  
 |ReceiveIdoc|OPERATION|[バージョン]/Idoc ReceiveIdoc|  
   
- [バージョン] = バージョン文字列です。たとえば、http://Microsoft.LobServices.Sap/2007/03です。  
+ [バージョン] = バージョン文字列です。たとえば、 http://Microsoft.LobServices.Sap/2007/03 です。  
   
  [RFC_APPL_GROUP_NAME]、アプリケーション グループの名前を =たとえば、Sales です。  
   

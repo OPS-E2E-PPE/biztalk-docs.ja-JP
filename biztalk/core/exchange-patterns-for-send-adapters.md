@@ -228,8 +228,8 @@ return responseMsg;
 
 | アダプターのエイリアス | [アダプター] |   OutboundTransportLocation の例    |
 |---------------|---------|----------------------------------------|
-|    HTTP://    |  HTTP   |     http://www。 MyCompany.com/bar      |
-|   HTTPS://    |  HTTP   |     https://www。 MyCompany.com/bar     |
+|    HTTP://    |  HTTP   |     http://www 。 MyCompany.com/bar      |
+|   HTTPS://    |  HTTP   |     https://www 。 MyCompany.com/bar     |
 |    mailto:    |  SMTP (SMTP)   |      mailto:A.User@MyCompany.com       |
 |    FILE://    |  FILE   | FILE://C:\MyCompany \\%MessageID%.xml |
 
