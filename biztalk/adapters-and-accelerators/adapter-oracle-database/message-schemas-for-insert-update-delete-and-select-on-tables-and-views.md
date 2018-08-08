@@ -196,7 +196,7 @@ DeleteResult 要素では、削除された行の数が返されます。
  [TABLE_NAME]; テーブルの名前を =たとえば、EMP です。  
 
 > [!IMPORTANT]
->  ビューで操作のメッセージのアクションと同じですがテーブルの"View"が"Table"; を置換する点を除いてたとえば、`http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/``View``/EMPVIEW/Insert`します。  
+>  ビューで操作のメッセージのアクションと同じですがテーブルの"View"が"Table"; を置換する点を除いてたとえば、 `http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/``View``/EMPVIEW/Insert` します。  
 
 ## <a name="see-also"></a>参照  
  [BizTalk Adapter for Oracle Database 用のメッセージとメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)

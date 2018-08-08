@@ -29,7 +29,7 @@ ms.locfileid: "22211730"
  アプリケーション アダプター インターフェイスを実装するアプリケーション。 アプリケーション アダプターは、着信アクション メッセージ (要求または応答) の受け入れ時に通知メカニズムによって呼び出され、 `BeginNotify` メソッドと `EndNotify` メソッドを実装します。 `BeginNotify` メソッドはパブリック応答側が呼び出し、`EndNotify` メソッドは追加設定の不要なプライベート応答側が呼び出します。 `Notify` メソッドが呼び出されると、メッセージが MessagesToLOB テーブルに正常に保存されたことを意味します。  
   
  **アクションの URL**  
- ホーム組織メッセージを送信する操作が非同期処理中に、取引先 URLhttp://FabrikamServer/BTARNApp/RNIFReceive.aspxです。  
+ ホーム組織メッセージを送信する操作が非同期処理中に、取引先 URLhttp://FabrikamServer/BTARNApp/RNIFReceive.aspx です。  
   
 ## <a name="b"></a>B  
  **BizTalk Accelerator for RosettaNet**  
@@ -207,7 +207,7 @@ ms.locfileid: "22211730"
  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 固有の XML スキーマ。 仕様は BizTalk エディターで作成します。その際、EDIFACT、X12、XML などの業界標準か、区切り記号付き、位置指定、またはその両方のフラット ファイルをベースにすることができます。 BizTalk マッパーは、送信元仕様と送信先仕様として公開された仕様を使用してマップを作成します。  
   
  **同期 URL**  
- ホーム組織が、パートナーとの同期トランザクションを確立するために使用する URLhttp://FabikamServer/BTARNApp/RNIFReceive.aspxです。  
+ ホーム組織が、パートナーとの同期トランザクションを確立するために使用する URLhttp://FabikamServer/BTARNApp/RNIFReceive.aspx です。  
   
  **同期トランザクション**  
  開始側が接続を閉じることなく同じ HTTP 状態で応答 (ダブル アクション) またはシグナル (シングル アクション) を返すプロセス。  
