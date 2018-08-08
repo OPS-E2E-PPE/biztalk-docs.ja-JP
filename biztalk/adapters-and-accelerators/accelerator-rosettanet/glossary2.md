@@ -29,7 +29,7 @@ ms.locfileid: "22211730"
  アプリケーション アダプター インターフェイスを実装するアプリケーション。 アプリケーション アダプターは、着信アクション メッセージ (要求または応答) の受け入れ時に通知メカニズムによって呼び出され、 `BeginNotify` メソッドと `EndNotify` メソッドを実装します。 `BeginNotify` メソッドはパブリック応答側が呼び出し、`EndNotify` メソッドは追加設定の不要なプライベート応答側が呼び出します。 `Notify` メソッドが呼び出されると、メッセージが MessagesToLOB テーブルに正常に保存されたことを意味します。  
   
  **アクションの URL**  
- ホーム組織メッセージを送信する操作が非同期処理中に、取引先 URLhttp://FabrikamServer/BTARNApp/RNIFReceive.aspx です。  
+ ホーム組織メッセージを送信する操作が非同期処理中に、取引先 URL http://FabrikamServer/BTARNApp/RNIFReceive.aspx です。  
   
 ## <a name="b"></a>B  
  **BizTalk Accelerator for RosettaNet**  
