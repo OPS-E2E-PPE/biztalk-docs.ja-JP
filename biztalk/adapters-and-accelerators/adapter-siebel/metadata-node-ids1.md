@@ -42,7 +42,7 @@ ms.locfileid: "36991483"
 |            ビジネス サービス             | カテゴリ  |              [バージョン]/BusinessServices/[ビジネス サービス]               |             http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/ATP              |        指定されたビジネス サービスのすべてのビジネス メソッドを返します。        |
 |         ビジネス サービス メソッド         | OPERATION | [バージョン]/BusinessServices/[ビジネス サービス]/[ビジネス サービス メソッド]  |       http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/ATP/ATPRunCheck        |                 指定されたビジネス サービス メソッドを返します。                 |
 
- [バージョン] バージョンの文字列を =たとえばhttp://Microsoft.LobServices.Siebel/2007/03 します。  
+ [バージョン] バージョンの文字列を =たとえば http://Microsoft.LobServices.Siebel/2007/03 します。  
 
  [BO] = A Siebel ビジネス オブジェクト。たとえば、アカウントです。  
 
@@ -64,7 +64,7 @@ ms.locfileid: "36991483"
 |ビジネス サービス|[バージョン]/ビジネス サービス|検索式に一致するビジネス サービスを返します。|  
 |ビジネス サービス メソッド|[バージョン]/BusinessServices/[ビジネス サービス]|検索式に一致するビジネス サービス メソッドが返されます。|  
 
- [バージョン] バージョンの文字列を =たとえばhttp://Microsoft.LobServices.Siebel/2007/03 します。  
+ [バージョン] バージョンの文字列を =たとえば http://Microsoft.LobServices.Siebel/2007/03 します。  
 
  [BO] = Siebel ビジネス オブジェクト。たとえば、アカウントです。  
 

@@ -94,7 +94,7 @@ ms.locfileid: "36994595"
   
      どちらのファイルも、DestinationPartnerURI 要素に通知には、値が含まれています。 http://www.contoso.comします。 この値は、1 つのインターチェンジに追加できるようにこれら 2 つのメッセージをまとめて関連付けるために使用されます。  
   
-     同様に、DestinationPatnerURI 要素に設定のあるファイル Instance3.txt と Instance4.txthttp://www.northwind.comします。  
+     同様に、DestinationPatnerURI 要素に設定のあるファイル Instance3.txt と Instance4.txt http://www.northwind.com します。  
   
      これら 2 つのメッセージが、別の 1 つのインターチェンジに追加されます。  
   

@@ -300,7 +300,7 @@ ms.locfileid: "36985099"
     ```  
   
 > [!NOTE]
->  アクセスしようとする場合http://localhostまたはhttp://localhost/BtarnApp/RnifSend.aspxもう一度上記の手順を実行すると、メッセージが表示されます HTTP 400 から Internet Explorer は IIS が正しく機能しています。  
+>  アクセスしようとする場合 http://localhost または http://localhost/BtarnApp/RnifSend.aspx もう一度上記の手順を実行すると、メッセージが表示されます HTTP 400 から Internet Explorer は IIS が正しく機能しています。  
   
 ## <a name="the-hubscenario-sample-will-not-be-installed-correctly-if-the-assembly-key-files-are-not-entered-for-the-projects"></a>アセンブリ キー ファイルがプロジェクトに入力されていない場合に HubScenario サンプルが正しくインストールされない  
   

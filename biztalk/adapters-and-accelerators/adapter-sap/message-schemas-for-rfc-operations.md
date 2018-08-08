@@ -63,7 +63,7 @@ ms.locfileid: "36972851"
 |     RfcGetAttributes      |     [バージョン]/RfcGetAttributes     |       http://Microsoft.LobServices.Sap/2007/03/RfcGetAttributes        |
 | RfcGetAttributes 応答 | [VERSION/RfcGetAttributes/response |   http://Microsoft.LobServices.Sap/2007/03/RfcGetAttributes/response   |
 
- [バージョン] = メッセージ バージョン文字列。たとえば、http://Microsoft.LobServices.Sap/2007/03します。  
+ [バージョン] = メッセージ バージョン文字列。たとえば、 http://Microsoft.LobServices.Sap/2007/03 します。  
 
  [RFC_NAME]; 呼び出す RFC の名前を =たとえば、RFC_CUSTOMER_GET です。  
 
