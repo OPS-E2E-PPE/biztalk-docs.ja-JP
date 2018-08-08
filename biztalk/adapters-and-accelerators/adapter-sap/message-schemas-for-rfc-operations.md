@@ -38,7 +38,7 @@ ms.locfileid: "36972851"
 |         RfcGetAttributes<br /><br /> (RfcGetAttributes)          |                                                                                                                                                                                                                `<RfcGetAttributes> </RfcGetAttributes>`                                                                                                                                                                                                                |                                                  RfcGetAttributes RFC SDK の API 操作によって表示されるは、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 RfcGetAttributes 操作により、クライアント プログラムが、言語、システム ID、および RFC 接続に関連付けられているパートナーのコード ページを取得します。                                                   |
 | RfcGetAttributes 応答<br /><br /> (RfcGetAttributesResponse) |                                                                                                                                                          `<RfcGetAttributesResponse>   <Language>lang</Language>   <SysId>id</SysId>   <PartnerCodePage>pnrcp</PartnerCodePage> </RfcGetAttributesResponse>`                                                                                                                                                           |                                                                                                                              RfcGetAttributes 操作に対する応答は、言語、システム ID、および RFC 接続に関連付けられているパートナーのコード ページを返します。                                                                                                                              |
 
- [バージョン] = メッセージ バージョン文字列。たとえば、http://Microsoft.LobServices.SAP/2007/03します。  
+ [バージョン] = メッセージ バージョン文字列。たとえば、 http://Microsoft.LobServices.SAP/2007/03 します。  
 
  [RFC_NAME] RFC; の名前を =たとえば、RFC_CUSTOMER_GET です。  
 
@@ -50,7 +50,7 @@ ms.locfileid: "36972851"
 
  [TABLE_PARAM_NAME] = RFC テーブル パラメーターの名前。  
 
- [STRUCT_PARAM_NAME] = [構造の RFC パラメーターの名前。  
+ [STRUCT_PARAM_NAME] = 構造の RFC パラメーターの名前。  
 
 ## <a name="message-actions-for-rfc-operations"></a>RFC 操作のメッセージのアクション  
  次の表では、RFC 操作のメッセージのアクションを示します。  
@@ -70,7 +70,7 @@ ms.locfileid: "36972851"
 ## <a name="invoking-a-bapi-as-an-rfc-operation"></a>RFC 操作として BAPI を呼び出す  
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] RFC 操作、およびビジネス オブジェクトのメソッドとして Bapi 明らかになります。 RFC の操作として Bapi は名前で表示されます。 ビジネス オブジェクトのインターフェイスを使用して Bapi を呼び出す方法の詳細については、次を参照してください。 [SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)します。  
 
- 次の XML では、RFC として呼び出される BAPI (BAPI_CUSTOMER_GETDETAIL2) のメッセージ構造を示します。 この操作のメッセージ アクション:http://Microsoft.LobServices.Sap/2007/03/Rfc/BAPI_CUSTOMER_GETDETAIL2します。  
+ 次の XML では、RFC として呼び出される BAPI (BAPI_CUSTOMER_GETDETAIL2) のメッセージ構造を示します。 この操作のメッセージ アクション: http://Microsoft.LobServices.Sap/2007/03/Rfc/BAPI_CUSTOMER_GETDETAIL2 します。  
 
 ```  
 <BAPI_CUSTOMER_GETDETAIL2 xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/">  
