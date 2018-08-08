@@ -46,7 +46,7 @@ Transactiostructnal リモート関数呼び出し (Trfc) は、作業 (LUW) の
 |         RfcConfirmTransID<br /><br /> (RfcConfirmTransID)         |                                                                                                                                                                                                    `<RfcConfirmTransID xmlns="[VERSION]/Trfc/">   <TransactionalRfcOperationIdentifier>GUID   </TransactionalRfcOperationIdentifier> </RfcConfirmTransID>`                                                                                                                                                                                                    |                                                                                                                                                             RfcConfirmTransID 操作は、SAP システムに対する送信 tRFC 操作で使用される TID を確認します。<br /><br /> \<TransactionalRfcOperationIdentifier\>要素には、送信 tRFC の呼び出しに関連付けられている TID にマップされている GUID が含まれています。 TRFC の応答メッセージで、アダプターによって返された GUID の値に設定する必要があります。<br /><br /> RfcConfirmTransID 操作に関する詳細については、次を参照してください。[特別な操作](../../adapters-and-accelerators/adapter-sap/special-operations.md)します。                                                                                                                                                              |
 | RfcConfirmTransIDResponse<br /><br /> (RfcConfirmTransIDResponse) |                                                                                                                                                                                                                                      `<RfcConfirmTransIDResponse xmlns="[VERSION]/Trfc/"> </RfcConfirmTransIDResponse>`                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                   示します、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]が SAP システムで TID を確認します。                                                                                                                                                                                                                                                                                                                                                                    |
 
- [バージョン] = メッセージ バージョン文字列。たとえば、http://Microsoft.LobServices.Sap/2007/03します。  
+ [バージョン] = メッセージ バージョン文字列。たとえば、 http://Microsoft.LobServices.Sap/2007/03 します。  
 
  [RFC_NAME] RFC; の名前を =たとえば、RFC_CUSTOMER_GET です。  
 
@@ -56,7 +56,7 @@ Transactiostructnal リモート関数呼び出し (Trfc) は、作業 (LUW) の
 
  [TABLE_PARAM_NAME] = RFC テーブル パラメーターの名前。  
 
- [STRUCT_PARAM_NAME] = [構造の RFC パラメーターの名前。  
+ [STRUCT_PARAM_NAME] = 構造の RFC パラメーターの名前。  
 
  GUID、tRFC に関連付けられている SAP TID を識別する GUID を = です。  
 
@@ -71,7 +71,7 @@ Transactiostructnal リモート関数呼び出し (Trfc) は、作業 (LUW) の
 |     RfcConfirmTransID      |     [VERSION]/Trfc/RfcConfirmTransID     |     http://Microsoft.LobServices.Sap/2007/03/Trfc/RfcConfirmTransID      |
 | RfcConfirmTransID 応答 | [VERSION/Trfc/RfcConfirmTransID/response | http://Microsoft.LobServices.Sap/2007/03/Trfc/RfcConfirmTransID/response |
 
- [バージョン] = メッセージ バージョン文字列。たとえば、http://Microsoft.LobServices.Sap/2007/03します。  
+ [バージョン] = メッセージ バージョン文字列。たとえば、 http://Microsoft.LobServices.Sap/2007/03 します。  
 
  [RFC_NAME]; 呼び出す RFC の名前を =たとえば、RFC_CUSTOMER_GET です。  
 
