@@ -189,7 +189,7 @@ DeleteResult 要素では、削除された行の数が返されます。
 |     DELETE      |     [VERSION]/[SCHEMA]/Table/[TABLE_NAME]/Delete      |     http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Delete      |
 | 応答を削除します。 | [VERSION]/[SCHEMA]/Table/[TABLE_NAME]/Delete/response | http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Delete/response |
 
- [バージョン] = メッセージ バージョン文字列。たとえば、http://Microsoft.LobServices.OracleDB/2007/03します。  
+ [バージョン] = メッセージ バージョン文字列。たとえば、 http://Microsoft.LobServices.OracleDB/2007/03 します。  
 
  [スキーマ] コレクションの Oracle の成果物を =たとえば、SCOTT です。  
 
