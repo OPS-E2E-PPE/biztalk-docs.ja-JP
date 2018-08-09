@@ -207,7 +207,7 @@ ms.locfileid: "22211730"
  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 固有の XML スキーマ。 仕様は BizTalk エディターで作成します。その際、EDIFACT、X12、XML などの業界標準か、区切り記号付き、位置指定、またはその両方のフラット ファイルをベースにすることができます。 BizTalk マッパーは、送信元仕様と送信先仕様として公開された仕様を使用してマップを作成します。  
   
  **同期 URL**  
- ホーム組織が、パートナーとの同期トランザクションを確立するために使用する URLhttp://FabikamServer/BTARNApp/RNIFReceive.aspx です。  
+ ホーム組織が、パートナーとの同期トランザクションを確立するために使用する URL http://FabikamServer/BTARNApp/RNIFReceive.aspx です。  
   
  **同期トランザクション**  
  開始側が接続を閉じることなく同じ HTTP 状態で応答 (ダブル アクション) またはシグナル (シングル アクション) を返すプロセス。  
