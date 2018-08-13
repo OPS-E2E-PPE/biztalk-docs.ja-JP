@@ -267,7 +267,7 @@ ms.locfileid: "37022096"
   
 5.  クリックして**フィルター**と 3 つのフィルター式を追加します。  
   
-    -   BTS します。MessageType = =http://BasicXMLEnvelope#Errorと  
+    -   BTS します。MessageType == http://BasicXMLEnvelope#Error と  
   
     -   BasicXMLEnvelope.PropertySchema.Priority == Low Or  
   
@@ -287,7 +287,7 @@ ms.locfileid: "37022096"
   
 5.  クリックして**フィルター**し、2 つのフィルター式を追加します。  
   
-    -   BTS します。MessageType = =http://BasicXMLEnvelope#Errorと  
+    -   BTS します。MessageType == http://BasicXMLEnvelope#Error と  
   
     -   BasicXMLEnvelope.PropertySchema.Priority == High  
   

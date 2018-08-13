@@ -36,7 +36,7 @@ ms.locfileid: "37008019"
 
 #### <a name="to-create-the-newposervice-in-the-uddi-registry"></a>UDDI レジストリで、NewPOService を作成するには  
 
-1.  Internet Explorer で、UDDI サービス サイトを参照 (この URL は、既定では、http://localhost/uddi)します。  
+1.  Internet Explorer で、UDDI サービス サイトを参照 (この URL は、既定では、 http://localhost/uddi) します。  
 
 2.  **Uddi Services** ] ページで [**発行**します。  
 
@@ -209,7 +209,7 @@ ms.locfileid: "37008019"
 
     3.  **リゾルバー モニカー**ドロップダウン リストでは、をクリックして**UDDI3**します。  
 
-    4.  をクリックして、**バインド キー**プロパティ、および入力**uddi:esb:newposervicebinding**します。 キーの値を調べるには、http://localhost/ESB.CanadianServices/SubmitPOService.asmxで、UDDI サービスを詳細 をクリックします。  
+    4.  をクリックして、**バインド キー**プロパティ、および入力**uddi:esb:newposervicebinding**します。 キーの値を調べるには、 http://localhost/ESB.CanadianServices/SubmitPOService.asmx で、UDDI サービスを詳細 をクリックします。  
 
 7.  右クリックし、 **BindingKeySearch**リゾルバー、およびクリック**テスト構成の競合回避モジュール**します。  
 
