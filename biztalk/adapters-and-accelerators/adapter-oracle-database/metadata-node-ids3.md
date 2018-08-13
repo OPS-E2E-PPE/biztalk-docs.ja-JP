@@ -57,7 +57,7 @@ ms.locfileid: "36969659"
 |   [PACK_PROCEDURE]    | OPERATION | [バージョン]/[DB_SCHEMA]/Package/[DB_PACKAGE]/[PACK_PROCEDURE] |  http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT   |                                                                    パッケージ プロシージャ ノード。 指定したパッケージのプロシージャの WSDL を返します。                                                                    |
 |    [PACK_FUNCTION]    | OPERATION | [バージョン]/[DB_SCHEMA]/Package/[DB_PACKAGE]/[PACK_FUNCTION]  | http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/CREATE_ACCOUNT |                                                                     パッケージの関数のノードです。 指定したパッケージの関数の WSDL を返します。                                                                     |
 
- [バージョン] バージョンの文字列を =たとえば、http://Microsoft.LobServices.OracleDB/2007/03します。  
+ [バージョン] バージョンの文字列を =たとえば、 http://Microsoft.LobServices.OracleDB/2007/03 します。  
 
  [DB_SCHEMA] コレクションの Oracle の成果物を =たとえば、SCOTT です。  
 

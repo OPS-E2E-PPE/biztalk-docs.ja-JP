@@ -117,7 +117,7 @@ HTTPRequestResponse サンプルは、Microsoft [!INCLUDE[btsBizTalkServerNoVers
 
 #### <a name="to-run-this-sample"></a>このサンプルを実行するには  
 
-1.  Internet Explorer に移動します。http://localhost/RequestResponse/します。  
+1.  Internet Explorer に移動します。 http://localhost/RequestResponse/ します。  
 
 2.  Web フォームで、必要なフィールドに入力し、クリックして**Place Order**して注文を送信します。  
 

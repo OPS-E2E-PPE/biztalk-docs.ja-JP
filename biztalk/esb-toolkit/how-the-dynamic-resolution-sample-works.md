@@ -26,7 +26,7 @@ ms.locfileid: "36976435"
 
  双方向メッセージング シナリオでは、例は、STATIC、BRE、UDDI、または XPATH 競合回避モジュールを使用してエンドポイントを解決しを SOAP または Wcf-basichttp SOAP からプロトコルを仲介します。 さらに、例は解決して、解決の結果を確認するメッセージ コンテキスト プロパティとメッセージ本文に含まれているファクトを使用して BRE リゾルバーを使用して、Microsoft BizTalk マップを実行します。  
 
- 解決プロセスの結果は、双方向のすべての例が、ESB を自分のメッセージを送信します。CanadianServices Web サービスがあるhttp://localhost/ESB.CanadianServices/SubmitPOService.asmxします。 さらに、解決の結果に応じて、例を実行しますか、 **submitOrder**または**submitPurchase**アクション。 さらに、ESB ディスパッチャー逆アセンブラー パイプライン コンポーネントには、BizTalk マップを指定されているか、解決操作に応じて動的に実行します。  
+ 解決プロセスの結果は、双方向のすべての例が、ESB を自分のメッセージを送信します。CanadianServices Web サービスがある http://localhost/ESB.CanadianServices/SubmitPOService.asmx します。 さらに、解決の結果に応じて、例を実行しますか、 **submitOrder**または**submitPurchase**アクション。 さらに、ESB ディスパッチャー逆アセンブラー パイプライン コンポーネントには、BizTalk マップを指定されているか、解決操作に応じて動的に実行します。  
 
  図 1 は、構成されている、DynamicResolutionReqResp_SOAP のパイプラインは受信場所を示します。  
 
