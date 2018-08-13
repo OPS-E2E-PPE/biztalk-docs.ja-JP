@@ -24,6 +24,6 @@ ms.locfileid: "36983131"
   
 - [動的解決サンプルの一方向のメッセージング シナリオ](../esb-toolkit/one-way-messaging-scenarios-for-the-dynamic-resolution-sample.md)します。 動的解決サンプルは、Microsoft BizTalk へのポイントを文書としてファイル ドロップ フォルダーを使用してこのシナリオをサポートします。  
   
-- [動的解決サンプルの双方向のメッセージング シナリオ](../esb-toolkit/two-way-messaging-scenarios-for-the-dynamic-resolution-sample.md)します。 動的解決サンプルは、サービスがある NorthAmerican Web を使用してこのシナリオをサポートしているhttp://localhost/ESB.NorthAmericanServices/CustomerOrder.asmxにパブリケーションとして BizTalk にポイントします。  
+- [動的解決サンプルの双方向のメッセージング シナリオ](../esb-toolkit/two-way-messaging-scenarios-for-the-dynamic-resolution-sample.md) します。 動的解決サンプルは、サービスがある NorthAmerican Web を使用してこのシナリオをサポートしているhttp://localhost/ESB.NorthAmericanServices/CustomerOrder.asmxにパブリケーションとして BizTalk にポイントします。  
   
   ESB ディスパッチャーと ESB ディスパッチャー逆アセンブラー パイプライン コンポーネントのサンプルの使用については、次を参照してください。 [、動的解決サンプルのしくみ](../esb-toolkit/how-the-dynamic-resolution-sample-works.md)します。

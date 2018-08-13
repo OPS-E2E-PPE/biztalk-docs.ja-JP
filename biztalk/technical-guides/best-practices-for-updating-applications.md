@@ -39,7 +39,7 @@ ms.locfileid: "37001731"
   
   **バージョン管理製品を使用します。**  
   
-- BizTalk アイテムの追跡とバージョン管理の Microsoft Visual Studio® Team Foundation Server 2010 など、バージョン管理製品を使用する必要があります。 Microsoft Visual Studio® Team Foundation Server 2010 の詳細については、次を参照してください[Microsoft Visual Studio® Team Foundation Server 2010](http://go.microsoft.com/fwlink/?LinkId=210637) (。http://go.microsoft.com/fwlink/?LinkId=210637)  
+- BizTalk アイテムの追跡とバージョン管理の Microsoft Visual Studio® Team Foundation Server 2010 など、バージョン管理製品を使用する必要があります。 Microsoft Visual Studio® Team Foundation Server 2010 の詳細については、次を参照してください[Microsoft Visual Studio® Team Foundation Server 2010](http://go.microsoft.com/fwlink/?LinkId=210637) (http://go.microsoft.com/fwlink/?LinkId=210637)  
   
   **複数の BizTalk アプリケーションにアイテムを要素**  
   

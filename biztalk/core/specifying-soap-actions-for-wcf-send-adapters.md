@@ -33,7 +33,7 @@ ms.locfileid: "37023496"
 OutboundMessage(WCF.Action)="http://MyService/IMyContract/MyAction1";  
 ```  
   
- によって送信される SOAP アクションを決定アクション マッピング形式でこのプロパティを設定する場合、 **BTS します。操作**コンテキスト プロパティ。 たとえば、このプロパティは、WCF では、次の XML 形式に設定されている場合は、送信アダプター トランスポートのプロパティ ダイアログ ボックスおよび**BTS します。操作**プロパティに設定されて**Operation_1**オーケストレーションの送信ポートの WCF 送信アダプタが使用http://MyService/IMyContract/MyAction1送信 SOAP アクション。  
+ によって送信される SOAP アクションを決定アクション マッピング形式でこのプロパティを設定する場合、 **BTS します。操作**コンテキスト プロパティ。 たとえば、このプロパティは、WCF では、次の XML 形式に設定されている場合は、送信アダプター トランスポートのプロパティ ダイアログ ボックスおよび**BTS します。操作**プロパティに設定されて**Operation_1**オーケストレーションの送信ポートの WCF 送信アダプタが使用 http://MyService/IMyContract/MyAction1 送信 SOAP アクション。  
   
 ```  
 BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  

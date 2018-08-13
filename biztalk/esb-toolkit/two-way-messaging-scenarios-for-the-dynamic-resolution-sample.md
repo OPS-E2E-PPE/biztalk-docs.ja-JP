@@ -31,7 +31,7 @@ ms.locfileid: "36997019"
 
 2. GlobalBank.ESB アプリケーションが実行されていない場合は、BizTalk 管理コンソールを使用して開始します。  
 
-3. 実行する例を決定します。 すべての双方向メッセージング シナリオでは、ESB を使用します。NorthAmericanServices Web サービスがあるhttp://localhost/ESB.NorthAmericanServices/CustomerOrder.asmxDynamicResolutionReqResp_SOAP という名前の受信場所を使用して、BizTalk に要求メッセージを発行します。 10 の双方向メッセージングの例は、それぞれの一意のバインド ファイルで表されます。 次の表は、その関連付けられたバインド ファイルの説明と、これらの例を一覧表示します。  
+3. 実行する例を決定します。 すべての双方向メッセージング シナリオでは、ESB を使用します。NorthAmericanServices Web サービスがある http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx DynamicResolutionReqResp_SOAP という名前の受信場所を使用して、BizTalk に要求メッセージを発行します。 10 の双方向メッセージングの例は、それぞれの一意のバインド ファイルで表されます。 次の表は、その関連付けられたバインド ファイルの説明と、これらの例を一覧表示します。  
 
    |SOAP 送信 (submitOrder アクション) が SOAP 受信 BRE リゾルバーの使用|  
    |---------------------------------------------------------------------------------|  

@@ -31,7 +31,7 @@ ms.locfileid: "36967731"
  すべて一方向 (を除く、XPATH の競合回避モジュールを使用する 1 つ) のシナリオの使用を \Source\Samples\DynamicResolution\Test\Data フォルダーにあるファイル NAOrderDoc.xml、メッセージング、受信への入力としてという名前の場所 DynamicResolution_FILE します。 7 つの一方向メッセージングの例は、一意のバインドによって表されるすべてのファイルをそれぞれの例を実行する前にインポートする必要があります。  
   
 ## <a name="two-way-messaging-scenarios"></a>双方向メッセージング シナリオ  
- すべての双方向メッセージング シナリオでは、ESB のサンプルを使用します。NorthAmericanServices Web サービスがあるhttp://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx要求メッセージを BizTalk に公開します。 Microsoft InfoPath を使用してこの Web サービスを実行するかから使用可能な Storm などのユーティリティを使って[CodePlex](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409)します。  
+ すべての双方向メッセージング シナリオでは、ESB のサンプルを使用します。NorthAmericanServices Web サービスがある http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx 要求メッセージを BizTalk に公開します。 Microsoft InfoPath を使用してこの Web サービスを実行するかから使用可能な Storm などのユーティリティを使って[CodePlex](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409)します。  
   
  それぞれの例は、ESB のサンプル メッセージを送信するエンドポイントの URL を動的に解決します。CanadianServices Web サービスがあるhttp://localhost/ESB.CanadianServices/SubmitPOService.asmxします。 例を実行するか、 **submitOrder**アクションまたは**submitPurchase**解決プロセスの結果に応じて、アクション。 双方向メッセージング シナリオの受信場所では、DynamicResolutionReqResp_SOAP です。 10 の双方向メッセージングの例は、一意のバインドによって表されるすべてのファイルをそれぞれの例を実行する前にインポートする必要があります。  
   

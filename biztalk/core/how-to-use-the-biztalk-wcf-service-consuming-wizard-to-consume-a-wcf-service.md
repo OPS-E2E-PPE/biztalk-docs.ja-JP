@@ -54,7 +54,7 @@ BizTalk アダプタ フレームワークでは、アダプタ スキーマと 
     ![メタデータ エンドポイント ページ](../core/media/2b17f85a-64d0-4719-99c4-ce61c706f10c.gif "2b17f85a-64d0-4719-99c4-ce61c706f10c")  
   
    > [!NOTE]
-   >  HTTP または HTTPS 経由で公開された WCF サービスのメタデータをダウンロードするには、使うことはできません、MEX エンドポイントなどhttp://localhost:8087/CalculatorService/mexの**メタデータ アドレス**テキスト ボックス。 WCF サービスは、次のように、メタデータをダウンロードする WSDL メタデータを使用する必要があります:http://localhost:8087/CalculatorServiceまたは http://localhost:8087/CalculatorService?wsdl  
+   >  HTTP または HTTPS 経由で公開された WCF サービスのメタデータをダウンロードするには、使うことはできません、MEX エンドポイントなど http://localhost:8087/CalculatorService/mex の **メタデータ アドレス** テキスト ボックス。 WCF サービスは、次のように、メタデータをダウンロードする WSDL メタデータを使用する必要があります: http://localhost:8087/CalculatorService または http://localhost:8087/CalculatorService?wsdl  
   
 6. 選択した場合、**メタデータ ファイル (WSDL と XSD)** オプションを**メタデータ ソース** ページで、**メタデータ エンドポイント**ページが表示されます。 **メタデータ エンドポイント**ページで、インポートするメタデータ ファイルを指定します。 クリックして**追加**にインポートするメタデータ ファイルを追加する、**メタデータ ファイル**ビュー。 開き、**メタデータ ファイルの追加**メタデータ ファイルのディスクの場所を検索するためのダイアログ ボックス。  
   
