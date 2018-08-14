@@ -1,5 +1,6 @@
 ---
-title: 方法を使用して、BizTalk Web サービス公開ウィザード Web サービスとしてのスキーマを公開する |Microsoft Docs
+title: Web サービス公開ウィザードを使用して、Web サービスとしてのスキーマの公開 |Microsoft Docs
+description: BizTalk Web サービス公開ウィザードを使用してスキーマを Web サービスとして公開する方法
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +16,19 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d7a6f0ed34fe14db9e751d7f29efba443944932a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: de203b20c2b7c455c5c7479e77582561fb093933
+ms.sourcegitcommit: ed9590dbcd97c12a1fe5ce2cdf8d826492cccdff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975795"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39640134"
 ---
-# <a name="how-to-use-the-biztalk-web-services-publishing-wizard-to-publish-schemas-as-a-web-service"></a>BizTalk Web サービス公開ウィザードを使用してスキーマを Web サービスとして公開する方法
+# <a name="publish-schemas-as-a-web-service-in-biztalk"></a>スキーマでは、BizTalk Web サービスとして公開します。
 BizTalk Web サービス公開ウィザードを使用して、スキーマを Web サービスとして公開することができます。  
   
-### <a name="to-publish-schemas-as-a-web-service"></a>スキーマを Web サービスとして公開するには  
+## <a name="publish-schemas-as-a-web-service"></a>スキーマを web サービスとして公開します。  
   
-1. クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Web サービス公開ウィザード**します。  
+1. **プログラム**、 **BizTalk Server**、し、 **BizTalk Web サービス公開ウィザード**。  
   
    > [!IMPORTANT]
    >  BizTalk Web サービス公開ウィザードを実行する前に、BizTalk プロジェクトをビルドする必要があります。  
@@ -89,7 +90,7 @@ BizTalk Web サービス公開ウィザードを使用して、スキーマを W
    > [!NOTE]
    >  対象となる名前空間とルート要素名の同じ組み合わせは、要求 SOAP ヘッダーとして 1 度、応答 SOAP ヘッダーとして一度だけ追加できます。  
   
-9. **Web サービス プロジェクト**ページで、**プロジェクトの場所**テキスト ボックスに、プロジェクトの場所を入力します。 既定の場所を受け入れることができます (http://localhost/<*project_name*>)、プロジェクトの場所を入力またはクリックして**参照**Web ディレクトリを選択します。 次のいずれかのオプションをクリックします。  
+9. **Web サービス プロジェクト**ページで、**プロジェクトの場所**テキスト ボックスに、プロジェクトの場所を入力します。 既定の場所を受け入れることができます (`http://localhost/your_project_name`)、プロジェクトの場所を入力またはクリックして**参照**Web ディレクトリを選択します。 次のいずれかのオプションをクリックします。  
   
     -   **既存のプロジェクトを上書きします。** : このオプションは、プロジェクトの場所が既に存在する場合にのみ使用できます。 このオプションを選択した場合、同じ場所に発行することのみできます。 このオプションを選択しない場合は、別のプロジェクトの場所を入力する必要があります。  
   
@@ -98,10 +99,10 @@ BizTalk Web サービス公開ウィザードを使用して、スキーマを W
     -   **作成する BizTalk 受信場所。** このオプションでは、生成された各 .asmx ファイルに対応する SOAP アダプターの受信ポートと受信場所が自動的に作成されます。 別の受信場所が既に存在する場合、受信場所は置き換えられません。 SOAP アダプターを解決する形式を使用して、受信場所"/\<*仮想ディレクトリ名*\>/\<*オーケストレーション namespace_typename_portname* \>.asmx"。 このオプションの選択後、受信ポートと場所を生成するアプリケーションを選択します。  
   
         > [!NOTE]
-        >  プロジェクトの場所には、別のサーバーを指定することもできます。 Web サービスを別のサーバーに発行するには、としてプロジェクト名を入力**http://&lt*servername*>/<*project_name*>** します。  
+        >  プロジェクトの場所には、別のサーバーを指定することもできます。 Web サービスを別のサーバーに発行するには、としてプロジェクト名を入力 **`http://<servername>/<project_name>`** します。  
   
         > [!NOTE]
-        >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに発行するときは、URL に Web サイトのポート番号を含める: http://localhost:8080/< *project_name*>。  
+        >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに発行するときは、URL に Web サイトのポート番号を含める:`http://localhost:8080/<project_name>`します。  
   
         > [!NOTE]
         >  ウィザードを使用して受信場所を作成する場合は、既定値が多く使用されます。 受信および送信パイプラインの既定値は**Microsoft.BizTalk.DefaultPipelines.PassThruReceive**と**Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**します。 かどうか、公開済み Web サービスを通じて受信するメッセージが、特別なパイプライン処理 (検証、関連付け、または受信/送信マップなど) を必要とし、設定、送信と受信パイプラインをする必要があります**Microsoft.BizTalk.DefaultPipelines.XMLReceive**、 **Microsoft.BizTalk.DefaultPipelines.XMLSend**、またはカスタム パイプラインです。  

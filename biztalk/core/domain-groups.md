@@ -1,5 +1,5 @@
 ---
-title: ドメイン グループ |Microsoft ドキュメント
+title: ドメイン グループ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ae4f855b01a7cfcd789e8d8a37e375f9e72c1a7
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 2944ce83df75ed724c9a7acafeee119b40cacafb
+ms.sourcegitcommit: 7b64c823fa8d7fa8b10b163613311be69b861017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25968288"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39625870"
 ---
-# <a name="domain-groups-in-biztalk"></a>BIzTalk 内のドメイン グループ
-また、ドメイン グループ アカウントとドメイン ユーザー アカウントは、単一および複数の両方のコンピュータ構成でサポートされます。 複数コンピュータ構成の場合、このセクション、およびインストール ガイドの「マルチサーバー環境に関する注意点 (Considerations for Multiserver Environments)」で示す要件を満たす必要があります。 詳細については、次を参照してください。、[インストールの概要](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)です。  
+# <a name="domain-groups-in-biztalk"></a>BizTalk 内のドメイン グループ
+また、ドメイン グループ アカウントとドメイン ユーザー アカウントは、単一および複数の両方のコンピュータ構成でサポートされます。 複数コンピュータ構成の場合、このセクション、およびインストール ガイドの「マルチサーバー環境に関する注意点 (Considerations for Multiserver Environments)」で示す要件を満たす必要があります。 詳細については、次を参照してください。、[インストールの概要](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)します。  
   
 ## <a name="before-you-begin"></a>アンインストールの準備
 -   BizTalk Server の構成にドメイン グループを使用する場合は、BizTalk Server を構成する前に、グループを手動で作成しておく必要があります。 構成マネージャーでは、ドメイン グループを作成できません。  
   
--   ドメイン グループやユーザー アカウントを作成した後でグループ関連に従って、適切なグループにユーザー アカウントを追加[Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)です。  
+-   ドメイン グループやユーザー アカウントを作成した後でグループ所属団体に従って、適切なグループにユーザー アカウントを追加[Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)します。  
   
--   使用して **\<DomainName\>\\< ユーザー名\>** Configuration Manager のドメイン アカウント情報を指定する場合。  
+-   使用 **\<DomainName\>\\< ユーザー名\>** in Configuration Manager のドメイン アカウント情報を指定する場合。  
   
 -   BizTalk Server では、すべてのクラスタリング シナリオに対応するドメイン アカウントが必要です。 クラスタ化された SQL Server やクラスタ化された SSO サーバー (マスタ シークレット サーバー) で、ローカル アカウントを使用することはできません。  
   

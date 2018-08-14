@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3855dfe405e85e33e01642dd1ded5336c8efb892
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1386c7113c534c2491bed447fdcc0ba970881bac
+ms.sourcegitcommit: ed9590dbcd97c12a1fe5ce2cdf8d826492cccdff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994883"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39640150"
 ---
 # <a name="test-scenarios-for-measuring-mst-of-dta-tracking"></a>DTA 追跡の MST を測定するためのテスト シナリオ
 これらが実際にはどのように機能するのかを示すために、および追跡における維持可能な最大スループット (MST) を測定する簡単な手法を紹介するために、ここでは、追跡の MST が測定されているテスト シナリオを提供します。 関連する手法が提供されるだけでなく、示されるデータを基に他のシステムの追跡パフォーマンスを測定することもできます。  
@@ -60,7 +60,7 @@ ms.locfileid: "36994883"
   
 - **メッセージ プロパティ**します。 受信パイプラインの逆アセンブラー (DA) コンポーネントに関連付けられている追跡ポイントは、受信メッセージの 10 プロパティの追跡を表しています。 追跡のプロパティを昇格する方法の詳細については、次を参照してください。[プロパティの昇格](../core/promoting-properties.md)します。  
   
-- **メッセージ本文**します。 図中の 2 つのメッセージ本文 (MB) ポイントは、メッセージ本文を追跡するポイントを表しています。 メッセージ本文の追跡を設定する方法の詳細については、次を参照してください。 [、BizTalk Server 管理コンソールを使用した追跡構成](http://msdn.microsoft.com/en-us/49b7f9d3-60b5-41bd-ba8b-029253926bef)します。  
+- **メッセージ本文**します。 図中の 2 つのメッセージ本文 (MB) ポイントは、メッセージ本文を追跡するポイントを表しています。 メッセージ本文の追跡を設定する方法の詳細については、次を参照してください。 [、BizTalk Server 管理コンソールを使用した追跡構成](http://msdn.microsoft.com/49b7f9d3-60b5-41bd-ba8b-029253926bef)します。  
   
   **テスト シナリオのアーキテクチャ**  
   
