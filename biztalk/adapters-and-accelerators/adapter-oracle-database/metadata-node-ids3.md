@@ -88,7 +88,7 @@ ms.locfileid: "36969659"
 |[DB_PACKAGE]|/[バージョン]/[DB_SCHEMA]、[パッケージ]|カテゴリ|検索式に一致する指定したスキーマには、すべてのパッケージ ノード (カテゴリ) を返します。|  
 |[PACK_PROCEDURE] と [PACK_FUNCTION]|/[バージョン]/[DB_SCHEMA]/Package/[DB_PACKAGE]|OPERATION|検索式に一致する指定されたパッケージ内の関数およびプロシージャのすべてのノード (操作) を返します。|  
 
- [バージョン] バージョンの文字列を =たとえば、http://Microsoft.LobServices/2007/03します。  
+ [バージョン] バージョンの文字列を =たとえば、 http://Microsoft.LobServices/2007/03 します。  
 
  [DB_SCHEMA] コレクションの Oracle の成果物を =たとえば、SCOTT です。  
 
