@@ -35,7 +35,7 @@ ms.locfileid: "25972144"
   
 2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – setcredentials\<ドメイン\>\\< ユーザー名\> \<applicationname\>** ここで、  **\<ドメイン\>** は Windows ドメイン ユーザー アカウントを **\<username\>** は、Windows ユーザー名と **\<applicationname\>** は、特定のアプリケーションの資格情報を設定します。  
+3.  型**ssomanage – setcredentials\<ドメイン\>\\< ユーザー名\> \<applicationname\>** ここで、  **\<ドメイン\>** は Windows ドメイン ユーザー アカウントを**\<username\>** は、Windows ユーザー名と**\<applicationname\>** は、特定のアプリケーションの資格情報を設定します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

@@ -50,7 +50,7 @@ ms.locfileid: "36994595"
 |Aggregator フォルダー内: <br /><br /> Aggregate.odx|関連付けられているメッセージを 1 か所に集め、送信パイプラインを実行して単一のインターチェンジに組み立てるオーケストレーションです。|  
 |Aggregate フォルダー内: <br /><br /> SuspendMessage.odx|アグリゲート オーケストレーション内で処理できない保留メッセージに対して使用するオーケストレーションです。|  
 |PipelinesAndSchemas フォルダー内: <br /><br /> FFReceivePipeline.btp|フラット ファイル逆アセンブラーを使用した受信パイプラインです。|  
-|PipelinesAndSchemas フォルダー内: <br /><br /> Instance1.txt、Instance2.txt、Instance3.txt、Instance4.txt|サンプルのドキュメント インスタンスです。 Instance1.txt と Instance2.txt は、宛先パートナーのインターチェンジに追加する必要があります[ http://www.contoso.com ](http://www.contoso.com/) Instance3.txt と Instance4.txt は、宛先パートナーのインターチェンジに追加する必要があります[ http://www.northwind.com](http://www.northwind.com/).|  
+|PipelinesAndSchemas フォルダー内: <br /><br /> Instance1.txt、Instance2.txt、Instance3.txt、Instance4.txt|サンプルのドキュメント インスタンスです。 Instance1.txt と Instance2.txt は、宛先パートナーのインターチェンジに追加する必要があります [http://www.contoso.com](http://www.contoso.com/) Instance3.txt と Instance4.txt は、宛先パートナーのインターチェンジに追加する必要があります [http://www.northwind.com](http://www.northwind.com/) .|  
 |PipelinesAndSchemas フォルダー内: <br /><br /> Invoice.xsd、InvoiceEnvelope.xsd|出力インターチェンジのドキュメント スキーマとエンベロープ スキーマです。|  
 |PipelinesAndSchemas フォルダー内: <br /><br /> PipelinesAndSchemas.btproj|スキーマとパイプラインの BizTalk プロジェクトです。|  
 |PipelinesAndSchemas フォルダー内: <br /><br /> PropertySchema.xsd|サンプルのプロパティ スキーマです。|  
