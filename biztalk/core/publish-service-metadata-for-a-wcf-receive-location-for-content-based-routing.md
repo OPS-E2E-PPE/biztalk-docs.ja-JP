@@ -91,7 +91,7 @@ BizTalk WCF サービス公開ウィザードを使用して WCF サービスを
      >  プロジェクトの場所には、別のサーバーを指定することもできます。 WCF サービスを別のサーバーに発行するプロジェクト名を入力として http://<*servername*>/<*WCF サービスの場所*>。  
 
      > [!NOTE]
-     >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに公開する場合は、URL に Web サイトのポート番号を含めます。 たとえば、 http://&lt*servername*>: 8080/<*WCF サービスの場所*>。  
+     >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに公開する場合は、URL に Web サイトのポート番号を含めます。 たとえば、 http://<*servername*>: 8080/<*WCF サービスの場所*>。  
 
      > [!NOTE]
      >  このウィザードで Web アプリケーションの \App_Data\Temp フォルダーに作成される BindingInfo.xml ファイルでは、パイプラインに既定値が使用されます。 受信パイプラインの既定値は、 **Microsoft.BizTalk.DefaultPipelines.XMLReceive**パイプライン、および既定値の送信パイプラインは、 **Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**パイプライン。  
