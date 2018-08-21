@@ -70,7 +70,7 @@ ITEMS,ITEM872-AA|Lawnmower|1|148.95|Confirm this is electric,ITEM926-AA|Baby Mon
 
     -   **レコード名:** 型**PO**スキーマのルート名になります。  
 
-    -   **ターゲットの名前空間:** 型**http://Flat_File_Project.PurchaseOrder**スキーマのターゲット名前空間。  
+    -   **ターゲットの名前空間:** 型 **http://Flat_File_Project.PurchaseOrder** スキーマのターゲット名前空間。  
 
     -   **コード ページ:** 選択**utf-8 (65001)** ドロップダウン リストから。  
 

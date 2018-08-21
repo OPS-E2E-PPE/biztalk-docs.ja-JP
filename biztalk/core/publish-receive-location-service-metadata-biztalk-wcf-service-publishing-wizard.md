@@ -19,7 +19,7 @@ ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 53d290067b33d676f9c3052f93e61100252ad34f
 ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/27/2018
 ms.locfileid: "36996867"
@@ -116,7 +116,7 @@ WCF サービスを作成して、オーケストレーション ポートにバ
    > [!NOTE]
    >  この設定はオプションで、公開した WCF サービスをホストする ASP.NET アプリケーションに、オペレーティング システムのセキュリティの影響下にあるリソースへのアクセス権限を与えます。 これは、公開された WCF サービスと同じコンピューターで Windows SharePoint Services がインストールおよび実行されている場合に、WCF サービスの実行に必要な信頼レベルです。  
 
-4. Internet explorer で、**アドレス**ボックスに、形式 http:// を使用して WCF サービスの URL を入力<em>ホスト [: ポート]</em>/*apppath* /*wcfservicename.svc*を公開した WCF サービスをテストします。 次の表は、これらのパラメーターについてまとめたものです。  
+4. Internet explorer で、**アドレス**ボックスに、形式 を使用して WCF サービスの URL を入力 http://<em>ホスト [: ポート]</em>/*apppath* /*wcfservicename.svc*を公開した WCF サービスをテストします。 次の表は、これらのパラメーターについてまとめたものです。  
 
 
    |      パラメーター       |                                                            値                                                            |

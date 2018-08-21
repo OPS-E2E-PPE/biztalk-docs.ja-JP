@@ -49,7 +49,7 @@ ms.locfileid: "37011355"
   
 4. プロパティ ペインを表示、編集ウィンドウを右クリックし、をクリックして**プロパティ**します。  
   
-5. プロパティ ペインで次のようにクリックします**スキーマ**、クリックして、省略記号 (**.。**).  
+5. プロパティ ペインで次のようにクリックします**スキーマ**、クリックして、省略記号 (**...**).  
   
 6. **XML スキーマ**ダイアログ ボックスで、をクリックして**追加**クリックし、スキーマの場所に移動します**CommonInterceptorConfiguration.xsd**と**WcfInterceptorConfiguration.xsd**で作業している場合、[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)]インターセプター構成ファイル、または**WorkflowInterceptorConfiguration.xsd**で作業している場合、 [!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)]インターセプター構成ファイル。  
   
