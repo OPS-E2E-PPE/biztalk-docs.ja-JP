@@ -24,7 +24,7 @@ ms.locfileid: "25965576"
 # <a name="step-4-submitting-a-3a4-request"></a>手順 4: 3A4 要求の送信
 ここでは、3A4 - Request Purchase Order の PIP (Partner Interface Process) を使用して、要求を作成および送信します。 この PIP を使用することにより、購入者組織が発注を業者に送信できるようになります。 通常は、3A2 - Request Price and Availability PIP を使用して注文可能な製品を照会してから、3A4 - Request Purchase Order を要求します。 3A4 PIP は、受信確認を送信する非同期の PIP です。  
   
- ![(& m); 60変更なし &#62;。] (../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-intro-eetut-3a4flow.gif "RN3_Intro_EETut_3A4Flow")  
+ ![(& m); 60変更なし & #62;。](../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-intro-eetut-3a4flow.gif "RN3_Intro_EETut_3A4Flow")  
   
 ### <a name="to-submit-a-3a4---request-purchase-order"></a>3A4 - Request Purchase Order を送信するには  
   

@@ -56,8 +56,8 @@ ms.locfileid: "22269922"
   
  **呼び出し先オーケストレーション (メイン)**  
   
- ![呼び出されたオーケストレーション (&) #40 です。 メイン (&) #41;] (../core/media/bts-trans-orch-fig9.gif "BTS_Trans_Orch_Fig9")  
+ ![呼び出されたオーケストレーション (&) #40 です。 メイン (&) #41;](../core/media/bts-trans-orch-fig9.gif "BTS_Trans_Orch_Fig9")  
   
  **呼び出し先オーケストレーション (補正)**  
   
- ![呼び出し先オーケストレーション (&) #40 です。 補正 (&) #41;] (../core/media/bts-trans-orch-fig10.gif "BTS_Trans_Orch_Fig10")
+ ![呼び出し先オーケストレーション (&) #40 です。 補正 (&) #41;](../core/media/bts-trans-orch-fig10.gif "BTS_Trans_Orch_Fig10")

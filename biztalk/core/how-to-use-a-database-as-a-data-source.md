@@ -37,7 +37,7 @@ ms.locfileid: "22255714"
   
 4.  認証の種類を選択します。 SQL Server 認証を選択した場合は、ログイン名とパスワードを入力します。 ユーザーの認証情報を入力したら、をクリックして**OK**です。  
   
-     ![ツリー ブラウザーのデータベースのスクリーン ショット。] (../core/media/ebiz-dbbrows.gif "ebiz_dbbrows")  
+     ![ツリー ブラウザーのデータベースのスクリーン ショット。](../core/media/ebiz-dbbrows.gif "ebiz_dbbrows")  
 データベースの参照  
   
 > [!NOTE]

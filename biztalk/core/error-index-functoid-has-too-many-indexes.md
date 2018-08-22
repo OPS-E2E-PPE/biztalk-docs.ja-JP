@@ -32,4 +32,4 @@ ms.locfileid: "25968944"
   
  **ユーザーの操作**  
   
- 選択し**インデックス**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、**入力パラメーター**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウにし、**構成\<Functoid\>Functoid**ダイアログ ボックスで、削除を選択しをクリックすると、余分なインデックス入力パラメーター、 ![ ] (../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete")それぞれのボタンをクリックします。
+ 選択し**インデックス**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、**入力パラメーター**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウにし、**構成\<Functoid\>Functoid**ダイアログ ボックスで、削除を選択しをクリックすると、余分なインデックス入力パラメーター、 ![](../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete")それぞれのボタンをクリックします。

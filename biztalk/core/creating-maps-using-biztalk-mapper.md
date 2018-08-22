@@ -30,7 +30,7 @@ ms.locfileid: "22238338"
 # <a name="creating-maps-using-biztalk-mapper"></a>BizTalk マッパーでのマップの作成
 BizTalk マッパーは、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 環境内で動作するツールです。 BizTalk マッパーを使用すると、XML メッセージの変換に必要なマップを作成および編集できます。 マップは、オーケストレーション (次の図を参照) に使用されるほか、受信ポートで受け取ったメッセージを処理し、変換を適用してから、送信ポートを介して送信するという目的にも使用されます。  
   
- ![マップとビジネス プロセス ダイアグラム。] (../core/media/ebiz-dev-busprcsg.gif "ebiz_dev_busprcsg")  
+ ![マップとビジネス プロセス ダイアグラム。](../core/media/ebiz-dev-busprcsg.gif "ebiz_dev_busprcsg")  
 ビジネス プロセスのマップ  
   
  マップを使用して、メッセージを変換 (トランスレートまたはトランスフォーム) できます。 トランスレートは、フラット ファイルから XML ファイルへの変換など、ある形式から別の形式にメッセージを変換する処理です。 トランスフォームは、あるメッセージから情報を取得し、別のメッセージにその情報を挿入する処理です。 たとえば、注文書から送付先住所および請求先住所を取得し、請求書に挿入する場合などです。  

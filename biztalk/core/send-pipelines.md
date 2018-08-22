@@ -29,7 +29,7 @@ ms.locfileid: "22270178"
 # <a name="send-pipelines"></a>送信パイプライン
 次の図は、メッセージ処理のワークフローです。送信パイプラインが強調表示されています。  
   
- ![メッセージを処理するためのワークフローのダイアグラム。] (../core/media/ebiz-dev-busprcsadptc.gif "ebiz_dev_busprcsadptc")  
+ ![メッセージを処理するためのワークフローのダイアグラム。](../core/media/ebiz-dev-busprcsadptc.gif "ebiz_dev_busprcsadptc")  
 メッセージ処理ワークフロー  
   
  送信パイプラインでは、最終的な送信先に送られる前のドキュメントが処理されます。 送信パイプラインは、1 つのメッセージを取得し、送信する 1 つのメッセージを作成します。  

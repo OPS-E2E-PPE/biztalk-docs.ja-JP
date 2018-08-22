@@ -132,7 +132,7 @@ ms.locfileid: "36978475"
   
 2.  ツリー ビュー ペインで (というラベルの付いた**構成**)、ノード ツリーを展開します。 をクリックして、 **詳細設定**フォルダー、 をクリックして、**拡張**フォルダー、およびバインド拡張機能の要素を選択します。  
   
-     ![サービス構成エディター。] (../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/0a44a070-b788-4287-bd9e-c946fafcf11c.gif "0a44a070-b788-4287-bd9e-c946fafcf11c")  
+     ![サービス構成エディター。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/0a44a070-b788-4287-bd9e-c946fafcf11c.gif "0a44a070-b788-4287-bd9e-c946fafcf11c")  
   
 3.  新しいバインディング拡張機能を作成します。 をクリックして、**新規**、拡張機能を開くにはボタン**構成要素エディタ** ダイアログ ボックス。 **構成名**、たとえば、拡張機能の一意の名前を入力*MyAdapterExtension*します。  
   
@@ -144,13 +144,13 @@ ms.locfileid: "36978475"
   
 6.  アダプターのアセンブリをクリックします。  
   
-     ![拡張型ブラウザーの構築。] (../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/7528e218-8930-4b01-b29d-8ec125a9b818.gif "7528e218-8930-4b01-b29d-8ec125a9b818")  
+     ![拡張型ブラウザーの構築。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/7528e218-8930-4b01-b29d-8ec125a9b818.gif "7528e218-8930-4b01-b29d-8ec125a9b818")  
   
 7.  をクリックして、**オープン**ボタンをクリックして、アセンブリを選択します。  
   
 8.  **バインディング拡張型ブラウザ** ダイアログ ボックスで、バインディング コレクションの要素を実装する型名をクリックします。  
   
-     ![拡張型ブラウザーの構築。] (../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/a5db2c6b-cdf7-4cd9-8cc4-6b0fb960b1ce.gif "a5db2c6b-cdf7-4cd9-8cc4-6b0fb960b1ce")  
+     ![拡張型ブラウザーの構築。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/a5db2c6b-cdf7-4cd9-8cc4-6b0fb960b1ce.gif "a5db2c6b-cdf7-4cd9-8cc4-6b0fb960b1ce")  
   
 9. をクリックして、**オープン**種類を選択するボタンをクリックします。  
   
@@ -158,7 +158,7 @@ ms.locfileid: "36978475"
   
 11. 詳細ウィンドウで、**バインディング拡張エディター**、バインド拡張機能が表示されることを確認します。 MyAdapterExtension は次の図で強調表示されます。  
   
-     ![拡張機能が追加されたサービス構成エディター。] (../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/955d37ea-cba5-49db-90de-0f8feb49c0e0.gif "955d37ea-cba5-49db-90de-0f8feb49c0e0")  
+     ![拡張機能が追加されたサービス構成エディター。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/955d37ea-cba5-49db-90de-0f8feb49c0e0.gif "955d37ea-cba5-49db-90de-0f8feb49c0e0")  
   
 12. 閉じる、**サービス構成エディター**します。  
   

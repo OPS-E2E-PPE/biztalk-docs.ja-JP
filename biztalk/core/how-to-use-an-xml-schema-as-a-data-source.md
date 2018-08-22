@@ -30,5 +30,5 @@ ms.locfileid: "37011675"
   
 3. **スキーマ ファイル**ダイアログ ボックスが、XSD ファイルを選択してクリックして**オープン**します。  
   
-   ![ファクト エクスプ ローラー ダイアログのスクリーン ショット。] (../core/media/ebiz-bre-factsexplorer-xml.gif "ebiz_bre_factsexplorer_xml")  
+   ![ファクト エクスプ ローラー ダイアログのスクリーン ショット。](../core/media/ebiz-bre-factsexplorer-xml.gif "ebiz_bre_factsexplorer_xml")  
    XML スキーマの参照

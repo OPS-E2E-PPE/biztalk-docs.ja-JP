@@ -27,7 +27,7 @@ ms.locfileid: "22231978"
 条件を追加することができます、**ループ**functoid の出力リンクを**ループ**functoid と**論理**functoid 同じ送信先レコードを送信します。 論理条件が満たされている場合のみ、送信先レコードが作成されます。  
   
 ## <a name="conditional-looping-map"></a>条件付きループのマップ  
- ![条件付きループ functoid を示すをマップします。] (../core/media/loopingconditionalfunctoid.gif "loopingconditionalfunctoid")  
+ ![条件付きループ functoid を示すをマップします。](../core/media/loopingconditionalfunctoid.gif "loopingconditionalfunctoid")  
   
  上記の図では、最初**等しい**functoid を比較、**名**フィールド**FoodSurvey** "Wendy wheeler"です。 2 番目**等しい**functoid を比較、**名前**フィールド**FlowerSurvey** "Kelly focht"です。 したがって、先の作成、マップ**アドレス**レコードのみ、2 つの名前。 サンプル データを使用して、**ループ**functoid 例では、出力インスタンス メッセージは次のようです。  
   

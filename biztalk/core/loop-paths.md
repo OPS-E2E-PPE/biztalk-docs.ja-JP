@@ -30,7 +30,7 @@ ms.locfileid: "22262154"
   
  ループ パスは、送信元スキーマのループ レコードのフィールドを、送信先スキーマのループ レコードのフィールドにリンクさせることによって構成できます。 次の図に、食品調査レコードのみをマスター住所リストにコピーするマップを示します。  
   
- ![ループ パスの使用方法を示すマップです。] (../core/media/correct-loop-path-map.gif "correct_loop_path_map")  
+ ![ループ パスの使用方法を示すマップです。](../core/media/correct-loop-path-map.gif "correct_loop_path_map")  
 ループ パス マップ  
   
 ## <a name="multiple-loop-paths"></a>ループ パスが複数あります  
@@ -41,7 +41,7 @@ ms.locfileid: "22262154"
   
  このマップでは、予想どおりの結果にはなりません。 コンパイル時にマッパーにより複数のループ パスが検出されると、警告が生成され、既定では最初のループ パスが選択されます。 単一のマスター住所リストに 2 つの異なるアドレスを結合するために使用して、**ループ**functoid マップの下に示すようにします。  
   
- ![ループ functoid の使用方法を示すマップです。] (../core/media/loopingfunctoid.gif "loopingfunctoid")  
+ ![ループ functoid の使用方法を示すマップです。](../core/media/loopingfunctoid.gif "loopingfunctoid")  
 ループ Functoid マップ (正しい)  
   
  **ループ**functoid は、次のシナリオで複数のループ パスの代わりに使用する必要があります。  

@@ -53,7 +53,7 @@ ms.locfileid: "22287874"
   
  次の図は、この変換を実行するためのマップを示しています。  
   
- ![Functoid を使用して基になるレコードをマップします。] (../core/media/valuemappingflattenfunctoid.gif "valuemappingflattenfunctoid")  
+ ![Functoid を使用して基になるレコードをマップします。](../core/media/valuemappingflattenfunctoid.gif "valuemappingflattenfunctoid")  
 値のマッピング (フラット化) のマップ  
   
  **値のマッピング (フラット化)** functoid は、最初のパラメーターが true の場合に、2 番目のパラメーターの値を返します。 このマップの最初の**等しい**functoid テストかどうかを**名前**属性が"Material"と等しい。 属性が"Material"と等しい場合、**等しい**functoid を返します**True**です。 これにより、**値のマッピング (フラット化)** の値を代入する functoid、**値**属性の出力メッセージのフィールドにします。  

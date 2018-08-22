@@ -57,7 +57,7 @@ ms.locfileid: "36984667"
 
 9. ときの値、 **PollWhileDataFound** "は True"に設定されている。  
 
-   ![ポーリングのシナリオ&#40;PollWhileDataFound&#61;False&#41;](../../adapters-and-accelerators/adapter-oracle-ebs/media/e5f00f4c-cc76-4e8b-9991-b4471f9d4865.gif "e5f00f4c-cc76-4e8b-9991-b4471f9d4865") ![ポーリングのシナリオ&#40;PollWhileDataFound &#61; &#41; ] (../../adapters-and-accelerators/adapter-oracle-ebs/media/ebecf64c-a770-4525-9c75-62fdb71e1fb1.gif "ebecf64c-a770-4525-9c75-62fdb71e1fb1")  
+   ![ポーリングのシナリオ&#40;PollWhileDataFound&#61;False&#41;](../../adapters-and-accelerators/adapter-oracle-ebs/media/e5f00f4c-cc76-4e8b-9991-b4471f9d4865.gif "e5f00f4c-cc76-4e8b-9991-b4471f9d4865") ![ポーリングのシナリオ&#40;PollWhileDataFound &#61; &#41; ](../../adapters-and-accelerators/adapter-oracle-ebs/media/ebecf64c-a770-4525-9c75-62fdb71e1fb1.gif "ebecf64c-a770-4525-9c75-62fdb71e1fb1")  
 
 ## <a name="differences-between-polling-and-notification"></a>ポーリングと通知の間の相違点  
  ポーリングと通知は、両方の受信操作し、Oracle データベースでデータの変更について、アダプターをクライアントに通知、次の表は、2 つの間のいくつかの違いを示します。 次の相違点を使用すると、要件に応じて、操作を決定できます。  

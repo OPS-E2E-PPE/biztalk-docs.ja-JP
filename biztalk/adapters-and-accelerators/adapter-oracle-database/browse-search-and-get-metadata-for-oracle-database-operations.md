@@ -231,7 +231,7 @@ ms.locfileid: "37005355"
   
     次に示します、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] scott Insert および Update 操作とします。EMP テーブルを選択します。  
   
-    ![Select および Update 操作が選択されます。] (../../adapters-and-accelerators/adapter-oracle-database/media/4c41ac7b-784a-494c-ac82-c007e22a4fdf.gif "4c41ac7b-784a-494c-ac82-c007e22a4fdf")  
+    ![Select および Update 操作が選択されます。](../../adapters-and-accelerators/adapter-oracle-database/media/4c41ac7b-784a-494c-ac82-c007e22a4fdf.gif "4c41ac7b-784a-494c-ac82-c007e22a4fdf")  
   
    > [!IMPORTANT]
    >  によって送信操作 (またはカテゴリ) を選択で、複数の 1 つの WCF クライアント クラスを生成できます。 詳細については、次を参照してください。 [WCF クライアントまたは Oracle データベース ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)します。  
