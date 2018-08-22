@@ -50,7 +50,7 @@ ms.locfileid: "36999043"
   
  次の図は、この変換を実行するためのマップを示しています。  
   
- ![ループ functoid の使用方法を示すマップ。] (../core/media/loopingflattenfunctoid.gif "loopingflattenfunctoid")  
+ ![ループ functoid の使用方法を示すマップ。](../core/media/loopingflattenfunctoid.gif "loopingflattenfunctoid")  
 ループ Functoid (フラット スキーマ マップ)  
 
 ## <a name="set-the-schema"></a>スキーマを設定します。  

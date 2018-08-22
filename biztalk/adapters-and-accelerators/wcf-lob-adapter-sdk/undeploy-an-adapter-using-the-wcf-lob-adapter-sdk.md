@@ -82,7 +82,7 @@ ms.locfileid: "36974587"
   
 3.  バインド拡張機能のエディターの詳細ウィンドウで、削除、およびクリックするバインド拡張機能をクリックします。**削除**します。 次の図に MyAdapterExtension が強調表示され、削除されます。  
   
-     ![拡張機能が追加されたサービス構成エディター。] (../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/955d37ea-cba5-49db-90de-0f8feb49c0e0.gif "955d37ea-cba5-49db-90de-0f8feb49c0e0")  
+     ![拡張機能が追加されたサービス構成エディター。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/955d37ea-cba5-49db-90de-0f8feb49c0e0.gif "955d37ea-cba5-49db-90de-0f8feb49c0e0")  
   
 4.  サービス構成エディタを閉じます。  
   

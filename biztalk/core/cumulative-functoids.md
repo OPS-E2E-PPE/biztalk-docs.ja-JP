@@ -70,7 +70,7 @@ ms.locfileid: "37004395"
 
  次の図を使用して、マップ、**乗算**functoid と**累積合計**item レコードを集計で functoid の入力方向の発注書とで結果を出力、 **書**フィールド。  
 
- ![累積合計 functoid の使用方法を示すマップ。] (../core/media/cumulativefunctoids.gif "cumulativefunctoids")  
+ ![累積合計 functoid の使用方法を示すマップ。](../core/media/cumulativefunctoids.gif "cumulativefunctoids")  
 
 
  このマップでは、前のデータと既定のスコープ パラメーターの値 0 (ゼロ) を使用して、次の出力結果を生成しています。  

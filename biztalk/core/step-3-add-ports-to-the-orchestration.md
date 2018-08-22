@@ -119,7 +119,7 @@ ms.locfileid: "36968619"
   
      すべてのポートが接続された EAIProcess オーケストレーションを次に示します。  
   
-     ![ポートが接続された EAIProcess オーケストレーションです。] (../core/media/tut1-eaiprocessportsconnected.gif "Tut1_EAIProcessPortsConnected")  
+     ![ポートが接続された EAIProcess オーケストレーションです。](../core/media/tut1-eaiprocessportsconnected.gif "Tut1_EAIProcessPortsConnected")  
   
 ## <a name="what-did-i-just-do"></a>でしただけ何か。  
  このステップでは、EAIProcess オーケストレーションに 3 つのポートを追加し、それらを構成しました。  

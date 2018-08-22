@@ -54,7 +54,7 @@ RNIF (RosettaNet Implementation Framework) 規格では、システムが Rosett
   
  次の図で、RNIF 1.1 と RNIF 2.01 のメッセージ定義について説明します。  
   
- ![(& m); 60変更なし &#62;。] (../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-rnif-message-definitions.gif "RN3_RNIF_Message_Definitions")  
+ ![(& m); 60変更なし & #62;。](../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-rnif-message-definitions.gif "RN3_RNIF_Message_Definitions")  
   
  RNIF 1.1 メッセージでは、バージョン番号は RNIF バージョンを示します。 コンテンツ長は、RosettaNet サービス メッセージの長さです。 Preamble、Service Header、および Service Content を含むサービス メッセージは、1 つの Multipart/Related MIME エンティティとなります。 署名長は、バイト単位での署名の長さです。 署名が存在する場合、これはサービス メッセージ フィールド上の PKCS (Public-Key Cryptography Standards) # 7 署名です。  
   

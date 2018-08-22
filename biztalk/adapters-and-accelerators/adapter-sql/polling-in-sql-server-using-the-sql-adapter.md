@@ -72,7 +72,7 @@ ms.locfileid: "36967131"
   
 2. ときの値、 **PollWhileDataFound** "は True"に設定されている。  
   
-   ![ポーリング ワークフロー &#40;PollWhileDataFound &#61; False&#41;](../../adapters-and-accelerators/adapter-sql/media/15598c14-3a62-4b8d-90bf-84e004a386db.gif "15598c14-3a62-4b8d-90bf-84e004a386db") ![ポーリング ワークフロー &#40;PollWhileDataFound &#61; &#41; ] (../../adapters-and-accelerators/adapter-sql/media/c20535be-ea45-4456-8b62-4d4585cb1d8c.gif "c20535be-ea45-4456-8b62-4d4585cb1d8c")  
+   ![ポーリング ワークフロー &#40;PollWhileDataFound &#61; False&#41;](../../adapters-and-accelerators/adapter-sql/media/15598c14-3a62-4b8d-90bf-84e004a386db.gif "15598c14-3a62-4b8d-90bf-84e004a386db") ![ポーリング ワークフロー &#40;PollWhileDataFound &#61; &#41; ](../../adapters-and-accelerators/adapter-sql/media/c20535be-ea45-4456-8b62-4d4585cb1d8c.gif "c20535be-ea45-4456-8b62-4d4585cb1d8c")  
   
 ## <a name="differences-between-polling-and-query-notification"></a>ポーリングとクエリ通知の違い  
  ポーリングとクエリ通知は、両方の受信操作で、SQL Server データベースのデータの変更について、アダプターをクライアントに通知、ただし、次の表は、いくつか 2 つの違いを示します。 次の相違点を使用すると、要件に応じて、操作を決定できます。  

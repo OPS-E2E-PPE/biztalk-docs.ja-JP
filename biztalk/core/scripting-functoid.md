@@ -56,7 +56,7 @@ ms.locfileid: "36982355"
   
  次に示しますが、どのように**Scripting** c# .Net スクリプトを使用して、電話番号を再フォーマットするマップに functoid が表示されます。  
   
- ![C を使用してマップ&#35;電話番号の書式を設定します。] (../core/media/scriptingfunctoid.gif "scriptingfunctoid")  
+ ![C を使用してマップ&#35;電話番号の書式を設定します。](../core/media/scriptingfunctoid.gif "scriptingfunctoid")  
 スクリプト Functoid のマップ  
   
 ## <a name="in-this-section"></a>このセクションの内容  

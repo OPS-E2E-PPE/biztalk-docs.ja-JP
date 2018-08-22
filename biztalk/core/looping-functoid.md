@@ -29,7 +29,7 @@ ms.locfileid: "22262842"
 > [!NOTE]
 >  **ループ** と **値のマッピング (フラット化)** functoid をまとめて使用しない必要があります。 送信元の下にある対象ノードの依存関係のループがないと見なさコンパイル済みのマップの結果、両方をまとめて使用する場合、 **ループ** functoid です。  
   
- ![ループ functoid の使用方法を示すマップです。] (../core/media/loopingfunctoid.gif "loopingfunctoid")  
+ ![ループ functoid の使用方法を示すマップです。](../core/media/loopingfunctoid.gif "loopingfunctoid")  
   
  **FoodSurvey** と **FlowerSurvey** 、送信元スキーマのループ レコードは、ループにマップされる **アドレス** 、送信先スキーマのレコードです。 3 つの入力インスタンス メッセージがある場合 **FoodSurvey** レコードと 2 つ **FlowerSurvey** 、レコード、 **ループ**functoid では、これらの 5 つを作成する結合 **アドレス** 出力インスタンス メッセージ内のレコードです。  
   

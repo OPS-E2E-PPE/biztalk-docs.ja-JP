@@ -32,7 +32,7 @@ ms.locfileid: "37019140"
   
     選択したカテゴリに含まれる高度な Functoid の一覧が表示されます。  
   
-2. ドラッグ、 **Scripting** functoid ![ ] (../core/media/bts-tls-scripting.gif "bts_tls_scripting")ツールボックスからグリッド ページの適切な場所にします。  
+2. ドラッグ、 **Scripting** functoid ![](../core/media/bts-tls-scripting.gif "bts_tls_scripting")ツールボックスからグリッド ページの適切な場所にします。  
   
    > [!NOTE]
    >  Functoid は表示されているグリッド ページに配置されます。 別のグリッド ページに functoid を配置する場合は、最初にその他のグリッド ページを表示する必要があります。  

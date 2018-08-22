@@ -37,7 +37,7 @@ ms.locfileid: "37009923"
   
   **BAM での分散ナビゲーションの使用**  
   
-  ![分散ナビゲーション シナリオ。] (../core/media/bcd-distrbuted-nav-scenario.gif "bcd_distrbuted_nav_scenario")  
+  ![分散ナビゲーション シナリオ。](../core/media/bcd-distrbuted-nav-scenario.gif "bcd_distrbuted_nav_scenario")  
   
   管理者は次に示すように、サーバーをできるだけ独立した状態で構成する必要があります。  
   

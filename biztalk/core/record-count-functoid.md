@@ -56,7 +56,7 @@ ms.locfileid: "22268746"
   
  次に示します、**レコード カウント**、受信する販売注文内の項目の数をカウントし、値を配置する functoid、 **ItemCount**フィールドで、 **SummedPO**出力インスタンス メッセージ。  
   
- ![レコード カウント functoid の使用方法を示すマップです。] (../core/media/recordcountfunctoid.gif "recordcountfunctoid")  
+ ![レコード カウント functoid の使用方法を示すマップです。](../core/media/recordcountfunctoid.gif "recordcountfunctoid")  
 レコード カウント Functoid のマップ  
   
  注意して、 **Max Occurs**プロパティを**項目**レコード**unbounded**です。 これが示す、**項目**レコードがループ、および BizTalk マッパーは、このレコードをループとしてをコンパイルします。  

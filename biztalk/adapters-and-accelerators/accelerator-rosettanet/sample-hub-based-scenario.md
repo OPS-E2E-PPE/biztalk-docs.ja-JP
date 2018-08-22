@@ -33,7 +33,7 @@ ms.locfileid: "22210418"
 ## <a name="how-a-hub-based-system-works"></a>ハブベース システムの動作  
  ハブベースのシステムでは、統合システムを契約している企業が RNIF 接続を使用してハブ企業に接続します。 次に、ハブ企業は必要とされる任意の電子的接続手段を使って、その企業のすべての取引先に接続します。 ハブ企業は、RNIF 接続、EDI、フラット ファイル、Web アプリケーション、および専用接続をすべての取引先に提供できます。 通信システムの管理は、ハブ企業が担当します。 次の図に、このようなハブベース システムのしくみを示します。  
   
- ![(& m); 60変更なし &#62;。] (../../adapters-and-accelerators/accelerator-rosettanet/media/hub-based-scenario.gif "Hub_Based_Scenario")  
+ ![(& m); 60変更なし & #62;。](../../adapters-and-accelerators/accelerator-rosettanet/media/hub-based-scenario.gif "Hub_Based_Scenario")  
   
  ハブベースのシステムには、以下のような多くの利点があります。  
   

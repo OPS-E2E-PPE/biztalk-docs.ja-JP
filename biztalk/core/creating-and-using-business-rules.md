@@ -41,7 +41,7 @@ ms.locfileid: "36979395"
   
   次の図に示すように、ビジネス ルール フレームワークを使って作成したビジネス ルール (ポリシー) は、オーケストレーションに基づくビジネス プロセスで使用できます。  
   
-  ![プロセスでビジネス ポリシーを示す図。] (../core/media/ebiz-dev-busprcsi.gif "ebiz_dev_busprcsi")  
+  ![プロセスでビジネス ポリシーを示す図。](../core/media/ebiz-dev-busprcsi.gif "ebiz_dev_busprcsi")  
   ビジネス ポリシー  
   
   このセクションでは、ビジネス ルール フレームワークの活用方法、および [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 付属のツールを使用してビジネス ルールを開発する方法に関する概要を説明します。  
