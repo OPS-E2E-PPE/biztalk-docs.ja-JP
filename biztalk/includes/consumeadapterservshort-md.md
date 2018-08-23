@@ -1,1 +1,1 @@
-<span data-ttu-id="ccef7-101">"アダプター サービスの使用" アドイン</span><span class="sxs-lookup"><span data-stu-id="ccef7-101">Consume Adapter Service Add-in</span></span>
+<span data-ttu-id="c81cc-101">"アダプター サービスの使用" アドイン</span><span class="sxs-lookup"><span data-stu-id="c81cc-101">Consume Adapter Service Add-in</span></span>
