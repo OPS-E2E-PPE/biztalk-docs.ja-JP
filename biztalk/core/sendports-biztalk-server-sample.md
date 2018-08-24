@@ -33,7 +33,7 @@ SendPorts サンプルは、列挙およびを使用して送信ポートを管�
 
 1. 使用して、BizTalk 管理データベースに接続する、 **BtsCatalogExplorer**クラス。  
 
-2. 2 つの新しい送信ポートの作成は、myStaticOnewaySendPort1 および myDynamicTwowaySendPort1 という名前です。 myStaticOnewaySendPort1、その名前が示すように、静的な一方向送信ポートです。  送信先 URL の例で、HTTP トランスポートを使用する作成http://sample1です。 myDynamicTwowaySendPort1 は、動的な双方向の送信ポートとして作成されます。  
+2. 2 つの新しい送信ポートの作成は、myStaticOnewaySendPort1 および myDynamicTwowaySendPort1 という名前です。 myStaticOnewaySendPort1、その名前が示すように、静的な一方向送信ポートです。  送信先 URL の例で、HTTP トランスポートを使用する作成 http://sample1 です。 myDynamicTwowaySendPort1 は、動的な双方向の送信ポートとして作成されます。  
 
 3. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境の送信ポートを列挙する。 この列挙には、2 つの新しい送信ポートが含まれます。  
 
