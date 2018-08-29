@@ -90,7 +90,7 @@ ms.locfileid: "36979779"
   
 ### <a name="to-publish-the-sample-orchestration-by-using-the-biztalk-wcf-service-publishing-wizard"></a>BizTalk WCF サービス公開ウィザードを使用して、サンプル オーケストレーションを公開するには  
   
-1. この手順では、新しく展開されたオーケストレーション アセンブリを取得し、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスとして公開します。 これを行うには、次のようにクリックします**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、 をクリックし、 **BizTalk WCF サービス公開ウィザード。**.  
+1. この手順では、新しく展開されたオーケストレーション アセンブリを取得し、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスとして公開します。 これを行うには、次のようにクリックします**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、 をクリックし、 **BizTalk WCF サービス公開ウィザード**。  
   
 2. **BizTalk WCF サービス公開ウィザードへようこそ**] ページで [**次**します。  
   
