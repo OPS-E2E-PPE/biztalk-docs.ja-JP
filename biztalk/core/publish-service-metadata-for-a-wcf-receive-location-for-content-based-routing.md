@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e3aaab98733058877bcbed5022c85aef8fb2159
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: efcda402c231b990d7fefa239a8ff15798331184
+ms.sourcegitcommit: 9b93ee2a019bef8d482626cf5525a6b95509b135
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017086"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42709835"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-service-metadata-for-a-wcf-receive-location-for-content-based-routing"></a>BizTalk WCF サービス公開ウィザードを使用してコンテンツ ベース ルーティングの WCF 受信場所にサービス メタデータを公開する方法
 BizTalk WCF サービス公開ウィザードを使用して WCF サービスを作成し、コンテンツベース ルーティングの既存の WCF 受信場所にメタデータを公開します。  
@@ -77,7 +77,7 @@ BizTalk WCF サービス公開ウィザードを使用して WCF サービスを
 
     ![WCF サービスのプロパティ ページ](../core/media/07518c78-bcae-4274-bb14-aeef107ee4c6.gif "07518c78-bcae-4274-bb14-aeef107ee4c6")  
 
-9. **WCF サービスの場所**ページで、**場所**テキスト ボックスに、WCF サービスが生成される Web ディレクトリ名を入力します。 既定の場所を受け入れることができます (http://localhost/<*Web サービス説明の名前*>)、WCF サービスの場所を入力、**場所**テキスト ボックス、またはクリック**を参照**Web ディレクトリを選択します。 次のいずれかのオプションをクリックします。  
+9. **WCF サービスの場所**ページで、**場所**テキスト ボックスに、WCF サービスが生成される Web ディレクトリ名を入力します。 既定の場所を受け入れることができます (`http://localhost/<Web service description name>`)、WCF サービスの場所を入力、**場所**テキスト ボックス、またはクリック**参照**Web ディレクトリを選択します。 次のいずれかのオプションをクリックします。  
 
    - **既存のプロジェクトを上書きします。** : このオプションは、Web ディレクトリが存在する場合のみ選択できます。 このオプションを選択すると、同じ場所にのみ公開できます。 このオプションを選択しない場合は、別のプロジェクトの場所を入力する必要があります。  
 
@@ -88,10 +88,10 @@ BizTalk WCF サービス公開ウィザードを使用して WCF サービスを
      ![WCF サービスの場所 ページ](../core/media/76285470-1520-4d77-a5b6-c58cbe8fc575.gif "76285470-1520-4d77-a5b6-c58cbe8fc575")  
 
      > [!NOTE]
-     >  プロジェクトの場所には、別のサーバーを指定することもできます。 WCF サービスを別のサーバーに発行するプロジェクト名を入力として http://<*servername*>/<*WCF サービスの場所*>。  
+     >  プロジェクトの場所には、別のサーバーを指定することもできます。 WCF サービスを別のサーバーに発行するには、としてプロジェクト名を入力`http://<servername>/<WCF service location>`します。  
 
      > [!NOTE]
-     >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに公開する場合は、URL に Web サイトのポート番号を含めます。 たとえば、 http://<*servername*>: 8080/<*WCF サービスの場所*>。  
+     >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに公開する場合は、URL に Web サイトのポート番号を含めます。 たとえば、 `http://<servername>:8080/<WCF service location>` のようにします。  
 
      > [!NOTE]
      >  このウィザードで Web アプリケーションの \App_Data\Temp フォルダーに作成される BindingInfo.xml ファイルでは、パイプラインに既定値が使用されます。 受信パイプラインの既定値は、 **Microsoft.BizTalk.DefaultPipelines.XMLReceive**パイプライン、および既定値の送信パイプラインは、 **Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**パイプライン。  
@@ -120,7 +120,7 @@ BizTalk WCF サービス公開ウィザードを使用して WCF サービスを
    > [!NOTE]
    >  この設定はオプションで、公開した WCF サービスをホストする ASP.NET アプリケーションに、オペレーティング システムのセキュリティの影響下にあるリソースへのアクセス権限を与えます。 これは、公開された WCF サービスと同じコンピューターで Windows SharePoint Services がインストールおよび実行されている場合に、WCF サービスの実行に必要な信頼レベルです。  
 
-4. Internet explorer で、**アドレス**ボックスに、形式 http:// を使用して WCF サービスの URL を入力<em>ホスト [: ポート]</em>/*apppath* /*wcfservicename.svc*を公開した WCF サービスをテストします。 次の表は、これらのパラメーターについてまとめたものです。  
+4. Internet explorer で、**アドレス**ボックスに、形式 を使用して WCF サービスの URL を入力 http://<em>ホスト [: ポート]</em>/*apppath* /*wcfservicename.svc*を公開した WCF サービスをテストします。 次の表は、これらのパラメーターについてまとめたものです。  
 
 
    |      パラメーター       |                                                            値                                                            |

@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf10236b5db5b1af1a0a115e57a71ad2ae415eda
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4079486e7dc225793f0620dfb52a7c6fdbf02899
+ms.sourcegitcommit: 9b93ee2a019bef8d482626cf5525a6b95509b135
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022168"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42709895"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-schemas-as-wcf-services"></a>BizTalk WCF サービス公開ウィザードを使用してスキーマを WCF サービスとして公開する方法
 スキーマを WCF サービスとして公開するには、BizTalk WCF サービス公開ウィザードを使用します。  
@@ -95,7 +95,7 @@ ms.locfileid: "37022168"
   
      ![WCF サービスのプロパティ ページ](../core/media/07518c78-bcae-4274-bb14-aeef107ee4c6.gif "07518c78-bcae-4274-bb14-aeef107ee4c6")  
   
-11. **WCF サービスの場所**ページで、**場所**テキスト ボックスに、WCF サービスが生成される Web ディレクトリ名を入力します。 既定の場所を受け入れることができます (http://localhost/<*Web サービス説明の名前*>)、WCF サービスの場所を入力、**場所**テキスト ボックス、またはクリック**を参照**Web ディレクトリを選択します。 次のいずれかのオプションをクリックします。  
+11. **WCF サービスの場所**ページで、**場所**テキスト ボックスに、WCF サービスが生成される Web ディレクトリ名を入力します。 既定の場所を受け入れることができます (`http://localhost/<Web service description name>`)、WCF サービスの場所を入力、**場所**テキスト ボックス、またはクリック**参照**Web ディレクトリを選択します。 次のいずれかのオプションをクリックします。  
   
     - **既存のプロジェクトを上書きします。** : このオプションは、Web ディレクトリが存在する場合のみ選択できます。 このオプションを選択すると、同じ場所にのみ公開できます。 このオプションを選択しない場合は、別のプロジェクトの場所を入力する必要があります。  
   
@@ -106,10 +106,10 @@ ms.locfileid: "37022168"
       ![WCF サービスの場所 ページ](../core/media/76285470-1520-4d77-a5b6-c58cbe8fc575.gif "76285470-1520-4d77-a5b6-c58cbe8fc575")  
   
     > [!NOTE]
-    >  プロジェクトの場所には、別のサーバーを指定することもできます。 WCF サービスを別のサーバーに発行するプロジェクト名を入力として http://<*servername*>/<*WCF サービスの場所*>。  
+    >  プロジェクトの場所には、別のサーバーを指定することもできます。 WCF サービスを別のサーバーに発行するには、としてプロジェクト名を入力`http://<servername>/<WCF service location>`します。  
   
     > [!NOTE]
-    >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに公開する場合は、URL に Web サイトのポート番号を含めます。 たとえば、 http://<*servername*>: 8080/<*WCF サービスの場所*>。  
+    >  プロジェクトの場所には、既定以外の Web サイトを指定することもできます。 既定以外の Web サイトに公開する場合は、URL に Web サイトのポート番号を含めます。 たとえば、 `http://<servername>:8080/<WCF service location>` のようにします。  
   
     > [!NOTE]
     >  ウィザードを使用して受信場所を作成する場合は、既定値を使用して受信場所が作成されます。 受信パイプラインの既定値は、 **Microsoft.BizTalk.DefaultPipelines.PassThruReceive**パイプライン。 公開された WCF サービスを通じて受信するメッセージが、特別なパイプライン処理 (たとえば、検証、関連付け/プロパティの昇格、または受信/送信マップ) を必要とする場合には、受信パイプラインを設定する必要があります**Microsoft.BizTalk.DefaultPipelines.XMLReceive**、または BizTalk 管理コンソールを使用してカスタム パイプラインです。  
