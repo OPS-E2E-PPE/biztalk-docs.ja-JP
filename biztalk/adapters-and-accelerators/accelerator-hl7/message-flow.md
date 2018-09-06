@@ -33,7 +33,6 @@ ms.locfileid: "36968995"
   
 -   [メッセージの検証](../../adapters-and-accelerators/accelerator-hl7/message-validation.md)  
   
--   
-  [MSH のオーバーライド](../../adapters-and-accelerators/accelerator-hl7/msh-override.md)  
+-   [MSH のオーバーライド](../../adapters-and-accelerators/accelerator-hl7/msh-override.md)  
   
 -   [受信確認](../../adapters-and-accelerators/accelerator-hl7/acknowledgments.md)

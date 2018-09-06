@@ -31,7 +31,7 @@ ms.locfileid: "25972544"
   
 2.  コマンド プロンプトで、次のように入力します。  
   
-     **nscontrol register-name BamAlerts-サーバー***\<ServerName\>***-サービス - serviceusername"**  *\<ServiceUserName\>*  **"-servicepassword"**  *\<ServicePassword\>*  **"**   
+     **nscontrol register-name BamAlerts-サーバー***\<ServerName\>***-サービス - serviceusername"** *\<ServiceUserName\>* **"-servicepassword"** *\<ServicePassword\>* **"**   
   
      これにより、Notification Services が、適切なデータベース (この情報は、nscontrol により、サービス コンピューターのレジストリに保持) にログオンします。  
   
