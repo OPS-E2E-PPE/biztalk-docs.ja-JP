@@ -45,7 +45,7 @@ ms.locfileid: "37024528"
   
 1. <span data-ttu-id="2c6d1-116">クリックして**開始**、 をポイント**プログラム**、 をポイント**IBM WebSphere MQ**、順にクリックします**WebSphere MQ エクスプ ローラー**します。</span><span class="sxs-lookup"><span data-stu-id="2c6d1-116">Click **Start**, point to **Programs**, point to **IBM WebSphere MQ**, and then click **WebSphere MQ Explorer**.</span></span>  
   
-2. <span data-ttu-id="2c6d1-117">ダブルクリック**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="2c6d1-117">Double-click **Queue Managers**, and then double-click the default queue manager.</span></span> <span data-ttu-id="2c6d1-118">通常、既定のキュー マネージャーの名前 **qm _ * * * < machine_name >* 場所*machine_name*コンピューターの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="2c6d1-118">The default queue manager is typically named **QM_***<machine_name>* where *machine_name* is the name of your computer.</span></span>  
+2. <span data-ttu-id="2c6d1-117">ダブルクリック**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="2c6d1-117">Double-click **Queue Managers**, and then double-click the default queue manager.</span></span> <span data-ttu-id="2c6d1-118">通常、既定のキュー マネージャーの名前 **qm _ \* \* \* < machine_name >* 場所*machine_name\*コンピューターの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="2c6d1-118">The default queue manager is typically named \**QM_\*\*\*<machine_name>* where *machine_name* is the name of your computer.</span></span>  
   
 3. <span data-ttu-id="2c6d1-119">右クリック**キュー**、 をポイント**新規**、 をクリックし、**ローカル キュー**します。</span><span class="sxs-lookup"><span data-stu-id="2c6d1-119">Right-click **Queues**, point to **New**, and then click **Local Queue**.</span></span>  
   

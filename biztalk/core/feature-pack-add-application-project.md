@@ -44,10 +44,10 @@ ms.locfileid: "31817015"
 
     ![アプリケーション プロジェクトを追加します。](../core/media/add-application-project.png)
 
-5. <span data-ttu-id="04a7f-126">ソリューション エクスプ ローラーで、新しく追加したアプリケーション プロジェクト (.btaproj) を右クリックし、選択**追加****参照**です。</span><span class="sxs-lookup"><span data-stu-id="04a7f-126">In Solution Explorer, right-click your newly-added application project (.btaproj), select **Add**, select **Reference**.</span></span> <span data-ttu-id="04a7f-127">展開して、**プロジェクト**タブをクリックし、BizTalk プロジェクト (VSTS を使用して配置するプロジェクト) を確認します。</span><span class="sxs-lookup"><span data-stu-id="04a7f-127">Expand the **Projects** tab, and check your BizTalk project (the project you are deploying using VSTS).</span></span> <span data-ttu-id="04a7f-128">**[OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="04a7f-128">Select **OK**.</span></span>  
+5. <span data-ttu-id="04a7f-126">ソリューション エクスプ ローラーで、新しく追加したアプリケーション プロジェクト (.btaproj) を右クリックし、選択**追加\*\*\*\*参照**です。</span><span class="sxs-lookup"><span data-stu-id="04a7f-126">In Solution Explorer, right-click your newly-added application project (.btaproj), select **Add**, select **Reference**.</span></span> <span data-ttu-id="04a7f-127">展開して、**プロジェクト**タブをクリックし、BizTalk プロジェクト (VSTS を使用して配置するプロジェクト) を確認します。</span><span class="sxs-lookup"><span data-stu-id="04a7f-127">Expand the **Projects** tab, and check your BizTalk project (the project you are deploying using VSTS).</span></span> <span data-ttu-id="04a7f-128">**[OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="04a7f-128">Select **OK**.</span></span>  
     <span data-ttu-id="04a7f-129">追加されると、展開**参照**追加したばかりの BizTalk プロジェクトを表示するアプリケーション プロジェクト (例: appProjectHelloWorld) の下。</span><span class="sxs-lookup"><span data-stu-id="04a7f-129">Once added, expand **References** under your application project (e.g. appProjectHelloWorld) to see the BizTalk project you just added.</span></span> 
 
-6. <span data-ttu-id="04a7f-130">ソリューション エクスプ ローラーで、アプリケーション プロジェクト (.btaproj) を右クリックし、選択**追加****既存項目の**と**追加**バインディングは、XML ファイルです。</span><span class="sxs-lookup"><span data-stu-id="04a7f-130">In Solution Explorer, right-click your application project (.btaproj), select **Add**, select **Existing Item**, and **Add** your binding XML file.</span></span>
+6. <span data-ttu-id="04a7f-130">ソリューション エクスプ ローラーで、アプリケーション プロジェクト (.btaproj) を右クリックし、選択**追加\*\*\*\*既存項目の**と**追加**バインディングは、XML ファイルです。</span><span class="sxs-lookup"><span data-stu-id="04a7f-130">In Solution Explorer, right-click your application project (.btaproj), select **Add**, select **Existing Item**, and **Add** your binding XML file.</span></span>
 
 7. <span data-ttu-id="04a7f-131">Binding.xml のプロパティを開き、設定**出力ディレクトリにコピー**に**常にコピー**です。</span><span class="sxs-lookup"><span data-stu-id="04a7f-131">Open the properties of binding.xml, and set **Copy to Output Directory** to **Copy always**.</span></span> <span data-ttu-id="04a7f-132">**保存**変更内容。</span><span class="sxs-lookup"><span data-stu-id="04a7f-132">**Save** your changes:</span></span>  
 
@@ -136,7 +136,7 @@ ms.locfileid: "31817015"
 
     ![デバッグまたはリリース バージョンを設定します。](../core/media/application-project-version.png)
 
-8. <span data-ttu-id="04a7f-160">アプリケーション プロジェクト (例: appProjectHelloWorld) を右クリックし **ビルド**です。</span><span class="sxs-lookup"><span data-stu-id="04a7f-160">Right-click your application project (e.g. appProjectHelloWorld), and select **Build**.</span></span> <span data-ttu-id="04a7f-161">Zip ファイルがで作成が成功した場合 ***yourApplicationProject * \bin\debug**フォルダー。</span><span class="sxs-lookup"><span data-stu-id="04a7f-161">If it succeeds, a zip file is created in ***yourApplicationProject*\bin\debug** folder:</span></span>  
+8. <span data-ttu-id="04a7f-160">アプリケーション プロジェクト (例: appProjectHelloWorld) を右クリックし **ビルド**です。</span><span class="sxs-lookup"><span data-stu-id="04a7f-160">Right-click your application project (e.g. appProjectHelloWorld), and select **Build**.</span></span> <span data-ttu-id="04a7f-161">Zip ファイルがで作成が成功した場合 \***yourApplicationProject \* \bin\debug**フォルダー。</span><span class="sxs-lookup"><span data-stu-id="04a7f-161">If it succeeds, a zip file is created in \***yourApplicationProject\*\bin\debug** folder:</span></span>  
 
     ![Zip ファイルをビルドします。](../core/media/application-project-zip-file.png)
 
