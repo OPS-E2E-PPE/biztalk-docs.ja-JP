@@ -34,7 +34,7 @@ ms.locfileid: "36970051"
   
  BizTalk WCF カスタム アダプターでは、BindingElement から新しいバインドを作成できるだけでなく、新しいバインドを直接構成することもできます。 また、標準バインド上の動作を構成することもできます。 カスタム動作の作成は、新しい BindingElement オブジェクトの作成より簡単なため、これは特に便利です。  
   
- BindingElement の構築は複雑な開発作業は、参照することの最適なソース ハイパーリンクで WCF サンプル"<http://go.microsoft.com/fwlink/?LinkId=142449>"\t"_blank"http://go.microsoft.com/fwlink/?LinkId=142449します。 カスタム BindingElement を作成するには、BindingElement から派生するクラスを作成します。 新しい BindingElement は新しいアセンブリに含める必要があります。 このアセンブリは、BizTalk ホスト、送信ポート、および受信場所が構成される管理コンピューターのグローバル アセンブリ キャッシュ (GAC) にあらかじめインストールされている必要があります。 カスタム バインドを関連付ける特定の送信ポートまたは受信場所は、まずに追加する、 \<bindingElementExtensions\>同じコンピューター上の machine.config ファイルのセクション。  
+ BindingElement の構築は複雑な開発作業は、参照することの最適なソース ハイパーリンクで WCF サンプル "<http://go.microsoft.com/fwlink/?LinkId=142449>" \t "_blank" http://go.microsoft.com/fwlink/?LinkId=142449 します。 カスタム BindingElement を作成するには、BindingElement から派生するクラスを作成します。 新しい BindingElement は新しいアセンブリに含める必要があります。 このアセンブリは、BizTalk ホスト、送信ポート、および受信場所が構成される管理コンピューターのグローバル アセンブリ キャッシュ (GAC) にあらかじめインストールされている必要があります。 カスタム バインドを関連付ける特定の送信ポートまたは受信場所は、まずに追加する、 \<bindingElementExtensions\>同じコンピューター上の machine.config ファイルのセクション。  
   
  開くことができますし、その変更を行った後、**トランスポートのプロパティの構成**バインディングを構成するダイアログ ボックス。  
   

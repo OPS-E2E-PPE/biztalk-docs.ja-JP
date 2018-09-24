@@ -26,7 +26,7 @@ BizTalk アプリケーションに存在するすべてのリソース アイ�
   
  このコマンドでは、仮想ディレクトリの Web サーバーのホスト名が "localhost" に置き換えられます。 ResourceSpec パラメーターによって生成されたファイルを ExportApp コマンドで使用する場合、かつ、Web サーバーがリモート コンピューターに存在する場合は、このファイルを手動で編集し、ファイル内の "localhost" となっている部分を、ホスト名とポート番号に置き換える必要があります。 この作業を行わないと、仮想ディレクトリとその内容が、アプリケーションの .msi ファイルに追加されません。  
   
- 例:http://MyWebServer:80/MyVirtualDirectoryします。  
+ 例: http://MyWebServer:80/MyVirtualDirectory します。  
   
 ## <a name="usage"></a>使用方法  
  **BTSTask の ListApp** [**/applicationname は:**<em>値</em>] [**/ResourceSpec:**<em>値</em>] [**/Server:**<em>値</em>] [**/database:**<em>値</em>]  
