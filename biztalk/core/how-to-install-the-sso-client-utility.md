@@ -31,8 +31,7 @@ ms.locfileid: "37003963"
   
 - [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
-- 
-  [!INCLUDE[btsDotNetFramework3.5](../includes/btsdotnetframework3-5-md.md)] または [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] (UI ベースの SSO クライアント ユーティリティを使用する場合、またはエンタープライズ SSO の相互運用マネージド コンポーネントを利用する場合にのみ必要です)。  
+- [!INCLUDE[btsDotNetFramework3.5](../includes/btsdotnetframework3-5-md.md)] または [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] (UI ベースの SSO クライアント ユーティリティを使用する場合、またはエンタープライズ SSO の相互運用マネージド コンポーネントを利用する場合にのみ必要です)。  
   
   SSO クライアント ユーティリティをインストールした後からを起動できる、**開始**メニューをクリックして**プログラム**、 **Microsoft エンタープライズ シングル サインオン**、し**SSO クライアント ユーティリティ**します。  
   
