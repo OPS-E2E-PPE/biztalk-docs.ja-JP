@@ -43,5 +43,4 @@ ms.locfileid: "37012547"
 
 - [サーバー上の証明書ストアに証明書を追加する](../../adapters-and-accelerators/accelerator-swift/adding-certificates-to-the-certificates-store-on-the-server.md)  
 
-- 
-  [1 台のコンピューターの展開の管理パスから CertSrv を除外する](../../adapters-and-accelerators/accelerator-swift/excluding-certsrv-from-managed-paths-on-a-single-computer-deployment.md)
+- [1 台のコンピューターの展開の管理パスから CertSrv を除外する](../../adapters-and-accelerators/accelerator-swift/excluding-certsrv-from-managed-paths-on-a-single-computer-deployment.md)
