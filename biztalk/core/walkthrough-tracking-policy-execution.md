@@ -63,27 +63,27 @@ ms.locfileid: "25975096"
   
 6.  をクリックして**このオーケストレーション インスタンスのポリシー実行の詳細を表示するには、このリンク**です。 次の図のようなウィンドウに表示することを確認します。  
   
-     ![BRE &#45;チュートリアル &#45;FirstScreen](../core/media/1e59fe9e-cf2d-407a-81cd-102b57a515d2.gif "1e59fe9e-cf2d-407a-81cd-102b57a515d2")  
+     ![BRE & #45;チュートリアル & #45;FirstScreen](../core/media/1e59fe9e-cf2d-407a-81cd-102b57a515d2.gif "1e59fe9e-cf2d-407a-81cd-102b57a515d2")  
   
 7. [時刻] をクリックしてまたは**ProcessPurchaseOrder1.3**を次の画面を表示します。 この画面では、ポリシーの実行を要求したサービス (オーケストレーション)、オーケストレーションの ID、ポリシーが実行された時刻、およびポリシーの ID を参照できます。  
   
-     ![BRE &#45;チュートリアル &#45;PolicyExecDetails](../core/media/a65fd48f-2a54-4cc5-9b45-4cd3c211da33.gif "a65fd48f-2a54-4cc5-9b45-4cd3c211da33")  
+     ![BRE & #45;チュートリアル & #45;PolicyExecDetails](../core/media/a65fd48f-2a54-4cc5-9b45-4cd3c211da33.gif "a65fd48f-2a54-4cc5-9b45-4cd3c211da33")  
   
 8. をクリックして**ファクト アクティビティ**ルールにアサートされたファクト (データ) を表示するエンジンの作業メモリと、取り消されたファクトをルール エンジンの作業メモリからです。  
   
-     ![BRE &#45;チュートリアル &#45;FactActivity](../core/media/27bc0d84-f202-4f5a-87a1-8b53006b3cee.gif "27bc0d84-f202-4f5a-87a1-8b53006b3cee")  
+     ![BRE & #45;チュートリアル & #45;FactActivity](../core/media/27bc0d84-f202-4f5a-87a1-8b53006b3cee.gif "27bc0d84-f202-4f5a-87a1-8b53006b3cee")  
   
 9. **ファイル** メニューのをクリックして**移動背面**です。  
   
 10. をクリックして**評価条件**です。 評価された条件の詳細を参照してください。 この場合は、ポリシーに 2 つのルールがあり、各ポリシーに条件が 1 つずつ設定されています。 は 2 つの条件が評価されたことを確認できます評価される 1 つ`true`に評価される、もう 1 つと`false`です。  
   
-     ![BRE &#45;チュートリアル &#45;ConditionEvaluation](../core/media/ac772d01-919f-4b22-995b-409501a96848.gif "ac772d01-919f-4b22-995b-409501a96848")  
+     ![BRE & #45;チュートリアル & #45;ConditionEvaluation](../core/media/ac772d01-919f-4b22-995b-409501a96848.gif "ac772d01-919f-4b22-995b-409501a96848")  
   
 11. **ファイル** メニューのをクリックして**移動背面**です。  
   
 12. をクリックして**議題の更新**です。 ApprovalRule のみが議題に追加されていることがわかります。 DeniedRule は、条件が `false` と評価されるため議題に追加されていません。  
   
-     ![BRE &#45;チュートリアル &#45;議題](../core/media/bc85d9ea-fc76-44de-aa75-134f47a5ec20.gif "bc85d9ea-fc76-44de-aa75-134f47a5ec20")  
+     ![BRE & #45;チュートリアル & #45;議題](../core/media/bc85d9ea-fc76-44de-aa75-134f47a5ec20.gif "bc85d9ea-fc76-44de-aa75-134f47a5ec20")  
   
 13. をクリックして**ApprovalRule** ApprovalRule の定義を表示します。  
   

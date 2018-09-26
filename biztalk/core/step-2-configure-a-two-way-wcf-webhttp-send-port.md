@@ -32,7 +32,7 @@ ms.locfileid: "22278890"
     |--------------|----------------|  
     |**名前**|型**SendPortRESTAzureMarketPlace**です。|  
     |**型**|選択**Wcf-webhttp**です。|  
-    |**送信ハンドラー**|[ **BizTalkServerApplication**] を選択します。|  
+    |**送信ハンドラー**|**[BizTalkServerApplication]** を選択します。|  
     |**送信パイプライン**|選択**PassThruTransmit**です。|  
     |**受信パイプライン**|選択**PassThruReceive**です。|  
   
