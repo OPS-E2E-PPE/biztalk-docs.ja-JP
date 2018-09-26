@@ -34,7 +34,7 @@ PAT の詳細については[VSTS と TFS の個人用アクセス トークン�
 
     ![VSTS アカウント](../core/media/team-services-accounts.png)
 
-    アカウントを持っていない場合は、選択**新しいアカウントを作成する**名前を入力します。 コードを管理する選択間個人的な好み**Git または Team Foundation バージョン管理**します。 新しいアカウントを作成したらとのようなサイト*https://YourAccountName.visualstudio.com/MyFirstProject*が開きます。  
+    アカウントを持っていない場合は、選択**新しいアカウントを作成する**名前を入力します。 コードを管理する選択間個人的な好み**Git または Team Foundation バージョン管理**します。 新しいアカウントを作成したらとのようなサイト *https://YourAccountName.visualstudio.com/MyFirstProject* が開きます。  
 
     ![Git または TFS](../core/media/git-or-team-foundation.png)
 
