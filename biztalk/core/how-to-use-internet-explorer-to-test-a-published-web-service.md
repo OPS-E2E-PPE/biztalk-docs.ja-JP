@@ -73,7 +73,7 @@ ms.locfileid: "36979691"
   
 #### <a name="access-a-web-service-with-internet-explorer"></a><span data-ttu-id="d4a0d-126">Internet Explorer で Web サービスへのアクセスします。</span><span class="sxs-lookup"><span data-stu-id="d4a0d-126">Access a Web service with Internet Explorer</span></span>  
   
-- <span data-ttu-id="d4a0d-127">Internet explorer で、**アドレス**ボックスに、形式を使用して Web サービスの URL を入力**http://<em>servername</em>/*apppath* /*webservicename*.asmx**します。</span><span class="sxs-lookup"><span data-stu-id="d4a0d-127">In Internet Explorer, in the **Address** box, type the URL for the Web service using the format **http://<em>servername</em>/*apppath*/*webservicename*.asmx**.</span></span>  
+- <span data-ttu-id="d4a0d-127">Internet explorer で、**アドレス**ボックスに、形式を使用して Web サービスの URL を入力**http://<em>servername</em>/*apppath\* /*webservicename\*.asmx\*\*します。</span><span class="sxs-lookup"><span data-stu-id="d4a0d-127">In Internet Explorer, in the **Address** box, type the URL for the Web service using the format **http://<em>servername</em>/*apppath*/*webservicename*.asmx**.</span></span>  
   
   |<span data-ttu-id="d4a0d-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d4a0d-128">Parameter</span></span>|<span data-ttu-id="d4a0d-129">値</span><span class="sxs-lookup"><span data-stu-id="d4a0d-129">Value</span></span>|  
   |---------------|-----------|  

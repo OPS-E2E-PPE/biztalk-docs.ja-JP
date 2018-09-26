@@ -42,7 +42,7 @@ ms.locfileid: "23129707"
   
 4.  <span data-ttu-id="e2be5-114">**オブジェクト エクスプ ローラーの詳細**を右クリックして**DTA Purge and Archive (BizTalkDTADb)**、し、**プロパティ**です。</span><span class="sxs-lookup"><span data-stu-id="e2be5-114">In **Object Explorer Details**, right-click **DTA Purge and Archive (BizTalkDTADb)**, and then select **Properties**.</span></span>  
   
-5.  <span data-ttu-id="e2be5-115">**ジョブのプロパティ - DTA Purge and Archive (BizTalkDTADb)****ページの選択****手順**です。</span><span class="sxs-lookup"><span data-stu-id="e2be5-115">In **Job Properties - DTA Purge and Archive (BizTalkDTADb)**, under **Select a page**, select **Steps**.</span></span>  
+5.  <span data-ttu-id="e2be5-115">**ジョブのプロパティ - DTA Purge and Archive (BizTalkDTADb)\*\*\*\*ページの選択\*\*\*\*手順**です。</span><span class="sxs-lookup"><span data-stu-id="e2be5-115">In **Job Properties - DTA Purge and Archive (BizTalkDTADb)**, under **Select a page**, select **Steps**.</span></span>  
   
 6.  <span data-ttu-id="e2be5-116">**ジョブ ステップの一覧** **、アーカイブし、削除**、し、**編集**です。</span><span class="sxs-lookup"><span data-stu-id="e2be5-116">In **Job step list**, select **Archive and Purge**, and then select **Edit**.</span></span>  
   
@@ -72,7 +72,7 @@ ms.locfileid: "23129707"
     declare @dtLastBackup datetime set @dtLastBackup = GetUTCDate() exec dtasp_PurgeTrackingDatabase 1, 0, 1, @dtLastBackup, 1  
     ```  
     
-9. <span data-ttu-id="e2be5-134">**ジョブのプロパティ - DTA Purge and Archive (BizTalkDTADb)** ダイアログ ボックスで、**ページの選択****全般**を選択、**有効**チェック ボックスをオンし、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="e2be5-134">On the **Job Properties - DTA Purge and Archive (BizTalkDTADb)** dialog box, under **Select a page**, select **General**, select the **Enabled** check box, and then select **OK**.</span></span>  
+9. <span data-ttu-id="e2be5-134">**ジョブのプロパティ - DTA Purge and Archive (BizTalkDTADb)** ダイアログ ボックスで、**ページの選択\*\*\*\*全般**を選択、**有効**チェック ボックスをオンし、 **OK**です。</span><span class="sxs-lookup"><span data-stu-id="e2be5-134">On the **Job Properties - DTA Purge and Archive (BizTalkDTADb)** dialog box, under **Select a page**, select **General**, select the **Enabled** check box, and then select **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="e2be5-135">参照</span><span class="sxs-lookup"><span data-stu-id="e2be5-135">See Also</span></span>  
  [<span data-ttu-id="e2be5-136">BizTalk 追跡データベースのアーカイブおよび削除</span><span class="sxs-lookup"><span data-stu-id="e2be5-136">Archiving and Purging the BizTalk Tracking Database</span></span>](../core/archiving-and-purging-the-biztalk-tracking-database.md)

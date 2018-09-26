@@ -33,7 +33,7 @@ ms.locfileid: "37002723"
   
 2. <span data-ttu-id="b8f50-109">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="b8f50-109">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="b8f50-110">既定のインストール ディレクトリは\<*ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="b8f50-110">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="b8f50-111">型 * * ssomanage – displayapp *\<アプリケーション名\>**<em>ここで、*\<アプリケーション名\></em>を表示する関連アプリケーションの名前を指定しますプロパティです。</span><span class="sxs-lookup"><span data-stu-id="b8f50-111">Type **ssomanage –displayapp *\<application name\>**<em>, where *\<application name\></em> is the name of the Affiliate Application you want to display the properties for.</span></span>  
+3. <span data-ttu-id="b8f50-111">型 \* \* ssomanage – displayapp *\<アプリケーション名\>\*\*<em>ここで、*\<アプリケーション名\></em>を表示する関連アプリケーションの名前を指定しますプロパティです。</span><span class="sxs-lookup"><span data-stu-id="b8f50-111">Type \*\*ssomanage –displayapp \*\<application name\>\*\*<em>, where \*\<application name\></em> is the name of the Affiliate Application you want to display the properties for.</span></span>  
   
    > [!NOTE]
    >  <span data-ttu-id="b8f50-112">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="b8f50-112">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -44,7 +44,7 @@ ms.locfileid: "37002723"
   
 2. <span data-ttu-id="b8f50-115">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="b8f50-115">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="b8f50-116">既定のインストール ディレクトリは\<*インストール ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="b8f50-116">The default installation directory is \<*install drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="b8f50-117">型 * * ssoclient – displayapp *\<アプリケーション名\>**<em>ここで、*\<アプリケーション名\></em>を表示する関連アプリケーションの名前を指定しますプロパティです。</span><span class="sxs-lookup"><span data-stu-id="b8f50-117">Type **ssoclient –displayapp *\<application name\>**<em>, where *\<application name\></em> is the name of the Affiliate Application you want to display the properties for.</span></span>  
+3. <span data-ttu-id="b8f50-117">型 \* \* ssoclient – displayapp *\<アプリケーション名\>\*\*<em>ここで、*\<アプリケーション名\></em>を表示する関連アプリケーションの名前を指定しますプロパティです。</span><span class="sxs-lookup"><span data-stu-id="b8f50-117">Type \*\*ssoclient –displayapp \*\<application name\>\*\*<em>, where \*\<application name\></em> is the name of the Affiliate Application you want to display the properties for.</span></span>  
   
    > [!NOTE]
    >  <span data-ttu-id="b8f50-118">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="b8f50-118">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

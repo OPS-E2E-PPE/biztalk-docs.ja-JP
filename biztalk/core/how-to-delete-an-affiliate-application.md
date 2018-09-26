@@ -46,7 +46,7 @@ ms.locfileid: "37003323"
   
 2. <span data-ttu-id="e3f36-112">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="e3f36-112">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="e3f36-113">既定のインストール ディレクトリは*\<ドライブ\>*: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="e3f36-113">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="e3f36-114">型 * * ssomanage – deleteapp *\<アプリケーション名\>**<em>ここで、*\<アプリケーション名\></em>から削除する関連アプリケーションの名前を指定しますSSO データベース。</span><span class="sxs-lookup"><span data-stu-id="e3f36-114">Type **ssomanage –deleteapp *\<application name\>**<em>, where *\<application name\></em> is the name of the affiliate application you want to remove from the SSO database.</span></span>  
+3. <span data-ttu-id="e3f36-114">型 \* \* ssomanage – deleteapp *\<アプリケーション名\>\*\*<em>ここで、*\<アプリケーション名\></em>から削除する関連アプリケーションの名前を指定しますSSO データベース。</span><span class="sxs-lookup"><span data-stu-id="e3f36-114">Type \*\*ssomanage –deleteapp \*\<application name\>\*\*<em>, where \*\<application name\></em> is the name of the affiliate application you want to remove from the SSO database.</span></span>  
   
    > [!NOTE]
    >  <span data-ttu-id="e3f36-115">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="e3f36-115">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

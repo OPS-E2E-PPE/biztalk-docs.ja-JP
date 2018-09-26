@@ -56,7 +56,7 @@ ms.locfileid: "37009891"
   
 2. <span data-ttu-id="27923-113">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="27923-113">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="27923-114">既定のインストール ディレクトリは\<*ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="27923-114">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="27923-115">型 * * ssomanage – createmappings *\<ファイル名をマッピング\>**<em>ここで、*\<ファイル名をマッピング\></em>必要なユーザー マッピングを含むファイルの名前を指定します作成します。</span><span class="sxs-lookup"><span data-stu-id="27923-115">Type **ssomanage –createmappings *\<mappings file name\>**<em>, where *\<mappings file name\></em> is the name of file that contains the user mapping(s) you want to create.</span></span>  
+3. <span data-ttu-id="27923-115">型 \* \* ssomanage – createmappings *\<ファイル名をマッピング\>\*\*<em>ここで、*\<ファイル名をマッピング\></em>必要なユーザー マッピングを含むファイルの名前を指定します作成します。</span><span class="sxs-lookup"><span data-stu-id="27923-115">Type \*\*ssomanage –createmappings \*\<mappings file name\>\*\*<em>, where \*\<mappings file name\></em> is the name of file that contains the user mapping(s) you want to create.</span></span>  
   
    > [!NOTE]
    >  <span data-ttu-id="27923-116">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="27923-116">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -67,7 +67,7 @@ ms.locfileid: "37009891"
   
 2. <span data-ttu-id="27923-119">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="27923-119">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="27923-120">既定のインストール ディレクトリは\<*ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="27923-120">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="27923-121">型 * * ssoclient – setcredentials *\<アプリケーション名\> **<em>ここで、*\<アプリケーション名\></em>ユーザーがする関連アプリケーションの名前を指定しますマッピングを作成します。</span><span class="sxs-lookup"><span data-stu-id="27923-121">Type **ssoclient –setcredentials *\<application name \>**<em>, where *\<application name \></em> is the name of affiliate application that the user wants to create a mapping for.</span></span>  
+3. <span data-ttu-id="27923-121">型 \* \* ssoclient – setcredentials \*\<アプリケーション名\> \**<em>ここで、*\<アプリケーション名\></em>ユーザーがする関連アプリケーションの名前を指定しますマッピングを作成します。</span><span class="sxs-lookup"><span data-stu-id="27923-121">Type \*\*ssoclient –setcredentials \*\<application name \>\*\*<em>, where \*\<application name \></em> is the name of affiliate application that the user wants to create a mapping for.</span></span>  
   
    > [!NOTE]
    >  <span data-ttu-id="27923-122">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="27923-122">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

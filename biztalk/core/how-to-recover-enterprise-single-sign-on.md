@@ -61,7 +61,7 @@ ms.locfileid: "36973123"
   
 10. <span data-ttu-id="7692e-123">コマンド プロンプトで、次のように入力します。</span><span class="sxs-lookup"><span data-stu-id="7692e-123">At the command prompt, type:</span></span>  
   
-     <span data-ttu-id="7692e-124">**ssoconfig-restoresecret***\<backupfile  \>*</span><span class="sxs-lookup"><span data-stu-id="7692e-124">**ssoconfig -restoreSecret**  *\<backupfile\>*</span></span>  
+     <span data-ttu-id="7692e-124">\**ssoconfig-restoresecret\*\*\*\<backupfile  \>*</span><span class="sxs-lookup"><span data-stu-id="7692e-124">**ssoconfig -restoreSecret**  *\<backupfile\>*</span></span>  
   
      <span data-ttu-id="7692e-125">場所*\<backupfile\>* バックアップしたマスター シークレット ファイルの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="7692e-125">where *\<backupfile\>* is the name of the master secret file that you backed up.</span></span>  
   
