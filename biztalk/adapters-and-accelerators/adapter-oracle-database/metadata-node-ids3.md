@@ -14,10 +14,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a131cc8e70311f6f57154b90e98ea1067ec5dc02
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.sourcegitcommit: 51ce182c5b71d3999a3920dd884bc9ec8334a899
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
+ms.lasthandoff: 10/04/2018
 ms.locfileid: "36969659"
 ---
 # <a name="node-types-and-ids-for-the-oracle-database-adapter"></a>ノードの種類と Oracle データベース アダプターの Id
@@ -36,7 +36,7 @@ ms.locfileid: "36969659"
 |      [DB_TABLE]       | カテゴリ  |           [バージョン]/[DB_SCHEMA]/Table/[DB_TABLE]            |             http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP              |      テーブルのノードです。 操作のすべてのノード (Insert、Select、Update、Delete、ReadLOB、および UpdateLOB)、指定したテーブルを返します。 (ReadLOB と UpdateLOB のみが返されます、LOB 列を含むテーブル。)      |
 |        Insert         | OPERATION |        [バージョン]/[DB_SCHEMA]/Table/[DB_TABLE]/挿入        |          http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert          |                                                             テーブルな挿入操作のノード。 指定されたテーブルの挿入操作の WSDL を返します。                                                             |
 |        Select         | OPERATION |        [バージョン]/[DB_SCHEMA]/Table/[DB_TABLE] を選択/        |          http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Select          |                                                             テーブルの選択操作のノードです。 指定されたテーブルの選択操作の WSDL を返します。                                                             |
-|        更新         | OPERATION |        [バージョン]/[DB_SCHEMA]/Table/[DB_TABLE]/[更新]        |          http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Update          |                                                             テーブル更新操作のノード。 指定されたテーブルの更新操作の WSDL を返します。                                                             |
+|        Update         | OPERATION |        [バージョン]/[DB_SCHEMA]/Table/[DB_TABLE]/[更新]        |          http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Update          |                                                             テーブル更新操作のノード。 指定されたテーブルの更新操作の WSDL を返します。                                                             |
 |        DELETE         | OPERATION |        [バージョン]/[DB_SCHEMA]/Table/[DB_TABLE]/削除        |          http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Delete          |                                                             テーブル操作ノードを削除します。 指定されたテーブルの削除操作の WSDL を返します。                                                             |
 |        ReadLOB        | OPERATION |       [バージョン]/[DB_SCHEMA]/Table/[DB_TABLE]/ReadLOB        |         http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/ReadLOB          |                                  テーブル ReadLOB 操作ノード。 指定されたテーブルの ReadLOB 操作の WSDL を返します。 (テーブルに LOB 列が含まれている場合の表示のみ。)                                  |
 |       UpdateLOB       | OPERATION |      [バージョン]/[DB_SCHEMA]/Table/[DB_TABLE]/UpdateLOB       |        http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/UpdateLOB         |                                テーブル UpdateLOB 操作ノード。 指定されたテーブルの UpdateLOB 操作の WSDL を返します。 (テーブルに LOB 列が含まれている場合の表示のみ。)                                |
@@ -44,7 +44,7 @@ ms.locfileid: "36969659"
 |       [DB_VIEW]       | カテゴリ  |            [バージョン]/[DB_SCHEMA]/View/[DB_VIEW]             |          http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/View/SALES_VIEW           |       ビューのノードです。 操作のすべてのノード (Insert、Select、Update、Delete、ReadLOB、および UpdateLOB)、指定されたビューを返します。 (ReadLOB と UpdateLOB のみが返されます LOB 列を含むビュー。)        |
 |        Insert         | OPERATION |         [バージョン]/[DB_SCHEMA]/View/[DB_VIEW]/挿入         |       http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/View/SALES_VIEW/Insert       |                                                              ノードの挿入 操作を表示します。 指定されたビューの挿入操作の WSDL を返します。                                                              |
 |        Select         | OPERATION |         [バージョン]/[DB_SCHEMA]/View/[DB_VIEW] を選択/         |       http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/View/SALES_VIEW/Select       |                                                              ビューの選択操作のノード。 指定されたビューの選択操作の WSDL を返します。                                                              |
-|        更新         | OPERATION |         [バージョン]/[DB_SCHEMA]/View/[DB_VIEW]/[更新]         |       http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/View/SALES_VIEW/Update       |                                                              更新操作のノードを表示します。 指定されたビューの更新操作の WSDL を返します。                                                              |
+|        Update         | OPERATION |         [バージョン]/[DB_SCHEMA]/View/[DB_VIEW]/[更新]         |       http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/View/SALES_VIEW/Update       |                                                              更新操作のノードを表示します。 指定されたビューの更新操作の WSDL を返します。                                                              |
 |        DELETE         | OPERATION |         [バージョン]/[DB_SCHEMA]/View/[DB_VIEW]/削除         |       http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/View/SALES_VIEW/Delete       |                                                              削除操作のノードを表示します。 指定されたビューの削除操作の WSDL を返します。                                                              |
 |        ReadLOB        | OPERATION |        [バージョン]/[DB_SCHEMA]/View/[DB_VIEW]/ReadLOB         |      http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/View/SALES_VIEW/ReadLOB       |                                   ReadLOB 操作のノードを表示します。 指定されたビューの ReadLOB 操作の WSDL を返します。 (ビューには、LOB 列が含まれている場合の表示のみ。)                                    |
 |       UpdateLOB       | OPERATION |       [バージョン]/[DB_SCHEMA]/View/[DB_VIEW]/UpdateLOB        |     http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/View/SALES_VIEW/UpdateLOB      |                                  更新操作のノードを表示します。 指定されたテーブルの UpdateLOB 操作の WSDL を返します。 (ビューには、LOB 列が含まれている場合の表示のみ。)                                   |

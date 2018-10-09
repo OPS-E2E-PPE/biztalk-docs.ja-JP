@@ -1,7 +1,7 @@
 ---
 title: Windows グループと BizTalk Server でのユーザー アカウント |Microsoft Docs
 ms.custom: ''
-ms.date: 06/08/2017
+ms.date: 09/27/2018
 ms.prod: biztalk-server
 ms.reviewer: ''
 ms.suite: ''
@@ -85,12 +85,12 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e86772c5ae2565407d53a46cf9af16e214089f9e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26a9cc092ed8d5747c7f6b7e899d27b62bbc3087
+ms.sourcegitcommit: c1e83b63ae34bd586e6e0ccc914640efdf96bd4c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016057"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48423942"
 ---
 # <a name="windows-groups-and-user-accounts-in-biztalk-server"></a>BizTalk Server の Windows グループ アカウントとユーザー アカウント
 BizTalk Server ローカルおよびドメイン グループ アカウントとユーザー アカウントに関する情報。 BizTalk Server と必要なすべてのソフトウェアを 1 台のコンピューターにインストールすると、既定では、必要な BizTalk グループ アカウントが構成マネージャーで作成されます。 このセクションの説明は、複数コンピューター トポロジを対象としています。  
@@ -112,13 +112,13 @@ BizTalk Server ローカルおよびドメイン グループ アカウントと
   
    次の表は、Windows グループと BizTalk Server で使用されるそのメンバーシップを示します。 また、グループの SQL Server ロールまたはデータベース ロールについても説明します。  
   
-|[グループ]|グループの説明|メンバーシップ|SQL Server ロールまたはデータベース ロール|  
+|グループ化|グループの説明|メンバーシップ|SQL Server ロールまたはデータベース ロール|  
 |-----------|-----------------------|----------------|----------------------------------------|  
 |SSO 管理者|エンタープライズ シングル サインオン (SSO) サービスの管理者。|エンタープライズ シングル サインオン サービスのサービス アカウントが含まれます。<br /><br /> BizTalk Server および SSO サービスを構成および管理する権限が必要なユーザーまたはグループが含まれます。<br /><br /> SSO マスター シークレット サーバーを構成する場合に BizTalk 構成マネージャーの実行に使用するアカウントが含まれます。|SSO の db_owner SQL Server データベース ロール<br /><br /> SSO が配置されている SQL Server の securityadmin SQL Server ロール|  
 |SSO 関連管理者|特定の SSO 関連アプリケーションの管理者。<br /><br /> できます SSO 関連アプリケーションの作成/削除、管理ユーザーのマッピング、および関連会社の資格情報をアプリケーションのユーザー設定|サービス アカウントは含まれません。<br /><br /> BizTalk Server 管理者に使用するアカウントが含まれます。||  
 |BizTalk Server 管理者|管理タスクの実行に最低限必要な権限を持ちます。<br /><br /> ソリューションの配置、アプリケーションの管理、およびメッセージ処理に関する問題の解決を実行できます。<br /><br /> アダプター、受信ハンドラーと送信ハンドラー、および受信場所に対する管理タスクを実行するには、BizTalk Server 管理者をシングル サインオン関連管理者に追加する必要があります。<br /><br /> 詳細については、次を参照してください。 [BizTalk Server のセキュリティを管理する](../core/managing-biztalk-server-security.md)します。|BizTalk Server を構成および管理する権限が必要なユーザーまたはグループが含まれます。|次のデータベースの BTS_HOST_USERS SQL Server データベース ロール<br /><br /> BizTalkMgmtDb<br /><br /> BizTalkMsgBoxDb<br /><br /> BizTalkRuleEngineDb<br /><br /> BizTalkDTADb<br /><br /> BAMPrimaryImport<br /><br /> 次のデータベースの db_owner SQL Server データベース ロール<br /><br /> BAMStarSchema<br /><br /> BAMPrimaryImport<br /><br /> BAMArchive<br /><br /> BAMAlertsApplication<br /><br /> BAMAlertsNSMain<br /><br /> 次のデータベースの NSAdmin SQL Server データベース ロール<br /><br /> BAMAlertsApplication<br /><br /> BAMAlertsNSMain<br /><br /> BAMAnalysis OLAP データベースをホストしているコンピューター上の OLAP 管理者。|  
 |BizTalk Server オペレータ|権限レベルの低いロールで、監視操作とトラブルシューティング操作にのみアクセスできます。<br /><br /> 詳細については、次を参照してください[BizTalk Server のセキュリティの管理。](../core/managing-biztalk-server-security.md)|ソリューションを監視するユーザーまたはグループが含まれます。<br /><br /> サービス アカウントは含まれません。|次のデータベースの BTS_OPERATORS SQL Server データベース ロール<br /><br /> BizTalkDTADb<br /><br /> BizTalkEDIDb<br /><br /> BizTalkMgmtDb<br /><br /> BizTalkMsgBoxDb<br /><br /> BizTalkRuleEngineDb|  
-|BizTalk Application Users|構成マネージャーで作成される最初のインプロセス BizTalk ホスト グループの既定の名前。<br /><br /> 使用している環境のインプロセス ホストごとに 1 つの BizTalk ホスト グループを使用します。<br /><br /> BizTalk Server の BTSNTSvc.exe プロセスをホストするインプロセス BizTalk ホストにアクセスできるアカウントが含まれます。|BizTalk ホスト グループの指定先ホストにある BizTalk インプロセス ホスト インスタンスのサービス アカウントが含まれます。|次のデータベースの BTS_HOST_USERS SQL Server データベース ロール<br /><br /> BizTalkMgmtDb<br /><br /> BizTalkMsgBoxDb<br /><br /> BizTalkRuleEngineDb<br /><br /> BizTalkDTADb<br /><br /> BAMPrimaryImport<br /><br /> BAMPrimaryImport の BAM_EVENT_WRITER SQL Server データベース ロール|  
+|BizTalk Application Users|構成マネージャーで作成される最初のインプロセス BizTalk ホスト グループの既定の名前。<br /><br /> 使用している環境のインプロセス ホストごとに 1 つの BizTalk ホスト グループを使用します。<br /><br /> BizTalk Server の BTSNTSvc.exe プロセスをホストするインプロセス BizTalk ホストにアクセスできるアカウントが含まれます。|BizTalk インプロセス ホスト インスタンスと、BizTalk ホスト グループの指定先ホストで BizTalk ルール エンジン サービスのサービス アカウントが含まれています。|次のデータベースの BTS_HOST_USERS SQL Server データベース ロール<br /><br /> BizTalkMgmtDb<br /><br /> BizTalkMsgBoxDb<br /><br /> BizTalkRuleEngineDb<br /><br /> BizTalkDTADb<br /><br /> BAMPrimaryImport<br /><br /> BAMPrimaryImport の BAM_EVENT_WRITER SQL Server データベース ロール|  
 |BizTalk 分離ホスト ユーザー|構成マネージャーで作成される最初の BizTalk 分離ホスト グループの既定の名前。 HTTP や SOAP など、BizTalk Server 上で実行されない BizTalk 分離ホストです。<br /><br /> 使用している環境の分離ホストごとに 1 つの BizTalk 分離ホスト グループを使用します。|BizTalk 分離ホスト グループの指定先ホストにある BizTalk 分離ホスト インスタンスのサービス アカウントが含まれます。|次のデータベースの BTS_HOST_USERS SQL Server データベース ロール<br /><br /> BizTalkMgmtDb<br /><br /> BizTalkMsgBoxDb<br /><br /> BizTalkRuleEngineDb<br /><br /> BizTalkDTADb<br /><br /> BAMPrimaryImport|  
 |BAM ポータル ユーザー|BAM ポータル Web サイトにアクセスできます。|既定では、Everyone グループがこのロールで使用されます。<br /><br /> サービス アカウントは含まれません。||  
 |BizTalk SharePoint アダプター対応ホスト|Windows SharePoint Services アダプター Web サービスにアクセスできます。|SharePoint アダプターを呼び出すことができる BizTalk ホスト インスタンスのサービス アカウントが含まれます。||  

@@ -1,23 +1,6 @@
----
-title: SQL Server とアダプター クライアント上の MSDTC の構成 |Microsoft Docs
-ms.custom: ''
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.assetid: 2c87f455-a8c4-4169-bf18-695926136df1
-caps.latest.revision: 14
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 3f609b3d54c9b2db6ad576eab75bb82872075f5a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013827"
+-タイトル:"SQL Server とアダプター クライアントの MSDTC の構成 |Microsoft Docs"ms.custom::""ms.date::「06/08/2017」ms.prod::"biztalk server"ms.reviewer::""
+
+ms.suite::""ms.tgt_pltfrm::""ms.topic::"article"ms.assetid:: 2c87f455-a8c4-4169-bf18-695926136df1 caps.latest.revision:: 14 author:"MandiOhlinger"ms.author::"mandia"manager:"anneta"
 ---
 # <a name="configure-msdtc-on-sql-server-and-adapter-client"></a>SQL Server とアダプターのクライアントで MSDTC を構成します。
 SQL Server を使用して、操作を実行、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] (を通じて[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、WCF サービス モデル、または WCF チャネル モデル)、トランザクション スコープ内で実行することができます。 クライアント プログラムは、1 つ以上のトランザクション リソースを同じトランザクションの一部としては場合、トランザクションは MSDTC トランザクションに昇格を取得します。 MSDTC トランザクションのスコープ内での操作を実行するアダプターを有効にするのには、実行しているコンピューターで両方の MSDTC を構成する必要があります、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]と SQL Server。 また、Windows ファイアウォールの例外の一覧に、MSDTC を追加する必要があります。 このセクションでは、アダプターのクライアントと SQL Server を実行するコンピューターでこれらのタスクを実行する方法について説明します。  
@@ -42,7 +25,7 @@ SQL Server を使用して、操作を実行、 [!INCLUDE[adaptersqlshort](../..
    - **リモート クライアントを許可します。** 
    - **受信を許可する** 
    - **送信を許可する** 
-   - **必要ない Authetnication**
+   - **認証を必要としない**
   
 4. **[OK]** を選択して変更を保存します。  
   
