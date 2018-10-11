@@ -390,7 +390,7 @@ BizTalk Server で使用される SQL Server データベースの一覧を次�
 - **クラスター ファイル システム**– を参照してください[ファイル システムをクラスター化する方法](http://go.microsoft.com/fwlink/p/?LinkId=189517)します。
 
 ## <a name="use-scom"></a>SCOM を使用して、
-Operations Manager 用の BizTalk Server 管理パックは、BizTalk Server コンポーネントおよび複数のマシンで実行されているアプリケーションの包括的な検出と監視を提供します。 BizTalk Server 管理パックの詳細については、次を参照してください。http://www.microsoft.com/download/details.aspx?id=39617します。
+Operations Manager 用の BizTalk Server 管理パックは、BizTalk Server コンポーネントおよび複数のマシンで実行されているアプリケーションの包括的な検出と監視を提供します。 BizTalk Server 管理パックの詳細については、次を参照してください。 http://www.microsoft.com/download/details.aspx?id=39617 します。
 
 ## <a name="next"></a>Next  
 [BizTalk の構成](configure-biztalk-server.md)
