@@ -19,14 +19,14 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: f60e0ae7f9cf2e6a224ce9d919c7c4d5e6f3119c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: e172dedfd00d4de3a40c8289f3a97ef65cdadd3c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/18/2018
 ms.locfileid: "22277490"
 ---
 # <a name="soap-headers-with-consumed-wcf-services"></a>消費済み WCF サービスでの SOAP ヘッダー
-カスタム SOAP ヘッダーで WCF サービスにメッセージを送信するこれらのヘッダーで設定しなければなりません (たとえば式図形) 内のオーケストレーションとパイプライン コンポーネントには (コード)、コンテキスト プロパティとして**OutboundCustomHeaders**です。 このコンテキスト プロパティがターゲットの名前空間内に**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**、カスタム SOAP ヘッダーの文字列表現が含まれています。  
+カスタム SOAP ヘッダーで WCF サービスにメッセージを送信するこれらのヘッダーで設定しなければなりません (たとえば式図形) 内のオーケストレーションとパイプライン コンポーネントには (コード)、コンテキスト プロパティとして**OutboundCustomHeaders**です。 このコンテキスト プロパティは、ターゲットの名前空間**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**、カスタム SOAP ヘッダーの文字列表現が含まれています。  
   
  次の XML 送信メッセージ内のデータのカスタム SOAP ヘッダーの文字列表現の例を示しています、 **OutboundCustomHeaders**プロパティ。  
   
