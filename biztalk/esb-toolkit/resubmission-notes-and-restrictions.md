@@ -40,7 +40,7 @@ ms.locfileid: "25976608"
   
 -   リモート サーバー上のランプで WCF が存在する場合、正しいサーバーをポイントするアドレスを更新する必要があります。  
   
--   ランプで SOAP (ASMX) の既定の URL は、 http://localhost/ESB.ItineraryServices/ProcessItinerary.asmx です。  
+-   ランプで SOAP (ASMX) の既定の URL は、 http://localhost/ESB.ItineraryServices/ProcessItinerary.asmx です 。  
   
 -   ポータルの Web.config ファイルでランプでに SOAP (ASMX) の構成を定義する、 **\<applicationSettings\>** セクションです。 既定値を次に示します。  
   
