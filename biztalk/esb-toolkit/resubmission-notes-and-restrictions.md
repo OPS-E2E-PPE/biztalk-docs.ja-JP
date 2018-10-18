@@ -24,9 +24,9 @@ ms.locfileid: "25976608"
   
 -   ESB WCF 入り口、SOAP (ASMX) 上のランプ、XML メッセージを再送信できますか、任意の HTTP 受信場所。  
   
--   WCF の上のランプの既定の URL は、http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc です。  
+-   WCF の上のランプの既定の URL は、 http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc です。  
   
--   ポータルの Web.config ファイルは、WCF 入り口内のエンドポイントの詳細を定義、 **\<クライアント\>** のノード、  **\<System.ServiceModel\>** 参照してください。 既定値を次に示します。  
+-   ポータルの Web.config ファイルは、WCF 入り口内のエンドポイントの詳細を定義、 **\<クライアント\>** のノード、 **\<System.ServiceModel\>** 参照してください。 既定値を次に示します。  
   
     ```  
     <endpoint  
@@ -40,9 +40,9 @@ ms.locfileid: "25976608"
   
 -   リモート サーバー上のランプで WCF が存在する場合、正しいサーバーをポイントするアドレスを更新する必要があります。  
   
--   ランプで SOAP (ASMX) の既定の URL は、http://localhost/ESB.ItineraryServices/ProcessItinerary.asmx です。  
+-   ランプで SOAP (ASMX) の既定の URL は、 http://localhost/ESB.ItineraryServices/ProcessItinerary.asmx です。  
   
--   ポータルの Web.config ファイルでランプでに SOAP (ASMX) の構成を定義する、  **\<applicationSettings\>** セクションです。 既定値を次に示します。  
+-   ポータルの Web.config ファイルでランプでに SOAP (ASMX) の構成を定義する、 **\<applicationSettings\>** セクションです。 既定値を次に示します。  
   
     ```  
     <setting   
