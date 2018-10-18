@@ -19,14 +19,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/28/2017
 ms.locfileid: "25976608"
 ---
-# <a name="resubmission-notes-and-restrictions"></a><span data-ttu-id="f66d3-102">再送信の注意事項と制約事項</span><span class="sxs-lookup"><span data-stu-id="f66d3-102">Resubmission Notes and Restrictions</span></span>
-<span data-ttu-id="f66d3-103">再送信プロセスには、次の注意事項と制約事項が適用されます。</span><span class="sxs-lookup"><span data-stu-id="f66d3-103">The following notes and restrictions apply to the resubmission process:</span></span>  
+# <a name="resubmission-notes-and-restrictions"></a><span data-ttu-id="051c6-102">再送信の注意事項と制約事項</span><span class="sxs-lookup"><span data-stu-id="051c6-102">Resubmission Notes and Restrictions</span></span>
+<span data-ttu-id="051c6-103">再送信プロセスには、次の注意事項と制約事項が適用されます。</span><span class="sxs-lookup"><span data-stu-id="051c6-103">The following notes and restrictions apply to the resubmission process:</span></span>  
   
--   <span data-ttu-id="f66d3-104">ESB WCF 入り口、SOAP (ASMX) 上のランプ、XML メッセージを再送信できますか、任意の HTTP 受信場所。</span><span class="sxs-lookup"><span data-stu-id="f66d3-104">You can resubmit XML messages to the ESB WCF on-ramp, SOAP (ASMX) on-ramp, or any HTTP receive location.</span></span>  
+-   <span data-ttu-id="051c6-104">ESB WCF 入り口、SOAP (ASMX) 上のランプ、XML メッセージを再送信できますか、任意の HTTP 受信場所。</span><span class="sxs-lookup"><span data-stu-id="051c6-104">You can resubmit XML messages to the ESB WCF on-ramp, SOAP (ASMX) on-ramp, or any HTTP receive location.</span></span>  
   
--   <span data-ttu-id="f66d3-105">WCF の上のランプの既定の URL は、 http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc です。</span><span class="sxs-lookup"><span data-stu-id="f66d3-105">The default URL for the WCF on-ramp is http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc.</span></span>  
+-   <span data-ttu-id="051c6-105">WCF の上のランプの既定の URL は、 http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc です。</span><span class="sxs-lookup"><span data-stu-id="051c6-105">The default URL for the WCF on-ramp is http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc.</span></span>  
   
--   <span data-ttu-id="f66d3-106">ポータルの Web.config ファイルは、WCF 入り口内のエンドポイントの詳細を定義、 **\<クライアント\>** のノード、 **\<System.ServiceModel\>** 参照してください。</span><span class="sxs-lookup"><span data-stu-id="f66d3-106">The portal Web.config file defines the endpoint details for the WCF on-ramp in the **\<Client\>** node of the **\<System.ServiceModel\>** section.</span></span> <span data-ttu-id="f66d3-107">既定値を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f66d3-107">The following is the default value.</span></span>  
+-   <span data-ttu-id="051c6-106">ポータルの Web.config ファイルは、WCF 入り口内のエンドポイントの詳細を定義、 **\<クライアント\>** のノード、 **\<System.ServiceModel\>** 参照してください。</span><span class="sxs-lookup"><span data-stu-id="051c6-106">The portal Web.config file defines the endpoint details for the WCF on-ramp in the **\<Client\>** node of the **\<System.ServiceModel\>** section.</span></span> <span data-ttu-id="051c6-107">既定値を次に示します。</span><span class="sxs-lookup"><span data-stu-id="051c6-107">The following is the default value.</span></span>  
   
     ```  
     <endpoint  
@@ -38,11 +38,11 @@ ms.locfileid: "25976608"
     </endpoint>  
     ```  
   
--   <span data-ttu-id="f66d3-108">リモート サーバー上のランプで WCF が存在する場合、正しいサーバーをポイントするアドレスを更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f66d3-108">If the WCF on-ramp resides on a remote server, you must update the address to point to the correct server.</span></span>  
+-   <span data-ttu-id="051c6-108">リモート サーバー上のランプで WCF が存在する場合、正しいサーバーをポイントするアドレスを更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="051c6-108">If the WCF on-ramp resides on a remote server, you must update the address to point to the correct server.</span></span>  
   
--   <span data-ttu-id="f66d3-109">ランプで SOAP (ASMX) の既定の URL は、 http://localhost/ESB.ItineraryServices/ProcessItinerary.asmx です。</span><span class="sxs-lookup"><span data-stu-id="f66d3-109">The default URL for the SOAP (ASMX) on-ramp is http://localhost/ESB.ItineraryServices/ProcessItinerary.asmx.</span></span>  
+-   <span data-ttu-id="051c6-109">ランプで SOAP (ASMX) の既定の URL は、 http://localhost/ESB.ItineraryServices/ProcessItinerary.asmx です 。</span><span class="sxs-lookup"><span data-stu-id="051c6-109">The default URL for the SOAP (ASMX) on-ramp is http://localhost/ESB.ItineraryServices/ProcessItinerary.asmx.</span></span>  
   
--   <span data-ttu-id="f66d3-110">ポータルの Web.config ファイルでランプでに SOAP (ASMX) の構成を定義する、 **\<applicationSettings\>** セクションです。</span><span class="sxs-lookup"><span data-stu-id="f66d3-110">The portal Web.config file defines the configuration for the SOAP (ASMX) on-ramp in the **\<applicationSettings\>** section.</span></span> <span data-ttu-id="f66d3-111">既定値を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f66d3-111">The following is the default value.</span></span>  
+-   <span data-ttu-id="051c6-110">ポータルの Web.config ファイルでランプでに SOAP (ASMX) の構成を定義する、 **\<applicationSettings\>** セクションです。</span><span class="sxs-lookup"><span data-stu-id="051c6-110">The portal Web.config file defines the configuration for the SOAP (ASMX) on-ramp in the **\<applicationSettings\>** section.</span></span> <span data-ttu-id="051c6-111">既定値を次に示します。</span><span class="sxs-lookup"><span data-stu-id="051c6-111">The following is the default value.</span></span>  
   
     ```  
     <setting   
@@ -54,14 +54,14 @@ ms.locfileid: "25976608"
     </setting>  
     ```  
   
--   <span data-ttu-id="f66d3-112">ASMX 入り口がリモート サーバー上にある場合は、適切なサーバー アドレスを持つ URL を更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f66d3-112">If the ASMX on-ramp resides on a remote server, you need to update the URL with the correct server address.</span></span>  
+-   <span data-ttu-id="051c6-112">ASMX 入り口がリモート サーバー上にある場合は、適切なサーバー アドレスを持つ URL を更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="051c6-112">If the ASMX on-ramp resides on a remote server, you need to update the URL with the correct server address.</span></span>  
   
--   <span data-ttu-id="f66d3-113">フラット ファイルを再送信することができます、HTTP のみに書式設定されたメッセージの受信場所。</span><span class="sxs-lookup"><span data-stu-id="f66d3-113">You can resubmit flat file formatted messages only to an HTTP receive location.</span></span> <span data-ttu-id="f66d3-114">WCF または SOAP 入り口に送信することはできません。</span><span class="sxs-lookup"><span data-stu-id="f66d3-114">You cannot submit them to a WCF or SOAP on-ramp.</span></span> <span data-ttu-id="f66d3-115">確認する必要がありますを消費したり、フラット ファイルを解析する適切なパイプライン、HTTP 受信場所であることができます。</span><span class="sxs-lookup"><span data-stu-id="f66d3-115">You must ensure that the HTTP receive location has the appropriate pipeline that can consume and/or parse the flat file.</span></span>  
+-   <span data-ttu-id="051c6-113">フラット ファイルを再送信することができます、HTTP のみに書式設定されたメッセージの受信場所。</span><span class="sxs-lookup"><span data-stu-id="051c6-113">You can resubmit flat file formatted messages only to an HTTP receive location.</span></span> <span data-ttu-id="051c6-114">WCF または SOAP 入り口に送信することはできません。</span><span class="sxs-lookup"><span data-stu-id="051c6-114">You cannot submit them to a WCF or SOAP on-ramp.</span></span> <span data-ttu-id="051c6-115">確認する必要がありますを消費したり、フラット ファイルを解析する適切なパイプライン、HTTP 受信場所であることができます。</span><span class="sxs-lookup"><span data-stu-id="051c6-115">You must ensure that the HTTP receive location has the appropriate pipeline that can consume and/or parse the flat file.</span></span>  
   
--   <span data-ttu-id="f66d3-116">再送信されたメッセージは、元のメッセージのコンテキスト プロパティのいずれか。</span><span class="sxs-lookup"><span data-stu-id="f66d3-116">The resubmitted message does not contain any of the context properties of the original message.</span></span>  
+-   <span data-ttu-id="051c6-116">再送信されたメッセージは、元のメッセージのコンテキスト プロパティのいずれか。</span><span class="sxs-lookup"><span data-stu-id="051c6-116">The resubmitted message does not contain any of the context properties of the original message.</span></span>  
   
--   <span data-ttu-id="f66d3-117">再送信がメッセージ本文のみに適用されます。メッセージ全体には適用されません。</span><span class="sxs-lookup"><span data-stu-id="f66d3-117">Resubmission applies to only the message body; it does not apply to the entire message.</span></span>  
+-   <span data-ttu-id="051c6-117">再送信がメッセージ本文のみに適用されます。メッセージ全体には適用されません。</span><span class="sxs-lookup"><span data-stu-id="051c6-117">Resubmission applies to only the message body; it does not apply to the entire message.</span></span>  
   
--   <span data-ttu-id="f66d3-118">再送信プロセスでは、1 部構成のメッセージのみをサポートします。</span><span class="sxs-lookup"><span data-stu-id="f66d3-118">The resubmission process supports only single-part messages.</span></span> <span data-ttu-id="f66d3-119">マルチパート メッセージを再送信プロセスを使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="f66d3-119">You cannot use the resubmission process with multi-part messages.</span></span>  
+-   <span data-ttu-id="051c6-118">再送信プロセスでは、1 部構成のメッセージのみをサポートします。</span><span class="sxs-lookup"><span data-stu-id="051c6-118">The resubmission process supports only single-part messages.</span></span> <span data-ttu-id="051c6-119">マルチパート メッセージを再送信プロセスを使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="051c6-119">You cannot use the resubmission process with multi-part messages.</span></span>  
   
--   <span data-ttu-id="f66d3-120">バイナリ形式のメッセージを再送信することはできません。</span><span class="sxs-lookup"><span data-stu-id="f66d3-120">You cannot resubmit binary-formatted messages.</span></span>
+-   <span data-ttu-id="051c6-120">バイナリ形式のメッセージを再送信することはできません。</span><span class="sxs-lookup"><span data-stu-id="051c6-120">You cannot resubmit binary-formatted messages.</span></span>
