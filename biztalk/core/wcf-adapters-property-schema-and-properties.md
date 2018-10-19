@@ -26,7 +26,7 @@ WCF アダプタ プロパティ スキーマで昇格させたプロパティ�
 **名前空間:** http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties  
 
 #### <a name="action"></a>操作
-指定の **SOAPAction** 送信メッセージのヘッダー フィールドです。 2 つの方法でこの値を指定することができます。 シングル アクション形式とアクション マッピング形式です。 シングル アクション形式では、このプロパティを設定するかどうかは、http://contoso.com/Svc/Op1 など —、 **SOAPAction**ヘッダーは常に送信メッセージの設定をこのプロパティで指定された値にします。
+指定の **SOAPAction** 送信メッセージのヘッダー フィールドです。 2 つの方法でこの値を指定することができます。 シングル アクション形式とアクション マッピング形式です。 シングル アクション形式では、このプロパティを設定するかどうかは、 http://contoso.com/Svc/Op1 など —、 **SOAPAction**ヘッダーは常に送信メッセージの設定をこのプロパティで指定された値にします。
 
 送信アクション マッピング形式でこのプロパティを設定した場合 **SOAPAction** によってヘッダーが決定、 **BTS します。操作** コンテキスト プロパティです。 たとえば、次の XML 形式にこのプロパティが設定されている場合、 **BTS します。操作** を Op1 に設定されているプロパティ、WCF 送信アダプタを使用して `http://contoso.com/Svc/Op1` を送信 **SOAPAction** ヘッダー。
 
@@ -148,7 +148,7 @@ XML 文字列を指定し、 **\<バインディング\>** のさまざまな種
 - Wcf-netmsmq アダプタ
 
 #### <a name="endpointbehaviorconfiguration"></a>EndpointBehaviorConfiguration
-XML 文字列を指定し、 **\<動作\>** の要素、  **\<endpointBehaviors\>** の動作設定を構成するのには、WCF エンドポイントです。 詳細については、  **\<endpointBehaviors\>** 要素では、「参照」の該当するトピックを参照してください。
+XML 文字列を指定し、 **\<動作\>** の要素、 **\<endpointBehaviors\>** の動作設定を構成するのには、WCF エンドポイントです。 詳細については、 **\<endpointBehaviors\>** 要素では、「参照」の該当するトピックを参照してください。
 
 例: 
 ```
@@ -446,7 +446,7 @@ SOAP のコンテンツを XML 形式のテンプレートを指定 **本文** �
 適用されますすべての WCF 送信アダプタ*を除く*Wcf-netmsmq アダプター。
   
 #### <a name="proxyaddress"></a>ProxyAddress
-プロキシ サーバーのアドレスを指定します。 使用して、 **https** または **http** セキュリティ構成に応じて設定します。 このアドレスの後に、コロンとポート番号を指定します。 場合、プロパティは必須、 **ProxyToUse**プロパティに設定されている**UserSpecified** (たとえば、http://127.0.0.1:8080 と指定)
+プロキシ サーバーのアドレスを指定します。 使用して、 **https** または **http** セキュリティ構成に応じて設定します。 このアドレスの後に、コロンとポート番号を指定します。 場合、プロパティは必須、 **ProxyToUse**プロパティに設定されている**UserSpecified** (たとえば、 http://127.0.0.1:8080 と指定)
 
 型:文字列  
 既定値: 空の文字列  
@@ -504,7 +504,7 @@ SOAP のコンテンツを XML 形式のテンプレートを指定 **本文** �
 適用されますすべての WCF アダプタ*を除く*Wcf-custom および Wcf-customisolated アダプター。
 
 #### <a name="servicebehaviorconfiguration"></a>ServiceBehaviorConfiguration
-XML 文字列を指定し、 **\<動作\>** の要素、  **\<serviceBehaviors\>**  WCF の動作設定を構成するのにはサービス。 詳細については、  **\<serviceBehaviors\>** 要素では、「参照」の該当するトピックを参照してください。
+XML 文字列を指定し、 **\<動作\>** の要素、 **\<serviceBehaviors\>** WCF の動作設定を構成するのにはサービス。 詳細については、 **\<serviceBehaviors\>** 要素では、「参照」の該当するトピックを参照してください。
 
 例:
 
