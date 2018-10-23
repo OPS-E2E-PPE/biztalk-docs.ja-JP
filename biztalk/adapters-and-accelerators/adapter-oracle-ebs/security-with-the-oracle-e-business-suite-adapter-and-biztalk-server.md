@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa3b81ceef83553d859aafa3f208ef619c2fc376
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ff35975566b8260453a2cc4ca9a576576f915fe
+ms.sourcegitcommit: e172dedfd00d4de3a40c8289f3a97ef65cdadd3c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002835"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49401685"
 ---
 # <a name="security-with-the-oracle-e-business-suite-adapter-and-biztalk-server"></a>Oracle E-business Suite アダプターと BizTalk Server でのセキュリティ
 コンソール、BizTalk Server 管理を使用して、送信ポートまたは受信ポート (場所) を構成するときに、またはを使用して、 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] BizTalk ソリューションのメッセージ スキーマを取得する、Oracle E-business Suite の資格情報を指定する必要があります。 可能性のある悪意のあるアクターに開示されるを防ぐためにセキュリティで保護された方法でこれらの資格情報を提供する重要です。 このトピックでは、最も安全に証明書を指定する方法を説明します、[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]の BizTalk Server ソリューションです。  
