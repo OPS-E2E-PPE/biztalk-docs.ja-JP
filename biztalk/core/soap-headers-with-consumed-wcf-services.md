@@ -26,7 +26,7 @@ ms.lasthandoff: 10/18/2018
 ms.locfileid: "22277490"
 ---
 # <a name="soap-headers-with-consumed-wcf-services"></a>消費済み WCF サービスでの SOAP ヘッダー
-カスタム SOAP ヘッダーで WCF サービスにメッセージを送信するこれらのヘッダーで設定しなければなりません (たとえば式図形) 内のオーケストレーションとパイプライン コンポーネントには (コード)、コンテキスト プロパティとして**OutboundCustomHeaders**です。 このコンテキスト プロパティは、ターゲットの名前空間**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**、カスタム SOAP ヘッダーの文字列表現が含まれています。  
+カスタム SOAP ヘッダーで WCF サービスにメッセージを送信するこれらのヘッダーで設定しなければなりません (たとえば式図形) 内のオーケストレーションとパイプライン コンポーネントには (コード)、コンテキスト プロパティとして**OutboundCustomHeaders**です。 このコンテキスト プロパティは、ターゲットの名前空間 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties** 、カスタム SOAP ヘッダーの文字列表現が含まれています。  
   
  次の XML 送信メッセージ内のデータのカスタム SOAP ヘッダーの文字列表現の例を示しています、 **OutboundCustomHeaders**プロパティ。  
   
