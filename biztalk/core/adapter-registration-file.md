@@ -12,17 +12,17 @@ caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5aeda24a40da78cfef5fb66f9069b0a8b80b986c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9798d56c4f3896e652a288d20b4e39e6a2537d3c
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012579"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752962"
 ---
 # <a name="adapter-registration-file"></a>アダプターの登録ファイル
 カスタム アダプター コードを正常にビルドしたら、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に登録する必要があります。 これを行うには、レジストリを適切なアダプターの設定で更新します。 レジストリ ファイルは手動で記述できますが、正確かつ複雑な情報を入力する必要があるため、手動での記述はエラーを招く原因となります。 推奨される方法は、アダプターのレジストリ ウィザードを実行することです。 アダプターのレジストリ ウィザードには、最初からレジストリ ファイルを作成するのとまったく同じオプションが用意されており、ファイルでエラーが発生する可能性を減らすことができます。 アダプター レジストリ ウィザードの詳細については、次を参照してください。[アダプター レジストリ ウィザード](../core/adapter-registry-wizard.md)します。  
   
- StaticAdapterManagement.reg ファイルと DynamicAdapterManagement.reg ファイル*\<ドライブ\>*: \Program Files\Microsoft BizTalk Server\SDK\Samples\AdaptersDevelopment\File アダプター。 これらのファイルのいずれかを実行すると (それをダブルクリックするか、右クリックしてとを選択し、**マージ**)、レジストリのサンプル ファイル アダプターを登録し、アセンブリをグローバル アセンブリ キャッシュにインストールします。 カスタム アダプターを登録するための最適な方法としては、アダプターのレジストリ ウィザードを使用して新しいレジストリ ファイルを作成することをお勧めします。 カスタムの静的アダプターがサンプル アダプターに似ている場合は、作成する代わりに既存のレジストリ ファイルを変更し、StaticAdapterManagement.reg ファイルの次のプロパティを開いて変更します。  
+ StaticAdapterManagement.reg ファイルと DynamicAdapterManagement.reg ファイル*\<ドライブ\>*: \Program Files\Microsoft BizTalk Server\SDK\Samples\AdaptersDevelopment\File アダプター。 これらのファイルのいずれかを実行すると (それをダブルクリックまたは右クリックして選択できます**マージ**)、レジストリのサンプル ファイル アダプターを登録し、アセンブリをグローバル アセンブリ キャッシュにインストールします。 カスタム アダプターを登録するための最適な方法としては、アダプターのレジストリ ウィザードを使用して新しいレジストリ ファイルを作成することをお勧めします。 カスタムの静的アダプターがサンプル アダプターに似ている場合は、作成する代わりに既存のレジストリ ファイルを変更し、StaticAdapterManagement.reg ファイルの次のプロパティを開いて変更します。  
   
 -   **制約**  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d7ca4d0ecbfdb23e35797eb2ba3a704fe19f4cec
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 84f92775382a0d1af22d1bc7ef2c08f19305e90c
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972715"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753202"
 ---
 # <a name="deploy-biztalk-adapter-for-peoplesoft-enterprise"></a>BizTalk Adapter for PeopleSoft Enterprise を展開します。
 ここでは、BizTalk Adapter for PeopleSoft Enterprise の展開に関する情報を示します。  
@@ -46,7 +46,7 @@ ms.locfileid: "36972715"
   
 -   新しいコンピュータで、応答用のフォルダが存在し、同じである。同じでない場合は、バインド ファイルを編集します。  
   
--   PeopleSoft Enterprise システム パスワードが構成に存在する場合、パスワードが ***** としてバインド ファイルに保存されている。 参照してください**制限**このトピックの「します。
+-   PeopleSoft Enterprise システム パスワードは、構成に存在する場合、として保存されます\* \* \* \* \*バインド ファイルにします。 参照してください**制限**このトピックの「します。
 
 > [!NOTE]
 >  展開すると、受信場所の構成が上書きされます。 バインド ファイルとアセンブリを展開先のコンピュータに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  
@@ -69,7 +69,7 @@ cscript RemoveSendPort.vbs \<Send port name\>
 ```
 
 ## <a name="limitations"></a>制限事項
-によってエクスポートされるバインド ファイルにアスタリスク (*) でトランスポート アダプターのパスワードが格納されている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、され、同じ形式で管理コンポーネントに渡されます。  
+アスタリスクでトランスポート アダプターのパスワードが格納されている (\*\*\*\*\*\*) によってエクスポートされるバインド ファイルに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で管理コンポーネントに渡すと、同じ形式です。  
   
  バインド情報をエクスポートしても、生成されるバインド ファイルには、受信場所/送信ポートでトランスポート アダプターが使用したパスワードは含まれません。 このため、パスワード情報はクリア テキストでは表示されません。 次にファイルを使用してバインド情報をインポートするときに、トランスポート プロパティ ページのユーザー インターフェイスを使用してパスワードを入力する必要があります。 または、パスワードをバインド ファイルに入力することで、インポート前にバインド ファイルを一時的に変更することもできます。 この場合、インポート操作が完了した後、バインド ファイルからパスワードを削除する必要があります。  
   
@@ -94,5 +94,5 @@ cscript RemoveSendPort.vbs \<Send port name\>
   
 - 論理システムと送信を確認し、サービスを受信します。 
   
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [BizTalk Server 例外処理を使用して、オーケストレーションで](../core/using-biztalk-server-exception-handling2.md)

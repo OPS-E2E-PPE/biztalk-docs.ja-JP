@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cc89b19f1e493c46e6128d390774479eb59bc6b0
-ms.sourcegitcommit: e172dedfd00d4de3a40c8289f3a97ef65cdadd3c
+ms.openlocfilehash: 3416b4a1ba58a1262e9ff27e3558a2532c839cd4
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "36975915"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752344"
 ---
 # <a name="mqssendpipelinecomponent-biztalk-server-sample"></a>MQSSendPipelineComponent (BizTalk Server サンプル)
 このサンプルでは、一連の MQSeries プロパティ値を XML ファイルから読み取って、メッセージに適用する、パイプライン コンポーネントの作成方法を示します。  
@@ -174,7 +174,7 @@ ms.locfileid: "36975915"
   
 8.  **受信フォルダー**フィールドに、"C:\temp\Pickup3"を入力します。  
   
-9. **ファイル マスク**フィールドに「"*.\*"。  
+9. **ファイル マスク**フィールドに「"\*.\*"。  
   
 10. をクリックして**OK**、順にクリックします**OK**を終了するには、もう一度、**受信場所のプロパティ** ダイアログ ボックス。  
   

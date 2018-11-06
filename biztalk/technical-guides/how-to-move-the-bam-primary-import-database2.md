@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 72c43e5048d55c028bb689bd06e5f8c5844cc064
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fe36c4a8b9aa6d081ebde854e6a4c57f9492df67
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986707"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753210"
 ---
 # <a name="how-to-move-the-bam-primary-import-database"></a>BAM プライマリ インポート データベースを移動する方法
 ここでは、BAM プライマリ インポート データベースを他のサーバーに移動する手順について説明します。 エンド ツー エンドのシナリオの観点から BAM プライマリ インポート データベースの移動にも 2 つの主要な手順が含まれます。  
@@ -155,13 +155,13 @@ ms.locfileid: "36986707"
   
 1.  すべての BAM 分析 SSIS パッケージには「bam_an _」または「bam_dm _」プレフィックスでサーバーとデータベースの名前を更新します。 これを行うには、次のようにクリックします**開始**、 をクリック**すべてのプログラム**、 をクリック**Microsoft SQL Server 2008 R2**または**Microsoft SQL Server 2008 SP1**、順にクリックします。**SQL Server Business Intelligence Development Studio**します。  
   
-2.  SQL Server Business Intelligence Development Studio で、プロジェクトを新規作成します。 をクリックして**ファイル**、 をクリックして**新規**、 をクリックし、**プロジェクト**します。  
+2.  SQL Server Business Intelligence Development Studio で、プロジェクトを新規作成します。 をクリックして**ファイル**、 をクリックして**新規**、クリックして**プロジェクト**です。  
   
 3.  **新しいプロジェクト**] ダイアログ ボックスで、**プロジェクトの種類**ボックスで、[**ビジネス インテリジェンス プロジェクト**します。 右側のウィンドウでの**テンプレート**ボックスで、 **Integration Services プロジェクト**、順にクリックします**OK**。  
   
 4.  **Integration Services プロジェクト** ダイアログ ボックスで、ソリューション エクスプ ローラーで右クリックして**SSIS パッケージ**、順にクリックします**既存パッケージの追加**します。  
   
-5.  **既存パッケージのコピーの追加** ダイアログ ボックスで、 **Server**ドロップダウン リスト ボックスで、bam_an _ * および bam_dm _ * パッケージを格納しているサーバーを選択します。  
+5.  **既存パッケージのコピーの追加** ダイアログ ボックスで、 **Server**ドロップダウン リスト ボックスで、bam_an _ を含むサーバーを選択します。\*と bam_dm _\*パッケージ。  
   
 6.  **パッケージ パス**、省略記号ボタンをクリックします。  
   
@@ -199,7 +199,7 @@ ms.locfileid: "36986707"
     > [!NOTE]  
     >  すべてのパッケージを更新するには、手順 16 ~ 19 を繰り返します。  
   
-20. をクリックして**OK**、順にクリックします**はい**を上書きします。  
+20. をクリックして **[ok]**、順にクリック**はい**を上書きします。  
   
 21. すべての BAM キューブ更新およびデータ保守 SSIS パッケージを有効にします。  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73fdf3b57756bb2dfc007e63f803bf17c29285ab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bb47a69efc6522eb6868ce2ecda5c608d2652c99
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976651"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752786"
 ---
 # <a name="metadata-and-the-wcf-service-model-with-siebel"></a>メタデータと Siebel と WCF サービス モデル
 WCF サービス モデルを使用して、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]またはプロキシ クラスを生成する ServiceModel メタデータ ユーティリティ ツール (svcutile.exe): WCF クライアント クラス-するコードは操作を呼び出してから、 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]。  
@@ -35,7 +35,7 @@ WCF サービス モデルを使用して、[!INCLUDE[addadapterservreflong](../
   
   生成されたこの構造を理解したりコードは、「生成されたクライアント コードを理解する」をご覧[ http://go.microsoft.com/fwlink/?LinkId=98365](http://go.microsoft.com/fwlink/?LinkId=98365)します。 このトピックでは、svcutil.exe が生成されますが、そのコンテンツがコードに該当するものコードを具体的に説明する[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]が生成されます。  
   
-  操作の対象の WCF クライアント クラスを生成する方法について、および svcutil.exe の相違点について、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]を参照してください[WCF クライアントまたは WCF サービス コントラクトの Siebel ソリューションの成果物の生成](../../adapters-and-accelerators/adapter-siebel/generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts.md)  
+  操作の対象の WCF クライアント クラスを生成する方法について、および svcutil.exe の相違点について、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]を参照してください[WCF クライアントまたは Siebel ソリューションの成果物の WCF サービス コントラクトの生成](../../adapters-and-accelerators/adapter-siebel/generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts.md)  
   
 ## <a name="see-also"></a>参照  
  [WCF サービス モデルを使用して Siebel アプリケーションを開発します。](../../adapters-and-accelerators/adapter-siebel/develop-siebel-applications-using-the-wcf-service-model.md)

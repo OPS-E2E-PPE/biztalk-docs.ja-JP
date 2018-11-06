@@ -11,12 +11,12 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: ribarua
 manager: dougeby
-ms.openlocfilehash: ab724870e9c75a60119e86f7f62d6823f1db9873
-ms.sourcegitcommit: e7609c319b64ec20bf215d17aa5ac4f9dcae52ec
+ms.openlocfilehash: 6787ece4af5ebdd17733dde33ae524f2c9b802e8
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946220"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752650"
 ---
 # <a name="create-calendar-events-with-the-office-365-outlook-calendar-adapter---biztalk-server"></a>Office 365 Outlook の予定表のアダプターの BizTalk Server を使用した予定表イベントを作成します。
 
@@ -59,7 +59,7 @@ BizTalk Server で、Office 365 Outlook カレンダー アダプターを使用
 
 単純なを使用するファイルの受信ポートと、Office 365 Outlook カレンダーにイベントを作成する場所。
 
-1. ファイル アダプターを使用して受信ポートを作成します。 内で、受信場所、設定、**受信フォルダー**に **C:\Temp\In\**、ファイル マスクを設定 **\*.xml**します。
+1. ファイル アダプターを使用して受信ポートを作成します。 内で、受信場所、設定、**受信フォルダー**に**c:\\Temp\\で\\**、ファイル マスクを設定 **\*.xml**.
 2. 送信ポートのプロパティでは、Office 365 Outlook カレンダー アダプターは、設定、**フィルター**に`BTS.ReceivePortName == <Receive Port Name>`します。
 3. テキスト エディターに貼り付け、ファイルに保存します**Office365Calendar.xml**します。 これは、サンプル メッセージです。
 
@@ -123,7 +123,7 @@ BizTalk Server で、Office 365 Outlook カレンダー アダプターを使用
 
 単純な File 送信ポートを使用すると、Office 365 Outlook カレンダーからメッセージを受信します。
 
-1. ファイル アダプターを使用して送信ポートを作成します。 送信ポートのプロパティ内で次のように設定します、**先フォルダー**に **C:\Temp\Out\**、設定、および**ファイル名**に **%MessageID%.xml**。
+1. ファイル アダプターを使用して送信ポートを作成します。 送信ポートのプロパティ内で、設定、**先フォルダー**に**c:\\Temp\\アウト\\**、設定と**ファイル名**に **%MessageID%.xml**します。
 2. ファイルの送信ポートのプロパティは、設定、**フィルター**に`BTS.ReceivePortName == <Receive Port Name>`します。
 3. Office 365 Outlook の予定表の開始には、場所とファイルの送信ポートが表示されます。
 4. 保存先フォルダー (c:\temp\out) にメッセージを探します。 
@@ -245,5 +245,5 @@ div.WordSection1
 </ns0:Event> 
 ```
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 すべてを参照してください、 [Office 365 アダプター](office365-adapters.md)、インストールまたは[機能パック 3](https://aka.ms/bts2016fp3)します。

@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6cfd0ddfbdbe55480d249c01e68a0e571da63591
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 101d3600bbe38115bb20983e84ddd9192f8daf00
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006099"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752690"
 ---
 # <a name="install-biztalk-accelerator-for-swift"></a>BizTalk Accelerator を SWIFT をインストールします。
 インストール[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef_md](../../includes/a4swift-currentversion-firstref-md.md)]BizTalk Server にします。 
@@ -46,7 +46,7 @@ ms.locfileid: "37006099"
 
 ### <a name="before-you-begin"></a>アンインストールの準備
 
-* メンバーであるアカウントを使用してサインイン、BizTalk Server 管理者グループ。 
+* BizTalk Server 管理者グループのメンバーであるアカウントを使用してサインインします。 
 * BizTalk Server のダウンロード、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]のセットアップ、`\BizTalk Accelerators`フォルダー。
 * BizTalk Server をインストールする必要があります、および SQL Server を実行する必要があります。
 * サイレント インストールはサポートされていますが、必要な追加の構成手順の複雑さに伴いは推奨されません。
@@ -102,5 +102,5 @@ ms.locfileid: "37006099"
 > [!NOTE]
 > 場合**構成ウィザードの実行**がインストールの完了 ページで、選択されて、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]構成ウィザードをクリックすると、自動的に実行**完了**します。 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [BizTalk Accelerator for SWIFT に構成します。 ](../../adapters-and-accelerators/accelerator-swift/configure-biztalk-accelerator-for-swift.md)

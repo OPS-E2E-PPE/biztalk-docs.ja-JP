@@ -15,12 +15,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9d01e5eaf96c6490c68424fd09e297e0e60ef9d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 31925296de1e9c6f017e2447e0dccfd699ac177c
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979395"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752554"
 ---
 # <a name="creating-and-using-business-rules"></a>ビジネス ルールの作成および使用
 ビジネス ルール (またはビジネス ポリシー) は、組織の構造、活動、および戦略を定義し、制御するものです。 ビジネス ルールは手順書や契約書などで正式に規定されている場合もあれば、従業員の知識や専門知識として存在する場合もあります。 ビジネス ルールは動的で時間と共に変化し、すべての種類のアプリケーションで使用されます。 金融保険、e ビジネス、輸送、電気通信、Web ベースのサービス、パーソナル化などは、ビジネス ルールによって統制される数多くのビジネス分野のごく一部に過ぎません。 これらのビジネス分野が共通して抱えているニーズは、ビジネス上の戦略、ポリシー、および規定を情報技術 (IT) 担当者に伝えてソフトウェア アプリケーションに組み込むことです。  

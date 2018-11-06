@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9caa74fbd3e9ac06728a9e2ee332bb3277f8a240
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fb882531141114842983ca93be9d799898ecefdf
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995923"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753114"
 ---
 # <a name="checklist-planning-for-operations-in-a-secure-environment"></a>チェックリスト: セキュリティで保護された環境での操作の計画
-実行している[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セキュリティで保護された環境でのデプロイと構成の追加の手順が必要です。 オペレーティング システムの既定のインストールが必要になりませんこれらのアカウントが、シナリオに制限の厳しいセキュリティ ポリシーが適用されている、中に、このセクションの情報はアカウントに行う必要があります。 サーバーに適用される制限のレベルが異なる場合がありますが、以下の情報は、ほとんどの場合に対応する必要があり、、出発点として適しています。  
+実行している[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セキュリティで保護された環境でのデプロイと構成の追加の手順が必要です。 オペレーティング システムの既定のインストールが必要になりませんこれらのアカウントが、シナリオに制限の厳しいセキュリティ ポリシーが適用されている、中に、このセクションの情報はアカウントに行う必要があります。 サーバーに適用される制限のレベルが異なる場合がありますが、以下の情報はほとんどの場合に対応する必要があり、適切な開始点となります。  
 
 -   [BizTalk Server を実行しているコンピューターのセキュリティに関する考慮事項](../technical-guides/checklist-planning-for-operations-in-a-secure-environment.md#BKMK_BTSSec)  
 

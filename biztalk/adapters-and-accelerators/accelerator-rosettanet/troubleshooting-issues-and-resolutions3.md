@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ad2e2db5e7d4d8c8181248f9345f1df2cca4a6dd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ab1f869d8d7c06260a1f7f8388991a0e18a2ff09
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985099"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50758697"
 ---
 # <a name="troubleshooting-issues-and-resolutions"></a>トラブルシューティング : 問題と解決策
 このトピックの「Microsoft® の実行に関連する問題に対処[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]します。 個々の問題について、具体的な現象、考えられる原因、および解決策について詳しく説明します。  
@@ -44,7 +44,7 @@ ms.locfileid: "36985099"
   
   このメッセージの前に、原因を詳細に示す別のエラー メッセージが表示されることがあります。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  エラー メッセージに記載されている詳細情報も確認してください。 Microsoft の再起動[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]™ この問題を解決する可能性があります。  
   
 ## <a name="you-cannot-unenlist-all-artifacts"></a>一部のアイテムの登録を解除できない  
@@ -55,7 +55,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  実行する場合、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]Microsoft® 管理コンソール (MMC) からアグリーメントとパートナーを削除する前に Clean ユーティリティ BtarnClean ユーティリティできなくでも使用されますので、すべての成果物の参加を解除します。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
   
 ##### <a name="to-remove-artifacts-using-the-loopback-utility"></a>Loopback ユーティリティを使用してアイテムを除去するには  
   
@@ -77,7 +77,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  インストール先に 2 つの DLL ファイルが見つかりません。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  コンピューターに SQLXML をインストールしてから、[System] フォルダーに Msxml4.dll と Atl71.dll ファイルを手動でコピーします。  
   
 ## <a name="you-receive-an-access-error-when-attempting-to-change-the-btarn-configuration"></a>BTARN 構成を変更しようとすると、アクセス エラーが表示される  
@@ -92,7 +92,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  現在のユーザーが BizTalk Administrators グループのメンバではありません。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  現在のユーザーを BizTalk Administrators グループのメンバにします。  
   
 ## <a name="you-receive-bam-errors"></a>BAM エラーが発生する  
@@ -109,7 +109,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  ビジネス アクティビティ監視 (BAM) 追跡ツールがインストールされていません。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  BAM 追跡ツールを使用してをインストール、**カスタム インストール**オプション。 BAM 機能が不要な場合は、これらのメッセージを無視するか、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管理コンソールを使用して追跡機能を無効にします。 追跡機能を無効にした後で、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] とインターネット インフォメーション サービス (IIS) を再起動する必要があります。  
   
 ## <a name="your-xsd-schema-does-not-display-properly-in-biztalk-editor"></a>BizTalk エディターに XSD スキーマが正しく表示されない  
@@ -120,7 +120,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  `displayroot_reference` 要素の `schemaInfo` 属性がスキーマにありません。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  メモ帳などのテキスト エディターでスキーマを開き、`displayroot_reference` 属性を `schemaInfo` 要素に追加します。 `displayroot_reference` 属性には、`root_reference` 属性と同じ値を指定してください。  
   
  以下に例を示します。  
@@ -139,7 +139,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Internet Server API (ISAPI) の拡張 DLL (BTSHttpReceive.dll) がインターネット インフォメーション サービス (IIS) で構成されていません。 これは、HwsMessages HttpReceive Web サービス拡張が構成されていないか、この Web サービス拡張が構成されていても、許可されていない場合に発生します。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  HwsMessages HttpReceive Web サービス拡張が構成されているかどうかを判断し、構成されていない場合に許可するには、次の手順を実行します。  
   
 ##### <a name="to-configure-the-biztalk-isapi-extension-dll-in-iis"></a>IIS で BizTalk ISAPI 拡張 DLL を構成するには  
@@ -174,7 +174,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  構成ウィザードを実行するユーザーを構成する必要があります '\<*マシン名*\>\hostsvc'、'\hostsvc'。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  BizTalk 管理コンソールを開き、アカウントで実行されるように、アカウント"\hostsvc"で実行しているホストを変更 '\<*マシン名*\>\hostsvc'。  
   
 ## <a name="you-receive-an-error-when-importing-and-compiling-a-rosettanet-next-generation-pip-schema"></a>RosettaNet Next Generation PIP スキーマをインポートしてコンパイルするときにエラーが発生する  
@@ -187,7 +187,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  スキーマの 1 つ、たとえば StandardDocumentHeader.xsd に、RosettaNet.Schemas.System という [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] 名前空間があります。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  このスキーマの [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] 名前空間から "System" を削除して、名前空間を RosettaNet.Schemas にします。  
   
 ## <a name="you-receive-an-error-when-trying-to-manually-deploy-the-bam-package"></a>手動で BAM パッケージを展開しようとするとエラーが発生する  
@@ -198,7 +198,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  BAM_DM_Process と BAM_DM_Message という 2 つの DTS パッケージがシステムにインストールされており、これが BAM パッケージの展開を妨げています。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
   
 ##### <a name="to-recover-from-the-error-condition-and-deploy-the-bam-package"></a>エラー状態から回復して BAM パッケージを展開するには  
   
@@ -216,7 +216,7 @@ ms.locfileid: "36985099"
   
     ```  
     cd %ProgramFiles%\Microsoft BizTalk Server <version>\Tracking  
-    bm deploy all  "%ProgramFiles%\Microsoft BizTalk <version> Accelerator for RosettaNet\BAMTracking\tracking.xml"  
+    bm deploy all  "%ProgramFiles%\Microsoft BizTalk <version> Accelerator for RosettaNet\BAMTracking\tracking.xml"  
     ```  
   
 ## <a name="you-receive-an-error-when-adding-a-new-pip"></a>新しい PIP を追加するときにエラーが表示される  
@@ -231,7 +231,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  インスタンス Pip4A5NotifyofForecastReply の展開済みスキーマのドキュメント名前空間か、ルート ノード プロパティのどちらかが間違っています。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  インスタンス Pip4A5NotifyofForecastReply の展開済みスキーマのドキュメント名前空間とルート ノード プロパティが正しいかどうかを確認します。  
   
 ## <a name="error-during-the-configuration-of-btarn-at-installation-time-caused-by-presumed-network-connectivity-issues"></a>インストール時の BTARN を構成中にネットワーク接続の問題が推定されてエラーが発生する  
@@ -242,7 +242,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  このエラーは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 構成プログラムが IP アドレスの解釈を間違えると発生します。 C:\Windows\system32\drivers\etc に格納されているホスト ファイルには、localhost のホスト名を IP アドレス 127.0.0.1 にマップしているエントリが記載されています。 構成プログラムが、この値をループバック アドレスの値と混同した結果、コンピュータがネットワークに正しく接続されていないと誤認している可能性があります。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
   
 ##### <a name="to-avoid-this-error-and-complete-the-configuration-process"></a>このエラーを回避して構成プロセスを完了するには  
   
@@ -264,7 +264,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  このエラー メッセージは、署名の長さが間違っていることを通知します。 このエラーは上記の原因の他に、ヘッダー内容の長さの間違いや不完全によっても発生します。これが原因で署名の長さのバイト数が誤って読み取られます。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  署名とヘッダー内容の両方の長さが正しいことを確認します。  
   
 ## <a name="you-receive-503-service-unavailable-from-internet-explorer-on-64-bit-machine"></a>64 ビット マシンで、Internet Explorer に "503: Service Unavailable" というメッセージが表示される  
@@ -277,7 +277,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  このエラーは、C:\windows\system32\rpcproxy\rpcproxy.dll の IIS Web サイトに設定されている ISAPI フィルターが原因で発生します。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
   
 ##### <a name="to-remove-rpcproxy-filter-entry-in-iis"></a>IIS で RpcProxy フィルターを削除するには  
   
@@ -310,7 +310,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  アセンブリ キー ファイルがプロジェクトに設定されていないので、HubScenario および HubHelper アセンブリが正しく展開されていません。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  HubScenario および HubHelper プロジェクトのアセンブリ キー ファイルを設定します。 詳細については、次を参照してください。 [HubScenario サンプル](../../adapters-and-accelerators/accelerator-rosettanet/hubscenario-sample.md)します。  
   
 ## <a name="run-setupx64bat-to-set-up-the-double-action-pipautomation-orchestration-sample-on-sql-server-2008-r22008-sp1"></a>SQL Server 2008 R2 または SQL Server 2008 SP1 で setupx64.bat を実行して Double Action PIPAutomation オーケストレーション サンプルを設定する  
@@ -321,7 +321,7 @@ ms.locfileid: "36985099"
 ### <a name="possible-cause"></a>考えられる原因  
  64 ビット コンピューターで、または SQL Server 2008 R2 または 2008 SP1 で実行されている BizTalk Server のインストールでは、setup.bat を実行します。 これらのインスタンスでは setupx64.bat を実行する必要があります。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  setupx64.bat を実行してストアド プロシージャを作成します。 詳細については、次を参照してください。 [Double Action PIPAutomation Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)します。  
   
 ## <a name="enable-the-btarn-application-pools-for-32-bit-on-windows-server-2008-64-bit-windows-operating-system-os"></a>64 ビットの Windows オペレーティング システム (OS) の Windows Server 2008 で 32 ビットの BTARN アプリケーション プールを有効にする  
@@ -329,7 +329,7 @@ ms.locfileid: "36985099"
   
  1. 32 ビットの BTARN アプリケーション プールを有効にします。  
   
- 2. IsapiModule フィルターを参照する *.dll の HTTP ハンドラーを追加します。  
+ 2. HTTP ハンドラーを追加\*.dll IsapiModule フィルターを参照します。  
   
 ## <a name="see-also"></a>参照  
  [BtarnClean](../../adapters-and-accelerators/accelerator-rosettanet/btarnclean.md)   

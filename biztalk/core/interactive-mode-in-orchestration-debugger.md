@@ -1,5 +1,5 @@
 ---
-title: オーケストレーション デバッガーの対話型モード |Microsoft ドキュメント
+title: オーケストレーション デバッガーの対話型モード |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9990be016f6f731f6534a38ad997b5424cc4e12e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e038701794d1bfe36b0ce94c8f13239c5d251bf9
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256986"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752281"
 ---
 # <a name="interactive-mode-in-orchestration-debugger"></a>オーケストレーション デバッガーの対話モード
-対話型で-デバッグ-モードでは、オーケストレーション デバッガー ビューには、3 つの領域が含まれています: サービス ウィンドウ、追跡したイベント および オーケストレーション ペイン。 また、対話モードでは、ビューの下部に変数一覧と変数のプロパティが表示されます。  
+対話形式で: デバッグ-モードでは、オーケストレーション デバッガー ビューには、3 つの領域が含まれています: ペイン、追跡したイベント、および オーケストレーション ペインのサービスです。 また、対話モードでは、ビューの下部に変数一覧と変数のプロパティが表示されます。  
   
 > [!NOTE]
->  オーケストレーション デバッガーでは、ブレークポイント モードでサービスの状態が表示されていて、それをインスタンスにアタッチしない限り、サービスの正確な状態を表示できません。  
+>  オーケストレーション デバッガーはブレークポイント モードで表示され、インスタンスにアタッチした場合を除き、サービスの実際の状態を表示できません。  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーション デバッガーの報告モード](../core/reporting-mode-in-orchestration-debugger.md)   

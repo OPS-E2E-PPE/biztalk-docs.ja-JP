@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f94bb4b6a6f094211654f5c3c0964bbf84d42f56
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 648a1780e02e35d284a620f29cfd034765c4cc45
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989595"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752770"
 ---
 # <a name="install-custom-rfcs-for-the-data-provider-for-sap"></a>Data Provider for SAP のカスタム Rfc をインストールします。
 MySAP Business Suite の SAP システムにアクセスする .NET Framework データ プロバイダーを使用する場合は、カスタム Rfc をインストールします。
@@ -34,7 +34,7 @@ MySAP Business Suite の SAP システムにアクセスする .NET Framework �
   
 SAP システムでこれらの操作を実行するには、SAP システムでこれらのカスタム Rfc をインストールする必要があります。 インストールした場合、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]と共に、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、セットアップ プログラムにコピーの RFC トランスポート、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]圧縮ファイルとして (customRFC.zip) システムでアダプターをインストールします。 Zip ファイルは通常にインストールされて*\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Microsoft .NET Framework Data Provider for mySAP Business Suite*します。 
   
- Zip ファイルを抽出するには、4 つのデータ ファイルが表示されます、次の名前付け、2 つのパターンを K9 *。BI1 (たとえば、K900534 に似ています。BI1)、およびその他の 2 つ R9 パターンに従う\*します。BI1 (たとえば、R900534 に似ています。BI1)。  
+ Zip ファイルを抽出するには後に、4 つのデータ ファイルが表示されます、名前付け、次の 2 つのパターンを K9\*します。BI1 (たとえば、K900534 に似ています。BI1)、およびその他の 2 つ R9 パターンに従う\*します。BI1 (たとえば、R900534 に似ています。BI1)。  
   
 
   
@@ -42,11 +42,11 @@ SAP システムでこれらの操作を実行するには、SAP システムで
   
    1.  開発システムの SAP アプリケーション サーバーに、SAP R/3 システムの管理者としてログインします。  
   
-   2.  名前付けパターン K9 * で 2 つのトランスポート ファイルをコピーします。SAP アプリケーション サーバーで、次のディレクトリに、アダプターを実行しているコンピューター上のインストール ディレクトリから BI1:  
+   2.  K9 の名前付けパターンを持つ 2 つのトランスポート ファイル コピー\*します。SAP アプリケーション サーバーで、次のディレクトリに、アダプターを実行しているコンピューター上のインストール ディレクトリから BI1:  
   
         `<drive>:\usr\sap\trans\cofiles`  
   
-   3.  名前付けパターン R9 * で 2 つのトランスポート ファイルをコピーします。SAP アプリケーション サーバーで、次のディレクトリに、アダプターを実行しているコンピューター上のインストール ディレクトリから BI1:  
+   3.  R9 の名前付けパターンを持つ 2 つのトランスポート ファイル コピー\*します。SAP アプリケーション サーバーで、次のディレクトリに、アダプターを実行しているコンピューター上のインストール ディレクトリから BI1:  
   
         `<drive>:\usr\sap\trans\data`  
   
@@ -139,7 +139,7 @@ SAP システムでこれらの操作を実行するには、SAP システムで
   
   - ACTVT: 03  
   
-  - DICBERCLS: *  
+  - DICBERCLS: \*  
   
     DICBERCLS を使用して、承認クラスによってテーブルに承認を制限することができます。  
   
@@ -152,7 +152,7 @@ SAP システムでこれらの操作を実行するには、SAP システムで
   
   - ACTVT: 03  
   
-  - テーブル: *  
+  - テーブル: \*  
   
     承認済みのテーブルを明示的に定義するのにテーブルを使用することができます。 また、S_TABU_DIS が他のトランザクションにも使用します。  
   

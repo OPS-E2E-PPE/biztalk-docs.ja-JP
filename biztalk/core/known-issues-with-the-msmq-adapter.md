@@ -1,5 +1,5 @@
 ---
-title: MSMQ アダプターに関する既知の問題 |Microsoft ドキュメント
+title: MSMQ アダプターに関する既知の問題 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 67f210d0e480a311aed0bed5d50f6a827bd6ea4e
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 4accec1f9bed8ade9270e0c33e868e55c6a21942
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "22262618"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752562"
 ---
 # <a name="known-issues-with-the-msmq-adapter"></a>MSMQ アダプターに関する既知の問題
 ここでは、エラー回避に役立つ情報を記載します。  
@@ -33,14 +33,14 @@ ms.locfileid: "22262618"
  MSMQ アダプターの受信ハンドラーが実行されている BizTalk ホスト インスタンスに関連付けられた .NET スレッド プールで、使用できるスレッド数が不足している場合、MSMQ アダプターの受信場所ではドキュメントを処理できません。  
   
 ##### <a name="resolution"></a>解決策  
- ホスト インスタンスの .NET スレッド プールで使用可能なスレッドの数を増やすには、手順で、**ホスト用 CLR Hosting スレッド値**」の「[に影響するアダプターの構成パラメーターパフォーマンス](../core/configuration-parameters-that-affect-adapter-performance.md)です。  
+ ホスト インスタンスの .NET スレッド プールで利用可能なスレッドの数を増やすには、次の手順では、**ホスト用 CLR Hosting スレッド値**」の「[その影響を与えるアダプターの構成パラメーターパフォーマンス](../core/configuration-parameters-that-affect-adapter-performance.md)します。  
   
- MSMQ 受信ハンドラーにバインドされている各 MSMQ 受信場所は、.NET スレッド プールからスレッドを必要とするため、設定 **MinIOThreads** と **MinWorkerThreads** には、MSMQ の数より大きい値には、受信場所の受信ハンドラーにバインドします。 したがっての値を設定 **MaxIOThreads** と **MaxWorkerThreads** MSMQ の数と同じ値には、受信場所の受信ハンドラーにバインドされている * ヘッドルームを許可するように 2。  
+ 各 MSMQ の受信場所を MSMQ にバインドされているために、受信ハンドラーは、.NET スレッド プールからスレッドを必要とは、設定**MinIOThreads**と**MinWorkerThreads**に以上である値をMSMQ 受信場所の数は、受信ハンドラーにバインドします。 したがっての値を設定**MaxIOThreads**と**MaxWorkerThreads** MSMQ の数と同じ値には、受信場所の受信ハンドラーにバインドされている\*ヘッドルームを許可する 2。  
   
 |DWORD エントリ|推奨値|  
 |-----------------|-----------------------|  
-|MaxIOThreads|MSMQ アダプターの受信ハンドラーにバインドされている MSMQ 受信場所の数 * 2。|  
-|MaxWorkerThreads|MSMQ アダプターの受信ハンドラーにバインドされている MSMQ 受信場所の数 * 2。|  
+|MaxIOThreads|MSMQ アダプターにバインドされている場所を受信する MSMQ の数の受信ハンドラー \* 2。|  
+|MaxWorkerThreads|MSMQ アダプターにバインドされている場所を受信する MSMQ の数の受信ハンドラー \* 2。|  
 |MinIOThreads|MSMQ アダプターの受信ハンドラーにバインドされている MSMQ 受信場所の数|  
 |MinWorkerThreads|MSMQ アダプターの受信ハンドラーにバインドされている MSMQ 受信場所の数|  
   
@@ -64,7 +64,7 @@ ms.locfileid: "22262618"
   
  **ControlService FAILED 1053:**  
   
- **サービスは適時に開始または制御要求に応答しませんでした。**  
+ **サービスは、適切なタイミングで開始または制御要求に応答しませんでした。**  
   
  このエラー メッセージが表示された後、BizTalk ホスト インスタンスのサービスが停止します。 しかし、SC ツールによってサービスがシャットダウンされるまで、2 分以上かかる場合があります。  
   
@@ -82,7 +82,7 @@ ms.locfileid: "22262618"
   
  **説明:**  
   
- **タイムアウト (30000 ミリ秒) BTSSvc$ BizTalkServerApplication サービスからトランザクションの応答を待機しています。**  
+ **タイムアウト (30000 ミリ秒)、BTSSvc$ BizTalkServerApplication サービスからトランザクションの応答を待機しています。**  
   
 ##### <a name="resolution"></a>解決策  
  サポートされている修正プログラムを Microsoft から入手できます。 ただし、この修正プログラムは、この資料で説明した問題のみの修正を目的としています。 この特定の問題が発生しているシステム以外には適用しないでください。 この修正プログラムは、さらにテストされる可能性があります。 したがって、この問題による影響が非常に深刻でない限り、この修正プログラムを含む次のサービス パックが提供されるまで待つことをお勧めします。  

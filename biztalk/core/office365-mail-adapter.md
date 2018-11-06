@@ -11,12 +11,12 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: ribarua
 manager: dougeby
-ms.openlocfilehash: daea28056180b436f226fa32b6179bfb1e091f7a
-ms.sourcegitcommit: e7609c319b64ec20bf215d17aa5ac4f9dcae52ec
+ms.openlocfilehash: 58183ce30236ccca39b9c8345959c4785de46ae9
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946214"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752637"
 ---
 # <a name="send-and-receive-email-with-office-365-outlook-email-adapter---biztalk-server"></a>Office 365 Outlook メールのアダプターの BizTalk Server で電子メールの送受信
 
@@ -67,7 +67,7 @@ Office 365 Outlook メール アダプターを使用すると、BizTalk から�
 
 単純なを使用するファイルの受信ポートと場所、Office 365 Outlook メールにメッセージを送信します。
 
-1. ファイル アダプターを使用して受信ポートを作成します。 内で、受信場所、設定、**受信フォルダー**に **C:\Temp\In\**、ファイル マスクを設定 **\*.xml**します。
+1. ファイル アダプターを使用して受信ポートを作成します。 内で、受信場所、設定、**受信フォルダー**に**c:\\Temp\\で\\**、ファイル マスクを設定 **\*.xml**.
 2. 送信ポートのプロパティでは、Office 365 Outlook メール アダプターは、設定、**フィルター**に`BTS.ReceivePortName == <Receive Port Name>`します。
 3. テキスト エディターに貼り付け、ファイルに保存します**Office365Mail.xml**します。 これは、サンプル メッセージです。
 
@@ -81,7 +81,7 @@ Office 365 Outlook メール アダプターを使用すると、BizTalk から�
     ```
 
 4. 開始ファイルは、場所と Office 365 Outlook メール アダプターの送信ポートを受信します。
-5. コピー **Office365Mail.xml**受信フォルダーにサンプル メッセージ (C:\Temp\In\)します。 送信ポートでは、XML ファイルを電子メールの本文として、Office 365 Outlook メールに送信されます。
+5. コピー **Office365Mail.xml**受信フォルダーにサンプル メッセージ (c:\\Temp\\で\\)。 送信ポートでは、XML ファイルを電子メールの本文として、Office 365 Outlook メールに送信されます。
 
 ## <a name="receive-email-using-a-receive-port"></a>受信ポートを使用して電子メールを受信します。
 
@@ -118,7 +118,7 @@ Office 365 Outlook メール アダプターを使用すると、BizTalk から�
 
 単純な File 送信ポートを使用するから Office 365 の Outlook 電子メール メッセージを受信します。
 
-1. ファイル アダプターを使用して送信ポートを作成します。 送信ポートのプロパティ内で次のように設定します、**先フォルダー**に **C:\Temp\Out\**、設定、および**ファイル名**に **%MessageID%.xml**。
+1. ファイル アダプターを使用して送信ポートを作成します。 送信ポートのプロパティ内で、設定、**先フォルダー**に**c:\\Temp\\アウト\\**、設定と**ファイル名**に **%MessageID%.xml**します。
 2. ファイルの送信ポートのプロパティは、設定、**フィルター**に`BTS.ReceivePortName == <Receive Port Name>`します。
 3. 開始、Office 365 Outlook の電子メールは受信場所および File 送信ポートです。
 4. 保存先フォルダー (c:\temp\out) にメッセージを探します。
@@ -138,5 +138,5 @@ Office 365 Outlook メール アダプターを使用すると、BizTalk から�
 > [!NOTE]
 > 電子メールの本文の内容のみ、メッセージに渡されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 すべてを参照してください、 [Office 365 アダプター](office365-adapters.md)、インストールまたは[機能パック 3](https://aka.ms/bts2016fp3)します。

@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f6c62686c15c2e0b04576ca3175fb22d52a71922
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7eda4dcb210f3d0272cdb0f04da8ae7d7ef2942d
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987411"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753146"
 ---
 # <a name="regenerate-the-live-data-workbook"></a>ライブ データ ブックを再生成します。
 BAM ライブ データ ブックが失われるか破損した場合、BAM 管理ユーティリティを使用してブックを再生成できます。 このプロセスは、BizTalk Server の以前のバージョンからアップグレードする場合にも役立ちます。

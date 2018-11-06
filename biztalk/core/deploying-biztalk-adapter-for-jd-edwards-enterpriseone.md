@@ -13,12 +13,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 708e9d3513c9d36e9a4aa28d607332e4c1aac077
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e9c6f24ff4cb7060d0cddf29d82f4035d8407dca
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989371"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753194"
 ---
 # <a name="import-the-jd-edwards-enterpriseone-application"></a>JD Edwards EnterpriseOne アプリケーションをインポートします。
   
@@ -45,7 +45,7 @@ BizTalk Server を使用してバインド ファイルをインポートする�
   
 -   新しいコンピューターに、応答用の同じフォルダーが存在する。同じでない場合は、バインド ファイルを編集します。  
   
--   JD Edwards EnterpriseOne システム パスワードが構成に存在する場合、パスワードが ***** としてバインド ファイルに保存されている。 詳細については、次を参照してください。**制限**このトピックの「します。
+-   JD Edwards EnterpriseOne システムのパスワードは、構成に存在する場合、として保存されます\* \* \* \* \*バインド ファイルにします。 詳細については、次を参照してください。**制限**このトピックの「します。
 
 ## <a name="clean-the-target-computer"></a>ターゲット コンピューターをクリーニングします。
 バインド ファイルとアセンブリを展開先のコンピューターに再展開すると、送信ポートと受信場所が、再インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  
@@ -62,7 +62,7 @@ BizTalk Server を使用してバインド ファイルをインポートする�
 cscript RemoveSendPort.vbs \<Send port name\>
 ```
 ## <a name="limitations"></a>制限事項
-によってエクスポートされるバインド ファイルでトランスポート アダプターのパスワードが星 (*) として格納されている、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、され、同じ形式で管理コンポーネントに渡されます。 アスタリスクを無効な値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。  
+トランスポート アダプターのパスワードは、星として格納されます (\*\*\*\*\*\*) によってエクスポートされるバインド ファイルに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で管理コンポーネントに渡すと、同じ形式です。 アスタリスクを無効な値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。  
   
  バインド情報をエクスポートしても、生成されるバインド ファイルには、受信場所/送信ポートでトランスポート アダプターが使用したパスワードは含まれません。 このため、パスワード情報はクリア テキストでは表示されません。 次回のバインド情報をインポートするファイルを使用するトランスポートのプロパティ ページのユーザー インターフェイスを使用してパスワードを入力する必要があります。  
   
@@ -75,5 +75,5 @@ cscript RemoveSendPort.vbs \<Send port name\>
 2.  論理システムと送信および受信サービスを確認します。  
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [BizTalk Server 例外処理を使用して、オーケストレーションで](../core/using-biztalk-server-exception-handling3.md)

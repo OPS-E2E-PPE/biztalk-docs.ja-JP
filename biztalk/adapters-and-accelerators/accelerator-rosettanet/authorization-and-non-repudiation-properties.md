@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d218b9e3d0221a4eb3859bd3e10ad31c9f62508
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7d7088b25ec2526c19c60d21c9929afb92be42a7
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991211"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752762"
 ---
 # <a name="authorization-and-non-repudiation-properties"></a>承認と否認不可プロパティ
 このトピックでは、PIP (Partner Interface Process) の `Is Authorization Required`、`Non-Repudiation of Origin and Content`、および `Non-Repudiation Required (Acknowledgement of Receipt)` プロパティの動作について説明します。 これについても説明します、これらのプロパティの組み合わせを Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]をサポートしています。  
@@ -49,21 +49,21 @@ ms.locfileid: "36991211"
 |認証の必要性します。|[発信元とコンテンツの否認不可]|Non-Repudiation Required (Acknowledgement of Receipt)|BTARN によるサポートの有無|  
 |-------------------------------|--------------------------------------------|--------------------------------------------------------------|-------------------------|  
 |`False`|`False`|`False`|はい|  
-|`False`|`False`|`True`|なし*|  
-|`False`|`True`|`False`|なし * *|  
-|`False`|`True`|`True`|なし***|  
-|`True`|`False`|`False`|あり****|  
-|`True`|`False`|`True`|あり****|  
+|`False`|`False`|`True`|違います\*|  
+|`False`|`True`|`False`|違います\*\*|  
+|`False`|`True`|`True`|違います\*\*\*|  
+|`True`|`False`|`False`|うん\*\*\*\*|  
+|`True`|`False`|`True`|うん\*\*\*\*|  
 |`True`|`True`|`False`|はい|  
 |`True`|`True`|`True`|はい|  
 
  \* [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] シグナルが署名して、アクションが署名されていないことを必要とするためには、この組み合わせをサポートしません。  
 
- ** [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] アクションに署名して、シグナルが署名されていないことを必要とするためには、この組み合わせをサポートしません。  
+ \*\* [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] アクションに署名して、シグナルが署名されていないことを必要とするためには、この組み合わせをサポートしません。  
 
- *** [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 否認不可に設定するため、この組み合わせをサポートしません`True`アクションとシグナルの両方のことを意味[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]承認を実行します。 したがって、この組み合わせは有効ではありません。  
+ \*\*\* [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 否認不可に設定するため、この組み合わせをサポートしません`True`アクションとシグナルの両方のことを意味[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]承認を実行します。 したがって、この組み合わせは有効ではありません。  
 
- **** `Is Authorization Required` を `True`、`Non-Repudiation of Origin and Content` を `False` に設定した場合、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] はメッセージを否認不可テーブルに格納します。  
+ \*\*\*\* 設定すると`Is Authorization Required`に`True`と`Non-Repudiation of Origin and Content`に`False`、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]メッセージを否認不可テーブルに保存します。  
 
 ## <a name="see-also"></a>参照  
  [プロセス構成を作成または編集する方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)

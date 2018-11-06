@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6424d3101023b6521700a30b8cf4460e09e1ff14
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 21009f82632140156957a831a40bcbf4c65982ee
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988387"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752930"
 ---
 # <a name="how-to-configure-wcf-services-published-with-the-biztalk-wcf-service-publishing-wizard"></a>BizTalk WCF サービス公開ウィザードで公開した WCF サービスを構成する方法
 BizTalk WCF サービス公開ウィザードを使用して WCF サービスを公開した後、これらのサービスを適切に構成する必要があります。 このトピックでは、公開した WCF サービスを構成する方法について説明します。  
@@ -83,7 +83,7 @@ BizTalk WCF サービス公開ウィザードを使用して WCF サービスを
     > [!NOTE]
     >  この設定はオプションで、公開した WCF サービスをホストする ASP.NET アプリケーションに、オペレーティング システムのセキュリティの影響下にあるリソースへのアクセス権限を与えます。 これは、公開された WCF サービスと同じコンピューターで Windows SharePoint Services がインストールおよび実行されている場合に、WCF サービスの実行に必要な信頼レベルです。  
 
-14. Internet explorer で、**アドレス**ボックスに、形式 http:// を使用して WCF サービスの URL を入力<em>ホスト [: ポート]</em>/*apppath* /*wcfservicename.svc*を公開した WCF サービスをテストします。 次の表は、これらのパラメーターについてまとめたものです。  
+14. Internet explorer で、**アドレス**ボックスに、形式 を使用して WCF サービスの URL を入力 http://<em>ホスト [: ポート]</em>/*apppath* /*wcfservicename.svc*を公開した WCF サービスをテストします。 次の表は、これらのパラメーターについてまとめたものです。  
 
 
     |      パラメーター       |                                                            値                                                            |
@@ -97,7 +97,7 @@ BizTalk WCF サービス公開ウィザードを使用して WCF サービスを
 
     1.  メモ帳で、%SystemDrive%\InetPub で BizTalk Server WCF サービス公開ウィザードが WCF サービスを作成するフォルダーの Web.config を開き\\します。  
 
-    2.  メモ帳で、次のように設定します。、、 **httpGetEnabled**属性、 **\<serviceMetadata\>** を false には、次の行要素。  
+    2.  メモ帳で、設定、 **httpGetEnabled**属性、 **\<serviceMetadata\>** を false には、次の行要素。  
 
         ```  
         <serviceMetadata httpGetEnabled="false" httpsGetEnabled="false" />  

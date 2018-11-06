@@ -18,12 +18,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e240fbc99705c18a0e789a1ddea0e26d8f479e55
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a62a8c2c6d2bb74c9e68fcdcf1304e6d0cd99d67
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984043"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752626"
 ---
 # <a name="creating-affiliate-applications"></a>関連アプリケーションの作成
 次の手順では、SSO を使用して関連アプリケーションを利用する方法について説明します。  
@@ -43,7 +43,7 @@ ms.locfileid: "36984043"
   
 3. エンタープライズ シングル サインオン コマンドを使用します。 コマンドの一覧は、使用、 **-ヘルプ**スイッチします。  
   
-4. *.XML を基にして関連アプリケーションを作成するには、次のコマンドを入力します。  
+4. 使用して関連アプリケーションを作成する\*します。XML の始まりとしては、次のコマンドを入力します。  
   
     `ssomanage.exe -createapps C:\SSOtest\AffiliateApplication.xml`  
   

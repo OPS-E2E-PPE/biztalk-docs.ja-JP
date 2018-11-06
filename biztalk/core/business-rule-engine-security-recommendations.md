@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 41815d53b31b2f0bf0ebf3e5626a61d76470ac4c
-ms.sourcegitcommit: c1e83b63ae34bd586e6e0ccc914640efdf96bd4c
+ms.openlocfilehash: 2ca5506d8ed9acab63e32a4ec86b057a4b775b63
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48423918"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752754"
 ---
 # <a name="business-rule-engine-security-recommendations"></a>ビジネス ルール エンジンのセキュリティに関する推奨事項
 ビジネス ルール エンジンは、ビジネス ルール フレームワークのランタイム コンポーネントです。 ビジネス ルール フレームワークを使用すると、非常に判読しやすく意味論的にも充実した宣言型のルールを、任意のビジネス オブジェクト (.NET コンポーネント)、XML ドキュメント、またはデータベース テーブルに接続することができます。 ビジネス ルール フレームワークの詳細については、次を参照してください。[を使用してビジネス ルールの作成と](../core/creating-and-using-business-rules.md)します。 ビジネス ルール エンジンの詳細については、次を参照してください。[ルール エンジン](../core/rule-engine.md)します。  

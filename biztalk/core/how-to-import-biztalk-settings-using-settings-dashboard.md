@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3713ee7906d735b6328b50d3b97a214422893d21
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c2a825158f43ea085fd0e84aeb15001ea88b6d7f
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970219"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752778"
 ---
 # <a name="use-settings-dashboard-to-import-or-export-biztalk-settings"></a>設定ダッシュ ボードを使用して、インポートまたは BizTalk の設定をエクスポートするには 
 
@@ -111,7 +111,7 @@ BizTalk 設定ダッシュボードを使用して、ある [!INCLUDE[btsBizTalk
 3. BizTalk の現在の設定を保存する場所に移動します。 ファイル名を入力、XML の形式として、種類の選択および順にクリックします**保存**します。  
 
 > [!IMPORTANT]
->  ないいないはお勧め、エクスポートされた XML ファイルを手動で更新します。 運用環境に更新された XML ファイルをインポートすると、インポート プロセスが失敗するデータ型の不一致または手動で編集で導入されたその他のエラーのためです。  
+>  エクスポートされた XML ファイルを手動で更新することはお勧めできません。 運用環境に更新された XML ファイルをインポートすると、インポート プロセスが失敗するデータ型の不一致または手動で編集で導入されたその他のエラーのためです。  
 
 ## <a name="see-also"></a>参照  
  [BizTalk Server パフォーマンス チューニングのための設定ダッシュボードの使用](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)

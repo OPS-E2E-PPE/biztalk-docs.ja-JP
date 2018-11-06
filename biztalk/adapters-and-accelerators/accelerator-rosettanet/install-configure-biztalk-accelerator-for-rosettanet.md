@@ -10,12 +10,12 @@ ms.assetid: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ecb8e527abe896719da881f0c7df0e4f5566a90f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1cd5c218e6862791b8eb2f6a80848c4f8b2755b8
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005803"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752674"
 ---
 # <a name="install-biztalk-accelerator-for-rosettanet"></a>BizTalk Accelerator を RosettaNet をインストールします。
 
@@ -55,7 +55,7 @@ Microsoft BizTalk Accelerator は、RosettaNet (BTARN) 用にインストール�
 ### <a name="before-you-begin"></a>アンインストールの準備
 
 * BTARN データベースでは、BTARN により、SQL Server コンピューター名とデータベース名のプロパティのみ構成します。 このプロパティについての情報は、レジストリに格納されます。
-* メンバーであるアカウントを使用してサインイン、BizTalk Server 管理者グループ。 
+* BizTalk Server 管理者グループのメンバーであるアカウントを使用してサインインします。 
 * BizTalk Server のダウンロードでは、BTARN セットアップは、`\BizTalk Accelerators`フォルダー。
 * BizTalk Server をインストールする必要があります、および SQL Server を実行する必要があります。
 * BTARN と BizTalk Server の両方は、ソフトウェアの前提条件として Microsoft .NET Framework が必要です。 複数のバージョンの .NET Framework をコンピューターにインストールした場合、BtarnAPP Web アプリケーションが .NET Framework 4.0 クラシックを参照することを確認します。 この構成は、インターネット インフォメーション サービス (IIS) マネージャーで行えます。  
@@ -108,7 +108,7 @@ Microsoft BizTalk Accelerator は、RosettaNet (BTARN) 用にインストール�
     > [!NOTE]
     >  ローカル管理者アカウントを使用して BTARN を構成する場合は、入力としてアカウント *< マシン名\>\\< 管理者名\>* で、**ユーザー ID**フィールド、**サービス資格情報**領域。  
 
-2.  **データベース サーバー名**テキスト ボックスを表示、サーバー名が正しいことを確認します。 **サービス資格情報**領域で、サービスを実行するアカウント (ドメイン) を持つユーザー名とパスワードを入力します。 クリックして**構成**します。  
+2.  **データベース サーバー名**テキスト ボックスを表示、サーバー名が正しいことを確認します。 **サービス資格情報**領域で、サービスを実行するアカウント (ドメイン) を持つユーザー名とパスワードを入力します。 をクリックして**構成**です。  
 
 3.  自分のアカウントに管理者特権がある場合は、クリックして**はい**構成を続行します。  
 
@@ -121,7 +121,7 @@ Microsoft BizTalk Accelerator は、RosettaNet (BTARN) 用にインストール�
 
 6.  ランタイムを構成する、 **Microsoft BTRAN 構成**ダイアログ ボックスで、をクリックして**ランタイム**左側のウィンドウでします。 右にある**ランタイム**ウィンドウで、をクリックして**このコンピューターでランタイム機能を有効にする**します。 既存のデータベース グループに参加するには、オフ**新しいデータベース グループを作成したい**します。 適切な Web サーバー名、ポート番号、データ ストア、アプリケーション プール サービス アカウント、および BizTalk HTTP 受信仮想フォルダーを選択します。  
 
-7.  Web Apps 機能を構成する、 **Microsoft BTRAN 構成**ダイアログ ボックスで、をクリックして**WebApps**で左側のウィンドウをクリック**このコンピューターでランタイム機能を有効にします。**. 適切な BizTalk Server の名前を入力し、ポート番号、または、既定値を選択します。 適切な Web アプリケーション仮想フォルダーを選択します。  
+7.  Web Apps 機能を構成する、 **Microsoft BTRAN 構成**ダイアログ ボックスで、をクリックして**WebApps**で左側のウィンドウをクリック**このコンピューターでランタイム機能を有効にします。** 適切な BizTalk Server の名前を入力し、ポート番号、または、既定値を選択します。 適切な Web アプリケーション仮想フォルダーを選択します。  
 
 8.  **[構成の適用]** をクリックします。  
 
@@ -166,7 +166,7 @@ BTARN のオーケストレーション、送信ポート、および受信場�
 
  1 台のサーバーに BTARN をインストールする方法の詳細については、次を参照してください。、 [Loopback チュートリアル](loopback-tutorial.md)します。
 
-## <a name="next-steps"></a>次のステップ  
+## <a name="next-steps"></a>次の手順  
 
 * [RosettaNet アクセラレータのアップグレード](upgrade-biztalk-accelerator-for-rosettanet.md)
 * [RosettaNet アクセラレータのアンインストール](uninstall-biztalk-accelerator-for-rosettanet.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4cef519e4648814e1636daac7b60a42addf5111
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1824f7ff2d285db5b404ee838bed402aa72f78f8
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978371"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752336"
 ---
 # <a name="exchange-patterns-for-send-adapters"></a>送信アダプターの交換パターン
 送信アダプターには、BizTalk メッセージング エンジンから、回線で送信されるメッセージが配信されます。 配信されたメッセージは、一方向または双方向のメッセージ交換パターンを使用して送信される場合があります。 この双方向のメッセージ交換パターンを処理するアダプターを送信請求 - 応答アダプターと呼びます。  
@@ -228,8 +228,8 @@ return responseMsg;
 
 | アダプターのエイリアス | [アダプター] |   OutboundTransportLocation の例    |
 |---------------|---------|----------------------------------------|
-|    HTTP://    |  HTTP   |     http://www 。 MyCompany.com/bar      |
-|   HTTPS://    |  HTTP   |     https://www 。 MyCompany.com/bar     |
-|    mailto:    |  SMTP (SMTP)   |      mailto:A.User@MyCompany.com       |
+|    HTTP://    |  HTTP   |     `http://www. MyCompany.com/bar`      |
+|   HTTPS://    |  HTTP   |     `https://www. MyCompany.com/bar`     |
+|    mailto:    |  SMTP (SMTP)   |      `mailto:A.User@MyCompany.com`       |
 |    FILE://    |  FILE   | FILE://C:\MyCompany \\%MessageID%.xml |
 

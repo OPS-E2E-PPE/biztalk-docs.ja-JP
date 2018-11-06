@@ -12,17 +12,17 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b30627813b4790e5ab2e275d179773e0be41b6e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e1e4601264b8dc407d1cc1bed323b4d3504bc91d
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001411"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753250"
 ---
 # <a name="execute-a-peoplesoft-enterprise-sample-get"></a>PeopleSoft Enterprise Sample Get を実行します。
-PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムから PeopleSoft アダプターを使用してアクセスできます。 このアダプターに含まれている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。
+PeopleSoft システムは、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムから PeopleSoft アダプターを使用してアクセスできます。 このアダプターに含まれている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。
   
- これは PeopleSoft ラボ作業の 2 パート目です。 1 パート目 (ラボ 1) では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] またはその他の Microsoft テクノロジを使用せずに、PeopleSoft システムに手動でアクセスし、データを変更しました。 このパート (ラボ 2) では、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトの一部として、BizTalk オーケストレーションを作成します。 PeopleSoft アダプターを使用して PeopleSoft システムのデータを取得するために、このオーケストレーションのポートを構成します。  
+ これは PeopleSoft ラボ作業の 2 パート目です。 1 パート目 (ラボ 1) では、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] またはその他の Microsoft テクノロジを使用せずに、PeopleSoft システムに手動でアクセスし、データを変更しました。 このパート (ラボ 2) では、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトの一部として、BizTalk オーケストレーションを作成します。 PeopleSoft アダプターを使用して PeopleSoft システムのデータを取得するために、このオーケストレーションのポートを構成します。  
   
 ## <a name="prerequisites"></a>前提条件  
   
@@ -51,7 +51,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
 - アプリケーションのテストと XML 出力の表示  
   
 ## <a name="procedures-for-lab-2--executing-a-peoplesoft-sample-get"></a>ラボ 2 の手順 - PeopleSoft Sample Get の実行  
- PeopleSoft システムへのインターフェイス アクセスには、PSJOA.JAR および GET_CI_INFO.PC。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターで、PeopleSoft アダプターは PeopleSoft Java インターフェイスを使用して PeopleSoft システムとやり取りします。 このインターフェイスは PSJOA.JAR ファイルで提供されます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に配置されているこのファイルのコピーは、通常、アクセス先の PeopleSoft サーバー システムの管理者から送信されます。 このラボでは、PSJOA.JAR のコピーは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の C:\PSJars\Ver841\ フォルダーにあります。 このファイルの場所は、PeopleSoft アダプター構成プロパティで指定されます。  
+ PeopleSoft システムへのインターフェイス アクセスには、PSJOA.JAR および GET_CI_INFO.PC。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターで、PeopleSoft アダプターは PeopleSoft Java インターフェイスを使用して PeopleSoft システムとやり取りします。 このインターフェイスは PSJOA.JAR ファイルで提供されます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に配置されているこのファイルのコピーは、通常、アクセス先の PeopleSoft サーバー システムの管理者から送信されます。 このラボでは、PSJOA.JAR のコピーは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の C:\PSJars\Ver841\ フォルダーにあります。 このファイルの場所は、PeopleSoft アダプター構成プロパティで指定されます。  
   
  PeopleSoft システムには、カスタム コンポーネント インターフェイス (CI) をインストールする必要があります。 インストールすると、アダプターの構成時にアダプターから PeopleSoft オブジェクトを参照できるようになります。 アクセス可能な PeopleSoft オブジェクトのリストを取得するために、カスタム コンポーネント インターフェイスを呼び出します ([生成した項目の追加] 手順から)。 これらのオブジェクトで、クライアント システムから使用できる PeopleSoft の公開機能が決まります。  
   
@@ -64,7 +64,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
 ## <a name="step-1-confirm-the-peoplesoft-rerequisites"></a>手順 1: PeopleSoft rerequisites を確認します。  
  PeopleSoft アダプターに使用する BizTalk プロジェクトの作成を開始する前に、PeopleSoft へのアクセスに必要な条件がすべてセットアップされていることを確認します。  
   
-1. いることを確認、PSJOA します。JAR ファイルに存在する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターの C:\psjars\ver841 フォルダー。 (このファイルは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上では異なる場所にある場合があります。 以下の構成では、ファイルがこの場所にあると想定しています)。  
+1. いることを確認、PSJOA します。JAR ファイルに存在する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターの C:\psjars\ver841 フォルダー。 (このファイルは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]上では異なる場所にある場合があります。 以下の構成では、ファイルがこの場所にあると想定しています)。  
   
 2. C:\Program files \microsoft BizTalk Adapters for Enterprise Applications\PeopleSoft Enterprise(r) \Config フォルダーに get_ci_info.pc ファイルが存在することを確認します。  
   
@@ -97,7 +97,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
    2. **[JAVA_HOME]**: **C:\J2SDK1.4.2_08**  
   
-       このパスは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の Java SDK インストールに固有のパスです。  
+       このパスは、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の Java SDK インストールに固有のパスです。  
   
    3. **パスワード**: \<PeopleSoft パスワードを入力します。\>  
   
@@ -237,7 +237,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
 4.  **[FileOut]** ポートを選択し、内向きの受信の矢印を **[ToDisk]** 図形の外向きの送信の矢印にドラッグします。  
   
-5.  優れたアプリケーションの設計原則に従って、既存の汎用メッセージ名をよりわかりやすい名前に変更します。 ソリューション エクスプローラーで、 **オーケストレーションの種類** タブをクリックします。**メッセージ**の識別子を変更**Message_1**に**ps_msg**します。 **[Message_2]** の識別子を **[PS_Resp]** に変更します。  
+5.  優れたアプリケーションの設計原則に従って、既存の汎用メッセージ名をよりわかりやすい名前に変更します。 ソリューション エクスプローラーで、 **[オーケストレーションの種類]** タブをクリックします。[メッセージ]の下にある **[Message_1]** の識別子を **[PS_Msg]** に変更します。 **[Message_2]** の識別子を **[PS_Resp]** に変更します。  
   
      ![](../core/media/5ec92b81-4a55-4d44-a360-78a6aaa64255.gif "5ec92b81-4a55-4d44-a360-78a6aaa64255")  
   
@@ -254,9 +254,9 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
      ![](../core/media/d16e02bc-954c-4aa2-99d6-3fee1222c730.gif "d16e02bc-954c-4aa2-99d6-3fee1222c730")  
   
 ## <a name="step-4-build-and-deploy-the-project"></a>手順 4: 構築し、プロジェクトの配置  
- BizTalk プロジェクトが完成したので、ビルドし、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に展開できます。  
+ BizTalk プロジェクトが完成したので、ビルドし、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]に展開できます。  
   
-1.  Visual Studio で、] をポイント**Visual Studio Tools**、し、[Visual Studio コマンド プロンプト * *。  
+1.  Visual Studio で、] をポイント**Visual Studio Tools**、し、[ **Visual Studio コマンド プロンプト**します。  
   
 2.  プロジェクトをビルドするには、厳密な名前キーファイルが必要です。コマンド プロンプトに次のように入力し、厳密な名前のキー ファイルを作成します。  
   
@@ -347,7 +347,7 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
     2. **[JAVA_HOME]**: **C:\J2SDK1.4.2_08**  
   
-        このパスは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の Java SDK インストールに固有のパスです。  
+        このパスは、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の Java SDK インストールに固有のパスです。  
   
     3. **パスワード**: \<PeopleSoft パスワードを入力します。\>  
   
@@ -401,6 +401,6 @@ PeopleSoft システムは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
      この返されたレコード データは、PeopleSoft ラボ 1 での PeopleSoft システムに対するクエリで返された内容と一致する必要があります。 値を比較することで取得したラボ 1 で具体的には、 **Address1**と**住所 2**に、ここで表示される内容を行、 **\<場所: ADDRESS1\>** と**\<場所: 住所 2\>** フィールド、ことを確認することができます、**取得**メソッドが正常に動作します。  
   
 ## <a name="summary"></a>まとめ  
- このラボでは、PeopleSoft システムにアクセスするための前提条件が適切にセットアップされていることを最初に確認しました。 次に、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して、オーケストレーションが含まれる新しい BizTalk プロジェクトを作成しました。 また、BizTalk オーケストレーションを構成し、PeopleSoft アダプターを使用して PeopleSoft システムのデータを取得しました。 オーケストレーションを構成するために、送信ポート、受信ポート、および送信/受信ポートを作成しました。 これらのポートを PeopleSoft アダプターにバインドし、メッセージを適切なポートに割り当てました。  
+ このラボでは、PeopleSoft システムにアクセスするための前提条件が適切にセットアップされていることを最初に確認しました。 次に、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して、オーケストレーションが含まれる新しい BizTalk プロジェクトを作成しました。 また、BizTalk オーケストレーションを構成し、PeopleSoft アダプターを使用して PeopleSoft システムのデータを取得しました。 オーケストレーションを構成するために、送信ポート、受信ポート、および送信/受信ポートを作成しました。 これらのポートを PeopleSoft アダプターにバインドし、メッセージを適切なポートに割り当てました。  
   
- BizTalk プロジェクトの作成後、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用してプロジェクトをビルドして展開しました。 次に、新しいアプリケーションを構成し、実行して PeopleSoft システムのデータを取得しました。 アプリケーションが適切に動作していることを確認するために、出力 XML ファイルを、ラボ 1 で PeopleSoft システムから受信したファイルと比較しました。
+ BizTalk プロジェクトの作成後、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用してプロジェクトをビルドして展開しました。 次に、新しいアプリケーションを構成し、実行して PeopleSoft システムのデータを取得しました。 アプリケーションが適切に動作していることを確認するために、出力 XML ファイルを、ラボ 1 で PeopleSoft システムから受信したファイルと比較しました。

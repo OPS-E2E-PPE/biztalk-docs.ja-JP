@@ -13,17 +13,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ccbf7efb3d61f35c1fb54eb709471f0913314ea7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 30c9f80b2d5426c6a967f9fe57d923971d1fa305
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977886"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752398"
 ---
 # <a name="troubleshoot-tibco-rendezvous"></a>TIBCO Rendezvous をトラブルシューティングします。
   
 ## <a name="use-event-tracing-for-windows"></a>Windows のイベント トレーシングを使用します。
-Microsoft BizTalk Adapter for TIBCO Rendezvous は、エラー、警告、および情報メッセージを Windows イベント ビューアーに記録します。 追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。 ETW をアクティブにすると、メッセージ受信用の *.etl ファイルが作成されます。 このファイルはバイナリ形式であり、読み取るには変換する必要があります。 これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル、tracerpt.exe や tracedmp.exe などです。 たとえば、tracerpt.exe アプリケーションは変換、 \*.etl ファイルを 2 つのテキスト ファイル: summary.txt と dumpfile.csv です。  
+Microsoft BizTalk Adapter for TIBCO Rendezvous は、エラー、警告、および情報メッセージを Windows イベント ビューアーに記録します。 追加のトレーシング メッセージを表示するには、Windows イベント トレーシング (ETW) ツールを使用します。 ETW をアクティブになると作成、 \*.etl ファイル メッセージを受信します。 このファイルはバイナリ形式であり、読み取るには変換する必要があります。 これを行うには、解釈に利用できるコンシューマー アプリケーションが必要、 \*.etl ファイル、tracerpt.exe や tracedmp.exe などです。 たとえば、tracerpt.exe アプリケーションは変換、 \*.etl ファイルを 2 つのテキスト ファイル: summary.txt と dumpfile.csv です。  
   
 ## <a name="etw-components"></a>ETW コンポーネント  
  Windows イベント トレーシングには 3 つのコンポーネントがあります。  
@@ -94,7 +94,7 @@ BTATIBCORVTrace <Trace element> -stop
 BTATIBCORVTrace -transmitter -start -cir 10 -rt c:\log\mylog.etl  
 BTATIBCORVTrace -transmitter -stop  
 ```  
-## <a name="see-more"></a>詳細を参照してください。
+## <a name="see-more"></a>詳細情報
 [例外処理](../core/using-biztalk-server-exception-handling4.md)  
 [Security](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)  
 [アーキテクチャ](../core/architecture-of-biztalk-adapter-for-tibco-rendezvous.md)

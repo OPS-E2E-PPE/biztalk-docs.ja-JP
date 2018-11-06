@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 35b0aa77fc9b30d3f365cf48f084b7d46bdbbb1b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b0fd15de7aec81c046ab6b2fc23b6c63a1ec0615
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989243"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752706"
 ---
 # <a name="migrating-a-biztalk-server-project"></a>BizTalk Server プロジェクトを移行します。
 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 用に開発されたプロジェクト[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用して、新しい環境に移行できる[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]変換します。 移行がサポートされているバージョンの一覧は、次を参照してください。[サポートされるアップグレード パスと環境向けインストール ガイド](http://social.technet.microsoft.com/wiki/contents/articles/28554.biztalk-server-supported-upgrade-paths-and-installation-guides.aspx)します。  
@@ -36,7 +36,7 @@ ms.locfileid: "36989243"
 >  BizTalk プロジェクトに 2 つのビルドの種類があるようになりました:**リリース**と**デバッグ**、後継**開発**と**展開**の前バージョン。 ただし、引き続きを参照してください、**開発**と**展開**から移行されるプロジェクトの構成[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]します。  
 > 
 > [!CAUTION]
->  *.Btproj のみと\*。 結果として、バックアップ、変換中にオプションを選択することでバックアップされるプロジェクト ファイルがバックアップされます。 他のファイルは手動でバックアップする必要があります。  
+>  のみ、 \*.btproj と\*。 結果として、バックアップ、変換中にオプションを選択することでバックアップされるプロジェクト ファイルがバックアップされます。 他のファイルは手動でバックアップする必要があります。  
 > 
 > [!CAUTION]
 >  XSD や ODX ファイルなどの自動生成項目のカスタマイズは、変換の間に失われます。 これは、Web 参照を BizTalk プロジェクトに追加すると生成される XSD ファイルにも当てはまります。  

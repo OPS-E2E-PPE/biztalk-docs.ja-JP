@@ -21,12 +21,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f94c69552a59cf8cae8a12e056502ae405638e69
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 01c4524fd5ce633851b64fc07ea2891a389b4ef5
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992843"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752858"
 ---
 # <a name="btarnclean"></a>BtarnClean
 BtarnClean ユーティリティを使用して Microsoft® をクリーンアップする[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]アイテムをコンピューターから。 以下の処理が実行されます。  
@@ -35,7 +35,7 @@ BtarnClean ユーティリティを使用して Microsoft® をクリーンア�
   
 - 関連するすべてのポートを停止し、削除する  
   
-- すべての Microsoft の展開解除します.Solutions.btarn.* アセンブリ  
+- すべての Microsoft の展開解除します。Solutions.BTARN します。\*アセンブリ  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
  \<*ドライブ*\>\Program Files (x86) \ Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk  

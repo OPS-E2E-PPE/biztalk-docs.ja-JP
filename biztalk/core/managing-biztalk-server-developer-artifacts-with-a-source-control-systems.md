@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ce9483518275c57c7defb730aeeffc8a4139115
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 132a02e8936a1e877f2cd266132a63db45537bf4
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991011"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752531"
 ---
 # <a name="managing-biztalk-server-developer-artifacts-with-a-source-control-systems"></a>ソース管理システムを使用した BizTalk Server の開発アイテムの管理
 BizTalk プロジェクトを予期しないシステム障害から保護することは、最優先事項として考える必要があります。 プロジェクト ファイルを保護する方法の 1 つは、Team Foundation Server ソース管理や Microsoft Visual SourceSafe のようなソース コード管理システムを使用することです。 ここでは、任意のソース管理システムで最適に動作するようプロジェクトを編成するための基本的な方法について説明し、Visual SourceSafe の具体的な使用方法を紹介します。  

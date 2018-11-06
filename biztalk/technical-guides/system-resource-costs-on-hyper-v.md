@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6be288e21657d447dd21bff06b5c3294f6f4a2c2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 768b34b6b1a51768f1c0070c961749e1975015f9
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003707"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753058"
 ---
 # <a name="system-resource-costs-on-hyper-v"></a>HYPER-V のシステム リソース コスト
 ## <a name="system-resource-costs-associated-with-running-a-guest-operating-system-on-hyper-v"></a>HYPER-V でゲスト オペレーティング システムを実行に関連付けられているシステム リソース コスト  
@@ -123,13 +123,13 @@ ms.locfileid: "37003707"
   
  **Virtual_SQL01 と Physical_SQL01 の両方から収集された**:  
   
-- \LogicalDisk(*)\\\*  
+- \LogicalDisk (\*)\\\*  
   
-- \PhysicalDisk(*)\\\*  
+- \PhysicalDisk (\*)\\\*  
   
   **ハイパースレッディング V_02 の仮想マシンから収集された**:  
   
-- \Hyper-V 仮想記憶域デバイス\\*  
+- \\HYPER-V 仮想ストレージ デバイス\\\*  
   
 ### <a name="results"></a>[結果]  
  パススルー ディスクを超える Physical_SQL01 に直接接続されている SAN LUN のスループットの 90% を実現できました。  合計、読み取りと 1 秒あたりの書き込み I/o が 10% 以内のすべてが 1 秒あたりに転送された合計 (mb)。  1 ~ 15 ミリ秒の読み取りと書き込みの間に正常なディスクの応答時間があります。 平均 I/O 応答時間は、両方のディスクに 4 ミリ秒未満でした。 ランダム読み取りの応答時間には、物理と 5.7 ms パススルー ディスク上の 5.4 のミリ秒でした。 書き込みの応答時間は、物理および仮想環境の両方で 0.5 ミリ秒未満でした。  

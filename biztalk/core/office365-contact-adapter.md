@@ -11,12 +11,12 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: ribarua
 manager: dougeby
-ms.openlocfilehash: 3185e080be7a4222ac51072506eb9657eb7b1e1b
-ms.sourcegitcommit: e7609c319b64ec20bf215d17aa5ac4f9dcae52ec
+ms.openlocfilehash: da423cba141dffa8779c97cef521ade730a3c846
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946232"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752682"
 ---
 # <a name="create-a-contact-using-the-office-365-outlook-contact-adapter---biztalk-server"></a>Office 365 Outlook の連絡先のアダプターの BizTalk Server を使用して連絡先を作成します。
 
@@ -42,7 +42,7 @@ BizTalk Server で、Office 365 Outlook の連絡先のアダプターを使用�
 
 単純なを使用するファイルの受信ポートと、Office 365 Outlook の連絡先のアダプターにイベントを作成する場所。
 
-1. ファイル アダプターを使用して受信ポートを作成します。 内で、受信場所、設定、**受信フォルダー**に **C:\Temp\In\**、ファイル マスクを設定 **\*.xml**します。
+1. ファイル アダプターを使用して受信ポートを作成します。 内で、受信場所、設定、**受信フォルダー**に**c:\\Temp\\で\\**、ファイル マスクを設定 **\*.xml**.
 2. 送信ポートのプロパティでは、Office 365 Outlook の連絡先のアダプターは、設定、**フィルター**に`BTS.ReceivePortName == <Receive Port Name>`します。
 3. テキスト エディターに貼り付け、ファイルに保存します**Office365Contact.xml**します。 これは、サンプル メッセージです。
 
@@ -113,10 +113,10 @@ BizTalk Server で、Office 365 Outlook の連絡先のアダプターを使用�
             </otherAddress>
         </ns0:Contact>
     ```
-    **XML スキーマは、< BizTalk インストール Folder\SDK\Schemas > 内で SDK の一部として提供されます。**
+    **XML スキーマが内で SDK の一部として提供されている < BizTalk インストール フォルダー\\SDK\\スキーマ >**
 
 4. 開始ファイルは、場所と Office 365 Outlook の連絡先のアダプターの送信ポートを受信します。
-5. コピー **Office365Contact.xml**受信フォルダーにサンプル メッセージ (C:\Temp\In\)します。 送信ポートでは、xml に基づく、Office 365 Outlook アカウントの連絡先を作成します。
+5. コピー **Office365Contact.xml**受信フォルダーにサンプル メッセージ (c:\\Temp\\で\\)。 送信ポートでは、xml に基づく、Office 365 Outlook アカウントの連絡先を作成します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 すべてを参照してください、 [Office 365 アダプター](office365-adapters.md)、インストールまたは[機能パック 3](https://aka.ms/bts2016fp3)します。

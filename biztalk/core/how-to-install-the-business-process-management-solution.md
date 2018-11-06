@@ -16,12 +16,12 @@ caps.latest.revision: 61
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e341392e65509568e995f711abcdddd6eb39cbb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ffb067c206018996bc48641bcd8211921b0294dd
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007623"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752523"
 ---
 # <a name="how-to-install-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションのインストール方法
 次の手順では、ビジネス プロセス管理 (BPM) ソリューションをコンピューターにインストールするための準備方法と、このコンピューターにソリューションをインストールする方法について説明します。  
@@ -235,7 +235,7 @@ ms.locfileid: "37007623"
        > [!NOTE]
        >  32 ビット コマンド プロンプトでは、%CommonProgramFiles% 変数が "%ProgramFiles(x86)%\Common Files" に変わります。 SSO 管理ユーティリティは 64 ビット コンピューターでも %ProgramFiles% にインストールされるので、パスを修正する必要があります。 DeployBPM.cmd は、CreateSouthridgeVideoApplication.cmd を呼び出します。  
   
-   4.  32 ビット コマンド プロンプトで、入力型`DeployBPM.cmd`、し、ENTER キーを押します。  
+   4.  32 ビットのコマンド プロンプトで「 `DeployBPM.cmd`、し、ENTER キーを押します。  
   
        > [!NOTE]
        >  DeployBPM.cmd は、32 ビット コマンド プロンプトで実行する必要があります。cscript.exe の x86 バージョンを必要とする x86 オブジェクトにアクセスする VB スクリプトが含まれているためです。  

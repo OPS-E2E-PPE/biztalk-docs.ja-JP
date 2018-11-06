@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40466e418c9d6f61d3043b057ca3a06395df7ed5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1349bf374f90739cac9253784b87f65ed897ff33
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015731"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753042"
 ---
 # <a name="known-issues-with-edi-and-as2-status-reporting"></a>EDI および AS2 状態レポートに関する既知の問題
 このトピックでは、EDI 状態レポートでは、BizTalk Server に関する既知の問題について説明します。  
@@ -104,7 +104,11 @@ ms.locfileid: "37015731"
   たとえば、受信メッセージの ISA09 の値が 991113 である場合、状態レポートでは日付は 11/13/1999 として表示されます。  
   
 ## <a name="error-message-may-be-displayed-as-a-string-of-question-marks"></a>エラー メッセージは疑問符の文字列として表示される場合があります。  
- BizTalk Server のローカライズされたビルドでは、エラー メッセージが疑問符の文字列として表示される場合は、予想されるエラー メッセージを受け取るためのオペレーティング システム言語に従ってシステム ロケールを変更する必要があります。 システム ロケールを変更する方法の詳細については、次を参照してください。[システム ロケールを変更する](http://windows.microsoft.com/en-IN/windows-vista/Change-the-system-locale)します。  
+ BizTalk Server のローカライズされたビルドでは、エラー メッセージが疑問符の文字列として表示される場合は、予想されるエラー メッセージを受け取るためのオペレーティング システム言語に従ってシステム ロケールを変更する必要があります。 オペレーティング システム (OS) に応じて、具体的な手順が異なりますが、次の手順は、OS のような可能性があります。 
+ 
+ 1. 移動して**コントロール パネル** > **時計および地域** > **リージョン**します。
+ 2. 選択、**管理 タブ** > **の Unicode 以外のプログラムの言語** > **システム ロケール変更**します。
+ 3. 言語を選択 > **OK** > **OK**変更を保存します。
   
 ## <a name="see-also"></a>参照  
  [EDI および AS2 ソリューションのトラブルシューティング](../core/troubleshooting-edi-and-as2-solutions.md)   

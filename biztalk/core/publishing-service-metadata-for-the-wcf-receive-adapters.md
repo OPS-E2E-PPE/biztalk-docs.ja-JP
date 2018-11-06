@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 809d3ab348981ada35bf93ea46d78808bf280c6c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5817ac423056c030b452561db624a663791cd133
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014395"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752994"
 ---
 # <a name="publishing-service-metadata-for-the-wcf-receive-adapters"></a>WCF 受信アダプタへのサービス メタデータの公開
 BizTalk WCF サービス公開ウィザードでは、既存の WCF 受信場所のサービス メタデータを公開するための WCF サービスを作成できます。 公開されたメタデータ ドキュメントからクライアント サービス モデル コードを生成するには、Windows ソフトウェア開発キット (SDK) および .NET Framework ランタイム コンポーネントに含まれる Service Model メタデータ ユーティリティ ツール (SvcUtil.exe) を使用することができます。  
@@ -27,7 +27,7 @@ BizTalk WCF サービス公開ウィザードでは、既存の WCF 受信場所
 
 ## <a name="iis-versions"></a>IIS のバージョン
 
- サービス メタデータを公開する WCF サービスが実行されていることができますが、IIS のバージョンのオペレーティング システムに含まれます。
+ オペレーティング システムに含まれている IIS のバージョンでは、サービス メタデータを公開する WCF サービスを実行できます。
 
 -   **IIS**高度なプロセス モデルを提供します。 公開済み BizTalk WCF サービスは、ASP.NET 互換モードで実行する必要があります。 WCF 受信アダプタの IIS で Web アプリケーションによって公開されるサービス メタデータは、HTTP トランスポート経由でアクセスできます。  
 
@@ -47,7 +47,7 @@ BizTalk WCF サービス公開ウィザードでは、既存の WCF 受信場所
 |       BindingInfo.xml        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \App_Data\Temp                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                         受信場所を構成するために開発用コマンド ライン ツールまたはウィザードによってインポートされる BizTalk バインド ファイル。 公開済み WCF サービスは、実行時にこのファイルと Temp フォルダを使用しません。                         |
 |  WcfServiceDescription.xml   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \App_Data\Temp                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                      BizTalk WCF サービス公開ウィザードで、この Web アプリケーションを作成する際に使用した設定を要約した XML ファイル。 公開済み WCF サービスは、実行時にこのファイルと Temp フォルダを使用しません。                      |
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 -   [BizTalk WCF サービス公開ウィザードを使用してコンテンツ ベース ルーティングの WCF 受信場所にサービス メタデータを公開する](../core/publish-service-metadata-for-a-wcf-receive-location-for-content-based-routing.md)  
 

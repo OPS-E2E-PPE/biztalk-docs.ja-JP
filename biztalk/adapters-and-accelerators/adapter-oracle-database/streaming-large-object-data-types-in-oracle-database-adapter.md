@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af0e81c5e2430dad50090637069713680c900d13
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9caf8a7e8dafebbe3d53b751db34c8abc8d4bd62
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994115"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752898"
 ---
 # <a name="streaming-large-object-data-types-in-oracle-database-adapter"></a>Oracle データベース アダプターのラージ オブジェクト データ型のストリーミング
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle ラージ オブジェクト (LOB) データ型のストリーミングをサポートしています。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]操作が呼び出され、SOAP メッセージを交換することで応答が返されます。 SOAP メッセージの本文は、XML ノードで構成されます。  
@@ -93,9 +93,9 @@ ms.locfileid: "36994115"
 ## <a name="streaming-support-in-the-wcf-channel-model"></a>WCF チャネル モデルでのストリーミング サポート  
  次の表では、WCF チャネル モデルのストリーミングをサポートする方法の詳細について説明します。  
   
-|演算|ノードのストリーミング|ノード値のストリーミング|説明|  
+|操作|ノードのストリーミング|ノード値のストリーミング|説明|  
 |---------------|--------------------|---------------------------|-----------------|  
-|テーブルの挿入操作|サポート*|アダプターと Oracle データベースの間はサポートされていません。 クライアントと入りの間でサポートされます。|LOB の列の値によって ODP.NET、バッファーに格納され、挿入を実行し、ために、エンド ツー エンド ノードと値のストリーミングがサポートされていません。 ただし、ノードと値のクライアントとアダプター間のストリーミングは、クライアントがメッセージを作成する場合、LOB 列の可能な**BodyWriter**します。|  
+|テーブルの挿入操作|サポートされています\*|アダプターと Oracle データベースの間はサポートされていません。 クライアントとアダプター間でサポートされます。\*|LOB の列の値によって ODP.NET、バッファーに格納され、挿入を実行し、ために、エンド ツー エンド ノードと値のストリーミングがサポートされていません。 ただし、ノードと値のクライアントとアダプター間のストリーミングは、クライアントがメッセージを作成する場合、LOB 列の可能な**BodyWriter**します。|  
 |テーブルの選択の操作|Supported|Supported|アダプターを使用して、 **BodyWriter**応答メッセージを作成します。 クライアントがメッセージを使用して、使用する場合、 **XmlDictionaryWriter**ノードと値の LOB 列のストリーミングに発生します。|  
 |テーブル更新操作|Supported|アダプターと Oracle データベースの間はサポートされていません。 クライアントとアダプター間でサポートされます。|LOB の列の値によって ODP.NET、バッファーに格納され、更新プログラムを実行し、ために、エンド ツー エンド ノードと値のストリーミングがサポートされていません。 ただし、ノード値が、クライアントとアダプター間のストリーミングが LOB 列のクライアントがメッセージを作成する場合、 **BodyWriter**します。|  
 |テーブルの削除操作|Supported|アダプターと Oracle データベースの間はサポートされていません。 クライアントとアダプター間でサポートされます。|ODP.NET で LOB 列の値がバッファーに格納され、delete を実行し、ために、エンド ツー エンド ノードと値のストリーミングがサポートされていません。 ただし、ノード値が、クライアントとアダプター間のストリーミングが LOB 列のクライアントがメッセージを作成する場合、 **BodyWriter**します。|  
@@ -115,9 +115,9 @@ ms.locfileid: "36994115"
 ## <a name="streaming-support-in-biztalk-server"></a>BizTalk Server でのストリーミング サポート  
  次の表では、BizTalk Server でのストリーミングのサポートについての詳細について説明します。 (すべての参照に「アダプター」を参照して、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]; このテーブルの完全な名前で、Wcf-custom アダプターが常に参照する)。  
   
-|演算|ノードのストリーミング|ノード値のストリーミング|説明|  
+|操作|ノードのストリーミング|ノード値のストリーミング|説明|  
 |---------------|--------------------|---------------------------|-----------------|  
-|テーブルの挿入操作|サポート*|アダプターと Oracle データベースの間はサポートされていませんただし、BizTalk Server とアダプター間のデータがストリーミングされます。|ODP.NET で LOB 列の値がバッファーに格納され、挿入を実行し、ために、エンド ツー エンド ノードと値のストリーミングがサポートされていません。 ノード値が BizTalk Server とアダプター間のストリーミングが LOB データ型のサポートされている Wcf-custom アダプターがメッセージを作成するため、ただし、 **BodyWriter**します。|  
+|テーブルの挿入操作|サポートされています\*|アダプターと Oracle データベースの間はサポートされていませんただし、BizTalk Server とアダプター間のデータがストリーミングされます。|ODP.NET で LOB 列の値がバッファーに格納され、挿入を実行し、ために、エンド ツー エンド ノードと値のストリーミングがサポートされていません。 ノード値が BizTalk Server とアダプター間のストリーミングが LOB データ型のサポートされている Wcf-custom アダプターがメッセージを作成するため、ただし、 **BodyWriter**します。|  
 |テーブルの選択の操作|Supported|Supported|Wcf-custom アダプターを使用して、 **XmlDictionaryWriter**エンド ツー エンド ノードと値の LOB 型のストリーミングがサポートされているため、応答メッセージを使用します。|  
 |テーブル更新操作|Supported|アダプターと Oracle データベースの間はサポートされていませんただし、BizTalk Server とアダプター間のデータがストリーミングされます。|ODP.NET で LOB 列の値がバッファーに格納され、更新プログラムを実行し、ために、エンド ツー エンド ノードと値のストリーミングがサポートされていません。 ノード値が BizTalk Server とアダプター間のストリーミングが LOB データ型のサポートされている Wcf-custom アダプターがメッセージを作成するため、ただし、 **BodyWriter**します。|  
 |テーブルの削除操作|Supported|アダプターと Oracle データベースの間はサポートされていませんただし、BizTalk Server とアダプター間のデータがストリーミングされます。|ODP.NET で LOB 列の値がバッファーに格納され、delete を実行し、ために、エンド ツー エンド ノードと値のストリーミングがサポートされていません。 ノード値が BizTalk Server とアダプター間のストリーミングが LOB データ型のサポートされている Wcf-custom アダプターがメッセージを作成するため、ただし、 **BodyWriter**します。|  

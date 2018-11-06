@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9ed0f50d6a6d841169b16f3f3ffd485ee345aeb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: af5902812edb528504b2eeac402aad77f647582a
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990595"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752874"
 ---
 # <a name="use-binding-files-to-import-or-export"></a>バインド ファイルを使用して、インポートまたはエクスポートするには
 
@@ -42,7 +42,7 @@ ms.locfileid: "36990595"
 
 ## <a name="prerequisites"></a>前提条件
 
-* メンバーであるアカウントでログオンする必要があります、* * BizTalk Server 管理者 * * グループ。 参照してください[を展開して、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
+* メンバーであるアカウントでログオンする必要があります、 **BizTalk Server 管理者**グループ。 参照してください[を展開して、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
 
 * 参照を追加する必要があります、 **BizTalk EDI アプリケーション**を BizTalk アプリケーションを EDI アプリケーションとして使用されるからです。 参照してください[構成後の手順](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)します。
 
