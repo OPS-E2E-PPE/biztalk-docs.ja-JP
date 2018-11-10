@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37006147"
 ---
 # <a name="xml-and-flat-file-property-schema-and-properties"></a>XML とフラット ファイル プロパティ スキーマおよびプロパティ
-**http://schemas.microsoft.com/BizTalk/2003/xmlnorm-properties**名前空間には、フラット ファイル アセンブラとフラット ファイル逆アセンブラー パイプライン コンポーネントを構成するために使用できるプロパティが含まれています。 次の表に、プロパティを示します。  
+**http://schemas.microsoft.com/BizTalk/2003/xmlnorm-properties** 名前空間には、フラット ファイル アセンブラとフラット ファイル逆アセンブラー パイプライン コンポーネントを構成するために使用できるプロパティが含まれています。 次の表に、プロパティを示します。  
 
 ## <a name="properties-list"></a>[プロパティ]
 
