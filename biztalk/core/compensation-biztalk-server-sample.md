@@ -120,7 +120,7 @@ ms.locfileid: "36973451"
   
    4.  **オーケストレーションおよびポート**] ページで [**次**します。  
   
-   5.  **Web サービスのプロパティ**] ページの [ **web サービスのターゲット名前空間**、型**http://Microsoft.BizTalk.Samples.Compensation/**、順にクリックします**次**します。  
+   5.  **Web サービスのプロパティ**] ページの [ **web サービスのターゲット名前空間**、型 **http://Microsoft.BizTalk.Samples.Compensation/** 、順にクリックします**次**します。  
   
    6.  **Web サービス プロジェクト**] ページの [**場所**、型 **http://localhost/CompensationOrchestrationWebServiceProxy**します。  
   
