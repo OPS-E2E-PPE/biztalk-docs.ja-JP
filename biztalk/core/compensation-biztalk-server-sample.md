@@ -18,12 +18,12 @@ caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56675a59714a6fabc1d54fdb594466c7568cfeba
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e8a2ba919a6d4ee5b84da8a9911604aff95a02e4
+ms.sourcegitcommit: c3070a7a3f332857357f056dc632829b43869c17
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973451"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51630359"
 ---
 # <a name="compensation-biztalk-server-sample"></a>補正 (BizTalk Server サンプル)
 補正のサンプルを使用する方法を示します、**補正**のオーケストレーションの図形。  
@@ -120,9 +120,9 @@ ms.locfileid: "36973451"
   
    4.  **オーケストレーションおよびポート**] ページで [**次**します。  
   
-   5.  **Web サービスのプロパティ**] ページの [ **web サービスのターゲット名前空間**、型 **http://Microsoft.BizTalk.Samples.Compensation/** 、順にクリックします**次**します。  
+   5.  **Web サービスのプロパティ**] ページの [ **web サービスのターゲット名前空間**、型`http://Microsoft.BizTalk.Samples.Compensation/`、順にクリックします**次**します。  
   
-   6.  **Web サービス プロジェクト**] ページの [**場所**、型 **http://localhost/CompensationOrchestrationWebServiceProxy**します。  
+   6.  **Web サービス プロジェクト**] ページの [**場所**、型`http://localhost/CompensationOrchestrationWebServiceProxy`します。  
   
    7.  選択、 **web サービスへの匿名アクセスを許可する**チェック ボックスをオンします。  
   

@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 908c0eebecaf005e22194584f9a1d1e7fafa4daf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 00f19818dd5df6cafaf51298a0463ea745736ab5
+ms.sourcegitcommit: c3070a7a3f332857357f056dc632829b43869c17
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970235"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51630391"
 ---
 # <a name="how-to-create-a-new-pipeline"></a>新しいパイプラインを作成する方法
 プロジェクトにパイプライン テンプレートを追加して、新しいパイプラインを作成できます。  
   
 > [!WARNING]
->  カスタム パイプライン コンポーネントの実装を含むプロジェクトを、そのパイプライン コンポーネントを使用しているプロジェクトを含むソリューションには追加しないでください。 このような状況でプロジェクトを追加すると、次回のソリューションの再ビルド時に、出力 dll が他のプロセスにより使用されていることを示すエラーが発生します。  
+>  また、そのパイプライン コンポーネントを使用してプロジェクトを含むソリューションにカスタム パイプライン コンポーネントの実装を含むプロジェクトを追加する必要がありますできません。 このような状況でプロジェクトを追加すると、次回のソリューションの再ビルド時に、出力 dll が他のプロセスにより使用されていることを示すエラーが発生します。  
   
 ### <a name="to-create-a-new-pipeline"></a>新しいパイプラインを作成するには  
   

@@ -11,12 +11,12 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: plarsen
 manager: anneta
-ms.openlocfilehash: f6bccce51ad56fa1b8186347d8fddd5f4afbafbb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a1e30b1ab1aacc1c5134d1dd5b44744bd670b308
+ms.sourcegitcommit: c3070a7a3f332857357f056dc632829b43869c17
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988779"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51630335"
 ---
 # <a name="event-hub-adapter-in-biztalk"></a>BizTalk でイベント ハブのアダプター
 
@@ -130,7 +130,7 @@ Azure Event Hubs は現在は拡張性の高いデータ ストリーミング �
 
     |プロパティ|目的|  
     |---|---|  
-    | **Namespace のユーザー定義メッセージのプロパティ** | http://schemas.microsoft.com/BizTalk/EventHubAdapter/EventData/User 既定のスキーマが別のスキーマを入力することができます。 この値は、Event Hubs のメッセージ プロパティにマップする BizTalk メッセージのスキーマを表します。 |
+    | **Namespace のユーザー定義メッセージのプロパティ** | `http://schemas.microsoft.com/BizTalk/EventHubAdapter/EventData/User` 既定のスキーマが別のスキーマを入力することができます。 この値は、Event Hubs のメッセージ プロパティにマップする BizTalk メッセージのスキーマを表します。 |
     | **ユーザー定義プロパティを昇格させる** | 任意。 使用する場合は、これらのプロパティを昇格できます。 <br/><br/>**注**<br/>プロパティを昇格させる必要があるが展開 porperty スキーマを持っている必要があります*する前に*イベントを受信します。|
 
 7. 選択**Ok**変更を保存します。 
