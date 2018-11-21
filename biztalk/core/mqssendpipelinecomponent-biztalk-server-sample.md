@@ -82,9 +82,9 @@ ms.locfileid: "50752344"
   
 #### <a name="to-modify-and-compile-the-project-for-the-pipeline-component"></a>パイプライン コンポーネント用にプロジェクトを変更およびコンパイルするには  
   
-1. ソリューション ファイルをダブルクリックして**\setmqseriesheaderpropertycomponent.sln**でソリューションを開く[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
+1. ソリューション ファイルをダブルクリックして **\setmqseriesheaderpropertycomponent.sln** でソリューションを開く[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
   
-2. クラス ファイルをダブルクリックして**CSetMQSeriesHeaderPropertyComponent.cs**でクラス ファイルを開く[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
+2. クラス ファイルをダブルクリックして **CSetMQSeriesHeaderPropertyComponent.cs** でクラス ファイルを開く[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
   
 3. 変数を見つけて**samplesDir**、場所にこの変数が設定されていることを確認**C:\temp**します。  
   
@@ -104,7 +104,7 @@ ms.locfileid: "50752344"
   
 #### <a name="to-modify-the-project-for-the-biztalk-server-pipeline"></a>BizTalk Server パイプライン用にプロジェクトを変更するには  
   
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション ファイルをダブルクリックしてソリューションを開いて**\setmqseriesheaderpropertypipeline.sln**します。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション ファイルをダブルクリックしてソリューションを開いて **\setmqseriesheaderpropertypipeline.sln** します。  
   
 2. プロジェクトの厳密な名前キー ファイルを作成します。 この操作を行うには、次の手順を実行します。  
   
