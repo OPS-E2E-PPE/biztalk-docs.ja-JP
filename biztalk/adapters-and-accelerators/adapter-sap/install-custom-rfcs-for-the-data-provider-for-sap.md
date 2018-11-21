@@ -32,7 +32,7 @@ MySAP Business Suite の SAP システムにアクセスする .NET Framework �
   
 - EXECQUERY 操作を実行、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] Z_EXECUTE_SAP_QUERY RFC が必要です。  
   
-SAP システムでこれらの操作を実行するには、SAP システムでこれらのカスタム Rfc をインストールする必要があります。 インストールした場合、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]と共に、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、セットアップ プログラムにコピーの RFC トランスポート、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]圧縮ファイルとして (customRFC.zip) システムでアダプターをインストールします。 Zip ファイルは通常にインストールされて*\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Microsoft .NET Framework Data Provider for mySAP Business Suite*します。 
+SAP システムでこれらの操作を実行するには、SAP システムでこれらのカスタム Rfc をインストールする必要があります。 インストールした場合、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]と共に、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、セットアップ プログラムにコピーの RFC トランスポート、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]圧縮ファイルとして (customRFC.zip) システムでアダプターをインストールします。 Zip ファイルは通常にインストールされて *\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Microsoft .NET Framework Data Provider for mySAP Business Suite* します。 
   
  Zip ファイルを抽出するには後に、4 つのデータ ファイルが表示されます、名前付け、次の 2 つのパターンを K9\*します。BI1 (たとえば、K900534 に似ています。BI1)、およびその他の 2 つ R9 パターンに従う\*します。BI1 (たとえば、R900534 に似ています。BI1)。  
   

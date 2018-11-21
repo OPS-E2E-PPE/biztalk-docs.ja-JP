@@ -47,7 +47,7 @@ ms.locfileid: "50752874"
 * 参照を追加する必要があります、 **BizTalk EDI アプリケーション**を BizTalk アプリケーションを EDI アプリケーションとして使用されるからです。 参照してください[構成後の手順](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)します。
 
 ## <a name="import-or-export-all-the-trading-partners"></a>インポートまたはエクスポートするすべての取引
-1. 開いている**[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**、BizTalk グループを展開します。
+1. 開いている **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** 、BizTalk グループを展開します。
 2. 右クリック**パーティ**、選び**エクスポート**します。 
 
     エクスポートするとき、**パーティ**-レベル、エクスポートするすべての取引先パートナーです。 ビジネス プロファイル、および XML ファイルに契約を含む取引で使用されるすべてのものもエクスポートされます。 
@@ -64,7 +64,7 @@ ms.locfileid: "50752874"
 
     
 ## <a name="export-individual-partners"></a>個々 のパートナーをエクスポートします。
-1. **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** **パーティ**です。
+1. **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** **パーティ** です。
 2. **パーティとビジネス プロファイル**ウィンドウで、パーティを右クリックし、選択**エクスポート**します。
 
     特定のパーティをエクスポートするときに、すべてのパーティとパーティで使用されるすべての契約をエクスポートするかの選択肢が提供されます。 オフにすることができます**選択したパーティーと、選択したパーティーのすべての契約をエクスポート**のみを選択するパーティをエクスポートします。
@@ -85,7 +85,7 @@ ms.locfileid: "50752874"
 
 アプリケーション レベルでは、EDI および AS2 パーティにバインド ファイルをインポートできます。 
 
-1. **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**、展開**アプリケーション**
+1. **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** 、展開**アプリケーション**
 2. アプリケーションを右クリックして**インポート**します。
 3. **追跡設定をインポート**と**除外パーティ**オプションを使用できます。 これらのオプションを使用して、既存の追跡設定をインポートまたはバインド ファイル内で EDI および AS2 パーティの除外を選択できます。
 

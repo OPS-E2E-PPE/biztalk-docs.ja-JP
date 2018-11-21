@@ -100,7 +100,7 @@ Windows Registry Editor Version 5.00
   
 2. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリックします**Windows エクスプ ローラー**します。  
   
-3. BizTalk Server のインストール ドライブに移動しに移動し、 **<** `drive` **>: \Program Files\Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\SDK\Samples\AdaptersUsage\File アダプター**します。  
+3. BizTalk Server のインストール ドライブに移動しに移動し、 **<**`drive`**>: \Program Files\Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\SDK\Samples\AdaptersUsage\File アダプター**します。  
   
 4. サンプル アダプターをレジストリに追加するには、ダブルクリック**StaticAdapterManagement.reg**します。(動的ファイル アダプターを実行、レジストリに追加する場合**DynamicAdapterManagement.reg**代わりに、それ以外の場合、適切なファイルすべての場所で使用します)。  
   
