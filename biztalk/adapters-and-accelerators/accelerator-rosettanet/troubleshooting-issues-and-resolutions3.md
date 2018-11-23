@@ -305,7 +305,7 @@ ms.locfileid: "50758697"
 ## <a name="the-hubscenario-sample-will-not-be-installed-correctly-if-the-assembly-key-files-are-not-entered-for-the-projects"></a>アセンブリ キー ファイルがプロジェクトに入力されていない場合に HubScenario サンプルが正しくインストールされない  
   
 ### <a name="symptom"></a>現象  
- Setup.bat を実行すると*\<ドライブ\>*: \Program Files\\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\hubscenario を設定するにはHubScenario サンプルでは、操作は失敗します。  
+ Setup.bat を実行すると *\<ドライブ\>*:\Program Files\\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\hubscenario を設定するにはHubScenario サンプルでは、操作は失敗します。  
   
 ### <a name="possible-cause"></a>考えられる原因  
  アセンブリ キー ファイルがプロジェクトに設定されていないので、HubScenario および HubHelper アセンブリが正しく展開されていません。  

@@ -118,7 +118,7 @@ ms.locfileid: "50753210"
   
 ###  <a name="BKMK_Config"></a> BAM ポータルの Web.config ファイルを更新するには  
   
-1.  BizTalk Server を実行するコンピューター上で Web.config ファイルを更新**\<ドライブ\>: BizTalk Server 2010\BAMPortal\BAMManagementService\Web.Config \Program Files\Microsoft**します。Web.config の次のセクションでサーバーとデータベースの名前を更新します。  
+1.  BizTalk Server を実行するコンピューター上で Web.config ファイルを更新 **\<ドライブ\>: BizTalk Server 2010\BAMPortal\BAMManagementService\Web.Config \Program Files\Microsoft** します。Web.config の次のセクションでサーバーとデータベースの名前を更新します。  
   
     ```  
     <appSettings>  
@@ -127,7 +127,7 @@ ms.locfileid: "50753210"
     </appSettings>  
     ```  
   
-2.  BizTalk Server を実行するコンピューター上で Web.config ファイルを更新**\<ドライブ\>: BizTalk Server 2010\BAMPortal\BAMQueryService\Web.Config \Program Files\Microsoft**します。Web.config の次のセクションでサーバーとデータベースの名前を更新します。  
+2.  BizTalk Server を実行するコンピューター上で Web.config ファイルを更新 **\<ドライブ\>: BizTalk Server 2010\BAMPortal\BAMQueryService\Web.Config \Program Files\Microsoft** します。Web.config の次のセクションでサーバーとデータベースの名前を更新します。  
   
     ```  
     <appSettings>  
