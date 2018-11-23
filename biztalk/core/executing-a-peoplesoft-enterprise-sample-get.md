@@ -289,7 +289,7 @@ PeopleSoft システムは、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/b
   
      `C:\LABS\PS_TEST\SAMPLEQUERY.XML`  
   
-3.  **[OK]** をクリックします。 [プロパティ] ウィンドウで次のように選択します。 **\<スキーマ\>** 設定と**ルート参照: 取得**します。  
+3.  **[OK]** をクリックします。 [プロパティ] ウィンドウで次のように選択します。 **\<スキーマ\>** 設定と **ルート参照: 取得** します。  
   
 4.  **LOCATIONService_LOCATION_x5d.xsd** を右クリックし、 **[インスタンスの生成]** をクリックします。 **SampleQuery.xml** ファイルが生成されます。 このファイルは、オーケストレーション プロセスを開始するアダプターに対する入力として、受信場所にドロップされます。  
   
@@ -299,7 +299,7 @@ PeopleSoft システムは、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/b
   
 1. 入力ファイルの受信と送出ファイルの送信のフォルダーを構成します。 移動して**C:\LABS\PS_TEST**という 2 つの新しいサブフォルダーを作成および`FileIn`と`FileOut`します。  
   
-2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[**コンソール ルート**、展開**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**、展開**BizTalk グループ**、展開**アプリケーション**、右クリックして **[ps_test]** ] をクリックし、**構成**します。  
+2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[**コンソール ルート**、展開**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**、展開 **BizTalk グループ** 、展開 **アプリケーション** 、右クリックして **[ps_test]** ] をクリックし、**構成**します。  
   
     ![](../core/media/e45f4c8b-fc8a-492a-9824-5232eb728d95.gif "e45f4c8b-fc8a-492a-9824-5232eb728d95")  
   
@@ -327,7 +327,7 @@ PeopleSoft システムは、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/b
   
     ![](../core/media/513eebb0-58ca-4aaa-a33b-31700f9cf7a8.gif "513eebb0-58ca-4aaa-a33b-31700f9cf7a8")  
   
-8. クリックして**\<None\>** の**PeopleSoft_Port**ドロップダウン リストでします。  
+8. クリックして **\<None\>** の **PeopleSoft_Port** ドロップダウン リストでします。  
   
 9. **[新しい送信ポート]** を選択し、プロパティに次の値を選択または入力します。  
   
@@ -357,7 +357,7 @@ PeopleSoft システムは、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/b
   
 11. **[OK]** を 2 回クリックしてダイアログ ボックスを閉じます。  
   
-12. 構成 Applicationwindow で、クリックして**\<None\>** の**FileOut**ドロップダウン リストでします。  
+12. 構成 Applicationwindow で、クリックして **\<None\>** の **FileOut**ドロップダウン リストでします。  
   
 13. **[新しい送信ポート]** を選択し、プロパティの値を次のとおりに入力または選択します。  
   
@@ -398,7 +398,7 @@ PeopleSoft システムは、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/b
   
      ![](../core/media/1320ea3c-b2bc-4717-b200-c3c550079ccb.gif "1320ea3c-b2bc-4717-b200-c3c550079ccb")  
   
-     この返されたレコード データは、PeopleSoft ラボ 1 での PeopleSoft システムに対するクエリで返された内容と一致する必要があります。 値を比較することで取得したラボ 1 で具体的には、 **Address1**と**住所 2**に、ここで表示される内容を行、 **\<場所: ADDRESS1\>** と**\<場所: 住所 2\>** フィールド、ことを確認することができます、**取得**メソッドが正常に動作します。  
+     この返されたレコード データは、PeopleSoft ラボ 1 での PeopleSoft システムに対するクエリで返された内容と一致する必要があります。 値を比較することで取得したラボ 1 で具体的には、 **Address1**と**住所 2**に、ここで表示される内容を行、 **\<場所: ADDRESS1\>** と **\<場所: 住所 2\>** フィールド、ことを確認することができます、 **取得** メソッドが正常に動作します。  
   
 ## <a name="summary"></a>まとめ  
  このラボでは、PeopleSoft システムにアクセスするための前提条件が適切にセットアップされていることを最初に確認しました。 次に、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して、オーケストレーションが含まれる新しい BizTalk プロジェクトを作成しました。 また、BizTalk オーケストレーションを構成し、PeopleSoft アダプターを使用して PeopleSoft システムのデータを取得しました。 オーケストレーションを構成するために、送信ポート、受信ポート、および送信/受信ポートを作成しました。 これらのポートを PeopleSoft アダプターにバインドし、メッセージを適切なポートに割り当てました。  
