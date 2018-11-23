@@ -30,7 +30,7 @@ BizTalk WCF サービス公開ウィザードを使用して WCF サービスを
 
 ### <a name="to-publish-service-metadata-for-an-existing-wcf-receive-location-for-content-based-routing"></a>コンテンツベース ルーティングの既存 WCF 受信場所にサービス メタデータを公開するには  
 
-1. クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]**、順にクリックします**BizTalk WCF サービス公開ウィザード**します。  
+1. クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]** 、順にクリックします**BizTalk WCF サービス公開ウィザード**します。  
 
    > [!NOTE]
    >  作成し、BizTalk オーケストレーションとスキーマを WCF サービス メタデータを公開、BizTalk WCF サービス公開ウィザードを使用します。 一方、SOAP アダプターを使用してオーケストレーションとスキーマを Web サービスとして公開するには、BizTalk Web サービス公開ウィザードを使用します。  
