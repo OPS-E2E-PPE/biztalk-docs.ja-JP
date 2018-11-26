@@ -299,7 +299,7 @@ PeopleSoft システムは、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/b
   
 1. 入力ファイルの受信と送出ファイルの送信のフォルダーを構成します。 移動して**C:\LABS\PS_TEST**という 2 つの新しいサブフォルダーを作成および`FileIn`と`FileOut`します。  
   
-2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[**コンソール ルート**、展開**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**、展開 **BizTalk グループ** 、展開 **アプリケーション** 、右クリックして **[ps_test]** ] をクリックし、**構成**します。  
+2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **コンソール ルート** 、展開 **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理** 、展開 **BizTalk グループ** 、展開 **アプリケーション** 、右クリックして **[ps_test]** ] をクリックし、 **構成** します。  
   
     ![](../core/media/e45f4c8b-fc8a-492a-9824-5232eb728d95.gif "e45f4c8b-fc8a-492a-9824-5232eb728d95")  
   
