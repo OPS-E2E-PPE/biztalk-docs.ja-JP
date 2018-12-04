@@ -47,7 +47,7 @@ ms.locfileid: "36989267"
   
 1. 開始**Visual Studio 2012 のコマンド プロンプト**します。  
   
-2. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]コマンド プロンプトで、ディレクトリの変更、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\Interrogative のアクセラレータチュートリアル フォルダーです。  
+2. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]コマンド プロンプトで、ディレクトリの変更、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\Interrogative のアクセラレータ チュートリアル フォルダーです。  
   
 3. コマンド プロンプトで「 **sn – k key.snk**、押します **」と入力**します。 成功メッセージが出力ウィンドウに表示されることを確認します。  
   
