@@ -12,17 +12,17 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 99cb9f7f91ecd768e36fea5de1296f375d87f973
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6e4659b7ff551127bb085d01125eb0e9e5ff7489
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990275"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826442"
 ---
 # <a name="how-to-configure-a-wcf-netmsmq-receive-location"></a>WCF-NetMsmq 受信場所を構成する方法
 WCF-NetMsmq 受信場所は、プログラムから、または BizTalk 管理コンソールを使用して構成できます。  
 
-## <a name="configuratin-properties"></a>構成プロパティ
+## <a name="configuration-properties"></a>構成プロパティ
 
  BizTalk エクスプローラー オブジェクト モデルにより、プログラムから受信場所を作成および構成することができます。 BizTalk エクスプ ローラー オブジェクト モデルを公開、**という**受信場所の構成インターフェイスを持つ、 **TransportTypeData**読み取り/書き込みプロパティ。 このプロパティでは、名前と値の組の XML 文字列の形式で WCF-NetMsmq 受信場所の構成プロパティ バッグを指定できます。 BizTalk エクスプ ローラー オブジェクト モデルでこのプロパティを設定するに設定する必要があります、 **InboundTransportLocation**のプロパティ、**という**インターフェイス。  
 
@@ -33,7 +33,7 @@ WCF-NetMsmq 受信場所は、プログラムから、または BizTalk 管理�
 
 |           プロパティ名            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            型                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                説明                                                                                                                                                                                                                                                                                                                                                |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|            **Identity**            |                                                                                                                                                                                                                                                                                                                                                                                               XML Blob<br /><br /> 例:<br /><br /> &lt;identity&gt;<br /><br /> &lt;userPrincipalName value="username@contoso.com" /&gt;<br /><br /> &lt;/identity&gt;                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                         この受信場所が提供するサービスの ID を指定します。 指定できる値、 **Identity**プロパティは、セキュリティの構成によって異なります。 これらの設定により、クライアントはこの受信場所を認証できます。 クライアントとサービスの間のハンドシェイク プロセスでは、Windows Communication Foundation (WCF) インフラストラクチャによって、この要素の値と予期されるサービスの ID が照合されます。<br /><br /> 既定値は空の文字列です。                                                                                          |
+|            **[ID]**            |                                                                                                                                                                                                                                                                                                                                                                                               XML Blob<br /><br /> 例:<br /><br /> &lt;identity&gt;<br /><br /> &lt;userPrincipalName value="username@contoso.com" /&gt;<br /><br /> &lt;/identity&gt;                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                         この受信場所が提供するサービスの ID を指定します。 指定できる値、 **Identity**プロパティは、セキュリティの構成によって異なります。 これらの設定により、クライアントはこの受信場所を認証できます。 クライアントとサービスの間のハンドシェイク プロセスでは、Windows Communication Foundation (WCF) インフラストラクチャによって、この要素の値と予期されるサービスの ID が照合されます。<br /><br /> 既定値は空の文字列です。                                                                                          |
 |          **OpenTimeout**           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                    **System.TimeSpan**                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                           チャネルを開く操作が完了するまでの間隔を示す期間値を指定します。<br /><br /> 既定値:00:01:00                                                                                                                                                                                                                                                                            |
 |          **SendTimeout**           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                    **System.TimeSpan**                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                               送信操作が完了するまでの間隔を示す期間値を指定します。<br /><br /> 既定値:00:01:00                                                                                                                                                                                                                                                                                |
 |          **CloseTimeout**          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                    **System.TimeSpan**                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                           チャネルを閉じる操作が完了するまでの間隔を示す期間値を指定します。<br /><br /> 既定値:00:01:00                                                                                                                                                                                                                                                                           |
@@ -61,7 +61,7 @@ WCF-NetMsmq 受信場所は、プログラムから、または BizTalk 管理�
  WCF-NetMsmq 受信場所のアダプター変数は、BizTalk 管理コンソールで設定できます。 プロパティが受信場所に設定されていない場合は、BizTalk 管理コンソールで設定された既定の受信ハンドラーの値が使用されます。  
 
 > [!NOTE]
->  次の手順を実行する前に、受信ポートを追加する必要があります。 詳細については、次を参照してください。[受信ポートを作成する方法](../core/how-to-create-a-receive-port.md)します。  
+>  次の手順を実行する前に、受信ポートを追加する必要があります。 詳細については、「 [受信ポートを作成する方法](../core/how-to-create-a-receive-port.md)」を参照してください。  
 
 > [!NOTE]
 >  WCF クライアントと WCF-NetMsmq 受信場所のバインド構成は一致する必要があります。 一致しない場合、WCF-NetMsmq 受信場所で受信メッセージが失われることがあります。  
@@ -88,7 +88,7 @@ WCF-NetMsmq 受信場所は、プログラムから、または BizTalk 管理�
 
  次の形式を使用してプロパティを設定できます。  
 
-```  
+```xml
 <CustomProps>  
   <ServiceCertificate vt="8" />  
   <InboundBodyLocation vt="8">UseBodyElement</InboundBodyLocation>  
@@ -117,7 +117,7 @@ WCF-NetMsmq 受信場所は、プログラムから、または BizTalk 管理�
 
  次のコードは、WCF-NetMsmq 受信場所の作成方法を示しています。  
 
-```  
+```csharp
 // Use BizTalk Explorer object model to create new WCF-NetMsmq receive location   
 string server = System.Environment.MachineName;  
 string database = "BizTalkMgmtDb";  
@@ -144,8 +144,8 @@ explorer.SaveChanges();
 IReceivePort receivePort = application.AddNewReceivePort(false);  
 receivePort.Name = "SampleReceivePort";  
 // Add a new one-way receive location  
-IReceiveLocation recieveLocation = receivePort.AddNewReceiveLocation();  
-recieveLocation.Name = "SampleReceiveLocation";  
+IReceiveLocation receiveLocation = receivePort.AddNewReceiveLocation();  
+receiveLocation.Name = "SampleReceiveLocation";  
 // Find a receive handler for WCF-NetMsmq   
 int i = 0;  
 for(i=0; i < explorer.ReceiveHandlers.Count; ++i)   
@@ -153,11 +153,11 @@ for(i=0; i < explorer.ReceiveHandlers.Count; ++i)
     if("WCF-NetMsmq" == explorer.ReceiveHandlers[i].TransportType.Name)  
         break;  
 }  
-recieveLocation.ReceiveHandler = explorer.ReceiveHandlers[i];  
-recieveLocation.Address = "net.msmq://mycomputer/private/sampleQueue";  
-recieveLocation.ReceivePipeline = explorer.Pipelines["Microsoft.BizTalk.DefaultPipelines.PassThruReceive"];  
-recieveLocation.TransportType = explorer.ProtocolTypes["WCF-NetMsmq"];  
-recieveLocation.TransportTypeData = transportConfigData;  
+receiveLocation.ReceiveHandler = explorer.ReceiveHandlers[i];  
+receiveLocation.Address = "net.msmq://mycomputer/private/sampleQueue";  
+receiveLocation.ReceivePipeline = explorer.Pipelines["Microsoft.BizTalk.DefaultPipelines.PassThruReceive"];  
+receiveLocation.TransportType = explorer.ProtocolTypes["WCF-NetMsmq"];  
+receiveLocation.TransportTypeData = transportConfigData;  
 // Save  
 explorer.SaveChanges();   
 ```  

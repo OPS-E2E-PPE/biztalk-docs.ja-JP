@@ -12,16 +12,16 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61e8fbbe2644098baf963d258d3e95b94e20e8b8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bb516347d94818f7d689cddd548a22ac1c454275
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012091"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826394"
 ---
 # <a name="receive-oracle-database-change-notifications-incrementally-using-biztalk-server"></a>段階的に BizTalk Server を使用して Oracle データベース変更通知を受け取る
 > [!IMPORTANT]
->  説明を簡潔にするため、このトピックには、段階的に通知を受信する方法のみについて説明します。 ビジネスのシナリオで、オーケストレーションは理想的には受信した通知メッセージの種類を抽出し、後続の操作を実行するためのロジックを含める必要があります。 つまり、このトピックで説明されているオーケストレーションで説明されているオーケストレーションの上に構築する必要があります[プロセス通知メッセージが BizTalk Sever を使用して Oracle データベースで特定のタスクを完了する](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md)します。  
+>  説明を簡潔にするため、このトピックには、段階的に通知を受信する方法のみについて説明します。 ビジネスのシナリオで、オーケストレーションは理想的には受信した通知メッセージの種類を抽出し、後続の操作を実行するためのロジックを含める必要があります。 つまり、このトピックで説明されているオーケストレーションで説明されているオーケストレーションの上に構築する必要があります[プロセス通知メッセージが BizTalk Server を使用して Oracle データベースで特定のタスクを完了する](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md)します。  
   
  このトピックでは、構成する方法を示します、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle から差分クエリ通知メッセージを受信します。 インクリメンタル通知を示すには、テーブル、ACCOUNTACTIVITY、「処理済み」列を含むについて考えます。 「処理済み」列の値設定してこのテーブルに新しいレコードが挿入されると、' n ' です。 次の手順に従ってインクリメンタル通知を受信するアダプターを構成できます。  
   
@@ -66,7 +66,7 @@ ms.locfileid: "37012091"
       ```  
   
       > [!NOTE]
-      >  スキーマ名とテーブル名を指定する必要があります。 たとえば、 `SCOTT.ACCOUNTACTIVITY`のようにします。  
+      >  スキーマ名とテーブル名を指定する必要があります。 たとえば、 `SCOTT.ACCOUNTACTIVITY` のようにします。  
   
   -   通知が送信されて既に行を更新する送信ポートです。 通知を受信したレコードの 'y' の「処理済み」列の値を設定するには、このポートに PROCESS_RECORDS ストアド プロシージャが実行されます。  
   
@@ -267,7 +267,7 @@ Procedure(WCF.Action) = "http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Pac
     |----------------------|-----------|  
     |**InboundOperationType**|これを設定**通知**します。|  
     |**NotificationPort**|Oracle データベースからのデータベース変更通知をリッスンする ODP.NET を開く必要があるポート番号を指定します。 これは、Windows ファイアウォールの例外リストに追加する必要があります、同じポート番号に設定します。 Windows ファイアウォールの例外リストにポートを追加する方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)します。<br /><br /> **重要:** これを既定値は-1 に設定すると、通知メッセージを受信する Windows ファイアウォールを完全に無効にする必要があります。|  
-    |**NotificationStatement**|これを設定します。<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> **注:** スキーマ名とテーブル名を指定する必要があります。 たとえば、 `SCOTT.ACCOUNTACTIVITY`のようにします。|  
+    |**NotificationStatement**|これを設定します。<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> **注:** スキーマ名とテーブル名を指定する必要があります。 たとえば、 `SCOTT.ACCOUNTACTIVITY` のようにします。|  
     |**NotifyOnListenerStart**|これを設定**True**します。|  
   
      異なるバインディング プロパティの詳細については、次を参照してください。 [BizTalk Adapter for Oracle Database バインド プロパティの操作](https://msdn.microsoft.com/library/dd788467.aspx)します。  

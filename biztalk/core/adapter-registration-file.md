@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9798d56c4f3896e652a288d20b4e39e6a2537d3c
-ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
+ms.openlocfilehash: 7212cb1cbd370e0b7df04a11744d176c126c39ac
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50752962"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826474"
 ---
 # <a name="adapter-registration-file"></a>アダプターの登録ファイル
 カスタム アダプター コードを正常にビルドしたら、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に登録する必要があります。 これを行うには、レジストリを適切なアダプターの設定で更新します。 レジストリ ファイルは手動で記述できますが、正確かつ複雑な情報を入力する必要があるため、手動での記述はエラーを招く原因となります。 推奨される方法は、アダプターのレジストリ ウィザードを実行することです。 アダプターのレジストリ ウィザードには、最初からレジストリ ファイルを作成するのとまったく同じオプションが用意されており、ファイルでエラーが発生する可能性を減らすことができます。 アダプター レジストリ ウィザードの詳細については、次を参照してください。[アダプター レジストリ ウィザード](../core/adapter-registry-wizard.md)します。  
@@ -45,7 +45,7 @@ ms.locfileid: "50752962"
   
  受信元アダプター、送信元アダプター、およびアダプター管理を実装する .NET 型を指定するには、次の 2 つの方法があります。  
   
-1. フォルダーに、アダプターをインストールし、指定 * TypeName と\*AssemblyPath 場所\*TypeName は型です。クラスの FullName と\*AssemblyPath はアセンブリのパスとファイル名。  
+1. フォルダーに、アダプターをインストールし、指定\*TypeName と\*AssemblyPath 場所\*TypeName は型です。クラスの FullName と\*AssemblyPath はアセンブリのパスとファイル名。  
   
 2. グローバル アセンブリ キャッシュにアダプターをインストールし、だけを指定 * TypeName を\*TypeName は型です。クラスの AssemblyQualifiedName します。 これが推奨されるオプションです。  
   

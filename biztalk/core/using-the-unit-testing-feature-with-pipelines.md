@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e437df707ace58eef6de9dc9f7eb65d888309a9
-ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
+ms.openlocfilehash: 7deaaa8d0ca60f13e5f3b835a91a31e06cdf2cbd
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50752642"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826327"
 ---
 # <a name="using-the-unit-testing-feature-with-pipelines"></a>パイプラインを含む単体テスト機能の使用
 このトピックでは、単体テスト機能を使用して、FlatFileReceive パイプラインの例に、パイプラインの単体テストを追加する方法について説明します。 パイプラインの単体テストはここに記載されている Pipeline.exe ツールに似ています。[パイプライン ツール](../core/pipeline-tools.md)します。 単体テストを有効にすると、**展開**プロジェクトのプロパティをプロジェクト内のパイプライン クラスのタブがから派生した**Microsoft.BizTalk.TestTools.Pipeline.TestableReceivePipeline**します。  このクラスは、Pipeline.exe ツールが公開する機能と同じ機能の一部をモデル化します。  
@@ -61,7 +61,7 @@ ms.locfileid: "50752642"
   
 2.  ソリューション エクスプローラーで、FFReceivePipelineTest.cs を開き、次のディレクティブをそのファイルの先頭に追加します。  
   
-    ```  
+    ```csharp
     using System.IO;  
     using System.Collections.Specialized;  
     using System.Collections.Generic;  
@@ -69,7 +69,7 @@ ms.locfileid: "50752642"
   
 3.  ファイルの一番下までスクロールし、置換、 **FFReceivePipelineConstructorTest**メソッドを次のコードは、パイプラインをテストする前に、パイプラインの入力が存在することを確認します。 また、このコードは、フラット ファイル スキーマに準拠したメッセージが生成されることも検証します。  
   
-    ```  
+    ```csharp
     [TestMethod()]  
     public void FFReceivePipelineUnitTest()  
     {  
@@ -124,8 +124,8 @@ ms.locfileid: "50752642"
   
      処理されたメッセージは次のようになります。  
   
-    ```  
-    <purchaseOrder orderDate="1999-10-20" xmlns="http://FlatFileRecieve.PO">  
+    ```xml
+    <purchaseOrder orderDate="1999-10-20" xmlns="http://FlatFileReceive.PO">  
   
       <shipTo country="US" xmlns="">  
         <name>Alice Smith</name>  
@@ -151,14 +151,14 @@ ms.locfileid: "50752642"
           <productName>Lawnmower</productName>  
           <quantity>1</quantity>  
           <USPrice>148.95</USPrice>  
-          <comment xmlns="http://FlatFileRecieve.PO">Confirm this is electric</comment>  
+          <comment xmlns="http://FlatFileReceive.PO">Confirm this is electric</comment>  
         </item>  
   
         <item partNum="926-AA">  
           <productName>Baby Monitor</productName>  
           <quantity>1</quantity>  
           <USPrice>39.98</USPrice>  
-          <comment xmlns="http://FlatFileRecieve.PO">Confirm this is electric</comment>  
+          <comment xmlns="http://FlatFileReceive.PO">Confirm this is electric</comment>  
           <shipDate>1999-05-21</shipDate>  
         </item>  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d8b74c2ead4ece353dae155d272a9a1aee5fb676
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 39f765e1e99363440d6c122f5e5f174ea50dd761
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006211"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826346"
 ---
 # <a name="walkthrough-custom-message-processing-with-the-wcf-nettcp-adapter"></a>チュートリアル: カスタム メッセージを Wcf-nettcp アダプターを使用した処理
 このチュートリアルでは、WCF-NetTcp アダプターを使用して、[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] クライアントから BizTalk 受信場所に、バイナリ JPEG イメージ データが埋め込まれた [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] メッセージを送信します。 バイナリ エンコードされた JPEG イメージを取得による (Base64 ノード エンコード) と XPath ステートメントを使用して、抽出された、**受信メッセージの本文**アダプターの構成で設定します。 XPath 処理は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で受信メッセージの処理に使用される既定の方法とは異なります。 既定の方法で、アダプターはのすべての内容を取得します、**本文**の要素、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]メッセージ、および BizTalk メッセージ ボックス データベースに送信します。 XPath メッセージ処理では、受信 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] メッセージの特定の部分が抽出されてカスタム BizTalk メッセージが作成されます。 このサンプルで XPath 処理がという名前の XML 要素を検索**SendPicture**着信[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]メッセージ (これは XML 形式)。 この要素が検出されると、Base64 エンコードされたバイナリ オブジェクトとしての要素の値が抽出され、そのバイナリ値が BizTalk メッセージに配置されます。 このメッセージはメッセージ ボックス データベースに発行された後、送信ポート フィルター サブスクリプションを使用して FILE 送信ポートに出力されます。 このサンプルでオーケストレーションは使用されず、すべての処理は XPath を使用して BizTalk メッセージング経由で行われます。  
@@ -54,7 +54,7 @@ ms.locfileid: "37006211"
 
 1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、右クリックして**アプリケーション**を選択します**インポート**、し、 **MSI ファイル**します。 移動して、 **C:\WCFCustomMessageProcessing\WCFCustomMessageProcessing.msi**ファイルを開き、をクリックし、**オープン**します。 これにより、このアプリケーションに次のアイテムが作成されます。  
 
-   - **FileSP**送信ポート: のローカル ファイル システム上の場所**C:\WCFCustomMessageProcessing\Out**によって JPEG イメージ データの送信先[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]としてサンプルの処理の最終的な出力。 送信ポート フィルターを表示する**BTS します。RecievePortName = NetTcpRP**で構成されている、 **FileSP プロパティ**ダイアログ ボックスで **フィルター**します。 このフィルターは、NetTcp 受信ポートに関連付けられています。 受信ポートに、FileSP 送信 NetTcpRP で受け取ったメッセージの送信ポートの出力場所**C:\WCFCustomMessageProcessing\Out**後、受信場所がメッセージで XPath 処理を実行します。  
+   - **FileSP**送信ポート: のローカル ファイル システム上の場所**C:\WCFCustomMessageProcessing\Out**によって JPEG イメージ データの送信先[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]としてサンプルの処理の最終的な出力。 送信ポート フィルターを表示する**BTS します。ReceivePortName = NetTcpRP**で構成されている、 **FileSP プロパティ**ダイアログ ボックスで **フィルター**します。 このフィルターは、NetTcp 受信ポートに関連付けられています。 受信ポートに、FileSP 送信 NetTcpRP で受け取ったメッセージの送信ポートの出力場所**C:\WCFCustomMessageProcessing\Out**後、受信場所がメッセージで XPath 処理を実行します。  
 
    - **NetTcpRP**受信ポート: を論理的に含むポート、 **NetTcpRL**受信場所。  
 

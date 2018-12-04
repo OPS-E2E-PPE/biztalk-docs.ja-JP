@@ -1,9 +1,9 @@
 ---
 title: BizTalk Server 管理のトラブルシューティング |Microsoft Docs
 ms.custom: ''
-ms.date: 06/08/2017
+ms.date: 11/30/2018
 ms.prod: biztalk-server
-ms.reviewer: ''
+ms.reviewer: niklase
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71ae1b04b42fe1bdaa0145b9112bdd957a4d4da5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 87ecae986df0ee34ee697257a99097a00d525db2
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993931"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826466"
 ---
 # <a name="troubleshooting-biztalk-server-administration"></a>BizTalk Server 管理のトラブルシューティング
 このセクションでは、BizTalk Server 管理コンソールの使用時に発生する一般的な問題に関する情報をまとめて提供します。  
@@ -34,8 +34,8 @@ ms.locfileid: "36993931"
 ##### <a name="cause"></a>原因  
  これは、ENTSSO サービスの開始にかかる時間が、BizTalk Server サーバーに許可されたタイムアウト時間を超えることがあるためです。  
   
-##### <a name="solution"></a>解決方法  
- この問題を解決するには、DTC を自動に設定します。  
+##### <a name="solution"></a>ソリューション  
+ この問題を解決するには、DTC を自動に設定します。 DTC がクラスター化されている場合、開始、クラスター化されたサービスの停止、クラスター サービスが管理しているため手動で起動する設定する必要があります。 
   
 #### <a name="sql-resources-may-become-locked"></a>SQL リソースがロックされることがある  
   
@@ -47,7 +47,7 @@ ms.locfileid: "36993931"
 ##### <a name="cause"></a>原因  
  これはまれに発生する状況であり、ユーザーが行った管理操作のために別のユーザーがデータベース管理からロックアウトされています。  
   
-##### <a name="solution"></a>解決方法  
+##### <a name="solution"></a>ソリューション  
  問題は短時間で自動的に解消されます。 数分後にもう一度実行してみてください。  
   
 #### <a name="sql-database-may-become-locked"></a>SQL データベースがロックされることがある  
@@ -58,7 +58,7 @@ ms.locfileid: "36993931"
 ##### <a name="cause"></a>原因  
  1 人のユーザーがデータベースに書き込んでいるため、実質的に別のユーザーがデータベースからロックアウトされることがあります。  
   
-##### <a name="solution"></a>解決方法  
+##### <a name="solution"></a>ソリューション  
  問題は短時間で自動的に解消されます。 数分後にもう一度実行してみてください。  
   
 #### <a name="termination-of-multiple-service-instances-in-a-multiple-messagebox-environment-fails-with-an-error"></a>複数のメッセージ ボックス環境で複数のサービス インスタンスを終了するとエラーが発生する  
@@ -74,7 +74,7 @@ ms.locfileid: "36993931"
 ##### <a name="cause"></a>原因  
  場合、この問題が複数のメッセージ ボックス環境で発生することができます、SQL エージェント ジョブ"operations_operateoninstances_onmaster _\<*dbName*\>' セカンダリ メッセージ ボックス データベースで実行されていません。 セカンダリ メッセージ ボックス データベースからプライマリ メッセージ ボックス データベースに情報を伝達するためには、このジョブを実行している必要があります。 このジョブが有効になっていないか、ログオン エラーが発生した場合、このジョブは実行できません。  
   
-##### <a name="solution"></a>解決方法  
+##### <a name="solution"></a>ソリューション  
  同時に複数のサービス インスタンスに対する操作を実行する BizTalk 管理コンソールを使用している複数のメッセージ ボックス データベース、BizTalk Server 環境が構成されている場合は、検証という名前の SQL Server エージェント ジョブ ' Operations_OperateOnInstances_OnMaster_\<*dbName*\>' すべてのセカンダリ (マスター以外の) メッセージ ボックス データベースで有効にします。 さらに、セカンダリ メッセージ ボックス データベースをホストする SQL Server コンピューターの SQL Server エージェント サービスは、セカンダリ メッセージ ボックス データベースの BTS_SQLAGENT_USER データベース ロールに含まれるアカウントとして実行する必要があります。  
   
 > [!NOTE]
@@ -100,7 +100,7 @@ ms.locfileid: "36993931"
 #### <a name="changes-applied-in-one-instance-of-the-biztalk-administration-console-are-not-automatically-updated-in-other-instances-of-the-biztalk-administration-console"></a>BizTalk 管理コンソールのあるインスタンスに適用した変更が、BizTalk 管理コンソールの他のインスタンスに自動的に反映されない  
   
 ##### <a name="problem"></a>問題  
- BizTalk 管理コンソールの複数のインスタンスが同時に同じ BizTalk Server グループに接続している場合に、あるインスタンスで行われた変更が他のインスタンスに自動的に反映されません。 このため、BizTalk 管理コンソールのインスタンスに表示されているアイテムの状態が BizTalk 管理データベースに格納されているアイテムの実際の状態と一致しない場合に、そのインスタンスでアイテムを変更しようとすると、同時実行違反エラーが発生する可能性があります。  
+ BizTalk 管理コンソールの複数のインスタンスが同時に同じ BizTalk Server グループに接続している場合に、あるインスタンスで行われた変更が他のインスタンスに自動的に反映されません。 このため、BizTalk 管理コンソールのインスタンスに表示されているアイテムの状態が BizTalk 管理データベースに格納されているアイテムの実際の状態と一致しない場合に、そのインスタンスでアイテムを変更しようとすると、コンカレンシー違反エラーが発生する可能性があります。  
   
 ##### <a name="cause"></a>原因  
  BizTalk 管理コンソールの各インスタンスは、BizTalk グループ構成のキャッシュを独自に保持しており、そのキャッシュにのみ変更を反映します。 キャッシュが更新されるのは、BizTalk 管理コンソール ビューが更新されるときだけです。  

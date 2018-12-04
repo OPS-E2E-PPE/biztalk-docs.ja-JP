@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: tordgladnordahl
 ms.author: tonordah
 manager: anneta
-ms.openlocfilehash: 7178f85bce4087e5bc740810050817676a6c8996
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8b13ef6f56e892bb3598096272d876c5f0a865f3
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992475"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826306"
 ---
 # <a name="configure-visual-studio-team-services-to-deploy-biztalk-server-solutions-or-projects"></a>BizTalk Server ソリューションまたはプロジェクトをデプロイする、Visual Studio Team Services の構成します。
 自動的に展開する VSTS セットアップ[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]プロジェクト。 
@@ -109,11 +109,11 @@ ms.locfileid: "36992475"
 
 1. 選択、**ビルド**] タブで [**すべて定義**、選択と**新規**:
 
-    ![新しいリリース定義を作成します。](../core/media/create-new-release-defintion.png)
+    ![新しいリリース定義を作成します。](../core/media/create-new-release-definition.png)
 
 2. 選択、**空**テンプレート、および選択**次**:
 
-    ![空のテンプレートから新しい定義を作成します。](../core/media/create-new-defintion-from-an-empty-template.png)
+    ![空のテンプレートから新しい定義を作成します。](../core/media/create-new-definition-from-an-empty-template.png)
 
 3. 選択、**リポジトリ**ソースと**ブランチ**定義については、します。
 4. **省略可能な**します。 選択**継続的インテグレーション**します。
@@ -123,8 +123,10 @@ ms.locfileid: "36992475"
     ![追加する新しい定義の展開](../core/media/add-new-deploy-definition.png)
 
 7. 選択、**操作名**を使用します。
-    * **新しい BizTalk アプリケーションを作成する**新しいアプリケーションをデプロイします。 場合、アプリケーション既に存在は、新しいアプリケーションをインストールし、現在のアプリケーション (完全停止) をアンインストールします。 継続的インテグレーションを有効にするでは、リポジトリで更新されるときに、そのアプリケーションが自動的に再します。
+
+    * **新しい BizTalk アプリケーションを作成する**新しいアプリケーションをデプロイします。 アプリケーションが既に存在する場合、現在のアプリケーション (完全停止) をアンインストールし、新しいアプリケーションをインストールします。 継続的インテグレーションを有効にするでは、リポジトリで更新されるときに、そのアプリケーションが自動的に再します。
     * **既存の BizTalk アプリケーションを更新**など、変更を追加します**スキーマ**を既に実行されているアプリケーションにします。 アプリケーションの完全な再デプロイは必要ありません。
+
 8. 入力、**アプリケーション名**で、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]環境。
 9. **デプロイ パッケージのパス**リポジトリに zip ファイルへのパスを選択します。
 10. 選択**トリガー**メニューから、有効にする**継続的インテグレーション**、正しい選択と**ブランチ**ビルドの。

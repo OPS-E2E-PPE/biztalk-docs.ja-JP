@@ -1,5 +1,5 @@
 ---
-title: FileAct アダプターのセキュリティ アーキテクチャ |Microsoft ドキュメント
+title: FileAct アダプターのセキュリティ アーキテクチャ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ed8352b788af12fd3c38f489e9ddb65d8375f2a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be9997dca0a4b7a5c619848e4ed38cf9099bbc16
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222794"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826378"
 ---
 # <a name="fileact-adapter-security-architecture"></a>FileAct アダプターのセキュリティ アーキテクチャ
-ファイル送信および受信確認のセキュリティは、SNL と、SAG に固有の証明書と暗号化の機能を使用して実装されます。  証明書などの管理は完全に FileAct アダプターの範囲外です。 関連付けられた SNL/SAG インスタンスがサービスに登録された、FileAct SWIFT および SNL/SAG に正しくインストールされているソフトウェアと、限り、アダプターは施設を介して SNL Api です。 FileAct アダプターでは、"Advanced"(ベスト プラクティス) に FACryptoMode は常に設定します。  
+SNL と、SAG に固有の証明書と暗号化機能を使用して、ファイルの送信と受信確認のセキュリティが実装されます。  証明書などの管理は完全に FileAct アダプターの範囲外です。 SWIFT に FileAct のサービスの関連付けられた SNL/SAG インスタンスが登録されているし、SNL/SAG、アダプターに正しくインストールされているソフトウェアは、長い SNL api 機能を使用します。 FileAct アダプターでは、"Advanced"(ベスト プラクティス) に FACryptoMode は常に設定します。  
   
 > [!NOTE]
->  アダプターの場合は、送信ポートごとに個別のセキュリティ コンテキストを作成できます。  
+>  アダプターの場合は、各送信ポートの別のセキュリティ コンテキストを作成できます。  
   
 ## <a name="see-also"></a>参照  
  [FileAct アダプターのアーキテクチャ](../../adapters-and-accelerators/fileact-interact/fileact-adapter-architecture.md)   
- [FileAct アダプター リアルタイム エンド ツー エンド プリミティブ](../../adapters-and-accelerators/fileact-interact/fileact-adapter-real-time-end-to-end-primitives.md)   
+ [FileAct アダプターのリアルタイム エンド ツー エンド プリミティブ](../../adapters-and-accelerators/fileact-interact/fileact-adapter-real-time-end-to-end-primitives.md)   
  [FileAct アダプターのリアルタイム ローカル プリミティブ](../../adapters-and-accelerators/fileact-interact/fileact-adapter-real-time-local-primitives.md)   
- [FileAct アダプター ストア アンド フォワード](../../adapters-and-accelerators/fileact-interact/fileact-adapter-store-and-forward.md)   
- [FileAct アダプター ファイルおよび転送の識別](../../adapters-and-accelerators/fileact-interact/fileact-adapter-file-and-transfer-identification.md)   
- [FileAct アダプターをサポートする情報の転送](../../adapters-and-accelerators/fileact-interact/fileact-adapter-supporting-information-transfer.md)   
- [FileAct アダプター配信通知](../../adapters-and-accelerators/fileact-interact/fileact-adapter-delivery-notification.md)   
- [FileAct アダプター状態の監視](../../adapters-and-accelerators/fileact-interact/fileact-adapter-status-monitoring.md)
+ [FileAct アダプターのストア アンド フォワード](../../adapters-and-accelerators/fileact-interact/fileact-adapter-store-and-forward.md)   
+ [FileAct アダプター ファイルおよび転送 Id](../../adapters-and-accelerators/fileact-interact/fileact-adapter-file-and-transfer-identification.md)   
+ [FileAct アダプターのサポート情報の転送](../../adapters-and-accelerators/fileact-interact/fileact-adapter-supporting-information-transfer.md)   
+ [FileAct アダプターの配信通知](../../adapters-and-accelerators/fileact-interact/fileact-adapter-delivery-notification.md)   
+ [FileAct アダプターの状態監視](../../adapters-and-accelerators/fileact-interact/fileact-adapter-status-monitoring.md)
