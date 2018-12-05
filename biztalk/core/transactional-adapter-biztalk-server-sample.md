@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 014b541517fb6054525081b852cc21f388742ce2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 07719f864f332d644d201e6f8349bdc19b456a9f
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975483"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826410"
 ---
 # <a name="transactional-adapter-biztalk-server-sample"></a>トランザクション アダプター (BizTalk Server サンプル)
 Transactional Adapter サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージの処理中にデータベースに対して明示的な Microsoft 分散トランザクション コーディネーター (MSDTC) トランザクションを作成および使用する方法を示すものです。  
@@ -200,7 +200,7 @@ Transactional Adapter サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../
 
 3. 選択、**新しいクエリ**を Northwind データベースのストアド プロシージャのツール バー ボタンと、テスト テーブル、テスト データ、およびテストを挿入する新しいクエリ ウィンドウに、次を貼り付けします。 選択、 **Execute**ツールバー ボタンをクリックします。  
 
-   ```  
+   ```sql
    use [Northwind]  
    GO  
    if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[scratch]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)  
@@ -226,7 +226,7 @@ Transactional Adapter サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../
 
 4. [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開、**送信ポート**ノードを選択、 **TxnSendPort1**送信ポート、および選択**開始**します。  
 
-5. [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開、 **ReceiveLocations**ノードで、選択、 **TxnRecieveLocation1**受信場所をクリックし **を有効にする**です。  
+5. [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開、 **ReceiveLocations**ノードを選択、 **TxnReceiveLocation1**受信場所をクリックし **を有効にする**します。  
 
 6. 受信場所を有効にすると、指定された間隔で自動的にデータベースがポーリングされ、データが変更されているかどうかが判断されます。  
 
