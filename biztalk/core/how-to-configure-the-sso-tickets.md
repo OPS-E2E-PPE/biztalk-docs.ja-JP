@@ -1,7 +1,8 @@
 ---
-title: SSO チケットを構成する方法 |Microsoft Docs
+title: SSO チケットの構成 |Microsoft Docs
+description: SSO 管理者またはコマンドラインを使用してシステム レベル、および BizTalk Server での関連アプリケーション用のエンタープライズ シングル サインオン チケットを検証しています。
 ms.custom: ''
-ms.date: 06/08/2017
+ms.date: 01/08/2019
 ms.prod: biztalk-server
 ms.reviewer: ''
 ms.suite: ''
@@ -16,58 +17,60 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: edec81ab1fa64ce7b4523771bb2c69b39c00bdfd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f3ce6c1de1a94225f06d09b66cc3e6c60c471f24
+ms.sourcegitcommit: 2d39bcd10a22c5945d97a03988ccdc62f6fb3c93
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018760"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443375"
 ---
-# <a name="how-to-configure-the-sso-tickets"></a><span data-ttu-id="545cd-102">SSO チケットを構成する方法</span><span class="sxs-lookup"><span data-stu-id="545cd-102">How to Configure the SSO Tickets</span></span>
-<span data-ttu-id="545cd-103">MMC スナップインやコマンド ラインを使用して、チケットを許可するかどうか、システムでチケットを検証するかどうかなど、シングル サインオン システム全体のチケットの動作を制御できます。</span><span class="sxs-lookup"><span data-stu-id="545cd-103">You can use the MMC Snap-In or the command line to control ticket behavior for the entire Single Sign-On system, including whether to allow tickets, and whether the system must validate the tickets.</span></span>  
+# <a name="configure-the-sso-tickets-in-biztalk-server"></a><span data-ttu-id="83f3f-103">BizTalk Server で SSO チケットを構成します。</span><span class="sxs-lookup"><span data-stu-id="83f3f-103">Configure the SSO Tickets in BizTalk Server</span></span>
+<span data-ttu-id="83f3f-104">シングル サインオン システム全体のエンタープライズ シングル サインオン (SSO) 管理 mmc スナップインまたはチケットの動作を制御するためのコマンドラインを使用できます。</span><span class="sxs-lookup"><span data-stu-id="83f3f-104">You can use Enterprise Single Sign-On (SSO) Administration MMC or the command line to control ticket behavior for the entire single sign-on system.</span></span> <span data-ttu-id="83f3f-105">このツールを使用して、チケットを許可し、SSO チケットを検証できます。</span><span class="sxs-lookup"><span data-stu-id="83f3f-105">Using this tools, you can allow tickets and validate SSO tickets.</span></span>  
   
- <span data-ttu-id="545cd-104">チケットを許可したり検証したりするかどうかを示すために、Yes、No、On、または Off を使用できます。</span><span class="sxs-lookup"><span data-stu-id="545cd-104">You can use Yes, No, On, or Off to indicate whether to allow and/or validate tickets.</span></span> <span data-ttu-id="545cd-105">これらの語は大文字と小文字が区別されないため、言語の設定に関係なく使用してください。</span><span class="sxs-lookup"><span data-stu-id="545cd-105">These words are case independent, and must be used regardless of your language settings.</span></span>  
+## <a name="before-you-begin"></a><span data-ttu-id="83f3f-106">アンインストールの準備</span><span class="sxs-lookup"><span data-stu-id="83f3f-106">Before you begin</span></span>
+
+- <span data-ttu-id="83f3f-107">リモートを行うことができる場合、SSO の管理は、リモートのコンピューターにインストールされて、 [IssueTicket](https://docs.microsoft.com/biztalk/core/technical-reference/issoticket-issueticket-method)操作。</span><span class="sxs-lookup"><span data-stu-id="83f3f-107">If SSO Administration is installed on a remote computer, you can run a remote [IssueTicket](https://docs.microsoft.com/biztalk/core/technical-reference/issoticket-issueticket-method) operation.</span></span> <span data-ttu-id="83f3f-108">SSO 管理モジュールとランタイム モジュール (ENTSSO サービス) の間のすべてのトラフィックが暗号化されます。</span><span class="sxs-lookup"><span data-stu-id="83f3f-108">All traffic between the SSO Administration module and the Runtime module (ENTSSO service) is encrypted.</span></span>  
   
- <span data-ttu-id="545cd-106">リモート コンピューターに SSO 管理機能がインストールされている場合、リモート チケット発行操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="545cd-106">If you have the SSO Administration feature installed on a remote computer, remote IssueTicket operation can be performed.</span></span> <span data-ttu-id="545cd-107">SSO 管理モジュールとランタイム モジュール (ENTSSO サービス) との間のすべてのトラフィックが暗号化されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="545cd-107">Note that all traffic between the SSO Administration module and the Runtime module (ENTSSO service) is encrypted.</span></span>  
+- <span data-ttu-id="83f3f-109">コマンド ライン ユーティリティ ssomanage.exe を使用して、関連アプリケーション レベルでチケットのタイムアウトを入力できます。</span><span class="sxs-lookup"><span data-stu-id="83f3f-109">Using the ssomanage.exe command line utility, you can enter the ticket timeout at the Affiliate Application level.</span></span> <span data-ttu-id="83f3f-110">これは、アプリケーションが作成されたときではなく、アプリケーションの更新が行われたときにのみ行うことができます。</span><span class="sxs-lookup"><span data-stu-id="83f3f-110">You can do this only when an update of the application is made, not when the application is created.</span></span>
   
- <span data-ttu-id="545cd-108">コマンド ライン ユーティリティの ssomanage.exe を使用して、アプリケーションの作成時ではなく、アプリケーションの更新が実行されたときのみ、関連アプリケーション レベルでチケットのタイムアウトを指定できます。</span><span class="sxs-lookup"><span data-stu-id="545cd-108">Using the command line utility, ssomanage.exe, you can specify the ticket timeout at the Affiliate Application level only when an update of the Application is performed,  not at creation time.</span></span>  
+- <span data-ttu-id="83f3f-111">SSO 管理者グループのユーザーだけは、SSO システム レベルおよび関連アプリケーション レベルでチケットを構成できます。</span><span class="sxs-lookup"><span data-stu-id="83f3f-111">Only users in the SSO Administrator group can configure tickets at the SSO system-level and at the Affiliate Application level.</span></span>  
   
- <span data-ttu-id="545cd-109">SSO 管理者だけは、SSO システム レベルと関連アプリケーション レベルでチケットを構成できます。</span><span class="sxs-lookup"><span data-stu-id="545cd-109">Only an SSO Administrator can configure tickets at the SSO System level and at the Affiliate Application level.</span></span>  
+- <span data-ttu-id="83f3f-112">システム レベルでチケットが無効になっている場合は、関連アプリケーション レベルで使用できません。</span><span class="sxs-lookup"><span data-stu-id="83f3f-112">If ticketing is disabled at the system-level, it can't be used at the Affiliate Application level.</span></span> <span data-ttu-id="83f3f-113">システム レベルでチケットを有効にして、関連アプリケーション レベルで無効にすることになります。</span><span class="sxs-lookup"><span data-stu-id="83f3f-113">It's possible to enable tickets at the system level, and disable them at the Affiliate Application level.</span></span>  
   
- <span data-ttu-id="545cd-110">チケットをシステム レベルで無効にすると、関連アプリケーション レベルではチケットを使用できなくなります。</span><span class="sxs-lookup"><span data-stu-id="545cd-110">If ticketing is disabled at the system level, it cannot be used at the Affiliate Application level either.</span></span> <span data-ttu-id="545cd-111">チケットをシステム レベルで有効にして、関連アプリケーション レベルで無効にすることは可能です。</span><span class="sxs-lookup"><span data-stu-id="545cd-111">It is possible to enable tickets at the system level and disable it at the Affiliate Application level.</span></span>  
+- <span data-ttu-id="83f3f-114">システム レベルでは、検証が有効である場合、関連アプリケーション レベルでチケットを検証する必要があります。</span><span class="sxs-lookup"><span data-stu-id="83f3f-114">If validation is enabled at the system-level, tickets must be validated at the Affiliate Application level.</span></span> <span data-ttu-id="83f3f-115">システム レベルでの検証を無効にし、関連アプリケーション レベルで有効にすることになります。</span><span class="sxs-lookup"><span data-stu-id="83f3f-115">It's possible to disable validation at the system-level, and enable it at the Affiliate Application level.</span></span>  
   
- <span data-ttu-id="545cd-112">検証をシステム レベルで有効にすると、関連アプリケーション レベルでもチケットの検証が必要になります。</span><span class="sxs-lookup"><span data-stu-id="545cd-112">If validation is enabled at the system level, validation of tickets are required at the Affiliate Application level as well.</span></span> <span data-ttu-id="545cd-113">検証をシステム レベルで無効にして、関連アプリケーション レベルで有効にすることは可能です。</span><span class="sxs-lookup"><span data-stu-id="545cd-113">It is possible to disable validation at the system level and enable it at the Affiliate Application level.</span></span>  
+- <span data-ttu-id="83f3f-116">システム レベルと関連アプリケーション レベルでチケットのタイムアウトを入力すると、関連アプリケーション レベルで入力した 1 つは、チケットの有効期間を決定します。</span><span class="sxs-lookup"><span data-stu-id="83f3f-116">If ticket timeout is entered at the system-level and the Affiliate Application level, the one entered at the Affiliate Application level determines the ticket expiration time.</span></span>  
   
- <span data-ttu-id="545cd-114">チケットのタイムアウトをシステム レベルと関連アプリケーション レベルの両方で指定した場合、関連アプリケーション レベルで指定したチケットのタイムアウトが、チケットの有効期限の決定に使用されます。</span><span class="sxs-lookup"><span data-stu-id="545cd-114">If Ticket timeout is specified both at the System level and the Affiliate Application level, the one specified at the Affiliate Application level is used to determine the ticket expiry time.</span></span>  
+<span data-ttu-id="83f3f-117">チケットとチケットの検証の詳細については、次を参照してください。 [SSO チケット](../core/sso-tickets.md)します。</span><span class="sxs-lookup"><span data-stu-id="83f3f-117">For more information about tickets and tickets validation, see [SSO Tickets](../core/sso-tickets.md).</span></span>  
   
- <span data-ttu-id="545cd-115">チケットとチケットの検証の詳細については、次を参照してください。 [SSO チケット](../core/sso-tickets.md)します。</span><span class="sxs-lookup"><span data-stu-id="545cd-115">For more information about tickets and tickets validation, see [SSO Tickets](../core/sso-tickets.md).</span></span>  
+## <a name="allow-affiliate-application-tickets-using-sso-administration"></a><span data-ttu-id="83f3f-118">SSO の管理を使用して関連アプリケーションのチケットを許可します。</span><span class="sxs-lookup"><span data-stu-id="83f3f-118">Allow Affiliate Application tickets using SSO Administration</span></span>  
   
-### <a name="to-configure-the-enterprise-single-sign-on-tickets-using-the-mmc-snap-in-for-the-affiliate-application"></a><span data-ttu-id="545cd-116">MMC スナップインを使用して関連アプリケーションのエンタープライズ シングル サインオン チケットを構成するには</span><span class="sxs-lookup"><span data-stu-id="545cd-116">To configure the Enterprise Single Sign-On tickets using the MMC Snap-In for the Affiliate Application</span></span>  
+1.  <span data-ttu-id="83f3f-119">**開始**メニューの **すべてのプログラム** > **Microsoft エンタープライズ シングル サインオン** > **SSO の管理**.</span><span class="sxs-lookup"><span data-stu-id="83f3f-119">From the **Start** menu, select **All Programs** > **Microsoft Enterprise Single Sign-On** > **SSO Administration**.</span></span>
   
-1.  <span data-ttu-id="545cd-117">**開始** メニューのをクリックして**すべてのプログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、 をクリックし、 **SSO 管理**。</span><span class="sxs-lookup"><span data-stu-id="545cd-117">On the **Start** menu, click **All Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
+2.  <span data-ttu-id="83f3f-120">ENTSSO MMC スナップインの [スコープ] ウィンドウで、**関連アプリケーション**ノード。</span><span class="sxs-lookup"><span data-stu-id="83f3f-120">In the scope pane of the ENTSSO MMC Snap-In, expand the **Affiliate Applications** node.</span></span>  
   
-2.  <span data-ttu-id="545cd-118">ENTSSO MMC スナップインの [スコープ] ウィンドウで、**関連アプリケーション**ノード。</span><span class="sxs-lookup"><span data-stu-id="545cd-118">In the scope pane of the ENTSSO MMC Snap-In, expand the **Affiliate Applications** node.</span></span>  
+3.  <span data-ttu-id="83f3f-121">右クリックして**関連アプリケーション** > **プロパティ**します。</span><span class="sxs-lookup"><span data-stu-id="83f3f-121">Right-click **Affiliate Application** > **Properties**.</span></span>  
   
-3.  <span data-ttu-id="545cd-119">右クリックして**関連アプリケーション**、 をクリックし、**プロパティ**します。</span><span class="sxs-lookup"><span data-stu-id="545cd-119">Right-click **Affiliate Application**, and then click **Properties**.</span></span>  
+4.  <span data-ttu-id="83f3f-122">選択、**オプション**タブ。</span><span class="sxs-lookup"><span data-stu-id="83f3f-122">Choose the **Options** tab.</span></span>  
   
-4.  <span data-ttu-id="545cd-120">をクリックして、**オプション**タブ。</span><span class="sxs-lookup"><span data-stu-id="545cd-120">Click the **Options** tab.</span></span>  
+5.  <span data-ttu-id="83f3f-123">選択**チケットを許可**し、必要なチケットのタイムアウトを入力します。</span><span class="sxs-lookup"><span data-stu-id="83f3f-123">Select **Allow Tickets** and enter the ticket timeout you want.</span></span>  
   
-5.  <span data-ttu-id="545cd-121">選択**チケットを許可**とチケットのタイムアウトを適切に構成します。</span><span class="sxs-lookup"><span data-stu-id="545cd-121">Select **Allow Tickets** and configure the ticket timeout as appropriate.</span></span>  
+## <a name="allow-and-validate-sso-system-level-tickets-using-the-command-line"></a><span data-ttu-id="83f3f-124">許可して、コマンドラインを使用して SSO システム レベルのチケットの検証</span><span class="sxs-lookup"><span data-stu-id="83f3f-124">Allow and validate SSO system-level tickets using the command line</span></span>  
   
-### <a name="to-configure-the-enterprise-single-sign-on-system-level-tickets-using-the-command-line"></a><span data-ttu-id="545cd-122">コマンド ラインを使用してエンタープライズ シングル サインオン システム レベルのチケットを構成するには</span><span class="sxs-lookup"><span data-stu-id="545cd-122">To configure the Enterprise Single Sign-On system-level tickets using the command line</span></span>  
+1. <span data-ttu-id="83f3f-125">コマンド プロンプトを開き ([スタート] メニュー > 型**コマンド プロンプト**> 選択**コマンド プロンプト**)。</span><span class="sxs-lookup"><span data-stu-id="83f3f-125">Open a command prompt (Start menu > type **command prompt** > select **Command Prompt**).</span></span>
+
+    > [!TIP]
+    >  <span data-ttu-id="83f3f-126">ユーザー アカウント制御 (UAC) をサポートするシステムで管理者特権でコマンド プロンプトを開く必要があります (右クリックして**コマンド プロンプト**> \* \* 管理者として実行)。</span><span class="sxs-lookup"><span data-stu-id="83f3f-126">On a system that supports User Account Control (UAC), you may need to open the command prompt with Administrative privileges (right-click **Command Prompt** > \*\*Run as administrator).</span></span>
   
-1. <span data-ttu-id="545cd-123">**開始** メニューのをクリックして**実行**、し、入力**cmd**します。</span><span class="sxs-lookup"><span data-stu-id="545cd-123">On the **Start** menu, click **run**, and then type **cmd**.</span></span>  
+2. <span data-ttu-id="83f3f-127">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="83f3f-127">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="83f3f-128">既定のインストール ディレクトリは`\Program Files\Common Files\Enterprise Single Sign-On`します。</span><span class="sxs-lookup"><span data-stu-id="83f3f-128">The default installation directory is `\Program Files\Common Files\Enterprise Single Sign-On`.</span></span> <span data-ttu-id="83f3f-129">たとえば、次のように入力します。</span><span class="sxs-lookup"><span data-stu-id="83f3f-129">For example, enter:</span></span> 
+
+    `cd C:\Program Files\Common Files\Enterprise Single Sign-On`
   
-2. <span data-ttu-id="545cd-124">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="545cd-124">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="545cd-125">既定のインストール ディレクトリは*\<ドライブ\>*: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="545cd-125">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+3. <span data-ttu-id="83f3f-130">型`ssomanage -tickets <allowed yes/no> <validate yes/no>`ここで、 *\<許可はい/いいえ\>* チケットを許可するかどうかどうかを示すと*\<はい/いいえの検証\>* チケットを引き換えるがいる後に検証が必要かどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="83f3f-130">Type `ssomanage -tickets <allowed yes/no> <validate yes/no>`, where *\<allowed yes/no\>* indicates whether tickets are allowed or not, and *\<validate yes/no\>* indicates whether tickets need to be validated after they're redeemed.</span></span>  
   
-3. <span data-ttu-id="545cd-126">型 * * ssomanage – チケット\<許可はい/いいえ\> *\<はい/いいえの検証\>**<em>ここで、*\<許可はい/いいえ\></em>チケットを許可するか、そうでないかどうかを示すと*\<はい/いいえの検証\>* チケットは、では引き換え後に検証する必要があるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="545cd-126">Type **ssomanage –tickets \<allowed yes/no\> *\<validate yes/no\>**<em>, where *\<allowed yes/no\></em> indicates whether tickets will be allowed or not, and *\<validate yes/no\>* indicates whether tickets will need to be validated after they are redeemed.</span></span>  
+    <span data-ttu-id="83f3f-131">使用することができます`yes`、 `no`、 `on`、または`off`を許可したり、チケットを検証します。</span><span class="sxs-lookup"><span data-stu-id="83f3f-131">You can use `yes`, `no`, `on`, or `off` to allow and/or validate tickets.</span></span> <span data-ttu-id="83f3f-132">これらの語は大文字と小文字が区別されないため、言語の設定に関係なく使用してください。</span><span class="sxs-lookup"><span data-stu-id="83f3f-132">These words are case independent, and must be used regardless of your language settings.</span></span>
   
-   > [!NOTE]
-   >  <span data-ttu-id="545cd-127">チケットを許可したり検証したりするかどうかを示すために、yes、no、on、または off を使用できます。</span><span class="sxs-lookup"><span data-stu-id="545cd-127">You can use yes, no, on, or off to indicate whether to allow and/or validate tickets.</span></span> <span data-ttu-id="545cd-128">これらの語は大文字と小文字が区別されないため、言語の設定に関係なく使用してください。</span><span class="sxs-lookup"><span data-stu-id="545cd-128">These words are case independent, and must be used regardless of your language settings.</span></span>  
-  
-   > [!NOTE]
-   >  <span data-ttu-id="545cd-129">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="545cd-129">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="545cd-130">参照</span><span class="sxs-lookup"><span data-stu-id="545cd-130">See Also</span></span>  
- <span data-ttu-id="545cd-131">[SSO について](../core/understanding-sso.md) </span><span class="sxs-lookup"><span data-stu-id="545cd-131">[Understanding SSO](../core/understanding-sso.md) </span></span>  
- [<span data-ttu-id="545cd-132">SSO の使用</span><span class="sxs-lookup"><span data-stu-id="545cd-132">Using SSO</span></span>](../core/using-sso.md)
+## <a name="see-also"></a><span data-ttu-id="83f3f-133">参照</span><span class="sxs-lookup"><span data-stu-id="83f3f-133">See Also</span></span>
+
+<span data-ttu-id="83f3f-134">[SSO について](../core/understanding-sso.md) </span><span class="sxs-lookup"><span data-stu-id="83f3f-134">[Understanding SSO](../core/understanding-sso.md) </span></span>  
+[<span data-ttu-id="83f3f-135">SSO の使用</span><span class="sxs-lookup"><span data-stu-id="83f3f-135">Using SSO</span></span>](../core/using-sso.md)
