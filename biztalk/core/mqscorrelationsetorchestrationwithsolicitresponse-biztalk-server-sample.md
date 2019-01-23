@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3780aa186146d0cc1b7bca90f7934f4823882ab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 59a41d62b7c8e578f7e89e7802ed5eaecd0e2b61
+ms.sourcegitcommit: 2d39bcd10a22c5945d97a03988ccdc62f6fb3c93
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014523"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443399"
 ---
 # <a name="mqscorrelationsetorchestrationwithsolicitresponse-biztalk-server-sample"></a>MQSCorrelationSetOrchestrationWithSolicitResponse (BizTalk Server サンプル)
 MQSCorrelationSetOrchestrationWithSolicitResponse サンプルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ではなく、MQSeries Server によって作成された関連付け識別子を使用する方法を示します。  
@@ -42,7 +42,7 @@ MQSCorrelationSetOrchestrationWithSolicitResponse サンプルでは、[!INCLUDE
   
 |**[最近使ったファイル]**|**[説明]**|  
 |--------------|---------------------|  
-|**MQSCorrelationSolicitResponse.btproj、**<br /><br /> **[Mqscorrelationsolicitresponse.sln]**|アプリケーションのプロジェクトおよびソリューション ファイル。|  
+|**MQSCorrelationSolicitResponse.btproj,**<br /><br /> **MQSCorrelationSolicitResponse.sln**|アプリケーションのプロジェクトおよびソリューション ファイル。|  
 |**[Mqscorrelationsolicitresponse.odx]**|アプリケーションの BizTalk オーケストレーション ファイル。|  
 |**MQSCorrelationSolicitResponse.snk**|厳密な名前のキー ファイル。|  
 |Setup.bat|このサンプルを作成および初期化します。|  
@@ -72,7 +72,7 @@ MQSCorrelationSetOrchestrationWithSolicitResponse サンプルでは、[!INCLUDE
   
 1.  クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**IBM WebSphere MQ**、順にクリックします**WebSphere MQ エクスプ ローラー**します。  
   
-2.  ダブルクリック**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。 通常、既定のキュー マネージャーの名前 **qm _ * * * < machine_name >* 場所*machine_name*コンピューターの名前を指定します。  
+2.  ダブルクリック**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。 通常、既定のキュー マネージャーの名前**qm _**_< machine_name >_ 場所*machine_name*コンピューターの名前を指定します。  
   
 3.  右クリック**キュー**、 をポイント**新規**、 をクリックし、**ローカル キュー**します。  
   
@@ -105,7 +105,7 @@ MQSCorrelationSetOrchestrationWithSolicitResponse サンプルでは、[!INCLUDE
   
 9. **受信パイプライン**ボックスで、 **Microsoft.BizTalk.DefaultPipelines.PassThruReceive**します。  
   
-10. クリックして**構成**します。  
+10. をクリックして**構成**です。  
   
 11. **MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**のポーリング間隔**ボックスに、「10」を入力します。  
   
@@ -133,7 +133,7 @@ MQSCorrelationSetOrchestrationWithSolicitResponse サンプルでは、[!INCLUDE
   
 5.  **受信パイプライン**ボックスで、 **Microsoft.BizTalk.DefaultPipelines.PassThruReceive**します。  
   
-6.  クリックして**構成**します。  
+6.  をクリックして**構成**です。  
   
 7.  **MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**キュー定義**ボックスで、省略記号 (...) ボタンをクリックします。  
   

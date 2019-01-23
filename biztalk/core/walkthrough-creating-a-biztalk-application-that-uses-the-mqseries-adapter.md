@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: MQSeries アダプターを使用する BizTalk アプリケーションの作成 |Microsoft Docs'
+title: チュートリアル :MQSeries アダプターを使用する BizTalk アプリケーションの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,14 +21,14 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d8c086c69dee4318b9ab15f8746291594a815870
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d882ee7134861496266b0d18bb288e39e05bad29
+ms.sourcegitcommit: 2d39bcd10a22c5945d97a03988ccdc62f6fb3c93
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024528"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443391"
 ---
-# <a name="walkthrough-creating-a-biztalk-application-that-uses-the-mqseries-adapter"></a>チュートリアル: MQSeries アダプターを使用する BizTalk アプリケーションの作成
+# <a name="walkthrough-creating-a-biztalk-application-that-uses-the-mqseries-adapter"></a>チュートリアル :MQSeries アダプターを使用する BizTalk アプリケーションの作成
 このセクションでは、MQSeries アダプターを使用する簡単な Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを作成する手順について説明します。  
   
 > [!NOTE]
@@ -45,7 +45,7 @@ ms.locfileid: "37024528"
   
 1. クリックして**開始**、 をポイント**プログラム**、 をポイント**IBM WebSphere MQ**、順にクリックします**WebSphere MQ エクスプ ローラー**します。  
   
-2. ダブルクリック**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。 通常、既定のキュー マネージャーの名前 **qm _ * * * < machine_name >* 場所*machine_name*コンピューターの名前を指定します。  
+2. ダブルクリック**キュー マネージャー**、し、既定のキュー マネージャーをダブルクリックします。 通常、既定のキュー マネージャーの名前**qm _**_< machine_name >_ 場所*machine_name*コンピューターの名前を指定します。  
   
 3. 右クリック**キュー**、 をポイント**新規**、 をクリックし、**ローカル キュー**します。  
   
