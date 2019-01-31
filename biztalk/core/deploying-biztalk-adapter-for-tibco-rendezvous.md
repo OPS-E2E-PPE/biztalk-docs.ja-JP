@@ -43,11 +43,11 @@ ms.locfileid: "36994011"
 使用する前に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をバインド ファイルをインポートするには、確認応答用のフォルダーが存在し、新しいコンピューター上と同じですか、バインド ファイルを編集する必要があります。  
   
 ## <a name="clean-the-target-computer"></a>ターゲット コンピューターをクリーニングします。
-展開には、受信場所の構成が上書きされます。 バインド ファイル (およびアセンブリ) を展開先のコンピューターに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  
+展開には、受信場所の構成が上書きされます。 バインド ファイル (およびアセンブリ) をターゲット コンピューターに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  
   
 インポートする前に、送信ポートを削除して、受信場所をオーケストレーションにバインドされています。  
   
-Microsoft Visual Studio が展開先のコンピューターにインストールされていない場合は、次のスクリプトを実行してポートを削除できます。  
+Microsoft Visual Studio がターゲット コンピューターにインストールされていない場合は、次のスクリプトを実行してポートを削除できます。  
   
 - [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\Admin\WMI\Remove Send Port\VBScript\RemoveSendPort.vbs  
   

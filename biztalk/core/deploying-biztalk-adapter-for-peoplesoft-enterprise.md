@@ -49,14 +49,14 @@ ms.locfileid: "50753202"
 -   PeopleSoft Enterprise システム パスワードは、構成に存在する場合、として保存されます\* \* \* \* \*バインド ファイルにします。 参照してください**制限**このトピックの「します。
 
 > [!NOTE]
->  展開すると、受信場所の構成が上書きされます。 バインド ファイルとアセンブリを展開先のコンピュータに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  
+>  展開すると、受信場所の構成が上書きされます。 バインド ファイルとアセンブリをターゲット コンピューターに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  
   
  バインド ファイルをインポートする方法の詳細な手順は、次を参照してください。[を BizTalk グループにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-group.md)します。 
   
 ## <a name="clean-the-target-computer"></a>ターゲット コンピューターをクリーニングします。
 新しいアプリケーションをデプロイするためのターゲット コンピューターのクリーニング、送信ポートを削除する受信場所をオーケストレーションにバインドされます。  
   
-Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] が展開先のコンピューターにインストールされていない場合は、次のスクリプトを実行してポートを削除することができます。  
+Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] がターゲット コンピューターにインストールされていない場合は、次のスクリプトを実行してポートを削除することができます。  
   
 **\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove Port\VBScript\RemoveSendPort.vbs を送信します。**  
   
@@ -86,7 +86,7 @@ cscript RemoveSendPort.vbs \<Send port name\>
 - インポートする前に、無効な値 (つまり、正しくないパスワード)、アスタリスクを置き換えてバインド fileby を更新します。 インポートした後、正しいパスワードを入力、**トランスポートのプロパティ**BizTalk Server 管理コンソール。  
   
   > [!NOTE]
-  >  この対処方法を使用できるのは、対象のコンピューターに Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] がインストールされているか、カスタム ツールを開発する場合のみです。  
+  >  この対処方法を使用できるのは、ターゲット コンピューターに Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] がインストールされているか、カスタム ツールを開発する場合のみです。  
   
 **オプション 2**  
   

@@ -10,13 +10,13 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37018445"
 ---
 # <a name="how-to-clean-the-target-computer"></a>対象のコンピューターをクリーニングする方法
-展開には、受信場所の構成が上書きされます。 バインド ファイル (およびアセンブリ) を展開先のコンピューターに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  
+展開には、受信場所の構成が上書きされます。 バインド ファイル (およびアセンブリ) をターゲット コンピューターに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  
   
-### <a name="to-clean-the-target-computer"></a>展開先のコンピューターをクリーニングするには  
+### <a name="to-clean-the-target-computer"></a>ターゲット コンピューターをクリーニングするには  
   
 - 送信ポートを削除して、受信、オーケストレーションにバインドされている場所。  
   
-   Microsoft Visual Studio が展開先のコンピューターにインストールされていない場合は、次のスクリプトを実行してポートを削除できます。  
+   Microsoft Visual Studio がターゲット コンピューターにインストールされていない場合は、次のスクリプトを実行してポートを削除できます。  
   
   - [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\Admin\WMI\Remove Send Port\VBScript\RemoveSendPort.vbs  
   

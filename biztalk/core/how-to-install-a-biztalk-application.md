@@ -90,7 +90,7 @@ ms.locfileid: "36997771"
 
 -   **ローカル パスを変更する必要があります。 ターゲット コンピューターで作成した後、HTTP によって参照されている仮想ディレクトリの指定受信場所。**  
 
-     送信先コンピューターに作成された仮想ディレクトリは、次のいずれかの物理ディレクトリを指します。  
+     ターゲット コンピューターに作成された仮想ディレクトリは、次のいずれかの物理ディレクトリを指します。  
 
      \<*インストール ドライブ*\>\Program Files\Microsoft BizTalk Server\HttpReceive  
 
@@ -98,7 +98,7 @@ ms.locfileid: "36997771"
 
      \<*インストール ドライブ*\>\Program Files (x86) \Microsoft BizTalk Server\HttpReceive  
 
-     BizTalk HTTP 受信 ISAPI 拡張 BTSHTTPReceive.dll が指定されたディレクトリに存在しない場合、または送信先のコンピューターが 64 ビットのオペレーティング システムを実行している場合は、ローカル パスを変更し、BizTalk HTTP 受信 ISAPI 拡張ファイルを格納する物理ディレクトリを指すように、仮想ディレクトリの場所を変更する必要があります。 たとえば、ターゲット マシンが実行されている 64 ビット バージョンの Windows Vista では、ローカル パス: 仮想ディレクトリの指定を変更する必要が\<インストール ドライブ\>\Program Files (x86) \Microsoft BizTalk Server\HttpReceive64 します。  
+     BizTalk HTTP 受信 ISAPI 拡張 BTSHTTPReceive.dll が指定されたディレクトリに存在しない場合、またはターゲット コンピューターが 64 ビットのオペレーティング システムを実行している場合は、ローカル パスを変更し、BizTalk HTTP 受信 ISAPI 拡張ファイルを格納する物理ディレクトリを指すように、仮想ディレクトリの場所を変更する必要があります。 たとえば、ターゲット マシンが実行されている 64 ビット バージョンの Windows Vista では、ローカル パス: 仮想ディレクトリの指定を変更する必要が\<インストール ドライブ\>\Program Files (x86) \Microsoft BizTalk Server\HttpReceive64 します。  
 
 ## <a name="to-install-a-biztalk-application"></a>BizTalk アプリケーションをインストールするには  
 
