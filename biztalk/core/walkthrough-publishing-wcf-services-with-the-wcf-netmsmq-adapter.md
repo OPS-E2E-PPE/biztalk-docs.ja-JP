@@ -99,7 +99,7 @@ ms.locfileid: "36995835"
   
    1. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-   2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **BizTalk グループ**、展開**アプリケーション**、展開**WCFNetMsmqAdapterPublishing**を右クリックして**受信ポート**、 をポイント**新規**、 をクリックし、**一方向の受信ポート。**  
+   2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**BizTalk グループ**、展開**アプリケーション**、展開**WCFNetMsmqAdapterPublishing**を右クリックして**受信ポート**、 をポイント**新規**、 をクリックし、**一方向の受信ポート。**  
   
    3. **受信ポートのプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスに「 `WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder`、順にクリックします**OK**します。  
   
@@ -114,7 +114,7 @@ ms.locfileid: "36995835"
    8. **Wcf-netmsmq トランスポートのプロパティ** ダイアログ ボックスで、**バインド** タブで、ことを確認します、**トランザクション** チェック ボックスをオンします。  
   
       > [!NOTE]
-      >  対象のキューをトランザクション キューとして作成したため、このチェック ボックスをオンにする必要があります。 このチェック ボックスがオンになっていない場合、受信場所のトランザクション要件と基になる MSMQ キューのトランザクション要件との間に不一致が生じるため、受信場所が有効になりません。  
+      >  ターゲット キューをトランザクション キューとして作成したため、このチェック ボックスをオンにする必要があります。 このチェック ボックスがオンになっていない場合、受信場所のトランザクション要件と基になる MSMQ キューのトランザクション要件との間に不一致が生じるため、受信場所が有効になりません。  
   
    9. **Wcf-netmsmq トランスポートのプロパティ** ダイアログ ボックスで、**セキュリティ** タブで  **None**から、**セキュリティ モード**ドロップダウン リスト.  
   
@@ -137,7 +137,7 @@ ms.locfileid: "36995835"
   
 6. 次の手順で、サンプル アプリケーションのホスト名とバインドを指定します。  
   
-   1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **WCFNetMsmqAdapterPublishing**、展開**オーケストレーション**は、サンプル オーケストレーションを右クリックし、 **プロパティ**、] をクリックして**バインド**、設定と**ホスト**に**BizTalkServerApplication**または別の適切なホスト。  
+   1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**WCFNetMsmqAdapterPublishing**、展開**オーケストレーション**は、サンプル オーケストレーションを右クリックし、**プロパティ**、 をクリックして**バインド**、設定と**ホスト**に**BizTalkServerApplication**または別の適切なホスト。  
   
    2. **オーケストレーションのプロパティ**ダイアログ ボックスで、 **WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder**から、**受信ポート**のドロップダウンリスト**PurchaseOrderRequestPort**します。  
   
