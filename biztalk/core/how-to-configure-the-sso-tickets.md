@@ -17,12 +17,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3ce6c1de1a94225f06d09b66cc3e6c60c471f24
-ms.sourcegitcommit: 2d39bcd10a22c5945d97a03988ccdc62f6fb3c93
+ms.openlocfilehash: 3abac3a0d527c6834105db8fd1c74fd934fd821d
+ms.sourcegitcommit: 41947648c73d437a201b2190307e0270d61e037a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2019
-ms.locfileid: "54443375"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56087934"
 ---
 # <a name="configure-the-sso-tickets-in-biztalk-server"></a>BizTalk Server で SSO チケットを構成します。
 シングル サインオン システム全体のエンタープライズ シングル サインオン (SSO) 管理 mmc スナップインまたはチケットの動作を制御するためのコマンドラインを使用できます。 このツールを使用して、チケットを許可し、SSO チケットを検証できます。  
@@ -60,7 +60,7 @@ ms.locfileid: "54443375"
 1. コマンド プロンプトを開き ([スタート] メニュー > 型**コマンド プロンプト**> 選択**コマンド プロンプト**)。
 
     > [!TIP]
-    >  ユーザー アカウント制御 (UAC) をサポートするシステムで管理者特権でコマンド プロンプトを開く必要があります (右クリックして**コマンド プロンプト**> * * 管理者として実行)。
+    >  ユーザー アカウント制御 (UAC) をサポートするシステムで管理者特権でコマンド プロンプトを開く必要があります (右クリックして**コマンド プロンプト** > **管理者として実行**)。
   
 2. コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは`\Program Files\Common Files\Enterprise Single Sign-On`します。 たとえば、次のように入力します。 
 
