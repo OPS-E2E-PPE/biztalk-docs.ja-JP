@@ -66,7 +66,7 @@ ms.locfileid: "56087934"
 
     `cd C:\Program Files\Common Files\Enterprise Single Sign-On`
   
-3. 型`ssomanage -tickets <allowed yes/no> <validate yes/no>`ここで、 *\<許可はい/いいえ\>* チケットを許可するかどうかどうかを示すと*\<はい/いいえの検証\>* チケットを引き換えるがいる後に検証が必要かどうかを示します。  
+3. 型`ssomanage -tickets <allowed yes/no> <validate yes/no>`ここで、 *\<許可はい/いいえ\>* チケットを許可するかどうかどうかを示すと *\<はい/いいえの検証\>* チケットを引き換えるがいる後に検証が必要かどうかを示します。  
   
     使用することができます`yes`、 `no`、 `on`、または`off`を許可したり、チケットを検証します。 これらの語は大文字と小文字が区別されないため、言語の設定に関係なく使用してください。
   
