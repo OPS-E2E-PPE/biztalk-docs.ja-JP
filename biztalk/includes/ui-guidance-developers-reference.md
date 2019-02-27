@@ -1,1 +1,1 @@
-UI ガイダンスと開発者用リファレンス
+[UI ガイダンスと開発者 API 名前空間のリファレンス](https://docs.microsoft.com/dotnet/api/?view=bts-dotnet)
