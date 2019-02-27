@@ -25,12 +25,12 @@
 #### [BizTalk Adapter for Oracle EBS の主な機能](key-features-in-biztalk-adapter-for-oracle-e-business-suite.md)
 #### [BizTalk Adapter for Oracle EBS の制限事項](limitations-of-biztalk-adapter-for-oracle-e-business-suite.md)
 ### [チュートリアル: Oracle EBS からのデータを SharePoint サイトに表示する](tutorial-present-data-from-oracle-e-business-suite-on-a-sharepoint-site.md)
-#### [手順 1: アダプターを使用して WCF サービスの作成と公開を行う](step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)
-#### [手順 2: Oracle EBS アイテム用のアプリケーション定義ファイルを作成する](step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)
-#### [手順 3: Oracle EBS からデータを取得するための SharePoint アプリケーションを作成する](step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-ebs.md)
+#### [ステップ 1: アダプターを使用して WCF サービスの作成と公開を行う](step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)
+#### [手順 2:Oracle EBS アイテム用のアプリケーション定義ファイルを作成する](step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)
+#### [ステップ 3:Oracle EBS からデータを取得するための SharePoint アプリケーションを作成する](step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-ebs.md)
 ##### [シナリオ 1: ビジネス データ リスト Web パーツを使用してデータを表示する](scenario-1-display-data-using-business-data-list-web-part.md)
 ##### [シナリオ 2: 検索ボックス Web パーツを使用して検索する](scenario-2-search-using-the-search-box-web-part.md)
-#### [手順 4: SharePoint アプリケーションをテストする](step-4-test-your-sharepoint-application.md)
+#### [手順 4:SharePoint アプリケーションをテストする](step-4-test-your-sharepoint-application.md)
 ### [よくあるご質問](oracle-e-business-suite-adapter-faqs.md)
 ## [BizTalk Adapter for Oracle EBS のアーキテクチャの概要](architecture-overview-of-the-biztalk-adapter-for-oracle-e-business-suite.md)
 ## [Oracle EBS アプリケーションをセキュリティで保護する](secure-your-oracle-ebs-applications.md)
@@ -81,7 +81,7 @@
 ##### [SELECT ステートメントを使用してポーリングする](poll-oracle-e-business-suite-using-select-statement.md)
 ##### [ストアド プロシージャを使用してポーリングする](poll-oracle-e-business-suite-using-stored-procedures.md)
 #### [BizTalk Server を使用したデータベース変更通知の受信](receive-oracle-ebs-database-change-notifications-using-biztalk-server.md)
-##### [アンインストールの準備](before-you-receive-database-change-notifications-using-the-oracle-ebs-adapter.md)
+##### [Before you begin](before-you-receive-database-change-notifications-using-the-oracle-ebs-adapter.md)
 ##### [通知メッセージの処理](process-notification-messages-to-complete-specific-tasks-in-oracle-ebs.md)
 ##### [BizTalk Server を使用したデータベース変更通知の段階的な受信](receive-oracle-ebs-change-notifications-incrementally-using-biztalk-server.md)
 ##### [複数の受信場所でのデータベース変更通知の受信](receive-oracle-ebs-database-change-notifications-on-multiple-receive-locations.md)
@@ -131,10 +131,4 @@
 ### [操作に関する問題のトラブルシューティング](troubleshoot-operational-issues-with-the-oracle-e-business-suite-adapter.md)
 ### [パフォーマンス カウンターの使用](use-performance-counters-with-the-oracle-e-business-suite-adapter.md)
 ## [用語と定義](glossary12.md)
-
-
-
-
-
-
-
+## [API 名前空間のリファレンス](https://docs.microsoft.com/dotnet/api/?view=bts-oracle-ebs)
