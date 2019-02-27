@@ -1,1 +1,1 @@
-<span data-ttu-id="b1b27-101">UI ガイダンスと開発者用リファレンス</span><span class="sxs-lookup"><span data-stu-id="b1b27-101">in the UI guidance and Developers reference</span></span>
+<span data-ttu-id="9035b-101">[UI ガイダンスと開発者 API 名前空間のリファレンス](https://docs.microsoft.com/dotnet/api/?view=bts-dotnet)</span><span class="sxs-lookup"><span data-stu-id="9035b-101">in the [UI guidance and developers API namespace reference](https://docs.microsoft.com/dotnet/api/?view=bts-dotnet)</span></span>
