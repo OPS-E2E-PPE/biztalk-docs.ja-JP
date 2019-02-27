@@ -23,9 +23,9 @@
 #### [アダプターの主な機能](key-features-in-biztalk-adapter-for-oracle-database.md)
 #### [アダプターの制限事項](limitations-of-biztalk-adapter-for-oracle-database.md)
 ### [チュートリアル: BizTalk プロジェクトの移行](tutorial-migrate-biztalk-projects-to-the-oracle-database-adapter.md)
-#### [手順 1: vPrev BizTalk プロジェクトを変更する](step-1-modify-the-vprev-biztalk-project-in-oracle-database.md)
-#### [手順 2: BizTalk Server 管理コンソールでオーケストレーションを構成する](step-2-configure-an-orchestration-to-use-the-oracle-db-adapter-in-biztalk.md)
-#### [手順 3: 移行されたアプリケーションをテストする](step-3-test-the-migrated-application-to-oracle-database-adapter.md)
+#### [ステップ 1: vPrev BizTalk プロジェクトを変更する](step-1-modify-the-vprev-biztalk-project-in-oracle-database.md)
+#### [手順 2:BizTalk Server 管理コンソールでオーケストレーションを構成する](step-2-configure-an-orchestration-to-use-the-oracle-db-adapter-in-biztalk.md)
+#### [ステップ 3:移行されたアプリケーションをテストする](step-3-test-the-migrated-application-to-oracle-database-adapter.md)
 ## [アーキテクチャの概要](architecture-overview-of-the-biztalk-adapter-for-oracle-database.md)
 ## [Oracle データベース アプリケーションのセキュリティ保護](secure-your-oracle-database-applications.md)
 ### [Oracle データベースとアダプター間のセキュリティ](security-between-the-oracle-database-and-the-adapter.md)
@@ -74,7 +74,7 @@
 ##### [ストアド プロシージャ、関数、またはパッケージ化されたプロシージャと関数を使用してポーリングする](poll-oracle-db-using-stored-procedures-functions-or-packaged-procedures.md)
 #### [複合操作の実行](run-composite-operations-on-oracle-database-using-biztalk-server.md)
 #### [データベース変更通知の受信](receive-oracle-database-change-notifications-using-biztalk-server.md)
-##### [アンインストールの準備](before-you-receive-database-change-notifications-using-the-oracle-db-adapter.md)
+##### [Before you begin](before-you-receive-database-change-notifications-using-the-oracle-db-adapter.md)
 ##### [通知メッセージの処理](process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md)
 ##### [BizTalk Server を使用したデータベース変更通知の段階的な受信](receive-oracle-database-change-notifications-incrementally-using-biztalk-server.md)
 ##### [複数の受信場所でのデータベース変更通知の受信](receive-oracle-database-change-notifications-on-multiple-receive-locations.md)
@@ -127,10 +127,4 @@
 ### [パフォーマンス カウンターの使用](use-performance-counters-with-the-oracle-database-adapter.md)
 ### [例外とエラー処理](exceptions-and-error-handling-with-the-oracle-database-adapter.md)
 ## [用語と定義](glossary3.md)
-
-
-
-
-
-
-
+## [API 名前空間のリファレンス](https://docs.microsoft.com/dotnet/api/?view=bts-oracle-db)
