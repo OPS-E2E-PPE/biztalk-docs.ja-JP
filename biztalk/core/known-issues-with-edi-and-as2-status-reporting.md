@@ -66,7 +66,7 @@ ms.locfileid: "50753042"
   
  状態を BizTalk Server にアップグレードした後にレポートを使用する場合は、アップグレードを実行する前に、BAM ツールが構成されていることを確認します。  
   
- アップグレードを実行した後、状態レポートが動作しない場合は、アップグレード前に BAM ツールを構成したかどうかをアップグレード ログで確認します。 BAM ツールを構成しにある EdiStatusReportingActivityDefs.xml ファイルに含まれている BusinessMessageJournal BAM アクティビティを展開し、そうでない場合*\<ドライブ\>*: \Program Files\MicrosoftBizTalk Server です。  
+ アップグレードを実行した後、状態レポートが動作しない場合は、アップグレード前に BAM ツールを構成したかどうかをアップグレード ログで確認します。 BAM ツールを構成しにある EdiStatusReportingActivityDefs.xml ファイルに含まれている BusinessMessageJournal BAM アクティビティを展開し、そうでない場合 *\<ドライブ\>*:\Program Files\Microsoft BizTalk Server です。  
   
 ## <a name="disabling-transaction-set-storage-affects-an-activated-batch-but-enabling-storage-does-not"></a>トランザクション セットの格納を無効にした場合はアクティブなバッチが影響を受けるが、格納を有効にした場合は影響を受けない  
  バッチ処理オーケストレーション インスタンスがアクティブになっているときにトランザクション セットの格納を無効にすると、変更は直ちに適用されます。 トランザクション セットの格納が有効なとき、BizTalk Server は、そのバッチのトランザクション セットを格納しますが、格納が無効になると、トランザクション セットを格納しません。 トランザクション セットの格納を無効にするには、[EDI のプロパティ] ダイアログ ボックスの [全般] ペインで、[レポート用にトランザクション セット/ペイロードを格納する] プロパティをオフにします。  
