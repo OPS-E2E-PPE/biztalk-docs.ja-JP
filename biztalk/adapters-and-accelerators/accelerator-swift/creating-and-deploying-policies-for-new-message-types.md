@@ -1,5 +1,5 @@
 ---
-title: 新しいポリシーの展開の作成とメッセージの種類 |Microsoft ドキュメント
+title: 新しいポリシーの展開の作成とメッセージの種類 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b826b3ee9408caf91fe5adcb2177d709f885a6e1
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 570afc1035b9b9430c7f223df4dcec8b82eab756
+ms.sourcegitcommit: 0e14c3e018b091d81d0e4a68fafc10f6e31697e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/19/2019
 ms.locfileid: "25966312"
 ---
 # <a name="creating-and-deploying-policies-for-new-message-types"></a>作成して、新しいメッセージの種類のポリシーを展開します。
 作成して、新しいメッセージの種類のポリシーを展開します。  
   
-1.  MX メッセージ フォルダー内のメッセージの種類の名前を持つフォルダーを作成します。 たとえば、ここでは、フォルダーの名前になります setr.004.001.02 です。  
+1.  MX メッセージ フォルダー内のメッセージの種類の名前のフォルダーを作成します。 たとえば、ここで、フォルダーの名前になります setr.004.001.02 します。  
   
     ```csharp  
     (<xs:complexType name="Document">  
@@ -32,31 +32,31 @@ ms.locfileid: "25966312"
     </xs:complexType>)  
     ```  
   
-2.  結果として得られるマスターと共にスキーマ ファイル (*.xsd) 配置検証ポリシーは、このフォルダーにこのメッセージの種類のファイルです。  
+2.  結果として得られるマスターと共にスキーマ ファイル (*.xsd) の配置/検証ポリシーは、このフォルダーにこのメッセージの種類のファイルします。  
   
-3.  キーワードの名前を持つ MXMessageTypeKeywordList.xml (C:\Program files \microsoft BizTalk Accelerator for swift \sdk\tools) を更新します。 この名前は、メッセージのフォルダー名の最初の 4 つの文字である必要があります。 例を次に示します。  
+3.  キーワードの名前を持つ MXMessageTypeKeywordList.xml (C:\Program files \microsoft BizTalk Accelerator for swift \sdk\tools) を更新します。 この名前は、メッセージ フォルダー名の最初の 4 つの文字である必要があります。 例えば以下のようにします。  
   
     ```csharp  
     (<Keyword name ="setr" />)  
     ```  
   
-4.  特定のマスターを作成する検証ポリシーには、master データベースのコピー//検証ポリシー ファイル、既存のメッセージし、新しいメッセージ フォルダーに配置します。  
+4.  特定のマスターを作成する検証ポリシーでは、マスター_キーのコピーを実行すると、既存のポリシー ファイルの検証メッセージ、新しいメッセージ フォルダーに配置します。  
   
-5.  マスターのメッセージの種類への参照のすべての変更/新しいメッセージの種類を反映するようにポリシーを検証します。  
+5.  すべてのマスターのメッセージの種類への参照を変更/新しいメッセージの種類を反映するようにポリシーを検証します。  
   
 ## <a name="message-naming-conventions"></a>メッセージの名前付け規則  
- これらのメッセージ名の規則に従います。  
+ メッセージ名のこれらの規則に従います。  
   
--   **メッセージ名に読み替え**: 新しいメッセージ名が swift.if.ia.setr.004.001.02 ポリシー ファイルが使用されている古いメッセージが pacs.002.001.02 の場合、[すべて置換] と pacs.002.001.02 の出現回数のポリシー ファイル内で swift.if.ia.setr.004.001.02 です。  
+-   **メッセージ名に置き換える**:新しいメッセージ名が swift.if.ia.setr.004.001.02 ポリシー ファイルが使用されている古いメッセージが pacs.002.001.02 の場合、すべての pacs.002.001.02 の出現回数に置き換えます swift.if.ia.setr.004.001.02 ポリシー ファイル内で。  
   
     > [!NOTE]
-    >  メッセージ名はダウンロードされて、スキーマ ファイルの名前であり、メッセージの種類は、メッセージ内のドキュメントの種類の名前です。  
+    >  メッセージの名前は、ダウンロードされたスキーマ ファイルの名前と、メッセージの種類は、メッセージ内のドキュメントの種類の名前です。  
   
--   メッセージ スキーマ自体と同じポリシー ファイルの名前を保持します。 たとえば、swift.if.ia.setr.004.001.02.xsd は、次のポリシー swift.if.ia.setr.004.001.02 _Master_Policy.xml と swift.if.ia.setr.004.001.02 _Validation_Policy.xml があります。  
+-   メッセージ スキーマ自体と同じポリシー ファイルの名前を保持します。 たとえば、swift.if.ia.setr.004.001.02.xsd では、次のポリシー swift.if.ia.setr.004.001.02 _Master_Policy.xml と swift.if.ia.setr.004.001.02 _Validation_Policy.xml があります。  
   
--   **特殊文字**: メッセージ名が、特殊文字を持つかどうかは、ポリシー ファイルを作成すると、若干異なる規則が必要です。 メッセージ名は、たとえば、swift.if.ia$setr.004.001.02 かどうか、は、置き換えられる特殊文字を含むメッセージ名をポリシー ファイルの名前を変更する必要があります"です"。 たとえば、メッセージのスキーマ ファイルの名前が swift.if.ia$setr.004.001.02.xsd の場合は、結果として得られるマスター ポリシー swift.if.ia.setr.004.001.02_Master_Policy.xml はなります。  
+-   **特殊文字**:メッセージ名では、それに特殊文字が含まれる場合、ポリシー ファイルの作成、若干異なる規則が必要です。 メッセージ名は、たとえば、swift.if.ia$setr.004.001.02 場合によって置き換えられる特殊文字を含むメッセージ名をポリシー ファイルの名前を変更する必要があります"." たとえば、メッセージのスキーマ ファイルの名前が swift.if.ia$setr.004.001.02.xsd の場合は、結果として得られる、マスタ ポリシー swift.if.ia.setr.004.001.02_Master_Policy.xml はします。  
   
-     また、マスター ポリシー ファイルは、次のタグに新しい名前を反映するように変更する必要があります。  
+     マスター ポリシー ファイルは、次のタグに新しい名前を反映するように変更する必要があります。  
   
     -   \<ruleset name="swift.if.ia.setr.004.001.02_Master_Policy"\>  
   
