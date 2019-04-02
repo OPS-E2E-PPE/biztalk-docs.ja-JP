@@ -1,7 +1,7 @@
 ---
 title: SQL アダプターを使用して SQL Server でのポーリング |Microsoft Docs
 ms.custom: ''
-ms.date: 06/08/2017
+ms.date: 01/18/2019
 ms.prod: biztalk-server
 ms.reviewer: ''
 ms.suite: ''
@@ -10,23 +10,23 @@ ms.topic: article
 ms.assetid: c31b3cda-c05e-46db-827b-6c47a53d1a3a
 caps.latest.revision: 19
 author: MandiOhlinger
-ms.author: mandia
+ms.author: mandia,niklase
 manager: anneta
-ms.openlocfilehash: 73bb47bfd631576fe992ef072eee8ff3ff5ba5bf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 80e9251babad12915ce9d9f1ad7662ec90db4eff
+ms.sourcegitcommit: 729299182b56758d01f4a4b9834616dbbdc0c014
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967131"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58764566"
 ---
 # <a name="polling-in-sql-server-using-the-sql-adapter"></a>SQL アダプターを使用して SQL Server でのポーリング
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] SQL Server データベースからデータ変更メッセージを受信アダプターのクライアントを有効にします。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] 「ポーリング ベース」のメッセージの受信をサポート、アダプターが (SELECT ステートメントまたはストアド プロシージャ) は、指定された SQL ステートメントを実行する場合を取得または、データを更新し、一定の間隔でアダプター クライアントに結果を提供します。時間です。  
   
  [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]ポーリングの次の操作を公開します。  
   
-- **ポーリング**: SQL Server テーブルまたはビューの定期的なデータ変更メッセージを受信することができます。 メッセージがない厳密に型指定します。  
+- **ポーリング**:SQL Server テーブルまたはビューの定期的なデータ変更メッセージを受信できます。 メッセージがない厳密に型指定します。  
   
-- **TypedPolling**: SQL Server データベースから厳密に型指定されたメッセージを受信することができます。 ポーリング メッセージ内の要素を他の任意のスキーマにマップする場合は、この操作を使用する必要があります。  
+- **TypedPolling**:SQL Server データベースから厳密に型指定されたメッセージを受信できます。 ポーリング メッセージ内の要素を他の任意のスキーマにマップする場合は、この操作を使用する必要があります。  
   
 - **XmlPolling**します。 SELECT ステートメントまたはストアド プロシージャを FOR XML 句を使用して、XML メッセージとしてデータを返すを使用できます。 この操作は、XML メッセージとしてポーリング メッセージを返します。  
   
@@ -48,7 +48,10 @@ ms.locfileid: "36967131"
 5. アダプターのクライアントが使用できる、 **PollWhileDataFound**ポーリング間隔を無視し、継続的に使用可能な場合と、データをポーリングするプロパティをバインドします。  
   
 6. ポーリング ステートメントを実行した結果として返される結果セットは、受信メッセージとしてアダプター クライアントに送信されます。  
-  
+
+> [!NOTE]
+>  ときに**UseAmbientTransaction**を False に設定されている、 **PolledDataAvailableStatement**というはありません。 アダプターを直接呼び出す代わりに、 **PollingStatement**します。
+
 > [!NOTE]
 >  XmlPolling 操作には、ポーリング操作と同じ手順が含まれます。  
   
@@ -82,7 +85,7 @@ ms.locfileid: "36967131"
 |ポーリングは、アダプターによって開始されます。 アダプターは、データのポーリングに使用できるとポーリングの一部のデータがある場合は、ポーリング ステートメントを実行してポーリングを開始するかどうかを検証するステートメントを実行します。|クエリ通知は、SQL Server によって開始されます。 だけ、アダプターによって発行された通知のステートメントでは、データベース ステートメントの結果セット内の変更がある場合は、通知を開始するように指示します。|  
 |ポーリング ステートメントを使用して、読み取りまたは SQL Server データベース テーブル内のデータを更新することができます。|クエリ通知のステートメントを使用すると、SQL Server データベース テーブルにデータを読み取るだけです。|  
 |ポーリングには、実際のデータが変更されたことについて通知されます。|クエリ通知は、Insert などのデータの変更の種類についてのみ通知は、更新、および削除します。|  
-|データの変更通知が、ポーリング間隔に依存し、アダプター クライアントは、ポーリング間隔の最後に、データの変更について通知されます。 **ヒント:** ポーリングが継続的に、データの変更が発生したありと設定されるタイミングとしては、各変更の通知しないシナリオでスループットを向上を提供します。 代わりに後の最後のデータの変更の通知以降に発生したすべての変更を通知するポーリング間隔を指定します。|データの変更通知は瞬時です。|  
+|データの変更通知が、ポーリング間隔に依存し、アダプター クライアントは、ポーリング間隔の最後に、データの変更について通知されます。 **ヒント:** ポーリングすれば、スループットを向上させる継続的に、データの変更が行われていてと、発生したタイミングとしては、各変更の通知したくないです。 代わりに後の最後のデータの変更の通知以降に発生したすべての変更を通知するポーリング間隔を指定します。|データの変更通知は瞬時です。|  
   
  クエリ通知の詳細については[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]を参照してください[を使用して BizTalk Server によって SQL クエリ通知の受信](../../adapters-and-accelerators/adapter-sql/receive-sql-query-notifications-using-biztalk-server.md)します。  
   
