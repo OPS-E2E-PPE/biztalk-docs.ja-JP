@@ -23,12 +23,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 292bb6504c1c7d8604f18f153e35f6d8e5980017
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6024bc9dedc1ea4b28e185bbc6ed8a025d9e71fd
+ms.sourcegitcommit: af438e8cf6f58e25372689c5de0a184a0a6696a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014563"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58867572"
 ---
 # <a name="architecture-overview-of-the-biztalk-adapter-for-oracle-database"></a>BizTalk Adapter for Oracle Database のアーキテクチャの概要
 アーキテクチャについて説明します、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]します。 
@@ -106,4 +106,4 @@ ms.locfileid: "37014563"
   接続 URI の詳細については、次を参照してください。 [Oracle データベースへの接続を作成する](../../adapters-and-accelerators/adapter-oracle-database/create-a-connection-to-the-oracle-database.md)します。
   
 ## <a name="next"></a>Next
-[Oracle データベース アプリケーションのセキュリティ保護](../../adapters-and-accelerators/adapter-oracle-database/secure-your-oracle-database-applications.md)
+[Oracle データベース アプリケーションのセキュリティ保護します。](../../adapters-and-accelerators/adapter-oracle-database/secure-your-oracle-database-applications.md)
