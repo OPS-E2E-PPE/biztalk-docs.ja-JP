@@ -17,18 +17,18 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d81b18e4fe2180ed3d4e58bfb7bec5e31c1d6a84
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2d390b54a79ca883b53ff5088638ba2804fa2640
+ms.sourcegitcommit: af438e8cf6f58e25372689c5de0a184a0a6696a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996643"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58867556"
 ---
 # <a name="how-to-create-a-net-application-to-test-a-wcf-service-published-with-the-biztalk-wcf-service-publishing-wizard"></a>.NET アプリケーションを作成して、BizTalk WCF サービス公開ウィザードで公開した WCF サービスをテストする方法
 公開済みの WCF サービスをテストするには、公開済みの WCF サービスを使用する .NET アプリケーションを作成します。 このトピックでは、.NET アプリケーションを作成して、公開済みの WCF サービスをテストする方法を説明します。  
   
 > [!NOTE]
->  Visual Studio ヘルプ コレクションには、WCF サービスを使用する .NET アプリケーションを作成するための有用なチュートリアルが含まれています。 このチュートリアルを使用して、公開済みの WCF サービスをテストできます。 WCF クライアント プロジェクトの作成に関する情報および手順を参照してください「チュートリアル: へのアクセス、XML Web サービスを使用して Visual Basic または Visual c#」、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ヘルプ コレクション[ http://go.microsoft.com/fwlink/?LinkId=62263](http://go.microsoft.com/fwlink/?LinkId=62263)します。  
+>  Visual Studio ヘルプ コレクションには、WCF サービスを使用する .NET アプリケーションを作成するための有用なチュートリアルが含まれています。 このチュートリアルを使用して、公開済みの WCF サービスをテストできます。 WCF クライアント プロジェクトの作成に関する情報および手順については、「チュートリアル: Visual Basic または Visual を使用して XML Web サービスへのアクセスC#"で、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ヘルプ コレクション[ http://go.microsoft.com/fwlink/?LinkId=62263](http://go.microsoft.com/fwlink/?LinkId=62263)します。  
 > 
 > [!NOTE]
 >  このトピックでは、ServiceModel メタデータ ユーティリティ ツール (SvcUtil.exe) を使用して、WCF プロキシ クラスおよびアプリケーション構成ファイルを作成します。 SvcUtil.exe は、Windows Vista の Microsoft Windows ソフトウェア開発キット (SDK) および .NET Framework ランタイム コンポーネントに含まれています。  
@@ -59,7 +59,7 @@ ms.locfileid: "36996643"
    ```  
    DeliveryNotification deliveryNotification= new DeliveryNotification();  
    deliveryNotification.TrackingNumber = "001";  
-               Microsoft_Samples_BizTalk_WCFBasicHttp_BizTalkApp_DliveryRequestProcess_DeliveryNotificatonReceivePortClient service = new Microsoft_Samples_BizTalk_WCFBasicHttp_BizTalkApp_DliveryRequestProcess_DeliveryNotificatonReceivePortClient("BasicHttpBinding_ITwoWayAsyncVoid");  
+               Microsoft_Samples_BizTalk_WCFBasicHttp_BizTalkApp_DeliveryRequestProcess_DeliveryNotificationReceivePortClient service = new Microsoft_Samples_BizTalk_WCFBasicHttp_BizTalkApp_DeliveryRequestProcess_DeliveryNotificationReceivePortClient("BasicHttpBinding_ITwoWayAsyncVoid");  
    service.Submit(deliveryNotification);  
    ```  
   

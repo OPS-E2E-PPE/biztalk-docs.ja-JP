@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21b3cc0056bf8105618aac7a9c47056d3e493c49
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5106c067902b3a5ddaf9f6d68d9a5513f136ba25
+ms.sourcegitcommit: af438e8cf6f58e25372689c5de0a184a0a6696a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004347"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58867564"
 ---
 # <a name="considerations-for-receiving-query-notifications-using-the-sql-adapter"></a>SQL アダプタ使用クエリ通知の受信に関する考慮事項
 このトピックではいくつかの考慮事項とベスト プラクティスを使用しているときに考慮する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を SQL Server データベースからクエリ通知を受信します。  
@@ -39,7 +39,7 @@ ms.locfileid: "37004347"
   </Notification>  
   ```  
   
-   内の値に注意してください、 **\<情報\>** 要素。 この値は、通知メッセージを受信した操作について説明します。 アプリケーション内で値を抽出するための機能があります、 **\<情報\>** 要素し、値に基づき、後続のタスクを実行します。 トピック[BizTalk Server を使用して SQL の特定のタスクを実行するプロセスの通知メッセージ](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)が内の値を抽出する方法について説明されています、 **\<情報\>** 要素. 同様のタスクを実行する詳細なチュートリアルはでも[チュートリアル 2: 従業員 - 発注プロセス SQL アダプターを使用して](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)します。  
+   内の値に注意してください、 **\<情報\>** 要素。 この値は、通知メッセージを受信した操作について説明します。 アプリケーション内で値を抽出するための機能があります、 **\<情報\>** 要素し、値に基づき、後続のタスクを実行します。 トピック[BizTalk Server を使用して SQL の特定のタスクを実行するプロセスの通知メッセージ](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)が内の値を抽出する方法について説明されています、 **\<情報\>** 要素. 同様のタスクを実行する詳細なチュートリアルはでも[チュートリアル 2。従業員 - 発注プロセス SQL アダプターを使用して](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)します。  
   
 - 理想的には、クライアント アプリケーションが特定のレコードの通知を受け取った後そのレコードが更新されますできるように、追加の通知が受信されていません。 たとえば、**従業員**を持つテーブルを**状態**列。 すべての新しいレコードに挿入されるため、**従業員**テーブル内の値、**状態**列は常に、次のように、テーブルになりますが、「0」。  
   
@@ -47,7 +47,7 @@ ms.locfileid: "37004347"
   |-------------------|------------|  
   |John|0|  
   
-   アダプターのクライアントを設定する新しく挿入されたレコードの通知を受信する、 **NotificatonStatement**としてプロパティをバインドします。  
+   アダプターのクライアントを設定する新しく挿入されたレコードの通知を受信する、 **NotificationStatement**としてプロパティをバインドします。  
   
   ```  
   SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0  
@@ -83,4 +83,4 @@ ms.locfileid: "37004347"
   
    -   内で、 **Else**ブロック、条件の場合は、特定の操作を実行するオーケストレーション図形を含める必要があります*いない*満たします。  
   
-   上記の要件の詳細については、後述[BizTalk Server を使用して SQL の特定のタスクを実行するプロセスの通知メッセージ](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)します。 詳細なチュートリアルについても記載されて[チュートリアル 2: 従業員 - 発注プロセス SQL アダプターを使用して](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)します。
+   上記の要件の詳細については、後述[BizTalk Server を使用して SQL の特定のタスクを実行するプロセスの通知メッセージ](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)します。 詳細なチュートリアルについても記載されて[チュートリアル 2。従業員 - 発注プロセス SQL アダプターを使用して](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)します。
