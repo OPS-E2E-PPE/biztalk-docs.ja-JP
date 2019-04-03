@@ -1,5 +1,5 @@
 ---
-title: マッピング フェーズ (回復可能なインターチェンジ処理) |Microsoft ドキュメント
+title: マッピング フェーズ (回復可能なインターチェンジ処理) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 20b3e45cf337702457dc8e5986db54df6bea5e5d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 91f7b00bb5bd1490b5a3249ed2b37fb1335e266b
+ms.sourcegitcommit: 68239c81fb12b84a479bf6a4ed8c5b25b249f5ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262314"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58852367"
 ---
-# <a name="mapping-phase-recoverable-interchange-processing"></a><span data-ttu-id="40b2f-102">マッピング フェーズ (回復可能なインターチェンジ処理)</span><span class="sxs-lookup"><span data-stu-id="40b2f-102">Mapping Phase (Recoverable Interchange Processing)</span></span>
-<span data-ttu-id="40b2f-103">既定では、インターチェンジのメッセージが受信ポートのマッピング フェーズで失敗すると、インターチェンジ全体が中断されます。</span><span class="sxs-lookup"><span data-stu-id="40b2f-103">By default, when a message in an interchange fails at the mapping phase of a receive port, the entire interchange is suspended.</span></span> <span data-ttu-id="40b2f-104">この動作を変更するにはという名前のプロパティを追加することによって**BTS です。SuspendMessageOnMapFailure**をメッセージ コンテキストとするコンテキスト プロパティの値を設定して`True`パイプライン コンポーネントからです。</span><span class="sxs-lookup"><span data-stu-id="40b2f-104">You can change this behavior by adding a property named **BTS.SuspendMessageOnMapFailure** to the message context, and by setting the value of the context property to `True` from a pipeline component.</span></span> <span data-ttu-id="40b2f-105">このプロパティを `True` に設定すると、エンド ポイント マネージャーはマッピングの間に失敗したメッセージを保留キューに格納し、インターチェンジの残りのメッセージの処理を続けます。</span><span class="sxs-lookup"><span data-stu-id="40b2f-105">When this property is set to `True`, the end point manager places the message that failed during mapping in the suspended queue and continues to process remaining messages in the interchange.</span></span>  
+# <a name="mapping-phase-recoverable-interchange-processing"></a><span data-ttu-id="4cdc1-102">マッピング フェーズ (回復可能なインターチェンジ処理)</span><span class="sxs-lookup"><span data-stu-id="4cdc1-102">Mapping Phase (Recoverable Interchange Processing)</span></span>
+<span data-ttu-id="4cdc1-103">既定では、インターチェンジのメッセージが受信ポートのマッピング フェーズで失敗すると、インターチェンジ全体が中断されます。</span><span class="sxs-lookup"><span data-stu-id="4cdc1-103">By default, when a message in an interchange fails at the mapping phase of a receive port, the entire interchange is suspended.</span></span> <span data-ttu-id="4cdc1-104">この動作を変更するにはという名前のプロパティを追加することで**BTS します。SuspendMessageOnMappingFailure**に、コンテキスト プロパティの値を設定して、メッセージ コンテキストに`True`パイプライン コンポーネントから。</span><span class="sxs-lookup"><span data-stu-id="4cdc1-104">You can change this behavior by adding a property named **BTS.SuspendMessageOnMappingFailure** to the message context, and by setting the value of the context property to `True` from a pipeline component.</span></span> <span data-ttu-id="4cdc1-105">このプロパティを `True` に設定すると、エンド ポイント マネージャーはマッピングの間に失敗したメッセージを保留キューに格納し、インターチェンジの残りのメッセージの処理を続けます。</span><span class="sxs-lookup"><span data-stu-id="4cdc1-105">When this property is set to `True`, the end point manager places the message that failed during mapping in the suspended queue and continues to process remaining messages in the interchange.</span></span>  
   
- <span data-ttu-id="40b2f-106">次のコードの値の設定、 **SuspendMessageOnFailure**プロパティを True にします。</span><span class="sxs-lookup"><span data-stu-id="40b2f-106">The following code sets the value of the **SuspendMessageOnFailure** property to True.</span></span>  
+ <span data-ttu-id="4cdc1-106">次のコードの値の設定、 **SuspendMessageOnMappingFailure**プロパティを True にします。</span><span class="sxs-lookup"><span data-stu-id="4cdc1-106">The following code sets the value of the **SuspendMessageOnMappingFailure** property to True.</span></span>  
   
 ```  
   
