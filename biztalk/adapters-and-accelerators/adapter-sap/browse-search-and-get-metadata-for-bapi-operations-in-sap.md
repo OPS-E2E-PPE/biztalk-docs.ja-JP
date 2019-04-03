@@ -37,7 +37,7 @@ ms.locfileid: "36978955"
 - 使用して SAP システムに接続されている[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 手順を参照してください[Visual Studio での SAP システムへの接続](../../adapters-and-accelerators/adapter-sap/connect-to-the-sap-system-in-visual-studio.md)します。  
   
 ## <a name="browsing-bapis-in-an-sap-system"></a>SAP システムでの Bapi の参照  
- 使用してメタデータを閲覧中に[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Bapi の Rfc およびビジネス オブジェクトとして明らかになります。 Rfc と Bapi の参照は、SAP システムでの RFC の参照に似ています。 このような場合は、Bapi は Rfc として使用できます、 **RFC**します。 Rfc の参照の詳細については、次を参照してください。[参照、検索、および SAP の RFC 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)します。  
+ 使用してメタデータを閲覧中に[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Bapi の Rfc およびビジネス オブジェクトとして明らかになります。 Rfc と Bapi の参照は、SAP システムでの RFC の参照に似ています。 このような場合は、Bapi は Rfc として使用できます、 **RFC**します。 Rfc の参照の詳細については、[参照、検索、および SAP の RFC 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)を参照してください。  
   
  このセクションでは、ビジネス オブジェクトとしての Bapi の参照についてを説明します。 SAP メタデータの参照の詳細については、次を参照してください[SAP メタデータには、アダプターの画面はどのようにですか?。](https://msdn.microsoft.com/library/dd788039.aspx)  
   
@@ -106,7 +106,7 @@ ms.locfileid: "36978955"
  使用することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]SAP アイテムを選択したスキーマを生成します。 参照を呼び出したいアーティファクトの検索し、それらの成果物のスキーマを生成し、SAP システムに、スキーマに準拠したメッセージを送信できます。  
   
 > [!NOTE]
->  そのカテゴリのサブツリー内のすべての操作を返すカテゴリ ノードを選択することができます: 全体を選択するなど、BAPI のサブ機能が (そのグループ内のすべての Bapi のスキーマの生成) をまたはそれらの Bapi のスキーマを生成する特定の Bapi を選択します。 ノードの詳細については、次を参照してください。[メタデータ ノード IDs4](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)します。  
+>  そのカテゴリのサブツリー内のすべての操作を返すカテゴリ ノードを選択することができます: 全体を選択するなど、BAPI のサブ機能が (そのグループ内のすべての Bapi のスキーマの生成) をまたはそれらの Bapi のスキーマを生成する特定の Bapi を選択します。 ノードの詳細については、[メタデータ ノード IDs4](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)を参照してください。  
   
 #### <a name="to-retrieve-metadata-for-bapis"></a>Bapi のメタデータを取得するには  
   
@@ -134,7 +134,7 @@ ms.locfileid: "36978955"
    >  使用する場合[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、名前付け規則で既定では、ファイルの作成"SAPBinding\<n\>.xsd"ここで、' n '、1 を指定できます、2 などによって作成されたスキーマ ファイルの数にします。 または、スキーマ ファイルにカスタム名を提供の名前を入力、**ファイル名のプレフィックス**テキスト ボックス。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]名前付け規則で今すぐスキーマ ファイルを作成します\<ファイル名のプレフィックス\>\<n\>.xsd。  
    > 
    > [!NOTE]
-   >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]スキーマの生成中に指定したバインドのプロパティを含むバインド ファイル (XML ファイル) も作成操作と操作を呼び出すための SOAP アクション。 接続 URI、バインドのプロパティを持つ WCF カスタム ポートを作成する BizTalk Server 管理コンソールでこのバインド ファイルをインポートして、SOAP アクションを設定します。 詳細については、次を参照してください。 [sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)します。
+   >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]スキーマの生成中に指定したバインドのプロパティを含むバインド ファイル (XML ファイル) も作成操作と操作を呼び出すための SOAP アクション。 接続 URI、バインドのプロパティを持つ WCF カスタム ポートを作成する BizTalk Server 管理コンソールでこのバインド ファイルをインポートして、SOAP アクションを設定します。 詳細については、[sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)を参照してください。
   
 6. **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
@@ -150,7 +150,7 @@ ms.locfileid: "36978955"
 3. **利用可能なカテゴリと操作**ボックスに、操作は、カテゴリ (BAPI の機能グループ) をクリックして、WCF クライアントを生成する選択**追加**します。 選択した操作が記載されて、**カテゴリと操作を追加**ボックス。 記載されている任意のノードを選択することができます、**利用可能なカテゴリと操作**ボックス。 カテゴリのノードを選択した場合は、すべてのノードとそのサブ ノードで使用可能な操作が選択されます。  
   
    > [!IMPORTANT]
-   >  [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]各ビジネス オブジェクトの一意の WCF クライアント クラスが生成されます。 によって、カテゴリと、選択した操作は、複数の WCF クライアント クラスが生成されます。 詳細については、次を参照してください。 [WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)します。  
+   >  [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]各ビジネス オブジェクトの一意の WCF クライアント クラスが生成されます。 によって、カテゴリと、選択した操作は、複数の WCF クライアント クラスが生成されます。 詳細については、[WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)を参照してください。  
   
 4. ほとんどのシナリオで、既定のシリアル化オプションで十分です。ただし、必要な場合は、生成されたコードに関するいくつかの側面と使用されるシリアライザーの型を制御できます。 これらのオプションを設定するには  
   
@@ -164,9 +164,9 @@ ms.locfileid: "36978955"
   
       ![高度なオプションが既定の設定をボックス](../../adapters-and-accelerators/adapter-oracle-database/media/r2-net-adapters-oracle-msb-advanced-options.gif "R2_NET_Adapters_Oracle_MSB_Advanced_Options")  
   
-      オプションで構成できる、**詳細オプション**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用する場合は、ボックスはいくつかの使用可能なオプションに相当します。 これらのオプションの詳細については、次を参照してください。 [ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)します。 
+      オプションで構成できる、**詳細オプション**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用する場合は、ボックスはいくつかの使用可能なオプションに相当します。 これらのオプションの詳細については、[ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)を参照してください。 
   
-5. **[OK]** をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]選択した操作とカテゴリのプロジェクト ディレクトリ内の WCF クライアント クラスとヘルパー コードを保存します。 既定では、構成ファイルも保存されます。 詳細については、次を参照してください。 [WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)します。  
+5. **[OK]** をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]選択した操作とカテゴリのプロジェクト ディレクトリ内の WCF クライアント クラスとヘルパー コードを保存します。 既定では、構成ファイルも保存されます。 詳細については、[WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [Visual Studio で SAP 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)

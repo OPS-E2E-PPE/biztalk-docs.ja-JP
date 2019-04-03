@@ -24,7 +24,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36995219"
 ---
 # <a name="message-schemas-for-bapi-operations"></a>BAPI 操作のメッセージ スキーマ
-次のセクションでは、メッセージ スキーマやメッセージのアクションでの Bapi を呼び出すために使用について説明します、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]ビジネス オブジェクトのメソッドとして。 アダプターの RFC 操作として、Bapi を呼び出すこともできます。 Rfc の呼び出しに使用するメッセージの詳細については、次を参照してください。 [RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)します。 常に、アダプターは、アダプターでの BAPI の起動方法に関係なく、SAP システムの RFC として、BAPI を呼び出します。 方法の概要については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サポート Bapi を参照してください[SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)します。  
+次のセクションでは、メッセージ スキーマやメッセージのアクションでの Bapi を呼び出すために使用について説明します、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]ビジネス オブジェクトのメソッドとして。 アダプターの RFC 操作として、Bapi を呼び出すこともできます。 Rfc の呼び出しに使用するメッセージの詳細については、[RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)を参照してください。 常に、アダプターは、アダプターでの BAPI の起動方法に関係なく、SAP システムの RFC として、BAPI を呼び出します。 方法の概要については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サポート Bapi を参照してください[SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)します。  
 
 ## <a name="message-structure-for-business-object-operations"></a>ビジネス オブジェクトの操作のメッセージの構造  
  次の表では、ビジネス オブジェクト メソッドとして BAPI を呼び出すために使用するメッセージ スキーマを示します。  

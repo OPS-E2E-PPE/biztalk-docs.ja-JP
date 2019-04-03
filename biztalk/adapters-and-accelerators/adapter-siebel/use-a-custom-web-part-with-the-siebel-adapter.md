@@ -31,9 +31,9 @@ ms.locfileid: "36999763"
 ## <a name="before-you-begin"></a>はじめに  
  カスタム Web パーツを作成する前に。  
   
--   WCF サービスとしての Siebel 成果物を発行します。 詳細については、次を参照してください。[手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作を発行](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)で[チュートリアル 1: 提示データ Siebel システムから SharePoint サイトで](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)します。  
+-   WCF サービスとしての Siebel 成果物を発行します。 詳細については、[手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作を発行](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)で[チュートリアル 1: 提示データ Siebel システムから SharePoint サイトで](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)を参照してください。  
   
--   Microsoft Office SharePoint Server でビジネス データ カタログを使用して Siebel アイテム用のアプリケーション定義ファイルを作成します。 詳細については、次を参照してください。[手順 2: Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルの作成](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)で[チュートリアル 1: 提示データ Siebel システムから SharePoint サイトで](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)します。  
+-   Microsoft Office SharePoint Server でビジネス データ カタログを使用して Siebel アイテム用のアプリケーション定義ファイルを作成します。 詳細については、[手順 2: Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルの作成](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)で[チュートリアル 1: 提示データ Siebel システムから SharePoint サイトで](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)を参照してください。  
   
 ##  <a name="Create_a_Custom_Web_Part"></a> 手順 1: カスタム Web パーツを作成します。  
  Visual Studio を使用して、カスタム Web パーツを作成するには、次の操作を行います。  

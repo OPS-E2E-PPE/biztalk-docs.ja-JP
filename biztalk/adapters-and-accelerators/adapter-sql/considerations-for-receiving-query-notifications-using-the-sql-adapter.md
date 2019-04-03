@@ -64,7 +64,7 @@ ms.locfileid: "58867564"
   
    更新操作では、通知をアダプターのクライアントに送信もう一度興味深いことに、プロセス全体がもう一度繰り返されますと、そのため、クライアント アプリケーションでは、必要なロジックをこのような不要な通知を破棄する必要があります。  
   
-- 場合、 **NotifyOnListenerStart**プロパティのバインドは、アダプターのクライアント受信場所を開始するたびに通知メッセージが表示されます。 バインド プロパティを使用し、通知メッセージを解釈する方法の詳細については、次を参照してください。[受信クエリ通知した後、受信場所のブレーク ダウンでは、BizTalk Server を使用して SQL](../../adapters-and-accelerators/adapter-sql/receive-query-notifications-after-a-sql-receive-location-stops-in-biztalk.md)します。  
+- 場合、 **NotifyOnListenerStart**プロパティのバインドは、アダプターのクライアント受信場所を開始するたびに通知メッセージが表示されます。 バインド プロパティを使用し、通知メッセージを解釈する方法の詳細については、[受信クエリ通知した後、受信場所のブレーク ダウンでは、BizTalk Server を使用して SQL](../../adapters-and-accelerators/adapter-sql/receive-query-notifications-after-a-sql-receive-location-stops-in-biztalk.md)を参照してください。  
   
 ## <a name="typical-orchestration-for-receiving-notifications"></a>通知を受信するための一般的なオーケストレーション  
  このセクションを使用して通知を受信するための一般的なオーケストレーション フローの概要、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  

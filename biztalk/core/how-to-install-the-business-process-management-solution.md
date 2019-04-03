@@ -266,7 +266,7 @@ ms.locfileid: "50752523"
        |**[ユーザー名]**|\<*BizTalk サービス アカウント名*\>|  
        |**Password**|\<*BizTalk サービス アカウントのパスワード*\>|  
   
-6. BPM ソリューションを実行します。 ソリューションの実行の詳細については、次を参照してください。 [、ビジネス プロセス管理ソリューションを実行する方法](../core/how-to-run-the-business-process-management-solution.md)します。  
+6. BPM ソリューションを実行します。 ソリューションの実行の詳細については、[、ビジネス プロセス管理ソリューションを実行する方法](../core/how-to-run-the-business-process-management-solution.md)を参照してください。  
   
 ## <a name="next-steps"></a>次の手順  
  ビジネス管理ソリューションがでどのように動作するかをテストする[、ビジネス プロセス管理ソリューションを実行する方法](../core/how-to-run-the-business-process-management-solution.md)します。  
