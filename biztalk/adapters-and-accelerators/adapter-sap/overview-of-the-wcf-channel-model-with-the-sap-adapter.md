@@ -30,7 +30,7 @@ SAP システムでは、Rfc、Trfc、Bapi を呼び出すまたは IDOC を SAP
  このセクションのトピックの使用の概要を提供する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] WCF チャネル モデルを使用します。  
   
 ## <a name="wcf-channel-model-overview"></a>WCF チャネル モデルの概要  
- クライアントとサービスは、SOAP メッセージを交換して通信します。 WCF チャネル モデルとは、このメッセージ交換の低レベルの抽象化です。 インターフェイスおよびチャネル スタックと呼ばれる複数層のプロトコル スタックを使用してメッセージを送受信するための型を提供します。 チャネルのスタックの各層がで構成され、WCF バインドから各チャネルが作成されます。 最下位の層では、トランスポート チャネルです。 トランスポート チャネルがサービスとクライアント間の基盤トランスポート メカニズムを実装し、として上位レイヤー (および最終的には、コンシューマー側アプリケーション) には、各メッセージを表示、 **System.ServiceModel.Message**します。 WCF**メッセージ**クラスは、SOAP メッセージの抽象化します。 WCF には、基本的な SOAP メッセージ交換パターンなどの要求/応答または一方向のモデル化するチャネル形状と呼ばれるいくつかのチャネル インターフェイスが用意されています。 WCF トランスポート バインディングは、1 つの実装を提供します。 または、レイヤーの高い複数のチャネル形状はメッセージの送受信に使用できます。 WCF チャネル モデルの詳細については、次を参照してください。[チャネル モデルの概要](https://msdn.microsoft.com/library/ms729840.aspx)します。
+ クライアントとサービスは、SOAP メッセージを交換して通信します。 WCF チャネル モデルとは、このメッセージ交換の低レベルの抽象化です。 インターフェイスおよびチャネル スタックと呼ばれる複数層のプロトコル スタックを使用してメッセージを送受信するための型を提供します。 チャネルのスタックの各層がで構成され、WCF バインドから各チャネルが作成されます。 最下位の層では、トランスポート チャネルです。 トランスポート チャネルがサービスとクライアント間の基盤トランスポート メカニズムを実装し、として上位レイヤー (および最終的には、コンシューマー側アプリケーション) には、各メッセージを表示、 **System.ServiceModel.Message**します。 WCF**メッセージ**クラスは、SOAP メッセージの抽象化します。 WCF には、基本的な SOAP メッセージ交換パターンなどの要求/応答または一方向のモデル化するチャネル形状と呼ばれるいくつかのチャネル インターフェイスが用意されています。 WCF トランスポート バインディングは、1 つの実装を提供します。 または、レイヤーの高い複数のチャネル形状はメッセージの送受信に使用できます。 WCF チャネル モデルの詳細については、[チャネル モデルの概要](https://msdn.microsoft.com/library/ms729840.aspx)を参照してください。
   
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]は WCF サービスとしての SAP システムを公開する WCF カスタム トランスポート バインドします。  
   
@@ -105,7 +105,7 @@ Message inputMessge = Message.CreateMessage(MessageVersion.Soap11, "http://Micro
   
 - ReceiveIdoc 要求メッセージを処理 (受信) を呼び出して、 **WriteBodyContents**メソッドを持つメッセージを**XmlDictionaryWriter**ノード値のストリーミングを実装します。  
   
-  WCF チャネル モデルを使用してフラット ファイル (string) Idoc をストリームの詳細については、次を参照してください。 [WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc のストリーミング](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)します。  
+  WCF チャネル モデルを使用してフラット ファイル (string) Idoc をストリームの詳細については、[WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc のストリーミング](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
 [WCF チャネル モデルを使用してアプリケーションを開発する](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

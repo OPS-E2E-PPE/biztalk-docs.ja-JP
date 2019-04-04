@@ -33,7 +33,7 @@ Functoid をマップで使用する場合の重要な点は、Functoid に対�
   
   リンクまたは functoid を使用して、ラベルを指定すると、**ラベル**プロパティ リンクまたは functoid が選択されている場合は、プロパティ ウィンドウで、そのラベルに表示されます、**構成\<Functoid\>Functoid**  ダイアログ ボックスではなく、スキーマ ノードの対応する XPath や入力パラメーターとして使用される functoid の名前。 ラベルを使用すると、各パラメーターの識別や、適切な順序での配置を容易に行うことができます。  
   
-  Functoid の入力パラメーターの適切な順序の詳細については、次を参照してください。、 **Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+  Functoid の入力パラメーターの適切な順序の詳細については、、 **Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
   
 ## <a name="see-also"></a>参照  
  [Functoid 入力パラメーターを構成します。](../core/how-to-configure-functoid-input-parameters.md)   

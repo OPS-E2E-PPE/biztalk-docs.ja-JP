@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37015123"
 ---
 # <a name="using-fault-handling"></a>エラー処理の使用
-中に[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)]しない限り、エラーの例外メッセージの処理は、クライアントに返されません、 **FaultException** (または subtype) がスローされますまたは**FaultContract**実装されます。 したがって、このようなシナリオでは、エラー メッセージ自体からデータを追跡することしかできません。 コールバック実装では、例外が自動的に両方は、エラー メッセージとして返されます**ServerFault**と**ClientFault**ポイントを追跡します。 ただし、どのような場合でも、一般的なメッセージを示す汎用エラーが戻されます。 WCF エラー コントラクトの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=83132](http://go.microsoft.com/fwlink/?LinkId=83132)します。  
+中に[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)]しない限り、エラーの例外メッセージの処理は、クライアントに返されません、 **FaultException** (または subtype) がスローされますまたは**FaultContract**実装されます。 したがって、このようなシナリオでは、エラー メッセージ自体からデータを追跡することしかできません。 コールバック実装では、例外が自動的に両方は、エラー メッセージとして返されます**ServerFault**と**ClientFault**ポイントを追跡します。 ただし、どのような場合でも、一般的なメッセージを示す汎用エラーが戻されます。 WCF エラー コントラクトの詳細については、[ http://go.microsoft.com/fwlink/?LinkId=83132](http://go.microsoft.com/fwlink/?LinkId=83132)を参照してください。  
   
  エラー追跡ポイントを使用して、定数とコンテキスト プロパティを追跡することもできます。  
   

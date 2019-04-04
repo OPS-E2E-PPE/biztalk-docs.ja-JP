@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37021555"
 ---
 # <a name="execute-stored-procedures-in-sql-server-using-the-sql-adapter"></a>SQL アダプターを使用して SQL Server でのストアド プロシージャの実行します。
-Transact SQL と CLR ストアド プロシージャの SQL Server での操作として表示された[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]下、**プロシージャ**ノードを使用しているときに、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 によって公開される操作名、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server のストアド プロシージャの名前と同じです。 ストアド プロシージャ内のすべてのパラメーターは、対応する操作で公開されます。 OUT パラメーターには、ストアド プロシージャの戻り値が含まれています。 ストアド プロシージャの結果セットは、データセットの配列です。 データセットの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=196853](http://go.microsoft.com/fwlink/?LinkId=196853)します。 ターゲット オブジェクトのスキーマ情報は、実行時に、応答メッセージの一部として取得されます。  
+Transact SQL と CLR ストアド プロシージャの SQL Server での操作として表示された[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]下、**プロシージャ**ノードを使用しているときに、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 によって公開される操作名、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server のストアド プロシージャの名前と同じです。 ストアド プロシージャ内のすべてのパラメーターは、対応する操作で公開されます。 OUT パラメーターには、ストアド プロシージャの戻り値が含まれています。 ストアド プロシージャの結果セットは、データセットの配列です。 データセットの詳細については、[ http://go.microsoft.com/fwlink/?LinkId=196853](http://go.microsoft.com/fwlink/?LinkId=196853)を参照してください。 ターゲット オブジェクトのスキーマ情報は、実行時に、応答メッセージの一部として取得されます。  
 
  ただし、デザイン時にターゲット オブジェクトのスキーマ情報を取得する場合は、プロシージャのスキーマを生成する必要があります、 **Strongly-Typed プロシージャ**内のノード、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 同じストアド プロシージャが下に表示されるメモ、**プロシージャ**と**Strongly-Typed プロシージャ**ノード。 ストアド プロシージャの戻り値は、厳密に型指定とだけでなくデータセットの配列。 スキーマ情報は、デザイン時に、としては、ストアド プロシージャのスキーマを別の操作を別のスキーマにマップするのに使用できます。 たとえば、データベース テーブルに対する挿入操作の生成されたスキーマを厳密に型指定されたプロシージャの生成されたスキーマをマップできます。  
 
@@ -31,7 +31,7 @@ Transact SQL と CLR ストアド プロシージャの SQL Server での操作�
 >   -   テーブルにいくつかの操作を実行する CLR ストアド プロシージャになります。  
 
 ## <a name="support-for-stored-procedures-with-for-xml-clause"></a>FOR XML 句を使用したストアド プロシージャのサポート  
- [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を FOR XML 句を使用した SELECT ステートメントを持つストアド プロシージャを実行することもできます。 SELECT ステートメントでは、FOR XML 句を使用して行セットではなく、結果を XML として返します。 FOR XML 句の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=131402](http://go.microsoft.com/fwlink/?LinkId=131402)します。  
+ [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を FOR XML 句を使用した SELECT ステートメントを持つストアド プロシージャを実行することもできます。 SELECT ステートメントでは、FOR XML 句を使用して行セットではなく、結果を XML として返します。 FOR XML 句の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=131402](http://go.microsoft.com/fwlink/?LinkId=131402)を参照してください。  
 
 > [!NOTE]
 >  「ネイティブ」[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]で使用可能な[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]サポート XML を返すプロシージャが格納されているものは、資格のあるしか FOR XML 句、SELECT ステートメントでします。 WCF ベースを使用してこれらのストアド プロシージャを実行する FOR XML 句を使用したストアド プロシージャのサポート、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]ストアド プロシージャの定義に変更を加えずにします。  

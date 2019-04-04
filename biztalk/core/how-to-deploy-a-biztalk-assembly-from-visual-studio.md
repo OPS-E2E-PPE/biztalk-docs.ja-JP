@@ -28,7 +28,7 @@ ms.locfileid: "37010635"
   
  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 内からプロジェクトまたはソリューションを展開するオプションを選択すると、1 つのまたは複数のアセンブリが自動的にビルドされ、ローカルの BizTalk グループ内の指定した BizTalk アプリケーションに展開されます。 アプリケーションがグループ内に存在しない場合は、展開によってアプリケーションの作成も行われます。 アセンブリとアセンブリに含まれるアイテムは登録され、それらのデータは BizTalk グループの BizTalk 管理 (構成) データベースに格納されます。 また、プロジェクトの展開のプロパティでこのオプションを指定した場合、アセンブリはグローバル アセンブリ キャッシュ (GAC) に追加されます。  
   
- "アイテム" とは、BizTalk アプリケーション内に存在するあらゆる項目のことです。これには、アセンブリ、オーケストレーションなど、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で使用するリソースだけでなく、送信ポート、受信ポート、証明書、スクリプトなど、アプリケーションの展開後に作成または追加したその他の項目も含まれます。 アセンブリが展開されたら、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]コンソールの [アプリケーション] ノードでアセンブリのアイテムを表示および管理できるようになります。 各アプリケーションは個別のフォルダーに格納され、サブフォルダーにアプリケーション内のアイテムが表示されます。 詳細については、次を参照してください。 [、BizTalk Server 管理コンソールを使用して](../core/using-the-biztalk-server-administration-console.md)します。 作成して、アプリケーションの管理の詳細については、次を参照してください。 [Deploying and Managing BizTalk Applications](../core/deploying-and-managing-biztalk-applications.md)します。  
+ "アイテム" とは、BizTalk アプリケーション内に存在するあらゆる項目のことです。これには、アセンブリ、オーケストレーションなど、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で使用するリソースだけでなく、送信ポート、受信ポート、証明書、スクリプトなど、アプリケーションの展開後に作成または追加したその他の項目も含まれます。 アセンブリが展開されたら、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]コンソールの [アプリケーション] ノードでアセンブリのアイテムを表示および管理できるようになります。 各アプリケーションは個別のフォルダーに格納され、サブフォルダーにアプリケーション内のアイテムが表示されます。 詳細については、[、BizTalk Server 管理コンソールを使用して](../core/using-the-biztalk-server-administration-console.md)を参照してください。 作成して、アプリケーションの管理の詳細については、[Deploying and Managing BizTalk Applications](../core/deploying-and-managing-biztalk-applications.md)を参照してください。  
   
  アセンブリを展開する場合、まず、次の手順を実行する必要があります。  
   
@@ -36,7 +36,7 @@ ms.locfileid: "37010635"
   
 -   」の説明に従って、プロジェクトの配置プロパティを設定[Visual Studio の配置プロパティを設定する方法](../core/how-to-set-deployment-properties-in-visual-studio.md)します。  
   
--   以前に展開したアセンブリがある場合は、プロジェクトの再展開オプションを有効にします。 手順と再デプロイする場合は、その他の重要な情報では、次を参照してください。 [Visual Studio から BizTalk アセンブリを再デプロイする方法](../core/how-to-redeploy-a-biztalk-assembly-from-visual-studio.md)します。  
+-   以前に展開したアセンブリがある場合は、プロジェクトの再展開オプションを有効にします。 手順と再デプロイする場合は、その他の重要な情報では、[Visual Studio から BizTalk アセンブリを再デプロイする方法](../core/how-to-redeploy-a-biztalk-assembly-from-visual-studio.md)を参照してください。  
   
 > [!IMPORTANT]
 >  ここで説明する作業は、実稼働コンピューターでは行わないでください。 開発の過程ではしばしば、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] からのアセンブリの再展開が必要になります。 再展開を可能にするため、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] では同一または別のアプリケーション内に存在するアイテムの展開解除、バインド解除、停止、および参加解除が行われます。 これは開発環境では必要であり適切なことですが、実稼働環境では予期しない結果や結果や好ましくない結果を引き起こす可能性があります。 また、実稼働コンピューター上の [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] からアセンブリが展開される危険性を回避するために、実稼働コンピューターには [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] をインストールしないことをお勧めします。  

@@ -25,10 +25,10 @@ ms.locfileid: "36990667"
 ## <a name="general-troubleshooting"></a>一般的なトラブルシューティング  
   
 ### <a name="enabling-web-services-publishing-wizard-tracing"></a>Web サービス公開ウィザードのトレースを有効にする  
- コメントを解除して、BizTalk Web サービス公開ウィザードをデバッグするトレースを有効にした、\<追加\>BTSWebSvcWiz.exe.config ファイル内のノード。 Web サービス公開ウィザードからトレース情報の取得の詳細については、次を参照してください。 [BTSWebSvcWiz.exe.config を変更する方法](../core/how-to-modify-btswebsvcwiz-exe-config.md)します。  
+ コメントを解除して、BizTalk Web サービス公開ウィザードをデバッグするトレースを有効にした、\<追加\>BTSWebSvcWiz.exe.config ファイル内のノード。 Web サービス公開ウィザードからトレース情報の取得の詳細については、[BTSWebSvcWiz.exe.config を変更する方法](../core/how-to-modify-btswebsvcwiz-exe-config.md)を参照してください。  
   
 ### <a name="enabling-soap-message-tracing"></a>SOAP メッセージ トレースを有効にする  
- SOAP メッセージ トレースを有効にすることにより、SOAP 拡張を使用して Web サービス公開アプリケーションをデバッグできます。 SOAP 拡張機能の詳細については、次を参照してください。[方法: SOAP 拡張機能を実装](http://go.microsoft.com/fwlink/?LinkId=62314)します。  
+ SOAP メッセージ トレースを有効にすることにより、SOAP 拡張を使用して Web サービス公開アプリケーションをデバッグできます。 SOAP 拡張機能の詳細については、[方法: SOAP 拡張機能を実装](http://go.microsoft.com/fwlink/?LinkId=62314)を参照してください。  
   
 ### <a name="using-the-throwdetailederror-switch"></a>ThrowDetailedError スイッチの使用  
  Web クライアントが受け取るジェネリックでエラーが発生する場合**SoapException**します。  
@@ -164,7 +164,7 @@ ms.locfileid: "36990667"
 ### <a name="why-am-i-getting-errors-publishing-my-schema-that-uses-the-include-element"></a>なぜエラーを使用したスキーマを公開、\<含める\>要素でしょうか。  
  循環参照が含まれる場合、スキーマをパブリッシュできません (インクルードされるスキーマが、**含める**をインクルードするスキーマの要素) または未解決**schemaLocation**属性。  
   
- 制限の詳細については、**含める**要素を参照してください[Include 要素のバインディング サポート](http://go.microsoft.com/fwlink/?LinkId=62312)します。 Web サービス公開ウィザードでは、.NET Framework 2.0 の XSD.exe と同じ制限詳細については、次を参照してください。 [Import 要素のバインディング サポート](http://go.microsoft.com/fwlink/?LinkId=119606)します。  
+ 制限の詳細については、**含める**要素を参照してください[Include 要素のバインディング サポート](http://go.microsoft.com/fwlink/?LinkId=62312)します。 Web サービス公開ウィザードでは、.NET Framework 2.0 の XSD.exe と同じ制限詳細については、[Import 要素のバインディング サポート](http://go.microsoft.com/fwlink/?LinkId=119606)を参照してください。  
   
 ### <a name="why-do-i-receive-errors-when-publishing-my-envelope-schema"></a>エンベロープ スキーマを公開するときにエラーになるのはなぜですか。  
  Web サービスとして公開するエンベロープ スキーマがある場合、生成された Web プロジェクトを手動で変更する必要があります。  

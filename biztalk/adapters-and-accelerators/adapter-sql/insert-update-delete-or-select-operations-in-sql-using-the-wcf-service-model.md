@@ -22,13 +22,13 @@ ms.locfileid: "37011171"
 # <a name="insert-update-delete-or-select-operations-in-sql-using-the-wcf-service-model"></a>挿入、更新、削除、または WCF サービス モデルを使用して SQL の操作を選択します。
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]一連の SQL Server データベースのテーブルおよびビューに対する Insert、Select、Update、および Delete の基本的な操作を検出します。 これらの操作を使用すると、実行の単純な SQL Insert、Select、Update、および Delete ステートメントで Where 修飾対象のテーブルまたはビューの句。 このトピックでは、WCF サービス モデルを使用してこれらの操作を実行する方法について説明します。  
   
- アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。 [Insert、Update、Delete、およびテーブルとビューを SQL アダプターを使用した操作の選択](../../adapters-and-accelerators/adapter-sql/insert-update-delete-and-select-on-tables-and-views-with-the-sql-adapter.md)します。  
+ アダプターがこれらの操作をサポートする方法の詳細については、[Insert、Update、Delete、およびテーブルとビューを SQL アダプターを使用した操作の選択](../../adapters-and-accelerators/adapter-sql/insert-update-delete-and-select-on-tables-and-views-with-the-sql-adapter.md)を参照してください。  
   
 > [!NOTE]
 >  ユーザー定義型の列を含むテーブルに対して操作を実行している場合ことを確認するを参照してください[テーブルと、SQL アダプターを使用してユーザー定義型を持つビューで操作](../../adapters-and-accelerators/adapter-sql/operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter.md)アプリケーションの開発を開始する前にします。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、Employee テーブルに対する操作を実行します。 サンプルで提供される SQL スクリプトを実行して、従業員テーブルが作成されます。 サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。 サンプルについては、 **EmployeeBasicOps**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サンプル。  
+ このトピックの例では、Employee テーブルに対する操作を実行します。 サンプルで提供される SQL スクリプトを実行して、従業員テーブルが作成されます。 サンプルの詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。 サンプルについては、 **EmployeeBasicOps**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サンプル。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
  基本的な SQL 操作に対して生成された WCF クライアントの名前を[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]検出、次の表に示すように、テーブルまたはビューの名前に基づきます。  
@@ -115,7 +115,7 @@ public partial class TableOp_dbo_EmployeeClient : System.ServiceModel.ClientBase
   
 1. Visual Studio で Visual c# プロジェクトを作成します。 このトピックでは、コンソール アプリケーションを作成します。  
   
-2. Insert、Select、Update、WCF クライアント クラスを生成し、Employee テーブルに対して操作を削除します。 WCF クライアント クラスを生成する詳細については、次を参照してください。 [SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)します。  
+2. Insert、Select、Update、WCF クライアント クラスを生成し、Employee テーブルに対して操作を削除します。 WCF クライアント クラスを生成する詳細については、[SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)を参照してください。  
   
    > [!IMPORTANT]
    >  WCF クライアント クラスを生成する前に必ず設定して、 **EnableBizTalkCompatibilityMode**プロパティを false にバインドします。  
@@ -134,7 +134,7 @@ public partial class TableOp_dbo_EmployeeClient : System.ServiceModel.ClientBase
     このスニペットで`TableOp_dbo_EmployeeClient`SqlAdapterBindingClient.cs で定義されている WCF クライアントです。 このファイルがによって生成された、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 `SqlAdapterBinding_TableOp_dbo_Employee` クライアント エンドポイント構成の名前を指定され、app.config で定義されます。このファイルがによって生成されても、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]バインドのプロパティとその他の構成設定が含まれています。  
   
    > [!NOTE]
-   >  このスニペットでは、構成ファイルからバインドおよびエンドポイント アドレスを使用します。 これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定する、さまざまな方法の詳細については、次を参照してください。 [SQL アダプタのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md)します。  
+   >  このスニペットでは、構成ファイルからバインドおよびエンドポイント アドレスを使用します。 これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定する、さまざまな方法の詳細については、[SQL アダプタのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md)を参照してください。  
   
 5. 次のスニペットで説明されているように、クライアントを開きます。  
   

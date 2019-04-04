@@ -38,4 +38,4 @@ ms.locfileid: "37023760"
   
 7. をクリックして、 **SubmitRequest**行程入口サービスに要求を送信するボタンをクリックします。 応答メッセージを表示するフォルダー \Source\Samples\DynamicResolution\Test\FileDrop\Out を開きます。  
   
-   散布図を収集サンプルが ESB スケジュール サービスを使用する方法については、次を参照してください。 [、スキャッター/ギャザー サンプルのしくみ](../esb-toolkit/how-the-scatter-gather-sample-works.md)します。
+   散布図を収集サンプルが ESB スケジュール サービスを使用する方法については、[、スキャッター/ギャザー サンプルのしくみ](../esb-toolkit/how-the-scatter-gather-sample-works.md)を参照してください。

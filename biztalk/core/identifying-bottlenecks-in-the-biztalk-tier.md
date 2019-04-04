@@ -125,7 +125,7 @@ BizTalk 層は以下の機能領域に分割できます。
 |BizTalk:Message Agent|HostName|Message Publishing Throttling State|XLANG と受信トランスポートに影響|  
   
 ### <a name="where-do-i-start"></a>監視の開始  
- 監視、 **Message Delivery Throttling State**と**Message Publishing Throttling State**各ホストのインスタンスが、通常をお勧めします。 これらのカウンターの値が 0 でない場合、BizTalk システム内で制限が発生していることがわかります。そこから、ボトルネックの原因をさらに分析することができます。 その他のパフォーマンス カウンターの説明については、次を参照してください。[データベース層のボトルネックを識別する](http://msdn.microsoft.com/library/f1dc58b5-73b0-41b5-9a1e-c0698485c732)します。  
+ 監視、 **Message Delivery Throttling State**と**Message Publishing Throttling State**各ホストのインスタンスが、通常をお勧めします。 これらのカウンターの値が 0 でない場合、BizTalk システム内で制限が発生していることがわかります。そこから、ボトルネックの原因をさらに分析することができます。 その他のパフォーマンス カウンターの説明については、[データベース層のボトルネックを識別する](http://msdn.microsoft.com/library/f1dc58b5-73b0-41b5-9a1e-c0698485c732)を参照してください。  
   
 ## <a name="backlog-buildup"></a>バックログの蓄積  
  1 つの受信メッセージに対して 1 つの処理と送信が行われる 1 対 1 の展開シナリオで、送信速度が受信速度と等しくない場合は、システムのどこかでバックログが蓄積されています。 そのような場合は Spool Size を監視します。  

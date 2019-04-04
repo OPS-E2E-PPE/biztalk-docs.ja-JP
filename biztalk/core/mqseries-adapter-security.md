@@ -24,7 +24,7 @@ ms.locfileid: "37019519"
 ---
 # <a name="security-with-the-mqseries-adapter"></a>MQSeries アダプタでのセキュリティ
 
-MQSeries アダプタをセキュリティで保護するには、BizTalk Server と MQSeries Server をセキュリティで保護する必要があります。 BizTalk Server をセキュリティで保護する方法の詳細については、次を参照してください。[セキュリティで保護されたデータの保護と](secure-and-protect-your-biztalk-messages.md)します。 MQSeries Server をセキュリティで保護する方法の詳細については、IBM MQSeries Server のマニュアルを参照してください。  
+MQSeries アダプタをセキュリティで保護するには、BizTalk Server と MQSeries Server をセキュリティで保護する必要があります。 BizTalk Server をセキュリティで保護する方法の詳細については、[セキュリティで保護されたデータの保護と](secure-and-protect-your-biztalk-messages.md)を参照してください。 MQSeries Server をセキュリティで保護する方法の詳細については、IBM MQSeries Server のマニュアルを参照してください。  
   
 > [!NOTE]
 >  MQSeries アダプタでは、BizTalk Server と MQSeries Server 間のメッセージの送受信にパケット プライバシーが自動的に使用されます。  
@@ -46,7 +46,7 @@ MQSeries アダプタをセキュリティで保護するには、BizTalk Server
   
   キュー定義の処理中に作成されたスクリプトをエクスポートして使用する場合、スクリプトはセキュリティで保護された場所に格納するようにします。 また、管理者がスクリプトを使用した場合にのみアクセスできるようにする必要があります。  
   
-  アプリケーションでは、送信メッセージにユーザーの資格情報を MQCIH および MQIIH ヘッダー プロパティを使用する場合は、使用、 **SSO 関連アプリケーション**プロパティを**トランスポートのプロパティ**ページ。 このプロパティの詳細については、次を参照してください。 [MQSeries アダプター受信場所の構成、送信ポートを](../core/how-to-configure-mqseries-adapter-receive-locations-and-send-ports.md)します。  
+  アプリケーションでは、送信メッセージにユーザーの資格情報を MQCIH および MQIIH ヘッダー プロパティを使用する場合は、使用、 **SSO 関連アプリケーション**プロパティを**トランスポートのプロパティ**ページ。 このプロパティの詳細については、[MQSeries アダプター受信場所の構成、送信ポートを](../core/how-to-configure-mqseries-adapter-receive-locations-and-send-ports.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [MQSeries アダプターの構造](../core/structure-of-the-mqseries-adapter.md)   

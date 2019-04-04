@@ -44,7 +44,7 @@ WCF ベースの Microsoft BizTalk Server に付属する Siebel アダプター
 >  説明を簡潔にするため、このチュートリアルでは、vPrev Siebel アダプターと Siebel アダプターの以前のバージョンに参照されます。 同様に、vPrev Siebel アダプターを使用する BizTalk プロジェクトは vPrev BizTalk プロジェクトとしてに参照されます。  
   
 ## <a name="sample-used-for-the-tutorial"></a>このチュートリアルで使用されるサンプル  
- このチュートリアルは、アカウントの Siebel ビジネス コンポーネントに対して、挿入操作を実行する vPrev BizTalk プロジェクトを移行する方法を示すサンプル (Siebel_BussComp_Migration) に基づいています。 Microsoft とサンプルが提供される[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[アダプター サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
+ このチュートリアルは、アカウントの Siebel ビジネス コンポーネントに対して、挿入操作を実行する vPrev BizTalk プロジェクトを移行する方法を示すサンプル (Siebel_BussComp_Migration) に基づいています。 Microsoft とサンプルが提供される[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[アダプター サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
   

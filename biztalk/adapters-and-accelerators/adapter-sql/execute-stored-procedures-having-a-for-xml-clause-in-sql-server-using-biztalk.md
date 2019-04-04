@@ -158,10 +158,10 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
   
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
   
- ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。
+ ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- [オーケストレーション] ペインで先ほど作成したオーケストレーションが表示されている BizTalk プロジェクトを配置した後、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 使用する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールにアプリケーションを構成します。 チュートリアルについては、次を参照してください。[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)します。
+ [オーケストレーション] ペインで先ほど作成したオーケストレーションが表示されている BizTalk プロジェクトを配置した後、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 使用する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールにアプリケーションを構成します。 チュートリアルについては、[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)を参照してください。
   
  アプリケーションを構成する必要があります。  
   
@@ -173,7 +173,7 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
   
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーションが SQL Server データベースからの応答を含む応答メッセージをドロップする場所の場所を定義します。  
   
-  - SQL Server データベースにメッセージを送信する物理 Wcf-custom または WCF-SQL 送信ポートを定義します。 送信ポートを作成する方法については、次を参照してください。 [SQL アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sql/manually-configure-a-physical-port-binding-to-the-sql-adapter.md)します。
+  - SQL Server データベースにメッセージを送信する物理 Wcf-custom または WCF-SQL 送信ポートを定義します。 送信ポートを作成する方法については、[SQL アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sql/manually-configure-a-physical-port-binding-to-the-sql-adapter.md)を参照してください。
   
      送信ポートでアクションを指定することも必要があります。 FOR XML 句を含む手順については、次の形式でアクションを設定する必要があります。  
   
@@ -187,7 +187,7 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
     XmlProcedure/dbo/GET_EMP_DETAILS_FOR_XML  
     ```  
   
-     設定アクションの詳細については、次を参照してください。 [SQL アダプタの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-soap-action-for-the-sql-adapter.md)します。
+     設定アクションの詳細については、[SQL アダプタの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-soap-action-for-the-sql-adapter.md)を参照してください。
   
      FOR XML 句を使用してストアド プロシージャを実行するときに、次のバインドのプロパティを設定することも必要があります。  
   
@@ -196,13 +196,13 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
     |XmlStoredProcedureRootNodeName|トピックに示すように、ストアド プロシージャ用に生成した応答スキーマに追加したルート ノードの名前を指定[ストアド プロシージャの応答メッセージのスキーマを生成する](#BKMK_RespSchema)します。 このトピックに設定**ルート**します。|  
     |XmlStoredProcedureRootNodeNamespace|トピックに示すように、ストアド プロシージャ用に生成した応答スキーマのターゲット名前空間を指定[ストアド プロシージャの応答メッセージのスキーマを生成する](#BKMK_RespSchema)します。 このトピックに設定`http://ForXmlStoredProcs/namespace`します。|  
   
-     バインドのプロパティの値を指定する方法については、次を参照してください。 [SQL アダプタのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-binding-properties-for-the-sql-adapter.md)します。  
+     バインドのプロパティの値を指定する方法については、[SQL アダプタのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-binding-properties-for-the-sql-adapter.md)を参照してください。  
   
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 このバインド ファイルをインポートすることができます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール (発信) の送信ポートを作成したり (着信) 用のポートを受信します。 詳細については、次を参照してください。 [SQL アダプターを使用するポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md)します。
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 このバインド ファイルをインポートすることができます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール (発信) の送信ポートを作成したり (着信) 用のポートを受信します。 詳細については、[SQL アダプターを使用するポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md)を参照してください。
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- SQL Server データベースでは、プロシージャを呼び出す BizTalk アプリケーションを開始する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。
+ SQL Server データベースでは、プロシージャを呼び出す BizTalk アプリケーションを開始する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。
   
  この段階で、ことを確認します。  
   
@@ -237,7 +237,7 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
  ストアド プロシージャの実行によって生成される、同じスキーマで応答を受信することに注意してください。 なお、ルート ノードと名前空間は、値として指定したものと同じである**XmlStoredProcedureRootNodeName**と**XmlStoredProcedureRootNodeNamespace**それぞれバインドのプロパティ。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した、送信ポートなどの項目を作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定、ファイルからインポートできます。 バインド ファイルの詳細については、次を参照してください。[アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)します。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した、送信ポートなどの項目を作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定、ファイルからインポートできます。 バインド ファイルの詳細については、[アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
 [SQL アダプターを使用して BizTalk アプリケーションを開発する](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

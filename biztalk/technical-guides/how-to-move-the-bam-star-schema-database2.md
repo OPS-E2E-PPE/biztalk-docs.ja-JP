@@ -189,7 +189,7 @@ ms.locfileid: "37017022"
   
         **Net start NS$ BamAlerts**  
   
-9. すべての不完全なトレース インスタンスを解決します。  不完全な BAM アクティビティ インスタンスの解決方法の詳細については、次を参照してください。[不完全なアクティビティ インスタンスの解決方法](http://go.microsoft.com/fwlink/?LinkId=151475)(http://go.microsoft.com/fwlink/?LinkId=151475)します。  
+9. すべての不完全なトレース インスタンスを解決します。  不完全な BAM アクティビティ インスタンスの解決方法の詳細については、[不完全なアクティビティ インスタンスの解決方法](http://go.microsoft.com/fwlink/?LinkId=151475)(http://go.microsoft.com/fwlink/?LinkId=151475)を参照してください。  
   
 > [!TIP]  
 >  をお勧め、BAMStarSchema データベースをホストするサーバーに bam_an _ * SSIS パッケージを移動する必要があります。  

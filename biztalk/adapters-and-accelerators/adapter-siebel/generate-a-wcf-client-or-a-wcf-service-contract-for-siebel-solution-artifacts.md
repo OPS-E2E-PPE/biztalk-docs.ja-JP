@@ -44,7 +44,7 @@ ms.locfileid: "37010907"
   
 - WCF クライアント コード ファイル。 このファイルには、生成された WCF クライアント クラスとヘルパーのコード選択した操作にはが含まれています。 初めて実行する、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]既定の名前には、このファイルを生成、 **SiebelBindingClient.cs**します。 もう一度実行する場合は、次のファイルが生成されますが呼び出されます**SiebelBindingClient1.cs**します。  数値のサフィックスを生成する新しいファイルごとに 1 ずつ増加します。  既定のプレフィックスを変更することもできます**SiebelBinding**で別のプレフィックスを入力して、**ファイル名のプレフィックス**のフィールド、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]選択する前に**OK**に。ファイルを生成します。  
   
-- **App.config**します。このファイルには、バインド構成との接続を構成したときに選択した内容に基づいてクライアント エンドポイント構成が含まれています、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 App.config ファイルの内容に関する詳細については、次を参照してください。 [Siebel システムの WCF クライアントを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-wcf-client-for-a-siebel-system.md)します。  
+- **App.config**します。このファイルには、バインド構成との接続を構成したときに選択した内容に基づいてクライアント エンドポイント構成が含まれています、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 App.config ファイルの内容に関する詳細については、[Siebel システムの WCF クライアントを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-wcf-client-for-a-siebel-system.md)を参照してください。  
   
   > [!IMPORTANT]
   >  使用しているときに、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]文字列型のバインド プロパティの値を指定しないし、既定値が null し、プロパティのバインドが使用できないこと、app.config ファイルの場合は、します。 必要があります手動で追加するバインドのプロパティとその値、app.config ファイルで必要な場合。  

@@ -36,4 +36,4 @@ ms.locfileid: "37024208"
  この操作を実行するには、ユーザーは指定された SSO 管理者アカウントのメンバーである必要があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- アカウントの詳細については、次を参照してください。 [SSO 管理者の指定および関連管理者アカウントを表示する方法](../core/how-to-specify-sso-administrators-and-affiliate-administrators-accounts.md)します。
+ アカウントの詳細については、[SSO 管理者の指定および関連管理者アカウントを表示する方法](../core/how-to-specify-sso-administrators-and-affiliate-administrators-accounts.md)を参照してください。

@@ -100,7 +100,7 @@ ASHOST=ADAPSAP47
 SYSNR=00  
 ```  
 
- Saprfc.ini ファイルの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=91457](http://go.microsoft.com/fwlink/?LinkId=91457)します。  
+ Saprfc.ini ファイルの詳細については、[ http://go.microsoft.com/fwlink/?LinkId=91457](http://go.microsoft.com/fwlink/?LinkId=91457)を参照してください。  
 
  すべての 3 つの接続の種類のパスワードは、二重引用符を含めることはできません。 ただし、パスワードに他の特殊文字が含まれている場合、パスワードを二重引用符で囲む必要があります。 以下に例を示します。  
 

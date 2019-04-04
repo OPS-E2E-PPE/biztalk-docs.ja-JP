@@ -82,7 +82,7 @@ ms.locfileid: "37014475"
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-11. BAM Notification Services データベース名の参照を更新します。 詳細については、次を参照してください。 [BAM Notification Services データベースへの参照を更新する方法](../core/how-to-update-references-to-the-bam-notification-services-databases.md)します。  
+11. BAM Notification Services データベース名の参照を更新します。 詳細については、[BAM Notification Services データベースへの参照を更新する方法](../core/how-to-update-references-to-the-bam-notification-services-databases.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server データベースの移動](../core/moving-biztalk-server-databases.md)

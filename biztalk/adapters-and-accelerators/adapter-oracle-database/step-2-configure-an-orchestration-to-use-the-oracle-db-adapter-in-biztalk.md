@@ -36,7 +36,7 @@ ms.locfileid: "37007867"
   
 ### <a name="to-create-a-wcf-custom-port"></a>WCF カスタム ポートを作成するには  
   
-1. 使用して Oracle データベースで操作のスキーマを生成すると[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、バインド ファイルが BizTalk プロジェクトにも追加します。 このバインド ファイルをインポートすることに、BizTalk WCF カスタムを作成するアプリケーション送信-受信ポート。 バインド ファイルのインポート方法の詳細については、次を参照してください。[バインドのインポート](http://msdn.microsoft.com/library/4cac9267-8bd8-453b-96b4-5c038912463f)します。  
+1. 使用して Oracle データベースで操作のスキーマを生成すると[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、バインド ファイルが BizTalk プロジェクトにも追加します。 このバインド ファイルをインポートすることに、BizTalk WCF カスタムを作成するアプリケーション送信-受信ポート。 バインド ファイルのインポート方法の詳細については、[バインドのインポート](http://msdn.microsoft.com/library/4cac9267-8bd8-453b-96b4-5c038912463f)を参照してください。  
   
 2. 送信ポートが作成されたバインド ファイルをインポートした後、**送信ポート**BizTalk Server 管理コンソール内のフォルダー。  
   

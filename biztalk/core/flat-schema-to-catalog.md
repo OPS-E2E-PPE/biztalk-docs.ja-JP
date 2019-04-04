@@ -56,7 +56,7 @@ ms.locfileid: "36999043"
 ## <a name="set-the-schema"></a>スキーマを設定します。  
  このタイプのマップを正しく動作させるためには、次の作業を行う必要があります。  
   
-- 接続する各リンクについて、**名前**送信先スキーマのフィールドに、送信元スキーマの名前をコピーするリンクのプロパティを設定します。 詳細については、次を参照してください。[構成リンク](../core/configuring-links.md)します。 参照してください**リンク プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+- 接続する各リンクについて、**名前**送信先スキーマのフィールドに、送信元スキーマの名前をコピーするリンクのプロパティを設定します。 詳細については、[構成リンク](../core/configuring-links.md)を参照してください。 参照してください**リンク プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
 - 接続する各リンクについて、**値**送信先スキーマのフィールドに、送信元スキーマ (既定値) の値をコピーするリンクのプロパティを設定します。  
   

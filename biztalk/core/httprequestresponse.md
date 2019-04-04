@@ -91,7 +91,7 @@ HTTPRequestResponse サンプルは、Microsoft [!INCLUDE[btsBizTalkServerNoVers
      >  Setup.bat によって行われた変更を元に戻すには、Cleanup.bat を実行します。 Setup.bat を 2 回目に実行する場合は、その前に Cleanup.bat を実行してください。  
 
      > [!NOTE]
-     >  構成する必要があり、受信アダプターを有効に HTTP を使用する IIS。 詳細については、次を参照してください。 [IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)します。  
+     >  構成する必要があり、受信アダプターを有効に HTTP を使用する IIS。 詳細については、[IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)を参照してください。  
 
 3. Setup.bat ファイルを実行すると、このサンプルの仮想ディレクトリが構成され、既定の Web サイトに関連付けられた IIS アプリケーション プールで実行されるよう設定されます。  内のユーザーのコンテキストで実行するには、このサンプル用の仮想ディレクトリを構成する、 **BizTalk 分離ホスト ユーザー**と**IIS_IURS**ユーザー グループの場合は、新しいで実行する仮想ディレクトリを構成する必要がありますIIS アプリケーション プール。 仮想ディレクトリを新しい IIS アプリケーション プールで実行するよう構成するには、次の手順を実行します。  
 

@@ -44,7 +44,7 @@ ms.locfileid: "37015361"
   
 - 変化するパラメーター  
   
-  メッセージの構造と、アダプターによって Rfc に使用される SOAP アクションの詳細については、次を参照してください。 [RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)します。  
+  メッセージの構造と、アダプターによって Rfc に使用される SOAP アクションの詳細については、[RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)を参照してください。  
   
 ## <a name="invoking-rfcs-on-an-sap-system"></a>SAP システムでの Rfc を呼び出す  
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムで、RFC の名前を取得する個々 の操作として Rfc 明らかになります。 SAP システムの RFC を呼び出すには、するには、アダプターで適切に名前付きの RFC 操作を呼び出します。  
@@ -91,7 +91,7 @@ CALL FUNCTION ‘ABC’ DESTINATION ‘MYDEST’
   
 - **RfcGetAttributes**します。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]この操作を使用して、システム ID、パートナーのコード ページ、および言語などの RFC 接続パラメーターに関する情報を取得します。 この操作で使用可能な**RFC**ノードを使用する場合、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]と[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]します。  
   
-  メッセージの構造と SAP システムで RfcGetAttributes 操作を呼び出すための SOAP アクションの詳細については、次を参照してください。 [RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)します。  
+  メッセージの構造と SAP システムで RfcGetAttributes 操作を呼び出すための SOAP アクションの詳細については、[RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [どのような操作は、アダプターを使用して実行しますか?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)

@@ -43,7 +43,7 @@ Siebel ビジネス サービスは、Siebel に直接呼び出すことがで�
    このトピックでは、これらのタスクを実行する手順を説明します。  
   
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル BusinessService、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[の Siebel アダプターのサンプル](../../adapters-and-accelerators/adapter-siebel/samples-for-the-siebel-adapter.md)します。  
+ サンプル BusinessService、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[の Siebel アダプターのサンプル](../../adapters-and-accelerators/adapter-siebel/samples-for-the-siebel-adapter.md)を参照してください。  
   
 ## <a name="generating-schema"></a>スキーマを生成します。  
  このトピックで、ビジネス サービス メソッドを呼び出す方法を示すために生成されますのスキーマ、 **Execute**によって公開されるメソッド、**タイムスタンプ**ビジネス サービス。 参照してください[Visual Studio で Siebel 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)スキーマを生成する方法の詳細について。  
@@ -123,10 +123,10 @@ Siebel ビジネス サービスは、Siebel に直接呼び出すことがで�
   
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
   
- ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。[オーケストレーションのビルド方法](../../core/how-to-build-orchestrations.md)と[BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)します。 
+ ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、[オーケストレーションのビルド方法](../../core/how-to-build-orchestrations.md)と[BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)を参照してください。 
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションを構成する方法の詳細については、次を参照してください。[アプリケーションを作成する方法](../../core/how-to-create-an-application.md)します。  
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションを構成する方法の詳細については、[アプリケーションを作成する方法](../../core/how-to-create-an-application.md)を参照してください。  
   
  アプリケーションを構成する必要があります。  
   
@@ -138,13 +138,13 @@ Siebel ビジネス サービスは、Siebel に直接呼び出すことがで�
   
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーションで Siebel システムからの応答を含む応答メッセージをドロップする場所の場所を定義します。  
   
-  - Siebel システムにメッセージを送信する物理 Wcf-custom または WCF Siebel 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 ポートを作成する方法については、次を参照してください。 [Siebel アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-siebel/manually-configure-a-physical-port-binding-to-the-siebel-adapter.md)します。
+  - Siebel システムにメッセージを送信する物理 Wcf-custom または WCF Siebel 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 ポートを作成する方法については、[Siebel アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-siebel/manually-configure-a-physical-port-binding-to-the-siebel-adapter.md)を参照してください。
   
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成する BizTalk 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、次を参照してください。 [Siebel にポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-physical-port-binding-using-a-port-binding-file-to-siebel.md)します。
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成する BizTalk 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、[Siebel にポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-physical-port-binding-using-a-port-binding-file-to-siebel.md)を参照してください。
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- 実行するための BizTalk アプリケーションを起動する必要があります、 *Execute*メソッドを*タイムスタンプ*で Siebel ビジネス サービス。 BizTalk アプリケーションを開始する手順については、次を参照してください。 [BizTalk アプリケーションを起動](../../core/how-to-start-and-stop-a-biztalk-application.md)または[オーケストレーションを開始する](../../core/how-to-start-an-orchestration.md)します。
+ 実行するための BizTalk アプリケーションを起動する必要があります、 *Execute*メソッドを*タイムスタンプ*で Siebel ビジネス サービス。 BizTalk アプリケーションを開始する手順については、[BizTalk アプリケーションを起動](../../core/how-to-start-and-stop-a-biztalk-application.md)または[オーケストレーションを開始する](../../core/how-to-start-an-orchestration.md)を参照してください。
   
  この段階で、ことを確認します。  
   
@@ -178,7 +178,7 @@ Siebel ビジネス サービスは、Siebel に直接呼び出すことがで�
  については、例外を使用してビジネス サービスで操作を実行中に発生する可能性が[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[例外とエラーの Siebel アダプターを使用した処理](../../adapters-and-accelerators/adapter-siebel/exceptions-and-error-handling-with-the-siebel-adapter.md)します。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、次を参照してください。 [Siebel アダプターのアダプターのバインドを再利用](../../adapters-and-accelerators/adapter-siebel/reuse-adapter-bindings-in-the-siebel-adapter.md)します。
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、[Siebel アダプターのアダプターのバインドを再利用](../../adapters-and-accelerators/adapter-siebel/reuse-adapter-bindings-in-the-siebel-adapter.md)を参照してください。
   
 ## <a name="see-also"></a>参照  
 [Siebel アダプターを使用した BizTalk アプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-siebel/building-blocks-to-create-biztalk-applications-with-the-siebel-adapter.md)

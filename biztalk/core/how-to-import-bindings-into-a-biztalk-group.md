@@ -25,7 +25,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37000379"
 ---
 # <a name="how-to-import-bindings-into-a-biztalk-group"></a>BizTalk グループにバインドをインポートする方法
-このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、.xml ファイルからBizTalk グループにバインドをインポートする方法について説明します。 BizTalk グループからバインドをインポートできる .xml ファイルにエクスポートする手順については、次を参照してください。 [BizTalk グループのバインドのエクスポート方法](../core/how-to-export-bindings-for-a-biztalk-group.md)します。  
+このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、.xml ファイルからBizTalk グループにバインドをインポートする方法について説明します。 BizTalk グループからバインドをインポートできる .xml ファイルにエクスポートする手順については、[BizTalk グループのバインドのエクスポート方法](../core/how-to-export-bindings-for-a-biztalk-group.md)を参照してください。  
   
  」の説明に従って、BizTalk アプリケーションにバインドにインポートすることもできます[BizTalk アプリケーションにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-application.md)します。  
   

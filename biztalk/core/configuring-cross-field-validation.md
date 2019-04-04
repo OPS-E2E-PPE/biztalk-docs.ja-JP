@@ -40,7 +40,7 @@ ms.locfileid: "37014491"
   
 3. EDIFACT スキーマで、検索、 **EdifactDependencyRule_Check**スキーマの appinfo セクションの注釈のフラグ。 設定**はい**します。  
   
-4. スキーマの適切なセグメントに対して、適用する関係条件 (X12 および HIPAA) または依存ルール (EDIFACT) を指定します。 詳細については、次を参照してください。[クロス フィールド/セグメント検証](../core/cross-field-segment-validation.md)です。  
+4. スキーマの適切なセグメントに対して、適用する関係条件 (X12 および HIPAA) または依存ルール (EDIFACT) を指定します。 詳細については、[クロス フィールド/セグメント検証](../core/cross-field-segment-validation.md)を参照してください。  
   
    > [!NOTE]
    >  クロスフィールド検証の条件またはルールは、EDI スキーマのセグメントに対して入力されます。 セグメントではなくデータ要素に対してクロスフィールド検証ルールを入力すると、スキーマ検証の実行時に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって警告が生成されます。  

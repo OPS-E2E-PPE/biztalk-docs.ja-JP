@@ -154,4 +154,4 @@ ms.locfileid: "37002803"
 ## <a name="supported-adapter-providers"></a>サポートされているアダプターのプロバイダー  
  [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]次の組み込みのアダプターのプロバイダーが含まれています:**ファイル、FTP、SMTP、MQSeries、Wcf-basichttp、Wcf-wshttp、** と**Wcf-custom**します。 各アダプター プロバイダーの名前は、BizTalk Server では、関連付けられているアダプター (トランスポートの種類) の名前と同じです。  
   
- リゾルバーとアダプターのプロバイダー フレームワークの主な利点を作成し、エンドポイント情報とカスタム アダプター プロバイダーが登録済みの BizTalk アダプターの特定のプロパティの設定を解決するのには独自のカスタム リゾルバーを登録して拡張できます。 詳細については、次を参照してください。[を変更すると、BizTalk ESB Toolkit の拡張](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)します。
+ リゾルバーとアダプターのプロバイダー フレームワークの主な利点を作成し、エンドポイント情報とカスタム アダプター プロバイダーが登録済みの BizTalk アダプターの特定のプロパティの設定を解決するのには独自のカスタム リゾルバーを登録して拡張できます。 詳細については、[を変更すると、BizTalk ESB Toolkit の拡張](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)を参照してください。

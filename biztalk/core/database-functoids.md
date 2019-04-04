@@ -53,7 +53,7 @@ ms.locfileid: "37013835"
 
 - **値抽出します。** 使用して、**値抽出**functoid によって返されるレコード セット内の指定された列からデータを抽出する、**データベース検索**functoid。 この functoid は、2 つの入力パラメーターが必要です: へのリンク、**データベース検索**functoid と列の名前。  
 
-  1 ~ 7、**データベース**functoid —**メッセージの書式設定、アプリケーション ID の取得**、**アプリケーション値の取得**、**共通 ID の取得**、 **共通値の取得**、**アプリケーション ID の削除**、および**共通 ID の設定**— は**CrossReferencing** functoid。 これらの Functoid は、入力メッセージの ID と値を、出力メッセージで必要とされる ID と値に変換します。 詳細については、次を参照してください。**データベース Functoid のリファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。 
+  1 ~ 7、**データベース**functoid —**メッセージの書式設定、アプリケーション ID の取得**、**アプリケーション値の取得**、**共通 ID の取得**、 **共通値の取得**、**アプリケーション ID の削除**、および**共通 ID の設定**— は**CrossReferencing** functoid。 これらの Functoid は、入力メッセージの ID と値を、出力メッセージで必要とされる ID と値に変換します。 詳細については、**データベース Functoid のリファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。 
 
 ## <a name="example"></a>例  
  次の例では、いくつか使用して、**データベース**functoid。 この例では、広範な地域に店舗を持つ大規模な小売メーカーを対象としています。 店舗を追跡するのに本社は各ストアという一意のコードを割り当てます、 **StoreID**します。 さらに、本社が互いに、次の情報を関連付けます**StoreID**:  
@@ -99,7 +99,7 @@ ms.locfileid: "37013835"
 * 共通 ID の設定
 * 値抽出
 
-これらの functiods について詳しくは、次を参照してください。、 **Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+これらの functiods について詳しくは、、 **Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
 
 ## <a name="see-also"></a>参照  
 - [マップに基本 Functoid を追加する方法](../core/how-to-add-basic-functoids-to-a-map.md)   

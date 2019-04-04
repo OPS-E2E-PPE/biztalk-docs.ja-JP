@@ -33,11 +33,11 @@ ms.locfileid: "37011435"
 ## <a name="x12-acknowledgments"></a>X12 受信確認  
  **X12 技術確認**  
   
- X12 メッセージの ISA ヘッダーおよび IEA トレーラが有効な場合 (他のコンテンツに関係なく)、成功を通知する TA1 受信確認が送信されます。 TA1 受信確認の内容の詳細については、次を参照してください。 [X12 TA1 受信確認](../core/x12-ta1-acknowledgment.md)します。  
+ X12 メッセージの ISA ヘッダーおよび IEA トレーラが有効な場合 (他のコンテンツに関係なく)、成功を通知する TA1 受信確認が送信されます。 TA1 受信確認の内容の詳細については、[X12 TA1 受信確認](../core/x12-ta1-acknowledgment.md)を参照してください。  
   
  **X12 機能確認**  
   
- インターチェンジまたは機能グループの受信を確認するため、1 つ以上の機能グループまたは 1 つ以上のトランザクションを受理または拒否するため、および標準に準拠していることを検証して報告するために、997 受信確認が使用されます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が受信したインターチェンジに複数のグループが含まれている場合は、グループごとに 1 つの受信確認が返されます。 1 つのグループに複数のトランザクション セットが含まれている場合は、そのグループに対する受信確認に複数の AK2 ループ (トランザクション セットごとに 1 つずつ) が含まれます (受理されたトランザクション セットに対して AK2 ループが生成されるように設定されている場合)。 997 受信確認の内容の詳細については、次を参照してください。 [X12 997 受信確認](../core/x12-997-acknowledgment.md)します。  
+ インターチェンジまたは機能グループの受信を確認するため、1 つ以上の機能グループまたは 1 つ以上のトランザクションを受理または拒否するため、および標準に準拠していることを検証して報告するために、997 受信確認が使用されます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が受信したインターチェンジに複数のグループが含まれている場合は、グループごとに 1 つの受信確認が返されます。 1 つのグループに複数のトランザクション セットが含まれている場合は、そのグループに対する受信確認に複数の AK2 ループ (トランザクション セットごとに 1 つずつ) が含まれます (受理されたトランザクション セットに対して AK2 ループが生成されるように設定されている場合)。 997 受信確認の内容の詳細については、[X12 997 受信確認](../core/x12-997-acknowledgment.md)を参照してください。  
   
 > [!NOTE]
 >  EDI 受信パイプラインは、X12 機能確認の機能グループ ヘッダー (GS) セグメントを構築するとき、アプリケーション送信者コード (GS02) とアプリケーション受信者コード (GS03) を、確認対象の機能グループから取得します。 ただし、受信メッセージの GS02 は確認の GS03 にマップされ、受信メッセージの GS03 は確認の GS02 にマップされます。  
@@ -47,13 +47,13 @@ ms.locfileid: "37011435"
   
  EDIFACT では、個別の技術確認は使用されませんが、受信確認に対し機能確認または CONTRL 確認のセクション (以下を参照) が再使用されます。 これにより、技術確認がエミュレートされます。  
   
- 技術 CONTRL 確認の詳細については、次を参照してください。[技術確認としての EDIFACT CONTRL メッセージ](../core/edifact-contrl-message-as-technical-acknowledgment.md)します。  
+ 技術 CONTRL 確認の詳細については、[技術確認としての EDIFACT CONTRL メッセージ](../core/edifact-contrl-message-as-technical-acknowledgment.md)を参照してください。  
   
  **EDIFACT 機能確認**  
   
  EDIFACT では、受信したインターチェンジ、グループ、およびメッセージを確認するため、受信したインターチェンジ、グループ、およびメッセージを受理または拒否するため、および受信したインターチェンジ、グループ、およびメッセージに含まれている構文エラーまたはサポートされていない機能を一覧表示するために、機能 CONTRL 確認が使用されます。 CONTRL 確認では、受信した完全なインターチェンジの構文チェックの結果が報告されます。  
   
- 機能 CONTRL 確認の詳細については、次を参照してください。[機能確認としての EDIFACT CONTRL メッセージ](../core/edifact-contrl-message-as-functional-acknowledgment.md)します。  
+ 機能 CONTRL 確認の詳細については、[機能確認としての EDIFACT CONTRL メッセージ](../core/edifact-contrl-message-as-functional-acknowledgment.md)を参照してください。  
   
 ## <a name="when-an-acknowledgment-is-generated"></a>確認が生成される場合  
  EDI 受信パイプラインは、次のいずれかの条件が満たされた場合に確認を生成します。  
@@ -68,7 +68,7 @@ ms.locfileid: "37011435"
   
   -   **メッセージの受信 (CONTRL が必要です)** と**確認 (CONTRL) が必要です**で、**受信確認**のアグリーメント タブのページ、 **EDIFACT フォールバックの設定**  ダイアログ ボックス。  
   
-  EDIFACT では、EDI 受信パイプラインは、技術確認と機能確認の両方が要求された場合に 2 つの別々の CONTRL 確認を返します。 技術 CONTRL 確認には、受信確認情報のみが含まれます。 機能 CONTRL 確認には、受信情報と機能確認情報の両方が含まれます。 詳細については、次を参照してください。 [EDIFACT CONTRL 確認](../core/edifact-contrl-acknowledgment.md)します。  
+  EDIFACT では、EDI 受信パイプラインは、技術確認と機能確認の両方が要求された場合に 2 つの別々の CONTRL 確認を返します。 技術 CONTRL 確認には、受信確認情報のみが含まれます。 機能 CONTRL 確認には、受信情報と機能確認情報の両方が含まれます。 詳細については、[EDIFACT CONTRL 確認](../core/edifact-contrl-acknowledgment.md)を参照してください。  
   
 ## <a name="identifying-an-acknowledgment-with-a-control-number"></a>制御番号による受信確認の識別  
  X12 の場合はトランザクション セット制御番号 (ST2 データ要素) によって、EDIFACT の場合はトランザクション セット参照番号 (UNH1 データ要素) によって、各確認を識別する必要があります。 アグリーメントが出力方向の受信確認用に構成されている場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は、次に基づくアグリーメントの設定値には、トランザクション セット制御または参照番号を設定します。  
@@ -82,7 +82,7 @@ ms.locfileid: "37011435"
   確認のエンベロープは、確認管理スキーマに従い、受信したメッセージ内のデータから構築されます。  
   
 ## <a name="preparing-the-acknowledgment"></a>確認の準備  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が受信確認のエンベロープを作成する方法は、メッセージのエンベロープを作成する方法と同じです。つまり、インターチェンジ制御ヘッダーおよび機能グループ ヘッダーの定義を使用して作成されます。 詳細については、次を参照してください。[アグリーメントの解決と送信 EDI メッセージのスキーマ決定](../core/agreement-resolution-and-schema-determination-for-outgoing-edi-messages.md)します。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が受信確認のエンベロープを作成する方法は、メッセージのエンベロープを作成する方法と同じです。つまり、インターチェンジ制御ヘッダーおよび機能グループ ヘッダーの定義を使用して作成されます。 詳細については、[アグリーメントの解決と送信 EDI メッセージのスキーマ決定](../core/agreement-resolution-and-schema-determination-for-outgoing-edi-messages.md)を参照してください。  
   
  生成された受信確認 (TA1、997、または CONTRL) がシームレスにルーティングされるようにするために、受信確認のプロパティ `DestinationPartyReceiverQualifier`、`DestinationPartyReceiverIdentifier`、`DestinationPartySenderQualifier`、および `DestinationPartySenderIdentifier` が EDI 逆アセンブラーによって設定されます。  
   

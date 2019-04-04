@@ -119,13 +119,13 @@ ms.locfileid: "37003699"
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の全体的な持続性に、一般的に最も影響が大きいアクティビティを次に示します。  
   
-- **ログ配布とバックアップ**します。 SQL Server に関連する大半のディザスター リカバリー計画の一部として、すべての [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] グループ データベースのログ配布およびバックアップを定期的に行う必要があります。 詳細については、次を参照してください。 [Backing Up and BizTalk Server データベースの復元](../core/backing-up-and-restoring-biztalk-server-databases.md)します。 参照してください[ログ配布](../core/log-shipping.md)します。  
+- **ログ配布とバックアップ**します。 SQL Server に関連する大半のディザスター リカバリー計画の一部として、すべての [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] グループ データベースのログ配布およびバックアップを定期的に行う必要があります。 詳細については、[Backing Up and BizTalk Server データベースの復元](../core/backing-up-and-restoring-biztalk-server-databases.md)を参照してください。 参照してください[ログ配布](../core/log-shipping.md)します。  
   
-- **アーカイブと削除の追跡データ**します。 全体的なログ配布およびバックアップのプランだけでなく、BizTalk 追跡 (BizTalkDTADb) データベースが、独自のアーカイブと削除の手法です。詳細については、次を参照してください。[アーカイブおよび BizTalk 追跡データベースの削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)します。 BizTalk 追跡データベースからデータをアーカイブおよび削除できる速度は、特に重要です。追跡が使用中である場合は、通常、BizTalk 追跡データベースのアーカイブと削除がボトルネックとなるためです。  
+- **アーカイブと削除の追跡データ**します。 全体的なログ配布およびバックアップのプランだけでなく、BizTalk 追跡 (BizTalkDTADb) データベースが、独自のアーカイブと削除の手法です。詳細については、[アーカイブおよび BizTalk 追跡データベースの削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)を参照してください。 BizTalk 追跡データベースからデータをアーカイブおよび削除できる速度は、特に重要です。追跡が使用中である場合は、通常、BizTalk 追跡データベースのアーカイブと削除がボトルネックとなるためです。  
   
 - **システム クエリ**します。 Api または BizTalk Server 管理コンソール UI を使用して、システムに対する各種クエリを実行すると維持可能なパフォーマンスに影響します。  
   
-- **メッセージ ボックスのメンテナンス**します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コア機能の一部であるさまざまな SQL ジョブは、メッセージ ボックス データベースのメンテナンスのために、処理を終えたメッセージおよびインスタンスのクリーンアップを行います。 コア エンジンの一部として、これらのジョブを完了できる速度は、持続性を予測するときの主要な要素です。 これらのジョブとその役割の詳細については、次を参照してください。 [BizTalk Server1 を維持](../core/maintaining-biztalk-server1.md)します。  
+- **メッセージ ボックスのメンテナンス**します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コア機能の一部であるさまざまな SQL ジョブは、メッセージ ボックス データベースのメンテナンスのために、処理を終えたメッセージおよびインスタンスのクリーンアップを行います。 コア エンジンの一部として、これらのジョブを完了できる速度は、持続性を予測するときの主要な要素です。 これらのジョブとその役割の詳細については、[BizTalk Server1 を維持](../core/maintaining-biztalk-server1.md)を参照してください。  
   
 - **ソリューション展開アクティビティ**します。 新しいアプリケーションまたは既存のアプリケーションの新しいバージョンを展開、バインド、および開始すると、メッセージ ボックス データベースの新しいサブスクリプションの作成など、BizTalk に追加の負荷が加わります。 アプリケーションの展開後、処理されるメッセージがリソースに対して競合するので、既存のアプリケーションのパフォーマンスに影響が及びます。  
   

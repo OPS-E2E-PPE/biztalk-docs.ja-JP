@@ -133,9 +133,9 @@ channel.Open();
   
 2. 受信する操作に必要なすべてのバインドのプロパティを設定します。 設定してください、 **AcceptCredentialsInUri**プロパティをバインドします。  
   
-3. 作成、 **BindingParameterCollection**を追加し、 **InboundActionCollection**を受信する操作のアクションを格納しています。 アダプターでは、その他のすべての操作の SAP システムに例外を返します。 このステップは省略可能です。 詳細については、次を参照してください。 [WCF チャネル モデルを使用して、SAP システムからの受信操作の受信](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)します。  
+3. 作成、 **BindingParameterCollection**を追加し、 **InboundActionCollection**を受信する操作のアクションを格納しています。 アダプターでは、その他のすべての操作の SAP システムに例外を返します。 このステップは省略可能です。 詳細については、[WCF チャネル モデルを使用して、SAP システムからの受信操作の受信](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)を参照してください。  
   
-4. 呼び出してチャネル リスナーを作成して**BuildChannelListener\<IReplyChannel\>** メソッドを**SAPBinding**します。 このメソッドにパラメーターの 1 つとして、SAP 接続 URI を指定します。 接続 URI は、SAP システムの RFC 転送先のパラメーターを含める必要があります。 SAP 接続 URI の詳細については、次を参照してください。、 [SAP システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。 作成した場合、 **BindingParameterCollection**手順 3 で指定することもこのチャネル リスナーを作成するときにします。  
+4. 呼び出してチャネル リスナーを作成して**BuildChannelListener\<IReplyChannel\>** メソッドを**SAPBinding**します。 このメソッドにパラメーターの 1 つとして、SAP 接続 URI を指定します。 接続 URI は、SAP システムの RFC 転送先のパラメーターを含める必要があります。 SAP 接続 URI の詳細については、、 [SAP システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)を参照してください。 作成した場合、 **BindingParameterCollection**手順 3 で指定することもこのチャネル リスナーを作成するときにします。  
   
 5. リスナーを開きます。  
   

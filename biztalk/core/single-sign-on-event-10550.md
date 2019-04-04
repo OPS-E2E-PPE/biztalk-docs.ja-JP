@@ -36,4 +36,4 @@ ms.locfileid: "37021960"
  SSO サービスは、SSO 管理者アカウントのメンバーであるサービス アカウントで実行する必要があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 詳細については、次を参照してください。 [SSO 管理者の指定および関連管理者アカウントを表示する方法](../core/how-to-specify-sso-administrators-and-affiliate-administrators-accounts.md)します。
+ 詳細については、[SSO 管理者の指定および関連管理者アカウントを表示する方法](../core/how-to-specify-sso-administrators-and-affiliate-administrators-accounts.md)を参照してください。

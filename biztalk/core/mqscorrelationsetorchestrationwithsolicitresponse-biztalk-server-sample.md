@@ -30,7 +30,7 @@ ms.locfileid: "54443399"
 MQSCorrelationSetOrchestrationWithSolicitResponse サンプルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ではなく、MQSeries Server によって作成された関連付け識別子を使用する方法を示します。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- オーケストレーションに空の値を含むメッセージを送信する、 **MQMD_MsgID**メッセージ ヘッダーのプロパティ。 MQSeries が、MessageID と CorrelationID を生成しに割り当てられている値を持つメッセージが返されます**MQMD_MsgID**と**MQMD_CorrelId**送信請求-応答で応答の一部として送信アダプターのポート. オーケストレーションは、関連付けセットを初期化するために生成された関連付け識別子を使用してし、を確認して受信場所を関連付けセットの後ろに続くで次のように、 **MQMD_CorrelId**メッセージのプロパティ。 アダプターは、また関連付け識別子を割り当てます**BizTalk_CorrelationID**オーケストレーションで使用することもできます。 これです。 アダプターと関連付け識別子の使用に関する詳細については、次を参照してください。[関連付けメッセージを使用して要求/応答](../core/correlating-messages-using-request-reply.md)します。  
+ オーケストレーションに空の値を含むメッセージを送信する、 **MQMD_MsgID**メッセージ ヘッダーのプロパティ。 MQSeries が、MessageID と CorrelationID を生成しに割り当てられている値を持つメッセージが返されます**MQMD_MsgID**と**MQMD_CorrelId**送信請求-応答で応答の一部として送信アダプターのポート. オーケストレーションは、関連付けセットを初期化するために生成された関連付け識別子を使用してし、を確認して受信場所を関連付けセットの後ろに続くで次のように、 **MQMD_CorrelId**メッセージのプロパティ。 アダプターは、また関連付け識別子を割り当てます**BizTalk_CorrelationID**オーケストレーションで使用することもできます。 これです。 アダプターと関連付け識別子の使用に関する詳細については、[関連付けメッセージを使用して要求/応答](../core/correlating-messages-using-request-reply.md)を参照してください。  
   
 > [!IMPORTANT]
 >  この方法を使用するオーケストレーションでは、MQSeries Server からのメッセージを関連付け識別子より前に受信すると、問題が発生する場合があります。 オーケストレーションをデザインするときは、MQSeries Server が関連付け識別子を返すことができるよう、処理時間を十分にとるようにしてください。 この例では、このような競合状態が発生する可能性については考慮していません。  

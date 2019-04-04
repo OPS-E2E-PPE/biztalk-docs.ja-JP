@@ -31,9 +31,9 @@ ms.locfileid: "36980035"
 ## <a name="before-you-begin"></a>はじめに  
  カスタム Web パーツを作成する前に。  
   
--   WCF サービスとしての SAP アイテムを発行します。 詳細については、次を参照してください。[手順 1: WCF サービスとしての SAP の成果物を公開](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)で[チュートリアル 1: SharePoint サイト上の SAP システムからデータを表示する](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)します。  
+-   WCF サービスとしての SAP アイテムを発行します。 詳細については、[手順 1: WCF サービスとしての SAP の成果物を公開](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)で[チュートリアル 1: SharePoint サイト上の SAP システムからデータを表示する](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)を参照してください。  
   
--   Microsoft Office SharePoint Server でビジネス データ カタログを使用して SAP アイテム用のアプリケーション定義ファイルを作成します。 詳細については、次を参照してください。[手順 2: SAP アイテム用のアプリケーション定義ファイルの作成](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)で[チュートリアル 1: SharePoint サイト上の SAP システムからデータを表示する](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)します。  
+-   Microsoft Office SharePoint Server でビジネス データ カタログを使用して SAP アイテム用のアプリケーション定義ファイルを作成します。 詳細については、[手順 2: SAP アイテム用のアプリケーション定義ファイルの作成](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)で[チュートリアル 1: SharePoint サイト上の SAP システムからデータを表示する](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)を参照してください。  
   
 ##  <a name="Create_a_Custom_Web_Part"></a> 手順 1: カスタム Web パーツを作成します。  
  Visual Studio を使用して、カスタム Web パーツを作成するには、次の操作を行います。  

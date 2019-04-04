@@ -23,7 +23,7 @@ ms.locfileid: "37004875"
 # <a name="configure-the-soap-action-for-the-sap-system"></a>SAP システムの SOAP アクションを構成します。
 WCF ベースを使用して SAP システムの操作を実行する[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプターのユーザーは、SOAP アクションを指定する必要があります。 SOAP アクションは、どのようなアクションが実行されるアダプターに通信します。 デザイン時または実行時に SOAP アクションを指定することができます。 ただし、SOAP アクション両方デザイン時に指定する時間を実行すると、デザイン時に指定されたアクションは上書きされます。  
   
- SOAP アクションを指定する方法については、次を参照してください。 [WCF 送信アダプター用の SOAP アクションを指定する](../../core/specifying-soap-actions-for-wcf-send-adapters.md)します。
+ SOAP アクションを指定する方法については、[WCF 送信アダプター用の SOAP アクションを指定する](../../core/specifying-soap-actions-for-wcf-send-adapters.md)を参照してください。
   
 ## <a name="enter-soap-action-at-design-time"></a>デザイン時に SOAP アクションを入力します。  
  式図形を含めることによって、デザイン時のオーケストレーションの一部として SOAP アクションを指定する必要があります。  
@@ -73,13 +73,13 @@ WCF ベースを使用して SAP システムの操作を実行する[!INCLUDE[a
   
         このアプローチには、一連のアクションを指定して、そのため、同じポートを経由するさまざまなアクションの種類に属するメッセージの有効化の観点から高い柔軟性が提供されます。  
   
-        SOAP アクションの形式は操作ごとに異なります。 各操作のアクションの形式の詳細については、次を参照してください。[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)します。
+        SOAP アクションの形式は操作ごとに異なります。 各操作のアクションの形式の詳細については、[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)を参照してください。
   
 ### <a name="enter-a-soap-action-for-the-wcf-sap-port"></a>WCF SAP ポートの SOAP アクションを入力します。  
   
 1. 開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
-2. WCF-SAP アダプターの追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、次を参照してください。 [SAP アダプターを BizTalk Server 管理コンソールに追加](../../adapters-and-accelerators/adapter-sap/add-the-sap-adapter-to-biztalk-server-administration-console.md)します。  
+2. WCF-SAP アダプターの追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、[SAP アダプターを BizTalk Server 管理コンソールに追加](../../adapters-and-accelerators/adapter-sap/add-the-sap-adapter-to-biztalk-server-administration-console.md)を参照してください。  
   
 3. コンソール ツリーで、展開**BizTalk グループ**の順に展開**アプリケーション**、 をクリックし、**送信ポート**します。 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
   
@@ -106,7 +106,7 @@ WCF ベースを使用して SAP システムの操作を実行する[!INCLUDE[a
   
         このアプローチには、一連のアクションを指定して、そのため、同じポートを経由するさまざまなアクションの種類に属するメッセージの有効化の観点から高い柔軟性が提供されます。  
   
-        SOAP アクションの形式は操作ごとに異なります。 各操作のアクションの形式の詳細については、次を参照してください。[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)します。
+        SOAP アクションの形式は操作ごとに異なります。 各操作のアクションの形式の詳細については、[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)を参照してください。
   
 ## <a name="see-also"></a>参照  
 [SAP アプリケーションを作成するための構成要素](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)

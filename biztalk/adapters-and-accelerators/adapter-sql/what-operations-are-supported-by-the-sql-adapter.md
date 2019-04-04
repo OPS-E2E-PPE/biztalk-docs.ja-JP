@@ -28,7 +28,7 @@ ms.locfileid: "37011275"
   
 - WCF チャネル モデルを使用します。  
   
-  [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]アプリケーションは、それを呼び出すことができ、アプリケーションで呼び出すことができます、さらに、操作を公開します。 これらの操作は、チャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。 メッセージの構造とそれぞれの操作に関連付けられている SOAP アクションについては、次を参照してください。[メッセージと BizTalk adapter for SQL Server のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)します。  
+  [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]アプリケーションは、それを呼び出すことができ、アプリケーションで呼び出すことができます、さらに、操作を公開します。 これらの操作は、チャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。 メッセージの構造とそれぞれの操作に関連付けられている SOAP アクションについては、[メッセージと BizTalk adapter for SQL Server のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)を参照してください。  
   
   このセクションで、SQL Server データベースを使用してサポートされる操作について説明します、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
   

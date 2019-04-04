@@ -133,7 +133,7 @@ SetBitmap("IMAGE_FLOOR");
   
  適切なリソース キーを指定しないか SetName メソッドを削除した場合、名前のないカスタム Functoid が作成されますが、これはお勧めできません。 SetDescription メソッドと SetTooltip メソッドについても同様です。 常にこれらのメソッドを適切に使用し、望ましくない操作は避けてください。 ただし、Functoid アイコンとして使用するのに適した画像がない場合は、SetBitmap メソッドをスキップすることができます。 そのような場合、既定のアイコンがカスタム Functoid により使用されますが、これは問題ありません (複数の Functoid にアイコンがない場合を除く)。  
   
- カスタム functoid を作成する方法の詳細については、次を参照してください。[カスタム Functoid (BizTalk Server サンプル)](../core/custom-functoid-biztalk-server-sample.md)します。  
+ カスタム functoid を作成する方法の詳細については、[カスタム Functoid (BizTalk Server サンプル)](../core/custom-functoid-biztalk-server-sample.md)を参照してください。  
   
 > [!IMPORTANT]
 >  一部の Functoid ID は標準/組み込みマッパー Functoid 用に予約されています。 通常、標準マッパー functoid は、1 から 10000 の Id を使用します。 カスタム functoid を作成するときに、functoid 10000 未満の Id を使用しません。  

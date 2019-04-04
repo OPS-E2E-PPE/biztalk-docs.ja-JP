@@ -36,7 +36,7 @@ ms.locfileid: "37024552"
 - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンする必要があります。  
   
 ## <a name="procedures"></a>手順  
- BizTalk アプリケーションは、BizTalk Server ビジネス ソリューションの展開、管理、およびトラブルシューティングをすばやく簡単に行えるようにする BizTalk Server の機能です。 BizTalk アプリケーションは、BizTalk Server ビジネス ソリューションで使用される "アイテム" の論理グループです。  詳細については、次を参照してください。 [BizTalk アプリケーションとは何ですか?](../core/what-is-a-biztalk-application.md)します。  [手順 1: プロジェクトの配置](../core/step-1-deploy-the-projects.md)、"EAISolution"に、プロジェクトを展開するアプリケーション名を構成します。  したがって、EAISolution アプリケーションには、オーケストレーション、2 つのスキーマおよびマップが含まれています。  
+ BizTalk アプリケーションは、BizTalk Server ビジネス ソリューションの展開、管理、およびトラブルシューティングをすばやく簡単に行えるようにする BizTalk Server の機能です。 BizTalk アプリケーションは、BizTalk Server ビジネス ソリューションで使用される "アイテム" の論理グループです。  詳細については、[BizTalk アプリケーションとは何ですか?](../core/what-is-a-biztalk-application.md)を参照してください。  [手順 1: プロジェクトの配置](../core/step-1-deploy-the-projects.md)、"EAISolution"に、プロジェクトを展開するアプリケーション名を構成します。  したがって、EAISolution アプリケーションには、オーケストレーション、2 つのスキーマおよびマップが含まれています。  
   
 #### <a name="to-open-the-eaisolution-application-from-biztalk-server-administration-console"></a>EAISolution アプリケーションを BizTalk Server 管理コンソールから開くには  
   

@@ -47,13 +47,13 @@ BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd
   
  送信メッセージが、ルーティング コンテンツ ベースのルーティング (CBR) のかどうか、 **http://schemas.microsoft.com/BizTalk/2003/system-properties#Operation**プロパティが設定されていない、WCF 送信アダプタは、アクション マッピング文字列全体を送信 WCF メッセージのアクションに設定します。 この問題を回避するには、次のいずれかの操作を行います。  
   
-- アクション フィールドを設定する送信ポートでhttp://MyService/IMyContract/MyAction1します。  
+- アクション フィールドを設定する送信ポートで http://MyService/IMyContract/MyAction1します。  
   
 - 設定、 **BTS します。操作**パイプラインのコンテキスト プロパティ。 たとえばの値を設定**http://schemas.microsoft.com/BizTalk/2003/system-properties#Operation**を Operation1 にします。  
   
 - アクション フィールドを空白のままにして、受信メッセージのアクションを使用します。  
   
-  BizTalk WCF サービス使用ウィザードを使用して、シングル アクションまたはアクション マッピングで WCF サービスを使用 (消費) することもできます。 詳細については、次を参照してください。 [BizTalk WCF サービス使用ウィザードを使用して WCF サービスを使用する方法](../core/how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service.md)します。  
+  BizTalk WCF サービス使用ウィザードを使用して、シングル アクションまたはアクション マッピングで WCF サービスを使用 (消費) することもできます。 詳細については、[BizTalk WCF サービス使用ウィザードを使用して WCF サービスを使用する方法](../core/how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [WCF アダプター コンテキスト プロパティによる動的送信ポートの構成](../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md)

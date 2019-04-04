@@ -22,7 +22,7 @@ ms.locfileid: "37022232"
 # <a name="complex-type-derivation-using-the-extension-mechanism"></a>拡張メカニズムを使用した複合型の派生
 拡張機能によって派生する複合型は、基本データ型の機能的なスーパーセットです。 名前が示すように、基本データ型に基づいて、拡張する型を定義します。 このトピックでは、2 つの要素**ShippingAddress**と**BillingAddress**複合グローバル型に基づきます**GlobalAddrType**します。 **ShippingAddress**に型の定義は**GlobalAddrType**であるのに対し**BillingAddress**型を拡張するように定義**GlobalAddrType**します。 別の要素を追加の例では、最後に、 **BillingAddress**、名前付き**部門**文字列型および Accounts Payable の既定値を指定しています。  
   
- 拡張メカニズムを使用して新規の複合型を派生させる情報の概要については、W3C Web サイトを参照してください。 これと他の web サイトへのさまざまなリンクは、次を参照してください。 [Web 上の XSD リソース](../core/xsd-resources-on-the-web.md)します。  
+ 拡張メカニズムを使用して新規の複合型を派生させる情報の概要については、W3C Web サイトを参照してください。 これと他の web サイトへのさまざまなリンクは、[Web 上の XSD リソース](../core/xsd-resources-on-the-web.md)を参照してください。  
   
  スキーマ ツリーの別の場所での拡張機能によって複合グローバル型から派生する新しい挿入することで開始**レコード**目的の場所にあるノード。 設定し、その**Base Data Type**プロパティを複合グローバル型の名前にします。  
   

@@ -24,7 +24,7 @@ ms.locfileid: "37007051"
   
 
 ## <a name="how-can-i-use-the-oracle-e-business-adapter-to-communicate-with-oracle-e-business-suite"></a>Oracle E-business Suite との通信に、Oracle E-business アダプターを使用する方法は?  
- 使用することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]か、BizTalk アプリケーションを開発、WCF サービス モデルを使用して、または WCF チャネル モデルを使用して、Oracle E-business Suite と通信します。 詳細については、次を参照してください。[概要の BizTalk Adapter for Oracle E-business Suite](http://msdn.microsoft.com/library/4f18fa2e-4e97-4c28-b38d-fc39ac53789e)します。  
+ 使用することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]か、BizTalk アプリケーションを開発、WCF サービス モデルを使用して、または WCF チャネル モデルを使用して、Oracle E-business Suite と通信します。 詳細については、[概要の BizTalk Adapter for Oracle E-business Suite](http://msdn.microsoft.com/library/4f18fa2e-4e97-4c28-b38d-fc39ac53789e)を参照してください。  
   
 ## <a name="what-interfaces-are-supported-by-the-oracle-e-business-adapter-for-retrieving-metadata"></a>Oracle E-business アダプターでは、メタデータの取得をどのようなインターフェイスがサポートしますか。  
  [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]メタデータを取得するための 2 つのインターフェイスをサポートしています。  
@@ -39,7 +39,7 @@ ms.locfileid: "37007051"
 ## <a name="does-the-oracle-e-business-adapter-provide-a-secure-way-of-communicating-with-the-oracle-e-business-suite--are-there-any-best-practices-to-ensure-data-security"></a>Oracle E-business アダプターは、Oracle E-business Suite との通信のセキュリティで保護された方法を提供しますか。  データのセキュリティを確保するときのベスト プラクティスはありますか。  
  [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business suite、確立された接続での認証にエンタープライズ シングル サインオン (SSO) をサポートしています。 SSO では、データベースとマスター シークレットを使用して暗号化およびユーザーの資格情報を格納します。 Microsoft Windows アカウントをバックエンド システムへのアクセスに使用される資格情報をセカンダリにマップするサービスも提供します。  
   
- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]も Oracle E-business Suite に接続するユーザー名とパスワードの資格情報を入力する必要があります。 これらの資格情報は、ユーザーを認証され、接続の承認のレベルに使用されます。 Oracle E-business アダプターは、いくつかのメソッドを使用するには、これらの資格情報を指定できますを提供します。 BizTalk ソリューションでの Oracle 資格情報を安全に提供する方法については、次を参照してください。[アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-oracle-ebs/security-with-the-oracle-e-business-suite-adapter-and-biztalk-server.md)します。 ソリューションをプログラミングでの Oracle 資格情報を安全に提供する方法については、次を参照してください。 [Oracle EBS アダプターを使用したプログラミングにセキュリティで保護された](../../adapters-and-accelerators/adapter-oracle-ebs/secure-programming-with-the-oracle-ebs-adapter.md)します。  
+ [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]も Oracle E-business Suite に接続するユーザー名とパスワードの資格情報を入力する必要があります。 これらの資格情報は、ユーザーを認証され、接続の承認のレベルに使用されます。 Oracle E-business アダプターは、いくつかのメソッドを使用するには、これらの資格情報を指定できますを提供します。 BizTalk ソリューションでの Oracle 資格情報を安全に提供する方法については、[アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-oracle-ebs/security-with-the-oracle-e-business-suite-adapter-and-biztalk-server.md)を参照してください。 ソリューションをプログラミングでの Oracle 資格情報を安全に提供する方法については、[Oracle EBS アダプターを使用したプログラミングにセキュリティで保護された](../../adapters-and-accelerators/adapter-oracle-ebs/secure-programming-with-the-oracle-ebs-adapter.md)を参照してください。  
   
  詳細:  
   

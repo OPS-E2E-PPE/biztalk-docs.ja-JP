@@ -104,7 +104,7 @@ BizTalk WCF サービス公開ウィザードを使用して WCF サービスを
 
 ### <a name="to-configure-the-web-application-for-publishing-service-metadata"></a>サービス メタデータを公開する Web アプリケーションを構成するには  
 
-1. BizTalk WCF サービス公開ウィザードで作成した Web アプリケーションについて ASP.NET を有効にします。 詳細については、次を参照してください。 [Web サービスを有効にする](../core/enabling-web-services.md)します。  
+1. BizTalk WCF サービス公開ウィザードで作成した Web アプリケーションについて ASP.NET を有効にします。 詳細については、[Web サービスを有効にする](../core/enabling-web-services.md)を参照してください。  
 
    > [!NOTE]
    >  その他のバージョンの Windows オペレーティング システムを使用している場合は、アプリケーション プールの ID アカウントを BizTalk Server 管理者グループに追加する必要があります。 BizTalk Server 管理者グループに、適切なアカウントを追加した後は、IIS サービスを有効にする設定を再起動する必要があります。  

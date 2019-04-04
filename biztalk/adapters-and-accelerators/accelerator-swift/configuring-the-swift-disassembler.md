@@ -43,9 +43,9 @@ SWIFT 逆アセンブラー (逆アセンブラー) は microsoft を呼び出�
   
   カスタム受信パイプラインの逆アセンブル ステージに追加した後で SWIFT 逆アセンブラーを構成するには、BizTalk パイプライン デザイナー キャンバスに SWIFT 逆アセンブラー コンポーネントを選択します。 SWIFT 逆アセンブラーは、フォーカスを受け取るし、Microsoft 内で [プロパティ] ウィンドウを使用してその構成プロパティを設定する[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]します。  
   
-  使用可能な構成プロパティとその説明および使用方法の詳細のテーブルの場合、次を参照してください。 [SWIFT 逆アセンブラーの構成プロパティ](../../adapters-and-accelerators/accelerator-swift/swift-disassembler-configuration-properties.md)します。  
+  使用可能な構成プロパティとその説明および使用方法の詳細のテーブルの場合、[SWIFT 逆アセンブラーの構成プロパティ](../../adapters-and-accelerators/accelerator-swift/swift-disassembler-configuration-properties.md)を参照してください。  
   
-  SWIFT 逆アセンブラーを使用して、さまざまなシナリオと構成プロパティの設定については、次を参照してください。 [SWIFT 逆アセンブラーとアセンブラー](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)します。  
+  SWIFT 逆アセンブラーを使用して、さまざまなシナリオと構成プロパティの設定については、[SWIFT 逆アセンブラーとアセンブラー](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)を参照してください。  
   
   ときに[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]バイナリ、カスタム パイプラインに静的に構成設定を書き込むカスタム パイプラインをコンパイルします。 そのため、デプロイ時に構成プロパティを変更したり、時間を実行したりすることはできません。  
   

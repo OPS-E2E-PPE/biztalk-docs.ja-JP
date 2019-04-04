@@ -40,7 +40,7 @@ RNIF 通信は複雑です。 RNIF 処理を実行するパブリック プロ�
 > [!NOTE]
 >  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、RosettaNet Ready RNIF 2.0 に準拠しています。  
   
-この 2 つのバージョンでは RosettaNet メッセージの定義方法が異なります。 異なるメッセージ コンテナの詳細については、次を参照してください。 [RNIF 規格](../../adapters-and-accelerators/accelerator-rosettanet/rnif-standard.md)します。  
+この 2 つのバージョンでは RosettaNet メッセージの定義方法が異なります。 異なるメッセージ コンテナの詳細については、[RNIF 規格](../../adapters-and-accelerators/accelerator-rosettanet/rnif-standard.md)を参照してください。  
   
 統合システムは、HTTP/HTTPS および SMTP; 経由で RNIF 転送を実行します。ただし、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] HTTP/HTTPS のみを実装します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RNIF 1.1 の添付ファイル、および同期トランザクションができませんでした。  
   

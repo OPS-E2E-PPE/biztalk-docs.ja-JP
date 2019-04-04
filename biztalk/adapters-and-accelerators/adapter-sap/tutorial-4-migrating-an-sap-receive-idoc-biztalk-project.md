@@ -48,7 +48,7 @@ WCF ベースの Microsoft BizTalk Server に同梱されている SAP アダプ
 >  説明を簡潔にするため、このチュートリアルでは SAP アダプターの以前のバージョンを vPrev SAP アダプターとして指す場合は。 同様に、vPrev SAP アダプターを使用する BizTalk プロジェクトは vPrev BizTalk プロジェクトに参照されます。  
   
 ## <a name="sample-used-for-the-tutorial"></a>このチュートリアルで使用されるサンプル  
- このチュートリアルは、SAP システムからフラット ファイル IDOC を受信する vPrev BizTalk プロジェクトを移行する方法を示すサンプル (ReceiveIDOC_Migration) に基づいています。 サンプルが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
+ このチュートリアルは、SAP システムからフラット ファイル IDOC を受信する vPrev BizTalk プロジェクトを移行する方法を示すサンプル (ReceiveIDOC_Migration) に基づいています。 サンプルが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
   

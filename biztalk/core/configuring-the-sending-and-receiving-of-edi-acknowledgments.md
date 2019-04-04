@@ -31,11 +31,11 @@ ms.locfileid: "37000395"
   
      概念的には、任意の一方向アグリーメント タブを持つ同じ送信者から受信確認のプロパティが取得され、受信者の修飾子としてが受信確認のコンテキスト プロパティに設定します。 ただし、実際に使いやすいように、一般的には、インターチェンジの解決用に作成したアグリーメントのもう 1 つの一方向のアグリーメント タブでこの設定を行います。  
   
--   元のインターチェンジの送信元パーティに EDI 受信確認を返すパーティは、受信確認を取得して送信するための一方向送信ポートを設定するか、受信確認を送信するための双方向受信ポートを設定します。 詳細については、次を参照してください。 [EDI インターチェンジの送信と受信確認を静的送信ポートを構成する](../core/configuring-a-static-send-port-to-send-edi-interchanges-and-acknowledgments.md)します。  
+-   元のインターチェンジの送信元パーティに EDI 受信確認を返すパーティは、受信確認を取得して送信するための一方向送信ポートを設定するか、受信確認を送信するための双方向受信ポートを設定します。 詳細については、[EDI インターチェンジの送信と受信確認を静的送信ポートを構成する](../core/configuring-a-static-send-port-to-send-edi-interchanges-and-acknowledgments.md)を参照してください。  
   
--   EDI 受信確認を待ち受けるパーティは、受信確認を受け取るための双方向送信ポートまたは一方向受信ポートを設定します。 詳細については、次を参照してください。[受信確認と EDI メッセージを受信するポートの構成](../core/configuring-a-port-to-receive-edi-messages-and-acknowledgments.md)します。  
+-   EDI 受信確認を待ち受けるパーティは、受信確認を受け取るための双方向送信ポートまたは一方向受信ポートを設定します。 詳細については、[受信確認と EDI メッセージを受信するポートの構成](../core/configuring-a-port-to-receive-edi-messages-and-acknowledgments.md)を参照してください。  
   
--   BizTalk EDI アプリケーションには、管理スキーマが含まれています。 このため、EDI ソリューションを含むアプリケーションには、BizTalk EDI アプリケーションへの参照を含める必要があります。 詳細については、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
+-   BizTalk EDI アプリケーションには、管理スキーマが含まれています。 このため、EDI ソリューションを含むアプリケーションには、BizTalk EDI アプリケーションへの参照を含める必要があります。 詳細については、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
@@ -64,7 +64,7 @@ ms.locfileid: "37000395"
    4. **送信ポート**] ページの [、**名前**の列、**送信ポート**グリッドで、受信確認を送信するように設定した送信ポートを選択します。  
   
       > [!NOTE]
-      >  この送信ポート設定は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がメッセージを処理するときにどのパーティを使用するかを特定するために使用されます。 詳細については、次を参照してください。[アグリーメントの解決と送信 EDI メッセージのスキーマ決定](../core/agreement-resolution-and-schema-determination-for-outgoing-edi-messages.md)します。  
+      >  この送信ポート設定は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がメッセージを処理するときにどのパーティを使用するかを特定するために使用されます。 詳細については、[アグリーメントの解決と送信 EDI メッセージのスキーマ決定](../core/agreement-resolution-and-schema-determination-for-outgoing-edi-messages.md)を参照してください。  
       > 
       > [!NOTE]
       >  送信ポートをまだ設定していない場合は、後でこの手順を実行する必要があります。  

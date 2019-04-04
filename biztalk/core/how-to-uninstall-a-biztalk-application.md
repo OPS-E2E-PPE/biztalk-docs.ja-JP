@@ -37,19 +37,19 @@ ms.locfileid: "37010995"
 - 処理前および処理後のスクリプトは削除されますが、インストール時またはアンインストール時にスクリプトによって追加されたファイルは削除されず、スクリプトによって実行されたアクションが取り消されることもありません。 スクリプトが追加したファイルを削除する場合、またはスクリプトのアクションを取り消す場合は、明示的に行う必要があります。  
   
   > [!NOTE]
-  >  アプリケーションのインポート時に、展開プロパティでインポート先が指定されていた処理前または処理後のスクリプトだけが、アンインストール中に実行されます。 詳細については、次を参照してください。[より前に追加する方法または処理後のスクリプトをアプリケーションに](../core/how-to-add-a-pre-or-post-processing-script-to-an-application.md)します。  
+  >  アプリケーションのインポート時に、展開プロパティでインポート先が指定されていた処理前または処理後のスクリプトだけが、アンインストール中に実行されます。 詳細については、[より前に追加する方法または処理後のスクリプトをアプリケーションに](../core/how-to-add-a-pre-or-post-processing-script-to-an-application.md)を参照してください。  
   
-- BizTalk アプリケーションのアンインストール時に証明書は削除されません。 証明書を削除する場合は、明示的に行う必要があります。 また、コンポーネントは Windows レジストリから削除されず、BizTalk アセンブリはグローバル アセンブリ キャッシュ (GAC) から削除されません。 これらを削除する場合は、明示的に行う必要があります。 詳細については、次を参照してください。 [BizTalk アプリケーションの設定およびその他のファイルを削除する方法](../core/how-to-remove-other-files-and-settings-for-a-biztalk-application.md)します。  
+- BizTalk アプリケーションのアンインストール時に証明書は削除されません。 証明書を削除する場合は、明示的に行う必要があります。 また、コンポーネントは Windows レジストリから削除されず、BizTalk アセンブリはグローバル アセンブリ キャッシュ (GAC) から削除されません。 これらを削除する場合は、明示的に行う必要があります。 詳細については、[BizTalk アプリケーションの設定およびその他のファイルを削除する方法](../core/how-to-remove-other-files-and-settings-for-a-biztalk-application.md)を参照してください。  
   
   アンインストールの完了前にアンインストール操作を取り消すと、BizTalk Server はアンインストールをロールバックします。ただし、操作の取り消し前に処理前および処理後のスクリプトによって実行されたアクションはロールバックされません。 アンインストールを開始する前の状態にアプリケーションを復元するには、.msi ファイルをダブルクリックして、アプリケーションを再インストールしてください。 アプリケーションに対して複数の .msi ファイルがインストールされている場合、アプリケーションを再インストールするには、.msi ファイルが最初にインストールされた順序で各 .msi ファイルをダブルクリックする必要があります。  
   
-  処理後のスクリプトの詳細については、次を参照してください。[アプリケーション展開のカスタマイズを前処理および後処理のスクリプトを使用して](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)します。  
+  処理後のスクリプトの詳細については、[アプリケーション展開のカスタマイズを前処理および後処理のスクリプトを使用して](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)を参照してください。  
   
 > [!NOTE]
 >  BizTalk アプリケーションを完全に展開解除する必要がありますも削除する、BizTalk グループから」の説明に従って[BizTalk グループから BizTalk アプリケーションを削除する方法](../core/how-to-delete-a-biztalk-application-from-the-biztalk-group.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、適切なアクセス許可でログオンする必要があります。 詳細については、次を参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
+ このトピックの手順を実行するには、適切なアクセス許可でログオンする必要があります。 詳細については、[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)を参照してください。  
   
 ## <a name="to-uninstall-a-biztalk-application"></a>BizTalk アプリケーションをアンインストールするには  
   

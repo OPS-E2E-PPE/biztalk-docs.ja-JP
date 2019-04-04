@@ -20,7 +20,7 @@ ms.lasthandoff: 12/04/2018
 ms.locfileid: "52826458"
 ---
 # <a name="create-the-receive-location-and-send-port-programmatically"></a>受信場所を作成し、送信ポートをプログラムで
-構成、Wcf-basichttp 受信場所と送信ポートをプログラムでします。 BizTalk 管理コンソールを使用する、次を参照してください。 [、Wcf-basichttp アダプタ](../core/wcf-basichttp-adapter.md)します。 
+構成、Wcf-basichttp 受信場所と送信ポートをプログラムでします。 BizTalk 管理コンソールを使用する、[、Wcf-basichttp アダプタ](../core/wcf-basichttp-adapter.md)を参照してください。 
 
 ## <a name="configure-the-receive-location-programmatically"></a>受信場所をプログラムで構成します。  
 

@@ -54,7 +54,7 @@ ms.locfileid: "36993707"
 4. をクリックして**適用**、し**OK**します。  
 
 > [!NOTE]
->  暗号化証明書がある場合は、ここで構成します。 暗号化証明書を構成する方法の詳細については、次を参照してください。[証明書の管理](../../adapters-and-accelerators/accelerator-rosettanet/managing-certificates1.md)します。  
+>  暗号化証明書がある場合は、ここで構成します。 暗号化証明書を構成する方法の詳細については、[証明書の管理](../../adapters-and-accelerators/accelerator-rosettanet/managing-certificates1.md)を参照してください。  
 
 ## <a name="see-also"></a>参照  
  [手順 3: Partner Interface Process の編集](../../adapters-and-accelerators/accelerator-rosettanet/step-3-edit-the-partner-interface-process.md)

@@ -29,7 +29,7 @@ ms.locfileid: "37006137"
   
 - ESB パイプライン コンポーネントによって実行される変換  
   
-  このセクションでは、オーケストレーションとして実装されている変換エージェントについて説明します。 Web サービスの変換については、次を参照してください。 [BizTalk ESB Toolkit Web サービスを使用して](../esb-toolkit/using-the-biztalk-esb-toolkit-web-services.md)します。 ESB ディスパッチャー パイプラインのコンポーネントについては、次を参照してください。[パイプライン サポート コンポーネントを使用して](../esb-toolkit/using-the-pipeline-support-components.md)します。  
+  このセクションでは、オーケストレーションとして実装されている変換エージェントについて説明します。 Web サービスの変換については、[BizTalk ESB Toolkit Web サービスを使用して](../esb-toolkit/using-the-biztalk-esb-toolkit-web-services.md)を参照してください。 ESB ディスパッチャー パイプラインのコンポーネントについては、[パイプライン サポート コンポーネントを使用して](../esb-toolkit/using-the-pipeline-support-components.md)を参照してください。  
   
 ## <a name="how-it-works"></a>しくみ  
  変換の配信エージェントはメッセージをサブスクライブするオーケストレーションは、場所、**名前**、現在の属性**ServiceInstance**旅行計画内の要素が**Microsoft.Practices.ESB.Services.Transform**します。 エージェントは、次の一連の操作を実行します。  
@@ -43,7 +43,7 @@ ms.locfileid: "37006137"
 4.  BizTalk メッセージ ボックス データベースにマップの出力を発行します。  
   
 ## <a name="how-to-configure-dynamic-transformation"></a>動的な変換を構成する方法  
- 旅行プラン デザイナーを使用して動的な変換を構成する方法の詳細については、次を参照してください。[旅行プランを使用してスケジュールの作成のデザイナー](../esb-toolkit/creating-itineraries-using-itinerary-designer.md)します。  
+ 旅行プラン デザイナーを使用して動的な変換を構成する方法の詳細については、[旅行プランを使用してスケジュールの作成のデザイナー](../esb-toolkit/creating-itineraries-using-itinerary-designer.md)を参照してください。  
   
 ## <a name="dynamic-transformation-errors"></a>動的変換エラー  
  動的変換メカニズムは作成し、次の場合に、ESB エラー メッセージを発行します。  
@@ -60,4 +60,4 @@ ms.locfileid: "37006137"
   
 - すべてのシステム例外が発生します。  
   
-  例外メッセージを設定して、例外に対応するためのハンドラーを作成するために使用するコンテキスト情報を提供する、開発者の役目です。 データの一部が自動的に使用して、ターゲット ハンドラーが指定されたか使用できない場合は、ジェネリック ハンドラーを例外メッセージを選択します。 動的な変換の例外の処理の詳細については、次を参照してください。 [ESB 例外管理を使用して](../esb-toolkit/using-esb-exception-management.md)します。
+  例外メッセージを設定して、例外に対応するためのハンドラーを作成するために使用するコンテキスト情報を提供する、開発者の役目です。 データの一部が自動的に使用して、ターゲット ハンドラーが指定されたか使用できない場合は、ジェネリック ハンドラーを例外メッセージを選択します。 動的な変換の例外の処理の詳細については、[ESB 例外管理を使用して](../esb-toolkit/using-esb-exception-management.md)を参照してください。

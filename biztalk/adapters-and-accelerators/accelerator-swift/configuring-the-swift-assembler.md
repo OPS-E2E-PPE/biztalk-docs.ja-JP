@@ -37,9 +37,9 @@ Microsoft で起動するときに、SWIFT アセンブラーが、次のタス�
   
   カスタム送信パイプラインのアセンブル ステージに追加した後で、SWIFT アセンブラーを構成するには、パイプライン デザイナー キャンバスに SWIFT アセンブラー コンポーネントを選択します。 SWIFT アセンブラーし、フォーカスを受け取るし、Microsoft 内で [プロパティ] ウィンドウを使用してその構成プロパティを設定する[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]します。  
   
-  使用可能な構成プロパティとその説明および使用方法の詳細のテーブルの場合、次を参照してください。 [SWIFT アセンブラーの構成プロパティ](../../adapters-and-accelerators/accelerator-swift/swift-assembler-configuration-properties.md)します。  
+  使用可能な構成プロパティとその説明および使用方法の詳細のテーブルの場合、[SWIFT アセンブラーの構成プロパティ](../../adapters-and-accelerators/accelerator-swift/swift-assembler-configuration-properties.md)を参照してください。  
   
-  SWIFT アセンブラーを使用して、さまざまなシナリオと構成プロパティの設定については、次を参照してください。 [SWIFT 逆アセンブラーとアセンブラー](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)します。  
+  SWIFT アセンブラーを使用して、さまざまなシナリオと構成プロパティの設定については、[SWIFT 逆アセンブラーとアセンブラー](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)を参照してください。  
   
   カスタム パイプラインのバイナリがコンパイルされると、静的に構成設定をカスタム パイプラインに書き込みます。 そのため、デプロイ時に構成プロパティを変更したり、時間を実行したりすることはできません。  
   

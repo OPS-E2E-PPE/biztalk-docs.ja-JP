@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37007755"
 ---
 # <a name="connect-to-the-oracle-database-using-windows-authentication"></a>Windows 認証を使用して Oracle データベースへの接続します。
-[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]により、クライアントは、Oracle データベースとの接続を確立するために Windows 認証を使用するアダプター。 Windows 認証を使用するアダプターのクライアントを指定する必要があります「/」は、ユーザー名とパスワードが空白のままにします。 Windows 認証を使用して Oracle データベースへの接続に関する詳細については、次を参照してください。 [Consume Adapter Service を使用して Visual Studio での Oracle データベースへの接続](../../adapters-and-accelerators/adapter-oracle-database/connect-to-oracle-database-in-visual-studio-using-the-consume-adapter-service.md)します。  
+[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]により、クライアントは、Oracle データベースとの接続を確立するために Windows 認証を使用するアダプター。 Windows 認証を使用するアダプターのクライアントを指定する必要があります「/」は、ユーザー名とパスワードが空白のままにします。 Windows 認証を使用して Oracle データベースへの接続に関する詳細については、[Consume Adapter Service を使用して Visual Studio での Oracle データベースへの接続](../../adapters-and-accelerators/adapter-oracle-database/connect-to-oracle-database-in-visual-studio-using-the-consume-adapter-service.md)を参照してください。  
   
  Oracle データベースへの接続に Windows 認証を使用するアダプターのクライアントを有効にするには、Oracle データベースを実行するコンピューターで、次のタスクを行う必要があります。  
   

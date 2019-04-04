@@ -30,7 +30,7 @@ ms.locfileid: "58764566"
   
 - **XmlPolling**します。 SELECT ステートメントまたはストアド プロシージャを FOR XML 句を使用して、XML メッセージとしてデータを返すを使用できます。 この操作は、XML メッセージとしてポーリング メッセージを返します。  
   
-   FOR XML 句の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=131402](http://go.microsoft.com/fwlink/?LinkId=131402)します。  
+   FOR XML 句の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=131402](http://go.microsoft.com/fwlink/?LinkId=131402)を参照してください。  
   
   ポーリングの詳細については、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[を使用して BizTalk Server によって SQL Server からのデータ変更メッセージの受信のポーリングに基づいた](../../adapters-and-accelerators/adapter-sql/receive-polling-based-data-changed-messages-from-sql-server-using-biztalk.md)します。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "58764566"
   
 3. 残りの手順では、2 ~ 6 の前のセクションで説明されているポーリング操作に記載の手順と同じです。  
   
-   ポーリングと厳密に型指定されたポーリングに関連するバインドのプロパティの詳細については、次を参照してください。 [for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。  
+   ポーリングと厳密に型指定されたポーリングに関連するバインドのプロパティの詳細については、[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)を参照してください。  
   
 > [!NOTE]
 >  複数の結果セットは、ポーリング ステートメントを実行した結果として返されることができます。 結果セットに行が含まれない場合は、アダプターのクライアントにメッセージが送信されません。  

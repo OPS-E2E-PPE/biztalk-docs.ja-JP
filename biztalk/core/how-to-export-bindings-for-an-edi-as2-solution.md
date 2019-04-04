@@ -22,9 +22,9 @@ ms.locfileid: "37012331"
 # <a name="how-to-export-bindings-for-an-edi-as2-solution"></a>EDI AS2 ソリューションのバインドをエクスポートする方法
 このトピックでは、EDI または AS2 ソリューションとして設定されたコンピュータから構成をエクスポートする方法について説明します。 これにより、自動化された方法で別のコンピュータと同じ構成を設定できるようになります。 バインドのエクスポート元としては、アプリケーション、グループ、アセンブリがあります。  
   
- バインド ファイルを作成するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用します。 .xml バインド ファイルには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の構成に関するすべての情報が含まれています。 このファイルには、特定のセキュリティ情報を除くすべての EDI および AS2 の構成プロパティが含まれています。 バインド ファイル (などの EDI および AS2 ノード) 内のノードの詳細については、次を参照してください。[バインド ファイルの構造体](../core/structure-of-a-binding-file.md)します。 EDI/AS2 バインドに関する一般的な情報については、以下の「[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] バインド ファイルの EDI および AS2 ノード」を参照してください。  
+ バインド ファイルを作成するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用します。 .xml バインド ファイルには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の構成に関するすべての情報が含まれています。 このファイルには、特定のセキュリティ情報を除くすべての EDI および AS2 の構成プロパティが含まれています。 バインド ファイル (などの EDI および AS2 ノード) 内のノードの詳細については、[バインド ファイルの構造体](../core/structure-of-a-binding-file.md)を参照してください。 EDI/AS2 バインドに関する一般的な情報については、以下の「[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] バインド ファイルの EDI および AS2 ノード」を参照してください。  
   
- また、.msi ファイル使用して、アプリケーションのエクスポート時にバインドをエクスポートすることもできます。 詳細については、次を参照してください。、 [BizTalk アプリケーションのエクスポート方法](../core/how-to-export-a-biztalk-application.md)します。 BTSTask コマンドを使用して、バインドをエクスポートおよびインポートすることもできます。 BTSTask の詳細については、次を参照してください。 [BTSTask コマンド ライン リファレンス](../core/btstask-command-line-reference.md)します。  
+ また、.msi ファイル使用して、アプリケーションのエクスポート時にバインドをエクスポートすることもできます。 詳細については、、 [BizTalk アプリケーションのエクスポート方法](../core/how-to-export-a-biztalk-application.md)を参照してください。 BTSTask コマンドを使用して、バインドをエクスポートおよびインポートすることもできます。 BTSTask の詳細については、[BTSTask コマンド ライン リファレンス](../core/btstask-command-line-reference.md)を参照してください。  
   
  **バインドのエクスポート**  
   
@@ -103,7 +103,7 @@ EDIGlobalProperties
       GlobalX12  
 ```  
   
- EDI および AS2 ノードは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] バインド ファイルの末尾に追加されます。 EdiData ノードは、Party Collection ノードの下の Party サブノードに追加され、EdiGlobalProperties ノードは、Party Collection ノードの後に同じレベルで追加されます。 BizTalk バインド ファイル内の EDI および AS2 ノードの詳細については、次を参照してください。[バインド ファイルの構造体](../core/structure-of-a-binding-file.md)します。  
+ EDI および AS2 ノードは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] バインド ファイルの末尾に追加されます。 EdiData ノードは、Party Collection ノードの下の Party サブノードに追加され、EdiGlobalProperties ノードは、Party Collection ノードの後に同じレベルで追加されます。 BizTalk バインド ファイル内の EDI および AS2 ノードの詳細については、[バインド ファイルの構造体](../core/structure-of-a-binding-file.md)を参照してください。  
   
  EdiData ノードは省略可能です。 ただし、EdiData ノードが存在する場合、EdiData の下のサブノードも存在する必要があります。 同様に、EdiGlobalProperties ノードも省略可能ですが、EdiGlobalProperties ノードが存在する場合は、このノードの下のサブノードも存在する必要があります。  
   

@@ -62,7 +62,7 @@ Stored Procedure Overload 2:
    このトピックでは、これらのタスクを実行する手順を説明します。  
   
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル InvokeOverloadedProc、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
+ サンプル InvokeOverloadedProc、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
   
 ## <a name="generating-schema"></a>スキーマを生成します。  
  このトピックで、オーバー ロードされた関数またはプロシージャを呼び出す方法を示すために私たちは、GET_ACCOUNT プロシージャを呼び出す SCOTT\Package\ACCOUNT_PKG スキーマの下。 このパッケージは、サンプルで提供される SQL スクリプトを実行して、SCOTT スキーマの下に作成されます。 これは、オーバー ロードされたプロシージャ場所。  
@@ -71,7 +71,7 @@ Stored Procedure Overload 2:
   
 - 2 番目のオーバー ロードは、IN パラメーターとして、アカウント名を受け取り、出力パラメーターとして、アカウント %rowtype を返します。  
   
-  サンプルとの SQL スクリプトの詳細については、次を参照してください。[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)します。  
+  サンプルとの SQL スクリプトの詳細については、[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)を参照してください。  
   
   オーバー ロード関数を呼び出すため、両方のオーバー ロードされたプロシージャ、GET_ACCOUNT.1 と GET_ACCOUNT.2 のスキーマを生成します。 参照してください[Visual Studio での Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)スキーマを生成する方法の詳細について。  
   
@@ -153,13 +153,13 @@ Stored Procedure Overload 2:
  2 つの要求を処理するため、これらのポートを使用して応答メッセージは、ポートごとに各操作が 1 つのメッセージの種類に対応する 2 つの操作を作成する必要があります。 操作を作成するポート図形を右クリックし、**新しい操作**します。 最初の操作としては、各ポートの名前を付けます**Overload1**としてポートごとに 2 番目の操作と**Overload2**します。  
   
 ### <a name="using-correlation"></a>相関関係の使用  
- 関連付けは、受信メッセージをオーケストレーションの適切なインスタンスに一致させるプロセスです。 削除するオーケストレーションに 2 つの要求メッセージは、各オーバー ロードのいずれか。 相関関係を使用して、適切なオーケストレーションを要求メッセージに関連付けます。 相関関係の詳細については、次を参照してください。[オーケストレーションでの相関関係を使用して](../../core/using-correlations-in-orchestrations.md)します。  
+ 関連付けは、受信メッセージをオーケストレーションの適切なインスタンスに一致させるプロセスです。 削除するオーケストレーションに 2 つの要求メッセージは、各オーバー ロードのいずれか。 相関関係を使用して、適切なオーケストレーションを要求メッセージに関連付けます。 相関関係の詳細については、[オーケストレーションでの相関関係を使用して](../../core/using-correlations-in-orchestrations.md)を参照してください。  
   
 ##### <a name="to-use-correlations"></a>相関関係を使用するには  
   
 1.  各オーバー ロードされた関数の生成スキーマからプロパティを昇格します。 たとえば、最初のオーバー ロードのスキーマから支援プロパティを昇格させます2 番目のオーバー ロードのスキーマから ANAME プロパティを昇格させます。 プロパティを昇格させるには、スキーマ ビューでプロパティを右クリックして**昇格**、し、**クイック昇格**します。 これにより、PropertySchema.xsd ファイルが BizTalk プロジェクトに追加します。  
   
-     プロパティを昇格する方法の詳細については、次を参照してください。[プロパティの昇格](../../core/promoting-properties.md)します。  
+     プロパティを昇格する方法の詳細については、[プロパティの昇格](../../core/promoting-properties.md)を参照してください。  
   
 2.  オーケストレーションの種類を右クリックして**関連付けの種類**、し、**新しい関連付けの種類**します。  
   
@@ -203,10 +203,10 @@ Stored Procedure Overload 2:
   
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
   
- ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。  
+ ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。  
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、次を参照してください。[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)します。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)を参照してください。
   
  アプリケーションを構成する必要があります。  
   
@@ -218,7 +218,7 @@ Stored Procedure Overload 2:
   
   - ハード ディスクと、BizTalk オーケストレーションが応答メッセージは、Oracle データベースからの応答を含む、各オーバー ロードされたプロシージャのいずれかをドロップする場所、対応するファイル ポートでの場所を定義します。  
   
-  - Oracle データベースにメッセージを送信する物理 Wcf-custom または Wcf-oracledb 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 Wcf-custom または Wcf-oracledb のポートを作成する方法については、次を参照してください。 [、Oracle データベース アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)します。 Wcf-custom または Wcf-oracledb 送信ポートは 1 つ以上のスキーマに準拠したメッセージの送受信および 2 つの操作を実行、ためには、両方の操作のための動的アクションを設定する必要があります。 アクションの詳細については、次を参照してください。 [Oracle データベースの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-soap-action-for-oracle-database.md)します。 このオーケストレーションでは、アクションをよう設定する必要があります。  
+  - Oracle データベースにメッセージを送信する物理 Wcf-custom または Wcf-oracledb 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 Wcf-custom または Wcf-oracledb のポートを作成する方法については、[、Oracle データベース アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)を参照してください。 Wcf-custom または Wcf-oracledb 送信ポートは 1 つ以上のスキーマに準拠したメッセージの送受信および 2 つの操作を実行、ためには、両方の操作のための動的アクションを設定する必要があります。 アクションの詳細については、[Oracle データベースの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-soap-action-for-oracle-database.md)を参照してください。 このオーケストレーションでは、アクションをよう設定する必要があります。  
   
     ```  
     <BtsActionMapping>  
@@ -228,10 +228,10 @@ Stored Procedure Overload 2:
     ```  
   
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、次を参照してください。 [Oracle データベースへのポート バインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)します。  
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、[Oracle データベースへのポート バインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)を参照してください。  
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- Oracle のデータベース テーブル内の関数を呼び出す BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。  
+ Oracle のデータベース テーブル内の関数を呼び出す BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。  
   
  この段階で、ことを確認します。  
   
@@ -281,7 +281,7 @@ Stored Procedure Overload 2:
  例外に関する情報を使用するオーバー ロードされたパッケージの呼び出し中に発生する可能性が[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[例外とエラー処理](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md)します。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、次を参照してください。 [Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)します。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、[Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
 [Oracle Database による開発の BizTalk アプリケーションを構成要素](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md)

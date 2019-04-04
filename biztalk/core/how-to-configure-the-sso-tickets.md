@@ -41,7 +41,7 @@ ms.locfileid: "56087934"
   
 - システム レベルと関連アプリケーション レベルでチケットのタイムアウトを入力すると、関連アプリケーション レベルで入力した 1 つは、チケットの有効期間を決定します。  
   
-チケットとチケットの検証の詳細については、次を参照してください。 [SSO チケット](../core/sso-tickets.md)します。  
+チケットとチケットの検証の詳細については、[SSO チケット](../core/sso-tickets.md)を参照してください。  
   
 ## <a name="allow-affiliate-application-tickets-using-sso-administration"></a>SSO の管理を使用して関連アプリケーションのチケットを許可します。  
   

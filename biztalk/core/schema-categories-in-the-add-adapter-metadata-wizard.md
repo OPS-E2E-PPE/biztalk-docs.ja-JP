@@ -136,4 +136,4 @@ ms.locfileid: "37008011"
   
  CategorySchema.xml ファイルを修正したら、AdapterManagement プロジェクトをリビルドし、アダプター メタデータの追加ウィザードを実行して、CategorySchema.xml のツリーが正しく表示されることを確認します。  
   
- アダプター メタデータの追加ウィザードを実行する方法の詳細については、次を参照してください。、**アダプター メタデータのウィザード ダイアログ ボックスを追加**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+ アダプター メタデータの追加ウィザードを実行する方法の詳細については、、**アダプター メタデータのウィザード ダイアログ ボックスを追加**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。

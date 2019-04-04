@@ -38,4 +38,4 @@ ms.locfileid: "37013915"
 ## <a name="user-action"></a>ユーザーの操作  
  アダプターの構成を確認します。  
   
- パスワード同期については、次を参照してください。[パスワード同期](../core/password-synchronization2.md)します。
+ パスワード同期については、[パスワード同期](../core/password-synchronization2.md)を参照してください。

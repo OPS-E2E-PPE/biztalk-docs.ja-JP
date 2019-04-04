@@ -142,7 +142,7 @@ ms.locfileid: "36997707"
 
    9. 仮想ディレクトリの構成**ExpenseReport**ローカル パスを使用する[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HTTPReceive  
 
-      詳細については、次を参照してください。 [IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)します。  
+      詳細については、[IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)を参照してください。  
 
 ## <a name="running-the-sample"></a>サンプルを実行します。  
  正しい経費報告書でサンプルを実行する前に、次の手順に従って、"エラーなし" のケース サンプルが正しく機能することを確認します。  

@@ -74,7 +74,7 @@ ms.locfileid: "37013339"
 ## <a name="generating-a-wcf-client-class-by-using-svcutilexe"></a>Svcutil.exe を使用して WCF クライアント クラスを生成します。  
  Svcutil.exe を使用して、アプリケーションの WCF クライアント クラスを生成することができます。 Svcutil.exe を使用すればを構成する必要があります、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
   
- Svcutil.exe の既定のファイル名を持つ出力ファイルで、WCF クライアント クラスを生成する**output.cs**します。 このファイルを手動で含める必要があります、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクト。 Svcutil.exe の詳細については、次を参照してください。 [ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)します。
+ Svcutil.exe の既定のファイル名を持つ出力ファイルで、WCF クライアント クラスを生成する**output.cs**します。 このファイルを手動で含める必要があります、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクト。 Svcutil.exe の詳細については、[ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)を参照してください。
   
 ## <a name="see-also"></a>参照  
 [WCF サービス モデルを使用して SQL アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)

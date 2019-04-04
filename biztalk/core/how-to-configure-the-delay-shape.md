@@ -56,4 +56,4 @@ ms.locfileid: "36993651"
   
 1.  BizTalk 式エディターが表示されていない場合を右クリックし、 **遅延** 図形を **遅延の編集**, は、[プロパティ] ウィンドウで、 **省略記号** (**...**) ボタンをクリックして、 **式** プロパティです。  
   
-2.  BizTalk 式エディターで、作成を返す式、 **System.DateTime**オブジェクトまたは**System.TimeSpan**オブジェクト。 詳細については、次を参照してください。[式の要件と制限](../core/requirements-and-limitations-for-expressions.md)します。
+2.  BizTalk 式エディターで、作成を返す式、 **System.DateTime**オブジェクトまたは**System.TimeSpan**オブジェクト。 詳細については、[式の要件と制限](../core/requirements-and-limitations-for-expressions.md)を参照してください。

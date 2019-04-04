@@ -100,7 +100,7 @@ WCF サービスを作成して、オーケストレーション ポートにバ
 
 ### <a name="to-configure-the-web-application-for-publishing-service-metadata"></a>サービス メタデータを公開する Web アプリケーションを構成するには  
 
-1. BizTalk WCF サービス公開ウィザードで作成した Web アプリケーションについて ASP.NET を有効にします。 詳細については、次を参照してください。 [Web サービスを有効にする](../core/enabling-web-services.md)します。  
+1. BizTalk WCF サービス公開ウィザードで作成した Web アプリケーションについて ASP.NET を有効にします。 詳細については、[Web サービスを有効にする](../core/enabling-web-services.md)を参照してください。  
 
    > [!NOTE]
    >  Windows Server 2008 または Windows Vista を使用している場合は、アプリケーション プールの ID アカウントを BizTalk Server 管理者グループに追加する必要があります。 該当するアカウントを BizTalk Server 管理者グループに追加した後は、IIS サービスを再起動して設定を有効にする必要があります。  

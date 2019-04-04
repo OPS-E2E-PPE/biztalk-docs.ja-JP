@@ -31,7 +31,7 @@ ms.locfileid: "37002115"
  ポートのバインド ファイルを常に使用するポートを作成する、双方向の送信を作成します。 または、受信ポート。 一方向のポートを作成する場合は、ことができます、手動で作成する手順を使用して[SAP アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sap/manually-configure-a-physical-port-binding-to-the-sap-adapter.md)します。 または、一方向のポートを作成するポートのバインド ファイルを変更するには、このトピックに記載されている回避策を利用できます。  
   
 > [!IMPORTANT]
->  使用して、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] WCF SAP ポートを作成することができますを使用してポートのバインド ファイルを作成しません。 ただし、によって生成されたポートのバインド ファイルにいくつかの変更を加える可能性があります、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] WCF SAP ポートの作成に使用します。 詳細については、次を参照してください。[ポートのバインド ファイルが生成を使用して Consume Adapter Service アドインを使用して WCF SAP ポートを構成する](#BKMK_add_wcf_sap)します。  
+>  使用して、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] WCF SAP ポートを作成することができますを使用してポートのバインド ファイルを作成しません。 ただし、によって生成されたポートのバインド ファイルにいくつかの変更を加える可能性があります、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] WCF SAP ポートの作成に使用します。 詳細については、[ポートのバインド ファイルが生成を使用して Consume Adapter Service アドインを使用して WCF SAP ポートを構成する](#BKMK_add_wcf_sap)を参照してください。  
   
  によって生成されたバインド ファイルに関して理解しておく必要があります重要な点を次に、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]:  
   

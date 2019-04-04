@@ -39,7 +39,7 @@ Microsoft Excel では、ディメンションをカテゴリとして定義し�
   ![](../core/media/bam-olap-cube.gif "bam_olap_cube")  
   事前に計算された集計データ  
   
-  新しいディメンションは BAM ビュー ウィザードで追加します。 ディメンションを追加するには、先にウィザードを使用してビジネス アクティビティ ビューを作成する必要があります。 詳細については、ウィザードを使用して、次を参照してください。[ビジネス アクティビティの定義および Excel でのビュー](../core/defining-business-activities-and-views-in-excel.md)します。  
+  新しいディメンションは BAM ビュー ウィザードで追加します。 ディメンションを追加するには、先にウィザードを使用してビジネス アクティビティ ビューを作成する必要があります。 詳細については、ウィザードを使用して、[ビジネス アクティビティの定義および Excel でのビュー](../core/defining-business-activities-and-views-in-excel.md)を参照してください。  
   
 ### <a name="to-add-new-dimensions"></a>新しいディメンションを追加するには  
   

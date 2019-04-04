@@ -40,7 +40,7 @@ Microsoft.Data.SAPClient.SAPException: Failed to retrieve data from SAP server -
   
  **解決方法**  
   
- カスタム RFC を最新のバージョンに更新する必要があります。 この RFC、Z_EXTRACT_DATA_OO は、adapterpacknoversion 利用できます。 インストールおよびカスタム RFC をアンインストールする方法の詳細については、次を参照してください。 [Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)します。
+ カスタム RFC を最新のバージョンに更新する必要があります。 この RFC、Z_EXTRACT_DATA_OO は、adapterpacknoversion 利用できます。 インストールおよびカスタム RFC をアンインストールする方法の詳細については、[Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)を参照してください。
   
 ##  <a name="BKMK_SAPOOM"></a> メモリ不足例外が SAP テーブルからデータを選択するときに  
  **問題**  

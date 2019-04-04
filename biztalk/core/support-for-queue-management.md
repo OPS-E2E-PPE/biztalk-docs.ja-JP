@@ -168,7 +168,7 @@ HRESULT DeleteQueue (
 3. このプロジェクトへの参照を追加、 **MQSAgent 1.0 Type Library**します。 **MQSAgent 1.0 Type Library**で使用できますが、 **COM**のタブ、**参照の追加** ダイアログ ボックス。  
   
    > [!NOTE]
-   >  このコンソール アプリケーションを実行するコンピュータには、MQSAgent COM+ コンポーネントがインストールされている必要があります。 MQSAgent COM + コンポーネントのインストールの詳細については、次を参照してください。 [MQSAgent COM + 構成ウィザードを使用して](../core/using-the-mqsagent-com-configuration-wizard.md)します。  
+   >  このコンソール アプリケーションを実行するコンピュータには、MQSAgent COM+ コンポーネントがインストールされている必要があります。 MQSAgent COM + コンポーネントのインストールの詳細については、[MQSAgent COM + 構成ウィザードを使用して](../core/using-the-mqsagent-com-configuration-wizard.md)を参照してください。  
   
 4. コンソール アプリケーションをビルドします。  
   

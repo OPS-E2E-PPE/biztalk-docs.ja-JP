@@ -35,7 +35,7 @@ ms.locfileid: "37009987"
   
   バインド ファイルは BizTalk アセンブリ、アプリケーション、またはグループを自動的には生成されません。 ただし、バインドをエクスポートすることによって、バインド ファイルを生成できます。 同様をアプリケーションまたはグループにし、バインド ファイルをインポートすることができます。 このセクションでは、インポートしてバインドをエクスポートする方法を説明します。  
   
-  バインドおよびバインド ファイルについての詳細については、次を参照してください。[バインド ファイルとアプリケーションの展開](../../core/binding-files-and-application-deployment.md)します。  
+  バインドおよびバインド ファイルについての詳細については、[バインド ファイルとアプリケーションの展開](../../core/binding-files-and-application-deployment.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
 メンバーであるアカウントでサインイン、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理者または BizTalk Operators グループ。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)、および[最低限のセキュリティ権限](https://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx)します。
@@ -75,7 +75,7 @@ BizTalk Server 管理コンソールを使用してバインドをインポー�
 ## <a name="passwords-are-removed"></a>パスワードは削除されます。  
 セキュリティ上の理由により、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] では、バインド ファイルのエクスポート時にバインドのパスワードがファイルから削除されます。 バインドをインポートした後で、送信ポートと受信場所のパスワードを再構成する必要があります。 [トランスポートのプロパティ] ダイアログ ボックスでパスワードを構成する、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールの送信ポートまたは受信場所。 
 
-ユーザー名とパスワードを指定する方法の詳細については、次を参照してください。 [for SQL Server 資格情報で、サインオンの構成](../../adapters-and-accelerators/adapter-sql/configure-the-sign-in-credentials-for-the-sql-adapter.md)します。
+ユーザー名とパスワードを指定する方法の詳細については、[for SQL Server 資格情報で、サインオンの構成](../../adapters-and-accelerators/adapter-sql/configure-the-sign-in-credentials-for-the-sql-adapter.md)を参照してください。
   
 ## <a name="see-also"></a>参照  
 [SQL アダプターを使用した BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-sql/building-blocks-to-develop-biztalk-applications-with-the-sql-adapter.md)

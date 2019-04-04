@@ -57,7 +57,7 @@ ms.locfileid: "37018892"
 - ソリューションは EDIFACT エンコードを使用したインターチェンジ用に設計されています。  
 
   > [!NOTE]
-  >  X12 インターチェンジの場合は、同様のソリューションを作成する方法については、次を参照してください。[チュートリアル (X12): EDI インターチェンジの受信と送信、受信確認を返す](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)します。  
+  >  X12 インターチェンジの場合は、同様のソリューションを作成する方法については、[チュートリアル (X12): EDI インターチェンジの受信と送信、受信確認を返す](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)を参照してください。  
 
 - EDI の種類の検証および拡張された検証は、受信インターチェンジに対して実行されます。  
 
@@ -66,7 +66,7 @@ ms.locfileid: "37018892"
 - このソリューションでは、トランスポートの種類が FILE である一方向の受信場所が使用されます。  
 
   > [!NOTE]
-  >  双方向の送信請求応答の受信ポートと受信場所を使用してメッセージを受信できますが、この方法で受信する場合、種類が FILE のトランスポートは受信場所に対して使用できません。 詳細については、次を参照してください。[受信確認と EDI メッセージを受信するポートの構成](../core/configuring-a-port-to-receive-edi-messages-and-acknowledgments.md)します。  
+  >  双方向の送信請求応答の受信ポートと受信場所を使用してメッセージを受信できますが、この方法で受信する場合、種類が FILE のトランスポートは受信場所に対して使用できません。 詳細については、[受信確認と EDI メッセージを受信するポートの構成](../core/configuring-a-port-to-receive-edi-messages-and-acknowledgments.md)を参照してください。  
 
 - EDI レポートが有効になり、インターチェンジの状態レポートに表示するトランザクション セットが保存されます。  
 
@@ -130,7 +130,7 @@ ms.locfileid: "37018892"
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk プロジェクトを作成するか、開きます。  
 
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
 
 2. プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の**します。 スキーマがフォルダーに移動[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]xsd_schema \edi\edifact\d98a, し、スキーマをダブルクリックします (**EFACT_D98A_APERAK.xsd**)。  
 

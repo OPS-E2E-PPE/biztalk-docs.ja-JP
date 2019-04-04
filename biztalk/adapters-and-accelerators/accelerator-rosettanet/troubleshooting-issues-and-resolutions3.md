@@ -311,7 +311,7 @@ ms.locfileid: "50758697"
  アセンブリ キー ファイルがプロジェクトに設定されていないので、HubScenario および HubHelper アセンブリが正しく展開されていません。  
   
 ### <a name="solution"></a>ソリューション  
- HubScenario および HubHelper プロジェクトのアセンブリ キー ファイルを設定します。 詳細については、次を参照してください。 [HubScenario サンプル](../../adapters-and-accelerators/accelerator-rosettanet/hubscenario-sample.md)します。  
+ HubScenario および HubHelper プロジェクトのアセンブリ キー ファイルを設定します。 詳細については、[HubScenario サンプル](../../adapters-and-accelerators/accelerator-rosettanet/hubscenario-sample.md)を参照してください。  
   
 ## <a name="run-setupx64bat-to-set-up-the-double-action-pipautomation-orchestration-sample-on-sql-server-2008-r22008-sp1"></a>SQL Server 2008 R2 または SQL Server 2008 SP1 で setupx64.bat を実行して Double Action PIPAutomation オーケストレーション サンプルを設定する  
   
@@ -322,7 +322,7 @@ ms.locfileid: "50758697"
  64 ビット コンピューターで、または SQL Server 2008 R2 または 2008 SP1 で実行されている BizTalk Server のインストールでは、setup.bat を実行します。 これらのインスタンスでは setupx64.bat を実行する必要があります。  
   
 ### <a name="solution"></a>ソリューション  
- setupx64.bat を実行してストアド プロシージャを作成します。 詳細については、次を参照してください。 [Double Action PIPAutomation Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)します。  
+ setupx64.bat を実行してストアド プロシージャを作成します。 詳細については、[Double Action PIPAutomation Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)を参照してください。  
   
 ## <a name="enable-the-btarn-application-pools-for-32-bit-on-windows-server-2008-64-bit-windows-operating-system-os"></a>64 ビットの Windows オペレーティング システム (OS) の Windows Server 2008 で 32 ビットの BTARN アプリケーション プールを有効にする  
  インターネット インフォメーション サービス マネージャー 7.5 または 7.0 を使用して、64 ビットの Windows オペレーティング システム (OS) の Windows Server 2008 で BTARN エンド ツー エンド シナリオを実行するには  

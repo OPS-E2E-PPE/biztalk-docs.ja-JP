@@ -26,7 +26,7 @@ ms.locfileid: "37003651"
 # <a name="extending-btarn-with-a-new-pip"></a>新しい PIP による BTARN の拡張
 このトピックでは、Microsoft を拡張する方法を説明します。[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]新しいパートナー インターフェイス Process (PIP) スキーマを使用します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を拡張すると、RosettaNet PIP が BTARN セットアップ プログラムによってインストールされるどのスキーマとも関連付けられていない場合に、その PIP に基づくスキーマを追加できるようになります。  
 
- 新しい PIP で [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を拡張するには、新しいスキーマを独自のアセンブリで展開します。 また、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RNPIP アセンブリ内に展開された既存のスキーマを変更することもできます。 詳細については、次を参照してください。 [Rnpip の既存の PIP 変更](../../adapters-and-accelerators/accelerator-rosettanet/modifying-an-existing-pip-in-rnpips.md)します。  
+ 新しい PIP で [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を拡張するには、新しいスキーマを独自のアセンブリで展開します。 また、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RNPIP アセンブリ内に展開された既存のスキーマを変更することもできます。 詳細については、[Rnpip の既存の PIP 変更](../../adapters-and-accelerators/accelerator-rosettanet/modifying-an-existing-pip-in-rnpips.md)を参照してください。  
 
 ### <a name="to-extend-btarn-with-a-new-pip"></a>BTARN を新しい PIP で拡張するには  
 
@@ -65,7 +65,7 @@ ms.locfileid: "37003651"
 
 16. **既存項目の追加** ダイアログ ボックスに移動\<*ドライブ*\>: \Program Files\\Microsoft の BizTalk 2013 Accelerator for rosettanet \sdk\schemas を選択します**xml.xsd**、 をクリックし、**追加**します。  
 
-17. RNPIP の拡張に使用する PIP を RosettaNet.org からダウンロードします。詳細については、次を参照してください。[新しい Partner Interface Process の組み込み](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)します。  
+17. RNPIP の拡張に使用する PIP を RosettaNet.org からダウンロードします。詳細については、[新しい Partner Interface Process の組み込み](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)を参照してください。  
 
 18. ソリューション エクスプ ローラーでプロジェクト名を展開し、右クリックして**参照**、 をクリックし、**参照の追加**します。  
 

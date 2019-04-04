@@ -26,7 +26,7 @@ ms.locfileid: "36993980"
   
 1. ソリューション エクスプ ローラーで、調査や関連のプロパティを設定し、クリックするスキーマを右クリックして**プロパティ**します。  
   
-    目的のプロパティの確認や設定を行います。 BizTalk スキーマで使用できるプロパティについては、次を参照してください。、**スキーマ ファイル プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+    目的のプロパティの確認や設定を行います。 BizTalk スキーマで使用できるプロパティについては、、**スキーマ ファイル プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
   
 2. Visual Studio の [プロパティ] ウィンドウで、目的のスキーマ ファイル プロパティを設定し、Enter を押します。  
   
@@ -36,7 +36,7 @@ ms.locfileid: "36993980"
   
 2. 必要に応じて F4 キーを押し、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のプロパティ ウィンドウを開きます。  
   
-3. [プロパティ] ウィンドウで、目的のプロパティの確認や設定を行います。 BizTalk スキーマのプロパティ] ウィンドウで使用できるプロパティについては、次を参照してください。 **[ノードのプロパティ - ノード タイプで**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+3. [プロパティ] ウィンドウで、目的のプロパティの確認や設定を行います。 BizTalk スキーマのプロパティ] ウィンドウで使用できるプロパティについては、**[ノードのプロパティ - ノード タイプで**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
   
     設定したプロパティの値は、変更の承認または取り消しを行う必要はなく、すぐに有効になります。  
   

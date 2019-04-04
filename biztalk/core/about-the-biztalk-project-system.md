@@ -35,20 +35,20 @@ BizTalk プロジェクト システムを使用して、Microsoft [!INCLUDE[bts
   
  BizTalk プロジェクトを作成すると、次に示すファイルの種類が 1 つ以上含まれます。 これらのファイルは、ソリューションの作成時にそれぞれ独自の役割を果たします。BizTalk プロジェクト システムでは、ファイルの種類ごとに対応するグラフィカルなデザイン ツールが用意されています。  
   
-- **オーケストレーションします。** : オーケストレーションとは、ビジネス プロセスのワークフローを表すものです。 オーケストレーション デザイナーを使用して、オーケストレーションをデザインします。 オーケストレーション デザイナーの詳細については、次を参照してください。[オーケストレーション デザイナーを使用してオーケストレーションを作成](../core/creating-orchestrations-using-orchestration-designer.md)です。  
+- **オーケストレーションします。** : オーケストレーションとは、ビジネス プロセスのワークフローを表すものです。 オーケストレーション デザイナーを使用して、オーケストレーションをデザインします。 オーケストレーション デザイナーの詳細については、[オーケストレーション デザイナーを使用してオーケストレーションを作成](../core/creating-orchestrations-using-orchestration-designer.md)を参照してください。  
   
-- **スキーマです。** : スキーマは、XML ドキュメントの構造を記述します。 スキーマによって、組織内のアプリケーション間で、または取引先の間で情報を交換します。 BizTalk エディターは、スキーマを定義するプロセスを単純化します。 BizTalk エディターの詳細については、次を参照してください。 [BizTalk エディターを使用してスキーマを作成する](../core/creating-schemas-using-biztalk-editor.md)します。  
+- **スキーマです。** : スキーマは、XML ドキュメントの構造を記述します。 スキーマによって、組織内のアプリケーション間で、または取引先の間で情報を交換します。 BizTalk エディターは、スキーマを定義するプロセスを単純化します。 BizTalk エディターの詳細については、[BizTalk エディターを使用してスキーマを作成する](../core/creating-schemas-using-biztalk-editor.md)を参照してください。  
   
-- **マップします。** : マップはデータをある形式から別の形式に変換します。 BizTalk マッパーは、送信元スキーマと送信先スキーマを並べて表示し、さまざまなメッセージのデータ要素間の変換を定義できるようにします。 BizTalk マッパーの詳細については、次を参照してください。 [BizTalk マッパーを使用してマップを作成する](../core/creating-maps-using-biztalk-mapper.md)します。  
+- **マップします。** : マップはデータをある形式から別の形式に変換します。 BizTalk マッパーは、送信元スキーマと送信先スキーマを並べて表示し、さまざまなメッセージのデータ要素間の変換を定義できるようにします。 BizTalk マッパーの詳細については、[BizTalk マッパーを使用してマップを作成する](../core/creating-maps-using-biztalk-mapper.md)を参照してください。  
   
-- **パイプライン。** : パイプラインは、さまざまな操作を実行し、後続の処理のために受信メッセージまたは送信メッセージを準備します。 パイプライン デザイナーでは、暗号化と復号化、圧縮、再フォーマッティング、検証などの操作を実装できます。 パイプライン デザイナーの詳細については、次を参照してください。[パイプライン デザイナーを使用してパイプラインを作成](../core/creating-pipelines-using-pipeline-designer.md)です。  
+- **パイプライン。** : パイプラインは、さまざまな操作を実行し、後続の処理のために受信メッセージまたは送信メッセージを準備します。 パイプライン デザイナーでは、暗号化と復号化、圧縮、再フォーマッティング、検証などの操作を実装できます。 パイプライン デザイナーの詳細については、[パイプライン デザイナーを使用してパイプラインを作成](../core/creating-pipelines-using-pipeline-designer.md)を参照してください。  
   
   BizTalk プロジェクトは Team Foundation Server (TFS) と互換性があります。 設計の詳細については、開発、および tfs では、BizTalk Server 内でソリューションの配置について[統合ソリューションの開発 BizTalk Server と Team Foundation Server を使用して](http://www.microsoft.com/downloads/details.aspx?FamilyID=ed7bd0ee-1385-4041-8f2a-354594ee88f3&DisplayLang=en)します。  
   
 > [!IMPORTANT]
 >  TFS ビルドは “MSBuild Platform” というプロパティを公開し、このプロパティは 3 つの値 (“Auto”、“x86”、“x64”) をとることができます。 ビルドを成功させるには、上記のプロパティの値を x86 に設定する必要があります。  
   
- BizTalk プロジェクトは、Visual Studio の他のプロジェクトと共存できます。 Visual Studio のすべてのプロジェクト システムと同様に、BizTalk プロジェクトには、ASP.NET ページなどの他のファイルを含めたり、作成した他のプロジェクトおよびアセンブリを参照できます。 BizTalk プロジェクト テンプレートの詳細については、次を参照してください。 [BizTalk Server プロジェクト テンプレート](../core/biztalk-server-project-templates.md)します。 BizTalk プロジェクトの作成の詳細については、次を参照してください。 [BizTalk プロジェクトを作成する方法](../core/how-to-create-biztalk-projects.md)します。  
+ BizTalk プロジェクトは、Visual Studio の他のプロジェクトと共存できます。 Visual Studio のすべてのプロジェクト システムと同様に、BizTalk プロジェクトには、ASP.NET ページなどの他のファイルを含めたり、作成した他のプロジェクトおよびアセンブリを参照できます。 BizTalk プロジェクト テンプレートの詳細については、[BizTalk Server プロジェクト テンプレート](../core/biztalk-server-project-templates.md)を参照してください。 BizTalk プロジェクトの作成の詳細については、[BizTalk プロジェクトを作成する方法](../core/how-to-create-biztalk-projects.md)を参照してください。  
   
 > [!WARNING]
 >  Visual Studio で使用できる他のプロジェクト システムからも BizTalk デザイン ツールにアクセスできますが、ツールの動作は予測できません。 オーケストレーション デザイナー、パイプライン デザイナー、BizTalk エディター、BizTalk マッパーは、BizTalk プロジェクトのコンテキスト内部でのみ使用してください。  

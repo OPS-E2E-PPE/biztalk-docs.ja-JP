@@ -56,7 +56,7 @@ ms.locfileid: "36996203"
   
   すべて、非同期 EventStreams (BES、MES、OES) は、BizTalk メッセージ ボックス データベースに最初にデータを保持します。 このデータは Tracking Data Decode Service (TDDS) によって定期的に処理され、BAM プライマリ インポート データベースに保存されます。  
   
-  BAM の EventStream Api の詳細については、次を参照してください。 [EventStream クラス](http://go.microsoft.com/fwlink/?LinkId=158046)(http://go.microsoft.com/fwlink/?LinkId=158046) 、BizTalk Server のドキュメントにします。  
+  BAM の EventStream Api の詳細については、[EventStream クラス](http://go.microsoft.com/fwlink/?LinkId=158046)(http://go.microsoft.com/fwlink/?LinkId=158046) 、BizTalk Server のドキュメントにを参照してください。  
   
 ## <a name="bam-performance-counters"></a>BAM パフォーマンス カウンター  
  BAM のパフォーマンス カウンターの詳細な一覧を参照してください。 [BAM パフォーマンス カウンター](http://go.microsoft.com/fwlink/?LinkId=158048) (http://go.microsoft.com/fwlink/?LinkId=158048) 、BizTalk Server のドキュメントにします。  

@@ -64,7 +64,7 @@ ms.locfileid: "36999299"
 8. ファイルを表示するには、キーを押して**コントロール**のリンクをクリックし、**出力**ウィンドウ。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の [BizTalk エディター] ウィンドウにファイルの内容が表示されます。  
   
    > [!NOTE]
-   >  837I、837D、または 837P を含むインスタンスを生成すると、GS08 の値は誤って 00401 に設定されます。 詳細については、次を参照してください。 [EDI ソリューションで XML ツールの使用に関する既知の問題](../core/known-issues-with-xml-tools-used-with-edi-solutions.md)します。  
+   >  837I、837D、または 837P を含むインスタンスを生成すると、GS08 の値は誤って 00401 に設定されます。 詳細については、[EDI ソリューションで XML ツールの使用に関する既知の問題](../core/known-issues-with-xml-tools-used-with-edi-solutions.md)を参照してください。  
   
 ### <a name="to-generate-an-instance-of-a-transaction-set"></a>トランザクション セットのインスタンスを生成するには  
   

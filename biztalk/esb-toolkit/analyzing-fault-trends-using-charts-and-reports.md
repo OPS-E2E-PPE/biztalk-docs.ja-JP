@@ -34,7 +34,7 @@ ms.locfileid: "36995827"
   
 - [アプリケーションまたはサービス別のサブスクリプション推移](../esb-toolkit/subscriptions-over-time-by-application-or-service.md)  
   
-  ESB 管理ポータルのレポート機能の詳細については、次を参照してください。、[ポータル レポート ページ](../esb-toolkit/portal-reports-page.md)します。 図 1 は、レポート ページの既定のビューを示します。  
+  ESB 管理ポータルのレポート機能の詳細については、、[ポータル レポート ページ](../esb-toolkit/portal-reports-page.md)を参照してください。 図 1 は、レポート ページの既定のビューを示します。  
   
   ![ポータル レポート ページ](../esb-toolkit/media/portalreportspage.gif "PortalReportsPage")  
   

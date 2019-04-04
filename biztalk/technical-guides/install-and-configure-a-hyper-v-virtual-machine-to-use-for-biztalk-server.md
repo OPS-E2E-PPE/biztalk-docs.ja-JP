@@ -23,7 +23,7 @@ ms.locfileid: "51630415"
 このトピックをインストールして、BizTalk Server と HYPER-V 仮想マシンのインストールと構成について推奨事項を BizTalk Server をインストールするための推奨事項を含む、HYPER-V 環境の構成の推奨事項を提供します。HYPER-V 仮想マシン。  
 
 ## <a name="installing-and-configuring-hyper-v"></a>インストールと HYPER-V の構成  
- HYPER-V をインストールする前に、次を参照してください。 [Windows Server 2008 R2 で Hyper-v の新](http://go.microsoft.com/fwlink/?LinkID=202427)します。 「Microsoft HYPER-V Server 2008 R2 入門」ガイド インストールして構成する方法の詳細については、 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] HYPER-V。 このガイドは[ http://go.microsoft.com/fwlink/?LinkID=202431](http://go.microsoft.com/fwlink/?LinkID=202431)します。  
+ HYPER-V をインストールする前に、[Windows Server 2008 R2 で Hyper-v の新](http://go.microsoft.com/fwlink/?LinkID=202427)を参照してください。 「Microsoft HYPER-V Server 2008 R2 入門」ガイド インストールして構成する方法の詳細については、 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] HYPER-V。 このガイドは[ http://go.microsoft.com/fwlink/?LinkID=202431](http://go.microsoft.com/fwlink/?LinkID=202431)します。  
 
  「Windows Server 2008 R2 のパフォーマンス チューニング ガイドライン」のドキュメントの調整に関する詳細を提供する[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]具体的 Hyper-v 重点を置いてセクションにはが含まれています。 ドキュメントについては、「 [ http://go.microsoft.com/fwlink/?LinkID=202087](http://go.microsoft.com/fwlink/?LinkID=202087)します。  
 
@@ -62,7 +62,7 @@ ms.locfileid: "51630415"
 |     **差分ディスク**      | これは、差分ディスクが、ベース VHD とベース VHD の基準としたすべての変更を格納する場所、親子構成は変わりません。 したがって、親から異なるブロックだけは差分 VHD の子に格納される必要があります。  |  読み取り/書き込みは、固定/動的な親 VHD と差分ディスクにアクセスする必要があるために、パフォーマンスが低下することができます。 これは、CPU 使用率とディスク I/O のオーバーヘッドが増加します。  |  大量のマシン固有の設定は BizTalk Server のインストールに必要なと子 VHD ファイルはこのディスク構成を使用する利点を最小限に抑えるは大幅になることがあります。 このシナリオでの複数の VHD からの読み取りは、追加の CPU とディスク I/O オーバーヘッドが発生します。  |
 |      **パススルー ディスク**      | これらは、物理ディスクに設定されている*オフライン*ルート パーティションと物理ディスクに排他読み取り/書き込みアクセスがある、HYPER-V を有効にします。  |  仮想マシンに割り当てるために、完全に専用のディスクまたは LUN が必要です。<br /><br /> 物理ディスクでは、VHD ファイルとマシン間を移動することは困難です。  | 場合、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスが、HYPER-V で実行されている、パススルー ディスクを使用して、BizTalk Server のデータ ボリュームの固定のバーチャル ハード_ディスク (VHD) を使用する場合より、増分のパフォーマンスの向上を取得することがあります。<br /><br /> ローカル ファイルをホストしている場合は、BizTalk Server 上の場所を受信または処理中にディスクにサイズの大きいメッセージをストリーミングするには、固定容量仮想ハード_ディスク (VHD) を使用するパススルー ディスクを使用して増分のパフォーマンスの向上を入手できます。 |
 
- ディスクと、HYPER-V と記憶域の実装の詳細については、次を参照してください。[を実装するディスクとストレージ](http://go.microsoft.com/fwlink/?LinkID=142362)(http://go.microsoft.com/fwlink/?LinkID=142362)します。  
+ ディスクと、HYPER-V と記憶域の実装の詳細については、[を実装するディスクとストレージ](http://go.microsoft.com/fwlink/?LinkID=142362)(http://go.microsoft.com/fwlink/?LinkID=142362)を参照してください。  
 
 ##### <a name="networking"></a>ネットワーク  
  BizTalk Server では、高いネットワーク使用率が発生する傾向があります。 そのため、ネットワークのパフォーマンスに問題がある場合は、仮想マシンごとに別個の物理ネットワーク カードを割り当てることを検討します。  
@@ -71,14 +71,14 @@ ms.locfileid: "51630415"
 
  ネットワーク パフォーマンスの使用状況を測定する、 **"\Network インターフェイス \Bytes total/sec"** と **\Network Interface (\*)\Output Queue Length** 運用ホストにパフォーマンス モニター カウンターネットワーク カードの全体的なパフォーマンスを測定するシステムです。 物理ネットワークがビジー状態として識別されているが場合に、使用して、 **"\Hyper-V 仮想ネットワーク アダプター (\*) \Bytes/sec"** どのバーチャル マシン ネットワーク アダプターを識別するために、ホスト オペレーティング システムのカウンターは、高負荷を生成しています。  
 
- HYPER-V 環境でネットワーク パフォーマンスの評価の詳細については、次を参照してください。、**ネットワーク パフォーマンスを測定する**のセクション[チェックリスト: Hyper-v のパフォーマンスを測定する](../technical-guides/checklist-measuring-performance-on-hyper-v.md)します。  
+ HYPER-V 環境でネットワーク パフォーマンスの評価の詳細については、、**ネットワーク パフォーマンスを測定する**のセクション[チェックリスト: Hyper-v のパフォーマンスを測定する](../technical-guides/checklist-measuring-performance-on-hyper-v.md)を参照してください。  
 
 ##### <a name="cpu"></a>CPU  
  HYPER-V は、さまざまなゲスト オペレーティング システムの仮想プロセッサの数が異なるをサポートしています次の表にまとめたようです。 BizTalk Server の CPU リソースの最大値を割り当てることでインストール、[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]ゲスト オペレーティング システムは、仮想マシンあたり 4 つの仮想プロセッサをサポートしています。  
 
  論理プロセッサが過剰なコンテキストの切り替えを防ぐために、ホスト オペレーティング システムを使用できるゲスト オペレーティング システムでは、仮想プロセッサの 1 対 1 の割り当てを構成します。 コンテキスト切り替えのプロセッサ間でパフォーマンスの低下が発生します。 仮想プロセッサと論理プロセッサの割り当てに関する詳細については、トピックの「プロセッサのパフォーマンスを最適化する」セクションを参照してください。[チェックリスト: hyper-v のパフォーマンスの最適化](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)します。  
 
- "\Hyper-V ハイパーバイザー論理 processor (_total)\\% の合計実行時間"パフォーマンス モニター カウンターは、すべてのゲスト マシンと HYPER-V ホスト上のハイパーバイザーの全体的なリソース使用率を測定します。 最大容量は; で、サーバーが実行されているこの値が 90% を超える場合は、このシナリオで仮想マシンに割り当ての追加仮想プロセッサは、システム全体のパフォーマンスが低下することができ、避ける必要があります。 HyperV のパフォーマンス カウンターの使用の詳細については、次を参照してください。、[を評価する BizTalk Server のパフォーマンス、Hyper-v を](../technical-guides/evaluating-biztalk-server-performance-on-hyper-v.md)このガイドの「します。  
+ "\Hyper-V ハイパーバイザー論理 processor (_total)\\% の合計実行時間"パフォーマンス モニター カウンターは、すべてのゲスト マシンと HYPER-V ホスト上のハイパーバイザーの全体的なリソース使用率を測定します。 最大容量は; で、サーバーが実行されているこの値が 90% を超える場合は、このシナリオで仮想マシンに割り当ての追加仮想プロセッサは、システム全体のパフォーマンスが低下することができ、避ける必要があります。 HyperV のパフォーマンス カウンターの使用の詳細については、、[を評価する BizTalk Server のパフォーマンス、Hyper-v を](../technical-guides/evaluating-biztalk-server-performance-on-hyper-v.md)このガイドの「を参照してください。  
 
 
 |  オペレーティング システム | 仮想プロセッサ数の上限 |
@@ -92,7 +92,7 @@ ms.locfileid: "51630415"
 |  Windows Vista 32 ビット  |            2            |
 
 > [!NOTE]  
->  HYPER-V でサポートされているゲスト オペレーティング システムの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=118347](http://go.microsoft.com/fwlink/?LinkID=118347)します。  
+>  HYPER-V でサポートされているゲスト オペレーティング システムの詳細については、[ http://go.microsoft.com/fwlink/?LinkID=118347](http://go.microsoft.com/fwlink/?LinkID=118347)を参照してください。  
 
 ##### <a name="memory"></a>Memory  
  物理サーバーでは、ルート パーティションと、サーバーで実行されているすべてのバーチャル マシンのための十分なメモリが必要です。 テスト中に、2 GB のメモリの最小値は、ルート パーティションに割り当てられた、 **Mbytes**パフォーマンス モニター カウンターが監視され、メモリ不足が発生しないことを確認します。  
@@ -139,7 +139,7 @@ ms.locfileid: "51630415"
 
 - コンピューターにオペレーティング システムをインストールする方法は?  
 
-  作成して、仮想マシンを構成する方法の詳細については、次を参照してください。[仮想マシンの作成](http://go.microsoft.com/fwlink/?LinkID=202440)です。  
+  作成して、仮想マシンを構成する方法の詳細については、[仮想マシンの作成](http://go.microsoft.com/fwlink/?LinkID=202440)を参照してください。  
 
 ##### <a name="installing-the-base-operating-system"></a>基本のオペレーティング システムをインストールします。  
  物理サーバーのインストールに使用できるすべてのオプションは、HYPER-V で使用できます。 起動可能な CD または DVD-ROM メディアまたは ISO イメージは手動インストールを実行するために使用できます。 仮想マシンが ISO イメージをホストするサーバーと同じネットワークに接続されているネットワーク アダプターに構成されている場合、ネットワーク インストールを実行できます。  
@@ -163,4 +163,4 @@ ms.locfileid: "51630415"
 
 - 次の推奨事項、「ときにインストールおよび構成する BizTalk Server…」 」の「[チェックリスト: インストールすると、Hyper-v 上の BizTalk Server 構成のベスト プラクティス](../technical-guides/checklist-best-practices-to-install-and-configure-biztalk-server-on-hyper-v.md)します。  
 
-- サポート状況について[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]HYPER-V 環境で、次を参照してください。[付録 c: BizTalk Server と SQL Server、Hyper-v のサポート性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)します。
+- サポート状況について[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]HYPER-V 環境で、[付録 c: BizTalk Server と SQL Server、Hyper-v のサポート性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)を参照してください。

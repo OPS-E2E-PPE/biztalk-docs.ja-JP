@@ -36,4 +36,4 @@ ms.locfileid: "37022818"
  この機能を実行する前に、エンタープライズ シングル サインオンを無効にする必要があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 詳細については、次を参照してください。 [SSO を無効にする方法](../core/how-to-disable-sso.md)します。
+ 詳細については、[SSO を無効にする方法](../core/how-to-disable-sso.md)を参照してください。

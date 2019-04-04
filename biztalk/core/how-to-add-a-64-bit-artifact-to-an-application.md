@@ -41,7 +41,7 @@ ms.locfileid: "37012867"
   
 - **64 ビットの .exe ファイルとして保存されたスクリプトです。** この種類のスクリプトは正常に機能しない場合があります。  
   
-  成果物を追加する方法の一般的な手順は、次を参照してください。[成果物を追加または作成する方法](../core/how-to-create-or-add-an-artifact.md)します。 特定の成果物の種類を追加する手順については、次を参照してください。[管理成果物](../core/managing-artifacts.md)します。  
+  成果物を追加する方法の一般的な手順は、[成果物を追加または作成する方法](../core/how-to-create-or-add-an-artifact.md)を参照してください。 特定の成果物の種類を追加する手順については、[管理成果物](../core/managing-artifacts.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [作成して、BizTalk アプリケーションの変更](../core/creating-and-modifying-biztalk-applications.md)   

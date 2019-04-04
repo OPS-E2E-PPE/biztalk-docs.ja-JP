@@ -22,7 +22,7 @@ ms.locfileid: "37010891"
 # <a name="poll-oracle-database-using-stored-procedures-functions-or-packaged-procedures-and-functions"></a>ストアド プロシージャ、関数、またはパッケージ化されたプロシージャおよび関数を使用してポーリング Oracle データベース
 構成することができます、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースを定期的にポーリングするストアド プロシージャ、関数、またはパッケージ化されたプロシージャおよび関数を使用して、定期的なデータ変更メッセージを受信します。 ストアド プロシージャ、関数、またはパッケージ化されたプロシージャを指定し、Oracle データベースをポーリングするアダプターを定期的に実行するポーリング ステートメントとして機能できます。  
 
- これを有効にするに特定のバインド プロパティを指定する必要があります、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 設定して POLLINGSTMT 操作のターゲット名前空間を変更することも、 **PollingId**接続 URI のプロパティ。 詳細については、次を参照してください。 [Oracle データベースでデータ変更メッセージを受信ポーリング ベースのサポート](../../adapters-and-accelerators/adapter-oracle-database/support-for-receiving-polling-based-data-changed-messages-in-oracle-database.md)と[Oracle データベース アダプターのポーリングに基づいたデータ変更メッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)します。 ポーリング操作用の SOAP メッセージの構造については、次を参照してください。[ポーリング操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-polling-operations2.md)します。  
+ これを有効にするに特定のバインド プロパティを指定する必要があります、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 設定して POLLINGSTMT 操作のターゲット名前空間を変更することも、 **PollingId**接続 URI のプロパティ。 詳細については、[Oracle データベースでデータ変更メッセージを受信ポーリング ベースのサポート](../../adapters-and-accelerators/adapter-oracle-database/support-for-receiving-polling-based-data-changed-messages-in-oracle-database.md)と[Oracle データベース アダプターのポーリングに基づいたデータ変更メッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)を参照してください。 ポーリング操作用の SOAP メッセージの構造については、[ポーリング操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-polling-operations2.md)を参照してください。  
 
 ## <a name="configuring-a-polling-operation-with-oracle-database-adapter-binding-properties"></a>Oracle データベース アダプターのバインドのプロパティをポーリング操作を構成します。  
  [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]ポーリング クエリとトランザクション内では、後の投票 PL/SQL コード ブロックを実行します。 次の表にまとめたものです、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]メッセージのバインドのプロパティを使用するデータを受信するアダプターの構成を変更します。 Wcf-custom または Wcf-oracledb を構成するときにこれらのバインド プロパティの受信のポートを指定する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
@@ -38,7 +38,7 @@ ms.locfileid: "37010891"
 |      **PostPollStatement**       |                                                                                                                                                                                                                                                   指定されたステートメントの後に実行されるステートメント ブロックを指定します、 **PollingStatement**プロパティのバインドを実行します。                                                                                                                                                                                                                                                    |
 |      **PollWhileDataFound**      |                                                                                                                               指定するかどうか、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]ポーリング間隔を無視し、継続的にデータがポーリングされるテーブルで使用できる場合に、ポーリング ステートメントを実行します。 テーブルのデータがない場合は、アダプターは、指定されたポーリング間隔でポーリング ステートメントを実行する元に戻します。 既定値は false です。                                                                                                                               |
 
- これらのプロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)します。 使用する方法の詳細については、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースをポーリングするさらに読み進める。  
+ これらのプロパティの詳細については、[Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)を参照してください。 使用する方法の詳細については、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースをポーリングするさらに読み進める。  
 
 ## <a name="how-this-topic-demonstrates-polling"></a>このトピックでポーリングしていますか  
  このトピックでは、ストアド プロシージャを使用して Oracle データベースをポーリングする方法を示します。 BizTalk プロジェクトを作成し、Oracle データベースにポーリングを使用するストアド プロシージャのスキーマを生成します。 このトピックでは、ACCOUNTACTIVITY テーブルをポーリングするのに GET_ACTIVITYS ストアド プロシージャを使用します。 このストアド プロシージャは、SCOTT スキーマ ACCOUNT_PKG パッケージで使用できます。 データベースでこれらのオブジェクトを作成するサンプルに付属の SQL スクリプトを実行することができます。  
@@ -89,7 +89,7 @@ ms.locfileid: "37010891"
 
 - スキーマの生成、 **GET_ACTIVITYS**プロシージャ。  
 
-  スキーマを生成する方法の詳細については、次を参照してください。[参照、検索、および Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/browse-search-and-get-metadata-for-oracle-database-operations.md)します。  
+  スキーマを生成する方法の詳細については、[参照、検索、および Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/browse-search-and-get-metadata-for-oracle-database-operations.md)を参照してください。  
 
 ## <a name="defining-messages-and-message-types"></a>メッセージおよびメッセージの種類を定義します。  
  以前に生成したスキーマには、オーケストレーション内のメッセージに必要な「型」について説明します。 メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。 スキーマが生成されるは、BizTalk プロジェクトのオーケストレーションからメッセージをリンクする必要があります。  
@@ -168,7 +168,7 @@ ms.locfileid: "37010891"
  ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md))。  
 
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、次を参照してください。[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)します。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)を参照してください。
 
  アプリケーションを構成する必要があります。  
 
@@ -189,13 +189,13 @@ ms.locfileid: "37010891"
     |       **PollingStatement**       | このバインドのプロパティでは、ストアド プロシージャを呼び出す、GET_ACTIVITYS 要求メッセージを指定します。 によって生成された送信操作のスキーマから要求メッセージを取得できます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]します。 このバインドのプロパティの入力として全体の XML メッセージを指定する必要があります。 この例このバインドのプロパティを設定します。<br /><br /> `<GET_ACTIVITYS xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/GET_ACTIVITY">   <INRECS>OPEN ? FOR SELECT * FROM ACCOUNTACTIVITY</INRECS> </GET_ACTIVITYS>`<br /><br /> GET_ACTIVITYS は、プロシージャは入力の REF CURSOR をパラメーターとして格納されます。 |
     |      **PostPollStatement**       |                                                                                                                                                                                                                                                      ACCOUNTACTIVITY テーブルから別のテーブルにすべてのデータを移動するポスト ポーリング ステートメントを指定します。 この例このバインドのプロパティを設定します。<br /><br /> `BEGIN ACCOUNT_PKG.PROCESS_ACTIVITY(); END;`                                                                                                                                                                                                                                                       |
 
-     異なるバインディング プロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)します。  
+     異なるバインディング プロパティの詳細については、[Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)を参照してください。  
 
     > [!NOTE]
-    >  使用して受信操作の実行中に、トランザクション分離レベルとトランザクションのタイムアウトを構成することをお勧めします。、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 受信ポートを構成するときに、サービスの動作を追加することで行うことができます。 サービスの動作を追加する方法については、次を参照してください。[トランザクション分離レベルとトランザクション タイムアウトを構成](../../adapters-and-accelerators/adapter-oracle-database/configure-transaction-isolation-level-and-transaction-timeout-with-oracle-db.md)します。  
+    >  使用して受信操作の実行中に、トランザクション分離レベルとトランザクションのタイムアウトを構成することをお勧めします。、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 受信ポートを構成するときに、サービスの動作を追加することで行うことができます。 サービスの動作を追加する方法については、[トランザクション分離レベルとトランザクション タイムアウトを構成](../../adapters-and-accelerators/adapter-oracle-database/configure-transaction-isolation-level-and-transaction-timeout-with-oracle-db.md)を参照してください。  
 
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- Oracle データベースをポーリングするための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。  
+ Oracle データベースをポーリングするための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。  
 
  この段階で、ことを確認します。  
 
@@ -244,7 +244,7 @@ ms.locfileid: "37010891"
 >  [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]ポーリングからの受信ポートを明示的に無効にするまでは引き続き、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
 
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成すると、送信ポートを作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定ファイルからインポートできます。 バインド ファイルの詳細については、次を参照してください。 [Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)します。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成すると、送信ポートを作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定ファイルからインポートできます。 バインド ファイルの詳細については、[Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)を参照してください。  
 
 ## <a name="see-also"></a>参照  
  [BizTalk Server を使用してポーリング Oracle データベース](../../adapters-and-accelerators/adapter-oracle-database/poll-oracle-database-using-biztalk-server.md)

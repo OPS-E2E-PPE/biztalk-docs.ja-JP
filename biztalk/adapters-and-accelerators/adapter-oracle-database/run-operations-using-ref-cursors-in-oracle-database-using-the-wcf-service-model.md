@@ -44,7 +44,7 @@ REF CURSOR は、結果セットで、Oracle データベースへのポイン�
 PROCEDURE get_activity(inrecs IN SYS_REFCURSOR, status OUT NUMBER, inoutrecs IN OUT activity_ref_type, outrecs OUT SYS_REFCURSOR);  
 ```  
   
- このパッケージを生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
+ このパッケージを生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、[SDK 内のサンプル](../../core/samples-in-the-sdk.md)を参照してください。  
   
 ## <a name="ref-cursor-parameters-in-the-wcf-service-model"></a>WCF サービス モデルの REF CURSOR パラメーター  
  次の例では、クラスと/SCOTT/Package/ACCOUNT_PKG/GET_ACTIVITY プロシージャの生成された WCF クライアントを示します。 この手順が厳密に型指定の厳密に型指定の REF CURSOR を IN パラメーターや REF CURSOR をパラメーター。  
@@ -192,7 +192,7 @@ namespace microsoft.lobservices.oracledb._2007._03 {
   
 2. プロシージャまたは関数が戻るとき、OUT または REF CURSOR を内のパラメーターに返されるレコード セットでデータを操作します。 レコード セットは、厳密に型指定の REF CURSOR パラメーターを設定する汎用レコードまたは厳密に型指定の REF CURSOR パラメーターを設定する、厳密に型指定されたレコードになります。  
   
-   WCF サービス モデルを使用してプロシージャと関数を呼び出す方法の詳細については、次を参照してください。[関数を呼び出すと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)します。  
+   WCF サービス モデルを使用してプロシージャと関数を呼び出す方法の詳細については、[関数を呼び出すと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)を参照してください。  
   
    次の例では、GET_ACTIVITY プロシージャを呼び出します。 これには、両方の REF CURSOR パラメーターを指定する方法を示しています。  
   

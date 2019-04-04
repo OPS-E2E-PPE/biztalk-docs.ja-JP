@@ -36,4 +36,4 @@ ms.locfileid: "37005539"
  マッピングが無効になっています。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 有効にして、マッピングを無効にするのには、次を参照してください。[ユーザー マッピングを管理する](../core/managing-user-mappings.md)します。
+ 有効にして、マッピングを無効にするのには、[ユーザー マッピングを管理する](../core/managing-user-mappings.md)を参照してください。

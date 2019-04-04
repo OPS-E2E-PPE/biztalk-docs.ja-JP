@@ -43,7 +43,7 @@ BizTalk Server 内のクラスター化リソースとして、BizTalk ホスト
   
 - クラスター化された BizTalk ホストで順次配送をサポートする受信アダプターを実行する  
   
-  これらのシナリオの詳細については、次を参照してください。[されたクラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](http://go.microsoft.com/fwlink/?LinkId=151284)(http://go.microsoft.com/fwlink/?LinkId=151284)します。  
+  これらのシナリオの詳細については、[されたクラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](http://go.microsoft.com/fwlink/?LinkId=151284)(http://go.microsoft.com/fwlink/?LinkId=151284)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [スケール アウト、受信ホスト](../technical-guides/scaling-out-receiving-hosts.md)   
