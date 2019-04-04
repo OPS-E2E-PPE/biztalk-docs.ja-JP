@@ -37,7 +37,7 @@ BizTalk マッパーのコピー機能、切り取り機能、および貼り付
   
 - Visual Studio のインスタンス間  
   
-  切り取り/貼り付け操作は元に戻したり、やり直したりすることができます。 詳細については、次を参照してください。[を元に戻すまたはユーザーの操作をやり直す方法](../core/how-to-undo-or-redo-user-operations.md)します。  
+  切り取り/貼り付け操作は元に戻したり、やり直したりすることができます。 詳細については、[を元に戻すまたはユーザーの操作をやり直す方法](../core/how-to-undo-or-redo-user-operations.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
  これらの手順では、BizTalk マッパーが実行されている必要があります。  
@@ -49,12 +49,12 @@ BizTalk マッパーのコピー機能、切り取り機能、および貼り付
 2.  コピーする Functoid を選択します。 複数の functoid を選択するには、Ctrl キーを押しながら他の functoid をクリックします。  
   
     > [!NOTE]
-    >  "リボン選択" 操作を使用して、複数のリンクや Functoid を選択できます。 詳細については、次を参照してください。[および Functoid を複数のリンクを選択する方法](../core/how-to-select-multiple-links-and-functoids.md)します。  
+    >  "リボン選択" 操作を使用して、複数のリンクや Functoid を選択できます。 詳細については、[および Functoid を複数のリンクを選択する方法](../core/how-to-select-multiple-links-and-functoids.md)を参照してください。  
   
 3.  選択範囲を右クリックし、クリックして**コピー**します。 またはをクリック**コピー** 、Visual Studio から**編集**メニューまたはキーボードの ctrl キーを押しながら C キーを押します。  
   
     > [!NOTE]
-    >  キーボード ショートカットの一覧は、次を参照してください。 [BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)します。  
+    >  キーボード ショートカットの一覧は、[BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)を参照してください。  
   
 4.  Functoid を貼り付ける場所にカーソルを置きます。  
   
@@ -69,7 +69,7 @@ BizTalk マッパーのコピー機能、切り取り機能、および貼り付
 3.  選択範囲を右クリックし、クリックして**切り取り**します。 またはをクリック**切り取り**、Visual Studio から**編集**メニューまたはキーボードの ctrl キーを押しながら X キーを押します。  
   
     > [!NOTE]
-    >  キーボード ショートカットの一覧は、次を参照してください。 [BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)します。  
+    >  キーボード ショートカットの一覧は、[BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)を参照してください。  
   
 4.  Functoid を貼り付ける場所にカーソルを置きます。  
   

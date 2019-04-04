@@ -20,7 +20,7 @@ ms.lasthandoff: 03/19/2019
 ms.locfileid: "29139298"
 ---
 # <a name="wcf-adapters-property-schema-and-properties"></a>WCF アダプタ プロパティ スキーマおよびプロパティ
-WCF アダプタ プロパティ スキーマの昇格させたプロパティをについて説明します。 WCF アダプタは、アプリケーションで使用できるプロパティに値を割り当てます。 また、WCF アダプタは、カスタム プロパティを BizTalk メッセージ コンテキストに書き込むが昇格させないメカニズムと、カスタム プロパティを BizTalk メッセージ コンテキストに昇格させるメカニズムを提供します。 詳細については、次を参照してください。[公開された WCF サービスでの SOAP ヘッダー](../core/soap-headers-with-published-wcf-services.md)します。  
+WCF アダプタ プロパティ スキーマの昇格させたプロパティをについて説明します。 WCF アダプタは、アプリケーションで使用できるプロパティに値を割り当てます。 また、WCF アダプタは、カスタム プロパティを BizTalk メッセージ コンテキストに書き込むが昇格させないメカニズムと、カスタム プロパティを BizTalk メッセージ コンテキストに昇格させるメカニズムを提供します。 詳細については、[公開された WCF サービスでの SOAP ヘッダー](../core/soap-headers-with-published-wcf-services.md)を参照してください。  
 
 ## <a name="promoted-properties"></a>昇格させたプロパティ  
 **名前空間:** http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties  
@@ -114,7 +114,7 @@ XML 文字列を指定、 **\<バインド\>** さまざまな種類の構成要
 適用対象Wcf-netmsmq 送信アダプター
 
 #### <a name="deadletterqueue"></a>DeadLetterQueue
-アプリケーションへの配信に失敗したメッセージの転送先となる配信不能キューを指定します。 配信不能キューに配信されたメッセージの詳細については、次を参照してください。、 **Wcf-netmsmq トランスポートのプロパティ ダイアログ ボックスの送信、バインド**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+アプリケーションへの配信に失敗したメッセージの転送先となる配信不能キューを指定します。 配信不能キューに配信されたメッセージの詳細については、、 **Wcf-netmsmq トランスポートのプロパティ ダイアログ ボックスの送信、バインド**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
 
 型:String  
 既定値:**システム**  
@@ -475,7 +475,7 @@ SOAP のコンテンツを XML 形式のテンプレートを指定**本文**送
 #### <a name="proxyusername"></a>ProxyUserName
 指定されているプロキシ サーバーを使用するユーザー名を指定、 **ProxyAddress**プロパティ。 場合、プロパティは必須、 **ProxyToUse**プロパティに設定されて**UserSpecified**します。
 
-このプロパティの詳細については、次を参照してください。 [、Wcf-wshttp 送信ポートを構成する方法](../core/how-to-configure-a-wcf-wshttp-send-port.md)と[Wcf-basichttp 送信ポートを構成する方法](http://msdn.microsoft.com/library/acdb50fa-57fe-4657-9561-b6b2f4919c7f)します。
+このプロパティの詳細については、[、Wcf-wshttp 送信ポートを構成する方法](../core/how-to-configure-a-wcf-wshttp-send-port.md)と[Wcf-basichttp 送信ポートを構成する方法](http://msdn.microsoft.com/library/acdb50fa-57fe-4657-9561-b6b2f4919c7f)を参照してください。
 
 型:String  
 適用対象Wcf-basichttp 送信アダプター、Wcf-wshttp 送信アダプター

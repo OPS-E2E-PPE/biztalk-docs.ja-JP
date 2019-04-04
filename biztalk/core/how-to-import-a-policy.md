@@ -39,7 +39,7 @@ ms.locfileid: "37000299"
   
 - BTSTask にはポリシーをインポートする専用のコマンドはありませんが、BTSTask の ExportApp コマンドを使用して、他のアプリケーション アイテムは含まずにアプリケーション内の目的のポリシーだけを選択的にエクスポートすることができます。 それから ImportApp コマンドを使用して、その .msi ファイルを別の BizTalk グループ内のアプリケーションにインポートできます。 この方法については、このトピックで説明します。 この方法では、ポリシーは BizTalk グループ内に自動的にインポートおよび公開されて、指定されたアプリケーションに追加されます。  
   
-  ポリシーの使用方法の詳細については、次を参照してください。[ポリシーの管理](../core/managing-policies.md)します。 アプリケーションにポリシーを追加する方法のベスト プラクティスは、次を参照してください。 [BizTalk アプリケーションの展開のベスト プラクティス](../core/best-practices-for-deploying-a-biztalk-application.md)します。  
+  ポリシーの使用方法の詳細については、[ポリシーの管理](../core/managing-policies.md)を参照してください。 アプリケーションにポリシーを追加する方法のベスト プラクティスは、[BizTalk アプリケーションの展開のベスト プラクティス](../core/best-practices-for-deploying-a-biztalk-application.md)を参照してください。  
   
 > [!NOTE]
 >  ソリューション開発者がポリシーを作成し、それらをインポート、グループのルール エンジン データベース、ルール エンジン展開ウィザードを使用して」の説明に従って[とボキャブラリを展開およびポリシーの展開を解除する方法](../core/how-to-deploy-and-undeploy-policies-and-vocabularies.md)します。  
@@ -49,11 +49,11 @@ ms.locfileid: "37000299"
   
 -   BizTalk Server 管理者グループに属するアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
   
--   ビジネス ルール エンジンがインストールされている必要があります。 詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)します。  
+-   ビジネス ルール エンジンがインストールされている必要があります。 詳細については、[BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)を参照してください。  
   
 -   BizTalk Server 管理コンソールを使用してポリシーをインポートする場合は、インポートするポリシーを含む使用可能な .xml ファイルが必要です。 」の説明に従って、別の BizTalk グループまたはアプリケーションからポリシーをエクスポートすることによってこのような .xml ファイルを生成できます[ポリシーをエクスポートする方法](../core/how-to-export-a-policy.md)、または」の説明に従って、ビジネス ルール作成ツールを使用して[インポートおよびエクスポートする方法ポリシーとボキャブラリ](../core/how-to-import-and-export-policies-and-vocabularies.md)します。  
   
--   BTSTask を使用してポリシーをインポートする場合は、インポートするポリシーを含む .msi ファイルが必要です。 手順については、次を参照してください。[ポリシーをエクスポートする方法](../core/how-to-export-a-policy.md)します。  
+-   BTSTask を使用してポリシーをインポートする場合は、インポートするポリシーを含む .msi ファイルが必要です。 手順については、[ポリシーをエクスポートする方法](../core/how-to-export-a-policy.md)を参照してください。  
   
 ## <a name="to-import-a-policy"></a>ポリシーをインポートするには  
   

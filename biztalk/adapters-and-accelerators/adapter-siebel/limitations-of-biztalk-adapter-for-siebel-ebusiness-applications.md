@@ -28,7 +28,7 @@ ms.locfileid: "37019446"
 - [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]は Microsoft BizTalk Adapter 用 Siebel eBusiness Applications、以前のリリースのアダプターの互換性がありません。 アダプターの現在のリリースは、アダプターの以前のバージョンを使用して生成されたスキーマを含むメッセージを送受信することをサポートしていません。  
   
   > [!NOTE]
-  >  新たに使用する Siebel アダプターの以前のバージョンの BizTalk プロジェクトを変更する WCF ベース[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。 詳細については、次を参照してください。[を移行する BizTalk プロジェクト作成を使用して前のバージョンの Siebel アダプター](http://msdn.microsoft.com/library/ae61d3df-c5ca-4891-86b1-9f0dd6d3a59e)します。  
+  >  新たに使用する Siebel アダプターの以前のバージョンの BizTalk プロジェクトを変更する WCF ベース[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。 詳細については、[を移行する BizTalk プロジェクト作成を使用して前のバージョンの Siebel アダプター](http://msdn.microsoft.com/library/ae61d3df-c5ca-4891-86b1-9f0dd6d3a59e)を参照してください。  
   
 - [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]ワークフロー オブジェクトをサポートしていません。  
   
@@ -40,7 +40,7 @@ ms.locfileid: "37019446"
   
 - 特定のシナリオでは、Siebel アプリケーションは、可能性がありますか、エラー メッセージをスローしない可能性があります。 たとえば、式を使用して、検索操作可能性があります例外をスローまたは accords 0 を返します。 したがって、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]をスローする可能性を`TargetSystemException`または出力として空の XML を取得します。  
   
-- WCF サービス モデルを使用して Siebel システムからデータを取得中に、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] 65536 の複数のノードが存在する Xml を逆シリアル化ではありません。 XML 出力が 65536 のノード以下を確認します。 この制限を回避するには、アプリケーションの app.config ファイルを変更します。 手順については、次を参照してください。 [Siebel アダプターでの運用上の問題をトラブルシューティング](../../adapters-and-accelerators/adapter-siebel/troubleshoot-operational-issues-with-the-siebel-adapter.md)します。  
+- WCF サービス モデルを使用して Siebel システムからデータを取得中に、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] 65536 の複数のノードが存在する Xml を逆シリアル化ではありません。 XML 出力が 65536 のノード以下を確認します。 この制限を回避するには、アプリケーションの app.config ファイルを変更します。 手順については、[Siebel アダプターでの運用上の問題をトラブルシューティング](../../adapters-and-accelerators/adapter-siebel/troubleshoot-operational-issues-with-the-siebel-adapter.md)を参照してください。  
   
 - [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]データベース層ではなく、ビジネス コンポーネント レイヤーからフィールドの最大長を取得します。 そのため、データベースの列の最大長に準拠するが、ビジネス コンポーネントの対応するフィールドの最大の長さより大きい値を挿入しようとする場合、データベースに書き込まれた値異なる可能性がありますと値入力します。  
   

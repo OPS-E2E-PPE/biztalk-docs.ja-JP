@@ -38,7 +38,7 @@ ms.locfileid: "37007147"
     2.  BizTalk Server グループに追加の BizTalk メッセージ ボックス データベースを追加することの影響を定量化します。 このテストのため、BizTalk Server ソリューションのパフォーマンスは、1 つのメッセージ ボックス データベースまたは 4 つのメッセージ ボックス データベースを使用して、グループの構成時に測定されました。  
 
         > [!NOTE]  
-        >  1 から 2 つのメッセージ ボックス データベースにスケーリングするときにわずかであるか、パフォーマンス上の利点があるために、2 つのメッセージ ボックス データベースでのテストは実行されませんでした。 実際には、1 から 2 つのメッセージ ボックス データベースにスケーリングできますパフォーマンスが低下します。 スケール アウト メッセージ ボックスの詳細については、次を参照してください。[スケール アウト SQL Server 層](../core/scaling-up-the-sql-server-tier.md)します。
+        >  1 から 2 つのメッセージ ボックス データベースにスケーリングするときにわずかであるか、パフォーマンス上の利点があるために、2 つのメッセージ ボックス データベースでのテストは実行されませんでした。 実際には、1 から 2 つのメッセージ ボックス データベースにスケーリングできますパフォーマンスが低下します。 スケール アウト メッセージ ボックスの詳細については、[スケール アウト SQL Server 層](../core/scaling-up-the-sql-server-tier.md)を参照してください。
 
 2.  次のシナリオのサイズとスケールのガイダンスを提供するには。  
 
@@ -69,7 +69,7 @@ BizTalk Server のスケール アウトのメトリックを提供するには�
     > [!NOTE]  
     >  Visual Studio 2010 Ultimate edition のロード テストの詳細については、ハイパーリンクを参照してください。""[アプリケーションのテスト](http://go.microsoft.com/fwlink/?LinkID=208247)(http://go.microsoft.com/fwlink/?LinkID=208247)します。  
     >   
-    >  このテスト環境で機能のテスト、Visual Studio 2010 Ultimate edition ロードを使用して方法の詳細については、次を参照してください。[テスト自動化を容易にする Visual Studio を使用して](../technical-guides/using-visual-studio-to-facilitate-automated-testing.md)します。  
+    >  このテスト環境で機能のテスト、Visual Studio 2010 Ultimate edition ロードを使用して方法の詳細については、[テスト自動化を容易にする Visual Studio を使用して](../technical-guides/using-visual-studio-to-facilitate-automated-testing.md)を参照してください。  
 
 2.  BizTalk Server で XML メッセージが受信した受信場所を使用して、Wcf-nettcp 受信アダプターであること。 受信場所を構成して、メッセージの処理を行わず、PassThruReceive パイプラインを使用します。  
 
@@ -159,7 +159,7 @@ BizTalk Server のスケール アウトのメトリックを提供するには�
 ### <a name="sqlio-test-results"></a>SQLIO テスト結果  
  SQLIO ツールを使用してベンチマークを実行およびラボ環境で使用される記憶域領域ネットワーク (SAN) の構成の入力/出力の能力を測定しました。 ツールの名前が示すように、SQLIO、SQL Server のパフォーマンス上のファイル システム I/O の影響を測定するため貴重なツールです。 
 
-SQL Server データベース アプリケーション ストレージ エリア ネットワーク (SAN) の構成の入力/出力の能力を測定するには、次を参照してください。 [I/O 特性の分析と SQL Server データベース アプリケーションの記憶域システムのサイズ変更](https://msdn.microsoft.com/library/ee410782(SQL.100).aspx)します。  
+SQL Server データベース アプリケーション ストレージ エリア ネットワーク (SAN) の構成の入力/出力の能力を測定するには、[I/O 特性の分析と SQL Server データベース アプリケーションの記憶域システムのサイズ変更](https://msdn.microsoft.com/library/ee410782(SQL.100).aspx)を参照してください。  
 
  SQLIO、テストでは、sqlio.exe ユーティリティ問題 8 K は 8 つのスレッドからの読み取り要求と 8 の I/O キューの深さを維持します。 次のパラメーターを使用しました。  
 

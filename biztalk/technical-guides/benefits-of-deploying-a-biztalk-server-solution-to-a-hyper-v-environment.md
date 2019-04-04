@@ -27,7 +27,7 @@ ms.locfileid: "37024448"
   
 - **1 台の物理コンピューターの複数の個別の論理セキュリティ境界を定義する機能**HYPER-V は別々 の論理セキュリティの境界、または 1 つの物理ハードウェア リソース内のパーティションの作成に対応します。 パーティションは、オペレーティング システムが実行される、ハイパーバイザーでサポートされる分離の 1 つの論理単位です。 たとえば、インストール時にこれをすることはできませんが、1 台の HYPER-V ホスト コンピューター上で実行する複数の BizTalk Server グループを作成できます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]1 つのホスト コンピューターのホスト オペレーティング システム。  
   
-- **展開と管理の容易さ**の統合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]より少ない物理サーバーにコンピューターが展開を簡略化します。 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] .vhd ファイルを使用して、物理および仮想のコンピューターの展開の簡略化されたメソッドを使用します。 さらに、包括的な HYPER-V 管理ソリューションは、System Center Virtual Machine Manager で使用することができます。 System Center Virtual Machine Manager に関する詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=111303](http://go.microsoft.com/fwlink/?LinkID=111303)します。  
+- **展開と管理の容易さ**の統合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]より少ない物理サーバーにコンピューターが展開を簡略化します。 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] .vhd ファイルを使用して、物理および仮想のコンピューターの展開の簡略化されたメソッドを使用します。 さらに、包括的な HYPER-V 管理ソリューションは、System Center Virtual Machine Manager で使用することができます。 System Center Virtual Machine Manager に関する詳細については、[ http://go.microsoft.com/fwlink/?LinkID=111303](http://go.microsoft.com/fwlink/?LinkID=111303)を参照してください。  
   
 - **フォールト トレランスのサポートを通じて、HYPER-V がクラスタ リングの**のため、HYPER-V をクラスター対応のアプリケーション、Windows Server 2008 ネイティブ ホストのクラスタ リングを HYPER-V 仮想化環境で作成された仮想マシンのサポートを提供します。  
   
@@ -35,4 +35,4 @@ ms.locfileid: "37024448"
   
 - **ハードウェアのリソースの統合**複数の物理サーバーに簡単に統合できます比較的少数のサーバー、HYPER-V による仮想化を実装することで。 統合には、展開済みのハードウェア リソースの完全な使用が対応しています。  
   
-  詳細についての詳細については、HYPER-V のメリット、機能を提供します、次を参照してください。 [Hyper-v による仮想化](http://go.microsoft.com/fwlink/?LinkID=202438)します。
+  詳細についての詳細については、HYPER-V のメリット、機能を提供します、[Hyper-v による仮想化](http://go.microsoft.com/fwlink/?LinkID=202438)を参照してください。

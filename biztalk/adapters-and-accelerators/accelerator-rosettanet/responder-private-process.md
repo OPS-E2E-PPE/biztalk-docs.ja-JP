@@ -35,9 +35,9 @@ Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentve
   
   プライベート プロセスにより、メタデータの設定と、応答メッセージへの添付ファイルの追加も行われます。 プライベート プロセスでは、応答側パブリック プロセスに送信メッセージをルーティングします。これによって、RNIF (RosettaNet Implementation Framework) ヘッダーが追加され、メッセージを送信する準備が整います。 プライベート プロセスは、LOB アプリケーション宛ての着信メッセージを [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]DATA [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] データベースの MessagesToLOB テーブルにルーティングします。  
   
-  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には、個々のビジネス プロセスに合わせてカスタマイズ可能な応答側プライベート プロセスのサンプルが 2 つ含まれています。 1 つ目のサンプルは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] によってインストールされた応答側プライベート プロセスのコードを含む PrivateResponder プロセスのサンプルです。 詳細については、次を参照してください。 [PrivateResponder サンプル](../../adapters-and-accelerators/accelerator-rosettanet/privateresponder-sample.md)します。  
+  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には、個々のビジネス プロセスに合わせてカスタマイズ可能な応答側プライベート プロセスのサンプルが 2 つ含まれています。 1 つ目のサンプルは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] によってインストールされた応答側プライベート プロセスのコードを含む PrivateResponder プロセスのサンプルです。 詳細については、[PrivateResponder サンプル](../../adapters-and-accelerators/accelerator-rosettanet/privateresponder-sample.md)を参照してください。  
   
-  2 つ目のサンプルは、3A2 および 3A4 の PIP (Partner Interface Process) を使用する発注照会/発注プロセスを自動化する PIP3A4PrivateResponder プライベート プロセスのサンプルです。 他のすべての PIP メッセージも処理します。 詳細については、次を参照してください。 [3A4 プライベート レスポンダー オーケストレーションを使用してビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)します。  
+  2 つ目のサンプルは、3A2 および 3A4 の PIP (Partner Interface Process) を使用する発注照会/発注プロセスを自動化する PIP3A4PrivateResponder プライベート プロセスのサンプルです。 他のすべての PIP メッセージも処理します。 詳細については、[3A4 プライベート レスポンダー オーケストレーションを使用してビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)を参照してください。  
   
 ## <a name="message-flow"></a>メッセージ フロー  
  応答側プライベート プロセスを経由するメッセージ フローは次のとおりです。  

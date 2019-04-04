@@ -50,12 +50,12 @@ ms.locfileid: "36996147"
   
 #### <a name="to-install-the-windows-sharepoint-services-adapter"></a>Windows SharePoint Services アダプターをインストールするには  
   
-1.  BizTalk Server をインストールします。 詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)します。  
+1.  BizTalk Server をインストールします。 詳細については、[BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)を参照してください。  
   
 2.  **コンポーネントのインストール**画面で、**使用可能なコンポーネント****追加ソフトウェア**を選択します**Windows SharePoint Services アダプターWeb サービス**します。  
   
 ## <a name="configuring-the-windows-sharepoint-services-adapter-web-service-in-a-single-server-deployment"></a>シングルサーバー展開の Windows SharePoint Services アダプター Web サービスの構成  
- Windows SharePoint Services アダプターは、基本構成またはユーザー構成のいずれかを使用して構成できます。 これらのツールの詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 の構成の概要](http://msdn.microsoft.com/library/aa58c43f-8f0e-4a5c-89b9-db7b8a852a72)します。  
+ Windows SharePoint Services アダプターは、基本構成またはユーザー構成のいずれかを使用して構成できます。 これらのツールの詳細については、[BizTalk Server 2013 および 2013 R2 の構成の概要](http://msdn.microsoft.com/library/aa58c43f-8f0e-4a5c-89b9-db7b8a852a72)を参照してください。  
   
 ### <a name="using-a-basic-configuration"></a>基本構成の使用  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、サーバーの構成に既定の設定を使用できます。 サーバーの基本構成は、構成ウィザードで入力するデータベース サーバー名、ユーザー名、およびパスワードを使用して構成されます。 基本構成を使用して Windows SharePoint Services アダプター Web サービスを構成する際は、次のことが行われます。  
@@ -73,7 +73,7 @@ ms.locfileid: "36996147"
   
 - BTSharePointAdapterWS 仮想アプリケーションに Web サービスが含められます。  
   
-  基本的な構成の詳細については、次を参照してください。[基本的な構成](http://msdn.microsoft.com/library/abdf3eb5-9779-47ff-bc97-2209eb4b12f5)します。  
+  基本的な構成の詳細については、[基本的な構成](http://msdn.microsoft.com/library/abdf3eb5-9779-47ff-bc97-2209eb4b12f5)を参照してください。  
   
 ### <a name="using-a-custom-configuration"></a>ユーザー構成の使用  
  BizTalk Server 構成では、ローカル コンピューターにインストールした機能の構成状態に関する高レベルの分析が提供されます。 このツールを使用すると、機能の構成と構成解除、セキュリティ設定の構成、および他のコンピューターの構成のインポートとエクスポートを行えます。  
@@ -101,7 +101,7 @@ ms.locfileid: "36996147"
   
 - BTSharePointAdapterWS 仮想アプリケーションに Web サービスが含められます。  
   
-  カスタム構成マネージャの詳細については、次を参照してください。[のインポートとエクスポートの BizTalk Server 構成](../install-and-config-guides/import-and-export-biztalk-server-configuration.md)します。  
+  カスタム構成マネージャの詳細については、[のインポートとエクスポートの BizTalk Server 構成](../install-and-config-guides/import-and-export-biztalk-server-configuration.md)を参照してください。  
   
 ##### <a name="to-configure-the-windows-sharepoint-services-adapter-by-using-a-custom-configuration"></a>ユーザー構成を使用して Windows SharePoint Services アダプターを構成するには  
   
@@ -136,7 +136,7 @@ ms.locfileid: "36996147"
   
 - Web サービスをインストールする Web サイトは、SharePoint Services Web サイトとして拡張しておく必要があります。  
   
-- インストールして、サイレント インストールを使用して、Windows SharePoint Services アダプターを構成できます。 詳細については、次を参照してください。[付録 a: サイレント インストール](../install-and-config-guides/appendix-a-silent-installation.md)します。  
+- インストールして、サイレント インストールを使用して、Windows SharePoint Services アダプターを構成できます。 詳細については、[付録 a: サイレント インストール](../install-and-config-guides/appendix-a-silent-installation.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [Windows SharePoint Services アダプター](../core/windows-sharepoint-services-adapter.md)   

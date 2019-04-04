@@ -145,7 +145,7 @@ ms.locfileid: "36995683"
   
 5. **パッケージ実行ユーティリティ**ダイアログ ボックスで、をクリックして**閉じる**します。  
   
-   パッケージの実行の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=94972](http://go.microsoft.com/fwlink/?LinkId=94972)します。 SSIS パッケージに関連するその他の情報を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=94973](http://go.microsoft.com/fwlink/?LinkId=94973)します。  
+   パッケージの実行の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=94972](http://go.microsoft.com/fwlink/?LinkId=94972)を参照してください。 SSIS パッケージに関連するその他の情報を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=94973](http://go.microsoft.com/fwlink/?LinkId=94973)します。  
   
 ## <a name="verifying-the-results"></a>結果の確認  
  パッケージを実行した後は、SAP のデータをインポートする SQL Server データベースに移動して結果を確認する必要があります。 パッケージを実行する必要がありますが転送先データベースでテーブルを作成し、SAP テーブルから値が格納されます。  

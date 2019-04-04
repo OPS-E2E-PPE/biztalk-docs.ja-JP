@@ -33,7 +33,7 @@ ms.locfileid: "36968331"
   grant change notification to <user name>  
   ```  
 
-- Oracle データベースからデータベース変更通知を受信する ODP.NET で使用できる TCP ポートを決定します。 Windows ファイアウォール例外一覧には、TCP ポートを追加します。 Windows ファイアウォールの例外リストにポートを追加する方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)します。 同じの TCP ポート番号を指定する必要があります、 **NotificationPort**プロパティをバインドします。 バインディング プロパティの詳細については、次を参照してください。[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。  
+- Oracle データベースからデータベース変更通知を受信する ODP.NET で使用できる TCP ポートを決定します。 Windows ファイアウォール例外一覧には、TCP ポートを追加します。 Windows ファイアウォールの例外リストにポートを追加する方法については、[ http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)を参照してください。 同じの TCP ポート番号を指定する必要があります、 **NotificationPort**プロパティをバインドします。 バインディング プロパティの詳細については、[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。  
 
   一般的なデータベース変更通知を使用して、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]次が含まれます。  
 

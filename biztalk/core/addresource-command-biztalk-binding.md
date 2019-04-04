@@ -38,7 +38,7 @@ ms.locfileid: "37003579"
   
 3. 明示的に追加されたバインドのうち、対象の (アプリケーションのインポート用に選択された展開環境と一致する) 展開環境が関連付けられているもの。 この一連のバインド内での適用順序は特に決まっていません。  
   
-   詳細については、次を参照してください。 [BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)します。 バインド ファイルの使用に関する背景情報は、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)します。  
+   詳細については、[BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)を参照してください。 バインド ファイルの使用に関する背景情報は、[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)を参照してください。  
   
 ## <a name="usage"></a>使用方法  
  **BTSTask AddResource** [**/applicationname は:"**<em>値</em>**"**] **/Type:System.BizTalk:BizTalkBinding/Property:TargetEnvironment ="**<em>値</em>**"** **[/overwrite]** **/source:**<em>値</em>[**/Server:**<em>値</em>] [**/database:**<em>値</em>]  

@@ -35,7 +35,7 @@ ms.locfileid: "36981067"
 2. パブリック プロセスが Service Content およびヘッダーをアクション メッセージから抽出してプライベート プロセスに送信します。  
   
    > [!NOTE]
-   >  応答側パブリック プロセスが着信メッセージに対して標準検証 (適用できる場合は、検証アダプターに含まれる追加の検証) を実行します。 検証が正常に終了すると、パブリック プロセスはアプリケーション アダプターを開始して個々の実装に基づいて通知を実行します。 応答側パブリック プロセスはメッセージ ボックス データベースにメッセージを保存し、`BeginNotify` クラスの `ApplicationAdapter` メソッドを使用して、メッセージ ボックスにメッセージを保存したことを応答側プライベート プロセスに通知します。 検証アダプターとアプリケーション アダプターの詳細については、次を参照してください。 [ValidationAdapter &#91;RN3&#93; ](../../adapters-and-accelerators/accelerator-rosettanet/validationadapter.md)と[ApplicationAdapter &#91;RN3&#93;](../../adapters-and-accelerators/accelerator-rosettanet/applicationadapter.md)します。  
+   >  応答側パブリック プロセスが着信メッセージに対して標準検証 (適用できる場合は、検証アダプターに含まれる追加の検証) を実行します。 検証が正常に終了すると、パブリック プロセスはアプリケーション アダプターを開始して個々の実装に基づいて通知を実行します。 応答側パブリック プロセスはメッセージ ボックス データベースにメッセージを保存し、`BeginNotify` クラスの `ApplicationAdapter` メソッドを使用して、メッセージ ボックスにメッセージを保存したことを応答側プライベート プロセスに通知します。 検証アダプターとアプリケーション アダプターの詳細については、[ValidationAdapter &#91;RN3&#93; ](../../adapters-and-accelerators/accelerator-rosettanet/validationadapter.md)と[ApplicationAdapter &#91;RN3&#93;](../../adapters-and-accelerators/accelerator-rosettanet/applicationadapter.md)を参照してください。  
   
 3. 非同期のシングル アクションの場合、パブリック プロセスは Service Content のメッセージ部を Preamble、Service Header、および Delivery Header (RNIF 2.01 の場合のみ) でラップして、RNIF シグナル メッセージ (受信確認) を作成します。 パブリック プロセスは、パーティ間の取引先アグリーメントに保存されている情報 (プロセス構成設定、送信元と送信先パーティの構成情報、および PIP (Partner Interface Process) 変数) を使用して、Preamble、Service Header、および Delivery Header を作成します。 その後、開始側にシグナル メッセージを送信します。  
   

@@ -36,7 +36,7 @@ ms.locfileid: "37001107"
   
 - トランザクション ログ ファイルを BizTalk 追跡  
   
-  メッセージ ボックス データベースと BizTalk 追跡データベースを分離し、データベース ファイルとトランザクション ログ ファイルの異なる物理ディスクを分離することは、ディスク I/O の競合を減らすためのベスト プラクティスと見なされます。 できるだけ多くの物理スピンドルにディスク I/O を分散しようとしてください。 ディスクの競合を避ける方法についての詳細については、次を参照してください。[ディスクの競合を回避する方法](http://go.microsoft.com/fwlink/?LinkId=158809)(<http://go.microsoft.com/fwlink/?LinkId=158809>) で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンスの最適化をガイドします。  
+  メッセージ ボックス データベースと BizTalk 追跡データベースを分離し、データベース ファイルとトランザクション ログ ファイルの異なる物理ディスクを分離することは、ディスク I/O の競合を減らすためのベスト プラクティスと見なされます。 できるだけ多くの物理スピンドルにディスク I/O を分散しようとしてください。 ディスクの競合を避ける方法についての詳細については、[ディスクの競合を回避する方法](http://go.microsoft.com/fwlink/?LinkId=158809)(<http://go.microsoft.com/fwlink/?LinkId=158809>) で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンスの最適化をガイドを参照してください。  
   
   構成した後、ファイルを手動で分離する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。、 [BizTalk Server データベースの最適化に関するホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkId=101578) (<http://go.microsoft.com/fwlink/?LinkId=101578>)。  
   

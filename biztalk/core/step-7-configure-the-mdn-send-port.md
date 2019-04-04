@@ -27,7 +27,7 @@ ms.locfileid: "36987747"
 > [!NOTE]
 >  また、メッセージ設定をアグリーメント設定でオーバーライドすることで、別のアドレスに MDN を送信するようアグリーメントを構成することもできます。 詳細については、「  
   
- この例で、MDN は動的送信ポートを使用して送信されます。しかし、静的送信ポートを使用して MDN を静的アドレスに送信することもできます。 詳細については、次を参照してください。 [AS2 経由での非同期 Mdn の静的送信ポートを構成する](../core/configuring-a-static-send-port-for-asynchronous-mdns-over-as2.md)と[AS2 経由での非同期 Mdn の動的送信ポートを構成する](../core/configuring-a-dynamic-send-port-for-asynchronous-mdns-over-as2.md)します。  
+ この例で、MDN は動的送信ポートを使用して送信されます。しかし、静的送信ポートを使用して MDN を静的アドレスに送信することもできます。 詳細については、[AS2 経由での非同期 Mdn の静的送信ポートを構成する](../core/configuring-a-static-send-port-for-asynchronous-mdns-over-as2.md)と[AS2 経由での非同期 Mdn の動的送信ポートを構成する](../core/configuring-a-dynamic-send-port-for-asynchronous-mdns-over-as2.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。  

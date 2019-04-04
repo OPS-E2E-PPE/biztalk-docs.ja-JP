@@ -34,7 +34,7 @@ BizTalk Web サービス公開ウィザードを使用して、オーケスト�
 >  BizTalk Web サービス公開ウィザードを実行する前に、BizTalk プロジェクトをビルドする必要があります。  
   
 > [!NOTE]
->  コマンド ライン ツール BTSWebSvcPub.exe を使用して、オーケストレーションを Web サービスとして公開できます。 詳細については、次を参照してください。 [BTSWebSvcPub コマンド ライン リファレンス](../core/btswebsvcpub-command-line-reference.md)します。  
+>  コマンド ライン ツール BTSWebSvcPub.exe を使用して、オーケストレーションを Web サービスとして公開できます。 詳細については、[BTSWebSvcPub コマンド ライン リファレンス](../core/btswebsvcpub-command-line-reference.md)を参照してください。  
   
 ### <a name="to-publish-an-orchestration-as-a-web-service"></a>オーケストレーションを Web サービスとして公開するには  
   

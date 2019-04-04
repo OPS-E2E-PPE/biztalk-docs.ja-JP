@@ -23,7 +23,7 @@ ms.locfileid: "37009571"
 ここでは、JD Edwards EnterpriseOne サーバーのブラウズ、および [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトへのスキーマのインポートについて説明します。  
   
 > [!NOTE]
->  arglist を設定したことを確認する必要があります。 オーケストレーションでスキーマを生成する前に、jdearglist.txt を更新する必要があります。 詳細については、次を参照してください。[文字列値の処理](../core/handling-string-values2.md)します。  
+>  arglist を設定したことを確認する必要があります。 オーケストレーションでスキーマを生成する前に、jdearglist.txt を更新する必要があります。 詳細については、[文字列値の処理](../core/handling-string-values2.md)を参照してください。  
   
 > [!NOTE]
 >  Jdearglist を変更するたびにそのビジネス オブジェクトのスキーマを再生成する必要があります。  
@@ -66,7 +66,7 @@ ms.locfileid: "37009571"
 >  サーバー オブジェクト定義が変更されると、スキーマを再生成し、そのデータを更新する必要があります。  
   
 > [!NOTE]
->  スキーマの生成後に jdearglist.txt を変更した場合、スキーマを再生成してそのデータを更新する必要があります。 Jdearglist.txt の詳細については、次を参照してください。[文字列値の処理](../core/handling-string-values2.md)します。  
+>  スキーマの生成後に jdearglist.txt を変更した場合、スキーマを再生成してそのデータを更新する必要があります。 Jdearglist.txt の詳細については、[文字列値の処理](../core/handling-string-values2.md)を参照してください。  
   
 ## <a name="select-the-schemas"></a>スキーマを選択します。  
   

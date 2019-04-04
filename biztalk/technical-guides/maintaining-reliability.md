@@ -37,7 +37,7 @@ ms.locfileid: "36985675"
 
 #### <a name="to-test-a-group-failover-policy"></a>グループのフェールオーバー ポリシーをテストするには  
 
-1.  インストールされていることを確認、**フェールオーバー クラスタ リング**機能に少なくとも 2 つのコンピューター上には、2 つのノードの Windows フェールオーバー クラスターを作成するための Windows Server 2008 を実行します。 この機能をインストールする方法については、次を参照してください。[フェールオーバー クラスタ リング機能をインストール](http://go.microsoft.com/fwlink/?LinkId=157259)(http://go.microsoft.com/fwlink/?LinkId=157259)します。  
+1.  インストールされていることを確認、**フェールオーバー クラスタ リング**機能に少なくとも 2 つのコンピューター上には、2 つのノードの Windows フェールオーバー クラスターを作成するための Windows Server 2008 を実行します。 この機能をインストールする方法については、[フェールオーバー クラスタ リング機能をインストール](http://go.microsoft.com/fwlink/?LinkId=157259)(http://go.microsoft.com/fwlink/?LinkId=157259)を参照してください。  
 
 2.  フェールオーバー クラスター管理 を開く**開始**をクリック**管理ツール**、 をクリックし、**フェールオーバー クラスター管理**します。  
 
@@ -61,7 +61,7 @@ ms.locfileid: "36985675"
 
 #### <a name="to-test-whether-group-resources-can-fail-over"></a>グループ リソースがフェールオーバーできるかどうかをテストするには  
 
-1.  インストールされていることを確認、**フェールオーバー クラスタ リング**Windows Server 2008 を実行しているコンピューター上で機能します。 この機能をインストールする方法については、次を参照してください。[フェールオーバー クラスタ リング機能をインストール](http://go.microsoft.com/fwlink/?LinkId=157259)(http://go.microsoft.com/fwlink/?LinkId=157259)します。  
+1.  インストールされていることを確認、**フェールオーバー クラスタ リング**Windows Server 2008 を実行しているコンピューター上で機能します。 この機能をインストールする方法については、[フェールオーバー クラスタ リング機能をインストール](http://go.microsoft.com/fwlink/?LinkId=157259)(http://go.microsoft.com/fwlink/?LinkId=157259)を参照してください。  
 
 2.  フェールオーバー クラスター管理 を開く**開始**をクリック**管理ツール**、 をクリックし、**フェールオーバー クラスター管理**します。  
 
@@ -128,14 +128,14 @@ ms.locfileid: "36985675"
 
 - 手動で中断されたメッセージのチェック方法の詳細についてを参照してください「Investigating オーケストレーション、ポート、およびメッセージのエラー」[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ[ http://go.microsoft.com/fwlink/?LinkID=154512](http://go.microsoft.com/fwlink/?LinkID=154512)します。  
 
-- 各ホストは、少なくとも 2 つの物理 BizTalk サーバーで実行されているインスタンスについては、次を参照してください。 [BizTalk ホストの高可用性](../technical-guides/high-availability-for-biztalk-hosts.md)します。  
+- 各ホストは、少なくとも 2 つの物理 BizTalk サーバーで実行されているインスタンスについては、[BizTalk ホストの高可用性](../technical-guides/high-availability-for-biztalk-hosts.md)を参照してください。  
 
-- 各ホストは、少なくとも 2 つの物理 BizTalk サーバーで実行されているインスタンスについては、次を参照してください。[受信ホストをスケール](../technical-guides/scaling-out-receiving-hosts.md)します。  
+- 各ホストは、少なくとも 2 つの物理 BizTalk サーバーで実行されているインスタンスについては、[受信ホストをスケール](../technical-guides/scaling-out-receiving-hosts.md)を参照してください。  
 
 - クラスター化されたすべてのサービスのフェールオーバーを確認する方法についてはテストされて、参照してください[マスター シークレット サーバーをクラスタ リング](../technical-guides/clustering-the-master-secret-server.md)します。  
 
-- BizTalk データベースが SQL サービスでクラスター化することを確認する方法については、次を参照してください。 [、BizTalk Server Databases2 をクラスタ リング](../technical-guides/clustering-the-biztalk-server-databases2.md)します。  
+- BizTalk データベースが SQL サービスでクラスター化することを確認する方法については、[、BizTalk Server Databases2 をクラスタ リング](../technical-guides/clustering-the-biztalk-server-databases2.md)を参照してください。  
 
-- (個別のホストが必要)、不安定なコードが使用されているかどうかを決定する方法の詳細については、次を参照してください。 [BizTalk ホストの高可用性](../technical-guides/high-availability-for-biztalk-hosts.md)します。  
+- (個別のホストが必要)、不安定なコードが使用されているかどうかを決定する方法の詳細については、[BizTalk ホストの高可用性](../technical-guides/high-availability-for-biztalk-hosts.md)を参照してください。  
 
 - すべての新しい BizTalk アプリケーションの機能テストを実行する方法の詳細については、次を参照してください[アプリケーションのテスト。](../technical-guides/testing-an-application.md)

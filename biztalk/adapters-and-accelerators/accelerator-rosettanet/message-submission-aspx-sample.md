@@ -36,7 +36,7 @@ ms.locfileid: "36979595"
 ## <a name="example"></a>例  
  このコードは、ブラウザーなどのフロント エンド アプリケーションからの入力を受け付ける[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]®、または Microsoft® Word では、開始側プライベート プロセスが消費できる XML ドキュメントを生成します。  
   
- LOBWebApplication ユーティリティには次のコードが含まれています。 詳細については、次を参照してください。 [LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)します。  
+ LOBWebApplication ユーティリティには次のコードが含まれています。 詳細については、[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)を参照してください。  
   
 ```  
 using System;  

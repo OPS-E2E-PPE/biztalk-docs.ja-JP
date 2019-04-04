@@ -23,7 +23,7 @@ ms.locfileid: "36967806"
 BAM アクティビティ データの収集を開始するには、まず、BAM インターセプター ソフトウェアをインストールし、[!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)] インターセプターを使用するようにアプリケーションを構成する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] およびその依存関係がインストールされ、BizTalk グループが少なくとも 1 つ作成されていることを前提とします。  
   
 ## <a name="installing-the-bam-eventing-software"></a>BAM イベント ソフトウェアのインストール  
- [!INCLUDE[nextref_btsWinWorkflowFoundation](../includes/nextref-btswinworkflowfoundation-md.md)] 用の BAM インターセプターを使用するように [!INCLUDE[nextref_btsWinWorkflowFoundation](../includes/nextref-btswinworkflowfoundation-md.md)] アプリケーションを構成するには、まず、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] セットアップ プログラムを使用して BAM イベント ソフトウェアをインストールする必要があります。 BAM イベント ソフトウェアをインストールして、パフォーマンス カウンターの登録の詳細については、次を参照してください。 [BAM イベント ソフトウェアをインストールする](../core/installing-the-bam-eventing-software.md)します。  
+ [!INCLUDE[nextref_btsWinWorkflowFoundation](../includes/nextref-btswinworkflowfoundation-md.md)] 用の BAM インターセプターを使用するように [!INCLUDE[nextref_btsWinWorkflowFoundation](../includes/nextref-btswinworkflowfoundation-md.md)] アプリケーションを構成するには、まず、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] セットアップ プログラムを使用して BAM イベント ソフトウェアをインストールする必要があります。 BAM イベント ソフトウェアをインストールして、パフォーマンス カウンターの登録の詳細については、[BAM イベント ソフトウェアをインストールする](../core/installing-the-bam-eventing-software.md)を参照してください。  
   
 ## <a name="configuring-a-windows-workflow-foundation-application-for-tracking"></a>追跡のために Windows Workflow Foundation アプリケーションを構成する方法  
  [!INCLUDE[nextref_btsWinWorkflowFoundation](../includes/nextref-btswinworkflowfoundation-md.md)] アプリケーションで BAM イベント情報の書き込みを開始するには、次の 4 つのタスクを完了する必要があります。  
@@ -113,7 +113,7 @@ BAM アクティビティ データの収集を開始するには、まず、BAM
   
 - アプリケーション ドメインで最後の BamTrackingService が停止すると、インターセプターは IC ポーリング スレッドを停止します。  
   
-  WorkflowRuntime と構成情報の読み込みの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=83314](http://go.microsoft.com/fwlink/?LinkId=83314)します。  
+  WorkflowRuntime と構成情報の読み込みの詳細については、[ http://go.microsoft.com/fwlink/?LinkId=83314](http://go.microsoft.com/fwlink/?LinkId=83314)を参照してください。  
   
 ##### <a name="to-configure-the-appconfig-file-for-the-bam-tracking-service"></a>BAM 追跡サービスのために App.config ファイルを構成するには  
   

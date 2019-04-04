@@ -35,10 +35,10 @@ ms.locfileid: "36995259"
   
 - 開発者が展開したとき、アプリケーションに、Visual Studio からのパイプラインを含むアセンブリで説明されている[BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)します。  
   
-  パイプラインに関する背景情報は、次を参照してください。[パイプライン](../core/pipelines.md)します。 パイプラインの開発方法の詳細については、次を参照してください。[パイプライン デザイナーを使用してパイプラインを作成](../core/creating-pipelines-using-pipeline-designer.md)です。  
+  パイプラインに関する背景情報は、[パイプライン](../core/pipelines.md)を参照してください。 パイプラインの開発方法の詳細については、[パイプライン デザイナーを使用してパイプラインを作成](../core/creating-pipelines-using-pipeline-designer.md)を参照してください。  
   
 > [!NOTE]
->  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、次を参照してください。、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+>  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
   
 ## <a name="next-steps"></a>次のステップ
   

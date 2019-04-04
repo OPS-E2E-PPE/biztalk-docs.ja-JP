@@ -30,9 +30,9 @@ ms.locfileid: "37013691"
   
 -   送信ポート グループにオーケストレーションがバインドされていない:  次の手順で、バインドを削除するには、ケースの場合は、[オーケストレーションをバインド解除する方法](../core/how-to-unbind-an-orchestration.md)します。  
   
--   送信ポート グループが停止および参加解除されている:  停止、および送信ポートを参加解除については、次を参照してください。[送信ポートまたは送信ポート グループを参加解除する方法](../core/how-to-unenlist-a-send-port-or-send-port-group.md)と[送信ポートまたは送信ポート グループを停止する方法](../core/how-to-stop-a-send-port-or-send-port-group.md)します。  
+-   送信ポート グループが停止および参加解除されている:  停止、および送信ポートを参加解除については、[送信ポートまたは送信ポート グループを参加解除する方法](../core/how-to-unenlist-a-send-port-or-send-port-group.md)と[送信ポートまたは送信ポート グループを停止する方法](../core/how-to-stop-a-send-port-or-send-port-group.md)を参照してください。  
   
--   送信ポート グループがパーティで参照されていない:  パーティから送信ポート グループへの参照を削除する方法の詳細については、次を参照してください。[方法を表示または編集するパーティ](http://msdn.microsoft.com/library/42e6f3a0-8f7d-4f6c-ab05-a1fab7bf46ca)します。  
+-   送信ポート グループがパーティで参照されていない:  パーティから送信ポート グループへの参照を削除する方法の詳細については、[方法を表示または編集するパーティ](http://msdn.microsoft.com/library/42e6f3a0-8f7d-4f6c-ab05-a1fab7bf46ca)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

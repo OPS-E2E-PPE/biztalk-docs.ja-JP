@@ -35,7 +35,7 @@ Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentve
 delete from attachments where outMessageID not in (select messageid from messagestolob)  
 ```  
   
- さらに、特定の期間より古く、それ以上の追跡を必要としない添付ファイルは削除することをお勧めします。 Attachments テーブルには、古い添付ファイルの削除に使用できる `TimeCreated` プロパティが含まれています。 このプロセスは、古いダイジェストの削除に使用するプロセスに似ています。 古いダイジェストを削除するストアド プロシージャのサンプル SQL ステートメントの場合、次を参照してください。[ダイジェストを削除する](../../adapters-and-accelerators/accelerator-rosettanet/deleting-digests.md)します。  
+ さらに、特定の期間より古く、それ以上の追跡を必要としない添付ファイルは削除することをお勧めします。 Attachments テーブルには、古い添付ファイルの削除に使用できる `TimeCreated` プロパティが含まれています。 このプロセスは、古いダイジェストの削除に使用するプロセスに似ています。 古いダイジェストを削除するストアド プロシージャのサンプル SQL ステートメントの場合、[ダイジェストを削除する](../../adapters-and-accelerators/accelerator-rosettanet/deleting-digests.md)を参照してください。  
   
  また、それぞれの MessageID 列にある Attachments テーブルおよび MessagestoLOB テーブルにはインデックスを付けることをお勧めします。  
   

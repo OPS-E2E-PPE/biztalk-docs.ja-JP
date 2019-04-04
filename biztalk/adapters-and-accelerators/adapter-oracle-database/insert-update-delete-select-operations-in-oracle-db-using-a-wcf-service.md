@@ -25,9 +25,9 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36982451"
 ---
 # <a name="insert-update-delete-or-select-operations-in-oracle-database-using-the-wcf-service-model"></a>挿入、更新、削除、または WCF サービス モデルを使用して Oracle データベースで操作を選択します。
-[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェスの基本的な Insert、Update、Delete、および Oracle データベースのテーブルおよびビューに対する Select 操作のセット。 これらの操作を使用すると、単純な SQL INSERT、UPDATE、SELECT を実行し、DELETE ステートメントの対象のテーブルまたはビューの WHERE 句で修飾できます。 たとえば、SQL SELECT クエリの結合演算子を使用するより複雑な操作を実行するには、SQLEXECUTE 操作を使用できます。 SQLEXECUTE 操作の詳細については、次を参照してください。 [WCF サービス モデルを使用して Oracle Database SQLEXECUTE 操作を実行する](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md)します。  
+[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェスの基本的な Insert、Update、Delete、および Oracle データベースのテーブルおよびビューに対する Select 操作のセット。 これらの操作を使用すると、単純な SQL INSERT、UPDATE、SELECT を実行し、DELETE ステートメントの対象のテーブルまたはビューの WHERE 句で修飾できます。 たとえば、SQL SELECT クエリの結合演算子を使用するより複雑な操作を実行するには、SQLEXECUTE 操作を使用できます。 SQLEXECUTE 操作の詳細については、[WCF サービス モデルを使用して Oracle Database SQLEXECUTE 操作を実行する](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md)を参照してください。  
   
- 次の表は、SQL の基本的な操作をまとめたものですが、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]テーブルとビューのサーフェイス。 これらの操作の詳細については、次を参照してください。 [、基本的な挿入、更新、削除、およびテーブルおよびビューの選択操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)します。  
+ 次の表は、SQL の基本的な操作をまとめたものですが、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]テーブルとビューのサーフェイス。 これらの操作の詳細については、[、基本的な挿入、更新、削除、およびテーブルおよびビューの選択操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)を参照してください。  
   
 |演算|説明|  
 |---------------|-----------------|  
@@ -37,7 +37,7 @@ ms.locfileid: "36982451"
 |DELETE|フィルター文字列で指定されている SQL の WHERE 句に基づいて対象テーブルに対して DELETE を実行します。|  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、/SCOTT/ACCOUNTACTIVITY テーブルを使用します。 このテーブルを生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
+ このトピックの例では、/SCOTT/ACCOUNTACTIVITY テーブルを使用します。 このテーブルを生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、[SDK 内のサンプル](../../core/samples-in-the-sdk.md)を参照してください。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
  基本的な SQL 操作に対して生成された WCF クライアントの名前を[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サーフェスは、テーブルまたは次の表のように、ビューの名前に基づきます。  
@@ -107,7 +107,7 @@ public partial class SCOTTTableACCOUNTACTIVITYClient : System.ServiceModel.Clien
  挿入操作では、ターゲットに挿入されたレコードの数を返します。  
   
 > [!IMPORTANT]
->  WCF サービス モデルでは、挿入操作で使用されるレコード セットは、厳密に型指定されたです。 Nillable 列の値を設定する**null**で挿入操作; から列を除外するレコードただしは設定できませんを nillable 以外の列の値**null**します。 つまり、複数のレコードの挿入操作、各レコード内のすべての非 nillable 列の値を指定する必要があります。 さらはありません、基本的な SQL 操作のストリーミング サポート、WCF サービス モデルを使用する場合です。 場合は、複数のレコードの挿入操作では、大量のレコード セットでは、重要な考慮事項があります。 詳細については、次を参照してください。 [WCF サービス モデルを使用して基本的な SQL 操作の呼び出しの制限事項](#BKMK_LimitationsInvoking)します。  
+>  WCF サービス モデルでは、挿入操作で使用されるレコード セットは、厳密に型指定されたです。 Nillable 列の値を設定する**null**で挿入操作; から列を除外するレコードただしは設定できませんを nillable 以外の列の値**null**します。 つまり、複数のレコードの挿入操作、各レコード内のすべての非 nillable 列の値を指定する必要があります。 さらはありません、基本的な SQL 操作のストリーミング サポート、WCF サービス モデルを使用する場合です。 場合は、複数のレコードの挿入操作では、大量のレコード セットでは、重要な考慮事項があります。 詳細については、[WCF サービス モデルを使用して基本的な SQL 操作の呼び出しの制限事項](#BKMK_LimitationsInvoking)を参照してください。  
   
  次のコードは、複数レコード挿入の操作 (2 つのレコード) を ACCOUNTACTIVITY テーブルを対象とします。  
   
@@ -200,7 +200,7 @@ public partial class SCOTTTableACCOUNTACTIVITYClient : System.ServiceModel.Clien
  選択操作では、対象の行の型に基づいて厳密に型指定されたレコード セットを返します。  
   
 > [!IMPORTANT]
->  WCF サービス モデルを使用すると、基本的な SQL 操作のストリーミング サポートはありません。 クエリでは、大量のレコード セットが返された場合は、WCF チャネル モデルを使用してパフォーマンスを向上させることができます。 詳細については、次を参照してください。 [WCF サービス モデルを使用して基本的な SQL 操作の呼び出しの制限事項](#BKMK_LimitationsInvoking)します。  
+>  WCF サービス モデルを使用すると、基本的な SQL 操作のストリーミング サポートはありません。 クエリでは、大量のレコード セットが返された場合は、WCF チャネル モデルを使用してパフォーマンスを向上させることができます。 詳細については、[WCF サービス モデルを使用して基本的な SQL 操作の呼び出しの制限事項](#BKMK_LimitationsInvoking)を参照してください。  
   
  次のコードでは、ACCOUNTACTIVITY テーブルを対象とする操作を選択します。 返されるレコードは、コンソールに書き込まれます。  
   
@@ -230,7 +230,7 @@ for (int i = 0; i \< selectRecords.Length; i++)
 ```  
   
 > [!NOTE]
->  このコードは、作成、構成、および WCF クライアントのインスタンスを開く手順を省略します。 次の手順を含む、例では、次を参照してください。[挿入操作](#BKMK_InsertOperation)します。  
+>  このコードは、作成、構成、および WCF クライアントのインスタンスを開く手順を省略します。 次の手順を含む、例では、[挿入操作](#BKMK_InsertOperation)を参照してください。  
   
 ### <a name="update-operation"></a>更新操作  
  次の表では、更新操作のパラメーターを示します。  
@@ -242,7 +242,7 @@ for (int i = 0; i \< selectRecords.Length; i++)
  更新操作では、ターゲットから削除された行の数を返します。  
   
 > [!IMPORTANT]
->  WCF サービス モデルでは、更新操作で使用されるテンプレート レコードは、厳密に型指定されたが。 列が nillable の場合は、その値に設定して、更新操作から列を省略できます**null**テンプレート レコードでただし、列は、nillable がない場合する必要があります設定テンプレート レコード内の値。 たとえば、列が主キーの場合、値を含める必要があります。 詳細については、次を参照してください。 [WCF サービス モデルを使用して基本的な SQL 操作の呼び出しの制限事項](#BKMK_LimitationsInvoking)します。  
+>  WCF サービス モデルでは、更新操作で使用されるテンプレート レコードは、厳密に型指定されたが。 列が nillable の場合は、その値に設定して、更新操作から列を省略できます**null**テンプレート レコードでただし、列は、nillable がない場合する必要があります設定テンプレート レコード内の値。 たとえば、列が主キーの場合、値を含める必要があります。 詳細については、[WCF サービス モデルを使用して基本的な SQL 操作の呼び出しの制限事項](#BKMK_LimitationsInvoking)を参照してください。  
   
  次のコードでは、ACCOUNTACTIVITY テーブルを対象とする更新操作を示します。  
   
@@ -278,7 +278,7 @@ Console.WriteLine("{0} records updated", recsUpdated);
 ```  
   
 > [!NOTE]
->  このコードは、作成、構成、および WCF クライアントのインスタンスを開く手順を省略します。 次の手順を含む、例では、次を参照してください。[挿入操作](#BKMK_InsertOperation)します。  
+>  このコードは、作成、構成、および WCF クライアントのインスタンスを開く手順を省略します。 次の手順を含む、例では、[挿入操作](#BKMK_InsertOperation)を参照してください。  
   
 ### <a name="delete-operation"></a>削除操作  
  次の表では、削除操作のパラメーターを示します。  
@@ -307,7 +307,7 @@ Console.WriteLine("{0} records deleted", recsDeleted);
 ```  
   
 > [!NOTE]
->  このコードは、作成、構成、および WCF クライアントのインスタンスを開く手順を省略します。 次の手順を含む、例では、次を参照してください。、[挿入操作](#BKMK_InsertOperation)します。  
+>  このコードは、作成、構成、および WCF クライアントのインスタンスを開く手順を省略します。 次の手順を含む、例では、、[挿入操作](#BKMK_InsertOperation)を参照してください。  
   
 ##  <a name="BKMK_LimitationsInvoking"></a> WCF サービス モデルを使用して基本的な SQL 操作の呼び出しの制限事項  
  WCF クライアントを使用して SQL の基本的な操作を呼び出すときに、次の制限があります。  

@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36983427"
 ---
 # <a name="walkthrough-creating-a-flat-file-schema-from-a-document-instance"></a>チュートリアル: ドキュメント インスタンスからフラット ファイル スキーマの作成
-このチュートリアルでは、BizTalk フラット ファイル スキーマ ウィザードを使用してドキュメント インスタンスからフラット ファイル スキーマを作成する方法について説明します。ここでは注文書のサンプルを使用します。 BizTalk フラット ファイル スキーマ ウィザードの概要については、次を参照してください。 [BizTalk フラット ファイル スキーマ ウィザードを使用する方法](../core/how-to-use-biztalk-flat-file-schema-wizard.md)します。  
+このチュートリアルでは、BizTalk フラット ファイル スキーマ ウィザードを使用してドキュメント インスタンスからフラット ファイル スキーマを作成する方法について説明します。ここでは注文書のサンプルを使用します。 BizTalk フラット ファイル スキーマ ウィザードの概要については、[BizTalk フラット ファイル スキーマ ウィザードを使用する方法](../core/how-to-use-biztalk-flat-file-schema-wizard.md)を参照してください。  
 
  ![サンプルの注文書](../core/media/flatfileschema-samplepurchaseorder.gif "FlatFileSchema_SamplePurchaseOrder")  
 

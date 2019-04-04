@@ -31,7 +31,7 @@ The Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-cu
 ## <a name="xsd-schemas-associated-with-rosettanet-pips"></a>RosettaNet PIP に関連付けられた XSD スキーマ  
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] では、これらのスキーマを使用して、メッセージ インスタンスのサービス コンテンツを検証します。 これらのスキーマを変更してメッセージの処理方法を変えることができます。 また、サービス コンテンツの処理中にエラーが発生した場合は、これらのスキーマを使用してメッセージを検証し、原因を突き止めることができます。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] では、これらのスキーマが RNPIP アセンブリにコンパイルされています。 これらのスキーマのいずれかを変更する場合は、RNPIP アセンブリの展開を解除し、スキーマを変更してから RNPIP を再度展開します。 スキーマを変更しないように注意する必要があります。 スキーマを変更すると、対応する RosettaNet PIP に対応しなくなる可能性があります。 スキーマを RNPIP に追加することもできます。 詳細については、次を参照してください。 [Rnpip の既存の PIP 変更](../../adapters-and-accelerators/accelerator-rosettanet/modifying-an-existing-pip-in-rnpips.md)します。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] では、これらのスキーマが RNPIP アセンブリにコンパイルされています。 これらのスキーマのいずれかを変更する場合は、RNPIP アセンブリの展開を解除し、スキーマを変更してから RNPIP を再度展開します。 スキーマを変更しないように注意する必要があります。 スキーマを変更すると、対応する RosettaNet PIP に対応しなくなる可能性があります。 スキーマを RNPIP に追加することもできます。 詳細については、[Rnpip の既存の PIP 変更](../../adapters-and-accelerators/accelerator-rosettanet/modifying-an-existing-pip-in-rnpips.md)を参照してください。  
   
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]セットアップ プログラムによってこれらのスキーマ\<*ドライブ*\>: \Program Files\\Microsoft BizTalk\<バージョン\>してのアクセラレータSDK\Schemas します。  
   

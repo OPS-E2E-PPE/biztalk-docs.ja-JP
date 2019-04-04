@@ -27,7 +27,7 @@ ms.locfileid: "37005643"
 # <a name="how-to-enable-encryption-between-analysis-services-and-the-bam-primary-import-database"></a>Analysis Services と BAM プライマリ インポート データベース間の暗号化を有効にする方法
 既定では、BAM のインストールまたはアップグレード中、暗号化は無効になっています。 暗号化を有効にするには、BAM 構成 XML ファイルの UseEncryption フラグの値を 1 に設定する必要があります。  
   
- また、SQL Server Analysis Services で暗号化を有効にする必要もあります。 暗号化を有効にする方法の詳細については、次を参照してください。 [Analysis Services インスタンスとクライアントの通信をセキュリティで保護する](http://go.microsoft.com/fwlink/?LinkId=190805)(http://go.microsoft.com/fwlink/?LinkId=190805)します。  
+ また、SQL Server Analysis Services で暗号化を有効にする必要もあります。 暗号化を有効にする方法の詳細については、[Analysis Services インスタンスとクライアントの通信をセキュリティで保護する](http://go.microsoft.com/fwlink/?LinkId=190805)(http://go.microsoft.com/fwlink/?LinkId=190805)を参照してください。  
   
 ### <a name="to-enable-encryption-between-sql-server-analysis-services-and-the-bam-primary-import-database"></a>SQL Server Analysis Services と BAM プライマリ インポート データベース間の暗号化を有効にするには  
   

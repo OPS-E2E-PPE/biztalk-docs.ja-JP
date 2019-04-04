@@ -28,7 +28,7 @@ ms.locfileid: "36991915"
 # <a name="working-with-the-tracking-activity-definition-file"></a>追跡アクティビティ定義ファイルの操作
 アクティビティ定義ファイルには、追跡に関する情報が含まれています。 Microsoft® プロセスとメッセージ アクティビティ[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] BizTalk ビジネス アクティビティ監視 (BAM) 追跡データを管理するのにには、このファイルを使用します。 定義ファイルは、XML ファイル (Tracking.xml) を[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]でインストール、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet \BAMTracking フォルダー。 通常は、Tracking.xml で定義されたアクティビティで十分に目的を達成できます。  
   
- 追跡アクティビティ、ビュー、およびテーブルの詳細については、次を参照してください。[拡張追跡](../../adapters-and-accelerators/accelerator-rosettanet/enhanced-tracking.md)します。 BAM の詳細については、"ビジネス アクティビティ監視 (BAM)"で BizTalk Server のヘルプを参照してください。  
+ 追跡アクティビティ、ビュー、およびテーブルの詳細については、[拡張追跡](../../adapters-and-accelerators/accelerator-rosettanet/enhanced-tracking.md)を参照してください。 BAM の詳細については、"ビジネス アクティビティ監視 (BAM)"で BizTalk Server のヘルプを参照してください。  
   
 ## <a name="managing-tracking-views"></a>追跡ビューの管理  
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] による追跡中は BizTalk 追跡プロファイル エディターを使用しないでください。 追跡ポイントはカスタマイズできないため、アクティビティの定義を変更しないでください。 ただし、BAM ビューと展開の管理は可能です。 これを行うには、変更する、[!INCLUDE[btsExcel](../../includes/btsexcel-md.md)]スプレッドシート (Tracking.xls) を[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]でインストール、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk 2013 Accelerator for してBAMTracking フォルダーです。 詳細については、「追跡ビューの管理」を参照してください。  

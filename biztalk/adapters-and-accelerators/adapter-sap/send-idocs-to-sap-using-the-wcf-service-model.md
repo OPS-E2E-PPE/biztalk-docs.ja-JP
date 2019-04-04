@@ -43,7 +43,7 @@ ms.locfileid: "36988227"
   
 - RfcConfirmTransID を呼び出しています。 IDOC に関連付けられている GUID を持つには、この操作を呼び出します。  
   
-  次のセクションでは、SendIdoc と送信操作を使用して、SAP システムに Idoc を送信する方法を説明します。 として、tRFC IDOC を送信するための詳細については、次を参照してください。 [WCF サービス モデルを使用して SAP の Trfc を呼び出す](../../adapters-and-accelerators/adapter-sap/invoke-trfcs-in-sap-using-the-wcf-service-model.md)します。  
+  次のセクションでは、SendIdoc と送信操作を使用して、SAP システムに Idoc を送信する方法を説明します。 として、tRFC IDOC を送信するための詳細については、[WCF サービス モデルを使用して SAP の Trfc を呼び出す](../../adapters-and-accelerators/adapter-sap/invoke-trfcs-in-sap-using-the-wcf-service-model.md)を参照してください。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
   
@@ -94,7 +94,7 @@ public partial class IdocORDERS03V3R620Client : System.ServiceModel.ClientBase<I
   
 #### <a name="to-send-an-idoc-to-an-sap-system"></a>IDOC を SAP システムに送信するには  
   
-1. WCF クライアント クラスを生成します。 使用して、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) で WCF クライアント クラスを生成する作業する Idoc を対象とします。 WCF クライアントを生成する方法の詳細については、次を参照してください。 [SAP ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成する](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)します。 Idoc を明示的に確認する場合は、RfcConfirmTransID 操作用の WCF クライアントを生成することを確認します。 操作は、次のノードの下ではあります。  
+1. WCF クライアント クラスを生成します。 使用して、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) で WCF クライアント クラスを生成する作業する Idoc を対象とします。 WCF クライアントを生成する方法の詳細については、[SAP ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成する](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)を参照してください。 Idoc を明示的に確認する場合は、RfcConfirmTransID 操作用の WCF クライアントを生成することを確認します。 操作は、次のノードの下ではあります。  
   
    -   SendIdoc 操作です。 直下の IDOC のノードです。  
   
@@ -102,7 +102,7 @@ public partial class IdocORDERS03V3R620Client : System.ServiceModel.ClientBase<I
   
    -   RfcConfirmTransID 操作です。 直接 TRFC ノード。  
   
-2. 手順 1 で生成された WCF クライアント クラスのインスタンスを作成し、クライアントのバインディングを指定します。 クライアントのバインディングを指定するには、バインドと WCF クライアントを使用するエンドポイント アドレスを指定する必要があります。 コードで強制的に、または構成で宣言的に、これを行うことができます。 クライアントのバインディングを指定する方法の詳細については、次を参照してください。 [SAP システムのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)します。 次のコードでは、構成からには、(送信操作) の IdocClient を初期化し、SAP システムの資格情報を設定します。  
+2. 手順 1 で生成された WCF クライアント クラスのインスタンスを作成し、クライアントのバインディングを指定します。 クライアントのバインディングを指定するには、バインドと WCF クライアントを使用するエンドポイント アドレスを指定する必要があります。 コードで強制的に、または構成で宣言的に、これを行うことができます。 クライアントのバインディングを指定する方法の詳細については、[SAP システムのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)を参照してください。 次のコードでは、構成からには、(送信操作) の IdocClient を初期化し、SAP システムの資格情報を設定します。  
   
    ```  
    SAPBinding binding = new SAPBinding();  

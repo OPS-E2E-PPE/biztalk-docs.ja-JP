@@ -103,7 +103,7 @@ ms.locfileid: "37004355"
 |RFC 操作を受信します。|サポートされていません|サポートされていません||  
 |受信 tRFC 操作|サポートされていません|サポートされていません||  
   
- ノード値を送信し、SendIdoc および ReceiveIdoc 操作を使用してフラット ファイル (string) Idoc を受信するコードでは、ストリーミングを実装する方法については、次を参照してください。 [WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc の Stream](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)します。  
+ ノード値を送信し、SendIdoc および ReceiveIdoc 操作を使用してフラット ファイル (string) Idoc を受信するコードでは、ストリーミングを実装する方法については、[WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc の Stream](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)を参照してください。  
   
 ## <a name="streaming-support-in-the-wcf-service-model"></a>WCF サービス モデルでのストリーミング サポート  
  メッセージの XML 表現とメッセージのマネージ コード オブジェクトの表現の間を逆シリアル化のシリアル化とは、メッセージ全体をメモリに読み書きが必要です。 このため、ストリーミング ノードもノード値のストリーミングもが WCF サービス モデルからサポートされます。  

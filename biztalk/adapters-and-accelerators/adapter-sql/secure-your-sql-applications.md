@@ -35,7 +35,7 @@ SQL Server データベースは、多くの場合、顧客アカウントの詳
   
   統合セキュリティ。 ここで、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] 、Microsoft を使用して[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]資格情報。 このメソッドを使用するこれらの資格情報を受け入れるように SQL server を構成する必要があります。  
   
-  エンタープライズ シングル サインオン (SSO)。 詳細については、SSO を使用して、次を参照してください。 [SQL アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sql/security-with-the-sql-adapter-and-biztalk-server.md)します。  
+  エンタープライズ シングル サインオン (SSO)。 詳細については、SSO を使用して、[SQL アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sql/security-with-the-sql-adapter-and-biztalk-server.md)を参照してください。  
   
   このセクションのトピックで説明に役立つガイドラインで開発したソリューションをセキュリティで保護された、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
   

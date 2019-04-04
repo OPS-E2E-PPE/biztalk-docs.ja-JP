@@ -28,7 +28,7 @@ ms.locfileid: "37021539"
   
 - リリース条件が満たされた時点で、特定のバッチ要素を取得し、バッチ インターチェンジをアセンブルする。  
   
-  個々のメッセージが収集されバッチに追加される開始時刻は、バッチ アクティベーション条件により決定されます。 バッチがリリースされる時刻は、バッチ リリース条件により決定されます。 これら 2 つの条件のセットの詳細については、次を参照してください。[送信バッチの構成](../core/configuring-an-outgoing-batch.md)します。  
+  個々のメッセージが収集されバッチに追加される開始時刻は、バッチ アクティベーション条件により決定されます。 バッチがリリースされる時刻は、バッチ リリース条件により決定されます。 これら 2 つの条件のセットの詳細については、[送信バッチの構成](../core/configuring-an-outgoing-batch.md)を参照してください。  
   
 ## <a name="message-flow-for-outgoing-batched-messages"></a>送信バッチ メッセージのメッセージ フロー  
  送信メッセージをバッチ処理するように [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンポーネントは次の一連の手順を実行して、送信用のバッチ メッセージを準備します。 この一連の手順では、BatchMarker パイプライン コンポーネントを備えた EDIReceive パイプラインが、送信用にバッチ処理されるトランザクション セットを含む受信インターチェンジを処理するケースを説明します。  

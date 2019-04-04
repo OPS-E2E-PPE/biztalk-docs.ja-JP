@@ -29,7 +29,7 @@ PrivateInitiator.odx サンプルには、Microsoft® BizTalk Server によっ�
   
  開始側プライベート プロセスは実装ごとに固有です。 PrivateInitiator.odx サンプルは用途に合わせてカスタマイズできます。 ただし、開始側パブリック プロセスの機能に支障をきたさないように注意する必要があります。  
   
- 詳細については、メッセージ フローの説明を含む、次を参照してください。[開始側プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/initiator-private-process.md)します。  
+ 詳細については、メッセージ フローの説明を含む、[開始側プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/initiator-private-process.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーション サンプル](../../adapters-and-accelerators/accelerator-rosettanet/orchestration-samples.md)   

@@ -69,7 +69,7 @@ ms.locfileid: "36995491"
 ## <a name="adonet"></a>ADO.NET  
  [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] ADO.NET を使用して、SQL Server データベースに接続します。 ADO.NET は、SQL Server などのデータ ソースに一貫してアクセスを提供し、取得、処理、およびデータ ソース内のデータの変更を容易にします。 詳細をご覧ください[ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx)します。
   
- SQL クライアントでは、SQL Server データベースへの接続を提供します。 接続 URI を提供することで、SQL Server データベースへの接続を確立する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 この接続の URI には、SQL Server がインストールされているコンピューターの名前とデータベースの名前。 接続 URI の詳細については、次を参照してください。 [SQL Server への接続を作成する](../../adapters-and-accelerators/adapter-sql/create-a-connection-to-sql-server.md)します。  
+ SQL クライアントでは、SQL Server データベースへの接続を提供します。 接続 URI を提供することで、SQL Server データベースへの接続を確立する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 この接続の URI には、SQL Server がインストールされているコンピューターの名前とデータベースの名前。 接続 URI の詳細については、[SQL Server への接続を作成する](../../adapters-and-accelerators/adapter-sql/create-a-connection-to-sql-server.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
 

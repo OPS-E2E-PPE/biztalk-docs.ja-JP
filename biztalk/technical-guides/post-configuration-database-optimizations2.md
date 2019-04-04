@@ -111,13 +111,13 @@ GO
 ## <a name="configure-purging-and-archiving-of-tracking-data"></a>構成の削除と追跡データのアーカイブ  
  削除と追跡データのアーカイブが正しく構成されていることを確認する次の手順に従います。  
   
-1.  SQL エージェント ジョブ「DTA の消去およびアーカイブ」が適切に構成された、有効化、および正常に完了することを確認します。 詳細については、次を参照してください。 [DTA Purge and Archive ジョブを構成する方法](http://go.microsoft.com/fwlink/?LinkID=153814)(http://go.microsoft.com/fwlink/?LinkID=153814) 、BizTalk Server のドキュメントにします。  
+1.  SQL エージェント ジョブ「DTA の消去およびアーカイブ」が適切に構成された、有効化、および正常に完了することを確認します。 詳細については、[DTA Purge and Archive ジョブを構成する方法](http://go.microsoft.com/fwlink/?LinkID=153814)(http://go.microsoft.com/fwlink/?LinkID=153814) 、BizTalk Server のドキュメントにを参照してください。  
   
-2.  ジョブが速やかに受信した追跡データが生成されると、追跡データを消去することを確認します。 詳細については、次を参照してください。[維持可能な最大の追跡スループットの測定](http://go.microsoft.com/fwlink/?LinkID=153815)(http://go.microsoft.com/fwlink/?LinkID=153815) 、BizTalk Server のドキュメントにします。  
+2.  ジョブが速やかに受信した追跡データが生成されると、追跡データを消去することを確認します。 詳細については、[維持可能な最大の追跡スループットの測定](http://go.microsoft.com/fwlink/?LinkID=153815)(http://go.microsoft.com/fwlink/?LinkID=153815) 、BizTalk Server のドキュメントにを参照してください。  
   
-3.  論理削除と時間の最適な長さのデータを保持することを確認する物理削除パラメーターを確認します。 詳細については、次を参照してください。[アーカイブおよび BizTalk 追跡データベースの削除](http://go.microsoft.com/fwlink/?LinkID=153816)(http://go.microsoft.com/fwlink/?LinkID=153816) 、BizTalk Server のドキュメントにします。  
+3.  論理削除と時間の最適な長さのデータを保持することを確認する物理削除パラメーターを確認します。 詳細については、[アーカイブおよび BizTalk 追跡データベースの削除](http://go.microsoft.com/fwlink/?LinkID=153816)(http://go.microsoft.com/fwlink/?LinkID=153816) 、BizTalk Server のドキュメントにを参照してください。  
   
-4.  古いデータを消去しないだけの場合必要があります、最初の変更を保存する SQL エージェント ジョブ"dtasp_PurgeTrackingDatabase"ストアド プロシージャを呼び出す 詳細については、次を参照してください。 [BizTalk 追跡データベースからのデータの削除方法](http://go.microsoft.com/fwlink/?LinkID=153817)(http://go.microsoft.com/fwlink/?LinkID=153817) 、BizTalk Server のドキュメントにします。  
+4.  古いデータを消去しないだけの場合必要があります、最初の変更を保存する SQL エージェント ジョブ"dtasp_PurgeTrackingDatabase"ストアド プロシージャを呼び出す 詳細については、[BizTalk 追跡データベースからのデータの削除方法](http://go.microsoft.com/fwlink/?LinkID=153817)(http://go.microsoft.com/fwlink/?LinkID=153817) 、BizTalk Server のドキュメントにを参照してください。  
   
 ## <a name="monitor-and-reduce-dtc-log-file-disk-io-contention"></a>監視し、DTC ログ ファイルのディスク I/O の競合の削減  
  分散トランザクション コーディネーター (DTC) ログ ファイルは、トランザクション処理を要する環境でディスク I/O のボトルネックになります。 これは、トランザクション、またはマルチ メッセージ ボックス環境で SQL Server、MSMQ、MQSeries などをサポートするアダプターを使用する場合に特に当てはまります。 トランザクション アダプターが DTC トランザクションを使用し、メッセージ ボックスの複数の環境によって、DTC トランザクションを広範に使用します。 DTC ログ ファイルがディスク I/O のボトルネックにならないことを確認するには、ディスクの SQL Server のデータベース サーバーでは、DTC ログ ファイルが存在する場所、ディスク I/O の使用量を監視する必要があります。 ディスク I/O、DTC ログ ファイルがあるディスクの使用量が過剰になると、DTC ログ ファイルを高速ディスクに移行を検討してください。 SQL Server がクラスター化された環境でない問題の多くが複数のスピンドルを備えた高速な SAN ドライブ、共有ドライブ ログ ファイルが既に存在するためです。 それでもまだディスク I/O の使用状況を監視する必要があります。 非クラスター化の環境または DTC ログ ファイルが他のハード ディスク ファイルと共有ディスクであるときにボトルネックになるためにです。  

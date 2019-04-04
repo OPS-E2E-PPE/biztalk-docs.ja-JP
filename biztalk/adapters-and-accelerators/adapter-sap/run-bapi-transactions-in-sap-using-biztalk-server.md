@@ -84,14 +84,14 @@ ms.locfileid: "36978675"
    このトピックでは、これらのタスクを実行する手順を説明します。  
   
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル SAPTransaction、このトピックの「に基づいてが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。 [SAP アダプターのサンプル](../../adapters-and-accelerators/adapter-sap/samples-for-the-sap-adapter.md)します。  
+ サンプル SAPTransaction、このトピックの「に基づいてが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[SAP アダプターのサンプル](../../adapters-and-accelerators/adapter-sap/samples-for-the-sap-adapter.md)を参照してください。  
   
 ## <a name="generating-schema"></a>スキーマを生成します。  
  SAP システムに対してトランザクションを実行する方法を説明するためには、次のスキーマが必要です。  
   
-- 「操作のメッセージ」の SAP システムに対して操作を実行します。 アダプターに送信される要求メッセージは、このスキーマに準拠する必要があります。 操作のノードの任意の数を格納している任意のユーザー固有のスキーマを指定できます。 このトピックでは、MultipleOrders.xsd スキーマが使用されます。 付属のトランザクションのサンプルの一部としても、スキーマが用意されて、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]サンプル。 詳細については、次を参照してください。[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)します。  
+- 「操作のメッセージ」の SAP システムに対して操作を実行します。 アダプターに送信される要求メッセージは、このスキーマに準拠する必要があります。 操作のノードの任意の数を格納している任意のユーザー固有のスキーマを指定できます。 このトピックでは、MultipleOrders.xsd スキーマが使用されます。 付属のトランザクションのサンプルの一部としても、スキーマが用意されて、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]サンプル。 詳細については、[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)を参照してください。  
   
-- RFC を呼び出すなどの SAP システムに対する操作を実行します。 操作を実行する要求メッセージは、このスキーマに準拠している必要があります。 使用してこのスキーマを生成する必要があります、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]します。 このトピックでは、BAPI_SALESORDER_CREATEFROMDAT2 RFC が呼び出されます。 RFC のスキーマを生成する方法の詳細については、次を参照してください。[参照、検索と SAP の RFC 操作のメタデータを get](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)します。  
+- RFC を呼び出すなどの SAP システムに対する操作を実行します。 操作を実行する要求メッセージは、このスキーマに準拠している必要があります。 使用してこのスキーマを生成する必要があります、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]します。 このトピックでは、BAPI_SALESORDER_CREATEFROMDAT2 RFC が呼び出されます。 RFC のスキーマを生成する方法の詳細については、[参照、検索と SAP の RFC 操作のメタデータを get](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)を参照してください。  
   
 - 中止またはトランザクションをコミットします。 コミットまたはトランザクションを中止する要求は、このスキーマに準拠する必要があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] BAPI_TRANSACTION_COMMIT および BAPI_TRANSACTION_ROLLBACK RFC に commit および rollback 操作それぞれ使用します。 使用してこれらの Rfc のスキーマを生成する必要があります、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]します。  
   
@@ -157,7 +157,7 @@ ms.locfileid: "36978675"
   
   最後に、要求メッセージの情報をコミットまたは中止トランザクションにするかどうかに基づき、オーケストレーションする必要がありますを決定適切なメッセージを SAP システムに送信します。 これを実現するには、オーケストレーションの判断図形が含まれます。  
   
-  オーケストレーションに含まれるさまざまな図形の詳細については、次を参照してください。、**オーケストレーション デザイナー UI** [!INCLUDE[ui-guidance-developers-reference](../../includes/ui-guidance-developers-reference.md)]します。
+  オーケストレーションに含まれるさまざまな図形の詳細については、、**オーケストレーション デザイナー UI** [!INCLUDE[ui-guidance-developers-reference](../../includes/ui-guidance-developers-reference.md)]を参照してください。
   
   SAP のトランザクションのサンプルのオーケストレーションには、次に似ています。  
   
@@ -205,7 +205,7 @@ SendToAdapter.isCommit == true
   
  ここで、SendToAdapter は、要求メッセージのスキーマ用に作成したメッセージです。 要求メッセージの場合、`isCommit`にタグが設定されている**True**、オーケストレーションは、「コミット」ルート。 それ以外の場合、オーケストレーションでは、「ロールバック」のルートがかかります。  
   
- 式エディターでこの条件を指定できるようにする必要があります昇格している、`isCommit`アダプターに送信される要求メッセージのメッセージ スキーマ内のプロパティ。 このトピックでは、使用する入力のスキーマは MultipleOrders.xsd は。 昇格する必要があります、`isCommit`このスキーマのプロパティ。 プロパティを昇格させる方法についての詳細については、次を参照してください。[プロパティの昇格](../../core/promoting-properties.md)します。
+ 式エディターでこの条件を指定できるようにする必要があります昇格している、`isCommit`アダプターに送信される要求メッセージのメッセージ スキーマ内のプロパティ。 このトピックでは、使用する入力のスキーマは MultipleOrders.xsd は。 昇格する必要があります、`isCommit`このスキーマのプロパティ。 プロパティを昇格させる方法についての詳細については、[プロパティの昇格](../../core/promoting-properties.md)を参照してください。
   
 ### <a name="adding-construct-message-shapes"></a>メッセージの構築図形の構成要素を追加します。  
  前述のように、2 つの insert メッセージと、コミットまたは中止メッセージをアダプターに送信された要求メッセージが含まれます。 メッセージの構築図形を追加する必要があり、SAP システムに送信される個々 の操作メッセージの抽出を変換図形の内でします。 メッセージのトランザクションを有効にするためのコンテキスト プロパティを設定するメッセージの割り当て図形を追加することも必要があります。  
@@ -227,9 +227,9 @@ SendToAdapter.isCommit == true
   
    使用しての詳細については、**変換の構成**ダイアログ ボックスを参照してください、**変換の構成 ダイアログ ボックス**[!INCLUDE[ui-guidance-developers-reference](../../includes/ui-guidance-developers-reference.md)]します。
   
-   インデックス functoid の使用に関する詳細については、次を参照してください。[インデックス Functoid](../../core/index-functoid.md)します。
+   インデックス functoid の使用に関する詳細については、[インデックス Functoid](../../core/index-functoid.md)を参照してください。
        
-   スキーマをマップした後は、マップ ファイルのプロパティ ページを使用してマッピングをテストできます。 詳細については、次を参照してください。、  **<Map File>プロパティ ページ ダイアログ ボックスで、マップのテスト**タブ[!INCLUDE[ui-guidance-developers-reference](../../includes/ui-guidance-developers-reference.md)]です。
+   スキーマをマップした後は、マップ ファイルのプロパティ ページを使用してマッピングをテストできます。 詳細については、、  **<Map File>プロパティ ページ ダイアログ ボックスで、マップのテスト**タブ[!INCLUDE[ui-guidance-developers-reference](../../includes/ui-guidance-developers-reference.md)]を参照してください。
   
   メッセージの割り当て図形では、トランザクションの開始をメッセージ コンテキスト プロパティを指定します。 たとえば、最初のメッセージをメッセージ コンテキスト プロパティになります。  
   
@@ -320,7 +320,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
   
 - 送信し、受信図形。  
   
-  SAP トランザクションのサンプルを[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)](SAPTransaction) が付属[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]を処理する例外を示します。 サンプルの詳細については、次を参照してください。 [SAP アダプターのサンプル](../../adapters-and-accelerators/adapter-sap/samples-for-the-sap-adapter.md)します。  
+  SAP トランザクションのサンプルを[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)](SAPTransaction) が付属[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]を処理する例外を示します。 サンプルの詳細については、[SAP アダプターのサンプル](../../adapters-and-accelerators/adapter-sap/samples-for-the-sap-adapter.md)を参照してください。  
   
   例外を処理する方法の詳細については、次を使用して一般に、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[トランザクションを使用して、例外処理](../../core/using-transactions-and-handling-exceptions.md)します。
   
@@ -339,10 +339,10 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
   
 5. **オプション**、BizTalk アセンブリを GAC にインストールするためのオプションを指定し、クリックして**OK**します。  
   
-   BizTalk ソリューションを構築するようになりましたし、BizTalk Server にデプロイする必要があります。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。
+   BizTalk ソリューションを構築するようになりましたし、BizTalk Server にデプロイする必要があります。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションを構成する方法の詳細については、次を参照してください。[アプリケーションを構成する方法](../../core/how-to-configure-an-application.md)します。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションを構成する方法の詳細については、[アプリケーションを構成する方法](../../core/how-to-configure-an-application.md)を参照してください。
   
  アプリケーションを構成する必要があります。  
   
@@ -354,7 +354,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
   
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーションでの SAP システムからの応答を含む応答メッセージをドロップする場所の場所を定義します。  
   
-  - SAP システムにメッセージを送信する物理 Wcf-custom または WCF-SAP 送信ポートを定義します。 ポートを作成する方法については、次を参照してください。 [SAP アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sap/manually-configure-a-physical-port-binding-to-the-sap-adapter.md)します。 送信ポートの送信は、複数のスキーマに準拠したメッセージの送受信および 2 つの操作を実行、ためには、動的アクションの両方の操作を設定する必要があります。 アクションの詳細については、次を参照してください。 [SAP システムの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-sap/configure-the-soap-action-for-the-sap-system.md)します。 WCF カスタムを作成するときに次の重要な考慮事項に従っているか、WCF SAP トランザクションを実行するポートを送信するようにします。  
+  - SAP システムにメッセージを送信する物理 Wcf-custom または WCF-SAP 送信ポートを定義します。 ポートを作成する方法については、[SAP アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sap/manually-configure-a-physical-port-binding-to-the-sap-adapter.md)を参照してください。 送信ポートの送信は、複数のスキーマに準拠したメッセージの送受信および 2 つの操作を実行、ためには、動的アクションの両方の操作を設定する必要があります。 アクションの詳細については、[SAP システムの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-sap/configure-the-soap-action-for-the-sap-system.md)を参照してください。 WCF カスタムを作成するときに次の重要な考慮事項に従っているか、WCF SAP トランザクションを実行するポートを送信するようにします。  
   
     |次を設定します。|この値を|  
     |-----------------------|-------------------|  
@@ -363,13 +363,13 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
     |EnableConnectionPooling|このバインドのプロパティを設定**False**トランザクションを実行する前にします。 アダプターと BizTalk 間を設定するチャネルが予期せず終了のシナリオでは、対応する接続は、接続プールに追加されます。 別のチャネルが開かれ、新しいチャネルは、同じ接続オブジェクトを取得、古い接続オブジェクトでコミットされていないトランザクションは、新しいチャネル経由で、トランザクションがコミットされたときに、コミットはあります。 これを回避するには、接続プールする必要があります無効にするトランザクションの実行中にします。|  
   
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、次を参照してください。 [sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)します。
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、[sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)を参照してください。
     > 
     > [!IMPORTANT]
     >  バックアップ トランスポートを構成するには WCF カスタムまたは WCF-SAP 送信ポートのプライマリ トランスポートは、関数が失敗した場合、別の SAP システムにメッセージを送信することができます。 WCF に基づいた、SAP システムでトランザクションを実行するためには、ただし、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]別の SAP サーバーを指すバックアップ トランスポートを指定することはできません。  
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- BizTalk アプリケーションの実行中のトランザクションに SAP システムを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)、[アプリケーションを起動する方法](../../core/how-to-start-and-stop-a-biztalk-application.md)します。
+ BizTalk アプリケーションの実行中のトランザクションに SAP システムを起動する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)、[アプリケーションを起動する方法](../../core/how-to-start-and-stop-a-biztalk-application.md)を参照してください。
   
  この段階で、ことを確認します。  
   
@@ -470,10 +470,10 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
 >  要求メッセージが BAPI_TRANSACTION_ROLLBACK RFC を呼び出す場合は、2 番目の応答が BAPI_TRANSACTION_ROLLBACK 用になります。  
   
 ## <a name="possible-exceptions"></a>可能性のある例外  
- BizTalk Server を使用した SAP システムでトランザクションを実行中に発生する可能性が、例外については、次を参照してください。[例外とエラーは、SAP アダプターを使用した処理](../../adapters-and-accelerators/adapter-sap/exceptions-and-error-handling-with-the-sap-adapter.md)します。  
+ BizTalk Server を使用した SAP システムでトランザクションを実行中に発生する可能性が、例外については、[例外とエラーは、SAP アダプターを使用した処理](../../adapters-and-accelerators/adapter-sap/exceptions-and-error-handling-with-the-sap-adapter.md)を参照してください。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成すると、送信ポートを作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定ファイルからインポートできます。 バインド ファイルの詳細については、次を参照してください。[再利用の SAP アダプター バインド](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)します。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成すると、送信ポートを作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定ファイルからインポートできます。 バインド ファイルの詳細については、[再利用の SAP アダプター バインド](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
 [BizTalk アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-biztalk-applications-using-the-sap-adapter.md)

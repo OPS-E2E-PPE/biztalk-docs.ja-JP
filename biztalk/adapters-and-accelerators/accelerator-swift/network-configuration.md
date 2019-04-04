@@ -22,7 +22,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36967443"
 ---
 # <a name="network-configuration"></a>ネットワークの構成
-このセクションでは、展開でネットワークを構成するための規範ガイダンスを提供します。 詳細については、次を参照してください。[展開の準備](../../adapters-and-accelerators/accelerator-swift/preparing-for-deployment.md)します。  
+このセクションでは、展開でネットワークを構成するための規範ガイダンスを提供します。 詳細については、[展開の準備](../../adapters-and-accelerators/accelerator-swift/preparing-for-deployment.md)を参照してください。  
 
  スイッチに仮想ローカル エリア ネットワーク (Vlan) を定義し、適切なケーブルを接続します。 Vlan を定義するには、各ネットワーク セグメントまたはレベルのスイッチのポートを指定します。 次の環境ごとの VLAN を作成する必要があります。  
 

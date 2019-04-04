@@ -37,7 +37,7 @@ ms.locfileid: "36998883"
 2. Visual Studio で、次のようにクリックします。**ファイル**、 をポイント**オープン**、 をクリックし、**プロジェクト/ソリューション**します。 移動[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \edi Interface Developer Tutorial 選択**EDI Inbound Processing.sln**、順にクリックします**オープン**します。  
   
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
   
 3. 右クリックし、 **Inbound_EDI**ソリューション エクスプ ローラーでプロジェクトを選び**プロパティ**します。  
   

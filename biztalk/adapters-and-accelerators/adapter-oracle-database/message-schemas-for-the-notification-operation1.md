@@ -22,7 +22,7 @@ ms.locfileid: "36991691"
 # <a name="message-schemas-for-the-notification-operation"></a>通知操作のメッセージ スキーマ
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle データベースからデータベース変更通知を受信する通知の操作を表示します。  
   
- バインドのプロパティを設定して、通知の操作を構成する、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 通知に関連するバインドのプロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)します。 設定する、 **NotificationStatement**クエリ通知の SELECT ステートメントを指定するプロパティをバインドします。  
+ バインドのプロパティを設定して、通知の操作を構成する、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 通知に関連するバインドのプロパティの詳細については、[Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)を参照してください。 設定する、 **NotificationStatement**クエリ通知の SELECT ステートメントを指定するプロパティをバインドします。  
   
 ## <a name="message-structure-for-the-notification-operation"></a>通知操作のメッセージの構造  
  次の表では、通知操作の XML メッセージの構造を示します。  

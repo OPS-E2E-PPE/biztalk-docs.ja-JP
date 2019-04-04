@@ -61,13 +61,13 @@ BizTalk Server データベースに障害が発生すると、BizTalk Server �
   
 4. BizTalk Server 構成を使用して、完了、[カスタム構成](../install-and-config-guides/configure-biztalk-server.md)します。
   
-   BizTalk Server データベースをクラスタ リングの詳細については、次を参照してください。 [Improving Fault Tolerance in Windows Server 2008 フェールオーバー クラスターまたは Windows Server 2003 サーバー クラスターを使用して BizTalk Server](https://www.microsoft.com/download/details.aspx?id=2290)します。  
+   BizTalk Server データベースをクラスタ リングの詳細については、[Improving Fault Tolerance in Windows Server 2008 フェールオーバー クラスターまたは Windows Server 2003 サーバー クラスターを使用して BizTalk Server](https://www.microsoft.com/download/details.aspx?id=2290)を参照してください。  
   
 ## <a name="behavior-of-biztalk-host-instances-during-sql-server-failover"></a>SQL Server フェールオーバー時の BizTalk ホスト インスタンスの動作  
- SQL Server フェールオーバー時の BizTalk ホスト インスタンスの動作の詳細については、次を参照してください。[動作の BizTalk Server ホスト インスタンスを SQL Server フェールオーバー時](../core/behavior-of-biztalk-server-host-instances-during-sql-server-failover.md)します。  
+ SQL Server フェールオーバー時の BizTalk ホスト インスタンスの動作の詳細については、[動作の BizTalk Server ホスト インスタンスを SQL Server フェールオーバー時](../core/behavior-of-biztalk-server-host-instances-during-sql-server-failover.md)を参照してください。  
   
 ## <a name="using-sql-server-database-mirroring"></a>SQL Server データベース ミラーリングの使用  
- 詳細については、BizTalk Server データベースのクラスタ リングに関する SQL Server データベース ミラーリングを使用して、次を参照してください。 [SQL Server データベース ミラーリング、ボリューム シャドウ コピー サービス、および AlwaysOn](../core/sql-server-database-mirroring-volume-shadow-copy-service-and-alwayson.md)します。  
+ 詳細については、BizTalk Server データベースのクラスタ リングに関する SQL Server データベース ミラーリングを使用して、[SQL Server データベース ミラーリング、ボリューム シャドウ コピー サービス、および AlwaysOn](../core/sql-server-database-mirroring-volume-shadow-copy-service-and-alwayson.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server データベースのスケール アウト](../technical-guides/scaling-out-the-biztalk-server-databases.md)

@@ -45,7 +45,7 @@ BizTalk アプリケーションにバインド ファイルを追加するの�
   
 3. 明示的に追加されたバインドのうち、対象の (アプリケーションのインポート用に選択された展開環境と一致する) 展開環境が関連付けられているもの。 この一連のバインド内での適用順序は特に決まっていません。  
   
-   アプリケーションのインポートとバインドの適用の詳細については、次を参照してください。 [BizTalk アプリケーションをインポート](../core/how-to-import-a-biztalk-application.md)します。  
+   アプリケーションのインポートとバインドの適用の詳細については、[BizTalk アプリケーションをインポート](../core/how-to-import-a-biztalk-application.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
 BizTalk Server 管理者グループのメンバーであるアカウントでサインインします。 [展開して、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)について詳しく説明します。

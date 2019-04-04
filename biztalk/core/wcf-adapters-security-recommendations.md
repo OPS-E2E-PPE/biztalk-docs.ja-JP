@@ -25,7 +25,7 @@ ms.locfileid: "36993451"
 # <a name="wcf-adapters-security-recommendations"></a>WCF アダプターのセキュリティに関する推奨事項
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、WCF アダプターを使用して WCF サービスを公開 (受信) および使用 (送信) します。 使用している環境内において WCF アダプターをセキュリティで保護して展開するには、次のガイドラインに従うことをお勧めします。  
   
- WCF アダプターに関する詳細については、次を参照してください。 [WCF アダプタ](../core/wcf-adapters.md)します。 WCF サービスの詳細については、次を参照してください。 [WCF サービスを使用する](../core/using-wcf-services.md)秒。  
+ WCF アダプターに関する詳細については、[WCF アダプタ](../core/wcf-adapters.md)を参照してください。 WCF サービスの詳細については、次を参照してください。 [WCF サービスを使用する](../core/using-wcf-services.md)秒。  
   
 ## <a name="security-recommendations-for-all-wcf-adapters"></a>すべての WCF アダプターのセキュリティに関する推奨事項  
   
@@ -42,7 +42,7 @@ ms.locfileid: "36993451"
   
 ## <a name="security-recommendations-for-the-isolated-wcf-adapters"></a>分離 WCF アダプターのセキュリティに関する推奨事項  
   
-- Web サービスを公開するためのセキュリティの推奨事項については、次を参照してください。 [Web サービスを有効にする](../core/enabling-web-services.md)します。  
+- Web サービスを公開するためのセキュリティの推奨事項については、[Web サービスを有効にする](../core/enabling-web-services.md)を参照してください。  
   
 - WCF-CustomIsolated、WCF-BasicHttp、WCF-WSHttp などの分離 WCF アダプターは、HTTP (ハイパーテキスト転送プロトコル) を利用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] との間でメッセージを送受信します。 そのため、インターネット インフォメーション サービス (IIS) を保護するためのセキュリティの推奨事項に従う必要があります。  
   
@@ -97,7 +97,7 @@ ms.locfileid: "36993451"
   </configuration>  
   ```  
   
-- さらに、"承認されていないセキュリティ呼び出し" などのセキュリティ関連のパフォーマンス カウンターを使用して WCF アダプターを監視することもできます。 WCF パフォーマンス カウンタを有効にする方法の詳細については、次を参照してください。 [WCF アダプターのパフォーマンス カウンター](../core/wcf-adapters-performance-counters.md)します。  
+- さらに、"承認されていないセキュリティ呼び出し" などのセキュリティ関連のパフォーマンス カウンターを使用して WCF アダプターを監視することもできます。 WCF パフォーマンス カウンタを有効にする方法の詳細については、[WCF アダプターのパフォーマンス カウンター](../core/wcf-adapters-performance-counters.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [セキュリティの計画](../core/planning-for-security.md)

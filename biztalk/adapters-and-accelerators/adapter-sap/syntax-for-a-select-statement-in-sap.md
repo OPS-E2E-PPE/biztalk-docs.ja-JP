@@ -54,9 +54,9 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
 - **No_conversion**オプション。  
   
-  -   場合、 **no_conversion**オプションを使用し、同等の .NET 型を使用して、テーブル内のフィールドが公開されます。 SAP のデータ型の .NET 相当するものについては、次を参照してください。 [SAP データ型の基本的な](../../adapters-and-accelerators/adapter-sap/basic-sap-data-types.md)します。  
+  -   場合、 **no_conversion**オプションを使用し、同等の .NET 型を使用して、テーブル内のフィールドが公開されます。 SAP のデータ型の .NET 相当するものについては、[SAP データ型の基本的な](../../adapters-and-accelerators/adapter-sap/basic-sap-data-types.md)を参照してください。  
   
-  -   場合、 **no_conversion**フィールドに、変換がないかどうかは、定義された終了オプションは使用されませんし、同等の .NET 型を使用してテーブル内のこれらのフィールドが公開されます。 SAP のデータ型の .NET 相当するものについては、次を参照してください。 [SAP データ型の基本的な](../../adapters-and-accelerators/adapter-sap/basic-sap-data-types.md)します。  
+  -   場合、 **no_conversion**フィールドに、変換がないかどうかは、定義された終了オプションは使用されませんし、同等の .NET 型を使用してテーブル内のこれらのフィールドが公開されます。 SAP のデータ型の .NET 相当するものについては、[SAP データ型の基本的な](../../adapters-and-accelerators/adapter-sap/basic-sap-data-types.md)を参照してください。  
   
   -   ときに、 **no_conversion**オプションを使用しないと変換されていないかどうかは、定義されている終了し、テーブル内のこれらのフィールドが .NET 文字列として公開されます。  
   
@@ -235,7 +235,7 @@ Table | '['Table']'
   SELECT * FROM KNA1 WHERE LAND1 LIKE 'd%'  
   ```  
   
-   Select クエリのフレーム化時に適切な場合を使用することを確認します。 また、SAP システムでは、一部の列が小文字または大文字の文字を含めることができます。 SAP GUI を使用して、テーブル内の列が小文字または大文字の文字を格納するかどうかを確認することができます。 SAP GUI の使用方法の詳細については、次を参照してください。[を決定するかどうかを列ストア小文字または大文字の値](../../adapters-and-accelerators/adapter-sap/determining-whether-a-column-stores-lowercase-or-uppercase-values.md)します。  
+   Select クエリのフレーム化時に適切な場合を使用することを確認します。 また、SAP システムでは、一部の列が小文字または大文字の文字を含めることができます。 SAP GUI を使用して、テーブル内の列が小文字または大文字の文字を格納するかどうかを確認することができます。 SAP GUI の使用方法の詳細については、[を決定するかどうかを列ストア小文字または大文字の値](../../adapters-and-accelerators/adapter-sap/determining-whether-a-column-stores-lowercase-or-uppercase-values.md)を参照してください。  
   
 - WHERE 条件はいくつかのデータ値をフィールド値の比較に対してのみサポートと*いない*とその他のテーブルのフィールド値。 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]サポートしている 1 つのテーブル SELECT クエリ、テーブルのフィールド クエリの結合条件では、同じをサポートするために、結合条件を使用する必要があります。  
   

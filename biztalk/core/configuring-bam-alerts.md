@@ -36,7 +36,7 @@ ms.locfileid: "36977595"
   
  bm.exe.config の CommandTimeout の値を変更しても、変更前に展開したビューの CommandTimeout の値は変更されません。  
   
- 次の手順では、ProcessBamNSFiles.vbs を使用して、構成と Notification Services アプリケーションの定義ファイルを取得します。 スクリプトの詳細については、次を参照してください。[通知サービス構成ファイル用の BAM コマンド ライン スクリプト](../core/bam-command-line-script-for-notification-services-configuration-files.md)します。  
+ 次の手順では、ProcessBamNSFiles.vbs を使用して、構成と Notification Services アプリケーションの定義ファイルを取得します。 スクリプトの詳細については、[通知サービス構成ファイル用の BAM コマンド ライン スクリプト](../core/bam-command-line-script-for-notification-services-configuration-files.md)を参照してください。  
   
  既に展開されているビューの NS の ActionTimeout を変更する方法  
   
@@ -57,7 +57,7 @@ ms.locfileid: "36977595"
 7.  **Enter**キーを押します。  
   
 ### <a name="notification-service-configuration-tips"></a>Notification Service の構成に関するヒント  
- [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] を実行しているリモート コンピューターに警告データベースを配置するように BAM 警告を構成する場合、SQL Server インスタンスに Notification Services データベース コンポーネントをインストールする必要があります。 これらのコンポーネントが SQL インスタンス上に存在しない場合、BAM 警告の構成は失敗し、Notification Services 拡張ストアド プロシージャに権限を与えることができなかったことを示すエラーが発生します。 Notification Services コンポーネントをインストールする方法の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=61999](http://go.microsoft.com/fwlink/?LinkId=61999)します。  
+ [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] を実行しているリモート コンピューターに警告データベースを配置するように BAM 警告を構成する場合、SQL Server インスタンスに Notification Services データベース コンポーネントをインストールする必要があります。 これらのコンポーネントが SQL インスタンス上に存在しない場合、BAM 警告の構成は失敗し、Notification Services 拡張ストアド プロシージャに権限を与えることができなかったことを示すエラーが発生します。 Notification Services コンポーネントをインストールする方法の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=61999](http://go.microsoft.com/fwlink/?LinkId=61999)を参照してください。  
   
  BAM では Notification Services へのアクセスに使用されるアカウントを変更できます。 NSControl を実行する方法以外でこのアカウントを変更すると、アカウントの変更に NSControl を使用することを通知するエラーが表示されます。  
   
@@ -92,4 +92,4 @@ ms.locfileid: "36977595"
   
    \<プロパティ名 ="FileDropUNC"\>\\\\< コンピューター名\>\alerts\</Property\>  
   
-   BAM 管理ユーティリティの詳細については、次を参照してください。 [BAM 管理ユーティリティ](../core/bam-management-utility.md)します。
+   BAM 管理ユーティリティの詳細については、[BAM 管理ユーティリティ](../core/bam-management-utility.md)を参照してください。

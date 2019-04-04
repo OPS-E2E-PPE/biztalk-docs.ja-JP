@@ -40,4 +40,4 @@ SQL Adapter サンプルは、行程導入サンプルで提供される Windows
   
 8. GlobalBankESB データベースの Product テーブル内 1 つの行が挿入されることを確認します。  
   
-   SQL アダプター サンプルのしくみについては、次を参照してください。 [、SQL アダプター サンプルのしくみ](../esb-toolkit/how-the-sql-adapter-sample-works.md)します。
+   SQL アダプター サンプルのしくみについては、[、SQL アダプター サンプルのしくみ](../esb-toolkit/how-the-sql-adapter-sample-works.md)を参照してください。

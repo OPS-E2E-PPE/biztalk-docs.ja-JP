@@ -69,7 +69,7 @@ Web クライアント アプリケーションを記述せずに、公開済み
   
 3. HTTP GET をテストするには、HTTP POST、またはローカルのコンピューターから HTTP-POST で対応する行が削除、\<プロトコル\>セクション。  
   
-   構成オプションの詳細については、次を参照してください。 [ASP.NET を使用して作成した XML Web サービスの構成オプション](https://msdn.microsoft.com/library/b2c0ew36.aspx)します。 
+   構成オプションの詳細については、[ASP.NET を使用して作成した XML Web サービスの構成オプション](https://msdn.microsoft.com/library/b2c0ew36.aspx)を参照してください。 
   
 #### <a name="access-a-web-service-with-internet-explorer"></a>Internet Explorer で Web サービスへのアクセスします。  
   
@@ -114,7 +114,7 @@ Web クライアント アプリケーションを記述せずに、公開済み
 2.  Enter キーを押します。 Web ブラウザに、サーバーからの XML 応答が表示されます。  
   
     > [!NOTE]
-    >  HTTP-POST を使用して Web サービスを呼び出すこともできます。 Web ブラウザーから XML Web サービスの呼び出しのサンプルとは、次を参照してください。[ブラウザーから XML Web サービスにアクセス](https://msdn.microsoft.com/library/45fez2a8.aspx)します。  
+    >  HTTP-POST を使用して Web サービスを呼び出すこともできます。 Web ブラウザーから XML Web サービスの呼び出しのサンプルとは、[ブラウザーから XML Web サービスにアクセス](https://msdn.microsoft.com/library/45fez2a8.aspx)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [公開済み Web サービスのテスト](../core/testing-published-web-services.md)

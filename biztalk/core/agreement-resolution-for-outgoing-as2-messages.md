@@ -27,7 +27,7 @@ AS2 送信パイプラインは、HTTP/HTTPS トランスポート経由の送�
 2. 送信パイプラインは、送信メッセージの AS2To コンテキスト プロパティで、その他のアグリーメント リゾルバーとして設定される、AS2To プロパティの値と一致しようとして、前の手順に失敗した場合、**識別子**アグリーメントのタブプロパティ。  
   
    > [!NOTE]
-   >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、AS2To プロパティをコンテキストに書き込みません。 AS2To コンテキスト プロパティでアグリーメント解決を実行する場合は、アグリーメント解決を実行するカスタム オーケストレーションまたはカスタム パイプライン コンポーネントを組み込む必要があります。 詳細については、次を参照してください。[送信パーティ解決の AS2 コンテキスト プロパティの書き込み](../core/writing-as2-context-properties-for-outbound-party-resolution.md)します。  
+   >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、AS2To プロパティをコンテキストに書き込みません。 AS2To コンテキスト プロパティでアグリーメント解決を実行する場合は、アグリーメント解決を実行するカスタム オーケストレーションまたはカスタム パイプライン コンポーネントを組み込む必要があります。 詳細については、[送信パーティ解決の AS2 コンテキスト プロパティの書き込み](../core/writing-as2-context-properties-for-outbound-party-resolution.md)を参照してください。  
    > 
    > [!NOTE]
    >  動的送信ポートを使用している場合は、アグリーメント解決のためのコンテキストに AS2To プロパティを書き込む必要があります。  
@@ -43,7 +43,7 @@ AS2 送信パイプラインは、HTTP/HTTPS トランスポート経由の送�
 > [!NOTE]
 >  AS2 経由で EDI を送信する場合、EDI と AS2 の両方に個別のアグリーメントを使用する必要があります。  
   
- 送信プロセスの詳細については、次を参照してください。[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)します。  
+ 送信プロセスの詳細については、[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server が AS2 メッセージを送信する方法](../core/how-biztalk-server-sends-as2-messages.md)

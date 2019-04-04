@@ -30,7 +30,7 @@ ms.locfileid: "36981371"
   
 > [!NOTE]
 > - ExecuteNonQuery、ExecuteReader、executescalar 操作はユーザー定義型 (Udt) のサポートされていません。  
->   - ExecuteNonQuery、ExecuteReader、executescalar 操作のアプリケーションのコンテキストを設定することもできます。[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 Oracle E-business Suite (インターフェイス テーブル、インターフェイス ビュー、同時実行プログラムまたは要求内のアイテムに対象が、操作のいずれかの場合は、ExecuteNonQuery、ExecuteReader、executescalar 操作のアプリケーション コンテキストを設定する必要があります。セットの場合)。 アプリケーションのコンテキスト、および設定する方法については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
+>   - ExecuteNonQuery、ExecuteReader、executescalar 操作のアプリケーションのコンテキストを設定することもできます。[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 Oracle E-business Suite (インターフェイス テーブル、インターフェイス ビュー、同時実行プログラムまたは要求内のアイテムに対象が、操作のいずれかの場合は、ExecuteNonQuery、ExecuteReader、executescalar 操作のアプリケーション コンテキストを設定する必要があります。セットの場合)。 アプリケーションのコンテキスト、および設定する方法については、[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [どのような操作は、アダプターを使用して実行しますか?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)

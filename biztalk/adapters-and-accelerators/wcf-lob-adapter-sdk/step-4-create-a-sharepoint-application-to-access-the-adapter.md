@@ -91,7 +91,7 @@ ms.locfileid: "36986643"
 8.  をクリックして**OK**、順にクリックします**完了**します。  
   
 ## <a name="creating-a-shared-services-provider-and-importing-the-application-definition-file"></a>共有サービス プロバイダーを作成し、アプリケーション定義ファイルをインポートします。  
- 共有サービス プロバイダー (SSP) は、共有サービスとその関連リソースの論理グループです。 SSP は、SharePoint サーバーの全体管理コンソールを使用して作成できます。 この例は、任意 SSP. で動作します。 SSP の作成の詳細については、次を参照してください。"」の章の概要: を作成および構成共有サービスのプロバイダー"で[ http://go.microsoft.com/fwlink/?LinkId=105119](http://go.microsoft.com/fwlink/?LinkId=105119)します。  
+ 共有サービス プロバイダー (SSP) は、共有サービスとその関連リソースの論理グループです。 SSP は、SharePoint サーバーの全体管理コンソールを使用して作成できます。 この例は、任意 SSP. で動作します。 SSP の作成の詳細については、"」の章の概要: を作成および構成共有サービスのプロバイダー"で[ http://go.microsoft.com/fwlink/?LinkId=105119](http://go.microsoft.com/fwlink/?LinkId=105119)を参照してください。  
   
 ### <a name="to-import-the-application-definition-file"></a>アプリケーション定義ファイルをインポートするには  
   

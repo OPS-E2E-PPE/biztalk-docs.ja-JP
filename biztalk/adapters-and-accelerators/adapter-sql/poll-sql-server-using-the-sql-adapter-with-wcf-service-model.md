@@ -28,7 +28,7 @@ ms.locfileid: "37022312"
   
 - **XmlPolling**します。 この操作は、XML メッセージとしてポーリング メッセージを返します。 SELECT ステートメントまたは XML メッセージとしてデータを返す FOR XML 句を使用するストアド プロシージャを使用する場合、この操作を使用する必要があります。 [FOR XML 句](https://docs.microsoft.com/sql/relational-databases/xml/for-xml-sql-server)詳細情報を提供します。 
   
-  これらのポーリング操作の詳細については、次を参照してください。 [SQL アダプターを使用して SQL Server でのポーリング](../../adapters-and-accelerators/adapter-sql/polling-in-sql-server-using-the-sql-adapter.md)します。  
+  これらのポーリング操作の詳細については、[SQL アダプターを使用して SQL Server でのポーリング](../../adapters-and-accelerators/adapter-sql/polling-in-sql-server-using-the-sql-adapter.md)を参照してください。  
   
 > [!NOTE]
 >  [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアントは同じデータベースまたはテーブルの 1 つ以上のポーリングまたは TypedPolling 操作を 1 つのアプリケーションに使用できます。 アダプターには、このようなシナリオをサポートするには、一意の ID が含まれています — **InboundID**— 接続 URI。 この ID は、接続、URI に追加されたときに、一意で単一のアプリケーションで複数のポーリング操作できるようにできます。  

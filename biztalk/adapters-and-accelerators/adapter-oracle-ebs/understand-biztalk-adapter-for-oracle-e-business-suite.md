@@ -29,7 +29,7 @@ ms.locfileid: "36980547"
   
 - **Lob の間でのエクスペリエンス、統一された**します。 WCF を使用して、アダプターを標準化および[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]、し、そのため、LOB システムへのアクセスのエクスペリエンスの一貫性を提供します。  
   
-  前述のように、アダプターは WCF LOB Adapter SDK の上に構築されます。 WCF LOB Adapter SDK は、さまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションが使用できる統合アダプターを構築するための共通の基盤を提供します。 WCF LOB Adapter SDK は、Windows Communication Foundation (WCF) チャネルとしての統合アダプターを公開することで、Microsoft のサービスを使用したアダプターの戦略を配置します。 WCF LOB Adapter SDK の詳細については、次を参照してください。 [WCF LOB Adapter SDK ドキュメント](../../adapters-and-accelerators/wcf-lob-adapter-sdk/microsoft-wcf-line-of-business-adapter-sdk-documentation.md)します。
+  前述のように、アダプターは WCF LOB Adapter SDK の上に構築されます。 WCF LOB Adapter SDK は、さまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションが使用できる統合アダプターを構築するための共通の基盤を提供します。 WCF LOB Adapter SDK は、Windows Communication Foundation (WCF) チャネルとしての統合アダプターを公開することで、Microsoft のサービスを使用したアダプターの戦略を配置します。 WCF LOB Adapter SDK の詳細については、[WCF LOB Adapter SDK ドキュメント](../../adapters-and-accelerators/wcf-lob-adapter-sdk/microsoft-wcf-line-of-business-adapter-sdk-documentation.md)を参照してください。
 
 ## <a name="overview-of-the-oracle-ebs-adapter"></a>Oracle EBS アダプターの概要
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] WCF サービスとしての Oracle E-business Suite を公開します。 アダプター クライアントは、アダプターを使用した SOAP メッセージを交換することで、Oracle E-business Suite での操作を実行できます。 アダプターは、SOAP メッセージを使用し、操作を実行する適切な ODP.NET 呼び出しを行います。 アダプターは、Oracle E-business Suite から SOAP メッセージの形式でクライアントに応答を返します。  
@@ -38,11 +38,11 @@ ms.locfileid: "36980547"
   
  [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite との通信に Oracle Data Provider for .NET (ODP.NET) 11.1.0.7 を使用します。 ODP.NET 11.1.0.7 では、Oracle Data Access Components (ODAC) のコンポーネントの 1 つです。 使用することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]次の方法で、Oracle E-business Suite と通信します。  
   
-- BizTalk アプリケーションを開発しています。 詳細については、次を参照してください。 [BizTalk Server アプリケーションの開発](../../core/developing-biztalk-server-applications.md)します。  
+- BizTalk アプリケーションを開発しています。 詳細については、[BizTalk Server アプリケーションの開発](../../core/developing-biztalk-server-applications.md)を参照してください。  
   
-- 使用して、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]サービス モデル。 詳細については、次を参照してください。[開発 Oracle データベース アプリケーションを使用して WCF サービス モデル](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md)します。  
+- 使用して、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]サービス モデル。 詳細については、[開発 Oracle データベース アプリケーションを使用して WCF サービス モデル](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md)を参照してください。  
   
-- WCF チャネル モデルを使用します。 詳細については、次を参照してください。 [WCF チャネル モデルを使用して SQL アプリケーションの開発](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)します。  
+- WCF チャネル モデルを使用します。 詳細については、[WCF チャネル モデルを使用して SQL アプリケーションの開発](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)を参照してください。  
 
 ## <a name="access-to-oracle-e-business-suite"></a>Oracle E-business Suite へのアクセス
  Oracle E-business Suite で操作を実行するには、アダプター クライアントは、Oracle E-business Suite で関連する成果物へのアクセスが必要です。 外部のアプリケーションでは、追加したり、SQL ステートメントを使用して Oracle E-business Suite のインターフェイス テーブルと、データベース テーブル内のデータを削除することができます。 アプリケーションは、ビュー、関数、およびプロシージャを使用して、インターフェイス テーブルおよびデータベース テーブルのデータにアクセスできます。 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]、アダプター クライアントは、Oracle E-business Suite にも、基になるデータベースとの成果物を参照できます。 Oracle E-business suite でアダプター クライアントできます。 インターフェイス テーブル、インターフェイス ビュー、同時実行プログラムを参照して、基になる Oracle データベースのセットを要求、アダプターのクライアントは、テーブル、ビュー、ストアド プロシージャ、関数、PL/SQL Api を参照できます。、およびパッケージ。 アダプター クライアントは、成果物がソリューションの必要があり、それらの成果物のメタデータの取得を選択できます。 これにより、ユーザーにアクセスし、Oracle E-business Suite と基になる Oracle データベースで、成果物の操作を実行できます。  

@@ -119,7 +119,7 @@ ms.locfileid: "36997003"
   
 - **Wake On LAN (使用されている) 場合を除き、無効になっている**– lan でウェイク アップの機能を無効にするネットワーク アダプター ドライバーを構成します。 この機能がクライアント コンピューターの便利ですが、必要がありますほとんどもしコンピューターで使用する、BizTalk Server または SQL Server。  
   
-  ネットワーク アダプターのパフォーマンスのチューニングの詳細については、次を参照してください。、**ネットワーク デバイスの設定**のセクション、 ["BizTalk Server データベースの最適化"ホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkID=101578) (http://go.microsoft.com/fwlink/?LinkID=101578)します。  
+  ネットワーク アダプターのパフォーマンスのチューニングの詳細については、、**ネットワーク デバイスの設定**のセクション、 ["BizTalk Server データベースの最適化"ホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkID=101578) (http://go.microsoft.com/fwlink/?LinkID=101578)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [ネットワーク パフォーマンスを向上するために変更できる設定](../technical-guides/settings-that-can-be-modified-to-improve-network-performance.md)

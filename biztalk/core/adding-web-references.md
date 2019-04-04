@@ -40,7 +40,7 @@ Web ポートを追加するには、BizTalk プロジェクトに Web 参照を
   
   Web 参照を追加する場合、その Web サービスのすべての Web メソッドには、BizTalk Server との互換性が必要です。 Web サービス内の特定の Web メソッドの条件付き属性を指定することはできません。  
   
-  使用して、プロジェクトに Web 参照を追加する、 **Web 参照の追加** ダイアログ ボックス。 Web 参照を追加する方法の詳細については、次を参照してください。 [Visual Studio を使って](../core/using-visual-studio.md)します。  
+  使用して、プロジェクトに Web 参照を追加する、 **Web 参照の追加** ダイアログ ボックス。 Web 参照を追加する方法の詳細については、[Visual Studio を使って](../core/using-visual-studio.md)を参照してください。  
   
   Business Process Execution Language (BPEL) エクスポート プロセスを使用してオーケストレーションをエクスポートする場合、既存の BizTalk プロジェクトから Web 参照を参照することはできません。 既存の BizTalk プロジェクトから Web 参照を参照すると、BPEL エクスポート プロセスでは、2 つ目の WSDL ファイルが自動生成され、バインド情報が失われます。  
   

@@ -23,9 +23,9 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37002723"
 ---
 # <a name="how-to-list-the-properties-of-an-affiliate-application"></a>関連アプリケーションのプロパティを一覧表示する方法
-ここで示すコマンドを実行すると、関連アプリケーションに関する情報が表示されます。 関連アプリケーションのプロパティの詳細については、次を参照してください。 [SSO 関連アプリケーション](../core/sso-affiliate-applications.md)します。  
+ここで示すコマンドを実行すると、関連アプリケーションに関する情報が表示されます。 関連アプリケーションのプロパティの詳細については、[SSO 関連アプリケーション](../core/sso-affiliate-applications.md)を参照してください。  
   
- SSO システムでは、関連アプリケーションのプロパティに関する情報は、関連アプリケーションの更新に使用する XML ファイルから取得します。 詳細については、次を参照してください。[関連アプリケーションのプロパティを更新する方法](../core/how-to-update-the-properties-of-an-affiliate-application.md)します。  
+ SSO システムでは、関連アプリケーションのプロパティに関する情報は、関連アプリケーションの更新に使用する XML ファイルから取得します。 詳細については、[関連アプリケーションのプロパティを更新する方法](../core/how-to-update-the-properties-of-an-affiliate-application.md)を参照してください。  
   
 ### <a name="to-display-the-properties-of-an-affiliate-application-using-the-administration-utility"></a>管理ユーティリティを使用して関連アプリケーションのプロパティを表示するには  
   

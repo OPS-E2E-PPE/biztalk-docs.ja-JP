@@ -26,7 +26,7 @@ ms.locfileid: "36975155"
 # <a name="how-to-delete-a-receive-port"></a>受信ポートを削除する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、受信ポートを BizTalk アプリケーションから削除する方法について説明します。 受信ポートを BizTalk アプリケーションから削除すると、そのグループの BizTalk 管理データベースからも受信ポートが削除され、およびこの受信ポートに含まれているすべての受信場所が削除されます。  
   
- 受信ポートがオーケストレーションにバインドされていると、この操作は正常に行われません。 受信ポートのバインドを削除する方法の詳細については、次を参照してください。[オーケストレーションをバインド解除する方法](../core/how-to-unbind-an-orchestration.md)します。  
+ 受信ポートがオーケストレーションにバインドされていると、この操作は正常に行われません。 受信ポートのバインドを削除する方法の詳細については、[オーケストレーションをバインド解除する方法](../core/how-to-unbind-an-orchestration.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

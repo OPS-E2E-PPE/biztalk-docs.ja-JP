@@ -36,4 +36,4 @@ ms.locfileid: "37007483"
  マッピングはローカル アカウントに対してではなく、Windows ドメイン アカウントに対してのみ作成できます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 詳細については、次を参照してください。 [SSO マッピング](../core/sso-mappings.md)します。
+ 詳細については、[SSO マッピング](../core/sso-mappings.md)を参照してください。

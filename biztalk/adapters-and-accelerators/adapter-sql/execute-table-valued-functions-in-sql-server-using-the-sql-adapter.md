@@ -26,7 +26,7 @@ SQL Server で Transact SQL と CLR テーブル値関数での操作として�
   
  詳細については。  
   
-- 使用して、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server でのテーブル値関数を呼び出すための BizTalk Server で、次を参照してください。 [Invoking Table-Valued 関数を使用して BizTalk Server によって SQL Server で](../../adapters-and-accelerators/adapter-sql/invoke-table-valued-functions-in-sql-server-using-biztalk-server.md)します。  
+- 使用して、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server でのテーブル値関数を呼び出すための BizTalk Server で、[Invoking Table-Valued 関数を使用して BizTalk Server によって SQL Server で](../../adapters-and-accelerators/adapter-sql/invoke-table-valued-functions-in-sql-server-using-biztalk-server.md)を参照してください。  
   
 - メッセージの構造とテーブル値関数用の SOAP アクションを参照してください[プロシージャと関数のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md)します。  
   

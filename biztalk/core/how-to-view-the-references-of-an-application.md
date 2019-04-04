@@ -23,7 +23,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36979275"
 ---
 # <a name="how-to-view-the-references-of-an-application"></a>アプリケーションの参照を表示する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、現在のアプリケーションが参照しているアプリケーションの一覧を表示する方法について説明します。 参照を追加する方法の詳細については、次を参照してください。[別のアプリケーションへの参照を追加する方法](../core/how-to-add-a-reference-to-another-application.md)します。 このアプリケーションを参照しているアプリケーションの一覧も表示できます。  
+このトピックでは、BizTalk Server 管理コンソールを使用して、現在のアプリケーションが参照しているアプリケーションの一覧を表示する方法について説明します。 参照を追加する方法の詳細については、[別のアプリケーションへの参照を追加する方法](../core/how-to-add-a-reference-to-another-application.md)を参照してください。 このアプリケーションを参照しているアプリケーションの一覧も表示できます。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

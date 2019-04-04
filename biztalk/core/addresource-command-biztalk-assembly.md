@@ -32,7 +32,7 @@ ms.locfileid: "37011091"
   
 - また、追加するアセンブリが、そのアプリケーションには含まれない他のアイテムに依存している場合、AddResource 操作は失敗します。  
   
-  依存関係の詳細については、次を参照してください。[依存関係とアプリケーションの展開](../core/dependencies-and-application-deployment.md)します。  
+  依存関係の詳細については、[依存関係とアプリケーションの展開](../core/dependencies-and-application-deployment.md)を参照してください。  
   
 ## <a name="usage"></a>使用方法  
  **BTSTask AddResource** [**/applicationname は:**<em>値</em>] **/Type:System.BizTalk:BizTalkAssembly** **[/Overwrite]** **/Source:**<em>値</em>[**/Destination:**<em>値</em>] [**/Options:GacOnAdd** <em>&#124;</em> **GacOnInstall**<em>&#124;</em>**GacOnImport**] [**/Server:** <em>値</em>] [**/database:**<em>値</em>]  

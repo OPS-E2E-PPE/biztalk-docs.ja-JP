@@ -37,7 +37,7 @@ ms.locfileid: "36983003"
 # <a name="pip-implementation"></a>PIP 実装
 RosettaNet Partner Interface Process (Pip) は、サプライ チェーン内の取引先間のビジネス プロセスを定義します。 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]一連の Pip のボックスのことができますを作成して Pip を追加します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RosettaNet 組織で定義されているすべての Pip をサポートしています。  
   
- 詳細については、次を参照してください。 [RosettaNet Pip](../../adapters-and-accelerators/accelerator-rosettanet/rosettanet-pips.md)します。  
+ 詳細については、[RosettaNet Pip](../../adapters-and-accelerators/accelerator-rosettanet/rosettanet-pips.md)を参照してください。  
   
 ## <a name="schemas-in-btarn"></a>BTARN のスキーマ  
  RosettaNet は、文書型定義 (DTD) の形式で PIP メッセージ スキーマをすべて指定します。 ビジネス ドキュメントを交換する取引先は、これらの DTD に準拠している必要があります。 ただし、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Microsoft BizTalk Server は、Dtd ではなく Xsd を使用してドキュメントを表すために、これらの Dtd を XML スキーマ定義ファイル (Xsd) として実装します。 機能面では XSD が DTD に優先しており、XSD はメッセージ ガイドラインに提供されるほとんどの情報をネイティブに表すことができます。  
@@ -45,9 +45,9 @@ RosettaNet Partner Interface Process (Pip) は、サプライ チェーン内の
 > [!NOTE]
 >  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、最近 RosettaNet 組織によって発行された、XSD 仕様を使用する次世代の PIP もサポートします。  
   
- 新しい PIP を実装するためには、PIP の DTD を XSD へ変換する必要があります。 RosettaNet の Web サイトから PIP に関連付けられている DTD をダウンロードする[ http://go.microsoft.com/fwlink/?linkid=33859](http://go.microsoft.com/fwlink/?linkid=33859)します。 次に、PIP に基づく [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] プロセス構成プロファイルを作成します。 詳細については、次を参照してください。[新しい Partner Interface Process の組み込み](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)します。  
+ 新しい PIP を実装するためには、PIP の DTD を XSD へ変換する必要があります。 RosettaNet の Web サイトから PIP に関連付けられている DTD をダウンロードする[ http://go.microsoft.com/fwlink/?linkid=33859](http://go.microsoft.com/fwlink/?linkid=33859)します。 次に、PIP に基づく [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] プロセス構成プロファイルを作成します。 詳細については、[新しい Partner Interface Process の組み込み](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)を参照してください。  
   
- 既存のプロファイルに基づいて、新しいプロセス構成プロファイルを作成できます。 詳細については、次を参照してください。[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)します。 1 つのプロセス構成プロファイルに基づいて、同じパートナー間で複数のアグリーメントを作成できます。 ただし、アクティブ化できるアグリーメントは一度に 1 つだけです。 作成し、アグリーメントをアクティブ化を参照してください。[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)します。  
+ 既存のプロファイルに基づいて、新しいプロセス構成プロファイルを作成できます。 詳細については、[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)を参照してください。 1 つのプロセス構成プロファイルに基づいて、同じパートナー間で複数のアグリーメントを作成できます。 ただし、アクティブ化できるアグリーメントは一度に 1 つだけです。 作成し、アグリーメントをアクティブ化を参照してください。[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)します。  
   
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] では、以下の RosettaNet ヘッダーに対して RosettaNet メッセージ ガイドラインの制約を適用して XSD を実装します。  
   
@@ -65,7 +65,7 @@ RosettaNet Partner Interface Process (Pip) は、サプライ チェーン内の
 ## <a name="element-level-constraints-in-btarn"></a>BTARN の要素レベルの制約  
  BTARN では、PIP メッセージ ガイドライン文書で指定されている要素レベルの制約をプロセス構成の設定として実装します。 ランタイム コンポーネントはプロセス構成を使用して、特定の PIP の処理方法を決定します。  
   
- 新しい PIP を実装するためには、新しいプロセス構成プロファイルを作成して、PIP にメッセージ ガイドライン制約を適用する必要があります。 この操作は BTARN 管理コンソールで行います。 詳細については、次を参照してください。[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)します。  
+ 新しい PIP を実装するためには、新しいプロセス構成プロファイルを作成して、PIP にメッセージ ガイドライン制約を適用する必要があります。 この操作は BTARN 管理コンソールで行います。 詳細については、[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)を参照してください。  
   
  プロセス構成プロファイルは、のように、RosettaNet PIP 仕様にマップ[PIP 仕様を使用して、プロセス構成を作成する](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md)します。  
   

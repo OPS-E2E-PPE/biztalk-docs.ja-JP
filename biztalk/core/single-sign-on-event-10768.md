@@ -36,4 +36,4 @@ ms.locfileid: "36974723"
  ENTSSO システムがオフラインです。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 詳細については、次を参照してください。[サーバー スナップインを使用する](../core/how-to-use-the-servers-snap-in.md)します。
+ 詳細については、[サーバー スナップインを使用する](../core/how-to-use-the-servers-snap-in.md)を参照してください。

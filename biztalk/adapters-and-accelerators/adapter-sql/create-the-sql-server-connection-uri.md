@@ -48,11 +48,11 @@ mssql://[Server_Name[:Portno]]/[Database_Instance_Name]/[Database_Name]?Failover
 |[PORTNO]|hostinfoparams|接続が確立されているポート番号。 値を指定しない場合、アダプターは、既定のポートを介して接続します。|  
 |[データベース インスタンス名]|hostinfoparams|接続に SQL Server インスタンスの名前。 値を指定しない場合、アダプターは、既定のデータベース インスタンスに接続します。|  
 |[DATABASE_NAME]|hostinfoparams|接続するデータベースの名前。 値を指定しない場合、アダプターは、既定のデータベースに接続します。|  
-|[PARTNER_SERVER_NAME]|query_string|場合に、プライマリ SQL Server データベースの接続にフェールオーバーの SQL Server データベースの名前は使用できません。 高可用性の SQL Server についての詳細については、次を参照してください。 [SQL Server データベースのミラーリング](https://msdn.microsoft.com/library/5h52hef8.aspx)します。|  
-|[INBOUND_ID]|query_string|接続して一意の URI に追加するための識別子です。 メタデータを生成する場合は、この接続のパラメーターを指定する必要があります、 **TypedPolling**操作を受信します。 また、BizTalk アプリケーションでは、複数の受信場所が、同じデータベースをポーリングした場合受信 ID が、接続をアダプター クライアント異なる上の同じデータベースからポーリング メッセージを受信できるように一意である URI の受信場所。 詳細については、次を参照してください。[受信ポーリング メッセージ間で複数受信ポートから BizTalk Server を使用して SQL](../../adapters-and-accelerators/adapter-sql/receive-polling-messages-across-multiple-receive-ports-from-sql-using-biztalk.md)します。|  
+|[PARTNER_SERVER_NAME]|query_string|場合に、プライマリ SQL Server データベースの接続にフェールオーバーの SQL Server データベースの名前は使用できません。 高可用性の SQL Server についての詳細については、[SQL Server データベースのミラーリング](https://msdn.microsoft.com/library/5h52hef8.aspx)を参照してください。|  
+|[INBOUND_ID]|query_string|接続して一意の URI に追加するための識別子です。 メタデータを生成する場合は、この接続のパラメーターを指定する必要があります、 **TypedPolling**操作を受信します。 また、BizTalk アプリケーションでは、複数の受信場所が、同じデータベースをポーリングした場合受信 ID が、接続をアダプター クライアント異なる上の同じデータベースからポーリング メッセージを受信できるように一意である URI の受信場所。 詳細については、[受信ポーリング メッセージ間で複数受信ポートから BizTalk Server を使用して SQL](../../adapters-and-accelerators/adapter-sql/receive-polling-messages-across-multiple-receive-ports-from-sql-using-biztalk.md)を参照してください。|  
   
 > [!NOTE]
->  これらの接続文字列プロパティの詳細については、次を参照してください。 [SqlConnection.ConnectionString プロパティ](https://msdn.microsoft.com/library/system.data.sqlclient.sqlconnection.connectionstring.aspx)します。
+>  これらの接続文字列プロパティの詳細については、[SqlConnection.ConnectionString プロパティ](https://msdn.microsoft.com/library/system.data.sqlclient.sqlconnection.connectionstring.aspx)を参照してください。
   
 ## <a name="sql-server-credentials-and-the-connection-uri"></a>SQL Server 資格情報と接続 URI  
  [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]接続 URI で指定する資格情報をサポートしていません。 使用するアプリケーションで資格情報の指定の詳細については、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL アプリケーションのセキュリティ保護](../../adapters-and-accelerators/adapter-sql/secure-your-sql-applications.md)します。  

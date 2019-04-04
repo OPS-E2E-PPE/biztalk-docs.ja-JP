@@ -25,13 +25,13 @@ ms.locfileid: "36986611"
 ## <a name="general"></a>全般  
  次の制限事項を呼びます、 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]:  
   
-- いくつかの例外がなければ、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]はアダプターの以前のリリースと互換性があります。 前回のリリース以降に発生した変更の一覧、次を参照してください。 [BizTalk Adapter for Oracle Database での主な機能](../../adapters-and-accelerators/adapter-oracle-database/key-features-in-biztalk-adapter-for-oracle-database.md)します。  
+- いくつかの例外がなければ、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]はアダプターの以前のリリースと互換性があります。 前回のリリース以降に発生した変更の一覧、[BizTalk Adapter for Oracle Database での主な機能](../../adapters-and-accelerators/adapter-oracle-database/key-features-in-biztalk-adapter-for-oracle-database.md)を参照してください。  
   
 - [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] XML 型をサポートしていません。  
   
 - SQLEXECUTE 操作がタイムアウトの値を返しませんまたはプロシージャ、関数、またはパッケージには、IN OUT パラメーター。 このためを呼び出す必要がありますプロシージャ、関数、およびパッケージ専用の操作を使用している、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]これら Oracle の成果物を公開します。  
   
-- プログラミングでは、プロキシを使用して Oracle データベースからデータを取得するときに、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] 65536 の複数のノードを持つ XML メッセージを逆シリアル化ではありません。 応答メッセージが 65536 のノード以下を確認します。 この制限を回避するには、アプリケーションの app.config ファイルを変更します。 手順については、次を参照してください。 [Oracle データベース アダプターを使用した運用上の問題のトラブルシューティングを行う](../../adapters-and-accelerators/adapter-oracle-database/troubleshoot-operational-issues-with-the-oracle-database-adapter.md)します。  
+- プログラミングでは、プロキシを使用して Oracle データベースからデータを取得するときに、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] 65536 の複数のノードを持つ XML メッセージを逆シリアル化ではありません。 応答メッセージが 65536 のノード以下を確認します。 この制限を回避するには、アプリケーションの app.config ファイルを変更します。 手順については、[Oracle データベース アダプターを使用した運用上の問題のトラブルシューティングを行う](../../adapters-and-accelerators/adapter-oracle-database/troubleshoot-operational-issues-with-the-oracle-database-adapter.md)を参照してください。  
   
 - [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]は入力文字列し、アダプターによって実行される SQL コマンドを構築します。 ただし、入力文字列では、他の SQL コマンドも実行される場合があり、操作コントラクトが壊れる可能性があります。  
   

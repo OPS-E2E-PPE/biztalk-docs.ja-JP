@@ -46,9 +46,9 @@ BizTalk Server の構成が済んだら、Windows グループおよびユーザ
   
 - ホストに関連付けられている Windows グループに変更を加える  
   
-  完全な一覧と、グループと BizTalk Server でユーザー アカウントの説明では、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)します。  
+  完全な一覧と、グループと BizTalk Server でユーザー アカウントの説明では、[Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)を参照してください。  
   
-  最低限のセキュリティ ユーザー権利の管理タスクの詳細については、次を参照してください。[最小セキュリティ ユーザー権限](../core/minimum-security-user-rights.md)します。  
+  最低限のセキュリティ ユーザー権利の管理タスクの詳細については、[最小セキュリティ ユーザー権限](../core/minimum-security-user-rights.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

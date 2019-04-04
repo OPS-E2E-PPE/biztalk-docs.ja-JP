@@ -23,7 +23,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36984659"
 ---
 # <a name="hardware-and-software-requirements-for-deployment"></a>ハードウェアとソフトウェアの展開要件
-次の表は、ハードウェアとソフトウェアの推奨事項と規定されたデプロイ アーキテクチャ内の各サーバーの要件を示します。 必要なソフトウェアの構成の詳細については、次を参照してください。[サーバーの展開](../../adapters-and-accelerators/accelerator-swift/deploying-your-servers.md)します。  
+次の表は、ハードウェアとソフトウェアの推奨事項と規定されたデプロイ アーキテクチャ内の各サーバーの要件を示します。 必要なソフトウェアの構成の詳細については、[サーバーの展開](../../adapters-and-accelerators/accelerator-swift/deploying-your-servers.md)を参照してください。  
 
  すべてのサーバーの種類のハード_ディスク空き容量、プロセッサのクロック速度、および現在と予想される技術的な要件に基づいてランダム アクセス メモリ (RAM) の量を選択します (」の説明に従って[手順 1: 基本プラットフォームのインストール](../../adapters-and-accelerators/accelerator-swift/step-1-installing-the-base-platform.md)).  
 

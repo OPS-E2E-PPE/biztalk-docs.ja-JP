@@ -33,7 +33,7 @@ ms.locfileid: "36978915"
 このセクションでは、に関する情報を提供、 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) とその機能。 使用する方法については、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]を参照してください[、.NET Framework Data Provider for mySAP Business Suite を使用して、](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)します。  
   
 > [!NOTE]
->  インストールする場合でも、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]の一部として、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] 、インストール、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP システムでカスタム RFC をインストールするまではまだ完了しません。 カスタム RFC をインストールする方法の手順については、次を参照してください。 [Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)します。  
+>  インストールする場合でも、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]の一部として、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] 、インストール、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP システムでカスタム RFC をインストールするまではまだ完了しません。 カスタム RFC をインストールする方法の手順については、[Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)を参照してください。  
   
  使用することができます、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]次のようにします。  
   
@@ -51,7 +51,7 @@ ms.locfileid: "36978915"
   
 - 使用する、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SQL Server Reporting Services (SSRS) とします。  
   
-  これらのタスクの実行の詳細については、次を参照してください。 [、.NET Framework Data Provider for mySAP Business Suite を使用して、](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)します。 カスタム RFC、SAPDiscoveredObjects.xml 構成ファイルに関連付けられている制限事項の詳細については、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]、次のリンクを参照してください。  
+  これらのタスクの実行の詳細については、[、.NET Framework Data Provider for mySAP Business Suite を使用して、](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)を参照してください。 カスタム RFC、SAPDiscoveredObjects.xml 構成ファイルに関連付けられている制限事項の詳細については、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]、次のリンクを参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

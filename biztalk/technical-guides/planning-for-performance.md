@@ -36,7 +36,7 @@ ms.locfileid: "50752714"
   
  アダプターとのドキュメントを送受信するために使用するパイプライン[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]BizTalk ソリューションのパフォーマンスに大きな影響をこともできます。 ソリューションに必要なドキュメントの追跡のレベルも大幅にパフォーマンスに影響します。 さまざまな BizTalk ソリューションで可能な多くの異なるパフォーマンス プロファイル、ためには、維持可能な最大のパフォーマンスと最大持続可能な追跡のパフォーマンスを測定する BizTalk ソリューションをテストすることがきわめて重要が。  
   
- 維持可能な最大のパフォーマンスと、BizTalk ソリューションのパフォーマンスを維持できる最大の追跡を決定した後、BizTalk ソリューションでボトルネックを解消する特定の手順があります。 詳細については、次を参照してください。、 [BizTalk Server 2009 パフォーマンス ガイド](http://go.microsoft.com/fwlink/?LinkID=150492)(http://go.microsoft.com/fwlink/?LinkID=150492)します。  
+ 維持可能な最大のパフォーマンスと、BizTalk ソリューションのパフォーマンスを維持できる最大の追跡を決定した後、BizTalk ソリューションでボトルネックを解消する特定の手順があります。 詳細については、、 [BizTalk Server 2009 パフォーマンス ガイド](http://go.microsoft.com/fwlink/?LinkID=150492)(http://go.microsoft.com/fwlink/?LinkID=150492)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server 層の計画](../technical-guides/planning-the-biztalk-server-tier.md)

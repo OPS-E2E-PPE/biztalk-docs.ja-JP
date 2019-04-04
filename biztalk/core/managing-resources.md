@@ -44,7 +44,7 @@ ms.locfileid: "37015115"
 -   仮想ディレクトリ  
   
 > [!NOTE]
->  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、次を参照してください。、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+>  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
 > 
 > [!NOTE]
 >  どのような場合においても、同じ名前の複数のリソースを BizTalk Server グループに追加しないでください。 BizTalk Server 管理データベースの格納先 SQL Server の構成で、バイナリ照合順序が使用され、大文字と小文字の区別がサポートされている場合でも、同じ名前の複数のリソースを BizTalk Server グループに追加することはできません。  

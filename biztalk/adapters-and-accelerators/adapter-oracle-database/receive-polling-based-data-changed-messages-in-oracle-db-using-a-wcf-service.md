@@ -37,7 +37,7 @@ ms.locfileid: "37012603"
   このセクションのトピックでは、情報および Oracle データベースのテーブルおよび WCF サービス モデルでのビューにポーリングを実行するために手順を説明します。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、/SCOTT/ACCOUNTACTIVITY テーブルと/SCOTT/Package/ACCOUNT_PKG/PROCESS_ACTIVITY 関数を使用します。 これらの成果物を生成するスクリプトが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]サンプル。 サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
+ このトピックの例では、/SCOTT/ACCOUNTACTIVITY テーブルと/SCOTT/Package/ACCOUNT_PKG/PROCESS_ACTIVITY 関数を使用します。 これらの成果物を生成するスクリプトが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]サンプル。 サンプルの詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
   
 ## <a name="configuring-polling-in-the-wcf-service-model"></a>WCF サービス モデルでのポーリングの構成  
  構成する、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースのテーブルおよびビューのバインドのプロパティとオプションの接続プロパティ (パラメーター) を設定してポーリングを実行します。 これらのプロパティの一部は必須ですが、およびデザイン時と実行時の両方でいくつかに影響を与える設定する必要があります。  
@@ -56,7 +56,7 @@ ms.locfileid: "37012603"
   
 - **PollingId**接続 URI の文字列パラメーターをクエリします。 POLLINGSTMT 操作の名前空間を変更する場合は、デザイン時と実行時の両方では、この接続プロパティを設定する必要があります。  
   
-  バインドのプロパティとポーリングを構成するために使用する接続パラメーターの詳細については、次を参照してください。 [Oracle データベース アダプターのポーリングに基づいたデータ変更メッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)します。  
+  バインドのプロパティとポーリングを構成するために使用する接続パラメーターの詳細については、[Oracle データベース アダプターのポーリングに基づいたデータ変更メッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)を参照してください。  
   
 ## <a name="the-wcf-service-contract-and-class"></a>WCF サービス コントラクトとクラス  
  いずれかを使用する、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を作成する WCF サービス コントラクト (インターフェイス) と POLLINGSTMT 操作のクラスをサポートします。  
@@ -149,7 +149,7 @@ namespace OracleDBBindingNamespace {
   
 #### <a name="to-receive-polling-data-from-the-oracle-database-adapter"></a>Oracle データベース アダプターのポーリングのデータを受信するには  
   
-1. 使用して、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]または WCF を生成する svcutil.exe サービス コントラクト (インターフェイス) と POLLINGSTMT 操作用にヘルパー クラス。 詳細については、次を参照してください。 [WCF クライアントまたは Oracle データベース ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)します。 設定する必要がありますには、少なくとも、 **PollingStatement**アダプターに接続するときにプロパティをバインドします。 必要に応じて、接続 URI で PollingId パラメーターを指定することができます。 使用する場合、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]構成のために必要な設定のすべてのバインディング パラメーター。 これは、生成された構成ファイルで設定は正しくことを保証します。  
+1. 使用して、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]または WCF を生成する svcutil.exe サービス コントラクト (インターフェイス) と POLLINGSTMT 操作用にヘルパー クラス。 詳細については、[WCF クライアントまたは Oracle データベース ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)を参照してください。 設定する必要がありますには、少なくとも、 **PollingStatement**アダプターに接続するときにプロパティをバインドします。 必要に応じて、接続 URI で PollingId パラメーターを指定することができます。 使用する場合、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]構成のために必要な設定のすべてのバインディング パラメーター。 これは、生成された構成ファイルで設定は正しくことを保証します。  
   
 2. 手順 1. で生成されたインターフェイスとヘルパー クラスからの WCF サービスを実装します。 このクラスの POLLINGSTMT メソッドは、POLLINGSTMT 操作から受信したデータの処理エラーが発生した場合、ポーリング トランザクションを中止する例外をスローできます。それ以外の場合、メソッドは何も返しません。 次のように、WCF サービス クラスを属性する必要があります。  
   

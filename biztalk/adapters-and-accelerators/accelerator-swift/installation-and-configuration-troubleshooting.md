@@ -136,7 +136,7 @@ ms.locfileid: "36967179"
   
 4. もう一度 A4SWIFT の最新バージョンにアップグレードします。 今度は、アップグレードを使用して、サイド バイ サイド インストールは作成されません。  
   
-5. BizTalk 展開ユーティリティを使用して、手動で、Microsoft を展開解除します。Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll、A4SWIFT インストールの場所の [アセンブリ] フォルダーから展開します。 このツールの詳細については、次を参照してください。 [BRE 配置ユーティリティ](../../adapters-and-accelerators/accelerator-swift/bre-deployment-utility.md)します。  
+5. BizTalk 展開ユーティリティを使用して、手動で、Microsoft を展開解除します。Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll、A4SWIFT インストールの場所の [アセンブリ] フォルダーから展開します。 このツールの詳細については、[BRE 配置ユーティリティ](../../adapters-and-accelerators/accelerator-swift/bre-deployment-utility.md)を参照してください。  
   
 ## <a name="the-uninstall-or-upgrade-process-may-not-complete-correctly-if-you-do-not-restart-when-prompted"></a>入力を求められたら再起動しない場合、アンインストールまたはアップグレード プロセスが正常に完了しない可能性があります。  
   

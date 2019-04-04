@@ -38,4 +38,4 @@ ms.locfileid: "37015131"
   
 7. C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Test\Filedrop\Out 参照\\%MessageID%.xml 出力メッセージを確認します。  
   
-   メッセージ強化サンプルのしくみについては、次を参照してください。 [、メッセージ強化サンプルのしくみ](../esb-toolkit/how-the-message-enrichment-sample-works.md)します。
+   メッセージ強化サンプルのしくみについては、[、メッセージ強化サンプルのしくみ](../esb-toolkit/how-the-message-enrichment-sample-works.md)を参照してください。

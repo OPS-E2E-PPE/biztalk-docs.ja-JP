@@ -101,7 +101,7 @@ ms.locfileid: "36980027"
 |     SendIdoc      |                      [MESSAGE_VERSION]/Idoc SendIdoc                       |           http://Microsoft.LobServices.Sap/2007/03/Idoc/SendIdoc            |
 | SendIdoc 応答 |                  [MESSAGE_VERSION]/Idoc/SendIdoc/応答                  |       http://Microsoft.LobServices.Sap/2007/03/Idoc/SendIdoc/response       |
 
- [MESSAGE_VERSION] = メッセージ バージョン文字列。たとえば、http://Microsoft.LobServices.Sap/2007/03します。  
+ [MESSAGE_VERSION] = メッセージ バージョン文字列。たとえば、 http://Microsoft.LobServices.Sap/2007/03します。  
 
  [バージョン] = IDOC のリリース バージョン (2 または 3)。  
 
@@ -179,7 +179,7 @@ ms.locfileid: "36980027"
 
  [SEG_HEADER_FIELD] = 各セグメントには、標準的な一連のヘッダー フィールドによって、セグメント データで構成されるセグメント ヘッダーを取得します。 セグメントのデータは、すべてのセグメント フィールドとデータで構成されます。 このノードが表すセグメント ヘッダー フィールド。たとえば、SEGNAM、MANDT、および DOCNUM にします。  
 
- TRFC 操作の詳細形式の詳細については、次を参照してください。 [tRFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-trfc-operations.md)します。  
+ TRFC 操作の詳細形式の詳細については、[tRFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-trfc-operations.md)を参照してください。  
 
 ### <a name="message-actions-for-idoc-receive-operations"></a>メッセージのアクションの IDOC の受信操作  
  次の表では、受信と ReceiveIdoc の操作のためのメッセージのアクションを示します。  

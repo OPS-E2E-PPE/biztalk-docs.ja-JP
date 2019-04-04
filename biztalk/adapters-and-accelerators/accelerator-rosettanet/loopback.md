@@ -85,7 +85,7 @@ Loopback [/enable|/disable <home_organization>] [/mirror|/unmirror <agreement_na
 > [!IMPORTANT]
 >  このループバック シナリオでは、署名付きアグリーメントはサポートされません。 このシナリオでは、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] で署名証明書を使用して設定できるパーティは 1 つだけなので、署名付きメッセージは検証に失敗します。 ホーム組織と取引先組織が同じ署名証明書を使用することはできません。 これは、署名証明書を使用してパーティを一意に識別することに関連した [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] の制約です。 そのため、2 つの BizTalk パーティが同じ証明書を共有することはできません。  
 
- ループバック実装の詳細については、次を参照してください。 [Loopback チュートリアル](../../adapters-and-accelerators/accelerator-rosettanet/loopback-tutorial.md)します。  
+ ループバック実装の詳細については、[Loopback チュートリアル](../../adapters-and-accelerators/accelerator-rosettanet/loopback-tutorial.md)を参照してください。  
 
 ## <a name="using-loopback-with-0a1-agreements"></a>ループバックと 0A1 アグリーメントの使用  
  0A1 (障害通知) メッセージを生成するようにループバック シナリオを設定できます。 これを行うには、要求アクション メッセージ アグリーメント、開始側 0A1 アグリーメント、および応答側 0A1 アグリーメントをホーム組織用に作成する必要があります。 次に、これらの各アグリーメントに対してループバック ユーティリティを実行し、応答アクション メッセージ アグリーメント、開始側 0A1 アグリーメント、および応答側 0A1 アグリーメントを取引先組織用に作成する必要があります。 これが必要なのは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管理コンソールを使用してこれらのアグリーメントを作成できないからです。  

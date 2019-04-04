@@ -37,7 +37,7 @@ ms.locfileid: "36979611"
   
 - **オーバー ロードされた関数とプロシージャ**パッケージでの操作として表示されます。 各オーバー ロード関数またはプロシージャがオーバー ロードを識別する名前の末尾に文字列を表示します。 この文字列は、シーケンス"overload1"、"overload2"、"overload3"の一部です。  
   
-- **REF CURSOR 型**IN はサポートされておりで OUT パラメーターをプロシージャと関数、および関数の戻り値。 詳細については、次を参照してください。[関数および REF CURSOR パラメーターを使用したプロシージャに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-ref-cursor-parameters1.md)します。  
+- **REF CURSOR 型**IN はサポートされておりで OUT パラメーターをプロシージャと関数、および関数の戻り値。 詳細については、[関数および REF CURSOR パラメーターを使用したプロシージャに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-ref-cursor-parameters1.md)を参照してください。  
   
 - **レコードの種類**IN はサポートされておりで OUT パラメーターをプロシージャと関数、および関数の戻り値。 単純および複雑な両方の (入れ子になった) レコードの種類がサポートされています。 [RECORD 型を使用した関数およびプロシージャに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-record-types1.md)  
   

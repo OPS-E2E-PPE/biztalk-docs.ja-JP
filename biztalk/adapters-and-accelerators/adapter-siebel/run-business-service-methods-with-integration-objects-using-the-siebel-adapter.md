@@ -29,7 +29,7 @@ ms.locfileid: "36996915"
  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]文字列としてのこれらの階層型を公開します。 これらの文字列値は、基本的に XML の CDATA セクション内にカプセル化された XML 文字列です。 XML 文字列は、アダプターのクライアントが送信または受信しようとした統合オブジェクトの XML スキーマと互換性が。  
   
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル SiebelAdapterIntegrationObjects、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[の Siebel アダプターのサンプル](../../adapters-and-accelerators/adapter-siebel/samples-for-the-siebel-adapter.md)します。
+ サンプル SiebelAdapterIntegrationObjects、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[の Siebel アダプターのサンプル](../../adapters-and-accelerators/adapter-siebel/samples-for-the-siebel-adapter.md)を参照してください。
   
 ## <a name="creating-an-orchestration-to-invoke-business-service-methods-with-integration-objects"></a>統合オブジェクトでのビジネス サービス メソッドを呼び出すオーケストレーションを作成します。  
  」の説明に従って統合オブジェクトのパラメーターを受け取るビジネス サービス メソッドを呼び出すオーケストレーションの作成は他のビジネス サービスを呼び出すオーケストレーションに似ています[呼び出すビジネス サービス メソッドを使用して BizTalk Server とSiebel アダプター](../../adapters-and-accelerators/adapter-siebel/invoke-business-service-methods-using-biztalk-server-and-the-siebel-adapter.md)します。  

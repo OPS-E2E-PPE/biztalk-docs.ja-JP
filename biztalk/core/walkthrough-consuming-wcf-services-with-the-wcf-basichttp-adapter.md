@@ -22,7 +22,7 @@ ms.locfileid: "36981427"
 # <a name="walkthrough-consuming-wcf-services-with-the-wcf-basichttp-adapter"></a>チュートリアル: Wcf-basichttp アダプターを使用した WCF サービスの使用
   
 > [!NOTE]
->  アダプターの詳細については、次を参照してください。 [BizTalk Server のアダプター](../core/adapters-in-biztalk-server.md)します。  
+>  アダプターの詳細については、[BizTalk Server のアダプター](../core/adapters-in-biztalk-server.md)を参照してください。  
   
 ## <a name="introduction"></a>概要
   
@@ -178,7 +178,7 @@ ms.locfileid: "36981427"
        このフィールドは、送信 SOAP HTTP 要求メッセージの目的を示します。 ここでは、Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BasicHttpWcfServiceConsuming 名前空間の IOrderProcess インターフェイスで送信操作を呼び出します。  
   
       > [!NOTE]
-      >  バインド ファイルで、 **BizTalk WCF サービス使用ウィザード**アクション マッピング形式の使用を生成、 **StaticAction**プロパティ。 設定する必要があります、WCF 送信アダプターの WCF サービスにメッセージを送信するコンテンツ ベース ルーティングを使用する場合、 **BTS します。操作**コンテンツ ベースのルーティングに使用するフィールドとアクション マッピング形式のパイプライン コンポーネントのプロパティ。 または、コンテンツ ベースのルーティングに対しシングル アクション形式も使用できます。 このチュートリアルでは、シングル アクション形式を使用します。 シングル アクション形式とアクション マッピング形式の詳細については、次を参照してください。、 **Wcf-basichttp トランスポートのプロパティ ダイアログ ボックス、送信、一般的な**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。  
+      >  バインド ファイルで、 **BizTalk WCF サービス使用ウィザード**アクション マッピング形式の使用を生成、 **StaticAction**プロパティ。 設定する必要があります、WCF 送信アダプターの WCF サービスにメッセージを送信するコンテンツ ベース ルーティングを使用する場合、 **BTS します。操作**コンテンツ ベースのルーティングに使用するフィールドとアクション マッピング形式のパイプライン コンポーネントのプロパティ。 または、コンテンツ ベースのルーティングに対しシングル アクション形式も使用できます。 このチュートリアルでは、シングル アクション形式を使用します。 シングル アクション形式とアクション マッピング形式の詳細については、、 **Wcf-basichttp トランスポートのプロパティ ダイアログ ボックス、送信、一般的な**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。  
   
    9. クリックして**OK**に戻るには 2 回、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   

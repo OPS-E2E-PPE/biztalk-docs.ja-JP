@@ -40,7 +40,7 @@ BAM 開発者は、アクティビティ、Continuation、参照など重要な 
   
 - イベント項目が関連付けられている一意 ID が変更された場合の処理方法  
   
-  継続タスクとその使用方法の詳細については、次を参照してください。 [Continuation ノードと ContinuationID ノード](../core/continuation-and-continuationid-nodes.md)します。  
+  継続タスクとその使用方法の詳細については、[Continuation ノードと ContinuationID ノード](../core/continuation-and-continuationid-nodes.md)を参照してください。  
   
 ## <a name="what-is-a-reference"></a>参照について  
  参照 (関連アクティビティとも呼びます) は、アクティビティと他の項目間の関係を指定します。 関連付けることができる項目には、別のアクティビティやドキュメントの場所などがあります。  

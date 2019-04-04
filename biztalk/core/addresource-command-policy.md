@@ -22,7 +22,7 @@ ms.locfileid: "36993659"
 # <a name="addresource-command-policy"></a>AddResource コマンド: ポリシー
 使用するポリシーを BizTalk アプリケーションを追加する、 **AddResource**コマンドを指定**System.BizTalk:Rules**型パラメーター。 このコマンドを実行すると、該当するポリシーが BizTalk 管理データベースに追加されます。 ポリシーは、BizTalk Server 管理コンソール (追加先アプリケーションのポリシー フォルダー) にも表示されます。 さらにのポリシーを使用する場合に表示される、 [ListApp コマンド](../core/listapp-command.md)します。  
   
- このコマンドが正常に機能するためには、ルール エンジン データベースにポリシーが存在していることが必要です。 ルール エンジン データベースにポリシーをインポートする方法の詳細については、次を参照してください。[ポリシーをインポートする方法](../core/how-to-import-a-policy.md)します。 AddResource コマンドを使ってポリシーを追加した場合、ポリシーで使用されているボキャブラリもすべて自動的に追加されます。  
+ このコマンドが正常に機能するためには、ルール エンジン データベースにポリシーが存在していることが必要です。 ルール エンジン データベースにポリシーをインポートする方法の詳細については、[ポリシーをインポートする方法](../core/how-to-import-a-policy.md)を参照してください。 AddResource コマンドを使ってポリシーを追加した場合、ポリシーで使用されているボキャブラリもすべて自動的に追加されます。  
   
 ## <a name="usage"></a>使用方法  
  **BTSTask AddResource** [**/applicationname は:**<em>値</em>] **/Type:System.BizTalk:Rules** **[/overwrite]** **/Name:**<em>値</em>**/Version:**<em>値</em>[**/Server:**<em>値</em>] [**/Database:**<em>値</em>]  

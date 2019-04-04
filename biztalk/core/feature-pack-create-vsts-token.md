@@ -65,7 +65,7 @@ PAT の詳細については[VSTS と TFS の個人用アクセス トークン�
 
 ## <a name="install-the-build-agent"></a>ビルド エージェントをインストールします。
 
-ビルド エージェントは、BizTalk 開発用コンピューターにインストールされます。 配置グループを使用する場合、ビルド エージェントを展開するすべての BizTalk server にインストールされます。 次の手順では、1 台のコンピューターにビルド エージェントをインストールする方法を説明します。 配置グループの使用に関する詳細については、次を参照してください。[配置グループ](https://docs.microsoft.com/vsts/build-release/concepts/definitions/release/deployment-groups/index)します。
+ビルド エージェントは、BizTalk 開発用コンピューターにインストールされます。 配置グループを使用する場合、ビルド エージェントを展開するすべての BizTalk server にインストールされます。 次の手順では、1 台のコンピューターにビルド エージェントをインストールする方法を説明します。 配置グループの使用に関する詳細については、[配置グループ](https://docs.microsoft.com/vsts/build-release/concepts/definitions/release/deployment-groups/index)を参照してください。
 
 1. VSTS アカウントとは何か、プロジェクトを開くなどの *https://YourAccountName.visualstudio.com/MyFirstProject* します。 設定アイコンを選択し、選択**エージェント キュー**:  
 

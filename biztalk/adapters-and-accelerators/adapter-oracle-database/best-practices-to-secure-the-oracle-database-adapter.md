@@ -41,7 +41,7 @@ ms.locfileid: "36997315"
   
 - [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースへの接続中に Windows 認証を使用してメタデータを生成し、使用するか、操作を実行することもできます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]または[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 Windows 認証を使用する前に記載された手順を実行する必要があります[Oracle データベースを使用して Windows 認証に接続する](../../adapters-and-accelerators/adapter-oracle-database/connect-to-the-oracle-database-using-windows-authentication.md)します。  
   
-  詳細については、次を参照してください。 [Oracle データベースとアダプター間のセキュリティ](../../adapters-and-accelerators/adapter-oracle-database/security-between-the-oracle-database-and-the-adapter.md)します。  
+  詳細については、[Oracle データベースとアダプター間のセキュリティ](../../adapters-and-accelerators/adapter-oracle-database/security-between-the-oracle-database-and-the-adapter.md)を参照してください。  
   
 ## <a name="security-best-practices-for-consuming-the-oracle-database-adapter-with-biztalk-server"></a>BizTalk Server と Oracle データベース アダプターを使用するためのセキュリティのベスト プラクティス  
   
@@ -55,7 +55,7 @@ ms.locfileid: "36997315"
   
 - [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]メタデータを生成してから操作を実行する Oracle データベースへの接続中に Windows 認証を使用することもできます[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 Windows 認証を使用する前に記載された手順を実行する必要があります[Oracle データベースを使用して Windows 認証に接続する](../../adapters-and-accelerators/adapter-oracle-database/connect-to-the-oracle-database-using-windows-authentication.md)します。  
   
-  詳細については、次を参照してください。 [Oracle データベース アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-oracle-database/security-with-the-oracle-database-adapter-and-biztalk-server.md)します。
+  詳細については、[Oracle データベース アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-oracle-database/security-with-the-oracle-database-adapter-and-biztalk-server.md)を参照してください。
   
 ## <a name="security-best-practices-for-consuming-the-oracle-database-adapter-with-programming-solutions"></a>プログラミング ソリューションと Oracle データベース アダプターを使用するためのセキュリティのベスト プラクティス  
   
@@ -97,7 +97,7 @@ ms.locfileid: "36997315"
   
 - 場合[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]メッセージ ログが有効になっていると`logMessagesAtServiceLevel`は`true`、アダプター クライアントの間で交換されるメッセージのメッセージ ヘッダー (ただし、メッセージ本文ではありません)、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]ログに記録されます。 メッセージのアクションがメッセージ ヘッダーにあるため、操作で、クライアントが呼び出すことが表示されます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 場合`logEntireMessage`も`true`、メッセージ本文がログに記録されます。 データベースの機密情報を表示このことができます。  
   
-  診断トレースを有効にすると、セキュリティを向上させる詳細については、次を参照してください。[セキュリティに関する注意事項とトレース用の役立つヒント](https://msdn.microsoft.com/library/ms733053.aspx)します。 メッセージのログ記録を有効にすると、セキュリティを向上させる詳細については、次を参照してください。[メッセージ ログのセキュリティ関連事項](https://msdn.microsoft.com/library/ms730318.aspx)します。 
+  診断トレースを有効にすると、セキュリティを向上させる詳細については、[セキュリティに関する注意事項とトレース用の役立つヒント](https://msdn.microsoft.com/library/ms733053.aspx)を参照してください。 メッセージのログ記録を有効にすると、セキュリティを向上させる詳細については、[メッセージ ログのセキュリティ関連事項](https://msdn.microsoft.com/library/ms730318.aspx)を参照してください。 
   
 ## <a name="see-also"></a>参照  
 [Oracle データベース アプリケーションのセキュリティ保護](../../adapters-and-accelerators/adapter-oracle-database/secure-your-oracle-database-applications.md)

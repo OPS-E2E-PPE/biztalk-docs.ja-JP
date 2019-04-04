@@ -28,9 +28,9 @@ ms.locfileid: "36986555"
   
  BizTalk Server をインストールすると、BizTalk Application 1 という名前の既定のアプリケーションが BizTalk 管理データベースに作成されて、BizTalk Server 管理コンソールに表示されます。 BizTalk Server を以前のバージョンからアップグレードすると、アイテムが自動的にこのアプリケーション内に置かれます。 また、BTSTask でアプリケーションを指定せずに Windows インストーラー (.msi) ファイルをインポートすると、.msi ファイルが既定のアプリケーションにインポートされます。  
   
- 既定のアプリケーションは削除できませんが、どのアプリケーションを既定とするかは変更できます。 既定のアプリケーションを変更したら、必要に応じて、以前に既定であったアプリケーションを削除できます。 手順については、次を参照してください。 [BizTalk グループから BizTalk アプリケーションを削除する方法](../core/how-to-delete-a-biztalk-application-from-the-biztalk-group.md)します。  
+ 既定のアプリケーションは削除できませんが、どのアプリケーションを既定とするかは変更できます。 既定のアプリケーションを変更したら、必要に応じて、以前に既定であったアプリケーションを削除できます。 手順については、[BizTalk グループから BizTalk アプリケーションを削除する方法](../core/how-to-delete-a-biztalk-application-from-the-biztalk-group.md)を参照してください。  
   
- 既定のアプリケーションを変更しても、アイテムはすべて、以前に既定であったアプリケーション内に残ります。 必要に応じて、アプリケーションからアイテムを明示的に移動できます。 手順については、次を参照してください。[を別のアプリケーション アイテムの移動方法](../core/how-to-move-an-artifact-to-a-different-application.md)します。  
+ 既定のアプリケーションを変更しても、アイテムはすべて、以前に既定であったアプリケーション内に残ります。 必要に応じて、アプリケーションからアイテムを明示的に移動できます。 手順については、[を別のアプリケーション アイテムの移動方法](../core/how-to-move-an-artifact-to-a-different-application.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

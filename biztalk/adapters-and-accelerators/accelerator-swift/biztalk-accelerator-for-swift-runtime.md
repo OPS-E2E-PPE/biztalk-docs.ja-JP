@@ -31,7 +31,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36966123"
 ---
 # <a name="biztalk-accelerator-for-swift-runtime"></a>BizTalk Accelerator for SWIFT ランタイム
-Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 2 つの形式で機能を提供します。 開発資料とランタイム コンポーネントです。 開発の資料には、XSD スキーマ、検証ルールとポリシー、およびサンプル コードが含まれます。 ランタイム コンポーネントには、カスタムの SWIFT 逆アセンブラー、カスタムの SWIFT アセンブラー、Message Repair および New Submission のオーケストレーション (MrsrRepair.odx)、および FIN Response Reconciliation のオーケストレーション (FrrMain.odx) が含まれます。 Message Repair and New Submission の詳細については、次を参照してください。 [Message Repair and New Submission](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission.md)します。 FRR の詳細については、次を参照してください。 [FIN Response Reconciliation](../../adapters-and-accelerators/accelerator-swift/fin-response-reconciliation.md)します。  
+Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 2 つの形式で機能を提供します。 開発資料とランタイム コンポーネントです。 開発の資料には、XSD スキーマ、検証ルールとポリシー、およびサンプル コードが含まれます。 ランタイム コンポーネントには、カスタムの SWIFT 逆アセンブラー、カスタムの SWIFT アセンブラー、Message Repair および New Submission のオーケストレーション (MrsrRepair.odx)、および FIN Response Reconciliation のオーケストレーション (FrrMain.odx) が含まれます。 Message Repair and New Submission の詳細については、[Message Repair and New Submission](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission.md)を参照してください。 FRR の詳細については、[FIN Response Reconciliation](../../adapters-and-accelerators/accelerator-swift/fin-response-reconciliation.md)を参照してください。  
 
  次の図の高レベルのシステム アーキテクチャを示しています。[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]します。  
 

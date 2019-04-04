@@ -33,7 +33,7 @@ ms.locfileid: "37002379"
   
 - TRFC を呼び出すには、(コミット)、SAP システムの tRFC を確認する RfcConfirmTransID 操作を呼び出す必要があります。 この操作は、TRFC ノードのすぐ下に表示されます。  
   
-  TRFC 操作と RfcConfirmTransID 操作の詳細については、次を参照してください。 [SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)します。  
+  TRFC 操作と RfcConfirmTransID 操作の詳細については、[SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)を参照してください。  
   
   次のセクションを使用して、SAP システムの Trfc を呼び出す方法を説明、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
@@ -85,9 +85,9 @@ public void RfcConfirmTransID(System.Guid TransactionalRfcOperationIdentifier) {
   
 #### <a name="to-create-a-trfc-client-application"></a>TRFC クライアント アプリケーションを作成するには  
   
-1. 生成、 **TrfcClient**クラス。 使用して、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] 、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を生成するか、 **TrfcClient**を操作する Rfc を対象とするクラス。 WCF クライアントを生成する方法の詳細については、次を参照してください。 [WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)します。 RfcConfirmTransID 操作に含まれるように、 **TrfcClient**クラス。  
+1. 生成、 **TrfcClient**クラス。 使用して、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] 、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を生成するか、 **TrfcClient**を操作する Rfc を対象とするクラス。 WCF クライアントを生成する方法の詳細については、[WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)を参照してください。 RfcConfirmTransID 操作に含まれるように、 **TrfcClient**クラス。  
   
-2. インスタンスを作成、 **TrfcClient**クラスは、手順 1. で生成され、クライアントのバインディングを指定します。 クライアントのバインディングを指定するには、バインディングとエンドポイント アドレスを指定する必要があります、 **TrfcClient**が使用されます。 コードで強制的に、または構成で宣言的に、これを行うことができます。 クライアントのバインディングを指定する方法の詳細については、次を参照してください。 [SAP システムのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)します。 次のコードを初期化します、 **TrfcClient**から構成し、SAP システムの資格情報を設定します。  
+2. インスタンスを作成、 **TrfcClient**クラスは、手順 1. で生成され、クライアントのバインディングを指定します。 クライアントのバインディングを指定するには、バインディングとエンドポイント アドレスを指定する必要があります、 **TrfcClient**が使用されます。 コードで強制的に、または構成で宣言的に、これを行うことができます。 クライアントのバインディングを指定する方法の詳細については、[SAP システムのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)を参照してください。 次のコードを初期化します、 **TrfcClient**から構成し、SAP システムの資格情報を設定します。  
   
    ```  
    TrfcClient trfcClient = new TrfcClient("SAPBinding_Rfc");  

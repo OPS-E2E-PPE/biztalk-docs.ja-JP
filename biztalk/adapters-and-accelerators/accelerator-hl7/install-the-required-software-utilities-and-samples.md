@@ -26,17 +26,17 @@ ms.locfileid: "36965907"
   
 - **MllpSend ツール**  
   
-   このコマンド ライン ユーティリティは、メッセージを送信経由で、最小下位レイヤー プロトコル (MLLP) プロトコルを MLLP の受信場所。 これを使用するには、チュートリアルの結果をテストします。 詳細については、次を参照してください。 [MllpSend ツール](../../adapters-and-accelerators/accelerator-hl7/mllpsend-tool.md)します。  
+   このコマンド ライン ユーティリティは、メッセージを送信経由で、最小下位レイヤー プロトコル (MLLP) プロトコルを MLLP の受信場所。 これを使用するには、チュートリアルの結果をテストします。 詳細については、[MllpSend ツール](../../adapters-and-accelerators/accelerator-hl7/mllpsend-tool.md)を参照してください。  
   
 - **MllpPReceive ツール**  
   
-   このコマンド ライン ユーティリティでは、受信場所のリスナーとして機能、MLLP プロトコル経由でメッセージを受信します。 これを使用して、メッセージおよび受信した受信確認を表示する、チュートリアルの結果をテストします。 詳細については、次を参照してください。 [MllpReceive ツール](../../adapters-and-accelerators/accelerator-hl7/mllpreceive-tool.md)します。  
+   このコマンド ライン ユーティリティでは、受信場所のリスナーとして機能、MLLP プロトコル経由でメッセージを受信します。 これを使用して、メッセージおよび受信した受信確認を表示する、チュートリアルの結果をテストします。 詳細については、[MllpReceive ツール](../../adapters-and-accelerators/accelerator-hl7/mllpreceive-tool.md)を参照してください。  
   
 - **サンプル アプリケーションに同意 ACK.txt**  
   
    このサンプル ファイルのテキストを格納する、アプリケーションの受信確認メッセージを受け入れます。 サンプルは、受信、メッセージを表示し、サンプル ファイルで、確認を返信 MllpReceive ツールと連携します。  
   
-  BTAHL7 のカスタム インストール プロセスを使用して 2 つのツールとサンプル ファイルをインストールする必要があります。 一般的なインストール プロセスでは、これらのツールはインストールされません。 これらのツールをインストールするで、BTAHL7 のカスタム インストールを実行、**カスタム セットアップ**画面で、 **MLLP テスト ツール**から、**アダプター**フォルダー、および選択**テスト インスタンス**から、**成果物**フォルダー。 詳細については、次を参照してください。 [BizTalk Accelerator for HL7 のインストール](../../adapters-and-accelerators/accelerator-hl7/install-biztalk-accelerator-for-hl7.md)します。  
+  BTAHL7 のカスタム インストール プロセスを使用して 2 つのツールとサンプル ファイルをインストールする必要があります。 一般的なインストール プロセスでは、これらのツールはインストールされません。 これらのツールをインストールするで、BTAHL7 のカスタム インストールを実行、**カスタム セットアップ**画面で、 **MLLP テスト ツール**から、**アダプター**フォルダー、および選択**テスト インスタンス**から、**成果物**フォルダー。 詳細については、[BizTalk Accelerator for HL7 のインストール](../../adapters-and-accelerators/accelerator-hl7/install-biztalk-accelerator-for-hl7.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [バッチ処理のチュートリアルを使用するための準備](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-batching-tutorial.md)

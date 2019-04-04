@@ -35,7 +35,7 @@ ms.locfileid: "36984987"
   
 - 各ステージの実行モード  
   
-  パイプライン テンプレートのポリシー ファイルに格納されます *\<BizTalk Server のインストール ディレクトリ\>* \Developer Tools\Pipeline ポリシー ファイルです。 ポリシー ファイルは編集しないでください。 パイプラインに変更を加える場合は、パイプライン テンプレートを開き、パイプライン デザイナーを使って編集します。 パイプライン デザイナーの使用に関する詳細については、次を参照してください。[パイプライン デザイナーを使用して](../core/using-pipeline-designer.md)します。  
+  パイプライン テンプレートのポリシー ファイルに格納されます *\<BizTalk Server のインストール ディレクトリ\>* \Developer Tools\Pipeline ポリシー ファイルです。 ポリシー ファイルは編集しないでください。 パイプラインに変更を加える場合は、パイプライン テンプレートを開き、パイプライン デザイナーを使って編集します。 パイプライン デザイナーの使用に関する詳細については、[パイプライン デザイナーを使用して](../core/using-pipeline-designer.md)を参照してください。  
   
   空のパイプライン テンプレート ファイルが格納されている *\<BizTalk Server のインストール ディレクトリ\>* \Developer Tools\BizTalkProjectItems、されが BTSReceivePipeline.btp および BTSTransmitPipeline.btp という名前. ファイル名の拡張子 .btp は、ファイルが BizTalk Server パイプラインは、パイプライン デザイナーで編集できることを示します。  
   

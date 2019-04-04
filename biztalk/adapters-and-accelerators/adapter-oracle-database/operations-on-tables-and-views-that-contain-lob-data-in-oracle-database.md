@@ -42,7 +42,7 @@ ms.locfileid: "36984299"
   
 - 各国語文字ラージ オブジェクト (NCLOB)  
   
-- バイナリ ファイル (BFILE)。 詳細については、次を参照してください。 [BFILE データ型を含むテーブルに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)します。  
+- バイナリ ファイル (BFILE)。 詳細については、[BFILE データ型を含むテーブルに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)を参照してください。  
   
   大量のデータを格納する Oracle データベースで LOB データ型の使用 (最大 4 GB)。 LOB 型では、入力と出力のストリーミングの両方をサポートします。  
   
@@ -51,14 +51,14 @@ ms.locfileid: "36984299"
 - **ReadLOB**します。 テーブルおよび BLOB、CLOB、NCLOB、BFILE、列を含むビューの ReadLOB 操作が表示されます。 ReadLOB オペレーションを使用してアダプターのクライアントは、データ ストリームとして LOB 列の値を読み取ることができます。 この操作は、LOB データ型の列名とフィルター文字列をパラメーターとして受け取ります。 アダプター クライアントは、フィルター文字列が正確に 1 つの一致する行をフェッチすることを確認する必要があります。 1 つ以上の一致する行がある場合、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]のみ (一致する) の最初の行の LOB 列が返されます。  
   
   > [!NOTE]
-  >  ReadLOB 操作は、WCF サービス モデル内の LOB データの入力ストリームをサポートするために設計されています。 WCF チャネル モデルから LOB データを読み取るテーブルの選択操作を使用する必要がありますまたは[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ソリューション。 ストリーミングの詳細については、次を参照してください。 [Oracle データベースで LOB データ型のストリーミング サポート](../../adapters-and-accelerators/adapter-oracle-database/streaming-support-for-lob-data-types-in-oracle-database.md)します。  
+  >  ReadLOB 操作は、WCF サービス モデル内の LOB データの入力ストリームをサポートするために設計されています。 WCF チャネル モデルから LOB データを読み取るテーブルの選択操作を使用する必要がありますまたは[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ソリューション。 ストリーミングの詳細については、[Oracle データベースで LOB データ型のストリーミング サポート](../../adapters-and-accelerators/adapter-oracle-database/streaming-support-for-lob-data-types-in-oracle-database.md)を参照してください。  
   
 - **UpdateLOB**します。 テーブルおよび BLOB、CLOB、NCLOB 列を含むビューの UpdateLOB 操作が表示されます。 UpdateLOB オペレーションを使用してアダプター クライアントは、LOB 列の値を更新できます。 この操作は LOB データ型の列名、フィルター文字列を受け取り、base64binary パラメーターとしてデータをエンコードします。 アダプター クライアントでは、フィルター文字列が 1 つだけ一致する行をフェッチを確認する必要があります。それ以外の場合、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] XmlReaderParsingException をスローします。  
   
   > [!NOTE]
   >  UpdateLOB 操作:  
   > 
-  > - BFILE データ型のサポートされていません。 アダプター クライアントは、更新操作を使用してもできます。 詳細については、次を参照してください。 [BFILE データ型を含むテーブルに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)します。  
+  > - BFILE データ型のサポートされていません。 アダプター クライアントは、更新操作を使用してもできます。 詳細については、[BFILE データ型を含むテーブルに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)を参照してください。  
   >   -   トランザクションの一部として実行する必要があります。 これは、確実に、 **UseAmbientTransaction**に設定するプロパティをバインドする必要があります**True**します。 については、 **UseAmbientTransaction**プロパティ、バインドを参照してください[for Oracle Database バインド プロパティを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)します。  
   
 > [!NOTE]

@@ -57,7 +57,7 @@ ms.locfileid: "37002067"
   
  この接続の URI を渡す方法を**MetadataExchangeClient**のどのクライアントを作成して、アダプターからのメタデータの取得に使用するオーバー ロードされたメソッドに依存します。  
   
- SAP 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
+ SAP 接続 URI の詳細については、[SAP システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)を参照してください。  
   
 ### <a name="binding-properties"></a>バインドのプロパティ  
  作成するときに、 **MetadataExchangeClient**を指定する必要があります、 **SAPBinding**します。  
@@ -72,7 +72,7 @@ ms.locfileid: "37002067"
   
 - **flatFileSegmentIndicator**  
   
-  これらのバインドのプロパティを呼び出す前に、アプリケーションに必要な値に設定されていることを確認する必要があります、 **GetMetadata**メソッドを**MetadataExchangeClient**します。 SAP アダプターのバインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
+  これらのバインドのプロパティを呼び出す前に、アプリケーションに必要な値に設定されていることを確認する必要があります、 **GetMetadata**メソッドを**MetadataExchangeClient**します。 SAP アダプターのバインド プロパティの詳細については、[mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
   
 ### <a name="example"></a>例  
  次の例では、 **MetadataExchangeClient** BAPI_TRANSACTION_COMMIT と BAPI_TRANSACTION_ROLLBACK の操作のためのサービスの説明 (WSDL ドキュメント) を作成します。  

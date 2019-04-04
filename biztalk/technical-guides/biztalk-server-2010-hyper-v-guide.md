@@ -52,7 +52,7 @@ ms.locfileid: "36975091"
 
   このガイドの情報は、hyper-v サーバーの統合、テストおよび開発のシナリオに直接関連します。 他の 2 つは、このガイドの対象外でした。  
 
-  HYPER-V の主要なシナリオの詳細については、次を参照してください。[仮想化と hyper-v の概要](http://go.microsoft.com/fwlink/?LinkID=202438)およびトピックでは、、 [Appendices1](../technical-guides/appendices1.md)このガイドの「します。  
+  HYPER-V の主要なシナリオの詳細については、[仮想化と hyper-v の概要](http://go.microsoft.com/fwlink/?LinkID=202438)およびトピックでは、、 [Appendices1](../technical-guides/appendices1.md)このガイドの「を参照してください。  
 
 ### <a name="who-should-read-this"></a>読者でしょうか。  
 

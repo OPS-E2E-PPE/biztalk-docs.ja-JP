@@ -32,7 +32,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36989971"
 ---
 # <a name="insert-update-delete-and-select-operations-on-oracle-tables-and-views"></a>挿入、更新、削除、および Oracle のテーブルとビューで操作を選択します。
-[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle データベースのテーブルおよびビューごとに標準の操作のセットを明らかになります。 これらの操作を使用すると、単純な SQL INSERT、UPDATE、SELECT を実行し、DELETE ステートメントの対象のテーブル (またはビュー) に WHERE 句で修飾できます。 これらの操作は、データ操作言語 (DML) 操作とも呼ばれます。 たとえば、SQL SELECT クエリの結合演算子を使用するより複雑な操作を実行するには、SQLEXECUTE 操作を使用できます。 SQLEXECUTE 操作の詳細については、次を参照してください。 [Oracle データベースで SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/sqlexecute-operation-in-oracle-database.md)します。  
+[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle データベースのテーブルおよびビューごとに標準の操作のセットを明らかになります。 これらの操作を使用すると、単純な SQL INSERT、UPDATE、SELECT を実行し、DELETE ステートメントの対象のテーブル (またはビュー) に WHERE 句で修飾できます。 これらの操作は、データ操作言語 (DML) 操作とも呼ばれます。 たとえば、SQL SELECT クエリの結合演算子を使用するより複雑な操作を実行するには、SQLEXECUTE 操作を使用できます。 SQLEXECUTE 操作の詳細については、[Oracle データベースで SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/sqlexecute-operation-in-oracle-database.md)を参照してください。  
   
  次の表は、DML 操作を[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]をサポートしています。  
   

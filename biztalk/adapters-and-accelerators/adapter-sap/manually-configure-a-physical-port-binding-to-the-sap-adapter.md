@@ -38,12 +38,12 @@ ms.locfileid: "36994611"
   |送信 - 受信|要求 - 応答|要求の送信と応答の受信をされます。|  
   |受信 - 送信|送信請求 - 応答送信アダプター|要求の受信と応答の送信を行います。|  
   
-   詳細については、次を参照してください。[送信ポートを作成](../../core/how-to-create-a-send-port2.md)、または[受信ポートを作成](../../core/how-to-create-a-receive-port.md)です。
+   詳細については、[送信ポートを作成](../../core/how-to-create-a-send-port2.md)、または[受信ポートを作成](../../core/how-to-create-a-receive-port.md)を参照してください。
   
 - かどうか、アダプターは、SAP システムにメッセージを送信または SAP システムからメッセージを受信します。 によって送信またはメッセージを受信するかどうかを作成、送信または受信ポートします。  
   
   > [!NOTE]
-  >  構成、送信またはによって作成されるバインド構成ファイルをインポートしてポートを受信することができますも、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータの生成の一部として。 このバインド ファイルを使用してポートを構成する方法の詳細については、次を参照してください。 [sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)します。
+  >  構成、送信またはによって作成されるバインド構成ファイルをインポートしてポートを受信することができますも、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータの生成の一部として。 このバインド ファイルを使用してポートを構成する方法の詳細については、[sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)を参照してください。
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

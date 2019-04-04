@@ -27,7 +27,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37000347"
 ---
 # <a name="managing-parties"></a>パーティの管理
-使用して、**パーティ**ノードを設定できます (パーティ) のビジネス パートナーまたは社内の部署 (ビジネス プロファイル) を[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションが連携します。 詳細については、次を参照してください。[取引先パートナー](../core/trading-partners-and-business-profiles.md)します。  
+使用して、**パーティ**ノードを設定できます (パーティ) のビジネス パートナーまたは社内の部署 (ビジネス プロファイル) を[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションが連携します。 詳細については、[取引先パートナー](../core/trading-partners-and-business-profiles.md)を参照してください。  
 
 パーティは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して作成および構成できます。 BizTalk Server にパーティを作成してから、オーケストレーションを使用して、パーティと連携する場合があります。 パーティは、ロールを通じてオーケストレーションと連携します。 たとえば、オーケストレーションに出荷ロールがあるとします。 出荷業者には、1 つ以上のパーティが関連付けられます。 オーケストレーションで最も低コストの商品の出荷業者を決定する際に、出荷業者ロールのパーティの価格を比較できます。  
 

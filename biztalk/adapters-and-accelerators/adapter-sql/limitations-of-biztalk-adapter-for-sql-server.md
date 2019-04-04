@@ -22,7 +22,7 @@ ms.locfileid: "36967387"
 # <a name="limitations-of-biztalk-adapter-for-sql-server"></a>SQL Server 用 BizTalk アダプターの制限事項
 次の制限事項を呼びます[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]:  
   
-- [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]は SQL Server データベースに作成されたシノニムをサポートしていません。 SQL Server でのシノニムについては、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=120111](http://go.microsoft.com/fwlink/?LinkId=120111)します。  
+- [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]は SQL Server データベースに作成されたシノニムをサポートしていません。 SQL Server でのシノニムについては、[ http://go.microsoft.com/fwlink/?LinkId=120111](http://go.microsoft.com/fwlink/?LinkId=120111)を参照してください。  
   
 - 実行するコンピューターのシステム時刻を変更するかどうか、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ホスト、時間が自動的に更新されないで、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ホスト。 受信ポートを使用する受信操作の不適切な動作になる可能性[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 この問題を回避するを実行するコンピューターのシステム時刻を変更した後、受信ポートを持つホスト インスタンスを再起動する必要があります。  
   

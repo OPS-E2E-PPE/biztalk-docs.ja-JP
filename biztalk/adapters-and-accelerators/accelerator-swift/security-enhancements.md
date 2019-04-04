@@ -24,6 +24,6 @@ ms.locfileid: "37000907"
 # <a name="security-enhancements"></a>セキュリティの強化
 この展開ガイドの各ステップは、Microsoft のセキュリティで保護された展開として設計されて[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]インストールします。  
   
- A4SWIFT のセキュリティの詳細については、次を参照してください。[セキュリティおよびプライバシーに関する基準](../../adapters-and-accelerators/accelerator-swift/security-and-privacy-standards.md)します。
+ A4SWIFT のセキュリティの詳細については、[セキュリティおよびプライバシーに関する基準](../../adapters-and-accelerators/accelerator-swift/security-and-privacy-standards.md)を参照してください。
   
  セキュリティ保護の詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]展開を参照してください[Planning for Security](../../core/planning-for-security.md)します。 [BizTalk Server の展開のセキュリティに関する推奨事項](../../core/security-recommendations-for-a-biztalk-server-deployment.md)特定のセキュリティに関する推奨事項が含まれています。

@@ -77,9 +77,9 @@ ms.locfileid: "36977507"
   
 -   Visual Studio 2012.  
   
--   BizTalk Server 2013。 手順については、次を参照してください。 [BizTalk Server 2013 のインストール](http://msdn.microsoft.com/library/jj248688\(v=bts.80\).aspx)します。  
+-   BizTalk Server 2013。 手順については、[BizTalk Server 2013 のインストール](http://msdn.microsoft.com/library/jj248688\(v=bts.80\).aspx)を参照してください。  
   
--   BizTalk Server ESB Toolkit です。 手順については、次を参照してください。[のインストールと構成、Microsoft BizTalk ESB Toolkit](http://msdn.microsoft.com/library/jj684558\(v=bts.80\).aspx)します。  
+-   BizTalk Server ESB Toolkit です。 手順については、[のインストールと構成、Microsoft BizTalk ESB Toolkit](http://msdn.microsoft.com/library/jj684558\(v=bts.80\).aspx)を参照してください。  
   
 -   Sentinet の BizTalk Server の拡張機能。 手順については、使用可能なドキュメントを参照します。 使用可能な製品のダウンロードの一環として[ここ](http://www.nevatech.com/download)。  
   

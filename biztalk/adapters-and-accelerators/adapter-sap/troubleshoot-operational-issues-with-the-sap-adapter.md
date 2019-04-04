@@ -48,7 +48,7 @@ ConfigurationErrorsException: Exception has been thrown by the target of an invo
   
 - 必要なアダプターのみをインストールするアダプターのカスタム インストールを実行することを確認します。  
   
-- 必要な LOB クライアント バージョンがインストールされているコンピューターにインストールされているかどうかを確認、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 [サポートされている LOB システム](https://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx)サポートされているバージョンを一覧表示します。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]も、SAP システムとのインターフェイスの特定の Dll が必要です。 アダプターに必要な Dll の詳細については、次を参照してください。 [Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)します。
+- 必要な LOB クライアント バージョンがインストールされているコンピューターにインストールされているかどうかを確認、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 [サポートされている LOB システム](https://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx)サポートされているバージョンを一覧表示します。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]も、SAP システムとのインターフェイスの特定の Dll が必要です。 アダプターに必要な Dll の詳細については、[Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)を参照してください。
   
 ##  <a name="BKMK_SAPDisplay"></a> SAP アダプターが BizTalk 管理コンソールではありません。  
  **問題**  
@@ -164,7 +164,7 @@ System.ArgumentNullException: Value cannot be null.
   
  **解決方法**  
   
- 送信ポートまたは BizTalk オーケストレーションでメッセージ コンテキスト プロパティとしては、SOAP アクションを指定します。 手順については、次を参照してください。 [SAP システムの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-sap/configure-the-soap-action-for-the-sap-system.md)します。 参照してください[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)各操作のアクションの一覧を表示します。  
+ 送信ポートまたは BizTalk オーケストレーションでメッセージ コンテキスト プロパティとしては、SOAP アクションを指定します。 手順については、[SAP システムの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-sap/configure-the-soap-action-for-the-sap-system.md)を参照してください。 参照してください[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)各操作のアクションの一覧を表示します。  
   
 ##  <a name="BKMK_SAPXmlParsing"></a> 指定したアクションで正しくない操作名により XmlReaderParsingException  
  **問題**  
@@ -218,7 +218,7 @@ ERROR       max no of 100 conversations exceeded
   
 - **変数値**: 任意の正の数値。 たとえば、SAP システムに 200 の接続を有効にするには、200 として値を指定します。  
   
-  環境変数を作成する方法の詳細については、次を参照してください。"で"Windows 2000 のシステム変数を作成する方法[ http://go.microsoft.com/fwlink/?LinkId=95020](http://go.microsoft.com/fwlink/?LinkId=95020)します。  
+  環境変数を作成する方法の詳細については、"で"Windows 2000 のシステム変数を作成する方法[ http://go.microsoft.com/fwlink/?LinkId=95020](http://go.microsoft.com/fwlink/?LinkId=95020)を参照してください。  
   
 ##  <a name="BKMK_SAPIDOCMetadata"></a> エラーを生成するか、Idoc のメタデータを取得します。  
  **問題**  
@@ -261,7 +261,7 @@ AdapterErrorMessage=Error returned by RfcCallReceiveEx while calling RFC: IDOCTY
   
 -   解放されていないセグメントの適切な修正プログラムを適用することで、SAP システムをアップグレードします。  
   
--   使用**SendIdoc**または**ReceiveIdoc**操作を送信し、それぞれに Idoc を受信します。 これらの操作の詳細については、次を参照してください。 [sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)します。  
+-   使用**SendIdoc**または**ReceiveIdoc**操作を送信し、それぞれに Idoc を受信します。 これらの操作の詳細については、[sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)を参照してください。  
   
 ##  <a name="BKMK_SAPIDOCSend"></a> Sap SAP FilePort で受信したフラット ファイル Idoc を送信するエラー  
  **問題**  
@@ -274,7 +274,7 @@ AdapterErrorMessage=Error returned by RfcCallReceiveEx while calling RFC: IDOCTY
   
  **解決方法**  
   
- フラット ファイル Idoc が SAP FilePort を使用して生成されたこのような使用、 **SendIdoc**操作代わりにします。 この操作の詳細については、次を参照してください。 [sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)します。  
+ フラット ファイル Idoc が SAP FilePort を使用して生成されたこのような使用、 **SendIdoc**操作代わりにします。 この操作の詳細については、[sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)を参照してください。  
   
 ##  <a name="BKMK_SAPRecIDOCCompat"></a> EnableBizTalkCompatibilityMode プロパティが設定されている場合、SAP の Idoc を受信中にエラーを true に  
  **問題**  

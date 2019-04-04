@@ -22,7 +22,7 @@ ms.locfileid: "37004003"
 # <a name="configure-the-application-context-using-message-context-properties-in-oracle-e-business-suite"></a>Oracle E-business Suite でのメッセージ コンテキスト プロパティを使用してアプリケーション コンテキストを構成します。
 使用して Oracle E-business Suite の成果物の操作を実行する、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーションのコンテキストを適切に設定する必要があります。 次の方法では、アプリケーションのコンテキストを設定できます。  
   
-- アダプターを公開するバインドのプロパティを指定します。 詳細については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
+- アダプターを公開するバインドのプロパティを指定します。 詳細については、[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)を参照してください。  
   
 - アダプターを公開するメッセージ コンテキスト プロパティを使用します。 メッセージ コンテキスト プロパティを使用して、アプリケーションのコンテキストを設定するときに、次を考慮する必要があります。  
   

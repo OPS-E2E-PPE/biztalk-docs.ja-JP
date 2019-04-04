@@ -57,9 +57,9 @@ ms.locfileid: "36977923"
 ## <a name="operations-in-the-scope-pane"></a>スコープ ペインでの操作  
  スコープ ペイン内のノードについて、次の操作を実行できます。  
   
-- パートナー送信ポートで使用する [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 送受信パイプラインを設定します。 詳細については、次を参照してください。[設定 BTARN 送信パイプラインと受信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/setting-btarn-send-and-receive-pipelines.md)します。  
+- パートナー送信ポートで使用する [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 送受信パイプラインを設定します。 詳細については、[設定 BTARN 送信パイプラインと受信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/setting-btarn-send-and-receive-pipelines.md)を参照してください。  
   
-- ビジネス アクティビティ監視 (BAM) の追跡を有効にします。 詳細については、次を参照してください。 [BAM の追跡を有効にする](../../adapters-and-accelerators/accelerator-rosettanet/enabling-bam-tracking.md)します。  
+- ビジネス アクティビティ監視 (BAM) の追跡を有効にします。 詳細については、[BAM の追跡を有効にする](../../adapters-and-accelerators/accelerator-rosettanet/enabling-bam-tracking.md)を参照してください。  
   
 - 新しくインポートした構成をスコープ ペインで、[構成] ノードを右クリックし、をクリックして、コンソールに表示されることを確認**更新**します。  
   
@@ -68,40 +68,40 @@ ms.locfileid: "36977923"
 ## <a name="process-configurations"></a>プロセス構成  
  プロセス構成設定について、次の操作を実行できます。  
   
--   右クリックして新しいプロセス構成を追加、**プロセス構成設定**スコープ ノードを指す**新規**、 をクリックし、**プロセス構成**します。 詳細については、次を参照してください。[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)します。  
+-   右クリックして新しいプロセス構成を追加、**プロセス構成設定**スコープ ノードを指す**新規**、 をクリックし、**プロセス構成**します。 詳細については、[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)を参照してください。  
   
--   結果ウィンドウでプロセス構成を右クリックし、をクリックして既存のプロセス構成を編集**プロパティ**、またはプロセス構成をダブルクリックします。 詳細については、次を参照してください。[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)します。  
+-   結果ウィンドウでプロセス構成を右クリックし、をクリックして既存のプロセス構成を編集**プロパティ**、またはプロセス構成をダブルクリックします。 詳細については、[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)を参照してください。  
   
 -   結果ウィンドウでプロセス構成を右クリックし、をクリックして既存のプロセス構成を削除**削除**します。  
   
--   新しい構成を基準とする結果ウィンドウで、構成を右クリックし、をクリックして、既存のプロセス構成に基づいて、新しいプロセス構成を作成**コピーから新しいプロセス構成**. これにより、新しい表示されます**プロセス構成のプロパティ**が設定された、既存の構成 ダイアログ ボックス。 新しい入力**コードを表示**、順にクリックします**OK**新しい構成を作成します。 詳細については、次を参照してください。 [PIP 仕様を使用して、プロセス構成を作成する](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md)します。  
+-   新しい構成を基準とする結果ウィンドウで、構成を右クリックし、をクリックして、既存のプロセス構成に基づいて、新しいプロセス構成を作成**コピーから新しいプロセス構成**. これにより、新しい表示されます**プロセス構成のプロパティ**が設定された、既存の構成 ダイアログ ボックス。 新しい入力**コードを表示**、順にクリックします**OK**新しい構成を作成します。 詳細については、[PIP 仕様を使用して、プロセス構成を作成する](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md)を参照してください。  
   
 -   結果ウィンドウで特定の構成を右クリックし、をクリックして、プロセス構成が関連付けられているすべての契約の一覧を表示する**を表示する契約**します。 フォーカスを移すこれは、**契約**スコープ ペインでノードし、結果ウィンドウで、関連付けられているアグリーメントを表示します。 右クリックし、アグリーメントの完全な一覧に戻すことができます、**契約**スコープ ウィンドウで、クリックすると、ノード**すべて表示**します。  
   
 ## <a name="home-organizations"></a>ホーム組織  
  ホーム組織について、次の操作を実行できます。  
   
--   右クリックして新しいホーム組織を追加、**ホーム組織**スコープ ノードを指す**新規**、 をクリックし、**ホーム組織**します。 詳細については、次を参照してください。[を作成または編集、ホーム組織](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)します。  
+-   右クリックして新しいホーム組織を追加、**ホーム組織**スコープ ノードを指す**新規**、 をクリックし、**ホーム組織**します。 詳細については、[を作成または編集、ホーム組織](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)を参照してください。  
   
--   結果ウィンドウでホーム組織を右クリックし、をクリックして既存のホーム組織を編集**プロパティ**、ホーム組織をダブルクリックして、します。 詳細については、次を参照してください。[を作成または編集、ホーム組織](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)します。  
+-   結果ウィンドウでホーム組織を右クリックし、をクリックして既存のホーム組織を編集**プロパティ**、ホーム組織をダブルクリックして、します。 詳細については、[を作成または編集、ホーム組織](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)を参照してください。  
   
 -   結果ウィンドウでホーム組織を右クリックし、をクリックして既存のホーム組織を削除**削除**します。  
   
 ## <a name="partners"></a>パートナー  
  パートナーについて、次の操作を実行できます。  
   
--   右クリックして新しいパートナーを追加、**パートナー**スコープ ノードを指す**新規**、 をクリックし、**パートナー**します。 詳細については、次を参照してください。[を作成または編集するパートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)します。  
+-   右クリックして新しいパートナーを追加、**パートナー**スコープ ノードを指す**新規**、 をクリックし、**パートナー**します。 詳細については、[を作成または編集するパートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)を参照してください。  
   
--   結果ウィンドウで、パートナーを右クリックし、をクリックして既存のパートナーを編集**プロパティ**、または、パートナーをダブルクリックします。 詳細については、次を参照してください。[を作成または編集するパートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)します。  
+-   結果ウィンドウで、パートナーを右クリックし、をクリックして既存のパートナーを編集**プロパティ**、または、パートナーをダブルクリックします。 詳細については、[を作成または編集するパートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)を参照してください。  
   
 -   結果ウィンドウで、パートナーを右クリックし、をクリックして既存のパートナーを削除**削除**します。  
   
 ## <a name="agreements"></a>契約  
  アグリーメントについて、次の操作を実行できます。  
   
--   右クリックして新しい契約を追加、**契約**スコープ ノードを指す**新規**、 をクリックし、**契約**します。 詳細については、次を参照してください。[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)します。  
+-   右クリックして新しい契約を追加、**契約**スコープ ノードを指す**新規**、 をクリックし、**契約**します。 詳細については、[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)を参照してください。  
   
--   結果ウィンドウで、アグリーメントを右クリックし、をクリックして既存のアグリーメントを編集**プロパティ**、または、アグリーメントをダブルクリックします。 詳細については、次を参照してください。[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)します。  
+-   結果ウィンドウで、アグリーメントを右クリックし、をクリックして既存のアグリーメントを編集**プロパティ**、または、アグリーメントをダブルクリックします。 詳細については、[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)を参照してください。  
   
 -   結果ウィンドウで、アグリーメントを右クリックし、をクリックして既存のアグリーメントを削除**削除**します。  
   

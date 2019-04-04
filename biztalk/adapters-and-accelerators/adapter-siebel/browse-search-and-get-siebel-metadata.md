@@ -45,7 +45,7 @@ ms.locfileid: "36980539"
   
 - **ビジネス サービス**します。 このノードには、Siebel システムによって公開されるビジネス サービスが含まれています。 Siebel ビジネス サービスは、Siebel システムで直接呼び出すことがあるビジネス サービス メソッドまたは関数のコレクションです。  
   
-  メタデータの分類方法の詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-siebel/metadata-node-ids1.md)します。  
+  メタデータの分類方法の詳細については、[メタデータ ノード Id](../../adapters-and-accelerators/adapter-siebel/metadata-node-ids1.md)を参照してください。  
   
 ## <a name="searching-metadata"></a>メタデータの検索  
  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アダプター クライアントが Siebel システムでメタデータを検索できるようにします。 この機能を使用するには、Siebel と互換性のある検索式は、メタデータを参照するために使用する Siebel リポジトリ ビジネス コンポーネントの [名前] フィールドで演算子などの有効な Siebel を使用します。 次の表は、Siebel の成果物とメタデータの階層を検索することができます。  
@@ -70,7 +70,7 @@ ms.locfileid: "36980539"
   
 - ビジネス サービス メソッドの場合、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]ビジネス サービス名、メソッド名 (操作と同じ)、メソッド パラメーター、およびパラメーターのデータ型としては、このような項目を取得します。  
   
-  メタデータの取得の詳細については、次を参照してください。 [Visual Studio で Siebel 操作のメタデータの取得](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)します。  
+  メタデータの取得の詳細については、[Visual Studio で Siebel 操作のメタデータの取得](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Adapter for Siebel eBusiness Applications の概要](../../adapters-and-accelerators/adapter-siebel/overview-of-biztalk-adapter-for-siebel-ebusiness-applications.md)

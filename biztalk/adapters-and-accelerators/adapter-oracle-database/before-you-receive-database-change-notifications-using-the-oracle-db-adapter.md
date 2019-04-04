@@ -73,7 +73,7 @@ ms.locfileid: "37015195"
   
    興味深いことに、更新操作では、通知をアダプターのクライアントに送信もう一度と、プロセス全体がもう一度繰り返されます。 そのため、クライアント アプリケーションには、このような不要な通知を破棄する必要なロジックが必要です。  
   
-- 場合、 **NotifyOnListenerStart**プロパティのバインドは、アダプターは通知を送信アダプターのクライアントに受信場所を開始するたびにします。 バインド プロパティを使用し、通知メッセージを解釈する方法の詳細については、次を参照してください。[受信 Oracle データベース変更通知した後、受信場所のブレーク ダウン](../../adapters-and-accelerators/adapter-oracle-database/receive-oracle-database-change-notifications-after-a-receive-location-breakdown.md)します。  
+- 場合、 **NotifyOnListenerStart**プロパティのバインドは、アダプターは通知を送信アダプターのクライアントに受信場所を開始するたびにします。 バインド プロパティを使用し、通知メッセージを解釈する方法の詳細については、[受信 Oracle データベース変更通知した後、受信場所のブレーク ダウン](../../adapters-and-accelerators/adapter-oracle-database/receive-oracle-database-change-notifications-after-a-receive-location-breakdown.md)を参照してください。  
   
 ## <a name="typical-orchestration-for-receiving-notifications"></a>通知を受信するための一般的なオーケストレーション  
  このセクションを使用して通知を受信するための一般的なオーケストレーション フローの概要、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。  

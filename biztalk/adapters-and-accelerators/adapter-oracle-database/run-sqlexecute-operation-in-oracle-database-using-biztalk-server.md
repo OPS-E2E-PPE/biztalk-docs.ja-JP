@@ -23,7 +23,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36966891"
 ---
 # <a name="run-sqlexecute-operation-in-oracle-database-using-biztalk-server"></a>BizTalk Server を使用して Oracle データベースで SQLEXECUTE 操作を実行します。
-[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]クライアントが Oracle データベースに対してパラメーター化された SQL ステートメントを実行できるようにします。 このような操作をサポートするために、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] SQLEXECUTE 操作を表示します。 SQLEXECUTE 操作のセットごとに、同じ SQL ステートメントを実行するためのパラメーター セットで構成される、入力パラメーター ブロックをサポートします。 SQLEXECUTE 操作は、ジェネリック レコード セット内の SQL ステートメントの結果を返します。 操作の詳細については、次を参照してください。 [Oracle データベースで SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/sqlexecute-operation-in-oracle-database.md)します。 SQLEXECUTE 操作の SOAP メッセージの構造については、次を参照してください。 [SQLEXECUTE 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-sqlexecute-operation.md)します。  
+[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]クライアントが Oracle データベースに対してパラメーター化された SQL ステートメントを実行できるようにします。 このような操作をサポートするために、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] SQLEXECUTE 操作を表示します。 SQLEXECUTE 操作のセットごとに、同じ SQL ステートメントを実行するためのパラメーター セットで構成される、入力パラメーター ブロックをサポートします。 SQLEXECUTE 操作は、ジェネリック レコード セット内の SQL ステートメントの結果を返します。 操作の詳細については、[Oracle データベースで SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/sqlexecute-operation-in-oracle-database.md)を参照してください。 SQLEXECUTE 操作の SOAP メッセージの構造については、[SQLEXECUTE 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-sqlexecute-operation.md)を参照してください。  
   
 ## <a name="how-to-perform-a-sqlexecute-operation-on-an-oracle-database"></a>Oracle データベースに SQLEXECUTE 操作を実行する方法は?  
  使用して Oracle データベースでの操作を実行する[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で説明されている手順のタスクが含まれます[Oracle データベースと BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md)します。 SQLEXECUTE 操作を実行するには、これらのタスクは。  
@@ -43,7 +43,7 @@ ms.locfileid: "36966891"
    このトピックでは、これらのタスクを実行する手順を説明します。  
   
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル SqlExec、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
+ サンプル SqlExec、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
   
 ## <a name="generating-schema"></a>スキーマを生成します。  
  このトピックでは、パラメーター化された SQL クエリを実行する方法を示すを生成 SQLEXECUTE 操作のルート ノード (/) でのスキーマ、**カテゴリを選択**ペインで、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]します。 参照してください[Visual Studio での Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)スキーマを生成する方法の詳細について。  
@@ -123,10 +123,10 @@ ms.locfileid: "36966891"
   
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
   
- ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。  
+ ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。  
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、次を参照してください。[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)します。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)を参照してください。
   
  アプリケーションを構成する必要があります。  
   
@@ -138,13 +138,13 @@ ms.locfileid: "36966891"
   
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーションが Oracle データベースからの応答を含む応答メッセージをドロップする場所の場所を定義します。  
   
-  - Oracle データベースにメッセージを送信する物理 Wcf-custom または Wcf-oracledb 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 Wcf-custom または Wcf-oracledb のポートを作成する方法については、次を参照してください。 [Oracle Database アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)します。  
+  - Oracle データベースにメッセージを送信する物理 Wcf-custom または Wcf-oracledb 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 Wcf-custom または Wcf-oracledb のポートを作成する方法については、[Oracle Database アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)を参照してください。  
   
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、次を参照してください。 [Oracle データベースへのポート バインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)します。  
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、[Oracle データベースへのポート バインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)を参照してください。  
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- SQLEXECUTE 操作を実行するための BizTalk アプリケーションを開始する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。  
+ SQLEXECUTE 操作を実行するための BizTalk アプリケーションを開始する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。  
   
  この段階で、ことを確認します。  
   
@@ -161,7 +161,7 @@ ms.locfileid: "36966891"
   
  Oracle データベースのすべてのアイテムの下では、SQLEXECUTE 操作は発生はありません、ために、ビューに対してパラメーター化 SQL クエリを実行または他のテーブルで動作するプロシージャを実行する同じスキーマを使用できます。  
   
- たとえば、次の要求メッセージでは、SQLEXECUTE 操作を使用してアカウントのテーブルに対してパラメーター化された SELECT ステートメントを実行します。 サンプルで提供される SQL スクリプトを実行して、SCOTT スキーマ アカウントのテーブルが作成されます。 サンプルの詳細については、次を参照してください。[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)します。  
+ たとえば、次の要求メッセージでは、SQLEXECUTE 操作を使用してアカウントのテーブルに対してパラメーター化された SELECT ステートメントを実行します。 サンプルで提供される SQL スクリプトを実行して、SCOTT スキーマ アカウントのテーブルが作成されます。 サンプルの詳細については、[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)を参照してください。  
   
 ```  
 <SQLEXECUTE xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SQLEXECUTE">  
@@ -210,7 +210,7 @@ ms.locfileid: "36966891"
  例外に関する情報を使用して、DML 操作の実行中に発生する可能性が[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[例外とエラー処理](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md)します。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、次を参照してください。[再利用の Oracle データベース アダプターのバインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)します。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、[再利用の Oracle データベース アダプターのバインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
 [Oracle データベースと BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md)

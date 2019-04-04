@@ -24,7 +24,7 @@ ms.locfileid: "36970707"
   
 -   アダプター クライアントのトランザクションを有効にします。 たとえば、BizTalk Server のトランザクションを有効にする必要がありますを選択、 **Use-transaction**  チェック ボックス、**トランザクション**の領域、**メッセージ**WCF カスタム タブまたはWcf-oracledb ポートです。  
   
--   値を設定、 **UseAmbientTransaction**プロパティをバインド**True**アダプター。 バインディング プロパティの詳細については、次を参照してください。 [for Oracle Database バインド プロパティを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)します。  
+-   値を設定、 **UseAmbientTransaction**プロパティをバインド**True**アダプター。 バインディング プロパティの詳細については、[for Oracle Database バインド プロパティを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)を参照してください。  
   
 > [!IMPORTANT]
 >  アダプターを使用して、Oracle データベースでトランザクションを実行する、する必要がありますがインストールされている、 **Microsoft Transaction Server のサービスの Oracle**アダプターを実行するコンピューターで、Oracle クライアントをインストールするときに、コンポーネントクライアント。  

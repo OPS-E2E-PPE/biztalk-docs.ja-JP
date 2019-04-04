@@ -38,7 +38,7 @@ ms.locfileid: "37014219"
   
 - **A4SWIFT_Failed**は**true**任意の数、上記のプロパティが 0 より大きい場合、または**false**カウントが 0 に等しい場合。  
   
-  これらのプロパティは、Microsoft のすべての一部です。Solutions.A4SWIFT.Property 名前空間。 これらおよびその他の昇格させたプロパティの詳細については、次を参照してください。 [a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)します。  
+  これらのプロパティは、Microsoft のすべての一部です。Solutions.A4SWIFT.Property 名前空間。 これらおよびその他の昇格させたプロパティの詳細については、[a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)を参照してください。  
   
   Catch または失敗したメッセージを取得、送信ポートのフィルター式 (サブスクリプション) を作成する必要があるまたはオーケストレーションの受信図形を含む、上記のプロパティの一部として**AND**式の句。  
   

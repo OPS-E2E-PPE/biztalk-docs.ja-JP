@@ -67,7 +67,7 @@ Message Repair and New Submission 次の 4 つの異なる操作が含まれま�
 - 管理者が、1 つを与える[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]ユーザーの部門内の複数のロール。 1 人のユーザーには、修復、検証、承認、または作成、またはこれらのロールは、上記で説明した任意の 1 つのワークフローでの制限が適用の任意のサブセットを実行できます。  
   
 ## <a name="certificates"></a>証明書  
- 修復、検証、承認、または、作成した後、ローカル コンピューター上のメッセージを送信する、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]ユーザーが自分の証明書をメッセージに署名する必要があります。 証明書の作成の詳細については、次を参照してください。[証明書のインストール](../../adapters-and-accelerators/accelerator-swift/installing-certificates.md)します。  
+ 修復、検証、承認、または、作成した後、ローカル コンピューター上のメッセージを送信する、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]ユーザーが自分の証明書をメッセージに署名する必要があります。 証明書の作成の詳細については、[証明書のインストール](../../adapters-and-accelerators/accelerator-swift/installing-certificates.md)を参照してください。  
   
  修復、確認、承認、またはリモート クライアント コンピューターから MRSR サイトへのアクセス、メッセージを作成して、ユーザーは、(ユーザーが自身のクライアント コンピューターの現在のユーザー/個人/証明書ストアに証明書で自分の証明書を追加する必要があります。そのためには管理者である)。 さらに、サーバーの管理者する必要がありますユーザーの証明書 (および、クライアント コンピューターからサーバーにアクセスする他のユーザーの)、証明書を追加 (ローカル コンピューター)]、[その他のユーザー/証明書がサーバーに格納します。  
   

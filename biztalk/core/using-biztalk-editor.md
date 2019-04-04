@@ -36,13 +36,13 @@ BizTalk エディターは、Microsoft [!INCLUDE[btsVStudioNoVersion](../include
   
  BizTalk エディターは、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] シェルの次のビューと関連するダイアログ ボックスで構成されます。  
   
-- **スキーマ ツリー。** このビューは、メインの左側にある[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。 スキーマで定義されるメッセージの構造を示すツリー構造を構築すると、このビューでスキーマがアクティブに作成されます。 スキーマ ツリー ビューでの BizTalk スキーマの表現方法の詳細については、次を参照してください。[スキーマの BizTalk 表記](../core/biztalk-representation-of-schemas.md)します。  
+- **スキーマ ツリー。** このビューは、メインの左側にある[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。 スキーマで定義されるメッセージの構造を示すツリー構造を構築すると、このビューでスキーマがアクティブに作成されます。 スキーマ ツリー ビューでの BizTalk スキーマの表現方法の詳細については、[スキーマの BizTalk 表記](../core/biztalk-representation-of-schemas.md)を参照してください。  
   
 - **XSD を表示します。** このビューは、メインの右側にある[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。 スキーマ ツリー ビューに構築されているスキーマを表す XSD (XML Schema Definition ) 言語構造を示します。 このビューは読み取り専用で、作成するスキーマの XSD 構文を理解するためのものです。 必要に応じて、ビューの分割機能を使用して、XSD ビューの表示を調整できます。  
   
 - **ソリューション エクスプ ローラー。** このビューが右側にあるは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]シェルです。 BizTalk プロジェクトと BizTalk プロジェクトに含まれるさまざまな項目が表示されます。 ソリューション エクスプローラーを使用して、新しいスキーマおよび既存のスキーマをプロジェクトに追加したり、プロジェクトの一部であるスキーマを開いたりできます。 たとえば、新しいスキーマを作成するソリューション エクスプ ローラー ウィンドウで、BizTalk プロジェクトを右クリックし、 をクリックして**追加**、 をクリックして**新しい項目の**、しを使用して、**新しい項目の追加**ダイアログ新しいスキーマを作成して名前をボックスです。  
   
-- [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]  **プロパティ ウィンドウ。** : このビューを使用して、ほとんどのスキーマ プロパティおよびノード プロパティの確認および設定を行います。 スキーマ ツリー ビューのノードまたは [ソリューション エクスプローラー] ウィンドウのスキーマを選択すると、ノードやスキーマに対応するプロパティが標準の Visual Studio パラダイムで [プロパティ] ウィンドウに表示されます。 たとえば、プロパティは、カテゴリごとにグループ化されていたり、カテゴリ順またはアルファベット順に従って表示されたりします。 異なるさまざまな種類のノード、または、スキーマが選択されているときに使用できるプロパティのセットの詳細については、次を参照してください。、**スキーマ プロパティのリファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+- [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]  **プロパティ ウィンドウ。** : このビューを使用して、ほとんどのスキーマ プロパティおよびノード プロパティの確認および設定を行います。 スキーマ ツリー ビューのノードまたは [ソリューション エクスプローラー] ウィンドウのスキーマを選択すると、ノードやスキーマに対応するプロパティが標準の Visual Studio パラダイムで [プロパティ] ウィンドウに表示されます。 たとえば、プロパティは、カテゴリごとにグループ化されていたり、カテゴリ順またはアルファベット順に従って表示されたりします。 異なるさまざまな種類のノード、または、スキーマが選択されているときに使用できるプロパティのセットの詳細については、、**スキーマ プロパティのリファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
   
   これらのビュー以外にも、いくつかのダイアログ ボックスを使用できます。 通常、このようなダイアログ ボックスは、コレクションなど複雑なプロパティを編集する場合に使用します。  
   

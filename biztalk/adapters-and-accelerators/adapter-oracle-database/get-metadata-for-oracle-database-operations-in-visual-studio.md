@@ -27,7 +27,7 @@ ms.locfileid: "37003451"
   
 - [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]と[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]は BizTalk Server プロジェクトで使用できます。 使用する、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] 、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] BizTalk ソリューションのターゲットに操作のメッセージ スキーマ (Xsd) を生成します。 BizTalk server ソリューションの開発に関する詳細については、次を参照してください[Oracle データベース アダプターを使用して開発の BizTalk アプリケーション。](../../adapters-and-accelerators/adapter-oracle-database/develop-biztalk-applications-using-the-oracle-database-adapter.md)  
   
-- [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]は非 BizTalk プログラミング プロジェクトで使用できます。 使用する、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF サービス モデルを使用してソリューションを開発するときに、WCF クライアント クラスまたは WCF サービスのコールバック インターフェイスを生成します。 WCF サービス モデルを使用したソリューションの開発に関する詳細については、次を参照してください。[開発 Oracle データベースを使用してアプリケーション、WCF サービス モデル](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md)します。  
+- [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]は非 BizTalk プログラミング プロジェクトで使用できます。 使用する、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF サービス モデルを使用してソリューションを開発するときに、WCF クライアント クラスまたは WCF サービスのコールバック インターフェイスを生成します。 WCF サービス モデルを使用したソリューションの開発に関する詳細については、[開発 Oracle データベースを使用してアプリケーション、WCF サービス モデル](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md)を参照してください。  
   
   これら 3 つすべて[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]コンポーネントで開発を簡略化します。  
   

@@ -77,10 +77,10 @@ Message_Out(WSS.ConfigPropertiesXml) = “<ConfigPropertiesXml>
 
  この方法で作成された後の状態に設定されます**承認されていない**サイトに表示される前に、ブログ所有者の承認が必要です。  
 
- リストでサポートされている列の種類は、リストの設定ページに表示されます。 Windows SharePoint Services アダプターによってサポートされている Windows SharePoint Services 列の種類の詳細については、次を参照してください。 [Windows SharePoint Services アダプターのプロパティに関するリファレンス](../core/windows-sharepoint-services-adapter-properties-reference.md)します。  
+ リストでサポートされている列の種類は、リストの設定ページに表示されます。 Windows SharePoint Services アダプターによってサポートされている Windows SharePoint Services 列の種類の詳細については、[Windows SharePoint Services アダプターのプロパティに関するリファレンス](../core/windows-sharepoint-services-adapter-properties-reference.md)を参照してください。  
 
 ## <a name="sending-to-and-receiving-from-a-windows-sharepoint-services-40-wiki-document-library"></a>Windows SharePoint Services 4.0 Wiki ドキュメント ライブラリとの送受信  
- Wiki サイトを使用して、Windows SharePoint Services 4.0 サイトで、 **Wiki ページ**ドキュメント ライブラリです。 Wiki ページのドキュメント ライブラリ、Wiki ページのテキストを格納する、 **Wiki Content**の UI 型を使用する列**複数行のテキスト**します。 **複数行のテキスト**UI 型、 **SPFieldType.Note** SharePoint オブジェクト モデルの種類。 Windows SharePoint Services アダプターによってサポートされている Windows SharePoint Services 列の型の詳細については、次を参照してください。 [Windows SharePoint Services アダプターのプロパティに関するリファレンス](../core/windows-sharepoint-services-adapter-properties-reference.md)します。  
+ Wiki サイトを使用して、Windows SharePoint Services 4.0 サイトで、 **Wiki ページ**ドキュメント ライブラリです。 Wiki ページのドキュメント ライブラリ、Wiki ページのテキストを格納する、 **Wiki Content**の UI 型を使用する列**複数行のテキスト**します。 **複数行のテキスト**UI 型、 **SPFieldType.Note** SharePoint オブジェクト モデルの種類。 Windows SharePoint Services アダプターによってサポートされている Windows SharePoint Services 列の型の詳細については、[Windows SharePoint Services アダプターのプロパティに関するリファレンス](../core/windows-sharepoint-services-adapter-properties-reference.md)を参照してください。  
 
 ### <a name="sending-to-a-windows-sharepoint-services-40-wiki-document-library"></a>Windows SharePoint Services 4.0 Wiki ドキュメント ライブラリへの送信  
  Wiki ページの内容がという名前の Windows SharePoint Services アダプター コンテキスト プロパティ内に格納されている Windows SharePoint Services 4.0 Wiki サイトにメッセージを送信するときに**WSS。ConfigPropertiesXml**します。 Windows SharePoint Services 4.0 Wiki サイトにメッセージを投稿、アダプターで、次の値を入力します。**トランスポートのプロパティ**Windows SharePoint Services アダプターを使用する送信ポートを構成するときに、ダイアログ ボックス。  

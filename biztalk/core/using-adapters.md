@@ -25,7 +25,7 @@ ms.locfileid: "36945557"
 ## <a name="overview"></a>概要
 このセクションでは、アダプターの概要について説明します。 ここでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] におけるアダプタの使用方法と、各アダプタのアダプタ ハンドラ、送信ポート、および受信場所の構成方法について説明します。 また、ネイティブ アダプターについて理解を深め、BizTalk ソリューションで使用するために役立つバッチ処理のサポート情報が記載されています。  
   
- アダプターのプロパティ ページのキーボード ショートカットの使用方法の詳細については、次を参照してください。[アダプターのプロパティ ページのキーボード ショートカット](../core/adapter-property-page-keyboard-shortcuts.md)します。  
+ アダプターのプロパティ ページのキーボード ショートカットの使用方法の詳細については、[アダプターのプロパティ ページのキーボード ショートカット](../core/adapter-property-page-keyboard-shortcuts.md)を参照してください。  
   
 ## <a name="adapters-list"></a>アダプターの一覧
   

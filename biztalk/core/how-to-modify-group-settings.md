@@ -24,7 +24,7 @@ ms.locfileid: "36966675"
 ダッシュボードの設定を使用すると、特定の BizTalk グループに属するすべてのコンピューターで使用する構成情報を変更できます。 ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でグループレベルのパフォーマンス設定を変更する手順について説明します。 これらの設定は特定のグループのすべてのコンピューターに適用できます。  
 
 > [!NOTE]
->  また、ホストとホスト インスタンス設定も変更できます。 詳細については、次を参照してください。[ホスト設定の変更方法](../core/how-to-modify-host-settings.md)と[ホスト インスタンス設定を変更する方法](../core/how-to-modify-host-instance-settings.md)します。  
+>  また、ホストとホスト インスタンス設定も変更できます。 詳細については、[ホスト設定の変更方法](../core/how-to-modify-host-settings.md)と[ホスト インスタンス設定を変更する方法](../core/how-to-modify-host-instance-settings.md)を参照してください。  
 
  BizTalk Server の現在の設定は XML ファイルにエクスポートできます。 後で、新しい値を設定する代わりに、これらの設定を設定ダッシュボードにインポートできます。 インポートまたはエクスポートする方法について、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]設定を参照してください[インポートまたはエクスポート BizTalk の設定を使用して設定のダッシュ ボード](how-to-import-biztalk-settings-using-settings-dashboard.md)と[インポートまたはエクスポート BizTalk の設定を使用して BTSTask](how-to-import-biztalk-settings-using-btstask.md)します。 
 

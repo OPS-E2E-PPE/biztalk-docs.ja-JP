@@ -182,4 +182,4 @@ BizTalk Server コンピューターが SQL Server コンピューターから�
   
 - **Wake On LAN (使用されている) 場合を除き、無効になっている**– lan でウェイク アップの機能を無効にするネットワーク アダプター ドライバーを構成します。 この機能がクライアント コンピューターの便利ですが、必要がありますほとんどもしコンピューターで使用する、BizTalk Server または SQL Server。  
   
-  ネットワーク アダプターのパフォーマンスのチューニングの詳細については、次を参照してください。、**ネットワーク デバイスの設定**"BizTalk Server データベースの最適化"ホワイト ペーパーの「 [ http://go.microsoft.com/fwlink/?LinkID=101578](http://go.microsoft.com/fwlink/?LinkID=101578)します。
+  ネットワーク アダプターのパフォーマンスのチューニングの詳細については、、**ネットワーク デバイスの設定**"BizTalk Server データベースの最適化"ホワイト ペーパーの「 [ http://go.microsoft.com/fwlink/?LinkID=101578](http://go.microsoft.com/fwlink/?LinkID=101578)を参照してください。

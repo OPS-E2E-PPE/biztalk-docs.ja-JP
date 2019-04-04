@@ -51,10 +51,10 @@ ms.locfileid: "37007563"
 - このソリューションでは、トランスポートの種類が FILE である静的な一方向の送信ポートが使用されます。  
 
   > [!NOTE]
-  >  静的な一方向の送信ポートの代わりに、静的な双方向の送信ポートを使用して、インターチェンジの送信および受信確認の受信を行うこともできます。 また、動的な一方向の送信ポートを使用してインターチェンジを送信することもできます。 動的送信ポートの使用に関する詳細については、次を参照してください。 [EDI インターチェンジの送信と受信確認を動的送信ポートを構成する](../core/configuring-a-dynamic-send-port-to-send-edi-interchanges-and-acknowledgments.md)します。  
+  >  静的な一方向の送信ポートの代わりに、静的な双方向の送信ポートを使用して、インターチェンジの送信および受信確認の受信を行うこともできます。 また、動的な一方向の送信ポートを使用してインターチェンジを送信することもできます。 動的送信ポートの使用に関する詳細については、[EDI インターチェンジの送信と受信確認を動的送信ポートを構成する](../core/configuring-a-dynamic-send-port-to-send-edi-interchanges-and-acknowledgments.md)を参照してください。  
 
   > [!NOTE]
-  >  HTTP アダプターと AS2 トランスポートを使用できます。 その方法の詳細については、次を参照してください。[チュートリアル (AS2): 同期 MDN による AS2 経由で送信する EDI](../core/walkthrough-as2-sending-edi-over-as2-with-a-synchronous-mdn.md)または[チュートリアル (AS2): 非同期 MDN による AS2 経由で送信する EDI](../core/walkthrough-as2-sending-edi-over-as2-with-an-asynchronous-mdn.md)します。  
+  >  HTTP アダプターと AS2 トランスポートを使用できます。 その方法の詳細については、[チュートリアル (AS2): 同期 MDN による AS2 経由で送信する EDI](../core/walkthrough-as2-sending-edi-over-as2-with-a-synchronous-mdn.md)または[チュートリアル (AS2): 非同期 MDN による AS2 経由で送信する EDI](../core/walkthrough-as2-sending-edi-over-as2-with-an-asynchronous-mdn.md)を参照してください。  
 
 - EDI レポートが有効になり、インターチェンジの状態レポートに表示するトランザクション セットが保存されます。  
 
@@ -92,7 +92,7 @@ ms.locfileid: "37007563"
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk プロジェクトを作成するか、開きます。  
 
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
 
 2. プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の**します。 スキーマが [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI にあるフォルダーに移動し、スキーマをダブルクリックします。  
 

@@ -42,6 +42,6 @@ ms.locfileid: "37005579"
   
   スケジュール オンランプ処理メカニズムは、1 つのスケジュール内のメッセージングおよびオーケストレーションの itinerary 手順の組み合わせをサポートします。 開発者はことができますも、カスタム スケジュール サービスを定義し、カスタム スケジュール ステップを構成します。  
   
-  スケジュールの詳細については、次を参照してください。[をインストールすると、日程ランプでサンプルを実行する](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)します。  
+  スケジュールの詳細については、[をインストールすると、日程ランプでサンプルを実行する](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)を参照してください。  
   
-  カスタム スケジュール サービスとカスタム スケジュール オンランプ手順の詳細については、次を参照してください。[カスタム スケジュール サービスを作成する](../esb-toolkit/creating-a-custom-itinerary-service.md)します。
+  カスタム スケジュール サービスとカスタム スケジュール オンランプ手順の詳細については、[カスタム スケジュール サービスを作成する](../esb-toolkit/creating-a-custom-itinerary-service.md)を参照してください。

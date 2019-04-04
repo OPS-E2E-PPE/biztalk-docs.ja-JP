@@ -66,10 +66,10 @@ ms.locfileid: "37004083"
 >  設定する必要はありません、 **ReplyAction**プロパティを"\*"(アスタリスク)、Wcf-netmsmq アダプターの場合、Wcf-netmsmq アダプターが WCF クライアントを設定する必要があるため、 **IsOneWay**プロパティを**true**します。  
   
 ## <a name="an-isolated-host-instance-can-run-only-one-adapter"></a>分離ホスト インスタンスは 1 つのアダプターでのみ実行できる  
- 分離ホスト インスタンスは、1 つのアダプターでのみ実行できます。 1 つの分離ホストで HTTP、SOAP、WCF などの複数の分離アダプターの受信ハンドラーを構成する場合、複数のアプリケーション プール (各アダプターに 1 つのアプリケーション プール) を作成する必要があります。 BizTalk 分離ホストの詳細については、次を参照してください。 [Web サービスを有効にする](../core/enabling-web-services.md)します。  
+ 分離ホスト インスタンスは、1 つのアダプターでのみ実行できます。 1 つの分離ホストで HTTP、SOAP、WCF などの複数の分離アダプターの受信ハンドラーを構成する場合、複数のアプリケーション プール (各アダプターに 1 つのアプリケーション プール) を作成する必要があります。 BizTalk 分離ホストの詳細については、[Web サービスを有効にする](../core/enabling-web-services.md)を参照してください。  
   
 ## <a name="use-the-template----content-specified-by-template-option-when-sending-non-xml-content-as-response-messages"></a>XML 以外のコンテンツを応答メッセージとして送信する場合は、[テンプレート -- テンプレートで指定されたコンテンツ] オプションを使用する  
- WCF アダプターで**ボディ--BizTalk 応答メッセージ本文**(既定値) オプションは文字データやビットマップ イメージなどの XML 以外のメッセージの送信を許可していません。 使用することができます、**テンプレート--テンプレートで指定されたコンテンツ**XML 以外のメッセージを送信する WCF アダプターのオプション。 テンプレートを使用する方法の詳細については、次を参照してください。 [WCF アダプタのメッセージ本文の指定](../core/specifying-the-message-body-for-the-wcf-adapters.md)します。  
+ WCF アダプターで**ボディ--BizTalk 応答メッセージ本文**(既定値) オプションは文字データやビットマップ イメージなどの XML 以外のメッセージの送信を許可していません。 使用することができます、**テンプレート--テンプレートで指定されたコンテンツ**XML 以外のメッセージを送信する WCF アダプターのオプション。 テンプレートを使用する方法の詳細については、[WCF アダプタのメッセージ本文の指定](../core/specifying-the-message-body-for-the-wcf-adapters.md)を参照してください。  
   
 ## <a name="setting-up-the-permissions-for-a-wcf-service-published-with-the-wcf-service-publishing-wizard"></a>WCF サービス公開ウィザードで公開した WCF サービスに対してアクセス許可を設定する  
  [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] または [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] プラットフォームの WCF サービス公開ウィザードを使用して作成された ASP.NET アプリケーションを使用する場合、WCF サービスの呼び出し時に DLL へのアクセスに関連するエラーが発生する可能性があります。 通常、これらのエラーは、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] および [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] の既定のセキュリティの問題に関連しています。 これらのエラーの詳細については、Microsoft ヘルプとサポート資料という、"System.IO.FileNotFoundException"エラー時に、クライアント アプリケーションの呼び出しを Web サービス"のヘルプとサポート Web サイトで参照してください[ http://go.microsoft.com/fwlink/?LinkId=43659](http://go.microsoft.com/fwlink/?LinkId=43659).  
@@ -111,7 +111,7 @@ ms.locfileid: "37004083"
 ## <a name="using-schemas-that-reference-other-schemas"></a>他のスキーマを参照するスキーマの使用  
  使用することができます、**再定義**、**含める**と**インポート**大規模で複雑な場合は、スキーマになったときに要素またはときに、スキーマを表す、さまざまな種類のインスタンス メッセージでは、共通のいくつかの部分があります。 小さいスキーマを、取引先と交換するインスタンス メッセージの構造を最終的に定義するスキーマに結合すると便利な場合があります。 BizTalk WCF サービス公開ウィザードを使用して、これらのスキーマを WCF サービスとして公開できます。  
   
- BizTalk プロジェクトから WCF サービスを使用するために必要な BizTalk アイテムを作成するには、BizTalk WCF サービス使用ウィザードを使用する必要があります。 .NET アプリケーションから WCF サービスを使用するには、ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe) を使用して、WCF サービスのプロキシ クラスを作成する必要があります。 その他のスキーマを参照するスキーマを使用する方法の詳細については、次を参照してください。[を使用して、他のスキーマ](../core/schemas-that-use-other-schemas.md)と[作成を使用して、他のスキーマ方法](../core/how-to-create-schemas-that-use-other-schemas.md)します。 Svcutil.exe の詳細についてを参照してください「サービス モデル メタデータ ユーティリティ ツール (Svcutil.exe)」 [ http://go.microsoft.com/fwlink/?LinkID=74696](http://go.microsoft.com/fwlink/?LinkID=74696)します。  
+ BizTalk プロジェクトから WCF サービスを使用するために必要な BizTalk アイテムを作成するには、BizTalk WCF サービス使用ウィザードを使用する必要があります。 .NET アプリケーションから WCF サービスを使用するには、ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe) を使用して、WCF サービスのプロキシ クラスを作成する必要があります。 その他のスキーマを参照するスキーマを使用する方法の詳細については、[を使用して、他のスキーマ](../core/schemas-that-use-other-schemas.md)と[作成を使用して、他のスキーマ方法](../core/how-to-create-schemas-that-use-other-schemas.md)を参照してください。 Svcutil.exe の詳細についてを参照してください「サービス モデル メタデータ ユーティリティ ツール (Svcutil.exe)」 [ http://go.microsoft.com/fwlink/?LinkID=74696](http://go.microsoft.com/fwlink/?LinkID=74696)します。  
   
  次の表は、他のスキーマを使用するスキーマを使って公開された WCF サービスを使用するときに理解しておく必要がある制限と注意点を示しています。  
   

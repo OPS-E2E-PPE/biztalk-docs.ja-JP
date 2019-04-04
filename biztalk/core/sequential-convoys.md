@@ -48,7 +48,7 @@ ms.locfileid: "36971203"
   
 - シーケンシャルなコンボイがアクティブ化受信によって初期化される場合、後続の受信をネストされているオーケストレーションの内側に入れることはできません。  
   
-  シーケンシャルなコンボイの実装の例は、次を参照してください。[アグリゲーター (BizTalk Server サンプル)](../core/aggregator-biztalk-server-sample.md)します。  
+  シーケンシャルなコンボイの実装の例は、[アグリゲーター (BizTalk Server サンプル)](../core/aggregator-biztalk-server-sample.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [コンボイ シナリオの](../core/working-with-convoy-scenarios.md)   

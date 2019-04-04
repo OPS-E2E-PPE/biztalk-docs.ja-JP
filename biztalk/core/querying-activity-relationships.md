@@ -29,7 +29,7 @@ ms.locfileid: "36984019"
   
  場所\<*アクティビティ*\> BAM 定義 XML 内の Activity 要素の Name 属性は、Excel 用 BAM アドインを使用して入力されたアクティビティ名と同じです。  
   
- リレーションシップ イベントは、特定のアクティビティのコンテキスト内で発生します。 たとえば、発注と出荷間のリレーションシップが発注アクティビティのコンテキストで発生した場合、リレーションシップ レコードに表示**bam_PurchaseOrder_AllRelationships**ではなく**bam_Shipment_AllRelationships**します。 詳細については、次を参照してください。[アクティビティ リレーションシップ](../core/activity-relationships.md)します。  
+ リレーションシップ イベントは、特定のアクティビティのコンテキスト内で発生します。 たとえば、発注と出荷間のリレーションシップが発注アクティビティのコンテキストで発生した場合、リレーションシップ レコードに表示**bam_PurchaseOrder_AllRelationships**ではなく**bam_Shipment_AllRelationships**します。 詳細については、[アクティビティ リレーションシップ](../core/activity-relationships.md)を参照してください。  
   
  購入に関連するアクティビティの順序、両方のビューをクエリする必要がありますすべてを検索する**bam_PurchaseOrder_AllRelationships**すべてのビューと**bam _\<**<em>OtherActivity</em>  **\>_AllRelationships**ここで、 \< *OtherActivity* \>同じ BAM ビューでアクティビティします。  
   

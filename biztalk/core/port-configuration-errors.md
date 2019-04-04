@@ -40,7 +40,7 @@ ms.locfileid: "36986907"
 ### <a name="user-action"></a>ユーザーの操作  
  ポート構成ウィザードを使用すると、結合されるすべてのポートは、同じ通信方式 (一方向または要求 - 応答) になります。  
   
- ポートの構成の詳細については、次を参照してください。[ポート構成ウィザードを実行する方法](../core/how-to-run-the-port-configuration-wizard.md)します。
+ ポートの構成の詳細については、[ポート構成ウィザードを実行する方法](../core/how-to-run-the-port-configuration-wizard.md)を参照してください。
  
 ## <a name="port-types-that-have-a-combination-of-one-way-and-request-response-operations-are-not-allowed"></a>一方向の操作および要求 - 応答の操作の組み合わせを保持するポートの種類は許可されていません 
   

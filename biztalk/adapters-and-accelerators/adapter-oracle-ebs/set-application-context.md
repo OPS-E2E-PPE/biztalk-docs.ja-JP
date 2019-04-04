@@ -36,9 +36,9 @@ ms.locfileid: "37004235"
 ## <a name="setting-application-context"></a>アプリケーション コンテキストの設定  
  として、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite の成果物の確立またはアダプターで初期化されていないのは、Oracle E-business Suite、アプリケーションのコンテキストで基になるデータベースに接続します。 初期化またはアプリケーションのコンテキストでこれらの成果物を設定することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]次のいずれかを使用しています。  
   
-- **バインドのプロパティ**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーション コンテキストを設定するための次のバインド プロパティを公開します: **OracleEBSOrganizationId**、 **OracleUserName**、 **OraclePassword**、 **OracleEBSResponsibilityKey**、 **OracleEBSResponsibilityName**、および**ApplicationShortName**します。 さまざまなアイテムのコンテキストをアプリケーション設定にこれらすべてのバインド プロパティの値を指定する必要はありません。 成果物のアプリケーション コンテキストの設定に必要なバインドのプロパティについては、次を参照してください。[設定アプリケーション コンテキストのさまざまなアイテムのプロパティをバインド](#Binding)このトピックで後述します。  
+- **バインドのプロパティ**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーション コンテキストを設定するための次のバインド プロパティを公開します: **OracleEBSOrganizationId**、 **OracleUserName**、 **OraclePassword**、 **OracleEBSResponsibilityKey**、 **OracleEBSResponsibilityName**、および**ApplicationShortName**します。 さまざまなアイテムのコンテキストをアプリケーション設定にこれらすべてのバインド プロパティの値を指定する必要はありません。 成果物のアプリケーション コンテキストの設定に必要なバインドのプロパティについては、[設定アプリケーション コンテキストのさまざまなアイテムのプロパティをバインド](#Binding)このトピックで後述を参照してください。  
   
-- **メッセージ コンテキスト プロパティ**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーション コンテキストを設定するための次のメッセージ コンテキスト プロパティを公開します: **ApplicationShortName**、**組織 Id**、 **ResponsibilityKey**、および**ResponsibilityName**します。 ユーザー名とパスワードを指定するためには、バインドのプロパティを使用する必要があります。 メッセージ コンテキスト プロパティを使用してアプリケーションのコンテキストを設定する方法については、次を参照してください。[アプリケーション コンテキストを使用してメッセージのコンテキスト プロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-application-context-using-message-context-properties-in-oracle-ebs.md)します。  
+- **メッセージ コンテキスト プロパティ**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーション コンテキストを設定するための次のメッセージ コンテキスト プロパティを公開します: **ApplicationShortName**、**組織 Id**、 **ResponsibilityKey**、および**ResponsibilityName**します。 ユーザー名とパスワードを指定するためには、バインドのプロパティを使用する必要があります。 メッセージ コンテキスト プロパティを使用してアプリケーションのコンテキストを設定する方法については、[アプリケーション コンテキストを使用してメッセージのコンテキスト プロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-application-context-using-message-context-properties-in-oracle-ebs.md)を参照してください。  
   
 > [!IMPORTANT]
 >  指定された値、 **OracleEBSResponsibilityKey**の値を上書きするプロパティのバインド、 **OracleEBSResponsibilityName**プロパティをバインドします。 同様に、指定された値、 **ResponsibilityKey**メッセージ コンテキスト プロパティに指定された値のオーバーライド、 **ResponsibilityName**メッセージ コンテキスト プロパティ。  
@@ -124,7 +124,7 @@ ms.locfileid: "37004235"
 > - 既定値、 **OracleEBSOrganizationId** (省略可) プロパティのバインドが null です。 値を指定する場合、 **OracleEBSOrganizationId**プロパティ、バインド、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーション コンテキストの設定中に、セッションの ORG_ID をこの値に設定します。  
 >   -   指定された値、 **OracleEBSResponsibilityKey**プロパティのバインドに指定された値よりも優先されます、 **OracleEBSResponsibilityName**プロパティをバインドします。  
   
- 各バインド プロパティの詳細については、次を参照してください。[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。  
+ 各バインド プロパティの詳細については、[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [どのような操作は、アダプターを使用して実行しますか?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)

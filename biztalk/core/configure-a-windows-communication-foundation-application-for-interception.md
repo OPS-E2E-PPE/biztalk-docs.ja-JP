@@ -23,7 +23,7 @@ ms.locfileid: "36988907"
 BAM アクティビティ データの収集を開始するには、まず BAM インターセプター ソフトウェアをインストールし、BAM [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] インターセプターを使用するようにアプリケーションを構成する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] およびその依存関係がインストールされ、BizTalk グループが少なくとも 1 つ作成されていることを前提とします。  
 
 ## <a name="installing-the-bam-eventing-software"></a>BAM イベント ソフトウェアのインストール  
- [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 用の BAM インターセプターを使用するように [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] アプリケーションを構成するには、まず、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] セットアップ プログラムを使用して BAM イベント ソフトウェアをインストールする必要があります。 BAM イベント ソフトウェアをインストールして、パフォーマンス カウンターの登録の詳細については、次を参照してください。 [BAM イベント ソフトウェアをインストールする](../core/installing-the-bam-eventing-software.md)します。  
+ [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 用の BAM インターセプターを使用するように [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] アプリケーションを構成するには、まず、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] セットアップ プログラムを使用して BAM イベント ソフトウェアをインストールする必要があります。 BAM イベント ソフトウェアをインストールして、パフォーマンス カウンターの登録の詳細については、[BAM イベント ソフトウェアをインストールする](../core/installing-the-bam-eventing-software.md)を参照してください。  
 
 ## <a name="configuring-a-wcf-application-for-tracking"></a>追跡のための WCF アプリケーションの構成  
  [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] アプリケーションで BAM イベント情報の書き込みを開始するには、次の 4 つのタスクを完了する必要があります。  

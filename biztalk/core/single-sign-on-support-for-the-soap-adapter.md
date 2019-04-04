@@ -29,13 +29,13 @@ ms.locfileid: "36966707"
   
  **受信場所の SOAP のシングル サインオン サポート**  
   
- SOAP 受信場所では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] エンタープライズ SSO と、Microsoft SharePoint Portal Server SSO という 2 種類の SSO がサポートされます。 SharePoint Portal Server SSO のサポートを有効にするには、BizTalk Web サービス公開ウィザードを実行します。 SharePoint Portal Server SSO が有効にする方法の詳細については、次を参照してください。 [Web サービスの公開](../core/publishing-web-services.md)します。 BizTalk エンタープライズ シングル サインオンを有効にするには、SOAP 受信場所のプロパティ ページを使用します。 SOAP 受信場所のエンタープライズ SSO を有効にする方法の詳細については、次を参照してください。 [SOAP 受信場所を構成する方法](../core/how-to-configure-a-soap-receive-location.md)します。  
+ SOAP 受信場所では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] エンタープライズ SSO と、Microsoft SharePoint Portal Server SSO という 2 種類の SSO がサポートされます。 SharePoint Portal Server SSO のサポートを有効にするには、BizTalk Web サービス公開ウィザードを実行します。 SharePoint Portal Server SSO が有効にする方法の詳細については、[Web サービスの公開](../core/publishing-web-services.md)を参照してください。 BizTalk エンタープライズ シングル サインオンを有効にするには、SOAP 受信場所のプロパティ ページを使用します。 SOAP 受信場所のエンタープライズ SSO を有効にする方法の詳細については、[SOAP 受信場所を構成する方法](../core/how-to-configure-a-soap-receive-location.md)を参照してください。  
   
  **受信場所の SOAP のエンタープライズ SSO のサポート**  
   
  インターネット インフォメーション サービス (IIS) では Web クライアントから SOAP 要求を受信し、ユーザーを認証した後、SOAP アダプターにセキュリティ識別子を渡します。 IIS の認証方法がダイジェスト認証、基本認証、統合 Windows 認証のいずれかである場合、暗号化されたチケットを取得するために、認証を受けたユーザーに基づいて SSO 資格情報ストアが呼び出されます。 このチケットとして格納されている、 **SSOTicket**メッセージのコンテキスト プロパティのプロパティ。  
   
- パススルー シナリオでは、BizTalk メッセージング エンジンによって、メッセージ ボックス データベースにメッセージが送信されます。 送信アダプターでは、メッセージ ボックス データベースからメッセージを受信すると、暗号化されたチケットおよびアプリケーション名を指定して RedeemTicket メソッドを呼び出し、そのアプリケーションで使用するセキュリティ資格情報を SSO ストアから取得します。 その後、外部の資格情報を使用してアプリケーションに接続し、SOAP 要求が処理されます。 関連アプリケーションの詳細については、次を参照してください。 [SSO 関連アプリケーション](../core/sso-affiliate-applications.md)します。  
+ パススルー シナリオでは、BizTalk メッセージング エンジンによって、メッセージ ボックス データベースにメッセージが送信されます。 送信アダプターでは、メッセージ ボックス データベースからメッセージを受信すると、暗号化されたチケットおよびアプリケーション名を指定して RedeemTicket メソッドを呼び出し、そのアプリケーションで使用するセキュリティ資格情報を SSO ストアから取得します。 その後、外部の資格情報を使用してアプリケーションに接続し、SOAP 要求が処理されます。 関連アプリケーションの詳細については、[SSO 関連アプリケーション](../core/sso-affiliate-applications.md)を参照してください。  
   
  オーケストレーションが送信アダプターを呼び出すシナリオでは、BizTalk メッセージング エンジンによって、メッセージ ボックス データベースにメッセージが送信されます。 オーケストレーションで、ことを確認します両方、 **SSOTicket**コンテキスト プロパティと**Microsoft.BizTalk.XLANGs.BTXEngine.OriginatorSID**チケットを格納しているメッセージのコンテキスト プロパティには維持されます。 HTTP アダプターでは、メッセージ ボックス データベースからこのメッセージを受信すると、暗号化されたチケットを指定して RedeemTicket メソッドを呼び出し、バックエンドの資格情報を SSO ストアから取得します。 オーケストレーションをデザインするユーザーは、このプロパティをメッセージに明示的にコピーしてください。  
   
@@ -65,4 +65,4 @@ ms.locfileid: "36966707"
   
   SSO が有効になっている場合と SOAP 送信ポートを含むメッセージを受信、 **Secure**プロパティ (**SSOTicket**)、SSO サーバーを検証し、関連アプリケーションのチケットを引き換えるを呼び出します。 SSO を呼び出してチケットを引き換える作業は、関連アプリケーションのアプリケーション管理者、関連管理者、または SSO 管理者が行います。 その後、SSO によってチケットが解読され、バックエンド資格情報を取得します。 パススルーおよびオーケストレーションのシナリオは、SOAP 送信ポートの同じトピックの「Enterprise SSO サポートの SOAP 受信場所」セクションで説明した[、SOAP アダプターのシングル サインオン サポート](../core/single-sign-on-support-for-the-soap-adapter.md)します。  
   
-  既定では、SOAP 送信ポートの SSO は有効になっていません。 SOAP 送信ポートの SSO を有効にする方法の詳細については、次を参照してください。 [SOAP 送信ポートを構成する方法](../core/how-to-configure-a-soap-send-port.md)します。
+  既定では、SOAP 送信ポートの SSO は有効になっていません。 SOAP 送信ポートの SSO を有効にする方法の詳細については、[SOAP 送信ポートを構成する方法](../core/how-to-configure-a-soap-send-port.md)を参照してください。

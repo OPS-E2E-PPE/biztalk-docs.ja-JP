@@ -26,9 +26,9 @@ ms.locfileid: "36996443"
   
 - **TypedPolling**します。 この操作は、厳密に型指定されたポーリング メッセージを返します。 デザイン時に、データベース オブジェクトのスキーマも使用できます。 別の操作である可能性がある別のスキーマにポーリング メッセージから特定の要素をマップする場合をポーリングするためには、この操作を使用する必要があります。  
   
-- **XmlPolling**します。 この操作は、XML メッセージとしてポーリング メッセージを返します。 SELECT ステートメントまたは XML メッセージとしてデータを返す FOR XML 句を使用するストアド プロシージャを使用する場合、この操作を使用する必要があります。 FOR XML 句の詳細については、次を参照してください。 [FOR XML (SQL Server)](https://msdn.microsoft.com/library/ms178107.aspx)します。 
+- **XmlPolling**します。 この操作は、XML メッセージとしてポーリング メッセージを返します。 SELECT ステートメントまたは XML メッセージとしてデータを返す FOR XML 句を使用するストアド プロシージャを使用する場合、この操作を使用する必要があります。 FOR XML 句の詳細については、[FOR XML (SQL Server)](https://msdn.microsoft.com/library/ms178107.aspx)を参照してください。 
   
-  これらのポーリング操作の詳細については、次を参照してください。[のポーリング サポート](https://msdn.microsoft.com/library/dd788416.aspx)します。  
+  これらのポーリング操作の詳細については、[のポーリング サポート](https://msdn.microsoft.com/library/dd788416.aspx)を参照してください。  
   
 > [!NOTE]
 >  [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]によりアダプターでクライアントに、同じデータベースまたはテーブルの 1 つ以上のポーリングや TypedPolling 操作を 1 つの BizTalk アプリケーションがあります。 アダプターには、このようなシナリオをサポートするには、一意の ID が含まれています — **InboundID**— 接続 URI。 接続 URI に追加されたときに、この ID になります一意、単一の BizTalk アプリケーションで複数のポーリング操作できるようにします。  

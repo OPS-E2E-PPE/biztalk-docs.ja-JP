@@ -34,7 +34,7 @@ ms.locfileid: "36968019"
 > [!NOTE]
 >  Visual Studio のパイプライン デザイナーで、上記の BTARN 送信パイプラインのコンポーネントのいずれかを選択しても、そのコンポーネントのプロパティは [プロパティ] ペインには表示されません。 コンポーネントのプロパティを表示する必要があります、コンポーネントを追加するツールボックスを使用して、 **[ツールボックス アイテムの**ツール] メニュー コマンド;、送信パイプラインから既存コンポーネントを削除してからコンポーネントを追加し、パイプライン デザイナーで適切なステージにツールボックスです。 コンポーネントを選択すると、そのコンポーネントのプロパティが [プロパティ] ペインに表示されます。  
   
- このパイプラインでは、このパイプライン内のメッセージ フローのコンポーネントに関する詳細については、次を参照してください。 [BTARN 送信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/btarn-send-pipeline.md)します。  
+ このパイプラインでは、このパイプライン内のメッセージ フローのコンポーネントに関する詳細については、[BTARN 送信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/btarn-send-pipeline.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [パイプラインのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/pipeline-samples.md)   

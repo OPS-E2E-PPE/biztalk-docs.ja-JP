@@ -77,7 +77,7 @@ ms.locfileid: "36995387"
    </configuration>  
    ```  
   
-5. Windows Communication Foundation (WCF) Service Trace Viewer ツールを使用すると、WCF によって記録されたメッセージを分析できます。 Service Trace Viewer は、Windows Vista の Microsoft Windows ソフトウェア開発キット (SDK) および [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] ランタイム コンポーネントに含まれています。 Windows SDK をダウンロードするには、Microsoft ダウンロード センターから[ http://go.microsoft.com/fwlink/?LinkID=75636](http://go.microsoft.com/fwlink/?LinkID=75636)します。 詳細については、このツールを使用して、次を参照してください。"Service Trace Viewer Tool (SvcTraceViewer.exe)"at [ http://go.microsoft.com/fwlink/?LinkId=88991](http://go.microsoft.com/fwlink/?LinkId=88991)します。  
+5. Windows Communication Foundation (WCF) Service Trace Viewer ツールを使用すると、WCF によって記録されたメッセージを分析できます。 Service Trace Viewer は、Windows Vista の Microsoft Windows ソフトウェア開発キット (SDK) および [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] ランタイム コンポーネントに含まれています。 Windows SDK をダウンロードするには、Microsoft ダウンロード センターから[ http://go.microsoft.com/fwlink/?LinkID=75636](http://go.microsoft.com/fwlink/?LinkID=75636)します。 詳細については、このツールを使用して、"Service Trace Viewer Tool (SvcTraceViewer.exe)"at [ http://go.microsoft.com/fwlink/?LinkId=88991](http://go.microsoft.com/fwlink/?LinkId=88991)を参照してください。  
   
 ### <a name="return-managed-exception-information-to-the-client-in-a-soap-fault-to-ease-debugging"></a>マネージド例外情報を SOAP エラーの発生しているクライアントに返してデバッグ処理を軽減する  
   

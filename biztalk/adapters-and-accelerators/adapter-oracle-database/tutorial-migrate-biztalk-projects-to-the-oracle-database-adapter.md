@@ -44,7 +44,7 @@ Microsoft BizTalk Server に付属している Oracle データベースの BizT
 >  説明を簡潔にするため、このチュートリアルでは、BizTalk ODBC Adapter for Oracle Database が参照されます「vPrev Oracle データベース アダプター」として 同様に、vPrev Oracle データベース アダプタを使用する BizTalk プロジェクトとして参照される「vPrev BizTalk プロジェクトです」  
   
 ## <a name="sample-used-for-the-tutorial"></a>このチュートリアルで使用されるサンプル  
- このチュートリアルは、vPrev BizTalk プロジェクトを移行する方法を示すサンプル (Oracle_Migration) に基づいています。 Microsoft とサンプルが提供される[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
+ このチュートリアルは、vPrev BizTalk プロジェクトを移行する方法を示すサンプル (Oracle_Migration) に基づいています。 Microsoft とサンプルが提供される[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
   

@@ -99,7 +99,7 @@ uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*
 uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/'];  
 ```  
   
- リゾルバーとアダプターのプロバイダー フレームワークの競合回避モジュールのマネージャーは、エンドポイントを解決し、メッセージのエンドポイントのプロパティを設定できます。 このしくみの詳細については、次を参照してください。[を使用して動的な解決とルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)します。  
+ リゾルバーとアダプターのプロバイダー フレームワークの競合回避モジュールのマネージャーは、エンドポイントを解決し、メッセージのエンドポイントのプロパティを設定できます。 このしくみの詳細については、[を使用して動的な解決とルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)を参照してください。  
   
  サービスでは、メッセージの処理が完了すると後、は、送信メッセージで旅行計画を進める必要があり、メッセージをメッセージ ボックス データベースに発行します。 次の例では、オーケストレーションの式図形のプロセスを示します。  
   

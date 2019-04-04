@@ -85,4 +85,4 @@ ms.locfileid: "36971427"
   
 - **RemoveByteOrderMark**します。 これは、コンポーネントがバイト順マークを削除するかどうかを示すブール型プロパティ (通常は**0xEFBB、0xBFFFFE、** または**0 xfeff**)、XML ドキュメント ストリームの先頭から。  
   
-  これらのコンポーネントを使用する方法の例は、次を参照してください。[をインストールすると、Namespace コンポーネント サンプルを実行している](../esb-toolkit/installing-and-running-the-namespace-component-sample.md)します。
+  これらのコンポーネントを使用する方法の例は、[をインストールすると、Namespace コンポーネント サンプルを実行している](../esb-toolkit/installing-and-running-the-namespace-component-sample.md)を参照してください。

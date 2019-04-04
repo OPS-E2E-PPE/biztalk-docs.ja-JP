@@ -36,7 +36,7 @@ ms.locfileid: "36998147"
    ```  
   
    > [!NOTE]
-   >  OptimalUsage と MaximalUsage には各退避プロパティの既定値があります。 これらの値は BTSNTSvc.exe.config ファイルで変更できます。 詳細については、次を参照してください。[既定の退避プロパティ](../core/dehydration-default-properties.md)します。  
+   >  OptimalUsage と MaximalUsage には各退避プロパティの既定値があります。 これらの値は BTSNTSvc.exe.config ファイルで変更できます。 詳細については、[既定の退避プロパティ](../core/dehydration-default-properties.md)を参照してください。  
   
 2. その他の alpha コンポーネントも同様に定義します。 次のように定義します。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "36998147"
    ```  
   
    > [!NOTE]
-   >  MinThreshold の既定値 = 1。 MaxThreshold の既定値 = 1800。 これらの値は BTSNTSvc.exe.config ファイルで変更できます。 詳細については、次を参照してください。[既定の退避プロパティ](../core/dehydration-default-properties.md)します。  
+   >  MinThreshold の既定値 = 1。 MaxThreshold の既定値 = 1800。 これらの値は BTSNTSvc.exe.config ファイルで変更できます。 詳細については、[既定の退避プロパティ](../core/dehydration-default-properties.md)を参照してください。  
   
 4. 次に TimeBlocked と EstimatedTime を定義します。  
   

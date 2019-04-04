@@ -43,7 +43,7 @@ ms.locfileid: "36969651"
   
 1. WCF ベースを使用して、SD_RFC_CUSTOMER_GET RFC のメタデータを生成[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 使用することができます、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]メタデータを生成します。  
   
-    Rfc のメタデータを生成する方法の詳細については、次を参照してください。[参照、SAP で RFC 操作のメタデータを検索し、get](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)します。 スキーマを生成すると後のような名前のファイル*SapBindingSchema.xsd* BizTalk プロジェクトに追加されます。 このファイルには、WCF ベースを使用して SD_RFC_CUSTOMER_GET を呼び出すためのスキーマが含まれています。[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
+    Rfc のメタデータを生成する方法の詳細については、[参照、SAP で RFC 操作のメタデータを検索し、get](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)を参照してください。 スキーマを生成すると後のような名前のファイル*SapBindingSchema.xsd* BizTalk プロジェクトに追加されます。 このファイルには、WCF ベースを使用して SD_RFC_CUSTOMER_GET を呼び出すためのスキーマが含まれています。[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
 2. SD_RFC_CUSTOMER_GET RFC のメタデータを生成すると、ポートのバインド ファイルも作成します。 次の手順で、SAP システムにメッセージを送信する Wcf-custom 送信ポートを作成するこのバインド ファイルが使用されます。 操作の SOAP アクションは、メタデータの生成対象の操作にも設定されます。 SD_RFC_CUSTOMER_GET RFC のメタデータを生成する場合など、送信ポートでの SOAP アクションの操作名では、"SD_RFC_CUSTOMER_GET"になります。 ただし、操作名とオーケストレーションの一部異なる可能性があります、たとえば、作成した論理送信ポートで"Operation_1"。 その結果、送信ポートを使用して SAP システムにメッセージを送信するときに、エラーが発生します。 これを回避するには、ことを確認しますで論理送信ポート、オーケストレーションでは、メタデータを生成する操作名と同じ操作名。  
   

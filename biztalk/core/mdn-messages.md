@@ -34,7 +34,7 @@ Message Disposition Notification (MDN) は、AS2 メッセージに対する応�
     >  同期 MDN は、HTTP 応答 ("200 OK" など) としても機能します。  
   
     > [!NOTE]
-    >  Mdn の受信側の処理の詳細については、次を参照してください。[受信 MDN の処理](../core/processing-an-incoming-mdn.md)します。 Mdn の送信側の処理の詳細については、次を参照してください。[送信 MDN の送信](../core/sending-an-outgoing-mdn.md)します。  
+    >  Mdn の受信側の処理の詳細については、[受信 MDN の処理](../core/processing-an-incoming-mdn.md)を参照してください。 Mdn の送信側の処理の詳細については、[送信 MDN の送信](../core/sending-an-outgoing-mdn.md)を参照してください。  
   
 ## <a name="properties-used-to-generate-the-mdn"></a>MDN の生成に使用されるプロパティ  
  AS2Receive 受信パイプラインは、パーティの AS2 アグリーメントのプロパティを使用する場合、MDN を生成、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**で一方向アグリーメントタブでプロパティが選択されています。**アグリーメントのプロパティ** ダイアログ ボックス。 この場合、MDN の生成時にメッセージ ヘッダーの AS2-From プロパティが使用されますが、他のプロパティはパーティの AS2 アグリーメント設定から取得されます。  
@@ -44,14 +44,14 @@ Message Disposition Notification (MDN) は、AS2 メッセージに対する応�
  MDN には署名を付加できますが、MDN を暗号化または圧縮することはできません。  
   
 ## <a name="mdn-context-properties"></a>MDN のコンテキスト プロパティ  
- MDN メッセージの処理に使用されるコンテキスト プロパティには、昇格できるプロパティや非公開のプロパティが含まれますが、これらのプロパティは中断されたメッセージや追跡メッセージで表示できます。 これらのコンテキスト プロパティの一覧は、次を参照してください。 [AS2 コンテキスト プロパティ](../core/as2-context-properties.md)します。  
+ MDN メッセージの処理に使用されるコンテキスト プロパティには、昇格できるプロパティや非公開のプロパティが含まれますが、これらのプロパティは中断されたメッセージや追跡メッセージで表示できます。 これらのコンテキスト プロパティの一覧は、[AS2 コンテキスト プロパティ](../core/as2-context-properties.md)を参照してください。  
   
  MDN を生成するには、DispositionMode および DispositionType の両コンテキスト プロパティを昇格させる必要があります。 AS2 または EDI ペイロードでエラーが発生すると、DispositionType プロパティによってエラーが通知されます。 このプロパティを表示、**メッセージの詳細**で中断されたサービス インスタンスから (サービスの詳細 ダイアログ ボックス) を使用して表示されるダイアログ ボックス、**グループ ハブ**のページ、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 ヘッダーでエラーが発生すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は DispositionType プロパティによってエラーを通知し、MDN の送信を試みますが、エラーによっては MDN を送信できない場合があります。  
   
 ## <a name="mdn-headers"></a>MDN のヘッダー  
  MDN には次のヘッダーが含まれます。  
   
-- **Http/as2 ヘッダー**します。 詳細については、次を参照してください。 [AS2 メッセージ](../core/as2-messages.md)します。  
+- **Http/as2 ヘッダー**します。 詳細については、[AS2 メッセージ](../core/as2-messages.md)を参照してください。  
   
 - **転送層**します。 これには、Content-Type ヘッダー ("signed multipart message" を含む)、MIC のアルゴリズム、署名の書式設定プロトコル、および最も外側のマルチパート境界サブヘッダーが含まれます。  
   

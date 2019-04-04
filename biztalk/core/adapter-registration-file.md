@@ -20,7 +20,7 @@ ms.lasthandoff: 12/04/2018
 ms.locfileid: "52826474"
 ---
 # <a name="adapter-registration-file"></a>アダプターの登録ファイル
-カスタム アダプター コードを正常にビルドしたら、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に登録する必要があります。 これを行うには、レジストリを適切なアダプターの設定で更新します。 レジストリ ファイルは手動で記述できますが、正確かつ複雑な情報を入力する必要があるため、手動での記述はエラーを招く原因となります。 推奨される方法は、アダプターのレジストリ ウィザードを実行することです。 アダプターのレジストリ ウィザードには、最初からレジストリ ファイルを作成するのとまったく同じオプションが用意されており、ファイルでエラーが発生する可能性を減らすことができます。 アダプター レジストリ ウィザードの詳細については、次を参照してください。[アダプター レジストリ ウィザード](../core/adapter-registry-wizard.md)します。  
+カスタム アダプター コードを正常にビルドしたら、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に登録する必要があります。 これを行うには、レジストリを適切なアダプターの設定で更新します。 レジストリ ファイルは手動で記述できますが、正確かつ複雑な情報を入力する必要があるため、手動での記述はエラーを招く原因となります。 推奨される方法は、アダプターのレジストリ ウィザードを実行することです。 アダプターのレジストリ ウィザードには、最初からレジストリ ファイルを作成するのとまったく同じオプションが用意されており、ファイルでエラーが発生する可能性を減らすことができます。 アダプター レジストリ ウィザードの詳細については、[アダプター レジストリ ウィザード](../core/adapter-registry-wizard.md)を参照してください。  
   
  StaticAdapterManagement.reg ファイルと DynamicAdapterManagement.reg ファイル *\<ドライブ\>* : \Program Files\Microsoft BizTalk Server\SDK\Samples\AdaptersDevelopment\File アダプター。 これらのファイルのいずれかを実行すると (それをダブルクリックまたは右クリックして選択できます**マージ**)、レジストリのサンプル ファイル アダプターを登録し、アセンブリをグローバル アセンブリ キャッシュにインストールします。 カスタム アダプターを登録するための最適な方法としては、アダプターのレジストリ ウィザードを使用して新しいレジストリ ファイルを作成することをお勧めします。 カスタムの静的アダプターがサンプル アダプターに似ている場合は、作成する代わりに既存のレジストリ ファイルを変更し、StaticAdapterManagement.reg ファイルの次のプロパティを開いて変更します。  
   
@@ -63,7 +63,7 @@ ms.locfileid: "52826474"
   
   アダプター フレームワークに基づいたアダプターは、送信ハンドラー、受信ハンドラー、および場所のプロパティ ページでこれらの固有の GUID を使用する必要があります。 アダプターが送信専用のアダプターの場合にだけ必要があることに注意してください、 **OutboundProtocol_PageProv**と**TransmitLocation_PageProv**Guid。 単に受信専用のアダプターを必要と同様に、 **InboundProtocol_PageProv**と**ReceiveLocation_PageProv** Guid。  
   
-  次のコードは、StaticAdapterManagement.reg ファイルのものですが、DynamicAdapterManagement.reg ファイルのコードもこれとほぼ同じです。 各レジストリ プロパティの詳細については、次を参照してください。[アダプターの登録](../core/registering-an-adapter.md)します。 レジストリ ファイルを変更した場合は、ファイルを保存してから実行します。  
+  次のコードは、StaticAdapterManagement.reg ファイルのものですが、DynamicAdapterManagement.reg ファイルのコードもこれとほぼ同じです。 各レジストリ プロパティの詳細については、[アダプターの登録](../core/registering-an-adapter.md)を参照してください。 レジストリ ファイルを変更した場合は、ファイルを保存してから実行します。  
   
 ```  
 Windows Registry Editor Version 5.00  
@@ -96,7 +96,7 @@ Windows Registry Editor Version 5.00
   
 ### <a name="to-register-the-static-sample-adapter"></a>サンプルの静的アダプターを登録するには  
   
-1. 次の手順を使用して、SDK のファイル アダプター サンプルを実行します。 詳細については、次を参照してください。[ファイル アダプター (BizTalk Server サンプル)](../core/file-adapter-biztalk-server-sample.md)します。  
+1. 次の手順を使用して、SDK のファイル アダプター サンプルを実行します。 詳細については、[ファイル アダプター (BizTalk Server サンプル)](../core/file-adapter-biztalk-server-sample.md)を参照してください。  
   
 2. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリックします**Windows エクスプ ローラー**します。  
   

@@ -37,7 +37,7 @@ ms.locfileid: "36981019"
 # <a name="large-distributed-architecture"></a>大規模な分散アーキテクチャ
 システム アーキテクチャの詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]展開を参照してください[Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md)します。  
   
- このセクションで示すアーキテクチャは実稼働環境用です。 テスト環境や開発環境、その環境に対する管理ネットワークの推奨事項は含まれていません。 ステージングと運用環境にテストから、開発、テスト環境から、構成の詳細については、次を参照してください。 [BizTalk アプリケーションの配置](../core/deploying-biztalk-applications.md)します。  
+ このセクションで示すアーキテクチャは実稼働環境用です。 テスト環境や開発環境、その環境に対する管理ネットワークの推奨事項は含まれていません。 ステージングと運用環境にテストから、開発、テスト環境から、構成の詳細については、[BizTalk アプリケーションの配置](../core/deploying-biztalk-applications.md)を参照してください。  
   
  次の図は、高度な分散型 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アーキテクチャを示しています。このアーキテクチャは、重層的な防御について考慮されています。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "36981019"
  また、企業ドメインからのアクセスが必要で、外部の脅威から保護する必要があるサービスも含まれています。 このドメイン内のサーバーの 1 つのホスト、管理ツール: BizTalk 管理コンソールおよびエンタープライズ シングル サインオン (SSO) 管理ユーティリティです。 また、SSO マスター シークレット サーバーも含まれています。このサーバーでは SSO システムで SSO データベース内のデータの暗号化に使用するマスター シークレット (暗号化キー) を保持します。 このドメインのいずれかのサーバーには、稼働状況の監視データおよびビジネスの監視データの追跡をサポートするホストのインスタンスがあります。  
   
 > [!NOTE]
->  エンタープライズ シングル サインオン システムの場合、一部の処理サーバーには BizTalk Server コンポーネントは含まれず、SSO サービスだけが含まれる場合があります。 詳細については、次を参照してください。[エンタープライズ シングル サインオンの高可用性](../core/high-availability-for-enterprise-single-sign-on.md)します。  
+>  エンタープライズ シングル サインオン システムの場合、一部の処理サーバーには BizTalk Server コンポーネントは含まれず、SSO サービスだけが含まれる場合があります。 詳細については、[エンタープライズ シングル サインオンの高可用性](../core/high-availability-for-enterprise-single-sign-on.md)を参照してください。  
   
  **データ ドメイン。** データ ドメインは、インターネットから最も離れた位置にあるドメインで、重要なビジネス データと処理データを格納する SQL Server データベースが含まれています。このドメインは、他のドメインを信頼しません。 SQL Server が実行されている別のサーバーに各 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースがある場合、実行する処理の主な種類 (読み取り操作中心、書き込み操作中心、またはその両方) に基づいてデータベースを結合することをお勧めします。  
   
@@ -77,7 +77,7 @@ ms.locfileid: "36981019"
 >  フェールオーバー保護の場合は、各 BizTalk データベースをクラスター化するをお勧めします。 SQL Server フェールオーバー クラスタ リングの詳細については、Microsoft MSDN Web サイトを参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=131016](http://go.microsoft.com/fwlink/?LinkId=131016)します。  
   
 > [!NOTE]
->  ログ配布用に送信先システムの詳細については、次を参照してください。[バックアップと、BizTalk Server データベースを復元](../core/backing-up-and-restoring-the-biztalk-server-databases.md)します。  
+>  ログ配布用に送信先システムの詳細については、[バックアップと、BizTalk Server データベースを復元](../core/backing-up-and-restoring-the-biztalk-server-databases.md)を参照してください。  
   
  上記の図では、Forefront Threat Management Gateway (TMG) 2010 サーバーがソフトウェア ファイアウォールの役割を担い、これらの各ドメインを保護すると共に境界となっています。 また、各ドメインには独自のドメイン コントローラーがあります。このドメイン コントローラーは、重要なサーバーを含むドメイン (データ ドメイン) から外部に接続されたサーバー (境界ネットワークおよび企業ドメイン) への信頼関係が確立されていて、サーバーには接続する必要がある他のドメイン内のサービスにのみアクセス権が与えられています。 サービス インターフェイス ドメインとサービス ドメインの両方からデータ ドメインへのトラフィックを制限するファイアウォール (FW1) があります。 同様に、サービス インターフェイス ドメインと操作ドメインの両方からサービス ドメインへのトラフィックを制限するファイアウォール (FW2) もあります。  
   
@@ -89,7 +89,7 @@ ms.locfileid: "36981019"
   
   企業ドメイン内に開発コンピューターが存在する場合がありますが、それらのコンピューターの構成についてはこのドキュメントでは説明しません。  
   
-  インフォメーション ワーカー サービスを含む BizTalk Server アーキテクチャの詳細については、次を参照してください。[インフォメーション ワーカー サービスでの大規模な分散アーキテクチャ](../core/large-distributed-architecture-with-information-worker-services.md)します。  
+  インフォメーション ワーカー サービスを含む BizTalk Server アーキテクチャの詳細については、[インフォメーション ワーカー サービスでの大規模な分散アーキテクチャ](../core/large-distributed-architecture-with-information-worker-services.md)を参照してください。  
   
   ドメイン間の信頼関係は次のとおりです。  
   
@@ -105,9 +105,9 @@ ms.locfileid: "36981019"
   
   上記の図はセキュリティに焦点を当てていますが、可用性とパフォーマンスにネットワーク負荷分散 (NLB) とクラスター サービスを使用して、アーキテクチャを拡張することもできます。  
   
-  高可用性の詳細については、次を参照してください。[高可用性の計画](../core/planning-for-high-availability3.md)します。  
+  高可用性の詳細については、[高可用性の計画](../core/planning-for-high-availability3.md)を参照してください。  
   
-  パフォーマンスの詳細については、次を参照してください。[パフォーマンス維持の計画](../core/planning-for-sustained-performance.md)します。  
+  パフォーマンスの詳細については、[パフォーマンス維持の計画](../core/planning-for-sustained-performance.md)を参照してください。  
   
   次の表は、実現するサービス レベル契約 (SLA) に応じたネットワーク負荷分散 (NLB) を構成できるサーバーの種類を示しています。  
   
@@ -126,7 +126,7 @@ ms.locfileid: "36981019"
 |[マスター シークレット サーバー]|BizTalk Server|サービス ドメイン|  
 |すべての SQL Server|SQL Server|データ ドメイン|  
   
- インフォメーション ワーカー サービスを含む BizTalk Server アーキテクチャの詳細については、次を参照してください。[インフォメーション ワーカー サービスでの大規模な分散アーキテクチャ](../core/large-distributed-architecture-with-information-worker-services.md)します。  
+ インフォメーション ワーカー サービスを含む BizTalk Server アーキテクチャの詳細については、[インフォメーション ワーカー サービスでの大規模な分散アーキテクチャ](../core/large-distributed-architecture-with-information-worker-services.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server のサンプル アーキテクチャ](../core/sample-biztalk-server-architectures.md)   

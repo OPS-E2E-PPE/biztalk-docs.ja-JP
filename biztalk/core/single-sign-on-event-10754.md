@@ -36,4 +36,4 @@ ms.locfileid: "36993435"
  SSO システムは現在無効になっています。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- SSO システムを有効にする方法の詳細については、次を参照してください。 [SSO を有効にする方法](../core/how-to-enable-sso.md)します。
+ SSO システムを有効にする方法の詳細については、[SSO を有効にする方法](../core/how-to-enable-sso.md)を参照してください。

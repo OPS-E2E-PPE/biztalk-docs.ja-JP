@@ -25,7 +25,7 @@ ms.locfileid: "36999819"
 # <a name="limitations-of-the-net-framework-data-provider-for-mysap-business-suite"></a>.NET Framework Data Provider for mySAP Business Suite の制限事項
 次の制限事項を呼びます、 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)])。  
   
-- [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]はセキュリティで保護されたネットワーク接続 (SNC) を使用して SAP システムへの接続をサポートしていません。 SNC の詳細については、次を参照してください。 [SAP システムとアダプター間のセキュリティ](../../adapters-and-accelerators/adapter-sap/security-between-the-sap-system-and-the-adapter.md)します。
+- [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]はセキュリティで保護されたネットワーク接続 (SNC) を使用して SAP システムへの接続をサポートしていません。 SNC の詳細については、[SAP システムとアダプター間のセキュリティ](../../adapters-and-accelerators/adapter-sap/security-between-the-sap-system-and-the-adapter.md)を参照してください。
   
 - [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]はサポートしていません、`DbType`または`Size`のプロパティ、`SAPParameter`します。 代わりに、ユーザーがの値を指定すると、`SAPParameter`値を内部的に確立されている .NET と SAP のデータ型マッピングに従って .NET データ型にキャストします。  
   

@@ -296,7 +296,7 @@ ms.locfileid: "36970755"
 2.  Employee.xml として保存します。  
   
 ## <a name="next-steps"></a>次の手順  
- Oracle E-business Suite からデータを取得する SharePoint アプリケーションが作成する必要があります。 手順については、次を参照してください。[手順 3: Oracle E-business Suite からデータを取得する SharePoint アプリケーションを作成](../../adapters-and-accelerators/adapter-oracle-ebs/step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-ebs.md)です。  
+ Oracle E-business Suite からデータを取得する SharePoint アプリケーションが作成する必要があります。 手順については、[手順 3: Oracle E-business Suite からデータを取得する SharePoint アプリケーションを作成](../../adapters-and-accelerators/adapter-oracle-ebs/step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-ebs.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [チュートリアル: SharePoint サイト上の Oracle E-business Suite からデータを表示します。](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)

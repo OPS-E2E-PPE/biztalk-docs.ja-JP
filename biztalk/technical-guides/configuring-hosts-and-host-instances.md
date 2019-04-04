@@ -22,9 +22,9 @@ ms.locfileid: "36969003"
 # <a name="configuring-hosts-and-host-instances"></a>ホストとホスト インスタンスを構成します。
 BizTalk ホストは、展開することができますを 0 個以上の実行時プロセスの論理セットを表します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]サービスおよび成果物 (アダプター ハンドラー、受信場所、およびオーケストレーション)。 ホスト インスタンスが実行しているコンピューター上のホストの物理インスタンス[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 BizTalk ホストとホスト インスタンスの詳細については、次を参照してください。[ホスト](http://go.microsoft.com/fwlink/?LinkId=154189)(<http://go.microsoft.com/fwlink/?LinkId=154189>) と[ホスト インスタンス](http://go.microsoft.com/fwlink/?LinkId=154190)(<http://go.microsoft.com/fwlink/?LinkId=154190>)。  
   
- BizTalk ホストとホスト インスタンスの管理に関する詳細については、次を参照してください。 [BizTalk ホストの管理およびホスト インスタンス](http://go.microsoft.com/fwlink/?LinkId=154191)(http://go.microsoft.com/fwlink/?LinkId=154191)します。  
+ BizTalk ホストとホスト インスタンスの管理に関する詳細については、[BizTalk ホストの管理およびホスト インスタンス](http://go.microsoft.com/fwlink/?LinkId=154191)(http://go.microsoft.com/fwlink/?LinkId=154191)を参照してください。  
   
- 専用の追跡ホストを構成する方法については、次を参照してください。[専用の追跡ホストを構成する](../technical-guides/configuring-a-dedicated-tracking-host.md)します。  
+ 専用の追跡ホストを構成する方法については、[専用の追跡ホストを構成する](../technical-guides/configuring-a-dedicated-tracking-host.md)を参照してください。  
   
 ## <a name="separating-host-instances-by-functionality"></a>機能別のホスト インスタンスを分離します。  
  ホスト インスタンスの構成の高可用性の側面だけでなく送信、受信、処理、および複数のホストに追跡機能を分離する必要があります。 これは柔軟に、BizTalk グループで、ワークロードを構成するときに、BizTalk グループ間での処理の分散の主要な手段です。 これにより他のホストに影響を与えずに 1 つのホストを停止することもできます。 たとえば、停止できるようにメッセージを送信するキュー メッセージ ボックス データベースで発生するメッセージの受信の受信を許可する一方する可能性があります。  

@@ -30,7 +30,7 @@ ms.locfileid: "36988867"
   
 - `0A1 agreement` プロパティを取引先アグリーメントに**非 0A1**  
   
-  CIDX と RosettaNet の違いについては、次を参照してください。 [CIDX サポート](../../adapters-and-accelerators/accelerator-rosettanet/cidx-support.md)します。  
+  CIDX と RosettaNet の違いについては、[CIDX サポート](../../adapters-and-accelerators/accelerator-rosettanet/cidx-support.md)を参照してください。  
   
 ### <a name="to-set-up-cidx-message-exchange"></a>CIDX メッセージ交換をセットアップするには  
   

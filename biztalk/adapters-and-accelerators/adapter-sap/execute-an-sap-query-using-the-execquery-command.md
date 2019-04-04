@@ -29,13 +29,13 @@ ms.locfileid: "36972163"
   
 1. 参照を含める (と、コードでステートメントを使用) に**Microsoft.Data.SAPClient**します。  
   
-2. 作成、 **SAPConnection** SAP 接続文字列のデータ プロバイダーを使用してオブジェクト。 接続文字列の詳細については、次を参照してください。 [SAP 接続文字列のデータ プロバイダーの種類について](../../adapters-and-accelerators/adapter-sap/read-about-data-provider-types-for-the-sap-connection-string.md)します。  
+2. 作成、 **SAPConnection** SAP 接続文字列のデータ プロバイダーを使用してオブジェクト。 接続文字列の詳細については、[SAP 接続文字列のデータ プロバイダーの種類について](../../adapters-and-accelerators/adapter-sap/read-about-data-provider-types-for-the-sap-connection-string.md)を参照してください。  
   
 3. 呼び出すことによって、SAP システムへの接続を開く**オープン**上、 **SAPConnection**します。  
   
 4. 作成、 **SAPCommand**オブジェクトから、 **SAPConnection**します。  
   
-5. EXECQUERY ステートメントの指定、 **CommandText**のプロパティ、 **SAPCommand**します。 かどうか、必要に応じてパラメーターを指定できますを使用して**SAPParameter**オブジェクト。 EXECQUERY ステートメントを使用する SAP システムで定義されているクエリを実行する方法の詳細については、次を参照してください。 [sap EXECQUERY ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-an-execquery-statement-in-sap.md)します。  
+5. EXECQUERY ステートメントの指定、 **CommandText**のプロパティ、 **SAPCommand**します。 かどうか、必要に応じてパラメーターを指定できますを使用して**SAPParameter**オブジェクト。 EXECQUERY ステートメントを使用する SAP システムで定義されているクエリを実行する方法の詳細については、[sap EXECQUERY ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-an-execquery-statement-in-sap.md)を参照してください。  
   
 6. クエリを実行しで結果を取得するコマンドを実行する**SAPDataReader**します。  
   

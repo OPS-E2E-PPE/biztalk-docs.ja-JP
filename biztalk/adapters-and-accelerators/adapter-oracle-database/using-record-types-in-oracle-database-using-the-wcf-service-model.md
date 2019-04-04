@@ -37,7 +37,7 @@ Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに
   
 - 関数の戻り値であるレコードの種類。  
   
-  このトピックでは、WCF サービス モデルでのレコードの種類の表示方法を示します。 Oracle プロシージャと関数を呼び出す方法については、次を参照してください。[関数を呼び出すと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)します。  
+  このトピックでは、WCF サービス モデルでのレコードの種類の表示方法を示します。 Oracle プロシージャと関数を呼び出す方法については、[関数を呼び出すと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)を参照してください。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
  このトピックの例では、SCOTT/ACCOUNT_PKG Oracle の PL/SQL パッケージを使用します。 ACCOUNT_PKG から、次の要素が使用されます。  
@@ -54,10 +54,10 @@ FUNCTION get_accountinfo(aid NUMBER) RETURN acctinfo_rec_type;
   
  このパッケージを生成するスクリプトが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]サンプル。 詳細については、スクリプトを参照してください。  
   
- サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
+ サンプルの詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
   
 ## <a name="record-types-in-the-wcf-service-model"></a>WCF サービス モデル内のレコードの種類  
- Oracle のレコードの種類は、複雑な XML 型として表されます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 WCF サービス モデルで複雑な XML 型が、クラスによって表され、このクラスのプロパティは、Oracle のレコードの種類のフィールドを表します。 レコード型のパラメーターを表すクラスは、関数またはプロシージャのスキーマとパッケージ (ある場合) に限定されている名前空間に生成されます。 この名前空間には、関数またはプロシージャ パラメーターの一意に識別します。 次の名前空間での Oracle パッケージの ACCOUNT_PKG CREATE_ACCOUNT プロシージャにレコードの型パラメーターを作成するなど。`microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.CREATE_ACCOUNT`します。 プロシージャおよび関数での複合型を表すために WCF サービス モデルで使用する名前空間の詳細については、次を参照してください。[関数を呼び出すと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)します。  
+ Oracle のレコードの種類は、複雑な XML 型として表されます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 WCF サービス モデルで複雑な XML 型が、クラスによって表され、このクラスのプロパティは、Oracle のレコードの種類のフィールドを表します。 レコード型のパラメーターを表すクラスは、関数またはプロシージャのスキーマとパッケージ (ある場合) に限定されている名前空間に生成されます。 この名前空間には、関数またはプロシージャ パラメーターの一意に識別します。 次の名前空間での Oracle パッケージの ACCOUNT_PKG CREATE_ACCOUNT プロシージャにレコードの型パラメーターを作成するなど。`microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.CREATE_ACCOUNT`します。 プロシージャおよび関数での複合型を表すために WCF サービス モデルで使用する名前空間の詳細については、[関数を呼び出すと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)を参照してください。  
   
  レコード型のパラメーターの名前空間は、プロシージャまたは関数によって決まりますが、レコードの種類が宣言されているレコードの型パラメーターに対して生成されたクラスの名前がところで決定されます。 次の表は、Oracle のレコードの型パラメーターを宣言することの 2 つの方法に基づいて、クラスの名前を生成する方法を示します。  
   
@@ -212,7 +212,7 @@ namespace microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.GET
 ```  
   
 ## <a name="using-record-types-in-your-code"></a>コード内のレコードの種類を使用します。  
- レコードの種類を使用して、コードでは簡単です。 レコード型のパラメーターを持つ関数またはプロシージャを呼び出すには、レコード型または型のインスタンスを作成し、WCF クライアントで、適切なメソッドに渡すことです。 プロシージャまたは関数から返される任意の出力のプロパティを読み取ることができます、IN OUT パラメーターまたは関数の戻り値または場合は、レコードの種類として宣言されます。 WCF サービス モデルを使用してプロシージャと関数を呼び出す方法の詳細については、次を参照してください。[関数を呼び出すと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)します。  
+ レコードの種類を使用して、コードでは簡単です。 レコード型のパラメーターを持つ関数またはプロシージャを呼び出すには、レコード型または型のインスタンスを作成し、WCF クライアントで、適切なメソッドに渡すことです。 プロシージャまたは関数から返される任意の出力のプロパティを読み取ることができます、IN OUT パラメーターまたは関数の戻り値または場合は、レコードの種類として宣言されます。 WCF サービス モデルを使用してプロシージャと関数を呼び出す方法の詳細については、[関数を呼び出すと、WCF サービス モデルを使用して Oracle データベースでプロシージャ](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md)を参照してください。  
   
 > [!IMPORTANT]
 >  Oracle のレコード型のパラメーター (と関数の戻り値) は、その関数またはプロシージャ (、およびパッケージ) の名前空間によって修飾されます。 これは、2 つの別のプロシージャまたは関数で使用されているレコードの種類が各プロシージャまたは関数の別の名前空間にあることを意味します。 特定のプロシージャまたは関数を使用する場合は、レコードの種類を正しく修飾するためを確認する必要があります。 たとえば、パッケージに 2 つの異なる関数を IN パラメーターとして使用されるレコードの種類 (レコードの種類の宣言) が各関数に対して生成された一意の名前空間に対応する各宣言に WCF クライアント コードで 2 回宣言されます。 それぞれの各関数に渡すパラメーターで、正しい名前空間を使用することを確認する必要があります。  

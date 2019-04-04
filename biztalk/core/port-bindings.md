@@ -68,7 +68,7 @@ ms.locfileid: "36972539"
   
 - パートナー オーケストレーションの直接バインド ポート  
   
-  直接バインド ポートを操作する方法の詳細については、次を参照してください。[オーケストレーションでの直接バインド ポートの操作](../core/working-with-direct-bound-ports-in-orchestrations.md)します。  
+  直接バインド ポートを操作する方法の詳細については、[オーケストレーションでの直接バインド ポートの操作](../core/working-with-direct-bound-ports-in-orchestrations.md)を参照してください。  
   
 > [!NOTE]
 >  直接バインドを使用する場合、1 つの要求 - 応答ポートと 2 つの一方向ポートの間でメッセージを交換することはできません。  
@@ -83,10 +83,10 @@ ms.locfileid: "36972539"
 DynamicSendPort(Microsoft.XLANGs.BaseTypes.Address)="mailto:johnd@contoso.com";  
 ```  
   
- ポートに値を動的に割り当てる方法については、次を参照してください。[動的ポートに値を割り当てる方法](../core/how-to-use-expressions-to-assign-values-to-dynamic-ports.md)します。  
+ ポートに値を動的に割り当てる方法については、[動的ポートに値を割り当てる方法](../core/how-to-use-expressions-to-assign-values-to-dynamic-ports.md)を参照してください。  
   
 ## <a name="web-ports"></a>Web ポート  
- プロジェクトに Web サービスへの参照が含まれる場合、オーケストレーション デザイナーで参照が検出されて、対応する Web ポートの種類が使用できるようになります。 Web ポートを作成するには、オーケストレーションにポートを追加して、既存の Web ポートの種類を割り当てます。 詳細については、次を参照してください。 [Web ポートの作成](../core/creating-web-ports.md)です。  
+ プロジェクトに Web サービスへの参照が含まれる場合、オーケストレーション デザイナーで参照が検出されて、対応する Web ポートの種類が使用できるようになります。 Web ポートを作成するには、オーケストレーションにポートを追加して、既存の Web ポートの種類を割り当てます。 詳細については、[Web ポートの作成](../core/creating-web-ports.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [ポートの種類を操作する方法](../core/how-to-work-with-port-types.md)   

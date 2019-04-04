@@ -23,7 +23,7 @@ ms.locfileid: "36992035"
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]一連の標準的な操作 (Select、Insert、Update、および Delete の各インターフェイス テーブル) と Oracle E-business Suite には、各インターフェイス ビューの選択操作を表示します。 これらの操作を使用すると、SELECT、INSERT、UPDATE を実行し、対象のインターフェイス テーブル、WHERE 句で修飾されたステートメントおよび修飾対象のインターフェイス ビューの WHERE 句で SELECT ステートメントを削除できます。 これらの操作は、データ操作言語 (DML) 操作とも呼ばれます。  
   
 > [!IMPORTANT]
->  インターフェイス テーブルとインターフェイス ビューで操作を実行する前に、アプリケーションのコンテキストでこれらの成果物を設定する必要があります[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 アプリケーション コンテキストの設定 (責任、組織、および言語の設定) などのユーザー設定とアーティファクトのアクセス制御を設定して Oracle E-business Suite でセキュリティで保護されたトランザクションを促進するためです。 アプリケーションのコンテキストとその設定方法の詳細については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
+>  インターフェイス テーブルとインターフェイス ビューで操作を実行する前に、アプリケーションのコンテキストでこれらの成果物を設定する必要があります[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 アプリケーション コンテキストの設定 (責任、組織、および言語の設定) などのユーザー設定とアーティファクトのアクセス制御を設定して Oracle E-business Suite でセキュリティで保護されたトランザクションを促進するためです。 アプリケーションのコンテキストとその設定方法の詳細については、[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)を参照してください。  
 
 ## <a name="supported-dml-operations"></a>サポートされている DML 操作  
  次の表は、DML 操作を[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]をサポートしています。  

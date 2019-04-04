@@ -30,7 +30,7 @@ ms.locfileid: "36987323"
 このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートまたは送信ポート グループを停止する方法について説明します。 送信ポートまたは送信ポート グループを停止すると、それ以降、メッセージは処理されなくなります。 BizTalk Server は、停止された送信ポートまたは送信ポート グループに対する、すべてのアクティベーション メッセージを中断します。 ただし、送信ポート グループを停止しても、そこに含まれる個々の送信ポートの状態は変わりません。  
   
 > [!NOTE]
->  既定では、BizTalk アプリケーションを開始すると、そこに含まれるすべてのアイテムが開始されます。 詳細については、次を参照してください。 [BizTalk アプリケーション開始および停止方法](../core/how-to-start-and-stop-a-biztalk-application.md)します。  
+>  既定では、BizTalk アプリケーションを開始すると、そこに含まれるすべてのアイテムが開始されます。 詳細については、[BizTalk アプリケーション開始および停止方法](../core/how-to-start-and-stop-a-biztalk-application.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server Operators グループまたは BizTalk Server 管理者グループのメンバー アカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

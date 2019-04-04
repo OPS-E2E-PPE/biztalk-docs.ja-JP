@@ -34,7 +34,7 @@ ms.locfileid: "36968619"
   
 - **SendDeclinePort**要求拒否メッセージを倉庫に返送します。  
   
-  詳細については、次を参照してください。[オーケストレーションで使用するポート](../core/using-ports-in-orchestrations.md)します。  
+  詳細については、[オーケストレーションで使用するポート](../core/using-ports-in-orchestrations.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
  このステップを開始する前に、以下の要件を確認してください。  

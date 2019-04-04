@@ -23,15 +23,15 @@ ms.locfileid: "37007587"
 単体テストでは、コンポーネント レベルでのフォーカスし、BizTalk ソリューションの個々 のコンポーネントがどおり動作するかどうかを検証する合格/不合格のテストでは基本的にします。 単体テスト、BizTalk ソリューションのいくつかのオプションがあります。  
 
 ## <a name="using-visual-studio"></a>Visual Studio の使用  
- 単体テスト機能は、Visual Studio 2008 で使用可能な以降です。 Visual Studio で使用可能であるテスト機能の詳細については、次を参照してください。[アプリケーションのテスト](http://go.microsoft.com/fwlink/?LinkId=159595)(http://go.microsoft.com/fwlink/?LinkId=159595)します。  
+ 単体テスト機能は、Visual Studio 2008 で使用可能な以降です。 Visual Studio で使用可能であるテスト機能の詳細については、[アプリケーションのテスト](http://go.microsoft.com/fwlink/?LinkId=159595)(http://go.microsoft.com/fwlink/?LinkId=159595)を参照してください。  
 
- BizTalk Server には、スキーマ、マップ、およびパイプラインの単体テストを作成するユーザーを有効にする単体テスト機能も用意されています。 この機能の詳細については、次を参照してください。 [BizTalk Server プロジェクトでの Unit Testing](http://go.microsoft.com/fwlink/?LinkId=158270) (http://go.microsoft.com/fwlink/?LinkId=158270)します。  
+ BizTalk Server には、スキーマ、マップ、およびパイプラインの単体テストを作成するユーザーを有効にする単体テスト機能も用意されています。 この機能の詳細については、[BizTalk Server プロジェクトでの Unit Testing](http://go.microsoft.com/fwlink/?LinkId=158270) (http://go.microsoft.com/fwlink/?LinkId=158270)を参照してください。  
 
 > [!NOTE]  
 >  Visual Studio は、単体テストのオーケストレーション、スキーマ、パイプライン、およびパイプライン コンポーネントなどの BizTalk アイテムに便利です。 BizTalk Server では、BizTalk アイテムをテストする Visual Studio Team System で使用できるテストのクラスを提供します。  
 
 ## <a name="using-non-microsoft-tools"></a>Microsoft 以外のツールを使用します。  
- BizTalk ソリューションのテスト単位の他の 2 つの一般的に使用されるツールは**BizUnit**と**NUnit**します。 **BizUnit** Visual Studio Team System Test Edition とシームレスに連携します。 同様に、 **NUnit**として実行できるように、テストを簡単に変更することができます-Visual Studio Team System Test Edition にします。 これらのツールの詳細については、次を参照してください。[テスト用ツール](~/technical-guides/tools-for-testing.md)します。  
+ BizTalk ソリューションのテスト単位の他の 2 つの一般的に使用されるツールは**BizUnit**と**NUnit**します。 **BizUnit** Visual Studio Team System Test Edition とシームレスに連携します。 同様に、 **NUnit**として実行できるように、テストを簡単に変更することができます-Visual Studio Team System Test Edition にします。 これらのツールの詳細については、[テスト用ツール](~/technical-guides/tools-for-testing.md)を参照してください。  
 
 > [!NOTE]  
 >  使用**BizUnit**と**NUnit** Microsoft でサポートされていないと、Microsoft がこれらのプログラムの適合性に関する保証をいたしません。 これらのプログラムは、ユーザー自身の責任で使用してください。  

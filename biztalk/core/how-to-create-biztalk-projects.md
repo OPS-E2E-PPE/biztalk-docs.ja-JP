@@ -42,7 +42,7 @@ BizTalk Server で実行するアプリケーションを作成するには、�
 5. 選択**新しいソリューションを作成する** をクリック**OK**します。  
   
 > [!NOTE]
->  [ユーザー構成可能なプロパティの一部、**新しいプロジェクト**] ダイアログ ボックスでは、BizTalk プロジェクト システムを使用する場合にのみ表示されます。 別の BizTalk Server プロジェクト テンプレートとその使用の詳細については、次を参照してください。 [BizTalk Server プロジェクト テンプレート](../core/biztalk-server-project-templates.md)します。  
+>  [ユーザー構成可能なプロパティの一部、**新しいプロジェクト**] ダイアログ ボックスでは、BizTalk プロジェクト システムを使用する場合にのみ表示されます。 別の BizTalk Server プロジェクト テンプレートとその使用の詳細については、[BizTalk Server プロジェクト テンプレート](../core/biztalk-server-project-templates.md)を参照してください。  
   
 ### <a name="to-add-a-new-biztalk-project-to-a-solution"></a>ソリューションに新しい BizTalk プロジェクトを追加するには  
   
@@ -55,7 +55,7 @@ BizTalk Server で実行するアプリケーションを作成するには、�
 4. 選択**ソリューションに追加** をクリック**OK**します。  
   
 > [!NOTE]
->  次のメニュー コマンドがサポートされていない、**オープン**のサブメニューで開く、**ファイル**メニュー:**プロジェクトから Web**と**ファイルから Web**。 詳細については、次を参照してください。 [Visual Studio を使って](../core/using-visual-studio.md)します。  
+>  次のメニュー コマンドがサポートされていない、**オープン**のサブメニューで開く、**ファイル**メニュー:**プロジェクトから Web**と**ファイルから Web**。 詳細については、[Visual Studio を使って](../core/using-visual-studio.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

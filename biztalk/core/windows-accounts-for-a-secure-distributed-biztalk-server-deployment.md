@@ -31,9 +31,9 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36985699"
 ---
 # <a name="windows-accounts-for-a-secure-distributed-biztalk-server-deployment"></a>セキュリティで保護された分散型 BizTalk Server 展開向けの Windows アカウント
-BizTalk Server の展開のシステム アーキテクチャの詳細については、次を参照してください。 [Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md)します。  
+BizTalk Server の展開のシステム アーキテクチャの詳細については、[Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md)を参照してください。  
   
- このセクションでは、分散型 BizTalk Server 環境の Windows グループとアカウントを作成するための推奨事項について説明します。 グループ名とアカウント名は、グループとアカウントの機能に基づいた提案です。 これらのグループとアカウントの名前は自由に選択できます。 分散型 BizTalk Server アーキテクチャの詳細については、次を参照してください。[大規模な分散アーキテクチャ](../core/large-distributed-architecture.md)します。  
+ このセクションでは、分散型 BizTalk Server 環境の Windows グループとアカウントを作成するための推奨事項について説明します。 グループ名とアカウント名は、グループとアカウントの機能に基づいた提案です。 これらのグループとアカウントの名前は自由に選択できます。 分散型 BizTalk Server アーキテクチャの詳細については、[大規模な分散アーキテクチャ](../core/large-distributed-architecture.md)を参照してください。  
   
 ## <a name="windows-groups-for-a-secure-distributed-biztalk-server-deployment"></a>セキュリティで保護された分散型 BizTalk Server 展開向けの Windows グループ  
  次の表は、ドメイン管理者によりデータ層内のドメイン コントローラーに作成することが推奨される Windows グループを示しています。  
@@ -46,7 +46,7 @@ BizTalk Server の展開のシステム アーキテクチャの詳細につい�
   
 - BizTalk Server オペレータ  
   
-  BizTalk Server で使用される Windows グループの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)します。  
+  BizTalk Server で使用される Windows グループの詳細については、[Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)を参照してください。  
   
   次の表は、上記のドメイン グループ以外に、ドメイン管理者がデータ層内のドメイン コントローラーに作成する、セキュリティで保護された展開専用の追加グループを示しています。  
   
@@ -66,7 +66,7 @@ BizTalk Server の展開のシステム アーキテクチャの詳細につい�
 ## <a name="windows-user-or-service-accounts-for-a-secure-distributed-biztalk-server-deployment"></a>セキュリティで保護された分散型 BizTalk Server 展開向けの Windows ユーザーまたはサービス アカウント  
  次の表は、ドメイン管理者によりデータ ドメインのドメイン コントローラーに作成することが推奨されるアカウントを示しています。 ドメイン管理者は、アカウントが対象グループのメンバーであることを確認する必要があります。  
   
- BizTalk Server で使用されるユーザー アカウントについての詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)します。  
+ BizTalk Server で使用されるユーザー アカウントについての詳細については、[Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)を参照してください。  
   
 |アカウント名 (例)|型|グループのメンバー|  
 |------------------------------|----------|---------------------|  

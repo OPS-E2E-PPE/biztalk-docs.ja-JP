@@ -90,7 +90,7 @@ ms.locfileid: "36998378"
   
 - [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_SendingServiceType [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrService  
   
-- BTS します。応答メッセージの種類に対応する値を操作します。 詳細については、次を参照してください。[カスタム ハンドラーへの送信用として FRR 送信ポートを作成する](../../adapters-and-accelerators/accelerator-swift/creating-the-frr-send-ports-for-sending-to-the-custom-handlers.md)します。  
+- BTS します。応答メッセージの種類に対応する値を操作します。 詳細については、[カスタム ハンドラーへの送信用として FRR 送信ポートを作成する](../../adapters-and-accelerators/accelerator-swift/creating-the-frr-send-ports-for-sending-to-the-custom-handlers.md)を参照してください。  
   
   - [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSendTransport MQ Series パン/NAN メッセージ (MQ Series トランス ポート レベル ACK/NAK)  
   
@@ -122,4 +122,4 @@ ms.locfileid: "36998378"
 ## <a name="reconciliation-time-out"></a>調整のタイムアウト  
  ときに[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]FIN 応答を待機しているオーケストレーションの開始、FRR オーケストレーションの新しいインスタンスを作成します。 実行時に、無期限に応答を待機するがないことをいくつかの期間の後にタイムアウトにオーケストレーションを構成する必要があります。 FRR オーケストレーションが昇格タイムアウト期間を過ぎると、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FRRFailedReason プロパティ TimedOut に設定します。 メッセージを MessageBox に公開し、終了します。 タイムアウトする場合は、関連付け ID はなくなっています。  
   
- タイムアウト メッセージ (元の送信メッセージのコピー) を処理するためのカスタム ハンドラーを作成することができます。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 待ち受け図形をオーケストレーションを使用してこれを実現なります。 詳細については、次を参照してください。 [FRR 遅延タイムアウト](../../adapters-and-accelerators/accelerator-swift/setting-the-frr-delay-time-out.md)します。
+ タイムアウト メッセージ (元の送信メッセージのコピー) を処理するためのカスタム ハンドラーを作成することができます。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 待ち受け図形をオーケストレーションを使用してこれを実現なります。 詳細については、[FRR 遅延タイムアウト](../../adapters-and-accelerators/accelerator-swift/setting-the-frr-delay-time-out.md)を参照してください。

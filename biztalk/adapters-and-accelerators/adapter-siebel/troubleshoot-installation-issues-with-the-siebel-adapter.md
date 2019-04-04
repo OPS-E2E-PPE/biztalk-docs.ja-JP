@@ -84,7 +84,7 @@ Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.
       ```  
 
       > [!NOTE]
-      >  公開キーを確認する方法については、次を参照してください。[公開キーとバージョンを決定する](#BKMK_PubKey)します。  
+      >  公開キーを確認する方法については、[公開キーとバージョンを決定する](#BKMK_PubKey)を参照してください。  
 
 4. 登録する、 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]:  
 

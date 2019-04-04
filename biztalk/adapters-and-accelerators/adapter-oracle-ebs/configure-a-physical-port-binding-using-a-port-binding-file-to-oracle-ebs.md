@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36996531"
 ---
 # <a name="configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-e-business-suite"></a>Oracle E-business Suite へのポートのバインド ファイルを使用して物理的なポート バインドを構成します。
-使用すると、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]メタデータ スキーマ ファイル以外の Oracle E-business Suite の成果物を生成する、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]ポートのバインド ファイルも生成されます。 BizTalk アプリケーションを作成する物理送信ポートまたは受信ポートには、このバインド ファイルをインポートできます。 バインド ファイルをインポートする手順については、次を参照してください。 [Oracle E-business suite アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-oracle-ebs/reuse-adapter-bindings-with-oracle-e-business-suite.md)します。 このバインド ファイルをインポートする場合は、手動で作成する物理送信ポートまたは受信ポートをする必要はありません。  
+使用すると、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]メタデータ スキーマ ファイル以外の Oracle E-business Suite の成果物を生成する、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]ポートのバインド ファイルも生成されます。 BizTalk アプリケーションを作成する物理送信ポートまたは受信ポートには、このバインド ファイルをインポートできます。 バインド ファイルをインポートする手順については、[Oracle E-business suite アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-oracle-ebs/reuse-adapter-bindings-with-oracle-e-business-suite.md)を参照してください。 このバインド ファイルをインポートする場合は、手動で作成する物理送信ポートまたは受信ポートをする必要はありません。  
   
 > [!IMPORTANT]
 >  使用しているときに、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]文字列型のバインド プロパティの値を指定しないし、既定値は null し、プロパティのバインドが使用できないこと、バインド ファイルの場合は、します。 必要があります手動で追加するバインドのプロパティとその値、バインド ファイルに必要な場合。  
@@ -31,7 +31,7 @@ ms.locfileid: "36996531"
 >  ポートのバインド ファイルの受信操作の作成は常に一方向の受信ポート。 これは、ため、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]サポートの一方向受信ポートの受信操作ののみ。  
 > 
 > [!IMPORTANT]
->  使用して、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] Wcf-oracleebs ポートを作成することができますを使用してポートのバインド ファイルを作成しません。 ただし、によって生成されたポートのバインド ファイルにいくつかの変更を加える可能性があります、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] Wcf-oracleebs ポートの作成に使用します。 詳細については、次を参照してください。 [Wcf-oracleebs ポートを使用して、ポートのバインド ファイルが生成を使用して Consume Adapter Service アドインを構成する](#BKMK_ModifyBinding)します。  
+>  使用して、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] Wcf-oracleebs ポートを作成することができますを使用してポートのバインド ファイルを作成しません。 ただし、によって生成されたポートのバインド ファイルにいくつかの変更を加える可能性があります、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] Wcf-oracleebs ポートの作成に使用します。 詳細については、[Wcf-oracleebs ポートを使用して、ポートのバインド ファイルが生成を使用して Consume Adapter Service アドインを構成する](#BKMK_ModifyBinding)を参照してください。  
   
  ファイルのバインドに関して理解していることの重要な点を次に、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]が生成されます。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "36996531"
   
 4. 保存して、バインド ファイルを閉じます。  
   
-5. バインド ファイル インポート[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 バインド ファイルをインポートする方法については、次を参照してください。 [Oracle E-business suite アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-oracle-ebs/reuse-adapter-bindings-with-oracle-e-business-suite.md)します。  
+5. バインド ファイル インポート[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 バインド ファイルをインポートする方法については、[Oracle E-business suite アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-oracle-ebs/reuse-adapter-bindings-with-oracle-e-business-suite.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
 [Oracle E-business Suite のアプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-oracle-ebs/building-blocks-to-create-oracle-e-business-suite-applications.md)

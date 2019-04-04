@@ -22,7 +22,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36988787"
 ---
 # <a name="invoke-rfcs-in-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP で Rfc を呼び出す
-[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプター クライアントによって呼び出すことができる操作として、SAP システムによって公開されている Rfc 明らかになります。 このセクションを使用して SAP システムでの RFC を呼び出すための説明、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 方法の詳細については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]RFC を呼び出すことは、SAP システムにサポートを参照してください[SAP で Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)します。 RFC を呼び出すための SOAP メッセージの構造の詳細については、次を参照してください。 [RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)します。  
+[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプター クライアントによって呼び出すことができる操作として、SAP システムによって公開されている Rfc 明らかになります。 このセクションを使用して SAP システムでの RFC を呼び出すための説明、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 方法の詳細については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]RFC を呼び出すことは、SAP システムにサポートを参照してください[SAP で Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)します。 RFC を呼び出すための SOAP メッセージの構造の詳細については、[RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)を参照してください。  
   
 ## <a name="how-to-invoke-an-rfc-in-an-sap-system"></a>SAP システムでの RFC を呼び出す方法でしょうか。  
  使用して SAP システムに対する演算を実行、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で説明されている手順のタスクが含まれます[SAP アプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)します。 これらのタスクは、SAP システムの RFC を呼び出すには。  
@@ -119,10 +119,10 @@ ms.locfileid: "36988787"
   
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
   
- ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。
+ ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションを構成する方法の詳細については、次を参照してください。[アプリケーションを構成する方法](../../core/how-to-configure-an-application.md)します。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションを構成する方法の詳細については、[アプリケーションを構成する方法](../../core/how-to-configure-an-application.md)を参照してください。
   
  アプリケーションを構成する必要があります。  
   
@@ -134,13 +134,13 @@ ms.locfileid: "36988787"
   
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーションでの SAP システムからの応答を含む応答メッセージをドロップする場所の場所を定義します。  
   
-  - SAP システムにメッセージを送信する物理 Wcf-custom または WCF-SAP 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 ポートを作成する方法については、次を参照してください。 [SAP アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sap/manually-configure-a-physical-port-binding-to-the-sap-adapter.md)します。
+  - SAP システムにメッセージを送信する物理 Wcf-custom または WCF-SAP 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 ポートを作成する方法については、[SAP アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sap/manually-configure-a-physical-port-binding-to-the-sap-adapter.md)を参照してください。
   
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、次を参照してください。 [sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)します。
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、[sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)を参照してください。
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- SAP システムでの RFC を呼び出すための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)または[アプリケーションを起動する方法](../../core/how-to-start-and-stop-a-biztalk-application.md)します。
+ SAP システムでの RFC を呼び出すための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)または[アプリケーションを起動する方法](../../core/how-to-start-and-stop-a-biztalk-application.md)を参照してください。
   
  この段階で、ことを確認します。  
   
@@ -185,10 +185,10 @@ ms.locfileid: "36988787"
 ```  
   
 ## <a name="possible-exceptions"></a>可能性のある例外  
- BizTalk Server を使用して SAP システムでの RFC の呼び出し中に発生する可能性が、例外については、次を参照してください。[例外とエラーは、SAP アダプターを使用した処理](../../adapters-and-accelerators/adapter-sap/exceptions-and-error-handling-with-the-sap-adapter.md)します。  
+ BizTalk Server を使用して SAP システムでの RFC の呼び出し中に発生する可能性が、例外については、[例外とエラーは、SAP アダプターを使用した処理](../../adapters-and-accelerators/adapter-sap/exceptions-and-error-handling-with-the-sap-adapter.md)を参照してください。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、次を参照してください。[再利用の SAP アダプター バインド](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)します。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、[再利用の SAP アダプター バインド](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
 [BizTalk アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-biztalk-applications-using-the-sap-adapter.md)

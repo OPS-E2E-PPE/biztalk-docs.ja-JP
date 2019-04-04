@@ -25,7 +25,7 @@ ms.locfileid: "37007187"
 ## <a name="overview"></a>概要  
  BizTalk アプリケーションは、BizTalk ビジネス ソリューションを構成する "アイテム" を表示して管理する手段を提供します。 アイテムに含まれる BizTalk アセンブリ (オーケストレーション、スキーマ、マップ、パイプラインなど) は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] から [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に展開できます。 また、アイテムには .NET アセンブリ、証明書、スクリプト、Readme ファイル、ポリシーなども含まれます。これらは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールまたは BTSTask コマンドライン ツールを使用して BizTalk アプリケーションに追加します。 その後、ソリューション開発者や IT 管理者は、アプリケーションとそのアイテムを 1 つのエンティティとして表示、パッケージ化、展開、および管理できます。 作成の詳細については、デプロイ、および、BizTalk アプリケーションの管理について[Deploying and Managing BizTalk Applications](../core/deploying-and-managing-biztalk-applications.md)します。  
   
- BizTalk アセンブリをビルドおよび展開するには、まず [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でプロジェクトを作成し、アセンブリに組み込むアイテムを作成または追加する必要があります。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でソリューションを作成して、複数のプロジェクトを組み込んだ後、アセンブリをビルドし、すべてのアセンブリをまとめて同じアプリケーションまたは異なるアプリケーションに展開できます。 これらのタスクを実行する方法の詳細については、次を参照してください。 [BizTalk プロジェクトを作成する方法](../core/how-to-create-biztalk-projects.md)します。  
+ BizTalk アセンブリをビルドおよび展開するには、まず [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でプロジェクトを作成し、アセンブリに組み込むアイテムを作成または追加する必要があります。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でソリューションを作成して、複数のプロジェクトを組み込んだ後、アセンブリをビルドし、すべてのアセンブリをまとめて同じアプリケーションまたは異なるアプリケーションに展開できます。 これらのタスクを実行する方法の詳細については、[BizTalk プロジェクトを作成する方法](../core/how-to-create-biztalk-projects.md)を参照してください。  
   
  これらの作業が完了した後は、このセクションの各トピックで説明されている手順に従って、BizTalk アセンブリのビルド、展開、および展開解除を行うことができます。  
   
@@ -41,7 +41,7 @@ ms.locfileid: "37007187"
   
 - アセンブリを展開解除します。  
   
-  BizTalk アプリケーションに 1 つ以上のアセンブリを展開した後は、アプリケーションの構成を完了し、テスト環境に展開し、さらに実稼働環境に展開できます。 詳細については、次を参照してください。 [BizTalk アプリケーション展開の開発タスク](../core/development-tasks-for-biztalk-application-deployment.md)します。  
+  BizTalk アプリケーションに 1 つ以上のアセンブリを展開した後は、アプリケーションの構成を完了し、テスト環境に展開し、さらに実稼働環境に展開できます。 詳細については、[BizTalk アプリケーション展開の開発タスク](../core/development-tasks-for-biztalk-application-deployment.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -25,7 +25,7 @@ ms.locfileid: "36996571"
 # <a name="how-biztalk-accelerator-for-hl7-works"></a>BizTalk Accelerator for HL7 のしくみ
 Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) on Microsoft を構築して医療ソリューションを提供します。[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 これは、医療のメッセージのサポートを提供して、医療に応用するために処理するメッセージを調整する医療固有のコンポーネントを追加することによって。  
   
- 詳細については、次を参照してください。[どの BizTalk Accelerator for HL7 により BizTalk サーバーを追加](../../adapters-and-accelerators/accelerator-hl7/what-biztalk-accelerator-for-hl7-adds-to-biztalk-server.md)します。  
+ 詳細については、[どの BizTalk Accelerator for HL7 により BizTalk サーバーを追加](../../adapters-and-accelerators/accelerator-hl7/what-biztalk-accelerator-for-hl7-adds-to-biztalk-server.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

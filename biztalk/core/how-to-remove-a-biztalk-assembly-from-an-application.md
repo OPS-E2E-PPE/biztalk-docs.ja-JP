@@ -30,7 +30,7 @@ ms.locfileid: "36987835"
   
  BizTalk アセンブリを削除する前に、次の重要事項を考慮します。  
   
--   BizTalk アセンブリを削除すると、アセンブリ ファイルは、グローバル アセンブリ キャッシュ (GAC) またはローカル ファイル システム内に存在する場合、自動的に削除されません。 そのアセンブリ ファイルは手動で削除する必要があります。 手順については、次を参照してください。 [GAC からアセンブリをアンインストールする方法](http://msdn.microsoft.com/library/464706a8-f902-4d05-a724-19169facd2b4)と[BizTalk アプリケーションの設定およびその他のファイルを削除する方法](../core/how-to-remove-other-files-and-settings-for-a-biztalk-application.md)します。  
+-   BizTalk アセンブリを削除すると、アセンブリ ファイルは、グローバル アセンブリ キャッシュ (GAC) またはローカル ファイル システム内に存在する場合、自動的に削除されません。 そのアセンブリ ファイルは手動で削除する必要があります。 手順については、[GAC からアセンブリをアンインストールする方法](http://msdn.microsoft.com/library/464706a8-f902-4d05-a724-19169facd2b4)と[BizTalk アプリケーションの設定およびその他のファイルを削除する方法](../core/how-to-remove-other-files-and-settings-for-a-biztalk-application.md)を参照してください。  
   
 -   パイプラインを含む BizTalk アセンブリを削除すると、同じアプリケーション内でそのパイプラインを使用する送信ポートはすべてリセットされて、既定の PassThruTransmit パイプラインを使用するようになります。  
   

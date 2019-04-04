@@ -76,7 +76,7 @@ ms.locfileid: "37007643"
   
 - **Tnsnames.ora を使用せず**します。 この方法では、アダプターのクライアントは、直接接続 URI の接続パラメーターを指定します。 これは、クライアント コンピューターの tnsnames.ora ファイルに存在する net サービス名には必要ありません。 この方法は、クライアント コンピューターに存在している、tnsnames.ora ファイルをも必要ありません。  
   
-  接続 URI の詳細については、次を参照してください。 [Oracle E-business Suite への接続を作成する](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-connection-to-oracle-e-business-suite.md)します。  
+  接続 URI の詳細については、[Oracle E-business Suite への接続を作成する](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-connection-to-oracle-e-business-suite.md)を参照してください。  
   
 ## <a name="next"></a>Next
 [Oracle EBS アプリケーションをセキュリティで保護する](../../adapters-and-accelerators/adapter-oracle-ebs/secure-your-oracle-ebs-applications.md)

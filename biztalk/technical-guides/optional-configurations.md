@@ -40,4 +40,4 @@ BizTalk Server 管理パックをインポートした後、[監視] ウィン�
   
    上書きの設定を変更すると、オブジェクトの種類が自動検出し、[監視] ウィンドウで表示されます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
-   上書きの設定方法の詳細については、次を参照してください。 [Operations Manager 2007 R2 または 2012 オーバーライド](http://go.microsoft.com/fwlink/?LinkId=86870)(http://go.microsoft.com/fwlink/?LinkId=86870)します。
+   上書きの設定方法の詳細については、[Operations Manager 2007 R2 または 2012 オーバーライド](http://go.microsoft.com/fwlink/?LinkId=86870)(http://go.microsoft.com/fwlink/?LinkId=86870)を参照してください。

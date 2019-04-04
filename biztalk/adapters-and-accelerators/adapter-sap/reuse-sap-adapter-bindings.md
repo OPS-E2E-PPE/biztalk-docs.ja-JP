@@ -38,7 +38,7 @@ ms.locfileid: "37014211"
   
 バインド ファイルは BizTalk アセンブリ、アプリケーション、またはグループを自動的には生成されません。 ただし、バインドをエクスポートすることによって、バインド ファイルを生成できます。 アプリケーションまたはグループにバインド ファイルをインポートできます。  
   
-バインドおよびバインド ファイルについての詳細については、次を参照してください。[バインド ファイルとアプリケーションの展開](../../core/binding-files-and-application-deployment.md)します。
+バインドおよびバインド ファイルについての詳細については、[バインド ファイルとアプリケーションの展開](../../core/binding-files-and-application-deployment.md)を参照してください。
   
 ## <a name="prerequisites"></a>前提条件  
 メンバーであるアカウントでサインイン、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理者または BizTalk Operators グループ。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。
@@ -78,7 +78,7 @@ BizTalk Server 管理コンソールを使用してバインドをインポー�
 ## <a name="passwords-are-removed"></a>パスワードは削除されます。  
 セキュリティ上の理由により、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] では、バインド ファイルのエクスポート時にバインドのパスワードがファイルから削除されます。 バインドをインポートした後で、送信ポートと受信場所のパスワードを再構成する必要があります。 [トランスポートのプロパティ] ダイアログ ボックスでパスワードを構成する、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールの送信ポートまたは受信場所。 
 
-ユーザー名とパスワードを指定する方法の詳細については、次を参照してください。 [SAP システムの資格情報で、サインオンの構成](../../adapters-and-accelerators/adapter-sap/configure-the-sign-in-credentials-for-the-sap-system.md)します。
+ユーザー名とパスワードを指定する方法の詳細については、[SAP システムの資格情報で、サインオンの構成](../../adapters-and-accelerators/adapter-sap/configure-the-sign-in-credentials-for-the-sap-system.md)を参照してください。
 
 ## <a name="see-also"></a>参照
 [SAP アプリケーションを作成するための構成要素](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)

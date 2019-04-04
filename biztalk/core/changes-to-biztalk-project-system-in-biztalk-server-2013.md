@@ -23,7 +23,7 @@ ms.locfileid: "37003403"
 このトピックではする BizTalk Server での BizTalk プロジェクト システムへの変更の概要を説明します。  
   
 ## <a name="project-properties-are-displayed-in-project-designer-window"></a>プロジェクト プロパティがプロジェクト デザイナー ウィンドウに表示される  
- BizTalk Server プロジェクトのプロパティは、プロパティ ダイアログ ボックスではなく、Visual Studio のプロジェクト デザイナーに表示されるようになりました。 プロジェクト デザイナーは、プロジェクトのプロパティ、設定、およびリソースを管理するための一元的な場所を提供します。 プロジェクト デザイナーは、フォーム デザイナーやクラス デザイナーと同じように、Visual Studio IDE の単一のウィンドウとして表示され、左側のタブを通じてアクセスできる多数のページを含みます。 詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=190417](http://go.microsoft.com/fwlink/?LinkId=190417)します。  
+ BizTalk Server プロジェクトのプロパティは、プロパティ ダイアログ ボックスではなく、Visual Studio のプロジェクト デザイナーに表示されるようになりました。 プロジェクト デザイナーは、プロジェクトのプロパティ、設定、およびリソースを管理するための一元的な場所を提供します。 プロジェクト デザイナーは、フォーム デザイナーやクラス デザイナーと同じように、Visual Studio IDE の単一のウィンドウとして表示され、左側のタブを通じてアクセスできる多数のページを含みます。 詳細については、[ http://go.microsoft.com/fwlink/?LinkId=190417](http://go.microsoft.com/fwlink/?LinkId=190417)を参照してください。  
   
 ## <a name="properties-for-schema-and-map-files-are-displayed-in-properties-window"></a>スキーマ ファイルおよびマップ ファイルのプロパティがプロパティ ウィンドウに表示される  
  などのスキーマとマップ ファイル プロパティ**入力インスタンス ファイル名**と**テスト マップ入力インスタンス**、プロパティ ウィンドウの代わりに、別に表示される**プロパティ**  ダイアログ ボックス。  
@@ -44,22 +44,22 @@ ms.locfileid: "37003403"
    > [!TIP]
    >  BizTalk プロジェクトに Web 参照を追加した後、 **Web 参照の追加**メニュー オプションは、参照、Web 参照とプロジェクトのノードで使用できます。  
   
-   サービスおよび Web 参照を追加する方法の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=131577](http://go.microsoft.com/fwlink/?LinkId=131577)します。  
+   サービスおよび Web 参照を追加する方法の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=131577](http://go.microsoft.com/fwlink/?LinkId=131577)を参照してください。  
   
 ## <a name="msbuild-integration"></a>MSBUILD の統合  
- Visual Studio では MSBUILD プロジェクト ファイル形式を使用して、BizTalk プロジェクトなどのマネージド プロジェクトに関するビルド情報を保存します。 詳細については、次を参照してください。 [MSBUILD と Visual Studio の統合](../core/msbuild-integration-with-visual-studio.md)します。  
+ Visual Studio では MSBUILD プロジェクト ファイル形式を使用して、BizTalk プロジェクトなどのマネージド プロジェクトに関するビルド情報を保存します。 詳細については、[MSBUILD と Visual Studio の統合](../core/msbuild-integration-with-visual-studio.md)を参照してください。  
   
 ## <a name="team-foundation-server-integration"></a>Team Foundation Server の統合  
  BizTalk プロジェクトのソース制御システムとして Team Foundation Server を使用できます。 チェックインやチェックアウトなどの操作を [ソリューション エクスプローラー] ウィンドウ自体から実行できます。  
   
 ## <a name="support-for-unit-testing"></a>単体テストのサポート  
- この機能を使用すると、スキーマ、マップ、およびパイプラインの単体テストを実行できます。 詳細については、次を参照してください。 [BizTalk Server プロジェクトでの Unit Testing](../core/unit-testing-with-biztalk-server-projects.md)します。  
+ この機能を使用すると、スキーマ、マップ、およびパイプラインの単体テストを実行できます。 詳細については、[BizTalk Server プロジェクトでの Unit Testing](../core/unit-testing-with-biztalk-server-projects.md)を参照してください。  
   
 ## <a name="debug-map-feature"></a>マップ機能のデバッグ  
- **マップ機能をデバッグ**します。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のインライン XSLT デバッガーを使用して、マップ (XSLT) をデバッグできます。 詳細については、次を参照してください。[マップのデバッグ方法](../core/how-to-debug-maps.md)します。  
+ **マップ機能をデバッグ**します。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のインライン XSLT デバッガーを使用して、マップ (XSLT) をデバッグできます。 詳細については、[マップのデバッグ方法](../core/how-to-debug-maps.md)を参照してください。  
   
 ## <a name="migrating-biztalk-server-projects"></a>BizTalk Server プロジェクトの移行  
- Visual Studio プロジェクトが以前のバージョンの用に開発された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Visual Studio 変換ウィザードを使用して、BizTalk Server 環境に移行できます。 詳細については、次を参照してください。 [BizTalk Server プロジェクトを移行する](../core/migrating-a-biztalk-server-project.md)します。  
+ Visual Studio プロジェクトが以前のバージョンの用に開発された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Visual Studio 変換ウィザードを使用して、BizTalk Server 環境に移行できます。 詳細については、[BizTalk Server プロジェクトを移行する](../core/migrating-a-biztalk-server-project.md)を参照してください。  
   
 ## <a name="release-and-debug-build-types"></a>リリース ビルドとデバッグ ビルドの種類  
  BizTalk プロジェクトに 2 つのビルドの種類があるようになりました:**リリース**と**デバッグ**、後継**開発**と**展開**の前バージョン。 ただし、引き続きを参照してください、**開発**と**展開**から移行されるプロジェクトの構成[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]します。  

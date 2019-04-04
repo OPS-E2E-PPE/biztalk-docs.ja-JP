@@ -31,14 +31,14 @@ ms.locfileid: "37002819"
   
  新しいグループを BizTalk アプリケーションを移行する場合は、新しいグループのすべてのサーバーで .msi のインストールを実行する必要があります。 グループに対して 1 回の .msi ファイルをインポートする必要があります。 操作を実行すると、新しいグループのすべての実行時のコンピューターにインストールされて、アプリケーションとその内容と、グループの BizTalk 管理データベースに登録されてです。 暗黙的なバインドだけでなく、.msi ファイルに複数のバインド ファイルを追加することもできます。 各追加のバインド ファイル「環境」と関連付けることができます。 複数のバインド ファイルが、デプロイ時に、BizTalk アプリケーションで関連しているときに、デプロイは、(運用環境、ステージング、またはテスト) 環境に基づいて、使用されるバインド ファイルを選択できます。  
   
- .Msi ファイルをスクリプトを使用して、サーバー (インストールの操作) またはグループ (インポートの操作) をカスタマイズすることができます。 .Msi ファイルでスクリプトの使用に関する詳細については、次を参照してください。[アプリケーション展開のカスタマイズを前処理および後処理のスクリプトを使用して](http://go.microsoft.com/fwlink/?LinkId=154995)(http://go.microsoft.com/fwlink/?LinkId=154995)します。  
+ .Msi ファイルをスクリプトを使用して、サーバー (インストールの操作) またはグループ (インポートの操作) をカスタマイズすることができます。 .Msi ファイルでスクリプトの使用に関する詳細については、[アプリケーション展開のカスタマイズを前処理および後処理のスクリプトを使用して](http://go.microsoft.com/fwlink/?LinkId=154995)(http://go.microsoft.com/fwlink/?LinkId=154995)を参照してください。  
   
- アプリケーションを展開する手順のチェックリストについては、次を参照してください。[チェックリスト: アプリケーションを展開する](../technical-guides/checklist-deploying-an-application.md)します。  
+ アプリケーションを展開する手順のチェックリストについては、[チェックリスト: アプリケーションを展開する](../technical-guides/checklist-deploying-an-application.md)を参照してください。  
   
 ## <a name="exporting-an-applications-bindings-by-using-a-binding-file"></a>バインド ファイルを使用して、アプリケーションのバインドのエクスポート  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、バインド ファイルでは、アプリケーションのバインドをエクスポートし、バインド ファイルから別のアプリケーションにこれらのバインドをインポートします。 これを行うには、コピー先のアプリケーションは既に存在する必要があります。インポートの手順では、アプリケーションは作成されません。 バインド ファイルは、アプリケーション、グループ、またはアセンブリ内のすべての成果物のバインディングを含む XML ファイルです。 BizTalk グループのすべてのバインドまたは BizTalk アセンブリのバインドをエクスポートすることもできます。 バインドと操作の詳細については、次を参照してください。[バインド ファイルにバインドのエクスポート方法](../technical-guides/how-to-export-bindings-to-a-binding-file.md)と[バインド ファイルからバインドのインポート方法](../technical-guides/how-to-import-bindings-from-a-binding-file.md)します。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、バインド ファイルでは、アプリケーションのバインドをエクスポートし、バインド ファイルから別のアプリケーションにこれらのバインドをインポートします。 これを行うには、コピー先のアプリケーションは既に存在する必要があります。インポートの手順では、アプリケーションは作成されません。 バインド ファイルは、アプリケーション、グループ、またはアセンブリ内のすべての成果物のバインディングを含む XML ファイルです。 BizTalk グループのすべてのバインドまたは BizTalk アセンブリのバインドをエクスポートすることもできます。 バインドと操作の詳細については、[バインド ファイルにバインドのエクスポート方法](../technical-guides/how-to-export-bindings-to-a-binding-file.md)と[バインド ファイルからバインドのインポート方法](../technical-guides/how-to-import-bindings-from-a-binding-file.md)を参照してください。  
   
- .Msi ファイルにリソースとしてバインド ファイルを追加することもできます。 リソースとしてバインド ファイルを追加する方法の詳細については、次を参照してください。[アプリケーションを .msi ファイルにエクスポートする方法](../technical-guides/how-to-export-an-application-to-an-msi-file.md)します。  
+ .Msi ファイルにリソースとしてバインド ファイルを追加することもできます。 リソースとしてバインド ファイルを追加する方法の詳細については、[アプリケーションを .msi ファイルにエクスポートする方法](../technical-guides/how-to-export-an-application-to-an-msi-file.md)を参照してください。  
   
  アプリケーションの展開の詳細については一般に、表示[Understanding BizTalk アプリケーションの展開と管理](http://go.microsoft.com/fwlink/?LinkId=154996)(http://go.microsoft.com/fwlink/?LinkId=154996)します。  
   

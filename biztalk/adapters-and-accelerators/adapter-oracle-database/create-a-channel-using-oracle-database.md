@@ -138,7 +138,7 @@ channel.Open();
   
 3. 使用してバインド パラメーターのコレクションを作成、 **BindingParameterCollection**クラスし、資格情報を設定します。  
   
-4. 呼び出してチャネル リスナーを作成して**BuildChannelListener\<IInputChannel\>** メソッドを**OracleDBBinding**します。 このメソッドにパラメーターの 1 つとして、Oracle の接続 URI を指定します。 Oracle の接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。  
+4. 呼び出してチャネル リスナーを作成して**BuildChannelListener\<IInputChannel\>** メソッドを**OracleDBBinding**します。 このメソッドにパラメーターの 1 つとして、Oracle の接続 URI を指定します。 Oracle の接続 URI の詳細については、[Oracle Database 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)を参照してください。  
   
 5. リスナーを開きます。  
   

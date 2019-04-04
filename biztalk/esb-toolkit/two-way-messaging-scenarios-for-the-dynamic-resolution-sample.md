@@ -93,4 +93,4 @@ ms.locfileid: "36997019"
 
 6. 返されたメッセージの応答を参照してください。 指定した場合、 **submitOrder**アクションのテキスト"Submit Order"の値が前に、 **ID**フィールドに返されたメッセージ。 指定した場合、 **submitPurchase**アクションの [購入の送信] のテキストの値が前に、 **ID**フィールドに返されたメッセージ。  
 
-   ESB ディスパッチャーと ESB ディスパッチャー逆アセンブラー パイプライン コンポーネントのサンプルの使用については、次を参照してください。 [、動的解決サンプルのしくみ](../esb-toolkit/how-the-dynamic-resolution-sample-works.md)します。
+   ESB ディスパッチャーと ESB ディスパッチャー逆アセンブラー パイプライン コンポーネントのサンプルの使用については、[、動的解決サンプルのしくみ](../esb-toolkit/how-the-dynamic-resolution-sample-works.md)を参照してください。

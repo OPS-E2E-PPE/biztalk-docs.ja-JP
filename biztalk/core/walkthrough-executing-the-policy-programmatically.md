@@ -220,7 +220,7 @@ ms.locfileid: "36985723"
 
 -   **Policy.Execute**メソッドは、ラッパーでは基本的に、 **RuleEngine.Execute**メソッド。 したがってを使用して、 **Policy.Execute**メソッドでは、このチュートリアルで説明したように、ポリシーを呼び出すの最も簡単な方法です。  
 
--   使用するポリシーの実行をより細かく制御することがあります、 **RuleEngine.Execute**メソッドを使用してではなく**Policy.Execute**します。 使用して、エンジンを一時的に停止するなど、 **Halt**関数とを使用して、再開、 **Execute**関数。 詳細については、次を参照してください。 [Halt](../core/halt.md)します。  
+-   使用するポリシーの実行をより細かく制御することがあります、 **RuleEngine.Execute**メソッドを使用してではなく**Policy.Execute**します。 使用して、エンジンを一時的に停止するなど、 **Halt**関数とを使用して、再開、 **Execute**関数。 詳細については、[Halt](../core/halt.md)を参照してください。  
 
 ## <a name="see-also"></a>参照  
  [ポリシーを実行する方法](../core/how-to-execute-policies.md)

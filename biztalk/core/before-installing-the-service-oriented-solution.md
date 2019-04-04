@@ -55,7 +55,7 @@ ms.locfileid: "36982387"
   
 - メインフレームに必要なソリューションのバリエーションを使用している場合の CICS および Transaction X 対応の IBM メインフレーム。 この場合、CICS アプリケーション (COBOL コード) をメインフレームにインストールする必要があります。また、メインフレームにアクセスするには、Microsoft Host Integration Server (HIS) が必要です。  
   
-   このソリューションに対応するメインフレームがない場合、ポートのバインドを変更して、Pending Transactions のスタブ Web サービスを使用できます。 メインフレームのトランザクションをエミュレートするため、Web サービスは、ローカルにトランザクションを生成します。 スタブ Pending Transactions Web サービスのポートのバインドを変更する方法の詳細については、次を参照してください。[インライン バージョンおよびアダプター バージョンのサービス指向ソリューションのインストール方法](../core/how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution.md)します。  
+   このソリューションに対応するメインフレームがない場合、ポートのバインドを変更して、Pending Transactions のスタブ Web サービスを使用できます。 メインフレームのトランザクションをエミュレートするため、Web サービスは、ローカルにトランザクションを生成します。 スタブ Pending Transactions Web サービスのポートのバインドを変更する方法の詳細については、[インライン バージョンおよびアダプター バージョンのサービス指向ソリューションのインストール方法](../core/how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution.md)を参照してください。  
   
 - Host Integration Server は、メインフレームに接続するために必要です。  
   

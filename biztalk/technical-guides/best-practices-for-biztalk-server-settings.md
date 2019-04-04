@@ -26,7 +26,7 @@ ms.locfileid: "37001122"
   
 - 1 つのバッチには、複数の操作を組み合わせることで、アダプターによって実行されるトランザクションの数を最小限に抑えます。  
   
-- メッセージの数だけでなく、バッチ内のバイトの合計数に基づいてバッチ サイズを制限します。 バッチ サイズの制限の詳細については、次を参照してください。[アダプターのパフォーマンスを向上させるバッチ処理構成](../technical-guides/configuring-batching-to-improve-adapter-performance.md)します。  
+- メッセージの数だけでなく、バッチ内のバイトの合計数に基づいてバッチ サイズを制限します。 バッチ サイズの制限の詳細については、[アダプターのパフォーマンスを向上させるバッチ処理構成](../technical-guides/configuring-batching-to-improve-adapter-performance.md)を参照してください。  
   
   **サイズの大きいメッセージのしきい値を調整します。**  
   
@@ -37,7 +37,7 @@ ms.locfileid: "37001122"
 - 計画段階中には、追跡する必要がある情報を決定する必要があります。これにより、プロジェクトを配置した後に追跡オプションを設定して必要な情報のみを付与する追跡データの量を制限します。  
   
   > [!NOTE]  
-  >  追跡に関連するベスト プラクティスの詳細については、次を参照してください。[追跡の計画](../technical-guides/planning-for-tracking.md)このガイドと[状態と動作状況の追跡](http://go.microsoft.com/fwlink/p/?LinkId=154187)(http://go.microsoft.com/fwlink/p/?LinkId=154187)します。  
+  >  追跡に関連するベスト プラクティスの詳細については、[追跡の計画](../technical-guides/planning-for-tracking.md)このガイドと[状態と動作状況の追跡](http://go.microsoft.com/fwlink/p/?LinkId=154187)(http://go.microsoft.com/fwlink/p/?LinkId=154187)を参照してください。  
   
   **すべてのメッセージを追跡しません。**  
   

@@ -43,7 +43,7 @@ ms.locfileid: "36980923"
   
   DCOMCNFG ユーティリティで [ネットワーク DTC アクセス] が無効になっている場合、MSMQ トランザクション リモート受信操作は解読不明のエラー メッセージで失敗します。  MSMQ アダプターでトランザクション リモート受信を行うには、[ネットワーク DTC アクセス] を有効にする必要があります。 詳細をご覧[ http://go.microsoft.com/fwlink/?LinkId=124623](http://go.microsoft.com/fwlink/?LinkId=124623)します。  
   
-  MSMQ はリモートのトランザクションの読み込みをサポートしていないので、クラスター化された BizTalk ホスト インスタンスで MSMQ アダプターの受信ハンドラーを実行している場合は、ローカルのトランザクションの読み込みをサポートするために、MSMQ サービスを同一のクラスター グループにクラスター化してください。 BizTalk ホストのクラスター化されたインスタンスで MSMQ アダプター ハンドラーの実行に関する詳細については、次を参照してください。[クラスター化ホストでアダプター ハンドラーの実行に関する考慮事項](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)します。  
+  MSMQ はリモートのトランザクションの読み込みをサポートしていないので、クラスター化された BizTalk ホスト インスタンスで MSMQ アダプターの受信ハンドラーを実行している場合は、ローカルのトランザクションの読み込みをサポートするために、MSMQ サービスを同一のクラスター グループにクラスター化してください。 BizTalk ホストのクラスター化されたインスタンスで MSMQ アダプター ハンドラーの実行に関する詳細については、[クラスター化ホストでアダプター ハンドラーの実行に関する考慮事項](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [MSMQ アダプターを使用した信頼できるメッセージ処理](../core/reliable-messaging-with-the-msmq-adapter.md)

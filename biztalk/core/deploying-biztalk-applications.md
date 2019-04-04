@@ -42,7 +42,7 @@ ms.locfileid: "37007651"
   
 - バインド ファイルを編集し、さまざまな展開環境に合わせてバインドをカスタマイズする。  
   
-  別のアプリケーションの展開シナリオで実行する必要があるタスクのチェックリストは、次を参照してください。 [BizTalk アプリケーションの展開と管理のチェックリスト](../core/biztalk-application-deployment-and-management-checklists.md)します。 BizTalk アプリケーションと、展開に関する背景情報は、次を参照してください。 [Understanding BizTalk アプリケーションの展開と管理](../core/understanding-biztalk-application-deployment-and-management.md)します。 アプリケーションを作成して、追加または成果物を削除または別のアプリケーションへの参照を追加することで変更については、次を参照してください。[を変更する BizTalk アプリケーションの作成と](../core/creating-and-modifying-biztalk-applications.md)します。 BizTalk アセンブリの展開方法の詳細については、次を参照してください。 [BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)します。  
+  別のアプリケーションの展開シナリオで実行する必要があるタスクのチェックリストは、[BizTalk アプリケーションの展開と管理のチェックリスト](../core/biztalk-application-deployment-and-management-checklists.md)を参照してください。 BizTalk アプリケーションと、展開に関する背景情報は、[Understanding BizTalk アプリケーションの展開と管理](../core/understanding-biztalk-application-deployment-and-management.md)を参照してください。 アプリケーションを作成して、追加または成果物を削除または別のアプリケーションへの参照を追加することで変更については、[を変更する BizTalk アプリケーションの作成と](../core/creating-and-modifying-biztalk-applications.md)を参照してください。 BizTalk アセンブリの展開方法の詳細については、[BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -59,7 +59,7 @@ ms.locfileid: "36995595"
   
 - Microsoft BizTalk Adapter for TIBCO Enterprise Message Service  
   
-  これらのアダプターの詳細については、次を参照してください。 [BizTalk Server のアダプター](../core/adapters-in-biztalk-server.md)します。  
+  これらのアダプターの詳細については、[BizTalk Server のアダプター](../core/adapters-in-biztalk-server.md)を参照してください。  
   
   データ受信に使用されるアダプタの種類に関係なく、受信されたメッセージにオーケストレーションがアクセスするには、通常その前に処理が必要です。 同様に、オーケストレーションで生成された送信メッセージをアダプタから送信するには、多くの場合、その前に処理が必要です。  
   

@@ -34,4 +34,4 @@ ms.locfileid: "36999395"
   
 5. 生成された例外の内容を確認します。  
   
-   例外処理サービス サンプルが、例外管理サービスを使用する方法についての詳細については、次を参照してください。 [、例外処理サービス サンプルのしくみ](../esb-toolkit/how-the-exception-handling-service-sample-works.md)します。
+   例外処理サービス サンプルが、例外管理サービスを使用する方法についての詳細については、[、例外処理サービス サンプルのしくみ](../esb-toolkit/how-the-exception-handling-service-sample-works.md)を参照してください。

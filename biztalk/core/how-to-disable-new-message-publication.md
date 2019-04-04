@@ -24,10 +24,10 @@ ms.locfileid: "36974139"
 ## <a name="overview"></a>概要
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールまたは Windows Management Instrumentation (WMI) を使用すると、新しいメッセージの公開を無効にできます。 メッセージ ボックス データベースで新しいメッセージの受信を停止するには、メッセージ ボックス データベースの新しいメッセージの公開を無効にします。 BizTalk Server 環境によっては、マスター メッセージ ボックス データベースの新しいメッセージの公開を無効にすると、パフォーマンスが向上する場合があります。 新しいメッセージの公開を無効にしても、メッセージ ボックス データベース内の既存のメッセージや処理中のサービス インスタンスには影響しません。  
   
- WMI を使用して、新しいメッセージの公開を無効にする方法については、次を参照してください。、 **MSBTS_MsgBoxSetting.DisableNewMessagePublication プロパティ (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+ WMI を使用して、新しいメッセージの公開を無効にする方法については、、 **MSBTS_MsgBoxSetting.DisableNewMessagePublication プロパティ (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
   
 > [!IMPORTANT]
->  メッセージ ボックス データベースを削除する前に、新しいメッセージの公開を無効にする必要があります。 メッセージ ボックス データベースを削除する方法の詳細については、次を参照してください。[メッセージ ボックス データベースを削除する方法](../core/how-to-delete-a-messagebox-database.md)します。  
+>  メッセージ ボックス データベースを削除する前に、新しいメッセージの公開を無効にする必要があります。 メッセージ ボックス データベースを削除する方法の詳細については、[メッセージ ボックス データベースを削除する方法](../core/how-to-delete-a-messagebox-database.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
  メッセージ ボックス データベースを管理する管理者は、必要なユーザー権利が必要です。 メッセージ ボックス データベースの管理と新しいメッセージの公開の無効化には、次のユーザー権利が必要です。  

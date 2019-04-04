@@ -30,7 +30,7 @@ ms.locfileid: "36990035"
   
 - [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite に接続中に Windows 認証を使用してメタデータを生成し、使用するか、操作を実行することもできます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]または[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 Windows 認証を使用する前に記載された手順を実行する必要があります[Windows 認証を使用して Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-windows-authentication.md)します。  
   
-  詳細については、次を参照してください。 [Oracle E-business Suite とアダプター間のセキュリティ](../../adapters-and-accelerators/adapter-oracle-ebs/security-between-oracle-e-business-suite-and-the-adapter.md)します。  
+  詳細については、[Oracle E-business Suite とアダプター間のセキュリティ](../../adapters-and-accelerators/adapter-oracle-ebs/security-between-oracle-e-business-suite-and-the-adapter.md)を参照してください。  
   
 ## <a name="security-best-practices-for-consuming-the-oracle-e-business-adapter-with-biztalk-server"></a>BizTalk Server と Oracle E-business アダプターを使用するためのセキュリティのベスト プラクティス  
   
@@ -48,7 +48,7 @@ ms.locfileid: "36990035"
   
 - 使用するアプリケーションの場合、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]を別のサービスまたはクライアント、プロセス境界を越えて機密性の高いデータベースの情報を含む送信メッセージは、これらのメッセージは、適切なデータの提供に適用されるセキュリティ対策のための十分なであることを確認環境内で保護します。  
   
-  詳細については、次を参照してください。 [Oracle E-business Suite アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-oracle-ebs/security-with-the-oracle-e-business-suite-adapter-and-biztalk-server.md)します。  
+  詳細については、[Oracle E-business Suite アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-oracle-ebs/security-with-the-oracle-e-business-suite-adapter-and-biztalk-server.md)を参照してください。  
   
 ## <a name="security-best-practices-for-consuming-the-oracle-e-business-adapter-with-programming-solutions"></a>プログラミング ソリューションと、Oracle E-business アダプターを使用するためのセキュリティのベスト プラクティス  
   

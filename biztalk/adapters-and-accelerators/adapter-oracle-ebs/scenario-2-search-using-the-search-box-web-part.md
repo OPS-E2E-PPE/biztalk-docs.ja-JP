@@ -125,7 +125,7 @@ ms.locfileid: "36991707"
   
 #### <a name="to-add-the-search-box-web-part"></a>検索ボックス Web パーツを追加するには  
   
-1.  呼ばれる Web パーツ ページを作成する**MS_SAMPLE_EMPLOYEE_Search**します。 Web パーツ ページを作成する手順については、次を参照してください。[シナリオ 1: ビジネス データ一覧 web パーツを使用してデータを表示](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)で[シナリオ 1: ビジネス データ一覧 web パーツを使用してデータを表示](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)します。  
+1.  呼ばれる Web パーツ ページを作成する**MS_SAMPLE_EMPLOYEE_Search**します。 Web パーツ ページを作成する手順については、[シナリオ 1: ビジネス データ一覧 web パーツを使用してデータを表示](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)で[シナリオ 1: ビジネス データ一覧 web パーツを使用してデータを表示](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)を参照してください。  
   
 2.  MS_SAMPLE_EMPLOYEE_Search ページで、次のようにクリックします。 **Web パーツの追加**します。  
   

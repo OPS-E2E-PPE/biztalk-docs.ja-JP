@@ -40,7 +40,7 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
   
 - **オプション**データを表示する方法のオプションを提供します。 使用可能なオプションは次のとおりです。  
   
-  - **disabledatavalidation**オプション セット、 **EnableSafeTyping** 、基になるプロパティのバインド[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 安全な入力が有効にすると、DATS、TIM、および NUMC データ型は文字列として表されます。 このバインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
+  - **disabledatavalidation**オプション セット、 **EnableSafeTyping** 、基になるプロパティのバインド[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 安全な入力が有効にすると、DATS、TIM、および NUMC データ型は文字列として表されます。 このバインドのプロパティの詳細については、[mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
   
   - **firstresultset**によって返される最初の結果セットを指定します、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]します。 任意のステートメントは、ADO プロバイダーは、ソースで実行される、返される最初の結果だけが使用可能です。 RFC EXEC のシナリオで通常はテーブルの複数のパラメーターが返されますが最初の結果セットのみの場合は、クライアント プログラムが使用できない可能性があるために使用できます。 OPTION 句の一部として"firstresultset"キーワードを指定して、クライアントは、プロバイダーを返す必要な最初のテーブル パラメーターを指定できます。 以下に例を示します。  
   
@@ -157,7 +157,7 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
 - EXEC ステートメントでは、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]返します`TIMS`フィールドの値として .NET`System.DateTime`オブジェクト。  
   
   > [!NOTE]
-  >  SELECT ステートメントの[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]返します`TIMS`フィールドの値として .NET`System.TimeSpan`オブジェクト。 SELECT ステートメントの詳細については、次を参照してください。 [SAP で SELECT ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-a-select-statement-in-sap.md)します。  
+  >  SELECT ステートメントの[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]返します`TIMS`フィールドの値として .NET`System.TimeSpan`オブジェクト。 SELECT ステートメントの詳細については、[SAP で SELECT ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-a-select-statement-in-sap.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [.NET Framework Data Provider for mySAP Business Suite について](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)

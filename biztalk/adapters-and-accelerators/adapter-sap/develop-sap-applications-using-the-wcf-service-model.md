@@ -26,7 +26,7 @@ ms.locfileid: "36998651"
   
  このため、 [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] WCF サービス モデルと呼ばれる別のプログラミング モデルを提供します。 WCF サービス モデルには、発信先サービスに対する操作を呼び出すか、クライアントからの受信操作にプロキシ クラスの使用が含まれます。  
   
-- ターゲット サービスで操作を呼び出すために使用するプロキシ クラスには、WCF クライアント クラスが呼び出されます。 このクラスは、厳密に型指定されたパラメーターを持つ .NET メソッドとして、サービスによって公開される操作をモデル化します。 WCF サービス モデルを使用すると、公開操作を呼び出すことができます、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] WCF クライアントでの .NET メソッドとして。 WCF クライアントの詳細については、次を参照してください。 [WCF Client Overview](https://msdn.microsoft.com/library/ms735103.aspx)します。
+- ターゲット サービスで操作を呼び出すために使用するプロキシ クラスには、WCF クライアント クラスが呼び出されます。 このクラスは、厳密に型指定されたパラメーターを持つ .NET メソッドとして、サービスによって公開される操作をモデル化します。 WCF サービス モデルを使用すると、公開操作を呼び出すことができます、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] WCF クライアントでの .NET メソッドとして。 WCF クライアントの詳細については、[WCF Client Overview](https://msdn.microsoft.com/library/ms735103.aspx)を参照してください。
   
 - クライアントから、操作を受信するために使用するプロキシ クラスは、WCF サービス コントラクト クラスと呼ばれます。 このクラスは、厳密に型指定されたパラメーターを持つコールバック メソッドとして、コードによって公開される操作をモデル化します。 このクラスのインスタンスをホストすることができますし、 **System.ServiceModel.ServiceHost**コードで操作を呼び出すクライアントを有効にします。 ポーリング クエリの結果を受信する WCF サービス モデルおよび POLLINGSTMT 操作を対象とした WCF サービス コントラクト クラスを使用して、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
@@ -36,9 +36,9 @@ ms.locfileid: "36998651"
   
 - [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]が付属していますが、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]  
   
-  [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]と統合されて、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]強力な参照と検索機能を備えた、アダプターによって公開される操作では、デザイン エクスペリエンスと標準の Microsoft Windows のインターフェイスを表示します。 WCF クライアントまたは WCF サービス コントラクト クラスを生成する方法の詳細については、次を参照してください。 [WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成する](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)します。  
+  [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]と統合されて、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]強力な参照と検索機能を備えた、アダプターによって公開される操作では、デザイン エクスペリエンスと標準の Microsoft Windows のインターフェイスを表示します。 WCF クライアントまたは WCF サービス コントラクト クラスを生成する方法の詳細については、[WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成する](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)を参照してください。  
   
-  WCF サービス モデルのプログラミングのソリューションの開発に最適な選択肢は、多くの場合、.NET プログラマになじみがあるし、チャネル経由で SOAP メッセージ交換の基になる複雑さが隠蔽されるモデルを表示するため、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 ただし、WCF チャネル モデルが適しています。 をする可能性があります。 シナリオがあります。どのストリーミングのシナリオで特にことが重要です。 これは、シリアル化するためと、SOAP メッセージ内のオブジェクトの XML 表現とサービス モデルでそれらを表すために使用する .NET 型の間の逆シリアル化には、メッセージ全体をメモリに読み取る必要があります。 WCF チャネル モデルの使用に関する詳細については、次を参照してください。 [WCF チャネル モデルを使用して開発の SAP アプリケーション](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)します。
+  WCF サービス モデルのプログラミングのソリューションの開発に最適な選択肢は、多くの場合、.NET プログラマになじみがあるし、チャネル経由で SOAP メッセージ交換の基になる複雑さが隠蔽されるモデルを表示するため、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 ただし、WCF チャネル モデルが適しています。 をする可能性があります。 シナリオがあります。どのストリーミングのシナリオで特にことが重要です。 これは、シリアル化するためと、SOAP メッセージ内のオブジェクトの XML 表現とサービス モデルでそれらを表すために使用する .NET 型の間の逆シリアル化には、メッセージ全体をメモリに読み取る必要があります。 WCF チャネル モデルの使用に関する詳細については、[WCF チャネル モデルを使用して開発の SAP アプリケーション](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)を参照してください。
   
   このセクションのトピックでは、情報、手順、および作成しを使用してアプリケーションを開発する WCF サービス モデルを使用するのに役立つ例が含まれて、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   

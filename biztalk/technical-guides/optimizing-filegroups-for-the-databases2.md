@@ -27,11 +27,11 @@ ms.locfileid: "37022704"
   
 - RAID (Redundant Array of Independent Disks) デバイスなど、使用するディスク ハードウェアの種類。 
   
-- ファイルおよびファイル グループを使用してディスク上のデータを分配する方法。 SQL Server でのファイルおよびファイル グループの使用に関する詳細については、次を参照してください。 [Database Files and Filegroups](https://docs.microsoft.com/sql/relational-databases/databases/database-files-and-filegroups)します。
+- ファイルおよびファイル グループを使用してディスク上のデータを分配する方法。 SQL Server でのファイルおよびファイル グループの使用に関する詳細については、[Database Files and Filegroups](https://docs.microsoft.com/sql/relational-databases/databases/database-files-and-filegroups)を参照してください。
   
-- データにアクセスする場合は、パフォーマンスを向上させるための最適なインデックスの設計を実装します。 インデックスのデザインの詳細については、次を参照してください。[インデックスの設計](https://docs.microsoft.com/sql/relational-databases/sql-server-index-design-guide)します。
+- データにアクセスする場合は、パフォーマンスを向上させるための最適なインデックスの設計を実装します。 インデックスのデザインの詳細については、[インデックスの設計](https://docs.microsoft.com/sql/relational-databases/sql-server-index-design-guide)を参照してください。
   
-- 最適なパフォーマンスを SQL Server の構成パラメーターを設定する方法。 SQL Server の最適な構成パラメーターの設定の詳細については、次を参照してください。[サーバー構成オプションの](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)します。
+- 最適なパフォーマンスを SQL Server の構成パラメーターを設定する方法。 SQL Server の最適な構成パラメーターの設定の詳細については、[サーバー構成オプションの](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)を参照してください。
   
   BizTalk Server の主な設計目標の 1 つは、メッセージがあることを確認する**決して**失われます。 メッセージの損失の可能性を軽減するためには、メッセージが処理されるメッセージをメッセージ ボックス データベースに書き込まれます頻繁に。 オーケストレーションによって処理されるは、メッセージ、メッセージがオーケストレーション内のすべての永続化ポイントにあるメッセージ ボックス データベースに書き込まれます。 これらの永続性ポイントには、メッセージ ボックスに、物理ディスクへのメッセージと関連する状態の書き込みが発生します。 高いスループットをでは、この永続化は、かなりのディスクの競合が生じるし、ボトルネックになる可能性があることができます。  
   
@@ -40,7 +40,7 @@ ms.locfileid: "37022704"
 > [!NOTE]  
 >  この最適化は、経験豊富な SQL Server データベース管理者と後のすべての BizTalk Server データベースを正しくバックアップされているだけでのみ実行する必要があります。 この最適化は、BizTalk Server 環境ですべての SQL Server コンピューターで実行する必要があります。  
   
- SQL Server のファイルおよびファイル グループは、この機能により、データベースを複数のディスク コント ローラーに複数のディスクにまたがって作成するためにデータベースのパフォーマンスを向上させるために使用できるまたは RAID (独立したディスクの冗長アレイ) システムです。 たとえば、コンピューターにディスクが 4 個ある場合は、データ ファイル 3 つとログ ファイル 1 つから構成されるデータベースを、各ディスクにファイルを 1 つずつ配置して作成できます。 データへのアクセスが行われると、4 つの読み取り/書き込みヘッドは並行してデータを同時にアクセスできます。 これにより速度が、データベース操作が大幅にします。 SQL Server のディスクのハードウェア ソリューションの実装の詳細については、次を参照してください。[データベース パフォーマンス](http://go.microsoft.com/fwlink/?LinkID=71419)(http://go.microsoft.com/fwlink/?LinkID=71419) 、SQL Server Books Online にします。  
+ SQL Server のファイルおよびファイル グループは、この機能により、データベースを複数のディスク コント ローラーに複数のディスクにまたがって作成するためにデータベースのパフォーマンスを向上させるために使用できるまたは RAID (独立したディスクの冗長アレイ) システムです。 たとえば、コンピューターにディスクが 4 個ある場合は、データ ファイル 3 つとログ ファイル 1 つから構成されるデータベースを、各ディスクにファイルを 1 つずつ配置して作成できます。 データへのアクセスが行われると、4 つの読み取り/書き込みヘッドは並行してデータを同時にアクセスできます。 これにより速度が、データベース操作が大幅にします。 SQL Server のディスクのハードウェア ソリューションの実装の詳細については、[データベース パフォーマンス](http://go.microsoft.com/fwlink/?LinkID=71419)(http://go.microsoft.com/fwlink/?LinkID=71419) 、SQL Server Books Online にを参照してください。  
   
  さらに、ファイルおよびファイル グループを有効にする、データの配置で特定のファイル グループにテーブルを作成できるためです。 これにより、指定されたテーブルのすべてのファイル I/O は、特定のディスクに向けることがあるために、パフォーマンスが向上します。 たとえば、使用頻度の高いテーブルは、1 つのディスク上にあるファイル グループ内のファイルを配置でき、データベース内の他の頻度が低いテーブルを 2 番目のディスク上にある別のファイル グループ内の異なるファイルに配置することができます。  
   

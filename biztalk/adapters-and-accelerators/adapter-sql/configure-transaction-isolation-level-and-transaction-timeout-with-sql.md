@@ -49,7 +49,7 @@ ms.locfileid: "37013139"
 13. 右側のウィンドウで、 **Wcf-custom トランスポートのプロパティ**、適切な値を指定、 **transactionIsolationLevel**と**transactionTimeout**パラメーター。 次のトランザクション分離レベルのいずれかを選択することができます: **Serializable**、 **RepeatableRead**、 **ReadCommitted**、 **ReadUncommitted**、**スナップショット**、**混乱**、および**未指定**します。  
 
     > [!NOTE]
-    >  トランザクション分離レベルの既定値は**Serializable** WCF-SQL アダプターの受信と送信の両方の操作をします。 これらのトランザクション分離レベルについては、次を参照してください。、**メンバー**セクションで[分離レベルの列挙体](http://go.microsoft.com/fwlink/?LinkId=126983)(http://go.microsoft.com/fwlink/?LinkId=126983)します。  
+    >  トランザクション分離レベルの既定値は**Serializable** WCF-SQL アダプターの受信と送信の両方の操作をします。 これらのトランザクション分離レベルについては、、**メンバー**セクションで[分離レベルの列挙体](http://go.microsoft.com/fwlink/?LinkId=126983)(http://go.microsoft.com/fwlink/?LinkId=126983)を参照してください。  
 
      ![トランザクション分離レベルの設定](../../adapters-and-accelerators/adapter-sql/media/b39c180e-ca9f-48ca-9550-f4837826d00e.gif "b39c180e-ca9f-48ca-9550-f4837826d00e")  
 

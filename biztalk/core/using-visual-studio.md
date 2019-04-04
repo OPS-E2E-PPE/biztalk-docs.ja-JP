@@ -61,12 +61,12 @@ BizTalk プロジェクト システム内では、Microsoft [!INCLUDE[btsVStudi
 | **アダプター サービス参照を追加します。** | このメニュー項目を使用して、メタデータの参照 (および検索)、および選択した操作と種類に応じた .NET CLR プロキシ クラスを生成します。 **注:** この項目で BizTalk メニューの場合にのみで、少なくとも 1 つのアダプターが表示されます (付属[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]) がコンピューターにインストールされています。 |
 | **追加アダプター参照** |       このメニュー項目を使用して、アダプターからのメタデータの参照 (および検索)、および選択した操作に応じた XML スキーマを生成します。 **注:** この項目で BizTalk メニューの場合にのみで、少なくとも 1 つのアダプターが表示されます (付属[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]) がコンピューターにインストールされています。       |
 
- BizTalk Web サービスの Web 参照の追加方法の詳細については、次を参照してください。 [Web 参照を追加する](../core/adding-web-references.md)します。  
+ BizTalk Web サービスの Web 参照の追加方法の詳細については、[Web 参照を追加する](../core/adding-web-references.md)を参照してください。  
 
 ## <a name="build-menu"></a>[ビルド] メニュー  
- **ビルド**メニューには、ビルド コマンドが含まれています。 実行するコマンドも含まれています。 **Configuration Manager**ビルドと配置の構成オプションを設定します。 プロジェクトを展開するには、ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックして、**デプロイ**コマンド。 この展開方法は、アプリケーションの開発時または単純なシナリオでのみ適用できます。 この展開方法は**いない**のバージョンを追跡し、簡単に以前のバージョンのアセンブリを上書きすることができます。 実稼働環境ではなく、開発フェーズやテスト フェーズでは、同じバージョンの再利用が必要になる場合もあります。 展開については、次を参照してください。 [Understanding BizTalk アプリケーションの展開と管理](../core/understanding-biztalk-application-deployment-and-management.md)します。  
+ **ビルド**メニューには、ビルド コマンドが含まれています。 実行するコマンドも含まれています。 **Configuration Manager**ビルドと配置の構成オプションを設定します。 プロジェクトを展開するには、ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックして、**デプロイ**コマンド。 この展開方法は、アプリケーションの開発時または単純なシナリオでのみ適用できます。 この展開方法は**いない**のバージョンを追跡し、簡単に以前のバージョンのアセンブリを上書きすることができます。 実稼働環境ではなく、開発フェーズやテスト フェーズでは、同じバージョンの再利用が必要になる場合もあります。 展開については、[Understanding BizTalk アプリケーションの展開と管理](../core/understanding-biztalk-application-deployment-and-management.md)を参照してください。  
 
- BizTalk アイテムを BizTalk 管理データベースに追加するには、アセンブリ展開ウィザードを実行します。 アセンブリの展開ウィザードの詳細については、次を参照してください。 [Visual Studio から BizTalk アセンブリを展開する方法](../core/how-to-deploy-a-biztalk-assembly-from-visual-studio.md)します。  
+ BizTalk アイテムを BizTalk 管理データベースに追加するには、アセンブリ展開ウィザードを実行します。 アセンブリの展開ウィザードの詳細については、[Visual Studio から BizTalk アセンブリを展開する方法](../core/how-to-deploy-a-biztalk-assembly-from-visual-studio.md)を参照してください。  
 
 > [!NOTE]
 >  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] には、コンパイル済みのアセンブリを受け取ってそれを難読化するバージョンの Dotfuscator が組み込まれており、シンボルおよび他の識別子の名前を変更して知的所有権を保護します。 このツールをとおして実行されたアセンブリは展開できません。  

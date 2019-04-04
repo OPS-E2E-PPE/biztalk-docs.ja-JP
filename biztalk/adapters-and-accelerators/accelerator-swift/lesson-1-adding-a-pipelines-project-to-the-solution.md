@@ -41,6 +41,6 @@ ms.locfileid: "36982979"
   
     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] ソリューション エクスプ ローラーに新しいプロジェクトを追加し、プロジェクト フォルダーを作成し、ファイル、 \<*ドライブ*\>: \Labs\SWIFTProject フォルダー。  
   
-7. モジュール 2 SWIFTPipelines プロジェクトへのレッスン 2 で作成したアセンブリ キー ファイルを適用します。 詳細については、次を参照してください。[レッスン 2: SWIFTSchemas プロジェクト用の厳密な名前付きの BizTalk アセンブリを作成する](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md)します。  
+7. モジュール 2 SWIFTPipelines プロジェクトへのレッスン 2 で作成したアセンブリ キー ファイルを適用します。 詳細については、[レッスン 2: SWIFTSchemas プロジェクト用の厳密な名前付きの BizTalk アセンブリを作成する](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md)を参照してください。  
   
    続行する[レッスン 2: プロジェクト参照の追加](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-project-references.md)します。

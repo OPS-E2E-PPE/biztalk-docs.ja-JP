@@ -125,11 +125,11 @@ ms.locfileid: "37002147"
   
 8. **スケーラビリティ**– 追加電源、ネットワーク帯域幅、および記憶域の容量を処理して実現できます迅速かつ簡単に分配をゲスト仮想マシンのホスト コンピューターから使用可能なリソースを追加します。 ホスト コンピューターがアップグレードされたこと、または機能を持つホスト コンピューターに、ゲスト仮想マシンを移動することが必要です。  
   
-   HYPER-V で提供される仮想化テクノロジを活用することの利点の深さについての詳細は、次を参照してください。、 [Hyper-v テクノロジの概要](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-technology-overview)します。 
+   HYPER-V で提供される仮想化テクノロジを活用することの利点の深さについての詳細は、、 [Hyper-v テクノロジの概要](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-technology-overview)を参照してください。 
   
 ## <a name="disadvantages"></a>欠点
  HYPER-V 仮想化環境でエンタープライズ レベルのソリューションを実行中のいくつかのデメリットがあります。  
   
 -   **ハードウェアの要件 –** サーバーの統合の確認要求により、HYPER-V 仮想マシン、CPU とメモリを消費する傾向し、比較可能なコンピューティングの読み込みを伴う物理サーバーよりも大きい値のディスク I/O 帯域幅が必要です。 64 ビット Windows Server のすべてのエディションは 64 ビットのみ、HYPER-V サーバーの役割は使用可能なだけであるため、物理ハードウェアがハードウェア支援による仮想化をサポートする必要があります。 つまり、プロセッサは Intel VT または AMD Virtualization (AMD-V) テクノロジと互換性がある、システム BIOS でデータ実行防止 (DEP) をサポートする必要があります、DEP を有効にする必要があります。  
   
--   **ソフトウェアの要件 –** HYPER-V 仮想マシンで実行されている、ほとんどの Microsoft ソフトウェアがサポートされていること、一部の Microsoft ソフトウェアは、HYPER-V 仮想化環境との互換性を確保するテスト対象であること。 たとえば、ほとんどの Microsoft のエンタープライズ レベル アプリケーション サポート、HYPER-V で実行されているか、HYPER-V でサポートされているテスト中します。 BizTalk Server と HYPER-V 上の SQL Server のサポートの詳細については、次を参照してください。[付録 c: BizTalk Server と SQL Server、Hyper-v のサポート性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)します。
+-   **ソフトウェアの要件 –** HYPER-V 仮想マシンで実行されている、ほとんどの Microsoft ソフトウェアがサポートされていること、一部の Microsoft ソフトウェアは、HYPER-V 仮想化環境との互換性を確保するテスト対象であること。 たとえば、ほとんどの Microsoft のエンタープライズ レベル アプリケーション サポート、HYPER-V で実行されているか、HYPER-V でサポートされているテスト中します。 BizTalk Server と HYPER-V 上の SQL Server のサポートの詳細については、[付録 c: BizTalk Server と SQL Server、Hyper-v のサポート性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)を参照してください。

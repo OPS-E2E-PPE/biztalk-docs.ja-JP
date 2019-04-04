@@ -41,7 +41,7 @@ ms.locfileid: "36977611"
 
 - 同期受信は、データまたはアダプターを経由して、ターゲット システムからのイベントがかかるクライアントが受信を待機します。 受信すると、同期の実装をサポートするために、`Microsoft.ServiceModel.Channels.Common.IInboundHandler`インターフェイス。  
 
-  メッセージ交換パターンの詳細については、次を参照してください。[アーキテクチャの概要](architecture-overview-of-the-wcf-lob-adapter-sdk.md)します。  
+  メッセージ交換パターンの詳細については、[アーキテクチャの概要](architecture-overview-of-the-wcf-lob-adapter-sdk.md)を参照してください。  
 
 > [!NOTE]
 >  [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] UI 内のデータ フローとして、メッセージ交換パターンを示しています。  
@@ -112,7 +112,7 @@ EchoMainCategory
 
 - {Projectname}ConnectionUri.cs  
 
-  これを行う方法の詳細については、次を参照してください。[手順 2: アダプターと接続のプロパティを分類](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)します。  
+  これを行う方法の詳細については、[手順 2: アダプターと接続のプロパティを分類](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)を参照してください。  
 
 ## <a name="see-also"></a>参照  
  [WCF LOB Adapter SDK についてのチュートリアル](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorials-to-learn-the-wcf-lob-adapter-sdk.md)

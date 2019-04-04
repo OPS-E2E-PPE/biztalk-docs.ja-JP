@@ -27,7 +27,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36986419"
 ---
 # <a name="how-to-add-a-certificate-to-an-application"></a>証明書をアプリケーションに追加する方法
-ここでは、コマンド ラインを使用して、BizTalk アプリケーションに証明書を追加する方法について説明します。 このオプションは、BizTalk Server 管理コンソールでは利用できません。 BizTalk アプリケーションに証明書を追加することで、証明書をアプリケーションと一緒にパッケージ化して、BizTalk グループの 1 つから別のグループに送信することができるようになります。 証明書を使用すると、ID を検証して送信ポートと受信場所へのセキュリティで保護されたリンクを確立することができます。 詳細については、次を参照してください。[送信ポートに証明書を割り当てる方法](../core/how-to-assign-a-certificate-to-a-send-port.md)と[受信場所に証明書を割り当てる方法](../core/how-to-assign-a-certificate-to-a-receive-location.md)します。  
+ここでは、コマンド ラインを使用して、BizTalk アプリケーションに証明書を追加する方法について説明します。 このオプションは、BizTalk Server 管理コンソールでは利用できません。 BizTalk アプリケーションに証明書を追加することで、証明書をアプリケーションと一緒にパッケージ化して、BizTalk グループの 1 つから別のグループに送信することができるようになります。 証明書を使用すると、ID を検証して送信ポートと受信場所へのセキュリティで保護されたリンクを確立することができます。 詳細については、[送信ポートに証明書を割り当てる方法](../core/how-to-assign-a-certificate-to-a-send-port.md)と[受信場所に証明書を割り当てる方法](../core/how-to-assign-a-certificate-to-a-receive-location.md)を参照してください。  
   
  証明書をアプリケーションに追加する際には、次の重要事項を念頭に置いてください。  
   

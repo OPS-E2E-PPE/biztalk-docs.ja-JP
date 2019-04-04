@@ -70,19 +70,19 @@ ITEMS,ITEM872-AA|Lawnmower|1|148.95|Electric-120vac,ITEM926-AA|Baby Monitor|1|39
   
  区切られたレコードに関連する注意事項を次に示します。これらは、送信時レコードの受信および作成の際のレコードの解析方法に影響します。  
   
-- データの一部として扱われるために区切り文字の解釈のオーバーライドにしようされる文字です。 詳細については、次を参照してください。[フィールド値の一部としての特殊文字の解釈方法](../core/ways-to-interpret-special-characters-as-part-of-a-field-value.md)します。  
+- データの一部として扱われるために区切り文字の解釈のオーバーライドにしようされる文字です。 詳細については、[フィールド値の一部としての特殊文字の解釈方法](../core/ways-to-interpret-special-characters-as-part-of-a-field-value.md)を参照してください。  
   
-- 他の類似しているレコードと区別するために使用される、レコードの先頭の省略可能なタグ。 詳細については、次を参照してください。[区切られたレコードのタグ処理](../core/tag-handling-in-delimited-records.md)します。  
+- 他の類似しているレコードと区別するために使用される、レコードの先頭の省略可能なタグ。 詳細については、[区切られたレコードのタグ処理](../core/tag-handling-in-delimited-records.md)を参照してください。  
   
-- 埋め込み文字に関連する最小長のフィールド内のデータの位置揃え方法。 詳細については、次を参照してください。[フィールド Padding](../core/field-padding.md)、[フィールドの位置揃え](../core/field-justification.md)、および[最小フィールド長区切られたレコードの](../core/minimum-field-lengths-within-delimited-records.md)します。  
+- 埋め込み文字に関連する最小長のフィールド内のデータの位置揃え方法。 詳細については、[フィールド Padding](../core/field-padding.md)、[フィールドの位置揃え](../core/field-justification.md)、および[最小フィールド長区切られたレコードの](../core/minimum-field-lengths-within-delimited-records.md)を参照してください。  
   
-- 位置指定レコードは、他の区切られたレコード内に入れ子にすることができます。 詳細については、次を参照してください。[入れ子になった位置指定レコードとレコードの区切り](../core/nested-positional-and-delimited-records.md)します。  
+- 位置指定レコードは、他の区切られたレコード内に入れ子にすることができます。 詳細については、[入れ子になった位置指定レコードとレコードの区切り](../core/nested-positional-and-delimited-records.md)を参照してください。  
   
-- 埋め込み文字に関連する固定長のフィールド内のデータの位置揃え方法。 詳細については、次を参照してください。[フィールドの位置揃え](../core/field-justification.md)します。  
+- 埋め込み文字に関連する固定長のフィールド内のデータの位置揃え方法。 詳細については、[フィールドの位置揃え](../core/field-justification.md)を参照してください。  
   
-- 区切り記号の位置に関する注意事項は、区切られるデータに関連します。 詳細については、次を参照してください。[子の順序に関する注意事項](../core/child-order-considerations.md)します。  
+- 区切り記号の位置に関する注意事項は、区切られるデータに関連します。 詳細については、[子の順序に関する注意事項](../core/child-order-considerations.md)を参照してください。  
   
-- フラット ファイル メッセージを受信および送信する際の区切り記号の保存および非表示。 詳細については、次を参照してください。[区切り記号の保存と抑制](../core/delimiter-preservation-and-suppression.md)します。  
+- フラット ファイル メッセージを受信および送信する際の区切り記号の保存および非表示。 詳細については、[区切り記号の保存と抑制](../core/delimiter-preservation-and-suppression.md)を参照してください。  
   
   区切られたフラット ファイルを使用する方法を理解するために、サンプル、FlatFileReceive フォルダーと FlatFileSend フォルダーにあるを参照してください。 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\Pipelines\AssemblerDisassembler\\します。  
   

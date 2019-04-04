@@ -30,13 +30,13 @@ ms.locfileid: "37020034"
 |Send|一方向|常にこのポートでメッセージを送信します。|  
 |送信 - 受信|要求 - 応答|要求の送信と応答の受信をされます。|  
   
- 詳細については、次を参照してください。[構成する送信ポートの作成と](../../core/creating-and-configuring-send-ports.md)します。
+ 詳細については、[構成する送信ポートの作成と](../../core/creating-and-configuring-send-ports.md)を参照してください。
   
 > [!NOTE]
 >  受信ポートはため、サポートされていません、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Siebel システムからの受信操作を有効にしません。  
 > 
 > [!NOTE]
->  によって作成されるバインド構成ファイルをインポートすることで、Wcf-custom 送信ポートを構成することも、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータの生成の一部として。 このバインド ファイルを使用してポートを構成する方法の詳細については、次を参照してください。 [Siebel にポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-physical-port-binding-using-a-port-binding-file-to-siebel.md)します。
+>  によって作成されるバインド構成ファイルをインポートすることで、Wcf-custom 送信ポートを構成することも、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータの生成の一部として。 このバインド ファイルを使用してポートを構成する方法の詳細については、[Siebel にポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-physical-port-binding-using-a-port-binding-file-to-siebel.md)を参照してください。
   
  
   

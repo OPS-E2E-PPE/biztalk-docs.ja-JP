@@ -36,7 +36,7 @@ ms.locfileid: "37018595"
   
  負荷を生成する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境では、Microsoft BizTalk LoadGen 2007 ツールの使用を検討します。 ダウンロード[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)します。  
   
- 分析のパフォーマンス レポートを生成したり、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境では、パフォーマンス分析のログ (PAL) ツールの使用を検討します。 PAL ツールの詳細については、次を参照してください。[パフォーマンス分析のログ (PAL) ツールを使用して](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)します。  
+ 分析のパフォーマンス レポートを生成したり、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境では、パフォーマンス分析のログ (PAL) ツールの使用を検討します。 PAL ツールの詳細については、[パフォーマンス分析のログ (PAL) ツールを使用して](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)を参照してください。  
   
 ## <a name="what-developers-operators-and-administrators-should-know"></a>どのような開発者、演算子、および管理者が把握する必要があります。  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 開発者はでも熟知する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンスの特性とチューニングします。 オペレーターや管理者は、メッセージ ボックス データベースのスケール アウト側面、SAN に精通する必要がありますの調整、ネットワークは、次のチューニング、および SQL Server データベースのチューニング (たとえばを参照してください[SQL Server の設定を変更しないこと](../technical-guides/sql-server-settings-that-should-not-be-changed.md))。 開発者、演算子、および管理者はチューニングする方法を認識する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]高スループットと低待機時間。

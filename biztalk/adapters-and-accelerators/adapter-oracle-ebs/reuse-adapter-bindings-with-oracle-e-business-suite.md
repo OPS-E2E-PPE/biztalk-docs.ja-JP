@@ -35,7 +35,7 @@ ms.locfileid: "36976171"
   
   バインド ファイルは BizTalk アセンブリ、アプリケーション、またはグループを自動的には生成されません。 ただし、バインドをエクスポートすることによって、バインド ファイルを生成できます。 同様をアプリケーションまたはグループにし、バインド ファイルをインポートすることができます。 このセクションでは、インポートしてバインドをエクスポートする方法を説明します。  
   
-  バインドおよびバインド ファイルについての詳細については、次を参照してください。[バインド ファイルとアプリケーションの展開](../../core/binding-files-and-application-deployment.md)します。
+  バインドおよびバインド ファイルについての詳細については、[バインド ファイルとアプリケーションの展開](../../core/binding-files-and-application-deployment.md)を参照してください。
 
   > [!NOTE]
   >  バインド ファイルは BizTalk アセンブリ、アプリケーション、またはグループを自動的には生成されません。 バインドをエクスポートすることによって、バインド ファイルを生成することができます。 アプリケーションまたはグループにバインド ファイルをインポートできます。  
@@ -80,7 +80,7 @@ BizTalk Server 管理コンソールを使用してバインドをインポー�
 ## <a name="passwords-are-removed"></a>パスワードは削除されます。  
 セキュリティ上の理由により、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] では、バインド ファイルのエクスポート時にバインドのパスワードがファイルから削除されます。 バインドをインポートした後で、送信ポートと受信場所のパスワードを再構成する必要があります。 [トランスポートのプロパティ] ダイアログ ボックスでパスワードを構成する、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールの送信ポートまたは受信場所。 
 
-ユーザー名とパスワードを指定する方法の詳細については、次を参照してください。 [、Oracle E-business Suite のサインイン資格情報を構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-sign-in-credentials-for-the-oracle-e-business-suite.md)します。
+ユーザー名とパスワードを指定する方法の詳細については、[、Oracle E-business Suite のサインイン資格情報を構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-sign-in-credentials-for-the-oracle-e-business-suite.md)を参照してください。
   
 ## <a name="see-also"></a>参照  
 [Oracle E-business Suite のアプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-oracle-ebs/building-blocks-to-create-oracle-e-business-suite-applications.md)

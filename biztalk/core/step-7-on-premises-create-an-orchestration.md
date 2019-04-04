@@ -34,7 +34,7 @@ ms.locfileid: "36975819"
 |メッセージ名|対応するスキーマ|  
 |------------------|---------------------------|  
 |Message1_SO_Inbound|このメッセージは、のインスタンス、 **ECommerceSalesOrder.xsd**スキーマ。|  
-|Message2_SO_Inbound|このメッセージのコピーである、 **Message1_SO_Inbound**します。 ベスト プラクティスとして、メッセージのコピーを作成し、元のメッセージを残したまま、新しいメッセージを修正してください。 詳細については、次を参照してください。 [BizTalk Server メッセージ](http://msdn.microsoft.com/library/aa560436)します。|  
+|Message2_SO_Inbound|このメッセージのコピーである、 **Message1_SO_Inbound**します。 ベスト プラクティスとして、メッセージのコピーを作成し、元のメッセージを残したまま、新しいメッセージを修正してください。 詳細については、[BizTalk Server メッセージ](http://msdn.microsoft.com/library/aa560436)を参照してください。|  
 |Message1_SO_Outbound|このメッセージは、のインスタンス、 **TableOperations.dbo.SalesOrder (Insert)** スキーマ。|  
   
 #### <a name="to-create-the-messages"></a>メッセージを作成するには  

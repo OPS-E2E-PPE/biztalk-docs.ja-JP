@@ -57,9 +57,9 @@ ms.locfileid: "36968099"
   
 3. プライベート プロセス オーケストレーションからのビジネス ルールの呼び出し。 これは、追加、**ルールの呼び出し**オーケストレーションへの図形。  
   
-   [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には、サンプルが含まれています[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]ビジネス ポリシー、samplebtarnpolicy.xml、で\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>。Accelerator for rosettanet \sdk\pipautomation\3a4 します。 詳細については、次を参照してください。[サンプル BTARN ビジネス ポリシー](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md)します。  
+   [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には、サンプルが含まれています[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]ビジネス ポリシー、samplebtarnpolicy.xml、で\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>。Accelerator for rosettanet \sdk\pipautomation\3a4 します。 詳細については、[サンプル BTARN ビジネス ポリシー](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md)を参照してください。  
   
-   PIP3A4PrivateResponder.odx オーケストレーションは、ビジネス ルールを組み込んでいる PIP (Partner Interface Process) 固有の応答側プライベート プロセスを実装する方法を示すプライベート プロセス オーケストレーションのサンプルです。 このサンプルの詳細については、次を参照してください。 [3A4 プライベート レスポンダー オーケストレーションを使用してビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)します。  
+   PIP3A4PrivateResponder.odx オーケストレーションは、ビジネス ルールを組み込んでいる PIP (Partner Interface Process) 固有の応答側プライベート プロセスを実装する方法を示すプライベート プロセス オーケストレーションのサンプルです。 このサンプルの詳細については、[3A4 プライベート レスポンダー オーケストレーションを使用してビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)を参照してください。  
   
    ボキャブラリとポリシーの詳細については、BizTalk Server で「ビジネス ルールの開発」トピックを参照してください。  
   
@@ -171,7 +171,7 @@ ms.locfileid: "36968099"
 11. オーケストレーションのデザイン ウィンドウで、入力の追加など、ビジネス ポリシーに関連付けられている処理に必要なすべての他の図形を**デシジョン**図形の下、**ルールの呼び出し**図形。  
   
     > [!NOTE]
-    >  使用する方法の例については、**ルールの呼び出し**図形をオーケストレーションに、BTARN SDK に含まれる PIP3A4PrivateResponder.odx オーケストレーションを参照してください。 場所は\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pipautomation\3a4\pr です。 詳細については、次を参照してください。 [3A4 プライベート レスポンダー オーケストレーションを使用してビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)します。  
+    >  使用する方法の例については、**ルールの呼び出し**図形をオーケストレーションに、BTARN SDK に含まれる PIP3A4PrivateResponder.odx オーケストレーションを参照してください。 場所は\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pipautomation\3a4\pr です。 詳細については、[3A4 プライベート レスポンダー オーケストレーションを使用してビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)を参照してください。  
   
 12. **[OK]** をクリックします。  
   

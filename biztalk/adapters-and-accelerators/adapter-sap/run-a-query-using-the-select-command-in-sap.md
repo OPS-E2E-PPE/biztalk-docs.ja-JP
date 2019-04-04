@@ -32,13 +32,13 @@ ms.locfileid: "36971083"
   
 1. 参照を含める (と、コードでステートメントを使用) に**Microsoft.Data.SAPClient**します。  
   
-2. 作成、 **SAPConnection** SAP 接続文字列のデータ プロバイダーを使用してオブジェクト。 接続文字列の詳細については、次を参照してください。 [SAP 接続文字列のデータ プロバイダーの種類について](../../adapters-and-accelerators/adapter-sap/read-about-data-provider-types-for-the-sap-connection-string.md)します。  
+2. 作成、 **SAPConnection** SAP 接続文字列のデータ プロバイダーを使用してオブジェクト。 接続文字列の詳細については、[SAP 接続文字列のデータ プロバイダーの種類について](../../adapters-and-accelerators/adapter-sap/read-about-data-provider-types-for-the-sap-connection-string.md)を参照してください。  
   
 3. 呼び出すことによって、SAP システムへの接続を開く**オープン**上、 **SAPConnection**します。  
   
 4. 作成、 **SAPCommand**オブジェクトから、 **SAPConnection**します。  
   
-5. SELECT ステートメントの指定、 **CommandText**のプロパティ、 **SAPCommand**します。 かどうか、必要に応じてパラメーターを指定できますを使用して**SAPParameter**オブジェクト。 SELECT ステートメントを使用して SAP アイテムを照会する方法の詳細については、次を参照してください。 [SAP で SELECT ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-a-select-statement-in-sap.md)します。 RFC または BAPI を指定する方法の例については、次を参照してください。 [SELECT ステートメントの例](../../adapters-and-accelerators/adapter-sap/examples-for-select-statement.md)します。  
+5. SELECT ステートメントの指定、 **CommandText**のプロパティ、 **SAPCommand**します。 かどうか、必要に応じてパラメーターを指定できますを使用して**SAPParameter**オブジェクト。 SELECT ステートメントを使用して SAP アイテムを照会する方法の詳細については、[SAP で SELECT ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-a-select-statement-in-sap.md)を参照してください。 RFC または BAPI を指定する方法の例については、[SELECT ステートメントの例](../../adapters-and-accelerators/adapter-sap/examples-for-select-statement.md)を参照してください。  
   
 6. クエリを実行しで結果を取得するコマンドを実行する**SAPDataReader**します。  
   

@@ -35,7 +35,7 @@ ms.locfileid: "37021190"
 > [!NOTE]
 >  < Column_name > の設定操作では、これらのテーブルとビューの前に説明した 3 つの大規模なデータ型のいずれかの列を含むのみ使用できます。  
   
- 大規模なデータ型を含む SQL Server でのテーブルとビューで操作を実行する方法の詳細については、次を参照してください。[テーブルと、SQL アダプターを使用して大規模なデータ型を含むビューで操作](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)します。  
+ 大規模なデータ型を含む SQL Server でのテーブルとビューで操作を実行する方法の詳細については、[テーブルと、SQL アダプターを使用して大規模なデータ型を含むビューで操作](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [アダプターを使用して SAP システムへの接続します。](../../adapters-and-accelerators/adapter-sap/connect-to-an-sap-system-using-the-adapter.md)

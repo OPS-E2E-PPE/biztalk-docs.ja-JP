@@ -53,7 +53,7 @@ ms.locfileid: "37023344"
    4.  BTSScn.BPM.OrderBrokerApp.Test を右クリックし、をクリックして**停止**します。 **アプリケーションを停止**ダイアログ ボックスで、**完全停止 - インスタンスを終了**、 をクリックし、**停止**します。  
   
    > [!NOTE]
-   >  履歴データベースに情報を挿入します。 OrderBroker オーケストレーションは HistoryPort 送信ポートを使用して、**配信通知**プロパティが設定されて**送信**します。 送信ポートは、HistoryInsert-SP と HistoryInsert-Test-SP を含む HistoryInsert-SPG 送信グループにバインドされています。 これら 2 つの送信ポートの場合、メッセージ エンジンは OrderBroker オーケストレーションに 2 つの受信確認メッセージを公開します。 使用されないメッセージにより、オーケストレーションが保留になります。 このような状況を防ぐには、どちらか一方の送信ポートの参加を解除する必要があります。 このチュートリアルでは、BTSScn.BPM.OrderBrokerApp.Test アプリケーションを完全に停止して HistoryInsert-Test-SP 送信ポートを参加解除します。 OrderBroker オーケストレーションの詳細については、次を参照してください。 [OrderBroker オーケストレーションで処理](../core/processing-in-the-orderbroker-orchestration.md)します。 詳細については**配信通知**プロパティを参照してください[を使用して受信確認](../core/using-acknowledgments.md)します。  
+   >  履歴データベースに情報を挿入します。 OrderBroker オーケストレーションは HistoryPort 送信ポートを使用して、**配信通知**プロパティが設定されて**送信**します。 送信ポートは、HistoryInsert-SP と HistoryInsert-Test-SP を含む HistoryInsert-SPG 送信グループにバインドされています。 これら 2 つの送信ポートの場合、メッセージ エンジンは OrderBroker オーケストレーションに 2 つの受信確認メッセージを公開します。 使用されないメッセージにより、オーケストレーションが保留になります。 このような状況を防ぐには、どちらか一方の送信ポートの参加を解除する必要があります。 このチュートリアルでは、BTSScn.BPM.OrderBrokerApp.Test アプリケーションを完全に停止して HistoryInsert-Test-SP 送信ポートを参加解除します。 OrderBroker オーケストレーションの詳細については、[OrderBroker オーケストレーションで処理](../core/processing-in-the-orderbroker-orchestration.md)を参照してください。 詳細については**配信通知**プロパティを参照してください[を使用して受信確認](../core/using-acknowledgments.md)します。  
   
 4. 次に示すように、Facilities Simulator を実行します。  
   
@@ -179,7 +179,7 @@ ms.locfileid: "37023344"
 11. Operation Server を実行しているコマンド プロンプトでルーティング エラーのエラーメッセージを確認します。  
   
     > [!NOTE]
-    >  イベント ログと Operation Server にエラーが表示されます。 ビジネス プロセスのインスタンスがより高いシーケンス番号を持つ新しい注文によって中断され終了したため、Facilities System からの応答メッセージはビジネス プロセスのインスタンスへの関連付けを失っています。 したがって、応答メッセージは孤立し Operation Server に回送されます。 注文の更新プログラムの詳細については、次を参照してください。[注文プロセス マネージャでのフロー](../core/order-flow-through-the-process-manager.md)します。  
+    >  イベント ログと Operation Server にエラーが表示されます。 ビジネス プロセスのインスタンスがより高いシーケンス番号を持つ新しい注文によって中断され終了したため、Facilities System からの応答メッセージはビジネス プロセスのインスタンスへの関連付けを失っています。 したがって、応答メッセージは孤立し Operation Server に回送されます。 注文の更新プログラムの詳細については、[注文プロセス マネージャでのフロー](../core/order-flow-through-the-process-manager.md)を参照してください。  
   
 12. メモ帳で %SystemDrive%:\BPMTest\HistoryUpdate-SP フォルダーでは、最新のメッセージを開きます。 確認**CustName**、 **OrderNum**、 **OrderSeqNum**、および**状態**フィールドをメッセージが新しい注文用に作成されていると、**状態**フィールドは**完了**します。  
   
@@ -217,7 +217,7 @@ ms.locfileid: "37023344"
 9. クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、 をクリックして**イベント ビューアー**とし、新しい警告を確認してください、順序は、ユーザーによって終了されました。  
   
     > [!NOTE]
-    >  注文終了の詳細については、次を参照してください。[注文プロセス マネージャでのフロー](../core/order-flow-through-the-process-manager.md)します。  
+    >  注文終了の詳細については、[注文プロセス マネージャでのフロー](../core/order-flow-through-the-process-manager.md)を参照してください。  
   
 10. Operation Server を実行しているコマンド プロンプトでルーティング エラーのエラーメッセージを確認します。  
   

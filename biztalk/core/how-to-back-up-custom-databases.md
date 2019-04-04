@@ -28,7 +28,7 @@ ms.locfileid: "36998579"
   
 ## <a name="prerequisites"></a>前提条件  
   
-1. 完全復旧モデルを使用するように SQL Server を構成して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベース バックアップ セットのデータの整合性を確保する必要があります。  詳細については、次を参照してください。[ログ配布](../core/log-shipping.md)します。  
+1. 完全復旧モデルを使用するように SQL Server を構成して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベース バックアップ セットのデータの整合性を確保する必要があります。  詳細については、[ログ配布](../core/log-shipping.md)を参照してください。  
   
 2. カスタム データベースをバックアップするには、バックアップ対象の各データベースにアクセスできるユーザー アカウントでログオンする必要があります。  
   

@@ -24,7 +24,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36989771"
 ---
 # <a name="receive-idocs-from-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP の Idoc を受信します。
-IDOC の受信では、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP からの特別な RFC 呼び出しを受信する RFC サーバーとして機能します。 SAP アダプターは、RFC サーバーまたは tRFC サーバーとして機能する Idoc を受信できます。 TRFC サーバーとして動作してアダプターを使用した IDOC の受信についての詳細については、次を参照してください。[を使用して BizTalk Server でのトランザクション コンテキストでの SAP からの Idoc の受信](../../adapters-and-accelerators/adapter-sap/receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server.md)します。  
+IDOC の受信では、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP からの特別な RFC 呼び出しを受信する RFC サーバーとして機能します。 SAP アダプターは、RFC サーバーまたは tRFC サーバーとして機能する Idoc を受信できます。 TRFC サーバーとして動作してアダプターを使用した IDOC の受信についての詳細については、[を使用して BizTalk Server でのトランザクション コンテキストでの SAP からの Idoc の受信](../../adapters-and-accelerators/adapter-sap/receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server.md)を参照してください。  
 
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サーフェスの Idoc を受信する 2 つの異なる操作。  
 
@@ -40,7 +40,7 @@ IDOC の受信では、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-sh
 
 - **Rfc**任意の形式で Idoc を受信するが、アダプターを指定します。  
 
-  Idoc を受信するため、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]も、オーケストレーションでアダプターのクライアントが使用できるメッセージ コンテキスト プロパティのセットをサポートしています。 プロパティの一覧で、次を参照してください。[メッセージ コンテキスト プロパティの Idoc の受信を](../../adapters-and-accelerators/adapter-sap/message-context-properties-for-receiving-idocs.md)します。  
+  Idoc を受信するため、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]も、オーケストレーションでアダプターのクライアントが使用できるメッセージ コンテキスト プロパティのセットをサポートしています。 プロパティの一覧で、[メッセージ コンテキスト プロパティの Idoc の受信を](../../adapters-and-accelerators/adapter-sap/message-context-properties-for-receiving-idocs.md)を参照してください。  
 
   方法の詳細については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、SAP システムから Idoc を受信するサポートを参照してください[sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)します。 SOAP の構造の詳細については、IDOC を受信するメッセージを参照してください。 [IDOC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-idoc-operations.md)します。  
 
@@ -58,7 +58,7 @@ IDOC の受信では、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-sh
 ## <a name="how-to-receive-an-idoc-from-an-sap-system"></a>SAP システムから IDOC を受信する方法は?  
  使用して SAP システムでの操作を実行する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で説明されている手順のタスクが含まれます[SAP アプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)します。 これらのタスクは、SAP システムから IDOC を受信するには。  
 
-1. BizTalk プロジェクトを作成し、SAP システムを起動する IDOC のスキーマを生成します。 スキーマの生成中にことを必要なバインドのプロパティを設定することを確認して、前の表に記載されています。 バインドのプロパティを設定する方法については、次を参照してください。 [SAP アダプターのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sap/configure-the-binding-properties-for-the-sap-adapter.md)します。  
+1. BizTalk プロジェクトを作成し、SAP システムを起動する IDOC のスキーマを生成します。 スキーマの生成中にことを必要なバインドのプロパティを設定することを確認して、前の表に記載されています。 バインドのプロパティを設定する方法については、[SAP アダプターのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sap/configure-the-binding-properties-for-the-sap-adapter.md)を参照してください。  
 
 2. SAP システムからメッセージを送受信するための BizTalk プロジェクトでは、メッセージを作成します。  
 
@@ -73,7 +73,7 @@ IDOC の受信では、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-sh
    このトピックでは、これらのタスクを実行する手順を説明します。  
 
 ## <a name="samples-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル、ReceiveIDOC、このトピックに基づく ReceiveIDOC_SYSREL も付属している、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。 [SAP アダプターのサンプル](../../adapters-and-accelerators/adapter-sap/samples-for-the-sap-adapter.md)します。  
+ サンプル、ReceiveIDOC、このトピックに基づく ReceiveIDOC_SYSREL も付属している、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[SAP アダプターのサンプル](../../adapters-and-accelerators/adapter-sap/samples-for-the-sap-adapter.md)を参照してください。  
 
 ## <a name="generating-schema"></a>スキーマを生成します。  
  スキーマを生成する必要があります、*受信*の操作、 *ORDERS03 します。V3.620* IDOC、 */IDOC/ORDERS/ORDERS03*ノード。 参照してください[参照、検索と SAP の IDOC 操作のメタデータを get](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-idoc-operations-in-sap.md)特定 IDOC のスキーマを生成する方法の詳細について。 スキーマを生成するときにも、次のプロパティを設定する可能性があります。  
@@ -242,7 +242,7 @@ Response(WCF.Action)= "http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS03/
  ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください[のビルドとオーケストレーションの実行。](../../core/building-and-running-orchestrations.md)
 
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションを構成する方法の詳細については、次を参照してください。[アプリケーションを構成する方法](../../core/how-to-configure-an-application.md)します。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションを構成する方法の詳細については、[アプリケーションを構成する方法](../../core/how-to-configure-an-application.md)を参照してください。
 
  アプリケーションを構成する必要があります。  
 
@@ -255,7 +255,7 @@ Response(WCF.Action)= "http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS03/
     > [!IMPORTANT]
     >  XMLTransmit パイプラインのことを選択することを確認して***SendIDOC***します。 BizTalk プロジェクトの一部としてこのパイプラインを作成したとします。  
 
-  - WCF カスタム定義または WCF SAP 受信ポート。 このポートは、SAP システムから受信 IDOC を受信し、オーケストレーションに渡します。 このポートには、SAP システムへの応答も送信します。 ポートを作成する方法については、次を参照してください。 [SAP アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sap/manually-configure-a-physical-port-binding-to-the-sap-adapter.md)します。
+  - WCF カスタム定義または WCF SAP 受信ポート。 このポートは、SAP システムから受信 IDOC を受信し、オーケストレーションに渡します。 このポートには、SAP システムへの応答も送信します。 ポートを作成する方法については、[SAP アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sap/manually-configure-a-physical-port-binding-to-the-sap-adapter.md)を参照してください。
 
     > [!IMPORTANT]
     >  バインディングのプロパティを必ず**ReceiveIDocFormat**に設定されている**型指定された**します。  
@@ -264,7 +264,7 @@ Response(WCF.Action)= "http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS03/
     >  場合バインディング プロパティ**EnableBizTalkCompatibilityMode** BizTalk プロパティ スキーマ DLL を追加するかどうかを確認してください、true に設定されているため、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] BizTalk アプリケーションでは、アプリケーションのリソースとして、プロジェクトがデプロイされます。 リソースを追加する手順についてを参照してください。 [SAP アダプターを使用した運用上の問題のトラブルシューティングを行う](../../adapters-and-accelerators/adapter-sap/troubleshoot-operational-issues-with-the-sap-adapter.md)します。  
     > 
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、次を参照してください。 [sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)します。
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、[sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)を参照してください。
 
   BizTalk アプリケーションに IdocReceiveResponseMessageCreator プロジェクトのアセンブリを追加することも必要があります。 SAP システムに送信される応答を生成するには、このプロジェクトを作成したとします。 そのためには次を行います。  
 
@@ -275,7 +275,7 @@ Response(WCF.Action)= "http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS03/
 3.  **リソースの追加**ダイアログ ボックスで、をクリックして**OK**。  
 
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- SAP システムから IDOC を受信するための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)、または[アプリケーションを起動する方法](../../core/how-to-start-and-stop-a-biztalk-application.md)します。
+ SAP システムから IDOC を受信するための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)、または[アプリケーションを起動する方法](../../core/how-to-start-and-stop-a-biztalk-application.md)を参照してください。
 
  この段階で、ことを確認します。  
 
@@ -289,10 +289,10 @@ Response(WCF.Action)= "http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS03/
  アプリケーションを実行した後は、SAP システムを移動し、アダプターに IDOC を送信する必要があります。 アダプターは、IDOC を受信し、オーケストレーションの一部として指定されたファイルの場所に保存します。  
 
 ## <a name="possible-exceptions"></a>可能性のある例外  
- BizTalk Server を使用して SAP システムから IDOC を受信中に発生する可能性が、例外については、次を参照してください。[例外とエラーは、SAP アダプターを使用した処理](../../adapters-and-accelerators/adapter-sap/exceptions-and-error-handling-with-the-sap-adapter.md)します。  
+ BizTalk Server を使用して SAP システムから IDOC を受信中に発生する可能性が、例外については、[例外とエラーは、SAP アダプターを使用した処理](../../adapters-and-accelerators/adapter-sap/exceptions-and-error-handling-with-the-sap-adapter.md)を参照してください。  
 
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、次を参照してください。[再利用の SAP アダプター バインド](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)します。
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、[再利用の SAP アダプター バインド](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)を参照してください。
 
 ## <a name="see-also"></a>参照  
 [BizTalk アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-biztalk-applications-using-the-sap-adapter.md)

@@ -28,7 +28,7 @@ ms.locfileid: "36967931"
 
 - パーティに関連付けられた証明書  
 
-  パーティまたは取引の詳細については、次を参照してください。[取引先パートナー](../core/trading-partners-and-business-profiles.md)します。  
+  パーティまたは取引の詳細については、[取引先パートナー](../core/trading-partners-and-business-profiles.md)を参照してください。  
 
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
@@ -51,7 +51,7 @@ ms.locfileid: "36967931"
 3. **送信ポート**のページ、**パーティ プロパティ** ダイアログ ボックスで、次の操作を行います。  
 
    > [!NOTE]
-   >  BizTalk Server では、送信ポートの関連付けはアグリーメント レベルで行われます。 **送信ポート**下位互換性は、パーティのプロパティの使用可能なページです。 送信ポートをアグリーメントと関連付けるたびに、送信ポート設定がパーティ設定にも反映され、このページにも送信ポートの関連付けが表示されます。 ただし、その逆は真ではありません。 送信ポートをパーティと関連付け、その送信ポートをアグリーメント設定の一部として自動的に利用可能にすることはできません。 送信ポートをアグリーメントに関連付ける方法の詳細については、次を参照してください。[送信ポート関連付けの構成 (X12)](../core/configuring-send-port-association-x12.md)または[送信ポート (EDIFACT) の関連付けを構成する](../core/configuring-send-port-association-edifact.md)します。  
+   >  BizTalk Server では、送信ポートの関連付けはアグリーメント レベルで行われます。 **送信ポート**下位互換性は、パーティのプロパティの使用可能なページです。 送信ポートをアグリーメントと関連付けるたびに、送信ポート設定がパーティ設定にも反映され、このページにも送信ポートの関連付けが表示されます。 ただし、その逆は真ではありません。 送信ポートをパーティと関連付け、その送信ポートをアグリーメント設定の一部として自動的に利用可能にすることはできません。 送信ポートをアグリーメントに関連付ける方法の詳細については、[送信ポート関連付けの構成 (X12)](../core/configuring-send-port-association-x12.md)または[送信ポート (EDIFACT) の関連付けを構成する](../core/configuring-send-port-association-edifact.md)を参照してください。  
 
    |       プロパティ        |                                      目的                                      |
    |-----------------------|--------------------------------------------------------------------------------------|

@@ -28,7 +28,7 @@ ms.locfileid: "36967691"
   
 - 各国語文字ラージ オブジェクト (NCLOB)  
   
-- バイナリ ファイル (BFILE)。 詳細については、次を参照してください。[テーブルを含む BFILE データ型に対する演算](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)します。  
+- バイナリ ファイル (BFILE)。 詳細については、[テーブルを含む BFILE データ型に対する演算](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)を参照してください。  
   
   基になる Oracle データベースで LOB データ型を使用して、大量のデータを格納する最大 4 ギガバイト (GB)。 BFILE データ型を除くは、LOB データ型は、入力と出力のストリーミングの両方をサポートします。  
 
@@ -45,7 +45,7 @@ ms.locfileid: "36967691"
   > [!NOTE]
   >  `Update_<LOBColName>`操作。  
   > 
-  > - BFILE データ型のサポートされていません。 アダプター クライアントは、更新操作を使用してもできます。 詳細については、次を参照してください。[テーブルを含む BFILE データ型に対する演算](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)します。  
+  > - BFILE データ型のサポートされていません。 アダプター クライアントは、更新操作を使用してもできます。 詳細については、[テーブルを含む BFILE データ型に対する演算](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)を参照してください。  
   >   -   公開されませんビューとビューのインターフェイスします。  
   >   -   トランザクションの一部として実行する必要があります。 これは、確実に、 **UseAmbientTransaction**に設定するプロパティをバインドする必要があります**True**します。 については、 **UseAmbientTransaction**プロパティ、バインドを参照してください[BizTalk Adapter for Oracle E-business Suite バインド プロパティの Rad](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。  
   

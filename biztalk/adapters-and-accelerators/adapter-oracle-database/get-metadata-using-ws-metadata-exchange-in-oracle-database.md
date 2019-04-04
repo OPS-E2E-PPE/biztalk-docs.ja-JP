@@ -27,7 +27,7 @@ ms.locfileid: "37004019"
   
  WCF には、エクスポート、公開、取得、およびサービスに関するメタデータをインポートするためのさまざまなインフラストラクチャが用意されています。 アダプターなどの WCF サービスでは、メタデータを使用して、svcutil.exe などのツールが、サービスを使用するためのクライアント コードを自動的に生成されるように、サービス エンドポイントと対話する方法について説明します。 WCF では、サービスのメタデータを表すのインスタンスとして、 **MetadataSet**型で、Ws-metadata Exchange (MEX) で定義されているメタデータのシリアル化形式には厳密に関連付けられています。 作成することができます、 **MetadataSet**を対象となる操作を使用して、アダプター、 **MetadataExchangeClient**します。  
   
- WCF では、メタデータ交換は、包括的なトピックと、このドキュメントの範囲を超えてをサポートします。 WCF でのメタデータのサポートの詳細については、次を参照してください。[メタデータ](https://msdn.microsoft.com/library/ms731823.aspx)します。 アーキテクチャ、クラス、およびメタデータを公開する WCF の名前空間の特に優れたについては、次を参照してください。[メタデータ アーキテクチャの概要](https://msdn.microsoft.com/library/ms730243.aspx)します。 続行する前にこれらの WCF トピック内の WCF サービスからメタデータの取得に関連するコンテンツを理解しておく必要があります。  
+ WCF では、メタデータ交換は、包括的なトピックと、このドキュメントの範囲を超えてをサポートします。 WCF でのメタデータのサポートの詳細については、[メタデータ](https://msdn.microsoft.com/library/ms731823.aspx)を参照してください。 アーキテクチャ、クラス、およびメタデータを公開する WCF の名前空間の特に優れたについては、[メタデータ アーキテクチャの概要](https://msdn.microsoft.com/library/ms730243.aspx)を参照してください。 続行する前にこれらの WCF トピック内の WCF サービスからメタデータの取得に関連するコンテンツを理解しておく必要があります。  
   
  次のトピックでは、使用する方法については、 **MetadataExchangeClient**メタデータを取得する、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "37004019"
   
  この接続の URI を渡す方法を**MetadataExchangeClient**のどのクライアントを作成して、アダプターからのメタデータの取得に使用するオーバー ロードされたメソッドに依存します。  
   
- Oracle の接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。  
+ Oracle の接続 URI の詳細については、[Oracle Database 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)を参照してください。  
   
 ### <a name="binding-properties"></a>バインドのプロパティ  
  作成するときに、 **MetadataExchangeClient**を指定する必要があります、 **OracleDBBinding**します。  

@@ -36,4 +36,4 @@ ms.locfileid: "36994819"
   
 - **メッセージのルーティングに失敗しました BizTalk サンプルです。** このサンプルでは、ESB 例外管理フレームワークの正規化および BizTalk Server の失敗のメッセージのルーティング メカニズムによって生成されたネイティブ フォールト メッセージを強化する方法を示します。  
   
-  詳細については、次を参照してください。[メッセージの永続化カスタム例外ハンドラー サンプルを実行している](../esb-toolkit/running-the-message-persisting-custom-exception-handler-sample.md)と[BizTalk できませんでしたメッセージ ルーティング ESB 処理サンプルを実行している](../esb-toolkit/running-the-biztalk-failed-message-routing-esb-processing-sample.md)します。
+  詳細については、[メッセージの永続化カスタム例外ハンドラー サンプルを実行している](../esb-toolkit/running-the-message-persisting-custom-exception-handler-sample.md)と[BizTalk できませんでしたメッセージ ルーティング ESB 処理サンプルを実行している](../esb-toolkit/running-the-biztalk-failed-message-routing-esb-processing-sample.md)を参照してください。

@@ -33,7 +33,7 @@ ms.locfileid: "37022880"
   
 - 複数の BizTalk グループへのバインドと共にアセンブリを展開する場合  
   
-  これらの目的のバインド ファイルの使用に関する詳細については、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)します。  
+  これらの目的のバインド ファイルの使用に関する詳細については、[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)を参照してください。  
   
   インポートおよびバインドの追加に関する詳細については、次を参照してください[を BizTalk グループにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-group.md)、 [BizTalk アプリケーションにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-application.md)、および[バインディングを追加する方法。ファイルをアプリケーションに](../core/how-to-add-a-binding-file-to-an-application2.md)します。  
   
@@ -41,7 +41,7 @@ ms.locfileid: "37022880"
 >  バインド ファイルには機密データが含まれている場合があります。 適切な措置をとり、ファイルが保護されるようにしてください。  
   
 > [!NOTE]
->  セキュリティ上の理由により、BizTalk Server では、バインド ファイルのエクスポート時にバインドのパスワードがファイルから削除されます。 バインドをインポートした後で、送信ポートと受信場所のパスワードを再構成する必要があります。 BizTalk Server 管理コンソールの [トランスポートのプロパティ] ダイアログ ボックスで、送信ポートと受信場所のパスワードをそれぞれ構成します。 手順については、次を参照してください。[送信ポートを作成する方法](../core/how-to-create-a-send-port2.md)します。 参照してください[を作成する方法、受信場所](../core/how-to-create-a-receive-location.md)します。  
+>  セキュリティ上の理由により、BizTalk Server では、バインド ファイルのエクスポート時にバインドのパスワードがファイルから削除されます。 バインドをインポートした後で、送信ポートと受信場所のパスワードを再構成する必要があります。 BizTalk Server 管理コンソールの [トランスポートのプロパティ] ダイアログ ボックスで、送信ポートと受信場所のパスワードをそれぞれ構成します。 手順については、[送信ポートを作成する方法](../core/how-to-create-a-send-port2.md)を参照してください。 参照してください[を作成する方法、受信場所](../core/how-to-create-a-receive-location.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

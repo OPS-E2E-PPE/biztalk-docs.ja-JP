@@ -33,12 +33,12 @@ ms.locfileid: "36979971"
   > [!NOTE]
   >  双方向受信ポートでサポートされていない、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
   
-   詳細については、次を参照してください。[送信ポートを作成する方法](../../core/how-to-create-a-send-port2.md)、または[受信ポートを作成する方法](../../core/how-to-create-a-receive-port.md)します。 
+   詳細については、[送信ポートを作成する方法](../../core/how-to-create-a-send-port2.md)、または[受信ポートを作成する方法](../../core/how-to-create-a-receive-port.md)を参照してください。 
   
 - かどうか、アダプターでは、SQL Server (送信操作) にメッセージを送信または、(受信操作) の SQL Server からメッセージを受信します。 によって送信またはメッセージを受信するかどうかを作成、送信または受信ポート、それぞれします。  
   
   > [!NOTE]
-  >  構成、送信またはによって作成されるバインド構成ファイルをインポートしてポートを受信することができますも、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータの生成の一部として。 このバインド ファイルを使用してポートを構成する方法の詳細については、次を参照してください。 [SQL アダプターを使用するポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md)します。
+  >  構成、送信またはによって作成されるバインド構成ファイルをインポートしてポートを受信することができますも、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータの生成の一部として。 このバインド ファイルを使用してポートを構成する方法の詳細については、[SQL アダプターを使用するポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md)を参照してください。
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

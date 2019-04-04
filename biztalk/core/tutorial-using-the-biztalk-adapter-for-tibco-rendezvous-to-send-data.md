@@ -27,7 +27,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
 
 - このサンプルをビルドして展開するには、アダプターが実行されている [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールしてください。  
 
-- サンプルでは、メッセージ コンテキストのプロパティを含んでいる Microsoft.BizTalk.Adapters.TibRV.Properties.dll という DLL を使用します。 ソリューションからこのライブラリへの参照を更新する必要がある場合があります。 詳細については、次を参照してください。 [BizTalk Server のメッセージ コンテキスト プロパティ (送信ハンドラー)](../core/biztalk-server-message-context-properties-send-handlers.md)します。  
+- サンプルでは、メッセージ コンテキストのプロパティを含んでいる Microsoft.BizTalk.Adapters.TibRV.Properties.dll という DLL を使用します。 ソリューションからこのライブラリへの参照を更新する必要がある場合があります。 詳細については、[BizTalk Server のメッセージ コンテキスト プロパティ (送信ハンドラー)](../core/biztalk-server-message-context-properties-send-handlers.md)を参照してください。  
 
 ## <a name="about-the-sample"></a>サンプルについて 
 
@@ -93,7 +93,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
    |ネットワーク|Rendezvous トランスポート ネットワーク パラメーター。|  
    |サービス|Rendezvous トランスポート サービス パラメーター。|  
 
-    プロパティの詳細については、次を参照してください。[送信アイテムの作成](../core/creating-tibco-rendezvous-send-handlers.md)です。  
+    プロパティの詳細については、[送信アイテムの作成](../core/creating-tibco-rendezvous-send-handlers.md)を参照してください。  
 
 8. **[OK]** をクリックします。  
 

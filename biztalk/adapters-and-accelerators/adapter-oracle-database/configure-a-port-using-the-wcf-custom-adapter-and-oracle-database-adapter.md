@@ -42,7 +42,7 @@ Wcf-custom 送信を構成し、受信ポートを使用して Oracle データ�
   
 7. **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作を行います。  
   
-   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドで、Oracle データベースの接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。  
+   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドで、Oracle データベースの接続 URI を指定します。 接続 URI の詳細については、[Oracle Database 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)を参照してください。  
   
    2. **全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。 参照してください[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)の各操作のアクションの一覧。 たとえば、Oracle データベース内の HR スキーマ EMPLOYEE テーブルの挿入操作を呼び出すアクションは。  
   
@@ -50,7 +50,7 @@ Wcf-custom 送信を構成し、受信ポートを使用して Oracle データ�
       http://Microsoft.LobServices.OracleDB/2007/03/HR/Table/EMPLOYEE/Select  
       ```  
   
-   3. をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **oracleDBBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 バインド プロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)します。  
+   3. をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **oracleDBBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 バインド プロパティの詳細については、[Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)を参照してください。  
   
    4. をクリックして、**資格情報**タブし、次のいずれかの操作を行います。  
   
@@ -62,7 +62,7 @@ Wcf-custom 送信を構成し、受信ポートを使用して Oracle データ�
   
       - 選択、**使用してシングル サインオン**オプション、および SSO 関連アプリケーションを指定します。  
   
-        BizTalk Server に関するセキュリティの詳細については、次を参照してください。 [Oracle データベース アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-oracle-database/security-with-the-oracle-database-adapter-and-biztalk-server.md)します。  
+        BizTalk Server に関するセキュリティの詳細については、[Oracle データベース アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-oracle-database/security-with-the-oracle-database-adapter-and-biztalk-server.md)を参照してください。  
   
         戻る、**送信ポートのプロパティ**ダイアログ ボックスで、をクリックして **[ok]** します。  
   
@@ -100,9 +100,9 @@ Wcf-custom 送信を構成し、受信ポートを使用して Oracle データ�
   
 8. **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作を行います。  
   
-   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドで、Oracle データベースの接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。  
+   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドで、Oracle データベースの接続 URI を指定します。 接続 URI の詳細については、[Oracle Database 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)を参照してください。  
   
-   2. をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **oracleDBBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 バインド プロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)します。  
+   2. をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **oracleDBBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 バインド プロパティの詳細については、[Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)を参照してください。  
   
    3. をクリックして、**他**タブをクリックし、次のいずれかの操作を行います。  
   
@@ -114,7 +114,7 @@ Wcf-custom 送信を構成し、受信ポートを使用して Oracle データ�
   
       - 選択**関連アプリケーションから資格情報を Get**オプション、および関連アプリケーションを指定します。  
   
-        BizTalk Server に関するセキュリティの詳細については、次を参照してください。 [Oracle データベース アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-oracle-database/security-with-the-oracle-database-adapter-and-biztalk-server.md)します。
+        BizTalk Server に関するセキュリティの詳細については、[Oracle データベース アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-oracle-database/security-with-the-oracle-database-adapter-and-biztalk-server.md)を参照してください。
   
         戻ります、**受信場所のプロパティ**ダイアログ ボックスで、をクリックして**OK**。  
   

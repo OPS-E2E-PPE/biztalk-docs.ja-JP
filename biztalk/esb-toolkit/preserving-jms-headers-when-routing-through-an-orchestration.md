@@ -36,4 +36,4 @@ ms.locfileid: "36979715"
   
 - 第 3 部は、一括読み込みのキューでメッセージを示し、アプリケーションがメッセージの内容の一部として指定された送信先キューにメッセージをルーティングする方法を示しています。  
   
-  詳細については、次を参照してください。[インストールして、JMS MQRFH2 コンポーネント サンプルを実行する](../esb-toolkit/installing-and-running-the-jms-mqrfh2-component-sample.md)します。
+  詳細については、[インストールして、JMS MQRFH2 コンポーネント サンプルを実行する](../esb-toolkit/installing-and-running-the-jms-mqrfh2-component-sample.md)を参照してください。

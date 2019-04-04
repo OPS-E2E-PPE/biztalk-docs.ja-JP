@@ -53,7 +53,7 @@ ms.locfileid: "36973731"
    |**NotificationStatement**|これを設定します。<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注:** この Select ステートメントで示すように、ステートメントで列名に指定すること具体的にする必要があります。 また、する必要があります常にテーブル名を指定、スキーマ名と共になど`dbo.Employee`します。|  
    |**NotifyOnListenerStart**|これを設定**True**します。|  
   
-    異なるバインディング プロパティの詳細については、次を参照してください。 [for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。  
+    異なるバインディング プロパティの詳細については、[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)を参照してください。  
   
 ### <a name="to-create-a-request-response-send-port-for-two-operations"></a>要求-応答送信の 2 つの操作用のポートを作成するには  
   

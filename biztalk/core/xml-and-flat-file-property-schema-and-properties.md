@@ -33,7 +33,7 @@ ms.locfileid: "37006147"
 |**EnvelopeSpecName**|xs:string|ドキュメントの解析またはシリアル化のために使用するエンベロープ仕様です。<br /><br /> このプロパティで指定するスキーマは、一意のターゲットの名前空間 (# root) を持つ必要があります。 同じ名前空間 (# root) を持つスキーマがあると、ドキュメント インスタンスの検証が期待どおりに機能しない場合があります。 この名前空間 (# root) は一意にする必要があります。  スキーマが同じ名前空間 (# root) を持つ必要がある場合は、それぞれのスキーマに対して別々のパイプラインを作成して XML 逆アセンブラー パイプライン コンポーネントごとに 1 つのスキーマを指定するか、XML 逆アセンブラー パイプライン コンポーネントのパラメーターとしてスキーマを指定しないで 1 つのパイプラインを使用します。  これは、ターゲットの名前空間がない場合も機能します。|  
 |**TargetCharset**|xs:string|送信メッセージのエンコードに使用する XML コンポーネントの文字セットです。|  
 |**SourceCharset**|xs:string|XML 逆アセンブラーで処理する前のドキュメントのエンコードに使用する文字セットです。|  
-|**ProcessingInstructionOption**|xs:int|送信ドキュメントへの処理命令の追加方法を指定します。 ProcessingInstructionOption の詳細については、次を参照してください。 [XML アセンブラー パイプライン コンポーネントにおける処理命令](../core/processing-instructions-in-the-xml-assembler-pipeline-component.md)します。|  
+|**ProcessingInstructionOption**|xs:int|送信ドキュメントへの処理命令の追加方法を指定します。 ProcessingInstructionOption の詳細については、[XML アセンブラー パイプライン コンポーネントにおける処理命令](../core/processing-instructions-in-the-xml-assembler-pipeline-component.md)を参照してください。|  
 |**AddXMLDeclaration**|xs:boolean|送信ドキュメントに XML 宣言を追加するかどうかを指定します。|  
 |**HeaderSpecName**|xs:string|フラット ファイル ドキュメントのヘッダーを指定します。|  
 |**TrailerSpecName**|xs:string|フラット ファイル ドキュメントのトレーラーを指定します。|  

@@ -42,7 +42,7 @@ ms.locfileid: "36994123"
   
 - **結果**: このセクションでは、クエリの結果を表示します。  
   
-  アクティビティの検索とアクティビティの検索ページの詳細については、次を参照してください。 [BAM ポータルでのアクティビティの検索](../core/activity-searches-in-the-bam-portal.md)します。  
+  アクティビティの検索とアクティビティの検索ページの詳細については、[BAM ポータルでのアクティビティの検索](../core/activity-searches-in-the-bam-portal.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BAM ポータル](../core/bam-portal.md)   

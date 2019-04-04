@@ -24,7 +24,7 @@ BizTalk Adapter for TIBCO Enterprise Message Service (EMS) を使用して TIBCO
 
 ## <a name="prerequisites"></a>前提条件  
 
-- BizTalk Adapter for TIBCO EMS を使用するには、TIBCO EMS C# API の TIBCO.EMS.dll をグローバル アセンブリ キャッシュ (GAC) に追加する必要があります。 アセンブリのインストールの詳細については、次を参照してください。 [TIBCO Enterprise Message Service の要件と制限事項](../core/tibco-enterprise-message-service-requirements-and-limitations.md)します。  
+- BizTalk Adapter for TIBCO EMS を使用するには、TIBCO EMS C# API の TIBCO.EMS.dll をグローバル アセンブリ キャッシュ (GAC) に追加する必要があります。 アセンブリのインストールの詳細については、[TIBCO Enterprise Message Service の要件と制限事項](../core/tibco-enterprise-message-service-requirements-and-limitations.md)を参照してください。  
 
 - このサンプルをビルドして展開するには、アダプターが実行されている [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールしてください。  
 
@@ -92,7 +92,7 @@ BizTalk Adapter for TIBCO Enterprise Message Service (EMS) を使用して TIBCO
    |パスワード|TIBCO EMS サーバーのパスワード。|  
    |[ユーザー名]|TIBCO EMS サーバーのユーザー名。|  
 
-    プロパティの詳細については、次を参照してください。[作成 TIBCO Enterprise Message Service 送信ハンドラー](../core/creating-tibco-enterprise-message-service-send-handlers.md)します。  
+    プロパティの詳細については、[作成 TIBCO Enterprise Message Service 送信ハンドラー](../core/creating-tibco-enterprise-message-service-send-handlers.md)を参照してください。  
 
 7. **[OK]** をクリックします。  
 

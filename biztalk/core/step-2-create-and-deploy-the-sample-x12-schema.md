@@ -37,7 +37,7 @@ ms.locfileid: "36968203"
 2. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Schemas\Schemas.sln を開きます。  
   
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
   
 3. スキーマ プロジェクトを右クリックし、**プロパティ**します。 をクリックして、**署名**プロジェクト デザイナー タブ。 チェック、**アセンブリに署名**チェック ボックスをオンの**厳密なキー名のファイルを選択して**を選択します**\<新規.\>** 入力`Schemas.snk`します。 クリア**キーファイルをパスワードで保護する**順にクリックします**OK**します。 プロジェクトのプロパティのダイアログ ボックスを閉じ、変更を保存します。  
   

@@ -22,19 +22,19 @@ ms.locfileid: "36983979"
 # <a name="develop-sql-applications-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SQL アプリケーションを開発します。
 [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] WCF チャネル モデルをプログラミングする代わりに、WCF サービス モデルと呼ばれるプログラミング モデルを提供します。  
   
- WCF サービス モデルでは、チャネル経由で SOAP メッセージを交換するための複雑さを隠ぺいするのに使い慣れた .NET パラダイムを使用します。 サービス モデルでは、.NET データ構造体に情報をコピーする前に、SOAP メッセージ全体をメモリに読み取るでこの簡略化を実現します。 時間の長いメッセージをメモリに読み込む、ただしが現実的でない一部のアプリケーション。 このような場合は、開発者は、WCF チャネル モデルを使用してください。 WCF チャネル モデルの使用に関する詳細については、次を参照してください。 [WCF チャネル モデルを使用して SQL の開発アプリケーション](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)します。  
+ WCF サービス モデルでは、チャネル経由で SOAP メッセージを交換するための複雑さを隠ぺいするのに使い慣れた .NET パラダイムを使用します。 サービス モデルでは、.NET データ構造体に情報をコピーする前に、SOAP メッセージ全体をメモリに読み取るでこの簡略化を実現します。 時間の長いメッセージをメモリに読み込む、ただしが現実的でない一部のアプリケーション。 このような場合は、開発者は、WCF チャネル モデルを使用してください。 WCF チャネル モデルの使用に関する詳細については、[WCF チャネル モデルを使用して SQL の開発アプリケーション](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)を参照してください。  
   
  最下位レベルで[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]をクライアントがクライアントとサービスのエンドポイント間で確立されたチャネル経由で SOAP メッセージを交換することで、サービスで操作を呼び出す、WCF チャネル モデルを表示します。 WCF チャネル モデルでは、データ型と、WCF チャネルのアーキテクチャを直接操作するためのメソッドを公開します。 WCF チャネル モデルを作成する SOAP メッセージの内容と、両方方法、アプリケーションを直接制御とを提供します。 および[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]これらを使用できます。 ただし、チャネル経由で送信する適切な形式で SOAP メッセージを作成して、返される応答メッセージの検証は、詳細かつ面倒な作業をすることができます。  
   
  WCF サービス モデルは、発信先サービスに対する操作を呼び出すか、クライアントからの受信操作に、プロキシ クラスを使用します。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]いる操作を呼び出すことができますを WCF サービスとしての SQL Server データベースを公開します。  
   
-- ターゲット サービスの操作の呼び出しに使用されるプロキシ クラスには、WCF クライアント クラスが呼び出されます。 このクラスは、厳密に型指定されたパラメーターを持つ .NET メソッドとして、サービスによって公開される操作をモデル化します。 WCF サービス モデルを使用すると、公開操作を呼び出すことができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] WCF クライアントでの .NET メソッドとして。 WCF クライアントの詳細については、次を参照してください。 [WCF Client Overview](https://msdn.microsoft.com/library/ms735103.aspx)します。
+- ターゲット サービスの操作の呼び出しに使用されるプロキシ クラスには、WCF クライアント クラスが呼び出されます。 このクラスは、厳密に型指定されたパラメーターを持つ .NET メソッドとして、サービスによって公開される操作をモデル化します。 WCF サービス モデルを使用すると、公開操作を呼び出すことができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] WCF クライアントでの .NET メソッドとして。 WCF クライアントの詳細については、[WCF Client Overview](https://msdn.microsoft.com/library/ms735103.aspx)を参照してください。
   
   WCF クライアント クラスを生成する、次のツールのいずれかを使用し、関連付けられているサービス メタデータからヘルパー コードを[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を公開します。  
   
 - **ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)** WCF が付属しています。  
   
-- **[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]** に付属する[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]と統合、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]エクスペリエンスを設計します。 このツールは、強力な閲覧と検索機能を備えた、アダプターを公開する操作を提供する標準の Microsoft Windows インターフェイスを表示します。 WCF クライアント アプリケーションを生成する方法の詳細については、次を参照してください。 [SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)します。  
+- **[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]** に付属する[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]と統合、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]エクスペリエンスを設計します。 このツールは、強力な閲覧と検索機能を備えた、アダプターを公開する操作を提供する標準の Microsoft Windows インターフェイスを表示します。 WCF クライアント アプリケーションを生成する方法の詳細については、[SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)を参照してください。  
   
    このセクションのトピックでは、情報、手順、および作成しを使用してアプリケーションを開発する WCF サービス モデルを使用するのに役立つ例が含まれて、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
   

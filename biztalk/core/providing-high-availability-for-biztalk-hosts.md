@@ -55,7 +55,7 @@ ms.locfileid: "37004811"
 |インプロセス|オーケストレーション<br />のアダプター送信ハンドラー<br />-アダプターの受信 HTTP および SOAP 以外のハンドラー|  
 |分離されます。|HTTP および SOAP の受信ハンドラー|  
   
- ホストとホスト インスタンスの詳細については、次を参照してください。 [BizTalk ホストの管理およびホスト インスタンス](../core/managing-biztalk-hosts-and-host-instances.md)します。  
+ ホストとホスト インスタンスの詳細については、[BizTalk ホストの管理およびホスト インスタンス](../core/managing-biztalk-hosts-and-host-instances.md)を参照してください。  
   
  BizTalk ホストの高可用性を確保するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の複数コンピューター環境の各ホストに複数のホスト インスタンスを割り当てる必要があります。 各ホストに複数のホスト インスタンスを割り当てることで、1 つのホスト インスタンスで障害が発生しても、そのホストのインスタンスを実行する別のコンピューターが、問題や障害の発生したホスト インスタンスの機能を引き継ぐため、システム全体としては大きな混乱を招くことなく処理を続行できます。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "37004811"
 ## <a name="separating-the-host-and-database-functions"></a>ホスト機能とデータベース機能の分離  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、データとそれを処理するホストが区別されています。そのため、環境の高可用性を実現するための第一歩は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で行われるホスト機能 (送信、受信、および処理) を、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] のデータベース機能から分離することです。 これらの機能を分離することにより、処理、送信、受信の各ホストと、データを保存するデータベースとを別々に拡張することができます。 ランタイム層とデータベース層の間にまったく関係がないわけではありません。通常、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターの台数を増やした場合は、追加された負荷を処理するため、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] コンピューターの台数も増やす必要があります。 ただし、データベース層と BizTalk 層に直接的な関係はありません。 両者はそれぞれ独立した層であり、別々に拡張することが可能です。  
   
- ホストとデータベースでは、高可用性を確保するための作業も異なります。 次のセクションでは、受信、送信、処理の各ホストに高可用性を実現するための作業について説明します。 データベース層の高可用性にする方法の詳細については、次を参照してください。 [BizTalk Server データベースの高可用性の実現](../core/providing-high-availability-for-biztalk-server-databases.md)します。  
+ ホストとデータベースでは、高可用性を確保するための作業も異なります。 次のセクションでは、受信、送信、処理の各ホストに高可用性を実現するための作業について説明します。 データベース層の高可用性にする方法の詳細については、[BizTalk Server データベースの高可用性の実現](../core/providing-high-availability-for-biztalk-server-databases.md)を参照してください。  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にかかる処理の負荷が SQL Server よりも大きい環境では、複数の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターで、同じ SQL Server コンピューターを使用するように構成できます。 つまり、コンピューター間のリソースの不均衡をなくすように構成します。 たとえば、CPU またはメモリの使用率を比較した結果、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターのリソース使用率が高く (75% 以上)、SQL Server コンピューターのリソース使用率が低い (25% 未満) 場合、別の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターを追加することにより、SQL Server コンピューターのリソース使用率を引き上げる形で、処理の負荷を分散させることが可能です。  
   

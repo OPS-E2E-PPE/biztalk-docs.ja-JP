@@ -32,7 +32,7 @@ ms.locfileid: "37001187"
   
   ここでは、BizTalk Server パイプライン、受信場所、ポート、および BizTalk Server 環境を構成してメッセージ セキュリティを実装する方法について説明します。  
   
-  メッセージ セキュリティの詳細については、次を参照してください。[メッセージ セキュリティの計画](../core/planning-message-security.md)します。  
+  メッセージ セキュリティの詳細については、[メッセージ セキュリティの計画](../core/planning-message-security.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -23,7 +23,7 @@ ms.locfileid: "36980523"
 # <a name="configure-the-soap-action-for-the-sql-adapter"></a>SQL アダプタの SOAP アクションを構成します。
 WCF ベースを使用して SQL Server 上の任意の操作を実行する[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]、SOAP アクションを指定する必要があります。 SOAP アクションは、どのようなアクションが実行されるアダプターに通信します。 いずれかから SOAP アクションを指定できます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]またはから、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 ただし、両方の場所からの SOAP アクションを指定する場合、アクションから指定した[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]は上書きされます。  
   
- SOAP アクションを指定する方法については、次を参照してください。 [WCF 送信アダプター用の SOAP アクションを指定する](../../core/specifying-soap-actions-for-wcf-send-adapters.md)します。
+ SOAP アクションを指定する方法については、[WCF 送信アダプター用の SOAP アクションを指定する](../../core/specifying-soap-actions-for-wcf-send-adapters.md)を参照してください。
   
 ## <a name="enter-the-soap-action-in-visual-studio"></a>Visual Studio での SOAP アクションを入力します。  
  [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]を使用して、オーケストレーションの一部として SOAP アクションを指定する必要があります、**式**図形。  
@@ -72,13 +72,13 @@ WCF ベースを使用して SQL Server 上の任意の操作を実行する[!IN
   
         アクション マッピングのアプローチは、アクションのセットを指定して、そのため、同じポートを経由するさまざまなアクションの種類に属しているメッセージの有効化の観点からの柔軟性を提供します。  
   
-        SOAP アクションの形式は操作ごとに異なります。 各操作のアクションの形式の詳細については、次を参照してください。[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)します。
+        SOAP アクションの形式は操作ごとに異なります。 各操作のアクションの形式の詳細については、[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)を参照してください。
   
 ### <a name="enter-a-soap-action-for-the-wcf-sql-port"></a>WCF SQL ポートの SOAP アクションを入力します。  
   
 1. 開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
-2. WCF-SQL アダプターを追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、次を参照してください。 [SQL アダプタを BizTalk Server 管理コンソールに追加する](../../adapters-and-accelerators/adapter-sql/adding-the-sql-adapter-to-biztalk-server-administration-console.md)します。  
+2. WCF-SQL アダプターを追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、[SQL アダプタを BizTalk Server 管理コンソールに追加する](../../adapters-and-accelerators/adapter-sql/adding-the-sql-adapter-to-biztalk-server-administration-console.md)を参照してください。  
   
 3. コンソール ツリーで、展開**BizTalk グループ**の順に展開**アプリケーション**、 をクリックし、**送信ポート**します。 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
   
@@ -105,7 +105,7 @@ WCF ベースを使用して SQL Server 上の任意の操作を実行する[!IN
   
         アクション マッピングのアプローチは、アクションのセットを指定して、そのため、同じポートを経由するさまざまなアクションの種類に属しているメッセージの有効化の観点からの柔軟性を提供します。  
   
-        SOAP アクションの形式は操作ごとに異なります。 各操作のアクションの形式の詳細については、次を参照してください。[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)します。
+        SOAP アクションの形式は操作ごとに異なります。 各操作のアクションの形式の詳細については、[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)を参照してください。
   
 ## <a name="see-also"></a>参照  
 [SQL アダプターを使用した BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-sql/building-blocks-to-develop-biztalk-applications-with-the-sql-adapter.md)

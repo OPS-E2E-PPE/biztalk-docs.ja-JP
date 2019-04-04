@@ -22,18 +22,18 @@ ms.locfileid: "37014131"
 # <a name="receive-polling-messages-using-select-statements-with-for-xml-clause-from-sql-using-biztalk-server"></a>BizTalk Server を使用して SQL から FOR XML 句で SELECT ステートメントを使用してポーリング メッセージを受信します。
 構成することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SELECT ステートメントまたは FOR XML 句を含むストアド プロシージャを使用して SQL Server テーブルまたはビューの定期的なデータ変更メッセージを受信します。 これらのステートメントは、データベースをポーリングするアダプターを実行するポーリング ステートメントとして指定できます。 ポーリング ステートメントには、SELECT ステートメントまたはストアド プロシージャを返す結果セットを使用できます。  
   
- アダプターがポーリングをサポートする方法の詳細については、次を参照してください。[のポーリング サポート](https://msdn.microsoft.com/library/dd788416.aspx)します。 ポーリング操作用の SOAP メッセージの構造については、次を参照してください。 [Polling 操作と TypedPolling 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/message-schemas-for-the-polling-and-typedpolling-operations.md)します。 SQL [FOR XML 句](https://docs.microsoft.com/sql/relational-databases/xml/for-xml-sql-server)について詳しく説明します。
+ アダプターがポーリングをサポートする方法の詳細については、[のポーリング サポート](https://msdn.microsoft.com/library/dd788416.aspx)を参照してください。 ポーリング操作用の SOAP メッセージの構造については、[Polling 操作と TypedPolling 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/message-schemas-for-the-polling-and-typedpolling-operations.md)を参照してください。 SQL [FOR XML 句](https://docs.microsoft.com/sql/relational-databases/xml/for-xml-sql-server)について詳しく説明します。
   
 > [!NOTE]
 >  このトピックでは、使用する方法を示します、 **XmlPolling**ポーリング メッセージを受信する操作を受信します。 **XmlPolling**操作は、SELECT ステートメントまたは FOR XML 句を含むストアド プロシージャを使用して SQL Server データベースをポーリングするために使用します。 メッセージ、 **XmlPolling**操作には、SQL Server Management Studio で、SELECT ステートメントまたはストアド プロシージャを実行して受信した xml メッセージが含まれています。  
 > 
 >  さまざまな種類のポーリング メッセージを受信するのにアダプターを使用することもできます。  
 > 
-> - 厳密に型指定されたポーリング メッセージを取得するには、ポーリング操作を使用する必要があります。 詳細については、次を参照してください。[を使用して BizTalk Server によって SQL Server からのデータ変更メッセージの受信のポーリングに基づいた](../../adapters-and-accelerators/adapter-sql/receive-polling-based-data-changed-messages-from-sql-server-using-biztalk.md)します。  
+> - 厳密に型指定されたポーリング メッセージを取得するには、ポーリング操作を使用する必要があります。 詳細については、[を使用して BizTalk Server によって SQL Server からのデータ変更メッセージの受信のポーリングに基づいた](../../adapters-and-accelerators/adapter-sql/receive-polling-based-data-changed-messages-from-sql-server-using-biztalk.md)を参照してください。  
 >   -   使用する必要がありますを厳密に型指定されたポーリング メッセージを取得する場合、 **TypedPolling**操作。 使用することも必要があります、 **TypedPolling**工程に 1 つの BizTalk アプリケーションで複数の操作をポーリングします。 手順を実行する方法について**TypedPolling**操作を参照してください[BizTalk Server を使用して SQL Server からデータ変更のポーリングに基づいたメッセージを受信厳密に型指定された](../../adapters-and-accelerators/adapter-sql/receive-strongly-typed-polling-based-data-changed-messages-from-sql-in-biztalk.md)します。  
 > 
 > [!IMPORTANT]
->  1 つの BizTalk アプリケーションでは、複数のポーリング操作を必要するかどうか、指定する必要あります、 **InboundID**接続して一意の URI の一部として接続プロパティです。 一意接続 URI を複数作成できます、同じデータベースまたはデータベースでも同じテーブルをポーリングするポートを受信します。 詳細については、次を参照してください。[受信ポーリング メッセージ間で複数受信ポートから BizTalk Server を使用して SQL](../../adapters-and-accelerators/adapter-sql/receive-polling-messages-across-multiple-receive-ports-from-sql-using-biztalk.md)します。  
+>  1 つの BizTalk アプリケーションでは、複数のポーリング操作を必要するかどうか、指定する必要あります、 **InboundID**接続して一意の URI の一部として接続プロパティです。 一意接続 URI を複数作成できます、同じデータベースまたはデータベースでも同じテーブルをポーリングするポートを受信します。 詳細については、[受信ポーリング メッセージ間で複数受信ポートから BizTalk Server を使用して SQL](../../adapters-and-accelerators/adapter-sql/receive-polling-messages-across-multiple-receive-ports-from-sql-using-biztalk.md)を参照してください。  
   
 ## <a name="how-this-topic-demonstrates-polling"></a>このトピックでポーリングしていますか  
  示すために、このトピックでどのように[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]メッセージの変更データの受信をサポート、SQL Server データベースをポーリングする FOR XML 句と SELECT ステートメントを使用します。 SQL Server Management Studio で、このようなステートメントを呼び出すと、出力は xml メッセージの形式です。 このようなステートメントを使用してを SQL Server データベースをポーリングするには、応答の xml メッセージのスキーマがあります。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] FOR XML 句を伴う SELECT ステートメントを実行した後でポーリング メッセージを受信するには、このスキーマが必要です。 そのため、FOR XML 句と SELECT ステートメントを使用して、SQL Server データベースをポーリングする、次の一連のタスクを実行する必要があります。  
@@ -155,10 +155,10 @@ SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto, xmlschema
   
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
   
- ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。
+ ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 使用する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールにアプリケーションを構成します。 チュートリアルについては、次を参照してください。[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)します。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 使用する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールにアプリケーションを構成します。 チュートリアルについては、[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)を参照してください。
   
  アプリケーションを構成する必要があります。  
   
@@ -168,10 +168,10 @@ SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto, xmlschema
   
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーション、SQL Server データベースからメッセージをドロップできる場所での場所を定義します。 これらのメッセージは、受信ポートの指定したポーリング ステートメントへの応答になります。  
   
-  - WCF-SQL の一方向受信ポートまたは物理 Wcf-custom を定義します。 このポートは、ポートを指定するポーリング ステートメントを使用して SQL Server データベースをポーリングします。 ポートを作成する方法については、次を参照してください。 [SQL アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sql/manually-configure-a-physical-port-binding-to-the-sql-adapter.md)します。 受信ポートのバインドのプロパティを指定することを確認します。  
+  - WCF-SQL の一方向受信ポートまたは物理 Wcf-custom を定義します。 このポートは、ポートを指定するポーリング ステートメントを使用して SQL Server データベースをポーリングします。 ポートを作成する方法については、[SQL アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sql/manually-configure-a-physical-port-binding-to-the-sql-adapter.md)を参照してください。 受信ポートのバインドのプロパティを指定することを確認します。  
   
     > [!IMPORTANT]
-    >  デザイン時のバインドのプロパティが指定されている場合は、この手順を実行する必要はありません。 このような場合は、WCF カスタムを作成または WCF-SQL によって作成されたバインド ファイルをインポートすることによって、必要なバインドのプロパティを設定すると、ポートを受信する、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]します。 詳細については、次を参照してください。 [SQL アダプターを使用するポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md)します。  
+    >  デザイン時のバインドのプロパティが指定されている場合は、この手順を実行する必要はありません。 このような場合は、WCF カスタムを作成または WCF-SQL によって作成されたバインド ファイルをインポートすることによって、必要なバインドのプロパティを設定すると、ポートを受信する、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]します。 詳細については、[SQL アダプターを使用するポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md)を参照してください。  
   
     |プロパティのバインド|値|  
     |----------------------|-----------|  
@@ -181,13 +181,13 @@ SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto, xmlschema
     |**XmlStoredProcedureRootNodeName**|トピックに示すように、SELECT ステートメント用に生成した応答スキーマに追加したルート ノードの名前を指定[SELECT ステートメントの応答メッセージのスキーマを生成する](#BKMK_RespSchema)します。 このトピックに設定**ルート**します。|  
     |**XmlStoredProcedureRootNodeNamespace**|トピックに示すように、SELECT ステートメント用に生成した応答スキーマのターゲット名前空間を指定[SELECT ステートメントの応答メッセージのスキーマを生成する](#BKMK_RespSchema)します。 このトピックに設定`http://ForXmlPolling/namespace`します。|  
   
-     異なるバインディング プロパティの詳細については、次を参照してください。 [for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。  
+     異なるバインディング プロパティの詳細については、[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)を参照してください。  
   
     > [!NOTE]
-    >  使用して受信操作の実行中に、トランザクション分離レベルとトランザクションのタイムアウトを構成することをお勧めします。、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 ように、サービスを追加することで、Wcf-custom または WCF SQL を構成するときに動作の受信ポートを行うことができます。 サービスの動作を追加する方法については、次を参照してください。[トランザクション分離レベルの構成と SQL を使用したトランザクション タイムアウト](../../adapters-and-accelerators/adapter-sql/configure-transaction-isolation-level-and-transaction-timeout-with-sql.md)します。  
+    >  使用して受信操作の実行中に、トランザクション分離レベルとトランザクションのタイムアウトを構成することをお勧めします。、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 ように、サービスを追加することで、Wcf-custom または WCF SQL を構成するときに動作の受信ポートを行うことができます。 サービスの動作を追加する方法については、[トランザクション分離レベルの構成と SQL を使用したトランザクション タイムアウト](../../adapters-and-accelerators/adapter-sql/configure-transaction-isolation-level-and-transaction-timeout-with-sql.md)を参照してください。  
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- SQL Server データベースからメッセージを受信する BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。
+ SQL Server データベースからメッセージを受信する BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。
   
  この段階で、ことを確認します。  
   
@@ -220,7 +220,7 @@ SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto, xmlschema
 >  [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]ポーリングからの受信ポートを明示的に無効にするまでは引き続き、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した、送信ポートを作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定、ファイルからインポートできます。 バインド ファイルの詳細については、次を参照してください。[アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)します。
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した、送信ポートを作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定、ファイルからインポートできます。 バインド ファイルの詳細については、[アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)を参照してください。
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server を SQL アダプターを使用して SQL Server をポーリング](../../adapters-and-accelerators/adapter-sql/poll-sql-server-using-the-sql-adapter-with-biztalk-server.md)

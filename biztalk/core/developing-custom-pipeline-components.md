@@ -37,7 +37,7 @@ ms.locfileid: "37008971"
 # <a name="developing-custom-pipeline-components"></a>カスタム パイプライン コンポーネントの開発
 ここでは、パイプライン コンポーネントを開発する方法について説明します。 3 種類のパイプライン コンポーネントを作成することができます: 全般、アセンブル、および逆アセンブルします。 これらの各パイプライン コンポーネントでは、プローブ機能を追加実装できます。 パイプライン コンポーネントの種類ごとに関連付けられているインターフェイスを BizTalk メッセージング エンジンに接続コンポーネントを実装する必要があります。コンポーネントの種類を識別するパイプライン インターフェイスは**IComponent**、 **IAssemblerComponent**、および**IDisassemblerComponent**します。 コンポーネントをプローブするには、実装する必要があります、 **IProbeMessage**インターフェイス。  
   
- Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にはサンプル パイプライン コンポーネントが含まれており、独自のコンポーネントを作成するときに参照できます。 サンプル コンポーネントは、メッセージの末尾や先頭にデータを追加する方法を示すものです。 サンプル パイプライン コンポーネントの詳細については、次を参照してください。 [CustomComponent (BizTalk Server サンプル)](../core/customcomponent-biztalk-server-sample.md)します。  
+ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にはサンプル パイプライン コンポーネントが含まれており、独自のコンポーネントを作成するときに参照できます。 サンプル コンポーネントは、メッセージの末尾や先頭にデータを追加する方法を示すものです。 サンプル パイプライン コンポーネントの詳細については、[CustomComponent (BizTalk Server サンプル)](../core/customcomponent-biztalk-server-sample.md)を参照してください。  
   
 > [!CAUTION]
 >  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、パイプラインからカスタム パイプライン コンポーネントを参照すると、コンパイル時エラーが発生することがあります。 このエラーを修正するには、コンパイル前にパイプライン デザイナーをいったん閉じて再度開きます。 または、コンポーネントをいったん削除して追加することもできます。  

@@ -36,4 +36,4 @@ ms.locfileid: "37015899"
  チケットのタイムアウト値が無効です。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- チケットのタイムアウトの詳細については、次を参照してください。 [SSO 関連アプリケーション](../core/sso-affiliate-applications.md)します。
+ チケットのタイムアウトの詳細については、[SSO 関連アプリケーション](../core/sso-affiliate-applications.md)を参照してください。

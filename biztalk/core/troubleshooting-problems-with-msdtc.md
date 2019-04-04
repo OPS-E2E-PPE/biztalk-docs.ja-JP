@@ -114,7 +114,7 @@ ms.locfileid: "36987723"
    NetBIOS 名前解決がいずれかの方向で失敗するか、逆引き名前参照が失敗する場合、DNS サーバー、NetBIOS ネーム サーバー、HOSTS ファイル、または LMHOSTS ファイルに適切なエントリを作成して問題を解決します。  
   
 > [!NOTE]
->  コンピューターで使用される名前解決の方法は、コンピューターの NetBIOS ノードの型によって異なります。 NetBIOS ノードの種類の詳細については、次を参照してください。 [NetBIOS 名前解決](http://go.microsoft.com/fwlink/?LinkId=201638)します。  
+>  コンピューターで使用される名前解決の方法は、コンピューターの NetBIOS ノードの型によって異なります。 NetBIOS ノードの種類の詳細については、[NetBIOS 名前解決](http://go.microsoft.com/fwlink/?LinkId=201638)を参照してください。  
   
 ## <a name="ensure-that-a-firewall-between-the-biztalk-server-and-remote-servers-is-not-blocking-ports-required-for-rpc-dynamic-port-allocation"></a>BizTalk Server とリモート サーバー間のファイアウォールによって、RPC 動的ポート割り当てに必要なポートがブロックされていないことを確認する  
  ネットワーク経由の MSDTC 機能は、ネットワーク経由の RPC 機能に依存します。 ファイアウォールを介した RPC 機能では、RPC の動的ポート割り当てに対応するために特定のポートが開かれていることが必要です。 ファイアウォールが BizTalk Server とリモート サーバーの間にある場合は、次の手順では、[ファイアウォールで動作する RPC 動的ポート割り当てを構成する方法](http://go.microsoft.com/fwlink/?LinkId=66831)RPC 動的ポート割り当てに対応するためにします。  
@@ -255,9 +255,9 @@ ms.locfileid: "36987723"
     -   分散トランザクション コーディネーター サービスが停止後に「 **msdtc を開始する net**キーを押します **」と入力**します。  
   
 ## <a name="use-dtctester-or-dtcping-to-verify-msdtc-functionality-over-the-network"></a>DTCTester または DTCPing を使用して、ネットワーク上で MSDTC 機能を確認する  
- 2 台のコンピューターのうちの 1 台に SQL Server がインストールされている場合は、DTCTester ユーティリティを使用してそれらのコンピューター間のトランザクション サポートを確認します。 DTCTester ユーティリティでは、ODBC を使用して SQL Server データベースのトランザクション サポートを確認します。 DTCTester の詳細については、次を参照してください。 [DTCTester ツールの使用方法](http://go.microsoft.com/fwlink/?LinkId=66232)します。  
+ 2 台のコンピューターのうちの 1 台に SQL Server がインストールされている場合は、DTCTester ユーティリティを使用してそれらのコンピューター間のトランザクション サポートを確認します。 DTCTester ユーティリティでは、ODBC を使用して SQL Server データベースのトランザクション サポートを確認します。 DTCTester の詳細については、[DTCTester ツールの使用方法](http://go.microsoft.com/fwlink/?LinkId=66232)を参照してください。  
   
- 2 台のコンピューターのどちらにも SQL Server がインストールされていない場合は、DTCPing を使用してそれらのコンピューター間のトランザクション サポートを確認します。 DTCPing ツールは、クライアント コンピューターとサーバー コンピューターの両方で実行する必要があります。いずれのコンピューターにも SQL Server がインストールされていない場合は、DTCTester ユーティリティの適切な代替手段になります。 DTCPing の詳細については、次を参照してください。 [MS DTC ファイアウォールの問題のトラブルシューティングを行う方法](http://go.microsoft.com/fwlink/?LinkId=61915)します。  
+ 2 台のコンピューターのどちらにも SQL Server がインストールされていない場合は、DTCPing を使用してそれらのコンピューター間のトランザクション サポートを確認します。 DTCPing ツールは、クライアント コンピューターとサーバー コンピューターの両方で実行する必要があります。いずれのコンピューターにも SQL Server がインストールされていない場合は、DTCTester ユーティリティの適切な代替手段になります。 DTCPing の詳細については、[MS DTC ファイアウォールの問題のトラブルシューティングを行う方法](http://go.microsoft.com/fwlink/?LinkId=61915)を参照してください。  
   
 > [!IMPORTANT]
 >  DTCPing には、警告が返された場合を"警告: テストの両方のコンピューターの CID 値が同じ"し、セクションの手順に従います**MSDTC に一意の CID 値が割り当てられていることを確認**対応の間で MSDTC が正しく機能するためにテスト マシン。  
@@ -270,7 +270,7 @@ ms.locfileid: "36987723"
 ## <a name="error-new-transaction-cannot-enlist-in-the-specified-transaction-coordinator-0x8004d00a-occurs-if-the-msdtc-connection-between-a-client-computer-and-a-server-computer-is-closed"></a>"New transaction cannot enlist in the specified transaction coordinator (0x8004d00a)" というエラーの発生 (クライアント コンピューターとサーバー コンピューターの間の MSDTC 接続が閉じられた場合)  
  特定のシナリオでは、クライアントとサーバー間の既存の MSDTC 接続が閉じられると、後続のこの接続を使用すると、次のエラー メッセージ。  
 新しいトランザクションが、指定されたトランザクション コーディネーター (0x8004d00a) に参加できませんでした。  
-詳細については、次を参照してください。 [MS DTC でトランザクションを開始しようとすると、エラー メッセージ:"新しい transaction cannot enlist in the specified transaction coordinator"](http://support.microsoft.com/kb/922430)します。  
+詳細については、[MS DTC でトランザクションを開始しようとすると、エラー メッセージ:"新しい transaction cannot enlist in the specified transaction coordinator"](http://support.microsoft.com/kb/922430)を参照してください。  
   
 ## <a name="consider-reinstalling-the-distributed-transaction-coordinator-service-if-other-troubleshooting-steps-are-not-successful"></a>その他のトラブルシューティングの手順が正常に実行されない場合は、分散トランザクション コーディネーター サービスの再インストールを検討してください。  
  MSDTC を使用したトラブルシューティングで問題が解決されなかった場合は、MSDTC のアンインストールおよび再インストールを検討してください。 MSDTC のアンインストールおよび再インストールを行うには、次の手順に従います。  

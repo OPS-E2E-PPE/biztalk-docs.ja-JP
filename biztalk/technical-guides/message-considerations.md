@@ -54,7 +54,7 @@ ms.locfileid: "36979683"
        200,000 / (Number of CPUs * BatchSize * MessagingThreadPoolSize)  
        ```  
   
-   BizTalk Server がサイズの大きいメッセージを処理するためのガイドラインなど、サイズの大きいメッセージを処理する方法の詳細については、次を参照してください。[どのように BizTalk Server プロセス サイズの大きいメッセージ](http://go.microsoft.com/fwlink/?LinkID=154680)(http://go.microsoft.com/fwlink/?LinkID=154680)します。  
+   BizTalk Server がサイズの大きいメッセージを処理するためのガイドラインなど、サイズの大きいメッセージを処理する方法の詳細については、[どのように BizTalk Server プロセス サイズの大きいメッセージ](http://go.microsoft.com/fwlink/?LinkID=154680)(http://go.microsoft.com/fwlink/?LinkID=154680)を参照してください。  
   
 ## <a name="message-type-considerations"></a>メッセージの種類に関する考慮事項  
  2 つの主な形式のいずれかで BizTalk Server にメッセージを受信する: XML ファイルまたはフラット ファイル。 メッセージの種類は、XML とフラット ファイル メッセージのさまざまなリソース要件のためメッセージの配布プロファイルに常にファクタリングする必要があります。  

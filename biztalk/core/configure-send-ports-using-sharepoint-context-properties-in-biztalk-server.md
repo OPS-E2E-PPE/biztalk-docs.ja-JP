@@ -36,7 +36,7 @@ ms.locfileid: "36969555"
 
 1. 動的送信ポートの動的な一方向送信ポートを作成する手順に従いますトピック[送信ポートを作成する方法](../core/how-to-create-a-send-port2.md)します。  
 
-2. 使用して、**メッセージの割り当て**図形内、**メッセージの構築**送信メッセージの構成プロパティを設定するためのオーケストレーションの図形。 送信メッセージの構成プロパティを設定する方法の例については、次を参照してください。[チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス](../core/walkthrough-module-3-accessing-sharepoint-properties-from-an-orchestration.md)します。 **新しいメッセージの構築**このトピックのセクションは、送信メッセージの構成プロパティを設定する方法を示しています。 アダプタのコンテキスト プロパティで設定できるプロパティに関連付けられる、 **Windows SharePoint Services トランスポート プロパティ** ダイアログ ボックスは次の表に記載します。  
+2. 使用して、**メッセージの割り当て**図形内、**メッセージの構築**送信メッセージの構成プロパティを設定するためのオーケストレーションの図形。 送信メッセージの構成プロパティを設定する方法の例については、[チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス](../core/walkthrough-module-3-accessing-sharepoint-properties-from-an-orchestration.md)を参照してください。 **新しいメッセージの構築**このトピックのセクションは、送信メッセージの構成プロパティを設定する方法を示しています。 アダプタのコンテキスト プロパティで設定できるプロパティに関連付けられる、 **Windows SharePoint Services トランスポート プロパティ** ダイアログ ボックスは次の表に記載します。  
 
 
    |         トランスポート プロパティ          |                                                  アダプタのコンテキスト プロパティ                                                   | データ型 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  コメント                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -59,7 +59,7 @@ ms.locfileid: "36969555"
    > [!NOTE]
    >  コンテキスト プロパティに指定する値は、大文字と小文字が区別されます。 コンテキスト プロパティで動的ポートの構成値を設定するときは、大文字と小文字を正しく使い分けないと、指定した送信ポートにドキュメントがルーティングされるときにエラーが発生します。  
 
-3. オーケストレーションの式図形を使用して設定、 **Microsoft.XLANGs.BaseTypes.Address**プロパティを動的送信ポート。 このプロパティは、動的送信ポートがメッセージをルーティングする URI を指定するために使用されます。 設定する方法の例については、 **Microsoft.XLANGs.BaseTypes.Address**動的送信ポートのプロパティを参照してください、**式を作成**」の「[チュートリアル: モジュール 3 -オーケストレーションから SharePoint プロパティへのアクセス](../core/walkthrough-module-3-accessing-sharepoint-properties-from-an-orchestration.md)します。 Windows Sharepoint Services アダプタのコンテキスト プロパティの詳細については、次を参照してください。 [Windows SharePoint Services アダプターのプロパティに関するリファレンス](../core/windows-sharepoint-services-adapter-properties-reference.md)します。  
+3. オーケストレーションの式図形を使用して設定、 **Microsoft.XLANGs.BaseTypes.Address**プロパティを動的送信ポート。 このプロパティは、動的送信ポートがメッセージをルーティングする URI を指定するために使用されます。 設定する方法の例については、 **Microsoft.XLANGs.BaseTypes.Address**動的送信ポートのプロパティを参照してください、**式を作成**」の「[チュートリアル: モジュール 3 -オーケストレーションから SharePoint プロパティへのアクセス](../core/walkthrough-module-3-accessing-sharepoint-properties-from-an-orchestration.md)します。 Windows Sharepoint Services アダプタのコンテキスト プロパティの詳細については、[Windows SharePoint Services アダプターのプロパティに関するリファレンス](../core/windows-sharepoint-services-adapter-properties-reference.md)を参照してください。  
 
     オーケストレーションで Windows Sharepoint Services 遅延バインディング送信ポートの特定のプロパティを動的に設定することもできます。 その場合、Windows SharePoint Services ポートは 2 回構成されます。1 回は Windows SharePoint Services のコンテキスト プロパティを使用して構成され、もう 1 回は [Windows SharePoint Services トランスポート プロパティ] ダイアログ ボックスを使用して構成されます。 既定では、[Windows SharePoint Services トランスポート プロパティ] ダイアログ ボックスで指定される構成が、コンテキスト プロパティで指定される構成プロパティよりも優先されます。 コンテキスト プロパティで指定される構成を使用するために、次の手順を実行します。  
 
@@ -75,7 +75,7 @@ ms.locfileid: "36969555"
 
    6.  オーケストレーションのコンテキスト プロパティを使用して、文字列データ型を使用する送信ポート プロパティの値を設定するには、その送信ポート プロパティを空白のままにします。 これには適用されません、 **Sharepoint サイトの URL**と**送信先フォルダーの URL**プロパティ。 これらのプロパティを指定する必要があります、 **Windows Sharepoint Services トランスポート プロパティ** ダイアログ ボックス。  
 
-   7.  使用して、**メッセージの割り当て**図形内、**メッセージの構築**送信メッセージの構成プロパティを設定するためのオーケストレーションの図形。 送信メッセージの構成プロパティを設定する方法の例については、次を参照してください。[チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス](../core/walkthrough-module-3-accessing-sharepoint-properties-from-an-orchestration.md)します。 **新しいメッセージの構築**このトピックのセクションは、送信メッセージの構成プロパティを設定する方法を示しています。  
+   7.  使用して、**メッセージの割り当て**図形内、**メッセージの構築**送信メッセージの構成プロパティを設定するためのオーケストレーションの図形。 送信メッセージの構成プロパティを設定する方法の例については、[チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス](../core/walkthrough-module-3-accessing-sharepoint-properties-from-an-orchestration.md)を参照してください。 **新しいメッセージの構築**このトピックのセクションは、送信メッセージの構成プロパティを設定する方法を示しています。  
 
    8.  値 -1 で構成される送信ポート プロパティ (整数データ型を使用するプロパティ)、"オーケストレーション" で構成される送信ポート プロパティ (ドロップダウン列挙プロパティ)、または空白のままの送信ポート プロパティ (文字列データ型を使用するプロパティ) は、オーケストレーションで指定されたコンテキスト プロパティを使用して実行時に設定されます。  
 

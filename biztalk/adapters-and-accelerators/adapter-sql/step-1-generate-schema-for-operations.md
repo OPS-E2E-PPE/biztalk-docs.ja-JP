@@ -81,7 +81,7 @@ ms.locfileid: "36997859"
   
 - XML バインド ファイルを作成する Wcf-custom 送信ポートと受信ポートで使用できる[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
-  スキーマを生成する詳細については、次を参照してください。[参照、検索、および SQL アダプターを使用して SQL 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sql/browse-search-and-get-metadata-for-sql-operations-using-the-sql-adapter.md)します。  
+  スキーマを生成する詳細については、[参照、検索、および SQL アダプターを使用して SQL 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sql/browse-search-and-get-metadata-for-sql-operations-using-the-sql-adapter.md)を参照してください。  
   
 ## <a name="next-steps"></a>次の手順  
  内のスキーマの BizTalk プロジェクトでメッセージを作成する[手順 2: BizTalk オーケストレーションのメッセージの作成](../../adapters-and-accelerators/adapter-sql/step-2-create-messages-for-biztalk-orchestrations.md)です。  

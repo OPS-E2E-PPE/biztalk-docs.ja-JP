@@ -32,11 +32,11 @@ ms.locfileid: "37007075"
   
 -   保留メッセージの数が多いの発生することが予想される場合は、既定値を増やすことを検討してください、 **DB のメッセージ カウント**しきい値を含む SQL server の容量の要件を考慮に入れて、BizTalk データベース。 増やすことを検討、**スプール乗数**と**追跡データ乗数**スプール テーブルに追加のバックログを許可する値。  
   
-     これらの値の詳細については、次を参照してください。[リソース ベースのスロットル設定の変更方法](../core/how-to-modify-resource-based-throttling-settings.md)します。  
+     これらの値の詳細については、[リソース ベースのスロットル設定の変更方法](../core/how-to-modify-resource-based-throttling-settings.md)を参照してください。  
   
 -   使用して、**メッセージ公開の制限の状態**に関連付けられているパフォーマンス モニター カウンター **BizTalk:MessageAgent**現在の制限の状態を測定するパフォーマンス オブジェクト カテゴリ。 このカウンターの値が 6 に戻る場合は、中断されたインスタンスを確認し、必要に応じてそのインスタンスを終了または再開します。  
   
-     ホスト制限パフォーマンス カウンターの詳細については、次を参照してください。[ホスト制限パフォーマンス カウンター](../core/host-throttling-performance-counters.md)します。  
+     ホスト制限パフォーマンス カウンターの詳細については、[ホスト制限パフォーマンス カウンター](../core/host-throttling-performance-counters.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [制限の設計時の推奨事項](../core/throttling-design-recommendations.md)

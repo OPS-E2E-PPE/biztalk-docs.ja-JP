@@ -45,7 +45,7 @@ WCF アダプタでは、メッセージの暗号化と復号化、メッセー�
 >  標準の WCF 受信アダプターを使用しているため、 [ChainTrust](http://go.microsoft.com/fwlink/?LinkId=88960)クライアント証明書検証モードのクライアントの X.509 証明書の CA 証明書チェーンをインストールする必要があります。 この既定の動作を Wcf-custom または Wcf-customisolated アダプター cange に使用することができます。  
 
 > [!NOTE]
->  分離 WCF 受信アダプタの場合は、分離ホスト インスタンスとそれに対応するアプリケーション プールのユーザー アカウントを一致させる必要があります。 BizTalk 分離ホストの詳細については、次を参照してください。 [Web サービスを有効にする](../core/enabling-web-services.md)します。  
+>  分離 WCF 受信アダプタの場合は、分離ホスト インスタンスとそれに対応するアプリケーション プールのユーザー アカウントを一致させる必要があります。 BizTalk 分離ホストの詳細については、[Web サービスを有効にする](../core/enabling-web-services.md)を参照してください。  
 
 > [!NOTE]
 >  Wcf-custom および Wcf-customisolated 受信場所、ユーザー コンテキスト、証明書ストアの場所、および証明書をインストールする証明書の種類によって異なります、 **serviceCredentials**と**clientCredentials**動作要素を設定します。  

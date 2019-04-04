@@ -55,7 +55,7 @@ ms.locfileid: "36986899"
   
 3. Oracle E-business Suite に接続すると、選択**サービス (受信操作)** から、**選択コントラクト型**ドロップダウン リスト。  
   
-4. **カテゴリを選択**ボックスに、サービス コントラクトを生成する受信操作を参照します。 たとえば、**通知**操作、ルート ノードをクリックします (**/**) を選択します**通知**から、**利用可能なカテゴリと操作**ボックスをクリックして**追加**します。 受信操作を参照する方法の詳細については、次を参照してください。[参照、検索、および Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)します。  
+4. **カテゴリを選択**ボックスに、サービス コントラクトを生成する受信操作を参照します。 たとえば、**通知**操作、ルート ノードをクリックします (**/**) を選択します**通知**から、**利用可能なカテゴリと操作**ボックスをクリックして**追加**します。 受信操作を参照する方法の詳細については、[参照、検索、および Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)を参照してください。  
   
 5. 操作の WCF サービス コントラクトを生成する をクリックして**OK**します。  
   
@@ -73,4 +73,4 @@ ms.locfileid: "36986899"
 ## <a name="using-svcutilexe-to-generate-a-wcf-client-class-or-a-wcf-service-contract"></a>Svcutil.exe を使用して WCF クライアント クラスまたは WCF サービス コントラクトを生成するには  
  Svcutil.exe を使用して、アプリケーションの WCF クライアント クラスまたは WCF サービスのインターフェイスを生成することができます。 Svcutil.exe を使用すればを構成する必要があります、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。  
   
- Svcutil.exe は、出力ファイルで、WCF クライアント クラスまたは WCF サービス コントラクトを生成します。 既定のファイル名は、output.cs です。 このファイルを手動で含める必要があります、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクト。 Svcutil.exe の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=139432](http://go.microsoft.com/fwlink/?LinkId=139432)します。
+ Svcutil.exe は、出力ファイルで、WCF クライアント クラスまたは WCF サービス コントラクトを生成します。 既定のファイル名は、output.cs です。 このファイルを手動で含める必要があります、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクト。 Svcutil.exe の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=139432](http://go.microsoft.com/fwlink/?LinkId=139432)を参照してください。

@@ -48,7 +48,7 @@ SendPort(Microsoft.XLANGs.BaseTypes.TransportType)="WCF-Custom";
   
   **式**図形は、BizTalk オーケストレーションの一部です。 オーケストレーションを展開するときに、wcf-custom 送信ポートも作成されます。  
   
-  動的ポートの構成の詳細については、次を参照してください。[動的送信ポートを使用して WCF アダプター コンテキスト プロパティの構成](../../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md)します。
+  動的ポートの構成の詳細については、[動的送信ポートを使用して WCF アダプター コンテキスト プロパティの構成](../../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md)を参照してください。
   
 ## <a name="see-also"></a>参照  
 [Oracle データベースと BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md)

@@ -47,7 +47,7 @@ HTTPSSO サンプルでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../i
 
   このサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と SSO がインストールされていることを前提としています。 管理者特権が必要[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]IIS、SSO、および COM + は Windows XP Professional にします。 SSO 管理者、BizTalk Server 管理者、および BizTalk 分離ホスト ユーザーの各 Windows グループのメンバであることも必要です。  
 
-  このサンプルを効果的に使用するには、SSO と BizTalk HTTP アダプタに関する十分な知識があることを前提としています。 たとえば、SSO のコンテキストで関連アプリケーションとは何かを理解しておく必要があります。 これらのトピックについては、次を参照してください。[を使用して SSO](../core/using-sso.md)します。 参照してください[HTTP アダプター](../core/http-adapter.md)します。  
+  このサンプルを効果的に使用するには、SSO と BizTalk HTTP アダプタに関する十分な知識があることを前提としています。 たとえば、SSO のコンテキストで関連アプリケーションとは何かを理解しておく必要があります。 これらのトピックについては、[を使用して SSO](../core/using-sso.md)を参照してください。 参照してください[HTTP アダプター](../core/http-adapter.md)します。  
 
   構成が完了すると、このサンプルは次のように動作します。  
 
@@ -63,7 +63,7 @@ HTTPSSO サンプルでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../i
 
    BizTalk Server と SSO を省略し、ファイル EmployeeData.aspx を直接参照すると、[Windows] ダイアログ ボックスが表示され、資格情報を要求されます。  
 
-   コマンド ライン ユーティリティ ssomanage.exe を使用して関連アプリケーションやユーザーのマッピングの作成など、SSO を構成する方法を示すサンプルについては、次を参照してください。[管理 (BizTalk Server サンプル)](../core/manage-biztalk-server-sample.md)します。  
+   コマンド ライン ユーティリティ ssomanage.exe を使用して関連アプリケーションやユーザーのマッピングの作成など、SSO を構成する方法を示すサンプルについては、[管理 (BizTalk Server サンプル)](../core/manage-biztalk-server-sample.md)を参照してください。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  \<*パスのサンプル*\>\SSO\HTTPSSO\  

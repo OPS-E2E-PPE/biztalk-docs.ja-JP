@@ -36,4 +36,4 @@ ms.locfileid: "37015683"
  指定された SSO サービスはローカル管理者アカウントで実行しています。 これは、セキュリティ上の理由により推奨されていません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 詳細については、次を参照してください。 [SSO のセキュリティに関する推奨事項](../core/sso-security-recommendations.md)します。
+ 詳細については、[SSO のセキュリティに関する推奨事項](../core/sso-security-recommendations.md)を参照してください。

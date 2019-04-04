@@ -79,7 +79,7 @@ ConfigurationErrorsException: Exception has been thrown by the target of an invo
   
   **解決方法**  
   
-  送信ポートまたは BizTalk オーケストレーションでメッセージ コンテキスト プロパティとしては、SOAP アクションを指定します。 手順については、次を参照してください。 [SQL アダプタの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-soap-action-for-the-sql-adapter.md)します。 参照してください[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)各操作のアクションの一覧を表示します。  
+  送信ポートまたは BizTalk オーケストレーションでメッセージ コンテキスト プロパティとしては、SOAP アクションを指定します。 手順については、[SQL アダプタの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-soap-action-for-the-sql-adapter.md)を参照してください。 参照してください[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)各操作のアクションの一覧を表示します。  
   
 ###  <a name="BKMK_SQLInvalidOp"></a> Errorcode InvalidOperationException FILESTREAM 操作を実行中に 5 を =  
  **問題**  
@@ -94,7 +94,7 @@ ErrorCode:5
   
  **原因**  
   
- SQL Server データベースに接続するデータベース資格情報を指定する可能性があります。 FILESTREAM 操作を実行するには、必ずに Windows 認証を使用する必要があります。 エラー コード「5」では、正しくない資格情報のためのアクセスが拒否されることを示します。 別のエラー コードの詳細については、次を参照してください。[システム エラー コード (0 ~ 499)](https://msdn.microsoft.com/library/ms681382(VS.85).aspx)します。
+ SQL Server データベースに接続するデータベース資格情報を指定する可能性があります。 FILESTREAM 操作を実行するには、必ずに Windows 認証を使用する必要があります。 エラー コード「5」では、正しくない資格情報のためのアクセスが拒否されることを示します。 別のエラー コードの詳細については、[システム エラー コード (0 ~ 499)](https://msdn.microsoft.com/library/ms681382(VS.85).aspx)を参照してください。
   
  **解決方法**  
   
@@ -111,7 +111,7 @@ ErrorCode:5
   
  **解決方法**  
   
- 別のトランザクションの一部として更新されるテーブルをポーリングする場合は、PolledDataAvailableStatement バインド プロパティに指定されたクエリの一部として、ロックが適用される場合でもデータが返されるようにする"(nolock)"を使用したパラメーターを使用してを考慮することができます。その他のトランザクション。 詳細については、次を参照してください。[データベース エンジンの SQL ロック](https://msdn.microsoft.com/library/ms190615.aspx)します。
+ 別のトランザクションの一部として更新されるテーブルをポーリングする場合は、PolledDataAvailableStatement バインド プロパティに指定されたクエリの一部として、ロックが適用される場合でもデータが返されるようにする"(nolock)"を使用したパラメーターを使用してを考慮することができます。その他のトランザクション。 詳細については、[データベース エンジンの SQL ロック](https://msdn.microsoft.com/library/ms190615.aspx)を参照してください。
   
 ###  <a name="BKMK_SQLSingleOp"></a> アダプターは、挿入、更新、または大量のデータを BizTalk Server を使用して 1 つの操作を削除に失敗しました。  
  **問題**  
@@ -152,7 +152,7 @@ ErrorCode:5
      > [!IMPORTANT]
      >  アダプターのクライアントと SQL Server を実行するコンピューターでこの変更を行う必要があります。 例では、< computer_name > をアダプターのクライアントと SQL Server を実行しているコンピューターの名前に置き換えます。  
   
-  3. 設定、 **SendTimeout**のプロパティのバインド、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]非常に大きな値にします。 バインドのプロパティを設定する方法については、次を参照してください。 [SQL アダプタのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-binding-properties-for-the-sql-adapter.md)します。  
+  3. 設定、 **SendTimeout**のプロパティのバインド、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]非常に大きな値にします。 バインドのプロパティを設定する方法については、[SQL アダプタのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-binding-properties-for-the-sql-adapter.md)を参照してください。  
   
 ###  <a name="BKMK_SQLFullSchemaValidate"></a> データセットを含む応答メッセージの BizTalk Server の完全なスキーマ検証の失敗します。  
  **問題**  
@@ -270,7 +270,7 @@ The element 'bindings' has invalid child element 'sqlBinding'. List of possible 
 > [!NOTE]
 >  SqlAdapterInboundTransactionBehavior が設定されている場合、TransactionTimeout が 24.20:31:23.6470000 (24 日) である最大の可能な値にも構成されていることを確認します。 この回避策を使用する場合、トランザクション分離レベルを構成する場合のみ、SqlAdapterInboundTransactionBehavior を追加できます。 それ以外の場合、これはその動作を削除することをお勧めします。  
   
- 詳細については、 **ReceiveTimeout**プロパティ、バインドを参照してください[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。 バインドのプロパティを指定する方法の詳細については、次を参照してください。 [SQL アダプタのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-binding-properties-for-the-sql-adapter.md)します。  
+ 詳細については、 **ReceiveTimeout**プロパティ、バインドを参照してください[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。 バインドのプロパティを指定する方法の詳細については、[SQL アダプタのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-binding-properties-for-the-sql-adapter.md)を参照してください。  
   
 > [!NOTE]
 >  アダプターを使用する場合[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、タイムアウトを大きな値に設定した場合、アダプターの機能は影響しません。  

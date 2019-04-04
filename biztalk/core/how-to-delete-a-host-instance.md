@@ -22,7 +22,7 @@ ms.locfileid: "37023584"
 # <a name="delete-a-host-instance"></a>ホスト インスタンスを削除します。
 
 ## <a name="overview"></a>概要
-使用することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールまたは Windows Management Instrumentation (WMI) ホスト インスタンスを削除します。 ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)します。 WMI を使用して、ホスト インスタンスを削除する方法の詳細については、次を参照してください。 **MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+使用することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールまたは Windows Management Instrumentation (WMI) ホスト インスタンスを削除します。 ホスト インスタンスの詳細については、[ホスト インスタンス](../core/host-instances.md)を参照してください。 WMI を使用して、ホスト インスタンスを削除する方法の詳細については、**MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
   
  ホスト インスタンスを削除すると、BizTalk Server ランタイムのインスタンスが、関連付けられたサーバーから削除されます。また、BizTalk 管理データベースが、ホストからそのインスタンスを削除するように更新されます。  
   

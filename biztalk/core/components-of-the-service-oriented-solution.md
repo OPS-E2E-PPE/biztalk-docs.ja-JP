@@ -48,7 +48,7 @@ ms.locfileid: "37017151"
   
   インライン バージョンのオーケストレーションでは、ソリューション内で要求と応答の間の待機時間が最短になります。  
   
-  ソース ファイルについては、次を参照してください。[サービス指向ソリューションのファイルの在庫](../core/file-inventory-for-the-service-oriented-solution.md)します。  
+  ソース ファイルについては、[サービス指向ソリューションのファイルの在庫](../core/file-inventory-for-the-service-oriented-solution.md)を参照してください。  
   
 ## <a name="orchestrations-in-the-service-oriented-solution"></a>サービス指向ソリューションのオーケストレーション  
  3 つのオーケストレーション**CustomerServiceReceiveSend**、 **CustomerServiceNativeRequestResponse**、および**CustomerService**ソリューションの大部分を作成します。 **CustomerServiceReceiveSend**と**CustomerServiceNativeRequestResponse**オーケストレーションが呼び出すフロント エンドとして機能、 **CustomerService**オーケストレーションします。 **CustomerService**オーケストレーション作業のほとんどでは、バックエンド アプリケーションに要求を送信、返信を収集、1 つのメッセージに返信を結合すること、およびフロント エンドを適切なメッセージを送信します。オーケストレーションです。 フロント エンド オーケストレーションを呼び出すため、 **CustomerService**オーケストレーション、フロント エンド オーケストレーションまで、 **CustomerService**オーケストレーションが終了します。  

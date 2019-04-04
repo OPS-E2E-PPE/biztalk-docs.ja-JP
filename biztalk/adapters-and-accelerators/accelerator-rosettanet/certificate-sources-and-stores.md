@@ -45,7 +45,7 @@ ms.locfileid: "36990339"
   
 - 信頼されたルート証明機関フォルダーに証明機関から証明書、**証明書 (ローカル コンピューター)** 格納  
   
-  プライベート証明書を格納する、**証明書 - 現在のユーザー**を格納します。 管理コンソールを使用して、開くことで、このストアのノードを開くことができます、 **runas**コマンド ホスト サービス アカウントのユーザーにします。 詳細については、次を参照してください。[証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates.md)します。  
+  プライベート証明書を格納する、**証明書 - 現在のユーザー**を格納します。 管理コンソールを使用して、開くことで、このストアのノードを開くことができます、 **runas**コマンド ホスト サービス アカウントのユーザーにします。 詳細については、[証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [CertWizard ユーティリティを使用して証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates-using-the-certwizard-utility.md)   

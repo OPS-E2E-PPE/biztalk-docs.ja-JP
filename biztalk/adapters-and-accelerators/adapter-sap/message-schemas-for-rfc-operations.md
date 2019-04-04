@@ -23,7 +23,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36972851"
 ---
 # <a name="message-schemas-for-rfc-operations"></a>RFC 操作のメッセージ スキーマ
-[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]操作として SAP リモート関数呼び出し (RFC) を表示します。 このトピックには、メッセージのスキーマおよび RFC 操作のためのメッセージ アクションに関する情報が含まれています。 メッセージの構造は、受信と送信の RFC 操作のと同じです。 アダプターをサポートする RFC 操作の概要については、次を参照してください。 [SAP で Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)します。  
+[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]操作として SAP リモート関数呼び出し (RFC) を表示します。 このトピックには、メッセージのスキーマおよび RFC 操作のためのメッセージ アクションに関する情報が含まれています。 メッセージの構造は、受信と送信の RFC 操作のと同じです。 アダプターをサポートする RFC 操作の概要については、[SAP で Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)を参照してください。  
 
  アダプターの RFC 操作として、Bapi を呼び出すこともできます。 このトピックでは、このような呼び出しメッセージ構造の例が含まれます。  
 
@@ -68,7 +68,7 @@ ms.locfileid: "36972851"
  [RFC_NAME]; 呼び出す RFC の名前を =たとえば、RFC_CUSTOMER_GET です。  
 
 ## <a name="invoking-a-bapi-as-an-rfc-operation"></a>RFC 操作として BAPI を呼び出す  
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] RFC 操作、およびビジネス オブジェクトのメソッドとして Bapi 明らかになります。 RFC の操作として Bapi は名前で表示されます。 ビジネス オブジェクトのインターフェイスを使用して Bapi を呼び出す方法の詳細については、次を参照してください。 [SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)します。  
+ [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] RFC 操作、およびビジネス オブジェクトのメソッドとして Bapi 明らかになります。 RFC の操作として Bapi は名前で表示されます。 ビジネス オブジェクトのインターフェイスを使用して Bapi を呼び出す方法の詳細については、[SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)を参照してください。  
 
  次の XML では、RFC として呼び出される BAPI (BAPI_CUSTOMER_GETDETAIL2) のメッセージ構造を示します。 この操作のメッセージ アクション: http://Microsoft.LobServices.Sap/2007/03/Rfc/BAPI_CUSTOMER_GETDETAIL2 します。  
 

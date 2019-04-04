@@ -31,7 +31,7 @@ ms.locfileid: "36984067"
   
  WCF サービス モデルには、発信先サービスに対する操作を呼び出すか、クライアントからの受信操作にプロキシ クラスを使用してただし、必要があります。 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Siebel システムをするには、操作を呼び出すことができます、WCF サービスとして公開します。  
   
-- ターゲット サービスで操作を呼び出すために使用するプロキシ クラスには、WCF クライアント クラスが呼び出されます。 このクラスは、厳密に型指定されたパラメーターを持つ .NET メソッドとして、サービスによって公開される操作をモデル化します。 WCF サービス モデルを使用すると、公開操作を呼び出すことができます、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] WCF クライアントでの .NET メソッドとして。 WCF クライアントの詳細については、次を参照してください。 [WCF Client Overview](https://msdn.microsoft.com/library/ms735103.aspx)します。   
+- ターゲット サービスで操作を呼び出すために使用するプロキシ クラスには、WCF クライアント クラスが呼び出されます。 このクラスは、厳密に型指定されたパラメーターを持つ .NET メソッドとして、サービスによって公開される操作をモデル化します。 WCF サービス モデルを使用すると、公開操作を呼び出すことができます、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] WCF クライアントでの .NET メソッドとして。 WCF クライアントの詳細については、[WCF Client Overview](https://msdn.microsoft.com/library/ms735103.aspx)を参照してください。   
   
   WCF クライアント クラスを生成するツールを使用して、関連付けられているサービス メタデータからヘルパー コードを[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]を公開します。 次のツールのいずれかを使用できます。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "36984067"
 ## <a name="why-choose-the-wcf-service-model-or-the-wcf-channel-model"></a>WCF サービス モデルまたは WCF チャネル モデルを選択する理由  
  WCF サービス モデルのプログラミングのソリューションの開発に最適な選択肢は、多くの場合、.NET プログラマになじみがチャネルを基になる SOAP メッセージ交換の複雑さを非表示にするモデルを表示するため、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。 ただし、WCF チャネル モデルが適してをする可能性がありますのシナリオがあります。 たとえば、SOAP メッセージ内のオブジェクトの XML 表現と WCF サービス モデルでそれらを表すために使用する .NET 型の間の逆シリアル化とシリアル化は、メッセージ全体をメモリに読み取る必要があります。  
   
- WCF チャネル モデルでは、XML ノード レベルのすべての操作にストリーミングのサポートを提供します。 ノードのレベルがストリーミングで XML メッセージの各ノードのみが一度にメモリに保持されます。 特定の操作など、大きな結果セットを返すクエリを実行している場合 WCF チャネル モデルありますアプリケーションに適しています。 WCF チャネル モデルの使用に関する詳細については、次を参照してください。 [Siebel アプリケーションを開発、WCF チャネル モデルを使用して](../../adapters-and-accelerators/adapter-siebel/develop-siebel-applications-using-the-wcf-channel-model3.md)します。  
+ WCF チャネル モデルでは、XML ノード レベルのすべての操作にストリーミングのサポートを提供します。 ノードのレベルがストリーミングで XML メッセージの各ノードのみが一度にメモリに保持されます。 特定の操作など、大きな結果セットを返すクエリを実行している場合 WCF チャネル モデルありますアプリケーションに適しています。 WCF チャネル モデルの使用に関する詳細については、[Siebel アプリケーションを開発、WCF チャネル モデルを使用して](../../adapters-and-accelerators/adapter-siebel/develop-siebel-applications-using-the-wcf-channel-model3.md)を参照してください。  
   
  このセクションのトピックでは、情報、手順、および作成しを使用してアプリケーションを開発する WCF サービス モデルを使用するのに役立つ例が含まれて、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。  
   

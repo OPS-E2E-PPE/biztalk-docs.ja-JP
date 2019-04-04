@@ -21,9 +21,9 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36989787"
 ---
 # <a name="create-a-new-host"></a>新しいホストを作成します。
-BizTalk ホストとは、アダプター ハンドラー、受信場所 (パイプラインを含む)、オーケストレーションなどのアイテムの論理的なコンテナーです。 セキュリティ対策のため、およびホストの管理を容易にするために、メッセージの処理、受信、および送信用の各ホストを分離し、信頼済みのアイテムとそうでないアイテムのホストを使い分けることをお勧めします。 BizTalk サーバーごとにインストールできるホストのインスタンスは 1 つだけです。 ホストの詳細については、次を参照してください。[ホスト](../core/hosts.md)します。  
+BizTalk ホストとは、アダプター ハンドラー、受信場所 (パイプラインを含む)、オーケストレーションなどのアイテムの論理的なコンテナーです。 セキュリティ対策のため、およびホストの管理を容易にするために、メッセージの処理、受信、および送信用の各ホストを分離し、信頼済みのアイテムとそうでないアイテムのホストを使い分けることをお勧めします。 BizTalk サーバーごとにインストールできるホストのインスタンスは 1 つだけです。 ホストの詳細については、[ホスト](../core/hosts.md)を参照してください。  
 
- Windows Management Instrumentation (WMI) を使用して、新しいホストを作成する方法については、次を参照してください。 **MSBTS_Host (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+ Windows Management Instrumentation (WMI) を使用して、新しいホストを作成する方法については、**MSBTS_Host (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
 
 ## <a name="prerequisites"></a>前提条件  
  ホストの作成、ホスト プロパティの変更、およびホストの削除には、次のユーザー権利が必要です。  

@@ -26,7 +26,7 @@ ms.locfileid: "37014179"
 # <a name="web-application-samples"></a>Web アプリケーションのサンプル
 The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK) には、RNIFSend.aspx サンプルおよび RNIFReceive.aspx サンプルが含まれています。 これらの ASPX ページは、開始側から応答側への RNIF メッセージの送信、または受信側での RNIF メッセージの受信を行います。  
   
- ASPX ページの機能の詳細については、次を参照してください。[送信および受信 ASPX ページ](../../adapters-and-accelerators/accelerator-rosettanet/send-and-receive-aspx-pages.md)します。 ここでは、サンプルを構築および実行する手順について説明します。  
+ ASPX ページの機能の詳細については、[送信および受信 ASPX ページ](../../adapters-and-accelerators/accelerator-rosettanet/send-and-receive-aspx-pages.md)を参照してください。 ここでは、サンプルを構築および実行する手順について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -30,7 +30,7 @@ ms.locfileid: "37010611"
   
 ### <a name="to-move-the-bam-primary-import-database"></a>BAM プライマリ インポート データベースを移動するには  
   
-1. BizTalk Server サービスをすべて停止します。 詳細については、次を参照してください。[開始、停止、一時停止、再開、または BizTalk Server サービスを再起動する方法](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)します。  
+1. BizTalk Server サービスをすべて停止します。 詳細については、[開始、停止、一時停止、再開、または BizTalk Server サービスを再起動する方法](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)を参照してください。  
   
 2. IIS サービスを停止します。  
   
@@ -145,7 +145,7 @@ ms.locfileid: "37010611"
   
          PrimaryImportDatabase ="*\<DatabaseName\>*"  
   
-17. BizTalk Server サービスをすべて開始します。 詳細については、次を参照してください。[開始、停止、一時停止、再開、または BizTalk Server サービスを再起動する方法](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)します。  
+17. BizTalk Server サービスをすべて開始します。 詳細については、[開始、停止、一時停止、再開、または BizTalk Server サービスを再起動する方法](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)を参照してください。  
   
 18. IIS サービスを開始します。  
   

@@ -91,7 +91,7 @@ ms.locfileid: "37004163"
   
 - 場合[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]メッセージ ログが有効になっていると`logMessagesAtServiceLevel`は`true`、アダプター クライアントの間で交換されるメッセージのメッセージ ヘッダー (ただし、メッセージ本文ではありません)、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]ログに記録されます。 メッセージのアクションがメッセージ ヘッダーにあるため、操作で、クライアントが呼び出すことが表示されます、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。 場合`logEntireMessage`も`true`、メッセージ本文がログに記録されます。 データベースの機密情報を表示このことができます。  
   
-  診断トレースを有効にすると、セキュリティを向上させる詳細については、次を参照してください。[セキュリティに関する注意事項とトレース用の役立つヒント](https://msdn.microsoft.com/library/ms733053.aspx)します。 メッセージのログ記録を有効にすると、セキュリティを向上させる詳細については、次を参照してください。[メッセージ ログのセキュリティ関連事項](https://msdn.microsoft.com/library/ms730318.aspx)します。
+  診断トレースを有効にすると、セキュリティを向上させる詳細については、[セキュリティに関する注意事項とトレース用の役立つヒント](https://msdn.microsoft.com/library/ms733053.aspx)を参照してください。 メッセージのログ記録を有効にすると、セキュリティを向上させる詳細については、[メッセージ ログのセキュリティ関連事項](https://msdn.microsoft.com/library/ms730318.aspx)を参照してください。
   
 ## <a name="see-also"></a>参照  
 [Siebel アプリケーションをセキュリティで保護する](../../adapters-and-accelerators/adapter-siebel/secure-your-siebel-applications.md)

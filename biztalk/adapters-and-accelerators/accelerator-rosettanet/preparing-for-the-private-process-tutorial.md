@@ -25,7 +25,7 @@ ms.locfileid: "37010931"
 ## <a name="prerequisites"></a>前提条件
 前に、チュートリアルを開始するには。
   
-- BizTalk Server のフル インストールを行うと[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]2 台のコンピューター。 詳細については、次を参照してください。[インストールおよび構成](install-configure-biztalk-accelerator-for-rosettanet.md)します。  
+- BizTalk Server のフル インストールを行うと[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]2 台のコンピューター。 詳細については、[インストールおよび構成](install-configure-biztalk-accelerator-for-rosettanet.md)を参照してください。  
   
   > [!IMPORTANT]
   >  BTARN オーケストレーションを開始するなど、RosettaNet アクセラレータを完全に構成してください。 参照してください[インストールおよび構成](install-configure-biztalk-accelerator-for-rosettanet.md)します。 追加する必要がありますも、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Microsoft Windows® SharePoint™ Services 管理パスの除外一覧に仮想ディレクトリ (btarnhttpreceive を含む)。 

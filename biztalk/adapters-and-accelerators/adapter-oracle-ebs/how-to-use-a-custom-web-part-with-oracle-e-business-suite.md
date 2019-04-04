@@ -31,9 +31,9 @@ ms.locfileid: "36988243"
 ## <a name="before-you-begin"></a>はじめに  
  カスタム Web パーツを作成する前に。  
   
--   WCF サービスとしての Oracle E-business Suite の成果物を発行します。 詳細については、次を参照してください。[手順 1: Oracle E-business アダプターを使用して作成および WCF サービスの発行](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)で[チュートリアル: SharePoint サイト上の Oracle E-business Suite からデータを提示](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)します。  
+-   WCF サービスとしての Oracle E-business Suite の成果物を発行します。 詳細については、[手順 1: Oracle E-business アダプターを使用して作成および WCF サービスの発行](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)で[チュートリアル: SharePoint サイト上の Oracle E-business Suite からデータを提示](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)を参照してください。  
   
--   Microsoft Office SharePoint Server でビジネス データ カタログを使用して Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成します。 詳細については、次を参照してください。[手順 2: Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)で[チュートリアル: SharePoint サイト上の Oracle E-business Suite からデータを提示](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)します。  
+-   Microsoft Office SharePoint Server でビジネス データ カタログを使用して Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成します。 詳細については、[手順 2: Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)で[チュートリアル: SharePoint サイト上の Oracle E-business Suite からデータを提示](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)を参照してください。  
   
 ##  <a name="Create_a_Custom_Web_Part"></a> 手順 1: カスタム Web パーツを作成します。  
   
@@ -49,7 +49,7 @@ ms.locfileid: "36988243"
   
 6.  プロジェクトをビルドする。 プロジェクトの成功したビルドで CustomWebPart.dll、.dll ファイルが生成されます、\<プロジェクト フォルダー\>bin/デバッグ フォルダー。  
   
-7.  **64 ビット コンピューターに対してのみ**: 次の手順を実行する前に厳密な名前で CustomWebPart.dll ファイルに署名します。 それはできません、インポートするための SharePoint ポータルで、CustomWebPart.dll、使用できる"手順 3: カスタムの Web パーツを使用する SharePoint ポータルを構成します"。 厳密な名前でアセンブリに署名する方法については、次を参照してください。[方法: 厳密な名前でアセンブリに署名](https://msdn.microsoft.com/library/xc31ft41.aspx)します。
+7.  **64 ビット コンピューターに対してのみ**: 次の手順を実行する前に厳密な名前で CustomWebPart.dll ファイルに署名します。 それはできません、インポートするための SharePoint ポータルで、CustomWebPart.dll、使用できる"手順 3: カスタムの Web パーツを使用する SharePoint ポータルを構成します"。 厳密な名前でアセンブリに署名する方法については、[方法: 厳密な名前でアセンブリに署名](https://msdn.microsoft.com/library/xc31ft41.aspx)を参照してください。
   
 ## <a name="step-2-deploy-the-custom-web-part-to-a-sharepoint-portal"></a>手順 2: SharePoint ポータルにカスタム Web パーツを展開します。  
  作成される CustomWebPart.dll ファイル (カスタム Web パーツ) を作成するには、次を行う必要があります"手順 1: カスタム Web パーツの作成"のこのトピックでは、SharePoint ポータル上で使用。  

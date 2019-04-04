@@ -24,11 +24,11 @@ BizTalk [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincomm
   
 - BizTalk [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービス公開ウィザードを使用して、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] Web サービスを作成します。 BizTalk の使用について[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービス公開ウィザードを参照してください[WCF サービスの公開](../core/publishing-wcf-services.md)します。  
   
-- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信と送信の場所およびポートを構成します。 これを行う方法の例は、次を参照してください。[構成を受信する方法と場所の送信を BAM WCF インターセプション用ポート](../core/how-to-configure-receive-and-send-locations-and-ports-for-bam-wcf-interception.md)します。  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信と送信の場所およびポートを構成します。 これを行う方法の例は、[構成を受信する方法と場所の送信を BAM WCF インターセプション用ポート](../core/how-to-configure-receive-and-send-locations-and-ports-for-bam-wcf-interception.md)を参照してください。  
   
 - ソリューションを IIS でホストしている場合は、IIS マネージャーを使用して、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] Web サービスを構成する必要があります。  
   
-  -   アプリケーション プール ユーザーにアクセス許可を付与する必要があります。 これを行うには、次を参照してください。 [IIS の偽装のセキュリティに関する考慮事項](../core/security-considerations-for-iis-impersonation.md)します。  
+  -   アプリケーション プール ユーザーにアクセス許可を付与する必要があります。 これを行うには、[IIS の偽装のセキュリティに関する考慮事項](../core/security-considerations-for-iis-impersonation.md)を参照してください。  
   
   -   次の手順に従って、アプリケーションのディレクトリ セキュリティを設定する必要があります。  
   

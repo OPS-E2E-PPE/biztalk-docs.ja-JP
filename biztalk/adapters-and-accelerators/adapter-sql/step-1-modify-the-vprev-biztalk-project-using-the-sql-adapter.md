@@ -39,7 +39,7 @@ ms.locfileid: "36979411"
   
 1. WCF ベースを使用して、Customer テーブルに対する挿入操作のメタデータを生成[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 使用することができます、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]メタデータを生成します。  
   
-    メタデータを生成する方法の詳細については、次を参照してください。 [SQL アダプターを使用して Visual Studio での SQL Server 操作のメタデータの取得](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)します。 スキーマを生成すると後のような名前のファイル*TableOperation.dbo.Customer.xsd* BizTalk プロジェクトに追加されます。 このファイルには、WCF ベースを使用して SQL Server データベースの Customer テーブルに対して挿入操作を実行するメッセージを送信するためのスキーマが含まれています。[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
+    メタデータを生成する方法の詳細については、[SQL アダプターを使用して Visual Studio での SQL Server 操作のメタデータの取得](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)を参照してください。 スキーマを生成すると後のような名前のファイル*TableOperation.dbo.Customer.xsd* BizTalk プロジェクトに追加されます。 このファイルには、WCF ベースを使用して SQL Server データベースの Customer テーブルに対して挿入操作を実行するメッセージを送信するためのスキーマが含まれています。[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
   
 2. 挿入操作のメタデータを生成すると、ポートのバインド ファイルも作成します。 次の手順で、SQL Server データベースにメッセージを送信する Wcf-custom 送信ポートを作成するこのバインド ファイルが使用されます。 操作の SOAP アクションは、メタデータの生成対象の操作にも設定されます。 たとえば、挿入操作のメタデータを生成すると、送信ポートでの SOAP アクションで、操作名が、"Insert"になります。 ただし、操作名とオーケストレーションの一部異なる可能性があります、たとえば、作成した論理送信ポートで"Operation_1"。 その結果、送信ポートを使用して SQL Server データベースにメッセージを送信するときに、エラーが発生します。 これを回避するには、ことを確認しますで論理送信ポート、オーケストレーションでは、メタデータを生成する操作名と同じ操作名。  
   
@@ -100,7 +100,7 @@ ms.locfileid: "36979411"
         ![応答スキーマのマッピング](../../adapters-and-accelerators/adapter-sql/media/c4a347ae-8d2d-4357-b18d-37f36bef17c7.gif "c4a347ae-8d2d-4357-b18d-37f36bef17c7")  
   
       > [!NOTE]
-      >  一括コピー functoid の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=119749](http://go.microsoft.com/fwlink/?LinkId=119749)します。  
+      >  一括コピー functoid の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=119749](http://go.microsoft.com/fwlink/?LinkId=119749)を参照してください。  
   
    9. マップを保存します。  
   

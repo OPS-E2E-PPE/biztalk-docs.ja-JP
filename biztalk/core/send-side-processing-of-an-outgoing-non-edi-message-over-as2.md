@@ -36,7 +36,7 @@ ms.locfileid: "36988003"
  AS2 メッセージを作成する前に、送信ポートは、メッセージをサブスクライブするための適切なフィルター式を使用して非 EDI ペイロードを取得する必要があります。 MDN が同期型か非同期型かに応じて、双方向または一方向の送信ポートを使用できます。 次に、AS2Send パイプラインは、非 EDI ペイロードを処理して AS2 メッセージを作成します。  
   
 ## <a name="sending-the-as2-message"></a>AS2 メッセージを送信します。  
- AS2 送信パイプラインの AS2 エンコーダーは、最初にアグリーメントの解決を実行して、送信メッセージの処理に使用するアグリーメントのプロパティを特定します。 詳細については、次を参照してください。[送信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-outgoing-as2-messages.md)します。  
+ AS2 送信パイプラインの AS2 エンコーダーは、最初にアグリーメントの解決を実行して、送信メッセージの処理に使用するアグリーメントのプロパティを特定します。 詳細については、[送信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-outgoing-as2-messages.md)を参照してください。  
   
  AS2 エンコーダーは、AS2 メッセージを送信するために必要な一連の HTTP ヘッダーを構築します。 これらのヘッダーは `HTTP.UserHttpHeaders` コンテキスト プロパティに追加されます。このコンテキスト プロパティは、複数のヘッダー値から成る単一の文字列です。 AS2 エンコーダーは、次の AS2 ヘッダーを HTTP.UserHttpHeaders 内に構築します。 AS2 メッセージには、これらのヘッダーが含まれている必要があります。  
   
@@ -59,13 +59,13 @@ ms.locfileid: "36988003"
   AS2 エンコーダーは、`HTTP.UserHttpHeaders` プロパティでヘッダーを構築した後、そのヘッダーをメッセージのコンテキストに書き込みます。 HTTP アダプターは `HTTP.UserHttpHeaders` を取得し、`HTTP.UserHttpHeaders` のヘッダー値をメッセージの前に付加します。  
   
 > [!NOTE]
->  AS2 トランスポートは、HTTP アダプターと共に使用することだけが想定されています。 ただし、適切なコンテキスト プロパティを手動で設定すると、FILE アダプターを使用して AS2 メッセージを送信できます。 詳細については、次を参照してください。 [FILE 送信ポートを経由で AS2 メッセージの送信](../core/sending-an-as2-message-over-a-file-send-port.md)します。  
+>  AS2 トランスポートは、HTTP アダプターと共に使用することだけが想定されています。 ただし、適切なコンテキスト プロパティを手動で設定すると、FILE アダプターを使用して AS2 メッセージを送信できます。 詳細については、[FILE 送信ポートを経由で AS2 メッセージの送信](../core/sending-an-as2-message-over-a-file-send-port.md)を参照してください。  
   
 ## <a name="processing-the-returned-mdn"></a>返された MDN の処理  
  MDN が有効になっている場合、双方向送信ポートに関連付けられた受信パイプラインは、AS2 メッセージの受信側パーティから MDN を受信します。  
   
 > [!NOTE]
->  受信 mdn メッセージに対して、AS2 送信パイプラインを実行する処理の詳細については、次を参照してください。[送信 MDN の送信](../core/sending-an-outgoing-mdn.md)します。  
+>  受信 mdn メッセージに対して、AS2 送信パイプラインを実行する処理の詳細については、[送信 MDN の送信](../core/sending-an-outgoing-mdn.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server が AS2 メッセージを送信する方法](../core/how-biztalk-server-sends-as2-messages.md)

@@ -38,4 +38,4 @@ ms.locfileid: "36997523"
   
 7. をクリックして、 **SubmitRequest**行程入口サービスに要求を送信するボタンをクリックします。 表示される応答メッセージの待機、**結果**ボックス。  
   
-   ESB スケジュール サービスを複数の Web サービス サンプルで使用する方法については、次を参照してください。 [、複数 Web サービス サンプルのしくみ](../esb-toolkit/how-the-multiple-web-services-sample-works.md)します。
+   ESB スケジュール サービスを複数の Web サービス サンプルで使用する方法については、[、複数 Web サービス サンプルのしくみ](../esb-toolkit/how-the-multiple-web-services-sample-works.md)を参照してください。

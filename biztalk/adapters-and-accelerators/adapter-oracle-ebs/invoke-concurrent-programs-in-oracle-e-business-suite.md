@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36969691"
 ---
 # <a name="invoke-concurrent-programs-in-oracle-e-business-suite"></a>Oracle E-business Suite での同時実行プログラムを起動します。
-Oracle E-business Suite では、Oracle のアプリケーションで特定の操作を実行する実行可能な同時実行プログラムを公開します。 各 Oracle アプリケーションでは、標準の同時実行プログラム (つまり同じすべての操作では) と Oracle アプリケーションに固有の特定の同時実行プログラムのセットがあります。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプター クライアントが呼び出すことができる操作としてすべての同時実行プログラムを公開します。 アダプターが同時実行プログラムをサポートする方法の詳細については、次を参照してください。[同時実行プログラムに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)します。 同時実行プログラムを呼び出すためのメッセージを SOAP の構造についてを参照してください。[同時実行プログラムのメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-concurrent-programs.md)します。  
+Oracle E-business Suite では、Oracle のアプリケーションで特定の操作を実行する実行可能な同時実行プログラムを公開します。 各 Oracle アプリケーションでは、標準の同時実行プログラム (つまり同じすべての操作では) と Oracle アプリケーションに固有の特定の同時実行プログラムのセットがあります。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプター クライアントが呼び出すことができる操作としてすべての同時実行プログラムを公開します。 アダプターが同時実行プログラムをサポートする方法の詳細については、[同時実行プログラムに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)を参照してください。 同時実行プログラムを呼び出すためのメッセージを SOAP の構造についてを参照してください。[同時実行プログラムのメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-concurrent-programs.md)します。  
 
 > [!NOTE]
 >  そのメタデータを公開しない同時実行プログラム、については、Oracle E-business アダプターは、これらの同時実行プログラムごとに 100 の省略可能なパラメーターを公開します。 これらの同時実行プログラムを正常に呼び出すは、ユーザーは、値を必要とする同時実行プログラムのパラメーターを把握する Oracle E-business Suite のドキュメントを参照して、それらを指定する必要があります。 このような同時実行プログラムの例は、 **Journal インポート**(実際の名前: **GLLEZL**) で、**総勘定元帳**アプリケーション。  
@@ -48,7 +48,7 @@ Oracle E-business Suite では、Oracle のアプリケーションで特定の�
 ## <a name="generating-schema"></a>スキーマを生成します。  
  このトピックを呼び出す方法を示します、**顧客インターフェイス**から同時実行プログラム、 **Receivables**アプリケーション。 このアプリケーションは、既定の Oracle E-business Suite アプリケーションで使用できます。 この同時実行プログラムは、要求 ID を返します 同時実行プログラムの状態を確認するには、実行、 **Get_Status**の応答で受信した要求 ID を渡すことによって、同時実行プログラム、**顧客インターフェイス**同時実行プログラム。  
 
- このトピックでは、両方のスキーマを生成しました、**顧客インターフェイス**と**Get_Status**同時実行プログラム。 スキーマを生成する方法の詳細については、次を参照してください。 [Visual Studio での Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)します。  
+ このトピックでは、両方のスキーマを生成しました、**顧客インターフェイス**と**Get_Status**同時実行プログラム。 スキーマを生成する方法の詳細については、[Visual Studio での Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)を参照してください。  
 
 ## <a name="defining-messages-and-message-types"></a>メッセージおよびメッセージの種類を定義します。  
  先に生成したスキーマは、オーケストレーションのメッセージに求められる "型" を記述します。 メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。 オーケストレーションでは、メッセージを作成し、前の手順で生成したスキーマにリンクする必要がありますようになりました。  
@@ -148,7 +148,7 @@ Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResp
 
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
 
- BizTalk ソリューションを構築するようになりましたし、BizTalk Server にデプロイする必要があります。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。  
+ BizTalk ソリューションを構築するようになりましたし、BizTalk Server にデプロイする必要があります。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。  
 
 |図形|[プロパティ]|  
 |-----------|----------------|  
@@ -162,10 +162,10 @@ Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResp
 
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
 
- BizTalk ソリューションを構築するようになりましたし、BizTalk Server にデプロイする必要があります。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。  
+ BizTalk ソリューションを構築するようになりましたし、BizTalk Server にデプロイする必要があります。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。  
 
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**ペインで、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 使用する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールにアプリケーションを構成します。 チュートリアルについては、次を参照してください。[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)します。  
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**ペインで、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 使用する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールにアプリケーションを構成します。 チュートリアルについては、[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)を参照してください。  
 
  アプリケーションを構成する必要があります。  
 
@@ -177,7 +177,7 @@ Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResp
 
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーションが Oracle E-business Suite からの応答を含む応答メッセージをドロップする場所の場所を定義します。  
 
-  - 2 つの物理 WCF カスタム定義または送信ポートの Wcf-oracleebs: を実行する Oracle E-business Suite にメッセージを送信する 1 つ、**顧客インターフェイス**同時実行プログラムおよび実行する、その他の**Get_Status**同時実行プログラム。 送信ポートでアクションを指定することも必要があります。 ポートを作成する方法については、次を参照してください。 [、Oracle E-business アダプターを物理ポート バインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-ebs/manually-configure-a-physical-port-binding-to-the-oracle-e-business-adapter.md)します。  
+  - 2 つの物理 WCF カスタム定義または送信ポートの Wcf-oracleebs: を実行する Oracle E-business Suite にメッセージを送信する 1 つ、**顧客インターフェイス**同時実行プログラムおよび実行する、その他の**Get_Status**同時実行プログラム。 送信ポートでアクションを指定することも必要があります。 ポートを作成する方法については、[、Oracle E-business アダプターを物理ポート バインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-ebs/manually-configure-a-physical-port-binding-to-the-oracle-e-business-adapter.md)を参照してください。  
 
      使用して同時実行プログラムを呼び出す、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]操作が呼び出される適切なアプリケーションのコンテキストを設定する必要があります。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーション コンテキストのいずれかの操作を指定するには、特定のバインド プロパティを提供します。 同時実行プログラムを起動するために使用する Wcf-custom または Wcf-oracleebs ポートでは、これらのバインド プロパティを設定する必要があります。  
 
@@ -193,16 +193,16 @@ Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResp
 
     - 場合、 **ClientCredentialType**に設定されているプロパティのバインド**EBusiness**、する必要がありますを指定していない Oracle E-business 資格情報の接続を確立中にします。 このような場合、値を指定する必要がありますのみ、 **OracleEBSResponsibilityName**プロパティをバインドします。  
 
-      異なるバインディング プロパティの詳細については、次を参照してください。[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。 アダプターがアプリケーションのコンテキストの設定がサポートする方法の詳細については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
+      異なるバインディング プロパティの詳細については、[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。 アダプターがアプリケーションのコンテキストの設定がサポートする方法の詳細については、[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)を参照してください。  
 
     > [!NOTE]
-    >  アプリケーションのコンテキストを設定するには、バインドのプロパティを指定するか、メッセージによって公開されるコンテキスト プロパティを設定して、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 バインドのプロパティを設定する方法については、次を参照してください。 [for Oracle E-business Suite のバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-binding-properties-for-oracle-e-business-suite.md)します。 メッセージ コンテキスト プロパティを使用して、アプリケーションのコンテキストを設定する方法については、次を参照してください。 [Oracle E-business Suite でのアプリケーション コンテキストを使用してメッセージのコンテキスト プロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-application-context-using-message-context-properties-in-oracle-ebs.md)します。  
+    >  アプリケーションのコンテキストを設定するには、バインドのプロパティを指定するか、メッセージによって公開されるコンテキスト プロパティを設定して、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 バインドのプロパティを設定する方法については、[for Oracle E-business Suite のバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-binding-properties-for-oracle-e-business-suite.md)を参照してください。 メッセージ コンテキスト プロパティを使用して、アプリケーションのコンテキストを設定する方法については、[Oracle E-business Suite でのアプリケーション コンテキストを使用してメッセージのコンテキスト プロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-application-context-using-message-context-properties-in-oracle-ebs.md)を参照してください。  
     > 
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 このバインド ファイルをインポートすることができます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール (発信) の送信ポートを作成したり (着信) 用のポートを受信します。 詳細については、次を参照してください。 [Oracle E-business Suite へのポートのバインド ファイルを物理ポートのバインドを使用して、を構成](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-ebs.md)します。  
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 このバインド ファイルをインポートすることができます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール (発信) の送信ポートを作成したり (着信) 用のポートを受信します。 詳細については、[Oracle E-business Suite へのポートのバインド ファイルを物理ポートのバインドを使用して、を構成](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-ebs.md)を参照してください。  
 
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- 同時実行プログラムを呼び出す前に、BizTalk アプリケーションを開始する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。  
+ 同時実行プログラムを呼び出す前に、BizTalk アプリケーションを開始する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。  
 
  この段階で、ことを確認します。  
 
@@ -255,7 +255,7 @@ Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResp
 ```  
 
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後、ファイルから構成設定をインポートすると、項目がなどの送信ポートと、同じオーケストレーション用のポートを受信できるように、作成する必要はありません。 バインド ファイルの詳細については、次を参照してください。 [Oracle E-business suite アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-oracle-ebs/reuse-adapter-bindings-with-oracle-e-business-suite.md)します。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後、ファイルから構成設定をインポートすると、項目がなどの送信ポートと、同じオーケストレーション用のポートを受信できるように、作成する必要はありません。 バインド ファイルの詳細については、[Oracle E-business suite アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-oracle-ebs/reuse-adapter-bindings-with-oracle-e-business-suite.md)を参照してください。  
 
 ## <a name="see-also"></a>参照  
 [Oracle E-business Suite アダプターを使用して BizTalk アプリケーションを開発します。](../../adapters-and-accelerators/adapter-oracle-ebs/develop-biztalk-applications-using-the-oracle-e-business-suite-adapter.md)

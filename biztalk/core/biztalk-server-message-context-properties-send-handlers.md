@@ -43,7 +43,7 @@ BizTalk Server オーケストレーションの実行時には、メッセー�
    (Rendezvous.ReplySubject);  
    ```  
    ## <a name="management-assembly"></a>アセンブリの管理
-   TIBCO Rendezvous はメタデータ リポジトリを備えておらず、Microsoft BizTalk Adapter for TIBCO Rendezvous 管理アセンブリは参照機能またはスキーマ生成機能を備えていません。 したがって、ユーザーがスキーマを BizTalk Server に提供する必要があります。 詳細については、次を参照してください。[インストール、スキーマ、および制限事項](../core/installing-biztalk-adapter-for-tibco-rendezvous.md)します。
+   TIBCO Rendezvous はメタデータ リポジトリを備えておらず、Microsoft BizTalk Adapter for TIBCO Rendezvous 管理アセンブリは参照機能またはスキーマ生成機能を備えていません。 したがって、ユーザーがスキーマを BizTalk Server に提供する必要があります。 詳細については、[インストール、スキーマ、および制限事項](../core/installing-biztalk-adapter-for-tibco-rendezvous.md)を参照してください。
   
    BizTalk Adapter for TIBCO Rendezvous には定義済みの型のスキーマが含まれます。 アダプターは、一部の特定のデータ型 (配列) のメッセージを生成するときに、これらの型を使用します。
 

@@ -61,22 +61,22 @@ BizTalk Server は、4 つのエンコード標準のデザインと実行時サ
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、HIPAA 固有の追加サポートを提供します。  
   
-- バージョン 4010A1 HIPAA ドキュメント スキーマのセット。 BizTalk Server での EDI および HIPAA ドキュメント スキーマの詳細については、次を参照してください。 [EDI ドキュメント スキーマ](../core/edi-document-schemas.md)します。  
+- バージョン 4010A1 HIPAA ドキュメント スキーマのセット。 BizTalk Server での EDI および HIPAA ドキュメント スキーマの詳細については、[EDI ドキュメント スキーマ](../core/edi-document-schemas.md)を参照してください。  
   
-- バージョン 5010 HIPAA ドキュメント スキーマのセット。 詳細については、次を参照してください。 [HIPAA ドキュメント スキーマ バージョン 5010](../core/hipaa-document-schema-version-5010.md)します。  
+- バージョン 5010 HIPAA ドキュメント スキーマのセット。 詳細については、[HIPAA ドキュメント スキーマ バージョン 5010](../core/hipaa-document-schema-version-5010.md)を参照してください。  
   
-- HIPAA サブドキュメントの分割。 詳細については、次を参照してください。 [HIPAA サブドキュメントの分割](../core/splitting-hipaa-subdocuments.md)します。  
+- HIPAA サブドキュメントの分割。 詳細については、[HIPAA サブドキュメントの分割](../core/splitting-hipaa-subdocuments.md)を参照してください。  
   
 - WEDI SNIP テストの最初の 2 つのレベルのサポート: X12 構文整合性およびの要件、 [HIPAA 実装ガイド](http://go.microsoft.com/fwlink/?LinkId=77541)します。  
   
-  BizTalk Server は、ネイティブの BizTalk Server の EDI 機能の一部として HIPAA サポートを提供します。 詳細については、次を参照してください。 [BizTalk Server における EDI のサポート](../core/edi-support-in-biztalk-server2.md)します。  
+  BizTalk Server は、ネイティブの BizTalk Server の EDI 機能の一部として HIPAA サポートを提供します。 詳細については、[BizTalk Server における EDI のサポート](../core/edi-support-in-biztalk-server2.md)を参照してください。  
   
 ## <a name="eancom"></a>EANCOM  
  BizTalk Server は、EDIFACT 処理をサポートし、EANCOM 処理は、EDIFACT 処理の派生クラスであるために、BizTalk Server では、EANCOM 処理をサポートしています。 このドキュメントで EDIFACT 処理のサポートについて記載されていれば、それは EANCOM 処理にも当てはまります。  
   
  BizTalk Server は、EANCOM 固有の追加サポートを提供します。  
   
--   バージョン EAN94、EAN97、および EAN02 EANCOM ドキュメント スキーマのセット。 BizTalk Server での EDI および EANCOM ドキュメント スキーマの詳細については、次を参照してください。 [EDI ドキュメント スキーマ](../core/edi-document-schemas.md)します。  
+-   バージョン EAN94、EAN97、および EAN02 EANCOM ドキュメント スキーマのセット。 BizTalk Server での EDI および EANCOM ドキュメント スキーマの詳細については、[EDI ドキュメント スキーマ](../core/edi-document-schemas.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [EDI メッセージの構造](../core/edi-message-structure.md)   

@@ -25,9 +25,9 @@ ms.locfileid: "36968323"
 ## <a name="envelope-service-schemas"></a>エンベロープ サービス スキーマ  
  EDI インターチェンジのエンベロープ内にあるインターチェンジ、グループ、およびトランザクション セット ヘッダーおよびトレーラーの検証には、サービス スキーマ X12ServiceSchema および EdifactServiceSchema が使用されます。 すべての EDI インターチェンジ (バッチ処理されていないインターチェンジ、分割対象のバッチ処理済みインターチェンジ、保存対象のバッチ処理済みインターチェンジ) が、これらのサービス スキーマにより検証されます。 これらのスキーマの名前空間は http://schemas.microsoft.com/Edi/X12ServiceSchema と http://schemas.microsoft.com/Edi/EdifactServiceSchema します。  
 
- EDI インターチェンジが保存されたバッチ インターチェンジの場合、サービス スキーマに加えて、バッチ スキーマ X12_BatchSchema および Edifact_BatchSchema が BizTalk ランタイムにより使用されます。 詳細については、次を参照してください。 [EDI のバッチ スキーマ](../core/edi-batch-schemas.md)します。  
+ EDI インターチェンジが保存されたバッチ インターチェンジの場合、サービス スキーマに加えて、バッチ スキーマ X12_BatchSchema および Edifact_BatchSchema が BizTalk ランタイムにより使用されます。 詳細については、[EDI のバッチ スキーマ](../core/edi-batch-schemas.md)を参照してください。  
 
- これらのスキーマの ID フィールドの列挙をカスタマイズできます。 その他の変更は許可されていません。 詳細については、次を参照してください。[エンベロープ スキーマで列挙型をカスタマイズする](../core/customizing-enumerations-in-the-envelope-schema.md)します。  
+ これらのスキーマの ID フィールドの列挙をカスタマイズできます。 その他の変更は許可されていません。 詳細については、[エンベロープ スキーマで列挙型をカスタマイズする](../core/customizing-enumerations-in-the-envelope-schema.md)を参照してください。  
 
 ## <a name="acknowledgment-control-schemas"></a>受信確認管理スキーマ  
  EDI 受信パイプラインは、受信確認スキーマを使用して、送信する受信確認を生成します。EDI 送信パイプラインは、受信確認スキーマを使用して、受信した受信確認を処理します。 これらのスキーマには、次の表に示されているように、997 機能確認スキーマ、X12 エンコード用の TA1 インターチェンジ受信確認スキーマ、EDIFACT エンコード用の CONTRL スキーマなどがあります。 これらのスキーマは変更できません。  

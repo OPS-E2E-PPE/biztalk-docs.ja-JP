@@ -152,7 +152,7 @@ PartyResolution サンプルは、パーティの解決で BizTalk オーケス�
 ## <a name="building-and-initializing-this-sample"></a>このサンプルのビルドと初期化  
 
 > [!NOTE]
->  このサンプルをビルドおよび初期化する前に、既定の BizTalk インプロセス ホストが、信頼されている認証として構成されていることを確認する必要があります。 詳細については、次を参照してください。 [BizTalk Server ランタイムのセキュリティに関する推奨事項](../core/biztalk-server-runtime-security-recommendations.md)します。  
+>  このサンプルをビルドおよび初期化する前に、既定の BizTalk インプロセス ホストが、信頼されている認証として構成されていることを確認する必要があります。 詳細については、[BizTalk Server ランタイムのセキュリティに関する推奨事項](../core/biztalk-server-runtime-security-recommendations.md)を参照してください。  
 
  MIME パイプライン コンポーネントは 64 ビット ホスト インスタンスではサポートされていません。 ファイル アダプターの送信および受信ハンドラーと関連付けられているホストを、32 ビット専用ホストとして構成する必要があります。 この参照の詳細については[ホスト プロパティを変更する方法](../core/how-to-modify-host-properties.md)します。 既にしている場合、システムで構成されている 32 ビット専用ホストを参照してください、それを使用する[ファイル アダプタ構成](../core/configure-the-file-adapter.md)ファイル アダプターの関連付けられているホストを構成する手順については、送信および受信ハンドラー。  
 

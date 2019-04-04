@@ -28,7 +28,7 @@ CBR サンプルの使用例、 **ExplorerOM**管理オブジェクトを追加�
 
 - このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
 
-- Windows PowerShell スクリプトの例を実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、次を参照してください。:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)します。  
+- Windows PowerShell スクリプトの例を実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)を参照してください。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルで管理オブジェクトを使用して、 **Microsoft.BizTalk.ExplorerOM** CBRApplication サンプルに 2 つの新しいポートを追加する名前空間。 これらの新しいポートは、CBRApplication のサンプル ポートです。 これらのポートは、HTTP アダプターを使用してメッセージを仮の HTTP Web サービス アドレスにルーティングするように構成されます。 このサンプルでは、 **ExplorerOM** オブジェクトを使用して次の操作を実行する方法を示します。  

@@ -28,7 +28,7 @@ BizTalk Server アプリケーション サービスと共にインストール�
  ハードウェア クラスタ リングが高くなります。 高可用性ソリューションのハードウェア リソースを減らすためには、マスター シークレット サーバーを追加でクラスター リソースとして、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース クラスター。 使用する場合、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース クラスターでは、メッセージ ボックス データベースと同じアクティブなノードでマスター シークレット サーバーに配置しないことお勧めします。 メッセージ ボックス データベースは、他のデータベースよりも通常はビジー状態です。 マスター シークレット サーバーが多くのハードウェア リソースを使用しない場合でも、メッセージ ボックス データベースのアクティブ ノードから別のアクティブなクラスター ノードに移動することをお勧めします。  
   
 ### <a name="clustering-the-sso-database"></a>SSO データベースをクラスタ リング  
- マスター シークレット サーバーは、SSO データベースに依存します。 高可用性 SSO をビルドするには、SSO データベースをクラスター化する必要があります。 BizTalk データベースをクラスタ リングの詳細については、次を参照してください。 [、BizTalk Server Databases2 をクラスタ リング](../technical-guides/clustering-the-biztalk-server-databases2.md)します。  
+ マスター シークレット サーバーは、SSO データベースに依存します。 高可用性 SSO をビルドするには、SSO データベースをクラスター化する必要があります。 BizTalk データベースをクラスタ リングの詳細については、[、BizTalk Server Databases2 をクラスタ リング](../technical-guides/clustering-the-biztalk-server-databases2.md)を参照してください。  
   
 ### <a name="creating-domain-groups-and-accounts"></a>ドメイン グループおよびアカウントの作成  
  マスター シークレット サーバーをクラスター化する前に、次のドメイン グループおよびアカウントを構成する必要があります。  

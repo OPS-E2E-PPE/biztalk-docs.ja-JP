@@ -30,4 +30,4 @@ ESB 例外管理フレームワークでは、BizTalk Server 環境内で発生�
   
 - <strong>BAM の追跡のパイプライン コンポーネント。</strong>このコンポーネントをインターセプトし、BizTalk Server BAM サブシステム内での例外情報を記録し、例外管理フレームワーク内で例外フォールト プロセッサ パイプラインで排他的に使用します。 提供される[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]省略可能な追跡機能と例外についての BAM の使用方法を示すサンプルに示します。  
   
-  例外管理フレームワークの詳細については、次を参照してください。 [ESB 例外管理を使用して](../esb-toolkit/using-esb-exception-management.md)します。
+  例外管理フレームワークの詳細については、[ESB 例外管理を使用して](../esb-toolkit/using-esb-exception-management.md)を参照してください。

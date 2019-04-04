@@ -281,7 +281,7 @@ BizTalk Server には SQL Server が必要です。 SQL Server は、BizTalk と
 > - BizTalk Server SDK の全機能を使用する場合や、Visual Studio から BizTalk Server アプリケーションを展開する場合には、SQL Server 開発ツールをインストールします。
 > - BizTalk Server では、バイナリ照合順序を除く、大文字と小文字を区別する/区別しないすべての SQL Server 照合順序がサポートされています。 バイナリ照合順序はサポートされません。
 
-**特定のインストール手順については、次を参照してください。** [SQL Server 2016 のインストール](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup)または[SQL Server 2014 のインストール](https://msdn.microsoft.com/library/bb500469(v=sql.120).aspx)します。
+**特定のインストール手順については、** [SQL Server 2016 のインストール](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup)または[SQL Server 2014 のインストール](https://msdn.microsoft.com/library/bb500469(v=sql.120).aspx)を参照してください。
 
 1. SQL Server のインストールを開始します。 
 2. 機能セットアップ中に、以下の項目を選択します。
@@ -327,7 +327,7 @@ BAM 警告を使用する場合、BizTalk Server には、SQL Server Database Ma
 > - SMTP サーバーのサーバー名と TCP ポート番号を知っている必要があります。 この同じコンピューターでは IIS と SMTP サーバーをインストールした場合、ローカル SMTP サーバーを使用します。 SMTP サーバーが認証を必要とする場合、ユーザー名とパスワードを用意します。
 > - BAM ポータルと BAM 警告は別々の機能です。 BAM 警告を使用している場合、SQL Server Database Mail が必要です。 BAM 警告を使用していない場合、SQL Server Database Mail は必要ありません。
 
-**特定の構成手順については、次を参照してください。**: 構成[SQL Server 2016 Database Mail](https://docs.microsoft.com/sql/relational-databases/database-mail/configure-database-mail)または[SQL Server 2014 Database Mail](https://msdn.microsoft.com/library/hh245116(v=sql.120).aspx)します。
+**特定の構成手順については、**: 構成[SQL Server 2016 Database Mail](https://docs.microsoft.com/sql/relational-databases/database-mail/configure-database-mail)または[SQL Server 2014 Database Mail](https://msdn.microsoft.com/library/hh245116(v=sql.120).aspx)を参照してください。
 
    
 テスト メールを送信するには: 

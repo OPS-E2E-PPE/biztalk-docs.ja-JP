@@ -23,7 +23,7 @@ ms.locfileid: "36986603"
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成し、静的送信ポートを経由して AS2 メッセージを送信する方法について説明します。 この構成作業では、静的送信ポートを作成し、アグリーメントを構成します。 必要に応じて、送信ポートで使用される暗号化証明書のセットアップも行います。  
   
 > [!NOTE]
->  静的送信ポートの代わりに、動的送信ポートを構成して AS2 メッセージを送信することもできます。 詳細については、次を参照してください。 [AS2 経由でメッセージを動的送信ポートを構成する](../core/configuring-a-dynamic-send-port-for-messages-over-as2.md)します。  
+>  静的送信ポートの代わりに、動的送信ポートを構成して AS2 メッセージを送信することもできます。 詳細については、[AS2 経由でメッセージを動的送信ポートを構成する](../core/configuring-a-dynamic-send-port-for-messages-over-as2.md)を参照してください。  
   
  EDI メッセージまたは非 EDI メッセージを持つ AS2 メッセージや EDI 受信確認を送信するには、次のように構成された送信請求 - 応答の HTTP 送信ポートを作成します。  
   
@@ -71,11 +71,11 @@ ms.locfileid: "36986603"
   
 -   非 EDI メッセージを送信する場合は、別のフィルタを使用してメッセージを取得します。  
   
--   AS2 メッセージを構築します。 このプロセスの詳細については、次を参照してください。[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)します。  
+-   AS2 メッセージを構築します。 このプロセスの詳細については、[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)を参照してください。  
   
 -   メッセージや受信確認を送信ポートの送信先 URL に送信します。  
   
--   メッセージや受信確認への MDN 応答を受信します (有効になっている場合)。 このプロセスの詳細については、次を参照してください。[受信 MDN の処理](../core/processing-an-incoming-mdn.md)します。  
+-   メッセージや受信確認への MDN 応答を受信します (有効になっている場合)。 このプロセスの詳細については、[受信 MDN の処理](../core/processing-an-incoming-mdn.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [AS2 ソリューションのポートを構成します。](../core/configuring-ports-for-an-as2-solution.md)   

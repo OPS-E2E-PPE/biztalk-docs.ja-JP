@@ -24,7 +24,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36997203"
 ---
 # <a name="how-to-export-bindings-for-a-biztalk-group"></a>BizTalk グループのバインドをエクスポートする方法
-このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、.xml ファイルに BizTalk グループのバインドをエクスポートする方法について説明します。 」の説明に従って、BizTalk グループまたはアプリケーションにこれらのバインドにインポートすること、できます[を BizTalk グループにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-group.md)と[BizTalk アプリケーションにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-application.md)。 バインド ファイルの使用についての詳細については、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)します。  
+このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、.xml ファイルに BizTalk グループのバインドをエクスポートする方法について説明します。 」の説明に従って、BizTalk グループまたはアプリケーションにこれらのバインドにインポートすること、できます[を BizTalk グループにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-group.md)と[BizTalk アプリケーションにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-application.md)。 バインド ファイルの使用についての詳細については、[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)を参照してください。  
   
 > [!NOTE]
 >  グループのバインドをエクスポートすると、オプションが指定されているかどうかに関係なく、常にグローバル パーティ情報がエクスポートされます。  

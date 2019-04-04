@@ -53,7 +53,7 @@ Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentv
   
 - **0A1 アグリーメント**プロパティ設定する取引先パートナー アグリーメントで**非 0A1**  
   
-  詳細については、次を参照してください。[を CIDX eStandards メッセージ交換](../../adapters-and-accelerators/accelerator-rosettanet/setting-up-cidx-estandards-message-exchange.md)します。  
+  詳細については、[を CIDX eStandards メッセージ交換](../../adapters-and-accelerators/accelerator-rosettanet/setting-up-cidx-estandards-message-exchange.md)を参照してください。  
   
 ## <a name="creating-a-cidx-agreement"></a>CIDX アグリーメントの作成  
  CIDX eStandards メッセージ交換を設定するには、次のプロパティを持つアグリーメントを作成する必要があります。  
@@ -62,7 +62,7 @@ Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentv
   
 - **0A1 アグリーメント**プロパティに設定するアグリーメントの設定で**非 0A1**  
   
-  詳細については、次を参照してください。[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)します。  
+  詳細については、[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)を参照してください。  
   
 ## <a name="applying-a-pip-for-cidx"></a>CIDX 用 PIP の適用  
  PIP を CIDX 実装に適用するには、設定、**標準**にプロセス構成プロファイルのプロパティ**CIDX**します。 完了したら後の値を入力できるが、**メッセージ標準**、**標準バージョン**、および**ペイロードのバインド ID**します。 これらの値は CIDX Chem eStandards の仕様に含まれています。  

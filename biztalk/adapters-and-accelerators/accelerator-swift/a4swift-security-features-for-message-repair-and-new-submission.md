@@ -30,7 +30,7 @@ ms.locfileid: "36986043"
 ## <a name="infopath-forms"></a>InfoPath フォーム  
  を通じて、 [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] A4SWIFT、によってビジネス ユーザーが送信され、SWIFT を取得、FormGenerator ユーティリティで生成されたフォームとの間の受信トレイのメッセージし、送信トレイ用の実装でのセキュリティで保護された Windows SharePoint Services Web フォルダー。 [!INCLUDE[btsWinSharePointSvcsNoVersion](../../includes/btswinsharepointsvcsnoversion-md.md)] Web フォルダーのセキュリティは、Microsoft によって完全に提供される[!INCLUDE[btsWinSharePointSvcsNoVersion](../../includes/btswinsharepointsvcsnoversion-md.md)]ファイル システム アクセス制御リスト (Acl) を使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]認証、およびインターネット インフォメーション サービス (IIS) のセキュリティ機能。 間"の送信中にデータが保護されている[!INCLUDE[btsWinSharePointSvcsNoVersion](../../includes/btswinsharepointsvcsnoversion-md.md)]Web フォルダーと[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]で Secure Sockets Layer (SSL) と HTTPS トランスポート プロトコル。  
   
- A4SWIFT[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームが作成されると、「信頼されていない」。 このステータスは、最高レベルのセキュリティを提供します。 詳細については、信頼できる、信頼されていない、次を参照してください。 [InfoPath セキュリティ](../../adapters-and-accelerators/accelerator-swift/infopath-security.md)します。  
+ A4SWIFT[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームが作成されると、「信頼されていない」。 このステータスは、最高レベルのセキュリティを提供します。 詳細については、信頼できる、信頼されていない、[InfoPath セキュリティ](../../adapters-and-accelerators/accelerator-swift/infopath-security.md)を参照してください。  
   
 ## <a name="runtime-service"></a>ランタイム サービス  
  A4SWIFT ランタイムを提供します (BizTalk オーケストレーションとして実装された) サービスを認証するための検証、処理、および SharePoint Web フォルダー、メッセージの修復/エントリ オーケストレーション、バックエンド システムとの間、最終的に、SWIFT、SWIFT メッセージのルーティングネットワーク。 このランタイム サービスは、A4SWIFT Message Repair and New Submission と呼ばれます。  

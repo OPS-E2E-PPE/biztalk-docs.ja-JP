@@ -53,7 +53,7 @@ ms.locfileid: "36966355"
    >  選択できるだけの暗号化を使用しても場合 **[blobsign]** します。  
    > 
    > [!NOTE]
-   >  BizTalk グループにパイプラインを展開した後、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して送信パイプライン コンポーネントのプロパティを構成できます。 詳細については、次を参照してください。[送信ポートのインスタンスごとのパイプライン プロパティを構成する方法](../core/how-to-configure-per-instance-pipeline-properties-for-a-send-port.md)します。  
+   >  BizTalk グループにパイプラインを展開した後、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して送信パイプライン コンポーネントのプロパティを構成できます。 詳細については、[送信ポートのインスタンスごとのパイプライン プロパティを構成する方法](../core/how-to-configure-per-instance-pipeline-properties-for-a-send-port.md)を参照してください。  
    > 
    > [!NOTE]
    >  MIME/SMIME エンコーダー パイプライン コンポーネントは、暗号化とデジタル署名の両方を実行します (両方の機能を実行するように構成されている場合)。 したがって、暗号化および署名されたメッセージを送信するように [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成する場合は、同じ送信パイプラインを使用できます。 つまり、暗号化用とデジタル署名用に異なるパイプラインを作成する必要はありません。  
@@ -62,9 +62,9 @@ ms.locfileid: "36966355"
   
 ### <a name="to-configure-the-send-port-for-sending-signed-messages"></a>署名付きメッセージを送信するための送信ポートを構成するには  
   
-1.  前の手順で作成した BizTalk アセンブリを、送信する署名付きメッセージの受信場所を含む BizTalk アプリケーションに追加します。 BizTalk アセンブリを追加する方法の詳細については、次を参照してください。[アプリケーションに BizTalk アセンブリを追加する方法](../core/how-to-add-a-biztalk-assembly-to-an-application.md)します。  
+1.  前の手順で作成した BizTalk アセンブリを、送信する署名付きメッセージの受信場所を含む BizTalk アプリケーションに追加します。 BizTalk アセンブリを追加する方法の詳細については、[アプリケーションに BizTalk アセンブリを追加する方法](../core/how-to-add-a-biztalk-assembly-to-an-application.md)を参照してください。  
   
-2.  前の手順で作成した送信パイプラインを使用して、BizTalk アプリケーションの送信ポートを構成します。 送信ポートを構成する方法の詳細については、次を参照してください。[構成する送信ポートの作成と](../core/creating-and-configuring-send-ports.md)します。  
+2.  前の手順で作成した送信パイプラインを使用して、BizTalk アプリケーションの送信ポートを構成します。 送信ポートを構成する方法の詳細については、[構成する送信ポートの作成と](../core/creating-and-configuring-send-ports.md)を参照してください。  
   
 3.  BizTalk グループの構成でインストールした署名証明書で[デジタル署名用証明書をインストールする方法](../core/how-to-install-the-certificates-for-digital-signatures.md)します。 詳細については BizTalk グループを構成する方法[グループ プロパティを変更する方法](../core/how-to-modify-group-properties.md)します。  
   

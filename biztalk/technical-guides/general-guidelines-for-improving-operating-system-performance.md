@@ -72,7 +72,7 @@ ms.locfileid: "37007883"
     >  マスター ファイル テーブルを事前に割り当てて、サポート技術情報記事 961095 を参照してください[「Windows Vista および Windows Server 2008 で予約をゾーンのマスター ファイル テーブルについて」](http://go.microsoft.com/fwlink/?LinkID=204563) (http://go.microsoft.com/fwlink/?LinkID=204563)します。  
   
 ## <a name="if-antivirus-software-is-installed-on-the-sql-server-computer-disable-real-time-scanning-of-data-and-transaction-files"></a>SQL Server コンピューターのウイルス対策ソフトウェアがインストールされている場合、は、データとトランザクションのファイルのリアルタイム スキャンを無効にします。  
- (.Mdf、.ndf、.ldf、.mdb ファイル) の SQL Server データとトランザクション ファイルのリアルタイム スキャン、ディスク I/O の競合が増加し、SQL Server のパフォーマンスが低下することができます。 SQL Server のデータとトランザクションのファイルの名前は、BizTalk Server 環境間で異なる場合がありますに注意してください。 既定の BizTalk Server 構成で作成されたデータとトランザクションのファイルの詳細については、次を参照してください。 [、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)します。  
+ (.Mdf、.ndf、.ldf、.mdb ファイル) の SQL Server データとトランザクション ファイルのリアルタイム スキャン、ディスク I/O の競合が増加し、SQL Server のパフォーマンスが低下することができます。 SQL Server のデータとトランザクションのファイルの名前は、BizTalk Server 環境間で異なる場合がありますに注意してください。 既定の BizTalk Server 構成で作成されたデータとトランザクションのファイルの詳細については、[、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)を参照してください。  
   
 ## <a name="configure-msdtc-for-biztalk-server-and-sql-server"></a>BizTalk Server と SQL Server の MSDTC を構成します。  
  SQL Server と BizTalk Server 間のトランザクションを促進するには、Microsoft 分散トランザクション コーディネーター (MSDTC) を有効にする必要があります。  
@@ -154,7 +154,7 @@ ms.locfileid: "37007883"
  割り込みアフィニティ ポリシー (IntPolicy) は、特定のプロセッサまたはマルチプロセッサのコンピューター上のプロセッサを使用すると、「バインド」または (ネットワーク アダプター) などの特定のデバイスの割り込みの CPU 関係を変更するツールです。 このバインディングは、パーティション分割とも呼ばれます。 特定のネットワーク アダプターからの割り込みをマルチプロセッサ コンピューターで特定のプロセッサをバインドでは、実行中の遅延プロシージャ呼び出し (Dpc) と指定されたプロセッサ上のネットワーク アダプターの割り込みサービス ルーチン (Isr) を適用します。 割り込みアフィニティをシングル プロセッサ コンピューターで構成できないことに注意してください。  
   
 > [!NOTE]  
->  DPC は、キューに置かれた後で通常実行されるカーネル モード関数呼び出しとして定義されます。 ISR は、その目的は、割り込みを生成するときに、デバイスをサービス ルーチンとして定義されます。 遅延プロシージャ呼び出しと割り込みサービス ルーチンの詳細については、次を参照してください。、 [Windows Driver Kit ドキュメント](http://go.microsoft.com/fwlink/?LinkId=84418)(http://go.microsoft.com/fwlink/?LinkId=84418)します。  
+>  DPC は、キューに置かれた後で通常実行されるカーネル モード関数呼び出しとして定義されます。 ISR は、その目的は、割り込みを生成するときに、デバイスをサービス ルーチンとして定義されます。 遅延プロシージャ呼び出しと割り込みサービス ルーチンの詳細については、、 [Windows Driver Kit ドキュメント](http://go.microsoft.com/fwlink/?LinkId=84418)(http://go.microsoft.com/fwlink/?LinkId=84418)を参照してください。  
   
  ![割り込み&#45;アフィニティ ポリシー ツール](../technical-guides/media/interrupt-affinitypolicytool.gif "割り込み AffinityPolicyTool")  
 Interrupt-Affinity Policy ツール  
@@ -289,7 +289,7 @@ Windows Server 2008 は、プリエンプティブなマルチタスクを使用
 ## <a name="synchronize-time-on-all-servers"></a>すべてのサーバー上の時刻を同期します。  
  チケットに関連する多くの操作では、配信確認メッセージとログ記録は、正確なされているローカル システム クロックに依存します。 これはシステムの間に不一致がログを同期または期限切れとして別に拒否される 1 つのシステムによって発行されたチケットを発生可能性があります、分散環境で特にまたは有効化されていません。  
   
- 時刻を自動的に同期するサーバーの設定の詳細については、次を参照してください。[自動ドメイン時刻の同期用のクライアント コンピューターを構成](http://go.microsoft.com/fwlink/?LinkId=99420)(http://go.microsoft.com/fwlink/?LinkId=99420)します。  
+ 時刻を自動的に同期するサーバーの設定の詳細については、[自動ドメイン時刻の同期用のクライアント コンピューターを構成](http://go.microsoft.com/fwlink/?LinkId=99420)(http://go.microsoft.com/fwlink/?LinkId=99420)を参照してください。  
   
 ## <a name="configure-the-windows-pagefile-for-optimal-performance"></a>最適なパフォーマンス、Windows ページファイルを構成します。  
  最適なパフォーマンスには、Windows ページファイル (ページング ファイル) を構成する次のガイドラインに従います。  

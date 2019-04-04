@@ -57,7 +57,7 @@ ms.locfileid: "37003075"
 - このソリューションは、EDIFACT エンコードではなく X12 エンコードを使用するインターチェンジを対象に設計されています。  
 
   > [!NOTE]
-  >  HIPAA に使用される構成は、X12 エンコードに使用される構成によく似ています。 EDIFACT の場合、同様のソリューションを作成する方法については、次を参照してください。[チュートリアル (EDIFACT): EDI インターチェンジの受信と送信、受信確認を返す](../core/walkthrough-edifact--receive-edi-interchanges-and-send-an-acknowledgement.md)します。  
+  >  HIPAA に使用される構成は、X12 エンコードに使用される構成によく似ています。 EDIFACT の場合、同様のソリューションを作成する方法については、[チュートリアル (EDIFACT): EDI インターチェンジの受信と送信、受信確認を返す](../core/walkthrough-edifact--receive-edi-interchanges-and-send-an-acknowledgement.md)を参照してください。  
 
 - EDI の種類の検証および拡張された検証は、受信インターチェンジに対して実行されます。  
 
@@ -66,7 +66,7 @@ ms.locfileid: "37003075"
 - このソリューションでは、トランスポートの種類が FILE である一方向の受信場所が使用されます。  
 
   > [!NOTE]
-  >  双方向の送信請求応答の受信ポートと受信場所を使用してメッセージを受信できますが、この方法で受信する場合、種類が FILE のトランスポートは受信場所に対して使用できません。 詳細については、次を参照してください。[受信確認と EDI メッセージを受信するポートの構成](../core/configuring-a-port-to-receive-edi-messages-and-acknowledgments.md)します。  
+  >  双方向の送信請求応答の受信ポートと受信場所を使用してメッセージを受信できますが、この方法で受信する場合、種類が FILE のトランスポートは受信場所に対して使用できません。 詳細については、[受信確認と EDI メッセージを受信するポートの構成](../core/configuring-a-port-to-receive-edi-messages-and-acknowledgments.md)を参照してください。  
 
 - EDI レポートが有効になり、インターチェンジの状態レポートに表示するトランザクション セットが保存されます。  
 
@@ -107,7 +107,7 @@ ms.locfileid: "37003075"
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk プロジェクトを作成するか、開きます。  
 
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
 
 2. プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の**します。 スキーマが [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI にあるフォルダーに移動し、スキーマをダブルクリックします。  
 
@@ -204,7 +204,7 @@ ms.locfileid: "37003075"
 
 7. **送信パイプライン**、 **EdiSend**します。  
 
-8. コンソール ツリーで、選択**フィルター**します。 TA1 受信確認をサブスクライブするフィルターを入力します。 たとえば、**プロパティ**、入力**BTS します。MessageType**は**演算子**、入力**==**; と**値**受信確認の場合、たとえば、スキーマを入力http://schemas.microsoft.com/Edi/X12#X12_TA1_Root.  
+8. コンソール ツリーで、選択**フィルター**します。 TA1 受信確認をサブスクライブするフィルターを入力します。 たとえば、**プロパティ**、入力**BTS します。MessageType**は**演算子**、入力**==**; と**値**受信確認の場合、たとえば、スキーマを入力 http://schemas.microsoft.com/Edi/X12#X12_TA1_Root.  
 
 9. **[OK]** をクリックします。  
 

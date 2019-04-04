@@ -38,4 +38,4 @@ ms.locfileid: "37019666"
 ## <a name="user-action"></a>ユーザーの操作  
  MSDTC がリモート操作用に正しく構成されていることを確認してください。詳細については、指定されたコンピューターのイベント ログを確認してください。  
   
- MSDTC の問題に関するヘルプは、次を参照してください。 [MSDTC を使用した問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)します。
+ MSDTC の問題に関するヘルプは、[MSDTC を使用した問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)を参照してください。

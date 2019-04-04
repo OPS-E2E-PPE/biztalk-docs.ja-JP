@@ -35,7 +35,7 @@ ms.locfileid: "36990307"
   
 - MessageUpdater  
   
-  このパイプラインでは、このパイプラインでのメッセージ フローのコンポーネントに関する詳細については、次を参照してください。 [BTARN 受信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/btarn-receive-pipeline.md)します。  
+  このパイプラインでは、このパイプラインでのメッセージ フローのコンポーネントに関する詳細については、[BTARN 受信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/btarn-receive-pipeline.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [パイプラインのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/pipeline-samples.md)   

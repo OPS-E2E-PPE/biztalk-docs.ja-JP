@@ -22,7 +22,7 @@ ms.locfileid: "37003139"
 # <a name="update-references-to-the-bam-primary-import-database-name-and-connection-string"></a>BAM プライマリ インポート データベース名および接続文字列への参照を更新します。
 BAMPrimaryImport データベースをバックアップしておくと、システムまたはデータに障害が発生したときに、別のコンピューターにバックアップを復元し、その名前を変更することができます。  
   
- BAM イベント バス サービスでは、イベント データをメッセージ ボックス データベースから BAMPrimaryImport データベースに移動します。 BAM イベント バス サービスには、予期しない障害が発生した場合にデータを失わずに復旧して再起動するためのフォールト トレランス ロジックが含まれています。 BAM イベント バス サービスの詳細については、次を参照してください。 [BAM イベント バス サービスの管理](../core/managing-the-bam-event-bus-service.md)します。  
+ BAM イベント バス サービスでは、イベント データをメッセージ ボックス データベースから BAMPrimaryImport データベースに移動します。 BAM イベント バス サービスには、予期しない障害が発生した場合にデータを失わずに復旧して再起動するためのフォールト トレランス ロジックが含まれています。 BAM イベント バス サービスの詳細については、[BAM イベント バス サービスの管理](../core/managing-the-bam-event-bus-service.md)を参照してください。  
   
  BAMPrimaryImport データベースを復元する手順を実行[、データベースを復元する方法](../core/how-to-restore-your-databases.md)します。 これらの手順を実行したうえで、次の手順を実行します (詳細な手順については後述)。  
   
@@ -129,7 +129,7 @@ BizTalk Server 管理者グループのメンバーとしてサインインし�
   
 12. すべての BAM キューブ更新およびデータ保守 DTS パッケージを有効にします。  
   
-13. すべての不完全なトレース インスタンスを解決するには、次を参照してください。[不完全なアクティビティ インスタンスの解決](../core/how-to-resolve-incomplete-activity-instances.md)します。  
+13. すべての不完全なトレース インスタンスを解決するには、[不完全なアクティビティ インスタンスの解決](../core/how-to-resolve-incomplete-activity-instances.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BAM のバックアップと復元](../core/backing-up-and-restoring-bam.md)

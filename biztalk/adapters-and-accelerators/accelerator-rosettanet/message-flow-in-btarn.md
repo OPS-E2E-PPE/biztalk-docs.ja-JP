@@ -23,7 +23,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37007819"
 ---
 # <a name="message-flow-in-btarn"></a>BTARN でのメッセージ フロー
-このセクションでは、イニシエーターとレスポンダー コンピューター、1 つの Microsoft から渡すことを介したメッセージの流れについて説明します[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]コンポーネントを別にします。 各 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] コンポーネントがメッセージを処理する方法については説明しません。 これらのプロセスの詳細については、次を参照してください。 [BTARN でのメッセージ処理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)します。  
+このセクションでは、イニシエーターとレスポンダー コンピューター、1 つの Microsoft から渡すことを介したメッセージの流れについて説明します[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]コンポーネントを別にします。 各 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] コンポーネントがメッセージを処理する方法については説明しません。 これらのプロセスの詳細については、[BTARN でのメッセージ処理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

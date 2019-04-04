@@ -78,9 +78,9 @@ ms.locfileid: "36987891"
 -   BizTalk Server 管理者グループまたは BizTalk Server Operators グループのメンバーであるアカウントでサインインします。 
 
 ### <a name="task-overview"></a>タスクの概要
-1. 受信場所を無効にし、アクティブな各アプリケーションの部分停止を実行することによってオーケストレーションと送信ポートを停止します。 アプリケーションの削除または再展開を行う場合は、完全停止を実行する必要があります。 詳細については、次を参照してください。 [BizTalk アプリケーション開始および停止方法](../core/how-to-start-and-stop-a-biztalk-application.md)します。  
+1. 受信場所を無効にし、アクティブな各アプリケーションの部分停止を実行することによってオーケストレーションと送信ポートを停止します。 アプリケーションの削除または再展開を行う場合は、完全停止を実行する必要があります。 詳細については、[BizTalk アプリケーション開始および停止方法](../core/how-to-start-and-stop-a-biztalk-application.md)を参照してください。  
   
-2. ホスト インスタンスを停止します。 詳細については、次を参照してください。[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)します。  
+2. ホスト インスタンスを停止します。 詳細については、[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)を参照してください。  
   
 3. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サービスをシャットダウンします。 参照してください**開始、停止、一時停止、再開、または BizTalk Server サービスを再起動する方法**(」を参照)。
   
@@ -88,11 +88,11 @@ ms.locfileid: "36987891"
   
     この手順の進め方は、使用している IIS のバージョンにより若干異なります。 IIS 6 では、アプリケーション プールと Web サイトを停止できます。 IIS 6 では、IIS Admin Service を停止して、アプリケーション プールと Web サイトを含むすべての IIS アクティビティをシャットダウンすることもできます。 IIS 7.0 は IIS 6.0 よりもモジュール化が進んでおり、1 つのスイッチですべての IIS 7.0 アクティビティを停止することはできないので、Web サイトとアプリケーション プールを個別に停止する必要があります。  
   
-    アプリケーション プールおよび仮想アプリケーション (Web サイトおよび Web サービス) BizTalk Server で使用されるの一覧は、次を参照してください。 [BizTalk Server の構成](../install-and-config-guides/configure-biztalk-server.md)します。  
+    アプリケーション プールおよび仮想アプリケーション (Web サイトおよび Web サービス) BizTalk Server で使用されるの一覧は、[BizTalk Server の構成](../install-and-config-guides/configure-biztalk-server.md)を参照してください。  
   
-   開始して、IIS アプリケーション プールを停止しています。 詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=140513](http://go.microsoft.com/fwlink/?LinkID=140513)します。  
+   開始して、IIS アプリケーション プールを停止しています。 詳細については、[ http://go.microsoft.com/fwlink/?LinkID=140513](http://go.microsoft.com/fwlink/?LinkID=140513)を参照してください。  
   
-   開始して、IIS で Web サーバーを停止する方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=140695](http://go.microsoft.com/fwlink/?LinkId=140695)します。  
+   開始して、IIS で Web サーバーを停止する方法については、[ http://go.microsoft.com/fwlink/?LinkId=140695](http://go.microsoft.com/fwlink/?LinkId=140695)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk アプリケーション開始および停止する方法](../core/how-to-start-and-stop-a-biztalk-application.md)   

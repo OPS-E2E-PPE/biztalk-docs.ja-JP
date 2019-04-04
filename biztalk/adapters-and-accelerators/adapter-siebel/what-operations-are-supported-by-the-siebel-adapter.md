@@ -30,7 +30,7 @@ ms.locfileid: "37004779"
   
 - WCF サービス モデルを使用します。  
   
-  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アプリケーションは、それを呼び出すことができ、アプリケーションで呼び出すことができます、さらに、操作を公開します。 これらの操作は、チャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。 メッセージの構造とそれぞれの操作に関連付けられている SOAP アクションについては、次を参照してください。[メッセージと BizTalk adapter for Siebel eBusiness Applications のメッセージ スキーマ](../../adapters-and-accelerators/adapter-siebel/messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)します。  
+  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アプリケーションは、それを呼び出すことができ、アプリケーションで呼び出すことができます、さらに、操作を公開します。 これらの操作は、チャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。 メッセージの構造とそれぞれの操作に関連付けられている SOAP アクションについては、[メッセージと BizTalk adapter for Siebel eBusiness Applications のメッセージ スキーマ](../../adapters-and-accelerators/adapter-siebel/messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)を参照してください。  
   
   このセクションで使用して Siebel システムでサポートされる操作に関する情報を提供する、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。  
   

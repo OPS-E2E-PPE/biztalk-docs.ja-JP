@@ -28,7 +28,7 @@ ExpenseReportSubmission サンプルは、Microsoft Excel などのリッチ ク
  リッチ クライアントを使用すると、データ検証、準備計算など多くのアクションをクライアント上で実行できます。 これによりバックエンド サーバーとの対話処理を最小限に抑えることができるので、低帯域幅接続しか使用できない場合に便利です。  
 
 ## <a name="prerequisites"></a>前提条件  
- 開発環境が構成済みで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Web サービスが利用可能になっていることを確認する必要があります。 詳細については、次を参照してください。 [Web サービスを有効にする](../core/enabling-web-services.md)します。  
+ 開発環境が構成済みで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Web サービスが利用可能になっていることを確認する必要があります。 詳細については、[Web サービスを有効にする](../core/enabling-web-services.md)を参照してください。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルでは、次の一連の手順で、経費報告書を Excel から [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に直接送信します。  
@@ -88,7 +88,7 @@ ExpenseReportSubmission サンプルは、Microsoft Excel などのリッチ ク
    - HTTP アドレスを、Excel ワークシートで想定されている場所に設定します。  
 
    > [!NOTE]
-   >  BizTalk ISAPI フィルターの詳細については、次を参照してください。 [IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)します。  
+   >  BizTalk ISAPI フィルターの詳細については、[IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)を参照してください。  
    > 
    > [!NOTE]
    >  このサンプルを実行する前に、ビルドと初期化のプロセス中に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でエラーが報告されていないことを確認する必要があります。  

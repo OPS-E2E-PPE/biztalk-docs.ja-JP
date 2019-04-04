@@ -217,4 +217,4 @@ ms.locfileid: "36980427"
   
 ## <a name="configure-a-wcf-custom-receive-location-with-an-ssl-certificate"></a>WCF カスタム SSL 証明書を使用して受信場所  
   
--   HTTP カーネル モード ドライバー (HTTP.sys) を使用する場合は、Wcf-custom 受信場所、 **httpsTransport** Secure Sockets Layer (SSL) 通信で、受信場所のバインド要素: 証明書が必要ですソケット (IP アドレスとポートの組み合わせ) ごとに登録します。 SSL 証明書をコンピューター上のポートにバインドするには、HttpCfg.exe ツールを使用します。 詳細については、次を参照してください。 [How To: SSL 証明書を使用して、ポート構成](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate)します。
+-   HTTP カーネル モード ドライバー (HTTP.sys) を使用する場合は、Wcf-custom 受信場所、 **httpsTransport** Secure Sockets Layer (SSL) 通信で、受信場所のバインド要素: 証明書が必要ですソケット (IP アドレスとポートの組み合わせ) ごとに登録します。 SSL 証明書をコンピューター上のポートにバインドするには、HttpCfg.exe ツールを使用します。 詳細については、[How To: SSL 証明書を使用して、ポート構成](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate)を参照してください。

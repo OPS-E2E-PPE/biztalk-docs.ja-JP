@@ -95,7 +95,7 @@ ms.locfileid: "36987139"
   
  アクティビティを 2 つのアクティビティに分割します。 2 つのアクティビティを関連付け、元のアクティビティに応答を関連付けます。  
   
- 関連するアクティビティに関する詳細については、次を参照してください。[アクティビティ リレーションシップ](../core/activity-relationships.md)します。  
+ 関連するアクティビティに関する詳細については、[アクティビティ リレーションシップ](../core/activity-relationships.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [Xml-data Reduced を参照してください。](../core/tracking-profile-editor.md)

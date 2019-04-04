@@ -36,7 +36,7 @@ ms.locfileid: "37022392"
   
 - 次のチュートリアルを完了する必要があります:[チュートリアル: モジュール 1 - Windows SharePoint Services アダプターでメッセージを送受信します。](../core/walkthrough-module-1--send-and-receive-messages-with-the-sharepoint-adapter.md)  
   
-  マルチ サーバー展開で、Windows SharePoint Services アダプターを使用する方法の詳細については、次を参照してください。[設定と、Windows SharePoint Services アダプターを展開する](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)します。  
+  マルチ サーバー展開で、Windows SharePoint Services アダプターを使用する方法の詳細については、[設定と、Windows SharePoint Services アダプターを展開する](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)を参照してください。  
   
 ## <a name="create-a-biztalk-project"></a>BizTalk プロジェクトの作成  
  ここでは、BizTalk エディターを使用して、空の BizTalk プロジェクトとスキーマを作成します。 これは、後で使用する InfoPath フォームのスキーマを作成するために必要な手順です。  

@@ -50,7 +50,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 4.  **ファイル名**ボックスで、ファイルの名前を入力し、クリックして**保存**します。  
   
     > [!IMPORTANT]
-    >  マップに次の名前を使用しないでください"XmlContent"、"SourceSchemas"、"TargetSchemas"、"XsltArgumentListContent"または。そのためのコンパイルで問題が発生、対応する .NET アセンブリで生成された c# コード。 問題とその解決方法については、次を参照してください。[マップのトラブルシューティング](../core/troubleshooting-maps.md)します。  
+    >  マップに次の名前を使用しないでください"XmlContent"、"SourceSchemas"、"TargetSchemas"、"XsltArgumentListContent"または。そのためのコンパイルで問題が発生、対応する .NET アセンブリで生成された c# コード。 問題とその解決方法については、[マップのトラブルシューティング](../core/troubleshooting-maps.md)を参照してください。  
   
 ### <a name="to-rename-a-map"></a>マップの名前を変更するには  
   

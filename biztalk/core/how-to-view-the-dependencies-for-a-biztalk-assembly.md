@@ -27,7 +27,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37001219"
 ---
 # <a name="how-to-view-the-dependencies-for-a-biztalk-assembly"></a>BizTalk アセンブリの依存関係を表示する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、BizTalk アセンブリに依存関係を持つアイテムの一覧を表示する方法について説明します。 依存関係とアプリケーションの配置への影響についての背景については、次を参照してください。[依存関係とアプリケーションの展開](../core/dependencies-and-application-deployment.md)します。  
+このトピックでは、BizTalk Server 管理コンソールを使用して、BizTalk アセンブリに依存関係を持つアイテムの一覧を表示する方法について説明します。 依存関係とアプリケーションの配置への影響についての背景については、[依存関係とアプリケーションの展開](../core/dependencies-and-application-deployment.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループまたは BizTalk Operators グループのメンバー アカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

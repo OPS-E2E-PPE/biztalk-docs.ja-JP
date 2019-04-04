@@ -84,7 +84,7 @@ Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/ad
       ```  
 
       > [!NOTE]
-      >  公開キーを確認する方法については、次を参照してください。[公開キーとバージョンを決定する](#BKMK_PubKey)します。  
+      >  公開キーを確認する方法については、[公開キーとバージョンを決定する](#BKMK_PubKey)を参照してください。  
 
 4. 登録する、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]:  
 
@@ -146,7 +146,7 @@ No valid adapters are installed on this machine
   >   
   >  たとえば、32 ビット アダプターが 64 ビットのオペレーティング システムを使用しているコンピューターで実行している場合アダプターのクライアント アプリケーションは 32 ビットとしてマークする必要があります。  
 
-   SAP クライアント Dll の詳細については、次を参照してください。 [Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)します。  
+   SAP クライアント Dll の詳細については、[Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)を参照してください。  
 
 ##  <a name="BKMK_SAPInvalidBinding"></a> SAP アダプターのポートを構成するときに無効なバインド エラー  
  **問題**  
@@ -177,7 +177,7 @@ Verify the binding extension is registered in machine.config."
   >   
   >  たとえば、32 ビット アダプターが 64 ビットのオペレーティング システムを使用しているコンピューターで実行している場合アダプターのクライアント アプリケーションは 32 ビットとしてマークする必要があります。  
 
-   SAP クライアント Dll の詳細については、次を参照してください。 [Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)します。
+   SAP クライアント Dll の詳細については、[Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)を参照してください。
 
 ## <a name="see-also"></a>参照  
 [SAP アダプターをトラブルシューティングします。](../../adapters-and-accelerators/adapter-sap/troubleshoot-the-sap-adapter.md)

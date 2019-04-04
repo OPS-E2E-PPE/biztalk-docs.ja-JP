@@ -25,7 +25,7 @@ ms.locfileid: "50752762"
 # <a name="authorization-and-non-repudiation-properties"></a>承認と否認不可プロパティ
 このトピックでは、PIP (Partner Interface Process) の `Is Authorization Required`、`Non-Repudiation of Origin and Content`、および `Non-Repudiation Required (Acknowledgement of Receipt)` プロパティの動作について説明します。 これについても説明します、これらのプロパティの組み合わせを Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]をサポートしています。  
 
- これらのプロパティを設定して、**アクティビティ**のプロセス構成設定のセクションでは、プロセス構成プロパティのタブ、[!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]管理コンソール。 詳細については、次を参照してください。[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)します。  
+ これらのプロパティを設定して、**アクティビティ**のプロセス構成設定のセクションでは、プロセス構成プロパティのタブ、[!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]管理コンソール。 詳細については、[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)を参照してください。  
 
 ## <a name="property-behavior"></a>プロパティの動作  
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、`Is Authorization Required`、`Non-Repudiation of Origin and Content`、および `Non-Repudiation Required (Acknowledgement of Receipt)` プロパティの設定に従って、次のように動作します。  

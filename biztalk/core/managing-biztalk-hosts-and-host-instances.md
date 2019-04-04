@@ -24,9 +24,9 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36983403"
 ---
 # <a name="managing-biztalk-hosts-and-host-instances"></a>BizTalk ホストとホスト インスタンスの管理
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホストとは、0 個以上の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 実行時プロセスの論理的セットです。アダプター ハンドラー、受信場所 (パイプラインを含む)、オーケストレーションなどの各種アイテムをここに展開します。 ホストの詳細については、次を参照してください。[ホスト](../core/hosts.md)します。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホストとは、0 個以上の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 実行時プロセスの論理的セットです。アダプター ハンドラー、受信場所 (パイプラインを含む)、オーケストレーションなどの各種アイテムをここに展開します。 ホストの詳細については、[ホスト](../core/hosts.md)を参照してください。  
   
- ホスト インスタンスとは、メッセージの処理や送受信を行うプロセスです。 ホスト インスタンスは、1 つ以上のホストがマップされており、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を稼働する各サーバーにインストールします。 ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)します。  
+ ホスト インスタンスとは、メッセージの処理や送受信を行うプロセスです。 ホスト インスタンスは、1 つ以上のホストがマップされており、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を稼働する各サーバーにインストールします。 ホスト インスタンスの詳細については、[ホスト インスタンス](../core/host-instances.md)を参照してください。  
   
  ホストの特性は、次のとおりです。  
   

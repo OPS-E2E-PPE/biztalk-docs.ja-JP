@@ -22,7 +22,7 @@ ms.locfileid: "37011979"
 # <a name="addresource-command-postprocessing-script"></a>AddResource コマンド: 処理後のスクリプト
 使用する BizTalk アプリケーションには、処理後のスクリプトを追加するには**AddResource**コマンドを指定**System.BizTalk:PostProcessingScript**型パラメーター。 このコマンドを実行すると、該当するスクリプト ファイルが BizTalk 管理データベースに追加されます。 スクリプト ファイルは、BizTalk 管理コンソール (追加先アプリケーションのリソース フォルダー) にも表示されます。 ファイルがさらに、使用すると表示、 [ListApp コマンド](../core/listapp-command.md)します。  
   
- 処理後のスクリプトは、アプリケーションのインポート後、インストール後、またはアンインストール前に、.msi ファイルから実行されます。 」の説明に従って、アプリケーションのインポートまたはインストールする前に、または、アンインストールの後の実行処理のスクリプトを追加する、BTSTask を使用することもできます。 [AddResource コマンド: 前処理スクリプト](../core/addresource-command-preprocessing-script.md)します。 前処理と後処理スクリプトの詳細については、次を参照してください。[アプリケーション展開のカスタマイズを前処理および後処理のスクリプトを使用して](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)します。  
+ 処理後のスクリプトは、アプリケーションのインポート後、インストール後、またはアンインストール前に、.msi ファイルから実行されます。 」の説明に従って、アプリケーションのインポートまたはインストールする前に、または、アンインストールの後の実行処理のスクリプトを追加する、BTSTask を使用することもできます。 [AddResource コマンド: 前処理スクリプト](../core/addresource-command-preprocessing-script.md)します。 前処理と後処理スクリプトの詳細については、[アプリケーション展開のカスタマイズを前処理および後処理のスクリプトを使用して](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)を参照してください。  
   
 ## <a name="usage"></a>使用方法  
  **BTSTask AddResource** [**/applicationname は:**<em>値</em>] **/Type:System.BizTalk:PostProcessingScript****[/Overwrite]****/Source:**<em>値</em>[**/Destination:**<em>値</em>] [**/Server:** <em>値</em>] [**/database:**<em>値</em>] [**/Property:Args ="**<em>引数リスト</em>**"**]  

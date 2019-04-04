@@ -51,7 +51,7 @@ ms.locfileid: "36979763"
   
 #### <a name="to-install-the-windows-sharepoint-services-adapter"></a>Windows SharePoint Services アダプターをインストールするには  
   
-1. インストール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)します。  
+1. インストール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、[BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)を参照してください。  
   
 2. **コンポーネントのインストール**画面で、**使用可能なコンポーネント****追加ソフトウェア**を選択します**Windows SharePoint Services アダプターWeb サービス**します。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "36979763"
 >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイムをホストするコンピューター、および Windows SharePoint Services を実行するコンピューターでセットアップと構成を実行する必要があります。  
   
 ## <a name="configuring-the-windows-sharepoint-services-adapter-web-service-in-a-multiserver-deployment"></a>マルチサーバー展開の Windows SharePoint Services アダプター Web サービスの構成  
- Windows SharePoint Services アダプターは、BizTalk Server 構成を使用して構成します。 これらのツールの詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 の構成の概要](http://msdn.microsoft.com/library/aa58c43f-8f0e-4a5c-89b9-db7b8a852a72)します。  
+ Windows SharePoint Services アダプターは、BizTalk Server 構成を使用して構成します。 これらのツールの詳細については、[BizTalk Server 2013 および 2013 R2 の構成の概要](http://msdn.microsoft.com/library/aa58c43f-8f0e-4a5c-89b9-db7b8a852a72)を参照してください。  
   
 ### <a name="using-a-custom-configuration"></a>ユーザー構成の使用  
  BizTalk Server 構成では、ローカル コンピューターにインストールした機能の構成状態に関する高レベルの分析が提供されます。 このツールを使用すると、機能の構成と構成解除、セキュリティ設定の構成、および他のコンピューターの構成のインポートとエクスポートを行えます。  
@@ -87,7 +87,7 @@ ms.locfileid: "36979763"
   
 - BTSharePointAdapterWS 仮想アプリケーションに Web サービスが含められます。  
   
-  BizTalk Server の構成の詳細については、次を参照してください。[のインポートとエクスポートの BizTalk Server 構成](../install-and-config-guides/import-and-export-biztalk-server-configuration.md)します。  
+  BizTalk Server の構成の詳細については、[のインポートとエクスポートの BizTalk Server 構成](../install-and-config-guides/import-and-export-biztalk-server-configuration.md)を参照してください。  
   
 ##### <a name="to-configure-the-windows-sharepoint-services-adapter-by-using-custom-configuration"></a>ユーザー設定を使用して Windows SharePoint Services アダプターを構成するには  
   
@@ -128,7 +128,7 @@ ms.locfileid: "36979763"
   
 - Web サービスをインストールする Web サイトは、SharePoint Services Web サイトとして拡張しておく必要があります。  
   
-- Windows SharePoint Services アダプターは、サイレント インストールでインストールおよび構成できます。 詳細については、次を参照してください。[付録 a: サイレント インストール](../install-and-config-guides/appendix-a-silent-installation.md)します。  
+- Windows SharePoint Services アダプターは、サイレント インストールでインストールおよび構成できます。 詳細については、[付録 a: サイレント インストール](../install-and-config-guides/appendix-a-silent-installation.md)を参照してください。  
   
 ### <a name="considerations-for-network-load-balancing-nlb"></a>ネットワーク負荷分散 (NLB) に関する考慮事項  
  Windows SharePoint Services 用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アダプターを使用すると、同一グループ内に構成されている複数の BizTalk サーバーと共に Windows SharePoint Services サーバーを NLB クラスターにすることができます。 この場合、SharePoint のマニュアルで推奨されているように、Windows SharePoint Services を NLB クラスターにインストールする必要があります。  

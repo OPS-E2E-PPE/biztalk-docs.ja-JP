@@ -50,7 +50,7 @@ ms.locfileid: "37023904"
    -   MIME/SMIME エンコーダー パイプライン コンポーネントの構成プロパティ ウィンドウで**暗号化を有効にする**プロパティを`True`します。 詳細については、**暗号化を有効にする**プロパティを参照してください[MIME-SMIME エンコーダー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-mime-smime-encoder-pipeline-component.md)します。  
   
    > [!NOTE]
-   >  BizTalk グループにパイプラインを展開した後、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して送信パイプライン コンポーネントのプロパティを構成できます。 詳細については、次を参照してください。[送信ポートのインスタンスごとのパイプライン プロパティを構成する方法](../core/how-to-configure-per-instance-pipeline-properties-for-a-send-port.md)します。  
+   >  BizTalk グループにパイプラインを展開した後、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して送信パイプライン コンポーネントのプロパティを構成できます。 詳細については、[送信ポートのインスタンスごとのパイプライン プロパティを構成する方法](../core/how-to-configure-per-instance-pipeline-properties-for-a-send-port.md)を参照してください。  
    > 
    > [!NOTE]
    >  MIME/SMIME エンコーダー パイプライン コンポーネントは、暗号化とデジタル署名の両方を実行します (両方の機能を実行するように構成されている場合)。 したがって、暗号化および署名されたメッセージを送信するように [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成する場合は、同じ送信パイプラインを使用できます。 つまり、暗号化用とデジタル署名用に異なるパイプラインを作成する必要はありません。  
@@ -59,9 +59,9 @@ ms.locfileid: "37023904"
   
 ### <a name="to-configure-the-send-port-for-sending-encrypted-messages"></a>暗号化されたメッセージを送信するための送信ポートを構成するには  
   
-1.  前の手順で作成した BizTalk アセンブリを、暗号化されたメッセージを送信する送信ポートを含む BizTalk アプリケーションに追加します。 BizTalk アセンブリを追加する方法の詳細については、次を参照してください。[アプリケーションに BizTalk アセンブリを追加する方法](../core/how-to-add-a-biztalk-assembly-to-an-application.md)します。  
+1.  前の手順で作成した BizTalk アセンブリを、暗号化されたメッセージを送信する送信ポートを含む BizTalk アプリケーションに追加します。 BizTalk アセンブリを追加する方法の詳細については、[アプリケーションに BizTalk アセンブリを追加する方法](../core/how-to-add-a-biztalk-assembly-to-an-application.md)を参照してください。  
   
-2.  前の手順で作成した送信パイプラインを備えた、BizTalk アプリケーションに送信ポートを構成しにインストールされている暗号化証明書を割り当てます[メッセージの暗号化の証明書をインストールする方法](../core/how-to-install-the-certificates-for-encrypted-messages.md). 送信ポートを構成する方法の詳細については、次を参照してください。[送信ポートに証明書を割り当てる方法](../core/how-to-assign-a-certificate-to-a-send-port.md)します。  
+2.  前の手順で作成した送信パイプラインを備えた、BizTalk アプリケーションに送信ポートを構成しにインストールされている暗号化証明書を割り当てます[メッセージの暗号化の証明書をインストールする方法](../core/how-to-install-the-certificates-for-encrypted-messages.md). 送信ポートを構成する方法の詳細については、[送信ポートに証明書を割り当てる方法](../core/how-to-assign-a-certificate-to-a-send-port.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [暗号化されたメッセージを受信するための BizTalk Server を構成する方法](../core/how-to-configure-biztalk-server-for-receiving-encrypted-messages.md)   

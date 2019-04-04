@@ -86,7 +86,7 @@ ms.locfileid: "36979779"
   
    2.  必ず、**アプリケーション名**プロパティに設定されて**WCFBasicHttpReceiveAdapter**。 これは、BizTalk ソリューションを展開する BizTalk アプリケーションの名前です。  
   
-   3.  ソリューション エクスプ ローラーで右クリックして**biztalkapp**、 をクリックし、**デプロイ**します。 ローカルに展開しない場合は、リモート接続を許可するように SQL Server を構成する必要があります。 詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=194141](http://go.microsoft.com/fwlink/?LinkId=194141)します。  
+   3.  ソリューション エクスプ ローラーで右クリックして**biztalkapp**、 をクリックし、**デプロイ**します。 ローカルに展開しない場合は、リモート接続を許可するように SQL Server を構成する必要があります。 詳細については、[ http://go.microsoft.com/fwlink/?LinkId=194141](http://go.microsoft.com/fwlink/?LinkId=194141)を参照してください。  
   
 ### <a name="to-publish-the-sample-orchestration-by-using-the-biztalk-wcf-service-publishing-wizard"></a>BizTalk WCF サービス公開ウィザードを使用して、サンプル オーケストレーションを公開するには  
   

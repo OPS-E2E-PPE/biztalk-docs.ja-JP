@@ -90,7 +90,7 @@ ms.locfileid: "36973251"
   
   **EDI 逆アセンブラー**  
   
-  AS2EDIReceivePipeline では、EDI 逆アセンブラーは EDI メッセージを処理するために中間 XML メッセージに解析します。 詳細については、次を参照してください。 [、EDI 逆アセンブラーのしくみ](../core/how-the-edi-disassembler-works.md)します。  
+  AS2EDIReceivePipeline では、EDI 逆アセンブラーは EDI メッセージを処理するために中間 XML メッセージに解析します。 詳細については、[、EDI 逆アセンブラーのしくみ](../core/how-the-edi-disassembler-works.md)を参照してください。  
   
   **BatchMarker**  
   

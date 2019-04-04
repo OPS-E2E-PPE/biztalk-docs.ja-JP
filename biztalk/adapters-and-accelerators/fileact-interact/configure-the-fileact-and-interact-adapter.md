@@ -169,7 +169,7 @@ SET Path=%PATH%;C:\SWIFTAlliance\RA\lib
 ```  
   
 ## <a name="see-some-examples"></a>いくつかの例を参照してください。
-FileAct および InterAct メッセージの例については、次を参照してください。[サンプルを操作および FileAct メッセージ](../../adapters-and-accelerators/fileact-interact/sample-interact-and-fileact-messages.md)します。  
+FileAct および InterAct メッセージの例については、[サンプルを操作および FileAct メッセージ](../../adapters-and-accelerators/fileact-interact/sample-interact-and-fileact-messages.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
 

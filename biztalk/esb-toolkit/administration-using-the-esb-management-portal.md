@@ -37,7 +37,7 @@ ESB 管理ポータルの一部として含まれている、[!INCLUDE[esbToolki
 -   [UDDI 登録を表示し、発行する](../esb-toolkit/viewing-and-publishing-uddi-registrations.md)  
   
 > [!NOTE]
->  ESB 管理ポータルの個々 の機能の詳細については、次を参照してください。 [ESB 管理ポータル機能リファレンス](../esb-toolkit/esb-management-portal-feature-reference.md)します。  
+>  ESB 管理ポータルの個々 の機能の詳細については、[ESB 管理ポータル機能リファレンス](../esb-toolkit/esb-management-portal-feature-reference.md)を参照してください。  
   
 ## <a name="esb-portal-technologies"></a>ESB ポータル テクノロジ  
  ESB 管理ポータルでは、次のテクノロジを利用します。  

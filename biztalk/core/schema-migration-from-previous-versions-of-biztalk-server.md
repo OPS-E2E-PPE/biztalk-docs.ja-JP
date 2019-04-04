@@ -32,7 +32,7 @@ ms.locfileid: "37022464"
   
 - スキーマを保存して、変換を永続的にします。  
   
-  次の手順を実行する方法の詳細については、次を参照してください。 [XDR スキーマから XSD スキーマを移行する方法](../core/how-to-migrate-xdr-schemas-to-xsd-schemas.md)します。  
+  次の手順を実行する方法の詳細については、[XDR スキーマから XSD スキーマを移行する方法](../core/how-to-migrate-xdr-schemas-to-xsd-schemas.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [スキーマについて](../core/about-schemas.md)   

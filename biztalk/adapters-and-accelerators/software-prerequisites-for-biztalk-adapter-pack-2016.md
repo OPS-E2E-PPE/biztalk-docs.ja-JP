@@ -89,7 +89,7 @@ Microsoft sharepoint アダプターを使用する目的では、SharePoint ポ
 
 <a name="BKMK_SuppLOB"></a>   
 ## <a name="supported-enterprise-application-versions"></a>サポートされているエンタープライズ アプリケーションのバージョン  
-BizTalk Adapter Pack でサポートされている特定の LOB システムのバージョンを表示するには、次を参照してください。 **[サポートされている基幹業務 (LOB) システム](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-systems.aspx)** します。
+BizTalk Adapter Pack でサポートされている特定の LOB システムのバージョンを表示するには、**[サポートされている基幹業務 (LOB) システム](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-systems.aspx)** を参照してください。
 
 このセクションでは、各アダプターに必要なすべてのクライアントの Dll など、アダプターごとに、追加の情報が一覧表示します。  
 

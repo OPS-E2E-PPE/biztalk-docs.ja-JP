@@ -26,7 +26,7 @@ SQL Server を使用して、操作を実行、 [!INCLUDE[adaptersqlshort](../..
 > [!NOTE]
 >  - 使用して SQL サーバーの操作を実行する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]常に 2 つのリソースが含まれます: SQL Server と SQL Server 上に存在する BizTalk メッセージ ボックスに接続するアダプター。 そのため、すべての操作は実行を使用して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]MSDTC トランザクションのスコープ内で実行されます。 使用するため、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]MSDTC を常に有効にする必要があります。  
 > 
->  - 操作は、アダプター クライアントは、データを書き込めません Select 操作など、SQL Server データベースのトランザクション内で操作を実行するは、追加のオーバーヘッドをしない可能性があります。 このような場合は、構成することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を設定して、トランザクションのコンテキストなしの操作を実行する、 **UseAmbientTransaction**プロパティをバインド**false**します。 バインディング プロパティの詳細については、次を参照してください。 [for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。 このような場合にも MSDTC を構成する必要はありません。  
+>  - 操作は、アダプター クライアントは、データを書き込めません Select 操作など、SQL Server データベースのトランザクション内で操作を実行するは、追加のオーバーヘッドをしない可能性があります。 このような場合は、構成することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を設定して、トランザクションのコンテキストなしの操作を実行する、 **UseAmbientTransaction**プロパティをバインド**false**します。 バインディング プロパティの詳細については、[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)を参照してください。 このような場合にも MSDTC を構成する必要はありません。  
   
 ## <a name="configure-msdtc"></a>MSDTC の構成  
   

@@ -29,12 +29,12 @@ ms.locfileid: "37010283"
   
  単体テストの仮想化環境で実行できるもう 1 つの側面をステージングします。 ステージング環境は、単体テストの BizTalk ソリューションの実際の展開のプロセスです。 使用可能なハードウェア リソースを最大化するには、ステージング環境用の Virtual Server の使用を検討してください。  
   
- 使用しての詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]仮想環境で、次を参照してください。[仮想サーバー中にリリース管理プロセスにを使用して](../technical-guides/planning-the-development-testing-staging-and-production-environments.md#BKMK_VirtualServ)します。 単体テストの BizTalk ソリューションに役立つツールについては、次を参照してください。[テスト用ツール](~/technical-guides/tools-for-testing.md)します。 単体テストを実行するための考慮事項のチェックリストについては、次を参照してください。[単体テストを実行する](../technical-guides/performing-unit-testing.md)します。  
+ 使用しての詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]仮想環境で、[仮想サーバー中にリリース管理プロセスにを使用して](../technical-guides/planning-the-development-testing-staging-and-production-environments.md#BKMK_VirtualServ)を参照してください。 単体テストの BizTalk ソリューションに役立つツールについては、[テスト用ツール](~/technical-guides/tools-for-testing.md)を参照してください。 単体テストを実行するための考慮事項のチェックリストについては、[単体テストを実行する](../technical-guides/performing-unit-testing.md)を参照してください。  
   
 ## <a name="planning-for-load-testing"></a>ロード テストの計画  
  ロード テストは、最大持続可能なパフォーマンスを測定し、BizTalk ソリューションのパフォーマンスを追跡し、ソリューションのスループットを抑制するボトルネックを削除し、維持可能な最大のプロセスです。 ロード テストと削除からのボトルネックの詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションを参照してください、 [BizTalk Server 2009 パフォーマンス ガイド](http://go.microsoft.com/fwlink/?LinkID=150492)(<http://go.microsoft.com/fwlink/?LinkID=150492>)。  
   
- ロード テストの BizTalk ソリューションに役立つツールについては、次を参照してください。[テスト用ツール](~/technical-guides/tools-for-testing.md)します。 ロード テストに関する考慮事項のチェックリストについては、次を参照してください。[読み込みを実行すると、スループットのテスト](../technical-guides/performing-load-and-throughput-testing.md)します。  
+ ロード テストの BizTalk ソリューションに役立つツールについては、[テスト用ツール](~/technical-guides/tools-for-testing.md)を参照してください。 ロード テストに関する考慮事項のチェックリストについては、[読み込みを実行すると、スループットのテスト](../technical-guides/performing-load-and-throughput-testing.md)を参照してください。  
   
 ## <a name="plan-to-test-for-the-lifetime-of-the-solution"></a>有効期間にわたって、ソリューションのテスト計画します。  
  単体テストと負荷の増加、または新しい機能またはコンポーネントとして発生する可能性がある潜在的な問題を明らかにするためのソリューションの有効期間全体での一般的なテスト計画、ソリューションの初期段階で特に重要ですがロード テストソリューションに追加されます。  

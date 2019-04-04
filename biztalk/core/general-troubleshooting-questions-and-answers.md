@@ -54,7 +54,7 @@ ms.locfileid: "37010651"
 ## <a name="why-is-my-map-failing-when-calling-my-custom-functoid"></a>カスタム Functoid を呼び出すとマップで障害が発生するのはなぜですか。  
  マップでカスタム Functoid を呼び出せるようにするには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターのグローバル アセンブリ キャッシュ (GAC) にそれらのカスタム Functoid をインストールしておく必要があります。 カスタム Functoid を含むアセンブリが署名されており、GAC に配置されていることを確認してください。 また、アセンブリを "%BTSINSTALLPATH%\Developer Tools\Mapper Extensions" フォルダーにコピーします。  
   
- アセンブリを GAC にインストールの詳細については、次を参照してください。 [GAC でアセンブリのインストール](../core/assembly-installation-in-the-gac.md)します。 GAC にインストールされたアセンブリを表示するには、[!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)] のインストール ディレクトリの Assembly ディレクトリに移動します。  
+ アセンブリを GAC にインストールの詳細については、[GAC でアセンブリのインストール](../core/assembly-installation-in-the-gac.md)を参照してください。 GAC にインストールされたアセンブリを表示するには、[!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)] のインストール ディレクトリの Assembly ディレクトリに移動します。  
   
 ## <a name="see-also"></a>参照  
  [マップのトラブルシューティング](../core/troubleshooting-maps.md)

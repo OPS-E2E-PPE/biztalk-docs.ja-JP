@@ -48,7 +48,7 @@ ms.locfileid: "36980707"
   
 - [送信パイプライン]  
   
-  これらのコンポーネントとメッセージの処理方法の詳細については、次を参照してください。 [BTARN でのメッセージ処理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)します。  
+  これらのコンポーネントとメッセージの処理方法の詳細については、[BTARN でのメッセージ処理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)を参照してください。  
   
 ## <a name="message-flow-on-the-responder-computer"></a>応答側コンピューターでのメッセージ フロー  
  応答側 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] コンピュータでの受信メッセージのフローは次のとおりです。  

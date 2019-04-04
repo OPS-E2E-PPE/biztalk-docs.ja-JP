@@ -42,7 +42,7 @@ ms.locfileid: "36996195"
   
   - FlatFileSegmentIndicator  
   
-    これらのプロパティは、SAP システムから IDOC のメタデータを取得する方法を制御します。 これらのプロパティの詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。 バインドのプロパティを設定する方法の手順を参照してください[SAP アダプターのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sap/configure-the-binding-properties-for-the-sap-adapter.md)します。  
+    これらのプロパティは、SAP システムから IDOC のメタデータを取得する方法を制御します。 これらのプロパティの詳細については、[mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。 バインドのプロパティを設定する方法の手順を参照してください[SAP アダプターのバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-sap/configure-the-binding-properties-for-the-sap-adapter.md)します。  
   
 ## <a name="browsing-idocs-in-an-sap-system"></a>SAP システムでの Idoc の閲覧  
  使用してメタデータを閲覧中に[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サーフェスは、SAP システムから Idoc を送受信するための操作を分離します。  
@@ -97,7 +97,7 @@ ms.locfileid: "36996195"
 |+ (プラス)|1 つだけの文字と一致します。<br /><br /> たとえば、A + と一致する AB、AC、AD|  
 |* (アスタリスク)|0 個以上の文字と一致します。<br /><br /> たとえば、A * A、AB ABC に一致します。|  
   
- アダプターでサポートされている特殊文字の詳細については、次を参照してください。 [WCF LOB Adapter SDK を使用してバインドのプロパティとしてアダプターの設定を公開](../../adapters-and-accelerators/wcf-lob-adapter-sdk/expose-adapter-settings-as-a-binding-property-using-the-wcf-lob-adapter-sdk.md)します。
+ アダプターでサポートされている特殊文字の詳細については、[WCF LOB Adapter SDK を使用してバインドのプロパティとしてアダプターの設定を公開](../../adapters-and-accelerators/wcf-lob-adapter-sdk/expose-adapter-settings-as-a-binding-property-using-the-wcf-lob-adapter-sdk.md)を参照してください。
   
  次の手順を使用した SAP システム内の Idoc の検索を実行、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。  
   
@@ -124,7 +124,7 @@ ms.locfileid: "36996195"
  使用することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]SAP アイテムを選択したスキーマを生成します。 参照を呼び出したいアーティファクトの検索し、それらの成果物のスキーマを生成し、SAP システムに、スキーマに準拠したメッセージを送信できます。  
   
 > [!NOTE]
->  そのカテゴリのサブ-ツリー内のすべての操作を取得するカテゴリ ノードを選択することができます: (そのグループ内のすべてのバージョンの Idoc のスキーマの生成) する IDOC タイプの選択など、またはそのバージョンのみのスキーマを生成するための IDOC の特定のバージョンを選択します。IDOC します。 ノードの詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)します。  
+>  そのカテゴリのサブ-ツリー内のすべての操作を取得するカテゴリ ノードを選択することができます: (そのグループ内のすべてのバージョンの Idoc のスキーマの生成) する IDOC タイプの選択など、またはそのバージョンのみのスキーマを生成するための IDOC の特定のバージョンを選択します。IDOC します。 ノードの詳細については、[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)を参照してください。  
   
 #### <a name="to-retrieve-metadata-for-idocs"></a>Idoc のメタデータを取得するには  
   
@@ -152,7 +152,7 @@ ms.locfileid: "36996195"
    >  使用する場合[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、名前付け規則で既定では、ファイルの作成"SAPBinding\<n\>.xsd"ここで、' n '、1 を指定できます、2 などによって作成されたスキーマ ファイルの数にします。 または、スキーマ ファイルにカスタム名を提供の名前を入力、**ファイル名のプレフィックス**テキスト ボックス。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]名前付け規則で今すぐスキーマ ファイルを作成します\<ファイル名のプレフィックス\>\<n\>.xsd。  
    > 
    > [!NOTE]
-   >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]スキーマの生成中に指定したバインドのプロパティを含むバインド ファイル (XML ファイル) も作成操作と操作を呼び出すための SOAP アクション。 接続 URI、バインドのプロパティを持つ WCF カスタム ポートを作成する BizTalk Server 管理コンソールでこのバインド ファイルをインポートして、SOAP アクションを設定します。 詳細については、次を参照してください。 [sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)します。  
+   >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]スキーマの生成中に指定したバインドのプロパティを含むバインド ファイル (XML ファイル) も作成操作と操作を呼び出すための SOAP アクション。 接続 URI、バインドのプロパティを持つ WCF カスタム ポートを作成する BizTalk Server 管理コンソールでこのバインド ファイルをインポートして、SOAP アクションを設定します。 詳細については、[sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)を参照してください。  
   
 6. **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
@@ -168,7 +168,7 @@ ms.locfileid: "36996195"
 3. **利用可能なカテゴリと操作**ボックスで、IDOC の種類またはサポート対象の WCF クライアント (または WCF サービス コントラクト) を生成し をクリックする操作を選択**追加**します。 選択した操作が記載されて、**カテゴリと操作を追加**ボックス。 記載されている任意のノードを選択することができます、**利用可能なカテゴリと操作**ボックス。 場合は、カテゴリ ノードの すべてのノードの下で使用可能な操作を選択して、そのサブ ノードが追加されます。  
   
    > [!IMPORTANT]
-   >  [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] IDOC の種類ごとに一意の WCF クライアント クラス (または WCF サービス コントラクト) が生成されます。 によって、カテゴリと、選択した操作は、複数の WCF クライアント クラスが生成されます。 詳細については、次を参照してください。 [WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)します。  
+   >  [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] IDOC の種類ごとに一意の WCF クライアント クラス (または WCF サービス コントラクト) が生成されます。 によって、カテゴリと、選択した操作は、複数の WCF クライアント クラスが生成されます。 詳細については、[WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)を参照してください。  
   
 4. ほとんどのシナリオで、既定のシリアル化オプションで十分です。ただし、必要な場合は、生成されたコードに関するいくつかの側面と使用されるシリアライザーの型を制御できます。 これらのオプションを設定するには  
   
@@ -182,9 +182,9 @@ ms.locfileid: "36996195"
   
       ![高度なオプションが既定の設定をボックス](../../adapters-and-accelerators/adapter-oracle-database/media/r2-net-adapters-oracle-msb-advanced-options.gif "R2_NET_Adapters_Oracle_MSB_Advanced_Options")  
   
-      オプションで構成できる、**詳細オプション**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用する場合は、ボックスはいくつかの使用可能なオプションに相当します。 これらのオプションの詳細については、次を参照してください。 [ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)します。
+      オプションで構成できる、**詳細オプション**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用する場合は、ボックスはいくつかの使用可能なオプションに相当します。 これらのオプションの詳細については、[ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)を参照してください。
   
-5. **[OK]** をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアント クラス (または WCF サービスのインターフェイス) を保存し、操作と、プロジェクト ディレクトリで選択したカテゴリのヘルパー コード。 既定では、構成ファイルも保存されます。 受信と送信操作の若干異なるファイルが生成されます。詳細については、次を参照してください。 [WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)します。  
+5. **[OK]** をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアント クラス (または WCF サービスのインターフェイス) を保存し、操作と、プロジェクト ディレクトリで選択したカテゴリのヘルパー コード。 既定では、構成ファイルも保存されます。 受信と送信操作の若干異なるファイルが生成されます。詳細については、[WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [Visual Studio で SAP 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)

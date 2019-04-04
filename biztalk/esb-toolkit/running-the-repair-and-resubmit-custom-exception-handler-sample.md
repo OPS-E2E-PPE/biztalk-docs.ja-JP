@@ -51,7 +51,7 @@ ms.locfileid: "37004483"
   さらに、すべてをという名前の汎用的な送信ポートがあります。GlobalFaultProcessor パイプラインを使用するように構成された Exceptions_FILE します。 このポートが、システムではすべての例外をサブスクライブ、両方の BizTalk は、メッセージのメッセージをルーティングし、ESB エラー メッセージが失敗しました。 例外管理フレームワークでは、それらすべてを 1 つの形式に正規化し、フォルダー \Source\Samples\Exception Handling\Test\Filedrop\All_Exceptions に InfoPath 処理命令を使用してシリアル化します。  
   
 ## <a name="installation"></a>インストール  
- すべての例外管理サンプルでは、同じコア サービスと BizTalk アプリケーションのアイテムのセットを使用します。 そのため、すべての例外管理サンプルを実行できる例外管理サンプル アイテム 1 回だけをインストールする必要があります。 例外管理サンプルをインストールする方法については、次を参照してください。[例外管理サンプルをインストールする](../esb-toolkit/installing-the-exception-management-samples.md)します。  
+ すべての例外管理サンプルでは、同じコア サービスと BizTalk アプリケーションのアイテムのセットを使用します。 そのため、すべての例外管理サンプルを実行できる例外管理サンプル アイテム 1 回だけをインストールする必要があります。 例外管理サンプルをインストールする方法については、[例外管理サンプルをインストールする](../esb-toolkit/installing-the-exception-management-samples.md)を参照してください。  
   
 ## <a name="running-the-sample-application"></a>サンプル アプリケーションを実行します。  
  **修復と再送信のカスタム例外ハンドラーのサンプルを実行するには**  

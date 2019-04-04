@@ -168,7 +168,7 @@ ms.locfileid: "36986979"
   - 複数のファイルにデータベースを分割するスクリプトを作成する権限です。  
   
     > [!NOTE]  
-    >  この最適化を適用する方法の詳細については、次を参照してください。 [、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)します。  
+    >  この最適化を適用する方法の詳細については、[、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)を参照してください。  
   
   - SQL Server 2008 R2 Performance Dashboard Reports を使用してパフォーマンスの問題を特定できます。  
   
@@ -339,7 +339,7 @@ ms.locfileid: "36986979"
   
    テーブルに情報を配置するには、いくつかの処理が実現されます。 まず、簡単、テスト データについての前提条件に同意するには、利害関係者の。 第 2 に、パフォーマンス評価のための潜在的な最適化に関する決定に使用できる情報を提供します。 たとえばする上記の表で確認できます ReceiveHost BizTalk ホスト内で、すべての異なるデータ型を処理するために使用するすべての受信場所がホストされていること。 これは、このホストの各インスタンスがデータ (例: XML とバイナリの非圧縮 PDF データ) のさまざまな種類とサイズの処理を担当することを意味します。 各ホスト インスタンスは 1 つのインスタンスの BizTalk Server プロセス (BTSNTSVC します。EXE)、処理のボトルネックになるこの可能性があります。 したがってこのシナリオのいずれかの環境の最適化を簡単にすぐには、パフォーマンスの向上のそれぞれを分離することをテストすることで、独自の個々 のホストに場所が表示されます。 概要の表形式で、テスト データの情報にアクセスすることすると、ゲージのような簡単な最適化しやすきます。  
   
-- **ロード テストとロードの生成の自動化計画**-パフォーマンス評価のため、テスト データのプロファイルが確立された後は、ロード、環境内でテストを実行する方法を検討してください。 BizTalk Server 2010 は、ロード テストのロード テストの Visual Studio 2010 を使用しました。 Visual Studio 2010 でのロード テストを容易にする方法の詳細については、次を参照してください。[テスト自動化を容易にする Visual Studio を使用して](../technical-guides/using-visual-studio-to-facilitate-automated-testing.md)します。  
+- **ロード テストとロードの生成の自動化計画**-パフォーマンス評価のため、テスト データのプロファイルが確立された後は、ロード、環境内でテストを実行する方法を検討してください。 BizTalk Server 2010 は、ロード テストのロード テストの Visual Studio 2010 を使用しました。 Visual Studio 2010 でのロード テストを容易にする方法の詳細については、[テスト自動化を容易にする Visual Studio を使用して](../technical-guides/using-visual-studio-to-facilitate-automated-testing.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [パフォーマンス評価のフェーズ](../technical-guides/phases-of-a-performance-assessment.md)

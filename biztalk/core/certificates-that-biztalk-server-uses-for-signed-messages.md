@@ -65,7 +65,7 @@ BizTalk Server では、送信メッセージへの署名と、S/MIME (Secure Mu
   
    BizTalk Server は、証明機関 (CA) 信頼チェーンの検証と確認することにより、証明書の証明書の有効期限が切れていない受信署名付きメッセージに関連付けられている証明書の有効性を確認します。 証明機関 (CA) の信頼チェーンの検証プロセスでは、ルート証明機関まで証明書の信頼チェーンをたどって検証が行われます。 これにより、メッセージの署名に使用された証明書が確実に、認識されている当事者からのものであることが検証されます。 この検証は、実行時、すべての署名付きメッセージに対して個別に行われます。  
   
-   さらに、BizTalk Server では、証明機関が署名またはメッセージの暗号化に使用する証明書を失効していないことを確認できます。 これには、証明機関から証明書の失効一覧 (CRL) をダウンロードし、エクスプローラーを使用して CRL をインストールする必要があります。 証明書を検証する方法の詳細については、次を参照してください。 [MIME-SMIME デコーダー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-mime-smime-decoder-pipeline-component.md)します。  
+   さらに、BizTalk Server では、証明機関が署名またはメッセージの暗号化に使用する証明書を失効していないことを確認できます。 これには、証明機関から証明書の失効一覧 (CRL) をダウンロードし、エクスプローラーを使用して CRL をインストールする必要があります。 証明書を検証する方法の詳細については、[MIME-SMIME デコーダー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-mime-smime-decoder-pipeline-component.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server は、暗号化されたメッセージで使用する証明書](../core/certificates-that-biztalk-server-uses-for-encrypted-messages.md)   

@@ -43,7 +43,7 @@ Wcf-custom 送信を構成し、Oracle E-business Suite を使用して、送信
   
 7. **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作を行います。  
   
-   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、for Oracle E-business Suite 接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [Oracle E-business Suite 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)です。  
+   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、for Oracle E-business Suite 接続 URI を指定します。 接続 URI の詳細については、[Oracle E-business Suite 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)を参照してください。  
   
    2. **全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。 参照してください[メッセージと Oracle EBS アダプターのメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)) の各操作のアクションの一覧。 たとえば、資産のアプリケーションの下で、インターフェイス テーブル (FA_BOOKS) に対する挿入操作を呼び出すアクションは。  
   
@@ -51,7 +51,7 @@ Wcf-custom 送信を構成し、Oracle E-business Suite を使用して、送信
       InterfaceTables/Insert/OFA/FA/FA_BOOKS  
       ```  
   
-   3. をクリックして、**バインド**] タブとの間、**バインドの種類**一覧で、[ **oracleEBSBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 バインド プロパティの詳細については、次を参照してください。[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。  
+   3. をクリックして、**バインド**] タブとの間、**バインドの種類**一覧で、[ **oracleEBSBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 バインド プロパティの詳細については、[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。  
   
    4. をクリックして、**資格情報**タブをクリックし、次のいずれかの操作を行います。  
   
@@ -103,11 +103,11 @@ Wcf-custom 送信を構成し、Oracle E-business Suite を使用して、送信
   
 8. **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作を行います。  
   
-   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、for Oracle E-business Suite 接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [Oracle E-business Suite 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)です。  
+   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、for Oracle E-business Suite 接続 URI を指定します。 接続 URI の詳細については、[Oracle E-business Suite 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)を参照してください。  
   
-   2. をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **oracleEBSBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 バインド プロパティの詳細については、次を参照してください。[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。  
+   2. をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **oracleEBSBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 バインド プロパティの詳細については、[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。  
   
-   3. をクリックして、**動作** タブ、トランザクション分離レベルを設定します。 トランザクション分離レベルを設定する方法についての詳細については、次を参照してください。[トランザクション分離レベルの構成と E-business Suite でのトランザクション タイムアウト](../../adapters-and-accelerators/adapter-oracle-ebs/configure-transaction-isolation-level-and-transaction-timeout-with-oracle-ebs.md)します。  
+   3. をクリックして、**動作** タブ、トランザクション分離レベルを設定します。 トランザクション分離レベルを設定する方法についての詳細については、[トランザクション分離レベルの構成と E-business Suite でのトランザクション タイムアウト](../../adapters-and-accelerators/adapter-oracle-ebs/configure-transaction-isolation-level-and-transaction-timeout-with-oracle-ebs.md)を参照してください。  
   
    4. をクリックして、**他**タブをクリックし、次のいずれかの操作を行います。  
   

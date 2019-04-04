@@ -29,7 +29,7 @@ PrivateResponder.odx サンプルには、Microsoft® によってインスト�
   
  応答側プライベート プロセスは実装ごとに固有です。 PrivateResponder.odx サンプルは用途に合わせてカスタマイズできます。 ただし、応答側パブリック プロセスの機能に支障をきたさないように注意する必要があります。  
   
- 詳細については、メッセージ フローの説明を含む、次を参照してください。[応答側プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/responder-private-process.md)します。  
+ 詳細については、メッセージ フローの説明を含む、[応答側プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/responder-private-process.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーション サンプル](../../adapters-and-accelerators/accelerator-rosettanet/orchestration-samples.md)   

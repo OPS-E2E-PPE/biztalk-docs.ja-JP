@@ -36,4 +36,4 @@ ms.locfileid: "36991539"
  無効な Windows パスワードを削除しました。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- SSO 管理ツールを使用して、この Windows アカウントの外部資格情報を設定します。 詳細については、次を参照してください。[を使用して SSO](../core/using-sso.md)します。
+ SSO 管理ツールを使用して、この Windows アカウントの外部資格情報を設定します。 詳細については、[を使用して SSO](../core/using-sso.md)を参照してください。

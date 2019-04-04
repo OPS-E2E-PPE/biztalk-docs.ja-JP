@@ -37,9 +37,9 @@ ms.locfileid: "50753114"
 
 |ポリシーの設定|値|リファレンスと詳細|  
 |--------------------|------------|---------------------------|  
-|サービスとしてログオン|BizTalk Application Users|BizTalk ホスト インスタンスの実行に必要です。 別のユーザー アカウントの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)します。|  
-|サービスとしてログオン|ルール エンジン更新サービス アカウント|ルール エンジン更新サービスの実行に必要です。 別のユーザー アカウントの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)します。|  
-|サービスとしてログオン|SSO サービス アカウント|エンタープライズ シングル サインオン サービスの実行に必要です。 別のユーザー アカウントの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)します。|  
+|サービスとしてログオン|BizTalk Application Users|BizTalk ホスト インスタンスの実行に必要です。 別のユーザー アカウントの詳細については、[Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)を参照してください。|  
+|サービスとしてログオン|ルール エンジン更新サービス アカウント|ルール エンジン更新サービスの実行に必要です。 別のユーザー アカウントの詳細については、[Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)を参照してください。|  
+|サービスとしてログオン|SSO サービス アカウント|エンタープライズ シングル サインオン サービスの実行に必要です。 別のユーザー アカウントの詳細については、[Windows グループと BizTalk Server でのユーザー アカウント](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)を参照してください。|  
 
 ### <a name="system-services"></a>システム サービス  
  サービス MMC スナップインを開始するには、クリックして**開始**、 をクリックして**実行**、し、**実行**ダイアログ ボックスに「 `services.msc` ENTER キーを押します。  

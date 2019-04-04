@@ -80,7 +80,7 @@ ms.locfileid: "36994107"
 10. アプリケーションで、プロキシを使えるようになりました。  
 
 ## <a name="adding-a-service-reference-by-using-svcutilexe"></a>Svcutil.exe を使用してサービス参照の追加  
- Svcutil.exe はメタデータを取得し、後に追加できる .NET CLR プロキシ クラスを生成するために使用できるコマンド ライン ユーティリティ、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクト。 Svcutil.exe の詳細については、次を参照してください。 [ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)します。 
+ Svcutil.exe はメタデータを取得し、後に追加できる .NET CLR プロキシ クラスを生成するために使用できるコマンド ライン ユーティリティ、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクト。 Svcutil.exe の詳細については、[ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)を参照してください。 
 
  IIS でホストされているアダプターからプロキシ クラスを生成するには  
 

@@ -36,4 +36,4 @@ ms.locfileid: "36984739"
  SSO サービスは、ローカル システム アカウントでは実行できません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 詳細については、次を参照してください。[高可用性 SSO インストール オプション](../core/high-availability-sso-installation-options.md)します。
+ 詳細については、[高可用性 SSO インストール オプション](../core/high-availability-sso-installation-options.md)を参照してください。

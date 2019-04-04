@@ -23,7 +23,7 @@ ms.locfileid: "36989763"
 # <a name="create-msmq-receive-locations-and-send-ports-programmatically"></a>MSMQ 受信場所と送信ポートをプログラムで作成します。
 このトピックでは、WMI を使用して MSMQ アダプタのポートまたは場所を作成する方法について説明します。  
   
- 詳細については、次を参照してください。**日時スケジュール構成を使用して WMI の受信場所を作成する**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+ 詳細については、**日時スケジュール構成を使用して WMI の受信場所を作成する**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
   
 ## <a name="setting-property-values"></a>プロパティ値の設定  
  ポートまたは場所を作成するプロセスは常に同じです。  

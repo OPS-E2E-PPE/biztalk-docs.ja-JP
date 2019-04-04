@@ -41,7 +41,7 @@ ms.locfileid: "36992043"
 7. [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォーム、エラーの場所にスクロールし、エラーを修正します。 XML 検証エラーは、エラーは赤で強調表示されます。  
 
    > [!NOTE]
-   >  BRE の検証エラーが赤で強調表示されませんが、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォーム。 BRE の検証エラーに関する詳細については、次を参照してください。 [SWIFT エラー コード](../../adapters-and-accelerators/accelerator-swift/swift-error-codes.md)します。  
+   >  BRE の検証エラーが赤で強調表示されませんが、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォーム。 BRE の検証エラーに関する詳細については、[SWIFT エラー コード](../../adapters-and-accelerators/accelerator-swift/swift-error-codes.md)を参照してください。  
    > 
    > [!NOTE]
    >  ドロップダウン リストでは、関連付けられているフィールドに、エラーが発生した場合、エラーの原因となった元の値を表示することができなきます。 フィールドが表示されます"Select"元の値の代わりにします。 ドロップダウン リストから適切な値を選択します。  

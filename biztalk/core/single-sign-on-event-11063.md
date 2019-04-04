@@ -36,4 +36,4 @@ ms.locfileid: "36975571"
  MIIS コールバックのアクセスが拒否されました。 このエラーの原因として最も可能性が高いのは、ENTSSO システムと MIIS の間での Kerberos 認証の使用の失敗です。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- ENTSSO システムが Kerberos 認証を使用していることを確認します。 詳細については、次を参照してください。 [SSO のセキュリティに関する推奨事項](../core/sso-security-recommendations.md)します。
+ ENTSSO システムが Kerberos 認証を使用していることを確認します。 詳細については、[SSO のセキュリティに関する推奨事項](../core/sso-security-recommendations.md)を参照してください。

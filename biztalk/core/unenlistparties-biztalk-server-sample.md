@@ -35,7 +35,7 @@ UnenlistParties サンプルは、展開された BizTalk Server アセンブリ
   
 - このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
   
-- Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、次を参照してください。:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)します。  
+- Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)を参照してください。  
   
 ## <a name="how-this-sample-is-designed-and-why"></a>このサンプルのデザイン方法とその理由  
  このサンプルは、BizTalk エクスプローラー オブジェクト モデルのオブジェクトを使用して Visual C# で記述されています。このサンプルは、以下の操作を実行します。  

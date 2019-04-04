@@ -57,7 +57,7 @@ ms.locfileid: "36995451"
   
 - .NET Framework  
   
-  チュートリアルを開始する前にことが便利な場合は、この SDK の概念説明のトピックを確認し、チャネルでの基本的な知識がある[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]、内の型を含む、 **T:Microsoft.ServiceModel.Channels**と**T:Microsoft.ServiceModel.Channels.Common**名前空間。  チャネルの詳細については、次を参照してください。、[チャネル モデルの概要](https://msdn.microsoft.com/library/ms729840.aspx)します。  
+  チュートリアルを開始する前にことが便利な場合は、この SDK の概念説明のトピックを確認し、チャネルでの基本的な知識がある[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]、内の型を含む、 **T:Microsoft.ServiceModel.Channels**と**T:Microsoft.ServiceModel.Channels.Common**名前空間。  チャネルの詳細については、、[チャネル モデルの概要](https://msdn.microsoft.com/library/ms729840.aspx)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [WCF LOB Adapter SDK についてのチュートリアル](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorials-to-learn-the-wcf-lob-adapter-sdk.md)

@@ -33,7 +33,7 @@ ms.locfileid: "36981027"
   
 - [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。  
   
-  これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 通常、インストール ガイドにインストールされて\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents します。  
+  これらの前提条件の詳細については、、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドを参照してください。 通常、インストール ガイドにインストールされて\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents します。  
   
 > [!NOTE]
 >  作成する Microsoft Office SharePoint Server のサンプルで提供される create_apps_artifacts.sql スクリプトを実行することも必要があります、 **MS_SAMPLE_EMPLOYEE**インターフェイス テーブルで、**アプリケーション オブジェクト ライブラリ**アプリケーション。 このインターフェイスのテーブルは、このチュートリアルで使用されます。  
@@ -82,14 +82,14 @@ ms.locfileid: "36981027"
   
 6. 操作の選択] ページで、**選択のコントラクト型**一覧で、[**クライアント (送信操作)** します。  
   
-7. **カテゴリを選択**ボックスに、アプリケーション オブジェクト ライブラリのアプリケーションで MS_SAMPLE_EMPLOYEE インターフェイス テーブルに移動します。 アダプターで成果物への参照については、次を参照してください。[参照、検索、および取得操作のメタデータの Oracle E-business](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)します。  
+7. **カテゴリを選択**ボックスに、アプリケーション オブジェクト ライブラリのアプリケーションで MS_SAMPLE_EMPLOYEE インターフェイス テーブルに移動します。 アダプターで成果物への参照については、[参照、検索、および取得操作のメタデータの Oracle E-business](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)を参照してください。  
   
 8. **利用可能なカテゴリと操作**ボックスで、**選択**操作、およびクリック**追加**します。 選択操作に追加されます、**カテゴリと操作を追加**ボックス。  
   
     ![選択操作を追加する](../../adapters-and-accelerators/adapter-oracle-ebs/media/02-msb-gui.gif "02 _ msb_gui")  
   
    > [!NOTE]
-   >  各成果物の 1 つ以上の操作を追加することができます。 Oracle E-business Suite の各アイテムの操作を追加することもできます。 たとえば、インターフェイス テーブルの 1 つの操作と同時実行プログラムを追加できます。 さらに、検索式のワイルドカード文字を指定することによって、特定の操作を検索できます。 サポートされている特殊文字および位置は、操作を検索することができます、ノード レベルの詳細については、次を参照してください。 [Oracle E-business Suite 操作の検索](../../adapters-and-accelerators/adapter-oracle-ebs/search-for-oracle-e-business-suite-operations.md)します。  
+   >  各成果物の 1 つ以上の操作を追加することができます。 Oracle E-business Suite の各アイテムの操作を追加することもできます。 たとえば、インターフェイス テーブルの 1 つの操作と同時実行プログラムを追加できます。 さらに、検索式のワイルドカード文字を指定することによって、特定の操作を検索できます。 サポートされている特殊文字および位置は、操作を検索することができます、ノード レベルの詳細については、[Oracle E-business Suite 操作の検索](../../adapters-and-accelerators/adapter-oracle-ebs/search-for-oracle-e-business-suite-operations.md)を参照してください。  
   
 9. 操作の選択 ページで、次のようにクリックします。**次**します。  
   
@@ -174,7 +174,7 @@ SelectResponse InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.Select(SelectRequest 
 ```  
   
 ##  <a name="Publish"></a> WCF サービスを発行します。  
- IIS で SSL が有効であることを確認します。 IIS の SSL を有効にする方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=197170](http://go.microsoft.com/fwlink/?LinkId=197170)します。  
+ IIS で SSL が有効であることを確認します。 IIS の SSL を有効にする方法については、[ http://go.microsoft.com/fwlink/?LinkId=197170](http://go.microsoft.com/fwlink/?LinkId=197170)を参照してください。  
   
  WCF サービスを発行するには。  
   
@@ -209,7 +209,7 @@ SelectResponse InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.Select(SelectRequest 
         ```  
   
 ## <a name="next-step"></a>次の手順  
- Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成するには、ビジネス データ カタログ定義エディターを使用します。 手順については、次を参照してください。[手順 2: Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)です。 LOB データが格納されていると、形式が格納されているアプリケーション定義ファイルを識別します。  
+ Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成するには、ビジネス データ カタログ定義エディターを使用します。 手順については、[手順 2: Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)を参照してください。 LOB データが格納されていると、形式が格納されているアプリケーション定義ファイルを識別します。  
   
 ## <a name="see-also"></a>参照  
  [チュートリアル: SharePoint サイト上の Oracle E-business Suite からデータを表示します。](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)

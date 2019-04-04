@@ -105,7 +105,7 @@ ms.locfileid: "50752898"
 |ストアド プロシージャと関数の操作|Supported|Supported|アダプターを使用して、 **BodyWriter**応答メッセージを作成します。<br /><br /> クライアントで使用する場合、 **XmlDictionaryWriter**応答メッセージを処理するには、エンド ツー エンド ノードと値を LOB データのストリーミングに発生します。 (つまり、出力のストリーミングがサポートされていると IN をプロシージャと関数パラメーター、応答メッセージにします)。<br /><br /> エンド ツー エンド ノードと値のストリーミングは、前に、Oracle データベースで操作を呼び出すことができます、アダプターはすべてのオペランドをバッファーする必要がありますので、要求メッセージのサポートされていません。|  
 |POLLINGSTMT 操作|Supported|Supported|アダプターを使用して、 **BodyWriter** POLLINGSTMT 要求メッセージを作成します。 クライアントがメッセージを使用して、使用する場合、 **XmlDictionaryWriter**ノードと値の LOB 列のストリーミングが行われます。|  
   
- LOB データが、コードでは WCF チャネル モデルを使用すると、ストリーミングを実装する方法については、次を参照してください。[ストリーミング Oracle LOB データ型を使用してデータベース、WCF チャネル モデル](../../adapters-and-accelerators/adapter-oracle-database/streaming-oracle-database-lob-data-types-using-the-wcf-channel-model.md)します。  
+ LOB データが、コードでは WCF チャネル モデルを使用すると、ストリーミングを実装する方法については、[ストリーミング Oracle LOB データ型を使用してデータベース、WCF チャネル モデル](../../adapters-and-accelerators/adapter-oracle-database/streaming-oracle-database-lob-data-types-using-the-wcf-channel-model.md)を参照してください。  
   
 ## <a name="streaming-support-in-the-wcf-service-model"></a>WCF サービス モデルでのストリーミング サポート  
  メッセージの XML 表現とメッセージのマネージ コード オブジェクトの表現の間を逆シリアル化のシリアル化とは、メッセージ全体をメモリに読み書きが必要です。 このため、ストリーミング ノードもノード値のストリーミングもはほとんどの操作サポートされています。  

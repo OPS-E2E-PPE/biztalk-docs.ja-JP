@@ -33,7 +33,7 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
 
 - **ビジネス アクティビティを監視 (BAM) フレームワークです。** データ項目とビジネス トランザクション中に収集されたビジネス マイルス トーンを追跡するには、このツールを使用します。  
 
-  SWIFT 逆アセンブラーの強化 (装飾) A4SWIFT と共に処理されるメッセージの昇格させたプロパティです。 そのため、HAT および BAM クエリ式では、必要に応じてフィルター処理するため、これらのプロパティを含めます。 A4SWIFT の昇格させたプロパティの一覧は、次を参照してください。 [a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)します。  
+  SWIFT 逆アセンブラーの強化 (装飾) A4SWIFT と共に処理されるメッセージの昇格させたプロパティです。 そのため、HAT および BAM クエリ式では、必要に応じてフィルター処理するため、これらのプロパティを含めます。 A4SWIFT の昇格させたプロパティの一覧は、[a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)を参照してください。  
 
   MicrosoftBizTalk サーバー操作については、BizTalk Server ヘルプの「操作」セクションを参照してください。  
 

@@ -32,7 +32,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
  構成ログ ファイルの内容は、実行された構成手順の概要と、構成処理中に発生した疑いのあるエラーに関する診断情報です。 構成エラーが発生した場合、メモ帳などのテキスト エディターでは、構成ログを開くし、エラーの考えられる原因は、ログ ファイルを確認してください。  
   
 ## <a name="troubleshooting-tools"></a>トラブルシューティング ツール  
- SQL Server プロファイラー、Filemon、または Regmon を使用して、構成エラーに関する追加情報を収集します。 これらのツールの詳細については、次を参照してください。[トラブルシューティングのために使用するツールとユーティリティ](../core/tools-and-utilities-to-use-for-troubleshooting.md)します。  
+ SQL Server プロファイラー、Filemon、または Regmon を使用して、構成エラーに関する追加情報を収集します。 これらのツールの詳細については、[トラブルシューティングのために使用するツールとユーティリティ](../core/tools-and-utilities-to-use-for-troubleshooting.md)を参照してください。  
   
 ## <a name="known-issues"></a>既知の問題  
   

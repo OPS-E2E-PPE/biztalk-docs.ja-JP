@@ -22,7 +22,7 @@ ms.locfileid: "36995835"
 # <a name="walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter"></a>チュートリアル: Wcf-netmsmq アダプターを使用した WCF サービスの発行
   
 > [!NOTE]
->  アダプターの詳細については、次を参照してください。 [BizTalk Server のアダプター](../core/adapters-in-biztalk-server.md)します。  
+>  アダプターの詳細については、[BizTalk Server のアダプター](../core/adapters-in-biztalk-server.md)を参照してください。  
   
 ## <a name="introduction"></a>概要
   

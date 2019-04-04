@@ -36,4 +36,4 @@ ms.locfileid: "37008499"
  アプリケーションは現在無効になっています。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- アプリケーションを有効にする方法の詳細については、次を参照してください。[関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md)します。
+ アプリケーションを有効にする方法の詳細については、[関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md)を参照してください。

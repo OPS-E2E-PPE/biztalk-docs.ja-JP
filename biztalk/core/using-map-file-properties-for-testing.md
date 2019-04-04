@@ -30,7 +30,7 @@ ms.locfileid: "36985275"
   
 - 入力/出力テスト インスタンスの形式  
   
-  マップのプロパティについては、次を参照してください。、**マップ プロパティ参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+  マップのプロパティについては、、**マップ プロパティ参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
   
 ## <a name="see-also"></a>参照  
  [マップのテスト](../core/testing-maps.md)

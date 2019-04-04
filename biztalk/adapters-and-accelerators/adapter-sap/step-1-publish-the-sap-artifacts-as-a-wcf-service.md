@@ -40,7 +40,7 @@ ms.locfileid: "36989379"
   
 - 必要な SAP クライアント ライブラリです。  
   
-  これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 通常、インストール ガイドにインストールされて\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents します。  
+  これらの前提条件の詳細については、、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドを参照してください。 通常、インストール ガイドにインストールされて\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents します。  
   
 ### <a name="to-publish-the-sap-artifacts-as-a-wcf-service"></a>WCF サービスとしての SAP アイテムを発行するには  
   
@@ -72,9 +72,9 @@ ms.locfileid: "36989379"
   
    5. をクリックして、**バインド プロパティ**タブをクリックし、対象と操作のために必要な場合、バインドのプロパティの値を指定します。 このチュートリアルでは、特定の顧客の販売注文の一覧を取得する BAPI_SALESORDER_GETLIST RFC が呼び出されます。 販売注文情報は、日付列を含めることも可能性があります。 設定することをお勧め、日付列の値を取得するときに、 **EnableSafeTyping**プロパティをバインド**True**メタデータを生成するときにします。 このプロパティが設定されている場合は、SAP DATS のデータ型が文字列として表示されます。  
   
-       SAP のデータ型を同等の .NET 型にマップする方法の詳細については、次を参照してください。 [SAP データ型の基本的な](../../adapters-and-accelerators/adapter-sap/basic-sap-data-types.md)します。  
+       SAP のデータ型を同等の .NET 型にマップする方法の詳細については、[SAP データ型の基本的な](../../adapters-and-accelerators/adapter-sap/basic-sap-data-types.md)を参照してください。  
   
-       バインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
+       バインド プロパティの詳細については、[mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
   
    6. をクリックして**OK**、順にクリックします**Connect**します。 接続が確立されると、接続の状態が表示として**接続**します。  
   
@@ -167,7 +167,7 @@ ms.locfileid: "36989379"
   
 18. WCF サービスを発行します。  
   
-    1.  SSL がインターネット インフォメーション サービス (IIS) を有効にすることを確認します。 IIS の SSL を有効にする方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=197170](http://go.microsoft.com/fwlink/?LinkId=197170)します。  
+    1.  SSL がインターネット インフォメーション サービス (IIS) を有効にすることを確認します。 IIS の SSL を有効にする方法については、[ http://go.microsoft.com/fwlink/?LinkId=197170](http://go.microsoft.com/fwlink/?LinkId=197170)を参照してください。  
   
     2.  ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックし、**発行**します。  
   

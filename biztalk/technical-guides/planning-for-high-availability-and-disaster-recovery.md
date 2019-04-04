@@ -33,9 +33,9 @@ ms.locfileid: "36967579"
   
 - 仮想環境を使用して、ハードウェアのコストを制御することを検討してください。 Microsoft では、Microsoft Virtual Server 2005 R2、Windows Server 2008 HYPER-V、および Microsoft HYPER-V Server 2008 などの仮想化製品の範囲を提供します。 使用に関する推奨事項の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]仮想環境で、次を参照してください。 [BizTalk Server 2009 Hyper-v ガイド](http://go.microsoft.com/fwlink/?LinkId=151834)(<http://go.microsoft.com/fwlink/?LinkId=151834>)。  
   
-- 組織のインターネット関連のサービスを提供する境界ネットワークのドメインに 1 つまたは複数の Windows サーバーをインストールする方法を計画します。 ネットワーク負荷分散 (NLB) ソリューションを使用して、境界ネットワークのドメインで複数の Windows サーバーを構成します。 詳細については、次を参照してください。[ネットワーク負荷分散展開ガイド](http://go.microsoft.com/fwlink/?LinkId=153139)(http://go.microsoft.com/fwlink/?LinkId=153139)します。  
+- 組織のインターネット関連のサービスを提供する境界ネットワークのドメインに 1 つまたは複数の Windows サーバーをインストールする方法を計画します。 ネットワーク負荷分散 (NLB) ソリューションを使用して、境界ネットワークのドメインで複数の Windows サーバーを構成します。 詳細については、[ネットワーク負荷分散展開ガイド](http://go.microsoft.com/fwlink/?LinkId=153139)(http://go.microsoft.com/fwlink/?LinkId=153139)を参照してください。  
   
-   境界ネットワーク内のサーバーのインストールの詳細については、次を参照してください。[構成 Your ドメインときに公開するトランスポートには、インターネットに](../technical-guides/planning-for-sending-and-receiving.md#BKMK_InternetTrans)します。  
+   境界ネットワーク内のサーバーのインストールの詳細については、[構成 Your ドメインときに公開するトランスポートには、インターネットに](../technical-guides/planning-for-sending-and-receiving.md#BKMK_InternetTrans)を参照してください。  
   
   > [!NOTE]  
   >  境界ネットワークは、DMZ、非武装地帯、およびスクリーン サブネットとも呼ばれます。  
@@ -48,7 +48,7 @@ ms.locfileid: "36967579"
 - 家に Windows Server クラスターの実装の計画、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースと、エンタープライズ シングル サインオン マスター シークレット サーバーです。 クラスターの高可用性を実現する Windows Server を使用の詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースと、エンタープライズ シングル サインオン マスター シークレット サーバーを参照してください[データベースの高可用性](../technical-guides/high-availability-for-databases.md)と[。マスター シークレット サーバーの高可用性](../technical-guides/high-availability-for-the-master-secret-server.md)します。  
   
 ## <a name="high-availability-vs-disaster-recovery"></a>高可用性とします。災害復旧  
- 可用性を高めるための 2 つの規定されたメソッドがある、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境: フォールト トレランスや負荷分散、またはディザスター リカバリーを使用して可用性の向上を提供することを使用して高可用性を提供します。 各メソッドでは、可用性が向上、中にそれらの主な違いは、そのフォールト トレランスや、負荷分散を通常は、ディザスター リカバリーよりもはるかに高速の復旧時間を提供します。 フォールト トレランスおよび負荷分散を提供**高可用性**ディザスター リカバリーを提供しますが、**可用性を向上させる**します。 ディザスター リカバリーを実装する方法の詳細については、次を参照してください。[チェックリスト: ディザスター リカバリーによる可用性の向上](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)と[ディザスター リカバリー](../technical-guides/disaster-recovery.md)します。  
+ 可用性を高めるための 2 つの規定されたメソッドがある、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境: フォールト トレランスや負荷分散、またはディザスター リカバリーを使用して可用性の向上を提供することを使用して高可用性を提供します。 各メソッドでは、可用性が向上、中にそれらの主な違いは、そのフォールト トレランスや、負荷分散を通常は、ディザスター リカバリーよりもはるかに高速の復旧時間を提供します。 フォールト トレランスおよび負荷分散を提供**高可用性**ディザスター リカバリーを提供しますが、**可用性を向上させる**します。 ディザスター リカバリーを実装する方法の詳細については、[チェックリスト: ディザスター リカバリーによる可用性の向上](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)と[ディザスター リカバリー](../technical-guides/disaster-recovery.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server の可用性の向上](../technical-guides/increasing-availability-for-biztalk-server.md)   

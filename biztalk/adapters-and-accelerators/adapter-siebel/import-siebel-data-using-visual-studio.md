@@ -37,7 +37,7 @@ ms.locfileid: "36978035"
   
 3. クリックして、ようこそ画面の情報を読み取る**次**します。  
   
-4. **データ ソースの選択** ダイアログ ボックスから、**データ ソース**ドロップダウン リスト**Siebel eBusiness Applications の .NET Framework Data Provider**します。 さまざまな接続のプロパティの値を指定、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]接続文字列。 接続文字列プロパティの詳細については、次を参照してください。 [Siebel 接続文字列のデータ プロバイダー プロパティ](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)します。  
+4. **データ ソースの選択** ダイアログ ボックスから、**データ ソース**ドロップダウン リスト**Siebel eBusiness Applications の .NET Framework Data Provider**します。 さまざまな接続のプロパティの値を指定、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]接続文字列。 接続文字列プロパティの詳細については、[Siebel 接続文字列のデータ プロバイダー プロパティ](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)を参照してください。  
   
     **[次へ]** をクリックします。  
   

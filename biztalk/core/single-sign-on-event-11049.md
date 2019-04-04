@@ -38,4 +38,4 @@ ms.locfileid: "36997507"
 ## <a name="user-action"></a>ユーザーの操作  
  MSDTC が現在動作しているかどうかを確認します。  
   
- MSDTC の問題に関するヘルプは、次を参照してください。 [MSDTC を使用した問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)します。
+ MSDTC の問題に関するヘルプは、[MSDTC を使用した問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)を参照してください。

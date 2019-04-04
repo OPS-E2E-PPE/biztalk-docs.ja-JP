@@ -36,4 +36,4 @@ ms.locfileid: "37000659"
  Windows パスワード同期をサポートしているアプリケーションの種類は 'Individual' または 'Group' だけです。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 詳細については、次を参照してください。[パスワード同期](../core/password-synchronization2.md)します。
+ 詳細については、[パスワード同期](../core/password-synchronization2.md)を参照してください。

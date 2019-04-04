@@ -94,7 +94,7 @@ explorer.SaveChanges();
  SOAP の受信場所のアダプター変数は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで設定できます。 受信場所のプロパティが設定されていない場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで設定された既定の受信ハンドラーの値が使用されます。  
 
 > [!NOTE]
->  次の手順を実行する前に、受信ポートを追加しておく必要があります。 詳細については、次を参照してください。[受信ポートを作成する方法](../core/how-to-create-a-receive-port.md)します。  
+>  次の手順を実行する前に、受信ポートを追加しておく必要があります。 詳細については、[受信ポートを作成する方法](../core/how-to-create-a-receive-port.md)を参照してください。  
 
 ### <a name="to-configure-variables-for-a-soap-receive-location"></a>SOAP の受信場所の変数を構成するには  
 

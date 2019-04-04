@@ -38,4 +38,4 @@ ms.locfileid: "36986163"
 ## <a name="user-action"></a>ユーザーの操作  
  PCNS からの Windows パスワードの変更を許可する、**サーバー スナップイン**、**パスワード同期プロパティ**] タブで [ **PCNS からのパスワード同期を許可します。**  
   
- 詳細については、次を参照してください。[サーバー スナップインを使用する](../core/how-to-use-the-servers-snap-in.md)します。
+ 詳細については、[サーバー スナップインを使用する](../core/how-to-use-the-servers-snap-in.md)を参照してください。

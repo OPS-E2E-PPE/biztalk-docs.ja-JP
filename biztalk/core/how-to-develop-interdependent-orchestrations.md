@@ -28,7 +28,7 @@ ms.locfileid: "36992403"
   
 - Orch2 は、Web サービス呼び出しで Orch1 に応答します。  
   
-  この種類のプロジェクトの一例は、次を参照してください。[チュートリアル 2: 発注プロセス](http://msdn.microsoft.com/library/a324ef1b-39b3-49ab-9719-a13f526cb467)します。  
+  この種類のプロジェクトの一例は、[チュートリアル 2: 発注プロセス](http://msdn.microsoft.com/library/a324ef1b-39b3-49ab-9719-a13f526cb467)を参照してください。  
   
 ### <a name="to-develop-two-interdependent-orchestrations-orch1-and-orch2"></a>相互に依存する 2 つのオーケストレーション Orch1 と Orch2 を開発するには  
   

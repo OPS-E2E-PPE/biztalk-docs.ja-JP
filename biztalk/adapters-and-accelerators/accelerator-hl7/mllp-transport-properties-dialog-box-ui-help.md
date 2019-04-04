@@ -24,7 +24,7 @@ ms.locfileid: "36971747"
 # <a name="mllp-transport-properties-dialog-box-ui-help"></a>MLLP トランスポート プロパティ ダイアログ ボックスの UI ヘルプ
 使用する、 **MLLP トランスポート プロパティ**送信のパラメーターを構成し、受信アダプターの最小限の下位レイヤー プロトコル (MLLP) ダイアログ ボックス。 パラメーターを設定、ネットワーク接続 MLLP トランスポートのプロパティのいずれかの送信ポートまたは受信場所の MLLP トランスポートの種類を使用することができます。  
 
- MLLP プロパティの詳細については、次を参照してください。[送信および受信アダプターの構成パラメーター](../../adapters-and-accelerators/accelerator-hl7/configuration-parameters-for-send-and-receive-adapters.md)します。  
+ MLLP プロパティの詳細については、[送信および受信アダプターの構成パラメーター](../../adapters-and-accelerators/accelerator-hl7/configuration-parameters-for-send-and-receive-adapters.md)を参照してください。  
 
 ## <a name="uielement-list"></a>UI 要素の一覧  
  **MLLP トランスポート プロパティ** ダイアログ ボックスで、次の操作を行います。  

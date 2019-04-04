@@ -47,7 +47,7 @@ ms.locfileid: "36983915"
   
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して新しい BizTalk プロジェクトを作成します。 プロジェクトを呼び出す **[ffdisassemblerwalkthrough]** します。  
   
-2. キー ファイルを作成してプロジェクトに割り当てます。 このタスクの詳細については、次を参照してください。[署名 Page, Project Designer](http://go.microsoft.com/fwlink/?LinkId=125876)します。  
+2. キー ファイルを作成してプロジェクトに割り当てます。 このタスクの詳細については、[署名 Page, Project Designer](http://go.microsoft.com/fwlink/?LinkId=125876)を参照してください。  
   
 3. プロジェクトの配置プロパティで、次のように設定します。**アプリケーション名**を"FlatFileExample"に設定し**ホスト インスタンスを再起動**に`True`します。 このフラグを設定すると、キャッシュされたアセンブリのインスタンスを消去するようにホストに通知されます。  
   
@@ -231,7 +231,7 @@ ms.locfileid: "36983915"
     <Samples Path>\SDK\Utilities\PipelineTools\FFDasm ErrorFile.txt  -hs header.xsd -bs body.xsd -ts Trailer.xsd  
     ```  
   
-     これと他のパイプライン ツールの場所については、次を参照してください。[パイプライン ツール](../core/pipeline-tools.md)します。  
+     これと他のパイプライン ツールの場所については、[パイプライン ツール](../core/pipeline-tools.md)を参照してください。  
   
 3.  FFDasm.exe によって、テスト ファイル内の各 ERROR レコードに対応した {GUID}.xml という名前の出力ファイルが 2 つ生成されます。 優先度の高いエラー レコードは、次のようになります。  
   

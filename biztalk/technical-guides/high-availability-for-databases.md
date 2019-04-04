@@ -58,12 +58,12 @@ ms.locfileid: "36983155"
   
 - **使用して、SQL Server RAID 1 + 0 (独立したディスクの冗長アレイ)**、特にメッセージ ボックス データベースおよび BAM プライマリ インポート データベースの。  
   
-  BizTalk Server データベースのバックアップについては、次を参照してください。[ディザスター リカバリーのベスト プラクティス](../technical-guides/best-practices-for-disaster-recovery.md)します。  
+  BizTalk Server データベースのバックアップについては、[ディザスター リカバリーのベスト プラクティス](../technical-guides/best-practices-for-disaster-recovery.md)を参照してください。  
   
 > [!NOTE]  
 >  Microsoft SQL Server では、データベースが使用可能なである確率を高めるためのデータベース ミラーリングと呼ばれるソフトウェア ソリューションを提供します。 SQL Server データベース ミラーリングの使用は、現在、BizTalk Server データベースでトランザクションの一貫性を維持する潜在的な問題のため、Microsoft BizTalk Server データベースの高可用性を確保するためのサポートされているソリューションではありません。  
 >   
->  データベース ミラーリングと SQL Server データベースにまたがるトランザクションの詳細については、次を参照してください。[トランザクション - 可用性グループとデータベース ミラーリング](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/transactions-always-on-availability-and-database-mirroring)します。 BizTalk Server データベースを高可用性を確保する SQL Server クラスターにインストールする必要があり、ディザスター リカバリーの目的でログ配布を使用する必要があります。  
+>  データベース ミラーリングと SQL Server データベースにまたがるトランザクションの詳細については、[トランザクション - 可用性グループとデータベース ミラーリング](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/transactions-always-on-availability-and-database-mirroring)を参照してください。 BizTalk Server データベースを高可用性を確保する SQL Server クラスターにインストールする必要があり、ディザスター リカバリーの目的でログ配布を使用する必要があります。  
 >   
 >  ログ配布の詳細については、次を参照してください[内容は、BizTalk Server のログ配布しますか?。](../technical-guides/what-is-biztalk-server-log-shipping.md)  
   

@@ -32,7 +32,7 @@ ms.locfileid: "36971091"
 |**NotificationStatement**|クエリ通知に登録するために使用する SELECT ステートメントを指定します。 アダプターは、指定した SELECT ステートメントの変更の結果セットの場合にのみ、通知メッセージを取得します。|  
 |**NotifyOnListenerStart**|リスナーが開始されると、アダプターがアダプター クライアントに通知を送信するかどうかを指定します。|  
   
- これらのプロパティの詳細については、次を参照してください。 [for Oracle Database バインド プロパティを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)します。 使用する方法の詳細については、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースから通知を受信するさらに読み進める。  
+ これらのプロパティの詳細については、[for Oracle Database バインド プロパティを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)を参照してください。 使用する方法の詳細については、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースから通知を受信するさらに読み進める。  
   
 ## <a name="configuring-notifications-using-the-wcf-service-model"></a>WCF サービス モデルを使用して通知を構成します。  
  WCF サービス モデルを使用して通知を受信するには、次の必要があります。  
@@ -46,7 +46,7 @@ ms.locfileid: "36971091"
 - サービス ホストを使用してこの WCF サービス ホスト (**System.ServiceModel.ServiceHost**)。  
   
 ## <a name="the-wcf-service-contract-and-class"></a>WCF サービス コントラクトとクラス  
- 使用することができます、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF サービス コントラクト (インターフェイス) とサポートのクラスを作成する、**通知**操作。 WCF サービス コントラクトを生成する詳細については、次を参照してください。 [WCF クライアントまたは Oracle データベース ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)します。  
+ 使用することができます、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF サービス コントラクト (インターフェイス) とサポートのクラスを作成する、**通知**操作。 WCF サービス コントラクトを生成する詳細については、[WCF クライアントまたは Oracle データベース ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)を参照してください。  
   
 ### <a name="the-wcf-service-contract-interface"></a>WCF サービス コントラクト (インターフェイス)  
  次のコードに対して生成された WCF サービス コントラクト (インターフェイス) を示しています、**通知**操作。  
@@ -194,7 +194,7 @@ namespace OracleDBBindingNamespace {
   
 2. 使用して、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF サービス コントラクト (インターフェイス) とのヘルパー クラスを生成する、**通知**操作。  
   
-    詳細については、次を参照してください。 [WCF クライアントまたは Oracle データベース ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)します。 必要に応じて、サービス コントラクトとヘルパー クラスを生成するときにバインドのプロパティを指定することができます。 これは、生成された構成ファイルで設定は正しくことを保証します。  
+    詳細については、[WCF クライアントまたは Oracle データベース ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)を参照してください。 必要に応じて、サービス コントラクトとヘルパー クラスを生成するときにバインドのプロパティを指定することができます。 これは、生成された構成ファイルで設定は正しくことを保証します。  
   
 3. 手順 2 で生成されたインターフェイスとヘルパー クラスからの WCF サービスを実装します。 **通知**から受信したデータの処理エラーが発生した場合、このクラスのメソッドは、操作を中止する例外をスローできます、**通知**操作ですそれ以外の場合、メソッドでは。何も返しません。 次のように、WCF サービス クラスを属性する必要があります。  
   
@@ -262,7 +262,7 @@ namespace OracleDBBindingNamespace {
    ```  
   
    > [!IMPORTANT]
-   >  値、 **NotificationPort**プロパティのバインドは、Windows ファイアウォールの例外リストに追加する必要があります、同じポート番号に設定する必要があります。 Windows ファイアウォールの例外リストにポートを追加する方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=196959](http://go.microsoft.com/fwlink/?LinkId=196959)します。  
+   >  値、 **NotificationPort**プロパティのバインドは、Windows ファイアウォールの例外リストに追加する必要があります、同じポート番号に設定する必要があります。 Windows ファイアウォールの例外リストにポートを追加する方法については、[ http://go.microsoft.com/fwlink/?LinkId=196959](http://go.microsoft.com/fwlink/?LinkId=196959)を参照してください。  
   
    > [!IMPORTANT]
    >  設定しない場合、 **NotificationPort**バインディング プロパティ、アダプターは、このバインドのプロパティの場合は-1 の既定値を想定しています。 このような場合は、通知メッセージを受信する Windows ファイアウォールを完全に無効にする必要があります。  

@@ -36,4 +36,4 @@ ms.locfileid: "37022736"
  ENTSSO サーバーが、Microsoft Identity Integration Server (MIIS) からパスワード変更を受け取りました。 しかし、ENTSSO サーバーは、クライアント ユーザー (呼び出し元) が SSO サービス アカウントと同じアカウントの場合にのみ、MIIS からのパスワード変更を受け付けます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- MIIS でのパスワード同期の呼び出し元の構成を確認します。 詳細については、次を参照してください。 [MIIS パスワード同期の ENTSSO を構成する方法](../core/how-to-configure-entsso-for-miis-password-sync.md)します。
+ MIIS でのパスワード同期の呼び出し元の構成を確認します。 詳細については、[MIIS パスワード同期の ENTSSO を構成する方法](../core/how-to-configure-entsso-for-miis-password-sync.md)を参照してください。

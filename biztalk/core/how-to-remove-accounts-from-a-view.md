@@ -26,7 +26,7 @@ ms.locfileid: "36995395"
 # <a name="how-to-remove-accounts-from-a-view"></a>ビューからアカウントを削除する方法
 管理者を使用して、**削除アカウント**コマンドを BAM ビューからユーザーを削除し、BAM Excel ワークシートを不正アクセスから保護します。  
   
- BAM ビューを表示する方法については、次を参照してください。 [BAM ビューをリストする方法](../core/how-to-list-bam-views.md)します。  
+ BAM ビューを表示する方法については、[BAM ビューをリストする方法](../core/how-to-list-bam-views.md)を参照してください。  
   
 ### <a name="to-remove-an-account-from-a-view"></a>ビューからアカウントを削除するには  
   

@@ -23,7 +23,7 @@ ms.locfileid: "37005083"
 BizTalk Adapter for TIBCO Rendezvous は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と TIBCO Rendezvous 間に双方向の接続を提供します。 このアダプターは、TIBCO Rendezvous API と BizTalk Adapter Framework API の両方を使用して、緊密な統合を提供します。  
   
 ## <a name="about-tibco-rendezvous"></a>TIBCO Rendezvous について  
- TIBCO Rendezvous は、エンタープライズ アプリケーション統合 (EAI) のメッセージ バスを提供するプログラムです。 TIBCO には、C、C++、Java、Visual Basic および Microsoft Office Excel ワークシート上のデータ フィードおよびその他の任意のアプリケーションを受信する Microsoft .NET Framework のメッセージング Api が提供されます。 詳細については、次を参照してください。 [TIBCO Rendezvous の概念](../core/tibco-rendezvous-concepts.md)します。  
+ TIBCO Rendezvous は、エンタープライズ アプリケーション統合 (EAI) のメッセージ バスを提供するプログラムです。 TIBCO には、C、C++、Java、Visual Basic および Microsoft Office Excel ワークシート上のデータ フィードおよびその他の任意のアプリケーションを受信する Microsoft .NET Framework のメッセージング Api が提供されます。 詳細については、[TIBCO Rendezvous の概念](../core/tibco-rendezvous-concepts.md)を参照してください。  
   
 ## <a name="message-passing"></a>メッセージの受け渡し  
  メッセージを渡す概念はとても簡単です。  

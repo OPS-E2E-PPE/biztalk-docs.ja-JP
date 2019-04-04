@@ -68,7 +68,7 @@ ms.locfileid: "36994099"
    3.  **証明書の選択**ダイアログ ボックスがインストールした解読証明書を選択し、すべてのダイアログ ボックスを閉じます。  
   
        > [!NOTE]
-       >  詳細については、次を参照してください。[ホスト プロパティを変更する方法](../core/how-to-modify-host-properties.md)します。  
+       >  詳細については、[ホスト プロパティを変更する方法](../core/how-to-modify-host-properties.md)を参照してください。  
   
 ## <a name="next-steps"></a>次の手順  
  暗号化されたメッセージを受信するためのパイプラインを作成する[暗号化されたメッセージの受信用の BizTalk Server を構成する方法](../core/how-to-configure-biztalk-server-for-receiving-encrypted-messages.md)  

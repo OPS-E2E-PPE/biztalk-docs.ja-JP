@@ -50,7 +50,7 @@ ms.locfileid: "36976267"
   
    たとえば、3 つのステージの承認プロセスを強制する組織がこれら 3 つの論理ロールを定義可能性があります: Repairers、検証方法 (キー更新ステージ)、および承認者。 同様に、ロールに参加しているユーザーに属している必要があります、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]ユーザー ドメインのグループ。 SharePoint サイトをさらにロックダウンするには、(repairers、検証、承認者) などの論理ドメイン グループにユーザーを編成する必要があります。  
   
-   サイトのユーザー グループの詳細については、次を参照してください。 [Windows SharePoint Services のセキュリティ](../../adapters-and-accelerators/accelerator-swift/windows-sharepoint-services-security.md)します。  
+   サイトのユーザー グループの詳細については、[Windows SharePoint Services のセキュリティ](../../adapters-and-accelerators/accelerator-swift/windows-sharepoint-services-security.md)を参照してください。  
   
 - スタック内の各のデジタル署名は、一意である必要があります。 つまり、(同じスタックで他の署名) を基準に、一意なデジタル証明書を使用して各デジタル署名を行う必要があります。 これによって、メッセージが、メッセージの作成/修復したユーザーが承認されていないことをユーザーには、同じメッセージを複数の承認者として承認なし。  
   

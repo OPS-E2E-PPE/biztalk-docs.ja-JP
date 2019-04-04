@@ -58,7 +58,7 @@ ms.locfileid: "36993171"
   
 - テーブル パラメーター  
   
-  メッセージの構造と Bapi のビジネス オブジェクト メソッドとして表示するための SOAP アクションの詳細については、次を参照してください。 [BAPI 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-bapi-operations.md)します。  
+  メッセージの構造と Bapi のビジネス オブジェクト メソッドとして表示するための SOAP アクションの詳細については、[BAPI 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-bapi-operations.md)を参照してください。  
   
 ## <a name="bapi-transactions"></a>BAPI トランザクション  
  BAPI を呼び出すと、LUW で SAP システムの一部では常にします。 これは、機能は、RFC としてまたはビジネス オブジェクトのメソッドとして、BAPI を呼び出すかどうかに当てはまります。 RFC SDK では、同じ LUW の一部として同じ SAP 接続経由で送信されるすべての Bapi を扱います。 呼び出しの後にコミットするか、接続でトランザクションをロールバックして、[次へ] の BAPI 接続経由で送信された新しい LUW を開始します。  
@@ -82,14 +82,14 @@ ms.locfileid: "36993171"
   |CLOSE|トランザクションをコミットし、既存のチャネルを閉じます。|  
   |ABORT|トランザクションを中止し、既存のチャネルを閉じます。|  
   
-   詳細については、次を参照してください。[で BizTalk Server を使用して SAP の BAPI トランザクションの実行](../../adapters-and-accelerators/adapter-sap/run-bapi-transactions-in-sap-using-biztalk-server.md)します。  
+   詳細については、[で BizTalk Server を使用して SAP の BAPI トランザクションの実行](../../adapters-and-accelerators/adapter-sap/run-bapi-transactions-in-sap-using-biztalk-server.md)を参照してください。  
   
   > [!NOTE]
   >  設定することを確認、 **EnableBizTalkCompatibilityMode**BizTalk Server を使用してトランザクションを実行するときに、プロパティをバインドします。  
   
-- トランザクションでの Bapi を同じ WCF クライアントを使用して送信されるようにすることで WCF サービス モデル ソリューション。 詳細については、次を参照してください。 [WCF サービス モデルを使用して SAP の Bapi を呼び出す](../../adapters-and-accelerators/adapter-sap/invoke-bapis-in-sap-using-the-wcf-service-model.md)します。  
+- トランザクションでの Bapi を同じ WCF クライアントを使用して送信されるようにすることで WCF サービス モデル ソリューション。 詳細については、[WCF サービス モデルを使用して SAP の Bapi を呼び出す](../../adapters-and-accelerators/adapter-sap/invoke-bapis-in-sap-using-the-wcf-service-model.md)を参照してください。  
   
-- WCF チャネル モデル ソリューションにより、同じ WCF チャネル経由で送信されるトランザクションでの Bapi します。 詳細については、次を参照してください。 [WCF チャネル モデルを使用してアプリケーションを開発](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)します。  
+- WCF チャネル モデル ソリューションにより、同じ WCF チャネル経由で送信されるトランザクションでの Bapi します。 詳細については、[WCF チャネル モデルを使用してアプリケーションを開発](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)を参照してください。  
   
 ### <a name="limitations-on-bapi-transactions"></a>BAPI トランザクションに関する制限事項  
  BAPI トランザクションで、次の制限が適用されます。  

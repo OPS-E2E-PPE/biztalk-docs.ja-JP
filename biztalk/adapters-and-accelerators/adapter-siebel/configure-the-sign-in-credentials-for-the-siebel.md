@@ -98,13 +98,13 @@ ms.locfileid: "36971859"
 5. **[OK]** をクリックします。  
 
 > [!NOTE]
->  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] また、エンタープライズ シングル サインオン (ESSO) システムをサポートします。 ESSO は、WCF アダプターは ESSO 関連アプリケーションを認識する、BizTalk のシナリオでは適用のみです。 BizTalk Server に関するセキュリティの詳細については、次を参照してください。 [Siebel アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-siebel/security-with-siebel-adapter-and-biztalk-server.md)します。
+>  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] また、エンタープライズ シングル サインオン (ESSO) システムをサポートします。 ESSO は、WCF アダプターは ESSO 関連アプリケーションを認識する、BizTalk のシナリオでは適用のみです。 BizTalk Server に関するセキュリティの詳細については、[Siebel アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-siebel/security-with-siebel-adapter-and-biztalk-server.md)を参照してください。
 
 #### <a name="enter-credentials-for-the-wcf-siebel-port"></a>Wcf-siebel ポートの資格情報を入力します。  
 
 1. 開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
 
-2. Wcf-siebel アダプターの追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、次を参照してください。 [Siebel アダプターを BizTalk Server 管理コンソールに追加](../../adapters-and-accelerators/adapter-siebel/add-the-siebel-adapter-to-biztalk-server-administration-console.md)します。  
+2. Wcf-siebel アダプターの追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、[Siebel アダプターを BizTalk Server 管理コンソールに追加](../../adapters-and-accelerators/adapter-siebel/add-the-siebel-adapter-to-biztalk-server-administration-console.md)を参照してください。  
 
 3. コンソール ツリーで、展開**BizTalk グループ**の順に展開**アプリケーション**をクリックして、ポートを作成するアプリケーションを展開し**送信ポート**. 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
 
@@ -119,7 +119,7 @@ ms.locfileid: "36971859"
 6. **[OK]** をクリックします。  
 
 > [!NOTE]
->  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] また、エンタープライズ シングル サインオン (ESSO) システムをサポートします。 ESSO は、WCF アダプターは ESSO 関連アプリケーションを認識する、BizTalk のシナリオでは適用のみです。 BizTalk Server に関するセキュリティの詳細については、次を参照してください。 [Siebel アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-siebel/security-with-siebel-adapter-and-biztalk-server.md)します。
+>  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] また、エンタープライズ シングル サインオン (ESSO) システムをサポートします。 ESSO は、WCF アダプターは ESSO 関連アプリケーションを認識する、BizTalk のシナリオでは適用のみです。 BizTalk Server に関するセキュリティの詳細については、[Siebel アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-siebel/security-with-siebel-adapter-and-biztalk-server.md)を参照してください。
 
 ## <a name="see-also"></a>参照  
 [Siebel アダプターを使用した BizTalk アプリケーションを作成する構成要素](../../adapters-and-accelerators/adapter-siebel/building-blocks-to-create-biztalk-applications-with-the-siebel-adapter.md)

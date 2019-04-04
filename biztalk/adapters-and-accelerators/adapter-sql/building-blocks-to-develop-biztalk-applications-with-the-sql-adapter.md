@@ -24,7 +24,7 @@ ms.locfileid: "36975491"
   
 ## <a name="using-visual-studio"></a>Visual Studio の使用  
   
-1. **BizTalk プロジェクトを作成し、スキーマの生成**します。 BizTalk プロジェクトを作成する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、し、SQL Server で実行する操作のスキーマを生成します。 たとえば、SQL Server テーブルにレコードを挿入する場合は、そのテーブルの挿入操作のスキーマを生成する必要があります。 スキーマを生成するには、使用する必要があります、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]します。 詳細については、次を参照してください。 [SQL アダプターを使用して Visual Studio での SQL Server 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)します。  
+1. **BizTalk プロジェクトを作成し、スキーマの生成**します。 BizTalk プロジェクトを作成する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、し、SQL Server で実行する操作のスキーマを生成します。 たとえば、SQL Server テーブルにレコードを挿入する場合は、そのテーブルの挿入操作のスキーマを生成する必要があります。 スキーマを生成するには、使用する必要があります、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]します。 詳細については、[SQL アダプターを使用して Visual Studio での SQL Server 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)を参照してください。  
   
 2. **オーケストレーションを設定**します。 スキーマを生成した後、オーケストレーション デザイナーを使用してオーケストレーションを設定する必要があります。 基本的なオーケストレーションには、受信と送信図形とし、受信論理ポートの送信を追加します。 後の手順でマップするこれらの論理ポートを物理ポートを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 オーケストレーションでは、これらのポートを使用して、クライアントがアダプターから送信されるメッセージを選択します。 オーケストレーションは、SQL Server にメッセージを渡します。 SQL Server が応答を送信すると、オーケストレーションは、アダプターのクライアントに応答を渡します。  
   
@@ -45,7 +45,7 @@ ms.locfileid: "36975491"
   
 1. **アプリケーションを構成**します。 デプロイを使用した BizTalk プロジェクト[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]に表示されます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]オーケストレーションとして、管理コンソール。 作成した論理ポートをマッピングすることによって、このオーケストレーションを構成する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]を物理ポートを使用して今すぐ作成する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
-    物理ポートでは、"action"または「アクション マッピング」を指定する必要があります。 このアクションは、SQL Server で実行する操作に対応します。 動的アクションを使用していない場合は、アクションを指定する必要があります。 アクションの詳細については、次を参照してください。 [SQL アダプタの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-soap-action-for-the-sql-adapter.md)します。  
+    物理ポートでは、"action"または「アクション マッピング」を指定する必要があります。 このアクションは、SQL Server で実行する操作に対応します。 動的アクションを使用していない場合は、アクションを指定する必要があります。 アクションの詳細については、[SQL アダプタの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-sql/configure-the-soap-action-for-the-sql-adapter.md)を参照してください。  
   
 2. **アプリケーションを起動**します。 アプリケーションを構成した後、アプリケーションを起動し、定義済みのファイルの場所に要求メッセージを削除する必要があります。 オーケストレーションは、要求メッセージを使用し、SQL Server に渡します、応答を受信します。 この応答は、別の定義済みのファイルの場所のアダプター クライアントの使用可能です。  
   

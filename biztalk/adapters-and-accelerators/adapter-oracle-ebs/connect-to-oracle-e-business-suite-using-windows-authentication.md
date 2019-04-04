@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37009107"
 ---
 # <a name="connect-to-oracle-e-business-suite-using-windows-authentication"></a>Windows 認証を使用して Oracle E-business Suite への接続します。
-[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]により、クライアントは、Oracle E-business Suite との接続を確立するために Windows 認証を使用するアダプター。 Windows 認証を使用するには、アダプター クライアントはユーザー名の「/」を指定し、パスワードを空白のままにする必要があります。 Windows 認証を使用して Oracle E-business Suite への接続に関する詳細については、次を参照してください。 [Visual Studio での Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)します。  
+[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]により、クライアントは、Oracle E-business Suite との接続を確立するために Windows 認証を使用するアダプター。 Windows 認証を使用するには、アダプター クライアントはユーザー名の「/」を指定し、パスワードを空白のままにする必要があります。 Windows 認証を使用して Oracle E-business Suite への接続に関する詳細については、[Visual Studio での Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)を参照してください。  
 
 ## <a name="what-you-need-to-know"></a>知る必要があります。  
  Windows 認証を使用するには、次の操作を行う必要があります。  

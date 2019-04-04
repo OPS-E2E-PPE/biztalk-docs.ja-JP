@@ -86,7 +86,7 @@ Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/ad
       ```  
 
    > [!NOTE]
-   >  公開キーとバージョンを確認する方法については、次を参照してください。[公開キーとバージョンを決定する](#BKMK_PubKey)します。  
+   >  公開キーとバージョンを確認する方法については、[公開キーとバージョンを決定する](#BKMK_PubKey)を参照してください。  
 
 4. machine.config ファイルを保存して閉じます。  
 

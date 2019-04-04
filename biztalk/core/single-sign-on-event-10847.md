@@ -36,4 +36,4 @@ ms.locfileid: "36975835"
  単独アプリケーションの場合、マッピングは Windows ドメイン ユーザーに対してのみ作成できます (ローカル アカウントやグループ アカウントは含まれません)。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 個々 のアプリケーションの詳細については、次を参照してください。 [SSO 関連アプリケーション](../core/sso-affiliate-applications.md)します。
+ 個々 のアプリケーションの詳細については、[SSO 関連アプリケーション](../core/sso-affiliate-applications.md)を参照してください。

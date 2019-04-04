@@ -53,7 +53,7 @@ ms.locfileid: "36994491"
   
 - [オーケストレーション デバッガーの対話モード](../core/interactive-mode-in-orchestration-debugger.md)  
   
-  機能は、サービスの状態によって異なります。 対話形式のデバッグを実行するには、現在 "ブレークポイント" 状態のサービス インスタンスを、任意のビューから呼び出します。 オーケストレーションのデバッグについては、次を参照してください。[オーケストレーション デバッガーとメッセージ フロー ビューを呼び出す方法](../core/how-to-invoke-the-orchestration-debugger-and-the-message-flow-views.md)します。  
+  機能は、サービスの状態によって異なります。 対話形式のデバッグを実行するには、現在 "ブレークポイント" 状態のサービス インスタンスを、任意のビューから呼び出します。 オーケストレーションのデバッグについては、[オーケストレーション デバッガーとメッセージ フロー ビューを呼び出す方法](../core/how-to-invoke-the-orchestration-debugger-and-the-message-flow-views.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

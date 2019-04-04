@@ -24,7 +24,7 @@ ms.locfileid: "36984339"
 # <a name="how-to-customize-general-settings-in-biztalk-mapper"></a>BizTalk マッパーの全般的な設定をカスタマイズする方法
 マップの特定の表示オプションの既定の設定を変更できます。 これらの設定は、Visual Studio を開くたびに使用できます。 ここでは、このようなオプションについて説明します。  
   
- 色とフォントの既定の設定も設定できます。 設定を選択する方法については、次を参照してください。[方法、色のカスタマイズ、BizTalk マッパーでフォント](../core/how-to-customize-colors-and-font-in-biztalk-mapper.md)します。  
+ 色とフォントの既定の設定も設定できます。 設定を選択する方法については、[方法、色のカスタマイズ、BizTalk マッパーでフォント](../core/how-to-customize-colors-and-font-in-biztalk-mapper.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
  これらのオプションを使用するには、BizTalk マッパーが実行されている必要があります。  
@@ -33,7 +33,7 @@ ms.locfileid: "36984339"
   
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]で、 **[ツール]** メニューの **[オプション]** をクリックします。  
   
-    または、キーボードの Alt キーを押しながら TO を押してもかまいません。 マッパーのキーボード ショートカットの一覧は、次を参照してください。 [BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)します。  
+    または、キーボードの Alt キーを押しながら TO を押してもかまいません。 マッパーのキーボード ショートカットの一覧は、[BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)を参照してください。  
   
 2. **オプション**ダイアログ ボックスで、左側のウィンドウで、 **BizTalk マッパー**ノードをクリック**全般**します。  
   

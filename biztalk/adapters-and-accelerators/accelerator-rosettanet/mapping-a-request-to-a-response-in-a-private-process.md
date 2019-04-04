@@ -84,10 +84,10 @@ ms.locfileid: "36976227"
 2.  ツールボックスで、をクリックして、**変換**図形、および位置は、要求メッセージを応答メッセージに変換する必要があるオーケストレーション内の位置にドラッグします。  
   
     > [!NOTE]
-    >  配置の例については、**変換**図形、PIP3A4PrivateResponder.odx オーケストレーションを参照してください。 ある\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pipautomation\3a4\pr です。 このサンプルでは、**変換**図形のすぐ下、 **IsActivityDoubleAction**図形。 詳細については、次を参照してください。 [3A4 プライベート レスポンダー オーケストレーションを使用してビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)します。  
+    >  配置の例については、**変換**図形、PIP3A4PrivateResponder.odx オーケストレーションを参照してください。 ある\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pipautomation\3a4\pr です。 このサンプルでは、**変換**図形のすぐ下、 **IsActivityDoubleAction**図形。 詳細については、[3A4 プライベート レスポンダー オーケストレーションを使用してビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)を参照してください。  
   
     > [!NOTE]
-    >  複数の Pip の複数のマップを組み込む方法の例は、次を参照してください。 [Double Action PIPAutomation Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)します。  
+    >  複数の Pip の複数のマップを組み込む方法の例は、[Double Action PIPAutomation Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)を参照してください。  
   
 3.  オーケストレーション デザイン画面でクリックして**ConstructMessage1**します。 プロパティ ウィンドウで、図形の名前、および作成するメッセージの名前を入力します。  
   

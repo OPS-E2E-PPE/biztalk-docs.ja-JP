@@ -77,7 +77,7 @@ ms.locfileid: "36999035"
 
 3. コマンド プロンプトで「 **trace.cmd-停止**、し、ENTER キーを押します。  
 
-4. bts2006.bin ファイルには、トレース ツールの出力が含まれます。 分析のため、マイクロソフト製品サポート サービスに連絡してください。 詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=41645](http://go.microsoft.com/fwlink/?LinkId=41645)します。  
+4. bts2006.bin ファイルには、トレース ツールの出力が含まれます。 分析のため、マイクロソフト製品サポート サービスに連絡してください。 詳細については、[ http://go.microsoft.com/fwlink/?LinkId=41645](http://go.microsoft.com/fwlink/?LinkId=41645)を参照してください。  
 
    MQSAgent Trace Utility を実行するには、次の手順を実行します。  
 
@@ -87,4 +87,4 @@ ms.locfileid: "36999035"
 
 7. コマンド プロンプトで「 **MQSTrace.cmd-停止**します。  
 
-8. MQSAdapterTrace.bin ファイルには、トレース ツールの出力が含まれます。 分析のため、マイクロソフト製品サポート サービスに連絡してください。 詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=41645](http://go.microsoft.com/fwlink/?LinkId=41645)します。
+8. MQSAdapterTrace.bin ファイルには、トレース ツールの出力が含まれます。 分析のため、マイクロソフト製品サポート サービスに連絡してください。 詳細については、[ http://go.microsoft.com/fwlink/?LinkId=41645](http://go.microsoft.com/fwlink/?LinkId=41645)を参照してください。

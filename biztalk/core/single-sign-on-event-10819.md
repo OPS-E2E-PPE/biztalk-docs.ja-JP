@@ -38,4 +38,4 @@ ms.locfileid: "36972115"
 ## <a name="user-action"></a>ユーザーの操作  
  マッピングの競合が予想される動作の場合は、操作は必要ありません。このメッセージは情報のみです。 マッピングの競合を許可する必要がある場合は、アプリケーションを構成します。  
   
- マッピングの競合の詳細については、次を参照してください。**パスワード同期アダプターのプロパティ: オプション**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+ マッピングの競合の詳細については、**パスワード同期アダプターのプロパティ: オプション**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。

@@ -30,7 +30,7 @@ ms.locfileid: "37019254"
 
 - ビジネス プロファイルが別のパーティとの間でメッセージを送受信する方法を定義するエンコード設定 (X12 メッセージおよび EDIFACT メッセージ用) およびプロトコル設定 (AS2)。  
 
-  ビジネス プロファイルの詳細については、次を参照してください。[ビジネス プロファイル](http://msdn.microsoft.com/library/f8286130-57fe-40ed-9fd8-81da2c8baaaf)します。 エンコーディングとトランスポート プロトコル設定の詳細については、次を参照してください。[プロトコル設定](../core/protocol-settings.md)します。  
+  ビジネス プロファイルの詳細については、[ビジネス プロファイル](http://msdn.microsoft.com/library/f8286130-57fe-40ed-9fd8-81da2c8baaaf)を参照してください。 エンコーディングとトランスポート プロトコル設定の詳細については、[プロトコル設定](../core/protocol-settings.md)を参照してください。  
 
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  

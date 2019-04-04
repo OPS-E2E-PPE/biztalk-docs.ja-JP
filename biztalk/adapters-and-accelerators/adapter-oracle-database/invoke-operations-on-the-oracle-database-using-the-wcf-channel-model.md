@@ -59,20 +59,20 @@ ms.locfileid: "37007419"
 ### <a name="lob-data-and-message-streaming-support"></a>LOB データおよびメッセージのストリーミング サポート  
  方法の詳細については[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]LOB データのストリーミング サポートを参照してください[Oracle データベース アダプターのラージ オブジェクト データ型のストリーミング](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)します。  
   
- ノード値のエンド ツー エンドの LOB データのストリーミングをサポートするために、コードでは、ストリーミングの実装の詳細については、次を参照してください。[ストリーミング Oracle LOB データ型を使用してデータベース、WCF チャネル モデル](../../adapters-and-accelerators/adapter-oracle-database/streaming-oracle-database-lob-data-types-using-the-wcf-channel-model.md)します。  
+ ノード値のエンド ツー エンドの LOB データのストリーミングをサポートするために、コードでは、ストリーミングの実装の詳細については、[ストリーミング Oracle LOB データ型を使用してデータベース、WCF チャネル モデル](../../adapters-and-accelerators/adapter-oracle-database/streaming-oracle-database-lob-data-types-using-the-wcf-channel-model.md)を参照してください。  
   
 ## <a name="transaction-support-on-outbound-operations-in-the-wcf-channel-model"></a>WCF チャネル モデルでの送信操作でトランザクションのサポート。  
  アダプターは、Oracle データベースで専用のトランザクション内で呼び出す各操作を実行します。 これらのトランザクションの分離レベルを設定して制御することができます、 **TransactionIsolationLevel**プロパティをバインドします。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、SCOTT を使用します。ACCOUNTACTIVITY テーブルです。 これらの成果物を生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
+ このトピックの例では、SCOTT を使用します。ACCOUNTACTIVITY テーブルです。 これらの成果物を生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、[SDK 内のサンプル](../../core/samples-in-the-sdk.md)を参照してください。  
   
 ## <a name="how-do-i-invoke-an-operation-by-using-a-channel"></a>チャネルを使用して、操作を呼び出す方法  
  使用して、操作を呼び出す、 **IRequestChannel**、次の手順に従います。  
   
 #### <a name="how-to-invoke-an-operation-by-using-an-instance-of-irequestchannel"></a>IRequestChannel のインスタンスを使用して、操作を呼び出す方法  
   
-1. チャネル ファクトリの作成 (**ChannelFactory\<IRequestChannel\>**)。 これを行うには、バインドを指定する必要があります (**OracleDBBinding**) とエンドポイント アドレス。 コードで強制的に、または構成で宣言によって、バインディングとエンドポイント アドレスを指定できます。 構成でバインディングとエンドポイント アドレスを指定する方法の詳細については、次を参照してください。 [Oracle データベースを使用してチャネルを作成](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)です。  
+1. チャネル ファクトリの作成 (**ChannelFactory\<IRequestChannel\>**)。 これを行うには、バインドを指定する必要があります (**OracleDBBinding**) とエンドポイント アドレス。 コードで強制的に、または構成で宣言によって、バインディングとエンドポイント アドレスを指定できます。 構成でバインディングとエンドポイント アドレスを指定する方法の詳細については、[Oracle データベースを使用してチャネルを作成](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)を参照してください。  
   
    ```  
    // Create a binding  

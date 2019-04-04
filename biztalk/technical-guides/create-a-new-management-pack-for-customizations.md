@@ -30,4 +30,4 @@ ms.locfileid: "37016799"
   
 - 個々の管理パックに対するカスタマイズの追跡および更新が簡単になります。  
   
-  シールし、封印されていない管理パックについての詳細についてを参照してください。[管理パックの形式](http://go.microsoft.com/fwlink/?LinkID=198193)(http://go.microsoft.com/fwlink/?LinkId=198193)します。 管理パックのカスタマイズの詳細については、次を参照してください。[管理パックのカスタマイズ](http://go.microsoft.com/fwlink/?LinkID=198194)(http://go.microsoft.com/fwlink/?LinkID=198194)します。
+  シールし、封印されていない管理パックについての詳細についてを参照してください。[管理パックの形式](http://go.microsoft.com/fwlink/?LinkID=198193)(http://go.microsoft.com/fwlink/?LinkId=198193)します。 管理パックのカスタマイズの詳細については、[管理パックのカスタマイズ](http://go.microsoft.com/fwlink/?LinkID=198194)(http://go.microsoft.com/fwlink/?LinkID=198194)を参照してください。

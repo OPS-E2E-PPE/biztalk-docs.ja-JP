@@ -30,7 +30,7 @@ ms.locfileid: "37014195"
   
   ![引き出し線なしのスクリーン ショット](../core/media/properties-grid.gif "Properties_Grid")  
   
-  ソースとターゲット スキーマの詳細については、次を参照してください。[コンパイラ ディレクティブおよびリンク](../core/compiler-directives-and-links.md)します。 設定と使用については、**ソース リンク**と**ターゲット リンク**プロパティを参照してください[ノード階層の照合を構成する方法](../core/how-to-configure-node-hierarchy-matching.md)と[する方法ソース リンクのコンパイラ値を設定](../core/how-to-set-the-source-links-compiler-value.md)します。  
+  ソースとターゲット スキーマの詳細については、[コンパイラ ディレクティブおよびリンク](../core/compiler-directives-and-links.md)を参照してください。 設定と使用については、**ソース リンク**と**ターゲット リンク**プロパティを参照してください[ノード階層の照合を構成する方法](../core/how-to-configure-node-hierarchy-matching.md)と[する方法ソース リンクのコンパイラ値を設定](../core/how-to-set-the-source-links-compiler-value.md)します。  
   
 ## <a name="see-also"></a>参照  
  [リンクを使用してレコードとフィールド マッピングを指定する](../core/using-links-to-specify-record-and-field-mappings.md)

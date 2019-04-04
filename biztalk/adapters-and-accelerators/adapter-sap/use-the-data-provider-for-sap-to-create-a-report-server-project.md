@@ -89,7 +89,7 @@ ms.locfileid: "37008211"
   
    7. **ウィザードの完了**ダイアログ ボックスで、レポートの名前を指定の概要を確認 をクリックし、**完了**します。 このトピックでは、レポートの名前を指定します`SAPReport`します。  
   
-      レポートを表示できるようになりました。 レポートを表示する方法については、次を参照してください。 [SAP についてレポートを表示](../../adapters-and-accelerators/adapter-sap/view-the-reports-for-sap.md)します。  
+      レポートを表示できるようになりました。 レポートを表示する方法については、[SAP についてレポートを表示](../../adapters-and-accelerators/adapter-sap/view-the-reports-for-sap.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [Data Provider for SAP を SSRS と一緒に使用する](../../adapters-and-accelerators/adapter-sap/use-the-data-provider-for-sap-with-ssrs.md)

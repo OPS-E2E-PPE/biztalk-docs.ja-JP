@@ -48,11 +48,11 @@ ms.locfileid: "37005723"
   
 7. **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作を行います。  
   
-   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、SAP システムにメッセージを送信する接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
+   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、SAP システムにメッセージを送信する接続 URI を指定します。 接続 URI の詳細については、[SAP システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)を参照してください。  
   
        ![送信ポートで指定された接続 URI](../../adapters-and-accelerators/adapter-sap/media/53ae71e1-89ec-49c5-8096-ff04a2c94c0a.gif "53ae71e1-89ec-49c5-8096-ff04a2c94c0a")  
   
-   2. **全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。 フラット ファイル IDOC を送信するには、使用する必要があります、 **SendIdoc** WCF ベースによって公開される操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 **SendIdoc**操作には、厳密に型指定のスキーマが Idoc を送信するアダプターのクライアントが使用できます。 詳細については、次を参照してください。 [sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)します。 次に示します、**アクション**の操作は、テキスト ボックス、 **SendIdoc**操作。  
+   2. **全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。 フラット ファイル IDOC を送信するには、使用する必要があります、 **SendIdoc** WCF ベースによって公開される操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 **SendIdoc**操作には、厳密に型指定のスキーマが Idoc を送信するアダプターのクライアントが使用できます。 詳細については、[sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)を参照してください。 次に示します、**アクション**の操作は、テキスト ボックス、 **SendIdoc**操作。  
   
        ![送信ポートでアクションを指定](../../adapters-and-accelerators/adapter-sap/media/94dd1505-5529-43cf-a27b-2588a022dfb9.gif "94dd1505-5529-43cf-a27b-2588a022dfb9")  
   

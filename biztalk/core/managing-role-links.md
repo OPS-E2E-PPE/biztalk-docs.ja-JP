@@ -22,7 +22,7 @@ ms.locfileid: "36998947"
 # <a name="manage-role-links"></a>ロール リンクを管理します。
 
 ## <a name="overview"></a>概要
-このセクションでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して BizTalk アプリケーションのロール リンクを管理する方法について説明します。 ロール リンクとは、企業間取引にかかわるパーティ間の関係を定義し、両方向の連携に使用されるメッセージとポートの種類を指定するものです。 ロール リンクの背景については、次を参照してください。[オーケストレーションでロール リンクを使用して](../core/using-role-links-in-orchestrations.md)します。  
+このセクションでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して BizTalk アプリケーションのロール リンクを管理する方法について説明します。 ロール リンクとは、企業間取引にかかわるパーティ間の関係を定義し、両方向の連携に使用されるメッセージとポートの種類を指定するものです。 ロール リンクの背景については、[オーケストレーションでロール リンクを使用して](../core/using-role-links-in-orchestrations.md)を参照してください。  
 
 ## <a name="added-to-application"></a>アプリケーションに追加  
  ロール リンクは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk アセンブリとしてビルドおよびコンパイルされます。 ロール リンクを単独でアプリケーションに追加することはできません。ロール リンクは次のようにしてアプリケーションに追加されます。  
@@ -40,10 +40,10 @@ ms.locfileid: "36998947"
   
 - ロール リンクに定義された各パーティの論理ポートを、アプリケーションがホストされる BizTalk ホスト インスタンスの物理的ポートにバインドする。  
   
-  ロール リンクの開発に関する詳細については、次を参照してください。[オーケストレーションでロール リンクを使用して](../core/using-role-links-in-orchestrations.md)します。  
+  ロール リンクの開発に関する詳細については、[オーケストレーションでロール リンクを使用して](../core/using-role-links-in-orchestrations.md)を参照してください。  
   
 > [!NOTE]
->  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、次を参照してください。、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。  
+>  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。  
   
 ## <a name="next-step"></a>次の手順
   

@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36982027"
 ---
 # <a name="insert-update-delete-or-select-operations-using-biztalk-server-with-the-sql-adapter"></a>挿入、更新、削除、または SQL アダプターを使用した BizTalk Server を使用して操作を選択します。
-[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]一連の標準的な操作で SQL Server データベースのテーブルおよびビューを表示します。 データ操作言語 (DML) 操作といいます。 DML 操作を使用すると、単純な Insert、Update、Select を実行し、テーブルとビューで操作を削除できます。 アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。 [Insert、Update、Delete、およびテーブルとビューを SQL アダプターを使用した操作の選択](../../adapters-and-accelerators/adapter-sql/insert-update-delete-and-select-on-tables-and-views-with-the-sql-adapter.md)します。 これらの操作用の SOAP メッセージの構造については、次を参照してください。[挿入、更新、削除、およびテーブルおよびビューの選択操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)します。  
+[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]一連の標準的な操作で SQL Server データベースのテーブルおよびビューを表示します。 データ操作言語 (DML) 操作といいます。 DML 操作を使用すると、単純な Insert、Update、Select を実行し、テーブルとビューで操作を削除できます。 アダプターがこれらの操作をサポートする方法の詳細については、[Insert、Update、Delete、およびテーブルとビューを SQL アダプターを使用した操作の選択](../../adapters-and-accelerators/adapter-sql/insert-update-delete-and-select-on-tables-and-views-with-the-sql-adapter.md)を参照してください。 これらの操作用の SOAP メッセージの構造については、[挿入、更新、削除、およびテーブルおよびビューの選択操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)を参照してください。  
   
 > [!NOTE]
 >  ユーザー定義型の列を含むテーブルに対して操作を実行している場合ことを確認するを参照してください[テーブルと、SQL アダプターを使用してユーザー定義型を持つビューで操作](../../adapters-and-accelerators/adapter-sql/operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter.md)アプリケーションの開発を開始する前にします。  
@@ -43,17 +43,17 @@ ms.locfileid: "36982027"
    このトピックでは、これらのタスクを実行する手順を説明します。  
   
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル SelectTable、このトピックの「に基づいてが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。 [SQL アダプタのサンプル](../../adapters-and-accelerators/adapter-sql/samples-for-the-sql-adapter.md)します。  
+ サンプル SelectTable、このトピックの「に基づいてが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[SQL アダプタのサンプル](../../adapters-and-accelerators/adapter-sql/samples-for-the-sql-adapter.md)を参照してください。  
   
 ## <a name="generating-schema"></a>スキーマを生成します。  
- このトピックでは、SQL Server データベースの EMPLOYEE テーブルからレコードを選択して基本的な DML 操作を実行する方法を示します。 EMPLOYEE テーブルを作成するサンプルに付属のスクリプトを実行します。 サンプルの詳細については、次を参照してください。[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)します。  
+ このトピックでは、SQL Server データベースの EMPLOYEE テーブルからレコードを選択して基本的な DML 操作を実行する方法を示します。 EMPLOYEE テーブルを作成するサンプルに付属のスクリプトを実行します。 サンプルの詳細については、[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)を参照してください。  
   
  レコードを選択する方法を示すためには、EMPLOYEE テーブルに対して Select 操作のスキーマが生成されます。 BizTalk プロジェクトを作成して使用する必要があります、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]スキーマを生成します。 参照してください[SQL アダプターを使用して Visual Studio での SQL Server 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)スキーマを生成する方法についての詳細。  
   
 > [!IMPORTANT]
 >  ユーザー定義型 (Udt) 列を持つテーブルに対する操作のメタデータを生成する場合と同じ場所にある、Udt のそれぞれのアセンブリが使用できるように、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]実行可能ファイル devenv.exe します。 実行可能ファイルは通常、`<installation drive>:\Program Files\Microsoft Visual Studio <version>\Common7\IDE`します。 この例では、UDT (ポイント) 列が EMPLOYEE テーブルにあります。 同じ場所にあるそれぞれのアセンブリをコピーするかどうかを確認、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]実行可能ファイルです。  
 > 
->  UDT を作成する方法については、次を参照してください。[ユーザー定義型を作成する](https://msdn.microsoft.com/library/ms131106.aspx)します。 SQL Server で UDT を登録する方法については、次を参照してください。 [SQL Server で Registering User-Defined 型](https://msdn.microsoft.com/library/eybzcxe6(v=vs.85).aspx)します。  
+>  UDT を作成する方法については、[ユーザー定義型を作成する](https://msdn.microsoft.com/library/ms131106.aspx)を参照してください。 SQL Server で UDT を登録する方法については、[SQL Server で Registering User-Defined 型](https://msdn.microsoft.com/library/eybzcxe6(v=vs.85).aspx)を参照してください。  
   
 ## <a name="defining-messages-and-message-types"></a>メッセージおよびメッセージの種類を定義します。  
  先に生成したスキーマは、オーケストレーションのメッセージに求められる "型" を記述します。 メッセージは通常、対応するスキーマによって定義された型の変数です。 オーケストレーションのメッセージを作成し、前の手順で生成したスキーマにリンクする必要がありますようになりました。  
@@ -116,10 +116,10 @@ ms.locfileid: "36982027"
   
  これらのプロパティを指定したら、メッセージの構築図形とポートを接続すると、し、オーケストレーションが完了します。  
   
- BizTalk ソリューションをビルドし、BizTalk Server に展開する必要がありますようになりました。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。  
+ BizTalk ソリューションをビルドし、BizTalk Server に展開する必要がありますようになりました。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。  
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- [オーケストレーション] ペインで先ほど作成したオーケストレーションが表示されている BizTalk プロジェクトを配置した後、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 使用する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールにアプリケーションを構成します。 チュートリアルについては、次を参照してください。[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)します。
+ [オーケストレーション] ペインで先ほど作成したオーケストレーションが表示されている BizTalk プロジェクトを配置した後、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 使用する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールにアプリケーションを構成します。 チュートリアルについては、[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)を参照してください。
   
  アプリケーションを構成する必要があります。  
   
@@ -131,13 +131,13 @@ ms.locfileid: "36982027"
   
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーションが、SQL Server データベースからの応答を含む応答メッセージをドロップする場所の場所を定義します。  
   
-  - SQL Server データベースにメッセージを送信する物理 Wcf-custom または WCF-SQL 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 ポートを作成する方法については、次を参照してください。 [SQL アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sql/manually-configure-a-physical-port-binding-to-the-sql-adapter.md)します。
+  - SQL Server データベースにメッセージを送信する物理 Wcf-custom または WCF-SQL 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 ポートを作成する方法については、[SQL アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sql/manually-configure-a-physical-port-binding-to-the-sql-adapter.md)を参照してください。
   
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 このバインド ファイルをインポートすることができます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール (発信) の送信ポートを作成したり (着信) 用のポートを受信します。 詳細については、次を参照してください。 [SQL アダプターを使用するポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md)します。
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 このバインド ファイルをインポートすることができます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール (発信) の送信ポートを作成したり (着信) 用のポートを受信します。 詳細については、[SQL アダプターを使用するポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md)を参照してください。
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- SQL Server データベースのテーブルからレコードを選択するための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを起動する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。
+ SQL Server データベースのテーブルからレコードを選択するための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを起動する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。
   
  この段階で、ことを確認します。  
   
@@ -152,7 +152,7 @@ ms.locfileid: "36982027"
 > [!IMPORTANT]
 >  ユーザー定義型 (Udt) 列を持つテーブルに対する操作を実行する場合と同じ場所にある、Udt のそれぞれのアセンブリが使用できるように、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]実行可能ファイル、btsntsvc.exe します。 実行可能ファイルは通常、`<installation drive>:\Program Files\Microsoft BizTalk Server <version>`します。 この例では、UDT (ポイント) 列が EMPLOYEE テーブルにあります。 同じ場所にあるそれぞれのアセンブリをコピーするかどうかを確認、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]実行可能ファイルです。  
 > 
->  UDT を作成する方法については、次を参照してください。[ユーザー定義型を作成する](https://msdn.microsoft.com/library/ms131106.aspx)します。 SQL Server で UDT を登録する方法については、次を参照してください。 [SQL Server で Register User-Defined 型](https://msdn.microsoft.com/library/ms131079.aspx)します。  
+>  UDT を作成する方法については、[ユーザー定義型を作成する](https://msdn.microsoft.com/library/ms131106.aspx)を参照してください。 SQL Server で UDT を登録する方法については、[SQL Server で Register User-Defined 型](https://msdn.microsoft.com/library/ms131079.aspx)を参照してください。  
   
 ## <a name="executing-the-operation"></a>操作の実行  
  ファイルに要求メッセージを削除する必要があります、アプリケーションを実行した後の受信場所。 要求メッセージのスキーマは、先に生成した Select 操作のスキーマに準拠する必要があります。 たとえば、EMPLOYEE テーブルからすべてのレコードを選択する要求メッセージには。  
@@ -189,7 +189,7 @@ ms.locfileid: "36982027"
   
 ## <a name="best-practices"></a>ベスト プラクティス  
   
--   展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した、送信ポートなどの項目を作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定、ファイルからインポートできます。 バインド ファイルの詳細については、次を参照してください。[再利用の SQL アダプター バインド](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)します。
+-   展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した、送信ポートなどの項目を作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定、ファイルからインポートできます。 バインド ファイルの詳細については、[再利用の SQL アダプター バインド](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)を参照してください。
   
 -   場合は、更新、挿入、または削除する大量のデータ確認して値を設定する適切なタイムアウト、WCF アダプターを MSDTC トランザクション。 詳細については、「、アダプターが挿入、更新、または大量のデータを BizTalk Server を使用して 1 つの操作の削除に失敗」の問題を参照してください。 [SQL アダプターでの運用上の問題のトラブルシューティングを行う](../../adapters-and-accelerators/adapter-sql/troubleshoot-operational-issues-with-the-sql-adapter.md)します。  
   

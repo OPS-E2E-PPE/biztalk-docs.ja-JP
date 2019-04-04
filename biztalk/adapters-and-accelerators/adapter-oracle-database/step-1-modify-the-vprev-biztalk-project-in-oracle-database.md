@@ -40,7 +40,7 @@ ms.locfileid: "37010571"
   
 1. SCOTT に対する挿入操作のメタデータを生成します。WCF ベースを使用して顧客テーブル[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 使用することができます、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]メタデータを生成します。  
   
-    メタデータを生成する方法の詳細については、次を参照してください。 [Visual Studio での Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)します。 スキーマを生成すると後のような名前のファイル*OracleDBBindingSchema.xsd* BizTalk プロジェクトに追加されます。 このファイルには、SCOTT の挿入操作を実行するメッセージを送信するためのスキーマが含まれています。WCF ベースを使用して Oracle データベースの CUSTOMER テーブル[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。  
+    メタデータを生成する方法の詳細については、[Visual Studio での Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)を参照してください。 スキーマを生成すると後のような名前のファイル*OracleDBBindingSchema.xsd* BizTalk プロジェクトに追加されます。 このファイルには、SCOTT の挿入操作を実行するメッセージを送信するためのスキーマが含まれています。WCF ベースを使用して Oracle データベースの CUSTOMER テーブル[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。  
   
 2. 挿入操作のメタデータを生成すると、ポートのバインド ファイルも作成します。 次の手順で、Oracle データベースにメッセージを送信する Wcf-custom 送信ポートを作成するこのバインド ファイルが使用されます。 操作の SOAP アクションは、メタデータの生成対象の操作にも設定されます。 たとえば、挿入操作のメタデータを生成すると、送信ポートでの SOAP アクションで、操作名が、"Insert"になります。 ただし、操作名とオーケストレーションの一部異なる可能性があります、たとえば、作成した論理送信ポートで"Operation_1"。 その結果、送信ポートを使用して Oracle データベースにメッセージを送信するときにエラーが発生します。 これを回避するには、ことを確認しますで論理送信ポート、オーケストレーションでは、メタデータを生成する操作名と同じ操作名。  
   
@@ -95,7 +95,7 @@ ms.locfileid: "37010571"
        ![Oracle データベースから受信した応答にマップする](../../adapters-and-accelerators/adapter-oracle-database/media/7fe18f5b-100f-4fe2-ac92-c111629d7fe9.gif "7fe18f5b-100f-4fe2-ac92-c111629d7fe9")  
   
       > [!NOTE]
-      >  詳細については、次を参照してください。、**文字列左トリミング Functoid** [!INCLUDE[ui-guidance-developers-reference](../../includes/ui-guidance-developers-reference.md)]します。
+      >  詳細については、、**文字列左トリミング Functoid** [!INCLUDE[ui-guidance-developers-reference](../../includes/ui-guidance-developers-reference.md)]を参照してください。
   
    9. マップを保存します。  
   

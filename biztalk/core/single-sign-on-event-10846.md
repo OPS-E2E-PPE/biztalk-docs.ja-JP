@@ -36,4 +36,4 @@ ms.locfileid: "36993379"
  ホスト グループ アプリケーションには Windows アカウントに指定された複数のアカウントを設定できません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- ホスト グループ アプリケーションの詳細については、次を参照してください。 [SSO 関連アプリケーション](../core/sso-affiliate-applications.md)します。
+ ホスト グループ アプリケーションの詳細については、[SSO 関連アプリケーション](../core/sso-affiliate-applications.md)を参照してください。

@@ -73,9 +73,9 @@ maxConcurrentInstances="200" />
 </netTcpBinding>  
 ```  
   
- NetTcpBinding.ListenBacklog プロパティの詳細については、次を参照してください。 [NetTcpBinding.ListenBacklog プロパティ](http://go.microsoft.com/fwlink/?LinkId=157752)(http://go.microsoft.com/fwlink/?LinkId=157752) msdn です。  
+ NetTcpBinding.ListenBacklog プロパティの詳細については、[NetTcpBinding.ListenBacklog プロパティ](http://go.microsoft.com/fwlink/?LinkId=157752)(http://go.microsoft.com/fwlink/?LinkId=157752) msdn を参照してください。  
   
- NetTcpBinding.MaxConnections プロパティの詳細については、次を参照してください。 [NetTcpBinding.MaxConnections プロパティ](http://go.microsoft.com/fwlink/?LinkID=157751)(http://go.microsoft.com/fwlink/?LinkID=157751) msdn です。  
+ NetTcpBinding.MaxConnections プロパティの詳細については、[NetTcpBinding.MaxConnections プロパティ](http://go.microsoft.com/fwlink/?LinkID=157751)(http://go.microsoft.com/fwlink/?LinkID=157751) msdn を参照してください。  
   
 ## <a name="eliminate-aspnet-httpmodules-that-are-not-required-to-run-wcf-web-services"></a>WCF Web サービスを実行する必要のない ASP.NET httpModules を排除します。  
  既定では、いくつかの ASP.NET httpModules は、IIS 6.0 では、クラシックまたは IIS 7.5 または 7.0 の Integrated パイプラインで要求パイプラインで定義されます。 これらのコンポーネントがインターセプトし、すべての受信要求を処理します。 既定のモジュールは、64 ビットの ASP の %windir%\Microsoft.NET\Framework64\v2.0.50727\CONFIG フォルダーと 32 ビット ASP.NET アプリケーションの %windir%\Microsoft.NET\Framework\v2.0.50727\CONFIG フォルダーに含まれる、web.config ファイルで定義されます。次のスニペットで示すように .NET アプリケーション。  

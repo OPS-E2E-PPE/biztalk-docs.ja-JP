@@ -51,7 +51,7 @@ ms.locfileid: "36993331"
 
 - ビジネス ロジックが他のユーザーに読み取り可能で、変更される可能性がある場合。  
 
-- Functoid が、マップでサポートされる .NET Framework 名前空間のみに依存する場合。 使用可能な名前空間は、次を参照してください。[スクリプトを使用してインライン c#、JScript .NET、および Visual Basic .NET](../core/scripting-using-inline-csharp-jscript-net-and-visual-basic-net.md)します。  
+- Functoid が、マップでサポートされる .NET Framework 名前空間のみに依存する場合。 使用可能な名前空間は、[スクリプトを使用してインライン c#、JScript .NET、および Visual Basic .NET](../core/scripting-using-inline-csharp-jscript-net-and-visual-basic-net.md)を参照してください。  
 
 - BizTalk ソリューションで別のアセンブリの展開や管理を行わない場合。  
 

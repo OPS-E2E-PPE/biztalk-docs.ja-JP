@@ -28,7 +28,7 @@ ms.locfileid: "36996935"
   
 - **Lob の間でのエクスペリエンス、統一された**します。 WCF を使用して、アダプターを標準化、 [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]、し、そのため、LOB システムへのアクセスのエクスペリエンスの一貫性を提供します。  
   
-  前述のように、アダプターは WCF LOB Adapter SDK の上に構築されます。 WCF LOB Adapter SDK は、さまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションが使用できる統合アダプターを構築するための共通の基盤を提供します。 WCF LOB Adapter SDK は、Windows Communication Foundation (WCF) チャネルとしての統合アダプターを公開することで、Microsoft のサービスを使用したアダプターの戦略を配置します。 WCF LOB Adapter SDK の詳細については、次を参照してください。 [WCF LOB Adapter SDK ドキュメント](../../adapters-and-accelerators/wcf-lob-adapter-sdk/microsoft-wcf-line-of-business-adapter-sdk-documentation.md)します。
+  前述のように、アダプターは WCF LOB Adapter SDK の上に構築されます。 WCF LOB Adapter SDK は、さまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションが使用できる統合アダプターを構築するための共通の基盤を提供します。 WCF LOB Adapter SDK は、Windows Communication Foundation (WCF) チャネルとしての統合アダプターを公開することで、Microsoft のサービスを使用したアダプターの戦略を配置します。 WCF LOB Adapter SDK の詳細については、[WCF LOB Adapter SDK ドキュメント](../../adapters-and-accelerators/wcf-lob-adapter-sdk/microsoft-wcf-line-of-business-adapter-sdk-documentation.md)を参照してください。
   
   SQL Server データベースで操作を実行するには、アダプター クライアントに関連するテーブル、プロシージャ、ビュー、スカラー関数は、アクセスし、テーブル値関数する必要があります。 データベース テーブルとは、SQL Server データベース内のストレージの基本単位です。 外部アプリケーションは、選択、挿入、削除、および SQL ステートメントを使用して、テーブルからデータを更新できます。 アプリケーションは、プロシージャ、ビュー、スカラー関数、およびテーブル値関数を使用して、テーブル内のデータをアクセスもできます。 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]、アダプター クライアントは、テーブル、プロシージャ、ビュー、および SQL Server データベースのような他のアイテムなどの成果物を参照できます。 アダプター クライアントでは、そのソリューションでは、必要な成果物を選択でき、それらの成果物のメタデータを取得することができます。 これにより、ユーザーにアクセスし、SQL Server データベースで、成果物の操作を実行できます。  
   

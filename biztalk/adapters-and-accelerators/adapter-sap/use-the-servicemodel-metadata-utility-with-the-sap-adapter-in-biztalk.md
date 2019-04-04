@@ -74,7 +74,7 @@ ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を�
 </bindings>  
 ```  
   
- Svcutil.exe の既定以外のバインディングを構成する方法の詳細については、次を参照してください。、[メタデータ エンドポイントのセキュリティで保護されたカスタム](https://msdn.microsoft.com/library/aa395212.aspx)します。
+ Svcutil.exe の既定以外のバインディングを構成する方法の詳細については、、[メタデータ エンドポイントのセキュリティで保護されたカスタム](https://msdn.microsoft.com/library/aa395212.aspx)を参照してください。
   
 ## <a name="creating-a-wcf-client-class-or-a-wcf-service-contract-with-svcutilexe"></a>Svcutil.exe で WCF クライアント クラスまたは WCF サービス コントラクトを作成します。  
  Svcutil.exe を使用しての WCF クライアント コードまたは WCF サービス コントラクト (インターフェイス) を生成する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、Ws-metadata Exchange (MEX) エンドポイントと操作、または svcutil.exe に操作を指定する URI の接続を指定する必要がありますコードを生成します。 接続 URI の SAP システムの接続の資格情報を指定することも必要があります。  

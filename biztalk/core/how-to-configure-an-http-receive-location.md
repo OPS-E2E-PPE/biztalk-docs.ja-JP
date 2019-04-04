@@ -64,7 +64,7 @@ HTTP の受信場所のアダプタ変数は、プログラムから、または
 
 ### <a name="to-configure-variables-for-an-http-receive-location"></a>HTTP の受信場所の変数を構成するには  
 
-1. HTTP の受信場所を使用するようにインターネット インフォメーション サービス (IIS) を構成します。 IIS を構成する方法については、次を参照してください。 [IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)します。  
+1. HTTP の受信場所を使用するようにインターネット インフォメーション サービス (IIS) を構成します。 IIS を構成する方法については、[IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)を参照してください。  
 
 2. BizTalk Server 管理コンソールで  [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **管理**、展開**BizTalk グループ**、展開**アプリケーション**の順に展開し、受信場所を作成するアプリケーションです。  
 

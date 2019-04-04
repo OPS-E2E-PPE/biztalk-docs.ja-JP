@@ -26,7 +26,7 @@ ms.locfileid: "37003619"
 
  受信確認をしないデータ メッセージの送信にポートを制限するフィルターを使用してポートを作成します。 これらのフィルターは、ACK_024_GLO_DEF および Tutorial_BatchSource の変換先のメッセージの種類を指定します。  
 
- この送信ポート構成受信確認を宛先からという名前の受信ポートと送信ポートを関連付けることによって**TwoWayAckReceivePort**します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] セットアップ、このポートを作成してに付属の受信場所の**TwoWayAckReceiveLocation**します。 設定して、このポートを使用する送信ポートを設定する**送信請求-応答を有効にする**に**いいえ**と設定、**受信場所の URI を送信**に**127.0.0.1:65535** (Ack をそのまま使用するために必要な設定)。 詳細については、次を参照してください。[設定を、送信ポートの受信確認の](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)します。  
+ この送信ポート構成受信確認を宛先からという名前の受信ポートと送信ポートを関連付けることによって**TwoWayAckReceivePort**します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] セットアップ、このポートを作成してに付属の受信場所の**TwoWayAckReceiveLocation**します。 設定して、このポートを使用する送信ポートを設定する**送信請求-応答を有効にする**に**いいえ**と設定、**受信場所の URI を送信**に**127.0.0.1:65535** (Ack をそのまま使用するために必要な設定)。 詳細については、[設定を、送信ポートの受信確認の](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)を参照してください。  
 
 ### <a name="to-create-a-send-port-to-deliver-acknowledgments"></a>確認を配信する送信ポートを作成するには  
 

@@ -48,7 +48,7 @@ STRIDE モデルを使用すると、BizTalk Server の展開に存在する可�
   
   **サービス拒否が起こる**  
   
-- 悪意のあるユーザーが、BizTalk Server に大量のメッセージを送信し、BizTalk が有効なメッセージを受信できなくなることがあります。 この脅威を緩和する方法の詳細については、次を参照してください。[拒否のサービス攻撃の緩和](../core/mitigating-denial-of-service-attacks.md)します。  
+- 悪意のあるユーザーが、BizTalk Server に大量のメッセージを送信し、BizTalk が有効なメッセージを受信できなくなることがあります。 この脅威を緩和する方法の詳細については、[拒否のサービス攻撃の緩和](../core/mitigating-denial-of-service-attacks.md)を参照してください。  
   
   **特権の昇格**  
   

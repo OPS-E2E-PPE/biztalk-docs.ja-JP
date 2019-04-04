@@ -25,7 +25,7 @@ ms.locfileid: "36995971"
 > [!IMPORTANT]
 >  このリリースの BizTalk Server では、BPEL4WS 1.1 をサポートします。 BPEL4WS 1.0 をインポートまたはエクスポートすることはできません。  
   
- BPEL4WS をインポートする方法の例は、次を参照してください。 [BPEL インポート (BizTalk Server サンプル)](../core/bpel-import-biztalk-server-sample.md)します。  
+ BPEL4WS をインポートする方法の例は、[BPEL インポート (BizTalk Server サンプル)](../core/bpel-import-biztalk-server-sample.md)を参照してください。  
   
 ## <a name="import-bpel4ws-into-an-orchestration"></a>オーケストレーションを BPEL4WS をインポート  
   

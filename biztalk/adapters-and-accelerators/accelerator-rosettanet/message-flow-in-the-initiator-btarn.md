@@ -48,7 +48,7 @@ ms.locfileid: "37004027"
   
 - RNIFSend.aspx ページ  
   
-  これらのコンポーネントとメッセージの処理方法の詳細については、次を参照してください。 [BTARN でのメッセージ処理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)します。  
+  これらのコンポーネントとメッセージの処理方法の詳細については、[BTARN でのメッセージ処理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)を参照してください。  
   
 ## <a name="flow-of-an-initiated-message"></a>開始メッセージのフロー  
  以下の手順は、開始側の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] コンピュータから発信されたメッセージのメッセージ フローを示します。 このプロセスを次に示します。  

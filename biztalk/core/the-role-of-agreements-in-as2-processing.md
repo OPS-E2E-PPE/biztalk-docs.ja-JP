@@ -33,17 +33,17 @@ ms.locfileid: "36976907"
 >  EDI 処理とは異なり、アグリーメントを特定できない場合に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が使用できるフォールバック AS2 アグリーメントはありません。 AS2 受信または送信パイプラインは、アグリーメントが特定された場合にのみメッセージを処理します。  
 > 
 > [!NOTE]
->  AS2 アグリーメントは、EDI アグリーメントとは別に構成されます。 ドキュメントを受信すると、AS2 アグリーメントは AS2 処理時に解決され、それとは別に EDI アグリーメントが EDI 処理時に解決されます。 両方のアグリーメントにより、パートナーシップが形成されます。 詳細については、次を参照してください。[取引先アグリーメント](../core/trading-partner-agreement.md)します。  
+>  AS2 アグリーメントは、EDI アグリーメントとは別に構成されます。 ドキュメントを受信すると、AS2 アグリーメントは AS2 処理時に解決され、それとは別に EDI アグリーメントが EDI 処理時に解決されます。 両方のアグリーメントにより、パートナーシップが形成されます。 詳細については、[取引先アグリーメント](../core/trading-partner-agreement.md)を参照してください。  
 > 
 > [!NOTE]
 >  名前やエイリアス、送信ポート、署名証明書など、パーティの全般的な側面を定義するプロパティは、取引先プロパティの一部に指定されます。  
   
  HTTP/HTTPS トランスポートは、EDIINT/AS2 でエンコードされたメッセージにも AS2 を経由して非 EDI でエンコードされたメッセージにも使用できます。 EDIINT/AS2 でエンコードされたメッセージを HTTP/HTTPS トランスポート経由で送信すると、アグリーメントの EDI プロパティが適用されます。  
   
- ホーム組織の署名証明書がで定義されている、**証明書**のページ、 **BizTalk グループ - グループのプロパティ** ダイアログ ボックス。 さらに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]既定のアグリーメントのプロパティの一部として、証明書を定義することで AS2 メッセージ用の証明書の署名をオーバーライドすることができます。  特定のアグリーメントを別の証明書を定義するには、使用、**署名証明書**一方向の AS2 アグリーメントのページ、**アグリーメントのプロパティ** ダイアログ ボックス。 別の証明書を指定する方法については、次を参照してください。[署名証明書を構成 (AS2)](../core/configuring-signature-certificates-as2.md)します。  
+ ホーム組織の署名証明書がで定義されている、**証明書**のページ、 **BizTalk グループ - グループのプロパティ** ダイアログ ボックス。 さらに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]既定のアグリーメントのプロパティの一部として、証明書を定義することで AS2 メッセージ用の証明書の署名をオーバーライドすることができます。  特定のアグリーメントを別の証明書を定義するには、使用、**署名証明書**一方向の AS2 アグリーメントのページ、**アグリーメントのプロパティ** ダイアログ ボックス。 別の証明書を指定する方法については、[署名証明書を構成 (AS2)](../core/configuring-signature-certificates-as2.md)を参照してください。  
   
 ## <a name="determining-an-agreement-for-as2-processing"></a>AS2 処理のためのアグリーメントの決定  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は、AS2 でエンコードされたメッセージを受信すると、AS2-From ヘッダーをパーティの一方向アグリーメントの AS2-From アグリーメント設定と照合することにより、メッセージを送信したパーティの決定を試みます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は、AS2 でエンコードされたメッセージを送信すると、AS2-To ヘッダーをパーティの一方向アグリーメントの AS2-To アグリーメントのプロパティと照合することにより、メッセージを受信するパーティの決定を試みます。 詳細については、次を参照してください。[受信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-incoming-as2-messages.md)または[送信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-outgoing-as2-messages.md)します。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は、AS2 でエンコードされたメッセージを受信すると、AS2-From ヘッダーをパーティの一方向アグリーメントの AS2-From アグリーメント設定と照合することにより、メッセージを送信したパーティの決定を試みます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は、AS2 でエンコードされたメッセージを送信すると、AS2-To ヘッダーをパーティの一方向アグリーメントの AS2-To アグリーメントのプロパティと照合することにより、メッセージを受信するパーティの決定を試みます。 詳細については、[受信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-incoming-as2-messages.md)または[送信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-outgoing-as2-messages.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [受信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-incoming-as2-messages.md)   

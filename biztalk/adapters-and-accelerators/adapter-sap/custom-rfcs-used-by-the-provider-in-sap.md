@@ -30,7 +30,7 @@ ms.locfileid: "36992723"
   
 - **Z_EXTRACT_DATA_OO RFC**します。 データの抽出、RFC Z_EXTRACT_DATA_OO は、テーブルからデータを抽出、SAP R/3 システム ビューまたはデータ、および返すか、SQL Server テーブルの同期的にデータを変換します、またはフラット ファイルへのデータをダンプをします。 WHERE 句で SELECT 操作を実行する、Z_EXTRACT_DATA_OO が使用されます。 この RFC のパフォーマンスは、SAP システムのハードウェアに依存します。  
   
-   Z_EXTRACT_DATA_OO RFC の .NET と SAP のデータ型をマップする方法については、次を参照してください。 [Data Type Mapping for カスタム Rfc](../../adapters-and-accelerators/adapter-sap/data-type-mapping-for-custom-rfcs.md)します。  
+   Z_EXTRACT_DATA_OO RFC の .NET と SAP のデータ型をマップする方法については、[Data Type Mapping for カスタム Rfc](../../adapters-and-accelerators/adapter-sap/data-type-mapping-for-custom-rfcs.md)を参照してください。  
   
 - **Z_EXECUTE_SAP_QUERY RFC**します。 この RFC を使って、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP システムで既に定義されているクエリを実行します。 この RFC では、内部的には、SAP の RFC RSAQ_REMOTE_QUERY_CALL を実行します。 SAP クエリは、テーブル、列、入力パラメーター、結果セットの並べ替え順序を選択して、SAP GUI を使用してグラフィカルに作成されるクエリです。使用して、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] ADO.NET クライアントからこのような SAP クエリを実行するようになりました。  
   

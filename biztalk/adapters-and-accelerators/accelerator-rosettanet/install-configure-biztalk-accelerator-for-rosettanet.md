@@ -63,7 +63,7 @@ Microsoft BizTalk Accelerator は、RosettaNet (BTARN) 用にインストール�
 * BTARN では、BizTalk Server 管理者グループまたは BizTalk Application Users グループに個々 のサービス アカウントとグループではなく、のみを追加できます。  
 * IIS 分離モードを構成して、BTSHTTPReceive.dll 用の WebService 拡張を作成する必要があります。 詳細については、"404 Not found エラー HTTP 要求を送信するときに"エントリにある「のトラブルシューティング: 問題と解決策」のトピックを参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=188560](http://go.microsoft.com/fwlink/?LinkId=188560)します。 またを参照してください[IIS の HTTP 受信場所を構成する方法](../../core/how-to-configure-iis-for-an-http-receive-location.md)します。  
 * サーバーを追加する (http:// <*サーバー名*>) をローカル インターネット ゾーンに Internet Explorer のセキュリティ オプション。  
-*  既定以外のポートを使用するリモート SQL インスタンスを使用して BTARN を構成する場合は、Microsoft SQL Server クライアント ツールをローカル コンピューターにインストールする必要があります。 詳細については、次を参照してください。[複数コンピューター環境向けの BizTalk Server インストール ガイド](../../install-and-config-guides/install-biztalk-server-in-a-multi-computer-environment.md)します。
+*  既定以外のポートを使用するリモート SQL インスタンスを使用して BTARN を構成する場合は、Microsoft SQL Server クライアント ツールをローカル コンピューターにインストールする必要があります。 詳細については、[複数コンピューター環境向けの BizTalk Server インストール ガイド](../../install-and-config-guides/install-biztalk-server-in-a-multi-computer-environment.md)を参照してください。
 *  BizTalk Server の構成中に BizTalk 管理者、BizTalk ホスト ユーザー、および BizTalk 分離ホスト ユーザー ロールの別のグループを使用する必要があります。  
 *  BTARN は、BTARN データベースを構成する SQL インスタンス用に作成されたエイリアスの使用をサポートしていません。  
 
@@ -164,7 +164,7 @@ BTARN のオーケストレーション、送信ポート、および受信場�
 > [!NOTE]
 >  開発者は、開発、ステージング、またはテストのために、単一のサーバーに BTARN をインストールして構成することができます。 その場合、このサーバーを使用して独自のコードを作成し、テストしたうえで、運用環境に移行します。  
 
- 1 台のサーバーに BTARN をインストールする方法の詳細については、次を参照してください。、 [Loopback チュートリアル](loopback-tutorial.md)します。
+ 1 台のサーバーに BTARN をインストールする方法の詳細については、、 [Loopback チュートリアル](loopback-tutorial.md)を参照してください。
 
 ## <a name="next-steps"></a>次の手順  
 

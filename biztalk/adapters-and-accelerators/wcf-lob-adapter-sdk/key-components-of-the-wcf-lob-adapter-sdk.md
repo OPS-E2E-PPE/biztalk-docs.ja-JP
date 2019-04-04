@@ -89,7 +89,7 @@ ms.locfileid: "36972235"
 |`Microsoft.ServiceModel.Channels.Common.OperationResult`|操作の結果を表します。 Void 型または null を返す操作、文字列、整数、または操作によってその他の値に対して OperationResult.Empty ができます。|  
 |`Microsoft.ServiceModel.Channels.Common.QualifiedType`|基本クラス型のプロパティを修飾し、ターゲット システムの種類のメタデータのプロパティを記述するために使用するように設計します。|  
 |`Microsoft.ServiceModel.Channels.Common.QualifiedTypeContainer`|一連の関連する修飾型のコンテナーを提供します。|  
-|`Microsoft.ServiceModel.Channels.Common.SimpleQualifiedType`|その型が W3C XSD のスキーマ型に直接マップ時に、ターゲット システムの種類のメタデータのプロパティを説明します。 使用可能な型の一覧は、次を参照してください。 [XmlTypeCode 列挙](https://msdn.microsoft.com/library/system.xml.schema.xmltypecode(v=vs.110).aspx)します。|  
+|`Microsoft.ServiceModel.Channels.Common.SimpleQualifiedType`|その型が W3C XSD のスキーマ型に直接マップ時に、ターゲット システムの種類のメタデータのプロパティを説明します。 使用可能な型の一覧は、[XmlTypeCode 列挙](https://msdn.microsoft.com/library/system.xml.schema.xmltypecode(v=vs.110).aspx)を参照してください。|  
 |`Microsoft.ServiceModel.Channels.Common.TypeMember`|構造化型のメタデータに、単純または複雑なデータ メンバーを定義するための手段を提供します。|  
 |`Microsoft.ServiceModel.Channels.Common.TypeMetadata`|ターゲット システムの種類のメタデータを表す基本クラスです。|  
 |`Microsoft.ServiceModel.Channels.Common.StructuredTypeMetadata`|複雑なや単純な型のメンバーを含むデータ構造を定義する方法を提供します。|  

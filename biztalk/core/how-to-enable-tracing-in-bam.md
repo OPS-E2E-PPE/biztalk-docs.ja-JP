@@ -224,7 +224,7 @@ BAM のトレースを有効にすると、次の 5 つの BAM コンポーネ�
 >  トレースはパフォーマンスに影響することがあります。 トレースを有効にするのは、トラブルシューティングの操作を実行する場合に限ってください。  
   
 ### <a name="viewing-the-wcf-trace-file"></a>WCF トレース ファイルの表示  
- WCF トレースを分析するには、WCF Service Trace Viewer ツールを使用します。 サービス トレース ビューアー ツールの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=75218](http://go.microsoft.com/fwlink/?LinkId=75218)します。  
+ WCF トレースを分析するには、WCF Service Trace Viewer ツールを使用します。 サービス トレース ビューアー ツールの詳細については、[ http://go.microsoft.com/fwlink/?LinkId=75218](http://go.microsoft.com/fwlink/?LinkId=75218)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BAM の管理](../core/managing-bam.md)

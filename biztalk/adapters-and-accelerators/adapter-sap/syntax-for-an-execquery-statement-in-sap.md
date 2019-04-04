@@ -22,7 +22,7 @@ ms.locfileid: "36982019"
 # <a name="syntax-for-an-execquery-statement-in-sap"></a>SAP に EXECQUERY ステートメントの構文
 SAP GUI を使用すると、グラフィカルに表示するクエリ、列および並べ替え順序など、結果セットに含めるテーブルを選択してクエリを作成します。[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] ADO.NET アプリケーションからユーザーが SAP システムで定義されているクエリの実行に使用できる EXECQUERY 操作を提供することでこのようなクエリを実行することができます。  
   
- [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]カスタム RFC Z_EXECUTE_SAP_QUERY を使用して、SAP システムで定義済みのクエリを実行します。 カスタム RFC には、これは、標準の SAP システムで定義されている RFC、RSAQ_REMOTE_QUERY_CALL さらに実行します。 そのため、EXECQUERY 操作を使用する前に、に対するクエリを実行する SAP システムでカスタム RFC をインストールする必要があります。 カスタム RFC をインストールする方法の手順については、次を参照してください。 [Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)します。  
+ [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]カスタム RFC Z_EXECUTE_SAP_QUERY を使用して、SAP システムで定義済みのクエリを実行します。 カスタム RFC には、これは、標準の SAP システムで定義されている RFC、RSAQ_REMOTE_QUERY_CALL さらに実行します。 そのため、EXECQUERY 操作を使用する前に、に対するクエリを実行する SAP システムでカスタム RFC をインストールする必要があります。 カスタム RFC をインストールする方法の手順については、[Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)を参照してください。  
   
  このトピックでは、EXECQUERY 操作、および EXECQUERY 操作に関連するその他の有用な情報の構文について説明します。  
   
@@ -56,10 +56,10 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
   >  たとえば、常に単一引用符で囲まれたオプションのキーワードの値を指定する必要があります '*USEORIGINALCOLUMNNAMES*'。  
   
 > [!NOTE]
->  SAP クエリのパラメーターを EXECQUERY 構文に変換する方法については、次を参照してください。[変換 SAP クエリのパラメーターを EXECQUERY コマンドに](../../adapters-and-accelerators/adapter-sap/translate-sap-query-parameters-into-execquery-command.md)します。  
+>  SAP クエリのパラメーターを EXECQUERY 構文に変換する方法については、[変換 SAP クエリのパラメーターを EXECQUERY コマンドに](../../adapters-and-accelerators/adapter-sap/translate-sap-query-parameters-into-execquery-command.md)を参照してください。  
   
 ### <a name="framing-an-execquery-syntax"></a>フレーム、EXECQUERY 構文  
- SAP クエリを実行するための EXECQUERY 操作の構文のフレーム化は、SAP で定義されている各パラメーターの値を含む、SAP システムでクエリを定義する方法によって異なります。 フレームの EXECQUERY の構文を SAP クエリを実行する方法については、次を参照してください。[変換 SAP クエリのパラメーターを EXECQUERY コマンドに](../../adapters-and-accelerators/adapter-sap/translate-sap-query-parameters-into-execquery-command.md)します。  
+ SAP クエリを実行するための EXECQUERY 操作の構文のフレーム化は、SAP で定義されている各パラメーターの値を含む、SAP システムでクエリを定義する方法によって異なります。 フレームの EXECQUERY の構文を SAP クエリを実行する方法については、[変換 SAP クエリのパラメーターを EXECQUERY コマンドに](../../adapters-and-accelerators/adapter-sap/translate-sap-query-parameters-into-execquery-command.md)を参照してください。  
   
 ### <a name="additional-considerations-while-using-the-execquery-operation"></a>追加の考慮事項、操作を使用して、EXECQUERY  
  このセクションに一覧表示されたポイントを指定して EXECQUERY ステートメントを使用する場合、点に注意する必要があります[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]します。  

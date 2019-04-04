@@ -79,7 +79,7 @@ ms.locfileid: "36968155"
   </system.serviceModel>  
 ```  
   
- これにより、WCF トレースが C:\log\WCFTrace.svclog を保存します。 WCF トレースの詳細については、次を参照してください。[トレース](https://msdn.microsoft.com/library/ms730342.aspx)します。  
+ これにより、WCF トレースが C:\log\WCFTrace.svclog を保存します。 WCF トレースの詳細については、[トレース](https://msdn.microsoft.com/library/ms730342.aspx)を参照してください。  
   
 > [!IMPORTANT]
 >  トレースを有効にすると、機密性の高いビジネス データを公開することの潜在的なセキュリティ脅威を軽減することを確認します。 推奨事項を参照してください[ベスト プラクティスは、SQL アダプターをセキュリティで保護する](../../adapters-and-accelerators/adapter-sql/best-practices-to-secure-the-sql-adapter.md)します。
@@ -123,12 +123,12 @@ ms.locfileid: "36968155"
  これにより、WCF トレースが C:\log\AdapterTrace.svclog を保存します。  
   
 ## <a name="viewing-the-traces"></a>トレースを表示します。  
- Windows Communication Foundation (WCF) サービス トレース ビューアー ツールを使用するには、トレースを表示します。 ツールの詳細については、次を参照してください。[相関トレースの表示と問題のサービス トレース ビューアーを使用して](https://msdn.microsoft.com/library/aa751795.aspx)します。
+ Windows Communication Foundation (WCF) サービス トレース ビューアー ツールを使用するには、トレースを表示します。 ツールの詳細については、[相関トレースの表示と問題のサービス トレース ビューアーを使用して](https://msdn.microsoft.com/library/aa751795.aspx)を参照してください。
   
 ## <a name="configuring-tracking-for-biztalk-applications"></a>BizTalk アプリケーションの追跡の構成  
- BizTalk Server 管理コンソールを使用するポートと受信ポートの送信ポートなどのアイテムのさまざまな追跡オプションを構成することができます。 追跡構成設定を使用すると、受信と送信イベント データ、メッセージのプロパティ、メッセージ本文、およびオーケストレーションを追跡します。 BizTalk アプリケーションの追跡を構成する方法の詳細については、次を参照してください。、[管理成果物](../../core/managing-artifacts.md)します。
+ BizTalk Server 管理コンソールを使用するポートと受信ポートの送信ポートなどのアイテムのさまざまな追跡オプションを構成することができます。 追跡構成設定を使用すると、受信と送信イベント データ、メッセージのプロパティ、メッセージ本文、およびオーケストレーションを追跡します。 BizTalk アプリケーションの追跡を構成する方法の詳細については、、[管理成果物](../../core/managing-artifacts.md)を参照してください。
   
- 履歴および追跡したデータを表示するのに状態と動作状況の追跡 (HAT) を使用することもできます。 詳細については、次を参照してください。[履歴の表示と追跡データ](../../core/viewing-historical-and-tracked-data.md)します。
+ 履歴および追跡したデータを表示するのに状態と動作状況の追跡 (HAT) を使用することもできます。 詳細については、[履歴の表示と追跡データ](../../core/viewing-historical-and-tracked-data.md)を参照してください。
   
 ## <a name="see-also"></a>参照  
  [SQL アダプターをトラブルシューティングします。](../../adapters-and-accelerators/adapter-sql/troubleshoot-the-sql-adapter.md)

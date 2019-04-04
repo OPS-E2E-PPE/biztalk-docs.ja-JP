@@ -37,7 +37,7 @@ ms.locfileid: "37004859"
   このようなシナリオでの[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]SQLEXECUTE 操作を表示します。 SQLEXECUTE 操作を使用すると、Oracle データベースでパラメーター化 SQL ステートメントを実行できます。 SQLEXECUTE 操作のセットごとに、同じ SQL ステートメントを実行するためのパラメーター セットで構成される、入力パラメーター ブロックをサポートします。 SQLEXECUTE 操作は、ジェネリック レコード セット内の SQL ステートメントの結果を返します。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックで使用して Oracle シーケンスの例では、TID_SEQ という名前です。 このシーケンスを生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
+ このトピックで使用して Oracle シーケンスの例では、TID_SEQ という名前です。 このシーケンスを生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、[SDK 内のサンプル](../../core/samples-in-the-sdk.md)を参照してください。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
  WCF サービス モデルは、専用の WCF クライアントを生成します**SQLEXECUTEClient**、SQLEXECUTE 操作。 次のコードは、 **SQLEXECUTEClient** SQLEXECUTE 操作を呼び出すために呼び出すメソッドのシグネチャとします。  

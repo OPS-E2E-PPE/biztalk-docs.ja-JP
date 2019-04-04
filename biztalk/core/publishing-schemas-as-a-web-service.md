@@ -37,7 +37,7 @@ BizTalk Web サービス公開ウィザードを使用して、既存のスキ�
 >  スキーマを Web サービスとして公開するには、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] および [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がインストールされている必要があります。  
 > 
 > [!IMPORTANT]
->  BizTalk Web サービス公開ウィザードを実行する前に、Web サービスを有効にする必要があります。 Web サービスを有効にする方法の詳細については、次を参照してください。 [Web サービスを有効にする](../core/enabling-web-services.md)します。  
+>  BizTalk Web サービス公開ウィザードを実行する前に、Web サービスを有効にする必要があります。 Web サービスを有効にする方法の詳細については、[Web サービスを有効にする](../core/enabling-web-services.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

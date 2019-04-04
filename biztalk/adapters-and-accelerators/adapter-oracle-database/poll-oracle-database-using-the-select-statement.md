@@ -25,7 +25,7 @@ ms.locfileid: "36967243"
 # <a name="poll-oracle-database-using-the-select-statement"></a>SELECT ステートメントを使用してポーリング Oracle データベース
 構成することができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]テーブルとビューでは、Oracle、Oracle データベースを継続的にポーリングする SELECT ステートメントを使用して、定期的なデータ変更メッセージを受信します。 SELECT ステートメントは、Oracle データベースをポーリングするアダプターを定期的に実行するポーリング ステートメントとして指定できます。 必要に応じて、データの変更がある場合、アダプターが実行される後ポーリング PL/SQL コード ブロックを指定することもできます。 多くの場合、このブロックを使用するは、ターゲット内のクエリ対象のレコードのフィールドを更新したり、クエリ対象のレコードを別のテーブルまたはビューに移動します。  
 
- これを有効にするに特定のバインド プロパティを指定する必要があります、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 設定して POLLINGSTMT 操作のターゲット名前空間を変更することも、 **PollingId**接続 URI のプロパティ。 詳細については、次を参照してください。 [Oracle データベースでデータ変更メッセージを受信ポーリング ベースのサポート](../../adapters-and-accelerators/adapter-oracle-database/support-for-receiving-polling-based-data-changed-messages-in-oracle-database.md)と[Oracle データベース アダプターのポーリングに基づいたデータ変更メッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)します。 ポーリング操作用の SOAP メッセージの構造については、次を参照してください。[ポーリング Operations2 のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-polling-operations2.md)します。  
+ これを有効にするに特定のバインド プロパティを指定する必要があります、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 設定して POLLINGSTMT 操作のターゲット名前空間を変更することも、 **PollingId**接続 URI のプロパティ。 詳細については、[Oracle データベースでデータ変更メッセージを受信ポーリング ベースのサポート](../../adapters-and-accelerators/adapter-oracle-database/support-for-receiving-polling-based-data-changed-messages-in-oracle-database.md)と[Oracle データベース アダプターのポーリングに基づいたデータ変更メッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)を参照してください。 ポーリング操作用の SOAP メッセージの構造については、[ポーリング Operations2 のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-polling-operations2.md)を参照してください。  
 
 ## <a name="configuring-a-polling-operation-with-oracle-database-adapter-binding-properties"></a>Oracle データベース アダプターのバインドのプロパティをポーリング操作を構成します。  
  次の表にまとめたものです、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]メッセージのバインドのプロパティを使用するデータを受信するアダプターの構成を変更します。 受信ポートを構成するときにこれらのバインドのプロパティを指定する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
@@ -41,7 +41,7 @@ ms.locfileid: "36967243"
 |      **PostPollStatement**       |                                                                                                                                                         指定されたステートメントの後に実行されるステートメント ブロックを指定します、 **PollingStatement**プロパティのバインドを実行します。                                                                                                                                                          |
 |      **PollWhileDataFound**      |                                     指定するかどうか、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]ポーリング間隔を無視し、継続的にデータがポーリングされるテーブルで使用できる場合に、ポーリング ステートメントを実行します。 テーブルのデータがない場合は、アダプターは、指定されたポーリング間隔でポーリング ステートメントを実行する元に戻します。 既定値は false です。                                     |
 
- これらのプロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)します。 使用する方法の詳細については、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースをポーリングするさらに読み進める。  
+ これらのプロパティの詳細については、[Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)を参照してください。 使用する方法の詳細については、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースをポーリングするさらに読み進める。  
 
 ## <a name="how-this-topic-demonstrates-polling"></a>このトピックでポーリングしていますか  
  示すために、このトピックで、どのように[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]データの受信をサポートは、SELECT ステートメントを使用してメッセージを変更、BizTalk プロジェクトを作成し、スキーマを生成、 **POLLINGSTMT**操作を設定して、 **PollingStatement**プロパティを次にバインドします。  
@@ -94,7 +94,7 @@ SELECT * FROM ACCOUNTACTIVITY FOR UPDATE
 ## <a name="generating-schema"></a>スキーマを生成します。  
  スキーマを生成する必要があります、 **POLLINGSTMT**操作。 使用して、スキーマの生成中に、次のタスクを実行、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]します。  
 
-- 値を指定**PollingStatement**スキーマの生成中にプロパティをバインドします。 このバインドのプロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)します。 たとえば、ポーリング ステートメントとして、次を指定します。  
+- 値を指定**PollingStatement**スキーマの生成中にプロパティをバインドします。 このバインドのプロパティの詳細については、[Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)を参照してください。 たとえば、ポーリング ステートメントとして、次を指定します。  
 
   ```  
   SELECT * FROM ACCOUNTACTIVITY FOR UPDATE  
@@ -104,7 +104,7 @@ SELECT * FROM ACCOUNTACTIVITY FOR UPDATE
 
 - スキーマの生成、 **POLLINGSTMT**操作。  
 
-  スキーマを生成する方法の詳細については、次を参照してください。[参照、検索、および Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/browse-search-and-get-metadata-for-oracle-database-operations.md)します。  
+  スキーマを生成する方法の詳細については、[参照、検索、および Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/browse-search-and-get-metadata-for-oracle-database-operations.md)を参照してください。  
 
 ## <a name="defining-messages-and-message-types"></a>メッセージおよびメッセージの種類を定義します。  
  以前に生成したスキーマには、オーケストレーション内のメッセージに必要な「型」について説明します。 メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。 スキーマが生成されるは、BizTalk プロジェクトのオーケストレーションからメッセージをリンクする必要があります。  
@@ -172,10 +172,10 @@ SELECT * FROM ACCOUNTACTIVITY FOR UPDATE
 
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
 
- ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。  
+ ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。  
 
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、次を参照してください。[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)します。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)を参照してください。
 
  アプリケーションを構成する必要があります。  
 
@@ -194,13 +194,13 @@ SELECT * FROM ACCOUNTACTIVITY FOR UPDATE
     |**PollingStatement**|このバインド プロパティの ACCOUNTACTIVITY テーブルからすべてのレコードを取得する SELECT ステートメントを指定します。 この例このバインドのプロパティを設定します。<br /><br /> `SELECT * FROM ACCOUNTACTIVITY FOR UPDATE`|  
     |**PostPollStatement**|ACCOUNTACTIVITY テーブルから別のテーブルにすべてのデータを移動するポスト ポーリング ステートメントを指定します。 この例このバインドのプロパティを設定します。<br /><br /> `BEGIN ACCOUNT_PKG.PROCESS_ACTIVITY(); END;`|  
 
-     異なるバインディング プロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)します。  
+     異なるバインディング プロパティの詳細については、[Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)を参照してください。  
 
     > [!NOTE]
-    >  使用して受信操作の実行中に、トランザクション分離レベルとトランザクションのタイムアウトを構成することをお勧めします。、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 受信ポートを構成するときに、サービスの動作を追加することで行うことができます。 サービスの動作を追加する方法については、次を参照してください。[トランザクション分離レベルとトランザクション タイムアウトを構成](../../adapters-and-accelerators/adapter-oracle-database/configure-transaction-isolation-level-and-transaction-timeout-with-oracle-db.md)します。  
+    >  使用して受信操作の実行中に、トランザクション分離レベルとトランザクションのタイムアウトを構成することをお勧めします。、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 受信ポートを構成するときに、サービスの動作を追加することで行うことができます。 サービスの動作を追加する方法については、[トランザクション分離レベルとトランザクション タイムアウトを構成](../../adapters-and-accelerators/adapter-oracle-database/configure-transaction-isolation-level-and-transaction-timeout-with-oracle-db.md)を参照してください。  
 
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- Oracle データベースをポーリングするための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。  
+ Oracle データベースをポーリングするための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。  
 
  この段階で、ことを確認します。  
 
@@ -252,7 +252,7 @@ SELECT * FROM ACCOUNTACTIVITY FOR UPDATE
  使用して、データベースの例外については、Oracle のポーリング クエリの実行中に発生する可能性が[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[例外と、Oracle Database アダプターによるエラー処理](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md)します。  
 
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成すると、送信ポートを作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定ファイルからインポートできます。 バインド ファイルの詳細については、次を参照してください。 [Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)します。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成すると、送信ポートを作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定ファイルからインポートできます。 バインド ファイルの詳細については、[Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)を参照してください。  
 
 ## <a name="see-also"></a>参照  
  [BizTalk Server を使用してポーリング Oracle データベース](../../adapters-and-accelerators/adapter-oracle-database/poll-oracle-database-using-biztalk-server.md)

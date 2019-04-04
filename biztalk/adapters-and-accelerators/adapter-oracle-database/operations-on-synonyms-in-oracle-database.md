@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36986067"
 ---
 # <a name="operations-on-synonyms-in-oracle-database"></a>Oracle データベースでシノニムに対する操作
-[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]シノニムに対する操作を実行することができます。 シノニムは、別名またはフレンドリ名 (テーブル、ビュー、ストアド プロシージャ、関数、およびパッケージ) などのデータベース オブジェクトです。 Oracle のシノニムの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=138058](http://go.microsoft.com/fwlink/?LinkId=138058)します。  
+[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]シノニムに対する操作を実行することができます。 シノニムは、別名またはフレンドリ名 (テーブル、ビュー、ストアド プロシージャ、関数、およびパッケージ) などのデータベース オブジェクトです。 Oracle のシノニムの詳細については、[ http://go.microsoft.com/fwlink/?LinkId=138058](http://go.microsoft.com/fwlink/?LinkId=138058)を参照してください。  
   
 ## <a name="advantages-of-using-synonyms"></a>シノニムを使用する利点  
  シノニムは、次のシナリオで役立ちます。  
@@ -64,7 +64,7 @@ ms.locfileid: "36986067"
  シノニムは、通常の送信操作、複合操作、およびポーリングで使用できます。  
   
 > [!NOTE]
->  シノニムを検索できます[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]他のオブジェクトと同様です。 ただし、パッケージ内の手順を行うことができます、スキップするレベルのノードからシノニム パッケージ内の手順については検索できません。 アダプターでの操作の検索方法の詳細については、次を参照してください。[参照、検索、および Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/browse-search-and-get-metadata-for-oracle-database-operations.md)します。  
+>  シノニムを検索できます[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]他のオブジェクトと同様です。 ただし、パッケージ内の手順を行うことができます、スキップするレベルのノードからシノニム パッケージ内の手順については検索できません。 アダプターでの操作の検索方法の詳細については、[参照、検索、および Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/browse-search-and-get-metadata-for-oracle-database-operations.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [どのような操作は、アダプターを使用して実行しますか?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)

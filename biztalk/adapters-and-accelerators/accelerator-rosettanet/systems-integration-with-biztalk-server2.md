@@ -37,12 +37,12 @@ BizTalk Server が使用する統合サーバー、[パブリッシュ/サブス
   
   
 ## <a name="integration-of-heterogeneous-systems"></a>異機種システムの統合  
- [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] は、異なる通信プロトコルでデータを転送する異機種システム混在環境で IT システムを統合できます。 これは、アダプターを使用して、さまざまなプロトコルを使用しているシステムに接続することにより実現します。 サポートされているのは、File、FTP、HTTP、SMTP、SOAP、および SQL アダプターです。 BizTalk アダプター フレームワークを使用して、カスタム アダプターを作成できます。 詳細については、次を参照してください。[カスタム アダプターを作成する](../../core/developing-custom-adapters.md)します。
+ [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] は、異なる通信プロトコルでデータを転送する異機種システム混在環境で IT システムを統合できます。 これは、アダプターを使用して、さまざまなプロトコルを使用しているシステムに接続することにより実現します。 サポートされているのは、File、FTP、HTTP、SMTP、SOAP、および SQL アダプターです。 BizTalk アダプター フレームワークを使用して、カスタム アダプターを作成できます。 詳細については、[カスタム アダプターを作成する](../../core/developing-custom-adapters.md)を参照してください。
   
 ## <a name="role-based-tools"></a>ロールベースのツール  
  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 開発と実行環境を作成、実装、運用、保守、およびシステムをカスタマイズして、開発者、IT プロフェッショナル、ビジネスの専門家が共同作業します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] それらを使用するようにカスタマイズ ツールを使用して、これらの各ロールを提供します。  
   
- 詳細については、次を参照してください。[ロールベース製品](../../adapters-and-accelerators/accelerator-rosettanet/a-role-based-product2.md)、および[について、RosettaNet アクセラレータ](../../adapters-and-accelerators/accelerator-rosettanet/learn-the-rosettanet-accelerator-and-the-biztalk-tools-available.md)します。
+ 詳細については、[ロールベース製品](../../adapters-and-accelerators/accelerator-rosettanet/a-role-based-product2.md)、および[について、RosettaNet アクセラレータ](../../adapters-and-accelerators/accelerator-rosettanet/learn-the-rosettanet-accelerator-and-the-biztalk-tools-available.md)を参照してください。
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server がビジネス ニーズを解決する方法](../../adapters-and-accelerators/accelerator-rosettanet/how-biztalk-server-solves-the-business-need1.md)   

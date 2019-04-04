@@ -40,7 +40,7 @@ ms.locfileid: "36983325"
 ### <a name="user-action"></a>ユーザーの操作  
  サービスに有効な Web メソッドがあること、およびメタデータはホストされていることを確認します (WCF サービスを所有している場合)。 それ以外の場合、サービス プロバイダーに問い合わせてください。  
   
- WCF サービスの使用の詳細については、次を参照してください。[に関する考慮事項ときに使用して WCF サービスを WCF 送信アダプタ](../core/considerations-when-consuming-wcf-services-with-the-wcf-send-adapters.md)します。
+ WCF サービスの使用の詳細については、[に関する考慮事項ときに使用して WCF サービスを WCF 送信アダプタ](../core/considerations-when-consuming-wcf-services-with-the-wcf-send-adapters.md)を参照してください。
  
 ## <a name="response-message-body-was-not-read"></a>応答メッセージの本文を読み取れませんでした
   
@@ -59,4 +59,4 @@ ms.locfileid: "36983325"
   
 ### <a name="user-action"></a>ユーザーの操作  
  クライアントの接続を確認します。 実行する手順と手順の範囲は、ポートの種類によって変わります。   
-詳細については、次を参照してください。[トラブルシューティングのために使用するツールとユーティリティ](../core/tools-and-utilities-to-use-for-troubleshooting.md)します。
+詳細については、[トラブルシューティングのために使用するツールとユーティリティ](../core/tools-and-utilities-to-use-for-troubleshooting.md)を参照してください。

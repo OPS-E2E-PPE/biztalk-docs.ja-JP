@@ -37,7 +37,7 @@ ms.locfileid: "37000683"
   
 - **A4SWIFT_PosInBatch**  
   
-  これらおよびその他の昇格させたプロパティについては、次を参照してください。 [a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)します。  
+  これらおよびその他の昇格させたプロパティについては、[a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)を参照してください。  
   
 ## <a name="failures-during-batch-processing"></a>バッチ処理中にエラー  
  SWIFT 逆アセンブラーがメッセージのエラー (解析または検証) を検出した、バッチ処理中に場合 (**受信バッチ解除処理**設定**True**)、として、その動作がバッチ処理の構成によって異なります次に示します。  

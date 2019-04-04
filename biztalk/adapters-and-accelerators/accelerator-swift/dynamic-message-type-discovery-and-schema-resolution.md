@@ -92,7 +92,7 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
   
 - **A4SWIFT_SecondaryMessageType** (省略可能)  
   
-  これらおよびその他の昇格させたプロパティの詳細については、次を参照してください。 [a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)します。  
+  これらおよびその他の昇格させたプロパティの詳細については、[a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)を参照してください。  
   
 > [!NOTE]
 >  SWIFT ヘッダーのスキーマに設定する場合**None**、完全なインターチェンジのスキーマを指定する必要があります、 **SWIFT インターチェンジ スキーマ**プロパティ。 ここでは、逆アセンブラーは、A4SWIFT を受信するすべてのメッセージを解析するのに指定されたインターチェンジ スキーマを使用します。 つまり、動的スキーマの解決を無効にして、型を持つ指定されたインターチェンジ スキーマに一致するメッセージのみを受信するパイプラインを構成します。  

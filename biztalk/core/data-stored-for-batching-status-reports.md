@@ -37,7 +37,7 @@ ms.locfileid: "37006859"
   
  **バッチ インターチェンジの関連付け**  
   
- BusinessMessageJournal BAM アクティビティにより、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、トランザクション セットを持つ受信 EDI インターチェンジを、同じトランザクション セットを持つ送信バッチ インターチェンジと関連付けることができます。 実装して、この相関関係情報を使用する方法については、次を参照してください。[送信バッチで受信トランザクション セットの関連付け](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md)します。  
+ BusinessMessageJournal BAM アクティビティにより、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、トランザクション セットを持つ受信 EDI インターチェンジを、同じトランザクション セットを持つ送信バッチ インターチェンジと関連付けることができます。 実装して、この相関関係情報を使用する方法については、[送信バッチで受信トランザクション セットの関連付け](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [EDI および AS2 状態レポートの格納データ](../core/data-stored-for-edi-and-as2-status-reports.md)   

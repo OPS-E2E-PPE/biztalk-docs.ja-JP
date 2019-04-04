@@ -25,7 +25,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37000099"
 ---
 # <a name="how-to-remove-a-map-from-an-application"></a>マップをアプリケーションから削除する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、BizTalk アプリケーションからマップを削除する方法について説明します。 マップの新しいバージョンを展開した後で、マップを削除する場合があります。 詳細とアプリケーションのアイテムを更新するための重要な考慮事項は、次を参照してください。 [BizTalk アプリケーションの更新](../core/updating-biztalk-applications.md)します。  
+このトピックでは、BizTalk Server 管理コンソールを使用して、BizTalk アプリケーションからマップを削除する方法について説明します。 マップの新しいバージョンを展開した後で、マップを削除する場合があります。 詳細とアプリケーションのアイテムを更新するための重要な考慮事項は、[BizTalk アプリケーションの更新](../core/updating-biztalk-applications.md)を参照してください。  
   
  マップを削除すると、次の処理が行われます。  
   

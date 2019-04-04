@@ -49,7 +49,7 @@ ms.locfileid: "36983035"
 - 」の説明に従って、送信ポートによって処理されるメッセージの追跡オプションを構成する[送信ポートの追跡を構成する方法](../core/how-to-configure-tracking-for-a-send-port.md)します。  
 
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。 さらに、エンタープライズ シングル サインオン (SSO) データベースに対して SSO 関連の管理者権限が必要です。 詳細については、次を参照してください。 [SSO ユーザー グループ](../core/sso-user-groups.md)します。  
+ このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。 さらに、エンタープライズ シングル サインオン (SSO) データベースに対して SSO 関連の管理者権限が必要です。 詳細については、[SSO ユーザー グループ](../core/sso-user-groups.md)を参照してください。  
 
 ### <a name="to-create-a-send-port"></a>送信ポートを作成するには  
 

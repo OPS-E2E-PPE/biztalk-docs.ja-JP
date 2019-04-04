@@ -54,7 +54,7 @@ BizTalk Server の以前のバージョンから BizTalk Server にマップを�
   
 4. 含むマップとの間の参照を作成、 **Scripting** functoid と再作成された機能を格納するアセンブリ。  
   
-5. 構成、**スクリプト**プロパティを**Scripting** functoid。 このプロパティは、どのようなスクリプトを決定します、 **Scripting**実行時に functoid の呼び出し。 このプロパティの値と、カスタム スクリプトの再作成で使用した言語を一致させる必要があります。 スクリプト プロパティを構成する方法の詳細については、次を参照してください。 [Functoid のプロパティを編集および入力パラメーター](../core/editing-functoid-properties-and-input-parameters.md)します。 参照してください[スクリプト Functoid の](../core/scripting-functoid.md)します。  
+5. 構成、**スクリプト**プロパティを**Scripting** functoid。 このプロパティは、どのようなスクリプトを決定します、 **Scripting**実行時に functoid の呼び出し。 このプロパティの値と、カスタム スクリプトの再作成で使用した言語を一致させる必要があります。 スクリプト プロパティを構成する方法の詳細については、[Functoid のプロパティを編集および入力パラメーター](../core/editing-functoid-properties-and-input-parameters.md)を参照してください。 参照してください[スクリプト Functoid の](../core/scripting-functoid.md)します。  
   
 6. マップを含んでいる BizTalk プロジェクトをビルド、 **Scripting** functoid。  
   

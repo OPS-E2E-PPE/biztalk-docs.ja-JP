@@ -32,7 +32,7 @@ SOAP アダプターの新しい機能強化の 1 つは、コンテンツ ベ�
   
 1. Web サービスの URL を決定します。  
   
-2. 開く、**空の BizTalk Server プロジェクト**で、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューション。 BizTalk Server プロジェクトを作成する方法の詳細については、次を参照してください。 [BizTalk プロジェクトを作成する方法](../core/how-to-create-biztalk-projects.md)します。  
+2. 開く、**空の BizTalk Server プロジェクト**で、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューション。 BizTalk Server プロジェクトを作成する方法の詳細については、[BizTalk プロジェクトを作成する方法](../core/how-to-create-biztalk-projects.md)を参照してください。  
   
    > [!NOTE]
    >  このチュートリアルでは、BizTalk Server プロジェクトを利用して、Web サービスで使用するプロキシ ライブラリおよび XML スキーマを作成します。 同じ目的で、.NET Framework 4.0 の SDK の Wsdl.exe および Xsd.exe を使用することができますも。  
@@ -68,9 +68,9 @@ SOAP アダプターの新しい機能強化の 1 つは、コンテンツ ベ�
   
 ### <a name="to-configure-a-send-port-and-receive-location-for-consuming-a-web-service"></a>Web サービスを使用するための送信ポートおよび受信場所を構成するには  
   
-1.  BizTalk Server 管理コンソールで、送信ポートを作成します。 詳細については、次を参照してください。[送信ポートを作成する方法](../core/how-to-create-a-send-port2.md)します。 送信ポートを作成するときは、トランスポートの種類またはトランスポート プロトコルとして SOAP を選択します。  
+1.  BizTalk Server 管理コンソールで、送信ポートを作成します。 詳細については、[送信ポートを作成する方法](../core/how-to-create-a-send-port2.md)を参照してください。 送信ポートを作成するときは、トランスポートの種類またはトランスポート プロトコルとして SOAP を選択します。  
   
-2.  次の設定を使用して、SOAP 送信ポートを構成します。 詳細については、次を参照してください。 [SOAP 送信ポートを構成する方法](../core/how-to-configure-a-soap-send-port.md)します。  
+2.  次の設定を使用して、SOAP 送信ポートを構成します。 詳細については、[SOAP 送信ポートを構成する方法](../core/how-to-configure-a-soap-send-port.md)を参照してください。  
   
     |プロパティ|目的|  
     |--------------|----------------|  
@@ -80,7 +80,7 @@ SOAP アダプターの新しい機能強化の 1 つは、コンテンツ ベ�
     |**メソッド名**|リスト ボックスでメソッドの 1 つを指定します。 Web メソッドが、Soap アダプターに書き込まれる**MethodName**プロパティ。|  
   
     > [!NOTE]
-    >  コンテンツ ベースのルーティング (CBR) を使用する場合は、送信ポートのフィルターを構成します。 詳細については、次を参照してください。[送信ポートのフィルターを構成する方法](../core/how-to-configure-filters-for-a-send-port.md)します。  
+    >  コンテンツ ベースのルーティング (CBR) を使用する場合は、送信ポートのフィルターを構成します。 詳細については、[送信ポートのフィルターを構成する方法](../core/how-to-configure-filters-for-a-send-port.md)を参照してください。  
   
     > [!NOTE]
     >  呼び出された Web サービスからの応答メッセージに対するサブスクライバーがない場合は、ルーティング障害のエラーが発生します。  

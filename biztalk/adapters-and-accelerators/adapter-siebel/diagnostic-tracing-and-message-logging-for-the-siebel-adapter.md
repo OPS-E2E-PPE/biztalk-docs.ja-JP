@@ -136,13 +136,13 @@ ms.locfileid: "36994579"
   
  さらに、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]バインドのプロパティを提供します (**ログデータ**) に設定する場合**True**トレース レベル設定されている場合と**Verbose**、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アダプターと Siebel システム間の情報フローのログを記録します。 この情報は、同じトレース ファイルにアダプターのトレースと共に記録されます。  
   
- このバインドのプロパティの詳細については、次を参照してください。 [for Siebel のバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)します。  
+ このバインドのプロパティの詳細については、[for Siebel のバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)を参照してください。  
   
 ## <a name="viewing-the-traces"></a>トレースを表示します。  
- Windows Communication Foundation (WCF) サービス トレース ビューアー ツールを使用するには、トレースを表示します。 ツールの詳細については、次を参照してください。[相関トレースの表示とトラブルシューティングのサービス トレース ビューアーを使用して](https://msdn.microsoft.com/library/aa751795.aspx)します。  
+ Windows Communication Foundation (WCF) サービス トレース ビューアー ツールを使用するには、トレースを表示します。 ツールの詳細については、[相関トレースの表示とトラブルシューティングのサービス トレース ビューアーを使用して](https://msdn.microsoft.com/library/aa751795.aspx)を参照してください。  
   
 ## <a name="configuring-tracking-for-biztalk-applications"></a>BizTalk アプリケーションの追跡の構成  
- BizTalk 管理コンソールでは受信ポートは、送信ポートなどのさまざまな追跡オプションを構成することができます。 追跡の構成設定を使用すると、受信/送信イベント データ、メッセージのプロパティ、メッセージ本文、およびオーケストレーションを追跡します。 BizTalk アプリケーションの追跡を構成する方法の詳細については、次を参照してください。[管理成果物](../../core/managing-artifacts.md)します。
+ BizTalk 管理コンソールでは受信ポートは、送信ポートなどのさまざまな追跡オプションを構成することができます。 追跡の構成設定を使用すると、受信/送信イベント データ、メッセージのプロパティ、メッセージ本文、およびオーケストレーションを追跡します。 BizTalk アプリケーションの追跡を構成する方法の詳細については、[管理成果物](../../core/managing-artifacts.md)を参照してください。
   
 グループ ハブを使用することもできます。[追跡メッセージを表示し、インスタンス データ](../../core/viewing-tracked-message-and-instance-data.md)追跡チェックリスト、およびベスト プラクティスなど。
   

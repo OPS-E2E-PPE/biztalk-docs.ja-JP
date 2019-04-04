@@ -31,14 +31,14 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36986435"
 ---
 # <a name="walkthrough-module-1---sending-and-receiving-messages-with-the-windows-sharepoint-services-adapter"></a>チュートリアル: モジュール 1 - Windows SharePoint Services アダプターでメッセージを送受信します。
-このチュートリアルでは、Windows SharePoint Services アダプターとコンテンツ ベースのルーティング (CBR) を使用してメッセージを送受信できるように Windows SharePoint Services と [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成する方法について説明します。 コンテンツ ベースのルーティングを使用すると、特定のポートに正確にバインドされたメッセージに対するメッセージ サブスクリプションが必要ではなくなります。 また、エンベロープのプロパティや受信ポートの構成プロパティに基づいてメッセージをルーティングするユーザーにとって、柔軟性も向上します。 Windows SharePoint Services アダプターの概要については、次を参照してください。 [、Windows SharePoint Services アダプターとは何ですか?](../core/what-is-the-windows-sharepoint-services-adapter.md)します。  
+このチュートリアルでは、Windows SharePoint Services アダプターとコンテンツ ベースのルーティング (CBR) を使用してメッセージを送受信できるように Windows SharePoint Services と [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成する方法について説明します。 コンテンツ ベースのルーティングを使用すると、特定のポートに正確にバインドされたメッセージに対するメッセージ サブスクリプションが必要ではなくなります。 また、エンベロープのプロパティや受信ポートの構成プロパティに基づいてメッセージをルーティングするユーザーにとって、柔軟性も向上します。 Windows SharePoint Services アダプターの概要については、[、Windows SharePoint Services アダプターとは何ですか?](../core/what-is-the-windows-sharepoint-services-adapter.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するための前提条件は、次のとおりです。  
   
 - 実行されている BizTalk Server の完全なインストールでのシングル サーバー配置する必要があります[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]します。  
   
-  マルチ サーバー展開で Windows SharePoint Services アダプターを使用する方法の詳細については、次を参照してください。[設定と、Windows SharePoint Services アダプターを展開する](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)します。  
+  マルチ サーバー展開で Windows SharePoint Services アダプターを使用する方法の詳細については、[設定と、Windows SharePoint Services アダプターを展開する](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)を参照してください。  
   
 ## <a name="configure-windows-sharepoint-services"></a>Windows SharePoint Services を構成します。  
  ここでは、3 つのドキュメント ライブラリが含まれた、トップレベルの SharePoint Web サイトを作成します。 Windows SharePoint Services アダプターでは、これらのライブラリを使用して、メッセージをアップロード元のライブラリからアップロード先のライブラリに移動します。 このメッセージはドキュメント ライブラリにもアーカイブされます。 このチュートリアルで Windows Sharepoint Services アダプターによってアクセスする Windows SharePoint Services サイトを提供し、このサイトにアクセスするためのユーザー権限を設定するには、次の手順を実行する必要があります。  

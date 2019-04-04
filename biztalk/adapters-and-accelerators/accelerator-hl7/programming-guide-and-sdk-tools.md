@@ -47,7 +47,7 @@ ms.locfileid: "37010603"
   
 |||  
 |-|-|  
-|![](../../adapters-and-accelerators/accelerator-hl7/media/protmethod.gif "protmethod") Finalize (から継承された**System.Object**)|System 名前空間の詳細については、次を参照してください。 [System Namespace クラス](https://msdn.microsoft.com/library/system(v=vs.110).aspx)します。|  
+|![](../../adapters-and-accelerators/accelerator-hl7/media/protmethod.gif "protmethod") Finalize (から継承された**System.Object**)|System 名前空間の詳細については、[System Namespace クラス](https://msdn.microsoft.com/library/system(v=vs.110).aspx)を参照してください。|  
   
  BTAHL7 内を表示している場合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]または、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ドキュメントについては、左側にあるリンクは、メンバーの正確なページに移動します。 BTAHL7 が外部のヘルプを表示している場合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、右側の列にリンクを使用して、MSDN ライブラリの System 名前空間 ページに移動します。 リンクは特定のメンバーのページに移動していないことに注意してください。  
   

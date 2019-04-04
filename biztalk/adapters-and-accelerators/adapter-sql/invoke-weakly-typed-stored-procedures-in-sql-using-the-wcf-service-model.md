@@ -26,7 +26,7 @@ ms.locfileid: "37012075"
 >  ユーザー定義型の列を含むテーブルに対して操作を実行している場合ことを確認するを参照してください[テーブルと、SQL アダプターを使用してユーザー定義型を持つビューで操作](../../adapters-and-accelerators/adapter-sql/operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter.md)アプリケーションの開発を開始する前にします。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、GET_EMP_DETAILS ストアド プロシージャを使用します。 このストアド プロシージャは、入力パラメーターとして従業員 ID を受け取りし、その ID を持つ従業員のすべての対応する列を返します GET_EMP_DETAILS ストアド プロシージャは、サンプルで提供される SQL スクリプトを実行して作成されます。 サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。 サンプルについては、 **Execute_StoredProc**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サンプル。  
+ このトピックの例では、GET_EMP_DETAILS ストアド プロシージャを使用します。 このストアド プロシージャは、入力パラメーターとして従業員 ID を受け取りし、その ID を持つ従業員のすべての対応する列を返します GET_EMP_DETAILS ストアド プロシージャは、サンプルで提供される SQL スクリプトを実行して作成されます。 サンプルの詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。 サンプルについては、 **Execute_StoredProc**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サンプル。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
  ストアド プロシージャを呼び出すために生成された WCF クライアントの名前、**プロシージャ**ノードを使用して、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]次の表に記載されています。  
@@ -66,7 +66,7 @@ public partial class Procedures_dboClient : System.ServiceModel.ClientBase<Proce
   
 1. Visual Studio で Visual c# プロジェクトを作成します。 このトピックでは、コンソール アプリケーションを作成します。  
   
-2. GET_EMP_DETAILS ストアド プロシージャの WCF クライアント クラスを生成します。 対象のプロシージャを選択するかどうかを確認、**プロシージャ**ノード。 WCF クライアント クラスを生成する詳細については、次を参照してください。 [SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)します。  
+2. GET_EMP_DETAILS ストアド プロシージャの WCF クライアント クラスを生成します。 対象のプロシージャを選択するかどうかを確認、**プロシージャ**ノード。 WCF クライアント クラスを生成する詳細については、[SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)を参照してください。  
   
    > [!IMPORTANT]
    >  WCF クライアント クラスを生成する前に必ず設定して、 **EnableBizTalkCompatibilityMode**プロパティを false にバインドします。  
@@ -86,7 +86,7 @@ public partial class Procedures_dboClient : System.ServiceModel.ClientBase<Proce
     このスニペットで`Procedures_dboClient`SqlAdapterBindingClient.cs で定義されている WCF クライアントです。 このファイルがによって生成された、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 `SqlAdapterBinding_Procedures_dbo` クライアント エンドポイント構成の名前を指定され、app.config で定義されます。このファイルがによって生成されても、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]バインドのプロパティとその他の構成設定が含まれています。  
   
    > [!NOTE]
-   >  このスニペットでは、構成ファイルからバインドおよびエンドポイント アドレスを使用します。 これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定する、さまざまな方法の詳細については、次を参照してください。 [SQL アダプタのクライアントのバインディングを構成する](configure-a-client-binding-for-the-sql-adapter.md)します。  
+   >  このスニペットでは、構成ファイルからバインドおよびエンドポイント アドレスを使用します。 これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定する、さまざまな方法の詳細については、[SQL アダプタのクライアントのバインディングを構成する](configure-a-client-binding-for-the-sql-adapter.md)を参照してください。  
   
 5. 次のスニペットで説明されているように、クライアントを開きます。  
   

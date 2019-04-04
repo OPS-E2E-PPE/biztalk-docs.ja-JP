@@ -102,7 +102,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムからデ
    |ネットワーク|Rendezvous トランスポート ネットワーク パラメーター。|  
    |サービス|Rendezvous トランスポート サービス パラメーター。|  
 
-    プロパティの詳細については、次を参照してください。[成果物の作成が表示される](../core/creating-tibco-rendezvous-receive-handlers.md)します。  
+    プロパティの詳細については、[成果物の作成が表示される](../core/creating-tibco-rendezvous-receive-handlers.md)を参照してください。  
 
 8. **[OK]** をクリックします。  
 

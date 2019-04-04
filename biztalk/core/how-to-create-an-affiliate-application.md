@@ -57,7 +57,7 @@ MMC スナップインまたはここで示すコマンドを使用すると、X
 > [!IMPORTANT]
 >  この作業を実行するには、SSO 管理者または SSO 関連管理者である必要があります。  
   
- 関連アプリケーションは作成した後で有効にする必要があります。 詳細については、次を参照してください。[関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md)します。  
+ 関連アプリケーションは作成した後で有効にする必要があります。 詳細については、[関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md)を参照してください。  
   
 ### <a name="to-create-an-affiliate-application-using-the-mmc-snap-in"></a>MMC スナップインを使用して関連アプリケーションを作成するには  
   

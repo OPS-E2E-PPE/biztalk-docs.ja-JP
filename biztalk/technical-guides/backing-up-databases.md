@@ -43,7 +43,7 @@ ms.locfileid: "36980067"
   
 - バックアップと復元の概要については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を参照してください["し、復元する BizTalk Server のバックアップ"](http://go.microsoft.com/fwlink/?LinkId=154071) (<http://go.microsoft.com/fwlink/?LinkId=154071>)。  
   
-- BizTalk Server のバックアップ ジョブを構成する方法の詳細については、次を参照してください。 ["方法を構成、Backup BizTalk Server ジョブ"](http://go.microsoft.com/fwlink/?LinkId=154072) (http://go.microsoft.com/fwlink/?LinkId=154072)します。  
+- BizTalk Server のバックアップ ジョブを構成する方法の詳細については、["方法を構成、Backup BizTalk Server ジョブ"](http://go.microsoft.com/fwlink/?LinkId=154072) (http://go.microsoft.com/fwlink/?LinkId=154072)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [ディザスター リカバリーのための BizTalk Server ログ配布の使用](../technical-guides/using-biztalk-server-log-shipping-for-disaster-recovery.md)

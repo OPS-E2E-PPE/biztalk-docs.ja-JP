@@ -92,7 +92,7 @@ TIBCO Enterprise Message System (EMS) の受信場所、 **URL**と**Target Name
   
          エンタープライズ シングル サインオン ツールで作成される関連アプリケーションは、TIBCO EMS などのアプリケーションを表します。 Microsoft BizTalk Adapter for TIBCO EMS は、アプリケーション ユーザーの資格情報を使用します。 これらの資格情報は、指定された関連アプリケーションのサーバー システムの SSO データベースから取得されます。  
   
-         関連アプリケーションを作成する方法の詳細については、次を参照してください。[関連アプリケーションを作成する](../core/creating-affiliate-applications5.md)します。  
+         関連アプリケーションを作成する方法の詳細については、[関連アプリケーションを作成する](../core/creating-affiliate-applications5.md)を参照してください。  
   
 5.  展開**ユーザーの資格情報**を入力し、**ユーザー名**と**パスワード**TIBCO EMS サーバーにアクセスします。  
   

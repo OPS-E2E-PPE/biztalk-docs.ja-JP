@@ -32,7 +32,7 @@ ms.locfileid: "36974843"
  BizTalk Server のバックアップ ジョブを実行するたびに、すべての BizTalk Server データベースの、マークされたトランザクション ログ バックアップが作成され、指定された期間に基づく完全バックアップが作成されます。  
   
 ## <a name="full-backups"></a>完全バックアップ  
- 最初のバックアップ プロセスが実行される BizTalk Server のバックアップ ジョブを実行するときに*BackupFull*、各期間 (not、ジョブを実行するたびに) 1 回です。 BizTalk Server のバックアップ ジョブをスケジュールする方法の詳細については、次を参照してください。 [Backup BizTalk Server のジョブをスケジュールする方法](../core/how-to-schedule-the-backup-biztalk-server-job.md)します。  
+ 最初のバックアップ プロセスが実行される BizTalk Server のバックアップ ジョブを実行するときに*BackupFull*、各期間 (not、ジョブを実行するたびに) 1 回です。 BizTalk Server のバックアップ ジョブをスケジュールする方法の詳細については、[Backup BizTalk Server のジョブをスケジュールする方法](../core/how-to-schedule-the-backup-biztalk-server-job.md)を参照してください。  
   
  新しく設定した間隔で BizTalk Server のバックアップ ジョブが初めて実行されるときは、完全バックアップが実行されます。 たとえば、ジョブを 1 時間おきに実行するようにスケジュールを設定し、間隔を "毎日" に設定した場合、BizTalk Server のバックアップ ジョブは、1 日の初回実行時 (深夜 0:00 時など) に、完全バックアップが実行されます。  
   

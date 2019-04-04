@@ -45,10 +45,10 @@ ms.locfileid: "36985267"
   
    展開先を変更したら、以後同じアセンブリを再展開する場合は、この新しい場所が既定値として使用されます。  
   
-   詳細については、次を参照してください。 [Visual Studio から BizTalk アセンブリを展開する方法](../core/how-to-deploy-a-biztalk-assembly-from-visual-studio.md)します。  
+   詳細については、[Visual Studio から BizTalk アセンブリを展開する方法](../core/how-to-deploy-a-biztalk-assembly-from-visual-studio.md)を参照してください。  
   
 ## <a name="deploying-solutions-vs-projects"></a>Vs のソリューションを展開します。プロジェクト  
- 展開する場合は、個別のプロジェクトではなく、常にソリューションを展開することを強くお勧めします。 個別のプロジェクトの展開では、展開するアセンブリと別のアセンブリとの間に依存関係がある場合、展開を完了するまでにいくつかの手順を実行しなければなりません。 しかし、ソリューションを展開すると、アセンブリ間の依存関係を管理するための手順はすべて [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が自動的に実行します。 詳細については、次を参照してください。 [Visual Studio から BizTalk アセンブリを再デプロイする方法](../core/how-to-redeploy-a-biztalk-assembly-from-visual-studio.md)します。  
+ 展開する場合は、個別のプロジェクトではなく、常にソリューションを展開することを強くお勧めします。 個別のプロジェクトの展開では、展開するアセンブリと別のアセンブリとの間に依存関係がある場合、展開を完了するまでにいくつかの手順を実行しなければなりません。 しかし、ソリューションを展開すると、アセンブリ間の依存関係を管理するための手順はすべて [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が自動的に実行します。 詳細については、[Visual Studio から BizTalk アセンブリを再デプロイする方法](../core/how-to-redeploy-a-biztalk-assembly-from-visual-studio.md)を参照してください。  
   
  次の図は、ソリューションを展開した場合に、依存関係のあるアセンブリを再展開するために [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって実行される手順を示しています。  
   

@@ -23,7 +23,7 @@ ms.locfileid: "36966955"
 ここでは、ビジネス ルール作成ツールを使用して、データベースおよび .NET のファクトを使用するポリシーを作成する手順について説明します。  
 
 ## <a name="prerequisites"></a>前提条件  
- 値を設定する必要があります、 **StaticSupport**を 1 または 2 のチュートリアルを実行する前にレジストリ キー。 これによって、クライアントにクラスのインスタンスをアサートするように要求しなくても、ポリシーで .NET クラスの静的メソッドを呼び出すことができるようになります。 詳細については、次を参照してください。[クラスの静的メンバーを呼び出す](../core/invoking-static-members-of-a-class.md)します。  
+ 値を設定する必要があります、 **StaticSupport**を 1 または 2 のチュートリアルを実行する前にレジストリ キー。 これによって、クライアントにクラスのインスタンスをアサートするように要求しなくても、ポリシーで .NET クラスの静的メソッドを呼び出すことができるようになります。 詳細については、[クラスの静的メンバーを呼び出す](../core/invoking-static-members-of-a-class.md)を参照してください。  
 
 ## <a name="overview-of-this-walkthrough"></a>このチュートリアルの概要  
  次の表に示すように、このチュートリアルには 5 つの手順が含まれています。  
@@ -350,7 +350,7 @@ ms.locfileid: "36966955"
     policy.Execute(dc, dti);  
     ```  
 
--   使用することができます、 **SqlTransaction**からデータベースを更新するクラス、 **ProcessPODbNet**をトランザクションでのポリシー。 次のコードは、トランザクションを開始するには、トランザクションをパラメーターとして渡す方法を示しています、 **DataConnection**オブジェクト、およびデータベースの変更をコミットします。 詳細については、次を参照してください。[トランザクション サポート](../core/transaction-support.md)します。  
+-   使用することができます、 **SqlTransaction**からデータベースを更新するクラス、 **ProcessPODbNet**をトランザクションでのポリシー。 次のコードは、トランザクションを開始するには、トランザクションをパラメーターとして渡す方法を示しています、 **DataConnection**オブジェクト、およびデータベースの変更をコミットします。 詳細については、[トランザクション サポート](../core/transaction-support.md)を参照してください。  
 
     ```  
     SqlConnection cn = new SqlConnection("Data Source=(local);Initial Catalog=TestDB;Integrated Security=SSPI");  

@@ -23,7 +23,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36981299"
 ---
 # <a name="httpsolicitresponse"></a>HTTPSolicitResponse
-HTTPSolicitResponse サンプルは、オーケストレーション データの処理に ASP.NET アプリケーションを利用する Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションを作成する方法を示します。 このサンプルでは、オーケストレーションは要求 - 応答のポートを利用して、ASP.NET アプリケーションにメッセージを送信し、応答を受信します。 HTTP アダプターを使用することにより、BizTalk Server オーケストレーションと ASP.NET アプリケーションを統合できます。 詳細については、次を参照してください。 [HTTP アダプター](../core/http-adapter.md)します。  
+HTTPSolicitResponse サンプルは、オーケストレーション データの処理に ASP.NET アプリケーションを利用する Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションを作成する方法を示します。 このサンプルでは、オーケストレーションは要求 - 応答のポートを利用して、ASP.NET アプリケーションにメッセージを送信し、応答を受信します。 HTTP アダプターを使用することにより、BizTalk Server オーケストレーションと ASP.NET アプリケーションを統合できます。 詳細については、[HTTP アダプター](../core/http-adapter.md)を参照してください。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルは、以下の手順で、乗算する 2 つの数値を含んでいる要求を受信し、その要求に応答する BizTalk Server オーケストレーションを提供します。  

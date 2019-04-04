@@ -40,7 +40,7 @@ ms.locfileid: "37015059"
   
 ### <a name="to-create-a-wcf-custom-port"></a>WCF カスタム ポートを作成するには  
   
-1. 使用して、RFC のスキーマを生成すると、 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、バインド ファイルが BizTalk プロジェクトにも追加します。 このバインド ファイルをインポートすることに、BizTalk WCF カスタムを作成するアプリケーション送信-受信ポート。 バインド ファイルのインポート方法の詳細については、次を参照してください。[バインドのインポート](http://msdn.microsoft.com/library/c927efde-29bd-4efe-9da5-942e7da65dbf)します。  
+1. 使用して、RFC のスキーマを生成すると、 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、バインド ファイルが BizTalk プロジェクトにも追加します。 このバインド ファイルをインポートすることに、BizTalk WCF カスタムを作成するアプリケーション送信-受信ポート。 バインド ファイルのインポート方法の詳細については、[バインドのインポート](http://msdn.microsoft.com/library/c927efde-29bd-4efe-9da5-942e7da65dbf)を参照してください。  
   
 2. 送信ポートが作成されたバインド ファイルをインポートした後、**送信ポート**BizTalk Server 管理コンソール内のフォルダー。  
   

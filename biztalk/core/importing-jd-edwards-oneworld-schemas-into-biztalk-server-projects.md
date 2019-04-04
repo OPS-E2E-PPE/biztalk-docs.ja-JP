@@ -28,7 +28,7 @@ ms.locfileid: "36966147"
 ここでは、JD Edwards OneWorld サーバーを参照し、スキーマを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトにインポートする方法について説明します。  
   
 > [!NOTE]
->  arglist を設定したことを確認する必要があります。 オーケストレーションでスキーマを生成する前に、jdearglist.txt を更新する必要があります。 詳細については、次を参照してください。[文字列値の処理](../core/handling-string-values1.md)します。  
+>  arglist を設定したことを確認する必要があります。 オーケストレーションでスキーマを生成する前に、jdearglist.txt を更新する必要があります。 詳細については、[文字列値の処理](../core/handling-string-values1.md)を参照してください。  
   
 > [!NOTE]
 >  Jdearglist を変更するたびにそのビジネス オブジェクトのスキーマを再生成する必要があります。  

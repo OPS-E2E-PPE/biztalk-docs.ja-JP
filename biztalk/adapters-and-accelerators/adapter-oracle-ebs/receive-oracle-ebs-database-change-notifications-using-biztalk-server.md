@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36991427"
 ---
 # <a name="receive-oracle-e-business-suite-database-change-notifications-using-biztalk-server"></a>BizTalk Server を使用して Oracle E-business Suite データベース変更通知を受信します。
-構成することができます、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite からデータベース変更通知のメッセージを受信します。 Oracle E-business Suite を使用した通知に対して、アダプターの登録に使用する SELECT ステートメントを指定することができます。 登録通知の場合、SELECT ステートメントの結果セットが変更されたときに通知メッセージを受信します。 アダプターが通知をサポートする方法の詳細については、次を参照してください。[データベース変更通知の受信、Oracle E-business Suite アダプターの使用に関する考慮事項](../../adapters-and-accelerators/adapter-oracle-ebs/before-you-receive-database-change-notifications-using-the-oracle-ebs-adapter.md)します。  
+構成することができます、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite からデータベース変更通知のメッセージを受信します。 Oracle E-business Suite を使用した通知に対して、アダプターの登録に使用する SELECT ステートメントを指定することができます。 登録通知の場合、SELECT ステートメントの結果セットが変更されたときに通知メッセージを受信します。 アダプターが通知をサポートする方法の詳細については、[データベース変更通知の受信、Oracle E-business Suite アダプターの使用に関する考慮事項](../../adapters-and-accelerators/adapter-oracle-ebs/before-you-receive-database-change-notifications-using-the-oracle-ebs-adapter.md)を参照してください。  
   
  構成することがいくつかのシナリオを次に、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]Oracle E-business Suite から通知を受け取ります。  
   
@@ -33,7 +33,7 @@ ms.locfileid: "36991427"
 > [!CAUTION]
 >  Oracle データベースとアダプター クライアントの間のネットワークの停止がある場合、通知は送信されませんアダプター クライアントのネットワークの停止の期間中に Oracle データベースで行われた変更で、その後です。 したがって、重要なシナリオの通知の操作ではなく、ポーリング操作を使用する必要があります。  
   
- このセクションのトピックでは、これらの各シナリオのアダプターを構成する方法について説明します。 Oracle E-business Suite を使用してからの通知の取得を開始する、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]、特定のバインド プロパティを指定する必要があります。 通知に関連するバインド プロパティの詳細については、次を参照してください。[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。 通知メッセージの構造に関する詳細については、次を参照してください。[通知操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-the-notification-operation2.md)します。  
+ このセクションのトピックでは、これらの各シナリオのアダプターを構成する方法について説明します。 Oracle E-business Suite を使用してからの通知の取得を開始する、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]、特定のバインド プロパティを指定する必要があります。 通知に関連するバインド プロパティの詳細については、[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。 通知メッセージの構造に関する詳細については、[通知操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-the-notification-operation2.md)を参照してください。  
   
  Oracle E-business Suite から通知を受信することを確認します。  
   
@@ -45,7 +45,7 @@ ms.locfileid: "36991427"
     grant change notification to <user name>  
     ```  
   
--   Oracle データベースからデータベース変更通知を受信するために使用する ODP.NET する TCP ポートで決定します。 Windows ファイアウォールの例外リストには、そのポートを追加します。 Windows ファイアウォールの例外リストにポートを追加する方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)します。 同じポート番号を指定する必要があります、 **NotificationPort**プロパティをバインドします。 バインディング プロパティの詳細については、次を参照してください。[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。  
+-   Oracle データベースからデータベース変更通知を受信するために使用する ODP.NET する TCP ポートで決定します。 Windows ファイアウォールの例外リストには、そのポートを追加します。 Windows ファイアウォールの例外リストにポートを追加する方法については、[ http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)を参照してください。 同じポート番号を指定する必要があります、 **NotificationPort**プロパティをバインドします。 バインディング プロパティの詳細については、[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

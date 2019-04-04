@@ -39,7 +39,7 @@ DeleteParty サンプルは、指定したパーティを削除する方法を�
   
 - このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
   
-- Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、次を参照してください。:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)します。  
+- Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)を参照してください。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルは、BizTalk エクスプローラー オブジェクト モデル (ExplorerOM) のオブジェクトを使用して Microsoft Visual C# で記述されており、以下の操作を実行します。  

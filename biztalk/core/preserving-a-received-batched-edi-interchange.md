@@ -27,7 +27,7 @@ ms.locfileid: "36985779"
 
  **スキーマの検証**  
 
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、保存されたバッチのエンベロープを、バッチ スキーマとサービス スキーマを使用して検証します。 保存されたメッセージのルート ノードの検証にはバッチ スキーマが使用され、インターチェンジ、グループ、およびトランザクション セットのヘッダーとトレーラーの検証にはサービス スキーマが使用されます。 バッチ スキーマの詳細については、次を参照してください。 [EDI のバッチ スキーマ](../core/edi-batch-schemas.md)します。 サービス スキーマの詳細については、次を参照してください。 [EDI サービスと管理スキーマ](../core/edi-service-and-control-schemas.md)します。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、保存されたバッチのエンベロープを、バッチ スキーマとサービス スキーマを使用して検証します。 保存されたメッセージのルート ノードの検証にはバッチ スキーマが使用され、インターチェンジ、グループ、およびトランザクション セットのヘッダーとトレーラーの検証にはサービス スキーマが使用されます。 バッチ スキーマの詳細については、[EDI のバッチ スキーマ](../core/edi-batch-schemas.md)を参照してください。 サービス スキーマの詳細については、[EDI サービスと管理スキーマ](../core/edi-service-and-control-schemas.md)を参照してください。  
 
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、バッチ インターチェンジ内のドキュメントを、プロジェクト内のドキュメント スキーマを使用して検証します。  
 

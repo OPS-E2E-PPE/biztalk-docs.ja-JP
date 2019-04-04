@@ -41,9 +41,9 @@ ms.locfileid: "36976675"
   
 1. BizTalk Server 環境のドメイン グループを作成する場合は、Active Directory ドメイン グローバル グループを作成する必要があります。  
   
-2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールして構成する前に、SQL Server クラスターを構成します。 SQL Server のクラスタ リングの詳細については、次を参照してください。 [Always On フェールオーバー クラスター インスタンス](https://technet.microsoft.com/library/ms189134.aspx)します。  
+2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールして構成する前に、SQL Server クラスターを構成します。 SQL Server のクラスタ リングの詳細については、[Always On フェールオーバー クラスター インスタンス](https://technet.microsoft.com/library/ms189134.aspx)を参照してください。  
   
-3. さらに、マスター シークレット サーバーをクラスター化する場合は、マスター シークレット サーバーを最初に構成しておく必要があります。 エンタープライズ シングル サインオンの高可用性に関する詳細については、次を参照してください。[エンタープライズ シングル サインオンの高可用性](../core/high-availability-for-enterprise-single-sign-on.md)します。  
+3. さらに、マスター シークレット サーバーをクラスター化する場合は、マスター シークレット サーバーを最初に構成しておく必要があります。 エンタープライズ シングル サインオンの高可用性に関する詳細については、[エンタープライズ シングル サインオンの高可用性](../core/high-availability-for-enterprise-single-sign-on.md)を参照してください。  
   
 #### <a name="to-run-the-biztalk-server-configuration-wizard"></a>BizTalk Server の構成ウィザードを実行するには  
   

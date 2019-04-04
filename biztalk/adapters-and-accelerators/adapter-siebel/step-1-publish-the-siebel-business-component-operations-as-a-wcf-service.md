@@ -35,7 +35,7 @@ ms.locfileid: "36983019"
   
 - 必要な Siebel クライアント。  
   
-  これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 通常、インストール ガイドにインストールされて\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents します。  
+  これらの前提条件の詳細については、、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドを参照してください。 通常、インストール ガイドにインストールされて\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents します。  
   
 ## <a name="publish-the-siebel-business-components-as-a-wcf-service"></a>WCF サービスとしての Siebel ビジネス コンポーネントを発行します。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "36983019"
   
    5. をクリックして、**バインド プロパティ**タブをクリックし、対象と操作のために必要な場合、バインドのプロパティの値を指定します。  
   
-       バインド プロパティの詳細については、次を参照してください。 [for Siebel のバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)します。  
+       バインド プロパティの詳細については、[for Siebel のバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)を参照してください。  
   
    6. をクリックして**OK**、順にクリックします**Connect**します。 接続が確立されると、接続の状態が表示として**接続**します。  
   
@@ -99,7 +99,7 @@ ms.locfileid: "36983019"
       |X509FindType|実行する X.509 検索の種類。<br /><br /> **注:** 場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**します。|  
   
       > [!NOTE]
-      >  証明書と関連付けられているプロパティの詳細については、次を参照してください。 [X509ClientCertificateCredentialsElement プロパティ](https://msdn.microsoft.com/library/system.servicemodel.configuration.x509clientcertificatecredentialselement_properties.aspx)します。
+      >  証明書と関連付けられているプロパティの詳細については、[X509ClientCertificateCredentialsElement プロパティ](https://msdn.microsoft.com/library/system.servicemodel.configuration.x509clientcertificatecredentialselement_properties.aspx)を参照してください。
   
    2. **エンドポイント動作の構成**ボックスで、次の値を指定します。  
   
@@ -122,7 +122,7 @@ ms.locfileid: "36983019"
   
     |プロパティの|値を指定します。|  
     |----------------------|-----------------------|  
-    |バインドの構成|ウィザードでは、基本的な HTTP バインドのみサポートされます。 バインド構成のフィールドを自動的に作成されて、 *System.ServiceModel.Configuration.BasicHttpBindingElement*します。<br /><br /> 省略記号ボタンをクリックします **([...])。** HTTP バインディングのプロパティを変更します。 セキュリティで保護された通信チャネルを使用する必要があります常に設定する、**モード**プロパティを**トランスポート**します。 ウィザードの既定値の設定、**モード**プロパティとして**トランスポート**します。<br /><br /> 公開されているその他のバインディングの詳細については、次を参照してください。 [BasicHttpBindingElement クラス](https://msdn.microsoft.com/library/system.servicemodel.configuration.basichttpbindingelement.aspx)します。|  
+    |バインドの構成|ウィザードでは、基本的な HTTP バインドのみサポートされます。 バインド構成のフィールドを自動的に作成されて、 *System.ServiceModel.Configuration.BasicHttpBindingElement*します。<br /><br /> 省略記号ボタンをクリックします **([...])。** HTTP バインディングのプロパティを変更します。 セキュリティで保護された通信チャネルを使用する必要があります常に設定する、**モード**プロパティを**トランスポート**します。 ウィザードの既定値の設定、**モード**プロパティとして**トランスポート**します。<br /><br /> 公開されているその他のバインディングの詳細については、[BasicHttpBindingElement クラス](https://msdn.microsoft.com/library/system.servicemodel.configuration.basichttpbindingelement.aspx)を参照してください。|  
     |[エンドポイント名]|コントラクトのエンドポイント名を指定します。|  
   
      このページの他のフィールドには、前のページで指定した値に基づいて自動的に設定されます。  

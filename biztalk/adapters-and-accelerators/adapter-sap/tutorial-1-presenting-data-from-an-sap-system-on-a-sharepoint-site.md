@@ -39,7 +39,7 @@ ms.locfileid: "37020795"
 >  SAP システムの一部のバージョンでは、SD_RFC_CUSTOMER_GET ではなく RFC_CUSTOMER_GET RFC を公開します。  
 > 
 > [!NOTE]
->  このチュートリアルで前を使用するためのすべての前提条件がインストールされているを確認します、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Office SharePoint Server の使用。 前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイド、通常は c:/プログラム ファイルまたは Microsoft にインストールされている [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] /文書化します。  
+>  このチュートリアルで前を使用するためのすべての前提条件がインストールされているを確認します、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Office SharePoint Server の使用。 前提条件の詳細については、、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイド、通常は c:/プログラム ファイルまたは Microsoft にインストールされている [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] /文書化を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -22,7 +22,7 @@ ms.locfileid: "37014707"
 # <a name="update-references-to-the-tracking-analysis-server-database"></a>追跡分析サーバー データベースへの参照を更新します。
 Tracking Analysis Server データベースであり、省略可能なオンライン分析処理 (OLAP) キューブが含まれています。 これらの OLAP キューブは、BizTalk 追跡データベースに含まれるデータの集計です。  
   
- Tracking Analysis Server データベースを復元する[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]分析マネージャー、MessageMetrics キューブおよび ServiceMetrics キューブを処理します。 手順については、次を参照してください。[管理バックアップと復元 (Analysis Services)](http://go.microsoft.com/fwlink/?LinkId=130939) (<http://go.microsoft.com/fwlink/?LinkId=130939>) で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]オンライン ブックの「します。  
+ Tracking Analysis Server データベースを復元する[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]分析マネージャー、MessageMetrics キューブおよび ServiceMetrics キューブを処理します。 手順については、[管理バックアップと復元 (Analysis Services)](http://go.microsoft.com/fwlink/?LinkId=130939) (<http://go.microsoft.com/fwlink/?LinkId=130939>) で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]オンライン ブックの「を参照してください。  
   
  Tracking Analysis Server データベースを別のコンピューターを復元するには、次の手順を使用して、BizTalk 管理データベースにデータベース名への参照を更新することも必要があります。  
   

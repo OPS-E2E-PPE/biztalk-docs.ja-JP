@@ -32,7 +32,7 @@ ms.locfileid: "36975987"
   
   - 言語  
   
-    そのメッセージのスキーマを含む RfcGetAttributes 操作に関する詳細については、次を参照してください。 [RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)します。  
+    そのメッセージのスキーマを含む RfcGetAttributes 操作に関する詳細については、[RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)を参照してください。  
   
 - **RfcConfirmTransID**します。 この操作は、TRFC ノードの下に表示され、RFC SDK の機能を公開します。 SAP システムでの SAP トランザクション Id を確認するのにには、この操作を使用します。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "36975987"
   
    ただし、一部のシナリオに関連付けられた、tRFC TID を必要があります。 たとえば、特定の問題をトラブルシューティングする SAP システムで LUW たい場合があります。 このようなシナリオを呼び出すことができます**ConvertGuidToTid**します。 使用する**ConvertGuidToTid**コードをプロジェクトに SAP アダプターのアセンブリへの参照を追加する必要があります。  
   
-   Trfc を呼び出す方法の詳細については、次を参照してください。 [SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)します。 次の例を呼び出す方法を示しています。 **ConvertGuidToTid**します。  
+   Trfc を呼び出す方法の詳細については、[SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)を参照してください。 次の例を呼び出す方法を示しています。 **ConvertGuidToTid**します。  
   
   ```  
   // messageGuid is the GUID associated with a tRFC or IDOC  

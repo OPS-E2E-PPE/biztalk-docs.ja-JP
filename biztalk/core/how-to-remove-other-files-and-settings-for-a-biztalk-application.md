@@ -32,7 +32,7 @@ ms.locfileid: "37004675"
 >  共有アイテムを削除する前に、それらのアイテムが別のアプリケーションで使用されていないことを確認してください。共有されているアイテムを削除すると、そのアイテムを使用するアプリケーションが正常に機能しなくなります。  
   
 > [!NOTE]
->  処理後のスクリプトを使用して、この削除を自動化することをお勧めします。 詳細については、次を参照してください。[アプリケーション展開のカスタマイズを前処理および後処理のスクリプトを使用して](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)します。  
+>  処理後のスクリプトを使用して、この削除を自動化することをお勧めします。 詳細については、[アプリケーション展開のカスタマイズを前処理および後処理のスクリプトを使用して](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)を参照してください。  
   
 - **証明書を削除します。** 証明書ストアから証明書を削除するには、証明書マネージャー (certmgr.exe) コマンド ライン ツールを使用する方法と、証明書スナップインを使用する方法の 2 つの方法があります。 Certmgr.exe は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール前提条件の 1 つである .NET SDK と共にインストールされます。 certmgr.exe は、手動で、または処理後のスクリプトから起動できます。 Certmgr.exe の使用に関する詳細については、次を参照してください。[証明書マネージャー ツール (certmgr.exe)](http://go.microsoft.com/fwlink/?LinkId=56198) 、Microsoft Web サイト。  
   
@@ -42,7 +42,7 @@ ms.locfileid: "37004675"
   
 - **Windows レジストリから COM コンポーネントを削除します。** Windows レジストリから COM コンポーネントを削除するには、regsvr32 を使用します。 詳細については、対象オペレーティング システムのヘルプの「Regsvr32」を参照してください。 このツールは、Windows Server 2008 および Windows Vista Professional の両方に含まれています。  
   
-- **グローバル アセンブリ キャッシュ (GAC) からアセンブリをアンインストールします。** アセンブリは、GAC から自動的にはアンインストールされません。 アセンブリは、手動で、またはスクリプトを使用して GAC からアンインストールできます。 詳細については、次を参照してください。 [GAC からアセンブリをアンインストールする方法](http://msdn.microsoft.com/library/464706a8-f902-4d05-a724-19169facd2b4)します。  
+- **グローバル アセンブリ キャッシュ (GAC) からアセンブリをアンインストールします。** アセンブリは、GAC から自動的にはアンインストールされません。 アセンブリは、手動で、またはスクリプトを使用して GAC からアンインストールできます。 詳細については、[GAC からアセンブリをアンインストールする方法](http://msdn.microsoft.com/library/464706a8-f902-4d05-a724-19169facd2b4)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックで説明されているファイルおよび設定を削除するには、削除する対象に応じて、Windows レジストリ、GAC、または証明書ストアに対する書き込みアクセス許可を持つアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

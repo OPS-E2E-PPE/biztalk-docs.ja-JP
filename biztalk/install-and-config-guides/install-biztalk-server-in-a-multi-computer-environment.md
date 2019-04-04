@@ -85,7 +85,7 @@ BizTalk server 管理ツールだけをインストールする のみ**管理�
 
 - BizTalk Server の構成時には、SQL Server のセットアップ時に指定した TCP ポートおよび UDP ポートを開いておく必要があります。
 
-- BAM ツールを構成するには、SQL Server 管理ツール - 基本および完全 BizTalk BAM サーバーをインストールします。 設定して、複数コンピューター環境での BAM の構成の詳細については、次を参照してください。 [BAM インストールおよび構成 (ビジネス アクティビティ監視)、複数コンピューター環境で](https://social.technet.microsoft.com/wiki/contents/articles/1888.install-and-configure-bam-business-activity-monitoring-in-a-multi-computer-environment.aspx)します。 
+- BAM ツールを構成するには、SQL Server 管理ツール - 基本および完全 BizTalk BAM サーバーをインストールします。 設定して、複数コンピューター環境での BAM の構成の詳細については、[BAM インストールおよび構成 (ビジネス アクティビティ監視)、複数コンピューター環境で](https://social.technet.microsoft.com/wiki/contents/articles/1888.install-and-configure-bam-business-activity-monitoring-in-a-multi-computer-environment.aspx)を参照してください。 
 
 - SQL Server Analysis Services の名前付きインスタンスはサポートされません。
 
@@ -146,7 +146,7 @@ BizTalk Server 構成を開き、選択[カスタム構成](configure-biztalk-se
 [新機能、インストール、構成、アップグレード](biztalk-server-what-s-new-installation-configuration-and-upgrade.md)を実行できます。 
 
 - サポートされている SQL Server のバージョンを含む、BizTalk Server のサポートされているソフトウェアの要件を参照してください。
-- SQL Server など、前提条件のソフトウェアをインストールします。 SQL Server に固有のインストール手順については、次を参照してください。 [SQL Server 2016 のインストール](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup)または[SQL Server 2014 のインストール](https://msdn.microsoft.com/library/bb500469(v=sql.120).aspx)します。
+- SQL Server など、前提条件のソフトウェアをインストールします。 SQL Server に固有のインストール手順については、[SQL Server 2016 のインストール](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup)または[SQL Server 2014 のインストール](https://msdn.microsoft.com/library/bb500469(v=sql.120).aspx)を参照してください。
 
 BizTalk Server のコア機能によって必要とされるデータベース サービスに加え、BAM には次のコンポーネントも必要です:
 
@@ -324,7 +324,7 @@ BAM スケール アウト警告の既存のトポロジを BizTalk Server 2013 
 |      BAM アプリケーション プール アカウント      |                                                                                     、BAM ポータル web サイトをホストする BAMAppPool のアプリケーション プール アカウント。                                                                                     |                       IIS_WPG                        |                                                                                                                                                                                                  |
 
 > [!IMPORTANT]
-> Windows グループと BizTalk Server で使用されるサービス アカウントの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)します。
+> Windows グループと BizTalk Server で使用されるサービス アカウントの詳細については、[Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)を参照してください。
 
 ## <a name="databases-list"></a>データベースの一覧
 BizTalk Server で使用される SQL Server データベースの一覧を次に示します:
@@ -361,7 +361,7 @@ BizTalk Server で使用される SQL Server データベースの一覧を次�
 
 2. **SQL Server のインスタンスを複数必要に応じてインストール**場合、負荷要件、複数のメッセージ ボックス データベースを必要があることや、複数の SQL Server インスタンスに、BizTalk Server の I/O 負荷を分散し、その他の SQL Server をインストールする必要があります。必要に応じてインスタンス。 
 
-    データベースの最適化と、BizTalk Server 環境のテストのパフォーマンスに関する詳細については、次を参照してください。、 [BizTalk Server パフォーマンス最適化ガイド](../technical-guides/biztalk-server-2013-performance-optimization-guide.md)します。 
+    データベースの最適化と、BizTalk Server 環境のテストのパフォーマンスに関する詳細については、、 [BizTalk Server パフォーマンス最適化ガイド](../technical-guides/biztalk-server-2013-performance-optimization-guide.md)を参照してください。 
 
 3. **必要に応じて、BizTalk Server グループに複数の BizTalk Server コンピューターのインストール**負荷要件、BizTalk Server グループに複数の BizTalk Server コンピューターが必要しするには、BizTalk Server Enterprise Edition を使用する場合。複数の BizTalk サーバーをスケール アウト処理の要件。 
 
@@ -381,16 +381,16 @@ BizTalk Server で使用される SQL Server データベースの一覧を次�
 
     SQL Server で高可用性およびフォールト トレランスを実現するための構成が完了すると、SQL Server 構成は SQL Server のクラスター インスタンスを他の SQL Server インスタンスと同様に参照できるようになります。
 
-- **クラスター リソースとして、エンタープライズ シングル サインオン マスター シークレット サーバーを構成する**–、エンタープライズ シングル サインオン マスター シークレット サーバーの障害、BizTalk Server 環境のシステム全体の障害が発生することができます。 マスター シークレット サーバーをクラスター リソースとして構成することで、エンタープライズ シングル サインオンのマスター シークレット サーバーで高可用性およびフォールト トレランスを実現することをお勧めします。 マスター シークレット サーバーは BizTalk Server 環境でリソースを特に消費するコンポーネントではないので、SQL Server インスタンスと同じクラスター ノード上でマスター シークレット サーバーをクラスター化することをお勧めします。 クラスター リソースとして、エンタープライズ シングル サインオン マスター シークレット サーバーを構成する方法の詳細については、次を参照してください。[マスター シークレット サーバーをクラスター](../core/how-to-cluster-the-master-secret-server1.md)します。 
+- **クラスター リソースとして、エンタープライズ シングル サインオン マスター シークレット サーバーを構成する**–、エンタープライズ シングル サインオン マスター シークレット サーバーの障害、BizTalk Server 環境のシステム全体の障害が発生することができます。 マスター シークレット サーバーをクラスター リソースとして構成することで、エンタープライズ シングル サインオンのマスター シークレット サーバーで高可用性およびフォールト トレランスを実現することをお勧めします。 マスター シークレット サーバーは BizTalk Server 環境でリソースを特に消費するコンポーネントではないので、SQL Server インスタンスと同じクラスター ノード上でマスター シークレット サーバーをクラスター化することをお勧めします。 クラスター リソースとして、エンタープライズ シングル サインオン マスター シークレット サーバーを構成する方法の詳細については、[マスター シークレット サーバーをクラスター](../core/how-to-cluster-the-master-secret-server1.md)を参照してください。 
 
-- **BizTalk ホストをクラスター リソースとして構成**– BizTalk Server ホストの複数のインスタンスを実行している高可用性/フォールト トレランスを提供します。 そのため、特定の状況を除き、BizTalk ホストをクラスター リソースとして構成することはお勧めしません。 たとえば、高可用性およびフォールト トレランスに対応したり、特定の BizTalk Server アダプターで順次配送を実現したりする場合、BizTalk ホストをクラスター リソースとして構成することができます。 詳細については、BizTalk ホストをクラスター リソースとして構成する適切な場合、次を参照してください。[されたクラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)します。 参照してください[BizTalk ホストをクラスター リソースとして構成する方法](../core/how-to-configure-a-biztalk-host-as-a-cluster-resource1.md)します。 
+- **BizTalk ホストをクラスター リソースとして構成**– BizTalk Server ホストの複数のインスタンスを実行している高可用性/フォールト トレランスを提供します。 そのため、特定の状況を除き、BizTalk ホストをクラスター リソースとして構成することはお勧めしません。 たとえば、高可用性およびフォールト トレランスに対応したり、特定の BizTalk Server アダプターで順次配送を実現したりする場合、BizTalk ホストをクラスター リソースとして構成することができます。 詳細については、BizTalk ホストをクラスター リソースとして構成する適切な場合、[されたクラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)を参照してください。 参照してください[BizTalk ホストをクラスター リソースとして構成する方法](../core/how-to-configure-a-biztalk-host-as-a-cluster-resource1.md)します。 
 
 - **メッセージ キューをクラスター** – を参照してください[インストールし、クラスターの MSMQ](https://blogs.msdn.microsoft.com/biztalknotes/2013/03/20/how-to-install-and-cluster-msmq-on-windows-server-2012/)します。
 
 - **クラスター ファイル システム**– を参照してください[ファイル システムをクラスター化する方法](http://go.microsoft.com/fwlink/p/?LinkId=189517)します。
 
 ## <a name="use-scom"></a>SCOM を使用して、
-Operations Manager 用の BizTalk Server 管理パックは、BizTalk Server コンポーネントおよび複数のマシンで実行されているアプリケーションの包括的な検出と監視を提供します。 BizTalk Server 管理パックの詳細については、次を参照してください。 http://www.microsoft.com/download/details.aspx?id=39617 します。
+Operations Manager 用の BizTalk Server 管理パックは、BizTalk Server コンポーネントおよび複数のマシンで実行されているアプリケーションの包括的な検出と監視を提供します。 BizTalk Server 管理パックの詳細については、 http://www.microsoft.com/download/details.aspx?id=39617 を参照してください。
 
 ## <a name="next"></a>Next  
 [BizTalk の構成](configure-biztalk-server.md)

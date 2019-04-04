@@ -28,7 +28,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37005123"
 ---
 # <a name="how-to-modify-group-properties"></a>グループのプロパティを変更する方法
-ここで示す手順を使用すると、BizTalk Server グループのグローバル プロパティを構成して、署名証明書の選択、キャッシュ更新間隔の変更、および BizTalk Server でサイズの大きいメッセージをどのように処理するかという指定を行えます。 BizTalk Server グループ プロパティの詳細については、次を参照してください。 [BizTalk グループ](../core/biztalk-groups.md)します。  
+ここで示す手順を使用すると、BizTalk Server グループのグローバル プロパティを構成して、署名証明書の選択、キャッシュ更新間隔の変更、および BizTalk Server でサイズの大きいメッセージをどのように処理するかという指定を行えます。 BizTalk Server グループ プロパティの詳細については、[BizTalk グループ](../core/biztalk-groups.md)を参照してください。  
 
 ## <a name="prerequisites"></a>前提条件  
  ここで示す手順を実行するには、BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。  

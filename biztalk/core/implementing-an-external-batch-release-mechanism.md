@@ -33,7 +33,7 @@ ms.locfileid: "37010371"
   
 ### <a name="to-create-a-receive-location-for-the-external-batch-release-trigger-message"></a>外部バッチ リリース トリガー メッセージ用の受信場所を作成するには  
   
-1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、一方向受信ポートを作成します。 受信ポートを作成する方法については、次を参照してください。[受信ポートを作成する方法](../core/how-to-create-a-receive-port.md)します。  
+1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、一方向受信ポートを作成します。 受信ポートを作成する方法については、[受信ポートを作成する方法](../core/how-to-create-a-receive-port.md)を参照してください。  
   
 2. この受信ポート内に一方向の受信場所を作成します。  
   

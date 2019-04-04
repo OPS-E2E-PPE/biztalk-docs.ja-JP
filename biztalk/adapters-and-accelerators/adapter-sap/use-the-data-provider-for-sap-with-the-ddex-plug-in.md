@@ -26,7 +26,7 @@ ms.locfileid: "36970693"
 # <a name="use-the-data-provider-for-sap-with-the-ddex-plug-in"></a>DDEX プラグインで SAP 用データ プロバイダーを使用します。
 インストールした場合、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]と共に、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] 、インストール、セットアップ プログラムによって、 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] DDEX プラグイン。 使用して、SAP オブジェクトを参照するこのプラグインを使用することができます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]します。 このセクションでは、DDEX プラグインの使用に関する情報を提供します。  
   
- プラグインを使用して、SAP システムからテーブルを追加、SAP システムとの接続を確立し、SAP システムから関数モジュールを追加します。 テーブルと Visual Studio プラグインを使用して、関数モジュールを追加した後は、新しく追加されたテーブルと関数モジュールが SAPDiscoveredObjects.xml ファイルに反映されます。 このファイルの詳細については、次を参照してください。[について SAPDiscoveredObjects.xml ファイル sap](../../adapters-and-accelerators/adapter-sap/about-the-sapdiscoveredobjects-xml-file-in-sap.md)します。  
+ プラグインを使用して、SAP システムからテーブルを追加、SAP システムとの接続を確立し、SAP システムから関数モジュールを追加します。 テーブルと Visual Studio プラグインを使用して、関数モジュールを追加した後は、新しく追加されたテーブルと関数モジュールが SAPDiscoveredObjects.xml ファイルに反映されます。 このファイルの詳細については、[について SAPDiscoveredObjects.xml ファイル sap](../../adapters-and-accelerators/adapter-sap/about-the-sapdiscoveredobjects-xml-file-in-sap.md)を参照してください。  
   
 ## <a name="prerequisites"></a>前提条件  
  インストールするかどうかを確認、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]と共に、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストールします。  

@@ -27,17 +27,17 @@ ms.locfileid: "36983059"
   
 - BizTalk アプリケーションを作成するには、BizTalk Server 管理コンソールの [新しいアプリケーション] コマンドまたは BTSTask コマンド ライン ツールの AddApp コマンドを使用します。 この手順については、このトピックで後述します。  
   
-- 他のアプリケーションからエクスポートした .msi ファイルをインポートします。 アプリケーションが現在の BizTalk グループに存在しない場合、アプリケーション (そのアイテムを含む) は現在の BizTalk グループに自動的に作成されます。 詳細については、次を参照してください。 [BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)します。  
+- 他のアプリケーションからエクスポートした .msi ファイルをインポートします。 アプリケーションが現在の BizTalk グループに存在しない場合、アプリケーション (そのアイテムを含む) は現在の BizTalk グループに自動的に作成されます。 詳細については、[BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)を参照してください。  
   
-- Visual Studio から BizTalk アプリケーションへ BizTalk アセンブリを展開します。 Visual Studio で指定されたアプリケーションが現在の BizTalk グループに存在しない場合、そのアプリケーションは自動的に作成されます。 詳細については、次を参照してください。 [BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)します。  
+- Visual Studio から BizTalk アプリケーションへ BizTalk アセンブリを展開します。 Visual Studio で指定されたアプリケーションが現在の BizTalk グループに存在しない場合、そのアプリケーションは自動的に作成されます。 詳細については、[BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)を参照してください。  
   
   新しいアプリケーションを作成する前に、次のオプションの構成方法を決定できます。  
   
 - **新しいアプリケーションの名前を何か。** BizTalk グループの各アプリケーションには、一意の名前を付ける必要があります。  
   
-- **かどうかは、他のアプリケーションへの参照を追加する必要があります。** このアプリケーションから、このアプリケーションで再利用するアイテムを含むアプリケーションへの参照を追加する必要があります。 これにより 2 つのアプリケーションの間の依存関係が作成され、これらのアプリケーションの展開方法に影響します。 背景情報は、次を参照してください。[依存関係とアプリケーションの展開](../core/dependencies-and-application-deployment.md)と[別のアプリケーションへの参照を追加する方法](../core/how-to-add-a-reference-to-another-application.md)します。  
+- **かどうかは、他のアプリケーションへの参照を追加する必要があります。** このアプリケーションから、このアプリケーションで再利用するアイテムを含むアプリケーションへの参照を追加する必要があります。 これにより 2 つのアプリケーションの間の依存関係が作成され、これらのアプリケーションの展開方法に影響します。 背景情報は、[依存関係とアプリケーションの展開](../core/dependencies-and-application-deployment.md)と[別のアプリケーションへの参照を追加する方法](../core/how-to-add-a-reference-to-another-application.md)を参照してください。  
   
-- **かどうかは、1 つ以上のアプリケーションを作成する必要があります。** アイテムによっては、独立したアプリケーションに展開する必要があります。 たとえば、共有アイテムは、独自の独立したアプリケーションに展開する必要があります。 詳細については、次を参照してください。 [BizTalk アプリケーションの展開のベスト プラクティス](../core/best-practices-for-deploying-a-biztalk-application.md)します。  
+- **かどうかは、1 つ以上のアプリケーションを作成する必要があります。** アイテムによっては、独立したアプリケーションに展開する必要があります。 たとえば、共有アイテムは、独自の独立したアプリケーションに展開する必要があります。 詳細については、[BizTalk アプリケーションの展開のベスト プラクティス](../core/best-practices-for-deploying-a-biztalk-application.md)を参照してください。  
   
   アプリケーションを作成した後にアイテムを追加および他のトピックでは、このセクションで説明されているように他の変更を行う ([を変更する BizTalk アプリケーションの作成と](../core/creating-and-modifying-biztalk-applications.md))。  
   

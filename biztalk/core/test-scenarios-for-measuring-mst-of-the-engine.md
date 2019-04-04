@@ -54,7 +54,7 @@ ms.locfileid: "36998923"
  テスト シナリオは非常に単純です。 負荷生成ツール LoadGen 2007 をロード ドライバー サーバーにインストールし、ファイル アダプターによって監視される共有に、ファイルのコピーを送信します。 負荷生成ツールにより、入力ファイル インスタンスのコピーがファイル共有に均等に配布されます。  
   
 > [!NOTE]
->  ダウンロード[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)します。 このツールの以前のバージョン、BizTalk Server 2004 負荷生成ツールがダウンロードできる[ http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999)します。 MSMQ アダプターでの LoadGen の使用方法の詳細については、次を参照してください。 [MSMQ での LoadGen 2007 を使用して](../core/using-loadgen-2007-with-msmq.md)します。  
+>  ダウンロード[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)します。 このツールの以前のバージョン、BizTalk Server 2004 負荷生成ツールがダウンロードできる[ http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999)します。 MSMQ アダプターでの LoadGen の使用方法の詳細については、[MSMQ での LoadGen 2007 を使用して](../core/using-loadgen-2007-with-msmq.md)を参照してください。  
   
  BizTalk ファイル アダプターは、ファイル共有を監視してメッセージをメッセージ ボックスに公開するように構成されています。 受信図形と送信図形のみを含んでいる簡単なオーケストレーションで、公開されたメッセージをサブスクライブします。 オーケストレーションによってメッセージ ボックスに公開されたメッセージは、ファイル送信ポートで取得されて共通の共有に送信され、SAN で定義されます。 出力 SAN 共有に到着したファイルは、テストの実行中にファイルがこの共有に蓄積されるのを回避するために、直ちに削除されます。  
   

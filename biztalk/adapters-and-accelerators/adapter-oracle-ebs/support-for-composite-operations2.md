@@ -47,7 +47,7 @@ ms.locfileid: "36979387"
 - 複合操作のスキーマのメッセージを参照してください[複合操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-the-composite-operation1.md)します。  
   
 > [!NOTE]
->  複合操作でのアプリケーションのコンテキストを設定することも、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 インターフェイス テーブル、またはインターフェイス ビューの複合操作の操作を実行する場合は、複合操作のアプリケーションのコンテキストを設定する必要があります。 アプリケーションのコンテキスト、および設定する方法については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
+>  複合操作でのアプリケーションのコンテキストを設定することも、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 インターフェイス テーブル、またはインターフェイス ビューの複合操作の操作を実行する場合は、複合操作のアプリケーションのコンテキストを設定する必要があります。 アプリケーションのコンテキスト、および設定する方法については、[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [Oracle E-business Suite アダプターによってサポートされる操作](../../adapters-and-accelerators/adapter-oracle-ebs/what-operations-are-supported-by-the-oracle-e-business-suite-adapter.md)

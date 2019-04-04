@@ -25,7 +25,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36997891"
 ---
 # <a name="invoke-functions-and-procedures-with-ref-cursors-in-oracle-database-using-biztalk-server"></a>BizTalk Server を使用して Oracle データベース内の REF CURSOR で関数とプロシージャを呼び出す
-REF CURSOR は、クエリの実行によって生成されるサーバー側の結果セットへのポインターを表す PL/SQL データ型です。 REF CURSOR 型はにより、入力データのストリーミングを出力して、大量の PL/SQL コードとの間のデータを転送するために最適です。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] PL/SQL プロシージャと、関数、渡すことができる厳密に型指定された、厳密に型指定の (SYS_REFCURSOR) REF カーソルまたはローカルの OUT パラメーターのサポートを提供します。 方法の詳細については[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サポートの REF Cursor を参照してください[関数および REF CURSOR パラメーターを使用したプロシージャに対する操作](../../adapters-and-accelerators/adapter-oracle-database/ref-cursor-parameters-in-oracle-database-adapter.md)します。 REF CURSOR の XML 構造については、次を参照してください。[の REF CURSOR のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)します。  
+REF CURSOR は、クエリの実行によって生成されるサーバー側の結果セットへのポインターを表す PL/SQL データ型です。 REF CURSOR 型はにより、入力データのストリーミングを出力して、大量の PL/SQL コードとの間のデータを転送するために最適です。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] PL/SQL プロシージャと、関数、渡すことができる厳密に型指定された、厳密に型指定の (SYS_REFCURSOR) REF カーソルまたはローカルの OUT パラメーターのサポートを提供します。 方法の詳細については[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サポートの REF Cursor を参照してください[関数および REF CURSOR パラメーターを使用したプロシージャに対する操作](../../adapters-and-accelerators/adapter-oracle-database/ref-cursor-parameters-in-oracle-database-adapter.md)します。 REF CURSOR の XML 構造については、[の REF CURSOR のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)を参照してください。  
   
 ## <a name="how-to-invoke-functions-in-an-oracle-database"></a>Oracle データベースでの関数を呼び出す方法でしょうか。  
  使用して Oracle データベースでの操作を実行する[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で説明されている手順のタスクが含まれます[Oracle データベースと BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md)します。 これらのタスクを受け取って REF CURSOR パラメーターのように REF CURSOR 出力パラメーターとして Oracle データベース内の関数を呼び出すには。  
@@ -45,10 +45,10 @@ REF CURSOR は、クエリの実行によって生成されるサーバー側の
    このトピックでは、これらのタスクを実行する手順を説明します。  
   
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル Func_RefCursor、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
+ サンプル Func_RefCursor、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
   
 ## <a name="generating-schema"></a>スキーマを生成します。  
- 示すために、このトピックでどのように[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]GET_ACTIVITY プロシージャを呼び出すの REF CURSOR パラメーターを受け取る関数の呼び出しをサポートしています。 この手順は、厳密に型指定で REF カーソルと REF CURSOR を厳密に型指定された IN をパラメーターとして受け取ります。 関数は、状態、厳密に型指定を REF カーソルと REF CURSOR を厳密に型指定されたを返します。 GET_ACTIVITY プロシージャが使用可能なサンプルで提供される SQL スクリプトを実行して作成された ACCOUNT_PKG の一部として。 サンプルとの SQL スクリプトの詳細については、次を参照してください。[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)します。  
+ 示すために、このトピックでどのように[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]GET_ACTIVITY プロシージャを呼び出すの REF CURSOR パラメーターを受け取る関数の呼び出しをサポートしています。 この手順は、厳密に型指定で REF カーソルと REF CURSOR を厳密に型指定された IN をパラメーターとして受け取ります。 関数は、状態、厳密に型指定を REF カーソルと REF CURSOR を厳密に型指定されたを返します。 GET_ACTIVITY プロシージャが使用可能なサンプルで提供される SQL スクリプトを実行して作成された ACCOUNT_PKG の一部として。 サンプルとの SQL スクリプトの詳細については、[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)を参照してください。  
   
  そのため、GET_ACTIVITY プロシージャを呼び出す SCOTT\Package\ACCOUNT_PKG スキーマで同じプロシージャのスキーマを生成します。 参照してください[Visual Studio での Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)スキーマを生成する方法の詳細について。  
   
@@ -127,10 +127,10 @@ REF CURSOR は、クエリの実行によって生成されるサーバー側の
   
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
   
- ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。  
+ ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。  
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、次を参照してください。[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)します。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)を参照してください。
   
  アプリケーションを構成する必要があります。  
   
@@ -142,13 +142,13 @@ REF CURSOR は、クエリの実行によって生成されるサーバー側の
   
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーションが Oracle データベースからの応答を含む応答メッセージをドロップする場所の場所を定義します。  
   
-  - Oracle データベースにメッセージを送信する物理 Wcf-custom または Wcf-oracledb 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 Wcf-custom または Wcf-oracledb のポートを作成する方法については、次を参照してください。 [、Oracle データベース アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)します。  
+  - Oracle データベースにメッセージを送信する物理 Wcf-custom または Wcf-oracledb 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 Wcf-custom または Wcf-oracledb のポートを作成する方法については、[、Oracle データベース アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)を参照してください。  
   
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、次を参照してください。 [Oracle データベースへのポートのバインド ファイルを使用して構成する物理ポートのバインド](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)します。  
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、[Oracle データベースへのポートのバインド ファイルを使用して構成する物理ポートのバインド](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)を参照してください。  
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- Oracle のデータベース テーブル内のプロシージャを呼び出すことの BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。  
+ Oracle のデータベース テーブル内のプロシージャを呼び出すことの BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。  
   
  この段階で、ことを確認します。  
   
@@ -227,7 +227,7 @@ REF CURSOR は、クエリの実行によって生成されるサーバー側の
  例外に関する情報の関数とを使用してプロシージャの呼び出し中に発生する可能性が[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[例外とエラー処理](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md)します。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、次を参照してください。 [Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)します。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、[Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk アプリケーションを開発します。](../../core/develop-your-biztalk-applications.md)

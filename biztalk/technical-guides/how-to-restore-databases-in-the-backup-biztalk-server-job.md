@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36992411"
 ---
 # <a name="how-to-restore-databases-in-the-backup-biztalk-server-job"></a>バックアップ BizTalk Server のジョブ内のデータベースを復元する方法
-このセクションでは、BizTalk Server のバックアップ ジョブでバックアップされている BizTalk グループ内のデータベースをオンラインにする手順について説明します。 既定では、すべてのデータベースは、BAM データベースを除く、BizTalk Server のバックアップ ジョブを使用してバックアップされます。 参照してください[Analysis Services の復元とデータベースのサポート](../technical-guides/restoring-analysis-services-and-supporting-databases.md)BAM データベースのバックアップと復元の詳細についてはします。 データベース間のトランザクション状態の一貫性を保証するには、すべてのデータベースを同じマークに復元する必要があります。 詳細については、次を参照してください。[マークされたトランザクション、完全バックアップ、およびログ バックアップ](http://go.microsoft.com/fwlink/?LinkId=151565)(http://go.microsoft.com/fwlink/?LinkId=151565)します。  
+このセクションでは、BizTalk Server のバックアップ ジョブでバックアップされている BizTalk グループ内のデータベースをオンラインにする手順について説明します。 既定では、すべてのデータベースは、BAM データベースを除く、BizTalk Server のバックアップ ジョブを使用してバックアップされます。 参照してください[Analysis Services の復元とデータベースのサポート](../technical-guides/restoring-analysis-services-and-supporting-databases.md)BAM データベースのバックアップと復元の詳細についてはします。 データベース間のトランザクション状態の一貫性を保証するには、すべてのデータベースを同じマークに復元する必要があります。 詳細については、[マークされたトランザクション、完全バックアップ、およびログ バックアップ](http://go.microsoft.com/fwlink/?LinkId=151565)(http://go.microsoft.com/fwlink/?LinkId=151565)を参照してください。  
   
  詳細と手順についてのデータベースの復元について[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を参照してください[、データベースを復元する方法](http://go.microsoft.com/fwlink/?LinkId=151406)(<http://go.microsoft.com/fwlink/?LinkId=151406>)。  
   

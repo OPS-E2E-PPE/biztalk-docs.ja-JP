@@ -39,7 +39,7 @@ ms.locfileid: "37023544"
   
 - 緩和方法とテクノロジの特定  
   
-  脅威モデル分析の詳細は、次を参照してください。[脅威モデル分析](../core/threat-model-analysis.md)します。  
+  脅威モデル分析の詳細は、[脅威モデル分析](../core/threat-model-analysis.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

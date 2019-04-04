@@ -32,16 +32,16 @@ SQL Server データベースのデータの変更についてのクエリ通知
 - アダプター クライアントでのクエリ通知に登録する SQL ステートメントを指定する必要があります、 **NotificationStatement**プロパティをバインドします。 アダプター クライアントでは、指定された SQL ステートメントの変更の結果が設定されるとすぐに、SQL Server から通知を取得します。  
   
   > [!IMPORTANT]
-  >  通知配信登録の SQL ステートメントの通知を受信する*する必要があります*特定の条件を満たしています。 クエリ通知の使用できる SQL ステートメントの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=122160](http://go.microsoft.com/fwlink/?LinkId=122160)します。  
+  >  通知配信登録の SQL ステートメントの通知を受信する*する必要があります*特定の条件を満たしています。 クエリ通知の使用できる SQL ステートメントの詳細については、[ http://go.microsoft.com/fwlink/?LinkId=122160](http://go.microsoft.com/fwlink/?LinkId=122160)を参照してください。  
   
 - アダプター クライアントは、リスナーで開始するとすぐに、アダプターがアダプター クライアントに通知を送信するかどうかを指定する必要があります、 **NotifyOnListenerStart**プロパティをバインドします。  
   
 - 通知としてアダプター クライアントに送信され、SQL ステートメントがで指定された結果セットがの場合、 **NotificationStatement**プロパティのバインドが変更されました。  
   
-  これらのバインド プロパティの詳細については、次を参照してください。 [for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。  
+  これらのバインド プロパティの詳細については、[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)を参照してください。  
   
 > [!NOTE]
->  通知配信登録は、ステートメントが実行されたトランザクションがコミットまたはロールバックするかどうかに関係なく、コミットは常にします。 そのため、通知の操作では、通知をサブスクライブしているクエリの結果が変更されたことがあります限りません。 たとえば、トランザクションでは、(通知のサブスクライブ) テーブルの行でデータを挿入および変更 (挿入) の詳細については、アダプターの通知をすぐに通知が送信されます。 なんらかの理由により、トランザクションがロールバックし、効率的にデータは挿入されません、表の行にします。 ただし、SQL Server はトランザクションのロールバックのアダプターに通知を送信しません。 SQL Server のクエリ通知の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=145367](http://go.microsoft.com/fwlink/?LinkId=145367)します。  
+>  通知配信登録は、ステートメントが実行されたトランザクションがコミットまたはロールバックするかどうかに関係なく、コミットは常にします。 そのため、通知の操作では、通知をサブスクライブしているクエリの結果が変更されたことがあります限りません。 たとえば、トランザクションでは、(通知のサブスクライブ) テーブルの行でデータを挿入および変更 (挿入) の詳細については、アダプターの通知をすぐに通知が送信されます。 なんらかの理由により、トランザクションがロールバックし、効率的にデータは挿入されません、表の行にします。 ただし、SQL Server はトランザクションのロールバックのアダプターに通知を送信しません。 SQL Server のクエリ通知の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=145367](http://go.microsoft.com/fwlink/?LinkId=145367)を参照してください。  
   
 ## <a name="differences-between-query-notification-and-polling"></a>クエリ通知とポーリング間の違い  
  クエリ通知とポーリングは、両方の受信操作し、SQL Server データベースのデータの変更について、アダプターをクライアントに通知、次の表は、2 つの間のいくつかの違いを示します。 次の相違点を使用すると、要件に応じて、操作を決定できます。  

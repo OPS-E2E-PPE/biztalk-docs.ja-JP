@@ -26,11 +26,11 @@ ms.locfileid: "36983459"
   
  [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] ADO.NET を使用して、SQL Server データベースと通信します。 使用することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]次の方法で SQL Server データベースと通信します。  
   
-- BizTalk アプリケーションを開発しています。 詳細については、次を参照してください。[開発の BizTalk アプリケーション](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)します。  
+- BizTalk アプリケーションを開発しています。 詳細については、[開発の BizTalk アプリケーション](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)を参照してください。  
   
-- 使用して、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]サービス モデル。 詳細については、次を参照してください。 [WCF サービス モデルを使用してアプリケーションを開発](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)します。  
+- 使用して、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]サービス モデル。 詳細については、[WCF サービス モデルを使用してアプリケーションを開発](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)を参照してください。  
   
-- WCF チャネル モデルを使用します。 詳細については、次を参照してください。 [WCF チャネル モデルを使用してアプリケーションを開発](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)します。  
+- WCF チャネル モデルを使用します。 詳細については、[WCF チャネル モデルを使用してアプリケーションを開発](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

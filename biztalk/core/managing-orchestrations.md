@@ -23,7 +23,7 @@ ms.locfileid: "36976483"
 # <a name="manage-orchestrations"></a>オーケストレーションを管理します。
 
 ## <a name="overview"></a>概要
-ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使ってオーケストレーションを管理する方法について説明します。 オーケストレーションとは、実行可能なビジネス プロセスのことです。 オーケストレーションの背景については、次を参照してください。[オーケストレーション](../core/orchestrations.md)します。  
+ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使ってオーケストレーションを管理する方法について説明します。 オーケストレーションとは、実行可能なビジネス プロセスのことです。 オーケストレーションの背景については、[オーケストレーション](../core/orchestrations.md)を参照してください。  
 
 ## <a name="add-to-application"></a>アプリケーションに追加します。  
  オーケストレーションは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk アセンブリとしてビルドおよびコンパイルされます。 オーケストレーションを個別にアプリケーションへ追加することはできません。オーケストレーションは次のようにしてアプリケーションに追加されます。  
@@ -48,7 +48,7 @@ ms.locfileid: "36976483"
 -   オーケストレーションによるメッセージの処理を開始/中止する。  
   
 > [!NOTE]
->  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、次を参照してください。、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。 
+>  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。 
 > 
 > [!NOTE]
 >  開発者は、」の説明に従って、オーケストレーションを作成するオーケストレーション デザイナーを使用[オーケストレーション デザイナーを使用してオーケストレーションを作成](../core/creating-orchestrations-using-orchestration-designer.md)です。 開発者は、このセクションで説明する管理コンソールを使用して、開発プロセス中にオーケストレーションを管理できます。  

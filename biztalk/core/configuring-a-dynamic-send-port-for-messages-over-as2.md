@@ -61,7 +61,7 @@ ms.locfileid: "37005692"
    -   `BTS.EncryptionCert`  
   
    > [!NOTE]
-   >  動的送信ポートが正しく機能するように、`AS2To` および `OutboundTransportLocation` の各コンテキスト プロパティをメッセージ コンテキストに書き込む必要があります。 `AS2To` プロパティは、送信メッセージの処理に使用するアグリーメントをポートで決定するために必要です。`OutboundTransportLocation` プロパティは、メッセージの送信先を送信ポートで決定するために必要です。 詳細については、次を参照してください。[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)します。  
+   >  動的送信ポートが正しく機能するように、`AS2To` および `OutboundTransportLocation` の各コンテキスト プロパティをメッセージ コンテキストに書き込む必要があります。 `AS2To` プロパティは、送信メッセージの処理に使用するアグリーメントをポートで決定するために必要です。`OutboundTransportLocation` プロパティは、メッセージの送信先を送信ポートで決定するために必要です。 詳細については、[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)を参照してください。  
   
 ## <a name="functionality"></a>機能  
  動的送信ポートとパイプラインは次の操作を実行して、AS2 経由で同期 EDI メッセージ、非 EDI メッセージ、または受信確認を送信し、返された MDN を処理します。  
@@ -78,14 +78,14 @@ ms.locfileid: "37005692"
   
 - 非 EDI メッセージを送信する場合は、適切なフィルタを使用してメッセージを取得します。  
   
-- AS2 メッセージを構築します。 このプロセスの詳細については、次を参照してください。[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)します。  
+- AS2 メッセージを構築します。 このプロセスの詳細については、[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)を参照してください。  
   
   > [!NOTE]
   >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、http、smtp、ftp などの URL の形式から、動的送信ポートで使用するトランスポートの種類を決定します。  
   
 - メッセージや受信確認を送信ポートの送信先 URL にルーティングします。  
   
-- メッセージや受信確認に対する MDN 応答を受信します (この処理が有効になっている送信請求応答の送信ポートの場合)。 このプロセスの詳細については、次を参照してください。[受信 MDN の処理](../core/processing-an-incoming-mdn.md)します。  
+- メッセージや受信確認に対する MDN 応答を受信します (この処理が有効になっている送信請求応答の送信ポートの場合)。 このプロセスの詳細については、[受信 MDN の処理](../core/processing-an-incoming-mdn.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [AS2 ソリューションのポートの構成](../core/configuring-ports-for-an-as2-solution.md)

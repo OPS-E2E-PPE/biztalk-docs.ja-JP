@@ -27,7 +27,7 @@ ms.locfileid: "37007155"
 > [!IMPORTANT]
 >  出力でカスタム データまたは定数を使用する場合、送信元のテスト データと送信先の定数値のデータ型が有効であることを確認する必要があります。 マップを検証するときに BizTalk マッパーには、インスタンス データに、スキーマによって定義されたすべてのデータ型に違反しているかどうかはチェックされません。 データ型の確認は、マップのテストまたはインスタンス データの検証を行うと実行されます。  
 
- 生成し、BizTalk エディターを使用してインスタンス データを検証する方法の詳細については、次を参照してください。[インスタンス メッセージの生成と検証](../core/instance-message-generation-and-validation.md)と[インスタンスの検証](../core/instance-validation.md)です。 . **値**BizTalk がインスタンス データがどのように生成するか、スキーマのノードのプロパティにも影響します。 詳細については、次を参照してください。、**スキーマのノード プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+ 生成し、BizTalk エディターを使用してインスタンス データを検証する方法の詳細については、[インスタンス メッセージの生成と検証](../core/instance-message-generation-and-validation.md)と[インスタンスの検証](../core/instance-validation.md)を参照してください。 . **値**BizTalk がインスタンス データがどのように生成するか、スキーマのノードのプロパティにも影響します。 詳細については、、**スキーマのノード プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
 
 ## <a name="see-also"></a>参照  
 - [インスタンス メッセージの生成および検証](../core/instance-message-generation-and-validation.md)   

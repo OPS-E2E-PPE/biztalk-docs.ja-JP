@@ -24,7 +24,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37009531"
 ---
 # <a name="customizing-private-processes"></a>プライベート プロセスのカスタマイズ
-このセクションでは、サービスのコンテンツを処理するプライベート プロセス オーケストレーションをカスタマイズする方法について説明します。 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]プライベート プロセスとして、組織の内部ビジネス プロセスを実装します。 これらのプロセスは、サービス コンテンツのメッセージ部分を処理するオーケストレーションです。 詳細については、次を参照してください。[プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)します。  
+このセクションでは、サービスのコンテンツを処理するプライベート プロセス オーケストレーションをカスタマイズする方法について説明します。 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]プライベート プロセスとして、組織の内部ビジネス プロセスを実装します。 これらのプロセスは、サービス コンテンツのメッセージ部分を処理するオーケストレーションです。 詳細については、[プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

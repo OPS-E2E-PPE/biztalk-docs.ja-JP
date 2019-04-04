@@ -29,19 +29,19 @@ ms.locfileid: "36972507"
   
 1. アダプター構成要件、および設定する必要がある構成パラメーターの一覧を作成します。 すべての受信場所と送信ポートでグローバルに使用するパラメーターは、ハンドラー スキーマ構成ファイルで指定します。 特定のポートまたは特定の場所で使用するパラメーターは、送信ポート構成ファイルと受信場所構成ファイルでそれぞれ構成します。  
   
-2. アダプターのプロパティ ページを新しい構成パラメーターに対応するように変更します。 この手順の詳細については、次を参照してください。[アダプター構成スキーマ](../core/adapter-configuration-schemas.md)します。  
+2. アダプターのプロパティ ページを新しい構成パラメーターに対応するように変更します。 この手順の詳細については、[アダプター構成スキーマ](../core/adapter-configuration-schemas.md)を参照してください。  
   
 3. アダプター メタデータの追加ウィザードを使用して、スキーマ カテゴリのツリー ビューを変更します。 この手順の詳細については、次を参照してください[アダプター メタデータの追加ウィザードのスキーマ カテゴリ。](../core/schema-categories-in-the-add-adapter-metadata-wizard.md)  
   
-4. スキーマが Web サービス記述言語 (WSDL) ファイルとして返されるようにサンプル コードを修正します。 この手順の詳細については、次を参照してください。[静的アダプターの IStaticAdapterConfig インターフェイス](../core/static-adapter-istaticadapterconfig-interface.md)します。  
+4. スキーマが Web サービス記述言語 (WSDL) ファイルとして返されるようにサンプル コードを修正します。 この手順の詳細については、[静的アダプターの IStaticAdapterConfig インターフェイス](../core/static-adapter-istaticadapterconfig-interface.md)を参照してください。  
   
-5. 既存の WSDL ファイルを変更するか、新しい WSDL ファイルを作成します。 この手順の詳細については、次を参照してください。[アダプター WSDL ファイル](../core/adapter-wsdl-files.md)します。  
+5. 既存の WSDL ファイルを変更するか、新しい WSDL ファイルを作成します。 この手順の詳細については、[アダプター WSDL ファイル](../core/adapter-wsdl-files.md)を参照してください。  
   
-6. サンプル コードを変更して、WSDL ファイルに含まれていないアダプターによって必要とされている追加の XSD ファイルを返します。 この手順の詳細については、次を参照してください。[アダプターの GetSchema メソッド](../core/adapter-getschema-method.md)します。  
+6. サンプル コードを変更して、WSDL ファイルに含まれていないアダプターによって必要とされている追加の XSD ファイルを返します。 この手順の詳細については、[アダプターの GetSchema メソッド](../core/adapter-getschema-method.md)を参照してください。  
   
-7. アダプターのレジストリ キーを変更して、アダプターのレジストリ ファイルを実行します。 この手順の詳細については、次を参照してください。[アダプターの登録ファイル](../core/adapter-registration-file.md)します。  
+7. アダプターのレジストリ キーを変更して、アダプターのレジストリ ファイルを実行します。 この手順の詳細については、[アダプターの登録ファイル](../core/adapter-registration-file.md)を参照してください。  
   
-8. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に静的アダプターをインストールします。 この手順の詳細については、次を参照してください。[アダプターを BizTalk Server インストール](../core/install-the-adapter-into-biztalk-server.md)します。  
+8. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に静的アダプターをインストールします。 この手順の詳細については、[アダプターを BizTalk Server インストール](../core/install-the-adapter-into-biztalk-server.md)を参照してください。  
   
 9. アダプターのプロパティ ページに対して行われた変更をテストします。 アダプターを再ビルドして、アダプター メタデータの追加ウィザードに表示される UI をテストします。 この手順の詳細については、次を参照してください[のビルドとアダプター プロジェクトのテスト。](../core/build-and-test-the-adapter-project.md)  
   

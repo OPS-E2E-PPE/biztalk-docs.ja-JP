@@ -20,7 +20,7 @@ ms.lasthandoff: 11/01/2018
 ms.locfileid: "50752706"
 ---
 # <a name="migrating-a-biztalk-server-project"></a>BizTalk Server プロジェクトを移行します。
-[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 用に開発されたプロジェクト[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用して、新しい環境に移行できる[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]変換します。 移行がサポートされているバージョンの一覧は、次を参照してください。[サポートされるアップグレード パスと環境向けインストール ガイド](http://social.technet.microsoft.com/wiki/contents/articles/28554.biztalk-server-supported-upgrade-paths-and-installation-guides.aspx)します。  
+[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 用に開発されたプロジェクト[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用して、新しい環境に移行できる[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]変換します。 移行がサポートされているバージョンの一覧は、[サポートされるアップグレード パスと環境向けインストール ガイド](http://social.technet.microsoft.com/wiki/contents/articles/28554.biztalk-server-supported-upgrade-paths-and-installation-guides.aspx)を参照してください。  
 
 ## <a name="biztalk-project-changes-after-running-the-conversion-wizard"></a>変換ウィザードを実行した後の BizTalk プロジェクトの変化  
  次の表では[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]プロジェクト構成の名前変更、およびより新しいに変換がいくつかの特定の構成プロパティが、プロジェクトの後に再配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロジェクト。 ほとんどの[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]-に関連するプロジェクトの設定がある、**展開**プロジェクト デザイナーのタブ。  

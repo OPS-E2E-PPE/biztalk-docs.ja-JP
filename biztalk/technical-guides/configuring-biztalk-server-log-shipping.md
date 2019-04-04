@@ -26,15 +26,15 @@ ms.locfileid: "36983667"
   
 1. **BizTalk Server のバックアップ ジョブを構成します。**  
   
-    [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースをバックアップするには、あらかじめ、送信元システムで [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブを構成しておく必要があります。バックアップが、後から送信先システムでデータベースを復元するときに使用できるフォルダーに自動的に書き込まれるように指定します。 送信先システムは、送信元システムによって生成されたデータベース バックアップを復元するときに使用されるサーバーまたはサーバーのグループです。 この手順の詳細については、次を参照してください。 [Backup BizTalk Server のジョブを構成する方法](../technical-guides/how-to-configure-a-backup-biztalk-server-job.md)します。  
+    [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースをバックアップするには、あらかじめ、送信元システムで [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブを構成しておく必要があります。バックアップが、後から送信先システムでデータベースを復元するときに使用できるフォルダーに自動的に書き込まれるように指定します。 送信先システムは、送信元システムによって生成されたデータベース バックアップを復元するときに使用されるサーバーまたはサーバーのグループです。 この手順の詳細については、[Backup BizTalk Server のジョブを構成する方法](../technical-guides/how-to-configure-a-backup-biztalk-server-job.md)を参照してください。  
   
 2. **ログ配布用に送信先システムを構成します。**  
   
-    送信先システムはログ配布用にも構成する必要があります。ログ配布は、システム障害時のダウンタイムを短縮することを目的とした、スタンバイ サーバーの機能です。 この手順の詳細については、次を参照してください。[送信先システムを構成する方法](../technical-guides/how-to-configure-the-destination-system.md)します。  
+    送信先システムはログ配布用にも構成する必要があります。ログ配布は、システム障害時のダウンタイムを短縮することを目的とした、スタンバイ サーバーの機能です。 この手順の詳細については、[送信先システムを構成する方法](../technical-guides/how-to-configure-the-destination-system.md)を参照してください。  
   
 3. **データベースを復元します。**  
   
-    ハードウェア障害が発生した場合は、送信先システムに送信されたバックアップおよびログを使用してデータベースを復元できます。 この手順の詳細については、次を参照してください。 [Backup BizTalk Server ジョブでデータベースを復元する方法](../technical-guides/how-to-restore-databases-in-the-backup-biztalk-server-job.md)します。  
+    ハードウェア障害が発生した場合は、送信先システムに送信されたバックアップおよびログを使用してデータベースを復元できます。 この手順の詳細については、[Backup BizTalk Server ジョブでデータベースを復元する方法](../technical-guides/how-to-restore-databases-in-the-backup-biztalk-server-job.md)を参照してください。  
   
 ## <a name="biztalk-server-databases"></a>BizTalk Server データベース  
  次の表で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって使用されるデータベースについて説明し、データベースのバックアップに使用する方法を示します。  

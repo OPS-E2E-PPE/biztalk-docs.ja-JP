@@ -44,7 +44,7 @@ ms.locfileid: "36981443"
 ## <a name="siebel-com-data-control"></a>Siebel COM データ コントロール  
  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Siebel COM データ コントロール ライブラリ (sstchca.dll) と Microsoft.Adapters.Siebel.SiebelBusinessObjectInterface.dll ライブラリを使用して Siebel システムに接続します。 Siebel COM のデータ コントロールは、Siebel Web クライアントのコンポーネントです。 
   
- Siebel COM データ コントロールのインターフェイスのような外部のクライアントを有効にする、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]に接続して、Siebel エンタープライズ サーバー上で Siebel アプリケーション オブジェクト マネージャーと通信します。 Siebel オブジェクト マネージャーと Siebel エンタープライズ サーバーだけでなく他の接続パラメーターがで指定された、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]接続 URI。 接続 URI の詳細については、次を参照してください。 [Siebel システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)です。  
+ Siebel COM データ コントロールのインターフェイスのような外部のクライアントを有効にする、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]に接続して、Siebel エンタープライズ サーバー上で Siebel アプリケーション オブジェクト マネージャーと通信します。 Siebel オブジェクト マネージャーと Siebel エンタープライズ サーバーだけでなく他の接続パラメーターがで指定された、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]接続 URI。 接続 URI の詳細については、[Siebel システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)を参照してください。  
   
  次の図は、エンド ツー エンドのアーキテクチャを使用して開発されたソリューションを[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。  
   

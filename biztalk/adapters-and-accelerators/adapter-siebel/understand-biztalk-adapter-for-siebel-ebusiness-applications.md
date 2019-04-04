@@ -33,7 +33,7 @@ ms.locfileid: "36999235"
   
 - **Lob の間でのエクスペリエンス、統一された**します。 アダプターが、WCF を使用して標準と[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]し、そのため、LOB システムへのアクセスのエクスペリエンスの一貫性を提供します。  
   
-  前述のように、アダプターは WCF LOB Adapter SDK の上に構築されます。 WCF LOB Adapter SDK は、さまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションが使用できる統合アダプターを構築するための共通の基盤を提供します。 WCF LOB Adapter SDK は、Windows Communication Foundation (WCF) チャネルとしての統合アダプターを公開することで、Microsoft のサービスを使用したアダプターの戦略を配置します。 WCF LOB Adapter SDK の詳細については、次を参照してください。 [WCF LOB Adapter SDK ドキュメント](../../adapters-and-accelerators/wcf-lob-adapter-sdk/microsoft-wcf-line-of-business-adapter-sdk-documentation.md)します。
+  前述のように、アダプターは WCF LOB Adapter SDK の上に構築されます。 WCF LOB Adapter SDK は、さまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションが使用できる統合アダプターを構築するための共通の基盤を提供します。 WCF LOB Adapter SDK は、Windows Communication Foundation (WCF) チャネルとしての統合アダプターを公開することで、Microsoft のサービスを使用したアダプターの戦略を配置します。 WCF LOB Adapter SDK の詳細については、[WCF LOB Adapter SDK ドキュメント](../../adapters-and-accelerators/wcf-lob-adapter-sdk/microsoft-wcf-line-of-business-adapter-sdk-documentation.md)を参照してください。
   
   Siebel システムの操作を実行するには、アダプター クライアントは、Siebel システムによって公開されるビジネス サービスにアクセスする必要があります。 Siebel アプリケーションでは、ビジネス コンポーネントおよびビジネス オブジェクトとしてデータを公開します。 Siebel*ビジネス コンポーネント*を 1 つまたは複数のテーブルの列を 1 つの構造に関連付ける論理エンティティです。 Siebel*ビジネス オブジェクト*一連の相互に関連するビジネス コンポーネントの連携により、ビジネス モデルを実装します。 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]、アダプター クライアントは、Siebel ビジネス オブジェクトおよびビジネス コンポーネントを表示できます。  
   

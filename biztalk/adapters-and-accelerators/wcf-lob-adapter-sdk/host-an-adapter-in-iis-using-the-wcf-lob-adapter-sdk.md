@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36976139"
 ---
 # <a name="host-an-adapter-in-iis-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用して、IIS でアダプターをホストします。
-このセクションを使用して構築されたアダプターをホストする方法について説明、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]インターネット インフォメーション サービス (IIS)。 その他のホスティング オプションの詳細については、次を参照してください。[ホスティング サービス](https://msdn.microsoft.com/library/ms730158.aspx)します。
+このセクションを使用して構築されたアダプターをホストする方法について説明、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]インターネット インフォメーション サービス (IIS)。 その他のホスティング オプションの詳細については、[ホスティング サービス](https://msdn.microsoft.com/library/ms730158.aspx)を参照してください。
 
 ## <a name="use-iis-and-aspnet"></a>IIS と ASP.NET を使用して、
  IIS は、WCF LOB Adapter SDK で作成されたアダプターの発行を有効になっている ASP.NET で使用することができます。 によって作成されたアダプターをホストする、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、WCF サービスを公開するためにインターネット インフォメーション サービス (IIS) を構成します。 次に、ASP.NET、WCF adapterwith を使用する方法を検討してください。

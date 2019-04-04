@@ -38,7 +38,7 @@ HelloWorld サンプルは、BizTalk オーケストレーションを使用し�
 ## <a name="how-this-sample-is-designed-and-why"></a>このサンプルのデザイン方法とその理由  
  企業間のメッセージ交換シナリオでは、取引先から受信した受信メッセージを内部アプリケーションが認識できる形式に変換する作業が必要になる場合があります。 このサンプルでは、**受信**図形、**変換**図形、および**送信**この結果を実現するために図形。 **変換**図形がメッセージ形式の変換が発生するために、このサンプルで重要な役割を果たします。 ドラッグする、**変換**をオーケストレーションに図形し、その送信元メッセージ、マップ名、および送信先メッセージを構成します。 実行中、指定したマップによって送信元メッセージが送信先メッセージにマップされます。  
   
- 詳細については、**変換**図形は、「[変換図形を構成する方法](../core/how-to-configure-the-transform-shape.md)します。 マップの構築に関する詳細については、次を参照してください。 [BizTalk マッパーを使用してマップを作成する](../core/creating-maps-using-biztalk-mapper.md)します。  
+ 詳細については、**変換**図形は、「[変換図形を構成する方法](../core/how-to-configure-the-transform-shape.md)します。 マップの構築に関する詳細については、[BizTalk マッパーを使用してマップを作成する](../core/creating-maps-using-biztalk-mapper.md)を参照してください。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  \<*パスのサンプル*\>\Orchestrations\HelloWorld\  

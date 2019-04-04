@@ -111,7 +111,7 @@ JD Edwards EnterpriseOne トランスポートのプロパティは、デザイ�
 ### <a name="single-sign-on"></a>シングル サインオン  
  JD Edwards EnterpriseOne システムへのアクセスには、2 つの方法を使用できます。 1 つはログイン資格情報 (トランスポートのプロパティのログイン パラメーター) を使用する方法で、もう 1 つはシングル サインオン (SSO) を使用する方法です。 選択**はい**で、**を使用して、SSO**でシングル サインオンを使用するフィールド。  
 
- 詳細および基本的な手順をシングル サインオンの設定については、次を参照してください。 [BizTalk Adapter for JD Edwards EnterpriseOne セキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)します。
+ 詳細および基本的な手順をシングル サインオンの設定については、[BizTalk Adapter for JD Edwards EnterpriseOne セキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)を参照してください。
 
  さらに、一覧から関連アプリケーションを選択する必要があります。 エンタープライズ シングル サインオン ツールで作成される関連アプリケーションは、JD Edwards EnterpriseOne などのアプリケーションを表します。 BizTalk Adapter for JD Edwards EnterpriseOne は、アプリケーション ユーザーの資格情報を使用します。  
 

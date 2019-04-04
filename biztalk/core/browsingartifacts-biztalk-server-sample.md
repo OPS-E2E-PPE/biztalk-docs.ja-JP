@@ -26,7 +26,7 @@ BrowsingArtifacts サンプルでは、BizTalk のアイテムと属性を列挙
 
 - このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
 
-- Windows PowerShell スクリプトの例を実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、次を参照してください。:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)します。  
+- Windows PowerShell スクリプトの例を実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)を参照してください。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルを使用して、 **BtsCatalogExplorer**クラスから、 **Microsoft.BizTalk.ExplorerOM**名前空間アイテムを列挙し、その属性を報告します。 このサンプルで生成されるレポートには、オーケストレーション、ポート、アセンブリ、パーティ、変換などの項目が含まれます。 このサンプルは Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] で記述されています。 Windows PowerShell のサンプル スクリプトは、このトピックの「も提供されます。  

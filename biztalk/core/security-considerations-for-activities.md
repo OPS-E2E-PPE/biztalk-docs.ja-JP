@@ -36,7 +36,7 @@ WCF アダプタの通信データを受信するときに使用するセキュ�
   > [!NOTE]
   >  この場合、ユーザーを各アクティビティに固有のイベント ライタ ロールに追加する必要があります。  
   
-  BAM イベント ライター ロールを構成する方法の詳細については、次を参照してください。[かを確認し、アクティビティ イベント ライター ロールを設定する方法](../core/how-to-determine-and-set-event-writer-roles-for-activities.md)します。  
+  BAM イベント ライター ロールを構成する方法の詳細については、[かを確認し、アクティビティ イベント ライター ロールを設定する方法](../core/how-to-determine-and-set-event-writer-roles-for-activities.md)を参照してください。  
   
 > [!IMPORTANT]
 >  BizTalk Application Users グループのメンバーがあります。  

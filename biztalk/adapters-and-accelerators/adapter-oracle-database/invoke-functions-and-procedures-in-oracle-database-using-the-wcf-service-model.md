@@ -35,12 +35,12 @@ ms.locfileid: "37013155"
   
 -   **サポート IN、OUT および OUT プロシージャと関数の両方の基本の Oracle データ型のパラメーターの**します。 OUT パラメーターとして表示された**アウト**として、WCF クライアントのメソッドのパラメーターとの OUT パラメーターが表示された**ref**パラメーター。  
   
--   **サポート IN、OUT、および IN OUT プロシージャと関数、関数の戻り値の REF CURSOR パラメーター**します。 詳細については、次を参照してください。[を実行する操作を使用して REF CURSOR、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model.md)します。  
+-   **サポート IN、OUT、および IN OUT プロシージャと関数、関数の戻り値の REF CURSOR パラメーター**します。 詳細については、[を実行する操作を使用して REF CURSOR、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model.md)を参照してください。  
   
--   **サポートは、アウト、および内のレコードをプロシージャと関数のパラメーターを入力するだけでなく関数の戻り値**します。 詳細については、次を参照してください。[を実行する操作を使用してレコードの種類、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/using-record-types-in-oracle-database-using-the-wcf-service-model.md)します。  
+-   **サポートは、アウト、および内のレコードをプロシージャと関数のパラメーターを入力するだけでなく関数の戻り値**します。 詳細については、[を実行する操作を使用してレコードの種類、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/using-record-types-in-oracle-database-using-the-wcf-service-model.md)を参照してください。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックで使用して、/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT の例では、プロシージャがオーバー ロード。 この手順では、アカウント ID またはアカウント名のいずれかに基づいて SCOTT/アカウント テーブルからレコードを読み取ります。 この手順と表を生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
+ このトピックで使用して、/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT の例では、プロシージャがオーバー ロード。 この手順では、アカウント ID またはアカウント名のいずれかに基づいて SCOTT/アカウント テーブルからレコードを読み取ります。 この手順と表を生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、[SDK 内のサンプル](../../core/samples-in-the-sdk.md)を参照してください。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
  次の表は、WCF クライアントと手順については、生成されたメソッドの名前は、関数し、パッケージに、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サーフェス。 関数またはプロシージャがオーバー ロードされていない限り、1 つの WCF クライアントを使用して、すべてのスキーマのすべてのスキーマのプロシージャまたは関数のすべての関数およびパッケージ内のプロシージャを呼び出します。  
@@ -79,7 +79,7 @@ ms.locfileid: "37013155"
   
  [PACKAGE_NAME] = Oracle パッケージの名前。  
   
- レコードのパラメーターでこれらの名前空間を使用する方法については、次を参照してください。[を実行する操作を使用してレコードの種類、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/using-record-types-in-oracle-database-using-the-wcf-service-model.md)します。 REF CURSOR パラメーターをこれらの名前空間を使用する方法については、次を参照してください。[を実行する操作を使用して REF CURSOR、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model.md)します。  
+ レコードのパラメーターでこれらの名前空間を使用する方法については、[を実行する操作を使用してレコードの種類、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/using-record-types-in-oracle-database-using-the-wcf-service-model.md)を参照してください。 REF CURSOR パラメーターをこれらの名前空間を使用する方法については、[を実行する操作を使用して REF CURSOR、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model.md)を参照してください。  
   
  一般に、Oracle パラメーターと戻り値は、WCF クライアントのメソッドでようマップします。  
   
@@ -218,7 +218,7 @@ public partial class SCOTTPackageACCOUNT_PKGGET_ACCOUNToverload2Client : System.
 > [!IMPORTANT]
 >  関数またはプロシージャ (およびパッケージ) に値を返すフィールドまたは REF CURSOR とレコードの型パラメーターを表すクラスは、関数またはプロシージャごとに一意の名前空間で宣言されます。 つまり、たとえば、2 つの異なる関数の戻り値として使用されるパッケージの REF CURSOR 型が WCF クライアントのメソッドごとに一意の名前空間で宣言することです。 これらの異なる戻り値または WCF クライアントのいずれかを呼び出すときに変数を適切にキャストを保持するために別個の変数を宣言する必要がありますか。  
   
- 次の例では、アカウント レコードを/SCOTT/ACCOUNT テーブルから取得するオーバー ロードされた/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT プロシージャの呼び出しを示します。 まず、/SCOTT/Package/ACCOUNT_PKG/CREATE_ACCOUNT プロシージャを呼び出すことによって新しいレコードが作成されます。 新しいレコードを読み取る GET_ACCOUNT のさまざまなオーバー ロードを呼び出すことによって、2 回バックアップします。 この例では、次の 3 つの WCF クライアント、CREATE_ACCOUNT プロシージャと GET_ACCOUNT オーバー ロードの 1 つずつを使用します。 エイリアスは、GET_ACCOUNT の戻り値に使用される名前空間を区別するために使用されます。 完全なサンプルは、SDK のサンプルで使用できます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
+ 次の例では、アカウント レコードを/SCOTT/ACCOUNT テーブルから取得するオーバー ロードされた/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT プロシージャの呼び出しを示します。 まず、/SCOTT/Package/ACCOUNT_PKG/CREATE_ACCOUNT プロシージャを呼び出すことによって新しいレコードが作成されます。 新しいレコードを読み取る GET_ACCOUNT のさまざまなオーバー ロードを呼び出すことによって、2 回バックアップします。 この例では、次の 3 つの WCF クライアント、CREATE_ACCOUNT プロシージャと GET_ACCOUNT オーバー ロードの 1 つずつを使用します。 エイリアスは、GET_ACCOUNT の戻り値に使用される名前空間を区別するために使用されます。 完全なサンプルは、SDK のサンプルで使用できます。 SDK サンプルの詳細については、[SDK 内のサンプル](../../core/samples-in-the-sdk.md)を参照してください。  
   
 ```  
 using System;  

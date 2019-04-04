@@ -86,7 +86,7 @@ UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serv
   
 - **password**  
   
-  Unity Application Block の依存関係の注入機能に依存している競合回避モジュールを作成する場合は、追加の構成が必要です。 詳細については、次を参照してください。 [Unity コンテナーでのカスタム競合回避モジュールを作成する](../esb-toolkit/creating-a-custom-resolver-with-a-unity-container.md)します。  
+  Unity Application Block の依存関係の注入機能に依存している競合回避モジュールを作成する場合は、追加の構成が必要です。 詳細については、[Unity コンテナーでのカスタム競合回避モジュールを作成する](../esb-toolkit/creating-a-custom-resolver-with-a-unity-container.md)を参照してください。  
   
 ## <a name="the-iresolveprovider-interface"></a>IResolveProvider インターフェイス  
  すべての競合回避モジュールを実装する必要があります、 **IResolveProvider**インターフェイス。 **IResolveProvider** Microsoft.Practices.ESB.Resolver のプロジェクトにあるインターフェイスの 3 つのオーバー ロードから成る、**解決**のインスタンスを返すメソッド、 **ディクショナリ**解像度のファクト具体的な競合回避モジュールのクラスのインスタンスによって提供されるを保持しているクラス。 次のコード例では、これらのメソッド オーバー ロードのシグネチャを示します。  

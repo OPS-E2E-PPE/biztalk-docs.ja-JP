@@ -36,4 +36,4 @@ ms.locfileid: "37022824"
  SSO 管理者アカウント名を更新するには、最初に SSO を無効にする必要があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- SSO を無効にする方法の詳細については、次を参照してください。 [SSO を無効にする方法](../core/how-to-disable-sso.md)します。
+ SSO を無効にする方法の詳細については、[SSO を無効にする方法](../core/how-to-disable-sso.md)を参照してください。

@@ -47,7 +47,7 @@ BizTalk スキーマは、最終的には XSD (XML Schema Definition) 言語で�
 
  全体的に見て、BizTalk エディターは、レコードの汎用的な概念を使用して XSD スキーマの作成を簡略化されたアプローチを結合しなどの特定の XSD より明示的に制御を持つフィールドが構築**シーケンス**、 **選択した**、**任意**、および**anyattribute**要素。  
 
- 各ノードには、その種類によって異なる一連のプロパティが割り当てられています。これらのプロパティは、Visual Studio の [プロパティ] ウィンドウで構成できます。 一般に、これらのプロパティは、XSD スキーマでは XSD 要素の属性に対応しています。 ノードのプロパティの詳細については、次を参照してください。**ノード プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+ 各ノードには、その種類によって異なる一連のプロパティが割り当てられています。これらのプロパティは、Visual Studio の [プロパティ] ウィンドウで構成できます。 一般に、これらのプロパティは、XSD スキーマでは XSD 要素の属性に対応しています。 ノードのプロパティの詳細については、**ノード プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
 
  このセクションでは、BizTalk エディターで使用されるノードの種類とそのプロパティについて説明し、関連するリファレンスへのリンクを紹介しています。  
 

@@ -22,9 +22,9 @@ ms.locfileid: "36972675"
 # <a name="stop-a-host-instance"></a>ホスト インスタンスを停止します。
 
 ## <a name="overview"></a>概要
-使用することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールまたは Windows Management Instrumentation (WMI) をホスト インスタンスを停止します。 コンピューターからホスト インスタンスまたは BizTalk Server を削除する前に、ホスト インスタンスを停止する必要があります。 インストールされ、開始しているホスト インスタンスを停止できます。 ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)します。  
+使用することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールまたは Windows Management Instrumentation (WMI) をホスト インスタンスを停止します。 コンピューターからホスト インスタンスまたは BizTalk Server を削除する前に、ホスト インスタンスを停止する必要があります。 インストールされ、開始しているホスト インスタンスを停止できます。 ホスト インスタンスの詳細については、[ホスト インスタンス](../core/host-instances.md)を参照してください。  
   
- WMI を使用して、ホスト インスタンスを停止する方法の詳細については、次を参照してください。 **MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+ WMI を使用して、ホスト インスタンスを停止する方法の詳細については、**MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
   
 ## <a name="prerequisites"></a>前提条件  
  ここで示す手順を実行するには、管理者グループのメンバーおよび BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。  
@@ -54,7 +54,7 @@ ms.locfileid: "36972675"
   
     ホスト インスタンスの状態に変わる**Stopped**します。  
   
-   ホスト インスタンスを開始または削除するか、コンピューターから BizTalk Server を削除する場合、まず、ホスト インスタンスを停止する必要があります。 ホスト インスタンスの開始方法の詳細については、次を参照してください。[ホスト インスタンスを開始する方法](../core/how-to-start-a-host-instance.md)します。 ホスト インスタンスの削除方法の詳細については、次を参照してください。[ホスト インスタンスを削除する方法](../core/how-to-delete-a-host-instance.md)します。  
+   ホスト インスタンスを開始または削除するか、コンピューターから BizTalk Server を削除する場合、まず、ホスト インスタンスを停止する必要があります。 ホスト インスタンスの開始方法の詳細については、[ホスト インスタンスを開始する方法](../core/how-to-start-a-host-instance.md)を参照してください。 ホスト インスタンスの削除方法の詳細については、[ホスト インスタンスを削除する方法](../core/how-to-delete-a-host-instance.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk ホストとホスト インスタンスの管理](../core/managing-biztalk-hosts-and-host-instances.md)   

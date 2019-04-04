@@ -35,7 +35,7 @@ ms.locfileid: "36980699"
   > [!IMPORTANT]
   >  トランザクションで操作を実行している場合、この接続のモードがサポートされていません。 これは、Oracle クライアントの制限です。  
   
-  Oracle E-business Suite への接続に関する詳細については、次を参照してください。 [、Oracle E-business Suite への接続を作成する](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-connection-to-oracle-e-business-suite.md)します。  
+  Oracle E-business Suite への接続に関する詳細については、[、Oracle E-business Suite への接続を作成する](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-connection-to-oracle-e-business-suite.md)を参照してください。  
   
   Oracle E-business Suite との接続を確立するときに、セキュリティのガイドラインに従うことを確認します。 参照してください[、Oracle EBS アプリケーションをセキュリティで保護された](../../adapters-and-accelerators/adapter-oracle-ebs/secure-your-oracle-ebs-applications.md)します。
   
@@ -52,10 +52,10 @@ ms.locfileid: "36980699"
   
 - Oracle E-business Suite の資格情報を使用して接続するには、指定、 **ClientCredentialType**としてプロパティのバインド**EBusiness**、し、Oracle E-business Suite の資格情報を指定、 **ユーザー名**と**パスワード**上のテキスト ボックス、**セキュリティ**タブ。Oracle データベースの資格情報を指定することも必要があります、 **OracleUserName**と**OraclePassword**プロパティをバインドします。  
   
-  クライアントの資格情報を指定する方法については、次を参照してください。 [、Oracle E-business Suite のサインイン資格情報を構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-sign-in-credentials-for-the-oracle-e-business-suite.md)します。  
+  クライアントの資格情報を指定する方法については、[、Oracle E-business Suite のサインイン資格情報を構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-sign-in-credentials-for-the-oracle-e-business-suite.md)を参照してください。  
   
 ## <a name="using-windows-authentication"></a>Windows 認証を使用する  
- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite に接続中に Windows 認証をサポートしています。 Windows 認証では、アダプター クライアントは Windows ログオン資格情報に基づいて、ユーザーの id を調べるし、Windows 環境の組み込みのセキュリティを活用できます。 Windows 認証を使用して Oracle E-business Suite に接続する方法の詳細については、次を参照してください。 [Oracle E-business Suite を使用して Windows 認証への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-windows-authentication.md)します。  
+ [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite に接続中に Windows 認証をサポートしています。 Windows 認証では、アダプター クライアントは Windows ログオン資格情報に基づいて、ユーザーの id を調べるし、Windows 環境の組み込みのセキュリティを活用できます。 Windows 認証を使用して Oracle E-business Suite に接続する方法の詳細については、[Oracle E-business Suite を使用して Windows 認証への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-windows-authentication.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
 [BizTalk Adapter for Oracle E-business スーツについてください。](../../adapters-and-accelerators/adapter-oracle-ebs/understand-biztalk-adapter-for-oracle-e-business-suite.md)

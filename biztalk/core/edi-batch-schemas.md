@@ -24,9 +24,9 @@ ms.locfileid: "36999227"
 
 - 保存されたバッチ インターチェンジ (BaseArtifacts.dll に配置された X12_BatchSchema または Edifact_BatchSchema) のルート ノードを検証するためのバッチ スキーマ (インターチェンジ XML スキーマ)。  
 
-- インターチェンジ、グループ、およびトランザクション セットのヘッダーとトレーラー (BaseArtifacts.dll に配置された X12ServiceSchema または EdifactServiceSchema) を検証するためのエンベロープ サービス スキーマ。 詳細については、次を参照してください。 [EDI サービスと管理スキーマ](../core/edi-service-and-control-schemas.md)します。  
+- インターチェンジ、グループ、およびトランザクション セットのヘッダーとトレーラー (BaseArtifacts.dll に配置された X12ServiceSchema または EdifactServiceSchema) を検証するためのエンベロープ サービス スキーマ。 詳細については、[EDI サービスと管理スキーマ](../core/edi-service-and-control-schemas.md)を参照してください。  
 
-- (プロジェクト内に配置された) バッチ インターチェンジ内にある各ドキュメントの種類のドキュメント スキーマ。 詳細については、次を参照してください。 [EDI ドキュメント スキーマ](../core/edi-document-schemas.md)します。  
+- (プロジェクト内に配置された) バッチ インターチェンジ内にある各ドキュメントの種類のドキュメント スキーマ。 詳細については、[EDI ドキュメント スキーマ](../core/edi-document-schemas.md)を参照してください。  
 
   バッチ スキーマは、保存中の受信および送信の各バッチ インターチェンジを検証するために、実行時に使用されます。 また、バッチ スキーマは、メッセージ インスタンスを検証および生成するために、デザイン時にも使用されます。  
 

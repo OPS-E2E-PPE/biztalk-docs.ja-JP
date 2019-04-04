@@ -41,7 +41,7 @@ ms.locfileid: "36994619"
   
 - **Lob の間でのエクスペリエンス、統一された**します。 WCF を使用して、アダプターを標準化および[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]、し、そのため、LOB システムへのアクセスのエクスペリエンスの一貫性を提供します。  
   
-  前述のように、アダプターは WCF LOB Adapter SDK の上に構築されます。 WCF LOB Adapter SDK は、さまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションが使用できる統合アダプターを構築するための共通の基盤を提供します。 WCF LOB Adapter SDK は、Windows Communication Foundation (WCF) チャネルとしての統合アダプターを公開することで、Microsoft のサービスを使用したアダプターの戦略を配置します。 WCF LOB Adapter SDK の詳細については、次を参照してください。 [WCF LOB Adapter SDK ドキュメント](../../adapters-and-accelerators/wcf-lob-adapter-sdk/microsoft-wcf-line-of-business-adapter-sdk-documentation.md)します。
+  前述のように、アダプターは WCF LOB Adapter SDK の上に構築されます。 WCF LOB Adapter SDK は、さまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションが使用できる統合アダプターを構築するための共通の基盤を提供します。 WCF LOB Adapter SDK は、Windows Communication Foundation (WCF) チャネルとしての統合アダプターを公開することで、Microsoft のサービスを使用したアダプターの戦略を配置します。 WCF LOB Adapter SDK の詳細については、[WCF LOB Adapter SDK ドキュメント](../../adapters-and-accelerators/wcf-lob-adapter-sdk/microsoft-wcf-line-of-business-adapter-sdk-documentation.md)を参照してください。
   
   Oracle データベースで操作を実行するには、アダプター クライアントは、関連するテーブル、関数、およびプロシージャにアクセスする必要があります。 データベース テーブルとは、Oracle データベース内のストレージの基本単位です。 外部のアプリケーションでは、追加したり、SQL ステートメントを使用してテーブルからデータを削除することができます。 アプリケーションは、ビュー、関数、およびプロシージャを使用して、テーブル内のデータをアクセスもできます。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]、アダプター クライアントは、テーブル、プロシージャ、パッケージ、ビュー、および Oracle データベースでこのようなその他の項目などの成果物を参照できます。 アダプター クライアントは、成果物がソリューションの必要があり、それらの成果物のメタデータの取得を選択できます。 これにより、ユーザーにアクセスし、Oracle データベースで、成果物の操作を実行できます。  
   

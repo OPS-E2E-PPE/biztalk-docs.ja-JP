@@ -47,7 +47,7 @@ EDI または非 EDI ペイロードを持つ AS2 メッセージを受信する
 
 -   HTTP 経由で AS2 メッセージを受信します。  
 
--   AS2EDIReceive 受信パイプライン (EDI エンコード メッセージの場合) または AS2Receive 受信パイプライン (EDI でエンコードされていないメッセージの場合) を使用して、AS2 メッセージを処理します。 このプロセスの詳細については、次を参照してください。[受信 AS2 メッセージの処理](../core/processing-an-incoming-as2-message.md)します。  
+-   AS2EDIReceive 受信パイプライン (EDI エンコード メッセージの場合) または AS2Receive 受信パイプライン (EDI でエンコードされていないメッセージの場合) を使用して、AS2 メッセージを処理します。 このプロセスの詳細については、[受信 AS2 メッセージの処理](../core/processing-an-incoming-as2-message.md)を参照してください。  
 
 -   受信メッセージの次のコンテキスト プロパティを設定します。  
 
@@ -59,13 +59,13 @@ EDI または非 EDI ペイロードを持つ AS2 メッセージを受信する
 
 -   メッセージが EDI エンコードではない場合は、ネイティブ形式のメッセージを MessageBox にドロップします。  
 
--   AS2EdiReceive 受信パイプラインを使用して MDN ファイルを生成します (有効になっている場合)。 このプロセスの詳細については、次を参照してください。[送信 MDN の生成](../core/generating-an-outgoing-mdn.md)します。 メッセージの次のコンテキスト プロパティを設定します。  
+-   AS2EdiReceive 受信パイプラインを使用して MDN ファイルを生成します (有効になっている場合)。 このプロセスの詳細については、[送信 MDN の生成](../core/generating-an-outgoing-mdn.md)を参照してください。 メッセージの次のコンテキスト プロパティを設定します。  
 
     -   `EdiIntAS.IsAS2AsynchronousMdn == False` (同期モードの場合)  
 
     -   `EdiIntAS.IsAS2AsynchronousMdn== True` (非同期モードの場合)  
 
--   同期モードの場合、AS2Send 送信パイプラインを使用して MDN ファイルを送信します (有効になっている場合)。 このプロセスの詳細については、次を参照してください。[送信 MDN の送信](../core/sending-an-outgoing-mdn.md)します。  
+-   同期モードの場合、AS2Send 送信パイプラインを使用して MDN ファイルを送信します (有効になっている場合)。 このプロセスの詳細については、[送信 MDN の送信](../core/sending-an-outgoing-mdn.md)を参照してください。  
 
 -   非同期モードの場合、MDN ファイルが有効な場合は、そのファイルを MessageBox にルーティングします (MDN ファイルの取得および送信に使用される個別の動的送信ポート)。  
 

@@ -46,7 +46,7 @@ ms.locfileid: "36970131"
 
 12. 左側のウィンドウで、 **Wcf-custom トランスポートのプロパティ**を選択、 **oracleDBAdapterInboundTransactionBehavior**サービス**ServiceBehavior**します。  
 
-13. 右側のウィンドウで、 **Wcf-custom トランスポートのプロパティ**、適切な値を指定、 **transactionIsolationLevel**と**transactionTimeout**パラメーター。 次のトランザクション分離レベルのいずれかを選択することができます: **Serializable**、 **RepeatableRead**、 **ReadCommitted**、 **ReadUncommitted**、**スナップショット**、**混乱**、および**未指定**します。 これらのトランザクション分離レベルについては、次を参照してください。、**メンバー**セクションで[ http://go.microsoft.com/fwlink/?LinkId=126983](http://go.microsoft.com/fwlink/?LinkId=126983)します。  
+13. 右側のウィンドウで、 **Wcf-custom トランスポートのプロパティ**、適切な値を指定、 **transactionIsolationLevel**と**transactionTimeout**パラメーター。 次のトランザクション分離レベルのいずれかを選択することができます: **Serializable**、 **RepeatableRead**、 **ReadCommitted**、 **ReadUncommitted**、**スナップショット**、**混乱**、および**未指定**します。 これらのトランザクション分離レベルについては、、**メンバー**セクションで[ http://go.microsoft.com/fwlink/?LinkId=126983](http://go.microsoft.com/fwlink/?LinkId=126983)を参照してください。  
 
     > [!IMPORTANT]
     >  [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]次の 2 つのトランザクション分離レベルのみをサポートしています。 ReadCommitted および Serializable。  

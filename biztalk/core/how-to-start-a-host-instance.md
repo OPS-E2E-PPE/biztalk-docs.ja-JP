@@ -26,7 +26,7 @@ ms.locfileid: "36980979"
 > [!IMPORTANT]
 >  ホスト インスタンスに指定するサービス アカウントは、関連するホストの Windows グループのメンバーである必要があります。 それ以外の場合、ホスト インスタンスには、実行時に適切なアクセス許可または認証がない可能性があります。 また、セキュリティ上の理由により、ホスト インスタンスでホストされているオーケストレーションが悪意のあるカスタム コードを実行する可能性があるため、アカウントには、最小限の特権を付与する必要があります。  
   
- ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)します。 WMI を使用して、ホスト インスタンスを開始する方法については、次を参照してください。 **MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+ ホスト インスタンスの詳細については、[ホスト インスタンス](../core/host-instances.md)を参照してください。 WMI を使用して、ホスト インスタンスを開始する方法については、**MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
   
 ## <a name="prerequisites"></a>前提条件  
  ここで示す手順を実行するには、管理者グループのメンバーおよび BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。  
@@ -56,7 +56,7 @@ ms.locfileid: "36980979"
   
     ホスト インスタンスの状態に変わる**開始待ち**します。 ホスト インスタンスの起動状態に変わります**を実行している**します。  
   
-   ホスト インスタンスを開始後、インスタンスを停止して、メッセージがメッセージ ボックス データベースにルーティングされないようにすることができます。 特定のコンピューターから BizTalk Server を削除する前に、ホスト インスタンスを停止する必要があります。 ホスト インスタンスの停止については、次を参照してください。[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)します。  
+   ホスト インスタンスを開始後、インスタンスを停止して、メッセージがメッセージ ボックス データベースにルーティングされないようにすることができます。 特定のコンピューターから BizTalk Server を削除する前に、ホスト インスタンスを停止する必要があります。 ホスト インスタンスの停止については、[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk ホストとホスト インスタンスの管理](../core/managing-biztalk-hosts-and-host-instances.md)   

@@ -64,7 +64,7 @@ ms.locfileid: "37005331"
 
     > [!NOTE]
     >  追加する、 **"Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed False = ="** フィルター式の句、送信ポートを送信できるようのみ正常に解析し、メッセージを検証します。 ネイティブを使用して受信パイプラインとは異なり[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、逆アセンブラー、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]逆アセンブラーによって、失敗した (誤った) メッセージが中断されないが、代わりに、メッセージ ボックスと昇格させたプロパティを使用して、失敗としてマークに発行します。 A4SWIFT は、失敗したメッセージをメッセージ ボックスに公開する前に収集されたエラーの XML 表現をアタッチします。  
-    > を含めなくても、"Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed False = ="フィルター式の句、送信ポートには、すべてのメッセージが送信されます。 成功または失敗します。 失敗したメッセージのサブスクリプションの詳細については、次を参照してください。[メッセージ サブスクリプションの失敗の操作](../../adapters-and-accelerators/accelerator-swift/working-with-failed-message-subscriptions.md)します。  
+    > を含めなくても、"Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed False = ="フィルター式の句、送信ポートには、すべてのメッセージが送信されます。 成功または失敗します。 失敗したメッセージのサブスクリプションの詳細については、[メッセージ サブスクリプションの失敗の操作](../../adapters-and-accelerators/accelerator-swift/working-with-failed-message-subscriptions.md)を参照してください。  
 
 11. クリックして**適用**、順にクリックします**OK**します。  
 

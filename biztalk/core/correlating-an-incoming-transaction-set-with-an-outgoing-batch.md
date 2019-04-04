@@ -44,7 +44,7 @@ ms.locfileid: "37013803"
 1.  EDI 逆アセンブラーは、受信 EDI インターチェンジの処理時に、InterchangeStatusActivity テーブルと TransactionSetActivity テーブルにエントリを作成します。  
   
     > [!NOTE]
-    >  BAM アクティビティの詳細については、次を参照してください。 [EDI AS2 メッセージの追跡するために BAM アクティビティ作成](../core/bam-activities-created-to-track-edi-as2-messages.md)です。  
+    >  BAM アクティビティの詳細については、[EDI AS2 メッセージの追跡するために BAM アクティビティ作成](../core/bam-activities-created-to-track-edi-as2-messages.md)を参照してください。  
   
 2.  バッチ処理オーケストレーションは、インスタンスが作成されたときに、BatchingActivity にエントリを作成します。 BAM サブシステムは、ActivityID の値を作成します。  
   

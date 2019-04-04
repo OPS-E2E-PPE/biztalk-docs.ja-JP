@@ -25,9 +25,9 @@ ms.locfileid: "37013843"
 # <a name="streaming-oracle-database-lob-data-types-using-the-wcf-channel-model"></a>ストリーミングの Oracle データベース LOB データ型 WCF チャネル モデルを使用します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] LOB データの特定の操作のエンド ツー エンドのストリーミングをサポートしています。 このトピックのセクションでは、WCF チャネル モデルを使用すると、LOB データのストリーミングを実装する方法について説明します。  
   
- 背景情報アダプターが LOB データ型のストリーミングがサポートする方法については、次を参照してください。 [Oracle データベース アダプターのラージ オブジェクト データ型のストリーミング](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)します。 続行する前に、このトピックを確認してください。  
+ 背景情報アダプターが LOB データ型のストリーミングがサポートする方法については、[Oracle データベース アダプターのラージ オブジェクト データ型のストリーミング](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)を参照してください。 続行する前に、このトピックを確認してください。  
   
- LOB データのストリーミングを示すサンプルに含まれる SDK サンプルでは、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
+ LOB データのストリーミングを示すサンプルに含まれる SDK サンプルでは、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 詳細については、[SDK 内のサンプル](../../core/samples-in-the-sdk.md)を参照してください。  
   
 ## <a name="streaming-outbound-messages-to-the-adapter"></a>アダプターに送信メッセージのストリーミング  
  アダプターでは、エンド ツー エンドの LOB データのストリーミング UpdateLOB 操作の要求メッセージをサポートしています。  

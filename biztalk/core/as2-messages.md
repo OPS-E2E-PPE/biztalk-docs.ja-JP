@@ -62,7 +62,7 @@ ms.locfileid: "37022600"
 |圧縮されました。<br /><br /> -暗号化<br /><br /> 署名付き|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           PKCS7-MIME Compression (encrypted)                MIME Security Multiparts (signed)(compressed)(encrypted)                     MIME Multipart/related                          EDI/XML Payload (compressed)(encrypted)                     CMS-PKCS7 Signature (compressed)(encrypted)`|  
   
 ## <a name="as2-context-properties"></a>AS2 のコンテキスト プロパティ  
- AS2 メッセージの処理に使用されるコンテキスト プロパティには、昇格できるプロパティや非公開のプロパティが含まれますが、これらのプロパティは中断されたメッセージや追跡メッセージで表示できます。 AS2 コンテキスト プロパティの一覧は、次を参照してください。 [AS2 コンテキスト プロパティ](../core/as2-context-properties.md)します。  
+ AS2 メッセージの処理に使用されるコンテキスト プロパティには、昇格できるプロパティや非公開のプロパティが含まれますが、これらのプロパティは中断されたメッセージや追跡メッセージで表示できます。 AS2 コンテキスト プロパティの一覧は、[AS2 コンテキスト プロパティ](../core/as2-context-properties.md)を参照してください。  
   
 ## <a name="as2-headers"></a>AS2 のヘッダー  
  AS2 メッセージの AS2 ヘッダーは受信側パーティと送信元パーティを記述し、受信側パーティが MDN 応答を送信するために必要な情報を提供します。 しない限り、受信側パーティは MDN ヘッダーを使用は、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**AS2 アグリーメントのプロパティが選択されている情報が、アグリーメントで使用できない場合またはプロパティ。  

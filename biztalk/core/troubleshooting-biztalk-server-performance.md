@@ -29,11 +29,11 @@ ms.locfileid: "37009259"
   
     -   SQL Server のディスクを RAID アレイで構成するか。  
   
-    -   Windows クラスターを BizTalk ホスト、SQL Server、またはエンタープライズ シングル サインオンに使用するか。 詳細については、次を参照してください。[高可用性の計画](../core/planning-for-high-availability3.md)します。  
+    -   Windows クラスターを BizTalk ホスト、SQL Server、またはエンタープライズ シングル サインオンに使用するか。 詳細については、[高可用性の計画](../core/planning-for-high-availability3.md)を参照してください。  
   
     -   ネットワーク負荷分散を使用するか。  
   
-    -   環境のバックアップと復旧の要件は何か。 詳細については、次を参照してください。 [Backing Up and BizTalk Server データベースの復元](../core/backing-up-and-restoring-biztalk-server-databases.md)します。  
+    -   環境のバックアップと復旧の要件は何か。 詳細については、[Backing Up and BizTalk Server データベースの復元](../core/backing-up-and-restoring-biztalk-server-databases.md)を参照してください。  
   
 2.  ガイドラインに従う[パフォーマンス維持の計画](../core/planning-for-sustained-performance.md)計画、テスト、および BizTalk Server と SQL Server 環境をスケーリングします。  
   

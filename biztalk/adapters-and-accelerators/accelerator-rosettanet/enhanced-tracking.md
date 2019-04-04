@@ -24,7 +24,7 @@ ms.locfileid: "36973347"
 # <a name="enhanced-tracking"></a>拡張追跡
 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]プロセスとメッセージを追跡するために拡張機能があります。 ネイティブな機能のビジネス アクティビティ監視 (BAM) で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]メタデータのみを追跡することです。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] メッセージの内容を追跡し、service content とヘッダーの両方。  
 
- 次の表に、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が行うデータ追跡のすべての範囲を示します。 ここでは、プロセスおよびメッセージの追跡について説明します。 否認不可データの詳細については、次を参照してください。 [RNIF メッセージの処理](../../adapters-and-accelerators/accelerator-rosettanet/rnif-message-processing.md)します。  
+ 次の表に、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が行うデータ追跡のすべての範囲を示します。 ここでは、プロセスおよびメッセージの追跡について説明します。 否認不可データの詳細については、[RNIF メッセージの処理](../../adapters-and-accelerators/accelerator-rosettanet/rnif-message-processing.md)を参照してください。  
 
 
 |           追跡される情報           |                                                        機能                                                        |                                                                                   ユーザー アクセス                                                                                   |
@@ -99,7 +99,7 @@ Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentve
 |100|ActivityCompleted|  
 
 ### <a name="activity-definition-file"></a>アクティビティ定義ファイル  
- アクティビティ定義ファイルでは、BAM で追跡するフィールドおよびその表示方法を定義します。 このファイルの詳細については、次を参照してください。[追跡アクティビティ定義ファイルを処理する](../../adapters-and-accelerators/accelerator-rosettanet/working-with-the-tracking-activity-definition-file.md)します。  
+ アクティビティ定義ファイルでは、BAM で追跡するフィールドおよびその表示方法を定義します。 このファイルの詳細については、[追跡アクティビティ定義ファイルを処理する](../../adapters-and-accelerators/accelerator-rosettanet/working-with-the-tracking-activity-definition-file.md)を参照してください。  
 
  BAM の詳細については、"ビジネス アクティビティ監視 (BAM)"で BizTalk Server のヘルプを参照してください。  
 

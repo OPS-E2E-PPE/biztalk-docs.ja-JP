@@ -53,7 +53,7 @@ Business Rules こんにちは World2 サンプルを説明 Business Rules こ�
 8.  後でこのサンプルを実行するための準備として、ルール セット ファイルおよび展開されたルール セット レコードを削除して、クリーンアップします。  
   
 > [!NOTE]
->  この SDK のすべてのサンプルに関する重要な情報は、次を参照してください。[サンプル](../core/samples-in-the-sdk.md)します。  
+>  この SDK のすべてのサンプルに関する重要な情報は、[サンプル](../core/samples-in-the-sdk.md)を参照してください。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  *\<パスのサンプル\>* \Business Rules\Business こんにちは World2\ のルール  

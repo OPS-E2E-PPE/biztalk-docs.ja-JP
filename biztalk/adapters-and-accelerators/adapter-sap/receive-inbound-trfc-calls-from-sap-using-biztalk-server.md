@@ -35,7 +35,7 @@ TRFC サーバーの呼び出しは、トランザクションの RFC サーバ�
    Data Source=<myServerAddress>;Initial Catalog=<myDataBase>;User Id=<myUsername>;Password=<myPassword>;  
    ```  
   
-    バインディングのプロパティとその設定方法の詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
+    バインディングのプロパティとその設定方法の詳細については、[mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
   
    > [!IMPORTANT]
    >  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]しばらくお待ちくださいこの処理には、数分かかることがあります SQL スクリプト、SapAdapter-DbScript-Install.sql、SQL server データベースおよびデータベース オブジェクトを作成する SQL Server の管理者によって実行する必要があります。 スクリプトは通常にインストールされて*\<インストール ドライブ\>: Program FilesMicrosoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]* します。  

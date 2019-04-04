@@ -45,7 +45,7 @@ Siebel ビジネス サービスは、Siebel システムで直接呼び出す�
 
  [Business_Service_METHOD_NAME] ビジネス サービス メソッドの名前を =たとえば、ExecuteNext です。  
 
- 使用する場合、メッセージのアクションを明示的に指定する必要があります、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]や、BizTalk Server ソリューションで WCF チャネル モデルを使用します。 詳細については、次を参照してください。 [Siebel アプリケーションの開発](../../adapters-and-accelerators/adapter-siebel/develop-your-siebel-applications.md)します。  
+ 使用する場合、メッセージのアクションを明示的に指定する必要があります、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]や、BizTalk Server ソリューションで WCF チャネル モデルを使用します。 詳細については、[Siebel アプリケーションの開発](../../adapters-and-accelerators/adapter-siebel/develop-your-siebel-applications.md)を参照してください。  
 
 ## <a name="siebel-business-service-wcf-client-methods"></a>Siebel ビジネス サービスの WCF クライアント メソッド  
  次の表は、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]によって生成されるサービス モデルのメソッド署名、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] Siebel ビジネス サービス メソッド。  

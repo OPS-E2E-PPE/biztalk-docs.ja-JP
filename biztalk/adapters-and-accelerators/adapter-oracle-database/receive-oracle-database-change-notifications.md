@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "36989691"
 ---
 # <a name="receive-oracle-database-change-notifications"></a>Oracle データベースの変更通知を受け取る
-[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] ODP.NET データベース変更通知機能をサポートしています。 この機能を使用して、アダプター クライアントできます SELECT ステートメントとして登録データベースに対して、通知クエリし、データベースとしてアダプター クライアントを使用して、結果セットの SELECT ステートメントの変更の通知が送信されます。 データベースの変更通知は、OracleDependency クラスを使用して、アダプターに実装されます。 ODP.NET、および OracleDependency クラスのデータベース変更のサポート機能の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=124801](http://go.microsoft.com/fwlink/?LinkId=124801)します。  
+[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] ODP.NET データベース変更通知機能をサポートしています。 この機能を使用して、アダプター クライアントできます SELECT ステートメントとして登録データベースに対して、通知クエリし、データベースとしてアダプター クライアントを使用して、結果セットの SELECT ステートメントの変更の通知が送信されます。 データベースの変更通知は、OracleDependency クラスを使用して、アダプターに実装されます。 ODP.NET、および OracleDependency クラスのデータベース変更のサポート機能の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=124801](http://go.microsoft.com/fwlink/?LinkId=124801)を参照してください。  
 
  [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]データベース変更通知をサポートするために、通知を受信する操作を公開します。 ただし、データベース変更通知を使用する[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]以下を確認する必要があります。  
 
@@ -32,7 +32,7 @@ ms.locfileid: "36989691"
   grant change notification to <user name>  
   ```  
 
-- Oracle データベースからデータベース変更通知を受信する ODP.NET で使用できる TCP ポートを決定します。 Windows ファイアウォール例外一覧には、TCP ポートを追加します。 Windows ファイアウォールの例外リストにポートを追加する方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)します。 同じの TCP ポート番号を指定する必要があります、 **NotificationPort**プロパティをバインドします。 バインディング プロパティの詳細については、次を参照してください。[バインドのプロパティの操作](https://msdn.microsoft.com/library/dd788467.aspx)します。  
+- Oracle データベースからデータベース変更通知を受信する ODP.NET で使用できる TCP ポートを決定します。 Windows ファイアウォール例外一覧には、TCP ポートを追加します。 Windows ファイアウォールの例外リストにポートを追加する方法については、[ http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)を参照してください。 同じの TCP ポート番号を指定する必要があります、 **NotificationPort**プロパティをバインドします。 バインディング プロパティの詳細については、[バインドのプロパティの操作](https://msdn.microsoft.com/library/dd788467.aspx)を参照してください。  
 
   一般的なデータベース変更通知を使用して、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]次が含まれます。  
 

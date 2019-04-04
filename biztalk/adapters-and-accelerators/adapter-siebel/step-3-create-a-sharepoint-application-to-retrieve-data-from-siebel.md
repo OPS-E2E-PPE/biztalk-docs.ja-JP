@@ -70,7 +70,7 @@ ms.locfileid: "36971867"
   
  SSP の作成中に Web サイトを定義する必要があります。 ポート番号とを作成するサイトのアドレスに注意してください。 このサイトには、ビジネス データ カタログ アプリケーション定義をインポートします。  
   
- SSP の作成の詳細については、次を参照してください。"」の章の概要: を作成し、共有サービス プロバイダーを構成する"で[ http://go.microsoft.com/fwlink/?LinkId=105119](http://go.microsoft.com/fwlink/?LinkId=105119)します。  
+ SSP の作成の詳細については、"」の章の概要: を作成し、共有サービス プロバイダーを構成する"で[ http://go.microsoft.com/fwlink/?LinkId=105119](http://go.microsoft.com/fwlink/?LinkId=105119)を参照してください。  
   
 ## <a name="importing-the-application-definition-file"></a>アプリケーション定義ファイルのインポート  
  SSP に今すぐアプリケーション定義ファイルをインポートする必要があります。  

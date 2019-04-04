@@ -32,7 +32,7 @@ Visual Studio では、ローカルのロード テストの実行に最大 250 
   
   テストの結果は、SQL Server データベースにリモートでロード テストの結果リポジトリに保存されていました。  
   
-  テスト コント ローラーとテスト エージェントを使用して、複数のテスト コンピューターにロード テストを配布する方法の詳細については、次を参照してください。[分散ロード テスト間で複数テスト マシンを使用してテスト コント ローラーとテスト エージェント](https://msdn.microsoft.com/library/dd728093.aspx)します。  
+  テスト コント ローラーとテスト エージェントを使用して、複数のテスト コンピューターにロード テストを配布する方法の詳細については、[分散ロード テスト間で複数テスト マシンを使用してテスト コント ローラーとテスト エージェント](https://msdn.microsoft.com/library/dd728093.aspx)を参照してください。  
   
 ## <a name="install-and-configure-the-load-test-controller-and-load-test-agents"></a>インストールし、構成、ロード テスト コント ローラーとロード テスト エージェント  
- インストールして、ロード テスト コント ローラーを構成してテスト エージェントを読み込む、次を参照してください。[のインストールとテスト エージェントを構成](https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents)します。
+ インストールして、ロード テスト コント ローラーを構成してテスト エージェントを読み込む、[のインストールとテスト エージェントを構成](https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents)を参照してください。

@@ -24,7 +24,7 @@ ms.locfileid: "36973827"
   
  メッセージの追跡のプロセスは非常にリソースを消費できる、ので、プランを作成する前にこのトピックを確認してください。  
   
- 追跡の詳細については、次を参照してください。[状態と動作状況の追跡](http://go.microsoft.com/fwlink/?LinkId=154187)(http://go.microsoft.com/fwlink/?LinkId=154187)します。  
+ 追跡の詳細については、[状態と動作状況の追跡](http://go.microsoft.com/fwlink/?LinkId=154187)(http://go.microsoft.com/fwlink/?LinkId=154187)を参照してください。  
   
 ## <a name="configuring-and-enabling-the-dta-purge-and-archive-sql-agent-job"></a>構成して有効 DTA Purge and Archive SQL エージェント ジョブ  
  このジョブをアーカイブしてがあまり大きくならないように、BizTalk 追跡データベースから古いデータを削除します。 これは、正常性のために不可欠な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システム。 追跡データベースのクエリを実行すると、追跡ホストの他のプロセスのパフォーマンスに影響を与える大きな追跡データベースが開始されます。  
@@ -33,7 +33,7 @@ ms.locfileid: "36973827"
   
 -   **ジョブが追跡データを受信した追跡データが生成された高速消去できることを確認します。** ジョブの背後にあるをピーク負荷時に取得するのにもかまいませんが、遅延を解消することを必ず。 Purge ジョブでは、背後にある取得し、遅延を解消することはありませんが場合に、増加し、BizTalk 追跡データベースは引き続きし、パフォーマンスが悪影響を受ける最終的には。  
   
--   **論理削除を確認し、ことを確認して物理削除パラメーターがありませんが、十分な時間の長いデータを保持します。** これらのパラメーターの詳細については、次を参照してください。[アーカイブおよび BizTalk 追跡データベースの削除](http://go.microsoft.com/fwlink/?LinkID=153816)(http://go.microsoft.com/fwlink/?LinkID=153816)します。  
+-   **論理削除を確認し、ことを確認して物理削除パラメーターがありませんが、十分な時間の長いデータを保持します。** これらのパラメーターの詳細については、[アーカイブおよび BizTalk 追跡データベースの削除](http://go.microsoft.com/fwlink/?LinkID=153816)(http://go.microsoft.com/fwlink/?LinkID=153816)を参照してください。  
   
 -   **古いデータを消去しないだけの場合必要があります最初に、アーカイブし、変更、SQL エージェント ジョブ"dtasp_PurgeTrackingDatabase"ストアド プロシージャを呼び出します。** これにより、アーカイブの手順をスキップし、のみ、消去を行います。 ストアド プロシージャおよびそれを使用する SQL エージェント ジョブの変更の詳細については、これはの参照[BizTalk 追跡データベースからのデータの削除方法](http://go.microsoft.com/fwlink/?LinkID=153817)(http://go.microsoft.com/fwlink/?LinkID=153817)します。  
   

@@ -43,7 +43,7 @@ ms.locfileid: "36973267"
  [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] ODP.NET を使用して、データベース、Oracle の UDT を .NET カスタム型をマップするカスタム型マッピングを指定します。 カスタム型マッピングを指定する、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]カスタム型のファクトリを使用します。 そのため、Oracle、UDT を使用するにはアセンブリ (.dll ファイル) が必要なカスタム型のファクトリを定義します。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle の UDT を含む成果物/操作のメタデータを生成するときに、カスタム型のファクトリのアセンブリを生成することができます。  
   
 > [!NOTE]
->  アダプターは、Oracle の Udt をサポートするために、ODP.NET によって使用されるクラスに基づく Oracle Udt のアセンブリを生成します。 ODP.NET で Oracle Udt をサポートする方法の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=140697](http://go.microsoft.com/fwlink/?LinkId=140697)します。  
+>  アダプターは、Oracle の Udt をサポートするために、ODP.NET によって使用されるクラスに基づく Oracle Udt のアセンブリを生成します。 ODP.NET で Oracle Udt をサポートする方法の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=140697](http://go.microsoft.com/fwlink/?LinkId=140697)を参照してください。  
   
  デザイン時に Oracle Udt を使用するためのアセンブリ ファイルを生成し、後で、実行時に、使用して、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]バインドのプロパティを公開します。  
   
@@ -53,7 +53,7 @@ ms.locfileid: "36973267"
   
 - **UserAssembliesLoadPath** (実行時)  
   
-  これらのバインドのプロパティについては、次を参照してください。[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。  
+  これらのバインドのプロパティについては、[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。  
   
 ## <a name="performing-operations-on-artifacts-containing-oracle-udts"></a>Oracle の Udt を含む成果物の操作を実行します。  
  使用して Udt を含む成果物の操作を実行する、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]デザイン時に、次を実行して、時間を実行する必要があります。  
@@ -61,11 +61,11 @@ ms.locfileid: "36973267"
 ### <a name="design-time"></a>デザイン時  
  Visual Studio での操作のスキーマの生成中に次の手順を実行する必要があります。  
   
-1. Oracle E-business Suite への接続、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 これについては、次を参照してください。 [Visual Studio での Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)します。  
+1. Oracle E-business Suite への接続、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 これについては、[Visual Studio での Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)を参照してください。  
   
-2. 、接続中に、**バインドのプロパティ**のタブ、**アダプターの構成** ダイアログ ボックスで、適切な値を指定、 **GeneratedUserTypesAssemblyFilePath****GeneratedUserTypesAssemblyKeyFilePath**プロパティをバインドします。 これらのバインドのプロパティについては、次を参照してください。[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。  
+2. 、接続中に、**バインドのプロパティ**のタブ、**アダプターの構成** ダイアログ ボックスで、適切な値を指定、 **GeneratedUserTypesAssemblyFilePath****GeneratedUserTypesAssemblyKeyFilePath**プロパティをバインドします。 これらのバインドのプロパティについては、[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。  
   
-3. Visual Studio での Oracle E-business Suite に接続しているときに、Oracle、UDT を含む必要な成果物を参照します。 成果物をブラウズする方法の詳細については、次を参照してください。[参照、検索、および取得操作のメタデータの Oracle E-business](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)します。  
+3. Visual Studio での Oracle E-business Suite に接続しているときに、Oracle、UDT を含む必要な成果物を参照します。 成果物をブラウズする方法の詳細については、[参照、検索、および取得操作のメタデータの Oracle E-business](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)を参照してください。  
   
 4. 必須のアイテムを選択し、クリックして**OK**します。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]選択したアイテムで Oracle UDT のアセンブリ (.dll ファイル) と共に選択した操作のメタデータを生成します。 指定した場所にアセンブリが作成されて、 **GeneratedUserTypesAssemblyFilePath**プロパティをバインドします。  
   
@@ -78,13 +78,13 @@ ms.locfileid: "36973267"
   
 - 手順 4. で「デザイン時」グローバル アセンブリ キャッシュ (GAC) に、コンピューター上で作成された Oracle UDT アセンブリを手動で追加します。 BizTalk Server のインストール場所の Oracle UDT アセンブリを手動でコピーすることができます。 BizTalk server では、通常、これは\<インストール ドライブ\>: \Program Files\Microsoft BizTalk Server です。  
   
-- 構成するときに、 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Wcf-custom または Wcf-oracleebs をポートで、**バインド**] タブの [Oracle UDT アセンブリの場所を指定の**UserAssembliesLoadPath**プロパティをバインドします。 このバインドのプロパティについては、次を参照してください。[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。  
+- 構成するときに、 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Wcf-custom または Wcf-oracleebs をポートで、**バインド**] タブの [Oracle UDT アセンブリの場所を指定の**UserAssembliesLoadPath**プロパティをバインドします。 このバインドのプロパティについては、[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。  
   
   **Visual Studio で**  
   
 - 手順 4. で「デザイン時」グローバル アセンブリ キャッシュ (GAC) に、コンピューター上で作成された Oracle UDT アセンブリを手動で追加します。 または、通常、プロジェクトの \bin\Debug フォルダーの下にはプロジェクトの実行可能ファイルと同じ場所に Oracle UDT アセンブリを手動でコピーすることができます。  
   
-- Oracle の UDT のアセンブリの場所を指定、 **UserAssembliesLoadPath**プロパティをバインドします。 このバインドのプロパティについては、次を参照してください。[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。  
+- Oracle の UDT のアセンブリの場所を指定、 **UserAssembliesLoadPath**プロパティをバインドします。 このバインドのプロパティについては、[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [どのような操作は、アダプターを使用して実行しますか?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)

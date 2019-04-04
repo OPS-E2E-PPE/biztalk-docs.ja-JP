@@ -23,7 +23,7 @@ ms.locfileid: "36984667"
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]クライアント プログラムから Oracle E-business Suite の Oracle E-business Suite でのデータへの変更を知らせるメッセージを受信できるようにします。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプターが指定された SQL ステートメント、ストアド プロシージャ、関数、またはパッケージ内のプロシージャを実行する場合、「ポーリング ベース」のメッセージの受信をサポートしていますが、データを取得しの一定の間隔でクライアントに結果を提供します。時間です。  
 
 > [!NOTE]
->  ポーリング操作でのアプリケーションのコンテキストを設定することもできます。[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 インターフェイス テーブルまたはビューのインターフェイスで、操作を実行する場合は、ポーリング操作のアプリケーション コンテキストを設定する必要があります。 アプリケーションのコンテキスト、および設定する方法については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
+>  ポーリング操作でのアプリケーションのコンテキストを設定することもできます。[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 インターフェイス テーブルまたはビューのインターフェイスで、操作を実行する場合は、ポーリング操作のアプリケーション コンテキストを設定する必要があります。 アプリケーションのコンテキスト、および設定する方法については、[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)を参照してください。  
 
  使用して一般的なポーリング操作、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]次が含まれます。  
 

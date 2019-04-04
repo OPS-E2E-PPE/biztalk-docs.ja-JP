@@ -59,7 +59,7 @@ ms.locfileid: "36998315"
 
  MVG フィールドを親ビジネス コンポーネントの; に関連付けられた子ビジネス コンポーネントの名前たとえば、(用アカウントの親ビジネス コンポーネント) に問い合わせてください。  
 
- 使用する場合、メッセージのアクションを明示的に指定する必要があります、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]で BizTalk Server ソリューション、またはを使用して、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]チャネル モデル。 詳細については、次を参照してください。 [Siebel アプリケーションの開発](../../adapters-and-accelerators/adapter-siebel/develop-your-siebel-applications.md)します。  
+ 使用する場合、メッセージのアクションを明示的に指定する必要があります、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]で BizTalk Server ソリューション、またはを使用して、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]チャネル モデル。 詳細については、[Siebel アプリケーションの開発](../../adapters-and-accelerators/adapter-siebel/develop-your-siebel-applications.md)を参照してください。  
 
 ## <a name="siebel-business-component-wcf-client-methods"></a>Siebel ビジネス コンポーネントの WCF クライアント メソッド  
  次の表は、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]サービスによって生成されるモデルのメソッド署名、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]の Siebel ビジネス コンポーネント。  

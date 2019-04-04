@@ -36,7 +36,7 @@ ms.locfileid: "37016730"
 > [!NOTE]
 >  アグリーメントの解決時に決定される AS2 アグリーメントは、EDI ペイロードと同じアグリーメントにならない場合があります。 AS2 アグリーメントは、複数のパーティから EDI ドキュメントをルーティングするクリアリングハウスを表す場合があるので、AS2 と EDI が同じアグリーメントを共有する必要はありません。  
   
- 受信処理の詳細については、次を参照してください。[受信 AS2 メッセージの処理](../core/processing-an-incoming-as2-message.md)します。  
+ 受信処理の詳細については、[受信 AS2 メッセージの処理](../core/processing-an-incoming-as2-message.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server が AS2 メッセージを受信する方法](../core/how-biztalk-server-receives-as2-messages.md)

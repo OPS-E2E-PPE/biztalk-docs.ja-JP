@@ -26,10 +26,10 @@ ms.locfileid: "36982563"
 
 - BFILE の型の列は、アダプター クライアントは、データを読み取るだけことができます。 アダプター公開 Read_\<*LOBColName* \> BFILE 型の列からデータを読み取る操作。 大規模なデータ型は、1 つのインターフェイス テーブルでは、複数の列がある場合、アダプターは、インターフェイス テーブルに対する操作の読み取りの多くを公開します。  
 
-  これらの操作の詳細については、次を参照してください。[インターフェイス テーブル、インターフェイス ビュー、テーブル、ビューを含む LOB データを操作](../../adapters-and-accelerators/adapter-oracle-ebs/read-and-update-on-interface-tables-and-views-with-large-object-data-types.md)します。  
+  これらの操作の詳細については、[インターフェイス テーブル、インターフェイス ビュー、テーブル、ビューを含む LOB データを操作](../../adapters-and-accelerators/adapter-oracle-ebs/read-and-update-on-interface-tables-and-views-with-large-object-data-types.md)を参照してください。  
 
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、顧客のデータベース テーブル内の BLOB 列 (写真) を更新し、同じ列からデータを取得します。 サンプルに付属のスクリプトを実行して、テーブルが作成されます。 サンプルの詳細については、次を参照してください。 [Oracle EBS アダプター用のサンプル](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md)します。 サンプルについては、 **LargeDataTypes_ServiceModel**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]サンプル。  
+ このトピックの例では、顧客のデータベース テーブル内の BLOB 列 (写真) を更新し、同じ列からデータを取得します。 サンプルに付属のスクリプトを実行して、テーブルが作成されます。 サンプルの詳細については、[Oracle EBS アダプター用のサンプル](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md)を参照してください。 サンプルについては、 **LargeDataTypes_ServiceModel**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]サンプル。  
 
 > [!NOTE]
 >  このトピックでは、更新とベース データベース テーブル内の大規模なデータ型の列を読み取り用の詳細なタスクを使用します。 更新とのインターフェイス テーブルに大量のデータ型の列を読み取り用同じ一連のタスクを実行する必要があります。  
@@ -86,7 +86,7 @@ public partial class Tables_APPS_CUSTOMERClient : System.ServiceModel.ClientBase
 
 1. Visual Studio で Visual c# プロジェクトを作成します。 このトピックでは、コンソール アプリケーションを作成します。  
 
-2. 顧客のデータベース テーブルでも Update_PHOTO と Read_PHOTO の操作のための WCF クライアント クラスを生成します。 WCF クライアント クラスを生成する詳細については、次を参照してください。 [WCF クライアントまたは Oracle E-business Suite ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)します。  
+2. 顧客のデータベース テーブルでも Update_PHOTO と Read_PHOTO の操作のための WCF クライアント クラスを生成します。 WCF クライアント クラスを生成する詳細については、[WCF クライアントまたは Oracle E-business Suite ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)を参照してください。  
 
    > [!IMPORTANT]
    >  WCF クライアント クラスを生成する前に必ず設定して、 **EnableBizTalkCompatibilityMode**プロパティを false にバインドします。  
@@ -116,7 +116,7 @@ public partial class Tables_APPS_CUSTOMERClient : System.ServiceModel.ClientBase
     このスニペットで`Tables_APPS_CUSTOMERClient`OracleEBSBindingClient.cs で定義されている WCF クライアントです。 このファイルがによって生成された、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。  
 
    > [!NOTE]
-   >  このスニペットでは、バインディングと構成ファイル app.config ファイルからエンドポイント アドレスを使用します。これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定する、さまざまな方法の詳細については、次を参照してください。 [Oracle E-business suite バインド クライアントを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-client-binding-for-the-oracle-e-business-suite.md)します。  
+   >  このスニペットでは、バインディングと構成ファイル app.config ファイルからエンドポイント アドレスを使用します。これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定する、さまざまな方法の詳細については、[Oracle E-business suite バインド クライアントを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-client-binding-for-the-oracle-e-business-suite.md)を参照してください。  
 
 6. クライアントの資格情報を設定します。  
 
@@ -126,7 +126,7 @@ public partial class Tables_APPS_CUSTOMERClient : System.ServiceModel.ClientBase
    ```  
 
    > [!IMPORTANT]
-   >  この例では、データベース テーブルの操作を実行します。 ただし、インターフェイス テーブルでの操作を実行する場合は、する必要がありますコンテキストを設定するアプリケーションの適切な値を指定することによって、 **OracleUserName**、 **OraclePassword**、および**OracleEBSResponsibilityName**プロパティをバインドします。 クライアントを開く前に、これらのバインドのプロパティを指定する必要があります。 アプリケーションのコンテキストの詳細については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
+   >  この例では、データベース テーブルの操作を実行します。 ただし、インターフェイス テーブルでの操作を実行する場合は、する必要がありますコンテキストを設定するアプリケーションの適切な値を指定することによって、 **OracleUserName**、 **OraclePassword**、および**OracleEBSResponsibilityName**プロパティをバインドします。 クライアントを開く前に、これらのバインドのプロパティを指定する必要があります。 アプリケーションのコンテキストの詳細については、[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)を参照してください。  
 
 7. 次のスニペットで説明されているように、クライアントを開きます。  
 

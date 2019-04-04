@@ -24,11 +24,11 @@ ms.locfileid: "36976619"
 
 ## <a name="ceate-empty-node-values"></a>作成の空のノードの値  
 
-1. BizTalk エディターを使用してインスタンス データを生成します。 インスタンス データ生成の詳細については、次を参照してください。[インスタンス メッセージの生成方法](../core/how-to-generate-instance-messages.md)します。  
+1. BizTalk エディターを使用してインスタンス データを生成します。 インスタンス データ生成の詳細については、[インスタンス メッセージの生成方法](../core/how-to-generate-instance-messages.md)を参照してください。  
 
 2. テキスト エディターで入力インスタンス メッセージを開き、空にする対象の要素と属性からデータを削除し、変更したインスタンス ファイルを保存します。  
 
-3. スキーマの検証やテストの実行時に、変更したファイルが使用されるよう、BizTalk マッパーを構成します。 スキーマのプロパティ ウィンドウでファイルを設定します。 プロパティの設定の詳細については、次を参照してください。**マップ ファイル プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+3. スキーマの検証やテストの実行時に、変更したファイルが使用されるよう、BizTalk マッパーを構成します。 スキーマのプロパティ ウィンドウでファイルを設定します。 プロパティの設定の詳細については、**マップ ファイル プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
 
 ## <a name="see-also"></a>参照  
 - [インスタンス メッセージを生成する方法](../core/how-to-generate-instance-messages.md)   

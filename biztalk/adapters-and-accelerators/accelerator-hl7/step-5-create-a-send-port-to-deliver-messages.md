@@ -24,7 +24,7 @@ ms.locfileid: "37001683"
 
  MLLP アダプターでは、関連付けられているのみなります、、特定の送信先 (送信先の基幹業務アプリケーション) にのみ送信されるように静的であるには、このポートを作成します。 このチュートリアルでは、その送信先は、個々 のメッセージの MSH5 記載されているに MESA_IS が。 ACK_024_GLO_DEF スキーマまたは任意の静的な確認 (ACK) に準拠したメッセージをフィルター処理していない受信確認のメッセージを送信するポートを制限するフィルターを使用して、ポートを作成します。  
 
- この送信ポート構成の Ack を受信する、宛先からという名前の受信ポートと送信ポートを関連付けることによって**TwoWayAckReceivePort**します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] セットアップ、このポートを作成してに付属の受信場所の**TwoWayAckReceiveLocation**します。 設定して、このポートを使用する送信ポートを設定する**送信請求-応答を有効にする**に**はい**と設定、**受信場所の URI を送信**に**127.0.0.1:65535** (Ack をそのまま使用するために必要な設定)。 詳細については、次を参照してください。[設定を、送信ポートの受信確認の](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)します。  
+ この送信ポート構成の Ack を受信する、宛先からという名前の受信ポートと送信ポートを関連付けることによって**TwoWayAckReceivePort**します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] セットアップ、このポートを作成してに付属の受信場所の**TwoWayAckReceiveLocation**します。 設定して、このポートを使用する送信ポートを設定する**送信請求-応答を有効にする**に**はい**と設定、**受信場所の URI を送信**に**127.0.0.1:65535** (Ack をそのまま使用するために必要な設定)。 詳細については、[設定を、送信ポートの受信確認の](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)を参照してください。  
 
 ### <a name="to-create-a-send-port-to-deliver-messages"></a>メッセージを配信する送信ポートを作成するには  
 

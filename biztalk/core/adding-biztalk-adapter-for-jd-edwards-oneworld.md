@@ -96,13 +96,13 @@ JD Edwards OneWorld の "トランスポート プロパティ" システム定�
   
      エンタープライズ シングル サインオンのツールによって作成される関連アプリケーションはそれぞれ、JD Edwards OneWorld などの特定のアプリケーションを表します。 Microsoft BizTalk Adapter for JD Edwards OneWorld では、アプリケーション ユーザーの資格情報が使用されます。 この資格情報は、指定された関連アプリケーションのサーバー システムの SSO 資格情報データベースから取得されます。 取得される資格情報は、BizTalk Server プロジェクトを起動したアプリケーション ユーザーの資格情報です。  
   
-     詳細については、次を参照してください。[関連アプリケーションを作成する](../core/creating-affiliate-applications3.md)します。  
+     詳細については、[関連アプリケーションを作成する](../core/creating-affiliate-applications3.md)を参照してください。  
   
 4.  展開、 **JD Edwards OneWorld システム**ノードし、JD Edwards OneWorld サーバーへの接続に必要なすべての情報を入力します。  
   
      ![](../core/media/jdedadapter-02-jdesystem.gif "JDEdAdapter_02_JDESystem")  
   
-     接続パラメーターの設定が完了すると、JD Edwards OneWorld システムの内容を参照できるようになります。 詳細については、次を参照してください。[を BizTalk Server プロジェクトに JD Edwards OneWorld スキーマをインポートする](../core/importing-jd-edwards-oneworld-schemas-into-biztalk-server-projects.md)します。  
+     接続パラメーターの設定が完了すると、JD Edwards OneWorld システムの内容を参照できるようになります。 詳細については、[を BizTalk Server プロジェクトに JD Edwards OneWorld スキーマをインポートする](../core/importing-jd-edwards-oneworld-schemas-into-biztalk-server-projects.md)を参照してください。  
   
 5.  呼び出しでは、たとえば 200 の数を示す値を入力**最大同時呼び出し数**必要な場合。  
   

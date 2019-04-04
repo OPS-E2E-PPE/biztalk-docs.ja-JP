@@ -109,7 +109,7 @@ ms.locfileid: "36997731"
  各機能のテストを記述するために必要な開発作業を最小限に抑えるには重要です。 通常より高価な少なくテスト_ケースを終了可能性がありますが (時間)、開発の観点から何かを生成するためには。 つまり、コードに対してテスト カバレッジのレベルを必要があります。 テスト フレームワークを使用すると、テスト_ケースを迅速かつ簡単に作成でき、そのため、簡単に完全なコード カバレッジを取得できます。 ほとんどの適切なテスト フレームワークでは、テストを定義する宣言型のアプローチを使用します。 (つまり、テストの構成に格納されます、構成ファイル、XML ファイルは、通常。)使用する適切なテストのフレームワークにより、機敏性と信頼性の高い方法でテスト スイートに完全な機能を開発して、"車輪の繰り返し、軽減する必要がなくなります。  
   
 ## <a name="msbuild-support-for-biztalk-server-projects"></a>BizTalk Server プロジェクトの MSBUILD サポート。  
- BizTalk Server では、Visual Studio がインストールされていないビルド ラボ環境でのマネージ プロジェクトのビルドに対応する Microsoft ビルド エンジン (MSBUILD) プラットフォームのサポートを提供します。 MSBUILD は、コマンドラインと MSBUILD ログ記録とバッチ処理を含む高度な機能からのプロジェクトのビルドに対応します。 MSBUILD の詳細については、次を参照してください。 [MSBuild の概要](http://go.microsoft.com/fwlink/?LinkId=131739)(http://go.microsoft.com/fwlink/?LinkId=131739)します。  
+ BizTalk Server では、Visual Studio がインストールされていないビルド ラボ環境でのマネージ プロジェクトのビルドに対応する Microsoft ビルド エンジン (MSBUILD) プラットフォームのサポートを提供します。 MSBUILD は、コマンドラインと MSBUILD ログ記録とバッチ処理を含む高度な機能からのプロジェクトのビルドに対応します。 MSBUILD の詳細については、[MSBuild の概要](http://go.microsoft.com/fwlink/?LinkId=131739)(http://go.microsoft.com/fwlink/?LinkId=131739)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [自動テストの実装](../technical-guides/implementing-automated-testing.md)

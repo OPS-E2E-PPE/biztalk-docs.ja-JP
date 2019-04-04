@@ -25,11 +25,11 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37004107"
 ---
 # <a name="how-to-remove-sso"></a>SSO を削除する方法
-BizTalk Server を削除すると、エンタープライズ シングル サインオン (SSO) を必要とする製品で SSO が使用されていない限り、SSO の構成は解除されます。 ただし、SSO は削除されません。 SSO は個別に削除する必要があります。 また、マスタ シークレットなどの構成情報を復元して、既存のデータを再利用することもできます。 詳細については、次を参照してください。[マスター シークレットを復元する方法](../core/how-to-restore-the-master-secret.md)します。  
+BizTalk Server を削除すると、エンタープライズ シングル サインオン (SSO) を必要とする製品で SSO が使用されていない限り、SSO の構成は解除されます。 ただし、SSO は削除されません。 SSO は個別に削除する必要があります。 また、マスタ シークレットなどの構成情報を復元して、既存のデータを再利用することもできます。 詳細については、[マスター シークレットを復元する方法](../core/how-to-restore-the-master-secret.md)を参照してください。  
   
 ### <a name="to-remove-enterprise-single-sign-on"></a>エンタープライズ シングル サインオンを削除するには  
   
-1. マスタ シークレットをバックアップします。 詳細については、次を参照してください。[バックアップ マスター シークレットを方法](../core/how-to-back-up-the-master-secret.md)します。  
+1. マスタ シークレットをバックアップします。 詳細については、[バックアップ マスター シークレットを方法](../core/how-to-back-up-the-master-secret.md)を参照してください。  
   
 2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をアンインストールします。  
   

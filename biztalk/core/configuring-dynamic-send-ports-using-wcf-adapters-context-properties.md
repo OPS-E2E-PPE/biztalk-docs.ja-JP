@@ -49,7 +49,7 @@ DynamicSendPort(Microsoft.XLANGs.BaseTypes.TransportType)="WCF-Custom";
   
  WCF コンテキスト プロパティを指定する際の考慮事項を次に示します。  
   
-- 複数のアダプターにマップできるアドレスが存在します。 たとえば、「http://」または「https://」で始まるアドレスは、HTTP アダプタだけでなく、WCF-BasicHttp アダプタ、WCF-WsHttp アダプタ、または WCF-Custom アダプタでも処理することができます。 別の例として、上のサンプル コードでは、どちらも「net.tcp://」で始まるアドレスを使用していますが、2 番目のサンプル コードではカスタム バインドを使用するので、アドレスの処理には、WCF-Custom アダプタを使用する必要があります。 そのため、正しいアダプターを識別するために行う必要があります、省略可能な**Microsoft.XLANGs.BaseTypes.TransportType**フィールドに、**式**図形を使用するアダプターとします。  
+- 複数のアダプターにマップできるアドレスが存在します。 たとえば、「 http://」または「 https://」で始まるアドレスは、HTTP アダプタだけでなく、WCF-BasicHttp アダプタ、WCF-WsHttp アダプタ、または WCF-Custom アダプタでも処理することができます。 別の例として、上のサンプル コードでは、どちらも「net.tcp://」で始まるアドレスを使用していますが、2 番目のサンプル コードではカスタム バインドを使用するので、アドレスの処理には、WCF-Custom アダプタを使用する必要があります。 そのため、正しいアダプターを識別するために行う必要があります、省略可能な**Microsoft.XLANGs.BaseTypes.TransportType**フィールドに、**式**図形を使用するアダプターとします。  
   
   > [!NOTE]
   >  アドレスの先頭で http:// または https:// 、しを指定しない場合、 **Microsoft.XLANGs.BaseTypes.TransportType**フィールドで、既定では、BizTalk エンジンを使用して、HTTP アダプター。  
@@ -74,7 +74,7 @@ DynamicSendPort(Microsoft.XLANGs.BaseTypes.TransportType)="WCF-Custom";
   
 - **WCF です。BindingConfiguration**のバインドの種類のバインド構成を指定します。 このプロパティは、コンピュータの構成ファイルに登録されているバインドを受け取ります。 WCF 構成ファイルのバインド構成で使用される形式と同じ形式の XML 構成ファイルも受け取ります。  
   
-- 追加の WCF プロパティの指定が必要になる場合があります。 入力**WCF**式エディターで IntelliSense 機能がすべての利用可能なコンテキスト プロパティを一覧する必要があります。 WCF コンテキスト プロパティの詳細については、次を参照してください。 [WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md)します。  
+- 追加の WCF プロパティの指定が必要になる場合があります。 入力**WCF**式エディターで IntelliSense 機能がすべての利用可能なコンテキスト プロパティを一覧する必要があります。 WCF コンテキスト プロパティの詳細については、[WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md)を参照してください。  
   
   上記の例は、構成する方法を示す**WCF です。アクション**1 つのアクションを使用します。 複数アクションのマッピング シナリオの場合、WCF アダプタは、動的送信ポートでの複数アクションのマッピングの使用をサポートしていません。 設定できるは、実際のアクションだけ、 **WCF です。アクション**コンテキスト プロパティの上に示すようにします。  
   

@@ -51,4 +51,4 @@ ms.locfileid: "36989675"
 ## <a name="new-swift-mt-mx-messages-document-library"></a>新しい SWIFT MT]、[MX メッセージ ドキュメント ライブラリ  
  新しい SWIFT MT メッセージと新しい SWIFT MX メッセージ ドキュメント ライブラリは、MRSR サイトのデプロイ時に作成されます。 新しい SWIFT MT メッセージと新しい SWIFT MX メッセージ ドキュメント ライブラリでは、新しい SWIFT XML テンプレートまたは「定型」のメッセージを格納します。 これらのメッセージを使用して、新しい SWIFT InfoPath XML 形式で表されるメッセージを作成することができます。 これらのメッセージは、ドキュメント ライブラリにアップロード ボタンをクリックして、ユーザーが新しい SWIFT MT メッセージと新しい SWIFT MX メッセージ ドキュメント ライブラリにアップロードされます。 さらに、指定したユーザーにアクセスを制限する SWIFT メッセージの新しいテンプレートを配布できます。 これを行うには、まず、新しいドキュメント ライブラリを作成し、ドキュメント ライブラリに必要な XML テンプレートをコピーし、.  
 
- FormPublish ツールの詳細については、次を参照してください。 [FormPublish ツール](http://msdn.microsoft.com/09a6ed31-5917-4776-9a5e-955af440cdac)ツール セクションでします。
+ FormPublish ツールの詳細については、[FormPublish ツール](http://msdn.microsoft.com/09a6ed31-5917-4776-9a5e-955af440cdac)ツール セクションでを参照してください。

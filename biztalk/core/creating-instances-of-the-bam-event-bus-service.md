@@ -22,13 +22,13 @@ ms.locfileid: "36984003"
 # <a name="creating-instances-of-the-bam-event-bus-service"></a>BAM イベント バス サービスのインスタンスを作成します。
 BAM イベント バス サービスは、BizTalk アプリケーション ホスト内で実行されます。 既定のホストを使用して BAM イベント バス サービスをホストするか、新しいホストを作成することができます。 あるホストが BAM イベント バス サービスをホストする場合、そのホスト用に作成する新しいインスタンスも BAM イベント バス サービスをホストします。  
   
- 既定のホストについては、次を参照してください。[ホスト](../core/hosts.md)します。  
+ 既定のホストについては、[ホスト](../core/hosts.md)を参照してください。  
   
- ホストを作成する方法の詳細については、次を参照してください。[新しいホストを作成する方法](../core/how-to-create-a-new-host.md)します。  
+ ホストを作成する方法の詳細については、[新しいホストを作成する方法](../core/how-to-create-a-new-host.md)を参照してください。  
   
- ホスト インスタンスを作成する方法の詳細については、次を参照してください。[ホスト インスタンスを追加する方法](../core/how-to-add-a-host-instance.md)します。  
+ ホスト インスタンスを作成する方法の詳細については、[ホスト インスタンスを追加する方法](../core/how-to-add-a-host-instance.md)を参照してください。  
   
- ホストおよびホスト インスタンス作成および構成については、次を参照してください。 [BizTalk ホストの管理およびホスト インスタンス](../core/managing-biztalk-hosts-and-host-instances.md)します。  
+ ホストおよびホスト インスタンス作成および構成については、[BizTalk ホストの管理およびホスト インスタンス](../core/managing-biztalk-hosts-and-host-instances.md)を参照してください。  
   
 ### <a name="to-create-the-host-that-hosts-the-bam-event-bus-service"></a>BAM イベント バス サービスをホストするホストを作成するには  
   

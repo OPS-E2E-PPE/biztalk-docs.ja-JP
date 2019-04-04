@@ -33,7 +33,7 @@ ms.locfileid: "37010779"
 5. 次にオーケストレーションを使用して、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] 、挿入操作を実行する、 **Purchase_Order**テーブル。 挿入操作の応答は、購買部門に電子メールとして送信されます。  
   
 ## <a name="about-the-database-objects-used-in-this-sample"></a>このサンプルで使用されるデータベース オブジェクトについて  
- このチュートリアルでは、サンプルに付属する SQL スクリプトによって作成されたデータベース オブジェクトを使用します。 スクリプトとサンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。 このチュートリアルで使用するデータベース オブジェクトは次のとおりです。  
+ このチュートリアルでは、サンプルに付属する SQL スクリプトによって作成されたデータベース オブジェクトを使用します。 スクリプトとサンプルの詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。 このチュートリアルで使用するデータベース オブジェクトは次のとおりです。  
   
 - **ADAPTER_SAMPLES**データベース。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "37010779"
   このサンプルで提供される SQL スクリプトを実行するときに、これらすべてのデータベース オブジェクトが作成されます。 チュートリアルを開始する前に、スクリプトを実行することを確認します。  
   
 ## <a name="sample-based-on-this-tutorial"></a>このチュートリアルに基づくサンプル  
- サンプルについては、 **Employee_PurchaseOrder**でも提供するは、このチュートリアルに基づいて、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
+ サンプルについては、 **Employee_PurchaseOrder**でも提供するは、このチュートリアルに基づいて、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
   
  アダプターを使用して BizTalk プロジェクトを作成する方法を理解するには、完全にチュートリアルを読み進めるし、参照としてサンプルを見ることをお勧めします。  
   

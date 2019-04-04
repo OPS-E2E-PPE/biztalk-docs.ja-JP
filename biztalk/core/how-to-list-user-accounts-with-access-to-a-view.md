@@ -26,7 +26,7 @@ ms.locfileid: "36981707"
 # <a name="how-to-list-user-accounts-with-access-to-a-view"></a>ビューへのアクセス権を持つユーザー アカウントを一覧表示する方法
 管理者を使用して、 **get アカウント**ビュー ロールの場合、指定されたビューへのアクセスを持つすべてのユーザー アカウントを意味するすべてのユーザー アカウントの一覧を取得する BAM 管理ユーティリティ コマンド。  
   
- BAM ビューを表示する方法については、次を参照してください。 [BAM ビューをリストする方法](../core/how-to-list-bam-views.md)します。  
+ BAM ビューを表示する方法については、[BAM ビューをリストする方法](../core/how-to-list-bam-views.md)を参照してください。  
   
 ### <a name="to-list-user-accounts-with-access-to-a-view"></a>ビューへのアクセス権を持つユーザー アカウントを一覧表示するには  
   
