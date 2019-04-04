@@ -19,77 +19,77 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/27/2018
 ms.locfileid: "37009907"
 ---
-# <a name="sendports-biztalk-server-sample"></a><span data-ttu-id="7873d-102">SendPorts (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="7873d-102">SendPorts (BizTalk Server Sample)</span></span>
-<span data-ttu-id="7873d-103">SendPorts サンプルは、列挙およびを使用して送信ポートを管理する方法を示します、 **Microsoft.BizTalk.ExplorerOM**管理クラス。</span><span class="sxs-lookup"><span data-stu-id="7873d-103">The SendPorts sample demonstrates how to enumerate and manage send ports by using the **Microsoft.BizTalk.ExplorerOM** administration classes.</span></span>  
+# <a name="sendports-biztalk-server-sample"></a><span data-ttu-id="f3e99-102">SendPorts (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="f3e99-102">SendPorts (BizTalk Server Sample)</span></span>
+<span data-ttu-id="f3e99-103">SendPorts サンプルは、列挙およびを使用して送信ポートを管理する方法を示します、 **Microsoft.BizTalk.ExplorerOM**管理クラス。</span><span class="sxs-lookup"><span data-stu-id="f3e99-103">The SendPorts sample demonstrates how to enumerate and manage send ports by using the **Microsoft.BizTalk.ExplorerOM** administration classes.</span></span>  
 
-## <a name="prerequisites"></a><span data-ttu-id="7873d-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="7873d-104">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="f3e99-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="f3e99-104">Prerequisites</span></span>  
 
-- <span data-ttu-id="7873d-105">このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。</span><span class="sxs-lookup"><span data-stu-id="7873d-105">You must have [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrative privileges to use the administrative objects in this sample.</span></span>  
+- <span data-ttu-id="f3e99-105">このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。</span><span class="sxs-lookup"><span data-stu-id="f3e99-105">You must have [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrative privileges to use the administrative objects in this sample.</span></span>  
 
-- <span data-ttu-id="7873d-106">Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。</span><span class="sxs-lookup"><span data-stu-id="7873d-106">The Windows PowerShell script requires the Windows PowerShell execution policy to allow script execution.</span></span> <span data-ttu-id="7873d-107">詳細については、次を参照してください。:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)します。</span><span class="sxs-lookup"><span data-stu-id="7873d-107">For more information see: [Examining the Execution Policy](http://go.microsoft.com/fwlink/?LinkId=128930).</span></span>  
+- <span data-ttu-id="f3e99-106">Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。</span><span class="sxs-lookup"><span data-stu-id="f3e99-106">The Windows PowerShell script requires the Windows PowerShell execution policy to allow script execution.</span></span> <span data-ttu-id="f3e99-107">詳細については、:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f3e99-107">For more information see: [Examining the Execution Policy](http://go.microsoft.com/fwlink/?LinkId=128930).</span></span>  
 
-## <a name="what-this-sample-does"></a><span data-ttu-id="7873d-108">このサンプルの処理</span><span class="sxs-lookup"><span data-stu-id="7873d-108">What This Sample Does</span></span>  
- <span data-ttu-id="7873d-109">このサンプルを使用して、 **BtsCatalogExplorer**と**SendPort**クラスを**Microsoft.BizTalk.ExplorerOM** での送信ポートの名前空間を管理するには[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。</span><span class="sxs-lookup"><span data-stu-id="7873d-109">This sample demonstrates using the **BtsCatalogExplorer** and **SendPort** classes from the **Microsoft.BizTalk.ExplorerOM** namespace to manage send ports in a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span> <span data-ttu-id="7873d-110">サンプルは Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] で作成されています。</span><span class="sxs-lookup"><span data-stu-id="7873d-110">The sample is written in Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)].</span></span> <span data-ttu-id="7873d-111">このトピックには、Windows PowerShell のスクリプト例も含まれています。</span><span class="sxs-lookup"><span data-stu-id="7873d-111">A Windows PowerShell example script is also included in this topic.</span></span> <span data-ttu-id="7873d-112">このサンプルは次の操作を示します。</span><span class="sxs-lookup"><span data-stu-id="7873d-112">The sample demonstrates the following operations:</span></span>  
+## <a name="what-this-sample-does"></a><span data-ttu-id="f3e99-108">このサンプルの処理</span><span class="sxs-lookup"><span data-stu-id="f3e99-108">What This Sample Does</span></span>  
+ <span data-ttu-id="f3e99-109">このサンプルを使用して、 **BtsCatalogExplorer**と**SendPort**クラスを**Microsoft.BizTalk.ExplorerOM** での送信ポートの名前空間を管理するには[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。</span><span class="sxs-lookup"><span data-stu-id="f3e99-109">This sample demonstrates using the **BtsCatalogExplorer** and **SendPort** classes from the **Microsoft.BizTalk.ExplorerOM** namespace to manage send ports in a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span> <span data-ttu-id="f3e99-110">サンプルは Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] で作成されています。</span><span class="sxs-lookup"><span data-stu-id="f3e99-110">The sample is written in Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)].</span></span> <span data-ttu-id="f3e99-111">このトピックには、Windows PowerShell のスクリプト例も含まれています。</span><span class="sxs-lookup"><span data-stu-id="f3e99-111">A Windows PowerShell example script is also included in this topic.</span></span> <span data-ttu-id="f3e99-112">このサンプルは次の操作を示します。</span><span class="sxs-lookup"><span data-stu-id="f3e99-112">The sample demonstrates the following operations:</span></span>  
 
-1. <span data-ttu-id="7873d-113">使用して、BizTalk 管理データベースに接続する、 **BtsCatalogExplorer**クラス。</span><span class="sxs-lookup"><span data-stu-id="7873d-113">Connecting to the BizTalk Management database by using the **BtsCatalogExplorer** class.</span></span>  
+1. <span data-ttu-id="f3e99-113">使用して、BizTalk 管理データベースに接続する、 **BtsCatalogExplorer**クラス。</span><span class="sxs-lookup"><span data-stu-id="f3e99-113">Connecting to the BizTalk Management database by using the **BtsCatalogExplorer** class.</span></span>  
 
-2. <span data-ttu-id="7873d-114">2 つの新しい送信ポートの作成は、myStaticOnewaySendPort1 および myDynamicTwowaySendPort1 という名前です。</span><span class="sxs-lookup"><span data-stu-id="7873d-114">Creating two new send ports named myStaticOnewaySendPort1 and myDynamicTwowaySendPort1.</span></span> <span data-ttu-id="7873d-115">myStaticOnewaySendPort1、その名前が示すように、静的な一方向送信ポートです。</span><span class="sxs-lookup"><span data-stu-id="7873d-115">myStaticOnewaySendPort1, as its name implies, is a static one-way send port.</span></span>  <span data-ttu-id="7873d-116">送信先 URL の例で、HTTP トランスポートを使用する作成 http://sample1 です。</span><span class="sxs-lookup"><span data-stu-id="7873d-116">It is created to use the HTTP transport with an example destination URL http://sample1.</span></span> <span data-ttu-id="7873d-117">myDynamicTwowaySendPort1 は、動的な双方向の送信ポートとして作成されます。</span><span class="sxs-lookup"><span data-stu-id="7873d-117">myDynamicTwowaySendPort1 is created as a dynamic two-way send port.</span></span>  
+2. <span data-ttu-id="f3e99-114">2 つの新しい送信ポートの作成は、myStaticOnewaySendPort1 および myDynamicTwowaySendPort1 という名前です。</span><span class="sxs-lookup"><span data-stu-id="f3e99-114">Creating two new send ports named myStaticOnewaySendPort1 and myDynamicTwowaySendPort1.</span></span> <span data-ttu-id="f3e99-115">myStaticOnewaySendPort1、その名前が示すように、静的な一方向送信ポートです。</span><span class="sxs-lookup"><span data-stu-id="f3e99-115">myStaticOnewaySendPort1, as its name implies, is a static one-way send port.</span></span>  <span data-ttu-id="f3e99-116">送信先 URL の例で、HTTP トランスポートを使用する作成 http://sample1 です。</span><span class="sxs-lookup"><span data-stu-id="f3e99-116">It is created to use the HTTP transport with an example destination URL http://sample1.</span></span> <span data-ttu-id="f3e99-117">myDynamicTwowaySendPort1 は、動的な双方向の送信ポートとして作成されます。</span><span class="sxs-lookup"><span data-stu-id="f3e99-117">myDynamicTwowaySendPort1 is created as a dynamic two-way send port.</span></span>  
 
-3. <span data-ttu-id="7873d-118">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境の送信ポートを列挙する。</span><span class="sxs-lookup"><span data-stu-id="7873d-118">Enumerating send ports in a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span> <span data-ttu-id="7873d-119">この列挙には、2 つの新しい送信ポートが含まれます。</span><span class="sxs-lookup"><span data-stu-id="7873d-119">This example enumeration should include the two new send ports.</span></span>  
+3. <span data-ttu-id="f3e99-118">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境の送信ポートを列挙する。</span><span class="sxs-lookup"><span data-stu-id="f3e99-118">Enumerating send ports in a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span> <span data-ttu-id="f3e99-119">この列挙には、2 つの新しい送信ポートが含まれます。</span><span class="sxs-lookup"><span data-stu-id="f3e99-119">This example enumeration should include the two new send ports.</span></span>  
 
-4. <span data-ttu-id="7873d-120">2 つの新しい送信ポートを削除する。</span><span class="sxs-lookup"><span data-stu-id="7873d-120">Deleting the two new send ports.</span></span>  
+4. <span data-ttu-id="f3e99-120">2 つの新しい送信ポートを削除する。</span><span class="sxs-lookup"><span data-stu-id="f3e99-120">Deleting the two new send ports.</span></span>  
 
-5. <span data-ttu-id="7873d-121">新しい送信ポートを構成する。</span><span class="sxs-lookup"><span data-stu-id="7873d-121">Configuring the new send ports.</span></span> <span data-ttu-id="7873d-122">サンプルで示す構成は、サンプル送信ポート myStaticOnewaySendPort1 に適用されます。</span><span class="sxs-lookup"><span data-stu-id="7873d-122">The configurations demonstrated by the sample are applied to the example send port named myStaticOnewaySendPort1.</span></span> <span data-ttu-id="7873d-123">サンプルで適用される構成内容は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="7873d-123">The configurations applied by the sample include the following:</span></span>  
+5. <span data-ttu-id="f3e99-121">新しい送信ポートを構成する。</span><span class="sxs-lookup"><span data-stu-id="f3e99-121">Configuring the new send ports.</span></span> <span data-ttu-id="f3e99-122">サンプルで示す構成は、サンプル送信ポート myStaticOnewaySendPort1 に適用されます。</span><span class="sxs-lookup"><span data-stu-id="f3e99-122">The configurations demonstrated by the sample are applied to the example send port named myStaticOnewaySendPort1.</span></span> <span data-ttu-id="f3e99-123">サンプルで適用される構成内容は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="f3e99-123">The configurations applied by the sample include the following:</span></span>  
 
-   -   <span data-ttu-id="7873d-124">有効にすると、**ポート処理前に、の要求メッセージ**メッセージ本文を追跡するためのオプション。</span><span class="sxs-lookup"><span data-stu-id="7873d-124">Enabling the **Request message before port processing** option for tracking message bodies.</span></span>  
+   -   <span data-ttu-id="f3e99-124">有効にすると、**ポート処理前に、の要求メッセージ**メッセージ本文を追跡するためのオプション。</span><span class="sxs-lookup"><span data-stu-id="f3e99-124">Enabling the **Request message before port processing** option for tracking message bodies.</span></span>  
 
-   -   <span data-ttu-id="7873d-125">有効にすると、**ポート処理後の要求メッセージ**メッセージ本文を追跡するためのオプション。</span><span class="sxs-lookup"><span data-stu-id="7873d-125">Enabling the **Request message after port processing** option for tracking message bodies.</span></span>  
+   -   <span data-ttu-id="f3e99-125">有効にすると、**ポート処理後の要求メッセージ**メッセージ本文を追跡するためのオプション。</span><span class="sxs-lookup"><span data-stu-id="f3e99-125">Enabling the **Request message after port processing** option for tracking message bodies.</span></span>  
 
-   -   <span data-ttu-id="7873d-126">送信メッセージで使用する送信ポートの暗号化証明書を指定する。</span><span class="sxs-lookup"><span data-stu-id="7873d-126">Specifying an encryption certificate for the send port to use on outgoing messages.</span></span>  
+   -   <span data-ttu-id="f3e99-126">送信メッセージで使用する送信ポートの暗号化証明書を指定する。</span><span class="sxs-lookup"><span data-stu-id="f3e99-126">Specifying an encryption certificate for the send port to use on outgoing messages.</span></span>  
 
-   -   <span data-ttu-id="7873d-127">メッセージのセットに対する参加のフィルターを指定する。</span><span class="sxs-lookup"><span data-stu-id="7873d-127">Specifying a filter for enlistment against a set of messages.</span></span>  
+   -   <span data-ttu-id="f3e99-127">メッセージのセットに対する参加のフィルターを指定する。</span><span class="sxs-lookup"><span data-stu-id="f3e99-127">Specifying a filter for enlistment against a set of messages.</span></span>  
 
-   -   <span data-ttu-id="7873d-128">メッセージを変換するためのマップを追加する。</span><span class="sxs-lookup"><span data-stu-id="7873d-128">Adding a map to transform the messages.</span></span>  
+   -   <span data-ttu-id="f3e99-128">メッセージを変換するためのマップを追加する。</span><span class="sxs-lookup"><span data-stu-id="f3e99-128">Adding a map to transform the messages.</span></span>  
 
-6. <span data-ttu-id="7873d-129">2 つの新しい送信ポートの状態を変更する。</span><span class="sxs-lookup"><span data-stu-id="7873d-129">Changing send port status on the two new send ports.</span></span>  <span data-ttu-id="7873d-130">サンプルを実行すると、myStaticOnewaySendPort1 の次の状態が変更されます。</span><span class="sxs-lookup"><span data-stu-id="7873d-130">The execution of the sample will make the following status changes on the myStaticOnewaySendPort1:</span></span>  
+6. <span data-ttu-id="f3e99-129">2 つの新しい送信ポートの状態を変更する。</span><span class="sxs-lookup"><span data-stu-id="f3e99-129">Changing send port status on the two new send ports.</span></span>  <span data-ttu-id="f3e99-130">サンプルを実行すると、myStaticOnewaySendPort1 の次の状態が変更されます。</span><span class="sxs-lookup"><span data-stu-id="f3e99-130">The execution of the sample will make the following status changes on the myStaticOnewaySendPort1:</span></span>  
 
-   -   <span data-ttu-id="7873d-131">状態が "開始" に変更される。</span><span class="sxs-lookup"><span data-stu-id="7873d-131">Change the status to started.</span></span>  
+   -   <span data-ttu-id="f3e99-131">状態が "開始" に変更される。</span><span class="sxs-lookup"><span data-stu-id="f3e99-131">Change the status to started.</span></span>  
 
-   -   <span data-ttu-id="7873d-132">状態が "停止" に変更される。</span><span class="sxs-lookup"><span data-stu-id="7873d-132">Change the status to stopped.</span></span>  
+   -   <span data-ttu-id="f3e99-132">状態が "停止" に変更される。</span><span class="sxs-lookup"><span data-stu-id="f3e99-132">Change the status to stopped.</span></span>  
 
-   -   <span data-ttu-id="7873d-133">状態が "バインド済み" に変更される。</span><span class="sxs-lookup"><span data-stu-id="7873d-133">Change the status to bound.</span></span> <span data-ttu-id="7873d-134">"バインド済み" は、参加解除と同じです。</span><span class="sxs-lookup"><span data-stu-id="7873d-134">The bound status is the same as unenlisted.</span></span>  
+   -   <span data-ttu-id="f3e99-133">状態が "バインド済み" に変更される。</span><span class="sxs-lookup"><span data-stu-id="f3e99-133">Change the status to bound.</span></span> <span data-ttu-id="f3e99-134">"バインド済み" は、参加解除と同じです。</span><span class="sxs-lookup"><span data-stu-id="f3e99-134">The bound status is the same as unenlisted.</span></span>  
 
-## <a name="where-to-find-this-sample"></a><span data-ttu-id="7873d-135">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="7873d-135">Where To Find This Sample</span></span>  
- <span data-ttu-id="7873d-136">このサンプルは、SDK がある次の場所にあります。</span><span class="sxs-lookup"><span data-stu-id="7873d-136">The sample is located in the following SDK location:</span></span>  
+## <a name="where-to-find-this-sample"></a><span data-ttu-id="f3e99-135">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="f3e99-135">Where To Find This Sample</span></span>  
+ <span data-ttu-id="f3e99-136">このサンプルは、SDK がある次の場所にあります。</span><span class="sxs-lookup"><span data-stu-id="f3e99-136">The sample is located in the following SDK location:</span></span>  
 
- <span data-ttu-id="7873d-137">\<*パスのサンプル*\>\Admin\ExplorerOM\SendPorts</span><span class="sxs-lookup"><span data-stu-id="7873d-137">\<*Samples Path*\>\Admin\ExplorerOM\SendPorts</span></span>  
+ <span data-ttu-id="f3e99-137">\<*パスのサンプル*\>\Admin\ExplorerOM\SendPorts</span><span class="sxs-lookup"><span data-stu-id="f3e99-137">\<*Samples Path*\>\Admin\ExplorerOM\SendPorts</span></span>  
 
- <span data-ttu-id="7873d-138">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="7873d-138">The following table shows the files in this sample and describes their purpose.</span></span>  
+ <span data-ttu-id="f3e99-138">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="f3e99-138">The following table shows the files in this sample and describes their purpose.</span></span>  
 
 
-|                    <span data-ttu-id="7873d-139">ファイル</span><span class="sxs-lookup"><span data-stu-id="7873d-139">File(s)</span></span>                     |                                                 <span data-ttu-id="7873d-140">説明</span><span class="sxs-lookup"><span data-stu-id="7873d-140">Description</span></span>                                                  |
+|                    <span data-ttu-id="f3e99-139">ファイル</span><span class="sxs-lookup"><span data-stu-id="f3e99-139">File(s)</span></span>                     |                                                 <span data-ttu-id="f3e99-140">説明</span><span class="sxs-lookup"><span data-stu-id="f3e99-140">Description</span></span>                                                  |
 |------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-|                  <span data-ttu-id="7873d-141">SendPorts.cs</span><span class="sxs-lookup"><span data-stu-id="7873d-141">SendPorts.cs</span></span>                  | <span data-ttu-id="7873d-142">このサンプルに示されている操作の [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] ソース ファイル。</span><span class="sxs-lookup"><span data-stu-id="7873d-142">[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] source file for operations demonstrated in this sample.</span></span> |
-| <span data-ttu-id="7873d-143">SendPorts.sln、SendPorts.csproj、SendPorts.suo</span><span class="sxs-lookup"><span data-stu-id="7873d-143">SendPorts.sln, SendPorts.csproj, SendPorts.suo</span></span> |                                  <span data-ttu-id="7873d-144">このサンプルのソリューション ファイルとプロジェクト ファイル。</span><span class="sxs-lookup"><span data-stu-id="7873d-144">Solution and project files for the sample.</span></span>                                  |
+|                  <span data-ttu-id="f3e99-141">SendPorts.cs</span><span class="sxs-lookup"><span data-stu-id="f3e99-141">SendPorts.cs</span></span>                  | <span data-ttu-id="f3e99-142">このサンプルに示されている操作の [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] ソース ファイル。</span><span class="sxs-lookup"><span data-stu-id="f3e99-142">[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] source file for operations demonstrated in this sample.</span></span> |
+| <span data-ttu-id="f3e99-143">SendPorts.sln、SendPorts.csproj、SendPorts.suo</span><span class="sxs-lookup"><span data-stu-id="f3e99-143">SendPorts.sln, SendPorts.csproj, SendPorts.suo</span></span> |                                  <span data-ttu-id="f3e99-144">このサンプルのソリューション ファイルとプロジェクト ファイル。</span><span class="sxs-lookup"><span data-stu-id="f3e99-144">Solution and project files for the sample.</span></span>                                  |
 
-## <a name="building-and-running-this-sample"></a><span data-ttu-id="7873d-145">このサンプルのビルドおよび実行</span><span class="sxs-lookup"><span data-stu-id="7873d-145">Building and Running This Sample</span></span>  
+## <a name="building-and-running-this-sample"></a><span data-ttu-id="f3e99-145">このサンプルのビルドおよび実行</span><span class="sxs-lookup"><span data-stu-id="f3e99-145">Building and Running This Sample</span></span>  
 
-#### <a name="to-build-this-sample"></a><span data-ttu-id="7873d-146">このサンプルをビルドするには</span><span class="sxs-lookup"><span data-stu-id="7873d-146">To build this sample</span></span>  
+#### <a name="to-build-this-sample"></a><span data-ttu-id="f3e99-146">このサンプルをビルドするには</span><span class="sxs-lookup"><span data-stu-id="f3e99-146">To build this sample</span></span>  
 
-1. <span data-ttu-id="7873d-147">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル SendPorts.sln を開きます。</span><span class="sxs-lookup"><span data-stu-id="7873d-147">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file SendPorts.sln.</span></span>  
+1. <span data-ttu-id="f3e99-147">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル SendPorts.sln を開きます。</span><span class="sxs-lookup"><span data-stu-id="f3e99-147">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file SendPorts.sln.</span></span>  
 
-2. <span data-ttu-id="7873d-148">メイン メニューで、次のようにクリックします。**ビルド**、 をクリックし、**ソリューションのビルド**します。</span><span class="sxs-lookup"><span data-stu-id="7873d-148">On the main menu, click **Build**, and then click **Build Solution**.</span></span>  
+2. <span data-ttu-id="f3e99-148">メイン メニューで、次のようにクリックします。**ビルド**、 をクリックし、**ソリューションのビルド**します。</span><span class="sxs-lookup"><span data-stu-id="f3e99-148">On the main menu, click **Build**, and then click **Build Solution**.</span></span>  
 
-#### <a name="to-run-this-sample"></a><span data-ttu-id="7873d-149">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="7873d-149">To run this sample</span></span>  
+#### <a name="to-run-this-sample"></a><span data-ttu-id="f3e99-149">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="f3e99-149">To run this sample</span></span>  
 
-1.  <span data-ttu-id="7873d-150">コマンド ウィンドウを開き、次のフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="7873d-150">Open a command window and navigate to the following folder:</span></span>  
+1.  <span data-ttu-id="f3e99-150">コマンド ウィンドウを開き、次のフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="f3e99-150">Open a command window and navigate to the following folder:</span></span>  
 
-     <span data-ttu-id="7873d-151">\<*パスのサンプル*\>\Admin\ExplorerOM\SendPorts\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="7873d-151">\<*Samples Path*\>\Admin\ExplorerOM\SendPorts\bin\Debug</span></span>  
+     <span data-ttu-id="f3e99-151">\<*パスのサンプル*\>\Admin\ExplorerOM\SendPorts\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="f3e99-151">\<*Samples Path*\>\Admin\ExplorerOM\SendPorts\bin\Debug</span></span>  
 
-2.  <span data-ttu-id="7873d-152">SendPorts.exe ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="7873d-152">Run the file SendPorts.exe.</span></span>  
+2.  <span data-ttu-id="f3e99-152">SendPorts.exe ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="f3e99-152">Run the file SendPorts.exe.</span></span>  
 
-## <a name="windows-powershell-script-example"></a><span data-ttu-id="7873d-153">Windows PowerShell スクリプトの例</span><span class="sxs-lookup"><span data-stu-id="7873d-153">Windows PowerShell Script Example</span></span>  
- <span data-ttu-id="7873d-154">同じ機能を次の Windows PowerShell スクリプト フラグメントを使用することができます、 **ExplorerOM**クラス。</span><span class="sxs-lookup"><span data-stu-id="7873d-154">The following Windows PowerShell script fragment can be used to demonstrate the same features of the **ExplorerOM** classes:</span></span>  
+## <a name="windows-powershell-script-example"></a><span data-ttu-id="f3e99-153">Windows PowerShell スクリプトの例</span><span class="sxs-lookup"><span data-stu-id="f3e99-153">Windows PowerShell Script Example</span></span>  
+ <span data-ttu-id="f3e99-154">同じ機能を次の Windows PowerShell スクリプト フラグメントを使用することができます、 **ExplorerOM**クラス。</span><span class="sxs-lookup"><span data-stu-id="f3e99-154">The following Windows PowerShell script fragment can be used to demonstrate the same features of the **ExplorerOM** classes:</span></span>  
 
 ```  
 Function CreateSendPorts($Catalog)  
@@ -280,7 +280,7 @@ DeleteSendPorts $Catalog
 Write-Host  
 ```  
 
- <span data-ttu-id="7873d-155">次に、Windows PowerShell スクリプト サンプルの実行により想定される出力例を示します。</span><span class="sxs-lookup"><span data-stu-id="7873d-155">Here is example expected output from running the Windows PowerShell script sample.</span></span>  
+ <span data-ttu-id="f3e99-155">次に、Windows PowerShell スクリプト サンプルの実行により想定される出力例を示します。</span><span class="sxs-lookup"><span data-stu-id="f3e99-155">Here is example expected output from running the Windows PowerShell script sample.</span></span>  
 
 ```  
 PS C:\> & 'C:\SendPorts.ps1'  
@@ -340,5 +340,5 @@ Complete.
 DeleteSendPorts() completed.  
 ```  
 
-## <a name="see-also"></a><span data-ttu-id="7873d-156">参照</span><span class="sxs-lookup"><span data-stu-id="7873d-156">See Also</span></span>  
- [<span data-ttu-id="7873d-157">Admin-ExplorerOM (BizTalk Server Samples フォルダー)</span><span class="sxs-lookup"><span data-stu-id="7873d-157">Admin-ExplorerOM (BizTalk Server Samples Folder)</span></span>](../core/admin-explorerom-biztalk-server-samples-folder.md)
+## <a name="see-also"></a><span data-ttu-id="f3e99-156">参照</span><span class="sxs-lookup"><span data-stu-id="f3e99-156">See Also</span></span>  
+ [<span data-ttu-id="f3e99-157">Admin-ExplorerOM (BizTalk Server Samples フォルダー)</span><span class="sxs-lookup"><span data-stu-id="f3e99-157">Admin-ExplorerOM (BizTalk Server Samples Folder)</span></span>](../core/admin-explorerom-biztalk-server-samples-folder.md)

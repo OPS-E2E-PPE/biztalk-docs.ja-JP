@@ -22,8 +22,8 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/27/2018
 ms.locfileid: "37009891"
 ---
-# <a name="how-to-create-user-mappings"></a><span data-ttu-id="27923-102">ユーザー マッピングを作成する方法</span><span class="sxs-lookup"><span data-stu-id="27923-102">How to Create User Mappings</span></span>
-<span data-ttu-id="27923-103">ここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のユーザー マッピングを作成できます。</span><span class="sxs-lookup"><span data-stu-id="27923-103">Use this command to create one or more user mappings, as specified in the XML file.</span></span> <span data-ttu-id="27923-104">XML ファイルの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="27923-104">The following is an example XML file.</span></span>  
+# <a name="how-to-create-user-mappings"></a><span data-ttu-id="a0e12-102">ユーザー マッピングを作成する方法</span><span class="sxs-lookup"><span data-stu-id="a0e12-102">How to Create User Mappings</span></span>
+<span data-ttu-id="a0e12-103">ここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のユーザー マッピングを作成できます。</span><span class="sxs-lookup"><span data-stu-id="a0e12-103">Use this command to create one or more user mappings, as specified in the XML file.</span></span> <span data-ttu-id="a0e12-104">XML ファイルの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a0e12-104">The following is an example XML file.</span></span>  
   
 ```  
 <sso>  
@@ -43,36 +43,36 @@ ms.locfileid: "37009891"
   
 ```  
   
- <span data-ttu-id="27923-105">ユーザー アカウントが変更された場合は、このコマンドを使用して、新しいユーザー アカウントのマッピングを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="27923-105">If a user account is changed, you must use this command to create a mapping for the new user account.</span></span> <span data-ttu-id="27923-106">また、古いユーザー マッピングを削除する必要もあります。</span><span class="sxs-lookup"><span data-stu-id="27923-106">You should also remove the old user mapping.</span></span> <span data-ttu-id="27923-107">マッピングを削除する方法の詳細については、次を参照してください。[ユーザー マッピングを削除する方法](../core/how-to-delete-user-mappings.md)します。</span><span class="sxs-lookup"><span data-stu-id="27923-107">For more information about removing a mapping, see [How to Delete User Mappings](../core/how-to-delete-user-mappings.md).</span></span>  
+ <span data-ttu-id="a0e12-105">ユーザー アカウントが変更された場合は、このコマンドを使用して、新しいユーザー アカウントのマッピングを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a0e12-105">If a user account is changed, you must use this command to create a mapping for the new user account.</span></span> <span data-ttu-id="a0e12-106">また、古いユーザー マッピングを削除する必要もあります。</span><span class="sxs-lookup"><span data-stu-id="a0e12-106">You should also remove the old user mapping.</span></span> <span data-ttu-id="a0e12-107">マッピングを削除する方法の詳細については、[ユーザー マッピングを削除する方法](../core/how-to-delete-user-mappings.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a0e12-107">For more information about removing a mapping, see [How to Delete User Mappings](../core/how-to-delete-user-mappings.md).</span></span>  
   
- <span data-ttu-id="27923-108">作成したユーザー マッピングを SSO システムで使用するには、ユーザー マッピングを有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="27923-108">After you create a user mapping, you must enable it before you can use this mapping in the SSO system.</span></span> <span data-ttu-id="27923-109">詳細については、次を参照してください。[ユーザー マッピングを有効にする方法](../core/how-to-enable-a-user-mapping.md)します。</span><span class="sxs-lookup"><span data-stu-id="27923-109">For more information, see [How to Enable a User Mapping](../core/how-to-enable-a-user-mapping.md).</span></span>  
+ <span data-ttu-id="a0e12-108">作成したユーザー マッピングを SSO システムで使用するには、ユーザー マッピングを有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a0e12-108">After you create a user mapping, you must enable it before you can use this mapping in the SSO system.</span></span> <span data-ttu-id="a0e12-109">詳細については、[ユーザー マッピングを有効にする方法](../core/how-to-enable-a-user-mapping.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a0e12-109">For more information, see [How to Enable a User Mapping](../core/how-to-enable-a-user-mapping.md).</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="27923-110">ユーザー マッピングでは、ドメイン グループのみがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="27923-110">Only domain groups are supported for user mappings.</span></span>  
+>  <span data-ttu-id="a0e12-110">ユーザー マッピングでは、ドメイン グループのみがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="a0e12-110">Only domain groups are supported for user mappings.</span></span>  
   
-### <a name="to-create-user-mappings-using-the-administration-utility"></a><span data-ttu-id="27923-111">管理ユーティリティを使用してユーザー マッピングを作成するには</span><span class="sxs-lookup"><span data-stu-id="27923-111">To create user mappings using the administration utility</span></span>  
+### <a name="to-create-user-mappings-using-the-administration-utility"></a><span data-ttu-id="a0e12-111">管理ユーティリティを使用してユーザー マッピングを作成するには</span><span class="sxs-lookup"><span data-stu-id="a0e12-111">To create user mappings using the administration utility</span></span>  
   
-1. <span data-ttu-id="27923-112">**開始** メニューのをクリックして**実行**、し、入力**cmd**します。</span><span class="sxs-lookup"><span data-stu-id="27923-112">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
+1. <span data-ttu-id="a0e12-112">**開始** メニューのをクリックして**実行**、し、入力**cmd**します。</span><span class="sxs-lookup"><span data-stu-id="a0e12-112">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
   
-2. <span data-ttu-id="27923-113">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="27923-113">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="27923-114">既定のインストール ディレクトリは\<*ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="27923-114">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+2. <span data-ttu-id="a0e12-113">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="a0e12-113">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="a0e12-114">既定のインストール ディレクトリは\<*ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="a0e12-114">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="27923-115">型 \* \* ssomanage – createmappings *\<ファイル名をマッピング\>\*\*<em>ここで、*\<ファイル名をマッピング\></em>必要なユーザー マッピングを含むファイルの名前を指定します作成します。</span><span class="sxs-lookup"><span data-stu-id="27923-115">Type \*\*ssomanage –createmappings \*\<mappings file name\>\*\*<em>, where \*\<mappings file name\></em> is the name of file that contains the user mapping(s) you want to create.</span></span>  
-  
-   > [!NOTE]
-   >  <span data-ttu-id="27923-116">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="27923-116">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
-  
-### <a name="to-create-user-mappings-using-the-client-utility"></a><span data-ttu-id="27923-117">クライアント ユーティリティを使用してユーザー マッピングを作成するには</span><span class="sxs-lookup"><span data-stu-id="27923-117">To create user mappings using the client utility</span></span>  
-  
-1. <span data-ttu-id="27923-118">**開始** メニューのをクリックして**実行**、し、入力**cmd**します。</span><span class="sxs-lookup"><span data-stu-id="27923-118">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
-  
-2. <span data-ttu-id="27923-119">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="27923-119">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="27923-120">既定のインストール ディレクトリは\<*ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="27923-120">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
-  
-3. <span data-ttu-id="27923-121">型 \* \* ssoclient – setcredentials \*\<アプリケーション名\> \**<em>ここで、*\<アプリケーション名\></em>ユーザーがする関連アプリケーションの名前を指定しますマッピングを作成します。</span><span class="sxs-lookup"><span data-stu-id="27923-121">Type \*\*ssoclient –setcredentials \*\<application name \>\*\*<em>, where \*\<application name \></em> is the name of affiliate application that the user wants to create a mapping for.</span></span>  
+3. <span data-ttu-id="a0e12-115">型 \* \* ssomanage – createmappings *\<ファイル名をマッピング\>\*\*<em>ここで、*\<ファイル名をマッピング\></em>必要なユーザー マッピングを含むファイルの名前を指定します作成します。</span><span class="sxs-lookup"><span data-stu-id="a0e12-115">Type \*\*ssomanage –createmappings \*\<mappings file name\>\*\*<em>, where \*\<mappings file name\></em> is the name of file that contains the user mapping(s) you want to create.</span></span>  
   
    > [!NOTE]
-   >  <span data-ttu-id="27923-122">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="27923-122">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+   >  <span data-ttu-id="a0e12-116">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="a0e12-116">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="27923-123">参照</span><span class="sxs-lookup"><span data-stu-id="27923-123">See Also</span></span>  
- <span data-ttu-id="27923-124">[SSO マッピング](../core/sso-mappings.md) </span><span class="sxs-lookup"><span data-stu-id="27923-124">[SSO Mappings](../core/sso-mappings.md) </span></span>  
- <span data-ttu-id="27923-125">[関連アプリケーションの管理](../core/managing-affiliate-applications.md) </span><span class="sxs-lookup"><span data-stu-id="27923-125">[Managing Affiliate Applications](../core/managing-affiliate-applications.md) </span></span>  
- [<span data-ttu-id="27923-126">ユーザー マッピングの管理</span><span class="sxs-lookup"><span data-stu-id="27923-126">Managing User Mappings</span></span>](../core/managing-user-mappings.md)
+### <a name="to-create-user-mappings-using-the-client-utility"></a><span data-ttu-id="a0e12-117">クライアント ユーティリティを使用してユーザー マッピングを作成するには</span><span class="sxs-lookup"><span data-stu-id="a0e12-117">To create user mappings using the client utility</span></span>  
+  
+1. <span data-ttu-id="a0e12-118">**開始** メニューのをクリックして**実行**、し、入力**cmd**します。</span><span class="sxs-lookup"><span data-stu-id="a0e12-118">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
+  
+2. <span data-ttu-id="a0e12-119">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="a0e12-119">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="a0e12-120">既定のインストール ディレクトリは\<*ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="a0e12-120">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+  
+3. <span data-ttu-id="a0e12-121">型 \* \* ssoclient – setcredentials \*\<アプリケーション名\> \**<em>ここで、*\<アプリケーション名\></em>ユーザーがする関連アプリケーションの名前を指定しますマッピングを作成します。</span><span class="sxs-lookup"><span data-stu-id="a0e12-121">Type \*\*ssoclient –setcredentials \*\<application name \>\*\*<em>, where \*\<application name \></em> is the name of affiliate application that the user wants to create a mapping for.</span></span>  
+  
+   > [!NOTE]
+   >  <span data-ttu-id="a0e12-122">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="a0e12-122">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="a0e12-123">参照</span><span class="sxs-lookup"><span data-stu-id="a0e12-123">See Also</span></span>  
+ <span data-ttu-id="a0e12-124">[SSO マッピング](../core/sso-mappings.md) </span><span class="sxs-lookup"><span data-stu-id="a0e12-124">[SSO Mappings](../core/sso-mappings.md) </span></span>  
+ <span data-ttu-id="a0e12-125">[関連アプリケーションの管理](../core/managing-affiliate-applications.md) </span><span class="sxs-lookup"><span data-stu-id="a0e12-125">[Managing Affiliate Applications](../core/managing-affiliate-applications.md) </span></span>  
+ [<span data-ttu-id="a0e12-126">ユーザー マッピングの管理</span><span class="sxs-lookup"><span data-stu-id="a0e12-126">Managing User Mappings</span></span>](../core/managing-user-mappings.md)
