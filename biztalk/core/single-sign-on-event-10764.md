@@ -19,21 +19,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/27/2018
 ms.locfileid: "37005539"
 ---
-# <a name="single-sign-on-event-10764"></a><span data-ttu-id="5f705-102">シングル サインオン: イベント 10764</span><span class="sxs-lookup"><span data-stu-id="5f705-102">Single Sign-On: Event 10764</span></span>
-## <a name="details"></a><span data-ttu-id="5f705-103">詳細</span><span class="sxs-lookup"><span data-stu-id="5f705-103">Details</span></span>  
+# <a name="single-sign-on-event-10764"></a><span data-ttu-id="a34a3-102">シングル サインオン: イベント 10764</span><span class="sxs-lookup"><span data-stu-id="a34a3-102">Single Sign-On: Event 10764</span></span>
+## <a name="details"></a><span data-ttu-id="a34a3-103">詳細</span><span class="sxs-lookup"><span data-stu-id="a34a3-103">Details</span></span>  
   
 |                 |                                                            |
 |-----------------|------------------------------------------------------------|
-|  <span data-ttu-id="5f705-104">製品名</span><span class="sxs-lookup"><span data-stu-id="5f705-104">Product Name</span></span>   |                 <span data-ttu-id="5f705-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="5f705-105">Enterprise Single Sign-On</span></span>                  |
-| <span data-ttu-id="5f705-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="5f705-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
-|    <span data-ttu-id="5f705-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="5f705-107">Event ID</span></span>     |                           <span data-ttu-id="5f705-108">10764</span><span class="sxs-lookup"><span data-stu-id="5f705-108">10764</span></span>                            |
-|  <span data-ttu-id="5f705-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="5f705-109">Event Source</span></span>   |                           <span data-ttu-id="5f705-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="5f705-110">ENTSSO</span></span>                           |
-|    <span data-ttu-id="5f705-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="5f705-111">Component</span></span>    |                            <span data-ttu-id="5f705-112">なし</span><span class="sxs-lookup"><span data-stu-id="5f705-112">N/A</span></span>                             |
-|  <span data-ttu-id="5f705-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="5f705-113">Symbolic Name</span></span>  |                 <span data-ttu-id="5f705-114">ENTSSO_E_MAPPING_DISABLED</span><span class="sxs-lookup"><span data-stu-id="5f705-114">ENTSSO_E_MAPPING_DISABLED</span></span>                  |
-|  <span data-ttu-id="5f705-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="5f705-115">Message Text</span></span>   |                  <span data-ttu-id="5f705-116">マッピングが無効になっています。</span><span class="sxs-lookup"><span data-stu-id="5f705-116">The mapping is disabled.</span></span>                  |
+|  <span data-ttu-id="a34a3-104">製品名</span><span class="sxs-lookup"><span data-stu-id="a34a3-104">Product Name</span></span>   |                 <span data-ttu-id="a34a3-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="a34a3-105">Enterprise Single Sign-On</span></span>                  |
+| <span data-ttu-id="a34a3-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="a34a3-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    <span data-ttu-id="a34a3-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="a34a3-107">Event ID</span></span>     |                           <span data-ttu-id="a34a3-108">10764</span><span class="sxs-lookup"><span data-stu-id="a34a3-108">10764</span></span>                            |
+|  <span data-ttu-id="a34a3-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="a34a3-109">Event Source</span></span>   |                           <span data-ttu-id="a34a3-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="a34a3-110">ENTSSO</span></span>                           |
+|    <span data-ttu-id="a34a3-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="a34a3-111">Component</span></span>    |                            <span data-ttu-id="a34a3-112">なし</span><span class="sxs-lookup"><span data-stu-id="a34a3-112">N/A</span></span>                             |
+|  <span data-ttu-id="a34a3-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="a34a3-113">Symbolic Name</span></span>  |                 <span data-ttu-id="a34a3-114">ENTSSO_E_MAPPING_DISABLED</span><span class="sxs-lookup"><span data-stu-id="a34a3-114">ENTSSO_E_MAPPING_DISABLED</span></span>                  |
+|  <span data-ttu-id="a34a3-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="a34a3-115">Message Text</span></span>   |                  <span data-ttu-id="a34a3-116">マッピングが無効になっています。</span><span class="sxs-lookup"><span data-stu-id="a34a3-116">The mapping is disabled.</span></span>                  |
   
-## <a name="explanation"></a><span data-ttu-id="5f705-117">説明</span><span class="sxs-lookup"><span data-stu-id="5f705-117">Explanation</span></span>  
- <span data-ttu-id="5f705-118">マッピングが無効になっています。</span><span class="sxs-lookup"><span data-stu-id="5f705-118">The mapping is disabled.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="a34a3-117">説明</span><span class="sxs-lookup"><span data-stu-id="a34a3-117">Explanation</span></span>  
+ <span data-ttu-id="a34a3-118">マッピングが無効になっています。</span><span class="sxs-lookup"><span data-stu-id="a34a3-118">The mapping is disabled.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="5f705-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="5f705-119">User Action</span></span>  
- <span data-ttu-id="5f705-120">有効にして、マッピングを無効にするのには、次を参照してください。[ユーザー マッピングを管理する](../core/managing-user-mappings.md)します。</span><span class="sxs-lookup"><span data-stu-id="5f705-120">For information on enabling and disabling mappings, see [Managing User Mappings](../core/managing-user-mappings.md).</span></span>
+## <a name="user-action"></a><span data-ttu-id="a34a3-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="a34a3-119">User Action</span></span>  
+ <span data-ttu-id="a34a3-120">有効にして、マッピングを無効にするのには、[ユーザー マッピングを管理する](../core/managing-user-mappings.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a34a3-120">For information on enabling and disabling mappings, see [Managing User Mappings](../core/managing-user-mappings.md).</span></span>
