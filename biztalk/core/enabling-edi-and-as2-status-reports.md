@@ -22,7 +22,7 @@ ms.locfileid: "36978019"
 # <a name="enabling-edi-and-as2-status-reports"></a>EDI および AS2 状態レポートの有効化
 このトピックでの EDI および AS2 状態レポートを構成する方法を説明します、**グループの概要**のページ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
- 状態レポート追跡データは、以下の手順で選択するストレージのプロパティに従って、BizTalk 追跡データベース (BizTalkDTADb) に格納されます。 各アグリーメントの状態レポート機能を有効にするように [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成できます。 格納するデータ量に応じて、アクティブなストアからデータを定期的にアーカイブし、その後にアーカイブ ストアから適宜消去する必要があります。 BizTalkDTADb データベースの管理の詳細については、次を参照してください。[アーカイブおよび BizTalk 追跡データベースの削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)します。  
+ 状態レポート追跡データは、以下の手順で選択するストレージのプロパティに従って、BizTalk 追跡データベース (BizTalkDTADb) に格納されます。 各アグリーメントの状態レポート機能を有効にするように [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成できます。 格納するデータ量に応じて、アクティブなストアからデータを定期的にアーカイブし、その後にアーカイブ ストアから適宜消去する必要があります。 BizTalkDTADb データベースの管理の詳細については、[アーカイブおよび BizTalk 追跡データベースの削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)を参照してください。  
   
  状態レポートは次の 3 種類の方法で有効にできます。  
   
@@ -37,7 +37,7 @@ ms.locfileid: "36978019"
   
 ### <a name="to-enable-edi-status-reports-for-an-agreement"></a>アグリーメントの EDI 状態レポート機能を有効にするには  
   
-1. **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**コンソールで、をクリックして、**パーティ**ノードの下、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]と**BizTalk グループ**ノード。  
+1.  **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**コンソールで、をクリックして、**パーティ**ノードの下、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]と**BizTalk グループ**ノード。  
   
 2. **パーティとビジネス プロファイル**ウィンドウで、状態レポートを有効にする X12 または EDIFACT アグリーメントのパーティをクリックします。  
   

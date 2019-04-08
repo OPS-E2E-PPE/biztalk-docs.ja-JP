@@ -34,7 +34,7 @@ ms.locfileid: "37003187"
   
 - ある場合は、複数のリスナーを使用している SAP プログラム ID に同時に、SAP は無作為に選択各発信成果物 (RFC、IDOC、または tRFC) 用のリスナーを認識します。  
   
-  詳細については、次を参照してください。 [SAP システムとアダプター間のセキュリティ](../../adapters-and-accelerators/adapter-sap/security-between-the-sap-system-and-the-adapter.md)します。
+  詳細については、[SAP システムとアダプター間のセキュリティ](../../adapters-and-accelerators/adapter-sap/security-between-the-sap-system-and-the-adapter.md)を参照してください。
   
 ## <a name="security-best-practices-for-consuming-the-sap-adapter-with-biztalk-server"></a>BizTalk Server と SAP アダプターを使用するためのセキュリティのベスト プラクティス  
   
@@ -46,7 +46,7 @@ ms.locfileid: "37003187"
   
 - BizTalk Wcf-custom アダプターを構成するとき、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] 、受信場所での SAP システムのユーザー名のパスワード資格情報を入力します、**他**のタブ、 **にWCFカスタムトランスポートを構成します。**  ダイアログ ボックス。  
   
-  詳細については、次を参照してください。 [SAP アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md)します。
+  詳細については、[SAP アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md)を参照してください。
   
 ## <a name="security-best-practices-for-consuming-the-sap-adapter-with-programming-solutions"></a>プログラミング ソリューションで SAP アダプターを使用するためのセキュリティのベスト プラクティス  
   
@@ -60,7 +60,7 @@ ms.locfileid: "37003187"
   
 - 使用するアプリケーションの場合、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を別のサービスまたはクライアント、プロセス境界を越えて機密性の高いデータベースの情報を含む送信メッセージは、これらのメッセージは、適切なデータの提供に適用されるセキュリティ対策のための十分なであることを確認環境内で保護します。  
   
-  詳細については、次を参照してください。 [SAP アダプターを使用したプログラミングをセキュリティで保護された](../../adapters-and-accelerators/adapter-sap/secure-programming-with-the-sap-adapter.md)します。  
+  詳細については、[SAP アダプターを使用したプログラミングをセキュリティで保護された](../../adapters-and-accelerators/adapter-sap/secure-programming-with-the-sap-adapter.md)を参照してください。  
   
 ## <a name="security-best-practices-for-hosting-the-sap-adapter-in-iis"></a>IIS での SAP アダプターをホストするためのセキュリティのベスト プラクティス  
   
@@ -87,7 +87,7 @@ ms.locfileid: "37003187"
   
 - 場合[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]メッセージ ログが有効になっていると`logMessagesAtServiceLevel`は`true`、アダプター クライアントの間で交換されるメッセージのメッセージ ヘッダー (ただし、メッセージ本文ではありません)、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]ログに記録されます。 メッセージのアクションがメッセージ ヘッダーにあるため、操作で、クライアントが呼び出すことが表示されます、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 場合`logEntireMessage`も`true`、メッセージ本文がログに記録されます。 データベースの機密情報を表示このことができます。  
   
-   診断トレースを有効にすると、セキュリティを向上させる詳細については、次を参照してください。[セキュリティに関する注意事項とトレース用の役立つヒント](https://msdn.microsoft.com/library/ms733053.aspx)します。 メッセージのログ記録を有効にすると、セキュリティを向上させる詳細については、次を参照してください。[メッセージ ログのセキュリティ関連事項](https://msdn.microsoft.com/library/ms730318.aspx)します。  
+   診断トレースを有効にすると、セキュリティを向上させる詳細については、[セキュリティに関する注意事項とトレース用の役立つヒント](https://msdn.microsoft.com/library/ms733053.aspx)を参照してください。 メッセージのログ記録を有効にすると、セキュリティを向上させる詳細については、[メッセージ ログのセキュリティ関連事項](https://msdn.microsoft.com/library/ms730318.aspx)を参照してください。  
   
 ## <a name="see-also"></a>参照  
 [SAP アプリケーションをセキュリティで保護する](../../adapters-and-accelerators/adapter-sap/secure-your-sap-applications.md)   

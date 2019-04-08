@@ -65,7 +65,7 @@ ms.locfileid: "36999771"
   
 - インポートおよびエクスポート操作を介してアクセスできる**BTSTask.exe**コマンド:`ExportSettings`と `ImportSettings`  
   
-  インポート/エクスポートの BTSTask.exe コマンドライン ユーティリティを使用する方法の詳細については、次を参照してください。[インポートまたはエクスポート BizTalk の設定を使用して BTSTask](how-to-import-biztalk-settings-using-btstask.md)します。  
+  インポート/エクスポートの BTSTask.exe コマンドライン ユーティリティを使用する方法の詳細については、[インポートまたはエクスポート BizTalk の設定を使用して BTSTask](how-to-import-biztalk-settings-using-btstask.md)を参照してください。  
   
 ## <a name="next"></a>Next  
   

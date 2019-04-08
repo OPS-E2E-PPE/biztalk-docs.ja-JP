@@ -53,6 +53,6 @@ ms.locfileid: "37007515"
 |\SQL\Processor(_Total)\\プロセッサ時間の割合|97.7%|98.4%|99.9%|  
 |\SQL server: SQL Statistics\Batch 要求/秒|97.1%|83.3%|71.2%|  
   
- ディスク I/O パフォーマンスを評価する方法の詳細については、次を参照してください。、**ディスク I/O パフォーマンスを測定する**」の「[チェックリスト: Hyper-v のパフォーマンスを測定する](../technical-guides/checklist-measuring-performance-on-hyper-v.md)します。  
+ ディスク I/O パフォーマンスを評価する方法の詳細については、、**ディスク I/O パフォーマンスを測定する**」の「[チェックリスト: Hyper-v のパフォーマンスを測定する](../technical-guides/checklist-measuring-performance-on-hyper-v.md)を参照してください。  
   
- SQL Server 2008 を HYPER-V 環境で実行する場合のベスト プラクティスの詳細については、「を実行している SQL Server 2008 in a HYPER-V 環境 – ベスト プラクティスとパフォーマンスに関する推奨事項」ダウンロードできるホワイト ペーパーを参照してください[ 。http://go.microsoft.com/fwlink/?LinkId=144622](http://go.microsoft.com/fwlink/?LinkId=144622).
+ SQL Server 2008 を HYPER-V 環境で実行する場合のベスト プラクティスの詳細については、「を実行している SQL Server 2008 in a HYPER-V 環境 – ベスト プラクティスとパフォーマンスに関する推奨事項」ダウンロードできるホワイト ペーパーを参照してください[ 。 http://go.microsoft.com/fwlink/?LinkId=144622](http://go.microsoft.com/fwlink/?LinkId=144622).

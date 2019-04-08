@@ -51,14 +51,14 @@ ms.locfileid: "37013019"
 ### <a name="ordered-delivery-for-custom-adapters"></a>カスタム アダプターでの順次配送  
  カスタムの受信アダプターでは、特別に考慮しなければならない事柄があります。 順次配送をサポートするカスタム アダプターは、次のことを実行する必要があります。  
   
-- カスタムの受信メッセージのバッチを送信した後にアダプターが待機する必要があります、 **BatchComplete**次のバッチを送信する前に、BizTalk Server からのコールバック。 詳細については、次を参照してください。 [Batch-Supported の受信アダプター用のインターフェイス](../core/interfaces-for-a-batch-supported-receive-adapter.md)します。  
+- カスタムの受信メッセージのバッチを送信した後にアダプターが待機する必要があります、 **BatchComplete**次のバッチを送信する前に、BizTalk Server からのコールバック。 詳細については、[Batch-Supported の受信アダプター用のインターフェイス](../core/interfaces-for-a-batch-supported-receive-adapter.md)を参照してください。  
   
 - メッセージの処理がパイプラインで失敗した場合、そのメッセージを保留 (できれば再開不可に) する必要があります。 使用して、 **BTS します。SuspendAsNonResumable**メッセージ コンテキスト プロパティ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]にメッセージを適切にフラグを設定します。  
   
 > [!NOTE]
 >  保留したメッセージが後で再開されると、メッセージの順序が破綻してしまいます。 このような事態を避けるためには、失敗したメッセージを再開不可として保留します。  
   
- カスタム アダプター作成の詳細については、次を参照してください。[カスタム アダプターの開発](../core/developing-custom-adapters.md)します。  
+ カスタム アダプター作成の詳細については、[カスタム アダプターの開発](../core/developing-custom-adapters.md)を参照してください。  
   
 ## <a name="conditions-for-end-to-end-ordered-message-processing"></a>エンド ツー エンドの順次メッセージ処理を実現するための条件  
  エンド ツー エンドの順次配送を実現するには、次の条件を満たす必要があります。  

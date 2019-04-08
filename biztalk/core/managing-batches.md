@@ -30,12 +30,12 @@ ms.locfileid: "37021529"
   
   これらの制御は単一のバッチ構成に対して実行されます。  
   
-  キーを押すときに BizTalk がアクション、**開始**ボタンによって異なります、**フィルター**条件、**リリース**条件、および**アクティベーション**範囲の設定、**バッチ構成**ページ。 フィルター条件によって、バッチ処理の対象となるメッセージが決まります。 バッチがリリースされたときに、リリース条件を決定します。 アクティベーションの範囲のプロパティによって、バッチ処理オーケストレーションのアクティブなインスタンスがバッチ処理要素を収集するかどうかが決まります。 これらの設定の詳細については、次を参照してください。[送信バッチの構成](../core/configuring-an-outgoing-batch.md)します。  
+  キーを押すときに BizTalk がアクション、**開始**ボタンによって異なります、**フィルター**条件、**リリース**条件、および**アクティベーション**範囲の設定、**バッチ構成**ページ。 フィルター条件によって、バッチ処理の対象となるメッセージが決まります。 バッチがリリースされたときに、リリース条件を決定します。 アクティベーションの範囲のプロパティによって、バッチ処理オーケストレーションのアクティブなインスタンスがバッチ処理要素を収集するかどうかが決まります。 これらの設定の詳細については、[送信バッチの構成](../core/configuring-an-outgoing-batch.md)を参照してください。  
 
 このトピックでは、開始、停止、上書き、およびバッチを削除する方法を示します。  
 
 > [!NOTE]
->  バッチを構成する方法の詳細については、次を参照してください。[構成 X12 バッチ処理](../core/configuring-batching-x12.md)または[EDIFACT バッチ処理の構成](../core/configuring-batching-edifact.md)します。 
+>  バッチを構成する方法の詳細については、[構成 X12 バッチ処理](../core/configuring-batching-x12.md)または[EDIFACT バッチ処理の構成](../core/configuring-batching-edifact.md)を参照してください。 
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
@@ -78,7 +78,7 @@ ms.locfileid: "37021529"
 
 ## <a name="delete-batches"></a>バッチを削除します。  
   
-1. **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**、**パーティ**します。  
+1.  **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**、**パーティ**します。  
   
 2. **パーティとビジネス プロファイル**ページの**契約**セクションで、削除するバッチの構成とのアグリーメントを右クリックします。  
   
