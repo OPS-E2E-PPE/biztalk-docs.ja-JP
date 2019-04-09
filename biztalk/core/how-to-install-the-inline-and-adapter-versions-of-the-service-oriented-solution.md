@@ -546,7 +546,7 @@ ms.locfileid: "37019543"
    >   
    >  SSO 関連アプリケーションのさまざまなグループを使用する場合は、Active Directory で (任意の名前) を持つ Windows グループを作成し、変更する必要があります、 **appAdminAccount**と**上記の appUserAccount**PendTransAffApp.xml 内のノード。 これを行う場合は、値を設定する必要があります**groupApp**属性の**フラグ**を"yes"のノード。  
    >   
-   >  SSO 関連アプリケーションの詳細については、次を参照してください。 [SSO 関連アプリケーション](../core/sso-affiliate-applications.md)します。  
+   >  SSO 関連アプリケーションの詳細については、[SSO 関連アプリケーション](../core/sso-affiliate-applications.md)を参照してください。  
 
 3. コマンド プロンプトで、メモ帳を使用して PendTransUserMap.xml ファイルを開き、次のように編集します。  
 
@@ -772,7 +772,7 @@ ms.locfileid: "37019543"
 
     -   `startAll.vbs`  
 
-2.  サービス指向ソリューションを実行します。 ソリューションの実行の詳細については、次を参照してください。[サービス指向ソリューションを実行する方法](../core/how-to-run-the-service-oriented-solution.md)します。  
+2.  サービス指向ソリューションを実行します。 ソリューションの実行の詳細については、[サービス指向ソリューションを実行する方法](../core/how-to-run-the-service-oriented-solution.md)を参照してください。  
 
 ## <a name="next-steps"></a>次の手順  
  サービス指向ソリューションのインラインおよびアダプター バージョンをテストする[サービス指向ソリューションを実行する方法](../core/how-to-run-the-service-oriented-solution.md)します。  

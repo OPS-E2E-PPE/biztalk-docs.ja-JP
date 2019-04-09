@@ -55,7 +55,7 @@ ms.locfileid: "36966131"
   
 - **ビュー**: スキーマ内のすべてのビューの一覧。 Insert、Select、Update、表示するビューを選択し、操作を削除します。  
   
-  別に、この、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]も公開、 **SQLEXECUTE**アダプター クライアントが Oracle データベースで任意の汎用的なデータ操作言語 (DML) またはストアド プロシージャを実行できるように、送信操作。 SQLEXECUTE 操作は、ルート ノード (/) を選択するときに使用できます。 SQLEXECUTE の出力はデータ リーダー (汎用レコードの配列として出力) の配列であることに注意してください。 その結果、out パラメーターの任意の単純は表示されません SQLEXECUTE 操作を使用しています。 操作の詳細については、次を参照してください。 [Oracle データベースで SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/sqlexecute-operation-in-oracle-database.md)します。  
+  別に、この、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]も公開、 **SQLEXECUTE**アダプター クライアントが Oracle データベースで任意の汎用的なデータ操作言語 (DML) またはストアド プロシージャを実行できるように、送信操作。 SQLEXECUTE 操作は、ルート ノード (/) を選択するときに使用できます。 SQLEXECUTE の出力はデータ リーダー (汎用レコードの配列として出力) の配列であることに注意してください。 その結果、out パラメーターの任意の単純は表示されません SQLEXECUTE 操作を使用しています。 操作の詳細については、[Oracle データベースで SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/sqlexecute-operation-in-oracle-database.md)を参照してください。  
   
   **受信操作**  
   
@@ -69,7 +69,7 @@ ms.locfileid: "36966131"
   
   また、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]も公開、 **POLLINGSTMT**と**通知**受信操作。 POLLINGSTMT 操作には、アダプターによってサポートされているメカニズムのポーリング クエリに基づく Oracle データベースからの受信データを取得するアダプターのクライアントが使用できます。 通知操作により、SELECT ステートメントをデータベースに対して、通知クエリとして登録するクライアントはアダプターとアダプター クライアントとしてを使用して、SELECT ステートメントの変更の結果セットは、データベースが、通知を送信します。 POLLINGSTMT および通知の操作は、ルート ノード (/) を選択するときに使用可能です。 操作に関する詳細については、次を参照してください[ポーリングの受信に基づいたデータ変更メッセージのサポート](../../adapters-and-accelerators/adapter-oracle-database/support-for-receiving-polling-based-data-changed-messages-in-oracle-database.md).md) と[受信チェンジャー通知を使用してデータベース、Oracle Database アダプターに関する考慮事項。](../../adapters-and-accelerators/adapter-oracle-database/before-you-receive-database-change-notifications-using-the-oracle-db-adapter.md).  
   
-  メタデータの分類方法の詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md)します。  
+  メタデータの分類方法の詳細については、[メタデータ ノード Id](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md)を参照してください。  
   
 ## <a name="searching-metadata"></a>メタデータの検索  
  [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]、LIKE 演算子と互換性がある Oracle 検索式を使用して Oracle データベースで検索クエリを実行することができます。 アダプター クライアントが「EMP %」など、検索式を使用するなど、以降では、EMP テーブルを取得します。 アダプターは、SQL クエリを次に、これを変換します。  

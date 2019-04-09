@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37005811"
 ---
 # <a name="build-and-test-the-adapter-project"></a>アダプター プロジェクトのビルドおよびテスト
-AdapterManagement プロジェクトに対して行われたすべての変更をテストするには、プロジェクトをリビルドします。 正常にビルドした後で、アダプター メタデータの追加ウィザードを実行して、内部および外部の XSD ファイルのすべてが AdapterManagement プロジェクトに確実に追加されるようにします。 アダプター メタデータの追加ウィザードの使用方法の詳細については、次を参照してください。[を BizTalk プロジェクトにアダプター メタデータの追加方法](../core/how-to-add-adapter-metadata-to-a-biztalk-project.md)します。  
+AdapterManagement プロジェクトに対して行われたすべての変更をテストするには、プロジェクトをリビルドします。 正常にビルドした後で、アダプター メタデータの追加ウィザードを実行して、内部および外部の XSD ファイルのすべてが AdapterManagement プロジェクトに確実に追加されるようにします。 アダプター メタデータの追加ウィザードの使用方法の詳細については、[を BizTalk プロジェクトにアダプター メタデータの追加方法](../core/how-to-add-adapter-metadata-to-a-biztalk-project.md)を参照してください。  
 
  構成スキーマに対して行われた変更をテストするには、XSD ファイルによって生成された各プロパティ ページを開いて、それらのページが正しいデータを要求し、受け入れるようにします。 これは、送信ポートを構成、受信場所、送信ハンドラー、および受信ハンドラー、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール<strong>します。</strong>  
 

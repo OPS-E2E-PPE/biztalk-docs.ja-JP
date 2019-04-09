@@ -42,7 +42,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 - **SOAP メソッドの呼び出しで資格情報を送信する**: Web サービス クライアントが SOAP メソッドの呼び出しで資格情報を送信していることを確認します。 既定では、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] の IIS 7.0 では Windows 認証が必要です。 Internet Explorer を使用して Web サービスをテストするときは、現在ログオンしているユーザーの資格情報が自動的に送信されます。このため、Web サービスは、Internet Explorer からは機能していても、別のクライアントからは機能していない可能性があります。 Web サービス クライアントが SOAP メソッドの呼び出しに資格情報を追加しない場合、認証の失敗によって SOAP 例外が発生します。 SOAP メソッドの資格情報の送信の詳細については、呼び出しで使用可能なサンプル コードを参照してください。[新しい System.Net クラスを使用して HTTP クライアントを作成する方法](http://support.microsoft.com/kb/303436)します。  
   
-- **Web サービスの呼び出しエラーのトラブルシューティング**: Web サービスを呼び出すときにエラーが発生した場合、アプリケーション ログを確認するかメッセージを BizTalk Server 管理イベントとサービス インスタンスの追跡**グループ ハブ**ページ。 エラーの考えられる原因の詳細については、次を参照してください。 [BizTalk Server の監視](../core/monitoring-biztalk-server.md)と[グループ ハブ ページを使用して](../core/using-the-group-hub-page.md)します。  
+- **Web サービスの呼び出しエラーのトラブルシューティング**: Web サービスを呼び出すときにエラーが発生した場合、アプリケーション ログを確認するかメッセージを BizTalk Server 管理イベントとサービス インスタンスの追跡**グループ ハブ**ページ。 エラーの考えられる原因の詳細については、[BizTalk Server の監視](../core/monitoring-biztalk-server.md)と[グループ ハブ ページを使用して](../core/using-the-group-hub-page.md)を参照してください。  
   
 - **デバッグ情報の収集**: 詳細なデバッグ情報を取得するトピックに記載されている手順に従います[公開 Web サービスのデバッグ](../core/debugging-published-web-services.md)上記の手順に従っても問題が解決しない場合。  
   
