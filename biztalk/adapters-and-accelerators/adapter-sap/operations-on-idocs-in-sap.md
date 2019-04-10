@@ -133,7 +133,7 @@ Segment header (DOCNUM is one of the fields here)  |  Segment data
   
  別のバインド プロパティ**PadReceivedIdocsWithSpaces**受信した IDOC を空白で埋めるときに省略可能なフィールドの受信に必要な形式は"String"です。 これにより、アダプターの以前のバージョンを使用して受信した IDOC データ形式との互換性ができます。  
   
- バインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
+ バインド プロパティの詳細については、[mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
   
  詳細については。  
   

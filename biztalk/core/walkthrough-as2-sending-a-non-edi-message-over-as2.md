@@ -29,7 +29,7 @@ ms.locfileid: "37002467"
   
 - チュートリアルを実行するコンピューターには、インターネット インフォメーション サービス (IIS) 7 がインストールされている必要があります。  
   
-- チュートリアルを実行するコンピューターに 64 ビット版の Windows がインストールされている場合は、BizTalk ホストが 32 ビットのみとマークされていることを確認する必要があります。 IIS の [アプリケーション プールの 32 ビット アプリケーション設定を有効にする] を True に設定する必要があります。 詳細については、次を参照してください。[チュートリアル 3: AS2 チュートリアル](../core/tutorial-3-as2-tutorial.md)します。  
+- チュートリアルを実行するコンピューターに 64 ビット版の Windows がインストールされている場合は、BizTalk ホストが 32 ビットのみとマークされていることを確認する必要があります。 IIS の [アプリケーション プールの 32 ビット アプリケーション設定を有効にする] を True に設定する必要があります。 詳細については、[チュートリアル 3: AS2 チュートリアル](../core/tutorial-3-as2-tutorial.md)を参照してください。  
   
 ## <a name="how-the-solution-sends-a-non-edias2-message-and-returns-a-synchronous-mdn"></a>ソリューションが非 EDI/AS2 メッセージを送信して同期 MDN を返す方法  
  このソリューションは次の処理を実行します。  
@@ -73,7 +73,7 @@ ms.locfileid: "37002467"
   
 -   状態レポートが有効になっていません。  
   
--   このソリューションは、否認不可データベースに署名、圧縮、暗号化、およびメッセージ ストレージを構成しません。 これらのプロパティを構成する手順については、次を参照してください。 [AS2 プロパティを設定する](../core/configuring-as2-properties.md)します。  
+-   このソリューションは、否認不可データベースに署名、圧縮、暗号化、およびメッセージ ストレージを構成しません。 これらのプロパティを構成する手順については、[AS2 プロパティを設定する](../core/configuring-as2-properties.md)を参照してください。  
   
 ## <a name="configuring-and-testing-the-walkthrough"></a>チュートリアルの構成とテスト  
  このソリューションに必要な手順は以下のとおりです。  
@@ -118,7 +118,7 @@ ms.locfileid: "37002467"
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk プロジェクトを作成するか、開きます。  
   
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
   
 2. プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の**します。 XML ファイルを使用してソリューションをテストするには、XML テスト メッセージ用の XSD スキーマを含むローカル フォルダーに移動し、XSD ファイルを選択します。 **[追加]** をクリックします。  
   
@@ -222,7 +222,7 @@ ms.locfileid: "37002467"
 1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックし、**送信ポート**ノードの下、 **BizTalk アプリケーション 1**に**新規**をクリックして**静的な送信請求-応答送信ポート**します。  
   
    > [!NOTE]
-   >  BizTalk アプリケーション 1 を使用する場合は、BizTalk EDI アプリケーションのアイテムを使用できるようにするために、BizTalk EDI アプリケーションへの参照を BizTalk アプリケーション 1 に追加する必要があります。 詳細については、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
+   >  BizTalk アプリケーション 1 を使用する場合は、BizTalk EDI アプリケーションのアイテムを使用できるようにするために、BizTalk EDI アプリケーションへの参照を BizTalk アプリケーション 1 に追加する必要があります。 詳細については、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
   
 2. **送信ポートのプロパティ**ダイアログ ボックスで、送信ポートの名前として**SendToFab_RecvMDN**します。  
   

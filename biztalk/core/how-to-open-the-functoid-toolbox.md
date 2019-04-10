@@ -35,7 +35,7 @@ ms.locfileid: "36974555"
   > [!IMPORTANT]
   >  ツールボックスの既定設定を変更した場合に、ツールボックスに一部または全部の Functoid が表示されないことがあります。 次に、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、 をクリックして**ツール** メニューをクリック **[ツールボックス アイテムの**します。 移動する ダイアログ ボックスで、 **BizTalk マッパー Functoid**タブ。すべての functoid が選択されていると、クリックを確認します。 **OK**します。  
   > 
-  >  まだすべての functoid が見当たらない場合は、次を参照してください。 [BizTalk Server ツールのトラブルシューティング](../core/troubleshooting-biztalk-server-tools.md)します。  
+  >  まだすべての functoid が見当たらない場合は、[BizTalk Server ツールのトラブルシューティング](../core/troubleshooting-biztalk-server-tools.md)を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [Functoid を使用した複雑なマッピングの作成](../core/using-functoids-to-create-more-complex-mappings.md)

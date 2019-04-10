@@ -91,7 +91,7 @@ ms.locfileid: "36979259"
 -   最初に受信したインターチェンジ、または送信されたバッチ インターチェンジへの応答として、技術確認または機能確認は返されません。  
 
     > [!NOTE]
-    >  EDI 受信確認の生成方法の詳細については、次を参照してください。[チュートリアル (X12): EDI インターチェンジの受信と送信、受信確認を返す](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)します。  
+    >  EDI 受信確認の生成方法の詳細については、[チュートリアル (X12): EDI インターチェンジの受信と送信、受信確認を返す](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)を参照してください。  
 
 -   このソリューションでは、一方向受信ポートと静的な一方向送信ポート。 これらのポートは、FILE トランスポートの種類で構成されます。  
 
@@ -119,7 +119,7 @@ ms.locfileid: "36979259"
 - バッチ EDI インターチェンジを受信場所に関連付けられているローカル フォルダーにドロップします。 次に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が受信バッチの個別のインターチェンジ (バッチを分割する場合) または保存された 1 つのバッチ インターチェンジ (バッチを保存する場合) を、送信ポートに関連付けられているフォルダーにドロップしたことを確認します。  
 
   > [!NOTE]
-  >  バッチ インターチェンジの送信チュートリアルの手順を実行した場合、そのソリューションの出力をこのソリューションの入力として使用できます。 そのソリューションからの出力は、2 つの 850 メッセージのバッチです。 詳細については、次を参照してください。[チュートリアル (X12): バッチ EDI インターチェンジの送信](../core/walkthrough-x12-sending-batched-edi-interchanges.md)します。  
+  >  バッチ インターチェンジの送信チュートリアルの手順を実行した場合、そのソリューションの出力をこのソリューションの入力として使用できます。 そのソリューションからの出力は、2 つの 850 メッセージのバッチです。 詳細については、[チュートリアル (X12): バッチ EDI インターチェンジの送信](../core/walkthrough-x12-sending-batched-edi-interchanges.md)を参照してください。  
 
   ここでは、チュートリアルを構成する手順について説明します。  
 
@@ -128,7 +128,7 @@ ms.locfileid: "36979259"
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk プロジェクトを作成するか、開きます。  
 
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
 
 2. プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の**します。 移動**\<ドライブ\>: BizTalk Server 2009\XSD_Schema\EDI\X12\00401 \Program Files\Microsoft**、テスト メッセージに対応するスキーマをダブルクリックします。  
 

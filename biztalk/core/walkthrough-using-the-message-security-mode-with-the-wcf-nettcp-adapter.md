@@ -22,7 +22,7 @@ ms.locfileid: "36990619"
 # <a name="walkthrough-using-the-message-security-mode-with-the-wcf-nettcp-adapter"></a>チュートリアル: Wcf-nettcp アダプターを使用したメッセージ セキュリティ モードを使用します。
 
 > [!NOTE]
->  アダプターの詳細については、次を参照してください。 [BizTalk Server のアダプター](../core/adapters-in-biztalk-server.md)します。  
+>  アダプターの詳細については、[BizTalk Server のアダプター](../core/adapters-in-biztalk-server.md)を参照してください。  
 
 ## <a name="introduction"></a>概要
 

@@ -50,7 +50,7 @@ ms.locfileid: "36973219"
 9. 送信パイプライン、バッチ インターチェンジのエンベロープに追加のプロパティを適用し、インターチェンジを送信先のパーティに送信**パーティ B**します。  
 
     > [!NOTE]
-    >  詳細については、次を参照してください。[バッチ EDI インターチェンジをアセンブル](../core/assembling-a-batched-edi-interchange.md)します。  
+    >  詳細については、[バッチ EDI インターチェンジをアセンブル](../core/assembling-a-batched-edi-interchange.md)を参照してください。  
 
    次の図は、このソリューションのアーキテクチャを示します。  
 
@@ -67,7 +67,7 @@ ms.locfileid: "36973219"
 -   最初に受信したインターチェンジ、または送信されたバッチ インターチェンジへの応答として、技術確認または機能確認は返されません。  
 
     > [!NOTE]
-    >  EDI 受信確認の生成方法の詳細については、次を参照してください。[チュートリアル (X12): EDI インターチェンジの受信と送信、受信確認を返す](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)します。  
+    >  EDI 受信確認の生成方法の詳細については、[チュートリアル (X12): EDI インターチェンジの受信と送信、受信確認を返す](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)を参照してください。  
 
 -   このソリューションでは、一方向受信ポートと静的な一方向送信ポート。 これらのポートは、FILE トランスポートの種類で構成されます。  
 
@@ -104,7 +104,7 @@ ms.locfileid: "36973219"
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk プロジェクトを作成するか、開きます。  
 
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
 
 2. プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の**します。 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI\X12\00401 に移動し、テスト メッセージに対応するスキーマをダブルクリックします。  
 

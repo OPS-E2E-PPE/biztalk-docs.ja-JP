@@ -71,7 +71,7 @@ ms.locfileid: "36996043"
    2. **送信ポート**ページで、**インターチェンジの設定**セクションで、**送信ポート** ボックスの一覧の**名前**選択**Send_Async_997**します。  
 
       > [!NOTE]
-      >  入力される必要があります、Send_Async_997 送信ポート、**送信ポート**一覧ように[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信 997 メッセージのパーティを解決することができます。 送信パイプラインは、送信ポートの名前をアグリーメント プロパティの送信ポートと照合します。 これは、送信パイプラインがパーティの解決を試みる際に最初に照合する AS2-To プロパティがメッセージのコンテキストで昇格されないために必要になります。 詳細については、次を参照してください。[送信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-outgoing-as2-messages.md)します。  
+      >  入力される必要があります、Send_Async_997 送信ポート、**送信ポート**一覧ように[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信 997 メッセージのパーティを解決することができます。 送信パイプラインは、送信ポートの名前をアグリーメント プロパティの送信ポートと照合します。 これは、送信パイプラインがパーティの解決を試みる際に最初に照合する AS2-To プロパティがメッセージのコンテキストで昇格されないために必要になります。 詳細については、[送信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-outgoing-as2-messages.md)を参照してください。  
 
 10. **[適用]** をクリックします。  
 

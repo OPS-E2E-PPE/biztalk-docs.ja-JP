@@ -39,9 +39,9 @@ Microsoft 管理コンソール (MMC) の証明書スナップインを使用し
   > [!NOTE]
   >  BizTalk ホストと BizTalk 分離ホストは、暗号化された同じ着信メッセージの暗号化を解除できるように、同じ暗号化解除証明書を持つ必要があります。 HTTP アダプターを実行する BizTalk 分離ホストは、ホスト証明書にアクセスできないため、メッセージを受信する証明書を持つ必要があります。 BizTalk ホストも、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] がメッセージを受信した後でそのメッセージを処理する証明書を持つ必要があります。  
   
-- 各パートナーに対して暗号化証明書および署名証明書を構成します。 これを行うには、証明書を入力する、**全般**のタブ、**パートナー**プロパティ ページで、Microsoft [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] ([!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]) 管理コンソール。 証明書には、パートナーへの送信メッセージを暗号化する公開キー暗号化証明書、および着信メッセージに記されたパートナーの ID を確認する公開キー署名証明書があります。 詳細については、次を参照してください。[を作成または編集するパートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)します。  
+- 各パートナーに対して暗号化証明書および署名証明書を構成します。 これを行うには、証明書を入力する、**全般**のタブ、**パートナー**プロパティ ページで、Microsoft [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] ([!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]) 管理コンソール。 証明書には、パートナーへの送信メッセージを暗号化する公開キー暗号化証明書、および着信メッセージに記されたパートナーの ID を確認する公開キー署名証明書があります。 詳細については、[を作成または編集するパートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)を参照してください。  
   
-- ホーム組織と取引先の間における暗号化ポリシーを構成します。 取引先アグリーメントを構成するには、**プロトコル**のタブ、**アグリーメントのプロパティ**ページで、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソール。 詳細については、次を参照してください。[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)します。  
+- ホーム組織と取引先の間における暗号化ポリシーを構成します。 取引先アグリーメントを構成するには、**プロトコル**のタブ、**アグリーメントのプロパティ**ページで、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソール。 詳細については、[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)を参照してください。  
   
 ### <a name="to-configure-the-signing-certificate-for-a-biztalk-group-or-the-decryption-certificate-for-a-biztalk-host"></a>BizTalk グループの署名証明書または BizTalk ホストの暗号化解除証明書を構成するには  
   
