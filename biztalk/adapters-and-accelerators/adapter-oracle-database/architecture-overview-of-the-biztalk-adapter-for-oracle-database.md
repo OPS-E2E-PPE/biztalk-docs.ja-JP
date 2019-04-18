@@ -24,10 +24,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6024bc9dedc1ea4b28e185bbc6ed8a025d9e71fd
-ms.sourcegitcommit: af438e8cf6f58e25372689c5de0a184a0a6696a9
+ms.sourcegitcommit: 85e827c42f193e44ca8b5b8d78d6f8b8ac686f1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58867572"
 ---
 # <a name="architecture-overview-of-the-biztalk-adapter-for-oracle-database"></a>BizTalk Adapter for Oracle Database のアーキテクチャの概要
@@ -103,7 +103,7 @@ ms.locfileid: "58867572"
   
 - **Tnsnames.ora を使用せず**します。 この方法では、アダプターのクライアントは、直接接続 URI の接続パラメーターを指定します。 これは、クライアント コンピューターの tnsnames.ora ファイルに存在する net サービス名には必要ありません。 この方法は、クライアント コンピューターに存在している、tnsnames.ora ファイルをも必要ありません。  
   
-  接続 URI の詳細については、[Oracle データベースへの接続を作成する](../../adapters-and-accelerators/adapter-oracle-database/create-a-connection-to-the-oracle-database.md)を参照してください。
+  接続 URI の詳細については、次を参照してください。 [Oracle データベースへの接続を作成する](../../adapters-and-accelerators/adapter-oracle-database/create-a-connection-to-the-oracle-database.md)します。
   
 ## <a name="next"></a>Next
-[Oracle データベース アプリケーションのセキュリティ保護します。](../../adapters-and-accelerators/adapter-oracle-database/secure-your-oracle-database-applications.md)
+[Oracle データベース アプリケーションのセキュリティ保護](../../adapters-and-accelerators/adapter-oracle-database/secure-your-oracle-database-applications.md)

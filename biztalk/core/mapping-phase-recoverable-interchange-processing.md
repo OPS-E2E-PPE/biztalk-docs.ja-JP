@@ -13,14 +13,14 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 91f7b00bb5bd1490b5a3249ed2b37fb1335e266b
-ms.sourcegitcommit: 68239c81fb12b84a479bf6a4ed8c5b25b249f5ba
+ms.sourcegitcommit: 85e827c42f193e44ca8b5b8d78d6f8b8ac686f1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58852367"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59767028"
 ---
 # <a name="mapping-phase-recoverable-interchange-processing"></a>マッピング フェーズ (回復可能なインターチェンジ処理)
-既定では、インターチェンジのメッセージが受信ポートのマッピング フェーズで失敗すると、インターチェンジ全体が中断されます。 この動作を変更するにはという名前のプロパティを追加することで**BTS します。SuspendMessageOnMappingFailure**に、コンテキスト プロパティの値を設定して、メッセージ コンテキストに`True`パイプライン コンポーネントから。 このプロパティを `True` に設定すると、エンド ポイント マネージャーはマッピングの間に失敗したメッセージを保留キューに格納し、インターチェンジの残りのメッセージの処理を続けます。  
+既定では、インターチェンジ内のメッセージは、受信ポートのマッピング フェーズに失敗した場合、インターチェンジ全体が中断されます。 この動作を変更するにはという名前のプロパティを追加することで**BTS します。SuspendMessageOnMappingFailure**に、コンテキスト プロパティの値を設定して、メッセージ コンテキストに`True`パイプライン コンポーネントから。 このプロパティに設定しているときに`True`、エンド ポイント マネージャーは、保留キューにマッピング中に失敗し、インターチェンジの残りのメッセージの処理を続行するメッセージを配置します。  
   
  次のコードの値の設定、 **SuspendMessageOnMappingFailure**プロパティを True にします。  
   

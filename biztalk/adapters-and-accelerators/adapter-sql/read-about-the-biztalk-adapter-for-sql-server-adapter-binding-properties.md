@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: niklase,mandia
 manager: anneta
 ms.openlocfilehash: e9851d5c77a3470d784defd1d544d42014251dd7
-ms.sourcegitcommit: 22b43db719de5a916b44331e79e88e68f0648b37
+ms.sourcegitcommit: 85e827c42f193e44ca8b5b8d78d6f8b8ac686f1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58794583"
 ---
 # <a name="read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties"></a>SQL Server のアダプターのバインド プロパティの BizTalk アダプターについてください。
@@ -41,7 +41,7 @@ ms.locfileid: "58794583"
 
 #### <a name="closetimeout"></a>CloseTimeout
 **カテゴリ**:全般  
-**説明**:[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]接続タイムアウトを閉じます。 既定では 1 分です。  
+**説明**:[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]接続タイムアウトを閉じます。 既定値は 1 分です。  
 **.NET 型**:System.TimeSpan
 
 #### <a name="name"></a>名前
@@ -51,7 +51,7 @@ ms.locfileid: "58794583"
 
 #### <a name="opentimeout"></a>OpenTimeout
 **カテゴリ**:全般  
-**説明**:指定します、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]接続オープン タイムアウトします。 既定では 1 分です。
+**説明**:指定します、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]接続オープン タイムアウトします。 既定値は 1 分です。
 
 > [!IMPORTANT]
 > [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]は常に使用**OpenTimeout** SQL Server への接続を開くときに、接続のオープン タイムアウトを設定します。 アダプターが何らかのタイムアウトを無視します (**System.TimeSpan**) 通信オブジェクトを開くと、パラメーターが渡されます。 たとえば、アダプターでは、チャネルを開くときに渡されるタイムアウト パラメーターは無視されます。
@@ -69,7 +69,7 @@ ms.locfileid: "58794583"
 
 #### <a name="sendtimeout"></a>SendTimeout
 **カテゴリ**:全般  
-**説明**:指定します、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]メッセージ送信のタイムアウト。 既定では 1 分です。  
+**説明**:指定します、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]メッセージ送信のタイムアウト。 既定値は 1 分です。  
 **.NET 型**:System.TimeSpan
 
 #### <a name="enablebiztalkcompatibilitymode"></a>EnableBizTalkCompatibilityMode
@@ -91,7 +91,7 @@ ms.locfileid: "58794583"
 **説明**:< Column_name > セット操作に使用されるバッファーのサイズを指定します。 既定値は 4194304 バイトです。 値が高いパフォーマンスを向上させることがありますが、メモリ消費量に影響を与えます。
 
 > [!NOTE]
-> < Column_name > の設定操作の詳細については、[テーブルとビューを含めることが大きなデータ型を SQL アダプターを使用してで操作](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)を参照してください。
+> < Column_name > の設定操作の詳細については、次を参照してください。[テーブルとビューを含めることが大きなデータ型を SQL アダプターを使用してで操作](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)します。
 
 **.NET 型**: int 型 (System.Int32)
 
@@ -110,7 +110,7 @@ ms.locfileid: "58794583"
 
 #### <a name="workstationid"></a>WorkstationId
 **カテゴリ**:接続  
-**説明**:使用して、SQL Server データベースに接続するワークステーション (クライアント コンピューター) の一意の ID を指定します、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 このバインド プロパティの値は、指定されている場合の使用は、**ワークステーション ID** SqlConnection.ConnectionString プロパティのキーワード。 詳細については、[SqlConnection.ConnectionString プロパティ](https://docs.microsoft.com/dotnet/api/system.data.sqlclient.sqlconnection.connectionstring?redirectedfrom=MSDN&view=netframework-4.7.2#System_Data_SqlClient_SqlConnection_ConnectionString)を参照してください。  
+**説明**:使用して、SQL Server データベースに接続するワークステーション (クライアント コンピューター) の一意の ID を指定します、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 このバインド プロパティの値は、指定されている場合の使用は、**ワークステーション ID** SqlConnection.ConnectionString プロパティのキーワード。 詳細については、次を参照してください。 [SqlConnection.ConnectionString プロパティ](https://docs.microsoft.com/dotnet/api/system.data.sqlclient.sqlconnection.connectionstring?redirectedfrom=MSDN&view=netframework-4.7.2#System_Data_SqlClient_SqlConnection_ConnectionString)します。  
 **.NET 型**: 文字列
 
 #### <a name="enableperformancecounters"></a>EnablePerformanceCounters
@@ -144,7 +144,7 @@ ms.locfileid: "58794583"
 **説明**:アダプターが Insert および Update 操作中に id 列の値を挿入できるかどうかを指定します。 このプロパティを設定**True**を挿入または id 列の値を更新します。 それ以外の場合に設定**False** (既定値)。
 
 > [!NOTE]
-> このプロパティを設定**True**アダプターを使用して、変換されます`SET IDENTITY_INSERT <table_name> ON`します。 詳細については、[SET IDENTITY_INSERT (TRANSACT-SQL)](https://docs.microsoft.com/sql/t-sql/statements/set-identity-insert-transact-sql?view=sql-server-2017)を参照してください。 
+> このプロパティを設定**True**アダプターを使用して、変換されます`SET IDENTITY_INSERT <table_name> ON`します。 詳細については、次を参照してください。 [SET IDENTITY_INSERT (TRANSACT-SQL)](https://docs.microsoft.com/sql/t-sql/statements/set-identity-insert-transact-sql?view=sql-server-2017)します。 
 
 このバインドのプロパティを使用しているときに、次の点を考慮する必要があります。
 

@@ -13,11 +13,11 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 5106c067902b3a5ddaf9f6d68d9a5513f136ba25
-ms.sourcegitcommit: af438e8cf6f58e25372689c5de0a184a0a6696a9
+ms.sourcegitcommit: 85e827c42f193e44ca8b5b8d78d6f8b8ac686f1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58867564"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59767036"
 ---
 # <a name="considerations-for-receiving-query-notifications-using-the-sql-adapter"></a>SQL アダプタ使用クエリ通知の受信に関する考慮事項
 このトピックではいくつかの考慮事項とベスト プラクティスを使用しているときに考慮する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を SQL Server データベースからクエリ通知を受信します。  
@@ -64,7 +64,7 @@ ms.locfileid: "58867564"
   
    更新操作では、通知をアダプターのクライアントに送信もう一度興味深いことに、プロセス全体がもう一度繰り返されますと、そのため、クライアント アプリケーションでは、必要なロジックをこのような不要な通知を破棄する必要があります。  
   
-- 場合、 **NotifyOnListenerStart**プロパティのバインドは、アダプターのクライアント受信場所を開始するたびに通知メッセージが表示されます。 バインド プロパティを使用し、通知メッセージを解釈する方法の詳細については、[受信クエリ通知した後、受信場所のブレーク ダウンでは、BizTalk Server を使用して SQL](../../adapters-and-accelerators/adapter-sql/receive-query-notifications-after-a-sql-receive-location-stops-in-biztalk.md)を参照してください。  
+- 場合、 **NotifyOnListenerStart**プロパティのバインドは、アダプターのクライアント受信場所を開始するたびに通知メッセージが表示されます。 バインド プロパティを使用し、通知メッセージを解釈する方法の詳細については、次を参照してください。[受信クエリ通知した後、受信場所のブレーク ダウンでは、BizTalk Server を使用して SQL](../../adapters-and-accelerators/adapter-sql/receive-query-notifications-after-a-sql-receive-location-stops-in-biztalk.md)します。  
   
 ## <a name="typical-orchestration-for-receiving-notifications"></a>通知を受信するための一般的なオーケストレーション  
  このセクションを使用して通知を受信するための一般的なオーケストレーション フローの概要、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
