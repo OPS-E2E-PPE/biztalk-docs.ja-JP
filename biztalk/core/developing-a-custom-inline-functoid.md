@@ -47,9 +47,9 @@ ms.locfileid: "36976699"
 ### <a name="providing-inline-code-with-getinlinescriptbuffer"></a>GetInlineScriptBuffer を使ったインライン コードの実装  
  オーバーライドして、カスタムのインライン型の functoid では、可変個のパラメーターをサポートする場合**GetInlineScriptBuffer**します。 インライン スクリプトを使用するようにカスタム Functoid を構成するには、次の手順に従います。  
   
-1. コンス トラクターの宣言、カスタム functoid を設定して変数の入力の**HasVariableInputs**に`true`します。  
+1. コンストラクターの宣言、カスタム functoid を設定して変数の入力の**HasVariableInputs**に`true`します。  
   
-2. コンス トラクターの呼び出し**AddScriptTypeSupport**で[Microsoft.BizTalk.BaseFunctoids.ScriptType](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.scripttype.aspx)インライン コードを有効にし、サポートされているスクリプトの種類を設定します。  
+2. コンストラクターの呼び出し**AddScriptTypeSupport**で[Microsoft.BizTalk.BaseFunctoids.ScriptType](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.scripttype.aspx)インライン コードを有効にし、サポートされているスクリプトの種類を設定します。  
   
 3. オーバーライド**GetInlineScriptBuffer**を構築して、カスタム functoid のマップで使用するコードを返します。 パラメーターの `scriptType` と `numParams` を調べて、適切なコードを作成します。 最後のパラメーターで`functionNumber`0 にする必要があります。 累積的な関数は、固定数の入力があるし、このメカニズムを使用しないためにです。  
   

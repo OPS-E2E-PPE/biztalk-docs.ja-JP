@@ -81,7 +81,7 @@ ms.locfileid: "37017323"
 
      ![BRE&#45;チュートリアル&#45;ImplementInterface](../core/media/ca1ae06c-ad24-4eac-94c3-5a06ad0f7305.gif "ca1ae06c-ad24-4eac-94c3-5a06ad0f7305")  
 
-11. パブリック コンス トラクターを追加、 **POFactCreator**次に示すようにクラスします。  
+11. パブリック コンストラクターを追加、 **POFactCreator**次に示すようにクラスします。  
 
     ```  
     public POFactCreator()  

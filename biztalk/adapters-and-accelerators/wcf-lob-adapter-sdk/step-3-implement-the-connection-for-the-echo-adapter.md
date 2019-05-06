@@ -184,7 +184,7 @@ ms.locfileid: "36988411"
     ```  
 
 ## <a name="updating-the-echoadapterconnectionfactory"></a>EchoAdapterConnectionFactory を更新しています  
- EchoAdapterConnectionFactory コンス トラクターを実装し、ClientCredentials、ConnectionUri という 2 つのプロパティを追加します。  
+ EchoAdapterConnectionFactory コンストラクターを実装し、ClientCredentials、ConnectionUri という 2 つのプロパティを追加します。  
 
 #### <a name="to-update-the-echoadapterconnectionfactory-class"></a>EchoAdapterConnectionFactory クラスを更新するには  
 
@@ -208,7 +208,7 @@ ms.locfileid: "36988411"
     private EchoAdapterConnectionUri connectionUri;  
     ```  
 
-4.  Visual Studio エディターで検索、 **EchoAdapterConnectionFactory**メソッド。 内で、 **EchoAdapterConnectionFactory**コンス トラクターのメソッドの前に"}"、最後のステートメントとして次の 1 つのステートメントを追加します。  
+4.  Visual Studio エディターで検索、 **EchoAdapterConnectionFactory**メソッド。 内で、 **EchoAdapterConnectionFactory**コンストラクターのメソッドの前に"}"、最後のステートメントとして次の 1 つのステートメントを追加します。  
 
     ```csharp  
     this.connectionUri = connectionUri as EchoAdapterConnectionUri;  
@@ -258,7 +258,7 @@ ms.locfileid: "36988411"
     ```  
 
 ## <a name="updating-the-echoadapterconnectionuri"></a>EchoAdapterConnectionUri を更新しています  
- EchoAdapterConnectionUri 既定のコンス トラクターを実装して、EchoAdapterConnectionUri(Uri uri) コンス トラクターをオーバー ロードされたパブリック Uri Uri プロパティをオーバーライドします。  
+ EchoAdapterConnectionUri 既定のコンストラクターを実装して、EchoAdapterConnectionUri(Uri uri) コンストラクターをオーバー ロードされたパブリック Uri Uri プロパティをオーバーライドします。  
 
 #### <a name="to-update-the-echoadapterconnectionuri-class"></a>EchoAdapterConnectionUri クラスを更新するには  
 
@@ -266,13 +266,13 @@ ms.locfileid: "36988411"
 
 2.  Visual Studio エディターで、任意の場所を右クリック コンテキスト メニューで、エディター内をポイント**アウトライン**、 をクリックし、**アウトラインの中止**します。  
 
-3.  Visual Studio エディターで検索、**コンス トラクター**リージョン。 内で、 **EchoAdapterConnectionUri()** 既定コンス トラクターを次のステートメントを追加します。  
+3.  Visual Studio エディターで検索、**コンストラクター**リージョン。 内で、 **EchoAdapterConnectionUri()** 既定コンストラクターを次のステートメントを追加します。  
 
     ```csharp  
     Uri = new Uri("echov2://lobhostname/lobapplication?enableauthentication=False");  
     ```  
 
-4.  Visual Studio エディターでの内部、 **EchoAdapterConnectionUri (Uri の uri)** コンス トラクターをオーバー ロードされ、次のステートメントを追加します。  
+4.  Visual Studio エディターでの内部、 **EchoAdapterConnectionUri (Uri の uri)** コンストラクターをオーバー ロードされ、次のステートメントを追加します。  
 
     ```csharp  
     Uri = uri;  

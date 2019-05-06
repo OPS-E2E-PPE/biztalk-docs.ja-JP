@@ -48,7 +48,7 @@ ms.locfileid: "37002443"
   
   BAPI_TRANSACTION_COMMIT と BAPI_TRANSACTION_ROLLBACK が各ビジネス オブジェクトの表示し、WCF クライアントでこれらを常に含める必要があります。  
   
-  次のコードでは、販売注文のビジネス オブジェクトに対して生成された WCF クライアント クラスの一部を示します。 このクライアントには、メソッド呼び出す CREATEFROMDAT2、BAPI_TRANSACTION_COMMIT および BAPI_TRANSACTION_ROLLBACK にはが含まれています。 わかりやすくするためには、コンス トラクターと他のコードを省略されています。  
+  次のコードでは、販売注文のビジネス オブジェクトに対して生成された WCF クライアント クラスの一部を示します。 このクライアントには、メソッド呼び出す CREATEFROMDAT2、BAPI_TRANSACTION_COMMIT および BAPI_TRANSACTION_ROLLBACK にはが含まれています。 わかりやすくするためには、コンストラクターと他のコードを省略されています。  
   
 ```  
 [System.Diagnostics.DebuggerStepThroughAttribute()]  

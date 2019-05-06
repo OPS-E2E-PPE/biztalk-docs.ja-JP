@@ -64,7 +64,7 @@ ms.locfileid: "36994035"
 12. ドラッグ**DebugTrackingInterceptor**で**Microsoft.RuleEngine**の 2 番目の引数、 **Policy.Execute**メソッド。  
   
     > [!NOTE]
-    >  この操作を実行する場合、クライアントがのインスタンスを渡す必要があります、 **DebugTrackingInterceptor**クラスをインスタンスをファクトとして子ポリシーに渡します親ポリシーのファクトとして。 コンス トラクターをドラッグする代わりに、 **DebugTrackingInterceptor**クラスのインスタンスが自動的に作成するようにします。  
+    >  この操作を実行する場合、クライアントがのインスタンスを渡す必要があります、 **DebugTrackingInterceptor**クラスをインスタンスをファクトとして子ポリシーに渡します親ポリシーのファクトとして。 コンストラクターをドラッグする代わりに、 **DebugTrackingInterceptor**クラスのインスタンスが自動的に作成するようにします。  
   
 ### <a name="modifying-the-client-application-that-invokes-the-parent-policy"></a>親ポリシーを呼び出すクライアント アプリケーションの変更  
  親ポリシーを呼び出すクライアントのインスタンスを作成、**ポリシー**クラスをパラメーターとして子ポリシーの名前をファクトとして他のファクトと共に親ポリシーに渡します。 このアクションを説明するサンプル コードを次に示します。  

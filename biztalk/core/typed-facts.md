@@ -88,7 +88,7 @@ Select * From [Product] Where [UnitPrice] >= 0
 ## <a name="typeddatatable"></a>TypedDataTable  
  ADO.NET をアサートする**DataTable**よう他の任意の .NET オブジェクトに、エンジンがオブジェクトに処理されます。 ほとんどの場合は代わりにするルール エンジンのクラスをアサートする**TypedDataTable**します。  
 
- **TypedDataTable** ADO.NET を含むラッパー クラスは、 **DataTable**します。 コンス トラクターは単には、 **DataTable**します。 テーブルまたはテーブルの列がルールの引数として使用される、個人に対して式が評価される**TypedDataRow**ラッパーとに対してではなく、 **TypedDataTable**します。  
+ **TypedDataTable** ADO.NET を含むラッパー クラスは、 **DataTable**します。 コンストラクターは単には、 **DataTable**します。 テーブルまたはテーブルの列がルールの引数として使用される、個人に対して式が評価される**TypedDataRow**ラッパーとに対してではなく、 **TypedDataTable**します。  
 
 ## <a name="typeddatarow"></a>TypedDataRow  
  これは、ADO の型指定されたファクト ラッパー **DataRow**オブジェクト。 結果、返されたに対してルールが作成、テーブルまたは列をビジネス ルール作成ツールでルールの引数にドラッグ**TypedDataRow**ラッパー。  

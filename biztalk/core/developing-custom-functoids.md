@@ -48,7 +48,7 @@ ms.locfileid: "37019897"
   
 4. リソース ファイルを作成してプロジェクトに追加し、 Functoid 名、ツールヒント、および説明用の文字列リソースを追加します。 マップ デザイナー パレットの上で functoid を表す 16 x 16 ピクセルのイメージ リソースを追加します。  
   
-5. 派生することで、functoid のクラスを実装**BaseFunctoid**、コンス トラクターの基本的なパラメーターを確立して、functoid のメソッドとサポート メソッドを記述します。 アセンブリには複数のカスタム Functoid を含めることができます。  
+5. 派生することで、functoid のクラスを実装**BaseFunctoid**、コンストラクターの基本的なパラメーターを確立して、functoid のメソッドとサポート メソッドを記述します。 アセンブリには複数のカスタム Functoid を含めることができます。  
   
 6. アセンブリを展開し、ツールボックス パレットから新しい Functoid を使用できることを確認します。 参照してください[を追加して、Visual Studio のツールボックスからカスタム Functoid を削除する](../core/adding-and-removing-custom-functoids-from-the-visual-studio-toolbox.md)します。  
   

@@ -60,7 +60,7 @@ UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serv
 </configuration>  
 ```  
   
- **ResolverConfig**競合回避モジュールの各ノードの下のセクションでは、特定の環境で動作する、競合回避モジュールが必要な追加のプロパティを構成することができます。 リゾルバー構成へのアクセスには、型のパラメーターを受け取るコンス トラクターを公開する必要があります**Microsoft.Practices.ESB.Configuration.Resolver**します。 競合回避モジュールの実装で構成しプロパティを使用して、 **ReadResolverConfigByKey**のメソッド、 **ResolverConfigHelper**クラスは、これを行うには、パラメーターに渡す最初に、コンス トラクターに渡され、問題の名前、値渡すします。 名前と値のペアが指定されていない場合、 **resolverConfig**ノードで、既定のパラメーターなしコンス トラクターは、競合回避モジュールをインスタンス化に使用されます。  
+ **ResolverConfig**競合回避モジュールの各ノードの下のセクションでは、特定の環境で動作する、競合回避モジュールが必要な追加のプロパティを構成することができます。 リゾルバー構成へのアクセスには、型のパラメーターを受け取るコンストラクターを公開する必要があります**Microsoft.Practices.ESB.Configuration.Resolver**します。 競合回避モジュールの実装で構成しプロパティを使用して、 **ReadResolverConfigByKey**のメソッド、 **ResolverConfigHelper**クラスは、これを行うには、パラメーターに渡す最初に、コンストラクターに渡され、問題の名前、値渡すします。 名前と値のペアが指定されていない場合、 **resolverConfig**ノードで、既定のパラメーターなしコンストラクターは、競合回避モジュールをインスタンス化に使用されます。  
   
  2 つ Universal Description, Discovery, and Integration (UDDI) 3 競合回避モジュールは、構成で定義されている: 3 の UDDI および UDDI 3-SOASOFTWARE します。 同じ基になるアセンブリを使用して、これらの競合回避モジュールの両方が、別の UDDI 3.0 に準拠したレジストリの別の Uniform Resource Identifier (URI) 形式とセキュリティ要件をサポートするためのさまざまな構成を提供します。 既にサポートされているもの以外の UDDI 3.0 に準拠したレジストリの追加のモニカーを構成する必要がある場合は、次の構成プロパティを使用できます。  
   

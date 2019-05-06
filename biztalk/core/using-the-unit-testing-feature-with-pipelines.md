@@ -45,7 +45,7 @@ ms.locfileid: "52826327"
   
 8.  **新しいテスト プロジェクト** ダイアログ ボックスで、プロジェクト名としてのままに**TestProject1**  をクリック**作成**です。  
   
-9. **単体テストの作成** ダイアログ ボックスで、型を展開し、選択、 **FFReceivePipeline()** 下でコンス トラクター、 **ffreceivepipeline()** ノード。 **[OK]** をクリックします。  
+9. **単体テストの作成** ダイアログ ボックスで、型を展開し、選択、 **FFReceivePipeline()** 下でコンストラクター、 **ffreceivepipeline()** ノード。 **[OK]** をクリックします。  
   
 ## <a name="adding-test-code-to-test-the-pipeline"></a>パイプラインをテストするテスト コードの追加  
   

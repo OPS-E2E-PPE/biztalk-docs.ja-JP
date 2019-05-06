@@ -216,7 +216,7 @@ ms.locfileid: "36985723"
     policy.Dispose();  
     ```  
 
--   最初のパラメーター、 **TypedXmlDocument**コンス トラクターのコードでは、ポリシーの構築に使用する型の名前です。  
+-   最初のパラメーター、 **TypedXmlDocument**コンストラクターのコードでは、ポリシーの構築に使用する型の名前です。  
 
 -   **Policy.Execute**メソッドは、ラッパーでは基本的に、 **RuleEngine.Execute**メソッド。 したがってを使用して、 **Policy.Execute**メソッドでは、このチュートリアルで説明したように、ポリシーを呼び出すの最も簡単な方法です。  
 
