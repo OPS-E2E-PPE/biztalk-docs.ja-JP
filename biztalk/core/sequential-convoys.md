@@ -15,12 +15,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a160c8db8f0cff4ad9465e1e19c418fc0831a5d9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d7a928650b04b7f57c29ba3abe2828990bf0a0cc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971203"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393326"
 ---
 # <a name="sequential-convoys"></a>シーケンシャルなコンボイ
 シーケンシャルなコンボイを使用すると、複数の単一メッセージを結合して必要とされる結果を実現することが可能になります。 シーケンシャルなコンボイは、事前定義された順序を持つ、一連の関連するメッセージです。 これらのメッセージが完全に同一である必要はありませんが、BizTalk Server は各メッセージを順番に受け取る必要があります。  
@@ -48,7 +48,7 @@ ms.locfileid: "36971203"
   
 - シーケンシャルなコンボイがアクティブ化受信によって初期化される場合、後続の受信をネストされているオーケストレーションの内側に入れることはできません。  
   
-  シーケンシャルなコンボイの実装の例は、[アグリゲーター (BizTalk Server サンプル)](../core/aggregator-biztalk-server-sample.md)を参照してください。  
+  シーケンシャルなコンボイの実装の例は、次を参照してください。[アグリゲーター (BizTalk Server サンプル)](../core/aggregator-biztalk-server-sample.md)します。  
   
 ## <a name="see-also"></a>参照  
  [コンボイ シナリオの](../core/working-with-convoy-scenarios.md)   

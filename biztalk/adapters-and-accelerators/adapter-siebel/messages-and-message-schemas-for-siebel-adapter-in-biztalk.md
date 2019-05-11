@@ -1,6 +1,6 @@
 ---
-title: メッセージと BizTalk Adapter for Siebel eBusiness Applications のメッセージ スキーマを |Microsoft ドキュメント
-description: Siebel アダプターの BizTalk アダプター パック (BAP) で使用されるメッセージとデータの種類の XML 構造
+title: メッセージと BizTalk adapter for Siebel eBusiness Applications のメッセージ スキーマ |Microsoft Docs
+description: Siebel アダプターの BizTalk アダプター パック (BAP) によって使用されるメッセージとデータ型の XML 構造
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,29 +13,29 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 294662793fc8103813b582d1b0d84db4447b0e7e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 05a96682063437bb59c04372a7e8540743b27113
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22221954"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371291"
 ---
-# <a name="messages-and-message-schemas-for-biztalk-adapter-for-siebel-ebusiness-applications"></a>メッセージと BizTalk Adapter for Siebel eBusiness Applications のメッセージ スキーマ
+# <a name="messages-and-message-schemas-for-biztalk-adapter-for-siebel-ebusiness-applications"></a>メッセージと BizTalk adapter for Siebel eBusiness Applications のメッセージ スキーマ
 
 ## <a name="overview"></a>概要
-[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]は、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドします。 Siebel システムでアプリケーションを呼び出すことのできる操作を公開します。 これらの操作がチャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。  
+[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]は、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドします。 Siebel システムでアプリケーションを呼び出すことができる操作を公開します。 これらの操作は、チャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。  
   
- として、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]サービス、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]標準を使用してその操作とデータ型のメタデータが公開[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]メカニズムです。 このトピックのセクションでは、メッセージの XML 構造の記述し、データの種類を[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]を使用します。  
+ として、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]サービス、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]標準を使用して、その操作とデータ型のメタデータを公開する[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]メカニズム。 このトピックのセクションでは、メッセージの XML 構造を記述して、データの種類を[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]を使用します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [Siebel の基本的なデータ型](basic-siebel-data-types.md)  
+-   [基本的な Siebel データ型](basic-siebel-data-types.md)  
   
--   [ビジネス コンポーネント操作のメッセージ スキーマ](message-schemas-for-business-component-operations.md)  
+-   [ビジネス コンポーネント操作用のメッセージ スキーマ](message-schemas-for-business-component-operations.md)  
   
--   [ビジネス サービス操作のメッセージ スキーマ](message-schemas-for-business-service-operations.md)  
+-   [ビジネス サービス操作用のメッセージ スキーマ](message-schemas-for-business-service-operations.md)  
   
--   [候補リスト操作のメッセージ スキーマ](message-schema-for-picklist-operations.md)  
+-   [候補リスト操作用のメッセージ スキーマ](message-schema-for-picklist-operations.md)  
   
 -   [メッセージ バージョン管理のサポート](message-versioning-support2.md)  
   

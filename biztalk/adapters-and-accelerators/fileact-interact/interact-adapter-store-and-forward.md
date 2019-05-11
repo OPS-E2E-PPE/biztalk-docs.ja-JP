@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f3ce047de1c926e6e144b1351954774c1d3edb5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8697cd25af9622057d9bd3224fe93f26b214716d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022592"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366657"
 ---
 # <a name="interact-adapter-store-and-forward"></a>InterAct アダプター ストア アンド フォワード
 ストアにし、転送 (SnF) モードでは、メッセージが送信時に、キューに配信され、変換先にキューから取得されます。 SnF を使用して、応答は SWIFTNet SnF 自体に由来し、応答側からのフィードバックが含まれていません。  

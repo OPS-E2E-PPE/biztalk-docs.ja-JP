@@ -1,5 +1,5 @@
 ---
-title: '手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作の発行 |Microsoft Docs'
+title: 手順 1:Siebel ビジネス コンポーネントの操作を WCF サービスとして発行する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 800e9789eca1121abd37de4df92e9d5e735802f3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b11d94de7e7b5d6ff9ced397d30c78235ad20bfe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370682"
 ---
-# <a name="step-1-publish-the-siebel-business-component-operations-as-a-wcf-service"></a>手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作を公開します。
+# <a name="step-1-publish-the-siebel-business-component-operations-as-a-wcf-service"></a>手順 1:Siebel ビジネス コンポーネントの操作を WCF サービスとして発行します。
 ![手順 4 の 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
  **所要時間:** 10 分  
@@ -35,7 +35,7 @@ ms.locfileid: "36983019"
   
 - 必要な Siebel クライアント。  
   
-  これらの前提条件の詳細については、、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドを参照してください。 通常、インストール ガイドにインストールされて\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents します。  
+  これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 通常、インストール ガイドにインストールされて\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents します。  
   
 ## <a name="publish-the-siebel-business-components-as-a-wcf-service"></a>WCF サービスとしての Siebel ビジネス コンポーネントを発行します。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "36983019"
   
    5. をクリックして、**バインド プロパティ**タブをクリックし、対象と操作のために必要な場合、バインドのプロパティの値を指定します。  
   
-       バインド プロパティの詳細については、[for Siebel のバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)を参照してください。  
+       バインド プロパティの詳細については、次を参照してください。 [for Siebel のバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)します。  
   
    6. をクリックして**OK**、順にクリックします**Connect**します。 接続が確立されると、接続の状態が表示として**接続**します。  
   
@@ -99,7 +99,7 @@ ms.locfileid: "36983019"
       |X509FindType|実行する X.509 検索の種類。<br /><br /> **注:** 場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**します。|  
   
       > [!NOTE]
-      >  証明書と関連付けられているプロパティの詳細については、[X509ClientCertificateCredentialsElement プロパティ](https://msdn.microsoft.com/library/system.servicemodel.configuration.x509clientcertificatecredentialselement_properties.aspx)を参照してください。
+      >  証明書と関連付けられているプロパティの詳細については、次を参照してください。 [X509ClientCertificateCredentialsElement プロパティ](https://msdn.microsoft.com/library/system.servicemodel.configuration.x509clientcertificatecredentialselement_properties.aspx)します。
   
    2. **エンドポイント動作の構成**ボックスで、次の値を指定します。  
   
@@ -107,8 +107,8 @@ ms.locfileid: "36983019"
       |----------------------|-----------------------|  
       |[認証の種類]|-この設定**ClientCredentialUserNamePassword** WCF サービスを使用しているとき、ユーザー名とパスワードを指定するクライアントを有効にします。<br /><br /> -この設定**HTTPUserNamePassword** HTTP ヘッダーの一部としてユーザー名とパスワードを指定するクライアントを有効にします。<br /><br /> -この設定**自動**最初から資格情報を指定するクライアントを有効にする、 **ClientCredential**インターフェイス。 これが失敗すると、クライアントは、HTTP ヘッダーの一部として資格情報を渡すことができます。<br /><br /> 既定値は**自動**します。WCF サービスを使用する Microsoft Office SharePoint server、として設定する必要があります**HTTPUserNamePassword**します。|  
       |名前|エンドポイントの動作の構成の名前を指定します。|  
-      |UsernameHeader|ユーザー名ヘッダーの名前です。 この例では、指定**MyUserHeader**します。 HTTP ヘッダーの詳細についてを参照してください「のサポートのカスタム HTTP ヘッダーと SOAP ヘッダー」 [ http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)します。<br /><br /> **注:** 場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**します。 場合**認証の種類**に設定されている**自動**、このプロパティは省略可能です。|  
-      |PasswordHeader|パスワード ヘッダーの名前です。 この例では、指定**MyPassHeader**します。 HTTP ヘッダーの詳細についてを参照してください「のサポートのカスタム HTTP ヘッダーと SOAP ヘッダー」 [ http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)します。<br /><br /> **注:** 場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**します。 場合**認証の種類**に設定されている**自動**、このプロパティは省略可能です。|  
+      |UsernameHeader|ユーザー名ヘッダーの名前です。 この例では、指定**MyUserHeader**します。 HTTP ヘッダーの詳細についてを参照してください「のサポートのカスタム HTTP ヘッダーと SOAP ヘッダー」 [ http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)します。<br /><br /> **注:** 場合、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**します。 場合**認証の種類**に設定されている**自動**、このプロパティは省略可能です。|  
+      |PasswordHeader|パスワード ヘッダーの名前です。 この例では、指定**MyPassHeader**します。 HTTP ヘッダーの詳細についてを参照してください「のサポートのカスタム HTTP ヘッダーと SOAP ヘッダー」 [ http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)します。<br /><br /> **注:** 場合、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**します。 場合**認証の種類**に設定されている**自動**、このプロパティは省略可能です。|  
   
       次の図は、値を指定して、サービスの構成およびエンドポイントの動作のページを示しています。  
   
@@ -122,7 +122,7 @@ ms.locfileid: "36983019"
   
     |プロパティの|値を指定します。|  
     |----------------------|-----------------------|  
-    |バインドの構成|ウィザードでは、基本的な HTTP バインドのみサポートされます。 バインド構成のフィールドを自動的に作成されて、 *System.ServiceModel.Configuration.BasicHttpBindingElement*します。<br /><br /> 省略記号ボタンをクリックします **([...])。** HTTP バインディングのプロパティを変更します。 セキュリティで保護された通信チャネルを使用する必要があります常に設定する、**モード**プロパティを**トランスポート**します。 ウィザードの既定値の設定、**モード**プロパティとして**トランスポート**します。<br /><br /> 公開されているその他のバインディングの詳細については、[BasicHttpBindingElement クラス](https://msdn.microsoft.com/library/system.servicemodel.configuration.basichttpbindingelement.aspx)を参照してください。|  
+    |バインドの構成|ウィザードでは、基本的な HTTP バインドのみサポートされます。 バインド構成のフィールドを自動的に作成されて、 *System.ServiceModel.Configuration.BasicHttpBindingElement*します。<br /><br /> 省略記号ボタンをクリックします **([...])。** HTTP バインディングのプロパティを変更します。 セキュリティで保護された通信チャネルを使用する必要があります常に設定する、**モード**プロパティを**トランスポート**します。 ウィザードの既定値の設定、**モード**プロパティとして**トランスポート**します。<br /><br /> 公開されているその他のバインディングの詳細については、次を参照してください。 [BasicHttpBindingElement クラス](https://msdn.microsoft.com/library/system.servicemodel.configuration.basichttpbindingelement.aspx)します。|  
     |[エンドポイント名]|コントラクトのエンドポイント名を指定します。|  
   
      このページの他のフィールドには、前のページで指定した値に基づいて自動的に設定されます。  
@@ -179,7 +179,7 @@ ms.locfileid: "36983019"
         ```  
   
 ## <a name="next-steps"></a>次の手順  
- Siebel ビジネス コンポーネントの WCF サービスがあるようになりました。 Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルを作成するのにには、ビジネス データ カタログ定義エディターを使用します。 参照してください[手順 2: Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルの作成](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)手順についてはします。 LOB データが格納されていると、形式が格納されているアプリケーション定義ファイルを識別します。  
+ Siebel ビジネス コンポーネントの WCF サービスがあるようになりました。 Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルを作成するのにには、ビジネス データ カタログ定義エディターを使用します。 参照してください[手順 2。Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルの作成](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)手順についてはします。 LOB データが格納されていると、形式が格納されているアプリケーション定義ファイルを識別します。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 1: Siebel システムからのデータを SharePoint サイトに表示する](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)
+ [チュートリアル 1:Siebel システムからのデータを SharePoint サイトに表示する](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)

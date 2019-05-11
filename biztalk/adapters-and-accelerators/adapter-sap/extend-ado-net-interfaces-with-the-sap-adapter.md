@@ -1,5 +1,5 @@
 ---
-title: SAP アダプターと ADO.NET インターフェイスを拡張 |Microsoft ドキュメント
+title: SAP アダプターを使用した ADO.NET インターフェイスの拡張 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,26 +14,26 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f0de1cb9373d65017959e8cc3971d1cd701ef10
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 13b461743743049f9e276b3086ef6424c95cecd5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22217186"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373439"
 ---
-# <a name="extend-adonet-interfaces-with-the-sap-adapter"></a>SAP アダプターと ADO.NET インターフェイスを拡張します。
-[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) さまざまな ADO.NET インターフェイスを拡張します。 ADO.NET クライアントは、SAP システムとのやり取りにこれらを使用できます。 このセクションでは、これらのインターフェイスの詳細を提供します。  
+# <a name="extend-adonet-interfaces-with-the-sap-adapter"></a>SAP アダプターを使用した ADO.NET インターフェイスを拡張します。
+[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) さまざまな ADO.NET インターフェイスを拡張します。 ADO.NET クライアントは、SAP システムとのインターフェイスにこれらを使用できます。 このセクションでは、これらのインターフェイスの詳細について提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [SAP アダプターで SAPConnection クラス](../../adapters-and-accelerators/adapter-sap/sapconnection-class-in-the-sap-adapter.md)  
+-   [SAP アダプターの SAPConnection クラス](../../adapters-and-accelerators/adapter-sap/sapconnection-class-in-the-sap-adapter.md)  
   
--   [SAP アダプターで SAPCommand クラス](../../adapters-and-accelerators/adapter-sap/sapcommand-class-in-the-sap-adapter.md)  
+-   [SAP アダプターの SAPCommand クラス](../../adapters-and-accelerators/adapter-sap/sapcommand-class-in-the-sap-adapter.md)  
   
--   [SAP アダプターで SAPDataReader クラス](../../adapters-and-accelerators/adapter-sap/sapdatareader-class-in-the-sap-adapter.md)  
+-   [SAP アダプターの SAPDataReader クラス](../../adapters-and-accelerators/adapter-sap/sapdatareader-class-in-the-sap-adapter.md)  
   
--   [SAP アダプターで SAPParameter クラス](../../adapters-and-accelerators/adapter-sap/sapparameter-class-in-the-sap-adapter.md)  
+-   [SAP アダプターの SAPParameter クラス](../../adapters-and-accelerators/adapter-sap/sapparameter-class-in-the-sap-adapter.md)  
   
--   [SAP アダプターで SAPParameterCollection クラス](../../adapters-and-accelerators/adapter-sap/sapparametercollection-class-in-the-sap-adapter.md)  
+-   [SAP アダプターの SAPParameterCollection クラス](../../adapters-and-accelerators/adapter-sap/sapparametercollection-class-in-the-sap-adapter.md)  
   
--   [SAP アダプターで SAPClientFactory クラス](../../adapters-and-accelerators/adapter-sap/sapclientfactory-class-in-the-sap-adapter.md)
+-   [SAP アダプターの SAPClientFactory クラス](../../adapters-and-accelerators/adapter-sap/sapclientfactory-class-in-the-sap-adapter.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef25dddf3d30f584b30aa0f35b8b1c4140d285e2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 58d823dda4b4697161a9f4e3df12f8cc48e97889
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36965811"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373573"
 ---
 # <a name="create-a-connection-to-the-sap-system"></a>SAP システムへの接続を作成します。
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]は、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドします。 そのため、WCF エンドポイントのアドレスからの SAP システムに通信できます。 WCF では、エンドポイント アドレスは、サービスのネットワークの場所を識別しする Uniform Resource Identifier (URI) としては通常表現します。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]接続プロパティを格納する、URI として、この場所を表します[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]SAP システムへの接続を確立するために使用します。 接続 URI を指定する必要がありますとします。  

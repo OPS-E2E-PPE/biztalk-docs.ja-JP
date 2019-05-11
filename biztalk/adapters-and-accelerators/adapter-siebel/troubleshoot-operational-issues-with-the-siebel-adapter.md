@@ -13,17 +13,17 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d17e325465ce5aa575a6d499aa6b8bf73e07696
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d3478b1a56d8640298da8f6bcd5ca722e3244a15
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978939"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370431"
 ---
 # <a name="troubleshoot-operational-issues-with-the-siebel-adapter"></a>Siebel アダプターを使用した運用上の問題をトラブルシューティングします。
 ここでは説明を使用する場合に発生する可能性が運用上の問題に関する情報をまとめて、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]します。  
   
-## <a name="enabling-tracing"></a>トレースを有効にします。  
+## <a name="enabling-tracing"></a>トレースの有効化  
  トレースのサポートについては、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]を参照してください[診断トレースとメッセージのログの Siebel アダプターの](../../adapters-and-accelerators/adapter-siebel/diagnostic-tracing-and-message-logging-for-the-siebel-adapter.md)します。  
   
 ## <a name="known-issues"></a>既知の問題  
@@ -174,7 +174,7 @@ Error saving properties.
   
   **解決方法**  
   
-  送信ポートまたは BizTalk オーケストレーションでメッセージ コンテキスト プロパティとしては、SOAP アクションを指定します。 手順については、[Siebel の SOAP アクションを構成する](../../adapters-and-accelerators/adapter-siebel/configure-the-soap-action-for-siebel.md)を参照してください。 参照してください[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)の各操作のアクションの一覧。  
+  送信ポートまたは BizTalk オーケストレーションでメッセージ コンテキスト プロパティとしては、SOAP アクションを指定します。 手順については、次を参照してください。 [Siebel の SOAP アクションを構成する](../../adapters-and-accelerators/adapter-siebel/configure-the-soap-action-for-siebel.md)します。 参照してください[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)の各操作のアクションの一覧。  
   
 ###  <a name="BKMK_SiebelXmlParsing"></a> 指定したアクションで、正しくない操作名により XmlReaderParsingException  
  **問題**  

@@ -1,5 +1,5 @@
 ---
-title: '手順 10: エンド ツー エンド シナリオの確認 |Microsoft Docs'
+title: 手順 10:エンド ツー エンド シナリオの確認 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43d95e54bbcf0c7c716630305b85ba8b9bed1a52
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 081f2e7f81c7ea293cac8717434a451d0d2ecd6f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289057"
 ---
-# <a name="step-10-verify-the-end-to-end-scenario"></a>手順 10: エンド ツー エンド シナリオを確認します。
+# <a name="step-10-verify-the-end-to-end-scenario"></a>手順 10:エンド ツー エンド シナリオを確認します。
 この手順では、このチュートリアルでは、エンド ツー エンド シナリオを確認します。  
   
 ### <a name="to-verify-the-end-to-end-tutorial-scenario"></a>エンド ツー エンドのチュートリアルのシナリオを確認するには  

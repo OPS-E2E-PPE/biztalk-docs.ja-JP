@@ -1,5 +1,5 @@
 ---
-title: アプリケーション エラー |Microsoft ドキュメント
+title: アプリケーション エラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f3fce3c32a607aab914fdef920aac9d541c44c3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8fa1de1035dd1a51c2ab3defdd45930d19930153
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230330"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359393"
 ---
 # <a name="application-errors"></a>アプリケーション エラー
 ここでは、WCF のアプリケーション エラーを診断および解決するための詳細について説明します。  
@@ -28,6 +28,6 @@ ms.locfileid: "22230330"
   
 -   [必要な関連アプリケーション名が指定されていません](../core/required-affiliate-application-name-not-specified.md)  
   
--   [Web ポートでサーバーにホストが見つかりません。](../core/web-server-on-host-port-not-found.md)  
+-   [ホスト ポートの Web サーバーが見つかりません](../core/web-server-on-host-port-not-found.md)  
   
--   [使用できないホスト上の World Wide Web サービス](../core/world-wide-web-service-on-host-not-available.md)
+-   [ホストの World Wide Web サービスを使用できません](../core/world-wide-web-service-on-host-not-available.md)

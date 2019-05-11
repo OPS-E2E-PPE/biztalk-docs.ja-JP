@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8dd9e4bbf08d73c8fa48113aad1ecf12fdf0f237
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c61af5ce33a4d1a2fe092a0974daa522d4ef3176
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001987"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370604"
 ---
 # <a name="siebelconnection-class-in-the-siebel-adapter"></a>Siebel アダプターの SiebelConnection クラス
 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] 、基になるにアクセスする[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] `Binding`、`ConnectionFactory`と`Channel`Siebel システムに接続します。 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]実装、`DbConnection`クラスには、上記をサポートするためにします。  
@@ -47,13 +47,13 @@ connection.ConnectionString = connectionString;
  `SiebelConnection`クラスは、次をサポート`DbConnection`プロパティ。  
 
 
-|         名前         |   取得/設定   |                                                                                                      説明                                                                                                       |
+|         名前         |   Get/Set   |                                                                                                      説明                                                                                                       |
 |----------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **ConnectionString** | Get と Set |                                                                                  接続を開くために使用する文字列を取得または設定します。                                                                                  |
+| **ConnectionString** | Get と Set |                                                                                  取得または設定、接続を開くために使用する文字列。                                                                                  |
 |     **[データベース]**     |     取得     |        接続が開かれる前に、接続文字列で指定されたデータベース名または接続が開かれた後に、現在のデータベースの名前を取得します。 Siebel リポジトリ名があります。         |
 |    **DataSource**    |     取得     |                                                                                この接続の Siebel ゲートウェイの名前を取得します。                                                                                |
 |  **ServerVersion**   |     取得     | 現在のバージョンで[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]、Siebel サーバーの実際のバージョンを表していないハード コーディングされた値を返します。 |
-|      **State**       |     取得     |                                               接続の状態を表す文字列を取得します。 これは 3 つの値を含めることができます: オープン、切断、または終了します。                                               |
+|      **State**       |     取得     |                                               接続の状態を説明する文字列を取得します。 これは、3 つの値を含めることができます。開く、BROKEN、または終了します。                                               |
 
 ## <a name="supported-methods"></a>サポートされているメソッド  
  `SiebelConnection`クラスは、次をサポート`DbConnection`メソッド。  

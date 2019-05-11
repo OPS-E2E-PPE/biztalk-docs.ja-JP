@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a80eeae5a71ca66f2bfb53bfc33f15d7d041203b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 05d22dffdf99285c5def9843d2a9aa67a90b7175
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002115"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373954"
 ---
 # <a name="configure-a-physical-port-binding-using-a-port-binding-file-to-sap"></a>Sap ポートのバインド ファイルを使用して物理的なポート バインドを構成します。
 使用すると、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]メタデータ スキーマ ファイル以外、SAP アーティファクトを生成する、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]ポートのバインド ファイルも生成されます。 BizTalk アプリケーションを作成する物理送信ポートまたは受信ポートには、このバインド ファイルをインポートできます。 [SAP アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)バインド ファイルをインポートする手順について説明します。 このバインド ファイルをインポートする場合は、手動で作成する物理送信ポートまたは受信ポートをする必要はありません。  
@@ -31,7 +31,7 @@ ms.locfileid: "37002115"
  ポートのバインド ファイルを常に使用するポートを作成する、双方向の送信を作成します。 または、受信ポート。 一方向のポートを作成する場合は、ことができます、手動で作成する手順を使用して[SAP アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sap/manually-configure-a-physical-port-binding-to-the-sap-adapter.md)します。 または、一方向のポートを作成するポートのバインド ファイルを変更するには、このトピックに記載されている回避策を利用できます。  
   
 > [!IMPORTANT]
->  使用して、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] WCF SAP ポートを作成することができますを使用してポートのバインド ファイルを作成しません。 ただし、によって生成されたポートのバインド ファイルにいくつかの変更を加える可能性があります、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] WCF SAP ポートの作成に使用します。 詳細については、[ポートのバインド ファイルが生成を使用して Consume Adapter Service アドインを使用して WCF SAP ポートを構成する](#BKMK_add_wcf_sap)を参照してください。  
+>  使用して、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] WCF SAP ポートを作成することができますを使用してポートのバインド ファイルを作成しません。 ただし、によって生成されたポートのバインド ファイルにいくつかの変更を加える可能性があります、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] WCF SAP ポートの作成に使用します。 詳細については、次を参照してください。[ポートのバインド ファイルが生成を使用して Consume Adapter Service アドインを使用して WCF SAP ポートを構成する](#BKMK_add_wcf_sap)します。  
   
  によって生成されたバインド ファイルに関して理解しておく必要があります重要な点を次に、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]:  
   

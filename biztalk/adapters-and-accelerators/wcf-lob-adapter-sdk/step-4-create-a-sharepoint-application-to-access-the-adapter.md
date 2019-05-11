@@ -1,5 +1,5 @@
 ---
-title: '手順 4: アダプターにアクセスする Sharepoint アプリケーションの作成 |Microsoft Docs'
+title: 手順 4:アダプターにアクセスする Sharepoint アプリケーションの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15da47a4171d6bdf4f3b53e2208851bd15ecb0d6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 37ee9f9c458fc16d7934d64ddb736a5f0c7f30a2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986643"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363163"
 ---
-# <a name="step-4-create-a-sharepoint-application-to-access-the-adapter"></a>手順 4: アダプターにアクセスする Sharepoint アプリケーションを作成します。
+# <a name="step-4-create-a-sharepoint-application-to-access-the-adapter"></a>手順 4:アダプターにアクセスする Sharepoint アプリケーションを作成します。
 ![手順 4 の 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")  
   
  **所要時間:** 15 分  
@@ -28,7 +28,7 @@ ms.locfileid: "36986643"
   
 ## <a name="prerequisites"></a>前提条件  
   
--   作成済みアプリケーションのファイル」の説明に従って[手順 3: アプリケーション定義ファイルを作成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-create-an-application-definition-file.md)です。  
+-   作成済みアプリケーションのファイル」の説明に従って[手順 3。アプリケーション定義ファイルを作成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-create-an-application-definition-file.md)です。  
   
 -   Microsoft シングル サインオン サービスを実行する必要があります。  
   
@@ -68,7 +68,7 @@ ms.locfileid: "36986643"
   
 4.  エンタープライズ アプリケーション定義の管理 ページで、次のようにクリックします。**新しい項目の**します。  
   
-5.  作成エンタープライズ アプリケーション定義 ページで、設定、**表示名**フィールドを**EchoSSO**、し、設定、**アプリケーション名**フィールドを**EchoSSO**します。 この値がで指定した SecondarySsoApplicationId と一致する必要があります[手順 3: アプリケーション定義ファイルを作成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-create-an-application-definition-file.md)です。  
+5.  作成エンタープライズ アプリケーション定義 ページで、設定、**表示名**フィールドを**EchoSSO**、し、設定、**アプリケーション名**フィールドを**EchoSSO**します。 この値がで指定した SecondarySsoApplicationId と一致する必要があります[手順 3。アプリケーション定義ファイルを作成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-create-an-application-definition-file.md)です。  
   
 6.  **連絡先の電子メール アドレス**フィールドを電子メール アドレスを入力し、をクリックし、 **OK**します。  
   
@@ -91,7 +91,7 @@ ms.locfileid: "36986643"
 8.  をクリックして**OK**、順にクリックします**完了**します。  
   
 ## <a name="creating-a-shared-services-provider-and-importing-the-application-definition-file"></a>共有サービス プロバイダーを作成し、アプリケーション定義ファイルをインポートします。  
- 共有サービス プロバイダー (SSP) は、共有サービスとその関連リソースの論理グループです。 SSP は、SharePoint サーバーの全体管理コンソールを使用して作成できます。 この例は、任意 SSP. で動作します。 SSP の作成の詳細については、"」の章の概要: を作成および構成共有サービスのプロバイダー"で[ http://go.microsoft.com/fwlink/?LinkId=105119](http://go.microsoft.com/fwlink/?LinkId=105119)を参照してください。  
+ 共有サービス プロバイダー (SSP) は、共有サービスとその関連リソースの論理グループです。 SSP は、SharePoint サーバーの全体管理コンソールを使用して作成できます。 この例は、任意 SSP. で動作します。 SSP の作成の詳細については、次を参照してください。"」の章の概要。作成し、共有サービス プロバイダーを構成する"で[ http://go.microsoft.com/fwlink/?LinkId=105119](http://go.microsoft.com/fwlink/?LinkId=105119)します。  
   
 ### <a name="to-import-the-application-definition-file"></a>アプリケーション定義ファイルをインポートするには  
   

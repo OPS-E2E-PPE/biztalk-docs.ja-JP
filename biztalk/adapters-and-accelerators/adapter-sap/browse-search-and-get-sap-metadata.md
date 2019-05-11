@@ -21,12 +21,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa942786cda8c5e1070b3fa1c66e3300ffd16d4f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a3252270554cb723c0bec5b6c4ae1abfdb50392c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984059"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374068"
 ---
 # <a name="browse-search-and-get-sap-metadata"></a>参照、検索、および SAP メタデータの取得
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムからのサーフェスのメタデータ。 このメタデータには、アダプターを使用して SAP システムと通信するためのメッセージの構造について説明します。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]メタデータを取得するための 2 つのインターフェイスをサポートしています。  
@@ -48,11 +48,11 @@ ms.locfileid: "36984059"
   
 - **RFC**します。 このノードは、SAP システムによって公開されている Rfc を含み、SAP で関数モジュールを表します。 アダプターは、Rfc を複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 RFC がこの階層の最下位レベルであり、外部アプリケーションによって呼び出すことができる操作として公開されます。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] RFC SDK を使用して、Rfc のメタデータを生成します。 アダプターは、メタデータを生成できます Rfc のみを呼び出すことができます。  
   
-   以外の操作として Rfc を表示するには、アダプターもサーフェスのいくつかの特定の操作など**RfcGetAttributes**します。 これらの操作の詳細については、[SAP で Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)を参照してください。  
+   以外の操作として Rfc を表示するには、アダプターもサーフェスのいくつかの特定の操作など**RfcGetAttributes**します。 これらの操作の詳細については、次を参照してください。 [SAP で Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)します。  
   
 - **TRFC**. このノードには、SAP システムによって公開される Trfc が含まれています。 Trfc は、SAP システムが Rfc を呼び出すためのメカニズムではなくで従来の成果物ではありません。 Trfc は、メタデータ特性が Rfc に異なるため、個別のノード下に分類されます。 具体的には、Rfc には、エクスポートのパラメーターも含まれます。 アダプターは、Trfc を複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 TRFC がこの階層の最下位レベルであり、外部アプリケーションによって呼び出すことができる操作として公開されます。  
   
-   以外の操作として Trfc を提示するには、アダプターもサーフェスのいくつかの特定の操作など**RfcConfirmTransID**します。 これらの操作の詳細については、[SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)を参照してください。  
+   以外の操作として Trfc を提示するには、アダプターもサーフェスのいくつかの特定の操作など**RfcConfirmTransID**します。 これらの操作の詳細については、次を参照してください。 [SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)します。  
   
 - **BAPI**します。 このノードには、SAP システムによって公開される Bapi が含まれています。 アダプターは、Bapi を複数の論理レベルに分類し、アダプターのクライアントを階層ビューを公開します。 BAPI がこの階層の最下位レベルであり、外部アプリケーションによって呼び出すことができる操作として公開されます。  
   
@@ -62,9 +62,9 @@ ms.locfileid: "36984059"
   
   - **SendIdoc**と**ReceiveIdoc**します。 アダプターのクライアントは、厳密に型指定のスキーマを使用して SAP システムから Idoc を送受信するこれらの操作を使用できます。  
   
-    これらの操作の詳細については、[sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)を参照してください。  
+    これらの操作の詳細については、次を参照してください。 [sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)します。  
   
-  メタデータの分類方法の詳細については、[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)を参照してください。  
+  メタデータの分類方法の詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)します。  
   
 ## <a name="searching-metadata"></a>メタデータの検索  
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、アダプター クライアントは、基になる Rfc に依存する検索式を使用して SAP システムでメタデータを検索することができる[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を使用します。 次の表は、SAP アイテムとメタデータの階層をアダプター クライアントを検索できます。  
@@ -74,7 +74,7 @@ ms.locfileid: "36984059"
 |RFC|-   /RFC<br />-/RFC/[アプリケーション グループ]|  
 |tRFC|-   /TRFC<br />-/TRFC/[アプリケーション グループ]|  
 |BAPI|-/BAPI|  
-|IDOC|-/IDOC|  
+|IDOC|-   /IDOC|  
   
  次の表に、検索とその解釈で使用できる特殊文字、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
@@ -104,7 +104,7 @@ ms.locfileid: "36984059"
 >   - 異なる SAP サーバーに同じ Rfc には、別の順序の関数のパラメーターを公開する可能性があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]一貫性のあるアルファベット順にパラメーターを公開することで、この違いをユーザーに透過的なにより、します。  
 > 
 > [!NOTE]
->  使用して SAP システムからデータを取得中に、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]サービス モデル、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] 65536 の複数のノードを持つメッセージを逆シリアル化ではありません。 応答メッセージが 65536 のノード以下を確認します。 この制限を回避するには、アプリケーションの app.config ファイルを変更します。 手順については、[運用上の問題のトラブルシューティングを行う](../../adapters-and-accelerators/adapter-oracle-database/troubleshoot-operational-issues-with-the-oracle-database-adapter.md)を参照してください。  
+>  使用して SAP システムからデータを取得中に、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]サービス モデル、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] 65536 の複数のノードを持つメッセージを逆シリアル化ではありません。 応答メッセージが 65536 のノード以下を確認します。 この制限を回避するには、アプリケーションの app.config ファイルを変更します。 手順については、次を参照してください。[運用上の問題のトラブルシューティングを行う](../../adapters-and-accelerators/adapter-oracle-database/troubleshoot-operational-issues-with-the-oracle-database-adapter.md)します。  
   
  詳細については、参照、検索、およびメタデータを取得するを参照してください[Visual Studio で SAP 操作のメタデータの取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)します。  
   

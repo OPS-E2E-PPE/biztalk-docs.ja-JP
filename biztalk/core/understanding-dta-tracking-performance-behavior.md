@@ -12,37 +12,37 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37c0f1749e87556d52ec9cc1ab84ed64f64a88c6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 409138a38b75aebdd4e2df63d23e301dae483738
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979707"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292675"
 ---
-# <a name="understanding-dta-tracking-performance-behavior"></a>DTA 追跡のパフォーマンス特性について
-DTA 追跡の維持可能な最大スループット (MST) を決定する主要な要因として、次のものがあります。  
+# <a name="understanding-dta-tracking-performance-behavior"></a>DTA 追跡のパフォーマンス特性を理解します。
+DTA 追跡の維持可能な最大のスループット (MST) を決定する主な要因は次のとおりです。  
   
-- システムに必要なメッセージのスループット (単位時間に受信されたメッセージ)。  
+- 目的のメッセージのスループット、つまり、システムの単位時間あたりの受信メッセージ。  
   
-- メッセージごとの追跡データ量。  
+- メッセージごとに、データの量が追跡されています。  
   
-- データが BizTalkDTADb データベースから削除されるまでの存続期間 (データ保有期間)。  
+- BizTalkDTADb データベースから削除されるまで、つまり、データのリテンション期間の有効期限は、データをどのくらいの時間です。  
   
-- BizTalkDTADb のデータをアーカイブして削除するかどうか。 アーカイブは任意ですが、削除は定期的に行う必要があります。  
+- かどうか、BizTalkDTADb データがアーカイブだけでなく削除します。 アーカイブは省略可能ですが、削除し、定期的に実行する必要があります。  
   
-  これらの要因のすべてに共通するのは、DTA がデータを受け入れて処理 (アーカイブおよび削除) する速度です。  
+  1 つあります共通これらすべての要素があること。 位置、DTA はそのまま使用し、処理の速度 (アーカイブおよび削除) のデータ。  
   
-## <a name="how-the-biztalkdtadb-insert-and-processing-speed-affects-your-system"></a>BizTalkDTADb の挿入と処理速度がシステムに与える影響  
+## <a name="how-the-biztalkdtadb-insert-and-processing-speed-affects-your-system"></a>BizTalkDTADb の挿入と処理速度がシステムに影響  
  次に、追跡してみましょうで説明されているデータの経路[維持可能な最大の追跡スループットの測定](../core/measuring-maximum-sustainable-tracking-throughput.md)、およびシステムのさまざまなコンポーネントで BizTalkDTADb の挿入と処理速度の影響を評価します。  
   
- まず trackingdata テーブルとスプール テーブルについて考えてみると、これらのテーブルから BizTalkDTADb データベースにデータを移動するプロセスが、ランタイムによって trackingdata テーブルおよびスプール テーブルにデータが挿入されるのと同等以上の速度で BizTalkDTADb データベースにデータを挿入できなければ、trackingdata テーブルおよびスプール テーブルにバックログが蓄積され始めることは想像がつきます。 これは、メッセージ スループットの低下により最終的にはバックログを解消できることがわかっている限り、短期的には必ずしも問題にはなりません。 しかし、データがスプール テーブルまたは trackingdata テーブルに残っている間は、BizTalkDTADb データベースのデータを [グループ ハブ] ページでクエリを追跡したりその他のツールで照会することはできません。  このため、問題解決には役立ちません。 したがって、想定されるバックログ期間は、BizTalkDTADb データに基づいて調査する必要のある問題が発生した時点でタイムリーに追跡情報を利用できる程度に抑える必要があります。  
+ 以降、trackingdata テーブルおよびスプール テーブルでは、想像が、これらのテーブルから BizTalkDTADb データベースにデータを移動するプロセスは、少なくとも同じ速度に、ランタイムを挿入、BizTalkDTADb データベースにデータを挿入することがない場合、trackingdata テーブルとスプール テーブル、スプールと trackingdata テーブルは、バックログが蓄積が開始されます。 最終的にドレインするまでにバックログを許可するメッセージのスループットに減少することがわかっている限りいない必ずしも短期的に悪いことになります。 ただし、として、スプール テーブルまたは trackingdata テーブルには、データが残っている間、そのされません、BizTalkDTADb データベースのグループ ハブ ページまたはその他のツールでクエリを追跡することによってクエリで使用できます。  したがって、されません問題解決のために便利です。 そのため、想定されるバックログ期間が短いことから追跡情報の問題が発生する必要がありますも BizTalkDTADb のデータを使用して、調査に必要な適切なタイミングで引き続き使用できますがあります。  
   
- テストの結果、バックログが蓄積されるかどうかを決定する要因は、追跡データを BizTalkDTADb データベースに移動するプロセス (TDDS および TrackedMessages_Copy_BizTalkMsgBoxDb) ではなく、BizTalkDTADb データベースが入力を受け入れる速度であることがわかっています。 通常、I/O バインドになるのは BizTalkDTADb データベースのデータ ファイルです。 つまり、DTA 全体の速度を決定するのは、BizTalkDTADb データベースのデータ ファイルが存在するドライブの速度ということになります。  
+ テストからわかる決定要因は、バックログが蓄積する場合 BizTalkDTADb データベース (TDDS および TrackedMessages_Copy_BizTalkMsgBoxDb) が、速度で BizTalkDTADb データベースの追跡データを移動するプロセスではありません。入力を受け入れます。 通常、I/O バウンドになっている BizTalkDTADb データベースのデータ ファイルになります。 つまりに BizTalkDTADb データベースのデータ ファイルが置かれているドライブの速度は、DTA 全体の速度を決定するをお勧めします。  
   
-## <a name="how-the-amount-of-data-in-biztalkdtadb-affects-io-speed"></a>BizTalkDTADb のデータ量が I/O 速度に与える影響  
- I/O 速度に関連するもう 1 つの主要な要因は、BizTalkDTADb データベースのデータ量です。BizTalkDTADb データベース内の追跡データの量が多くなると、新しいデータの挿入時に並べ替えるデータの量が多くなり、これが挿入ごとに必要な I/O の量に影響するため、BizTalkDTADb データベースの入力および処理の速度は低下します。  
+## <a name="how-the-amount-of-data-in-biztalkdtadb-affects-io-speed"></a>BizTalkDTADb のデータの量が I/O 速度に与える影響  
+ I/O 速度に関連するもう 1 つの主要要素が BizTalkDTADb データベース内のデータの量単により多くのデータであるために、BizTalkDTADb データベースの入力および処理の速度が低下として BizTalkDTADb データベースが増えるの追跡データの量、。新しいデータの挿入し、挿入ごとに必要な I/O の量に影響を並べ替えます。  
   
- ここでかかわってくるのが、BizTalkDTADb データベースのサイズが大きくなりすぎないように維持するアーカイブと削除のプロセスです。 基本的な考え方は、BizTalkDTADb データベースのサイズを抑え、スプール テーブルと trackingdata テーブルにデータが滞り始めるレベルに達しないようにするというものです。 ただし、DTA Purge and Archive (BizTalkDTADb) SQL ジョブに実装されている削除とアーカイブのプロセスも BizTalkDTADb データベース サーバーのリソース (CPU、メモリ、そして特に I/O) を必要とするため、追跡を有効にして MST を測定する際にはこの点も考慮する必要があります。  
+ これは、アーカイブおよび削除でかかわってくる大きくなりすぎるため、BizTalkDTADb データベースを保持するプロセスです。 基本的な考え方では、位置が滞り始めるスプールと trackingdata テーブル レベルの下、BizTalkDTADb データベースのサイズを保持することを確認します。 ただし、DTA Purge and Archive (BizTalkDTADb) SQL ジョブで実装されている削除とアーカイブのプロセスも必要なリソース (CPU、メモリ、および特に I/O) での MST を測定するときに考慮する必要があります、BizTalkDTADb データベース サーバーから追跡します。  
   
 ## <a name="see-also"></a>参照  
  [維持可能な最大の追跡スループットの測定](../core/measuring-maximum-sustainable-tracking-throughput.md)   

@@ -18,17 +18,17 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: caa2c97170ff374e9acf8c1d3d4ebc7258ad69ac
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1c71bd431670d7a46721f626765e76f21c3882f2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005051"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393228"
 ---
 # <a name="setting-the-polling-interval-on-the-batching-sql-adapter-receive-location"></a>バッチ処理 SQL アダプター受信場所のポーリング間隔の設定
 間隔を設定できます、ポーリングでバッチ処理 SQL アダプター受信場所 (**BatchControlMessageRecvLoc**) の開発と運用環境のコンピューターでそれぞれ異なる。 開発サーバーでは、ポーリング間隔は 30 秒の既定値のままにして、アグリーメントのバッチ処理オーケストレーションをすばやくアクティブ化できるようにすることをお勧めします。 ただし実稼働サーバーでは、30 秒に設定するとパフォーマンスに影響する場合があります。 バッチをアクティブ化した後、ポーリング間隔を 5 分などの高い値に設定することをお勧めします。  
   
- パーティの詳細については、[管理パーティ](../core/managing-parties.md)を参照してください。  
+ パーティの詳細については、次を参照してください。[管理パーティ](../core/managing-parties.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。  

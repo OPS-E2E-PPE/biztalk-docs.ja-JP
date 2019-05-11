@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee7f6a4942d1ea6980850cbbbdc5336b7a01cffc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 53a5021825d7e707b0f7f63935145986252ddc32
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369409"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-sql"></a>SQL 用 BizTalk アダプターを概要します。
 

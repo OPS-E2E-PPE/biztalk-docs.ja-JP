@@ -1,5 +1,5 @@
 ---
-title: '手順 3 b: 対話の受信場所が、対話ストアと転送シナリオの追加 |Microsoft ドキュメント'
+title: 手順 3 b:INTERACT の受信場所 InterAct ストア アンド フォワード シナリオ用の追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,66 +12,66 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0e9aa8e153cf510f2d24cbe30a62317d26810e4a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 0dd50d40c033fa319e2690ea1a3c6773f694bec5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966672"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65365634"
 ---
-# <a name="step-3b-add-an-interact-receive-location-for-the-interact-store-and-forward-scenario"></a>手順 3 b: 追加、対話の受信場所が、対話ストアと転送シナリオ
-完全な[手順 3A: InterAct ストア アンド フォワードのシナリオのファイルの受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-interact-store-and-forward-scenario.md)この手順を開始する前にします。
+# <a name="step-3b-add-an-interact-receive-location-for-the-interact-store-and-forward-scenario"></a>手順 3 b:INTERACT の受信場所 InterAct ストア アンド フォワード シナリオ用の追加します。
+完全な[手順 3 a:InterAct ストア アンド フォワード シナリオ用のファイルの受信場所を追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-interact-store-and-forward-scenario.md)この手順を開始する前にします。
   
-## <a name="add-an-interact-receive-location"></a>受信場所が、対話を追加します。  
+## <a name="add-an-interact-receive-location"></a>INTERACT の受信場所を追加します。  
   
-1.  開始**BizTalk Server 管理**です。  
+1.  開始**BizTalk Server 管理**します。  
   
-2.  コンソール ツリーで、BizTalk グループを展開し、受信ポートを作成する BizTalk アプリケーションの順に展開します。  
+2.  コンソール ツリーで、BizTalk グループを展開し、受信ポートを作成する BizTalk アプリケーションを順に展開します。  
   
-3.  右クリック**受信ポート**、 をポイント**新規**、クリックして**一方向の受信ポート。**  
+3.  右クリック**受信ポート**、 をポイント**新規**、 をクリックし、**一方向の受信ポート。**  
   
-4.  **受信ポートのプロパティ**ウィンドウで、受信ポート名 Tutorial_IA_HandleRequestOneWay_SnF です。  
+4.  **受信ポートのプロパティ**ウィンドウで、名前、受信ポート Tutorial_IA_HandleRequestOneWay_SnF します。  
   
-5.  **受信ポートのプロパティ** ウィンドウで、**受信場所** タブで、をクリックして**新規**です。  
+5.  **受信ポートのプロパティ**ウィンドウで、**受信場所**] タブで [**新規**します。  
   
-6.  **受信場所のプロパティ**ウィンドウの**全般** タブから、**トランスポートの種類**ドロップダウン リストで、 **INTERACT**、クリックして**構成**です。  
+6.  **受信場所のプロパティ**ウィンドウの**全般** タブから、**トランスポートの種類**ドロップダウン リストで、 **INTERACT**、クリックして**構成**します。  
   
-7.  **トランスポートのプロパティの対話** ダイアログ ボックスで、次の操作します。  
+7.  **トランスポートのプロパティの対話** ダイアログ ボックスで、次の操作を行います。  
   
-    |**これを使用してください。**|**これを行う**|  
+    |**これを使用して、**|**これを行う**|  
     |------------------|--------------------|  
-    |**Password**|SAG への接続に使用するパスワードを入力します。 詳細については、SAG のヘルプを参照してください。|  
+    |**Password**|SAG への接続に使用するパスワードを入力します。 詳細については、SAG ヘルプを参照してください。|  
     |**ユーザー名**|SAG への接続に使用するユーザー名を入力します。|  
-    |**アプリケーション名**|サーバーを入力\<アプリケーション インターフェイス名\>SAG のボックス ルーティング セット。|  
-    |**暗号化モード**|ドロップダウン リストから選択**詳細**です。|  
-    |**LogMessageBody**|ドロップダウン リストから選択**FALSE**です。 **注:** を TRUE に設定する場合、BizTalk 追跡データベースでメッセージ本文が保持されます。 ただし、セキュリティ上の理由から、メッセージの本文見なすことができることはありません、BAM ポータルにします。|  
-    |**し**|ドロップダウン リストから選択**TRUE**です。 これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。|  
-    |**メッセージの形式**|ドロップダウン リストから選択**InterActMessage**です。|  
-    |**MemberRef**|ドロップダウン リストから選択**ResponseHeader**です。|  
-    |**否認不可インジケーター**|ドロップダウン リストから選択**FALSE**です。|  
-    |**応答側**|適切な入力\<レスポンダー\> SWIFT でのプロビジョニングに基づく文字列。|  
-    |**ResponseCrypto**|ドロップダウン リストから選択**FALSE**です。|  
+    |**アプリケーション名**|サーバーの入力\<アプリケーション インターフェイス名\>SAG のボックス ルーティング セット。|  
+    |**暗号モード**|ドロップダウン リストから選択**詳細**します。|  
+    |**LogMessageBody**|ドロップダウン リストから選択**FALSE**します。 **注:** TRUE に設定した場合は、BizTalk 追跡データベースでメッセージの本文を保持します。 ただし、セキュリティ上の理由から、メッセージ本文は、BAM ポータルでは表示ことはありませんすることができます。|  
+    |**し**|ドロップダウン リストから選択**TRUE**します。 これにより、メッセージ イベントをキャプチャし、BAM ポータルで追跡できます。|  
+    |**メッセージの形式**|ドロップダウン リストから選択**InterActMessage**します。|  
+    |**MemberRef**|ドロップダウン リストから選択**ResponseHeader**します。|  
+    |**否認不可のインジケーター**|ドロップダウン リストから選択**FALSE**します。|  
+    |**応答側**|適切な入力\<レスポンダー\> SWIFT で、プロビジョニングに基づく文字列。|  
+    |**ResponseCrypto**|ドロップダウン リストから選択**FALSE**します。|  
     |**Timeout**|適切なタイムアウトが発生するまでの秒数を入力します。|  
-    |**キューを取得します。**|SWIFT でのプロビジョニングに基づく、キュー名を入力します。|  
-    |**ForceAcquire**|ドロップダウン リストから選択**TRUE**です。|  
-    |**Order by**|ドロップダウン リストから選択**Interact**です。|  
-    |**プッシュ セッション**|ドロップダウン リストから選択**TRUE**です。|  
-    |**回復モード**|ドロップダウン リストから選択**TRUE**です。|  
-    |**SNL エンドポイント**|SAG ルーティング セットの適切なエンドポイントを入力します。 この値は、SAG で構成されている SnL エンドポイントと一致する必要があります。|  
+    |**キューを取得します。**|SWIFT で、プロビジョニングに基づく、キュー名を入力します。|  
+    |**ForceAcquire**|ドロップダウン リストから選択**TRUE**します。|  
+    |**並べ替え**|ドロップダウン リストから選択**Interact**します。|  
+    |**プッシュ セッション**|ドロップダウン リストから選択**TRUE**します。|  
+    |**回復モード**|ドロップダウン リストから選択**TRUE**します。|  
+    |**SNL エンドポイント**|SAG ルーティング セットの適切なエンドポイントを入力します。 この値は、SAG で構成した SnL エンドポイントと一致する必要があります。|  
   
 8.  **[OK]** をクリックします。  
   
-9. **受信場所のプロパティ** ウィンドウで、**全般** タブで、次の操作します。  
+9. **受信場所のプロパティ**ウィンドウの**全般** タブで、次の操作を行います。  
   
-    |**これを使用してください。**|**これを行う**|  
+    |**これを使用して、**|**これを行う**|  
     |------------------|--------------------|  
-    |**受信ハンドラー**|ドロップダウン リストから選択**BizTalkServerIsolatedHost**です。|  
-    |**受信パイプライン**|ドロップダウン リストから選択**XMLReceive**です。|  
+    |**受信ハンドラー**|ドロップダウン リストから選択**BizTalkServerIsolatedHost**します。|  
+    |**受信パイプライン**|ドロップダウン リストから選択**XMLReceive**します。|  
   
 10. **[OK]** をクリックします。  
   
-## <a name="complete-steps"></a>詳細な手順
- [手順 3: 送信ポートを作成し、対話ストアと転送シナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   
- [手順 3: ファイルの受信場所が、対話ストアと転送シナリオの追加](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-interact-store-and-forward-scenario.md)   
- [手順 3C: InterAct ストア アンド フォワード シナリオ用に Sw:HandleRequest メッセージをキャプチャするためにファイルの送信ポートを追加する](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-store-and-forward.md)  
- [手順 3D: InterAct ストア アンド フォワード シナリオ用に INTERACT 送信ポートを追加する](../../adapters-and-accelerators/fileact-interact/step-3d-add-an-interact-send-port-for-the-interact-store-and-forward-scenario.md)
+## <a name="complete-steps"></a>手順を完了します
+ [ステップ 3:送信ポートの作成し、InterAct ストア アンド フォワード シナリオ用の受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   
+ [手順 3 a:InterAct ストア アンド フォワード シナリオ用の場所の受信ファイルを追加します。](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-interact-store-and-forward-scenario.md)   
+ [手順 3 C:InterAct ストア アンド フォワード シナリオ用に Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートの追加します。](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-store-and-forward.md)  
+ [手順 3 D:InterAct ストア アンド フォワード シナリオ用に INTERACT 送信ポートを追加します。](../../adapters-and-accelerators/fileact-interact/step-3d-add-an-interact-send-port-for-the-interact-store-and-forward-scenario.md)

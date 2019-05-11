@@ -1,5 +1,5 @@
 ---
-title: MQSeries アダプターのカスタム ヘッダー |Microsoft ドキュメント
+title: MQSeries アダプターのカスタム ヘッダー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,19 +14,19 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09a05b8c73cd7be84af01eb4465681816e429bc3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 758b0bb33be70f681d4d7ef732e50555d6eca026
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263090"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323790"
 ---
 # <a name="mqseries-adapter-custom-headers"></a>MQSeries アダプターのカスタム ヘッダー
-MQSeries メッセージで使用されるヘッダー構造が原因で、使用するカスタム ヘッダーの管理が必要になります。 カスタム ヘッダーは、MQSeries ヘッダーの処理に影響を与えないように、メッセージ本文の一部にする必要があります。 自動的に昇格されたプロパティは降格させないようにしてください。 自動的に昇格されるプロパティの詳細については、次を参照してください。 [MQSeries アダプターのプロパティ](../core/mqseries-adapter-properties.md)です。  
+MQSeries メッセージで使用されるヘッダー構造、ために使用するカスタム ヘッダーを管理する必要があります。 カスタム ヘッダーは、MQSeries ヘッダーの処理を妨げることを回避するために、メッセージ本文の一部である必要があります。 自動的に昇格されたプロパティの降格を避けることを確認します。 自動的に昇格されるプロパティの詳細については、次を参照してください。 [MQSeries アダプター プロパティ](../core/mqseries-adapter-properties.md)します。  
   
- 上記の内容から、カスタム ヘッダーをメッセージ本文に組み込むには、追加処理が必要です。 1 つの解決策は、カスタム ヘッダーをアプリケーションのパイプラインで処理することです。 受信パイプラインでは、カスタム ヘッダー情報を抽出し、その情報をコンテキスト プロパティとして昇格させます。 同様に、送信パイプラインでは、カスタム ヘッダーに対応するコンテキスト プロパティを取得し、それらのプロパティをメッセージ本文内に降格させます。  
+ さらに、メッセージの本文にカスタム ヘッダーを組み込むことでは、追加の処理が必要です。 1 つのソリューションでは、アプリケーションのパイプラインでカスタム ヘッダーを処理します。 受信パイプラインは、カスタム ヘッダー情報を抽出し、コンテキスト プロパティと情報を昇格させます。 同様に、送信パイプラインでは、カスタム ヘッダーに対応するコンテキスト プロパティは、し、メッセージの本文のプロパティを降格させます。  
   
- パイプライン コンポーネントでカスタム ヘッダーの使用の例は、次を参照してください。 [MQSSendPipelineComponent (BizTalk Server サンプル)](../core/mqssendpipelinecomponent-biztalk-server-sample.md)です。  
+ パイプライン コンポーネントでカスタム ヘッダーの使用の例は、次を参照してください。 [MQSSendPipelineComponent (BizTalk Server サンプル)](../core/mqssendpipelinecomponent-biztalk-server-sample.md)します。  
   
 ## <a name="see-also"></a>参照  
- [MQSeries アダプターのプロパティ](../core/mqseries-adapter-properties.md)
+ [MQSeries アダプター プロパティ](../core/mqseries-adapter-properties.md)

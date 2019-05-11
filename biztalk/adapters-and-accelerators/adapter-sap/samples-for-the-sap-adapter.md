@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c1926c9899d1c1198998c25845d5d6b4189884f0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 272f07f637f276f1d56767eaab78b97d9e343667
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012067"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373074"
 ---
 # <a name="samples-for-the-sap-adapter"></a>SAP アダプターのサンプル
 サンプルは[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]に分類されます。  
@@ -32,7 +32,7 @@ ms.locfileid: "37012067"
 - [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] サンプル  
 
 
- サンプルについては、「 [BizTalk Adapter Pack 2010: SAP アダプタ サンプル](https://www.microsoft.com/download/details.aspx?id=1314)します。 
+ サンプルについては、「 [BizTalk Adapter Pack 2010。SAP アダプタ サンプル](https://www.microsoft.com/download/details.aspx?id=1314)します。 
 
 > [!NOTE]
 > [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]

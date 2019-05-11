@@ -1,5 +1,5 @@
 ---
-title: 'AddResource コマンド: ファイル |Microsoft Docs'
+title: AddResource コマンド:ファイル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b4878e74d1c45e5d75280a5ce9daf5447ed1e905
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0e8245db8476f84601d5c008f5a397c2d49bc342
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360608"
 ---
-# <a name="addresource-command-file"></a>AddResource コマンド: ファイル
-使用する BizTalk アプリケーションに、ファイルを追加する、 **AddResource**コマンドを指定**System.BizTalk:File**型パラメーター。 このコマンドを実行すると、該当するファイルが BizTalk 管理データベースに追加されます。 このファイルは、BizTalk 管理コンソール (追加先アプリケーションのリソース フォルダー) にも表示されます。 ファイルがさらに、使用すると表示、 [ListApp コマンド](../core/listapp-command.md)します。  
+# <a name="addresource-command-file"></a>AddResource コマンド:ファイル
+使用する BizTalk アプリケーションに、ファイルを追加する、 **AddResource**コマンドを指定**System.BizTalk:File**型パラメーター。 このコマンドを実行すると、BizTalk 管理データベースにファイルが追加されます。 ファイルは、BizTalk 管理コンソールで、追加したアプリケーションのリソース フォルダーにも表示されます。 ファイルがさらに、使用すると表示、 [ListApp コマンド](../core/listapp-command.md)します。  
   
 ## <a name="usage"></a>使用方法  
  **BTSTask AddResource** [**/applicationname は:**<em>値</em>] **/Type:System.BizTalk:File** **[/overwrite]** **/Source:**<em>値</em>[**/Destination:**<em>値</em>] [**/Server:** <em>値</em>] [**/database:**<em>値</em>]  
@@ -38,7 +38,7 @@ ms.locfileid: "36982443"
 |**/データベース**(または **/Da**、「解説」を参照してください)|いいえ|BizTalk 管理データベースの名前。 指定されていない場合は、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
   
 ## <a name="sample"></a>サンプル  
- **BTSTask AddResource applicationname: myapplication/Type: System.BizTalk:File/overwrite/Source:"C:\Source Files\File.txt"/Destination:"C:\New Files\File.txt"/Server:MyDatabaseServer/Database:BizTalkMgmtDb**  
+ **BTSTask AddResource applicationname: myapplication/Type:System.BizTalk:File   /Overwrite /Source:"C:\Source Files\File.txt" /Destination:"C:\New Files\File.txt" /Server:MyDatabaseServer /Database:BizTalkMgmtDb**  
   
 ## <a name="remarks"></a>コメント  
  パラメーターの大文字と小文字は区別されません。 パラメーター名は、すべて入力する必要はありません。最初の数文字 (一意に特定できるだけの文字数) を入力するだけで構いません。  

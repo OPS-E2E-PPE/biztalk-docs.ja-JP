@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 724d5bc41686abc3928716a0e08801107df25055
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d7624211805af0e16df4cd6853f1a425edf874d6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374531"
 ---
 # <a name="support-for-composite-operations"></a>複合操作のサポート
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]により、任意の順序と、次の操作の任意の数を含めることができる複合操作を実行するクライアントはアダプター。  
@@ -47,7 +47,7 @@ ms.locfileid: "36979387"
 - 複合操作のスキーマのメッセージを参照してください[複合操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-the-composite-operation1.md)します。  
   
 > [!NOTE]
->  複合操作でのアプリケーションのコンテキストを設定することも、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 インターフェイス テーブル、またはインターフェイス ビューの複合操作の操作を実行する場合は、複合操作のアプリケーションのコンテキストを設定する必要があります。 アプリケーションのコンテキスト、および設定する方法については、[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)を参照してください。  
+>  複合操作でのアプリケーションのコンテキストを設定することも、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 インターフェイス テーブル、またはインターフェイス ビューの複合操作の操作を実行する場合は、複合操作のアプリケーションのコンテキストを設定する必要があります。 アプリケーションのコンテキスト、および設定する方法については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
   
 ## <a name="see-also"></a>参照  
  [Oracle E-business Suite アダプターによってサポートされる操作](../../adapters-and-accelerators/adapter-oracle-ebs/what-operations-are-supported-by-the-oracle-e-business-suite-adapter.md)

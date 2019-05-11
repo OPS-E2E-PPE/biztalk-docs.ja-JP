@@ -12,19 +12,19 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b66c89ccafa72c56de00aebd24091915643f44e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ac42fce4aa18be316d5090aa95240437d6deed47
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972675"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333977"
 ---
 # <a name="stop-a-host-instance"></a>ホスト インスタンスを停止します。
 
 ## <a name="overview"></a>概要
-使用することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールまたは Windows Management Instrumentation (WMI) をホスト インスタンスを停止します。 コンピューターからホスト インスタンスまたは BizTalk Server を削除する前に、ホスト インスタンスを停止する必要があります。 インストールされ、開始しているホスト インスタンスを停止できます。 ホスト インスタンスの詳細については、[ホスト インスタンス](../core/host-instances.md)を参照してください。  
+使用することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールまたは Windows Management Instrumentation (WMI) をホスト インスタンスを停止します。 コンピューターからホスト インスタンスまたは BizTalk Server を削除する前に、ホスト インスタンスを停止する必要があります。 インストールされ、開始しているホスト インスタンスを停止できます。 ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)します。  
   
- WMI を使用して、ホスト インスタンスを停止する方法の詳細については、**MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+ WMI を使用して、ホスト インスタンスを停止する方法の詳細については、次を参照してください。 **MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
 ## <a name="prerequisites"></a>前提条件  
  ここで示す手順を実行するには、管理者グループのメンバーおよび BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。  
@@ -54,7 +54,7 @@ ms.locfileid: "36972675"
   
     ホスト インスタンスの状態に変わる**Stopped**します。  
   
-   ホスト インスタンスを開始または削除するか、コンピューターから BizTalk Server を削除する場合、まず、ホスト インスタンスを停止する必要があります。 ホスト インスタンスの開始方法の詳細については、[ホスト インスタンスを開始する方法](../core/how-to-start-a-host-instance.md)を参照してください。 ホスト インスタンスの削除方法の詳細については、[ホスト インスタンスを削除する方法](../core/how-to-delete-a-host-instance.md)を参照してください。  
+   ホスト インスタンスを開始または削除するか、コンピューターから BizTalk Server を削除する場合、まず、ホスト インスタンスを停止する必要があります。 ホスト インスタンスの開始方法の詳細については、次を参照してください。[ホスト インスタンスを開始する方法](../core/how-to-start-a-host-instance.md)します。 ホスト インスタンスの削除方法の詳細については、次を参照してください。[ホスト インスタンスを削除する方法](../core/how-to-delete-a-host-instance.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk ホストとホスト インスタンスの管理](../core/managing-biztalk-hosts-and-host-instances.md)   

@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d8373ffa078b0138979e34a154330b429a73664
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3d5998fbdefeb36af8f6a437613523b95b3d9aba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986075"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393477"
 ---
 # <a name="planning-for-consuming-web-services"></a>Web サービスを使用の計画
-Web サービスの計画は、Web サービスを公開し、Web サービスを使用するための計画の計画、2 つのカテゴリに分けることができます。 このトピックでは、Web サービスの使用に関する考慮事項について説明します。 Web サービスを公開する方法については、[Planning for Web の発行 Services1](../technical-guides/planning-for-publishing-web-services1.md)を参照してください。  
+Web サービスの計画は、Web サービスを公開し、Web サービスを使用するための計画の計画、2 つのカテゴリに分けることができます。 このトピックでは、Web サービスの使用に関する考慮事項について説明します。 Web サービスを公開する方法については、次を参照してください。 [Planning for Web の発行 Services1](../technical-guides/planning-for-publishing-web-services1.md)します。  
   
  計画を作成するには、次を考慮してください。  
   
@@ -34,11 +34,11 @@ Web サービスの計画は、Web サービスを公開し、Web サービス�
   
 - **Xlang/s キーワードの使用**  
   
-   Web サービス名または Web メソッド名に XLANG/s のキーワードを使用することはできません。 Web サービス名または Web メソッド名で XLANG/s のキーワードを使用すると、Web サービスを追加するときにコンパイル エラーが発生します。 Xlang/s 言語の予約語の一覧は、、 [xlang/s の予約語](http://go.microsoft.com/fwlink/?LinkId=155765)(http://go.microsoft.com/fwlink/?LinkId=155765)を参照してください。  
+   Web サービス名または Web メソッド名に XLANG/s のキーワードを使用することはできません。 Web サービス名または Web メソッド名で XLANG/s のキーワードを使用すると、Web サービスを追加するときにコンパイル エラーが発生します。 Xlang/s 言語の予約語の一覧は、次を参照してください。、 [xlang/s の予約語](http://go.microsoft.com/fwlink/?LinkId=155765)(http://go.microsoft.com/fwlink/?LinkId=155765)します。  
   
 - **パラメーターの型のサポートを必要な xlang/s**  
   
-   非 xlang/s サポートされている Web メソッドのパラメーター型を使用すると、コンパイル エラーが発生します。 たとえば、BizTalk Server では 1 次元配列のスキーマの種類で構成されるパラメータはサポートされていません。 さらに、BizTalk Server では、多次元配列はサポートされません。 Xlang/s 言語は、BizTalk server によって予約されている単語の一覧は、[xlang/s の予約語](http://go.microsoft.com/fwlink/?LinkId=155765)(http://go.microsoft.com/fwlink/?LinkId=155765)を参照してください。  
+   非 xlang/s サポートされている Web メソッドのパラメーター型を使用すると、コンパイル エラーが発生します。 たとえば、BizTalk Server では 1 次元配列のスキーマの種類で構成されるパラメータはサポートされていません。 さらに、BizTalk Server では、多次元配列はサポートされません。 Xlang/s 言語は、BizTalk server によって予約されている単語の一覧は、次を参照してください。 [xlang/s の予約語](http://go.microsoft.com/fwlink/?LinkId=155765)(http://go.microsoft.com/fwlink/?LinkId=155765)します。  
   
 - **Web 参照を含む c# のキーワードまたは識別子を追加することでコンパイル エラーが生じないように**  
   
@@ -52,7 +52,7 @@ Web サービスの計画は、Web サービスを公開し、Web サービス�
   
 - **Web サービスによって公開される配列を使用するためのサポート**  
   
-   BizTalk Server では、BizTalk Server Web サービスではない Web サービスによって公開される 1 次元配列およびジャグ配列を使用できます。 Web サービスの配列を使用する方法の詳細については、[Web サービスの配列を使用する方法](http://go.microsoft.com/fwlink/?LinkId=155766)(http://go.microsoft.com/fwlink/?LinkId=155766)を参照してください。  
+   BizTalk Server では、BizTalk Server Web サービスではない Web サービスによって公開される 1 次元配列およびジャグ配列を使用できます。 Web サービスの配列を使用する方法の詳細については、次を参照してください。 [Web サービスの配列を使用する方法](http://go.microsoft.com/fwlink/?LinkId=155766)(http://go.microsoft.com/fwlink/?LinkId=155766)します。  
   
   > [!NOTE]  
   >  多次元配列の構文はサポートされていません。 たとえば、 *MyArray [「1, 5]* します。  
@@ -75,7 +75,7 @@ Web サービスの計画は、Web サービスを公開し、Web サービス�
   
    `Failed to retrieve the message part for parameter %1`  
   
-   詳細については、[Messaging-Only シナリオで Web サービスを使用する方法](http://go.microsoft.com/fwlink/?LinkId=155767)(http://go.microsoft.com/fwlink/?LinkId=155767)を参照してください。  
+   詳細については、次を参照してください。 [Messaging-Only シナリオで Web サービスを使用する方法](http://go.microsoft.com/fwlink/?LinkId=155767)(http://go.microsoft.com/fwlink/?LinkId=155767)します。  
   
 - **プログラムによる SOAP 送信ポートの構成**  
   
@@ -98,9 +98,9 @@ Web サービスの計画は、Web サービスを公開し、Web サービス�
   
   - メッセージを送信する送信ポートが静的か動的かにかかわらず、プロパティ値は上書きされません。 つまり、送信パイプライン コンポーネントは、設定されているかどうかにかかわらず、構成プロパティを上書きします。  
   
-  - カスタム パイプライン コンポーネントの詳細については、[カスタム パイプライン コンポーネントの開発](http://go.microsoft.com/fwlink/?LinkId=155769)(http://go.microsoft.com/fwlink/?LinkId=155769)を参照してください。  
+  - カスタム パイプライン コンポーネントの詳細については、次を参照してください。[カスタム パイプライン コンポーネントの開発](http://go.microsoft.com/fwlink/?LinkId=155769)(http://go.microsoft.com/fwlink/?LinkId=155769)します。  
   
-  - SOAP 送信アダプタの構成プロパティの詳細については、[消費する Web サービスの URI を動的に設定する方法](http://go.microsoft.com/fwlink/?LinkID=155768)(http://go.microsoft.com/fwlink/?LinkID=155768)を参照してください。  
+  - SOAP 送信アダプタの構成プロパティの詳細については、次を参照してください。[消費する Web サービスの URI を動的に設定する方法](http://go.microsoft.com/fwlink/?LinkID=155768)(http://go.microsoft.com/fwlink/?LinkID=155768)します。  
   
 - **使用する Web サービスを複数ルートのスキーマと、コンパイル エラーを含む Web 参照を追加します。**  
   

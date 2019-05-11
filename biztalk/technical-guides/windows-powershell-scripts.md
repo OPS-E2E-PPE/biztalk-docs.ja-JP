@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b531fa3469139434f341fe9e413a49b4b021e86f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2addea893d139dbb4f0efd401ac0af6410ad4f24
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979131"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291215"
 ---
 # <a name="windows-powershell-scripts"></a>Windows PowerShell スクリプト
 このトピックでには、このガイドで説明されているレジストリ設定を適用する BizTalk Server 環境内のコンピューターで実行できる Windows PowerShell スクリプトが含まれています。  

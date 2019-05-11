@@ -1,5 +1,5 @@
 ---
-title: '手順 3: が完了し、実行、Project2 |Microsoft ドキュメント'
+title: 手順 3:完成し、実行、Project2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ec8d83d61d86d13a667551c820b2a7a1fb47dc7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 004250c1ad9f5a0024cd0f23fab924ccc7ba612f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277162"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392679"
 ---
-# <a name="step-3-complete-and-run-the-project"></a>手順 3: が完了し、プロジェクトを実行
-アセンブリ キーを追加し、ポートをバインドしたら、オーケストレーションをテストします。  
+# <a name="step-3-complete-and-run-the-project"></a>手順 3:完了して、プロジェクトを実行
+アセンブリのキーを追加すると、ポートのバインド、オーケストレーションをテストする時間になります。  
   
- 同一のオブジェクトを使用した場合、テストのサンプル XML BeginDoc のサンプルを使用できます。 場合は、[手順 4: サンプル XML BeginDoc の作成](../core/step-4-create-a-sample-xml-begindoc1.md)これは、プロセス全体を開始するトリガーだけです。  
+ 同一のオブジェクトを使用している場合、テストのサンプル XML BeginDoc のサンプルを使用できます。 そうでないことができる場合[手順 4。サンプル XML BeginDoc の作成](../core/step-4-create-a-sample-xml-begindoc1.md)これは、全体のプロセスを開始するトリガーだけです。  
   
-### <a name="to-complete-and-run-the-project"></a>プロジェクトを完成して実行するには  
+### <a name="to-complete-and-run-the-project"></a>完了して、プロジェクトを実行するには  
   
-1.  ソリューション エクスプ ローラーで、プロジェクトを右クリックし、**ビルド**です。  
+1.  ソリューション エクスプ ローラーでプロジェクトを右クリックし、**ビルド**します。  
   
-2.  プロジェクトを右クリックし **展開**です。  
+2.  プロジェクトを右クリックし、**デプロイ**します。  
   
-3.  BizTalk Server 管理コンソールで、次のように選択します。**バインド**、 **Enlist**と**開始**、オーケストレーションをテストします。  
+3.  BizTalk Server 管理コンソールで選択**バインド**、**参加**と**開始**オーケストレーションをテストします。  
   
 ## <a name="see-also"></a>参照  
- [手順 1: スキーマ DLL を参照します。](../core/step-1-reference-the-schema-dll2.md)   
- [手順 2: オーケストレーションを作成します。](../core/step-2-create-the-orchestration1.md)   
- [手順 4: サンプル XML BeginDoc を作成します。](../core/step-4-create-a-sample-xml-begindoc1.md)
+ [ステップ 1: スキーマ DLL を参照します。](../core/step-1-reference-the-schema-dll2.md)   
+ [手順 2:オーケストレーションを作成します。](../core/step-2-create-the-orchestration1.md)   
+ [手順 4:サンプル XML BeginDoc を作成します。](../core/step-4-create-a-sample-xml-begindoc1.md)

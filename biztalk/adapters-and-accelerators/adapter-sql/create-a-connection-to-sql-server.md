@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b7c5f186a28f068f3ffc217ce5f252a1512f03a0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bbf9a791ba404f1890becc81cfcc545df2cb3f78
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978011"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369888"
 ---
 # <a name="create-a-connection-to-sql-server"></a>SQL Server への接続を作成します。
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]は、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドします。 そのため、WCF エンドポイントのアドレスを使用して SQL Server データベースへの通信ができるようにします。 WCF は、エンドポイント アドレスは、サービスのネットワークの場所を識別しする Uniform Resource Identifier (URI) として、通常表現されます。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]接続プロパティを格納する、URI として、この場所を表します[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]SQL Server データベースへの接続を確立するために使用します。 接続 URI を指定する必要がありますとします。  

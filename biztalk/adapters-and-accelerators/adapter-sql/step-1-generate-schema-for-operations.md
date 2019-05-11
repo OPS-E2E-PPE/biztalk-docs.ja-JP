@@ -1,5 +1,5 @@
 ---
-title: '手順 1: 操作のスキーマの生成 |Microsoft Docs'
+title: 手順 1:操作のスキーマの生成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6eb6de636ba2ee587fa1da3720c38ef517f0ba01
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bfc8f1aaf02b2dc28c4612ee5ce3df879d8ed938
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367867"
 ---
-# <a name="step-1-generate-schema-for-operations"></a>手順 1: 操作のスキーマを生成します。
+# <a name="step-1-generate-schema-for-operations"></a>手順 1:操作のスキーマを生成します。
 ![手順 2 の 1](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
   
  **所要時間:** 5 分  
   
- **目標:** 、SQL Server データベースを使用して実行する操作のスキーマを生成するこの手順で、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 このチュートリアルで、次のスキーマを生成する必要があります。  
+ **目標:** この手順では、SQL Server データベースを使用して実行する操作のスキーマを生成する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 このチュートリアルで、次のスキーマを生成する必要があります。  
   
 -   **通知**(入力方向の操作)。  
   
@@ -81,10 +81,10 @@ ms.locfileid: "36997859"
   
 - XML バインド ファイルを作成する Wcf-custom 送信ポートと受信ポートで使用できる[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
-  スキーマを生成する詳細については、[参照、検索、および SQL アダプターを使用して SQL 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sql/browse-search-and-get-metadata-for-sql-operations-using-the-sql-adapter.md)を参照してください。  
+  スキーマを生成する詳細については、次を参照してください。[参照、検索、および SQL アダプターを使用して SQL 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sql/browse-search-and-get-metadata-for-sql-operations-using-the-sql-adapter.md)します。  
   
 ## <a name="next-steps"></a>次の手順  
- 内のスキーマの BizTalk プロジェクトでメッセージを作成する[手順 2: BizTalk オーケストレーションのメッセージの作成](../../adapters-and-accelerators/adapter-sql/step-2-create-messages-for-biztalk-orchestrations.md)です。  
+ 内のスキーマの BizTalk プロジェクトでメッセージを作成する[手順 2。BizTalk オーケストレーションのメッセージを作成する](../../adapters-and-accelerators/adapter-sql/step-2-create-messages-for-biztalk-orchestrations.md)します。  
   
 ## <a name="see-also"></a>参照  
- [レッスン 1: スキーマを生成してメッセージを作成する](../../adapters-and-accelerators/adapter-sql/lesson-1-generate-schemas-and-create-messages.md)
+ [レッスン 1:スキーマを生成してメッセージを作成する](../../adapters-and-accelerators/adapter-sql/lesson-1-generate-schemas-and-create-messages.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a74bfdccbd12db00cd0f325aedee2e42cc76729
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 12da45bba963244391b2df0cc8d502e2262b0314
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970539"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332184"
 ---
 # <a name="import-copy-failed-as-there-are-active-pending-batches"></a>アクティブな保留中のバッチがあるためインポート コピーできませんでした。
 ## <a name="details"></a>詳細  

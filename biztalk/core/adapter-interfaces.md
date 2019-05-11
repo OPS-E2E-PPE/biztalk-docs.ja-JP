@@ -1,5 +1,5 @@
 ---
-title: アダプター インターフェイス |Microsoft ドキュメント
+title: アダプター インターフェイス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 717adcf5d4a706a7cc072b42b224ab0f9f8cc6fd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4bdb6f3e26d8862fd538f0279ecbb4c5c9b33af8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225490"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361404"
 ---
 # <a name="adapter-interfaces"></a>アダプター インターフェイス
-カスタム アダプターには、実装する必要のあるインターフェイスが 3 つあります。また、省略可能なインターフェイスも 2 つあります。  
+カスタム アダプターを実装する必要があります、3 つのインターフェイスと省略可能な 2 つのインターフェイスがあります。  
   
 ## <a name="mandatory-interfaces"></a>必須のインターフェイス  
- アダプターはすべて、次のインターフェイスを実装する必要があります。  
+ すべてのアダプターでは、次のインターフェイスを実装する必要があります。  
   
 ### <a name="ibasecomponent"></a>IBaseComponent  
- このインターフェイスの詳細、**名前**、**バージョン**、および**説明**アダプターのです。  
+ このインターフェイスの詳細、**名前**、**バージョン**、および**説明**アダプターの。  
   
 ### <a name="ibttransport"></a>IBTTransport  
- このインターフェイスの詳細、**トランスポートの種類**と**ClassID**アダプターのです。  
+ このインターフェイスの詳細、**トランスポートの種類**と**ClassID**のアダプター。  
   
 ### <a name="ibtbatchcallback"></a>IBTBatchCallback  
- このインターフェイスは、アダプターが、メッセージング エンジンに送信されるメッセージのバッチの状態やエラー情報を受信するコールバック インターフェイスです。  
+ このインターフェイスは、アダプター情報を受信状態やエラー メッセージのバッチのメッセージング エンジンに送信されるコールバック インターフェイス。  
   
 ## <a name="optional-interfaces"></a>省略可能なインターフェイス  
- 次のインターフェイスは、必要に応じてアダプターに実装します。  
+ アダプターは、必要に応じて、次のインターフェイスを実装していません。  
   
 ### <a name="ipersistpropertybag"></a>IPersistPropertyBag  
- これは、ハンドラー構成がアダプターに送信されるときに使用される構成インターフェイスです。 このインターフェイスは、ハンドラー構成情報を持っているアダプターの場合にのみ必要です。  
+ これは、どのハンドラーを通じて構成は、アダプターに配信構成インターフェイスです。 このインターフェイスは、ハンドラーの構成情報を持つアダプターに対してのみ必要です。  
   
 ### <a name="ibttransportcontrol"></a>IBTTransportControl  
- このインターフェイスはアダプターを初期化および終了するために使用します。 アダプターのトランスポート プロキシはこのインターフェイスを通じて渡されます。 このインターフェイスは、分離アダプターの場合は不要です。
+ このインターフェイスは初期化し、アダプターの終了に使用されます。 アダプターのトランスポート プロキシは、このインターフェイスを使用して渡されます。 このインターフェイスは、分離アダプターの必要はありません。

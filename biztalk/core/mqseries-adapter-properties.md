@@ -1,5 +1,5 @@
 ---
-title: MQSeries アダプターのプロパティ |Microsoft ドキュメント
+title: MQSeries アダプターのプロパティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -29,22 +29,22 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fae8cc1ed67f077b6ae12945da10c58cf0f147da
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e90fa1355f17581c55645a375dcb782452cb55e3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263570"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323700"
 ---
 # <a name="mqseries-adapter-properties"></a>MQSeries アダプターのプロパティ
-BizTalk オーケストレーションから MQSeries ヘッダー プロパティにアクセスするには、プロジェクトに MQSeries.dll アセンブリへの参照を追加する必要があります。 このアセンブリは、MQSeries アダプターをインストールした場所 ([!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] など) にあります。  
+BizTalk オーケストレーションから MQSeries ヘッダー プロパティにアクセスするをプロジェクトに MQSeries.dll アセンブリへの参照を追加する必要があります。 このアセンブリが配置されているなど、MQSeries アダプターをインストールした場所[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]します。  
   
- MQSeries プロパティ スキーマを参照すると、追加のコンテキスト プロパティはさまざまな BizTalk Server 開発ツールを使用 (たとえば、**メッセージの割り当て**図形をオーケストレーション デザイナーで)。  
+ MQSeries プロパティ スキーマを参照する追加のコンテキスト プロパティはさまざまな BizTalk Server 開発ツールを使用 (たとえば、**メッセージの割り当て**図形をオーケストレーション デザイナーで)。  
   
 > [!NOTE]
->  MQSeries ヘッダー プロパティを使用する場合は、IBM WebSphere MQ のドキュメントに記載されているガイドラインに従うようにしてください。  
+>  MQSeries ヘッダー プロパティを使用する場合は、IBM WebSphere MQ のドキュメントのガイドラインに従うことを確認します。  
   
- アダプタでは、一部の MQSeries プロパティを自動的に昇格させます。 アプリケーションやカスタム コンポーネントでは、このように昇格されたプロパティを降格しないようにする必要があります。 また、カスタム パイプライン コンポーネントを使用して、追加のプロパティを昇格させることができます。 自動的に昇格されるプロパティは、次のとおりです。  
+ アダプターでは、一部の MQSeries プロパティが自動的に昇格させます。 アプリケーションとカスタム コンポーネントは、これらのプロパティは降格させないする必要があります。 カスタム パイプライン コンポーネントを使用して、追加のプロパティを昇格できます。 自動的に昇格させたプロパティは次のとおりです。  
   
 -   **BizTalk_CorrelationID**  
   
@@ -70,9 +70,9 @@ BizTalk オーケストレーションから MQSeries ヘッダー プロパテ�
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [プロパティのデータ型の変換](../core/data-type-conversion-of-properties.md)  
+-   [プロパティのデータ型変換](../core/data-type-conversion-of-properties.md)  
   
--   [BizTalk Server に関連するプロパティ](../core/properties-related-to-biztalk-server.md)  
+-   [BizTalk Server 関連のプロパティ](../core/properties-related-to-biztalk-server.md)  
   
 -   [MQSeries コンテキスト プロパティ](../core/mqseries-context-properties.md)  
   

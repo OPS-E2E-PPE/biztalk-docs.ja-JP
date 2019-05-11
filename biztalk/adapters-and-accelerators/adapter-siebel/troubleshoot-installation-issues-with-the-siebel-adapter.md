@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed3fab4973950b70a49efc90e1bc947561e602c6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7b8f305d168c0435a760837a0295204875206130
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370423"
 ---
 # <a name="troubleshoot-installation-issues-with-the-siebel-adapter"></a>Siebel アダプターのインストールに関する問題をトラブルシューティングします。
 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストールは、コンピューターで、製品バイナリをコピーし、各アダプターのバインドを登録します。 このセクションでは、インストール エラーを解決するトラブルシューティング手法について説明します。  
@@ -84,7 +84,7 @@ Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.
       ```  
 
       > [!NOTE]
-      >  公開キーを確認する方法については、[公開キーとバージョンを決定する](#BKMK_PubKey)を参照してください。  
+      >  公開キーを確認する方法については、次を参照してください。[公開キーとバージョンを決定する](#BKMK_PubKey)します。  
 
 4. 登録する、 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]:  
 

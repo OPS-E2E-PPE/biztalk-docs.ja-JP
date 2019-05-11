@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af083b0e38d372c18bca4496033983cd7f579347
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8807fb2cf17bfffba48e8a71ed3ca7c623b8589f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014803"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367306"
 ---
 # <a name="biztalk-fileact-and-interact-adapters-end-to-end-tutorial"></a>BizTalk FileAct および InterAct アダプターのエンド ツー エンド チュートリアル
 The Microsoft®[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]エンド ツー エンドのチュートリアルを使用する方法に関する特定の情報を提供する[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]と[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]をリアルタイムに設定し、格納、およびメッセージ交換シナリオを転送します。  
@@ -34,7 +34,7 @@ The Microsoft®[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]エ�
   
 - シナリオをテストします。  
   
-  このチュートリアルでは、2 つのロールを再生します。 送信者と受信者。 メッセージの送信し、受信ポートを作成します。  
+  このチュートリアルでは、2 つのロールを再生します。送信者と受信者。 メッセージの送信し、受信ポートを作成します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

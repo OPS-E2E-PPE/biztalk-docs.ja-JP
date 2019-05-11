@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル 2: .NET からエコー アダプターを使用する |Microsoft ドキュメント'
+title: チュートリアル 2:.NET からエコー アダプターの使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5291fc9e465476ea804cd8c46b1b53ea6c02d842
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 74319b2c1b547fabf77aff94450e0bc28453eca9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223650"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363073"
 ---
-# <a name="tutorial-2-consume-the-echo-adapter-from-net"></a>チュートリアル 2: .NET からエコー アダプターを使用します。
-このセクションでは、.NET からエコー アダプターによって公開される受信と送信操作を使用するための手順を説明します。 エコー アダプターによって開発されました[チュートリアル 1: エコー アダプターを開発](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)です。  
+# <a name="tutorial-2-consume-the-echo-adapter-from-net"></a>チュートリアル 2:.NET からエコー アダプターを使用します。
+このセクションでは、.NET からエコー アダプターによって公開される、受信と送信操作を使用するための手順では。 エコー アダプターを開発した[チュートリアル 1。エコー アダプターを開発](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)します。  
   
 > [!NOTE]
->  エコー アダプターとテストのコードは、BizTalk のインストール ファイルに含まれる`\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples`または`\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`です。
+>  エコー アダプターとテストのコードで BizTalk のインストール ファイルに含まれている`\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples`または`\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`します。
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: エコー アダプターの送信ハンドラーをテストします。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-test-outbound-handler-of-the-echo-adapter.md)  
+-   [ステップ 1: エコー アダプターの送信ハンドラーをテストする](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-test-outbound-handler-of-the-echo-adapter.md)  
   
--   [手順 2: エコー アダプターの受信ハンドラーをテストします。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)  
+-   [手順 2:エコー アダプターの受信ハンドラーをテストする](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 1: エコー アダプターを開発します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)   
+ [チュートリアル 1:エコー アダプターを開発します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)   
  [WCF LOB アダプター SDK のチュートリアル](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorials-to-learn-the-wcf-lob-adapter-sdk.md)

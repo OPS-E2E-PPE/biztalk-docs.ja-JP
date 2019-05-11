@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 933897545d47e2a68c1911474a3549931edd4512
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 00b8c4986224e07865dc641551906e6aeed704fe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001251"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331290"
 ---
 # <a name="invalid-address-absolute-uri"></a>アドレスが無効です (絶対 URI)
 ## <a name="details"></a>詳細  
@@ -33,7 +33,7 @@ ms.locfileid: "37001251"
 |  メッセージ テキスト   |              アドレスが無効です。"{0}"は適切な形式の絶対 uri ではありません              |
 
 ## <a name="explanation"></a>説明  
- このエラー イベントは、インプロセスの WCF トランスポートに整形式の絶対アドレスを指定しなかったことを示します。 たとえば、インプロセスの WCF トランスポートのアドレス プロパティには、/path/service.svc などの相対アドレスを設定できません。  
+ このエラー イベントは、適切な形式の絶対アドレスでは、インプロセスの WCF トランスポートを指定しなかったことを示します。 たとえば、/path/service.svc などの相対アドレスをインプロセスの WCF トランスポートのアドレス プロパティを設定できません。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  インプロセスの WCF トランスポートのアドレスを適切な形式の絶対アドレスに変更します。  
@@ -42,7 +42,7 @@ ms.locfileid: "37001251"
 
 2. コンソール ルートで展開**BizTalk Server 管理**、展開**BizTalk グループ**、展開**アプリケーション**します。  
 
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
 
 4. トランスポート名を右クリックします。  
 
@@ -50,7 +50,7 @@ ms.locfileid: "37001251"
 
 6. ポート**型**一覧で、適切なポートを選択します。  
 
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
 
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブ。  
 

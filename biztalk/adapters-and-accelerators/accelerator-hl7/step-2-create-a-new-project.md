@@ -1,5 +1,5 @@
 ---
-title: '手順 2: 新しいプロジェクトの作成 |Microsoft Docs'
+title: 手順 2:新しいプロジェクトの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e17dccc7ef83114fe17c26b03aaa8d06f7ac783
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d4147db9f24855a340ed616a794e2ee05822e24e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994651"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288775"
 ---
-# <a name="step-2-create-a-new-project"></a>手順 2: 新しいプロジェクトを作成します。
+# <a name="step-2-create-a-new-project"></a>手順 2:新しいプロジェクトを作成します。
 この手順で、Microsoft を使用して新しいソリューションをビルドする[!INCLUDE[btsVStudio2008](../../includes/btsvstudio2008-md.md)]環境。 最初に、(データ型、セグメント、およびテーブルの値) の一般的なスキーマの 3 つ HL7 V2.2 スキーマを使用して、使用する送信の HL7 メッセージ スキーマなどを含む新しいプロジェクト (BTAHL7V22Common) を作成します。 次に、もう 1 つ新しいプロジェクトをビルドする (BTAHL7V2XCommon) HL7 メッセージ (MSH_25_GLO_DEF) のヘッダーに使用される共通の標準的なスキーマが含まれています。  
   
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには  
@@ -74,7 +74,7 @@ ms.locfileid: "36994651"
   
       [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] プロジェクト フォルダーを作成し、ファイル、 **\<ドライブ\>: \Tutorial\BTAHL7V22Common\BTAHL72XCommon**フォルダー。  
   
-    進みます[手順 3: アセンブリに厳密な名前を割り当てる](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md)します。  
+    続行する[手順 3。アセンブリに厳密な名前を割り当てる](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md)します。  
   
 ## <a name="see-also"></a>参照  
  [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

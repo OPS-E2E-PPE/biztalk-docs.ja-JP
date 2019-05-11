@@ -13,12 +13,12 @@ caps.latest.revision: 39
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b003010ae8cb9394dd956a97bd3e05ef855d3e73
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 68be14ab4fabd54277455d4dd756c65f6ac61319
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369846"
 ---
 # <a name="develop-your-sql-applications"></a>SQL アプリケーションを開発します。
 
@@ -61,7 +61,7 @@ ms.locfileid: "36978459"
 - [Visual Studio で SQL Server 操作のメタデータを取得する](get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)
 - [メタデータ ノード ID](metadata-node-ids2.md)
 - [バインド プロパティの操作](read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)
-- [前提条件: MSDTC を構成する](configure-msdtc-on-sql-server-and-adapter-client.md)
+- [前提条件: MSDTC の構成](configure-msdtc-on-sql-server-and-adapter-client.md)
 - [SQL アダプターを使用して BizTalk アプリケーションを開発する](develop-biztalk-applications-using-the-sql-adapter.md)
 - [WCF サービス モデルを使用してアプリケーションを開発する](develop-sql-applications-using-the-wcf-service-model.md)
 - [WCF チャネル モデルを使用してアプリケーションを開発する](develop-sql-applications-using-the-wcf-channel-model.md)

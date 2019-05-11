@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c85ee6a77bcd93deaceafde03cec9fb8b1d4f6ef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 09eb5e16e45d97e4035f2f16639773f9fbaaa39f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971051"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375445"
 ---
 # <a name="invoke-request-sets-in-oracle-e-business-suite-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle E-business Suite での要求のセットを呼び出す
-[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] Oracle E-business Suite での要求セットを実行できます。 要求セットは 1 つまたは複数の段階に分けられ、各ステージには、一連レポートと同時実行プログラムにはが含まれています。 します。 アダプターが要求のセットをサポートする方法の詳細については、[に対する要求の設定操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md)を参照してください。  
+[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] Oracle E-business Suite での要求セットを実行できます。 要求セットは 1 つまたは複数の段階に分けられ、各ステージには、一連レポートと同時実行プログラムにはが含まれています。 します。 アダプターが要求のセットをサポートする方法の詳細については、次を参照してください。[に対する要求の設定操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md)します。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
  要求の呼び出し設定するために生成される WCF クライアントの名前、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]次の表に記載されています。  
@@ -65,7 +65,7 @@ public partial class RequestSets_SQLAPClient : System.ServiceModel.ClientBase<Re
   
 1. Visual Studio で Visual c# プロジェクトを作成します。 このトピックでは、コンソール アプリケーションを作成します。  
   
-2. WCF クライアント クラスを生成、 **reqset_singlestage**セットを要求します。 WCF クライアント クラスを生成する詳細については、[WCF クライアントまたは Oracle E-business Suite ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)を参照してください。  
+2. WCF クライアント クラスを生成、 **reqset_singlestage**セットを要求します。 WCF クライアント クラスを生成する詳細については、次を参照してください。 [WCF クライアントまたは Oracle E-business Suite ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)します。  
   
    > [!IMPORTANT]
    >  WCF クライアント クラスを生成する前に必ず設定して、 **EnableBizTalkCompatibilityMode**プロパティを false にバインドします。  
@@ -89,7 +89,7 @@ public partial class RequestSets_SQLAPClient : System.ServiceModel.ClientBase<Re
     このスニペットで`RequestSets_SQLAPClient`OracleEBSBindingClient.cs で定義されている WCF クライアントです。 このファイルがによって生成された、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。  
   
    > [!NOTE]
-   >  このスニペットでは、アプリケーション コードで明示的にバインディングとエンドポイント アドレスを指定するだけ。 アプリケーション構成ファイルから、app.config、によって生成されることも、これらの値を使用することも、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 クライアント バインディングを指定する、さまざまな方法の詳細については、[Oracle E-business suite バインド クライアントを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-client-binding-for-the-oracle-e-business-suite.md)を参照してください。  
+   >  このスニペットでは、アプリケーション コードで明示的にバインディングとエンドポイント アドレスを指定するだけ。 アプリケーション構成ファイルから、app.config、によって生成されることも、これらの値を使用することも、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 クライアント バインディングを指定する、さまざまな方法の詳細については、次を参照してください。 [Oracle E-business suite バインド クライアントを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-client-binding-for-the-oracle-e-business-suite.md)します。  
   
 6. クライアントの資格情報を設定します。  
   
@@ -98,7 +98,7 @@ public partial class RequestSets_SQLAPClient : System.ServiceModel.ClientBase<Re
    client.ClientCredentials.UserName.Password = "mypassword";  
    ```  
   
-7. Oracle E-business Suite アプリケーションで要求のセットを呼び出すため、アプリケーションのコンテキストを設定する必要があります。 この例で、アプリケーションのコンテキストの設定を指定する、 **OracleUserName**、 **OraclePassword**、および**OracleEBSResponsibilityName**プロパティをバインドします。 アプリケーションのコンテキストの詳細については、[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)を参照してください。  
+7. Oracle E-business Suite アプリケーションで要求のセットを呼び出すため、アプリケーションのコンテキストを設定する必要があります。 この例で、アプリケーションのコンテキストの設定を指定する、 **OracleUserName**、 **OraclePassword**、および**OracleEBSResponsibilityName**プロパティをバインドします。 アプリケーションのコンテキストの詳細については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
   
    ```  
    binding.OracleUserName = "myOracleEBSUserName";  

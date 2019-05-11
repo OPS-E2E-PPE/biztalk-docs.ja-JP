@@ -1,5 +1,5 @@
 ---
-title: ユーザー マッピングを管理する |Microsoft ドキュメント
+title: ユーザー マッピングの管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03eb8de3ea8efa8bf7ea676dc69bbd019410155f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f69d33390c45da73edd6dd5947b8644769ee8d3c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262458"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65326022"
 ---
-# <a name="managing-user-mappings"></a>ユーザー マッピングを管理します。
-このセクションでは、エンタープライズ シングル サインオンのマッピングを作成および構成する方法について説明します。  
+# <a name="managing-user-mappings"></a>ユーザー マッピングの管理
+このセクションでは、作成し、エンタープライズ シングル サインオンのマッピングを構成する方法について説明します。  
   
- 管理者は ssomanage ユーティリティでマッピングを管理し、アプリケーション ユーザーは ssoclient ユーティリティで自分のマッピングを管理します。  
+ 管理者は、アプリケーション ユーザーは ssoclient ユーティリティを使用して、そのマッピングを管理するのにときに、マッピングを管理するのに ssomanage ユーティリティを使用します。  
   
 > [!NOTE]
->  アプリケーション管理者は、自分の管理下の関連アプリケーションに関連付けられたマッピングを管理できます。一方、SSO 関連管理者および SSO 管理者は、すべての関連アプリケーションに関連付けられたすべてのマッピングを管理できます。  
+>  SSO 関連管理者、SSO 管理者が管理できるすべてのマッピングに関連付けられたすべての関連アプリケーション、アプリケーション管理者が管理者の関連アプリケーションに関連付けられているマッピングを管理できます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

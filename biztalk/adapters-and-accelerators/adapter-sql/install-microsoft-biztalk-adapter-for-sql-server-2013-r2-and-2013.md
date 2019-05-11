@@ -12,12 +12,12 @@ caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f248e1db8bc57e928e85e908e679d4ded1ec38aa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 05e2edcd96bd7615da8175282a646b77e16c9759
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969643"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369388"
 ---
 # <a name="install-microsoft-biztalk-adapter-for-sql-server---2013-r2-and-2013"></a>Microsoft BizTalk Adapter for SQL Server - 2013 R2 および 2013 インストールします。
 インストール、[!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)]に含まれている[!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)]、またはに付属[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]2013。
@@ -59,9 +59,9 @@ ms.locfileid: "36969643"
 ## <a name="supported-sql-server-versions-and-client-libraries"></a>サポートされている SQL Server のバージョンとクライアント ライブラリ  
  次のセクションではサポートされている SQL Server のバージョンと、クライアントで必要なライブラリ、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
 
-- **サポートされているサーバー バージョン**: SQL Server 2005、SQL Server 2008 SP1、SQL Server 2008 R2、SQL Server 2012  
+- **サポートされているサーバー バージョン**:SQL Server 2005、SQL Server 2008 SP1、SQL Server 2008 R2、SQL Server 2012  
 
-- **サポートされているクライアント バージョン**: Microsoft [!INCLUDE[dotnet45](../../includes/dotnet45-md.md)] SQL Server に接続するために必要なクライアント Dll バンドルします。 コンピューターに任意のクライアントの Dll を明示的にインストールする必要はありません。  
+- **サポートされているクライアント バージョン**:Microsoft [!INCLUDE[dotnet45](../../includes/dotnet45-md.md)] SQL Server に接続するために必要なクライアント Dll バンドルします。 コンピューターに任意のクライアントの Dll を明示的にインストールする必要はありません。  
 
 - **ドライバーに必要な**:  
 

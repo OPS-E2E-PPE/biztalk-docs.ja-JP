@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92b48f40ad758d61b802ed7e514e2e687a005842
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1b0978c88e1392c506970b11bac9774c1f48eb5a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011907"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330766"
 ---
 # <a name="invalid-outbound-xml-template"></a>送信 XML テンプレートが無効です
 ## <a name="details"></a>詳細  
@@ -33,16 +33,16 @@ ms.locfileid: "37011907"
 |  メッセージ テキスト   |                           送信 XML テンプレートが無効です                            |
   
 ## <a name="explanation"></a>説明  
- 複数の理由があります。 送信 WCF メッセージ本文テンプレートが有効な XML ではない可能性があります。 指定したエンコーディングでは無効な文字が含まれる可能性があります。 ルート要素が欠落している可能性があります。 ルート レベルのデータが無効な可能性があります。  
+ 複数の理由が考えられます。 送信 WCF メッセージ本文のテンプレートは、有効な XML をできない可能性があります。 指定されたエンコードに無効な文字に含めることができます。 ルート要素がない可能性があります。 ルート レベルのデータは、有効でない可能性があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- テンプレートの表現を有効な XML コードにします。 無効な文字が含まれないこと、およびルート要素が 1 つのみであることを確認します。  
+ テンプレート式に有効な XML コードがあることを確認します。 無効な文字が含まれていないことと、1 つだけのルート要素があることを確認してください。  
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリック**BizTalk Server 管理**します。  
   
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
   
 4. トランスポート名を右クリックします。  
   
@@ -50,7 +50,7 @@ ms.locfileid: "37011907"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**メッセージ**タブ。  
   
@@ -58,6 +58,6 @@ ms.locfileid: "37011907"
   
 10. **XML**テキスト ボックスに、XML コードが有効であることを確認します。  
   
-    テンプレートの詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください。  
+    テンプレートの詳細については、の次のリソースを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
   
 -   [WCF アダプターのメッセージ本文の指定](../core/specifying-the-message-body-for-the-wcf-adapters.md)

@@ -1,5 +1,5 @@
 ---
-title: SAP アダプターで SAPClientFactory クラス |Microsoft ドキュメント
+title: SAP アダプターの SAPClientFactory クラス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,30 +14,30 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c82e4bea6a16085608ebf1f8fe10ea95b4db394
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9920403c0ce260bed686640227c4d05923563f4e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22217634"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372980"
 ---
-# <a name="sapclientfactory-class-in-the-sap-adapter"></a>SAP アダプターで SAPClientFactory クラス
-次のセクションではメソッドとプロパティの一覧表示、 **SAPClientFactory**クラスです。 これは、派生元**System.Data.Common.DbProviderFactory**です。  
+# <a name="sapclientfactory-class-in-the-sap-adapter"></a>SAP アダプターの SAPClientFactory クラス
+メソッドおよびプロパティを次のセクションの一覧、 **SAPClientFactory**クラス。 これは、派生元**System.Data.Common.DbProviderFactory**します。  
   
 ## <a name="supported-properties"></a>サポートされているプロパティ  
   
-|名前|取得/設定|Description|  
+|名前|Get/Set|説明|  
 |----------|--------------|-----------------|  
 |**インスタンス**|-|SAPClientFactory のシングルトン インスタンス|  
   
 ## <a name="supported-methods"></a>サポートされているメソッド  
   
-|名前|Description|  
+|名前|説明|  
 |----------|-----------------|  
-|**CreateCommand()**|SAPCommand のインスタンスを作成します。|  
-|**CreateConnection()**|SAPConnection のインスタンスを作成します。|  
-|**CreateConnectionStringBuilder()**|SAPConnectionStringBuilder のインスタンスを作成します。|  
-|**CreateParameter()**|SAPParameter のインスタンスを作成します。|  
+|**CreateCommand()**|SAPCommand のインスタンスを作成します|  
+|**CreateConnection()**|SAPConnection のインスタンスを作成します|  
+|**CreateConnectionStringBuilder()**|SAPConnectionStringBuilder のインスタンスを作成します|  
+|**CreateParameter()**|SAPParameter のインスタンスを作成します|  
   
 ## <a name="see-also"></a>参照  
- [SAP アダプターと ADO.NET インターフェイスを拡張します。](../../adapters-and-accelerators/adapter-sap/extend-ado-net-interfaces-with-the-sap-adapter.md)
+ [SAP アダプターを使用した ADO.NET インターフェイスを拡張します。](../../adapters-and-accelerators/adapter-sap/extend-ado-net-interfaces-with-the-sap-adapter.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 468f7a3a35922c6348369050593cbb56b56457d3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 57d5d46bfa71fe6502b1831a8851e2ff448821d7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018595"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291312"
 ---
 # <a name="performing-bottleneck-testing-and-tuning"></a>ボトルネック テストとチューニングを実行します。
 システムのボトルネックを特定し、それに応じてシステムをチューニングするパフォーマンスのテストを完了する必要があります。  
@@ -36,7 +36,7 @@ ms.locfileid: "37018595"
   
  負荷を生成する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境では、Microsoft BizTalk LoadGen 2007 ツールの使用を検討します。 ダウンロード[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)します。  
   
- 分析のパフォーマンス レポートを生成したり、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境では、パフォーマンス分析のログ (PAL) ツールの使用を検討します。 PAL ツールの詳細については、[パフォーマンス分析のログ (PAL) ツールを使用して](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)を参照してください。  
+ 分析のパフォーマンス レポートを生成したり、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境では、パフォーマンス分析のログ (PAL) ツールの使用を検討します。 PAL ツールの詳細については、次を参照してください。[パフォーマンス分析のログ (PAL) ツールを使用して](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)します。  
   
 ## <a name="what-developers-operators-and-administrators-should-know"></a>どのような開発者、演算子、および管理者が把握する必要があります。  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 開発者はでも熟知する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンスの特性とチューニングします。 オペレーターや管理者は、メッセージ ボックス データベースのスケール アウト側面、SAN に精通する必要がありますの調整、ネットワークは、次のチューニング、および SQL Server データベースのチューニング (たとえばを参照してください[SQL Server の設定を変更しないこと](../technical-guides/sql-server-settings-that-should-not-be-changed.md))。 開発者、演算子、および管理者はチューニングする方法を認識する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]高スループットと低待機時間。

@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ed57328a925496449ddd73f3c363b32f60dc811
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27e5d96aadff9e5ed0357f20c0138c4a7581f9b5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983475"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375461"
 ---
 # <a name="insert-update-delete-or-select-operations-on-interface-tables-and-views-using-the-wcf-service-model"></a>挿入、更新、削除、またはインターフェイス テーブルと、WCF サービス モデルを使用してビューで操作を選択します。
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]インターフェイス テーブルに対する Insert、Select、Update、および Delete の基本的な操作のセットを検出します。 これらの操作を使用すると、単純な Insert、Select、Update を実行し、Delete ステートメントの WHERE 句では、ターゲットのインターフェイス テーブルで修飾できます。 このトピックでは、WCF サービス モデルを使用してこれらの操作を実行する方法について説明します。  
@@ -25,10 +25,10 @@ ms.locfileid: "36983475"
 > [!NOTE]
 >  [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]選択インターフェイス ビューに対する操作のみをサポートしています。  
 
- アダプターがこれらの操作をサポートする方法の詳細については、[インターフェイス テーブルとインターフェイス ビューで操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md)を参照してください。  
+ アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。[インターフェイス テーブルとインターフェイス ビューで操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md)します。  
 
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、MS_SAMPLE_EMPLOYEE インターフェイス テーブルの操作を実行します。 サンプルに付属のスクリプトを実行して、テーブルが作成されます。 サンプルの詳細については、[Oracle EBS アダプター用のサンプル](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md)を参照してください。 サンプルについては、 **Interface_Table_Ops**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]サンプル。  
+ このトピックの例では、MS_SAMPLE_EMPLOYEE インターフェイス テーブルの操作を実行します。 サンプルに付属のスクリプトを実行して、テーブルが作成されます。 サンプルの詳細については、次を参照してください。 [Oracle EBS アダプター用のサンプル](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md)します。 サンプルについては、 **Interface_Table_Ops**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]サンプル。  
 
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
  基本的な操作に対して生成された WCF クライアントの名前を[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]検出、次の表に示すように、テーブルまたはビューの名前に基づきます。  
@@ -52,10 +52,10 @@ ms.locfileid: "36983475"
 
 |演算|メソッド シグネチャ|  
 |---------------|----------------------|  
-|Insert|文字列挿入 (InsertRecord [レコード セット)。|  
-|Select|SelectRecord] を選択します (文字列それら、文字列フィルター)|  
+|Insert|string Insert(InsertRecord[] RECORDSET);|  
+|Select|SelectRecord[] Select(string COLUMN_NAMES, string FILTER);|  
 |更新|文字列の更新プログラム (UpdateRecord RECORDSET、文字列フィルター。)|  
-|DELETE|文字列の削除 (文字列フィルター)|  
+|DELETE|string Delete(string FILTER);|  
 
  例として、次のコードが生成され、WCF クライアント クラスのメソッド シグネチャは、削除、挿入、選択、および更新の既定のアプリ スキーマ MS_SAMPLE_EMPLOYEE インターフェイス テーブルを操作します。  
 
@@ -111,7 +111,7 @@ public partial class InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEEClient : System.
 
 1. Visual Studio で Visual c# プロジェクトを作成します。 このトピックでは、コンソール アプリケーションを作成します。  
 
-2. Insert、Select、Update、WCF クライアント クラスを生成し、MS_SAMPLE_EMPLOYEE インターフェイス テーブルに対する操作を削除します。 WCF クライアント クラスを生成する詳細については、[WCF クライアントまたは Oracle E-business Suite ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)を参照してください。  
+2. Insert、Select、Update、WCF クライアント クラスを生成し、MS_SAMPLE_EMPLOYEE インターフェイス テーブルに対する操作を削除します。 WCF クライアント クラスを生成する詳細については、次を参照してください。 [WCF クライアントまたは Oracle E-business Suite ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)します。  
 
    > [!IMPORTANT]
    >  WCF クライアント クラスを生成する前に必ず設定して、 **EnableBizTalkCompatibilityMode**プロパティを false にバインドします。  
@@ -135,7 +135,7 @@ public partial class InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEEClient : System.
     このスニペットで`InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEEClient`OracleEBSBindingClient.cs で定義されている WCF クライアントです。 このファイルがによって生成された、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。  
 
    > [!NOTE]
-   >  このスニペットでは、アプリケーション コードで明示的にバインディングとエンドポイント アドレスを指定するだけ。 これらの値を使用するには、アプリケーション構成ファイルから app.config、によって生成されることも、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 クライアント バインディングを指定する、さまざまな方法の詳細については、[Oracle E-business suite バインド クライアントを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-client-binding-for-the-oracle-e-business-suite.md)を参照してください。  
+   >  このスニペットでは、アプリケーション コードで明示的にバインディングとエンドポイント アドレスを指定するだけ。 これらの値を使用するには、アプリケーション構成ファイルから app.config、によって生成されることも、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 クライアント バインディングを指定する、さまざまな方法の詳細については、次を参照してください。 [Oracle E-business suite バインド クライアントを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-client-binding-for-the-oracle-e-business-suite.md)します。  
 
 6. クライアントの資格情報を設定します。  
 
@@ -144,7 +144,7 @@ public partial class InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEEClient : System.
    client.ClientCredentials.UserName.Password = "mypassword";  
    ```  
 
-7. インターフェイス テーブルで操作を実行しているため、アプリケーションのコンテキストを設定する必要があります。 この例で、アプリケーションのコンテキストの設定を指定する、 **OracleUserName**、 **OraclePassword**、および**OracleEBSResponsibilityName**プロパティをバインドします。 アプリケーションのコンテキストの詳細については、[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)を参照してください。  
+7. インターフェイス テーブルで操作を実行しているため、アプリケーションのコンテキストを設定する必要があります。 この例で、アプリケーションのコンテキストの設定を指定する、 **OracleUserName**、 **OraclePassword**、および**OracleEBSResponsibilityName**プロパティをバインドします。 アプリケーションのコンテキストの詳細については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
 
    ```  
    binding.OracleUserName = "myOracleEBSUserName";  

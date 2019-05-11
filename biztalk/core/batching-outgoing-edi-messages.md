@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9f99849a812e859f527b3f39a2184508d244a29
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 57eaeee848ae5c9ea316b9f0b5998805581faca1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358286"
 ---
 # <a name="batching-outgoing-edi-messages"></a>送信 EDI メッセージのバッチ処理
 受信側のビジネス パートナーに関連するアグリーメントに対してバッチ処理が有効になっている場合、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では EDI トランザクション セットがバッチ処理されます。 アグリーメントに関する EDI プロパティを設定すると、以下を行うことができます。  

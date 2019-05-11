@@ -12,17 +12,17 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 084b12f16e72507a7d5568bdee022925eca52c0e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 29b189311ebf6aa61a762cc31f09239cb69387b9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989235"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360410"
 ---
-# <a name="all-group-nodes"></a>[すべてのグループ] ノード
+# <a name="all-group-nodes"></a>グループのすべてのノード
 BizTalk エディターでは、挿入できる、**すべてのグループ**を任意の順序で、0 個または 1 時間に表示される他のノードを含むノードです。 XML スキーマ定義 (XSD) 言語で、**すべてグループ**よりも使用上の制限が**シーケンス**と**選択肢**グループで、内のいくつかの状況に変換します作成することをするは、BizTalk エディター、**すべてのグループ**ノード。  
 
- 使用する、**すべてのグループ**ノード BizTalk エディターで、いくつか追加の手順に従う必要があります: を作成する最も簡単な方法、**すべてのグループ**ノードがの値を変更するには、 **Group Order Type**親のプロパティ**レコード**ノード**すべて**します。 これにより、すべての下位ノードの**レコード**内に含まれるノード、**すべてのグループ**ノード。  参照してください**Group Order Type** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+ 使用する、**すべてのグループ**ノード BizTalk エディターで、いくつか追加の手順に従う必要があります。作成する最も簡単な方法、**すべてのグループ**ノードがの値を変更するには、 **Group Order Type** 、親**レコード**ノードを**すべて**. これにより、すべての下位ノードの**レコード**内に含まれるノード、**すべてのグループ**ノード。  参照してください**Group Order Type** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
 
  使用する別の方法、**すべてのグループ**BizTalk エディターでノードが新しい挿入で始まる**レコード**ノード。 新しく挿入した後に**レコード**ノードで、変更、**コンテンツの種類**プロパティを**ComplexContent**します。 挿入することができ、**すべてのグループ**ノードの子として、**レコード**ノード。 これは、必要なため、**すべてのグループ**継承が関係する場合にのみ挿入できます。 指定することで、格納している**レコード**ノードは、複雑なコンテンツを含む、データ型に基づいてそのデータ型になります**xs:anyType**、拡張機能によって派生します。  
 

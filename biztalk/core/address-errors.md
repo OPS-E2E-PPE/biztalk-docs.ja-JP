@@ -1,5 +1,5 @@
 ---
-title: エラーを解決 |Microsoft ドキュメント
+title: エラーの解決 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d706f72aa2fd150a7c659be9473474c366e3ccc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ddc1b5d41277b9ba9faba2aceaf32f1fba6f7a12
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22229850"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360188"
 ---
 # <a name="address-errors"></a>アドレス エラー
 ここでは、WCF のアドレス エラーを診断および解決するための詳細について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [アドレスが無効です (絶対 uri)](../core/invalid-address-absolute-uri.md)  
+-   [アドレスが無効です (絶対 URI)](../core/invalid-address-absolute-uri.md)  
   
--   [アドレスが無効です (相対 uri にスラッシュが必要があります (「/」))](../core/invalid-address-relative-uri-needs-slash.md)  
+-   [アドレスが無効です (相対 URI にはスラッシュ ("/") が必要)](../core/invalid-address-relative-uri-needs-slash.md)  
   
--   [アドレスが無効です (相対 uri)](../core/invalid-address-relative-uri.md)  
+-   [アドレスが無効です (相対 URI)](../core/invalid-address-relative-uri.md)  
   
--   [無効なアドレスの長さ](../core/invalid-address-length.md)  
+-   [アドレスの長さが無効です](../core/invalid-address-length.md)  
   
--   [無効なアドレス スキーム](../core/invalid-address-scheme.md)  
+-   [アドレス スキームが無効です](../core/invalid-address-scheme.md)  
   
 -   [無効なプロキシ アドレス](../core/invalid-proxy-address-for-send-handler-and-send-port.md)

@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5fc106b534973f13544b9bafa85f190d8ed2c255
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6fd44cc0d9bfefb67b96558808e6b98a46c8afc2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994291"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394087"
 ---
-# <a name="the-project-location-is-not-empty"></a>プロジェクトの場所は空ではありません
+# <a name="the-project-location-is-not-empty"></a>プロジェクトの場所が空でないです。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                    |
@@ -30,10 +30,10 @@ ms.locfileid: "36994291"
 |  イベント ソース   |                                                                                                                         0                                                                                                                          |
 |    コンポーネント    |                                                                                                                         0                                                                                                                          |
 |  シンボル名  |                                                                                                                         0                                                                                                                          |
-|  メッセージ テキスト   | プロジェクトの場所"{0}"が空でないです。 次のいずれかを実行する必要があります: 1。 新しいプロジェクトに、2 の別の場所を選択します。 指定、既存の場所または 3 を再利用する場合は上書きします。 プロジェクトの場所の内容を手動で削除します。 |
+|  メッセージ テキスト   | プロジェクトの場所"{0}"が空でないです。 次のいずれかを実行する必要があります。1. 新しいプロジェクトに、2 の別の場所を選択します。 指定、既存の場所または 3 を再利用する場合は上書きします。 プロジェクトの場所の内容を手動で削除します。 |
   
 ## <a name="explanation"></a>説明  
- このエラーは、サービスを公開する予定の仮想ディレクトリが空ではないことを示します。  
+ このエラーを示します、仮想サービスの発行先ディレクトリが空ではありません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 同じ場所を再利用するには、上書きの場所を選択します。 または、新しい場所を指定します。  WCF サービス公開ウィザードで選択**既存の場所を上書き** をクリック**次**します。 この手順で、場所が上書きされます。
+ 同じ場所を再利用する上書きの場所を選択します。 または、新しい場所を指定します。  WCF サービス公開ウィザードで選択**既存の場所を上書き** をクリック**次**します。 この手順では、場所を上書きします。

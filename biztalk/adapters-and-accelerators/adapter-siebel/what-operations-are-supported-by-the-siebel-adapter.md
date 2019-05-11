@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3f080cedb74210d02806681b6c9e20656d3d09e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 89fddfef2bb0c5c564f76ecb99f3e70265b7754d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370045"
 ---
 # <a name="what-operations-are-supported-by-the-siebel-adapter"></a>Siebel アダプターによってサポートされる操作
 アダプターのクライアントは、いずれかで Siebel システムの操作を実行できます。  
@@ -30,7 +30,7 @@ ms.locfileid: "37004779"
   
 - WCF サービス モデルを使用します。  
   
-  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アプリケーションは、それを呼び出すことができ、アプリケーションで呼び出すことができます、さらに、操作を公開します。 これらの操作は、チャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。 メッセージの構造とそれぞれの操作に関連付けられている SOAP アクションについては、[メッセージと BizTalk adapter for Siebel eBusiness Applications のメッセージ スキーマ](../../adapters-and-accelerators/adapter-siebel/messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)を参照してください。  
+  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アプリケーションは、それを呼び出すことができ、アプリケーションで呼び出すことができます、さらに、操作を公開します。 これらの操作は、チャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。 メッセージの構造とそれぞれの操作に関連付けられている SOAP アクションについては、次を参照してください。[メッセージと BizTalk adapter for Siebel eBusiness Applications のメッセージ スキーマ](../../adapters-and-accelerators/adapter-siebel/messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)します。  
   
   このセクションで使用して Siebel システムでサポートされる操作に関する情報を提供する、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。  
   

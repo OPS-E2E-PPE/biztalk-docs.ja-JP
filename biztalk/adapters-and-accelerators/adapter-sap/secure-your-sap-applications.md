@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dade1433b0bd432b53e48da86d53d23be7512de7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 94bcc119ddd11d7b028a66e64c2ae7ca13ae41d8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005787"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372906"
 ---
 # <a name="secure-your-sap-applications"></a>SAP アプリケーションのセキュリティ保護します。
 SAP システムは、顧客アカウントの詳細などの機密性の高いビジネス情報を含めることができます。 使用するアプリケーション、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]にアクセスして、この情報を変更するいずれかまたは分散ネットワーク経由でローカルにキーが誤って公開、不正なアクターによってアクセス中にデータをセキュリティで保護する取り組みが行われた場合を除き、転送します。 データ保護とセキュリティは、通常と考えられるので、次の用語。  

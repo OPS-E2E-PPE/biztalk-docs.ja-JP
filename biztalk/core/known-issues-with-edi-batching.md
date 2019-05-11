@@ -12,12 +12,12 @@ caps.latest.revision: 38
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c33be4da2db28fb38c3f81d3d1aaa5316a0a16a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9941e6f88bc7bd23a9825a1960a2dcf9f92466f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997171"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330402"
 ---
 # <a name="known-issues-with-edi-batching"></a>EDI バッチ処理に関する既知の問題
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバッチ処理に関する既知の問題について説明します。  
@@ -52,7 +52,7 @@ ms.locfileid: "36997171"
  64 ビット コンピューター上の WOW で BatchControlMessageRecvLoc 受信場所を実行する場合は、バッチ処理オーケストレーションを別のホストで実行する必要があります。 受信場所と同じホストで実行すると、バッチ処理オーケストレーションが WOW でも実行されるため、64 ビット コンピューターで実行する利点がなくなります。  
   
 ## <a name="a-batch-can-be-picked-up-by-an-unintended-send-port"></a>予期しない送信ポートによってバッチが取得される  
- バッチ処理オーケストレーションがインターチェンジを公開すると、2 つのプロパティを昇格: ToBeBatched = False と DestinationPartyName = \< *PartyName*\>します。 これらのプロパティの一方または両方をサブスクライブする送信ポートは、これらのバッチ インターチェンジを取得できます。 送信ポートがこれらの取得対象のバッチ インターチェンジを取得するよう、送信ポートのフィルターを必ず構成してください。  
+ バッチ処理オーケストレーションがインターチェンジを公開すると、2 つのプロパティを昇格します。ToBeBatched = False と DestinationPartyName = \< *PartyName*\>します。 これらのプロパティの一方または両方をサブスクライブする送信ポートは、これらのバッチ インターチェンジを取得できます。 送信ポートがこれらの取得対象のバッチ インターチェンジを取得するよう、送信ポートのフィルターを必ず構成してください。  
   
 ## <a name="a-batch-element-count-greater-than-the-required-number-of-transaction-sets-for-a-batch-may-not-prompt-batch-release"></a>バッチ要素数がバッチに必要なトランザクション セット数より多い場合に、バッチがリリースされないことがある  
  バッチのリリース条件が、グループまたはインターチェンジごとのトランザクション セット数に基づいている場合は、バッチ要素数が、リリースされるバッチに必要なトランザクション セット数より多くても、バッチがリリースされないことがあります。 これは、受信確認を有効にしており、その受信確認をバッチに追加するようにバッチのフィルター条件を設定している場合に発生します。 この場合、グループ (またはインターチェンジ) 内のバッチ要素数は、グループ (またはインターチェンジ) ごとのトランザクション セット数より多くなります。 その場合は、グループ (またはインターチェンジ) ごとのトランザクション セット数がバッチ リリースに必要な数より少なければ、バッチがリリースされませんが、同時に、バッチ要素数がバッチ リリースに必要なトランザクション セット数よりも多くなります。  
@@ -64,7 +64,7 @@ ms.locfileid: "36997171"
   
  **考えられる原因**  
   
- 日時が**開始**がクリックされたで入力した日時より前のバージョンでした、**アクティベーション**セクション。 その結果、オーケストレーション インスタンスがアクティブ化が、バッチのメッセージが収集されません。 詳細については、[送信バッチの構成](../core/configuring-an-outgoing-batch.md)を参照してください。  
+ 日時が**開始**がクリックされたで入力した日時より前のバージョンでした、**アクティベーション**セクション。 その結果、オーケストレーション インスタンスがアクティブ化が、バッチのメッセージが収集されません。 詳細については、次を参照してください。[送信バッチの構成](../core/configuring-an-outgoing-batch.md)します。  
   
  **解決方法**  
   
@@ -117,7 +117,7 @@ ms.locfileid: "36997171"
  BizTalk Server で、各パーティはパーティ ID のみを使用して、使用するバッチ構成を決定するための十分なができなくなったために複数のバッチ構成を持つことができます。  メッセージを複数のバッチ構成で処理する必要があることを示すには、メッセージの EDI.BatchIDs プロパティに、メッセージの送信先であるバッチ ID のスペース区切りリストを設定する必要があります。  
   
 > [!NOTE]
->  EDI.DestinationPartyId プロパティを使用して単一のパーティ ID のみによりマークされたメッセージを処理すると、メッセージはアップグレード バッチ オーケストレーションによって処理されます。 詳細については、[バッチ EDI インターチェンジをアセンブル](../core/assembling-a-batched-edi-interchange.md)を参照してください。  
+>  EDI.DestinationPartyId プロパティを使用して単一のパーティ ID のみによりマークされたメッセージを処理すると、メッセージはアップグレード バッチ オーケストレーションによって処理されます。 詳細については、次を参照してください。[バッチ EDI インターチェンジをアセンブル](../core/assembling-a-batched-edi-interchange.md)します。  
   
  **解決方法**  
   
@@ -158,7 +158,7 @@ ms.locfileid: "36997171"
   
  **解決方法**  
   
- この問題を解決するには、バッチ リリースの間隔が長くなるようにリリース条件を変更します。 詳細については、[(X12) をバッチ処理構成](../core/configuring-batching-x12.md)を参照してください。  
+ この問題を解決するには、バッチ リリースの間隔が長くなるようにリリース条件を変更します。 詳細については、次を参照してください。 [(X12) をバッチ処理構成](../core/configuring-batching-x12.md)します。  
   
 ## <a name="see-also"></a>参照  
  [EDI 受信確認の構成](../core/configuring-edi-acknowledgments.md)   

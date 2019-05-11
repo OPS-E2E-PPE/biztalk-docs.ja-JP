@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3021a5e3ead821a0f3c8d0372d48ae469a834c1c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a008b2a85b1cfda3383c175bc9ed24b2f012d9cf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368666"
 ---
 # <a name="lesson-3-execute-a-stored-procedure-to-select-new-employees-added"></a>レッスン 3: 追加された新しい従業員を選択するストアド プロシージャを実行します。
 このレッスンでは、タスクを理解することが実行される前に、これらのタスクが必要な理由をまず理解する必要があります。 **従業員**ような方法で、新しい従業員を追加するレコードを挿入するテーブルが定義されているが、**状態**列は、新しい従業員が追加されるたびに、常に「0」に設定します。 これは、新しく追加された従業員に対してクエリを実行し、通知を受け取ることも、この列を使用できるようにします。 SQL Server で次の SQL ステートメントを実行してこのクエリは。  
@@ -48,6 +48,6 @@ UPDATE Employee SET Status = 1 WHERE Status = 0
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: UPDATE_EMPLOYEE ストアド プロシージャの要求メッセージを作成する](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-update-employee-stored-procedure.md)  
+-   [ステップ 1: UPDATE_EMPLOYEE ストアド プロシージャの要求メッセージを作成する](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-update-employee-stored-procedure.md)  
   
--   [手順 2: SQL Server に要求メッセージを送信し、応答を受信する](../../adapters-and-accelerators/adapter-sql/step-2-send-the-request-message-to-sql-server-and-receive-response.md)
+-   [手順 2:SQL Server に要求メッセージを送信し、応答を受信する](../../adapters-and-accelerators/adapter-sql/step-2-send-the-request-message-to-sql-server-and-receive-response.md)

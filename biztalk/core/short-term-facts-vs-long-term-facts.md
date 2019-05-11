@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ed46b71c205ef7db5dc8d918ba0cdae68ebd41d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8319f0836d20a09765bb22933c129065d5393317
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990011"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393218"
 ---
 # <a name="short-term-facts-vs-long-term-facts"></a>短期間のファクトとします。長期間のファクト
 2 つの種類のファクトがルール エンジンの作業メモリにアサートされます: 短い期間のファクトと長期間のファクト。  
@@ -48,7 +48,7 @@ ms.locfileid: "36990011"
   
 2. ビジネス ルール作成ツールを使用して、ファクト取得コンポーネントを使用するポリシーを構成します。  
   
-   ファクト取得コンポーネントを作成して、ポリシーで使用する詳細については、[ファクト取得コンポーネントを作成する方法](../core/how-to-create-a-fact-retriever.md)を参照してください。  
+   ファクト取得コンポーネントを作成して、ポリシーで使用する詳細については、次を参照してください。[ファクト取得コンポーネントを作成する方法](../core/how-to-create-a-fact-retriever.md)します。  
   
 ## <a name="see-also"></a>参照  
  [ファクト](../core/facts.md)

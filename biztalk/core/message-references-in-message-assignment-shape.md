@@ -1,5 +1,5 @@
 ---
-title: メッセージの割り当て図形内の参照をメッセージ |Microsoft ドキュメント
+title: メッセージのメッセージの割り当て図形内の参照 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,25 +16,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b834eefa991b6cad89a04a836f63d1b9af73fc04
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d74aea98cb780ba8ef81e0329f12fbd7685878f8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262810"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65324998"
 ---
-# <a name="message-references-in-message-assignment-shape"></a>メッセージの割り当て図形でメッセージ参照
-最初に .NET ベースのオブジェクトをメッセージまたはメッセージ部分に割り当てたときに、メッセージでオブジェクトへの参照が保持および維持されます。  
+# <a name="message-references-in-message-assignment-shape"></a>メッセージの割り当て図形のメッセージ参照
+割り当てるとき、します。NET ベースのオブジェクトをメッセージまたはメッセージ部分は、そのメッセージを保持し、オブジェクトへの参照を保持します。  
   
- 効率性とスケーラビリティは、オーケストレーション エンジンで実行しないオブジェクトの「ディープ コピー」: は、その内容をコピーしません、全体のオブジェクトのメッセージにします。  
+ 効率性とスケーラビリティは、オーケストレーション エンジンは行いませんオブジェクトの「ディープ コピー」します。 つまり、その内容をコピーしません、全体オブジェクトのメッセージにします。  
   
- その後、オブジェクトを別のメッセージまたはメッセージ部分に割り当てる場合、元のオブジェクトに変更があると、2 番目のメッセージまたはメッセージ部分を変更することになります。 この操作は結果を予測できないため、使用しないでください。  
+ その後、別のメッセージにオブジェクトを割り当てるまたはメッセージ部分場合、は、2 番目のメッセージまたはメッセージ部分への変更で元への変更が発生します。 結果は予測できませんので、この実習を避ける必要があります。  
   
- 2 番目のメッセージでオブジェクトの明確なコピーが必要な場合は、最初のメッセージまたはメッセージ部分を 2 番目のメッセージまたはメッセージ部分に割り当てる必要があります。  
+ オブジェクトの個別のコピーが 2 番目のメッセージが必要な場合は、2 番目のメッセージまたはメッセージ部分を最初のメッセージまたはメッセージ部分を割り当てる必要があります。  
   
- 次の例を参照してください。  
+ 次に例を示します。  
   
- 間違っている構文 :   
+ 間違っています。  
   
 ```  
 myMsg1 = myObj; // assign the first message  
@@ -43,9 +43,9 @@ myMsg2.myInt = 100; // modify the second
 myMsg1.myInt = 5;  
 ```  
   
- この場合は、myMsg2.myInt は上書きされていて、値 5 が設定されます。  
+ この場合は、myMsg2.myInt は上書きされてし、値 5 ようになりました。  
   
- 正しい構文 :   
+ 正しい構文:  
   
 ```  
 myMsg1 = myObj; // assign the first message  
@@ -54,7 +54,7 @@ myMsg2.myInt = 100; // modify the second
 myMsg1.myInt = 5;  
 ```  
   
- この場合は、想定どおり、myMsg2.myInt の値は 100 のままです。  
+ この場合は、mymsg2.myint の値は 100 期待どおりにします。  
   
 ## <a name="see-also"></a>参照  
  [メッセージの構築](../core/constructing-messages.md)

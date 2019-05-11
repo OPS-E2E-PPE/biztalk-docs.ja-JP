@@ -1,5 +1,5 @@
 ---
-title: ビジネス イベント ノード |Microsoft ドキュメント
+title: ビジネス イベント ノード |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,12 +19,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 44c3d06e553f129abb36eb53c4dde9c5ab9c25f7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 213f97f2a0e4276cfc3e49d52ff69c222b6b7959
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230906"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357693"
 ---
 # <a name="business-event-nodes"></a>ビジネス イベント ノード
 ビジネス イベント ノードまたはマイルストーン ノードでは、特定の日付または時刻に発生するイベントを定義します。 定義済みのビジネス イベントとマイルストーンのフォルダーは、ビジネス エンド ユーザーからインポートしたアクティビティの定義に含まれています。そのため、これらを削除するには、アクティビティ定義ファイルを再インポートする必要があります。  

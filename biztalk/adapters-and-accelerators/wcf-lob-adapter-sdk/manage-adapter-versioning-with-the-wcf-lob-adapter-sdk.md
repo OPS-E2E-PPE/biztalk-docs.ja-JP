@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8dfb323bf810f69c8a8f1f857b0d0240c14c4d18
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e444008cb43c3638bbab31f665615880e346229e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363577"
 ---
 # <a name="manage-adapter-versioning-with-the-wcf-lob-adapter-sdk"></a>WCF LOB アダプター SDK を使用した、アダプター バージョンを管理します。
 アダプターとその有効期間中に、可能性のある数回の初期デプロイ後のアダプター (および公開されるエンドポイント) は、さまざまな理由から変更する必要があります。 これらの理由からには、ビジネス ニーズ、情報テクノロジの要件、または基幹業務システムまたはアダプター自体の問題の変更が含まれます。 このトピックでは、アダプターを使用して記述されているのバージョン管理を処理するためのさまざまな方法を説明します、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]します。  

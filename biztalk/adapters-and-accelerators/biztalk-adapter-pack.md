@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 29928ca876cb4eadb1841f534b998da6834133ce
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: eeaaa81775c49a6f4a360890935700d7422a0faa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984971"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367307"
 ---
 # <a name="biztalk-adapter-pack"></a>BizTalk アダプター パック
 ## <a name="overview"></a>概要
@@ -46,7 +46,7 @@ ms.locfileid: "36984971"
 * [BizTalk Adapter Pack 2016 をインストールします。](../adapters-and-accelerators/install-the-biztalk-adapter-pack-2016.md)
 * [BizTalk Adapter Pack 2013 R2 および 2013 のインストール](../adapters-and-accelerators/install-biztalk-adapter-pack-2013-r2-and-2013.md)
 
-## <a name="faq"></a>よく寄せられる質問 
+## <a name="faq"></a>FAQ 
 一部の回答を得る[よく寄せられる質問](../adapters-and-accelerators/frequently-asked-questions-for-the-biztalk-adapter-pack.md)について、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]します。
 
 ## <a name="oracle-database-adapter"></a>Oracle Database アダプター
@@ -82,5 +82,5 @@ BizTalk Adapter Pack の潜在的なユーザーは次のとおりです。
 
 |                                                                                                                                                                                                                                                                              開発者向けの推奨事項                                                                                                                                                                                                                                                                              |                                                                                                                                                                  IT pro の推奨事項                                                                                                                                                                  |                                                                                                                                                                                ISV の推奨事項                                                                                                                                                                                 |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| これらのアダプターを使用する開発者には、比較的経験以上である必要があります。<br/> <ul><li>Microsoft [!INCLUDE[btsVStudioNoVersion_md](../includes/btsvstudionoversion-md.md)]、および .NET ソリューションの開発</li><li>使用したプログラミング、 [!INCLUDE[btsDotNetFramework_md](../includes/btsdotnetframework-md.md)] </li><li>使用したプログラミング、 [!INCLUDE[afproductnamelong](../includes/afproductnamelong-md.md)] </li><li>XML (Extensible Markup Language) </li><li>XML スキーマ定義 (XSD) 言語 </li><li>Web サービス記述言語 (WSDL) </li></ul> | IT プロフェッショナルを使用してこれらには、比較的経験以上である必要があります。 <br/><ul><li>SQL Server Integration Services (SSIS) </li><li>Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] </li><li>[!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] </li></ul> | これらのアダプターを使用して Isv が中程度の経験には少なくとも必要があります。 <br/><ul><li>内部動作と各アダプターの概念と、アダプターの上にアプリケーションを構築できます。 </li><li>[!INCLUDE[btsDotNetFramework_md](../includes/btsdotnetframework-md.md)] </li><li>、 [!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)] </li></ul> |
+| これらのアダプターを使用する開発者には、比較的経験以上である必要があります。<br/> <ul><li>Microsoft [!INCLUDE[btsVStudioNoVersion_md](../includes/btsvstudionoversion-md.md)]、および .NET ソリューションの開発</li><li>使用したプログラミング、 [!INCLUDE[btsDotNetFramework_md](../includes/btsdotnetframework-md.md)] </li><li>使用したプログラミング、 [!INCLUDE[afproductnamelong](../includes/afproductnamelong-md.md)] </li><li>拡張マークアップ言語 (XML) </li><li>XML スキーマ定義 (XSD) 言語 </li><li>Web サービス記述言語 (WSDL) </li></ul> | IT プロフェッショナルを使用してこれらには、比較的経験以上である必要があります。 <br/><ul><li>SQL Server Integration Services (SSIS) </li><li>Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] </li><li>[!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] </li></ul> | これらのアダプターを使用して Isv が中程度の経験には少なくとも必要があります。 <br/><ul><li>内部動作と各アダプターの概念と、アダプターの上にアプリケーションを構築できます。 </li><li>[!INCLUDE[btsDotNetFramework_md](../includes/btsdotnetframework-md.md)] </li><li>、 [!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)] </li></ul> |
 

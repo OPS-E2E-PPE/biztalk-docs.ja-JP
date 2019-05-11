@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fc2f29f08edda2fb8d2b0cf05f3ba5b2b786e8f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1ab3ebf74205af290924535a01fce73ff59d15e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364066"
 ---
 # <a name="what-is-the-interact-adapter"></a>新機能、InterAct アダプターでしょうか。
 SWIFTNet 用のアダプターを操作では、メッセージの転送を BizTalk Server と SWIFT Secure IP Network (SIPN) 間の接続を提供します。 SIPN は、金融機関、金融業界インフラストラクチャ、顧客との相互接続をセキュリティで保護されたプライベート ネットワーク経由でメッセージやファイルを転送します。 InterAct アダプターは SWIFTNet リンク (SNL) アプリケーション プログラミング インターフェイス (API) s を SIPN への接続を使用します。  

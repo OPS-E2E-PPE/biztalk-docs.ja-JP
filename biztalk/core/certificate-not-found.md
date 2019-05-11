@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e636d37f6b8758934a25e3b45338ca7b19a4d076
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5a2a420fe5d8c879a18a96a50cb499f2a2593d44
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357572"
 ---
 # <a name="certificate-not-found"></a>証明書が見つかりません
 ## <a name="details"></a>詳細  
@@ -44,7 +44,7 @@ ms.locfileid: "37005699"
   
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
   
 4. トランスポート名を右クリックします。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "37005699"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブ。  
   
@@ -68,7 +68,7 @@ ms.locfileid: "37005699"
   
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
   
 4. トランスポート名を右クリックします。  
   
@@ -76,15 +76,15 @@ ms.locfileid: "37005699"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**セキュリティ**タブ。  
   
 9. いることを確認、**拇印**サービスとクライアント証明書のプロパティは、証明書ストアに有効な証明書を指定します。  
   
-10. 証明書スナップインで、WCF トランスポート用の有効な証明書がインストールされていることを確認します。  
+10. 証明書スナップインでは、WCF トランスポートのため、有効な証明書がインストールされていることを確認します。  
 
-## <a name="see-also"></a>参照 
+## <a name="see-also"></a>関連項目 
   
 -   [WCF アダプターの証明書のインストール](../core/installing-certificates-for-the-wcf-adapters.md)  
   

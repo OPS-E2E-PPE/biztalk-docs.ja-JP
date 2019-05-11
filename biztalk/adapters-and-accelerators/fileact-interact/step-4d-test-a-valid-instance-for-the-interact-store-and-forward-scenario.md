@@ -1,5 +1,5 @@
 ---
-title: '手順 4 D: InterAct ストアと転送シナリオの有効なインスタンスをテスト |Microsoft ドキュメント'
+title: 手順 4 D:InterAct ストア アンド フォワード シナリオ用の有効なインスタンスのテスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5d27b23195adffc5915d8cb2170dca9e975ec94
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6a9bac2a14267b0767cd0498ecfbb8b0f96f686e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224282"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364666"
 ---
-# <a name="step-4d-test-a-valid-instance-for-the-interact-store-and-forward-scenario"></a>手順 4 D: InterAct ストアと転送シナリオの有効なインスタンスのテスト
-この手順を開始する前に行う必要があります[手順 4 C: InterAct ストア アンド フォワードのシナリオのテスト インスタンスを作成する](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-the-interact-store-and-forward-scenario.md)です。  
+# <a name="step-4d-test-a-valid-instance-for-the-interact-store-and-forward-scenario"></a>手順 4 D:InterAct ストア アンド フォワード シナリオ用の有効なインスタンスをテストします。
+この手順を開始する前に行う必要があります[手順 4 C:InterAct ストア アンド フォワード シナリオ用にテスト インスタンスを作成](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-the-interact-store-and-forward-scenario.md)です。  
   
 ### <a name="to-test-a-valid-instance"></a>有効なインスタンスをテストするには  
   
-1.  C:\SWIFTAdapterTutorial\Interact\InputRequest_SnF に ExchangeReqSimple.xml ファイルを削除します。  
+1.  Drop the file ExchangeReqSimple.xml into c:\SWIFTAdapterTutorial\Interact\InputRequest_SnF  
   
-2.  しばらくすると、ExchangeReqSimple.xml ファイルがフォルダーから消えますことを確認します。  
+2.  しばらくすると、ExchangeReqSimple.xml ファイルがフォルダーから消えることを確認します。  
   
-3.  C:\SWIFTAdapterTutorial\Interact\HandleRequest を参照します。 フォルダー内にその Sw:HandleRequest を確認します。  
+3.  C:\SWIFTAdapterTutorial\Interact\HandleRequest に移動します。 その Sw:HandleRequest はフォルダーを確認します。  
   
-4.  Sw:HandleRequest メッセージをメモ帳などのテキスト エディターで開き、payload セクションが ExchangeReqSimple.xml ファイルのものと同じであることを確認します。  
+4.  メモ帳などのテキスト エディターで Sw:HandleRequest メッセージを開き、payload セクションが ExchangeReqSimple.xml ファイルと同じであることを確認します。  
   
 ## <a name="see-also"></a>参照  
- [手順 4: InterAct ストアと転送のエンド ツー エンド シナリオをテストします。](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-store-and-forward-end-to-end-scenario.md)   
- [手順 4 a: サービスを開始します SWIFTNet InterAct ストアと転送シナリオ](../../adapters-and-accelerators/fileact-interact/step-4a-start-the-swiftnet-service-for-the-interact-store-and-forward-scenario.md)   
- [手順 4 b: 送信ポートの開始し、受信ポートを InterAct ストアと転送シナリオ](../../adapters-and-accelerators/fileact-interact/step-4b-start-the-send-and-receive-ports-for-interact-store-and-forward.md)   
- [手順 4 C: InterAct ストアと転送シナリオのテスト インスタンスを作成します。](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-the-interact-store-and-forward-scenario.md)
+ [手順 4:InterAct ストア アンド フォワード エンド ツー エンド シナリオをテストします。](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-store-and-forward-end-to-end-scenario.md)   
+ [手順 4 a:InterAct ストア アンド フォワード シナリオ用に SWIFTNet サービスを開始します。](../../adapters-and-accelerators/fileact-interact/step-4a-start-the-swiftnet-service-for-the-interact-store-and-forward-scenario.md)   
+ [手順 4 b:送信ポートの開始し、InterAct ストア アンド フォワード シナリオ用の受信ポート](../../adapters-and-accelerators/fileact-interact/step-4b-start-the-send-and-receive-ports-for-interact-store-and-forward.md)   
+ [手順 4 C:InterAct ストア アンド フォワード シナリオ用のテスト インスタンスを作成します。](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-the-interact-store-and-forward-scenario.md)

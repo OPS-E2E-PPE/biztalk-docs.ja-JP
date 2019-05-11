@@ -1,5 +1,5 @@
 ---
-title: '手順 8: BizTalk Server の再起動 |Microsoft Docs'
+title: 手順 8:BizTalk Server の再起動 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f79e711a52c1d55417c0872e2b9ce9fa8c7a6e7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 38796625e3fcd65647f051441b9d5c683018eaf6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969381"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287872"
 ---
-# <a name="step-8-restart-biztalk-server"></a>手順 8: BizTalk Server を再起動します。
+# <a name="step-8-restart-biztalk-server"></a>手順 8:BizTalk Server を再起動します。
 この手順で再起動して、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を有効にするこのチュートリアルで行った変更の順序で。  
   
 ### <a name="to-restart-biztalk-server"></a>BizTalk Server を再起動するには  
@@ -30,4 +30,4 @@ ms.locfileid: "36969381"
   
 3. クリックして、サーバーを右クリックして**再起動**します。  
   
-   続行する[手順 9: 断片化した受信バッチのシナリオの確認](../../adapters-and-accelerators/accelerator-hl7/step-9-verify-the-fragmented-inbound-batch-scenario.md)します。
+   続行する[手順 9。断片化した受信バッチのシナリオの確認](../../adapters-and-accelerators/accelerator-hl7/step-9-verify-the-fragmented-inbound-batch-scenario.md)します。

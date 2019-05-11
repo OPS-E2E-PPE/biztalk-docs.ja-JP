@@ -1,5 +1,5 @@
 ---
-title: インストールして FileAct を構成し、BizTalk Server でアダプターを対話 |Microsoft ドキュメント
+title: InterAct アダプターの BizTalk Server のインストールおよび FileAct の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 48353cdabe1da8882c1ba4097c5decab6e3789cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1accdd4e9981bd720d328206fe723a53d9ee1792
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222842"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367033"
 ---
-# <a name="install-and-configure-fileact-and-interact-adapter-in-biztalk-server"></a>インストールして FileAct を構成し、BizTalk server アダプターの対話
-インストールし、構成、 [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] for SWIFT です。  いくつかのサンプル メッセージ、およびインストールに関する既知の問題」も参照してください。
+# <a name="install-and-configure-fileact-and-interact-adapter-in-biztalk-server"></a>InterAct アダプターの BizTalk Server のインストールおよび FileAct の構成
+インストールし、構成、 [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] for SWIFT します。  いくつかのサンプルのメッセージ、およびインストールに関する既知の問題」も参照してください。
   
 ## <a name="topics-in-this-section"></a>このセクションのトピック
 
@@ -28,10 +28,10 @@ ms.locfileid: "22222842"
 
 - [FileAct および InterAct アダプターを構成します。](../../adapters-and-accelerators/fileact-interact/configure-the-fileact-and-interact-adapter.md)
 
-- [サンプルの対話と FileAct メッセージ](../../adapters-and-accelerators/fileact-interact/sample-interact-and-fileact-messages.md)
+- [サンプル InterAct および FileAct メッセージ](../../adapters-and-accelerators/fileact-interact/sample-interact-and-fileact-messages.md)
 
-- [アンインストールまたは修復 FileAct および InterAct アダプター](../../adapters-and-accelerators/fileact-interact/uninstall-or-repair-the-fileact-and-interact-adapter.md)
+- [FileAct および InterAct アダプターをアンインストールまたは修復する](../../adapters-and-accelerators/fileact-interact/uninstall-or-repair-the-fileact-and-interact-adapter.md)
 
-- [既知の問題のインストールします。](../../adapters-and-accelerators/fileact-interact/read-the-installation-known-issues.md)
+- [インストールに関する既知の問題の確認](../../adapters-and-accelerators/fileact-interact/read-the-installation-known-issues.md)
 
   

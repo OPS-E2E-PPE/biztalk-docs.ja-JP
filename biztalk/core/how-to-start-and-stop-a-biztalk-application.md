@@ -21,12 +21,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 979de8e8614d05ba97223e43c90ed0ec83cefc4a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c696583f8e08ad9588e4e00fed24151646a727ba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968731"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334120"
 ---
 # <a name="how-to-start-and-stop-a-biztalk-application"></a>BizTalk アプリケーションを開始および停止する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、BizTalk アプリケーションを開始および停止する方法について説明します。  
@@ -58,7 +58,7 @@ ms.locfileid: "36968731"
   
 -   **部分停止 - 実行中のインスタンスを中断します。** このオプションを選択すると、アプリケーションの受信場所がすべて無効になり、オーケストレーションと送信ポートがすべて停止されます。 アイテムの参加解除や展開解除は行われません。 このオプションは、アプリケーションを一時的に停止する場合に使用します。  
   
--   **完全停止 - インスタンスを終了します。** このオプションを選択すると、アプリケーションの受信場所がすべて無効になり、オーケストレーションと送信ポートがすべて停止されて参加解除され、ポリシーもすべて展開解除されます。 このオプションは、アプリケーションを完全に展開解除する場合に使用します。 まだメッセージを処理している実行中のインスタンスがある場合、そのインスタンスの処理は完了しません。 詳細については、[BizTalk アプリケーションを展開解除](../core/undeploying-biztalk-applications.md)を参照してください。  
+-   **完全停止 - インスタンスを終了します。** このオプションを選択すると、アプリケーションの受信場所がすべて無効になり、オーケストレーションと送信ポートがすべて停止されて参加解除され、ポリシーもすべて展開解除されます。 このオプションは、アプリケーションを完全に展開解除する場合に使用します。 まだメッセージを処理している実行中のインスタンスがある場合、そのインスタンスの処理は完了しません。 詳細については、次を参照してください。 [BizTalk アプリケーションを展開解除](../core/undeploying-biztalk-applications.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 BizTalk Operators は、部分停止は実行できますが完全停止は実行できません。 また、BizTalk Operators は、すべてのアイテムが参加している場合にはアプリケーションを開始できます。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

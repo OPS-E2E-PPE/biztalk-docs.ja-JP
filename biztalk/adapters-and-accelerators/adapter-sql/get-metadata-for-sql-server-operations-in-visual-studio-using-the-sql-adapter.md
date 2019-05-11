@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e9b8b7ab1d1cf8a0223756ae5fe7cacaf154750
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 35733d7d90bca30218901f145acfefc763b8ccda
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010755"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369446"
 ---
 # <a name="get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter"></a>SQL アダプタを使用して Visual Studio で SQL Server 操作のメタデータを取得します。
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] 3 つ提供[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]アダプターを使用してソリューションを開発するために使用できるコンポーネント:、 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、および[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。 アダプター クライアントは、これらのコンポーネントを使用して、SQL Server に接続しを実行する操作のメタデータを生成する必要があります。  

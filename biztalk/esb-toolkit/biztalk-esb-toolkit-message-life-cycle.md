@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f93a4ee2024fcb9cfaf65e7cf33922784a47030
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26db3a32cc31f417d518b2eb8663f2da3ba5e8ee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392080"
 ---
 # <a name="biztalk-esb-toolkit-message-life-cycle"></a>BizTalk ESB Toolkit メッセージ ライフ サイクル
 外部システムから開始され、最終的な宛先に到達する ESB を走査するメッセージのライフ サイクルを次に示します。  

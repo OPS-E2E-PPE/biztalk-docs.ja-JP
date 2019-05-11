@@ -1,5 +1,5 @@
 ---
-title: Disabilities4 ユーザー補助機能 |Microsoft ドキュメント
+title: Disabilities4 ユーザー補助機能 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac17215e916dfa895a8a732067ca886ac41b379f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3ab5a6806c14e1b54524459f9f53822fdea68d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223490"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367285"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>障害がある方のためのユーザー補助機能
-Microsoft は、その製品を使用するすべてのユーザーを簡単に開発に取り組んでいます。 ユーザー補助のオプションについては、Windows 2000 Server で Windows 2000 の本の概要でのオンライン ヘルプを参照してください「障害のある方のアクセシビリティ」 Windows 2000 Professional のオンライン ヘルプの「特別なニーズのアクセシビリティ。」を参照してください。  
+Microsoft は、ユーザーの皆様に、製品を容易に取り組んでいます。 ユーザー補助のオプションについては、Windows 2000 Server で Windows 2000 の書籍の概要でのオンライン ヘルプを参照してください「障碍を持つユーザーのアクセシビリティ」 Windows 2000 Professional のオンライン ヘルプの「特別なニーズのアクセシビリティ。」を参照してください。  
   
 ## <a name="see-also"></a>参照  
- [入門、FileAct および InterAct アダプター](../../adapters-and-accelerators/fileact-interact/getting-started-with-the-fileact-and-interact-adapters.md)
+ [FileAct および InterAct アダプターの概要](../../adapters-and-accelerators/fileact-interact/getting-started-with-the-fileact-and-interact-adapters.md)

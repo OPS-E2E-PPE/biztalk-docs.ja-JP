@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4f693b676c1e3c0675051e9d0faf685e8b9d8df
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c07a7e4c400aea3206f8601965ceb4eca56ea8a8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021190"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367600"
 ---
 # <a name="operations-on-tables-and-views-that-contain-large-data-types-using-the-sql-adapter"></a>テーブルと、SQL アダプターを使用して大規模なデータ型を含むビューに対する操作
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]次の SQL Server の大量のデータ型のサポートを提供します。  
@@ -26,7 +26,7 @@ ms.locfileid: "37021190"
   
 - Nvarchar (max)  
   
-- Varbinary (max)  
+- Varbinary(Max)  
   
   SQL Server から大きなデータ値を読み取る、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]選択操作を公開します。  
   
@@ -35,7 +35,7 @@ ms.locfileid: "37021190"
 > [!NOTE]
 >  < Column_name > の設定操作では、これらのテーブルとビューの前に説明した 3 つの大規模なデータ型のいずれかの列を含むのみ使用できます。  
   
- 大規模なデータ型を含む SQL Server でのテーブルとビューで操作を実行する方法の詳細については、[テーブルと、SQL アダプターを使用して大規模なデータ型を含むビューで操作](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)を参照してください。  
+ 大規模なデータ型を含む SQL Server でのテーブルとビューで操作を実行する方法の詳細については、次を参照してください。[テーブルと、SQL アダプターを使用して大規模なデータ型を含むビューで操作](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)します。  
   
 ## <a name="see-also"></a>参照  
  [アダプターを使用して SAP システムへの接続します。](../../adapters-and-accelerators/adapter-sap/connect-to-an-sap-system-using-the-adapter.md)

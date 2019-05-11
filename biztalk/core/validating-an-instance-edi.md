@@ -12,48 +12,48 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58150705b504193a527be729028b00d4384325d6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 966c0323619985766eb39611c25fe813588b4082
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993939"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394043"
 ---
 # <a name="validating-an-instance-edi"></a>インスタンスの検証 (EDI)
-デザイン時にインスタンスを EDI スキーマに対して検証することができます。 それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。 検証するインスタンスは、単一のトランザクション セット (インターチェンジとグループ ヘッダーなし)、単一のトランザクション セットを持つインターチェンジ (インターチェンジとグループ ヘッダーあり)、複数のトランザクション セットを持つ完全なバッチ処理されたインターチェンジ (インターチェンジとグループ ヘッダーあり) のいずれかです。  
+デザイン時に EDI スキーマに対してインスタンスを検証することができます。 それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。 検証するインスタンスは、1 つのトランザクション セット (インターチェンジとグループ ヘッダー) を含まない、インターチェンジ (インターチェンジとグループのヘッダーを含む)、設定の 1 つのトランザクションまたは (複数のトランザクション セットを持つ完全なバッチ化されたインターチェンジインターチェンジ ヘッダーとグループ ヘッダー)。  
   
 > [!NOTE]
->  XML に保存されたインターチェンジの検証はサポートされていません。 しかし、EDI に保存されたインターチェンジの検証はサポートされます。  
+>  保存されたインターチェンジ XML の検証がサポートされていません。 ただし、保存されたインターチェンジを EDI の検証がサポートされています。  
   
- インスタンス検証操作は、EDI と XSD の検証を行います。  
+ インスタンス検証操作では、両方の EDI および XSD 検証を実行します。  
   
- インスタンスを検証するとき、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、区切り記号や構文識別子など、そのインスタンスの中で検証する構成を指定するダイアログ ボックスが表示されます。  
+ インスタンスを検証するときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]区切り記号や構文識別子など、そのインスタンスで検証する構成を指定するダイアログ ボックスが表示されます。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。  
   
-### <a name="to-validate-an-instance-against-its-schema"></a>インスタンスをスキーマに対して検証するには  
+### <a name="to-validate-an-instance-against-its-schema"></a>そのスキーマに対してインスタンスを検証するには  
   
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロジェクトを開きます。  
   
-2. ソリューション エクスプローラーで、メッセージ インスタンスに必要なすべてのスキーマをプロジェクトに追加します。  
+2. ソリューション エクスプ ローラーで、メッセージ インスタンスに必要なすべてのスキーマをプロジェクトに追加します。  
   
-   1. インターチェンジやグループ ヘッダーを持たない単一のトランザクション セットを検証するときは、そのトランザクション セットのドキュメント スキーマを追加します。  
+   1. 単一のトランザクションがインターチェンジとグループ ヘッダーのないセットを検証する場合は、そのトランザクション セットのドキュメント スキーマを追加します。  
   
-   2. 単一のトランザクション セットを持つインターチェンジを検証するときは、そのトランザクションのスキーマと、メッセージで使用するエンコードの種類に対するバッチ スキーマ ([!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI 内の Edifact_BatchSchema.xsd または X12_BatchSchema.xsd のどちらか) をプロジェクトに追加します。  
-  
-      > [!NOTE]
-      >  インスタンスのエンベロープを検証するには、バッチ スキーマが必要です。 メッセージ スキーマのみを使用する場合、エンベロープは検証されません。  
-  
-   3. 複数のトランザクション セットを持つバッチ インターチェンジを検証するときは、メッセージ インスタンス中の各トランザクション セット グループに対するスキーマと、メッセージで使用するエンコードの種類に対するバッチ スキーマ ([!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI 内の Edifact_BatchSchema.xsd または X12_BatchSchema.xsd のどちらか) をプロジェクトに追加します。  
+   2. 1 つのトランザクション セットを持つインターチェンジを検証する場合、プロジェクトを追加、そのトランザクションのスキーマとメッセージで使用するエンコードの種類に対するバッチ スキーマ (Edifact_BatchSchema.xsd または X12_BatchSchema.xsd の[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI)。  
   
       > [!NOTE]
-      >  サービス スキーマをカスタマイズした場合は、ドキュメント (トランザクション セット) スキーマと、必要に応じてバッチ スキーマに加え、カスタム サービス スキーマを BizTalk プロジェクトに追加します。  
+      >  インスタンスのエンベロープを検証するには、バッチ スキーマが必要です。 メッセージ スキーマのみを使用した場合、エンベロープは検証できません。  
+  
+   3. 複数のトランザクション セットを持つバッチ インターチェンジを検証する場合、プロジェクトを追加、スキーマ、メッセージ インスタンスとメッセージで使用するエンコードの種類に対するバッチ スキーマ内の各トランザクション セット グループに対する (いずれかの Edifact_BatchSchema.xsd またはX12_BatchSchema.xsd [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]xsd_schema \edi にあります)。  
   
       > [!NOTE]
-      >  インスタンスを検証するためにプロジェクトをビルドする必要はありません。  
+      >  サービス スキーマをカスタマイズしているドキュメント (トランザクション セット) スキーマにさらに、BizTalk プロジェクト内のカスタム サービス スキーマを含める必要があり、必要に応じてバッチ スキーマ。  
   
-3. 以下のようにして、ソリューション エクスプローラーでスキーマのプロパティ ページを表示します。  
+      > [!NOTE]
+      >  インスタンスを検証するプロジェクトをビルドする必要はありません。  
+  
+3. 次のように、ソリューション エクスプ ローラーでスキーマのプロパティ ページを表示します。  
   
    1.  単一のトランザクション セットを検証する場合、そのトランザクション セットのドキュメント スキーマを右クリックし、順にクリックします**プロパティ**します。  
   
@@ -61,10 +61,10 @@ ms.locfileid: "36993939"
   
 4. スキーマのプロパティ ウィンドウでの**入力インスタンス ファイル名**検証、または、ファイルを参照する、選択しをクリックするメッセージ インスタンスのパスと名前を入力**OK**します。  
   
-5. **インスタンスの入力の種類の検証**、検証するファイルの種類を入力:**ネイティブ**EDI ファイルのまたは**XML** XML ファイル。  
+5. **インスタンスの入力の種類の検証**、検証するファイルの種類を入力します。**ネイティブ**EDI ファイルまたは**XML** XML ファイル。  
   
    > [!NOTE]
-   >  XML に保存されたインターチェンジの検証はサポートされていません。 XML を選択した場合、**インスタンスの入力の種類の検証**保存されたインターチェンジを検証するときにプロパティが、操作は失敗し、何が返されます。 ただし、選択した場合**ネイティブ**の**インスタンスの入力の種類の検証**保存されたインターチェンジを検証するときに、操作は成功します。  
+   >  保存されたインターチェンジ XML の検証がサポートされていません。 XML を選択した場合、**インスタンスの入力の種類の検証**保存されたインターチェンジを検証するときにプロパティが、操作は失敗し、何が返されます。 ただし、選択した場合**ネイティブ**の**インスタンスの入力の種類の検証**保存されたインターチェンジを検証するときに、操作は成功します。  
   
 6. メッセージのスキーマ (Edifact_BatchSchema.xsd または X12_BatchSchema.xsd の 1 つのトランザクション セットを持つインターチェンジまたはバッチ インターチェンジを検証する場合) を右クリックし、をクリックし、**インスタンスの検証**です。  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbc38ddedf1b71cba0df4306359df9bdb5c96c15
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ea93206c296df5c1930e699500aeba8fda253b75
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358157"
 ---
 # <a name="best-practices-for-securing-adapters"></a>アダプターをセキュリティで保護するためのベスト プラクティス
 このトピックでは、アダプターのセキュリティに関するベスト プラクティスについて説明します。  
@@ -34,7 +34,7 @@ ms.locfileid: "36966315"
   
  **既定のアダプター スキーマでは、顧客の機密データを格納しないでください。**  
   
- ユーザー名とパスワードの情報を構成するのは、アダプターの展開後にしてください。 アダプターの展開後であれば、それらの情報は SSO データベースに格納されます。 SSO データベースの詳細については、[を使用して SSO](../core/using-sso.md)を参照してください。  
+ ユーザー名とパスワードの情報を構成するのは、アダプターの展開後にしてください。 アダプターの展開後であれば、それらの情報は SSO データベースに格納されます。 SSO データベースの詳細については、次を参照してください。[を使用して SSO](../core/using-sso.md)します。  
   
  **共有フォルダー (受信フォルダーと送信フォルダー) 選択し、ファイルおよび EDI アダプターを使用してファイルの削除に使用するには、次の権限を付与するには。**  
   

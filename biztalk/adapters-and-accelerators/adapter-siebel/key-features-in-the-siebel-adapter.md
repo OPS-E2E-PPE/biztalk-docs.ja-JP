@@ -22,12 +22,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4896256555ea6b721d917c992c9c41fd3737f101
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 65b23d912c4592bcb1ae30b7cc8fb75c35273e92
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018329"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371593"
 ---
 # <a name="key-features-in-the-siebel-adapter"></a>Siebel アダプターの主要な機能
 このセクションでは、新機能を示します[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]します。  
@@ -42,7 +42,7 @@ ms.locfileid: "37018329"
   
 |                                                                    機能                                                                     |                                                                                                               解説                                                                                                               |
 |------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 使用するためのサポート、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]と Microsoft Office SharePoint Server (MOSS) | アダプターを使用すると、MOSS ポータルには、Siebel システムからデータを表示します。 詳細については、[Siebel アダプターを使用して、Microsoft Office SharePoint Server と](https://msdn.microsoft.com/library/dd788017.aspx)を参照してください。 |
+| 使用するためのサポート、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]と Microsoft Office SharePoint Server (MOSS) | アダプターを使用すると、MOSS ポータルには、Siebel システムからデータを表示します。 詳細については、次を参照してください。 [Siebel アダプターを使用して、Microsoft Office SharePoint Server と](https://msdn.microsoft.com/library/dd788017.aspx)します。 |
   
 ### <a name="operations-related-features"></a>操作に関連の機能  
   
@@ -56,7 +56,7 @@ ms.locfileid: "37018329"
   
 |                                                        機能                                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  解説                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| アダプターを使用する新しい方法 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] | [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Biztalk WCF カスタム ポートまたは Wcf-siebel ポートとして使用できます。 使用する場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] WCF カスタム ポートには WCF カスタム ポートを追加する必要はありません、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールに、WCF カスタム ポートが追加されるため、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]既定では、管理コンソール。 ただし、使用する場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Wcf-siebel ポートを経由する Wcf-siebel アダプターを最初に追加する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 詳細については、[Siebel アダプターを BizTalk Server 管理コンソールに追加](../../adapters-and-accelerators/adapter-siebel/add-the-siebel-adapter-to-biztalk-server-administration-console.md)を参照してください。 |
+| アダプターを使用する新しい方法 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] | [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Biztalk WCF カスタム ポートまたは Wcf-siebel ポートとして使用できます。 使用する場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] WCF カスタム ポートには WCF カスタム ポートを追加する必要はありません、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールに、WCF カスタム ポートが追加されるため、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]既定では、管理コンソール。 ただし、使用する場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Wcf-siebel ポートを経由する Wcf-siebel アダプターを最初に追加する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 詳細については、次を参照してください。 [Siebel アダプターを BizTalk Server 管理コンソールに追加](../../adapters-and-accelerators/adapter-siebel/add-the-siebel-adapter-to-biztalk-server-administration-console.md)します。 |
   
 ## <a name="see-also"></a>参照  
  [BizTalk Adapter for Siebel eBusiness Applications について](../../adapters-and-accelerators/adapter-siebel/understand-biztalk-adapter-for-siebel-ebusiness-applications.md)

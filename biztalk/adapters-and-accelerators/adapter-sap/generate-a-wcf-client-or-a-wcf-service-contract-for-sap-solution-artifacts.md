@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 817a76abac05c76e67edf03168f596eb999b5ee4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d84258ab9c1d2716f74e5bab2b4f82fd7caf11e3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981355"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373413"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts"></a>WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成します。
 使用することができます、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] WCF クライアント クラスまたは SAP アイテムを選択した操作を対象とした WCF サービス コントラクト (インターフェイス) を生成します。 ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を WCF クライアント クラスを生成または WCF サービス コントラクトを使用することもできます。ただし、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]標準の Microsoft Windows インターフェイスから ServiceModel メタデータ ユーティリティ ツールの機能を公開します。 Svcutil.exe ツールを使用できない参照および検索の機能を提供し、SAP システムに接続するときに選択したバインドのプロパティに基づいて構成ファイルを生成します。  

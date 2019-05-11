@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc6fe9b28e4ea2b5eee087b61866827a766c3e3f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7d810ded6d5a73b2f22e04e3e27a15684bb55a09
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364047"
 ---
 # <a name="what-is-the-fileact-adapter"></a>FileAct アダプターとは何ですか。
 SWIFTNet 用に FileAct アダプターは、ファイルの転送で、世界銀行間金融電気通信 (SWIFT) Secure IP Network (SIPN) を BizTalk Server と、Society 間の接続を提供します。 SIPN は、金融機関、金融業界インフラストラクチャ、顧客との接続をセキュリティで保護されたプライベート ネットワーク経由でメッセージやファイルを転送します。 FileAct アダプターは SWIFTNet リンク (SNL) アプリケーション プログラミング インターフェイス (API) s を SIPN への接続を使用します。  

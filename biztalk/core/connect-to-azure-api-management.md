@@ -13,12 +13,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: valrobb
 manager: anneta
-ms.openlocfilehash: c8bdb3cb3f2d0fc247ea607a1b34623006315754
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fd316e66519446be59e6ba0ff6cf66799c7f9523
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390454"
 ---
 # <a name="publish-biztalk-soap-endpoints-in-api-management"></a>API Management での BizTalk SOAP エンドポイントを公開します。
 
@@ -47,11 +47,11 @@ Azure API Management 内のサービスと、BizTalk SOAP エンドポイント�
     
 3. WSDL のプロパティを構成します。 
 
-   1. **WSDL 仕様**: BizTalk SOAP エンドポイントに完全な URI を入力します。 たとえば、ように入力します`http://10.0.31.22/RestEndPoint/OrderIncome.svc?wsdl`または`http://biztalkfp1.westus.cloudapp.azure.com/RestEndPoint/OrderIncome.svc?wsdl`します。  
+   1. **WSDL 仕様**:BizTalk SOAP エンドポイントには、完全な URI を入力します。 たとえば、ように入力します`http://10.0.31.22/RestEndPoint/OrderIncome.svc?wsdl`または`http://biztalkfp1.westus.cloudapp.azure.com/RestEndPoint/OrderIncome.svc?wsdl`します。  
 
-   2. **SOAP パススルー**または**SOAP REST から**: 設定を選択します。 
-       * **SOAP REST から**: 既存の (SOAP) ベースの web サービスからの HTTP Api の作成 (REST) ベース
-       * **SOAP パススルー**: SOAP API のプロキシとして機能します。 
+   2. **SOAP パススルー**または**SOAP REST から**:設定を選択します。 
+       * **SOAP REST から**:既存の (SOAP) ベースの web サービスから HTTP Api の REST ベースの作成します。
+       * **SOAP パススルー**:SOAP API のプロキシとして機能します 
 
    3. 優先入力**表示名**、**名前**、**説明**、 **API Url サフィックス**、**製品**、**バージョン**します。
 
@@ -77,8 +77,8 @@ Azure API Management 内のサービスと、BizTalk SOAP エンドポイント�
    2. **WSDL 仕様リンク**WSDL ファイルが自動的に設定されます。 置換**localhost** DNS 名または BizTalk Server の IP アドレス。 
 
    3. 選択**SOAP パススルー**または**SOAP REST から**:  
-      * **SOAP REST から**: 既存の SOAP ベースの web サービスからの HTTP Api の作成 (REST) ベース
-      * **SOAP パススルー**: SOAP API のプロキシとして機能します。 
+      * **SOAP REST から**:既存の SOAP ベースの web サービスから HTTP Api の REST ベースの作成します。
+      * **SOAP パススルー**:SOAP API のプロキシとして機能します 
 
         API 発行する両方の方法を変更して、 **API URL サフィックス**、し、さまざまな API の種類を使用して、発行します。
 
@@ -95,5 +95,5 @@ Azure API Management 内のサービスと、BizTalk SOAP エンドポイント�
 ## <a name="do-more"></a>さらに活用します。
 Azure API Management は、Logic Apps などの Azure サービスの多くで使用される強力なサービスです。 API Management には、多くの機能、転送率の制限およびクォータは、独自の Api にアクセスできるユーザーを含む、キャッシュ、および詳細が含まれています。 参照してください[API Management とは何ですか?](https://docs.microsoft.com/azure/api-management/api-management-key-concepts)を開始します。
 
-## <a name="see-also"></a>参照
-[Feature Pack の構成](configure-the-feature-pack.md)
+## <a name="see-also"></a>関連項目
+[Feature pack を構成します。](configure-the-feature-pack.md)

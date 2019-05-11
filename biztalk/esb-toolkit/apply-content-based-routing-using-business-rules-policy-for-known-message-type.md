@@ -1,5 +1,5 @@
 ---
-title: '方法: 既知のメッセージの種類のルール ポリシーの実装のビジネスを使用してコンテンツ ベース ルーティング |Microsoft Docs'
+title: 操作方法:既知のメッセージの種類のルール ポリシーの実装のビジネスを使用してコンテンツ ベース ルーティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7b47fd54aaf6dc93ed26ba7efec3b14bf31401e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f687ae84782866809ef882a5389e35da8f7ce5a9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004915"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392313"
 ---
-# <a name="how-to-implement-content-based-routing-using-a-business-rules-policy-for-a-known-message-type"></a>方法: 既知のメッセージの種類のルール ポリシーの実装のビジネスを使用してコンテンツ ベース ルーティング
+# <a name="how-to-implement-content-based-routing-using-a-business-rules-policy-for-a-known-message-type"></a>操作方法:コンテンツ ベース ルーティング ポリシーを使用してビジネス ルールの既知のメッセージの種類の実装します。
 ## <a name="goal"></a>[目標]  
  このセクションでは動的に基づくメッセージをルーティングするスケジュールを作成する方法を示します (Microsoft BizTalk Server 構成データベースに展開されたスキーマ) の既知のメッセージ型のコンテンツに対して、ビジネス規則を使用してポリシー。  
   
@@ -279,9 +279,9 @@ ms.locfileid: "37004915"
 ## <a name="additional-resources"></a>その他のリソース  
  詳細については、次の関連項目を参照してください。  
   
--   [方法: ビジネス ルール ポリシーを使用して、日程を選択](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+-   [方法: ビジネス ルール ポリシーを使用するスケジュールを選択します。](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
--   [方法: ビジネス ルール ポリシーを利用し、メッセージ コンテキストに基づき、メッセージの経路を動的に決定する](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
+-   [方法: ビジネス ルール ポリシーを使用してメッセージのコンテキストに基づいてメッセージを動的にルーティングします。](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   

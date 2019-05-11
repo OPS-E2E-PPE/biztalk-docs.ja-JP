@@ -1,5 +1,5 @@
 ---
-title: 'パート 2: バッチのバッチのシナリオ |Microsoft Docs'
+title: 'パート 2: バッチ アウト シナリオでバッチ |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 593f1e57b12eb30f47db65bfacd34a988f701f07
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d950a326aae07db4763210f67118ae272785444d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290370"
 ---
-# <a name="part-2-batch-inbatch-out-scenario"></a>パート 2: 内のバッチ/バッチ アウト シナリオ
+# <a name="part-2-batch-inbatch-out-scenario"></a>パート 2: バッチ処理/バッチ アウト シナリオ
 このチュートリアルでは、HL7 エンコード バッチ ファイル、渡す[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]せず、最適化、および変換先にそのままのバッチ ファイルを送信します。 次の図は、このプロセスのフローと、以下のサブセクションには、ワークフローがについて説明します。  
   
 > [!NOTE]
@@ -48,8 +48,8 @@ ms.locfileid: "36975419"
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: バッチ イン/バッチ アウトのパーティー情報の構成](../../adapters-and-accelerators/accelerator-hl7/step-1-configure-party-information-for-batch-in-batch-out.md)  
+-   [ステップ 1: バッチ イン/バッチ アウトのパーティ情報の構成](../../adapters-and-accelerators/accelerator-hl7/step-1-configure-party-information-for-batch-in-batch-out.md)  
   
--   [手順 2: 送信ポートと受信ポートの変更または作成](../../adapters-and-accelerators/accelerator-hl7/step-2-modify-or-create-the-send-and-receive-ports.md)  
+-   [手順 2:送信ポートと受信ポートの変更または作成](../../adapters-and-accelerators/accelerator-hl7/step-2-modify-or-create-the-send-and-receive-ports.md)  
   
--   [パート 3: バッチ イン/バッチ アウト シナリオのテスト](../../adapters-and-accelerators/accelerator-hl7/step-3-test-the-batch-in-batch-out-scenario.md)
+-   [ステップ 3:バッチ イン/バッチ アウト シナリオのテスト](../../adapters-and-accelerators/accelerator-hl7/step-3-test-the-batch-in-batch-out-scenario.md)

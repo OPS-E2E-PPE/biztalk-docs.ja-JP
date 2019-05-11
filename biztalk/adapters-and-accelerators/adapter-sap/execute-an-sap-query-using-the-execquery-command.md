@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f250befed19f285baefc1c192f25b335701fa6ca
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2b53d7137e8adcb4ce6e140c1ad9e27054e787ff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373434"
 ---
 # <a name="execute-an-sap-query-using-the-execquery-command"></a>EXECQUERY コマンドを使用して SAP クエリを実行します。
 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ADO.NET データ ソースとしての SAP システムを公開します。 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]、EXECQUERY ステートメントを実行する SAP システムで事前定義されたクエリを実行することができます。  
@@ -29,13 +29,13 @@ ms.locfileid: "36972163"
   
 1. 参照を含める (と、コードでステートメントを使用) に**Microsoft.Data.SAPClient**します。  
   
-2. 作成、 **SAPConnection** SAP 接続文字列のデータ プロバイダーを使用してオブジェクト。 接続文字列の詳細については、[SAP 接続文字列のデータ プロバイダーの種類について](../../adapters-and-accelerators/adapter-sap/read-about-data-provider-types-for-the-sap-connection-string.md)を参照してください。  
+2. 作成、 **SAPConnection** SAP 接続文字列のデータ プロバイダーを使用してオブジェクト。 接続文字列の詳細については、次を参照してください。 [SAP 接続文字列のデータ プロバイダーの種類について](../../adapters-and-accelerators/adapter-sap/read-about-data-provider-types-for-the-sap-connection-string.md)します。  
   
 3. 呼び出すことによって、SAP システムへの接続を開く**オープン**上、 **SAPConnection**します。  
   
 4. 作成、 **SAPCommand**オブジェクトから、 **SAPConnection**します。  
   
-5. EXECQUERY ステートメントの指定、 **CommandText**のプロパティ、 **SAPCommand**します。 かどうか、必要に応じてパラメーターを指定できますを使用して**SAPParameter**オブジェクト。 EXECQUERY ステートメントを使用する SAP システムで定義されているクエリを実行する方法の詳細については、[sap EXECQUERY ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-an-execquery-statement-in-sap.md)を参照してください。  
+5. EXECQUERY ステートメントの指定、 **CommandText**のプロパティ、 **SAPCommand**します。 かどうか、必要に応じてパラメーターを指定できますを使用して**SAPParameter**オブジェクト。 EXECQUERY ステートメントを使用する SAP システムで定義されているクエリを実行する方法の詳細については、次を参照してください。 [sap EXECQUERY ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-an-execquery-statement-in-sap.md)します。  
   
 6. クエリを実行しで結果を取得するコマンドを実行する**SAPDataReader**します。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12f54b77420a9e03e701c5e154bba681b46c166c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fc2a90b0b707b9ab037968f7636d75437a43d1a9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997515"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279600"
 ---
 # <a name="validating-a-schema-edi"></a>スキーマの検証 (EDI)
 デザイン時に EDI スキーマを検証できます。 それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。 スキーマの検証操作では、EDI ルールに基づいてスキーマの検証が行われます。 スキーマを検証するために入力メッセージ インスタンスを指定する必要はありません。  
@@ -30,7 +30,7 @@ ms.locfileid: "36997515"
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロジェクトを開きます。 ソリューション エクスプローラーで、検証するメッセージ スキーマをプロジェクトに追加します。  
   
    > [!NOTE]
-   >  メッセージ スキーマは [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI folder フォルダーの下の該当するサブフォルダーにあります。 スキーマ ファイルをインストールする方法の詳細については、[EDI スキーマ ファイルをインストールする方法](http://msdn.microsoft.com/library/787f45d9-d95d-40f4-a4ac-0a0e711f7550)を参照してください。  
+   >  メッセージ スキーマは [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI folder フォルダーの下の該当するサブフォルダーにあります。 スキーマ ファイルをインストールする方法の詳細については、次を参照してください。 [EDI スキーマ ファイルをインストールする方法](http://msdn.microsoft.com/library/787f45d9-d95d-40f4-a4ac-0a0e711f7550)します。  
    > 
    > [!NOTE]
    >  スキーマを検証するためにプロジェクトをビルドする必要はありません。  

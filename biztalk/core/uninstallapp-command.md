@@ -1,5 +1,5 @@
 ---
-title: UninstallApp コマンド |Microsoft ドキュメント
+title: UninstallApp コマンド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,34 +12,34 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea94335882ffbcf01b69c450ef4a5eb80ef4fa3d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b4fc9da4d645b710490447addc2d4fd8691f199d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286786"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292686"
 ---
 # <a name="uninstallapp-command"></a>UninstallApp コマンド
-BizTalk アプリケーションをローカル コンピューターからアンインストールし、さらに、コントロール パネルの [プログラムの追加と削除] に表示されるプログラム一覧からも削除します。 このコマンドの実行結果は、[プログラムの追加と削除] を使ってアプリケーションを削除した場合と同じです。 このアプリケーションに対して複数の .msi ファイルがインストールされている場合、これらの .msi ファイルによってインストールされたアイテムがすべてアンインストールされます。  
+ローカル コンピューターから BizTalk アプリケーションをアンインストールし、アプリケーションを追加でプログラムまたはコントロール パネルの [プログラムの削除] の一覧からも削除されます。 このコマンドでは、追加または削除するプログラムを使用してアプリケーションを削除すると同じ効果があります。 複数の .msi ファイルは、このアプリケーションのインストールされている、すべてのすべての .msi ファイルによってインストールされている項目はアンインストールします。  
   
- このコマンドでは、[プログラムの追加と削除] に表示されるアプリケーション名と同じアプリケーション名を指定する必要があります。 使用することができます、アプリケーション名のことを確認していない場合は、 **ListPackage** 」の説明に従って、取得するコマンド[ListPackage コマンド](../core/listpackage-command.md)です。  
+ 追加と削除 に表示される、このコマンドの指定したアプリケーション名は、アプリケーションの名前に一致する必要があります。 アプリケーション名の確信できない場合は使用できます、 **ListPackage** 」の説明に従って、取得するコマンドを[ListPackage コマンド](../core/listpackage-command.md)します。  
   
 > [!IMPORTANT]
->  .msi ファイルをダブルクリックしてアプリケーションをアンインストールすることもできますが、この方法はサポートの対象外となります。 同じアプリケーションに対して複数の .msi ファイルがインストールされていた場合、この方法では、アプリケーションに関連付けられているアイテムを完全にアンインストールすることはできないためです。  
+>  .Msi ファイルをダブルクリックしてアプリケーションをアンインストールすることはできますが、これはサポートされません。 これは、同じアプリケーションの複数の .msi ファイルをインストールすることができます、このメソッドを使用してはアンインストールされませんすべてのアプリケーションに関連付けられている項目のためです。  
   
 ## <a name="usage"></a>使用方法  
  **BTSTask UninstallApp/applicationname は:** *値*  
   
 ## <a name="parameters"></a>パラメーター  
   
-|パラメーター|必須|Description|  
+|パラメーター|必須|説明|  
 |---------------|--------------|-----------------|  
-|**/ApplicationName** (または **/A**、「解説」を参照してください)|はい|アンインストールする BizTalk アプリケーションの名前。 名前には、スペースが含まれている場合は、二重引用符 (") で囲む必要があります。|  
+|**/ApplicationName** (または **/A**、「解説」を参照してください)|はい|アンインストールする BizTalk アプリケーションの名前。 名前にスペースが含まれている場合は、二重引用符 (") で囲む必要があります。|  
   
 ## <a name="sample"></a>サンプル  
- **Applicationname: myapplication BTSTask UninstallApp**  
+ **BTSTask UninstallApp applicationname:**  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>コメント  
  パラメーターの大文字と小文字は区別されません。 パラメーター名は、すべて入力する必要はありません。最初の数文字 (一意に特定できるだけの文字数) を入力するだけで構いません。  
   
 ## <a name="see-also"></a>参照  

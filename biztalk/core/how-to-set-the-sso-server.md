@@ -1,5 +1,5 @@
 ---
-title: SSO サーバーを設定する方法 |Microsoft ドキュメント
+title: SSO サーバーを設定する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,69 +17,69 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c7dab9df7b5444b437f12737c37036b592a70aad
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 804c1da3cec2fa13d82d6b0c9a7ae5f2e33989ed
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25972168"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334119"
 ---
 # <a name="how-to-set-the-sso-server"></a>SSO サーバーを設定する方法
-ssomanage を使用するたびに、まず、ユーザーが接続先のシングル サインオン サーバーを参照するように設定する必要があります。  
+Ssomanage を使用するたびに接続するシングル サインオン サーバーにユーザーをまずポイントする必要があります。  
   
- これは、次の 2 つの方法のいずれかで行うことができます。  
+ 2 つの方法のいずれかでこれを行うことができます。  
   
--   各ユーザーが、自分自身が正しいシングル サインオン サーバーを参照するように設定します。  
+-   個々 のユーザーは、正しいシングル サインオン サーバーをそれ自体をポイントできます。  
   
--   シングル サインオン サーバーのローカルのコンピューター管理者が、シングル サインオン ユーザーのすべてのメンバーがこのサーバーを参照するように設定します。  
+-   シングル サインオン サーバーのローカル コンピューターの管理者は、このサーバーをシングル サインオン ユーザー アカウントのすべてのメンバーを指定できます。  
   
-### <a name="to-set-the-enterprise-single-sign-on-server-using-the-mmc-snap-in"></a>MMC スナップインでエンタープライズ シングル サインオン サーバーを設定するには  
+### <a name="to-set-the-enterprise-single-sign-on-server-using-the-mmc-snap-in"></a>エンタープライズ シングル サインオン サーバー MMC スナップインを使用して設定するには  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、順にクリック**SSO 管理**です。  
+1.  クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、順にクリックします**SSO 管理**します。  
   
-2.  MMC スナップインで、**コンソール ルート**を右クリックして**エンタープライズ シングル サインオン**、 をクリック**選択**です。  
+2.  MMC スナップインで、**コンソール ルート**を右クリックして**エンタープライズ シングル サインオン**、 をクリック**選択**します。  
   
-3.  対象のサーバーを参照します。  
+3.  目的のサーバーに移動します。  
   
-4.  必要に応じて、、**すべてのユーザーの SSO サーバーの設定**チェック ボックスをオンします。  
+4.  必要に応じて、、**すべてのユーザーの SSO サーバーを設定**チェック ボックスをオンします。  
   
 5.  **[OK]** をクリックします。  
   
-### <a name="to-set-the-enterprise-single-sign-on-server-for-a-single-user-using-the-command-line"></a>コマンド ラインで 1 人のユーザーに対してエンタープライズ シングル サインオン サーバーを設定するには  
+### <a name="to-set-the-enterprise-single-sign-on-server-for-a-single-user-using-the-command-line"></a>コマンドラインを使用して 1 人のユーザーのエンタープライズ シングル サインオン サーバーを設定するには  
   
-1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
+1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**します。  
   
-2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \Program Files\Common \enterprise シングル サインオンします。  
   
 3.  型**ssomanage – server \<SSO サーバー名\>** ここで、  **\<SSO サーバー名\>** シングル サインオン サーバーのコンピューター名をユーザーには接続しようとしています。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-### <a name="to-set-the-enterprise-single-sign-on-server-for-all-users-using-the-command-line"></a>コマンド ラインですべてのユーザーに対してエンタープライズ シングル サインオン サーバーを設定するには  
+### <a name="to-set-the-enterprise-single-sign-on-server-for-all-users-using-the-command-line"></a>コマンドラインを使用してすべてのユーザーに対してエンタープライズ シングル サインオン サーバーを設定するには  
   
-1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
+1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**します。  
   
-2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \Program Files\Common \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – serverall \<SSO サーバー名\>** ここで、  **\<SSO サーバー名\>** シングル サインオン サーバーのすべてのコンピューター名にはシングル サインオン ユーザー アカウントのメンバーが指すされます。  
+3.  型**ssomanage – serverall \<SSO サーバー名\>** ここで、  **\<SSO サーバー名\>** はシングル サインオン サーバーのすべてのコンピューター名ですシングル サインオン ユーザー アカウントのメンバーが指すされます。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-### <a name="to-determine-the-enterprise-single-sign-on-server-to-which-a-user-is-connected-using-the-command-line"></a>コマンド ラインでユーザーが接続されているエンタープライズ シングル サインオン サーバーを特定するには  
+### <a name="to-determine-the-enterprise-single-sign-on-server-to-which-a-user-is-connected-using-the-command-line"></a>エンタープライズ シングル サインオン サーバーのコマンドラインを使用して、ユーザーの接続先を決定するには  
   
-1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
+1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**します。  
   
-2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ライン プロンプトで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは**\<ドライブ\>**: \Program Files\Common \enterprise シングル サインオンします。  
   
-3.  型**ssomanage – showserver**です。  
+3.  型**ssomanage – showserver**します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
 > [!NOTE]
->  このコマンドでは、現在のユーザーの設定だけでなく、存在する場合は他のユーザーの設定も表示されます。  
+>  このコマンドは、存在する場合、現在のユーザーも他のユーザーの設定を表示します。  
   
 ## <a name="see-also"></a>参照  
  [SSO を有効にする方法](../core/how-to-enable-sso.md)   

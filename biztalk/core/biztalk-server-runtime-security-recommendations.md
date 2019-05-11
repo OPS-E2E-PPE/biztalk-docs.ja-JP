@@ -18,17 +18,17 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f929e49a7c7bc94456262ca07a42bfdc02eb1107
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b1e452a7cf78f63ac128064620db3084e91946fe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357871"
 ---
 # <a name="biztalk-server-runtime-security-recommendations"></a>BizTalk Server ランタイムのセキュリティに関する推奨事項
 メッセージの受信、送信、処理、および追跡を行うすべてのコンピューターに BizTalk Server ランタイム (エンジン) をインストールする必要があります。 つまり、BizTalk ホスト インスタンス (処理サーバー) を作成するコンピューターにランタイム コンポーネントをインストールする必要があります。 BizTalk Server ランタイムをセキュリティで保護して環境に展開するには、次のガイドラインに従うことをお勧めします。  
   
-- BizTalk Server ランタイム タスクを行う最小セキュリティのユーザー権利が付与されていることを確認します。 最低限のセキュリティ ユーザー権限の詳細については、[最小セキュリティ ユーザー権限](../core/minimum-security-user-rights.md)を参照してください。  
+- BizTalk Server ランタイム タスクを行う最小セキュリティのユーザー権利が付与されていることを確認します。 最低限のセキュリティ ユーザー権限の詳細については、次を参照してください。[最小セキュリティ ユーザー権限](../core/minimum-security-user-rights.md)します。  
   
   > [!NOTE]
   >  BizTalk 構成は、タスクを行うための最小限のアクセス権限をアカウントに与えます。  

@@ -1,5 +1,5 @@
 ---
-title: Siebel アダプターの SiebelConnectionStringBuilder クラス |Microsoft ドキュメント
+title: Siebel アダプターの SiebelConnectionStringBuilder クラス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,17 +16,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 088748c63983e76e64d32f54b3e999fadd88d23a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8824f61fa591636b2c4b43eceb6b1a3aa9e363e9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222010"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370838"
 ---
 # <a name="siebelconnectionstringbuilder-class-in-the-siebel-adapter"></a>Siebel アダプターの SiebelConnectionStringBuilder クラス
-[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]提供、`DbConnectionStringBuilder`ツールの接続プロパティを取得するために環境の実装を SQL Server Integration Services (SSIS) および Visual Studio のエクスプ ローラーを有効にする、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]によって GUI の形式で表示し、PropertyGrid です。  
+[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]提供、`DbConnectionStringBuilder`ツールの接続プロパティを取得するための環境の SQL Server Integration Services (SSIS) と Visual Studio のエクスプ ローラーを有効にする実装、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]によって GUI の形式で表示して、PropertyGrid します。  
   
- SiebelConnectionStringBuilder を作成するには、次の方法を使用します。  
+ SiebelConnectionStringBuilder を作成するには、次のアプローチを使用します。  
   
 ```  
   
@@ -42,7 +42,7 @@ bldr.ConnectionString = connstr;
 SiebelConnectionStringBuilder bldr = new SiebelConnectionStringBuilder();  
 ```  
   
- キーとの一部としてサポートされている値を表示する、`DbConnectionStringBuilder`を参照してください[Siebel 接続文字列のデータ プロバイダーのプロパティ](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)です。  
+ キーとの一部としてサポートされている値を表示する、`DbConnectionStringBuilder`を参照してください[Siebel 接続文字列のデータ プロバイダー プロパティ](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)します。  
   
 ## <a name="see-also"></a>参照  
- [Siebel アダプターと ADO.NET インターフェイスを拡張します。](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)
+ [Siebel アダプターを使用した ADO.NET インターフェイスを拡張します。](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)

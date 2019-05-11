@@ -19,12 +19,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0eebc51d23c66fb9dd7047f29982fbcc05a8215f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5db561b2c4f2bcd738fbb8932bba028df250c7e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971803"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290439"
 ---
 # <a name="mllp-receive-and-send-components"></a>MLLP 受信および送信コンポーネント
 Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) すべての Microsoft のサポート[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ファイル、HTTP、SQL では、FTP などのネイティブ アダプターの種類。 HL7 でエンコードされたメッセージの受信と送信、ただし、通常使用する MLLP アダプター。 このアダプターは、最小限下位レイヤー プロトコル (MLLP) を使用する TCP/IP ソケット アダプターです。 このプロトコルは、双方向のメッセージのサポートとエンド ツー エンドの医療のアプリケーション統合を提供します。  

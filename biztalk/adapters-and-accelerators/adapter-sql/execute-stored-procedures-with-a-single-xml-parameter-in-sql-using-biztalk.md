@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a71ee5be554393db10e65adb49694e7104bb011b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b8e1e078be859750e84b729edf93ea7894b5078f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976925"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369625"
 ---
 # <a name="execute-stored-procedures-with-a-single-xml-parameter-in-sql-server-using-biztalk-server"></a>BizTalk Server を使用して SQL Server での XML パラメーターを 1 つのストアド プロシージャを実行します。
 1 つのパラメーターを受け取るストアド プロシージャを実行するは」の説明に従って、他のストアド プロシージャの実行に似ています[BizTalk Server を使用して SQL Server でのストアド プロシージャの実行](execute-stored-procedures-in-sql-server-using-biztalk-server.md)します。 ただし、上記のリンクで説明されているアプローチのデザイン時にストアド プロシージャのメタデータを生成し、実行時に、プロシージャを呼び出すオーケストレーションを作成する必要があります。  
@@ -26,7 +26,7 @@ ms.locfileid: "36976925"
  その値に対して、処理を実行せずにストアド プロシージャを 1 つ 1 つの値を渡すだけする場所のシナリオを検討してください。 このような場合、メタデータの生成、オーケストレーションを作成、オーケストレーションを展開して、操作の実行のオーバーヘッドは必要ありません。 代わりに、ストアド プロシージャを直接起動するには、Wcf-custom または WCF-SQL 送信ポートを構成できます。 このトピックを使用してこれらのタスクを実行する方法を示します、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
 > [!NOTE]
->  このトピックでは、Wcf-custom を構成する方法についての送信ポートを 1 つのパラメーターを受け取るストアド プロシージャの実行を提供します。 WCF SQL ポートを構成することで、同じ手順を実行できます。 WCF SQL ポートを構成する方法の詳細については、[WCF-SQL アダプターを使用してポートを構成する](configure-a-port-using-the-wcf-sql-adapter.md)を参照してください。  
+>  このトピックでは、Wcf-custom を構成する方法についての送信ポートを 1 つのパラメーターを受け取るストアド プロシージャの実行を提供します。 WCF SQL ポートを構成することで、同じ手順を実行できます。 WCF SQL ポートを構成する方法の詳細については、次を参照してください。 [WCF-SQL アダプターを使用してポートを構成する](configure-a-port-using-the-wcf-sql-adapter.md)します。  
   
 ## <a name="invoke-stored-procedures-without-orchestration"></a>指揮なしのストアド プロシージャを呼び出す  
  オーケストレーションなしの 1 つのパラメーターを使用したストアド プロシージャを実行する方法を説明するためには、このトピックでは、ADD_LAST_EMP_XML_INFO ストアド プロシージャを使用します。 この手順を XML 値をパラメーターとして受け取りに挿入します、**アドレス**の列、**従業員**テーブル。 ストアド プロシージャに渡す XML 値が必要です。 ただし、アダプターを使用してストアド プロシージャを実行するには、プロシージャのスキーマに準拠した要求メッセージを送信する必要があります、値、XML が含まれる、**アドレス**フィールドでは、SQL Server にします。 そのため、によってその要求メッセージを作成する必要があります。  
@@ -73,7 +73,7 @@ ms.locfileid: "36976925"
   
 8. **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作を行います。  
   
-   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドで、SQL Server の接続 URI を指定します。 接続 URI の詳細については、[SQL Server の接続 URI の作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)を参照してください。  
+   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドで、SQL Server の接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [SQL Server の接続 URI の作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
   
    2. **全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。 参照してください[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)の各操作のアクションの一覧。 たとえば、ADD_LAST_EMP_XML_INFO を呼び出すアクションを示します。  
   
@@ -81,7 +81,7 @@ ms.locfileid: "36976925"
       Procedure/dbo/ADD_LAST_EMP_XML_INFO  
       ```  
   
-   3. をクリックして、**バインド**] タブとの間、**バインドの種類**一覧で、[ **sqlBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 バインド プロパティの詳細については、[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)を参照してください。  
+   3. をクリックして、**バインド**] タブとの間、**バインドの種類**一覧で、[ **sqlBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 バインド プロパティの詳細については、次を参照してください。 [for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。  
   
    4. をクリックして、**資格情報**タブをクリックし、次のいずれかの操作を行います。  
   
@@ -92,7 +92,7 @@ ms.locfileid: "36976925"
   
       -   選択、**使用してシングル サインオン**オプション、し、関連アプリケーションにエンタープライズ シングル サインオン (SSO) を指定します。  
   
-           BizTalk Server に関するセキュリティの詳細については、[SQL アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sql/security-with-the-sql-adapter-and-biztalk-server.md)を参照してください。
+           BizTalk Server に関するセキュリティの詳細については、次を参照してください。 [SQL アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sql/security-with-the-sql-adapter-and-biztalk-server.md)します。
   
    5. をクリックして、**メッセージ** タブで、および、**送信 WCF メッセージ本文**セクションで、選択、**テンプレート**オプション。  
   

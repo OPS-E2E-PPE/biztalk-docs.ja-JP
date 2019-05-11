@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c788bf8c98fc06511ce692c84600f040443dd993
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b99e0dbce9bc4adca6cfebd50b7aeda023b64a17
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989171"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373674"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-sap-system"></a>SAP システムの資格情報で、サインオンを構成します。
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アダプター クライアントのクライアント資格情報を提供する必要があります。 アダプターは、SAP システムでユーザーを認証し、接続を確立するために、これらの資格情報を使用します。  
@@ -106,7 +106,7 @@ ms.locfileid: "36989171"
 
 1. 開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
 
-2. WCF-SAP アダプターの追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、[SAP アダプターを BizTalk Server 管理コンソールに追加](../../adapters-and-accelerators/adapter-sap/add-the-sap-adapter-to-biztalk-server-administration-console.md)を参照してください。  
+2. WCF-SAP アダプターの追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、次を参照してください。 [SAP アダプターを BizTalk Server 管理コンソールに追加](../../adapters-and-accelerators/adapter-sap/add-the-sap-adapter-to-biztalk-server-administration-console.md)します。  
 
 3. コンソール ツリーで、展開**BizTalk グループ**の順に展開**アプリケーション**、順に展開する、ポートを作成し、をクリックしアプリケーション**送信ポート**または**受信ポート**します。 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
 
@@ -130,7 +130,7 @@ ms.locfileid: "36989171"
 7. **[OK]** をクリックします。  
 
 > [!NOTE]
->  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] また、エンタープライズ シングル サインオン (SSO) システムをサポートします。 SSO オプションは、BizTalk シナリオに該当のみ、[!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)]は SSO 関連アプリケーションを認識します。 BizTalk Server に関するセキュリティの詳細については、[SAP アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md)を参照してください。
+>  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] また、エンタープライズ シングル サインオン (SSO) システムをサポートします。 SSO オプションは、BizTalk シナリオに該当のみ、[!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)]は SSO 関連アプリケーションを認識します。 BizTalk Server に関するセキュリティの詳細については、次を参照してください。 [SAP アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md)します。
 
 ## <a name="see-also"></a>参照  
 [SAP アプリケーションを作成するための構成要素](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)

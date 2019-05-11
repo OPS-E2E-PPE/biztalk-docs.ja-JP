@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 136e2e11d20560531bf0f34eb2c93429b6c50f33
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b4db0fe98bcb04f662e4a827f4139e0cff81275
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999651"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331041"
 ---
-# <a name="invalid-as2-from-name-configured-for-party"></a>パーティに対して無効な AS2-From 名が構成されました
+# <a name="invalid-as2-from-name-configured-for-party"></a>無効な AS2 の名前がパーティの構成
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |
@@ -30,10 +30,10 @@ ms.locfileid: "36999651"
 |  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    コンポーネント    |                                       AS2 エンジン                                       |
 |  シンボル名  |                           InvalidAS2FromNameConfiguredError                            |
-|  メッセージ テキスト   |              無効な AS2、パーティ用に構成された名前から:{0}値。 {1}              |
+|  メッセージ テキスト   |              無効な AS2、パーティ用に構成された名前から。{0}   値: {1}              |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、識別されたパーティに対して構成された AS2-From ヘッダーの値が、AS2 RFC 4130 の仕様に準拠していなかったため、AS2 エンコーダーまたはデコーダーが AS2 メッセージを処理できなかったことを示します。  
+ このエラー/警告/情報イベントは、AS2 エンコーダーまたはデコーダーために処理できませんでした、AS2 メッセージを示します、AS2 の値のヘッダーが AS2 RFC 4130 の仕様に準拠していなかった、識別されたパーティ用に構成されたからです。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、パーティに構成されている AS2-From ヘッダーが AS2 RFC 4130 のセクション 6.2 の仕様に準拠していることを確認し、メッセージを再送信してもらいます。
+ このエラーを解決することを確認します、AS2、パーティが AS2 RFC 4130 のセクション 6.2 の仕様に準拠しているし、メッセージを再送信用に構成されたヘッダー。

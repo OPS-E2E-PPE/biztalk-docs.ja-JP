@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa19a836d4465b96b663dd4abc5f89500b37e338
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c6a96137243612042c8283ec5e5d15ced9d1d83b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973643"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369903"
 ---
 # <a name="connect-to-sql-server-using-windows-authentication-with-the-sql-adapter"></a>SQL アダプターを使用した Windows 認証を使用して SQL Server に接続します。
 [!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)]アダプター クライアントが SQL Server との接続を確立するために Windows 認証を使用できるようにします。 Windows 認証を使用するには、アダプター クライアントは、空のユーザー名とパスワードを入力する必要があります。 

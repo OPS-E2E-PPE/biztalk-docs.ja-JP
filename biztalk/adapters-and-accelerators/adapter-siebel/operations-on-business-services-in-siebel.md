@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df24fa8ee0bd51ddf919e5f88a47ceae9d0743fa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 19ff7bbc86931523cef0845720d855e8f3f2a4f4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001371"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371189"
 ---
 # <a name="operations-on-business-services-in-siebel"></a>Siebel ビジネス サービスに対する操作
 Siebel ビジネス サービスは、Siebel に直接呼び出すことができるビジネス メソッドのコレクションです。 一方、ビジネス コンポーネントとビジネス オブジェクトが特定のデータ、および Siebel のテーブルに関連付けられていると、ビジネス サービスは、特定のタスクを実行するオブジェクトを呼び出します。  

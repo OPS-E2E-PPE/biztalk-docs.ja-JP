@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9bea20bacdd6b681d39e2bf3995d7626b9b1f63
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 938ac612a7a107e30d1a02fb09f9218a22705d13
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021642"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291265"
 ---
 # <a name="restoring-the-biztalk-group"></a>BizTalk グループの復元
 BizTalk グループのセットによって表されます[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]Analysis Services データベース、SSIS パッケージ、および SQL エージェント ジョブ。 このセクションでは、BizTalk グループを復元するプロセスについて説明します。  

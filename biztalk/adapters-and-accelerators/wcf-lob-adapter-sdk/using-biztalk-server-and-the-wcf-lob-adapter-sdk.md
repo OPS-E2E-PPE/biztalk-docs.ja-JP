@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46b06f832fd9ff36f0e274c1599b577bc9ec6010
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 46fad7f2e5aeb8910e8d916e0d441424210717ea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362684"
 ---
 # <a name="using-biztalk-server-and-the-wcf-lob-adapter-sdk"></a>BizTalk Server と WCF LOB Adapter SDK の使用
 このセクションのリレーションシップに関する情報を格納する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]します。 このセクションに含まれる情報は各によって提供される 2 つの異なるフレームワークの比較が含まれています、移行のためのヒント、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]カスタム アダプター。  
@@ -44,7 +44,7 @@ ms.locfileid: "36989979"
 
 |     機能      |                                                                   [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]                                                                   |                  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] アダプター フレームワーク                   |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-|       API (API)        | [!INCLUDE[dotnet45](../../includes/dotnet45-md.md)] [!INCLUDE[dotnet451](../../includes/dotnet451-md.md)]アセンブリ、処理、接続の管理、およびメッセージングのメタデータのヘルプのクラスを提供します |                                            COM では、アダプターの操作の基本的なサポートを提供します。                                             |
+|       API        | [!INCLUDE[dotnet45](../../includes/dotnet45-md.md)] [!INCLUDE[dotnet451](../../includes/dotnet451-md.md)]アセンブリ、処理、接続の管理、およびメッセージングのメタデータのヘルプのクラスを提供します |                                            COM では、アダプターの操作の基本的なサポートを提供します。                                             |
 | アダプターの公開 |                                                            WCF のバインドとして公開WCF バインドを使用できる任意のアプリケーションで使用できます。                                                             | のみ公開される[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]; 他のアプリケーションで再利用します。 |
 |      ツール       |                       [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]でのメタデータ ブラウザー [!INCLUDE[btsVStudioNet](../../includes/btsvstudionet-md.md)]                       |                                                                    n/a                                                                     |
 |  機能拡張   |                                                                                       [はい] (WCF チャネルの拡張機能) として                                                                                        |                                                                     いいえ                                                                     |

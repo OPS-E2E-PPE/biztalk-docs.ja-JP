@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af09f938d93377a6463926fad3725c9f9dace294
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2451661db0e4da8dd801a3e4296b4c4f712ff503
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022184"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392039"
 ---
 # <a name="general-biztalk-server-optimizations"></a>BizTalk Server の一般的な最適化
 次の推奨事項は、向上に使用できる[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンス。 このトピックで示した最適化が後に適用されます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をインストールして構成します。  
@@ -92,7 +92,7 @@ ms.locfileid: "37022184"
   
 ```  
 <!-- <processModel autoConfig="true" /> -->  
-    <processModel maxWorkerThreads="200" maxIoThreads="200" />  
+    <processModel maxWorkerThreads="200" maxIoThreads="200" />  
 ```  
   
 > [!NOTE]  
@@ -173,7 +173,7 @@ ms.locfileid: "37022184"
    |DWORD エントリ|既定値|推奨値|  
    |-----------------|-------------------|-----------------------|  
    |MaxIOThreads|20|100|  
-   |MaxWorkerThreads|25|100**重要:** 100 よりも、この値を増やす、BizTalk Server メッセージ ボックス データベースをホストする SQL Server コンピューターのパフォーマンスに悪影響を与えることができます。 この問題が発生した場合、SQL Server でデッドロック状態が発生することがあります。 このパラメーターは 100 の値を超えて増加しませんをお勧めします。|  
+   |MaxWorkerThreads|25|100**重要です。** 100 を超えるには、この値を大きくと、BizTalk Server メッセージ ボックス データベースをホストする SQL Server コンピューターのパフォーマンスに悪影響を与えることができます。 この問題が発生した場合、SQL Server でデッドロック状態が発生することがあります。 このパラメーターは 100 の値を超えて増加しませんをお勧めします。|  
    |MinIOThreads|1|25|  
    |MinWorkerThreads|1|25|  
   
@@ -181,7 +181,7 @@ ms.locfileid: "37022184"
    >  上記の推奨値は、ほとんどのシナリオだけで十分ですが、各ホスト インスタンスで実行中の数のアダプター ハンドラーまたはオーケストレーションによって大きく必要があります。  
   
    > [!NOTE]  
-   >  これらの値は、サーバー上のプロセッサの数を掛けた暗黙的にします。 たとえば、MaxWorkerThreads のエントリを 100 の値に設定すると、4 台の CPU を持つサーバーでは 400 の値が実質的に設定されます。  
+   >  これらの値は、サーバー上のプロセッサの数を掛けた暗黙的にします。 たとえば、MaxWorkerThreads のエントリを 100 の値に設定します。 効果的に設定値の 400 4 CPU サーバーでします。  
   
 5. レジストリ エディターを閉じます。  
   

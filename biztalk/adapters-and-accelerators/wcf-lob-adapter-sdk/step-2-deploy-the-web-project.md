@@ -1,5 +1,5 @@
 ---
-title: '手順 2: Web プロジェクトをデプロイする |Microsoft Docs'
+title: 手順 2:Web プロジェクトの配置 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a99defc18cd38dc6f88a16b8c3fd0db2a8168426
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f39a8b60918f2dd97ea9442fca5dda961e2cafde
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013123"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363265"
 ---
-# <a name="step-2-deploy-the-web-project"></a>手順 2: Web プロジェクトをデプロイします。
+# <a name="step-2-deploy-the-web-project"></a>手順 2:Web プロジェクトをデプロイします。
 ![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
  **所要時間:** 5 分  
   
- この手順で生成された Web プロジェクトをパブリッシュします[手順 1: アダプター サービス開発ウィザードを使用して Web プロジェクトを作成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)インターネット インフォメーション サービス (IIS) にします。  
+ この手順で生成された Web プロジェクトを発行する[手順 1。Web プロジェクトを作成するアダプター サービス開発ウィザードを使用して](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)インターネット インフォメーション サービス (IIS) にします。  
   
 ## <a name="prerequisites"></a>前提条件  
- 作成したこの手順を完了する[手順 1: アダプター サービス開発ウィザードを使用して、Web プロジェクトを作成する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)します。 Web サーバーは、HTTPS 通信を有効にインストールされている SSL 証明書も必要です。  
+ 作成したこの手順を完了する[手順 1。Web プロジェクトを作成するアダプター サービス開発ウィザードを使用して](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)します。 Web サーバーは、HTTPS 通信を有効にインストールされている SSL 証明書も必要です。  
   
 ## <a name="compile-and-deploy-the-web-project"></a>コンパイルして、Web プロジェクトの配置  
   
@@ -37,7 +37,7 @@ ms.locfileid: "37013123"
   
 3. C:\tutorials\echoweb フォルダーから、コマンド プロンプトで次のコマンドを入力し、ENTER キーを押します。  
   
-    **sn/k EchoWebKey.snk**  
+    **sn /k EchoWebKey.snk**  
   
     確認のメッセージでは、**キーのペア EchoWebKey.snk に書き込まれる**コマンドラインで表示されます。  
   
@@ -53,7 +53,7 @@ ms.locfileid: "37013123"
  IIS に Web プロジェクトを発行するだけです。  
   
 ## <a name="next-steps"></a>次の手順  
- これでコンパイルされ、プロジェクトのデプロイに進んで[手順 3: アプリケーション定義ファイルの作成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-create-an-application-definition-file.md)  
+ これでコンパイルされ、プロジェクトのデプロイに進んで[手順 3。アプリケーション定義ファイルを作成する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-create-an-application-definition-file.md)  
   
 ## <a name="see-also"></a>参照  
  [チュートリアル 3: IIS でエコー アダプターをホストする](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-3-hosting-the-echo-adapter-in-iis.md)

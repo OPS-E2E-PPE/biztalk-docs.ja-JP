@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3360433e97b9b7d21a06d3ad5c304f37a924589f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 62dccdba63067a35e2ba001fac331e932d2bd9c2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371798"
 ---
 # <a name="create-the-siebel-system-connection-uri"></a>Siebel システム接続 URI を作成します。
 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]接続 URI には、アダプターが Siebel システムへの接続を確立するために使用するプロパティが含まれています。  
@@ -75,8 +75,8 @@ siebel://Username=[USER_NAME];Password=[PASSWORD]@[SERVER]:[PORT]?SiebelObjectMa
 
 | プロパティ |                                                                                                                                                                                                          説明                                                                                                                                                                                                          |
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Username |      Siebel システムのユーザー名この値は大文字小文字を区別します。 設定する必要があります、 **AcceptCredentialsInUri**プロパティをバインド**true**接続 URI のユーザー名とパスワードを指定します。 **注:** 、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Siebel システム上の接続を開くときにユーザー名を入力する値の大文字小文字を保持します。       |
-| パスワード | Siebel システムのユーザーのパスワードこの値は大文字小文字を区別します。 設定する必要があります、 **AcceptCredentialsInUri**プロパティをバインド**true**接続 URI のユーザー名とパスワードを指定します。 **注:** 、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Siebel システム上の接続を開くときにパスワードを入力する値の大文字小文字を保持します。 |
+| Username |      Siebel システムのユーザー名この値は大文字小文字を区別します。 設定する必要があります、 **AcceptCredentialsInUri**プロパティをバインド**true**接続 URI のユーザー名とパスワードを指定します。 **注:**[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Siebel システム上の接続を開くときにユーザー名を入力する値の大文字小文字を保持します。       |
+| パスワード | Siebel システムのユーザーのパスワードこの値は大文字小文字を区別します。 設定する必要があります、 **AcceptCredentialsInUri**プロパティをバインド**true**接続 URI のユーザー名とパスワードを指定します。 **注:**[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Siebel システム上の接続を開くときにパスワードを入力する値の大文字小文字を保持します。 |
 
 ### <a name="host-information-in-the-siebel-connection-uri"></a>Siebel 接続 URI のホスト情報  
  Siebel ホスト情報 (hostinfoparams) は、次の形式で Siebel システムのアドレスを指定します。 [サーバー]: [PORT]。 Siebel サーバーのバージョンによっては、Siebel のホスト情報は、別の値を受け取る。  

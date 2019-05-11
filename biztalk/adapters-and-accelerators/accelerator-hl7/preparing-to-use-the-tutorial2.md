@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d790a53576c4f153265531fca974089eb5292a2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b90c23c9b67a25c7f7ef48b0fb51e1a361025b15
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978659"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289996"
 ---
 # <a name="preparing-to-use-the-tutorial"></a>チュートリアルを使用する準備をしています
 このチュートリアルを使用する前に、ADT^A03.txt ファイルを作成する必要があります。  
@@ -46,4 +46,4 @@ ms.locfileid: "36978659"
   
 2. ファイルに保存します**ADT^A03.txt**で、 \<*ドライブ*\>: \Program Files\\Microsoft BizTalk\<バージョン\>のアクセラレータHL7\SDK\End ツー エンド チュートリアル フォルダー、および終値のメモ帳。  
   
-   進みます[手順 1: ヘッダーと確認スキーマ作成して展開](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-header-and-acknowledgment-schemas.md)します。
+   続行する[手順 1。ヘッダーと確認スキーマ作成して展開](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-header-and-acknowledgment-schemas.md)します。

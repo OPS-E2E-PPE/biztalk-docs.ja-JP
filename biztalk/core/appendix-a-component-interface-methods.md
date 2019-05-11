@@ -1,5 +1,5 @@
 ---
-title: '付録 a: コンポーネント インターフェイスのメソッド |Microsoft ドキュメント'
+title: '付録 A: コンポーネント インターフェイスのメソッド |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61cb5b87cb063f22c889291b8eff3b2be50d64a7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 48487071e0c4099158a10b0a7cfb922ad8d75717
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230106"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359608"
 ---
-# <a name="appendix-a-component-interface-methods"></a>付録 a: コンポーネント インターフェイス メソッド
-Microsoft BizTalk Adapter for PeopleSoft Enterprise は、コンポーネント インターフェイスの標準的なメソッドを提供します。  
+# <a name="appendix-a-component-interface-methods"></a>付録 A: コンポーネント インターフェイス メソッド
+Microsoft BizTalk Adapter for PeopleSoft Enterprise では、コンポーネント インターフェイスの標準的なメソッドを提供します。  
   
 > [!NOTE]
->  これらのメソッドの Ex バージョンで使用される `interactiveMode` パラメーターは、バックエンドに対する呼び出しのデバッグを補助します (`Create/CreateEx`、`Update/UpdateEx`、および `DeleteOnly`)。 内の各項目、* Ex、バックエンドの呼び出しと呼ばれるとは別に、どの項目が失敗しましただけを認識できるようにします。 使用するときにパフォーマンスの低下がある、 \*Ex メソッドの各プロパティの項目が別個の呼び出しを受信するためです。 開発できる\*Ex メソッドしに切り替えると、メイン メソッド (たとえば、 `Create`) 運用環境用です。 メソッドの使用を切り替える、実稼働環境にデバッグ スイッチを使用することもでき、 \*Ex メソッドです。  
+>  `interactiveMode` 、メソッドの Ex バージョンで、パラメーター、バックエンドへの呼び出しのデバッグを支援します (`Create/CreateEx`、 `Update/UpdateEx`、および`DeleteOnly`)。 内の各項目、*、バックエンドへの呼び出し例別に呼び出される、エラーを正確にどの項目を認識できるようにします。 使用するときにパフォーマンスの低下がある、 \*Ex メソッド各プロパティのアイテムが別個の呼び出しを受け取るため。 開発できる\*Ex メソッドと main メソッドに次のスイッチ (たとえば、 `Create`) 運用環境の。 メソッドの使用を切り替える、運用環境でデバッグ スイッチを使用することもでき、 \*Ex メソッド。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -12,84 +12,84 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3378dbb623c2d47a56946805908f9d104500a8ac
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 352cde6b72aecaf0baa9c53d1f67b63f3da215c7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994563"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359003"
 ---
 # <a name="as2-send-components"></a>AS2 送信コンポーネント
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、いくつかのコンポーネントを使用して AS2 メッセージを送信します。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] いくつかのコンポーネントを使用して、AS2 メッセージを送信します。  
   
 ## <a name="as2-send-pipelines"></a>AS2 送信パイプライン  
- AS2 送信処理の大部分は、次の AS2 送信パイプラインで実行されます。 これらのパイプラインは、\Program Files\Microsoft BizTalk Server 20xx\Pipeline Components の `Microsoft.BizTalk.Edi.EdiIntPipelines.dll` にインストールされています。  
+ ほとんどの AS2 送信処理は、次の AS2 送信パイプラインで実行されます。 これらのパイプラインがインストールされている`Microsoft.BizTalk.Edi.EdiIntPipelines.dll`\Program Files\Microsoft BizTalk Server 20xx \pipeline Components にします。  
   
 > [!NOTE]
->  AS2 送信パイプラインは、32 ビットの BizTalk ホスト プロセスでのみサポートされています。  
+>  AS2 送信パイプラインは、32 ビットの BizTalk ホスト プロセスでのみサポートされます。  
   
  **AS2EDISend パイプライン**  
   
- このパイプラインでは、EDI メッセージを生成し、AS2 経由で送信します。 パイプラインは、次のパイプライン コンポーネントで構成されます。  
+ このパイプラインは、生成し、AS2 経由で EDI メッセージを送信します。 パイプラインは、次のパイプライン コンポーネントで構成されます。  
   
 - EDI アセンブラー  
   
 - AS2 エンコーダー  
   
-  このパイプラインは、MDN を生成して AS2 経由で送信するためには使用されません。これは、MDN を EDI アセンブラーで処理する必要がないためです。 MDN の送信には AS2SendPipeline を使用します。  
+  このパイプラインは、MDN は EDI アセンブラーによって処理される必要がないために生成し、AS2 経由で Mdn を送信するのには使用されません。 AS2SendPipeline を使用すると、Mdn を送信します。  
   
 > [!NOTE]
 >  オーケストレーションからの AS2EDISend パイプラインの実行はサポートされていません。  
   
  **AS2Send パイプライン**  
   
- このパイプラインでは、メッセージが EDI でエンコードされていない場合に、AS2 経由でメッセージを送信します。 また、AS2 経由で MDN を送信します。 パイプラインは、次のパイプライン コンポーネントで構成されます。  
+ このパイプラインは、メッセージが EDI でエンコードされていないときに、AS2 経由でメッセージを送信します。 また、AS2 経由で Mdn を送信します。 パイプラインは、次のパイプライン コンポーネントで構成されます。  
   
 - AS2 エンコーダー。  
   
-  AS2 経由で送信するメッセージが EDI メッセージでも XML メッセージでもない場合は、それらのメッセージを処理するために、カスタマイズされた AS2Send パイプラインを作成できます。 このパイプラインには、メッセージを EDIINT/AS2 にエンコードする前に BizTalk Server の中間 XML を他の形式に変換する、カスタマイズされたアセンブラーが必要です。  
+  AS2 経由で送信するメッセージが EDI でも XML メッセージの場合は、これらのメッセージを処理するためにカスタマイズされた AS2Send パイプラインを作成することができます。 このパイプラインには、カスタマイズされたアセンブラーの中間 XML では、BizTalk Server はメッセージを ediint/as2 にエンコードする前に他の形式に変換する必要があります。  
   
 > [!NOTE]
->  オーケストレーションからの AS2Send パイプラインの実行はサポートされていません。  
+>  オーケストレーションからの AS2Send パイプラインを実行することはできません。  
   
-## <a name="as2-send-pipeline-components"></a>AS2 送信パイプラインのコンポーネント  
- AS2 送信パイプラインでは、次のパイプライン コンポーネントが使用されます。 これらのコンポーネントがインストールされている`Microsoft.BizTalk.EdiInt.PipelineComponents.dll`\Program Files\Microsoft BizTalk Server 20xx \pipeline Components に\\します。  
+## <a name="as2-send-pipeline-components"></a>AS2 送信パイプライン コンポーネント  
+ AS2 送信パイプラインは、次のパイプライン コンポーネントを使用します。 これらのコンポーネントがインストールされている`Microsoft.BizTalk.EdiInt.PipelineComponents.dll`\Program Files\Microsoft BizTalk Server 20xx \pipeline Components に\\します。  
   
  **EDI アセンブラー**  
   
- EDIINT 送信パイプラインでは、EDI アセンブラーによって EDI インターチェンジがシリアル化されます。  
+ EDIINT 送信パイプラインでは、EDI アセンブラーは EDI インターチェンジをシリアル化します。  
   
  **AS2 エンコーダー**  
   
- AS2 エンコーダーは、AS2 送信パイプラインのエンコード ステージに含まれています。 これは、BizTalk の S/MIME パイプライン コンポーネントを使用して、AS2 メッセージと MDN メッセージに S/MIME エンコード機能を付加します。 AS2 エンコーダーは次の処理を実行します。  
+ AS2 エンコーダーは、AS2 送信パイプラインのエンコード ステージに含まれます。 S/MIME エンコード AS2 および MDN メッセージに機能を提供するのに、BizTalk の S/MIME パイプライン コンポーネントを使用します。 AS2 エンコーダーは、次を行います。  
   
--   AS2/HTTP ヘッダーを適用します。  
+-   AS2 または HTTP ヘッダーに適用されます。  
   
--   送信メッセージに署名します (有効になっている場合)。  
+-   有効になっている場合、送信メッセージに署名  
   
--   送信メッセージを暗号化します (有効になっている場合。EDI/AS2 のみで MDN は対象外)。  
+-   (Edi/as2、MDN ではない) を有効になっている場合、送信メッセージを暗号化します。  
   
--   メッセージを圧縮します (有効になっている場合。EDI/AS2 のみで MDN は対象外)。  
+-   (Edi/as2、MDN ではない) を有効になっている場合、メッセージを圧縮します。  
   
 -   ペイロードをワイヤ形式に保存する場合、**送信のデコードされた AS2 メッセージに対して有効な NRR**プロパティが選択されているし、メッセージをワイヤ形式に保存する場合、**エンコードされた送信の AS2 メッセージに対して有効な NRR**プロパティが選択されています。  
   
--   MIC 値を計算し、データ ストアに保存します。  
+-   MIC 値を計算し、データ ストアに格納されます。  
   
--   受信の否認不可データベース内でレコードの更新および関連付けを行います。  
+-   更新し、受信の否認不可データベース内のレコードを関連付けています  
   
--   AS2Receive 受信パイプラインの AS2 デコーダーによって生成された MDN をルーティングするパススルー パイプラインとして機能します (MDN メッセージの場合)。 構成設定で要求されている場合、AS2 エンコーダーが MDN に署名します。  
+-   MDN メッセージの場合は、as2receive AS2 デコーダーによって生成された MDN をルーティングするパススルー パイプラインとして機能は受信パイプラインです。 構成設定で必要な場合、AS2 エンコーダーが MDN に署名します。  
   
     > [!NOTE]
     >  AS2 メッセージでは 8 ビット エンコードが使用されます。 Base64 エンコードは、AS2 メッセージと MDN の署名にのみ適用されます。  
   
 ## <a name="http-adapter"></a>HTTP アダプター  
- EDIINT AS2 処理に使用される送信ポートは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の HTTP アダプターを使用します。 この HTTP アダプターは、一方向の送信と送信請求 - 応答送信の両方で構成されます。  
+ EDIINT AS2 処理の使用するために使用される送信ポート、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP アダプター。 HTTP アダプターが一方向の両方で構成されていると、送信請求-応答送信します。  
   
 ## <a name="non-repudiation-database"></a>否認不可データベース  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、否認不可データベース (BizTalkDTADb データベースの EdiMessageContent テーブル) を使用して次の処理を実行します。  
   
 > [!NOTE]
->  EdiMessageContent テーブルは、否認不可ストレージ アグリーメントのプロパティの 1 つがチェックされる場合にのみ BizTalkDTADb データベース内に存在します。  
+>  EdiMessageContent テーブルは、非否認不可ストレージ アグリーメントのプロパティのいずれかがチェックされている場合にのみ BizTalkDTADb データベースに存在します。  
   
 -   署名付き MDN を否認不可記録を提供します。  
   
@@ -97,14 +97,14 @@ ms.locfileid: "36994563"
   
 -   さまざまな状態の変化を経由してメッセージを格納します。  
   
--   エラー コードの HTTP 応答および NDN への関連付け  
+-   エラー コードを HTTP 応答および MDN と関連付ける  
   
 -   フィルター条件に基づくレコードの表示  
   
 -   マークされたレコードのアーカイブ  
   
 > [!IMPORTANT]
->  否認不可データベースに格納されているメッセージの認証と整合性を確保するには、データベースに格納されるすべてのメッセージ (元の AS2 メッセージと MDN の両方) にデジタル署名を使用する必要があります。 詳細については、表示のセクション 9.1 [RFC 1430 の「Mime-based Secure ピア ツー ピア Business Data Interchange Using HTTP, Applicability Statement 2 (AS2)」](http://go.microsoft.com/fwlink/?LinkID=184212) ([http://go.microsoft.com/fwlink/?LinkID=184212](http://go.microsoft.com/fwlink/?LinkID=184212)).  
+>  認証と否認不可データベースに格納されたメッセージの整合性を確保するには、元の AS2 メッセージと Mdn の両方のデータベースに格納されるすべてのメッセージにデジタル署名を使用する必要があります。 詳細については、表示のセクション 9.1 [RFC 1430 の「Mime-based Secure ピア ツー ピア Business Data Interchange Using HTTP, Applicability Statement 2 (AS2)」](http://go.microsoft.com/fwlink/?LinkID=184212) ([http://go.microsoft.com/fwlink/?LinkID=184212](http://go.microsoft.com/fwlink/?LinkID=184212)).  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server が AS2 メッセージを送信する方法](../core/how-biztalk-server-sends-as2-messages.md)

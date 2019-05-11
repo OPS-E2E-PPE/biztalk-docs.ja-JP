@@ -1,5 +1,5 @@
 ---
-title: アダプタ サンプル – 使用状況 |Microsoft ドキュメント
+title: アダプタ サンプル – 使用状況 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 647d27fc29b602c2662d8991febfa7e96f08376f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ead06dbe3d746296cd0b591b02fdc63922c35227
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22229770"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361236"
 ---
-# <a name="adapter-samples---usage"></a>アダプタ サンプル – 使用法
-このセクションでは、各アダプタ サンプルで示されている機能、サンプルをビルドおよび実行する方法、および予想される実行結果について説明します。  
+# <a name="adapter-samples---usage"></a>アダプタ サンプル – 使用状況
+このセクションでは、各アダプタのサンプルを構築して、サンプルと予想される結果を実行する手順で示されている機能についての情報を提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -40,7 +40,7 @@ ms.locfileid: "22229770"
   
     -   [DynamicReceive サンプル (BizTalk Server サンプル)](../core/dynamicreceive-sample-biztalk-server-sample.md)  
   
--   [HTTP アダプタのサンプル](../core/http-adapter-samples.md)  
+-   [HTTP アダプター サンプル](../core/http-adapter-samples.md)  
   
     -   [HTTPSolicitResponse](../core/httpsolicitresponse.md)  
   

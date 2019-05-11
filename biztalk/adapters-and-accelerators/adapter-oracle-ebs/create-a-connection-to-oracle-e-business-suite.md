@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0da85f6c0968eb7257e980bdbd65a48fcf734f9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c8b6802eba7f0568e19fe069669de1f07c069219
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973307"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375575"
 ---
 # <a name="create-a-connection-to-oracle-e-business-suite"></a>Oracle E-business Suite への接続を作成します。
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]は、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドします。 そのため、Oracle E-business Suite への通信を WCF エンドポイントのアドレスを使用できます。 WCF では、エンドポイント アドレスは、サービスのネットワークの場所を識別しする Uniform Resource Identifier (URI) としては通常表現します。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]接続プロパティを格納する、URI として、この場所を表します[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]Oracle E-business Suite への接続を確立するために使用します。 接続 URI を指定する必要がありますとします。  
@@ -48,9 +48,9 @@ ms.locfileid: "36973307"
 ## <a name="in-this-section"></a>このセクションの内容    
  次のトピックとの間の接続を確立する方法を説明する、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]と Oracle E-business Suite:  
   
--   [Oracle E-business Suite アダプターのクライアントの構成](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-oracle-client-for-the-e-business-suite-adapter.md): cconfiguring (、tnsnames.ora を使用して、接続を確立する場合にのみ必要)、Oracle クライアントを tnsnames.ora の使用について  
+-   [Oracle E-business Suite アダプターのクライアントの構成](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-oracle-client-for-the-e-business-suite-adapter.md):Cconfiguring (、tnsnames.ora を使用して、接続を確立する場合にのみ必要)、Oracle クライアントを tnsnames.ora の使用について  
   
--   [Oracle E-business Suite 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md): 接続のプロパティと Oracle E-business Suite 接続 URI の構造について
+-   [Oracle E-business Suite 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md):接続のプロパティと Oracle E-business Suite 接続 URI の構造について
   
--   [Windows 認証を使用して Oracle E-business Suite に接続する](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-windows-authentication.md): Windows 認証を使用して Oracle への接続に関する情報
+-   [Windows 認証を使用して Oracle E-business Suite に接続する](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-windows-authentication.md):Windows 認証を使用して Oracle への接続に関する情報
   

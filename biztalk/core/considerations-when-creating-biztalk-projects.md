@@ -1,5 +1,5 @@
 ---
-title: BizTalk プロジェクトを作成する際の考慮事項 |Microsoft ドキュメント
+title: BizTalk プロジェクトの作成時の考慮事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,35 +17,35 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0302d2329f848352f55d15f0c6e21bbdf72b0ca
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 59b8749928891f963f3ca75032cc133c0ddf7848
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005955"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390368"
 ---
-# <a name="considerations-when-creating-biztalk-projects"></a>BizTalk プロジェクトを作成する際の考慮事項
-ここでは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して BizTalk プロジェクトを作成する際に考慮すべき情報について説明します。  
+# <a name="considerations-when-creating-biztalk-projects"></a>BizTalk プロジェクトの作成時の考慮事項
+このセクションを使用して BizTalk を作成するときに考慮に入れる必要のある情報を提供します。[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
   
-## <a name="avoid-compilation-errors-caused-by-projects-that-are-too-large"></a>サイズの大きなプロジェクトが原因となるコンパイル エラーの回避  
- [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コンパイラは、75 MB を超えるアセンブリのプロジェクトを正しくコンパイルできません。 致命的なエラー CS0013 が生成されるため、コンパイラがサイズ制限に達すると"メタデータをファイルに書き込み予期しないエラーが発生\<filename\>"され、停止します。  
+## <a name="avoid-compilation-errors-caused-by-projects-that-are-too-large"></a>大きすぎてプロジェクトによって発生したコンパイル エラーを回避します。  
+ [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コンパイラは正常にコンパイルできませんプロジェクト 75 メガバイトを超えるアセンブリになります。 致命的なエラー CS0013 が生成されるため、コンパイラがサイズの制約に達したときに"予期しないエラーがメタデータをファイルに書き込む\<ファイル名\>"し、停止します。  
   
- この問題を回避するには、どうしても必要な場合を除き、プロジェクトが 10 MB を超えないようにすることをお勧めします。 なぜでしょうか。  
+ この問題を回避するをお勧めのプロジェクトを超えないように 10 メガバイトしない限り、絶対に必要です。 なぜでしょうか。  
   
--   小さいプロジェクトは、展開手順が少ないので、展開が簡単になります。 また、小さいプロジェクトを使用すると、相互の関連性が高い手順 (取引先の割引や見積依頼書の処理など) が多くなります。  
+-   小さいプロジェクトは、少数の展開手順があるため、デプロイする可能性のある簡単です。 小さいプロジェクトで、手順より密接に関連する可能性があります--パートナー割引を取引先や Rfp の処理を管理します。  
   
--   小さいプロジェクトでは、バグ、展開の問題、および他の問題を見分けることが簡単になります。 スキーマの数が 140 あり、使用するカスタム マップやカスタム スクリプトの数が多いプロジェクトのバグを発見することは、スキーマの数が 10 で、使用するカスタム マップやカスタム スクリプトの数が少ないプロジェクトのバグを発見するよりも困難です。  
+-   小さいプロジェクトを使用する場合は、バグ、展開の問題、およびその他の問題を分離しやすくなります。 140 のスキーマと多くのカスタム マップ、およびスクリプト プロジェクト内のバグの検索は、10 個のスキーマといくつかのカスタム マップ、およびスクリプト プロジェクトで 1 つの検索よりも困難になります。  
   
--   大きなプロジェクトを小さなプロジェクトに分割すると、複雑さを軽減できます。 小さいプロジェクトの方が管理が簡単です。  
+-   大規模なプロジェクトを小さなプロジェクトに分割することと、複雑さを軽減できます。 小さいプロジェクトより管理しやすいです。  
   
--   小さいプロジェクトは、高速にコンパイルされます。  
+-   小さいプロジェクトは高速にコンパイルします。  
   
--   関連性のない多くのスキーマを持つ大きなプロジェクトを、関連性の高いスキーマを持つ小さなプロジェクトに分割すると、パフォーマンスが向上します。 これは、ため、一度に読み込まれるアセンブリの一部のみです。  
+-   厳密に関連するスキーマを持つ小さなプロジェクトに関連付けられていない多数のスキーマを使用した大規模なプロジェクトを分割することと、パフォーマンスが向上する可能性があります。 これは、アセンブリの一部のみが一度に読み込まれるためにです。  
   
-## <a name="avoid-using-the-project-name-as-the-map-type-name"></a>マップの型名としてプロジェクト名を使用することの回避  
- [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で新しいマップを BizTalk プロジェクトに追加する際に、マップの型名としてプロジェクト名を使用しないでください。 コンパイラはのような 1 つまたは複数のエラーを生成する場合、"型名\<名前\>' 型に存在しません"です。  
+## <a name="avoid-using-the-project-name-as-the-map-type-name"></a>マップの型名としてプロジェクト名を使用しないでください。  
+ BizTalk プロジェクトに新しいマップを追加するときに[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]型名としてプロジェクト名を使わないでください。 ような 1 つまたは複数のエラーを生成する場合は、"型名\<名前\>' 型に存在しません"。  
   
- BizTalk プロジェクトからマップの型名を変更するには、[ソリューション エクスプローラー] ペインのマップをクリックし、[プロパティ] ペインの "型名" プロパティを確認してください。 マップの型名が同じ場合、型名を修正して、型名に依存する構成を変更してください。  
+ BizTalk プロジェクトからマップの種類の名前を変更するには、ソリューション エクスプ ローラー ウィンドウでマップをクリックしてプロパティ ペインで、型名プロパティを確認します。 同じである場合は、変更に依存する構成を変更することを確認する必要があります。  
   
 ## <a name="visual-studio-team-system-support"></a>Visual Studio Team System のサポート  
- [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の BizTalk プロジェクトでは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Team System のすべての機能が直接サポートされるわけではありません。 ソース管理機能[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]Team System は、BizTalk Server のサポートされています。 また、Visual SourceSafe も、BizTalk プロジェクト アイテムの追跡とバージョン管理で完全にサポートされます。
+ BizTalk プロジェクトで[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]のすべての機能はサポートしない[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]Team System です。 ソース管理機能の[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]Team System が BizTalk Server のサポートされています。 Visual SourceSafe は追跡と BizTalk プロジェクトの成果物のバージョン管理も完全サポートします。

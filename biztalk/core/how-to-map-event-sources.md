@@ -1,5 +1,5 @@
 ---
-title: イベント ソースにマップする方法 |Microsoft ドキュメント
+title: イベント ソースにマップする方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -24,35 +24,35 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 588a394fb3404872554fc786efa3fe24fdd9b47a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e56f9d85d0ac3509eb954f6c2d50496ce5979769
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22253890"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336632"
 ---
 # <a name="how-to-map-event-sources"></a>イベント ソースをマップする方法
-イベント ソースをマップすると、BAM による追跡と警告の対象となるデータ項目へのアクセスが可能になります。  
+BAM は、アラートを生成する追跡データ項目にアクセスするイベント ソースをマップします。  
   
 > [!NOTE]
->  データ項目は、オーケストレーション スケジュール、メッセージ ペイロード、コンテキスト プロパティ、メッセージング プロパティという 4 種類のイベント ソースからマップできます。 このトピックの手順では、オーケストレーション スケジュールからデータ項目をマップする方法について説明します。  
+>  4 つの異なるイベント ソースの種類からのデータ項目にマップすることができます。 オーケストレーション スケジュール、メッセージ ペイロード、コンテキスト プロパティ、またはメッセージ プロパティ。 このトピックの手順では、オーケストレーション スケジュールからデータ項目のマッピングについて説明します。  
   
-### <a name="to-map-an-orchestration-schedule-as-an-event-source"></a>オーケストレーション スケジュールをイベント ソースとしてマップするには  
+### <a name="to-map-an-orchestration-schedule-as-an-event-source"></a>イベント ソースとして、オーケストレーション スケジュールをマップするには  
   
-1.  既存の追跡プロファイルを開くか、新しい追跡プロファイルを作成します。 追跡プロファイルの作成の詳細については、次を参照してください。[追跡プロファイルを作成する方法](../core/how-to-create-a-tracking-profile.md)です。  
+1.  既存の追跡プロファイルを開くか、新しい追跡プロファイルを作成します。 追跡プロファイルの作成の詳細については、次を参照してください。[追跡プロファイルを作成する方法](../core/how-to-create-a-tracking-profile.md)します。  
   
-2.  クリックして、**イベント ソースの選択**(追跡プロファイル エディターの右側のペインの上にある) ボタンをクリックします。  
+2.  をクリックして、**イベント ソースの選択**(追跡プロファイル エディターの右側のウィンドウの上にある) ボタンをクリックします。  
   
 3.  選択、 **オーケストレーション スケジュール**カスケード メニューのメニュー項目。  
   
-4.  オーケストレーションを含むアセンブリをクリックして、オーケストレーションの描画元の親アセンブリの選択、**アセンブリ名**ボックスの一覧し、をクリックして**次**です。  
+4.  オーケストレーションを含むアセンブリをクリックして、オーケストレーションの描画元の親アセンブリの選択、**アセンブリ名**、ボックスの一覧をクリックして**次**します。  
   
-     ![親アセンブリを TPE 内のイベント ソースとして選択](../core/media/tpeselectparentassembly.gif "TPESelectParentAssembly")  
+     ![TPE 内のイベント ソースとして親アセンブリの選択](../core/media/tpeselectparentassembly.gif "TPESelectParentAssembly")  
   
-5.  データ項目のソースであるオーケストレーションを選択して、**オーケストレーション名**ボックスの一覧し、をクリックして**OK**です。  
+5.  内のデータ項目のソースであるオーケストレーションを選択して、**オーケストレーション名**、ボックスの一覧をクリックして**OK**します。  
   
-6.  右ペインでデータ項目を選択し、左ペインにあるアクティビティの適切なノードにドラッグします。  
+6.  右側のペインで、データ項目を選択し、左側のウィンドウで、アクティビティ内の適切なノードにドラッグします。  
   
 ## <a name="see-also"></a>参照  
  [追跡プロファイル エディター](../core/tracking-profile-editor.md)   
- [追跡プロファイルを作成します。](../core/creating-tracking-profiles.md)
+ [追跡プロファイルの作成](../core/creating-tracking-profiles.md)

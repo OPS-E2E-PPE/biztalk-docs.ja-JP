@@ -1,5 +1,5 @@
 ---
-title: '手順 1: WCF サービスとしての SAP の成果物の発行 |Microsoft Docs'
+title: 手順 1:WCF サービスとしての SAP アイテムの発行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4af261acd7d61ae49aef53a9f7f206fb8a597fbd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a93c244a04c00266c3fb12fe4f6b98aeaf4fe2a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989379"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372847"
 ---
-# <a name="step-1-publish-the-sap-artifacts-as-a-wcf-service"></a>手順 1: WCF サービスとしての SAP の成果物を発行します。
+# <a name="step-1-publish-the-sap-artifacts-as-a-wcf-service"></a>手順 1:WCF サービスとしての SAP アイテムを発行します。
 ![手順 4 の 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
  **所要時間:** 10 分  
@@ -40,7 +40,7 @@ ms.locfileid: "36989379"
   
 - 必要な SAP クライアント ライブラリです。  
   
-  これらの前提条件の詳細については、、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドを参照してください。 通常、インストール ガイドにインストールされて\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents します。  
+  これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 通常、インストール ガイドにインストールされて\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents します。  
   
 ### <a name="to-publish-the-sap-artifacts-as-a-wcf-service"></a>WCF サービスとしての SAP アイテムを発行するには  
   
@@ -72,9 +72,9 @@ ms.locfileid: "36989379"
   
    5. をクリックして、**バインド プロパティ**タブをクリックし、対象と操作のために必要な場合、バインドのプロパティの値を指定します。 このチュートリアルでは、特定の顧客の販売注文の一覧を取得する BAPI_SALESORDER_GETLIST RFC が呼び出されます。 販売注文情報は、日付列を含めることも可能性があります。 設定することをお勧め、日付列の値を取得するときに、 **EnableSafeTyping**プロパティをバインド**True**メタデータを生成するときにします。 このプロパティが設定されている場合は、SAP DATS のデータ型が文字列として表示されます。  
   
-       SAP のデータ型を同等の .NET 型にマップする方法の詳細については、[SAP データ型の基本的な](../../adapters-and-accelerators/adapter-sap/basic-sap-data-types.md)を参照してください。  
+       SAP のデータ型を同等の .NET 型にマップする方法の詳細については、次を参照してください。 [SAP データ型の基本的な](../../adapters-and-accelerators/adapter-sap/basic-sap-data-types.md)します。  
   
-       バインド プロパティの詳細については、[mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
+       バインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
    6. をクリックして**OK**、順にクリックします**Connect**します。 接続が確立されると、接続の状態が表示として**接続**します。  
   
@@ -120,8 +120,8 @@ ms.locfileid: "36989379"
        |----------------------|-----------------------|  
        |[認証の種類]|-この設定**ClientCredentialUserNamePassword** WCF サービスを使用するときに、ユーザー名とパスワードを指定するクライアントを有効にします。<br /><br /> -この設定**HTTPUserNamePassword** HTTP ヘッダーの一部としてユーザー名とパスワードを指定するクライアントを有効にします。<br /><br /> -この設定**自動**最初から資格情報を指定するクライアントを有効にする、 **ClientCredential**インターフェイス。 これが失敗すると、クライアントは、HTTP ヘッダーの一部として資格情報を渡すことができます。<br /><br /> 既定値は**自動**します。WCF サービスを使用する Microsoft Office SharePoint server、として設定する必要があります**HTTPUserNamePassword**します。|  
        |名前|エンドポイントの動作の構成の名前を指定します。|  
-       |UsernameHeader|ユーザー名ヘッダーの名前です。 この例では、指定**MyUserHeader**します。 HTTP ヘッダーの詳細についてを参照してください「のサポートのカスタム HTTP ヘッダーと SOAP ヘッダー」 [ http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)します。<br /><br /> **注:** 場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**します。 場合**認証の種類**に設定されている**自動**、このプロパティは省略可能です。|  
-       |PasswordHeader|パスワード ヘッダーの名前です。 この例では、指定**MyPassHeader**します。 HTTP ヘッダーの詳細についてを参照してください「のサポートのカスタム HTTP ヘッダーと SOAP ヘッダー」 [ http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)します。<br /><br /> **注:** 場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**します。 場合**認証の種類**に設定されている**自動**、このプロパティは省略可能です。|  
+       |UsernameHeader|ユーザー名ヘッダーの名前です。 この例では、指定**MyUserHeader**します。 HTTP ヘッダーの詳細についてを参照してください「のサポートのカスタム HTTP ヘッダーと SOAP ヘッダー」 [ http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)します。<br /><br /> **注:** 場合、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**します。 場合**認証の種類**に設定されている**自動**、このプロパティは省略可能です。|  
+       |PasswordHeader|パスワード ヘッダーの名前です。 この例では、指定**MyPassHeader**します。 HTTP ヘッダーの詳細についてを参照してください「のサポートのカスタム HTTP ヘッダーと SOAP ヘッダー」 [ http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)します。<br /><br /> **注:** 場合、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**します。 場合**認証の種類**に設定されている**自動**、このプロパティは省略可能です。|  
   
        次の図は、値を指定して、サービスの構成およびエンドポイントの動作のページを示しています。  
   
@@ -167,7 +167,7 @@ ms.locfileid: "36989379"
   
 18. WCF サービスを発行します。  
   
-    1.  SSL がインターネット インフォメーション サービス (IIS) を有効にすることを確認します。 IIS の SSL を有効にする方法については、[ http://go.microsoft.com/fwlink/?LinkId=197170](http://go.microsoft.com/fwlink/?LinkId=197170)を参照してください。  
+    1.  SSL がインターネット インフォメーション サービス (IIS) を有効にすることを確認します。 IIS の SSL を有効にする方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=197170](http://go.microsoft.com/fwlink/?LinkId=197170)します。  
   
     2.  ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックし、**発行**します。  
   
@@ -197,7 +197,7 @@ ms.locfileid: "36989379"
         ```  
   
 ## <a name="next-step"></a>次の手順  
- SAP アイテム用のアプリケーション定義ファイルを作成するには、ビジネス データ カタログ定義エディターを使用します。 参照してください[手順 2: SAP アイテム用のアプリケーション定義ファイルの作成](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)手順についてはします。 LOB データが格納されていると、形式が格納されているアプリケーション定義ファイルを識別します。  
+ SAP アイテム用のアプリケーション定義ファイルを作成するには、ビジネス データ カタログ定義エディターを使用します。 参照してください[手順 2。SAP アイテム用のアプリケーション定義ファイルの作成](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)手順についてはします。 LOB データが格納されていると、形式が格納されているアプリケーション定義ファイルを識別します。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 1: SAP システムからのデータを SharePoint サイトに表示する](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)
+ [チュートリアル 1:SAP システムからのデータを SharePoint サイトに表示する](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)

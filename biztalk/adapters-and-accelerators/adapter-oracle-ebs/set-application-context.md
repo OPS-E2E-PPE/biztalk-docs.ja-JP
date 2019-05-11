@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a512f2b3e198d496390bdc462af073bf05c1668
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 539983840f07160ad58ec688eda24286dc1a3abc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004235"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374576"
 ---
 # <a name="set-application-context"></a>アプリケーションのコンテキストの設定
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]、それらの操作を実行する前に、アプリケーション コンテキストの設定は必須です (インターフェイス テーブル、インターフェイス ビュー、同時実行プログラム、および要求のセット) によって Oracle E-business Suite の成果物。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーション コンテキストを設定するまで、これらの成果物の操作を実行することはできません。 ただしの基になる Oracle データベース アイテム、そのユーザーの責任ですか、アプリケーションのコンテキストを設定するかどうか。  
@@ -25,20 +25,20 @@ ms.locfileid: "37004235"
 ## <a name="what-is-application-context"></a>アプリケーションのコンテキストとは  
  アプリケーションのコンテキストでは、一連のユーザー設定と、アイテムに対するアクセス制御を実装する Oracle E-business Suite 内のアイテムに関連付けられている要素です。 アプリケーションのコンテキストでは、次の要素で構成されます。  
   
-- **ユーザー名**: Oracle E-business Suite に接続できるユーザー。  
+- **ユーザー名**:Oracle E-business Suite に接続できるユーザー。  
   
-- **責任**: 責任はユーザーがこれらのデータと、組織では、そのロールに適切な関数にアクセスできる Oracle E-business Suite でアクセス レベル。 責任は、単位、書籍、および windows、関数、およびその他の責任の制限の一覧の動作の特定のアプリケーションへのアクセスを許可できます。 により、ユーザーの責任の割り当て、許可/アクセスを制限できます Oracle E-business Suite 内のユーザー。  
+- **責任**:責任は、それらのデータと、組織における各自の役割に適した関数へのアクセスを許可する Oracle E-business Suite でのアクセス レベルです。 責任は、単位、書籍、および windows、関数、およびその他の責任の制限の一覧の動作の特定のアプリケーションへのアクセスを許可できます。 により、ユーザーの責任の割り当て、許可/アクセスを制限できます Oracle E-business Suite 内のユーザー。  
   
-- **組織 ID**: Oracle E-business Suite は、複数の組織の構成の設定をサポートします。 複数の異なる組織は、値、組織 ID では、これらの組織に関する情報を格納する Oracle E-business Suite 内のテーブルの Org_ID 列で一意に識別されます。 により、組織の責任を割り当てまたは組織を明示的に選択すると、許可/アクセスを制限できますユーザーの組織にします。  
+- **組織 ID**:Oracle E-business Suite には、複数の組織の構成設定がサポートしています。 複数の異なる組織は、値、組織 ID では、これらの組織に関する情報を格納する Oracle E-business Suite 内のテーブルの Org_ID 列で一意に識別されます。 により、組織の責任を割り当てまたは組織を明示的に選択すると、許可/アクセスを制限できますユーザーの組織にします。  
   
   役割の詳細については、複数の組織、および Oracle E-business suite で組織 ID を検索して、 [Oracle ヘルプ センター](http://docs.oracle.com)します。  
   
 ## <a name="setting-application-context"></a>アプリケーション コンテキストの設定  
  として、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite の成果物の確立またはアダプターで初期化されていないのは、Oracle E-business Suite、アプリケーションのコンテキストで基になるデータベースに接続します。 初期化またはアプリケーションのコンテキストでこれらの成果物を設定することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]次のいずれかを使用しています。  
   
-- **バインドのプロパティ**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーション コンテキストを設定するための次のバインド プロパティを公開します: **OracleEBSOrganizationId**、 **OracleUserName**、 **OraclePassword**、 **OracleEBSResponsibilityKey**、 **OracleEBSResponsibilityName**、および**ApplicationShortName**します。 さまざまなアイテムのコンテキストをアプリケーション設定にこれらすべてのバインド プロパティの値を指定する必要はありません。 成果物のアプリケーション コンテキストの設定に必要なバインドのプロパティについては、[設定アプリケーション コンテキストのさまざまなアイテムのプロパティをバインド](#Binding)このトピックで後述を参照してください。  
+- **バインドのプロパティ**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーション コンテキストを設定するための次のバインド プロパティを公開します。**OracleEBSOrganizationId**、 **OracleUserName**、 **OraclePassword**、 **OracleEBSResponsibilityKey**、 **OracleEBSResponsibilityName**、および**ApplicationShortName**します。 さまざまなアイテムのコンテキストをアプリケーション設定にこれらすべてのバインド プロパティの値を指定する必要はありません。 成果物のアプリケーション コンテキストの設定に必要なバインドのプロパティについては、次を参照してください。[設定アプリケーション コンテキストのさまざまなアイテムのプロパティをバインド](#Binding)このトピックで後述します。  
   
-- **メッセージ コンテキスト プロパティ**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーション コンテキストを設定するための次のメッセージ コンテキスト プロパティを公開します: **ApplicationShortName**、**組織 Id**、 **ResponsibilityKey**、および**ResponsibilityName**します。 ユーザー名とパスワードを指定するためには、バインドのプロパティを使用する必要があります。 メッセージ コンテキスト プロパティを使用してアプリケーションのコンテキストを設定する方法については、[アプリケーション コンテキストを使用してメッセージのコンテキスト プロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-application-context-using-message-context-properties-in-oracle-ebs.md)を参照してください。  
+- **メッセージ コンテキスト プロパティ**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーション コンテキストを設定するための次のメッセージ コンテキスト プロパティを公開します。**ApplicationShortName**、**組織 Id**、 **ResponsibilityKey**、および**ResponsibilityName**します。 ユーザー名とパスワードを指定するためには、バインドのプロパティを使用する必要があります。 メッセージ コンテキスト プロパティを使用してアプリケーションのコンテキストを設定する方法については、次を参照してください。[アプリケーション コンテキストを使用してメッセージのコンテキスト プロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-application-context-using-message-context-properties-in-oracle-ebs.md)します。  
   
 > [!IMPORTANT]
 >  指定された値、 **OracleEBSResponsibilityKey**の値を上書きするプロパティのバインド、 **OracleEBSResponsibilityName**プロパティをバインドします。 同様に、指定された値、 **ResponsibilityKey**メッセージ コンテキスト プロパティに指定された値のオーバーライド、 **ResponsibilityName**メッセージ コンテキスト プロパティ。  
@@ -81,11 +81,11 @@ ms.locfileid: "37004235"
   
 ### <a name="setting-application-context-for-plsql-apis-procedures-functions-tables-and-views"></a>PL/SQL Api、プロシージャ、関数、テーブル、およびビューのアプリケーション コンテキストの設定  
   
-- **PL/SQL Api**: [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle データベースと Oracle E-business Suite アプリケーションに関連付けられている PL/SQL Api を公開します。 Oracle データベースに関連付けられた PL/SQL Api のアプリケーションのコンテキストを設定する省略可能ですが、Oracle E-business Suite アプリケーションに関連付けられている PL/SQL Api のアプリケーションのコンテキストを設定するのには必須では。  
+- **PL/SQL Api**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle データベースと Oracle E-business Suite アプリケーションに関連付けられている PL/SQL Api を公開します。 Oracle データベースに関連付けられた PL/SQL Api のアプリケーションのコンテキストを設定する省略可能ですが、Oracle E-business Suite アプリケーションに関連付けられている PL/SQL Api のアプリケーションのコンテキストを設定するのには必須では。  
   
-- **プロシージャおよび関数**: Oracle データベースでプロシージャおよび関数での操作を実行するアプリケーションのコンテキストを設定する必要はありません。  
+- **プロシージャおよび関数**:場合によっては、Oracle データベースでプロシージャおよび関数での操作を実行するアプリケーションのコンテキストを設定する必要はありません。  
   
-- **テーブルとビュー**: Oracle データベースでテーブルとビューで操作を実行するアプリケーションのコンテキストを設定する必要はありません。 ただし、カスタムの Oracle E-business Suite アプリケーションでは、ユーザーが可能性があります。 またはベース データベース テーブルにはインターフェイス テーブルとして登録できません。 これがデータベース テーブルのと共に表示されます、データベース テーブルが、インターフェイス テーブルとして登録されていない場合、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 これらのテーブルが Oracle E-business アプリケーションに関連付けられているため、これらのテーブルの操作をする必要がありますコンテキストを設定するアプリケーション。  
+- **テーブルとビュー**:場合によっては、Oracle データベースでテーブルとビューで操作を実行するアプリケーションのコンテキストを設定する必要はありません。 ただし、カスタムの Oracle E-business Suite アプリケーションでは、ユーザーが可能性があります。 またはベース データベース テーブルにはインターフェイス テーブルとして登録できません。 これがデータベース テーブルのと共に表示されます、データベース テーブルが、インターフェイス テーブルとして登録されていない場合、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 これらのテーブルが Oracle E-business アプリケーションに関連付けられているため、これらのテーブルの操作をする必要がありますコンテキストを設定するアプリケーション。  
   
   これらの成果物のアプリケーションのコンテキストを設定するには、バインドのプロパティまたは以前に指定したメッセージ コンテキスト プロパティの適切な値を提供する必要があります。  
   
@@ -124,7 +124,7 @@ ms.locfileid: "37004235"
 > - 既定値、 **OracleEBSOrganizationId** (省略可) プロパティのバインドが null です。 値を指定する場合、 **OracleEBSOrganizationId**プロパティ、バインド、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アプリケーション コンテキストの設定中に、セッションの ORG_ID をこの値に設定します。  
 >   -   指定された値、 **OracleEBSResponsibilityKey**プロパティのバインドに指定された値よりも優先されます、 **OracleEBSResponsibilityName**プロパティをバインドします。  
   
- 各バインド プロパティの詳細については、[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。  
+ 各バインド プロパティの詳細については、次を参照してください。[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。  
   
 ## <a name="see-also"></a>参照  
  [どのような操作は、アダプターを使用して実行しますか?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)

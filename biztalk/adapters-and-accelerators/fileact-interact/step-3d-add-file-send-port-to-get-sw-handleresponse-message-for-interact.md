@@ -1,5 +1,5 @@
 ---
-title: 'ステップ 3 D: の Sw:HandleResponse メッセージをキャプチャする FILE 送信ポートを追加、リアルタイムのシナリオを対話 |Microsoft ドキュメント'
+title: 手順 3 D:用に Sw:HandleResponse メッセージをキャプチャする FILE 送信ポートを追加、InterAct リアルタイム シナリオ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,55 +12,55 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a0c8c8721d9f7de7b1cd1e57537aa02d2ed8fd5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fc04ad643991d9685950b14874c1c6e53ae81c0e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225890"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366419"
 ---
-# <a name="step-3d-add-a-file-send-port-to-capture-the-swhandleresponse-message-for-the-interact-real-time-scenario"></a>ステップ 3 D: の Sw:HandleResponse メッセージをキャプチャする FILE 送信ポートを追加、リアルタイムのシナリオの対話
-完全な[手順 3 C: リアルタイム シナリオでは対話 Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートを追加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md)この手順を開始する前にします。
+# <a name="step-3d-add-a-file-send-port-to-capture-the-swhandleresponse-message-for-the-interact-real-time-scenario"></a>手順 3 D:用に Sw:HandleResponse メッセージをキャプチャする FILE 送信ポートを追加、InterAct リアルタイム シナリオ
+完全な[手順 3 C:操作のリアルタイム シナリオ用に Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md)この手順を開始する前にします。
   
 ## <a name="add-a-file-send-port-to-capture-swhandleresponse-message"></a>ファイル送信 Sw:HandleResponse メッセージをキャプチャするポートを追加します。  
   
-1.  開始**BizTalk Server 管理**です。  
+1.  開始**BizTalk Server 管理**します。  
   
-2.  コンソール ツリーで、BizTalk グループを展開し、送信ポートを作成する BizTalk アプリケーションの順に展開します。  
+2.  コンソール ツリーで、BizTalk グループを展開し、送信ポートを作成する BizTalk アプリケーションを順に展開します。  
   
-3.  右クリック**送信ポート**、 をポイント**新規**、クリックして**静的な一方向送信ポート。**  
+3.  右クリック**送信ポート**、 をポイント**新規**、 をクリックし、**静的な一方向送信ポート。**  
   
-4.  **送信ポートのプロパティ**ウィンドウで、送信ポートの名前**Tutorial_IA_SendResponseToSender**です。  
+4.  **送信ポートのプロパティ**ウィンドウで、送信ポート名**Tutorial_IA_SendResponseToSender**します。  
   
-5.  **送信ポートのプロパティ** ウィンドウから、 **Transporttype**ドロップダウン リストで、**ファイル**、順にクリック**構成**です。  
+5.  **送信ポートのプロパティ**ウィンドウから、 **Transporttype**ドロップダウン リストで、**ファイル**、 をクリックし、**構成**。  
   
-6.  **FILE トランスポートのプロパティ** ダイアログ ボックスで、**コピー先フォルダー**ボックスに、入力**C:\SWIFTAdapterTutorial\Interact\Response**をクリックして**OK**です。  
+6.  **FILE トランスポートのプロパティ** ダイアログ ボックスで、**先フォルダー**ボックスに「 **C:\SWIFTAdapterTutorial\Interact\Response**、をクリックしてして**OK**します。  
   
-7.  **送信ポートのプロパティ** ウィンドウで、次の操作します。  
+7.  **送信ポートのプロパティ**ウィンドウで、次の操作を行います。  
   
-    |**これを使用してください。**|**これを行う**|  
+    |**これを使用して、**|**これを行う**|  
     |------------------|--------------------|  
-    |**送信ハンドラー**|ドロップダウン リストから選択**BizTalkServerApplication**です。|  
-    |**送信パイプライン**|ドロップダウン リストから選択**XMLTransmit**です。|  
+    |**送信ハンドラー**|ドロップダウン リストから選択**BizTalkServerApplication**します。|  
+    |**送信パイプライン**|ドロップダウン リストから選択**XMLTransmit**します。|  
   
-8.  **送信ポートのプロパティ** ウィンドウで、**フィルター**  タブで、次の操作します。  
+8.  **送信ポートのプロパティ**ウィンドウで、**フィルター**  タブで、次の操作を行います。  
   
-    |**これを使用してください。**|**これを行う**|  
+    |**これを使用して、**|**これを行う**|  
     |------------------|--------------------|  
-    |最初の行:**プロパティ**|ドロップダウン リストから選択**BTS です。SPName**です。|  
-    |最初の行:**演算子**|ドロップダウン リストから選択 **==** です。|  
-    |最初の行:**値**|型**Tutorial_IA_HandleRequest_RealTime**です。|  
-    |最初の行:**でグループ化**|ドロップダウン リストから選択**または**です。|  
-    |2 番目の行:**プロパティ**|ドロップダウン リストから選択**BTS です。MessageType**です。|  
-    |2 番目の行:**演算子**|ドロップダウン リストから選択 **==** です。|  
-    |2 番目の行:**値**|型**SwInt ExchangeResponse**です。|  
-    |2 番目の行:**でグループ化**|既定値を使用します。|  
+    |最初の行。**プロパティ**|ドロップダウン リストから選択**BTS します。SPName**します。|  
+    |最初の行。**[演算子]**|ドロップダウン リストから選択 **==** します。|  
+    |最初の行。**[値]**|型**Tutorial_IA_HandleRequest_RealTime**します。|  
+    |最初の行。**グループ化**|ドロップダウン リストから選択**または**します。|  
+    |2 番目の行。**プロパティ**|ドロップダウン リストから選択**BTS します。MessageType**します。|  
+    |2 番目の行。**[演算子]**|ドロップダウン リストから選択 **==** します。|  
+    |2 番目の行。**[値]**|型**SwInt ExchangeResponse**します。|  
+    |2 番目の行。**グループ化**|既定値のままにします。|  
   
 9. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
- [手順 3: が送信を作成し、受信のポート、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   
- [手順 3: ファイルの受信場所を追加、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario.md)   
- [手順 3 b: 対話の受信場所を追加、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3b-add-an-interact-receive-location-for-the-interact-real-time-scenario.md)   
- [手順 3 C: の Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートを追加、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md)   
- [ステップ 3 e: 対話する送信ポートの追加、リアルタイムのシナリオの対話](../../adapters-and-accelerators/fileact-interact/step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario.md)
+ [ステップ 3:作成する送信と受信ポートを InterAct リアルタイム シナリオ](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   
+ [手順 3 a:ファイル受信場所を追加、InterAct リアルタイム シナリオ](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario.md)   
+ [手順 3 b:INTERACT の受信場所を追加、InterAct リアルタイム シナリオ](../../adapters-and-accelerators/fileact-interact/step-3b-add-an-interact-receive-location-for-the-interact-real-time-scenario.md)   
+ [手順 3 C:用に Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートを追加、InterAct リアルタイム シナリオ](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md)   
+ [手順 3 e:用の INTERACT 送信ポートを追加、InterAct リアルタイム シナリオ](../../adapters-and-accelerators/fileact-interact/step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario.md)

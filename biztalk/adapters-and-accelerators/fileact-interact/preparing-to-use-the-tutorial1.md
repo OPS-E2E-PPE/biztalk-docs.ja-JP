@@ -1,5 +1,5 @@
 ---
-title: Tutorial1 を使用する準備 |Microsoft ドキュメント
+title: Tutorial1 を使用する準備 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efedfeb184b8b0105b8622b6b3f068faffd6a906
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8bc4614d82471f6573134c6da47966bf8ca57330
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225210"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366574"
 ---
-# <a name="preparing-to-use-the-tutorial"></a>このチュートリアルを使用する準備をしています
-A4SWIFT のアダプターのエンド ツー エンド チュートリアルを使用する前に、次を実行する必要があります。  
+# <a name="preparing-to-use-the-tutorial"></a>チュートリアルを使用する準備をしています
+A4SWIFT アダプターのエンド ツー エンド チュートリアルを使用する前に、次を行う必要があります。  
   
-1.  このチュートリアルでは、次の迅速な成果物を必要となります。  
+1.  このチュートリアルでは、次の SWIFT 成果物を必要となります。  
   
     -   SWIFT Alliance ゲートウェイ (SAG) 6.1  
   
@@ -34,7 +34,7 @@ A4SWIFT のアダプターのエンド ツー エンド チュートリアルを
   
 2.  SAG を構成する必要があります: SAG で MessagePartners、終点、およびルーティング規則を作成し、アダプターをインストールするコンピューターで SAG 接続をテストします。 については、SAG ドキュメントを参照してください。  
   
-3.  「を作成、新しいホストにする方法」Microsoft BizTalk Server ヘルプのトピックに記載の手順に従います ([http://go.microsoft.com/fwlink/?LinkId = 100422](http://go.microsoft.com/fwlink/?LinkId=100422)) という名前の InterAct アダプターの 1 つのインプロセス ホストを作成する*interacthost*、インプロセス ホスト FileAct アダプターは、という名前のいずれかと*fileacthost*です。 アダプターのハンドラーを作成するときに、これらのホストを使用します。  
+3.  「を作成、新しいホストにする方法」Microsoft BizTalk Server ヘルプのトピックに記載の指示に従います ([http://go.microsoft.com/fwlink/?LinkId=100422](http://go.microsoft.com/fwlink/?LinkId=100422)) という、InterAct アダプターの 1 つのインプロセス ホストを作成する*interacthost*、インプロセス ホストという名前の FileAct アダプターの 1 つ*fileacthost*します。 アダプターのハンドラーを作成するときに、これらのホストを使用します。  
   
 4.  チュートリアルでは、次のフォルダーを作成します。  
   
@@ -69,8 +69,8 @@ A4SWIFT のアダプターのエンド ツー エンド チュートリアルを
 5.  SWIFT ITB への接続またはアダプターをテストする実際の環境が必要です。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk FileAct と対話するアダプターのエンド ツー エンドのチュートリアル](../../adapters-and-accelerators/fileact-interact/biztalk-fileact-and-interact-adapters-end-to-end-tutorial.md)   
- [リアルタイムのシナリオを対話します。](../../adapters-and-accelerators/fileact-interact/interact-real-time-scenario.md)   
- [ストアと順方向 (プッシュ) シナリオを対話します。](../../adapters-and-accelerators/fileact-interact/interact-store-and-forward-push-scenario.md)   
+ [BizTalk FileAct および InterAct アダプターのエンド ツー エンド チュートリアル](../../adapters-and-accelerators/fileact-interact/biztalk-fileact-and-interact-adapters-end-to-end-tutorial.md)   
+ [InterAct リアルタイム シナリオ](../../adapters-and-accelerators/fileact-interact/interact-real-time-scenario.md)   
+ [InterAct ストア アンド フォワード (プッシュ) シナリオ](../../adapters-and-accelerators/fileact-interact/interact-store-and-forward-push-scenario.md)   
  [FileAct リアルタイム シナリオ](../../adapters-and-accelerators/fileact-interact/fileact-real-time-scenario.md)   
- [FileAct ストア アンド フォワードのシナリオ](../../adapters-and-accelerators/fileact-interact/fileact-store-and-forward-scenario.md)
+ [FileAct ストア アンド フォワード シナリオ](../../adapters-and-accelerators/fileact-interact/fileact-store-and-forward-scenario.md)

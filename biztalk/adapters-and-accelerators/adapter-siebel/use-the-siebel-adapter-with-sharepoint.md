@@ -1,5 +1,5 @@
 ---
-title: SharePoint での Siebel アダプターの使用 |Microsoft ドキュメント
+title: SharePoint で Siebel アダプターを使用する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d95dd9e1ae158dfa4612d0fc9fa86c896f4cff2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 946f65d3f26628182b11242589bd2b3e37c44026
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222250"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370259"
 ---
-# <a name="use-the-siebel-adapter-with-sharepoint"></a>SharePoint での Siebel アダプターを使用します。
-ほとんどの基幹業務 (LOB) アプリケーションは、必要な特定の分野専門知識と比較的少数のユーザーがアクセスできる専用のインターフェイスを持っています。 ただし、関連する情報のワーカーが必要、すべてのレベル、組織の領域の専門家であるために、インフォメーション ワーカーが、情報を使用する上で Microsoft Excel などの他の一般的なアプリケーションに必要なデータをエクスポートします。  
+# <a name="use-the-siebel-adapter-with-sharepoint"></a>SharePoint で Siebel アダプターを使用します。
+ほとんどの基幹業務 (LOB) アプリケーションでは、必要な分野の専門知識を持つ比較的少数のユーザーがアクセスできる専用のインターフェイスがあります。 ただし、関連する情報のワーカーが必要、すべてのレベル、組織のため、分野の専門家をインフォメーション ワーカーが情報を使用する上で、Microsoft Excel などの他の一般的なアプリケーションに必要なデータをエクスポートする必要があります。  
   
- Microsoft Office クライアント アプリケーションと機能の新しいコレクションは、インフォメーション ワーカーが、Microsoft Office の最も一般的なインターフェイスにバックエンド ビジネス データを戻すことによってこの時間差を結びます。 Microsoft Office クライアント アプリケーションは、インフォメーション ワーカーに使い慣れたインターフェイスを通じて、LOB アプリケーションからデータをシームレスに提示します。 1 つの例は、Microsoft sharepoint ビジネス データ カタログです。  
+ Microsoft Office クライアント アプリケーションと機能の新しいコレクションは、Microsoft Office のインフォメーション ワーカー用、最も一般的なインターフェイスをバックエンドのビジネス データを導入することで、このギャップを橋渡しします。 Microsoft Office クライアント アプリケーションは、インフォメーション ワーカーに使い慣れたインターフェイスを通じて、LOB アプリケーションからデータをシームレスに表示します。 1 つの例では、Microsoft SharePoint のビジネス データ カタログです。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [Siebel アダプターとビジネス データ カタログについて](../../adapters-and-accelerators/adapter-siebel/about-business-data-catalog-with-the-siebel-adapter.md)  
+-   [Siebel アダプターを使用したビジネス データ カタログについて](../../adapters-and-accelerators/adapter-siebel/about-business-data-catalog-with-the-siebel-adapter.md)  
   
--   [ビジネス データと Siebel システムを統合する Siebel アダプターの構成カタログと SharePoint](../../adapters-and-accelerators/adapter-siebel/configure-the-siebel-adapter-to-use-the-business-data-catalog-in-sharepoint.md)  
+-   [ビジネス データと Siebel システムを統合する Siebel アダプターを構成するカタログと SharePoint](../../adapters-and-accelerators/adapter-siebel/configure-the-siebel-adapter-to-use-the-business-data-catalog-in-sharepoint.md)  
   
 -   [SharePoint で Siebel アダプターの使用時の考慮事項](../../adapters-and-accelerators/adapter-siebel/considerations-when-using-the-siebel-adapter-with-sharepoint.md)  
   

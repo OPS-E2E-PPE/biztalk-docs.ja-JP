@@ -1,5 +1,5 @@
 ---
-title: Recaller オブジェクト |Microsoft ドキュメント
+title: Recaller オブジェクト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,43 +17,43 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 731f7703eb9145b1249872902d0b867fe22622ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 15ad2868892f0190cb9ebf8c63dfd6e3df200505
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279890"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394062"
 ---
 # <a name="the-recaller-object"></a>Recaller オブジェクト
-ビジネス プロセス管理ソリューションでは、失敗したオブジェクト メソッドの呼び出しが、汎用的な方法で再試行できます。 このソリューションは、 **Recaller**内のオブジェクト、 **ExceptionHandler**オーケストレーションです。 **ExceptionHandler**オーケストレーションでは、オブジェクトを使用して、オブジェクト メソッドの呼び出しを再試行してください。 詳細については、次を参照してください。 [ExceptionHandler Orchestration](../core/the-exceptionhandler-orchestration.md)です。  
+再試行するには、ビジネス プロセス管理ソリューションを提供します、一般的ないくつかが失敗オブジェクト メソッドの呼び出し。 ソリューションはこれを**Recaller**オブジェクト、 **ExceptionHandler**オーケストレーションします。 **ExceptionHandler**オーケストレーションでは、オブジェクトを使用して、オブジェクト メソッドの呼び出しを再試行してください。 詳細については、次を参照してください。 [、ExceptionHandler オーケストレーション](../core/the-exceptionhandler-orchestration.md)します。  
   
-## <a name="the-invoke-method"></a>Invoke メソッド  
- **Recaller**オブジェクトが 1 つの静的メソッド**Invoke**です。 インスタンスを作成する必要が静的であるためありません、 **Recaller**オブジェクト。 使用することができます、 **Invoke**メソッドを次の 3 つの方法で: メソッドを呼び出す、静的オブジェクト、またはオブジェクトの非静的メソッドを呼び出す、オブジェクトを構築します。  
+## <a name="the-invoke-method"></a>メソッドを呼び出す  
+ **Recaller**オブジェクトが 1 つの静的メソッドでは、 **Invoke**します。 決してのインスタンスを作成する必要がありますには、静的であるため、 **Recaller**オブジェクト。 使用することができます、 **Invoke**メソッドで 3 つの方法: オブジェクトは、静的メソッドを呼び出す、またはオブジェクトの非静的メソッドを呼び出す、オブジェクトを構築します。  
   
 > [!NOTE]
->  **Invoke**メソッドのラッパーとして機能、 **Type.InvokeMember**メソッドで、[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]クラス ライブラリです。  
+>  **Invoke**メソッドのラッパーとして機能、 **Type.InvokeMember**メソッドで、[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]クラス ライブラリ。  
   
-### <a name="arguments-for-the-invoke-method"></a>Invoke メソッドの引数  
- 次の表の引数、 **Invoke**メソッド。  
+### <a name="arguments-for-the-invoke-method"></a>引数、メソッドを呼び出す  
+ 次の表に、引数、 **Invoke**メソッド。  
   
-|パラメーター|型|Description|  
+|パラメーター|型|説明|  
 |---------------|----------|-----------------|  
-|*t*|**型**|呼び出されるメソッドがあるオブジェクトのデータ型|  
-|*obj*|**オブジェクト**|使用するオブジェクトのインスタンス|  
-|*methodName*|**string**|呼び出すメソッドの名前です。|  
-|*args*|**配列**|型の配列**オブジェクト**メソッドの引数を格納します。|  
+|*t*|**型**|メソッドを呼び出す対象となるオブジェクトの型。|  
+|*obj*|**Object**|使用するオブジェクトのインスタンス。|  
+|*methodName*|**string**|呼び出すメソッドの名前。|  
+|*引数*|**配列**|型の配列**オブジェクト**メソッドの引数を格納しています。|  
   
- オブジェクトのコンス トラクターを呼び出しするには、空の文字列 ("") または**null**の*methodName*です。  
+ オブジェクトのコンス トラクターを呼び出す、空の文字列を使用して、("") または**null**の*methodName*します。  
   
- 静的メソッドを呼び出すには、次のように使用します。 **null**の*obj*です。  
+ 静的メソッドを呼び出すには、次のように使用します。 **null**の*obj*します。  
   
- 非静的メソッドを呼び出すには、すべての引数に値を指定します。  
+ 非静的メソッドを呼び出すには、すべての引数を指定します。  
   
 > [!NOTE]
->  使用して**null**型引数の値として*t*、により**Invoke**をスローする、 **ArgumentNullException**例外。 引数*t* null は使用できませんので、 **Invoke**メソッドを使用、 **Type.InvokeMember** [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]メソッドです。  
+>  使用して**null**型引数の値として*t*、により**Invoke**をスローする、 **ArgumentNullException**例外。 引数*t*は null にできませんので、 **Invoke**メソッドは、 **Type.InvokeMember** [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]メソッド。  
   
 ## <a name="calling-invoke"></a>Invoke の呼び出し  
- ソリューションでは、のみ、 **ExceptionHandler**オーケストレーションは、 **Recaller**オブジェクト。 **ExceptionHandler** 、さらに、他のオーケストレーションで使用します。 渡される値、 **Invoke**メソッドでは、他のオーケストレーションをこれらからに取得します。 たとえば、次のコードが、 **Activate**でオーケストレーション、 **InitialException**式図形。  
+ のみのソリューションで、 **ExceptionHandler**オーケストレーションは、 **Recaller**オブジェクト。 **ExceptionHandler** 、さらに、他のオーケストレーションで使用します。 渡される値、 **Invoke**メソッドでは、他のオーケストレーションをこれらからに取得します。 たとえば、次のコードが、 **Activate**でオーケストレーション、 **InitialException**式図形。  
   
 ```  
 Ex = CodeEx;  
@@ -70,9 +70,9 @@ ReturnValue = null; // no return value expected
   
 ```  
   
- コードが使用して、配列を作成する方法に注意してください。 **System.Array.CreateInstance**を使用して、 **SetValue**メソッド内で使用される値を格納します。  
+ コードを使用して、配列を作成する方法に注意してください。 **System.Array.CreateInstance**を使用して、 **SetValue** 、で使用する値を格納する方法。  
   
- 式図形後、Activate オーケストレーションを呼び出して、 **ExceptionHandler**オーケストレーションです。 次のコードはオーケストレーション デザイナが呼び出し図形をどのように変換するかを示します。  
+ 式図形の後、Activate オーケストレーションを呼び出して、 **ExceptionHandler**オーケストレーションします。 次のコードは、オーケストレーション デザイナーでの呼び出し図形を変換する方法を示しています。  
   
 ```  
 call Microsoft.Samples.  
@@ -107,7 +107,7 @@ ReturnValue =
                 );  
 ```  
   
- 引数名は Activate オーケストレーションからの呼び出しで使用されているものに一致しますが、オーケストレーションを呼び出すとき、引数の照合は名前ではなく順序によって行われることに注意してください。  
+ 、Activate オーケストレーションからの呼び出しで引数名に合わせて、は引数が一致することによって順序と名前ではなくオーケストレーションを呼び出すときに注意してください。  
   
 ## <a name="see-also"></a>参照  
  [ビジネス プロセス管理ソリューションの実装の要点](../core/implementation-highlights-of-the-business-process-management-solution.md)   

@@ -1,5 +1,5 @@
 ---
-title: マップ内のスキーマのノードを照合する方法 |Microsoft ドキュメント
+title: マップ内のスキーマのノードを照合する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,45 +12,45 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c1e2ce880489ca49b0b55d2e6f45b9e887d719a8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3a25bf295a767f34b692d54fc922fb8fe489ecc1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22253938"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336151"
 ---
 # <a name="how-to-match-schema-nodes-in-a-map"></a>マップ内のスキーマ ノードを照合する方法
-送信元スキーマまたは送信先スキーマが複雑な場合、要素をマップするのが難しいことがあります。 BizTalk マッパー、**指示一致**機能で、最適な一致を指摘することで複雑なスキーマ要素をマップすることができます。 このトピックでは、次の操作を実行する方法について説明します。  
+送信元または送信先スキーマが複雑なときに、要素をマップ難しいことができます。 BizTalk マッパー、**指示一致**機能で、最適な一致を提案して複雑なスキーマ要素をマップすることができます。 このトピックでは、次の操作を実行する方法について説明します。  
   
 > [!NOTE]
->  BizTalk マッパーは、スキーマ ノードに対して可能性のある一致を示します。 現在、この機能は English 名についてのみサポートされています。  
+>  BizTalk マッパーでは、スキーマのノードに一致する候補を提案します。 この機能は現在 English 名についてのみサポートされています。  
   
 ## <a name="prerequisites"></a>前提条件  
- 作業を行うには、BizTalk マッパーが実行されている必要があります。  
+ これらの手順では、BizTalk マッパーが実行されている必要があります。  
   
-### <a name="to-match-relevant-schema-nodes"></a>関連するスキーマ ノードを一致させるには  
+### <a name="to-match-relevant-schema-nodes"></a>関連するスキーマのノードに一致するには  
   
-1.  最善の一致を調べることや、をクリックする必要のあるスキーマ要素を右クリックして**指示一致**です。 BizTalk マッパーで、最善の一致 (7 つ) が強調表示され、その中で最適な一致が選択されます。  
+1.  選択しをクリックして、最善の一致を知る必要があるスキーマ要素を右クリックして**指示一致**します。 BizTalk マッパーには、最適な一致 (7 つに制限付き)、選択されている最も最適な一致が強調表示されます。  
   
-     または、選択することができます**指示一致**BizTalk メニュー、または SHIFT キーを押し + スペース キー。  
+     または、選択**指示一致**BizTalk メニューのまたは SHIFT キーを押してから + スペース キー。  
   
-     次の図は、送信先スキーマで選択したノードの推奨一致を示したものです。  
+     次の図は、送信先スキーマで選択したノードの一致を示したものを示します。  
   
      ![推奨マッピング](../core/media/suggestive-mapping.gif "Suggestive_Mapping")  
   
     > [!NOTE]
-    >  推奨一致の間を移動するには、Shift キーを押します。  
+    >  一致を示したものの間を移動する SHIFT キーを保持します。  
   
-2.  ここでは次の操作が可能です。  
+2.  次のようになりました行えます。  
   
-    -   Enter キーを押して、強調表示されている (可能な範囲で最善の) 一致を確定します。  
+    -   Enter キーを押して、強調表示されている最適な (可能な場合) の一致を確認します。  
   
-    -   上下矢印キーを使用して、強調表示されている一致の間を優先順位の順序で循環移動します。  
+    -   上下矢印キーを使用して、順番に強調表示されている一致する優先順位の順序。  
   
         > [!NOTE]
-        >  下矢印キーを押すと次の最善一致に移動し、上矢印キーを押すと前の最善一致が強調表示されます。  
+        >  次の最適な一致をスキャンする下方向キーを押し、上矢印キーは、前の最適な一致を強調表示されます。  
   
-    -   Home キーを押すと、最初の一致に戻ります。  
+    -   最上位の一致に戻りますホーム キーを押します。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk マッパーの強化された機能を使用](../core/using-enhanced-features-in-biztalk-mapper.md)
+ [BizTalk マッパーの強化された機能の使用](../core/using-enhanced-features-in-biztalk-mapper.md)

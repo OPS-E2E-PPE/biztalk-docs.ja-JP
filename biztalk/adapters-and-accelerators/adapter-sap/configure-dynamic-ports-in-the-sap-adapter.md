@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: de45553cfad2db19cfe16bbcd55420019b4971e0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 72b2f02382c9b6825b91c802bf1fcb6d669284dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971507"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373868"
 ---
 # <a name="configure-dynamic-ports-in-the-sap-adapter"></a>SAP アダプターの動的ポートを構成します。
 ## <a name="use-message-context-properties"></a>メッセージ コンテキスト プロパティを使用します。
@@ -50,7 +50,7 @@ SendPort(Microsoft.XLANGs.BaseTypes.TransportType)="WCF-Custom";
   
   式図形には、BizTalk オーケストレーションの一部です。 オーケストレーションを展開するときに、Wcf-custom 送信ポートも作成されます。  
   
-  動的ポートの構成の詳細については、[動的送信ポートを使用して WCF アダプター コンテキスト プロパティの構成](../../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md)を参照してください。
+  動的ポートの構成の詳細については、次を参照してください。[動的送信ポートを使用して WCF アダプター コンテキスト プロパティの構成](../../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md)します。
   
 ## <a name="see-also"></a>参照  
 [SAP アプリケーションを作成するための構成要素](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)

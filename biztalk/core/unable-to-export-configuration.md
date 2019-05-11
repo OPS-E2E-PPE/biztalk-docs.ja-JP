@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5bb3eb733dcf7c7199282ad4e5512e8d590e8c41
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4e2966a905ea57ed0867a3c3f4c333e88416be9c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018784"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292812"
 ---
 # <a name="unable-to-export-configuration"></a>構成をエクスポートできません
 ## <a name="details"></a>詳細  
@@ -33,10 +33,10 @@ ms.locfileid: "37018784"
 |  メッセージ テキスト   |                    構成をファイルにエクスポートすることができません"{0}"                    |
 
 ## <a name="explanation"></a>説明  
- [アドレス (URI)] や [バインディングの種類] など、必要なプロパティの一部が適切に指定されませんでした。  
+ いくつか必要なプロパティが正しく指定されていない、アドレス (URI) およびバインドの種類など。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- プロパティが正しいことを確認するには、次の手順を実行します。  
+ プロパティが正しいことを確認するのにには、次の手順を使用します。  
 
 #### <a name="to-verify-properties"></a>プロパティを確認するには  
 
@@ -44,7 +44,7 @@ ms.locfileid: "37018784"
 
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
 
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
 
 4. トランスポート名を右クリックします。  
 
@@ -52,10 +52,10 @@ ms.locfileid: "37018784"
 
 6. ポート**型**一覧で、適切なポートを選択します。  
 
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
 
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**インポート/エクスポート**タブ。  
 
 9. **[エクスポート]** をクリックします。  
 
-10. 必要なプロパティが適切に指定されていることを確認します。 [アドレス (URI)] のスキームは、[バインディングの種類] と一致する必要があります。
+10. 必要なプロパティが正しく指定されていることを確認します。 アドレス (URI) のスキームでは、バインドの種類を正しく一致する必要があります。

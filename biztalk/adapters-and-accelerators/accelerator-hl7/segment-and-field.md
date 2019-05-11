@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbe45a252b650bd3b5f4d2990d0c66e5a54e1e07
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 527774808bc2015189015adc41a894824c5208ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289638"
 ---
 # <a name="segment-and-field"></a>セグメントとフィールド
 セグメント テーブルは、HL7 セグメントを定義します。 各セグメントの定義は、次に示すパターンを示しています。  
@@ -33,8 +33,8 @@ ms.locfileid: "36985107"
 |3|250|CX|R|Y||00106|患者の識別子の一覧|  
 |4|20|CX|B|Y||00107|代替の患者 ID - PID|  
 |5|250|XPN|R|Y||00108|患者の名前|  
-|.||||||||  
-|.||||||||  
+|..||||||||  
+|..||||||||  
 |37|80|ST|O|||01541|歪み|  
 |38|250|CE|O|2|0429|01542|実稼働クラス コード|  
   

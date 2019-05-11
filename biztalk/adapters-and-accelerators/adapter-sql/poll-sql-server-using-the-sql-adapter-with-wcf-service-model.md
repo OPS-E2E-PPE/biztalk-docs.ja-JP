@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb3bbd42c732f3377c5823831b9507bbeb0c83bf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 81023090dc18230eedf184b80f268b94d98b8ea2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022312"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368631"
 ---
 # <a name="poll-sql-server-using-the-sql-adapter-with-wcf-service-model"></a>SQL Server をポーリングする WCF サービス モデルでの SQL アダプタの使用
 構成することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を SQL Server からのポーリングに基づいたデータ変更メッセージを受信します。 データベースをポーリングするアダプターを実行するポーリング ステートメントを指定することができます。 ポーリング ステートメントには、SELECT ステートメントまたはストアド プロシージャを返す結果セットを使用できます。 受信したメッセージのポーリングの種類に基づいて、アダプターは、さまざまなポーリング操作を公開します。  
@@ -28,7 +28,7 @@ ms.locfileid: "37022312"
   
 - **XmlPolling**します。 この操作は、XML メッセージとしてポーリング メッセージを返します。 SELECT ステートメントまたは XML メッセージとしてデータを返す FOR XML 句を使用するストアド プロシージャを使用する場合、この操作を使用する必要があります。 [FOR XML 句](https://docs.microsoft.com/sql/relational-databases/xml/for-xml-sql-server)詳細情報を提供します。 
   
-  これらのポーリング操作の詳細については、[SQL アダプターを使用して SQL Server でのポーリング](../../adapters-and-accelerators/adapter-sql/polling-in-sql-server-using-the-sql-adapter.md)を参照してください。  
+  これらのポーリング操作の詳細については、次を参照してください。 [SQL アダプターを使用して SQL Server でのポーリング](../../adapters-and-accelerators/adapter-sql/polling-in-sql-server-using-the-sql-adapter.md)します。  
   
 > [!NOTE]
 >  [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアントは同じデータベースまたはテーブルの 1 つ以上のポーリングまたは TypedPolling 操作を 1 つのアプリケーションに使用できます。 アダプターには、このようなシナリオをサポートするには、一意の ID が含まれています — **InboundID**— 接続 URI。 この ID は、接続、URI に追加されたときに、一意で単一のアプリケーションで複数のポーリング操作できるようにできます。  

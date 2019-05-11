@@ -1,5 +1,5 @@
 ---
-title: Nil 値 Functoid |Microsoft ドキュメント
+title: Nil 値 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: decc7bb78a03aa7fdf943ed0628044cbc61575fb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ee1ffb333901e51904b9034636674f8da9133f3c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262914"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323522"
 ---
 # <a name="nil-value-functoid"></a>Nil 値 Functoid
 
-## <a name="description"></a>Description
-**Nil 値**functoid 送信先要素を設定する**Nil**です。 この Functoid は、出力メッセージに空の要素を含める場合に便利です。 生成するために他の functoid と組み合わせることができます、 **Nil**特定の条件に基づいて値。  
+## <a name="description"></a>説明
+**Nil 値**functoid 送信先要素を設定する**Nil**します。 この functoid は、出力メッセージに空の要素を追加する場合に便利です。 生成するために他の functoid と組み合わせることができますが、 **Nil**に基づいて特定の条件の値。  
   
 ## <a name="see-also"></a>参照  
- **Nil 値 Functoid のリファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+ **Nil 値 Functoid のリファレンス** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

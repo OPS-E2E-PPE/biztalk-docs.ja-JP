@@ -1,5 +1,5 @@
 ---
-title: '手順 2: Wcf-custom の一方向の構成の受信ポート |Microsoft Docs'
+title: 手順 2:Wcf-custom 一方向の構成の受信ポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d3320e7a2e6b948309087f2b33def57db9db0c9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a39112ce0eac59acddd4d3111a93af33d63b2672
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990299"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372911"
 ---
-# <a name="step-2-configure-a-wcf-custom-one-way-receive-port"></a>手順 2: Wcf-custom の一方向の構成の受信ポート
+# <a name="step-2-configure-a-wcf-custom-one-way-receive-port"></a>手順 2:Wcf-custom 一方向の構成の受信ポート
 ![ステップ 2/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
  **所要時間:** 10 分  
@@ -64,7 +64,7 @@ ms.locfileid: "36990299"
   
        ![接続を SAP からメッセージを受信する URI](../../adapters-and-accelerators/adapter-sap/media/91e12582-aea3-4f13-8cdc-af69a9a11a5c.gif "91e12582-aea3-4f13-8cdc-af69a9a11a5c")  
   
-       接続 URI の詳細については、[SAP システムへの接続を作成する](../../adapters-and-accelerators/adapter-sap/create-a-connection-to-the-sap-system.md)を参照してください。  
+       接続 URI の詳細については、次を参照してください。 [SAP システムへの接続を作成する](../../adapters-and-accelerators/adapter-sap/create-a-connection-to-the-sap-system.md)します。  
   
    2. をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **sapBinding**します。 受信ポートのバインドのプロパティを指定することを確認します。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "36990299"
       |padReceivedIdocWithSpaces|**[True]**。 IDOC の各行が、正しい長さにスペースが埋め込まれるかどうかを指定します。|  
       |receiveIDocFormat|**文字列**します。 これは、1 つの文字列フィールドとして IDOC メッセージを表す必要がありますを指定します。|  
   
-       バインド プロパティの詳細については、[mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
+       バインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
    3. をクリックして、**他**タブをクリックし、SAP システムへの接続に資格情報を指定します。  
   
@@ -116,10 +116,10 @@ ms.locfileid: "36990299"
   
    3. **[OK]** をクリックします。  
   
-      アプリケーションを構成する方法の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=102360](http://go.microsoft.com/fwlink/?LinkId=102360)を参照してください。  
+      アプリケーションを構成する方法の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=102360](http://go.microsoft.com/fwlink/?LinkId=102360)します。  
   
 ## <a name="next-steps"></a>次の手順  
- WCF ベースを使用して SAP システムから Idoc を受信する BizTalk プロジェクトに vPrev BizTalk プロジェクトの移行が完了したので[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 」の説明に従って、フラット ファイル IDOC を受信することによって、移行済みの BizTalk アプリケーションにテストすること今すぐ必要があります[手順 3: 移行されたアプリケーションをテストする](../../adapters-and-accelerators/adapter-sap/step-3-test-the-migrated-application5.md)します。  
+ WCF ベースを使用して SAP システムから Idoc を受信する BizTalk プロジェクトに vPrev BizTalk プロジェクトの移行が完了したので[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 」の説明に従って、フラット ファイル IDOC を受信することによって、移行済みの BizTalk アプリケーションにテストすること今すぐ必要があります[手順 3。移行したアプリケーションをテスト](../../adapters-and-accelerators/adapter-sap/step-3-test-the-migrated-application5.md)します。  
   
 ## <a name="see-also"></a>参照  
  [チュートリアル 4: SAP の IDOC 受信 BizTalk プロジェクトを移行する](../../adapters-and-accelerators/adapter-sap/tutorial-4-migrating-an-sap-receive-idoc-biztalk-project.md)

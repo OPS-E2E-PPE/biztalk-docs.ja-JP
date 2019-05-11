@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92b3cb47df9b151de741b0e64f21041a60b9c90d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6086f39f3976e481d910dd5f83cd0a648696c9ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372730"
 ---
 # <a name="syntax-for-a-select-statement-in-sap"></a>SAP の SELECT ステートメントの構文
 次のセクションでは、文法仕様に対する SELECT クエリを実装するための記述、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]します。 いくつかの場合、構文が少し異なる基本の TRANSACT-SQL 構文に注意してください。  
@@ -54,9 +54,9 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
 - **No_conversion**オプション。  
   
-  -   場合、 **no_conversion**オプションを使用し、同等の .NET 型を使用して、テーブル内のフィールドが公開されます。 SAP のデータ型の .NET 相当するものについては、[SAP データ型の基本的な](../../adapters-and-accelerators/adapter-sap/basic-sap-data-types.md)を参照してください。  
+  -   場合、 **no_conversion**オプションを使用し、同等の .NET 型を使用して、テーブル内のフィールドが公開されます。 SAP のデータ型の .NET 相当するものについては、次を参照してください。 [SAP データ型の基本的な](../../adapters-and-accelerators/adapter-sap/basic-sap-data-types.md)します。  
   
-  -   場合、 **no_conversion**フィールドに、変換がないかどうかは、定義された終了オプションは使用されませんし、同等の .NET 型を使用してテーブル内のこれらのフィールドが公開されます。 SAP のデータ型の .NET 相当するものについては、[SAP データ型の基本的な](../../adapters-and-accelerators/adapter-sap/basic-sap-data-types.md)を参照してください。  
+  -   場合、 **no_conversion**フィールドに、変換がないかどうかは、定義された終了オプションは使用されませんし、同等の .NET 型を使用してテーブル内のこれらのフィールドが公開されます。 SAP のデータ型の .NET 相当するものについては、次を参照してください。 [SAP データ型の基本的な](../../adapters-and-accelerators/adapter-sap/basic-sap-data-types.md)します。  
   
   -   ときに、 **no_conversion**オプションを使用しないと変換されていないかどうかは、定義されている終了し、テーブル内のこれらのフィールドが .NET 文字列として公開されます。  
   
@@ -121,13 +121,13 @@ Table | '['Table']'
   
 - をパラメーターまたはクエリの日付/時刻値を指定する場合は、文字列として値を指定します。 SAP の日付と時刻の形式で日付と時刻の文字列を提供します。  
   
-  - `SAP date format`: YYYYMMDD  
+  - `SAP date format`:YYYYMMDD  
   
      たとえば、2004 年の日 11 月 10 日 SAP クエリでは表現 '20041110' です。  
   
      2004 年日文字列 p1 は SAPParameter p1 の 11 月 10 日のです。値 = '20041110'。  
   
-  - `SAP time format`: 時刻  
+  - `SAP time format`:HHMMSS  
   
      たとえば、時間 10時 34分: 32 SAP クエリでは表現 '103432' です。  
   
@@ -235,7 +235,7 @@ Table | '['Table']'
   SELECT * FROM KNA1 WHERE LAND1 LIKE 'd%'  
   ```  
   
-   Select クエリのフレーム化時に適切な場合を使用することを確認します。 また、SAP システムでは、一部の列が小文字または大文字の文字を含めることができます。 SAP GUI を使用して、テーブル内の列が小文字または大文字の文字を格納するかどうかを確認することができます。 SAP GUI の使用方法の詳細については、[を決定するかどうかを列ストア小文字または大文字の値](../../adapters-and-accelerators/adapter-sap/determining-whether-a-column-stores-lowercase-or-uppercase-values.md)を参照してください。  
+   Select クエリのフレーム化時に適切な場合を使用することを確認します。 また、SAP システムでは、一部の列が小文字または大文字の文字を含めることができます。 SAP GUI を使用して、テーブル内の列が小文字または大文字の文字を格納するかどうかを確認することができます。 SAP GUI の使用方法の詳細については、次を参照してください。[を決定するかどうかを列ストア小文字または大文字の値](../../adapters-and-accelerators/adapter-sap/determining-whether-a-column-stores-lowercase-or-uppercase-values.md)します。  
   
 - WHERE 条件はいくつかのデータ値をフィールド値の比較に対してのみサポートと*いない*とその他のテーブルのフィールド値。 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]サポートしている 1 つのテーブル SELECT クエリ、テーブルのフィールド クエリの結合条件では、同じをサポートするために、結合条件を使用する必要があります。  
   

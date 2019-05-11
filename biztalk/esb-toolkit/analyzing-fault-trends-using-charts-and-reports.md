@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b147ce36ba7303c698242ae378a0231e975ec75
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 17052b9d65d500fd9ca4a16162a1943d120dbcc9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392340"
 ---
 # <a name="analyzing-fault-trends-using-charts-and-reports"></a>グラフとレポートを使用してエラー傾向の分析
 このセクションでは、グラフや ESB 管理ポータルを生成するレポートについて説明します。 これらのグラフとレポートは、重要な詳細とエラー、警告、およびメッセージの再送信のトレンドに関する情報を提供します。 次の情報を表示できます。  
@@ -34,7 +34,7 @@ ms.locfileid: "36995827"
   
 - [アプリケーションまたはサービス別のサブスクリプション推移](../esb-toolkit/subscriptions-over-time-by-application-or-service.md)  
   
-  ESB 管理ポータルのレポート機能の詳細については、、[ポータル レポート ページ](../esb-toolkit/portal-reports-page.md)を参照してください。 図 1 は、レポート ページの既定のビューを示します。  
+  ESB 管理ポータルのレポート機能の詳細については、次を参照してください。、[ポータル レポート ページ](../esb-toolkit/portal-reports-page.md)します。 図 1 は、レポート ページの既定のビューを示します。  
   
   ![ポータル レポート ページ](../esb-toolkit/media/portalreportspage.gif "PortalReportsPage")  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 44aa603f777b2634422a6cbf5962088bc6724351
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a3df365e96c42865189a8e70aa5d1994a4b08a9f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015579"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357797"
 ---
 # <a name="btstask-command-line-reference"></a>BTSTask コマンド ライン リファレンス
 このセクションの各トピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に付属する BTSTask コマンドライン ツールのリファレンス情報を紹介しています。 BTSTask を使用すると、さまざまなアプリケーション展開作業をコマンド ラインから実行できます。その例を次に示します。  

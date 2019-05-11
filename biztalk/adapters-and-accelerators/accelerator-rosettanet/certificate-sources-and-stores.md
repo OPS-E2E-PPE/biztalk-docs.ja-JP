@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 13272f66fca9faec099d8fe8f1b6fb69bb1e6660
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8d099afcc6cecf229771e20551470027bf6bfe65
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990339"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284773"
 ---
 # <a name="certificate-sources-and-stores"></a>証明書のソースおよびストア
 ここでは、証明書のインポート元および証明書の格納先について説明します。  
@@ -45,7 +45,7 @@ ms.locfileid: "36990339"
   
 - 信頼されたルート証明機関フォルダーに証明機関から証明書、**証明書 (ローカル コンピューター)** 格納  
   
-  プライベート証明書を格納する、**証明書 - 現在のユーザー**を格納します。 管理コンソールを使用して、開くことで、このストアのノードを開くことができます、 **runas**コマンド ホスト サービス アカウントのユーザーにします。 詳細については、[証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates.md)を参照してください。  
+  プライベート証明書を格納する、**証明書 - 現在のユーザー**を格納します。 管理コンソールを使用して、開くことで、このストアのノードを開くことができます、 **runas**コマンド ホスト サービス アカウントのユーザーにします。 詳細については、次を参照してください。[証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates.md)します。  
   
 ## <a name="see-also"></a>参照  
  [CertWizard ユーティリティを使用して証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates-using-the-certwizard-utility.md)   

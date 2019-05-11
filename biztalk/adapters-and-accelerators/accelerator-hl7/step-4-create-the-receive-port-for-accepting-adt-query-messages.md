@@ -1,5 +1,5 @@
 ---
-title: '手順 4: 作成、受信ポート ADT クエリ メッセージの受け入れの |Microsoft Docs'
+title: 手順 4:作成、受信ポート ADT クエリ メッセージの受け入れの |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: acda59342c8469810a4645521c395c458fe5d73e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 74dcce5c6fdf32f0b20574735f981b854a52e6e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000755"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291168"
 ---
-# <a name="step-4-create-the-receive-port-for-accepting-adt-query-messages"></a>手順 4: 作成、ADT クエリ メッセージを受け入れるための受信ポート
+# <a name="step-4-create-the-receive-port-for-accepting-adt-query-messages"></a>手順 4:作成、ADT クエリ メッセージを受け入れるための受信ポート
 入学、放電、によって送信されるクエリ メッセージの受信場所を指定する受信ポートを作成して、転送 (ADT) システムです。 次の手順を使用してクエリを受け付ける受信ポートを作成する (QRY ^ Q01 メッセージ) 最小限の下位レイヤー プロトコル (MLLP) アダプターを使用して ADT system から。  
 
 ## <a name="create-the-adtreceiveport-receive-port"></a>作成、ADT_ReceivePort 受信ポート  
@@ -67,4 +67,4 @@ ms.locfileid: "37000755"
 13. 右クリックし、作成した受信場所を有効にし、**を有効にする**します。  
 
 ## <a name="next-step"></a>次の手順  
-[手順 5: HIS メッセージを受け入れるための受信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-5-create-the-receive-port-for-accepting-his-messages.md)
+[手順 5:HIS メッセージを受け入れるための受信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-5-create-the-receive-port-for-accepting-his-messages.md)

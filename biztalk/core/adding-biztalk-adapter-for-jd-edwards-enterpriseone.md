@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 676738840cc1156f7809214634a9412f32115ce4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 66e0403ed0ebce64d97efc5819fd5003ca0cfdab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969227"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360921"
 ---
 # <a name="configure-jd-edwards-enterpriseone-artifacts-in-biztalk-administration"></a>BizTalk 管理コンソールで JD Edwards EnterpriseOne の成果物を構成します。
 Microsoft BizTalk Adapter for J.D.Edwards EnterpriseOne には、Receive Handler フォルダーと Send Handler フォルダーの両方が含まれています。 これらのフォルダーには、BizTalkServerApplication が含まれています。 BizTalk Adapter for J.D.Edwards EnterpriseOne は、BizTalk Server と共にインプロセスで実行され、分離ホスト プロセスでは実行されません。  
@@ -41,7 +41,7 @@ Microsoft BizTalk Adapter for J.D.Edwards EnterpriseOne には、Receive Handler
 
 3.  **送信ポートのプロパティ** ダイアログ ボックスで、次の操作を行います。  
 
-    -   **名前**、送信ポートの名前を入力します。 たとえば、入力`SendToJDE`します。  
+    -   **名前**、送信ポートの名前を入力します。 たとえば、`SendToJDE` と入力します。  
 
     -   **型**ドロップダウン リストで、 **JDEdwards**します。  
 
@@ -66,7 +66,7 @@ JD Edwards EnterpriseOne トランスポートのプロパティは、デザイ�
 
 2. 右クリックして**送信ポート**を選択します**新規**、し、**静的な一方向送信ポート**します。  
 
-3. **送信ポートのプロパティ**、**名前**、し、このポートの名前。 たとえば、入力`JDEEnterpriseOneSend`します。  
+3. **送信ポートのプロパティ**、**名前**、し、このポートの名前。 たとえば、`JDEEnterpriseOneSend` と入力します。  
 
 4. **全般**の**トランスポートの種類**ボックスで、 **JDE EnterpriseOne**ドロップダウン リストでします。  
 
@@ -83,7 +83,7 @@ JD Edwards EnterpriseOne トランスポートのプロパティは、デザイ�
    |                        ホスト                         |                                                                                                                   ホスト サーバー コンピューターの名前<br /><br /> `actsvr1`)<br /><br /> -- または--<br /><br /> コンピューターの IP アドレス<br /><br /> `123.456.0.789`)                                                                                                                    |
    |                      JAVA_HOME                      |                                                                                                                                                                  JDK インストールへの完全なパスを入力します (たとえば、<br /><br /> `C:\jdk1sdk1.4.2_07`)                                                                                                                                                                  |
    |                JDEdwards 環境                |                                                                                  JD Edwards EnterpriseOne の環境の名前を入力 (たとえば、 `DV7333`)。<br /><br /> DV7333 は開発環境の一般名、PY7333 はプロトタイプ環境の一般名、PD7333 は実稼働環境の一般名です。                                                                                   |
-   |                 JDEdwards JAR ファイル                 | 各 JAR ファイルの完全パスとファイル名を入力します。<br /><br /> -C:\JDEOWJars\Connector.jar<br />-C:\JDEOWJars\Kernel.jar<br />-\Microsoft BizTalk Adapters for Enterprise applications \j.d. プログラムの。 Edwards EnterpriseOne(r)\Classes\JDEDynAccess.jar<br /><br /> 各 jar ファイルは、次に示すようにセミコロン (;) で区切り、スペースは挿入しません。<br /><br /> `<c:>\Connector.jar;<c:>\Kernel.jar;`) |
+   |                 JDEdwards JAR ファイル                 | 各 JAR ファイルの完全パスとファイル名を入力します。<br /><br /> -   C:\JDEOWJars\Connector.jar<br />-   C:\JDEOWJars\Kernel.jar<br />-\Microsoft BizTalk Adapters for Enterprise applications \j.d. プログラムの。 Edwards EnterpriseOne(r)\Classes\JDEDynAccess.jar<br /><br /> 各 jar ファイルは、次に示すようにセミコロン (;) で区切り、スペースは挿入しません。<br /><br /> `<c:>\Connector.jar;<c:>\Kernel.jar;`) |
    |                      パスワード                       |                                                              ユーザーのパスワードを入力します。 シングル サインオン (SSO) を使用しない場合、サーバー システムにアクセスするには BizTalk Adapter for JD Edwards EnterpriseOne の資格情報関連のパラメーターを設定する必要があります。 このパスワードは、ユーザー名に対応しています。このパスワードに基づいて、データベースにアクセスしたときに付与される特権が決定されます。                                                              |
    |                        Port                         |                                                                                                                                                                         入力した数値識別子、送信ポートまたは受信ポート (たとえば、 `6009`)。                                                                                                                                                                          |
    |                      [ユーザー名]                      |                                                                                                                                                                                         ユーザーの名前を入力し、クリックして**OK**します。                                                                                                                                                                                         |
@@ -148,7 +148,7 @@ JD Edwards EnterpriseOne トランスポートのプロパティは、デザイ�
 #### <a name="single-sign-on"></a>シングル サインオン  
  JD Edwards EnterpriseOne システムへのアクセスには、2 つの方法を使用できます。 1 つはログイン資格情報 (トランスポートのプロパティのログイン パラメーター) を使用する方法で、もう 1 つはシングル サインオン (SSO) を使用する方法です。 選択**はい**で、**を使用して、SSO**でシングル サインオンを使用するフィールド。  
 
- 詳細および基本的な手順をシングル サインオンの設定については、[BizTalk Adapter for JD Edwards EnterpriseOne セキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)を参照してください。
+ 詳細および基本的な手順をシングル サインオンの設定については、次を参照してください。 [BizTalk Adapter for JD Edwards EnterpriseOne セキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)します。
 
  さらに、一覧から関連アプリケーションを選択する必要があります。 エンタープライズ シングル サインオン ツールで作成される関連アプリケーションは、JD Edwards EnterpriseOne などのアプリケーションを表します。 BizTalk Adapter for JD Edwards EnterpriseOne は、アプリケーション ユーザーの資格情報を使用します。  
 

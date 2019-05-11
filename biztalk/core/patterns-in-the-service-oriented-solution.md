@@ -1,5 +1,5 @@
 ---
-title: パターンで、サービス指向ソリューション |Microsoft ドキュメント
+title: パターン、サービス指向ソリューション |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7589bc1c7c91fe556794f5616b35e7b6dac53f35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 76eb4e1ecfff96f4419fdea6de159005673486d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263722"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291837"
 ---
-# <a name="patterns-in-the-service-oriented-solution"></a>パターンで、サービス指向ソリューション
-このセクションでは、サービス指向ソリューションを作成する場合の基本的なプログラミング パターンについて説明します。 はじめにソリューションに関連するエンタープライズ パターンを検討し、次にこれらのパターンを BizTalk パターンに発展させます。 最後のセクションでは、エンタープライズ パターン、BizTalk パターン、またはその他の一般的なプログラミング パターンを含めて、ソリューション内のパターンの分類を示します。  
+# <a name="patterns-in-the-service-oriented-solution"></a>パターン、サービス指向ソリューション
+このセクションでは、サービス指向ソリューションを作成する基本的なプログラミング パターンを検索します。 ソリューションに関連するエンタープライズ パターンの検討では、まずを BizTalk パターンにこれらのパターンを開発します。 最後のセクションでは、エンタープライズ パターン、BizTalk パターン、またはその他の一般的なプログラミング パターンは、ソリューション内のパターンをカタログ化します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [パターンを使用したデザイン: サービス指向ソリューション](../core/designing-with-patterns-the-service-oriented-solution.md)  
+-   [パターンと設計: サービス指向ソリューション](../core/designing-with-patterns-the-service-oriented-solution.md)  
   
--   [指向ソリューションのパターンのサービスの変換](../core/translating-the-patterns-of-the-service-oriented-solution.md)  
+-   [指向ソリューションのサービスのパターンの変換](../core/translating-the-patterns-of-the-service-oriented-solution.md)  
   
--   [指向ソリューションのサービスのパターン カタログ](../core/pattern-catalog-for-the-service-oriented-solution.md)
+-   [サービス指向ソリューションのパターン カタログ](../core/pattern-catalog-for-the-service-oriented-solution.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b0df87a548c2a6a5a207673d96a984e16287f04a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3fcba19a3852a70c402276fed1ca56ea1b8f0c4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256418"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333713"
 ---
 # <a name="how-to-update-references-to-the-bam-archive-database-name"></a>BAM アーカイブ データベース名への参照を更新する方法
 BAMArchive データベースがバックアップされていれば、システムまたはデータの障害が発生したときに、バックアップを復元し、さらに、その名前を変更することができます。  
@@ -44,7 +44,7 @@ BAMArchive データベースがバックアップされていれば、システ
   
     1.  をクリックして**開始**、 をクリックして**実行**、し、入力**services.msc**です。  
   
-    2.  右クリックし、 **BizTalk Service BizTalk Group: BizTalkServerApplication**サービスを提供し、クリックして**停止**です。  
+    2.  右クリックし、 **BizTalk Service BizTalk Group:[Biztalkserverapplication]** サービスをクリックして**停止**します。  
   
 3.  をクリックして**開始**、 をクリックして**プログラム**、 をクリックして**Microsoft SQL Server 2008 R2**、クリックして**SQL Server Business Intelligence Development Studio**.  
   
@@ -86,9 +86,9 @@ BAMArchive データベースがバックアップされていれば、システ
   
     1.  をクリックして**開始**、 をクリックして**実行**、し、入力**services.msc**です。  
   
-    2.  右クリックし、 **BizTalk Service BizTalk Group: BizTalkServerApplication**サービスを提供し、クリックして**開始**です。  
+    2.  右クリックし、 **BizTalk Service BizTalk Group:[Biztalkserverapplication]** サービスをクリックして**開始**します。  
   
 21. すべての BAM キューブ更新およびデータ保守 SSIS パッケージを有効にします。  
   
 ## <a name="see-also"></a>参照  
- [バックアップおよび BAM を復元します。](../core/backing-up-and-restoring-bam.md)
+ [BAM のバックアップと復元](../core/backing-up-and-restoring-bam.md)

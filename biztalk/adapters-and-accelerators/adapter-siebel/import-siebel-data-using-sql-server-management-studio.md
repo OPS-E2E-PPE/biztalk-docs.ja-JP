@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fdcc6140bb50ebca299cd58f78063be8f108dea4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3bd0fd82745dd9ba287f6f445e4353340a5009bf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013179"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371559"
 ---
 # <a name="import-siebel-data-using-sql-server-management-studio"></a>SQL Server Management Studio を使用して Siebel データをインポートします。
 このセクションでは、SQL Server Management Studio を使用して Siebel システムから SQL Server データベースにデータをインポートする方法について説明します。 また、作成し、このデータをインポートする SSIS パッケージを実行する方法の手順を提供します。  
@@ -45,7 +45,7 @@ ms.locfileid: "37013179"
   
 4. クリックして、ようこそ画面の情報を読み取る**次**します。  
   
-5. **データ ソースの選択** ダイアログ ボックスから、**データ ソース**ドロップダウン リストで、 **Siebel eBusiness Applications の .NET Framework Data Provider**します。 さまざまな接続のプロパティの値を指定、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]接続文字列。 接続文字列プロパティの詳細については、[Siebel 接続文字列のデータ プロバイダー プロパティ](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)を参照してください。  
+5. **データ ソースの選択** ダイアログ ボックスから、**データ ソース**ドロップダウン リストで、 **Siebel eBusiness Applications の .NET Framework Data Provider**します。 さまざまな接続のプロパティの値を指定、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]接続文字列。 接続文字列プロパティの詳細については、次を参照してください。 [Siebel 接続文字列のデータ プロバイダー プロパティ](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)します。  
   
     **[次へ]** をクリックします。  
   

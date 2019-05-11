@@ -15,12 +15,12 @@ caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ecea06f7637d7fee46593d412f1570d26b7eaeb1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a06084320a9b02c548528f2bab7806bf9000569f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019527"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332526"
 ---
 # <a name="httprequestresponse"></a>HTTPRequestResponse
 HTTPRequestResponse サンプルは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Internet Server API (ISAPI) フィルターを使用して ASP.NET アプリケーションと [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションの通信を行う方法を示します。  
@@ -91,7 +91,7 @@ HTTPRequestResponse サンプルは、Microsoft [!INCLUDE[btsBizTalkServerNoVers
      >  Setup.bat によって行われた変更を元に戻すには、Cleanup.bat を実行します。 Setup.bat を 2 回目に実行する場合は、その前に Cleanup.bat を実行してください。  
 
      > [!NOTE]
-     >  構成する必要があり、受信アダプターを有効に HTTP を使用する IIS。 詳細については、[IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)を参照してください。  
+     >  構成する必要があり、受信アダプターを有効に HTTP を使用する IIS。 詳細については、次を参照してください。 [IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)します。  
 
 3. Setup.bat ファイルを実行すると、このサンプルの仮想ディレクトリが構成され、既定の Web サイトに関連付けられた IIS アプリケーション プールで実行されるよう設定されます。  内のユーザーのコンテキストで実行するには、このサンプル用の仮想ディレクトリを構成する、 **BizTalk 分離ホスト ユーザー**と**IIS_IURS**ユーザー グループの場合は、新しいで実行する仮想ディレクトリを構成する必要がありますIIS アプリケーション プール。 仮想ディレクトリを新しい IIS アプリケーション プールで実行するよう構成するには、次の手順を実行します。  
 

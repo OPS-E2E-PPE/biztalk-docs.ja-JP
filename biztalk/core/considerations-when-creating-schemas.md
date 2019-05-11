@@ -1,5 +1,5 @@
 ---
-title: スキーマを作成する際の考慮事項 |Microsoft ドキュメント
+title: スキーマの作成時の考慮事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b06965d1ddcb2222cc08ffd2793e061c8e1d888
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4fc0d87b4dbedfa4f9ae440c4e7cefd353f26c6d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22237786"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390361"
 ---
-# <a name="considerations-when-creating-schemas"></a>スキーマを作成する際の考慮事項
-このセクションでは、スキーマ作成に関するさまざまな考慮事項について説明します。 これらの考慮事項のうち、すべての種類のスキーマに適用されるものについては、最初に説明します。 他の考慮事項は、フラット ファイル メッセージ スキーマおよびエンベロープ スキーマに固有のものです。 後者の考慮事項は、個別のサブセクションに分けられています。  
+# <a name="considerations-when-creating-schemas"></a>スキーマの作成時の考慮事項
+このセクションでは、さまざまなスキーマの作成に関連する考慮事項についての情報を提供します。 これらの考慮事項の一部は、すべての種類のスキーマに適用され、最初に対応します。 他の考慮事項は、フラット ファイル メッセージ スキーマとエンベロープ スキーマに固有です。 後者の考慮事項は、個別のサブセクションに編成されます。  
   
- XML 要素と属性の適切な形式名については、次を参照してください。[ノード名プロパティ](../core/node-name-property.md)です。  
+ XML 要素と属性の適切な形式名については、次を参照してください。[ノード名プロパティ](../core/node-name-property.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [Namespace 管理](../core/namespace-management.md)  
+-   [名前空間の管理](../core/namespace-management.md)  
   
 -   [コード リストの管理](../core/code-list-management.md)  
   
--   [ファイル メッセージ スキーマをフラットを作成する際の考慮事項](../core/considerations-when-creating-flat-file-message-schemas.md)
+-   [フラット ファイル メッセージ スキーマを作成する上での注意点](../core/considerations-when-creating-flat-file-message-schemas.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8fb4234c72ad1d44fd1ca157ae031a73e2dbbd9a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 445f62df17c45b80d7be83b9e9283f091e797fb5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366654"
 ---
 # <a name="interact-adapter-security-architecture"></a>InterAct アダプターのセキュリティ アーキテクチャ
 SWIFTNet リンク (SNL) と SWIFTAlliance ゲートウェイ (SAG) に固有の証明書と暗号化機能を使用して、メッセージの送信と受信確認のセキュリティが実装されます。 SWIFT では、サービスが、「エンド ツー エンド」署名の適用に対話するために設計されていることをお勧め-は、メッセージの要求と応答の両方に署名します。  

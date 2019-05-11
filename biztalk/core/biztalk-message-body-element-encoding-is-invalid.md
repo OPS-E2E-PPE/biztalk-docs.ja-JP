@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6bca7046606461dd3368224364c21dd48ea5dfb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c468679853f450695f6fa2194c303be5438a4e90
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967971"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357985"
 ---
 # <a name="biztalk-message-body-element-encoding-is-invalid"></a>BizTalk メッセージ本文要素のエンコードは無効です
 ## <a name="details"></a>詳細  
@@ -33,18 +33,18 @@ ms.locfileid: "36967971"
 |  メッセージ テキスト   | BizTalk メッセージ本文要素のエンコード"{0}"が無効です。 エンコードが必要です"xml"、"base64"、"hex"、または"string"。 |
   
 ## <a name="explanation"></a>説明  
- このエラーは、送信メッセージには BizTalk 本文テンプレート オプションが使用されていますが、BizTalk 本文に指定されたエンコーディングの種類は無効であることを示します。  
+ このエラーは、送信メッセージは BizTalk 本文テンプレート オプションの使用を示します。ただし、BizTalk 本文に指定したエンコードの種類が無効です。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- エンコーディングの種類を構成するには、次の手順を実行します。  
+ エンコードの種類を構成するのにには、次の手順を使用します。  
   
-#### <a name="to-configure-the-encoding-type"></a>エンコーディングの種類を構成するには  
+#### <a name="to-configure-the-encoding-type"></a>エンコードの種類を構成するには  
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリック**BizTalk Server 管理**します。  
   
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
   
 4. トランスポート名を右クリックします。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "36967971"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**メッセージ**タブ。  
   

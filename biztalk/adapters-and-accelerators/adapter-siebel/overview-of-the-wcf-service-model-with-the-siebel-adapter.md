@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f1b705b40cb5c7c78017f5a320a41ddb0cc1476
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: efeed6a398787870b4cccefddfbbdd7833c28e86
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969539"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371242"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-siebel-adapter"></a>Siebel アダプターで WCF サービス モデルの概要
 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] WCF サービスとしての Siebel システムを公開します。 Siebel システム成果物の例では、Siebel ビジネス サービスのメソッドを呼び出すために操作を実行するには、さらに、Siebel システムでの操作を実行すると、アダプターでの操作を呼び出します。 そのため、コードは、アダプターによって提示される WCF サービスのクライアントとして機能します。  
@@ -34,9 +34,9 @@ ms.locfileid: "36969539"
   
 #### <a name="to-invoke-operations-on-the-siebel-adapter"></a>Siebel アダプターの操作を呼び出す  
   
-1. WCF クライアント クラスとヘルパー コードを生成します。 使用して、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) Siebel システムの成果物を対象とした WCF クライアント クラスを生成する作業します。 WCF クライアントを生成する方法の詳細については、[Siebel ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-siebel/generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts.md)を参照してください。  
+1. WCF クライアント クラスとヘルパー コードを生成します。 使用して、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) Siebel システムの成果物を対象とした WCF クライアント クラスを生成する作業します。 WCF クライアントを生成する方法の詳細については、次を参照してください。 [Siebel ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-siebel/generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts.md)します。  
   
-2. WCF クライアントのインスタンスを作成し、WCF クライアントを構成します。 WCF クライアントを構成するには、バインドと、クライアントが使用するエンドポイント アドレス (URI の接続) を指定する必要があります。 コードで強制的に、または構成で宣言的に、これを行うことができます。 WCF クライアントを構成する方法の詳細については、[Siebel システムの WCF クライアントを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-wcf-client-for-a-siebel-system.md)を参照してください。 次のコードでは、タイムスタンプの Siebel ビジネス サービスを対象とする WCF クライアントを作成します。 また、Siebel システムの資格情報を設定します。 WCF クライアントは、構成から初期化されます。  
+2. WCF クライアントのインスタンスを作成し、WCF クライアントを構成します。 WCF クライアントを構成するには、バインドと、クライアントが使用するエンドポイント アドレス (URI の接続) を指定する必要があります。 コードで強制的に、または構成で宣言的に、これを行うことができます。 WCF クライアントを構成する方法の詳細については、次を参照してください。 [Siebel システムの WCF クライアントを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-wcf-client-for-a-siebel-system.md)します。 次のコードでは、タイムスタンプの Siebel ビジネス サービスを対象とする WCF クライアントを作成します。 また、Siebel システムの資格情報を設定します。 WCF クライアントは、構成から初期化されます。  
   
    ```  
    BusinessServices_TimeStamp_OperationClient client =  

@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fe06da3c9aa53fcf55acab05cdefaef8b3d1293e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2785fa83e344db4a73f91a8c80e381ee330e401c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369911"
 ---
 # <a name="create-a-channel-using-the-sql-adapter"></a>SQL アダプタを使用するチャネルを作成します。
 WCF チャネル モデルで、SQL Server データベースに対する操作を呼び出すし、によって SOAP メッセージを交換することで、結果が表示される、 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] WCF チャネルを経由します。  

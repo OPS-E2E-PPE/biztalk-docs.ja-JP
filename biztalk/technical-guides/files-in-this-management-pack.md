@@ -12,17 +12,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ebd3617007abbc39c422d91e20cb31003eafb64f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: df99d785b4c471c800dba8ec039d07e121df7416
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022672"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393521"
 ---
 # <a name="files-in-this-management-pack"></a>この管理パックのファイル
 監視する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、最初にダウンロードする必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]から管理パック[System Center 管理パック カタログ](http://www.microsoft.com/download/details.aspx?id=39617)(<http://www.microsoft.com/download/details.aspx?id=39617>)。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックには、次のファイルが含まれています。  
   
-|[ファイル名]|表示名|説明|  
+|ファイル名|表示名|説明|  
 |---------------|------------------|-----------------|  
 |Microsoft.BizTalkServer2013.Library.mp|BizTalk Server ライブラリ|ジェネリック クラス、リレーションシップ、およびすべての BizTalk アプリケーションの監視を提供する他の管理パックで使用されるその他の管理パックの構成要素が含まれています。|  
 |Microsoft.BizTalk.Server.2013.Monitoring.mp|BizTalk Server の監視|モニタ、ルール、および拡張可能なすべての BizTalk アプリケーションを制御する方法を提供するビューが含まれています。|  

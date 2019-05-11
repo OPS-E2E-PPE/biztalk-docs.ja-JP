@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e9650567f9f2072662af7f75d735a5a647de6d10
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 044969142c39d2844c2d9afd4bfe94ade8eded84
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373028"
 ---
 # <a name="receive-inbound-rfc-calls-in-sap-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SAP で受信 RFC 呼び出しを受信します。
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] SAP システムによって呼び出される Rfc を受信する RFC サーバーとして機能できます。  
@@ -42,9 +42,9 @@ ms.locfileid: "37014187"
 ## <a name="how-to-set-up-the-sap-system-to-send-an-rfc-to-the-sap-adapter"></a>SAP アダプターを RFC を送信する SAP システムを設定する方法  
  SAP システムから RFC を送信する前に、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を次が SAP システムに該当することを確認する必要があります。  
   
-- RFC 転送先の[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]存在する必要があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]自身の SAP システムから Rfc を受信する RFC 転送先を登録します。 SAP 接続、SAP ゲートウェイ ホスト、SAP ゲートウェイ サービスと、アダプター自身を登録に使用する SAP プログラム ID などの URI でパラメーターを指定します。 SAP で RFC 転送先をセットアップする方法については、[RFC を作成する、RFC 変換先、および RFC を送信する SAP システムから](creating-an-rfc-in-an-sap-system.md)を参照してください。  
+- RFC 転送先の[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]存在する必要があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]自身の SAP システムから Rfc を受信する RFC 転送先を登録します。 SAP 接続、SAP ゲートウェイ ホスト、SAP ゲートウェイ サービスと、アダプター自身を登録に使用する SAP プログラム ID などの URI でパラメーターを指定します。 SAP で RFC 転送先をセットアップする方法については、次を参照してください。 [RFC を作成する、RFC 変換先、および RFC を送信する SAP システムから](creating-an-rfc-in-an-sap-system.md)します。  
   
-- RFC は、SAP システムで定義する必要があります。 SAP システムに対する RFC を定義する関数モジュールを作成する必要があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] (デザイン時と実行時に両方)、RFC に関するメタデータを取得する SAP システムの RFC 定義を使用します。 詳細については、[SAP システムでの RFC を作成する](../../adapters-and-accelerators/adapter-sap/creating-an-rfc-in-an-sap-system.md)を参照してください。  
+- RFC は、SAP システムで定義する必要があります。 SAP システムに対する RFC を定義する関数モジュールを作成する必要があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] (デザイン時と実行時に両方)、RFC に関するメタデータを取得する SAP システムの RFC 定義を使用します。 詳細については、次を参照してください。 [SAP システムでの RFC を作成する](../../adapters-and-accelerators/adapter-sap/creating-an-rfc-in-an-sap-system.md)します。  
   
   > [!NOTE]
   >  SAP システムの RFC を定義する必要があります。ただし、RFC を実装するクライアント コードでアダプターにします。 アダプターは、RFC のメタデータを取得できるように、SAP システムで、RFC を定義する必要があります。  

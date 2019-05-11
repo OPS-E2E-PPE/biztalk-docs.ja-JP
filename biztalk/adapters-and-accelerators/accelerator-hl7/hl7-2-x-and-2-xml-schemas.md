@@ -33,15 +33,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 69dc39b3f61dbb564fc3ef128405b8721633dd2d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9af15d1abb9357bb41de4def6ec90908e6d6656f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290426"
 ---
 # <a name="hl7-2x-and-2xml-schemas"></a>HL7 2.X と 2.xml のスキーマ
-HL7 組織は、スキーマの 2 つのセットを公開: HL7 2.X スキーマ、HL7 エンコードされたメッセージで使用および HL7 2. XML スキーマ、XML でエンコードされたメッセージに使用します。  
+HL7 の組織は、スキーマの 2 つのセットを発行します。HL7 2.X スキーマ、HL7 でエンコードされたメッセージ、および XML でエンコードされたメッセージに使用される、HL7 2. XML スキーマを使用します。  
 
  Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]はネイティブに、HL7 動作 2.X スキーマ。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] セットアップに読み込み、HL7 2.X スキーマ ファイル\<*ドライブ*\>: \program files\\Microsoft BizTalk\<バージョン\>HL7\Templates\Schemas\2.X のアクセラレータです。 その結果、HL7 2.X スキーマは HL7 スキーマの選択で使用できます。 Microsoft では、HL7 スキーマの選択を実行する[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]します。  
 
@@ -59,8 +59,8 @@ HL7 組織は、スキーマの 2 つのセットを公開: HL7 2.X スキーマ
 
 |            Schema Type            |                                                                                                                                                                                                                                                                                                   説明                                                                                                                                                                                                                                                                                                    |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| HL7FF – ER7 (2.X) スキーマをエンコードします。 | BTAHL7 では、HL7 2.X スキーマの HL7 Access データベースから派生したなど。<br /><br /> -特定のバージョン、メッセージの種類またはイベントに基づいてすべてのスキーマのセット<br />-一般的なスキーマのセグメント、データ型、テーブル、ヘッダー、および受信確認 (Ack)<br /><br /> BTAHL7 では、次のスキーマ テンプレートがサポートされています。<br /><br /> -V2.1<br />-V2.2<br />-V2.3<br />-V2.3.1<br />-V2.4<br />-V2.5<br /><br /> BTAHL7 セットアップでは、V2 をインストールします。内のスキーマ x \<*ドライブ*\>\Program Files\\Microsoft BizTalk Accelerator for HL7\Templates\Schemas します。 |
-|      HL7XML – 2. XML エンコーディング      |                                                                                                                                            BTAHL7 では、次のスキーマがサポートされています。<br /><br /> -V2.3.1<br />-V2.4<br />-V2.5<br /><br /> BTAHL7 では、2.xml スキーマがインストールされません。 インストールし、BizTalk エディターを操作するように変更して、[Update2XMLSchema ツール](../../adapters-and-accelerators/accelerator-hl7/update2xmlschema-tool.md)を参照してください。                                                                                                                                            |
+| HL7FF – ER7 (2.X) スキーマをエンコードします。 | BTAHL7 では、HL7 2.X スキーマの HL7 Access データベースから派生したなど。<br /><br /> -特定のバージョン、メッセージの種類またはイベントに基づいてすべてのスキーマのセット<br />-一般的なスキーマのセグメント、データ型、テーブル、ヘッダー、および受信確認 (Ack)<br /><br /> BTAHL7 では、次のスキーマ テンプレートがサポートされています。<br /><br /> -   V2.1<br />-   V2.2<br />-V2.3<br />-V2.3.1<br />-   V2.4<br />-   V2.5<br /><br /> BTAHL7 セットアップでは、V2 をインストールします。内のスキーマ x \<*ドライブ*\>\Program Files\\Microsoft BizTalk Accelerator for HL7\Templates\Schemas します。 |
+|      HL7XML – 2. XML エンコーディング      |                                                                                                                                            BTAHL7 では、次のスキーマがサポートされています。<br /><br /> -V2.3.1<br />-   V2.4<br />-   V2.5<br /><br /> BTAHL7 では、2.xml スキーマがインストールされません。 インストールし、BizTalk エディターを操作するように変更して、次を参照してください。 [Update2XMLSchema ツール](../../adapters-and-accelerators/accelerator-hl7/update2xmlschema-tool.md)します。                                                                                                                                            |
 
 ## <a name="common-schemas"></a>一般的なスキーマ  
  BTAHL7 では、作成し、そのメッセージ型のインスタンスの本文を検証するメッセージの種類に固有の HL7 スキーマを使用します。 また、特定のスキーマに加え、一般的なスキーマを使用します。 BTAHL7 では、一般的な HL7 スキーマを使用して、HL7 メッセージのヘッダーと受信確認を検証します。 これらのファイルは、受信確認のヘッダーと ACK_24_GLO_DEF MSH_25_GLO_DEF.xsd は。  

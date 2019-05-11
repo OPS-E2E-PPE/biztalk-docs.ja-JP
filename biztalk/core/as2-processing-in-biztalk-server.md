@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 69c778df5ccafc11a5a3a8aef4326138d54c4596
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ea65fea589d0d5bdd69de1e9fcd762c27e6b28c9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358885"
 ---
 # <a name="as2-processing-in-biztalk-server"></a>BizTalk Server での AS2 処理
 このトピックでは、AS2 メッセージの受信側と送信側の処理、および取引先アグリーメントが AS2 メッセージングにどのように役立つかの概要について説明します。  
@@ -25,7 +25,7 @@ ms.locfileid: "37013083"
 ## <a name="trading-partner-agreements-for-as2-processing"></a>AS2 処理用の取引先アグリーメント  
  取引先アグリーメントは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] における AS2 のサポートで重要な役割を果たします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] における AS2 処理に関連したほとんどの構成機能および管理機能は、ビジネス プロファイル間の取引先アグリーメントを構成することによって実行されます。 アグリーメントには、両方の取引先の特定のビジネス プロファイルから、共通する双方向のメッセージ処理プロパティがまとめられます。 アグリーメントは、各ビジネス プロファイルに対して定義されたプロトコル設定に基づいて作成されます。 2 つのビジネス プロファイル間に取引先アグリーメントを実装するには、メッセージを交換する各ビジネス プロファイルのプロパティを定義します。 取引先管理 (TPM) ユーザー インターフェイスで、AS2 メッセージ受信者と AS2 メッセージ送信者として各ビジネス プロファイルのプロパティを設定します。 TPM の画面はでは、**パーティ**のノード、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、開発者でなくても AS2 処理を構成できます。  
   
- AS2 プロパティは、ビジネス プロファイルの「トランスポート プロトコル設定」の一部として、または取引先アグリーメントに AS2 設定を直接指定することによって、指定できます。 プロトコル設定の詳細については、[プロトコル設定](../core/protocol-settings.md)を参照してください。 契約の詳細については、[取引先アグリーメント](../core/trading-partner-agreement.md)を参照してください。  次の AS2 機能を構成するには、AS2 固有のプロパティを設定します。  
+ AS2 プロパティは、ビジネス プロファイルの「トランスポート プロトコル設定」の一部として、または取引先アグリーメントに AS2 設定を直接指定することによって、指定できます。 プロトコル設定の詳細については、次を参照してください。[プロトコル設定](../core/protocol-settings.md)します。 契約の詳細については、次を参照してください。[取引先アグリーメント](../core/trading-partner-agreement.md)します。  次の AS2 機能を構成するには、AS2 固有のプロパティを設定します。  
   
 - 否認不可ストレージ オプションの選択  
   
@@ -35,7 +35,7 @@ ms.locfileid: "37013083"
   
 - AS2 メッセージのヘッダーで署名、圧縮、暗号化、および MDN の各プロパティをオーバーライドすることによる着信 MDN のプロパティの設定  
   
-  詳細については、どの取引先のパートナー アグリーメント AS2 処理に役立つ、[AS2 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-as2-processing.md)を参照してください。  
+  詳細については、どの取引先のパートナー アグリーメント AS2 処理に役立つ、次を参照してください。 [AS2 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-as2-processing.md)します。  
   
 > [!NOTE]
 >  EDI 処理と異なり、AS2 処理にはグローバル プロパティはありません。  
@@ -75,13 +75,13 @@ ms.locfileid: "37013083"
   
 - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、同期モードまたは非同期モードで MDN を返します。 MDN が非同期に返される場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は別の送信ポートを経由して MDN を送信する必要があります。  
   
-- 非 EDI ファイル (XML 以外) を AS2 経由で受信し、非 EDI ペイロードの逆アセンブリを実行する必要がある場合、2 番目の受信パイプラインでループバック メカニズムを使用する必要があります。 詳細については、[AS2 経由で受信した非 EDI メッセージの受信側の処理](../core/receive-side-processing-of-an-incoming-non-edi-message-over-as2.md)を参照してください。  
+- 非 EDI ファイル (XML 以外) を AS2 経由で受信し、非 EDI ペイロードの逆アセンブリを実行する必要がある場合、2 番目の受信パイプラインでループバック メカニズムを使用する必要があります。 詳細については、次を参照してください。 [AS2 経由で受信した非 EDI メッセージの受信側の処理](../core/receive-side-processing-of-an-incoming-non-edi-message-over-as2.md)します。  
   
 - 受信場所は HTTP アダプターのみ使用できます。  
   
-- 受信側の AS2 処理の詳細については、[どのように BizTalk Server 受信 AS2 メッセージ](../core/how-biztalk-server-receives-as2-messages.md)を参照してください。  
+- 受信側の AS2 処理の詳細については、次を参照してください。[どのように BizTalk Server 受信 AS2 メッセージ](../core/how-biztalk-server-receives-as2-messages.md)します。  
   
-- 受信パイプラインで AS2 逆アセンブラーによって実行される特定の処理の詳細については、[受信 AS2 メッセージの処理](../core/processing-an-incoming-as2-message.md)を参照してください。  
+- 受信パイプラインで AS2 逆アセンブラーによって実行される特定の処理の詳細については、次を参照してください。[受信 AS2 メッセージの処理](../core/processing-an-incoming-as2-message.md)します。  
   
 ## <a name="as2-send-side-processing"></a>送信側の AS2 処理  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で送信 AS2 メッセージを生成および送信すると、AS2 送信パイプラインでメッセージが処理されます。 AS2 (AS2EdiSend) 経由で EDI メッセージを送信するパイプラインがあり、AS2 処理と EDI 処理の両方が実行されます。 もう 1 つのパイプライン (AS2Send) は、AS2 経由で送信された非 EDI メッセージの AS2 処理のみを行います。  
@@ -107,7 +107,7 @@ ms.locfileid: "37013083"
 - メッセージへの署名  
   
   > [!NOTE]
-  >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、既定の署名証明書をオーバーライドし、アグリーメントで合意した証明書を代わりに使用することができます。 既定の送信メッセージの署名証明書をオーバーライドする方法の詳細については、[AS2 プロパティを設定する](../core/configuring-as2-properties.md)を参照してください。  
+  >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、既定の署名証明書をオーバーライドし、アグリーメントで合意した証明書を代わりに使用することができます。 既定の送信メッセージの署名証明書をオーバーライドする方法の詳細については、次を参照してください。 [AS2 プロパティを設定する](../core/configuring-as2-properties.md)します。  
   
 - メッセージの圧縮  
   
@@ -123,9 +123,9 @@ ms.locfileid: "37013083"
   
 - 送信ポートは HTTP アダプターのみ使用できます。  
   
-- 送信側の AS2 処理の詳細については、[どのように BizTalk Server 送信 AS2 メッセージ](../core/how-biztalk-server-sends-as2-messages.md)を参照してください。  
+- 送信側の AS2 処理の詳細については、次を参照してください。[どのように BizTalk Server 送信 AS2 メッセージ](../core/how-biztalk-server-sends-as2-messages.md)します。  
   
-- 送信パイプラインで実行される特定の処理の詳細については、[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)を参照してください。  
+- 送信パイプラインで実行される特定の処理の詳細については、次を参照してください。[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)します。  
   
 ## <a name="see-also"></a>参照  
  [AS2 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-as2-processing.md)   

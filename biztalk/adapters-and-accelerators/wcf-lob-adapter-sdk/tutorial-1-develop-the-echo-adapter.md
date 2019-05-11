@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル 1: エコー アダプターの開発 |Microsoft Docs'
+title: チュートリアル 1:エコー アダプターの開発 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3b1b1a4d0e0293ba26792508ea367c5e91cccec5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6ff9d3aa911785640cc0ea5f4d6e4deedc10d81c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977611"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363069"
 ---
-# <a name="tutorial-1-develop-the-echo-adapter"></a>チュートリアル 1: エコー アダプターを開発します。
+# <a name="tutorial-1-develop-the-echo-adapter"></a>チュートリアル 1:エコー アダプターを開発します。
 このチュートリアルでアダプターの機能を使用して、開発は、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]します。 アダプターは、WCF LOB Adapter SDK などの主な機能の多くを架空の基幹業務システムの操作をシミュレートします。  
 
 - 同期受信  
@@ -41,7 +41,7 @@ ms.locfileid: "36977611"
 
 - 同期受信は、データまたはアダプターを経由して、ターゲット システムからのイベントがかかるクライアントが受信を待機します。 受信すると、同期の実装をサポートするために、`Microsoft.ServiceModel.Channels.Common.IInboundHandler`インターフェイス。  
 
-  メッセージ交換パターンの詳細については、[アーキテクチャの概要](architecture-overview-of-the-wcf-lob-adapter-sdk.md)を参照してください。  
+  メッセージ交換パターンの詳細については、次を参照してください。[アーキテクチャの概要](architecture-overview-of-the-wcf-lob-adapter-sdk.md)します。  
 
 > [!NOTE]
 >  [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] UI 内のデータ フローとして、メッセージ交換パターンを示しています。  
@@ -112,7 +112,7 @@ EchoMainCategory
 
 - {Projectname}ConnectionUri.cs  
 
-  これを行う方法の詳細については、[手順 2: アダプターと接続のプロパティを分類](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)を参照してください。  
+  これを行う方法の詳細については、次を参照してください。[手順 2。アダプターおよび接続のプロパティを分類](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)します。  
 
 ## <a name="see-also"></a>参照  
  [WCF LOB Adapter SDK についてのチュートリアル](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorials-to-learn-the-wcf-lob-adapter-sdk.md)

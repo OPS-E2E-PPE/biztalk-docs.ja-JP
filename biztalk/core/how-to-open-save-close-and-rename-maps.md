@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a95ba8e22baa10a0b47721b8a8b3eb3554e2b8a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a5ef0bcaad7dc3cd4bd526657eb86194e2d986e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968763"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335817"
 ---
 # <a name="how-to-open-save-close-and-rename-maps"></a>マップを開く、保存、終了する方法と、マップの名前を変更する方法
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のマップは、.btm という拡張子付きのファイルとして、ファイル システム内に格納されます。 ただし、マップを開く、保存する、閉じるなどの操作は、BizTalk プロジェクト内から行うのが一般的です。  
@@ -50,7 +50,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 4.  **ファイル名**ボックスで、ファイルの名前を入力し、クリックして**保存**します。  
   
     > [!IMPORTANT]
-    >  マップに次の名前を使用しないでください"XmlContent"、"SourceSchemas"、"TargetSchemas"、"XsltArgumentListContent"または。そのためのコンパイルで問題が発生、対応する .NET アセンブリで生成された c# コード。 問題とその解決方法については、[マップのトラブルシューティング](../core/troubleshooting-maps.md)を参照してください。  
+    >  マップに次の名前は使用しません。"XmlContent"、"SourceSchemas"、"TargetSchemas"、"XsltArgumentListContent"またはそのためのコンパイルで問題が発生、生成されたC#対応する .NET アセンブリ内のコード。 問題とその解決方法については、次を参照してください。[マップのトラブルシューティング](../core/troubleshooting-maps.md)します。  
   
 ### <a name="to-rename-a-map"></a>マップの名前を変更するには  
   

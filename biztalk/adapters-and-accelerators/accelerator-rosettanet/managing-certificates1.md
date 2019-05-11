@@ -15,23 +15,23 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d9d326155ea788a77fe86c0c4eb126476d21ece
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 07ec8de4a08145bfddfc26c6b4900ac5ef62ffb2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283255"
 ---
 # <a name="managing-certificates"></a>証明書の管理
-RosettaNet で通信をセキュリティで保護するには、証明書を使用する必要があります。 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]送信メッセージの暗号化、送信メッセージに署名、受信メッセージを復号化および受信メッセージの署名を検証する証明書を使用します。  
+RosettaNet で通信をセキュリティで保護するには、証明書の使用が必要です。 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]送信メッセージの暗号化、送信メッセージに署名、受信メッセージを復号化および受信メッセージの署名を検証する証明書を使用します。  
   
  証明書を使用するには、次の手順の一部またはすべてを実行する必要があります。  
   
--   証明書をサーバーの証明書ストアにインポートします。  
+-   サーバーの証明書ストアに証明書のインポート  
   
--   メッセージに証明書の使用法を構成します。  
+-   メッセージに証明書の使用を構成します。  
   
--   証明書をパートナーにエクスポートします。  
+-   パートナーに証明書をエクスポートします。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

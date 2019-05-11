@@ -1,5 +1,5 @@
 ---
-title: '手順 2: Contoso 3 a 2 Price and Availability クエリ応答のシナリオが BizTalk エクスプ ローラーのポートの作成 |Microsoft ドキュメント'
+title: 手順 2:Contoso 3 a 2 Price and Availability クエリ応答のシナリオが BizTalk エクスプ ローラーのポートの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 64101a31b1d1ea9c7af00471c5d764a1d8cfe598
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 44291057590bbde758de91a4416499cbfe06d888
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210146"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281205"
 ---
-# <a name="step-2-creating-ports-for-the-contoso-3a2-price-and-availability-queryresponse-scenario"></a>手順 2: Contoso 3 a 2 Price and Availability クエリ/応答シナリオ用のポートの作成
+# <a name="step-2-creating-ports-for-the-contoso-3a2-price-and-availability-queryresponse-scenario"></a>手順 2:Contoso 3 a 2 Price and Availability クエリ/応答シナリオ用のポートの作成
 この手順では、BizTalk Server によって提供される SQL アダプターを使用して送信ポートを作成します。 この SQL ポートを使用して、Contoso の ERP システムとの間で 3A2 Price and Availability 応答を送受信します。  
   
 ### <a name="to-configure-a-send-port-using-the-sql-adapter"></a>SQL アダプターを使用して送信ポートを構成するには  
@@ -46,7 +46,7 @@ ms.locfileid: "22210146"
   
 10. **サーバー上のデータベースを選択**ボックスで、選択**Contoso**、順にクリック**OK**です。  
   
-11. SQL トランスポートのプロパティ ダイアログ ボックスで、**ドキュメント Target Namespace**ボックスに、入力**http://Contoso.com/Price**です。  
+11. SQL トランスポートのプロパティ ダイアログ ボックスでの**ドキュメント Target Namespace**ボックスに「  **http://Contoso.com/Price**します。  
   
 12. **応答ドキュメントのルート要素名**ボックスに、入力 **[rootpriceresponse]**、順にクリック**OK**です。  
   

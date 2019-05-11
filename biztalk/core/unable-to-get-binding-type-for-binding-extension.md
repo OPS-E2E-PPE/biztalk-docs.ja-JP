@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fdf0e0fd1ebf88c9231d70e9102d76fa67157cb9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 15a55bc8f06465daec562624866ed41a43059a05
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006235"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292789"
 ---
 # <a name="unable-to-get-binding-type-for-binding-extension"></a>バインド拡張機能のバインドの種類を取得できません
 ## <a name="details"></a>詳細  
@@ -30,10 +30,10 @@ ms.locfileid: "37006235"
 |  イベント ソース   |                                                                                                                0                                                                                                                 |
 |    コンポーネント    |                                                                                                                0                                                                                                                 |
 |  シンボル名  |                                                                                                                0                                                                                                                 |
-|  メッセージ テキスト   | バインド拡張機能のバインドの種類を取得できません。"{0}"。 アプリケーションが開いている状態のときに machine.config が更新された場合は、アプリケーションを再起動して変更を反映してください。 machine.config にこのバインド拡張機能が登録されているか確認してください。 |
+|  メッセージ テキスト   | バインド拡張機能のバインドの種類を取得できません。"{0}"。 Machine.config が更新されたは、アプリケーションが開いているときに場合、は、変更内容を取得するアプリケーションを再起動します。 バインド拡張機能が machine.config に登録されていることを確認します。 |
 
 ## <a name="explanation"></a>説明  
- WCF-Custom または WCF-CustomIsolated トランスポートのカスタム バインディング拡張機能が適切に構成されませんでした。  
+ Wcf-custom または Wcf-customisolated トランスポートのカスタム バインド拡張機能が正しく構成されていません。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーは解決するのには、次の 1 つ以上の操作を行います。  
@@ -42,11 +42,11 @@ ms.locfileid: "37006235"
 
 - Windows エクスプ ローラーに移動 **%WinDir%\Assembly**、カスタム バインド拡張機能を実装するアセンブリが正しくインストールされているかどうかを確認します。  
 
-- WCF-Custom アダプターの場合、BizTalk 管理コンソールで、WCF トランスポートを実行するホスト インスタンスを再起動します。  
+- WCF カスタム アダプターの場合、BizTalk 管理コンソールで、WCF トランスポートを実行するホスト インスタンスを再起動します。  
 
-- WCF-CustomIsolated アダプターの場合、IIS 管理コンソールで、WCF トランスポートをホストするアプリケーション プールを再起動します。  
+- Wcf-customisolated アダプターの場合、IIS 管理コンソールで、WCF トランスポートをホストしているアプリケーション プールを再起動します。  
 
-- BizTalk 管理コンソールを開いていた場合は、閉じてから開きます  
+- 開かれた場合、BizTalk 管理コンソールの開閉  
 
   詳細については、次のリソースを参照してください。  
 

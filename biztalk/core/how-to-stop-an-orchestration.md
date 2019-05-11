@@ -15,18 +15,18 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c830b2098a3a6f343999baac95241033892bfa75
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6da194b0ae99a8dbc986eab34bbe3b7ecae1a443
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017795"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333895"
 ---
 # <a name="how-to-stop-an-orchestration"></a>オーケストレーションを停止する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、オーケストレーションを停止する方法について説明します。 オーケストレーションを停止すると、到着したアクティベーション メッセージがすべて非アクティブ化されて中断されます。  
+このトピックでは、BizTalk Server 管理コンソールを使用してオーケストレーションを停止する方法について説明します。 オーケストレーションを停止すると、非アクティブ化し、到着したアクティベーション メッセージのすべてを中断します。  
   
 > [!NOTE]
->  アプリケーション開発者が開発プロセス中にオーケストレーションを停止するには、このトピックの手順を実行します。  
+>  アプリケーション開発者は、このトピックの手順を使用して、開発プロセス中にオーケストレーションを停止します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server Operators グループまたは BizTalk Server 管理者グループのメンバー アカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

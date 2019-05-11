@@ -1,5 +1,5 @@
 ---
-title: '付録 a: サンプル ファイル |Microsoft Docs'
+title: '付録 A: サンプルのファイル |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b4aeb71cdd79df800e5d14fd35ebe106f3af0c48
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a3e01374f69ab8fa501186a87e8ce64395d1389b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995299"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359540"
 ---
-# <a name="appendix-a-sample-files"></a>付録 a: サンプル ファイル
+# <a name="appendix-a-sample-files"></a>付録 A: サンプル ファイル
 Microsoft BizTalk Adapter for JD Edwards EnterpriseOne では、JD Edwards EnterpriseOne 内でビジネス関数を実行するための jdeRequest と jdeResponse XML 構造をサポートしています。  
   
  JD Edwards EnterpriseOne XML を使用して次の操作を行うことができます。  

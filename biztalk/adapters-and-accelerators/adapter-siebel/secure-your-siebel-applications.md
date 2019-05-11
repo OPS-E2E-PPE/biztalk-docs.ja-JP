@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ad63e44e4d2dde5ffee743e0758a37e48a3d4d4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c3902f859b315ebc65c8cbf05799d03d0167217
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012059"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370925"
 ---
 # <a name="secure-your-siebel-applications"></a>Siebel アプリケーションのセキュリティ保護します。
 Siebel システムには、多くの場合、顧客アカウントの詳細などの機密性の高いビジネス情報が含まれています。 使用するアプリケーション、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]にアクセスして、この情報を変更するいずれかまたは分散ネットワーク経由でローカルにキーが誤って公開、不正なアクターによってアクセス中にデータをセキュリティで保護する取り組みが行われた場合を除き、転送します。 データ保護とセキュリティは、通常と考えられるので、次の用語。  

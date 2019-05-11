@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル 3: SAP を移行する IDOC の BizTalk プロジェクトの送信 |Microsoft Docs'
+title: チュートリアル 3:BizTalk プロジェクトの IDOC を送信、SAP の移行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9aaf4fae9afaad2900f0354aec9f1eeb3f3de0ee
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 524e6fd3bbd793f318013c55da0a8987244aa682
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372288"
 ---
-# <a name="tutorial-3-migrating-an-sap-send-idoc-biztalk-project"></a>チュートリアル 3: を SAP IDOC 送信 BizTalk プロジェクトを移行します。
+# <a name="tutorial-3-migrating-an-sap-send-idoc-biztalk-project"></a>チュートリアル 3:SAP IDOC 送信 BizTalk プロジェクトを移行します。
 WCF ベースの Microsoft BizTalk Server に同梱されている SAP アダプターの以前のバージョンとは異なる[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]など、多くの点で。  
   
 - BizTalk プロジェクトの作成、デザイン時エクスペリエンス。  
@@ -47,7 +47,7 @@ WCF ベースの Microsoft BizTalk Server に同梱されている SAP アダプ
 >  説明を簡潔にするため、このチュートリアルでは SAP アダプターの以前のバージョンを vPrev SAP アダプターとして指す場合は。 同様に、vPrev SAP アダプターを使用する BizTalk プロジェクトは vPrev BizTalk プロジェクトに参照されます。  
   
 ## <a name="sample-used-for-the-tutorial"></a>このチュートリアルで使用されるサンプル  
- このチュートリアルは、SAP システムに IDOC を送信する vPrev BizTalk プロジェクトを移行する方法を示すサンプル (SendIDOC_Migration) に基づいています。 サンプルが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
+ このチュートリアルは、SAP システムに IDOC を送信する vPrev BizTalk プロジェクトを移行する方法を示すサンプル (SendIDOC_Migration) に基づいています。 サンプルが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
   
@@ -77,11 +77,11 @@ WCF ベースの Microsoft BizTalk Server に同梱されている SAP アダプ
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: IDOC を送信するための vPrev BizTalk プロジェクトを構築して展開する](../../adapters-and-accelerators/adapter-sap/step-1-build-and-deploy-the-vprev-biztalk-project-for-sending-an-idoc.md)  
+-   [ステップ 1: IDOC を送信するための vPrev BizTalk プロジェクトを構築して展開する](../../adapters-and-accelerators/adapter-sap/step-1-build-and-deploy-the-vprev-biztalk-project-for-sending-an-idoc.md)  
   
--   [手順 2: WCF-Custom の一方向の送信ポートを構成する](../../adapters-and-accelerators/adapter-sap/step-2-configure-a-wcf-custom-one-way-send-port.md)  
+-   [手順 2:WCF-Custom の一方向の送信ポートを構成する](../../adapters-and-accelerators/adapter-sap/step-2-configure-a-wcf-custom-one-way-send-port.md)  
   
--   [手順 3: 移行されたアプリケーションをテストする](../../adapters-and-accelerators/adapter-sap/step-3-test-the-migrated-application2.md)  
+-   [ステップ 3:移行されたアプリケーションをテストする](../../adapters-and-accelerators/adapter-sap/step-3-test-the-migrated-application2.md)  
   
 ## <a name="see-also"></a>参照  
  [SAP アダプター チュートリアル](../../adapters-and-accelerators/adapter-sap/sap-adapter-tutorials.md)

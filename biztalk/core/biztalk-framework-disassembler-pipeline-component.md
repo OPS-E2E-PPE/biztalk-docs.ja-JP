@@ -1,5 +1,5 @@
 ---
-title: BizTalk Framework 逆アセンブラー パイプライン コンポーネント |Microsoft ドキュメント
+title: BizTalk Framework 逆アセンブラー パイプライン コンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e1ab54ddb9ef0b5fa389e6716fc4426978dcbd7a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 36269df0c1b93ca68ffeb41d78742e926af14c92
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230586"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358052"
 ---
 # <a name="biztalk-framework-disassembler-pipeline-component"></a>BizTalk Framework 逆アセンブラー パイプライン コンポーネント
-BizTalk Framework 逆アセンブラー パイプライン コンポーネントでは、XML データを解析して、そのデータに BizTalk Framework ベースのメッセージ ペイロードが含まれるかどうかが確認されます。 メッセージ コンテキストはこのパイプライン コンポーネントによって保存され、必要な BizTalk Framework プロパティを生成した上で、新しいメッセージ コンテキストが作成されます。 このプロパティは、処理の対象となるメッセージを BizTalk Framework の受信ハンドラーにルーティングする際に使用されます。  
+BizTalk Framework 逆アセンブラー パイプライン コンポーネントは、XML データを解析し、BizTalk Framework ベースのメッセージング ペイロードが含まれているかどうかを決定します。 パイプライン コンポーネントが、メッセージ コンテキストを保存しを生成する必要がある BizTalk Framework プロパティを使用して、新しいメッセージ コンテキストを作成します。 このプロパティは、BizTalk Framework の受信ハンドラーに処理するメッセージを受信できるようにメッセージをルーティングに使用されます。  
   
- BizTalk Framework 逆アセンブラー パイプライン コンポーネントは、送信元から送られてきた BizTalk Framework エンベロープ内の deliverReceiptRequest ヘッダーを見て、必要に応じて、生成されたメッセージの受信確認を生成します。 これは、BizTalk Framework アセンブラー パイプライン コンポーネントの配信確認メッセージ要求の生成プロパティによって制御されます。 BizTalk フレームワークの詳細については、次を参照してください。 [BizTalk Framework アセンブラー パイプライン コンポーネント](../core/biztalk-framework-assembler-pipeline-component.md)です。  
+ BizTalk Framework 逆アセンブラー パイプライン コンポーネントは、1 つに、BizTalk Framework エンベロープ内の deliverReceiptRequest ヘッダーを使用して、送信側が要求された場合に生成されたメッセージの受信確認を生成します。 これは、BizTalk Framework アセンブラー パイプライン コンポーネントで生成配信確認メッセージのプロパティによって制御されます。 BizTalk フレームワークの詳細については、次を参照してください。 [BizTalk Framework アセンブラー パイプライン コンポーネント](../core/biztalk-framework-assembler-pipeline-component.md)します。  
   
- BizTalk Framework 逆アセンブラー パイプライン コンポーネントを構成して、オーケストレーションの作成については、次を参照してください。 [BizTalk Framework 逆アセンブラー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-biztalk-framework-disassembler-pipeline-component.md)です。  
+ BizTalk Framework 逆アセンブラー パイプライン コンポーネントの構成およびオーケストレーションの作成については、次を参照してください。 [BizTalk Framework 逆アセンブラー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-biztalk-framework-disassembler-pipeline-component.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Framework 逆アセンブラー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-biztalk-framework-disassembler-pipeline-component.md)   

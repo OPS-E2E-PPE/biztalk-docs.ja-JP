@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a62fe56bed210669625c9fff4c76315d1eb4546
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 32fb8d27057f1fca3b75f20aab715649fb95b8cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022872"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65329076"
 ---
 # <a name="manage-biztalk-server-sample"></a>管理 (BizTalk Server サンプル)
 シングル サインオン (SSO) 管理のサンプルは、以下の種類の管理操作を実行するために、コマンド ライン ユーティリティ ssomanage.exe で使用できる .xml ファイルを構成する方法を示します。  
@@ -33,9 +33,9 @@ ms.locfileid: "37022872"
   
 - ユーザー マッピングの作成  
   
-  エンタープライズ シングル サインオンに関する概念については、[を使用して SSO](../core/using-sso.md)を参照してください。  
+  エンタープライズ シングル サインオンに関する概念については、次を参照してください。[を使用して SSO](../core/using-sso.md)します。  
   
-  プログラムでユーザーのマッピング、関連アプリケーションの作成など、SSO を構成する方法を示すサンプルについては、[HTTPSSO (BizTalk Server サンプル)](../core/httpsso-biztalk-server-sample.md)を参照してください。  
+  プログラムでユーザーのマッピング、関連アプリケーションの作成など、SSO を構成する方法を示すサンプルについては、次を参照してください。 [HTTPSSO (BizTalk Server サンプル)](../core/httpsso-biztalk-server-sample.md)します。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルには、上記の種類の操作のそれぞれに対する XSD とサンプル .xml ファイルのペアが含まれています。 サンプル .xml ファイルの値は有効ではありません。 各自の要件に合わせて値を変更する必要があります。  

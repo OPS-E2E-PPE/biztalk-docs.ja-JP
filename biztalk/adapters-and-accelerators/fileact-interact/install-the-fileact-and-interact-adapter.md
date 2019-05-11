@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5ee288b9772b7585fe972a4335e3cf8c5595024
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 73da5474278ba9bde92aaaf11e90a9f506014529
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367024"
 ---
 # <a name="install-the-fileact-and-interact-adapter"></a>インストール、FileAct および InterAct アダプター
 このセクションでは説明をインストールする[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]– for SWIFT します。 アダプターをインストールする前に、前提条件のソフトウェアをインストールする必要があります。  
@@ -26,7 +26,7 @@ ms.locfileid: "36989387"
 
 * ローカルの administrators グループのメンバーと、BizTalk Server 管理者グループのメンバーであるアカウントでサインインします。
   
-## <a name="step-1-install-biztalk-server-and-configure-bam"></a>手順 1: BizTalk Server をインストールし、BAM の構成
+## <a name="step-1-install-biztalk-server-and-configure-bam"></a>手順 1:BizTalk Server をインストールして BAM の構成
 
 1. インストール[BizTalk Server 2016](../../install-and-config-guides/biztalk-server-2016-what-s-new-and-installation.md)、または[BizTalk Server 2013 R2/2013](../../install-and-config-guides/biztalk-server-2013-and-2013-r2-what-s-new-install-and-upgrade.md)、およびビジネス アクティビティ監視 (BAM) をインストールします。
 
@@ -34,17 +34,17 @@ ms.locfileid: "36989387"
   
 3. アクセスするための十分なセキュリティ特権があるかどうかを確認、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 [BizTalk Server のセキュリティ権限を最小](http://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx)は優れたリソースです。
   
-## <a name="step-2-install-biztalk-accelerator-for-swift-a4swift"></a>手順 2: インストール BizTalk Accelerator for SWIFT (A4SWIFT)  
+## <a name="step-2-install-biztalk-accelerator-for-swift-a4swift"></a>手順 2:SWIFT (A4SWIFT) 用の BizTalk アクセラレータをインストールします。  
 
 インストールし、構成、 [BizTalk Accelerator for SWIFT](../../adapters-and-accelerators/accelerator-swift/install-configure-and-deploy-the-biztalk-accelerator-for-swift.md)します。
 
   
-## <a name="step-3-install-swiftalliance-gateway-sag"></a>手順 3: SWIFTAlliance ゲートウェイ (SAG) をインストールします。  
+## <a name="step-3-install-swiftalliance-gateway-sag"></a>手順 3:SWIFTAlliance ゲートウェイ (SAG) をインストールします。  
  FileAct および InterAct アダプターをインストールする前に、SAG メッセージのパートナー、終点、およびルーティングのルールを作成し、FileAct および InterAct アダプターをインストールするコンピューターで SAG 接続をテストします。
 
 参照してください[ https://www.swift.com/our-solutions/interfaces-and-integration/alliance-gateway ](https://www.swift.com/our-solutions/interfaces-and-integration/alliance-gateway) SWIFTAlliance ゲートウェイの詳細。  
 
-## <a name="step-4-install-the-biztalk-fileact-and-interact-adapters"></a>手順 4: BizTalk FileAct および InterAct アダプターをインストールします。  
+## <a name="step-4-install-the-biztalk-fileact-and-interact-adapters"></a>手順 4:BizTalk FileAct および InterAct アダプターをインストールします。  
   
 1. 実行、 **Setup.exe**管理者は、インストールを開始します。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a154255cb64fcebafa2ef8164714e46bf5673ba
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a9a87bb700ecddc5ae0bf9a4e6319d7b84fa55ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007204"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390742"
 ---
 # <a name="configuring-signing-compression-and-encryption-in-as2-transport"></a>AS2 トランスポートでの署名、圧縮、および暗号化の構成
 デジタル署名、署名の確認、暗号化、および解読は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソール内から構成できます。 この構成では、AS2 パイプラインおよび BizTalk パーティに適切なプロパティを設定する必要があります。  
@@ -51,7 +51,7 @@ ms.locfileid: "37007204"
   
 - 送信 AS2 メッセージの BizTalk グループのプロパティで指定されている別の署名証明書を指定する [**グループ署名証明書を上書き**で、**署名証明書**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ**] ダイアログ ボックス、および署名証明書を指定します。 このプロパティを設定するで提供された証明書を使用して、アグリーメントに解決される AS2 メッセージが署名される場合、**署名証明書**ページし、証明書ではなく、BizTalk グループのプロパティの一部として提供します。  
   
-  パーティのプロパティの設定に関する詳細については、[AS2 プロパティを設定する](../core/configuring-as2-properties.md)を参照してください。  
+  パーティのプロパティの設定に関する詳細については、次を参照してください。 [AS2 プロパティを設定する](../core/configuring-as2-properties.md)します。  
   
 ## <a name="see-also"></a>参照  
  [AS2 セキュリティ](../core/as2-security.md)   
