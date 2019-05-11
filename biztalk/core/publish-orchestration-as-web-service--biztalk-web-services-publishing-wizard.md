@@ -20,12 +20,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4c4d9cd821178251ac51f914fdf2d59abc6c048
-ms.sourcegitcommit: 9b93ee2a019bef8d482626cf5525a6b95509b135
+ms.openlocfilehash: 204c574494c2dfb82a8722675a6f64fb694d5ae4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "42709890"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398418"
 ---
 # <a name="how-to-use-the-biztalk-web-services-publishing-wizard-to-publish-an-orchestration-as-a-web-service"></a>BizTalk Web サービス公開ウィザードを使用して、オーケストレーションを Web サービスとして公開する方法
 BizTalk Web サービス公開ウィザードを使用して、オーケストレーションを Web サービスとして公開することができます。  
@@ -34,7 +34,7 @@ BizTalk Web サービス公開ウィザードを使用して、オーケスト�
 >  BizTalk Web サービス公開ウィザードを実行する前に、BizTalk プロジェクトをビルドする必要があります。  
   
 > [!NOTE]
->  コマンド ライン ツール BTSWebSvcPub.exe を使用して、オーケストレーションを Web サービスとして公開できます。 詳細については、[BTSWebSvcPub コマンド ライン リファレンス](../core/btswebsvcpub-command-line-reference.md)を参照してください。  
+>  コマンド ライン ツール BTSWebSvcPub.exe を使用して、オーケストレーションを Web サービスとして公開できます。 詳細については、次を参照してください。 [BTSWebSvcPub コマンド ライン リファレンス](../core/btswebsvcpub-command-line-reference.md)します。  
   
 ### <a name="to-publish-an-orchestration-as-a-web-service"></a>オーケストレーションを Web サービスとして公開するには  
   

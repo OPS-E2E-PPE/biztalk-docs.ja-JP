@@ -1,5 +1,5 @@
 ---
-title: 複数の受信、MSMQ アダプタを使用して場所を管理する方法 |Microsoft ドキュメント
+title: 複数の MSMQ アダプターを使用して場所の受信を管理する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,21 +20,21 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 72438551d2ecab09b918808d43e7d7de6d600677
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b46ab60e3e5073c7c487ffb530dbc0407b0444f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22253810"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384707"
 ---
-# <a name="how-to-manage-multiple-receive-locations-using-the-msmq-adapter"></a>MSMQ アダプタを使用して複数の受信場所を管理する方法
-MSMQ アダプタは、パフォーマンスを強化するためにマルチスレッド化されています。 多くの受信場所があり、すべての受信場所に十分な数のスレッドを確保できない場合があります。 この場合、一部の受信場所でメッセージを取得できなくなります。 この問題を解決するための 3 つの方法を次に示します。  
+# <a name="how-to-manage-multiple-receive-locations-using-the-msmq-adapter"></a>複数の MSMQ アダプターを使用して場所の受信を管理する方法
+パフォーマンスを向上させるのには、MSMQ アダプターがマルチ スレッドです。 多くの受信場所があれば、ある可能性がありますいないのに十分なスレッドすべての受信場所の使用可能です。 これは、いくつかの受信場所でメッセージを取得できないようにします。 この問題を解決するために 3 つの方法はあります。  
   
--   コンピュータに BizTalk ホストを追加し、ホスト間で受信場所を分担します。 ホストを追加すると、より多くのスレッドを受信場所に確保できるようになります。  
+-   お使いのコンピューターに BizTalk ホストを追加し、ホスト間で受信場所を分割します。 受信場所の使用可能な多くのスレッドは、ホストを追加します。  
   
--   設定、**シリアル処理**プロパティを`True`受信場所ごとにします。 このプロパティを `True` に設定すると、各受信場所に 1 つずつスレッドが割り当てられます。 これにより、プール内の使用可能なスレッドが増加します。 ただし、この方法ではパフォーマンスが低下する場合もあります。  
+-   設定、**シリアル処理**プロパティを`True`各受信場所。 プロパティを設定する`True`受信場所の 1 つのスレッドのそれぞれに割り当てられます。 これにより、プールで使用可能な多くのスレッドが残ります。 ただし、パフォーマンスの低下がありますも。  
   
--   MSMQ アダプターの受信ハンドラーのホストに利用できるスレッドの数を増やすにレジストリを変更します。 詳細については、次を参照してください。、**ホスト用 CLR Hosting スレッド値を変更**のセクション[構成パラメーターに影響を与えるアダプター パフォーマンス](../core/configuration-parameters-that-affect-adapter-performance.md)です。  
+-   MSMQ アダプターの受信ハンドラーのホストに利用できるスレッドの数を増やすにレジストリを変更します。 詳細については、次を参照してください。、**ホスト用 CLR Hosting スレッド値を変更**の[構成パラメーターを アダプターのパフォーマンスの影響を与える](../core/configuration-parameters-that-affect-adapter-performance.md)します。  
   
 ## <a name="see-also"></a>参照  
  [MSMQ アダプターの構成](../core/configuring-the-msmq-adapter.md)

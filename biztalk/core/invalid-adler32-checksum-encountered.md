@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: acaa60e9d6f1bda4161832cb5ddb34c4e2e9ae93
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c3f6f3cbc822aa6e71a5789914ccdbcc5731db37
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987267"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381438"
 ---
 # <a name="invalid-adler32-checksum-encountered"></a>無効な Adler32 チェックサムが検出されました
 ## <a name="details"></a>詳細  

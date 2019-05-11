@@ -18,17 +18,17 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6c2b616952aa4f24e40ddd56e035a6de4a77c58
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ac058035c088e0be28f742109abfd8dae6e81552
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007179"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343342"
 ---
 # <a name="how-to-add-a-send-port-to-a-send-port-group"></a>送信ポートを送信ポート グループに追加する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、1 つまたは複数の送信ポートを送信ポート グループに追加する方法について説明します。 静的な一方向の送信ポートは、送信ポート グループにのみ追加できます。  
   
- 別のアプリケーションに存在する送信ポートを追加することはできません。 別のアプリケーションの送信ポートを追加する場合は、送信ポート グループのあるアプリケーションから目的の送信ポートがあるアプリケーションへの参照を追加する必要があります。 手順については、[別のアプリケーションへの参照を追加する方法](../core/how-to-add-a-reference-to-another-application.md)を参照してください。  
+ 別のアプリケーションに存在する送信ポートを追加することはできません。 別のアプリケーションの送信ポートを追加する場合は、送信ポート グループのあるアプリケーションから目的の送信ポートがあるアプリケーションへの参照を追加する必要があります。 手順については、次を参照してください。[別のアプリケーションへの参照を追加する方法](../core/how-to-add-a-reference-to-another-application.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

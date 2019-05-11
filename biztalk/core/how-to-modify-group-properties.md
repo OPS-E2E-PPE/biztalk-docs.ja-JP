@@ -20,15 +20,15 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b7c13fc05cba9add1fe0a5b6abc28b695e9772da
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4e654678caef42214ff4cb2df319830f9e96c073
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005123"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384595"
 ---
 # <a name="how-to-modify-group-properties"></a>グループのプロパティを変更する方法
-ここで示す手順を使用すると、BizTalk Server グループのグローバル プロパティを構成して、署名証明書の選択、キャッシュ更新間隔の変更、および BizTalk Server でサイズの大きいメッセージをどのように処理するかという指定を行えます。 BizTalk Server グループ プロパティの詳細については、[BizTalk グループ](../core/biztalk-groups.md)を参照してください。  
+ここで示す手順を使用すると、BizTalk Server グループのグローバル プロパティを構成して、署名証明書の選択、キャッシュ更新間隔の変更、および BizTalk Server でサイズの大きいメッセージをどのように処理するかという指定を行えます。 BizTalk Server グループ プロパティの詳細については、次を参照してください。 [BizTalk グループ](../core/biztalk-groups.md)します。  
 
 ## <a name="prerequisites"></a>前提条件  
  ここで示す手順を実行するには、BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。  

@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30c343d214a97895e90bae2bc3a041180c0cc8e3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f1e3873bd70055d59cf4a216b084ea84594980f7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987011"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377583"
 ---
 # <a name="frr-processing"></a>FRR 処理
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] FIN 応答の調整 (FRR) 機能から元のメッセージを FIN メッセージ SWIFT Alliance アクセス (SAA) からを相関付ける[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]SAA メッセージに応答します。 たびに[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]メッセージを送信元、FRR キャッシュ SWIFT およびにバインドされているすべてのメッセージのコピーが、処理できませんでしたが。 SAA にによって返される応答メッセージのメッセージ ボックス データベースを監視します[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]とキャッシュされたメッセージのコピーに対応するすべての ACK/NAK メッセージを取得します。  

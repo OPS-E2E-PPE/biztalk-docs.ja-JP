@@ -12,23 +12,23 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3643dab17f8d1592f1e5fddce30aa12e537c817
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3d25ce00dfa48e84f6abc93de31121bdb655f2eb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387040"
 ---
-# <a name="how-to-capture-a-memory-dump-of-a-biztalk-process"></a>BizTalk プロセスのメモリ ダンプを取得する方法
-状況によっては、BizTalk Server で実行中のプロセスのメモリ ダンプを取得し、そのプロセスの詳細な分析を実行する必要が生じる場合があります。 メモリ ダンプの分析が必要な状況として、以下のような場合が挙げられます。  
+# <a name="how-to-capture-a-memory-dump-of-a-biztalk-process"></a>BizTalk プロセスのメモリ ダンプをキャプチャする方法
+特定の状況で詳細を実行する BizTalk Server で実行されているプロセスのメモリ ダンプをキャプチャするために必要な場合があります、プロセスの分析。 メモリ ダンプの分析が必要な状況を以下に示します。  
   
-- プロセスが応答しない場合  
+- プロセスが応答しない場合です。  
   
-- プロセスがクラッシュしている場合  
+- プロセスがクラッシュします。  
   
-- プロセスでメモリ リークが発生している場合  
+- ときに、プロセスには、メモリ リークが発生します。  
   
-  ここでは、適切な種類のメモリ ダンプを取得する手順について説明します。  
+  このセクションには、適切な種類のメモリ ダンプをキャプチャする必要がありますの手順が含まれています。  
   
 ## <a name="installation-of-the-iis-diagnostics-toolkit"></a>IIS 診断ツールキットのインストール  
  このセクションのトピックの使用が必要です、**デバッグ診断ツール**IIS 診断ツールキットのメモリ ダンプを取得します。 インストールする、**デバッグ診断ツール**IIS 診断ツールキットの次の手順に従います。  

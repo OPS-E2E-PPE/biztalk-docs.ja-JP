@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 240c90d488d313bf43982c7c98db3e8a1ea05e75
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3c2507c1eafa258335302f4670f612db1b213e82
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389016"
 ---
-# <a name="the-as2-decoder-failed-processing-because-the-mdn-indicated-the-as2-message-failed-processing"></a>AS2 メッセージを処理できなかったことが MDN によって示されたため、AS2 デコーダーの処理は失敗しました
+# <a name="the-as2-decoder-failed-processing-because-the-mdn-indicated-the-as2-message-failed-processing"></a>AS2 デコーダーは MDN に失敗したメッセージの AS2 処理が示されるため、処理できませんでした。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                  |
@@ -30,10 +30,10 @@ ms.locfileid: "36984499"
 |  イベント ソース   |                                                              [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                                              |
 |    コンポーネント    |                                                                                                    AS2 エンジン                                                                                                    |
 |  シンボル名  |                                                                                      AS2DecoderMdnProcessingFailureReturned                                                                                      |
-|  メッセージ テキスト   | AS2 メッセージを処理できなかったことが MDN によって示されたため、AS2 デコーダの処理は失敗しました。  MDN メッセージの詳細は次のとおり: AS2-から:"{0}"AS2-を:"{1}"MessageID:"{2}"OriginalMessageID:"{3}" |
+|  メッセージ テキスト   | AS2 デコーダー、MDN が AS2 メッセージを示すため、処理されているエラー処理に失敗しました。  MDN メッセージの詳細は次のとおりです。AS2-から:"{0}"AS2-を:"{1}"MessageID:"{2}"OriginalMessageID:"{3}" |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、AS2 メッセージの受信者が元の AS2 メッセージを処理できなかったことが MDN 応答に示されていることを表します。  
+ このエラー/警告/情報イベントでは、元の AS2 メッセージの受信者が元の AS2 メッセージを処理できなかったことを MDN 応答が表示されることを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、AS2 メッセージの受信者に連絡し、受信側での処理が失敗した理由を確認して、元の AS2 メッセージを修正して再送信します。
+ このエラーを解決する、AS2 メッセージの受信者にお問い合わせください、受信側では、処理が失敗した理由を判断し、元の AS2 メッセージを修正し再送信します。

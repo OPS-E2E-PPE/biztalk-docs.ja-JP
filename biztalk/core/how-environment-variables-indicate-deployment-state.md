@@ -14,26 +14,26 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d21baa6ef6e6d82fc179497b4993cf3af6fb1a5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5fc27a85f36b83b3fd3c0bd782807fa4f5b73364
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983987"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387461"
 ---
 # <a name="how-environment-variables-indicate-deployment-state"></a>環境変数と展開状態の対応関係
-処理前または処理後のスクリプトを呼び出すと、これらのスクリプトでは環境変数 BTAD_ChangeRequestAction、BTAD_InstallMode、および BTAD_HostClass を確認することにより、実行中の展開の状態 (インストール、インポート、削除、アンインストール、インポート ロールバック、インストール ロールバック) が判断されます。  
+展開の状態の前または処理後のスクリプトを調べる、呼び出されると (インストール、インポート、削除、アンインストール、インポート ロールバック、またはインストール ロールバック) により、環境変数 BTAD_ChangeRequestAction、BTAD_InstallMode、実行中におよび BTAD_HostClass を選択します。  
 
- 次の表に、これら 3 つの環境変数の組み合わせとそれに対応する展開状態を示します。  
+ 次の表では、さまざまな展開の状態を示す 3 つの変数の組み合わせについて説明します。  
 
 
 |       展開状態        |     予期される値      |
 |-------------------------------|--------------------------|
 |                               | BTAD_ChangeRequestAction |
-| インポート (フラグの上書きなし) |          作成          |
-|  インポート (フラグの上書きあり)   |          更新          |
+| インポート フラグの上書きなし |          作成          |
+|  上書きフラグにインポートする.   |          更新          |
 |            インストール            |          更新          |
-|           Uninstall           |          DELETE          |
+|           アンインストール           |          DELETE          |
 |        インポート ロールバック        |          DELETE          |
 |       インストール ロールバック        |          DELETE          |
 

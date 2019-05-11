@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 1: 新しい BizTalk プロジェクトの追加 |Microsoft Docs'
+title: レッスン 1:新しい BizTalk プロジェクトの追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6760719bad28463b99a9de389b012156c1abb2f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b98c3744786b12fb9b0113181ee844aecef5f97d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377263"
 ---
-# <a name="lesson-1-adding-a-new-biztalk-project"></a>レッスン 1: 新しい BizTalk プロジェクトの追加
+# <a name="lesson-1-adding-a-new-biztalk-project"></a>レッスン 1:新しい BizTalk プロジェクトの追加
 このレッスンでは、ソリューションに新しい BizTalk プロジェクトを追加します。 このチュートリアル全体で使用するプロジェクトでは、スキーマを作成します。  
   
  内で、BizTalk マッパーなど、BizTalk ツールを公開する、BizTalk プロジェクト テンプレートを選択、 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]開発環境。  
@@ -43,4 +43,4 @@ ms.locfileid: "36987419"
   
     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] ソリューション エクスプ ローラーに新しいプロジェクトを追加し、プロジェクト フォルダーを作成し、ファイル、 \<*ドライブ*:\>\labs\SWIFTProject\SWIFTSchemas フォルダー。  
   
-   続行する[レッスン 2: SWIFTSchemas プロジェクト用の厳密な名前の BizTalk アセンブリを作成する](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md)します。
+   続行する[レッスン 2。SWIFTSchemas プロジェクト用の厳密な名前の BizTalk アセンブリを作成する](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md)します。

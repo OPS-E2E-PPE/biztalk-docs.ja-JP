@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 025826673538b0272c3ce79d6e748c559b3eefe7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4a1c8f2d988068f5a49a5d2f69064c4d9a46a207
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338989"
 ---
 # <a name="create-references-to-another-node-or-type"></a>別のノードまたは種類への参照を作成します。
 グローバル ノードを使用して再利用可能なデータ型を作成することができます: 構造体のフラグメント、その構造が適切な場所で、スキーマ全体で使用できます。 直接の子であるノードのみを使用できます、**スキーマ**グローバル型を作成するノード。  
@@ -80,7 +80,7 @@ ms.locfileid: "36984459"
   
 ## <a name="delete-a-global-declaration"></a>グローバル宣言を削除します。  
   
-1.  グローバル型またはグループが使用されるすべてのノードを削除するか、これらすべてのノードで別の型またはグループ (あるいはその組み合わせ) を使用するように指定します。 ノードを削除する手順については、[ノードの削除](../core/how-to-delete-nodes.md)を参照してください。  
+1.  グローバル型またはグループが使用されるすべてのノードを削除するか、これらすべてのノードで別の型またはグループ (あるいはその組み合わせ) を使用するように指定します。 ノードを削除する手順については、次を参照してください。[ノードの削除](../core/how-to-delete-nodes.md)します。  
   
 2.  、、の仕様を保存するときに、**グローバル データ型のクリーンアップ** ダイアログ ボックスが表示されます。 クリックしての仕様を完全に削除するグローバル宣言を選択します。 **OK**します。  
   

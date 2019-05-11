@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11043 |Microsoft Docs'
+title: シングル サインオン:イベント 11043 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 99faeaefdd029995944033cdb77c6636e716ed5a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d24076ea1354d923f16deed837a26d67997a2da4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024544"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400974"
 ---
-# <a name="single-sign-on-event-11043"></a>シングル サインオン: イベント 11043
+# <a name="single-sign-on-event-11043"></a>シングル サインオン:イベント 11043
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                                                                                   |
@@ -30,10 +30,10 @@ ms.locfileid: "37024544"
 |  イベント ソース   |                                                                                                                                                      ENTSSO                                                                                                                                                       |
 |    コンポーネント    |                                                                                                                                                        なし                                                                                                                                                        |
 |  シンボル名  |                                                                                                                                       SSO_WARN_PS_ADAPTER_REPORTED_FAILURE                                                                                                                                        |
-|  メッセージ テキスト   | 外部パスワードを変更しようとしたときに、パスワード同期アダプターでエラーが報告されました。 SSO データベース内の外部パスワードは更新されませんでした。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> 外部アカウント: % 3 %r<br /><br /> エラー メッセージ: % 4 %r<br /><br /> エラー コード: %5 |
+|  メッセージ テキスト   | パスワード同期アダプターは、外部パスワードを変更中にエラーを報告します。 外部パスワードは SSO database.%r で更新されませんでした。<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> 外部アカウント: % 3 %r<br /><br /> エラー メッセージ: % 4 %r<br /><br /> エラー コード: %5 |
   
 ## <a name="explanation"></a>説明  
- ENTSSO がパスワード変更をパスワード同期アダプターに送信する場合、ENTSSO で SSO データベース内に外部パスワードが作成される前に、外部パスワードを正しく変更しておく必要があります。 この場合、その作業が行われていませんでした。  
+ ENTSSO では、パスワードの変更をパスワード同期アダプターに送信するときに外部パスワードが正常に変更してください ENTSSO により SSO データベースで、前に。 この場合が行われませんでした。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 警告メッセージの情報をメモし、システム管理者に問い合わせます。
+ 警告メッセージの情報をメモし、システム管理者に問い合わせてください。

@@ -13,17 +13,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f367680408f208d5d7a93ef45e925ddfc1893ba5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e79cde5da2347a51894ca402740a680e9bd14d1d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989763"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385490"
 ---
 # <a name="create-msmq-receive-locations-and-send-ports-programmatically"></a>MSMQ 受信場所と送信ポートをプログラムで作成します。
 このトピックでは、WMI を使用して MSMQ アダプタのポートまたは場所を作成する方法について説明します。  
   
- 詳細については、**日時スケジュール構成を使用して WMI の受信場所を作成する**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+ 詳細については、次を参照してください。**日時スケジュール構成を使用して WMI の受信場所を作成する**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
 ## <a name="setting-property-values"></a>プロパティ値の設定  
  ポートまたは場所を作成するプロセスは常に同じです。  

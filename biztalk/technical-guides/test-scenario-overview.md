@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1c30bf4102da74869e596af32f8c9361fc796ce7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e412c771e321f364ecfd565bd2031e647d4e6e5a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997691"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301739"
 ---
 # <a name="test-scenario-overview"></a>テスト シナリオの概要
 このトピックでは、テスト アプリケーションの概要します。テストの使用、方法論とリストの説明を主要業績評価指標 (Kpi) は、ロード テスト中にキャプチャされます。  
@@ -27,7 +27,7 @@ ms.locfileid: "36997691"
 
  次の図は、使用される、高度なアーキテクチャを示しています。 Visual Studio Team System (VSTS) 2008 Test Load Agent の起動負荷を生成する、WCF トランスポートを使用するカスタムのテスト クラス、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]このシナリオでアプリケーションの公開、Wcf-basichttp を使用して要求-応答の受信場所。 同時スレッド数の合計、VSTS 2008 Test Load Agent は、優れた柔軟性が提供するため、テスト クライアントとして使用された、送信メッセージの数を構成する機能を含むされ、要求間のスリープ間隔が送信されます。  
 
- VSTS 2008 Test Load Agent の複数のコンピューターは、現実世界のロード パターンをシミュレートするために連携して実行できます。 これらのテストでは、VSTS 2008 Test Load Agent のコンピューターが BizUnit 3.0 を実行していたも単一の VSTS 2008 Test Load エージェント コント ローラー コンピューターで駆動します。 一貫性のある負荷が物理および仮想の両方に送信された結果として、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター。 VSTS 2008 Test Edition を使用して、テスト用にシミュレートされた負荷を生成する方法の詳細については、[ http://go.microsoft.com/fwlink/?LinkID=132311](http://go.microsoft.com/fwlink/?LinkID=132311)を参照してください。  
+ VSTS 2008 Test Load Agent の複数のコンピューターは、現実世界のロード パターンをシミュレートするために連携して実行できます。 これらのテストでは、VSTS 2008 Test Load Agent のコンピューターが BizUnit 3.0 を実行していたも単一の VSTS 2008 Test Load エージェント コント ローラー コンピューターで駆動します。 一貫性のある負荷が物理および仮想の両方に送信された結果として、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター。 VSTS 2008 Test Edition を使用して、テスト用にシミュレートされた負荷を生成する方法の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=132311](http://go.microsoft.com/fwlink/?LinkID=132311)します。  
 
  ![アプリケーションのアーキテクチャ](../technical-guides/media/testapplicationarchitecture.gif "TestApplicationArchitecture")  
 テスト アプリケーションのアーキテクチャ  
@@ -65,7 +65,7 @@ ms.locfileid: "36997691"
 テスト アプリケーション オーケストレーション  
 
 ## <a name="testing-methodology"></a>テスト方法  
- パフォーマンスをテストするには、多くのタスクで、手動で実行する場合は、繰り返し発生する、単調には、およびエラーが発生する必要があります。 テストの効率性を向上し、テストの実行の間の一貫性を維持するために[!INCLUDE[btsVStudio2008](../includes/btsvstudio2008-md.md)]テスト プロセス中に必要なタスクを自動化するための BizUnit 3.0 での Team System (VSTS) テスト Edition が使用されました。 システムに対するメッセージ負荷を生成する VSTS 2008 Test Load Agent コンピューター、テスト クライアントとして使用され、各テストの一貫性を向上させるために実行で同じメッセージ型が使用されました。 このプロセスに従うすべてのテスト実行の一貫性のある一連のデータを提供します。 BizUnit 3.0 の詳細については、[ http://go.microsoft.com/fwlink/?LinkID=85168](http://go.microsoft.com/fwlink/?LinkID=85168)を参照してください。 詳細については[!INCLUDE[btsVStudio2008](../includes/btsvstudio2008-md.md)]Team System Test Edition を参照してください[ http://go.microsoft.com/fwlink/?LinkID=141387](http://go.microsoft.com/fwlink/?LinkID=141387)します。  
+ パフォーマンスをテストするには、多くのタスクで、手動で実行する場合は、繰り返し発生する、単調には、およびエラーが発生する必要があります。 テストの効率性を向上し、テストの実行の間の一貫性を維持するために[!INCLUDE[btsVStudio2008](../includes/btsvstudio2008-md.md)]テスト プロセス中に必要なタスクを自動化するための BizUnit 3.0 での Team System (VSTS) テスト Edition が使用されました。 システムに対するメッセージ負荷を生成する VSTS 2008 Test Load Agent コンピューター、テスト クライアントとして使用され、各テストの一貫性を向上させるために実行で同じメッセージ型が使用されました。 このプロセスに従うすべてのテスト実行の一貫性のある一連のデータを提供します。 BizUnit 3.0 の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=85168](http://go.microsoft.com/fwlink/?LinkID=85168)します。 詳細については[!INCLUDE[btsVStudio2008](../includes/btsvstudio2008-md.md)]Team System Test Edition を参照してください[ http://go.microsoft.com/fwlink/?LinkID=141387](http://go.microsoft.com/fwlink/?LinkID=141387)します。  
 
  次の手順が自動化。  
 
@@ -95,7 +95,7 @@ ms.locfileid: "36997691"
 
 - アプリケーション ログを収集し、結果フォルダーで .csv ファイルに書き込みます。  
 
-- 統計情報、グラフ、およびレポートを生成するために収集されたパフォーマンス ログに対してパフォーマンス分析のログ (PAL) ツール、Relog と Log Parser ツールを実行します。 詳細については、PAL、Relog、および Log Parser は、[付録 d: ツールのパフォーマンスを測定](../technical-guides/appendix-d-tools-for-measuring-performance.md)を参照してください。  
+- 統計情報、グラフ、およびレポートを生成するために収集されたパフォーマンス ログに対してパフォーマンス分析のログ (PAL) ツール、Relog と Log Parser ツールを実行します。 詳細については、PAL、Relog、および Log Parser は、次を参照してください[付録 d:。パフォーマンスを測定するためのツール](../technical-guides/appendix-d-tools-for-measuring-performance.md)します。  
 
 > [!NOTE]  
 >  すべての追跡が無効にし、テスト中に、BizTalk Server SQL Server エージェント ジョブが無効にします。  
@@ -175,7 +175,7 @@ ms.locfileid: "36997691"
  次のパフォーマンス モニターのカウンターは、すべてのテスト実行の主要業績評価指標 (KPI) としてキャプチャされました。  
 
 > [!NOTE]  
->  パフォーマンス モニター カウンターでパフォーマンスの評価に関する詳細については、[チェックリスト: Hyper-v のパフォーマンスを測定する](../technical-guides/checklist-measuring-performance-on-hyper-v.md)を参照してください。  
+>  パフォーマンス モニター カウンターでパフォーマンスの評価に関する詳細については、次を参照してください。[チェックリスト。HYPER-V のパフォーマンスを測定する](../technical-guides/checklist-measuring-performance-on-hyper-v.md)します。  
 
  **BizTalk Server KPI**  
 
@@ -267,4 +267,4 @@ ms.locfileid: "36997691"
  無人 Windows セットアップのリファレンスについては、「 [ http://go.microsoft.com/fwlink/?LinkId=142364](http://go.microsoft.com/fwlink/?LinkId=142364)します。  
 
 ## <a name="see-also"></a>参照  
- [付録 C: BizTalk Server と SQL Server の Hyper-V のサポート性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)
+ [付録 c:BizTalk Server と SQL Server の HYPER-V のサポート](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)

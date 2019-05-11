@@ -19,15 +19,15 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f5afe1edd63f10f39619948fb69d657bbaf85b81
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 65b08e147e95f2fdb899784c373a3dc69013c8b4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386237"
 ---
 # <a name="how-to-configure-inbound-maps-for-a-send-port"></a>送信ポートの受信マップを構成する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートの受信マップを構成する方法について説明します。 受信マップは、動的または静的な送信請求 - 応答の送信ポートでのみ使用されます。 マップを使用すると、オーケストレーションでメッセージを処理することなく、ポートが受け取った応答メッセージに XSL 変換を適用できます。 受信マップの追加、マップの削除、既存のマップから別のマップへの変更を行うことができます。 送信ポートには複数のマップを追加できます。ただし、各マップには一意の送信元スキーマが必要となります。 マップの背景については、[マップ](../core/maps.md)を参照してください。  
+このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートの受信マップを構成する方法について説明します。 受信マップは、動的または静的な送信請求 - 応答の送信ポートでのみ使用されます。 マップを使用すると、オーケストレーションでメッセージを処理することなく、ポートが受け取った応答メッセージに XSL 変換を適用できます。 受信マップの追加、マップの削除、既存のマップから別のマップへの変更を行うことができます。 送信ポートには複数のマップを追加できます。ただし、各マップには一意の送信元スキーマが必要となります。 マップの背景については、次を参照してください。[マップ](../core/maps.md)します。  
   
 > [!NOTE]
 >  アプリケーション開発者が開発プロセス中にマップを構成するには、このトピックの手順を実行します。  

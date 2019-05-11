@@ -16,15 +16,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 106435fafcd9319fcee1df9bdf1b64396fa2006f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f1a1405c3c4a024d7347e85be7abde432f693182
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973171"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387001"
 ---
 # <a name="how-to-clear-the-application-cache"></a>アプリケーション キャッシュをクリアする方法
-MMC スナップインまたはコマンド ラインを使用して、すべてのシングル サインオン サーバーの指定したアプリケーションの、資格情報キャッシュの内容 (関連アプリケーションに関連付けられたすべての情報) を削除できます。  
+すべてのシングル サインオン サーバーの指定したアプリケーションの資格情報のキャッシュ (すべての情報、関連アプリケーションに関連付けられている) の内容を削除するのに MMC スナップインまたはコマンドラインを使用できます。  
   
 ### <a name="to-clear-the-cache-using-the-mmc-snap-in"></a>MMC スナップインを使用してキャッシュをクリアするには  
   
@@ -36,7 +36,7 @@ MMC スナップインまたはコマンド ラインを使用して、すべて
   
 4.  結果ウィンドウで、関連アプリケーションを右クリックし、をクリックして**クリア**します。  
   
-### <a name="to-clear-the-cache-using-the-command-line"></a>コマンド ラインを使用してキャッシュをクリアするには  
+### <a name="to-clear-the-cache-using-the-command-line"></a>コマンドラインを使用してキャッシュをクリアするには  
   
 1. **開始** メニューのをクリックして**実行**、し、入力**cmd**します。  
   

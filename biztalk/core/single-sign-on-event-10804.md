@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10804 |Microsoft Docs'
+title: シングル サインオン:イベント 10804 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a262448f4d07a01f726f111ca5ddd01901e9e7d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7a93cce2d1ad17248c1ad007f07c0a885b1a8fa6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017014"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399521"
 ---
-# <a name="single-sign-on-event-10804"></a>シングル サインオン: イベント 10804
+# <a name="single-sign-on-event-10804"></a>シングル サインオン:イベント 10804
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "37017014"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |                ENTSSO_E_INCORRECT_COMPUTER                 |
-|  メッセージ テキスト   |     このアダプターはこのコンピューター用に構成されていません。      |
+|  メッセージ テキスト   |     このアダプターはこのコンピューターに構成されていません。      |
   
 ## <a name="explanation"></a>説明  
- 各アダプターは特定のコンピューターで実行されるように構成され、コンピューターの長い名前によって識別されます。 この名前が正しくないか、別のコンピューター上のアダプターを実行しようとしています。  
+ 各アダプターを構成するには、長い名前で識別される特定のコンピューター上で実行します。 名前が正しくないか、別のコンピューターでアダプターを実行しようとしています。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このアダプターの構成を確認して、適切なコンピューターの正しい名前を特定します。
+ 適切なコンピューターの適切な名前を確認するには、このアダプターの構成を参照してください。

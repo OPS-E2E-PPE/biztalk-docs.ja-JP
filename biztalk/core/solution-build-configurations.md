@@ -1,5 +1,5 @@
 ---
-title: ソリューション ビルド構成 |Microsoft ドキュメント
+title: ソリューション ビルドの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,21 +20,21 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c48791d26842b7224bb950334d6b184452a54d6
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 7e67898e3e24b98f9efbe92494e0f7fbe28b2fba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006907"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244310"
 ---
 # <a name="solution-build-configurations"></a>ソリューション ビルドの構成
-[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でビルドする他のプロジェクトと同様に、構成マネージャーを使用して、ソリューション ビルドの構成を指定できます。 ソリューション ビルド構成を使用すると、ソリューションのビルドでどのプロジェクトに含めると、それを展開するかどうかを決定できます。 BizTalk Server では、両方がサポート**デバッグ**と**リリース**の構成をビルドします。  
+他のプロジェクトで作成すると同様[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューションのビルド構成を指定する Configuration Manager を使用することができます。 ソリューション ビルドの構成に含めるには、どのプロジェクトがソリューションのビルドし、それを展開するかどうかを決定できます。 BizTalk Server は両方ともサポート**デバッグ**と**リリース**の構成をビルドします。  
   
- ソリューション ビルド構成のチェック マークと、**ビルド**列を使用するソリューションを構築してが完了したら、アセンブリを生成します。 チェック マークはでもある場合、**展開**プロジェクト デザイナーでの展開設定に基づいて、列からアプリケーションが展開されます。  
+ ソリューション ビルド構成にあるチェック マークで、**ビルド**列を使用するソリューションを構築してが完了したら、アセンブリを生成します。 チェック ボックスもオンにする場合、**デプロイ**プロジェクト デザイナーでの展開設定に基づいて、列で、そのアプリケーションがデプロイされます。  
   
- Configuration Manager と構成の完全なリファレンス [オプション] ダイアログ ボックスでボックスにある次のリファレンス リンク提供: [http://go.microsoft.com/fwlink/?LinkId=125365](http://go.microsoft.com/fwlink/?LinkId=125365)です。  
+ Configuration Manager と、構成への参照を完全なオプション ダイアログ ボックスでボックスにある次の参照リンクの提供: [ http://go.microsoft.com/fwlink/?LinkId=125365](http://go.microsoft.com/fwlink/?LinkId=125365)します。  
   
-### <a name="to-configure-build-properties-in-configuration-manager"></a>構成マネージャーでビルド プロパティを設定するには  
+### <a name="to-configure-build-properties-in-configuration-manager"></a>Configuration Manager でのビルド プロパティを構成するには  
   
 1.  **[ビルド]** メニューの **[構成マネージャー]** をクリックします。  
   
@@ -42,10 +42,10 @@ ms.locfileid: "26006907"
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**Configuration**|選択**リリース**または**デバッグ**プロジェクトの構成。 または、新しい構成を作成するか、既存の構成を編集します。|  
-    |**プラットフォーム**|コンパイルしたアセンブリの CPU アーキテクチャを表す、プロジェクトのプラットフォームを選択します。 または、新しいプラットフォームを作成するか、既存のプラットフォームを編集します。|  
-    |**ビルド**|プロジェクトをビルドするか、ソリューションのビルド コマンドに対応してリビルドするには、プロジェクトのこの列のチェック ボックスをオンにします。|  
-    |**配置**|ソリューションまたはプロジェクトに対してビルド コマンドが実行されたときにプロジェクトを展開設定に基づいて展開するには、この列のチェック ボックスをオンにします。|  
+    |**Configuration**|選択**リリース**または**デバッグ**プロジェクトの構成。 新しい構成を作成または、既存のものを編集します。|  
+    |**プラットフォーム**|プロジェクトのコンパイル済みアセンブリの CPU アーキテクチャを表すためのプラットフォームを選択します。 新しいプラットフォームを作成または、既存のものを編集します。|  
+    |**ビルド**|プロジェクトのプロジェクトを作成またはソリューションのビルド コマンドへの応答で再作成するには、この列のボックスを確認します。|  
+    |**配置**|デプロイ プロジェクトがある場合は、この列のボックスは、ソリューションまたはプロジェクトのビルド コマンドが発行されたときに展開の設定に基づく確認してください。|  
   
 ## <a name="see-also"></a>参照  
  [Visual Studio から BizTalk アセンブリを展開する方法](../core/how-to-deploy-a-biztalk-assembly-from-visual-studio.md)   

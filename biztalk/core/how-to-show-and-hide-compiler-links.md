@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3c006f5de761837ec1ed0d6f983d380a76a50a5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 931d829d37e6fdb594746598164a4b189c75a763
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010051"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383877"
 ---
 # <a name="how-to-show-and-hide-compiler-links"></a>コンパイラ リンクを表示する/非表示にする方法
 マップをコンパイルすると、BizTalk マッパーにより、マップで必要となるすべてのリンクを示す追加のリンク (コンパイラ リンク) が作成されます。 これらのリンクのいくつかは、作成したリンクによって暗黙的に指定されます。 マップをコンパイルまたはテストする際、追加されたコンパイラ リンクをメイン ウィンドウに表示するかどうかを、Visual Studio の出力ウィンドウの最終行で選択できます。 既定では、コンパイラ リンクは赤色の波線で表示されます。  
@@ -33,7 +33,7 @@ ms.locfileid: "37010051"
    > [!NOTE]
    >  場合を構築または再構築、BizTalk プロジェクトまたはソリューションの 1 つまたは複数のマップ、メッセージを格納している**ここをダブルクリックすると、コンパイラ リンクの表示/非表示に**に表示される、**エラー一覧**の Visual Studio のウィンドウプロジェクトまたはソリューションのすべてのマップ。  
   
-   マップをテストするには、入力インスタンスおよび出力インスタンスのプロパティを構成する必要があります。 これらのプロパティを構成する方法の詳細については、[マップの検証の構成とテストのパラメーターは、方法](../core/how-to-configure-map-validation-and-test-parameters.md)を参照してください。  
+   マップをテストするには、入力インスタンスおよび出力インスタンスのプロパティを構成する必要があります。 これらのプロパティを構成する方法の詳細については、次を参照してください。[マップの検証の構成とテストのパラメーターは、方法](../core/how-to-configure-map-validation-and-test-parameters.md)します。  
   
 ## <a name="see-also"></a>参照  
  [リンクを使用してレコードとフィールド マッピングを指定する](../core/using-links-to-specify-record-and-field-mappings.md)

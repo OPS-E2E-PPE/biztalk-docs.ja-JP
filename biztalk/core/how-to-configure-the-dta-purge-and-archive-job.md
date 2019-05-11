@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 149719b7eea50ce53c14298597c94729162d43b0
-ms.sourcegitcommit: 1fb633fcf919ce3124405420a5d9faa79d9d508e
+ms.openlocfilehash: 69b9b221a26ad844aa23b65ada5a8c6cce38cf8c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2017
-ms.locfileid: "22646934"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386095"
 ---
 # <a name="configure-the-dta-purge-and-archive-job"></a>構成 DTA Purge and Archive ジョブ
 BizTalk 追跡データベース (BizTalkDTADb) からデータをアーカイブまたは削除する前に、DTA Purge and Archive (BizTalkDTADb) ジョブを構成する必要があります。 このジョブを構成して、プロシージャを呼び出す、dtasp_BackupAndPurgeTrackingDatabase ストア、構成する必要があります、6 つのパラメーターを使用するとします。  

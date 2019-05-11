@@ -13,18 +13,18 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 83dd415648c55b53a9212ce20f4b1f754fb4fbb6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8f3c29d259d8bd8a3cd580c2a945d8cc28b1a68d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005131"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384034"
 ---
 # <a name="schedule-the-backup-biztalk-server-job"></a>バックアップ BizTalk Server ジョブのスケジュール設定します。
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブは、SQL Server エージェント サービスにより設定されたスケジュールに従って実行されます。 バックアップの実行頻度を変更するには、SQL Server Management Studio を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブのスケジュールを変更します。  
+バックアップ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ジョブは、SQL Server エージェント サービスにより設定されたスケジュールに従って実行されます。 頻繁に作成するか、バックアップの実行頻度、バックアップのスケジュールを変更することができる場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SQL Server Management Studio を使用してジョブ。  
   
 ## <a name="prerequisites"></a>前提条件  
-SQL Server sysadmin 固定サーバー ロールのメンバーであるアカウントでサインインします。  
+SQL Server の sysadmin 固定サーバー ロールのメンバーであるアカウントでサインインします。  
   
 ## <a name="schedule-the-backup-biztalk-server-job"></a>BizTalk Server のバックアップ ジョブのスケジュール設定します。
   
@@ -47,17 +47,17 @@ SQL Server sysadmin 固定サーバー ロールのメンバーであるアカ�
     
 8. 追加構成<strong>@frequency</strong>パラメーター。  
   
-   - <strong>@ForceFullBackupAfterPartialSetFailure</strong>: 既定値は**false**します。 ときに**false**完全バックアップが行われるまでは、次のサイクルの完全バックアップの失敗は、システムが待機する場合は、します。  
+   - <strong>@ForceFullBackupAfterPartialSetFailure</strong>:既定値は **false**です。 ときに**false**完全バックアップが行われるまでは、次のサイクルの完全バックアップの失敗は、システムが待機する場合は、します。  
     
      > [!NOTE]
      >  場合、 <strong>@frequency</strong>設定は時間の長い (毎週、毎月、毎年) など、このパラメーターを設定**false**危険な可能性があります。 このシナリオでこのフラグを設定する最適な場合があります**true**します。 ときに**true**、毎回の障害が発生した、システムを強制的に完全バックアップを作成します。 、小さなパフォーマンスに影響がある可能性がありますが、回復可能なシステムが safter します。
   
-   - <strong>@BackupHour</strong>既定値 NULL。 このパラメーターは直接関連して <strong>@Frequency</strong>します。 頻度設定すると**h**フル バックアップを実行する曜日を 1 時間を設定する (時間)。 0 (深夜) から 23 (11 PM) までの値を選択できます。 空白のまま、完全バックアップは 1 時間ごとに実行されます。  
+   - <strong>@BackupHour</strong>:デフォルトの値は NULL です。 このパラメーターは直接関連して <strong>@Frequency</strong>します。 頻度設定すると**h**フル バックアップを実行する曜日を 1 時間を設定する (時間)。 0 (深夜) から 23 (11 PM) までの値を選択できます。 空白のまま、完全バックアップは 1 時間ごとに実行されます。  
     
       > [!NOTE]
        >  0 ~ 23 の範囲 (たとえば、100 または-1) 外の数値をこのパラメーターを設定すると、0 に、システム強制的します。
   
-   - <strong>@UseLocalTime</strong>状態をローカル時刻を使用する: 余分なパラメーター。 既定では、ジョブは、UTC 時刻で動作します。 (これは、UTC + 10 時間) オーストラリアに住んでいる場合は、午前 0 時ではなく、午前 10 時に、バックアップが実行されます。 これを設定するベスト プラクティスとして推奨が**1** (true)。  
+   - <strong>@UseLocalTime</strong>:ローカル時刻を使用するという余分なパラメーター。 既定では、ジョブは、UTC 時刻で動作します。 (これは、UTC + 10 時間) オーストラリアに住んでいる場合は、午前 0 時ではなく、午前 10 時に、バックアップが実行されます。 これを設定するベスト プラクティスとして推奨が**1** (true)。  
   
 9. **ジョブのプロパティ - Backup BizTalk Server (BizTalkMgmtDb)**[**ページの選択**、] をクリックして**スケジュール**します。  
   
@@ -65,7 +65,7 @@ SQL Server sysadmin 固定サーバー ロールのメンバーであるアカ�
   
 11. **ジョブ スケジュールのプロパティ - MarkAndBackupLogSched**、スケジュールの種類を選択**定期的**ドロップダウン リストから。  
   
-     既定では、ジョブが 15 分おきに実行されるようにスケジュールが設定されます。  
+     ジョブは、既定のスケジュールでは、15 分ごとに実行されます。  
      
     > [!NOTE]
     >  に従って、要件が最初のテスト、運用環境では、この値を変更することができます。 バックアップの頻度で不足の結果をこの値に設定し、SQL 環境内のバック グラウンドの負荷を追加します。 値が高すぎるを設定すると、トランザクション ログのサイズを増やすことがあり、パフォーマンスに影響を与えます。 場合によっては、既定値のままにすることをお勧めします。    

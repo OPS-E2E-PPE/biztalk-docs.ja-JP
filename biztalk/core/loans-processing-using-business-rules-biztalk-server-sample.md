@@ -15,18 +15,18 @@ caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1b8b1ae132d095ec70a22b8480818a0b8a11ece
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b8b878b782c49f1fc4827577444b8bffbec346fe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998531"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380618"
 ---
 # <a name="loans-processing-using-business-rules-biztalk-server-sample"></a>Loans Processing Using Business Rules (BizTalk Server サンプル)
-Loans Processing Using Business Rules サンプルは、オーケストレーション内で管理しているルール セットを使用する方法、および入力 (ファクトと呼ばれます) の組み合わせを使用して、処理中のドキュメント内のフィールドの設定値を計算する方法を示しています。 ファクトは、.NET ベースのアセンブリ呼び出しの結果、メッセージの XML から取得した値、またはデータベースから取得したデータです。 このサンプルでは、ルールを必要に応じて変更して、再展開の必要なしに後続の計算に影響を与える方法も示します。  
+Loans Processing Using Business Rules サンプルでは、ファクトと呼ばれる入力の組み合わせを使用して、処理中のドキュメント内のフィールドの設定を計算する方法と、オーケストレーション内で管理しているルール セットを使用する方法を示します。 ファクトは呼び出しの結果であることができます、します。NET ベースのアセンブリ、メッセージの XML から取得した値またはデータベースからデータを取得します。 このサンプルでは、どのルールを変更できます、いつでもでも再デプロイすることがなく、後続の計算に影響を与えるも示します。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルでは、簡単なローン処理のシナリオでこれらの機能を示します。 BizTalk Server オーケストレーションは、XML メッセージ形式のローン申請 (ローン ケースともいう) を取得して処理します。 このオーケストレーションでは、ビジネス ルール エンジンを使用してルールに従って受信メッセージを評価し、ルール適用の結果を使用してメッセージを変更し、メッセージをファイルとして出力フォルダーに書き込みます。  
+ このサンプルでは、簡単なローン処理のシナリオのコンテキスト内でこれらの機能を示します。 BizTalk Server オーケストレーションは、ピックアップし、XML メッセージ形式、ローン ケースとも呼ばれますのローン申請を処理します。 このオーケストレーションは、規則の適用の結果とメッセージの変更と、出力フォルダーにファイルとして、メッセージを書き込み、規則に従って受信メッセージを評価するのにビジネス ルール エンジンを使用します。  
 
  このサンプルの設定の処理中のメッセージを含む複数のソースからのファクトに基づいた、 **IncomeStatus**、 **CommitmentsStatus**、 **EmploymentStatus**、および**ResidencyStatus**処理中のメッセージの要素。  
 
@@ -38,22 +38,22 @@ Loans Processing Using Business Rules サンプルは、オーケストレーシ
 
 |                                                                                    ファイル                                                                                    |                                                                                                                説明                                                                                                                 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                   Case.xsd                                                                                    |                                                                                 受信ローン申請 (ローン ケース) のスキーマ ファイルです。                                                                                  |
+|                                                                                   Case.xsd                                                                                    |                                                                                 受信ローン申請、ローン ケースとも呼ばれるスキーマ ファイルです。                                                                                  |
 |                                                                                  Cleanup.bat                                                                                  |                   アセンブリを展開解除し、グローバル アセンブリ キャッシュ (GAC) から削除するために使用されます。 送信ポートと受信ポートが削除されます。 必要に応じて、Microsoft インターネット インフォメーション サービス (IIS) の仮想ディレクトリが削除されます。                   |
-|                                                                           Create_CustInfo_Table.sql                                                                           |                                                                              SQL Northwind サンプル データベースの CustInfo テーブルを作成するための SQL スクリプトです。                                                                              |
+|                                                                           Create_CustInfo_Table.sql                                                                           |                                                                              SQL Northwind サンプル データベースに CustInfo テーブルを作成するための SQL スクリプトです。                                                                              |
 |                                                                           LoanProcessorBinding.xml                                                                            |                                                                                               ポートのバインドなど、自動化されたセットアップに使用されます。                                                                                               |
-|                                                                   LoansProcessor.btproj、LoansProcessor.sln                                                                   |                                                                                            このサンプルの BizTalk プロジェクト ファイルとソリューション ファイルです。                                                                                             |
-|                                                                             My Sample Service.odx                                                                             |                                                             このサンプルの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションです。                                                              |
-|                                                                                sampleLoan.xml                                                                                 |                                                               サンプルの入力ファイルです。ファイルの XML 構造の末尾で、4 つの状態要素の値が空になっています。                                                               |
+|                                                                   LoansProcessor.btproj, LoansProcessor.sln                                                                   |                                                                                            このサンプルの BizTalk プロジェクトおよびソリューション ファイル。                                                                                             |
+|                                                                             マイ サンプル Service.odx                                                                             |                                                             [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] このサンプルのオーケストレーションです。                                                              |
+|                                                                                sampleLoan.xml                                                                                 |                                                               サンプル入力ファイル、ファイルの XML 構造の末尾に次の 4 つの状態要素の空の値です。                                                               |
 |                                                                                   Setup.bat                                                                                   |                                                                                                 このサンプルをビルドおよび初期化するために使用されます。                                                                                                  |
-|         \CreateRules フォルダーには、次のファイルが含まれます。<br /><br /> App.ico、AssemblyInfo.cs、Case.xsd、CreateLoanProcessingPolicy.csproj、CreateLoanProcessingPolicy.sln、WriteToBRL.cs          | プログラムによってセット内にルールを作成するアプリケーションを作成するために使う Visual C# プロジェクト、ソリューション、ソース、および関連ファイルです。 プログラムによってルール セットを作成する方法の例については、ソース ファイル WriteToBRL.cs を参照してください。 |
-| \myFactRetriever フォルダーには、次のファイルが含まれます。<br /><br /> AssemblyInfo.cs<br /><br /> FactRetrieverForLoansProcessing.cs<br /><br /> myFactRetriever.csproj<br /><br /> myFactRetriever.sln |                 SQL Server のサンプルの Northwind データベースにあらかじめ追加された CustInfo テーブルからの情報の取得に使用するアセンブリを作成するために使う Visual C# プロジェクト、ソリューション、ソース、および関連ファイルです。                  |
+|         \CreateRules フォルダー。<br /><br /> App.ico, AssemblyInfo.cs, Case.xsd, CreateLoanProcessingPolicy.csproj, CreateLoanProcessingPolicy.sln, WriteToBRL.cs          | VisualC#プロジェクト、ソリューション、ソース、および関連ファイルをプログラムで、セット内の規則を作成するアプリケーションを作成するために使用します。 一連の規則をプログラムで構築するための例については、ソース ファイル WriteToBRL.cs を参照してください。 |
+| \MyFactRetriever フォルダー。<br /><br /> AssemblyInfo.cs<br /><br /> FactRetrieverForLoansProcessing.cs<br /><br /> myFactRetriever.csproj<br /><br /> myFactRetriever.sln |                 VisualC#プロジェクト、ソリューション、ソース、および関連ファイルを使用して、先ほど追加した Northwind サンプルの SQL Server データベースに CustInfo テーブルから情報を取得するアセンブリを作成するために使用します。                  |
 
 ## <a name="building-and-initializing-this-sample"></a>このサンプルのビルドと初期化  
 
-#### <a name="to-build-and-initialize-the-loans-processing-using-business-rules-sample"></a>Loans Processing Using Business Rules サンプルをビルドして初期化するには  
+#### <a name="to-build-and-initialize-the-loans-processing-using-business-rules-sample"></a>ビルドして初期化 Loans Processing Using Business Rules サンプル  
 
-1. コンピューターに Northwind データベースがインストールされていることを確認してください。  
+1. コンピューターに Northwind データベースがあることを確認します。  
 
    > [!IMPORTANT]
    >  このサンプルを実行するには、SQL Server の Northwind サンプル データベースが必要です。 [ダウンロード](https://www.microsoft.com/download/details.aspx?id=23654)、およびインストールします。 
@@ -64,22 +64,22 @@ Loans Processing Using Business Rules サンプルは、オーケストレーシ
 
 3. ファイルは、次の操作を実行します。 Setup.bat を実行します。  
 
-   - GAC をクリーンアップして、このサンプルを前回実行したときに残ったデータを削除します。  
+   - このサンプルの以前の実行からときに残ったデータを排除する GAC をクリーンアップします。  
 
-   - ファクト取得プログラム myFactRetreiever.dll をコンパイルし、展開します。  
+   - コンパイルし、展開、ファクト取得プログラム myFactRetreiever.dll します。  
 
    - SQL スクリプト ファイル Create_CustInfo_Table.sql を使用して、Northwind サンプル SQL データベースに CustInfo という名前のテーブルを追加します。  
 
-   - 共有 SQL ルール ストアをクリーンアップして、このサンプルを前回実行したときに残ったデータを削除します。  
+   - このサンプルの以前の実行のときに残ったに共有 SQL ルール ストアをクリーンアップします。  
 
-   - ローン処理ルール セットの最新バージョン (1.0) を作成、公開し、展開します。  
+   - 作成、公開、され、ローン処理ルール セットの最新バージョン (1.0) をデプロイします。  
 
      > [!NOTE]
-     >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に用意されているビジネス ルール作成ツールを使用すると、プログラムによって設定されたルールを確認できます。  
+     >  ツールに付属しているビジネス ルール作成ツールを使用する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をプログラムで設定されているルールを確認します。  
 
-   - このサンプルで使用される入力 (In) フォルダーと出力 (Out) フォルダーを作成します。  
+   - 入力 (In) フォルダと出力 (Out) フォルダこのサンプルを作成します。  
 
-   - このサンプルの残りの [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクト (このサンプルを調整するために使用するオーケストレーションが格納された BizTalk プロジェクトを含む) をコンパイルして展開します。  
+   - コンパイルし、残りの展開[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]このサンプルでは、このサンプルを調整するために使用するオーケストレーションを含む BizTalk プロジェクトを含むプロジェクト。  
 
    - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信場所、送信ポート、および受信ポートを作成しバインドします。  
 
@@ -94,10 +94,10 @@ Loans Processing Using Business Rules サンプルは、オーケストレーシ
 
    - 受信場所を有効にし、送信ポートを開始します。  
 
-   - オーケストレーションを登録して開始します。  
+   - 参加させ、オーケストレーションを開始します。  
 
 > [!NOTE]
->  BizTalk ホスト名が BizTalkServerApplication でない場合は、適切なホスト名を反映するように Setup.bat ファイルおよび LoanProcessorBinding.xml ファイルを編集します。  
+>  BizTalk ホスト名が BizTalkServerApplication でない場合は、Setup.bat ファイルおよび LoanProcessorBinding.xml 適切なホスト名を反映するようにファイルを変更します。  
 > 
 > [!NOTE]
 >  このサンプルを実行する前に、ビルドと初期化のプロセス中に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でエラーが報告されていないことを確認する必要があります。  
@@ -114,11 +114,11 @@ Loans Processing Using Business Rules サンプルは、オーケストレーシ
 
 1. ファイル sampleLoan.xml のコピー、 **\In**フォルダー。  
 
-2. フォルダーに作成した .xml ファイルを観察**アウト**します。XML データ構造の末尾に次の 4 つの状態要素に追加されたデータの入力 XML メッセージが含まれています: **IncomeStatus**、 **CommitmentsStatus**、 **EmploymentStatus**、および**ResidencyStatus**します。  
+2. フォルダーに作成した .xml ファイルを観察**アウト**します。データが XML 構造の末尾に次の 4 つの状態要素に追加の入力 XML メッセージが含まれています。**IncomeStatus**、 **CommitmentsStatus**、 **EmploymentStatus**、および**ResidencyStatus**します。  
 
-   ビジネス ルール作成ツールを使用してルール セット内のルールを変更し、変更されたルールを再展開できます。  
+   規則セット内のルールを変更するビジネス ルール作成ツールを使用し、それらのルールを再デプロイできます。  
 
-#### <a name="to-use-the-business-rule-composer-tool-to-change-one-or-more-of-the-rules-in-a-rule-set"></a>ビジネス ルール作成ツールを使用してルール セット内のルールを変更するには  
+#### <a name="to-use-the-business-rule-composer-tool-to-change-one-or-more-of-the-rules-in-a-rule-set"></a>ビジネス ルール作成ツールを使用して、1 つ以上の規則セット内のルールを変更するには  
 
 1. クリックして**開始**、 をポイント**プログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**ビジネス ルール作成ツール**します。  
 
@@ -133,13 +133,13 @@ Loans Processing Using Business Rules サンプルは、オーケストレーシ
 
 5. ルールまたはさまざまな値の原因となる方法で処理を変更、 **IncomeStatus**、 **CommitmentsStatus**、 **EmploymentStatus**、および**ResidencyStatus**要素。 否定部分の値を変更することを確認します (基本的には、 **Else**句) ルールを変更するのです。  
 
-    次の表に、このサンプルで使用されるルール セットを示します。 特に断りのない限り、ファクトは受信 XML メッセージから取得されます。 文字列 (db) は、ファクトのソースであるデータベースを表します。  
+    次の表では、このサンプルで使用される規則のセットを示します。 特に断り、しない限り、ファクトは受信 XML メッセージです。 文字列 (db) では、ファクトのソースとしてデータベースを示します。  
 
 
-   |  ルール番号   |        ルール名        |                                                                             説明                                                                             |
+   |  規則番号   |        ルール名        |                                                                             説明                                                                             |
    |----------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |       1        |   収入状態ルール    |                                       IF **BasicSalary** + **OtherIncome** > 0<br /><br /> **IncomeStatus** = **有効**                                        |
-   |       2        | 契約状態ルール | IF **ID** == **ID (db)**<br /><br /> AND<br /><br /> IF **CreditCardBalance (db)** > 500<br /><br /> **CommitmentsStatus** =<br /><br /> "Compute Commitments" |
+   |       2        | 契約状態ルール | IF **ID** == **ID (db)**<br /><br /> AND<br /><br /> IF **CreditCardBalance (db)** > 500<br /><br /> THEN **CommitmentsStatus** =<br /><br /> 「コンピューティング コミットメント」 |
    |       3        | 雇用状態ルール  |                                  IF **EmploymentType &#124; TimeInMonths** > 18<br /><br /> **EmploymentStatus** = **有効**                                   |
    |       4        |  常駐状態ルール  |                                  IF **PlaceOfResidence &#124; TimeInMonths** > 18<br /><br /> **ResidencyStatus** = **有効**                                  |
    | !1, !2, !3, !4 |     否定ルール      |    論理の条件**いない**のルール 1 ~ 4 で説明されている対応する条件。 結果が設定される文字列に変わります。     |
@@ -151,18 +151,18 @@ Loans Processing Using Business Rules サンプルは、オーケストレーシ
 
 8. 右クリックし、**バージョン 1.1**ノード、およびクリック**デプロイ**します。  
 
-9. 共有 SQL Server ルール ストアに変更が反映されるまで、60 秒間待機します。  
+9. 共有の SQL Server ルール ストアに反映されるまで、変更の 60 秒間待機します。  
 
 10. ファイル sampleLoan.xml のコピーをフォルダーに貼り付ける**で**します。  
 
-11. フォルダーに作成した .xml ファイルを観察**アウト**します。XML データ構造の末尾に次の 4 つの状態要素に追加されたデータの入力 XML メッセージが含まれています: **IncomeStatus**、 **CommitmentsStatus**、 **EmploymentStatus**、および**ResidencyStatus**します。 これらの要素に追加されたデータは、手順 5. で行った変更により、前回の実行結果とは異なります。  
+11. フォルダーに作成した .xml ファイルを観察**アウト**します。データが XML 構造の末尾に次の 4 つの状態要素に追加の入力 XML メッセージが含まれています。**IncomeStatus**、 **CommitmentsStatus**、 **EmploymentStatus**、および**ResidencyStatus**します。 これらの要素に追加されたデータは異なります、またはそうでない、前の手順 5. でこの手順で行われた変更の種類に基づいて、実行します。  
 
 ## <a name="comments"></a>コメント  
- このサンプルの追跡情報を確認するには、ビジネス ルール エンジン展開ウィザードを使用して関連するルール セット (Loans Processing) をいったん展開解除し、再展開する必要があります。  
+ このサンプルの追跡情報を表示する場合は、解除して、ビジネス ルール エンジン展開ウィザードを使用して、関連するルールのセット (Loans Processing) を再デプロイする必要があります。  
 
- このサンプルでは、ビジネス ルールを使用してオーケストレーション内のルールの形式でビジネス ポリシーを適用する方法を示しています。 ポリシーを変更し、このポリシーの変更を、オーケストレーション ソリューションを再コンパイルまたは再展開せずにオーケストレーション内で動的に反映する方法も示しています。  
+ このサンプルでは、ビジネス ルールを使用して、オーケストレーション内のルールの形式でビジネス ポリシーを適用する方法を示します。 また、ポリシーを変更し、再コンパイルやオーケストレーション ソリューションを再デプロイしなくても、オーケストレーション内で動的に反映されるポリシーに変更がある方法を示します。  
 
- このサンプルへの入力ローン ケースは、次の構造の XML メッセージです。  
+ このサンプルの入力ローン ケースは、次の構造を持つ XML メッセージです。  
 
 ```  
     Name  

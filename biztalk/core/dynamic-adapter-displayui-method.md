@@ -1,5 +1,5 @@
 ---
-title: 動的アダプターの DisplayUI メソッド |Microsoft ドキュメント
+title: 動的アダプターの DisplayUI メソッド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fd26bc5e5e344f53537e16135bf0a30b8b1443c8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f64b6ca1a4f14f050a0d59344fe3233b55e88d74
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238674"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389278"
 ---
 # <a name="dynamic-adapter-displayui-method"></a>動的アダプターの DisplayUI メソッド
-このメソッドを**IDynamicAdapterConfig**インターフェイスには、カスタム アダプターのカスタム ユーザー インターフェイスが表示されます。 これにより、ユーザーは、選択したサービスに基づいて関連のサポート ファイルを表示、選択し、BizTalk プロジェクトにインポートできます。  
+このメソッドで、 **IDynamicAdapterConfig**インターフェイスには、カスタム アダプターのカスタム ユーザー インターフェイスが表示されます。 これにより、ユーザーに表示して選択し、それを BizTalk プロジェクトに、選択したサービスに基づいて関連サポート ファイルをインポートできます。  
   
- ファイル アダプター内のコードを変更、 **displayUI**を受け入れるようにスキーマの種類を選択するためのカスタム ユーザー インターフェイス (UI) を作成する AdapterManagement.cs ファイルのメソッドです。 スキーマが選択された後に、適切な WSDL ファイルを選択します。  
+ ファイル アダプター内でコードを変更、 **displayUI**を受け入れるようにスキーマの種類を選択するためのカスタム ユーザー インターフェイス (UI) を作成する、AdapterManagement.cs ファイルのメソッド。 スキーマを選択した後は、適切な WSDL ファイルを選択します。  
   
- 次のコードは、 **displayUI** AdapterManagement.cs ファイルのメソッドです。  
+ 次のコードは、 **displayUI** AdapterManagement.cs ファイルのメソッド。  
   
 ```  
 /// <summary>  

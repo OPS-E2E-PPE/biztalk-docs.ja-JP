@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 1: 関連するビジネス ルールの展開 |Microsoft Docs'
+title: レッスン 1:関連するビジネス ルールの展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6228f890e0f508650827f2bb2c3e52b5d29f96f7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4aef396419be1fa20e706d68151245a30c594f80
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377634"
 ---
-# <a name="lesson-1-deploying-the-related-business-rules"></a>レッスン 1: 関連するビジネス ルールの展開
+# <a name="lesson-1-deploying-the-related-business-rules"></a>レッスン 1:関連するビジネス ルールの展開
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]で、A4SWIFT ソフトウェア開発キット (SDK)、ビジネス ルール エンジン (BRE) の展開ユーティリティと呼ばれるプログラムが含まれています。 このレッスンでは、このユーティリティを使用して展開されたスキーマのアセンブリを検査、必要なルールを決定および必要なボキャブラリとすべてのスキーマのポリシーを展開します。  
   
  必要なルールを識別し、ビジネス ルール作成ツールを使用して、ボキャブラリとポリシーを展開する SWIFT 標準リリース ガイド (SRG) を使用して規則をデプロイすることもできます。  
@@ -53,4 +53,4 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
   
 7. ルール エンジン更新サービスを再起動します。 クリックして**開始**、**実行**入力、 **services.msc**、 をクリック**ok**。 **サービス (ローカル)** ウィンドウで、右クリックして**ルール エンジン更新サービス**、順にクリックします**再起動**します。  
   
-   進みます[レッスン 2: ビジネス ルールの作成ツールを使用して、展開を確認する](../../adapters-and-accelerators/accelerator-swift/lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool.md)します。
+   続行する[レッスン 2。展開をビジネス ルール作成ツールを使用して確認する](../../adapters-and-accelerators/accelerator-swift/lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool.md)します。

@@ -1,5 +1,5 @@
 ---
-title: 実装する、マネージ ストリーミング パイプライン コンポーネントでの Seek メソッド |Microsoft ドキュメント
+title: 実装する、マネージ ストリーミング パイプライン コンポーネントでの Seek メソッド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,21 +17,21 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5181957f691502dcc2b09a367c31de575097d1a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9986f2c19a1966d50e267ad8f10181d081be58dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256522"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382639"
 ---
 # <a name="implementing-a-seek-method-in-a-managed-streaming-pipeline-component"></a>実装する、マネージ ストリーミング パイプライン コンポーネントでの Seek メソッド
-ネイティブ**IStream**インターフェイスがため、メッセージング エンジンは、次を使用して、現在のストリームの位置をチェックするメソッドを提供していない**シーク**メソッドです。  
+ネイティブ**IStream**インターフェイスは、メッセージング エンジンは、次のように、現在のストリームの位置をチェックするメソッドを提供していない**シーク**メソッド。  
   
 ```  
 pStream->Seek(0, STREAM_SEEK_CUR, &pNewPosition);  
 ```  
   
- このメソッドはストリーム ポインターを移動するのではなく、現在の位置を問い合わせます。 シーク ストリームと連携するパイプライン コンポーネントを実装する場合は、使用できるように、 **Stream.Seek**次の例のようにメソッドです。  
+ このメソッドはストリーム ポインターを移動しません代わりに、現在の位置を照会します。 使用できる場合は、シークできないストリームで動作するパイプライン コンポーネントを実装するように、 **Stream.Seek**次の例のようにメソッド。  
   
 ## <a name="example"></a>例  
   

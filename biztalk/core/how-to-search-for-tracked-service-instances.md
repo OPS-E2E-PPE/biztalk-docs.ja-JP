@@ -12,20 +12,20 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3770e871e7be022ff7f4597b8d3eb4d8f307cc37
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d1ff8801c272859e6a138fcb1e4e618226de10a5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966515"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383978"
 ---
-# <a name="how-to-search-for-tracked-service-instances"></a>追跡対象サービス インスタンスを検索する方法
-使用することができます、**クエリ** タブで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールのすべての追跡サービス インスタンスを検索します。 サービス インスタンスを検索するには、アセンブリの名前とバージョン、有効期間の開始時刻と終了時刻、サービス クラスの名前またはインスタンス ID、ホスト名、エラー コード、サービス インスタンスの状態に基づいて検索できます。  
+# <a name="how-to-search-for-tracked-service-instances"></a>追跡サービス インスタンスを検索する方法
+使用することができます、**クエリ** タブで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールのすべての追跡サービス インスタンスを検索します。 サービス インスタンスを検索するには、サービス クラス、ホスト名、エラー コード、およびサービス インスタンスの状態の有効期間、名、またはインスタンス ID の開始および終了時刻、アセンブリのバージョンと名前で検索することができます。  
 
 ## <a name="prerequisites"></a>前提条件  
- ここで示す手順を実行するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Operators グループのメンバーとしてログオンする必要があります。  
+ この手順を実行する必要がありますがログオンしてのメンバーとして、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Operators グループ。  
 
-### <a name="to-search-for-tracked-service-instances"></a>追跡対象サービス インスタンスを検索するには  
+### <a name="to-search-for-tracked-service-instances"></a>追跡サービス インスタンスを検索するには  
 
 1. クリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]します。  
 
@@ -41,13 +41,13 @@ ms.locfileid: "36966515"
    |          アイテム           |                     説明                      |
    |-------------------------|------------------------------------------------------|
    |    **アセンブリ名**    |    サービス インスタンスのアセンブリの名前。    |
-   |  **アセンブリのバージョン**   |           サービス インスタンスのバージョン。           |
+   |  **アセンブリのバージョン**   |           サービス インスタンスのバージョンです。           |
    |      **[終了時刻]**       |          サービス インスタンスの終了時刻。           |
-   |     **エラー コード**      | サービス インスタンスに関連付けられているエラー コード。 |
+   |     **エラー コード**      | サービス インスタンスに関連付けられたエラー コード。 |
    |      **Host Name**      |        サービス インスタンスのホスト名。        |
-   |   **最大一致数**   |          一致項目の表示数を指定します。           |
-   |    **サービス クラス**    |          サービス インスタンスのクラス。          |
-   | **サービス インスタンス ID** |               サービス インスタンス ID。               |
+   |   **最大一致数**   |          表示する一致の数。           |
+   |    **サービス クラス**    |          サービス インスタンスのクラスです。          |
+   | **サービス インスタンス ID** |               サービス インスタンス id。               |
    |    **[サービス名]**     |          サービス インスタンスの名前。           |
    |     **Start Time**      |       サービス インスタンスの開始時刻。        |
    |        **State**        |          サービス インスタンスの状態。          |

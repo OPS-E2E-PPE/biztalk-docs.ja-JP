@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b0e54e0eac7e3f8ae54d23417033388bc493b0ab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a34b014015d97a6dfa9dc11345e47480f055a237
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981635"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399493"
 ---
-# <a name="unexpected-root-element"></a>ルート要素が正しくありません
+# <a name="unexpected-root-element"></a>予期しないルート要素
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                    |
@@ -30,10 +30,10 @@ ms.locfileid: "36981635"
 |  イベント ソース   |                                         0                                          |
 |    コンポーネント    |                                         0                                          |
 |  シンボル名  |                                         0                                          |
-|  メッセージ テキスト   |                              ルート要素が正しくありません                               |
+|  メッセージ テキスト   |                              予期しないルート要素                               |
   
 ## <a name="explanation"></a>説明  
- ヘッダー プロパティにない\<ヘッダー\>...\</headers\>形式。 通常、この状況は InboundHeaders および OutboundCustomHeaders に適用されます。  
+ ヘッダー プロパティにない\<ヘッダー\>...\</headers\>形式。 通常、このような状況は InboundHeaders および OutboundCustomHeaders に適用されます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  ヘッダー プロパティの形式であることを確認\<ヘッダー\>.\</headers\>します。

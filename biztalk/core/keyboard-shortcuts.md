@@ -1,5 +1,5 @@
 ---
-title: キーボード ショートカット |Microsoft ドキュメント
+title: キーボード ショートカット |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee67d21ec067e0364fe4b7d0f0444afcae53ddbf
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 0cb656f693517c996cbf52c680b263690e38dd77
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006368"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380669"
 ---
 # <a name="keyboard-shortcuts"></a>キーボード ショートカット
 このセクションでは、Microsoft BizTalk Server のキーボード ショートカットを一覧表示します。  

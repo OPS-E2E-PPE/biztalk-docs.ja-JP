@@ -16,18 +16,18 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fdcbe5ff9063db629da59bc98941350fe800b5db
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3c0608c48539e18b31235683d09e2da217c9b88c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401769"
 ---
 # <a name="sso-biztalk-server-samples-folder"></a>SSO (BizTalk Server Samples フォルダー)
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ソフトウェア開発キット (SDK) には、エンタープライズ シングル サインオン (SSO) のサンプルが 2 つ付属しています。 このセクションでは、SSO のサンプルで示されている機能の詳細、サンプルのビルドと実行の手順、および予想される結果について説明します。  
+Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソフトウェア開発キット (SDK) の 2 つのエンタープライズ シングル サインオン (SSO) のサンプルが含まれています。 ここでは、SSO のサンプルで示されているビルドと、サンプルでは、および予想される結果の実行手順については、機能に関する詳細な情報を示します。  
 
 ## <a name="in-this-section"></a>このセクションの内容  
 
-- [HTTPSSO (BizTalk Server サンプル)](../core/httpsso-biztalk-server-sample.md)します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP アダプタでエンタープライズ シングル サインオンを使用する方法を示します。  
+- [HTTPSSO (BizTalk Server サンプル)](../core/httpsso-biztalk-server-sample.md)します。 エンタープライズ シングル サインオンを使用する方法を示します、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP アダプター。  
 
-- [管理 (BizTalk Server サンプル)](../core/manage-biztalk-server-sample.md)します。 コマンド ライン ユーティリティ ssomanage.exe で管理操作を実行するために使用できる .xml ファイルを構築する方法を示します。
+- [管理 (BizTalk Server サンプル)](../core/manage-biztalk-server-sample.md)します。 コマンドラインで使用できる .xml ファイルを構築する方法を示しますユーティリティ ssomanage.exe 管理操作を実行します。

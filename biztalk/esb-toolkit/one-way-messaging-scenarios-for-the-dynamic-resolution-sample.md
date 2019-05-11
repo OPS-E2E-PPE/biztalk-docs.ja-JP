@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 359b91a1a5da9ce435d3d9aa5884d6928d0e0a9b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ad8fe10f3da18822e722c57159fd9707de5ced8a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987539"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400062"
 ---
 # <a name="one-way-messaging-scenarios-for-the-dynamic-resolution-sample"></a>動的解決サンプルの一方向のメッセージング シナリオ
 このトピックでは、の一方向メッセージング シナリオを実行する方法、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]動的解決サンプル。  
@@ -85,7 +85,7 @@ ms.locfileid: "36987539"
 
 5. Windows エクスプ ローラーでフォルダー \Source\Samples\DynamicResolution\Test\Data 開きフォルダー \Source\Samples\DynamicResolution\Test\Filedrop\In に適切な入力ファイルをコピーします。 使用するファイルは、実行することを決定した例では、によって異なります。  
 
-   -   XPATH の例で、次のファイルのいずれかを使用: NAOrderDoc_XPATH_FILE.xml、NAOrderDoc_XPATH_FTP.xml、または NAOrderDoc_XPATH_MQS.xml します。  
+   -   XPATH の例では、次のファイルのいずれかを使用します。NAOrderDoc_XPATH_FILE.xml、NAOrderDoc_XPATH_FTP.xml、または NAOrderDoc_XPATH_MQS.xml します。  
 
    -   その他のすべての例では、NAOrderDoc.xml ファイルを使用します。  
 
@@ -99,4 +99,4 @@ ms.locfileid: "36987539"
 
    -   ファイル送信の例では、XPATH の競合回避モジュールを使用するファイルの受信メッセージで指定した場所にメッセージが配信されます。 サンプル ドキュメントには、移行先の場所およびトランスポートの種類を含めることが (トランスポートの種類がメッセージのファイル名に追加されます。 たとえば、NAOrderDoc_XPATH_FTP.xml メッセージには、FTP トランスポートの型の仕様が含まれます。)。  
 
-   ESB ディスパッチャーと ESB ディスパッチャー逆アセンブラー パイプライン コンポーネントのサンプルの使用については、[、動的解決サンプルのしくみ](../esb-toolkit/how-the-dynamic-resolution-sample-works.md)を参照してください。
+   ESB ディスパッチャーと ESB ディスパッチャー逆アセンブラー パイプライン コンポーネントのサンプルの使用については、次を参照してください。 [、動的解決サンプルのしくみ](../esb-toolkit/how-the-dynamic-resolution-sample-works.md)します。

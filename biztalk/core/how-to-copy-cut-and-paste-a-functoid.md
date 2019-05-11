@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5c99fc624ce76a9bdd8adc4addc4a8be5ab9d035
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 53fbd0d8c5a4a72263b6abf0eb3918d130cf53fd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65340136"
 ---
 # <a name="how-to-copy-cut-and-paste-a-functoid"></a>コピー、切り取り、および貼り付けする方法について
 BizTalk マッパーのコピー機能、切り取り機能、および貼り付け機能により、Functoid を再利用できます。 マップで、1 つ以上の Functoid をあるグリッド ページから別のグリッド ページにコピー、切り取り、および貼り付けることができます。 このトピックでは、これらの操作を実行するための手順について説明します。  
@@ -37,7 +37,7 @@ BizTalk マッパーのコピー機能、切り取り機能、および貼り付
   
 - Visual Studio のインスタンス間  
   
-  切り取り/貼り付け操作は元に戻したり、やり直したりすることができます。 詳細については、[を元に戻すまたはユーザーの操作をやり直す方法](../core/how-to-undo-or-redo-user-operations.md)を参照してください。  
+  切り取り/貼り付け操作は元に戻したり、やり直したりすることができます。 詳細については、次を参照してください。[を元に戻すまたはユーザーの操作をやり直す方法](../core/how-to-undo-or-redo-user-operations.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  これらの手順では、BizTalk マッパーが実行されている必要があります。  
@@ -49,12 +49,12 @@ BizTalk マッパーのコピー機能、切り取り機能、および貼り付
 2.  コピーする Functoid を選択します。 複数の functoid を選択するには、Ctrl キーを押しながら他の functoid をクリックします。  
   
     > [!NOTE]
-    >  "リボン選択" 操作を使用して、複数のリンクや Functoid を選択できます。 詳細については、[および Functoid を複数のリンクを選択する方法](../core/how-to-select-multiple-links-and-functoids.md)を参照してください。  
+    >  "リボン選択" 操作を使用して、複数のリンクや Functoid を選択できます。 詳細については、次を参照してください。[および Functoid を複数のリンクを選択する方法](../core/how-to-select-multiple-links-and-functoids.md)します。  
   
 3.  選択範囲を右クリックし、クリックして**コピー**します。 またはをクリック**コピー** 、Visual Studio から**編集**メニューまたはキーボードの ctrl キーを押しながら C キーを押します。  
   
     > [!NOTE]
-    >  キーボード ショートカットの一覧は、[BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)を参照してください。  
+    >  キーボード ショートカットの一覧は、次を参照してください。 [BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)します。  
   
 4.  Functoid を貼り付ける場所にカーソルを置きます。  
   
@@ -69,7 +69,7 @@ BizTalk マッパーのコピー機能、切り取り機能、および貼り付
 3.  選択範囲を右クリックし、クリックして**切り取り**します。 またはをクリック**切り取り**、Visual Studio から**編集**メニューまたはキーボードの ctrl キーを押しながら X キーを押します。  
   
     > [!NOTE]
-    >  キーボード ショートカットの一覧は、[BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)を参照してください。  
+    >  キーボード ショートカットの一覧は、次を参照してください。 [BizTalk マッパーのキーボード ショートカット](../core/biztalk-mapper-keyboard-shortcuts.md)します。  
   
 4.  Functoid を貼り付ける場所にカーソルを置きます。  
   

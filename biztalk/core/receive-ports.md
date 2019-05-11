@@ -1,5 +1,5 @@
 ---
-title: 受信ポート |Microsoft ドキュメント
+title: 受信ポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,16 +15,16 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03d745d4811b5628d27da47f9d1d2a241745976b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d35d595b4af50f82ab12faef53da79971f146762
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268322"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398202"
 ---
 # <a name="receive-ports"></a>受信ポート
-受信ポートは、一方向のポートまたは双方向のポートとして利用できます。 一方向の受信ポートは、メッセージの受信だけ行います。 要求 - 応答 (または双方向) ポートを使用すると、メッセージを送受信できます。 受信ポートは、受信場所の論理的な集まりです。 たとえば、複数の受信場所を作成すると、これらの場所で受信されるメッセージを特定のオーケストレーションで処理できます。  
+受信ポートは、一方向のポートまたは双方向のポートとして機能できます。 一方向の受信ポートのみがメッセージを受信します。 要求-応答 (または双方向) ポートは受信し、メッセージを送信します。 受信ポートは、受信場所の論理的なグループです。 複数作成する例では、受信場所、および特定のオーケストレーションによって処理されるこれらの場所で受信したメッセージをします。  
   
 ## <a name="see-also"></a>参照  
  [受信ポートの管理](../core/managing-receive-ports.md)   
- [成果物](../core/artifacts.md)
+ [アイテム](../core/artifacts.md)

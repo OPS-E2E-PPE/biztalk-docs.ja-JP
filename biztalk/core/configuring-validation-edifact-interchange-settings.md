@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0a700282aee9651b8f259c931a460a774f900a4a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5999d52c8896a750810edfa64c0874c8d0948fef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999731"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355034"
 ---
 # <a name="configuring-validation-edifact-interchange-settings"></a>検証を構成する (EDIFACT インターチェンジの設定)
-このセクションでは、重複する制御番号が処理されないようにする方法について説明します。  
+このセクションでは、重複した制御番号が処理されていることを防止する方法の手順を提供します。  
   
 > [!IMPORTANT]
 >  プロパティは無効になりませんこのページをオフにした場合でも、**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信したメッセージを処理する**チェック ボックスを作成するパーティを作成するときに、。契約です。  
@@ -34,7 +34,7 @@ ms.locfileid: "36999731"
   
 2. 一方向アグリーメント タブで、**インターチェンジの設定**セクションで、**検証**です。  
   
-3. 選択、**インターチェンジ制御番号 (UNB5)** 受信パイプラインによる重複インターチェンジのブロックを有効にする チェック ボックス。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、このオプションをオンにした場合、受信したインターチェンジのインターチェンジ制御番号が、受信した他のインターチェンジのインターチェンジ制御番号と重複していないかどうかがチェックされます。 一致した制御番号が検出された場合、受信パイプラインはインターチェンジを処理しません。  
+3. 選択、**インターチェンジ制御番号 (UNB5)** 受信パイプラインによる重複インターチェンジのブロックを有効にする チェック ボックス。 選択した場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は受信したインターチェンジのインターチェンジ制御番号が別の受信したインターチェンジのインターチェンジ制御番号が一致しないことを確認します。 一致が検出されると、受信パイプラインはインターチェンジを処理できません。  
   
 4. 場合**インターチェンジ制御番号 (UNB5)** がオン、**内で重複する UNB5 をチェック**フィールドに、重複するインターチェンジを確認する日数を入力します。  
   

@@ -1,6 +1,6 @@
 ---
-title: TIBCO Enterprise Message Service のトラブルシューティング |Microsoft ドキュメント
-description: インストール時のエラーと BizTalk Server で TIBCO EMS アダプターのトラブルシューティングにイベント トレースを使用します。
+title: TIBCO Enterprise Message Service のトラブルシューティング |Microsoft Docs
+description: インストール エラーや BizTalk Server で TIBCO EMS アダプターのトラブルシューティングにイベント トレースを使用します。
 ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
@@ -13,19 +13,19 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0bfa02ffce631a1978b0c79630739ee80ec8cc72
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 5313742dc445b87034e8c04b9b448f34de9541e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013241"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400848"
 ---
 # <a name="troubleshooting-tibco-enterprise-message-service"></a>TIBCO Enterprise Message Service のトラブルシューティング
 
 ## <a name="overview"></a>概要
-ここでは、TIBCO Enterprise Message Service システムのエラー メッセージとその解決策について説明します。 また、Windows でイベント トレース機能を使用する方法についても説明します。  
+このセクションでは、TIBCO Enterprise Message Service システムでエラー メッセージを説明し、それらの考えられる解決策を提供します。 Windows のイベントのトレースを使用する方法についての情報も含まれています。  
   
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
   
 -   [Windows イベント トレーシングの使用](../core/using-event-tracing-for-windows3.md)  
   

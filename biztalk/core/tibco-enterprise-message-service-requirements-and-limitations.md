@@ -12,45 +12,45 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 453edabdadbd50b320a0bc078a638991ab7a3a5c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 94a0adbc67dfb78eef97876d65b4da50a343efce
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995987"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379842"
 ---
 # <a name="tibco-enterprise-message-service-requirements-and-limitations"></a>TIBCO Enterprise Message Service の要件と制限事項
 
 ## <a name="system-requirements"></a>システム要件  
-含まれている TIBCO Enterprise Message Service にはクライアント SDK (TIBCO EMS c# API を使用) が含まれています。 BizTalk Adapter for TIBCO EMS は、この API を使用して TIBCO EMS とやり取りします。  
+含まれている TIBCO Enterprise Message Service にはクライアント SDK (TIBCO EMS c# API を使用) が含まれています。 BizTalk Adapter for TIBCO EMS では、この API を使用して、TIBCO EMS と通信します。  
   
 ## <a name="add-the-api-to-the-gac"></a>API を GAC に追加します。  
- BizTalk Adapter for TIBCO EMS では、TIBCO EMS C# API である TIBCO.EMS.dll をグローバル アセンブリ キャッシュ (GAC) に追加する必要があります。 このアセンブリがインストールされていない場合、アダプターは例外をトリガーし、適切なメッセージを記録します。  
+ BizTalk Adapter for TIBCO EMS は、TIBCO EMS を必要とC#API, TIBCO します。EMS.dll、グローバル アセンブリ キャッシュ (GAC) に追加します。 アダプターは、例外をトリガーし、このアセンブリがインストールされていない場合、適切なメッセージを記録します。  
   
-1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターに TIBCO EMS C# API をコピーします。  
+1. コピーに TIBCO EMS C# #API、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター。  
   
-2. C# API ファイルである TIBCO.EMS.DLL の場所にディレクトリを変更します。  
+2. ディレクトリの場所を変更、 C# API ファイルで TIBCO します。EMS します。DLL です。  
   
-    既定のインストールでは、この DLL へのパスは c:\tibco\ems\clients\cs\TIBCO.EMS.DLL です。  
+    既定のインストールでは、この DLL へのパスは、c:\tibco\ems\clients\cs\TIBCO が。EMS します。DLL です。  
   
-3. コマンド プロンプトで、次のように入力します。  
+3. コマンド プロンプトで次のように入力します。  
   
     `C:\bin> gacutil /i TIBCO.EMS.dll`  
   
-    TIBCO.EMS.dll に GAC が表示されるようになります。  
+    TIBCO します。EMS.dll GAC が表示されるようになりました。  
   
     コントロール パネルの [GAC の一覧を表示、開く**管理ツール**オープン**Microsoft .NET Framework x.xconfiguration]**、順にクリックします**アセンブリ キャッシュ**します。  
   
 ## <a name="limitations"></a>制限事項  
- BizTalk Adapter for TIBCO Enterprise Message Service は、TIBCO.EMS.dll を使用して TIBCO Enterprise Message Service とやり取りします。 TIBCO EMS C# API を使用するときは、次の制限事項を考慮する必要があります。  
+ BizTalk Adapter for TIBCO Enterprise Message Service は、TIBCO を使用します。TIBCO Enterprise Message Service との通信に EMS.dll します。 TIBCO EMS を使用すると、次の制限を考慮する必要がありますC#API:  
   
--   この C# API では、メッセージ圧縮 (TIBCO EMS クライアントが EMS に圧縮形式でメッセージを送信できるようにします) は使用できません。  
+-   メッセージの圧縮は、TIBCO EMS クライアントで EMS に圧縮形式でメッセージを送信できるようにがで使用できない、 C# API。  
   
--   この C# API では、アダプターとサーバーの間でメッセージを暗号化することはできません。 この C# API では、OpenSSL ライブラリを使用した SSL 暗号化は許可されません。  
+-   アダプターとサーバー間のメッセージの暗号化では使用できない、 C# API。 C# OpenSSL ライブラリを使用して SSL 暗号化 API は許可されません。  
   
--   この C# API は、EMS 用の管理 API をサポートしません。  
+-   C# API が EMS 用の管理 API をサポートしていません。  
   
--   BizTalk TIBCO EMS アダプターを使用して、50 MB を超えるサイズのメッセージを送受信することはできません。 このサイズを超えた場合、System.OutOfMemoryException 例外が発生します。  
+-   サイズが 50 MB を超えるメッセージは送信できませんまたは BizTalk TIBCO EMS アダプターを使用して受信します。 環境では、このサイズを超えた System.OutOfMemoryException 例外が発生します。  
   
 ## <a name="see-also"></a>参照  
  [計画および設計](../core/planning-and-architecture16.md)

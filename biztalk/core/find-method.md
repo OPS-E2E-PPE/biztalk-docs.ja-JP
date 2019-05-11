@@ -1,5 +1,5 @@
 ---
-title: Find メソッド |Microsoft ドキュメント
+title: Find メソッド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a5432c68c36dcf8e769351af6d57f3cd3ed712b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 81599a87a88aaa383616653435119ec95d6ff430
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22245970"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345386"
 ---
 # <a name="find-method"></a>Find メソッド
-指定された部分検索キーに合致するキーの一覧を返すために使用します。 インスタンスが 1 つだけしかないコンポーネント インターフェイスの場合、つまりキーが存在しない場合、`Find()` 関数は生成されません。 関連項目[Get メソッド](../core/get-method.md)です。  
+指定された部分検索キーに合致するキーの一覧を取得するために使用します。 インスタンスを 1 つだけ持つコンポーネント インターフェイス、つまりがないこと、キーに注意してください、`Find()`関数は生成されません。 参照してください[Get メソッド](../core/get-method.md)します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -32,15 +32,15 @@ Find (partialKey, keyList)
   
 ## <a name="parameters"></a>パラメーター  
   
-|パラメーター|Description|  
+|パラメーター|説明|  
 |---------------|-----------------|  
-|`partialKey`|個々のキーが任意の場合の構造。|  
-|`keyList`|`partialKey` と一致するキーのリスト。 これは、出力パラメーターです。<br /><br /> 特定のコンポーネント インターフェイスについて定義された Find Keys のセットに対応するキー。|  
+|`partialKey`|個々 のキーが省略可能な構造体。|  
+|`keyList`|一致するキーの一覧、`partialKey`します。 これは、出力パラメーターです。<br /><br /> キーは、特定のコンポーネント インターフェイスに定義された Find Keys のセットに対応します。|  
   
-## <a name="remarks"></a>解説  
- 部分キーを指定する場合、PeopleSoft 内部の `Find()` 関数の場合と同じワイルドカード検索を使用することができます。 たとえば、"11" という部分 ACCOUNT キーは "11" で始まるすべての ACCOUNT キーを返し、"%40" の場合はキー内に "40" が含まれるすべての ACCOUNT キーを返します。 "_4_4" という部分キーは、2 文字目と 4 文字目に "4" という文字が含まれるすべての ACCOUNT キーを返します。  
+## <a name="remarks"></a>コメント  
+ 部分キーを指定すると、PeopleSoft 内部の同じワイルドカード検索を使用することは`Find()`関数。 たとえば、「11」の部分のアカウント キーは「11」で始まるすべてのアカウント キーを返しますの一方"40"が、キーの任意の場所にある「40」が含まれているすべてのアカウント キーを返します。 部分キー「_4_4」は、2 番目と 4 番目の位置に文字「4」ですべてのアカウント キーを返します。  
   
- 注: PeopleSoft Server の現在の実装で 300 を超える項目が検索条件に一致する場合、呼び出しは失敗します。 これは、PeopleSoft Server の制限です。 Microsoft BizTalk Adapter for PeopleSoft Enterprise の `Find()` メソッドは、コンポーネント インターフェイスに含まれる PeopleSoft の `Find` 関数が有効で、Get キーが利用できる場合に提供されます。  
+ 注:PeopleSoft Server の現在の実装で 300 を超える項目が、検索条件に一致する場合は、呼び出しが失敗します。 これは、PeopleSoft server の制限です。 Microsoft BizTalk Adapter for PeopleSoft Enterprise`Find()`メソッドが提供される場合、PeopleSoft`Find`コンポーネント インターフェイスで関数が有効になっており、Get キーが提供されます。  
   
 ## <a name="see-also"></a>参照  
- [付録 a: コンポーネント インターフェイス メソッド](../core/appendix-a-component-interface-methods.md)
+ [付録 a:コンポーネント インターフェイス メソッド](../core/appendix-a-component-interface-methods.md)

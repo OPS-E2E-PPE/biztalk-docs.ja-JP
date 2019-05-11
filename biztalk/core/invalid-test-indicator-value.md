@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 89245453e7b1b7d8c40e33bf25a3ab3aac1933db
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 01525f716ab77b91c83e3baf884761b317d78ec1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991027"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381041"
 ---
 # <a name="invalid-test-indicator-value"></a>テスト インジケーターの値が無効です
 ## <a name="details"></a>詳細  

@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c4dcacede998ec0c921a379841e9b31389f2aa20
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c80c4be7e6b647ab7f62d025f867b2e1a808ab2f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389592"
 ---
 # <a name="deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application"></a>Visual Studio から BizTalk アプリケーションへの BizTalk アセンブリの展開
 デプロイおよびから BizTalk アセンブリを再デプロイ[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]BizTalk アプリケーションにします。 この処理を使用して、開発したアセンブリの機能をテストし、ハンドオフ用にパッケージすることができます。  
@@ -25,7 +25,7 @@ ms.locfileid: "37007187"
 ## <a name="overview"></a>概要  
  BizTalk アプリケーションは、BizTalk ビジネス ソリューションを構成する "アイテム" を表示して管理する手段を提供します。 アイテムに含まれる BizTalk アセンブリ (オーケストレーション、スキーマ、マップ、パイプラインなど) は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] から [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に展開できます。 また、アイテムには .NET アセンブリ、証明書、スクリプト、Readme ファイル、ポリシーなども含まれます。これらは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールまたは BTSTask コマンドライン ツールを使用して BizTalk アプリケーションに追加します。 その後、ソリューション開発者や IT 管理者は、アプリケーションとそのアイテムを 1 つのエンティティとして表示、パッケージ化、展開、および管理できます。 作成の詳細については、デプロイ、および、BizTalk アプリケーションの管理について[Deploying and Managing BizTalk Applications](../core/deploying-and-managing-biztalk-applications.md)します。  
   
- BizTalk アセンブリをビルドおよび展開するには、まず [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でプロジェクトを作成し、アセンブリに組み込むアイテムを作成または追加する必要があります。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でソリューションを作成して、複数のプロジェクトを組み込んだ後、アセンブリをビルドし、すべてのアセンブリをまとめて同じアプリケーションまたは異なるアプリケーションに展開できます。 これらのタスクを実行する方法の詳細については、[BizTalk プロジェクトを作成する方法](../core/how-to-create-biztalk-projects.md)を参照してください。  
+ BizTalk アセンブリをビルドおよび展開するには、まず [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でプロジェクトを作成し、アセンブリに組み込むアイテムを作成または追加する必要があります。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でソリューションを作成して、複数のプロジェクトを組み込んだ後、アセンブリをビルドし、すべてのアセンブリをまとめて同じアプリケーションまたは異なるアプリケーションに展開できます。 これらのタスクを実行する方法の詳細については、次を参照してください。 [BizTalk プロジェクトを作成する方法](../core/how-to-create-biztalk-projects.md)します。  
   
  これらの作業が完了した後は、このセクションの各トピックで説明されている手順に従って、BizTalk アセンブリのビルド、展開、および展開解除を行うことができます。  
   
@@ -41,7 +41,7 @@ ms.locfileid: "37007187"
   
 - アセンブリを展開解除します。  
   
-  BizTalk アプリケーションに 1 つ以上のアセンブリを展開した後は、アプリケーションの構成を完了し、テスト環境に展開し、さらに実稼働環境に展開できます。 詳細については、[BizTalk アプリケーション展開の開発タスク](../core/development-tasks-for-biztalk-application-deployment.md)を参照してください。  
+  BizTalk アプリケーションに 1 つ以上のアセンブリを展開した後は、アプリケーションの構成を完了し、テスト環境に展開し、さらに実稼働環境に展開できます。 詳細については、次を参照してください。 [BizTalk アプリケーション展開の開発タスク](../core/development-tasks-for-biztalk-application-deployment.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

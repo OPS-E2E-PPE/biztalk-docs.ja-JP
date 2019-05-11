@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24c44951b4284e0d17b2d8e69011cedfa213c219
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b0687b57ed18cd657a70ce50f1d1efc284d6392
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967763"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379489"
 ---
 # <a name="administration-using-the-esb-management-portal"></a>ESB 管理ポータルを使用した管理
 ESB 管理ポータルの一部として含まれている、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]は、BizTalk ESB Toolkit を拡張するためのメトリックと存在する可能性の使用方法を示すサンプル サイトです。 ポータルでは、独自のカスタマイズされたポータルを作成、開始点を提供します。  
@@ -37,7 +37,7 @@ ESB 管理ポータルの一部として含まれている、[!INCLUDE[esbToolki
 -   [UDDI 登録を表示し、発行する](../esb-toolkit/viewing-and-publishing-uddi-registrations.md)  
   
 > [!NOTE]
->  ESB 管理ポータルの個々 の機能の詳細については、[ESB 管理ポータル機能リファレンス](../esb-toolkit/esb-management-portal-feature-reference.md)を参照してください。  
+>  ESB 管理ポータルの個々 の機能の詳細については、次を参照してください。 [ESB 管理ポータル機能リファレンス](../esb-toolkit/esb-management-portal-feature-reference.md)します。  
   
 ## <a name="esb-portal-technologies"></a>ESB ポータル テクノロジ  
  ESB 管理ポータルでは、次のテクノロジを利用します。  

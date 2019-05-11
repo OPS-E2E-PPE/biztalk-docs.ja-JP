@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server の依存関係のトラブルシューティング |Microsoft ドキュメント
+title: BizTalk Server の依存関係のトラブルシューティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a75cf1986c9c7bf66aa48370704ca3569d0db87
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4b532fcdd7b323ad537a6cd0534ae690bd0c360c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279250"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398686"
 ---
-# <a name="troubleshooting-biztalk-server-dependencies"></a>BizTalk Server の依存関係に関するトラブルシューティング
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、デザイン時および実行時の操作において他の Microsoft 製品を頻繁に使用します。 ここでは、これらの基本テクノロジで発生する可能性がある問題を解決するために、トラブルシューティングのガイドラインを示します。  
+# <a name="troubleshooting-biztalk-server-dependencies"></a>BizTalk Server の依存関係のトラブルシューティング
+Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]デザイン時および実行時の操作の他のいくつかのマイクロソフト製品の広範に使用します。 このセクションには、これらのテクノロジを基になるで発生する可能性がある問題を解決するためのトラブルシューティングのガイドラインが含まれています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [MSDTC の問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)  
+-   [MSDTC に関する問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)  
   
 -   [証明書のトラブルシューティング](../core/troubleshooting-certificates.md)  
   

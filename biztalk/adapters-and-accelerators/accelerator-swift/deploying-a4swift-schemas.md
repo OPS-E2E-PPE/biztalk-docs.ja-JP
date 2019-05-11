@@ -17,23 +17,23 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8382141993d214ffbfc79a0a4eec3f2c06b4e456
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3bcd4b739313affc65788b1511bed4bd786616c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966363"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378354"
 ---
 # <a name="deploying-a4swift-schemas"></a>A4SWIFT スキーマの展開
 交換する SWIFT メッセージのスキーマを展開する必要があります。  
   
- **概要**  
+ **まとめ**  
   
  次のスキーマを展開します。  
   
 -   SWIFT Base Types.xsd  
   
--   SWIFT の一般的なデータ Types.xsd  
+-   SWIFT Common Data Types.xsd  
   
 -   メッセージの種類では、たとえば、MT103.xsd に対して特定のスキーマ  
   

@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e9a1dfb93db66dc6bb339df34359e21e328066ff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 317ba547f4b0716bf3b419e9309c1076217d4d5a
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979355"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529084"
 ---
-# <a name="based-on-the-specified-delimiter-set-no-valid-time-value-could-be-generated"></a>指定された区切り記号セットに基づいて有効な時刻値を生成できませんでした
+# <a name="based-on-the-specified-delimiter-set-no-valid-time-value-could-be-generated"></a>指定された区切り記号セットに基づいて、有効な時刻値でしたを生成できません。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                 |

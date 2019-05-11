@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e89c34b29818ab053217b823c6f8a787ce50a15d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cdd76cf788447aa496ac986c9ed9a287958f3b5e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999835"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378515"
 ---
 # <a name="creating-a-new-message-template"></a>新しいメッセージ テンプレートの作成
 既存のテンプレートから新しいメッセージ テンプレートを作成できます。 これにより、作成者が既に一部のデータが入力されている標準の SWIFT フォームのコピーなどのカスタム フォームで新しいメッセージ インスタンスを作成できます。 新しいテンプレートを使用して、作成者は、する必要はありませんすべての空のフォームを使用する場合に必要なデータを入力します。  

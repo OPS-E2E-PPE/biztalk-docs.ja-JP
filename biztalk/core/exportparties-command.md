@@ -1,5 +1,5 @@
 ---
-title: ExportParties コマンド |Microsoft ドキュメント
+title: ExportParties コマンド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,32 +12,32 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ca525872ccc1cd941673189c4ac176fc4631f22
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 63245cf72306af5bb4c28552a037ce89d8e6bfe8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22245818"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345912"
 ---
 # <a name="exportparties-command"></a>ExportParties コマンド
-すべてのパーティとアグリーメントを XML バインド ファイルにエクスポートします。
+すべてのパーティーと契約を XML バインド ファイルにエクスポートします。
 
 > [!IMPORTANT]
-> このコマンドは、以降で新しい **[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]** 、および以降のバージョン。
+> このコマンドは、以降では新しい**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**、およびそれ以降のバージョン。
 
 ## <a name="usage"></a>使用方法
-  **BTSTask ExportParties-宛先**:*値*[**-サーバー**:*値*] [**-データベース**:*値*]
+  **BTSTask ExportParties -Destination**:*value* [**-Server**:*value*] [**-Database**:*value*]
   
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|必須|値|  
 |---|---|---|  
-| **変換先** | 必須 | 書き込み先 XML バインド ファイルのパスとファイルの名前。 |
+| **変換先** | 必須 | 書き込む XML バインド ファイルのパスとファイルの名前。 |
 | **-サーバー** | 省略可 | BizTalk 構成データベースをホストする SQL server の名前。 |
-| **複数のデータベース** | 省略可 | BizTalk 構成データベースの名前。|
+| **-データベース** | 省略可 | BizTalk 構成データベースの名前。|
 
 ## <a name="sample"></a>サンプル
   `ExportParties  -Destination:"C:\Temp\MyParties.Xml"` 
 
-## <a name="remarks"></a>解説
-  パーティ、アグリーメント、および EDI フォールバックの設定のみがエクスポートされます。 アプリケーションのアイテムはエクスポートされません。
+## <a name="remarks"></a>コメント
+  パーティ、契約、および EDI フォールバックの設定のみがエクスポートされます。 アプリケーション アイテムはエクスポートされません。

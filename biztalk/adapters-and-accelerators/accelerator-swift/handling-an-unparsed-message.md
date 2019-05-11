@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b24b7db4013e5e1f8fdb03c1278a19dc070d0e0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 77478326c3f2f457c5b88b4234d8087ec512215b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998667"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377501"
 ---
 # <a name="handling-an-unparsed-message"></a>未解析メッセージの処理
 このセクションでは、未解析のメッセージを処理する方法について説明します。 検証に失敗したメッセージとは異なり、メッセージを修復することはできませんを[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]を解析できません。 Message Repair and New Submission は、メッセージと、解析エラーの性質を表示し、メッセージを印刷したり、ローカル ファイルに保存することができます。 エンティティは解析エラーの特定の性質にメッセージを送信し、通知を送信できます。  

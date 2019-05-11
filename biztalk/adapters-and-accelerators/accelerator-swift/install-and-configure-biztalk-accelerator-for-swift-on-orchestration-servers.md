@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6811d3dd79de75968b3976b7568075158017609d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a2dcf11738d89600c190cdec99375348404f47f3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377347"
 ---
 # <a name="installing-and-configuring-biztalk-accelerator-for-swift-on-orchestration-servers"></a>インストールと SWIFT オーケストレーション サーバー上の BizTalk アクセラレータを構成します。
 このセクションは、インストールして構成する方法を説明します[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]オーケストレーション サーバーにします。 これらのサーバーは主に、FIN Repair and Reconciliation のオーケストレーションとメッセージの修復]、[新しい送信オーケストレーションの実行に使用します。  

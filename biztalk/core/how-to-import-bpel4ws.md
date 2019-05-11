@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0043cca1305f0acf7f07878acd7e75b1390ffea5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d52dba33e4dadb788cca4ba60969989967fd9532
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995971"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384990"
 ---
 # <a name="import-bpel4ws-in-biztalk-server"></a>BizTalk Server での BPEL4WS をインポートします。
 既存の BPEL4WS をインポートすることによってオーケストレーションを作成することができます。  
@@ -25,7 +25,7 @@ ms.locfileid: "36995971"
 > [!IMPORTANT]
 >  このリリースの BizTalk Server では、BPEL4WS 1.1 をサポートします。 BPEL4WS 1.0 をインポートまたはエクスポートすることはできません。  
   
- BPEL4WS をインポートする方法の例は、[BPEL インポート (BizTalk Server サンプル)](../core/bpel-import-biztalk-server-sample.md)を参照してください。  
+ BPEL4WS をインポートする方法の例は、次を参照してください。 [BPEL インポート (BizTalk Server サンプル)](../core/bpel-import-biztalk-server-sample.md)します。  
   
 ## <a name="import-bpel4ws-into-an-orchestration"></a>オーケストレーションを BPEL4WS をインポート  
   

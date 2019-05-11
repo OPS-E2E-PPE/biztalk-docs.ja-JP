@@ -12,17 +12,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4c3da9c438de2f6fb6140e33f986631c5bf3e12b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 255236d6a28ee82fa4131b2189a97c9d0962c7d3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989643"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65339003"
 ---
 # <a name="create-schemas-for-envelopes"></a>エンベロープ用スキーマを作成します。
 
 ## <a name="overview"></a>概要
-」の説明に従って XML メッセージ スキーマの作成後に[XML メッセージ用スキーマの作成](../core/how-to-create-schemas-for-xml-messages.md)設定、**エンベロープ**のプロパティ、**スキーマ**ノード**を[はい]**. 複数のルート ノードが存在するかどうかなど、エンベロープ スキーマの特性によっては、エンベロープ固有のプロパティを追加設定する必要があります。 詳細については、[エンベロープ スキーマ](../core/envelope-schemas.md)を参照してください。  
+」の説明に従って XML メッセージ スキーマの作成後に[XML メッセージ用スキーマの作成](../core/how-to-create-schemas-for-xml-messages.md)設定、**エンベロープ**のプロパティ、**スキーマ**ノード**を[はい]**. 複数のルート ノードが存在するかどうかなど、エンベロープ スキーマの特性によっては、エンベロープ固有のプロパティを追加設定する必要があります。 詳細については、次を参照してください。[エンベロープ スキーマ](../core/envelope-schemas.md)します。  
 
  エンベロープの "ボディ XPath" プロパティは、ドキュメント要素を格納する要素を示します。 XPath が指し示す実際の要素が、このドキュメントに属しているわけではありません。  
 

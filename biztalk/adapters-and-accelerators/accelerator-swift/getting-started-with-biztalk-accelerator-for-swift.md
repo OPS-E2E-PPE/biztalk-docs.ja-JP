@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: da68b97feb88ca231dacbf0b7128ad05541abc95
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1e67af29e4f8d14339b6e394f047d583f6800d74
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011339"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377662"
 ---
 # <a name="getting-started-with-biztalk-accelerator-for-swift"></a>BizTalk accelerator for SWIFT 作業の開始
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]スキーマ、ルール、および内部アプリケーションと SWIFT のメッセージングの統合に役立つ関連ツールのセットを提供します。 A4SWIFT MicrosoftBizTalk のサーバーが必要ですし、使用して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]コンポーネントと解析、検証、ルールの処理、スキーマを実装する機能、およびオーケストレーションします。 A4SWIFT では、複数の財務 (FIN) メッセージ、メッセージの修復と新しい提出、および FIN 応答の調整を含むファイルの分割処理も実装します。  
@@ -34,7 +34,7 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |詳細については|参照先|  
 |--------------------|---------|  
 |A4SWIFT の概念と機能| [ランタイム、メッセージの修復、FIN 応答、メッセージング](../../adapters-and-accelerators/accelerator-swift/runtime-message-repair-fin-response-and-messaging.md)|  
-|A4SWIFT のエンド ツー エンド チュートリアル|-   [モジュール 1: SWIFT ソリューションの作成](../../adapters-and-accelerators/accelerator-swift/module-1-creating-a-swift-solution.md)<br />-   [モジュール 2: 新しいスキーマ プロジェクトの追加](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)<br />-   [モジュール 3: パイプライン プロジェクトの追加](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)<br />-   [モジュール 4: 受信の XML を作成し、フラット ファイル送信ポート](../../adapters-and-accelerators/accelerator-swift/module-4-adding-an-xml-receive-location-and-flat-file-send-port.md)<br />-   [モジュール 5: フラット ファイルを作成する受信し、XML 送信ポート](../../adapters-and-accelerators/accelerator-swift/module-5-adding-a-flat-file-receive-location-and-xml-send-port.md)<br />-   [モジュール 6: ビジネス ルールの展開](../../adapters-and-accelerators/accelerator-swift/module-6-deploying-the-business-rules.md)<br />-   [モジュール 7: 有効なフラット ファイル インスタンスをテストします。](../../adapters-and-accelerators/accelerator-swift/module-7-testing-a-valid-flat-file-instance.md)|  
+|A4SWIFT のエンド ツー エンド チュートリアル|-   [モジュール 1:SWIFT ソリューションの作成](../../adapters-and-accelerators/accelerator-swift/module-1-creating-a-swift-solution.md)<br />-   [第 2 章:新しいスキーマ プロジェクトの追加](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)<br />-   [第 3 章:パイプライン プロジェクトの追加](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)<br />-   [モジュール 4:受信 XML を作成し、フラット ファイル送信ポート](../../adapters-and-accelerators/accelerator-swift/module-4-adding-an-xml-receive-location-and-flat-file-send-port.md)<br />-   [第 5 章:受信フラット ファイルを作成して XML 送信ポート](../../adapters-and-accelerators/accelerator-swift/module-5-adding-a-flat-file-receive-location-and-xml-send-port.md)<br />-   [第 6 章:ビジネス ルールの展開](../../adapters-and-accelerators/accelerator-swift/module-6-deploying-the-business-rules.md)<br />-   [モジュール 7:有効なフラット ファイル インスタンスのテスト](../../adapters-and-accelerators/accelerator-swift/module-7-testing-a-valid-flat-file-instance.md)|  
 |A4SWIFT のインストール|[BizTalk Accelerator for SWIFT のインストール ガイド](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=9ac5431e-19a5-4901-8727-a8d01a2d75c8)|  
 |A4SWIFT の用語|[用語集](../../adapters-and-accelerators/accelerator-swift/glossary6.md)|  
 |メッセージのバッチを処理|[受信場所と InfoPath フォームを介したメッセージの送信](../../adapters-and-accelerators/accelerator-swift/submitting-messages-through-receive-locations-and-infopath-forms.md)|  

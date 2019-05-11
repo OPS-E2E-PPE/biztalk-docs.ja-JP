@@ -1,5 +1,5 @@
 ---
-title: フォールト メッセージ 2 を追加する方法 |Microsoft ドキュメント
+title: フォールト メッセージ 2 を追加する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,27 +15,27 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6dee8a1fca0e30a96b6a714b5c717c0638bc8144
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8835098f95c34b506714306afd4c5e7fc42d1b63
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246458"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387360"
 ---
 # <a name="how-to-add-a-fault-message"></a>エラー メッセージを追加する方法
-作成したバックエンド システムへのポートには、要求と応答が含まれています。 エラーに割り当てることができるように、メッセージを追加する必要があります。  
+バックエンド システムへのポートを作成するときに、要求と応答が含まれます。 エラーに割り当てることができますようにメッセージを追加する必要があります。  
   
 ### <a name="to-add-a-fault-message"></a>エラー メッセージを追加するには  
   
-1.  **オーケストレーション**ウィンドウを右クリックして**メッセージ**を選択し、**新しいメッセージ**です。  
+1.  **オーケストレーション**ウィンドウで、右クリック**メッセージ**を選択し、**新しいメッセージ**。  
   
-     これにより Message_3 が作成され、このエラーに割り当てることができます。  
+     これには、エラーに割り当てることができる Message_3 が作成されます。  
   
-2.  Message_3 を右クリックし **プロパティ**です。  
+2.  Message_3 を右クリックして**プロパティ**します。  
   
-3.  **プロパティ**ダイアログ ボックスで、設定、**メッセージの種類**です。  
+3.  **プロパティ**ダイアログ ボックスで、セット、**メッセージの種類**します。  
   
-     選択 **.NET クラス**し、 **SystemString**です。  
+     選択 **.NET クラス**選び **[systemstring]** します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server 例外処理の使用](../core/using-biztalk-server-exception-handling3.md)

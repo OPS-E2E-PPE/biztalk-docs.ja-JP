@@ -1,5 +1,5 @@
 ---
-title: マップ項目を強調する方法 |Microsoft ドキュメント
+title: マップ項目を強調する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,31 +12,31 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6bb03969a044c6a474f5d2d1c1e5e1a5067cf81
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 5be500ad36b27848733863ffde1a648d42c7db17
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
-ms.locfileid: "22255442"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385147"
 ---
 # <a name="how-to-emphasize-map-items"></a>マップ項目を強調する方法
-BizTalk マッパーでマップ項目を選択すると、関連付けられたすべてのリンクと Functoid が強調表示されます。 これは、マップに多くのリンクが設定されていて、リレーションシップや関連するスキーマ項目を識別するのが難しい場合に便利です。  
+BizTalk マッパーでマップ アイテムを選択すると、すべての関連するリンクと functoid が強調表示されます。 これはリレーションシップと関連するスキーマ項目を識別するが難しいマップ リンクが多数に役立ちます。  
   
- BizTalk マッパーでリンク、Functoid、またはスキーマ要素を選択すると、関連するリレーションシップとスキーマ要素が強調表示されます。 選択したマップ項目について、すべての受信リンクと送信リンクが (再帰的に) 太く強調され、その他すべてのマップ項目はグレー表示されます。次のスクリーンショットは、選択されたマップ項目が太くカラーで表示され、その他のマップ項目が薄く表示された状態を示しています。  
+ リンク、functoid、またはスキーマ要素を選択すると、BizTalk マッパーは、関連するリレーションシップとスキーマ要素を強調します。 選択したマップ項目の太字で強調表示は、受信リンクと送信リンクが (再帰的に) すべてと他のすべてのマップ項目がグレーします。次のスクリーン ショットが太字で選択したマップ項目を表示し、色とその他のマップ項目が明るきます。  
   
 > [!NOTE]
->  ここでの関連するリレーションシップとは、選択されたマップ項目に直接または間接的にリンクされたリンク、Functoid、またはスキーマ要素を意味します。  
+>  このコンテキストでは、関連するリレーションシップは、直接または間接的には、選択したマップ項目にリンクされているすべてのリンク、functoid、またはスキーマ要素を意味します。  
   
  ![マップ項目の強調](../core/media/mapper-intelliselect.gif "Mapper_IntelliSelect")  
   
 ## <a name="prerequisites"></a>前提条件  
  この操作では、BizTalk マッパーが実行されている必要があります。  
   
-## <a name="to-emphasize-a-map-item"></a>マップ項目を強調表示するには  
+## <a name="to-emphasize-a-map-item"></a>マップ項目を強調するには  
   
--   マップ項目 (リンク、Functoid、またはスキーマ要素) をクリックします。 その他のすべてのリンクおよび functoid (スキーマのノードを含む) の現在のグリッド ページで選択されているマップ アイテムに関連付けられているが強調表示されたことを確認できます。  
+-   マップ アイテム (リンク、functoid、またはスキーマ要素) をクリックします。 その他のすべてのリンクと functoid (スキーマ ノードを含む) に関連付けられた現在のグリッド ページで選択したマップ項目が強調表示されたことを確認できます。  
   
-     選択されたノードには、他のグリッド ページにもリレーションシップが存在する場合があります。 そのような場合、BizTalk マッパーでは現在のグリッド ページ内のインスタンスが強調表示されることに加えて、選択したノードと関連するリレーションシップが存在するページのタブも強調表示されます。  
+     場合によっては、選択したノードのある可能性がありますの他のグリッド ページ内に存在するリレーションシップ。 このような場合は、BizTalk マッパーは現在のグリッド ページ内のインスタンスが強調しも選択したノードに関連するリレーションシップが存在するページのタブが強調表示されます。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk マッパーで強化された機能を使用します。](../core/using-enhanced-features-in-biztalk-mapper.md)
+ [BizTalk マッパーの強化された機能の使用](../core/using-enhanced-features-in-biztalk-mapper.md)

@@ -15,18 +15,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6d70bcee5ccea0c6906c434d64981888576f4a2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 96f22e4fc3ad65c0aadd2015723241c6b909775e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376547"
 ---
 # <a name="run-operations-on-tables-with-bfile-data-types-in-oracle-database-using-biztalk-server"></a>BizTalk Server を使用して Oracle データベースで BFILE データ型を持つテーブルに対する操作を実行します。
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] BFILE データ型をテーブルとストアド プロシージャでサポートしています。 このセクションでは、BFILE データ型の列があるテーブルに対して操作を実行する方法について説明します。 方法の詳細については[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サポート BFILE を参照してください[テーブルに BFILE データ型に対する演算 Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/operations-on-tables-with-bfile-data-types-in-oracle-database.md)します。  
   
 ## <a name="setting-up-your-oracle-database-server-for-operations-on-bfile"></a>BFILE に対する操作の Oracle データベース サーバーの設定  
- このセクションでは、SCOTT にレコードを挿入するプロシージャを呼び出す方法を示します。CUSTOMERDOC テーブルです。 このテーブルは BFILE データ型の列を保持し、付属の SQL スクリプトを実行して作成、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]サンプル。 サンプルとの SQL スクリプトの詳細については、[Oracle データベース アダプターのサンプル](../../adapters-and-accelerators/adapter-oracle-database/samples-for-the-oracle-database-adapter.md)を参照してください。  
+ このセクションでは、SCOTT にレコードを挿入するプロシージャを呼び出す方法を示します。CUSTOMERDOC テーブルです。 このテーブルは BFILE データ型の列を保持し、付属の SQL スクリプトを実行して作成、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]サンプル。 サンプルとの SQL スクリプトの詳細については、次を参照してください。 [Oracle データベース アダプターのサンプル](../../adapters-and-accelerators/adapter-oracle-database/samples-for-the-oracle-database-adapter.md)します。  
   
  CUSTOMERDOC テーブルを作成するスクリプトを実行した後、BFILE データ型に対する演算を有効にする Oracle データベースを実行するコンピューターでの操作を実行する必要があります。 Oracle データベースのために必要なタスクは次のとおりです。  
   
@@ -46,7 +46,7 @@ ms.locfileid: "36987451"
   
 4.  Oracle database、Oracle では、論理ディレクトリに関連付けられているを実行するコンピューターで、物理ディレクトリの場所にアクセスするファイルをコピーします。 このディレクトリは、手順 1. で作成します。  
   
-     上記の例に基づいて、customer_profile.txt C:\MYDIR ディレクトリにファイルをコピーします。 このファイルは BFILE 操作に使用できるようになりました。 操作の実行の詳細については、[Oracle データベースでの BizTalk Server を使用して大規模なオブジェクトの種類のデータ テーブルで操作を実行する](../../adapters-and-accelerators/adapter-oracle-database/run-operations-on-tables-with-large-object-data-types-in-oracle-database.md)を参照してください。  
+     上記の例に基づいて、customer_profile.txt C:\MYDIR ディレクトリにファイルをコピーします。 このファイルは BFILE 操作に使用できるようになりました。 操作の実行の詳細については、次を参照してください。 [Oracle データベースでの BizTalk Server を使用して大規模なオブジェクトの種類のデータ テーブルで操作を実行する](../../adapters-and-accelerators/adapter-oracle-database/run-operations-on-tables-with-large-object-data-types-in-oracle-database.md)します。  
   
     > [!IMPORTANT]
     >  ReadLOB 操作は、BFILE データ型を持つテーブルでサポートされます。 UpdateLOB 操作がサポートされていません。 ただし、ユーザーは、更新操作を代わりに使用できます。  
@@ -69,10 +69,10 @@ ms.locfileid: "36987451"
    このトピックでは、これらのタスクを実行する手順を説明します。  
   
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル Operate_BFILE、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[Oracle データベース アダプターのサンプル](../../adapters-and-accelerators/adapter-oracle-database/samples-for-the-oracle-database-adapter.md)を参照してください。  
+ サンプル Operate_BFILE、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。 [Oracle データベース アダプターのサンプル](../../adapters-and-accelerators/adapter-oracle-database/samples-for-the-oracle-database-adapter.md)します。  
   
 ## <a name="generating-schema"></a>スキーマを生成します。  
- このトピックで、BFILE 列を持つテーブルに対する操作を実行する方法を示すを呼び出す CREATE_CUSTOMERDOC プロシージャ。 このプロシージャは、サンプルで提供される SQL スクリプトを実行して SCOTT\Package\ACCOUNT_PKG スキーマの下に作成されます。 このプロシージャは、BFILE レコード型を受け取り、CUSTOMERDOC テーブルにレコードを追加します。 SQL スクリプトの詳細については、[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)を参照してください。  
+ このトピックで、BFILE 列を持つテーブルに対する操作を実行する方法を示すを呼び出す CREATE_CUSTOMERDOC プロシージャ。 このプロシージャは、サンプルで提供される SQL スクリプトを実行して SCOTT\Package\ACCOUNT_PKG スキーマの下に作成されます。 このプロシージャは、BFILE レコード型を受け取り、CUSTOMERDOC テーブルにレコードを追加します。 SQL スクリプトの詳細については、次を参照してください。[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)します。  
   
  参照してください[Visual Studio での Oracle 操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)スキーマを生成する方法の詳細について。  
   
@@ -151,10 +151,10 @@ ms.locfileid: "36987451"
   
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
   
- ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。  
+ ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。  
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)を参照してください。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、次を参照してください。[チュートリアル。基本的な BizTalk アプリケーション展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)します。
   
  アプリケーションを構成する必要があります。  
   
@@ -166,13 +166,13 @@ ms.locfileid: "36987451"
   
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーションが Oracle データベースからの応答を含む応答メッセージをドロップする場所の場所を定義します。  
   
-  - Oracle データベースにメッセージを送信する物理 Wcf-custom または Wcf-oracledb 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 Wcf-custom または Wcf-oracledb のポートを作成する方法については、[、Oracle データベース アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)を参照してください。  
+  - Oracle データベースにメッセージを送信する物理 Wcf-custom または Wcf-oracledb 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 Wcf-custom または Wcf-oracledb のポートを作成する方法については、次を参照してください。 [、Oracle データベース アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)します。  
   
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、[Oracle データベースへのポート バインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)を参照してください。  
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、次を参照してください。 [Oracle データベースへのポート バインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)します。  
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- CUSTOMERDOC テーブルにレコードを作成するプロシージャを呼び出すための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。  
+ CUSTOMERDOC テーブルにレコードを作成するプロシージャを呼び出すための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。  
   
  この段階で、ことを確認します。  
   
@@ -215,7 +215,7 @@ ms.locfileid: "36987451"
  例外に関する情報を使用して、DML 操作の実行中に発生する可能性が[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[例外とエラー処理](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md)します。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、[Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)を参照してください。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、次を参照してください。 [Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)します。  
   
 ## <a name="see-also"></a>参照  
 [Oracle データベースと BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md)

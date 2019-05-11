@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 00ae6aabf2a51071d1dfe078914bc92487a6505e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 390fe7602a3b3fafe547938ff07f6290f3453196
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22213954"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377082"
 ---
 # <a name="publishing-the-mt-message-instance-file-creating-new-messages"></a>(新しいメッセージの作成) MT メッセージ インスタンスのファイルの発行
 **ファイルをパブリッシュ MT メッセージ インスタンス。**  
   
 1.  前の手順で生成された InfoPath フォーム テンプレートの出力フォルダーに移動して **.\MTXXX\TemplateDS\InfoPath フォーム テンプレート**です。  
   
-2.  Internet Explorer で、開く**http://localhost/sites/BASSite/New%20SWIFT%20MT%20Messages**です。  
+2.  Internet Explorer で開く **http://localhost/sites/BASSite/New%20SWIFT%20MT%20Messages**します。  
   
 3.  新しい Swift MT メッセージ ウィンドウで **アップロード**です。  
   
@@ -34,4 +34,4 @@ ms.locfileid: "22213954"
   
 6.  ドキュメントのアップロード] ウィンドウで、[ **OK**です。  
   
-7.  SWIFT MT の新しいメッセージ: MTXXX ウィンドウの Namespace ボックスの入力で、 **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**、順にクリック**OK**です。
+7.  SWIFT MT の新しいメッセージ。MTXXX ウィンドウで、Namespace ボックスに「 **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**、 をクリックし、 **OK**。

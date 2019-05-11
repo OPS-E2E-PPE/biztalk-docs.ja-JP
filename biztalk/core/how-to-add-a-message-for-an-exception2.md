@@ -17,21 +17,21 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57cd4e3e0cdcfe34dd172282ef83768eb63b93fa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 166d3ef5817d4da9ea6b79bc9174b3a9117c086d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000801"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387379"
 ---
 # <a name="how-to-add-a-message-for-an-exception"></a>例外のメッセージを追加する方法
-最初に作成したバックエンド システムへのポートには、要求と応答が含まれています。 エラーに割り当てることができるように、メッセージを追加する必要があります。  
+最初にバックエンド システムへのポートを作成するときは、要求と応答を格納します。 エラーに割り当てることができますようにメッセージを追加する必要があります。  
   
 ### <a name="to-add-a-fault-message"></a>エラー メッセージを追加するには  
   
 1. **オーケストレーション**ウィンドウで、右クリック**メッセージ**、し、**新しいメッセージ**。  
   
-    これにより Message_3 が作成され、このエラーに割り当てることができます。  
+    これには、エラーに割り当てることができる Message_3 が作成されます。  
   
 2. 右クリック**Message_3**、選び**プロパティ**します。  
   

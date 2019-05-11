@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b46f5b43a34049dfc3ad366fd87fa82d6dac2cb7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f46a4ed9f834d09993dfa2edb48b3e875b0f3699
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298404"
 ---
 # <a name="xml-schemas"></a>XML スキーマ
 XML スキーマは、XML で表されるビジネス ドキュメントの詳細情報を記述します。 Microsoft BizTalk Server では、ビジネス ドキュメントの正規表現として XML を使用するため受信および送信ドキュメントには、翻訳は不要です。 また、すべてのスキーマで使用できる基本的なプロパティだけを使用して、XML スキーマを BizTalk エディターで作成できるので、スキーマ エディター拡張機能を有効にする必要はありません。  
@@ -26,14 +26,14 @@ XML スキーマは、XML で表されるビジネス ドキュメントの詳�
   
 - **新しいスキーマを作成する**します。 このスキーマ作成の方法には、新しいスキーマを BizTalk プロジェクトに追加することも含まれます。 **ソリューション エクスプ ローラー**、BizTalk プロジェクトを右クリックし、をクリックして**追加**、 をクリックして**新しい項目の**、 をクリックし、**スキーマ**します。 スキーマ ツリー ビューでさまざまなノードを追加してスキーマの構造を構築します。  
   
-- **他のスキーマと組み合わせて、新しいスキーマを作成する**します。 : 複雑なスキーマを実際に使用するとき、一般的には、既存の他のスキーマで提供されている型を使用して、メッセージのスキーマを作成します。 XSD (XML Schema Definition) 言語の概念 (スキーマのインポート、包含、および再定義) を使用することにより、他のスキーマで既に定義されている型を利用できます。 複数のスキーマを組み合わせて使用の詳細については、[使用その他のスキーマを](../core/schemas-that-use-other-schemas.md)を参照してください。  
+- **他のスキーマと組み合わせて、新しいスキーマを作成する**します。 : 複雑なスキーマを実際に使用するとき、一般的には、既存の他のスキーマで提供されている型を使用して、メッセージのスキーマを作成します。 XSD (XML Schema Definition) 言語の概念 (スキーマのインポート、包含、および再定義) を使用することにより、他のスキーマで既に定義されている型を利用できます。 複数のスキーマを組み合わせて使用の詳細については、次を参照してください。[使用その他のスキーマを](../core/schemas-that-use-other-schemas.md)します。  
   
 - **インスタンス メッセージからスキーマを生成する**します。 : インスタンス メッセージが整形式 XML で構成されていれば、特定のインスタンス メッセージに対応する XML スキーマを生成できます。 使用して、**生成した項目の追加 -  *\<BizTalk プロジェクト名\>***   ダイアログ ボックスをクリックして**生成した項目の追加**で**プロジェクト** メニューの この種類のスキーマ生成操作を実行します。  
   
   > [!NOTE]
   >  この生成操作は、XML スキーマを生成する場合のみ使用できます。プロパティ スキーマやフラット ファイル スキーマには使用できません。  
   
-- **以前のスキーマ仕様言語から XSD にスキーマを移行する**します。 Xml-data Reduced (XDR) 形式でスキーマを格納する BizTalk Server の以前のバージョンを使用して開発されたスキーマから、BizTalk Server の XML スキーマを生成できます。 古い XDR スキーマを BizTalk Server で使用される XSD 形式に移行する方法の詳細については、[スキーマの移行前のバージョンの BizTalk Server から](../core/schema-migration-from-previous-versions-of-biztalk-server.md)を参照してください。  
+- **以前のスキーマ仕様言語から XSD にスキーマを移行する**します。 Xml-data Reduced (XDR) 形式でスキーマを格納する BizTalk Server の以前のバージョンを使用して開発されたスキーマから、BizTalk Server の XML スキーマを生成できます。 古い XDR スキーマを BizTalk Server で使用される XSD 形式に移行する方法の詳細については、次を参照してください。[スキーマの移行前のバージョンの BizTalk Server から](../core/schema-migration-from-previous-versions-of-biztalk-server.md)します。  
   
    また、DTD (Document Type Definition) 構文で表記されるドキュメント スキーマから、XSD に基づいた XML スキーマを生成できます。  
   

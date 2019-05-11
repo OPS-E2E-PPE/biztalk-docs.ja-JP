@@ -1,5 +1,5 @@
 ---
-title: ネイティブ パイプライン コンポーネントの構成 |Microsoft ドキュメント
+title: ネイティブ パイプライン コンポーネントの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,17 +17,17 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94475334395f8c360bbb636cfa9cbadcf3bf4fe3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9b9d60c963231f61684cc58187d40bc23141ff1d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22233178"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355299"
 ---
 # <a name="configuring-native-pipeline-components"></a>ネイティブ パイプライン コンポーネントの構成
-パイプライン コンポーネントは、独自のカスタム プロパティをデザイン時に公開できます。 コンポーネントのパブリック プロパティに読み取りと書き込みのアクセサーが実装されていた場合、これらのすべてのプロパティがパイプライン デザイナーに表示されます。 パイプライン デザイナーは、対応する宣言に従ってコンポーネントのプロパティを表示します。たとえば、プロパティが読み取り専用として宣言されていた場合、パイプライン デザイナーでもそのように表示されます。  
+パイプライン コンポーネントは、デザイン時に、独自のカスタム プロパティを公開することができます。 コンポーネントで定義されているパブリック プロパティは、読み取りし、書き込みのプロパティが実装されるアクセサーを提供するパイプライン デザイナーでレンダリングされます。 パイプライン デザイナーはそれらの宣言に従ってコンポーネントのプロパティを表示します。たとえば、プロパティは読み取り専用として宣言されている場合、それが表示されますようパイプライン デザイナーで。  
   
- カスタム パイプライン コンポーネントを実装する必要があります、 **IPersistPropertyBag**をこれらのカスタム プロパティの作成を有効にするインターフェイスです。 作成されたプロパティ、 **IPersistPropertyBag**インターフェイスは、Microsoft のプロパティ ウィンドウで設定できます[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ネイティブ パイプライン コンポーネントのすべてのプロパティと同様、します。 このセクションでは、追加される各パイプライン コンポーネントを構成するための手順について説明します。  
+ カスタム パイプライン コンポーネントを実装する必要があります、 **IPersistPropertyBag**これらのカスタム プロパティの作成を有効にするインターフェイス。 プロパティで作成された、 **IPersistPropertyBag**インターフェイスは、Microsoft のプロパティ ウィンドウで設定できる[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ネイティブ パイプライン コンポーネントのすべてのプロパティと同様、します。 このセクションでは、各パイプラインが含まれるコンポーネントを構成するための手順を説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -43,11 +43,11 @@ ms.locfileid: "22233178"
   
 -   [フラット ファイル逆アセンブラー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-flat-file-disassembler-pipeline-component.md)  
   
--   [MIME/SMIME デコーダー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-mime-smime-decoder-pipeline-component.md)  
+-   [MIME-SMIME デコーダー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-mime-smime-decoder-pipeline-component.md)  
   
 -   [MIME-SMIME エンコーダー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-mime-smime-encoder-pipeline-component.md)  
   
--   [MIME/SMIME プロパティ スキーマおよびプロパティ](../core/mime-smime-property-schema-and-properties.md)  
+-   [MIME-SMIME プロパティ スキーマおよびプロパティ](../core/mime-smime-property-schema-and-properties.md)  
   
 -   [パーティの解決パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-party-resolution-pipeline-component.md)  
   

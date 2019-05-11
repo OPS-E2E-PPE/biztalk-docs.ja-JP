@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11037 |Microsoft Docs'
+title: シングル サインオン:イベント 11037 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ceec837a53d4cad3c236373a907497795efbd12a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6d64605fbdd4cb470fc6dec060650bd78b581f84
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998899"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401030"
 ---
-# <a name="single-sign-on-event-11037"></a>シングル サインオン: イベント 11037
+# <a name="single-sign-on-event-11037"></a>シングル サインオン:イベント 11037
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                       |
@@ -30,10 +30,10 @@ ms.locfileid: "36998899"
 |  イベント ソース   |                                                                                                                        ENTSSO                                                                                                                         |
 |    コンポーネント    |                                                                                                                          なし                                                                                                                          |
 |  シンボル名  |                                                                                                              SSO_INFO_PS_MAPPING_INVALID                                                                                                              |
-|  メッセージ テキスト   | 外部パスワードが変更されています。 マッピングが有効ではなくなっているため、外部アカウントのパスワードは変更されませんでした。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> アプリケーション名: % 3 %r<br /><br /> 外部アカウント: %4 |
+|  メッセージ テキスト   | 外部パスワード変更。 マッピングが valid.%r ではなくなったため、外部アカウントのパスワードが変更されませんでした。<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> アプリケーション名: % 3 %r<br /><br /> 外部アカウント: %4 |
   
 ## <a name="explanation"></a>説明  
- マッピングがアプリケーション ユーザー グループに含まれなくなっています。  
+ マッピングは、アプリケーション ユーザー グループの一部ではなくなりました。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このメッセージには、外部アカウントとアプリケーションの名前が示されます。 この情報を使用して、マッピングが有効ではなくなった理由を調べます。
+ メッセージには、外部アカウントとアプリケーションの名前が一覧表示します。 この情報を使用して、理由、マッピングが無効になったを確認することができます。

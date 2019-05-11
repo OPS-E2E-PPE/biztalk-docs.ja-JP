@@ -1,5 +1,5 @@
 ---
-title: インストール スクリプトを使用して変換サービスのサンプルのインストール |Microsoft ドキュメント
+title: インストール スクリプトを使用して変換サービス サンプルのインストール |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8c7d567744857d5df5e9a65b01baa46da897260d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 4f82de09ec7d6236df66662c913c14111a90867d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25974336"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399881"
 ---
-# <a name="install-the-transformation-service-sample-using-the-install-scripts"></a>インストール スクリプトを使用して変換サービスのサンプルをインストールします。
-このセクションで提供するインストール スクリプトから変換サービスのサンプルをインストールする方法について説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。  
+# <a name="install-the-transformation-service-sample-using-the-install-scripts"></a>インストール スクリプトを使用して変換サービス サンプルをインストールします。
+このセクションで提供するインストール スクリプトから変換サービス サンプルをインストールする方法について説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。  
   
- **インストール スクリプトからの変換サービスのサンプルをインストールするには**  
+ **インストール スクリプトからの変換サービス サンプルをインストールするには**  
   
 1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-2.  **実行** ダイアログ ボックスで、「 **cmd**、し、enter キーを押してコマンド プロンプトを開きます。  
+2.  **実行**ダイアログ ボックスに「 **cmd**、し、enter キーを押してコマンド プロンプトを開きます。  
   
-3.  次のコード実行コマンドを置き換えて、 *\<パス\>* をインストールする .cmd ファイルへの完全パスを持つパラメーター (このリリースでは既定のパスは \Source\Samples\TransformServices\Install\スクリプト\\)。  
+3.  次の実行コマンドを置き換える、 *\<パス\>* をインストールする .cmd ファイルへの完全パスを持つパラメーター (このリリースでは既定のパスは \Source\Samples\TransformServices\Install\スクリプト\\)。  
   
     ```  
     <path>\TransformServices_Install.cmd  

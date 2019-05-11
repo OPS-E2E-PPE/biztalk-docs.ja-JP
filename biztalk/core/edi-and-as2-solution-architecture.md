@@ -1,5 +1,5 @@
 ---
-title: EDI および AS2 ソリューションのアーキテクチャ |Microsoft ドキュメント
+title: EDI および AS2 ソリューションのアーキテクチャ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ac45cd1a69c8764c9febb95eaa16d9f38abd16f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5919781330c68af84b8a789a718e47a68a144c72
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239290"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389254"
 ---
 # <a name="edi-and-as2-solution-architecture"></a>EDI および AS2 ソリューションのアーキテクチャ
 ここでは、作業環境のプランニングに役立つ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の EDI および AS2 ソリューションの情報について説明します。  
@@ -26,6 +26,6 @@ ms.locfileid: "22239290"
   
 -   [EDI ソリューションのアーキテクチャ](../core/edi-solution-architecture.md)  
   
--   [AS2 ソリューションのアーキテクチャ](../core/as2-solution-architecture.md)  
+-   [AS2 ソリューション アーキテクチャ](../core/as2-solution-architecture.md)  
   
 -   [EDI および AS2 状態レポート](../core/edi-and-as2-status-reporting.md)

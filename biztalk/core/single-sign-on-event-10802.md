@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10802 |Microsoft Docs'
+title: シングル サインオン:イベント 10802 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a87f917fbda0adadd00f037d3db6703e145e6eb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 952593e4eba63d1494762f63886b1b9429052428
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978787"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399537"
 ---
-# <a name="single-sign-on-event-10802"></a>シングル サインオン: イベント 10802
+# <a name="single-sign-on-event-10802"></a>シングル サインオン:イベント 10802
 ## <a name="details"></a>詳細  
   
 |                 |                                                                              |
@@ -33,7 +33,7 @@ ms.locfileid: "36978787"
 |  メッセージ テキスト   | 誤ったセッションに対する要求を受信しました。 切断されている可能性があります。 |
   
 ## <a name="explanation"></a>説明  
- セッションが切断された可能性があります。  
+ セッションが切断されている可能性があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- インターフェイスをシャットダウンし、再起動します。
+ インターフェイスをシャット ダウンしてから再起動します。

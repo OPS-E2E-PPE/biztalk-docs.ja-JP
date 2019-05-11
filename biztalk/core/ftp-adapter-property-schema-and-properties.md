@@ -1,5 +1,5 @@
 ---
-title: FTP アダプター プロパティ スキーマおよびプロパティ |Microsoft ドキュメント
+title: FTP アダプター プロパティ スキーマおよびプロパティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -30,36 +30,36 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1cf72847fccd84a1435e436a4bf2b59d36e26179
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 2b61a9bf97f3003a83d148b1c800c13216360ef3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387779"
 ---
 # <a name="ftp-adapter-property-schema-and-properties"></a>FTP アダプター プロパティ スキーマおよびプロパティ
-FTP アダプタ プロパティ スキーマのプロパティを次の表に示します。  
+次の表には、FTP アダプタ プロパティ スキーマのプロパティが含まれています。  
   
- **Namespace:** http://schemas.microsoft.com/BizTalk/2003/ftp-properties  
+ **名前空間:** http://schemas.microsoft.com/BizTalk/2003/ftp-properties  
   
-|名前|型|Description|  
+|名前|型|説明|  
 |----------|----------|-----------------|  
-|**RepresentationType**|xs:string|FTP アダプタによって送信されるデータの形式を指定します。<br /><br /> **有効な値:** バイナリまたは ASCII|  
-|**SSOAffiliateApplication**|xs:string|FTP 送信ポートで使用するエンタープライズ シングル サインオン関連アプリケーションを指定します。|  
-|**UserName**|xs:string|メッセージの送信時に FTP サーバーにログオンするユーザーの名前を指定します。|  
-|**Password**|xs:string|メッセージの送信時に FTP サーバーへのログオンに使用するパスワードを指定します。|  
-|**BeforePut**|xs:string|ファイルの PUT コマンドの前に実行する FTP コマンドを指定します。たとえば、FTP サーバーの既定値を変更するコマンドなどがあります。 コマンドの区切りにはセミコロン (;) を使用します。 ファイルを開くコマンドは必要ありません。|  
-|**AfterPut**|xs:string|ファイル PUT の後に実行する FTP コマンドを指定します。 コマンドの区切りにはセミコロン (;) を使用します。|  
-|**ReceivedFileName**|xs:string|FTP アダプタがメッセージを読み取るファイルの完全な名前を指定します。|  
-|**MaxConnections**|xs:unsignedInt|サーバーに対して同時に開くことができる FTP 接続の最大数を指定します。 値 0 を指定した場合、接続は制限されません。|  
-|**CommandLogFileName**|xs:string|FTP 経由でファイルを送受信したときに発生したエラー状態の診断に使用できるログ ファイルのコピーを保存する場所を指定します。|  
-|**AllocateStorage**|xs:boolean|BizTalk Server では、このオプションは廃止されており、このプロパティの使用はお勧めします。|  
-|**PassiveMode**|xs:boolean|FTP サーバーへのアダプターの接続モードを指定します。<br /><br /> アクティブ モードでは、FTP アダプターによって開かれたポートに FTP サーバーが接続します。 パッシブ モードでは、FTP サーバーによって開かれたポートに FTP アダプターが接続します。<br /><br /> 場合**PassiveMode**は、アダプターがアクティブ モードを使用して FTP サーバーに接続し、false を指定します。 このプロパティの既定値は False です。|  
-|**SpoolingFolder**|xs:string|FTP サーバーの一時フォルダの場所を指定します。 このフォルダは、転送エラーの修復に使用されます。|  
-|**UseSsl**|xs:boolean|FTPS サーバーとの通信で FTP アダプターが強制的に SSL を使用するかどうかを指定します。|  
-|**UseDataProtection**|xs:boolean|ファイル転送に SSL 暗号化を使用するかどうかを指定します。 FTPS サーバーとの間でデータ ファイルを送受信する場合にアダプターで強制的に SSL 暗号化を使用する場合は True を選択します。 アダプターがデータ ファイルをプレーンテキストで送受信する場合は False を選択します。|  
-|**FtpsConnectionMode**|xs:string|FTPS サーバーに対する SSL 接続のモードを指定します。<br /><br /> **有効な値:** 暗黙的または明示的な|  
-|**ClientCertificateHash**|xs:string|SSL (Secure Sockets Layer) のネゴシエーションで使用する必要のあるクライアント証明書の SHA1 ハッシュを指定します。<br /><br /> このハッシュに基づいて、BizTalk ホスト インスタンスを実行しているユーザー アカウントの個人ストアからクライアント証明書が取得されます。|  
+|**RepresentationType**|xs:string|FTP アダプターがデータを送信する方法を指定します。<br /><br /> **有効な値:** バイナリまたは ASCII|  
+|**SSOAffiliateApplication**|xs:string|FTP の送信ポートを使用するエンタープライズ シングル サインオン関連アプリケーションを指定します。|  
+|**UserName**|xs:string|メッセージを送信するときに、FTP サーバーにログオンするユーザー名を指定します。|  
+|**Password**|xs:string|メッセージを送信するときに、FTP サーバーにログオンするときに使用するパスワードを指定します。|  
+|**BeforePut**|xs:string|このコマンドは、PUT、FTP サーバー上の既定値を変更するコマンドなどのファイルの前に実行する FTP コマンドを指定します。 セミコロン (;) で個別のコマンド。 [開く] コマンドは必要ありません。|  
+|**AfterPut**|xs:string|ファイル PUT の後に実行する FTP コマンドを指定します。 セミコロン (;) で個別のコマンド。|  
+|**ReceivedFileName**|xs:string|FTP アダプターがメッセージを読み取るファイルの完全名を指定します。|  
+|**MaxConnections**|xs:unsignedInt|サーバーを開くことができる FTP の同時接続の最大数を指定します。 値 0 は無制限を意味します。|  
+|**CommandLogFileName**|xs:string|FTP 経由でファイルを送受信する際のエラー状況の診断に使用できるログ ファイルのコピーを保存する場所を指定します。|  
+|**AllocateStorage**|xs:boolean|BizTalk Server でこのオプションは非推奨とし、このプロパティの使用はお勧めします。|  
+|**PassiveMode**|xs:boolean|アダプターが FTP サーバーに接続モードを指定します。<br /><br /> アクティブ モードでは、FTP サーバーは、FTP アダプターによって開かれたポートに接続します。 パッシブ モードでは、FTP アダプターは、FTP サーバーによって開かれたポートに接続します。<br /><br /> 場合**PassiveMode**が false、アダプターはアクティブ モードを使用して FTP サーバーに接続します。 このプロパティの既定値は false です。|  
+|**SpoolingFolder**|xs:string|FTP サーバー上の一時フォルダの場所を指定します。 これを使用するには、転送エラーから復旧できるようにします。|  
+|**UseSsl**|xs:boolean|FTP アダプターが FTPS サーバーとの通信に SSL を使用する必要があるかどうかを指定します。|  
+|**UseDataProtection**|xs:boolean|ファイル転送に、SSL 暗号化を使用するかどうかを指定します。 アダプターは SSL 暗号化を使用する必要があります、FTPS サーバーからデータ ファイルを受信している場合は、true を選択します。 データ ファイルをプレーン テキストとして送受信するアダプターでは false を選択します。|  
+|**FtpsConnectionMode**|xs:string|FTPS サーバーに対する SSL 接続のモードを指定します。<br /><br /> **有効な値:** 暗黙的または明示的です|  
+|**ClientCertificateHash**|xs:string|Secure Sockets Layer (SSL) のネゴシエーションで使用する必要があるクライアント証明書の SHA1 ハッシュを指定します。<br /><br /> このハッシュに基づいて、クライアント証明書が取得される、BizTalk ホスト インスタンスが実行されているユーザー アカウントの個人用ストア。|  
   
 ## <a name="see-also"></a>参照  
  [FTP アダプターの構成](../core/configuring-the-ftp-adapter.md)

@@ -17,18 +17,18 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5954f92e55dac362387d66a8b65375e92fe187fa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: aa1950409b71ddc7773dc6ad1ddbee3591dc1d63
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382462"
 ---
 # <a name="importing-jd-edwards-oneworld-schemas-into-biztalk-server-projects"></a>JD Edwards OneWorld スキーマを BizTalk Server プロジェクトにインポートする
 ここでは、JD Edwards OneWorld サーバーを参照し、スキーマを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトにインポートする方法について説明します。  
   
 > [!NOTE]
->  arglist を設定したことを確認する必要があります。 オーケストレーションでスキーマを生成する前に、jdearglist.txt を更新する必要があります。 詳細については、[文字列値の処理](../core/handling-string-values1.md)を参照してください。  
+>  arglist を設定したことを確認する必要があります。 オーケストレーションでスキーマを生成する前に、jdearglist.txt を更新する必要があります。 詳細については、次を参照してください。[文字列値の処理](../core/handling-string-values1.md)します。  
   
 > [!NOTE]
 >  Jdearglist を変更するたびにそのビジネス オブジェクトのスキーマを再生成する必要があります。  

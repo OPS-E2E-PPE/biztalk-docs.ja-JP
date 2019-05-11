@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e9a069ee0c934f9a7636646a07bd5a7f777d88c5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9194267eecdbf2247155df297dffeedbf2cac3a8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020586"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381360"
 ---
 # <a name="invalid-certificate-found"></a>無効な証明書が見つかりました
 ## <a name="details"></a>詳細  
@@ -33,7 +33,7 @@ ms.locfileid: "37020586"
 |  メッセージ テキスト   |                             無効な証明書が見つかりました                              |
   
 ## <a name="explanation"></a>説明  
- WCF トランスポートの有効な証明書が指定されていませんでした。  
+ WCF トランスポートの有効な証明書を提供しませんでした。  
 
 #### <a name="user-action"></a>ユーザーの操作
 証明書を追加します。 
@@ -44,7 +44,7 @@ ms.locfileid: "37020586"
   
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
   
 4. トランスポート名を右クリックします。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "37020586"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブ。  
   
@@ -68,7 +68,7 @@ ms.locfileid: "37020586"
   
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
   
 4. トランスポート名を右クリックします。  
   
@@ -76,14 +76,14 @@ ms.locfileid: "37020586"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**セキュリティ**タブ。  
   
 9. いることを確認、**拇印**サービスとクライアント証明書のプロパティは、証明書の有効な証明書を示す**ストア名**します。  
   
-   証明書スナップインで、WCF トランスポート用の有効な証明書がインストールされていることを確認します。  
+   証明書スナップインでは、WCF トランスポートのため、有効な証明書がインストールされていることを確認します。  
   
-## <a name="see-also"></a>参照 
+## <a name="see-also"></a>関連項目 
   
 [WCF アダプターの証明書のインストール](../core/installing-certificates-for-the-wcf-adapters.md)  

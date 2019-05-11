@@ -1,5 +1,5 @@
 ---
-title: 構成プロパティの変数の型 |Microsoft ドキュメント
+title: 構成変数の型のプロパティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,17 +17,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 05b861100fb7843a95b250c233084c13924c28dc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2ccb07ff8884b4b874bf1da954a5a0ca22b84c2f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232810"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356462"
 ---
-# <a name="configuration-property-variable-types"></a>構成プロパティの変数の型
+# <a name="configuration-property-variable-types"></a>構成変数の型のプロパティ
 バインド ファイルの TransportTypeData\CustomProps ノードのアダプター構成プロパティは、.NET Framework の VarEnum 列挙で使用できるデータ型に従います。 該当するデータ型を以下の表に示します。  
   
-|メンバー名|Description|値|  
+|メンバー名|説明|値|  
 |-----------------|-----------------|-----------|  
 |VT_EMPTY|値が指定されなかったことを示します。|0|  
 |VT_NULL|Null 値を示します。これは、SQL における Null 値に相当します。|1|  

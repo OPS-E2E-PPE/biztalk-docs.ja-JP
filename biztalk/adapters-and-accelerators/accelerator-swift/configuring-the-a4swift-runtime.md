@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7fb2c4583b6b8dd4422fc31afa58e84e9bd26257
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1224522e3bf99cd75f4a0bf7cb01e69e0c7b8857
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378571"
 ---
 # <a name="configuring-the-a4swift-runtime"></a>A4SWIFT ランタイムの構成
 Microsoft が完了した後[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]構成では、A4SWIFT がメッセージ交換の準備完了であることを確認するには、次のセクションで手順を実行する必要があります。 このセクションでは、Message Repair and New Submission または FIN Response Reconciliation の機能を後で提供されるには、固有の構成手順は含まれません。  

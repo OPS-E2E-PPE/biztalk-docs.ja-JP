@@ -16,81 +16,81 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eac588d853a485f12c173cfd9d939369515a57fe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c70276a30004c1a21f95a3e2ff43a28209deea87
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022240"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389073"
 ---
 # <a name="enlist-orchestration-biztalk-server-sample"></a>オーケストレーション (BizTalk Server サンプル) を参加させる
-オーケストレーションの参加のサンプルは、BizTalk Server オーケストレーションをホストに参加させる方法を示します。  
+オーケストレーションの参加サンプルでは、ホストに BizTalk Server オーケストレーションを参加させる方法を示します。  
   
 > [!WARNING]
 >  展開スクリプトは、展開後に不要になった場合は、削除する必要があります。 保持する必要のある管理スクリプトおよび他のスクリプトは、ACL によってセキュリティで保護し、厳重に監視する必要があります。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルは、Windows Management Instrumentation (WMI) オブジェクト モデルにアクセスする Visual Basic Scripting Edition (VBScript) バージョンと Visual c# バージョンにアクセスする、 **System.Management**によって提供されるオブジェクト.NET Framework です。 いずれのバージョンも、最終的に BizTalk Server WMI プロバイダにアクセスして次の操作を実行します。  
+ このサンプルは、Windows Management Instrumentation (WMI) オブジェクト モデルにアクセスする Visual Basic Scripting Edition (VBScript) バージョンと Visual c# バージョンにアクセスする、 **System.Management**によって提供されるオブジェクト.NET Framework です。 これらのバージョンのどちらも最終的には、次の操作を実行する BizTalk Server WMI プロバイダーにアクセスします。  
   
--   オーケストレーション名とアセンブリ名を受け取ると、展開された特定の BizTalk Server オーケストレーションに対するクエリを実行します。  
+-   オーケストレーション名とアセンブリ名を指定するには、特定のクエリには、BizTalk Server オーケストレーションが展開されています。  
   
--   そのオーケストレーションを既定のホストに参加させます。  
+-   既定のホストにオーケストレーションを参加させます。  
   
 -   意味のある情報がユーザーに返されるようにエラーを処理します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- このサンプルは、次の SDK の場所にあります。  
+ サンプルは、次の SDK の場所に配置されます。  
   
-- VBScript バージョン: \<*サンプル パス*\>\Admin\WMI\Enlist Orchestration\VBScript\  
+- VBScript バージョン:\<*Samples Path*\>\Admin\WMI\Enlist Orchestration\VBScript\  
   
-- Visusal c# バージョン: \<*サンプル パス*\>\Admin\WMI\Enlist Orchestration\CSharp\  
+- VisusalC#バージョン。\<*Samples Path*\>\Admin\WMI\Enlist Orchestration\CSharp\  
   
   次の表は、このサンプルのファイルとその目的を示しています。  
   
 |ファイル|説明|  
 |---------------|-----------------|  
-|\VBScript フォルダー内のファイル : <br /><br /> EnlistOrch.vbs|ホストに参加させるオーケストレーションを指定するパラメータを受け取る VBScript ファイルです。|  
-|\CSharp フォルダー内のファイル : <br /><br /> App.ico、AssemblyInfo.cs、BTSampleEnlistOrc.csproj、BTSampleEnlistOrc.sln、EnlistOrc.cs|ホストに参加させるオーケストレーションを指定するパラメータを受け取る Visual C# コマンド ライン アプリケーションを構築するための、プロジェクト、ソリューション、ソース ファイルです。|  
+|\VBScript フォルダー。<br /><br /> EnlistOrch.vbs|ホストに参加させるオーケストレーションを指定するパラメーターを取る VBScript ファイル。|  
+|\CSharp フォルダー。<br /><br /> App.ico、AssemblyInfo.cs、BTSampleEnlistOrc.csproj、BTSampleEnlistOrc.sln、EnlistOrc.cs|プロジェクト、ソリューション、およびビジュアルを構築するためのソース ファイルC#ホストに参加させるオーケストレーションを指定するパラメーターを受け取るコマンド ライン アプリケーションです。|  
   
 ## <a name="building-and-initializing-this-sample"></a>このサンプルのビルドと初期化  
- オーケストレーションの参加サンプルの VBScript バージョンは、構築または初期化が不要な 1 つの Visual Basic スクリプト ファイルで構成されます。  
+ オーケストレーションの参加サンプルの VBScript バージョンは、ビルドまたは初期化する必要はありませんは、1 つ Visual Basic スクリプト ファイルで構成されます。  
   
-#### <a name="to-build-the-visual-c-version-of-the-enlist-orchestration-sample"></a>オーケストレーションの参加サンプルの Visual C# バージョンを構築するには  
+#### <a name="to-build-the-visual-c-version-of-the-enlist-orchestration-sample"></a>ビジュアルを構築するC#オーケストレーションの参加サンプルのバージョン  
   
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル BTSampleEnlistOrc.sln を開きます。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション ファイル BTSampleEnlistOrc.sln を開きます。  
   
 2. **ビルド** メニューのをクリックして**ソリューションのビルド**します。  
   
-#### <a name="to-run-the-enlist-orchestration-sample"></a>オーケストレーションの参加のサンプルを実行するには  
+#### <a name="to-run-the-enlist-orchestration-sample"></a>オーケストレーションの参加のサンプルを実行します。  
   
-1.  コマンド ウィンドウで、このサンプルの VBScript バージョンと Visual C# バージョンのどちらを実行するかに応じて、それぞれ以下のいずれかのフォルダに移動します。  
+1.  コマンド ウィンドウで、ビジュアルの VBScript バージョンとの実行を計画しているかどうかに応じて、次のフォルダーのいずれかに移動します。C#のこのバージョンのサンプルをそれぞれ。  
   
-     \<*パスのサンプル*\>\Admin\WMI\Enlist Orchestration\VBScript\  
+     \<*Samples Path*\>\Admin\WMI\Enlist Orchestration\VBScript\  
   
      \<*パスのサンプル*\>AdminWMIEnlist OrchestrationCSharpbinDebug  
   
-2.  このサンプルの VBScript バージョンと Visual C# バージョンのどちらを実行するかに応じて、cscript プログラムを使用して EnlistOrch.vbs を実行するか、ファイル EnlistOrc.exe を実行します。 どちらの場合にも、以下のコマンド ライン引数を渡します。  
+2.  Cscript プログラムを使用して enlistorch.vbs を実行するか、ビジュアルの VBScript バージョンとの実行を計画しているかどうかに応じて、ファイル EnlistOrc.exe を実行C#のこのバージョンのサンプル、それぞれします。 いずれの場合は、次のコマンドライン引数を渡します。  
   
-    -   **\<** ***OrchestrationName* \>します。** 参加させるオーケストレーションの名前。  
+    -   **\<** ***OrchestrationName* \>.** 参加させるオーケストレーションの名前。  
   
-    -   **\<** ***AssemblyName* \>します。** オーケストレーションが展開されているアセンブリの名前。 アセンブリ名に空白が含まれている場合は、名前を引用符で囲みます。  
+    -   **\<** ***AssemblyName* \>.** オーケストレーションが展開されているアセンブリの名前。 アセンブリ名に空白が含まれている場合は、名前を引用符で囲みます。  
   
-         例: (VBScript)。  
+         以下に例を示します。(VBScript) の場合:  
   
         ```  
         cscript EnlistOrch.vbs MyBusinessOrchestration "My Business Assembly"  
         ```  
   
-         または (Visual C#):  
+         -または-(Visual c#)。  
   
         ```  
         EnlistOrc MyBusinessOrchestration "My Business Assembly"  
         ```  
   
 ## <a name="comments"></a>コメント  
- すべてのタスクで実行できる、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] # を使用して Visual C にアクセスして、Windows WMI オブジェクト モデルにアクセスするスクリプトを使用して、管理コンソールを実行することも、 **System.Management**提供されているオブジェクト.NET framework です。  
+ すべてのタスクで実行できる、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ビジュアルを使用して、Windows WMI オブジェクト モデルにアクセスするスクリプトを使用して、管理コンソールを実行することもC#にアクセスする、 **System.Management**オブジェクト.NET Framework によって提供されます。  
   
- スクリプト ファイル EnlistOrch.vbs および Visual C# ソース ファイル EnlistOrc.cs には、実行する操作について説明する詳細なコメントが含まれています。 詳細については、Windows Management Instrumentation を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)します。  
+ スクリプト ファイル EnlistOrch.vbs およびビジュアルC#ソース ファイル EnlistOrc.cs には、実行する操作についての説明と詳細なコメントが含まれています。 詳細については、Windows Management Instrumentation を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)します。  
   
 ## <a name="see-also"></a>参照  
  [Admin-WMI (BizTalk Server Samples フォルダー)](../core/admin-wmi-biztalk-server-samples-folder.md)

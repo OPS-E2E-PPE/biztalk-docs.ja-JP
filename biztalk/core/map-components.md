@@ -19,14 +19,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b1590ad1450453602b4dd5f25b2d52a4364787af
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d22f0431e59f2cae0aecf3e3dc8284a41c16069a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996771"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380135"
 ---
-# <a name="map-components"></a>マップの構成要素
+# <a name="map-components"></a>コンポーネントをマップします。
 マップの構成要素のほとんどは、.btm 拡張子を持つマップ ファイルに保存されます。 このファイルに格納される項目を次に示します。  
   
 - 送信元スキーマおよび送信先スキーマへの参照  

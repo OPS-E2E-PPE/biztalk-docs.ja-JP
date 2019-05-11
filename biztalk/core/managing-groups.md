@@ -1,5 +1,5 @@
 ---
-title: グループを管理する |Microsoft ドキュメント
+title: グループの管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,15 +19,15 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 31b77bf2d78f1a3291b1221614125fb6c9c50345
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 48612b3d925cf8d6692a53f9075922f79769549d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262362"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380241"
 ---
 # <a name="managing-groups"></a>グループの管理
-このセクションでは、BizTalk グループを管理する手順について説明します。 BizTalk Server グループは、企業、部署、ハブなどの組織の単位を表すために使用します。BizTalk グループを使用する場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の実装が必要です。 BizTalk グループとそのグループに含まれるサーバーの構成情報は、BizTalk 管理 (BizTalkMgmtDb) データベースに格納されます。 BizTalk グループの詳細については、次を参照してください。 [BizTalk グループ](../core/biztalk-groups.md)です。  
+このセクションには、BizTalk グループを管理するための手順が説明します。 BizTalk Server グループを使用して組織の単位を表す — 企業、部署、ハブなど — を必要とする包含 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実装。 BizTalk 管理 (BizTalkMgmtDb) データベースは、そのグループ内の BizTalk グループとサーバーの構成情報を格納します。 BizTalk グループの詳細については、次を参照してください。 [BizTalk グループ](../core/biztalk-groups.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

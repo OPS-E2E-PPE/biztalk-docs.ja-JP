@@ -18,20 +18,20 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1bb235d126ca775cc8bd5a752388c948a2203e4b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 801ac848efe183a778bbd6a1155c96f4ab41f6c3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968843"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384968"
 ---
-# <a name="how-to-import-and-export-policies-and-vocabularies"></a>ポリシーとボキャブラリをインポートおよびエクスポートする方法
+# <a name="how-to-import-and-export-policies-and-vocabularies"></a>インポートおよびポリシーとボキャブラリをエクスポートする方法
 ルール エンジン展開ウィザードを使用して、インポートまたはポリシーまたはボキャブラリをエクスポートすることができます。  
 
 > [!NOTE]
->  最初に、ポリシーまたはボキャブラリによって使用されるすべてのボキャブラリをインポートする必要があります。これを行わないと、エラーが発生します。  
+>  ポリシーまたはボキャブラリによって使用されるすべてのボキャブラリを最初にインポートする必要があります。 またはエラーが表示されます。  
 
-### <a name="to-import-or-export-a-policy-or-vocabulary"></a>ポリシーまたはボキャブラリをインポート/エクスポートするには  
+### <a name="to-import-or-export-a-policy-or-vocabulary"></a>インポートまたはポリシーまたはボキャブラリをエクスポートするには  
 
 1. クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**ビジネス ルール エンジン展開ウィザード**します。  
 

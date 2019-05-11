@@ -13,12 +13,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a275822f49fe84d76ab6bc764bc74e67770edd1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: effccda356e4bb7df20dbc95a4f67eaee1f78a38
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971123"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376931"
 ---
 # <a name="troubleshooting-and-known-issues"></a>トラブルシューティングと既知の問題
 このセクションでは、Microsoft のトラブルシューティングに関連する情報をまとめてを提供します。[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]します。  

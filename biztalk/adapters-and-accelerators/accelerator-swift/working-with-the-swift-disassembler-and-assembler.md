@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1942e6648311c65acc2bb1cd91406904906cc8f4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7e61d34b8ab92f20c2c39c9b4c9394b78d13f100
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005739"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376860"
 ---
 # <a name="working-with-the-swift-disassembler-and-assembler"></a>SWIFT 逆アセンブラーとアセンブラーの操作
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]カスタム パイプライン コンポーネントでは、SWIFT 逆アセンブラー、および SWIFT のフラット ファイル メッセージの処理専用に設計された機能を備えている SWIFT アセンブラーを提供します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]送信し、受信の段階で定義されている特定のタスクを実行するパイプラインの使用、A4SWIFT パイプライン コンポーネントの受信 (受信) と送信 (送信) 処理します。 メッセージの処理、パイプライン、およびパイプライン コンポーネントの詳細については、BizTalk Server のヘルプを参照してください。  

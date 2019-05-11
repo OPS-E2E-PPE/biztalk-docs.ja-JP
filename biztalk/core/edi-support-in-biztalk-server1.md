@@ -12,12 +12,12 @@ caps.latest.revision: 37
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1371d707729c6c0efbc8277dde671d353ab400aa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b422f593558881b11936aa98355aa6d0fb3ae03
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389155"
 ---
 # <a name="edi-support-in-biztalk-server"></a>BizTalk Server における EDI のサポート
 このトピックでは、EDI および BizTalk Server が EDI をサポートする方法の簡単な概要を説明します。  
@@ -37,7 +37,7 @@ ms.locfileid: "36979963"
   
 - 1 回限りの確実な配信を行う方法と、破損したデータや正しくないデータの自動検出および報告を行う方法  
   
-  EDI 標準はドキュメント構造の規則を定めていますが、送信される具体的な情報およびその使用方法については取引先間で合意する必要があります。 2 つの取引先を接続する EDI システムの設計は、標準によって要求される内容と、取引先間で合意した内容に基づいて決まります。 EDI メッセージングの詳細については、[EDI メッセージング](../core/edi-messaging.md)を参照してください。  
+  EDI 標準はドキュメント構造の規則を定めていますが、送信される具体的な情報およびその使用方法については取引先間で合意する必要があります。 2 つの取引先を接続する EDI システムの設計は、標準によって要求される内容と、取引先間で合意した内容に基づいて決まります。 EDI メッセージングの詳細については、次を参照してください。 [EDI メッセージング](../core/edi-messaging.md)します。  
   
 > [!NOTE]
 >  EDI メッセージは、トランスポートと区別されます。 EDI 標準では、メッセージ トランスポートについての規定はないため、EDI メッセージはさまざまな方法で送信できます。  
@@ -67,7 +67,7 @@ ms.locfileid: "36979963"
   
   **取引先契約**  
   
-  取引先は、取引先とのアグリーメントを相互に定義します。このアグリーメントは、BizTalk Server 管理コンソールで定義された一連のプロパティです。 これらのパーティのプロパティと、送信と受信のポートおよび場所のプロパティによって、受信側と送信側の EDI 処理が決まります。 パートナー アグリーメントを取引先の詳細については、[取引先アグリーメント](../core/trading-partner-agreement.md)を参照してください。  
+  取引先は、取引先とのアグリーメントを相互に定義します。このアグリーメントは、BizTalk Server 管理コンソールで定義された一連のプロパティです。 これらのパーティのプロパティと、送信と受信のポートおよび場所のプロパティによって、受信側と送信側の EDI 処理が決まります。 パートナー アグリーメントを取引先の詳細については、次を参照してください。[取引先アグリーメント](../core/trading-partner-agreement.md)します。  
   
   **インターチェンジの状態**  
   
@@ -79,23 +79,23 @@ ms.locfileid: "36979963"
 - EDI ドキュメントの処理に必要なアイテム (パイプライン、オーケストレーション、スキーマなど) を含む BizTalk EDI アプリケーション。  
   
   > [!NOTE]
-  >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で EDI 機能を構成すると、構成プログラムによってこのアプリケーションが作成されます。 EDI インターチェンジを処理するアプリケーションを作成する場合は、アプリケーションから BizTalk EDI アプリケーションへの参照を追加する必要があります。 詳細については、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
+  >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で EDI 機能を構成すると、構成プログラムによってこのアプリケーションが作成されます。 EDI インターチェンジを処理するアプリケーションを作成する場合は、アプリケーションから BizTalk EDI アプリケーションへの参照を追加する必要があります。 詳細については、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
   
-- BizTalk EDI 受信パイプライン (EdiReceive パイプライン) では、EDI でエンコードされたドキュメントの解析、EDI バッチの分割、EDI でエンコードされたドキュメントの XML エンコードへの変換、EDI および XSD 検証、HIPAA X12 サブドキュメントの分割を行います。 詳細については、[EDI の受信コンポーネント](../core/edi-receive-components.md)を参照してください。  
+- BizTalk EDI 受信パイプライン (EdiReceive パイプライン) では、EDI でエンコードされたドキュメントの解析、EDI バッチの分割、EDI でエンコードされたドキュメントの XML エンコードへの変換、EDI および XSD 検証、HIPAA X12 サブドキュメントの分割を行います。 詳細については、次を参照してください。 [EDI の受信コンポーネント](../core/edi-receive-components.md)します。  
   
-- BizTalk EDI 送信パイプライン (EdiSend パイプライン) では、XML ドキュメントの X12 または EDIFACT エンコードへの変換、EDI でエンコードされたドキュメントのシリアル化、EDI および XSD 検証を行います。 詳細については、[EDI 送信コンポーネント](../core/edi-send-components.md)を参照してください。  
+- BizTalk EDI 送信パイプライン (EdiSend パイプライン) では、XML ドキュメントの X12 または EDIFACT エンコードへの変換、EDI でエンコードされたドキュメントのシリアル化、EDI および XSD 検証を行います。 詳細については、次を参照してください。 [EDI 送信コンポーネント](../core/edi-send-components.md)します。  
   
-- 取引先管理 (TPM) ユーザー インターフェイスを使用すると、EDI ドキュメントの交換および AS2 ドキュメントのトランスポートに関与する取引先の処理プロパティを設定できます。 詳細については、[EDI 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-edi-processing.md)と**EDI および AS2 UI** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+- 取引先管理 (TPM) ユーザー インターフェイスを使用すると、EDI ドキュメントの交換および AS2 ドキュメントのトランスポートに関与する取引先の処理プロパティを設定できます。 詳細については、次を参照してください。 [EDI 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-edi-processing.md)と**EDI および AS2 UI** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
-- バッチ処理オーケストレーションでは、バッチ インターチェンジの送信のために、EDI インターチェンジのバッチ処理を行い、コンテキスト プロパティを設定します。 ルーティング オーケストレーションは、メッセージが複数のバッチに一致する状況に対処し、メッセージのコピーを必要な数だけ作成します。 詳細については、[着信バッチの処理](../core/processing-incoming-batches.md)と[送信 EDI メッセージのバッチ処理](../core/batching-outgoing-edi-messages.md)を参照してください。  
+- バッチ処理オーケストレーションでは、バッチ インターチェンジの送信のために、EDI インターチェンジのバッチ処理を行い、コンテキスト プロパティを設定します。 ルーティング オーケストレーションは、メッセージが複数のバッチに一致する状況に対処し、メッセージのコピーを必要な数だけ作成します。 詳細については、次を参照してください。[着信バッチの処理](../core/processing-incoming-batches.md)と[送信 EDI メッセージのバッチ処理](../core/batching-outgoing-edi-messages.md)します。  
   
-- 状態レポートのユーザー インターフェイスでは、EDI インターチェンジおよび関連する確認の包括的な状態を把握できます。 詳細については、[EDI および AS2 状態レポート](../core/edi-and-as2-status-reporting.md)を参照してください。  
+- 状態レポートのユーザー インターフェイスでは、EDI インターチェンジおよび関連する確認の包括的な状態を把握できます。 詳細については、次を参照してください。 [EDI および AS2 状態レポート](../core/edi-and-as2-status-reporting.md)します。  
   
-- Visual Studio のデザイン時ツールでは、インスタンスの生成、インスタンスの検証、スキーマの検証、マップのテスト、およびマップの検証を行うことができます。 詳細については、[デザイン時 XML ツールを使用して](../core/using-design-time-xml-tools.md)を参照してください。  
+- Visual Studio のデザイン時ツールでは、インスタンスの生成、インスタンスの検証、スキーマの検証、マップのテスト、およびマップの検証を行うことができます。 詳細については、次を参照してください。[デザイン時 XML ツールを使用して](../core/using-design-time-xml-tools.md)します。  
   
-- スキーマ リポジトリには、X12、EDIFACT、HIPAA X12N 4010A XSD、EANCOM、および管理スキーマがあります。 詳細については、[EDI ドキュメント スキーマのサポート](../core/edi-document-schema-support.md)を参照してください。  
+- スキーマ リポジトリには、X12、EDIFACT、HIPAA X12N 4010A XSD、EANCOM、および管理スキーマがあります。 詳細については、次を参照してください。 [EDI ドキュメント スキーマのサポート](../core/edi-document-schema-support.md)します。  
   
-- 移行ツール (パーティ移行ツール) では、EDI パーティ データを BizTalk Server 2006 R2 または BizTalk Server 2009 から BizTalk Server まで移行することができます。 詳細については、[EDI アイテムを BizTalk Server の以前のバージョンから移行](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c)を参照してください。  
+- 移行ツール (パーティ移行ツール) では、EDI パーティ データを BizTalk Server 2006 R2 または BizTalk Server 2009 から BizTalk Server まで移行することができます。 詳細については、次を参照してください。 [EDI アイテムを BizTalk Server の以前のバージョンから移行](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server での EDI 処理](../core/edi-processing-in-biztalk-server.md)   

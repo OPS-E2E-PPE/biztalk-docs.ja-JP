@@ -16,15 +16,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5af6db7dcbb9efb20846520db6b800f5c3226316
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2ac326fd11f55320de04033f44ba9f81ffd85282
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384388"
 ---
-# <a name="how-to-remove-a-certificate-from-a-receive-location"></a>受信場所から証明書を削除する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、受信場所からセキュリティ証明書を削除する方法について説明します。 この操作を実行すると、受信場所ではメッセージが暗号化されなくなり、メッセージはクリア テキストで送信されるようになります。 証明書を受信場所から削除しても、証明書ストアからは削除されません。  
+# <a name="how-to-remove-a-certificate-from-a-receive-location"></a>証明書を削除する方法、受信場所
+このトピックでは、BizTalk Server 管理コンソールを使用して、受信場所からセキュリティ証明書を削除する方法を説明します。 これを行うときに、受信場所のメッセージが暗号化されなくメッセージは、クリア テキストで送信されます。 証明書を削除する受信場所からは削除されません証明書ストアから。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
@@ -33,7 +33,7 @@ ms.locfileid: "36991979"
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2. コンソール ツリーで、BizTalk グループを展開し、受信場所から証明書を削除する BizTalk アプリケーションを展開します。  
+2. コンソール ツリーで、BizTalk グループと受信場所から証明書を削除する BizTalk アプリケーションを展開します。  
   
 3. 展開**受信場所**は、受信場所を右クリックし、[**プロパティ**、] をクリックし、**証明書**します。  
   

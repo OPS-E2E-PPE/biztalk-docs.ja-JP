@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8c418aaf34e3748505493fd68d578cce2c428c56
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 935995719473c8ff7977b47ec8b6971229b1a795
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381424"
 ---
-# <a name="invalid-as2-from-header-received"></a>無効な AS2-From ヘッダーを受信しました
+# <a name="invalid-as2-from-header-received"></a>無効な AS2 のヘッダーを受信しました
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |
@@ -30,10 +30,10 @@ ms.locfileid: "36983963"
 |  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    コンポーネント    |                                       AS2 エンジン                                       |
 |  シンボル名  |                         InvalidAS2FromNameHeaderReceivedError                          |
-|  メッセージ テキスト   |                     無効な AS2-From ヘッダーを受信しました。  値: {0}                      |
+|  メッセージ テキスト   |                     無効な AS2 のヘッダーを受信しました。  値: {0}                      |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、メッセージの AS2-From ヘッダーの値が AS2 RFC 4130 の仕様に準拠していなかったため、受信パイプラインで受信インターチェンジを処理できなかったことを示します。  
+ このエラー/警告/情報イベントは、エントリのため、受信パイプラインが受信インターチェンジが処理しないことを示します、AS2 の値-メッセージのメッセージ ヘッダーから準拠していなかった AS2 RFC 4130 の仕様にします。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、メッセージの AS2-From ヘッダーの値が AS2 RFC 4130 のセクション 6.2 の仕様に準拠していることを確認し、メッセージを再送信してもらいます。
+ このエラーを解決することを確認、AS2 の値-メッセージのヘッダーから、AS2 RFC 4130 のセクション 6.2 の仕様に準拠し、メッセージを再送信します。

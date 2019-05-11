@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10556 |Microsoft Docs'
+title: シングル サインオン:イベント 10556 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 79300dc2ff97fe3f410d0e8b06cdfbebd4782a48
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 30e2f3f8e76f5b2b18aca176dfee1d77c7b1ff1f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011763"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398833"
 ---
-# <a name="single-sign-on-event-10556"></a>シングル サインオン: イベント 10556
+# <a name="single-sign-on-event-10556"></a>シングル サインオン:イベント 10556
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                                                   |
@@ -30,10 +30,10 @@ ms.locfileid: "37011763"
 |  イベント ソース   |                                                                                                                                      ENTSSO                                                                                                                                       |
 |    コンポーネント    |                                                                                                                                        なし                                                                                                                                        |
 |  シンボル名  |                                                                                                                            SSO_WARN_INVALID_GROUP_USER                                                                                                                            |
-|  メッセージ テキスト   | グループ アプリケーションについて指定されたマッピングが有効ではありません。 このアプリケーションでは、マッピングでいずれかのアプリケーション ユーザー アカウントを指定する必要があります。<br /><br /> ドメイン名: %1 %r<br /><br /> ユーザー名: % 2 %r<br /><br /> アプリケーション名: % 3 %r<br /><br /> アプリケーション ユーザー: %4 |
+|  メッセージ テキスト   | グループ アプリケーションの指定されたマッピングが無効です。 マッピングは、この application.%r アプリケーション ユーザー アカウントのいずれかを指定する必要があります。<br /><br /> ドメイン名: %1 %r<br /><br /> ユーザー名: % 2 %r<br /><br /> アプリケーション名: % 3 %r<br /><br /> アプリケーション ユーザー: %4 |
   
 ## <a name="explanation"></a>説明  
- マッピングが有効ではありません。  
+ マッピングが無効です。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このアプリケーションについて、マッピングでいずれかのアプリケーション ユーザー アカウントが指定されていることを確認します。
+ マッピングが、このアプリケーションのアプリケーション ユーザー アカウントのいずれかを指定することを確認します。

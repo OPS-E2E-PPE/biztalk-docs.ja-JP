@@ -1,5 +1,5 @@
 ---
-title: EDI バッチの構成 |Microsoft ドキュメント
+title: EDI バッチの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 765dfe5d687c55a763dfd3ff8945606fd32d3239
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1d4ce3d926526b7b7fe17011d30d555566de7cb4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232802"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355925"
 ---
 # <a name="configuring-edi-batches"></a>EDI バッチの構成
-このセクションのトピックでは、分割済みまたは保存済みのバッチ化されたインターチェンジを受信する方法、XML パイプライン経由で保存済みインターチェンジを送信する方法、および外部バッチ リリース メカニズムを実装する方法について説明します。  
+このセクションのトピックでは、分割を受信する方法について説明や、バッチ インターチェンジ、XML パイプライン経由で保存されたインターチェンジを送信する方法、および外部バッチ リリース メカニズムを実装する方法に保持されます。  
   
- このセクションのトピックには、バッチでインターチェンジを送信する方法に関する情報は含まれていません。 送信インターチェンジをバッチ処理する方法の詳細については、次を参照してください。 [(X12) をバッチ処理構成](../core/configuring-batching-x12.md)(X12 でエンコードされたメッセージ) のまたは[構成のバッチ処理 (EDIFACT)](../core/configuring-batching-edifact.md) (EDIFACT エンコード メッセージ)。  
+ このセクションのトピックでは、バッチ インターチェンジを送信する方法についての情報は含まれません。 送信インターチェンジをバッチ処理する方法の詳細については、次を参照してください。 [(X12) をバッチ処理構成](../core/configuring-batching-x12.md)(X12 でエンコードされたメッセージ) のまたは[構成のバッチ処理 (EDIFACT)](../core/configuring-batching-edifact.md) (EDIFACT エンコード メッセージ)。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -30,11 +30,11 @@ ms.locfileid: "22232802"
   
 -   [バッチ インターチェンジの保存](../core/preserving-a-batched-interchange.md)  
   
--   [XML 送信パイプラインによる保存されたバッチを送信します。](../core/sending-a-preserved-batch-with-an-xml-send-pipeline.md)  
+-   [XML 送信パイプラインによる保存されたバッチの送信](../core/sending-a-preserved-batch-with-an-xml-send-pipeline.md)  
   
--   [外部バッチ リリース メカニズムを実装します。](../core/implementing-an-external-batch-release-mechanism.md)  
+-   [外部バッチ リリース メカニズムの実装](../core/implementing-an-external-batch-release-mechanism.md)  
   
--   [送信バッチの受信のトランザクション セットの関連付け](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md)  
+-   [受信トランザクション セットと送信パッチの関連付け](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md)  
   
 ## <a name="see-also"></a>参照  
- [開発および BizTalk Server EDI ソリューションを構成します。](../core/developing-and-configuring-biztalk-server-edi-solutions.md)
+ [BizTalk Server EDI ソリューションの開発と構成](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

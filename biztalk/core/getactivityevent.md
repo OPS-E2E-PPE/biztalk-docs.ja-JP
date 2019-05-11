@@ -1,5 +1,5 @@
 ---
-title: GetActivityEvent |Microsoft ドキュメント
+title: GetActivityEvent |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fb039c0e9946091214a52fbb605753a212c233c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 28c237cc32afb41d0fde2e702c9b0b42a2d14f41
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246250"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345149"
 ---
 # <a name="getactivityevent"></a>GetActivityEvent
 現在のアクティビティ イベントの名前をスタックにプッシュします。  
@@ -35,10 +35,10 @@ ms.locfileid: "22246250"
 ## <a name="pushed-value"></a>プッシュされた値  
  現在のアクティビティ イベントを表す文字列です。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>コメント  
  ワークフロー アクティビティは、ワークフローの有効期間中にいくつかの状態の段階を経る場合があります。 Windows Workflow Foundation BAM インターセプタは、`System.Workflow.ComponentModel.ActivityExecutionStatus` 列挙体に定義された、次の表に示すような大部分の実行状態の値をサポートします。  
   
-|実行状態|Description|  
+|実行状態|説明|  
 |----------------------|-----------------|  
 |Canceling|アクティビティが取り消されているときの状態を表します。|  
 |Closed|アクティビティが終了したときの状態を表します。|  

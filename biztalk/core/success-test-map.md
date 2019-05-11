@@ -1,5 +1,5 @@
 ---
-title: 成功 - マップのテスト |Microsoft ドキュメント
+title: 成功 - マップのテスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 736c12a2a7edf57bd4b582423ae237bb44ad926a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b40cf7a3f77c3968b0a33eff986398243f6fdceb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278506"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379903"
 ---
 # <a name="success---test-map"></a>成功 - マップのテスト
 **エラー コード**  

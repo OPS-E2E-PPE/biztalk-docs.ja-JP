@@ -13,25 +13,25 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6b3fe64a46ec4dd80d278e36f91406db0c431972
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a3512a9ab6d3ef7995ee576be0528878588753c8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015755"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380185"
 ---
 # <a name="manage-send-ports-and-send-port-groups"></a>送信ポートと送信ポート グループを管理します。
 
 ## <a name="overview"></a>概要
 このセクションでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して BizTalk アプリケーションの送信ポートおよび送信ポート グループを作成、構成、および管理する方法について説明します。 送信ポートは、メッセージの送信先や、場合によっては応答の受信先となる場所を指定します。 送信ポートのサービスの新しいインスタンスを作成すると、送信ポートにメッセージが送信されると呼ばれる時間を*サービス インスタンス*します。  
   
- 送信ポート グループは、送信ポートの論理的な集まりです。 1 つの送信ポート グループに送信されたメッセージは、関連するすべての送信ポートに送信されます。  送信ポートおよび送信ポート グループの背景については、[送信ポートと送信ポート グループ](../core/send-ports-and-send-port-groups.md)を参照してください。  
+ 送信ポート グループは、送信ポートの論理的な集まりです。 1 つの送信ポート グループに送信されたメッセージは、関連するすべての送信ポートに送信されます。  送信ポートおよび送信ポート グループの背景については、次を参照してください。[送信ポートと送信ポート グループ](../core/send-ports-and-send-port-groups.md)します。  
   
 > [!NOTE]
->  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+>  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、次を参照してください。、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
 > 
 > [!NOTE]
->  BizTalk アプリケーションの開発中に、オーケストレーション デザイナーなど、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の BizTalk デザイン ツールを使用して、送信ポートおよび送信ポート グループを作成および構成することができます。 詳細については、[オーケストレーションで使用するポート](../core/using-ports-in-orchestrations.md)を参照してください。  
+>  BizTalk アプリケーションの開発中に、オーケストレーション デザイナーなど、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の BizTalk デザイン ツールを使用して、送信ポートおよび送信ポート グループを作成および構成することができます。 詳細については、次を参照してください。[オーケストレーションで使用するポート](../core/using-ports-in-orchestrations.md)します。  
   
 ## <a name="next-steps"></a>次のステップ
   

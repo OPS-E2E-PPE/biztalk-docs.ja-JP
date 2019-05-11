@@ -1,5 +1,5 @@
 ---
-title: エラー - スクリプト Functoid のないスクリプトの種類 |Microsoft ドキュメント
+title: エラー - スクリプト Functoid のスクリプトの種類がありません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb82c730d461496aad04c65b8604c94eebdb1978
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d641a608253552dcbbf859a7416e686b8f79987e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240906"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388538"
 ---
-# <a name="error---no-script-type-for-scripting-functoid"></a>エラー - スクリプト Functoid のスクリプトの種類はありません。
+# <a name="error---no-script-type-for-scripting-functoid"></a>エラー - スクリプト Functoid のスクリプトの種類がありません。
 **エラー コード**  
   
  btm1003  
   
  **説明**  
   
- **スクリプトの種類**の指定されたプロパティ**スクリプト**functoid が設定されていません。  
+ **スクリプトの種類**の指定されたプロパティ**Scripting** functoid が設定されていません。  
   
  **ユーザーの操作**  
   
- 選択し**スクリプト**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、**スクリプト**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ] ウィンドウで、適切な値を設定し、 **[Functoid スクリプトの構成**ダイアログ ボックスを含む、**スクリプトの種類**プロパティです。
+ 選択**Scripting** functoid は、省略記号をクリックします (**.**) ボタンに関連付けられている、**スクリプト**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウで、適切な値を設定し、 **Functoid スクリプトの構成**ダイアログ ボックスなど、**スクリプトの種類**プロパティ。

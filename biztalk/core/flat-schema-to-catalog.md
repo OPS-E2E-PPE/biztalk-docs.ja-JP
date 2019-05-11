@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1dc8093d477773d5efbab46670bac7e9c839d8d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ed13c1e68128ba542fa79e95222c35745a063fad
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345307"
 ---
 # <a name="flat-schema-to-catalog"></a>カタログに対するフラット スキーマ
 
@@ -56,7 +56,7 @@ ms.locfileid: "36999043"
 ## <a name="set-the-schema"></a>スキーマを設定します。  
  このタイプのマップを正しく動作させるためには、次の作業を行う必要があります。  
   
-- 接続する各リンクについて、**名前**送信先スキーマのフィールドに、送信元スキーマの名前をコピーするリンクのプロパティを設定します。 詳細については、[構成リンク](../core/configuring-links.md)を参照してください。 参照してください**リンク プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
+- 接続する各リンクについて、**名前**送信先スキーマのフィールドに、送信元スキーマの名前をコピーするリンクのプロパティを設定します。 詳細については、次を参照してください。[構成リンク](../core/configuring-links.md)します。 参照してください**リンク プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
 - 接続する各リンクについて、**値**送信先スキーマのフィールドに、送信元スキーマ (既定値) の値をコピーするリンクのプロパティを設定します。  
   
@@ -65,6 +65,6 @@ ms.locfileid: "36999043"
   このマッピングの逆関数でのカタログ スキーマをフラット スキーマに変換するを参照してください[値のマッピング (フラット化) Functoid](../core/value-mapping-flattening-functoid.md)します。  
   
 ## <a name="see-also"></a>参照  
- [ループ マップに Functoid を追加する方法](../core/how-to-add-looping-functoids-to-a-map.md)   
+ [マップにループ Functoid を追加する方法](../core/how-to-add-looping-functoids-to-a-map.md)   
  [ループ Functoid](../core/looping-functoid.md)   
  [値のマッピング (フラット化) Functoid](../core/value-mapping-flattening-functoid.md)

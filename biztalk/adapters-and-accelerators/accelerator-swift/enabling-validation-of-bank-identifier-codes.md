@@ -14,30 +14,30 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4fe33576bb23ff40fd80f85281c38a6f5a0ec930
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 582fde7ad899360aaa74a5fee1ece46ef068e56b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974171"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377962"
 ---
 # <a name="enabling-validation-of-bank-identifier-codes"></a>銀行識別コードの検証を有効にします。
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]スキーマでは、SWIFT インターチェンジのドキュメントで指定された銀行識別コード (BICs) が、SWIFT 定義 BIC データ形式に準拠していることを確認します。 A4SWIFT は、データベース内の顧客が指定した BIC リストに対して BICs の検証もサポートします。  
 
  BRE の検証を有効にして BIC 検証を有効にし、この検証を実行することができます。  
 
- 既定では、A4SWIFT セットアップには、BRE の検証が無効にします。 有効にするには、A4SWIFT 逆アセンブラーを使用する受信パイプラインが true と BRE 検証の構成パラメーターを設定する必要があります。 検証するためのメッセージに、マスター ポリシーと特定の検証ポリシーを展開する BRE 配置ユーティリティも実行する必要があります (MT*xxx*_Master_policy.xml と MT*xxx*_Validation_Policy.xml)。 詳細については、[の BRE ポリシーを操作](../../adapters-and-accelerators/accelerator-swift/working-with-bre-policies.md)と[BRE ルールの展開](../../adapters-and-accelerators/accelerator-swift/deploying-bre-rules.md)を参照してください。  
+ 既定では、A4SWIFT セットアップには、BRE の検証が無効にします。 有効にするには、A4SWIFT 逆アセンブラーを使用する受信パイプラインが true と BRE 検証の構成パラメーターを設定する必要があります。 検証するためのメッセージに、マスター ポリシーと特定の検証ポリシーを展開する BRE 配置ユーティリティも実行する必要があります (MT*xxx*_Master_policy.xml と MT*xxx*_Validation_Policy.xml)。 詳細については、次を参照してください。[の BRE ポリシーを操作](../../adapters-and-accelerators/accelerator-swift/working-with-bre-policies.md)と[BRE ルールの展開](../../adapters-and-accelerators/accelerator-swift/deploying-bre-rules.md)します。  
 
  使用する必要がありますを BRE の検証を有効にした後に発行し、両方 BIC 検証ポリシー (BIC_Master_Policy.xml および BIC_Validation_Policy.xml) を配置、ルール エンジン展開ウィザードを使用します。 これを行うには、前に、次の操作を行う必要があります。  
 
-- SWIFT から BIC 値を持つデータベースを設定します。 A4SWIFT セットアップによってインストールされる A4SWIFT データベースの Bicplus テーブルを使用することができますか、独自のカスタム データベースを使用することができます。 詳細については、[A4SWIFT データベース内の Bicplus テーブルを管理する](../../adapters-and-accelerators/accelerator-swift/managing-the-bicplus-table-in-the-a4swift-database.md)を参照してください。  
+- SWIFT から BIC 値を持つデータベースを設定します。 A4SWIFT セットアップによってインストールされる A4SWIFT データベースの Bicplus テーブルを使用することができますか、独自のカスタム データベースを使用することができます。 詳細については、次を参照してください。 [A4SWIFT データベース内の Bicplus テーブルを管理する](../../adapters-and-accelerators/accelerator-swift/managing-the-bicplus-table-in-the-a4swift-database.md)します。  
 
 - BIC データベースを設定し、BIC マスター ポリシーをカスタマイズして BIC 検証を有効にします。 次の手順を参照してください。  
 
   BIC 検証が必要ない場合はパフォーマンスの向上のため BIC の検証ポリシーを展開する必要がありますされません。  
 
 > [!NOTE]
->  発行し、A4SWIFT_Codelist と A4SWIFT_Functions ボキャブラリを公開した場合にのみ、BIC 検証ポリシーを展開できます。 SWIFTSchemas アセンブリで BRE 配置ユーティリティを実行してこれらのボキャブラリを公開します。 詳細については、[レッスン 1: 関連するビジネス ルールの展開](../../adapters-and-accelerators/accelerator-swift/lesson-1-deploying-the-related-business-rules.md)を参照してください。  
+>  発行し、A4SWIFT_Codelist と A4SWIFT_Functions ボキャブラリを公開した場合にのみ、BIC 検証ポリシーを展開できます。 SWIFTSchemas アセンブリで BRE 配置ユーティリティを実行してこれらのボキャブラリを公開します。 詳細については、次を参照してください。[レッスン 1。関連するビジネス ルールの展開](../../adapters-and-accelerators/accelerator-swift/lesson-1-deploying-the-related-business-rules.md)します。  
 
 ### <a name="to-customize-the-bic-master-policy"></a>BIC マスター ポリシーをカスタマイズするには  
 

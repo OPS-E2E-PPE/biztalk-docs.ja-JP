@@ -1,5 +1,5 @@
 ---
-title: エンタープライズ シングル サインオンを実装する |Microsoft ドキュメント
+title: エンタープライズ シングル サインオンを実装する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,15 +19,15 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dfd4aaf39456c68c744384aa05ff5664e781aa3c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e7dfd1c2a21bcbb5bfe1e7befe299540e59e7526
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256466"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382594"
 ---
 # <a name="implementing-enterprise-single-sign-on"></a>エンタープライズ シングル サインオンの実装
-エンタープライズ シングル サインオン (SSO) では、エンド ユーザーのエンタープライズ アプリケーション統合 (EAI) ソリューションへのシングル サインオンを有効にするサービスを提供します。 SSO システムによって、Microsoft Windows アカウントがバックエンド資格情報にマップされます。 SSO を使用すると、ユーザーと管理者の両方のユーザー ID およびパスワードの管理が簡素化されます。 また、ユーザーは Windows ネットワークに 1 回ログオンするだけで、バックエンド システムおよびバックエンド アプリケーションにアクセスできるようになります。  
+エンタープライズ シングル サインオン (SSO) は、エンタープライズ アプリケーション統合 (EAI) ソリューションのためにエンドユーザーのシングル サインオンを有効にするサービスを提供します。 SSO システムでは、Microsoft Windows アカウントをバックエンド資格情報にマップします。 SSO には、両方のユーザーと管理者のパスワードとユーザー Id の管理が簡略化します。 Windows ネットワークに 1 回だけログインしてバックエンド システムとアプリケーションにアクセスすることができます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -37,7 +37,7 @@ ms.locfileid: "22256466"
   
 -   [SSO の使用](../core/using-sso.md)  
   
--   [SSO 展開のセキュリティで保護します。](../core/securing-your-deployment-of-sso.md)  
+-   [SSO 展開のセキュリティ保護](../core/securing-your-deployment-of-sso.md)  
   
 -   [パスワード同期](../core/password-synchronization2.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: アプリケーションの災害復旧の準備 |Microsoft ドキュメント
+title: アプリケーションのディザスター リカバリーの準備 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7028b1386f71f653dfc41b9de2522cdbd8d02126
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7b9d328d8c1e2f8085c8a1a1709a78824661f62c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302338"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379460"
 ---
-# <a name="preparing-applications-for-disaster-recovery"></a>アプリケーションの災害復旧の準備
-BizTalk アプリケーション (バイナリと構成アイテムなどの受信場所と送信ポート) は、障害復旧サイトで、グループを復元するときに、実稼働の BizTalk グループに展開されます。 この構成がかどうかに応じてを変更する必要がありますは構成の場所はなどの受信場所や、実稼働環境に固有のポートを送信します。  
+# <a name="preparing-applications-for-disaster-recovery"></a>アプリケーションのディザスター リカバリーの準備
+BizTalk アプリケーション (バイナリと構成アイテムなどの受信場所と送信ポート) は、ディザスター リカバリー サイトで、グループが復元されるときに、運用環境の BizTalk グループにデプロイされます。 この構成は、かどうかに応じて変更する必要がありますは受信場所と運用環境に固有のポートの送信などの構成の場所があります。  
   
- 災害復旧サイトにアプリケーションの復元を高速化する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]にバイナリをインストールする .msi ファイル、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム サーバー必要がありますに最新に維持災害復旧[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実行時のサーバー。 障害復旧サイトで、運用環境の BizTalk グループが復元される場合、災害復旧固有のアプリケーション構成の .msi ファイルならない場合がありますなど、障害回復に固有の成果物のため、アプリケーションを構成するためにインストールします。受信場所と、必要に応じて、ポートを送信します。  
+ ディザスター リカバリー サイトでアプリケーションの復元を高速化、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]でバイナリをインストールする .msi ファイル、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]サーバーの実行時間保持する必要が最新の状態のディザスター リカバリー[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実行時のサーバー。 ディザスター リカバリーに固有のアプリケーション構成の .msi ファイルをなど、アプリケーションの災害復旧に固有の成果物を構成するためにインストールする必要があります、ディザスター リカバリー サイトで運用環境の BizTalk グループが復元されると、受信場所と、必要に応じて、送信ポート。  
   
 ## <a name="see-also"></a>参照  
- [アプリケーションを展開します。](../technical-guides/deploying-an-application.md)
+ [アプリケーションの展開](../technical-guides/deploying-an-application.md)

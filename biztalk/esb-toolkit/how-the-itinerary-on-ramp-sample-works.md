@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f282e49b8095059b273bd737d6fb38ff97090f5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4f52d8442f777d67b31b99c4fef336d6a5e71f60
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966067"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400773"
 ---
 # <a name="how-the-itinerary-on-ramp-sample-works"></a>スケジュール オンランプ ランプでサンプルのしくみ
 サンプル アプリケーションで、クライアント アプリケーションのウィンドウでコントロールを使用して作成したスケジュールが含まれている SOAP ヘッダーのセットを作成スケジュールのテスト用クライアント ディスクから、指定されたメッセージ ファイルを読み込み、itinerary ヘッダーをメッセージに追加し、ESB 行程入り口の処理に送信します。 旅行プランは、応答を生成する場合、アプリケーションは、応答を収集し、アプリケーション ウィンドウに表示します。  

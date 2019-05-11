@@ -14,18 +14,18 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: afe3d54aa508d45211277377c2f2d8880c37044d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 512907afe143b92af3eafea2156efd42d97f4f75
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015155"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384602"
 ---
-# <a name="how-to-modify-net-clr-settings"></a>.NET CLR の設定を変更する方法
-BizTalk ホストのインスタンスに関連付けられた .NET スレッド プールで使用できる Windows スレッド数を更新するには、BizTalk 設定ダッシュボードを使用して、CLR (共通ランタイム言語) Hosting の値を変更できます。 このトピックでは、これらの設定を変更する手順を説明します。  
+# <a name="how-to-modify-net-clr-settings"></a>.NET CLR 設定を変更する方法
+BizTalk ホストのインスタンスに関連付けられた .NET スレッド プールで使用できる Windows スレッド数を更新するには、BizTalk 設定ダッシュ ボードを使用して、適切な共通ランタイム (CLR 言語) Hosting 値を変更できます。 このトピックでは、これらの設定を変更するための手順を提供します。  
 
 ## <a name="prerequisites"></a>前提条件  
- ここで示す操作を実行するには、BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。  
+ この操作を実行するには、BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。  
 
 ### <a name="to-modify-the-net-clr-settings-of-a-host-instance"></a>ホスト インスタンスの .NET CLR 設定を変更するには  
 
@@ -38,16 +38,16 @@ BizTalk ホストのインスタンスに関連付けられた .NET スレッド
 
    |     プロパティ      |                                                                                目的                                                                                | 境界値 | 既定値 | アップグレード ロジック |
    |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|---------------|---------------|
-   | **ホスト インスタンス** | ドロップダウン ボックスから、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイム コンピューター上のホストで実行中のインスタンスを選択します。 |        -        |       -       |       -       |
+   | **ホスト インスタンス** | ホストの実行中のインスタンスを選択、ドロップダウン ボックスから、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム コンピューター。 |        -        |       -       |       -       |
 
     **スレッドの設定**  
 
    |プロパティ|目的|境界値|既定値|アップグレード ロジック|  
    |--------------|----------------|---------------------|-------------------|-------------------|  
-   |**最大値。ワーカー スレッド**|.NET CLR ワーカー スレッドの最大数を指定します。|[最小ワーカー スレッド数、500]|25|ホスト インスタンスのレジストリ設定をホスト インスタンスの設定に移行し、Version、Flavor、Flags、および MinCompletionPortThreads を無視します。|  
-   |**最小ワーカー スレッド数**|.NET CLR ワーカー スレッドの最小数を指定します。|[0, 500]|5|ホスト インスタンスのレジストリ設定をホスト インスタンスの設定に移行し、Version、Flavor、Flags、および MinCompletionPortThreads を無視します。|  
-   |**最大値。IO スレッドの数**|IO スレッドの最大数を指定します。|[最小 IO スレッド数、1000]|250|ホスト インスタンスのレジストリ設定をホスト インスタンスの設定に移行し、Version、Flavor、Flags、および MinCompletionPortThreads を無視します。|  
-   |**最小値。IO スレッドの数**|IO スレッドの最小数を指定します。|[0, 1000]|25|ホスト インスタンスのレジストリ設定をホスト インスタンスの設定に移行し、Version、Flavor、Flags、および MinCompletionPortThreads を無視します。|  
+   |**最大値。ワーカー スレッド**|.NET CLR ワーカー スレッドの最大数を指定します。|[最小ワーカー スレッド、500]|25|ホスト インスタンスの設定、バージョン、フレーバー、フラグ、および MinCompletionPortThreads を無視するホスト インスタンスのレジストリ設定を移行します。|  
+   |**最小ワーカー スレッド数**|.NET CLR ワーカー スレッドの最小数を指定します。|[0, 500]|5|ホスト インスタンスの設定、バージョン、フレーバー、フラグ、および MinCompletionPortThreads を無視するホスト インスタンスのレジストリ設定を移行します。|  
+   |**最大値。IO スレッドの数**|IO スレッドの最大数を指定します。|[最小 IO スレッド数、1000]|250|ホスト インスタンスの設定、バージョン、フレーバー、フラグ、および MinCompletionPortThreads を無視するホスト インスタンスのレジストリ設定を移行します。|  
+   |**最小値。IO スレッドの数**|IO スレッドの最小数を指定します。|[0, 1000]|25|ホスト インスタンスの設定、バージョン、フレーバー、フラグ、および MinCompletionPortThreads を無視するホスト インスタンスのレジストリ設定を移行します。|  
 
     .NET CLR 設定は、コア CPU ごとに適用されます。  
 

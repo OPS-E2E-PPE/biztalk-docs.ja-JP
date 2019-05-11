@@ -16,15 +16,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb36c7c8d083cb72cd92cc90c088c7d8a35a9731
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8257b5b1cf2fe1932fdf18795946b473a7eeb0ea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004195"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385130"
 ---
 # <a name="how-to-enable-an-affiliate-application"></a>関連アプリケーションを有効にする方法
-MMC スナップインまたはコマンド ラインを使用して、指定した関連アプリケーションを有効にすることができます。  
+指定された関連アプリケーションを有効にするのには、MMC スナップインまたはコマンドラインを使用できます。  
   
 ### <a name="to-enable-an-affiliate-application-using-the-mmc-snap-in"></a>MMC スナップインを使用して関連アプリケーションを有効にするには  
   
@@ -34,7 +34,7 @@ MMC スナップインまたはコマンド ラインを使用して、指定し
   
 3.  関連アプリケーションを右クリックし、**を有効にする**します。  
   
-### <a name="to-enable-an-affiliate-application-using-the-command-line"></a>コマンド ラインを使用して関連アプリケーションを有効にするには  
+### <a name="to-enable-an-affiliate-application-using-the-command-line"></a>コマンドラインを使用して関連アプリケーションを有効にするには  
   
 1. **開始** メニューのをクリックして**実行**、し、入力**cmd**します。  
   

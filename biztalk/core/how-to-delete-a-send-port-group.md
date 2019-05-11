@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4bf0e1a75799671ecd2e52515481c3d3be32ee67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c3edf36e0e7d8eaa512b8495e53097261e5c9be6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013691"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385347"
 ---
 # <a name="how-to-delete-a-send-port-group"></a>送信ポート グループを削除する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポート グループを BizTalk アプリケーションから削除する方法について説明します。 送信ポート グループを BizTalk アプリケーションから削除すると、そのグループの BizTalk 管理データベースからも送信ポート グループが削除されます。 送信ポート グループを削除しても、そこに含まれる送信ポートは削除されません。  
@@ -30,9 +30,9 @@ ms.locfileid: "37013691"
   
 -   送信ポート グループにオーケストレーションがバインドされていない:  次の手順で、バインドを削除するには、ケースの場合は、[オーケストレーションをバインド解除する方法](../core/how-to-unbind-an-orchestration.md)します。  
   
--   送信ポート グループが停止および参加解除されている:  停止、および送信ポートを参加解除については、[送信ポートまたは送信ポート グループを参加解除する方法](../core/how-to-unenlist-a-send-port-or-send-port-group.md)と[送信ポートまたは送信ポート グループを停止する方法](../core/how-to-stop-a-send-port-or-send-port-group.md)を参照してください。  
+-   送信ポート グループが停止および参加解除されている:  停止、および送信ポートを参加解除については、次を参照してください。[送信ポートまたは送信ポート グループを参加解除する方法](../core/how-to-unenlist-a-send-port-or-send-port-group.md)と[送信ポートまたは送信ポート グループを停止する方法](../core/how-to-stop-a-send-port-or-send-port-group.md)します。  
   
--   送信ポート グループがパーティで参照されていない:  パーティから送信ポート グループへの参照を削除する方法の詳細については、[方法を表示または編集するパーティ](http://msdn.microsoft.com/library/42e6f3a0-8f7d-4f6c-ab05-a1fab7bf46ca)を参照してください。  
+-   送信ポート グループがパーティで参照されていない:  パーティから送信ポート グループへの参照を削除する方法の詳細については、次を参照してください。[方法を表示または編集するパーティ](http://msdn.microsoft.com/library/42e6f3a0-8f7d-4f6c-ab05-a1fab7bf46ca)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

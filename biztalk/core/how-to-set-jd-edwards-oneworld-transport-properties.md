@@ -2,12 +2,12 @@
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: 5290f424bbeb5cf54e78c903c50a6c2d945bc8cc
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 2dbfa33f316dc48d696bdcb7f16b6506e918a9c4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24014129"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383937"
 ---
 # <a name="how-to-set-jd-edwards-oneworld-transport-properties"></a>JD Edwards OneWorld トランスポートのプロパティを設定する方法
 
@@ -22,17 +22,17 @@ JD Edwards OneWorld の "トランスポート プロパティ" システム定�
 >  入力値はすべて、大文字と小文字が区別されます。  
   
 ## <a name="set-the-transport-properties"></a>トランスポートのプロパティを設定します。  
- **トランスポートのプロパティ**ダイアログ ボックスで、サーバーのシステムおよびアクセスしようとしているオブジェクトに固有の接続および資格情報パラメーターを設定します。  
+ **トランスポートのプロパティ**ダイアログ ボックスで、サーバー システムやアクセスしようとしているオブジェクトに固有の接続および資格情報パラメーターを設定します。  
   
 1.  資格情報を指定します。  
   
      JD Edwards OneWorld システムにアクセスするには、次の方法があります。  
   
-    -   ログオン資格情報 (パスワード、ユーザー名): このメソッドを使用する場合は、手順 5. に進みます。  
+    -   ログオン資格情報 (パスワード、ユーザー名):このメソッドを使用する場合は、手順 5 に進みます。  
   
     -   シングル サインオン  
   
-2.  シングル サインオン (SSO) を使用するのには、選択**はい**で、 **SSO を使用する**です。  
+2.  シングル サインオン (SSO) を使用する**はい**で、**を使用して SSO**します。  
   
      SSO を設定する方法の詳細については、次を参照してください[アダプターのセキュリティ。](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)  
   
@@ -40,43 +40,43 @@ JD Edwards OneWorld の "トランスポート プロパティ" システム定�
   
      エンタープライズ シングル サインオンのツールによって作成される関連アプリケーションはそれぞれ、JD Edwards OneWorld などの特定のアプリケーションを表します。 Microsoft BizTalk Adapter for JD Edwards OneWorld では、アプリケーション ユーザーの資格情報が使用されます。 この資格情報は、指定された関連アプリケーションのサーバー システムの SSO 資格情報データベースから取得されます。 取得される資格情報は、BizTalk Server プロジェクトを起動したアプリケーション ユーザーの資格情報です。  
   
-     詳細については、次を参照してください。[関連アプリケーションの作成](../core/creating-affiliate-applications3.md)です。  
+     詳細については、次を参照してください。[関連アプリケーションを作成する](../core/creating-affiliate-applications3.md)します。  
   
-4.  展開して、 **JD Edwards OneWorld システム**ノードと JD Edwards OneWorld サーバーに接続に必要なすべての情報を入力します。  
+4.  展開、 **JD Edwards OneWorld システム**ノードし、JD Edwards OneWorld サーバーへの接続に必要なすべての情報を入力します。  
   
      ![](../core/media/jdedadapter-02-jdesystem.gif "JDEdAdapter_02_JDESystem")  
   
-     接続パラメーターの設定が完了すると、JD Edwards OneWorld システムの内容を参照できるようになります。 詳細については、次を参照してください。[を BizTalk Server プロジェクトに JD Edwards OneWorld スキーマをインポートする](../core/importing-jd-edwards-oneworld-schemas-into-biztalk-server-projects.md)です。  
+     接続パラメーターの設定が完了すると、JD Edwards OneWorld システムの内容を参照できるようになります。 詳細については、次を参照してください。[を BizTalk Server プロジェクトに JD Edwards OneWorld スキーマをインポートする](../core/importing-jd-edwards-oneworld-schemas-into-biztalk-server-projects.md)します。  
   
-5.  呼び出し、たとえば 200 の数を示す値を入力**Max Concurrent Calls**必要がある場合。  
+5.  呼び出しでは、たとえば 200 の数を示す値を入力**最大同時呼び出し数**必要な場合。  
   
-     `Max Concurrent Calls`パラメーターを使用して、構成を最適化することができます。 スループットがバックエンドの処理能力を上回る場合に、このパラメーターを使用してメッセージ オーバーロード保護をアクティブにします。 既定値は -1 で、これは呼び出しの数が無制限であることを示します。  
+     `Max Concurrent Calls`パラメーターでは、構成を最適化することができます。 スループットがバックエンドの処理能力を上回る場合に、このパラメーターを使用してメッセージ オーバーロード保護をアクティブにします。 既定値は -1 で、これは呼び出しの数が無制限であることを示します。  
   
      BizTalk Server が送信アダプターにメッセージを送信するときに、BizTalk Server は最初にアダプターからバッチを 1 つ受け取ります。 `TransmitMessage` をそのバッチに対して起動して、各メッセージを送信します。 この処理が完了すると、BizTalk Server はバッチで `Done` を呼び出し、アダプタがバックエンドに対するメッセージ送信を開始します。 BizTalk Server が複数のバッチを受け取ってから `Done` を呼び出しても、メッセージは送信されません。 バッチ内に含めるメッセージの最大数を設定することで、バックエンドに送信するメッセージを制御できます。  
   
      このパラメーターの変更が反映されるまで最大 1 分程度かかります。BizTalk Server は、SQL データベースに保存されたアダプター構成に対する変更を取得する必要があるからです。  
   
-6.  選択**はい**の**エージェントの更新**runtimeagent.exe および browsingagent.exe の処理を必要時に自動的に再起動を強制します。  
+6.  選択**はい**の**エージェントの更新**runtimeagent.exe および browsingagent.exe の処理を必要な場合に自動的に再起動を強制します。  
   
      たとえば、サーバーとの接続が失われた場合や、サーバーに追加したものが Microsoft アダプター ウィザードに表示されない場合に、処理を自動的に再起動することができます。  
   
     > [!NOTE]
-    >  browsingagent.exe が最新の状態に更新されるのは、ユーザーが現在の参照セッションを終了したときです。 たとえば、終了する必要があります、**項目の生成された追加**参照セッションとを browsingagent.exe を更新します。  
+    >  browsingagent.exe が最新の状態に更新されるのは、ユーザーが現在の参照セッションを終了したときです。 たとえば、終了する必要があります、**項目の追加生成**閲覧セッションを browsingagent.exe を更新します。  
   
-7.  必要なすべての情報を提供すると、をクリックして**適用**、クリックして **[ok]** の接続情報を受け入れます。  
+7.  必要なすべての情報を提供するには、後に次のようにクリックします。**適用**、順にクリックします **[ok]** の接続情報を受け入れます。  
   
      JD Edwards OneWorld にアクセスするには、BizTalk Adapter for JD Edwards OneWorld の接続パラメーターを設定する必要があります。  
   
 ## <a name="adapter-required-properties"></a>必要なアダプターのプロパティ  
  コントロール パネルでグローバル環境変数を設定しなかった場合は、このセクションで設定できます。  
   
-|パラメーター|Description|  
+|パラメーター|説明|  
 |---------------|-----------------|  
 |`Host`|ホスト サーバーのコンピューター名の名前を入力 (たとえば、 `actsvr1`); またはコンピューターの IP アドレス (たとえば、 `123.456.0.789`)。|  
 |JAVA_HOME|JDK インストール ディレクトリの完全パスを入力します。|  
-|JD Edwards 環境|たとえば、JD Edwards OneWorld の環境の名前を入力`DV7333`です。<br /><br /> DV7333 は開発環境の一般名、PY7333 はプロトタイプ環境の一般名、PD7333 は実稼働環境の一般名です。|  
-|JDEdwards JAR ファイル|各 JAR ファイルの完全なパスとファイル名を入力します。<br /><br /> -Connector.jar<br />-Kernel.jar<br />-JDEJAccess.jar<br />-JDEActionalInterop.jar<br /><br /> jar ファイルの区切りにはセミコロン (;) を使用し、スペースは入れません。 例:<br /><br /> `<drive>\Connector.jar;<drive>\Kernel.jar;`|  
-|Password|指定されたユーザーのパスワードを入力します。|  
-|ポート|データを交換するポート番号を入力 (たとえば、 `6009`)。|  
+|JD Edwards 環境|たとえば、JD Edwards oneworld では、環境の名前を入力`DV7333`します。<br /><br /> DV7333 は開発環境の一般名、PY7333 はプロトタイプ環境の一般名、PD7333 は実稼働環境の一般名です。|  
+|JDEdwards JAR ファイル|各 JAR ファイルの完全なパスとファイル名を入力します。<br /><br /> -   Connector.jar<br />-   Kernel.jar<br />-   JDEJAccess.jar<br />-   JDEActionalInterop.jar<br /><br /> jar ファイルの区切りにはセミコロン (;) を使用し、スペースは入れません。 以下に例を示します。<br /><br /> `<drive>\Connector.jar;<drive>\Kernel.jar;`|  
+|パスワード|指定したユーザーのパスワードを入力します。|  
+|Port|データを交換するポート番号を入力 (たとえば、 `6009`)。|  
 |[ユーザー名]|JD Edwards OneWorld システムへのログオンに使用する JD Edwards OneWorld ユーザー名を入力します。|  
   

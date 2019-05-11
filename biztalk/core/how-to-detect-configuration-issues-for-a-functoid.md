@@ -1,5 +1,5 @@
 ---
-title: Functoid の構成の問題を検出する方法 |Microsoft ドキュメント
+title: Functoid の構成の問題を検出する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,36 +12,36 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8561156091c992e9329ef7d9627589eff9e0ed6
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: da91fbeb9afc3d6f93a319e82e7e83d396ad4e16
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25968968"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385233"
 ---
 # <a name="how-to-detect-configuration-issues-for-a-functoid"></a>Functoid の構成に関する問題を検出する方法
-マップを操作しているときに、Functoid やリンクの構成に関する問題が発生する可能性があります。 BizTalk マッパーでは、ビジュアル化機構を使用して、functoid の構成に関連する問題をすばやく識別できます。 この視覚的で、functoid アイコンで警告の注釈として表示されます (の例: ![Functoid IntelliSense](../core/media/mapper-functoidintellisense.gif "Mapper_FunctoidIntelliSense"))、リレーションシップ ビューでします。 このトピックでは、Functoid の構成の問題を検出する方法について説明します。  
+マップを操作しているときに、functoid やリンクの構成に関する問題が発生する可能性があります。 BizTalk マッパーでは、視覚化メカニズムを使用して、functoid の構成に関連する問題をすばやく識別できます。 この視覚的で、functoid アイコンで警告の注釈として表示されます (の例: ![Functoid IntelliSense](../core/media/mapper-functoidintellisense.gif "Mapper_FunctoidIntelliSense"))、リレーションシップ ビューで。 このトピックでは、functoid の構成の問題を検出する方法についての情報を提供します。  
   
- 警告状態アイコンは、Functoid が適切に構成されていないことをマッパーが検出した場合に表示されます。 Functoid 上にマウスを移動すると、マッパーによって検出された問題の簡単な説明が表示されます。 たとえば、Functoid に最小数の有効な入力がない場合、Functoid のツールヒントに必要な入力パラメーターの数が示されます。  
+ マッパー functoid が正しく構成されていないことを検出すると、警告状態アイコンが表示されます。 Functoid 上にマウスを動かすと、マッパーによって特定された問題の簡単な情報も表示されます。 たとえば、functoid が有効な入力値の最小数を持たない場合、functoid のツールヒントは、必要な入力パラメーターの数を示しています。  
   
 ## <a name="prerequisites"></a>前提条件  
  この操作では、BizTalk マッパーが実行されている必要があります。  
   
 ### <a name="to-detect-configuration-issues-for-a-functoid"></a>Functoid の構成の問題を検出するには  
   
-1.  必要な Functoid をツールボックスからグリッド ページにドラッグします。 Functoid に警告アイコンが表示されます。  
+1.  ツールボックスからグリッド ページに必要な functoid をドラッグします。 警告アイコンが functoid が表示されます。  
   
-2.  次のいずれかの操作が可能です。  
+2.  次のいずれかの操作を行うことができます。  
   
-    -   マウス ポインターを Functoid 上に移動します。 ツールヒントに、エラーと対処方法に関する情報が表示されます。  
+    -   Functoid には、マウス ポインターを移動します。 ツールヒントには、行う必要があるとエラーに関する情報が表示されます。  
   
-         次の図は、Functoid "Addition" の構成時のエラー情報が表示されたツールヒントです。  
+         次の図は、functoid"Addition。"を構成するときにエラー情報を含むヒントを表示します。  
   
-         ![Functoid の構成のエラー検出](../core/media/errordetectionfunctoid.gif "ErrorDetectionFunctoid")  
+         ![Functoid の構成でのエラー検出](../core/media/errordetectionfunctoid.gif "ErrorDetectionFunctoid")  
   
-    -   Functoid をダブルクリックします。 **構成\<Functoid\> Functoid**  ダイアログ ボックスには、入力パラメーターの警告アイコンが表示されます。 これは、選択した Functoid の入力パラメーターが構成されていないことを示します。  
+    -   Functoid をダブルクリックします。 **構成\<Functoid\> Functoid**  ダイアログ ボックスに入力パラメーターの警告アイコンが表示されます。 これは、選択した functoid の入力パラメーターが構成されていないことを示します。  
   
-         次の図は、"Addition" Functoid の入力パラメーターに関するエラー情報を示しています。  
+         次の図は、"Addition"functoid の入力パラメーターに関するエラー情報を表示します。  
   
          ![Functoid が構成されていないときに表示される警告](../core/media/configure-input-parameters-warningicon.gif "Configure_input_parameters_WarningIcon")  
   

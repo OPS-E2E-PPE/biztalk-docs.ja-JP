@@ -15,20 +15,20 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eccb543192a07170da26935babf2c122b5091f3d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 219d4e98a9cda545c61888ec5e27cecfa0821de9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967796"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384497"
 ---
 # <a name="how-to-open-a-saved-tracking-query"></a>保存されている追跡クエリを開く方法
-ライブ追跡データ データ (現在実行中のサービス インスタンスおよびメッセージ) に対するメッセージまたはサービス インスタンス クエリを開くことができます。 これを行うには、BizTalk Server 管理コンソール内の [グループ ハブ] ページにある [クエリ] タブを使用します。  
+ライブ追跡データが (現在実行中のサービス インスタンスおよびメッセージ) に対して、メッセージやサービスのインスタンスでクエリを開くことができます。 これは、BizTalk Server 管理コンソール内からグループ ハブ ページで、クエリ タブを使用して行います。  
   
 ## <a name="prerequisites"></a>前提条件  
- ここで示す手順を実行するには、BizTalk Server Administrators グループのメンバーとしてログオンする必要があります。  
+ この手順を実行する BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。  
   
-### <a name="to-open-a-saved-query"></a>保存されているクエリを開くには  
+### <a name="to-open-a-saved-query"></a>保存されたクエリを開く  
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   

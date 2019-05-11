@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server が EDI メッセージを受信する方法 |Microsoft ドキュメント
+title: BizTalk Server が EDI メッセージを受信する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb7cdda6a54db06c0388d8c72dcb65a2c8f21f02
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d9365904b90e3e21f9903be684b33327a3fd037d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246442"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387478"
 ---
 # <a name="how-biztalk-server-receives-edi-messages"></a>BizTalk Server が EDI メッセージを受信する方法
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が EDI メッセージを受信すると、取引先アグリーメント参照とスキーマ探索の実行、メッセージの検証、受信確認の送信 (該当する場合)、および EDI バッチの解析が行われます。 この処理は、EDI 受信パイプラインの EDI 逆アセンブラーによって行われます。  
+ときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]EDI メッセージを受信、受信確認 (該当する) 場合は、送信、メッセージの検証、および、EDI バッチの解析、取引先パートナー アグリーメント参照とスキーマ探索を実行します。 この処理は、EDI 受信パイプラインで EDI 逆アセンブラーが実行されます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [EDI の受信コンポーネント](../core/edi-receive-components.md)  
   
--   [アグリーメントの解決、スキーマ探索、および受信した EDI メッセージの承認](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md)  
+-   [受信した EDI メッセージのアグリーメントの解決、スキーマ探索、および認証](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md)  
   
--   [EDI 逆アセンブラーの動作方法](../core/how-the-edi-disassembler-works.md)  
+-   [EDI 逆アセンブラーの動作](../core/how-the-edi-disassembler-works.md)  
   
 -   [受信した EDI メッセージの検証](../core/validation-of-received-edi-messages.md)  
   
--   [EDI 受信確認を送信します。](../core/sending-an-edi-acknowledgment.md)  
+-   [EDI 受信確認の送信](../core/sending-an-edi-acknowledgment.md)  
   
 -   [受信バッチの処理](../core/processing-incoming-batches.md)

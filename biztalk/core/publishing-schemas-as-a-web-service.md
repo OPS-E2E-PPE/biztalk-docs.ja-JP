@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59d3c865f88dcbf50fde43a17cf39c10a21d23e0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7a48833070fe0983f1884cf5e8e6cd03a123d134
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985379"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398375"
 ---
 # <a name="publishing-schemas-as-a-web-service"></a>Web サービスとしてのスキーマの公開
 BizTalk Web サービス公開ウィザードを使用して、既存のスキーマを使用する Web サービスを作成できます。 公開する Web サービス、Web メソッド、要求スキーマ、および応答スキーマを宣言します。 ウィザードでは、ターゲットの名前空間、SOAP ヘッダーの必要性、および生成される Web サービス プロジェクトの場所を定義できます。  
@@ -37,7 +37,7 @@ BizTalk Web サービス公開ウィザードを使用して、既存のスキ�
 >  スキーマを Web サービスとして公開するには、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] および [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がインストールされている必要があります。  
 > 
 > [!IMPORTANT]
->  BizTalk Web サービス公開ウィザードを実行する前に、Web サービスを有効にする必要があります。 Web サービスを有効にする方法の詳細については、[Web サービスを有効にする](../core/enabling-web-services.md)を参照してください。  
+>  BizTalk Web サービス公開ウィザードを実行する前に、Web サービスを有効にする必要があります。 Web サービスを有効にする方法の詳細については、次を参照してください。 [Web サービスを有効にする](../core/enabling-web-services.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

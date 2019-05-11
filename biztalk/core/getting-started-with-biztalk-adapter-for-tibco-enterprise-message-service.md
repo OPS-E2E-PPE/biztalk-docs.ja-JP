@@ -1,6 +1,6 @@
 ---
-title: BizTalk adapter for TIBCO Enterprise Message Service 開始 |Microsoft ドキュメント
-description: アダプターの機能、文字エン コード、messaginges、インストール手順、および BizTalk Adapter for TIBCO Enterprise Message Service で BizTalk Server 用のチュートリアル
+title: TIBCO Enterprise Message Service 用 BizTalk アダプターの概要 |Microsoft Docs
+description: アダプターの機能、文字エン コード、messaginges、インストール手順、および BizTalk Server で TIBCO Enterprise Message Service の BizTalk アダプターのチュートリアル
 ms.custom: ''
 ms.date: 10/16/2017
 ms.prod: biztalk-server
@@ -13,19 +13,19 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66315956d9d68d1986895b0be286a057782d4236
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 0b4cae28943a212ef50c45fef536eed23b4628b5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
-ms.locfileid: "23450283"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387656"
 ---
-# <a name="get-started-with-biztalk-adapter-for-tibco-enterprise-message-service"></a>BizTalk adapter for TIBCO Enterprise Message Service 作業を開始します。
+# <a name="get-started-with-biztalk-adapter-for-tibco-enterprise-message-service"></a>TIBCO Enterprise Message Service 用 BizTalk アダプターの概要します。
 
 ## <a name="overview"></a>概要
-このセクションでは、Microsoft BizTalk Adapter for TIBCO Enterprise Message Service を構成および使用して、TIBCO Enterprise Message Service メッセージにアクセスする方法について説明します。  
+このセクションでは、構成および Microsoft BizTalk Adapter for TIBCO Enterprise Message Service を使用して TIBCO Enterprise Message Service メッセージにアクセスする方法について説明します。  
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [アダプターの機能](../core/adapter-features.md)  
   
@@ -33,6 +33,6 @@ ms.locfileid: "23450283"
   
 -   [メッセージ](../core/messages.md)  
   
--   [BizTalk Adapter for TIBCO Enterprise Message Service をインストールします。](../core/installing-biztalk-adapter-for-tibco-enterprise-message-service.md)  
+-   [BizTalk Adapter for TIBCO Enterprise Message Service のインストール](../core/installing-biztalk-adapter-for-tibco-enterprise-message-service.md)  
   
--   [チュートリアル: Microsoft BizTalk Adapter を使用して TIBCO Enterprise Message Service の](../core/tutorials-use-the-microsoft-biztalk-adapter-for-tibco-message-service.md)
+-   [チュートリアル:TIBCO Enterprise Message Service の Microsoft BizTalk Adapter の使用](../core/tutorials-use-the-microsoft-biztalk-adapter-for-tibco-message-service.md)

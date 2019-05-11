@@ -1,6 +1,6 @@
 ---
-title: 統合と Azure Mvp、コミュニティによって作成されたブログ リスト |Microsoft ドキュメント
-description: ブログと BizTalk Server、Logic Apps の統合および Azure Mvp、コミュニティ メンバーによって web サイト
+title: 統合 Azure Mvp およびコミュニティによって作成されたブログのリスト |Microsoft Docs
+description: ブログや web サイトを BizTalk Server、Logic Apps、およびその他の統合と Azure の Mvp およびコミュニティのメンバー
 author: MandiOhlinger
 manager: anneta
 ms.date: 08/23/2017
@@ -9,102 +9,102 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.author: mandia
-ms.openlocfilehash: ea6ec410696c1e1f7325c610eb7770e64a574101
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bdf38e556e74d8aafbcad6fbf0d2951f47eaa0e3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22290834"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379753"
 ---
-# <a name="mvp-and-community-written-blogs"></a>MVP やコミュニティによって記述されたブログ
+# <a name="mvp-and-community-written-blogs"></a>MVP およびコミュニティによって記述されたブログ
 
 
 ## <a name="martin-abbott"></a>Martin Abbott
 [ブログ](http://martinabbott.com)  |  [Twitter](https://twitter.com/martinabbott)
 
-Martin がされました「を行う」Integration 15 年以上にわたってとグローバルの統合 Bootcamp とグローバル Azure Bootcamp のチーム メンバーは、管理者のいずれか。 彼は何もしないオフタイムに彼があるないためです。 
+Martin がされている「を行う」15 年以上にわたって、統合とグローバルの統合ブート キャンプとグローバル Azure ブート キャンプのチーム メンバーは、管理者の 1 つ。 彼は何も行いません余暇に彼があるないためです。 
 
-## <a name="bill-chesnut"></a>手形 Chesnut
+## <a name="bill-chesnut"></a>請求書 Chesnut
 [ブログ](https://biztalkbill.com)  |  [Twitter](https://twitter.com/BizTalkBill)
 
-BizTalk Server、API Management、Visual Studio Team Services (VSTS)、Service Bus、Logic Apps をなど、すべての点統合に関する ramblings です。
+BizTalk Server、API Management、Visual Studio Team Services (VSTS)、Service Bus、Logic Apps をなど、モ ノのすべての統合に関するさまざまです。
 
-## <a name="sam-cogan"></a>Sam Cogan
+## <a name="sam-cogan"></a>Sam 始動 (cogan)
 [ブログ](http://samcogan.com)  |  [Twitter](https://twitter.com/samcogan)
 
-Sam のブログは、一般に、Microsoft Azure、およびクラウド テクノロジについて説明します。 Sam は、オートメーション、DevOps、およびクラウドでの構成管理で、フォーカスのある Azure 領域に新しいとおすすめの開発も説明します。 
+Sam のブログは、一般に、Microsoft Azure とクラウド テクノロジについて説明します。 Sam には、automation、DevOps、およびクラウドの構成の管理に重点を置いて Azure 領域に新しいとおすすめの機能の開発もについて説明します。 
 
 ## <a name="glenn-colpaert"></a>Glenn Colpaert
 [ブログ](https://glenncolpaert.wordpress.com/)  |  [Twitter](https://twitter.com/GlennColpaert)
 
-クラウド内、(ハイブリッド)、および彼フィート オンプレミス顔ブログです。 Azure のブログ/IoT/統合
+彼フィート、オンプレミスや、(ハイブリッド) クラウドでの顔のブログです。 Azure のブログ/IoT/統合
 
 ## <a name="nino-crudele"></a>Nino Crudele
 [ブログ](https://blog.ninocrudele.com/)  |  [Twitter](https://twitter.com/ninocrudele)
 
-統合のテクノロジと関連するすべてのものと何もに関する Nino ブログ。
+テクノロジの統合、およびそれに関連するすべてのものと何もについて Nino ブログ。
 
 ## <a name="eldert-grootenboer"></a>Eldert Grootenboer
 [ブログ](https://blog.eldert.net/)  |  [Twitter](https://twitter.com/egrootenboer)
 
-Microsoft 統合、IoT、Azure の統合、および BizTalk Server を含むすべてのものに焦点を合わせています。 
+すべての IoT、Azure との統合、および BizTalk Server を含む、Microsoft の統合にフォーカスします。 
 
 ## <a name="aram-koukia"></a>Aram Koukia
 [ブログ](https://koukia.ca)  |  [Twitter](https://twitter.com/aramkoukia)
 
-Aram ソフトウェアの構築 2001 年以降。 Aram がハイキング、再生サッカー、テニス、読み取り、およびすべてのテレビ番組を行うにはソフトウェアを作成しない、ときに行います。
+Aram が、2001 年からソフトウェアを構築しているがきました。 および Aram がハイキング、サッカー、テニス、読み取り、および何もとテレビ番組を再生しないソフトウェアを作成する場合。
 
 ## <a name="saravana-kumar"></a>Saravana Kumar
 [ブログ](https://blogs.biztalk360.com/)  |  [Twitter](https://twitter.com/BizTalk360)
 
-さまざまな BizTalk Server の主に、Microsoft の統合テクノロジに関連する情報が含まれています。 Microsoft MVP と BizTalk360 チームによって書き込まれた 800 人以上のブログ記事があります。 
+さまざまな BizTalk Server の主に、Microsoft の統合テクノロジに関連する情報が含まれています。 Microsoft MVP と BizTalk360 チームによって書き込まれた 800 を超えるのブログ記事があります。 
 
 ## <a name="edward-kuo"></a>Edward Kuo 
 [ブログ](http://edwardkuo.imas.tw/)  |  [Twitter](https://twitter.com/Chia_Chi_Kuo)
 
-Edward のブログでは、Azure、Visual Studio Team Services (VSTS) についてし、エンタープライズのソリューション ガイダンスが含まれます。
+Edward のブログでは、Azure、Visual Studio Team Services (VSTS) の詳細については、およびエンタープライズ ソリューションに関するガイダンスが含まれています。
 
 ## <a name="steve-melan"></a>Steve Melan 
 [ブログ](http://stevemelan.wordpress.com)  |  [Twitter](https://twitter.com/SteveMelan)
 
-Steve は HIS メインフレームの専門家、および BizTalk、Host Integration Server と IBM 伝統的な統合に関するブログ。
+Steve は、HIS メインフレームの専門家および BizTalk、Host Integration Server、および IBM 遺産統合に関するブログを投稿します。
 
-## <a name="sandro-pereira"></a>Sandro 現在
+## <a name="sandro-pereira"></a>Sandro Pereira
 [ブログ](https://blog.sandro-pereira.com)  |  [Twitter](https://twitter.com/sandro_asp)
 
-エンタープライズ統合に関する注意事項: BizTalk Server、Azure Service Bus、Logic Apps、API Management、および統合に関連するすべてのものです。
+エンタープライズ統合に関する注意:BizTalk Server、Azure Service Bus、Logic Apps、API Management、および統合に関連するすべてのものです。
 
 ## <a name="dave-rendn"></a>Dave Rendón
 [ブログ](https://wikiazure.com/)  |  [Twitter](https://twitter.com/DaveRndn)
 
-情報リソースの一部と Azure IaaS でのトラブルシューティングを取得します。 Azure、実践的なラボ、および Microsoft のクラウド プラットフォームの一般的な知識について学習することもできます。
+リソースのいくつかの情報と Azure IaaS でのトラブルシューティングを取得します。 ことができます、Azure、ハンズオン ラボ、および Microsoft のクラウド プラットフォームで一般的な知識についても説明します。
 
 ## <a name="wagner-silveira"></a>Wagner Silveira
 [ブログ](https://notetoself.tech)  |  [Twitter](https://twitter.com/WSilveiraNZ)
 
-Microsoft の統合により、プロジェクトの作業、ソーシャル メディア、上のユーザーと対話するまたはフォーラムでのメッセージに返信するときに処理について学習しました。  
+プロジェクトで、Microsoft の統合の操作、ソーシャル メディア、上のユーザーと対話するまたはフォーラムでのメッセージに返信するときに点を学習しました。  
 
 ## <a name="maheshkumar-s-tiwari"></a>Maheshkumar S Tiwari
 [ブログ](http://tech-findings.blogspot.in/)  |  [Twitter](https://twitter.com/Savvy_mahesh)
 
-作業中の BizTalk や EDI、EAI、Azure との統合テクノロジで発見します。
+BizTalk で EDI、EAI、Azure との統合テクノロジでの作業中に発見します。
 
 ## <a name="dan-toomey"></a>Dan Toomey
 [ブログ](https://mindovermessaging.com/)  |  [Twitter](https://twitter.com/daniel2me)
 
-Dan は、MCSA、MCPD、MCT (BizTalk Server 2010) で、マイクロソフト認定トレーナー (MCT)、およびパブリッシュ Pluralsight 作成者です。 自分が頻繁に (彼は現在に保管されるため)、ブリスベン Azure ユーザーのグループ、および 2005年の設立ブリスベン BizTalk ユーザー グループを含む、オーストラリア コミュニティ イベントで話すです。 
+Dan は、MCSA、MCPD、MCTS (BizTalk Server 2010) をマイクロソフト認定トレーナー (MCT)、および、パブリッシュされた Pluralsight の執筆です。 (これは、現在を統括しています)、ブリスベン Azure ユーザーのグループ、および 2005 年に設立ブリスベン BizTalk ユーザー グループなど、オーストラリアのコミュニティ イベントで頻繁に講演しています。 
 
 ## <a name="kent-weare"></a>Kent を
 [ブログ](http://www.MiddlewareInTheCloud.com)  |  [Twitter](https://twitter.com/wearsy)
 
-Kent では、Azure Logic Apps、BizTalk Server、Azure API Management、Service Bus フローなどの Microsoft 統合テクノロジに強いフォーカスがあります。
+Kent では、Azure Logic Apps、BizTalk Server、Azure API Management、Service Bus、およびフローを含む、Microsoft の統合テクノロジに強いフォーカスがあります。
 
 ## <a name="steef-jan-wiggers"></a>Steef-jan Wiggers
 [ブログ](https://blog.steef-jan-wiggers.com/)  |  [Twitter](https://twitter.com/SteefJan)
 
-Steef-jan すべてでは Azure、統合、およびデータ サイエンスとがでの 15 年をさまざまなシナリオで発生します。 ブロガー、TechNet Wiki の作成者、ブックの作成者、およびグローバル講演コミュニティで非常にアクティブなしています。 
+Steef-jan が Azure、統合、およびデータ サイエンスのすべてでさまざまなシナリオでの 15 年の経験があります。 彼は、blogger、TechNet Wiki の作成者、ブックの作成者、および講演のグローバル コミュニティで非常に活発なです。 
 
 ## <a name="sjoukje-zaal"></a>Sjoukje Zaal
 [ブログ](http://sjoukjezaal.com/)  |  [Twitter](https://twitter.com/sjoukjezaal)
 
-Sjoukje のブログは、Azure とでは、Azure のセキュリティとアプリケーションの統合について説明します。 共同創設者にも[SP & C NL](http://spcnl.nl/)Azure、Office 365 と SharePoint に関する記事をオランダ語コミュニティ web サイトです。 
+Sjoukje のブログでは、Azure、こそすべてと、Azure のセキュリティ、およびアプリケーションの統合に焦点を当てています。 共同創立者も [SP & C NL](http://spcnl.nl/)Azure、Office 365、および SharePoint でのアーティクルを使用したオランダのコミュニティ web サイト。 

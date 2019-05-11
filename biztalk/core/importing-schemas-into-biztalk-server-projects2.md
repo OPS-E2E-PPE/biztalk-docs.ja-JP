@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ffc55fcb2bf5dd563dcc0fc9e2aed93b3a0c624
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: be4fd488c762d69a85278af12ef21b25967ff3da
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009571"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382473"
 ---
 # <a name="importing-schemas-into-biztalk-server-projects"></a>BizTalk Server プロジェクトへのスキーマのインポート
 ここでは、JD Edwards EnterpriseOne サーバーのブラウズ、および [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトへのスキーマのインポートについて説明します。  
   
 > [!NOTE]
->  arglist を設定したことを確認する必要があります。 オーケストレーションでスキーマを生成する前に、jdearglist.txt を更新する必要があります。 詳細については、[文字列値の処理](../core/handling-string-values2.md)を参照してください。  
+>  arglist を設定したことを確認する必要があります。 オーケストレーションでスキーマを生成する前に、jdearglist.txt を更新する必要があります。 詳細については、次を参照してください。[文字列値の処理](../core/handling-string-values2.md)します。  
   
 > [!NOTE]
 >  Jdearglist を変更するたびにそのビジネス オブジェクトのスキーマを再生成する必要があります。  
@@ -66,7 +66,7 @@ ms.locfileid: "37009571"
 >  サーバー オブジェクト定義が変更されると、スキーマを再生成し、そのデータを更新する必要があります。  
   
 > [!NOTE]
->  スキーマの生成後に jdearglist.txt を変更した場合、スキーマを再生成してそのデータを更新する必要があります。 Jdearglist.txt の詳細については、[文字列値の処理](../core/handling-string-values2.md)を参照してください。  
+>  スキーマの生成後に jdearglist.txt を変更した場合、スキーマを再生成してそのデータを更新する必要があります。 Jdearglist.txt の詳細については、次を参照してください。[文字列値の処理](../core/handling-string-values2.md)します。  
   
 ## <a name="select-the-schemas"></a>スキーマを選択します。  
   

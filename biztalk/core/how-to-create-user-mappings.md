@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 493f9b505288ea10e48eb0cf8607a870b5509425
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: df63045a5627bd3d7c356e76e4c836ee6ce28622
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009891"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338916"
 ---
 # <a name="how-to-create-user-mappings"></a>ユーザー マッピングを作成する方法
 ここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のユーザー マッピングを作成できます。 XML ファイルの例を次に示します。  
@@ -43,9 +43,9 @@ ms.locfileid: "37009891"
   
 ```  
   
- ユーザー アカウントが変更された場合は、このコマンドを使用して、新しいユーザー アカウントのマッピングを作成する必要があります。 また、古いユーザー マッピングを削除する必要もあります。 マッピングを削除する方法の詳細については、[ユーザー マッピングを削除する方法](../core/how-to-delete-user-mappings.md)を参照してください。  
+ ユーザー アカウントが変更された場合は、このコマンドを使用して、新しいユーザー アカウントのマッピングを作成する必要があります。 また、古いユーザー マッピングを削除する必要もあります。 マッピングを削除する方法の詳細については、次を参照してください。[ユーザー マッピングを削除する方法](../core/how-to-delete-user-mappings.md)します。  
   
- 作成したユーザー マッピングを SSO システムで使用するには、ユーザー マッピングを有効にする必要があります。 詳細については、[ユーザー マッピングを有効にする方法](../core/how-to-enable-a-user-mapping.md)を参照してください。  
+ 作成したユーザー マッピングを SSO システムで使用するには、ユーザー マッピングを有効にする必要があります。 詳細については、次を参照してください。[ユーザー マッピングを有効にする方法](../core/how-to-enable-a-user-mapping.md)します。  
   
 > [!IMPORTANT]
 >  ユーザー マッピングでは、ドメイン グループのみがサポートされています。  

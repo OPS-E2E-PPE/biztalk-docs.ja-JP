@@ -1,5 +1,5 @@
 ---
-title: BAM のユーザー | Microsoft Docs
+title: Bam のユーザー | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e2fc9523048aa4abafc82dfd5c0b4700eade23c2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b344d672476ffdf902e84a7250ec4e68e43f5e3e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983299"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401607"
 ---
-# <a name="who-uses-bam"></a>BAM のユーザー
+# <a name="who-uses-bam"></a>Bam のユーザー
 BAM のインフォメーション ワーカー機能は、ビジネス アナリストとビジネス ユーザーの 2 種類のユーザーが使用します。  
   
  ビジネス アナリストは BAM Excel アドインを使用して、監視するビジネス プロセスを定義します。 また、このアドインを使用して、BAM で収集されたデータをビジネス ユーザーが確認する方法を定義することもできます。 たとえば、注文書に関するデータを提供する場合、ビジネス アナリストはその注文に関して次のような点を考慮します。  

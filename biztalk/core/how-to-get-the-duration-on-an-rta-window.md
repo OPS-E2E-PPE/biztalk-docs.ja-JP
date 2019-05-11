@@ -17,21 +17,21 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6893200c498fc387d9a1948d332db409cf3b4d61
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a4b69ccb37e1104f78515e2974fc9ff791b45c39
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385019"
 ---
-# <a name="how-to-get-the-duration-on-an-rta-window"></a>RTA 時間帯の期間を取得する方法
-管理者を使用して、 **rtawindow プロパティの get**コマンドを指定されたリアルタイム集計 (RTA) の実行時間を取得します。 このコマンドにより、期間の長さと、その期間の基準となる単位が返されます。  
+# <a name="how-to-get-the-duration-on-an-rta-window"></a>期間が RTA ウィンドウを取得する方法
+管理者を使用して、 **rtawindow プロパティの get**コマンドを指定されたリアルタイム集計 (RTA) の実行時間を取得します。 コマンドは、期間と期間の測定単位の長さを返します。  
   
 ### <a name="to-get-the-duration-on-an-aggregation"></a>集計の期間を取得するには  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-2. [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking フォルダーに移動します。  
+2. フォルダーに移動[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡します。  
   
 3. 型**bm get-rtawindow プロパティの表示:\<ビュー名\>-アクティビティ:\<アクティビティ名\>Rta:\<RTA 名\>**。  
   

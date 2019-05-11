@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ba63bc570ac29f95c70b5bc6e09050e26c435b2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8e8325f999a7793db7bc99aae90666bdfdde8f0d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979803"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353514"
 ---
-# <a name="creation-of-control-message-failed-for-batch-id"></a>バッチ ID に対する制御メッセージの作成が失敗しました
+# <a name="creation-of-control-message-failed-for-batch-id"></a>バッチ id に対する制御メッセージの作成に失敗しました
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |

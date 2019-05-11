@@ -1,5 +1,5 @@
 ---
-title: フラット ファイル逆アセンブラー パイプライン コンポーネントを拡張 |Microsoft ドキュメント
+title: フラット ファイル逆アセンブラー パイプライン コンポーネントの拡張 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 031189c0ecadfd8a7baff38200f044598e800437
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6f19184087c18b901944382c4a421c14c1911e4e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246234"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388222"
 ---
-# <a name="extending-the-flat-file-disassembler-pipeline-component"></a>フラット ファイル逆アセンブラー パイプライン コンポーネントを拡張します。
-次のサンプルは、UTF-7 でエンコードされたフラット ファイル ドキュメントを解析するカスタム逆アセンブラーを作成する方法を示しています。 Utf-7 ドキュメントを処理するには、このコンポーネントは、 **FFDasmComp**クラスとし、上書き、 **GetDataReader**メソッドです。  
+# <a name="extending-the-flat-file-disassembler-pipeline-component"></a>フラット ファイル逆アセンブラー パイプライン コンポーネントの拡張
+次の例は、utf-7 でエンコードされたフラット ファイル ドキュメントを解析するカスタム逆アセンブラーを作成する方法を示しています。 コンポーネントが継承、utf-7 ドキュメントを処理する、 **FFDasmComp**クラスとし、上書き、 **GetDataReader**メソッド。  
   
 ## <a name="example"></a>例  
   
@@ -108,10 +108,10 @@ namespace Microsoft.BizTalk.Test
 ```  
   
 ## <a name="example"></a>例  
- フラット ファイル インターチェンジのトランザクション処理用のカスタム逆アセンブラーを作成する方法を次に示します。 これは、入力されたインターチェンジ全体が完全に処理されるまで逆アセンブラー ドキュメントを生成しない点が、標準のフラット ファイル逆アセンブラーとは異なります。 このコンポーネントの実装が継承、 **FFDasmComp**クラスおよびオーバーライド、 **GetNext**メソッドです。 最初の呼び出しで、 **GetNext**メソッドをインターチェンジ内のすべてのメッセージを処理してに保存、 **ArrayList**から最初のメッセージが返されます、 **ArrayList**です。 後続の呼び出しから次のメッセージを返す、 **ArrayList**です。  
+ 次の例では、フラット ファイル インターチェンジのトランザクション処理のカスタム逆アセンブラーを作成する方法を示します。 入力されたインターチェンジ全体が完全に処理されるまで、逆アセンブルしたドキュメントを生成しないことで、標準のフラット ファイル逆アセンブラーとは異なります。 このコンポーネントの実装が継承、 **FFDasmComp**クラスおよびオーバーライド、 **GetNext**メソッド。 最初の呼び出しで、 **GetNext**メソッドをインターチェンジ内のすべてのメッセージを処理してに保存、 **ArrayList**から、最初のメッセージを返します、 **ArrayList**します。 後続の呼び出しで次のメッセージを返します、 **ArrayList**します。  
   
 > [!NOTE]
->  次のコード例の GetNext() メソッドの実装では、インターチェンジ全体をメモリ内に保持するため、大規模なドキュメントの処理には適していません。  大規模なドキュメントにこの技法を使用すると、メモリ リソースを著しく消費し、パフォーマンスが低下したり、動作が不安定になったりする可能性があります。  
+>  次のコード例の GetNext() メソッドの実装はメモリ内全体のインターチェンジを保持しているので、サイズの大きいドキュメントの処理に適切でないです。  サイズの大きいドキュメントのこの手法を使用してリソースと原因低下パフォーマンスや動作が不安定なメモリを使い果たす可能性があります。  
   
 ```  
 using System;  

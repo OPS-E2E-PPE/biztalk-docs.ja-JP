@@ -17,12 +17,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e41359bd9fa7a54a68de49bfe115ca7c563dfdb3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 23139cb3c335418af677e666359a5fcd862067a5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376442"
 ---
 # <a name="message-schemas-for-ref-cursors"></a>REF CURSOR のメッセージ スキーマ
 REF CURSOR は、結果セットで、Oracle データベースへのポインターを表す PL/SQL の Oracle データ型です。 REF カーソルの種類は、入力を有効にしてデータのストリーミングを出力しは大量のデータとの間の PL/SQL コード ブロックを転送するために最適です。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] アウト PL/SQL プロシージャと、関数に厳密に型指定された、厳密に型指定の REF CURSOR パラメーターを渡すと IN OUT パラメーターのサポートを提供します。  

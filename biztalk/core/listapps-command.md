@@ -12,15 +12,15 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0206471feefe8ffe52ec2045ede865bb064ea452
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 253f3cb365a89a6753be559b42de3c80dde5479c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974011"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380660"
 ---
 # <a name="listapps-command"></a>ListApps コマンド
-指定された BizTalk 管理データベースに存在するすべての BizTalk アプリケーションについて、名前と説明をコンソールに出力します。  
+指定した BizTalk 管理データベース内の BizTalk アプリケーションのすべての説明と名前をコンソールに出力します。  
   
 ## <a name="usage"></a>使用方法  
  **BTSTask ListApps** [**/Server:**<em>値</em>] [**/database:**<em>値</em>]  

@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04ff8ec57d3c94e2191b1615593f0047e01b0e01
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f2b8cbde8d83e6e973d9c0b75a56f0d9d6f2a67a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967995"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376421"
 ---
 # <a name="message-schemas-for-the-composite-operation"></a>複合操作のメッセージ スキーマ
-[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle データベースでの複合操作を実行することができます。 複合操作は、複数の操作を含めることができ、任意の順序で。 複合操作に含まれる操作については、[Oracle データベースでの複合操作を実行](../../adapters-and-accelerators/adapter-oracle-database/run-composite-operations-in-oracle-database.md)を参照してください。  
+[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle データベースでの複合操作を実行することができます。 複合操作は、複数の操作を含めることができ、任意の順序で。 複合操作に含まれる操作については、次を参照してください。 [Oracle データベースでの複合操作を実行](../../adapters-and-accelerators/adapter-oracle-database/run-composite-operations-in-oracle-database.md)します。  
   
  使用して複合操作を実行する方法については、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[BizTalk Server を使用して Oracle データベースでの複合操作を実行](../../adapters-and-accelerators/adapter-oracle-database/run-composite-operations-on-oracle-database-using-biztalk-server.md)します。  
   

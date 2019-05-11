@@ -1,5 +1,5 @@
 ---
-title: HIPAA トランザクション セット |Microsoft ドキュメント
+title: HIPAA トランザクション セット |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,36 +12,36 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d291c17083200b26f632f7dee2f58bc75ccc38b2
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 85cfd6827f951e1456ada613d010142d9d7b2436
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005755"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387550"
 ---
 # <a name="hipaa-transaction-sets"></a>HIPAA トランザクション セット
 このトピックでは、HIPAA トランザクション セットおよび BizTalk Server でサポートされているバージョンについて説明します。  
   
-## <a name="hipaa-transaction-sets-and-versions"></a>HIPAA のトランザクション セットとバージョン  
+## <a name="hipaa-transaction-sets-and-versions"></a>HIPAA トランザクション セットとバージョン  
   
-|4010A1|5010|Description||  
+|4010A1|5010|説明||  
 |------------|----------|-----------------|-|  
-|270|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|資格、範囲、給付の問い合わせ - 要求|  
+|270|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|資格、範囲、給付金に関する問い合わせ - 要求|  
 |271|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|資格、範囲、給付の情報 - 応答|  
 |276|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|健康保険請求ステータス - 要求|  
 |277|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|健康保険請求ステータス - 応答|  
-|278|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|医療保険サービスの見直し - 要求と応答|  
+|278|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|Health Care Services Review - 要求と応答|  
 |834|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|健康保険給付の登録と管理|  
-|835|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|健康保険請求の支払い|  
-|837D|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|健康保険請求 - 歯科|  
+|835|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|医療保険請求 Payment(s)|  
+|837 D|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|健康保険請求 - 歯科|  
 |837I|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|健康保険請求 - 機関|  
-|837P|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|健康保険請求 - プロフェッショナル|  
-|820|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|給料からの控除|  
+|837 P|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|健康保険請求 - プロフェッショナル|  
+|820|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|給与控除|  
   
 ## <a name="see-also"></a>参照  
- [X12 トランザクション セットの 100 ~ 250](../core/x12-transaction-sets-100-250.md)   
+ [X12 トランザクション セット 100-250](../core/x12-transaction-sets-100-250.md)   
  [X12 トランザクション セット 251-503](../core/x12-transaction-sets-251-503.md)   
- [X12 トランザクション セットを 504 999](../core/x12-transaction-sets-504-999.md)   
+ [X12 トランザクション セット 504-999](../core/x12-transaction-sets-504-999.md)   
  [EDIFACT トランザクション セット APERAK-IFTRIN](../core/edifact-transaction-sets-aperak-iftrin.md)   
  [EDIFACT トランザクション セット IFTSAI-WKGRRE](../core/edifact-transaction-sets-iftsai-wkgrre.md)   
  [EANCOM](../core/eancom.md)

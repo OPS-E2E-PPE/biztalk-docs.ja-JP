@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbd2feb0b6a09905efb7275b1cc6f0e6ef2b13d7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 43489c8cc0d70f4c4264778cf65672391e242eaa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972571"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382785"
 ---
 # <a name="identifying-potential-threats"></a>潜在的な脅威を識別します。
-STRIDE モデルを使用すると、BizTalk Server の展開に存在する可能性がある脅威を特定できます。 STRIDE は、次のカテゴリから派生した頭字語: *S*poofing identity、 *T*データ、ampering *R*、これが否認*は*情報漏えい、 *D*サービス、および特権の昇格のービスを拒否します。 このセクションには、BizTalk Server 環境に存在する可能性がある脅威の例と、脅威を緩和するメカニズムが含まれています。  
+STRIDE モデルを使用すると、BizTalk Server の展開に存在する可能性がある脅威を特定できます。 STRIDE は、次のカテゴリから派生した頭字語は。*S*poofing identity、 *T*データ、ampering *R*、これが否認*は*漏洩、 *D*ービス拒否、権限の昇格。 このセクションには、BizTalk Server 環境に存在する可能性がある脅威の例と、脅威を緩和するメカニズムが含まれています。  
   
  **Id を偽装**  
   
@@ -48,7 +48,7 @@ STRIDE モデルを使用すると、BizTalk Server の展開に存在する可�
   
   **サービス拒否が起こる**  
   
-- 悪意のあるユーザーが、BizTalk Server に大量のメッセージを送信し、BizTalk が有効なメッセージを受信できなくなることがあります。 この脅威を緩和する方法の詳細については、[拒否のサービス攻撃の緩和](../core/mitigating-denial-of-service-attacks.md)を参照してください。  
+- 悪意のあるユーザーが、BizTalk Server に大量のメッセージを送信し、BizTalk が有効なメッセージを受信できなくなることがあります。 この脅威を緩和する方法の詳細については、次を参照してください。[拒否のサービス攻撃の緩和](../core/mitigating-denial-of-service-attacks.md)します。  
   
   **特権の昇格**  
   

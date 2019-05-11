@@ -1,5 +1,5 @@
 ---
-title: パスワード同期アダプターを作成する方法 |Microsoft ドキュメント
+title: パスワード同期アダプターを作成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,39 +12,39 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c47381cc1ed71788673602c1db7eec5b5ac049ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a2c3ca305f86f541bd1cb681ed97aea7768e77c7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22249370"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65339930"
 ---
 # <a name="how-to-create-a-password-sync-adapter"></a>パスワード同期アダプターを作成する方法
-PS (パスワード同期) アダプターは、パスワード同期ヘルパー コンポーネントを使用して、エンタープライズ シングル サインオン (SSO) との間で通知を渡したり、受け取ったりするアプリケーションです。 PS ヘルパー コンポーネントは、COM および .NET フレームワーク インターフェイスを公開しますが、アダプターが COM コンポーネントである必要はありません。 アダプターは、スタンドアロン プロセス、COM+ アプリケーション、または Windows サービスとしてデザインできます。  
+パスワード同期 (PS) アダプターは、通知からエンタープライズ シングル サインオン (SSO) を渡すためのパスワード同期ヘルパー コンポーネントを使用するアプリケーションです。 PS ヘルパー コンポーネントは、COM および .NET Framework インターフェイスを公開する、アダプターとは限りませんが COM コンポーネントであるに注意してください。 スタンドアロン プロセス、COM + アプリケーション、または Windows サービスとしてアダプターを設計することができます。  
   
 ### <a name="to-create-a-password-sync-adapter"></a>パスワード同期アダプターを作成するには  
   
-1.  `ISSOPSWrapper.InitializeAdapter` を使用して、ENTSSO (エンタープライズ シングル サインオン) サービスに、プロバイダーがアクティブであることを通知します。  
+1.  ご利用のプロバイダーは、active を使用して、エンタープライズ シングル サインオン サービス (ENTSSO) に通知`ISSOPSWrapper.InitializeAdapter`します。  
   
-     `InitializeAdapter` は、プロバイダー (通常は呼び出しを実行するプロバイダーと同じ) が現在オンになっていて、システムのパスワードの更新のやり取りが可能であることを ENTSSO に通知します。 また、`InitializeAdapter` を使用して、グループ アダプターなど、他のリソースをアクティブ化することもできます。  
+     `InitializeAdapter` 呼び出しを行っている同じプロバイダーは、通常、プロバイダーは、オンになって現在は、して、システムとのパスワードの更新を通信するために ENTSSO を通知します。 使用することも`InitializeAdapter`グループ アダプターなどの他のリソースをアクティブ化します。  
   
-2.  `ISSOPSWrapper.SendNotification` を使用して、パスワードの更新を ENTSSO に送信します。  
+2.  使用してパスワードの更新を ENTSSO に送信`ISSOPSWrapper.SendNotification`します。  
   
-     Windows 以外のシステムからパスワードの更新を受け取る方法を決定する必要があります。 更新を受け取った後で、`SendNotification` を使用してその情報を ENTSSO に渡すことができます。 なお`SendNotification`パスワードの更新を送信するだけではありません: のアーキテクチャ`SendNotification`他の種類の通知を送信することもできます。  
+     非 Windows システムからパスワードの更新を受け取る方法を決定する必要があります。 更新プログラムを受信した後は、ENTSSO を使用してログオン情報を渡すことができます`SendNotification`します。 なお`SendNotification`パスワードの更新を送信するだけではありません: アーキテクチャの`SendNotification`他の種類の通知を送信することもできます。  
   
-3.  `ISSOPSWrapper.ReceiveNotification` を使用して、ENTSSO からのパスワードの更新を要求します。  
+3.  使用して ENTSSO からパスワードの更新を要求`ISSOPSWrapper.ReceiveNotification`します。  
   
-     パスワード同期アダプターはプル テクノロジであるため、ENTSSO はアダプターを呼び出しません。 代わりに、アダプターは定期的に `ReceiveNotification` を呼び出して、パスワードの更新が利用可能であるかを確認します。 WAIT フラグを `ReceiveNotification` に設定することもできます。 WAIT を設定すると、通知が利用可能になるまでスレッドをブロックします。  
+     パスワード同期アダプターがプル テクノロジであるため、ENTSSO はアダプターを呼び出しません。 アダプターが定期的に呼び出す代わりに、`ReceiveNotification`パスワードの更新が使用できるかどうかを確認します。 WAIT フラグを設定することもできます`ReceiveNotification`します。 通知が利用可能になるまでスレッド待機ブロックを設定します。  
   
-     ENTSSO がパスワードの変更をプレーン テキストでアダプターに配信することに注意してください。 パスワード情報が不正に漏えいされないように保護するのはアダプターの役割です。 また、他の無効なソースからの偽装や攻撃 (パスワード同期ヘルパー コンポーネントの偽装など) からアダプター自身を保護することもアダプターの役割です。  
+     ENTSSO がプレーン テキストでアダプターに、パスワードの変更を提供することに注意してください。 そのパスワードの情報が不正に漏えいを保護するアダプターの役目です。 スプーフィングから保護するアダプターの役割をもまたは、パスワード同期ヘルパー コンポーネントのスプーフィングを含む、他の無効なソースからの攻撃です。  
   
-     `pReceiveNotification` パラメーターを使用して ENTSSO からパスワードの更新を受け取った後で、この情報を Windows 以外のシステムに渡す必要があります。 `SendNotification` の場合と同じように、リモート サーバーと通信する最良の方法を決定する必要があります。  
+     使用して ENTSSO からパスワードの更新プログラムが表示されたら、`pReceiveNotification`パラメーター、非 Windows システムにこの情報を渡す必要があります。 同様`SendNotification`、リモート サーバーと通信する最善の方法を決定する必要があります。  
   
-4.  `ISSOPSWrapper.ShutdownAdapter` を使用してアダプターをオフにします。  
+4.  アダプターを使用して、オフにする`ISSOPSWrapper.ShutdownAdapter`します。  
   
-     `ShutdownApplication` は、アダプターによって呼び出される最後のメソッドであり、アダプターが ENTSSO とのパスワードの更新のやり取りをそれ以上行わないことを示します。  
+     `ShutdownApplication` 必要があります、最後のメソッドは、アダプターによって呼び出され、アダプターが送信されなく、ENTSSO にパスワードの更新が表示されるかを示します。  
   
-     アダプターがシャットダウンしている間、ENTSSO は、すべてのパスワードの変更をバッファー サイズいっぱいになるまで書き込みます。  
+     ENTSSO にアダプターがシャット ダウン中に、最大バッファー サイズの制限をユーザーが、パスワード変更がバッファーすることに注意してください。  
   
 ## <a name="see-also"></a>参照  
  [エンタープライズ シングル サインオンを使用したプログラミング](../core/programming-with-enterprise-single-sign-on.md)   

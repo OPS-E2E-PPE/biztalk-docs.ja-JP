@@ -1,5 +1,5 @@
 ---
-title: エラー - ノードへの論理入力が多すぎます |Microsoft ドキュメント
+title: エラー - ノードへの論理入力が多すぎます |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e363d79a2b013b8e90533c4e6e36cff5b5798b77
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4892eca0fc65fe281ab9464eba914603f7ab392b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241706"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346309"
 ---
 # <a name="error---too-many-logical-inputs-to-node"></a>エラー - ノードへの論理入力が多すぎます
 **エラー コード**  
@@ -28,8 +28,8 @@ ms.locfileid: "22241706"
   
  **説明**  
   
- 入力リンクの数よりも、送信先スキーマのノードに接続している論理リンク数がある、**ループ**functoid のノードの祖先のノードに接続されています。 この 2 種類のリンクの数は、一致している必要があります。  
+ 多くへの入力リンクの数よりも、送信先スキーマのノードに接続している論理リンクがある、**ループ**functoid、対象ノードの祖先のノードに接続されています。 前者と後者の型のリンクの数が一致する必要があります。  
   
  **ユーザーの操作**  
   
- 作業のやり直しのノードにされ、接続されているリンクの数、**ループ**functoid が、祖先ノードに接続されている一致するものとします。
+ 指定されたノードとリンクの数が接続されている作業のやり直し、**ループ**functoid が、祖先ノードに接続されている一致するものとします。

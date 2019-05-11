@@ -1,5 +1,5 @@
 ---
-title: スキーマ コレクション プロパティ エディターを使用する方法 |Microsoft ドキュメント
+title: スキーマ コレクション プロパティ エディターを使用する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,23 +16,23 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45ba485a1e1348aa4d1fd7a9824d0e6962739352
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f3f930502ba5ab44771057c38152be604b7511dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256298"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383214"
 ---
 # <a name="how-to-use-the-schema-collection-property-editor"></a>スキーマ コレクション プロパティ エディターを使用する方法
-スキーマ コレクション プロパティ エディターを使用して、パイプライン コンポーネントのスキーマを選択します。  
+スキーマ コレクション プロパティ エディターを使用して、スキーマ、パイプライン コンポーネント を選択します。  
   
 ### <a name="to-use-the-schema-collection-property-editor"></a>スキーマ コレクション プロパティ エディターを使用するには  
   
-1.  スキーマ コレクション プロパティ エディターで、、**利用可能なスキーマ**ボックスで、パイプライン コンポーネントの利用できるようにスキーマを選択します。 複数のスキーマを選択するには、Ctrl キーを押しながらクリックします。  
+1.  スキーマ コレクション プロパティ エディターでの**利用可能なスキーマ**ボックスに、パイプライン コンポーネントで利用可能なスキーマを選択します。 CTRL キーを使用すると、1 つ以上のスキーマを選択できます。  
   
 2.  **[追加]** をクリックします。  
   
-     表示され、選択したスキーマ、**追加したスキーマ**ボックス。  
+     表示され、選択したスキーマ、**スキーマの追加**ボックス。  
   
 3.  **[OK]** をクリックします。  
   
@@ -42,4 +42,4 @@ ms.locfileid: "22256298"
  [パイプラインを開く方法](../core/how-to-open-a-pipeline.md)   
  [ツールボックスの使用方法](../core/how-to-use-the-toolbox.md)   
  [キーボードで移動する方法](../core/how-to-navigate-with-the-keyboard.md)   
- [パイプライン デザイナーでパイプラインの作成](../core/creating-pipelines-with-pipeline-designer.md)
+ [パイプライン デザイナーでのパイプラインの作成](../core/creating-pipelines-with-pipeline-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: アダプター ハンドラーを削除する方法 |Microsoft ドキュメント
+title: アダプター ハンドラーを削除する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,32 +16,32 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d591779a55fb7050e4ed229e19d19a312645462
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 27bc813ad300eb4b0931ba4174c63becafd09807
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22249626"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385355"
 ---
 # <a name="how-to-delete-an-adapter-handler"></a>アダプター ハンドラーを削除する方法
-BizTalk Server 管理コンソールを使用して、送信または受信のアダプター ハンドラーを削除できます。  
+送信を削除したり、BizTalk Server 管理コンソールを使用して、アダプターのハンドラーを受信できます。  
   
- アダプター ハンドラーを削除する前に、ハンドラーと関連付けられている受信場所と送信ポートをすべて削除する必要があります。  
+ 削除する必要があります、アダプター ハンドラーを削除する前にすべての受信場所または送信ポートが関連付けられています。  
   
 > [!NOTE]
->  アダプター ハンドラーを削除するには、SSO 管理者グループのメンバーである必要があります。  
+>  アダプター ハンドラーを削除するには、SSO 管理者グループのメンバーがあります。  
   
 ### <a name="to-delete-an-adapter-handler"></a>アダプター ハンドラーを削除するには  
   
-1.  BizTalk Server 管理コンソールで、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**プラットフォームの設定**を順に展開**アダプター**です。  
+1.  BizTalk Server 管理コンソールで  **BizTalk Server 管理**、展開**BizTalk グループ**、展開**プラットフォームの設定**順に展開**アダプター**します。  
   
-2.  展開したアダプターの一覧から、アダプター ハンドラーを削除するアダプターを選択します。  
+2.  展開したアダプターの一覧で、アダプター ハンドラーを削除するアダプターを選択します。  
   
-3.  削除、およびをクリックするアダプターのハンドラーを右クリックして**削除**です。  
+3.  クリックして、削除するアダプターのハンドラーを右クリックして**削除**します。  
   
-4.  をクリックして**はい**をこのアダプターのハンドラーを削除することを確認します。  
+4.  クリックして**はい**アダプター ハンドラーの削除することを確認します。  
   
 5.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
- [作成して、アダプター ハンドラーを削除します。](../core/creating-and-deleting-adapter-handlers.md)
+ [アダプター ハンドラーの作成と削除](../core/creating-and-deleting-adapter-handlers.md)

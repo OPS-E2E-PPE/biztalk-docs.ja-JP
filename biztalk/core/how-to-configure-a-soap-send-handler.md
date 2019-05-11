@@ -20,20 +20,20 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c4bcbe39861c37db348e1e37752fbad6d9616033
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fffbc6797d847448ace967cadb262fe6c1fb5455
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386938"
 ---
 # <a name="how-to-configure-a-soap-send-handler"></a>SOAP 送信ハンドラーを構成する方法
-次の手順を実行して、SOAP 送信ハンドラーを構成します。  
+送信ハンドラーを SOAP を構成するのには、次の手順を使用します。  
 
 > [!CAUTION]
 >  HTTP または SOAP アダプタ ハンドラを使用する場合は、Microsoft では、これらのハンドラーのホスト インスタンスをインストールすることをお勧め[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]コンピューター。  
 
-### <a name="to-change-global-variables-for-a-soap-send-handler"></a>SOAP 送信ハンドラーのグローバル変数を変更するには  
+### <a name="to-change-global-variables-for-a-soap-send-handler"></a>グローバル変数を SOAP 送信ハンドラーを変更するには  
 
 1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **管理**、展開**BizTalk グループ**、展開**プラットフォームの設定**、順に展開**アダプター**します。  
 
@@ -47,10 +47,10 @@ ms.locfileid: "37005483"
    |   プロパティ    |                                                                                                                  目的                                                                                                                   |
    |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **[プロキシを使用する]** |                                                                                          SOAP 送信ハンドラーがプロキシ サーバーを使用するかどうかを示します。                                                                                          |
-   |  **[サーバー]**   |                  プロキシ サーバーの名前を指定します。<br /><br /> 場合にこのプロパティが値にのみ必要と**プロキシを使用して、** が選択されています。<br /><br /> 型:文字列<br /><br /> 最小長: 0<br /><br /> 最大長: 256                   |
-   |   **[ポート]**    | SOAP 送信ハンドラーが使用するポートを指定します。<br /><br /> 場合にこのプロパティが値にのみ必要と**プロキシを使用して、** が選択されています。<br /><br /> 既定値: 80<br /><br /> 型: 長整数<br /><br /> 最小値: 0<br /><br /> 最大値: 65535 |
-   | **ユーザー名** |             認証に使用するユーザー名を指定します。<br /><br /> 場合にこのプロパティが値にのみ必要と**プロキシを使用して、** が選択されています。<br /><br /> 型:文字列<br /><br /> 最小長: 0<br /><br /> 最大長: 256             |
-   | **Password**  |             認証に使用するパスワードを指定します。<br /><br /> 場合にこのプロパティが値にのみ必要と**プロキシを使用して、** が選択されています。<br /><br /> 型:文字列<br /><br /> 最小長: 0<br /><br /> 最大長: 256              |
+   |  **[サーバー]**   |                  プロキシ サーバーの名前を指定します。<br /><br /> 場合にこのプロパティが値にのみ必要と**プロキシを使用して、** が選択されています。<br /><br /> 型:String<br /><br /> 最小長:0<br /><br /> 最大長:256                   |
+   |   **[ポート]**    | SOAP 送信ハンドラーが使用するポートを指定します。<br /><br /> 場合にこのプロパティが値にのみ必要と**プロキシを使用して、** が選択されています。<br /><br /> 既定値:80<br /><br /> 型:Long<br /><br /> 最小値:0<br /><br /> 最大値:65535 |
+   | **ユーザー名** |             認証に使用するユーザー名を指定します。<br /><br /> 場合にこのプロパティが値にのみ必要と**プロキシを使用して、** が選択されています。<br /><br /> 型:String<br /><br /> 最小長:0<br /><br /> 最大長:256             |
+   | **Password**  |             認証に使用するパスワードを指定します。<br /><br /> 場合にこのプロパティが値にのみ必要と**プロキシを使用して、** が選択されています。<br /><br /> 型:String<br /><br /> 最小長:0<br /><br /> 最大長:256              |
 
 
 5. **[OK]** をクリックします。  

@@ -1,5 +1,5 @@
 ---
-title: プロパティ マネージャー |Microsoft ドキュメント
+title: プロパティ マネージャー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6aff8fc39612ed79e6e9602ed39874d014bb4a11
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2a8a96ce643c7b7268ea01f5f0313ab9225eeb63
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269106"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398468"
 ---
 # <a name="property-managers"></a>プロパティ マネージャー
-プロパティ マネージャーを使用すると、XSD 表記のスキーマの要素および属性にカスタム プロパティ (通常、XSD 注釈として) を追加できます。[プロパティ] ウィンドウを拡張して、拡張機能に関連付けられているカスタム プロパティを含めることもできます。  
+プロパティ マネージャーは、要素に (通常、XSD 注釈) としてカスタム プロパティを追加する拡張機能を許可して、カスタム プロパティは、[プロパティ] ウィンドウを拡張するほか、スキーマの XSD 表記内の属性に関連付けられている、拡張機能。  
   
- プロパティ マネージャーを実装するオブジェクト、 **IPropertyManager**インターフェイスを呼び出すことによってこれへの参照を取得**IExtension.GetPropertyManager**を渡すと、 **ITreeNode**入力パラメーターとしてオブジェクト。 通常、拡張機能は、1 つ**IPropertyManager**ごとにオブジェクト**ITreeNode**オブジェクト。 プロパティ マネージャーはそのためのカスタム プロパティのコレクションを**ITreeNode**オブジェクト。  
+ プロパティ マネージャーは、実装するオブジェクト、 **IPropertyManager**される参照は呼び出すことによって取得インターフェイス**IExtension.GetPropertyManager**、渡すと、 **ITreeNode**入力パラメーターとしてオブジェクト。 1 つが、拡張機能では、通常は**IPropertyManager**オブジェクトごとに**ITreeNode**オブジェクト。 プロパティ マネージャーはそのため、カスタム プロパティのコレクションを**ITreeNode**オブジェクト。  
   
- カスタム プロパティで表される、 **System.ComponentModel.PropertyDescriptor**によって返されるコレクションから取得できるオブジェクト、 **IPropertyManager.GetProperties**メソッドです。  
+ によってカスタム プロパティが表される、 **System.ComponentModel.PropertyDescriptor**オブジェクトによって返されるコレクションから取得できますが、 **IPropertyManager.GetProperties**メソッド。  
   
- 使用して**PropertyDescriptor**拡張機能に関連付けられているカスタム プロパティを表すオブジェクトには、Microsoft との統合が容易になります。[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウ。 ときに**PropertyDescriptor**オブジェクトを使用して、簡単に BizTalk エディターで、拡張機能のカスタム プロパティを [プロパティ] ウィンドウに既に統合されている標準のノード プロパティのセットに統合します。 表示名、表示値、コントロールのプロパティの型、プロパティの説明、およびプロパティのカテゴリなどのカスタム プロパティの情報を得た、 **PropertyDescriptor**オブジェクト。  
+ 使用して**PropertyDescriptor** 、拡張機能に関連付けられているカスタム プロパティを表すオブジェクトには、Microsoft との統合が容易に[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウ。 ときに**PropertyDescriptor**オブジェクトを使用して、簡単に BizTalk エディターの拡張機能のカスタム プロパティを一連のプロパティ ウィンドウに既に統合されている標準的なノードのプロパティに統合します。 表示名、表示値、コントロールのプロパティの型、プロパティの説明、およびプロパティのカテゴリなどのカスタム プロパティの情報がから取得した、 **PropertyDescriptor**オブジェクト。  
   
- カスタム プロパティは、スキーマ ツリーの関連ノードに対応する要素の注釈要素内の要素の属性として、XSD 表記のスキーマに保存されます。 スキーマ ツリー ノードの各カスタム プロパティは、一般的な要素の属性に指定できます。また、各カスタム プロパティは、固有の関連付けられた要素を持つこともできます。  
+ カスタム プロパティは、スキーマ ツリー内の関連ノードに対応する要素の注釈要素内の要素の属性として、スキーマの XSD 表記で格納されます。 各カスタム プロパティ スキーマのツリー ノードの一般的な要素の属性に指定できますか、または、それぞれ独自の関連付けられている要素を持つことができます。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk エディターの拡張](../core/extending-biztalk-editor.md)

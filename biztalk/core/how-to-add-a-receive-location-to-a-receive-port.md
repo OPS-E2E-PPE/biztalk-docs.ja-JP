@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c657c96c7714f04d18a2bd8d6d2d7ef90ad9cbd1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3a2749a6593d116695c2af214e2d817478c24e44
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387264"
 ---
-# <a name="how-to-add-a-receive-location-to-a-receive-port"></a>受信ポートに受信場所を追加する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、受信ポートに新しい受信場所を追加する方法について説明します。  
+# <a name="how-to-add-a-receive-location-to-a-receive-port"></a>追加する方法、受信場所が、受信ポート
+このトピックでは、BizTalk Server 管理コンソールを使用して、受信ポートに新しい受信場所を追加する方法を説明します。  
   
 > [!NOTE]
 >  バインドできます受信ポートをオーケストレーションに、アプリケーションを構成するときに」の説明に従って[アプリケーションを構成する方法](../core/how-to-configure-an-application.md)」の説明に従って、オーケストレーションをバインドする場合または[のバインドを構成する方法、オーケストレーション](../core/how-to-configure-bindings-for-an-orchestration.md)します。  
@@ -37,7 +37,7 @@ ms.locfileid: "36999003"
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2. コンソール ツリーで、BizTalk グループを展開し、受信ポートに受信場所を追加する BizTalk アプリケーションを展開します。  
+2. コンソール ツリーで、BizTalk グループと受信ポートに受信場所を追加する BizTalk アプリケーションを展開します。  
   
 3. クリックして**受信ポート**、ポイントして、受信場所を追加する受信ポートを右クリックして**新規**、順にクリックします**受信場所**します。  
   

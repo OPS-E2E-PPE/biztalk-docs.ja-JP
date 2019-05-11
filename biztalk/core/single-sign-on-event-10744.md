@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10744 |Microsoft Docs'
+title: シングル サインオン:イベント 10744 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f4452d99b1869b058a70d6fa3e020c2dd26197c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: be7179cf01ed53be7ca8ce1471502f8dc03a8b0d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65308029"
 ---
-# <a name="single-sign-on-event-10744"></a>シングル サインオン: イベント 10744
+# <a name="single-sign-on-event-10744"></a>シングル サインオン:イベント 10744
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                |
@@ -28,16 +28,16 @@ ms.locfileid: "36972947"
 | 製品バージョン |           [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]           |
 |    イベント ID     |                                     10744                                      |
 |  イベント ソース   |                                     ENTSSO                                     |
-|    コンポーネント    |                                      N\A                                       |
+|    コンポーネント    |                                      該当なし                                       |
 |  シンボル名  |                            SSO_INFO_ADAPTER_ONLINE                             |
-|  メッセージ テキスト   | アダプターはオンラインです。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプタ: %2 |
+|  メッセージ テキスト   | アダプターが online.%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプタ: %2 |
 
 ## <a name="explanation"></a>説明  
- この情報イベントは、指定されたアダプターがオンラインであることを示します。  
+ この情報イベントは、指定したアダプタがオンラインであることを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
 
-- ユーザーの操作は必要ありません。  
+- ユーザー操作は必要ありません。  
 
   詳細については、次のリソースを参照してください。  
 

@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03cde68788e6be74a6d49fe0dd894b3f912819bd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2f46b8ce50662fca8c6b2b34eb6243ec094f6ad8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302838"
 ---
 # <a name="using-the-tpe"></a>TPE の使用
 オーケストレーションとプロパティを BAM アクティビティ定義にマップするには、追跡プロファイル エディター (TPE) を使用します。  
@@ -45,9 +45,9 @@ ms.locfileid: "36968163"
   
    追跡プロファイルを使用できるのは、インターセプターを持つランタイムに関してのみです。 BAM API を使用したカスタム コードから構成される BAM ソリューションの場合は、関連付けられている BAM ランタイム インターセプターがありません。したがって、BAM にデータを送信する方法は、次の 2 つしかありません。  
   
-- BAM API を使用して直接送信する。 開発者は、BAM API を使用して、BAM インフラストラクチャにイベント データを明示的に送信できます。 詳細については、BAM Api を使用して、[イベント ストリームを使用した BAM のアクティビティを実装する](../core/implementing-bam-activities-with-event-streams.md)を参照してください。  
+- BAM API を使用して直接送信する。 開発者は、BAM API を使用して、BAM インフラストラクチャにイベント データを明示的に送信できます。 詳細については、BAM Api を使用して、次を参照してください。[イベント ストリームを使用した BAM のアクティビティを実装する](../core/implementing-bam-activities-with-event-streams.md)します。  
   
-- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロパティを介して間接的に送信する。 カスタム アセンブリを呼び出す際に、関連する傍受テクノロジ (カスタム パイプラインなど) や式/アクション図形が含まれているランタイム コンテキストの内部でカスタム コードを実行している場合は、上記の BAM API か、従来のデータ昇格技法を使用できます。 プロパティを昇格させて TPE にアクセスできるようにします。これにより、適切なコンテキスト プロパティを使用して、イベント データと BAM アクティビティ項目との関連付けを TPE 内に作成できるようになります。 プロパティの昇格の詳細については、[プロパティの昇格](../core/promoting-properties.md)を参照してください。  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロパティを介して間接的に送信する。 カスタム アセンブリを呼び出す際に、関連する傍受テクノロジ (カスタム パイプラインなど) や式/アクション図形が含まれているランタイム コンテキストの内部でカスタム コードを実行している場合は、上記の BAM API か、従来のデータ昇格技法を使用できます。 プロパティを昇格させて TPE にアクセスできるようにします。これにより、適切なコンテキスト プロパティを使用して、イベント データと BAM アクティビティ項目との関連付けを TPE 内に作成できるようになります。 プロパティの昇格の詳細については、次を参照してください。[プロパティの昇格](../core/promoting-properties.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -15,19 +15,19 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fcb954062bb2cb2484a51570109b37341b1c12f9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3ddb25ae58ee7adddd936f4904a131d4064a608f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980987"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385570"
 ---
 # <a name="how-to-create-a-linked-server"></a>リンク サーバーを作成する方法
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が分散型トポロジにインストールされている場合は、BizTalk グループに属するデータベースが複数の [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] に存在します。 BizTalk 管理サーバーから BizTalk 環境全体をバックアップする前に、各リモート サーバーへのリンク サーバー接続を構成する必要があります。 リンク サーバーは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 分散クエリで使用される OLE DB データ ソースです。  
+ときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がインストールされている複数の分散トポロジでは、BizTalk グループに属しているデータベースが存在して[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 BizTalk 環境全体をバックアップするには、BizTalk 管理サーバーから前に、各リモート サーバーへのリンク サーバー接続を構成する必要があります。 リンク サーバーは、OLE DB データ ソースで使用されている[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]分散クエリ。  
   
- バックアップおよび復元プロセスの一部として、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブは、リンク サーバーを自動的に作成します。 必要に応じて、次の手順を使用してリンク サーバーを手動で作成できます。  
+ バックアップと復元のプロセス、バックアップの一部として[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ジョブは、リンク サーバーを自動的に作成します。 必要に応じて、ただし、手動で作成できますこの手順を使用してリンク サーバー。  
   
- 使用してリンク サーバーを作成することも、 *sp_addlinkedserver*ストアド プロシージャ。 この方法では、セキュリティに関する事項を考慮する必要があります。 sp_addlinkedserver を使用してリンク サーバーを作成した場合、すべてのローカル ログインが新しいリンク サーバーに既定でマップされます。 リンク サーバーへのアクセスを制御する、 *sp_droplinkedsvrlogin*プロシージャを使用すると後に、グローバル ログイン マッピングを削除する必要があります*sp_addlinkedsvrlogin*に目的のログイン アカウントにマップするには新しいリンク サーバー。 Sp_addlinkedsvrlogin を使用する場合は、設定することをお勧めしますが、@useselfパラメーター TRUE を = です。 これにより、ユーザー名およびパスワードを SQL スクリプトに埋め込む必要がなくなります。  
+ 使用してリンク サーバーを作成することも、 *sp_addlinkedserver*ストアド プロシージャ。 この操作に関連付けられているセキュリティの考慮事項があります。 Sp_addlinkedserver を使用してリンク サーバーが作成されると、すべてのローカル ログインは既定で新しいリンク サーバーにマップされます。 リンク サーバーへのアクセスを制御する、 *sp_droplinkedsvrlogin*プロシージャを使用すると後に、グローバル ログイン マッピングを削除する必要があります*sp_addlinkedsvrlogin*に目的のログイン アカウントにマップするには新しいリンク サーバー。 Sp_addlinkedsvrlogin を使用する場合は、設定することをお勧めしますが、@useselfパラメーター TRUE を = です。 これにより、SQL スクリプトにユーザー名とパスワードを埋め込む必要があります。  
 
 > [!TIP]
 > 次の手順は、時間の経過と共に変更可能性があります。 参照することをお勧めします。、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]ドキュメント[リンク サーバーの作成](https://docs.microsoft.com/sql/relational-databases/linked-servers/create-linked-servers-sql-server-database-engine)です。
@@ -49,7 +49,7 @@ ms.locfileid: "36980987"
 3. **Linked server**テキスト ボックスに、完全なネットワーク名を入力、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]にリンクします。  
   
    > [!NOTE]
-   >  この手順では、リンク先のサーバーをリモート サーバーと呼んでいます。 これは、(リモートの) リンク サーバーとローカル サーバーの関係をわかりやすく示すためです。  
+   >  この手順は、多くの場合、リモート サーバーとしてにリンクしているサーバーを指します。 これは、便宜上のみ、ローカル サーバーへのリンク (「リモート」) サーバーのリレーションシップを示します。  
   
 4. **サーバーの種類**、 **SQL Server**します。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "36980987"
    3. または、ローカル ログインは、リモートにマップするかどうか[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]ログインを入力するには、**リモート ユーザー**名と**リモート パスワード**のリモート サーバー ログインします。  
   
       > [!NOTE]
-      >  権限借用を使用するには、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] の構成とログイン アカウントが委任の要件を満たす必要があります。 参照してください[委任のためのリンク サーバーを構成](https://msdn.microsoft.com/library/ms189580.aspx)の詳細。  
+      >  権限借用を使用する、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]構成とログイン アカウントが委任の要件を満たす必要があります。 参照してください[委任のためのリンク サーバーを構成](https://msdn.microsoft.com/library/ms189580.aspx)の詳細。  
 
 7. 左側のウィンドウで次のように選択します。**サーバー オプション**します。 設定、 **RPC**と**RPC Out**パラメーターを**True**、し、 **OK**。 
  

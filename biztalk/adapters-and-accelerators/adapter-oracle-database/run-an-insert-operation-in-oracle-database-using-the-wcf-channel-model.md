@@ -1,5 +1,5 @@
 ---
-title: WCF チャネル モデルを使用して Oracle データベースで挿入操作を実行 |Microsoft ドキュメント
+title: WCF チャネル モデルを使用して Oracle データベースで挿入操作を実行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,18 +18,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fd689cbf378f41578c5f46b3067410a184cf650
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 70e78e8aab8e981087485cbc186ac3b488a39b61
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963320"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376140"
 ---
 # <a name="run-an-insert-operation-in-oracle-database-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して Oracle データベースで挿入操作を実行します。
-このセクションでは、チャネルを使用して Oracle データベースにレコードを挿入する方法を示します。 メッセージを送信するときに、メッセージ本文とメッセージのアクションの両方を指定する必要があります。  
+このセクションでは、チャネルを使用して Oracle データベースへのレコードを挿入する方法を示します。 メッセージを送信するときに、メッセージ本文とメッセージのアクションの両方を指定する必要があります。  
   
 ## <a name="the-insert-message"></a>挿入メッセージ  
- 次の XML は、人事で挿入操作のメッセージ本文を示しています。EMPLOYEES テーブル。 レコード セットは、1 人の従業員レコードで構成されます。 挿入メッセージのスキーマの詳細については、次を参照してください。 [、基本的な Insert、Update、Delete、およびテーブルおよびビューに対する選択操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)です。 これは、この例で使用される Employee_Insert.xml ファイルの内容です。  
+ 次の XML は、HR で挿入操作のメッセージ本文を示しています。EMPLOYEES テーブル。 レコード セットは、1 人の従業員レコードで構成されます。 挿入メッセージのスキーマの詳細については、次を参照してください。 [、基本的な挿入、更新、削除、およびテーブルおよびビューの選択操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)します。 これは、この例で使用される Employee_Insert.xml ファイルの内容です。  
   
 ```  
 <!-- New namespace: http://Microsoft.LobServices.OracleDB/2007/03/HR/Table/EMPLOYEES -->  
@@ -53,16 +53,16 @@ ms.locfileid: "25963320"
 ```  
   
 ## <a name="specifying-the-message-action"></a>メッセージのアクションを指定します。  
- SOAP メッセージを送信するときに、メッセージのアクションを指定する必要があります、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]です。 次の例のように、メッセージを作成するときに、メッセージのアクションを指定できます。  
+ SOAP メッセージを送信するときに、メッセージのアクションを指定する必要があります、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 次の例のように、メッセージを作成するときに、メッセージのアクションを指定できます。  
   
 ```  
 Message messageIn2 = Message.CreateMessage(MessageVersion.Default, "http://Microsoft.LobServices.OracleDB/2007/03/HR/Table/EMPLOYEES/Insert", readerIn2);  
 ```  
   
- この例では、「/HR/テーブル/従業員/挿入」のメッセージ アクションが指定されている、人事部で挿入操作します。実行するのには、EMPLOYEES テーブルです。  
+ この例では、「/HR/テーブル/従業員/挿入」、メッセージのアクションを指定する、人事部に対して、挿入操作。EMPLOYEES テーブルは、実行するには  
   
 ## <a name="sending-the-insert-message"></a>挿入のメッセージを送信します。  
- この例では、チャネル経由での Oracle テーブルに対する挿入操作を実行する方法を示します。 コードによって公開される SQLEXECUTE 操作を使用して、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle シーケンスの次の値を取得します。 この値は、EMPLOYEE_ID レコードのフィールドに、挿入書き込まれます。 このパターンでは、自動生成された主キー値を持つデータベースに行を挿入することができます。 詳細については、SQLEXECUTE 操作を呼び出してチャネル経由で、次を参照してください。 [WCF チャネル モデルを使用して、SQLEXECUTE 操作を実行](../../adapters-and-accelerators/adapter-oracle-database/run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model.md)です。  
+ この例では、チャネル経由での Oracle テーブルで挿入操作を実行する方法を示します。 コードによって公開される SQLEXECUTE 操作を使用して、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle シーケンスの次の値を返します。 この値が挿入レコードで EMPLOYEE_ID フィールドに書き込まれます。 このパターンでは、自動生成されたプライマリ キーの値を持つデータベースに行を挿入することができます。 SQLEXECUTE 操作をチャネル経由で呼び出す方法についての詳細については、次を参照してください。 [SQLEXECUTE 操作を WCF チャネル モデルを使用して実行](../../adapters-and-accelerators/adapter-oracle-database/run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model.md)します。  
   
 ```  
 using System;  
@@ -153,6 +153,6 @@ namespace OracleDMLChannel
   
 ## <a name="see-also"></a>参照  
  [WCF チャネル モデルを使用して Oracle データベース アプリケーションを開発します。](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)   
- [Oracle データベースを使用して、チャネルを作成します。](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)   
- [WCF チャネル モデルを使用して、SQLEXECUTE 操作を実行します。](../../adapters-and-accelerators/adapter-oracle-database/run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model.md)   
- [WCF チャネル モデルを使用して Oracle データベース内の関数を呼び出す](../../adapters-and-accelerators/adapter-oracle-database/invoke-a-function-in-oracle-database-using-the-wcf-channel-model.md)
+ [Oracle データベースを使用してチャネルを作成します。](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)   
+ [WCF チャネル モデルを使用して SQLEXECUTE 操作を実行します。](../../adapters-and-accelerators/adapter-oracle-database/run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model.md)   
+ [WCF チャネル モデルを使用して Oracle データベースで関数を呼び出す](../../adapters-and-accelerators/adapter-oracle-database/invoke-a-function-in-oracle-database-using-the-wcf-channel-model.md)

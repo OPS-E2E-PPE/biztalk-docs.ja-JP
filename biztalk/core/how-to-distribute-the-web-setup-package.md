@@ -1,5 +1,5 @@
 ---
-title: Web セットアップ パッケージを配布する方法 |Microsoft ドキュメント
+title: Web セットアップ パッケージを配布する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed7e6277045593360cbdfe57848f7313054b60f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ecffab64a02a8c42f7a50f2c87629aa1bf520662
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254122"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385173"
 ---
 # <a name="how-to-distribute-the-web-setup-package"></a>Web セットアップ パッケージを配布する方法
 インストール パッケージを作成した後、Web サービスをセットアップするために MSI ファイルと BindingInfo.xml ファイルがコピーされる配布フォルダを作成する必要があります。  
@@ -35,4 +35,4 @@ ms.locfileid: "22254122"
 3.  ASP.NET Web サービス プロジェクト フォルダの temp フォルダから配布フォルダに BindingInfo.xml ファイルをコピーします。  
   
 ## <a name="see-also"></a>参照  
- [非 Visual Studio コンピューターに公開された Web サービスを展開します。](../core/deploying-published-web-services-on-a-non-visual-studio-computer.md)
+ [Visual Studio がインストールされていないコンピューターへの公開済み Web サービスの展開](../core/deploying-published-web-services-on-a-non-visual-studio-computer.md)

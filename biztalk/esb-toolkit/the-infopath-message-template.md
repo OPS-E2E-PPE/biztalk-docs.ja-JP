@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c929e8ef1edcd88c0976d145354779b3e095634
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8972c27a433755a922cdc1d5074902e412a46602
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024472"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399746"
 ---
 # <a name="the-infopath-message-template"></a>InfoPath メッセージ テンプレート
 ESB 管理ポータルで ESB エラー メッセージを表示する代わりに、ユーザーを利用して Microsoft InfoPath メッセージ テンプレートが付属、ESB 例外メッセージ ビューアーを名前付きの[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。  
   
  ESB 例外管理フレームワークは、ESB 例外メッセージ ビューアー テンプレートと共に、エラー メッセージの元のメッセージが含まれているいくつかのビューが表示されますが、シリアル化された形式でメッセージを保持できます。 ESB 例外のメッセージ ビューアーには、次のビューが用意されています。  
   
-- 全般ビュー  
+- [全般] ビュー  
   
 - 例外オブジェクトのビュー  
   

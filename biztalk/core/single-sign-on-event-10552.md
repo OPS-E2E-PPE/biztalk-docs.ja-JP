@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10552 |Microsoft Docs'
+title: シングル サインオン:イベント 10552 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4f78ce40f827e6c06e59e1382aba8faac0337f8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 744ecbd42d4a62fd72b792e7491f3f127ebf14f3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001211"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398895"
 ---
-# <a name="single-sign-on-event-10552"></a>シングル サインオン: イベント 10552
+# <a name="single-sign-on-event-10552"></a>シングル サインオン:イベント 10552
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "37001211"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |          SSO_ERROR_MAPPING_CALLBACK_ACCESS_DENIED          |
-|  メッセージ テキスト   |              マッピング サーバーのアクセスが拒否されました。%r               |
+|  メッセージ テキスト   |              マッピング サーバー アクセス denied.%r               |
   
 ## <a name="explanation"></a>説明  
- クライアントがマッピング サーバーを呼び出しましたが、受け付けられませんでした。 原因として、プロトコルが正しくない、クライアントのセキュリティ アクセス許可が不十分など、さまざまな理由が考えられます。  
+ 呼び出しでは、マッピング サーバーにクライアントからしましたが、受け付けられませんでした。 さまざまなプロトコルが正しくないや、クライアント上の不十分なセキュリティ アクセス許可など、さまざまな理由の可能性があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- エラー ログの情報をメモに取り、製品サポート サービスにお問い合わせください。
+ エラー ログの情報をメモし、製品サポート サービスにお問い合わせください。

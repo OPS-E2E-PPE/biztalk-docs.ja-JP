@@ -12,17 +12,17 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 608ed9e991dca2e118e89c4e338a212006b52a0c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e635ed8f1a24e7d813054fb225250f581575f06b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357929"
 ---
-# <a name="common-solution-developer-tasks"></a>一般的なソリューション開発者のタスク
-ソリューション開発者は、BizTalk Server の開発ツールとテクノロジ、および Microsoft .NET Framework を使用して、BizTalk Server ソリューションを設計、開発します。  
+# <a name="common-solution-developer-tasks"></a>ソリューション開発者の一般的なタスク
+ソリューション開発者の設計し、BizTalk Server 開発ツールとテクノロジだけでなく、Microsoft .NET Framework を使用して BizTalk Server ソリューションを開発します。  
 
- ソリューション開発者ができる限り効率的に作業するためのリンクを以下に示します。これらは、BizTalk Server アプリケーションの開発に関するチュートリアルと一般的な情報へのリンクです。  
+ できるだけ効率的に作業ソリューション開発者のため、次の一覧は、チュートリアル、ガイド、および BizTalk Server アプリケーションの開発に関する一般的な情報のリンクを提供します。  
 
 
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |

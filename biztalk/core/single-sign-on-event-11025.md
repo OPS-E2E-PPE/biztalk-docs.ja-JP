@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11025 |Microsoft Docs'
+title: シングル サインオン:イベント 11025 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bd8c25dc80669b4524c7e9ce848e4b0e28f773f4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3a3cd83ad3beab084a00190632df9457ee987ac6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015899"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379988"
 ---
-# <a name="single-sign-on-event-11025"></a>シングル サインオン: イベント 11025
+# <a name="single-sign-on-event-11025"></a>シングル サインオン:イベント 11025
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                            |
@@ -36,4 +36,4 @@ ms.locfileid: "37015899"
  チケットのタイムアウト値が無効です。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- チケットのタイムアウトの詳細については、[SSO 関連アプリケーション](../core/sso-affiliate-applications.md)を参照してください。
+ チケットのタイムアウトの詳細については、次を参照してください。 [SSO 関連アプリケーション](../core/sso-affiliate-applications.md)します。

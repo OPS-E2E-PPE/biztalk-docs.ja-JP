@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 269acfa79808f133f4332371d98e491fc8a0b2e1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 869d65f81c280e608b636d4bd9f1292d47d47172
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991371"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356350"
 ---
 # <a name="configuring-acknowledgements-edifact"></a>受信確認の構成 (EDIFACT)
 パートナー アグリーメントでは、どのタイプの確認をパーティに返すかや、どの種類の送信ポートを確認の送信に使用するかを指定できます。 また、確認をバッチ処理するかどうか、どのトランザクション セット参照番号を確認の開始番号にするか、受理されたトランザクション セットに対して SG1/SG4 ループを生成するかどうかも指定します。  
@@ -44,7 +44,7 @@ ms.locfileid: "36991371"
   
     2.  選択**確認 (CONTRL) が必要です**をインターチェンジの送信者に機能確認 (CONTRL) を返します。 場合**確認 (CONTRL) が必要です**がオンになっている**確認 (CONTRL) をバッチ処理しない**とは別に、各機能確認を送信またはバッチ機能をオフのままにするには受信確認。  
   
-4.  **トランザクション セットの状態への同意レポート**セクションで、機能 CONTRL 確認、受理されたトランザクション セットの SG1/SG4 のループの生成を強制する選択**SG1/SG4 の生成が受け入れられるをループ処理トランザクション セット (オフの場合、ループが生成されます UCM.5 が 7 と等しくない場合にのみ)** します。 SG1/SG4 のループの詳細については、[機能確認としての EDIFACT CONTRL メッセージ](../core/edifact-contrl-message-as-functional-acknowledgment.md)を参照してください。  
+4.  **トランザクション セットの状態への同意レポート**セクションで、機能 CONTRL 確認、受理されたトランザクション セットの SG1/SG4 のループの生成を強制する選択**SG1/SG4 の生成が受け入れられるをループ処理トランザクション セット (オフの場合、ループが生成されます UCM.5 が 7 と等しくない場合にのみ)** します。 SG1/SG4 のループの詳細については、次を参照してください。[機能確認としての EDIFACT CONTRL メッセージ](../core/edifact-contrl-message-as-functional-acknowledgment.md)します。  
   
 5.  をクリックして**適用**構成では、続行する前に、変更を受け入れるか、をクリックする**OK**変更を検証し、ダイアログ ボックスを閉じます。  
   

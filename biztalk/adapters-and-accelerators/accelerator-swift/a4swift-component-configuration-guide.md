@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 85dc94fdee72e441fd512dc9567e5e666c3362a8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 43852126adb7dea949f7d8d6b2722876768cd278
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379133"
 ---
 # <a name="a4swift-component-configuration-guide"></a>A4SWIFT コンポーネント構成ガイド
 このガイドは、Microsoft の構成についての情報を提供します。[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]します。 A4SWIFT をインストールして (ように、インストール ガイドで説明) は、A4SWIFT 構成ウィザードを完了した後は、この構成のガイドで手順を実行します。 この構成のガイドには、次の手順が含まれています。  

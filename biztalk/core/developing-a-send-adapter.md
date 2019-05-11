@@ -1,5 +1,5 @@
 ---
-title: 送信アダプターの開発 |Microsoft ドキュメント
+title: 送信アダプターの開発 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a186aa40ea97c1139521ecf16b4aedac30e57da9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6909d181b2dbc76597b1e091e0a1a9cf0beaea9f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239370"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389669"
 ---
 # <a name="developing-a-send-adapter"></a>送信アダプターの開発
 ここでは、送信アダプター内で発生するオブジェクト間の対話処理について説明します。 この情報は、送信アダプターの作成時にカスタム アダプター開発の指針としたり、ネイティブ アダプターの機能を理解するうえで役立ちます。  
@@ -26,12 +26,12 @@ ms.locfileid: "22239370"
   
 -   [送信アダプターの交換パターン](../core/exchange-patterns-for-send-adapters.md)  
   
--   [インスタンス化して、送信アダプターの初期化](../core/instantiating-and-initializing-a-send-adapter.md)  
+-   [送信アダプターのインスタンス化と初期化](../core/instantiating-and-initializing-a-send-adapter.md)  
   
 -   [送信アダプターの操作](../core/send-adapter-operations.md)  
   
--   [送信処理のメッセージのバッチ処理](../core/batching-messages-for-send-processing.md)  
+-   [送信処理用メッセージのバッチ処理](../core/batching-messages-for-send-processing.md)  
   
 -   [送信アダプター用のインターフェイス](../core/interfaces-for-send-adapters.md)  
   
--   [送信アダプターの SSO のサポート](../core/sso-support-for-send-adapters.md)
+-   [送信アダプター用の SSO サポート](../core/sso-support-for-send-adapters.md)

@@ -14,17 +14,17 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d4a7126c8a1ffe7d710b880712d3fecd5f02021
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 25c4981e083352bbba24a6579083dc4023605cba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989731"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338905"
 ---
 # <a name="how-to-customize-colors-and-font-in-biztalk-mapper"></a>BizTalk マッパーの色とフォントをカスタマイズする方法
 各種のリンクに関連付けられた色やグリッド ビューで選択されたオブジェクトの色は、必要に応じて変更できます。 また、スキーマのツリー ノードを表示するときに使用されるフォントを変更することもできます。 このトピックでは、こうした変更を行うための手順について説明します。  
   
- また、BizTalk マッパーの全般設定をカスタマイズすることもできます。 設定を選択する方法については、[BizTalk マッパーの全般設定をカスタマイズする方法](../core/how-to-customize-general-settings-in-biztalk-mapper.md)を参照してください。  
+ また、BizTalk マッパーの全般設定をカスタマイズすることもできます。 設定を選択する方法については、次を参照してください。 [BizTalk マッパーの全般設定をカスタマイズする方法](../core/how-to-customize-general-settings-in-biztalk-mapper.md)します。  
   
 > [!NOTE]
 >  これらの手順では、BizTalk マッパーが実行されている必要があります。  

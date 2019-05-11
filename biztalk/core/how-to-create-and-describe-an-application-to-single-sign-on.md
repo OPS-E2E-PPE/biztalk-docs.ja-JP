@@ -12,38 +12,38 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 874f3c0235d4a0a84d98905796de6db8b544b1bd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b914cc54e48aaa4a58d3f370f50132265f97def
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990259"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385517"
 ---
 # <a name="how-to-create-and-describe-an-application-to-single-sign-on"></a>作成して、シングル サインオンにアプリケーションを記述する方法
-一般的な管理タスクとして、関連アプリケーションをエンタープライズ シングル サインオン (SSO) データベースに追加することが挙げられます。 関連アプリケーションをエンタープライズ SSO データベースに追加することによって、ユーザーおよび資格情報を関連アプリケーションに関連付けることができます。  
+一般的な管理タスクを実行する必要がありますが、エンタープライズ シングル サインオン (SSO) データベースに関連アプリケーションを追加しています。 関連アプリケーション、エンタープライズ SSO データベースを追加するには、ユーザーと資格情報関連のアプリケーションに関連付けることができます。  
   
 > [!NOTE]
->  関連アプリケーションを作成するには、"SSO 関連管理者" 以上の権限を持つアカウントが必要です。  
+>  関連アプリケーションを作成するには、「SSO 関連管理者」アカウントまたはの上のメンバーシップが必要です。  
   
-### <a name="to-create-and-describe-an-application-in-the-sso-database"></a>SSO データベースに対してアプリケーションを作成および記述するには  
+### <a name="to-create-and-describe-an-application-in-the-sso-database"></a>作成し、SSO データベース内のアプリケーションを記述するには  
   
-1. `ISSOAdmin` オブジェクトを新規作成します。  
+1. 新規作成`ISSOAdmin`オブジェクト。  
   
-2. `ISSOAdmin.CreateApplication` を呼び出し、新しいアプリケーションを作成します。  
+2. 呼び出して、新しいアプリケーションを作成`ISSOAdmin.CreateApplication`です。  
   
-3. `ISSOAdmin.CreateFieldInfo` を呼び出し、アプリケーションについて記述するフィールドを追加します。  
+3. 呼び出しを使用してアプリケーションを記述するフィールドを追加`ISSOAdmin.CreateFieldInfo`します。  
   
-    この手順で、アプリケーションのユーザーとパスワードがデータベースに伝達されます。  
+    この手順では、中にすることを伝えるデータベース アプリケーション ユーザーと関連付けられているパスワード。  
   
-4. `ISSOAdmin.UpdateApplication` または `ISSOAdmin2.UpdateApplication2` を呼び出し、新たに作成された情報をサーバーにプッシュします。  
+4. 呼び出しを使用して、サーバーを新しく作成された説明にプッシュ`ISSOAdmin.UpdateApplication`または`ISSOAdmin2.UpdateApplication2`します。  
   
-    この 2 つのメソッドの違いは、アプリケーションの更新を記述する際の手段にあります。`UpdateApplication2` では `IPropertyBag` が使用されるのに対し、`UpdateApplication` では複数のパラメーターが使用されます。  
+    2 つのメソッド間の差は`UpdateApplication2`を使用して、`IPropertyBag`中にアプリケーションを記述する方法は、更新、`UpdateApplication`は複数のパラメーターがあります。  
   
-5. `ISSOAdmin.PurgeCacheForApplication` を呼び出して、変更内容のローカル キャッシュを削除します。  
+5. 呼び出すことによって行われた変更のローカル キャッシュを消去`ISSOAdmin.PurgeCacheForApplication`します。  
   
-    ローカル キャッシュはセキュリティ上、決して安全な場所ではありません。手順 3. で記述した名前とパスワードを、ローカル キャッシュから確実に削除する必要があります。  
+    名とパスワードを安全な場所に存在する 3 の手順で説明することによってのセキュリティ対策は、ローカル キャッシュを消去します。  
   
-   次の例は、アプリケーションを作成して、フィールド情報を追加する方法を示しています。  
+   次の例では、アプリケーションを作成し、フィールドの情報を追加する方法を示します。  
   
 ```  
 public static bool AddApplication(string name, string admins, string users)  

@@ -16,24 +16,24 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46c5185307aeda0289fd8d4c53363ec45510a492
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 215e8de0d0343d5b30adf916ae04876b9a237ec1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016124"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384477"
 ---
 # <a name="how-to-open-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールを開く方法
-BizTalk Server 管理コンソールを開く手順、および詳細ペインに表示されるデータの並べ替えと更新を行う手順を以下に示します。  
+次の手順を使用するには、BizTalk Server 管理コンソールを開くおよびの並べ替えし、詳細ウィンドウに表示されるデータを更新します。  
   
 ## <a name="prerequisites"></a>前提条件  
- ここで示す手順を実行するには、BizTalk Server Operators グループのメンバーまたは BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。  
+ この手順を実行するには、必要がありますまたはログインする BizTalk Server Operators グループのメンバーとして、BizTalk Server 管理者グループのメンバーとして。  
   
-### <a name="to-open-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールを開くには  
+### <a name="to-open-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールを開く  
   
 - クリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-   スイッチまたは  
+   または  
   
 - をクリックして**開始**、 をクリックして**実行**、型**BTSmmcLauncher.exe**、順にクリックします**OK**。  
   
@@ -41,19 +41,19 @@ BizTalk Server 管理コンソールを開く手順、および詳細ペイン�
   
 -   更新し、をクリックする、コンソール ツリーでノードを右クリックして**更新**します。  
   
-     これにより、そのノードに含まれるすべてのオブジェクトが更新されます。  
+     これにより、そのノード内のすべてのオブジェクトが更新されます。  
   
-### <a name="to-sort-columns-in-the-details-pane-of-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールの詳細ペインで列を並べ替えるには  
+### <a name="to-sort-columns-in-the-details-pane-of-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールの詳細ウィンドウで列を並べ替える  
   
--   コンソール ツリーで、詳細ペインに情報を表示するアイテムをクリックします。  
+-   コンソール ツリーで、詳細ウィンドウで、その情報を表示するアイテムをクリックします。  
   
--   詳細ペインで、並べ替えに使用する列見出しをクリックします。 その見出しのアイテムが昇順になるように並べ替えられます。  
+-   詳細ペインでは、並べ替えに使用する列見出しをクリックします。 これには、昇順の見出しの下の項目が並べ替えられます。  
   
--   列見出しをもう一度クリックすると、降順 (逆の順序) に並べ替えられます。  
+-   (逆の順序) の降順で並べ替えるには、もう一度、列見出しをクリックします。  
   
-### <a name="to-reorder-the-columns-in-the-details-pane-of-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールの詳細ペインで列の順序を変更するには  
+### <a name="to-reorder-the-columns-in-the-details-pane-of-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールの詳細ウィンドウ内の列の順序を変更するには  
   
--   詳細ペインの列の表示順序を変更するには、詳細ペインで列をクリックし、新しい場所にドラッグします。  
+-   詳細ウィンドウで、をクリックし、列、詳細ウィンドウで、列が表示される順序を変更する新しい場所に移動する列をドラッグします。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server 管理コンソールの使用](../core/using-the-biztalk-server-administration-console.md)   

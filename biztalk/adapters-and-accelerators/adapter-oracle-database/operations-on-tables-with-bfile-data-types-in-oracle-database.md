@@ -16,17 +16,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ab9885497468f91b309eb51ac0abbf4c0807ca76
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 028e560dc7a536dd99b8a9461211dd3e712a361a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998259"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376302"
 ---
 # <a name="operations-on-tables-with-bfile-data-types-in-oracle-database"></a>Oracle データベースで BFILE データ型を持つテーブルに対する操作
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] BFILE データ型をテーブルとストアド プロシージャでサポートしています。 次の表は、実行された操作に基づいて、アダプターによって公開される BFILE データ型と LOB 成果物 (テーブルまたはプロシージャ) アクセスをまとめたものです。  
   
-|成果物|演算|BFILE col/パラメーターの公開されるデータ型|コメント|  
+|成果物|操作|BFILE col/パラメーターの公開されるデータ型|コメント|  
 |--------------|---------------|--------------------------------------------|--------------|  
 |TABLE|INSERT|String|BFILE 列に挿入するファイルに論理 Oracle ディレクトリ パスを表します<br /><br /> 例: Oracle での論理ディレクトリの MYDIR の MYDIR/screen.jpg|  
 |TABLE|UPDATE|String|BFILE 列を更新するファイルに論理 Oracle ディレクトリ パスを表します|  

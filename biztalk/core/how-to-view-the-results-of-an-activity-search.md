@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 061f6a8c15f4ce2aabbdf90364a521a8fdf2093b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2438390a95fdc06c70a3f2c52fb47b148e018255
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008899"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383055"
 ---
 # <a name="how-to-view-the-results-of-an-activity-search"></a>アクティビティの検索の結果を表示する方法
 ユーザーをクリックして、クエリの結果を表示できます、**クエリの実行**BAM ポータルのコンテンツ フレームの上部にボタンをクリックします。 クエリの結果に表示されます、**結果**フレームの下部のセクション。  
@@ -36,7 +36,7 @@ ms.locfileid: "37008899"
  返されたレコードの詳細を確認するには、行内の任意の場所をクリックしてください。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、アクティビティが展開されている必要があります。 これを行う方法については、[を適用し、追跡プロファイルの削除方法](../core/how-to-apply-and-remove-a-tracking-profile.md)を参照してください。  
+ このトピックの手順を実行するには、アクティビティが展開されている必要があります。 これを行う方法については、次を参照してください。[を適用し、追跡プロファイルの削除方法](../core/how-to-apply-and-remove-a-tracking-profile.md)します。  
   
 ## <a name="return-results"></a>結果を返す  
   
@@ -48,7 +48,7 @@ ms.locfileid: "37008899"
   
 3. そのビューに関連するアクティビティをクリックし、コンテンツ フレームにそのアクティビティを読み込みます。  
   
-4. アクティビティの検索を作成するか、既存のアクティビティの検索を開きます。 作成またはアクティビティの検索を開く方法については、[アクティビティの検索でクエリを作成する方法](../core/how-to-create-a-query-in-activity-search.md)を参照してください。  
+4. アクティビティの検索を作成するか、既存のアクティビティの検索を開きます。 作成またはアクティビティの検索を開く方法については、次を参照してください。[アクティビティの検索でクエリを作成する方法](../core/how-to-create-a-query-in-activity-search.md)します。  
   
 5. をクリックして、**クエリの実行**ポータルのコンテンツ フレームの上部にあるボタンをクリックします。  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4990ebb9e9aad612a82af42b3d186643da1e91ab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c646b49f5787c986120027da89624bb19d0b3340
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002731"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376597"
 ---
 # <a name="develop-oracle-database-applications-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して Oracle データベース アプリケーションを開発します。
 使用することができます、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]チャネル モデルを使用する、 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle DB のバインドで作成されたチャネル インスタンス経由で直接 XML メッセージを送信することです。  

@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62ddcc94723f52824ee0dc3c3e0500d66acbaf04
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e65c45ed3e4ee2914be89b2ee56d233ab2e58128
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983659"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376236"
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-oracle-database-using-biztalk-server"></a>BizTalk Server を使用して Oracle データベースで特定のタスクを完了する通知メッセージの処理
 使用することができます、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースのテーブルへの変更の通知を受信します。 ただし、アダプターのみ通知を送信するレコードの一部の電源が挿入されていること、更新、または特定のデータベース テーブルで削除されたことです。 これらのレコードに、後続の処理は、クライアント アプリケーション自体によって処理する必要があります。 このトピックでは、Oracle データベースから受信した通知の種類に基づいて、テーブル内のレコードを処理する方法のシナリオ ベースの説明を示します。  
@@ -57,7 +57,7 @@ ms.locfileid: "36983659"
  次の表にまとめたものです、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]バインドのプロパティの構成、Oracle データベースから通知を受信するために使用します。 受信ポートを構成するときにこれらのバインドのプロパティを指定する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
 > [!NOTE]
->  スキーマを生成するときに、これらのバインドのプロパティを指定することができます、**通知**は必須でない場合でも、操作します。 ポートのバインド ファイルをこのようにする場合、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータの生成の一部にもバインドのプロパティで指定する値が含まれているが生成されます。 後でこのバインド ファイルをインポートすることができます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]プロパティは既に設定されています。 バインドで wcf-custom または Wcf-oracledb を作成する管理コンソールの受信ポート。 バインド ファイルを使用して、wcf-custom または Wcf-oracledb ポートを作成する方法の詳細については、[Oracle データベースへのポート バインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)を参照してください。  
+>  スキーマを生成するときに、これらのバインドのプロパティを指定することができます、**通知**は必須でない場合でも、操作します。 ポートのバインド ファイルをこのようにする場合、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータの生成の一部にもバインドのプロパティで指定する値が含まれているが生成されます。 後でこのバインド ファイルをインポートすることができます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]プロパティは既に設定されています。 バインドで wcf-custom または Wcf-oracledb を作成する管理コンソールの受信ポート。 バインド ファイルを使用して、wcf-custom または Wcf-oracledb ポートを作成する方法の詳細については、次を参照してください。 [Oracle データベースへのポート バインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)します。  
   
 |プロパティのバインド|説明|  
 |----------------------|-----------------|  
@@ -66,7 +66,7 @@ ms.locfileid: "36983659"
 |**NotificationStatement**|クエリ通知に登録するために使用する SELECT ステートメントを指定します。 アダプターは、指定した SELECT ステートメントの変更の結果セットの場合にのみ、通知メッセージを取得します。|  
 |**NotifyOnListenerStart**|リスナーが開始されると、アダプターがアダプター クライアントに通知を送信するかどうかを指定します。|  
   
- これらのプロパティの詳細については、[バインドのプロパティの操作](https://msdn.microsoft.com/library/dd788467.aspx)を参照してください。 使用する方法の詳細については、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースから通知を受信するさらに読み進める。  
+ これらのプロパティの詳細については、次を参照してください。[バインドのプロパティの操作](https://msdn.microsoft.com/library/dd788467.aspx)します。 使用する方法の詳細については、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースから通知を受信するさらに読み進める。  
   
 ## <a name="how-to-receive-notification-messages-from-oracle-database"></a>Oracle データベースから通知メッセージを受信する方法  
  使用して Oracle データベースでの操作を実行する[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で説明されている手順のタスクが含まれます[Oracle データベースと BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md)します。 これらのタスクは通知メッセージを受信するアダプターを構成するには。  
@@ -91,7 +91,7 @@ ms.locfileid: "36983659"
 ## <a name="generating-schema"></a>スキーマを生成します。  
  スキーマを生成する必要があります、**通知**操作を受信します。 参照してください[Visual Studio での Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)スキーマを生成する方法の詳細について。 スキーマを生成するときに、次のタスクを実行します。 デザイン時のバインドのプロパティを指定しない場合は、最初の手順をスキップします。  
   
-1.  値を指定**InboundOperationType**、 **NotificationPort**、および**NotificationStatement**スキーマの生成中にプロパティをバインドします。 このバインドのプロパティの詳細については、[バインドのプロパティの操作](https://msdn.microsoft.com/library/dd788467.aspx)を参照してください。 バインドのプロパティを指定する方法については、[for Oracle Database バインド プロパティを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)を参照してください。  
+1.  値を指定**InboundOperationType**、 **NotificationPort**、および**NotificationStatement**スキーマの生成中にプロパティをバインドします。 このバインドのプロパティの詳細については、次を参照してください。[バインドのプロパティの操作](https://msdn.microsoft.com/library/dd788467.aspx)します。 バインドのプロパティを指定する方法については、次を参照してください。 [for Oracle Database バインド プロパティを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)します。  
   
 2.  コントラクトの種類を選択します。**サービス (受信操作)** します。  
   
@@ -175,7 +175,7 @@ ms.locfileid: "36983659"
   
  通知の種類に関する情報は内で使用できるように、`<info>`親内のタグ`<Notification>`タグ。 一部として、この式図形の操作を行います。  
   
--   内の値を格納する変数を作成、`<Info>`タグ付けし、その型 System.String に設定します。 変数の作成方法の詳細については、[オーケストレーションで変数を使用して](../../core/using-variables-in-orchestrations.md)を参照してください。  
+-   内の値を格納する変数を作成、`<Info>`タグ付けし、その型 System.String に設定します。 変数の作成方法の詳細については、次を参照してください。[オーケストレーションで変数を使用して](../../core/using-variables-in-orchestrations.md)します。  
   
      このトピックでは、名前を変数として**NotificationType**します。  
   
@@ -226,10 +226,10 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
   
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
   
- ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。  
+ ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。  
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**ペインで、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 使用する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールにアプリケーションを構成します。 チュートリアルについては、[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)を参照してください。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**ペインで、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 使用する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールにアプリケーションを構成します。 チュートリアルについては、次を参照してください。[チュートリアル。基本的な BizTalk アプリケーション展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)します。
   
  アプリケーションを構成する必要があります。  
   
@@ -245,21 +245,21 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
     |プロパティのバインド|値|  
     |----------------------|-----------|  
     |**InboundOperationType**|これを設定**通知**します。|  
-    |**NotificationPort**|Oracle データベースからのデータベース変更通知をリッスンする ODP.NET を開く必要があるポート番号を指定します。 これは、Windows ファイアウォールの例外リストに追加する必要があります、同じポート番号に設定します。 Windows ファイアウォールの例外リストにポートを追加する方法については、[ http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)を参照してください。<br /><br /> **重要:** これを既定値は-1 に設定すると、通知メッセージを受信する Windows ファイアウォールを完全に無効にする必要があります。|  
-    |**NotificationStatement**|これを設定します。<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> **注:** スキーマ名とテーブル名を指定する必要があります。 たとえば、 `SCOTT.ACCOUNTACTIVITY`のようにします。|  
+    |**NotificationPort**|Oracle データベースからのデータベース変更通知をリッスンする ODP.NET を開く必要があるポート番号を指定します。 これは、Windows ファイアウォールの例外リストに追加する必要があります、同じポート番号に設定します。 Windows ファイアウォールの例外リストにポートを追加する方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)します。<br /><br /> **重要:** これを既定値は-1 に設定した場合は通知メッセージを受信する Windows ファイアウォールを完全に無効にする必要があります。|  
+    |**NotificationStatement**|これを設定します。<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> **注:** スキーマ名とテーブル名を指定する必要があります。 たとえば、`SCOTT.ACCOUNTACTIVITY` のようにします。|  
     |**NotifyOnListenerStart**|これを設定**True**します。|  
   
-     異なるバインディング プロパティの詳細については、[バインドのプロパティの操作](https://msdn.microsoft.com/library/dd788467.aspx)を参照してください。  
+     異なるバインディング プロパティの詳細については、次を参照してください。[バインドのプロパティの操作](https://msdn.microsoft.com/library/dd788467.aspx)します。  
   
     > [!NOTE]
-    >  使用して受信操作の実行中に、トランザクション分離レベルとトランザクションのタイムアウトを構成することをお勧めします。、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 ように、サービスを追加することで、Wcf-custom または Wcf-oracledb を構成するときに動作の受信ポートを行うことができます。 サービスの動作を追加する方法については、[トランザクション分離レベルの構成と Oracle データベースとトランザクション タイムアウト](../../adapters-and-accelerators/adapter-oracle-database/configure-transaction-isolation-level-and-transaction-timeout-with-oracle-db.md)を参照してください。  
+    >  使用して受信操作の実行中に、トランザクション分離レベルとトランザクションのタイムアウトを構成することをお勧めします。、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 ように、サービスを追加することで、Wcf-custom または Wcf-oracledb を構成するときに動作の受信ポートを行うことができます。 サービスの動作を追加する方法については、次を参照してください。[トランザクション分離レベルの構成と Oracle データベースとトランザクション タイムアウト](../../adapters-and-accelerators/adapter-oracle-database/configure-transaction-isolation-level-and-transaction-timeout-with-oracle-db.md)します。  
   
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーション Insert および Update 操作用の Oracle データベースから通知メッセージをドロップできる場所での場所を定義します。 C:\TestLocation\UpsertNotification フォルダーへの通知メッセージを削除するには、このポートを構成します。  
   
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーションの他のすべての操作用の Oracle データベースから通知メッセージをドロップできる場所での場所を定義します。 C:\TestLocation\OtherNotification フォルダーへの通知メッセージを削除するには、このポートを構成します。  
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- Oracle データベースから通知メッセージを受信するため、後続の Select および Update 操作を実行するために、BizTalk アプリケーションを開始する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。  
+ Oracle データベースから通知メッセージを受信するため、後続の Select および Update 操作を実行するために、BizTalk アプリケーションを開始する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。  
   
  この段階で、ことを確認します。  
   
@@ -355,7 +355,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
      注意の値、`<Info>`タグは「削除」です。 そのため、このメッセージは、C:\TestLocation\OtherNotification フォルダーで受信されます。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した、送信ポートを作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定、ファイルからインポートできます。 バインド ファイルの詳細については、[Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)を参照してください。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した、送信ポートを作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定、ファイルからインポートできます。 バインド ファイルの詳細については、次を参照してください。 [Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)します。  
   
 ## <a name="performing-complex-operations-after-receiving-notification-messages"></a>通知メッセージを受信した後、複雑な操作を実行します。  
  単純化して理解を深めるは、このトピックの「オーケストレーションはメッセージを通知の種類に基づいて異なるフォルダーにコピーします。 ただし、実際のシナリオより複雑な操作を実行する必要があります。 このトピックとする操作を実行するためにビルドで指定された同じような手順を実行できます。 たとえば、ACCOUNTACTIVITY テーブルで挿入操作の通知メッセージが発生した場合、別のテーブルのレコードを挿入するオーケストレーションを変更することができます。 このような場合は、判断図形内で適切な変更を行うことができます。  

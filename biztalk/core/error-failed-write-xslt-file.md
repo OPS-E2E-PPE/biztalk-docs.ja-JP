@@ -1,5 +1,5 @@
 ---
-title: エラー - XSLT ファイルの書き込みに失敗しました |Microsoft ドキュメント
+title: エラー - XSLT ファイルの書き込みに失敗しました |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80393432685006ee0a225abaf152f8f5df0572d6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bf8f2739e93381d1959414a69fad97208697d337
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240298"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388858"
 ---
 # <a name="error---failed-write-xslt-file"></a>エラー - XSLT ファイルを書き込めませんでした。
 **エラー コード**  

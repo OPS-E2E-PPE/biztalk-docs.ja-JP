@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3252d7a96b06da3590b4c823e150366e6ba24168
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5702d1530926bf4bd0c2ecdc97520f777be3701e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983363"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385372"
 ---
 # <a name="how-to-define-a-business-activity"></a>ビジネス アクティビティを定義する方法
 レポート用に収集が必要なデータを指定するには、BAM アクティビティを定義する必要があります。 アクティビティには、BAM を使用して追跡する重要なマイルストーンとデータ項目の一覧を含めます。BAM Excel アドインを使用し、以下の手順に従ってアクティビティを作成します。  
@@ -57,7 +57,7 @@ ms.locfileid: "36983363"
    |アイテムの種類|説明|  
    |---------------|-----------------|  
    |ビジネス マイルス トーン|日付/時刻値。 たとえば、注文書が承認された日付です。|  
-   |ビジネス データ - テキスト|任意の英数字の文字列。 たとえば、出荷先 : 市区町村、都道府県、郵便番号です。|  
+   |ビジネス データ - テキスト|任意の英数字の文字列。 たとえば、出荷先。市区町村、都道府県、郵便コードです。|  
    |ビジネス データ-Integer|整数値。 たとえば、注文の合計数です。|  
    |ビジネス データ - 10 進数|decimal 値です。 たとえば、PO の合計金額です。|  
   
@@ -70,7 +70,7 @@ ms.locfileid: "36983363"
   
 5. ビジネス アクティビティ監視アクティビティ ウィザードを完了すると、ビジネス アクティビティ監視ビュー ウィザードが自動的に開始されます。  
   
-   詳細については、このウィザードを使用して、[BAM ビューを定義する](../core/defining-a-bam-view.md)を参照してください。  
+   詳細については、このウィザードを使用して、次を参照してください。 [BAM ビューを定義する](../core/defining-a-bam-view.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BAM ビューの定義](../core/defining-a-bam-view.md)   

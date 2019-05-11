@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d7237037794168ffb136c95734582b3df95db48
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 965e5334da8e76e6172ab5236cfda948e4d8a93c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015195"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376805"
 ---
 # <a name="considerations-for-receiving-database-change-notifications-using-the-oracle-database-adapter"></a>受信データベース変更通知を使用して、Oracle Database アダプターに関する考慮事項
 このトピックではいくつかの考慮事項とベスト プラクティスを使用しているときに点に注意する必要があります[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]Oracle データベースからデータベースの通知を受け取ります。  
@@ -73,7 +73,7 @@ ms.locfileid: "37015195"
   
    興味深いことに、更新操作では、通知をアダプターのクライアントに送信もう一度と、プロセス全体がもう一度繰り返されます。 そのため、クライアント アプリケーションには、このような不要な通知を破棄する必要なロジックが必要です。  
   
-- 場合、 **NotifyOnListenerStart**プロパティのバインドは、アダプターは通知を送信アダプターのクライアントに受信場所を開始するたびにします。 バインド プロパティを使用し、通知メッセージを解釈する方法の詳細については、[受信 Oracle データベース変更通知した後、受信場所のブレーク ダウン](../../adapters-and-accelerators/adapter-oracle-database/receive-oracle-database-change-notifications-after-a-receive-location-breakdown.md)を参照してください。  
+- 場合、 **NotifyOnListenerStart**プロパティのバインドは、アダプターは通知を送信アダプターのクライアントに受信場所を開始するたびにします。 バインド プロパティを使用し、通知メッセージを解釈する方法の詳細については、次を参照してください。[受信 Oracle データベース変更通知した後、受信場所のブレーク ダウン](../../adapters-and-accelerators/adapter-oracle-database/receive-oracle-database-change-notifications-after-a-receive-location-breakdown.md)します。  
   
 ## <a name="typical-orchestration-for-receiving-notifications"></a>通知を受信するための一般的なオーケストレーション  
  このセクションを使用して通知を受信するための一般的なオーケストレーション フローの概要、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。  

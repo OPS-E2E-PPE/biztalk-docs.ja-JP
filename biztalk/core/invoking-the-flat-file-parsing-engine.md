@@ -1,5 +1,5 @@
 ---
-title: 呼び出す、フラット ファイルの解析エンジン |Microsoft ドキュメント
+title: 解析エンジンを呼び出し、フラット ファイル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90108ff2ade354c51f87499a388ae54135f14c7f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 66142e4d70f317d0baeba75cae6b1f1bcb528140
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261842"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380852"
 ---
 # <a name="invoking-the-flat-file-parsing-engine"></a>フラット ファイル解析エンジンの呼び出し
-呼び出すことによって、フラット ファイル解析エンジンを呼び出すことができます、**解析**のメソッド、 **IFFDocumentSpec**インターフェイスで、型キャストからは、さらに、`IDocumentSpec Interface`から取得した、 **この**です。 **XmlReader**から返される、**解析**メソッドにより、一度に 1 つのノードを取得するクライアントは、これは、パーサーをカスタマイズする良い機会です。  
+フラット ファイル解析エンジンを呼び出すことによって呼び出すことができます、**解析**のメソッド、 **IFFDocumentSpec**から型キャストはさらに、インターフェイス、`IDocumentSpec Interface`から取得した、 **した**します。 **XmlReader**から返される、**解析**メソッド クライアントを一度に 1 つのノードを取得できるように、これは、パーサーをカスタマイズするよい機会です。  
   
 ## <a name="example"></a>例  
   

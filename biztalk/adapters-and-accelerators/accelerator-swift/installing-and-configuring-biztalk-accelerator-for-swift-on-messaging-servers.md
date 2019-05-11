@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1034b7b3f0d4761446e1cbc1b9a3cc296cb01efb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 459a0fd7524b373104406a013c407a82d447966c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968987"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377431"
 ---
 # <a name="installing-and-configuring-biztalk-accelerator-for-swift-on-messaging-servers"></a>インストールと構成 BizTalk Accelerator for SWIFT メッセージング サーバー
 このセクションは、インストールして構成する方法を説明します[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]メッセージング サーバーにします。 これらのサーバーは主に、SWIFT ネットワークとの通信に使用します。  

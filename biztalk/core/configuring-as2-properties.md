@@ -1,5 +1,5 @@
 ---
-title: AS2 のプロパティの構成 |Microsoft ドキュメント
+title: AS2 のプロパティの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c5ab470e3c7f48973cf74d8713d45bd4131caba6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9117ba9f81ff3b8f378d1562080e95ff4a2f79c4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232754"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356299"
 ---
-# <a name="configuring-as2-properties"></a>AS2 プロパティの構成
+# <a name="configuring-as2-properties"></a>AS2 のプロパティを構成します。
 BizTalk Server は、AS2 プロパティを使用して、HTTP/HTTPS トランスポート経由の受信および送信 EDIINT/AS2 エンコード メッセージを処理します。 ここでは、AS2 メッセージ トランスポート用のパーティを作成する方法、およびパーティ間の AS2 アグリーメントを作成する方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [パーティの全般プロパティ (AS2) を構成します。](../core/configuring-general-party-properties-as2.md)  
+-   [パーティの全般プロパティの構成 (AS2)](../core/configuring-general-party-properties-as2.md)  
   
 -   [ビジネス プロファイル プロパティの構成](../core/configuring-business-profile-properties.md)  
   
--   [AS2 アグリーメント プロパティの構成](../core/configuring-as2-agreement-properties.md)  
+-   [AS2 アグリーメントのプロパティの構成](../core/configuring-as2-agreement-properties.md)  
   
 -   [別のアグリーメント プロパティの再利用](../core/reusing-properties-from-another-agreement.md)  
   

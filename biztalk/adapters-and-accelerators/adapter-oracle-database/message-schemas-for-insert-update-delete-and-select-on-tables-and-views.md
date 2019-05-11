@@ -19,15 +19,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7f815f88144c2cb3659614c517fdc224c601e27
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cd115d1ae12b1bed8921223df6ee64fcd4122c0a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989195"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376452"
 ---
 # <a name="message-schemas-for-the-basic-insert-update-delete-and-select-operations-on-tables-and-views"></a>基本の挿入のメッセージ スキーマを更新、削除、およびテーブルとビューで操作を選択します。
-[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェスの基本的な Insert、Update、Delete、および Select 操作の各テーブルが表示され、Oracle データベースで表示します。 これらの操作では、WHERE 句で修飾された適切な SQL ステートメントを実行します。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]これらの操作で厳密に型指定されたレコードとレコード セットを使用します。  
+[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェスの基本的な Insert、Update、Delete、および Select 操作の各テーブルが表示され、Oracle データベースで表示します。 これらの操作は、WHERE 句で修飾された適切な SQL ステートメントを実行します。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]これらの操作で厳密に型指定されたレコードとレコード セットを使用します。  
 
 ## <a name="message-structure-for-basic-table-operations"></a>基本的なテーブル操作のメッセージの構造  
  次の表は、XML メッセージの構造によって公開されている基本的なテーブル操作のため、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースのテーブル。 操作の対象テーブルでは、メッセージのアクションで指定され、ターゲットの名前空間にも表示されます。  
@@ -85,7 +85,7 @@ InsertResult 要素では、挿入された行の数が返されます。
 ```
 
 ### <a name="select"></a>Select
-フィルター要素で指定した WHERE 句を使用して対象テーブルに対する SELECT クエリが実行されます。 結果セットには、それらの要素で指定された列名のコンマ区切りリスト内の列が含まれています。
+SELECT クエリは、フィルター要素で指定する WHERE 句を使用して、対象テーブルで実行されます。 結果セットには、それらの要素で指定された列名のコンマ区切りリスト内の列が含まれています。
 
 #### <a name="xml-message"></a>XML メッセージ  
 ```
@@ -98,7 +98,7 @@ InsertResult 要素では、挿入された行の数が返されます。
 SQL アダプターによって実行します。 `SELECT COLUMN_list FROM TABLE_NAME WHERE WHERE_clause;`
 
 ### <a name="select-response"></a>応答を選択します。
-SELECT クエリによって生成される結果セット。
+SELECT クエリによって生成される結果セットです。
 
 #### <a name="xml-message"></a>XML メッセージ  
 ```
@@ -178,7 +178,7 @@ DeleteResult 要素では、削除された行の数が返されます。
  次の表は、メッセージのアクションで使用される、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]テーブルに対する基本的なテーブルの操作。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]操作の対象のテーブルを確認するメッセージのアクションで指定されたテーブル名を使用します。  
 
 
-|    演算    |                    メッセージのアクション                     |                                    例                                    |
+|    操作    |                    メッセージのアクション                     |                                    例                                    |
 |-----------------|-------------------------------------------------------|-------------------------------------------------------------------------------|
 |     Insert      |     [バージョン]/[SCHEMA]/Table/[TABLE_NAME]/挿入      |     http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert      |
 | 応答を挿入します。 | [VERSION]/[SCHEMA]/Table/[TABLE_NAME]/Insert/response | http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert/response |

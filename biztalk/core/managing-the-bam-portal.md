@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server で、BAM ポータルの管理 |Microsoft ドキュメント
+title: BizTalk Server で BAM ポータルの管理 |Microsoft Docs
 Description: インストールして、BizTalk Server で BAM ポータルの構成の概要
 ms.custom: ''
 ms.date: 08/15/2017
@@ -13,27 +13,27 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d7908c9c7ce8e4b731e0b88569e3dc3fb228a1d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a0448e435e7adcc84d30f31ded54534c248e8e69
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262570"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380155"
 ---
 # <a name="manage-the-bam-portal"></a>BAM ポータルを管理します。
 
 ## <a name="set-up-bam-portal"></a>BAM ポータルをセットアップします。
-管理者は、インストールされている [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を実行して BAM ポータルを設定します。 BizTalk Server 構成ツールを使用して、BAM を有効にするかどうかを指定したり、Web サービス アカウント、ポータルを表示できる Windows グループ、およびポータルをホストする Web サイトを指定します。 BAM ポータルを設定した後に BAM ポータルの構成を更新することが必要になった場合、構成ツールを使用して、ポータル ユーザー グループ、アプリケーション プール アカウント、管理 Web サービス ユーザーなどの構成設定を更新します。  
+管理者を実行して BAM ポータルの設定、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストールします。 BizTalk Server 構成ツールを使用して、BAM が有効になっているかどうかを指定して、ポータルを表示できる Windows グループと、ポータルをホストする Web サイトでは、Web サービスのアカウントを指定します。 BAM ポータルを設定すると、BAM ポータルの構成を更新するために必要になると、構成ツールを使用してポータル ユーザー グループ、アプリケーション プール アカウント、および管理 Web サービスのユーザーなどの構成設定を更新します。  
   
- BAM ポータルのインストールに関する詳細については、次を参照してください。 [BAM インストールおよび構成複数コンピュータ環境で](http://social.technet.microsoft.com/wiki/contents/articles/1888.install-and-configure-bam-business-activity-monitoring-in-a-multi-computer-environment.aspx)です。  
+ BAM ポータルのインストールの詳細については、次を参照してください。[複数コンピュータ環境での BAM の構成のインストールおよび](http://social.technet.microsoft.com/wiki/contents/articles/1888.install-and-configure-bam-business-activity-monitoring-in-a-multi-computer-environment.aspx)します。  
   
- BAM ポータルの構成の詳細については、次を参照してください。 [BizTalk Server の構成](../install-and-config-guides/configure-biztalk-server.md)です。
+ BAM ポータルを構成する方法の詳細については、次を参照してください。 [BizTalk Server の構成](../install-and-config-guides/configure-biztalk-server.md)します。
   
- BAM ポータルにはカスタマイズ可能な設定が数多くあり、これらの設定には webconfig.xml ファイルを変更することによってアクセスします。 これらの設定により、BAM ポータルのパフォーマンスおよび操作を制御できます。 このセクションの他の部分では、BAM ポータルの構成をカスタマイズする方法について説明します。  
+ BAM ポータルでは、webconfig.xml ファイルを変更することによってアクセスされる多くのカスタマイズ可能な設定があります。 これらの設定は、パフォーマンスと、BAM ポータルの操作を制御します。 このセクションの残りのこの部分では、BAM ポータル構成をカスタマイズする方法について説明します。  
   
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
   
--   [BAM ポータルの構成をカスタマイズします。](../core/customizing-the-bam-portal-configuration.md)  
+-   [BAM ポータルの構成のカスタマイズ](../core/customizing-the-bam-portal-configuration.md)  
   
 -   [NLB クラスターで機能する BAM ポータルを構成する方法](../core/how-to-configure-the-bam-portal-to-work-on-an-nlb-cluster.md)  
   

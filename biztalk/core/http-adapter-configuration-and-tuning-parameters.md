@@ -1,5 +1,5 @@
 ---
-title: HTTP アダプタの構成およびチューニング パラメータ |Microsoft ドキュメント
+title: HTTP アダプターの構成およびチューニング パラメータ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -23,39 +23,39 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5db4f4dc4403ddfbf677ac2729c00e2b1976db61
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aaae6d5cf3a5f810a8c8340a07d1a94fab974afe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257786"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383029"
 ---
-# <a name="http-adapter-configuration-and-tuning-parameters"></a>HTTP アダプタの構成およびチューニング パラメータ
-HTTP アダプタの構成およびチューニング パラメータの一部には、レジストリ キー エントリから、また BizTalk Server インストールのルート ディレクトリにある BTSNTSvc.exe.config 構成ファイルを変更することによってアクセスできます。  
+# <a name="http-adapter-configuration-and-tuning-parameters"></a>HTTP アダプターの構成およびチューニング パラメーター
+いくつかの構成およびチューニング パラメータは、HTTP アダプタと BizTalk Server のインストール ディレクトリのルートにある BTSNTSvc.exe.config ファイルの変更を使用してレジストリ キー エントリにアクセスできます。  
   
- **HTTP アダプタのパフォーマンスに影響するレジストリ設定**  
+ **HTTP アダプターのパフォーマンスに影響を与えるレジストリ設定**  
   
- 次の表は、HTTP アダプタのパフォーマンスに影響するレジストリ設定を示しています。 既定ではレジストリに HTTP アダプタのキーがないため、HTTP アダプタでは既定の設定が使用されることに注意してください。 既定の設定を変更する必要がある場合は、次に示すようにレジストリ内の場所にレジストリ キーを作成する必要があります。  
+ 次の表では、HTTP アダプタのパフォーマンスに影響するレジストリ設定について説明します。 既定でがない HTTP アダプタのキー レジストリでは、HTTP アダプター、既定の設定を使用するように注意してください。 を既定の設定を変更する必要がある場合は、レジストリで、次の場所では、次のレジストリ キーを作成する必要があります。  
   
--   **DisableChunkEncoding**、 **RequestQueueSize**、および**HttpReceiveThreadsPerCpu**で定義する必要があります**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc.3.0\HttpReceive**です。  
+-   **DisableChunkEncoding**、 **RequestQueueSize**、および**HttpReceiveThreadsPerCpu**で定義する必要があります**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc.3.0\HttpReceive**します。  
   
--   **HttpOutTimeoutInterval**、 **HttpOutInflightSize**、および**HttpOutCompleteSize**で定義する必要があります**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc {GUID}** 場所**GUID** HTTP 送信ハンドラのホストの id を指定します。  
+-   **HttpOutTimeoutInterval**、 **HttpOutInflightSize**、および**HttpOutCompleteSize**で定義する必要があります**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc {GUID}** 場所**GUID** HTTP 送信ハンドラのホストの ID です。  
   
-|キー名|型|既定値|説明|  
+|キー名|型|既定|説明|  
 |--------------|----------|-------------|-----------------|  
-|**DisableChunkEncoding**|DWORD|0|クライアントに応答を返すときに、HTTP 受信アダプタでチャンク エンコードを使用するかどうかを規制します。<br /><br /> HTTP 受信アダプタの応答にチャンク エンコードを使用しない場合、0 以外の値に設定します。<br /><br /> **最小値:** 0<br /><br /> **最大値:** 0 以外の値|  
-|**RequestQueueSize**|DWORD|256|HTTP 受信アダプタで一度に処理される同時実行要求の数を定義します。<br /><br /> **最小値:** 10<br /><br /> **最大値:** 2048|  
-|**HttpReceiveThreadsPerCpu**|DWORD|2|HTTP 受信アダプタに割り当てられている CPU ごとのスレッドの数を定義します。<br /><br /> **最小値:** 1<br /><br /> **最大値:** 10|  
-|**HttpOutTimeoutInterval**|DWORD|2000|タイムアウトする前に、HTTP 送信アダプタが待機する間隔を秒単位で定義します。<br /><br /> **最小値:** 500<br /><br /> **最大値:** 10000000|  
-|**HttpOutInflightSize**|DWORD|100|BizTalk Server の HTTP 送信アダプタのインスタンスによって処理される、同時実行 HTTP 要求の最大数です。<br /><br /> 待機時間の推奨値は 3 ~ 5 倍の間、 **maxconnection**構成ファイル エントリを次に説明します。<br /><br /> **最小値:** 1<br /><br /> **最大値:** 1024|  
-|**HttpOutCompleteSize**|DWORD|5|HTTP 送信アダプターから返されるバッチ メッセージのサイズを制御します。 バッファーがいっぱいでないと、未処理の応答がある場合、アダプターはバッチをコミットするまで 1 秒間待機します。  低待機時間シナリオでは、これは処理のメッセージ ボックスにすぐに応答メッセージを送信するアダプターを 1 に設定する必要があります。<br /><br /> **最小値:** 1<br /><br /> **最大値:** 1024|  
+|**DisableChunkEncoding**|DWORD|0|規制アダプターが、クライアントへの応答を送信するときに、チャンク エンコードを使用して、HTTP 受信かどうか。<br /><br /> HTTP 受信アダプタの応答にチャンク エンコードをオフに 0 以外の値に設定します。<br /><br /> **最小値:** 0<br /><br /> **最大値:** 0 以外の値|  
+|**RequestQueueSize**|DWORD|256|受信アダプターの処理を同時に、HTTP の同時要求の数を定義します。<br /><br /> **最小値:** 10<br /><br /> **最大値:** 2048|  
+|**HttpReceiveThreadsPerCpu**|DWORD|2|定義受信アダプター、HTTP に割り当てられている CPU あたりのスレッドの数。<br /><br /> **最小値:** 1<br /><br /> **最大値:** 10|  
+|**HttpOutTimeoutInterval**|DWORD|2000|HTTP 送信アダプターがタイムアウトになるまで待機する秒単位で間隔を定義します。<br /><br /> **最小値:** 500<br /><br /> **最大値:** 10000000|  
+|**HttpOutInflightSize**|DWORD|100|これは、BizTalk Server の HTTP 送信アダプタのインスタンスを処理する同時実行の HTTP 要求の最大数です。<br /><br /> 待機時間の推奨値が 3 ~ 5 倍の間は、 **maxconnection**構成ファイルのエントリ以下で説明します。<br /><br /> **最小値:** 1<br /><br /> **最大値:** 1024|  
+|**HttpOutCompleteSize**|DWORD|5|コントロールの HTTP から返されるメッセージのバッチ サイズは、アダプターを送信します。 バッファーがいっぱいでないと、未処理の応答がある場合、アダプターは、バッチがコミットされるまで 1 秒間待機します。  低待機時間シナリオは、これは処理のメッセージ ボックスにすぐに応答メッセージを送信するアダプターを 1 に設定する必要があります。<br /><br /> **最小値:** 1<br /><br /> **最大値:** 1024|  
   
- **特定の接続先サーバーに、HTTP 送信アダプターによって行われた同時接続数を制御するために構成ファイル エントリ**  
+ **特定の宛先サーバーに HTTP 送信アダプターによって行われる同時接続数を制御する構成ファイル エントリ**  
   
- BizTalk Server インストールのルート ディレクトリにある BTSNTSvc.exe.config ファイルにエントリを作成することで、HTTP アダプタから特定の接続先サーバーに開かれる同時接続の数を構成できます。  
+ HTTP アダプターが、特定の移行先サーバーに表示される同時接続数は、BizTalk Server のインストール ディレクトリのルートにある BTSNTSvc.exe.config ファイルにエントリを作成して構成できます。  
   
 > [!NOTE]
->  このプロパティは、HTTP アダプタと SOAP アダプタから同じ HTTP サーバーにメッセージを送信する場合に、両方のアダプタに適用されます。 "Maxconnnection"プロパティの既定値は 2、すべての Uri の"maxconnection"プロパティを設定できる最大値は 20 です。  
+>  このプロパティから同じ HTTP サーバーにメッセージを送信する場合、HTTP および SOAP の両方のアダプターに適用されます。 "Maxconnnection"プロパティの既定値は 2、すべての Uri の"maxconnection"プロパティを設定できる最大値は 20 です。  
   
  "最大接続数" プロパティの構成例を次に示します。  
   
@@ -71,4 +71,4 @@ HTTP アダプタの構成およびチューニング パラメータの一部�
 ```  
   
 ## <a name="see-also"></a>参照  
- [HTTP アダプタの構成](../core/configuring-the-http-adapter.md)
+ [HTTP アダプターの構成](../core/configuring-the-http-adapter.md)

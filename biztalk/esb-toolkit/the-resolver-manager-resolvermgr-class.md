@@ -1,5 +1,5 @@
 ---
-title: 競合回避モジュール マネージャー (ResolverMgr) クラス |Microsoft ドキュメント
+title: Resolver Manager (ResolverMgr) クラス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6621ad0c6b9edb5bf93950f9b9d05a7655f0e36d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 230a22fa771e0791a705448d2a37fa07563fc603
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294746"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399695"
 ---
-# <a name="the-resolver-manager-resolvermgr-class"></a>競合回避モジュール マネージャー (ResolverMgr) クラス
-変換およびルーティング サービスが使用するメッセージング、 **ResolverMgr**解決を実行するクラス。 ESB の動的変換と動的な配信エージェント使用しても、 **ResolverManager** ・ イン タイム (JIT) の解決を実行するクラス。  
+# <a name="the-resolver-manager-resolvermgr-class"></a>Resolver Manager (ResolverMgr) クラス
+変換およびルーティング サービスの使用のメッセージング、 **ResolverMgr**解決を実行するクラス。 ESB の動的な変換と動的に配信エージェントは使用も、 **ResolverManager** -イン タイム (JIT) の解決を実行するクラス。  
   
- ESB コア インストーラーがインストールおよび登録され、 **Microsoft.Practices.ESB.Resolver.dll**を持つアセンブリ、 **ResolverMgr**グローバル アセンブリ キャッシュ内のクラスです。  
+ ESB コア インストーラーがインストールおよび登録され、 **Microsoft.Practices.ESB.Resolver.dll**を持つアセンブリ、 **ResolverMgr**グローバル アセンブリ キャッシュ内のクラス。  
   
- このクラスは、エンドポイントやマップの動的な解決を実行する必要がある独自のコードで使用できます。 カスタムな解決方法を使用するには、このクラスを拡張することもできます。 ただし、クラスが既に必要な任意の別の解決方法のアルゴリズムに対応する必要があります任意のカスタム競合回避モジュール アセンブリが使用できる解決メカニズムをサポートすることに注意してください。  
+ このクラスは、エンドポイントやマップの動的な解決を実行する必要がある独自のコードで使用することができます。 カスタム解決方法を使用するには、このクラスを拡張することもできます。 ただし、クラスが既にする必要がある別の解決方法の任意のアルゴリズムに対応する必要が任意のカスタム競合回避モジュール アセンブリが使用できる解決メカニズムをサポートしていることに注意してください。  
   
  次のコード例を使用する方法を示しています、 **ResolverMgr**エンドポイントを解決するのにはクラスです。  
   
@@ -41,6 +41,6 @@ transportLocation = resolverDictionary.Item("Resolver.TransportLocation");
 transportType = resolverDictionary.Item("Resolver.TransportType");  
 ```  
   
- 通常、競合回避モジュールの接続文字列は、ルール ポリシー、カスタム アセンブリ、XPath ステートメントでは、Universal Description, Discovery, and Integration (UDDI) のラベルとサーバー名などの少なくとも 1 つの解決方法のプロパティ値を指定します。 最後に、具体的な競合回避モジュールからのカスタム ファクトに簡単に設定されている競合回避モジュールのファクトのコレクションをディクショナリ オブジェクトを返します。  
+ 通常、競合回避モジュールの接続文字列には、ルール ポリシー、カスタム アセンブリ、XPath ステートメントでは、Universal Description, Discovery, and Integration (UDDI) のラベルとサーバーの名前など、少なくとも 1 つの解決方法のプロパティ値を指定します。 最後に、カスタム ファクト具体的な競合回避モジュールを簡単に設定されている競合回避モジュールのファクトのコレクションを持つ dictionary オブジェクトを返します。  
   
- ESB の解決メカニズムのしくみの詳細については、次を参照してください。[動的解決の使用とルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)です。
+ ESB の解決メカニズムのしくみの詳細については、次を参照してください。[を使用して動的な解決とルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)します。

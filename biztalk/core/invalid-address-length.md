@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8da5e041ad861557817491695f0d7972a207864a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c23c8c20dba45957cb338b588e16013a01626b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008475"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381486"
 ---
 # <a name="invalid-address-length"></a>アドレスの長さが無効です
 ## <a name="details"></a>詳細  
@@ -33,10 +33,10 @@ ms.locfileid: "37008475"
 |  メッセージ テキスト   | 無効なアドレスの長さ。指定されたアドレスの長さは{0}文字制限は{1}文字 |
 
 ## <a name="explanation"></a>説明  
- WCF トランスポートの 255 文字という最大文字長を超えるアドレスが指定されました。 これは WCF ではなく BizTalk Server の制限です。  
+ WCF トランスポートの 255 文字の最大長を超えるアドレスを指定するとします。 これは、WCF ではなく、BizTalk Server によって課される制限です。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- 有効なアドレスを構成するには、次の手順を実行します。  
+ 有効なアドレスを構成するのにには、次の手順を使用します。  
 
 #### <a name="to-configure-a-valid-address"></a>有効なアドレスを構成するには  
 
@@ -44,7 +44,7 @@ ms.locfileid: "37008475"
 
 2. コンソール ルートで展開**BizTalk Server 管理**、展開**BizTalk グループ**、展開**アプリケーション**します。  
 
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
 
 4. トランスポート名を右クリックします。  
 
@@ -52,7 +52,7 @@ ms.locfileid: "37008475"
 
 6. ポート**型**一覧で、適切なポートを選択します。  
 
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
 
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブ。  
 

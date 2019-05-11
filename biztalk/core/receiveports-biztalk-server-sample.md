@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 06925777afa60ee6b11d42a17bac004665cfe7ec
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a338b0349329ab0f74dfb1ab3683b10502ed66d2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023920"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398094"
 ---
 # <a name="receiveports-biztalk-server-sample"></a>ReceivePorts (BizTalk Server サンプル)
 ReceivePorts サンプルが新たに作成する方法を使用して受信ポート、 **ExplorerOM**管理クラス。  
@@ -35,14 +35,14 @@ ReceivePorts サンプルが新たに作成する方法を使用して受信ポ�
 
 -   使用して、新しい追加の受信ポート、 **AddNewReceivePort**メソッド。  
 
--   受信ポートを列挙する。  
+-   受信ポートを列挙します。  
 
--   受信ポートを削除する。  
+-   受信ポートを削除しています。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
 
- \<*パスのサンプル*\>\Admin\ExplorerOM\ReceivePorts  
+ \<*Samples Path*\>\Admin\ExplorerOM\ReceivePorts  
 
  次の表は、このサンプルのファイルとその目的を示しています。  
 
@@ -56,7 +56,7 @@ ReceivePorts サンプルが新たに作成する方法を使用して受信ポ�
 
 #### <a name="to-build-this-sample"></a>このサンプルをビルドするには  
 
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル ReceivePorts.sln を開きます。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション ファイル ReceivePorts.sln を開きます。  
 
 2. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
 
@@ -64,9 +64,9 @@ ReceivePorts サンプルが新たに作成する方法を使用して受信ポ�
 
 1.  コマンド ウィンドウを開き、次のフォルダーに移動します。  
 
-     \<*パスのサンプル*\>\Admin\ExplorerOM\ReceivePorts\bin\Debug  
+     \<*Samples Path*\>\Admin\ExplorerOM\ReceivePorts\bin\Debug  
 
-2.  ReceivePorts.exe ファイルを実行します。 新しい受信ポートが作成され、ポートの列挙に表示されます。 列挙直後に受信ポートが削除されます。  
+2.  ReceivePorts.exe ファイルを実行します。 新しい受信ポートを作成し、ポートの列挙に表示する必要があります。 列挙体の後に受信ポートはすぐに削除します。  
 
 ## <a name="windows-powershell-script-example"></a>Windows PowerShell スクリプトの例  
  同じ機能を示す、次の Windows PowerShell スクリプトを使用できます、 **ExplorerOM**クラス。  
@@ -172,7 +172,7 @@ EnumerateReceivePorts
 
 ```  
 
- 次に、Windows PowerShell スクリプトを実行して新しい受信ポートを作成した場合の例を示します。  
+ 受信ポートの作成、新しい Windows PowerShell スクリプトを実行する例を次に示します。  
 
 ```  
 PS C:\> .\receiveports.ps1  

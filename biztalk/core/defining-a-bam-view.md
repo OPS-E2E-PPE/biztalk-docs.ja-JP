@@ -1,5 +1,5 @@
 ---
-title: BAM ビューの定義 |Microsoft ドキュメント
+title: BAM ビューの定義 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,34 +16,34 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12f6e7e150f9694dac44e63fd500439db3b1c99c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f3f778eb9cb135b415671d3c30bb63a75c0d02e2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238658"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390305"
 ---
 # <a name="defining-a-bam-view"></a>BAM ビューの定義
-ビジネス ユーザーが表示できるビジネス データを制限する場合は、 公開する情報の種類に応じてさまざまな BAM ビューを作成できます。  
+場合によってすべてのすべてのビジネス ユーザーにビジネス データを公開することはおたくないです。 さまざまな種類の情報を公開する別の BAM ビューを作成することができます。  
   
 > [!IMPORTANT]
->  エイリアス、期間、グループ、ディメンション、およびメジャーの名前は同じビューに表示されるため、すべて一意にする必要があります。  
+>  同じビューの一部になるので、すべてのエイリアス、期間、グループ、ディメンションとメジャーの名前が一意である必要があります。  
   
 > [!NOTE]
->  BAM ビューを定義するには、先に BAM アクティビティを少なくとも 1 つ作成しておく必要があります。 アクティビティの作成の詳細については、次を参照してください。[ビジネス アクティビティの定義方法](../core/how-to-define-a-business-activity.md)です。  
+>  BAM ビューを定義するには、必要があります以前に作成した BAM アクティビティを少なくとも 1 つ。 アクティビティの作成の詳細については、次を参照してください。[ビジネス アクティビティを定義する方法](../core/how-to-define-a-business-activity.md)します。  
   
 > [!NOTE]
->  BAM ビューは Excel ブックのワークシートとして表示されます。 1 つの BAM アクティビティにつき複数のビューを作成できます。 Excel のアプリケーション ウィンドウの下部にあるワークシートのタブで BAM ビューを選択して編集できます。  
+>  BAM ビューは、Excel ブックのワークシートとして表示されます。 BAM アクティビティの多くのビューを作成することができます。 Excel のアプリケーション ウィンドウの下部に、ワークシートのタブを使用して、編集用の BAM ビューを選択します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [Excel 用 BAM アドインを使用する方法](../core/how-to-use-the-bam-add-in-for-excel.md)  
   
--   [アイテムの表示の名前を変更する方法](../core/how-to-rename-view-items.md)  
+-   [アイテムの表示名の変更方法](../core/how-to-rename-view-items.md)  
   
 -   [期間を定義する方法](../core/how-to-define-durations.md)  
   
 -   [マイルス トーン グループを定義する方法](../core/how-to-define-milestone-groups.md)  
   
 ## <a name="see-also"></a>参照  
- [Excel でビジネス アクティビティとビューを定義します。](../core/defining-business-activities-and-views-in-excel.md)
+ [Excel でのビジネス アクティビティとビジネス ビューの定義](../core/defining-business-activities-and-views-in-excel.md)

@@ -1,5 +1,5 @@
 ---
-title: 解析エンジンのラップ |Microsoft ドキュメント
+title: 解析エンジンのラップ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 99d6960ba2f5f795a37bb336dab227f23eb12353
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7605c6d05e4e948a443025afe26429fd049bc469
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288594"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65313247"
 ---
 # <a name="wrapping-the-parsing-engine"></a>解析エンジンのラップ
-独自に作成することができます**XmlReader**するリーダーを埋め込み、によって返される、**解析**メソッドし、カスタマイズを提供します。  
+独自に作成することができます**XmlReader**するリーダーを埋め込み、によって返される、**解析**メソッドとカスタマイズを提供します。  
   
 ## <a name="example"></a>例  
   

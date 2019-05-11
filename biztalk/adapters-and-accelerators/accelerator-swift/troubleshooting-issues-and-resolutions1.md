@@ -1,5 +1,5 @@
 ---
-title: 'トラブルシューティング: 問題と Resolutions1 |Microsoft Docs'
+title: トラブルシューティング。問題と Resolutions1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a2b2f7cbbe2fb6f4ba67ce1268d9ebea4ff48e3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4940eedd99c2087bf8d3397025a5e7752b3e07e0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982923"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376926"
 ---
-# <a name="troubleshooting-issues-and-resolutions"></a>トラブルシューティング : 問題と解決策
+# <a name="troubleshooting-issues-and-resolutions"></a>トラブルシューティング。問題と解決策
 このトピックの「Microsoft の実行に関連する問題に対処[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]します。 各問題について、具体的な現象、考えられる原因、およびソリューションを説明します。  
   
  問題と解決策は、次の領域に分類されます。  

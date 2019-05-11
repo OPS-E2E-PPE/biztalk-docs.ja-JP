@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95776b7b03cc1b6bca08622d126153cb22efc317
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: da4c329b734d2e49a8aec7f755954b1647817f9b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295767"
 ---
 # <a name="troubleshooting-problems-with-msdtc"></a>MSDTC を使用した問題のトラブルシューティング
 多くの BizTalk Server ランタイム操作では、トランザクション上でランタイム操作の一貫性を維持するために、Microsoft 分散トランザクション コーディネーター (MSDTC) のサポートが必要です。 MSDTC のトランザクション サポートを使用できないと、それに関連付けられた BizTalk Server ランタイム操作を続行できません。 MSDTC トランザクション サポートが正しく構成されていない場合に一般的に影響を受ける BizTalk のコンポーネントには、シングル サインオン サービス、BizTalk ホスト インスタンス、および BizTalk Server に接続されているすべての SQL Server のインスタンスが含まれますが、これに限定されません。 このセクションには、MSDTC に関連するエラーと、MSDTC の問題を診断および解決するために従う手順について説明する情報が含まれています。  
@@ -29,13 +29,13 @@ ms.locfileid: "36987723"
   
 - "A Microsoft Distributed Transaction Coordinator problem prevented connection to the Configuration database. The transaction has already been implicitly or explicitly committed or aborted".  
   
-- "Error Code: 0x8004d00a, New transaction cannot enlist in the specified transaction coordinator".  
+- "エラー コード。0x8004d00a、新しいトランザクションに参加できません the specified transaction coordinator"。  
   
 - "構成ストアからの受信場所 'MySample ReceiveLocation' に対して、トランスポートの種類のデータを取得できませんでした。 プライマリ SSO サーバー 'MyServer' が失敗しました。 The RPC server is unavailable."  
   
-- "Error Code: 0x8004d025, The partner transaction manager has disabled its support for remote/network transactions".  
+- "エラー コード。0x8004d025, the partner transaction manager が無効になっているリモート/ネットワーク トランザクションのサポート"。  
   
-- "Error Code: 0xc0002a24, Could not import a DTC transaction. Please check that MSDTC is configured correctly for remote operation."  
+- "エラー コード。0xc0002a24、DTC トランザクションをインポートできませんでした。 Please check that MSDTC is configured correctly for remote operation."  
   
 - "0x8004d01c  
   
@@ -114,7 +114,7 @@ ms.locfileid: "36987723"
    NetBIOS 名前解決がいずれかの方向で失敗するか、逆引き名前参照が失敗する場合、DNS サーバー、NetBIOS ネーム サーバー、HOSTS ファイル、または LMHOSTS ファイルに適切なエントリを作成して問題を解決します。  
   
 > [!NOTE]
->  コンピューターで使用される名前解決の方法は、コンピューターの NetBIOS ノードの型によって異なります。 NetBIOS ノードの種類の詳細については、[NetBIOS 名前解決](http://go.microsoft.com/fwlink/?LinkId=201638)を参照してください。  
+>  コンピューターで使用される名前解決の方法は、コンピューターの NetBIOS ノードの型によって異なります。 NetBIOS ノードの種類の詳細については、次を参照してください。 [NetBIOS 名前解決](http://go.microsoft.com/fwlink/?LinkId=201638)します。  
   
 ## <a name="ensure-that-a-firewall-between-the-biztalk-server-and-remote-servers-is-not-blocking-ports-required-for-rpc-dynamic-port-allocation"></a>BizTalk Server とリモート サーバー間のファイアウォールによって、RPC 動的ポート割り当てに必要なポートがブロックされていないことを確認する  
  ネットワーク経由の MSDTC 機能は、ネットワーク経由の RPC 機能に依存します。 ファイアウォールを介した RPC 機能では、RPC の動的ポート割り当てに対応するために特定のポートが開かれていることが必要です。 ファイアウォールが BizTalk Server とリモート サーバーの間にある場合は、次の手順では、[ファイアウォールで動作する RPC 動的ポート割り当てを構成する方法](http://go.microsoft.com/fwlink/?LinkId=66831)RPC 動的ポート割り当てに対応するためにします。  
@@ -255,9 +255,9 @@ ms.locfileid: "36987723"
     -   分散トランザクション コーディネーター サービスが停止後に「 **msdtc を開始する net**キーを押します **」と入力**します。  
   
 ## <a name="use-dtctester-or-dtcping-to-verify-msdtc-functionality-over-the-network"></a>DTCTester または DTCPing を使用して、ネットワーク上で MSDTC 機能を確認する  
- 2 台のコンピューターのうちの 1 台に SQL Server がインストールされている場合は、DTCTester ユーティリティを使用してそれらのコンピューター間のトランザクション サポートを確認します。 DTCTester ユーティリティでは、ODBC を使用して SQL Server データベースのトランザクション サポートを確認します。 DTCTester の詳細については、[DTCTester ツールの使用方法](http://go.microsoft.com/fwlink/?LinkId=66232)を参照してください。  
+ 2 台のコンピューターのうちの 1 台に SQL Server がインストールされている場合は、DTCTester ユーティリティを使用してそれらのコンピューター間のトランザクション サポートを確認します。 DTCTester ユーティリティでは、ODBC を使用して SQL Server データベースのトランザクション サポートを確認します。 DTCTester の詳細については、次を参照してください。 [DTCTester ツールの使用方法](http://go.microsoft.com/fwlink/?LinkId=66232)します。  
   
- 2 台のコンピューターのどちらにも SQL Server がインストールされていない場合は、DTCPing を使用してそれらのコンピューター間のトランザクション サポートを確認します。 DTCPing ツールは、クライアント コンピューターとサーバー コンピューターの両方で実行する必要があります。いずれのコンピューターにも SQL Server がインストールされていない場合は、DTCTester ユーティリティの適切な代替手段になります。 DTCPing の詳細については、[MS DTC ファイアウォールの問題のトラブルシューティングを行う方法](http://go.microsoft.com/fwlink/?LinkId=61915)を参照してください。  
+ 2 台のコンピューターのどちらにも SQL Server がインストールされていない場合は、DTCPing を使用してそれらのコンピューター間のトランザクション サポートを確認します。 DTCPing ツールは、クライアント コンピューターとサーバー コンピューターの両方で実行する必要があります。いずれのコンピューターにも SQL Server がインストールされていない場合は、DTCTester ユーティリティの適切な代替手段になります。 DTCPing の詳細については、次を参照してください。 [MS DTC ファイアウォールの問題のトラブルシューティングを行う方法](http://go.microsoft.com/fwlink/?LinkId=61915)します。  
   
 > [!IMPORTANT]
 >  DTCPing には、警告が返された場合を"警告: テストの両方のコンピューターの CID 値が同じ"し、セクションの手順に従います**MSDTC に一意の CID 値が割り当てられていることを確認**対応の間で MSDTC が正しく機能するためにテスト マシン。  
@@ -270,7 +270,7 @@ ms.locfileid: "36987723"
 ## <a name="error-new-transaction-cannot-enlist-in-the-specified-transaction-coordinator-0x8004d00a-occurs-if-the-msdtc-connection-between-a-client-computer-and-a-server-computer-is-closed"></a>"New transaction cannot enlist in the specified transaction coordinator (0x8004d00a)" というエラーの発生 (クライアント コンピューターとサーバー コンピューターの間の MSDTC 接続が閉じられた場合)  
  特定のシナリオでは、クライアントとサーバー間の既存の MSDTC 接続が閉じられると、後続のこの接続を使用すると、次のエラー メッセージ。  
 新しいトランザクションが、指定されたトランザクション コーディネーター (0x8004d00a) に参加できませんでした。  
-詳細については、[MS DTC でトランザクションを開始しようとすると、エラー メッセージ:"新しい transaction cannot enlist in the specified transaction coordinator"](http://support.microsoft.com/kb/922430)を参照してください。  
+詳細については、次を参照してください。 [MS DTC でトランザクションを開始しようとすると、エラー メッセージ。"新しい transaction cannot enlist in the specified transaction coordinator"](http://support.microsoft.com/kb/922430)します。  
   
 ## <a name="consider-reinstalling-the-distributed-transaction-coordinator-service-if-other-troubleshooting-steps-are-not-successful"></a>その他のトラブルシューティングの手順が正常に実行されない場合は、分散トランザクション コーディネーター サービスの再インストールを検討してください。  
  MSDTC を使用したトラブルシューティングで問題が解決されなかった場合は、MSDTC のアンインストールおよび再インストールを検討してください。 MSDTC のアンインストールおよび再インストールを行うには、次の手順に従います。  

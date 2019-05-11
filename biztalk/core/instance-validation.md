@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f4e4901d11bda5fb6633c00dd72899ee1b72db4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a76ae6dac1e095ac68c93477a3f3eafcfc170bff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012875"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382102"
 ---
 # <a name="instance-validation"></a>インスタンスの検証
 BizTalk エディターを起動、 **IInstanceValidator.ValidateInstance**メソッドの次の条件が満たされたときに、拡張機能。  

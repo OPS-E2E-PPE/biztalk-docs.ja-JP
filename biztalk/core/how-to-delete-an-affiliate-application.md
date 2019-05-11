@@ -16,18 +16,18 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97315d21e3793ec6a282deb5f8cdd69d79ab7491
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b24dc6a17f6bbe30af7354b88be822cf7dcb7c08
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003323"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338624"
 ---
 # <a name="how-to-delete-an-affiliate-application"></a>関連アプリケーションを削除する方法
-MMC スナップインまたはコマンド ラインを使用して、指定した関連アプリケーションを SSO データベースから削除することができます。  
+MMC スナップインまたはコマンドラインを使用すると、指定された関連アプリケーションを SSO データベースから削除します。  
   
 > [!IMPORTANT]
->  関連アプリケーションを削除すると、そのアプリケーションに関連付けられたすべてのマッピングが自動的に削除されます。  
+>  関連アプリケーションを削除すると、SSO システムは自動的に関連付けられているすべてのマッピングを削除します。  
   
 > [!IMPORTANT]
 >  この作業を実行するには、SSO 管理者または SSO 関連管理者である必要があります。  
@@ -40,7 +40,7 @@ MMC スナップインまたはコマンド ラインを使用して、指定し
   
 3.  関連アプリケーションを右クリックし、をクリックし、**削除**します。  
   
-### <a name="to-delete-an-affiliate-application-using-the-command-line"></a>コマンド ラインを使用して関連アプリケーションを削除するには  
+### <a name="to-delete-an-affiliate-application-using-the-command-line"></a>コマンドラインを使用して関連アプリケーションを削除するには  
   
 1. **開始** メニューのをクリックして**実行**、し、入力**cmd**します。  
   

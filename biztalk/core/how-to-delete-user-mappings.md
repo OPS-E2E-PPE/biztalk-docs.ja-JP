@@ -15,12 +15,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 034f587d8c7d87f5fa6aa7e5e33ca4ef147d9f9b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b9a61a35059ff313506aca09898f489819f5064f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385327"
 ---
 # <a name="how-to-delete-user-mappings"></a>ユーザー マッピングを削除する方法
 以下のコマンドを使用して、XML ファイルで指定された 1 つ以上のユーザー マッピングを削除できます。 XML ファイルの例を次に示します。  
@@ -44,7 +44,7 @@ ms.locfileid: "37014387"
   
  ユーザーが、アプリケーション ユーザー アカウントのメンバーでないか Active Directory に登録されていない場合、このコマンドを使用してユーザー マッピングを SSO データベースから削除します。  
   
- ユーザー アカウントを変更する場合は、このコマンドを使用して、古いユーザー マッピングを削除してから、新しいユーザー アカウントのマッピングを作成する必要があります。 マッピングを作成する詳細については、[ユーザー マッピングを作成する方法](../core/how-to-create-user-mappings.md)を参照してください。  
+ ユーザー アカウントを変更する場合は、このコマンドを使用して、古いユーザー マッピングを削除してから、新しいユーザー アカウントのマッピングを作成する必要があります。 マッピングを作成する詳細については、次を参照してください。[ユーザー マッピングを作成する方法](../core/how-to-create-user-mappings.md)します。  
   
 ### <a name="to-delete-user-mappings-using-the-administration-utility"></a>管理ユーティリティを使用してユーザー マッピングを削除するには  
   

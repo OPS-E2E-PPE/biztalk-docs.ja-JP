@@ -17,19 +17,19 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 067e70ec9bff40e0b7dcee6152791f194a104218
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b090f8b21c58b6e73435c880effd6fb6597b8371
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383883"
 ---
-# <a name="how-to-set-the-duration-on-an-rta-window"></a>特定の RTA 時間帯の期間を設定する方法
+# <a name="how-to-set-the-duration-on-an-rta-window"></a>RTA ウィンドウの期間を設定する方法
 管理者を使用して、**セット rtawindow プロパティ**コマンドを指定されたリアルタイム集計 (RTA) の期間を設定します。  
   
 ### <a name="to-set-the-duration-on-an-aggregation"></a>集計の期間を設定するには  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
 2. コマンド プロンプトで「[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking」と入力して、追跡フォルダーに移動し、 **Enter**キーを押します。  
   

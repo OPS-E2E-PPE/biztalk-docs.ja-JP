@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b843bde8905d8b6803dda56a6370f70c934a610
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7a6976cbad050fee723476106821abb5b44c3405
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379760"
 ---
 # <a name="add-alert-subscription-and-edit-subscription-pages"></a>アラート配信登録を追加し、サブスクリプション ページの編集
 アラート配信登録の追加とサブスクリプションの編集ページに似ています。 サブスクリプションの編集 ページでサブスクライバー ID (ポータルの現在のユーザーの Microsoft Windows アカウント) を示しています、ボタンのさまざまなセットが異なります。 図 1 は、アラート配信登録の追加とサブスクリプションの編集ページを示します。  

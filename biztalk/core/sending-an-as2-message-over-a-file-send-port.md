@@ -1,5 +1,5 @@
 ---
-title: FILE 送信ポート経由で AS2 メッセージの送信 |Microsoft ドキュメント
+title: ファイル送信ポート経由で AS2 メッセージの送信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 555066cb81eabe7328734e73fd9598fbd2cd418a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 184a6a1b6a0111dffaf9096e23e60945d8310ecf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270730"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399064"
 ---
-# <a name="sending-an-as2-message-over-a-file-send-port"></a>FILE 送信ポートを使用した AS2 メッセージの送信
+# <a name="sending-an-as2-message-over-a-file-send-port"></a>ファイル送信ポート経由で AS2 メッセージの送信
 通常、AS2 メッセージは HTTP アダプターを介して送信されます。 ただし、カスタム コンポーネントを作成する場合は、AS2 メッセージを FILE アダプター経由で送信できます。 このトピックでは、このようなソリューションのしくみについて説明し、ソリューションのサンプル コードを示します。  
   
  AS2 メッセージが HTTP 経由で送信されると、送信パイプラインの AS2 エンコーダーは、メッセージの送信に必要な HTTP (および AS2) ヘッダーを `HTTP.UserHttpHeaders` コンテキスト プロパティに挿入します。 これらのヘッダーは、既存の `HTTP.UserHttpHeaders` コンテキスト プロパティ、別のコンテキスト プロパティ、またはアグリーメント プロパティから (この優先順位で) 取得されます。 送信ポートの HTTP アダプターは、これらのヘッダーをメッセージに書き込み、HTTP 経由でメッセージを送信します。  
@@ -98,4 +98,4 @@ Message_2(HTTP.UserHttpHeaders)="Message1-Id: xyz\r\nMyHeader: MyValue";
 ```  
   
 ## <a name="see-also"></a>参照  
- [開発と BizTalk Server AS2 ソリューションの構成](../core/developing-and-configuring-biztalk-server-as2-solutions.md)
+ [BizTalk Server AS2 ソリューションの開発と構成](../core/developing-and-configuring-biztalk-server-as2-solutions.md)

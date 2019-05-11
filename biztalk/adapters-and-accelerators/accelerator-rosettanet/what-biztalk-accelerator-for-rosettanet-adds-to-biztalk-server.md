@@ -15,17 +15,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c73d8d8d75b704973cbd0998256dc5c324bee289
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 413f7a041be90e6f0154f2716502818315b833f7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379107"
 ---
 # <a name="what-biztalk-accelerator-for-rosettanet-adds-to-biztalk-server"></a>BizTalk Server に BizTalk Accelerator for RosettaNet の追加
-Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RosettaNet 準拠の統合システムに Microsoft BizTalk Server の統合システムを構築します。 これにより、RosettaNet 準拠のソリューションを実装するために必要なものがすべて追加されます。  
+Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RosettaNet 準拠の統合システムに Microsoft BizTalk Server の統合システムを構築します。 RosettaNet 準拠のソリューションを実装するためにする必要がありますすべてを追加します。  
   
-インストールする[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]BizTalk Server 上と[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]BizTalk Server エンジンのコア機能が追加されます。 機能、ツール、およびユーティリティが、BizTalk Server の機能、ツール、およびユーティリティに追加されます。 さらに、アプリケーション プログラミング インターフェイス (API) が BizTalk Server ソフトウェア開発キット (SDK) の API に追加されます。  
+インストールする[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]BizTalk Server 上と[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]BizTalk Server エンジンのコア機能が追加されます。 BizTalk Server が提供するもの、機能、ツール、およびユーティリティを追加します。 また、BizTalk Server ソフトウェア開発キット (SDK) が提供するアプリケーション プログラミング インターフェイス (Api) を追加します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

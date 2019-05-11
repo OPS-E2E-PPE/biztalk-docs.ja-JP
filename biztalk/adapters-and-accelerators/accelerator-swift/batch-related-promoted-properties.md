@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a27d10fd4fc4224d54db166ecdf5f774192cb10a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ea49f40097df45bac158150cd22d124b43831bcb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378942"
 ---
 # <a name="batch-related-promoted-properties"></a>バッチに関連する昇格させたプロパティ
 逆アセンブラーが特別な Microsoft とメッセージをマーク SWIFT 逆アセンブラーがメッセージ ボックス データベースに受信のバッチから送信されたメッセージを発行したとき[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]バッチ メッセージに固有のプロパティを昇格します。 これらのプロパティは、どのバッチがどのような序数の位置から、メッセージの送信元など内にあったに A4SWIFT の部分が保持すると、バッチなどのコンテキスト情報を提供します。  
@@ -37,7 +37,7 @@ ms.locfileid: "37000683"
   
 - **A4SWIFT_PosInBatch**  
   
-  これらおよびその他の昇格させたプロパティについては、[a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)を参照してください。  
+  これらおよびその他の昇格させたプロパティについては、次を参照してください。 [a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)します。  
   
 ## <a name="failures-during-batch-processing"></a>バッチ処理中にエラー  
  SWIFT 逆アセンブラーがメッセージのエラー (解析または検証) を検出した、バッチ処理中に場合 (**受信バッチ解除処理**設定**True**)、として、その動作がバッチ処理の構成によって異なります次に示します。  

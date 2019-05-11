@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36b79e7bbd5d070fe9be9f11d5c3b609fe1ccf6e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c1cca51b10386f27066d2839817c6fbfef9db5d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009427"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401337"
 ---
 # <a name="apply-iis-configuration-settings"></a>IIS 構成設定を適用します。
 既定では、SOAP、HTTP、HTTP ベースで WCF アダプター (および一般に .NET) を開きます. 2 つの同時 HTTP 接続各 BizTalk ホスト インスタンスからの特定の移行先サーバーに などがある場合、SOAP 送信ポートを送信するメッセージを**<http://www.contoso.com/SomeWebService.asmx>**、各ホスト インスタンスのそれぞれで実行されている既定で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]への 2 つの同時 HTTP 接続を開く<strong>www.contoso.com</strong>、送信する必要があるメッセージの数に関係なく。  
@@ -37,7 +37,7 @@ ms.locfileid: "37009427"
   
  IIS 7.0 統合モードでは、maxWorkerThreads と maxIoThreads パラメーター、machine.config ファイルの"processModel"セクションでは、本質的に、要求の実行の数を制御するのには使用されませんがでも CLR スレッド プールのサイズの制御に使用されます。ASP.NET によって使用されます。 ときに、machine.config の"processModel"セクションが"autoConfig = true"(既定の設定では、) アプリケーション プールを論理 CPU あたりの最大 100 個のワーカー スレッド (MaxWorkerThreads) この付与されます。 したがって 2 つのデュアル コア Cpu で共通の汎用的なサーバーは 400 MaxWorkerThreads になります。 要件の高いアプリケーションを除くすべてのための十分な場合があります。  
   
- IIS 7.0 および 6.0 で ASP.NET のスレッドの使用量を構成する方法の詳細については、[ASP.NET IIS 7.0 および 6.0 のスレッドの使用状況に関する Thomas Marquardt のブログ](http://go.microsoft.com/fwlink/?LinkId=157518)(http://go.microsoft.com/fwlink/?LinkId=157518)を参照してください。  
+ IIS 7.0 および 6.0 で ASP.NET のスレッドの使用量を構成する方法の詳細については、次を参照してください。 [ASP.NET IIS 7.0 および 6.0 のスレッドの使用状況に関する Thomas Marquardt のブログ](http://go.microsoft.com/fwlink/?LinkId=157518)(http://go.microsoft.com/fwlink/?LinkId=157518)します。  
   
 ## <a name="log-only-essential-information-or-completely-disable-iis-logging"></a>重要な情報のみを記録または IIS のログ記録を完全に無効にします。  
  IIS ログを最小化または運用環境でも無効にする必要があります。 ログ記録を無効にするには、これらの手順に従います。  
@@ -78,7 +78,7 @@ ms.locfileid: "37009427"
 >  このプロパティは、サーバー レベルでのみ適用できる、このプロパティの変更は、サーバー上で実行されるすべての Web サイトに影響します。  
   
 > [!NOTE]  
->  ASP**スレッドあたりプロセッサ数の上限**プロパティを IIS 7.0、IIS 6.0 の置換**ASPProcessorThreadMax** ASP メタベースの設定。 IIS 6.0 ASPProcessorThreadMax ASP メタベースの設定については、[ASP メタベースの設定のチューニング](http://go.microsoft.com/fwlink/?LinkId=158834)(http://go.microsoft.com/fwlink/?LinkId=158834) msdn を参照してください。  
+>  ASP**スレッドあたりプロセッサ数の上限**プロパティを IIS 7.0、IIS 6.0 の置換**ASPProcessorThreadMax** ASP メタベースの設定。 IIS 6.0 ASPProcessorThreadMax ASP メタベースの設定については、次を参照してください。 [ASP メタベースの設定のチューニング](http://go.microsoft.com/fwlink/?LinkId=158834)(http://go.microsoft.com/fwlink/?LinkId=158834) msdn です。  
   
 ## <a name="tune-the-value-of-the-asp-queue-length-property"></a>ASP のキューの長さのプロパティの値を調整します。  
  このプロパティのチューニングの目的では、ASP 要求のキューがいっぱいになったとき、サーバーで HTTP 503 (サーバーがビジー状態です) エラーをクライアントに送信する頻度を最小限に抑えながら、良好な応答時間を確認します。 ASP のキューの長さのプロパティの値が小さすぎる場合、サーバーはより高い頻度で HTTP 503 エラーを送信します。 ASP のキューの長さのプロパティの値が高すぎる場合、サーバーが応答していないことと実際の要求がキューで待機しているユーザーが感じる可能性があります。 高トラフィックの期間中に、キューを視聴するには、web 要求の山と谷のパターンを識別する必要があります。 ピーク時の値をメモし、ピーク時の値のすぐ上の ASP キューの長さのプロパティの値を設定します。 キューを使用して短期的な急増を処理、応答時間、ことを確認し、維持、予期しないスパイクが発生したときにオーバー ロードを回避するためにシステムを調整します。 ASP キューの長さのプロパティを調整するためのデータがない場合、適切な開始点は、スレッドの合計にキューの 1 対 1 の比率を設定するになります。 たとえば、4 つのプロセッサを使用して ASP スレッドごとのプロセッサ制限プロパティを 25 に設定されている場合 (4 * 25 = 100 スレッド)、ASP キューの長さのプロパティを 100 に設定し、そこから調整します。  
@@ -97,13 +97,13 @@ ms.locfileid: "37009427"
 >  このプロパティは、サーバー レベルでのみ適用できる、このプロパティの変更は、サーバー上で実行されるすべての Web サイトに影響します。  
   
 > [!NOTE]  
->  ASP**キューの長さ**プロパティを IIS 7.0、IIS 6.0 の置換**AspRequestQueueMax** ASP メタベースの設定。 IIS 6.0 AspRequestQueueMax ASP メタベースの設定については、[ASP メタベースの設定のチューニング](http://go.microsoft.com/fwlink/?LinkId=158834)(http://go.microsoft.com/fwlink/?LinkId=158834) msdn を参照してください。  
+>  ASP**キューの長さ**プロパティを IIS 7.0、IIS 6.0 の置換**AspRequestQueueMax** ASP メタベースの設定。 IIS 6.0 AspRequestQueueMax ASP メタベースの設定については、次を参照してください。 [ASP メタベースの設定のチューニング](http://go.microsoft.com/fwlink/?LinkId=158834)(http://go.microsoft.com/fwlink/?LinkId=158834) msdn です。  
   
 ## <a name="tune-the-maxpoolthreads-registry-entry"></a>MaxPoolThreads のレジストリ エントリを調整します。  
  この設定では、プロセッサごとに作成するプールのスレッドの数を指定します。 プールのスレッドでは、ネットワーク要求と受信要求の処理をご覧ください。 MaxPoolThreads 数では ISAPI アプリケーションで使用されるスレッドは含まれません。 一般に、プロセッサごとに 20 個を超えるスレッドを作成しないでください。 MaxPoolThreads では、既定値は 4 の HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\InetInfo\Parameters\ にある REG_DWORD レジストリ エントリです。  
   
 ## <a name="disable-wcf-services-tracing"></a>WCF サービスのトレースを無効にします。  
- WCF サービスの運用環境でのトレースを無効にするには、構成エディター ツール (SvcConfigEditor.exe) を使用します。 構成エディター ツールの詳細については、[構成エディター ツール (SvcConfigEditor.exe)](http://go.microsoft.com/fwlink/?LinkID=127070) (http://go.microsoft.com/fwlink/?LinkID=127070)を参照してください。  
+ WCF サービスの運用環境でのトレースを無効にするには、構成エディター ツール (SvcConfigEditor.exe) を使用します。 構成エディター ツールの詳細については、次を参照してください。[構成エディター ツール (SvcConfigEditor.exe)](http://go.microsoft.com/fwlink/?LinkID=127070) (http://go.microsoft.com/fwlink/?LinkID=127070)します。  
   
 ## <a name="see-also"></a>参照  
- [チェックリスト: BizTalk Server の構成](../technical-guides/checklist-configuring-biztalk-server.md)
+ [チェックリスト:BizTalk Server の構成](../technical-guides/checklist-configuring-biztalk-server.md)

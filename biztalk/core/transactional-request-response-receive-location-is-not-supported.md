@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ddcc173a751fb104e86047f3f2e59be8524f7ab9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 37cea795e097596862e14f64b825696511ffbe6b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022728"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399199"
 ---
 # <a name="transactional-request-response-receive-location-is-not-supported"></a>トランザクションの要求 - 応答の受信場所がサポートされていません
 ## <a name="details"></a>詳細  
@@ -30,21 +30,21 @@ ms.locfileid: "37022728"
 |  イベント ソース   |                                         0                                          |
 |    コンポーネント    |                                         0                                          |
 |  シンボル名  |                                         0                                          |
-|  メッセージ テキスト   |         トランザクションの要求-応答の受信場所がサポートされていません。          |
+|  メッセージ テキスト   |         トランザクションの要求-応答の受信場所はサポートされていません。          |
 
 ## <a name="explanation"></a>説明  
- このエラーは、WCF の要求-応答の受信場所について有効になるようにトランザクションが設定されたことを示します。 要求-応答の受信場所はメッセージ ボックス データベースのため、BizTalk ではトランザクションはサポートされていません。  
+ このエラーは、WCF 要求-応答の受信場所用に有効にするトランザクションが設定されたことを示します。 トランザクションは、要求-応答の受信、メッセージ ボックス データベースのための場所の BizTalk ではサポートされていません。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- 標準の WCF アダプターの場合、要求-応答の受信場所を構成するコードを開きます。 いることを確認、 **EnableTransaction**用の XML データ内の要素、 **TransportTypeData**のプロパティ、 **ITransportInfo**に設定されているインターフェイス**False**.  
+ 標準の WCF アダプターの要求-応答を構成するコードに移動して受信場所を使用します。 いることを確認、 **EnableTransaction**用の XML データ内の要素、 **TransportTypeData**のプロパティ、 **ITransportInfo**に設定されているインターフェイス**False**.  
 
- WCF-Custom アダプターの場合  
+ Wcf-custom アダプター。  
 
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリック**BizTalk Server 管理**します。  
 
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
 
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
 
 4. トランスポート名を右クリックします。  
 
@@ -52,7 +52,7 @@ ms.locfileid: "37022728"
 
 6. ポート**型**一覧で、適切なポートを選択します。  
 
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
 
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブ。  
 

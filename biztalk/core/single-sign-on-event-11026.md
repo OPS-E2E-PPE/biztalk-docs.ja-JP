@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11026 |Microsoft Docs'
+title: シングル サインオン:イベント 11026 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 452ccc24174a1e32a133c0ccc6c7a0b5f09c530f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9443afe9fd9101d5ede8e5e05adfc6f65d877c90
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379980"
 ---
-# <a name="single-sign-on-event-11026"></a>シングル サインオン: イベント 11026
+# <a name="single-sign-on-event-11026"></a>シングル サインオン:イベント 11026
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                                                         |
@@ -30,10 +30,10 @@ ms.locfileid: "37013491"
 |  イベント ソース   |                                                                                                                                         ENTSSO                                                                                                                                          |
 |    コンポーネント    |                                                                                                                                           なし                                                                                                                                           |
 |  シンボル名  |                                                                                                                             SSO_WARN_EXISTING_GROUP_MAPPING                                                                                                                             |
-|  メッセージ テキスト   | 既存のマッピングとの競合があるため、新しいグループ マッピングを作成できませんでした。 既存のマッピングを削除してから、再度実行してください。%r<br /><br /> 既存のマッピング: % 1 %r<br /><br /> 新しいマッピング: % 2 %r<br /><br /> 外部アカウント: % 3 %r<br /><br /> アプリケーション名: %4 |
+|  メッセージ テキスト   | 既存のマッピングとの競合があるために、新しいグループ マッピングを作成できませんでした。 既存のマッピングを削除してやり直してください again.%r<br /><br /> 既存のマッピング: % 1 %r<br /><br /> 新しいマッピング: % 2 %r<br /><br /> 外部アカウント: % 3 %r<br /><br /> アプリケーション名: %4 |
   
 ## <a name="explanation"></a>説明  
- 最も可能性が高い原因は、システムが古いバージョンのエンタープライズ シングル サインオンと古いグループ アプリケーションを使用していることです。  
+ 最も一般的な原因は、システムがエンタープライズ シングル サインオン、および古いグループ アプリケーションの古いバージョンを使用しています。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 警告で指摘されているように、マッピングを削除して作成しなおします。 これが失敗する場合は、より新しいバージョンのエンタープライズ シングル サインオンにアップグレードすることが必要な可能性があります。
+ 削除し、警告で指摘されているように、マッピングを再作成します。 これに失敗した場合は、エンタープライズ シングル サインオンのより新しいバージョンにアップグレードする必要があります。

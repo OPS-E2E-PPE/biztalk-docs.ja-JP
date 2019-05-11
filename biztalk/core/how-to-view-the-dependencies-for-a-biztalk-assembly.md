@@ -19,15 +19,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b02a773ff51c35de2505336137dfa6c4c11c0825
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 592d85210fc08835229cea3990c150680aed56bc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001219"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383123"
 ---
 # <a name="how-to-view-the-dependencies-for-a-biztalk-assembly"></a>BizTalk アセンブリの依存関係を表示する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、BizTalk アセンブリに依存関係を持つアイテムの一覧を表示する方法について説明します。 依存関係とアプリケーションの配置への影響についての背景については、[依存関係とアプリケーションの展開](../core/dependencies-and-application-deployment.md)を参照してください。  
+このトピックでは、BizTalk Server 管理コンソールを使用して、BizTalk アセンブリに依存関係を持つアイテムの一覧を表示する方法について説明します。 依存関係とアプリケーションの配置への影響についての背景については、次を参照してください。[依存関係とアプリケーションの展開](../core/dependencies-and-application-deployment.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループまたは BizTalk Operators グループのメンバー アカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

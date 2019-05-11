@@ -16,17 +16,17 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15c4f9e63b1b41592cdda3dd984e85f20373fd2f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5e5c75003998733b7dc7674115597829f113cac9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386945"
 ---
 # <a name="how-to-configure-a-soap-receive-handler"></a>SOAP 受信ハンドラを構成する方法
-BizTalk Server 管理コンソールを使用して、SOAP 受信ハンドラの設定を構成できます。 BizTalk Server 管理コンソールを使用してアダプターを構成する場合、ハンドラー オーバーライド プロパティを BizTalk エクスプローラで設定する必要はありません。  
+SOAP を構成する、BizTalk Server 管理コンソールを使用して、ハンドラーの設定を受信します。 BizTalk Server 管理コンソールを使用して、アダプターを構成する場合、ハンドラ上書きのプロパティでは、BizTalk エクスプ ローラーで設定する必要はありません。  
   
-### <a name="to-change-global-variables-for-the-soap-receive-handler"></a>SOAP 受信ハンドラのグローバル変数を変更するには  
+### <a name="to-change-global-variables-for-the-soap-receive-handler"></a>グローバル変数を SOAP 受信ハンドラーを変更するには  
   
 1. BizTalk Server 管理コンソールで  [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **管理**、展開**BizTalk グループ**、展開**プラットフォームの設定**順に展開**アダプター**します。  
   

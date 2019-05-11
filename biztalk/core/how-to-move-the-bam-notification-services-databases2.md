@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73a995a4025bba980614d2c8cefef3da99219984
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: df16514ebd799f08caaea6eddcdc16ee671723a4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014475"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384508"
 ---
 # <a name="how-to-move-the-bam-notification-services-databases"></a>BAM Notification Services データベースを移動する方法
 ここでは、BAM Notification Services データベースを他のサーバーに移動する手順について説明します。  
@@ -40,7 +40,7 @@ ms.locfileid: "37014475"
   
    2. コマンド プロンプトで、次のディレクトリに移動します  
   
-       **%SystemDrive%\Program files \microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\Tracking**   
+       **%SystemDrive%\Program Files\Microsoft**  [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\Tracking**  
   
    3. コマンド プロンプトで、次のように入力します。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "37014475"
   
 9. コマンド プロンプトで、次のディレクトリに移動します  
   
-     **%SystemDrive%\Program files \microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\Tracking**   
+     **%SystemDrive%\Program Files\Microsoft**  [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\Tracking**  
   
 10. コマンド プロンプトで、次のように入力します。  
   
@@ -82,7 +82,7 @@ ms.locfileid: "37014475"
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-11. BAM Notification Services データベース名の参照を更新します。 詳細については、[BAM Notification Services データベースへの参照を更新する方法](../core/how-to-update-references-to-the-bam-notification-services-databases.md)を参照してください。  
+11. BAM Notification Services データベース名の参照を更新します。 詳細については、次を参照してください。 [BAM Notification Services データベースへの参照を更新する方法](../core/how-to-update-references-to-the-bam-notification-services-databases.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server データベースの移動](../core/moving-biztalk-server-databases.md)

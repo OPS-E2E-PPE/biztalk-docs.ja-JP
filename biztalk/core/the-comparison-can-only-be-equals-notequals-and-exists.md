@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50499ea6ab9f002d36c213a8bca871884d3b077a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8f319775ec0e42f1a29209a275f0a65af3e6c9bc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023472"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298899"
 ---
-# <a name="the-comparison-can-only-be-equals-notequals-and-exists"></a>この比較には、Equals、NotEquals、および Exists のみを指定できます
+# <a name="the-comparison-can-only-be-equals-notequals-and-exists"></a>比較には、Equals、NotEquals、および Exists のみを指定できます。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |
@@ -30,7 +30,7 @@ ms.locfileid: "37023472"
 |  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    コンポーネント    |                                       EDI エンジン                                       |
 |  シンボル名  |                                 Err_InvalidComparision                                 |
-|  メッセージ テキスト   |                この比較には、Equals、NotEquals、および Exists のみを指定できます。                |
+|  メッセージ テキスト   |                比較には、Equals、NotEquals、および Exists のみを指定できます。                |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、メッセージをバッチ処理する際に、BizTalk Server がコンテキスト プロパティを比較できなかったことを示します。  

@@ -1,5 +1,5 @@
 ---
-title: BizTalkApplicationServer と BizTalkServerIsolatedHost ホストの構成 |Microsoft ドキュメント
+title: BizTalkApplicationServer および BizTalkServerIsolatedHost ホストの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,23 +17,23 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8459debcd52ce990bc98adf3a2a2372206bae336
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 462abf2b0b7f9fc0df8a1b754d0fa5803656ab88
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22208802"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378528"
 ---
-# <a name="configuring-the-biztalkapplicationserver-and-biztalkserverisolatedhost-hosts"></a>BizTalkApplicationServer と BizTalkServerIsolatedHost ホストの構成
-BizTalk メッセージのサーバーには、メッセージング (送信および受信メッセージ) を制限するためには、MSMQT の送信を実行するいると、受信ハンドラー, メッセージング サーバー上でのみ実行する既定のホストを構成する必要があります。  
+# <a name="configuring-the-biztalkapplicationserver-and-biztalkserverisolatedhost-hosts"></a>BizTalkApplicationServer および BizTalkServerIsolatedHost ホストの構成
+BizTalk メッセージング サーバーには、メッセージング (送信および受信メッセージ) を制限するためには、MSMQT の送信を実行しているし、受信ハンドラー, メッセージング サーバーでのみ実行する既定のホストを構成する必要があります。  
   
 ### <a name="to-configure-the-default-hosts"></a>既定のホストを構成するには  
   
 1.  BizTalk 管理コンソールを使用して、BizTalkApplicationServer ホストからオーケストレーション サーバーのホスト インスタンスを削除します。  
   
-    -   各ホスト インスタンスを右クリックし、をクリックして**停止**です。  
+    -   各ホスト インスタンスを右クリックし、をクリックして**停止**します。  
   
-    -   各ホスト インスタンスを右クリックし、をクリックして**削除**です。  
+    -   各ホスト インスタンスを右クリックし、をクリックして**削除**します。  
   
 2.  BizTalk 管理コンソールを使用して、[biztalkserverisolatedhost] ホストからオーケストレーション サーバーのホスト インスタンスを削除します。  
   

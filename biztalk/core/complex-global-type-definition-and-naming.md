@@ -1,5 +1,5 @@
 ---
-title: 複合グローバル型の定義と名前付け |Microsoft ドキュメント
+title: 複合グローバル型の定義と名前付け |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: afe00c68f22dde956279f2dd5ac06d03bf9cb84d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ead0eac56b44a5fe4c6488800717e76cb09a4615
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231626"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356834"
 ---
 # <a name="complex-global-type-definition-and-naming"></a>複合グローバル型の定義と名前付け
-BizTalk エディターで複合グローバル型を定義する場合、グローバル型を使用する場所のいずれかで最初に出現する複合型を定義してから、これをグローバル型に変換します。 たとえば住所の場合、スキーマ内の発送先住所を定義するときは、複合型の住所を定義します。  
+グローバル型が使用できる場所がグローバル型に変換された後に場所のいずれかで最初に出現する複合型を定義することで、複合グローバル型を定義する開始するための BizTalk エディター内で。 アドレスの例を続行すると、スキーマ内で出荷先住所を定義するとき、複雑なアドレスの種類を定義する場合があります。  
   
- 複合型を定義してから、型名を付けて、これを複合グローバル型に変換できます。 通常、複合型に対応するノードを選択してこれを行う、**レコード**ノードを展開し、新しい型名を入力することで、 **Data Structure Type**そのノードのプロパティです。 表示されている変更は行われません、スキーマ ツリーでこのプロパティ名を指定するときに (など、 **GlobalAddrType**次の例のように、)、スキーマの基になる XSD 表記内での動作を確認する場合は、します。次の (省略形) の変更が表示されます。  
+ 複合型を定義した後、型名を指定することによって変換グローバル複合型にできます。 一般に、複合型に対応するノードを選択してこれを行う、**レコード**ノード、およびに新しい型名を入力し、 **Data Structure Type**そのノードのプロパティ。 表示されている変更が発生しないスキーマ ツリーでこのプロパティに名前を付けるときは (次のように、 **GlobalAddrType**次の例のように、)、スキーマの基になる XSD 表記内での動作を確認する場合は、します。(省略形)、次の変更が表示されます。  
   
- 前に、アドレスの構造を持つ最初定義のコンテキスト内で、 **ShippingAddress**要素を次が発生しました。  
+ 前に、アドレス構造をまず定義のコンテキスト内で、 **ShippingAddress**要素では、次が発生しました。  
   
 ```  
 <xs:schema>  
@@ -32,7 +32,7 @@ BizTalk エディターで複合グローバル型を定義する場合、グロ
     <xs:complexType>  
       <xs:sequence>  
         <xs:element name="ShippingAddress">  
-        [address structure initially defined here.]  
+        [address structure initially defined here.]  
         </xs:element>  
       </xs:sequence>  
     </xs:complexType>  
@@ -40,7 +40,7 @@ BizTalk エディターで複合グローバル型を定義する場合、グロ
 </xs:schema>  
 ```  
   
- 後に、 **ShippingAddress**ノードが指定されて一意の名前その**Data Structure Type**プロパティ、および内の複数の場所で再利用できる複合グローバル型として使用可能になるため、スキーマでは、次のようにします。  
+ 後に、 **ShippingAddress**ノードが指定されて一意の名前その**Data Structure Type**に内で複数の場所で再利用する対象となる複合グローバル型として使用可能になる原因となる、プロパティ、スキーマを次に発生します。  
   
 ```  
 <xs:schema>  
@@ -52,7 +52,7 @@ BizTalk エディターで複合グローバル型を定義する場合、グロ
     </xs:complexType>  
   </xs:element>  
   <xs:complexType name="GlobalAddrType">  
-  [address structure now defined globally here.]  
+  [address structure now defined globally here.]  
   </xs:complexType>  
 </xs:schema>  
 ```  

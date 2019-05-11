@@ -1,5 +1,5 @@
 ---
-title: SWIFT パイプライン コンポーネントをツールボックスに追加する |Microsoft ドキュメント
+title: ツールボックスに SWIFT パイプライン コンポーネントの追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,34 +15,34 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aaef345994a1d849e09025d9ad1bb0f133c1b224
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4594b3ed3ca1c348a9d903217d165f8f9d2380d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22208930"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378641"
 ---
-# <a name="adding-swift-pipeline-components-to-the-toolbox"></a>SWIFT パイプライン コンポーネントをツールボックスに追加します。
-SWIFT パイプライン コンポーネントを追加する必要があります、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ツールボックス、これらのコンポーネントを使用してカスタム パイプラインを作成できるようにします。 これは、Message Repair および New Submission または FIN 対応調整のいずれかのパイプラインを作成する必要があります。  
+# <a name="adding-swift-pipeline-components-to-the-toolbox"></a>ツールボックスに SWIFT パイプライン コンポーネントの追加
+SWIFT パイプライン コンポーネントを追加する必要があります、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ツールボックス、これらのコンポーネントを使用してカスタムのパイプラインを作成できるようにします。 これは、Message Repair および New Submission または FIN Response Reconciliation のいずれかのパイプラインの作成に必要です。  
   
- **概要**  
+ **まとめ**  
   
- 次の SWIFT パイプライン コンポーネントを追加、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ツールボックス。  
+ 次の SWIFT パイプライン コンポーネントの追加、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ツールボックス。  
   
--   SWIFT アセンブラー (Message Repair および New Submission FIN 対応調整 (FRR) 用)  
+-   SWIFT アセンブラー (Message Repair および New Submission FIN Response Reconciliation (FRR) 用)  
   
--   SWIFT の逆アセンブラー (Message Repair および New Submission FRR 用)  
+-   (Message Repair および New Submission または FRR) 用に SWIFT 逆アセンブラー  
   
--   SWIFT Frr 相関関係の設定 (FRR) の競合回避モジュール  
+-   SWIFT Frr 相関関係の設定 (用として FRR) 競合回避モジュール  
   
--   SWIFT Frr MQSeries デコーダー (用 FRR)  
+-   SWIFT Frr MQSeries のデコーダー (用として FRR)  
   
--   SWIFT Frr MQSeries 送信コンポーネント (FRR)  
+-   SWIFT の Frr MQSeries の送信コンポーネント (用として FRR)  
   
 ### <a name="to-add-a4swift-pipeline-components-to-the-toolbox"></a>A4SWIFT パイプライン コンポーネントをツールボックスに追加するには  
   
-1.  Visual Studio での**ツール** メニューのをクリックして**ツールボックス アイテムの選択**です。  
+1.  Visual Studio での**ツール**] メニューのをクリックして **[ツールボックス アイテムの**します。  
   
-2.  **ツールボックス アイテムの選択** ダイアログ ボックスで、 **BizTalk パイプライン コンポーネント** タブで  **SWIFT アセンブラー**と**SWIFT 逆アセンブラー**. FIN 対応調整を使用する場合は、選択**SWIFT Frr 相関関係設定の競合回避モジュール**、 **SWIFT Frr MQSeries デコーダー**、および**SWIFT Frr MQSeries の送信コンポーネント**です。  
+2.  **ツールボックス アイテムの選択** ダイアログ ボックスで、 **BizTalk パイプライン コンポーネント** タブで  **SWIFT アセンブラー**と**SWIFT 逆アセンブラー**. FIN Response Reconciliation を使用する場合は選択**SWIFT Frr 相関設定リゾルバー**、 **SWIFT Frr MQSeries デコーダー**、および**SWIFT Frr MQSeries の送信コンポーネント**します。  
   
 3.  **[OK]** をクリックします。

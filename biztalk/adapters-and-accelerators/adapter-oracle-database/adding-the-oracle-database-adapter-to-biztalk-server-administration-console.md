@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95ef6f3c4f33ddfdb6dbaca3e1823149ede66abf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f2a08982e8e58e9333c52121b9be9da4aecd7f37
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997875"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376826"
 ---
 # <a name="adding-the-oracle-database-adapter-to-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールへの Oracle データベース アダプターの追加
 このトピックでは、Wcf-oracledb アダプターを追加する方法を手順については、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  

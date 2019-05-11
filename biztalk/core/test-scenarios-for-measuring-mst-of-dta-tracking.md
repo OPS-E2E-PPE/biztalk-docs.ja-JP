@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1386c7113c534c2491bed447fdcc0ba970881bac
-ms.sourcegitcommit: ed9590dbcd97c12a1fe5ce2cdf8d826492cccdff
+ms.openlocfilehash: cbf1c372f19232848396b610d248e98f8248a7cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39640150"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299442"
 ---
 # <a name="test-scenarios-for-measuring-mst-of-dta-tracking"></a>DTA 追跡の MST を測定するためのテスト シナリオ
 これらが実際にはどのように機能するのかを示すために、および追跡における維持可能な最大スループット (MST) を測定する簡単な手法を紹介するために、ここでは、追跡の MST が測定されているテスト シナリオを提供します。 関連する手法が提供されるだけでなく、示されるデータを基に他のシステムの追跡パフォーマンスを測定することもできます。  
@@ -34,19 +34,19 @@ ms.locfileid: "39640150"
   
  **ハードウェア仕様 (BizTalk Server)**  
   
-- CPU: デュアル 3 GHz (キャッシュ: L2: 512 KB/L3: 1 MB)  
+- CPU:デュアル 3 GHz (キャッシュ。L2:512 KB/L3:1 MB)  
   
-- メモリ: 2 GB の RAM  
+- メモリ:2 GB の RAM  
   
-- HDD: 2 X 32 GB/15 K 台  
+- HDD:2 X 32 GB/15 K  
   
   **ハードウェア仕様 (SQL Server)**  
   
-- CPU: クアッド 2 GHz (L2: 512 KB/L3: 1 MB)  
+- CPU:クアッド 2 GHz (L2:512 KB/L3:1 MB)  
   
-- メモリ: 4 GB の RAM  
+- メモリ:4 GB の RAM  
   
-- HDD: 2 X 32 GB/15 K 台 + SAN  
+- HDD:2 X 32 GB/15 K 台 + SAN  
   
   次の図は、テスト シナリオ アーキテクチャの概要を示しており、その要素を以下に示します。  
   
@@ -58,16 +58,16 @@ ms.locfileid: "39640150"
   
 - **既定の DTA 追跡**します。 図中のイベント追跡ポイントは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール時に、既定ですべて有効になっています。  
   
-- **メッセージ プロパティ**します。 受信パイプラインの逆アセンブラー (DA) コンポーネントに関連付けられている追跡ポイントは、受信メッセージの 10 プロパティの追跡を表しています。 追跡のプロパティを昇格する方法の詳細については、[プロパティの昇格](../core/promoting-properties.md)を参照してください。  
+- **メッセージ プロパティ**します。 受信パイプラインの逆アセンブラー (DA) コンポーネントに関連付けられている追跡ポイントは、受信メッセージの 10 プロパティの追跡を表しています。 追跡のプロパティを昇格する方法の詳細については、次を参照してください。[プロパティの昇格](../core/promoting-properties.md)します。  
   
-- **メッセージ本文**します。 図中の 2 つのメッセージ本文 (MB) ポイントは、メッセージ本文を追跡するポイントを表しています。 メッセージ本文の追跡を設定する方法の詳細については、[、BizTalk Server 管理コンソールを使用した追跡構成](http://msdn.microsoft.com/49b7f9d3-60b5-41bd-ba8b-029253926bef)を参照してください。  
+- **メッセージ本文**します。 図中の 2 つのメッセージ本文 (MB) ポイントは、メッセージ本文を追跡するポイントを表しています。 メッセージ本文の追跡を設定する方法の詳細については、次を参照してください。 [、BizTalk Server 管理コンソールを使用した追跡構成](http://msdn.microsoft.com/49b7f9d3-60b5-41bd-ba8b-029253926bef)します。  
   
   **テスト シナリオのアーキテクチャ**  
   
   ![パフォーマンス シナリオ](../core/media/performancescenarios.gif "PerformanceScenarios")  
   
 ## <a name="test-techniques"></a>テスト手法  
- ファイル アダプターは送受信の両方で使用しました。 負荷生成ツール LoadGen 2007 を使用して、メッセージを受信ファイル共有に配信しました。 特定のレートでファイルを配信するように LoadGen ツールを構成することで、追跡 MST レベルの調査中に負荷を変更できるようにしました。 LoadGen ツールの詳細については、[Microsoft BizTalk LoadGen 2007 ツールを使用して](../core/using-the-microsoft-biztalk-loadgen-2007-tool.md)を参照してください。  
+ ファイル アダプターは送受信の両方で使用しました。 負荷生成ツール LoadGen 2007 を使用して、メッセージを受信ファイル共有に配信しました。 特定のレートでファイルを配信するように LoadGen ツールを構成することで、追跡 MST レベルの調査中に負荷を変更できるようにしました。 LoadGen ツールの詳細については、次を参照してください。 [Microsoft BizTalk LoadGen 2007 ツールを使用して](../core/using-the-microsoft-biztalk-loadgen-2007-tool.md)します。  
   
  このテストでは、BizTalkDTADb データベースでの 24 時間保持の要件を前提としました。 したがって、24 時間を経過したデータはすべてデータベースから削除されました。 アーカイブと削除を行う SQL ジョブは、アーカイブしたデータのみを削除するように設計されているので、このプロセスの間に失われるデータは一切ありません。  
   

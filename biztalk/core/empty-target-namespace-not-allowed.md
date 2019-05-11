@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 049c55ff6e91b9fcb2922b0345d8431a8c64eeee
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9bedba21881ef68b496beeb4d796d5f2067a8e2a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004212"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389501"
 ---
 # <a name="empty-target-namespace-not-allowed"></a>空のターゲットの名前空間は許可されていません
 ## <a name="details"></a>詳細  

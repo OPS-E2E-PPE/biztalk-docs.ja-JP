@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 1: は、受信ポートと場所に表示される XML を追加する |Microsoft Docs'
+title: レッスン 1:受信ポートと場所の XML の追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 51a6f5665fe460084319401e24090a8e92ea8987
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6ff076673967b6fcbd93cd18d7d6ec8c33688ae3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010235"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377283"
 ---
-# <a name="lesson-1-adding-xml-receive-port-and-location"></a>レッスン 1: XML 受信ポートと場所を追加します。
+# <a name="lesson-1-adding-xml-receive-port-and-location"></a>レッスン 1:受信ポートと場所の XML を追加
 受信ポートは、類似する受信場所の論理的なグループです。 受信場所は、受信メッセージとメッセージを処理するために使用するパイプラインの特定のアドレス (URL またはファイルの場所) などを定義します。  
   
 ### <a name="to-add-a-receive-port"></a>受信ポートを追加するには  
@@ -69,4 +69,4 @@ ms.locfileid: "37010235"
     > [!NOTE]
     >  受信場所を有効にすると、BizTalk は、ファイル フォルダーを積極的にポーリングします。  
   
-    続行する[レッスン 2: フラット ファイルの送信ポートを追加する](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-a-flat-file-send-port.md)します。
+    続行する[レッスン 2。フラット ファイルの送信ポートを追加する](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-a-flat-file-send-port.md)します。

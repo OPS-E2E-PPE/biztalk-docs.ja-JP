@@ -12,29 +12,29 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 471f49c7bae30a032d50e474b80efbf12d2ffdd2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1389255ec1114b377e2e55d7dbaeaa7c1839163c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000747"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387855"
 ---
 # <a name="flatfilesend-biztalk-server-sample"></a>FlatFileSend (BizTalk Server サンプル)
-FlatFileSend サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して、XML ファイルを同等のフラット ファイルに変換する方法を示します。  
+FlatFileSend サンプルは、使用する方法を示します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]同等のフラット ファイルを XML ファイルに変換します。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルでは、FFInput フォルダを受信場所として構成します。 このフォルダーにサンプル ファイル FlatFileSend_in.xml のようなファイルを置くと、このファイル内のメッセージが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって、次の手順で処理されます。  
+ このサンプルでは、受信場所として FFInput フォルダを構成します。 このフォルダーにサンプル ファイル FlatFileSend_in.xml など、ファイルを配置すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]次の手順を使用してこのファイルにメッセージを処理します。  
 
-1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、受信場所フォルダー FFInput の入力ファイルからメッセージを読み取ります。  
+1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 受信場所フォルダ FFInput の入力ファイルからメッセージを読み取ります。  
 
-2. メッセージが XML 受信パイプライン経由で受け渡されます。  
+2. XML を通じて、メッセージが渡された受信パイプライン。  
 
-3. MessageBox データベースで、メッセージが FILE 送信ポートにルーティングされます。このポートには、フラット ファイル アセンブラ コンポーネントを使用するよう構成された送信パイプラインがあります。 フラット ファイル アセンブラ コンポーネントは、フラット ファイル スキーマを使用して、XML メッセージを同等のフラット ファイル表現に変換します。  
+3. メッセージ ボックス データベースでは、メッセージがフラット ファイル アセンブラー コンポーネントで構成されている送信パイプラインに含まれるファイル送信ポートにルーティングされます。 フラット ファイル アセンブラー コンポーネントでは、XML メッセージをフラット ファイル スキーマを使用して、同等のフラット ファイル表現に変換します。  
 
-4. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が、変換されたメッセージを送信アダプター フォルダー FFOutput のテキスト ファイルに書き込みます。  
+4. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 変換されたメッセージを送信アダプタ フォルダ FFOutput のテキスト ファイルに書き込みます。  
 
 ## <a name="how-this-sample-is-designed-and-why"></a>このサンプルのデザイン方法とその理由  
- サンプル メッセージはこのサンプル内の基本デザインの多くを示しています。 フラット ファイル メッセージは、カスタム送信パイプライン内のフラット ファイル アセンブラとフラット ファイル スキーマを使用してアセンブルする必要があります。 これらのデザイン要素と他のデザイン要素を次の表にまとめます。  
+ サンプル メッセージでは、このサンプルでは基本的な設計の多くによって決まります。 フラット ファイル アセンブラおよびカスタム送信パイプライン内のフラット ファイル スキーマを使用して、フラット ファイル メッセージをアセンブルする必要があります。 これらおよび他のデザイン要素は、次の表にまとめたものです。  
 
 
 |    デザイン要素    |                                                                                                                                                                    選択理由                                                                                                                                                                    |
@@ -42,12 +42,12 @@ FlatFileSend サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/
 | カスタム送信パイプライン | -カスタム パイプラインはフラット ファイル アセンブラとフラット ファイル スキーマを使用して、インスタンス メッセージをフラット ファイル形式に変換するにはフラット ファイル アセンブラー自体はパイプラインし、で送信パイプラインを構成するときに使用することはできません、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 |
 |   フラット ファイル スキーマ   |                                      -すべての定義、同じレコードとフィールドの特性 (構造体を含む) を XML スキーマとして、すべての XML インスタンス メッセージをフラット ファイル メッセージに (またはその逆) に変換するために必要なフラット ファイルの特性を定義するためのメカニズムを提供します。                                      |
 | サブスクリプション フィルター  |                                                                                                          -サブスクリプション フィルターは、プロパティ フィールドに基づいて 1 つまたは複数の条件を満たすメッセージをキャプチャすることで実際のルーティングを実行します。                                                                                                          |
-|      XMLReceive      |                                                                                                        -受信 XML メッセージの処理を実行します。 この例では、注文書の XML 表現が変換対象のメッセージとして使用されます。                                                                                                        |
+|      [Xmlreceive]      |                                                                                                        -受信 XML メッセージの処理を実行します。 この例では、注文書の XML 表現は、送信元メッセージとして使用されます。                                                                                                        |
 
- これらの要素が組み合わされて、XML 形式の注文書メッセージを受信場所から受け入れ、フラット ファイル形式の注文書を送信場所に書き込むソリューションが作成されます。  
+ これらの要素を結合して、受信場所から XML 形式で注文書メッセージを受け取るソリューションを作成し、フラット ファイルを書き込みますが、送信場所に注文します。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileSend  
+ *\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileSend  
 
  次の表は、このサンプルのファイルとその目的を示しています。  
 
@@ -59,30 +59,30 @@ FlatFileSend サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/
 |        FlatFileSendBinding.xml        |                                                                          ポートのバインドなど、自動化されたセットアップに使用されます。                                                                          |
 |          FlatFileSend_in.xml          |                                                                                        サンプル入力ファイルです。                                                                                        |
 |                PO.xsd                 |                                                                                  送信フラット ファイルのスキーマです。                                                                                  |
-|           SendPipeline.btp            |                          フラット ファイル アセンブラー コンポーネントを含む [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 送信パイプライン ファイルです。                           |
+|           SendPipeline.btp            |                          [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] フラット ファイル アセンブラ コンポーネントを含むパイプライン ファイルを送信します。                           |
 |               Setup.bat               |                                                                            このサンプルをビルドおよび初期化するために使用されます。                                                                             |
 
 ## <a name="how-to-use-this-sample"></a>このサンプルの使用方法  
- このサンプルは、独自のフラット ファイル処理ソリューションの基礎として使用してください。 このサンプルで使用されているデザイン要素の多くは、独自の要件に合うように拡張できます。  
+ このサンプルを独自のフラット ファイル処理ソリューションの基礎として使用します。 多くの独自の要件に合わせて、このサンプルで使用されるデザイン要素を拡張することができます。  
 
 ## <a name="building-and-initializing-this-sample"></a>このサンプルのビルドと初期化  
 
 1. コマンド ウィンドウで、次のフォルダーに移動します。  
 
-    *\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileSend  
+    *\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileSend  
 
 2. ファイルは、次の操作を実行します。 Setup.bat を実行します。  
 
-   - 次のフォルダに、このサンプルの入力 (FFInput) フォルダと出力 (FFOutput) フォルダを作成します。  
+   - フォルダーには、入力 (ffinput フォルダ) とこのサンプルの出力 (FFOutput) フォルダを作成します。  
 
-      *\<パスのサンプル\>* \Pipelines\AssemblerDisassembler\FlatFileSend  
+      *\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileSend  
 
    - コンパイル、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]このサンプルのプロジェクト。  
 
    - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信場所、送信ポート、および受信ポートを作成しバインドします。  
 
      > [!NOTE]
-     >  このサンプルを作成すると、ポートのバインドは、次の警告が表示されます:`Warning: Receive handler not specified for receive location "FlatFileSend_RL"; updating with first receive handler with matching transport type. Warning: Host not specified for orchestration "FlatFileSend"; updating with first available host.`これらの警告を無視してかまいません。 (インストールでの名前付け方法はユーザーによって異なる可能性があるため、ホスト名と受信ハンドラーはバインド ファイルから除外されています。)  
+     >  このサンプルは、ポートを作成してバインドする際に、以下の警告を表示します。`Warning: Receive handler not specified for receive location "FlatFileSend_RL"; updating with first receive handler with matching transport type. Warning: Host not specified for orchestration "FlatFileSend"; updating with first available host.` これらの警告を無視してかまいません。 (インストールでの名前付け方法はユーザーによって異なる可能性があるため、ホスト名と受信ハンドラーはバインド ファイルから除外されています。)  
 
    - 受信場所を有効にし、送信ポートを開始します。  
 
@@ -97,12 +97,12 @@ FlatFileSend サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/
 
 ## <a name="running-this-sample"></a>このサンプルの実行  
 
-1.  ファイル FlatFileSend_in.xml を FFInput フォルダにコピーします。  
+1.  ファイル FlatFileSend_in.xml のコピーを FFInput フォルダに配置します。  
 
-2.  テキスト ファイルが FFOutput フォルダに作成されることを確認します。 テキスト ファイルの名前は、メッセージ ID の GUID に基づきます。 このファイルには、XML 入力ファイル FlatFileSend_in.xml と同等のフラット ファイルが含まれています。  
+2.  テキスト ファイルが FFOutput フォルダに作成されたことを確認します。 テキスト ファイルの名前は、メッセージ ID の GUID に基づきます。 このファイルには、XML 入力ファイル FlatFileSend_in.xml のフラット ファイルと同じが含まれています。  
 
-## <a name="classes-or-methods-used-in-this-sample"></a>このサンプルで使用されるクラスまたはメソッド  
- Setup.bat および Cleanup.bat の 2 つの構成スクリプトは、次の管理用 Windows Management Instrumentation (WMI) スクリプトに依存しています。  
+## <a name="classes-or-methods-used-in-this-sample"></a>クラスまたはメソッドのこのサンプルで使用  
+ Setup.bat および Cleanup.bat の構成スクリプトは、次の管理用の Windows Management Instrumentation (WMI) スクリプトに依存します。  
 
 - Start Send Port\StartSendPort.vbs  
 
@@ -110,7 +110,7 @@ FlatFileSend サンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/
 
 - Remove Send Port\RemoveSendPort  
 
-  セットアップおよびクリーンアップのバッチ ファイルでは、次のように BTSTask を使用します。  
+  セットアップとクリーンアップ バッチ ファイルは、次のような BTSTask を使用します。  
 
 - **BTSTask ImportBindings**バインド ファイルを適用し、アプリケーション、ポート、およびバインドを作成するには  
 

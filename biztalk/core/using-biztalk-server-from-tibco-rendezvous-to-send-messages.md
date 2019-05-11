@@ -2,17 +2,17 @@
 redirect_url: /biztalk/core/using-tibco-rendezvous-send-ports-from-biztalk-server/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: 74184590ffff9078caa5a8695ff8b0c392a6a217
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 81e597ead592d001c53c4a360f5d5ca8d3981ac2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024328"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401650"
 ---
-# <a name="using-biztalk-server-from-tibco-rendezvous-to-send-messages"></a>BizTalk Server を TIBCO Rendezvous から使用してメッセージを送信する
+# <a name="using-biztalk-server-from-tibco-rendezvous-to-send-messages"></a>TIBCO Rendezvous から BizTalk Server を使用してメッセージを送信するには
 Microsoft BizTalk Adapter for TIBCO Rendezvous は、非同期 API (Transport.Send) を使用します。 メッセージ コンテキスト プロパティを使用して、このアダプターが送信するメッセージの種類を指定できます。  
   
-- **構造化された**: アダプターには、BizTalk Server から受信した XML データに基づいて、TIBRVMSG_MSG 構造化されたメッセージが生成されます。 (*)  
+- **構造化された**:アダプターは、BizTalk Server から受信した XML データに基づいて、TIBRVMSG_MSG 構造化されたメッセージを生成します。 (*)  
   
   BizTalk Server が 127 文字を超える名前を持つフィールドのあるメッセージを送信した場合、BizTalk Adapter for TIBCO Rendezvous は、TIBCO Rendezvous の最大フィールド名サイズ (127 文字) に名前を切り捨てます。  
   

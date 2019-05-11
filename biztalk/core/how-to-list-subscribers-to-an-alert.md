@@ -16,21 +16,21 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ae95582e2923c682a5d4138235029f21293fd847
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5e680c08aa49ea07b38213f43c9e242be2a50f28
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972651"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384834"
 ---
 # <a name="how-to-list-subscribers-to-an-alert"></a>警告のサブスクライバーを一覧表示する方法
 管理者を使用して、 **get サブスクリプション**コマンドを指定した警告のサブスクライバーをすべて一覧表示します。  
   
-### <a name="to-list-subscribers-to-an-alert"></a>警告のサブスクライバーを一覧表示するには  
+### <a name="to-list-subscribers-to-an-alert"></a>警告にサブスクライバーを一覧表示する  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-2. [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
+2. 移動します[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡します。  
   
 3. 型**bm get-サブスクリプション-ビュー:\<ビュー名\>-警告:\<アラート名\>** します。  
   

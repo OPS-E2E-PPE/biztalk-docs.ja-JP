@@ -1,5 +1,5 @@
 ---
-title: Receivelocation (ReceivePort ノード) |Microsoft ドキュメント
+title: Receivelocation (ReceivePort ノード) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,19 +14,19 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c9fb5b64466e32ae27d53852b3383eb79531d60
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e0ebb54eb972143b3555aeb6020a5537ae640b13
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268378"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398150"
 ---
-# <a name="receivelocations-receiveport-node"></a>ReceiveLocation (ReceivePort ノード)
-バインド ファイルの ReceivePort ノードの ReceiveLocations ノードは、バインド ファイルと共にエクスポートされる受信場所に関する特定の情報を含むすべての ReceiveLocation ノードの親ノードです。  
+# <a name="receivelocations-receiveport-node"></a>Receivelocation (ReceivePort ノード)
+バインド ファイルの ReceivePort ノードの ReceiveLocations ノードは、すべてのバインド ファイルと共にエクスポートされる受信場所に関する特定の情報を含む ReceiveLocation ノードの親ノードです。  
   
 ## <a name="nodes-in-the-receivelocations-node"></a>ReceiveLocations ノード内のノード  
  次の表に、バインド ファイルのこのノードに設定できるプロパティを示します。  
   
-|**名前**|**ノード型**|**データ型**|**Description**|**制限**|**コメント**|  
+|**名前**|**ノードの種類**|**[データ型]**|**[説明]**|**制限**|**コメント**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|[受信場所](../core/receivelocation-receivelocations-node.md)|レコード|ReceiveLocation (ComplexType)|バインド ファイルと共にエクスポートされる受信場所に関する情報を指定します。|任意|既定値: なし|
+|[ReceiveLocation](../core/receivelocation-receivelocations-node.md)|レコード|ReceiveLocation (ComplexType)|バインド ファイルと共にエクスポートされる受信場所に関する情報を指定します。|任意|既定値: なし|

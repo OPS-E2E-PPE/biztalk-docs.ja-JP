@@ -1,5 +1,5 @@
 ---
-title: 同期ビジネス イベントの追跡 |Microsoft ドキュメント
+title: 同期ビジネス イベントの追跡 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84223714e2e04cec6c079862693a09786cb19a7f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0a97cfac1eb2b4fa13e0f3d94867d2a4993c6ba5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277938"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65321827"
 ---
 # <a name="synchronous-business-event-tracking"></a>同期ビジネス イベントの追跡
 BAM にイベント データを送信する最も簡単な方法は、DirectEventStream クラスのインスタンスを使用することです。 このクラスでは、アプリケーションの現在のトランザクション (存在する場合) のコンテキストで、BAM プライマリ インポート データベースにイベント データを直接保存します。  

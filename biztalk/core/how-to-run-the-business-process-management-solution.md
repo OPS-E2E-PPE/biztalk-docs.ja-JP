@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5fc88a2999b9c38e95b70150e0686c8a353a1a32
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cd8054daf0c5cd86cd7df1d303882cb57003e58a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023344"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384087"
 ---
 # <a name="how-to-run-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションの実行方法
 次の手順では、単一のコンピュータでビジネス プロセス管理ソリューションを実行および検証する方法について説明します。  
@@ -53,13 +53,13 @@ ms.locfileid: "37023344"
    4.  BTSScn.BPM.OrderBrokerApp.Test を右クリックし、をクリックして**停止**します。 **アプリケーションを停止**ダイアログ ボックスで、**完全停止 - インスタンスを終了**、 をクリックし、**停止**します。  
   
    > [!NOTE]
-   >  履歴データベースに情報を挿入します。 OrderBroker オーケストレーションは HistoryPort 送信ポートを使用して、**配信通知**プロパティが設定されて**送信**します。 送信ポートは、HistoryInsert-SP と HistoryInsert-Test-SP を含む HistoryInsert-SPG 送信グループにバインドされています。 これら 2 つの送信ポートの場合、メッセージ エンジンは OrderBroker オーケストレーションに 2 つの受信確認メッセージを公開します。 使用されないメッセージにより、オーケストレーションが保留になります。 このような状況を防ぐには、どちらか一方の送信ポートの参加を解除する必要があります。 このチュートリアルでは、BTSScn.BPM.OrderBrokerApp.Test アプリケーションを完全に停止して HistoryInsert-Test-SP 送信ポートを参加解除します。 OrderBroker オーケストレーションの詳細については、[OrderBroker オーケストレーションで処理](../core/processing-in-the-orderbroker-orchestration.md)を参照してください。 詳細については**配信通知**プロパティを参照してください[を使用して受信確認](../core/using-acknowledgments.md)します。  
+   >  履歴データベースに情報を挿入します。 OrderBroker オーケストレーションは HistoryPort 送信ポートを使用して、**配信通知**プロパティが設定されて**送信**します。 送信ポートは、HistoryInsert-SP と HistoryInsert-Test-SP を含む HistoryInsert-SPG 送信グループにバインドされています。 これら 2 つの送信ポートの場合、メッセージ エンジンは OrderBroker オーケストレーションに 2 つの受信確認メッセージを公開します。 使用されないメッセージにより、オーケストレーションが保留になります。 このような状況を防ぐには、どちらか一方の送信ポートの参加を解除する必要があります。 このチュートリアルでは、BTSScn.BPM.OrderBrokerApp.Test アプリケーションを完全に停止して HistoryInsert-Test-SP 送信ポートを参加解除します。 OrderBroker オーケストレーションの詳細については、次を参照してください。 [OrderBroker オーケストレーションで処理](../core/processing-in-the-orderbroker-orchestration.md)します。 詳細については**配信通知**プロパティを参照してください[を使用して受信確認](../core/using-acknowledgments.md)します。  
   
 4. 次に示すように、Facilities Simulator を実行します。  
   
    1.  コマンド プロンプトを開き、ディレクトリを %BTSSolutionsPath%\BPM\FacilitiesSimulator\bin\debug フォルダに変更します。  
   
-   2.  型`BTSScnBPMFacilities.exe`、し、ENTER キーを押します。 FacilitiesSimulator は実行した状態にしておきます。 ここでは、Southridge Video のバックエンド システムを処理する場合をシミュレートします。  
+   2.  「`BTSScnBPMFacilities.exe`」と入力して Enter キーを押します。 FacilitiesSimulator は実行した状態にしておきます。 ここでは、Southridge Video のバックエンド システムを処理する場合をシミュレートします。  
   
    3.  FacilitiesSimulator で、次の受信キューおよび送信キューを入力します。  
   
@@ -80,7 +80,7 @@ ms.locfileid: "37023344"
   
    1.  新しいコマンド プロンプトを開き、現在のディレクトリを %BTSSolutionsPath%\BPM\CableProvisioningSystemServer\bin\debug フォルダに変更します。  
   
-   2.  型`BTSScnBPMProvisioning.exe 8880`、し、ENTER キーを押します。 ケーブル プロビジョニング システムの実行は続けます。 Cable Provisioning System では、8880、TCP ポートでリッスンします。 このアプリケーションは、バックエンド注文システムをシミュレートし、最終的な注文を表示します。  
+   2.  「`BTSScnBPMProvisioning.exe 8880`」と入力して Enter キーを押します。 ケーブル プロビジョニング システムの実行は続けます。 Cable Provisioning System では、8880、TCP ポートでリッスンします。 このアプリケーションは、バックエンド注文システムをシミュレートし、最終的な注文を表示します。  
   
 ##  <a name="step3"></a> 実行し、ビジネス プロセス管理ソリューションの検証  
   
@@ -179,7 +179,7 @@ ms.locfileid: "37023344"
 11. Operation Server を実行しているコマンド プロンプトでルーティング エラーのエラーメッセージを確認します。  
   
     > [!NOTE]
-    >  イベント ログと Operation Server にエラーが表示されます。 ビジネス プロセスのインスタンスがより高いシーケンス番号を持つ新しい注文によって中断され終了したため、Facilities System からの応答メッセージはビジネス プロセスのインスタンスへの関連付けを失っています。 したがって、応答メッセージは孤立し Operation Server に回送されます。 注文の更新プログラムの詳細については、[注文プロセス マネージャでのフロー](../core/order-flow-through-the-process-manager.md)を参照してください。  
+    >  イベント ログと Operation Server にエラーが表示されます。 ビジネス プロセスのインスタンスがより高いシーケンス番号を持つ新しい注文によって中断され終了したため、Facilities System からの応答メッセージはビジネス プロセスのインスタンスへの関連付けを失っています。 したがって、応答メッセージは孤立し Operation Server に回送されます。 注文の更新プログラムの詳細については、次を参照してください。[注文プロセス マネージャでのフロー](../core/order-flow-through-the-process-manager.md)します。  
   
 12. メモ帳で %SystemDrive%:\BPMTest\HistoryUpdate-SP フォルダーでは、最新のメッセージを開きます。 確認**CustName**、 **OrderNum**、 **OrderSeqNum**、および**状態**フィールドをメッセージが新しい注文用に作成されていると、**状態**フィールドは**完了**します。  
   
@@ -217,7 +217,7 @@ ms.locfileid: "37023344"
 9. クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、 をクリックして**イベント ビューアー**とし、新しい警告を確認してください、順序は、ユーザーによって終了されました。  
   
     > [!NOTE]
-    >  注文終了の詳細については、[注文プロセス マネージャでのフロー](../core/order-flow-through-the-process-manager.md)を参照してください。  
+    >  注文終了の詳細については、次を参照してください。[注文プロセス マネージャでのフロー](../core/order-flow-through-the-process-manager.md)します。  
   
 10. Operation Server を実行しているコマンド プロンプトでルーティング エラーのエラーメッセージを確認します。  
   

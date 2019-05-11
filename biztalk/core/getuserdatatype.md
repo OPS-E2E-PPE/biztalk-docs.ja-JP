@@ -1,5 +1,5 @@
 ---
-title: GetUserDataType |Microsoft ドキュメント
+title: GetUserDataType |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5525dba034571acd91d1f3dd99f2b56069f81fc2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78fb7766363b212e6d913565d43f07500b0d1340
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246466"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387637"
 ---
 # <a name="getuserdatatype"></a>GetUserDataType
-現在のユーザー データ型の名前をスタックにプッシュします。  
+スタックには、現在のユーザー データ型の名前をプッシュします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -33,23 +33,23 @@ ms.locfileid: "22246466"
  [なし] :  
   
 ## <a name="pushed-value"></a>プッシュされた値  
- アセンブリ修飾形式の現在のユーザー データ型を格納している文字列。  
+ アセンブリ修飾の形式では、現在のユーザー データ型を表す文字列です。  
   
-## <a name="remarks"></a>解説  
- 異なり**GetActivityType**、この操作は、アセンブリ修飾クラス名の形式を使用しません。 代わりに、タイプ名のみをプッシュします。  
+## <a name="remarks"></a>コメント  
+ 異なり**GetActivityType**、この操作では、アセンブリ修飾クラス名の形式を使用しません。 代わりに、型名のみをプッシュします。  
   
 ```  
 MyLibrary.MyObject  
 ```  
   
 > [!NOTE]
->  アセンブリ修飾クラス名形式は、値を比較するときに定数として使用すると、常に `false` に評価されます。  
+>  アセンブリ修飾クラス名の形式を使用するように定数値を比較するときは常に評価されるかどうか`false`します。  
   
 ## <a name="special-filter-behavior"></a>特殊なフィルタの動作  
- この演算がフィルタ内で実行されると、派生するユーザー データ型も常に照合されます。  
+ この操作がフィルタ内で実行されると、ユーザーのデータ型はも常に照合を派生します。  
   
 ## <a name="example"></a>例  
- 次のサンプルには、`true` インスタンスと、`MyLibrary.MyObject` から派生したクラスのすべてのインスタンスで `MyLibrary.MyObject` に評価されるイベント フィルタ式が含まれています。  
+ 次の例に評価されるイベント フィルタ式が含まれています`true`の`MyLibrary.MyObject`インスタンスおよびすべてのインスタンスから派生するクラスから`MyLibrary.MyObject`します。  
   
 ```  
 <ic:Filter>  

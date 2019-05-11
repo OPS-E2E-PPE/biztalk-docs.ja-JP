@@ -18,18 +18,18 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fae17e4d2676a4bf6c1ecfd495762bd8527274bc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: caec32e5a80db4d292476908fb5f3337d39fbc26
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383110"
 ---
 # <a name="how-to-view-the-maps-for-an-application"></a>アプリケーションのマップを表示する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、BizTalk アプリケーションに含まれているマップを表示する方法について説明します。  
+このトピックでは、BizTalk Server 管理コンソールを使用して、BizTalk アプリケーションに含まれているマップを表示する方法を説明します。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、BizTalk Server 管理者グループまたは BizTalk Server Operators グループのメンバー アカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
+ このトピックの手順を実行するには、BizTalk Server 管理者グループまたは BizTalk Server Operators グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
   
 ### <a name="to-view-the-maps-for-an-application"></a>アプリケーションのマップを表示するには  
   

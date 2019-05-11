@@ -1,5 +1,5 @@
 ---
-title: スキーマ内のノードの管理 |Microsoft ドキュメント
+title: スキーマ内のノードの管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c156c40e7ad0d99549c45f9cac3cbd79d5286e4b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d4ba36fc64e334e3a55d1f9a7c9f86a5993badc7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262346"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380174"
 ---
-# <a name="managing-the-nodes-within-a-schema"></a>スキーマ内のノードの管理
+# <a name="managing-the-nodes-within-a-schema"></a>スキーマ内のノードを管理します。
 BizTalk エディターで編集するためにスキーマを開くと、スキーマ ツリーへの新しいノードの追加、ノードのプロパティの設定、既存ノードのプロパティの確認および変更などの作業を実行できます。 このセクションでは、このようなさまざまな作業の実行方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [スキーマにノードを挿入](../core/inserting-nodes-into-a-schema.md)  
+-   [スキーマへのノードの挿入](../core/inserting-nodes-into-a-schema.md)  
   
 -   [別のノードまたは種類への参照を作成します。](../core/how-to-create-references-to-another-node-or-type.md)  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d819abc957eb46dc430befb01cbcae0b8b55ca48
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 31a4a7d7afe372c6334219ec8cdf84a3e43aef65
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376269"
 ---
 # <a name="poll-oracle-database-using-biztalk-server"></a>BizTalk Server を使用してポーリング Oracle データベース
 構成することができます、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースからのポーリング ベースのメッセージを受信します。 アダプターは、Oracle データベースをポーリングの 2 つの方法を提供します。  
@@ -26,7 +26,7 @@ ms.locfileid: "36996099"
   
 - **ストアド プロシージャ、関数、またはプロシージャまたはパッケージ内の関数を使用して**します。 ストアド プロシージャ、関数、またはプロシージャまたは Oracle データベースをポーリングするパッケージ内の関数を指定することができます。 アダプターは、指定した間隔で要求メッセージを実行し、アダプターのクライアントに結果を返します。  
   
-  2 つのアプローチの主な違いは、方法アダプターのクライアントは、アダプターを使用して Oracle データベースをポーリングするポーリング ステートメントを指定します。 最初の方法のポーリング ステートメントには、単純な SELECT ステートメントが、その他のアプローチのポーリング ステートメント、ストアド プロシージャ、関数、またはプロシージャまたはパッケージ内の関数を実行する要求メッセージです。 アダプター クライアントのいずれの方法でも、ポーリング ステートメントを指定する、 **PollingStatement**プロパティをバインドします。 バインド プロパティの詳細については、[Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)を参照してください。  
+  2 つのアプローチの主な違いは、方法アダプターのクライアントは、アダプターを使用して Oracle データベースをポーリングするポーリング ステートメントを指定します。 最初の方法のポーリング ステートメントには、単純な SELECT ステートメントが、その他のアプローチのポーリング ステートメント、ストアド プロシージャ、関数、またはプロシージャまたはパッケージ内の関数を実行する要求メッセージです。 アダプター クライアントのいずれの方法でも、ポーリング ステートメントを指定する、 **PollingStatement**プロパティをバインドします。 バインド プロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)します。  
   
   このセクションのトピックでは、SELECT ステートメントとストアド プロシージャ、関数、またはプロシージャを使用してポーリングする方法について説明またはパッケージ内で機能します。  
   

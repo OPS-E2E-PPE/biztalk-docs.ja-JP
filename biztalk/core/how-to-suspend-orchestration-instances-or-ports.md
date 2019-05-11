@@ -24,15 +24,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 10f6923df37b5cce3a500ed6e02014f09d1c2c0f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6203a0ad7cdcafc570e692d1a5345c86b23cdf91
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994931"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383746"
 ---
 # <a name="how-to-suspend-orchestration-instances-or-ports"></a>オーケストレーションのインスタンスまたはポートを中断する方法
-BizTalk Server 管理コンソールのクエリ結果一覧から、オーケストレーションのインスタンスまたはポートを中断できます。  
+BizTalk Server 管理コンソールでオーケストレーションのインスタンスまたはクエリ結果の一覧からポートを中断することができます。  
   
 ## <a name="prerequisites"></a>前提条件  
  この手順を実行する BizTalk Server Operators グループのメンバーとしてログオンする必要があります。  

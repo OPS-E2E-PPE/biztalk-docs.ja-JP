@@ -15,17 +15,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 111bd267bc7d0bc12d582c3b74846b8874ed8b4d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4d1593c28186e0b5f96c749e67469257592e291d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012547"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377292"
 ---
 # <a name="installing-certificates"></a>証明書のインストール
 送信、修復、またはメッセージの送信するには、インストールされている適切な証明書が必要です。 このトピックでは、証明書を追加する方法について説明します。 運用環境では、証明書用に IT 部門を参照してください。  
 
- **概要**  
+ **まとめ**  
 
  ここでは、作成し、次の証明書を格納する方法の手順を示します。  
 

@@ -23,19 +23,19 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 08b03b737cc00016ad37d7eab8d8eeda5cffd3a1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a6f45158939210c3b084aa29234bee1b4a032b6d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023952"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385898"
 ---
-# <a name="how-to-configure-tracking-for-a-receive-port"></a>受信ポートの追跡を構成する方法
-このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して受信ポートの追跡を構成する方法 (メッセージ本文や昇格させたプロパティを表示するオプションなど) について説明します。 これにより、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 実装の稼動状況を監視し、ボトルネックを識別できます。 構成する追跡の設定は、受信ポートのすべてのインスタンスに適用されます。  
+# <a name="how-to-configure-tracking-for-a-receive-port"></a>追跡を構成する方法、受信ポート
+このトピックでは、使用する方法を説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをメッセージ本文や昇格させたプロパティを表示するオプションなど、受信ポートの追跡を構成する. 正常性を監視できます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実装し、ボトルネックを識別します。 構成する追跡の設定は、すべての受信ポートのインスタンスに適用されます。  
   
- メッセージ イベントおよびサービス インスタンスの追跡の機能の詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を参照してください[チェックリスト: メッセージとインスタンス データの追跡](../core/checklist-message-and-instance-data-tracking.md)  
+ メッセージ イベントおよびサービス インスタンスの追跡の機能の詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を参照してください[チェックリスト。メッセージとインスタンス データ追跡](../core/checklist-message-and-instance-data-tracking.md)  
   
- 構成する追跡の設定は、受信ポートのすべてのインスタンスに適用されます。  
+ 構成する追跡の設定は、すべての受信ポートのインスタンスに適用されます。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループに属するアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
@@ -44,23 +44,23 @@ ms.locfileid: "37023952"
   
 1. クリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2. コンソール ツリーで、BizTalk グループを展開し、受信ポートの追跡を構成する BizTalk アプリケーションを展開します。  
+2. コンソール ツリーで、BizTalk グループと受信ポートの追跡を構成する BizTalk アプリケーションを展開します。  
   
 3. クリックして**受信ポート**受信ポートを右クリックし、クリックして**追跡**します。  
   
    > [!NOTE]
-   >  受信ポートでメッセージ本文の追跡を有効にする前に、受信ポートを本当に追跡するかどうかを確認します。この処理はオーバーヘッドになる可能性があります。 たとえば、受信パイプライン RcvPipe が異なる受信ポートの複数の受信場所で使用されます。 メッセージ本文の追跡 RcvPipe でオプションを有効にした場合の潜在顧客はメッセージ本文の追跡では、すべての受信場所を行いたい場合があります。 このため、メッセージをセット本文の追跡では、必要に応じてポートを受信します。  
+   >  メッセージ本文の受信ポートの追跡を有効にするには、まったく; 受信ポートを追跡することを確認しますオーバーヘッドが考えられます。 たとえば、受信パイプライン RcvPipe が、別の受信ポートで複数の受信場所に使用されます。 メッセージ本文の追跡 RcvPipe でオプションを有効にした場合の潜在顧客はメッセージ本文の追跡では、すべての受信場所を行いたい場合があります。 このため、メッセージをセット本文の追跡では、必要に応じてポートを受信します。  
   
 4. 次の表に示すように、必要な追跡オプションを構成し、 **OK**します。  
   
    |プロパティ|目的|  
    |--------------|----------------|  
-   |**メッセージ本文の追跡 - ポート処理前に、の要求メッセージ**|受信前にメッセージの内容を保存および追跡する場合は、このチェック ボックスをオンにします。|  
-   |**メッセージ本文の追跡 - ポート処理後の要求メッセージ**|受信後にメッセージの内容を保存および追跡する場合は、このチェック ボックスをオンにします。|  
+   |**メッセージ本文の追跡 - ポート処理前に、の要求メッセージ**|保存し、メッセージが受信されるまで、メッセージの内容を追跡するには、このチェック ボックスを選択します。|  
+   |**メッセージ本文の追跡 - ポート処理後の要求メッセージ**|保存し、メッセージが受信された後メッセージの内容を追跡するには、このチェック ボックスを選択します。|  
    |||  
    |||  
    |**メッセージのプロパティ - ポート処理前に、の要求メッセージの追跡します。**|受信メッセージの昇格させたプロパティを追跡する場合は、このチェック ボックスをオンにします。|  
-   |**メッセージのプロパティ - ポート処理後の要求メッセージの追跡します。**|送信メッセージの昇格させたプロパティを追跡する場合は、このチェック ボックスをオンにします。|  
+   |**メッセージのプロパティ - ポート処理後の要求メッセージの追跡します。**|送信メッセージの昇格させたプロパティを追跡したい場合は、このチェック ボックスをオンにします。|  
    |||  
    |||  
   

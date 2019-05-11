@@ -12,15 +12,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c3ad79f09563b3e65ccfab64da5b9ec6ea3033c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e911445cd0f92bbe863f10b8335aee0bf64630bd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982899"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381856"
 ---
-# <a name="interfaces-for-a-transactional-asynchronous-batch-supported-send-adapter"></a>バッチ処理に対応したトランザクションとしての非同期送信アダプター用のインターフェイス
-メッセージのトランザクション送信が求められた場合、送信アダプターはトランザクションを作成および制御できます。 トランザクション送信をサポートするには、アダプターに次のインターフェイスを実装する必要があります。  
+# <a name="interfaces-for-a-transactional-asynchronous-batch-supported-send-adapter"></a>Batch でサポートされているトランザクションの非同期送信アダプター用のインターフェイス
+送信アダプターは、作成し、メッセージのトランザクション送信が必要な場合は、トランザクションを制御できます。 トランザクション送信をサポートするために、アダプターは、次のインターフェイスを実装する必要があります。  
   
 - **IBTTransport**  
   
@@ -36,12 +36,12 @@ ms.locfileid: "36982899"
   
 - **IBTBatchCallBack**  
   
-  アダプターは、MSDTC トランザクションを作成しへの呼び出しでは、そのオブジェクトへのポインターを返します、 **BeginBatch**のメソッド、 **IBTTransmitterBatch**インターフェイス。 メッセージング エンジンはこのメソッドを呼び出して、送信メッセージを送信アダプターに送るときに使用するバッチを取得します。 使用して、トランザクションの結果をメッセージング エンジンに通知アダプターが送信操作が完了し、コミットまたはトランザクションをロールバック、ときに、 **DTCCommitConfirm**のメソッド、 **IBTDTCCommitConfirm**インターフェイス。  
+  アダプターは、MSDTC トランザクションを作成しへの呼び出しでは、そのオブジェクトへのポインターを返します、 **BeginBatch**のメソッド、 **IBTTransmitterBatch**インターフェイス。 メッセージング エンジンは、送信アダプターに送信メッセージのポストバックがバッチを取得するには、このメソッドを呼び出します。 使用して、トランザクションの結果をメッセージング エンジンに通知アダプターが送信操作が完了し、コミットまたはトランザクションをロールバック、ときに、 **DTCCommitConfirm**のメソッド、 **IBTDTCCommitConfirm**インターフェイス。  
   
-  トランザクション送信操作を実行した際の、トランスポート プロキシと送信アダプター間の対話処理を次に示します。  
+  トランザクション送信操作を実行するときに、次の図は、トランスポート プロキシと送信アダプター間のやり取りを示します。  
   
   ![](../core/media/ebiz-sdk-devadapter8.gif "ebiz_sdk_devadapter8")  
-  トランザクション メッセージの非同期送信のワークフロー  
+  トランザクション メッセージを非同期的に送信するためのワークフロー  
   
 ## <a name="see-also"></a>参照  
  [アダプター変数](../core/adapter-variables.md)   

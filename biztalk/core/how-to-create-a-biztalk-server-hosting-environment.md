@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba3829a2fecb32a191b7351833e975bf3770547d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: de4183a91d2e10eaaefd2f6298a66b05b74eb9c3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013380"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65340117"
 ---
 # <a name="how-to-create-a-biztalk-server-hosting-environment"></a>BizTalk Server のホスティング環境を作成する方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のホスティング環境を作成する前に、次の推奨事項を考慮してください。  
@@ -40,7 +40,7 @@ ms.locfileid: "37013380"
 
    BizTalk メッセージ ボックス データベースおよび BizTalk 追跡データベースのサイズは、他の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースよりもはるかに高速に増大します。 バックアップ プログラムおよびメンテナンス プログラムの一環として、これらのデータベースを頻繁に更新する必要があります。  
 
-   既定では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースのテーブルにはログ サイズの制限がありません。 バックアップ プログラムおよびメンテナンス プログラムの一環として、ログ サイズを制限することで、ログが大きくなりすぎないようにし、ディスク領域が占有されないようにすることをお勧めします。 追跡データベースのサイズを管理する方法の詳細については、[アーカイブおよび BizTalk 追跡データベースの削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)を参照してください。  
+   既定では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースのテーブルにはログ サイズの制限がありません。 バックアップ プログラムおよびメンテナンス プログラムの一環として、ログ サイズを制限することで、ログが大きくなりすぎないようにし、ディスク領域が占有されないようにすることをお勧めします。 追跡データベースのサイズを管理する方法の詳細については、次を参照してください。[アーカイブおよび BizTalk 追跡データベースの削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)します。  
 
 - **SQL Server クラスタ リングを使用して、**  
 
@@ -64,7 +64,7 @@ ms.locfileid: "37013380"
    |------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |      **BizTalk 管理**データベース (BizTalkMgmtDb)       |                                                                                                                                                                    このデータベースには、すべての [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のメタ情報が集中的に保存されます。                                                                                                                                                                     |
    |     **BizTalk メッセージ ボックス**データベース (BizTalkMsgBoxDb)      |           このデータベースには、サブスクリプションの述語が格納されます。 このデータベースはホスト プラットフォームであり、各 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホストのキューおよび状態テーブルが保持されます。 また、メッセージ ボックス データベースには、メッセージおよびメッセージ プロパティが格納されます。 メッセージ ボックス データベースについては、追加のメッセージ ボックス データベースを追加するを参照してください[メッセージ ボックス データベースを管理する](../core/managing-messagebox-databases.md)します。           |
-   |                         **[サーバー]**                         | このコンピューターには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がインストールおよび構成され、ホスト インスタンスが実行されます。 サーバーで作成されたホストから、ホスト インスタンスを作成します。 ホストの作成の詳細については、[新しいホストを作成する方法](../core/how-to-create-a-new-host.md)を参照してください。 ホスト インスタンスを作成する方法の詳細については、[ホスト インスタンスを追加する方法](../core/how-to-add-a-host-instance.md)を参照してください。 |
+   |                         **[サーバー]**                         | このコンピューターには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がインストールおよび構成され、ホスト インスタンスが実行されます。 サーバーで作成されたホストから、ホスト インスタンスを作成します。 ホストの作成の詳細については、次を参照してください。[新しいホストを作成する方法](../core/how-to-create-a-new-host.md)します。 ホスト インスタンスを作成する方法の詳細については、次を参照してください。[ホスト インスタンスを追加する方法](../core/how-to-add-a-host-instance.md)します。 |
    |     **BAM プライマリ インポート**データベース (BAMPrimaryImport)     |                                                                                                                                                                                                このデータベースには、ビジネス アクティビティ監視ツールによって追跡データが収集されます。                                                                                                                                                                                                 |
    |       **ルール エンジン**データベース (BizTalkRuleEngineDb)       |                                                                                                                                                                                       このデータベースは、ポリシー、ルール、およびボキャブラリのリポジトリです。ビジネス ルールのデータ参照に使用されます。                                                                                                                                                                                        |
    |        **BizTalk 追跡**データベース (BizTalkDTADb)        |                                                                                                                                                       このデータベースには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 追跡エンジンで追跡したビジネス データおよび稼働状況の監視データが格納されます。                                                                                                                                                       |

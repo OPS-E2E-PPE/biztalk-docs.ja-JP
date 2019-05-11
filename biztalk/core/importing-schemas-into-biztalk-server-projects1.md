@@ -17,15 +17,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 70eff140259cd7cf815e8e05125f9ade78bf5493
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d9bcebbb138d12514bbd6c6dbac1874e81f438e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982363"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382466"
 ---
 # <a name="importing-schemas-into-biztalk-server-projects"></a>BizTalk Server プロジェクトへのスキーマのインポート
-ここでは、BizTalk Server プロジェクトにスキーマをインポートする手順について説明します。  
+次の情報には、BizTalk Server プロジェクトにスキーマをインポートする方法について説明します。  
   
 ## <a name="importing-schemas"></a>スキーマのインポート  
   
@@ -45,7 +45,7 @@ ms.locfileid: "36982363"
   
 6. アイテムを移動 (またはドラッグするだけで) 矢印アイコンをクリックして、**送信**ウィンドウ、およびクリック**OK**。  
   
-    SSOSchedule プロジェクトにスキーマが追加されます。  
+    スキーマは、SSOSchedule プロジェクトに追加されます。  
   
 7. ソリューション エクスプ ローラーで、 **SSOSchedule プロジェクト**します。  
   
@@ -57,9 +57,9 @@ ms.locfileid: "36982363"
   
 -   **PortTypeIn/で/要求:** SSOSchedule.myJ.D します。 Edwards OneWorld XEsso_transmitService_3.method  
   
--   **PortTypeOut/アウト/応答:** SSOSchedule.myJ.D します。 Edwards OneWorld XE sso_transmitService_3.methodResponse  
+-   **PortTypeOut/Out/response:** SSOSchedule.myJ.D します。 Edwards OneWorld XE sso_transmitService_3.methodResponse  
   
--   **PortTypeInOut/InOut/要求:** SSOSchedule.myJ.D します。 Edwards OneWorld XEsso_transmitService_3.method  
+-   **PortTypeInOut/InOut/Request:** SSOSchedule.myJ.D します。 Edwards OneWorld XEsso_transmitService_3.method  
   
 -   **PortTypeInOut/InOut/応答:** SSOSchedule.myJ.D します。 Edwards OneWorld XE sso_transmitService_3.methodResponse  
   

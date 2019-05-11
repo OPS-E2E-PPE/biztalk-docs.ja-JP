@@ -1,5 +1,5 @@
 ---
-title: アダプターを終了する方法 |Microsoft ドキュメント
+title: アダプターを終了する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,31 +12,31 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd2621e15803dd5f6e8f449de530e84df1bc1b9d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ce8e6fcf862ba52c1ae742ff48ff985ef801c0b3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22255994"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383760"
 ---
 # <a name="how-to-terminate-an-adapter"></a>アダプターを終了する方法
-ここでは、アダプターの適切なシャットダウンに関するガイダンスを提供します。  
+次のトピックでは、アダプターの適切なシャット ダウン時にガイダンスを提供します。  
   
 ## <a name="terminating-an-adapter"></a>アダプターの終了  
- メッセージング エンジンがシャット ダウンとが呼び出されて**IBTTransportControl**.**終了**各インプロセス アダプターでします。 このメソッドから制御が戻ると、BizTalk Server はアダプターを破棄します。 この処理は、ネイティブ アダプターの場合は直ちに発生しますが、マネージ アダプターの場合は .NET のガベージ コレクション プロセスが関係するため正確なタイミングを特定できません。 アダプターをブロックする必要があります**Terminate**に必要なは、クリーンアップ作業が破棄する準備完了になるまでです。  
+ メッセージング エンジンがシャット ダウン時に呼び出す**IBTTransportControl**.**終了**各インプロセス アダプター。 このメソッドが返された後に、BizTalk Server は、アダプターを破棄します。 ネイティブ アダプターが、すぐに、マネージ アダプターをまったく発生この場合は、.NET ガベージ コレクション プロセス関係するためです。 アダプターをブロックする必要があります**Terminate**に必要な操作を破棄する準備ができるまで、クリーンアップ作業します。  
   
-## <a name="terminating-isolated-receive-adapters"></a>分離受信アダプターの終了  
- 分離受信アダプターはありません**Terminate**されません、BizTalk サービスでホストされているために呼び出されます。 代わりを呼び出すことによって**IBTTransportProxy**.**TerminateIsolatedReceiver**にメッセージング エンジンをシャット ダウンしようとしていることを通知します。  
+## <a name="terminating-isolated-receive-adapters"></a>受信アダプターの分離を終了しています  
+ 分離受信アダプターはありません**Terminate**での BizTalk サービスがホストされていないために呼び出されます。 代わりに、呼び出す必要がある**IBTTransportProxy**.**TerminateIsolatedReceiver**シャット ダウンしようとしていることをメッセージング エンジンに通知します。  
   
-## <a name="clean-up-com-objects-by-using-marshalreleasecomobject"></a>Marshal.ReleaseComObject を使用した COM オブジェクトのクリーンアップ  
- COM オブジェクトを使用するマネージ コードを記述すると、共通言語ランタイム (CLR) により、COM オブジェクトへの参照を保持するプロキシ オブジェクトが生成されます。 このプロキシ オブジェクトはマネージ オブジェクトであり、ガベージ コレクションの通常のルールが適用されます。 ガベージ コレクターは .NET ランタイムが割り当てたメモリしか参照せず、COM オブジェクトを認識しないことから、1 つの問題が発生します。 それは、プロキシ オブジェクトは小さいため、大きい COM オブジェクトが CLR ガベージ コレクターで認識されずにメモリ内に残される可能性があるという点です。  
+## <a name="clean-up-com-objects-by-using-marshalreleasecomobject"></a>Marshal.ReleaseComObject を使用した COM オブジェクトをクリーンアップします。  
+ COM オブジェクトを使用するマネージ コードを記述する場合、共通言語ランタイム (CLR) は、COM オブジェクトへの参照を保持するプロキシ オブジェクトを生成します。 プロキシ オブジェクトは管理対象のオブジェクトであるため、ガベージ コレクションの通常の規則が適用されます。 ガベージ コレクターでは、.NET ランタイムで、割り当て、および、COM オブジェクトを認識しないことのメモリしか参照せずに、問題が発生します。 プロキシ オブジェクトは、小さいために、CLR のガベージ コレクターは、認識しないため、大きい COM オブジェクトはメモリに残り可能性があります。  
   
- この問題を避けるためには、明示的に解放基になる COM オブジェクトが終了したら、特に**IBTTransportBatch**オブジェクト。 呼び出すことによって、これを行う**マーシャ リング**.**ReleaseComObject**です。  
+ この問題を避けるためを明示的に解放基になる COM オブジェクトを終了すると、特に**IBTTransportBatch**オブジェクト。 呼び出すことによって、これを行う**マーシャ リング**.**ReleaseComObject**します。  
   
 > [!NOTE]
->  **ReleaseComObject**残っている参照の数を返し、これは、値が 0 で返されるときにのみ、COM オブジェクトを解放します。 多くの場合、 **ReleaseComObject**はオブジェクトが解放されることを確認するループで呼び出されます。 完了後を呼び出す必要があります**SuppressFinalize**このオブジェクトの最終処理する項目がないためです。 最後の手順として、このオブジェクトが間違いなく COM オブジェクトであるかどうかの確認も行います。  
+>  **ReleaseComObject**残っている参照の数を返し、この戻り値が 0 の場合にのみ、COM オブジェクトを解放します。 多くの場合、 **ReleaseComObject**は、オブジェクトが解放されることを確認するループで呼び出されます。 完了後を呼び出す必要があります**SuppressFinalize**このオブジェクトの最終処理を何もないためです。 最後の 1 つの手順では、実際に COM オブジェクトであるかどうかを確認します。  
   
- 上記のプロセスのコードを次に示します。  
+ 次のコードは、上記のプロセスを示しています。  
   
 ```  
 if (Marshal.IsComObject (batch))  
@@ -47,10 +47,10 @@ GC.SuppressFinalize (batch);
   
 ```  
   
- 明示的に解放する、 **IBTTransportBatch**から返されたオブジェクト**GetBatch**パフォーマンスを大幅に向上を行うことができます。  
+ 明示的に解放する、 **IBTTransportBatch**から返されるオブジェクト**GetBatch**パフォーマンスを大幅に改善を行うことができます。  
   
-## <a name="always-use-terminate-when-closing-an-adapter"></a>アダプターを閉じるときに常に Terminate を使用  
- BizTalk server アダプターとして、コードを認識するようと呼ばれるインターフェイスを実装する必要があります**IBTTransportControl**です。 このインターフェイスは、BizTalk Server がアダプターとどのように通信するかを定義するもので、次のように定義されます。  
+## <a name="always-use-terminate-when-closing-an-adapter"></a>アダプターを閉じるとき、常に使用が終了します。  
+ BizTalk server のアダプターとして、コードを認識する、というインターフェイスを実装する必要があります**IBTTransportControl**します。 このインターフェイスは、BizTalk Server のアダプターと通信して次のように定義されているを定義します。  
   
 ```  
 public interface IBTTransportControl   
@@ -60,23 +60,23 @@ void Terminate();
 }  
 ```  
   
- インターフェイスには、2 つのメソッドが含まれています。**初期化**と**Terminate**です。  
+ インターフェイスには、2 つのメソッドが含まれています。**初期化**と**Terminate**します。  
   
 ### <a name="initialize"></a>[初期化]  
- BizTalk Server を呼び出す、**初期化**メソッド、アダプター アセンブリを読み込んだ後にします。 この呼び出しは、アダプターにトランスポート プロキシ (BizTalk Server に対する主要なハンドル) を渡すために行われます。 実装**初期化**だけで、トランスポート プロキシをメンバー変数に格納します。  
+ BizTalk Server によって、**初期化**後に、アダプター アセンブリを読み込みます。 これは、アダプターにトランスポート プロキシ (BizTalk Server にメインのハンドル) を渡す。 実装**初期化**単に、トランスポート プロキシをメンバー変数に格納します。  
   
 ### <a name="terminate"></a>終了  
- BizTalk Server を呼び出す、 **Terminate**サービスのシャット ダウンして、すべてのバッチの実行を終了する時間をアダプターのメソッドです。 これによりの実装、 **Terminate**メソッドをさらに複雑です。  
+ BizTalk Server によって、 **Terminate**メソッドのすべてのバッチの実行を終了する時間をアダプターを提供するサービスのシャット ダウンします。 これにより、実装、 **Terminate**メソッドをさらに複雑にします。  
   
- アダプターはから返されません、 **Terminate**がすべて保留中の作業が完了するまでの呼び出しです。 BizTalk Server から呼び出されると**Terminate**アダプターがその現在のすべてのタスクを停止し、新しいタスクを開始できませんを試行します。  
+ アダプターから返しません、 **Terminate**が任意の保留中の作業が完了するまでの呼び出し。 BizTalk Server を呼び出すと**Terminate**の現在のすべてのタスクを停止し、新規を起動しないように、アダプターしてください。  
   
- **Terminate**が呼び出された場合は、アダプターが永続的にブロック サービスのシャット ダウンの一部として、サービス コントロール マネージャーが、プロセスを終了**Terminate**です。 この場合は、BizTalk Server サービスの停止時にサービス コントロール マネージャーからの警告が表示されます。 このようにアダプターを途中で終了するのはできるだけ避けてください。 アダプターが終了プロセスを適切に処理せず、プロセスがシャットダウンを開始した時点でまだ実行中のスレッドがあると、シャットダウン時に BizTalk Server でアクセス違反が発生することがあります。  
+ **Terminate**と呼びますアダプターが永続的にブロック場合、サービスのシャット ダウンの一環として、サービス コントロール マネージャーがプロセスを終了**Terminate**します。 ここでは、BizTalk Server サービスの停止時にサービス コントロール マネージャーから警告が表示されます。 可能であれば、このような処理の途中でアダプターを終了しないでください。 場合は、アダプターは、終了プロセスが適切に処理しないと、プロセスがシャット ダウンを開始すると実行中のスレッドがまだ、シャット ダウン時に BizTalk Server からアクセス違反随時表示があります。  
   
- BizTalk Server のインターフェイスは非同期であるため、高負荷状況であっても多数のバッチが実行中 (したがって、多数のスレッドが実行中) の可能性があります。 **Terminate**アダプターが正常に実行される BizTalk Server で続行する前にすべてのバッチの終了を待機する呼び出しを実装する必要があります。 によってバッチの終了が通知される、 **BatchComplete** BizTalk Server からのコールバック。 **Terminate**呼び出しが待機する保留中の各**BatchComplete**が発生します。 ただし、バッチは正常に実行されなければなりません。 呼び出しは、 **IBTTransportBatch**::**完了**しないことが必要があります。 場合への呼び出し**IBTTransportBatch**::**完了**失敗すると、バッチ コールバックはありません。  
+ BizTalk Server へのインターフェイスの非同期性質上、負荷がある多くのバッチしたがってスレッドが実行中に高くなります。 **Terminate**続行する前に、アダプターが正常に実行 BizTalk Server のすべてのバッチの終了を待機する呼び出しを実装する必要があります。 バッチの終了がによって通知、 **BatchComplete** BizTalk Server からのコールバック。 **Terminate**で呼び出しを待機する必要があります保留中の各**BatchComplete**発生します。 ただし、バッチの実行は成功である必要があります。 呼び出しは、 **IBTTransportBatch**::**完了**失敗する必要があります。 場合に呼び出し**IBTTransportBatch**::**完了**失敗すると、バッチ コールバックはありません。  
   
- アダプターに同期コードを追加する必要のあることを理解できれば、その実装は簡単です。  
+ アダプターに同期コードを追加する必要があることを理解できれば、実装は非常に簡単です。  
   
- 備えた複合同期オブジェクトを実装するのには、簡単な方法の 1 つ**入力**と**のままにして**、ワーカー スレッドのためのメソッドと**終了**メソッド中にブロックする、スレッドは、保護対象の実行中にまだです。 (ちなみに、ソリューションは、使い慣れた複数リーダー/単一ライター構造とよく似ていますここで、ワーカー スレッドのことができますと考えるのリーダーと**終了**メソッドをライターとして)。  
+ 備えた複合同期オブジェクトを実装する 1 つの簡単な方法は、**入力**と**のままに**ワーカー スレッドのメソッドと**終了**メソッド中にブロックする、スレッドとは、保護された実行内であります。 (ちなみに、ソリューションは、使い慣れた複数リーダー、単一のライターの構造とよく似ています、ワーカー スレッド見なすことができますのリーダーとして、**終了**メソッドをライターとします)。  
   
  **終了**メソッドを次に示します。  
   
@@ -87,7 +87,7 @@ this.control.Terminate();
 }  
 ```  
   
- 各ワーカー スレッドについて、次のように記述します。  
+ 各ワーカー スレッド。  
   
 ```  
 If (!this.control.Enter())  
@@ -104,7 +104,7 @@ This.control.Leave();
 }  
 ```  
   
- BizTalk Server からのコールバック  
+ BizTalk Server からのコールバック。  
   
 ```  
 batchComplete (…)  
@@ -115,4 +115,4 @@ this.control.Leave();
 }  
 ```  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に付属しているベース アダプターのサンプルには、ここで説明した同期メカニズムを示したサンプル コード ControlledTermination.cs が含まれています。
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ベース アダプター サンプルでは、ここで説明した同期メカニズムを示すサンプル コード ControlledTermination.cs が付属しています。

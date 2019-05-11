@@ -1,5 +1,5 @@
 ---
-title: プロジェクト内のマップを管理する |Microsoft ドキュメント
+title: プロジェクト内のマップの管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0900424ea5e31392f27268d33293bfbfd06a8d56
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bcc44c25c7eec0357c8472d75619fc23d16d3caa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261994"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380331"
 ---
-# <a name="managing-maps-within-projects"></a>プロジェクト内のマップの管理
-このセクションでは、マップ全体を操作するための手順を説明 — たとえば、マップでは、スキーマを指定する、マップの作成に関する手順、マップの保存します。 リンクおよび functoid を使用して、マッピング構造の作成方法の詳細については、次を参照してください。 [Functoid 作成複雑なマッピングを使用した](../core/using-functoids-to-create-more-complex-mappings.md)です。  
+# <a name="managing-maps-within-projects"></a>プロジェクト内のマップを管理します。
+このセクションではマップ全体を操作するためのステップ バイ ステップの説明: などに関する手順は、マップ内のスキーマの指定、マップを作成して、マップの保存。 リンクおよび functoid を使用したマッピング構造の作成方法の詳細については、次を参照してください。 [Functoid 作成複雑なマッピングを使用した](../core/using-functoids-to-create-more-complex-mappings.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

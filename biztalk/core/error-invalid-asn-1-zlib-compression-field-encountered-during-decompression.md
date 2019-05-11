@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1ee1388304eb9923dcd2c6fef1468794f7c622a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d3e82597f07c37633021e44cd14a8280c0d57205
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389229"
 ---
 # <a name="invalid-asn1-zlib-compression-field-encountered-during-decompression-processing"></a>圧縮解除中に無効な ASN.1 ZLib 圧縮フィールドが検出されました
 ## <a name="details"></a>詳細  

@@ -25,12 +25,12 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 979b7be419be6b39c5a80fcd1548af7404588e01
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 041b08e6039e49376c14a83ba61fa6dab3a2e1fb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012867"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387444"
 ---
 # <a name="how-to-add-a-64-bit-artifact-to-an-application"></a>64 ビット アイテムをアプリケーションに追加する方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、64 ビット アプリケーションもサポートされます。 つまり、32 ビット アイテムと同じ方法で 64 ビット アイテムを BizTalk アプリケーションに追加できます。ただし、次の 64 ビット アイテムを 32 ビットのコンピューターにインストールすると次のような問題が発生する場合があります。  
@@ -41,7 +41,7 @@ ms.locfileid: "37012867"
   
 - **64 ビットの .exe ファイルとして保存されたスクリプトです。** この種類のスクリプトは正常に機能しない場合があります。  
   
-  成果物を追加する方法の一般的な手順は、[成果物を追加または作成する方法](../core/how-to-create-or-add-an-artifact.md)を参照してください。 特定の成果物の種類を追加する手順については、[管理成果物](../core/managing-artifacts.md)を参照してください。  
+  成果物を追加する方法の一般的な手順は、次を参照してください。[成果物を追加または作成する方法](../core/how-to-create-or-add-an-artifact.md)します。 特定の成果物の種類を追加する手順については、次を参照してください。[管理成果物](../core/managing-artifacts.md)します。  
   
 ## <a name="see-also"></a>参照  
  [作成して、BizTalk アプリケーションの変更](../core/creating-and-modifying-biztalk-applications.md)   

@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07d1e44e38665a6a643131545afb660945a9f07e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1d545b1b2418546bc27adb89674a57d9c915d0e6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969075"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381393"
 ---
-# <a name="invalid-asn1-compressed-structure-encountered-during-decompression-processing"></a>圧縮解除処理中に無効な ASN.1 圧縮構造が検出されました
+# <a name="invalid-asn1-compressed-structure-encountered-during-decompression-processing"></a>無効な ASN.1 圧縮構造の圧縮解除処理中に発生しました。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |

@@ -17,17 +17,17 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ae07b6b957f608e89c3ae65802d6627440201a65
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7f8b8771a87838590a5653f34b9ab266259cd850
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378315"
 ---
 # <a name="deploying-a4swift-envelope-schemas"></a>A4SWIFT エンベロープ スキーマの展開
 Message Repair and New Submission を設定するたびに、プロジェクトのスキーマでエンベロープ スキーマを含める必要があります。 エンベロープ スキーマで、EnvelopeMT103.xsd などが MRSR サイトへの書き込みに必要です。  
   
- **概要**  
+ **まとめ**  
   
  ようエンベロープ スキーマをプロジェクトに追加します。  
   

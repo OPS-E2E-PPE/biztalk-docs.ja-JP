@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 7: SWIFT アセンブラーをカスタムに追加する送信パイプライン |Microsoft Docs'
+title: 'レッスン 7: 送信パイプラインのカスタムに SWIFT アセンブラーの追加 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3e64f799c6b26d98efec82739a32d6140dc99f6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bc9a8e4cba800196452f64c12576aed4a681dfc1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377335"
 ---
 # <a name="lesson-7-adding-the-swift-assembler-to-a-custom-send-pipeline"></a>レッスン 7: カスタム送信パイプラインに SWIFT アセンブラーを追加します。
 このレッスンでは、パイプラインにカスタム SWIFT アセンブラー (ASM) を追加します。  
@@ -32,4 +32,4 @@ ms.locfileid: "37012107"
   
 2. **ファイル**メニューの **すべて保存**変更を保存します。  
   
-   進みます[レッスン 9: アセンブリの配置のビルドと](../../adapters-and-accelerators/accelerator-swift/lesson-8-building-and-deploying-the-assembly.md)します。
+   続行する[レッスン 9。アセンブリの配置のビルドと](../../adapters-and-accelerators/accelerator-swift/lesson-8-building-and-deploying-the-assembly.md)します。

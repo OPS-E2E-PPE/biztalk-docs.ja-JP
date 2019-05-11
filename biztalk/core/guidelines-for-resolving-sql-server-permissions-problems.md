@@ -12,21 +12,21 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32561c19bf099b226dc5425edb35ebbaf0a8b3b1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 54d7a26d4c781ea27c2cefa19540025b0688e9b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344853"
 ---
 # <a name="guidelines-for-resolving-sql-server-permissions-problems"></a>SQL Server 権限の問題を解決するためのガイドライン
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、Microsoft [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] データベースをランタイム操作のため広範に使用するので、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 権限が正しく設定されていることが重要です。 このトピックでは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 権限の問題を最小限に抑えるための一般的なガイドラインと、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] に影響を与える [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 権限の問題をトラブルシューティングするための手順を提供します。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Microsoft の広範に使用[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]実行時の操作とそのデータベースが重要ですが、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]アクセス許可が正しく設定。 このトピックでは、最小限に抑えるための一般的なガイドラインを提供します[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]アクセス許可の問題とトラブルシューティングに利用できる手順[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]アクセス許可の問題に影響を与える[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
 ## <a name="general-guidelines"></a>一般的なガイドライン  
   
 - **ドメイン ユーザーおよびグループを使用して、BizTalk Server の複数コンピューターのインストール**  
   
-   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が別々のコンピューターにインストールされている場合など、複数コンピューターのシナリオで実行する [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] を構成する場合は、ドメイン ユーザー グループとアカウントを使用する必要があります。 構成または実行しないで[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で、*パススルー*ドメイン グループおよびアカウントの使用を回避するには、各コンピューターに一致するユーザー名とパスワードのペアを作成するための認証シナリオ。 一部のシナリオでは、このようなパススルー シナリオが正常に機能しているように見える場合もありますが、これは他のシナリオで [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が失敗する原因になりますし、サポートされる構成ではありません。  
+   構成するときに、ドメイン ユーザー グループとアカウントを使用する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]など、複数コンピューター環境シナリオで実行する場所[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]別のコンピューターにインストールされます。 構成または実行しないで[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で、*パススルー*ドメイン グループおよびアカウントの使用を回避するには、各コンピューターに一致するユーザー名とパスワードのペアを作成するための認証シナリオ。 これにより、このようなパススルー シナリオは、一部のシナリオで正常に機能に見える場合があります、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]他のシナリオで失敗して、サポートされる構成ではありません。  
   
    インストールと構成の詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]複数コンピューター構成では、ダウンロード、インストール ガイド[関連する BizTalk Server 2013 インストール ガイド](http://go.microsoft.com/fwlink/p/?LinkID=269582)します。  
   
@@ -36,64 +36,64 @@ ms.locfileid: "36992387"
   
 - **ユーザーの SQL Server Profiler のアクセス許可の問題を診断するには**  
   
-   設定する、 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Profiler トレースを監視する、 **Audit Login Failed イベント**アクセス許可のエラーに関する詳細情報を収集します。 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Profiler の使用方法については、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] のマニュアルを参照してください。  
+   設定する、 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Profiler トレースを監視する、 **Audit Login Failed イベント**アクセス許可のエラーに関する詳細情報を収集します。 使用する方法については[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]Profiler を参照してください、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]ドキュメント。  
   
 ## <a name="known-issues"></a>既知の問題  
   
-#### <a name="the-sql-server-jobs-that-are-installed-with-biztalk-server-fail-to-execute"></a>BizTalk Server と共にインストールされる SQL Server ジョブの実行の失敗  
+#### <a name="the-sql-server-jobs-that-are-installed-with-biztalk-server-fail-to-execute"></a>BizTalk Server と共にインストールされる SQL Server ジョブの実行失敗します。  
   
 ##### <a name="problem"></a>問題  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と共にインストールされる SQL Server ジョブが失敗して、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] アプリケーション ログに次のようなエラーが生成されます。  
+ と共にインストールされる SQL Server ジョブ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で失敗して、次のようなエラーが生成される、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]アプリケーション ログ。  
   
- イベントの種類: 警告  
+ イベントの種類:警告  
   
- イベント ソース: SQLSERVERAGENT  
+ イベント ソース:SQLSERVERAGENT  
   
- イベント カテゴリ: ジョブ エンジン  
+ イベント カテゴリ:ジョブ エンジン  
   
- イベント ID: 208  
+ イベント ID:208  
   
- 日付: 6/29/2008  
+ 日付:6/29/2008  
   
- 時刻: 4:45:01 PM  
+ 時間:午後 4時 45分: 01  
   
- ユーザー: N/A  
+ ユーザー :なし  
   
- コンピューター: *SQLServer*  
+ コンピューター:*Sql Server*  
   
  説明:  
   
- SQL Server Scheduled Job 'Backup BizTalk Server'  
+ SQL Server のスケジュールされたジョブ 'BizTalk Server のバックアップ'  
   
- (0x4AC7C44A48541443927A56C5C6699ECF) - Status: Failed - Invoked on: 2008-6-29 13:45:01 - Message: The job failed.  The Job was invoked by Schedule 305 (MarkAndBackupLogSched).  The last step to run was step 1 (BackupFull).  
+ (0x4AC7C44A48541443927A56C5C6699ECF) - 状態。Failed-invoked on:2008-6-29 01: 13時 45分 - メッセージ。ジョブが失敗しました。  By Schedule 305 (MarkAndBackupLogSched) ジョブが呼び出されました。 最後の手順を実行するには、手順 1 (BackupFull) がでした。  
   
  **- と -**  
   
- イベントの種類: 情報  
+ イベントの種類:[情報]  
   
- イベント ソース: MSSQLSERVER  
+ イベント ソース:MSSQLSERVER  
   
- イベント カテゴリ: (4)  
+ イベント カテゴリ:(4)  
   
- イベント ID: 17055  
+ イベント ID:17055  
   
- 日付: 6/29/2008  
+ 日付:6/29/2008  
   
- 時刻: 4:45:01 PM  
+ 時間:午後 4時 45分: 01  
   
- ユーザー: N/A  
+ ユーザー :なし  
   
- コンピューター: *SQLServer*  
+ コンピューター:*Sql Server*  
   
  説明:  
   
- 18456: ユーザー 'NT AUTHORITY\SYSTEM' はログインできませんでした。  
+ 18456:ユーザー 'NT authority \system' はログインできませんでした。  
   
 ##### <a name="cause"></a>原因  
- このエラーは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] から BUILTIN\Administrators ログインが削除された場合に発生します。 BUILTIN\Administrators ログインが削除されると、sqlmaint.exe が [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] にログオンできなくなり、SQL ジョブの実行ができなくなります。  
+ このエラーから builtin \administrators ログインが削除された場合に発生する可能性が[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 Sqlmaint.exe にログオンできませんなります builtin \administrators ログインが削除された場合[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]SQL ジョブの実行ができなきます。  
   
 ##### <a name="resolution"></a>解決策  
- この問題を解決するには、BUILTIN\Administrators ログインを再作成して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースとマスター データベースの db_owner ロールに追加します。  
+ この問題を解決するには、builtin \administrators ログインを再作成し、db_owner ロールに追加、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースとマスター データベース。  
   
 ## <a name="see-also"></a>参照  
  [SQL Server のトラブルシューティング](../core/troubleshooting-sql-server.md)   

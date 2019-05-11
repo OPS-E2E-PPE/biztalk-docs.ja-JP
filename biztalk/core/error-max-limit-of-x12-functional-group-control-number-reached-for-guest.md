@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 70855ad87ad18c29c51a4d87878339b014bb47d8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3a8fed734f07b8d55a349a8b20498e1c9238c8ac
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010411"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388691"
 ---
-# <a name="max-limit-of-acceptable-x12-functional-group-control-number-has-reached-for-guest-settings"></a>Guest の設定の X12 機能グループ制御番号が、許容される上限に到達しました
+# <a name="max-limit-of-acceptable-x12-functional-group-control-number-has-reached-for-guest-settings"></a>許容される X12 機能グループ制御番号に達した Guest の設定の上限
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                               |

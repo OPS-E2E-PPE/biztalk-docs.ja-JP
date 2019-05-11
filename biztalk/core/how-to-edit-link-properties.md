@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7633d02c61fa113267d68a2a76b91d1389bd699e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1df0111a0d595de6f7be6d0ea25c662dc8985dea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014195"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385156"
 ---
 # <a name="how-to-edit-link-properties"></a>リンクのプロパティを編集する方法
 リンクがあるいくつかのプロパティに表示される、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]**プロパティ**次などのウィンドウ。  
@@ -30,7 +30,7 @@ ms.locfileid: "37014195"
   
   ![引き出し線なしのスクリーン ショット](../core/media/properties-grid.gif "Properties_Grid")  
   
-  ソースとターゲット スキーマの詳細については、[コンパイラ ディレクティブおよびリンク](../core/compiler-directives-and-links.md)を参照してください。 設定と使用については、**ソース リンク**と**ターゲット リンク**プロパティを参照してください[ノード階層の照合を構成する方法](../core/how-to-configure-node-hierarchy-matching.md)と[する方法ソース リンクのコンパイラ値を設定](../core/how-to-set-the-source-links-compiler-value.md)します。  
+  ソースとターゲット スキーマの詳細については、次を参照してください。[コンパイラ ディレクティブおよびリンク](../core/compiler-directives-and-links.md)します。 設定と使用については、**ソース リンク**と**ターゲット リンク**プロパティを参照してください[ノード階層の照合を構成する方法](../core/how-to-configure-node-hierarchy-matching.md)と[する方法ソース リンクのコンパイラ値を設定](../core/how-to-set-the-source-links-compiler-value.md)します。  
   
 ## <a name="see-also"></a>参照  
  [リンクを使用してレコードとフィールド マッピングを指定する](../core/using-links-to-specify-record-and-field-mappings.md)

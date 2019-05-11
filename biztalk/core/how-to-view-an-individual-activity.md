@@ -1,5 +1,5 @@
 ---
-title: 個々 のアクティビティを表示する方法 |Microsoft ドキュメント
+title: 個々 のアクティビティを表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,23 +16,23 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8726941e09d045a6b5d6021be2467f70f43fd6c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ac39531ff97fb97181ead85760c74ffdbc3f14e0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22255978"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383171"
 ---
-# <a name="how-to-view-an-individual-activity"></a>個々のアクティビティを表示する方法
-アクティビティは、BAM Web ポータルの [Business Activity Search Results] ページに表示されます。 アクティビティを検索する手順については、次を参照してください。[アクティビティの検索方法](../core/how-to-search-for-activities.md)です。  
+# <a name="how-to-view-an-individual-activity"></a>個々 のアクティビティを表示する方法
+BAM Web ポータルの [Business Activity Search Results] ページでは、アクティビティを表示します。 アクティビティを検索する手順については、次を参照してください。[アクティビティの検索方法](../core/how-to-search-for-activities.md)します。  
   
 ### <a name="to-view-detailed-tracking-information"></a>詳細な追跡情報を表示するには  
   
-1.  BAM Web ポータルで利用可能なアクティビティを検索した後、[Business Activity Search Results] ページで、検索結果の中から、表示するアクティビティを表す行をクリックします。  
+1.  BAM Web ポータルで、使用可能なアクティビティを検索した後は、Business Activity Search Results ページで、表示するアクティビティを表す、返される戻り行をクリックします。  
   
-2.  [アクティビティの状態] ページに、選択したアクティビティに関する情報が表示されます。  
+2.  アクティビティの状態 ページは、選択したアクティビティに関する情報が表示されます。  
   
-3.  単一のビジネス アクティビティを表示した後で、そのアクティビティに関連するアクティビティまたはドキュメントを表示できます。  
+3.  1 つのビジネス アクティビティを表示した後は、任意の関連アクティビティまたは関連ドキュメントで表示できます。  
   
 ## <a name="see-also"></a>参照  
  [関連アクティビティおよび関連ドキュメントを表示する方法](../core/how-to-view-related-activities-and-related-documents.md)   

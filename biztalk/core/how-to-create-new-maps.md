@@ -12,25 +12,25 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03de6f3dc8445afa2171b6ca17099de85302692a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9eff8e4776ea1ead46f28572e4c950b3d72d970f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984379"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385497"
 ---
 # <a name="how-to-create-new-maps"></a>新しいマップを作成する方法
 
 ## <a name="overview"></a>概要
-新しい BizTalk マップを作成するための手順は、大きく次の 3 つに分けられます。  
+新しい BizTalk マップを構築するを実行する 3 つの大まかな手順があります。  
   
-1. BizTalk プロジェクト内に新しいマップを作成する。  
+1. BizTalk プロジェクト内に新しいマップを作成します。  
   
 2. マップ元と送信先スキーマを追加します。  
   
-3. 一連のリンクを構築したり、中間処理を行う Functoid を必要に応じて構築することにより、送信元スキーマと送信先スキーマとのマッピング方法を指定する。  
+3. リンクのセットを作成し、おそらく、中級レベルの functoid に送信先スキーマへの送信元スキーマのマップ方法を指定します。  
   
-   この説明では、最初の 2 つの手順は、マップを "作成" する手順として扱い、 3 つ目の手順はマップを "構築" する手順として扱っています。 マップの構築プロセスに関連するタスクの多くの詳しい手順については、「 [Functoid 作成複雑なマッピングを使用した](../core/using-functoids-to-create-more-complex-mappings.md)します。  
+   これら 3 つの手順の最初の 2 つは、現在のコンテキストで、マップの「作成」と見なされます。 3 番目の手順では、マップを「ビルド」と見なされます。 マップの構築プロセスに関連するタスクの多くの詳しい手順については、「 [Functoid 作成複雑なマッピングを使用した](../core/using-functoids-to-create-more-complex-mappings.md)します。  
   
 ## <a name="create-a-new-map"></a>新しいマップを作成します。 
   
@@ -40,10 +40,10 @@ ms.locfileid: "36984379"
   
 3. テキストを選択、**名前**ボックスで、マップの名前を入力し、選択**追加**します。  
   
-    Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の編集ウィンドウに BizTalk マッパーが開き、3 つのペインが隣り合わせに表示されます。 これらのペインに表示される内容は、左から送信元スキーマ、グリッド、および送信先スキーマです。グリッドには、複数のページが表示される場合もあります。  
+    BizTalk マッパーが開き、microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウで、3 つのペインでは、サイド バイ サイドでの表示を編集します。 左から右に、これらのペインに表示される (複数のページがあります) をグリッドで、送信元スキーマおよび送信先スキーマです。  
   
    > [!IMPORTANT]
-   >  マップに次の名前を使用することはできません:"XmlContent"、"SourceSchemas"、"TargetSchemas"、または"XsltArgumentListContent"。 これは、.NET アセンブリへコンパイルするとき、C# コードの生成で名前付けの制限の影響を受けるためです。  
+   >  マップに次の名前を使用することはできません。"XmlContent"、"SourceSchemas"、"TargetSchemas"、または"XsltArgumentListContent"。 .NET アセンブリにコンパイルには、生成された c# コードの結果として名前付けの制約が生成されるため、これらの名前を使用できません。  
   
 4. BizTalk マッパーで、左側のウィンドウで選択**ソース スキーマを開く**します。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "36984379"
   
 9. 送信先スキーマが複数のルート ノードと、使用して変換先スキーマのルート ノードが設定されていないかどうか、**ルート参照**のプロパティ、**スキーマ**ノードで、**ルート ノードターゲット スキーマの** ダイアログ ボックスでは、適切なルート ノードを選択し、選択**OK**します。  
   
-     右ペインに送信先スキーマが開きます。  
+     送信先スキーマは、右側のウィンドウで開きます。  
   
 ## <a name="see-also"></a>参照  
  [プロジェクト内のマップの管理](../core/managing-maps-within-projects.md)

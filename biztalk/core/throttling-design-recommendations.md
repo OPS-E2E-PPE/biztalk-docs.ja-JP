@@ -1,5 +1,5 @@
 ---
-title: 設計の推奨事項を調整 |Microsoft ドキュメント
+title: 制限の設計の推奨事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ebc5fff27bf634480c1de3c5e28f1184e0a8d046
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 784953dbc8b9cf33a883997b13e83554666b3488
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278546"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379968"
 ---
-# <a name="throttling-design-recommendations"></a>制限の設計時の推奨事項
-このセクションでは、制限を利用する場合のソリューションの設計方法に関する推奨事項について説明します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の制限エンジンの機能強化は、BizTalk Server のパフォーマンスに大きな影響を与える可能性があります。  
+# <a name="throttling-design-recommendations"></a>制限の設計の推奨事項
+このセクションでは、調整を活用するためにソリューションを設計する方法の推奨事項を提供します。 調整のエンジンの機能強化で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]BizTalk Server のパフォーマンスに大きく影響する可能性があります  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [関連付けられたメッセージの制限を回避する方法](../core/how-to-avoid-throttling-correlated-messages.md)  
+-   [関連付けられたメッセージのスロットルを回避する方法](../core/how-to-avoid-throttling-correlated-messages.md)  
   
--   [制限のしきい値の調整: タイミングと理由](../core/adjusting-throttling-thresholds-when-and-why.md)  
+-   [調整のしきい値の調整。タイミングと理由](../core/adjusting-throttling-thresholds-when-and-why.md)  
   
--   [[メッセージ カウント] データベースの制限のしきい値に含まれる保留メッセージ](../core/suspended-messages-included-in-message-count-in-database-throttling-threshold.md)
+-   [[データベースのメッセージ カウント] の制限のしきい値に含まれる保留メッセージ](../core/suspended-messages-included-in-message-count-in-database-throttling-threshold.md)

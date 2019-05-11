@@ -12,12 +12,12 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd362112a8edff37650aaa83da9c6ab33d0d697a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ec013447c0703a9f36469b5d6b452f82c91d8b7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017400"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381457"
 ---
 # <a name="invalid-address-relative-uri"></a>アドレスが無効です (相対 URI)
 ## <a name="details"></a>詳細  
@@ -36,7 +36,7 @@ ms.locfileid: "37017400"
  正しい形式の相対アドレスを使用して WCF 分離受信場所が指定されていませんでした。 たとえば、 http://localhost/svc 相対アドレスとしては機能しません。 WCF 分離受信場所の "アドレス" プロパティを絶対アドレスに設定することはできません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 受信場所のアドレスを構成するには、次の手順を実行します。  
+ 受信場所のアドレスを構成するのにには、次の手順を使用します。  
   
 #### <a name="to-configure-the-receive-location-address"></a>受信場所のアドレスを構成するには  
   
@@ -52,13 +52,13 @@ ms.locfileid: "37017400"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブ。  
   
 9. **アドレス (URI)** テキスト ボックスに、スラッシュ (「/」) を開始するようにアドレスを変更します。  
   
-   受信場所の詳細については、次の情報を参照してください。  
+   に関する追加情報については、受信場所を次のリソースを参照してください。  
   
 -   [Wcf-customisolated 受信場所を構成する方法](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   

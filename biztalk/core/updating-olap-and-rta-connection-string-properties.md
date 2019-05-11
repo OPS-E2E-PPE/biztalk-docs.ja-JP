@@ -1,5 +1,5 @@
 ---
-title: OLAP および RTA 接続文字列プロパティの更新 |Microsoft ドキュメント
+title: OLAP および RTA 接続文字列プロパティの更新 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bd36f84bab1d703479e11b0c6f1ffdd2cff69305
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 09acef6a0d97c437b1d25aa0f9f7e86c72c1e01c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286858"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398558"
 ---
 # <a name="updating-olap-and-rta-connection-string-properties"></a>OLAP 接続文字列および RTA 接続文字列のプロパティの更新
 OLAP 接続文字列およびリアルタイム集計 (RTA) 接続文字列の更新の詳細については、次のトピックを参照してください。これらのトピックでは、代替コンピューターへの BAM データベースの復元について説明しています。  
@@ -32,4 +32,4 @@ OLAP 接続文字列およびリアルタイム集計 (RTA) 接続文字列の�
 -   [BAM Analysis Server およびスター スキーマ データベース名への参照を更新する方法](../core/update-references-to-the-bam-analysis-server-and-star-schema-database-names.md)  
   
 ## <a name="see-also"></a>参照  
- [BAM ランタイムの設定を変更します。](../core/changing-bam-runtime-settings.md)
+ [BAM ランタイムの設定の変更](../core/changing-bam-runtime-settings.md)

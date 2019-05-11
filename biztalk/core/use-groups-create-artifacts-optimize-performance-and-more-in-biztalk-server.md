@@ -1,6 +1,6 @@
 ---
-title: グループを使用して、アイテムを作成する、パフォーマンス、および BizTalk Server の詳細を最適化 |Microsoft ドキュメント
-description: リンクを BizTalk 管理コンソールを使用してグループを作成、アプリケーションの展開、パフォーマンスの設定を変更および BizTalk Server で BizTalk サービスを再起動
+title: グループを使用して、アーティファクトの作成、パフォーマンス、および BizTalk Server では、複数の最適化 |Microsoft Docs
+description: BizTalk 管理コンソールを使用するクイック リンクのグループを作成、アプリケーションの展開、パフォーマンス設定を変更および BizTalk Server で BizTalk サービスを再起動
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,28 +15,28 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 28d46e846907e0ea22f24051e392019ddfc8b580
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2a3d95040ffd28c18288aa9c68d76525519ce744
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286962"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398589"
 ---
-# <a name="use-groups-create-artifacts-optimize-performance-and-more-in-biztalk-server"></a>グループを使用して、アイテムを作成する、パフォーマンス、および BizTalk Server で複数の最適化
-BizTalk Server グループ、アプリケーション、パフォーマンスの設定を管理およびサービスの再起動に関する情報。  
+# <a name="use-groups-create-artifacts-optimize-performance-and-more-in-biztalk-server"></a>グループを使用して、アーティファクトの作成、パフォーマンス、および BizTalk Server では、複数の最適化
+BizTalk Server グループ、アプリケーション、パフォーマンスの設定を管理して、サービスの再起動に関する情報です。  
   
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
   
 -   [管理ツール](../core/administration-tools.md)   
   
--   [BizTalk Server 管理コンソールを使用します。](../core/using-the-biztalk-server-administration-console.md)  
+-   [BizTalk Server 管理コンソールの使用](../core/using-the-biztalk-server-administration-console.md)  
   
--   [グループを管理します。](../core/managing-groups.md)  
+-   [グループの管理](../core/managing-groups.md)  
   
--   [展開して、BizTalk アプリケーションの管理](../core/deploying-and-managing-biztalk-applications.md)  
+-   [BizTalk アプリケーション展開、管理](../core/deploying-and-managing-biztalk-applications.md)  
   
 -   [プラットフォームの設定を管理します。](../core/managing-platform-settings.md)  
 
-- [BizTalk Server パフォーマンス設定を管理します。](../core/managing-biztalk-server-performance-settings.md)  
+- [BizTalk Server パフォーマンス設定の管理](../core/managing-biztalk-server-performance-settings.md)  
 
--   [BizTalk Server サービスを再起動し、BizTalk Server をシャット ダウン](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)  
+-   [BizTalk Server のサービスを再起動して、BizTalk Server をシャット ダウン](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)  

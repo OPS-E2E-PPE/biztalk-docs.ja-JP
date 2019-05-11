@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c86b8d66526c0406faedeac0aedbbe0e1b270ad
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fee939bb14b98dc66373d754af13d9f4bb327f2a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967923"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354461"
 ---
-# <a name="control-schema-should-have-header-segments-in-the-correct-order"></a>制御スキーマにはヘッダー セグメントが正しい順序で記述されている必要があります
+# <a name="control-schema-should-have-header-segments-in-the-correct-order"></a>コントロールのスキーマが正しい順序でのヘッダー セグメントがあります。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |
@@ -30,10 +30,10 @@ ms.locfileid: "36967923"
 |  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    コンポーネント    |                                       EDI エンジン                                       |
 |  シンボル名  |                                           -                                            |
-|  メッセージ テキスト   |  制御スキーマでは、次の順序でセグメントがあります: ISA GS ST.SE GE IEA  |
+|  メッセージ テキスト   |  コントロールのスキーマは、次の順序でセグメントが必要です。ISA GS ST.SE GE IEA  |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、インターチェンジ、グループ、およびトランザクション セットのヘッダーとトレーラーが、インターチェンジに正しい順序で記述されていなかったため、EDI 受信パイプラインで受信インターチェンジを処理できなかったことを示します。  
+ このエラー/警告/情報イベントは、EDI が受信することを示します、インターチェンジに正しい順序でヘッダーと、インターチェンジ、グループ、およびトランザクション セットのトレーラーがないために、パイプラインは受信したインターチェンジを処理できませんでした。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、ISA、GS、および ST ヘッダーと、SE、GE、および IEA トレーラーが、インターチェンジに正しい順序で記述されていることを確認してから、インターチェンジを再送信します。
+ このエラーを解決するには、こと、インターチェンジに正しい順序では、ISA、GS、および ST ヘッダーと SE、GE、および IEA トレーラー、およびもらい、インターチェンジを確認します。

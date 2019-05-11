@@ -1,5 +1,5 @@
 ---
-title: BizTalk プロジェクトの操作 |Microsoft ドキュメント
+title: BizTalk プロジェクトでの作業 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba1ffafeabc27a2b530e2d259a04baba02edb22d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b23d06f085f46ea888a88773855e3b5a515fecb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289002"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398551"
 ---
 # <a name="working-with-biztalk-projects"></a>BizTalk プロジェクトの操作
-BizTalk プロジェクト システムでアプリケーションを作成する場合の原則の多くは、Microsoft Visual Studio で利用可能な他のプロジェクト システムでアプリケーションを作成する場合と同じですが、プロジェクト ビルド構成のタイプなど、いくつか違いがあります。 ここでは、Microsoft BizTalk Server で動作するアプリケーションを作成するときに必要な作業のいくつかについて説明します。  
+プロジェクトのビルドの種類など、いくつかの違いがあるときに、BizTalk プロジェクト システムでアプリケーションを作成する場合の原則の多くは、Microsoft Visual Studio で利用可能なその他のプロジェクト システムでアプリケーションを作成するのと同じように、構成。 このセクションでは、Microsoft BizTalk Server で実行するアプリケーションを作成するときに実行するタスクの一部について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -30,18 +30,18 @@ BizTalk プロジェクト システムでアプリケーションを作成す�
   
 -   [BizTalk プロジェクトを作成する方法](../core/how-to-create-biztalk-projects.md)  
   
--   [BizTalk プロジェクトのプロパティを構成します。](../core/configuring-biztalk-project-properties.md)  
+-   [BizTalk プロジェクトのプロパティの構成](../core/configuring-biztalk-project-properties.md)  
   
--   [ソース管理と、BizTalk プロジェクト システム](../core/source-control-and-the-biztalk-project-system.md)  
+-   [ソース管理と BizTalk プロジェクト システム](../core/source-control-and-the-biztalk-project-system.md)  
   
 -   [BizTalk Server プロジェクトのバージョン管理](../core/biztalk-server-project-versioning.md)  
   
 -   [BizTalk Server プロジェクトを使用した単体テスト](../core/unit-testing-with-biztalk-server-projects.md)  
   
--   [BizTalk Server プロジェクトを移行します。](../core/migrating-a-biztalk-server-project.md)  
+-   [BizTalk Server プロジェクトの移行](../core/migrating-a-biztalk-server-project.md)  
   
 ## <a name="see-also"></a>参照  
- [BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開します。](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)   
- [BizTalk アプリケーションの展開と管理を理解します。](../core/understanding-biztalk-application-deployment-and-management.md)   
+ [BizTalk アプリケーションに Visual Studio から BizTalk アセンブリの展開](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)   
+ [BizTalk アプリケーションの展開と管理についてください。](../core/understanding-biztalk-application-deployment-and-management.md)   
  [BizTalk アプリケーションの展開と管理のチェックリスト](../core/biztalk-application-deployment-and-management-checklists.md)   
  [BizTalk アプリケーションの展開と管理のチュートリアル](http://msdn.microsoft.com/library/5321f8e0-1e2a-4ac4-a4a2-fc244071bc5b)

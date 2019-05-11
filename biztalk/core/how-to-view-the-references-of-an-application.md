@@ -15,15 +15,15 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a23583edde1e1edbf4f0613904ebf24271a225f5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fef2390710a90a9b03f9e6b791e873a358414b50
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383081"
 ---
 # <a name="how-to-view-the-references-of-an-application"></a>アプリケーションの参照を表示する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、現在のアプリケーションが参照しているアプリケーションの一覧を表示する方法について説明します。 参照を追加する方法の詳細については、[別のアプリケーションへの参照を追加する方法](../core/how-to-add-a-reference-to-another-application.md)を参照してください。 このアプリケーションを参照しているアプリケーションの一覧も表示できます。  
+このトピックでは、BizTalk Server 管理コンソールを使用して、現在のアプリケーションが参照しているアプリケーションの一覧を表示する方法について説明します。 参照を追加する方法の詳細については、次を参照してください。[別のアプリケーションへの参照を追加する方法](../core/how-to-add-a-reference-to-another-application.md)します。 このアプリケーションを参照しているアプリケーションの一覧も表示できます。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

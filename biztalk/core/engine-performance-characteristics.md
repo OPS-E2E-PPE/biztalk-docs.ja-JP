@@ -1,5 +1,5 @@
 ---
-title: エンジンのパフォーマンス特性 |Microsoft ドキュメント
+title: エンジンのパフォーマンス特性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8fbcc0e3c4a5cc476a7dc5098ba74adfa31fb034
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 55a892023140a49de9ed116235adb22567741f72
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239842"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389110"
 ---
 # <a name="engine-performance-characteristics"></a>エンジン パフォーマンスの特性
 このセクションでは、メッセージング エンジンが最適なパフォーマンスを得ていることを確認する方法について説明します。 維持可能な最大のエンジン スループットを測定する方法と、既定のホストの制限設定を変更する方法について説明します。  

@@ -18,12 +18,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f19db0461fc4dc5584fa0774ba0476e3ee471b8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e56eb836ffde957244b5ca80e6d7491f9e8c207c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969771"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378955"
 ---
 # <a name="configuring-a4swift-site-groups"></a>A4SWIFT サイト グループの構成
 Message Repair and New Submission の構成時に作成されたドキュメント ライブラリのアクセス許可をロックダウンする対応するサイトのグループを作成する必要があります。 前のセクションの例のように、A4SWIFT 管理者は MRSR サイトに移動して、次のサイト グループを設定します。  

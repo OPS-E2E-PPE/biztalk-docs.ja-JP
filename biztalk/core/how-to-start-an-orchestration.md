@@ -16,19 +16,19 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2593c68d642debcfcd8b49fa0ee67f806adc7c1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 49713fbaafab361faffdda7cc8b631b4fc94aed6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993059"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383842"
 ---
 # <a name="how-to-start-an-orchestration"></a>オーケストレーションを開始する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、オーケストレーションを開始する方法について説明します。 オーケストレーションを開始すると、受信メッセージの処理が開始されます。  
   
  オーケストレーションを開始する際には、次の重要事項を念頭に置いてください。  
   
--   オーケストレーションは、開始する前に、関連付けられたすべての送信ポートおよび送信ポート グループと共に参加させる必要があります。 手順については、[オーケストレーションを参加させる方法](../core/how-to-enlist-an-orchestration.md)と[に送信ポートまたは送信ポート グループを参加させる方法](../core/how-to-enlist-a-send-port-or-send-port-group.md)を参照してください。  
+-   オーケストレーションは、開始する前に、関連付けられたすべての送信ポートおよび送信ポート グループと共に参加させる必要があります。 手順については、次を参照してください。[オーケストレーションを参加させる方法](../core/how-to-enlist-an-orchestration.md)と[に送信ポートまたは送信ポート グループを参加させる方法](../core/how-to-enlist-a-send-port-or-send-port-group.md)します。  
   
 -   オーケストレーションを開始しても、関連付けられた送信ポートは自動的に開始されません。 説明されているように、個別に開始する必要があります[送信ポートまたは送信ポート グループを開始する方法](../core/how-to-start-a-send-port-or-send-port-group.md)します。  
   

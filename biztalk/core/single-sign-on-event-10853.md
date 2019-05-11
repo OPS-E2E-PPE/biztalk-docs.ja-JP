@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10853 |Microsoft Docs'
+title: シングル サインオン:イベント 10853 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ffa403132b6213bef54df8653bb1b34e82c95319
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c9682f78aa755a6954898c48d69817a5e49e65aa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023504"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306689"
 ---
-# <a name="single-sign-on-event-10853"></a>シングル サインオン: イベント 10853
+# <a name="single-sign-on-event-10853"></a>シングル サインオン:イベント 10853
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "37023504"
 |  イベント ソース   |                                                   ENTSSO                                                   |
 |    コンポーネント    |                                                    なし                                                     |
 |  シンボル名  |                                         ENTSSO_E_MAPPING_NO_ACCESS                                         |
-|  メッセージ テキスト   | 指定されたユーザーが Application Users アカウントのメンバーではないため、マッピングを作成できません。 |
+|  メッセージ テキスト   | 指定したユーザーがアプリケーション ユーザー アカウントのメンバーではないために、マッピングを作成できません。 |
   
 ## <a name="explanation"></a>説明  
- 指定されたユーザーが Application Users アカウントのメンバーではないため、マッピングを作成できません。  
+ 指定したユーザーがアプリケーション ユーザー アカウントのメンバーではないために、マッピングを作成できません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- システム管理者に連絡し、アプリケーション ユーザー アカウントのメンバーを探して、このマッピングを作成します。
+ このマッピングを作成するには、アプリケーション ユーザー アカウントのメンバーの検索に役立つ、システム管理者に依頼します。

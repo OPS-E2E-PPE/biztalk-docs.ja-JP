@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 230f0a03e1274fec7ef196ce12cc3be33ff2702b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0ef3f6f9e571f3469c2bd0de163f7ada90d0be7c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004563"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388972"
 ---
-# <a name="the-as2-decoder-was-unable-to-locate-the-disposition-notification-options-http-header"></a>AS2 デコーダーは、Disposition-Notification-Options HTTP ヘッダーを見つけられませんでした
+# <a name="the-as2-decoder-was-unable-to-locate-the-disposition-notification-options-http-header"></a>AS2 デコーダーが廃棄通知-オプションの HTTP ヘッダーを見つけられませんでした。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                             |

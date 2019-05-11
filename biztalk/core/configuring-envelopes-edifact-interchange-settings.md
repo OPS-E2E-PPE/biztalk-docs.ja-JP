@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80957d82a70b0fca8a11ace428f87496b45dcb31
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 45f3f37172f67040a9ff95d083379e1237e56064
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993595"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355842"
 ---
 # <a name="configuring-envelopes-edifact-interchange-settings"></a>エンベロープを構成する (EDIFACT インターチェンジの設定)
 このセクションでは、送信 EDIFACT メッセージのエンベロープを構成する方法について説明します。  
@@ -30,15 +30,15 @@ ms.locfileid: "36993595"
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
   
-### <a name="to-configure-the-interchange-envelope"></a>インターチェンジ エンベロープを構成するには  
+### <a name="to-configure-the-interchange-envelope"></a>インターチェンジのエンベロープを構成するには  
   
 1. EDIFACT エンコード アグリーメントを」の説明に従って作成[を構成する一般的な設定 (EDIFACT)](../core/configuring-general-settings-edifact.md)します。 既存のアグリーメントを更新するでアグリーメントを右クリックし、**パーティとビジネス プロファイル**ページ、およびクリックして**プロパティ**します。  
   
 2. 一方向アグリーメント タブで、**インターチェンジの設定**セクションで、**エンベロープ**します。  
   
-3. **処理優先度コード (UNB8)**、1 つの文字の最小値、1 つの文字のアルファベット順の値を入力します。 このフィールドの入力は省略可能です。  
+3. **処理優先度コード (UNB8)**、1 つの文字の最小値、1 つの文字のアルファベット順の値を入力します。 これは、オプションのフィールドです。  
   
-4. **通信アグリーメント (UNB10)**、1 つの文字の最小値、最大 35 文字の英数字を入力します。 このフィールドは省略可能です。   
+4. **通信アグリーメント (UNB10)**、1 つの文字の最小値、最大 35 文字の英数字を入力します。 これは省略可能なフィールド  
   
 5. 選択**テスト インジケーター (UNB11)** で、インターチェンジが生成されることを示す[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がテスト データ。  
   

@@ -25,17 +25,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 083746c38a175db840f4554297e86d26b5fcb366
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a6b4a6d6714b7e4f3d31ad25c72277ef725d3592
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383313"
 ---
 # <a name="how-to-use-multi-part-message-types"></a>マルチパート メッセージの種類を使用する方法
 各メッセージには、マルチパート メッセージの種類、0 個以上のメッセージ部分で構成されるメッセージ構造の記述があります。 これらの部分は、XSD (XML Schema Definition) 言語スキーマまたは .NET クラスによって定義されます。 独自のマルチパート メッセージの種類を定義したり、既存の .NET クラスおよびスキーマを使用することもできます。  
 
- メッセージ部分は、オーケストレーション内で直接アクセスしたり割り当てたりできます。また、識別フィールドまたはプロパティ フィールドとして公開されている、メッセージ部分の各要素を使用することもできます。 詳細については、[識別フィールドおよびメッセージ プロパティ](../core/using-distinguished-fields-and-property-fields.md)を参照してください。  
+ メッセージ部分は、オーケストレーション内で直接アクセスしたり割り当てたりできます。また、識別フィールドまたはプロパティ フィールドとして公開されている、メッセージ部分の各要素を使用することもできます。 詳細については、次を参照してください。[識別フィールドおよびメッセージ プロパティ](../core/using-distinguished-fields-and-property-fields.md)します。  
 
 > [!NOTE]
 >  マルチパート メッセージの種類に含める部分は、複数とは限りません。  

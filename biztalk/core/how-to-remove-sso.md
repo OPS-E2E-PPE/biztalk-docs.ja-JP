@@ -17,19 +17,19 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb712972c0fd7ba8975f30ee6519812dd863e442
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c72d8a0f718ce42adbae6eacde6b5a140d82469
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384256"
 ---
 # <a name="how-to-remove-sso"></a>SSO を削除する方法
-BizTalk Server を削除すると、エンタープライズ シングル サインオン (SSO) を必要とする製品で SSO が使用されていない限り、SSO の構成は解除されます。 ただし、SSO は削除されません。 SSO は個別に削除する必要があります。 また、マスタ シークレットなどの構成情報を復元して、既存のデータを再利用することもできます。 詳細については、[マスター シークレットを復元する方法](../core/how-to-restore-the-master-secret.md)を参照してください。  
+BizTalk Server を削除すると、エンタープライズ シングル サインオン (SSO) を必要とする製品で SSO が使用されていない限り、SSO の構成は解除されます。 ただし、SSO は削除されません。 SSO は個別に削除する必要があります。 また、マスタ シークレットなどの構成情報を復元して、既存のデータを再利用することもできます。 詳細については、次を参照してください。[マスター シークレットを復元する方法](../core/how-to-restore-the-master-secret.md)します。  
   
 ### <a name="to-remove-enterprise-single-sign-on"></a>エンタープライズ シングル サインオンを削除するには  
   
-1. マスタ シークレットをバックアップします。 詳細については、[バックアップ マスター シークレットを方法](../core/how-to-back-up-the-master-secret.md)を参照してください。  
+1. マスタ シークレットをバックアップします。 詳細については、次を参照してください。[バックアップ マスター シークレットを方法](../core/how-to-back-up-the-master-secret.md)します。  
   
 2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をアンインストールします。  
   

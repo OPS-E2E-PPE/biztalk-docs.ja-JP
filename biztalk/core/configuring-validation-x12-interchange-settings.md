@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7eba4a7cbeffe342e37c366c3ce391018beec748
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0782546e8d016aba2f8ccc4bcd5b7ad5e81412de
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355092"
 ---
 # <a name="configuring-validation-x12-interchange-settings"></a>検証の構成 (X12 インターチェンジの設定)
-X12 インターチェンジの検証生成設定では、受信したインターチェンジの重複する制御番号を [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で確認する方法を定義します。  
+X12 インターチェンジの検証生成の設定を定義する方法[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信したインターチェンジの重複した制御番号を確認します。  
   
 > [!NOTE]
->  ここで説明する設定は、HIPAA インターチェンジの検証にも適用されます。  
+>  ここで説明した設定は、HIPAA インターチェンジの検証にも適用されます。  
   
 > [!IMPORTANT]
 >  プロパティは無効になりませんこのページをオフにした場合でも、**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信したメッセージを処理する**チェック ボックスを作成するパーティを作成するときに、。契約です。  
@@ -37,7 +37,7 @@ X12 インターチェンジの検証生成設定では、受信したインタ�
   
 2. 一方向アグリーメント タブで、**インターチェンジの設定**セクションで、**検証**です。  
   
-3. 選択、**インターチェンジ制御番号**受信パイプラインによる重複インターチェンジのブロックを有効にする チェック ボックス。 選択した場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は受信したインターチェンジのインターチェンジ制御番号 (ISA13) では、インターチェンジ制御番号が一致しないことを確認します。 一致した制御番号が検出された場合、受信パイプラインはインターチェンジを処理しません。  
+3. 選択、**インターチェンジ制御番号**受信パイプラインによる重複インターチェンジのブロックを有効にする チェック ボックス。 選択した場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は受信したインターチェンジのインターチェンジ制御番号 (ISA13) では、インターチェンジ制御番号が一致しないことを確認します。 一致が検出されると、受信パイプラインはインターチェンジを処理できません。  
   
 4. 場合**インターチェンジ制御番号**がオン、**内で重複している isa13 を確認**フィールドに、特定を使用して、重複するインターチェンジに対する確認を実行する日数を入力します。インターチェンジ制御番号。  
   

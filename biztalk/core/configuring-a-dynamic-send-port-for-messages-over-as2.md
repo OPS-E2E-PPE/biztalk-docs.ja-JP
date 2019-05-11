@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9cacc1d502e258a68934ed66b8f67032f94d1620
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: af1952947120a6f90310244f7ef17ee6fc5810d1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005692"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356397"
 ---
 # <a name="configuring-a-dynamic-send-port-for-messages-over-as2"></a>AS2 経由でのメッセージの動的送信ポートの構成
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成し、動的送信ポートを経由して AS2 メッセージを送信する方法について説明します。 この構成作業では、動的送信ポートを作成し、バックエンド アプリケーションを構成して該当するコンテキスト プロパティを設定します。 動的送信ポートを作成して AS2 メッセージを送信する場合、送信ポートが動作するように特定のプロパティを昇格する必要があります。 詳細については、次を参照してください。[送信ポートを動的にメッセージを BizTalk Server AS2 の送信を構成](../core/configuring-a-dynamic-send-port-for-messages-over-as2.md#BKMK_Proc)以下。  
@@ -28,12 +28,12 @@ ms.locfileid: "37005692"
   
 |場所|プロパティ|設定|  
 |--------------|--------------|-------------|  
-|**送信ポートのプロパティ: 全般**|ポートの種類|-動的な送信請求-応答 (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブでページが選択されている)<br /><br /> -動的な一方向送信ポート (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブでページがクリアされます)|  
-|**送信ポートのプロパティ: 全般**|[送信パイプライン]|-AS2EdiSend (EDI エンコード メッセージの場合)<br /><br /> -AS2Send (非 EDI メッセージの場合)|  
-|**送信ポートのプロパティ: 全般**|受信パイプライン。<br /><br /> (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブでページが選択されている)|AS2Receive (動的な送信請求応答の送信ポートの場合)|  
-|**送信ポートのプロパティ: フィルター**|プロパティ|BTS.MessageType|  
-|**送信ポートのプロパティ: フィルター**|演算子|==|  
-|**送信ポートのプロパティ: フィルター**|値|- `http://schemas.microsoft.com/BizTalk/EDI/X12/2006#<schema name>` (の EDI メッセージの場合)<br /><br /> - `http://schemas.microsoft.com/Edi/X12#X12_<997 or TA1>_Root` (x12 受信確認)<br /><br /> - `http://schemas.microsoft.com/Edi/Efact#Efact_Contrl_Root` (EDIFACT 受信確認) を|  
+|**送信ポートのプロパティ:[全般]**|ポートの種類|-動的な送信請求-応答 (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブでページが選択されている)<br /><br /> -動的な一方向送信ポート (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブでページがクリアされます)|  
+|**送信ポートのプロパティ:[全般]**|[送信パイプライン]|-AS2EdiSend (EDI エンコード メッセージの場合)<br /><br /> -AS2Send (非 EDI メッセージの場合)|  
+|**送信ポートのプロパティ:[全般]**|受信パイプライン。<br /><br /> (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブでページが選択されている)|AS2Receive (動的な送信請求応答の送信ポートの場合)|  
+|**送信ポートのプロパティ:フィルター**|プロパティ|BTS.MessageType|  
+|**送信ポートのプロパティ:フィルター**|演算子|==|  
+|**送信ポートのプロパティ:フィルター**|値|- `http://schemas.microsoft.com/BizTalk/EDI/X12/2006#<schema name>` (の EDI メッセージの場合)<br /><br /> - `http://schemas.microsoft.com/Edi/X12#X12_<997 or TA1>_Root` (x12 受信確認)<br /><br /> - `http://schemas.microsoft.com/Edi/Efact#Efact_Contrl_Root` (EDIFACT 受信確認) を|  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。  
@@ -61,7 +61,7 @@ ms.locfileid: "37005692"
    -   `BTS.EncryptionCert`  
   
    > [!NOTE]
-   >  動的送信ポートが正しく機能するように、`AS2To` および `OutboundTransportLocation` の各コンテキスト プロパティをメッセージ コンテキストに書き込む必要があります。 `AS2To` プロパティは、送信メッセージの処理に使用するアグリーメントをポートで決定するために必要です。`OutboundTransportLocation` プロパティは、メッセージの送信先を送信ポートで決定するために必要です。 詳細については、[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)を参照してください。  
+   >  動的送信ポートが正しく機能するように、`AS2To` および `OutboundTransportLocation` の各コンテキスト プロパティをメッセージ コンテキストに書き込む必要があります。 `AS2To` プロパティは、送信メッセージの処理に使用するアグリーメントをポートで決定するために必要です。`OutboundTransportLocation` プロパティは、メッセージの送信先を送信ポートで決定するために必要です。 詳細については、次を参照してください。[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)します。  
   
 ## <a name="functionality"></a>機能  
  動的送信ポートとパイプラインは次の操作を実行して、AS2 経由で同期 EDI メッセージ、非 EDI メッセージ、または受信確認を送信し、返された MDN を処理します。  
@@ -78,14 +78,14 @@ ms.locfileid: "37005692"
   
 - 非 EDI メッセージを送信する場合は、適切なフィルタを使用してメッセージを取得します。  
   
-- AS2 メッセージを構築します。 このプロセスの詳細については、[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)を参照してください。  
+- AS2 メッセージを構築します。 このプロセスの詳細については、次を参照してください。[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)します。  
   
   > [!NOTE]
   >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、http、smtp、ftp などの URL の形式から、動的送信ポートで使用するトランスポートの種類を決定します。  
   
 - メッセージや受信確認を送信ポートの送信先 URL にルーティングします。  
   
-- メッセージや受信確認に対する MDN 応答を受信します (この処理が有効になっている送信請求応答の送信ポートの場合)。 このプロセスの詳細については、[受信 MDN の処理](../core/processing-an-incoming-mdn.md)を参照してください。  
+- メッセージや受信確認に対する MDN 応答を受信します (この処理が有効になっている送信請求応答の送信ポートの場合)。 このプロセスの詳細については、次を参照してください。[受信 MDN の処理](../core/processing-an-incoming-mdn.md)します。  
   
 ## <a name="see-also"></a>参照  
  [AS2 ソリューションのポートの構成](../core/configuring-ports-for-an-as2-solution.md)

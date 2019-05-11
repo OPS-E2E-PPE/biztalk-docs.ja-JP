@@ -1,5 +1,5 @@
 ---
-title: メッセージ ボックス データベースの管理 |Microsoft ドキュメント
+title: メッセージ ボックス データベースの管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,21 +16,21 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0e854ad0f7014de8241f8a7b6af6addd49cb4da5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 75dc3bdcd2d30eb7f8b0f5604d3e7e61cc54de59
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262146"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380349"
 ---
 # <a name="managing-messagebox-databases"></a>メッセージ ボックス データベースの管理
-メッセージ ボックス データベースには 3 つの重要な役割があります。 1 つ目は、サブスクリプションと追跡情報を格納し、サブスクリプションと一致するサービスにメッセージを配信することです。 2 つ目は、各 BizTalk ホストのキューと状態テーブルを格納するホスト プラットフォームとして機能することです。 そして、3 つ目は、メッセージやメッセージ プロパティを格納することです。  
+メッセージ ボックス データベースには、3 つの重要な機能が備わっています。 サブスクリプションを保存し、サブスクリプションに一致するサービスに、メッセージを配信する追跡情報。 メッセージ ボックス データベースは、各 BizTalk ホストのキューおよび状態テーブルを格納するホスト プラットフォームです。 メッセージ ボックス データベースには、メッセージおよびメッセージ プロパティも格納されます。  
   
- メッセージ ボックス データベースが環境内でリスクの度合いの高い資産である場合は、インターネット プロトコル セキュリティ (IPSec) または Secure Sockets Layer (SSL) を使用して、メッセージ ボックス データベースとの通信を制限し、セキュリティで保護することをお勧めします。  
+ メッセージ ボックス データベースが環境内で露出度の危険度の高い資産である場合は、インターネット プロトコル セキュリティ (IPSec) または Secure Sockets Layer (SSL) を使用して制限して、メッセージ ボックス データベースとの通信をセキュリティで保護することをお勧めします。  
   
- Windows Server 2003 を使用する場合、メッセージ ボックス データベースで、分散データ トランザクション コーディネーター (DTC) を有効にする必要があります。 また、複数コンピューター展開ではネットワーク クライアントも有効にする必要があります。 詳細については、次を参照してください。[管理サーバーのポート](../core/ports-for-the-administration-server.md)です。  
+ Windows Server 2003 を使用する場合は、メッセージ ボックス データベースでの分散トランザクション コーディネーター (DTC) を有効にする必要があります。 また、複数コンピューター展開のネットワーク クライアントを有効にする必要があります。 詳細については、次を参照してください。[管理サーバーのポート](../core/ports-for-the-administration-server.md)します。  
   
- このセクションでは、環境内のメッセージ ボックス データベースを管理するための操作手順について説明します。 Microsoft のモデルの概要については、メッセージ ボックス データベースおよびサブスクリプション[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、メッセージの処理に使用するを参照してください[、メッセージ ボックス データベース](../core/the-messagebox-database.md)です。  
+ このセクションには、環境内でのメッセージ ボックス データベースの管理の手順に関する情報が含まれています。 メッセージ ボックス データベースとサブスクリプションの概念については、Microsoft をモデル化[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージを処理するために使用を参照してください[、メッセージ ボックス データベース](../core/the-messagebox-database.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

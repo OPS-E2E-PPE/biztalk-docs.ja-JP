@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 380af93ccba2671e3ffa3e6377c049eaf23dcd67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f8005fa8287b7156374445b1a596a2c4bc21709c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995819"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379481"
 ---
 # <a name="monitoring-biztalk-server-with-system-center-operations-manager-2007"></a>System Center Operations Manager 2007 による BizTalk Server の監視
 BizTalk アプリケーションと Microsoft System Center Operations Manager (Operations Manager) でインフラストラクチャの監視は、推奨される監視アプローチです。 Operations Manager 用の Microsoft BizTalk Server 管理パックの提供を実行するコンピューターの監視を主体的かつ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 これらの管理パックの提供を包括的な自動監視を許可するルールを組み込み、カスタマイズ可能な多数の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  

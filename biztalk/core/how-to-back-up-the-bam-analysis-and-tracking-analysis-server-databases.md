@@ -29,43 +29,43 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e1b7dca60859d0dcda69d6c9110b4be08d90586b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f2fdd707375404f26f9310c6c2d38a6f2dfcb4ae
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983379"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387115"
 ---
 # <a name="how-to-back-up-the-bam-analysis-and-tracking-analysis-server-databases"></a>BAM 分析データベースおよび Tracking Analysis Server データベースをバックアップする方法
-ビジネス アクティビティ監視 (BAM) 分析データベースおよび Tracking Analysis Server データベースには、SQL Server Analysis Services キューブの内容が格納されます。 BizTalk Server のバックアップ ジョブでは、これらのデータベースはバックアップされません。 これらのデータベースをバックアップするには、SQL Server 分析マネージャを使用する必要があります。  
+ビジネス アクティビティ監視 (BAM) 分析データベースおよび Tracking Analysis Server データベースは、SQL Server Analysis Services キューブにコンテンツを保存します。 BizTalk Server のバックアップ ジョブでは、これらのデータベースをバックアップしません。 代わりに、これらのデータベースをバックアップするには、SQL Server 分析マネージャを使用する必要があります。  
   
- これらのデータベースをバックアップした後で、OLAP キューブを削除できます。 OLAP キューブを削除する場合には、次の手順も実行してください。  
+ これらのデータベースをバックアップした後、OLAP キューブを削除したい場合があります。 OLAP キューブを削除するときに、次の手順も実行する必要があります。  
   
-1. OLAP キューブを削除する前に、BAMStarSchema データベースで、削除するキューブのファクト テーブルを切り捨てます。 テーブルの名前付け規則は"bam _*\<CubeName\>*_Facts"です。  
+1. 削除する前に、BAMStarSchema データベースで、OLAP キューブを削除するキューブのファクト テーブルを切り捨てます。 テーブルの名前付け規則は"bam _*\<CubeName\>*_Facts"です。  
   
-2. OLAP キューブを削除した後で、アクティブなキューブ、完了したキューブ、および仮想キューブを完全に処理する必要があります。  
+2. OLAP キューブを削除した後では、アクティブ、完了、および仮想キューブを完全に処理する必要があります。  
   
-   分析データベースをバックアップする方法については、SQL Server Books Online の「Analysis Services データベースのアーカイブ (Archiving an Analysis Services Database)」を参照してください。  
+   分析データベースをバックアップする方法の詳細については、「アーカイブ Analysis Services データベースの」SQL Server オンライン ブックを参照してください。  
   
    **BAM データベースのバックアップのスケジュール設定**  
   
-   BAM を使用している場合は、バックアップ パッケージの実行がスケジュールされているときに、並行して BAM キューブ プロセスやデータ管理のデータ変換サービス (DTS) パッケージが実行されないか、確認します。  
+   BAM を使用している場合は、バックアップ パッケージの実行がスケジュールされるときにも、BAM キューブ プロセスやデータ メンテナンス データ変換サービス (DTS) パッケージが実行されていることを確認します。  
   
-   すべての BAM データベースでスキーマの一貫性を確保するには、BAM アクティビティを展開または展開解除するたびに、BAM データベースおよび DTS パッケージをバックアップします。  
+   すべての BAM データベース間で一貫したスキーマを確実にデプロイしたり、BAM アクティビティを展開解除するたびを BAM データベースおよび DTS パッケージをバックアップします。  
   
-   BAM ビューを展開または展開解除するたびに、BAM 分析データベースおよび BAMStarSchema データベースをバックアップします。  
+   展開または BAM ビューを展開解除するたびに、BAM 分析データベースおよび BAMStarSchema データベースをバックアップします。  
   
    次の順序で BAM データベースをバックアップします。  
   
-3. BizTalk Server のバックアップ ジョブを実行して、BAMPrimaryImport データベースおよび他の BizTalk Server データベースをバックアップします。  
+3. BAMPrimaryImport データベースおよび他の BizTalk Server データベースをバックアップする BizTalk Server のバックアップ ジョブを実行します。  
   
-4. すべてのアクティビティに対して、BAM データ管理 DTS パッケージを実行します。  
+4. すべてのアクティビティを BAM データ保守 DTS パッケージを実行します。  
   
-    これらの手順を DTS パッケージに組み込み、パッケージが定期的に実行されるようにスケジュール設定します。 確実にデータの整合性を保つためには、このバックアップ パッケージの実行がスケジュールされているときに、並行して他の BAM キューブまたはデータ管理 DTS パッケージが実行されることのないようにします。  
+    DTS パッケージでは、次の手順を組み込むし、定期的に実行するパッケージのスケジュール設定します。 データの整合性を確保するには、いないことを確認の他の BAM キューブまたはデータ保守 DTS パッケージがこのバックアップ パッケージの実行がスケジュールされるときに実行します。  
   
-    BAMArchive データベースでエラーが発生した場合に、アーカイブしたデータの完全なセットを確実に回復できるようにするには、BAMArchive データベースのバックアップは、パーティションを BAMArchive データベースにコピーした後、パーティションを BAMPrimaryImport データベースから削除する前に行います。 そのためには、各アクティビティのデータ管理 DTS パッケージを変更して、DTS パッケージの最後の手順 "アーカイブ終了" の前に、BAMArchive データベースをバックアップする手順を挿入します。  
+    BAMArchive データベースが失敗した場合、BAMArchive データベースをバックアップするパーティションを BAMArchive データベースにコピーした後、BAMPrimaryImport データベースからパーティションを削除する前に、アーカイブされたデータの完全なセットを回復できるようにします。 これを行うには、変更、DTS パッケージの最後のステップの前に、BAMArchive データベースをバックアップするステップを挿入するには、各アクティビティのデータ管理 DTS パッケージ「アーカイブ終了」です。  
   
-5. BAMAnalysis データベースおよび BAMStarSchema メッセージ スキーマをバックアップします。  
+5. BAMAnalysis データベースおよび BAMStarSchema データベースをバックアップします。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server データベースのバックアップと復元](../core/backing-up-and-restoring-the-biztalk-server-databases.md)

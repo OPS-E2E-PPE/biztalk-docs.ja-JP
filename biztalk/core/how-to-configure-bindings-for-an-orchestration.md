@@ -12,22 +12,22 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc4daaf1fec46dea10003d8037003ad894733c2b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6de8d8626dbe0ad110e46d399c32f2dc9ba8a321
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386309"
 ---
 # <a name="how-to-configure-bindings-for-an-orchestration"></a>オーケストレーションのバインドを構成する方法
 
 ## <a name="overview"></a>概要
 このトピックでは、BizTalk Server 管理コンソールを使用して、オーケストレーションのバインドを構成する方法について説明します。 この作業には、オーケストレーションをホストにバインドしたり、オーケストレーションに定義されている論理ポートを、ステージング環境や実稼働環境の物理ポートにバインドしたりする作業が含まれます。 オーケストレーションのバインドが済んでいる場合は、この手順を使ってバインドを変更することができます。  
   
- バインドの構成後、オーケストレーションを参加させることによって、メッセージの処理を開始できます。 これらのタスクを実行する方法の詳細については、[オーケストレーションを参加させる方法](../core/how-to-enlist-an-orchestration.md)と[オーケストレーションを開始する方法](../core/how-to-start-an-orchestration.md)を参照してください。  
+ バインドの構成後、オーケストレーションを参加させることによって、メッセージの処理を開始できます。 これらのタスクを実行する方法の詳細については、次を参照してください。[オーケストレーションを参加させる方法](../core/how-to-enlist-an-orchestration.md)と[オーケストレーションを開始する方法](../core/how-to-start-an-orchestration.md)します。  
   
 > [!NOTE]
->  アプリケーション開発者が開発プロセス中にオーケストレーションのバインドを構成してその機能をテストするには、このトピックの手順を実行します。 また、Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+>  アプリケーション開発者が開発プロセス中にオーケストレーションのバインドを構成してその機能をテストするには、このトピックの手順を実行します。 また、Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、次を参照してください。、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

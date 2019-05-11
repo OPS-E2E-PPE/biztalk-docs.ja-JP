@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df19296fcf6c93d582034464402597248335e826
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4018ddf9a2b542de9545f566cf88d26069672ef1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019170"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398157"
 ---
 # <a name="receivelocations-biztalk-server-sample"></a>ReceiveLocations (BizTalk Server サンプル)
 ReceiveLocations サンプルを作成する方法を示しますの受信場所で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境を使用して、 **ExplorerOM**管理オブジェクト。 詳細については、通常の受信場所を参照してください[受信場所](../core/receive-locations.md)します。  
@@ -29,18 +29,18 @@ ReceiveLocations サンプルを作成する方法を示しますの受信場所
 - Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、「 [実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)」を参照してください。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルを使用して、 **ExplorerOM**管理クラスを作成および構成の受信ポートと受信場所。 このトピックには、Windows PowerShell のスクリプト例も含まれています。 このサンプルは、次の操作を実行します。  
+ このサンプルを使用して、 **ExplorerOM**管理クラスを作成および構成の受信ポートと受信場所。 このトピックには、Windows PowerShell のスクリプト例も含まれています。 サンプルでは、次の操作を実行します。  
 
--   "My Receive Port" という名前の新しい受信ポートを作成します。  
+-   新しい"My Receive Port"という名前のポートを受信します。  
 
--   新しいポートに関連付けられ、HTTP トランスポート プロトコルを使用するよう構成された新しい受信場所を作成します。  
+-   新しい受信場所、新しいポートに関連付けられているし、HTTP トランスポート プロトコルを使用するように構成します。  
 
--   このサンプルには、受信ポートと受信場所の削除と列挙を行う手順の例も含まれています。  
+-   このサンプルでは、プロシージャを削除および列挙の受信ポートと受信場所の例も含まれています。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、次の SDK の場所にあります。  
 
- \<*パスのサンプル*\> \Admin\ExplorerOM\ReceiveLocations  
+ \<*Samples Path*\> \Admin\ExplorerOM\ReceiveLocations  
 
  次の表は、このサンプルのファイルとその目的を示しています。  
 
@@ -48,28 +48,28 @@ ReceiveLocations サンプルを作成する方法を示しますの受信場所
 |                     ファイル                      |                                                   説明                                                    |
 |--------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 |               ReceiveLocations.cs                | [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] このサンプルで示す操作のソース ファイルです。 |
-| ReceiveLocations.sln と ReceiveLocations.csproj |                                   このサンプルのソリューション ファイルとプロジェクト ファイルです。                                    |
+| ReceiveLocations.sln と ReceiveLocations.csproj |                                   このサンプルのソリューションおよびプロジェクト ファイル。                                    |
 
 ## <a name="building-and-running-this-sample"></a>このサンプルのビルドおよび実行  
 
 #### <a name="to-build-this-sample"></a>このサンプルをビルドするには  
 
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル ReceiveLocations.sln を開きます。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション ファイル ReceiveLocations.sln を開きます。  
 
 2. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
 
 #### <a name="to-run-this-sample"></a>このサンプルを実行するには  
 
-1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権のあるコマンド プロンプトを開きます。  
+1. 使用して、コマンド プロンプトを開く[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理者権限。  
 
 2. 変更、 \<*サンプル*\>\Admin\ExplorerOM\ReceiveLocations\bin\debug ディレクトリ。  
 
 3. ReceiveLocations.exe を実行します。  
 
-4. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで新しい受信ポートと受信場所を表示します。  
+4. ビュー、新しい受信ポートと受信場所が、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
 
 ## <a name="windows-powershell-script-example"></a>Windows PowerShell スクリプトの例  
- 次の PowerShell スクリプト例は、[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] バージョンと同じ操作を実行します。 このトピックの要件セクションで示したように、スクリプト実行ポリシーが正しく構成されていることを確認します。  
+ 次の PowerShell サンプル スクリプトと同じ操作を示します、[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]バージョン。 このトピックの必要条件」で説明したように、スクリプトの実行ポリシーを正しく構成されていることを確認します。  
 
 ```  
 #==================================================================#  
@@ -227,7 +227,7 @@ EnumerateReceiveLocations
 
 ```  
 
- 次に、作成され削除される受信ポートと受信場所を示す PowerShell スクリプト実行からの出力例を示します。  
+ 受信ポートと作成され削除される場所を示す PowerShell スクリプトの実行からの出力例を次に示します。  
 
 ```  
 PS C:\> .\ReceiveLocations.ps1  

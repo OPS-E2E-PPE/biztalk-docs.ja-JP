@@ -1,5 +1,5 @@
 ---
-title: プロパティ エラー |Microsoft ドキュメント
+title: プロパティ エラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,52 +12,52 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4c03358ba08df939e7058a6d73603969dcddd8e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2576fd336de135962d63a7c76b589671ba85faaa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22265082"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398520"
 ---
 # <a name="properties-errors"></a>プロパティ エラー
-ここでは、WCF のプロパティ エラーを診断および解決するための詳細について説明します。  
+このセクションには、診断、および WCF のプロパティのエラーを解決するための詳細情報が含まれています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [プロパティの読み込みエラー](../core/error-loading-properties.md)  
+-   [プロパティの読み込み中にエラーが発生しました](../core/error-loading-properties.md)  
   
--   [プロパティの保存エラー](../core/error-saving-properties.md)  
+-   [プロパティの保存中にエラーが発生しました](../core/error-saving-properties.md)  
   
--   [無効なプロジェクトの場所](../core/invalid-project-location.md)  
+-   [プロジェクトの場所が無効です](../core/invalid-project-location.md)  
   
--   [メッセージ部分の要素が見つかりません](../core/message-part-missing-element.md)  
+-   [メッセージ部分に要素が見つかりません](../core/message-part-missing-element.md)  
   
--   [メッセージの種類の部分はサポートされていません](../core/message-types-without-parts-are-not-supported.md)  
+-   [部分が空のメッセージの種類はサポートされていません](../core/message-types-without-parts-are-not-supported.md)  
   
--   [OutboundCustomHeaders は正しい形式はいません](../core/outboundcustomheaders-does-not-have-correct-format.md)  
+-   [OutboundCustomHeaders は正しい形式ではありません](../core/outboundcustomheaders-does-not-have-correct-format.md)  
   
--   [プロジェクトの場所が空ではありません。](../core/the-project-location-is-not-empty.md)  
+-   [プロジェクトの場所は空ではありません](../core/the-project-location-is-not-empty.md)  
   
--   [XML 構成からエンドポイント動作の構成要素を作成できません。](../core/unable-to-create-endpoint-behavior-configuration-element-from-xml-configuration.md)  
+-   [XML 構成からエンドポイント動作の構成要素を作成できません](../core/unable-to-create-endpoint-behavior-configuration-element-from-xml-configuration.md)  
   
--   [XML 構成からサービス動作の構成要素を作成できません。](../core/unable-to-create-service-behavior-configuration-element-from-xml-configuration.md)  
+-   [XML 構成からサービス動作の構成要素を作成できません](../core/unable-to-create-service-behavior-configuration-element-from-xml-configuration.md)  
   
--   [クライアント エンドポイント構成をエクスポートできません。](../core/unable-to-export-client-endpoint-configuration.md)  
+-   [クライアント エンドポイント構成をエクスポートできません](../core/unable-to-export-client-endpoint-configuration.md)  
   
--   [サービス エンドポイント構成をエクスポートできません。](../core/unable-to-export-service-endpoint-configuration.md)  
+-   [サービス エンドポイント構成をエクスポートできません](../core/unable-to-export-service-endpoint-configuration.md)  
   
--   [受信本文のパス式のコンテンツを見つけることができません。](../core/unable-to-find-content-for-inbound-body-path-expression.md)  
+-   [受信本文のパス式のコンテンツが見つかりません](../core/unable-to-find-content-for-inbound-body-path-expression.md)  
   
--   [受信本文のパス式に一致するものが見つかりません](../core/unable-to-find-match-for-inbound-body-path-expression.md)  
+-   [受信本文のパス式に一致する内容が見つかりません](../core/unable-to-find-match-for-inbound-body-path-expression.md)  
   
--   [予期しないルート要素](../core/unexpected-root-element.md)  
+-   [ルート要素が正しくありません](../core/unexpected-root-element.md)  
   
--   [送信メッセージの認識できない型をマーシャ リング](../core/unrecognized-outbound-message-marshalling-type.md)  
+-   [送信メッセージのマーシャリングの種類が認識されません](../core/unrecognized-outbound-message-marshalling-type.md)  
   
--   [サポートされていないセキュリティ アルゴリズム スイート](../core/unsupported-security-algorithm-suite.md)  
+-   [次のセキュリティ アルゴリズム スイートはサポートされていません](../core/unsupported-security-algorithm-suite.md)  
   
--   [サポートされていないトランザクション プロトコル](../core/unsupported-transaction-protocol.md)  
+-   [トランザクション プロトコルがサポートされていません](../core/unsupported-transaction-protocol.md)  
   
--   [WCF クライアントでのシングル サインオンを使用するための偽装を許可する必要があります。](../core/wcf-client-must-allow-impersonation-to-use-single-sign-on.md)  
+-   [シングル サインオンを使用するには、WCF クライアントが権限借用を許可する必要があります](../core/wcf-client-must-allow-impersonation-to-use-single-sign-on.md)  
   
--   [Windows コンポーネントがインストールされていない可能性があります。](../core/windows-components-may-not-be-installed.md)
+-   [Windows コンポーネントがインストールされていない可能性があります](../core/windows-components-may-not-be-installed.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57b56495e66d835451eb8641f3fd9407462593c9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2fff8f5aeebba2f9734f29ae929d23845431da7e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378827"
 ---
 # <a name="configure-biztalk-accelerator-for-swift"></a>BizTalk Accelerator for SWIFT に構成します。
 
@@ -42,7 +42,7 @@ ms.locfileid: "36997459"
 7. **概要**構成の設定を確認し、クリックして**構成**します。 
 
     > [!TIP] 
-    > 必要であれば、構成設定を XML ファイルとして保存できます。
+    > 必要な場合は、構成設定を XML ファイルとして保存できます。
 
 8. 選択**完了**構成が完了したとき。
 
@@ -68,7 +68,7 @@ A4SWIFT の構成設定は、XML ファイルにエクスポートできます�
 **手順**:
 
 1. 開いている**サービス**します。 使用できるサービスも**サーバー マネージャー**、し**ツール**します。 
-2. 一覧で、検索**BizTalk Service BizTalk Group: BizTalkServerApplication**します。 
+2. 一覧で、検索**BizTalk Service BizTalk Group:[Biztalkserverapplication]** します。 
 3. そのプロパティを開くには、二重選択します。
 4. **ログオン**メモとして表示されているユーザー アカウントのタブ**このアカウント**します。
 5. 開いている**ローカル ユーザーとグループ**(コンピューターの管理) で見つけて、 **A4SWIFT ユーザー**グループ。 このグループにユーザー アカウントを追加します。

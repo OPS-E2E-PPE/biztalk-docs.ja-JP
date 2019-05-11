@@ -12,17 +12,17 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ca387b139a32606dea89f7c931c86245d151dcb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7debc394b29676b15f330a8b5c22fbfe4656d0a5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966691"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65351542"
 ---
 # <a name="developing-a-general-pipeline-component"></a>全般パイプライン コンポーネントの開発
 
 ## <a name="interfaces"></a>インターフェイス
-全般パイプライン コンポーネントは、次のインターフェイスを実装する .NET コンポーネントまたは COM コンポーネントです。  
+全般パイプライン コンポーネントは、次のインターフェイスを実装する .NET または COM コンポーネントです。  
   
 - IBaseComponent インターフェイス (COM) [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
   
@@ -32,10 +32,10 @@ ms.locfileid: "36966691"
   
 - [IPersistPropertyBag](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.ipersistpropertybag)
   
-  全般パイプライン コンポーネントは、BizTalk メッセージング エンジンからメッセージを 1 つ取得して処理し、そのメッセージを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] エンジンに返します。 メッセージがサーバーに返されないように全般コンポーネントを実装することもできます。 このようなコンポーネントは、メッセージを受信しても結果メッセージをまったく生成しないので、"メッセージを破棄するコンポーネント" と呼ばれます。  
+  全般パイプライン コンポーネントの 1 つのメッセージを BizTalk メッセージング エンジンから取得、処理し、しを返します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]エンジン。 メッセージをサーバーに返されないように全般コンポーネントを実装することもできます。 このようなコンポーネントでは、コンポーネントはメッセージを受信しますが、結果メッセージは生成されませんのでを破棄するコンポーネントと呼ばれます。  
   
 > [!NOTE]
->  カスタム パイプライン コンポーネントでは入力メッセージの追加部分を出力メッセージにコピーする必要があります。 これにより、パイプラインでの後続の処理のために追加部分が保持されます。  
+>  カスタム パイプライン コンポーネントは、出力メッセージ用に、入力メッセージからその他のパーツをコピーする必要があります。 これはさらに、パイプラインで処理するためを保持します。  
   
 ## <a name="more-pipeline-resources"></a>パイプラインの他のリソース
  [アセンブラー パイプライン コンポーネントの開発](../core/developing-an-assembling-pipeline-component.md)   

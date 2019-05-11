@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e32358f48099b9d184a9ff1ff62a0a85af595b89
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8981fc1d4fc10a7a43c02d6cd815a24dd31912ff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995339"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352521"
 ---
 # <a name="debugging-orchestrations-by-using-custom-code"></a>カスタム コードを使用したオーケストレーションのデバッグ
 オーケストレーションがテスト環境で使用するか、またはプロトタイプを作成し、メッセージ フィールドとオーケストレーション変数の値を変更するは、出力を書き込むことができます、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で次のコードを使用して、コンソール**式**図形。  
@@ -31,7 +31,7 @@ System.Diagnostics.Debug.WriteLine(iResult);
   
  これを配置する必要がある**式**デバッグの結果を出力できるように、操作を実行する図形の直後後の図形。  
   
- または、単純なを記述することができます、クラスを使用してデバッグ DLL を作成してカスタムのデバッガーには形式のメッセージがオーケストレーションで定義されているし、デバッグ DLL で参照されている入力として受け取るメソッドが含まれています。 メッセージをパラメーターとして渡すことの詳細については、[オブジェクトを作成してオブジェクトのメソッドを呼び出す式を使用する方法](../core/how-to-use-expressions-to-create-objects-and-call-object-methods.md)を参照してください。  
+ または、単純なを記述することができます、クラスを使用してデバッグ DLL を作成してカスタムのデバッガーには形式のメッセージがオーケストレーションで定義されているし、デバッグ DLL で参照されている入力として受け取るメソッドが含まれています。 メッセージをパラメーターとして渡すことの詳細については、次を参照してください。[オブジェクトを作成してオブジェクトのメソッドを呼び出す式を使用する方法](../core/how-to-use-expressions-to-create-objects-and-call-object-methods.md)します。  
   
  このメソッドでは、コンボ ボックスまたは他のコントロールを含むデバッグ用のダイアログを表示し、ユーザーに値の変更を許可することができます。その後、編集されたメッセージを取得し、それを戻り値として渡すことができます。  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbd81b40006842bc17344b4b39aced80fec4e602
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4b16c54f4c49a1a81ea412c5b980ba23e60e8290
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973907"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401624"
 ---
 # <a name="using-correlations-in-orchestrations"></a>オーケストレーションでの関連付けの使用
 関連付けは、受信メッセージをオーケストレーションの適切なインスタンスに一致させるプロセスです。 たとえば、オーケストレーションからメッセージを送信して応答を受信したり、同じオーケストレーションに応答を返信します。 以下の 3 つの関連付けメッセージ交換パターンがあります。  
@@ -46,7 +46,7 @@ ms.locfileid: "36973907"
   
 4. オーケストレーション A で、オーケストレーション B から返信された請求書メッセージを受信する受信図形でも同じ関連付けセットに従って、関連付けられた請求書メッセージを定義済みの関連付けセットに基づいて受け取れるようにします。  
   
-   シーケンシャルなコンボイ パターンとパラレル コンボイ パターンは、個々の項目が単独では実現できない処理を可能にするために複数の単一項目を関連付ける必要がある状況に存在します。 詳細については、[コンボイ シナリオの](../core/working-with-convoy-scenarios.md)を参照してください。  
+   シーケンシャルなコンボイ パターンとパラレル コンボイ パターンは、個々の項目が単独では実現できない処理を可能にするために複数の単一項目を関連付ける必要がある状況に存在します。 詳細については、次を参照してください。[コンボイ シナリオの](../core/working-with-convoy-scenarios.md)します。  
   
    関連付けられたメッセージ交換パターンに加えて、オーケストレーションには、次の 2 種類の関連付けが存在します。  
   

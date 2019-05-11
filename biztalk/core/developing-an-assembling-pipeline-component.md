@@ -1,5 +1,5 @@
 ---
-title: パイプライン コンポーネントの開発、アセンブル |Microsoft ドキュメント
+title: パイプライン コンポーネントの開発、アセンブル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,20 +21,20 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8de06a815e1c5a6bf71700ad373ae3f278b3a9a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff36bac9dc5f14048e7d448f912f72c243146b8a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239618"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389434"
 ---
 # <a name="developing-an-assembling-pipeline-component"></a>アセンブラー パイプライン コンポーネントの開発
-アセンブラー パイプライン コンポーネントは、入力時に複数のメッセージを受け取り、出力時に 1 通のメッセージを生成する .NET または COM コンポーネントです。 アセンブラー コンポーネントは、個別のドキュメントをまとめてメッセージ インターチェンジのバッチを作成するために使用されます。  
+アセンブラー パイプライン コンポーネントは、.NET または COM コンポーネントの入力に複数のメッセージを受信し、出力の 1 つのメッセージが生成されます。 アセンブラー コンポーネントは、メッセージのインターチェンジ バッチに個々 のドキュメントを収集するために使用されます。  
   
 > [!NOTE]
->  アセンブリ機能は使用されていないため、BizTalk Server は常に 1 つのドキュメントをコンポーネントの入力として渡します。  
+>  アセンブリの機能は使用されていないため、常に、BizTalk Server は、コンポーネントの入力を 1 つのドキュメントを渡します。  
   
- アセンブラー コンポーネントは次のインターフェイスを実装する必要があります。  
+ アセンブラー コンポーネントは、次のインターフェイスを実装する必要があります。  
   
 -   `IBaseComponent`  
   
@@ -42,10 +42,10 @@ ms.locfileid: "22239618"
   
 -   `IComponentUI`
   
--   **IPersistPropertyBag です。** (このインターフェイスについては、.NET Framework SDK のドキュメントを参照してください)  
+-   **IPersistPropertyBag します。** このインターフェイスは .NET Framework SDK ドキュメントを参照してください。  
   
 > [!NOTE]
->  カスタム パイプライン コンポーネントでは入力メッセージの追加部分を出力メッセージにコピーする必要があります。 これにより、パイプラインでの後続の処理のために追加部分が保持されます。  
+>  カスタム パイプライン コンポーネントは、出力メッセージ用に、入力メッセージからその他のパーツをコピーする必要があります。 これはさらに、パイプラインで処理するためを保持します。  
   
 ## <a name="see-also"></a>参照  
  [全般パイプライン コンポーネントの開発](../core/developing-a-general-pipeline-component.md)   

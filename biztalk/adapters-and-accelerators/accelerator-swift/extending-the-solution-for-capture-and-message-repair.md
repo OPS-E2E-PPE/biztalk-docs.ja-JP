@@ -18,12 +18,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc2b4436906b1df913deec8b525143773dd43e4e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ba6669f743a20cdde123eff397604fbad1ddb040
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979643"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377922"
 ---
 # <a name="extending-the-solution-for-capture-and-message-repair"></a>キャプチャおよびメッセージ修復のソリューションを拡張します。
 このヘルプに MT103 エンド ツー エンドのチュートリアルでは、失敗した SWIFT メッセージをサブスクライブする BizTalk オーケストレーションを構築する方法を示します。  

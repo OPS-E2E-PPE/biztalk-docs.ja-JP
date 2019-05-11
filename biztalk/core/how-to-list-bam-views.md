@@ -16,19 +16,19 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c69943852a00ada5fae6b10ab2f3953ef6f1db8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: eec83c51d1301d941cb0313de5dcb01fb8a664cd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015675"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384746"
 ---
 # <a name="how-to-list-bam-views"></a>BAM ビューを一覧表示する方法
 管理者を使用して、 **get ビュー**コマンド、コマンドを実行するコンピューター上の BAM プライマリ インポート データベースにデプロイされている BAM ビューを一覧表示します。  
   
-### <a name="to-list-bam-views"></a>BAM ビューを一覧表示するには  
+### <a name="to-list-bam-views"></a>BAM ビューをリストする  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
 2. [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] に移動します。  
   

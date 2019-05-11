@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8df3a1eadd2bfa0841b3d9137afdca8e40f7a87f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fab3b7677336a2d10daf365d7bf58d3c90aa9f35
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019881"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382528"
 ---
 # <a name="importing-bindings"></a>バインドのインポート
 このセクションの各トピックでは、バインドを BizTalk グループまたはアプリケーションにインポートする方法について説明します。  
@@ -32,7 +32,7 @@ ms.locfileid: "37019881"
 
 - **グループのすべてのバインドは、一意である必要があります。** インポートするバインドと同じ名前のバインドがグループに存在する場合、インポート操作に失敗します。  
 
-- **パスワードを再構成する必要があります。** セキュリティ上の理由により、BizTalk Server では、バインド ファイルのエクスポート時にバインドのパスワードがファイルから削除されます。 バインドをインポートした後で、送信ポートと受信場所のパスワードを再構成する必要があります。 BizTalk Server 管理コンソールの [トランスポートのプロパティ] ダイアログ ボックスで、送信ポートと受信場所のパスワードをそれぞれ構成します。 手順については、[送信ポートを作成する方法](../core/how-to-create-a-send-port2.md)を参照してください。 参照してください[を作成する方法、受信場所](../core/how-to-create-a-receive-location.md)します。  
+- **パスワードを再構成する必要があります。** セキュリティ上の理由により、BizTalk Server では、バインド ファイルのエクスポート時にバインドのパスワードがファイルから削除されます。 バインドをインポートした後で、送信ポートと受信場所のパスワードを再構成する必要があります。 BizTalk Server 管理コンソールの [トランスポートのプロパティ] ダイアログ ボックスで、送信ポートと受信場所のパスワードをそれぞれ構成します。 手順については、次を参照してください。[送信ポートを作成する方法](../core/how-to-create-a-send-port2.md)します。 参照してください[を作成する方法、受信場所](../core/how-to-create-a-receive-location.md)します。  
 
 - **ホストは、グループ内に存在する必要があります。** バインドで指定されているホストに対応するホストは、バインドのインポート先の BizTalk グループ内に存在し、ホストの信頼レベルが一致する必要があります。 そうでない場合、インポート操作が失敗します。  
 

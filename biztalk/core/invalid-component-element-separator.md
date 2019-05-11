@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 927a33124fdb624df79d3b2f99b07f61345289e9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: baa8896a68f0621437bba07429ce87bdbbbc03a9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997555"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381420"
 ---
 # <a name="invalid-component-element-separator"></a>コンポーネント要素区切り記号が無効です。
 ## <a name="details"></a>詳細  

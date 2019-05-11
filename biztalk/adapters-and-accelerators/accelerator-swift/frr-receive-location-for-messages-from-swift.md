@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2dc4666e90510e7076a3f901ce6fc95b07ef16c6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 44aab7e7160545be3c416bd4accd4e77c349a928
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377410"
 ---
 # <a name="frr-receive-location-for-messages-from-swift"></a>SWIFT から FRR 受信メッセージの場所
 FIN 応答 reconciliation (FRR) を有効にするのには、FRR を設定する必要があります SAA からメッセージを受信して、による処理の準備を行うのためのパイプライン コンポーネントを受信[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]します。 受信パイプラインには、次のコンポーネントが含まれています。  

@@ -1,5 +1,5 @@
 ---
-title: Functoid が参照されているカスタムの開発 |Microsoft ドキュメント
+title: 参照 Functoid、カスタムの開発 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c70f9cfcfaf50d92758f808346380b0a351a2f45
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9942af739bd0708f9b3cd4017eded7b3033770f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239226"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389438"
 ---
-# <a name="developing-a-custom-referenced-functoid"></a>参照型のカスタム Functoid の開発
-参照型のカスタム Functoid は、インラインの実装コードをマップにコピーしません。 代わりに、生成されたスタイル シートに関連付けられた拡張オブジェクト ファイルにアセンブリ、クラス、およびメソッドへの参照が配置され、実行時に呼び出されます。  
+# <a name="developing-a-custom-referenced-functoid"></a>参照 Functoid、カスタムの開発
+参照先のカスタム functoid は、マップにインラインの実装コードをコピーしないでください。 代わりに、アセンブリ、クラス、およびメソッドへの参照は、拡張オブジェクト ファイルが生成されたスタイル シートに関連付けられているし、実行時に呼び出さに配置されます。  
   
 ## <a name="example"></a>例  
- 2 つの文字列を連結する参照型のカスタム Functoid の作成方法を次に示します。 ここでは、3 つの文字列リソースと 16x16 ピクセルのビットマップ リソースが格納されたリソース ファイルがあることを前提としています。  
+ 次の例では、2 つの文字列を連結する場合のカスタム参照されている functoid を作成する方法を示します。 ここでは、3 つの文字列リソースと 16x16 ピクセルのビットマップ リソースが格納されたリソース ファイルがあることを前提としています。  
   
 ```  
 using System;  

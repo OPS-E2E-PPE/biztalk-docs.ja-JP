@@ -1,5 +1,5 @@
 ---
-title: SSO の処理サーバー |Microsoft ドキュメント
+title: SSO の処理サーバー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 972e1a3b01394cbf63fb0c8094586d2beda73c3e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e2676de4e698f3ea9221b35c349819f163b74b3a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263666"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255138"
 ---
 # <a name="processing-servers-for-sso"></a>SSO の処理サーバー
-複数コンピューター環境で、マスター シークレット サーバーと SSO データベースを作成した後にすることができますエンタープライズ シングル サインオン コンピューターにインストール以降。 このようなコンピューターは通常、BizTalk Server または Host Integration Server のどちらかがインストールされているコンピューターです。  
+複数コンピューター環境で、マスター シークレット サーバーと SSO データベースが作成した後をエンタープライズ シングル サインオン コンピューターにインストールできます以降。 これらは、通常、BizTalk Server または Host Integration Server のいずれかがインストールされているものコンピューターです。  
   
- 最初のインストール プロセスは、1 台目のコンピューターと同じです。 ただし、構成は若干異なります。 マスター シークレット サーバーと SSO データベースが既に定められて、ので選択**参加**問い合わせるときに、構成ウィザード、**新しい SSO システムを作成**または**既存システムに参加**.  
+ 最初のインストール プロセスは、最初のコンピューターと同じです。 ただし、構成は若干異なるなります。 マスター シークレット サーバーと SSO データベースは既に場所であるために選択**参加**構成ウィザードが表示されたら、**新しい SSO システムを作成する**または**既存システムに参加**.  
   
- 構成中に、あるコンピューター上のグループを、別のコンピューターの (そのグループ用に構成されていない) SSO データベースに参加させることも可能です。 ただし、これは可能であるというだけで、お勧めはできません。  
+ SSO データベースがそのグループ用に構成されたデータベースを別のコンピューターに参加するには、1 台のコンピューターのグループの構成中にできるに注意してください。 これは可能ですが、これは推奨されません。  
   
 ## <a name="see-also"></a>参照  
- [SSO の以前のバージョンからアップグレードします。](../core/upgrading-from-a-previous-version-of-sso.md)
+ [以前のバージョンの SSO からのアップグレード](../core/upgrading-from-a-previous-version-of-sso.md)

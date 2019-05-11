@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ad88310f5bbf600edd576bc0bc17c64fe3ecbea
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f13de9a2b1566a289d2abee63035e9d1462bf44d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378523"
 ---
 # <a name="configuring-the-swift-disassembler"></a>SWIFT 逆アセンブラーを構成します。
 SWIFT 逆アセンブラー (逆アセンブラー) は microsoft を呼び出すと、次のタスクを実行[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]受信パイプライン。  
@@ -43,9 +43,9 @@ SWIFT 逆アセンブラー (逆アセンブラー) は microsoft を呼び出�
   
   カスタム受信パイプラインの逆アセンブル ステージに追加した後で SWIFT 逆アセンブラーを構成するには、BizTalk パイプライン デザイナー キャンバスに SWIFT 逆アセンブラー コンポーネントを選択します。 SWIFT 逆アセンブラーは、フォーカスを受け取るし、Microsoft 内で [プロパティ] ウィンドウを使用してその構成プロパティを設定する[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]します。  
   
-  使用可能な構成プロパティとその説明および使用方法の詳細のテーブルの場合、[SWIFT 逆アセンブラーの構成プロパティ](../../adapters-and-accelerators/accelerator-swift/swift-disassembler-configuration-properties.md)を参照してください。  
+  使用可能な構成プロパティとその説明および使用方法の詳細のテーブルの場合、次を参照してください。 [SWIFT 逆アセンブラーの構成プロパティ](../../adapters-and-accelerators/accelerator-swift/swift-disassembler-configuration-properties.md)します。  
   
-  SWIFT 逆アセンブラーを使用して、さまざまなシナリオと構成プロパティの設定については、[SWIFT 逆アセンブラーとアセンブラー](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)を参照してください。  
+  SWIFT 逆アセンブラーを使用して、さまざまなシナリオと構成プロパティの設定については、次を参照してください。 [SWIFT 逆アセンブラーとアセンブラー](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)します。  
   
   ときに[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]バイナリ、カスタム パイプラインに静的に構成設定を書き込むカスタム パイプラインをコンパイルします。 そのため、デプロイ時に構成プロパティを変更したり、時間を実行したりすることはできません。  
   

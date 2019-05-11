@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4ae137cc48d5df142c2917b0d40fd2bc95e36dd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8910b5877e05d72e52707c93b0fb0bf99ae78cd9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011595"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398241"
 ---
 # <a name="receive-location-for-metadata-not-found"></a>メタデータの受信場所が見つかりません
 ## <a name="details"></a>詳細  
@@ -30,15 +30,15 @@ ms.locfileid: "37011595"
 |  イベント ソース   |                                                                   0                                                                   |
 |    コンポーネント    |                                                                   0                                                                   |
 |  シンボル名  |                                                                   0                                                                   |
-|  メッセージ テキスト   | 受信場所"{0}"のメタデータが見つかりません。 (Web.config の受信場所マッピングを確認して、この受信場所が存在するか確認してください)。 |
+|  メッセージ テキスト   | 受信場所"{0}"のメタデータが見つかりません。 (Web.config の受信場所マッピングを確認および受信場所が存在することを確認します。) |
   
 ## <a name="explanation"></a>説明  
- このエラーは、公開された WCF 分離受信場所に、メタデータの対応する受信場所が見つからなかったことを示します。  
+ このエラーは、公開された WCF 分離受信場所であることを示します見つかりませんでした。 対応するメタデータの受信場所。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するのには、次の操作: BizTalk 管理コンソールで生成される BizTalk WCF 公開ウィザードが存在し、開始は、Web.config ファイルの receiveLocationName 属性で、受信場所が指定されていることを確認します。  
+ このエラーを解決するには、次の操作を行います。BizTalk 管理コンソールで生成される BizTalk WCF 公開ウィザードが存在し、開始は、Web.config ファイルの receiveLocationName 属性で、受信場所が指定されているいることを確認します。  
   
- 受信場所の詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプで次の情報を参照してください。  
+ 詳細については、受信場所、次のリソースを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
   
 -   [WCF サービスの公開](../core/publishing-wcf-services.md)  
   
@@ -48,4 +48,4 @@ ms.locfileid: "37011595"
   
 -   [Wcf-customisolated 受信場所を構成する方法](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   
--   [チュートリアル: WCF-NetMsmq アダプターを使用した WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter.md)
+-   [チュートリアル: Wcf-netmsmq アダプターで WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter.md)

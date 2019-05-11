@@ -1,5 +1,5 @@
 ---
-title: MQSeries アダプターの構造体 |Microsoft ドキュメント
+title: MQSeries アダプターの構造 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,31 +15,31 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6239b78f0b9bd2c44a314b7ba0ba6ace8f3b78e4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 21bd7d9dee24e8235aff34a14babd4cc69240c74
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278498"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379942"
 ---
 # <a name="structure-of-the-mqseries-adapter"></a>MQSeries アダプターの構造
-MQSeries アダプタは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で実行されるアダプタと MQSeries Server for Windows で実行される COM+ アプリケーション (MQSAgent) の 2 つの部分で構成されます。 この関係を次の図に示します。  
+MQSeries アダプターが 2 つの部分: で実行されるアダプタ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、MQSAgent COM + アプリケーション、Windows の MQSeries サーバーの下で実行されているとします。 次の図は、この関係を示します。  
   
  ![MQSeries アダプター コンポーネント](../core/media/bts-dev-mqoverallstructure.gif "BTS_Dev_MQOverallStructure")  
   
- アダプタによって、MQSAgent アプリケーションとの通信が行われます。 その後、MQSAgent アプリケーションによって、MQSeries Server for Windows との通信が行われます。 コンピュータに MQSeries Server for Windows をインストールした場合、アダプタと同じコンピュータにエージェントをインストールできます。  
+ アダプターは、MQSAgent アプリケーションと通信します。 さらに、MQSAgent アプリケーションは Windows の MQSeries Server と通信します。 MQSeries Server を Windows のコンピューターにインストールする場合は、アダプターと同じコンピューターにエージェントをインストールできます。  
   
- アダプタの送信部分では、メッセージを MQSAgent に送信します。 MQSAgent を使用して、 **MQPut**、MQSeries キュー マネージャにメッセージを送信します。  
+ アダプターの送信部分は、メッセージを MQSAgent に送信します。 MQSAgent を使用して、 **MQPut**、MQSeries キュー マネージャにメッセージを送信します。  
   
- アダプタの受信部分では、MQSAgent をポーリングし、メッセージがあるかどうかを確認します。 メッセージがあるときに、MQSAgent が実行する、 **MQGet**メッセージを取得します。 MQSAgent では、キュー マネージャからメッセージを取得するときの待機時間が 3 秒にハードコードされています。  
+ アダプターの受信部分では、メッセージがないかどうかに、MQSAgent をポーリングします。 メッセージがある場合、MQSAgent を実行、 **MQGet**メッセージを取得します。 MQSAgent には、キュー マネージャーからメッセージを取得するためのハード コーディングされた 3 秒待機が含まれています。  
   
 > [!NOTE]
->  アダプタのポーリング間隔を設定できます。 ポーリング間隔を 3 秒未満に設定すると、待機間隔にポーリング間隔が設定されます。  
+>  アダプターのポーリング間隔を設定することができます。 ポーリング間隔を 3 秒未満に設定すると、待機間隔はポーリング間隔を設定します。  
   
- トランザクションでは、メッセージの送信アクションと受信アクションの両方が発生する場合があります。 これにより、アダプタがメッセージをロールバックし、送信操作または受信操作を再試行できる可能性があります。 トランザクションの詳細については、次を参照してください。 [MQSeries アダプターのバッチ処理とトランザクション処理](../core/mqseries-adapter-batching-and-transaction-handling.md)です。  
+ 両方の送信とアクションがトランザクションで発生するメッセージが表示されます。 これにより、アダプターがメッセージをロールバック、および送信を再試行してください。 または、操作を受信します。 トランザクションの詳細については、次を参照してください。 [MQSeries アダプターのバッチ処理とトランザクション処理](../core/mqseries-adapter-batching-and-transaction-handling.md)します。  
   
- アダプタは複数のコンピュータ間で動作するため、セキュリティに関する問題が発生する可能性があります。 たとえば、悪意のあるプログラムによってエージェントの権限が借用され、データがキャプチャされる場合があります。 アダプタとエージェントの拡張保護の詳細については、次を参照してください。 [MQSeries アダプタのセキュリティ](../core/mqseries-adapter-security.md)です。  
+ アダプターは、1 つ以上のコンピューター間では、セキュリティ上の問題があります。 エージェントとキャプチャのデータが悪意のあるプログラムの権限を借用でした。 アダプターとエージェントの拡張保護の詳細については、次を参照してください。 [MQSeries アダプターのセキュリティ](../core/mqseries-adapter-security.md)します。  
   
 ## <a name="see-also"></a>参照  
  [MQSeries アダプターのアーキテクチャ](../core/mqseries-adapter-architecture.md)   
- [MQSeries アダプターとは何ですか。](../core/what-is-the-mqseries-adapter.md)
+ [MQSeries アダプターとは](../core/what-is-the-mqseries-adapter.md)

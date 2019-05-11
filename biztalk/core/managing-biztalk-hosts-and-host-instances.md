@@ -16,17 +16,17 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1915408853680140643445f4878d9ac925139def
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5ac3edd7b2aa87463e28a60810cf85a87444a88f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983403"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380612"
 ---
 # <a name="managing-biztalk-hosts-and-host-instances"></a>BizTalk ホストとホスト インスタンスの管理
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホストとは、0 個以上の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 実行時プロセスの論理的セットです。アダプター ハンドラー、受信場所 (パイプラインを含む)、オーケストレーションなどの各種アイテムをここに展開します。 ホストの詳細については、[ホスト](../core/hosts.md)を参照してください。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホストとは、0 個以上の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 実行時プロセスの論理的セットです。アダプター ハンドラー、受信場所 (パイプラインを含む)、オーケストレーションなどの各種アイテムをここに展開します。 ホストの詳細については、次を参照してください。[ホスト](../core/hosts.md)します。  
   
- ホスト インスタンスとは、メッセージの処理や送受信を行うプロセスです。 ホスト インスタンスは、1 つ以上のホストがマップされており、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を稼働する各サーバーにインストールします。 ホスト インスタンスの詳細については、[ホスト インスタンス](../core/host-instances.md)を参照してください。  
+ ホスト インスタンスとは、メッセージの処理や送受信を行うプロセスです。 ホスト インスタンスは、1 つ以上のホストがマップされており、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を稼働する各サーバーにインストールします。 ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)します。  
   
  ホストの特性は、次のとおりです。  
   

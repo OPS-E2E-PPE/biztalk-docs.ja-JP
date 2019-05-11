@@ -1,5 +1,5 @@
 ---
-title: エラー - インデックス Functoid にインデックスがありません |Microsoft ドキュメント
+title: エラー - インデックス Functoid にインデックスがありません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0159d308c9befc90590d281351409ba571921a53
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 74355e4593d542d394cf5408842ed22f37da099f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25968440"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388815"
 ---
 # <a name="error---index-functoid-has-no-index"></a>エラー - インデックス Functoid にインデックスがありません。
 **エラー コード**  
@@ -28,8 +28,8 @@ ms.locfileid: "25968440"
   
  **説明**  
   
- インデックス値が指定されていない対象**インデックス**functoid です。  
+ インデックス値が指定されていない対象**インデックス**functoid。  
   
  **ユーザーの操作**  
   
- 対象の適切な数のインデックス入力パラメーターを提供**インデックス**functoid は、適切な数は、ループの数によって決定されます、**レコード**を内のノード、 **フィールド**送信元スキーマ内のノードで入れ子になっています。 インデックス入力パラメーターを作成するには、対象の functoid を選択して、省略記号ボタンをクリックして (**.**) に関連付けられたボタン、**入力パラメーター**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウで、次を使用して、 ![](../core/media/bts-tls-paraminsert.gif "bts_tls_paraminsert")ボタンを**構成\<Functoid\> Functoid**最初の 1 つが直接の親にインデックスを表す 1 つまたは複数の定数入力パラメーターを追加するダイアログ ボックスループ**レコード**ノード、および後続のインデックス入力パラメーターがますますリモートの祖先のループを表す**レコード**ノード。
+ 対象の適切な数のインデックス入力パラメーターを提供**インデックス**functoid は、ループの数によって、適切な数の決まり**レコード**を内のノード、 **フィールド**送信元スキーマ内のノードが入れ子になった。 インデックス入力パラメーターを作成するには、対象の functoid を選択して、省略記号をクリックします (**.**) ボタンに関連付けられている、**入力パラメーター**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウ、およびしを使用して、 ![](../core/media/bts-tls-paraminsert.gif "bts_tls_paraminsert")内でボタン、**構成\<Functoid\> Functoid**が 1 つ目は直接の親にインデックスを表す 1 つまたは複数の定数入力パラメーターを追加する ダイアログ ボックスループ**レコード**ノード、および後続のインデックス入力パラメーターがますますリモートの祖先のループを表す**レコード**ノード。

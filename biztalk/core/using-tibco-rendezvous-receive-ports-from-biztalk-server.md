@@ -1,6 +1,6 @@
 ---
-title: 受信スキーマと TIBCO Rendezvous アダプターを持つイベントを処理 |Microsoft ドキュメント
-description: スキーマの操作が TIBCO Rendezvous の受信側と biztalk TIBCO Rendezvous の BizTalk アダプターを使用してイベント処理
+title: 受信スキーマと TIBCO Rendezvous アダプターを使用したイベントの処理 |Microsoft Docs
+description: TIBCO Rendezvous のスキーマ、受信側と biztalk TIBCO Rendezvous の BizTalk アダプターを使用してイベント処理の操作します。
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,23 +13,23 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbbae69dc1b7df1f5675442dde544a444cec02fb
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: d459ac2019ccf20edfd718815c7ee789a9089be5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24014097"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302387"
 ---
-# <a name="using-tibco-rendezvous-receive-ports-from-biztalk-server"></a>BizTalk Server からの TIBCO Rendezvous 受信ポートの使用
+# <a name="using-tibco-rendezvous-receive-ports-from-biztalk-server"></a>使用して TIBCO Rendezvous から BizTalk Server のポートの受信
 
 ## <a name="overview"></a>概要
-受信ポートを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に受信メッセージのスキーマを提供します。 受信ポートは、サブジェクト名の特定のセットを待機するように構成されます。 受信ポートでは、オプションのワイルドカード文字と共にサブジェクト名を使用して、複数のサブジェクト名が照合されます。 ユーザーは、特定の文字列に一致する可能性のあるサブジェクトごとに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションで異なるポート操作を定義します。  
+受信ポートを使用するにはスキーマを提供できる[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信メッセージ。 受信ポートは、特定のサブジェクト名のセットをリッスンするように構成されます。 省略可能なワイルドカード文字を含む複数のサブジェクト名に一致するのにサブジェクト名を使用します。 別のポート操作を定義する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]のオーケストレーションを指定した文字列に一致する可能性のある各サブジェクト。  
   
 > [!NOTE]
 >  アダプターは、オーケストレーションとメッセージング シナリオの両方をサポートします。  
   
 ## <a name="define-schemas"></a>スキーマを定義します。  
- たとえば、ポートが、サブジェクト名をリッスンするように構成されている場合**STOCK です。マーケットです。インデックス。 >** ('**>**' は、右側に何を意味するワイルドカード文字)、などのサブジェクト名の操作を定義する有効なことになります**STOCK です。マーケットです。インデックスです。NYSE です。SP500**、 **STOCK です。マーケットです。インデックスです。TSX.TSX60**のようにします。 説明している方法を使用してメッセージがアダプターにより生成[TIBCO Rendezvous の受信ハンドラーのデータ型マッピング](../core/data-type-mapping-for-receive-handlers-in-tibco-rendezvous.md)、ルート要素名と名前空間のリッスンに基づくを生成および名と受信したメッセージの件名それぞれのサブジェクト名します。  
+ たとえば、ポートが、サブジェクト名をリッスンするように構成されている場合**STOCK します。市場です。インデックス。 >** ('**>**' が右側に何を意味するワイルドカード文字)、などのサブジェクト名の操作を定義する有効なことが**STOCK します。市場です。インデックスです。NYSE します。SP500**、**素材です。市場です。インデックスです。TSX.TSX60**など。 アダプターにより生成されるメッセージで説明されている方法を使用した[Data Type Mapping for TIBCO rendezvous 受信ハンドラー](../core/data-type-mapping-for-receive-handlers-in-tibco-rendezvous.md)、ルート要素名とリッスンに基づく名前空間を生成しますサブジェクト名と受信したメッセージ。それぞれのサブジェクト名します。  
   
  前の例では、アダプターには、SP500 イベントは、次のようなメッセージが生成されます。  
   
@@ -43,7 +43,7 @@ xmlns:tibrv=' http://schemas.microsoft.com/TibcoRendezvous/Types' … >
   
 ```  
   
- 同じ規則を使用するスキーマを定義する必要があります。 例:  
+ 同じ規則を使用するスキーマを定義する必要があります。 以下に例を示します。  
   
 ```  
 <xsd:schema  
@@ -79,13 +79,13 @@ xmlns:b="http://schemas.microsoft.com/BizTalk/2003"
   
 ```  
   
- 使用に注意してください、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] **recordInfo/rootTypeName**注釈。 これは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]/BizTalk Integration に対して、ドットを含む名前ではなく、生成された .NET Framework の種類の名前を使用するように指定しています。 任意のものを指定できます。 例では、ドットはアンダースコアに置き換えられています。  
+ 使用に注意してください、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] **recordInfo/rootTypeName**注釈。 これに指示する、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]/BizTalk integration のドットを含む名前ではなく、生成された .NET Framework 型の名前を使用します。 何も指定することができます。 例では、ドットはアンダー スコアに置き換えられます。  
   
 > [!NOTE]
->  ドットにより、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 開発ツールによって無効な名前が生成されます。  
+>  ドットで生成される無効な名前が発生する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]開発ツール。  
 
 ## <a name="event-processing"></a>イベント処理
-Microsoft BizTalk Adapter for TIBCO Rendezvous は、複数のスレッドのキューからイベントをディスパッチします。 BizTalk Server の受信場所 1 つの TIBCO Rendezvous イベント キュー、およびそのディスパッチャー スレッドのプールに関連付けられています。  
+Microsoft BizTalk Adapter for TIBCO Rendezvous は、複数のスレッドのキューからイベントをディスパッチします。 BizTalk Server の受信場所が 1 つの TIBCO Rendezvous イベント キューとディスパッチャー スレッドのプールに関連付けられています。  
   
 ### <a name="memory-use-and-errors"></a>メモリの使用とエラー  
  イベントの処理中、アダプターは使用されるリソースを監視します。 メモリの使用量が上限 Watermark を超えると、アダプターはメモリ使用量が下限 Watermark に達するまでイベントのディスパッチを停止します。 これにより TIBCO Rendezvous メッセージが未証明メッセージとして失われる場合があることに注意してください (TIBCO RV コンシューマーは 60 秒経過したらメッセージをキューから削除します)。 このデータ損失はエラーとして報告されます。 アダプターが TIBCO Rendezvous のシステム通知 NO_MEMORY メッセージを受け取ったら、メッセージは既に失われています。  
@@ -94,5 +94,5 @@ Microsoft BizTalk Adapter for TIBCO Rendezvous は、複数のスレッドのキ
   
 ## <a name="see-also"></a>参照  
  [TIBCO Rendezvous の概念](../core/tibco-rendezvous-concepts.md)   
- [TIBCO Rendezvous でのデータ型マッピングの受信ハンドラー](../core/data-type-mapping-for-receive-handlers-in-tibco-rendezvous.md)   
+ [データ型マッピングの TIBCO Rendezvous 受信ハンドラー](../core/data-type-mapping-for-receive-handlers-in-tibco-rendezvous.md)   
  [TIBCO Rendezvous 受信ハンドラーの作成](../core/creating-tibco-rendezvous-receive-handlers.md)

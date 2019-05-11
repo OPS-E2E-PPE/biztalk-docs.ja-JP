@@ -1,5 +1,5 @@
 ---
-title: ホスト インスタンスの |Microsoft ドキュメント
+title: ホスト インスタンスの |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,24 +15,24 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f66e0d0c34087fa63557113b2db33a9038d2fc9b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0c0f794759433ae28658a0793e891e4635aaee89
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246218"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387499"
 ---
 # <a name="host-instances"></a>ホスト インスタンス
-A*ホスト インスタンス*BizTalk Server でホストの物理的なインストールします。 ホスト インスタンスのインストールには、Windows Management Instrumentation (WMI) または BizTalk 管理コンソールを使用します。 BizTalk Server は複数のホスト インスタンスをサポートできます。  
+A*ホスト インスタンス*は BizTalk Server でのホストの物理インストールです。 管理者は、ホスト インスタンスをインストールするのに Windows Management Instrumentation (WMI) または BizTalk 管理コンソールを使用します。 BizTalk Server では、複数のホスト インスタンスをサポートできます。  
   
  次の図に、サーバー、ホスト、およびホスト インスタンスの関係を示します。  
   
  ![ホスト、ホスト インスタンス、およびサーバーの関係](../core/media/ebiz-ops-adm01.gif "ebiz_ops_adm01")  
 ホスト、ホスト インスタンス、およびサーバー間のリレーションシップ  
   
- ホストの詳細については、次を参照してください。[ホスト](../core/hosts.md)です。  
+ ホストの詳細については、次を参照してください。[ホスト](../core/hosts.md)します。  
   
 ## <a name="see-also"></a>参照  
  [ホスト](../core/hosts.md)   
- [BizTalk ホストとホスト インスタンスを管理します。](../core/managing-biztalk-hosts-and-host-instances.md)   
+ [BizTalk ホストとホスト インスタンスの管理](../core/managing-biztalk-hosts-and-host-instances.md)   
  [エンティティ](../core/entities.md)

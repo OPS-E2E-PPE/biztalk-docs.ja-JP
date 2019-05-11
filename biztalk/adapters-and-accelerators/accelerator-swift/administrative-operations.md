@@ -1,5 +1,5 @@
 ---
-title: 管理操作 |Microsoft ドキュメント
+title: 管理操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 86313a9d5f32274aa25d8f59832417a02b2d516c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 86f508fd29ab6a7e47fd305a69470eff2ed2da9d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22208818"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378821"
 ---
 # <a name="administrative-operations"></a>管理操作
-ここでは、IT プロフェッショナル コンピューター システムを維持するために使用する手順を説明する[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]がインストールされています。  
+このセクションのコンピューター システムを維持するために、IT プロフェッショナルによって使用されるプロシージャについて説明する[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]がインストールされています。  
   
  このセクションには、次のトピックが含まれています。  
   
--   [BRE ポリシーの扱い](../../adapters-and-accelerators/accelerator-swift/working-with-bre-policies.md)  
+-   [BRE ポリシーの操作](../../adapters-and-accelerators/accelerator-swift/working-with-bre-policies.md)  
   
 -   [Message Repair and New Submission のカスタマイズ](../../adapters-and-accelerators/accelerator-swift/customizing-message-repair-and-new-submission.md)  
   
--   [FIN 対応調整を管理します。](../../adapters-and-accelerators/accelerator-swift/administering-fin-response-reconciliation.md)
+-   [FIN Response Reconciliation の管理](../../adapters-and-accelerators/accelerator-swift/administering-fin-response-reconciliation.md)

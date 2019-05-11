@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b08a5c3dd6b88351e67f678524a03052e8435439
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 63f3fd2dd8948e880af7b2135e8b4fef64f1b39d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012291"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389353"
 ---
 # <a name="distinguished-fields-in-disassembler-pipeline-components"></a>識別フィールドに逆アセンブラー パイプライン コンポーネント
-スキーマで定義された識別フィールドは、XML 逆アセンブラー、BizTalk 逆アセンブラー、またはフラット ファイル逆アセンブラー パイプランによって、次の形式でメッセージ コンテキストに書き込まれます。  
+スキーマで定義されている識別フィールドは XML 逆アセンブラー、BizTalk Framework 逆アセンブラーまたは次の形式のフラット ファイル逆アセンブラー パイプライン コンポーネントによってメッセージ コンテキストに書き込まれます。  
   
  *使用される名前*XPath で識別フィールド  
   
@@ -33,7 +33,7 @@ ms.locfileid: "37012291"
   
  プロパティの値は、 **System.String**使用して XML ドキュメントから抽出された値は、XPath を指定します。  
   
- 次の例では、スキーマに識別フィールド Price があります。  
+ 次の例のスキーマには、識別フィールド Price があります。  
   
 ```  
 <?xml version="1.0" encoding="utf-16" ?>   
@@ -57,7 +57,7 @@ ms.locfileid: "37012291"
 </xs:schema>  
 ```  
   
- 次のようなドキュメント インスタンスの場合は、  
+ ドキュメント インスタンスの  
   
 ```  
 <PO>  
@@ -66,16 +66,16 @@ ms.locfileid: "37012291"
 <PO>  
 ```  
   
- XML 逆アセンブラーがメッセージ コンテキストで次のように識別フィールドを書き込みます。  
+ XML 逆アセンブラーは、次のようにメッセージ コンテキストで識別フィールドを書き込みます。  
   
  コンテキストのプロパティの名前。 `"/*[local-name()='PO' and namespace-uri()='http://SendHtmlMessage.PO']/\*[local-name()='Price' and namespace-uri()='']"`  
   
  プロパティの Namespace: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields  
   
- プロパティの値: 10  
+ プロパティの値。10  
   
 > [!NOTE]
->  いずれかの XML ドキュメント要素の値のサイズが 85 KB を超えると、ドキュメントの処理パフォーマンスが低下する場合があります。  
+>  任意の XML ドキュメント要素の値のサイズが 85 KB を超える場合、ドキュメントの処理パフォーマンスの低下が発生します。  
   
 ## <a name="see-also"></a>参照  
  [フラット ファイル逆アセンブラー パイプライン コンポーネント](../core/flat-file-disassembler-pipeline-component.md)   

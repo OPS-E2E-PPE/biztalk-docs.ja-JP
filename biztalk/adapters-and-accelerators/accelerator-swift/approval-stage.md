@@ -1,5 +1,5 @@
 ---
-title: 承認ステージ |Microsoft ドキュメント
+title: 承認ステージ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf4a56d23e2bcfa299c33069172152d1343cb16a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: de1010d70d407468247f56afe26256d420204123
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22208882"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378685"
 ---
 # <a name="approval-stage"></a>承認ステージ
-メッセージが最初に署名され承認用に送信した後の承認チェーン内の各承認者が確認し、自分のデジタル署名をスタックに追加することをメッセージに副署名します。 承認者を確認し、メッセージを副署名のみできます。 デジタル署名のスタックを分断することがなく変更できません。
+まず、メッセージが署名され、承認のため送信、承認チェーンの各承認者レビューし、スタックへのデジタル署名の追加、メッセージを副署名します。 承認者を確認し、メッセージを副署名のみできます。 デジタル署名のスタックを損なうことがなく変更することはできません。

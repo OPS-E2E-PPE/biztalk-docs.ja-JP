@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 89bfd7c0eee0e302560ceb138cab3ff65d2b3766
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0f9451b12da100081aa4bf820345aa7703c81dfd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986883"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376428"
 ---
 # <a name="message-schemas-for-special-lob-operations"></a>特殊な LOB 操作のメッセージ スキーマ
 テーブルとビューは LOB 列が含まれているため、ReadLOB および UpdateLOB 操作が表示されます。Oracle のラージ オブジェクト (LOB) データの格納に使用される列です。 これらの操作では、base64Binary でエンコードされたデータのストリームとして LOB データを読み書きできます。 1 つの行の LOB データの 1 つの列で動作します。  
@@ -31,7 +31,7 @@ ms.locfileid: "36986883"
  次の表は、ReadLOB および UpdateLOB 操作の要求と応答メッセージの構造を示します。 操作の対象テーブルでは、メッセージのアクションで指定され、ターゲットの名前空間にも表示されます。  
 
 
-|     演算      |                                                                                    XML メッセージ                                                                                     |                                                                                                                                                                                                                                                                                                                                説明                                                                                                                                                                                                                                                                                                                                 |
+|     操作      |                                                                                    XML メッセージ                                                                                     |                                                                                                                                                                                                                                                                                                                                説明                                                                                                                                                                                                                                                                                                                                 |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      ReadLOB       |                  `<ReadLOB xmlns="[VERSION]/[SCHEMA]/Table/[TABLE_NAME]">   <LOB_COLUMN>[COL_NAME]</LOB_COLUMN>   <FILTER>[WHERE_clause]</LOB_COLUMN> </ReadLOB>`                  | 内の LOB データ、<br /><br /> -LOB_COLUMN 要素によって識別される列と、<br /><br /> -行の場所に一致するフィルター要素で指定した句<br /><br /> 返されます。<br /><br /> Where 句は 1 つの行と一致する必要があります。 1 つ以上の一致する行がある場合は、最初の一致する行に LOB データが返されます。<br /><br /> **重要な**ReadLOB 操作は、WCF サービス モデル内の LOB データの入力ストリームをサポートするために設計されています。 WCF チャネル モデルから LOB データを読み取るテーブルの選択操作を使用する必要がありますまたは[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ソリューション。 |
 |  ReadLOB 応答  |                      `<ReadLOBResponse xmlns="[VERSION]/[SCHEMA]/Table/[TABLE_NAME]">   <ReadLOBResult>     [LOB_DATA]   </ReadLOBResult> </ReadLOBResponse>`                      |                                                                                                                                                                                                                            LOB データは、base64Binary でエンコードされたデータのストリームとして返されます。<br /><br /> **重要な**アダプターによって返される WSDL が ReadLOB 応答メッセージに対して、アダプターによって使用される実際のスキーマと一致しません。                                                                                                                                                                                                                            |
@@ -56,7 +56,7 @@ ms.locfileid: "36986883"
 ## <a name="message-actions-for-lob-data-type-operations"></a>LOB データ型の操作のメッセージのアクション  
  次の表は、メッセージのアクションで使用される、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]テーブルに対する ReadLOB と UpdateLOB 操作。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]操作の対象のテーブルを確認するメッセージのアクションで指定されたテーブル名を使用します。  
 
-|演算|操作|例|  
+|操作|操作|例|  
 |---------------|------------|-------------|  
 |ReadLOB|`[VERSION]/[SCHEMA]/Table/[TABLE_NAME]/ReadLOB`|`http:/Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER/ReadLOB`|  
 |ReadLOB 応答|`[VERSION]/[SCHEMA]/Table/[TABLE_NAME]/ReadLOB/response`|`http:/Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER/ReadLOB/response`|  

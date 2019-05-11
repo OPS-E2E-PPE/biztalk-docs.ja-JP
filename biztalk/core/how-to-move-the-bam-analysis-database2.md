@@ -15,15 +15,15 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 237f951a4795ef6571a72989be22893d57572df9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b9f0afd5c8bbd06786c07b84dd465f97cbb1559d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011795"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384518"
 ---
 # <a name="how-to-move-the-bam-analysis-database"></a>BAM 分析データベースを移動する方法
-ここでは、BAM 分析データベースを他のサーバーに移動する手順について説明します。  
+この手順を使用すると、BAM 分析データベースを別のサーバーに移動します。  
   
 ## <a name="prerequisites"></a>前提条件  
  この手順を実行するには、SQL Server sysadmin 固定サーバーの役割のメンバーであるアカウントを使用してログオンする必要があります。  
@@ -53,7 +53,7 @@ ms.locfileid: "37011795"
   
 4. SQL Server Books Online に記載されている手順に従い、新しいサーバーにデータベースを復元します。  
   
-5. BAMConfiguration.xml ファイルで、AnalysisDatabase DeploymentUnit セクションの ServerName を新しいサーバー名に変更します。  
+5. BAMConfiguration.xml ファイルを編集し、AnalysisDatabase DeploymentUnit セクションの ServerName を新しいサーバー名に変更します。  
   
 6. BAMConfiguration.xml ファイルを保存して閉じます。  
   

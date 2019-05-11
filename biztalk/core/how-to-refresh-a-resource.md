@@ -16,17 +16,17 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 614cd1e2845994b5a0b009b56536f45a88f5bc2a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f8515bcd3197c1532906cf90863e1e03faa9aabe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384414"
 ---
 # <a name="how-to-refresh-a-resource"></a>リソースを更新する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、リソース アイテムを更新する方法について説明します。 これにより、BizTalk 管理データベースのアイテム情報が更新されます。 これを行う別の方法は、BTSTask を使用してアプリケーションにアイテムを追加することで、 [AddResource コマンド](../core/addresource-command.md)上書きオプションを使用します。  
+このトピックでは、BizTalk Server 管理コンソールを使用して、リソース アイテムを更新する方法について説明します。 これは、BizTalk 管理データベースのアイテム情報を更新します。 これを行う別の方法は、BTSTask を使用してアプリケーションにアイテムを追加することで、 [AddResource コマンド](../core/addresource-command.md)上書きオプションを使用します。  
   
- リソース アイテムは、アプリケーションのリソース フォルダーに格納されています。 ソース ファイルに変更を加え、アプリケーションのファイルを更新したファイルで置き換える場合は、リソース アイテムを更新します。  
+ リソース アイテムは、アプリケーションのリソース フォルダーに格納されます。 ソース ファイルを変更し、更新されたファイルで、アプリケーションでファイルを置き換える場合は、リソース アイテムを更新する可能性があります。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

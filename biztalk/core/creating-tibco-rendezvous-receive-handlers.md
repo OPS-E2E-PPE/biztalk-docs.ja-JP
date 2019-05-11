@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cbe8e3da4e56b7a7d0df0114057f2e17ff1ce333
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 503b7cf4115c9f27eaad2b9701fc8965b7b6711f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982411"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389864"
 ---
 # <a name="create-tibco-rendezvous-receive-artifacts"></a>TIBCO Rendezvous の受信のアーティファクトを作成します。
 通知やイベントの作成は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] での他の呼び出しの作成と似ています。 ここでは、TIBCO Rendezvous メッセージを待機する受信場所を作成する方法について説明します。  
@@ -144,7 +144,7 @@ TIBCO Rendezvous システムは、選択したサブジェクト名にメッセ
     |パラメーター|説明|  
     |---------------|-----------------|  
     |**デーモン**|Rendezvous トランスポートの "デーモン" パラメーターの数値識別子を入力します。|  
-    |**ネットワーク**|Rendezvous の "ネットワーク" パラメーターの名前を入力します。|  
+    |**Network**|Rendezvous の "ネットワーク" パラメーターの名前を入力します。|  
     |**サービス名** `e`|Rendezvous トランスポートのサービスの名前を入力します。|  
   
 6.  シングル サインオン (SSO) を使用する資格情報を指定します。  
@@ -161,7 +161,7 @@ TIBCO Rendezvous システムは、選択したサブジェクト名にメッセ
          エンタープライズ シングル サインオン ツールで作成された関連アプリケーションは TIBCO Rendezvous などのアプリケーションを表します。 Microsoft BizTalk Adapter for TIBCO Rendezvous では、アプリケーション ユーザーの資格情報が使用されます。 これらの資格情報は、指定された関連アプリケーションのサーバー システムの SSO データベースから取得されます。  
   
         > [!NOTE]
-        >  関連アプリケーションを作成する方法については、[関連アプリケーションを作成する](../core/creating-affiliate-applications1.md)を参照してください。  
+        >  関連アプリケーションを作成する方法については、次を参照してください。[関連アプリケーションを作成する](../core/creating-affiliate-applications1.md)します。  
   
 7.  必要なすべての情報を提供するには、後に次のようにクリックします。**適用**、順にクリックします**OK**します。  
   

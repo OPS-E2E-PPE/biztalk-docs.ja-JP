@@ -20,12 +20,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 498063f5faa500b81c772bc646a2b1cd0f1c8df1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7b0e1ad8529e3f91f5b34ad60585677892989368
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390438"
 ---
 # <a name="debugging-an-orchestration"></a>オーケストレーションのデバッグ
 オーケストレーション デバッガーを使用すると、単一のオーケストレーション インスタンスのアクティビティを図形ごとに追跡できます。 これにより、オーケストレーション デザイナーで作成されたオーケストレーションの描画されたビューが表示されます。  
@@ -53,7 +53,7 @@ ms.locfileid: "36994491"
   
 - [オーケストレーション デバッガーの対話モード](../core/interactive-mode-in-orchestration-debugger.md)  
   
-  機能は、サービスの状態によって異なります。 対話形式のデバッグを実行するには、現在 "ブレークポイント" 状態のサービス インスタンスを、任意のビューから呼び出します。 オーケストレーションのデバッグについては、[オーケストレーション デバッガーとメッセージ フロー ビューを呼び出す方法](../core/how-to-invoke-the-orchestration-debugger-and-the-message-flow-views.md)を参照してください。  
+  機能は、サービスの状態によって異なります。 対話形式のデバッグを実行するには、現在 "ブレークポイント" 状態のサービス インスタンスを、任意のビューから呼び出します。 オーケストレーションのデバッグについては、次を参照してください。[オーケストレーション デバッガーとメッセージ フロー ビューを呼び出す方法](../core/how-to-invoke-the-orchestration-debugger-and-the-message-flow-views.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

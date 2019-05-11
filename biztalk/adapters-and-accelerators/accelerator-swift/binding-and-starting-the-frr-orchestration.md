@@ -17,17 +17,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b01386cedbd25148e5ea0ce2ac44fb56e9fe3d03
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f1189b7db68cc0894725a98887fc82d30dde5a33
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378978"
 ---
 # <a name="binding-and-starting-the-frr-orchestration"></a>バインドおよび FRR オーケストレーションを開始します。
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] FRR オーケストレーションが展開されたアセンブリ (Microsoft として含まれています。Solutions.FinancialServices.SWIFT.FrrOrchestration)。 このオーケストレーションを開始する必要があります。  
   
- **概要**  
+ **まとめ**  
   
  FRR オーケストレーションを開始するには、次の操作を行います。  
   

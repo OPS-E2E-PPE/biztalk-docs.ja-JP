@@ -1,5 +1,5 @@
 ---
-title: SSO イベントとエラー |Microsoft ドキュメント
+title: SSO イベントとエラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f8e06a67760dedb97f9b5d4dcd138ea90d9cfb8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 72edef1373e237168031bc4ce7c8d9cf861d6f30
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276314"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65321918"
 ---
-# <a name="sso-events-and-errors"></a>SSO のイベントとエラー
+# <a name="sso-events-and-errors"></a>SSO イベントとエラー
 このセクションでは、シングル サインオン (SSO) イベントについて説明します。

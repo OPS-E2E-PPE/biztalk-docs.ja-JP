@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b639f80d6ad203074e0542df6672f2d7b89aa2ec
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e666a1013666e360773467ed990b5394e734f4b1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388655"
 ---
-# <a name="acknowledgement-generation-has-failed-as-maximum-limit-of-edifact-transaction-set-control-number-has-been-reached-for-party-settings"></a>パーティの設定の EDIFACT トランザクション セット制御番号が上限に到達したため、受信確認の生成に失敗しました
+# <a name="acknowledgement-generation-has-failed-as-maximum-limit-of-edifact-transaction-set-control-number-has-been-reached-for-party-settings"></a>パーティの設定の Edifact トランザクション セット制御番号の最大の制限に達したと受信確認の生成が失敗しました
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                          |

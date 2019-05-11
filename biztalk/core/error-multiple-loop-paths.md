@@ -1,5 +1,5 @@
 ---
-title: エラー - 複数のループ パス |Microsoft ドキュメント
+title: エラー - 複数のループ パスが |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: afdcb1a235c71163552fd5f6b255e572feef8dc5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02461c4e9fb86bb0c2c902be394b08840172c4d1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241090"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388616"
 ---
 # <a name="error---multiple-loop-paths"></a>エラー - 複数のループ パス
 **エラー コード**  
@@ -28,8 +28,8 @@ ms.locfileid: "22241090"
   
  **説明**  
   
- 送信先スキーマのノードに、複数の送信元ループ パスがあります。  
+ 送信先スキーマで指定されたノードには、複数の送信元ループ パスがあります。  
   
  **ユーザーの操作**  
   
- 使用して、**ループ**functoid を明示的にする、ループの実行、送信元スキーマ内のノードを指定します。
+ 使用して、**ループ**functoid をループの実行、送信元スキーマ ノードを明示的に指定します。

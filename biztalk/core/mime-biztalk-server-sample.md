@@ -18,26 +18,26 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e96e4efd7cb8160871a7fd9d7ac9f1709e0605e8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b4ea6cfa8f2d6b4c94f1e48531167688901132cb
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997179"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527568"
 ---
 # <a name="mime-biztalk-server-sample"></a>MIME (BizTalk Server サンプル)
-MIME サンプルは、送信パイプラインで MIME エンコードが行われる方法を示します。  
+MIME サンプルは、MIME エンコードの送信パイプライン内でを実行する方法を示します。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルでは、MIMEIn フォルダを受信場所として構成します。 このフォルダーにサンプル ファイル ImageInput.gif のようなファイルを置くと、このファイル内のメッセージが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって次の手順で処理されます。  
+ このサンプルでは、受信場所として、MIMEIn フォルダを構成します。 サンプル ファイル ImageInput.gif、このフォルダーにファイルを配置すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]次の手順を使用してこのファイルにメッセージを処理します。  
 
 1.  受信場所フォルダ MIMEIn からメッセージ ファイルを取得します。  
 
-2.  送信パイプラインを使用して、メッセージをそのまま渡します。  
+2.  受信パイプラインでメッセージをそのまま渡します。  
 
-3.  メッセージ ボックス データベースで、メッセージを送信パイプラインにルーティングします。  
+3.  メッセージ ボックス データベースには、送信パイプラインにメッセージをルーティングします。  
 
-4.  送信パイプラインで、MIME エンコードを実行し、そのファイルを送信アダプタ フォルダ MIMEOut に配置します。  
+4.  送信パイプラインで MIME エンコードの実行し、送信アダプタ フォルダ MIMEOut にファイルを配置します。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  \<*パスのサンプル*\>\Pipelines\MIME\  
@@ -51,11 +51,11 @@ MIME サンプルは、送信パイプラインで MIME エンコードが行わ
 |                        ImageInput.GIF                        |                                                                                           サンプル入力ファイルです。                                                                                           |
 | SampleMimeEncoding.btproj<br /><br /> SampleMimeEncoding.sln |                                                                              このサンプルのプロジェクト ファイルとソリューション ファイルです。                                                                               |
 |                SampleMimeEncodingBinding.xml                 |                                                                             ポートのバインドなど、自動化されたセットアップに使用されます。                                                                             |
-|                     SendMimePipeline.btp                     |                                 MIME エンコーダー コンポーネントを含む [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 送信パイプライン ファイルです。                                 |
+|                     SendMimePipeline.btp                     |                                 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] MIME エンコーダー コンポーネントとパイプライン ファイルを送信します。                                 |
 |                          Setup.bat                           |                                                                               このサンプルをビルドおよび初期化するために使用されます。                                                                                |
 
 ## <a name="building-and-initializing-this-sample"></a>このサンプルのビルドと初期化  
- 次の手順に従って、MIME サンプルをビルドおよび初期化します。  
+ 次の手順を使用して、ビルドして、MIME サンプルを初期化します。  
 
 #### <a name="to-build-and-initialize-this-sample"></a>このサンプルを作成および初期化するには  
 
@@ -65,7 +65,7 @@ MIME サンプルは、送信パイプラインで MIME エンコードが行わ
 
 2. ファイルは、次の操作を実行します。 Setup.bat を実行します。  
 
-   - フォルダに、このサンプルの入力 (MIMEIn) フォルダと出力 (MIMEOut) フォルダを作成します。  
+   - フォルダーには、入力 (mimein フォルダ) とこのサンプルの出力 (MIMEOut) フォルダを作成します。  
 
       \<*パスのサンプル*\>\Pipelines\MIME  
 
@@ -94,13 +94,13 @@ MIME サンプルは、送信パイプラインで MIME エンコードが行わ
 >  開き、Setup.bat ファイルを実行することがなくこのサンプルでは、プロジェクトをビルドする場合は、まず、.NET Framework の厳密名ユーティリティ (sn.exe) を使用して厳密な名前キーのペアを作成する必要があります。 結果として得られるアセンブリに署名するのにには、このキー ペアを使用します。 Setup.bat によって行われた変更を元に戻すには、Cleanup.bat を実行します。 Setup.bat を 2 回目に実行する場合は、その前に Cleanup.bat を実行してください。  
 
 ## <a name="running-this-sample"></a>このサンプルの実行  
- 次の手順に従って、MIME サンプルを実行します。  
+ MIME サンプルを実行するのにには、次の手順を使用します。  
 
 #### <a name="to-run-this-sample"></a>このサンプルを実行するには  
 
-1.  ファイル ImageInput.gif を MIMEIn フォルダにコピーします。  
+1.  ファイル ImageInput.gif のコピーを MIMEIn フォルダに配置します。  
 
-2.  テキスト ファイルが MIMEOut フォルダに作成されることを確認します。 このテキスト ファイルの名前はメッセージ ID の GUID に基づきます。 このファイルには、入力ファイル ImageInput.gif の MIME でエンコードされたコンテンツが含まれます。  
+2.  テキスト ファイルが MIMEOut フォルダに作成を確認します。 このテキスト ファイルの名前は、メッセージ ID の GUID に基づきます。 このファイルには、入力ファイル ImageInput.gif の MIME でエンコードされたコンテンツが含まれています。  
 
 ## <a name="see-also"></a>参照  
  [パイプライン (BizTalk Server Samples フォルダー)](../core/pipelines-biztalk-server-samples-folder.md)

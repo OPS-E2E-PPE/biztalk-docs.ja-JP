@@ -1,5 +1,5 @@
 ---
-title: ビジネスの実装の重要なポイント プロセス管理ソリューション |Microsoft ドキュメント
+title: ビジネスの実装の要点プロセス管理ソリューション |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: decad6f68398cca2d0b88c4904d3e63c075749b3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d9bdf863c5d7fc0372f5bbbdc081ecf23afb6886
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257418"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382861"
 ---
 # <a name="implementation-highlights-of-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションの実装の要点
-このセクションでは、企業間取引ソリューションの実装関連の要素を詳細に説明します。 これらの要素にビジネス ルール フレームワーク、処理ステージの数は、方法、 **OrderManager**処理ステージの使用と通信する、 **OrderHandler**オブジェクト、方法アプリケーションでは、Ops アダプタを使用します。  
+このセクションより詳細で、ソリューションの実装に関連する要素について説明します。 これらの要素は、ビジネス ルール フレームワーク、処理ステージの数を含める方法、 **OrderManager**の使用、処理ステージとの通信、 **OrderHandler**オブジェクト、する方法と、アプリケーションでは、Ops アダプタを使用します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -36,10 +36,10 @@ ms.locfileid: "22257418"
   
 -   [ビジネス プロセス管理ソリューションで SSO の効率的な使用](../core/using-sso-efficiently-in-the-business-process-management-solution.md)  
   
--   [Order Handler オブジェクトを使用して、バックエンド システムと通信するには](../core/using-the-order-handler-object-to-communicate-with-backend-systems.md)  
+-   [Order Handler オブジェクトを使用してバックエンド システムと通信](../core/using-the-order-handler-object-to-communicate-with-backend-systems.md)  
   
 -   [XML ドキュメントのマージ](../core/merging-xml-documents.md)  
   
--   [Ops アダプタ](../core/the-ops-adapter.md)  
+-   [Ops アダプター](../core/the-ops-adapter.md)  
   
 -   [Recaller オブジェクト](../core/the-recaller-object.md)

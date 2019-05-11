@@ -15,17 +15,17 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 861390d71c7cd16815ae7f3d446e956f0ae3bb74
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 40b0ef23d013149f7f01efe6f0157ce98b856f2e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004707"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380179"
 ---
 # <a name="managing-the-bam-dynamic-infrastructure"></a>BAM 動的インフラストラクチャの管理
 ビジネス アクティビティの監視 (BAM) 機能では、SQL とオンライン分析処理 (OLAP) のインフラストラクチャに動的に生成されるインフラストラクチャを使用します。 管理者は、BAM 管理ユーティリティを使用して、ビジネス アナリストが作成する BAM 定義ブックまたは XML ファイルを展開します。  
   
- BAM 動的インフラストラクチャは、BAM ブック ビュー、BAM の展開、BAM データ変換サービス (DTS) パッケージ、および BAM データベースで構成されています。 BAM 動的インフラストラクチャの詳細については、[BAM 動的インフラストラクチャ](../core/bam-dynamic-infrastructure.md)を参照してください。  
+ BAM 動的インフラストラクチャは、BAM ブック ビュー、BAM の展開、BAM データ変換サービス (DTS) パッケージ、および BAM データベースで構成されています。 BAM 動的インフラストラクチャの詳細については、次を参照してください。 [BAM 動的インフラストラクチャ](../core/bam-dynamic-infrastructure.md)します。  
   
  BizTalk Server では、BizTalk Server を構成するときに、次の BAM データベースが作成されます。  
   
@@ -37,7 +37,7 @@ ms.locfileid: "37004707"
   
 - BAM アーカイブ (BAMArchive) データベース  
   
-  BAM データベースについては、[BAM データベースを管理する](../core/managing-bam-databases.md)を参照してください。  
+  BAM データベースについては、次を参照してください。 [BAM データベースを管理する](../core/managing-bam-databases.md)します。  
   
   管理者は、このセクションで説明している BAM インフラストラクチャの次の管理作業を行います。  
   

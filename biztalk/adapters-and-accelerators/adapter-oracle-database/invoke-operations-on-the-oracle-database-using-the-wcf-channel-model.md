@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c1ff19d925ac8892fdaed62204f4da742d1e86ef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 95220f03bb427d2a849b23e278763d3beb0d3632
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376505"
 ---
 # <a name="invoke-operations-on-the-oracle-database-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して Oracle データベースに対する操作を呼び出す
 操作を呼び出すことができます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を使用して、 **IRequestChannel**または**IOutputChannel**図形をアダプターにメッセージを送信します。 基本的なパターンが、バインドを使用して、必要なチャネル形状をチャネル ファクトリを作成するには (**OracleDBBinding**) と接続 URI から作成されたエンドポイント。 作成し、**メッセージ**対象の操作のメッセージ スキーマに準拠した SOAP メッセージを表すインスタンス。 これを送信することができますし、**メッセージ**を[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]チャネル ファクトリから作成されたチャネルを使用しています。 使用する場合、 **IRequestChannel**応答が届きます。 Oracle データベースに対する操作の実行に問題がある場合、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]スロー、 **Microsoft.ServiceModel.Channels.Common.TargetSystemException**します。  
@@ -59,20 +59,20 @@ ms.locfileid: "37007419"
 ### <a name="lob-data-and-message-streaming-support"></a>LOB データおよびメッセージのストリーミング サポート  
  方法の詳細については[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]LOB データのストリーミング サポートを参照してください[Oracle データベース アダプターのラージ オブジェクト データ型のストリーミング](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)します。  
   
- ノード値のエンド ツー エンドの LOB データのストリーミングをサポートするために、コードでは、ストリーミングの実装の詳細については、[ストリーミング Oracle LOB データ型を使用してデータベース、WCF チャネル モデル](../../adapters-and-accelerators/adapter-oracle-database/streaming-oracle-database-lob-data-types-using-the-wcf-channel-model.md)を参照してください。  
+ ノード値のエンド ツー エンドの LOB データのストリーミングをサポートするために、コードでは、ストリーミングの実装の詳細については、次を参照してください。[ストリーミング Oracle LOB データ型を使用してデータベース、WCF チャネル モデル](../../adapters-and-accelerators/adapter-oracle-database/streaming-oracle-database-lob-data-types-using-the-wcf-channel-model.md)します。  
   
 ## <a name="transaction-support-on-outbound-operations-in-the-wcf-channel-model"></a>WCF チャネル モデルでの送信操作でトランザクションのサポート。  
  アダプターは、Oracle データベースで専用のトランザクション内で呼び出す各操作を実行します。 これらのトランザクションの分離レベルを設定して制御することができます、 **TransactionIsolationLevel**プロパティをバインドします。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、SCOTT を使用します。ACCOUNTACTIVITY テーブルです。 これらの成果物を生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、[SDK 内のサンプル](../../core/samples-in-the-sdk.md)を参照してください。  
+ このトピックの例では、SCOTT を使用します。ACCOUNTACTIVITY テーブルです。 これらの成果物を生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
   
 ## <a name="how-do-i-invoke-an-operation-by-using-a-channel"></a>チャネルを使用して、操作を呼び出す方法  
  使用して、操作を呼び出す、 **IRequestChannel**、次の手順に従います。  
   
 #### <a name="how-to-invoke-an-operation-by-using-an-instance-of-irequestchannel"></a>IRequestChannel のインスタンスを使用して、操作を呼び出す方法  
   
-1. チャネル ファクトリの作成 (**ChannelFactory\<IRequestChannel\>**)。 これを行うには、バインドを指定する必要があります (**OracleDBBinding**) とエンドポイント アドレス。 コードで強制的に、または構成で宣言によって、バインディングとエンドポイント アドレスを指定できます。 構成でバインディングとエンドポイント アドレスを指定する方法の詳細については、[Oracle データベースを使用してチャネルを作成](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)を参照してください。  
+1. チャネル ファクトリの作成 (**ChannelFactory\<IRequestChannel\>**)。 これを行うには、バインドを指定する必要があります (**OracleDBBinding**) とエンドポイント アドレス。 コードで強制的に、または構成で宣言によって、バインディングとエンドポイント アドレスを指定できます。 構成でバインディングとエンドポイント アドレスを指定する方法の詳細については、次を参照してください。 [Oracle データベースを使用してチャネルを作成](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)です。  
   
    ```  
    // Create a binding  

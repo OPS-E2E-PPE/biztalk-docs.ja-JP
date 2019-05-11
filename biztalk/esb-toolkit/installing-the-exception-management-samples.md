@@ -1,5 +1,5 @@
 ---
-title: 例外の管理のサンプルをインストールする |Microsoft ドキュメント
+title: 例外管理サンプルをインストールする |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9687bfe561a3b9196ecae1f34968c8d1a1b3e8cf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 148ff7fbdcd2da61e2dfc177a9c7b91193cfc6f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294186"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398903"
 ---
-# <a name="installing-the-exception-management-samples"></a>例外の管理のサンプルをインストールします。
-このセクションでは、ESB 例外管理のサンプルを Microsoft BizTalk Server GlobalBank.ESB アプリケーションにインストールするためのプロセスについて説明します。 付属するインストール スクリプトを使用して ESB 例外管理のサンプルをインストールすることができます、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。 このセクションのトピックは次のとおりです。  
+# <a name="installing-the-exception-management-samples"></a>例外管理サンプルをインストールします。
+このセクションでは、Microsoft BizTalk Server GlobalBank.ESB アプリケーションに、ESB 例外管理サンプルをインストールするプロセスについて説明します。 ESB 例外管理サンプルに含まれているインストール スクリプトを使用してをインストールすることができます、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。 このセクションでは、次のトピックについて説明します。  
   
--   [インストール スクリプトを使用して例外管理のサンプルをインストールします。](../esb-toolkit/installing-the-exception-management-samples-using-install-scripts.md)  
+-   [インストール スクリプトを利用し、例外管理サンプルをインストールする](../esb-toolkit/installing-the-exception-management-samples-using-install-scripts.md)  
   
--   [アセンブリおよび例外管理のサンプルがインストールされているアイテム](../esb-toolkit/assemblies-and-artifacts-installed-by-the-exception-management-samples.md)  
+-   [例外管理サンプルによりインストールされるアセンブリとアイテム](../esb-toolkit/assemblies-and-artifacts-installed-by-the-exception-management-samples.md)  
   
 > [!NOTE]
->  [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]サンプル アプリケーションが GlobalBank.ESB をという名前の BizTalk アプリケーション内に存在します。 このアプリケーションが存在することを確認するには、まず、動的な解決サンプルをインストールします。  
+>  [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] GlobalBank.ESB という名前の BizTalk アプリケーション内に存在するサンプル アプリケーション。 このアプリケーションの存在を確認するには、まず動的解決サンプルをインストールします。  
   
- サンプルを実行する方法とその動作方法については、次のトピックを参照してください。  
+ サンプルを実行する方法とそのしくみについては、次のトピックを参照してください。  
   
--   [修復と再送信のカスタム例外ハンドラーのサンプルを実行しています。](../esb-toolkit/running-the-repair-and-resubmit-custom-exception-handler-sample.md)  
+-   [カスタム例外ハンドラーの修復と再送信のサンプルを実行する](../esb-toolkit/running-the-repair-and-resubmit-custom-exception-handler-sample.md)  
   
--   [カスタム例外ハンドラーのサンプルを保持するメッセージを実行しています。](../esb-toolkit/running-the-message-persisting-custom-exception-handler-sample.md)  
+-   [メッセージ永続化カスタム例外ハンドラーのサンプルを実行する](../esb-toolkit/running-the-message-persisting-custom-exception-handler-sample.md)  
   
--   [メッセージのルーティング ESB 処理サンプル BizTalk を実行できませんでした。](../esb-toolkit/running-the-biztalk-failed-message-routing-esb-processing-sample.md)
+-   [BizTalk エラー メッセージ ルーティング ESB 処理サンプルを実行する](../esb-toolkit/running-the-biztalk-failed-message-routing-esb-processing-sample.md)

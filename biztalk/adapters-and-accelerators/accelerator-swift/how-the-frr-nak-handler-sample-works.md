@@ -1,5 +1,5 @@
 ---
-title: FRR NAK ハンドラー サンプルの動作 |Microsoft ドキュメント
+title: FRR NAK ハンドラー サンプルのしくみ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 009cb0c3dffce5f88c72207866f6778e3deb7b28
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 36b64fb92f130defe6bd7d55ac6ccdc3b7391091
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209202"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377434"
 ---
-# <a name="how-the-frr-nak-handler-sample-works"></a>FRR NAK ハンドラーのサンプルのしくみ
-サンプル FRR NAK カスタム ハンドラーは、FIN 対応調整 (FRR) オーケストレーションとメッセージ修復オーケストレーション間の媒介として機能します。 FRR オーケストレーションでは、SWIFT ネットワークは、メッセージを受信しようとしました。 ときに発生したエラーを識別します。 FRR オーケストレーションの出力は、エラー オブジェクトを 1 つの部分から成るメッセージです。 FRR NAK カスタム ハンドラーは、そのメッセージをメッセージ修復オーケストレーションによって取り出されるメッセージの有効化して発生したエラーを示すエラー部分を含む、2 つの部分のメッセージに変換します。 メッセージ修復オーケストレーションでメッセージを開くと、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォーム、エラーの確認、同様に、メッセージを修復して再送信することができますができるように[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]SAA を再送信できます。  
+# <a name="how-the-frr-nak-handler-sample-works"></a>FRR NAK ハンドラー サンプルのしくみ
+FRR NAK のカスタム ハンドラーのサンプルは、FIN 応答の調整 (FRR) オーケストレーションとメッセージ修復オーケストレーション間の媒介として機能します。 FRR オーケストレーションは、メッセージを受信する SWIFT ネットワークが試行されたときに発生したエラーを識別します。 FRR オーケストレーションの出力は、エラー オブジェクトを 1 つのメッセージです。 FRR NAK のカスタム ハンドラーは、そのメッセージをメッセージ修復オーケストレーションによって取得されるメッセージを有効にすると、発生したエラーを示すエラーの部分で、2 つの部分のメッセージに変換します。 メッセージ修復オーケストレーションでメッセージを開くと、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームを使用すると、エラーの確認、メッセージをそれに応じて、修復および再送信するように[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]SAA を再送信できます。  
   
- 次の手順では、FRR NAK カスタム ハンドラーは、SWIFT ネットワークを正常に受信できません。 メッセージを処理するときに発生します。  
+ 次の手順は、FRR NAK のカスタム ハンドラーは、SWIFT ネットワークが正常に受信できなかったメッセージを処理するときに発生します。  
   
-1.  FRR オーケストレーションには、MTS21_FIN_ACKNAK NAK メッセージに失敗したメッセージが関連付けられますが後、RepairSWIFTRejectedMessage オーケストレーション (カスタム ハンドラー) は、MessageBox から元のメッセージを取得します。 これはため A4SWIFT_FRRFailed でフィルター処理するため = = True および A4SWIFT_SendingServiceType"A4SWIFT_FrrService"を = です。  
+1.  FRR オーケストレーションが失敗したメッセージを MTS21_FIN_ACKNAK NAK メッセージを相関関係後 RepairSWIFTRejectedMessage オーケストレーション (カスタム ハンドラー) を元のメッセージをメッセージ ボックスから選択します。 これはそのため A4SWIFT_FRRFailed でフィルター処理するため = = True and A4SWIFT_SendingServiceType"A4SWIFT_FrrService"を = です。  
   
-2.  元のメッセージを相互に関連付けて FRR MTS21_FIN_ACKNAK NAK メッセージ、カスタム ハンドラーは選択されません。 代わりに、エラー コレクション オブジェクトを作成、BRE の検証エラーを示す A4SWIFT_FRRFailedReason プロパティを通知し、元のメッセージに追加の設定。 メッセージ修復オーケストレーションは、この 2 つの部分から成るメッセージを処理できます。  
+2.  元のメッセージに関連する FRR MTS21_FIN_ACKNAK NAK メッセージ、カスタム ハンドラーは選択されません。 代わりに、エラーのコレクション オブジェクトを作成し、A4SWIFT_FRRFailedReason プロパティを通知し、元のメッセージに追加することを示す BRE 検証エラーを設定します。 メッセージ修復オーケストレーションは、この 2 つの部分のメッセージを処理できます。  
   
-3.  カスタム ハンドラーは、メッセージ修復オーケストレーションによって取り出されるメッセージが発生する次のプロパティを昇格: A4SWIFT_Failed A4SWIFT_SwiftBound を = True、= = = True で、BTS です。操作"A4SWIFT_DASMMarkedAsFailed"を = です。 パーツのプロパティの数を 2 に設定し、適切なエラー プロパティを設定します。  
+3.  カスタム ハンドラーは、メッセージがメッセージ修復オーケストレーションによって取得するのには、次のプロパティを昇格します。A4SWIFT_Failed A4SWIFT_SwiftBound を = True、= = = True and BTS します。操作"A4SWIFT_DASMMarkedAsFailed"を = です。 パーツのプロパティの数を 2 に設定し、適切なエラー プロパティを設定します。  
   
-4.  、昇格されたプロパティの結果としてメッセージ修復オーケストレーションがメッセージを取得し、RepairSWIFTRejectedMessage オーケストレーションは終了します。
+4.  昇格されたプロパティの結果としてメッセージ修復オーケストレーションがメッセージを取得し、RepairSWIFTRejectedMessage オーケストレーションが終了します。

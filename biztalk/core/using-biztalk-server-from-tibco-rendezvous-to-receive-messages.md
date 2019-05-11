@@ -2,14 +2,14 @@
 redirect_url: /biztalk/core/using-tibco-rendezvous-receive-ports-from-biztalk-server/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: b1738a0933b5f570edfd882778e50ebf7e2ca730
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: a11dc697b818f016b12ccca77ad657ceacee12da
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013529"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401629"
 ---
-# <a name="using-biztalk-server-from-tibco-rendezvous-to-receive-messages"></a>TIBCO Rendezvous から BizTalk Server を使用してメッセージを受信する
+# <a name="using-biztalk-server-from-tibco-rendezvous-to-receive-messages"></a>TIBCO Rendezvous から BizTalk Server を使用してメッセージを受信するには
 Microsoft BizTalk Adapter for TIBCO Rendezvous は、複数のスレッドのキューからイベントをディスパッチします。 BizTalk Server の受信場所は、1 つの TIBCO Rendezvous イベント キューおよびそのディスパッチャー スレッドのプールと関連付けられています。  
   
 ## <a name="memory-use-and-errors"></a>メモリの使用とエラー  

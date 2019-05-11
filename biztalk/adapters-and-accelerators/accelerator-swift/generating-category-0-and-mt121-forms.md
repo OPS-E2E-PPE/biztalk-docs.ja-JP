@@ -1,5 +1,5 @@
 ---
-title: 0 のカテゴリと MT121 フォームを生成する |Microsoft ドキュメント
+title: カテゴリ 0 と MT121 フォームの生成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40f9de5ff6e5f988422574640e13a45f8fd81632
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 15f79784a227833695068681e1738d901f263680
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207306"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377626"
 ---
-# <a name="generating-category-0-and-mt121-forms"></a>0 のカテゴリと MT121 フォームを生成します。
-カテゴリ 0 と MT121 InfoPath フォーム ジェネレーション別のテンプレート ファイルが必要です。 カテゴリ 0 フォームは、5 つのカテゴリに分かれています。 MT カテゴリの残りの部分と同様、同じ方法での一般的なカテゴリ メッセージが生成されます。 メッセージ名を持つ他の 4 つのカテゴリの例を挙げます。  
+# <a name="generating-category-0-and-mt121-forms"></a>カテゴリ 0 と MT121 フォームを生成します。
+カテゴリ 0 と MT121 InfoPath フォームの生成 別のテンプレート ファイルが必要です。 カテゴリ 0 フォームは、5 つのカテゴリに分類されます。 MT のカテゴリの残りの部分と同じ方法での一般的なカテゴリのメッセージが生成されます。 そのメッセージの名前を持つその他の 4 つのカテゴリの例を示しましょう。  
   
 -   **カテゴリ 0 GAHeader フォーム (MT036、MT042、MT047、MT072、MT077、および MT085) を生成します。**  
   

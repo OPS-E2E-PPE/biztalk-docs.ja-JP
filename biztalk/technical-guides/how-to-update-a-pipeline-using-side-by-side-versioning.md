@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4bf978b64876a91d06acfbe4c5d34278935cfa55
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 85aa5f7d134e14d16fbb4fb88fcff29cf6ce672f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970891"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400271"
 ---
 # <a name="how-to-update-a-pipeline-using-side-by-side-versioning"></a>サイド バイ サイド バージョン管理を使用してパイプラインを更新する方法
 サイド バイ サイド バージョン管理によって追加された新しいパイプラインを使用する簡単な方法は、送信ポートで、新しく展開されたパイプライン バージョンを選択するか、受信場所にです。 古いパイプラインは、新しいこの置き換えられます。 ただし、後方互換性のための本当のサイド バイ サイドでの機能を必要がある場合する必要がありますの新しい送信ポートを作成および受信場所し指定されたパイプラインの新しいバージョンにバインドします。  

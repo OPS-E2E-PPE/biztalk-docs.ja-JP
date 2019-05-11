@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c033ce9dff8b5d9a07dca574d089f575b4eaa5e9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 94787a629fcdea0c061a73e04de127acb1deea96
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008939"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343399"
 ---
 # <a name="how-to-add-basic-functoids-to-a-map"></a>マップに基本 Functoid を追加する方法
 簡単に使用できる Functoid が多数用意されています。 これらは functoid を区別するために基本 functoid としてここに呼ばれる、**詳細**カテゴリ。 基本 Functoid では、変換、データベース、日時、論理、関数、文字列などのカテゴリを対象としています。  
@@ -65,7 +65,7 @@ ms.locfileid: "37008939"
    >  一部の Functoid は、入力リンクを必要としません。 たとえば、**日付**、**時間**、および**日付と時刻**functoid を**日付と時刻**functoid カテゴリは、現在の日付を提供時間、または日付と時刻をインスタンス メッセージを処理中に、それぞれします。 したがって、送信元スキーマからの入力パラメーターは必要ありません。  
    > 
    > [!NOTE]
-   >  多くの functoid の入力パラメーターの順序は重要では対応する functoid のリファレンス トピックに記載されている (を参照してください**Functoid リファレンス** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)])。 リンクの作成順序により、Functoid への入力パラメーターの順序が設定されます。 Functoid のプロパティおよび functoid の入力パラメーターの順序の指定の詳細については、[Functoid プロパティの編集および入力パラメーター](../core/editing-functoid-properties-and-input-parameters.md)を参照してください。 Functoid の入力パラメーターを構成する方法については、[Functoid の入力パラメーターを構成する方法](../core/how-to-configure-functoid-input-parameters.md)を参照してください。  
+   >  多くの functoid の入力パラメーターの順序は重要では対応する functoid のリファレンス トピックに記載されている (を参照してください**Functoid リファレンス** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)])。 リンクの作成順序により、Functoid への入力パラメーターの順序が設定されます。 Functoid のプロパティおよび functoid の入力パラメーターの順序の指定の詳細については、次を参照してください。 [Functoid プロパティの編集および入力パラメーター](../core/editing-functoid-properties-and-input-parameters.md)します。 Functoid の入力パラメーターを構成する方法については、次を参照してください。 [Functoid の入力パラメーターを構成する方法](../core/how-to-configure-functoid-input-parameters.md)します。  
    > 
    > [!NOTE]
    >  リンクを作成する前に、リンクの対象となる Functoid や送信元スキーマ ノードが、グリッド ページまたは送信元スキーマ ウィンドウに表示されていることを確認してください。  

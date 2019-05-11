@@ -1,5 +1,5 @@
 ---
-title: 通信方式 |Microsoft ドキュメント
+title: 通信パターン |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37f8aeeb5328199d0d4e0c770541b0251bdd891d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b0177142a6a5534ae44778eae34602e5b1f785e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231362"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357121"
 ---
-# <a name="communication-pattern"></a>[通信方式]
-各*ポートの種類*通信パターンを持ちます。 通信方式によって、指定された種類のポートで一方向の送信を行うか、双方向 (要求 - 応答) の送信を行うかが決まります。 詳細については、次を参照してください。、**ポート構成ウィザード**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+# <a name="communication-pattern"></a>通信方式
+各*ポートの種類*通信パターンを持ちます。 通信パターンでは、一方向かどうかを決定します。 または、指定された型のポートで双方向 (要求-応答) の送信が行わします。 詳細については、次を参照してください。、**ポート構成ウィザード**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
 > [!NOTE]
->  ポートが異なっていても、種類が同じであれば、常に同じ通信方式が使用されます。ただし、通信方向は同じである必要はありません。  
+>  同じ型の別のポートは、同じ通信方式が必ずしも同じ通信の方向に常になります。  
   
 ## <a name="see-also"></a>参照  
  [ポートの種類を操作する方法](../core/how-to-work-with-port-types.md)   
  [通信方向](../core/communication-direction.md)   
- [オーケストレーションでポートを使用します。](../core/using-ports-in-orchestrations.md)
+ [オーケストレーションでのポートの使用](../core/using-ports-in-orchestrations.md)

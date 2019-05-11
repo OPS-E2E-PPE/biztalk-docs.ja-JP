@@ -19,12 +19,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5bbc5f8afaa8c08da04e9eab1b476e5884b2e6f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a0bb060a903eae06b4014100cac4e8c7bdc4a1ef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986411"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377937"
 ---
 # <a name="dynamic-message-type-discovery-and-schema-resolution"></a>動的メッセージ型の探索とスキーマの解決
 Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] SWIFT 逆アセンブラーおよびアセンブラーの両方で動的メッセージ型の検出とスキーマ解決できます。  
@@ -92,7 +92,7 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
   
 - **A4SWIFT_SecondaryMessageType** (省略可能)  
   
-  これらおよびその他の昇格させたプロパティの詳細については、[a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)を参照してください。  
+  これらおよびその他の昇格させたプロパティの詳細については、次を参照してください。 [a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)します。  
   
 > [!NOTE]
 >  SWIFT ヘッダーのスキーマに設定する場合**None**、完全なインターチェンジのスキーマを指定する必要があります、 **SWIFT インターチェンジ スキーマ**プロパティ。 ここでは、逆アセンブラーは、A4SWIFT を受信するすべてのメッセージを解析するのに指定されたインターチェンジ スキーマを使用します。 つまり、動的スキーマの解決を無効にして、型を持つ指定されたインターチェンジ スキーマに一致するメッセージのみを受信するパイプラインを構成します。  

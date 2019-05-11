@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: da298e0c69de7a351e64aa33ac48611700de3621
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9eaa3a70c6ee734d409d8235a99d203879dcd7ef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980675"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377949"
 ---
 # <a name="end-to-end-tutorial"></a>エンド ツー エンドのチュートリアル
 このチュートリアルには、Microsoft の作成および設定する方法について説明する詳細な手順が含まれています。[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]ソリューション。 Microsoft を使用して、モジュールとレッスン[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]スキーマを作成するオーケストレーション、および A4SWIFT を使用して、パイプライン コンポーネントをマップします。  

@@ -1,5 +1,5 @@
 ---
-title: BTSWebSvcWiz.exe.config を変更する方法 |Microsoft ドキュメント
+title: BTSWebSvcWiz.exe.config を変更する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4862e347fd74c1431f253a1cccedbd844c97c63c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 0fc89d7a0e4201ae3bbff36c636a27c78b2b36b9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971128"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384627"
 ---
 # <a name="how-to-modify-btswebsvcwizexeconfig"></a>BTSWebSvcWiz.exe.config を変更する方法
-コメントを解除して、BizTalk Web サービス公開ウィザードをデバッグするトレースを有効にする、\<追加\>BTSWebSvcWiz.exe.config ファイル内のノードです。 トレース リスナ ノードのコメントが解除されている場合、 *initializeData*パラメーターは、変更されたが、BizTalk Server トレース ファイルに出力を書き込みます、現在のディレクトリ。 または、することができます、トレースのレベルを設定**ApplicationTraceSwitch**し、トレース ファイルのパス名を設定します。  
+コメントを解除して、BizTalk Web サービス公開ウィザードをデバッグするトレースを有効にした、\<追加\>BTSWebSvcWiz.exe.config ファイル内のノード。 トレース リスナ ノードのコメントが解除されている場合、 *initializeData*パラメーターが変更されていない BizTalk サーバー トレース ファイルに出力を書き込みます、現在のディレクトリ。 また、できるトレースのレベルを設定**ApplicationTraceSwitch**し、トレース ファイルのパス名を設定します。  
   
- BTSWebSvcWiz.exe.config は BTSWebSvcWiz.exe ファイルと同じディレクトリ (通常は [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]) に存在します。  
+ BTSWebSvcWiz.exe.config は、通常は BTSWebSvcWiz.exe ファイルと同じディレクトリにある[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]します。  
   
- 次の例に示しますをコメント解除された\<追加\>BTSWebSvcWiz.exe.config ファイル内のノード。  
+ コメント解除されたの一例を次に\<追加\>BTSWebSvcWiz.exe.config ファイル内のノード。  
   
 ```  
 <system.diagnostics>  
@@ -45,9 +45,9 @@ ms.locfileid: "25971128"
 </system.diagnostics>  
 ```  
   
- このトレース機能では .NET Framework の Trace クラスを使用しています。 Trace クラスの詳細については、Microsoft MSDN Web サイトを参照してください。 [http://go.microsoft.com/fwlink/?LinkId=67886](http://go.microsoft.com/fwlink/?LinkId=67886)です。  
+ このトレース機能では、.NET Framework の Trace クラスを使用します。 Trace クラスの詳細については、Microsoft MSDN Web サイトを参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=67886](http://go.microsoft.com/fwlink/?LinkId=67886)します。  
   
- について**TextWriterTraceListener**、「TextWriterTraceListener」を参照してください、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ヘルプ コレクション[http://go.microsoft.com/fwlink/?LinkId=62267](http://go.microsoft.com/fwlink/?LinkId=62267)です。  
+ について**TextWriterTraceListener**の「textwritertracelistener クラス」を参照してください、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ヘルプ コレクション[ http://go.microsoft.com/fwlink/?LinkId=62267](http://go.microsoft.com/fwlink/?LinkId=62267)します。  
   
 ## <a name="see-also"></a>参照  
  [公開済み Web サービスのデバッグ](../core/debugging-published-web-services.md)

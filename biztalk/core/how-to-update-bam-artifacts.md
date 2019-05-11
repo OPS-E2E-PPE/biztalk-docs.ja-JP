@@ -17,21 +17,21 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 083940baf4d6e51e15bc91f4ee7e867d50750c83
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b8bd9abbf0e466097744f6a02f7ae3aa0ccdf372
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011771"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383646"
 ---
 # <a name="how-to-update-bam-artifacts"></a>BAM アイテムを更新する方法
-管理者を使用して、**更新すべて**BAM プライマリ インポート データベースに展開されたアイテムを更新するコマンド。 指定する BAM 定義は、更新するアイテムについての情報を含んでいる XML ファイルまたは Excel ブックのいずれかです。  
+管理者を使用して、**更新すべて**BAM プライマリ インポート データベースに展開されたアイテムを更新するコマンド。 指定する BAM 定義は、XML ファイルまたは更新するアイテムについての Excel ブックのコンテナー情報のいずれかです。  
   
 ### <a name="to-update-bam-artifacts"></a>BAM アイテムを更新するには  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-2. [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
+2. 移動します[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡します。  
   
 3. 型**bm 更新すべて-definitionfile:\<def ファイル\>** します。  
   

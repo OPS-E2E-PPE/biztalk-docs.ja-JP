@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 38e00b7d20e6fd0aff4f6af72377e301a812b8fd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b8dd646a456a06d4ca032f6e68eadf386979bb15
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356959"
 ---
 # <a name="compiler-directives-and-links"></a>コンパイラ ディレクティブおよびリンク
 リンクごとに、次の 2 つのコンパイラ ディレクティブを構成できます。  

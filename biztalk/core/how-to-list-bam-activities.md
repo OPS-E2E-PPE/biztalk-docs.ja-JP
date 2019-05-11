@@ -1,5 +1,5 @@
 ---
-title: BAM アクティビティを一覧表示する方法 |Microsoft ドキュメント
+title: BAM アクティビティを一覧表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,23 +16,23 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3fd2447c9e3b5313bfac7b36b7373acd8f227b4
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 171d0ccef9b94a4251f468623256ad9a168dce90
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25972064"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336844"
 ---
 # <a name="how-to-list-bam-activities"></a>BAM アクティビティを一覧表示する方法
-管理者を使用して、 **get アクティビティ**コマンドを BAM 管理ユーティリティのローカルの BAM プライマリ インポート データベースにアクティビティを一覧表示します。  
+管理者を使用して、 **get アクティビティ**をローカルの BAM プライマリ インポート データベース内のアクティビティを一覧表示、BAM 管理ユーティリティのコマンド。  
   
-### <a name="to-list-bam-activities"></a>BAM アクティビティを一覧表示するには  
+### <a name="to-list-bam-activities"></a>BAM アクティビティの一覧に  
   
-1.  次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリック**ok**です。  
+1.  次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-2.  」と入力して、追跡フォルダーに移動**C:\Program files \microsoft BizTalk Server\<バージョン\>\Tracking**コマンド プロンプトでします。 **Enter**キーを押します。  
+2.  入力して、追跡フォルダーに移動します**C:\Program files \microsoft BizTalk Server\<バージョン\>\Tracking**コマンド プロンプトでします。 **Enter**キーを押します。  
   
-3.  型**bm**です。  
+3.  型**bm**します。  
   
 4.  **Enter**キーを押します。  
   

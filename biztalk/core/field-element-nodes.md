@@ -12,17 +12,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c06a3f2fd55dc720fd0d37beaea49de76cbf101
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f56c7f70822a37a7da5211eb8be0604b1e9f5a6b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004227"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388097"
 ---
 # <a name="field-element-nodes"></a>[フィールド要素] ノード
 
 ## <a name="overview"></a>概要
-BizTalk エディターを使用する**フィールド要素**ノードは、単純な文字列や数値などの情報項目を表すため。 また、このノードは、目的の情報が XML 要素に関連付けられた属性の値としてではなく、実際のメッセージ インスタンスに XML 要素の内容として現れる場合に使用されます。 属性値として格納されている情報の詳細については、[フィールド属性 ノード](../core/field-attribute-nodes.md)を参照してください。  
+BizTalk エディターを使用する**フィールド要素**ノードは、単純な文字列や数値などの情報項目を表すため。 また、このノードは、目的の情報が XML 要素に関連付けられた属性の値としてではなく、実際のメッセージ インスタンスに XML 要素の内容として現れる場合に使用されます。 属性値として格納されている情報の詳細については、次を参照してください。[フィールド属性 ノード](../core/field-attribute-nodes.md)します。  
 
 > [!NOTE]
 >  BizTalk エディターでは、要素と属性要素の両方で表現できる、**フィールド**ノードが、スキーマ ツリー ビューで、XSD ウィンドウにおける XML 表記で、それらに関連付けられている別のアイコン、およびVisual Studio のプロパティ ウィンドウでさまざまなプロパティ。  

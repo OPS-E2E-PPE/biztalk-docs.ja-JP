@@ -13,12 +13,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bb362afb23b165c31df34adf521be81f93a621f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 13f68268cc23255bb18128757b7ee879376572e9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994011"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390022"
 ---
 # <a name="deploy-tibco-rendezvous-ports-and-assemblies"></a>TIBCO Rendezvous ポートとアセンブリを展開します。
   

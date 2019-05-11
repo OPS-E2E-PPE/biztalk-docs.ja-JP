@@ -1,5 +1,5 @@
 ---
-title: 新しいホストとホスト インスタンスのアカウントをサービスを作成する方法 |Microsoft ドキュメント
+title: 新しいホストとホスト インスタンスのアカウントをサービスを作成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,41 +22,41 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d4887d78466340b12b95ed43d27523955ab0689
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 983cbb2b21b2a9027830f9bad326798b84c0f2bc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25969377"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385402"
 ---
-# <a name="how-to-create-service-accounts-for-new-hosts-and-host-instances"></a>新しいホストおよびホスト インスタンスのサービス アカウントを作成する方法
-BizTalk Server を 1 台のコンピュータにインストールした場合、必要な Windows グループ アカウントとユーザー アカウントが構成マネージャで構成されます。  
+# <a name="how-to-create-service-accounts-for-new-hosts-and-host-instances"></a>新しいホストとホスト インスタンスのアカウントをサービスを作成する方法
+Configuration Manager では、インストールして 1 台のコンピューターで BizTalk Server を構成するときに必要な Windows グループとユーザー アカウントを構成します。  
   
- 構成マネージャを実行する前に、ドメイン環境において、Windows グループおよびユーザー アカウントを手動で作成して Windows グループに追加する必要があります。 詳細については、次を参照してください。[ドメイン グループ](../core/domain-groups.md)です。  
+ 手動で Windows グループとユーザー アカウントを作成し、Configuration Manager を実行する前に、ドメイン環境で Windows グループにユーザー アカウントを追加する必要があります。 詳細については、次を参照してください。[ドメイン グループ](../core/domain-groups.md)します。  
   
- 新しいホストまたはホスト インスタンスを作成する前に、以下の手順を実行する必要があります。  
+ 新しいホストまたはホスト インスタンスを作成する前に、次の手順を実行する必要があります。  
   
 ## <a name="prerequisites"></a>前提条件  
- ここで示す手順を実行するには、管理者グループまたはドメイン管理者グループのメンバとしてログオンする必要があります。  
+ この手順を実行する管理者または Domain Admins グループのメンバーとしてログオンする必要があります。  
   
-### <a name="to-create-service-accounts-for-new-hosts-or-host-instances"></a>新しいホストまたはホスト インスタンスのサービス アカウントを作成するには  
+### <a name="to-create-service-accounts-for-new-hosts-or-host-instances"></a>新しいホストまたはホスト インスタンス サービス アカウントを作成するには  
   
-1.  作成する新しいホストのホスト Windows グループを作成します。 新しいホストの作成の詳細については、次を参照してください。[を新しいホストを作成する方法](../core/how-to-create-a-new-host.md)です。  
+1.  作成する新しいホストのホスト Windows グループを作成します。 新しいホストを作成する方法の詳細については、次を参照してください。[新しいホストを作成する方法](../core/how-to-create-a-new-host.md)します。  
   
-2.  新しいホストに追加する各ホスト インスタンスのサービス アカウントを作成します。 新しいホスト インスタンスの作成の詳細については、次を参照してください。[ホスト インスタンスを追加する方法](../core/how-to-add-a-host-instance.md)です。  
+2.  新しいホストに追加される各ホスト インスタンス サービス アカウントを作成します。 新しいホスト インスタンスを作成する方法の詳細については、次を参照してください。[ホスト インスタンスを追加する方法](../core/how-to-add-a-host-instance.md)します。  
   
-3.  必要に応じて、ホスト Windows グループにサービス アカウントを追加します。 先には、サービス アカウントを追加する必要があります Windows グループについては、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)です。  
+3.  必要に応じて、ホスト Windows グループにサービス アカウントを追加します。 これには、サービス アカウントを追加する必要があります Windows グループの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)します。  
   
-4.  ホストおよびホスト インスタンスを作成する場合は、この Windows グループおよびサービス アカウントを使用します。  
-  
-    > [!NOTE]
-    >  指定しない\<*コンピューター名*\>\ ローカル グループと 1 台のコンピューターのセットアップ時にプレフィックスとして。  
+4.  Windows グループを使用して、ホストとホスト インスタンスを作成するときに、サービス アカウント。  
   
     > [!NOTE]
-    >  ドメイン グループを使用するかどうか、必要がありますを指定する\<*ドメイン NetBIOS 名*\>\ ホスト Windows グループ名のプレフィックスとして。 CONTOSO\btssvc などの名前で保存してください。  
+    >  指定しない\<*コンピューター名*\>\ ローカル グループを含む 1 台のコンピューターのセットアップでプレフィックスとして。  
+  
+    > [!NOTE]
+    >  ドメイン グループを使用しているかどうか、指定する必要あります\<*ドメイン NetBIOS 名*\>\ ホスト Windows グループ名のプレフィックスとして。 たとえば、CONTOSO\btssvc です。  
   
 ## <a name="see-also"></a>参照  
- [管理ホストおよびサービス アカウント](../core/managing-hosts-and-service-accounts.md)   
+ [ホストの管理とサービス アカウント](../core/managing-hosts-and-service-accounts.md)   
  [BizTalk Server のセキュリティを管理します。](../core/managing-biztalk-server-security.md)   
  [BizTalk Server 管理者グループを管理する方法](../core/how-to-manage-the-biztalk-server-administrators-group.md)   
  [Windows グループおよびユーザー アカウントの管理のベスト プラクティス](../core/best-practices-for-managing-windows-groups-and-user-accounts.md)

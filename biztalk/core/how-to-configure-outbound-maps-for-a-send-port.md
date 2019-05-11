@@ -19,15 +19,15 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1dc02d2936cad6fd24ee944e3c27c64831bc65f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7140797eba38ee2eebe22ad01d04fdf4acee83ee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023184"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386228"
 ---
 # <a name="how-to-configure-outbound-maps-for-a-send-port"></a>送信ポートの送信マップを構成する方法
-ここでは、BizTalk Server 管理コンソールを使って、送信ポートの送信マップを構成する方法について説明します。 マップを使用すると、オーケストレーションでメッセージを処理することなく、送信ポートによって送信されたメッセージに XSL 変換を適用できます。 出力マップの追加、マップの削除、既存のマップから別のマップへの変更を行うことができます。 送信ポートには複数のマップを追加できます。ただし、各マップには一意の送信元スキーマが必要となります。 マップの背景については、[マップ](../core/maps.md)を参照してください。  
+ここでは、BizTalk Server 管理コンソールを使って、送信ポートの送信マップを構成する方法について説明します。 マップを使用すると、オーケストレーションでメッセージを処理することなく、送信ポートによって送信されたメッセージに XSL 変換を適用できます。 出力マップの追加、マップの削除、既存のマップから別のマップへの変更を行うことができます。 送信ポートには複数のマップを追加できます。ただし、各マップには一意の送信元スキーマが必要となります。 マップの背景については、次を参照してください。[マップ](../core/maps.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

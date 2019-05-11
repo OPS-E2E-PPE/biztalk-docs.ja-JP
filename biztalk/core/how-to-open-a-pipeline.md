@@ -1,5 +1,5 @@
 ---
-title: パイプラインを開く方法 |Microsoft ドキュメント
+title: パイプラインを開く方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,27 +14,27 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3118995334b7d793923b356df462b744a1fbca26
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3258c4b52d5b5302bd1639c144f1aacc3a03a6c3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254338"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384490"
 ---
 # <a name="how-to-open-a-pipeline"></a>パイプラインを開く方法
-パイプライン ファイルを開くと、パイプライン デザイナーが表示され、定義されたパイプラインとそのステージがデザイン領域に表示されます。 また、パイプライン デザイナー ツールボックスおよびプロパティ ウィンドウが表示されます (まだ表示されていない場合)。  
+パイプライン ファイルを開くとにより、パイプライン デザイナーで定義されたパイプラインとそのステージのデザイン領域に表示されます。 さらに、パイプライン デザイナーのツールボックスと [プロパティ] ウィンドウは既に開いていない場合に表示されます。  
   
-### <a name="to-open-a-pipeline"></a>パイプラインを開くには  
+### <a name="to-open-a-pipeline"></a>パイプラインを開く  
   
-1.  ソリューション エクスプローラーで、開くパイプラインをダブルクリックします。  
+1.  ソリューション エクスプ ローラーで、開きたいパイプラインをダブルクリックします。  
   
      - または -  
   
-2.  ソリューション エクスプ ローラーで、パイプラインを選択し、**ビュー**  メニューのをクリックして**開く**です。  
+2.  ソリューション エクスプ ローラーで、パイプラインを選択し、**ビュー**  メニューのをクリックして**オープン**します。  
   
 ## <a name="see-also"></a>参照  
  [新しいパイプラインを作成する方法](../core/how-to-create-a-new-pipeline.md)   
  [パイプラインを保存する方法](../core/how-to-save-a-pipeline.md)   
  [ツールボックスの使用方法](../core/how-to-use-the-toolbox.md)   
  [キーボードで移動する方法](../core/how-to-navigate-with-the-keyboard.md)   
- [パイプライン デザイナーでパイプラインの作成](../core/creating-pipelines-with-pipeline-designer.md)
+ [パイプライン デザイナーでのパイプラインの作成](../core/creating-pipelines-with-pipeline-designer.md)

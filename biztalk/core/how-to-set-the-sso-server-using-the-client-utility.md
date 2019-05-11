@@ -16,17 +16,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f212bb5e6601274a473c6f9854d5e23af9715cd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fa7b17a713e030c55faf03712a5e3651c7c6280a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008867"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383872"
 ---
 # <a name="how-to-set-the-sso-server-using-the-client-utility"></a>クライアント ユーティリティを使用して SSO サーバーを設定する方法
-ssoclient を使用するたびに、まず、ユーザーが構成情報を含む正しいシングル サインオン サーバーを参照するように設定する必要があります。  
+Ssoclient を使用するたびに、正しいシングル サインオン サーバーにその構成情報を含む、ユーザーをまずポイントする必要があります。  
   
-### <a name="to-set-the-sso-server-for-a-user-using-the-client-utility"></a>クライアント ユーティリティを使用してユーザーに対して SSO サーバーを設定するには  
+### <a name="to-set-the-sso-server-for-a-user-using-the-client-utility"></a>クライアント ユーティリティを使用してユーザーの SSO サーバーを設定するには  
   
 1. **開始** メニューのをクリックして**実行**、し、入力**cmd**します。  
   

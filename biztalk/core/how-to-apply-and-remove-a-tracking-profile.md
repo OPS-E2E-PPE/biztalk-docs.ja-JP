@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ffc3b321647a5861a4b4b3d24251f1ecf013ee09
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9e98745e48edc1dea194e33bb8ac3cde9a70d8b7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985027"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387198"
 ---
 # <a name="how-to-apply-and-remove-a-tracking-profile"></a>追跡プロファイルを適用および削除する方法
 追跡プロファイルを作成または変更したら、そのプロファイルをテスト データベースに適用し、結合テストを行って結果を確認します。 追跡プロファイルは、追跡プロファイル エディター (TPE) から直接適用するか、またはコマンド ラインを使用して適用することができます。  
@@ -61,7 +61,7 @@ ms.locfileid: "36985027"
 >  展開時には、bttdeploy ツールにより、追跡プロファイルに含まれているアセンブリのバージョンが確認され、展開されているアセンブリのバージョンと照合されます。 追跡プロファイルに含まれているアセンブリが展開されていない場合、bttdeploy ツールはエラーになります。  
   
 > [!IMPORTANT]
->  コマンド ラインから追跡プロファイルを適用する場合、bttdeploy ツールでは、構成ウィザードの実行時に指定した BizTalk 管理データベースに追跡プロファイルを適用します。 追跡プロファイル エディターのオプション [管理データベースの設定] で別のデータベースを指定した場合は、その設定が使用されます。 bttdeploy ツールのコマンド ライン オプションとして管理サーバーと管理データベースを指定した場合、コマンド ライン オプションが他の設定をオーバーライドします。 Bttdeploy ツールの使用に関する詳細については、[追跡プロファイルの展開ユーティリティ](../core/tracking-profile-deployment-utility.md)を参照してください。  
+>  コマンド ラインから追跡プロファイルを適用する場合、bttdeploy ツールでは、構成ウィザードの実行時に指定した BizTalk 管理データベースに追跡プロファイルを適用します。 追跡プロファイル エディターのオプション [管理データベースの設定] で別のデータベースを指定した場合は、その設定が使用されます。 bttdeploy ツールのコマンド ライン オプションとして管理サーバーと管理データベースを指定した場合、コマンド ライン オプションが他の設定をオーバーライドします。 Bttdeploy ツールの使用に関する詳細については、次を参照してください。[追跡プロファイルの展開ユーティリティ](../core/tracking-profile-deployment-utility.md)します。  
   
 ### <a name="to-remove-a-tracking-profile"></a>追跡プロファイルを削除するには  
   

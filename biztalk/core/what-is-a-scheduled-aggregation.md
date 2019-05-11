@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7d4de675f08ebbb42cf678136bc30550c1c4c84
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e9216a7fc1e1206bf8b98e64883486ad826e1b44
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289018"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401072"
 ---
 # <a name="what-is-a-scheduled-aggregation"></a>スケジュール済みの集計について
 スケジュール済みの集計は、今朝の出荷の概要など、指定した期間のビジネス データのスナップショットを表します。 集計が処理される時期については、データベース管理者に問い合わせてください。集計が処理されると、履歴データを見ることができます。  

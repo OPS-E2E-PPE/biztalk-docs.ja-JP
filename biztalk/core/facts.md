@@ -18,23 +18,23 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bddfeb22484358f68d93f279a42a69c67812ec17
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a7cf1cfe8f7963853d73325b92d53160b304e65
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017621"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388212"
 ---
 # <a name="facts"></a>ファクト
-ファクトとは、実世界に関する個々の情報です。 ファクトは多くのソース (イベント システム、ビジネス アプリケーションやデータベース テーブル内のオブジェクト) から取得できのビジネス ルール エンジンに渡す必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]次の要素のいずれかを使用します。  
+ファクトは、個々 の実世界に関する情報です。 ファクトは多くのソース (イベント システム、ビジネス アプリケーションやデータベース テーブル内のオブジェクト) から取得できのビジネス ルール エンジンに渡す必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]次の要素のいずれかを使用します。  
   
 - .NET オブジェクト (メソッド、プロパティ、およびフィールド)  
   
 - XML ドキュメント (要素、属性、およびドキュメントのサブセクション)  
   
-- データベース行セット (テーブル列の値)  
+- データベースの行セット (テーブル列の値)  
   
-  ビジネス ルール作成ツールでは、ファクト エクスプローラーを使用して、さまざまなソースのデータを参照し、ルールに使用することができます。  
+  ビジネス ルール作成ツールを参照し、さまざまなソースからデータを取り込む、ルール、ファクト エクスプ ローラーを使用できます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ea86bd08a926c3274b16b26b093380396f17887
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 407c161590753a1d6d31b03f1b97eb86ddb58723
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966987"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376346"
 ---
 # <a name="run-operations-on-tables-with-large-object-data-types-in-oracle-database"></a>Oracle データベース内のラージ オブジェクト データ型を持つテーブルに対する操作を実行します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle のラージ オブジェクト (LOB) データ型のサポートを提供します。  
@@ -31,12 +31,12 @@ ms.locfileid: "36966987"
 
 - 各国語文字ラージ オブジェクト (NCLOB)  
 
-- バイナリ ファイル (BFILE)。 詳細については、[BizTalk Server を使用して Oracle データベースで BFILE データ型を持つテーブルで演算の実行](../../adapters-and-accelerators/adapter-oracle-database/run-operations-on-tables-with-bfile-data-types-in-oracle-db-using-biztalk.md)を参照してください。  
+- バイナリ ファイル (BFILE)。 詳細については、次を参照してください。 [BizTalk Server を使用して Oracle データベースで BFILE データ型を持つテーブルで演算の実行](../../adapters-and-accelerators/adapter-oracle-database/run-operations-on-tables-with-bfile-data-types-in-oracle-db-using-biztalk.md)します。  
 
-  [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]は LOB 列を含むテーブルでは、ReadLOB および UpdateLOB の操作を提示することによって。 これらの操作の詳細については、[テーブルとビューを含む LOB データを Oracle データベース内で操作](../../adapters-and-accelerators/adapter-oracle-database/operations-on-tables-and-views-that-contain-lob-data-in-oracle-database.md)を参照してください。 これらの操作を呼び出すため、SOAP メッセージの構造の詳細については、[特殊な LOB 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-special-lob-operations2.md)を参照してください。  
+  [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]は LOB 列を含むテーブルでは、ReadLOB および UpdateLOB の操作を提示することによって。 これらの操作の詳細については、次を参照してください。[テーブルとビューを含む LOB データを Oracle データベース内で操作](../../adapters-and-accelerators/adapter-oracle-database/operations-on-tables-and-views-that-contain-lob-data-in-oracle-database.md)します。 これらの操作を呼び出すため、SOAP メッセージの構造の詳細については、次を参照してください。[特殊な LOB 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-special-lob-operations2.md)します。  
 
 > [!NOTE]
->  使用する場合、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、ReadLOB 操作は、Oracle データベースからのストリーミングの LOB 型のデータをサポートしていません。 使用して Oracle データベースから LOB データをストリーミングする[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]選択操作を代わりに使用する必要があります。 ストリーミングの詳細については、[Oracle データベースで LOB データ型のストリーミング サポート](../../adapters-and-accelerators/adapter-oracle-database/streaming-support-for-lob-data-types-in-oracle-database.md)を参照してください。 また、ReadLOB 操作用の Oracle データベースからの応答には、WSDL に対する検証は失敗します。 エラーを回避する方法については、[運用上の問題のトラブルシューティング](https://msdn.microsoft.com/library/dd787883.aspx)を参照してください。  
+>  使用する場合、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、ReadLOB 操作は、Oracle データベースからのストリーミングの LOB 型のデータをサポートしていません。 使用して Oracle データベースから LOB データをストリーミングする[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]選択操作を代わりに使用する必要があります。 ストリーミングの詳細については、次を参照してください。 [Oracle データベースで LOB データ型のストリーミング サポート](../../adapters-and-accelerators/adapter-oracle-database/streaming-support-for-lob-data-types-in-oracle-database.md)します。 また、ReadLOB 操作用の Oracle データベースからの応答には、WSDL に対する検証は失敗します。 エラーを回避する方法については、次を参照してください。[運用上の問題のトラブルシューティング](https://msdn.microsoft.com/library/dd787883.aspx)します。  
 
 ## <a name="how-to-perform-operations-on-lob-data"></a>LOB データの操作を実行する方法でしょうか。  
  使用して Oracle データベースでの操作を実行する[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で説明されている手順のタスクが含まれます[Oracle データベースと BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md)します。 これらのタスクは、Oracle データベース内のテーブルで ReadLOB と UpdateLOB の両方の操作を呼び出すには。  
@@ -56,10 +56,10 @@ ms.locfileid: "36966987"
    このトピックでは、これらのタスクを実行する手順を説明します。  
 
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル Operate_LOB、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
+ サンプル Operate_LOB、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
 
 ## <a name="generating-schema"></a>スキーマを生成します。  
- このトピックで ReadLOB と UpdateLOB の操作を実行する方法を示すを生成、Oracle データベースで SCOTT スキーマ CUSTOMER テーブルに表示されるこれらの操作のメタデータ。 このテーブルは、サンプルで提供される SQL スクリプトを実行して、SCOTT スキーマの下に作成されます。 サンプルの詳細については、[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)を参照してください。  
+ このトピックで ReadLOB と UpdateLOB の操作を実行する方法を示すを生成、Oracle データベースで SCOTT スキーマ CUSTOMER テーブルに表示されるこれらの操作のメタデータ。 このテーブルは、サンプルで提供される SQL スクリプトを実行して、SCOTT スキーマの下に作成されます。 サンプルの詳細については、次を参照してください。[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)します。  
 
 ## <a name="defining-messages-and-message-types"></a>メッセージおよびメッセージの種類を定義します。  
  以前に生成したスキーマには、オーケストレーション内のメッセージに必要な「型」について説明します。 メッセージは、通常、対象の型が、対応するスキーマで定義されている、変数です。 BizTalk プロジェクトのオーケストレーションの種類 ウィンドウからのメッセージを最初の手順で生成したスキーマをリンクする必要があります。  
@@ -89,9 +89,9 @@ ms.locfileid: "36966987"
 
    |識別子を設定するには|メッセージの種類を設定|  
    |-----------------------|-------------------------|  
-   |応答|*Operate_LOB します。OracleDBBindingSchema.ReadLOBResponse*|  
-   |Request2|*Operate_LOB します。OracleDBBindingSchema.UpdateLOB*|  
-   |Response2|*Operate_LOB します。OracleDBBindingSchema.UpdateLOBResponse*|  
+   |応答|*Operate_LOB.OracleDBBindingSchema.ReadLOBResponse*|  
+   |Request2|*Operate_LOB.OracleDBBindingSchema.UpdateLOB*|  
+   |Response2|*Operate_LOB.OracleDBBindingSchema.UpdateLOBResponse*|  
 
 ## <a name="setting-up-the-orchestration"></a>オーケストレーションのセットアップ  
  使用する BizTalk オーケストレーションを作成する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ReadLOB と UpdateLOB のテーブルに対する操作を呼び出すためです。 このオーケストレーションでは、ReadLOB 操作と UpdateLOB 操作用に 2 つの要求メッセージをドロップします。 これらのメッセージの受信場所は削除されます。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]メッセージを使用し、ODP を使用して Oracle データベースに渡します。 Oracle データベースからの応答は、別の場所に保存されます。  
@@ -141,13 +141,13 @@ ms.locfileid: "36966987"
  2 つの要求を処理するため、これらのポートを使用して応答メッセージは、ポートごとに各操作が 1 つのメッセージの種類に対応する 2 つの操作を作成する必要があります。 操作を作成するポート図形を右クリックし、**新しい操作**します。 最初の操作としては、各ポートの名前を付けます**ReadLOB**としてポートごとに 2 番目の操作と**UpdateLOB**します。  
 
 ### <a name="using-correlation"></a>相関関係の使用  
- 関連付けは、受信メッセージをオーケストレーションの適切なインスタンスに一致させるプロセスです。 削除するオーケストレーションに 2 つの要求メッセージは、各オーバー ロードのいずれか。 相関関係を使用して、適切なオーケストレーションを要求メッセージに関連付けます。 相関関係の詳細については、[オーケストレーションでの相関関係を使用して](../../core/using-correlations-in-orchestrations.md)を参照してください。  
+ 関連付けは、受信メッセージをオーケストレーションの適切なインスタンスに一致させるプロセスです。 削除するオーケストレーションに 2 つの要求メッセージは、各オーバー ロードのいずれか。 相関関係を使用して、適切なオーケストレーションを要求メッセージに関連付けます。 相関関係の詳細については、次を参照してください。[オーケストレーションでの相関関係を使用して](../../core/using-correlations-in-orchestrations.md)します。  
 
 ##### <a name="to-use-correlations"></a>相関関係を使用するには  
 
 1.  操作ごとに生成されたスキーマからプロパティを昇格します。 たとえば、ReadLOB 操作スキーマから LOB_COLUMN プロパティを昇格させますUpdateLOB 操作のスキーマから、FILTER プロパティを昇格します。 プロパティを昇格させるには、スキーマ ビューでプロパティを右クリックして**昇格**、し、**クイック昇格**します。 これにより、PropertySchema.xsd ファイルが BizTalk プロジェクトに追加します。  
 
-     プロパティを昇格する方法の詳細については、[プロパティの昇格](../../core/promoting-properties.md)を参照してください。  
+     プロパティを昇格する方法の詳細については、次を参照してください。[プロパティの昇格](../../core/promoting-properties.md)します。  
 
 2.  オーケストレーションの種類を右クリックして**関連付けの種類**、し、**新しい関連付けの種類**します。  
 
@@ -165,14 +165,14 @@ ms.locfileid: "36966987"
 
     |プロパティ|目的|  
     |--------------|----------------|  
-    |[関連付けの種類]|*Operate_LOB します。CorrelationType_ReadLOB*|  
+    |[関連付けの種類]|*Operate_LOB.CorrelationType_ReadLOB*|  
     |[Identifier]|*Correlation_ReadLOB*|  
 
 9. 別の関連付けセットを追加し、[プロパティ] ウィンドウから次のプロパティを指定します。  
 
     |プロパティ|目的|  
     |--------------|----------------|  
-    |[関連付けの種類]|*Operate_LOB します。CorrelationType_UpdateLOB*|  
+    |[関連付けの種類]|*Operate_LOB.CorrelationType_UpdateLOB*|  
     |[Identifier]|*Correlation_UpdateLOB*|  
 
 ## <a name="specify-messages-for-action-shapes-and-connect-them-to-ports"></a>アクション図形は、メッセージを指定し、ポートに接続  
@@ -191,10 +191,10 @@ ms.locfileid: "36966987"
 
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
 
- ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。  
+ ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。  
 
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)を参照してください。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、次を参照してください。[チュートリアル。基本的な BizTalk アプリケーション展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)します。
 
  アプリケーションを構成する必要があります。  
 
@@ -206,7 +206,7 @@ ms.locfileid: "36966987"
 
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーションが、各操作は、Oracle データベースからの応答を含む応答メッセージをドロップする場所の場所を定義します。  
 
-  - Oracle データベースにメッセージを送信する物理 Wcf-custom または Wcf-oracledb 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 Wcf-custom または Wcf-oracledb のポートを作成する方法については、[、Oracle データベース アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)を参照してください。 Wcf-custom または Wcf-oracledb 送信ポートは 1 つ以上のスキーマに準拠したメッセージの送受信および 2 つの操作を実行、ためには、両方の操作のための動的アクションを設定する必要があります。 アクションの詳細については、[Oracle データベースの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-soap-action-for-oracle-database.md)を参照してください。 このオーケストレーションでは、アクションをよう設定する必要があります。  
+  - Oracle データベースにメッセージを送信する物理 Wcf-custom または Wcf-oracledb 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 Wcf-custom または Wcf-oracledb のポートを作成する方法については、次を参照してください。 [、Oracle データベース アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)します。 Wcf-custom または Wcf-oracledb 送信ポートは 1 つ以上のスキーマに準拠したメッセージの送受信および 2 つの操作を実行、ためには、両方の操作のための動的アクションを設定する必要があります。 アクションの詳細については、次を参照してください。 [Oracle データベースの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-soap-action-for-oracle-database.md)します。 このオーケストレーションでは、アクションをよう設定する必要があります。  
 
     ```  
     <BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
@@ -216,10 +216,10 @@ ms.locfileid: "36966987"
     ```  
 
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、[Oracle データベースへのポート バインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)を参照してください。  
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、次を参照してください。 [Oracle データベースへのポート バインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)します。  
 
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- Oracle データベースで操作を実行するための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。  
+ Oracle データベースで操作を実行するための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。  
 
  この段階で、ことを確認します。  
 
@@ -278,13 +278,13 @@ ms.locfileid: "36966987"
 ```  
 
 > [!NOTE]
->  WSDL の検証に使用する、ReadLOB 操作の応答があります。 WSDL に対して ReadLOB を検証する特定のタスクを実行する必要があります。 詳細については、[運用上の問題のトラブルシューティング](https://msdn.microsoft.com/library/dd787883.aspx)を参照してください。  
+>  WSDL の検証に使用する、ReadLOB 操作の応答があります。 WSDL に対して ReadLOB を検証する特定のタスクを実行する必要があります。 詳細については、次を参照してください。[運用上の問題のトラブルシューティング](https://msdn.microsoft.com/library/dd787883.aspx)します。  
 
 ## <a name="possible-exceptions"></a>可能性のある例外  
  例外に関する情報を使用して LOB データを含むテーブルに対する操作の実行中に発生する可能性が[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[例外とエラー処理](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md)します。  
 
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、[Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)を参照してください。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、次を参照してください。 [Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)します。  
 
 ## <a name="see-also"></a>参照  
 [Oracle Database による開発の BizTalk アプリケーションを構成要素](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md)

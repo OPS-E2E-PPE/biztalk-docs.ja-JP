@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6b9038e443784ae0f2839c2656f62131e9a0fdfa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1f6d5c4555620b2ea51a176e153dc5acdcbfabd8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011379"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400186"
 ---
 # <a name="moving-non-bam-databases"></a>非 BAM データベースの移動
 この手順を使用すると、BizTalk Server のプライマリ データベースを別のサーバーに移動します。 これと同じ基本的な手順がリモート SQL Server または SQL Server クラスターにローカルの SQL Server から BizTalk Server データベースを移動することもできます。 このセクションに移動する方法を説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]関連する BAM ではないデータベース。  

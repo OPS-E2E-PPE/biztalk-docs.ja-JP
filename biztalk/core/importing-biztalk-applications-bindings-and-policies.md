@@ -1,5 +1,5 @@
 ---
-title: BizTalk アプリケーション、バインド、およびポリシーのインポート |Microsoft ドキュメント
+title: BizTalk アプリケーション、バインド、およびポリシーのインポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,19 +19,19 @@ caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 18f7ea348fb34f4f8cc08e748799dcf8368a3c35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7891d36e922f49efd8a5ce4f8986fcad8aa162aa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256778"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382506"
 ---
 # <a name="importing-biztalk-applications-bindings-and-policies"></a>BizTalk アプリケーション、バインド、およびポリシーのインポート
-このセクションの各トピックでは、BizTalk アプリケーション、バインド、およびポリシーを BizTalk グループまたはアプリケーションにインポートする方法について説明します。 説明したよう[を BizTalk アプリケーションをエクスポートする方法](../core/how-to-export-a-biztalk-application.md)アプリケーションのエクスポートを異なる BizTalk グループ内のアプリケーションに、アプリケーションのアイテムをインポートし、使用できる Windows インストーラー (.msi) ファイルが作成されます。 インポートに指定したアプリケーションがそのグループ内に存在しない場合は、アプリケーションが作成されます。 これに加えて、そのグループの BizTalk Server データベースに、アプリケーションのアイテムが登録され、データが格納されます。 詳細については、次を参照してください。[新機能の動作との成果物がインポート](../core/what-happens-when-artifacts-are-imported.md)です。  
+このセクションのトピックでは、BizTalk グループまたはアプリケーションに BizTalk アプリケーション、バインドおよびポリシーをインポートする方法について説明します。 説明したよう[BizTalk アプリケーションのエクスポート方法](../core/how-to-export-a-biztalk-application.md)アプリケーションをエクスポートし、アプリケーションのアイテムを別の BizTalk グループ内のアプリケーションにインポートするのに使用できる Windows インストーラー (.msi) ファイルを作成します。 グループにも、インポート用に指定したアプリケーションがまだ存在しない場合、アプリケーションが作成されます。 さらに、アプリケーションのアイテムが登録されているし、データ グループの BizTalk データベースに格納されます。 詳細については、次を参照してください。[何の動作とアイテムのインポート](../core/what-happens-when-artifacts-are-imported.md)します。  
   
- インポートすることも、BizTalk グループまたはアプリケーションに BizTalk グループ、アプリケーション、またはアセンブリからエクスポートしたバインド」の説明に従って[バインドのエクスポート](../core/exporting-bindings6.md)です。 バインドをインポートすると、BizTalk グループ、アプリケーション、またはアセンブリ内の同じ名前のバインドが上書きされます。  
+ インポートすることも、BizTalk グループまたはアプリケーションに BizTalk グループ、アプリケーション、またはアセンブリからエクスポートしたバインド」の説明に従って[バインドのエクスポート](../core/exporting-bindings6.md)します。 バインドをインポートするときに、BizTalk グループ、アプリケーション、またはアセンブリ内の同じ名前のバインドが上書きされます。  
   
- さらに、できるポリシーをインポートする BizTalk グループまたはアプリケーションからエクスポートされる BizTalk グループに」の説明に従って[ポリシーをエクスポートする方法](../core/how-to-export-a-policy.md)です。 新しいグループのアプリケーションは、このポリシーを使用できるようになります。  
+ さらに、できるポリシーをインポートする BizTalk グループまたはアプリケーションからエクスポートした BizTalk グループに」の説明に従って[ポリシーをエクスポートする方法](../core/how-to-export-a-policy.md)します。 新しいグループのアプリケーションには、ポリシーを使用できます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

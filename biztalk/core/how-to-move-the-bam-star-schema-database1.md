@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3068c9d1c72c30c51f77d9fad7b8ddf5881ed09
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8896ec03a272bee4110e22d11153266720e7fd18
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983411"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384524"
 ---
 # <a name="how-to-move-the-bam-star-schema-database"></a>BAM スター スキーマ データベースを移動する方法
 ここでは、BAM スター スキーマ データベースを他のサーバーに移動する手順について説明します。  
@@ -53,7 +53,7 @@ ms.locfileid: "36983411"
   
 4. SQL Server Books Online に記載されている手順に従い、新しいサーバーにデータベースを復元します。  
   
-5. BAMConfiguration.xml ファイルで、StarSchemaDatabase DeploymentUnit セクションの ServerName を新しいサーバー名に変更します。  
+5. BAMConfiguration.xml ファイルを編集し、StarSchemaDatabase DeploymentUnit セクションの ServerName を新しいサーバー名に変更します。  
   
 6. BAMConfiguration.xml ファイルを保存して閉じます。  
   
@@ -72,9 +72,9 @@ ms.locfileid: "36983411"
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-10. 次の手順を実行して、SQL Connection 2 を更新します。"BAM_AN_" で始まるすべての BAM 分析 DTS パッケージのサーバー名およびデータベース名を変更してください。  
+10. サーバーとすべての BAM 分析 DTS パッケージ、プレフィックス「bam_an _」に、次の手順でデータベース名を変更する SQL Connection 2 を更新します。  
   
-    1.  SQL Server Management Studio を使用して、BAM がホストされているサーバーを開きます。  
+    1.  SQL Server Management Studio を使用して、BAM をホストするサーバーを開きます。  
   
     2.  開く、**データ変換サービス**フォルダー。  
   
@@ -82,11 +82,11 @@ ms.locfileid: "36983411"
   
     4.  DTS パッケージを開きをダブルクリック**Connection 2**接続を開きます。  
   
-    5.  ドロップダウン ボックスから新しいサーバー名とデータベース名を選択します。  
+    5.  ドロップダウン ボックスでは、新しいサーバーとデータベース名を選択します。  
   
-11. 次の手順を実行して、BAM 分析データベースのデータ ソースを更新します。  
+11. 次のように、BAM 分析データベース内のデータ ソースを更新します。  
   
-    1.  SQL Server 分析マネージャーを使用して、BAM 分析データベースをホストするサーバーを展開します。  
+    1.  SQL Server 分析マネージャを使用して、BAM 分析データベースをホストするサーバーを開きます。  
   
     2.  開く、**データソース**フォルダー。  
   

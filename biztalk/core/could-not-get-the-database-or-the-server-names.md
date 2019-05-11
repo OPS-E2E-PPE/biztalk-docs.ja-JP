@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e2d346c2771328ac67df3e2aa7454288779cb9d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 720e84c9d2305b85ec79f76873778e476f670900
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990267"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354342"
 ---
-# <a name="could-not-get-the-database-or-the-server-names"></a>データベース名またはサーバー名を取得できませんでした
+# <a name="could-not-get-the-database-or-the-server-names"></a>データベース名またはサーバー名を取得できませんでした。
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                        |
@@ -30,17 +30,17 @@ ms.locfileid: "36990267"
 |  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    コンポーネント    |                                       EDI エンジン                                       |
 |  シンボル名  |                                           -                                            |
-|  メッセージ テキスト   |                     データベース名またはサーバー名を取得できませんでした                     |
+|  メッセージ テキスト   |                     データベース名またはサーバー名を取得できませんでした。                     |
 
 ## <a name="explanation"></a>説明  
- このエラーは、BizTalk がレジストリから BizTalkMgmtDb 名とサーバー名を読み取れなかったことを示します。 このエラーの考えられる原因の 1 つとして、BizTalk グループが構成されていないことがあります。  
+ このエラーは、BizTalk から読み取れませんでした BizTalkMgmtDb 名とサーバー名レジストリを示します。 このエラーの考えられる理由の 1 つは、BizTalk グループが構成されていません。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、次のようにして BizTalk グループを構成します。  
+ このエラーを解決するには、BizTalk グループを構成します。  
 
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
 
-2. コンソール ルートで、[[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]] を展開します。  
+2. コンソール ルートで [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]します。  
 
 3. 右クリックして**BizTalk グループ**します。  
 

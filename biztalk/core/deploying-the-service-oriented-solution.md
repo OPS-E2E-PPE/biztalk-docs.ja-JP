@@ -1,5 +1,5 @@
 ---
-title: 指向ソリューションのサービスの展開 |Microsoft ドキュメント
+title: 指向ソリューションのサービスの展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,27 +18,27 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7246635c4e0d55fd424fd0052eee91e118c8cb17
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d86b3b1cd1e5cadc8505e88db119cdffdaf653dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239194"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389544"
 ---
-# <a name="deploying-the-service-oriented-solution"></a>指向ソリューションのサービスの展開
-サービス指向のアーキテクチャ (SOA) は、分散システムを構築するためのアプローチです。 サービス指向ソリューションでは、クライアントで使用できる 1 つのサービスにさまざまなプロトコルを使用して複数のバックエンド システムを集計することができますを示しています。 このソリューションでは、配信およびパフォーマンスの特性を保証するアプローチで各種のサービスを統合しています。  
+# <a name="deploying-the-service-oriented-solution"></a>指向ソリューションのサービスのデプロイ
+サービス指向アーキテクチャ (SOA) は、分散システムを構築する方法です。 サービス指向ソリューションでは、クライアントが利用できる 1 つのサービスに集約できるさまざまなプロトコルを使用して複数のバックエンド システムを示します。 このソリューションでは、配信およびパフォーマンスの特性を保証するアプローチとサービスを統合します。  
   
- サービス指向ソリューションは、サービス レベル契約のシナリオをモデル化しています。ソリューションに接続されている BizTalk Server および基幹業務 (LOB) アプリケーション サーバーは、3 秒以内にサービス要求に応答する必要があります。 この 3 秒間のうちの 1 秒は、BizTalk Server によって消費される場合があります。  
+ サービス指向ソリューションがモデルに BizTalk Server および基幹業務 (LOB) アプリケーション サーバーが接続されたサービス レベル アグリーメントによってシナリオには、サービス要求に応答する 3 秒が与えられます。 この 3 秒間のいずれかが占有されます、BizTalk Server でします。  
   
- このセクションの各トピックでは、サービス指向ソリューションを 1 台のコンピュータおよび複数の実稼働サーバーにインストールし、テストする方法について説明します。  
+ このセクションのトピックでは、インストールして、1 台のコンピューターおよび複数の実稼働サーバー上のサービス指向ソリューションをテストする方法について説明します。  
   
 > [!NOTE]
->  サービス指向ソリューションの 3 つのバージョンがあります。 アダプタ、インライン、およびスタブ。 サービス指向ソリューションの 3 つのバージョンの違いの詳細については、次を参照してください。[サービス指向ソリューションを理解する](../core/understanding-the-service-oriented-solution.md)です。  
+>  サービス指向ソリューションの 3 つのバージョンがあります。 アダプタ、インライン、およびスタブ。 サービス指向ソリューションの 3 つのバージョンの違いの詳細については、次を参照してください。[サービス指向ソリューションを理解する](../core/understanding-the-service-oriented-solution.md)します。  
   
  **対象読者**  
   
- このドキュメントは、BizTalk Server、Windows Server、および Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に関する知識があることを前提としています。 また、エンタープライズ アプリケーション統合と Web サービスの基本的な概念についても理解していることを前提としています。 さらに、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用してアプリケーションを作成する方法や、プロジェクトの作成、参照の設定、デバッグ モードを使用したソリューションのデバッグおよびテストに関しても理解しておいてください。 IT 担当者および開発者の必要なスキルと知識の詳細については、次を参照してください。[前提条件のスキルと知識](../core/prerequisite-skills-and-knowledge5.md)です。  
+ このドキュメントは、BizTalk Server、Windows Server、および Microsoft に精通していることを前提としています。[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。 また、エンタープライズ アプリケーション統合と Web サービスの基本的な概念についても理解していることを前提としています。 またを使用してアプリケーションをビルドする方法について理解しているが推奨[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]した参照の設定、デバッグおよびテスト ソリューションをデバッグ モードを使用してプロジェクトの作成について理解しているとします。 IT プロフェッショナルと開発者のスキルと知識の詳細については、次を参照してください。[前提条件のスキルと知識](../core/prerequisite-skills-and-knowledge5.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [開発者のコンピュータ設定、サービス指向ソリューション](../core/developer-machine-setup-for-the-service-oriented-solution.md)
+-   [サービス指向ソリューションに対する開発者のコンピューター設定](../core/developer-machine-setup-for-the-service-oriented-solution.md)

@@ -13,19 +13,19 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cbf2cd833a607efb98ee634774885ffaa1692f4a
-ms.sourcegitcommit: e7609c319b64ec20bf215d17aa5ac4f9dcae52ec
+ms.openlocfilehash: 27d442a80445f498cdcada89d9dbcbd1d2a1bf94
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36945557"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399924"
 ---
 # <a name="available-adapters-in-biztalk-server"></a>BizTalk Server で使用可能なアダプター
 
 ## <a name="overview"></a>概要
 このセクションでは、アダプターの概要について説明します。 ここでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] におけるアダプタの使用方法と、各アダプタのアダプタ ハンドラ、送信ポート、および受信場所の構成方法について説明します。 また、ネイティブ アダプターについて理解を深め、BizTalk ソリューションで使用するために役立つバッチ処理のサポート情報が記載されています。  
   
- アダプターのプロパティ ページのキーボード ショートカットの使用方法の詳細については、[アダプターのプロパティ ページのキーボード ショートカット](../core/adapter-property-page-keyboard-shortcuts.md)を参照してください。  
+ アダプターのプロパティ ページのキーボード ショートカットの使用方法の詳細については、次を参照してください。[アダプターのプロパティ ページのキーボード ショートカット](../core/adapter-property-page-keyboard-shortcuts.md)します。  
   
 ## <a name="adapters-list"></a>アダプターの一覧
   

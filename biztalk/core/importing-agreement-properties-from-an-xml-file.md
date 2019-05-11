@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cafd590f4f5936c1d12614e7a2021bc5427d49d0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 13b8189ce340cb541ab0535f40312f9deec90796
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382565"
 ---
-# <a name="importing-agreement-properties-from-an-xml-file"></a>XML ファイルからのアグリーメント プロパティのインポート
-ここでは、XML テンプレート ファイルからアグリーメントのプロパティをインポートする方法について説明します。  
+# <a name="importing-agreement-properties-from-an-xml-file"></a>アグリーメントのプロパティを XML ファイルからインポートします。
+このセクションでは、アグリーメントのプロパティを XML テンプレート ファイルからインポートする方法を説明します。  
   
 ## <a name="prerequisites"></a>前提条件  
  次に、このトピックの手順を実行するための前提条件を示します。  
@@ -36,7 +36,7 @@ ms.locfileid: "36969147"
 2.  **アグリーメントのプロパティ**ダイアログ ボックスで、をクリックして**テンプレートからロード**します。  
   
     > [!NOTE]
-    >  **テンプレートからロード**アグリーメントのプロトコルを選択した後のみにボタンが有効になります。 プロトコルを指定するときは、その同じエンコード プロトコルを使用した場合にのみアグリーメントをインポートできることを明示的に宣言することにもなります。  
+    >  **テンプレートからロード**アグリーメントのプロトコルを選択した後のみにボタンが有効になります。 プロトコルを指定するときにも暗黙的に宣言する同じエンコード プロトコル用の契約をインポートすることのみできます。  
   
 3.  **オープン**XML テンプレート ファイルの場所を参照、ファイルを選択、および順にクリックします ダイアログ ボックスで、**オープン**。  
   

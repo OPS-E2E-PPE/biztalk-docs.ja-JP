@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d68d1661a86858b8d2bca1bb067c8fa17ea421e3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7938d0d16459028edb39dd1b73b5a9f2276e0e13
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380028"
 ---
 # <a name="measuring-maximum-sustainable-tracking-throughput"></a>維持できる最大の追跡スループットの測定
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プラットフォームに基幹業務ソリューションを展開した後、次の事項を理解するためにシステムを追跡および監視する必要があります。  
@@ -34,7 +34,7 @@ ms.locfileid: "37017062"
   
 - **ビジネス アクティビティ監視 (BAM) 追跡**します。 BAM はユーザー定義追跡プロファイルを使用してビジネス プロセスの状態を追跡し、特別な BAM データベースに記録します。  
   
-  このトピックでは、DTA アーキテクチャ、および DTA を使用するシステムが無限に維持できる最大スループットを決定する体系的な手法について説明します。 DTA と BAM は同じアーキテクチャ コンポーネントを共有しますが、このトピックでは DTA の動作のみ説明します。 BAM アーキテクチャについては、[ビジネス アクティビティ監視 (BAM)](../core/business-activity-monitoring-bam.md)を参照してください。  
+  このトピックでは、DTA アーキテクチャ、および DTA を使用するシステムが無限に維持できる最大スループットを決定する体系的な手法について説明します。 DTA と BAM は同じアーキテクチャ コンポーネントを共有しますが、このトピックでは DTA の動作のみ説明します。 BAM アーキテクチャについては、次を参照してください。[ビジネス アクティビティ監視 (BAM)](../core/business-activity-monitoring-bam.md)します。  
   
 ## <a name="overview-of-dta-tracking-architecture"></a>DTA 追跡アーキテクチャの概要  
  メッセージがシステムに送信されると、メッセージの本文、プロパティ、イベントなどさまざまな追跡対象の要素は一連のプロセスおよびデータベースを通過しますが、最終的に BizTalkDTADb データベースに書き込まれます。 要素が BizTalkDTADb データベースに書き込まれた後で、追跡を使用して、追跡した情報に対するクエリを実行できます。 データベースの設定および BizTalkDTADb を使用する方法については、追跡を参照してください[履歴の表示と追跡データ](../core/viewing-historical-and-tracked-data.md)します。  

@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdb05d6f11d0d4d4f4ef5fd990d05c51b5e0df64
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bb730236e690e5a09d7cd4af27eaec9486da22a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968955"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376906"
 ---
 # <a name="working-with-bre-policies"></a>BRE ポリシーの操作
 Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] SWIFT の検証」の説明に従って、ビジネス ルール エンジン (BRE) を使用してメッセージをポリシー、 *SWIFT リファレンス ガイド*します。 これらのポリシーを以下に示します。  
@@ -41,9 +41,9 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
 
 - マスターのポリシー (MT*xxx*_Master_Policy.xml)  
 
-- 検証ポリシー (MT*xxx*_Validation_Policy.xml)  
+- Validation policy (MT*xxx*_Validation_Policy.xml)  
 
-  メッセージの種類ごとに、マスタ ポリシーは、そのメッセージの種類に適用される特定のポリシーを呼び出します。 これらの特定のポリシーには、特別なフィールドは、その一般的な関数の実装、ネットワーク ルール、および使用に関する規則を確認します。 メッセージのマスター ポリシーは、最初にそのメッセージの実行ポリシーです。 ポリシーの一覧には、メッセージの種類の検証ポリシーが含まれています。 各マスター ポリシーが、コンストラクター「場合、このメッセージを入力し、実行ポリシーの一覧」です。  
+  メッセージの種類ごとに、マスタ ポリシーは、そのメッセージの種類に適用される特定のポリシーを呼び出します。 これらの特定のポリシーには、特別なフィールドは、その一般的な関数の実装、ネットワーク ルール、および使用に関する規則を確認します。 メッセージのマスター ポリシーは、最初にそのメッセージの実行ポリシーです。 ポリシーの一覧には、メッセージの種類の検証ポリシーが含まれています。 各マスター ポリシーが、コンス トラクター「場合、このメッセージを入力し、実行ポリシーの一覧」です。  
 
   メッセージの種類ごとの検証ポリシーでは、フィールドのコードなど、他の外部のルールを実装する単一フィールドのチェックを一覧表示またはフィールドの特定の語彙を使用します。 フィールドに固有であるために、これら個々 のルールは一般に、2 つ以上のメッセージに共通です。 いないプログラミング コード、BRE のボキャブラリで A4SWIFT_Codelists は許可されているフィールドの値を提供します。  
 
@@ -55,7 +55,7 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
 
   BRE の検証の構成パラメーターを true に設定して、受信パイプラインで A4SWIFT 逆アセンブラーがルールを呼び出すことができます。 オーケストレーションからルールを呼び出すこともできます。 A4SWIFT アセンブラー (ASM) でルールを呼び出すことはできません。 オーケストレーションを使用して、または、受信パイプラインをスキーマに対してインスタンスを検証し、規則を実行する必要があります。  
 
-  メッセージには、スキーマの検証またはビジネス ルールのいずれかが失敗した場合、A4SWIFT は見つかったエラーの説明を含むエラーの収集とエラーにフィールドまたはエラーが発生したメッセージ内の位置を示す値を準備します。 詳細については、[メッセージ サブスクリプションの失敗の操作](../../adapters-and-accelerators/accelerator-swift/working-with-failed-message-subscriptions.md)を参照してください。  
+  メッセージには、スキーマの検証またはビジネス ルールのいずれかが失敗した場合、A4SWIFT は見つかったエラーの説明を含むエラーの収集とエラーにフィールドまたはエラーが発生したメッセージ内の位置を示す値を準備します。 詳細については、次を参照してください。[メッセージ サブスクリプションの失敗の操作](../../adapters-and-accelerators/accelerator-swift/working-with-failed-message-subscriptions.md)します。  
 
   A4SWIFT を提供するセットには、追加の規則を追加できます。 たとえば、一連のメッセージに影響を与える市場プラクティス グループの規則を採用する場合は、必要に応じて、1 つまたは複数の新しい検証を含むマスター ポリシーの新しいバージョンを実装できます。 同様に、単一フィールドの追加チェックを適用する場合は、メッセージの検証ポリシーの新しいバージョンにこれらのチェックを追加できます。 新しいルールやボキャブラリ関数としては、新しい検証を実装することができます。  
 

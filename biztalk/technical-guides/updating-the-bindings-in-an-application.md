@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0add0638196e992f74ab53ebda7c429c97ca3aab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d92b772665efb2d866c349dd1708d34e022a21b3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996563"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65261459"
 ---
 # <a name="updating-the-bindings-in-an-application"></a>アプリケーションのバインドを更新しています
 アプリケーションのアセンブリを更新すると、多くの場合、そのバインドが上書きされます。また、アセンブリがまったくバインドされず、バインドの再構成を手動で行う必要が生じることもあります。 これを回避するには、バインド ファイルを使用してアセンブリの同じバージョンを更新または新しいバージョンでアセンブリを更新することができます。  

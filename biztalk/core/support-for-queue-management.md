@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b0d09e75dbf3ff92b3b298d31ff2dfcb80b5217d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c434b1c026eb3d1a0c6235dc885f10e62d3ec5dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017078"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398927"
 ---
 # <a name="support-for-queue-management"></a>キュー管理のサポート
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] MQSeries アダプタを使用して、MQSeries キュー マネージャ上のキューをリモートから作成および削除できます。 この機能がサポートされるのは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で、MQSeries キュー マネージャと直接通信するリモートの MQSAgent COM+ オブジェクトが使用されるためです。 通常この MQSAgent は、リモートの MQSeries Server キューにメッセージを読み書きする実行時に使用されます。 このリモート サービスには、複数の BizTalk サーバーをクライアントとすることができます。 MQSAgent ではキューの作成および削除機能も提供され、これはオーケストレーションまたはアダプタ内から直接呼び出すことができます。 このことによって、高度に動的なシナリオを実現できます。このシナリオでは、オーケストレーションまたはアダプタは一時キューを作成でき、そのキューでメッセージを送信し、別のキューで返信を受け取り、最後に一時キューを削除できます。  
@@ -29,17 +29,17 @@ ms.locfileid: "37017078"
   
 ```  
 typedef enum QueueUsage {  
-      Normal       = 0,  
-      Transmission = 1  
+      Normal       = 0,  
+      Transmission = 1  
 } QueueUsage;  
   
 typedef enum ResultCode {  
-      QueueAlreadyExists                     = 0, //  no bits set  
-      QueueCreated                           = 1, //  QueueCreated  
-      QueueCreatedAndRemoteDefinitionUpdated = 5, //  QueueCreated | RemoteDefinitionUpdated  
-      QueueAndRemoteDefinitionCreated        = 7, //  QueueCreated | RemoteDefinitionCreated | RemoteDefinitionUpdated  
-      QueueDoesNotExist                      = 8, //  QueueDoesNotExist  
-      QueueDeleted                           = 16 //  QueueDeleted  
+      QueueAlreadyExists                     = 0, //  no bits set  
+      QueueCreated                           = 1, //  QueueCreated  
+      QueueCreatedAndRemoteDefinitionUpdated = 5, //  QueueCreated | RemoteDefinitionUpdated  
+      QueueAndRemoteDefinitionCreated        = 7, //  QueueCreated | RemoteDefinitionCreated | RemoteDefinitionUpdated  
+      QueueDoesNotExist                      = 8, //  QueueDoesNotExist  
+      QueueDeleted                           = 16 //  QueueDeleted  
 } ResultCode;  
 ```  
   
@@ -47,12 +47,12 @@ typedef enum ResultCode {
   
 ```  
 [  
-            object,  
-            uuid(E90AC1A6-657B-4680-AF6A-89F11113FB8B),  
-            dual,  
-            nonextensible,  
-            helpstring("IMQSAdmin Interface"),  
-            pointer_default(unique)  
+            object,  
+            uuid(E90AC1A6-657B-4680-AF6A-89F11113FB8B),  
+            dual,  
+            nonextensible,  
+            helpstring("IMQSAdmin Interface"),  
+            pointer_default(unique)  
 ]  
 interface IMQSAdmin2 : IDispatch{  
   
@@ -72,14 +72,14 @@ HRESULT DeleteQueue (
 [out, retval]ResultCode* resultCode);  
 };  
   
-      [  
-            uuid(412AF00D-7CA8-4d2a-AFF6-F61CE2E29A0D),  
-            helpstring("MQSAdmin Class")  
-      ]  
-      coclass MQSAdmin  
-      {  
-            [default] interface IMQSAdmin2;  
-      };  
+      [  
+            uuid(412AF00D-7CA8-4d2a-AFF6-F61CE2E29A0D),  
+            helpstring("MQSAdmin Class")  
+      ]  
+      coclass MQSAdmin  
+      {  
+            [default] interface IMQSAdmin2;  
+      };  
   
 ```  
   
@@ -168,7 +168,7 @@ HRESULT DeleteQueue (
 3. このプロジェクトへの参照を追加、 **MQSAgent 1.0 Type Library**します。 **MQSAgent 1.0 Type Library**で使用できますが、 **COM**のタブ、**参照の追加** ダイアログ ボックス。  
   
    > [!NOTE]
-   >  このコンソール アプリケーションを実行するコンピュータには、MQSAgent COM+ コンポーネントがインストールされている必要があります。 MQSAgent COM + コンポーネントのインストールの詳細については、[MQSAgent COM + 構成ウィザードを使用して](../core/using-the-mqsagent-com-configuration-wizard.md)を参照してください。  
+   >  このコンソール アプリケーションを実行するコンピュータには、MQSAgent COM+ コンポーネントがインストールされている必要があります。 MQSAgent COM + コンポーネントのインストールの詳細については、次を参照してください。 [MQSAgent COM + 構成ウィザードを使用して](../core/using-the-mqsagent-com-configuration-wizard.md)します。  
   
 4. コンソール アプリケーションをビルドします。  
   

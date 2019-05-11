@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fd107a9b596919c92e4cb8ac5a0538e8f4ded3ab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1d0fc7b4d14d061ae8d2bbe29b68ab2d1fccd540
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007971"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401410"
 ---
 # <a name="administrative-maintenance"></a>管理メンテナンス
 このセクションで管理上の問題を解決する方法について説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システム。 実行される定期的なメンテナンスのチェックでこれらの問題を検出する可能性がある、[ルーチン メンテナンスのチェックリスト](../technical-guides/routine-maintenance-checklists.md)セクション。  

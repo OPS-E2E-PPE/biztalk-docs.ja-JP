@@ -23,15 +23,15 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27c591e7ea30dd97b116f89c3d50d03ea48392b4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8fb31801e832c190ee4c9d00d7dcaa055a4f43fc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386208"
 ---
-# <a name="how-to-configure-per-instance-pipeline-properties-for-a-receive-location"></a>受信場所のインスタンスごとにパイプライン プロパティを構成する方法
-このトピックでは、BizTalk グループにパイプラインを展開した後、BizTalk Server 管理コンソールを使用して受信場所のパイプライン プロパティを構成する方法について説明します。 受信場所のパイプライン プロパティを変更した場合、その受信場所についてのみ、既定のパイプライン プロパティが上書きされます。したがって、BizTalk グループに含まれる各受信場所について、それぞれ異なるパイプライン プロパティを構成することも可能です。  
+# <a name="how-to-configure-per-instance-pipeline-properties-for-a-receive-location"></a>インスタンスごとのパイプライン プロパティを構成する方法、受信場所
+このトピックでは、BizTalk Server 管理コンソールを使用して、BizTalk グループにパイプラインを展開した後、受信場所のパイプライン プロパティを構成する方法について説明します。 この既定のパイプライン プロパティを上書き変更の受信場所のみ、BizTalk グループ内の受信場所をそれぞれ異なるパイプライン プロパティをする場合は、構成できるようにします。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
@@ -39,7 +39,7 @@ ms.locfileid: "36982419"
 > [!NOTE]
 >  インスタンスごとにパイプライン プロパティを使用して、値を設定する場合、 **DocumentSpecNames**同じプロジェクトでパイプラインを指定されたドキュメント スキーマとパイプラインの XML 逆アセンブラー コンポーネントでプロパティを定義する必要があります。  
   
-### <a name="to-configure-per-instance-pipeline-properties-for-a-receive-location"></a>受信場所のインスタンスごとにパイプライン プロパティを構成するには  
+### <a name="to-configure-per-instance-pipeline-properties-for-a-receive-location"></a>受信場所のインスタンスごとのパイプライン プロパティを構成するには  
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "36982419"
 5. をクリックし、プロパティを構成する**OK**します。 詳細については、次のようにクリックします。**ヘルプ**[プロパティ] ページ。  
   
    > [!IMPORTANT]
-   >  パイプライン プロパティの情報は正しく入力してください。 数値を入力すべきところで文字列を入力するなど、無効な値を入力するとエラーが発生します。  
+   >  パイプラインのプロパティの正しい情報を入力することを確認します。 数値ではなく文字列など、無効な値を入力すると、エラーが生成されます。  
   
 6. この場合、要求-応答受信場所の右側にある省略記号 (...) をクリックして、**送信パイプライン**ボックス。  
   

@@ -1,5 +1,5 @@
 ---
-title: SWIFT から受信するための受信場所の作成、FRR |Microsoft ドキュメント
+title: SWIFT からの受信用の受信場所の作成、FRR |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,20 +16,20 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e43ac2ac0fab9b2a29a44784032f9d3369833ae2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1912187c299e959c1a4f56c6650201efc5b37246
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210154"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378403"
 ---
-# <a name="creating-the-frr-receive-location-for-receiving-from-swift"></a>SWIFT から受信するための受信場所の FRR を作成します。
-FIN 対応調整を実行するには、A4SWIFT に SWIFT ネットワークからメッセージを受信する受信場所を作成する必要があります。  
+# <a name="creating-the-frr-receive-location-for-receiving-from-swift"></a>SWIFT からの受信用の受信場所の FRR を作成します。
+FIN Response Reconciliation を実行するには、A4SWIFT に SWIFT ネットワークからメッセージを受信する受信場所を作成する必要があります。  
   
 > [!NOTE]
->  お勧め SAA からメッセージを受信するための場所が表示される 2 つを設定する: パン/nans 値や 1 つの他のすべてのメッセージを受信する受信します。 設定するには 2 つの受信場所、SAA で 2 つの MQSeries キューからメッセージを受信する必要があります: パン/nans 値やその他のすべてのメッセージ型のいずれかのいずれか。  
+>  お勧めを設定するには、2 つの受信 SAA からメッセージを受信するための場所: パン/Nan と 1 つの他のすべてのメッセージの受信を受信する 1 つ。 設定する 2 つの受信場所、SAA で 2 つの MQSeries キューからメッセージを受信する必要があります。 パン/Nan とその他のすべてのメッセージの種類のいずれかのいずれか。  
   
- **概要**  
+ **まとめ**  
   
  次のプロパティおよびコンポーネントで受信場所を作成します。  
   
@@ -39,41 +39,41 @@ FIN 対応調整を実行するには、A4SWIFT に SWIFT ネットワークか�
 |トランスポートの種類|MQSeries|  
 |キュー定義 (MQSeries)|MQSeries server<br />キュー マネージャー<br />キュー|  
 |[受信ハンドラー]|BizTalkServerApplication|  
-|受信パイプライン。|A4SWIFT FRR 用に作成したパイプラインを受信します。|  
+|受信パイプライン。|A4SWIFT 受信 FRR 用に作成したパイプライン|  
   
-### <a name="to-add-an-frr-receive-location-for-receiving-from-swift"></a>SWIFT から、FRR 受信受信するための場所を追加  
+### <a name="to-add-an-frr-receive-location-for-receiving-from-swift"></a>SWIFT から、FRR 受信の受信場所を追加  
   
-1.  BizTalk Server 管理コンソールで、展開**BizTalk Server 管理コンソール**、 **BizTalk グループ**、**アプリケーション**、および**BizTalk アプリケーション1**ノード。  
+1.  BizTalk Server 管理コンソールで  **BizTalk Server 管理**、 **BizTalk グループ**、**アプリケーション**、および**BizTalk アプリケーション1**ノード。  
   
-2.  右クリック**受信ポート**、 をポイント**新規**、クリックして**一方向の受信ポート**です。  
+2.  右クリック**受信ポート**、 をポイント**新規**、 をクリックし、**一方向の受信ポート**します。  
   
-3.  受信ポートのプロパティ ダイアログ ボックスで、**名前**ボックス FRRSWIFTReceivePort など、受信ポートの名前を入力します。  
+3.  受信ポートのプロパティ ダイアログ ボックスでの**名前**ボックスに、FRRSWIFTReceivePort など、受信ポートの名前を入力します。  
   
-4.  をクリックして**適用**をクリックして、ポートのバインド**OK**です。  
+4.  をクリックして**適用**をクリックして、ポートのバインド**OK**します。  
   
-5.  管理コンソールで、右クリック**受信場所**、 をポイント**新規**、クリックして**一方向の受信場所**です。  
+5.  管理コンソールで、右クリック**受信場所**、 をポイント**新規**、 をクリックし、**一方向の受信場所**します。  
   
-6.  受信ポート ダイアログ ボックスの 選択した受信ポートを作成し、をクリックして**OK**です。  
+6.  受信ポートのダイアログ ボックスの 選択した受信ポートを作成し、 **OK**します。  
   
-7.  受信場所のプロパティ ダイアログ ボックスで、**名前**ボックス FRRSWIFTReceiveLocation など、受信場所の名前を入力します。  
+7.  受信場所のプロパティ ダイアログ ボックスでの**名前**ボックスに、FRRSWIFTReceiveLocation など、受信場所の名前を入力します。  
   
-8.  **トランスポート** セクションの**型**テキスト ボックスで、 **MQSeries**です。  
+8.  **トランスポート**セクションの**型**テキスト ボックスで、 **MQSeries**します。  
   
 9. をクリックして**構成**です。  
   
 10. [MQSeries トランスポートのプロパティ] ダイアログ ボックスで、**キュー定義**、クリックして、省略記号 (**.**) ボタンをクリックします。  
   
-11. **キュー定義**ダイアログ ボックスで、MQSeries サーバー、キュー マネージャーでは、入力をキューに登録します。 **[OK]** をクリックします。  
+11. **キュー定義**ダイアログ ボックスで、MQSeries サーバー、キュー マネージャー、入力し、キューします。 **[OK]** をクリックします。  
   
-12. **MQSeries トランスポートのプロパティ** ダイアログ ボックスで、プロパティが必要なことを確認します。 **[OK]** をクリックします。  
+12. **MQSeries トランスポートのプロパティ** ダイアログ ボックスで、プロパティが必要なであることを確認します。 **[OK]** をクリックします。  
   
     > [!NOTE]
-    >  MQSeries トランスポートのプロパティの詳細については、MQSeries のマニュアルを参照してください。  
+    >  MQSeries トランスポートのプロパティの詳細については、MQSeries のドキュメントを参照してください。  
   
-13. 受信場所のプロパティ] ダイアログ ボックスの**受信ハンドラー**[ **BizTalkServerApplication**です。  
+13. 受信場所のプロパティ ダイアログ ボックスでの**受信ハンドラー**、 **BizTalkServerApplication**。  
   
-14. **受信パイプライン** セクションで、選択、A4SWIFT 受信パイプライン FRR 用に作成します。  
+14. **受信パイプライン** セクションで、選択、A4SWIFT 受信 FRR 用に作成したパイプライン。  
   
-15. をクリックして**適用**、クリックして**OK**  
+15. クリックして**適用**、 をクリックし、 **OK**  
   
-16. BizTalk エクスプローラを右クリックした受信場所を作成し、をクリックして**を有効にする**です。
+16. BizTalk エクスプ ローラーで右クリックした受信場所を作成し、**を有効にする**します。

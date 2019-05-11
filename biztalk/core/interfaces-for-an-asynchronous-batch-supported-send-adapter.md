@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc579995821a97dc588b2221f8a7dd2e9cd1e136
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 07890cb81bb76a665f98d7f489b4775c01f436b3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381798"
 ---
-# <a name="interfaces-for-an-asynchronous-batch-supported-send-adapter"></a>バッチ処理に対応した非同期送信アダプター用のインターフェイス
-バッチ対応アダプターでは、同期的または非同期的にメッセージを送信し、トランザクション送信を実行できます。 メッセージのバッチを送信するには、送信アダプターに次のインターフェイスを実装する必要があります。  
+# <a name="interfaces-for-an-asynchronous-batch-supported-send-adapter"></a>バッチ処理に対応の非同期送信アダプター用のインターフェイス
+バッチ対応アダプターでは、同期または非同期にメッセージを送信し、トランザクション送信を実行することがあります。 メッセージのバッチを送信するには、送信アダプターは、次のインターフェイスを実装する必要があります。  
   
 - **IBTTransport**  
   
@@ -34,12 +34,12 @@ ms.locfileid: "36993019"
   
 - **IBTTransmitterBatch**  
   
-  バッチの非同期送信では、メッセージング エンジンがアダプターからバッチを取得し、そのバッチに送信するメッセージを追加します。 メッセージング エンジンを呼び出すと、メッセージの送信、**完了**batch でのメソッド。 アダプターは、非同期送信する各メッセージに対して `False` を返します。 アダプターはアダプターのプロキシからバッチを取得し、正常に送信されたメッセージを削除します。  
+  非同期バッチ送信では、メッセージング エンジンがアダプターからバッチを取得し、そのバッチに送信するメッセージを追加します。 メッセージング エンジンを呼び出すと、メッセージの送信、**完了**batch でのメソッド。 アダプターは返します`False`非同期的に送信するメッセージごとにします。 アダプターは、アダプターのプロキシからバッチを取得し、正常に送信されたメッセージを削除します。  
   
-  バッチ処理に対応した非同期送信アダプターを作成するときの、オブジェクト間の対話処理を次に示します。  
+  次の図は、送信アダプターのバッチでサポートされている非同期作成に関連するオブジェクトの相互作用を示しています。  
   
   ![](../core/media/ebiz-sdk-devadapter7.gif "ebiz_sdk_devadapter7")  
-  メッセージの非同期送信のワークフロー  
+  非同期的にメッセージを送信するためのワークフロー  
   
 ## <a name="see-also"></a>参照  
  [アダプター変数](../core/adapter-variables.md)   

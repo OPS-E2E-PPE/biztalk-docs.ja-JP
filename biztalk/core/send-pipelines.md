@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef08909dbc47e11f5c9fecae6f65e01dbe79441b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38b33fc28e9a8ec051f00c846275451a7fcbcb96
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270178"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250453"
 ---
 # <a name="send-pipelines"></a>送信パイプライン
 次の図は、メッセージ処理のワークフローです。送信パイプラインが強調表示されています。  
@@ -36,7 +36,7 @@ ms.locfileid: "22270178"
   
  新しい送信パイプラインを作成することも BizTalk Server に含まれる 2 つの既定の送信パイプラインのいずれかを使用することができます: パススルー送信パイプラインと XML 送信パイプラインです。  
   
- 既定では、送信パイプラインは 3 つの空ステージで構成されます: プリアセンブル、アセンブル、およびエンコードします。 このトピックでは、これらのステージを設定する際に考慮すべき点について説明します。  
+ 既定では、送信パイプラインは 3 つの空のステージで構成されます。プリアセンブル、アセンブル、およびエンコードします。 このトピックでは、これらのステージを設定する際に考慮すべき点について説明します。  
   
 > [!NOTE]
 >  使用するコンポーネントをパイプラインに追加すると、送信パイプラインは、ゼロ メッセージを作成できます。  

@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 490c1244b8ea63dda255220569f3ccee4e0f70c5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e31545fae97387033fc0c9c97687b8973649f53e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007843"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378374"
 ---
 # <a name="defining-a-custom-bam-view-for-message-repair-and-new-submission-data"></a>Message Repair and New Submission データのカスタム BAM ビューの定義
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] セットアップでは、ビジネス アクティビティとビジネス ビューを定義する BAM 定義ファイルを提供します。 そのビューを使用する BAM 定義ファイルをデプロイすることも、BAM 定義ファイルに追加できるカスタム ビューを作成することができます。  

@@ -1,5 +1,5 @@
 ---
-title: BizTalk Adapter for JD Edwards EnterpriseOne のインストール |Microsoft ドキュメント
+title: BizTalk Adapter for JD Edwards EnterpriseOne のインストール |Microsoft Docs
 description: BizTalk Server で JD Edwards EnterpriseOne の BizTalk アダプターのインストールと構成の概要へのクイック リンク
 ms.custom: ''
 ms.date: 10/16/2017
@@ -13,18 +13,18 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b1d336d8e44e186e5ffcf6a62dc15973950a3d2
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 672ee48374b416be955320f58a40934e6c95dc40
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
-ms.locfileid: "23450571"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382121"
 ---
 # <a name="install-biztalk-adapter-for-jd-edwards-enterpriseone"></a>BizTalk Adapter for JD Edwards EnterpriseOne をインストールします。
 
 ## <a name="install-and-setup"></a>インストールとセットアップ
 
-[インストールし、構成のエンタープライズ アプリケーション用のアダプター](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md) enterprise アダプターをインストールする手順が含まれており、アダプターをインストールした後と、アダプターをインストールする前に知っているキーの情報も含まれます。 
+[インストールし、構成のエンタープライズ アプリケーション アダプター](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md)エンタープライズ アダプターをインストールする手順を含み、キーの情報を知ると、アダプターをインストールする前に、アダプターをインストールした後も含まれます。 
   
 ## <a name="next-step"></a>次の手順
-[チュートリアル: BizTalk アダプターを使用して JD Edwards EnterpriseOne の](../core/tutorial-using-the-biztalk-adapter-for-jd-edwards-enterpriseone.md)
+[チュートリアル: BizTalk Adapter for JD Edwards EnterpriseOne の使用](../core/tutorial-using-the-biztalk-adapter-for-jd-edwards-enterpriseone.md)

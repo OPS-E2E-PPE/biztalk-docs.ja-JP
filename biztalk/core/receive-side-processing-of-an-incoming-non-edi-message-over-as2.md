@@ -12,12 +12,12 @@ caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed0829579108feb9dbfbf5e5e08d98291ba49604
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c9d37479d66001eb073cb29a47b1fb8f56b0af8f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002811"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398191"
 ---
 # <a name="receive-side-processing-of-an-incoming-non-edi-message-over-as2"></a>AS2 経由で受信した非 EDI メッセージの受信側の処理
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に付属の AS2 パイプラインを使用すると、AS2 トランスポート経由の EDI メッセージまたは非 EDI メッセージを処理できます。 この 2 つの種類のペイロードで使用されるパイプラインは異なります。 AS2 経由の受信 EDI メッセージの処理には、AS2EdiReceive パイプラインを使用し、関連する MDN (有効になっている場合) を返すときには AS2Send パイプラインを使用します。 AS2 経由で受信した非 EDI メッセージの処理には、AS2Receive パイプラインを使用し、関連する MDN (有効になっている場合) を返すときには AS2Send パイプラインを使用します。 非 EDI メッセージは、任意のバイナリ ペイロードです。  
@@ -53,7 +53,7 @@ ms.locfileid: "37002811"
   
   AS2 デコーダーは、これらのヘッダーをメッセージのコンテキストに昇格させます。 これは、後は、次の:  
   
-- アグリーメントの解決を実行して、受信メッセージの処理に使用するパーティのプロパティを特定します。 詳細については、[受信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-incoming-as2-messages.md)を参照してください。  
+- アグリーメントの解決を実行して、受信メッセージの処理に使用するパーティのプロパティを特定します。 詳細については、次を参照してください。[受信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-incoming-as2-messages.md)します。  
   
 - AS2-From プロパティと AS2-To プロパティを使用して送信者を認証します。  
   

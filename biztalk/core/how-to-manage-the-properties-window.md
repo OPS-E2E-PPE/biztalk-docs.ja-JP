@@ -1,5 +1,5 @@
 ---
-title: '[プロパティ] ウィンドウを管理する方法 |Microsoft ドキュメント'
+title: '[プロパティ] ウィンドウを管理する方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 089429e69d28e67813fd353e8af3208dfb66d15c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3c21892635d0d986b4864f1fdebaaafdced955ef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254066"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384632"
 ---
-# <a name="how-to-manage-the-properties-window"></a>[プロパティ] ウィンドウの管理方法
-BizTalk エディターは、スキーマ ツリーのノードに関連付けられたプロパティの値を、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の [プロパティ] ウィンドウを使用して表示します。[プロパティ] ウィンドウは、プロパティの値を変更するためのインターフェイスとしても使用されています。 このトピックでは、[プロパティ] ウィンドウのいくつかの機能を操作するための手順について説明します。  
+# <a name="how-to-manage-the-properties-window"></a>[プロパティ] ウィンドウを管理する方法
+BizTalk エディターで、Microsoft が使用[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティの値を表示する [プロパティ] ウィンドウは、スキーマ ツリー ビュー内のノードに関連付けられているし、それらの値を変更するためのインターフェイスを提供します。 このトピックでは、[プロパティ] ウィンドウの特定の特性を管理するための詳細な手順を説明します。  
   
-### <a name="to-turn-property-descriptions-on-and-off"></a>プロパティの説明の表示/非表示を切り替えるには  
+### <a name="to-turn-property-descriptions-on-and-off"></a>プロパティの説明を有効または無効にする  
   
--   [プロパティ] ウィンドウで任意のプロパティ名を右クリックし、をクリックして**説明**です。  
+-   [プロパティ] ウィンドウで、プロパティ名を右クリックし、順にクリックします**説明**します。  
   
     > [!NOTE]
-    >  この手順によって、プロパティの表示と非表示が切り替わります。  
+    >  オンとオフは、プロパティの表示を切り替えるには、この手順を使用します。  
   
-### <a name="to-arrange-properties-alphabetically-within-their-categories"></a>プロパティをカテゴリに分けてアルファベット順に表示するには  
+### <a name="to-arrange-properties-alphabetically-within-their-categories"></a>そのカテゴリ内でアルファベット順にプロパティを調整するには  
   
--   クリックして、 **Categorized**ツールバーの [プロパティ] ウィンドウでプロパティの一覧の上です。  
+-   をクリックして、**項目別**プロパティ ウィンドウでプロパティの一覧の上にツールバー ボタンをクリックします。  
   
-### <a name="to-arrange-properties-alphabetically-without-regard-to-their-categories"></a>カテゴリに関係なくすべてのプロパティをアルファベット順に表示するには  
+### <a name="to-arrange-properties-alphabetically-without-regard-to-their-categories"></a>それぞれのカテゴリに関係なくアルファベット順にプロパティを調整するには  
   
--   クリックして、**アルファベット**ツールバーの [プロパティ] ウィンドウでプロパティの一覧の上です。  
+-   をクリックして、**アルファベットで**プロパティ ウィンドウでプロパティの一覧の上にツールバー ボタンをクリックします。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk エディターの使用](../core/using-biztalk-editor.md)
+ [BizTalk エディターを使用してください。](../core/using-biztalk-editor.md)

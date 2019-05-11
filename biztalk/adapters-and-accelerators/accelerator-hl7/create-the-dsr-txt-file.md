@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f5fd535b1a4db0a960c8f993cd6daf22ee9d1b0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 59c5dca63e5d4120aad364afe6ca2da740196ab2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976883"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251283"
 ---
 # <a name="create-the-dsrtxt-file"></a>DSR.txt ファイルを作成します。
 応答 DSR.txt メッセージ ファイルを作成するのにには、次の手順を使用します。 このチュートリアルのシナリオを確認するのには、このファイルを後で使用します。  
@@ -42,4 +42,4 @@ ms.locfileid: "36976883"
   
 2. ファイルに保存します**DSR.txt**で、 \<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\Interrogative のアクセラレータチュートリアルのフォルダーと、エディターを閉じます。  
   
-   進みます[手順 1: 一般的なヘッダーと確認スキーマ作成して展開](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-common-header-and-acknowledgment-schemas.md)します。
+   続行する[手順 1。作成および展開の一般的なヘッダーと確認スキーマ](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-common-header-and-acknowledgment-schemas.md)します。

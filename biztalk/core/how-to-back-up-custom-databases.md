@@ -16,19 +16,19 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59ddab49315f7d4a194224eb0773a7ea1fa1a314
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ba90f39a90e2a80abda1a00214aafec48c6ea419
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998579"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387086"
 ---
 # <a name="how-to-back-up-custom-databases"></a>カスタム データベースのバックアップ方法
 カスタム データベースは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と一緒にインストールされないので、BizTalk Server のバックアップ ジョブによるバックアップ対象のデータベースの既定リストにも含まれていません。 BizTalk Server のバックアップ ジョブでカスタム データベースをバックアップする場合は、そのデータベースを BizTalk Server のバックアップ ジョブに手動で追加する必要があります。  
   
 ## <a name="prerequisites"></a>前提条件  
   
-1. 完全復旧モデルを使用するように SQL Server を構成して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベース バックアップ セットのデータの整合性を確保する必要があります。  詳細については、[ログ配布](../core/log-shipping.md)を参照してください。  
+1. 完全復旧モデルを使用するように SQL Server を構成して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベース バックアップ セットのデータの整合性を確保する必要があります。  詳細については、次を参照してください。[ログ配布](../core/log-shipping.md)します。  
   
 2. カスタム データベースをバックアップするには、バックアップ対象の各データベースにアクセスできるユーザー アカウントでログオンする必要があります。  
   

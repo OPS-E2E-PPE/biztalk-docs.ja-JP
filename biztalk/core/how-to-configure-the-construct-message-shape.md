@@ -1,5 +1,5 @@
 ---
-title: メッセージの構築図形を構成する方法 |Microsoft ドキュメント
+title: メッセージの構築図形を構成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,23 +17,23 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07b73e7fe62463767894808d7e95f12cf963e4dc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8a16900b1ee5c98c059b01f92a770f845330b9ba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248426"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386168"
 ---
 # <a name="how-to-configure-the-construct-message-shape"></a>メッセージの構築図形を構成する方法
 ![](../core/media/ebiz-orch-constructmsg.gif "ebiz_orch_constructmsg")  
 メッセージの構築図形  
   
- さらに、構築するメッセージ変数を指定して、メッセージまたはメッセージの部分に割り当てます。 特定のメッセージに対するすべての割り当ては、同じメッセージの構築図形内で行う必要があります。  
+ を構築するメッセージ変数を指定し、メッセージまたはメッセージの部分の割り当てを行います。 特定のメッセージに対するすべての割り当ては、同じメッセージの構築図形内で実行する必要があります。  
   
- 既に構築されたメッセージのプロパティを変更する場合: が受信されたメッセージなど、2 番目に最初を割り当てる場合や、新しいメッセージ インスタンスのプロパティを変更して、新しいメッセージ インスタンスを構築する必要があります構築と変更の両方に同じメッセージの構築図形内で発生します。  
+ 既に構築されたメッセージ プロパティを変更する場合: が受信されたメッセージなど、2 番目の最初の割り当てと、新しいメッセージ インスタンスのプロパティを変更して新しいメッセージ インスタンスを構築する必要があります構築と変更の両方に同じメッセージの構築図形内で発生します。  
   
 ### <a name="to-configure-a-construct-message-shape"></a>メッセージの構築図形を構成するには  
   
-1.  [プロパティ] ウィンドウで使用して、**構築メッセージ**するこの図形がメッセージを指定するプロパティが構築されます。  
+1.  [プロパティ] ウィンドウで使用して、**構築メッセージ**はこの図形がメッセージを指定するプロパティを構築します。  
   
-2.  追加して 1 つまたは複数を構成する**変換**または**メッセージの割り当て**図形の内側、**メッセージの構築図形**です。
+2.  追加し、1 つ以上構成**変換**または**メッセージの割り当て**図形内で、**メッセージの構築図形**します。

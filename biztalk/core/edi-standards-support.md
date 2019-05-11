@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ebb4d85b4972991054914baea2014b6d268a24eb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ab5548f9d5fa902197593a650cd9e89eea92fd26
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007131"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389168"
 ---
 # <a name="edi-standards-support"></a>EDI 標準のサポート
 BizTalk Server は、4 つのエンコード標準のデザインと実行時サポートを提供します。 次の表に、詳細情報へのリンクを含むエンコード標準の一覧を示します。  
@@ -26,7 +26,7 @@ BizTalk Server は、4 つのエンコード標準のデザインと実行時サ
 |-----------------------|----------------------|----------------|  
 |UN/EDIFACT|一般産業|[標準の web サイト](http://go.microsoft.com/fwlink/?LinkId=77532)(ペイロードへの参照)<br /><br /> [エンコード規則](http://go.microsoft.com/fwlink/?LinkId=77534)ISO 9735-4.1 ごと|  
 |X12|一般産業|[標準の web サイト](http://go.microsoft.com/fwlink/?LinkID=28673)<br /><br /> [仕様開発](http://go.microsoft.com/fwlink/?LinkId=77535)|  
-|EANCOM|小売|[標準の web サイト](http://go.microsoft.com/fwlink/?LinkId=92861)|  
+|EANCOM|小売業|[標準の web サイト](http://go.microsoft.com/fwlink/?LinkId=92861)|  
 |HIPAA X12N|医療|[HIPAA 実装ガイド](http://go.microsoft.com/fwlink/?LinkId=77541)<br /><br /> [HIPAA 仕様](http://go.microsoft.com/fwlink/?LinkId=77542)|  
   
 > [!NOTE]
@@ -61,22 +61,22 @@ BizTalk Server は、4 つのエンコード標準のデザインと実行時サ
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、HIPAA 固有の追加サポートを提供します。  
   
-- バージョン 4010A1 HIPAA ドキュメント スキーマのセット。 BizTalk Server での EDI および HIPAA ドキュメント スキーマの詳細については、[EDI ドキュメント スキーマ](../core/edi-document-schemas.md)を参照してください。  
+- バージョン 4010A1 HIPAA ドキュメント スキーマのセット。 BizTalk Server での EDI および HIPAA ドキュメント スキーマの詳細については、次を参照してください。 [EDI ドキュメント スキーマ](../core/edi-document-schemas.md)します。  
   
-- バージョン 5010 HIPAA ドキュメント スキーマのセット。 詳細については、[HIPAA ドキュメント スキーマ バージョン 5010](../core/hipaa-document-schema-version-5010.md)を参照してください。  
+- バージョン 5010 HIPAA ドキュメント スキーマのセット。 詳細については、次を参照してください。 [HIPAA ドキュメント スキーマ バージョン 5010](../core/hipaa-document-schema-version-5010.md)します。  
   
-- HIPAA サブドキュメントの分割。 詳細については、[HIPAA サブドキュメントの分割](../core/splitting-hipaa-subdocuments.md)を参照してください。  
+- HIPAA サブドキュメントの分割。 詳細については、次を参照してください。 [HIPAA サブドキュメントの分割](../core/splitting-hipaa-subdocuments.md)します。  
   
-- WEDI SNIP テストの最初の 2 つのレベルのサポート: X12 構文整合性およびの要件、 [HIPAA 実装ガイド](http://go.microsoft.com/fwlink/?LinkId=77541)します。  
+- WEDI SNIP テストの最初の 2 つのレベルのサポート:X12 構文整合性およびの要件、 [HIPAA 実装ガイド](http://go.microsoft.com/fwlink/?LinkId=77541)します。  
   
-  BizTalk Server は、ネイティブの BizTalk Server の EDI 機能の一部として HIPAA サポートを提供します。 詳細については、[BizTalk Server における EDI のサポート](../core/edi-support-in-biztalk-server2.md)を参照してください。  
+  BizTalk Server は、ネイティブの BizTalk Server の EDI 機能の一部として HIPAA サポートを提供します。 詳細については、次を参照してください。 [BizTalk Server における EDI のサポート](../core/edi-support-in-biztalk-server2.md)します。  
   
 ## <a name="eancom"></a>EANCOM  
  BizTalk Server は、EDIFACT 処理をサポートし、EANCOM 処理は、EDIFACT 処理の派生クラスであるために、BizTalk Server では、EANCOM 処理をサポートしています。 このドキュメントで EDIFACT 処理のサポートについて記載されていれば、それは EANCOM 処理にも当てはまります。  
   
  BizTalk Server は、EANCOM 固有の追加サポートを提供します。  
   
--   バージョン EAN94、EAN97、および EAN02 EANCOM ドキュメント スキーマのセット。 BizTalk Server での EDI および EANCOM ドキュメント スキーマの詳細については、[EDI ドキュメント スキーマ](../core/edi-document-schemas.md)を参照してください。  
+-   バージョン EAN94、EAN97、および EAN02 EANCOM ドキュメント スキーマのセット。 BizTalk Server での EDI および EANCOM ドキュメント スキーマの詳細については、次を参照してください。 [EDI ドキュメント スキーマ](../core/edi-document-schemas.md)します。  
   
 ## <a name="see-also"></a>参照  
  [EDI メッセージの構造](../core/edi-message-structure.md)   

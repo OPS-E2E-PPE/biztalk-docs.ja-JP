@@ -1,5 +1,5 @@
 ---
-title: 構成フレームワークの操作 |Microsoft ドキュメント
+title: 構成フレームワークの使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 2015-10-28
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc5360cf5e76bfc6218f0fe54444b1651afdefae
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 982712c778fe087d98178439203964e15beca374
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25976624"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401421"
 ---
-# <a name="working-with-the-configuration-framework"></a>構成フレームワークを使用した作業
-構成フレームワークを使用すると、セットアップ時に Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成をすばやく簡単に変更できます。 Microsoft Windows インストーラ (MSI) と組み合わせた構成フレームワークでは、コンピュータの状態と操作に必要な構成タスクが読み取られ、レポートされます。  
+# <a name="working-with-the-configuration-framework"></a>構成フレームワークを使用
+構成フレームワークでは、Microsoft を迅速かつ簡単に変更できます。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セットアップ時に構成します。 Microsoft Windows インストーラー (MSI) と連携して、構成フレームワークを読み取って、コンピューターおよびアクションが必要な構成タスクの状態を報告します。  
   
- 初めて構成ウィザードを使用して BizTalk Server を構成する場合、構成フレームワークによって XML ファイル (構成のスナップショット) が生成されます。この XML ファイルを後で変更 (ユーザー名やパスワードなどの変更) して、他のコンピュータにエクスポートできます。 構成のスナップショットは、構成ウィザードの一部である構成の概要ページで保存します。 このスナップショットを使用すると、スクリプト化されたインストールの一部として、構成をレプリケートできます。 このファイルは\< *BizTalk のインストール パス*\>\ConfigMain.xml です。  
+ 構成フレームワークを初めて構成ウィザードを使用して BizTalk Server を構成するし、変更可能な XML ファイル (構成のスナップショット) が生成されます (ユーザー名、パスワード、およびでは、変更) と他のエクスポートコンピューター。 構成の概要 ページで、構成ウィザードの一部には、構成のスナップショットを保存します。 このスナップショットを使用すると、スクリプト化されたインストールの一部として、構成をレプリケートします。 このファイルは\< *BizTalk Installation Path*\>\ConfigMain.xml します。  
   
 > [!NOTE]
->  XML ファイルには、パスワードが保存されていません。 このファイルを使用する前に、パスワードを入力する必要があります。  
+>  パスワードは、XML ファイルには格納されません。 このファイルを使用する前に、任意のパスワードを入力する必要があります。  
   
-## <a name="configuration-framework-command-line-parameters"></a>構成フレームワークのコマンド ライン パラメータ  
- 次の表は、構成フレームワーク内でコマンド ラインで実行できるパラメータを示しています。  
+## <a name="configuration-framework-command-line-parameters"></a>構成フレームワークのコマンド ライン パラメーター  
+ 次の表では、構成フレームワーク内でコマンドラインで実行できるパラメータについて説明します。  
   
-|コマンド ライン パラメータ|説明|  
+|コマンド ライン パラメーター|説明|  
 |----------------------------|-----------------|  
-|**/U**|すべての機能の構成を解除します。 **注:** BizTalk Server データベースは、BizTalk Server の機能の構成を解除した後で削除できます。 このコマンドの実行前に BizTalk Server データベースを削除しないでください。 **注:** BizTalk Server の機能の構成を解除した後で BizTalk Server データベースを削除する場合、**net stop winmgmt** コマンドを使用して、実行されている可能性がある Windows Management Instrumentation (WMI) サービスを停止することをお勧めします。|  
-|**/S**|サイレント構成。<br /><br /> インストールおよび構成する機能を含む構成 XML ファイルへの完全なパスを渡す必要があります。 **/s** が渡されない場合、ツールはユーザー インターフェイス (UI) モードで実行されます。|  
-|**/L**|-   ログ ファイルへの完全なパスを設定します (省略可)。|  
-|**/H**|-   有効なコマンド ライン パラメータを表示します。|  
+|**/U**|すべての機能の構成を解除します。 **注:** BizTalk Server の機能を構成解除した後は、BizTalk Server データベースを削除できます。 このコマンドを実行する前に BizTalk Server データベースを削除しないでください。 **注:** BizTalk Server の機能を構成解除した後、BizTalk Server データベースを削除する場合を使用することお勧め、 **net stop winmgmt**可能性があります Windows Management Instrumentation (WMI) サービスを停止するコマンド実行中です。|  
+|**/S**|サイレント構成。<br /><br /> 構成をインストールして構成する機能を含む XML ファイルへの完全なパスを渡す必要があります。 場合 **/s**が渡されないと、ユーザー インターフェイス (UI) モードでツールを実行します。|  
+|**/L**|-設定の完全なパスをログ ファイル (省略可能) します。|  
+|**/H**|有効なコマンド ライン パラメーターを示しています。|  
   
 ## <a name="sample-configuration-xml-file"></a>構成 XML ファイルのサンプル  
- 次のコードは、すべての機能がインストールされた、構成 XML ファイルのサンプルです。 独自の構成ファイルを作成するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のカスタム構成オプションを使用して、すべてのコンポーネントが正常に完了したことを確認し、構成ウィンドウで **[構成のエクスポート]** を選択します。 その後、エクスポートされた構成ファイルを使用して、他の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成することができます。  
+ 次にインストールされているすべての機能のサンプル構成 XML ファイルを示します。 構成ファイルを作成するでカスタム構成オプションを使用、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、正常に完了したすべてのコンポーネントを確認し、[**構成のエクスポート**構成] ウィンドウ。 その他の構成をエクスポートされた構成ファイルを使用することができますし、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]秒。  
   
 ```  
 <Configuration>  

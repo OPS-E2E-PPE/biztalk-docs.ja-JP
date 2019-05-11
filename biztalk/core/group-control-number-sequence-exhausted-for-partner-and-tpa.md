@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 212c9c15cc6ddba30acbbac6cd6bcb983bcb9713
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a5ff33fb039c1cd4e88e173bb657471ce9f2c738
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976627"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387589"
 ---
-# <a name="group-control-number-sequence-exhausted-for-partner-and-tpa"></a>パートナーと TPA のグループ制御番号のシーケンスが終了しました
+# <a name="group-control-number-sequence-exhausted-for-partner-and-tpa"></a>グループ制御番号シーケンスがパートナーと TPA の
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                              |
@@ -33,7 +33,7 @@ ms.locfileid: "36976627"
 |  メッセージ テキスト   | パートナー グループ制御番号のシーケンスが '{1}'for 'TPA{2}'。 シーケンスをリセット{2}- BizTalk Server 管理コンソールを使用して EDI のプロパティ。 |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、グループ制御の範囲が {2} のアグリーメントにすべて使用されたため、BizTalk Server がドキュメントを処理できなかったことを示します。  
+ このエラー/警告/情報イベントは、BizTalk Server でアグリーメントにグループ コントロールの範囲が使い果たされたために、ドキュメントを処理できなかったことを示します{2}します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、チェック ボックスをオンにして {2} アグリーメントの制御番号をリセットするか、制御番号の範囲を大きくするか、またはアグリーメントの制御番号範囲指定に対するリセット ボタンを押します。
+ このエラーを解決するのには、制御番号をリセットするチェック ボックスをオンしてください、{2}契約または増加コントロール番号の範囲または契約書に制御番号の範囲指定に対するリセット ボタンをクリックします。

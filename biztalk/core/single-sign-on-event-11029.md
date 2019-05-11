@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11029 |Microsoft Docs'
+title: シングル サインオン:イベント 11029 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2825c8a3563ca9912f176bc3dc45c5350750fbd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4498b2a326138095bca4476c6a992e4259e81227
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992507"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379932"
 ---
-# <a name="single-sign-on-event-11029"></a>シングル サインオン: イベント 11029
+# <a name="single-sign-on-event-11029"></a>シングル サインオン:イベント 11029
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                      |
@@ -36,4 +36,4 @@ ms.locfileid: "36992507"
  既定では、SSO サーバーでは大文字と小文字が区別されません。 ただし、SQL Server SSO データベースが大文字と小文字を区別するように構成されているので、SSO サーバーも大文字と小文字を区別するモードで実行します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- アプリケーション名および外部アカウント名は大文字と小文字が区別されるようになっているので、これらを指定するときはそのことに注意してください。 詳細については、[SSO サーバー](../core/sso-server.md)を参照してください。
+ アプリケーション名および外部アカウント名は大文字と小文字が区別されるようになっているので、これらを指定するときはそのことに注意してください。 詳細については、次を参照してください。 [SSO サーバー](../core/sso-server.md)します。

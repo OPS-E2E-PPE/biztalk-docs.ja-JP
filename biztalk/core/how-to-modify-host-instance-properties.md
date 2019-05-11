@@ -12,17 +12,17 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 53a64257f752e161963539256dcaca3f7f8f1077
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3ba3afcb2c5879f43f15c515b468bb020c772560
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384572"
 ---
 # <a name="update-host-instance-properties"></a>ホスト インスタンスのプロパティを更新します。
 
 ## <a name="overview"></a>概要
-BizTalk Server 管理コンソールまたは Windows Management Instrumentation (WMI) を使用すると、ホスト インスタンスに変更を加えることができます。 ホスト インスタンスを実行しているサービス アカウントを変更したり、ホスト インスタンスを無効にできます。 ホスト インスタンスを無効にすることもできます。 たとえば、ホスト インスタンスの設定を維持する必要があるが、インスタンスを起動しないようにする必要がある場合は、インスタンスを無効にできます。 ホスト インスタンスの詳細については、[ホスト インスタンス](../core/host-instances.md)を参照してください。  
+BizTalk Server 管理コンソールまたは Windows Management Instrumentation (WMI) を使用すると、ホスト インスタンスに変更を加えることができます。 ホスト インスタンスを実行しているサービス アカウントを変更したり、ホスト インスタンスを無効にできます。 ホスト インスタンスを無効にすることもできます。 たとえば、ホスト インスタンスの設定を維持する必要があるが、インスタンスを起動しないようにする必要がある場合は、インスタンスを無効にできます。 ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)します。  
   
  信頼済みホストのホスト インスタンスと信頼されていないホストのホスト インスタンスで同じサービス アカウントを使用することはできません。 ホスト インスタンスの信頼設定を変更し、ホスト インスタンスで他のホスト インスタンスが使用しているサービス アカウントを使用する必要がある場合は、次のいずれかを実行できます。  
   
@@ -38,7 +38,7 @@ BizTalk Server 管理コンソールまたは Windows Management Instrumentation
 > [!CAUTION]
 >  ホスト インスタンスの資格情報を変更する場合は、対応する SQL Server の資格情報も変更する必要があります。 SQL Server の資格情報を更新しないと、ホスト インスタンスは正常に動作しません。  
   
- WMI を使用して、ホスト インスタンスを変更する方法については、**MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+ WMI を使用して、ホスト インスタンスを変更する方法については、次を参照してください。 **MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
 ## <a name="prerequisites"></a>前提条件  
  ここで示す手順を実行するには、管理者グループのメンバーおよび BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。  

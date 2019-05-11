@@ -1,5 +1,5 @@
 ---
-title: 第 4 章に XML を追加する受信場所およびフラット ファイル送信ポート |Microsoft ドキュメント
+title: モジュール 4:受信場所とフラット ファイル送信ポートの XML の追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,18 +19,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c17f5acd97659fa39c2b85f27ff8f28d877b347b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9afb03f7c4db9391fb8e650e9415f35725831d9d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207546"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377148"
 ---
-# <a name="module-4-adding-an-xml-receive-location-and-flat-file-send-port"></a>第 4 章: XML の受信場所およびフラット ファイル送信ポートを追加します。
-このモジュールでは、1 つの受信ポートと受信場所、および 1 つの送信ポートを追加します。 受信ファイル フォルダーから XML 形式の MT103 メッセージを受信するのにには、受信ポートと受信場所を使用します。 送信ポートを使用するには、送信ファイルのフォルダーに検証された MT103 フラット ファイル メッセージを送信します。  
+# <a name="module-4-adding-an-xml-receive-location-and-flat-file-send-port"></a>モジュール 4:受信場所とフラット ファイル送信ポートの XML を追加
+このモジュールでは、1 つの受信ポートと場所、および 1 つの送信ポートを追加します。 場所と受信ポートを使用して、受信ファイルのフォルダーから XML 形式の MT103 メッセージを受信します。 送信ポートを使用するには、送信ファイルのフォルダーに検証済みの MT103 フラット ファイル メッセージを送信します。  
   
  このセクションには、次のトピックが含まれています。  
   
--   [レッスン 1: XML の受信ポートと受信場所を追加します。](../../adapters-and-accelerators/accelerator-swift/lesson-1-adding-xml-receive-port-and-location.md)  
+-   [レッスン 1:XML 受信ポートと受信場所を追加する](../../adapters-and-accelerators/accelerator-swift/lesson-1-adding-xml-receive-port-and-location.md)  
   
--   [レッスン 2: フラット ファイル送信ポートの追加](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-a-flat-file-send-port.md)
+-   [レッスン 2:フラット ファイル送信ポートを追加する](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-a-flat-file-send-port.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a1732e5e41cd60f6c98f435197e2e9c6284e4dd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fa0de25c96ec7d685fa68b1d2bd675d95dea0cda
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991739"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378077"
 ---
 # <a name="frr-send-port-for-messages-to-swift"></a>SWIFT へのメッセージの FRR 送信ポート
 FIN 応答 reconciliation (FRR) を有効にするには、MQSeries の SAA BizTalk アダプターを経由するメッセージを送信する FRR 送信ポートを設定する必要があります。 この送信ポートのルート カスタム FRR 経由でメッセージの送信パイプライン コンポーネント、次のパイプライン コンポーネントを使用して作成する必要があります。  

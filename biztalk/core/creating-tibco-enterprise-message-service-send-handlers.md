@@ -14,11 +14,11 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 98bc13b59826c7f5e938d4749776adb742f70133
-ms.sourcegitcommit: a124b58c1ff73c201d17993c3a5f07f41836b0a3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "24014185"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353585"
 ---
 # <a name="creating--tibco-enterprise-message-service-send-handlers"></a>TIBCO Enterprise Message Service 送信ハンドラーの作成
 ここでは、送信ポートを設定して TIBCO Enterprise Message Service (EMS) に接続する方法、およびオーケストレーションに XML を入れ実行時に TIBCO EMS と連携する方法を説明します。  
@@ -95,7 +95,7 @@ TIBCO Enterprise Message Service トランスポート プロパティは、デ�
   
          エンタープライズ シングル サインオン ツールで作成される関連アプリケーションは、TIBCO EMS などのアプリケーションを表します。 BizTalk Adapter for TIBCO EMS は、アプリケーション ユーザーの資格情報を使用します。 これらの資格情報は、指定された関連アプリケーションのサーバー システムの SSO データベースから取得されます。  
   
-         関連アプリケーションを作成する方法の詳細については、[関連アプリケーションを作成する](../core/creating-affiliate-applications5.md)を参照してください。  
+         関連アプリケーションを作成する方法の詳細については、次を参照してください。[関連アプリケーションを作成する](../core/creating-affiliate-applications5.md)します。  
   
 5.  **トランザクションをサポートして**を選択します**はい**場合、この送信ポートがトランザクションをサポートします。  
   

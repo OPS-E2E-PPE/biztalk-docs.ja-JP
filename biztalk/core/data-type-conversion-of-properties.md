@@ -1,5 +1,5 @@
 ---
-title: データ型のプロパティの変換 |Microsoft ドキュメント
+title: データ型のプロパティの変換 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,25 +18,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3705f1d0a20a48f0683a15588891ef3fe60889cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3846fa8cb6fe30e1cae561f7652aba0a02944a28
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238666"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353040"
 ---
-# <a name="data-type-conversion-of-properties"></a>プロパティのデータ型の変換
-MQSeries メッセージのヘッダー プロパティは、そのメッセージ自体に含まれているデータ構造です。 MQSeries アダプタでは、メッセージの送受信時に MQSeries メッセージ ヘッダーの特定の値を自動的に検証および変換します。  
+# <a name="data-type-conversion-of-properties"></a>プロパティのデータ型変換
+MQSeries メッセージ ヘッダー プロパティは、メッセージ自体に含まれているデータ構造です。 MQSeries アダプターは自動的に検証し、メッセージを送受信するときに、MQSeries メッセージ ヘッダーで特定の値に変換します。  
   
- 次の表では、MQSeries データ型と、それらの検証および変換について説明します。  
+ 次の表では、MQSeries データ型と、検証と変換について説明します。  
   
 |MQSeries データ型|検証と変換|  
 |------------------------|-------------------------------|  
-|MQLONG|MQSeries によって検証が行われます。 長整数に変換されます。 値が無効である場合、メッセージは MQSeries キューに送信されません。|  
-|MQCHAR|文字列に変換されます。|  
-|MQBYTE|数字の 16 進値を表す、文字 0 ～ 9、a ～ f、または A ～ F が含まれた文字列に変換されます。|  
+|MQLONG|MQSeries は、検証を実行します。 長整数に変換します。 無効な値では、メッセージが MQSeries キューに移動できなくなります。|  
+|MQCHAR|文字列に変換します。|  
+|MQBYTE|0 ~ 9 および a ~ f、または A ~ F、16 進数の値を表すを含む文字列に変換します。|  
   
- ほとんどの MQSeries プロパティは、32 ビット (4 バイト) の符号なし整数です。 **Uint**共通言語仕様 (CLS) ではありません-準拠型で、割り当てる必要がありますに**オブジェクト**.NET メソッドで使用する前に型です。  
+ MQSeries プロパティの多くは、32 ビット (4 バイト) 符号なし整数です。 **Uint**共通言語仕様 (CLS) ではありません-準拠型で、割り当てる必要がありますに**オブジェクト**型 .NET メソッドで使用する前にします。  
   
 ## <a name="see-also"></a>参照  
  [MQSeries アダプターのプロパティ](../core/mqseries-adapter-properties.md)   

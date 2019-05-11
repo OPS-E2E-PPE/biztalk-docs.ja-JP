@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ad7f575038257bc876e3fc822e624e91c93451ff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1f1c8a3da3b09c464d8523ad0c953eddd60aec42
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994643"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377201"
 ---
 # <a name="migration-and-upgrade-troubleshooting"></a>移行とアップグレードのトラブルシューティング
 ## <a name="assemblies-need-to-be-undeployed-before-an-upgrade"></a>アセンブリは、アップグレードの前に配置する必要があります。  
@@ -31,12 +31,12 @@ ms.locfileid: "36994643"
  A4SWIFT をアップグレードしようとしたときに、アップグレード プロセスは失敗します。  
   
 ### <a name="possible-cause"></a>考えられる原因  
- アップグレードが完了したら、次の A4SWIFT アセンブリは引き続き展開: Microsoft.Solutions.FinancialServices.SWIFT.FrrOrchestration、Microsoft.Solutions.FinancialServices.SWIFT.FrrSchemas、Microsoft.Solutions.FinancialServices.SWIFT.MrsrService します。  
+ アップグレードが完了したら、次の A4SWIFT アセンブリがまだデプロイされます。Microsoft.Solutions.FinancialServices.SWIFT.FrrOrchestration、Microsoft.Solutions.FinancialServices.SWIFT.FrrSchemas、Microsoft.Solutions.FinancialServices.SWIFT.MrsrService します。  
   
 > [!NOTE]
 >  Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas を再デプロイする必要はありません。 インストール プログラムは、そのアセンブリを再デプロイします。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  次の順序で 4 つの A4SWIFT アセンブリを手動で解除するには。  
   
 - Microsoft.Solutions.FinancialServices.SWIFT.FrrOrchestration  
@@ -55,7 +55,7 @@ ms.locfileid: "36994643"
 ### <a name="possible-cause"></a>考えられる原因  
  アップグレードすると[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]、アップグレード プロセスは、%programfiles%\Microsoft BizTalk Accelerator for SWIFT\Service フォルダーから A4SWIFT 管理者と A4SWIFT ユーザーのグループのアクセス許可を削除します。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  この問題が発生した場合、サービスのフォルダーの次のアクセス許可を手動で設定します。  
   
 |[グループ名またはユーザー名]|権限|  
@@ -69,7 +69,7 @@ ms.locfileid: "36994643"
   
 1.  サービスのフォルダーを右クリックし、をクリックして**プロパティ**、 をクリックし、**セキュリティ**タブ。  
   
-2.  グループまたはユーザー名ペインで、サービスのプロパティ ダイアログ ボックスの次のようにクリックします**追加**、入力 ***\<サーバー名\>* \A4SWIFT 管理者**、 をクリックし、 **ok。**.  
+2.  グループまたはユーザー名ペインで、サービスのプロパティ ダイアログ ボックスの次のようにクリックします**追加**、入力 ***\<サーバー名\>* \A4SWIFT 管理者**、 をクリックし、 **ok**。  
   
     > [!NOTE]
     >  A4SWIFT の管理者グループがドメイン グループの場合は、次のように入力してください ***\<ドメイン名\>* \A4SWIFT 管理者**します。  
@@ -83,4 +83,4 @@ ms.locfileid: "36994643"
 6.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
- [トラブルシューティング: 問題と解決策](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)
+ [トラブルシューティング: 問題と解決方法](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)

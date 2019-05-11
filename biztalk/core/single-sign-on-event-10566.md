@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10566 |Microsoft Docs'
+title: シングル サインオン:イベント 10566 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4748670e128b5b3a9717e2e430acb976da7bb4d1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27530a47a1262cbc5baf9edede91dcee385fa91e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015091"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398786"
 ---
-# <a name="single-sign-on-event-10566"></a>シングル サインオン: イベント 10566
+# <a name="single-sign-on-event-10566"></a>シングル サインオン:イベント 10566
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                    |
@@ -30,10 +30,10 @@ ms.locfileid: "37015091"
 |  イベント ソース   |                                                                               ENTSSO                                                                               |
 |    コンポーネント    |                                                                                なし                                                                                 |
 |  シンボル名  |                                                                  SSO_WARN_CANNOT_UPDATE_APP_FLAGS                                                                  |
-|  メッセージ テキスト   | このアプリケーションの指定されたフラグの一部を更新できません。 これらは無視されます。%r<br /><br /> アプリケーション名: %1 %r<br /><br /> 指定フラグ マスク: %2 |
+|  メッセージ テキスト   | このアプリケーションの指定したフラグの一部を更新することはできません。 Ignored.%r されます。<br /><br /> アプリケーション名: %1 %r<br /><br /> 指定フラグ マスク: %2 |
   
 ## <a name="explanation"></a>説明  
- アプリケーションの特定のフラグを変更できません。 たとえば、アプリケーションの種類を単独からグループに変更することができません。このようなアプリケーションのフラグは、警告のテキストに示されます。  
+ アプリケーションの特定のフラグを変更することはできません。 (たとえば、ことはできませんをグループに個々 のアプリケーションの種類を変更する。)このアプリケーションのフラグは、警告テキストで指定されます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  ユーザーによる操作は不要です。

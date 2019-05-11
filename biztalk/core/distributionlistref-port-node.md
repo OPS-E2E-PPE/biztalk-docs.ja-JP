@@ -1,5 +1,5 @@
 ---
-title: DistributionListRef (Port ノード) |Microsoft ドキュメント
+title: DistributionListRef (Port ノード) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 665b8c2115c5c4681f7cff057481b6ce7da320ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 77bdfe705ac85be0e97492f84e39378b8da944bf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239754"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65351009"
 ---
 # <a name="distributionlistref-port-node"></a>DistributionListRef (Port ノード)
-バインド ファイルの Port ノードの DistributionListRef ノードには、サービスによって参照される同報リストに関する情報が含まれます。  
+バインド ファイルの Port ノードの DistributionListRef ノードには、サービスによって参照される同報リストに関する情報が含まれています。  
   
 > [!NOTE]
 >  配布リストは、BizTalk Server 管理コンソールで送信ポート グループと呼ばれます。  
@@ -30,6 +30,6 @@ ms.locfileid: "22239754"
 ## <a name="nodes-in-the-distributionlistref-node"></a>DistributionListRef ノード内のノード  
  次の表に、バインド ファイルのこのノードに設定できるプロパティを示します。  
   
-|**名前**|**ノード型**|**データ型**|**Description**|**制限**|**コメント**|  
+|**名前**|**ノードの種類**|**[データ型]**|**[説明]**|**制限**|**コメント**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
 |名前|属性|xs:string|サービスによって参照される同報リストの名前を指定します。|任意|既定値: 空|

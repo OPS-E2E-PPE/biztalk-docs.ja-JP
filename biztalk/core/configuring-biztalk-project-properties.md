@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81e35a06a17a7e623db87463c1af336e1e6a8fea
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bfc1a7eb00d628fa747511047c814d97d9253525
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356204"
 ---
-# <a name="configuring-biztalk-project-properties"></a>BizTalk プロジェクトのプロパティの構成
-プロジェクト プロパティでは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で作成するプロジェクトのグローバル設定を構成します。 BizTalk プロジェクトでは、他の [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトの多くのプロジェクト プロパティを共有します。 これらのプロパティの多くは、プロジェクト デザイナーで構成します。  
+# <a name="configuring-biztalk-project-properties"></a>BizTalk プロジェクトのプロパティを構成します。
+プロジェクトのプロパティで作成したプロジェクトのグローバル設定を構成する[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。 BizTalk プロジェクトでは、他のプロジェクトのプロパティの多くを共有[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロジェクト。 プロジェクト デザイナーでは、これらのプロパティのほとんどを構成します。  
   
-### <a name="to-access-properties-with-the-project-designer"></a>プロジェクト デザイナーでプロパティにアクセスするには  
+### <a name="to-access-properties-with-the-project-designer"></a>プロジェクト デザイナーのプロパティにアクセスするには  
   
 1. ソリューション エクスプローラーで、プロジェクトを選択します。  
   
@@ -34,12 +34,12 @@ ms.locfileid: "37010003"
    > [!NOTE]
    >  または、プロジェクトを右クリックし、をクリックし、**プロパティ**します。  
   
-3. 目的のプロパティ タブをクリックして、プロジェクトのプロパティにアクセスします。  
+3. プロジェクトのプロパティへのアクセスに必要なプロパティ タブをクリックします。  
   
    すべてに共通のプロパティに関する資料[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、次のリンクからそれぞれプロジェクト デザイナーのプロパティ タブの情報を参照することによってプロジェクトが見つかりません: [ http://go.microsoft.com/fwlink/?LinkId=124727](http://go.microsoft.com/fwlink/?LinkId=124727)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [プロジェクト デザイナー: [展開] タブ](../core/project-designer-deployment-tab.md)  
+-   [プロジェクト デザイナー:[展開] タブ](../core/project-designer-deployment-tab.md)  
   
 -   [BizTalk プロジェクトのプロパティ ウィンドウ](../core/biztalk-project-properties-window.md)

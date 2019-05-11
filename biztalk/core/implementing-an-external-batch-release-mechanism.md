@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 298857d60662bbe2240a5cfb6cc797e4fda7abdb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e278fff5f04566f8c6b01777f1523e60373e1457
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010371"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382685"
 ---
 # <a name="implementing-an-external-batch-release-mechanism"></a>外部バッチ リリース メカニズムの実装
 外部リリースのトリガーを使用すると、バッチのリリースをトリガーできます。 外部リリースのトリガーでは、バックエンドの基幹業務アプリケーションによって、特定のしきい値に到達したときに、リリースを自動的にトリガーできます。 このメカニズムは、自動的に、スケジュールまたはトランザクション セットや文字のカウントによってバッチのリリースをトリガーすると、クリックしてバッチを手動でトリガーするだけでなく、**オーバーライド**ボタン、**バッチ構成**一方向アグリーメント タブのページ。  
@@ -33,7 +33,7 @@ ms.locfileid: "37010371"
   
 ### <a name="to-create-a-receive-location-for-the-external-batch-release-trigger-message"></a>外部バッチ リリース トリガー メッセージ用の受信場所を作成するには  
   
-1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、一方向受信ポートを作成します。 受信ポートを作成する方法については、[受信ポートを作成する方法](../core/how-to-create-a-receive-port.md)を参照してください。  
+1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、一方向受信ポートを作成します。 受信ポートを作成する方法については、次を参照してください。[受信ポートを作成する方法](../core/how-to-create-a-receive-port.md)します。  
   
 2. この受信ポート内に一方向の受信場所を作成します。  
   

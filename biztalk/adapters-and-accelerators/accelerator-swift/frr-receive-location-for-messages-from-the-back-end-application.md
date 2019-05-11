@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9133a4499e655003ec2cc3d2e0d654e5a225f58b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a865ced8a204bf571dde00c6f98869348934540f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981531"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377903"
 ---
 # <a name="frr-receive-location-for-messages-from-the-back-end-application"></a>バックエンド アプリケーションから FRR 受信メッセージの場所
 FIN 応答 reconciliation (FRR) を有効にするのには、FRR を設定する必要がありますをバックエンド アプリケーションからメッセージを受信し、FRR オーケストレーションでの消費量の BizTalk メッセージ ボックスにルーティングする受信場所。 受信場所は、次のパイプライン コンポーネントで作成する必要があるカスタム FRR 受信パイプライン経由でメッセージをルーティングします。  

@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e33aa3e48cd92b3d190289c1d65bf3a3bb7c7907
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7db73ecd84218f19dbc576ae3e94dec6cef4218d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388134"
 ---
 # <a name="failed-to-register-isolated-receiver-for-address"></a>アドレスの分離受信場所を登録できませんでした
 ## <a name="details"></a>詳細  
@@ -33,12 +33,12 @@ ms.locfileid: "36986619"
 |  メッセージ テキスト   | アドレスの分離受信場所を登録できませんでした"{0}"; 受信場所が存在しないか無効にします。 |
   
 ## <a name="explanation"></a>説明  
- このエラーは、公開された WCF 分離受信場所に対応する受信場所が見つからなかったことを示します。  
+ このエラーは、公開された WCF 分離受信場所であることを示します見つかりませんでした。 対応する受信場所。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するのには、次の操作: BizTalk 管理コンソールで、BizTalk WCF サービス公開ウィザード生成が存在し、ある Web.config ファイルの receiveLocationName 属性で、受信場所が指定されていることを確認開始します。  
+ このエラーを解決するには、次の操作を行います。BizTalk 管理コンソールで、BizTalk WCF サービス公開ウィザード生成が存在し、開始は、Web.config ファイルの receiveLocationName 属性で、受信場所が指定されているいることを確認します。  
   
- 受信場所の作成の詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプで次の情報を参照してください。  
+ 作成の詳細については、受信場所、次のリソースを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
   
 -   [分離 WCF 受信アダプターでの WCF サービスの公開](../core/publishing-wcf-services-with-the-isolated-wcf-receive-adapters.md)  
   
@@ -48,4 +48,4 @@ ms.locfileid: "36986619"
   
 -   [Wcf-customisolated 受信場所を構成する方法](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   
--   [チュートリアル: WCF-BasicHttp アダプターを使用した WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)
+-   [チュートリアル: Wcf-basichttp アダプターで WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)

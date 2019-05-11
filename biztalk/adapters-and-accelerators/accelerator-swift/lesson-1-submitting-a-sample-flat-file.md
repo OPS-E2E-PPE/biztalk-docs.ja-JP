@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 1: サンプル フラット ファイルの送信 |Microsoft Docs'
+title: レッスン 1:サンプル フラット ファイルの送信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63e93b348e90bd01607d96b1ea86a6751f00b161
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: eba5a1810f9d23a1f8fb27f6bd3527b20a201473
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014547"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377584"
 ---
-# <a name="lesson-1-submitting-a-sample-flat-file"></a>レッスン 1: サンプル フラット ファイルを送信します。
+# <a name="lesson-1-submitting-a-sample-flat-file"></a>レッスン 1:サンプル フラット ファイルを送信します。
 ソリューションをテストするサンプル フラット ファイルを送信するとします。  
   
 ### <a name="to-submit-a-sample-mt103-flat-file"></a>サンプル MT103 フラット ファイルを送信するには  
@@ -40,4 +40,4 @@ ms.locfileid: "37014547"
    > [!NOTE]
    >  結果のファイルを削除しないでください。後のレッスンで使用されます。  
   
-   進みます[レッスン 2: 無効である MT103 メッセージを送信する](../../adapters-and-accelerators/accelerator-swift/lesson-2-submitting-an-mt103-message-that-is-not-valid.md)します。
+   続行する[レッスン 2。無効である MT103 メッセージを送信する](../../adapters-and-accelerators/accelerator-swift/lesson-2-submitting-an-mt103-message-that-is-not-valid.md)します。

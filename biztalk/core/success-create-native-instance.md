@@ -1,5 +1,5 @@
 ---
-title: 成功 - ネイティブ インスタンスの作成 |Microsoft ドキュメント
+title: 成功 - ネイティブ インスタンスの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9aec26388c2e096535ba3a8171c739a91301a9e1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 29db470b8dd3fee9a6d64747d9314c749a8ae381
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278250"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379875"
 ---
 # <a name="success---create-native-instance"></a>成功 - ネイティブ インスタンスの作成
 **説明**  

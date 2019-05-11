@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a3988a7b86d3f31365019c10cdfb640313dc2d6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f446c2757c4454cce681461bae23bd28ecb151f2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377238"
 ---
 # <a name="managing-the-bicplus-table-in-the-a4swift-database"></a>A4SWIFT データベース内の Bicplus テーブルを管理します。
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] BIC エントリのテーブルを使用すると、BIC 検証を実行します。 このテーブルの Bicplus テーブルを指定できます、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]データベースまたはカスタムのデータベース内のテーブル。  

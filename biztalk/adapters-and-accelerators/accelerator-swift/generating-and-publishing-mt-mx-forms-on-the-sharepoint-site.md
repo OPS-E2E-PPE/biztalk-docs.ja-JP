@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 492eda3b4bf3d3950c084bc9234b52b911b84a2b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dcb32891ef9a8d78f032eececfab7644c6d5ae56
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980051"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377651"
 ---
 # <a name="generating-and-publishing-mtmx-forms-on-the-sharepoint-site"></a>生成して、SharePoint サイトで MT/MX フォームの発行
 **生成し、SharePoint サイトで MT/MX フォームを公開します。**  
@@ -61,7 +61,7 @@ ms.locfileid: "36980051"
 
 17. をポイント **\<MessageType\>**、その横にある下矢印をクリックし、順にクリックして、**プロパティの編集**します。  
 
-18. テンプレートで:\< MessageType\>ウィンドウで、[Namespace] ボックスで。  
+18. テンプレート。\<MessageType\>ウィンドウで、[Namespace] ボックスで。  
 
     - MT の InfoPath フォームを生成している場合に入力します。 **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**  
 

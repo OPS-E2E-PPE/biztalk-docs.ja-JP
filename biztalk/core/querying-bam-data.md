@@ -1,5 +1,5 @@
 ---
-title: BAM データの照会 |Microsoft ドキュメント
+title: BAM データのクエリ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,22 +15,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c92f53e649f2a7dd651104bd3e78622d2f021606
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23d1341cf48297e6175005fe1a749f1651c7b19d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268306"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398313"
 ---
 # <a name="querying-bam-data"></a>BAM データのクエリ
 このセクションでは、インスタンス データや集計データなど、BAM データをクエリする方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [インスタンス データのクエリを実行します。](../core/querying-instance-data.md)  
+-   [インスタンス データへのクエリ](../core/querying-instance-data.md)  
   
--   [リアルタイム集計データを照会します。](../core/querying-real-time-aggregated-data.md)  
+-   [リアルタイム集計データに対するクエリの実行](../core/querying-real-time-aggregated-data.md)  
   
--   [スケジュールされているクエリを実行する集計データ](../core/querying-scheduled-aggregated-data.md)  
+-   [スケジュール済み集計データに対するクエリの実行](../core/querying-scheduled-aggregated-data.md)  
   
--   [アクティビティの関係を照会します。](../core/querying-activity-relationships.md)
+-   [アクティビティ リレーションシップに対するクエリの実行](../core/querying-activity-relationships.md)

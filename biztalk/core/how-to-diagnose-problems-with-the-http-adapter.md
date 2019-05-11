@@ -12,35 +12,35 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 110ae50f97d89b12b361a14caaac4f0df56989e2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1496ed936629a502d9274800455fd79334260f51
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385250"
 ---
 # <a name="how-to-diagnose-problems-with-the-http-adapter"></a>HTTP アダプターに関する問題の診断方法
-ここでは HTTP アダプターに関する問題の診断手順について説明します。  
+このセクションには、HTTP アダプターに関する問題の診断に役立つことができますの手順が含まれています。  
   
-### <a name="check-the-iis-and-httperr-log-files-of-the-iis-server-for-errors"></a>IIS サーバーの IIS ログ ファイルと TTPERR ログ ファイルでエラーを確認する  
+### <a name="check-the-iis-and-httperr-log-files-of-the-iis-server-for-errors"></a>IIS および HTTPERR ログ ファイルの IIS サーバーのエラーを確認してください。  
   
-- ソースまたはターゲットの IIS サーバー ログ ファイルには、HTTP アダプターに関する問題のトラブルシューティングに役立つ情報が含まれています。 既定では、Windows Server の IIS ログ ファイルは、次のディレクトリにあります。  
+- ソースまたはターゲット IIS サーバーのログ ファイルは、HTTP アダプターに関する問題のトラブルシューティングに役立つ情報を含めることができます。 既定では、IIS は Windows Server 上のログ ファイルは次のディレクトリにあります。  
   
-   <em>%Windir%\\</em>system32\LogFiles\W3SVC1\  
+   <em>%WinDir%\\</em>system32\LogFiles\W3SVC1\  
   
   > [!NOTE]
   >  *%Windir%* IIS サーバー上の Windows ディレクトリの場所のプレース ホルダーです。  
   
-   既定では、[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] ベースのコンピューターの HTTPERR ログ ファイルは次のディレクトリにあります。  
+   既定では、HTTPERR ログ ファイル、[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]ベースのコンピューターは、次のディレクトリに配置されます。  
   
-   <em>%Windir%\\</em>system32\LogFiles\HTTPERR\  
+   <em>%WinDir%\\</em>system32\LogFiles\HTTPERR\  
   
   > [!NOTE]
   >  HTTPERR ログ ファイルは上でのみ使用可能な[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]コンピューター。  
   
-### <a name="isolate-problems-with-the-http-send-adapter-by-posting-to-the-destination-url-with-a-client-that-uses-the-systemnethttpwebrequest-class"></a>System.Net.HttpWebRequest クラスを使用するクライアントを送信先 URL に POST して、HTTP 送信アダプターの問題を切り分ける  
+### <a name="isolate-problems-with-the-http-send-adapter-by-posting-to-the-destination-url-with-a-client-that-uses-the-systemnethttpwebrequest-class"></a>System.Net.HttpWebRequest クラスを使用するクライアントで送信先 URL への投稿の HTTP 送信アダプターに関する問題を分離します。  
   
-1.  送信先 URL への POST を実行したときに HTTP 送信アダプターでエラーが生成される場合は、System.Net.HttpWebRequest クラスと HttpWebResponse クラスを使用するクライアントを作成して送信先 URL に POST します。 この方法は、問題が HTTP 送信アダプター限定のものであるか、送信先 URL への POST に関する一般的なものであるかを判断するのに役立ちます。  
+1.  HTTP 送信アダプターには、送信先 URL に投稿するときにエラーが生成している場合、は、送信先 URL に投稿する、System.Net.HttpWebRequest クラスおよび HttpWebResponse クラスを使用するクライアントを作成します。 このアプローチは、問題が、HTTP 送信アダプターに固有であるか、一般に、送信先 URL への問題の投稿がある場合かを確認に役立ちます。  
   
 2.  詳細については、System.Net.HttpWebRequest クラスおよび HttpWebResponse クラスを使用するクライアントを作成する方法を参照してください。[新しい System.Net クラスを使用して HTTP クライアントを作成する方法](http://go.microsoft.com/fwlink/?LinkId=66987)します。  
   

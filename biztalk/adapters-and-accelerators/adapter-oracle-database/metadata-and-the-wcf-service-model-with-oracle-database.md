@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3b1c3eed2ab71282a50ccbb6709601aa69ca733
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0068fbac2f1ee59cd367799b5e44a3d545063380
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973299"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376369"
 ---
 # <a name="metadata-and-the-wcf-service-model-with-oracle-database"></a>メタデータと Oracle Database による WCF サービス モデル
 WCF サービス モデルを使用して、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または、ServiceModel メタデータ ユーティリティ ツール (svcutile.exe) プロキシ クラスを生成するコードでは使用できますか。  

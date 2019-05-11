@@ -1,5 +1,5 @@
 ---
-title: Web サービスと Web メソッドの作成 |Microsoft ドキュメント
+title: Web サービスと Web メソッドの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,32 +18,32 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74065489e427ae0612897f1f333e3c8e154a535f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 22d93635ce23f4ce8899f3d9f6d95dfca2010ea7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238386"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389854"
 ---
-# <a name="creating-web-services-and-web-methods"></a>Web サービスと Web メソッドを作成します。
-スキーマを Web サービスとして公開すると、BizTalk Web サービス公開ウィザードで Web サービスおよび Web メソッドの作成を制御できます。 [Web サービス] ページに表示されるツリー内で、Web サービスの説明、Web サービス、および Web メソッドの名前を変更できます。 Web サービスと Web メソッドの追加および削除を行うことができます。 ウィザードは、選択した要求スキーマのルート要素名を入力パラメータ名として使用します。 Web メソッドの戻り値は、応答スキーマを返します。  
+# <a name="creating-web-services-and-web-methods"></a>Web サービスと Web メソッドの作成
+Web サービスとしてのスキーマを発行するときに、Web サービスと、BizTalk Web サービス公開ウィザードで Web メソッドの作成を制御します。 Web サービスの説明、Web サービスおよび Web サービス ページに表示されるツリー内の Web メソッドの名前を変更することができます。 追加し、Web サービスと Web メソッドを削除することができます。 ウィザードでは、入力パラメーター名として選択した要求スキーマのルート要素名を使用します。 Web メソッドの戻り値は、応答スキーマを返します。  
   
 > [!NOTE]
->  ASP.NET Web クライアントは、同じ種類の入力および出力パラメータを組み合わせて、Web メソッドの署名を変更することができます。 ASP.NET Web クライアントはから BizTalk Web メソッドを変更するなど、 **myService (文字列部分) を文字列**に**void myService (ref 文字列部分)** です。  
+>  ASP.NET Web クライアントは、in、out、同じ型のパラメーターを組み合わせることで Web メソッドのシグネチャを変更することがあります。 ASP.NET Web クライアント可能性がありますから BizTalk Web メソッドを変更するなど、 **myService (文字列部分) を文字列**に**void myService (ref 文字列部分)** します。  
   
 > [!NOTE]
->  場合、受信ポートが一方向として定義されている、Web メソッドの応答の種類は**void**され、Web クライアントに情報は返されません。 SOAP アダプタおよびオーケストレーションは、スローされた例外を Web クライアントに返しません。  
+>  場合、受信ポートが一方向として定義されている、Web メソッドの応答の種類は**void** Web クライアントに情報は返されません。 SOAP アダプタおよびオーケストレーション、Web クライアントにスローされる例外は返されません。  
   
-## <a name="web-services-naming-conventions-for-published-orchestrations"></a>公開オーケストレーションの Web サービスの名前付け規則  
- BizTalk Web サービス公開ウィザードでは、[Web サービス] ページで定義された Web サービスの説明に基づいて、Web サービス (.asmx) のファイル名が生成されます。 次の表は、Web サービス ファイル名の既定値を示しています。  
+## <a name="web-services-naming-conventions-for-published-orchestrations"></a>Web サービスの公開されたオーケストレーションの名前付け規則  
+ BizTalk Web サービス公開ウィザードでは、Web サービス ページで定義する Web サービスの説明に基づく Web サービス (.asmx) ファイル名を生成します。 次の表では、Web サービスのファイル名の既定値を示します。  
   
 |生成された Web サービス|ファイル名|  
 |---------------------------|---------------|  
-|BizTalkWebService|Visual Studio Web サービス プロジェクト名|  
+|BizTalkWebService|Visual Studio Web サービス プロジェクトの名前|  
 |WebService1|Web サービス (.asmx) ファイル名|  
 |WebMethod1|Web メソッド名|  
   
- 生成された Web サービスには、残りのノードの名前が反映されません。  
+ 生成された Web サービスでは、残りのノードの名前が反映されません。  
   
 ## <a name="see-also"></a>参照  
  [Web サービスとしてのスキーマの公開](../core/publishing-schemas-as-a-web-service.md)   

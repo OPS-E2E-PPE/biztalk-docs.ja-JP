@@ -17,18 +17,18 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9dbcdd4ff93749de5059b80fecfa140e41df422
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 42c4331dacd451e2a4d9f495d495dbf10fbf911a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977878"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379714"
 ---
 # <a name="what-is-a-tracking-profile"></a>追跡プロファイルについて
 プロファイルとは、ビジネス プロセスを定義する一連の特性です。 追跡プロファイルには、アクティビティからオーケストレーションやポートへの特性のマッピングが含まれています。 追跡プロファイルは、ファイル名拡張子に .btt の付いたファイルです。  
   
 ## <a name="using-tracking-profiles-in-the-tpe"></a>TPE での追跡プロファイルの使用  
- TPE のユーザーは、BAM アクティビティ内の項目とその項目に対応する BizTalk Server ソリューションとの間に、マップ (追跡プロファイル) を作成します。 BAM アクティビティは、マイルストーンやコンテキスト データ ("表示希望リスト") で構成され、追跡プロファイルが従うビジネスの作業単位を定義します。 アクティビティの詳細については、[イベント ストリームを使用した BAM のアクティビティを実装する](../core/implementing-bam-activities-with-event-streams.md)を参照してください。  
+ TPE のユーザーは、BAM アクティビティ内の項目とその項目に対応する BizTalk Server ソリューションとの間に、マップ (追跡プロファイル) を作成します。 BAM アクティビティは、マイルストーンやコンテキスト データ ("表示希望リスト") で構成され、追跡プロファイルが従うビジネスの作業単位を定義します。 アクティビティの詳細については、次を参照してください。[イベント ストリームを使用した BAM のアクティビティを実装する](../core/implementing-bam-activities-with-event-streams.md)します。  
   
  TPE を使用して追跡プロファイルを作成する場合は、次のオブジェクトを操作します。  
   
@@ -62,4 +62,4 @@ ms.locfileid: "36977878"
  IT 運用を担当するユーザーは、特に、ビジネス要件の変更を受け、(バックアップや復元など、必要なデータベース操作を含めて) スケジュールに基づいて追跡プロファイルを定期的に更新する役割を担う場合があります。  
   
 ## <a name="see-also"></a>参照  
- [Xml-data Reduced を参照してください。](../core/tracking-profile-editor.md)
+ [追跡プロファイル エディター](../core/tracking-profile-editor.md)

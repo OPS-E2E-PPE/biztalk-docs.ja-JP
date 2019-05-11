@@ -1,5 +1,5 @@
 ---
-title: ディスク I/O の競合を監視および DTC ログを削減できるファイル |Microsoft ドキュメント
+title: 監視と軽減 DTC ログ ファイルのディスク I/O の競合 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca71b55c2f9e18875ef67e840e8dac18a81dddac
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 31168bd5b5643c6f60dec408c46e520d55b9a976
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379420"
 ---
-# <a name="monitoring-and-reducing-dtc-log-file-disk-io-contention"></a>監視と、DTC ログ ファイルのディスク I/O の競合を減らす
-分散トランザクション コーディネーター (DTC) ログ ファイルは、トランザクションに依存する環境でディスク I/O のボトルネックになります。 これは、トランザクション、またはマルチ メッセージ ボックス環境で SQL Server、MSMQ、MQSeries などをサポートするアダプターを使用する場合に特に当てはまります。 トランザクション アダプターが DTC トランザクションを使用して、マルチ メッセージ ボックス環境 DTC トランザクションを広範に使用します。  
+# <a name="monitoring-and-reducing-dtc-log-file-disk-io-contention"></a>監視と、DTC ログ ファイルディスク I/O 競合の削減
+分散トランザクション コーディネーター (DTC) ログ ファイルは、トランザクション処理を要する環境でディスク I/O のボトルネックになります。 これは、トランザクション、またはマルチ メッセージ ボックス環境で SQL Server、MSMQ、MQSeries などをサポートするアダプターを使用する場合に特に当てはまります。 トランザクション アダプターが DTC トランザクションを使用し、メッセージ ボックスの複数の環境によって、DTC トランザクションを広範に使用します。  
   
-## <a name="monitoring-usage-in-clustered-and-non-clustered-environments"></a>クラスター化および非クラスター化環境で使用状況の監視  
- DTC ログ ファイルがディスク I/O のボトルネックにならないことを確認するには、するには、ディスク DTC ログ ファイルが SQL Server データベース サーバーに常駐するディスクの I/O の使用量を監視する必要があります。  
+## <a name="monitoring-usage-in-clustered-and-non-clustered-environments"></a>クラスター化および非クラスター化環境での使用状況の監視  
+ DTC ログ ファイルがディスク I/O のボトルネックにならないことを確認するには、ディスクの SQL Server データベース サーバーでは、DTC ログ ファイルが存在する場所、ディスク I/O の使用量を監視する必要があります。  
   
- SQL Server がクラスター化された環境では、これがありませんできるだけ多くの問題にならなければなので、ログ ファイルは既に共有ドライブが含まれ、複数のスピンドルを高速な SAN ドライブが場合があります。 それでもまだクラスター化されていない環境またはときに、DTC ログ ファイルは他の大量のディスク ファイルで共有ディスク上でボトルネックになるため、ディスク I/O の使用状況を監視してください。  
+ SQL Server がクラスター化された環境でない問題の多くが複数のスピンドルを備えた高速な SAN ドライブ、共有ドライブ ログ ファイルが既に存在するためです。 非クラスター化の環境または DTC ログ ファイルが他のハード ディスク ファイルと共有ディスクであるときにボトルネックになるためそれでもまだディスク I/O の使用状況を監視します。  
   
 ## <a name="troubleshooting-dtc"></a>DTC のトラブルシューティング  
- DTC のトラブルシューティングについては、"のトラブルシューティングの問題で MSDTC"BizTalk Server ヘルプを参照してください。 [http://go.microsoft.com/fwlink/?LinkId=153237](http://go.microsoft.com/fwlink/?LinkId=153237)です。  
+ DTC のトラブルシューティング方法の詳細については、"のトラブルシューティングの問題で MSDTC"で BizTalk Server のヘルプを参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=153237](http://go.microsoft.com/fwlink/?LinkId=153237)します。  
   
 ## <a name="see-also"></a>参照  
- [チェックリスト: Windows Server の構成](../technical-guides/checklist-configuring-windows-server.md)
+ [チェックリスト:Windows Server を構成します。](../technical-guides/checklist-configuring-windows-server.md)

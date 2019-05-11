@@ -16,17 +16,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed467b149674580b9ed8921a59433c5402a24a0e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: aeddd040dd3cfb0c423eea149a81a1395a468087
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013939"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378384"
 ---
 # <a name="creating-the-frr-send-ports-for-sending-to-the-custom-handlers"></a>カスタム ハンドラーに送信するための FRR 送信ポートの作成
 FIN Response Reconciliation を実行する必要があります (元のメッセージまたは応答) メッセージを送信する各送信ポートの系列を作成するから[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]相関メッセージを処理するカスタム ハンドラーにします。  
 
- **概要**  
+ **まとめ**  
 
  次のプロパティとコンポーネントをそれぞれ 1 つが BTS の値によって識別して、一連の送信ポートを作成します。フィルターの操作:  
 
@@ -50,7 +50,7 @@ FIN Response Reconciliation を実行する必要があります (元のメッ�
 
 3.  **型**、**ファイル**します。  
 
-4.  クリックして**構成**します。  
+4.  をクリックして**構成**です。  
 
 5.  [FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**します。  
 

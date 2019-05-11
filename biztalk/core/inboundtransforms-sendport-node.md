@@ -1,5 +1,5 @@
 ---
-title: InboundTransforms (SendPort ノード) |Microsoft ドキュメント
+title: InboundTransforms (SendPort ノード) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03567b5ea6095e38370260e1f17055ab40da4d6f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 59d13d48da9f4b9e3e04cb0753eb302484b6b169
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257314"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382183"
 ---
 # <a name="inboundtransforms-sendport-node"></a>InboundTransforms (SendPort ノード)
 バインド ファイルの SendPort ノードの InboundTransforms ノードには、バインド ファイルと共にエクスポートされる双方向送信ポートの受信変換のコレクションが含まれています。  
@@ -27,6 +27,6 @@ ms.locfileid: "22257314"
 ## <a name="nodes-in-the-inboundtransforms-node"></a>InboundTransforms ノード内のノード  
  次の表に、バインド ファイルのこのノードに設定できるプロパティを示します。  
   
-|**名前**|**ノード型**|**データ型**|**Description**|**制限**|**コメント**|  
+|**名前**|**ノードの種類**|**[データ型]**|**[説明]**|**制限**|**コメント**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|[Transform (InboundTransforms ノード)](../core/transform-inboundtransforms-node.md)|レコード|Transform (ComplexType)|BizTalk Server マップまたは変換を指定します。これは送信元スキーマと送信先スキーマのマッピングを表す項目です。|任意|既定値: なし|
+|[Transform (InboundTransforms ノード)](../core/transform-inboundtransforms-node.md)|レコード|変換 (ComplexType)|BizTalk Server マップまたは変換で、送信元スキーマと送信先スキーマ間のマッピングを表す項目を指定します。|任意|既定値: なし|

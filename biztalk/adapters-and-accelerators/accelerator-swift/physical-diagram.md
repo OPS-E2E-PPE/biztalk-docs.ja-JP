@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 695c8ca0fd03fd8324f5b0ab86d72c1c0b6daf9f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fafd068c0fe55d65d47518dcd0693a0ba1f71e3a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978635"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377091"
 ---
 # <a name="physical-diagram"></a>物理的なダイアグラム
 一般的な展開には、メッセージング (送信および受信) の BizTalk Server コンピューターがクラスター化されたが、ビジネス プロセス (オーケストレーション)、InfoPath テンプレート (MRSR サイト) にアクセスするための BizTalk Server コンピューターを実行するための BizTalk Server コンピューターとクラスター化された SQL Server コンピューター。 次のような配置により、イントラネットとインターネット ユーザーの両方からセキュリティで保護された環境です。  

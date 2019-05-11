@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8489d69489a23d6c81efb8443cccbb40c7a357ea
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a695dfac03a36cf7d51c5da7ba71fc1b94c688f3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993795"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398532"
 ---
 # <a name="post-configuration-database-optimizations"></a>構成後のデータベースの最適化
 推奨事項に従うだけでなく[事前構成データベース Optimizations2](../technical-guides/pre-configuration-database-optimizations2.md)、いくつかの手順は、SQL Server で BizTalk Server データベースのパフォーマンスを最適化するために従う必要があります*後*BizTalk Server がインストールされているし、BizTalk Server データベースが構成されています。 このトピックでは、これらの最適化の一覧を示します。  
@@ -25,23 +25,23 @@ ms.locfileid: "36993795"
 ## <a name="consider-setting-the-text-in-row-table-option-on-specific-messagebox-database-tables"></a>特定のメッセージ ボックス データベース テーブルの 'text in row' テーブル オプションを設定してみてください。  
  SQL Server と呼ばれるテーブル オプションを提供する**行内テキスト**を宣言する型のフィールドの内容**テキスト**、 **ntext**、または**イメージ**次元は、データ ページ (8 Kb) のものより小さいデータは、データ行に格納する必要があります。 BizTalkMsgBoxDb テーブル (Parts テーブル、スプール テーブルおよび DynamicStateInfo テーブル) でこのオプションを設定して、小規模なコンテキストとサイズが小さい永続化するオーケストレーションが含まれる小さいメッセージを使用する場合、メッセージ スループットを向上できます。  
   
-- **テーブルのパーツ**: メッセージのサイズが 8 kb のデータ ページのサイズより小さい場合は、適用、**行内テキスト**部品テーブルにテーブルのオプションが BizTalk Server パフォーマンスが向上する可能性があります。 Parts テーブルには、次のフィールドが含まれています。  
+- **テーブルのパーツ**:メッセージのサイズが 8 kb のデータ ページのサイズより小さい場合は、適用、**行内テキスト**部品テーブルにテーブルのオプションが BizTalk Server パフォーマンスが向上する可能性があります。 Parts テーブルには、次のフィールドが含まれています。  
   
-  - **ImgPart**: メッセージの一部またはメッセージ部分のフラグメントが含まれています。  
+  - **ImgPart**:メッセージ部分または一部のメッセージ フラグメントが含まれています。  
   
-  - **ImgPropBag**: メッセージの一部のプロパティ バッグが含まれています。  
+  - **ImgPropBag**:メッセージの一部のプロパティ バッグに含まれています。  
   
     これにより、ループして、メッセージ ボックスに対して BizTalk ホストで実行されているメッセージ エージェントから取得できますメッセージのバッチ Parts テーブル少量のページを読み取ることで。 特定のシナリオとハードウェア構成によっては、この方法は SQL Server と BizTalk Server の両方での CPU 使用率を低減され、待機時間とスループットの観点から重要な強化点を提供します。  
   
-- **スプール テーブル**: メッセージ コンテキストの平均サイズが 8 kb 未満の場合に有効にすると、**行内テキスト**スプール テーブルのテーブル オプションには、に沿って MessageBox からメッセージを読み取るときに、アクセスの数を削減するのに役立ちますそのコンテキスト。 スプール テーブルには、このオプションを適用するには、不要なコンテキスト プロパティと 8 Kb 未満のメッセージ コンテキストのサイズを小さく識別フィールドを排除する必要があります。  
+- **スプール テーブル**:メッセージ コンテキストの平均サイズが 8 kb 未満の場合に有効にすると、**行内テキスト**スプール テーブルのテーブル オプションには、そのコンテキストとメッセージ ボックスからメッセージを読み取るときに、アクセスの数を削減するのに役立ちます。 スプール テーブルには、このオプションを適用するには、不要なコンテキスト プロパティと 8 Kb 未満のメッセージ コンテキストのサイズを小さく識別フィールドを排除する必要があります。  
   
 - **DynamicStateInfo テーブル**ホストごとに 1 つずつ、これらのテーブルには、実行中に永続化ポイントを検出したときに、バイナリでシリアル化されたオーケストレーションの状態を含む imgData と呼ばれるイメージのタイプのフィールドが含まれています。 ホスト HostA 内のオーケストレーションの内部状態が非常に小さいため、1 回シリアル化のサイズが 8 kb 未満である場合、**行内テキスト**手法は、DynamicStateInfo_HostA テーブルに正常に適用できます。 そのためのオーケストレーションの内部状態できるだけ小さくするままことをお勧めします。 この手法では、シリアル化、永続化、逆シリアル化および永続化ポイントが発生した場合、オーケストレーションの内部状態を復元するには、XLANG エンジンによって費やされた時間を大幅に短縮できます。  
   
   ラボ テストの結果で、次の設定を使いました。  
   
-- EXEC sp_tableoption N'Spool'、'text in row'、'6000'  
+- EXEC sp_tableoption N'Spool', 'text in row', '6000'  
   
-- EXEC sp_tableoption N'Parts'、'text in row'、'6000'  
+- EXEC sp_tableoption N'Parts', 'text in row', '6000'  
   
 ## <a name="define-auto-growth-settings-for-biztalk-server-databases-to-a-fixed-value-instead-of-a-percentage-value"></a>パーセント値ではなく固定値に BizTalk Server データベースの自動拡張設定を定義します。  
   
@@ -54,13 +54,13 @@ ms.locfileid: "36993795"
   
  ラボ テストで使用される BizTalk Server データベースの構成は次のとおりです。  
   
-- **BizTalk DTADB (BizTalk 追跡データベースのファイル):** と 100 MB の増加に 1024 MB のログ ファイルのファイル サイズが 100 MB の増加に 2048 MB のデータ ファイル。  
+- **BizTalk DTADB (BizTalk 追跡データベースのファイル):** データ ファイルが 100 MB の増加に 2048 MB のファイル サイズと 1,024 MB のログ ファイルを 100 MB に拡張します。  
   
 - **BizTalkMgmtdb (BizTalk 管理データベースのファイル):** データ ファイルが 100 MB の増加に 512 MB のファイル サイズと 512 MB のログ ファイルを 100 MB に拡張します。  
   
 - **SSODB:** データ ファイルが 100 MB の増加に 512 MB のファイル サイズと 512 MB のログ ファイルを 100 MB に拡張します。  
   
-- **BizTalkMsgBoxDb (BizTalk メッセージ ボックス データベース):** 8 データ ファイル、ファイル サイズ 2 GB、100 MB の成長と 20 gb、100 MB の成長のログ ファイルは、それぞれが。 BizTalk メッセージ ボックス データベースは、最もアクティブであるために、データ ファイルとディスク I/O の競合に関する問題の可能性を低減する専用のドライブ上のトランザクション ログ ファイルを配置するをお勧めします。 このラボ環境では、次のそれぞれの 1 つのドライブを使いました。  
+- **BizTalkMsgBoxDb (BizTalk メッセージ ボックス データベース):** ファイル サイズ 2 GB、100 MB の成長と 20 gb、100 MB の成長のログ ファイルは、それぞれが 8 のデータ ファイル。 BizTalk メッセージ ボックス データベースは、最もアクティブであるために、データ ファイルとディスク I/O の競合に関する問題の可能性を低減する専用のドライブ上のトランザクション ログ ファイルを配置するをお勧めします。 このラボ環境では、次のそれぞれの 1 つのドライブを使いました。  
   
   -   メッセージ ボックス データ ファイル  
   
@@ -111,13 +111,13 @@ GO
 ## <a name="configure-purging-and-archiving-of-tracking-data"></a>構成の削除と追跡データのアーカイブ  
  削除と追跡データのアーカイブが正しく構成されていることを確認する次の手順に従います。  
   
-1.  SQL エージェント ジョブ「DTA の消去およびアーカイブ」が適切に構成された、有効化、および正常に完了することを確認します。 詳細については、[DTA Purge and Archive ジョブを構成する方法](http://go.microsoft.com/fwlink/?LinkID=153814)(http://go.microsoft.com/fwlink/?LinkID=153814) 、BizTalk Server のドキュメントにを参照してください。  
+1.  SQL エージェント ジョブ「DTA の消去およびアーカイブ」が適切に構成された、有効化、および正常に完了することを確認します。 詳細については、次を参照してください。 [DTA Purge and Archive ジョブを構成する方法](http://go.microsoft.com/fwlink/?LinkID=153814)(http://go.microsoft.com/fwlink/?LinkID=153814) 、BizTalk Server のドキュメントにします。  
   
-2.  ジョブが速やかに受信した追跡データが生成されると、追跡データを消去することを確認します。 詳細については、[維持可能な最大の追跡スループットの測定](http://go.microsoft.com/fwlink/?LinkID=153815)(http://go.microsoft.com/fwlink/?LinkID=153815) 、BizTalk Server のドキュメントにを参照してください。  
+2.  ジョブが速やかに受信した追跡データが生成されると、追跡データを消去することを確認します。 詳細については、次を参照してください。[維持可能な最大の追跡スループットの測定](http://go.microsoft.com/fwlink/?LinkID=153815)(http://go.microsoft.com/fwlink/?LinkID=153815) 、BizTalk Server のドキュメントにします。  
   
-3.  論理削除と時間の最適な長さのデータを保持することを確認する物理削除パラメーターを確認します。 詳細については、[アーカイブおよび BizTalk 追跡データベースの削除](http://go.microsoft.com/fwlink/?LinkID=153816)(http://go.microsoft.com/fwlink/?LinkID=153816) 、BizTalk Server のドキュメントにを参照してください。  
+3.  論理削除と時間の最適な長さのデータを保持することを確認する物理削除パラメーターを確認します。 詳細については、次を参照してください。[アーカイブおよび BizTalk 追跡データベースの削除](http://go.microsoft.com/fwlink/?LinkID=153816)(http://go.microsoft.com/fwlink/?LinkID=153816) 、BizTalk Server のドキュメントにします。  
   
-4.  古いデータを消去しないだけの場合必要があります、最初の変更を保存する SQL エージェント ジョブ"dtasp_PurgeTrackingDatabase"ストアド プロシージャを呼び出す 詳細については、[BizTalk 追跡データベースからのデータの削除方法](http://go.microsoft.com/fwlink/?LinkID=153817)(http://go.microsoft.com/fwlink/?LinkID=153817) 、BizTalk Server のドキュメントにを参照してください。  
+4.  古いデータを消去しないだけの場合必要があります、最初の変更を保存する SQL エージェント ジョブ"dtasp_PurgeTrackingDatabase"ストアド プロシージャを呼び出す 詳細については、次を参照してください。 [BizTalk 追跡データベースからのデータの削除方法](http://go.microsoft.com/fwlink/?LinkID=153817)(http://go.microsoft.com/fwlink/?LinkID=153817) 、BizTalk Server のドキュメントにします。  
   
 ## <a name="monitor-and-reduce-dtc-log-file-disk-io-contention"></a>監視し、DTC ログ ファイルのディスク I/O の競合の削減  
  分散トランザクション コーディネーター (DTC) ログ ファイルは、トランザクション処理を要する環境でディスク I/O のボトルネックになります。 これは、トランザクション、またはマルチ メッセージ ボックス環境で SQL Server、MSMQ、MQSeries などをサポートするアダプターを使用する場合に特に当てはまります。 トランザクション アダプターが DTC トランザクションを使用し、メッセージ ボックスの複数の環境によって、DTC トランザクションを広範に使用します。 DTC ログ ファイルがディスク I/O のボトルネックにならないことを確認するには、ディスクの SQL Server のデータベース サーバーでは、DTC ログ ファイルが存在する場所、ディスク I/O の使用量を監視する必要があります。 ディスク I/O、DTC ログ ファイルがあるディスクの使用量が過剰になると、DTC ログ ファイルを高速ディスクに移行を検討してください。 SQL Server がクラスター化された環境でない問題の多くが複数のスピンドルを備えた高速な SAN ドライブ、共有ドライブ ログ ファイルが既に存在するためです。 それでもまだディスク I/O の使用状況を監視する必要があります。 非クラスター化の環境または DTC ログ ファイルが他のハード ディスク ファイルと共有ディスクであるときにボトルネックになるためにです。  

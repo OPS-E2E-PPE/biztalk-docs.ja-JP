@@ -32,12 +32,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ad5d9dd1b582aefa9a440508650ecd0e653dbfe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6c5cd411773555e87cb3395291b6b6f900e83a94
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998378"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377601"
 ---
 # <a name="frr-orchestration"></a>FRR オーケストレーション
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] FRR オーケストレーションを通じて FRR を実装します。 オーケストレーションは、FIN 応答の相関トークン一致、元のメッセージのメッセージ ID かどうかを判断します。 SAA にメッセージを送信する送信ポートで実行される送信機能と SAA からメッセージを受信する受信場所で実行される受信機能は、並列にメッセージを処理します。  
@@ -90,7 +90,7 @@ ms.locfileid: "36998378"
   
 - [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_SendingServiceType [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrService  
   
-- BTS します。応答メッセージの種類に対応する値を操作します。 詳細については、[カスタム ハンドラーへの送信用として FRR 送信ポートを作成する](../../adapters-and-accelerators/accelerator-swift/creating-the-frr-send-ports-for-sending-to-the-custom-handlers.md)を参照してください。  
+- BTS します。応答メッセージの種類に対応する値を操作します。 詳細については、次を参照してください。[カスタム ハンドラーへの送信用として FRR 送信ポートを作成する](../../adapters-and-accelerators/accelerator-swift/creating-the-frr-send-ports-for-sending-to-the-custom-handlers.md)します。  
   
   - [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FrrSendTransport MQ Series パン/NAN メッセージ (MQ Series トランス ポート レベル ACK/NAK)  
   
@@ -122,4 +122,4 @@ ms.locfileid: "36998378"
 ## <a name="reconciliation-time-out"></a>調整のタイムアウト  
  ときに[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]FIN 応答を待機しているオーケストレーションの開始、FRR オーケストレーションの新しいインスタンスを作成します。 実行時に、無期限に応答を待機するがないことをいくつかの期間の後にタイムアウトにオーケストレーションを構成する必要があります。 FRR オーケストレーションが昇格タイムアウト期間を過ぎると、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FRRFailedReason プロパティ TimedOut に設定します。 メッセージを MessageBox に公開し、終了します。 タイムアウトする場合は、関連付け ID はなくなっています。  
   
- タイムアウト メッセージ (元の送信メッセージのコピー) を処理するためのカスタム ハンドラーを作成することができます。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 待ち受け図形をオーケストレーションを使用してこれを実現なります。 詳細については、[FRR 遅延タイムアウト](../../adapters-and-accelerators/accelerator-swift/setting-the-frr-delay-time-out.md)を参照してください。
+ タイムアウト メッセージ (元の送信メッセージのコピー) を処理するためのカスタム ハンドラーを作成することができます。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 待ち受け図形をオーケストレーションを使用してこれを実現なります。 詳細については、次を参照してください。 [FRR 遅延タイムアウト](../../adapters-and-accelerators/accelerator-swift/setting-the-frr-delay-time-out.md)します。

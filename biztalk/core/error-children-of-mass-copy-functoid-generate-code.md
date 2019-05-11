@@ -1,5 +1,5 @@
 ---
-title: エラー - 一括コピー Functoid の子がコードを生成します |Microsoft ドキュメント
+title: エラー - 一括コピー Functoid の子がコードを生成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68183a90be46b176d13100b02cbed2798fe24b34
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c11f96b753b100a9662671ff0c20d5671ad07055
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240570"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349005"
 ---
-# <a name="error---children-of-mass-copy-functoid-generate-code"></a>エラー - 一括コピー Functoid の子がコードを生成します
+# <a name="error---children-of-mass-copy-functoid-generate-code"></a>エラー - 一括コピー Functoid の子がコードを生成します。
 **エラー コード**  
   
  btm1068  
   
  **説明**  
   
- 機能と矛盾するシナリオ、**一括コピー**マップに functoid が見つかりました。 送信先スキーマの出力にリンクされているノードの子孫のノードで、**一括コピー** functoid は、自身の XSLT コードを生成しようとしています。  
+ 機能と矛盾するシナリオ、**一括コピー**マップに functoid が見つかりました。 送信先スキーマの出力にリンクされているノードの子孫のノードで、**一括コピー** functoid は自身の XSLT コードを生成しようとしています。  
   
  **ユーザーの操作**  
   
- 関連の使用法を変更することで、非互換性を削除する**一括コピー** functoid を変更するか、子ノードが自身の XSLT コードを生成しないようにします。
+ 非互換性を関連する使用状況を変更することで削除**一括コピー** functoid を変更するか、子ノードが自身の XSLT コードを生成しないようにします。

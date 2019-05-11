@@ -17,12 +17,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 10c0816508d2efb05dbac14797f80ffef12765fa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 96353350f39668250977d46fb58b56b6693d7e30
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967179"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377420"
 ---
 # <a name="installation-and-configuration-troubleshooting"></a>インストールと構成のトラブルシューティング
 ## <a name="setup-is-unable-to-deploy-the-runtimeschemas-assembly"></a>RuntimeSchemas アセンブリを配置できません。  
@@ -136,7 +136,7 @@ ms.locfileid: "36967179"
   
 4. もう一度 A4SWIFT の最新バージョンにアップグレードします。 今度は、アップグレードを使用して、サイド バイ サイド インストールは作成されません。  
   
-5. BizTalk 展開ユーティリティを使用して、手動で、Microsoft を展開解除します。Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll、A4SWIFT インストールの場所の [アセンブリ] フォルダーから展開します。 このツールの詳細については、[BRE 配置ユーティリティ](../../adapters-and-accelerators/accelerator-swift/bre-deployment-utility.md)を参照してください。  
+5. BizTalk 展開ユーティリティを使用して、手動で、Microsoft を展開解除します。Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll、A4SWIFT インストールの場所の [アセンブリ] フォルダーから展開します。 このツールの詳細については、次を参照してください。 [BRE 配置ユーティリティ](../../adapters-and-accelerators/accelerator-swift/bre-deployment-utility.md)します。  
   
 ## <a name="the-uninstall-or-upgrade-process-may-not-complete-correctly-if-you-do-not-restart-when-prompted"></a>入力を求められたら再起動しない場合、アンインストールまたはアップグレード プロセスが正常に完了しない可能性があります。  
   
@@ -154,7 +154,7 @@ ms.locfileid: "36967179"
 ### <a name="symptom"></a>現象  
  [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]構成ウィザードが web サービスの機能を正しく構成されていません。 次のエラーが表示されます。  
   
- "MRSR アーティファクトを作成できませんリモート サーバーに接続できません。"。  
+ "MRSR アーティファクトを作成できません。リモート サーバーに接続できません。"  
   
 ### <a name="possible-cause"></a>考えられる原因  
  実行したときに、IIS 管理サービスが停止しました、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]構成ウィザード。  
@@ -182,7 +182,7 @@ ms.locfileid: "36967179"
 ### <a name="symptom"></a>現象  
  [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]構成ウィザードが web サービスの機能を正しく構成されていません。 次のエラーが表示されます。  
   
- "MRSR アーティファクトを作成できません: オブジェクト参照がオブジェクトのインスタンスに設定されていません"。  
+ "MRSR アーティファクトを作成できません。オブジェクトの参照オブジェクトのインスタンスに設定されていません。"  
   
 ### <a name="possible-cause"></a>考えられる原因  
  BizTalk Server ランタイムの構成時に、インプロセス ホストとホスト インスタンスが作成されていません。  
@@ -204,7 +204,7 @@ ms.locfileid: "36967179"
   
 4.  ホストのプロパティ] 画面の [全般] ペインで、[次のように入力します。  
   
-    -   ホスト名: **BizTalkServerApplication**  
+    -   ホスト名:**BizTalkServerApplication**  
   
     -   型:**インプロセス**  
   
@@ -232,4 +232,4 @@ ms.locfileid: "36967179"
  ユーティリティの構成を更新するには、メモ帳で BREDeployment.exe.config を開き、基本ポリシー、スキーマ、およびボキャブラリのディレクトリのフォルダーを変更します。  
   
 ## <a name="see-also"></a>参照  
- [トラブルシューティング: 問題と解決策](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)
+ [トラブルシューティング: 問題と解決方法](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)

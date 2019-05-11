@@ -12,17 +12,17 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7ec23dcf604e1bd454ba7e69a57c250cf3b1872f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: beb676565b539f813062e9083265903350724a09
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398056"
 ---
 # <a name="record-nodes"></a>[レコード] ノード
 BizTalk エディターを使用する、**レコード**を個々 の項目は、情報のコレクションを表すノード。  
 
-- 単純型の情報 (文字列や数値など)。子フィールド ノードとして表されます。 これらの子フィールド ノードには、いずれかを指定できる**フィールド要素**ノードまたは**フィールド属性**ノード。 これらの 2 種類のフィールド ノードの詳細については、[フィールド要素 ノード](../core/field-element-nodes.md)と[フィールド属性 ノード](../core/field-attribute-nodes.md)を参照してください。  
+- 単純型の情報 (文字列や数値など)。子フィールド ノードとして表されます。 これらの子フィールド ノードには、いずれかを指定できる**フィールド要素**ノードまたは**フィールド属性**ノード。 これらの 2 種類のフィールド ノードの詳細については、次を参照してください。[フィールド要素 ノード](../core/field-element-nodes.md)と[フィールド属性 ノード](../core/field-attribute-nodes.md)します。  
 
 - 子として表される複合型の情報、**レコード**ノードまたはグループ ノードとして (**シーケンス グループ**ノード、**グループの選択**ノード、または**すべてのグループ**ノード)。  
 

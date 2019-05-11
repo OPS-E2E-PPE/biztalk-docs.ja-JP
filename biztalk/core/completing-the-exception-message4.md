@@ -1,5 +1,5 @@
 ---
-title: 完了例外 Message4 |Microsoft ドキュメント
+title: 例外 Message4 の完了 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e4901a353361091c3d0706e1ec59c47f131eb07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4f30cb22bad77515927b0107cfa6e54aa3a3fbf7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231346"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356824"
 ---
 # <a name="completing-the-exception-message"></a>例外完了メッセージ
 ### <a name="to-complete-the-exception-message"></a>例外メッセージを完了するには  

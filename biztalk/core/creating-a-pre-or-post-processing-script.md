@@ -20,12 +20,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6993ab2786cc33e40f00bab7910353170e318db0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f20c95273cc0140da79ac1972be2071f40e0c348
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006475"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354105"
 ---
 # <a name="creating-a-pre--or-post-processing-script"></a>処理前または処理後のスクリプトの作成
 アプリケーションの展開時に操作を実行するスクリプトを作成し、展開プロセスのどの時点でそのスクリプトを実行するかを定義できます。 同じスクリプトにインストールとクリーンアップ コードの両方を含めることができます。これらのコードは環境変数を使って区切ります。 コマンドライン引数をスクリプトに渡すこともできます。  
@@ -46,9 +46,9 @@ ms.locfileid: "37006475"
   
 - インストールに失敗した場合、スクリプトは適切なロールバック アクションと共に逆の順番で呼び出されます。  
   
-  前または処理後のスクリプトを呼び出されると、展開の状態を決定します (インストール、インポート、削除、アンインストール、インポート ロールバック、またはインストール ロールバック) ことにより、実行中環境変数 BTAD_ChangeRequestAction、BTAD_InstallMode、および BTAD_HostClass、」の説明に従って[方法環境変数を示す配置状態](../core/how-environment-variables-indicate-deployment-state.md)します。 変数に関するリファレンス情報は、[前処理および後処理のスクリプト環境変数](../core/pre-and-post-processing-script-environment-variables.md)を参照してください。  
+  前または処理後のスクリプトを呼び出されると、展開の状態を決定します (インストール、インポート、削除、アンインストール、インポート ロールバック、またはインストール ロールバック) ことにより、実行中環境変数 BTAD_ChangeRequestAction、BTAD_InstallMode、および BTAD_HostClass、」の説明に従って[方法環境変数を示す配置状態](../core/how-environment-variables-indicate-deployment-state.md)します。 変数に関するリファレンス情報は、次を参照してください。[前処理および後処理のスクリプト環境変数](../core/pre-and-post-processing-script-environment-variables.md)します。  
   
-  スクリプト アプリケーションを追加する方法の詳細については、[より前に追加する方法または処理後のスクリプトをアプリケーションに](../core/how-to-add-a-pre-or-post-processing-script-to-an-application.md)を参照してください。  
+  スクリプト アプリケーションを追加する方法の詳細については、次を参照してください。[より前に追加する方法または処理後のスクリプトをアプリケーションに](../core/how-to-add-a-pre-or-post-processing-script-to-an-application.md)します。  
   
 > [!NOTE]
 >  コマンドライン引数をスクリプトに含めるには、AddResource コマンドを使用してスクリプトを追加する必要があります。後の説明を参照してください。  
@@ -121,7 +121,7 @@ ms.locfileid: "37006475"
 > [!IMPORTANT]
 >  BTSTask コマンドはスクリプトで使用しないでください。特にインポート時に実行されるスクリプトでは使用しないでください。スクリプトはインポートと同じトランザクションに参加しません。  
   
- AddResource コマンドを使用して、アプリケーションにスクリプトを追加する手順については、[AddResource コマンド: 前処理スクリプト](../core/addresource-command-preprocessing-script.md)を参照してください。 参照してください[AddResource コマンド: 処理後のスクリプト](../core/addresource-command-postprocessing-script.md)  
+ AddResource コマンドを使用して、アプリケーションにスクリプトを追加する手順については、次を参照してください。 [AddResource コマンド。スクリプトを前処理](../core/addresource-command-preprocessing-script.md)します。 参照してください[AddResource コマンド。処理後のスクリプト](../core/addresource-command-postprocessing-script.md)  
   
 ## <a name="see-also"></a>参照  
  [前処理および後処理のスクリプトを使用したアプリケーション展開のカスタマイズ](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)   

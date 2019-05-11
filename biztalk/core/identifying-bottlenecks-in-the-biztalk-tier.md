@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b53410466478ea7e493d043f42b5de86ec9921c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 57e2a3df681b4ccfe00f5b16f0059d17d7471f75
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996251"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382890"
 ---
 # <a name="identifying-bottlenecks-in-the-biztalk-tier"></a>BizTalk 層のボトルネックの特定
 BizTalk 層は以下の機能領域に分割できます。  
@@ -115,8 +115,8 @@ BizTalk 層は以下の機能領域に分割できます。
 |BizTalk Messaging|RxHost|Documents Received/Sec|受信速度|  
 |BizTalk Messaging|TxHost|Documents Processed/Sec|送信速度|  
 |XLANG/s Orchestrations|PxHost|Orchestrations Completed/Sec.|処理速度|  
-|BizTalk: メッセージ ボックス: 一般的なカウンター|MsgBoxName|Spool Size|すべてのホスト キューの合計サイズ|  
-|BizTalk: メッセージ ボックス: 一般的なカウンター|MsgBoxName|Tracking Data Size|メッセージ ボックスの TrackingData テーブルのサイズ|  
+|BizTalk:メッセージ ボックス:一般的なカウンター|MsgBoxName|Spool Size|すべてのホスト キューの合計サイズ|  
+|BizTalk:メッセージ ボックス:一般的なカウンター|MsgBoxName|Tracking Data Size|メッセージ ボックスの TrackingData テーブルのサイズ|  
 |BizTalk:MessageBox:Host Counters|PxHost:MsgBoxName|Host Queue - Length|特定のホスト キューに存在するメッセージの数|  
 |BizTalk:MessageBox:Host Counters|TxHost:MsgBoxName|Host Queue - Length|特定のホスト キューに存在するメッセージの数|  
 |BizTalk:Message Agent|RxHost|Database Size|公開 (PxHost) キューのサイズ|  
@@ -125,7 +125,7 @@ BizTalk 層は以下の機能領域に分割できます。
 |BizTalk:Message Agent|HostName|Message Publishing Throttling State|XLANG と受信トランスポートに影響|  
   
 ### <a name="where-do-i-start"></a>監視の開始  
- 監視、 **Message Delivery Throttling State**と**Message Publishing Throttling State**各ホストのインスタンスが、通常をお勧めします。 これらのカウンターの値が 0 でない場合、BizTalk システム内で制限が発生していることがわかります。そこから、ボトルネックの原因をさらに分析することができます。 その他のパフォーマンス カウンターの説明については、[データベース層のボトルネックを識別する](http://msdn.microsoft.com/library/f1dc58b5-73b0-41b5-9a1e-c0698485c732)を参照してください。  
+ 監視、 **Message Delivery Throttling State**と**Message Publishing Throttling State**各ホストのインスタンスが、通常をお勧めします。 これらのカウンターの値が 0 でない場合、BizTalk システム内で制限が発生していることがわかります。そこから、ボトルネックの原因をさらに分析することができます。 その他のパフォーマンス カウンターの説明については、次を参照してください。[データベース層のボトルネックを識別する](http://msdn.microsoft.com/library/f1dc58b5-73b0-41b5-9a1e-c0698485c732)します。  
   
 ## <a name="backlog-buildup"></a>バックログの蓄積  
  1 つの受信メッセージに対して 1 つの処理と送信が行われる 1 対 1 の展開シナリオで、送信速度が受信速度と等しくない場合は、システムのどこかでバックログが蓄積されています。 そのような場合は Spool Size を監視します。  

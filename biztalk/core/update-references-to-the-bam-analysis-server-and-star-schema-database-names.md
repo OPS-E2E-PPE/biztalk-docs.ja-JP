@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b4f98129efd2f7c027ecb6c3e69d494ff2e96e8b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6d66abdbc8a6361abe0acfba16f20f9a8bef5a85
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287450"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399446"
 ---
 # <a name="how-to-update-references-to-the-bam-analysis-server-and-star-schema-database-names"></a>BAM Analysis Server およびスター スキーマ データベース名への参照を更新する方法
 BAMAnalysis および BAMStarSchema データベースがバックアップされていれば、システムまたはデータに障害が発生したときには、別のコンピューターにバックアップを復元でき、さらにその名前を変更することができます。  
@@ -42,7 +42,7 @@ BAMAnalysis および BAMStarSchema データベースがバックアップさ�
   
     1.  をクリックして**開始**、 をクリックして**実行**、し、入力**services.msc**です。  
   
-    2.  右クリックし、 **BizTalk Service BizTalk Group: BizTalkServerApplication**サービスを提供し、クリックして**停止**です。  
+    2.  右クリックし、 **BizTalk Service BizTalk Group:[Biztalkserverapplication]** サービスをクリックして**停止**します。  
   
     > [!TIP]
     >  サービスを停止する別の方法は、使用する、 **Net Stop**コマンド。 Net Stop を使用して BizTalk サービスを停止するを開き、**コマンド プロンプト**(Windows Server 2008 または Windows Vista を使用して場合、は、コマンド プロンプトを使用して、起動**管理者として実行**) と入力します: `Net Stop BTSSvc$BizTalkServerApplication`キーを押します**Enter**です。  
@@ -87,9 +87,9 @@ BAMAnalysis および BAMStarSchema データベースがバックアップさ�
   
     1.  をクリックして**開始**、 をクリックして**実行**、し、入力**services.msc**です。  
   
-    2.  右クリックし、 **BizTalk Service BizTalk Group: BizTalkServerApplication**サービスを提供し、クリックして**開始**です。  
+    2.  右クリックし、 **BizTalk Service BizTalk Group:[Biztalkserverapplication]** サービスをクリックして**開始**します。  
   
 21. すべての BAM キューブ更新およびデータ保守 SSIS パッケージを有効にします。  
   
 ## <a name="see-also"></a>参照  
- [バックアップおよび BAM を復元します。](../core/backing-up-and-restoring-bam.md)
+ [BAM のバックアップと復元](../core/backing-up-and-restoring-bam.md)

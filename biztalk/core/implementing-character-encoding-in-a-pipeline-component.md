@@ -1,5 +1,5 @@
 ---
-title: パイプライン コンポーネントの文字エンコーディングを実装する |Microsoft ドキュメント
+title: パイプライン コンポーネントにおける文字エンコーディングを実装する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1bc95dc44fa4a4905affaad969c248aa4b76d89
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8445a69b8de63ad2a0df91d3720436d79d605fdc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257050"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382614"
 ---
-# <a name="implementing-character-encoding-in-a-pipeline-component"></a>パイプライン コンポーネントの文字エンコーディングを実装します。
-カスタム文字エン コードをサポートする Microsoft .NET Framework から派生することによってカスタムのエンコード クラスを実装する必要があります**エンコード**クラス、し、カスタムのフラット ファイル パイプライン コンポーネントを作成するには、標準のフラットを継承ファイルの逆アセンブラーやフラット ファイル アセンブラー コンポーネントです。 プロテクト仮想メソッドをオーバーライドすることで、解析エンジンに新しいエンコード インスタンスを指定することができます**FFDasmComp.GetDataReader**次の例で示すようにします。  
+# <a name="implementing-character-encoding-in-a-pipeline-component"></a>パイプライン コンポーネントにおける文字エンコーディングを実装します。
+カスタムの文字エンコーディングをサポートする Microsoft .NET Framework から派生することによってカスタムのエンコード クラスを実装する必要があります**エンコード**クラス、標準のフラットから継承することによって独自のフラット ファイル パイプライン コンポーネントを作成し、ファイルの逆アセンブラーやフラット ファイル アセンブラー コンポーネントです。 解析エンジンに新しいエンコード インスタンスを指定するには、保護された仮想メソッドをオーバーライドすることで**FFDasmComp.GetDataReader**次の例に示すようにします。  
   
 ```  
 /// <summary>  
@@ -41,8 +41,8 @@ ms.locfileid: "22257050"
       }  
 ```  
   
-## <a name="using-predefined-encoding-classes"></a>定義済みエンコード クラスの使用  
- 次のエンコードの種類は Microsoft .NET Framework で定義済みであり、パーサーの構築に使用できます。  
+## <a name="using-predefined-encoding-classes"></a>定義済みエンコード クラスを使用します。  
+ 次のエンコードの種類は、Microsoft .NET Framework によって定義済みし、パーサーの構築に使用できます。  
   
 -   ASCII  
   
@@ -56,8 +56,8 @@ ms.locfileid: "22257050"
 XmlReader xr = docspec.Parse(new DataReader(System.Text.Encoding.UTF8));  
 ```  
   
-## <a name="using-supported-code-pages"></a>サポートされているコード ページの使用  
- Shift-JIS (コード ページ 932) をサポートするには、次のコードを使用します。  
+## <a name="using-supported-code-pages"></a>サポートされているコード ページを使用します。  
+ SHIFT-JIS (コード ページ 932) をサポートするのにには、次のコードを使用します。  
   
 
 ```  
@@ -65,7 +65,7 @@ XmlReader xr = docspec.Parse(new DataReader(System.Text.Encoding.GetEncoding(932
 ```  
   
 ## <a name="using-a-private-encoding-class"></a>プライベート エンコード クラスの使用  
- 派生した独自のエンコード クラスを作成することができます、 **System.Text.Encoding**クラスを抽象化し、独自のエンコードおよびデコードを実行します。  
+ 派生した独自のエンコード クラスを作成することができます、 **System.Text.Encoding**クラスを抽象化し、独自のエンコードとデコードを実行します。  
   
 ```  
 class MyEncoding : System.Text.Encoding  
@@ -78,7 +78,7 @@ XmlReader xr = docspec.Parser(new DataReader(new MyEncoding()));
   
 ## <a name="using-a-private-datareader-class"></a>プライベート DataReader クラスの使用  
 
- 独自に作成することができます[DataReader](https://msdn.microsoft.com/library/microsoft.biztalk.parsingengine.datareader.aspx)を実装するクラス、`IDataReader`インターフェイスし、クラスのどのエンコーディングを作成せずに読み取り操作を実行します。  
+ 独自に作成することができます[DataReader](https://msdn.microsoft.com/library/microsoft.biztalk.parsingengine.datareader.aspx)を実装するクラス、`IDataReader`インターフェイスし、クラスのどのエンコーディングを作成することがなく読み取り操作を実行します。  
   
 ```  
 class MyDataReader : IDataReader  
@@ -91,4 +91,4 @@ XmlReader xr = docspec.Parse(new MyDataReader());
 ```  
   
 ## <a name="see-also"></a>参照  
- [解析およびシリアル化エンジンを使用します。](../core/using-the-parsing-and-serializing-engines.md)
+ [解析エンジンおよびシリアル化エンジンの使用](../core/using-the-parsing-and-serializing-engines.md)

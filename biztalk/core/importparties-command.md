@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a6c25b913b6479b857fb7cee4aec10e6984f2195
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 09e59f51aa6d99fbd9b1351087a403350cc22a1f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998539"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382210"
 ---
 # <a name="importparties-command"></a>ImportParties コマンド
-アプリケーションのアイテムのいずれかをインポートせず、構成データベース内のソース XML バインド ファイルからの企業間取引のパーティーと契約をインポートします。 詳細については、**解説**このトピックの「を参照してください。  
+アプリケーションのアイテムのいずれかをインポートせず、構成データベース内のソース XML バインド ファイルからの企業間取引のパーティーと契約をインポートします。 詳細については、次を参照してください。**解説**このトピックの「します。  
 
 > [!IMPORTANT]
 > このコマンドは、以降では新しい**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**、およびそれ以降のバージョン。
@@ -29,7 +29,7 @@ ms.locfileid: "36998539"
 >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で生成されたバインド ファイルでは、アプリケーションが指定されません。 これらは、既定のアプリケーションにインポートされます。  
   
 ## <a name="usage"></a>使用方法  
-  **BTSTask ImportParties-ソース**:*値***[- ExcludeEdiFallbackSettings]** [**-サーバー**:*値*] [**-データベース**:*値*]
+  **BTSTask ImportParties -Source**:*value* **[-ExcludeEdiFallbackSettings]** [**-Server**:*value*] [**-Database**:*value*]
   
 ## <a name="parameters"></a>パラメーター  
   

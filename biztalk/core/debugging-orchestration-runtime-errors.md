@@ -1,5 +1,5 @@
 ---
-title: オーケストレーションの実行時エラーのデバッグ |Microsoft ドキュメント
+title: オーケストレーションの実行時エラーのデバッグ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,75 +12,75 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 87a47c5b2ee432059365c6f9046a75bb5775fc02
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 3b74291083afc5c25df0723bcbdf105ba51016a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25969904"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389762"
 ---
 # <a name="debugging-orchestration-runtime-errors"></a>オーケストレーションの実行時エラーのデバッグ
-このセクションでは、オーケストレーションに関する実行時の問題の解決に役立つ一連の質問と回答を示します。  
+このセクションには、一連質問と回答では、オーケストレーションの実行時の問題を解決するために設計されていますにはが含まれています。  
   
-## <a name="why-do-i-get-intermittent-subscription-errors-when-sending-to-a-child-orchestration-that-was-just-started-by-the-parent"></a>親によって開始された直後の子オーケストレーションに送信を行うと、断続的なサブスクリプション エラーが発生するのはなぜでしょうか。  
- サブスクリプションが見つかりませんでした、というサブスクリプション エラーは、競合状態の結果です。 競合状態は、プロセスの結果が実行順序によって変わる場合に発生します。 この場合、競合状態が発生するのは、親によって送信されたメッセージを受信する時点で、まだ子オーケストレーションが開始されていないときです。  
+## <a name="why-do-i-get-intermittent-subscription-errors-when-sending-to-a-child-orchestration-that-was-just-started-by-the-parent"></a>親によって開始された直後の子オーケストレーションに送信するときに断続的なサブスクリプション エラーするはなぜですか。  
+ サブスクリプション エラー「が見つかりませんでしたサブスクリプション」は、競合状態の結果です。 競合状態は、プロセスの結果は、処理が行われる特定の順序に依存する場合に発生します。 この場合、条件は、親によって送信されたメッセージを受信する時点で、子オーケストレーションが開始されていないときに発生します。  
   
- この問題を回避するには、子オーケストレーションが開始されてメッセージを受信できる状態になったときに、子オーケストレーションから親にメッセージを返すようにします。 この方法にすれば、子オーケストレーションを開始した親オーケストレーションが、メッセージを送信する前に受信者の存在を認識できます。  
+ この問題を回避するには、ことが起動し、メッセージを受信する準備がとき、子オーケストレーションはでした、親に戻るメッセージを送信します。 この方法でを起動した親オーケストレーションにメッセージを送信する前に、受信側があることは認識。  
   
-## <a name="why-do-i-get-errors-when-i-attach-a-dynamic-send-port-to-a-logical-port"></a>動的送信ポートを論理ポートに接続すると、エラーが発生するのはなぜでしょうか。  
- 動的ポートは、割り当てるポートの属性と特性のすべてを継承するようには設計されていません。 動的ポートは、アドレスを取得するだけであり、論理ポートに関連付けられているその他の情報は継承しません。  
+## <a name="why-do-i-get-errors-when-i-attach-a-dynamic-send-port-to-a-logical-port"></a>論理ポートを動的送信ポートを接続したときにエラーするはなぜですか。  
+ 動的なポートは、すべての属性とそれに割り当てられているポートの特性を継承するように設計されていません。 動的なポートのみで、アドレスを取得します。論理ポートに関連付けられたその他の情報は継承されません。  
   
- たとえば、"配信通知 = 送信済み" 状態の論理ポートに動的送信ポートを接続した場合、ランタイムは配信通知を配信しません。 XLANGs ランタイムが配信通知を待機するのは、実際にポートがそのように静的に設定されている場合のみです。  
+ たとえば、配信通知の論理ポートに動的送信ポートを接続する場合は、= 送信済み、ランタイムは配信通知を配信しません。 XLANGs ランタイムはのみに、ポートが実際に設定されているように静的にする場合、配信通知をリッスンします。  
   
 > [!NOTE]
->  XLANGs では、ポートは静的に構成されているものとしてのみ動作します。  
+>  XLANGs では、ポートは静的に構成されている場合にのみ動作します。  
   
-## <a name="when-i-try-to-run-my-application-after-deploying-an-orchestration-with-custom-components-why-do-i-get-the-error-file-or-assembly-name-or-one-of-its-dependencies-not-found"></a>カスタム コンポーネントを含むオーケストレーションの展開後にアプリケーションを実行しようとすると、ファイルまたはアセンブリ名、あるいはその依存関係の 1 つが見つかりません、というエラーが発生するのはなぜでしょうか。  
- このエラーは、通常、BizTalk オーケストレーション エンジンがカスタム コンポーネントを見つけられないことを示しています。 アプリケーションをホストするコンピューターのグローバル アセンブリ キャッシュに、BizTalk アプリケーションに含まれているすべてのアセンブリをインストールする必要があります。  
+## <a name="when-i-try-to-run-my-application-after-deploying-an-orchestration-with-custom-components-why-do-i-get-the-error-file-or-assembly-name-or-one-of-its-dependencies-not-found"></a>カスタム コンポーネントを使用したオーケストレーションを展開した後にアプリケーションを実行しようとするとなぜ、エラー「ファイルまたはアセンブリの名前またはその依存関係が見つかりません。 いずれかの」でしょうか。  
+ このエラーは通常、BizTalk オーケストレーション エンジンは、カスタム コンポーネントを見つけることはできませんを意味します。 アプリケーションをホストするコンピューターのグローバル アセンブリ キャッシュ内の BizTalk アプリケーションに含まれるすべてのアセンブリをインストールする必要があります。  
   
-## <a name="an-assemblyname-context-property-was-not-valid-error-occurs-when-submitting-a-document-to-a-web-service-via-an-orchestration"></a>オーケストレーション経由で Web サービスにドキュメントを送信する際に、AssemblyName コンテキスト プロパティが無効でした、というエラーが発生します。  
+## <a name="an-assemblyname-context-property-was-not-valid-error-occurs-when-submitting-a-document-to-a-web-service-via-an-orchestration"></a>オーケストレーション経由で Web サービスへのドキュメントを送信するときに、「AssemblyName コンテキスト プロパティが無効です」エラーが発生しました。  
   
 ### <a name="problem"></a>問題  
- オーケストレーション経由でドキュメントを Web サービスに送信すると、AssemblyName コンテキスト プロパティが無効です、というエラーが発生します。  
+ 「AssemblyName コンテキスト プロパティが無効です」エラーで、オーケストレーションの結果を使用して Web サービスへのドキュメントを送信しています。  
   
 ### <a name="cause"></a>原因  
- BizTalk アプリケーションでは、介在するオーケストレーションなし「メッセージング」アプローチを使用してもともとです。 このようなソリューションでは、送信ポート フィルターを使用して受信ポートと送信ポートをリンクするので、ドキュメントは受信時に送信ポートに渡されます。 その後、ソリューションは、送信ポートにバインドされているオーケストレーションを含むように変更されました。  
+ BizTalk アプリケーションは、介在するオーケストレーションなし「メッセージング」アプローチを使用してもともと設計されました。 この種のソリューションは、送信ポート フィルターを使用して、受信ポートと送信ポートをリンクして、ドキュメントを受信すると、送信ポートに渡されます。 後で、ソリューションは、送信ポートにバインドされたオーケストレーションを含むに変更されました。  
   
 ### <a name="resolution"></a>解決策  
- 送信ポートのフィルターを削除します。 オーケストレーションにバインドされている送信ポートにフィルターを適用すると、多くの場合、メッセージがオーケストレーションをバイパスするので、コンテキスト プロパティ エラーが発生します。  
+ 送信ポートでフィルターを削除します。 オーケストレーションにバインドされている送信ポートにフィルターを適用する場合メッセージは多くの場合、オーケストレーションをバイパス コンテキスト プロパティのエラーが発生します。  
   
-## <a name="a-wrongbodypartexception-occurs-when-handling-a-multipart-mime-message-in-an-orchestration"></a>オーケストレーションでマルチパート MIME メッセージを処理する際に、"WrongBodyPartException" が発生します。  
+## <a name="a-wrongbodypartexception-occurs-when-handling-a-multipart-mime-message-in-an-orchestration"></a>"WrongBodyPartException"は、オーケストレーションでマルチパート MIME メッセージを処理するときに発生します。  
   
 ### <a name="problem"></a>問題  
  結果をオーケストレーションにマルチパート MIME メッセージの受信、 **WrongBodyPartException**例外。  
   
 ### <a name="cause"></a>原因  
- このエラーは、部分の順序が誤って指定された場合、または指定された部分の位置にメッセージが準拠していない場合に発生します。 たとえば、3 番目の部分にボディ部を指定している場合に、到着したメッセージの 3 番目の位置がヘッダー部であるときなどです。  
+ このエラーは、要素の順序が正しく指定されていない、またはメッセージ部分の指定した位置に準拠していない場合に発生することができます。 などのことを指定する場合は、3 番目の部分がボディ部がメッセージを受け取るまでに 3 番目の位置でのヘッダー部分。  
   
 ### <a name="resolution"></a>解決策  
- ボディ部のインデックス設定が正しいことを確認し、アダプター経由で到着するすべてのメッセージがその設定と一致するようにします。 オーケストレーションを停止することで (ただし参加は継続)、オーケストレーション内で失敗する MIME メッセージのコンテンツを調査できます。この方法では、メッセージが強制的に公開されるので、管理コンソールを使用してメッセージを調べて、部分の順序を確認することができます。  
+ ボディ部のインデックス設定が正しいことを確認して、し、アダプター経由で到着するすべてのメッセージが整合性の設定があることを確認してください。 オーケストレーションを停止することで、オーケストレーション内で失敗する MIME メッセージの内容を検査することができます (ただし、参加を維持する)。これで、メッセージが公開されるので、管理コンソールを使用してチェックし、要素の順序を確認できます。  
   
-## <a name="multipart-mime-message-part-cannot-be-found"></a>マルチパート MIME メッセージ部分が見つかりません。  
+## <a name="multipart-mime-message-part-cannot-be-found"></a>マルチパート MIME メッセージ部分が見つかりません  
   
 ### <a name="problem"></a>問題  
- MIME を取得したメッセージのようなエラーをスロー、BizTalk Server ランタイムで結果が 0 より大きいインデックス値を持つ部分"のインデックスでのマルチパート メッセージを見つけることができません =\<値\>"です。  
+ メッセージのようなエラーをスローする BizTalk Server ランタイムに結果が 0 より大きいインデックス値を持つパーツの MIME を取得すると"インデックスを持つ、マルチパート メッセージを見つけることができません =\<値\>"。  
   
 ### <a name="cause"></a>原因  
- このエラーの最も一般的な原因を次に示します。  
+ このエラーの最も一般的な原因は次のとおりです。  
   
--   MIME メッセージの部分が想定された数に足りません。  
+-   MIME メッセージは、予想よりも少ない部分です。  
   
--   MIME メッセージが正常に解析できませんでした。  
+-   MIME メッセージを完全に解析できませんでした。  
   
 ### <a name="resolution"></a>解決策  
- この問題は、メッセージ ソースから取得するメッセージ部分が、想定される範囲内の部分のみになるようにすることで解決できます。 解析の問題の場合、元の MIME メッセージの構造に誤りがなく、正しく構築されているか確認する必要があります。 不定期に解析の問題が起こる場合、オーケストレーションに適切な例外ハンドラーがあるか確認します。  
+ コードは、メッセージ ソースから予想される範囲内にあるメッセージ部分のみを取得することによってこの問題を解決することができます。 解析の問題の場合は、元の MIME メッセージは、構造的なサウンドと適切に構築されたことを確認してください。 不定期の解析の問題を想定する場合は、オーケストレーションが適切な例外ハンドラーを持つことを確認します。  
   
-## <a name="you-receive-a-the-file-send-adapter-cannot-open-file-for-writing-error-when-sending-using-a-dynamic-send-port"></a>動的送信ポートを使用して送信を行うと、"FILE 送信アダプターがファイルを書き込み用に開けません" というエラーが表示されます。  
+## <a name="you-receive-a-the-file-send-adapter-cannot-open-file-for-writing-error-when-sending-using-a-dynamic-send-port"></a>送信ポートの動的なを使用して送信する場合に"ファイル送信アダプターはファイルを書き込み用に開けません"というエラーが発生します。  
   
 ### <a name="problem"></a>問題  
- 表示されたら、"ファイル送信アダプターがファイルを開くことができません *\<filename\>* 書き込み用"動的なを使用して送信するときに、BizTalk Server のイベント ログにエラーが送信ポート。  
+ 表示されたら、"ファイル送信アダプターがファイルを開くことができません*\<filename\>* 書き込み用"、dynamic の使用を送信するときに、BizTalk Server イベント ログにエラーの送信ポート。  
   
- この問題が発生したときに、 **BTS です。OutBoundTransportLocation**プロパティがオーケストレーションの式で定義されていると、ファイル トランスポートを指定すると、たとえば、次の式では実行時にこのエラーが発生します。  
+ この問題が発生したときに、 **BTS します。OutBoundTransportLocation**プロパティがオーケストレーションの式で定義されていると、ファイル トランスポートを指定すると、たとえば、次の式では実行時に、このエラーが発生します。  
   
 ```  
 Message2=Message1;  
@@ -97,7 +97,7 @@ MySendPort(Microsoft.XLANGs.BaseTypes.Address)=Message2(BTS.OutboundTransportLoc
 ```  
   
 ### <a name="cause"></a>原因  
- この問題は、オーケストレーション エンジンは実行時にテキストを削除すると、"**file://"** 指定した URL からです。 したがって、先ほどの例では、"file:///c:/test/out" は \c:\test\out と評価され、"file://mymachine/test/out" は mymachine\test\out と評価されます。  
+ この問題は、実行時にオーケストレーション エンジンは、テキストを削除するために発生します。"**file://"** から指定された URL。 そのため、上記の例を使用して、"file:///c:/test/out"が \c:\test\out として評価され、"file://mymachine/test/out"は \c: として評価されます。  
   
 ### <a name="resolution"></a>解決策  
- URL を指定する場合、 **BTS です。OutBoundTransportLocation**を式でプロパティを追加または削除「/」文字がします。 上記の例を使用して、 **BTS です。OutBoundTransportLocation**プロパティを"file://c:/test/out がまたはに評価される c:\test\out"file:///mymachine/test/out"\\mymachine\test\out として定義すべき\\\mymachine\test\out です。
+ URL を指定する場合、 **BTS します。OutBoundTransportLocation**プロパティを指定する式を追加または削除「/」文字です。 上記の例を使用して、 **BTS します。OutBoundTransportLocation**として"file://c:/test/out"これに評価される c:\test\out または"file:///mymachine/test/out"に評価されるプロパティを定義する必要があります\\\mymachine\test\out します。

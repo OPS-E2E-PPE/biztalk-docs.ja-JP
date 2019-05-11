@@ -1,5 +1,5 @@
 ---
-title: '送信ポートで Edifact メッセージの処理中にエラーが発生しました: 受信者および送信者 id 修飾子の組み合わせの契約 |Microsoft Docs'
+title: 送信ポートで Edifact メッセージの処理中にエラーが発生しました。アグリーメント受信者および送信者 id 修飾子の組み合わせが存在しません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c27bc81b24a9d2850bc895f28020df286da17cba
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2c2937dc29be315ef5298b43a50ab95f52c4573a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021872"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348298"
 ---
-# <a name="a-failure-occurred-in-processing-edifact-message-on-send-port-no-agreement-for-receiver-and-sender-identifier-qualifier-pairs"></a>送信ポートで Edifact メッセージの処理中にエラーが発生しました: 受信者および送信者 id 修飾子の組み合わせのアグリーメントが存在しません
+# <a name="a-failure-occurred-in-processing-edifact-message-on-send-port-no-agreement-for-receiver-and-sender-identifier-qualifier-pairs"></a>送信ポートで Edifact メッセージの処理中にエラーが発生しました。アグリーメント受信者および送信者 id 修飾子の組み合わせが存在しません
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                   |
@@ -30,10 +30,10 @@ ms.locfileid: "37021872"
 |  イベント ソース   |                                      [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                       |
 |    コンポーネント    |                                                                            EDI エンジン                                                                             |
 |  シンボル名  |                                                                                 -                                                                                 |
-|  メッセージ テキスト   | 送信ポートで Edifact メッセージの処理中にエラーが発生しました{0}します。 {1}、{2}、{3}、{4} に対する受信者および送信者の ID と修飾子の組み合わせにはアグリーメントが存在しません。 |
+|  メッセージ テキスト   | 送信ポートで Edifact メッセージの処理中にエラーが発生しました{0}します。 受信者および送信者の識別子と修飾子の組み合わせのアグリーメントが存在しない{1}、 {2}、 {3}、{4}します。 |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、BizTalk Server が、送信者の修飾子と識別子の昇格させたプロパティおよび受信者の修飾子と識別子の昇格させたプロパティを、パーティの対応する値に照合できなかったため、BizTalk Server が EDIFACT インターチェンジのパーティを解決できなかったことを示します。  
+ このエラー/警告/情報イベントは、BizTalk Server が EDIFACT インターチェンジのパーティを照合できなかったため、昇格の送信者の修飾子と識別子のプロパティを解決することができませんでしたと受信者の修飾子と識別子を昇格することを示します。プロパティでは、パーティの対応する値。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、[EDI のプロパティ] ダイアログ ボックスのパーティの [UNB セグメントの定義] ページで定義されている、送信者の修飾子と識別子 (UNB2.1 と UNB2.2) および受信者の修飾子と識別子 (UNB3.1 と UNB3.2) が、インターチェンジのコンテキストで昇格させた対応するプロパティに一致することを確認します。
+ このエラーを解決するには、一致するよう送信者の修飾子と識別子 (UNB2.1 と UNB2.2) および受信者の修飾子と識別子 (UNB3.1 と UNB3.2) が、EDI のプロパティ ダイアログ ボックスのパーティの UNB セグメントの定義 ページで定義されている、対応します。インターチェンジのコンテキストで昇格させたプロパティです。

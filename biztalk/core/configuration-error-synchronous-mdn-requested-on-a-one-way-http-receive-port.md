@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1d0d6e78830c06c11c4c6f54789ba522cfaf366
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a5bdd3f27fa8a4abe5cb9f2ff16310a6e0e85f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004731"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356517"
 ---
-# <a name="configuration-error-synchronous-mdn-requested-on-a-one-way-http-receive-port"></a>構成エラー。 一方向の HTTP 受信ポートで同期 MDN が要求されました
+# <a name="configuration-error-synchronous-mdn-requested-on-a-one-way-http-receive-port"></a>構成エラー。 受信ポートで一方向の HTTP 要求された MDN が同期
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |

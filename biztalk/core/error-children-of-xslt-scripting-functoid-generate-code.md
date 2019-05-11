@@ -1,5 +1,5 @@
 ---
-title: エラー - XSLT スクリプト Functoid の子がコードを生成します |Microsoft ドキュメント
+title: エラー - XSLT スクリプト Functoid の子がコードを生成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 810fe9befecd9bbd1a15468ca714177900450cb7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4111d359c0a764c92fc9736fdd2fcbc879252274
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239554"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388988"
 ---
-# <a name="error---children-of-xslt-scripting-functoid-generate-code"></a>エラー - XSLT スクリプト Functoid の子がコードを生成します
+# <a name="error---children-of-xslt-scripting-functoid-generate-code"></a>エラー - XSLT スクリプト Functoid の子がコードを生成します。
 **エラー コード**  
   
  btm1063  
   
  **説明**  
   
- 使用と矛盾するシナリオ、**スクリプト**インライン XSLT または XSLT 呼び出しテンプレートを使用するように構成されている functoid マップが見つかりました。 送信先スキーマ、このような出力にリンクされているノードの子孫のノードで、**スクリプト**functoid は、自身の XSLT コードを生成しようとしています。  
+ 使用と矛盾するシナリオを**Scripting**マップに functoid のインライン XSLT または XSLT 呼び出しテンプレートを使用するように構成が見つかりました。 送信先スキーマ、このような出力にリンクされているノードの子孫のノードで、 **Scripting** functoid は自身の XSLT コードを生成しようとしています。  
   
  **ユーザーの操作**  
   
- 関連の使用法を変更することで、非互換性を削除する**スクリプト**functoid を変更するか、子ノードが自身の XSLT コードを生成しないようにします。
+ 非互換性を関連する使用状況を変更することで削除**Scripting** functoid を変更するか、子ノードが自身の XSLT コードを生成しないようにします。

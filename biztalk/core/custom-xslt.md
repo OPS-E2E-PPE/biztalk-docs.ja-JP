@@ -1,5 +1,5 @@
 ---
-title: カスタム XSLT |Microsoft ドキュメント
+title: カスタム XSLT |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,17 +22,17 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4adf2abe438b3972419184b1297eaff5578c5bde
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e7ee93d5cd6deb2b7f5a9b291e6670741f301bd6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238346"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390038"
 ---
-# <a name="custom-xslt"></a>カスタム XSLT
-XSLT (Extensible Stylesheet Language Transformations) コードに関する知識がある場合、このコードを使用して、BizTalk マップのカスタマイズ、拡張、または置換を行うことができます。 XSLT を使用する最も簡単な方法は、**スクリプト**functoid です。 **スクリプト**functoid は多くのスクリプトを受け取ります。NET 対応言語、XSLT を含むです。 XSLT を使用しての詳細については、**スクリプト**functoid を参照してください[スクリプトを使用してインラインの XSLT および XSLT 呼び出しテンプレート](../core/scripting-using-inline-xslt-and-xslt-call-templates.md)です。  
+# <a name="custom-xslt"></a>カスタム xslt は上書き
+拡張可能なスタイル シート言語変換 (XSLT) コードに慣れている場合は、カスタマイズ、拡張、または BizTalk マップを置換に使用できます。 XSLT を使用する最も簡単な方法は、 **Scripting** functoid。 **Scripting** functoid は多くのスクリプトを受け取ります。NET が有効な言語、XSLT を含むです。 XSLT を使用しての詳細については、 **Scripting** functoid を参照してください[スクリプトを使用してインラインの XSLT および XSLT 呼び出しテンプレート](../core/scripting-using-inline-xslt-and-xslt-call-templates.md)します。  
   
- あるインスタンス メッセージを別のインスタンス メッセージに変換するために XSLT コードを使用している場合、BizTalk マップの代わりに、直接このコードを使用できます。 XSLT コード マップを BizTalk を置き換えることについてを参照してください[マップなしのマップを作成する方法](../core/how-to-create-a-map-without-maps.md)です。  
+ 使用して別に 1 つのインスタンス メッセージを変換する XSLT コードがある場合は、BizTalk マップの代わりに直接コードを使用できます。 XSLT コード マップを BizTalk を置き換えることについては、参照してください[マップを使用しないでマップを作成する方法](../core/how-to-create-a-map-without-maps.md)します。  
   
 ## <a name="see-also"></a>参照  
  [マップ](../core/maps.md)   

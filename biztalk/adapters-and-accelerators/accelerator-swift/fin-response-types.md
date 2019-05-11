@@ -21,12 +21,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 382e0e628d01903a6274dd3f0321379f71fc7a15
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 80a82b8cf5cab81c9efc05d4db5b4e8c7e090e9c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995403"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377595"
 ---
 # <a name="fin-response-types"></a>FIN 応答の種類
 FIN 応答の調整 (FRR) は、0 ~ 9 のカテゴリ SWIFT FIN メッセージに応答を調整します。 少なくとも 1 つと、場合によっては複数のいずれかの確認 (ACK) を送信する SWIFT FIN アプリケーションは常に FIN メッセージへの応答、否定受信確認 (NAK)。 次の表に、送信および受信のメッセージ型 (応答) FRR によって処理されるメッセージ。  

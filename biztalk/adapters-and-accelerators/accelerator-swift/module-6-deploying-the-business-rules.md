@@ -1,5 +1,5 @@
 ---
-title: 'モジュール 6: ビジネス ルールの展開 |Microsoft Docs'
+title: 第 6 章:ビジネス ルールの展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 389d8038b5a216f90d85399eeefaebde86284c71
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 504857e04fc909dc558b0900f23d0d226d82fcf9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972843"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377151"
 ---
-# <a name="module-6-deploying-the-business-rules"></a>モジュール 6: ビジネス ルールの展開
+# <a name="module-6-deploying-the-business-rules"></a>第 6 章:ビジネス ルールの展開
 このモジュールで、インストール ログを確認、および、ビジネス ルール作成ツールを使用してデプロイを確認します。 ビジネス ルールを展開します。  
   
  ビジネス ルールを使用することを確認するマイクロソフト[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]メッセージは、世界銀行間金融電気通信 (SWIFT) 標準の社会で定義されている書式指定、フィールドの仕様、およびネットワークの検証規則に準拠します。 書式指定が全体としてのメッセージの構造に関連し、フィールドの指定が、メッセージ内の各フィールドについて詳しく説明します。 ネットワーク検証規則は、クロス フィールド検証に適用され、本質的に複雑な。  
@@ -38,6 +38,6 @@ ms.locfileid: "36972843"
   
  このセクションには、次のトピックが含まれています。  
   
--   [レッスン 1: 関連するビジネス ルールを展開する](../../adapters-and-accelerators/accelerator-swift/lesson-1-deploying-the-related-business-rules.md)  
+-   [レッスン 1:関連するビジネス ルールを展開する](../../adapters-and-accelerators/accelerator-swift/lesson-1-deploying-the-related-business-rules.md)  
   
--   [レッスン 2: ビジネス ルール作成ツールを使用して展開を確認する](../../adapters-and-accelerators/accelerator-swift/lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool.md)
+-   [レッスン 2:ビジネス ルール作成ツールを使用して展開を確認する](../../adapters-and-accelerators/accelerator-swift/lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool.md)

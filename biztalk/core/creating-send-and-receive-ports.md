@@ -1,5 +1,5 @@
 ---
-title: 作成する送信ポートと受信ポート |Microsoft ドキュメント
+title: 送信を作成して、受信ポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -23,73 +23,73 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: da4b117ca2d032ef1dc10731128acca903a51790
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 808c3d7295031832852ca40596a77a369aedb507
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24014033"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353574"
 ---
-# <a name="creating-send-and-receive-ports"></a>作成する送信ポートと受信ポート
-次の手順を使用して、BizTalk Adapter for JD Edwards OneWorld 用に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の送信ポートおよび受信ポートを作成します。  
+# <a name="creating-send-and-receive-ports"></a>送信を作成して、受信ポート
+次の手順を使用して作成する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信および受信ポートを BizTalk adapter for JD Edwards OneWorld します。  
   
 ## <a name="creating-a-port"></a>ポートを作成します。  
   
 #### <a name="to-create-a-send-port"></a>送信ポートを作成するには  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk Server**、順にクリック**BizTalk Server 管理コンソール**です。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk Server**、順にクリックします**BizTalk Server 管理**します。  
   
-2.  BizTalk Server 管理コンソールで、次のように展開します**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、を展開**アプリケーション**、の順に展開し、。送信ポートを作成するアプリケーション。  
+2.  BizTalk Server 管理コンソールで  **BizTalk Server 管理**、展開**BizTalk グループ**、展開**アプリケーション**の順に展開し、送信ポートを作成するアプリケーションです。  
   
-3.  右クリック**送信ポート** をクリック**新規**、クリックして**静的な送信請求-応答ポート**です。  
+3.  右クリック**送信ポート**クリック**新規**、順にクリックします**静的な送信請求-応答ポート**します。  
   
-4.  **送信ポートのプロパティ** ダイアログ ボックスで、次の操作します。  
+4.  **送信ポートのプロパティ** ダイアログ ボックスで、次の操作を行います。  
   
     -   **名前**ボックスに、送信ポートの名前を入力 (たとえば、 `SSOSendToJDE OneWorld`)。  
   
-    -   **型**ドロップダウン リストで、 **JDEdwards**です。  
+    -   **型**ドロップダウン リストで、 **JDEdwards**します。  
   
     -   **送信ハンドラー**ドロップダウン リストで、送信ハンドラーのアドレスを選択します。  
   
-    -   **送信パイプライン** **microsoft.biztalk.defaultpipelines.xmltransmit**です。  
+    -   **送信パイプライン**、 **[microsoft.biztalk.defaultpipelines.xmltransmit]** します。  
   
-    -   **受信パイプライン** **microsoft.biztalk.defaultpiplelines.xmlreceive**です。  
+    -   **受信パイプライン**、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** します。  
   
 5.  **[OK]** をクリックします。  
   
-## <a name="creating-a-receive-port"></a>作成する、受信ポート  
+## <a name="creating-a-receive-port"></a>作成、受信ポート  
   
 #### <a name="to-create-a-receive-port"></a>受信ポートを作成するには  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk Server**、順にクリック**BizTalk Server 管理コンソール**です。  
+1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk Server**、順にクリックします**BizTalk Server 管理**します。  
   
-2.  BizTalk Server 管理コンソールで、次のように展開します**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、を展開**アプリケーション**、の順に展開し、。送信ポートを作成するアプリケーション。  
+2.  BizTalk Server 管理コンソールで  **BizTalk Server 管理**、展開**BizTalk グループ**、展開**アプリケーション**の順に展開し、送信ポートを作成するアプリケーションです。  
   
-3.  右クリック**受信ポート** をクリック**新規**、クリックして**一方向の受信ポート**です。  
+3.  右クリック**受信ポート**クリック**新規**、順にクリックします**一方向の受信ポート**します。  
   
-     **一方向受信ポートのプロパティ**画面で、**名前**フィールドに「 `ReceiveFromHttp`、クリックしてして **[ok]** です。  
+     **一方向受信ポートのプロパティ**画面で、**名前**フィールドに「 `ReceiveFromHttp`、順にクリックします**OK**します。  
   
 4.  次の情報を入力、**一方向受信ポートのプロパティ**ウィンドウ。  
   
-    -   **名前**フィールドに「`ReceiveFromHTTP`です。  
+    -   **名前**フィールドに「`ReceiveFromHTTP`します。  
   
-    -   **トランスポートの種類** **HTTP**です。  
+    -   **トランスポートの種類**、 **HTTP**します。  
   
-5.  [アドレス (URI)] の省略記号ボタン ([...]) をクリックします。  
+5.  アドレス (URI) で省略記号 (...) ボタンをクリックします。  
   
      ![](../core/media/siebeladapter-32-ssodemo-httptransport.gif "SiebelAdapter_32_SSODemo_HTTPTransport")  
   
-    1.  仮想ディレクトリと ISAPI 拡張 /mySSODemo/BTSHTTPReceive.dll を設定します。  
+    1.  仮想ディレクトリと ISAPI 拡張、/mySSODemo/BTSHTTPReceive.dll を設定します。  
   
-    2.  選択**関連付けハンドルを返す成功**です。  
+    2.  選択**成功した場合の戻り値の関連付けハンドル**します。  
   
-    3.  選択**を使用してシングル サインオン**、順にクリック**OK**です。  
+    3.  選択**使用してシングル サインオン**、順にクリックします**OK**します。  
   
-6.  **受信ハンドラー**ドロップダウン リストで、 **BizTalkServerIsolatedHost**です。  
+6.  **受信ハンドラー**ドロップダウン リストで、 **BizTalkServerIsolatedHost**します。  
   
      ![](../core/media/siebeladapter-33-ssodemo-receivelocationproperty.gif "SiebelAdapter_33_SSODemo_ReceiveLocationProperty")  
   
-7.  **受信パイプライン** **microsoft.biztalk.defaultpiplelines.xmlreceive**をクリックし、 **ok**です。  
+7.  **受信パイプライン**を選択します**microsoft.biztalk.defaultpiplelines.xmlreceive**、 をクリックし、 **OK**します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk 管理コンソールに、アイテムを追加します。](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)   

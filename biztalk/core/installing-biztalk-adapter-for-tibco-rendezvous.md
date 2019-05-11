@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f1eafd0c4a5ff96c3083d28b23347a2908aa52c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2f00e77a4eb2234265430f3cadc6a8384d768d16
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022104"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382080"
 ---
 # <a name="install-schemas-and-limitations-of-the-tibco-rendezvous-adapter"></a>インストール、スキーマ、および、TIBCO Rendezvous アダプターの制限事項
 
@@ -27,9 +27,9 @@ ms.locfileid: "37022104"
 [インストールし、構成のエンタープライズ アプリケーション アダプター](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md)エンタープライズ アダプターをインストールする手順を含み、キーの情報を知ると、アダプターをインストールする前に、アダプターをインストールした後も含まれます。 
 
 ## <a name="generate-schemas"></a>スキーマを生成します。
-TIBCO Rendezvous システムには、メッセージの種類のリポジトリは含まれていません。 すべてのメッセージの構築と解析は、Rendezvous アプリケーション レベルに組み込まれています。 この制限により、アダプターは、スキーマ生成機能を提供できません。  
+TIBCO Rendezvous システムでは、メッセージの種類のリポジトリは含まれません。 すべてのメッセージの構築と解析が、Rendezvous アプリケーション レベルで埋め込まれています。 この制限により、アダプターは、スキーマ生成機能を提供できません。  
   
-スキーマを記述して、使用する必要があります**既存項目の追加**Visual Studio でオーケストレーション用にインポートします。 スキーマは、BizTalk Server の開発ツールに必要で、Visual Studio での統合において非常に重要な役割を果たします。 BizTalk Server の開発者は、完全なスキーマを作成する必要はなく、最小限のスキーマやその中間のスキーマも作成できます。  
+スキーマを記述して、使用する必要があります**既存項目の追加**Visual Studio でオーケストレーション用にインポートします。 スキーマは、BizTalk Server 開発ツールと Visual Studio での統合のために非常に重要です。 BizTalk Server の開発者は、完全なスキーマ、必要最低限のスキーマまたはとの間のどこかのバージョンの提供を選択できます。  
 
 ## <a name="limitations"></a>制限事項
 
@@ -47,4 +47,4 @@ TIBCO Rendezvous システムには、メッセージの種類のリポジトリ
 - 
   ## <a name="next-step"></a>次の手順
 
-[チュートリアル: Microsoft BizTalk Adapter for TIBCO Rendezvous の使用](../core/tutorials-using-the-microsoft-biztalk-adapter-for-tibco-rendezvous.md)  
+[チュートリアル:TIBCO Rendezvous の Microsoft BizTalk Adapter の使用](../core/tutorials-using-the-microsoft-biztalk-adapter-for-tibco-rendezvous.md)  

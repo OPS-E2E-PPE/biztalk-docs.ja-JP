@@ -12,17 +12,17 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7315b4cd568c6107dcab25cf1fe471428b58da8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c4309e806d81427c0c8003300de27f346c229c5c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014747"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65339435"
 ---
 # <a name="how-to-create-links"></a>リンクを作成する方法
-リンクを作成、**レコード**または**フィールド**ソース スキーマのノードに、**レコード**または**フィールド**送信先スキーマ内のノードは、最も基本的なマップを作成するアクティビティ。 このトピックでは、いくつかのバリエーション (Functoid からのリンクや Functoid へのリンクなど) について、この操作の手順を説明します。 Functoid の使用の詳細については、[Functoid 作成複雑なマッピングを使用した](../core/using-functoids-to-create-more-complex-mappings.md)を参照してください。  
+リンクを作成、**レコード**または**フィールド**ソース スキーマのノードに、**レコード**または**フィールド**送信先スキーマ内のノードは、最も基本的なマップを作成するアクティビティ。 このトピックでは、いくつかのバリエーション (Functoid からのリンクや Functoid へのリンクなど) について、この操作の手順を説明します。 Functoid の使用の詳細については、次を参照してください。 [Functoid 作成複雑なマッピングを使用した](../core/using-functoids-to-create-more-complex-mappings.md)します。  
   
- このトピックの手順は、BizTalk マップが既に開かれ、マップの送信元スキーマと送信先スキーマが選択されていることを前提にしています。 マップを開くと、マップのスキーマの選択の詳細については、[マップ内でプロジェクトを管理する](../core/managing-maps-within-projects.md)を参照してください。  
+ このトピックの手順は、BizTalk マップが既に開かれ、マップの送信元スキーマと送信先スキーマが選択されていることを前提にしています。 マップを開くと、マップのスキーマの選択の詳細については、次を参照してください。[マップ内でプロジェクトを管理する](../core/managing-maps-within-projects.md)します。  
   
 ### <a name="to-create-links-between-field-and-record-nodes"></a>[フィールド] ノードと [レコード] ノードの間のリンクを作成するには  
   
@@ -42,7 +42,7 @@ ms.locfileid: "37014747"
   
 -   またはからには、リンクを作成することはできません、 **Any 要素**、**すべての属性**、**シーケンス グループ**、または**グループの選択**ノード。 これらの種類のノードの詳細については、次のトピックを参照して、参照してください[任意の要素ノード](../core/any-element-nodes.md)、[シーケンス グループ ノード](../core/sequence-group-nodes.md)または[選択したグループ ノード](../core/choice-group-nodes.md)します。  
   
--   必要に応じて、スキーマ ツリーを展開し、マップするフィールドを表示します。 詳細については、[を展開し、スキーマ ツリーを折りたたむ方法](https://msdn.microsoft.com/library/ee253802(v=bts.10).aspx)を参照してください。  
+-   必要に応じて、スキーマ ツリーを展開し、マップするフィールドを表示します。 詳細については、次を参照してください。[を展開し、スキーマ ツリーを折りたたむ方法](https://msdn.microsoft.com/library/ee253802(v=bts.10).aspx)します。  
   
 #### <a name="to-create-links-between-record-or-field-nodes-and-functoids"></a>[レコード] ノードまたは [フィールド] ノードと Functoid の間のリンクを作成するには  
   
@@ -58,7 +58,7 @@ ms.locfileid: "37014747"
     >  Functoid 間にリンクすることはできませんと**Any 要素**ノードまたは**すべての属性**ノード。  
   
     > [!NOTE]
-    >  必要があります最初に追加する functoid をグリッド ページ間のリンクを追加する前に、**レコード**または**フィールド**ノードとその functoid。 グリッド ページに functoid を追加する方法の詳細については、[マップに基本 Functoid を追加する方法](../core/how-to-add-basic-functoids-to-a-map.md)を参照してください。 参照してください[マップへの高度な Functoid の追加](../core/adding-advanced-functoids-to-a-map.md)します。  
+    >  必要があります最初に追加する functoid をグリッド ページ間のリンクを追加する前に、**レコード**または**フィールド**ノードとその functoid。 グリッド ページに functoid を追加する方法の詳細については、次を参照してください。[マップに基本 Functoid を追加する方法](../core/how-to-add-basic-functoids-to-a-map.md)します。 参照してください[マップへの高度な Functoid の追加](../core/adding-advanced-functoids-to-a-map.md)します。  
   
     > [!NOTE]
     >  リンクすることはできません、**フィールド**関連付けられている定数値を持つ送信先スキーマのノード。 その一方で、必須にリンクできます**フィールド**関連付けられている既定値を持つ、送信先スキーマのノード。 マップをテストする場合、既定値が使用されることに注意してください。  

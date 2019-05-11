@@ -2,7 +2,7 @@
 title: BizTalk Server で使用してロジック アプリ アダプター |Microsoft Docs
 description: 受信ポートを作成、受信場所、および BizTalk server 送信ポートを Logic Apps アダプター インストールし、構成
 ms.custom: ''
-ms.date: 06/08/2017
+ms.date: 04/17/2019
 ms.prod: biztalk-server
 ms.reviewer: ''
 ms.suite: ''
@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e13756fb6310b73f8e7fb88c336bdf2a7bbc1372
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 089b1b47e56967afcd779f14bd9074cb60088294
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380624"
 ---
 # <a name="logic-app-adapter"></a>ロジック アプリのアダプター
 
@@ -50,7 +50,7 @@ BizTalk Server が Azure の仮想マシン (VM) にインストールされて�
 - BizTalk Server が、Azure VM にインストールされている VM は、HTTP エンドポイントとして公開されない場合は、インストールし、構成、 [、オンプレミス データ ゲートウェイ](https://azure.microsoft.com/documentation/articles/app-service-logic-gateway-install/)Logic Apps の。 その後、Azure では、[データ ゲートウェイ リソースを作成](https://azure.microsoft.com/documentation/articles/app-service-logic-gateway-connection/)BizTalk Server に接続します。
 - BizTalk Server が、Azure VM にインストールされている VM が HTTP エンドポイントとして公開されている場合は、ゲートウェイがないために必要なまたは使用。 
 
-### <a name="step-1-install-the-logic-app-adapter"></a>手順 1: ロジック アプリのアダプターをインストールします。
+### <a name="step-1-install-the-logic-app-adapter"></a>手順 1:ロジック アプリのアダプターをインストールします。
 
 ロジック アプリのアダプターは個別のダウンロードし、は BizTalk Server のインストールに含まれません。 
 
@@ -70,14 +70,25 @@ BizTalk Server が Azure の仮想マシン (VM) にインストールされて�
 - ロジック アプリのアダプターは、BizTalk 管理コンソールに追加されます。
 - 送信ハンドラーが作成され、BizTalkServerApplication ホストを使用します。
 - 受信ハンドラーは、WCF サービスとして作成され、[biztalkserverisolatedhost] ホストを使用します。
-- `C:\Program Files (x86)\Microsoft BizTalk Server 2016\LogicApp Adapter`フォルダーが作成され、2 つのサービスが含まれています: 管理および ReceiveService します。 
+- `C:\Program Files (x86)\Microsoft BizTalk Server 2016\LogicApp Adapter`フォルダーが作成され、2 つのサービスが含まれています。管理と ReceiveService します。 
 
     **管理**data gateway を使用して BizTalk Server に接続するロジック アプリで BizTalk コネクタによって使用されます。 この管理サービスでは、データ ゲートウェイを使用して Azure ロジック アプリからのメッセージを受信する BizTalk Server を使用します。 このサービスは、BizTalk の受信側でのみ使用されます。 送信側では使用されません。
 
     **ReceiveService**受信場所を入力すると、ロジック アプリで BizTalk コネクタによって使用されます。 **ReceiveService**はロジック アプリからメッセージを送信する責任を負います。 このサービスは、BizTalk の受信側でのみ使用されます。 送信側では使用されません。
 
+#### <a name="using-the-nulladapter-and-logic-app-adapter-together"></a>NullAdapter とロジック アプリのアダプターの併用
+ロジック アプリのアダプターと、NullAdapter をインストールする場合は、次のエラーを参照してください可能性があります。
 
-### <a name="step-2-create-the-iis-applications"></a>手順 2: IIS のアプリケーションを作成します。
+`Another adapter with the same OutboundEngineCLSID value already exists`
+
+アダプター クラスの GUID は、ロジック アプリのアダプターと NullAdapter も同じです。 両方のアダプターが必要な場合は、次のことができます。
+
+1. ダウンロード、 [GitHub のソース コードを NullAdapter](https://github.com/tomasr/nulladapter)します。
+2. GUID を更新、 **NullSendAdapter.cs**クラス。
+3. OutboundEngineCLSID 値を更新、 **NullAdapter.reg**ファイル。 
+4. 構築し、NullAdapter をデプロイします。
+
+### <a name="step-2-create-the-iis-applications"></a>手順 2:IIS アプリケーションを作成します。
 
 IIS アプリケーションは、管理と ReceiveService サービスを使用します。
 
@@ -114,16 +125,16 @@ IIS アプリケーションは、管理と ReceiveService サービスを使用
 3. **[OK]** を選択して変更を保存します。
 
 
-### <a name="step-3-create-a-logic-app"></a>手順 3: ロジック アプリを作成します。
+### <a name="step-3-create-a-logic-app"></a>手順 3:ロジック アプリを作成します。
 
 1. [Azure portal](https://portal.azure.com)、新しいロジック アプリを作成します。
 2. 追加、**ときに HTTP 要求を受信した**トリガーします。
 3. 追加、 **BizTalk Server に JSON からメッセージを準備**アクション。 
-4. **省略可能な**: 選択**のオンプレミス データ ゲートウェイ経由で接続**、」と入力します。 
+4. **省略可能な**:選択**のオンプレミス データ ゲートウェイ経由で接続**、」と入力します。 
 
     | プロパティ | 説明 |
    | --- | --- |
-    | BizTalk Server の URL | IIS アプリケーションの URL での BizTalk 管理の完全修飾ドメイン名 (FQDN) を入力します。 たとえば、入力`http://BizTalkServerName.corp.contoso.com/IISLogicApp/`します。 |
+    | BizTalk Server の URL | IIS アプリケーションの URL での BizTalk 管理の完全修飾ドメイン名 (FQDN) を入力します。 たとえば、`http://BizTalkServerName.corp.contoso.com/IISLogicApp/` と入力します。 |
     | [認証の種類] | 選択**Windows**します。 |
    | Username | IIS アプリケーション プールの id を入力します。 |
    | パスワード | IIS アプリケーション プールのパスワードを入力します。 |
@@ -140,7 +151,7 @@ IIS アプリケーションは、管理と ReceiveService サービスを使用
     > [!NOTE] 
     > この手順では、BizTalk のスキーマに精通してするどのスキーマを把握前提としています。 確認していない場合は、HelloWorld SDK サンプルのデプロイ、ロジック アプリのアダプターを使用するには、そのアイテムを更新し、スキーマとサンプルのメッセージを使用します。 
 
-7. 新しいステップを追加し、選択、 **BizTalk Server のメッセージの送信**アクション。 **受信場所**、ドロップダウン リストから URL を選択するか、ReceiveService IIS アプリケーション URL の完全修飾ドメイン名 (FQDN) を入力します。 たとえば、入力`http://BizTalkServerName.corp.contoso.com/ReceiveWCFService/Service1.svc`します。
+7. 新しいステップを追加し、選択、 **BizTalk Server のメッセージの送信**アクション。 **受信場所**、ドロップダウン リストから URL を選択するか、ReceiveService IIS アプリケーション URL の完全修飾ドメイン名 (FQDN) を入力します。 たとえば、`http://BizTalkServerName.corp.contoso.com/ReceiveWCFService/Service1.svc` と入力します。
 
     > [!TIP] 
     > この正確な URL は受信場所のトランスポート プロパティとして入力することも、受信場所を作成するときに、**パブリック アドレス**([全般] タブ)。
@@ -149,9 +160,9 @@ IIS アプリケーションは、管理と ReceiveService サービスを使用
 
 8. **保存**変更します。 
 
-保存すると、HTTP 要求トリガー URL を自動的に作成します。 この URL をコピーします。必要な**手順 5: メッセージを送信する**します。
+保存すると、HTTP 要求トリガー URL を自動的に作成します。 この URL をコピーします。必要な**手順 5。メッセージを送信する**します。
 
-### <a name="step-4-create-a-receive-port-and-a-receive-location"></a>手順 4: 受信ポートと受信場所を作成します。
+### <a name="step-4-create-a-receive-port-and-a-receive-location"></a>手順 4:受信ポートと受信場所を作成します。
 
 > [!NOTE] 
 > 作成する代わりに、独自の受信ポートし、受信場所は、HelloWorld SDK サンプルを展開できます。 Logic Apps アダプターを使用するアイテムを更新します。 
@@ -165,8 +176,8 @@ IIS アプリケーションは、管理と ReceiveService サービスを使用
     | プロパティ | 目的 |
     | --- | --- |
     | **名前** | 受信ポートの名前を入力します。 たとえば、入力**LAReceivePort**します。 |
-    | **[認証]** | オプション： <br/><ul><li>認証なし: 既定値です。 認証を無効にします。</li><li>認証が失敗した場合は、メッセージを削除します。 認証されていないメッセージを削除するが、認証を有効します。</li><li>認証が失敗した場合は、メッセージを保持します。 認証を有効にすると、認証されていないメッセージを保持するには、このオプションをクリックします。 </li></ul>|
-    | **失敗したメッセージのルーティングを有効にします。** | サブスクライブするアプリケーションの処理に失敗したすべてのメッセージのルーティング (別の受信ポートやオーケストレーション スケジュールなど)。 失敗したメッセージを中断し、否定受信確認応答 (NACK) を生成するには、このオプションをオフにします。 既定値はオフです。 詳細については、[受信ポートの失敗したメッセージのルーティングを有効にする方法](../core/how-to-enable-routing-for-failed-messages-for-a-receive-port.md)を参照してください。|
+    | **[認証]** | オプション: <br/><ul><li>認証なし:既定値です。 認証を無効にします。</li><li>認証が失敗した場合は、メッセージをドロップします。認証されていないメッセージを削除するが、認証を有効にします。</li><li>認証が失敗した場合は、メッセージを保持します。認証を有効にして、認証されていないメッセージを保持するには、このオプションをクリックします。 </li></ul>|
+    | **失敗したメッセージのルーティングを有効にします。** | サブスクライブするアプリケーションの処理に失敗したすべてのメッセージのルーティング (別の受信ポートやオーケストレーション スケジュールなど)。 失敗したメッセージを中断し、否定受信確認応答 (NACK) を生成するには、このオプションをオフにします。 既定値はオフです。 詳細については、次を参照してください。[受信ポートの失敗したメッセージのルーティングを有効にする方法](../core/how-to-enable-routing-for-failed-messages-for-a-receive-port.md)します。|
 
 4. 選択**受信場所**、選び**新規**します。 
 5. 入力、**名前**受信場所の。 たとえば、入力**LAReceiveLoc**します。
@@ -175,25 +186,25 @@ IIS アプリケーションは、管理と ReceiveService サービスを使用
 
     | プロパティ | 目的 |
     | --- | --- |
-    | **アドレス (URI)** | 必須。 BizTalk ReceiveService IIS アプリケーションの URL を入力します (`/YourIISApp2Name/Service1.svc`)。 たとえば、入力`/ReceiveWCFService/Service1.svc`します。 |
-    | **パブリック アドレス** | 必須。 入力`http://<your fully qualified machine name>/YourIISApp2Name/Service1.svc`します。 たとえば、入力`http://btsProd.northamerica.corp.contoso.com/ReceiveWCFService/Service1.svc`します。 <br/><br/>この正確な URL は、受信場所でロジック アプリにも表示されます。|
+    | **アドレス (URI)** | 必須。 BizTalk ReceiveService IIS アプリケーションの URL を入力します (`/YourIISApp2Name/Service1.svc`)。 たとえば、`/ReceiveWCFService/Service1.svc` と入力します。 |
+    | **パブリック アドレス** | 必須。 入力`http://<your fully qualified machine name>/YourIISApp2Name/Service1.svc`します。 たとえば、`http://btsProd.northamerica.corp.contoso.com/ReceiveWCFService/Service1.svc` と入力します。 <br/><br/>この正確な URL は、受信場所でロジック アプリにも表示されます。|
 
 8. **省略可能な**します。 **バインド** タブで、タイムアウトとエンコーディング関係のプロパティを基になる Wcf-webhttp バインディングの構成します。 これらのプロパティは、サイズの大きいメッセージを処理するときに役立ちます。
 
     | プロパティ | 目的 |
     | --- | --- |
-    | オープン タイムアウト | チャネルを開く操作を完了する必要がありますかかる時間間隔を入力します。 この値は、System.TimeSpan.Zero 以上になります。 <br/><br/>既定値:00:01:00<br/>最大値: 23時 59分: 59 |
-    | 送信タイムアウト |送信操作を完了する必要がありますかかる時間間隔を入力します。 この値は、System.TimeSpan.Zero 以上になります。 要求-応答を使用する場合は、受信ポート、クライアントは、サイズの大きいメッセージを返した場合であっても、この値が全体の操作を完了するまでの時間を指定します。 <br/><br/>既定値:00:01:00<br/>最大値: 23時 59分: 59|
-    | クローズ タイムアウト | チャネルを閉じる操作を完了する必要がありますかかる時間間隔を入力します。 この値は、System.TimeSpan.Zero 以上になります。 <br/><br/>既定値:00:01:00<br/>最大値: 23時 59分: 59 |
-    | [最大受信メッセージ サイズ (バイト単位)] | ヘッダーを含む、ネットワーク上で受信するメッセージをバイト単位で最大のサイズを入力します。 メッセージのサイズは、各メッセージに割り当てられたメモリの量によってバインドされています。 このプロパティを使用して、サービス拒否 (DoS) 攻撃にさらされる危険性を制限できます。 <br/><br/>既定値:65536<br/>最大値: 2147483647|
+    | オープン タイムアウト | チャネルを開く操作を完了する必要がありますかかる時間間隔を入力します。 この値は、System.TimeSpan.Zero 以上になります。 <br/><br/>既定値:00:01:00<br/>最大値:23:59:59 |
+    | 送信タイムアウト |送信操作を完了する必要がありますかかる時間間隔を入力します。 この値は、System.TimeSpan.Zero 以上になります。 要求-応答を使用する場合は、受信ポート、クライアントは、サイズの大きいメッセージを返した場合であっても、この値が全体の操作を完了するまでの時間を指定します。 <br/><br/>既定値:00:01:00<br/>最大値:23:59:59|
+    | クローズ タイムアウト | チャネルを閉じる操作を完了する必要がありますかかる時間間隔を入力します。 この値は、System.TimeSpan.Zero 以上になります。 <br/><br/>既定値:00:01:00<br/>最大値:23:59:59 |
+    | [最大受信メッセージ サイズ (バイト単位)] | ヘッダーを含む、ネットワーク上で受信するメッセージをバイト単位で最大のサイズを入力します。 メッセージのサイズは、各メッセージに割り当てられたメモリの量によってバインドされています。 このプロパティを使用して、サービス拒否 (DoS) 攻撃にさらされる危険性を制限できます。 <br/><br/>既定値:65536<br/>最大値:2147483647|
     | [最大同時呼び出し数] | 1 つのサービス インスタンスに対する同時呼び出しの数を入力します。 制限を超える呼び出しはキューに格納されます。 この値を 0 に設定することは、Int32.MaxValue に設定するのと同じです。 <br/><br/>既定値は 200 です。|
 
 9. **省略可能な**します。 **セキュリティ** タブで、任意のセキュリティ プロパティを構成します。 開発目的で、[なし] を選択できます。
 
     | プロパティ | 目的 |
     | --- | --- |
-    | [セキュリティ モード] | オプション：  <br/><br/><ul><li>None: メッセージ セキュリティの管轄外の転送中にします。</li><li>トランスポート: セキュリティは、HTTPS トランスポートを使用して提供します。 SOAP メッセージは、HTTPS を使用してセキュリティ保護されます。 このモードを使用するをセキュリティで保護されたソケット レイヤー (SSL) では、インターネット インフォメーション サービス (IIS) を設定する必要があります。 </li><li>TransportCredentialOnly: 既定値します。 </li></ul> |
-    | トランスポート クライアントの資格情報の種類 | クライアント認証を使用する場合は、資格情報の種類を選択します。 オプション：  <br/><br/><ul><li>None: 認証は行われません、トランスポート レベルでします。</li><li>Basic の場合: 使用して基本認証ユーザー名とパスワードをプレーン テキストでネットワーク経由で送信するには 資格情報に対応するドメイン ユーザー アカウントまたはローカル ユーザー アカウントを作成する必要があります。</li><li>ハッシュ値として、ネットワーク経由でパスワードを送信するダイジェスト: はダイジェスト認証です。 Windows Server オペレーティング システムの認証を実行するドメイン コント ローラーのドメインに対してのみ使用できます。 クライアントの資格情報に対応するドメイン ユーザー アカウントまたはローカル ユーザー アカウントを作成する必要があります。</li><li>Ntlm: 既定値します。 クライアントは、受信場所にこのパスワードを送信せずに資格情報を送信します。 クライアントの資格情報に対応するドメイン ユーザー アカウントまたはローカル ユーザー アカウントを作成する必要があります。</li><li>Windows: Windows 統合認証はネゴシエート Kerberos または NTLM、Kerberos をドメインが存在する場合よりも優先されます。 Kerberos を使用するには、クライアントがサービス プリンシパル名 (SPN) でサービスを識別する必要があります。 クライアントの資格情報に対応するドメイン ユーザー アカウントまたはローカル ユーザー アカウントを作成する必要があります。</li><li>証明書: クライアント証明書を使用します。 CA の証明書チェーンがこのクライアントを認証できるように、このコンピューターの信頼されたルート証明機関の証明書ストアにクライアントの X.509 証明書をインストールする必要がありますの受信場所。</li><li>InheritedFromHost</li></ul> |
+    | [セキュリティ モード] | オプション:  <br/><br/><ul><li>None:メッセージは転送中にセキュリティ保護されません。</li><li>トランスポート:セキュリティは、HTTPS トランスポートを使用して提供されます。 SOAP メッセージは、HTTPS を使用してセキュリティ保護されます。 このモードを使用するをセキュリティで保護されたソケット レイヤー (SSL) では、インターネット インフォメーション サービス (IIS) を設定する必要があります。 </li><li>TransportCredentialOnly:既定値です。 </li></ul> |
+    | トランスポート クライアントの資格情報の種類 | クライアント認証を使用する場合は、資格情報の種類を選択します。 オプション:  <br/><br/><ul><li>None:トランスポート レベルでは、認証は行われません。</li><li>基本的な：基本認証を使用して、ユーザー名とパスワードをプレーン テキストでネットワーク経由で送信します。 資格情報に対応するドメイン ユーザー アカウントまたはローカル ユーザー アカウントを作成する必要があります。</li><li>ダイジェスト:パスワードをハッシュ値として、ネットワーク経由で送信するのにには、ダイジェスト認証を使用します。 Windows Server オペレーティング システムの認証を実行するドメイン コント ローラーのドメインに対してのみ使用できます。 クライアントの資格情報に対応するドメイン ユーザー アカウントまたはローカル ユーザー アカウントを作成する必要があります。</li><li>Ntlm:既定値です。 クライアントは、受信場所にこのパスワードを送信せずに資格情報を送信します。 クライアントの資格情報に対応するドメイン ユーザー アカウントまたはローカル ユーザー アカウントを作成する必要があります。</li><li>Windows:Windows 統合認証はネゴシエート Kerberos または NTLM、Kerberos をドメインが存在する場合よりも優先されます。 Kerberos を使用するには、クライアントがサービス プリンシパル名 (SPN) でサービスを識別する必要があります。 クライアントの資格情報に対応するドメイン ユーザー アカウントまたはローカル ユーザー アカウントを作成する必要があります。</li><li>証明書:クライアント証明書を使用します。 CA の証明書チェーンがこのクライアントを認証できるように、このコンピューターの信頼されたルート証明機関の証明書ストアにクライアントの X.509 証明書をインストールする必要がありますの受信場所。</li><li>InheritedFromHost</li></ul> |
     | [シングル サインオンを使用する] | |
 
 
@@ -208,7 +219,7 @@ IIS アプリケーションは、管理と ReceiveService サービスを使用
 
 [受信場所を管理する](../core/managing-receive-locations.md)追加のプロパティについて説明します。 
 
-### <a name="step-5-send-a-message"></a>手順 5: メッセージを送信します。
+### <a name="step-5-send-a-message"></a>手順 5:メッセージを送信します。
 
 1. Fiddler または Postman (またはに応じて) を開きます。
 2. ロジック アプリからの要求トリガーの URL を貼り付けます。 手順 3 では、この URL をコピーします。 
@@ -223,7 +234,7 @@ IIS アプリケーションは、管理と ReceiveService サービスを使用
 
 ## <a name="send-messages-to-a-logic-app"></a>ロジック アプリにメッセージを送信します。
 
-### <a name="step-1-install-the-logic-apps-adapter"></a>手順 1: Logic Apps アダプターをインストールします。
+### <a name="step-1-install-the-logic-apps-adapter"></a>手順 1:Logic Apps アダプターをインストールします。
 
 Logic Apps アダプターでは、個別のダウンロードしは、BizTalk Server のインストールに含まれていません。
 
@@ -236,10 +247,10 @@ Logic Apps アダプターでは、個別のダウンロードしは、BizTalk S
 - ロジック アプリのアダプターは BizTalk 管理コンソールに追加されます。
 - 送信ハンドラーが作成され、BizTalkServerApplication ホストを使用します。
 - 受信ハンドラーは、WCF サービスとして作成され、[biztalkserverisolatedhost] ホストを使用します。
-- `C:\Program Files (x86)\Microsoft BizTalk Server 2016\LogicApp Adapter`フォルダーが作成され、2 つのサービスが含まれています: 管理および ReceiveService します。 これらのサービスは、メッセージを送信するロジック アプリには使用されません。 
+- `C:\Program Files (x86)\Microsoft BizTalk Server 2016\LogicApp Adapter`フォルダーが作成され、2 つのサービスが含まれています。管理と ReceiveService します。 これらのサービスは、メッセージを送信するロジック アプリには使用されません。 
 
 
-### <a name="step-2-create-a-logic-app"></a>手順 2: ロジック アプリを作成します。
+### <a name="step-2-create-a-logic-app"></a>手順 2:ロジック アプリを作成します。
 
 1. [Azure portal](https://portal.azure.com)、新しいロジック アプリを作成します。
 2. 追加、**ときに HTTP 要求を受信した**トリガー
@@ -251,7 +262,7 @@ Logic Apps アダプターでは、個別のダウンロードしは、BizTalk S
 5. ロジック アプリを保存するときに自動的に作成される HTTP POST の URL をコピーします。次の手順では、この URL をする必要があります。 URL を表示するロジック アプリを閉じて再度開くことがあります。  
 
 
-### <a name="step-3-create-a-send-port"></a>手順 3: 送信ポートを作成します。
+### <a name="step-3-create-a-send-port"></a>手順 3:送信ポートを作成します。
 
 ロジック アプリへのメッセージを送信する BizTalk Server、ロジック アプリがいる必要があります、**手動**トリガーなど、**手動 - ときに HTTP 要求を受信した**します。 
 
@@ -261,7 +272,7 @@ Logic Apps アダプターでは、個別のダウンロードしは、BizTalk S
 4. **型**を選択します**LogicApp**を選択し、一覧から、**構成**ボタンをクリックします。 
 5. **全般** タブで、構成、**のコールバック URI**のロジック アプリ トリガー。 これには 2 つの方法があります。 
 
-    **オプション 1** : 前の手順でコピーした、HTTP POST の URL を貼り付け、**トリガー (コールバック URI)** プロパティ。 次の手順を使用して URI をコピーすることもできます。  
+    **オプション 1** :前の手順でコピーした、HTTP POST の URL を貼り付け、**トリガー (コールバック URI)** プロパティ。 次の手順を使用して URI をコピーすることもできます。  
   
    1. [Azure portal](https://portal.azure.com)、Logic Apps デザイナー (編集モード) でロジック アプリを開きます。 
    2. 選択、**ときに HTTP 要求を受信した**カード、およびコピー、 **URL**します。 
@@ -270,16 +281,16 @@ Logic Apps アダプターでは、個別のダウンロードしは、BizTalk S
       > [!TIP] 
       > この URI を取得するのに、管理 Api を使用することもできます。
 
-      **オプション 2** : トリガーのコールバック URI がわからない場合は、選択**構成**、し、Azure にサインインします。 次に、ドロップダウン リストを使用して、選択、**サブスクリプション**、**リソース グループ**、**ロジック アプリ**、および**トリガー**します。
+      **オプション 2** :トリガーのコールバック URI がわからない場合は、選択**構成**、し、Azure にサインインします。 次に、ドロップダウン リストを使用して、選択、**サブスクリプション**、**リソース グループ**、**ロジック アプリ**、および**トリガー**します。
  
 6. **省略可能な**します。 **バインド** タブで、タイムアウトとエンコーディング関係のプロパティを基になる Wcf-webhttp バインディングの構成します。 これらのプロパティは、サイズの大きいメッセージを処理するときに役立ちます。
 
     | プロパティ | 目的 |
     | --- | --- |
-    | オープン タイムアウト | チャネルを開く操作を完了する必要がありますかかる時間間隔を入力します。 この値は、System.TimeSpan.Zero 以上になります。 <br/><br/>既定値:00:01:00<br/>最大値: 23時 59分: 59 |
-    | 送信タイムアウト |送信操作を完了する必要がありますかかる時間間隔を入力します。 この値は、System.TimeSpan.Zero 以上になります。 要求-応答を使用する場合は、受信ポート、クライアントは、サイズの大きいメッセージを返した場合であっても、この値が全体の操作を完了するまでの時間を指定します。 <br/><br/>既定値:00:01:00<br/>最大値: 23時 59分: 59|
-    | クローズ タイムアウト | チャネルを閉じる操作を完了する必要がありますかかる時間間隔を入力します。 この値は、System.TimeSpan.Zero 以上になります。 <br/><br/>既定値:00:01:00<br/>最大値: 23時 59分: 59 |
-    | [最大受信メッセージ サイズ (バイト単位)] | ヘッダーを含む、ネットワーク上で受信するメッセージをバイト単位で最大のサイズを入力します。 メッセージのサイズは、各メッセージに割り当てられたメモリの量によってバインドされています。 このプロパティを使用して、サービス拒否 (DoS) 攻撃にさらされる危険性を制限できます。 <br/><br/>ロジック appa アダプター活用して、 [WebHttpBinding クラス](https://msdn.microsoft.com/library/system.servicemodel.webhttpbinding.aspx)エンドポイントとの通信に、バッファリングされた送信モードでします。 バッファリングされたトランスポート モードの場合、 [WebHttpBinding.MaxBufferSize](https://msdn.microsoft.com/library/system.servicemodel.webhttpbinding.maxbuffersize.aspx)プロパティは常にこのプロパティの値を等しくします。  <br/><br/>既定値:65536<br/>最大値: 2147483647 |
+    | オープン タイムアウト | チャネルを開く操作を完了する必要がありますかかる時間間隔を入力します。 この値は、System.TimeSpan.Zero 以上になります。 <br/><br/>既定値:00:01:00<br/>最大値:23:59:59 |
+    | 送信タイムアウト |送信操作を完了する必要がありますかかる時間間隔を入力します。 この値は、System.TimeSpan.Zero 以上になります。 要求-応答を使用する場合は、受信ポート、クライアントは、サイズの大きいメッセージを返した場合であっても、この値が全体の操作を完了するまでの時間を指定します。 <br/><br/>既定値:00:01:00<br/>最大値:23:59:59|
+    | クローズ タイムアウト | チャネルを閉じる操作を完了する必要がありますかかる時間間隔を入力します。 この値は、System.TimeSpan.Zero 以上になります。 <br/><br/>既定値:00:01:00<br/>最大値:23:59:59 |
+    | [最大受信メッセージ サイズ (バイト単位)] | ヘッダーを含む、ネットワーク上で受信するメッセージをバイト単位で最大のサイズを入力します。 メッセージのサイズは、各メッセージに割り当てられたメモリの量によってバインドされています。 このプロパティを使用して、サービス拒否 (DoS) 攻撃にさらされる危険性を制限できます。 <br/><br/>ロジック appa アダプター活用して、 [WebHttpBinding クラス](https://msdn.microsoft.com/library/system.servicemodel.webhttpbinding.aspx)エンドポイントとの通信に、バッファリングされた送信モードでします。 バッファリングされたトランスポート モードでは、 [WebHttpBinding.MaxBufferSize](https://msdn.microsoft.com/library/system.servicemodel.webhttpbinding.maxbuffersize.aspx) プロパティは常にこのプロパティの値と等しくなります。  <br/><br/>既定値:65536<br/>最大値:2147483647 |
 
 
 7. **省略可能な**します。 **メッセージ** タブで、使用、**送信 HTTP ヘッダー**プロパティを送信メッセージにカスタム ヘッダーを追加します。 
@@ -287,7 +298,7 @@ Logic Apps アダプターでは、個別のダウンロードしは、BizTalk S
 
 [送信ポートと送信ポート グループを管理する](../core/managing-send-ports-and-send-port-groups.md)追加の送信ポートのプロパティについて説明します。 
 
-### <a name="step-4-send-some-messages"></a>手順 4: 一部のメッセージを送信します。
+### <a name="step-4-send-some-messages"></a>手順 4:一部のメッセージを送信します。
 
 受信ポートと受信場所がファイル アダプターを使用して作成できます。 ロジック アプリが有効になっていることを確認します。
 

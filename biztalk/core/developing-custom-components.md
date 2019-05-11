@@ -1,5 +1,5 @@
 ---
-title: カスタム コンポーネントの開発 |Microsoft ドキュメント
+title: カスタム コンポーネントの開発 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b61144b2acaf787d56468c23c04835b5ad79324
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 576b5bb869e10d90fa44083456b0a2650fbc3ebd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239266"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389806"
 ---
 # <a name="developing-custom-components"></a>カスタム コンポーネントの開発
-BizTalk Server のカスタム コンポーネントは、BizTalk Server の特定のインフラストラクチャ要素を変更または拡張するために開発および使用されます。  主などが含まれます: 送信または受信アダプターはアダプター フレームワークに基づいており、特定のトランスポート プロトコルを処理するために使用します。送信のいずれかで使用されるコンポーネントをパイプラインまたは受信パイプラインのステージです。および functoid のマップで使用します。  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をカスタム コードで拡張するには、いくつかの方法があります。 この方法については、以下のトピックで説明します。  
+BizTalk Server でのカスタム コンポーネントの開発し、変更または BizTalk Server の特定のインフラストラクチャ要素を拡張するために使用します。  主などが含まれます: 送信または受信アダプター コンポーネントは、アダプター フレームワークに基づいており、特定のトランスポート プロトコルを処理するために使用します。送信のいずれかで使用されるコンポーネントをパイプラインまたは受信パイプラインのステージ。functoid のマップで使用します。  拡張する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]いくつかの方法でカスタム コードを使用します。 次のトピックでは、これを行う方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

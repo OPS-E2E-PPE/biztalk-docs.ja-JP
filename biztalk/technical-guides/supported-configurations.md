@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 838f390b7118cb13e709f8a48bf69dc6e69f7836
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b4355d689de69b467dd98fb32c9d48f74cfac604
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015377"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400648"
 ---
 # <a name="supported-configurations"></a>サポートされている構成
 一般に、サポートされる構成[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]監視管理パックは、次の場所で説明します。  

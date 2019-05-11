@@ -12,15 +12,15 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5ffe09d7096e27111fc2db5cc2eff33b2d2713e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 93eb1bbb4e1a43d8cb9ff7e2a97cb2a6610c6687
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970075"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389383"
 ---
 # <a name="edi-receive-components"></a>EDI の受信コンポーネント
-このトピックでは、EDI/AS2 メッセージ以外の EDI メッセージを処理するパイプラインおよびパイプライン コンポーネントについて説明します。 受信した edi/as2 または非 edi/as2 メッセージの処理については、[AS2 の受信コンポーネント](../core/as2-receive-components.md)を参照してください。 AS2 の受信コンポーネントは、AS2 の処理だけではなく、EDI の処理も実行します。  
+このトピックでは、EDI/AS2 メッセージ以外の EDI メッセージを処理するパイプラインおよびパイプライン コンポーネントについて説明します。 受信した edi/as2 または非 edi/as2 メッセージの処理については、次を参照してください。 [AS2 の受信コンポーネント](../core/as2-receive-components.md)します。 AS2 の受信コンポーネントは、AS2 の処理だけではなく、EDI の処理も実行します。  
   
 ## <a name="edi-receive-pipeline"></a>EDI 受信パイプライン  
  EDI の受信処理は、EDI 受信パイプラインで実行されます。 このパイプラインは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] の Microsoft.BizTalk.Edi.EdiPipelines.dll にインストールされます。 このパイプラインは、任意のトランスポート経由で受信した EDI メッセージを処理します。 HTTP 経由で受信した AS2 でエンコードされた EDI メッセージは処理されません。 AS2 でエンコードされた EDI メッセージの処理は、AS2 パイプラインで実行されます。 AS2 受信パイプラインは、EDI メッセージの処理に EDI パイプラインと同じコンポーネントを使用します。  
@@ -38,7 +38,7 @@ ms.locfileid: "36970075"
  EDIReceive パイプラインでは、次のパイプライン コンポーネントが使用されます。 これらのコンポーネントが microsoft.biztalk.edi.pipelinecomponents.dll にインストールされている[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]パイプライン コンポーネント\\します。  
   
 ### <a name="edi-disassembler"></a>EDI 逆アセンブラー  
- EDI 逆アセンブラーは、EDIReceive パイプラインにおいて、受信した EDI エンコード インターチェンジの処理の大部分を行います。 EDI 逆アセンブラーが EDI メッセージを処理する方法については、[、EDI 逆アセンブラーのしくみ](../core/how-the-edi-disassembler-works.md)を参照してください。  
+ EDI 逆アセンブラーは、EDIReceive パイプラインにおいて、受信した EDI エンコード インターチェンジの処理の大部分を行います。 EDI 逆アセンブラーが EDI メッセージを処理する方法については、次を参照してください。 [、EDI 逆アセンブラーのしくみ](../core/how-the-edi-disassembler-works.md)します。  
   
 ### <a name="batchmarker"></a>BatchMarker  
  BatchMarker パイプライン コンポーネントは、バッチ化されたインターチェンジの処理に必要な BatchId、ToBeBatched、および ToBeRouted の各コンテキスト プロパティを昇格させることにより、インターチェンジをバッチ処理できるように準備します。 BatchMarker コンポーネントがこれらのプロパティを設定する方法は、バッチ要素をサブスクライブしている取引先アグリーメントの数によって決まります。  

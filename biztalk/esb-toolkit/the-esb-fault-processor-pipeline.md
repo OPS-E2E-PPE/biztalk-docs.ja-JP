@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1eb33c091c064c8a94939a8b9f2f0ee37f75881b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 03a31833947c755e2434c563a28412427af901fc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015430"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399809"
 ---
 # <a name="the-esb-fault-processor-pipeline"></a>ESB エラー プロセッサ パイプライン
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]という名前のすべての送信ポートをインストールします。例外、ESBFaultProcessor を使用する送信パイプラインです。 図 1 は、すべてのプロパティを示します。例外は、ポートを送信します。  
@@ -28,7 +28,7 @@ ms.locfileid: "37015430"
   
  **すべての構成。例外の送信ポート、ESBFaultProcessor パイプラインの使用を含む**  
   
- ESBFaultProcessor パイプラインには、次のパイプライン コンポーネントが含まれています: ESB 例外エンコーダー、ESB ビジネス アクティビティ監視 (BAM) 追跡ツール、および ESB を変換します。  
+ ESBFaultProcessor パイプラインには、次のパイプライン コンポーネントが含まれています。ESB 例外エンコーダー、ESB ビジネス アクティビティ監視 (BAM) 追跡ツール、および ESB 変換します。  
   
  すべて。例外は、ポートをサブスクライブするすべての ESB エラー メッセージと BizTalk 失敗のメッセージのルーティング メカニズムによって生成されたすべてのメッセージを送信します。 図 2 は、すべてのプロパティの設定、フィルターを示します。例外は、ポートを送信します。  
   

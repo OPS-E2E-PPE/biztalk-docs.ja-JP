@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39d1d6b29c7f0b2b7704d6634b49b93a0aede738
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 53e1811e30ed1c74023b4402bcfc0f0d86b2c516
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343327"
 ---
 # <a name="how-to-add-accounts-to-a-view"></a>アカウントをビューに追加する方法
 管理者を使用して、**アカウントの追加**BAM ビューにユーザーを関連付けるし、BAM Excel ワークシートを不正アクセスから保護するコマンド。 ユーザーが BAM ビューを保存するときに、ビューはブック内で非表示になっている SQL 接続文字列を参照します。 ブックは保護されていますが、さらにドキュメントが確実に保護されるようにする必要があります。  
@@ -31,11 +31,11 @@ ms.locfileid: "36985443"
 > [!IMPORTANT]
 >  リアルタイム集計 (Rta) を使用している場合で追加されたユーザー**アカウントの追加**SQL Server を実行しているコンピューターへのログオン権限を自動的に付与することはできません。 RTA を使用している場合は、RTA のビューを表示しなければならないすべてのユーザーを含む、Windows ユーザー グループの作成を検討してください。 そのグループ、BAM プライマリ インポート データベースをホストする SQL server で SQL Server ログオン権限を明示的に許可します。  
   
- BAM ビューを表示する方法については、[BAM ビューをリストする方法](../core/how-to-list-bam-views.md)を参照してください。  
+ BAM ビューを表示する方法については、次を参照してください。 [BAM ビューをリストする方法](../core/how-to-list-bam-views.md)します。  
   
 ### <a name="to-add-an-account-to-a-view"></a>アカウントをビューに追加するには  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
 2. コマンド プロンプトで「[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking」と入力して、追跡フォルダーに移動し、 **Enter**キーを押します。  
   

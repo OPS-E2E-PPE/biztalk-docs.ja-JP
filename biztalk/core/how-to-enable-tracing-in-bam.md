@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e116087d0c560822d8a0cc64c0719fe7ba4d6e85
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7cb5aaa9e1876637a78a36f77aa4cb63aa56ce0d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000811"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385075"
 ---
 # <a name="how-to-enable-tracing-in-bam"></a>BAM のトレースを有効にする方法
 BAM のトレースを有効にすると、次の 5 つの BAM コンポーネント内で発生した問題のトラブルシューティングに役立ちます。  
@@ -42,7 +42,7 @@ BAM のトレースを有効にすると、次の 5 つの BAM コンポーネ�
   
  以下に例を示します。  
   
- **bm.exe deploy-all DefinitionFile:PO.xml – トレース: 上**  
+ **bm.exe deploy-all -DefinitionFile:PO.xml –Trace:On**  
   
 ### <a name="using-the-configuration-file"></a>構成ファイルの使用  
  [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking フォルダーにある BM.exe.config 構成ファイルを変更することによって、トレースを有効にすることができます。 このファイルが含まれています、 **system.diagnostics**セクション トレース要素が含まれます。 このセクションのコメントを解除すると、トレースが有効になります。 既定では、トレースは無効になっています。  
@@ -224,7 +224,7 @@ BAM のトレースを有効にすると、次の 5 つの BAM コンポーネ�
 >  トレースはパフォーマンスに影響することがあります。 トレースを有効にするのは、トラブルシューティングの操作を実行する場合に限ってください。  
   
 ### <a name="viewing-the-wcf-trace-file"></a>WCF トレース ファイルの表示  
- WCF トレースを分析するには、WCF Service Trace Viewer ツールを使用します。 サービス トレース ビューアー ツールの詳細については、[ http://go.microsoft.com/fwlink/?LinkId=75218](http://go.microsoft.com/fwlink/?LinkId=75218)を参照してください。  
+ WCF トレースを分析するには、WCF Service Trace Viewer ツールを使用します。 サービス トレース ビューアー ツールの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=75218](http://go.microsoft.com/fwlink/?LinkId=75218)します。  
   
 ## <a name="see-also"></a>参照  
  [BAM の管理](../core/managing-bam.md)

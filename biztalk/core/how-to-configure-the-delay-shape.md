@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c00e002418dac53295828a4cbed632a6de0c235
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bdfe0ca86475f3d330faea1fa5cd084fa3af4910
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993651"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386125"
 ---
 # <a name="how-to-configure-the-delay-shape"></a>遅延図形を構成する方法
 ![](../core/media/ebiz-orch-delay.gif "ebiz_orch_delay")  
@@ -56,4 +56,4 @@ ms.locfileid: "36993651"
   
 1.  BizTalk 式エディターが表示されていない場合を右クリックし、 **遅延** 図形を **遅延の編集**, は、[プロパティ] ウィンドウで、 **省略記号** (**...**) ボタンをクリックして、 **式** プロパティです。  
   
-2.  BizTalk 式エディターで、作成を返す式、 **System.DateTime**オブジェクトまたは**System.TimeSpan**オブジェクト。 詳細については、[式の要件と制限](../core/requirements-and-limitations-for-expressions.md)を参照してください。
+2.  BizTalk 式エディターで、作成を返す式、 **System.DateTime**オブジェクトまたは**System.TimeSpan**オブジェクト。 詳細については、次を参照してください。[式の要件と制限](../core/requirements-and-limitations-for-expressions.md)します。

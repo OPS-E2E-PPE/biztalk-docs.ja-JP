@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ef251a7e9af04245d1987e2d196a03f7c01b911
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7311ac672b3d1ef2eb06350fa07911751bac00b4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349161"
 ---
 # <a name="error-ack-generation-has-failed-as-maximum-limit-of-x12-transaction-global"></a>X12 グローバル トランザクションの上限エラー確認の生成に失敗しました
 ## <a name="details"></a>詳細  

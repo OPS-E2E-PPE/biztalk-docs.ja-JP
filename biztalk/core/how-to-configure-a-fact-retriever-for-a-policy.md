@@ -1,5 +1,5 @@
 ---
-title: ポリシーのファクト取得コンポーネントを構成する方法 |Microsoft ドキュメント
+title: ポリシーのファクト取得コンポーネントを構成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,29 +16,29 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 18572af1323de817b3c934866af917d2601332f3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7095ae5a03b6c3aec2d4f66db2563e7a6986fb39
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22247098"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65342292"
 ---
 # <a name="how-to-configure-a-fact-retriever-for-a-policy"></a>ポリシーのファクト取得コンポーネントを構成する方法
-変更される頻度の低いファクトを保存しておくことができます。ホスト アプリケーションの初回実行サイクルの前に、これらのファクトをストレージから取得し、1 度だけルール エンジンに適用することにより、それ以降の複数の実行サイクルで、キャッシュされたファクトが再利用されます。  
+多くの場合、変更されないファクトを保存して、ホスト アプリケーションの初回実行サイクル、前に、ストレージからこれらの情報を取得、キャッシュ、ルール エンジンに 1 度だけでき、複数の実行サイクルで再利用します。  
   
- ファクト取得コンポーネントとポリシーは、2 つの方法で関連付けることができます。 ことができますか、このビジネス ルール作成ツールを使用してプログラムを使用して、 **RuleSetExecutionConfiguration**オブジェクト。  
+ ファクト取得コンポーネントをポリシーに関連付ける 2 つの方法はあります。 こうことをビジネス ルール作成ツールを使用するかを使用してプログラムで、 **RuleSetExecutionConfiguration**オブジェクト。  
   
 > [!NOTE]
->  1 つのポリシー バージョンには、ファクト取得コンポーネントの実装を 1 つだけ関連付けることができます。  
+>  1 つのみのファクト取得コンポーネントの実装は、ポリシーのバージョンを関連付けることができます。  
   
-### <a name="to-associate-a-fact-retriever-with-a-policy-in-the-business-rule-composer"></a>ビジネス ルール作成ツールを使用してファクト取得コンポーネントをポリシーに関連付けるには  
+### <a name="to-associate-a-fact-retriever-with-a-policy-in-the-business-rule-composer"></a>ビジネス ルール作成ツールでポリシーをファクト取得コンポーネントを関連付ける  
   
-1.  [ポリシー エクスプローラー] ウィンドウで、ファクト取得コンポーネントを関連付けるポリシー バージョンをクリックします。  
+1.  ポリシー エクスプ ローラー ウィンドウで、ファクト取得コンポーネントを関連付けるポリシー バージョンをクリックします。  
   
-2.  [プロパティ] ウィンドウ、**省略記号**ボタン ([...]) で、 **FactRetriever**ファクト取得コンポーネント オブジェクトのグローバル アセンブリ キャッシュ内で参照するプロパティです。  
+2.  プロパティ ウィンドウで、**省略記号**ボタン (...)、 **FactRetriever**ファクト取得コンポーネントのオブジェクトのグローバル アセンブリ キャッシュに参照するプロパティ。  
   
     > [!IMPORTANT]
-    >  **省略記号**ボタン (...) をクリックするまでは表示されません、 **FactRetriever**プロパティ ウィンドウ内の行。  
+    >  **省略記号**ボタン (…) をクリックするまでは表示されません、 **FactRetriever**プロパティ ウィンドウ内の行。  
   
 ## <a name="see-also"></a>参照  
  [ファクト取得コンポーネントを作成する方法](../core/how-to-create-a-fact-retriever.md)

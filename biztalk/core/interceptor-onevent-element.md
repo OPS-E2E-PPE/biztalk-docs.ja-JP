@@ -1,5 +1,5 @@
 ---
-title: インターセプタ OnEvent 要素 |Microsoft ドキュメント
+title: インターセプター OnEvent 要素 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,39 +12,39 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6fb70b2536dbf5db5b0abc03bc194de154b4317
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c849da92941690b7987cd2aff2f1d10714142b9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257610"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381941"
 ---
 # <a name="interceptor-onevent-element"></a>インターセプタ OnEvent 要素
 **OnEvent**要素が外側の BAM アクティビティにマップされている実際のイベントについて説明します。  
   
-## <a name="format"></a>Format  
- `OnEvent` 要素には、イベント フィルタ、関連付け ID を指定する子要素が含まれています。オプションで、更新するデータ、参照データ、継続トークンを指定する子要素が含まれていることもあります。  
+## <a name="format"></a>形式  
+ `OnEvent`要素には、イベント フィルタ、関連付け ID を指定する子要素が含まれていて、必要に応じて、データの参照を更新するには、どのデータと継続トークンです。  
   
 ### <a name="attributes"></a>属性  
   
-|属性名|Description|  
+|属性名|説明|  
 |--------------------|-----------------|  
-|名前|このイベントのユーザー定義の名前です。|  
+|名前|このイベントのユーザー定義名。|  
 |ソース|イベントの名前に表示されるソース、 **EventSource**要素。|  
-|IsBegin|イベントが新しい BAM アクティビティを開始するか (`true`)、開始しないか (`false`) を示すブール値です。|  
-|IsEnd|イベントが BAM アクティビティを終了するか (`true`)、終了しないか (`false`) を示すブール値です。|  
+|IsBegin|イベントが新しい BAM アクティビティの先頭であるかどうかを示すブール値 (`true`) かどうか (`false`)。|  
+|IsEnd|イベントが BAM アクティビティの末尾かどうかを示すブール値 (`true`) かどうか (`false`)。|  
   
 ### <a name="child-elements"></a>子要素  
   
-|実行状態|Description|  
+|実行状態|説明|  
 |----------------------|-----------------|  
-|[フィルター]|イベントを特定の条件に限定する方法を提供します。|  
-|CorrelationID|関連付け ID (アクティビティ インスタンス ID) を指定します。|  
-|ContinuationToken|継続トークンを指定します。これは、将来のイベントにおいて、同じアクティビティ インスタンスに使用される関連付け ID です。|  
-|Update|イベントから抽出して BAM アクティビティにインポートするデータを指定します。|  
+|Assert|特定の条件にイベントを制限する方法を提供します。|  
+|CorrelationID|相関 ID (アクティビティ インスタンス ID) を指定します。|  
+|ContinuationToken|継続トークン、将来のイベントと同じアクティビティになることによって使用される関連付け ID を指定します。|  
+|更新|イベントから抽出し、BAM アクティビティをインポートするデータを指定します。|  
 |リファレンス|BAM アクティビティにリレーションシップを追加します。|  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>コメント  
   
 ## <a name="example"></a>例  
  次の例は、一般的な**OnEvent** WF のブロック。  
@@ -90,7 +90,7 @@ ms.locfileid: "22257610"
 </ic:OnEvent>  
 ```  
   
- この例は、一般的な**OnEvent** WCF サービスをブロックします。  
+ この例で、一般的なは**OnEvent** WCF サービスのブロック。  
   
 ```  
 <ic:OnEvent IsBegin="true" IsEnd ="false" Name ="AuthorizationRequestService" Source="ESCreditCardService">  
@@ -132,9 +132,9 @@ ms.locfileid: "22257610"
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [Assert](../core/filter.md)  
+-   [[フィルター]](../core/filter.md)  
   
--   [関連付け Id](../core/correlationid.md)  
+-   [CorrelationID](../core/correlationid.md)  
   
 -   [ContinuationToken](../core/continuationtoken.md)  
   
@@ -143,4 +143,4 @@ ms.locfileid: "22257610"
 -   [Update](../core/update2.md)  
   
 ## <a name="see-also"></a>参照  
- [インターセプタ構成ファイルの構造](../core/structure-of-an-interceptor-configuration-file.md)
+ [インターセプター構成ファイルの構造](../core/structure-of-an-interceptor-configuration-file.md)

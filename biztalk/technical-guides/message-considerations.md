@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d8a9bcf8b2910f12183db33aa27a74b550c72b8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9981dbce13f613afeb5c061a96d319cddd6c5c94
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298444"
 ---
 # <a name="message-considerations"></a>メッセージの考慮事項
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 送信、受信、変換、およびメッセージの処理には、広範な機能セットを提供します。 これらの機能のいくつか挙げます。  
@@ -54,10 +54,10 @@ ms.locfileid: "36979683"
        200,000 / (Number of CPUs * BatchSize * MessagingThreadPoolSize)  
        ```  
   
-   BizTalk Server がサイズの大きいメッセージを処理するためのガイドラインなど、サイズの大きいメッセージを処理する方法の詳細については、[どのように BizTalk Server プロセス サイズの大きいメッセージ](http://go.microsoft.com/fwlink/?LinkID=154680)(http://go.microsoft.com/fwlink/?LinkID=154680)を参照してください。  
+   BizTalk Server がサイズの大きいメッセージを処理するためのガイドラインなど、サイズの大きいメッセージを処理する方法の詳細については、次を参照してください。[どのように BizTalk Server プロセス サイズの大きいメッセージ](http://go.microsoft.com/fwlink/?LinkID=154680)(http://go.microsoft.com/fwlink/?LinkID=154680)します。  
   
 ## <a name="message-type-considerations"></a>メッセージの種類に関する考慮事項  
- 2 つの主な形式のいずれかで BizTalk Server にメッセージを受信する: XML ファイルまたはフラット ファイル。 メッセージの種類は、XML とフラット ファイル メッセージのさまざまなリソース要件のためメッセージの配布プロファイルに常にファクタリングする必要があります。  
+ 2 つの主な形式のいずれかで BizTalk Server にメッセージを受信します。XML ファイルまたはフラット ファイル。 メッセージの種類は、XML とフラット ファイル メッセージのさまざまなリソース要件のためメッセージの配布プロファイルに常にファクタリングする必要があります。  
   
 -   **XML ファイル**BizTalk Server でパススルー ルーティング以外のメッセージ処理を実行するためには、メッセージは、XML ファイル形式である必要があります。  
   

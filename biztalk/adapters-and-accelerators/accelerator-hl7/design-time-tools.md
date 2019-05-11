@@ -22,12 +22,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d60cf2a64863a842bb974fcce2d4217f9b8105f7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: be59242c67c2748726b1a67a888397f4eaa90aaf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255487"
 ---
 # <a name="design-time-tools"></a>デザイン時ツール
 Microsoft BizTalk Accelerator for HL7 開発者 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) BizTalk Server に組み込まれているデザイン時ツールのセットを使用します。 これらのツールが統合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]します。 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツール、MicrosoftBizTalk Server のヘルプを参照してください。  
@@ -35,19 +35,19 @@ Microsoft BizTalk Accelerator for HL7 開発者 ([!INCLUDE[btaBTAHL71.3abbrevnon
 ## <a name="biztalk-editor"></a>BizTalk エディター  
  HL7 の XSD スキーマを管理するのにには、BizTalk エディターを使用します。 ソリューション開発用 (XSD ファイル) として、次のスキーマがサポートされているテンプレートを使用できます。  
   
--   HL7: 2.1 (37 イベントが含まれています)  
+-   HL7:2.1 (37 イベントが含まれています)  
   
--   HL7: 2.2 (56 イベントが含まれています)  
+-   HL7:2.2 (56 イベントが含まれています)  
   
--   HL7: 2.3 (182 イベントが含まれています)  
+-   HL7:2.3 (182 イベントが含まれています)  
   
--   (189 イベントが含まれています): HL7 2.3.1  
+-   HL7:2.3.1 (189 イベントが含まれています)  
   
--   HL7: 2.4 (288 イベントが含まれています)  
+-   HL7:2.4 (288 イベントが含まれています)  
   
--   HL7: 2.5 (約 390 スキーマが含まれています)  
+-   HL7:2.5 (約 390 スキーマが含まれています)  
   
--   : HL7 2. XML (V2.3.1 および 2.4 の約 450 スキーマが含まれています)  
+-   HL7:2.XML (V2.3.1 および 2.4 の約 450 スキーマが含まれています)  
   
 ## <a name="biztalk-mapper"></a>BizTalk マッパー  
  BizTalk マッパーを使用して、データ変換を定義するマップの作成やカスタマイズを行います。 BizTalk マッパーを使用して、受信と送信の両方の変換をマップする[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]メッセージの種類。  
@@ -66,7 +66,7 @@ Microsoft BizTalk Accelerator for HL7 開発者 ([!INCLUDE[btaBTAHL71.3abbrevnon
 ## <a name="visual-studio-starter-project"></a>Visual Studio のスタート プロジェクト  
  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 含まれています、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]スタート プロジェクトは、クイック スタート、HL7 ソリューションの実装を使用することができます。 スタート プロジェクトには、次のプロジェクトが含まれます。  
   
-- **空**[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]**プロジェクト**します。     すべてのスキーマは含まれません。  
+- **空**[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]**プロジェクト**します。 すべてのスキーマは含まれません。  
   
 - [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] **V2XCommon プロジェクト**します。 ヘッダーと受信確認のスキーマが含まれています。  
   

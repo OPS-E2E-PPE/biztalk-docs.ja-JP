@@ -1,5 +1,5 @@
 ---
-title: BizTalk 管理ポイントの SOA |Microsoft ドキュメント
+title: SOA BizTalk 管理ポイント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19d57f602854572349d7fc7905a607c19fec5cf2
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 0b04646a2336e3f4a75c77ff963dc62c0985020a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268925"
 ---
-# <a name="soa-biztalk-management-point"></a>SOA BizTalk の管理ポイント
-BizTalk Server の BizTalk の管理ポイントは、概念拡張 SOA ソフトウェアの Web サービスの管理ポイントに、具体的には、BizTalk Server 環境に適用され、Web サービス アプリケーションの実行時のガバナンスを提供します。  
+# <a name="soa-biztalk-management-point"></a>SOA BizTalk 管理ポイント
+BizTalk Server の BizTalk 管理ポイントとは、SOA ソフトウェアの Web サービスの管理ポイントに、具体的には、BizTalk Server 環境に適用され、Web サービス アプリケーションの実行時のガバナンスを提供する概念の拡張機能です。  
   
- このセクションのトピックは次のとおりです。  
+ このセクションでは、次のトピックについて説明します。  
   
 -   [SOA BizTalk 管理ポイントの概要](../esb-toolkit/overview-of-the-soa-biztalk-management-point.md)  
   

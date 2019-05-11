@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 063c60ed07d89429f14f7ed3b7c090cdc0bac033
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b29ee2fb5361aed12c7f90a094e3abeb7296e495
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381270"
 ---
 # <a name="invalid-scheme"></a>スキームが無効です
 ## <a name="details"></a>詳細  
@@ -33,7 +33,7 @@ ms.locfileid: "37008163"
 |  メッセージ テキスト   |                  スキームが無効です。スキームを指定してください"{0}「または」{1}"                   |
   
 ## <a name="explanation"></a>説明  
- 次のいずれかが発生しました。 URI (uniform リソース識別子) フィールドに指定されているアドレスが http:// または https:// で開始する必要があります。 または、スキームが、トランスポート バインディング要素の実装で指定されているスキームと一致しません。  
+ 次のいずれかが発生しました。 URI (uniform リソース識別子) フィールドに指定されているアドレスが http:// または https:// で開始する必要があります。 または、スキーム、トランスポート バインド要素の実装で指定されているものと一致しません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- http:// または https:// から始まる有効なプロキシ アドレスの URI を入力します
+ 有効なプロキシ アドレス http:// または https:// で始まる URI を入力します。

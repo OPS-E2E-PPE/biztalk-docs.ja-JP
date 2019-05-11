@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9acc933df7b958ea6ae0f0651fd66ba14daad913
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2fd572db5425b86a422fd1cca574ba7aba2e4262
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019246"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387593"
 ---
 # <a name="high-availability-for-enterprise-single-sign-on"></a>エンタープライズ シングル サインオンの高可用性
 資格情報のマッピングやシングル サインオンにエンタープライズ シングル サインオン (SSO) 機能を使用していない場合でも、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の全体的なインフラストラクチャの中で SSO はきわめて重要な役割を果たしています。これは BizTalk Server で、受信場所に対する情報のセキュリティを確保するために、SSO が使用されているためです。  
@@ -45,7 +45,7 @@ ms.locfileid: "37019246"
 >   SSO サービスが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューター上で再起動した場合、または SSO マスター シークレットが変更された場合、キャッシュされたマスター シークレットのコピーがメモリから解放され、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はマスター シークレットの別のコピーを取得するため、マスター シークレット サーバーと通信できなければなりません。 マスター シークレット サーバーが利用できない場合、暗号化のためにマスター シークレット サーバーへのアクセスを必要とする管理操作は失敗します。  
   
 ## <a name="making-the-master-secret-server-available"></a>マスター シークレット サーバーの可用性を確保する方法  
- SSO システムの可用性、ひいては、BizTalk Server 環境の可用性を確保するためには、マスター シークレットが生成された時点で速やかにバックアップすることが不可欠です。 マスター シークレットを失うことは、SSO システムがそのマスター シークレットを使って暗号化したデータを失うことを意味します。 マスター シークレットのバックアップの詳細については、[バックアップ マスター シークレットを方法](../core/how-to-back-up-the-master-secret.md)を参照してください。  
+ SSO システムの可用性、ひいては、BizTalk Server 環境の可用性を確保するためには、マスター シークレットが生成された時点で速やかにバックアップすることが不可欠です。 マスター シークレットを失うことは、SSO システムがそのマスター シークレットを使って暗号化したデータを失うことを意味します。 マスター シークレットのバックアップの詳細については、次を参照してください。[バックアップ マスター シークレットを方法](../core/how-to-back-up-the-master-secret.md)します。  
   
  マスター シークレット サーバーの可用性は、次の 2 とおりの方法で確保することができます。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "37019246"
   
      ![高可用性のマスター シークレット サーバー](../core/media/tdi-highava-msscluster.gif "TDI_HighAva_MSSCluster")  
   
-     この構成では高い可用性が実現される反面、追加のハードウェア リソースが必要になります。 SSO の高可用性インストール オプションの詳細については、[高可用性 SSO インストール オプション](../core/high-availability-sso-installation-options.md)を参照してください。 このセクションでは、Windows Server クラスターにおける SSO マスター シークレット サーバーの高可用性クラスター リソースとしての構成について詳しく説明します。  
+     この構成では高い可用性が実現される反面、追加のハードウェア リソースが必要になります。 SSO の高可用性インストール オプションの詳細については、次を参照してください。[高可用性 SSO インストール オプション](../core/high-availability-sso-installation-options.md)します。 このセクションでは、Windows Server クラスターにおける SSO マスター シークレット サーバーの高可用性クラスター リソースとしての構成について詳しく説明します。  
   
     > [!NOTE]
     >  高水準の可用性を実現するソリューションで、ハードウェア リソースをできるだけ抑えるためには、マスター シークレット サーバーを SQL Server クラスターのクラスター リソースとして追加します。 別のコンピューターで、SSO サービスをインストールする追加の BizTalk Server のライセンスを購入する必要はありません。  

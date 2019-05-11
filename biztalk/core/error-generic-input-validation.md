@@ -1,5 +1,5 @@
 ---
-title: エラー - 汎用入力の検証 |Microsoft ドキュメント
+title: エラー - 入力検証の一般的な |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee7d197655b440c5217366cbdc45af39d9def96b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e9ad5d3e89600723e0fade50e93b20f7b9a0be43
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239794"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389047"
 ---
-# <a name="error---generic-input-validation"></a>エラー - 汎用入力の検証
+# <a name="error---generic-input-validation"></a>エラー - 入力検証の一般的な
 **エラー コード**  
   
  btm1045  
   
  **説明**  
   
- マップのテスト操作用に指定されている入力インスタンス メッセージ ファイルを、送信元スキーマに対して検証できませんでした。理由は不明です。  
+ 不明な理由により、マップのテスト操作用に指定する入力インスタンス メッセージ ファイルを送信元スキーマに対して検証できませんでした。  
   
  **ユーザーの操作**  
   
- BizTalk エディターで、送信元スキーマを開いて使用して、**スキーマの検証**と**インスタンスの生成** コマンドをソリューション エクスプ ローラーで、問題を特定するスキーマを右クリックしたときに使用します。
+ 送信元スキーマを BizTalk エディターで開くしを使用して、**スキーマの検証**と**インスタンスの生成**コマンドを使用できるは、問題を切り分けるためのソリューション エクスプ ローラーでスキーマを右クリックするとします。

@@ -12,17 +12,17 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 55039e4aa2c85cef9f0c3c71a5872c593353d390
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 779cc347176432fee0850221c55da4559909f969
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996795"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357125"
 ---
-# <a name="common-component-developer-tasks"></a>一般的なコンポーネント開発者のタスク
-コンポーネント開発者は、BizTalk Server ソリューションで使用される高度な BizTalk Server コンポーネントを設計し、開発します。  
+# <a name="common-component-developer-tasks"></a>コンポーネント開発者の一般的なタスク
+コンポーネント開発者は、設計し、後で BizTalk Server ソリューションで使用される高度な BizTalk Server コンポーネントを開発します。  
 
- コンポーネント開発者ができる限り効率的に作業するためのリンクを以下に示します。これらは、BizTalk Server コンポーネントの開発に関するチュートリアルと一般的な情報へのリンクです。  
+ コンポーネントの開発者の効率を最大限にするために、次の一覧は、チュートリアル、ガイド、および BizTalk Server コンポーネントの開発に関する一般情報のリンクを提供します。  
 
 
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

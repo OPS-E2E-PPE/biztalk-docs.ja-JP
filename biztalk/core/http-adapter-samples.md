@@ -15,43 +15,43 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7682a16bd298ed58cf55e5122603bb2b3af9003
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1747a9bb28bc84dc0f6772435411d07557bf463e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977971"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383109"
 ---
 # <a name="http-adapter-samples"></a>HTTP アダプター サンプル
-このセクションでは、BizTalk HTTP アダプターを使用するときの高度な機能を示すサンプルについて説明します。  
+このセクションには、BizTalk HTTP アダプターを使用するときは、高度な機能を示すサンプルが含まれています。  
   
 > [!NOTE]
 >  このサンプルを実行する前に、次の手順を実行する必要があります。  
 > 
 > 1. IIS を開き、ISAPI および CGI の制限を追加します。  
 > 
->    左側のパネルでコンピューター名をクリックし、右側のパネルで [ISAPI および CGI の制限] をクリックして、次の ISAPI または CGI パスを追加します。  
+>    左側のパネルでコンピューター名をクリックし、右側のパネルし、追加、ISAPI または CGI パスに"ISAPI および CGI の制限 をクリックします。  
 > 
->    64 ビット コンピューター上の追加: C:\Program Files (x86) \Microsoft BizTalk Server\<バージョン\>\HttpReceive64\BTSHTTPReceive.dll  
+>    64 ビット コンピューターで次のように追加します。 C:\Program Files (x86)\Microsoft BizTalk Server \<version\>\HttpReceive64\BTSHTTPReceive.dll  
 > 
->    32 ビット コンピューターを追加します C:\Program Files (x86) \Microsoft BizTalk Server\<バージョン\>\HttpReceive\BTSHTTPReceive.dll。  
+>    32 ビット コンピューターで次のように追加します。 C:\Program Files (x86)\Microsoft BizTalk Server \<version\>\HttpReceive\BTSHTTPReceive.dll  
 > 
->    許可された拡張パスを確認するか、または実行します。  
->    2.  左側のパネルで [HTTPRequestResponseSample] をクリックし、中央のパネルで [ハンドラー マッピング] をクリックし、[スクリプト マップの追加] をクリックして、次のように設定します。  
+>    許可された拡張パスを確認するかを実行します。  
+>    2.  左側のパネルで HTTPRequestResponseSample をクリックし、中央のパネルで ハンドラー マッピング をクリックし、次の設定の"スクリプト マップの追加 をクリックします。  
 > 
->    要求パス: BTSHTTPReceive.dll  
+>    要求パス: btshttpreceive.dll  
 > 
 >    実行可能ファイル:  
 > 
->    64 ビット コンピューター: C:\Program Files (x86) \Microsoft BizTalk Server\<バージョン\>\HttpReceive64\  
+>    64 ビット コンピューターで次のように追加します。 C:\Program Files (x86)\Microsoft BizTalk Server \<version\>\HttpReceive64\  
 > 
->    32 ビット コンピューター: C:\Program Files (x86) \Microsoft BizTalk Server\<バージョン\>\HttpReceive\  
+>    32 ビット コンピューターを追加します。 C:\Program Files (x86) \Microsoft BizTalk Server\<バージョン\>\HttpReceive\  
 > 
->    要求の制限:  
+>    要求の制限。  
 > 
->    動詞: POST  
+>    動詞:POST  
 > 
->    アクセス: スクリプト  
+>    アクセス:[スクリプト]  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -15,14 +15,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27880dc3f603f39c9cb9f71207edc1926df4df7f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 17f7758fce78c3cdd09850554d134057a717fe36
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380652"
 ---
-# <a name="limitations-when-querying-and-retrieving-lists"></a>リストのクエリと取得時の制限事項
+# <a name="limitations-when-querying-and-retrieving-lists"></a>クエリを実行して、一覧の取得時の制限事項
 JD Edwards OneWorld の通信アーキテクチャは、単一メッセージ、単一応答のアーキテクチャです。 メッセージのリストまたは配列を返すことはできません。 基になるコードは C++ であり、C++ では、1 つの構造体へのポインタを指定して呼び出し、その構造体で変更を行って、関数が終了します。  
   
 ## <a name="querying-and-retrieving-lists"></a>リストのクエリと取得  

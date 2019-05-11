@@ -17,17 +17,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 91fa9b1828a8519dcbf7e1efba1db99ba84f1d0d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9544551d19b595c113407fda4736f0d5d48bd5fa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376521"
 ---
 # <a name="insert-update-delete-or-select-operations-in-oracle-database-using-the-wcf-service-model"></a>挿入、更新、削除、または WCF サービス モデルを使用して Oracle データベースで操作を選択します。
-[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェスの基本的な Insert、Update、Delete、および Oracle データベースのテーブルおよびビューに対する Select 操作のセット。 これらの操作を使用すると、単純な SQL INSERT、UPDATE、SELECT を実行し、DELETE ステートメントの対象のテーブルまたはビューの WHERE 句で修飾できます。 たとえば、SQL SELECT クエリの結合演算子を使用するより複雑な操作を実行するには、SQLEXECUTE 操作を使用できます。 SQLEXECUTE 操作の詳細については、[WCF サービス モデルを使用して Oracle Database SQLEXECUTE 操作を実行する](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md)を参照してください。  
+[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェスの基本的な Insert、Update、Delete、および Oracle データベースのテーブルおよびビューに対する Select 操作のセット。 これらの操作を使用すると、単純な SQL INSERT、UPDATE、SELECT を実行し、DELETE ステートメントの対象のテーブルまたはビューの WHERE 句で修飾できます。 たとえば、SQL SELECT クエリの結合演算子を使用するより複雑な操作を実行するには、SQLEXECUTE 操作を使用できます。 SQLEXECUTE 操作の詳細については、次を参照してください。 [WCF サービス モデルを使用して Oracle Database SQLEXECUTE 操作を実行する](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md)します。  
   
- 次の表は、SQL の基本的な操作をまとめたものですが、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]テーブルとビューのサーフェイス。 これらの操作の詳細については、[、基本的な挿入、更新、削除、およびテーブルおよびビューの選択操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)を参照してください。  
+ 次の表は、SQL の基本的な操作をまとめたものですが、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]テーブルとビューのサーフェイス。 これらの操作の詳細については、次を参照してください。 [、基本的な挿入、更新、削除、およびテーブルおよびビューの選択操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)します。  
   
 |演算|説明|  
 |---------------|-----------------|  
@@ -37,7 +37,7 @@ ms.locfileid: "36982451"
 |DELETE|フィルター文字列で指定されている SQL の WHERE 句に基づいて対象テーブルに対して DELETE を実行します。|  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、/SCOTT/ACCOUNTACTIVITY テーブルを使用します。 このテーブルを生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、[SDK 内のサンプル](../../core/samples-in-the-sdk.md)を参照してください。  
+ このトピックの例では、/SCOTT/ACCOUNTACTIVITY テーブルを使用します。 このテーブルを生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
  基本的な SQL 操作に対して生成された WCF クライアントの名前を[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サーフェスは、テーブルまたは次の表のように、ビューの名前に基づきます。  
@@ -58,9 +58,9 @@ ms.locfileid: "36982451"
 |演算|メソッド シグネチャ|  
 |---------------|----------------------|  
 |Insert|挿入時間の長い ([TABLE_NS]. [TABLE_NAME] RECORDINSERT [レコード セット、それらをクエリ文字列の文字列)。|  
-|Select|[TABLE_NS]。[TABLE_NAME]RECORDSELECT] を選択します (文字列それら、文字列フィルター)|  
-|更新|更新時間の長い ([TABLE_NS]. [TABLE_NAME] RECORDUPDATE はレコード セット、文字列フィルター)|  
-|DELETE|時間の長い (文字列フィルター) を削除します。|  
+|Select|[TABLE_NS].[TABLE_NAME]RECORDSELECT[] Select(string COLUMN_NAMES, string FILTER);|  
+|更新|long Update([TABLE_NS].[TABLE_NAME]RECORDUPDATE RECORDSET, string FILTER);|  
+|DELETE|Long Delete(string FILTER);|  
   
  [TABLE_NS] テーブル、名前空間の名前を =たとえば、microsoft.lobservices.oracledb._2007._03.SCOTT します。Table.ACCOUNTACTIVITY します。  
   
@@ -107,87 +107,87 @@ public partial class SCOTTTableACCOUNTACTIVITYClient : System.ServiceModel.Clien
  挿入操作では、ターゲットに挿入されたレコードの数を返します。  
   
 > [!IMPORTANT]
->  WCF サービス モデルでは、挿入操作で使用されるレコード セットは、厳密に型指定されたです。 Nillable 列の値を設定する**null**で挿入操作; から列を除外するレコードただしは設定できませんを nillable 以外の列の値**null**します。 つまり、複数のレコードの挿入操作、各レコード内のすべての非 nillable 列の値を指定する必要があります。 さらはありません、基本的な SQL 操作のストリーミング サポート、WCF サービス モデルを使用する場合です。 場合は、複数のレコードの挿入操作では、大量のレコード セットでは、重要な考慮事項があります。 詳細については、[WCF サービス モデルを使用して基本的な SQL 操作の呼び出しの制限事項](#BKMK_LimitationsInvoking)を参照してください。  
+>  WCF サービス モデルでは、挿入操作で使用されるレコード セットは、厳密に型指定されたです。 Nillable 列の値を設定する**null**で挿入操作; から列を除外するレコードただしは設定できませんを nillable 以外の列の値**null**します。 つまり、複数のレコードの挿入操作、各レコード内のすべての非 nillable 列の値を指定する必要があります。 さらはありません、基本的な SQL 操作のストリーミング サポート、WCF サービス モデルを使用する場合です。 場合は、複数のレコードの挿入操作では、大量のレコード セットでは、重要な考慮事項があります。 詳細については、次を参照してください。 [WCF サービス モデルを使用して基本的な SQL 操作の呼び出しの制限事項](#BKMK_LimitationsInvoking)します。  
   
  次のコードは、複数レコード挿入の操作 (2 つのレコード) を ACCOUNTACTIVITY テーブルを対象とします。  
   
 ```  
 // Insert records  
-                using (SCOTTTableACCOUNTACTIVITYClient aaTableClient =   
-                    new SCOTTTableACCOUNTACTIVITYClient("OracleDBBinding_SCOTT.Table.ACCOUNTACTIVITY"))  
-                {  
-                    long recsInserted;  
+                using (SCOTTTableACCOUNTACTIVITYClient aaTableClient =   
+                    new SCOTTTableACCOUNTACTIVITYClient("OracleDBBinding_SCOTT.Table.ACCOUNTACTIVITY"))  
+                {  
+                    long recsInserted;  
   
-                    aaTableClient.ClientCredentials.UserName.UserName = "SCOTT";  
-                    aaTableClient.ClientCredentials.UserName.Password = "TIGER";  
+                    aaTableClient.ClientCredentials.UserName.UserName = "SCOTT";  
+                    aaTableClient.ClientCredentials.UserName.Password = "TIGER";  
   
-                    try  
-                    {  
-                        aaTableClient.Open();  
-                    }  
-                    catch (Exception ex)  
-                    {  
-                        // handle exception  
-                        Console.WriteLine("Exception: " + ex.Message);  
-                        throw;  
-                    }  
+                    try  
+                    {  
+                        aaTableClient.Open();  
+                    }  
+                    catch (Exception ex)  
+                    {  
+                        // handle exception  
+                        Console.WriteLine("Exception: " + ex.Message);  
+                        throw;  
+                    }  
   
-                    // Do a multiple record Insert of 2 records for account 100001  
+                    // Do a multiple record Insert of 2 records for account 100001  
   
-                    microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT[] insertRecs =  
-                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT[2];  
+                    microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT[] insertRecs =  
+                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT[2];  
   
-                                  TID__COMPLEX_TYPE tid = new TID__COMPLEX_TYPE();  
-                                  tid.InlineValue = "tidSequence.NextVal()";  
+                                  TID__COMPLEX_TYPE tid = new TID__COMPLEX_TYPE();  
+                                  tid.InlineValue = "tidSequence.NextVal()";  
   
-                                  ACCOUNT__COMPLEX_TYPE account = new ACCOUNT__COMPLEX_TYPE();  
-                                  account.Value = 100001;  
+                                  ACCOUNT__COMPLEX_TYPE account = new ACCOUNT__COMPLEX_TYPE();  
+                                  account.Value = 100001;  
   
-                    AMOUNT__COMPLEX_TYPE amount = new AMOUNT__COMPLEX_TYPE();  
-                    amount.Value = 400;  
+                    AMOUNT__COMPLEX_TYPE amount = new AMOUNT__COMPLEX_TYPE();  
+                    amount.Value = 400;  
   
-                    TRANSDATE__COMPLEX_TYPE transdate = new TRANSDATE__COMPLEX_TYPE();  
-                    transdate.Value = DateTime.Now.Date;  
+                    TRANSDATE__COMPLEX_TYPE transdate = new TRANSDATE__COMPLEX_TYPE();  
+                    transdate.Value = DateTime.Now.Date;  
   
-                    PROCESSED__COMPLEX_TYPE processed = new PROCESSED__COMPLEX_TYPE();  
-                    processed.Value = "n";  
+                    PROCESSED__COMPLEX_TYPE processed = new PROCESSED__COMPLEX_TYPE();  
+                    processed.Value = "n";  
   
-                    DESCRIPTION__COMPLEX_TYPE description1 = new DESCRIPTION__COMPLEX_TYPE();  
-                    description1.Value = "Inserted Record #1";  
+                    DESCRIPTION__COMPLEX_TYPE description1 = new DESCRIPTION__COMPLEX_TYPE();  
+                    description1.Value = "Inserted Record #1";  
   
-                    DESCRIPTION__COMPLEX_TYPE description2 = new DESCRIPTION__COMPLEX_TYPE();  
-                    description2.Value = "Inserted Record #2";  
+                    DESCRIPTION__COMPLEX_TYPE description2 = new DESCRIPTION__COMPLEX_TYPE();  
+                    description2.Value = "Inserted Record #2";  
   
-                    insertRecs[0] =   
-                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT();  
-                    insertRecs[0].TID = tid;  
-                    insertRecs[0].ACCOUNT = account;  
-                    insertRecs[0].AMOUNT = amount;  
-                    insertRecs[0].TRANSDATE = transdate;  
-                    insertRecs[0].DESCRIPTION = description1;  
-                    insertRecs[0].PROCESSED = processed;  
+                    insertRecs[0] =   
+                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT();  
+                    insertRecs[0].TID = tid;  
+                    insertRecs[0].ACCOUNT = account;  
+                    insertRecs[0].AMOUNT = amount;  
+                    insertRecs[0].TRANSDATE = transdate;  
+                    insertRecs[0].DESCRIPTION = description1;  
+                    insertRecs[0].PROCESSED = processed;  
   
-                    insertRecs[1] =   
-                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT();  
-                    insertRecs[1].TID = tid;  
-                    insertRecs[1].ACCOUNT = account;  
-                    insertRecs[1].AMOUNT = amount;  
-                    insertRecs[1].TRANSDATE = transdate;  
-                    insertRecs[1].DESCRIPTION = description2;  
-                    insertRecs[1].PROCESSED = processed;  
+                    insertRecs[1] =   
+                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT();  
+                    insertRecs[1].TID = tid;  
+                    insertRecs[1].ACCOUNT = account;  
+                    insertRecs[1].AMOUNT = amount;  
+                    insertRecs[1].TRANSDATE = transdate;  
+                    insertRecs[1].DESCRIPTION = description2;  
+                    insertRecs[1].PROCESSED = processed;  
   
-                    try  
-                    {  
-                        recsInserted = aaTableClient.Insert(insertRecs, null, null);  
-                    }  
-                    catch (Exception ex)  
-                    {  
-                        // handle exception  
-                        Console.WriteLine("Exception: " + ex.Message);  
-                        throw;  
-                    }  
+                    try  
+                    {  
+                        recsInserted = aaTableClient.Insert(insertRecs, null, null);  
+                    }  
+                    catch (Exception ex)  
+                    {  
+                        // handle exception  
+                        Console.WriteLine("Exception: " + ex.Message);  
+                        throw;  
+                    }  
   
-                    Console.WriteLine("Insert Done: {0} records inserted", recsInserted);  
+                    Console.WriteLine("Insert Done: {0} records inserted", recsInserted);  
 ```  
   
 ### <a name="select-operation"></a>操作を選択します。  
@@ -200,7 +200,7 @@ public partial class SCOTTTableACCOUNTACTIVITYClient : System.ServiceModel.Clien
  選択操作では、対象の行の型に基づいて厳密に型指定されたレコード セットを返します。  
   
 > [!IMPORTANT]
->  WCF サービス モデルを使用すると、基本的な SQL 操作のストリーミング サポートはありません。 クエリでは、大量のレコード セットが返された場合は、WCF チャネル モデルを使用してパフォーマンスを向上させることができます。 詳細については、[WCF サービス モデルを使用して基本的な SQL 操作の呼び出しの制限事項](#BKMK_LimitationsInvoking)を参照してください。  
+>  WCF サービス モデルを使用すると、基本的な SQL 操作のストリーミング サポートはありません。 クエリでは、大量のレコード セットが返された場合は、WCF チャネル モデルを使用してパフォーマンスを向上させることができます。 詳細については、次を参照してください。 [WCF サービス モデルを使用して基本的な SQL 操作の呼び出しの制限事項](#BKMK_LimitationsInvoking)します。  
   
  次のコードでは、ACCOUNTACTIVITY テーブルを対象とする操作を選択します。 返されるレコードは、コンソールに書き込まれます。  
   
@@ -230,7 +230,7 @@ for (int i = 0; i \< selectRecords.Length; i++)
 ```  
   
 > [!NOTE]
->  このコードは、作成、構成、および WCF クライアントのインスタンスを開く手順を省略します。 次の手順を含む、例では、[挿入操作](#BKMK_InsertOperation)を参照してください。  
+>  このコードは、作成、構成、および WCF クライアントのインスタンスを開く手順を省略します。 次の手順を含む、例では、次を参照してください。[挿入操作](#BKMK_InsertOperation)します。  
   
 ### <a name="update-operation"></a>更新操作  
  次の表では、更新操作のパラメーターを示します。  
@@ -242,7 +242,7 @@ for (int i = 0; i \< selectRecords.Length; i++)
  更新操作では、ターゲットから削除された行の数を返します。  
   
 > [!IMPORTANT]
->  WCF サービス モデルでは、更新操作で使用されるテンプレート レコードは、厳密に型指定されたが。 列が nillable の場合は、その値に設定して、更新操作から列を省略できます**null**テンプレート レコードでただし、列は、nillable がない場合する必要があります設定テンプレート レコード内の値。 たとえば、列が主キーの場合、値を含める必要があります。 詳細については、[WCF サービス モデルを使用して基本的な SQL 操作の呼び出しの制限事項](#BKMK_LimitationsInvoking)を参照してください。  
+>  WCF サービス モデルでは、更新操作で使用されるテンプレート レコードは、厳密に型指定されたが。 列が nillable の場合は、その値に設定して、更新操作から列を省略できます**null**テンプレート レコードでただし、列は、nillable がない場合する必要があります設定テンプレート レコード内の値。 たとえば、列が主キーの場合、値を含める必要があります。 詳細については、次を参照してください。 [WCF サービス モデルを使用して基本的な SQL 操作の呼び出しの制限事項](#BKMK_LimitationsInvoking)します。  
   
  次のコードでは、ACCOUNTACTIVITY テーブルを対象とする更新操作を示します。  
   
@@ -278,7 +278,7 @@ Console.WriteLine("{0} records updated", recsUpdated);
 ```  
   
 > [!NOTE]
->  このコードは、作成、構成、および WCF クライアントのインスタンスを開く手順を省略します。 次の手順を含む、例では、[挿入操作](#BKMK_InsertOperation)を参照してください。  
+>  このコードは、作成、構成、および WCF クライアントのインスタンスを開く手順を省略します。 次の手順を含む、例では、次を参照してください。[挿入操作](#BKMK_InsertOperation)します。  
   
 ### <a name="delete-operation"></a>削除操作  
  次の表では、削除操作のパラメーターを示します。  
@@ -307,7 +307,7 @@ Console.WriteLine("{0} records deleted", recsDeleted);
 ```  
   
 > [!NOTE]
->  このコードは、作成、構成、および WCF クライアントのインスタンスを開く手順を省略します。 次の手順を含む、例では、、[挿入操作](#BKMK_InsertOperation)を参照してください。  
+>  このコードは、作成、構成、および WCF クライアントのインスタンスを開く手順を省略します。 次の手順を含む、例では、次を参照してください。、[挿入操作](#BKMK_InsertOperation)します。  
   
 ##  <a name="BKMK_LimitationsInvoking"></a> WCF サービス モデルを使用して基本的な SQL 操作の呼び出しの制限事項  
  WCF クライアントを使用して SQL の基本的な操作を呼び出すときに、次の制限があります。  

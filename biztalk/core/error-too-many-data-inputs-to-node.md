@@ -1,5 +1,5 @@
 ---
-title: エラー - ノードへのデータ入力が多すぎます |Microsoft ドキュメント
+title: エラー - ノードへのデータ入力が多すぎます |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9e465f861c4048708f41ea86f04ffd52375dec9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3c5674e4a4dc0c18556b61ff49a761e89d7891dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241026"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388337"
 ---
 # <a name="error---too-many-data-inputs-to-node"></a>エラー - ノードへのデータ入力が多すぎます
 **エラー コード**  
@@ -28,8 +28,8 @@ ms.locfileid: "22241026"
   
  **説明**  
   
- 多くへの入力リンクの数よりも、送信先スキーマのノードに接続しているリンクがある、**ループ**functoid のノードの祖先のノードに接続されています。 この 2 種類のリンクの数は、一致している必要があります。  
+ 多くへの入力リンクの数よりも、送信先スキーマのノードに接続しているリンクがある、**ループ**functoid、対象ノードの祖先のノードに接続されています。 前者と後者の型のリンクの数が一致する必要があります。  
   
  **ユーザーの操作**  
   
- 作業のやり直しのノードにされ、接続されているリンクの数、**ループ**functoid が、祖先ノードに接続されている一致するものとします。
+ 指定されたノードとリンクの数が接続されている作業のやり直し、**ループ**functoid が、祖先ノードに接続されている一致するものとします。

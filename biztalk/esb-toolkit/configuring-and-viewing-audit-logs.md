@@ -1,5 +1,5 @@
 ---
-title: 監査ログを構成および表示 |Microsoft ドキュメント
+title: 監査ログを構成し、表示 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03c88e0a67a393b7ddc35ee8865d99d0299d41f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dad02f6c54d1535c3580093d8c981b0e29731f8c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289842"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302116"
 ---
-# <a name="configuring-and-viewing-audit-logs"></a>構成して、監査ログの表示
-ESB の管理ポータルでは、使用状況を監視し、問題を追跡するためのアクションの監査ログを保持します。 管理者は、監査ログへの書き込みは、ポータルのどのイベントを指定できます。  
+# <a name="configuring-and-viewing-audit-logs"></a>構成し、監査ログの表示
+ESB 管理ポータルでは、使用状況を監視し、問題を追跡するためのアクションの監査ログを保持します。 管理者は、ポータルが監査ログに書き込むイベントの種類を指定できます。  
   
 ### <a name="to-view-the-audit-logs-for-the-portal"></a>ポータルの監査ログを表示するには  
   
-1.  をポイント、 **Admin**ポータルのメイン メニュー タブをクリックして**監査ログの管理**を開くには、[監査ログ ページ](../esb-toolkit/audit-log-page.md)です。  
+1.  ポイントして、**管理者**ポータルのメイン メニューで、タブをクリックして**監査ログの管理**を開く、[監査ログ ページ](../esb-toolkit/audit-log-page.md)。  
   
-2.  再送信の詳細と再送信されたメッセージの元のメッセージを表示するには、監査ログ – メッセージ ビューアー ページを開く、リスト内のメッセージの識別子をクリックします。  
+2.  を再送信されたメッセージの元のメッセージの再送信の詳細を表示するには、監査ログ – メッセージ ビューアー ページを開くには、一覧でメッセージの識別子をクリックします。  
   
 ### <a name="to-configure-the-auditing-settings-for-the-portal"></a>ポータルの監査設定を構成するには  
   
-1.  (そのうちポータル管理者は自動的にメンバー)、BizTalk Server 管理者アカウント グループのメンバーであるアカウントを使用してポータルにログオンすることを確認します。  
+1.  (ポータル管理者の自動的にメンバー)、BizTalk Server 管理者アカウント グループのメンバーであるアカウントを使用してポータルにログオンすることを確認します。  
   
-2.  をポイント、 **Admin**ポータルのメイン メニュー タブをクリックして**フォールト設定**を開くには、ポータル[フォールトの設定 ページ](../esb-toolkit/fault-settings-page.md)です。  
+2.  をポイント、**管理者**ポータルのメイン メニューで、タブをクリックして**フォールト設定**ポータルを開く[エラー設定ページ](../esb-toolkit/fault-settings-page.md)します。  
   
-3.  監査オプションを変更するにあるチェック ボックスを選択、 **AuditOptions**セクションの各イベントを監査します。 使用可能なイベントは、エラーを再送信するときに、変更した設定の保存、編集、およびエラーの後に障害を正常に再送信です。
+3.  監査オプションを変更するには、チェック ボックスをオン、 **AuditOptions**セクションの各イベントを監査します。 使用可能なイベントは、エラーを再送信するときに、変更された設定の保存、編集、およびエラーの後に障害を正常に再送信が。

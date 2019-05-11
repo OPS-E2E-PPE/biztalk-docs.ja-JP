@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f77c9a45e6314a4fc36fca8604677d7bd4b69098
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b3d26c006c7752b5e2ef2480cff3b57457f4dbfc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966611"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387578"
 ---
 # <a name="helloworld-biztalk-server-sample"></a>HelloWorld (BizTalk Server サンプル)
 HelloWorld サンプルは、BizTalk オーケストレーションを使用して、XML メッセージ (注文書) を関連する別の種類のメッセージ (請求書) に変換する方法を示すものです。  
@@ -38,10 +38,10 @@ HelloWorld サンプルは、BizTalk オーケストレーションを使用し�
 ## <a name="how-this-sample-is-designed-and-why"></a>このサンプルのデザイン方法とその理由  
  企業間のメッセージ交換シナリオでは、取引先から受信した受信メッセージを内部アプリケーションが認識できる形式に変換する作業が必要になる場合があります。 このサンプルでは、**受信**図形、**変換**図形、および**送信**この結果を実現するために図形。 **変換**図形がメッセージ形式の変換が発生するために、このサンプルで重要な役割を果たします。 ドラッグする、**変換**をオーケストレーションに図形し、その送信元メッセージ、マップ名、および送信先メッセージを構成します。 実行中、指定したマップによって送信元メッセージが送信先メッセージにマップされます。  
   
- 詳細については、**変換**図形は、「[変換図形を構成する方法](../core/how-to-configure-the-transform-shape.md)します。 マップの構築に関する詳細については、[BizTalk マッパーを使用してマップを作成する](../core/creating-maps-using-biztalk-mapper.md)を参照してください。  
+ 詳細については、**変換**図形は、「[変換図形を構成する方法](../core/how-to-configure-the-transform-shape.md)します。 マップの構築に関する詳細については、次を参照してください。 [BizTalk マッパーを使用してマップを作成する](../core/creating-maps-using-biztalk-mapper.md)します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*\>\Orchestrations\HelloWorld\  
+ \<*Samples Path*\>\Orchestrations\HelloWorld\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -62,13 +62,13 @@ HelloWorld サンプルは、BizTalk オーケストレーションを使用し�
   
 1. コマンド ウィンドウで、次のフォルダーに移動します。  
   
-    \<*パスのサンプル*\>\Orchestrations\HelloWorld  
+    \<*Samples Path*\>\Orchestrations\HelloWorld  
   
 2. ファイルは、次の操作を実行します。 Setup.bat を実行します。  
   
    - 次のフォルダに、このサンプルの入力 (In) フォルダと出力 (Out) フォルダを作成します。  
   
-      \<*パスのサンプル*\>\Orchestrations\HelloWorld  
+      \<*Samples Path*\>\Orchestrations\HelloWorld  
   
    - コンパイル、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]このサンプルのプロジェクト。  
   
@@ -93,7 +93,7 @@ HelloWorld サンプルは、BizTalk オーケストレーションを使用し�
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*\>\Orchestrations\HelloWorld\  
+     \<*Samples Path*\>\Orchestrations\HelloWorld\  
   
 2.  Cleanup.bat を実行します。  
   

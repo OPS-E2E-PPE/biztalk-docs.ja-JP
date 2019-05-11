@@ -1,5 +1,5 @@
 ---
-title: パフォーマンスのボトルネックを特定する |Microsoft ドキュメント
+title: パフォーマンスのボトルネックの特定 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b63519c51fdfbe2c8d63496132dd9f2a2438dcad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbc6eb84f88b7c77d8d8f3492566cce28fb62012
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256642"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382798"
 ---
 # <a name="identifying-performance-bottlenecks"></a>パフォーマンスのボトルネックの特定
 理想的な状況では、システムがほぼすべての機能を利用して実行されている (使用できるリソースを効率的に使用している) 場合、維持可能なスループットが実現し、総保有コスト (TCO) を削減できます。  
@@ -32,12 +32,12 @@ ms.locfileid: "22256642"
   
 -   [BizTalk 層のボトルネックを特定します。](../core/identifying-bottlenecks-in-the-biztalk-tier.md)  
   
--   [メッセージ ボックス データベースのボトルネックを特定する方法](../core/how-to-identify-bottlenecks-in-the-messagebox-database2.md)
+-   [メッセージボックス データベースのボトルネックを特定する方法](../core/how-to-identify-bottlenecks-in-the-messagebox-database2.md)
 
 - [BizTalkDTADb データベースのボトルネックを特定する方法](../core/how-to-identify-bottlenecks-in-the-biztalkdtadb-database.md)
 
 - [BAM データベースのボトルネックを特定する方法](../core/how-to-identify-bottlenecks-in-the-bam-database.md)
 
-- [ディスクの競合を回避する方法](../core/how-to-avoid-disk-contention1.md)
+- [ディスクの競合を防止する方法](../core/how-to-avoid-disk-contention1.md)
   
 -   [ボトルネックを回避するためのガイドライン](../core/guidelines-for-avoiding-bottlenecks.md)

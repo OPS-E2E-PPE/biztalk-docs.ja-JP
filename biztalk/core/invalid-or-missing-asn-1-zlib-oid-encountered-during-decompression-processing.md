@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21bbdbca8b0b13887ed49dc662910dac3c0310da
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4a3634fc02958c47bb933a100e60214de3082ea2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381335"
 ---
 # <a name="invalid-or-missing-asn1-zlib-oid-encountered-during-decompression-processing"></a>圧縮解除処理中に無効な ASN.1 ZLib データ OID が検出されたか、ASN.1 ZLib データ OID が見つかりませんでした
 ## <a name="details"></a>詳細  

@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d894cba37b85c4f18fe2a05af33eb2f4e6e1981e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0325b45c3daf7bcf6cc0dc90c83c60a41f25fcf9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385542"
 ---
 # <a name="how-to-create-a-web-setup-for-your-published-web-service"></a>公開する Web サービスの Web セットアップを作成する方法
-インストール パッケージを作成すると、実稼働環境での Web サービスの設定が容易になります。 この結果、.MSI ファイルが作成されます。  
+運用環境で、Web サービスの設定を容易にするインストール パッケージを作成することができます。 これを生成します。MSI ファイルです。  
   
-### <a name="to-create-an-installation-package-to-produce-an-msi-file-using-visual-studio"></a>Visual Studio を使用して .MSI ファイルを作成するためにインストール パッケージを作成するには  
+### <a name="to-create-an-installation-package-to-produce-an-msi-file-using-visual-studio"></a>生成するために、インストール パッケージを作成します。Visual Studio を使用して MSI ファイル  
   
-1. 公開する ASP.NET Web サービス プロジェクトを開きます。  
+1. パブリッシュされた ASP.NET Web サービス プロジェクトを開きます。  
   
 2. ソリューション エクスプ ローラーでソリューション ノードを右クリックして**追加**、 をクリックし、**新しいプロジェクト**します。  
   

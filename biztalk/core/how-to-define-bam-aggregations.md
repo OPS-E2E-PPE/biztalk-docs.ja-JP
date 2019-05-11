@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57df4978f2b133794efd8fbdc99819bcedf144cb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9f330e6a4d3dd2525e79ad70b2fcad73217c70c2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015907"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338934"
 ---
 # <a name="how-to-define-bam-aggregations"></a>BAM 集計を定義する方法
 BAM では、次の 2 種類のデータ集計がサポートされます。  
@@ -52,7 +52,7 @@ BAM では、次の 2 種類のデータ集計がサポートされます。
   
 4.  キューブ更新データ変換サービス (DTS) パッケージを実行します。  
   
-    -   キューブを更新する DTS パッケージの実行方法の詳細については、[の BAM DTS パッケージ](../core/bam-dts-packages.md)を参照してください。  
+    -   キューブを更新する DTS パッケージの実行方法の詳細については、次を参照してください。[の BAM DTS パッケージ](../core/bam-dts-packages.md)します。  
   
 5.  ブックのライブ データの最新コピーを開き、OLAP 集計を表示します。  
   

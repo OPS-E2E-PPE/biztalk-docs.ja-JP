@@ -1,5 +1,5 @@
 ---
-title: PeopleSoft アダプターのトラブルシューティング |Microsoft ドキュメント
+title: PeopleSoft アダプターのトラブルシューティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 974e9adc0aaa673587d0b7ce2a26df978f604117
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 583f47c4541883ebab3bb27570990e375975b137
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24014707"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379893"
 ---
 # <a name="troubleshoot-peoplesoft"></a>PeopleSoft をトラブルシューティングします。
-このセクションでは、PeopleSoft Enterprise システムのエラー メッセージ、その説明、および考えられる修正方法の一覧を示します。 また、Windows イベント トレーシングの使用方法および一般的な問題についても説明します。  
+このセクションでは、PeopleSoft Enterprise システムとその説明、および考えられる修正方法でエラー メッセージが一覧表示します。 Windows のイベントのトレースを使用する方法について説明し、一般的な問題を一覧表示されます。  
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [エラー メッセージ](../core/error-messages3.md)  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 134c2c2b0931373840cf5726d8f6680590840b9d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6a143fcba207cff6c6941012e728993f03e5731b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988739"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389998"
 ---
 # <a name="data-element-too-long"></a>データ要素が長すぎます。
 ## <a name="details"></a>詳細  

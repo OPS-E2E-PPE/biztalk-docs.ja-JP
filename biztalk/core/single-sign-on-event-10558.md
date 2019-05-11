@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10558 |Microsoft Docs'
+title: シングル サインオン:イベント 10558 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d9a281d6a6ca20a274db4b3ffe5b2697ff812c2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7161e732fc95aa2fb62ee2ba5e8f188266804206
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974869"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398820"
 ---
-# <a name="single-sign-on-event-10558"></a>シングル サインオン: イベント 10558
+# <a name="single-sign-on-event-10558"></a>シングル サインオン:イベント 10558
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                              |
@@ -30,10 +30,10 @@ ms.locfileid: "36974869"
 |  イベント ソース   |                                                                                            ENTSSO                                                                                            |
 |    コンポーネント    |                                                                                             なし                                                                                              |
 |  シンボル名  |                                                                                  SSO_WARN_USER_OWN_MAPPINGS                                                                                  |
-|  メッセージ テキスト   | アプリケーション ユーザーは各自のマッピングを制御することのみ許可されています。%r<br /><br /> ドメイン名: %1 %r<br /><br /> ユーザー名: % 2 %r<br /><br /> アプリケーション名: % 3 %r<br /><br /> クライアント ユーザー: %4 |
+|  メッセージ テキスト   | アプリケーションのユーザーが独自の mappings.%r を制御するのみ使用できます。<br /><br /> ドメイン名: %1 %r<br /><br /> ユーザー名: % 2 %r<br /><br /> アプリケーション名: % 3 %r<br /><br /> クライアント ユーザー: %4 |
   
 ## <a name="explanation"></a>説明  
- アプリケーション ユーザーが他のユーザーのマッピングを制御しようとしました。 これは許可されていません。  
+ 試行を別のユーザーのマッピングを制御するアプリケーションのユーザーによってしました。 これは許可されていません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- マッピングを制御できるのは、その特定のマッピングのアプリケーション ユーザーだけです。
+ マッピングは、それらの特定のマッピングに対してアプリケーションのユーザーによってのみ制御できます。

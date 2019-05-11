@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fcfd1a10b836ec593b6aa94a87d8145d6e2ebaaf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a3f4e58a6a26390b10d5cc3b4956c1b2fd0864c1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967891"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350760"
 ---
 # <a name="duplicate-control-number"></a>制御番号が重複しています
 ## <a name="details"></a>詳細  

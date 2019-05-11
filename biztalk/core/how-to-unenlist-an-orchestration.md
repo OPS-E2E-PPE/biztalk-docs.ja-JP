@@ -17,20 +17,20 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7504551d6cc97f108d6cdee695f241ee983994a2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a96f0ee3f3de6c4ee64f004366f3e82a923b38aa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993515"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383676"
 ---
 # <a name="how-to-unenlist-an-orchestration"></a>オーケストレーションを参加解除する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、オーケストレーションを参加解除する方法について説明します。 オーケストレーションを参加解除は、ホストから削除します。 このオーケストレーションによってメッセージが処理されないように、サブスクリプションも削除されます。 バインドを編集するには、事前にオーケストレーションを参加解除しておく必要があります。  
+このトピックでは、BizTalk Server 管理コンソールを使用してオーケストレーションを参加解除する方法について説明します。 オーケストレーションを参加解除は、ホストから削除します。 これにより、オーケストレーションが不要になったメッセージを処理できるように、サブスクリプションを削除します。 バインドを編集する前に、オーケストレーションの参加を解除する必要があります。  
   
  オーケストレーションの参加を解除する前に」の説明に従って、実行中のインスタンスを終了する必要があります[中断、再開、およびオーケストレーション インスタンスを終了する方法](../core/how-to-suspend-resume-and-terminate-orchestration-instances.md)します。  
   
 > [!NOTE]
->  アプリケーション開発者が開発プロセス中にオーケストレーションを参加解除するには、このトピックの手順を実行します。  
+>  アプリケーション開発者は、このトピックの手順を使用して、開発プロセス中にオーケストレーションを参加解除できます。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
