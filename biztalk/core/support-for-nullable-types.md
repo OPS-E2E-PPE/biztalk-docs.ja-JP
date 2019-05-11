@@ -1,5 +1,5 @@
 ---
-title: Null 許容型のサポート |Microsoft ドキュメント
+title: Null 許容型のサポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: abd277db970a00e9d7d8f20de65e85c607c2a861
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c468df33b522f14608fbe001f4ce4be52ba524e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278722"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254424"
 ---
-# <a name="support-for-nullable-types"></a><span data-ttu-id="6d26e-102">Null 許容型のサポート</span><span class="sxs-lookup"><span data-stu-id="6d26e-102">Support for Nullable Types</span></span>
-<span data-ttu-id="6d26e-103">ルール エンジンは、ビジネス ルールでの Null 許容型の使用をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="6d26e-103">The rule engine supports using nullable types in a business rule.</span></span> <span data-ttu-id="6d26e-104">Null 許容型は、.NET クラス バインド、XML バインド、およびデータベース バインドで使用できます。</span><span class="sxs-lookup"><span data-stu-id="6d26e-104">You can use nullable types in .NET class bindings, XML bindings, and database bindings.</span></span> <span data-ttu-id="6d26e-105">現在、ビジネス ルール作成ツールは、ビジネス ルールでの Null 許容型の使用をサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="6d26e-105">Currently, the Business Rule Composer tool does not support using nullable types in a business rule.</span></span> <span data-ttu-id="6d26e-106">Null 許容型は、プログラムによってルールを作成する場合に使用できます。</span><span class="sxs-lookup"><span data-stu-id="6d26e-106">You can use the nullable types when creating rules programmatically.</span></span>  
+# <a name="support-for-nullable-types"></a><span data-ttu-id="3e985-102">Null 許容型のサポート</span><span class="sxs-lookup"><span data-stu-id="3e985-102">Support for Nullable Types</span></span>
+<span data-ttu-id="3e985-103">ルール エンジンは、ビジネス ルールで null 許容型の使用をサポートします。</span><span class="sxs-lookup"><span data-stu-id="3e985-103">The rule engine supports using nullable types in a business rule.</span></span> <span data-ttu-id="3e985-104">.NET クラス バインド、XML バインド、およびデータベース バインドで null 許容型を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="3e985-104">You can use nullable types in .NET class bindings, XML bindings, and database bindings.</span></span> <span data-ttu-id="3e985-105">現時点では、ビジネス ルール作成ツールでは、ビジネス ルールで null 許容型の使用はできません。</span><span class="sxs-lookup"><span data-stu-id="3e985-105">Currently, the Business Rule Composer tool does not support using nullable types in a business rule.</span></span> <span data-ttu-id="3e985-106">プログラムで規則を作成するときに、null 許容型を使用できます。</span><span class="sxs-lookup"><span data-stu-id="3e985-106">You can use the nullable types when creating rules programmatically.</span></span>  
   
-## <a name="using-nullable-types-in-net-class-bindings"></a><span data-ttu-id="6d26e-107">.NET クラス バインドでの Null 許容型の使用</span><span class="sxs-lookup"><span data-stu-id="6d26e-107">Using Nullable Types in .NET Class Bindings</span></span>  
- <span data-ttu-id="6d26e-108">Null 許容型のプロパティまたはフィールドへのクラス メンバー バインドを作成できます。</span><span class="sxs-lookup"><span data-stu-id="6d26e-108">You can create a class member binding to a property or a field whose type is a nullable type.</span></span> <span data-ttu-id="6d26e-109">また、Null 許容型のパラメーターを使用するメソッド、Null 許容型の値を返すメソッド、またはその両方を行うメソッドへのクラス メンバー バインドも作成できます。</span><span class="sxs-lookup"><span data-stu-id="6d26e-109">You can also create a class member binding to a method that takes a parameter of nullable type and/or returns a value of nullable type.</span></span> <span data-ttu-id="6d26e-110">次のサンプル コードは、Null 許容型フィールドにアクセスする方法、およびビジネス ルール内のメソッドから Null 許容型の戻り値にアクセスする方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="6d26e-110">The following sample code demonstrates how to access a nullable field, and how to access a return value of nullable type from a method in a business rule.</span></span> <span data-ttu-id="6d26e-111">実行する場合、コンソール アプリケーションを次のコードは、\outputfromtestproviderdebugmode.txt の値、 **prop**フィールドが 5 に設定します。</span><span class="sxs-lookup"><span data-stu-id="6d26e-111">If you execute a console application with the following code as it is, you will see that the value of the **prop** field is set to 5.</span></span> <span data-ttu-id="6d26e-112">初期化しない場合、 **prop**クラスのフィールドまたは null に設定し、コードを実行する初期化 \outputfromtestproviderdebugmode.txt の値、 **prop**フィールドが 1 に設定します。</span><span class="sxs-lookup"><span data-stu-id="6d26e-112">If you do not initialize the **prop** field in the class or initialize it to null and run the code, you will see that the value of the **prop** field is set to 1.</span></span>  
+## <a name="using-nullable-types-in-net-class-bindings"></a><span data-ttu-id="3e985-107">.NET クラス バインドで null 許容型の使用</span><span class="sxs-lookup"><span data-stu-id="3e985-107">Using Nullable Types in .NET Class Bindings</span></span>  
+ <span data-ttu-id="3e985-108">プロパティまたは null 許容型のフィールドにバインドするクラスのメンバーを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="3e985-108">You can create a class member binding to a property or a field whose type is a nullable type.</span></span> <span data-ttu-id="3e985-109">クラス メンバーを null 許容型のパラメーターを受け取るまたは null 許容型の値を取得するメソッドにバインドを作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="3e985-109">You can also create a class member binding to a method that takes a parameter of nullable type and/or returns a value of nullable type.</span></span> <span data-ttu-id="3e985-110">次のサンプル コードでは、ビジネス ルールのメソッドから null 許容型の戻り値にアクセスする方法と、null 許容フィールドにアクセスする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3e985-110">The following sample code demonstrates how to access a nullable field, and how to access a return value of nullable type from a method in a business rule.</span></span> <span data-ttu-id="3e985-111">表示されますが、コンソール アプリケーションを次のコードを実行する場合の値、 **prop**フィールドが 5 に設定します。</span><span class="sxs-lookup"><span data-stu-id="3e985-111">If you execute a console application with the following code as it is, you will see that the value of the **prop** field is set to 5.</span></span> <span data-ttu-id="3e985-112">初期化しない場合、 **prop**クラスのフィールドまたは null に設定し、コードを実行する初期化ことがわかりますの値、 **prop**フィールドが 1 に設定します。</span><span class="sxs-lookup"><span data-stu-id="3e985-112">If you do not initialize the **prop** field in the class or initialize it to null and run the code, you will see that the value of the **prop** field is set to 1.</span></span>  
   
 ```  
 using Microsoft.RuleEngine;  
@@ -117,17 +117,17 @@ namespace UseNullableAsm
 }  
 ```  
   
-## <a name="using-nullable-types-in-database-bindings"></a><span data-ttu-id="6d26e-113">データベース バインドでの Null 許容型の使用</span><span class="sxs-lookup"><span data-stu-id="6d26e-113">Using Nullable Types in Database Bindings</span></span>  
- <span data-ttu-id="6d26e-114">データベース バインドでも Null 許容型を使用できます。</span><span class="sxs-lookup"><span data-stu-id="6d26e-114">You can also use nullable types in database bindings.</span></span> <span data-ttu-id="6d26e-115">次のサンプル コードは、データベース バインドで Null 許容型を使用する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="6d26e-115">The following sample code fragment shows you how to use a nullable type in database bindings.</span></span>  
+## <a name="using-nullable-types-in-database-bindings"></a><span data-ttu-id="3e985-113">データベース バインドで null 許容型の使用</span><span class="sxs-lookup"><span data-stu-id="3e985-113">Using Nullable Types in Database Bindings</span></span>  
+ <span data-ttu-id="3e985-114">データベース バインドで null 許容型を使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="3e985-114">You can also use nullable types in database bindings.</span></span> <span data-ttu-id="3e985-115">次のサンプル コードでは、データベース バインドで null 許容型を使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3e985-115">The following sample code fragment shows you how to use a nullable type in database bindings.</span></span>  
   
 ```  
 DataColumnBinding dcBinding = new DataColumnBinding(“col”, typeof(int?), dbBinding);  
 ```  
   
- <span data-ttu-id="6d26e-116">値をチェックする条件を持つルールがあると 3 に等しいかどうかをデータベース列。</span><span class="sxs-lookup"><span data-stu-id="6d26e-116">Suppose you have a rule with a condition that checks the value of a database column to see if equals 3.</span></span> <span data-ttu-id="6d26e-117">列の値が null の場合、式が false に評価されます。</span><span class="sxs-lookup"><span data-stu-id="6d26e-117">If the value of the column is null, the expression evaluates to false.</span></span> <span data-ttu-id="6d26e-118">例外は行われません。</span><span class="sxs-lookup"><span data-stu-id="6d26e-118">It does not cause an exception.</span></span>  
+ <span data-ttu-id="3e985-116">値をチェックする条件を持つルールがあるとするかどうかをデータベース列が 3 に等しい。</span><span class="sxs-lookup"><span data-stu-id="3e985-116">Suppose you have a rule with a condition that checks the value of a database column to see if equals 3.</span></span> <span data-ttu-id="3e985-117">列の値が null の場合、式が false に評価されます。</span><span class="sxs-lookup"><span data-stu-id="3e985-117">If the value of the column is null, the expression evaluates to false.</span></span> <span data-ttu-id="3e985-118">これには、例外は発生しません。</span><span class="sxs-lookup"><span data-stu-id="3e985-118">It does not cause an exception.</span></span>  
   
-## <a name="using-nullable-types-in-xml-bindings"></a><span data-ttu-id="6d26e-119">XML バインドでの Null 許容型の使用</span><span class="sxs-lookup"><span data-stu-id="6d26e-119">Using Nullable Types in XML Bindings</span></span>  
- <span data-ttu-id="6d26e-120">同様に、XML バインドでも Null 許容型を使用できます。</span><span class="sxs-lookup"><span data-stu-id="6d26e-120">Similarly, you can use nullable types in XML bindings.</span></span> <span data-ttu-id="6d26e-121">次のサンプル コードは、XML バインドで Null 許容型を使用する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="6d26e-121">The following sample code fragment shows how to use a nullable type in XML bindings.</span></span>  
+## <a name="using-nullable-types-in-xml-bindings"></a><span data-ttu-id="3e985-119">XML バインドで null 許容型の使用</span><span class="sxs-lookup"><span data-stu-id="3e985-119">Using Nullable Types in XML Bindings</span></span>  
+ <span data-ttu-id="3e985-120">同様に、XML バインドで null 許容型を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="3e985-120">Similarly, you can use nullable types in XML bindings.</span></span> <span data-ttu-id="3e985-121">次のサンプル コードでは、XML バインドで null 許容型を使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3e985-121">The following sample code fragment shows how to use a nullable type in XML bindings.</span></span>  
   
 ```  
 XMLDocumentFieldBinding xfb1 = new XMLDocumentFieldBinding(typeof(int?),"ID",xdb);  
