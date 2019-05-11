@@ -12,90 +12,90 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 035cd5d0f6b3c37861574d3ace81b15e1dfbc06d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ca073cdbe6bc7a32ce0168db227d2121980c92ef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254430"
 ---
-# <a name="sendportgroups-biztalk-server-sample"></a><span data-ttu-id="60e4f-102">SendPortGroups (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="60e4f-102">SendPortGroups (BizTalk Server Sample)</span></span>
-<span data-ttu-id="60e4f-103">SendPortGroups サンプルは、列挙およびを使用して送信ポート グループを管理する方法を示します、 **Microsoft.BizTalk.ExplorerOM**管理クラス。</span><span class="sxs-lookup"><span data-stu-id="60e4f-103">The SendPortGroups sample demonstrates how to enumerate and manage send port groups by using the **Microsoft.BizTalk.ExplorerOM** administration classes.</span></span>  
+# <a name="sendportgroups-biztalk-server-sample"></a><span data-ttu-id="c86d1-102">SendPortGroups (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="c86d1-102">SendPortGroups (BizTalk Server Sample)</span></span>
+<span data-ttu-id="c86d1-103">SendPortGroups サンプルは、列挙およびを使用して送信ポート グループを管理する方法を示します、 **Microsoft.BizTalk.ExplorerOM**管理クラス。</span><span class="sxs-lookup"><span data-stu-id="c86d1-103">The SendPortGroups sample demonstrates how to enumerate and manage send port groups by using the **Microsoft.BizTalk.ExplorerOM** administration classes.</span></span>  
 
-## <a name="prerequisites"></a><span data-ttu-id="60e4f-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="60e4f-104">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="c86d1-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="c86d1-104">Prerequisites</span></span>  
 
-- <span data-ttu-id="60e4f-105">このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。</span><span class="sxs-lookup"><span data-stu-id="60e4f-105">You must have [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrative privileges to use the administrative objects in this sample.</span></span>  
+- <span data-ttu-id="c86d1-105">このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。</span><span class="sxs-lookup"><span data-stu-id="c86d1-105">You must have [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrative privileges to use the administrative objects in this sample.</span></span>  
 
-- <span data-ttu-id="60e4f-106">Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。</span><span class="sxs-lookup"><span data-stu-id="60e4f-106">The Windows PowerShell script requires the Windows PowerShell execution policy to allow script execution.</span></span> <span data-ttu-id="60e4f-107">詳細については、「 [実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="60e4f-107">For more information see [Examining the Execution Policy](http://go.microsoft.com/fwlink/?LinkId=128930).</span></span>  
+- <span data-ttu-id="c86d1-106">Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。</span><span class="sxs-lookup"><span data-stu-id="c86d1-106">The Windows PowerShell script requires the Windows PowerShell execution policy to allow script execution.</span></span> <span data-ttu-id="c86d1-107">詳細については、「 [実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c86d1-107">For more information see [Examining the Execution Policy](http://go.microsoft.com/fwlink/?LinkId=128930).</span></span>  
 
-## <a name="what-this-sample-does"></a><span data-ttu-id="60e4f-108">このサンプルの処理</span><span class="sxs-lookup"><span data-stu-id="60e4f-108">What This Sample Does</span></span>  
- <span data-ttu-id="60e4f-109">このサンプルを使用して、 **BtsCatalogExplorer**と**SendPortGroup**クラスを**Microsoft.BizTalk.ExplorerOM**送信ポート グループの名前空間を管理するには[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。</span><span class="sxs-lookup"><span data-stu-id="60e4f-109">This sample demonstrates using the **BtsCatalogExplorer** and **SendPortGroup** classes from the **Microsoft.BizTalk.ExplorerOM** namespace to manage send port groups in a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span> <span data-ttu-id="60e4f-110">サンプルは Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] で作成されています。</span><span class="sxs-lookup"><span data-stu-id="60e4f-110">The sample is written in Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)].</span></span> <span data-ttu-id="60e4f-111">このトピックには、Windows PowerShell のスクリプト例も含まれています。</span><span class="sxs-lookup"><span data-stu-id="60e4f-111">A Windows PowerShell example script is also included in this topic.</span></span> <span data-ttu-id="60e4f-112">このサンプルは次の操作を示します。</span><span class="sxs-lookup"><span data-stu-id="60e4f-112">The sample demonstrates the following operations:</span></span>  
+## <a name="what-this-sample-does"></a><span data-ttu-id="c86d1-108">このサンプルの処理</span><span class="sxs-lookup"><span data-stu-id="c86d1-108">What This Sample Does</span></span>  
+ <span data-ttu-id="c86d1-109">このサンプルを使用して、 **BtsCatalogExplorer**と**SendPortGroup**クラスを**Microsoft.BizTalk.ExplorerOM**送信ポート グループの名前空間を管理するには[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。</span><span class="sxs-lookup"><span data-stu-id="c86d1-109">This sample demonstrates using the **BtsCatalogExplorer** and **SendPortGroup** classes from the **Microsoft.BizTalk.ExplorerOM** namespace to manage send port groups in a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span> <span data-ttu-id="c86d1-110">サンプルは Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] で作成されています。</span><span class="sxs-lookup"><span data-stu-id="c86d1-110">The sample is written in Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)].</span></span> <span data-ttu-id="c86d1-111">このトピックには、Windows PowerShell のスクリプト例も含まれています。</span><span class="sxs-lookup"><span data-stu-id="c86d1-111">A Windows PowerShell example script is also included in this topic.</span></span> <span data-ttu-id="c86d1-112">このサンプルは次の操作を示します。</span><span class="sxs-lookup"><span data-stu-id="c86d1-112">The sample demonstrates the following operations:</span></span>  
 
-- <span data-ttu-id="60e4f-113">使用して、BizTalk 管理データベースに接続する、 **BtsCatalogExplorer**クラス。</span><span class="sxs-lookup"><span data-stu-id="60e4f-113">Connecting to the BizTalk Management database by using the **BtsCatalogExplorer** class.</span></span>  
+- <span data-ttu-id="c86d1-113">使用して、BizTalk 管理データベースに接続する、 **BtsCatalogExplorer**クラス。</span><span class="sxs-lookup"><span data-stu-id="c86d1-113">Connecting to the BizTalk Management database by using the **BtsCatalogExplorer** class.</span></span>  
 
-- <span data-ttu-id="60e4f-114">"My Send Port Group" という名前の新しい送信ポート グループを作成する。</span><span class="sxs-lookup"><span data-stu-id="60e4f-114">Creating a new send port group named “My Send Port Group”.</span></span>  
+- <span data-ttu-id="c86d1-114">"My Send Port Group"という名前の新しい送信ポート グループを作成します。</span><span class="sxs-lookup"><span data-stu-id="c86d1-114">Creating a new send port group named “My Send Port Group”.</span></span>  
 
-- <span data-ttu-id="60e4f-115">送信ポート グループを列挙して新たに作成した送信ポート グループを表示する。</span><span class="sxs-lookup"><span data-stu-id="60e4f-115">Enumerating send port groups to display the newly created send port group.</span></span>  
+- <span data-ttu-id="c86d1-115">列挙の送信ポート グループを新しく作成された表示は送信ポート グループです。</span><span class="sxs-lookup"><span data-stu-id="c86d1-115">Enumerating send port groups to display the newly created send port group.</span></span>  
 
-- <span data-ttu-id="60e4f-116">新しい送信ポート グループを削除する。</span><span class="sxs-lookup"><span data-stu-id="60e4f-116">Deleting the new send port group.</span></span>  
+- <span data-ttu-id="c86d1-116">新しい送信ポート グループを削除しています。</span><span class="sxs-lookup"><span data-stu-id="c86d1-116">Deleting the new send port group.</span></span>  
 
-  <span data-ttu-id="60e4f-117">サンプルにはこれ以外の機能もありますが、[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] バージョンでは実行されません。</span><span class="sxs-lookup"><span data-stu-id="60e4f-117">Additional functions are present in the sample but are not executed in the [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] version.</span></span>  <span data-ttu-id="60e4f-118">これらの機能の一部は、PowerShell サンプル スクリプトで示します。</span><span class="sxs-lookup"><span data-stu-id="60e4f-118">Some of the additional functions are demonstrated in the PowerShell example script.</span></span> <span data-ttu-id="60e4f-119">これらの機能の内容は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="60e4f-119">The additional functions demonstrate the following functionality:</span></span>  
+  <span data-ttu-id="c86d1-117">追加の関数は、サンプルに存在するでは実行されません、[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]バージョン。</span><span class="sxs-lookup"><span data-stu-id="c86d1-117">Additional functions are present in the sample but are not executed in the [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] version.</span></span>  <span data-ttu-id="c86d1-118">いくつかの追加の関数は、PowerShell スクリプト例で説明します。</span><span class="sxs-lookup"><span data-stu-id="c86d1-118">Some of the additional functions are demonstrated in the PowerShell example script.</span></span> <span data-ttu-id="c86d1-119">追加の関数は、次の機能を示しています。</span><span class="sxs-lookup"><span data-stu-id="c86d1-119">The additional functions demonstrate the following functionality:</span></span>  
 
-- <span data-ttu-id="60e4f-120">新たに作成した送信ポート グループに送信ポートを追加する (PowerShell サンプルに収録)。</span><span class="sxs-lookup"><span data-stu-id="60e4f-120">Adding a send port to the newly created send port group (covered in the PowerShell example).</span></span>  
+- <span data-ttu-id="c86d1-120">(PowerShell の例で説明)、新しく作成した送信ポート グループへの送信ポートを追加します。</span><span class="sxs-lookup"><span data-stu-id="c86d1-120">Adding a send port to the newly created send port group (covered in the PowerShell example).</span></span>  
 
-- <span data-ttu-id="60e4f-121">送信ポート グループから送信ポートを削除する (PowerShell サンプルに収録)。</span><span class="sxs-lookup"><span data-stu-id="60e4f-121">Deleting a send port from the send port group (covered in the PowerShell example).</span></span>  
+- <span data-ttu-id="c86d1-121">(PowerShell の例で説明) 送信ポート グループから送信ポートを削除しています。</span><span class="sxs-lookup"><span data-stu-id="c86d1-121">Deleting a send port from the send port group (covered in the PowerShell example).</span></span>  
 
-- <span data-ttu-id="60e4f-122">送信ポート グループを開始する。</span><span class="sxs-lookup"><span data-stu-id="60e4f-122">Starting the send port group.</span></span>  
+- <span data-ttu-id="c86d1-122">送信ポート グループを開始しています。</span><span class="sxs-lookup"><span data-stu-id="c86d1-122">Starting the send port group.</span></span>  
 
-- <span data-ttu-id="60e4f-123">送信ポート グループを停止する。</span><span class="sxs-lookup"><span data-stu-id="60e4f-123">Stopping the send port group.</span></span>  
+- <span data-ttu-id="c86d1-123">送信ポート グループを停止しています。</span><span class="sxs-lookup"><span data-stu-id="c86d1-123">Stopping the send port group.</span></span>  
 
-## <a name="where-to-find-this-sample"></a><span data-ttu-id="60e4f-124">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="60e4f-124">Where To Find This Sample</span></span>  
- <span data-ttu-id="60e4f-125">このサンプルは、SDK がある次の場所にあります。</span><span class="sxs-lookup"><span data-stu-id="60e4f-125">The sample is located in the following SDK location:</span></span>  
+## <a name="where-to-find-this-sample"></a><span data-ttu-id="c86d1-124">このサンプルの場所</span><span class="sxs-lookup"><span data-stu-id="c86d1-124">Where To Find This Sample</span></span>  
+ <span data-ttu-id="c86d1-125">このサンプルは、SDK がある次の場所にあります。</span><span class="sxs-lookup"><span data-stu-id="c86d1-125">The sample is located in the following SDK location:</span></span>  
 
- <span data-ttu-id="60e4f-126">\<*パスのサンプル*\>\Admin\ExplorerOM\SendPortGroups</span><span class="sxs-lookup"><span data-stu-id="60e4f-126">\<*Samples Path*\>\Admin\ExplorerOM\SendPortGroups</span></span>  
+ <span data-ttu-id="c86d1-126">\<*パスのサンプル*\>\Admin\ExplorerOM\SendPortGroups</span><span class="sxs-lookup"><span data-stu-id="c86d1-126">\<*Samples Path*\>\Admin\ExplorerOM\SendPortGroups</span></span>  
 
- <span data-ttu-id="60e4f-127">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="60e4f-127">The following table shows the files in this sample and describes their purpose.</span></span>  
+ <span data-ttu-id="c86d1-127">次の表は、このサンプルのファイルとその目的を示しています。</span><span class="sxs-lookup"><span data-stu-id="c86d1-127">The following table shows the files in this sample and describes their purpose.</span></span>  
 
 
-|                            <span data-ttu-id="60e4f-128">ファイル</span><span class="sxs-lookup"><span data-stu-id="60e4f-128">File(s)</span></span>                            |                                                 <span data-ttu-id="60e4f-129">説明</span><span class="sxs-lookup"><span data-stu-id="60e4f-129">Description</span></span>                                                  |
+|                            <span data-ttu-id="c86d1-128">ファイル</span><span class="sxs-lookup"><span data-stu-id="c86d1-128">File(s)</span></span>                            |                                                 <span data-ttu-id="c86d1-129">説明</span><span class="sxs-lookup"><span data-stu-id="c86d1-129">Description</span></span>                                                  |
 |---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-|                       <span data-ttu-id="60e4f-130">SendPortGroups.cs</span><span class="sxs-lookup"><span data-stu-id="60e4f-130">SendPortGroups.cs</span></span>                       | <span data-ttu-id="60e4f-131">このサンプルに示されている操作の [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] ソース ファイル。</span><span class="sxs-lookup"><span data-stu-id="60e4f-131">[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] source file for operations demonstrated in this sample.</span></span> |
-| <span data-ttu-id="60e4f-132">SendPortGroups.sln、SendPortGroups.csproj、SendPortGroups.suo</span><span class="sxs-lookup"><span data-stu-id="60e4f-132">SendPortGroups.sln, SendPortGroups.csproj, SendPortGroups.suo</span></span> |                                  <span data-ttu-id="60e4f-133">このサンプルのソリューション ファイルとプロジェクト ファイル。</span><span class="sxs-lookup"><span data-stu-id="60e4f-133">Solution and project files for the sample.</span></span>                                  |
+|                       <span data-ttu-id="c86d1-130">SendPortGroups.cs</span><span class="sxs-lookup"><span data-stu-id="c86d1-130">SendPortGroups.cs</span></span>                       | <span data-ttu-id="c86d1-131">このサンプルに示されている操作の [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] ソース ファイル。</span><span class="sxs-lookup"><span data-stu-id="c86d1-131">[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] source file for operations demonstrated in this sample.</span></span> |
+| <span data-ttu-id="c86d1-132">SendPortGroups.sln, SendPortGroups.csproj, SendPortGroups.suo</span><span class="sxs-lookup"><span data-stu-id="c86d1-132">SendPortGroups.sln, SendPortGroups.csproj, SendPortGroups.suo</span></span> |                                  <span data-ttu-id="c86d1-133">このサンプルのソリューション ファイルとプロジェクト ファイル。</span><span class="sxs-lookup"><span data-stu-id="c86d1-133">Solution and project files for the sample.</span></span>                                  |
 
-## <a name="building-and-running-this-sample"></a><span data-ttu-id="60e4f-134">このサンプルのビルドおよび実行</span><span class="sxs-lookup"><span data-stu-id="60e4f-134">Building and Running This Sample</span></span>  
+## <a name="building-and-running-this-sample"></a><span data-ttu-id="c86d1-134">このサンプルのビルドおよび実行</span><span class="sxs-lookup"><span data-stu-id="c86d1-134">Building and Running This Sample</span></span>  
 
-#### <a name="to-build-this-sample"></a><span data-ttu-id="60e4f-135">このサンプルをビルドするには</span><span class="sxs-lookup"><span data-stu-id="60e4f-135">To build this sample</span></span>  
+#### <a name="to-build-this-sample"></a><span data-ttu-id="c86d1-135">このサンプルをビルドするには</span><span class="sxs-lookup"><span data-stu-id="c86d1-135">To build this sample</span></span>  
 
-1. <span data-ttu-id="60e4f-136">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、SendPortGroups.sln ソリューション ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="60e4f-136">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file SendPortGroups.sln.</span></span>  
+1. <span data-ttu-id="c86d1-136">[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、SendPortGroups.sln ソリューション ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="c86d1-136">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file SendPortGroups.sln.</span></span>  
 
-2. <span data-ttu-id="60e4f-137">ソリューション エクスプ ローラーでダブルクリック**SendPortGroups.cs**サンプル コードを開きます。</span><span class="sxs-lookup"><span data-stu-id="60e4f-137">In Solution Explorer, double click **SendPortGroups.cs** to open the sample code.</span></span>  
+2. <span data-ttu-id="c86d1-137">ソリューション エクスプ ローラーでダブルクリック**SendPortGroups.cs**サンプル コードを開きます。</span><span class="sxs-lookup"><span data-stu-id="c86d1-137">In Solution Explorer, double click **SendPortGroups.cs** to open the sample code.</span></span>  
 
-3. <span data-ttu-id="60e4f-138">`root.ConnectionString` 関数内で `CreateSendPortGroup` を見つけます。</span><span class="sxs-lookup"><span data-stu-id="60e4f-138">Find the `root.ConnectionString` in the `CreateSendPortGroup` function.</span></span>  <span data-ttu-id="60e4f-139">BizTalk 管理データベースをホストする SQL Server を正しく参照するようにサーバー指定を変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="60e4f-139">You must change the server specification to correctly point to the SQL server hosting your BizTalk Management database.</span></span>  <span data-ttu-id="60e4f-140">ピリオド (.) を使用してローカル SQL サーバーに接続することもできます。</span><span class="sxs-lookup"><span data-stu-id="60e4f-140">You can also use a period (.) to connect to the local SQL server.</span></span>  <span data-ttu-id="60e4f-141">以下に例を示します。</span><span class="sxs-lookup"><span data-stu-id="60e4f-141">For example:</span></span>  
+3. <span data-ttu-id="c86d1-138">検索、`root.ConnectionString`で、`CreateSendPortGroup`関数。</span><span class="sxs-lookup"><span data-stu-id="c86d1-138">Find the `root.ConnectionString` in the `CreateSendPortGroup` function.</span></span>  <span data-ttu-id="c86d1-139">BizTalk 管理データベースをホストする SQL server を正しく指すサーバーの仕様を変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c86d1-139">You must change the server specification to correctly point to the SQL server hosting your BizTalk Management database.</span></span>  <span data-ttu-id="c86d1-140">ローカルの SQL server への接続にピリオド (.) を使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="c86d1-140">You can also use a period (.) to connect to the local SQL server.</span></span>  <span data-ttu-id="c86d1-141">例 :</span><span class="sxs-lookup"><span data-stu-id="c86d1-141">For example:</span></span>  
 
    ```  
    root.ConnectionString = "Integrated Security=SSPI;database=BizTalkMgmtDb;server=.";  
    ```  
 
-4. <span data-ttu-id="60e4f-142">次の関数について、手順 3. を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="60e4f-142">Repeat step 3 for the following functions:</span></span>  
+4. <span data-ttu-id="c86d1-142">次の関数について、手順 3。</span><span class="sxs-lookup"><span data-stu-id="c86d1-142">Repeat step 3 for the following functions:</span></span>  
 
-   -   <span data-ttu-id="60e4f-143">**EnumerateSendPortGroups**</span><span class="sxs-lookup"><span data-stu-id="60e4f-143">**EnumerateSendPortGroups**</span></span>  
+   -   <span data-ttu-id="c86d1-143">**EnumerateSendPortGroups**</span><span class="sxs-lookup"><span data-stu-id="c86d1-143">**EnumerateSendPortGroups**</span></span>  
 
-   -   <span data-ttu-id="60e4f-144">**DeleteSendPortGroup**</span><span class="sxs-lookup"><span data-stu-id="60e4f-144">**DeleteSendPortGroup**</span></span>  
+   -   <span data-ttu-id="c86d1-144">**DeleteSendPortGroup**</span><span class="sxs-lookup"><span data-stu-id="c86d1-144">**DeleteSendPortGroup**</span></span>  
 
-5. <span data-ttu-id="60e4f-145">保存**SendPortGroups.cs**します。</span><span class="sxs-lookup"><span data-stu-id="60e4f-145">Save **SendPortGroups.cs**.</span></span>  
+5. <span data-ttu-id="c86d1-145">保存**SendPortGroups.cs**します。</span><span class="sxs-lookup"><span data-stu-id="c86d1-145">Save **SendPortGroups.cs**.</span></span>  
 
-6. <span data-ttu-id="60e4f-146">メイン メニューで、次のようにクリックします。**ビルド**、 をクリックし、**ソリューションのビルド**します。</span><span class="sxs-lookup"><span data-stu-id="60e4f-146">On the main menu, click **Build**, and then click **Build Solution**.</span></span>  
+6. <span data-ttu-id="c86d1-146">メイン メニューで、次のようにクリックします。**ビルド**、 をクリックし、**ソリューションのビルド**します。</span><span class="sxs-lookup"><span data-stu-id="c86d1-146">On the main menu, click **Build**, and then click **Build Solution**.</span></span>  
 
-#### <a name="to-run-this-sample"></a><span data-ttu-id="60e4f-147">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="60e4f-147">To run this sample</span></span>  
+#### <a name="to-run-this-sample"></a><span data-ttu-id="c86d1-147">このサンプルを実行するには</span><span class="sxs-lookup"><span data-stu-id="c86d1-147">To run this sample</span></span>  
 
-1.  <span data-ttu-id="60e4f-148">コマンド ウィンドウを開き、次のフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="60e4f-148">Open a command window and navigate to the following folder:</span></span>  
+1.  <span data-ttu-id="c86d1-148">コマンド ウィンドウを開き、次のフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="c86d1-148">Open a command window and navigate to the following folder:</span></span>  
 
-     <span data-ttu-id="60e4f-149">\<*パスのサンプル*\>\Admin\ExplorerOM\SendPortGroups\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="60e4f-149">\<*Samples Path*\>\Admin\ExplorerOM\SendPortGroups\bin\Debug</span></span>  
+     <span data-ttu-id="c86d1-149">\<*Samples Path*\>\Admin\ExplorerOM\SendPortGroups\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="c86d1-149">\<*Samples Path*\>\Admin\ExplorerOM\SendPortGroups\bin\Debug</span></span>  
 
-2.  <span data-ttu-id="60e4f-150">SendPortGroups.exe ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="60e4f-150">Run the file SendPortGroups.exe.</span></span>  
+2.  <span data-ttu-id="c86d1-150">SendPortGroups.exe ファイルを実行します。</span><span class="sxs-lookup"><span data-stu-id="c86d1-150">Run the file SendPortGroups.exe.</span></span>  
 
-## <a name="windows-powershell-script-example"></a><span data-ttu-id="60e4f-151">Windows PowerShell スクリプトの例</span><span class="sxs-lookup"><span data-stu-id="60e4f-151">Windows PowerShell Script Example</span></span>  
- <span data-ttu-id="60e4f-152">同じ機能を次の Windows PowerShell スクリプト フラグメントを使用することができます、 **ExplorerOM**クラス。</span><span class="sxs-lookup"><span data-stu-id="60e4f-152">The following Windows PowerShell script fragment can be used to demonstrate the same features of the **ExplorerOM** classes:</span></span>  
+## <a name="windows-powershell-script-example"></a><span data-ttu-id="c86d1-151">Windows PowerShell スクリプトの例</span><span class="sxs-lookup"><span data-stu-id="c86d1-151">Windows PowerShell Script Example</span></span>  
+ <span data-ttu-id="c86d1-152">同じ機能を次の Windows PowerShell スクリプト フラグメントを使用することができます、 **ExplorerOM**クラス。</span><span class="sxs-lookup"><span data-stu-id="c86d1-152">The following Windows PowerShell script fragment can be used to demonstrate the same features of the **ExplorerOM** classes:</span></span>  
 
 ```  
 Function CreateSendPortGroup($Catalog, $strName)  
@@ -318,7 +318,7 @@ DeleteSendPortGroup $Catalog $SendPortGroupName
 Write-Host  
 ```  
 
- <span data-ttu-id="60e4f-153">次に、Windows PowerShell スクリプト サンプルの実行により想定される出力例を示します。</span><span class="sxs-lookup"><span data-stu-id="60e4f-153">Here is example expected output from running the Windows PowerShell script sample.</span></span>  
+ <span data-ttu-id="c86d1-153">次に、Windows PowerShell スクリプト サンプルの実行により想定される出力例を示します。</span><span class="sxs-lookup"><span data-stu-id="c86d1-153">Here is example expected output from running the Windows PowerShell script sample.</span></span>  
 
 ```  
 PS C:\> .\sendportgroups.ps1  
@@ -372,5 +372,5 @@ Deleting "PowerShell Sample Send Port Group"...
 DeleteSendPortGroup() completed.  
 ```  
 
-## <a name="see-also"></a><span data-ttu-id="60e4f-154">参照</span><span class="sxs-lookup"><span data-stu-id="60e4f-154">See Also</span></span>  
- [<span data-ttu-id="60e4f-155">Admin-ExplorerOM (BizTalk Server Samples フォルダー)</span><span class="sxs-lookup"><span data-stu-id="60e4f-155">Admin-ExplorerOM (BizTalk Server Samples Folder)</span></span>](../core/admin-explorerom-biztalk-server-samples-folder.md)
+## <a name="see-also"></a><span data-ttu-id="c86d1-154">参照</span><span class="sxs-lookup"><span data-stu-id="c86d1-154">See Also</span></span>  
+ [<span data-ttu-id="c86d1-155">Admin-ExplorerOM (BizTalk Server Samples フォルダー)</span><span class="sxs-lookup"><span data-stu-id="c86d1-155">Admin-ExplorerOM (BizTalk Server Samples Folder)</span></span>](../core/admin-explorerom-biztalk-server-samples-folder.md)
